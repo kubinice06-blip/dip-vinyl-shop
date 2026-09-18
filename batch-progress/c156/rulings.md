@@ -919,3 +919,18 @@ Too Much Coffee Man／Everything I Love／The Dropper／Turbulent Flow／Percept
 - **封面 42 張逐張重探 CAA：38 張有圖、4 張真 404**，替代來源全部找到；
   ⚠ **《Road Runner》Discogs 全站唯一條目只有 1 張 secondary 300×300，不可用 → 改用
   Apple `695992109` 的 `600x600bb`**（原圖 1404×1404 300dpi）。
+
+## 第 1433 條（主線）：**《Live in Chicago - Out Takes》的試聽退回無來源——與正盤共用同一個 collectionId**
+
+鉤子層回報研究 b 組寫「三種查法跑滿、查無」，與第 1432 條的「查無 2 張」有出入，要主線裁定。
+**主線實查：探測層採到的 `723467420` 是《Live in Chicago》正盤（14 軌，逐軌回得到 preview），
+不是這張 6 軌的 Out Takes。** 而**同批的正盤卡用的正是同一個 id**。
+
+**→ 兩個獨立理由**：**第 1067 條的錯碟形狀**（`ready` 只保證找到一個有預覽的條目）＋
+**第 646 條（兩張卡不得共用同一個 collectionId）**。
+**已在 `previews.json` 退回 `unavailable`，本批無串流因此是 3 張不是 2 張。**
+
+⚠ **鉤子層另回報「repo 裡沒有 c156 的 previews」——那是誤判**：
+42 個 key **全部都在** `batch-progress/probe/previews.json` 裡（40 ready／2 非 ready，查無 key 0）。
+**鉤子層依研究層 notes 逐張確認的做法本身沒錯**，但**「查不到檔案」要先確認自己的查法**
+——**這與第 1370 條（腳本讀錯資料形狀時，回報的「零命中」與「真的沒有」長得一樣）是同一類。**

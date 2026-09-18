@@ -49540,16 +49540,8 @@
   "tried": [
    "us:2→1"
   ],
-  "front": "us",
-  "collectionId": 723467420,
-  "appleTitle": "Live in Chicago",
-  "appleArtist": "Kurt Elling",
-  "appleYear": "1999",
-  "explicitness": "notExplicit",
-  "trackCount": 14,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/f1/e3/a3f1e364-e755-8869-b29a-680d772f3a36/mzaf_8734936727312039758.plus.aac.p.m4a",
-  "cleanedOnly": false,
-  "status": "ready"
+  "status": "unavailable",
+  "note": "2026-09-18 主線實查：探測層採到的 723467420 是《Live in Chicago》正盤（14 軌），不是這張 6 軌的 Out Takes。研究 b 組三種查法跑滿、明寫查無。第 1067 條的錯碟形狀，且與正盤共用同一個 collectionId 會違反第 646 條。退回固定無來源狀態。"
  },
  "Don Byron|A Fine Line": {
   "batch": "c157",
@@ -50168,6 +50160,587 @@
   "explicitness": "notExplicit",
   "trackCount": 16,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/71/09/d1/7109d12c-96ca-917d-1b2a-286720db8290/mzaf_6107257169965544081.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Stéphane Huchard|Toutakoosticks": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:2→1"
+  ],
+  "front": "gb",
+  "collectionId": 696885099,
+  "appleTitle": "Toutakoosticks",
+  "appleArtist": "Stephane Huchard",
+  "appleYear": "2001",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/72/88/e1/7288e12c-2800-77a6-3221-c299e2e6a1d1/mzaf_13474273508753590395.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Cassandra Wilson|Belly of the Sun": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 723520884,
+  "appleTitle": "Belly of the Sun",
+  "appleArtist": "Cassandra Wilson",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/bb/39/d5bb3969-029c-a3f6-51a4-fe7633dfa2bc/mzaf_2186827556973865596.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Soulive|Next": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 724931758,
+  "appleTitle": "Next",
+  "appleArtist": "Soulive",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/05/69/44/056944ff-d6f7-9388-b62f-b1fd06d63348/mzaf_17258883034589069444.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Medeski Martin & Wood|Uninvisible": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 724621488,
+  "appleTitle": "Uninvisible",
+  "appleArtist": "Medeski, Martin & Wood",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/f3/74/0ff37438-f28b-cba1-0c66-6abf6bf3586a/mzaf_4674184060618825178.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Bill Charlap|Stardust": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 724840353,
+  "appleTitle": "Stardust",
+  "appleArtist": "Bill Charlap",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/db/e5/32dbe5ac-4ad1-0de9-0811-31409ab6f42a/mzaf_11264604932004457827.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Joe Lovano|Viva Caruso": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 723559258,
+  "appleTitle": "Viva Caruso",
+  "appleArtist": "Joe Lovano",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/36/62/51/366251fa-dac5-2917-322b-572857d5f563/mzaf_3618138616312465908.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Rachelle Ferrell|Live in Montreux 91-97": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "nl:0→0",
+   "ca:0→0",
+   "tw:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Jason Moran|Modernistic": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 725816131,
+  "appleTitle": "Modernistic",
+  "appleArtist": "Jason Moran",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/59/4d/35/594d3516-f3ad-37dd-7ce0-54af6e0075cd/mzaf_6186467688652231813.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Cæcilie Norby|First Conversation": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 693078550,
+  "appleTitle": "First Conversation",
+  "appleArtist": "Cæcilie Norby",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1b/05/13/1b05138e-8aa4-d320-2087-55ac06767d77/mzaf_16221586562729502501.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jacky Terrasson|Smile": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 724931027,
+  "appleTitle": "Smile",
+  "appleArtist": "Jacky Terrasson",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/aa/23/c7/aa23c76b-754c-bd4e-b3e3-54a0d387a897/mzaf_18335250835434976496.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Soulive|Soulive": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:12→1"
+  ],
+  "front": "gb",
+  "collectionId": 715558078,
+  "appleTitle": "Soulive",
+  "appleArtist": "Soulive",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a8/eb/c8/a8ebc87b-9eec-382d-b1ba-be654cb37f7f/mzaf_17108381847922381077.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Chucho Valdés|Fantasía cubana": {
+  "batch": "c158",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 724552826,
+  "appleTitle": "Fantasia Cubana",
+  "appleArtist": "Chucho Valdés",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c2/9a/78/c29a78c4-4c6b-ffaa-5412-e82801ebf727/mzaf_16443822564879948004.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jukka Perko & Virtuosi di Kuhmo, John Storgårds|Kaanaanmaa": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "nl:0→0",
+   "ca:0→0",
+   "tw:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Chris Minh Doky|Cinematique": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 1483230405,
+  "appleTitle": "Cinematique",
+  "appleArtist": "Chris Minh Doky",
+  "appleYear": "2002",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/34/91/67/34916727-85e6-09cb-6a26-d1bef7b1a673/mzaf_16342648838499432184.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Ron Carter|The Golden Striker": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "nl:0→0",
+   "ca:0→0",
+   "tw:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Stefon Harris|The Grand Unification Theory": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 724205409,
+  "appleTitle": "The Grand Unification Theory",
+  "appleArtist": "Stefon Harris",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/95/8a/72/958a7207-e306-f3ed-e37c-f7558ef487f9/mzaf_14528705589754579360.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Flavio Boltro|40°": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "nl:0→0",
+   "ca:0→0",
+   "tw:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Chucho Valdés|New Conceptions": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715855455,
+  "appleTitle": "New Conceptions",
+  "appleArtist": "Chucho Valdés",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/54/21/c1/5421c1f0-a25a-3702-3fee-0beed71399ec/mzaf_12953938065299057178.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Paul Jackson, Jr.|Still Small Voice": {
+  "batch": "c158",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 723551810,
+  "appleTitle": "Still Small Voice",
+  "appleArtist": "Paul Jackson Jr.",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/83/0d/51/830d511a-cf19-97d5-c408-08f2bb0d7017/mzaf_10789453082606400631.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Greg Osby|St. Louis Shoes": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 724762428,
+  "appleTitle": "St. Louis Shoes",
+  "appleArtist": "Greg Osby",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/3c/b5/a73cb57d-f9aa-5cc0-531a-1de500b84b57/mzaf_6906561064526531602.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Martial Solal|NY-1, Live At The Village Vanguard": {
+  "batch": "c158",
+  "tried": [
+   "us:1→0",
+   "gb:1→0",
+   "jp:1→0",
+   "de:1→0",
+   "fr:1→0",
+   "nl:1→0",
+   "ca:1→0",
+   "tw:1→0"
+  ],
+  "status": "unavailable"
+ },
+ "Van Morrison|What's Wrong With This Picture?": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1828525041,
+  "appleTitle": "What's Wrong with This Picture?",
+  "appleArtist": "Van Morrison",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e6/c8/44/e6c84478-791b-63bd-a21a-45746e7a54b1/mzaf_7369936057431044862.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Kurt Elling|Man in the Air": {
+  "batch": "c158",
+  "tried": [
+   "us:1→0",
+   "gb:1→0",
+   "jp:1→0",
+   "de:1→0",
+   "fr:1→0",
+   "nl:1→0",
+   "ca:1→0",
+   "tw:1→0"
+  ],
+  "status": "unavailable"
+ },
+ "Dianne Reeves|A Little Moonlight": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "nl:0→0",
+   "ca:0→0",
+   "tw:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Joe Lovano Nonet|On This Day...At The Vanguard": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1443185567,
+  "appleTitle": "On This Day At the Vanguard",
+  "appleArtist": "Joe Lovano Nonet",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/53/f1/d6/53f1d614-8185-949b-793c-ede4ae381c24/mzaf_17397698875002819514.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Cassandra Wilson|Glamoured": {
+  "batch": "c158",
+  "tried": [
+   "us:2→2"
+  ],
+  "front": "us",
+  "collectionId": 1461933484,
+  "appleTitle": "Glamoured",
+  "appleArtist": "Cassandra Wilson",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4a/29/2a/4a292a13-0c4c-fc09-6d08-49f75156672c/mzaf_10723597601470493417.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Terence Blanchard|Bounce": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 724365046,
+  "appleTitle": "Bounce",
+  "appleArtist": "Terence Blanchard",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bc/05/60/bc056035-f746-1715-30a7-131bef98da51/mzaf_7885005057177640926.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Pat Martino|Think Tank": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715609153,
+  "appleTitle": "Think Tank",
+  "appleArtist": "Pat Martino",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/09/66/19/096619a6-07ae-85bf-b360-bfb48675ed18/mzaf_18198529158662579710.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Erik Truffaz|The Walk of the Giant Turtle": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1843162488,
+  "appleTitle": "The Walk Of The Giant Turtle (Edition Deluxe)",
+  "appleArtist": "Erik Truffaz",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/5f/8a/865f8aaf-d103-48a1-dbea-b708fce483e4/mzaf_9062462744488883280.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Trio Töykeät|High Standards": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 713292593,
+  "appleTitle": "High Standards",
+  "appleArtist": "Trio Toykeat",
+  "appleYear": "2003",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/71/8d/34/718d3441-ae84-4bfa-cbb8-80ac95a08a7d/mzaf_11772825829157363507.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Renee Rosnes and the Danish Radio Big Band|Renee Rosnes & The Danish Radio Big Band": {
+  "batch": "c158",
+  "tried": [
+   "us:6→0",
+   "gb:6→0",
+   "jp:12→0",
+   "de:6→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:6→0",
+   "tw:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Greg Osby|Public": {
+  "batch": "c158",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 716770983,
+  "appleTitle": "Public",
+  "appleArtist": "Greg Osby",
+  "appleYear": "2004",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/4e/cc/fd/4eccfdb7-be52-9cde-5ea8-6f6f8a0ad7ac/mzaf_3756064920530389197.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Marc Moulin|Entertainment": {
+  "batch": "c158",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 693300610,
+  "appleTitle": "Entertainment",
+  "appleArtist": "Marc Moulin",
+  "appleYear": "2004",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/05/e1/77/05e177e8-4a2e-00d3-0b07-b163b0b13805/mzaf_8031978562092248770.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Nicola Conte|Other Directions": {
+  "batch": "c158",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 390148360,
+  "appleTitle": "Other Directions (Remastered)",
+  "appleArtist": "Nicola Conte",
+  "appleYear": "2004",
+  "explicitness": "notExplicit",
+  "trackCount": 22,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6f/a3/cd/6fa3cd5d-e319-5f85-fae1-cc5b5a29e3cc/mzaf_720148233399065632.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Bill Charlap Trio|Somewhere: The Songs of Leonard Bernstein": {
+  "batch": "c158",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 715644274,
+  "appleTitle": "Somewhere - The Songs of Leonard Bernstein",
+  "appleArtist": "Bill Charlap Trio",
+  "appleYear": "2004",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c6/da/52/c6da5257-72aa-2e36-b048-50d02531f5a8/mzaf_4724733384312068140.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Dianne Reeves|Christmas Time Is Here": {
+  "batch": "c158",
+  "tried": [
+   "us:3→1"
+  ],
+  "front": "us",
+  "collectionId": 723470103,
+  "appleTitle": "Christmas Time Is Here",
+  "appleArtist": "Dianne Reeves",
+  "appleYear": "2004",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/b3/25/bfb325dd-41c3-ecbd-24cf-2942cc944030/mzaf_10348830478871493265.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Miles Davis|Birdland 1951": {
+  "batch": "c158",
+  "tried": [
+   "us:6→1"
+  ],
+  "front": "us",
+  "collectionId": 715531613,
+  "appleTitle": "Birdland 1951",
+  "appleArtist": "Miles Davis",
+  "appleYear": "2004",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0e/fb/58/0efb58f0-0e7c-8f0c-21f9-fd4bbe27a7c9/mzaf_1459967464846141023.plus.aac.p.m4a",
   "cleanedOnly": false,
   "status": "ready"
  }
