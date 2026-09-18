@@ -80,3 +80,9 @@
    Cash Box 1963-03-09／04-13 廣告兩度佐證）。
 5. ⚠ **撞陳列的卡要注意陳列順序**：c-147 的 Miles《Volume 1》《Volume 2》與池中 10 吋三張、
    c-145 的《Street Singer》《Confirmation》與池中 seed 卡，**內容大量重疊但各算一張**（risk 已互指）。
+
+### 後補（1985 後那一段跑出來的，與本線同一份待辦）
+
+6. **池中既有卡待修（第二筆）**：`Bill Evans — The Paris Concert, Edition One` 年份 **1982 應為 1983**
+   （c-149 研究 a 組順帶查到：**Cash Box 1983-02-05 p8 評介**＋兩刊 1983 全年榜位；
+   本線的 Edition Two 卡年份 1984 已另以 Billboard 1984-06-02 榜位確認）。

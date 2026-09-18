@@ -1,0 +1,1158 @@
+[
+ {
+  "key": "desc2:The Don Pullen-George Adams Quartet|Song Everlasting",
+  "artist": "The Don Pullen-George Adams Quartet",
+  "album": "Song Everlasting",
+  "facts": [
+   {
+    "f": "release-group 5f2622a3 的欄位：title「Song Everlasting」、artist-credit「The Don Pullen-George Adams Quartet」（**Group 7ac6c37d**）、first-release-date **1987**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：bc381373，1987 US Official **CD**、Blue Note **CDP 7 46907 2**、barcode 077774690720、**6 軌**（〈Sun Watchers〉5:44／〈Serenade for Sariah〉7:35／〈1529 Gunn Street〉6:14／〈Warm Up〉9:51／〈Sing Me a Song Everlasting〉10:32／〈Another Reason to Celebrate〉8:45）。⚠ **MB 沒有建 1987 年的黑膠 BLJ-46907**——已依第 642 條換 `inc=media+labels+recordings+artist-credits` 端點組合確認，是 MB 真的沒建。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5f2622a3-5a9d-3a67-baaf-35062115e78f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁：**RCA Studio C, NYC，1987 年 4 月 21 日一場錄完**。編制 George Adams（次中音薩克斯風、長笛）、Don Pullen（鋼琴）、Cameron Brown（貝斯）、Dannie Richmond（鼓）。母帶 take 號 (tk.5)Sun Watchers／(tk.4)Warm Up／(tk.3)1529 Gunn Street／(tk.1)Serenade For Sariah／-Sing Me A Song Everlasting 五軌**掛在 `Blue Note BLJ-46907`**；**(tk.3)Another Reason To Celebrate 只掛 `Blue Note CDP 7 46907 2; Mosaic MS-013`**——**黑膠是 5 軌、CD 才是 6 軌。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 2408802（1987 US LP，Blue Note BLJ-46907）的軌目就是五軌**：A1 Sun Watchers 5:43／A2 Serenade For Sariah 7:35／A3 1529 Gunn Street 6:14／B1 Warm Up 9:50／B2 Sing Me A Song Everlasting 10:30。notes：「Recorded at RCA Studio C, New York City on April 21, 1987. **A digital recording.**」製作群：**Michael Cuscuna 製作**、JoAnne Jimenez 協同製作、**Mike Moran 錄音**、**Carol Friedman 美術指導與攝影**、Lee Jeske 內頁文字、Ron McMaster 刻版。⚠ **Discogs 的掛名把兩個人的順序反過來寫成 `George Adams - Don Pullen Quartet`**（MB 與盤面是 Don Pullen 在前）。",
+    "src": "https://api.discogs.com/releases/2408802"
+   },
+   {
+    "f": "**Billboard 1987 年 10 月 17 日 p96 評介欄**：「DON PULLEN- GEORGE ADAMS QUARTET **Song Everlasting** PRODUCER: **Michael Cuscuna** Blue Note 46907 ／ Pianist Pullen and reedman Adams lead lauded **Mingus drummer Dannie Richmond** and bassist Cameron Brown through a collection of originals that will satisfy and delight purists. **CD version has an extra track.**」——**最後那句是同期紙本直接確認「黑膠少一軌」**，與 jazzdisco、Discogs 三邊吻合。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-10-17.pdf"
+   },
+   {
+    "f": "**Cash Box 1987 年 8 月 29 日 p15 評介欄**：「SONG EVERLASTING-Don Pullen/George Adams Quartet-**Blue Nole 46907**-Producer: Michael Cuscuna ／ **One of the hottest working bands in jazz** in a typically spirited outing.」⚠ **原文把廠牌印成「Blue Nole」是紙本／OCR 誤植（第 509c 條）**；同一格上方是 Jack Walrath《Master Of Suspense》Blue Note 46905。**這一則比 Billboard 早七週，是本盤最早的同期紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1987/CB-1987-08-29.pdf"
+   },
+   {
+    "f": "維基的專頁：錄音 **1987-04-21**，曲目第 6 軌〈Another Reason to Celebrate〉8:44 標註「**Bonus track on CD only**」；編制與 jazzdisco 相同（Pullen 鋼琴、Adams 次中音薩克斯風與長笛、Cameron Brown 貝斯、Dannie Richmond 鼓）。**這是黑膠 5 軌／CD 6 軌的第四個獨立來源。**",
+    "src": "https://en.wikipedia.org/wiki/Song_Everlasting"
+   },
+   {
+    "f": "店面觀察（第 254 條，只寫觀察）：Apple us 條目 **1766575513**，掛名寫成 `The Don Pullen - George Adams Quartet`（連字號兩側有空白），**6 軌＝CD 形、不是原盤黑膠的 5 軌**，releaseDate 1987-01-01（年度佔位）、℗ 1987 Capitol。CAA 在 release-group 層有圖，來源是唯一的 CD release bc381373。",
+    "src": "https://itunes.apple.com/lookup?id=1766575513&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "一天之內在 RCA Studio C 錄完，黑膠只放得下五首——第六首〈Another Reason to Celebrate〉八分四十五秒，1987 年只有買 CD 的人聽得到，Billboard 的評介還特地加了一句「CD 版多一軌」",
+   "四個人裡有兩個是 Mingus 的舊部：Adams 與鼓手 Dannie Richmond。這張錄完的隔年三月 Richmond 就過世了，這個四重奏跟著散掉"
+  ],
+  "sound": "黑膠 5 軌、CD 6 軌，全部是團內原創的鋼琴四重奏。George Adams 的次中音薩克斯風粗礪、偶爾換長笛，Pullen 的鋼琴以手背刷鍵的滾奏著稱，Cameron Brown 的貝斯與 Dannie Richmond 的鼓維持 Mingus 樂團那種推著跑的律動。曲子偏長：〈Warm Up〉九分五十秒、〈Sing Me a Song Everlasting〉十分半，兩首合起來就佔掉黑膠整個 B 面。數位錄音。",
+  "keyTracks": [
+   "Sun Watchers",
+   "Sing Me a Song Everlasting",
+   "Warm Up"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1987 成立，本層把策展層的「兩則同期紙本」查證到原文並補上第三腳。** MB frd 1987＝jazzdisco 1987＝Discogs 原壓 2408802（1987 US LP）；紙本兩則獨立：**Cash Box 1987-08-29 p15 評介**（最早）與 **Billboard 1987-10-17 p96 評介**，兩則都印 Blue Note 46907、都寫製作人 Michael Cuscuna。**上市取 1987 年夏末**（Cash Box 評介週 8 月底回推）。錄音 1987-04-21 只寫正文。⚠ **本張沒有任何一邊指向別的年份**，無同型偏移。⚠ Apple 的 releaseDate 1987-01-01 是年度佔位，不可當上市日。",
+  "notes": "**覆核策展層：rgMbid 5f2622a3／唯一 release bc381373／catno BLJ-46907＋CDP 7 46907 2／掛名 `The Don Pullen-George Adams Quartet`／年份 1987 全部成立，本張未擋下。**｜⚠ **本層新發現的軌數兩形，第 972 條的表上沒有這一張**：**黑膠 BLJ-46907 只有 5 軌、CD CDP 7 46907 2 是 6 軌**，多出來的是〈Another Reason to Celebrate〉（8:45）。**四個來源一致**（jazzdisco 的去向欄、Discogs 原壓軌目、維基的 bonus 標註、Billboard 評介的「CD version has an extra track」）。**正文與 `keyTracks` 一律以 5 軌的原盤為準；要提〈Another Reason to Celebrate〉必須註明它是 CD 才有的一軌。**｜**製作人 Michael Cuscuna**（Discogs credits ＋ 兩刊評介三邊一致），協同製作 JoAnne Jimenez，錄音 Mike Moran。**封面美術指導與攝影 Carol Friedman**——⚠ **Friedman 是本批 Blue Note 那幾年的固定班底，本組至少七張的封面都是她**（本盤、Ever Since the World Ended、Pieces of Blue and the Blues、Revelations、New Beginnings、Foreign Affairs、Times Are Changing），**正文不得把她寫成本盤獨有的特色**。｜⚠ **紙本誤植**（第 509c 條）：Cash Box 1987-08-29 把廠牌印成「Blue Nole」。｜⚠ **掛名三形**：MB RG 與 release 都是 `The Don Pullen-George Adams Quartet`（ASCII 連字號、無空白）；**Apple 寫成 `The Don Pullen - George Adams Quartet`（連字號兩側有空白）**；**Discogs 把兩人順序反過來寫成 `George Adams - Don Pullen Quartet`**；Cash Box 用斜線形、Billboard 用破折號形。**卡上值照 MB RG title，其餘四形都只進 queryAlias，正文不得改寫掛名順序。**｜**跨卡**（第 973 條）：Don Pullen 在本組有兩張，另一張《New Beginnings》用個人字串 `Don Pullen`、是 **1988-12-16 A&R Studios 的三重奏（Gary Peacock／Tony Williams）**——**與本盤四重奏一個人都沒重疊（除 Pullen 本人），正文絕不得互抄班底**。｜**Mosaic MS-013《Don Pullen - Mosaic Select》(2005)** 同時收了本盤的〈Another Reason to Celebrate〉與《New Beginnings》的〈Silence = Death〉——**那是後出的選輯，不是本盤的內容。**｜非選輯：單一場次、全原創的四重奏專輯。"
+ },
+ {
+  "key": "desc2:Mose Allison|Ever Since the World Ended",
+  "artist": "Mose Allison",
+  "album": "Ever Since the World Ended",
+  "facts": [
+   {
+    "f": "release-group 9308cfb7 的欄位：title「Ever Since the World Ended」、artist-credit「Mose Allison」（Person 18b76828）、first-release-date **1987**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：2cd1096d，1987 US Official **CD**、Blue Note **CDP 7 48015 2**、barcode 0077774801522、**12 軌**。⚠ **MB 沒有建 1987 年的黑膠 BLJ-48015**（已依第 642 條換端點組合確認）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9308cfb7-82b9-3b9e-9e34-8135ad797eea&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁把本盤拆成**四場、四種編制**：**1987-05-10 RPM Sound Studios, NYC「Mose Allison Sextet」**（Arthur Blythe 中音薩克斯風，Bobby Malach、**Bennie Wallace** 次中音薩克斯風，Allison 鋼琴與人聲，Dennis Irwin 貝斯，Tom Whaley 鼓）錄〈Josephine〉〈Gettin' There〉〈Ever Since The World Ended〉；**1987-05-11 同地「Quartet」**（**Kenny Burrell 吉他**取代管樂）錄〈Indian Summer〉〈Tumblin' Tumbleweed〉〈I Looked In The Mirror〉〈What's Your Movie〉；**1987-05-21 M&I Recording Studios「Quintet」**（Malach 改吹中音、Wallace 次中音）錄〈Tai Chi Life〉〈Trouble In Mind〉〈Top Forty〉；**1987-06-02 同地「Trio」**錄〈I'm Alive〉〈Puttin' Up With Me〉。⚠ **〈Indian Summer〉與〈Tumblin' Tumbleweed〉的去向欄只寫 `Blue Note CDP 7 48015 2`，其餘十軌寫 `BLJ-48015`——黑膠 10 軌、CD 12 軌。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 4876494（1987 US LP，Blue Note BLJ-48015）確實只有十軌**：A1 Ever Since The World Ended 4:48／A2 Top Forty／A3 Puttin' Up With Me／A4 Josephine／A5 I Looked In The Mirror／B1 Gettin' There／B2 Tai Chi Life／B3 What's Your Movie?／B4 Trouble In Mind／B5 I'm Alive。notes：「ⓅⒸ 1987 EMI-Manhattan Records ／ **Recorded in New York at RPM Recording on May 11 & 12, 1987 and M & I Recorders on May 21 and June 2, 1987**」。製作群：**Ben Sidran 製作（for Bulldog Productions, Inc.）、Michael Cuscuna 執行製作**、Peter Darmi 錄音與混音、**Carol Friedman 美術指導與攝影**、Condak Design 設計、**Ben Sidran 內頁文字**。",
+    "src": "https://api.discogs.com/releases/4876494"
+   },
+   {
+    "f": "**Cash Box 1987 年 12 月 5 日 p15 的專欄直接把兩張形狀寫了出來**：「…rather than giving the CD buyer extra cuts, they're selling the LP buyer a condensed version of the album… Example: **Mose Allison's 'Ever Since The World Ended' (Blue Note). The CD of this delightful album boasts two extra tracks: the sixth song, 'Indian Summer' (3:52), and the last song, 'Tumblin' Tumbleweeds' (3:46), bringing the CD length up to a modest 45:43.**」——**同期紙本逐軌點名 CD 多出來的是哪兩首、各幾分幾秒，與 jazzdisco 的去向欄完全吻合。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1987/CB-1987-12-05.pdf"
+   },
+   {
+    "f": "**Billboard 1987 年 12 月 5 日 p74 評介欄**：「JAZZ **MOSE ALLISON** Ever Since The World Ended PRODUCER: **Ben Sidran** Blue Note 48015 ／ From album's opening couplet, it's trademark Allison: **nonlinear humor, sung in total deadpan.** Beyond the chuckles, Allison is nifty on acoustic piano, complemented by such guests as **Arthur Bly[the]**…」；**Cash Box 1987-11-14 p14 另有一則評介**，但**原文把盤名印成「EVER SINCE THE WORLD BEGAN」**（第 509c 條的紙本誤植）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-12-05.pdf"
+   },
+   {
+    "f": "**Billboard「TOP JAZZ ALBUMS」榜**：1988-01-23 p42 **以 NEW 進榜**（「MOSE ALLISON BLUE NOTE 48015 /EMI-MANHATTAN (CD) EVER SINCE THE WORLD ENDED」）；1988-02-06 p29 第 12 名（第 3 週）、**1988-02-20 p62 第 10 名（第 5 週，最高名次）**、1988-03-05 p55 第 13 名（第 7 週）、1988-03-19 p38 第 15 名（第 9 週）。⚠ **本張上的是 `TOP JAZZ ALBUMS`，不是 `TOP CONTEMPORARY JAZZ ALBUMS`**（第 879 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-02-20.pdf"
+   },
+   {
+    "f": "**葛萊美入圍**：Billboard 1989-01-21 p118 與 Cash Box 1989-01-21 p5 的入圍名單，「BEST JAZZ VOCAL PERFORMANCE, MALE」一欄列「**Ever Since The World Ended (Album) - Mose Allison, Blue Note**」，同欄對手是 Bobby McFerrin〈Brothers〉、Mark Murphy、Mel Tormé《A Vintage Year》。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-01-21.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **715853218**，**12 軌＝CD 形、不是原盤黑膠的 10 軌**，appleYear 1987。CAA 在 release-group 層有圖，來源是唯一的 CD release 2cd1096d。",
+    "src": "https://itunes.apple.com/lookup?id=715853218&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "同一批歌分四天、四種編制錄：六重奏那天有三支薩克斯風，隔天全撤掉換成 Kenny Burrell 一把吉他，最後兩天縮到五人與三人",
+   "1987 年的 CD 不是「多送你兩首」，而是黑膠少收了兩首——Cash Box 的專欄當年就指名道姓寫出是〈Indian Summer〉與〈Tumblin' Tumbleweeds〉"
+  ],
+  "sound": "黑膠 10 軌、CD 12 軌，Allison 自彈自唱的鋼琴藍調爵士。開場同名曲就是他的招牌：歌詞冷面荒謬、唱腔全無表情，鋼琴卻機敏。四場編制層層遞減——六重奏（Arthur Blythe 中音、Bobby Malach 與 Bennie Wallace 次中音）、加 Kenny Burrell 吉他的四重奏、五重奏、最後只剩鋼琴三重奏。曲子短，多在三到五分鐘。Dennis Irwin 的貝斯與 Tom Whaley 的鼓四場全在。",
+  "keyTracks": [
+   "Ever Since the World Ended",
+   "Top Forty",
+   "I'm Alive"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1987 成立，同期紙本三則獨立、榜位連五期。** MB frd 1987＝jazzdisco 1987＝Discogs 原壓 4876494（1987 US LP，盤面 ℗© 1987 EMI-Manhattan）；紙本：**Cash Box 1987-11-14 p14 評介**（最早，但盤名誤植成 World Began）、**Billboard 1987-12-05 p74 評介**（製作人 Ben Sidran）、**Cash Box 1987-12-05 p15 專欄**。**Billboard TOP JAZZ ALBUMS 1988-01-23 以 NEW 進榜、連掛至 1988-03-19，最高第 10 名（1988-02-20）**——**進榜月晚於上市月是常態（第 801 條），不改年份。上市取 1987 年秋末**（11 月中的第一則評介回推）。⚠ **錄音日兩說**：jazzdisco 記 RPM **5 月 10 日與 11 日**，Discogs 盤面 notes 記 RPM **5 月 11 日與 12 日**；M&I 的 5-21 與 6-02 兩邊一致。**正文不得寫死 RPM 那兩天的日期。**",
+  "notes": "**覆核策展層：rgMbid 9308cfb7／唯一 release 2cd1096d／catno BLJ-48015＋CDP 7 48015 2／掛名 `Mose Allison`／年份 1987 全部成立，本張未擋下。**｜⚠ **本層新發現的軌數兩形，第 972 條的表上沒有這一張**：**黑膠 10 軌、CD 12 軌**，多出來的是〈Indian Summer〉(3:52) 與〈Tumblin' Tumbleweeds〉(3:46)。**三個來源一致**（jazzdisco 去向欄、Discogs 原壓十軌、**Cash Box 1987-12-05 專欄逐軌點名**）。**正文與 `keyTracks` 以 10 軌原盤為準。**｜⚠ **四場編制完全不同，正文不得把所有人寫成同一個團**：Arthur Blythe 只在 05-10 那場；**Kenny Burrell 只在 05-11 那場**；Bennie Wallace 在 05-10 與 05-21 兩場；Bobby Malach **在 05-10 吹次中音、在 05-21 吹中音**（jazzdisco 與 Discogs 都這樣登）；Dennis Irwin 與 Tom Whaley 四場全在。｜**製作人 Ben Sidran**（Discogs credits ＋ Billboard 評介兩邊一致，Sidran 同時寫內頁文字），**執行製作 Michael Cuscuna**——⚠ **本盤的製作人不是 Cuscuna，與本組其他多張不同，絕不得互抄**。**封面美術指導與攝影 Carol Friedman、設計 Condak Design。**｜⚠ **紙本誤植**（第 509c 條）：Cash Box 1987-11-14 把盤名印成「EVER SINCE THE WORLD BEGAN」。｜**跨卡**（第 973 條）：**Bennie Wallace 在本組另有領班盤《Bordertown》（1987-06 Skyline Studios），Kenny Burrell 在本組另有領班盤《Pieces of Blue and the Blues》（1986-10 Village Vanguard 現場）**——**三張的場次、地點、班底完全不同，兩卡 risk 已互指，正文不得互抄。**｜**葛萊美入圍**（Best Jazz Vocal Performance, Male，1989 年那屆）是本盤最硬的一條外部評價，兩刊同日刊出。｜非選輯：四場錄音室新錄音。"
+ },
+ {
+  "key": "desc2:Eric Dolphy|Other Aspects",
+  "artist": "Eric Dolphy",
+  "album": "Other Aspects",
+  "facts": [
+   {
+    "f": "release-group 6f7faf63 的欄位：title「Other Aspects」、artist-credit「Eric Dolphy」（Person badda5cf）、first-release-date **1987-09-22**、primary-type Album、secondary-types 空。轄下兩筆：5e032b93（**1987-09-22 US CD，Blue Note CDP 7 48041 2**，barcode 077774804127，**5 軌**）與 ad4f3a7e（無日期 XW 數位，5 軌）。五軌：〈Jim Crow〉15:22／〈Inner Flight I〉4:07／〈Dolphy'n〉6:49／〈Inner Flight II〉4:06／〈Improvisations and Tukras〉10:54。⚠ **MB 沒有建 1987 年的黑膠 BT 85131**（第 642 條已換端點確認）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=6f7faf63-5b99-3508-b9c8-47b11c4efe9a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note **85100 系列**目錄頁把 BT 85131 拆成三場：**（一）Stereo Sound Studios, NYC，1960 年 7 月 8 日**，Dolphy（長笛）、**Roger Mason（tamboura）、Gina Lalli（tabla）**→〈Improvisations And Tukras〉；**（二）Esoteric Sound Studios, NYC，1960 年 11 月**，Dolphy（長笛）、**Ron Carter（貝斯，只在第 3 軌）**→〈Inner Flight #1〉〈Inner Flight #2〉〈Dolphy-N〉；**（三）University Of Michigan, Ann Arbor, MI，1964 年 3 月 1 日或 2 日**，Dolphy（中音薩克斯風、低音單簧管、長笛）、**Bob James（鋼琴）、Ron Brooks（貝斯）、Robert Pozar（打擊）、David Schwartz（人聲）**→〈**Jim Crow (aka A Personal Statement)**〉。年份欄記 1987。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-85100-series/"
+   },
+   {
+    "f": "維基的專頁：錄音 **1960 與 1964**，**製作人 James Newton**。母帶的來歷：Dolphy 1964 年赴歐與 Mingus 巡演前把帶子留給作曲家 **Hale Smith** 與其妻 Juanita；多年後 Smith 找上 James Newton，Newton 看過材料後建議他聯絡 Blue Note，最後由 Newton 製作發行。**〈Jim Crow〉其實是 Bob James 作曲的〈A Personal Statement〉，錄於 Dolphy 參加 1964 年安娜堡 ONCE Festival 期間**，Newton 發行時不確定曲名與作者，**暫命名為「Jim Crow」**；人聲是 Bob James 三重奏的**假聲男高音 David Schwartz**。〈Dolphy'n〉是與 Ron Carter 的貝斯二重奏（Dolphy 吹中音薩克斯風），兩首〈Inner Flight〉是無伴奏長笛獨奏，〈Improvisations and Tukras〉用了 tamboura 與 tabla。",
+    "src": "https://en.wikipedia.org/wiki/Other_Aspects"
+   },
+   {
+    "f": "**Billboard 1987 年 2 月 7 日 p73 的廠牌檔期欄（第 612 條）**：「**MANHATTAN: Set for Feb. 20 release** is Cheryl Lynn's label debut, 'Start Over.' **Due the same day are 'Romance & Revolution' by James Howard, 'Other Aspects' by Eric Dolphy**, 'America - Do You Remember The Love?' by James Blood Ulmer, 'The Real McCoy' by McCoy Tyner, and 'Gettin' Around' by Dexter Gordon. **The Tyner and Gordon sets are reissues.**」——**這是本盤上市日最硬的一條：廠牌自己排的 1987 年 2 月 20 日**，而且同日與本組另一張《Romance and Revolution》一起出。⚠ **原文把 James Newton 誤印成「James Howard」**（第 509c 條；與第 964 條警告的 James Newton／James Newton Howard 同名混淆完全是同一個坑）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-02-07.pdf"
+   },
+   {
+    "f": "**Billboard 1987 年 3 月 28 日 p70 評介欄**：「**ERIC DOLPHY** Other Aspects PRODUCER: **Eric Dolphy** Blue Note **BT 85131** ／ **Recently unearthed recordings** showcase Dolphy's impressionistic, avant-garde leanings, **including dabblings in folk music from India.** Work is first-rate, especially on album's leadoff cut…」⚠ **紙本把製作人欄填成 Dolphy 本人**（那是原始錄音的製作，發行製作是 James Newton，維基與 Discogs 都這樣分）。**這一則同時是黑膠號 BT 85131 的紙本出處。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-03-28.pdf"
+   },
+   {
+    "f": "**Billboard 1987 年 4 月 4 日 p31 的專文**把本盤與本組另一張綁在一起寫：「…a tribute both to the memory of Eric Dolphy and to one of Dolphy's most noteworthy present-day disciples, **James Newton. Newton was instrumental in the preparation for release of the private Dolphy recordings that make up 'Other Aspects,'** a 'new' album by the forward-thinking reed and woodwind virtuoso, **who died in 1964**. And Newton… pays both implicit and explicit tribute to Dolphy on his second Blue Note album, '**Romance And Revolution**.' ／ 'Other Aspects' sheds fascinating light on Dolphy's versatility as a composer. **It includes a composition for voice and chamber ensemble and a piece based on traditional Indian music as well as two unaccompanied flute solos and a saxophone-**[bass duet]」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-04-04.pdf"
+   },
+   {
+    "f": "**Billboard「TOP JAZZ ALBUMS」榜 1987-04-25 p50 以 NEW 進榜**（「ERIC DOLPHY BLUE NOTE 85131 /MANHATTAN OTHER ASPECTS」，同榜第 12 名是本組的 James Newton《Romance and Revolution》BT 85134）；**Cash Box 的 TOP 40 JAZZ ALBUM 榜 1987-04-11 p14 亦同時列出兩張**（「OTHER ASPECTS ERIC DOLPHY (Blue Note BT 85131)／ROMANCE AND REVOLUTION JAMES NEWTON (Blue Note BT-85134)」）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-04-25.pdf"
+   },
+   {
+    "f": "Discogs 原壓 8217247（1987 US LP，Blue Note BT 85131）**五軌＝CD 軌數**：A1 Jim Crow 15:30／A2 Inner Flight #1 4:04／B1 Dolphy-N 6:45／B2 Inner Flight #2 4:04／B3 Improvisations And Tukras 10:47。**美術指導 Henry Marquez、設計 Carol Chen、母帶 Wally Traugott、數位轉錄與重混 David Baker**、原始錄音師 Jerry Newman；**「Produced For Release」與內頁文字都掛 James Newton**。⚠ **Discogs 的 notes 把〈Jim Crow〉寫成「recorded in New York City in 1962」、把另三軌寫成 Esoteric Sound 1960 年 11 月——「1962／紐約」這半句與 jazzdisco（1964-03，安娜堡密西根大學）、維基（1964 ONCE Festival）兩邊都對不上，本層採 jazzdisco＋維基。**",
+    "src": "https://api.discogs.com/releases/8217247"
+   }
+  ],
+  "hookCandidates": [
+   "整張碟的母帶是 Dolphy 1964 年去歐洲前寄放在作曲家 Hale Smith 家裡的；他死在那趟旅程上，帶子擱了二十多年，最後是後輩長笛手 James Newton 把它們整理出來、掛自己的名字製作發行",
+   "壓軸那首〈Jim Crow〉其實不叫這個名字——它是 Bob James 寫的〈A Personal Statement〉，1964 年在密西根大學錄的，有假聲男高音、有鋼琴三重奏；Newton 發行時查不出曲名，自己給它取了一個"
+  ],
+  "sound": "5 軌，在 Dolphy 的目錄裡形狀獨一無二。兩首〈Inner Flight〉是無伴奏長笛獨奏；〈Dolphy'n〉是他的中音薩克斯風與 Ron Carter 貝斯的二重奏；〈Improvisations and Tukras〉近十一分鐘，長笛配 tamboura 與 tabla，是他對印度音樂的正面練習；壓軸〈Jim Crow〉十五分半，人聲（假聲男高音）加鋼琴三重奏的室內樂編制，離爵士最遠、離二十世紀作曲最近。三場錄音橫跨 1960 與 1964，1987 年才首度成盤。",
+  "keyTracks": [
+   "Jim Crow",
+   "Improvisations and Tukras",
+   "Dolphy'n"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1987（首次商業發行年）成立，本層補到廠牌檔期欄這一層。** 依 c-145 的庫存盤寫法：**錄音 1960-07-08／1960-11／1964-03，首次商業發行 1987**。階序最上層的一條是 **Billboard 1987-02-07 p73 的 Manhattan 檔期欄——廠牌自己排「Feb. 20 release」**（第 612 條），與 MB frd **1987-09-22**（那是 CD 的日期，不是黑膠的）並存但更早、更準。旁證三層：**Billboard 1987-03-28 p70 評介**（印黑膠號 BT 85131）、**Billboard TOP JAZZ ALBUMS 1987-04-25 以 NEW 進榜**、**Cash Box TOP 40 JAZZ 榜 1987-04-11**；Discogs 原壓群（US／FR LP＋US 卡帶 4BT-85131）全部標 1987。**上市取 1987 年 2 月 20 日**（廠牌檔期欄）。⚠ **MB frd 1987-09-22 是 CD release 5e032b93 的日期**，不是首發黑膠的——**第 978 條第 2 點的形狀在本張又中一次**，但年份剛好沒錯。⚠ **Apple 條目把 appleYear 標成 1962**，既非錄音年（1960／1964）也非發行年（1987），與第 966 條的觀察一致。",
+  "notes": "**覆核策展層：rgMbid 6f7faf63／catno BT 85131（黑膠）＋CDP 7 48041 2（CD）／5 軌／掛名 `Eric Dolphy`／年份 1987 全部成立，本張未擋下。**｜⚠ **錄音年本層改判 Discogs 的說法、維持策展層的 1960／1964**：Discogs 原壓 8217247 的 notes 寫〈Jim Crow〉「recorded in New York City in 1962」，但 **jazzdisco 記 1964 年 3 月 1 或 2 日、University of Michigan, Ann Arbor**，**維基記那是 1964 年安娜堡 ONCE Festival 期間錄的**——**兩個獨立來源同邊，Discogs 那一句年份與地點都錯，正文一律用 1964／安娜堡。**｜⚠ **〈Jim Crow〉這個曲名是後人取的**：實為 **Bob James 作曲的〈A Personal Statement〉**，2018 年《Musical Prophet》以正確曲名與作者再發。**正文若提這一軌，必須寫清楚「盤上叫〈Jim Crow〉，其實是 Bob James 的〈A Personal Statement〉，Newton 發行時不知道曲名」**，不得把它寫成 Dolphy 的作品。｜⚠ **三場的編制毫無重疊，正文不得寫成同一組人**：1960-07-08 是長笛＋tamboura（Roger Mason）＋tabla（Gina Lalli）；1960-11 是長笛／中音與 **Ron Carter** 貝斯（貝斯只在〈Dolphy'n〉）；1964-03 是 **Bob James 鋼琴、Ron Brooks 貝斯、Robert Pozar 打擊、David Schwartz 人聲**。｜**發行製作人 James Newton**（維基＋Discogs），⚠ **Billboard 1987-03-28 的評介把製作人欄填成 Dolphy 本人**（那指原始錄音），**正文寫製作人要分清楚這兩層**。**封面美術指導 Henry Marquez、設計 Carol Chen**（與本組《Romance and Revolution》同一位美術指導）。｜**跨卡（本層新發現，第 973 條的表上沒有這一組，強度最高的一組）**：**本盤的發行製作人 James Newton 就是本組另一張卡《Romance and Revolution》的領班**；**Billboard 1987-02-07 的檔期欄把兩張排在同一天（2 月 20 日）上市**，**Billboard 1987-04-04 p31 的專文把兩張當成同一件事寫**，**兩刊的爵士榜也是同期並列**。**兩卡 risk 必須互指，但正文不得把兩張寫成同一張碟**——本盤是 1960／1964 的庫存錄音，《Romance and Revolution》是 1986 年的新錄音。｜**實掃卡池：池中 `Eric Dolphy` 10 列，逐軌比對本盤五軌全新，零重疊**（第 967 條已查，本層覆核成立）。｜非選輯：MB `primary-type` Album、`secondary-types` 空；內容是同一位藝人生前未發表的三場錄音首度成盤，不是舊盤重編（第 874 條不適用，這五軌先前從未成盤發行）。"
+ },
+ {
+  "key": "desc2:Biréli Lagrène|Inferno",
+  "artist": "Biréli Lagrène",
+  "album": "Inferno",
+  "facts": [
+   {
+    "f": "release-group 9a58a18d 的欄位：title「Inferno」、artist-credit「Biréli Lagrène」（Person 57e0894c，**重音兩處必須保留**）、first-release-date **1987**、primary-type Album、secondary-types 空。轄下兩筆：**d1257d33 是 1987 GB Official 12 吋黑膠、Blue Note BLJ-48016、8 軌**（無 barcode）；fd8be238 是 1987 US Official CD、Blue Note **CDP-7-48016-2**、barcode 077774801621、8 軌。**八軌**：〈Inferno〉6:04／〈Rue de Pierre, Part Two〉3:55／〈Action〉4:00／〈Rock It〉5:07／〈Incertitude〉6:38／〈Berga〉4:07／〈Ballade〉6:11／〈Hips〉3:10。**黑膠與 CD 同軌數同軌序。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=9a58a18d-6b4c-4559-af94-c90651ac2ab8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁把 BLJ-48016 拆成**四場，全在 RPM Sound Studios, NYC，1987 年 7 月**：**07-04「Sextet」**（**Bill Evans** 次中音薩克斯風、Clifford Carter 鍵盤、Lagrène 吉他、Victor Bailey 電貝斯、**Bernard Purdie 鼓**、Cafe 打擊）→〈Rock It〉〈Hips〉；**07-05** 同編制但鼓換成 **Danny Gottlieb 與 Dave Weckl 兩人**→〈Incertitude〉〈Ballade〉；**07-06** 鼓換成 **Pierre Moerlen 與 Dave Weckl**→〈Berga〉〈Action〉〈Inferno〉；**07-08「Solo」**，Lagrène 一把吉他 →〈Rue De Pierre Part 2〉。年份欄記 1987。",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "Discogs 原壓 1528734（**1987 UK LP**，Blue Note BLJ-48016）八軌＝MB 軌目，notes 只寫「**Recorded at RPM Studios, New York, July, 1987**」。credits：**Bill Evans (3) 次中音薩克斯風**（Discogs 用消歧碼把他與鋼琴家 Bill Evans 分開）、Victor Bailey 貝斯、Clifford Carter 鍵盤、Café 打擊、**四位鼓手 Bernard Purdie／Danny Gottlieb／Dave Weckl／Pierre Moerlen**；**製作與編曲 Steve Khan 與 Christine Martin**。",
+    "src": "https://api.discogs.com/releases/1528734"
+   },
+   {
+    "f": "**Billboard 1988 年 1 月 30 日 p116 評介欄**：「**BIRELI LAGRENE** Inferno PRODUCERS: **Steve Khan, Christine Martin** **Blue Nob 48016** ／ As album's title suggests, **this French guitarist is a burner.** Some jazz outlets may find him **a bit too hot to handle**, but his chops merit attention.」⚠ **原文把「Blue Note」印成「Blue Nob」**（第 509c 條）。**這一則是美國評介，晚於 GB 首發約一季**——與策展層「首發 GB、美國評介與榜位晚一季」的判定相符。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-01-30.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 2 月 4 日 p6 的照片說明**（Blue Note 的活動）：「Shown, from left, are **Bruce Lundvall**, East Coast GM, Capitol Records/president, Blue Note Records; **Dianne Reeves**, Blue Note artist; **Ruth Lion, widow of Blue Note founder Alfred Lion**; and Blue Note artists **Stanley Jordan and Bireli LaGrene**.」——**這一則同時證明 Lagrène 在 1987–89 是 Lundvall 時代 Blue Note 的簽約藝人（不是一次性授權），也是本組 Dianne Reeves 那張卡的旁證。**⚠ 原文把掛名拼成「Bireli LaGrene」（無重音、大寫 G）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-02-04.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1474000351**，**8 軌＝原盤軌數**，appleYear 1987。CAA 在 release-group 層有圖——⚠ **第 966 條已標記：CAA 那張圖的來源是 US CD fd8be238，不是 GB 原盤 d1257d33**，版式可能不同（GB 黑膠與 US CD 的封面配置未逐一比對）。",
+    "src": "https://itunes.apple.com/lookup?id=1474000351&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "四場錄音，吉他手與貝斯手從頭到尾沒換，鼓手卻換了四個：Bernard Purdie、Danny Gottlieb、Dave Weckl、Pierre Moerlen——其中兩場是兩位鼓手同時打",
+   "Blue Note 1987 年簽下的這個法國人二十歲，出道時被當成 Django Reinhardt 的傳人；這張卻是插電的，Billboard 的評介說有些爵士通路會嫌它「太燙手」"
+  ],
+  "sound": "8 軌，插電的融合爵士吉他。Lagrène 的電吉他在前，Clifford Carter 的鍵盤鋪底，Victor Bailey 的電貝斯與 Cafe 的打擊撐節奏，Bill Evans（次中音薩克斯風，不是那位鋼琴家）在幾軌上接腔。開場同名曲六分鐘最烈；〈Rue de Pierre, Part Two〉是全盤唯一的無伴奏吉他獨奏，三分五十五秒；〈Incertitude〉與〈Ballade〉是兩位鼓手同時在場錄的。黑膠與 CD 同樣八軌。",
+  "keyTracks": [
+   "Inferno",
+   "Rue de Pierre, Part Two",
+   "Incertitude"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1987 成立（首發地 GB），跨地時差已核。** MB frd 1987、**MB 的 GB 黑膠 d1257d33 與 US CD fd8be238 都標 1987**、jazzdisco 1987、**Discogs 原壓 1528734 是 1987 UK LP**。⚠ **本張的同期紙本是美國的、比首發晚一季**：**Billboard 1988-01-30 p116 才登評介**，Billboard TOP CONTEMPORARY JAZZ 榜上的也不是本盤而是續作《Foreign Affairs》（1989-03 起）。**這不構成年份改判的理由**——第 976 條的判準是「評介與新片欄相距超過兩季才改」，而本張的 MB／jazzdisco／Discogs 三邊原壓群都在 1987、且**首發地是英國**，美國評介晚一季是跨地時差的正常形狀。**上市取 1987 年（GB）**，美國舖貨取 1987 年末至 1988 年初。⚠ **本盤沒有 Billboard／Cash Box 的榜位**（本層以 `48016`＋`Bireli` 兩種條件掃過 1987–1990 兩刊，只命中評介一則），**正文不得寫榜績**。",
+  "notes": "**覆核策展層：rgMbid 9a58a18d／GB 原盤 d1257d33／catno BLJ-48016／8 軌／掛名 `Biréli Lagrène`／年份 1987／首發地 GB 全部成立，本張未擋下。**｜⚠ **掛名重音**（第 307 條）：`Biréli Lagrène` 兩處重音必須保留，池中已有 1 列同字串。**Billboard 1988-01-30 印成「BIRELI LAGRENE」、1989-02-04 印成「Bireli LaGrene」、Discogs 標題作「Bireli Lagrene*」——三種無重音形都只進 queryAlias。**｜⚠ **同名消歧（第 964 條已預警，本層覆核成立且加強）**：本盤的次中音薩克斯風手 **Bill Evans 是 1958 年生、出自 Miles Davis 1980 年代樂團的那一位**，**Discogs 用消歧碼寫成 `Bill Evans (3)`**；**與池中 22 列、本組亦收其《The Paris Concert, Edition Two》的鋼琴家 Bill Evans 完全無關**。**兩卡 risk 已互指，正文提到本盤的薩克斯風手時必須帶消歧。**｜⚠ **四場的鼓手全不同，正文不得把四位鼓手寫成同一個節奏組**：Bernard Purdie 只在 07-04；Danny Gottlieb 只在 07-05；**Dave Weckl 在 07-05 與 07-06 兩場**；Pierre Moerlen 只在 07-06；**07-05 與 07-06 兩場是兩位鼓手同時在場**。Lagrène、Clifford Carter、Victor Bailey、Cafe 四人在前三場全在，07-08 是 Lagrène 一個人。｜**製作與編曲 Steve Khan 與 Christine Martin**（Discogs credits ＋ Billboard 評介兩邊一致）——**與本組其餘各張的 Cuscuna／Sidran／Cochran 等完全不同，不得互抄**。**封面設計者查無**（Discogs 的 credits 沒有美術欄位，維基無本盤條目）。｜**跨卡**（第 973 條）：**Lagrène 在本組有兩張**（本盤 1987-07／《Foreign Affairs》1988-08，都在 RPM Sound Studios），**班底幾乎全換、只有 Cafe 留下**（《Foreign Affairs》是 Koono 鍵盤、Jeff Andrews 與 Jürgen Attig 電貝斯、Dennis Chambers 鼓）——**兩卡正文不得互抄班底**；**製作人兩張都是 Steve Khan**，這一點可以互指。｜非選輯：四場錄音室新錄音。"
+ },
+ {
+  "key": "desc2:James Newton|Romance and Revolution",
+  "artist": "James Newton",
+  "album": "Romance and Revolution",
+  "facts": [
+   {
+    "f": "release-group 46b6258e 的欄位：title「Romance and Revolution」、artist-credit「James Newton」（Person 5fa6d546）、first-release-date **1987**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：24251328，1987 US Official **CD**、barcode 077774643122、**5 軌**（〈Forever Charles〉8:15／〈Meditations on Integration〉17:16／**〈Tenderly〉3:38**／〈Peace〉7:04／〈The Evening Leans Toward You〉16:22）。⚠ **MB 的 `catalog-number` 欄填的是 `DIDX 989`——那是 Disc Manufacturing Inc. 的壓片序號，不是發行目錄號**（第 974 條）。**MB 沒有建 1987 年的黑膠 BT 85134**（第 642 條已換端點確認）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=46b6258e-85e7-45a7-bcaa-d3b075ef58c0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note **85100 系列**目錄頁：**BT 85134，RCA Studio C, NYC，1986 年 8 月 20 日與 21 日兩天**。**四重奏那一段**（James Newton 長笛、**Abdul Wadud 大提琴**、Rick Rozie 貝斯、Pheeroan ak Laff 鼓）錄〈Peace〉；**加編成八人那一段**（再加 **Robin Eubanks 與 Steve Turre 兩把長號、Jay Hoggard 顫音琴、Geri Allen 鋼琴**）錄〈Forever Charles〉〈Meditations On Integration〉〈The Evening Leans Towards You〉。⚠ **jazzdisco 只列四軌——〈Tenderly〉不在黑膠上。** 年份欄記 1987。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-85100-series/"
+   },
+   {
+    "f": "**Discogs 原壓 4537785（1987 US LP，Blue Note BT 85134）證實黑膠只有四軌**：A1 Forever Charles 7:24／A2 Mediations On Integration 17:13（**原文少一個 d**）／B1 Peace 7:03／B2 The Evening Leans Toward You 16:21。notes：「**Recorded at RCA Studio C on August 20 and 21, 1986. A digital recording.** ／ DMM pressing.」credits：James Newton（長笛、內頁文字、編曲）、**Geri Allen 鋼琴**、Jay Hoggard 顫音琴、Robin Eubanks 與 Steve Turre 長號、Abdul Wadud 大提琴、Rick Rozie 貝斯、Pheeroan aklaff 鼓；**製作人 Mike Berniker**、錄音 Mike Moran、**美術指導 Henry Marquez**、攝影 Rumio Sato、DMM 刻版 Tony Dawsey。",
+    "src": "https://api.discogs.com/releases/4537785"
+   },
+   {
+    "f": "**Billboard 1987 年 3 月 7 日 p110 評介欄**：「**JAMES NEWTON** Romance And Revolution PRODUCER: **Mike Berniker** Blue Note **BT 85134** ／ **Flutist Newton's latest offering follows the pattern established on his first Blue Note album, integrating the influence of jazz predecessors with his own compositional style.**」——**這是黑膠號 BT 85134 的紙本出處，也是本盤最早的同期紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-03-07.pdf"
+   },
+   {
+    "f": "**Cash Box 1987 年 2 月 28 日 p15 評介欄**：「**ROMANCE AND REVOLUTION—James Newton—Blue Note BT-85134—Producer: Mike Berniker** ／ Another strong outing from jazz's premiere contemporary flutist. **The exceptional two-trombone (Robin Eubanks, Steve Turre) band gets to stretch-out nicely on four le[ngthy tunes]**…」——⚠ **「四首」這個數字是黑膠 4 軌的獨立紙本佐證**（CD 才是 5 軌）。**這一則比 Billboard 早一週。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1987/CB-1987-02-28.pdf"
+   },
+   {
+    "f": "**Blue Note 的整版廠牌廣告，兩刊各登一次**：Billboard 1987-06-27 p54 與 Cash Box 1987-07-18 p44，文案相同——「**James Newton / Romance and Revolution / BT-85134/CDP-7-46431-2** ／ Flutist Newton's Blue Note debut **THE AFRICAN FLOWER was voted #1 Record Of The Year in the Down Beat International Critics Poll.** His new album is equally extraordinary and features music by the leader, Char[les Mingus]…」⚠ **Billboard 那一版的 OCR 把 CD 號印成「CDP-1-4B431-2」，Cash Box 那一版是正確的 `CDP-7-46431-2`**（第 509c 條）。**這同時給出本盤的 CD 目錄號，MB 的 `DIDX 989` 是錯的。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1987/CB-1987-07-18.pdf"
+   },
+   {
+    "f": "**Billboard「TOP JAZZ ALBUMS」榜**：1987-04-11 p72 **以 NEW 進榜第 14 名**、1987-04-25 p50 第 12 名（第 3 週，同榜下方是本組的 Eric Dolphy《Other Aspects》以 NEW 進榜）、1987-05-09 p44 第 12 名（第 5 週）。**Cash Box 的 TOP 40 JAZZ ALBUM 榜**同期：1987-04-11 p14、04-18 p15 第 34 名（第 2 週）、04-25 p14、05-02 p14 第 32 名、**05-09 p13 第 36 名（第 6 週）**。⚠ **兩刊的榜位都不高、在榜約六週。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-04-25.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1460194251**，**5 軌＝CD 形、不是原盤黑膠的 4 軌**，appleYear 1987。**CAA：release-group 層與唯一的 release 層本層都重探過，兩處都是 HTTP 404（不是 5xx，第 589a 條的重試條件不成立）——CAA 確實零圖。**",
+    "src": "https://itunes.apple.com/lookup?id=1460194251&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "長笛當領班樂器、兩把長號當前排、大提琴坐在中間——1986 年的爵士小團很少長這樣，Cash Box 的評介專門提了那兩把長號",
+   "黑膠只收四首，其中兩首超過十六分鐘；1987 年買 CD 的人多拿到一首三分半的〈Tenderly〉，那是全盤唯一的標準曲"
+  ],
+  "sound": "黑膠 4 軌、CD 5 軌，編制在爵士裡很罕見：Newton 的長笛領班，Robin Eubanks 與 Steve Turre 兩把長號當前排，Abdul Wadud 的大提琴、Jay Hoggard 的顫音琴、Geri Allen 的鋼琴、Rick Rozie 的貝斯與 Pheeroan ak Laff 的鼓在後。曲子極長：〈Meditations on Integration〉十七分、〈The Evening Leans Toward You〉十六分二十秒，兩首各佔黑膠一面大半。〈Peace〉是縮到四重奏的一軌。數位錄音、DMM 刻版。",
+  "keyTracks": [
+   "Forever Charles",
+   "Meditations on Integration",
+   "The Evening Leans Toward You"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1987 成立，本層補到廠牌廣告這一層（第 612 條）。** MB frd 1987＝jazzdisco 1987＝Discogs 原壓群（US LP 4537785／NL 2085674／FR 4305741／US 卡帶 4BT 85134，**全部 1987**）。紙本四層由弱到強：**Cash Box 1987-02-28 p15 評介**（最早）、**Billboard 1987-03-07 p110 評介**、**兩刊的 TOP JAZZ 榜 1987-04-11 起各掛約六週**、**Blue Note 整版廣告（Billboard 1987-06-27 p54／Cash Box 1987-07-18 p44）逐號印出 BT-85134**。⚠ **另有一條更早的**：**Billboard 1987-02-07 p73 的 Manhattan 檔期欄把本盤與 Eric Dolphy《Other Aspects》排在同一天「Feb. 20 release」**——**但那一則把 James Newton 誤印成「James Howard」**（第 509c 條＋第 964 條的同名坑），**引用時必須註明誤植**。**上市取 1987 年 2 月 20 日**（廠牌檔期欄）。⚠ **錄音年是 1986（8 月 20–21 日）、發行年 1987**，**正文不得寫成「1987 年錄的」**。",
+  "notes": "**覆核策展層：rgMbid 46b6258e／唯一 release 24251328／掛名 `James Newton`／年份 1987 全部成立，本張未擋下；`DIDX 989` 不是目錄號亦覆核成立。**｜⚠ **真正的目錄號本層已補齊**：**黑膠／卡帶 `BT 85134`／`4BT 85134`、CD `CDP 7 46431 2`**——黑膠號出自 Billboard 1987-03-07 評介與 jazzdisco，**CD 號出自 Cash Box 1987-07-18 的 Blue Note 整版廣告**（Billboard 同一版廣告的 OCR 把它印錯成 CDP-1-4B431-2）。**MB 的 `DIDX 989` 是壓片序號，卡上不得使用。**｜⚠ **本層新發現的軌數兩形，第 972 條的表上沒有這一張**：**黑膠 BT 85134 只有 4 軌、CD CDP 7 46431 2 是 5 軌**，多出來的是**〈Tenderly〉(3:38)**——全盤唯一的標準曲。**三個來源一致**（jazzdisco 只列四軌、Discogs 原壓四軌、**Cash Box 評介寫「four lengthy tunes」**）。**正文與 `keyTracks` 以 4 軌原盤為準；提〈Tenderly〉必須註明是 CD 才有的一軌。**⚠ **jazzdisco 沒有登〈Tenderly〉的編制，本層查無，正文不得猜。**｜**製作人 Mike Berniker**（Discogs credits ＋ 兩刊評介三邊一致）——**與本組其餘各張都不同，不得互抄**。**封面美術指導 Henry Marquez、攝影 Rumio Sato**（Marquez 同時是本組《Other Aspects》的美術指導）。｜**封面缺，替代來源（不自行下載）**：**Discogs release `4537785`（1987 US 原壓 BT 85134）的 `images[0].uri`，primary 圖，600×596**；次選 Discogs `2085674`（NL）或 `4305741`（FR）同盤不同壓。**CAA 兩層皆 404，已依第 589a 條確認不是 5xx。**｜**跨卡（本層新發現，強度最高的一組，第 973 條的表上沒有）**：**本卡的領班 James Newton 就是本組《Other Aspects》的發行製作人**；**Billboard 1987-02-07 的檔期欄把兩張排在同一天上市**，**Billboard 1987-04-04 p31 的專文把兩張當一件事寫**（Newton 是 Dolphy「最值得一提的當代門徒」），**兩刊的爵士榜 1987-04 也同期並列**。**兩卡 risk 必須互指。**｜**跨卡之二（本層新發現）**：**鋼琴手 Geri Allen 也在本組《Triangular》（1988-08 A&R Recording，Ralph Peterson Trio featuring Geri Allen）**——**兩張的場次、編制、年份都不同，正文不得互抄**。｜⚠ **同名消歧（第 964 條）**：`James Newton` ≠ 電影配樂作曲家 James Newton Howard；**Billboard 1987-02-07 的檔期欄就把本人誤印成「James Howard」**，**這是那個坑在紙本上的活樣本**。｜⚠ **Newton 的 Blue Note 首作是 1985 年的《The African Flower》BT 85109**（jazzdisco 85100 頁；Down Beat 國際樂評人票選年度第一），**本盤是他第二張 Blue Note，正文不得寫成首作。**｜非選輯：兩天一場的錄音室新錄音。"
+ },
+ {
+  "key": "desc2:McCoy Tyner|Revelations",
+  "artist": "McCoy Tyner",
+  "album": "Revelations",
+  "facts": [
+   {
+    "f": "release-group 2b0936bb 的欄位：title「Revelations」、artist-credit「McCoy Tyner」（Person 22fe7b6f）、first-release-date **1988-10-25**、primary-type Album、**secondary-types 空**。**轄下只有一筆 release**：dedbc59b，標 **1988-10-25 US CD、Blue Note B1 91651、13 軌**（無 barcode）。⚠ **`1988-10-25` 是第一晚的錄音日，不是發行日**（第 484 條的典型形）；⚠ **`secondary-types` 空是漏標——本盤是現場**（第 970 條）；⚠ **MB 沒有建 1989 年的黑膠 B1-91651（10 軌）**，第 642 條已換端點確認。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2b0936bb-5e8a-3a06-b4cd-3c912b6f01ae&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁把本盤拆成**三個晚上、全是 McCoy Tyner 鋼琴獨奏、全在 Merkin Hall, NYC**：**1988-10-25**（tk.3 Don't Blame Me／tk.1 You Taught My Heart To Sing／Lazy Bird／tk.2 Contemplation／tk.8 Someone To Watch Over Me）、**1988-10-26**（tk.3 Rio／tk.2 Yesterdays／How Deep Is The Ocean／**tk.1 When I Fall In Love → 只掛 CDP 7 91651 2**／tk.11 In A Mellow Tone）、**1988-10-27**（**tk.2 Autumn Leaves → 只掛 CDP**／tk.1 View From The Hill／**tk.5「Peresins」→ 只掛 CDP**）。年份欄記 **1989**。**三軌只掛 CD 號 → 黑膠 10 軌、CD 13 軌。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 2140329（1989 US LP，Blue Note B1-91651）十軌**：A1 Yesterdays 4:40／A2 You Taught My Heart To Sing 5:12／A3 In A Mellow Tone 3:36／A4 View From The Hill 4:03／A5 Lazybird 3:55／B1 Don't Blame Me 5:41／B2 Rio 4:42／B3 How Deep Is The Ocean 3:59／B4 Someone To Watch Over Me 3:35／B5 Contemplation 5:27。notes：「**Recorded digitally at Merkin Hall, New York City, on October 25, 26 and 27, 1988.**」credits：**Michael Cuscuna 製作**、David Baker 錄音、Tim Martyn 助理、Wally Traugott 刻版、**Carol Friedman 美術指導與攝影**。",
+    "src": "https://api.discogs.com/releases/2140329"
+   },
+   {
+    "f": "維基的專頁：type **Live album**、venue **Merkin Hall, NYC**、recorded **October 25–27, 1988**、released **1989**、producer **Michael Cuscuna**。**這是 Tyner 自 1972 年《Echoes of a Friend》以來的第一張鋼琴獨奏專輯**，也是他自 1970 年《Asante》（1985 年與 Jackie McLean 的《It's About Time》除外）以來第一次為 Blue Note 錄音。Cuscuna 的內頁文字：「**McCoy did a couple of takes of 'Don't Blame Me' the first day. I was amazed… McCoy set down thirteen pieces over the three days, most of them in one or two takes.**」**末三軌〈Autumn Leaves〉〈Peresina〉〈When I Fall in Love〉標明只在 CD 版**。〈You Taught My Heart to Sing〉後來成為 Tyner 被翻唱最多的曲子，首度出現在 1985 年的《It's About Time》。",
+    "src": "https://en.wikipedia.org/wiki/Revelations_(McCoy_Tyner_album)"
+   },
+   {
+    "f": "**Billboard 1989 年 3 月 11 日 p142 評介欄**：「**McCOY TYNER** Revelations PRODUCER: **Michael Cuscuna** Blue Note **91651** ／ For all that Tyner has contributed to piano jazz, **it's hard to imagine that this, his return to Blue Note, is only the second solo date of his career.** Few are more equipped for the task…」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-03-11.pdf"
+   },
+   {
+    "f": "**Blue Note／Capitol 的整版廠牌廣告，Billboard 1989 年 4 月 29 日 p47**，版面下緣逐號印出「**STEPS AHEAD N.Y.C. 91354 ／ McCOY TYNER Revelations 91651**」並標成「Contemporary Jazz Album／**Jazz Album**」，同一版上半是本組 Freddie Hubbard《Times Are Changing》90905 的文案。**這是本盤與本組 Hubbard 那張同一版廣告的紙本證據（第 612 條）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-04-29.pdf"
+   },
+   {
+    "f": "**Billboard「TOP JAZZ ALBUMS」榜連掛約二十週**：1989-04-01 p64 **以 NEW 進榜第 15 名**、04-15 p46 第 9 名、**04-29 p47 第 5 名**、**05-13 p31 第 3 名（第 7 週）**、05-27 p31 第 3 名（9）、**06-10 p84 第 3 名（11，與 05-13／05-27 並列最高）**、06-24 p64 第 5 名（13）、07-08 p88 第 7 名（15）、07-22 p76 第 9 名（17）、08-05 p38 第 13 名（19）。⚠ **本張上的是 `TOP JAZZ ALBUMS`，不是 `TOP CONTEMPORARY JAZZ ALBUMS`**（第 879 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-05-13.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 12 月 23 日 p150 的年終榜「Top Jazz Albums」**：「**14 REVELATIONS - McCoy Tyner - Blue Note**」——**擠進 1989 年爵士專輯年終前十五名**（同榜第 1 是 Cassandra Wilson《Blue Skies》）。同一頁另有 Blue Note 的年度藝人名單整版廣告。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-12-23.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1443518283**，盤名作「**Revelations (Live)**」、**13 軌＝CD 形、不是原盤黑膠的 10 軌**，⚠ **releaseDate 1988-08-01（既非錄音月 1988-10、也非發行月 1989-03）、℗ 標 2015**（2015 年數位重發的版權年）——**三個欄位全不可用**（第 966 條已標，本層覆核成立）。",
+    "src": "https://itunes.apple.com/lookup?id=1443518283&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "三個晚上在 Merkin Hall，一個人一架鋼琴，十三首大多只錄一兩次就過；製作人 Cuscuna 說第一晚錄完〈Don't Blame Me〉他就傻了，Tyner 下樓聽回放只笑說「看來我今天心情對了」",
+   "從 1972 年的《Echoes of a Friend》算起，這是 Tyner 十七年來第一張鋼琴獨奏；從 1970 年的《Asante》算起，也是他十九年來第一次回 Blue Note 錄音"
+  ],
+  "sound": "黑膠 10 軌、CD 13 軌，全程 McCoy Tyner 一個人的鋼琴獨奏，在 Merkin Hall 現場數位錄音。七首是眾所周知的標準曲（〈Yesterdays〉〈In a Mellow Tone〉〈Don't Blame Me〉〈How Deep Is the Ocean〉〈Someone to Watch Over Me〉…），五首是他自己的曲子，一首是 Coltrane 的〈Lazy Bird〉。曲子短，多在三分半到五分半之間；左手的四度和聲與滾雷般的低音塊是他的招牌，但這張比他的樂團盤抒情得多。",
+  "keyTracks": [
+   "You Taught My Heart to Sing",
+   "Don't Blame Me",
+   "Contemplation"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1988→1989 改判：成立，本層再加兩層。** MB frd **1988-10-25** 是**第一晚的錄音日**（jazzdisco、Discogs 盤面 notes、維基三邊都記 1988-10-25／26／27 三晚），不是發行日——**第 484 條的典型形**。**1989 由四條同期紙本支撐**：**Billboard 1989-03-11 p142 評介**（製作人 Michael Cuscuna、Blue Note 91651）、**Billboard 1989-04-29 p47 的 Blue Note／Capitol 整版廣告**（第 612 條，逐號印出 91651）、**Billboard TOP JAZZ ALBUMS 1989-04-01 以 NEW 進榜、連掛至 1989-08-05 共二十週、最高第 3 名（05-13／05-27／06-10）**、**Billboard 1989-12-23 p150 年終榜第 14 名**；jazzdisco 年份欄亦記 1989，Discogs 原壓 2140329 標 1989。依階序（廠牌廣告 ＞ 榜位 ＞ 評介 ＞ Discogs ＞ MB frd）取 **1989**。**上市取 1989 年 2 月至 3 月初**（3 月中的評介回推）。⚠ **Apple 的三個欄位全不可用**（releaseDate 1988-08-01、℗ 2015、盤名帶 (Live)）。",
+  "notes": "**覆核策展層：rgMbid 2b0936bb／唯一 release dedbc59b／catno B1-91651（黑膠）＋CDP 7 91651 2（CD）／掛名 `McCoy Tyner`（池中 12 列沿用）／年份改判 1989 全部成立，本張未擋下。**｜⚠ **現場盤但 MB `secondary-types` 空**（第 970 條）：**維基標 Live album、venue Merkin Hall；Discogs 盤面 notes 寫「Recorded digitally at Merkin Hall」；Apple 盤名帶 (Live)**——**三邊都指現場，MB 漏標。卡上 `releaseType` 照 MB 原值 `Album`，但正文必須寫明是現場獨奏。**｜⚠ **軌數兩形（第 972 條已列，本層逐軌核實並補上是哪三軌）**：**黑膠 10 軌、CD 13 軌**，多出來的是**〈Autumn Leaves〉〈Peresina〉〈When I Fall in Love〉**——jazzdisco 的去向欄、維基的 bonus 標註、Discogs 原壓十軌三邊一致。⚠ **jazzdisco 把〈Peresina〉拼成「Peresins」**。**正文與 `keyTracks` 以 10 軌原盤為準。**⚠ **黑膠與 CD 的軌序也不同**：黑膠是 Yesterdays→You Taught My Heart To Sing→In A Mellow Tone→View From The Hill→Lazybird…，**正文不得寫「第幾軌」。**｜**製作人 Michael Cuscuna**（Discogs／維基／Billboard 評介三邊一致，Cuscuna 同時寫內頁文字），錄音 David Baker，**封面美術指導與攝影 Carol Friedman**（本組至少七張共用，不得寫成本盤特色）。｜⚠ **〈Lazy Bird〉在盤面上拼成「Lazybird」**（Discogs 原壓），是 Coltrane 1958 年《Blue Train》的曲子。｜⚠ **〈You Taught My Heart to Sing〉首度出現在 1985 年 Tyner 與 Jackie McLean 的《It's About Time》，不是本盤首錄**；〈Contemplation〉出自 1967 年《The Real McCoy》、〈Peresina〉出自 1968 年《Expansions》——**本盤是這三首的第一個獨奏版本，正文不得寫成新曲。**｜**跨卡（本層新發現）**：**〈You Taught My Heart to Sing〉同時出現在本組 Dianne Reeves《The Nearness of You》（1988 JP）的第 6 軌**——**同名同曲、不同錄音、不同演出者（Reeves 是人聲版），兩卡正文不得互指成同一件事。**｜**實掃卡池：池中 `McCoy Tyner` 12 列，逐軌比對零重疊**（第 967 條已查；⚠ 池中 `McCoy Tyner`《Sahara》與本組 Michel Petrucciani《Michel Plays Petrucciani》的〈Sahara〉是同名不同曲，與本盤無關）。｜非選輯：三晚的現場獨奏新錄音。"
+ },
+ {
+  "key": "desc2:Bennie Wallace|Bordertown",
+  "artist": "Bennie Wallace",
+  "album": "Bordertown",
+  "facts": [
+   {
+    "f": "release-group 87aa7fea 的欄位：title「**Bordertown**」（一字形）、artist-credit「Bennie Wallace」（Person f820d0c3）、first-release-date **1988**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：0176c4cb，**1988 US Official 12 吋黑膠、Blue Note B1-48014、barcode 077774801416、8 軌**：A1 Skanctified 8:30／A2 Stormy Weather 5:19／A3 East 9 6:54／**B1 Border Town 5:31（軌名是兩字形）**／B2 Bon-A-Rue 4:23／B3 Seven Sisters 5:43／B4 Carolina Moon 4:53／B5 Dance With a Dolly 2:48。⚠ **MB 沒有建 CD CDP 7 48014 2**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=87aa7fea-489d-478f-a451-94795b915d6b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁把 B1-48014 拆成**四場，全在 Skyline Studios, NYC**：**1987 年 6 月 8–13 日「Quartet」**（Wallace 次中音薩克斯風，**John Scofield 吉他#1／Mitch Watkins 吉他#2，Eddie Gomez 貝斯#1／Jay Anderson 貝斯#2，Alvin Queen 鼓#1／Jeff Hirshfield 鼓#2**）→〈Bon-A-Rue〉〈Carolina Moon〉；**同期「Septet」**（**Dr. John 鋼琴與管風琴**、Scofield 與 Watkins 兩把吉他、**Will Lee 電貝斯**、Chris Parker 鼓、**Herlin Riley 打擊**）→〈Border Town〉；**同期「Sextet」**（**Ray Anderson 長號**、Wallace、Dr. John、Scofield、Eddie Gomez、Herlin Riley 鼓#1,3,5／Chris Parker 鼓#2,4）→〈Skanctified〉〈Stormy Weather〉〈East Nine〉〈Seven Sisters〉〈Dance With A Dolly (With A Hole In Her Stocking)〉；**1987 年 6 月 11 日「Quintet」**（Wallace、Dr. John、Mitch Watkins、Jay Anderson、Herlin Riley）→**〈It's Only A Paper Moon〉，去向欄只寫 `Blue Note CDP 7 48014 2`**。⚠ **年份欄記 1987**（發行實為 1988，見下）。**CD 多一軌。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 3839671（1988 US LP，Blue Note B1-48014）八軌＝MB 軌目**，master 700444，**盤名作一字形「Bordertown」、B1 軌名作兩字形「Border Town」**。credits：Bennie Wallace 次中音薩克斯風、**Dr. John 鋼琴**、John Scofield 與 Mitch Watkins 吉他、Eddie Gomez 與 Will Lee 貝斯、Alvin Queen／Chris Parker／Herlin Riley／Jeff Hirshfield 鼓、**Ray Anderson 長號**。",
+    "src": "https://api.discogs.com/releases/3839671"
+   },
+   {
+    "f": "**Billboard 1987 年 12 月 26 日 p54 的新片欄（廠牌 release sheet）**：「**BENNIE WALLACE Border Town** LP Blue Note **131-48014**/NA CA **B4-48014**/NA」（OCR 的「131-」＝`B1-`）——⚠ **這一則登在 1987 年底、盤名用兩字形**，**但實際上市是 1988 年年中**（見 yearVerified）。**第 976 條「release sheet 記的是排程、不是上市日」的原始樣本就是這一則。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-12-26.pdf"
+   },
+   {
+    "f": "**Capitol／Blue Note 的整版廣告，Billboard 1988 年 6 月 25 日 p69**：「CAPITOL RECORDS PROUDLY ANNOUNCES **NEW ALLIANCE WITH BLUE NOTE RECORDS**… Michel Petrucciani **Michel Plays Petrucciani BF-48619**／Kenny Burrell **Pieces Of Blue And The Blues B1-90260**／Bennie Wallace **3order Town B1-48014**／Chick Corea **Now He Sings, Now He Sobs 81-90055**／Eliane Elias **Cross Currents B1-48185** ／ **All newly recorded Blue Note product released before April 1988, and all past and future jazz reissues on Blue**[ Note…]」——**本盤與本組另外兩張（Michel Plays Petrucciani、Pieces of Blue and the Blues）同列這一版**。⚠ **原文把 Petrucciani 的號排成 `BF-48619`（正確是 `B1-48679`）、把 Border Town 印成「3order Town」**（第 509c／977 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-06-25.pdf"
+   },
+   {
+    "f": "**Billboard 1988 年 7 月 9 日 p74 評介欄**：「JAZZ **BENNIE WALLACE** Bordertown（**一字形**）PRODUCER: **Mac \"Dr. John\" Rebennack** Blue Note **48014** ／ Wallace and Rebennack scored aesthetic success on the tenor man's previous album; **radio play and sales indicate the team has forged a commercial success this time.**」——⚠ **這是本盤製作人的唯一硬來源：Dr. John（Mac Rebennack）**，維基無本盤條目、Discogs 的 credits 也沒有製作人欄。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-07-09.pdf"
+   },
+   {
+    "f": "**Billboard「TOP JAZZ ALBUMS」榜連掛約十五週**：1988-07-09 p65 **以 NEW 進榜第 9 名**（盤名印一字形 BORDERTOWN）、07-23 p101 第 5 名（第 3 週）、08-06 p60 第 5 名（5）、**08-20 p52 第 4 名（第 7 週，最高名次）**、09-03 p65 第 5 名（9）、09-17 p85 第 5 名（11）、10-01 p29 第 7 名（13）、10-15 p29 第 14 名（15）。⚠ **本張上的是 `TOP JAZZ ALBUMS`**（第 879 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-08-20.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1460250457**，盤名一字形、**9 軌**、appleYear 1988。⚠ **第 972 條要研究層逐軌核的就是這一張——本層核完了：9 軌＝CD 形（原盤黑膠 8 軌），多出來的正是 jazzdisco 標為 CD 專屬的〈It's Only A Paper Moon〉**（Apple 的 d1t9，5:15）。⚠ **Apple 把第 4 軌的軌名也寫成一字形 `Bordertown`，MB 與 Discogs 原壓的軌名是兩字形 `Border Town`**。**CAA：release-group 層與唯一的 release 層本層都重探過，兩處都是 HTTP 404（不是 5xx，第 589a 條的重試條件不成立）。**",
+    "src": "https://itunes.apple.com/lookup?id=1460250457&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "掛名只有 Bennie Wallace 一個人，實際上這是 Dr. John 製作的碟：他坐在鋼琴與管風琴前，把紐奧良的節奏塞進一張 Blue Note 的次中音薩克斯風專輯",
+   "Blue Note 1987 年底就把這張排進新片表了，真正上架是隔年六月——Capitol 那版「與 Blue Note 結盟」的整版廣告才是它真正的發車日"
+  ],
+  "sound": "黑膠 8 軌、CD 9 軌。Wallace 的次中音薩克斯風音色粗、跳音大，但整張的底盤是 Dr. John 的鋼琴與管風琴帶進來的紐奧良節奏，Herlin Riley 的鼓與打擊接得上。四場編制從四重奏到七重奏浮動：John Scofield 與 Mitch Watkins 兩把吉他輪替，Ray Anderson 的長號只在六重奏那幾軌。〈Skanctified〉八分半最長，〈Stormy Weather〉與〈Carolina Moon〉是慢板標準曲，〈Dance With a Dolly〉兩分四十八秒收尾。",
+  "keyTracks": [
+   "Skanctified",
+   "Border Town",
+   "Stormy Weather"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 成立，本層把第 976 條的「排程 vs 上市」逐條查到原文。** ⚠ **Billboard 1987-12-26 p54 的新片欄（廠牌 release sheet）已經登了本盤**（Blue Note B1-48014／B4-48014，盤名兩字形），**但那是排程**：**實際上市在 1988 年年中**——**Capitol／Blue Note 1988-06-25 p69 的整版廣告把它列在當期新品**、**Billboard 1988-07-09 p74 評介**、**Billboard TOP JAZZ ALBUMS 1988-07-09 以 NEW 進榜、連掛至 10-15 共十五週、最高第 4 名（08-20）**；MB frd 1988、Discogs 原壓 3839671 與 master 700444 皆 1988、Apple appleYear 1988。**新片欄與評介／榜位相距超過兩季（1987-12 → 1988-07），依第 976 條的判準取評介＋榜位＋廠牌廣告的那一年＝1988。上市取 1988 年 6 月。**⚠ **jazzdisco 的年份欄記 1987，是跟著 release sheet 走的，不採。**⚠ **錄音年是 1987（6 月 8–13 日），發行年 1988**，正文不得混。",
+  "notes": "**覆核策展層：rgMbid 87aa7fea／唯一 release 0176c4cb／catno B1-48014（黑膠）＋B4-48014（卡帶）＋CDP 7 48014 2（CD）／掛名 `Bennie Wallace`／年份 1988 全部成立，本張未擋下。**｜⚠ **盤名維持 MB 的一字形 `Bordertown`，本層覆核成立並補上判準**（第 963 條）：**一字形**＝MB RG title、Discogs 原壓 3839671 與 master 700444 的標題、**Billboard 1988-07-09 評介**、**Billboard 爵士榜八期**、Apple；**兩字形 `Border Town`**＝jazzdisco、**Billboard 1987-12-26 新片欄**、**Capitol 1988-06-25 廣告**、**以及盤上 B1 軌的軌名**。**兩字形進 queryAlias；正文提到同名曲時可用兩字形（那是軌名），提到盤名時用一字形。**｜⚠ **第 972 條要研究層逐軌核的那一張，本層核完**：**黑膠 8 軌、CD 9 軌**，CD 多出來的是**〈It's Only A Paper Moon〉**（jazzdisco 的去向欄只寫 CDP 7 48014 2；Apple 條目 9 軌）。**正文與 `keyTracks` 以 8 軌原盤為準。**⚠ **同名軌陷阱**：〈It's Only A Paper Moon〉也出現在 Dexter Gordon《The Other Side Of Round Midnight》BT 85135（1986），**兩者毫無關係。**｜⚠ **四場編制不同，正文不得寫成同一個團**：**Dr. John 只在後三場**（四重奏那場沒有他）；**Ray Anderson 的長號只在六重奏那五軌**；**Eddie Gomez 與 Will Lee／Jay Anderson 分場輪替貝斯**；**鼓手四位**（Alvin Queen、Jeff Hirshfield、Chris Parker、Herlin Riley）。jazzdisco 把四重奏那場的兩套吉他／貝斯／鼓標成 #1／#2，**正文不得指名某一軌是誰彈的。**｜**製作人 Dr. John（Mac Rebennack）**——**唯一來源是 Billboard 1988-07-09 的評介欄本文**（維基無條目、Discogs 無製作人欄）。**評介還點出這是兩人第二次合作**（前一張是 Wallace 在 Blue Note 的上一張）。**封面美術／設計者查無。**｜**封面缺，替代來源（不自行下載）**：**Discogs release `3839671`（1988 US 原壓 B1-48014）的 `images[0].uri`，primary 圖，523×500**（另有兩張 secondary 可備用）。**CAA 兩層皆 404，已依第 589a 條確認不是 5xx。**｜**跨卡**（第 973 條）：**Bennie Wallace 在本組另一張《Ever Since the World Ended》裡是 Mose Allison 的次中音薩克斯風之一**（1987-05-10 與 05-21 兩場，RPM／M&I），**與本盤 1987-06 的 Skyline 四場完全不同場、不同人，兩卡 risk 已互指，正文不得互抄。**｜**同版廣告的跨卡**（本層新發現）：**Capitol 1988-06-25 p69 那一版把本盤與本組的《Michel Plays Petrucciani》《Pieces of Blue and the Blues》印在一起**——三卡可互指這一版廣告，但**正文不得因此把三張寫成同一批錄音**。｜非選輯：四場錄音室新錄音。"
+ },
+ {
+  "key": "desc2:Freddie Hubbard & Woody Shaw|The Eternal Triangle",
+  "artist": "Freddie Hubbard & Woody Shaw",
+  "album": "The Eternal Triangle",
+  "facts": [
+   {
+    "f": "release-group 104a58ad 的欄位：title「The Eternal Triangle」、**RG 層 artist-credit 是 `Freddie Hubbard`（59ae7a1a）＋ `&` ＋ `Woody Shaw`（5cdab4ea）兩個 Person 的聯名**、first-release-date **1988**、primary-type Album、secondary-types 空。轄下五筆：**433cebdd 1988 US 12 吋黑膠 B1-48017（barcode 077774801713，6 軌）**、2210cdee 1988 US 卡帶 B4-48017（6 軌）、**f540bbd1 1988 US CD CDP 7 48017 2（barcode 077774801720，8 軌）**、9ace8af5 與 5096aff0 兩筆 2014 數位（**都回到 6 軌**）。**黑膠／卡帶／2014 數位 6 軌，1988 年的 CD 8 軌。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=104a58ad-5313-3a8c-90d6-166fbd87a5f9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁：**「Freddie Hubbard - Woody Shaw Sextet」，Van Gelder Studio, Englewood Cliffs, NJ，兩天**。**1987 年 6 月 11 日**：Freddie Hubbard 與 Woody Shaw（小號）、**Kenny Garrett（中音薩克斯風）**、Mulgrew Miller（鋼琴）、Ray Drummond（貝斯）、Carl Allen（鼓）、**Don Sickler（編曲）**——tk.3 The Moontrane／tk.5 Down Under／tk.7 Tomorrow's Destiny／tk.8 Nostrand And Fulton／tk.9 Calling Miss Khadija，**五軌全掛 B1-48017**。**1987 年 6 月 12 日**（same personnel）：**tk.11 Reets And I 與 tk.13 Sao Paulo 只掛 `CDP 7 48017 2`**、**tk.12 The Eternal Triangle 掛 B1-48017**。**兩軌 CD 專屬。** 另記 1995 年的《The Freddie Hubbard And Woody Shaw Sessions》CDP 7243 8 32747 2 7。",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 2277994（1988 US LP，Blue Note B1-48017）六軌**：A1 Down Under 7:35／A2 The Eternal Triangle 7:47／A3 The Moontrane 6:28／B1 Calling Miss Khadija 6:38／B2 Nostrand And Fulton 6:09／B3 Tomorrow's Destiny 7:04。credits：**Rudy Van Gelder 錄音師、刻版與母帶**；**製作人 Don Sickler 與 Michael Cuscuna**；Kenny Garrett 中音薩克斯風、Mulgrew Miller 鋼琴、Ray Drummond 貝斯、Carl Allen 鼓；⚠ **`Freddie Hubbard=Trumpet [Left Channel]`、`Woody Shaw=Trumpet [Right Channel]`——盤上兩把小號是左右聲道分開的。**",
+    "src": "https://api.discogs.com/releases/2277994"
+   },
+   {
+    "f": "維基的專頁：錄音 **June 11–12, 1987**、發行 1988、**製作人 Michael Cuscuna**；編制 Hubbard（小號、粗管短號）、Shaw（小號）、**Kenny Garrett（中音薩克斯風、長笛）**、Mulgrew Miller、Ray Drummond、Carl Allen。曲目作者：〈Down Under〉Hubbard／**〈The Eternal Triangle〉Sonny Stitt**／〈The Moontrane〉Shaw／**〈Calling Miss Khadija〉Lee Morgan**／〈Nostrand and Fulton〉Hubbard／〈Tomorrow's Destiny〉Shaw／**〈São Paulo〉Kenny Dorham／〈Reets and I〉Benny Harris**（末兩首是 CD 才有的）。**本盤接續兩人的第一次合作《Double Take》(1985)，1995 年兩張合成雙 CD《The Complete Freddie Hubbard and Woody Shaw Sessions》。**",
+    "src": "https://en.wikipedia.org/wiki/The_Eternal_Triangle"
+   },
+   {
+    "f": "**Cash Box 1988 年 9 月 24 日 p27 評介欄**：「**THE ETERNAL TRIANGLE - Freddie Hubbard/Woody Shaw - Blue Note 48017 - Producers: Michael Cuscuna, Don Sickler** ／ The two hard-bop trumpet virtuosos once again mano a mano. **They don't attempt to chop each other up, but the hard bop fur does get a bit**[ ruffled]…」⚠ **release 層的掛名是斜線形 `Freddie Hubbard/Woody Shaw`，Cash Box 用的也是斜線形。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1988/CB-1988-09-24.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 12 月 23 日 p118 的年終零售商票選**（Spec's Music 總裁 Ann Lieff 的 1989 年十大）第 8 名列「**'Eternal Triangle,' Freddie Hubbard/Woody Shaw (Blue Note)**」——**本盤唯一的年終名次類紙本。**⚠ **本層以 `48017` ＋ `Eternal Triangle` 兩種條件掃過 1987–1990 兩刊，沒有找到任何 Billboard 或 Cash Box 的榜位**，**正文不得寫榜績**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-12-23.pdf"
+   },
+   {
+    "f": "⚠ **紙本假陽性（第 968 條的原始樣本，本層覆核成立）**：Billboard **1989-08-12 p63** 的 `48017` 命中是「1000 Crooks Rd., **Clawson Michigan 48017**-1003」——**密西根州 Clawson 的郵遞區號**，出現在一家影片後製公司的廣告地址裡，與本盤無關。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-08-12.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple **gb** 條目 **1443168009**（us 查法回的六筆全是別碟，第 966 條已記），**6 軌＝原盤黑膠軌數、不是 1988 年 CD 的 8 軌**，appleYear 1987（**那是錄音年，不是發行年**）。CAA 在 release-group 層有圖。",
+    "src": "https://itunes.apple.com/lookup?id=1443168009&country=gb"
+   }
+  ],
+  "hookCandidates": [
+   "兩把小號在盤上是分開的：Hubbard 全在左聲道、Shaw 全在右聲道，Rudy Van Gelder 在自己的錄音室裡把這場對吹錄成一場立體聲的擂台",
+   "1987 年六月那兩天錄了八首，1988 年的黑膠只放得下六首——Kenny Dorham 的〈São Paulo〉與 Benny Harris 的〈Reets and I〉當年只有 CD 聽得到"
+  ],
+  "sound": "黑膠 6 軌、1988 年 CD 8 軌，兩把小號正面對吹的硬咆勃六重奏。Hubbard 在左、Shaw 在右，Kenny Garrett 的中音薩克斯風夾在中間，Mulgrew Miller 的鋼琴、Ray Drummond 的貝斯、Carl Allen 的鼓在後，Don Sickler 編曲。曲子全在六到八分鐘之間、節奏偏快：同名曲是 Sonny Stitt 的老擂台曲，〈The Moontrane〉是 Shaw 自己 1974 年那首的新演奏，〈Calling Miss Khadija〉是 Lee Morgan 的。Rudy Van Gelder 錄音。",
+  "keyTracks": [
+   "Down Under",
+   "The Eternal Triangle",
+   "The Moontrane"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 成立，紙本雖薄但四邊同向。** MB frd 1988、**MB 的黑膠 433cebdd／卡帶 2210cdee／CD f540bbd1 三筆都標 1988**、jazzdisco 年份欄 1988、Discogs 原壓 2277994 標 1988、維基 released 1988。同期紙本 **Cash Box 1988-09-24 p27 評介**（Blue Note 48017，製作人 Michael Cuscuna 與 Don Sickler）。**上市取 1988 年夏末**（9 月下旬的評介回推）。⚠ **本盤沒有任何榜位**——本層以 catno＋盤名兩種條件掃過 1987–1990 的 Billboard 與 Cash Box，**只命中評介一則與 1989 年終零售商票選一則**，**正文不得寫榜績**。⚠ **錄音年 1987（6 月 11–12 日）、發行年 1988**，**Apple 的 appleYear 1987 是錄音年不是發行年，不可採**。⚠ **第 968 條的 `48017` 假陽性（Clawson 郵遞區號）本層覆核成立**——1985 後查紙本必須 catno ＋ `Blue Note` 雙條件。",
+  "notes": "**覆核策展層：rgMbid 104a58ad／原盤 433cebdd／catno B1-48017／6 軌／掛名 `Freddie Hubbard & Woody Shaw`／年份 1988 全部成立，本張未擋下。**｜⚠ **掛名兩形**（第 964 條）：**RG 層是 `&` 形、五個 release 層全是斜線形 `Freddie Hubbard/Woody Shaw`**，Cash Box 評介也用斜線形。**卡上取 RG 層的 `&` 形，斜線形進 queryAlias。** chk-prop 的 `k()` 會先把 `&` 折成 `and` 再剝，不會與 `and` 形分裂。｜⚠ **軌數兩形（第 972 條已列，本層逐軌核實）**：**黑膠／卡帶 6 軌、1988 年 CD 8 軌、2014 年兩筆數位又回到 6 軌**；CD 多出來的是**〈São Paulo〉（Kenny Dorham）與〈Reets and I〉（Benny Harris）**，**兩首都錄於第二天 6 月 12 日**（jazzdisco 的 tk.11／tk.13）。**正文與 `keyTracks` 以 6 軌原盤為準。**｜**製作人 Michael Cuscuna 與 Don Sickler**（Discogs credits ＋ Cash Box 評介兩邊一致；**維基只寫 Cuscuna 一人，不完整**）。**Don Sickler 同時是編曲。錄音師、刻版與母帶都是 Rudy Van Gelder**——**本組唯一由 Van Gelder 一手包辦的一張，這是可寫的點。封面設計者查無。**｜⚠ **聲道配置**：Discogs 原壓的 credits 明記 **Hubbard 在左聲道、Shaw 在右聲道**，**這是正文可用的硬細節**（單一來源，但出自盤面 credits）。｜**撞陳列（第 967 條已判，本層逐軌覆核成立）**：**本盤第 3 軌〈The Moontrane〉vs 池中 `Woody Shaw`《The Moontrane》（1975，seed）**——**不是同一個錄音**：池中那張是 1974-12 Muse 的原版，本張是 **1987-06-11 Van Gelder Studio** 的新演奏（錄音室、日期、編制三項全不同，第 855／861 條的要求都滿足）。**收，兩卡 risk 互指；正文不得把本張的版本寫成 1974 年那個。**｜⚠ **本盤的另外三首也是別人的舊曲**（〈The Eternal Triangle〉Sonny Stitt、〈Calling Miss Khadija〉Lee Morgan、〈São Paulo〉Kenny Dorham、〈Reets and I〉Benny Harris）——**逐首查過，池中沒有這幾首的同名卡撞上**，但**正文不得把它們寫成 Hubbard 或 Shaw 的原創**。｜**跨卡**（第 973 條）：**Freddie Hubbard 在本組有兩張**，另一張《Times Are Changing》(1989) 用個人字串、是 1988 年 7–11 月在 Burbank 錄的電子化製作盤——**兩張的班底、樂風、掛名字串三樣都不同，絕不得互相收攏或互抄**。**Kenny Garrett 在本組另出現在《Beauty Within》**（1988 年末 RPM，Charnett Moffett 的碟，只在兩軌）——**不同場、不同人，兩卡 risk 已互指。**｜**跨卡之三（本層新發現）**：**Freddie Hubbard 也在本組 Stanley Turrentine《La Place》裡吹〈Terrible T〉那一軌的小號**（1988-09 Ocean Way, LA）——**第 973 條的表上沒有這一組，三卡（本盤／Times Are Changing／La Place）的 risk 應互指。**｜**本盤接續《Double Take》(1985)，1995 年兩張併成《The Complete Freddie Hubbard and Woody Shaw Sessions》——那是後出的合訂，不是本盤內容。**｜非選輯：兩天一場的錄音室新錄音。"
+ },
+ {
+  "key": "desc2:Bobby Watson & Horizon|No Question About It",
+  "artist": "Bobby Watson & Horizon",
+  "album": "No Question About It",
+  "facts": [
+   {
+    "f": "release-group ceb0a4ab 的欄位：title「No Question About It」、artist-credit「**Bobby Watson & Horizon**」（**單一實體 72973c64，MB 把它的 type 標成 `Person`**——「某人 & 某團」被建成一個「人」，第 964 條已記）、first-release-date **1988**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：533522c8，**1988 US Official 12 吋黑膠、Blue Note B1-90262、barcode 077779026210、7 軌**：A1 Country Corn Flakes 6:25／A2 Forty Acres and a Mule 5:43／A3 What Can I Do for You 7:22／A4 Blood Count 4:13／B1 No Question About It 4:53／B2 Moonrise 8:27／B3 And Then Again 7:09。⚠ **MB 沒有建 CD CDP 7 90262 2。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ceb0a4ab-b75f-4b7d-9a20-28eb3685e4d8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁：**Skyline Studios, NYC，1988 年 5 月 1 日一天，但分成下午與晚上兩場、編制不同**。**下午「Bobby Watson & Horizon」五重奏**（Roy Hargrove 小號、Bobby Watson 中音薩克斯風、John Hicks 鋼琴、Curtis Lundy 貝斯、**Victor Lewis 鼓**）→(tk.7)Country Corn Flakes／(tk.5)And Then Again／(tk.3)Forty Acres And A Mule／〈No Question About It〉；**晚上六重奏**（**加 Frank Lacy 長號、鼓換成 Kenny Washington**）→(tk.1)Blood Count／(tk.2)What Can I Do For You／**(tk.4)As Quiet As It's Kept（unissued）**／(tk.1)Moonrise。年份欄記 1988。**有一軌錄了沒發。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 3865287（1988 US LP，Blue Note B1-90262）七軌＝MB 軌目**。notes：「**Recorded directly to digital two-track at Skyline Studios in New York City on May 1, 1988.** ／ **B side label states that Track 3 \"And Then Again\" is composed by Paula Watson while back cover lists the composer as Pamela Watson.** ／ Publishing: All except A4 - Second Floor Music；A4 - Tempo Music」credits：Bobby Watson 中音薩克斯風與作曲、**Roy Hargrove 小號、Frank Lacy 長號、John Hicks 鋼琴、Curtis Lundy 貝斯、Victor Lewis 與 Kenny Washington 鼓**；**製作人 Michael Cuscuna**、錄音師 A.T. Michael MacDonald、刻版 Ron McMaster、**美術指導與攝影 Carol Friedman**、設計 Lynn Dreese Breslin、內頁文字 Russ Musto。",
+    "src": "https://api.discogs.com/releases/3865287"
+   },
+   {
+    "f": "**Cash Box 1988 年 10 月 1 日 p27 評介欄**：「**NO QUESTION ABOUT IT - Bobby Watson & Horizon - Blue Note 90262 - Producer: Bobby Watson** ／ Excellent bebop altoist, and an underrated writer and arranger, **in a beautifully detailed hard-bop date, featuring teen-aged trumpeter Roy Hargrove and fine young trombonist [Frank Lacy]**…」⚠ **紙本把製作人寫成 Bobby Watson 本人，Discogs 的盤面 credits 寫 Michael Cuscuna——兩邊不一致**（見 notes）。⚠ **「teen-aged trumpeter Roy Hargrove」**：Hargrove 生於 1969 年 10 月，1988 年 5 月錄音時十八歲。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1988/CB-1988-10-01.pdf"
+   },
+   {
+    "f": "**Billboard 1988 年 10 月 1 日 p29 的爵士專欄**（談三位中音薩克斯風手）：「…And **Watson**, perhaps the most musically adventurous (and underrated) of the three, **joins the big-label ranks with his Blue Note issue 'No Question About It.' Watson first asserted his alto mastery with Art Blakey's Jazz Messengers in the late '70s** and later emerged as a distinctive voice in his own right. An unaccompanied solo track, 'If Bird Could See Me Now,' on an early Red album…」——**同一週兩刊各有一則，是本盤僅有的兩則同期紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-10-01.pdf"
+   },
+   {
+    "f": "⚠ **紙本假陽性（第 968 條，本層覆核成立）**：Billboard **1988-09-24 p176** 的 `90262` 命中是「3543 E. Imperial Highway., **Lynwood, Calif. 90262**」——**加州 Lynwood 的郵遞區號**，出現在一家新成立舞曲廠牌的通訊地址裡。**另有一類是片語誤中**：`No Question About It` 這個片語本身在 1987–1990 兩刊裡出現十餘次（Greg Volz 的福音專訪、Target 租片圓桌、鄉村電台 PD 談 Clint Black……），**全部與本盤無關**。**本盤的紙本一定要 catno `90262` ＋ `Blue Note` 雙條件。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-09-24.pdf"
+   },
+   {
+    "f": "⚠ **本層以 `90262`＋`Blue Note`、`Bobby Watson`＋`No Question` 兩組條件掃過 1987–1990 的 Billboard 與 Cash Box 全段，沒有任何一則榜位，也沒有 Billboard 的新片欄**。作為對照，**同一位藝人下一張《The Inventor》B1-91915 在 Billboard 1990-02-03 p90 的新片欄裡是有的**，**Cash Box 1990-03-10 p25 的爵士榜第 28 名也有**——**新片欄與榜位這兩層對本盤是真的空白，不是關鍵字沒設對。正文不得寫榜績。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-02-03.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1507796052**，掛名 `Bobby Watson & Horizon`、**7 軌＝原盤軌數**，appleYear 1988。**CAA：release-group 層與唯一的 release 層本層都重探過，兩處都是 HTTP 404（不是 5xx，第 589a 條的重試條件不成立）。**",
+    "src": "https://itunes.apple.com/lookup?id=1507796052&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "同一天在 Skyline 錄完：下午是五重奏，晚上加進一把長號、換掉鼓手，變成六重奏——七首曲子就這樣分成兩半",
+   "吹小號的 Roy Hargrove 當時十八歲，Cash Box 的評介直接叫他「teen-aged trumpeter」；Watson 自己則是 1970 年代末從 Art Blakey 的 Jazz Messengers 出來的"
+  ],
+  "sound": "7 軌硬咆勃，直接錄進數位雙軌母帶。Watson 的中音薩克斯風線條乾淨、樂句長，John Hicks 的鋼琴與 Curtis Lundy 的貝斯是團的骨架。下午那場是五重奏（Roy Hargrove 的小號當唯一前排搭檔），晚上那場加進 Frank Lacy 的長號、鼓換成 Kenny Washington，聲音厚一層。六首是 Watson 自己寫的，只有〈Blood Count〉是 Billy Strayhorn 的曲子。〈Moonrise〉八分半最長。",
+  "keyTracks": [
+   "Country Corn Flakes",
+   "No Question About It",
+   "Blood Count"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 成立，但同期紙本只有兩則、且都在同一週，本層如實記下這個薄弱點。** MB frd 1988＝jazzdisco 1988＝Discogs 原壓 3865287（1988 US LP，B1-90262）＝Apple appleYear 1988，四邊同向、無異說。紙本：**Cash Box 1988-10-01 p27 評介**與 **Billboard 1988-10-01 p29 的爵士專欄**——⚠ **兩則同日，依第 431 條不算兩個獨立來源**。**上市取 1988 年夏末至初秋**（10 月初的評介回推）。⚠ **本盤沒有 Billboard 新片欄、沒有任何榜位**：本層以 catno＋廠牌、藝人＋盤名兩組條件掃過 1987–1990 兩刊全段，兩層都是空白；**對照組是同一位藝人下一張《The Inventor》，新片欄（BB 1990-02-03）與 Cash Box 爵士榜（1990-03-10）都在**——**所以本盤的空白是真的空白，不是關鍵字問題**。⚠ **錄音日 1988-05-01、發行年 1988，同一年，無偏移。**⚠ **第 968 條的 `90262` 假陽性（Lynwood 郵遞區號）本層覆核成立。**",
+  "notes": "**覆核策展層：rgMbid ceb0a4ab／唯一 release 533522c8／catno B1-90262／7 軌／掛名 `Bobby Watson & Horizon`／年份 1988 全部成立，本張未擋下。**｜⚠ **製作人兩說，本層無法判定，正文必須迴避或兩說並陳**：**Discogs 原壓的盤面 credits 寫 `Michael Cuscuna=Producer`**；**Cash Box 1988-10-01 的評介欄寫 `Producer: Bobby Watson`**。維基無本盤條目，jazzdisco 不登製作人。**兩個來源都是一級的（盤面 vs 同期紙本），本層不裁定誰對。**｜⚠ **MB 建檔錯誤（第 964 條，本層只記不改）**：`Bobby Watson & Horizon` 被建成**單一 artist 實體、type 標 `Person`**。**照 MB credit 字串原樣用，日後 Watson 的個人領班盤進池要與本字串明確區分、不得事後合併。** chk-prop 的 `k()` 會把 `&` 折成 `and`，不會與 `and` 形分裂。｜⚠ **同一天兩場、編制不同，正文不得寫成同一個五重奏**：**Frank Lacy 的長號只在晚上那場的四軌**（Blood Count／What Can I Do For You／Moonrise／未發的 As Quiet As It's Kept）；**鼓手兩位**——Victor Lewis 打下午、Kenny Washington 打晚上。｜⚠ **有一軌錄了沒發**：〈As Quiet As It's Kept〉(tk.4)，jazzdisco 標 unissued。**正文不得把它寫進盤上內容。**｜⚠ **作曲者標示打架（盤面自己）**：Discogs 記 **B 面標籤把〈And Then Again〉的作曲者印成 Paula Watson、封底印成 Pamela Watson**——**同一張盤兩處不一致，正文不得寫作曲者。**｜**封面美術指導與攝影 Carol Friedman、設計 Lynn Dreese Breslin、內頁文字 Russ Musto**（Friedman 與 Breslin 是本組多張的共用班底，不得寫成本盤特色）。｜**封面缺，替代來源（不自行下載）**：**Discogs release `3865287`（1988 US 原壓 B1-90262）的 `images[0].uri`，primary 圖，600×599**（另有兩張 secondary）。**CAA 兩層皆 404，已依第 589a 條確認不是 5xx。**｜**跨卡**：本組無其他 Watson 領班盤；⚠ **`Bobby Watson & Horizon` 的下一張《The Inventor》(1990，B1-91915) 在 c-149 b 組的段落裡**（Cash Box 1990-03-10 爵士榜第 28 名），**兩張若同批上架，掛名字串相同、必須以年份與 catno 區分。**｜非選輯：同一天兩場的錄音室新錄音。"
+ },
+ {
+  "key": "desc2:Tony Williams|Angel Street",
+  "artist": "Tony Williams",
+  "album": "Angel Street",
+  "facts": [
+   {
+    "f": "release-group 86a72cc6 的欄位：title「Angel Street」、artist-credit「Tony Williams」（Person b6a30b58）、first-release-date **1988-12-04**、primary-type Album、secondary-types 空。轄下三筆：**3e13e575 1988 US CD、Blue Note CDP 7 48494 2、barcode 077774849425、9 軌**；**962b6d40 1988-12-04 JP CD、Blue Note CJ32-5028、barcode 4988006627369、9 軌**；af7521cd 2016-09-09 數位、9 軌。⚠ **`1988-12-04` 是日本盤的日期，美國 release 只有年份——只看 frd 會誤判成日本首發**（第 975 條）。⚠ **MB 沒有建美國黑膠 B1-48494。** 九軌：Angel Street 8:20／**Touch Me 1:23**／Red Mask 7:09／**Kiss Me 0:54**／Dreamland 9:37／Only With You 5:56／Pee Wee 6:39／**Thrill Me 0:46**／Obsession 4:19。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=86a72cc6-c69d-327b-bfe5-f983170cf8cc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁：**「Tony Williams Quintet」，Clinton Recording Studios, NYC，1988 年 4 月 4 日至 6 日**。編制 **Wallace Roney（小號）、Billy Pierce（次中音與高音薩克斯風）、Mulgrew Miller（鋼琴）、Charnett Moffett（貝斯）、Tony Williams（鼓）**，九軌一次列完（Angel Street／Touch Me／Red Mask／Kiss Me／Dreamland／Only With You／Pee Wee／Thrill Me／Obsession），**全部掛 `Blue Note B1-48494`**。年份欄記 1988。**黑膠與 CD 同軌數。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 3320208（1988 US LP，Blue Note B1-48494）九軌＝MB 軌目，掛名寫成 `Anthony Williams`**。notes：「**Recorded and mixed for Corsair Productions on April 4-6, 1988 at Clinton Recorders, Studio B, New York City** ／ Ⓟ 1988 Capitol Records, Inc.」credits：**Anthony Williams 作曲、鼓、製作；Jason Corsaro 製作、錄音與混音**；Wallace Roney 小號、Billy Pierce 次中音與高音薩克斯風、Mulgrew Miller 鋼琴、**Charnett Moffett 貝斯**；數位母帶 Ron McMaster、平面設計 Tom Bonauro、攝影 Michele Clement、製作協調 Lee Ethier。",
+    "src": "https://api.discogs.com/releases/3320208"
+   },
+   {
+    "f": "維基的專頁：發行 1988、**製作人 Tony Williams 與 Jason Corsaro**。**所有曲子都是 Williams 寫的**（他 1980 年代初花了好幾年練作曲）；他用一台**個人化的鼓機**幫忙構築曲子，並**在曲與曲之間放進短的鼓獨奏**；他偏好每首只錄兩三次。**〈Pee Wee〉是他的舊東家 Miles Davis 錄過的曲子。** 他與樂團為本盤做了北美巡演（Philadelphia Daily News 1989-05-26）。",
+    "src": "https://en.wikipedia.org/wiki/Angel_Street_(album)"
+   },
+   {
+    "f": "**Billboard 1988 年 10 月 15 日 p90 評介欄**：「JAZZ PICKS **TONY WILLIAMS** Angel Street PRODUCERS: **Tony Williams, Jason Corsaro** Blue Note **8T-48494**（OCR，實為 B1-48494） ／ **Williams' best album in ages features his current band—including trumpeter Wallace Roney, saxophonist Billy Pierce, and pianist Mulgrew Miller—playing in absolute to[p form]**…」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-10-15.pdf"
+   },
+   {
+    "f": "**Billboard 1988 年 10 月 22 日 p44 的新片欄（廠牌 release sheet）**：「**TONY WILLIAMS Angel Street** LP Blue Note **B1-48494**/NA CA **84-48494**/NA」（OCR 的「84-」＝`B4-`）。⚠ **這一則與上一週的評介同在 1988 年 10 月——比 MB frd 的日本盤日期 1988-12-04 早了將近兩個月，是首發地為美國的硬證據**（第 975 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-10-22.pdf"
+   },
+   {
+    "f": "**Cash Box 1988 年 10 月 22 日 p27 評介欄**：「JAZZ FEATURE PICKS **ANGEL STREET - Tony Williams - Blue Note 48494 - Producers: Tony Williams, Jason Corsaro** ／ **The incredible drummer's hard bop quintet has turned into a unit to reckon with. Razor-sharp and hard-swinging.**」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1988/CB-1988-10-22.pdf"
+   },
+   {
+    "f": "**Billboard「TOP JAZZ ALBUMS」榜連掛約十三週**：1988-11-26 p31 **以 NEW 進榜第 15 名**、12-10 p25 第 13 名（第 3 週）、**12-24 p60 第 9 名（5）**、**1989-01-07 p37 第 8 名（第 7 週，最高名次）**、01-21 p97 第 12 名（9）、02-04 p61 第 12 名（11）、02-18 p87 第 14 名（13）。⚠ **本張上的是 `TOP JAZZ ALBUMS`**（第 879 條）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-01-07.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1442910116**，**9 軌＝原盤軌數**，appleYear 1988。CAA 在 release-group 層有圖。**另有 Billboard 1990-05-19 p34 的一篇演出評**回頭提到本盤：「His solos, such as **'Touch Me' from 'Angel Street,'** are played with a commanding flam-flying, time-defying, rim-rattling dynamic intensity.」——**同期紙本佐證了「曲間短鼓獨奏」這件事。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-05-19.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "九軌裡有三軌不到一分半：〈Touch Me〉八十三秒、〈Kiss Me〉五十四秒、〈Thrill Me〉四十六秒——那是 Williams 故意夾在曲與曲之間的短鼓獨奏",
+   "全部曲子都是這位鼓手自己寫的，而且是用一台為他改裝的鼓機一首一首拼出來的；錄音時他只肯讓團錄兩三次就收"
+  ],
+  "sound": "9 軌，全部由鼓手自己作曲的硬咆勃五重奏。Wallace Roney 的小號與 Billy Pierce 的次中音／高音薩克斯風當前排，Mulgrew Miller 的鋼琴與 Charnett Moffett 的貝斯在後，Williams 的鼓在中間推。六首是正規長度的曲子（〈Dreamland〉九分半最長、〈Angel Street〉八分二十秒），另外三首〈Touch Me〉〈Kiss Me〉〈Thrill Me〉都不到一分半，是曲間的短鼓獨奏。三天在 Clinton Recording Studios 錄完。",
+  "keyTracks": [
+   "Angel Street",
+   "Dreamland",
+   "Pee Wee"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 成立，首發地美國本層再確認一次（第 975 條）。** MB frd **1988-12-04 是日本盤 CJ32-5028 的日期**，不是首發日；**美國 release 3e13e575 只有年份 1988**。**首發地是美國，紙本三則獨立**：**Billboard 1988-10-15 p90 評介**、**Billboard 1988-10-22 p44 新片欄（廠牌 release sheet，逐號印 B1-48494／B4-48494）**、**Cash Box 1988-10-22 p27 評介**——**三則都比日本盤的 12 月 4 日早六到七週**。**榜位**：Billboard TOP JAZZ ALBUMS 1988-11-26 以 NEW 進榜、連掛至 1989-02-18 共十三週、**最高第 8 名（1989-01-07）**。jazzdisco 年份欄 1988、Discogs 原壓 3320208 標 1988、Apple appleYear 1988。**上市取 1988 年 10 月**（新片欄那一週）。⚠ **新片欄與評介同一季內，依第 976 條的判準取新片欄。**⚠ **錄音 1988-04-04～06、發行 1988-10，同一年。**",
+  "notes": "**覆核策展層：rgMbid 86a72cc6／美國 release 3e13e575／catno B1-48494＋B4-48494＋CDP 7 48494 2（US）、CJ32-5028（JP）／9 軌／掛名 `Tony Williams`（池中 2 列沿用）／年份 1988／首發地 US 全部成立，本張未擋下。**｜⚠ **掛名（第 964 條）**：池中先例是 `Tony Williams`，**不與 `Tony Williams Lifetime` 合併**；⚠ **Discogs 原壓把掛名寫成 `Anthony Williams`**（本名形），**那一形只進 queryAlias**；⚠ **`Tony Williams` 是極常見人名（The Platters 主唱同名），日後進池要帶消歧。**｜⚠ **三軌是鼓獨奏間奏，不是曲子**：〈Touch Me〉1:23、〈Kiss Me〉0:54、〈Thrill Me〉0:46。**維基記 Williams「在曲與曲之間放進短的鼓獨奏」，Billboard 1990-05-19 的演出評也把〈Touch Me〉當成他的獨奏來談**——**正文若列「九軌」，必須說清楚其中三軌是間奏，不得把它們當成正規曲目寫進 `keyTracks`。**｜**製作人 Tony Williams 與 Jason Corsaro**（Discogs／維基／兩刊評介四邊一致），**錄音與混音也是 Corsaro，為 Corsair Productions 製作**。**平面設計 Tom Bonauro、攝影 Michele Clement。**｜⚠ **錄音室的寫法**：jazzdisco 寫 `Clinton Recording Studios`，Discogs 盤面寫 `Clinton Recorders, Studio B`——**同一家，正文取一種即可，不得寫成兩個地方。**｜⚠ **〈Pee Wee〉是 Williams 為 Miles Davis 樂團寫的舊曲**（維基），**本盤是他自己的新版本，正文不得寫成新曲。**｜**跨卡**（第 973 條）：**Charnett Moffett 在本組另有領班盤《Beauty Within》（1988 年末，RPM／Studio J／The Studio）**；**Tony Williams 本人在本組另一張《New Beginnings》裡是 Don Pullen 三重奏的鼓手（1988-12-16 A&R Studios）**——**三張全部不同場、不同編制，兩兩之間 risk 已互指，正文不得互抄。**⚠ **《New Beginnings》的 Discogs credits 把他寫成 `Anthony Williams`，本盤 Discogs 也是——兩張同形，但卡上都用 `Tony Williams`。**｜非選輯：三天一場的錄音室新錄音。"
+ },
+ {
+  "key": "desc2:Michel Petrucciani|Michel Plays Petrucciani",
+  "artist": "Michel Petrucciani",
+  "album": "Michel Plays Petrucciani",
+  "facts": [
+   {
+    "f": "release-group 1bd8b11b 的欄位：title「Michel Plays Petrucciani」、artist-credit「Michel Petrucciani」（Person 2b75141c）、first-release-date **1988**、primary-type Album、secondary-types 空。轄下三筆：**e638c709 1988 US CD、Blue Note CDP 7 48679 2、barcode 077774867924、9 軌**；02b3f910 **1998** XE CD（同號同 barcode，9 軌）；494810f1 數位（9 軌）。⚠ **MB 沒有建 1988 年的美國黑膠 B1-48679。** 九軌：She Did It Again 4:03／One for Us 5:09／Sahara 4:14／13th 4:05／Mr. K.J. 4:19／One Night at Ken and Jessica's 3:08／It's a Dance 6:16／La Champagne 6:14／Brazilian Suite 6:24。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=1bd8b11b-42f8-3b49-9e4f-b9ab1ee9261a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁把 B1-48679 拆成**兩組場次、兩套節奏組，都在 Clinton Recording Studios, NYC**：**1987 年 9 月 24 日「Quartet」**（Michel Petrucciani 鋼琴、**John Abercrombie 吉他、Gary Peacock 貝斯、Roy Haynes 鼓**）→〈She Did It Again〉〈One For Us〉〈Sahara〉〈13th〉〈Mr. K.J.〉；**1987 年 12 月 9 日與 10 日「Quintet」**（鋼琴、John Abercrombie 吉他、**Eddie Gomez 貝斯、Al Foster 鼓、Steve Thornton 打擊**）→〈One Night At Ken And Jessica's〉〈It's A Dance〉〈La Champagne〉〈Brazilian Suite〉。年份欄記 1988。",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "維基的專頁：發行 1988、錄音 **24 September and 9–10 December 1987**、**製作人 Eric Kressman／Michel Petrucciani**。⚠ **編制的分軌標註與 jazzdisco 不同**：維基記 **Gary Peacock 貝斯（1–5）、Roy Haynes 鼓（1–5）、Eddie Gómez 貝斯（6–9）、Al Foster 鼓（6–9）**，但**John Abercrombie 的電吉他只標在第 2 與第 7 軌**、**Steve Thornton 的打擊只標在第 9 軌**——**jazzdisco 把 Abercrombie 列進兩組的全編制，維基只列兩軌。**",
+    "src": "https://en.wikipedia.org/wiki/Michel_plays_Petrucciani"
+   },
+   {
+    "f": "Discogs 原壓 4069549（**1988 US LP，Blue Note B1-48679**）**九軌＝CD 軌數**：A1 She Did It Again／A2 One For Us／A3 Sahara／A4 13th／A5 Mr K.J／B1 One Night At Ken And Jessica's／B2 It's A Dance／B3 La Champagne／B4 Brazilian Suite。**黑膠與 CD 同內容、同軌序，本盤不是軌數兩形那一類。** 另有 13591934（同盤不同壓，catno 印成 `B1 48679`）與 master 508158。",
+    "src": "https://api.discogs.com/releases/4069549"
+   },
+   {
+    "f": "**Billboard 1988 年 6 月 4 日 p100 評介欄**：「JAZZ **MICHEL PETRUCCIANI** Michel Plays Petrucciani PRODUCERS: **Eric Kressmann, Michel Petrucciani** Blue Note **48679** ／ **Regarded as an awesome interpreter of standards and jazz classics, Petrucciani the composer now steps out from the shadow of Petrucciani the pianist.** Solid[ …]」——⚠ **紙本把製作人姓氏拼成 `Kressmann`（雙 n），維基作 `Kressman`。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-06-04.pdf"
+   },
+   {
+    "f": "**Capitol／Blue Note 的整版廣告，Billboard 1988 年 6 月 25 日 p69**：「CAPITOL RECORDS PROUDLY ANNOUNCES NEW ALLIANCE WITH BLUE NOTE RECORDS… **Michel Petrucciani Michel Plays Petrucciani BF-48619**／Kenny Burrell Pieces Of Blue And The Blues B1-90260／Bennie Wallace Border Town B1-48014／Chick Corea Now He Sings, Now He Sobs 81-90055／Eliane Elias Cross Currents B1-48185」⚠ **原文把本盤的號排成 `BF-48619`，正確是 `B1-48679`**（第 977 條：同一則廣告的其他三個號都正確，**只錯這一個**）。**比對時不要拿 48619 去查。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-06-25.pdf"
+   },
+   {
+    "f": "**Billboard 1988 年 7 月 9 日 p37 的新片欄**：「**MICHEL PETRUCCIANI Michel Plays Petrucciani** a LP **soul Note B1-48679**/NA CA **B4-48679**/NA」⚠ **原文把廠牌印成「soul Note」而不是「Blue Note」**（第 509c 條的另一個樣本；同欄上下都是 Soul Note 的片子，排版時串行了）。**號碼 B1-48679／B4-48679 是對的。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-07-09.pdf"
+   },
+   {
+    "f": "**榜位兩刊各一段**：**Billboard「TOP JAZZ ALBUMS」1988-07-23 p101 以 NEW 進榜第 10 名**、08-06 p60 第 9 名（第 3 週）、08-20 p52 第 11 名（5）、09-03 p65 第 15 名（7）；**Cash Box 的 TOP 40 JAZZ 榜 1988-08-06 p27 以 DEBUT 第 36 名進榜**。⚠ **本張上的是 `TOP JAZZ ALBUMS`**（第 879 條）。**店面觀察（第 254 條）**：Apple us 條目 **724925183**，**9 軌＝原盤軌數**，⚠ **appleYear 標 1989（晚一年）、℗ 標 1998（那是 XE 再壓 02b3f910 的版權年）**——第 966 條已記，本層覆核成立。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-07-23.pdf"
+   }
+  ],
+  "hookCandidates": [
+   "盤名就是整張碟的規矩：九首全是 Petrucciani 自己寫的，這位以詮釋標準曲聞名的鋼琴家第一次整張只彈自己的東西",
+   "兩組節奏組錄一張碟：九月那場是 Gary Peacock 與 Roy Haynes，十二月那兩天換成 Eddie Gomez 與 Al Foster"
+  ],
+  "sound": "9 軌，全部是 Petrucciani 自己的曲子。編制在兩組場次間換掉一半：前五軌是 Gary Peacock 的貝斯配 Roy Haynes 的鼓，後四軌是 Eddie Gomez 配 Al Foster，John Abercrombie 的電吉他在幾軌上加色，Steve Thornton 的打擊只在收尾那軌。前五軌都在四到五分鐘、明亮緊湊；後四軌拉長到六分多，〈It's a Dance〉〈La Champagne〉〈Brazilian Suite〉一路把拉丁與巴西的節奏帶進來。黑膠與 CD 同樣九軌。",
+  "keyTracks": [
+   "She Did It Again",
+   "It's a Dance",
+   "Brazilian Suite"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 成立，紙本四層齊全。** MB frd 1988＝jazzdisco 1988＝Discogs 原壓 4069549（1988 US LP，B1-48679）＝維基 released 1988。同期紙本：**Billboard 1988-06-04 p100 評介**（製作人 Eric Kressmann／Petrucciani）、**Capitol／Blue Note 1988-06-25 p69 整版廣告**（第 612 條）、**Billboard 1988-07-09 p37 新片欄**、**Billboard TOP JAZZ ALBUMS 1988-07-23 以 NEW 進榜第 10 名、連掛至 09-03**、**Cash Box TOP 40 JAZZ 1988-08-06 以 DEBUT 第 36 名進榜**。**評介 → 廣告 → 新片欄 → 榜位全部落在 1988 年 6 至 8 月的同一季內**，依第 976 條的判準取新片欄那一季。**上市取 1988 年 6 月。**⚠ **錄音年 1987（9 月 24 日、12 月 9–10 日），發行年 1988**，正文不得混。⚠ **Apple 的 appleYear 1989 晚一年、℗ 1998 是 XE 再壓的版權年**，兩個欄位都不可當年份來源。",
+  "notes": "**覆核策展層：rgMbid 1bd8b11b／美國 CD e638c709／catno B1-48679＋B4-48679＋CDP 7 48679 2／9 軌／掛名 `Michel Petrucciani`（池中 2 列沿用）／年份 1988 全部成立，本張未擋下。**｜⚠ **黑膠與 CD 同軌數同軌序（Discogs 原壓 4069549 九軌）——本盤不屬於第 972 條的軌數兩形那一類。**｜⚠ **編制的分軌歸屬兩說，正文不得寫死**：**jazzdisco 把 John Abercrombie 列進兩組場次的全編制**；**維基只把他標在第 2 軌與第 7 軌**，並把 Steve Thornton 的打擊只標在第 9 軌。**兩個來源相衝，本層無法裁定**——**正文只能寫「Abercrombie 的吉他在其中幾軌上加色」，不得指名軌數，也不得寫成他全程在場。**｜⚠ **兩組節奏組完全不同，正文不得寫成同一個團**：1987-09-24 是 **Gary Peacock 貝斯／Roy Haynes 鼓**；1987-12-09～10 是 **Eddie Gomez 貝斯／Al Foster 鼓**，並多出 Steve Thornton 的打擊。｜**製作人 Eric Kressman（Billboard 拼成 Kressmann）與 Michel Petrucciani 本人**（維基＋Billboard 評介兩邊一致）——**與本組其餘各張都不同，不得互抄。封面設計者查無。**｜⚠ **紙本誤植兩則（第 509c／977 條）**：**Capitol 1988-06-25 廣告把號排成 `BF-48619`（正確 B1-48679），同版其他三個號都對，只錯這一個**；**Billboard 1988-07-09 新片欄把廠牌印成「soul Note」**（號碼正確）。**兩則都不得拿去反查。**｜**同版廣告的跨卡**：Capitol 1988-06-25 p69 那一版同時列出本組的《Bordertown》與《Pieces of Blue and the Blues》——**三卡可互指這一版廣告，但正文不得把三張寫成同一批錄音。**｜**撞陳列（第 967 條已判，本層覆核成立）**：**本盤第 3 軌〈Sahara〉與池中 `McCoy Tyner`《Sahara》同名，但是不同的曲子（Petrucciani 自己寫的），不是同一個錄音也不是同一首曲**；逐軌比對池中 2 張 Petrucciani，**九軌全新、零重疊**。｜非選輯：兩組場次的錄音室新錄音，九軌全是領班自己的作品。"
+ },
+ {
+  "key": "desc2:Charlie Parker|Charlie Parker at Storyville",
+  "artist": "Charlie Parker",
+  "album": "Charlie Parker at Storyville",
+  "facts": [
+   {
+    "f": "release-group ebddd54e 的欄位：title「Charlie Parker at Storyville」、artist-credit「Charlie Parker」（Person c7356af9）、first-release-date **1988-11-16**、primary-type Album、**secondary-types `[\"Live\"]`** ✓。**轄下三筆，全是 CD 或數位**：15ba87c2（1988-11-16 XW 數位，barcode 077778510857，9 軌）、381dcd1d（1988 US CD、Blue Note **D 100801**，9 軌）、d91c0a83（1988 CD、Blue Note **CDP 7 85108 2**，barcode 077778510826，9 軌）。⚠ **MB 根本沒有建 1985 年的首發黑膠與卡帶 BT 85108／4BT 85108**（第 642 條已換端點確認），**`frd 1988-11-16` 是 CD／數位那一層的日期**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=ebddd54e-b38e-38e5-8733-9036028be64d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note **85100 系列**目錄頁，**BT 85108 年份欄記 1985**，兩場編制完全不同：**（一）WHDH radio broadcast, Storyville, Boston, MA，1953 年 3 月 10 日**——Charlie Parker（中音薩克斯風）、**Red Garland（鋼琴）、Bernie Griggs（貝斯）、Roy Haynes（鼓）**→〈Moose The Mooche〉〈I'll Walk Alone〉〈Ornithology〉〈Out Of Nowhere〉；**（二）同地，1953 年 9 月 22 日**——**Herb Pomeroy（小號）**、Parker、**Sir Charles Thompson（鋼琴）、Jimmy Woode（貝斯）、Kenny Clarke（鼓）**→〈Now's The Time〉〈Don't Blame Me〉〈Dancing On The Ceiling〉〈Cool Blues〉〈Groovin' High〉。另記「also released on Blue Note CDP 7 85108 2 **in 1988**」——**jazzdisco 自己就把 1985（黑膠）與 1988（CD）分成兩層。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-85100-series/"
+   },
+   {
+    "f": "**Discogs 原壓 1429900（1985 US LP，Blue Note BT-85108，master 156635）九軌**，盤名作「At Storyville」。notes：「**Tracks A1 to A4 recorded at Storyville, Boston, March 10, 1953. Tracks B1 to B5 recorded at Storyville, Boston, September 22, 1953. All on Broadcast WHDH Inc.**」credits：Charlie Parker 中音薩克斯風、**Red Garland 與 Sir Charles Thompson 鋼琴、Billy Griggs 與 Jimmy Woode 貝斯、Roy Haynes 與 Kenny Clarke 鼓、Herb Pomeroy 小號**、**John McLellan 報幕與主持**、**製作人 Bob Porter**。⚠ **Discogs 把貝斯手印成「Billy Griggs」，jazzdisco 作「Bernie Griggs」**（波士頓的貝斯手 Bernie Griggs Sr.，本層採 jazzdisco）。Discogs 群另有 1985 加拿大壓 11986859、1985 法國壓 3560399、**1985 美國卡帶 4BT 85108（盤名作全稱 `Charlie Parker At Storyville`）**、1987 南韓壓 15129066。",
+    "src": "https://api.discogs.com/releases/1429900"
+   },
+   {
+    "f": "**Billboard 1985 年 12 月 7 日 p70 評介欄**：「JAZZ/FUSION **CHARLIE PARKER** Charlie Parker At Storyville PRODUCER: **Bob Porter** Blue Note **BT 85108** ／ **Bird's first appearance on Blue Note comes via two air shots from 1953 at Storyville in Boston.** Clean but generally flat recording quality doesn't measure up to the Elektra/Musician live a[lbums]…」——**這是 1985 年首發最硬的一條同期紙本：盤名全稱、黑膠號 BT 85108、製作人 Bob Porter 一次到齊。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1985/BB-1985-12-07.pdf"
+   },
+   {
+    "f": "**Blue Note 的全目錄整版廣告，Billboard 1986 年 6 月 28 日 p75**，把 85100 系列逐號排開：「…BT 85107／**BT 85108**／BT 85109／BT 85111／BT 85117／BT 85118／BT 85119／OUT OF THE BLUE BT 85103／BST 85102…**CHARLIE PARKER \"ONE NIGHT WITH BLUE NOTE\"-PRESERVED AT STORYVILL[E]**」——**1986 年年中本盤仍在架上目錄裡，且與同系列的 BT 85109（James Newton《The African Flower》）並列。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1986/BB-1986-06-28.pdf"
+   },
+   {
+    "f": "⚠ **本層以 `85108`、`At Storyville` 兩種條件掃過 1987–1990 的 Billboard 與 Cash Box 全段：`85108` 零命中**，`At Storyville` 的命中**全部是別的碟或別的地方**——Billy Taylor《Live At Storyville》(West 54)、Billie Holiday《At Storyville》(JAZ-5005)、**Candid 廠 1988 年再發的 Lee Konitz 與 Sidney Bechet《Jazz At Storyville》**（Billboard 1988-05-28 p69／06-04 p38／07-09 p37 的新片欄）、以及**紐奧良的 Storyville Jazz Hall 場地報導**（1989 年 NARM 年會）。**這與「1985 年底發行、1988 年只出 CD」完全相符，也是第 968 條片語誤中的樣本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-05-28.pdf"
+   },
+   {
+    "f": "**店面觀察（第 254 條，三種查法都跑了）**：探測層判 unavailable、`batch-progress/c149/apple-candidates.md` 記「目錄裡找不到」，**但本層用 `search` 查法命中 Apple us 條目 `724493187`**（「Charlie Parker — **At Storyville (1953)**」，℗ 1988 Blue Note Records，releaseDate 1988-01-01）。**逐軌核過，九軌的曲名與軌序與原盤黑膠完全一致**：d1t1 Moose the Mooche 315s／t2 I'll Walk Alone 297s／t3 Ornithology 267s／t4 Out of Nowhere 277s／t5 Now's the Time 259s／t6 Don't Blame Me 302s／t7 Dancing On the Ceiling 151s／t8 Cool Blues 294s／t9 Groovin' High 305s（**秒數與 MB 的 316／297／267／277／259／302／151／294／305 逐軌吻合**）。**同一張碟，串流採信 724493187。**⚠ **releaseDate 1988-01-01 與 ℗ 1988 都是 CD 那一層的年份，不可當本卡的年份來源。**",
+    "src": "https://itunes.apple.com/lookup?id=724493187&country=us"
+   },
+   {
+    "f": "⚠ **同系列的年份旁證**：**85100 系列就是 Blue Note 1985 年 2 月重啟後的檔案系列**，本盤 BT 85108 的前後號 BT 85107（Bennie Wallace）、**BT 85109（James Newton《The African Flower》，jazzdisco 記錄音 1985-06-24／25）** 都在 1985 年；**同系列的 BT 85104《A Night in Copenhagen》已由 c-146 第 873 條釘在 1985**。",
+    "src": "https://www.jazzdisco.org/blue-note-records/catalog-85100-series/"
+   }
+  ],
+  "hookCandidates": [
+   "Bird 在 Blue Note 的唯一一張碟，是他死後三十年才出的：兩段 1953 年波士頓 Storyville 俱樂部的電台實況，連報幕的聲音都留在盤上",
+   "兩場的伴奏班底一個人都沒重疊——三月那場是 Red Garland 與 Roy Haynes，九月那場換成 Sir Charles Thompson 與 Kenny Clarke，還多了一把小號"
+  ],
+  "sound": "9 軌現場，1953 年波士頓 Storyville 俱樂部的 WHDH 電台實況。錄音乾淨但平（Billboard 當年的評介原話），Parker 的中音薩克斯風在前，兩場的節奏組完全不同：三月那場是 Red Garland 的鋼琴與 Roy Haynes 的鼓，九月那場是 Sir Charles Thompson 與 Kenny Clarke，還多了 Herb Pomeroy 的小號。曲目是他的招牌（〈Moose the Mooche〉〈Ornithology〉〈Now's the Time〉〈Groovin' High〉）加幾首標準曲，每首四到五分鐘，〈Dancing on the Ceiling〉兩分半最短。盤上留著電台主持人 John McLellan 的報幕。",
+  "keyTracks": [
+   "Moose the Mooche",
+   "Ornithology",
+   "Cool Blues"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1988→1985 改判：成立，而且本層把它從「推定」再往上釘了一層。** MB frd **1988-11-16 是 CD／數位那一層的日期**——**這個 RG 底下三個 release 全是 CD 或數位，MB 根本沒建 1985 年的黑膠與卡帶**，正是第 978 條第 2 點的形狀。**1985 年首發由四層證據支撐**：**（一）Billboard 1985-12-07 p70 評介欄**，盤名全稱、**黑膠號 BT 85108**、**製作人 Bob Porter**、內文寫明是「two air shots from 1953 at Storyville in Boston」；**（二）Billboard 1986-06-28 p75 的 Blue Note 全目錄整版廣告**把 BT 85108 列在 85100 系列中；**（三）Discogs master 156635 的原壓群**——1985 美國 LP 1429900、1985 加拿大壓、1985 法國壓、**1985 美國卡帶 4BT 85108**，無一標 1988；**（四）系列旁證**，85100 是 Blue Note 1985 年 2 月重啟後的檔案系列，同系列 BT 85104 已由 c-146 第 873 條釘在 1985。**jazzdisco 自己就把兩層分開寫：BT 85108 年份欄 1985，另注「also released on CDP 7 85108 2 in 1988」。上市取 1985 年 11 月至 12 月初**（12 月 7 日的評介回推）。⚠ **本層以 `85108` 掃過 1987–1990 兩刊全段零命中**，與「1985 年底發行」相符。⚠ **Apple 的 releaseDate 1988-01-01 與 ℗ 1988 都是 CD 那一層，不可當年份來源。**⚠ **錄音年 1953、首次商業發行 1985**——依 c-145 的庫存盤寫法，`year` 取首次商業發行年，錄音年寫進 risk。",
+  "notes": "**覆核策展層：rgMbid ebddd54e／catno BT 85108（黑膠）＋4BT 85108（卡帶）＋CDP 7 85108 2（CD）／9 軌／掛名 `Charlie Parker`（池中 5 列沿用）／年份改判 1985 全部成立，本張未擋下。**｜⚠ **盤名維持 MB 的全稱 `Charlie Parker at Storyville`**（第 963 條）：**Discogs master 與 1985 美國 LP 都作 `At Storyville`、Apple 作 `At Storyville (1953)`、1985 年美國卡帶 4BT 85108 才是全稱**；**Billboard 1985-12-07 的評介用的也是全稱**。**兩個變體進 queryAlias。**｜⚠ **兩場的伴奏班底一個人都不重疊，正文絕不得混寫**（第 979 條已預警，本層逐人核實）：**1953-03-10 是 Red Garland（鋼琴）／Bernie Griggs（貝斯）／Roy Haynes（鼓），四軌**；**1953-09-22 是 Herb Pomeroy（小號）／Sir Charles Thompson（鋼琴）／Jimmy Woode（貝斯）／Kenny Clarke（鼓），五軌**。⚠ **貝斯手名字兩說**：jazzdisco 作 **Bernie Griggs**、Discogs 作 Billy Griggs，**本層採 jazzdisco**。｜**製作人 Bob Porter**（Billboard 1985-12-07 評介 ＋ Discogs credits 兩邊一致）。**電台報幕與主持 John McLellan**（Discogs credits）。**封面設計者查無。**｜**撞陳列（第 967 條已判，本層逐軌覆核成立）**：**本盤第 5 軌〈Now's the Time〉vs 池中 `Charlie Parker`《Now's the Time》（1957，seed）**——**不是同一個錄音**：本張是 **1953-09-22 波士頓 Storyville 的 WHDH 電台實況**，池中那張是 1952–53 年 Verve 的錄音室錄音（場地、編制、母帶三項全不同）。**收，兩卡 risk 互指。**⚠ **本盤另有〈Ornithology〉〈Cool Blues〉〈Groovin' High〉〈Moose the Mooche〉等 Parker 的招牌曲，池中 5 張 Parker 逐軌比對過，其餘六軌無同錄音重疊。**｜**試聽：串流採信 `724493187`**（Apple us，逐軌核過、九軌曲名軌序與秒數全部吻合原盤）。⚠ **第 646 條：本卡的 collectionId 與本組其他卡不共用。**⚠ **探測層與 `apple-candidates.md` 都記「目錄裡找不到」，那是查法沒命中，不是 Apple 沒有——第 528／707／709 條的反向樣本，值得記一筆。**｜**非選輯**：MB `primary-type` Album、`secondary-types` `[\"Live\"]` ✓；內容是同一位藝人兩場電台實況的首度成盤，不是舊盤重編（第 874 條不適用——這九軌 1985 年前未曾以 Blue Note 商業發行）。⚠ **但 Parker 的 Storyville 實況在別廠另有版本流通，`year` 取的是「Blue Note 這一版的首次商業發行年」，正文不得寫成「這九軌史上首度公開」。**"
+ },
+ {
+  "key": "desc2:Kenny Burrell|Pieces of Blue and the Blues",
+  "artist": "Kenny Burrell",
+  "album": "Pieces of Blue and the Blues",
+  "facts": [
+   {
+    "f": "release-group 79bf534a 的欄位：title「Pieces of Blue and the Blues」、artist-credit「Kenny Burrell」（Person a85b66d2）、first-release-date **1988**、primary-type Album、**secondary-types `[\"Live\"]`** ✓。**轄下只有一筆 release**：d154a465，**1988 US Official CD、Blue Note CDP 7 90260 2、barcode 077779026029、7 軌**：Confessin' the Blues 9:57／Raincheck 6:20／Blue Days, Blue Dreams 8:00／Salty Papa 4:36／Jeannine 5:14／'Round Midnight 6:40／No Hype Blues 5:21。⚠ **MB 沒有建美國黑膠 B1-90260。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=79bf534a-b332-4a46-9d51-8ea7079355b7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Discogs 原壓 2916544（1988 US LP，Blue Note B1-90260）七軌＝CD 軌數，掛名印成 `Kenny Burrell And The Jazz Guitar Band`**。notes：「**Recorded October 24 & 25, 1986.**」credits：**Kenny Burrell（木吉他、電吉他、六弦班鳩琴、編曲）**、**Bobby Broom 與 Rodney Jones 電吉他**、Dave Jackson 低音提琴、**Kenny Washington 鼓**；**製作人 Helen Keane**、錄音與混音 Malcolm Addey、母帶 Bob Ludwig、**內頁文字 Leonard Feather**、**美術指導與攝影 Carol Friedman**、設計 Condak Design。",
+    "src": "https://api.discogs.com/releases/2916544"
+   },
+   {
+    "f": "維基的專頁：**type live album**、**venue Village Vanguard, NYC**、recorded **October 24 & 25, 1986**、released 1988、**製作人 Helen Keane**。AllMusic 的 Michael G. Nastos 評：「On paper, **Kenny Burrell's three-guitar band with Bobby Broom, Rodney Jones, and a bass/drums rhythm section** looks pretty good… **recorded over two days in October of 1986 at the Village Vanguard**… the guitarists rightfully trade space and phrases, and **play few extended unison lines**…」曲目作者：〈Confessing the Blues〉Jay McShann／Walter Brown、〈Raincheck〉Billy Strayhorn、**〈Blue Days, Blue Dreams〉Rodney Jones**、〈Salty Papa〉Leonard Feather／Sammy Price、〈Jeannine〉Duke Pearson、〈'Round Midnight〉Monk、**〈No Hype Blues〉Bobby Broom**。",
+    "src": "https://en.wikipedia.org/wiki/Pieces_of_Blue_and_the_Blues"
+   },
+   {
+    "f": "**Billboard 1988 年 7 月 16 日 p90 的 RECOMMENDED 欄**：「**KENNY BURRELL & THE JAZZ GUITAR BAND** Pieces Of Blue And The Blues PRODUCER: **Helen Keane** Blue Note **90260** ／ **Sequel to Burrell band's \"Generation\" catches more relaxed and blues-soaked performances by the quintet at New York's Village Vanguard.** Guitar colleagues **Rodney Jones and Bobb[y Broom]**…」——**同期紙本直接寫明是 Village Vanguard 的現場，且點名這是《Generation》的續作。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-07-16.pdf"
+   },
+   {
+    "f": "**Cash Box 1988 年 7 月 23 日 p31 評介欄**：「**PIECES OF BLUE AND THE BLUES - Kenny Burrell and the Jazz Guitar Band - Blue Note 90260 - Producer: Helen Keane** ／ Mainstream guitar giant in a cooking **Village Vanguard performance with, on his left, guitarist Rodney Jones and, on his right, guitar[ist Bobby Broom]**…」——**兩刊獨立、相隔一週，都說是 Village Vanguard 的現場；Cash Box 還寫出三把吉他的左右站位。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1988/CB-1988-07-23.pdf"
+   },
+   {
+    "f": "**Capitol／Blue Note 的整版廣告，Billboard 1988 年 6 月 25 日 p69**：「CAPITOL RECORDS PROUDLY ANNOUNCES NEW ALLIANCE WITH BLUE NOTE RECORDS… Michel Petrucciani Michel Plays Petrucciani BF-48619／**Kenny Burrell Pieces Of Blue And The Blues B1-90260**／Bennie Wallace Border Town B1-48014／Chick Corea Now He Sings, Now He Sobs 81-90055／Eliane Elias Cross Currents B1-48185 ／ **All newly recorded Blue Note product released before April 1988…**」——**廠牌廣告逐號印出 B1-90260（第 612 條），與本組另兩張同版。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-06-25.pdf"
+   },
+   {
+    "f": "⚠ **前作《Generation》的紙本，正文不得與本盤混寫**：**Billboard 1987 年 6 月 27 日 p54 的 Blue Note 整版廣告**登「**Kenny Burrell Generation** BT-85131/CDP-1-46156-2 ／ **Recorded live at the Village Vanguard**, guitar master Kenny Burrell has assembled **two of this generation's finest on that instrument Rodney Jones and Bobby Broom** and a hot rhythm section…」⚠ **那一版廣告的 OCR 把《Generation》的號印成 `BT-85131`——那其實是本組 Eric Dolphy《Other Aspects》的號**（第 509c 條的紙本誤植，**同一版上下串行**）。**《Generation》與本盤是同一個三吉他團、同一個場地，但不是同一張碟、也不是同一場錄音。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-06-27.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1506674817**，掛名寫成 `Kenny Burrell & The Jazz Guitar Band`、盤名帶 **(Live)**、**7 軌＝原盤軌數**，appleYear 1988。CAA 在 release-group 層有圖，來源是唯一的 CD release d154a465。⚠ **本層以 `90260`＋`Blue Note` 掃過兩刊 1987–1990，除上述兩則評介與一則廣告外無榜位**；⚠ **`90260` 的假陽性是 SST Records 的地址「Box 1, Lawndale, CA 90260」**（Billboard 1988-09-24 p74 等多則）。",
+    "src": "https://itunes.apple.com/lookup?id=1506674817&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "三把吉他一起站在 Village Vanguard 的台上：Burrell 在中間，Rodney Jones 在左、Bobby Broom 在右——Cash Box 的評介連站位都寫出來了",
+   "1986 年十月那兩晚錄了兩張碟的材料：先出的《Generation》比較拚，這張晚兩年才出，Billboard 說它「鬆得多、也藍得多」"
+  ],
+  "sound": "7 軌現場，1986 年十月兩晚在紐約 Village Vanguard 錄的三吉他團。Burrell 的木吉他與電吉他在中間（有一軌還拿出六弦班鳩琴），Rodney Jones 與 Bobby Broom 兩把電吉他分站兩側，Dave Jackson 的低音提琴與 Kenny Washington 的鼓在後，沒有鋼琴也沒有管樂。開場〈Confessin' the Blues〉快十分鐘，是全盤最長也最藍的一軌；〈Raincheck〉與〈'Round Midnight〉是標準曲，〈Blue Days, Blue Dreams〉與〈No Hype Blues〉分別出自兩位客座吉他手之手。三把吉他多半輪流接話，很少一起拉長齊奏。",
+  "keyTracks": [
+   "Confessin' the Blues",
+   "'Round Midnight",
+   "No Hype Blues"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 成立，紙本三則獨立、且都指向同一季。** MB frd 1988＝Discogs 原壓 2916544（1988 US LP，B1-90260）＝維基 released 1988＝Apple appleYear 1988。同期紙本：**Capitol／Blue Note 1988-06-25 p69 整版廣告**（第 612 條，逐號印 B1-90260、並寫明「All newly recorded Blue Note product released before April 1988」）、**Billboard 1988-07-16 p90 RECOMMENDED 欄**、**Cash Box 1988-07-23 p31 評介**。**三則落在 1988 年 6 至 7 月的同一季內。上市取 1988 年 6 月。**⚠ **本盤沒有 Billboard 或 Cash Box 的榜位**——本層以 catno＋廠牌條件掃過 1987–1990 全段，**兩張爵士榜（第 879 條）都查過，零命中**，**正文不得寫榜績**。⚠ **錄音年 1986（10 月 24–25 日）、發行年 1988，相差近兩年**——**這是第 969 條「錄音年晚於 1985 但發行年更晚」的那一類，不是庫存盤也不是再發，正文不得寫成「1988 年錄的」。**⚠ **`90260` 的假陽性是 SST Records 的加州 Lawndale 郵遞區號**（第 968 條同形）。",
+  "notes": "**覆核策展層：rgMbid 79bf534a／唯一 release d154a465／catno B1-90260＋CDP 7 90260 2／7 軌／掛名 `Kenny Burrell`（池中 13 列沿用）／年份 1988 全部成立，本張未擋下。**｜⚠ **現場盤，MB `secondary-types` 有 `Live` ✓，且本層四邊都核到了**：維基標 live album／venue Village Vanguard、**Billboard 與 Cash Box 兩則評介都寫明是 Village Vanguard 的現場**、Apple 盤名帶 (Live)。**正文必須寫成現場。**｜⚠ **掛名（第 964 條已記，本層覆核）**：**MB RG 與 release 都是 `Kenny Burrell`**，**Discogs 原壓與 Apple 都掛成 `Kenny Burrell And/& The Jazz Guitar Band`，Billboard 與 Cash Box 的評介也用樂團名**。**卡上照池中先例 `Kenny Burrell`，樂團名進 queryAlias，正文可以寫「Burrell 的 Jazz Guitar Band」。**｜⚠ **黑膠與 CD 同樣七軌，本盤不屬於第 972 條的軌數兩形那一類。**｜**製作人 Helen Keane**（Discogs／維基／兩刊評介四邊一致）——**Keane 是 Bill Evans 的長年製作人，本組另一張《The Paris Concert, Edition Two》的製作人也是她**（本層新發現的跨卡，第 973 條的表上沒有；**但那張是 1979 年的巴黎現場、1984 年 Elektra／Musician 發行，與本盤毫無關係，正文不得互抄**）。**錄音與混音 Malcolm Addey、母帶 Bob Ludwig、內頁文字 Leonard Feather、美術指導與攝影 Carol Friedman、設計 Condak Design。**｜⚠ **前作《Generation》的紙本會誤導**：**Billboard 1987-06-27 p54 的 Blue Note 廣告把《Generation》的號印成 `BT-85131`——那是本組 Eric Dolphy《Other Aspects》的號**（第 509c 條，同版串行）。**《Generation》與本盤是同一個三吉他團、同一個 Village Vanguard，但不是同一張碟。正文提《Generation》時只能說是「前作」，不得引那個號。**｜**撞陳列（第 967 條已判，本層逐軌覆核成立）**：逐軌比對池中 13 張 `Kenny Burrell`，**七軌零重疊**。⚠ **〈'Round Midnight〉是極常見曲目，池中多張碟上有同名軌，但都不是這個 1986 年 Village Vanguard 的錄音**——**正文不得把本盤這一版寫成任何既有卡上的版本。**｜非選輯：兩晚的現場新錄音。"
+ },
+ {
+  "key": "desc2:Biréli Lagrène|Foreign Affairs",
+  "artist": "Biréli Lagrène",
+  "album": "Foreign Affairs",
+  "facts": [
+   {
+    "f": "release-group 5232f71b 的欄位：title「Foreign Affairs」、artist-credit「Biréli Lagrène」（Person 57e0894c）、first-release-date **1988**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：ea4ec7f1，**1988 US Official CD、Blue Note CDP 7 90967 2（label-info 另掛 EMI）、barcode 077779096725、11 軌**：Timothée 4:39／Josef 5:24／**Rue de Pierre, Part IV 2:09**／Jack Rabbit 4:20／Foreign Affairs 7:11／Passing Through the Night 5:13／**Rue de Pierre, Part V 1:38**／Sénégal 6:15／Rue de Pierre, Part III 3:13／St. Jean 3:15／I Can't Get Started 3:41。⚠ **MB 沒有建美國黑膠 B1-90967。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=5232f71b-0428-3aa2-b31b-a4e81ec1ebd7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁把 B1-90967 拆成**兩段、同地同期**：**「Bireli Lagrene Quintet」，RPM Sound Studios, NYC，1988 年 8 月 10–12 日**（**Koono 鍵盤**、Lagrène 吉他與木吉他、**Jeff Andrews 電貝斯#1,3-7／Jürgen Attig 電貝斯#2**、**Dennis Chambers 鼓**、**Cafe 打擊**）→ 1.Timothee／2.Joseph／3.Jack Rabbit／4.Foreign Affairs／5.Passing Through The Night／6.Senegal／7.T. Jean／8.I Can't Get Started，**八軌全掛 `Blue Note B1-90967`**；**「Bireli Lagrene Solo」，同地同期**（Lagrène 一把木吉他）→ **〈Rue De Pierre Part 3〉掛 `B1-90967`**，但 **〈Rue De Pierre Part 4〉與〈Part 5〉只掛 `Blue Note CDP 7 90967 2`**。**黑膠 9 軌、CD 11 軌。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 3135101（1988 US LP，Blue Note B1-90967）確實只有九軌**：A1 Timotheé 4:32／A2 Josef 5:16／A3 Jack Rabbit 4:14／A4 Foreign Affairs 7:01／B1 Passing Through The Night 5:04／B2 Senegal 6:07／**B3 Rue De Pierre (Part III) 3:04**／B4 **Saint Jean** 3:06／B5 I Can't Get Started 3:38。credits：Lagrène（吉他、**電貝斯的旋律與獨奏段、人聲**、編曲）、**Koono 鍵盤與編曲**、Jeff Andrews 電貝斯與無格貝斯、Jürgen Attig 無格貝斯、Dennis Chambers 鼓、Café 打擊；**製作人 Steve Khan**、協同製作 Christine Martin、錄音 Malcolm Pollack（RPM）、混音 Malcolm Pollack（Skyline）、母帶 Greg Calbi、**美術指導與攝影 Carol Friedman**、設計 Lynn Dreese Breslin。",
+    "src": "https://api.discogs.com/releases/3135101"
+   },
+   {
+    "f": "**Billboard 1988 年 12 月 17 日 p54 評介欄**：「JAZZ PICKS **BIRELI LAGRENE** Foreign Affairs PRODUCER: **Steve Khan** Blue Note **90967** ／ **Lagrene's Blue Note debut proved the French guitarist has brilliant chops. This time he also shows an ear for adventure, but not at the expense of accessibility;** early[ …]」——**紙本自己把本盤定位成前一張《Inferno》的續作。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-12-17.pdf"
+   },
+   {
+    "f": "**Billboard「TOP CONTEMPORARY JAZZ ALBUMS」榜**：1989-03-04 p85 **以 NEW 進榜第 23 名**、03-18 p72 第 21 名（第 3 週）、**04-01 p64 第 19 名（5）**、04-15 p46 第 19 名（7）。⚠ **第 879 條的正面樣本：本張上的是 `TOP CONTEMPORARY JAZZ ALBUMS`，不是 `TOP JAZZ ALBUMS`**——**同一批 Blue Note 盤裡，Mose Allison、Bennie Wallace、Tony Williams、McCoy Tyner 上的是 Jazz 榜，本盤與 La Place、Beauty Within 上的是 Contemporary Jazz 榜。查一張查不到不等於沒上榜。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-04-01.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 2 月 4 日 p6 的照片說明**：「Shown, from left, are **Bruce Lundvall**, East Coast GM, Capitol Records/president, Blue Note Records; **Dianne Reeves**, Blue Note artist; **Ruth Lion, widow of Blue Note founder Alfred Lion**; and Blue Note artists **Stanley Jordan and Bireli LaGrene**.」——**本盤宣傳期內的廠牌活動照，同時證明 Lagrène 是 Lundvall 時代的簽約藝人。**⚠ 原文把掛名拼成「Bireli LaGrene」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-02-04.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 3 月 25 日 p17 的廣播節目表**：「March 27-April 2, **Bireli Lagrene, The Jazz Show With David Sanborn, Westwood One Radio Networks, two hours.**」——**宣傳期的電台專題，與榜位同期。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-03-25.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1474001218**，**11 軌＝CD 形、不是原盤黑膠的 9 軌**，appleYear 1988。CAA 在 release-group 層有圖，來源是唯一的 CD release ea4ec7f1。",
+    "src": "https://itunes.apple.com/lookup?id=1474001218&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "〈Rue de Pierre〉這個無伴奏木吉他的系列橫跨兩張碟：第二段在前作《Inferno》上，第三、四、五段在這裡——而且只有第三段進得了黑膠",
+   "上一張是六個人、四個鼓手輪番上陣；這張換成 Dennis Chambers 一個人打完，貝斯手也換了兩位，只有打擊手 Cafe 從頭留到尾"
+  ],
+  "sound": "黑膠 9 軌、CD 11 軌。比前作《Inferno》更整齊的五重奏：Koono 的鍵盤、Jeff Andrews（與一軌 Jürgen Attig）的電貝斯、Dennis Chambers 的鼓、Cafe 的打擊，Lagrène 的電吉他在前，有幾軌他自己還兼了電貝斯的旋律段與人聲。八軌是團的曲子，〈Foreign Affairs〉七分鐘最長，〈I Can't Get Started〉是唯一的標準曲。夾在中間的〈Rue de Pierre〉第三、四、五段是無伴奏木吉他獨奏，最短只有一分半。",
+  "keyTracks": [
+   "Foreign Affairs",
+   "Timothée",
+   "Rue de Pierre, Part III"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 成立，本層補上榜位那一層。** MB frd 1988＝jazzdisco 1988＝Discogs 原壓 3135101（1988 US LP，B1-90967）與 3640476（1988 UK LP）＋master 450655＝Apple appleYear 1988。同期紙本：**Billboard 1988-12-17 p54 評介**（製作人 Steve Khan、Blue Note 90967），**榜位 Billboard TOP CONTEMPORARY JAZZ ALBUMS 1989-03-04 以 NEW 進榜、連掛四期至 04-15、最高第 19 名**。**上市取 1988 年 11 至 12 月**（12 月中的評介回推）。⚠ **進榜月（1989-03）晚於上市月（1988 年底）三個月，是第 801 條的常態，不改年份。**⚠ **錄音 1988-08-10～12、發行 1988 年底，同一年。**⚠ **第 879 條的正面樣本**：本張只上 Contemporary Jazz 榜、不在 Jazz 榜上——**查一張榜查不到不等於沒上榜。**",
+  "notes": "**覆核策展層：rgMbid 5232f71b／唯一 release ea4ec7f1／catno B1-90967＋CDP 7 90967 2／掛名 `Biréli Lagrène`／年份 1988 全部成立，本張未擋下。**｜⚠ **本層新發現的軌數兩形，第 972 條的表上沒有這一張**：**黑膠 B1-90967 只有 9 軌、CD CDP 7 90967 2 是 11 軌**，多出來的是**〈Rue de Pierre, Part IV〉(2:09) 與〈Rue de Pierre, Part V〉(1:38)**——兩軌都是無伴奏木吉他獨奏。**兩個來源一致**（jazzdisco 的去向欄、Discogs 原壓九軌），Apple 的 11 軌是 CD 形。**正文與 `keyTracks` 以 9 軌原盤為準；提第四、五段必須註明是 CD 才有的。**｜⚠ **曲名拼法三邊不一致，正文取 MB 形並註明**：`Timothée`（MB）／`Timotheé`（Discogs）／`Timothee`（jazzdisco）；`Josef`（MB／Discogs）／`Joseph`（jazzdisco）；`Sénégal`（MB）／`Senegal`（Discogs／jazzdisco）；**`St. Jean`（MB）／`Saint Jean`（Discogs）／`T. Jean`（jazzdisco，疑為 OCR 誤）**。｜⚠ **編制與前作全換，正文不得互抄**：本盤是 **Koono 鍵盤／Jeff Andrews 與 Jürgen Attig 電貝斯／Dennis Chambers 鼓**，前作《Inferno》是 Clifford Carter 鍵盤／Victor Bailey 電貝斯／四位鼓手／**Bill Evans 次中音薩克斯風**（本盤沒有管樂）——**兩張只有 Cafe（打擊）與 Lagrène 本人重疊**（第 973 條已記，本層覆核成立）。**製作人兩張都是 Steve Khan**（本盤 Christine Martin 降為協同製作），這一點可以互指。｜⚠ **〈Rue de Pierre〉是跨碟的系列**：第二段在《Inferno》(1987-07-08 錄)，第三、四、五段在本盤（1988-08 錄）——**兩卡 risk 已互指；但那是同一個創作系列的不同段落，不是同一個錄音，正文不得寫成重複收錄。**｜**製作人 Steve Khan**（Discogs credits ＋ Billboard 評介兩邊一致），**錄音與混音 Malcolm Pollack、母帶 Greg Calbi、美術指導與攝影 Carol Friedman、設計 Lynn Dreese Breslin**（Friedman 與 Breslin 是本組多張共用，不得寫成本盤特色）。｜⚠ **掛名重音**：`Biréli Lagrène` 兩處重音必須保留；Billboard 三則分別印成「BIRELI LAGRENE」「Bireli LaGrene」「Bireli Lagrene」，**三種無重音形都只進 queryAlias。**｜非選輯：一段期間、同一錄音室的新錄音（五重奏八軌＋獨奏三軌）。"
+ },
+ {
+  "key": "desc2:Dianne Reeves|The Nearness of You",
+  "artist": "Dianne Reeves",
+  "album": "The Nearness of You",
+  "facts": [
+   {
+    "f": "release-group fcb863e2 的欄位：title「The Nearness of You」、artist-credit「Dianne Reeves」（Person 069c1f30）、first-release-date **1988-07-06**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：319fb096，**1988-07-06 JP Official CD、Blue Note CJ32-5020、barcode 4988006624610、9 軌**，`countries` 只有 JP：Softly as in a Morning Sunrise 4:55／Like a Lover 5:42／How High the Moon 4:09／For All We Know 8:05／**The Nearness of You / Misty 3:20**／You Taught My Heart to Sing 6:18／Ancient Source 5:40／Spring Can Really Hang You Up the Most 9:02／Oh What a Freedom 3:01。**MB 沒有建任何美國版。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fcb863e2-8933-34bd-a0b4-315404fa7b57&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Discogs 的日本原壓 3909394（1988 Japan CD，Blue Note CJ32-5020，master 502641，released 1988-07-06）九軌＝MB 軌目**。notes 把錄音日期逐軌列清楚：「**Track 9 recorded on February 3 and February 5, 1988 ／ Tracks 1, 2 and 7 recorded on April 27, 1988 ／ Tracks 4 and 6 recorded on April 28, 1988 ／ Tracks 3, 5 and 8 recorded on May 9, 1988 ／ Tracks 1 to 8 recorded at the Van Gelder Studio in Englewood Cliffs, New Jersey ／ Track 9 recorded at the Mad Hatter Studio in Los Angels [sic]**」。**obi 上印著「BONUS - includes Pepsi canned coffee TVCF theme \\u003cFreedom\\u003e」與「Released in Japan ahead of the world」**（日本先行發售）。另有**同期的日本黑膠 RJ28-5020（Discogs 3466401，九軌）**。",
+    "src": "https://api.discogs.com/releases/3909394"
+   },
+   {
+    "f": "同一筆 Discogs 條目的 credits：**Dianne Reeves 主唱與共同製作**；**製作人 Michael Cuscuna、Dianne Reeves、Charles Mims Jr.**；**錄音與重混 Rudy Van Gelder**（第 1–8 軌）、F. Byron Clark（錄音）；**Bobby Hutcherson 顫音琴、Greg Osby 中音薩克斯風、Gerald Albright 次中音薩克斯風、Kevin Eubanks 木吉他、Mulgrew Miller 與 Donald Brown 鋼琴、Charnett Moffett 與 Tony Dumas 貝斯、Terri Lyne Carrington／Marvin \"Smitty\" Smith／Michael Baker 鼓、Dave Torkanowsky 鍵盤、Ron Powell 打擊與風鈴**；編曲 Charles Mims Jr.／Dave Torkanowsky／Richard Cummings；音樂顧問 Donald Brown；**美術指導 Kaoru Taku、攝影 Masanori Koide、內頁文字 市川翔二**。**盤上另有一則日英雙語說明：〈Spring Can Really Hang You Up Most〉鋼琴獨奏段有三處短促的電子雜音，是錄音當時就混進母帶、無法去除的。**",
+    "src": "https://api.discogs.com/releases/3466401"
+   },
+   {
+    "f": "⚠ **本層以 `CJ32-5020`、`Nearness of You` ＋ `Reeves` 兩組條件掃過 1987–1990 的 Billboard 與 Cash Box 全段：零命中。**這與「**日本限定、日本先行**」完全相符。作為對照，**同一位藝人的美國盤在兩刊上都查得到**：自製同名專輯《Dianne Reeves》BLJ-46906 在 **Billboard TOP CONTEMPORARY JAZZ ALBUMS 1988-03-19 p38 是「7 weeks at No. One」的冠軍**，1990 年的《Never Too Far》EMI 92401 也在 **Billboard 1990-03-03 p72 以 NEW 進榜**。**所以本盤的紙本空白是真的空白，不是關鍵字問題——它沒有在美國發行過。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-03-19.pdf"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁**沒有 CJ32-5020 這個號的條目**（本層逐頁查過），但 1989–1990 頁有兩段與本盤直接相關：**Mad Hatter Studios, Los Angeles, 1990 年 9 月 10 日**（Justo Almario 高音薩克斯風、Charles Mims 鋼琴與編曲、Chris Severin 貝斯、Billy Kilson 鼓、Luis Conte 與 Bill Summers 打擊、Reeves 人聲）錄〈Afro Blue〉；**同地 1990 年 9 月 11 日**（Billy Childs 鋼琴、Chris Severin 貝斯、Billy Kilson 鼓、Reeves 人聲）錄**〈The Nearness Of You / Misty〉**〈I Remember Sky〉〈Love For Sale〉。**四軌的去向欄都是 `Blue Note B1-90264, (J) TOCJ-5967`**，對應「**Dianne Reeves - I Remember 1991**」與「**Dianne Reeves - The Nearness Of You: Complete Edition 1995**」。**——1991 年那張美國盤上的〈The Nearness Of You / Misty〉是 1990 年重錄的，不是本盤這一軌。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1989-1990/"
+   },
+   {
+    "f": "維基的《I Remember》(1991, EMI) 專頁九軌：1.Afro Blue 4:49／**2.The Nearness of You/Misty 3:12**／3.I Remember Sky 4:23／4.Love for Sale 3:43／**5.Softly as in the Morning Sunrise 4:52／6.Like a Lover 5:37／7.How High the Moon 4:05／8.You Taught My Heart to Sing 6:14／9.For All We Know 8:02**。⚠ **第 5–9 軌的秒數與本盤的第 1、2、3、6、4 軌逐一吻合（4:53／5:38／4:05／6:15／8:02）——那五軌就是本盤 1988 年 Van Gelder 錄音的直接取用**；⚠ **但第 2 軌〈The Nearness of You/Misty〉3:12 與本盤的 3:17／3:20 差五到八秒，且 jazzdisco 記它錄於 1990-09-11 Mad Hatter——同名不同錄音。**",
+    "src": "https://en.wikipedia.org/wiki/I_Remember_(Dianne_Reeves_album)"
+   },
+   {
+    "f": "**Billboard 1989 年 2 月 4 日 p6 的照片說明**：「Shown, from left, are Bruce Lundvall, East Coast GM, Capitol Records/president, Blue Note Records; **Dianne Reeves, Blue Note artist**; Ruth Lion, widow of Blue Note founder Alfred Lion; and Blue Note artists Stanley Jordan and Bireli LaGrene.」——**Reeves 在本盤前後是 Blue Note 的正式簽約藝人（不是一次性的日本企劃），這一則是旁證。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-02-04.pdf"
+   },
+   {
+    "f": "**店面觀察（第 254 條，三種查法都跑了，結論是查無）**：Apple `search` 用 `Dianne Reeves Nearness of You`（us／jp）兩次都回 0 筆；**改用藝人目錄查法**，us 的 `Dianne Reeves` 回 12 張、jp 的「ダイアン・リーヴス」回 12 張，**兩邊的目錄裡都沒有本盤，也沒有 1995 年的《The Nearness Of You: Complete Edition》**（有的是 1987 年的同名專輯 `724547205`、1990 年的《Never Too Far》`724177452`、2002 年的《The Best of Dianne Reeves》`724932660` 等）。⚠ **`batch-progress/c149/apple-candidates.md` 給的候選 `724547205`（《Dianne Reeves》1987，8 軌）是另一張碟，逐軌核不過，不得採用**（第 528／707／709 條）。**試聽查無。**",
+    "src": "https://itunes.apple.com/lookup?id=724547205&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "唱片腰帶上印著「日本先行發售」，而且真的只在日本發行過：1988 年這張碟從來沒有美國版，連目錄號都只有 CJ32-5020 與黑膠的 RJ28-5020",
+   "前八軌是 Rudy Van Gelder 在 Englewood Cliffs 錄的，最後一軌卻是在洛杉磯錄的 Pepsi 罐裝咖啡廣告曲——腰帶上把它當成加值贈品在賣"
+  ],
+  "sound": "9 軌人聲爵士，日本限定盤。前八軌 1988 年春天在 Rudy Van Gelder 的 Englewood Cliffs 錄音室分四天錄，班底豪華：Bobby Hutcherson 的顫音琴、Greg Osby 的中音與 Gerald Albright 的次中音薩克斯風、Kevin Eubanks 的木吉他、Mulgrew Miller 與 Donald Brown 的鋼琴、Charnett Moffett 與 Tony Dumas 的貝斯、三位鼓手輪替。曲目多半是標準曲（〈Softly as in a Morning Sunrise〉〈How High the Moon〉〈For All We Know〉〈Spring Can Really Hang You Up the Most〉九分鐘最長），〈The Nearness of You〉與〈Misty〉串成三分多鐘的組曲。末軌〈Oh What a Freedom〉另在洛杉磯錄，是一支罐裝咖啡廣告的主題曲。",
+  "keyTracks": [
+   "Softly as in a Morning Sunrise",
+   "You Taught My Heart to Sing",
+   "Spring Can Really Hang You Up the Most"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1988 成立，首發地 JP（而且只有 JP）本層再確認一次（第 975 條）。** MB frd **1988-07-06**＝**Discogs 日本原壓 3909394 的 released 欄 1988-07-06**（同一天，兩邊互證）；同期另有日本黑膠 RJ28-5020（Discogs 3466401，1988）。**`countries` 只有 JP，MB 沒有建任何美國版，Discogs 也只有日本條目。**⚠ **本盤沒有任何同期紙本**——本層以 catno 與藝人＋盤名兩組條件掃過 1987–1990 的 Billboard 與 Cash Box 全段，**零命中**；**對照組（同一位藝人的美國盤《Dianne Reeves》BLJ-46906 在 Billboard 1988-03 是 Contemporary Jazz 榜七週冠軍、《Never Too Far》1990-03 以 NEW 進榜）兩張都查得到**——**所以這個空白是「它沒在美國發行」的正證據，不是關鍵字問題**（第 962 條之四的「紙本沉默當正證據」在本張成立，而且有對照組）。**唱片腰帶上的「Released in Japan ahead of the world」是廠牌自己的說法，可當旁證。上市取 1988 年 7 月 6 日（日本）。**⚠ **不要去找 `B1-`／`CDP 7` 號**：`B1-90264`／`CDP 7 90264 2` 是**1991 年那張美國盤《I Remember》的號**，不是本盤的（jazzdisco 1989–1990 頁明記）。⚠ **錄音 1988-02-03／02-05／04-27／04-28／05-09，發行 1988-07-06，同一年。**",
+  "notes": "**覆核策展層：rgMbid fcb863e2／唯一 release 319fb096／catno CJ32-5020／9 軌／掛名 `Dianne Reeves`／年份 1988／首發地 JP 全部成立，本張未擋下。本層另補上同期的日本黑膠號 `RJ28-5020`（Discogs 3466401），策展層沒有這一個。**｜**撞陳列（第 967 條判為「方向相反」，本層逐軌比對到秒數，結論修正並細化）**：與**尚未進池的《I Remember》(1991, EMI／Blue Note B1-90264)** 相比——**同錄音的是五軌**：〈Softly as in a Morning Sunrise〉4:52/4:53、〈Like a Lover〉5:37/5:38、〈How High the Moon〉4:05/4:05、〈You Taught My Heart to Sing〉6:14/6:15、〈For All We Know〉8:02/8:02（**秒數逐一吻合，就是本盤 1988 年 Van Gelder 那批錄音的直接取用**）。⚠ **但第六個同名軌〈The Nearness of You / Misty〉不是同一個錄音**：《I Remember》那一版 3:12，**jazzdisco 明記錄於 1990-09-11 Mad Hatter Studios（Billy Childs 鋼琴、Chris Severin 貝斯、Billy Kilson 鼓）**，本盤那一版 3:17–3:20、錄於 1988-05-09 Van Gelder。**策展層說「五軌」是對的，但必須加註第六軌是同名不同錄音，否則寫作層會算成六軌。**｜**方向確認：是 1991 年那張取用本盤的軌，不是本盤集結舊料**（本盤 1988 年發行、《I Remember》1991 年發行）。**若《I Remember》日後進池，兩卡必須以軌目互指，本卡是先出的那一張。**｜⚠ **還有第三張要一起記**：**1995 年的日本盤《The Nearness Of You: Complete Edition》(J) TOCJ-5967** 把本盤與 1990 年 Mad Hatter 那四軌併在一起（jazzdisco 的去向欄同時列 B1-90264 與 TOCJ-5967）——**那是後出的擴充版，不是本盤內容，正文不得把它的軌目寫進來。**｜**製作人 Michael Cuscuna、Dianne Reeves 本人與 Charles Mims Jr. 三人**；**錄音與重混 Rudy Van Gelder**（第 1–8 軌）。**美術指導 Kaoru Taku、攝影 Masanori Koide、內頁文字 市川翔二**——**日本盤的美術班底，與本組其餘各張的 Carol Friedman 完全不同，不得互抄。**｜⚠ **末軌〈Oh What a Freedom〉的來歷**：唱片腰帶印明它是**百事罐裝咖啡的電視廣告主題曲**，錄於洛杉磯 Mad Hatter Studio（1988-02-03／05），**與前八軌的 Van Gelder 場次完全分開**；jazzdisco 另記日本單曲盤 CJ20-5029《Oh What A Freedom》收了 1987 年同名專輯兩軌的 single mix。**正文提這一軌必須寫清楚它的廣告曲身分與不同的錄音地。**｜⚠ **盤面自承的瑕疵**：〈Spring Can Really Hang You Up the Most〉的鋼琴獨奏段有三處電子雜音，混在母帶裡去不掉（日英雙語說明印在托盤卡與內頁）——**這是可寫的細節，但要寫成「盤上自己註明」。**｜**跨卡（本層新發現，第 973 條的表上沒有）**：**貝斯手 Charnett Moffett 也在本組**——他在《Beauty Within》是領班、在《Angel Street》是 Tony Williams 的貝斯手；**本盤是他的第三個身分（Reeves 的伴奏之一）**。**三卡 risk 應互指，正文不得互抄班底。**｜**跨卡之二**：**〈You Taught My Heart to Sing〉是 McCoy Tyner 的曲子，本組 McCoy Tyner《Revelations》第 2 軌就是它的鋼琴獨奏版**——**同曲、不同演出者、不同錄音，兩卡可互指但不得寫成同一件事。**｜**封面缺，替代來源（不自行下載）**：**Discogs release `3909394`（1988 日本原壓 CJ32-5020）的 `images[0].uri`，primary 圖，600×526**；**次選 `3466401`（同期日本黑膠 RJ28-5020）的 primary 圖，589×600——黑膠那張的長寬比更接近方形封面。CAA 兩層皆 404，已依第 589a 條確認不是 5xx。**｜**試聽查無**：Apple 的 `search`（us／jp）與藝人目錄（us／jp）三種查法都跑了，**兩邊目錄裡都沒有本盤**；`apple-candidates.md` 給的 `724547205` 是 1987 年的同名專輯《Dianne Reeves》、8 軌，**逐軌核不過，不得採用**。**走固定無來源狀態。**｜非選輯：五個日期、兩個錄音室的新錄音。"
+ },
+ {
+  "key": "desc2:Don Grolnick|Weaver of Dreams",
+  "artist": "Don Grolnick",
+  "album": "Weaver of Dreams",
+  "facts": [
+   {
+    "f": "release-group 2561babe 的欄位：**RG title 是「A Weaver of Dreams」（帶冠詞）**、artist-credit「Don Grolnick」（Person 497eeac9）、first-release-date **1989**、primary-type Album、secondary-types 空。**轄下只有一筆 release 0759ff6b，而且幾乎是空殼**：國別 US、年份 1989、**media format 是 `null`、label-info 沒有 catalog-number、沒有 barcode**，只有八軌軌目：Nothing Personal 5:45／Taglioni 9:06／**A Weaver of Dreams 4:42**／His Majesty the Baby 6:50／I Want to Be Happy 5:06／Persimmons 6:55／Or Come Fog 5:24／Five Bars 7:19。**第 642 條已換 `inc=media+labels+recordings+artist-credits` 端點組合確認，是 MB 真的沒有，不是端點問題。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=2561babe-e04e-3ce3-ae31-3ac760934adb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note **1989–1990** 頁：「**Don Grolnick**：Randy Brecker（小號）、Barry Rogers（長號）、Bob Mintzer（低音單簧管）、Michael Brecker（次中音薩克斯風）、Don Grolnick（鋼琴）、**Dave Holland（貝斯）**、Peter Erskine（鼓）。**Skyline Studios, NYC, February 14-16, 1989**」，八軌全掛 `Blue Note CDP 7 94591 2`，條目行寫「**\\* Blue Note CDP 7 94591 2　Don Grolnick - Weaver Of Dreams　1990**」——**盤名無冠詞、錄音 1989、發行 1990，一行裡三件事都在**。另記 1997 年的《Don Grolnick - The Complete Blue Note Recordings》CDP 7243 8 57197 2 1。⚠ **jazzdisco 只列 CD 號，沒有黑膠號——本盤 1990 年沒有出黑膠。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1989-1990/"
+   },
+   {
+    "f": "**Discogs 5139884（1990 US CD，Blue Note CDP 7 94591 2，master 1320274）八軌**：1 Nothing Personal 5:44／2 Taglioni 8:41／3 A Weaver Of Dreams 4:40／4 His Majesty The Baby 6:47／5 I Want To Be Happy 5:45／6 Persimmons 6:54／7 Or Come Fog 5:23／8 Five Bars 7:20。notes：「**© ℗ 1990 Capitol Records, Inc.** ／ Printed in Canada.」credits：**Don Grolnick 鋼琴、作曲、製作、編曲**；Randy Brecker 小號、Barry Rogers 長號、Bob Mintzer 低音單簧管、Michael Brecker 次中音薩克斯風、**Dave Holland 貝斯**、Peter Erskine 鼓；錄音與混音 James Farber、母帶 Greg Calbi、數位剪接 Rhonda Schoen、**美術指導 Carol Friedman**、設計 Patrick Roques、攝影 Darryl Pitt、鋼琴技師 Robert Belanoff。⚠ **Discogs 的盤名欄與 master 都是無冠詞的「Weaver Of Dreams」，第 3 軌的軌名才是「A Weaver Of Dreams」。**",
+    "src": "https://api.discogs.com/releases/5139884"
+   },
+   {
+    "f": "**Billboard 1990 年 8 月 11 日 p43 的新片欄（JAZZ/NEW AGE）**：「STEVE COLEMAN Rhythm People CD Novus 3092-2-N… **DON GROLNICK Weaver Of Dreams CD Blue Note 82.94591 CA B4.94591**（OCR 的「82.」＝`B2-`）／ **DON PULLEN Random Thoughts CD Blue Note B2-94347 CA B4-94347** ／ MERL SAUNDERS Blues From The Rainforest… **TOMMY SMITH Peeping Tom CD 82.94335** ／ **VARIOUS ARTISTS New Stars On Blue Note Rec**[ords]」——**一則裡把三件事一次釘死：盤名無冠詞、發行年 1990、目錄號 B2-94591（CD）／B4-94591（卡帶）**（第 979 條已據此訂正策展層原先從 Discogs 猜的 `CDP 7 93178 2`）。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-08-11.pdf"
+   },
+   {
+    "f": "⚠ **紙本的沉默在本張是正證據，而且有對照組**：本層以 `94591`、`Weaver of Dreams`、`Grolnick` 三組條件掃過 1987–1990 的 Billboard 與 Cash Box 全段——**`94591` 只在 1990-08-11 那一則命中**；**`Grolnick` 命中十餘則，全部是他當製作人或側人的報導**（James Taylor《Never Die Young》Columbia 40851 的製作人、Michael Brecker 首張與《Don't Try This At Home》Impulse 42229 的製作人、Bob Berg《Cycles》的鋼琴手、Steps Ahead、Peter Erskine《Transition》……），**沒有一則是本盤**。**一張 1989 年發行的 Blue Note 爵士盤不可能整年在兩刊的爵士新片欄零命中**——而 1990-08-11 的新片欄證明它 1990 年才上市。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-09-17.pdf"
+   },
+   {
+    "f": "維基沒有本盤的專頁（本層以四種查詞查過搜尋 API，回的是 Grolnick 本人與相關人物條目）。**本盤沒有任何 Billboard 或 Cash Box 的評介與榜位**：本層把 1990 年兩刊全段（Billboard 50 期、Cash Box 49 期）與 1991–92 兩份 OCR 一起掃過，**除新片欄那一則外零命中**。**正文不得寫評價、不得寫榜績。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-01-13.pdf"
+   },
+   {
+    "f": "**店面觀察（第 254 條，三種查法都跑了，結論是查無）**：Apple `search` 用 `Don Grolnick Weaver of Dreams`（us）、`Grolnick Weaver Dreams`（us）、`Weaver of Dreams Grolnick`（jp）三次都回 0 筆；**改用藝人目錄查法**，us 的 `Don Grolnick` 回 8 筆——**《Nighttown》(1992, Blue Note, 715774806)、《Hearts and Numbers》(1985)、《Medianoche》(1995) 兩版、《The London Concert》(2000)、《The Complete London Concert》(2014)**，**沒有本盤**；再查 `Don Grolnick Complete Blue Note Recordings` 亦回 0 筆。⚠ **`batch-progress/c149/apple-candidates.md` 記「目錄裡找不到」，本層以三種查法覆核成立。試聽查無。**",
+    "src": "https://itunes.apple.com/lookup?id=715774806&country=us"
+   },
+   {
+    "f": "**CAA 本層重探**：release-group 2561babe 與唯一的 release 0759ff6b **兩處都回 HTTP 404**（不是 5xx，第 589a 條的重試條件不成立）——**CAA 確實零圖**。封面替代來源見 notes。",
+    "src": "https://coverartarchive.org/release-group/2561babe-e04e-3ce3-ae31-3ac760934adb"
+   }
+  ],
+  "hookCandidates": [
+   "七個人裡沒有一把吉他、沒有一支合成器：小號、長號、低音單簧管、次中音薩克斯風四支管，配上鋼琴、貝斯、鼓——Grolnick 把流行樂錄音室的老手拉回這種編制裡",
+   "三天在 Skyline 錄完，隔了一年半才上架；Billboard 1990 年 8 月的新片欄是這張碟在紙本上唯一的一次出現"
+  ],
+  "sound": "8 軌，四管加鋼琴三重奏的七重奏，全部是 Grolnick 自己寫的曲子。前排的配器很特別：Randy Brecker 的小號、Barry Rogers 的長號、**Bob Mintzer 的低音單簧管**、Michael Brecker 的次中音薩克斯風——低音單簧管在下面把和聲撐開，是這張碟的聲音記號。後排是 Grolnick 的鋼琴、Dave Holland 的貝斯與 Peter Erskine 的鼓。曲子長度均勻，多在五到九分鐘；〈Taglioni〉最長、〈I Want to Be Happy〉是唯一的標準曲，其餘七首都是新曲。",
+  "keyTracks": [
+   "Nothing Personal",
+   "Taglioni",
+   "Five Bars"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1989→1990 改判：成立，本層再把它查到原文並補上對照組。** MB frd 1989 是**錄音年**（jazzdisco 明記 Skyline Studios, NYC, **February 14-16, 1989**），不是發行年。**1990 由三層證據支撐**：**（一）Billboard 1990-08-11 p43 的新片欄**——「DON GROLNICK Weaver Of Dreams CD Blue Note B2-94591 CA B4-94591」，**盤名、年份、目錄號一次釘死**；**（二）jazzdisco 的條目行「Blue Note CDP 7 94591 2　Don Grolnick - Weaver Of Dreams　1990」**，年份欄自己就寫 1990；**（三）Discogs 5139884 與 master 1320274 都標 1990，盤面 © ℗ 1990 Capitol Records。**⚠ **紙本的沉默在這裡是正證據，而且有對照組**：本層掃過 1987–1990 兩刊全段，**`94591` 只在 1990-08-11 命中一次**，而 `Grolnick` 的十餘則命中**全是他當製作人或側人的報導**（James Taylor、Michael Brecker、Bob Berg、Steps Ahead）——**Billboard 的爵士新片欄在 1987–89 對 Blue Note 的覆蓋是完整的（第 978 條第 7 點），一張 1989 年的 Blue Note 爵士盤不可能整年零命中。**依階序取 **1990**。**上市取 1990 年 8 月。**⚠ **本卡年份 1990 越出本段區間**（其餘 21 張都在 1984–89）——**列舉檔切批時按 MB 的錯誤 frd 把它排進了 1989 段，併批與排序時要注意。**⚠ **本盤沒有黑膠**：jazzdisco 只列 CD 號，Billboard 新片欄只列 CD 與卡帶，Discogs 只有 CD 條目。",
+  "notes": "**覆核策展層：rgMbid 2561babe／唯一 release 0759ff6b／catno B2-94591（CD）＋B4-94591（卡帶）／8 軌／掛名 `Don Grolnick`／年份改判 1990／盤名改判無冠詞 全部成立，本張未擋下。**｜⚠ **盤名取無冠詞的 `Weaver of Dreams`**（第 963 條，本層四邊覆核成立）：**MB RG title 是 `A Weaver of Dreams`（帶冠詞），但那是第 3 軌的軌名**；**jazzdisco 的條目行、Discogs 的盤名欄與 master、Billboard 1990-08-11 新片欄四邊全部無冠詞**。**MB 形進 queryAlias，rgMbid 不動（第 483 條）。**｜⚠ **MB 的 release 0759ff6b 幾乎是空殼**（format `null`、無 catno、無 barcode），**目錄號與媒介全部來自 MB 以外**：CD／卡帶號出自 Billboard 1990-08-11 新片欄，`CDP 7 94591 2` 出自 jazzdisco 與 Discogs。**第 974 條的極端形。**｜⚠ **錄音年 1989、發行年 1990，相隔一年半**——**這是第 969 條「錄音年晚於 1985 但發行年更晚」的那一類，不是庫存盤也不是再發。正文不得寫成「1989 年的專輯」。**｜**製作人是 Grolnick 自己**（Discogs credits：製作、作曲、編曲、鋼琴四職一人兼）。**錄音與混音 James Farber、母帶 Greg Calbi、美術指導 Carol Friedman、設計 Patrick Roques、攝影 Darryl Pitt。**⚠ **Grolnick 在 1987–89 年的紙本身分幾乎都是「別人的製作人」**（James Taylor《Never Die Young》、Michael Brecker 兩張、Bob Berg），**正文若要寫他的來歷，這一點比本盤本身的紙本更厚。**｜⚠ **編制的記號是 Bob Mintzer 的低音單簧管**（jazzdisco 與 Discogs 都只給他這一件樂器），**正文不得寫成薩克斯風。**｜**封面缺，替代來源（不自行下載）**：**Discogs release `5139884`（1990 US CD，CDP 7 94591 2）的 `images[0].uri`，primary 圖，600×598**（另有兩張 secondary）。**CAA 兩層皆 404，已依第 589a 條確認不是 5xx。**｜**試聽查無**：Apple 三種查法（us／jp 的 search 三組查詞 ＋ us 藝人目錄 8 筆 ＋ 1997 年合訂版查詞）全部跑完，**目錄裡有他 1992 年的 Blue Note 盤《Nighttown》卻沒有本盤**。**走固定無來源狀態。**｜**跨卡**：**Don Pullen 在本組有兩張（《Song Everlasting》《New Beginnings》），而 Billboard 1990-08-11 那一則新片欄同時登了 Pullen 的下一張《Random Thoughts》B2-94347**——**那張不在本組，正文不得提。**｜**1997 年的《The Complete Blue Note Recordings》CDP 7243 8 57197 2 1 是後出的合訂，不是本盤內容。**｜非選輯：三天一場的錄音室新錄音，八軌中七軌是領班的新曲。"
+ },
+ {
+  "key": "desc2:Bill Evans|The Paris Concert, Edition Two",
+  "artist": "Bill Evans",
+  "album": "The Paris Concert, Edition Two",
+  "facts": [
+   {
+    "f": "release-group fadf9a83 的欄位：title「The Paris Concert, Edition Two」、artist-credit「Bill Evans」（Person **8247a3f2＝鋼琴家**）、first-release-date **1989**、primary-type Album、**secondary-types `[\"Live\"]`** ✓。轄下三筆：**927dc70e 1989 XE CD、Elektra 7559-60311-2（＋WEA International we 835）、barcode 075596031127、6 軌**；ddf8cf9b 2001-04-03 US CD、Elektra 7559-62607-2、6 軌；**f07ca4ce 2001 XE CD、Blue Note 7243 5 28673 2 5、barcode 724352867325、7 軌**。⚠ **MB frd 1989 是它建的最早那個 release（1989 歐洲 Elektra CD）的年份，不是首發年——MB 根本沒有建 1984 年的 Elektra／Musician 黑膠 60311。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=fadf9a83-cd1e-3008-809a-b57f3828ead7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "**Discogs 的 1984 年美國原壓 21722491（Elektra Musician **60311-1**／60311-1-E，12 吋黑膠，released 欄 **1984-04**）六軌**：A1 Re:Person I Knew 5:01／A2 Gary's Theme 5:12／A3 Letter To Evan 4:34／A4 34 Skidoo 6:30／B1 Laurie 7:50／**B2 Nardis 16:58**。notes：「**Recorded November 26, 1979.**」credits：**Bill Evans 鋼琴、Marc Johnson 貝斯、Joe LaBarbera 鼓**；**製作人 Helen Keane（for Elektra Musician）**、**電台演出製作 Yves Abiteboul**、母帶與工程 Vlado Meller、重混 Frank Laico、內頁文字 Burt Korall、設計 Norm Ung、**封面攝影 Erich Hartmann（Park Of Chateau De Sceaux）**、封底肖像攝影 Alex Dutilh。**master 378526 的年份欄也是 1984。**",
+    "src": "https://api.discogs.com/releases/21722491"
+   },
+   {
+    "f": "Discogs 的 `60311` 與藝人＋盤名兩種查法合計回四十餘筆，**1984 年的原壓群包含**：美國黑膠 21722491（60311-1）、**美國卡帶 8893446（9 60311-4-E，1984）**、巴西黑膠 5242006（Elektra 22.091，1984）、**日本黑膠 10609015（Warner-Pioneer P-11460，1984）**、歐洲黑膠 26310176（960 311-1）；**1989 年才出現歐洲 CD 2432460（7559-60311-2）**；**2001 年的 Blue Note 歐洲 CD 是 16298477／3191264（7243 5 28673 2 5）**，Discogs 的 format 欄明標 `Reissue`。**無一筆 1984 年前、也無一筆把 Blue Note 標成原廠。**",
+    "src": "https://api.discogs.com/releases/8893446"
+   },
+   {
+    "f": "**Billboard 的爵士榜，1984 年春**：**1984-06-02 p51 第 37 名、在榜第 3 週**（榜上印「**BILL EVANS The Paris Concerts Volume Two, Musician 60311-1-E (Elektra)**」）；**1984-06-16 p42 第 48 名、在榜第 5 週**。**回推首次進榜約在 1984 年 5 月中**——**與 Discogs 原壓的 released 欄 1984-04 相符。**⚠ **Billboard 把盤名印成「The Paris Concerts **Volume** Two」（複數 Concerts、Volume 不是 Edition），是第三種盤名變體。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1984/BB-1984-06-02.pdf"
+   },
+   {
+    "f": "**對照組：Edition One 的紙本落在 1983 年**——Cash Box **1983-02-05 p8 評介欄**「**THE PARIS CONCERT, EDITION ONE — Bill Evans — Elektra/Musician 60164-1 — Producer: Helen Keane — List: 8.98 — Bar Coded**」；Cash Box 的爵士榜 1983-02-19 p19 與 02-26 p11 都在榜上；Billboard 的爵士榜 1983-03-19 p25 起連掛到 1983-05-28。**兩張的紙本整整差一年，Edition One 1983、Edition Two 1984。**⚠ **順手記一個不屬於本棒範圍的疑點交主線：池中《The Paris Concert, Edition One》記 1982，但 Cash Box 1983-02-05 的評介與兩刊 1983 年的榜位都指 1983。本棒不改別張卡。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1983/CB-1983-02-05.pdf"
+   },
+   {
+    "f": "**店面觀察（第 254 條，三種查法都跑了，這一張命中並逐軌核過）**：探測層判 unavailable，**但本層用 `search` 查法命中 Apple us 條目 `1576791129`**（「Bill Evans — **The Paris Concert: Edition 2 (Live From The ORTF, Paris, FR / November 26. 1979)**」，**7 軌**，℗ 1984 Craft Recordings）。**逐軌核過**：d1t1 Re: Person I Knew 322s／t2 Gary's Theme 331s／t3 Letter To Evan 290s／t4 34 Skidoo 405s／t5 Laurie 486s／t6 Nardis 1052s／**t7 Interview 107s**——**七軌的秒數與 MB 的 2001 年 Blue Note CD f07ca4ce（322／331／290／405／486／1052／107）逐軌完全吻合。同一張碟，串流採信 1576791129。**⚠ **第七軌〈Interview〉不是演出內容，1984 年的原盤沒有這一軌。**⚠ **Apple 的 releaseDate 標 1983-01-01——那是 Edition One 的年份（Edition One 的 Apple 條目是 `1576787046`，releaseDate 也是 1983），Apple 把兩張的日期寫混了**（第 966 條已記，本層覆核成立）；**℗ 欄的 1984 才是對的。**",
+    "src": "https://itunes.apple.com/lookup?id=1576791129&country=us"
+   },
+   {
+    "f": "**Edition One 與 Edition Two 是同一場演出的拆盤**：兩張的 Apple 條目都標「**November 26, 1979**」，**但場地寫法不同**——Edition One 作「Live At the l'Espace Cardin, Paris, FR」，**Edition Two 作「Live From The ORTF, Paris, FR」**（ORTF 是法國廣播電視機構）；Discogs 的原壓 credits 也給 Edition Two 掛了「**Yves Abiteboul — Producer [Radio Concert]**」。**兩張各算一張（bluenote 簡報 §2.6 的 Volume 拆盤），不是撞陳列。**",
+    "src": "https://itunes.apple.com/lookup?id=1576787046&country=us"
+   },
+   {
+    "f": "⚠ **本層以 `60311`、`Paris Concert` ＋ `Evans` 兩組條件掃過 1980–1992 兩刊：除上述 1984 年兩則榜位外，命中的全是 Edition One 的榜位與評介（1983 年整年）**，本盤沒有評介欄。**正文不得寫本盤的樂評。** CAA 在 release-group 層有圖——⚠ **第 966 條已標：那張圖的來源是 2001 年的 Blue Note CD f07ca4ce，不是 1984 年的 Elektra／Musician 原盤**，**版式與原盤不同，上架時要知道拿到的是再發版的封面。**",
+    "src": "https://coverartarchive.org/release-group/fadf9a83-cd1e-3008-809a-b57f3828ead7"
+   }
+  ],
+  "hookCandidates": [
+   "1979 年 11 月 26 日那一晚的巴黎演出被拆成兩張碟發行：第一輯 1983 年出、第二輯 1984 年才出，而這一輯的錄音是法國廣電機構 ORTF 做的",
+   "Blue Note 與這張碟的關係只有一層：2001 年在歐洲授權再發，而且多塞了一段一分四十七秒的訪談——1984 年的原盤上沒有那一軌"
+  ],
+  "sound": "6 軌現場，1979 年 11 月 26 日巴黎，Bill Evans 生前最後一年的三重奏（Marc Johnson 貝斯、Joe LaBarbera 鼓）。五首在五到八分鐘之間，收尾的〈Nardis〉近十七分鐘，是全盤的重心也是這個三重奏最放得開的一段。〈Re: Person I Knew〉〈Gary's Theme〉〈Letter to Evan〉〈Laurie〉都是 Evans 自己的曲子或他晚年常彈的曲目。錄音來自法國廣電機構 ORTF 的實況。",
+  "keyTracks": [
+   "Re: Person I Knew",
+   "Nardis",
+   "Laurie"
+  ],
+  "status": "full",
+  "yearVerified": "**覆核策展層的 1989→1984 改判：成立，本層把它從「維基＋Discogs＋Apple」升級成同期紙本榜位確認。** MB frd **1989 是 MB 建的最早那個 release（1989 歐洲 Elektra CD 927dc70e）的年份**，不是首發年——**MB 根本沒有建 1984 年的 Elektra／Musician 黑膠**（第 974 條）。**1984 由三層證據支撐**：**（一）Billboard 的爵士榜 1984-06-02 p51 第 37 名、在榜第 3 週，1984-06-16 p42 第 48 名、第 5 週——回推首次進榜約 1984 年 5 月中**（**本層新找到，策展層沒有這一層**）；**（二）Discogs 的 1984 年原壓群**——美國黑膠 21722491（**released 欄 1984-04**）、美國卡帶 8893446、巴西壓 5242006、日本壓 P-11460、歐洲壓 960 311-1，**master 378526 年份欄 1984**；**（三）Apple 的 ℗ 1984 Craft Recordings。** 依階序（榜位 ＞ Discogs 原壓群 ＞ MB frd）取 **1984**。**上市取 1984 年 4 月**（Discogs 原壓的 released 欄；榜位 5 月中進榜相符）。⚠ **Apple 的 releaseDate 1983-01-01 是 Edition One 的年份，不可用。**⚠ **原盤他廠（第 969 條第三型）**：**`label` 以 Elektra／Musician 60311 為首，Blue Note 的 2001 年歐洲 CD（7243 5 28673 2 5）只寫成授權再發。**依 `CURATION-BRIEF-bluenote.md` §1.3 處理，**判為可逆**（改的是 manifest 的 `year`／`label` 欄，不是卡池結構）。⚠ **錄音 1979-11-26、首發 1984，相隔四年半**，正文不得寫成 1984 年錄的。⚠ **順帶回報主線（不屬本棒範圍）：池中《Edition One》記 1982，但 Cash Box 1983-02-05 的評介與兩刊 1983 年的榜位都指 1983。**",
+  "notes": "**覆核策展層：rgMbid fadf9a83／年份改判 1984／原盤他廠 Elektra／Musician 60311／掛名 `Bill Evans`（池中 22 列沿用）全部成立，本張未擋下。本層新補：1984 年 Billboard 爵士榜兩期、原壓的月份（1984-04）、Edition One 的 1983 年對照紙本。**｜⚠ **同名消歧（第 964 條，本組唯一的雙向案例）**：**本卡的 `Bill Evans` 是鋼琴家（MB 8247a3f2）**；**本組 Biréli Lagrène《Inferno》的側人是 1958 年生的次中音薩克斯風手 Bill Evans（Discogs 寫成 `Bill Evans (3)`、MB 8c7aa18e 標 disambiguation「saxophonist」）**，**兩人完全無關。兩卡 risk 已互指，正文提到任何一位都必須帶消歧。**⚠ **c-149 b 組退掉的《Let The Juice Loose》就是那位薩克斯風手的碟**（第 990 條）。｜⚠ **軌數兩形（第 972 條已列，本層逐軌核實）**：**1984 年原盤與 1989 年 Elektra CD 都是 6 軌；2001 年的 Blue Note CD 是 7 軌，多的那一軌是〈Interview〉(1:47)——不是演出內容。** Apple 的 7 軌條目就是這一形。**正文與 `keyTracks` 以 6 軌原盤為準。**｜⚠ **Volume 拆盤，不是撞陳列**（bluenote 簡報 §2.6、第 967 條）：**《Edition One》與《Edition Two》是同一場 1979-11-26 巴黎演出的不同曲目**，各算一張、risk 互指。**本層另查到兩張的場地寫法不同**——Edition One 掛 l'Espace Cardin、**Edition Two 掛 ORTF，而且 Edition Two 的原盤 credits 有「Yves Abiteboul — Producer [Radio Concert]」**，**正文可以寫「這一輯的來源是法國廣電機構的實況錄音」，但不得說兩輯是兩場不同的演出。**｜⚠ **第 646 條**：Edition One 的 Apple collectionId 是 `1576787046`、本卡是 `1576791129`，**兩張不共用。**｜**製作人 Helen Keane**（Discogs 原壓 credits ＋ Cash Box 1983-02-05 對 Edition One 的評介都寫她）——⚠ **Keane 同時是本組《Pieces of Blue and the Blues》的製作人**（本層新發現的跨卡），**但兩張毫無關係，正文不得互抄。****封面攝影 Erich Hartmann（Park of Château de Sceaux）、封底肖像 Alex Dutilh、設計 Norm Ung、內頁文字 Burt Korall、母帶 Vlado Meller、重混 Frank Laico。**｜⚠ **盤名三形**：MB／Apple／Discogs 的 `The Paris Concert, Edition Two`（卡上值）；Discogs 多數條目作 `The Paris Concert (Edition Two)`；**Billboard 1984 年的榜上印成 `The Paris Concerts Volume Two`**。**後兩形進 queryAlias。**｜⚠ **CAA 有圖但來源是 2001 年的 Blue Note CD，不是 1984 年的 Elektra 原盤**（第 966 條），**版式不同。**｜**試聽：串流採信 `1576791129`**（Apple us，七軌秒數與 MB 的 2001 Blue Note CD 逐軌吻合）。⚠ **探測層判 unavailable、`apple-candidates.md` 也給過這個候選但沒核——本層核過了，是同一張碟的擴充 CD 形。**｜非選輯：單一場演出的現場專輯（拆盤的第二輯）。"
+ },
+ {
+  "key": "desc2:Stanley Turrentine|La Place",
+  "artist": "Stanley Turrentine",
+  "album": "La Place",
+  "facts": [
+   {
+    "f": "release-group d37465b7 的欄位：title「La Place」、artist-credit「Stanley Turrentine」（Person 51e0df97）、first-release-date **1989**、primary-type Album、secondary-types 空。轄下三筆：**65e24399 1989 US 12 吋黑膠、Blue Note B1-90261、7 軌**（無 barcode）；be0a801f 1989 CD、Blue Note CDP 7 90261 2、barcode 077779026128、7 軌；**c236d318 1989 US CD、Blue Note B2-590261**、7 軌。**黑膠七軌**：A1 Terrible T 6:29／A2 Cruisin' 6:00／A3 Night Breeze 4:59／A4 Take 4 5:03／B1 Touching 6:13／B2 La Place Street 6:29／B3 Sparkle 6:23。⚠ **`B2-590261` 是 Capitol 那幾年的內部號形，軌目與正式號完全相同，已逐軌核過、不是不同版本**（第 977 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=d37465b7-f2e1-4459-91ab-7aa544232f7c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁把 B1-90261 拆成**三段、兩個洛杉磯錄音室、同一個檔期（1988 年 9 月 5–19 日）**：**（一）「Quintet With Strings」，Ocean Way Recording, LA**——**Freddie Hubbard 小號（只在第 1 軌）**、Turrentine 次中音薩克斯風、**Bobby Lyle 鍵盤兼編曲**、David T. Walker 吉他#2／Paul Jackson Jr. 吉他#3、Abe Laboriel 電貝斯、Michael Baker 鼓#1,2／Tony Lewis 鼓#3、**Jean Carne 人聲#3**，另有九人弦樂組與指揮 Booker White（#2,3）→〈Terrible \"T\"〉〈Touching〉〈Night Breeze〉；**（二）「Sextet/Septet」，同地**——Michael Stewart 小號#1、Bobby Lyle、Paul Jackson Jr.、Kevin Brandon 與 Abe Laboriel 電貝斯、Michael Baker 鼓、**Paulinho Da Costa 打擊** →〈Cruisin'〉〈Take 4〉；**（三）「Quintet」，Aire L.A. Studios**——Turrentine、Bobby Lyle、**Phil Upchurch 吉他#1**／Paul Jackson Jr. 吉他#2、Kevin Brandon 與 Abe Laboriel 電貝斯、Michael Baker →〈La Place Street〉〈**Sparkie**〉。年份欄記 1989。",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "Discogs 原壓 2733802（1989 US LP，Blue Note B1-90261）七軌＝MB 軌目（B3 作 **Sparkle**）。credits：Stanley Turrentine 次中音薩克斯風、**Bobby Lyle 鍵盤**、Freddie Hubbard 與 Michael \"Patches\" Stewart 小號、David T. Walker／Paul Jackson Jr.／Phil Upchurch 吉他、Abraham Laboriel 與 Kevin Brandon 貝斯、Michael Baker 與 Tony Lewis 鼓、Paulinho Da Costa 打擊、**Jean Carn 人聲**。⚠ **Discogs 另把 `Gerald Albright` 登成 `Bass`——Albright 是薩克斯風手，這個歸屬與 jazzdisco（完全沒列他）打架，本層無法證實，正文不得寫他的樂器。**",
+    "src": "https://api.discogs.com/releases/2733802"
+   },
+   {
+    "f": "**Billboard 1989 年 7 月 22 日 p46 的新片欄（廠牌 release sheet）**：「JAZZ … **STANLEY TURRENTINE La Place LP Blue Note 90261/9.98 CA 90261/$9.98**」——**這是本盤上市排程的紙本出處。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-22.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 8 月 19 日 p70 評介欄**：「**STANLEY TURRENTINE** La Place PRODUCER: **Bobby Lyle** Blue Note **90261** ／ **Veteran master tenor comes on strong in a straight-ahead setting, with most tunes penned by keyboardist/producer Lyle** and accompanied by a top-flight crew featuring **Freddie Hubbard, Phil Upchurch, Gerald Albright, and Jean Cain, whose vocals grace \"Night Breeze.\"** Turrentine's bluesy riffs are commanding, especially on such standout tracks as the smooth **\"Cruisin',\"** the solid **\"La Place Street\"** and the tough-as-leather **\"Sparkle.\"**」——**製作人 Bobby Lyle 的唯一硬來源；也點名了 Jean Carn 唱的是哪一軌。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-08-19.pdf"
+   },
+   {
+    "f": "**Billboard「TOP CONTEMPORARY JAZZ ALBUMS」榜連掛約十三週**：1989-09-16 p82 **以 NEW 進榜第 19 名**、09-30 p70 第 17 名（第 3 週）、10-14 p90 第 14 名（5）、**10-28 p98 第 11 名（7，與 11-25 並列最高）**、11-11 p78 第 13 名（9）、**11-25 p38 第 11 名（11）**。⚠ **第 879 條：本張上的是 `TOP CONTEMPORARY JAZZ ALBUMS`，不是 `TOP JAZZ ALBUMS`。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-10-28.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 10 月 28 日 p122 的業界短訊**：「…saxophonist **Stanley Turrentine** was later said to be in fair condition and being given medication for **pulmonary edema**, or accumulation of fluid in the lungs. **The artist is currently riding high on the jazz charts with his Blue Note album \"La Place.\"**」——**本盤上榜期間的同期報導，也是 Turrentine 本人當時狀況的紙本。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-10-28.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1507814930**，**7 軌＝原盤軌數**，appleYear 1989。CAA 在 release-group 層有圖。⚠ **本層以 `90261`＋`Blue Note` 掃過 1987–1990 兩刊，除上述新片欄、評介、六期榜位與一則短訊外無其他命中**；`La Place` 這個片語本身另有古典樂與人名的誤中（如 Billboard 1988-08-06 p62 的樂評裡「the solo viola **placed** realistically」被切詞命中），**查本盤必須 catno ＋ 廠牌雙條件。**",
+    "src": "https://itunes.apple.com/lookup?id=1507814930&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "Freddie Hubbard 只吹了開場那一軌就走了，Jean Carn 只唱了〈Night Breeze〉一首——這張碟的客座名單比它的核心編制還長",
+   "作曲、編曲、彈鍵盤、當製作人的都是同一個人：Bobby Lyle。Turrentine 只負責那把次中音薩克斯風"
+  ],
+  "sound": "7 軌，1988 年秋天在洛杉磯兩家錄音室錄的當代爵士。Bobby Lyle 的鍵盤與編曲決定整張的形狀——大多數曲子是他寫的，弦樂組在兩軌上鋪底。Turrentine 的次中音薩克斯風音色厚、樂句短而藍，開場〈Terrible T〉有 Freddie Hubbard 的小號接腔，〈Night Breeze〉是 Jean Carn 的人聲曲。吉他手三位輪替（David T. Walker、Paul Jackson Jr.、Phil Upchurch），Abe Laboriel 與 Kevin Brandon 的電貝斯、Michael Baker 的鼓撐底。七軌長度均勻，都在五到六分半之間。",
+  "keyTracks": [
+   "Terrible T",
+   "Cruisin'",
+   "La Place Street"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1989 成立，新片欄→評介→榜位三層落在同一季內，是第 976 條的正常節奏樣本。** MB frd 1989＝jazzdisco 1989＝Discogs 原壓 2733802（1989 US LP，B1-90261）＝Apple appleYear 1989。同期紙本三層：**Billboard 1989-07-22 p46 新片欄**（廠牌 release sheet，Blue Note 90261，定價 $9.98）、**Billboard 1989-08-19 p70 評介**（製作人 Bobby Lyle）、**Billboard TOP CONTEMPORARY JAZZ ALBUMS 1989-09-16 以 NEW 進榜、連掛至 11-25 共十三週、最高第 11 名**。**新片欄 7 月 → 評介 8 月 → 榜位 9 月，全部在同一季內，依第 976 條的判準取新片欄。上市取 1989 年 7 月。**⚠ **錄音 1988-09-05～19、發行 1989-07，相差約十個月。**⚠ **第 879 條：本張只上 Contemporary Jazz 榜。**⚠ **`B2-590261` 是 Capitol 內部號形，不是另一個版本**（第 977 條，本層逐軌核過成立）。",
+  "notes": "**覆核策展層：rgMbid d37465b7／原盤 65e24399／catno B1-90261＋CDP 7 90261 2／7 軌／掛名 `Stanley Turrentine`（池中 20 列沿用）／年份 1989 全部成立，本張未擋下。**｜⚠ **三段編制不同、兩個錄音室，正文不得寫成同一個團**：**Freddie Hubbard 的小號只在〈Terrible T〉一軌**；**Michael \"Patches\" Stewart 的小號只在〈Cruisin'〉**；**Jean Carn 的人聲只在〈Night Breeze〉**（Billboard 評介也這樣寫）；**弦樂九人組與指揮 Booker White 只在〈Touching〉與〈Night Breeze〉**；吉他手三位分軌輪替；**〈La Place Street〉與〈Sparkle〉錄在 Aire L.A. Studios，其餘五軌在 Ocean Way Recording。**｜⚠ **Gerald Albright 的歸屬無法確認**：**Discogs 把他登成 `Bass`（他是薩克斯風手，顯不合理）、jazzdisco 完全沒列他、Billboard 評介把他算進「top-flight crew」**。**三個來源互不吻合，正文不得寫他的樂器，也不宜點名他。**｜⚠ **曲名兩形**：jazzdisco 作 **Sparkie**、MB／Discogs／Billboard 評介都作 **Sparkle**，**本層採 Sparkle**；〈Terrible T〉的引號形（`Terrible \"T\"`／`Terrible T.`）三邊略有出入，**卡上照 MB。**｜**製作人 Bobby Lyle**（Billboard 1989-08-19 評介；**Discogs 的 credits 沒有製作人欄，jazzdisco 只把他登成鍵盤兼編曲**——**紙本是唯一硬來源**）。**Lyle 同時是大多數曲子的作者、編曲與鍵盤手。封面設計者查無。**｜**跨卡（本層新發現，第 973 條的表上沒有這一組）**：**Freddie Hubbard 在本盤第 1 軌吹小號**，而他在本組有兩張領班盤（《Times Are Changing》個人字串、《The Eternal Triangle》聯名字串）——**三卡的 risk 應互指，但三張的場次、班底、樂風完全不同，正文絕不得互抄。**｜**撞陳列（第 967 條已查，本層覆核成立）**：逐軌比對池中 20 張 `Stanley Turrentine`，**七軌全新、零重疊**。｜非選輯：同一檔期、兩個錄音室的新錄音。"
+ },
+ {
+  "key": "desc2:Freddie Hubbard|Times Are Changing",
+  "artist": "Freddie Hubbard",
+  "album": "Times Are Changing",
+  "facts": [
+   {
+    "f": "release-group 4a5c625b 的欄位：title「Times Are Changing」、artist-credit「Freddie Hubbard」（Person 59ae7a1a）、first-release-date **1989**、primary-type Album、secondary-types 空。轄下五筆：**c04051e9 1989 US 12 吋黑膠、Blue Note B1-90905**（無 barcode）；fbf64491／9eb8bb3f 1989 US／CA CD、Blue Note CDP 7 90905 2、barcode 077779090525；**99d34e57 1989 US CD、Blue Note CDP 590905**（內部號形）；c1aa1de4 2020-04-24 數位。**五筆全是 7 軌**：Spanish Rose 6:27／Back to Lovin' Again 4:30／Was She Really There? 5:55／Corazon Amplio (A Song for Bert) 5:09／**Times 'r Changin' 5:29**／Sabrosa 8:40／Fragile 6:27。⚠ **`CDP 590905` 是 Capitol 內部號形，已逐軌核過、不是不同版本**（第 977 條）。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=4a5c625b-23b0-4a90-ac9d-28796e1a3ebb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁：「**Freddie Hubbard Band**：Freddie Hubbard（小號、粗管短號）、**Todd Cochran（鍵盤、編曲）**、John Lehmkuhl（程式設計#3）、Ben Dowling（音效設計#1,3）、**Stanley Clarke（貝斯#1）**、**Stix Hooper（鼓#1,5）**、**Michael Shrieve（鈸#1-4,6、電子打擊#5,7）**、Munyungo Jackson（打擊）、**Phil Perry（人聲#3）**。**Burbank, CA，1988 年 7 月至 11 月**」，七軌全掛 `Blue Note B1-90905`。⚠ **jazzdisco 的條目行把盤名寫成「Times Are Changin'」（帶撇號），MB／Discogs／Billboard 都作「Times Are Changing」**；jazzdisco 年份欄記 1989。⚠ **錄音期橫跨五個月、不是一場。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "Discogs 原壓 992081（1989 US LP，Blue Note B1-90905）七軌＝MB 軌目。credits：**Todd Cochran 製作、編曲、鍵盤、鼓機程式、指揮、混音**；Freddie Hubbard 小號與柔音號；Michael Shrieve 鈸與電子打擊；Munyungo Jackson 打擊；Ben Dowling 與 John Lehmkuhl 程式設計；混音 Bernie Kirsh 與 Peter Doell；**美術指導 Carol Friedman、設計 Lynn Dreese Breslin、封面攝影 William Claxton**、內頁攝影 Glenn Samuels。另有 12271860（1989 加拿大壓）與 20261563（1989 瓜地馬拉壓）。",
+    "src": "https://api.discogs.com/releases/992081"
+   },
+   {
+    "f": "維基的專頁：發行 1989、**製作人 Todd Cochran**。編制與客座：Hubbard（小號、柔音號）、**Michael Shrieve（鈸、鼓機程式）**、Munyungo Jackson（打擊）、**Todd Cochran（鍵盤、鼓機程式，別名 Bayete）**，客座 **Stanley Clarke 電貝斯（第 1 軌）、Stix Hooper 鼓（第 1、5 軌）、Phil Perry 人聲（第 3 軌）**。曲目作者：〈Spanish Rose〉〈Back to Lovin' Again〉〈Corazon Amplio〉〈Times 'R Changin'〉都是 Todd Cochran 寫的、〈Was She Really There?〉G.F. M'lely、**〈Sabrosa〉Tex Allen、〈Fragile〉Sting**。",
+    "src": "https://en.wikipedia.org/wiki/Times_Are_Changing"
+   },
+   {
+    "f": "**Blue Note／Capitol 的整版廣告，Billboard 1989 年 4 月 29 日 p47**：「THE OPENING … **FREDDIE HUBBARD Times Are Changing 90905** … On his newest Blue Note release, **master trumpeter Freddie Hubbard plays it mellow and melodic with his rich, warm trumpet and flugelhorn set beautifully in contempor**[ary settings] … **Todd Cochran dresses Freddie up in some modern MIDI surroundings for the big beat \"Times 'R Changin,\" then lays down a lush cushion for his muted trumpet on the haunting ballad \"Was She Really There?\" featuring vocal sensation Phil Perry.** Times Are Changing indeed, and Freddie Hubbard is right there, blowing with the changes.」同一版下緣另列本組的 **McCOY TYNER Revelations 91651**。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-04-29.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 5 月 6 日 p114 評介欄**：「**FREDDIE HUBBARD** Times Are Changing PRODUCER: **Todd Cochran** Blue Note **90905** ／ **Trumpet vet delivers the \"production record\" he has promised for two years.** Though his track record on crossover attempts has been spotty, **early radio response puts this in the win column**…」；**同一期 p49 的專欄**另提到「…This should offer a different-sounding Hubbard than the one we hear on his current **\"Times Are Changing\" (Blue Note)**」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-05-06.pdf"
+   },
+   {
+    "f": "**Blue Note 的年度藝人整版廣告，Billboard 1989 年 7 月 1 日 p54**，藝人名單裡有 **Freddie Hubbard**，下半部逐盤列出「LOU RAWLS At Last／**TONY WILLIAMS Angel Street**／ELIANE ELIAS So Far So Close／**DON PULLEN New Beginnings**／GIL MELLE Mindscape／**FREDDIE HUBBARD Times Are Changing**／**McCOY TYNER Revelations**／George Adams Nightingale／Tommy Smith Step By Step／Jack Walrath Neohippus／Superblue Superblue」，並預告「**Look for these new Blue Note releases coming in August. Ralph Peterson Trio, Andrew Hill, Rick Margitza**」——**本組四張（本盤、Angel Street、New Beginnings、Revelations）同列一版，並預告了本組《Triangular》的八月檔期。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-01.pdf"
+   },
+   {
+    "f": "⚠ **紙本假陽性（第 968 條，本層覆核成立）**：`90905` 在 1988 年的 Billboard 裡命中十餘次，**全部是 M.C. Lyte《Lyte As A Rock》（First Priority 90905／Atlantic）的黑人專輯榜位**（1988-04-16 p58 的評介、07-23 p26 第 53 名、08-06 p24、08-20 p22、09-10 p22、09-17 p28…）。**查本盤必須 `90905` ＋ `Blue Note` 雙條件。**⚠ **本層以雙條件掃過 1987–1990 兩刊，本盤沒有任何榜位**——**廣告與評介有，榜位沒有，正文不得寫榜績。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-07-23.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1507796852**，**7 軌＝原盤軌數**，appleYear 1989。CAA 在 release-group 層有圖。",
+    "src": "https://itunes.apple.com/lookup?id=1507796852&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "Blue Note 自己的廣告詞說得很白：Todd Cochran「把 Freddie 打扮進現代的 MIDI 環境裡」——這是 Hubbard 答應了兩年的那張「製作型」專輯",
+   "七首裡有四首是製作人寫的，壓軸那首是 Sting 的〈Fragile〉；Hubbard 自己一首都沒寫"
+  ],
+  "sound": "7 軌，1988 年下半在 Burbank 分五個月做出來的電子化製作盤。Todd Cochran（Bayete）包辦製作、編曲、鍵盤與鼓機程式，Michael Shrieve 打鈸與電子打擊，Munyungo Jackson 打擊，MIDI 的鋪底與音效設計貫穿全盤。Hubbard 的小號與柔音號放在這層電子質地上，音色被刻意修得暖而圓。客座只有三處：Stanley Clarke 的電貝斯在開場曲、Stix Hooper 的鼓在兩軌、Phil Perry 的人聲在〈Was She Really There?〉。〈Sabrosa〉八分四十秒最長，壓軸是 Sting 的〈Fragile〉。",
+  "keyTracks": [
+   "Spanish Rose",
+   "Was She Really There?",
+   "Fragile"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1989 成立，廠牌廣告與評介兩層齊全。** MB frd 1989、**MB 的黑膠 c04051e9 與三筆 CD 全標 1989**、jazzdisco 1989、Discogs 原壓 992081 與加拿大／瓜地馬拉兩壓皆 1989、維基 released 1989、Apple appleYear 1989。同期紙本：**Billboard 1989-04-29 p47 的 Blue Note／Capitol 整版廣告**（第 612 條，逐號印 90905 並引用曲名）、**Billboard 1989-05-06 p114 評介**（製作人 Todd Cochran）＋**同期 p49 專欄**、**Billboard 1989-07-01 p54 的 Blue Note 年度藝人整版廣告**。**上市取 1989 年 4 月**（廣告那一週）。⚠ **本盤沒有任何榜位**——本層以 `90905`＋`Blue Note` 雙條件掃過 1987–1990 兩刊全段（**兩張爵士榜都查過，第 879 條**），零命中，**正文不得寫榜績**。⚠ **第 968 條的 `90905` 假陽性（M.C. Lyte《Lyte As A Rock》First Priority 90905／Atlantic 的黑人專輯榜位，1988 年十餘則）本層覆核成立。**⚠ **錄音期 1988 年 7 至 11 月、發行 1989 年 4 月**，正文不得寫成一場錄完。",
+  "notes": "**覆核策展層：rgMbid 4a5c625b／原盤 c04051e9／catno B1-90905＋CDP 7 90905 2／7 軌／掛名 `Freddie Hubbard`（池中 15 列沿用）／年份 1989 全部成立，本張未擋下。**｜⚠ **盤名照 MB 的 `Times Are Changing`**：**jazzdisco 的條目行寫成 `Times Are Changin'`（帶撇號）——那其實是第 5 軌的軌名形（`Times 'r Changin'`）**；MB、Discogs 原壓、Billboard 廣告與評介四邊都是 `Times Are Changing`。**jazzdisco 形進 queryAlias。**｜⚠ **錄音不是一場**：jazzdisco 記 **Burbank, CA，1988 年 7 月至 11 月**——**五個月的分次製作**，正文不得寫成「某天錄完」，也不得寫錄音室名（jazzdisco 只給城市，沒給錄音室）。｜⚠ **客座只在特定軌，正文不得寫成全程在場**：**Stanley Clarke 的電貝斯只在第 1 軌〈Spanish Rose〉**；**Stix Hooper 的鼓只在第 1、5 軌**；**Phil Perry 的人聲只在第 3 軌〈Was She Really There?〉**（維基與 jazzdisco 兩邊一致，Blue Note 的廣告也點名）。｜⚠ **曲子全不是 Hubbard 寫的**：四首是 Todd Cochran 的，〈Was She Really There?〉G.F. M'lely、〈Sabrosa〉Tex Allen、**〈Fragile〉是 Sting 的**。**正文不得把任何一首寫成 Hubbard 的原創。**｜**製作人 Todd Cochran**（Discogs／維基／Billboard 評介三邊一致），**別名 Bayete**；**混音 Bernie Kirsh 與 Peter Doell**。**封面攝影 William Claxton、美術指導 Carol Friedman、設計 Lynn Dreese Breslin**——**Claxton 是本組唯一由他拍封面的一張，這是可寫的點。**｜**跨卡**（第 973 條）：**Hubbard 在本組有兩張，另一張《The Eternal Triangle》(1988) 用聯名字串 `Freddie Hubbard & Woody Shaw`、是 1987-06 Van Gelder 的原音硬咆勃**——**兩張的掛名字串、班底、樂風三樣全不同，絕不得互相收攏或互抄**。**本層另新發現第三處：Hubbard 也在本組 Stanley Turrentine《La Place》的第 1 軌吹小號**（1988-09 Ocean Way, LA）——**三卡 risk 應互指。**｜**同版廣告的跨卡**：Billboard 1989-04-29 p47 同版另列 McCoy Tyner《Revelations》；**1989-07-01 p54 那一版同時列出本盤、Angel Street、New Beginnings、Revelations，並預告了 Triangular 的八月檔期**——**五卡可互指這兩版廣告，但正文不得把它們寫成同一批錄音。**｜**撞陳列（第 967 條已查，本層覆核成立）**：逐軌比對池中 15 張 `Freddie Hubbard`，**七軌全新、零重疊**。｜非選輯：一段期間的錄音室新錄音（製作型專輯）。"
+ },
+ {
+  "key": "desc2:Charnett Moffett|Beauty Within",
+  "artist": "Charnett Moffett",
+  "album": "Beauty Within",
+  "facts": [
+   {
+    "f": "release-group 140cb899 的欄位：title「Beauty Within」、artist-credit「Charnett Moffett」（Person afa877bc）、first-release-date **1989**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：297e6c36，**1989 12 吋黑膠、Blue Note B1-91650、barcode 077779165018、7 軌**，⚠ **國別欄標 `CA`（加拿大）**。七軌：A1 Love Never Fails 5:43／A2 Dancing With Love 3:58／A3 Angela 6:15／**A4 My Little One 4:44**／B1 Beauty Within 5:24／B2 The Message 5:25／**B3 Eastwood 8:59**。⚠ **MB 沒有建 CD CDP 7 91650 2。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=140cb899-0e41-449d-b457-50fa0488e2e1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁把 B1-91650 拆成**四場、三個紐約錄音室、時間都記成「late 1988」**：**（一）「Quartet/Trio」，RPM Sound Studios**——**Kenny Garrett 中音薩克斯風#2,3**、**Charles Moffett Jr. 次中音薩克斯風#1**、Kenny Drew Jr. 鋼琴與合成器、Charnett Moffett（貝斯、電貝斯、鍵盤、打擊）、**Codaryl \"Cody\" Moffett 鼓** →〈Love Never Fails〉〈Dancing With Love〉〈Eastwood〉〈The Message〉；**（二）「Trio」，Studio J**——**Bernard Wright 合成器與鼓機、Stanley Jordan 電吉他**、Charnett（電貝斯、鼓機）→〈Angela〉；**（三）「Quartet」，The Studio**——**Mondre Moffett 小號與合成器弦樂**、Bernard Wright 合成器、Charnett（貝斯、鍵盤）、**Charles Moffett Sr. 鼓** →〈My Little One〉；**（四）「Duo」，The Studio**——Kenny Drew Jr. 鋼琴與合成器、Charnett（貝斯、鼓機、合成器、打擊）、**Charisa Moffett 人聲** →〈Beauty Within〉。年份欄記 1989。",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "Discogs 原壓 3948498（1989 LP，Blue Note B1-91650，country 欄標「**USA & Canada**」，master 797378）七軌，⚠ **軌名兩處與 MB 不同**：A4 作「**The Little One**」、B3 作「**Eastwoods**」。notes：「On the sleeve: **℗ © 1989 Capitol Records Inc. ／ Printed in Canada** ／ On the disc labels: Blue Note **The Finest In Jazz Since 1939** ／ ℗ 1989 Capitol Records Inc. ／ **Printed in U.S.A.**」credits：**Charnett Moffett 製作與作曲**、**Bruce Lundvall 執行製作**、母帶 Greg Calbi、錄音與混音 Brian Lee／Mike Krowiak／**Yoshiaki Masuo**。",
+    "src": "https://api.discogs.com/releases/3948498"
+   },
+   {
+    "f": "**Billboard 1989 年 11 月 11 日 p73 的新片欄（廠牌 release sheet）**：「JAZZ … **CHARNETT MOFFETT Beauty Within** e LP **Blue Note B1-91650**/NA CA **B4-91650**/NA」——⚠ **這是美國廠牌的 release sheet，barcode 也是美國形；MB 把唯一的 release 國別標成 CA（加拿大）應是取了加拿大壓片，第 817 條的反向形。實際首發地是美國（第 975 條）。**⚠ **Discogs 自己的 country 欄寫「USA & Canada」、盤面 sleeve 印 Printed in Canada 而 disc label 印 Printed in U.S.A.——兩國同批壓，不是加拿大首發。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-11-11.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 11 月 18 日 p29 的爵士專欄**：「…They are the following **Moffetts: Charles Jr., Codaryl, Mondre, Charisse, and Charnett. All are featured on bassist Charnett's new Blue Note release, \"Beauty Within.\"**」——**同期紙本直接點名同族五人**。⚠ **Billboard 把妹妹的名字拼成 `Charisse`，jazzdisco 作 `Charisa`**；⚠ **Billboard 那一句沒有算進 jazzdisco 另外登在〈My Little One〉上打鼓的父親 `Charles Moffett Sr.`——連父親在內其實是六個 Moffett。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-11-18.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 12 月 16 日 p102 的 RECOMMENDED 欄**：「JAZZ **CHARNETT MOFFETT** Beauty Within PRODUCER: **Charnett Moffett** Blue Note **91650** ／ **It's hard to fault this splendid young bassist's technique on his sophomore stanza—Moffett shows an exceptional command of both the standup and electric four-string.** But, despite assists from such notables as **Stanley Jordan** and[ …]」——**製作人是他自己，紙本與 Discogs 一致；也確認這是他的第二張領班盤。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-12-16.pdf"
+   },
+   {
+    "f": "**Billboard「TOP CONTEMPORARY JAZZ ALBUMS」榜連掛約十五週**：1990-01-20 p51 **以 NEW 進榜第 24 名**、02-03 p37 第 22 名（第 3 週）、02-17 p31 第 18 名（5）、03-03 p72 第 14 名（7）、03-17 p188 第 11 名（9）、03-31 p67 第 10 名（11）、**04-14 p82 第 8 名（13，最高名次）**。⚠ **第 879 條：本張上的是 `TOP CONTEMPORARY JAZZ ALBUMS`。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-04-14.pdf"
+   },
+   {
+    "f": "⚠ **紙本假陽性（第 968 條，本層覆核成立，而且這一則最像真的）**：Billboard **1989-07-08 p75** 的 `91650` 命中是 **Fries Home Video《Denver the Last Dinosaur》的錄影帶目錄號**——同頁還有 91660／91670／91680，並印著「**ORDER DATE: AUGUST 1／STREET DATE: AUGUST 23**」，**版面長得完全像一則廠牌發行排程**。**查本盤必須 `91650` ＋ `Blue Note` 雙條件。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-08.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1507797124**，**7 軌＝原盤軌數**，⚠ **appleYear 標 1987——早了兩年，℗ 欄才是 1989**（第 966 條已記，本層覆核成立）。CAA 在 release-group 層有圖。",
+    "src": "https://itunes.apple.com/lookup?id=1507797124&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "一張碟上同時出現六個 Moffett：父親打鼓、兩個哥哥一個吹次中音一個吹小號、弟弟打另一場的鼓、妹妹唱同名曲，領班自己彈貝斯",
+   "四場錄在三個不同的紐約錄音室，每一場的編制都不一樣——最小的一場只有兩個人，最大的一場也才四個"
+  ],
+  "sound": "7 軌，二十歲出頭的貝斯手自製自演的第二張領班盤。他同時彈低音提琴與電貝斯、也碰鍵盤、打擊與鼓機，合成器的質地在全盤很重。四場編制各不相同：主場是 Kenny Drew Jr. 的鋼琴與合成器加 Codaryl Moffett 的鼓（Kenny Garrett 的中音薩克斯風在兩軌上），〈Angela〉是與 Stanley Jordan 的電吉他、Bernard Wright 的合成器三人成軌，〈My Little One〉有 Mondre Moffett 的小號與父親 Charles Moffett Sr. 的鼓，同名曲是與 Kenny Drew Jr. 的二重奏加妹妹的人聲。〈Eastwood〉九分鐘最長。",
+  "keyTracks": [
+   "Love Never Fails",
+   "Beauty Within",
+   "Angela"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1989 成立，首發地美國本層再確認一次（第 975 條）。** MB frd 1989＝jazzdisco 1989＝Discogs 原壓 3948498 與 master 797378 皆 1989（盤面 ℗© 1989 Capitol Records）。同期紙本三則：**Billboard 1989-11-11 p73 新片欄（美國廠牌 release sheet，B1-91650／B4-91650）**、**Billboard 1989-11-18 p29 爵士專欄**、**Billboard 1989-12-16 p102 RECOMMENDED 欄**（製作人 Charnett Moffett）。**榜位 Billboard TOP CONTEMPORARY JAZZ ALBUMS 1990-01-20 以 NEW 進榜、連掛至 1990-04-14 共十五週、最高第 8 名。新片欄 11 月 → 評介 12 月 → 榜位隔年 1 月，同一季內，依第 976 條取新片欄。上市取 1989 年 11 月。**⚠ **首發地**：MB 把唯一的 release 國別標成 **CA**，但 **Billboard 1989-11-11 是美國廠牌的 release sheet、barcode 是美國形、Discogs 的 country 欄寫「USA & Canada」、盤面 disc label 印 Printed in U.S.A.**——**首發地是美國，MB 取的是加拿大壓片**（第 817 條的反向形）。⚠ **錄音期 jazzdisco 只記「late 1988」，沒有確切日期，正文不得寫死。**⚠ **Apple 的 appleYear 1987 早兩年，不可用。**⚠ **第 968 條的 `91650` 假陽性（Fries Home Video 的錄影帶目錄號，還帶著 ORDER DATE／STREET DATE，長得像廠牌排程）本層覆核成立——這是本組最危險的一則。**",
+  "notes": "**覆核策展層：rgMbid 140cb899／唯一 release 297e6c36／catno B1-91650＋B4-91650（卡帶）＋CDP 7 91650 2（CD）／7 軌／掛名 `Charnett Moffett`／年份 1989／首發地 US 全部成立，本張未擋下。**｜⚠ **軌名兩處三邊不一致，卡上照 MB**：**A4 `My Little One`（MB／jazzdisco）vs `The Little One`（Discogs）**；**B3 `Eastwood`（MB／jazzdisco）vs `Eastwoods`（Discogs）**。**兩個 Discogs 形進 queryAlias。**｜⚠ **四場編制全不同、三個錄音室，正文不得寫成同一個團**：**Kenny Garrett 的中音薩克斯風只在〈Dancing With Love〉與〈Eastwood〉**；**Stanley Jordan 的電吉他只在〈Angela〉**；**Mondre Moffett 的小號與 Charles Moffett Sr. 的鼓只在〈My Little One〉**；**Charisa／Charisse Moffett 的人聲只在同名曲**；**Charles Moffett Jr. 的次中音薩克斯風只在〈Love Never Fails〉**。｜⚠ **Moffett 家族是六個實體，正文點名要準**（第 964 條列了五個，本層補上父親）：`Charnett`（領班）、父 **`Charles Moffett Sr.`（〈My Little One〉打鼓）**、兄 `Charles Moffett Jr.`（次中音）、`Mondre Moffett`（小號）、`Codaryl \"Cody\" Moffett`（鼓）、妹 **`Charisa`（jazzdisco）／`Charisse`（Billboard 1989-11-18）——兩種拼法並存，正文不得寫死**。**Billboard 那一則只點了五個，沒算父親。**｜**製作人是 Charnett Moffett 自己**（Discogs credits ＋ Billboard 評介兩邊一致），**執行製作 Bruce Lundvall**（Blue Note 總裁本人掛名，本組唯一一張）。**母帶 Greg Calbi、錄音與混音 Brian Lee／Mike Krowiak／Yoshiaki Masuo。封面設計者查無。**｜**跨卡**（第 973 條）：**Charnett Moffett 在本組另以側人身分出現兩次**——**《Angel Street》（1988-04 Clinton，Tony Williams 五重奏的貝斯）** 與 **《The Nearness of You》（1988 春 Van Gelder，Dianne Reeves 的貝斯之一，本層新發現）**。**三卡 risk 應互指，三張的場次、編制完全不同，正文不得互抄。**｜**跨卡之二**：**Kenny Garrett 在本組另出現在《The Eternal Triangle》**（1987-06 Van Gelder，吹中音與長笛）——**不同場、不同人**（第 973 條已記）。｜**撞陳列（第 967 條已查，本層覆核成立）**：池中 `Charnett Moffett` 零列，**無撞卡**。｜非選輯：四場錄音室新錄音，七軌全是領班的作品。"
+ },
+ {
+  "key": "desc2:Don Pullen|New Beginnings",
+  "artist": "Don Pullen",
+  "album": "New Beginnings",
+  "facts": [
+   {
+    "f": "release-group 921205be 的欄位：title「New Beginnings」、artist-credit「Don Pullen」（**Person 7a31f6c3——個人字串，不是本組《Song Everlasting》那個群組**）、first-release-date **1989**、primary-type Album、secondary-types 空。轄下兩筆：**8be92009 1989 US CD、Blue Note CDP 7 91785 2、barcode 077779178520、7 軌**；**c26eee05 2025-04-18 XW 12 吋黑膠、Blue Note 6514972（另掛 B1-91785）、barcode 602465149722、6 軌**。⚠ **MB 沒有建 1989 年的黑膠 B1-91785。** CD 七軌：Jana's Delight 5:59／Once Upon a Time 5:52／Warriors 6:50／New Beginnings 6:23／At the Cafe Centrale 6:56／Reap the Whirlwind 7:04／**Silence = Death 10:20**。",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=921205be-a9f1-4c6f-a143-a615e29ad1fd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "jazzdisco 的 Blue Note 1987–1988 頁：「**Don Pullen Trio**：Don Pullen（鋼琴）、**Gary Peacock（貝斯）、Tony Williams（鼓）**。**A&R Studios, NYC，1988 年 12 月 16 日**」，七軌的去向欄分兩種：(tk.2)Once Upon A Time／(tk.3)New Beginnings／Warriors／(tk.4)Jana's Delight／(tk.2)At The Cafe Centrale／(tk.3)Reap The Whirlwind **六軌掛 `Blue Note B1-91785`**；**(tk.3)Silence = Death 只掛 `Blue Note CDP 7 91785 2; Mosaic MS-013`**。年份欄記 1989。**——1989 年的黑膠就是 6 軌，CD 才是 7 軌。**",
+    "src": "https://www.jazzdisco.org/blue-note-records/discography-1987-1988/"
+   },
+   {
+    "f": "**Discogs 原壓 2164709（1989 US LP，Blue Note B1-91785，master 582890）確實只有六軌**：A1 Jana's Delight／A2 Once Upon A Time／A3 Warriors／B1 New Beginnings／B2 At The Cafe Centrale／B3 Reap The Whirlwind。credits：Don Pullen（鋼琴、作曲、內頁文字）、**Gary Peacock 貝斯、`Anthony Williams` 鼓**；**製作人 Michael Cuscuna**、執行製作 JoAnne Jiminez、錄音 David Baker、**內頁文字 Stanley Crouch**、美術指導與攝影 Carol Friedman、設計 Carlos Cordova。**2025 年的再發黑膠 33766311（Blue Note 6514972）也是六軌。**",
+    "src": "https://api.discogs.com/releases/2164709"
+   },
+   {
+    "f": "維基的專頁：錄音 **December 16, 1988**、發行 **1989**、**製作人 Michael Cuscuna**；編制 Don Pullen 鋼琴、Gary Peacock 貝斯、Tony Williams 鼓。**曲目七首，第 7 軌〈Silence = Death〉10:20 標明「Bonus track on CD」。**",
+    "src": "https://en.wikipedia.org/wiki/New_Beginnings_(Don_Pullen_album)"
+   },
+   {
+    "f": "**Billboard 1989 年 6 月 3 日 p126 評介欄**：「**DON PULLEN** New Beginnings PRODUCER: **Michael Cuscuna** Blue Note **91785** ／ **Pianist Pullen, long partnered with wind player George Adams in Charles Mingus' band and their own combo, steps out on his own with a trio session featuring Gary Peacock and Tony Williams**…」——**同期紙本把本盤與本組《Song Everlasting》的關係說清楚了：那是四重奏，這是他單飛的三重奏。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-06-03.pdf"
+   },
+   {
+    "f": "**Cash Box 1989 年 6 月 10 日 p22 評介欄**：「**DON PULLEN: New Beginnings (Blue Note 91785)** ／ **Invigorating pianist's muscular trio date (with Tony Williams and Gary Peacock) spins into the stratosphere without losing its strong, soulful structure.**」——**兩刊獨立、相隔一週。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1989/CB-1989-06-10.pdf"
+   },
+   {
+    "f": "**Blue Note 的年度藝人整版廣告，Billboard 1989 年 7 月 1 日 p54**，逐盤列出「LOU RAWLS At Last／TONY WILLIAMS Angel Street／ELIANE ELIAS So Far So Close／**DON PULLEN New Beginnings**／GIL MELLE Mindscape／FREDDIE HUBBARD Times Are Changing／McCOY TYNER Revelations…」；**同一期 p60 的專文**另寫：「…the label's involvement with **Japanese joint venture Toshiba's Something Else Records** has resulted in the U.S. release of superb new records from **Don Pullen, George Adams, Superblue, and the Ralph Peterson Quintet.** \\\"It's a very nice way of supplementing our recording budget, actually,\\\" says **Bruce Lundvall**…」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-01.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 12 月 9 日 p140 的 Jeff Levenson 爵士專欄**：「**\\\"NEW BEGINNINGS,\\\" DON PULLEN'S latest issue for Blue Note, is an aptly titled recording. It is a trio date that finds the pianist reaffirming his authoritative voice following the dissolution of the George Adams-Don Pullen Quartet.**」；**Cash Box 1989-12-30 p7 的樂評年終名單**亦列「**Don Pullen: New Beginnings; Blue Note**」。⚠ **本層以 `91785`＋`Blue Note` 掃過 1987–1990 兩刊：沒有任何榜位**（兩張爵士榜都查過，第 879 條），**正文不得寫榜績**；⚠ **`91785` 的假陽性是 James Reyne《Any Day Above Ground》Charisma 91785（Billboard 1991-11-09 p100）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-12-09.pdf"
+   },
+   {
+    "f": "店面觀察（第 254 條）：Apple us 條目 **1453774752**，**7 軌＝CD 形、不是 1989 年黑膠的 6 軌**，⚠ **appleYear 標 1988——那接近錄音日 1988-12-16 但不等於它**（第 484 條的變體，第 966 條已記）。CAA 在 release-group 層有圖。",
+    "src": "https://itunes.apple.com/lookup?id=1453774752&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "George Adams 走了以後 Pullen 的第一張碟，找來的是 Gary Peacock 與 Tony Williams——一天之內在 A&R Studios 錄完七首",
+   "壓軸那首叫〈Silence = Death〉，十分二十秒，是全盤最長的一軌；也正因為太長，1989 年的黑膠放不下它"
+  ],
+  "sound": "1989 年黑膠 6 軌、CD 7 軌，鋼琴三重奏，七首全是 Pullen 自己寫的。Gary Peacock 的貝斯與 Tony Williams 的鼓給他的是一個彈性極大的底盤，Pullen 招牌的手背刷鍵滾奏因此可以整段整段地衝出去又收回來。六首正規曲目都在六到七分鐘，結構紮實；CD 才有的〈Silence = Death〉十分二十秒，是全盤最長也最放得開的一段。一天之內在 A&R Studios 錄完。",
+  "keyTracks": [
+   "Jana's Delight",
+   "New Beginnings",
+   "Reap the Whirlwind"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1989 成立，兩刊評介獨立、廠牌廣告與年終名單各一。** MB frd 1989＝jazzdisco 1989＝Discogs 原壓 2164709 與 master 582890 皆 1989＝維基 released 1989。同期紙本四層：**Billboard 1989-06-03 p126 評介**（製作人 Michael Cuscuna）、**Cash Box 1989-06-10 p22 評介**、**Billboard 1989-07-01 p54 的 Blue Note 年度藝人整版廣告**（第 612 條）、**Billboard 1989-12-09 p140 的 Jeff Levenson 專欄** 與 **Cash Box 1989-12-30 p7 的樂評年終名單**。**上市取 1989 年 5 月**（6 月初的評介回推）。⚠ **本盤沒有任何榜位**——本層以 `91785`＋`Blue Note` 掃過 1987–1990 兩刊全段（兩張爵士榜都查過），零命中，**正文不得寫榜績**。⚠ **錄音 1988-12-16、發行 1989，跨年但相差不到半年。**⚠ **Apple 的 appleYear 1988 接近錄音日但不等於它，不可當年份來源。**⚠ **假陽性 `91785`＝James Reyne《Any Day Above Ground》Charisma 91785（1991）。**",
+  "notes": "**覆核策展層：rgMbid 921205be／catno B1-91785＋CDP 7 91785 2／掛名 `Don Pullen`（池中 1 列沿用）／年份 1989 全部成立，本張未擋下。**｜⚠ **軌數兩形（第 972 條已列，本層把它修正得更準）**：**第 972 條寫成「2025 黑膠 6 軌／CD 7 軌」，容易被讀成只有再發黑膠少一軌——實際上 1989 年的原盤黑膠 B1-91785 本來就是 6 軌**（jazzdisco 的去向欄把〈Silence = Death〉只掛 CD 號；**Discogs 原壓 2164709 逐軌列出也只有六軌**；維基標它是 CD bonus）。**2025 年的再發黑膠 6514972 只是照原盤軌目重做。正文與 `keyTracks` 以 6 軌原盤為準；提〈Silence = Death〉必須註明是 CD 才有的一軌。**｜**製作人 Michael Cuscuna**（Discogs／維基／Billboard 評介三邊一致），**執行製作 JoAnne Jiminez**（⚠ 本組《Song Everlasting》的 Discogs 把同一人拼成 `JoAnne Jimenez`，兩種拼法），**錄音 David Baker、內頁文字 Stanley Crouch 與 Pullen 本人、美術指導與攝影 Carol Friedman、設計 Carlos Cordova。**｜⚠ **掛名（第 964／973 條）**：**本卡用個人字串 `Don Pullen`（MB 7a31f6c3），與本組《Song Everlasting》的群組字串 `The Don Pullen-George Adams Quartet`（7ac6c37d）是兩個不同實體，絕不得互相收攏。**⚠ **Discogs 把鼓手登成 `Anthony Williams`**（本名形），**卡上與正文一律用 `Tony Williams`。**｜**跨卡**（第 973 條）：**Tony Williams 在本組另有領班盤《Angel Street》（1988-04-04～06 Clinton Recording Studios，五重奏）**——**與本盤 1988-12-16 A&R Studios 的三重奏是不同場、不同編制，兩卡 risk 已互指，正文不得互抄。**｜**跨卡之二**：**Don Pullen 在本組的另一張《Song Everlasting》是 1987-04-21 RCA Studio C 的四重奏（Adams／Cameron Brown／Dannie Richmond）**——**與本盤三重奏一個人都不重疊（除 Pullen 本人）**；**Billboard 1989-06-03 的評介本身就把兩者的關係寫清楚了（四重奏解散後他單飛），正文可以引用這條線，但不得互抄班底。**｜⚠ **Mosaic MS-013《Don Pullen - Mosaic Select》(2005) 同時收了本盤的〈Silence = Death〉與《Song Everlasting》的〈Another Reason to Celebrate〉——那是後出的選輯，不是本盤內容。**｜⚠ **廠牌背景（Billboard 1989-07-01 p60）**：Blue Note 這一批（**Don Pullen、George Adams、Superblue、Ralph Peterson Quintet**）是與**東芝的 Something Else Records 合資**的產物，Lundvall 自己說那是「補貼錄音預算的好辦法」——**這條同時罩到本組的《Triangular》，兩卡可互指。**｜**撞陳列（第 967 條已查，本層覆核成立）**：池中 `Don Pullen` 1 列（《The Sixth Sense》1985），**逐軌比對七軌全新、零重疊。**｜非選輯：一天一場的錄音室新錄音，七軌全是領班的作品。"
+ },
+ {
+  "key": "desc2:Ralph Peterson Trio featuring Geri Allen|Triangular",
+  "artist": "Ralph Peterson Trio featuring Geri Allen",
+  "album": "Triangular",
+  "facts": [
+   {
+    "f": "release-group cc91f2ec 的欄位：title「Triangular」、**artist-credit 是 `Ralph Peterson Trio`（c50c8d6e，⚠ type 是 `null`）＋ `featuring` ＋ `Geri Allen`（4d688d75 Person）**、first-release-date **1989**、primary-type Album、secondary-types 空。**轄下只有一筆 release**：b79d9202，**1989 US Official 12 吋黑膠、Blue Note B1-92750、8 軌**（無 barcode）：A1 Bemsha Swing 5:05／A2 Triangular 7:36／A3 Water Colors 5:15／A4 Princess 6:15／B1 Just You, Just Me 5:57／B2 Move 4:36／B3 Splash 6:41／B4 Smoke Rings 5:34。⚠ **MB 沒有建 CD CDP 7 92750 2。**",
+    "src": "https://musicbrainz.org/ws/2/release?release-group=cc91f2ec-d4fc-4bf4-8733-04eb834bc9a9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+   },
+   {
+    "f": "⚠ **jazzdisco 的 Blue Note 1987–1988 與 1989–1990 兩頁都沒有本盤的條目**（本層逐頁以 `Triangular`、`92750`、`Peterson` 三個詞查過，零命中）——**錄音資料只能靠 Discogs 與同期紙本。** Discogs 原壓 2681940（1989 US LP，Blue Note B1-92750，master 493659）八軌＝MB 軌目，**notes 是本盤錄音資料的唯一來源**：「**Recorded in 1988 at A&R Recording, NYC, Aug 21 and 22, 1988 (except B1, April 20 1988)**」。credits：**Ralph Peterson 鼓、Geri Allen 鋼琴、Essiet Essiet 與 Phil Bowler 兩位貝斯手**。⚠ **Discogs 的掛名寫全稱 `Ralph Peterson Trio featuring Geri Allen`，另一筆 CD 條目縮成 `Ralph Peterson Trio`**（第 964 條已記）。",
+    "src": "https://api.discogs.com/releases/2681940"
+   },
+   {
+    "f": "**Blue Note 的年度藝人整版廣告，Billboard 1989 年 7 月 1 日 p54**，藝人名單裡有 **Ralph Peterson**，版面末尾預告「**Look for these new Blue Note releases coming in August. Ralph Peterson Trio, Andrew Hill, Rick Margitza**」——**廠牌自己排的檔期是 1989 年 8 月（第 612 條），這是本盤年份最上層的一條。**同一版逐盤列出的還有本組的 Angel Street、New Beginnings、Times Are Changing、Revelations。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-01.pdf"
+   },
+   {
+    "f": "**Cash Box 的爵士榜，本盤 1989 年秋進榜、連掛到 1990 年春**：1989-11-04 p10 第 22 名（**欄位記「29 3」＝前一週第 29 名、在榜第 3 週 → 回推首次進榜約 1989 年 10 月初**）、12-02 p12 第 16 名（7）、**12-16 p12 第 18 名（9）**、12-30 p19 第 21 名（11）、1990-01-27 p11 第 22 名（14）、02-10 p12 第 24 名（16）、02-24 p12 第 24 名（18）、03-10 p25 第 25 名（20）、03-24 p11 第 31 名（22）。**最高第 16 名（1989-12-02）、在榜二十二週以上。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1989/CB-1989-12-02.pdf"
+   },
+   {
+    "f": "**Cash Box 1989 年 12 月 16 日 p12 的 JAZZ PICKS**：「**RALPH PETERSON: Triangular (Blue Note 92750)** ／ **This young drummer, whose quintet album, V, is one of the year's best, turns in another gem: a tough, loose, forward-looking inside/outside trio date with pianist Geri Allen (some of her strongest work on record) and bassist Ess**[iet Essiet]」——**同期紙本點名 Geri Allen 與貝斯手，也把本盤與他同年的五重奏盤《V》分開。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1989/CB-1989-12-16.pdf"
+   },
+   {
+    "f": "**Billboard 1990 年 1 月 13 日 p88 評介欄**：「**RALPH PETERSON TRIO** Triangular PRODUCER: **Kazunori Sugiyama, Hitoshi Namekata** Blue Note **92750** ／ **Innovative percussionist further establishes himself as one of the most exciting jazzmen of our day, accompanied by the formidable piano stylings of Ge**[ri Allen]. Peterson's drumming—at times explosive, at others, gently evocative…」——⚠ **這一則晚於 Cash Box 的進榜（1989-10）約三個月，也晚於廠牌檔期（1989-08）五個月；但它是製作人的唯一來源：Kazunori Sugiyama 與 Hitoshi Namekata（東芝 Something Else 那條線）。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-01-13.pdf"
+   },
+   {
+    "f": "**Billboard 1989 年 7 月 1 日 p60 的專文**解釋了製作人是日本人的原因：「…the label's involvement with **Japanese joint venture Toshiba's Something Else Records** has resulted in the U.S. release of superb new records from Don Pullen, George Adams, Superblue, and **the Ralph Peterson Quintet.** \\\"It's a very nice way of supplementing our recording budget, actually,\\\" says **Bruce Lundvall**, GM of Capitol Records East Coast and president of Blue Note.」；**Billboard 1989-07-08 p94 另有 Peterson 五重奏盤《V》的評介**（「RALPH PETERSON QUINTET V PRODUCERS: **Kazunori Sugiyama, Hitoshi Namekata** Blue Note **91730**」）——**同一組製作人、同一年、不同碟。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-08.pdf"
+   },
+   {
+    "f": "⚠ **紙本假陽性（第 968 條，本層覆核成立）**：`92750` 在 Cash Box **1988-07-16 p100** 的命中是「1518 C. East Edinger Ave. **Santa Ana 92750**」——**加州 Santa Ana 的郵遞區號**，出現在投幣式遊樂機材商名錄裡。**另有片語誤中**：`triangular` 在兩刊裡多次指舞台燈架、NAIRD 獎座造型等，**與本盤無關**。**查本盤必須 `92750` ＋ `Blue Note` 雙條件。**",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1988/CB-1988-07-16.pdf"
+   },
+   {
+    "f": "**店面觀察（第 254 條，三種查法都跑了，結論是查無）**：Apple `search` 用 `Ralph Peterson Triangular`（us）回兩筆——**`1094704352`《Triangular III (Live)》(2016，自主發行，10 軌) 與 `1833180684`《Triangular 2》(2000，Silva Screen，8 軌)**，**兩張都是後續作品，逐軌核不過**；`Ralph Peterson Trio Geri Allen`（jp）回 0 筆。⚠ **`batch-progress/c149/apple-candidates.md` 記「目錄裡找不到」，本層覆核成立。上架比對必須連 catno 92750 與年份 1989 一起帶（第 528／707／709 條）。試聽查無。** CAA 在 release-group 層有圖。",
+    "src": "https://itunes.apple.com/lookup?id=1094704352&country=us"
+   }
+  ],
+  "hookCandidates": [
+   "三個人的碟卻用了兩位貝斯手：八軌裡有七軌是 1988 年八月那兩天錄的，只有〈Just You, Just Me〉來自四月的另一場",
+   "掛名把鋼琴手的名字寫進了盤名旁邊——Cash Box 的評介說 Geri Allen 在這張碟上是「她留在唱片上最強的演奏之一」"
+  ],
+  "sound": "8 軌鋼琴三重奏，但主角是鼓。Peterson 的打法在爆裂與細語之間來回，Geri Allen 的鋼琴既向內也向外，兩位貝斯手分場輪替。曲目一半是標準曲與經典（Monk 的〈Bemsha Swing〉、〈Just You, Just Me〉、Denzil Best 的〈Move〉、〈Smoke Rings〉），一半是團的新曲（同名曲七分半最長，〈Water Colors〉〈Princess〉〈Splash〉）。八軌都在四分半到七分半之間，密度高、轉折多。",
+  "keyTracks": [
+   "Bemsha Swing",
+   "Triangular",
+   "Splash"
+  ],
+  "status": "full",
+  "yearVerified": "**卡單 1989 成立——但本張的證據形狀特別，必須寫清楚：廠牌檔期與榜位都在 1989，Billboard 的評介卻晚到 1990-01。** 四邊資料庫同向：MB frd 1989＝Discogs 原壓 2681940 與 master 493659 皆 1989。**1989 由兩層硬證據支撐**：**（一）Billboard 1989-07-01 p54 的 Blue Note 年度整版廣告末尾預告「Look for these new Blue Note releases coming in August. **Ralph Peterson Trio**…」——廠牌自己排的 1989 年 8 月檔期（第 612 條）**；**（二）Cash Box 的爵士榜 1989-11-04 已在第 22 名、在榜第 3 週，回推首次進榜約 1989 年 10 月初，之後連掛到 1990-03-24 共二十二週以上、最高第 16 名（1989-12-02）**；**（三）Cash Box 1989-12-16 p12 的 JAZZ PICKS 評介。**⚠ **Billboard 1990-01-13 p88 的評介晚於檔期五個月、晚於進榜三個月**——**依第 976 條的判準，新片欄／廣告與評介相距超過兩季時以「評介＋榜位＋廠牌廣告」的那一年為準；本張的廠牌廣告（1989-08）與榜位（1989-10 起）都在 1989，只有 Billboard 的評介落在 1990，而 Cash Box 的評介（1989-12）在 1989。取 1989。上市取 1989 年 8 至 9 月。**⚠ **本盤沒有 Billboard 的榜位**（兩張爵士榜都查過，第 879 條）——**榜位只有 Cash Box 那一段，正文若寫榜績必須註明是 Cash Box 的爵士榜。**⚠ **錄音 1988-04-20 與 1988-08-21／22，發行 1989。**⚠ **第 968 條的 `92750` 假陽性（Santa Ana 郵遞區號）本層覆核成立。**",
+  "notes": "**覆核策展層：rgMbid cc91f2ec／唯一 release b79d9202／catno B1-92750／8 軌／掛名 `Ralph Peterson Trio featuring Geri Allen`／年份 1989 全部成立，本張未擋下。**｜⚠ **jazzdisco 完全沒有本盤的條目**（1987–1988 與 1989–1990 兩頁都查過）——**這是本組唯一一張沒有 jazzdisco 資料的碟。錄音日期、地點與兩位貝斯手全部只有 Discogs 原壓的 notes 與 credits 一個來源**，**正文引用時要留餘地。**｜⚠ **本層新查到的錄音資料（策展層沒有）**：**A&R Recording, NYC，1988 年 8 月 21 日與 22 日**，**但 B1〈Just You, Just Me〉錄於 1988 年 4 月 20 日**；**貝斯手兩位：Essiet Essiet 與 Phil Bowler**（Cash Box 的評介只點名了 Essiet）。**正文不得把兩位貝斯手寫成同一個人，也不得說八軌是同一場錄的。**｜⚠ **掛名（第 964 條，本層覆核）**：**`Ralph Peterson Trio` 的 MB type 是 `null`**；池中 `Ralph Peterson` 與 `Geri Allen` 皆零列、無先例，**不收攏成 `Ralph Peterson`**。**MB RG 層的全稱是卡上值；release 層的斜線形 `Ralph Peterson Trio/Geri Allen` 與 Discogs CD 條目的縮寫形 `Ralph Peterson Trio`、Billboard 評介的 `RALPH PETERSON TRIO`、Cash Box 的 `RALPH PETERSON` 都只進 queryAlias。**｜**製作人 Kazunori Sugiyama 與 Hitoshi Namekata**——**唯一來源是 Billboard 1990-01-13 的評介欄**（Discogs 的 credits 沒有製作人欄，jazzdisco 無條目）。⚠ **這兩位是東芝 Something Else Records 那條合資線的製作人**：**Billboard 1989-07-01 p60 的專文明說 Blue Note 與東芝合資，因此在美國發行了 Don Pullen、George Adams、Superblue 與 Ralph Peterson 的新碟**，**Lundvall 自己說那是「補貼錄音預算的好辦法」**。**這條背景同時罩到本組的《New Beginnings》與《Song Everlasting》，三卡可互指。封面設計者查無。**｜⚠ **不要與 Peterson 同年的五重奏盤《V》(Blue Note 91730) 混寫**：**《V》是五重奏、製作人相同、Billboard 1989-07-08 p94 有評介、Cash Box 與 Billboard 的年終名單都列它**——**兩張是不同的碟，正文不得互抄。**｜**跨卡（本層新發現，第 973 條的表上沒有）**：**鋼琴手 Geri Allen 也在本組 James Newton《Romance and Revolution》（1986-08 RCA Studio C）彈鋼琴**——**兩張的場次、年份、編制完全不同，兩卡 risk 應互指，正文不得互抄。**｜**撞陳列（第 967 條已查，本層覆核成立）**：池中 `Ralph Peterson` 與 `Geri Allen` 皆零列，**無撞卡**；⚠ **〈Bemsha Swing〉〈Just You, Just Me〉〈Move〉〈Smoke Rings〉是常見曲目，池中多張碟上有同名軌，但都不是這個 1988 年 A&R 的錄音**——**正文不得把本盤這幾版寫成任何既有卡上的版本。**｜**試聽查無**：Apple 兩種查法跑完，回的是 **《Triangular 2》(2000) 與《Triangular III (Live)》(2016) 兩張後續作品，逐軌核不過，不得採用**。**走固定無來源狀態。**｜非選輯：兩場錄音室新錄音（一場主、一場補一軌）。"
+ }
+]
