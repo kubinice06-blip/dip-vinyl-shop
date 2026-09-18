@@ -554,3 +554,29 @@ c-126～c-147 那 798 張卡因此卡在線上更新不了。cashbox 那份 24.4
 **目前 repo 內最大的單檔是 15.2 MiB**（`billboard-bn-1977-1979-ocr.txt.gz`），離上限還有餘裕。
 
 - 2026-09-18 收尾：`billboard-bn-1985h2-1987-ocr.txt`（10.4 MiB）已壓成 `.txt.gz`（1.6 MiB），本檔內所有引用一併改名。讀法 `zgrep`／`gzip -dc … | grep`。
+
+## 2026-09-18 追加（c-150 b 掃的，**命中頁不是全文**，且**直接寫成 `.txt.gz`**）
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1991-1992-ocr.txt.gz`（9.1 MiB） | Billboard | **1991-01-05 → 1992-12-26，102 期的命中頁（2,243 頁）** | c-150 b 掃；缺 **BB-1991-12-28**（年終合刊週）與 **BB-1992-08-08**（檔案館該期沒掃到，三種檔名皆 404） |
+| `cashbox-bn-1991-1992-ocr.txt.gz`（2.1 MiB） | **Cash Box** | **1991-01-19 → 1992-12-26，100 期的命中頁（651 頁）** | c-150 b 掃；缺 **CB-1991-01-05／01-12／1992-01-04／01-11**，四則全是年終合刊週 |
+
+**格式**：每期以 `######## BB-YYYY-MM-DD pages=N src=<url>`／`######## CB-…` 分隔，頁內以 `===== PAGE n ===== hits=[…]` 分隔
+（`hits` 是該頁命中的關鍵詞清單，grep 命中詞即可定位），換行已摺成空白（第 636 條），末尾一行 `######## MISSING <日期清單>`。
+**關鍵字集**＝c-150 b 組的 23 個目錄號 ＋ 57 個盤名／人名／廠牌詞（含 `blue note`／`capitol jazz`／`jazz albums`）——**查別的碟要重抓或放寬關鍵字。**
+
+**讀法**：`gzip -dc batch-progress/enum/billboard-bn-1991-1992-ocr.txt.gz | grep -n "…"`，或 `zgrep`／`zless`。
+**依 2026-09-18 定下的規則，超過 8 MiB 的新 OCR 直接寫成 `.txt.gz`，沒有留過 `.txt`。**
+
+### c-150 b 的三點實測
+
+1. **檔名三形的備援在 1991–92 仍然沒用上**：Billboard 全部 `BB-YYYY-MM-DD.pdf`、Cash Box 全部 `CB-YYYY-MM-DD.pdf`，
+   `Billboard%20`／`Billboard-`／`Cash-Box-`／`CB%20` 四種備援一次都沒命中（與第 821／852 條在 1980–89 的結論一致）。
+   ⚠ **1990 年代的 Billboard 路徑是 `.../Billboard/90s/<年>/`、Cash Box 是 `.../Cash-Box/90s/<年>/`。**
+2. **缺期六則裡五則落在年終合刊週**（第 704／789／821 條的判準續成立）；**唯一的例外是 BB-1992-08-08**——**缺得規律 → 不是檔名問題。**
+3. ⚠ **第 879 條在 1991–92 全段成立**：兩刊各有 **TOP JAZZ ALBUMS** 與 **TOP CONTEMPORARY JAZZ ALBUMS** 兩張榜，
+   **同一張碟只會上其中一張**（c-150 b 實測：Ellis Marsalis Trio／Joe Lovano／Jack DeJohnette／Rick Margitza／Gonzalo Rubalcaba 上 Jazz 榜；
+   Michel Petrucciani／Eliane Elias／Everette Harp 上 Contemporary Jazz 榜）。**查不到不要只查一張榜。**
+
+**到此合計覆蓋：Billboard 1955→1992，Cash Box 1960-11→1992**（1961 與 1964–66 部分為抽查段，見上文）。
