@@ -1253,3 +1253,56 @@ Carnegie Hall performance were found in the Library of Congress**」（**判 (�
   ——**那是通路代碼，不是第 1540 條說的「國際榜當地公司欄」，不影響 (戊) 前置閘。**
 
 **到此合計覆蓋：Billboard 1955→2006 全年（2005 由 c-159 a 抓、2006 由 c-159 b 抓；2005 缺 3 期、2006 缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-160 **a 組**策展層自抓：**Billboard 2007 年全年**）
+
+**c-160 a 組 23 筆裡有 12 筆的年份落在 2007**，而 c-159 b 入庫 2006 之後的缺口正好是 2007——由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2007-ocr.txt.gz` | **1.8 MiB 壓縮 / 4.2 MiB 原文** | **2007-01-06 → 2007-12-22，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **510** | **只有 `2007-12-29`（404）——與 2003 缺 01-04、2004 缺 01-03、2005 缺 01-01／03-26／12-31、2006 缺 12-30 同形** |
+
+- **格式、目錄與檔名與前幾份完全相同**：`Billboard/00s/2007/`、`BB-YYYY-MM-DD.pdf`（週六）；
+  每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+  ⚠ **但存的是命中頁的「全文」**——任何印了 `BLUE NOTE` 的榜單或評介頁都會整頁收進去，所以查關鍵字集以外的 2007 年藝人仍有機會命中。
+- ⚠ **照第 1542 條用 `pymupdf` 抽文字層、沒有跑 OCR**（**這台機器沒有 `pdftotext`，不要白試**）；
+  **索引頁仍 403，「枚舉當年週六＋`Range: bytes=0-64` 探測」在本線是第七次生效**（1999／2001／2003／2004／2005／2006／2007）。
+  **全年 51 期下載＋抽字約四分鐘。單檔 1.8 MiB，遠低於 Cloudflare Pages 的 25 MiB 上限。**
+- **⚠ 2006 年沒有重抓**（第 1280 條）：c-159 b 已入庫 `billboard-bn-2006-ocr.txt.gz`。
+  **本棒直接 `zgrep` 既有檔，本組 11 張 2006 年的碟只有 Andrew Hill《Time Lines》有命中（街頭日＋兩期榜位＋一篇專訪），
+  其餘 10 張與 6 個目錄號片段全部 0——那是真的 0，不是關鍵字集的問題（既有檔存的是命中頁全文）。既有檔一字未動。**
+- **關鍵字集**（約 120 個）：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／`contemporary jazz`／
+  `traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`toshiba emi`／`somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／
+  `manhattan records`／`emi music canada`／**`blue note label group`／`/blg`／`emi jazz`**）
+  ＋ c-160 a 的 23 個藝人名與盤名 ＋ c-159 b 的藝人名（供交叉驗證）
+  ＋ **目錄號片段 `62711`／`63522`／`70491`／`74516`／`74625`／`82035`／`82162`／`76839`／`84420`／`69284`／`70532`／`70562`／
+  `35170`／`94943`／`503258`／`494265`／`92730`／`556112`／`91185`／`70281`／`75544`／`85190`／`85192`／`70171`／`66674`**。
+  ⚠ **查別的 2007 年碟要重抓或放寬關鍵字。**
+- ⚠ ⚠ **2007 年對本線的產出比 2006 年更差，要先講清楚**：**c-160 a 收下的 18 張只有 3 張從紙本拿到證據（2 個街頭日都出在 2006 那一格，
+  12 張 2007 年的碟只有 1 張有命中）。**`Reviews` 欄與 `Release Date:` 行每週都在（例 `BB-2007-01-13` 逐字
+  `CHARLES TOLLIVER With Love Producers: Charles Tolliver, Michael Cuscuna Blue Note Release Date: Jan. 16`），
+  **但版位被當年主推盤佔滿，歐洲分支／Connoisseur 限量線／smooth jazz／數位限定的碟一張都沒被評介到。**
+- ⚠ ⚠ **2007 年最有用的四處全部是榜單，不是評介**：
+  **`BB-2007-02-17` p42 The Billboard 200 逐字 `NORAH JONES BLUE NOTE 74516/BLG` ＋ `#1 3WKS`**（《Not Too Late》2007 全年 23 期在榜，
+  是 c-160 a 唯一的年份改判 2006→2007 的關鍵證據之一）；
+  **`BB-2007-04-28` p87／`05-12` p49／`05-26` p53／`06-09` p73／`07-21` p55／`08-04` p53／`08-18` p59 的 Top Contemporary Jazz Albums
+  逐字 `JEFF LORBER HE HAD A HAT BLUE NOTE 55611 /BLG`**（7 期）；
+  ⚠ **`BB-2007-11-24` p69 逐字 `DAVE KOZ MEMORIES OF A WINTER'S NIGHT **CAPITOL 05961**`**——**這一行證明該碟 2007 年的實體盤是 Capitol 不是 Blue Note**；
+  ⚠ **`BB-2007-09-22` p86／`10-06` p56／`10-20` p98／`11-03` p66 的 Top World Albums 逐字
+  `ANOUSHKA SHANKAR /KARSH KALE BREATHING UNDER WATER **MANHATTAN 09539 /BLG**`**——**這一行證明該碟的 imprint 是 Manhattan Records，c-160 a 據此退件。**
+- **另有 Andrew Hill 的兩處身後紀錄**：**`BB-2007-05-12` p17 的 Boosey & Hawkes 悼念廣告逐字
+  「We mourn the loss of our friend and colleague ANDREW HILL jazz pianist and composer 1931 - 2007」**、
+  **同期 p54 的訃聞逐字「Andrew Hill, 75, jazz artist, died of lung cancer April 20 at his home in Jersey City, N.J. ...
+  From the first significant album in his discography (\"Black Fire,\" 1963) to the last (\"Time Lines,\" 2006)」。**
+- ⚠ **查無也要記（2006＋2007 兩年皆 0 命中）**：`artist in residence`／`grant green`／`mozambique`／`minh doky`／`nomad diaries`／
+  `traincha`／`oosterhuis`／`paolo fresu`／`uri caine`／`truffaz`／`face a face`／`zaryan`／`picking up the pieces`／`gwyneth`／`wardrobe`／
+  `lena horne`／`seasons of a life`／`hank jones`／`dizzy's club`／`music for lovers`／`straight life`／`jimmy smith`／`alsmann`／`geheimnis`／
+  `live at birdland`／`dee barton`；
+  **`kuhn` 唯一 1 次命中是 Bill Charlap 的側寫（講 2007 年 3 月的另一檔 Birdland 駐演，不是那張 2006 年 7 月錄音的碟）**；
+  **`terrasson` 唯一 1 次命中是一篇爵士節現場評，不是《Mirror》**；
+  **`lovano` 唯一 1 次命中是 Top Jazz Albums 上的 `PAUL MOTIAN /BILL FRISELL /JOE LOVANO TIME AND TIME AGAIN ECM 008585`（別家廠牌的別張碟）**；
+  **`between me and the` 唯一 1 次命中是 Glen Hansard 的訪談句「they'll draw a line between me and the band」**（第 1250 條的盤名假陽性）。
+- ⚠ **`/BLG`（The Blue Note Label Group）在 2007 年的榜單廠牌欄已經是常態**，而且**同部門的其他 imprint 也照樣掛它**
+  （`MANHATTAN 09539 /BLG`、`NARADA JAll 37331 /BLG`）——**它是通路碼，不是 imprint，看到它不代表那張碟是 Blue Note**（c-160 rulings 第 1631／1633 條）。
+
+**到此合計覆蓋：Billboard 1955→2007 全年（2005 由 c-159 a、2006 由 c-159 b、2007 由 c-160 a 抓；2005 缺 3 期、2006 缺 1 期、2007 缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**
