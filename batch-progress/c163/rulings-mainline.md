@@ -55,3 +55,93 @@
 折鍵才抓得到。兩個鍵要一起掃，少一個就漏。
 
 ---
+
+## 第 1720 條：**`THE SPHÈRES` 判裸團名——覆核 c-163 a 第 1794-B 條上呈的規則衝突**
+
+**上呈內容**：c-163 a 策展棒依派工信明文用長形 `THE SPHÈRES feat. 山中千尋, Karen Teperberg & Dana Roth`，
+但 **② Discogs 唯一一筆零售 CD 用短形 `The Spheres`**，若套 **c-162 a 第 1746 條（四）** 會判短形；兩條規則在這張碟上打架。
+
+**主線實查四邊**：
+
+| 來源 | 逐字 |
+|---|---|
+| **MB RG `87aa55ca-0aba-4c70-8caf-96e5d56679e9`** artist-credit | **`THE SPHÈRES feat. Chihiro Yamanaka, Karen Teperberg & Dana Roth`** |
+| **Apple jp `1442540804`** `artistName` | **`THE SPHÈRES (feat. 山中千尋、カレン・デパーバーグ、ダナ・ロス)`** |
+| Discogs 11356199 | `The Spheres (4)` |
+| slice / 廠牌官網 | 同 MB／無 |
+
+**裁定：`artist` 欄取 `THE SPHÈRES`（大寫、帶 È、不含 feat. 子句）。** 已改進 `prop-a.json`，`chk-prop a` 仍標記 0。
+
+**兩條理由，正好對上第 1746 條（四）的兩條**：
+
+1. **(a) 三邊的計票是二比一，不是一比一**——**MB 與 Apple 兩邊逐字都是 `THE SPHÈRES`（全大寫、帶 È）**；
+   ⚠ ⚠ **Discogs 的 `The Spheres (4)` 不能當第三票**：尾綴 `(4)` 是 **Discogs 站內的同名消歧碼**，
+   代表那是該站的 artist-entity 內部命名，**不是盤面掛名**。**本條新立：帶 Discogs 消歧碼 `(N)` 的掛名字串一律不計入「三邊」。**
+   ⚠ 因此團名形取 `THE SPHÈRES`——**注意這與第 1746 條（二）`Gare du Nord` 那種「折鍵後同鍵、只差大小寫」的情形不同**：
+   `THE SPHÈRES` 與 `The Spheres` **差在 È／E 的碼位，折鍵後不同鍵**，屬第 1702 條（盲點七）那一類真分裂，不是排版差異。
+2. **(b) 第 307 條／第 1746 條（四）(b)**——**`山中千尋` 在 c-163 b 另有《Syncopation Hazard》《Guilty Pleasure》兩張**，
+   把 feat. 子句留在掛名裡會讓同一個主體裂成兩個字串。**與 `Willie Nelson & Wynton Marsalis featuring Norah Jones` 判裸名完全同形**，照先例走。
+
+⚠ **附帶產出（給下游探測層）**：**Apple jp `1442540804`，九軌，`releaseDate` 逐字 `2015-10-14`，與 MB `first-release-date` 逐字相同**——**本卡的串流候選**，已寫進該卡 `risk`。
+
+---
+
+## 第 1721 條：**「MB 只建數位再發 release、`frd` 被拉晚」的形狀已全庫反查——44 筆候選，零張已上架的卡受害**
+
+c-163 a 第 1785／1791 條立了偵測訊號（MB 只有一筆 `Digital Media`＋catno 空＋country `XW`），並建議對 `blue-note.json` 全檔反查。**主線照做了。**
+
+`batch-progress/enum/blue-note.json`（1,812 列）三條件全中 **44 筆**。逐筆對回批次後：
+
+- **已上架批次（c137～c154、c162）共 13 筆**。⚠ **其中唯一進了 `prop` 的是 `Charlie Parker & Dizzy Gillespie —《Diz ’n Bird at Carnegie Hall》1997`（c-153 b）**，
+  而那張**當年就已經逐條論證過**：1997 年是「第一次以單一完整音樂會的形狀發行」，`year: 1997` 是**刻意判的**，不是被數位年拉晚。
+  ⚠ 另兩筆高風險的（`Art Blakey —《Orgy In Rhythm》1997`、`Johnny Mandel & Bill Holman —《The James Dean Story》1998`）**當年就退了、沒進 prop**。
+  **結論：已上架的卡沒有一張因這個形狀而年份錯——第 1791 條是本線第一次真的中，不是補追一票舊帳。**
+- **前方未策展批次 11 筆，列為觀察名單**：`c164 (b)` 4 筆（Ai Kuwabara、Jacky Terrasson、GoGo Penguin、Rick Margitza）、
+  `c165 (a)` 1 筆（Trijntje Oosterhuis）、`c167 (a)` 2 筆＋`(b)` 2 筆（Immanuel Wilkins ×2、Minyo Crusaders、Nduduzo Makhathini）、
+  `c170 (a)` 1 筆（lophiile）、`(b)` 1 筆（Out Of/Into）。**這些批次的策展派工信要逐筆點名跑第 1791 條那套年份覆核。**
+  ⚠ 但**其中 2026 年那四筆多半是「新碟本來就先數位發行」，不是年份錯**——訊號會亮不代表要改判，逐筆看。
+- 其餘 20 筆是未切片或已在池中的列。
+
+---
+
+## 第 1722 條：**Blue Note 列舉檔的覆蓋率結算——1,812 列全部有去處，沒有漏切的缺口**
+
+第 1721 條反查時順手把 `blue-note.json` 全檔對回所有 `slice.json`，結果：
+
+| | 列數 |
+|---|---:|
+| **已進某批 slice** | **1,441**（genre 分布：`jazz` 1,365、`unknown` 76） |
+| 未切片但 `inPool: true`（池中早有卡） | **290** |
+| **未切片且不在池中** | **81** |
+| **合計** | **1,812** ✓ |
+
+**那 81 筆逐條有理由，不是漏掉的**：
+
+| 理由 | 筆數 |
+|---|---:|
+| 非爵士（MB tags 判定；Amos Lee／Ryan Adams／Keren Ann／Priscilla Ahn／The Bird and the Bee 這條 Blue Note 的非爵士線） | **42** |
+| Various Artists 疑似合輯（未標 `Compilation`） | **16** |
+| **`blue-note-unknown-genre.json` 人工判完判成非爵士或廠牌不符** | **21** |
+| `year` 為 `null` | 2 |
+
+⚠ **`unknown-genre` 那一支的帳對得起來**：該檔 **97 列**，人工判完**判成爵士的 76 列全部進了 c-168／c-169／c-170**，
+**判成非爵士或廠牌坐實不了的 21 列全部排除**（如 `Dante Fire —《Night Bass》` 註記逐字「曲風其實是爵士，但廠牌不符」、
+`Sasha Miller —《Musique De La Vie》` 逐字「疑為 lo-fi jazz，但廠牌無法坐實」）。**76 ＋ 21 ＝ 97 ✓。**
+
+**結論：c-170 跑完，Blue Note 這條線的列舉檔就消化完畢，沒有第二輪補切的必要。**
+⚠ **那 42 筆非爵士是本線的範圍邊界，不是遺漏**——若店主日後要把 Blue Note 的非爵士線也收進來，那是另開一條線的事，不是回頭補這批。
+
+---
+
+## 第 1723 條（操作面）：**紙本索引頁網址已改，舊網址回 301**
+
+c-163 a 抓 Billboard 2014–2015 時實測：**`worldradiohistory.com/Billboard-Magazine.htm` 現在回 301**，
+正確是 **`worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm`**。
+
+⚠ **2014–15 兩年的檔名是「刊期序號」制（`BB-2014-<期號>-<月>-<日>.pdf`）＋五種尾綴異形，枚舉日期 0 命中**——
+**必須先抓索引頁拿實際檔名**，不能照 2013 以前的日期枚舉法。
+
+⚠ ⚠ **這兩年的 gz 只留了命中頁、沒留 PDF，關鍵字集只有 41 個**——
+**c-162 b 那句「日後放寬關鍵字重掃 gz 即可」對 2014／2015 不成立，要重抓**。其餘年份不受影響。
+
+**Billboard 現覆蓋 1955→2015**；⚠ **c-163 b 以後的批次多半落在 2016+，紙本查不到，不要把「紙本 0」當缺失**。
