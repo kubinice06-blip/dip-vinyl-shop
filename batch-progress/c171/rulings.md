@@ -1009,3 +1009,293 @@ Immanuel Wilkins（KingMaker）在池中已有 6 張卡（c-165／c-166／c-167�
 | 3 | `Ruben Hein Featuring Ernst Glerum @ Joost Patočka《Revisited》`(2012) | Discogs 4604320（Netherlands 2012、`label` 逐字 `['EMI Music Netherlands','Blue Note']`、catno `5099 5595972 8`）；**MB `release-group?query=artist:"Ruben Hein" AND releasegroup:"Revisited"` 逐字回 `count: 0`——MB 沒建這個 RG** | **MB 查無，本線不收**（簡報：一般批查無就不收）。**記進未收清單，可進 §1 補遺批。** |
 
 ⚠ **三筆都不影響本批第 315 條結算**（12 ＝ 10 收 ＋ 2 退）。
+
+---
+---
+
+# c-171 **研究層 a 組**（10 張，1989–1998）裁定，編號 3081–3130，本檔用到 3104
+
+## 第 3081 條（**總表**）：**10 張全 `full`，120 條 `facts`（每張 12 條），6 個來源網域，推翻策展層 12 處**
+
+| 項 | 值 |
+|---|---|
+| 交件張數 | **10／10**，`status` 與 `coverage` 兩欄並存同值，全部 `full` |
+| `facts` 條數 | **每張整齊 12 條、合計 120 條**，無一張低於 8 條 |
+| `hookCandidates` | 每張 2 條，未超上限 |
+| `src` 網域 | `discogs.com` 51／`en.wikipedia.org` 41／`worldradiohistory.com` 22（Billboard 紙本）／`jazzdisco.org` 4／`diannereeves.com` 1／`bluenote.com` 1 |
+| 推翻策展層 | **12 處，分佈在 7 張卡**（明細第 3082–3097 條） |
+| `qa-batch.mjs research c171` | **a 組旗標 0**；批次層亮 1 個「key 集合與卡單不一致」——**那是 b 組未交件的管線形狀**（卡單 20 張、研究稿 10 張），不是 a 組的錯 |
+| 字元自檢 | 自寫程式掃簡體字表、假名、西里爾／天城／諺文／希臘、日文新字體、半形逗號貼中文、千分位逗號 —— **全部 0 命中** |
+
+**命中率（本組 10 張各查法實得）**：`api.discogs.com/releases/<id>` 整筆 **10／10**（絕對主力，16 筆 release 全撈）；
+**英文維基 10／10**（含它引用的 Allmusic 與《Los Angeles Daily News》樂評原句——附錄二那條「樂評改從維基引用段落取」實測有效）；
+**Billboard 紙本 OCR 8／10**（只有《Paris》與《Jazz, My Romance》沒有直接命中，《Paris》靠同藝人前作的新片列表側面補）；
+**jazzdisco 2／10**（但那 2 張是決定性的，見第 3099 條）；**藝人官網 2／10**（`diannereeves.com` 可用、`brianblade.com` 的 Discography 頁是 JS 渲染抓不到內容）；
+**`bluenote.com` 1／10**（只有 Brian Blade 有專頁——**再次印證附錄二「分界是碟的出身地」**：這 10 張裡九張是英國支線或東芝 EMI 企劃，美國本部只有 Blade 那張）。
+
+---
+
+## 第 3082 條（**推翻策展層，第 1 處**）：**Tommy Smith 的 Blue Note 盤是四張，不是三張——而且策展層自己的兩張卡互相牴觸**
+
+`prop-a.json` 第 0 筆《Step By Step》的 `risk` 逐字：「**本張是他三張 Blue Note 盤裡最早的一張，收進來三張才連號**」。
+但同一份 `prop-a.json` 第 1 筆《Paris》的 `why` 開頭逐字：「**Tommy Smith 第四張 Blue Note 盤**」。
+
+**英文維基逐字**：`Three more albums followed for Blue Note: Peeping Tom (1990), Standards (1991), and Paris (1992).`
+→ **共四張**：《Step By Step》(1989)／《Peeping Tom》(1990)／《Standards》(1991)／《Paris》(1992)。
+**本批 a 組同時收了頭尾兩張**，池中另有 c-149《Peeping Tom》與 c-150《Standards》——**四張到齊，不是三張。**
+**裁定**：研究稿照四張寫；`prop-a.json` 第 0 筆那句留給主線自行更正。判準第 2 條（可逆、改的是敘述欄）。
+
+## 第 3083 條（**推翻策展層，第 2 處**）：**「二十一歲」只在錄音那一刻成立，發行時英文維基寫的是二十二歲**
+
+`why` 逐字「蘇格蘭次中音薩克斯風手 Tommy Smith **二十一歲時**的 Blue Note 首張領班盤」。
+Smith 生於 **1967-04-27**；錄音 1988-09-07／09 時確為二十一歲，但英文維基逐字寫 `In 1989, when he was twenty-two, Smith signed with Blue Note, which released his album Step by Step`。
+**裁定**：`facts` 只寫出生日期與錄音日期，不寫發行時的歲數，讓下游自己算。
+⚠ **附帶一條敘述紀律**：`why` 的「首張領班盤」四字不可掉字——他 1983 年十六歲時就有《Giant Strides》，本張是**Blue Note 首張**，不是生涯首張。
+
+## 第 3084 條（**廠牌宣稱的反查，依 `research-base.md`「某廠牌史上第一張一律要反查廠牌沿革」**）：**「Blue Note International 靠本張開張」成立，兩層獨立佐證**
+
+| 層 | 逐字 |
+|---|---|
+| Billboard 1989-07-01 的 Blue Note 五十週年專題 | Blue Note 總裁 Bruce Lundvall：`Additionally, there is the Blue Note International line, which recently debuted via the new effort by U.K. tenor saxophonist Tommy Smith` |
+| 英版實體目錄號 | `BLT 1001`——`BLT` 號段的**第一號**（同組《Paris》1992 年才排到 `BLT 1005`） |
+
+**兩層互相獨立**（一是當事人當年的原話、一是實體盤面），依 base 檔規則可寫。
+⚠ **但只能寫到「這條支線靠本張開張」**，**不得寫成「Blue Note 的第一張」或「Blue Note 第一張非美國藝人專輯」**——後者未查證。
+`src`：`https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-01.pdf`
+
+## 第 3085 條（**推翻策展層，第 3 處**）：**《Ode to Life》是 African-Brazilian Connection 的第二張，不是第三張**
+
+`why` 逐字「Don Pullen 的非洲—巴西計畫**第三張**」、`why` 末句「**這個團的三張盤，本張是中間那張**」。
+
+| 來源 | 逐字 |
+|---|---|
+| 英文維基 Don Pullen 條目 | `Their first album, Kele Mou Bana, was released in 1991. Their **second**, but very different, album of 1993, Ode To Life, was a tribute to George Adams` |
+| 同條目續 | `A third album, Live...Again, **recorded in July 1993** at the Montreux Jazz Festival, **was not released until 1995**.` |
+| Billboard 1993-08-14 的評介 | `This pulsing, sometimes languid **second offering** from the veteran pianist and his African Brazilian Connection group` |
+
+→ **《Live...Again》雖然錄音在本張之後五個月，但發行晚了兩年**；按發行序本張是第二張，按錄音序也是第二張。
+**「中間那張」這個說法只在發行序上成立、在「第三張」的前提下不成立**，兩句話在 `why` 裡互相矛盾。
+**裁定**：研究稿寫「第二張」，並把三張的錄音年與發行年落差一併寫進 `facts`。判準第 1 條（有先例：本線一律以發行序定序號）。
+
+## 第 3086 條（**推翻策展層，第 4 處**）：**《Ode to Life》七軌裡有三軌不是 Pullen 寫的**
+
+`why` 把整張講成 Pullen 的作品集（「Pullen 鋼琴、Carlos Ward 中音與長笛……把 Adams-Pullen 四重奏那條線換成非洲與巴西節奏的骨架」），`mbNote` 的 credits 段也沒有逐軌作者。
+**Discogs 4692547 的逐軌 `extraartists` 寫得很清楚**（⚠ 這正是附錄二第 3 點說的「主故事只存在於整筆的逐軌欄」）：
+
+| 軌 | 作者 |
+|---:|---|
+| 1 The Third House On The Right | **Alberto Beserra、Guilherme Franco** |
+| 2 Paraty | **Nilson Matta**（樂團的貝斯手） |
+| 3 El Matador | Don Pullen |
+| 4 Ah George, We Hardly Knew Ya | Don Pullen |
+| 5 Aseeko! (Get Up And Dance!) | **Mor Thiam**（並由他親自演唱） |
+| 6 Anastasia/Pyramid | **Carlos Ward** |
+| 7 Variation On Ode To Life | Don Pullen |
+
+→ **七軌只有四軌是 Pullen 的**，而且非 Pullen 的三軌正好由團裡三位不同國籍的樂手各寫一首——**「非洲＋巴西＋美國三方各出一手」比「Pullen 換了個節奏骨架」準確得多。**
+**裁定**：寫作層不得把本張寫成 Pullen 的獨力作品。
+
+## 第 3087 條（**補策展層沒查的：本張的榜位，兩層互證**）
+
+| 期 | 逐字 | 位 |
+|---|---|---:|
+| BB-1993-08-14 | `NEW > DON PULLEN & THE AFRICAN-BRAZILIAN CONNECTION … ODE TO LIFE` | 新進榜 |
+| BB-1993-10-23 | `6 5 11`（本週 6、前週 **5**、在榜 11 週） | **前週第 5＝最高** |
+| BB-1993-12-25 年度回顧 | `24 ODE TO LIFE -Don Pullen & The African-Brazilian Connection -Blue Note` | 年度第 24 |
+| 英文維基 Don Pullen 條目 | `In 1993 Ode To Life was **fifth** on the U.S. Billboard Top Jazz Album chart.` | 第 5（獨立佐證） |
+
+**裁定**：最高名次第 5 名（1993-10-09 那期），**紙本與維基兩層一致，可寫死不標 uncertain**。
+
+## 第 3088 條（**推翻策展層，第 5 處；本組最重要的一處**）：**《Cruisin'》的美版是 1994 年，不是 1993 年——但卡片 `year` 仍取 1993 不動**
+
+`why` 逐字「1993 年 4 月 21、22 日錄音、7 月 21 日由東芝 EMI 的 Somethin' Else 線發行，**同年再由 Blue Note 在美國發美版**」。
+
+| 來源 | 逐字 |
+|---|---|
+| Billboard **1994-02-26** 的東京報導 | `The album is set for a **March 28** release in the United States, which will be followed by Onishi's first American tour, scheduled to take place in May.` |
+| 英文維基作品條目 | `It was released on **April 5, 1994**, by Blue Note Records.` |
+| `previews.json` 的 Apple gb 條目 | `appleYear` 逐字 **1994** |
+| Discogs 7578461（美版） | 年份欄 1993 —— **那是盤面 ℗© 年，不是上市日** |
+
+→ **三層指向 1994、只有 Discogs 的年份欄是 1993**，而 Discogs 該筆的 notes 逐字只有 `© ℗ 1993`。
+**裁定**：`facts` 寫「美版晚了大半年、1994 年才上市」；**卡片 `year` 維持 1993**（依第 817 條：日本首發已核，`year` 取首發地首發年）。判準第 2 條（可逆）。
+⚠ **給主線與寫作層**：**正文不得寫「同年美日兩地發行」。** 本線凡是 Somethin' Else 轉 Blue Note 的碟都要預期這個時差（同批《Hat Trick》的 Billboard 美版評介晚到 1997-01-11，見第 3098 條）。
+
+## 第 3089 條（**推翻策展層，第 6 處**）：**《Cruisin'》的〈Roz〉是 Rodney Whitaker 寫的，不是大西順子**
+
+`why` 逐字「曲目把自作曲〈Eulogia〉〈Roz〉〈Switchin' It〉夾在……之間」。
+**Discogs 日版 8781439 與美版 7578461 的逐軌 written-by 一致**：〈Roz〉掛 **Rodney Whitaker**（本張的貝斯手），美版另把 `Junko Onishi — Written-By [1, 8]` 寫在整筆 `extraartists` 裡——**她的自作曲只有第 1 軌〈Eulogia〉與第 8 軌〈Switchin' It〉兩首。**
+**裁定**：研究稿照盤面寫兩首。⚠ 這一條又是附錄二第 3 點的實例（`search` 摘要看不到逐軌欄）。
+
+## 第 3090 條（**推翻策展層，第 7 處**）：**《Cruisin'》的 Ellington 曲是三首，不是兩首**
+
+`why` 逐字「Ellington 的〈Melancholia〉與〈Caravan〉」。
+**Discogs 日版 8781439 的逐軌 written-by**：第 2 軌〈The Shepherd〉**掛 Duke Ellington**、第 5 軌〈Melancholia〉掛 Ellington、第 6 軌〈Caravan〉掛 Ellington／Juan Tizol／Irving Mills。
+→ **三首**。⚠ **美版 7578461 的逐軌欄把〈The Shepherd〉的作者漏了**（只在整筆 `extraartists` 寫 `Duke Ellington — Written-By [2, 5, 6]`）——**兩個版本條目要一起看才湊得齊，這是第 1678／1821-B 條那個形狀的又一例。**
+
+## 第 3091 條（**⚠ 給主線與本線所有層：`junkoonishi.com` 已經易主，不得再當藝人官網**）
+
+本層依附錄二的「藝人官網」路徑去抓 `https://www.junkoonishi.com/`，**HTTP 200、內容是印尼文的線上博弈導流站**（頁面標題逐字 `ROYALMPO: Akses Link Situs Hiburan Online Terpercaya Fast Profit`），與大西順子完全無關。
+英文維基的 External links 仍掛著 `Official website` 指向該網域。
+**裁定**：**`junkoonishi.com` 列入禁用來源**，本線任何一層都不得引用；她的官方資訊改走 Verve 的官方廠牌頁或維基。
+⚠ **推廣一條方法論**：**1990 年代藝人的「官網」網域過期後被搶註是常態**，附錄二把藝人官網列為第 5 條路徑時**必須連內容一起看，不能只看 HTTP 200**。判準第 3 條（不定下來，下一批還會有人引用它）。
+
+## 第 3092 條（**推翻策展層，第 8 處**）：**《Spiritalk 2: Revelations》與 Kevin Eubanks 接下 Tonight Show 樂團是同時發生，不是「之前」**
+
+`why` 逐字「**這是他在接下 Tonight Show 樂團之前，最後一段以作曲家身分經營的 Blue Note 作品**」。
+
+| 來源 | 逐字 |
+|---|---|
+| Billboard **1995-03-04** | `…（Eubanks）taking over musical director duties of the Tonight Show Band during Marsalis' leave of absence. Marsalis begins a concert tour Feb. 9 in Providence, R.I. … **Eubanks' 11th album, "Spiritalk 2, Revelations," was just released by Blue Note.**` |
+| 英文維基 Kevin Eubanks | `In 1992, Eubanks moved to the West Coast to play guitar in The Tonight Show Band. … **In 1995, he replaced Branford Marsalis as leader of the band.**` |
+| Billboard 1995-02-25 的評介 | 稱他 `the exciting young guitarist (and reluctant TV heartthrob), whose profile is further heightened by Branford Marsalis' "Tonight Show" hiatus` |
+
+→ 本張 1995-02-07 發行時，**他已經在代理音樂總監的位子上**；同年正式接任。
+**裁定**：**時序完全相反，不得沿用 `why` 那句。** 研究稿改寫成「接位那個月交出的全自作曲爵士盤」。
+⚠ 順帶一筆：Billboard 說這是他的**第 11 張**專輯（`Eubanks' 11th album`），策展層未提。
+
+## 第 3093 條（**推翻策展層，第 9 處**）：**Robin Eubanks 是哥哥，不是弟弟**
+
+`why` 逐字「班底是**弟弟** Robin Eubanks 長號」。
+英文維基 Kevin Eubanks 條目逐字：`His **older brother**, Robin Eubanks, is a trombonist, and his **younger brothers** Duane Eubanks is a trumpeter and Shane Eubanks is a DJ.`
+**裁定**：Robin 是哥哥、Duane 是弟弟。判準第 2 條。
+
+## 第 3094 條（**推翻策展層，第 10 處**）：**《Hat Trick》的錄音地，盤面寫的是 Power Studio，不是 Power Station**
+
+`why` 逐字「紐約 **Power Station** 的對壘盤」。
+**Discogs 美版 10811254 的 notes 逐字**：`Recorded and mixed at **Power Studio** on January, 28-31, 1996.`（日版 3076800 的 notes 只寫日期、未寫地點。）
+**裁定**：`facts` 照盤面寫 Power Studio，並在 `notes` 標明日版未記地點。
+⚠ **不得把同組《Cruisin'》的 Power Station 套過來**——那一筆有 Billboard 1994-02-26 的獨立佐證（`recorded at New York's Power Station`），兩張是兩份證據，形狀相近但不可互相補。
+
+## 第 3095 條（**補策展層完全沒查到的：《Hat Trick》最好的切角在〈Left Alone〉的來歷**）
+
+`why` 只寫「Mal Waldron 寫給 Billie Holiday 的〈Left Alone〉」——**這句有兩個問題**：
+
+| 層 | 逐字（英文維基 `Left Alone (song)`） |
+|---|---|
+| 作者 | `"Left Alone" is a jazz song written by singer **Billie Holiday** and pianist/composer **Mal Waldron**` —— **是合寫，Holiday 出詞** |
+| Holiday 從沒錄過 | `This is one of seven songs written by or co-written by Holiday that **she never recorded**.` |
+| 首錄 | `Waldron himself recorded the song on his 1959 album Left Alone` |
+| ⚠ **關鍵** | `Waldron frequently performed the song for albums, **often with tenor saxophonist Jackie McLean (who also played on the Left Alone album)**` |
+
+→ **1959 年那張首錄的《Left Alone》上，中音手就是 Jackie McLean。1996 年他在本張又錄一次，中間隔了三十七年。**
+**這是本張唯一一條「只屬於這張碟」的故事**，策展層一層都沒碰到。
+（⚠ 維基把 McLean 誤植成 `tenor saxophonist`，他是中音手；本稿不抄那個樂器名。）
+另補兩筆策展層沒寫的：**〈Jackie's Hat〉的作者是大西順子**（Discogs 逐軌 composed-by）；Billboard 的製作人欄逐字 `PRODUCERS: Hitoshi Namekata, Jackie McLean`，與盤面的「Namekata 監製／McLean 共同製作」寫法不同但不衝突。
+
+## 第 3096 條（**推翻策展層，第 11 處**）：**《That Day…》裡沒有一首是 Dianne Reeves 獨力寫的**
+
+`why` 逐字「**同名曲〈That Day〉與〈Dark Truths〉是她自己的作品**」。
+**Discogs 3268377 的逐軌 written-by**：
+
+| 軌 | 作者 |
+|---|---|
+| 5 That Day | **Dianne Reeves、Nikki Giovanni、Terri Lyne Carrington** 三人合寫 |
+| 8 Dark Truths | **Joan Armatrading**（與 Reeves 無關） |
+
+→ **兩句話全錯**。而且掉的那個名字是本張最值得寫的一個——**Nikki Giovanni 是 1960 年代末黑人藝術運動最知名的詩人之一**。
+**裁定**：研究稿寫三人合寫，並把 Giovanni 的身分查進 `facts`。判準第 3 條（不改就會被寫作層直接寫成錯的正文）。
+
+## 第 3097 條（**補策展層沒查的：《That Day…》的榜位；並記一條 OCR 取樣的限制**）
+
+| 期 | 逐字（本週／前週／在榜週） | 讀法 |
+|---|---|---|
+| BB-1997-11-29 | `（圈號）8 2` | 在榜第 2 週、**前週第 8 名（＝進榜名次）** |
+| BB-1998-02-21 | `7 7 14` | **第 7 名，在榜第 14 週——本層掃到的最高** |
+| BB-1998-04-04 | `21 24 20` | 第 21 名，**在榜第 20 週** |
+| BB-1998-06-27 的爵士回顧榜 | `14 THAT DAY...- Dianne Reeves -Blue Note /Capitol` | 回顧榜第 14 |
+
+⚠ **紙本 OCR 只收到隔週一期**（在榜週數只出現偶數：2、4、6…20），**且 1997-11-29 那期的本週名次被 Billboard 的圈號圖示蓋掉**，因此**真正的最高名次有可能比第 7 名更前面**。
+**裁定**：`facts` 一律寫「掃到的最高名次是第 7 名」，**不寫「最高第 7 名」**。判準第 3 條（寧缺勿錯，這是 base 檔的誠實條）。
+
+## 第 3098 條（**覆核策展層第 2703 條的年份改判：維持 1996，但併存證據要記下來**）
+
+策展層把《Brandenburg Concerto》從 MB 的 frd 1997 改判 **1996**。**本層覆核：維持 1996**，支持的是 Discogs 七筆實體條目全 1996、barcode `724385455926` 反查兩筆皆 1996 US、**日版 Discogs 27583047 帶完整日期 1996-06-19**、錄音日 1995-12-27。
+
+⚠ **但本層查到一條策展層沒看到的反向證據**：**jazzdisco 的 Ron Carter session 表把日版 eau `TOCJ-6037` 記成 1995（錄音年）、把 `Blue Note CDP 7243 8 54559 2 6` 記成 1997**——**與 MB 的 frd 1997 同向、且來源互相獨立。**
+
+換句話說，**「日版 1996、美版 1997」這個形狀在本線有現成前例**：同批《Hat Trick》日版 1996-05-22、美版的 Billboard 評介晚到 **1997-01-11**；同組《Cruisin'》日版 1993-07-21、美版 1994-03／04（第 3088 條）。**Somethin' Else／eau 轉 Blue Note 的碟，美版慢半年到一年是常態。**
+
+**裁定**：**照策展層寫 1996 不改**（Discogs 的實體日期是更硬的一層），**但把 1997 這條併存證據寫進研究稿 `notes` 與本條，留給主線。**
+**若日後要翻成 1997，需要的是美版盤面或同期紙本，不是再多一個資料庫欄位。** 判準第 1 條（有先例：本線一律以實體盤面壓資料庫欄位）。
+
+## 第 3099 條（**補策展層漏掉的整支樂團：《Brandenburg Concerto》有鼓手，而且弦樂團的名單查得到**）
+
+策展層的 `mbNote` 只寫「Kermit Moore 指揮；**弦樂團伴奏**」——**沒有一個團員名字，也沒發現本張有鼓手。**
+**jazzdisco 的 Ron Carter session 表把 1995-12-27 那場逐人列了出來**：
+
+- **小提琴**：Sanford Allen、Robert Chausow、Cecilia Hobbs Gandner、Winterton Garvey、Rebekah Johnson、Charles Libov、John Pintavalle、Dale Stuckenbruck、Mary Whitaker
+- **中提琴**：Julien Barber、Richard Brile、Jesse Levine
+- **大提琴**：Carol Buck、Marisol Espada、Maxine Neuman、Caryl Paisner
+- **低音提琴**：Leon Maleson ／ **鋼琴**：Alison Deane、Steven Scott
+- **Ron Carter**：bass、piccolo bass、arranger ／ **Kermit Moore**：conductor
+- ⚠ **Lewis Nash：drums** ——**策展層完全沒提到本張有鼓手**
+
+**三條由此長出來的事實**（策展層一條都沒有）：
+1. **指揮 Kermit Moore（1929–2013）** 是美國第一支種族融合樂團 **Symphony of the New World** 的創辦人之一，也與妻子 Dorothy Rudd Moore 共同創辦 **Society of Black Composers**。
+2. **小提琴組第一位 Sanford Allen** 是 **1962 年紐約愛樂史上第一位全職的非裔美國小提琴家**，做到 1977 年。
+3. **Kermit Moore 不是第一次進這間錄音室**：jazzdisco 同一表顯示 1992-12-27／29 Carter 在同一間 Clinton Recording Studios 錄《Friends》時，**Moore 是四位大提琴手之一**（Alison Deane、Steven Scott、Leon Maleson 也在那場）——**這次他改站上指揮台。**
+
+**→ Carter 這張碟找來的不是一般的錄音室弦樂組，是紐約黑人古典樂界的那個圈子。** 這是本張真正的故事，**`jazzdisco.org` 這一路命中率只有 2／10，但這一筆是決定性的。**
+
+⚠ 另補一筆策展層沒查的廠牌形狀：**`eau` 是東芝 EMI 給 Carter 這條古典改編線的專用廠牌名**——jazzdisco 記 1992 年《Ron Carter Meets Bach》的日版也是 `eau (J) TOCJ-5704`、美版才掛 `Blue Note CDP 0777 7 80510 2 2`，**與本張（日版 eau TOCJ-6037／美版 Blue Note）形狀一模一樣**。策展層的 `risk` 只說「日版 `label` 只有 `EAU Records`」，沒發現這是一條有前例的線。
+
+## 第 3100 條（**方法論；更正附錄二對 worldradiohistory 檔名的預設**）：**1990 年代的 Billboard 掃描檔有三種檔名形狀，猜錯就 404**
+
+本層 22 條 Billboard `src` 逐筆做過 HTTP 取回驗證，**檔名不是單一形狀**：
+
+| 形狀 | 實例 | 出現段 |
+|---|---|---|
+| `BB-YYYY-MM-DD.pdf` | `BB-1989-07-01.pdf`、`BB-1993-10-23.pdf`、`BB-1998-02-21.pdf` | 多數 |
+| **`BB-YYYY-MM-DD-N.pdf`** | **`BB-1993-08-14-N.pdf`**、`BB-1994-02-26-N.pdf` | 1993–1994 的部分期 |
+| `Billboard-YYYY-MM-DD.pdf` | `Billboard-1992-02-15.pdf`、`Billboard-1997-01-11.pdf` | 1992 與 1997 的部分期 |
+
+**本層第一次交件時把 `BB-1993-08-14-N.pdf` 寫成 `BB-1993-08-14.pdf`，驗證回 404，已修正。**
+**裁定（給後續各層）**：**不要自己拼 Billboard 的 PDF 檔名**——`batch-progress/enum/billboard-bn-*.txt` 的每期分隔行（`######## Billboard-YYYY-MM-DD pages=N`）與部分檔的 `src=` 欄就是正解；**拼完一律跑一次 HTTP 驗證**。判準第 3 條（一條死連結會讓下游 manifest gate 直接擋整張卡）。
+
+## 第 3101 條（**方法論；本組四張碟共用的一條廠牌史一手來源**）：**Somethin' Else／Blue Note 的關係，Tom Evered 1996 年在 Billboard 講得最清楚**
+
+附錄二說「查八〇、九〇年代的廠牌史，關鍵字要用製作人／A&R 的人名，不是藝人名」——**本組實測再加一條：也可以用廠牌名當關鍵字去掃同期紙本的產業報導。**
+
+`billboard-bn-1996-ocr.txt.gz` 掃 `somethin' else` 命中 **BB-1996-07-27** 的爵士專題，Blue Note 總經理 **Tom Evered** 的原話逐字：
+> `It participates in an international-release agreement with the Japanese somethin' else label, "**a sister company owned by Toshiba EMI**," according to Evered.`
+> `"She's under contract to somethin' else," explains Evered, "and we **merely act as a domestic conduit**. Costs for breaking the artist are shared…"`
+> （同篇另記 Gonzalo Rubalcaba 也是走這條線進 Blue Note 的，原因是古巴與美國之間的工作限制擋住了直接簽約。）
+
+**這一篇一次餵飽本組四張**：《Cruisin'》《Jazz, My Romance》《Hat Trick》《Brandenburg Concerto》——**全部是同一位監製 Hitoshi Namekata、同一位 A&R Yoshiko Tsuge、同一位錄音 Jim Anderson、同一位母帶 Yoshio Okazaki、同一位美術 Kaoru Taku 的東芝 EMI 企劃盤。**
+⚠ **反同構提醒**：四張都可以寫這條廠牌線，但**各自的切入面向必須不同**（依 base 檔廠牌規則：這是他在該廠牌的第幾張／廠牌當時的處境促成了這張／製作人的哪個決定造就了這張的聲音）。本層已在四張的 `facts` 裡各放一句不同角度的引文與脈絡。
+⚠ 另補一筆：**Billboard 1994-02-26 那篇是同一條線更早的一手材料**，Namekata 當時的頭銜逐字是 `A&R manager of Toshiba-EMI's international department`，並說 Somethin' Else 是 Blue Note 的 `sister label`。
+
+## 第 3102 條（**方法論；補一條雲端環境的陷阱，與 allmusic／allaboutjazz 那兩條並列**）：**`www.discogs.com/release/<id>` 的**網頁**在雲端會間歇回 HTTP 403，那是 Cloudflare，不是連結壞了**
+
+本層對 64 個 `src` 逐一取回驗證，**14 個 `discogs.com/release/<id>` 網頁回 403、5 個回 200**——**同一批 URL、同一個 UA、只差發送時間。** 換成瀏覽器 UA 重試仍間歇 403。
+**但這些 release id 全部來自 `api.discogs.com/releases/<id>` 的成功回應**，也就是**資料是真的、頁面也是真的**，只是雲端出口 IP 被 Cloudflare 擋。
+
+**裁定**：
+1. **`src` 照本線既有慣例繼續寫 `https://www.discogs.com/release/<id>`**（c-168／c-169 全批都是這個形狀，`api.discogs.com` 的 JSON 端點不適合當給人看的來源）。
+2. ⚠ **後續各層做 `src` 存活驗證時，`discogs.com` 的 403 一律不算死連結**——**只要該 id 在 `api.discogs.com/releases/<id>` 取得到 200 就算過。** 不要因為 403 就把整批 Discogs 來源換掉。
+判準第 3 條（不定下來，下一批的驗證腳本會把五十幾條好來源誤判成死連結）。
+
+## 第 3103 條（**⚠ 交件狀態；第 1803-B 條的第七次**）：**`HEAD` 上已經有一份本檔的中途快照，但工作區當下的版本才是交件版**
+
+主線在本層作業途中做了一次 checkpoint 提交（`d16a492 checkpoint: c169 研究 b／c171 研究 a 中途存檔`），**把 `desc-tools/batches/research/c171-a.json` 的十張完整版一起提了進去**。
+**那一版的張數與條數都已經是 10／120，看起來就是定稿——但它少了第 3100 條那個 `BB-1993-08-14-N.pdf` 的修正。**
+**`git diff` 只有一行，但那一行是一條 404 的來源網址。**
+
+**裁定**：**驗收與後續合併一律以工作區版本為準**；主線提交時請確認 `git diff desc-tools/batches/research/c171-a.json` 為空之後才算收件。
+⚠ **這就是第 1803-B 條「筆數對了不等於定稿了」的第七次**，而且這次的成因是**別的工作階段替本層做了中途存檔**——**代理沒有辦法靠自己避免，只能在交件回報裡明講。**
+
+## 第 3104 條（**派工信與 base 檔／既有裁定的牴觸盤點：兩處小牴觸、無一處實質衝突**）
+
+派工信要求「本信若與 `research-base.md` 牴觸，以它為準，並指出本信哪一句寫錯了」。**逐條對過，只有兩處**：
+
+| # | 派工信 | 正本 | 處理 |
+|---:|---|---|---|
+| 1 | 表格寫「1996 `Ron Carter《Brandenburg Concerto》` ⚠ **年份策展層改判 1997→1996**」，同表最左欄的年份欄也寫 1996 | 卡單 `c171-cards.json` 的 `year` 欄逐字 **1996** ✔ | **無牴觸**，派工信與卡單一致；本層維持 1996（第 3098 條） |
+| 2 | 「**`hookCandidates` 每張最多 2 條**」 | `research-base.md` 同 | 一致 |
+| 3 | ⚠ 「⚠ **`slice.json` 的欄位在這一批只有 `artist`／`album`／`year`／`rgMbid`／`note` 五欄可讀**」 | 本層**全程未讀 `slice.json`**（輸入是卡單＋`prop-a.json`＋`caa.json`＋`previews.json`），此句對研究層不適用 | 無影響 |
+| 4 | ⚠ 「**b 組還沒派**，`c171-b.json` 不存在是正常的」 | ✔ 實測：`qa-batch.mjs research c171` 因此亮 1 個批次層標記 | **派工信預測正確**，見第 3081 條 |
+
+**唯一一句需要更正的是派工信的第四節表格**：`1989 | Tommy Smith《Step By Step》`那一列寫「**與 1992《Paris》同一人；LP 6 軌／CD 8 軌（策展層查到的版本差）**」——**版本差正確，但同列沒有提醒「策展層把他的 Blue Note 盤數寫成三張」這個錯**（見第 3082 條）。派工信是照 `prop-a.json` 轉述的，錯在策展層不在派工信。
+
+**本信其餘每一句本層都對過，無一句與 `research-base.md` 開頭那三處雲端例外、或與 `CURATION-BRIEF-bluenote-post1985.md` 附錄二牴觸。**
