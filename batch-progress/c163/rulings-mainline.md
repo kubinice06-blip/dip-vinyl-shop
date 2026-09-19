@@ -1951,3 +1951,58 @@ c-165 鉤子 a 交件回報「**全部 ≤230**，分佈 209–230」。主線�
 - **Apple 命中 8／18，落空集中在 Somethin' Else 線（六張全 0）**——**簡報「這一段店面命中率應該很高」對 1985–1999 段不成立。**
   另有 3 張軌數與實體不符、`Nu Blaxploitation` 那筆是不是第 1325 條的潔淨版查不出來。
 - **錄音日期 3 張 Discogs 與 MB 兩邊都沒有**（`Post-Motown Bop`／`Portraits Plus`／`Reflejos Ancestrales`），研究層要補。
+
+## 第 1798-B 條（c-169 a 驗收）：**21 張收 20 退 1，退的是 EP**
+
+`chk-prop a` 20 張 18 位標記 0、撞 apex 0 處；`dedup-crossbatch` 四項全 0；第 611 條五種盲區人工掃完真同碟 0 筆。
+
+**退件**：`Dr. John and the Lower 911《Sippiana Hericane》2005`（7 軌 25 分 25 秒，Discogs `format` 欄逐字 `CD, EP`）。
+**四筆前例一致指向不收**（共通五條第 4 條的 §5.5 白名單、c-093、c-131 C 段、c-112 第 9 條）；
+**MB `primary-type` 寫 Album、盤面 format 欄寫 EP 時取盤面**（第 1734 條同一句）。
+**c-170 的 `lophiile《The Good Days Between》`（8 軌 17 分）同判退，c-170 不必重查**（第 1560-AE 條要求兩張一起決定）。
+
+⚠ **主線的派工信又把裁定內容摘錯了**（第 1795-B 條第二次應驗，同一輪）：
+信裡寫「第 1560-AE 條：已裁定留在本批，但要標成 EP」，**但那條的本文寫的是「收不收 EP 由 c-169 策展層當場定」**
+——**標題句與本文句不一致時，主線抄了標題。** 從此**派工信只准寫「見第 N 條」**。
+
+### ⚠ 派工信另一句實質寫錯：兩張 Paolo Fresu 的掛名
+
+信裡寫「掛名取 MB credited-name 串接那一種」。**錯兩處**：
+1. **第 1539 條的判準句有前提**——「**並列聯名**的連接形，取 MB credited-name 與 joinphrase 串接出來的那一種」。
+   本例第二格是作曲者兼團員、joinphrase 是一句盤名片語（` Plays the music of `），**前提不成立。**
+2. **與 c-160 b 已建卡單的先例直接牴觸**：完全同形的《Rosso, verde, giallo e blu》（RG `48da0c29`，同一 MB 實體 `8799705f`、
+   同一 credited-name `Paolo Fresu 5et`、同一 joinphrase）**c-160 b 判 `Paolo Fresu Quintet`**。
+   照信執行會在同一位藝人的同一個編制上造出兩種字串（第 1418 條）。**代理判 `Paolo Fresu Quintet`，正確。**
+
+## 第 1799-B 條（c-169 a 提出的四條方法論，建議推給 c-170 與後批）
+
+1. **六句判準之前要再加一道「形態閘」**：**看零售條目 `format` 欄有無 `EP`／`Single` 並實算總長**
+   ——本批的退件不在既有六句的任何一句裡，是「第七種退件」。
+2. ⚠ **Apple 的 `artistName` 欄不可拿來判合輯**（第 782／397 條之外的第三種假陽性）：
+   `Booster《Loop in Release》` 在 Apple fr 登成 `Multi-interprètes`（Various Artists），**核完不是合輯。**
+3. **廠牌鏈第一格是 `Blue Note <國名>`（本批 `Blue Note Germany`）屬正規 imprint 的國別分支標記，過閘。**
+   與 `Blue Note Label Group [2eb19785]`（EMI 部門名）的分界**看 barcode 段與 MB label id，不看名字長短**。
+4. **第 1771 條的第四種形狀**：**「notes 帶 live 卻不是現場」**，本批兩次
+   （Scolohofo 的 live-to-two-track、Trio Focan 的錄音室一次過收音）。
+
+### ⚠ c-169／c-170 的店面與封面覆蓋率要照「歐洲分支」預期，不是簡報寫的「很高」
+
+**Apple 三種查法全查無 3／20，CAA release-group 層 404 有 10／20。**
+原因：**本批幾乎全是 Blue Note 各國分支的本地出品**（芬蘭 4／義大利 4／德國 2／法國 2／瑞士 1／土耳其 1／希臘 1），
+**美國本部只有 2 張。** 簡報第三節「這一段店面命中率應該很高」對 c-169／c-170 不成立。
+
+**另有 MB 缺口 5 筆**（Alice Ricciardi 與 High Five Quintet **只建了日版、義版原盤完全沒有**；
+Frost 的 `catno` 欄填的是 barcode；Juliano Rossi 與 Kitty Hoff 的 `catno` 整格空）、
+**軌數版本分歧 7 筆**（Brisa Roché 最嚴重：法 18／美 17／法 18(53 分)／數位 21）——**下游正文不得把 bonus 寫成原盤曲目。**
+
+### 年份改判 2 筆（皆可逆）
+
+- **`Jackie Allen《Tangled》` 2004→2006**：Apple us/gb/de 同一 id `716517015` releaseDate `2006-01-01`＋℗ 逐字 `2006 Blue Note Records`；
+  **目錄號 30080(US)／30081(UK) 連號＝同一次配號，而 EMI 的 `0946 3 xxxxx 2 x` 段 2005 年後才啟用**。Discogs UK 那格 2004 是年份欄誤植（第 550／570／708 條），MB frd 抄它。
+- **`Trio Focan《standard a'la Turc》` 2001→2002**：Discogs notes 逐字錄音＋混音到 `November 18-19-20th 2001` 才結束；
+  Apple tr/fi `1457831663` releaseDate 逐字 **2002-01-18**（非 01-01 佔位）＋℗ 2002。
+
+⚠ **`Θάνος Μικρούτσικος《Music Stories》` 判 (丁) 收，但研究層要核一件事**：
+**9 軌裡 7–9 軌是 1985 年的錄音**（Discogs notes 逐字），jazzlibrary.gr 另列有 1986《Duo For Alto Saxophone And Electric Bass》
+——**要核那 1986 年那張是不是同一份錄音，正文不得把 7–9 軌寫成 2001 年錄的。**
+掛名取希臘文單掛名 `Θάνος Μικρούτσικος`（Gary Burton 是 `Vibraphone` 獨奏者、不進掛名；池中 seed 已有此字串）。
