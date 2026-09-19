@@ -1,0 +1,97 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Step By Step（Blue Note B1-91930 美版 LP 6 軌）；Step By Step（CDP 7919302／CDBLT 1001 CD 8 軌）；Tommy Smith — Step By Step",
+  "artist": "Tommy Smith",
+  "album": "Step By Step",
+  "year": 1989,
+  "label": "**Blue Note B1-91930（US 1989 12\" Vinyl 6 軌，Discogs 5575629）**／Blue Note International BLT 1001（UK 1989 LP 6 軌，Discogs 3914014）；CD **Blue Note International CDP 7919302／UK CDBLT 1001**（UK 5273126 與 US 18823201，皆 8 軌，barcode 077779193028＝MB 唯一 release e12f2f9b 的 barcode）；卡帶 B4-91930（US 4402673／12747739）與 TC-BLT 1001（UK 13991478）",
+  "why": "蘇格蘭次中音薩克斯風手 Tommy Smith 二十一歲時的 Blue Note 首張領班盤，1988 年 9 月 7、9 兩日在紐約 Clinton Studios 錄音，製作人是把他從 Berklee 帶出來的 Gary Burton。班底幾乎是當時美國第一線的組合：Mitchel Forman 鋼琴與鍵盤、John Scofield 電吉他、Eddie Gomez 貝斯、Jack DeJohnette 鼓——**八首（LP 版六首）全部是 Smith 自己的作品**（Ally the Wallygator／Step by Step／Ghosts／PillowTalk／Time Piece／Springtime，CD 另收 Freetime／Ever Never Land）。這是 1980 年代末 Blue Note 重啟後少見的「歐洲新人＋美國老將」配置，也是 Smith 從 Burton 樂團側人轉成領班的那一步（Discogs 3914014 內頁與 5575629 盤面；MB release e12f2f9b）。實掃卡池 `Tommy Smith` **英文字串 2 張（漢字 0／羅馬字 0）**——《Peeping Tom》（1990，c-149）與《Standards》（1991，c-150），**兩張都還沒上架、只在批次卡單裡**；seed 0 張。**本張是他三張 Blue Note 盤裡最早的一張，收進來三張才連號。**",
+  "risk": "⚠ **這張不在 `enum/blue-note.json` 裡**（c-170 第 2488 條第 1 筆）：MB 唯一的 release e12f2f9b 的 `label-info` 逐字是空陣列 `[]`，以廠牌為軸的列舉腳本永遠碰不到。**本層覆核稽核層的「是 Blue Note 家族」判定：成立**——Discogs 七筆全部帶 `Blue Note`／`Blue Note International`，目錄號 `B1-91930`／`BLT 1001`／`CDP 7919302` 三組互相對得上，**沒有一筆是第 2490 條那種演出場地字串**（`The Blue Note Jazz Club` 0 次命中）。⚠ **LP 與 CD 軌數不同**：美英兩版黑膠都是 6 軌 43 分半，CD 是 8 軌——**寫作層不得把〈Freetime〉〈Ever Never Land〉寫進原 LP 曲序**。⚠ 年份 1989 三層一致：Discogs 七筆原壓全 1989、barcode 077779193028 反查 2 筆（US／UK）皆 1989、MB frd 1989；**錄音 1988-09-07／09 只寫正文，不動 `year`**。⚠ **形態閘**（c-169 a）：零售條目 `format` 欄逐字 `['Vinyl','LP','Album']`／`['CD','Album']`，**無 `EP`／`Single`**，LP 實算 43:34 —— Album。⚠ 掛名 `Tommy Smith`＝MB RG credit 原樣（c511b970 Person／GB／`Scottish jazz saxophonist`），**與池中 c-149／c-150 兩張同字串**，不新造。⚠ 店面（第 254 條，只寫觀察）：**雲端 `itunes.apple.com/search` 回 HTTP 403**（`/lookup` 通但需要 ID），**店面查法整批留本機**。CAA：RG 層 **1 圖、有 front**，來源 release 是原盤 e12f2f9b ✓。",
+  "mbNote": "釘 release-group d9aafa98-b294-4940-bab0-0044c2d6dc4a。回問 release-group 端點（inc=artist-credits+genres+tags）：title「Step By Step」、artist-credit「Tommy Smith」（c511b970-7016-4bd4-b54a-1cd1cb06bb34 Person／GB／`Scottish jazz saxophonist`）、first-release-date 1989、primary-type Album、secondary-types 空、genres 逐字 `contemporary jazz`／`jazz`／`post-bop`。release 端點（inc=media+labels+artist-credits）：**只有 1 筆** e12f2f9b-e86e-4995-a0d1-36f75e993a6e（1989 GB Official CD 8 軌，barcode 077779193028，**`label-info` 逐字 `[]`**）。依第 994 條去 Discogs 補全世界視野（`artist=Tommy Smith&release_title=Step By Step&per_page=50` 回 7 筆、barcode 077779193028 反查回 2 筆）：5575629（US LP Blue Note B1-91930）、3914014（UK LP Blue Note International BLT 1001）、5273126（UK CD CDP 7919302）、18823201（US CD）、4402673／12747739（US 卡帶 B4-91930）、13991478（UK 卡帶 TC-BLT 1001）。LP 六軌：Ally the Wallygator／Step by Step／Ghosts／PillowTalk／Time Piece／Springtime；CD 另加 Freetime／Ever Never Land。credits（Discogs 5273126）：Tommy Smith 次中音與全部作曲、Mitchel Forman 鋼琴／鍵盤、John Scofield 電吉他、Eddie Gomez 貝斯、Jack DeJohnette 鼓、Gary Burton 製作、Don Puluse 錄音。錄音 1988-09-07 與 09-09，Clinton Studios, New York City。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Paris（Blue Note International CD BLT 1005）；Paris（LP 780612 1）；Tommy Smith — Paris",
+  "artist": "Tommy Smith",
+  "album": "Paris",
+  "year": 1992,
+  "label": "**Blue Note International CD BLT 1005（UK 1992 CD 12 軌 73:53，Discogs 9840348，barcode 077778061229＝MB release 22e0f2b2 的 barcode）**；LP `780612 1`（UK 1992，Discogs 13110451，盤面另註 `UK: BLT 1005`）；卡帶 TC-BLT1005（UK & Europe 1992，Discogs 16953930，barcode 077778061243＝MB release 15a08746 的 barcode）",
+  "why": "Tommy Smith 第四張 Blue Note 盤，也是他把班底整個換成英國新生代的轉折點：1992 年 5 月在倫敦 CTS Studios 錄音，6 月拉到奧斯陸 Rainbow Studio 由 Jan Erik Kongshaug 混音兼共同製作——**那是 ECM 的錄音室與錄音師，聲響因此和前三張的美國組完全不一樣**。樂手是 Guy Barker 小號（Monette）、Julian Argüelles 中音與高音、Jason Rebello 鋼琴、Mick Hutton 貝斯、Jeremy Stacey 鼓，十二軌從 6 分多的〈Dischord〉到 14 分的〈Phraseology〉都有，中間夾著〈Tear〉（0:52）與〈Lost〉（1:11）兩段極短的間奏（Discogs 9840348 內頁與軌長；MB release 22e0f2b2）。實掃卡池 `Tommy Smith` **英文字串 2 張（漢字 0／羅馬字 0）**——《Peeping Tom》（1990，c-149）與《Standards》（1991，c-150），**兩張都在未上架批次裡**；seed 0 張。本張與同組《Step By Step》（1989）都缺。",
+  "risk": "⚠ **這張不在 `enum/blue-note.json` 裡**（c-170 第 2488 條第 2 筆）：MB 兩筆 release（22e0f2b2、15a08746）的 `label-info` **逐字都是空陣列 `[]`**。**本層覆核「是 Blue Note 家族」判定：成立**——Discogs 三筆全部掛 `Blue Note International`，目錄號 `CD BLT 1005`／`TC-BLT1005`／`780612 1` 同屬 EMI 的 `BLT` 段，與同組《Step By Step》的 `BLT 1001` 連號；**無演出場地假陽性**（第 2490 條）。⚠ **盤名撞池（同名不同碟，第 179／250／324 條）**：`Paris` 在批次裡另有 **Erik Truffaz《Paris》(2008，c-161)**，`À Paris` 另有 **Jacky Terrasson《À Paris》(2000，c-157)**——**三張互不相干，下游引用這個盤名時必須帶掛名**。⚠ 年份 1992 三層一致：Discogs 三筆原壓全 1992、barcode 077778061229 反查 1 筆 1992、MB frd 1992；**錄音 1992-05、混音 1992-06 只寫正文**。⚠ **形態閘**：零售條目 `format` 逐字 `['CD','Album','Stereo']`，**無 `EP`／`Single`**，實算 **73:53**（12 軌）——Album，且已是 CD 滿載。⚠ 掛名 `Tommy Smith`＝MB RG credit 原樣，與池中兩張同字串。⚠ **CAA RG 層 0 圖**——**封面待本機補**（`REMOTE_RUNBOOK.md` 分工表：封面實測本機）。⚠ 店面：雲端 iTunes `search` 回 403，留本機。",
+  "mbNote": "釘 release-group 0fdc9ff7-28f1-4a70-8927-5fc558c02380。release-group 端點：title「Paris」、artist-credit「Tommy Smith」（c511b970 Person）、first-release-date 1992、primary-type Album、secondary-types 空、genres 逐字 `jazz`。release 端點：22e0f2b2-4a8d-4ee6-8aa2-dab1f8836721（1992 GB Official CD 12 軌，barcode 077778061229，**`label-info` 逐字 `[]`**）、15a08746-a7be-4178-addd-827a83482ffc（1992 無國別 Official Cassette 12 軌，barcode 077778061243，**`label-info` 逐字 `[]`**）。Discogs 補視野（`artist=Tommy Smith&release_title=Paris&per_page=50` 回 3 筆、barcode 反查回 1 筆）：9840348（UK CD，Blue Note International CD BLT 1005）、16953930（UK & Europe 卡帶 TC-BLT1005）、13110451（UK LP 780612 1）。十二軌（Discogs 9840348）：Dischord 6:56／True Sobriety 5:16／Reflections 3:59／Day Light 12:14／Ping Pong 5:51／Children Play 2:50／Phraseology 14:12／Tear 0:52／Birth 7:53／Lost 1:11／Fragments 7:30／Occidentalism 5:09，合計 73:53。credits：Tommy Smith 次中音與共同製作、Guy Barker 小號、Julian Argüelles 中音／高音、Jason Rebello 鋼琴、Mick Hutton 貝斯、Jeremy Stacey 鼓、Jan Erik Kongshaug 錄音與共同製作。錄音 1992-05 CTS Studios, London；混音 1992-06 Rainbow Studio, Oslo。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Ode to Life (A Tribute to George Adams)；太陽の讃歌〜ジョージ・アダムスの魂に捧げる〜（TOCJ5834）；Don Pullen & The African-Brazilian Connection — Ode To Life",
+  "artist": "Don Pullen & The African-Brazilian Connection",
+  "album": "Ode to Life",
+  "year": 1993,
+  "label": "**Blue Note CDP 0777 7 89233 2 9（US 1993 CD 7 軌 59:00，Discogs 4692547，barcode 077778923329＝MB release bbdd3b03 所屬盤的 barcode 段）**；歐版同號（Discogs 21680554）；BMG 俱樂部版 `D 125428`（Discogs 3981313）；日本 **Blue Note／Toshiba EMI TOCJ5834**（1993，Discogs 25730341，Promo，盤面日題「太陽の讃歌〜ジョージ・アダムスの魂に捧げる〜」）",
+  "why": "Don Pullen 的非洲—巴西計畫第三張，也是**寫給 1992 年 11 月剛過世的 George Adams 的追悼盤**——盤面全題就是《Ode to Life (A Tribute to George Adams)》，第四軌〈Ah George, We Hardly Knew Ya〉13 分鐘是整張的核心。1993 年 2 月 18、19 日在紐約 Sorcerer Sound **直接錄成兩軌、15 ips 半吋類比帶配 Dolby SR**（不經多軌混音），3 月 11、15 日在 DB Plus 剪接與母帶。編制是 Pullen 鋼琴、Carlos Ward 中音與長笛、Nilson Matta 貝斯、Guilherme Franco 巴西打擊（timba、berimbau）、Mor Thiam 西非 djembe——**把 Adams-Pullen 四重奏那條藍調—自由爵士線，換成非洲與巴西節奏的骨架**。Michael Cuscuna 監製（Discogs 4692547 notes 與 credits；MB release bbdd3b03）。實掃卡池 `Don Pullen & The African-Brazilian Connection` **英文字串 2 張（漢字 0／羅馬字 0）**：《Kele Mou Bana》（c-150）與《Live...Again (Live at Montreux)》（c-152），**都在未上架批次**；另有 `Don Pullen` 4 張（seed《Evidence of Things Unseen》＋c-149／c-150／c-153 三張）、`The Don Pullen-George Adams Quartet` 2 張（c-148／c-149）、seed 的 `Don Pullen Featuring Sam Rivers` 與 `Don Pullen Quintet` 各 1 張。**這個團的三張盤，本張是中間那張，收了才不斷號。**",
+  "risk": "⚠ **這張不在 `enum/blue-note.json` 裡**（c-170 第 2488 條第 3 筆）：MB 唯一 release bbdd3b03 的 `label-info` 逐字 `[]`。**本層覆核「是 Blue Note 家族」判定：成立**——Discogs 五筆的 `label` 陣列第一個全是 `Blue Note`，目錄號 `CDP 0777 7 89233 2 9`（美歐）與 `TOCJ5834`（日）互相對得上，barcode 077778923329 反查回 3 筆同號；**無演出場地假陽性**。⚠ **盤名有長短兩形**：MB 與 slice 用短題 `Ode to Life`，Discogs 與盤面用 `Ode To Life (A Tribute To George Adams)`——**`album` 取 MB 原樣的短題，副題進 `queryAlias`**；寫作層可寫副題，但不得把副題併進盤名。⚠ **掛名是群組實體**：MB 5f633e7f 是 **Group**（`Don Pullen & The African-Brazilian Connection`），與池中 `Don Pullen`（Person）**並存不收攏**（第 964／196／197 條；第 307 條防的是同一實體的多種寫法，這是兩個實體）。⚠ 年份 1993 三層一致（Discogs 美日原壓、barcode 反查、MB frd）；**錄音 1993-02-18／19 只寫正文**。⚠ **形態閘**：`format` 逐字 `['CD','Album']`，實算 **59:00**（7 軌）——Album。⚠ 正文不得把 George Adams 寫成本張的演出者——**他 1992-11 已過世，本張是追悼盤，他沒有參與錄音**（池中 `The Don Pullen-George Adams Quartet` 兩張才是兩人同台）。⚠ CAA：RG 層 **5 圖、有 front**，來源 release 是原盤 bbdd3b03 ✓。⚠ 店面：雲端 iTunes `search` 回 403，留本機。",
+  "mbNote": "釘 release-group 9ea8ad16-cfbb-382c-a4d9-b1382208cfff。release-group 端點：title「Ode to Life」、artist-credit「Don Pullen & The African-Brazilian Connection」（5f633e7f-12d1-4a91-a304-03275a144c16 **Group**／US）、first-release-date 1993、primary-type Album、secondary-types 空、genres 空（tags 空）。release 端點：**只有 1 筆** bbdd3b03-903c-4805-936b-ef3efd6a121c（1993 US Official CD 7 軌，無 barcode，**`label-info` 逐字 `[]`**）。Discogs 補視野（`artist=Don Pullen&release_title=Ode To Life&per_page=50` 回 5 筆、barcode 077778923329 反查回 3 筆）：4692547（US 1993 CD，Blue Note CDP 0777 7 89233 2 9）、3981313（US 1993 BMG 俱樂部版 D 125428）、21680554（Europe 同號）、20736142（無國別同號）、25730341（Japan 1993 Promo，TOCJ5834）。七軌（Discogs 4692547）：The Third House on the Right 5:04／Paraty 9:03／El Matador 6:06／Ah George, We Hardly Knew Ya 13:06／Aseeko! (Get Up and Dance!) 6:32／Anastasia／Pyramid 7:09／Variation on Ode to Life 12:00，合計 59:00。credits：Don Pullen 鋼琴與內頁文、Carlos Ward 中音／長笛、Nilson Matta 貝斯、Guilherme Franco timba／berimbau／打擊、Mor Thiam djembe／tabla／rainstick、Steven Schenfeld 製作、Michael Cuscuna 監製、Jon Fausty 錄音、Gene Paul 剪接與母帶。錄音 1993-02-18／19 Sorcerer Sound, NYC，直接錄兩軌 15 ips 半吋類比帶＋Dolby SR；1993-03-11／15 於 DB Plus 剪接母帶。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Junko Onishi Trio — Cruisin'（Discogs 查詢必用羅馬字）；Junko Onishi — Cruisin'；大西順子トリオ — クルージン；Somethin' Else TOCJ-5555；Blue Note CDP 7243 8 28447 2 3",
+  "artist": "大西順子",
+  "album": "Cruisin'",
+  "year": 1993,
+  "label": "**Somethin' Else／東芝 EMI TOCJ-5555（JP 1993-07-21 CD 9 軌，barcode 4988006686267＝MB release f494fcd9；Discogs 8781439，Promo 26149967）**；美版 **Blue Note／Somethin' Else CDP 7243 8 28447 2 3**（US 1993 CD 9 軌，Discogs 7578461，barcode 724382844723，`label` 陣列逐字含 `Blue Note`／`Somethin' Else`／`Toshiba EMI Ltd`／`Blue Note Records`／`Capitol Records, Inc.`）",
+  "why": "大西順子的第二張領班盤，1993 年 4 月 21、22 日錄音、7 月 21 日由東芝 EMI 的 Somethin' Else 線發行，同年再由 Blue Note 在美國發美版——**這是她「日本錄、美國也發」的第一張**。三重奏是 Rodney Whitaker 貝斯、**Billy Higgins 鼓**（Ornette Coleman《The Shape of Jazz to Come》與整個 1960 年代 Blue Note 的鼓手），曲目把自作曲〈Eulogia〉〈Roz〉〈Switchin' It〉夾在 Ornette 的〈Congeniality〉、Ellington 的〈Melancholia〉與〈Caravan〉、Rollins 的〈Blue Seven〉之間——**選曲本身就是在宣告她要接的是哪一條線**（Discogs 7578461／26149967 內頁；MB release f494fcd9）。實掃卡池：**漢字 `大西順子` 3 張**（seed《WOW》1993／c-152《Live at the Village Vanguard》1994／c-161《Musical Moments》2009，**後兩張在未上架批次**）、**羅馬字 `Junko Onishi` 0 張、`Junko Onishi Trio` 0 張**（這兩個字串只出現在 c-152／c-161 的 `slice.json`，卡單層都已折成漢字）、**英文字串 0 張**。**本張是她第二張，池中只缺這一張就補齊 1993–2009 那條線的前段。**",
+  "risk": "⚠ ⚠ **非拉丁掛名是獨立失效模式（第 2493 條）**：**Discogs `artist=大西順子` 回 0 筆**，本層改用 `artist=Junko Onishi` 才撈到三筆；**「回 0 筆」不等於「不是 Blue Note」**。**卡池實掃兩種字形都掃過**（漢字 3 張／羅馬字 0 張），下游任何 Discogs 或串流查詢**一律用羅馬字**，`queryAlias` 已同時收兩形。⚠ **這張不在 `enum/blue-note.json` 裡**（c-170 第 2488 條第 4 筆）：MB 兩筆 release 裡，JP 的 f494fcd9 掛的是 `somethin’else`（非 Blue Note 家族實體）、另一筆 1044266a 的 `label-info` 逐字 `[]`。**本層覆核「是 Blue Note 家族」判定：成立**——美版 Discogs 7578461 的 `label` 陣列同時含 `Blue Note` 與 `Blue Note Records`、目錄號 `CDP 7243 8 28447 2 3` 是 Blue Note 的號段，barcode 724382844723 反查 1 筆同號；**Somethin' Else 是東芝 EMI 掛在 Blue Note 之下的日本線**（同批《Hat Trick》《Jazz, My Romance》同一條線、同一位監製 Hitoshi Namekata），**不是第 2490 條那種演出場地**。⚠ **掛名取池中先例 `大西順子`（第 307 條），不取 MB RG credit 的 `Junko Onishi`**：MB 的 artist 實體名就是 `大西順子`（fc224843 Person／JP），credit 欄才寫羅馬字；池中 seed＋c-152＋c-161 **三處一致用漢字**，slice 也寫漢字——**依「照池中多數寫法、絕不新造分裂」判給漢字**，MB credit 的羅馬字寫進本欄與 `queryAlias`。⚠ **盤名撞池（同名不同碟）**：seed 有 **Village People《Cruisin'》(1978)**——**完全無關**（第 2489 條逐字點名過這一筆假陽性）；下游引用必須帶掛名。⚠ **同年同廠的另一張**：seed 的《WOW》也是 1993 年 Somethin' Else 盤（她的首張），**不得與本張混寫**。⚠ 年份 1993：MB frd **1993-07-21**（帶完整月日、JP）、Discogs 日美原壓皆 1993、barcode 反查 1993；**日本首發、美版同年**（第 817 條：首發地已核，正文不得寫成「美國首發」）。⚠ **形態閘**：`format` 逐字 `['CD','Album']`，實算 **61:37**（9 軌）——Album。⚠ **CAA RG 層 0 圖**——封面待本機補。⚠ 店面：雲端 iTunes `search` 回 403，留本機。",
+  "mbNote": "釘 release-group e50b89cb-4c01-3c6c-99d8-69f4adb37814。release-group 端點：title「Cruisin'」、**artist 實體名 `大西順子`（fc224843-542a-488e-b9e5-3dc7856d44e6 Person／JP／sort-name `Onishi, Junko`），artist-credit 的 `name` 欄逐字是 `Junko Onishi`**、first-release-date **1993-07-21**、primary-type Album、secondary-types 空、genres 空（artist 層 tags `jazz`／`post-bop`）。release 端點：f494fcd9-105b-44ee-b8e6-c2aaad79bd59（1993-07-21 JP Official CD 9 軌，barcode 4988006686267，label-info `somethin’else`／catno TOCJ-5555，artist-credit 逐字 `Junko Onishi Trio`）、1044266a-6c0c-4dec-bf5b-da9a9af2135a（無日期、無國別、媒體 None 9 軌，**`label-info` 逐字 `[]`**）。Discogs 補視野（**`artist=大西順子` 回 0 筆**；改 `artist=Junko Onishi&release_title=Cruisin&per_page=50` 回 3 筆、barcode 724382844723 反查回 1 筆）：7578461（US 1993 CD，Blue Note／Somethin' Else CDP 7243 8 28447 2 3）、8781439（Japan 1993 CD，TOCJ-5555）、26149967（Japan 1993 Promo，TOCJ-5555）。九軌（Discogs 7578461）：Eulogia 8:58／The Shepherd 6:03／Summertime 7:50／Congeniality 11:15／Melancholia 2:32／Caravan 6:21／Roz 7:58／Switchin' It 3:31（日版盤面作 Switchin' In）／Blue Seven 7:09，合計 61:37。credits：大西順子 鋼琴與共同製作、Rodney Whitaker 貝斯、Billy Higgins 鼓、Jim Anderson 錄音、Hitoshi Namekata 監製、Yoshiko Tsuge A&R、Kiyoshi Koyama 日文內頁。錄音 1993-04-21／22。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Jazz, My Romance（Blue Note CDP 7243 8 30492 2 6）；Jazz, My Romance（Somethin' Else TOCJ-5560）；Jazz, My Romance（2013 TOCJ-95022 再發）；Ron Carter — Jazz My Romance",
+  "artist": "Ron Carter",
+  "album": "Jazz, My Romance",
+  "year": 1994,
+  "label": "**Blue Note CDP 7243 8 30492 2 6（US 1994 CD 8 軌 53:57，Discogs 8815844，barcode 724383049226＝MB 唯一 release 00d0ff2f 所屬盤）**；BMG 俱樂部版 `D 106382`（Discogs 4638376）；日本 **Somethin' Else／東芝 EMI TOCJ-5560**（1994，Discogs 22210858／Promo 11782585）；2013 日本再發 TOCJ-95022（Discogs 30153800，Remastered）；Jazz Heritage 514070T（US 1995 再發，Discogs 8995633）",
+  "why": "Ron Carter 領班的無鼓三重奏盤：1994 年 1 月 4、5 日在紐約 Clinton Studios 錄音，**Kenny Barron 鋼琴、Herb Ellis 吉他**——沒有鼓手，八首曲子全靠 Carter 的低音線撐節奏。曲目是三首自作（Blues for D.P.／Quiet Times／For Toddlers Only）配五首標準曲（My Romance／Airegin／Summertime／I Fall in Love Too Easily／Sweet Lorraine），**Carter 自任製作人、Jim Anderson 錄音與混音、東芝 EMI 的 Hitoshi Namekata 監製**——與同批的《Cruisin'》《Hat Trick》《Brandenburg Concerto》同屬 1990 年代中期那條「日本企劃、Blue Note 發行」的線（Discogs 8815844 notes 與 credits；MB release 00d0ff2f）。實掃卡池 `Ron Carter` **英文字串 9 張（漢字 0／羅馬字 0）**：《Ron Carter Meets Bach》(1992, c-150)／《Friends》(1993, c-151)／《Mr. Bow-Tie》(1995, c-153)／《The Bass and I》(1997, c-154)／《Orfeu》(1999, c-156)／《When Skies Are Grey》(2000, c-157)／《The Golden Striker》(2003, c-158)／《Dear Miles,》(2006, c-160)／《Jazz & Bossa》(2008, c-161)——**九張全部在未上架批次裡、seed 一張都沒有**；另有 `Ron Carter Trio`《So What》(1998, c-168)、`Ron Carter & Danny Simmons`(c-164)、`Ron Carter, Ricky Dillard`(c-167)，以及 seed 的 `Jim Hall & Ron Carter`／`Red Garland / Ron Carter / Philly Joe Jones` 兩張聯名盤。**本張與同批《Brandenburg Concerto》(1996)、b 組《Stardust》(2001) 是他 1990 年代那條線唯三的缺口。**",
+  "risk": "⚠ ⚠ **掛名判定（本批最需要協調的一筆，b 組讀本條）**：**本批三張 Ron Carter 一律掛 `Ron Carter`**——本組《Jazz, My Romance》(1994)、《Brandenburg Concerto》(1996)，**b 組《Stardust》(2001)**。依據三層一致：**(甲) MB RG credit 原樣**，三張的 artist-credit 逐字都是單一實體 `Ron Carter`（57db3f59-9c58-4f68-a00e-e044666c4828 Person／US／`US jazz double-bassist`），**沒有任何一張帶 Trio／Quartet 尾綴**（b 組《Stardust》RG bfb6c1ec 本層已代查、credit 亦為 `Ron Carter`）；**(乙) 池中先例**（第 307 條）：`Ron Carter` 這個字串在 c-150《Ron Carter Meets Bach》立起、之後 c-151／c-153／c-154／c-156／c-157／c-158／c-160／c-161 共九張沿用，**是壓倒性多數寫法**；**(丙) `Ron Carter Trio`（c-168《So What》1998）並存、不收攏**——那是 MB 上掛 Trio 的獨立 credit，依第 964／196／197 條群組字串與個人字串並存，**第 307 條防的是同一實體的多種寫法，不是不同 credit 並存**。**b 組不得把《Stardust》寫成 `Ron Carter Trio` 或 `Ron Carter Quartet`。** ⚠ **這張不在 `enum/blue-note.json` 裡**（c-170 第 2488 條第 5 筆）：MB 唯一 release 00d0ff2f 的 `label-info` 逐字 `[]`。**本層覆核「是 Blue Note 家族」判定：成立**——Discogs 8815844／4638376 的 `label` 陣列逐字含 `Blue Note` 與 `Blue Note Records`，目錄號 `CDP 7243 8 30492 2 6` 是 Blue Note 號段，barcode 724383049226 反查 1 筆同號；**無演出場地假陽性**。⚠ **第三軌盤面印成 `Airgin`**，Discogs notes 逐字寫「The correct published title for track 3 is “Airegin.”」——**寫作層用 Airegin，並可註明盤面誤印**。⚠ 年份 1994 三層一致（Discogs 美日原壓、barcode 反查、MB frd）；**2013 年 TOCJ-95022 與 1995 年 Jazz Heritage 514070T 都是再發，不另起卡**。⚠ **形態閘**：`format` 逐字 `['CD','Album']`，實算 **53:57**（8 軌）——Album。⚠ CAA：RG 層 **1 圖、有 front**，來源 release 是原盤 00d0ff2f ✓。⚠ 店面：雲端 iTunes `search` 回 403，留本機。",
+  "mbNote": "釘 release-group d4da0e99-768e-42bd-83f3-7d37b5149f6c。release-group 端點：title「Jazz, My Romance」、artist-credit「Ron Carter」（57db3f59-9c58-4f68-a00e-e044666c4828 Person／US／`US jazz double-bassist`）、first-release-date 1994、primary-type Album、secondary-types 空、genres 空（artist 層 genres `bebop`／`hard bop`／`jazz`／`jazz fusion`／`post-bop`／`samba-jazz`）。release 端點：**只有 1 筆** 00d0ff2f-a637-43a0-9729-a5b54b3229cd（1994 US Official CD 8 軌，無 barcode，**`label-info` 逐字 `[]`**）。Discogs 補視野（`artist=Ron Carter&release_title=Jazz, My Romance&per_page=50` 回 6 筆、barcode 724383049226 反查回 1 筆）：8815844（US 1994 CD，Blue Note CDP 7243 8 30492 2 6）、4638376（US 1994 BMG 俱樂部版 D 106382）、22210858／11782585（Japan 1994，Somethin' Else TOCJ-5560）、30153800（Japan 2013 Remastered，TOCJ-95022）、8995633（US 1995 Jazz Heritage 514070T 再發）。八軌（Discogs 8815844）：Blues for D.P. 10:01／My Romance 7:18／Airgin（盤面誤印，正題 Airegin）6:39／Quiet Times 4:56／Summertime 8:22／I Fall in Love Too Easily 6:21／For Toddlers Only 4:37／Sweet Lorraine 5:43，合計 53:57。credits：Ron Carter 貝斯與製作、Kenny Barron 鋼琴、Herb Ellis 吉他、Jim Anderson 錄音與混音、Jonathan Mooney 錄音、Hitoshi Namekata 監製、Yoshiko Tsuge 共同製作、Yoshio Okazaki 母帶。錄音 1994-01-04／05 Clinton Studios, NYC。"
+ }
+]
