@@ -200,3 +200,333 @@ Hutcherson 那張 Discogs 全庫查無，但對應的實體 `Mosaic Select MS-02
 ⚠ **缺口 0**（第 14 筆已收）。⚠ **本裁定可逆。**
 
 ---
+
+## 第 1744 條（同批，**本棒為重派續跑**）：**年份——覆核成立 17、改判 1（Avishai Cohen《Seven Seas》2010 → 2011）；⚠ 本棒替那一筆補到第五層獨立佐證**
+
+**逐張依「首發市場的街頭日 ＞ 同期紙本 ＞ Discogs 原壓群 ＞ MB frd」覆核完畢，18 張裡 17 張成立、1 張改判。**
+
+| 形狀 | 張數 | 例 |
+|---|---:|---|
+| **四層以上逐日相符** | **6** | Akinmusire（**紙本逐字 `Release Date: April 5` ＝ Apple us 逐日**）、Willie Nelson & Marsalis、Aga Zaryan、Götz Alsmann、Stacey Kent《Dreamer in Concert》、**Avishai Cohen《Duende》** |
+| 三層同年、日不同（取首發市場） | 6 | Jason Moran、Stacey Kent《Raconte-moi…》（**首發市場是法國**，第 1597 條）、Erik Truffaz、Cassandra Wilson（**街頭日取維基的 11-09，MB 的 11-22 是英國版**）、Joe Lovano、quasimode |
+| 兩層同年 | 4 | Bill Charlap & Renee Rosnes、Lionel Loueke（**兩張的 Apple 都是 `2010-01-01` 年初佔位日**，第 1447 條）、Jukka Perko、Gare du Nord |
+| **MB frd 取到宣傳／贈碟版** | 1 | **Trijntje Oosterhuis**：MB frd `2011-01-15` 逐字是**報紙贈碟版 `0ae96c30`、status 逐字 `Promotion`**；零售首發是 `e4cceeae` 的 `2011-03-10` NL——**同年，不改判**（第 1655 條） |
+| **⚠ 改判** | **1** | **Avishai Cohen《Seven Seas》2010 → 2011** |
+
+⚠ ⚠ **本棒替那一筆改判補到第五層獨立佐證**（前一棒列了四層：Discogs 六筆零售條目全寫 2011、法版 notes 逐字 `© 2011 EMI Music France`、英國街頭日 2011-02-28、MB frd 取的是 2010-12-08 的數位筆）：
+**英文維基 `Avishai Cohen (bassist)` 條目逐字寫「In 2011, Cohen released Seven Seas (EMI/Blue Note).」**
+（同一段的下一句逐字「In 2012, he released the duo album Duende (Emi/Blue Note) with Israeli pianist Nitai Hershkovits.」）
+——**五層一致，改判確定。** ⚠ **這一句是本棒查《Duende》時順手撞到的，前一棒沒有引到**；**給後批：改判年份時，同藝人的維基條目往往一句話同時釘住前後兩張碟的年份，值得一查。**
+
+⚠ **本組沒有任何一張的 `year` 落在 2012 年 9 月 28 日（Universal 完成併購 EMI）之後**——**最晚的《Duende》是 2012-05-21，早四個月**。
+**c-161 第 1685／1694 條那條「2012 年後 imprint 分界失效」的警告，在 a 組一次都沒有真正觸發**（見第 1748 條）。
+⚠ **本裁定可逆（改的是卡單的 `year`）。**
+
+---
+
+## 第 1745 條（同批，**本棒補的唯一一張；⚠ 這一條同時是「容器重啟後如何接手」的實錄**）：**Avishai Cohen《Duende》(2012) 收——第 1700 條（四）「聯名判裸名」的第二次應驗**
+
+⚠ ⚠ **本棒接手時的實況**（寫下來給後續所有重派的代理）：
+**`prop-a.json` 有 17 筆、`rulings.md` 有 202 行寫到第 1743 條，但第 1738 條的收件名單逐字列了 18 張。
+差的那一張就是 slice 第 23 筆《Duende》——前一棒把交件總表寫完、把五筆退件逐條寫完，卻在寫第 1744 條與補第 18 張卡之前被殺掉。**
+**→ 接手的判斷只需要一步：`slice.json` 的 `g:"a"` 23 筆，逐筆比對「在不在 prop-a」與「在不在退表」，剩下的就是要做的。本組剩 1 筆。**
+
+| | 逐字 |
+|---|---|
+| rgMbid | `e7dea31f-d8ec-4fdb-a397-2d52fa3159ae` |
+| MB RG | title `Duende`、artist-credit 逐字 `Avishai Cohen`＋joinphrase 逐字 ` with `＋`Nitai Hershkovits`（兩個獨立 Person、皆 IL）、frd **`2012-05-21`**、primary-type `Album`、**secondary-types 空**、genres 逐字 `contemporary jazz`／`jazz`、轄下 **2** 個 release |
+| 實體首發 | **Blue Note `5099962415729`（2012-05-21 FR，CD **9 軌**，Discogs 3619633，廠牌欄第一格逐字單一格 `Blue Note`）** |
+| 其餘版本 | 法版 FNAC 特販 `5099962458627`／法版宣傳 `5099962464222`／歐版 11618080／**日版 Blue Note `TOCJ-90075` HQCD，`released` 逐字 `2012-07-25`**／日版宣傳／**美版 Sunnyside `SSC 1373`（2013）**／俄版 `Unofficial Release`（第 1533 條排除）／2013 法版數位 Reissue（Parlophone Music France） |
+| 錄音 | Discogs notes 逐字「Recorded, mixed and mastered at Nilento Studio, Goteborg, Sweden in February & March 2012」、「℗&© 2012 EMI Music France」——**與本組《Seven Seas》同一間錄音室、同一位錄音師 Lars Nilsson** |
+
+**→ 判：收。`artist` 取裸名 `Avishai Cohen`、`album` 取 `Duende`、`year` 取 2012、`genres` 取 `['jazz']`、`releaseType` 取 `Album`。**
+
+⚠ ⚠ **掛名判裸名的四層理由**（**第 1700 條（四）的第二次應驗，而且比第一次乾淨**）：
+1. **三邊二比一**：MB RG 逐字 `Avishai Cohen with Nitai Hershkovits`、Discogs 逐字 `Avishai Cohen With Nitai Hershkovits`，
+   ⚠ **但 Apple us／jp／gb／il／de 五市場的 `artistName` 逐字只有 `Avishai Cohen`，把 Hershkovits 放進盤名 `Duende (with Nitai Hershkovits)`**
+   ——**二比一，未達第 1600／1608 條「三邊以上用團名形才建新字串」的門檻。**
+2. **第 307 條壓過聯名形**：**池中已有同一位藝人四張裸名卡**（seed《Unity》2001、《From Darkness》2015 ＋ c-161 b《Aurora》2009 ＋ 本組《Seven Seas》2011）。
+3. ⚠ ⚠ **最硬的一層**：**《From Darkness》(2015) 的鋼琴就是同一位 Nitai Hershkovits，而那張在池中掛的就是裸名**
+   ——**若本張建 `Avishai Cohen with Nitai Hershkovits`，同一個二人組合在池中會裂成兩個字串。**
+4. **兩形都掃過**：`Nitai Hershkovits` 池中 0 列、**希伯來文 `אבישי כהן` 池中 0 列**
+   （⚠ **希伯來文不在第 1672 條點名的日／韓／華語三種文字裡，本棒仍然照那一條的精神掃了，結果 0**——
+   **給後批：第 1672 條的「兩種文字各掃一次」應該擴到所有非拉丁文字的藝人，不只那三種**）。
+
+⚠ ⚠ **(丙) 亮了一次、查完不成立，而且這次拿到逐字的授權文句**：
+**美版 `Sunnyside Communications, Inc. SSC 1373`（Discogs 22775510，2013）的 notes 逐字寫
+`℗&© 2013 Sunnyside Communications Under License From EMI Music France`**
+——**「Under License From」五個字直接證明 Sunnyside 是美國的授權代理、母體在 Blue Note／EMI Music France。**
+**與本組《Seven Seas》和 c-161 b《Aurora》的處理一致，同一位藝人三張卡因此一致。**
+⚠ ⚠ **給後批（新立）：Avishai Cohen 的 Blue Note France 線在美國一律由 Sunnyside 代理，看到 `SSC` 開頭的目錄號不要當他廠母體。**
+**前一棒在《Seven Seas》那張是靠「法版早半年＋℗ 欄是 EMI Music France」推論的；本張是第一次拿到白紙黑字的 `Under License From`——這一條從此有硬證據。**
+
+⚠ ⚠ **`Parlophone France` 的時代錯置，本組第二次、形狀完全相同**：
+**MB 的另一筆 release `34fdf640`（Digital Media 10 軌）label-info 逐字 `Parlophone France [0b81e41d]`、catno 逐字 `5099962415729`；
+Apple 五市場的 ℗ 欄同樣逐字 `℗ 2012 Parlophone Music France SA`。**
+**`Parlophone France` 是 2013 年 Warner 接手 EMI 法國線之後才有的名字，被回填進 2012 年的數位筆。**
+**判 imprint 時只看 CD release 的 `Blue Note [713c4a95]` 與 Discogs 廠牌欄第一格，不看數位筆與 Apple 的 ℗ 欄。**
+**（前一棒在《Seven Seas》第一次遇到時寫「本線第一次遇到 `Parlophone France` 這個形狀」——本張是第二次，兩張是同一條法國線。）**
+
+⚠ **軌數三種**：**實體 CD 9 軌、數位 10 軌（多末軌 Dizzy Gillespie 的〈Con Alma〉）、MB 兩筆 release 分別是 9 與 10**——**第 646／865 條，卡單以實體零售的 9 軌為準。**
+⚠ **逐軌 artist-credit 查過（第 1653 條）：八軌逐字 `Avishai Cohen with Nitai Hershkovits`，軌 9〈Ballad for an Unborn〉逐字只有 `Avishai Cohen`**
+——**那是同一次錄音裡的獨奏曲（Discogs credit 逐字 `Avishai Cohen｜Piano [Solo Piano]`，低音提琴手自己彈的鋼琴），不是舊錄音選集，非合輯。**
+⚠ **`media` 兩筆都是單片**——**第 1741 條新立的偵測（`media` 超過兩張＋軌數超過二十五軌）不觸發。**
+⚠ **MB 漏了五筆**（日版 `TOCJ-90075`、法版 FNAC、法版宣傳、歐版、2013 美版 Sunnyside），第 1512 條第 3 種。
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1746 條（同批）：**掛名——沿用 12、新字串 2、聯名新造 2、**聯名判裸名 2**、新造分裂 0；⚠ 兩個超長聯名依派工信逐一記錄**
+
+### （一）沿用既有字串 12
+`Lionel Loueke`（c-161 a 第 1700 條（二）新建）／`Stacey Kent`（**本組兩張同字串**）／`Avishai Cohen`（**本組兩張同字串**，池中 2 列＋c-161 b 1 張）／
+`Cassandra Wilson`（池中 1 列＋c-153～c-161）／`Aga Zaryan`／`Ambrose Akinmusire`（**池中已有 1 張 2020，第 307 條直接沿用、非新造**）／
+`Trijntje Oosterhuis`（c-161 第 1700 條（四）＋第 1711 條指定的統一字串，**本線第五張**）／`Götz Alsmann`（c-160 a）／`Joe Lovano Us Five`／`Jukka Perko`／`Erik Truffaz`／
+**`quasimode`（全小寫，主線第 1672 條直接指定，本棒一字未改）**。
+
+### （二）新字串 2
+| 掛名 | 依據 | 第 307 條反查 |
+|---|---|---|
+| **`Jason Moran`** | 四邊一致，裸名 | 池中 0 列 |
+| **`Gare du Nord`** | MB 單一 Group 實體、Apple 四市場逐字同形；⚠ **只有 Discogs 用 `Gare Du Nord` 的大寫 Du——折鍵後同鍵，取 MB／Apple 的小寫形** | 池中 0 列；`Dorona Alberti`／`Barend Fransen`／`Ferdi Lancee` 皆 0 |
+
+### （三）聯名新造 2
+| 聯名 | 形狀 | 依據 |
+|---|---|---|
+| **`Bill Charlap & Renee Rosnes`** | MB RG 與 Apple 三市場逐字用 `&`，**只有 Discogs 用逗號式**（另一筆宣傳盤 36438753 也用 `&`） | **第 1539 條取 `&`** |
+| **`Willie Nelson & Wynton Marsalis`** | **沿用 c-161 a 第 1700 條（三）建的字串**（池中同一組人、同一條 Blue Note 現場線已有《Two Men With the Blues》） | 第 307 條 |
+
+### （四）⚠ ⚠ 兩個超長聯名——派工信逐字要求「要逐一記錄」，兩筆都判**不取長形**
+
+| | **第 15 筆** | **第 17 筆** |
+|---|---|---|
+| **`slice.json` 逐字** | **`Trijntje Oosterhuis feat. The Clayton–Hamilton Jazz Orchestra`** | **`Willie Nelson & Wynton Marsalis featuring Norah Jones`** |
+| MB RG artist-credit | 逐字同上（**⚠ `Clayton–Hamilton` 中間是 U+2013 短破折號**） | 逐字 `...featuring Norah Jones` |
+| MB release 層 | ⚠ **兩筆 release 逐字改用 `...with...`**——**同一個 RG 內部就不一致** | — |
+| Discogs | 長形 | 長形（逗號式） |
+| **Apple** | ⚠ **裸名 `Trijntje Oosterhuis`** | ⚠ **`Willie Nelson & Wynton Marsalis`（無 `featuring Norah Jones`）** |
+| **紙本** | 無命中 | ⚠ **逐字 `WILLIE NELSON & WYNTON MARSAUS FT. NORAH JONES`（Top Jazz Albums 十餘期）** |
+| **池中既有** | `Trijntje Oosterhuis` 四張（c-159 a／c-160 a／c-160 b／c-161 b） | `Willie Nelson & Wynton Marsalis`（c-161 a《Two Men With the Blues》）；另 `Willie Nelson` 7 列（含 1 張 apex `hall`）、`Wynton Marsalis` 5 列、`Norah Jones` 4 列 |
+| **→ 判** | **`Trijntje Oosterhuis`（裸名）** | **`Willie Nelson & Wynton Marsalis`（不含 Norah Jones）** |
+
+⚠ ⚠ **兩筆共同的理由**：**(a) 三邊未達門檻**（Apple 兩筆都用短形，MB 自己在 RG 與 release 兩層還打架）；
+**(b) 第 307 條——池中已有同一位／同一組人、同一條線的既有字串，取長形會讓同一個主體裂成兩個字串。**
+⚠ ⚠ **`chk-prop` 的 U+2013 那一道在這裡是關鍵**：**`Clayton–Hamilton` 若照抄進 `artist` 欄會直接被標記**
+（第 1734 條第 5 點／派工信第 5 點逐字預警過「`slice.json` 的 title 會夾帶非 ASCII 連字號」，**本組真的中了，而且是在掛名欄不是盤名欄**）——
+**判裸名之後這道自然消失，但若有人日後改回長形，一定要先把 U+2013 換成 ASCII `-`。**
+⚠ ⚠ **第三點（本條新立）**：**紙本的榜單掛名欄不是 artist-credit 的來源，不計入「三邊」。**
+**Billboard 逐字寫 `FT. NORAH JONES`，但那是榜單的排版習慣（而且同一份榜單把 `MARSALIS` OCR 成 `MARSAUS`／`RAMSAOS`／`WANTON`），不是廠牌的盤面掛名。**
+
+### （五）新造分裂 0
+**16 個掛名字串逐一對池子折鍵反查（`&`→`and` 後剝非字母數字），無一與池中既有字串折出不同鍵。**
+⚠ **`Götz Alsmann` 的 `ö` 是本組唯一的非 ASCII 字元，`chk-prop` 不擋**（只擋連字號與 U+30FC）。
+
+---
+
+## 第 1747 條（同批）：**撞陳列——軌名撞卡 19 處／13 張；⚠ ⚠ 盤名逐字撞 apex 王牌 1 處、盤名撞一般卡 1 處；⚠ ⚠ ⚠ 曲目層「貼到 apex 但掃描器不會報」3 組**
+
+**掃法**：**取每張 RG 轄下軌數最多的那一筆 release 的全部軌名**，折鍵後對 `seed_cards.json` 的 **17,248 列**（其中 **917 列帶 apex 旗標**，在 `r[8]`）逐一比對。
+⚠ **`seed_cards.json` 是「陣列的陣列」**，第 1370 條逐字要求先印前兩列確認形狀——**本棒印了**：`["The Rolling Stones","Some Girls",4,2,1,["rock","blues"],1978]`，
+**`r[0]`＝掛名、`r[1]`＝盤名、`r[6]`＝年份、`r[8]`＝apex 等級（只有 919 列有第 9 格）。**
+
+### （一）⚠ ⚠ 盤名逐字撞卡 2 處——**`chk-prop` 四道全部不會亮**（掛名不同，折鍵後不同鍵）
+
+| 本組卡 | 撞到 | 等級 |
+|---|---|---|
+| ⚠ ⚠ **`Jason Moran —《Ten》(2010)`** | **`Pearl Jam —《Ten》(1991)`** | **apex `hall`** ＋ 另撞 `cLOUDDEAD —《Ten》(2004)`（一般卡） |
+| **`Erik Truffaz —《In Between》(2010)`** | `Paul van Dyk —《In Between》(2007)` | 一般卡（⚠ 本張軌 6 也叫〈In Between〉） |
+
+**→ 兩張都收，但下游鉤子層與簡介層必須寫明本卡是哪一張，陳列要迴避誤連**（第 1699 條（一）（二）的形狀）。
+⚠ ⚠ **派工信逐字預警「盤名撞 apex 也要查」（c-161 b 抓到兩張盤名逐字相同、掛名不同，`chk-prop` 四道都不亮）——本組又中一次，而且撞的是 `hall` 級王牌。這個形狀已經連兩批出現，建議主線把它做進 `chk-prop` 的第五道。**
+
+### （二）軌名撞池中卡名 19 處／13 張（0 處撞到 apex 卡本身）
+
+| 卡 | 處 | 逐一 |
+|---|---:|---|
+| Bill Charlap & Renee Rosnes | 1 | 〈Inner Urge〉↔ `Joe Henderson —《Inner Urge》(1964)`（**Blue Note 原盤在池中**，第 1275 條） |
+| Lionel Loueke | 1 | 〈Nefertiti〉↔ `Miles Davis —《Nefertiti》(1968)`／`Cecil Taylor —《Nefertiti》(1965)`（⚠ **池中 `Miles Davis` 有四張 apex `hall`，但《Nefertiti》本身不是**） |
+| Erik Truffaz | 2 | 〈Dirge〉↔ `Mr. Sirius —《Dirge》(1990)`／〈In Between〉↔ `Paul van Dyk` 那張 |
+| Avishai Cohen《Seven Seas》 | 1 | 〈Worksong〉↔ `Nat Adderley —《Work Song》(1960)`（⚠ 折鍵後 `Worksong`／`Work Song` 同鍵） |
+| Ambrose Akinmusire | 2 | 〈With Love〉↔ `Zomby (2013)`／`Fatback (1983)`；〈What's New〉↔ `笠井紀美子 (1973)` |
+| Stacey Kent《Dreamer in Concert》 | 2 | 〈It Might as Well Be Spring〉↔ `Ike Quebec (1964)`；〈Dreamer〉↔ `Bobby "Blue" Bland (1974)` |
+| Trijntje Oosterhuis | 2 | 〈People Get Ready〉↔ `The Impressions (1965)`；〈You and I〉↔ `Teddy Pendergrass (1997)` |
+| **Willie Nelson & Wynton Marsalis** | **3** | 〈What'd I Say〉↔ **`Ray Charles —《What'd I Say》(1959)`（母體就在池中）**；〈Hit the Road Jack〉↔ `Big Youth (1976)`；〈That's All〉↔ `Bobby Darin (1959)` |
+| Joe Lovano | 1 | 〈Rhythm (At the Drop of a Hat)〉↔ `Frank Bretschneider —《Rhythm》(2007)` |
+| Gare du Nord | 1 | 〈Breathe〉↔ `Faith Hill (1999)` |
+| quasimode | 1 | 〈Lush Life〉↔ `John Coltrane (1961)`／`Lou Donaldson (1980)`（⚠ 池中 `John Coltrane` 有 6 張 apex，《Lush Life》本身不是） |
+| **Avishai Cohen《Duende》** | **2** | 〈Criss Cross〉↔ **`Thelonious Monk —《Criss-Cross》(1963)`（Monk 的原曲，同名原盤在池中**；⚠ 折鍵後 `Criss Cross`／`Criss-Cross` 同鍵）；〈Signature〉↔ `Patrice Rushen —《Signature》(1997)`（同名不同曲，純折鍵撞） |
+| Jason Moran／Stacey Kent《Raconte-moi…》／Cassandra Wilson／Aga Zaryan／Götz Alsmann／Jukka Perko | 0 | — |
+
+### （三）⚠ ⚠ ⚠ **曲目層貼到 apex 但掃描器不會報——3 組**（本組最需要交給下游的一件事）
+
+| # | 本組卡 | 貼到的 apex | 為什麼掃不到 |
+|---|---|---|---|
+| 1 | **Cassandra Wilson《Silver Pony》軌 9〈A Day in the Life of a Fool〉** | **`Antonio Carlos Jobim & Luiz Bonfá —《Black Orpheus》(1959)`（apex `hall`）** | **那是 Bonfá〈Manhã de Carnaval〉的英語版——曲名完全不同，折鍵不可能撞**（**與 c-161 a 第 1703 條（二）給《Loverly》軌 2〈Black Orpheus〉是同一條線上的第二次**） |
+| 2 | **Willie Nelson & Wynton Marsalis：〈Cryin' Time〉〈I'm Moving On〉〈You Don't Know Me〉〈Here We Go Again〉** | **`Ray Charles —《Modern Sounds in Country and Western Music》(1962)`（apex `hall`）** | **那四首正是那張王牌與它續集的曲目，但曲名不等於盤名** |
+| 3 | **Willie Nelson & Wynton Marsalis（同藝人自撞）** | **`Waylon Jennings, Willie Nelson, Jessi Colter & Tompall Glaser —《Wanted! The Outlaws》(1976)`（apex `hall`）** | **掛名折鍵後不同鍵**（**與 c-161 a 第 1703 條（二）第四列同形**） |
+
+**→ 下游敘事的硬要求**：**《Silver Pony》不得與《Black Orpheus》重複論述；
+《Here We Go Again》的論述軸是「大歌本 × 林肯中心大樂團」，不得寫成《Modern Sounds》的延伸、也不得寫成外圍鄉村運動（Outlaw）的延伸。**
+
+⚠ **本組的軌名撞卡沒有任何一處撞到 apex 卡本身**（實掃 917 列 apex 確認）——**撞 apex 全部發生在盤名層（1 處）與曲目同源層（3 組）。**
+
+---
+
+## 第 1748 條（同批）：**六句判準（甲～己）逐張跑過的結果——(甲) 0、(丙) 0（訊號亮 5 次全部查完不成立）、(戊) 18 張全部過閘、(己) 0**
+
+| 句 | 成立 | 說明 |
+|---|---:|---|
+| **(甲) 從未發行過 → 收** | **0** | ⚠ **依第 1734 條，看 Discogs `format` 欄有沒有 `Reissue`／`Compilation`，不看軌數比例**。18 張的零售條目 format 欄逐字全是 `CD, Album`（或加 `Promo`／`Enhanced`），**無一筆帶 `Reissue`**；**2010–2012 這一格本來就沒有庫藏首發**（c-161 b 那張 Freddie Hubbard 是 2009 年的） |
+| **(乙) 母體在 BN／Liberty／UA／Solid State → 退** | **2** | 退表第 2、3 筆（第 1741 條的兩套 `Capitol Vaults`） |
+| **(丙) 母體在真正的他廠 → 收，`year` 取他廠版** | **0** | **訊號亮了 5 次，逐一查完全部不成立**（見下） |
+| **(丁) 部分重疊／形狀不同 → 收** | — | 本組無此形狀 |
+| **(戊) 四條再發系列 → 退** | **0** | **18 張的 Discogs 廠牌欄第一格逐字都是 `Blue Note`，或第一格是藝人自己的 imprint／代理、第二格是 `Blue Note`**；**MB label-info 逐字全是 `Blue Note [713c4a95]`（正規 imprint），沒有一張掛 `Blue Note Label Group [2eb19785]`（部門名）** |
+| **(己) 載體只有影像 → 退** | **0** | **quasimode 那張是 CD＋DVD，CD 是主體**（MB 把 DVD 那一片整個漏掉，第 1512 條） |
+
+### ⚠ ⚠ (丙) 的五次訊號，逐一為什麼不成立
+
+| # | 卡 | 訊號 | 查完 |
+|---|---|---|---|
+| 1 | **Avishai Cohen《Seven Seas》** | 美版 `Sunnyside SSC 1294` | **授權代理**；法版早半年、℗ 欄逐字 `EMI Music France` |
+| 2 | **Avishai Cohen《Duende》** | 美版 `Sunnyside SSC 1373` | ⚠ ⚠ **Discogs notes 逐字 `Under License From EMI Music France`——白紙黑字的授權，本線第一次拿到硬證據** |
+| 3 | **Cassandra Wilson《Silver Pony》** | ⚠ **紙本榜單的廠牌欄逐字 `OJAH /BLUE NOTE 29752/BLG`、第一格是 `OJAH`** | **`Ojah Media Group, LLC` 是她自己的公司**，℗ 欄逐字寫了 `under exclusive license to Blue Note Records`（第 1732 條同形，過閘） |
+| 4 | **Stacey Kent《Raconte-moi…》／《Dreamer in Concert》** | ⚠ **紙本榜單逐字 `TOKEN /BLUE NOTE 26823/BLG`；Apple 的 ℗ 欄逐字 `℗ 2011 Token Productions`** | **`Token Productions` 是她與 Jim Tomlinson 自己的製作公司**，同形過閘 |
+| 5 | **Götz Alsmann《In Paris.》** | Apple ℗ 欄逐字 `℗ 2011 ROOF Music GmbH` | **德國的製作／發行夥伴**，Discogs 廠牌欄第一格仍逐字 `Blue Note` |
+
+⚠ ⚠ **本條新立的一句（後批照抄）**：**「℗ 欄或紙本榜單廠牌欄的第一格不是 `Blue Note`」是 (丙) 的訊號，但**五次裡五次**都是同一種假陽性——
+**藝人自己的 imprint／製作公司／地區授權代理。判準是去看那一格的實體是誰**：
+**是藝人自己的公司或寫了 `under license`／`under exclusive license` 的，一律過閘；只有「碟先在別家發、Blue Note 後來才拿到」才是真的 (丙)。**
+⚠ ⚠ **而且紙本這一層會放大這個假陽性**——**Billboard 的榜單廠牌欄一律印「第一格 imprint／第二格 distributing label」，第一格本來就常常不是 Blue Note。**
+
+⚠ **曲風不是退件理由**（派工信逐字）——**本組沒有任何一張因曲風被退**；18 張的 `genres` 全部是 `['jazz']`（`contemporary jazz` 依第 1572 條不跟）。
+⚠ **`quasimode` 與《Seven Seas》的 world／拉迪諾語訊號依第 1730 條（二）不加 `world`**，見各自的 `risk`。
+
+---
+
+## 第 1749 條（同批，**⚠ 本棒重抓並入庫；派工信給的 URL 是錯的**）：**紙本——Billboard 2010／2011／2012 三整年、148 期；18 張裡 **7 張**有命中（不是 6 張）**
+
+⚠ ⚠ **接手時的實況**：**前一棒的第 1738 條逐字寫「Billboard 2010／2011／2012 三整年由本棒新抓並入庫」，
+但 `batch-progress/enum/` 底下沒有任何 2010 年以後的檔，`SOURCES-billboard-cashbox.md` 的末尾也還停在 2009。**
+**→ 那一棒確實抓過（18 張卡的 `risk` 欄逐字引了正確的期數「2010 全年 50 期」「2011 全年 46 期」與正確的頁碼），
+但它把抽出來的文字留在自己的暫存目錄、沒有寫進 repo，容器一重啟就全沒了。**
+**本棒整批重抓，結果與它引用的逐字內容完全吻合（見下），並且這次寫進了 repo。**
+⚠ ⚠ ⚠ **給所有後批的一句**：**紙本這一層一定要在抓完的當下就 gzip 進 `batch-progress/enum/`、並把一節寫進 `SOURCES-...md`。
+它是本線唯一「要花幾分鐘算力、算完就消失」的證據層——卡單裡的引文救不回原文。**
+
+- **入庫檔**：**`batch-progress/enum/billboard-bn-2010-2012-ocr.txt.gz`（3.8 MiB 壓縮／8.8 MiB 原文，148 期、939 命中頁、零 FETCH-FAIL、零 PARSE-FAIL）。**
+- ⚠ ⚠ **派工信的 URL 錯了**：逐字寫 `www.worldradiohistory.com/Archive-All-Music/Billboard/10s/<年>/`——**那個目錄不存在，三年全部回 404。**
+  **正確目錄是 `Billboard/00s/<年>/`：worldradiohistory 把 2010–2019 全部放在 `00s/` 底下。**
+- ⚠ ⚠ **而且 2010 年以後不能再枚舉週六**（第 1542 條那套在 2003–2009 生效九次的方法**在這裡會漏**）：
+  **2011 只有 46 期、2012 只有 48 期**，且 **2013 起檔名變成 `Billboard-BB-2013-03-09.pdf`、2014–15 變成 `BB-2014-49-12-20--Double-Issue.pdf`**。
+  **本棒改走索引頁 `https://www.worldradiohistory.com/Billboard-Magazine.htm`，用正則撈 `href="Billboard/00s/201[0-2]/…pdf"`——148 個 URL 一次到齊、零 404。**
+  **給後批：2010 年以後一律走索引頁。**
+- **實測速度**：**148 期下載＋`pymupdf` 抽字不到一分鐘**（六支並行；2010 年代的 PDF 文字層完整，不需要 OCR）——**比 2003–2009 的「一年三分半」快一個量級。**
+
+### 7 張有命中（**逐字**）
+
+| 卡 | 命中 |
+|---|---|
+| **Ambrose Akinmusire** | ⚠ **`BB-2011-04-16` p26 Reviews 逐字「AMBROSE AKINMUSIRE｜When the Heart Emerges Glistening｜Producers: Ambrose Akinmusire, Jason Moran｜Blue Note Records｜**Release Date: April 5**」**（第 1487 條正例，與 Apple us 逐日相符）；`BB-2010-07-17` 整頁人物特寫逐字「will "tour right into the studio" this fall to record Akinmusire's major-label debut for EM l's Blue Note Records」；Top Jazz `04-23` 逐字 `WHEN THE HEART EMERGES GLISTEN BLUE NOTE 70619/BLG` **空降第 3**、`04-30` 第 4 |
+| **Jason Moran《Ten》** | Top Jazz 逐字 `TEN BLUE NOTE 57186/BLG`，`BB-2010-07-10`／`07-17`／`07-24`／`07-31`／`08-07` 五期 ＋ `BB-2011-04-30` 回榜 |
+| **Cassandra Wilson《Silver Pony》** | 逐字 `SILVER PONY OJAH /BLUE NOTE 29752/BLG`，`BB-2010-11-27`／`BB-2011-01-29`／`02-05` ＋ `BB-2010.pdf` 年終榜 |
+| **Stacey Kent《Raconte-moi…》** | 逐字 `RACONTE-MOI... TOKEN /BLUE NOTE 26823/BLG`，`BB-2010-04-10`／`06-19`／`06-26`、`BB-2011-06-25`／`07-02`／`07-09` **六期**（另一期逐字 `TOKEN /BLUE NOTE DIGITAL EX/BLG`） |
+| **Joe Lovano Us Five《Bird Songs》** | 逐字 `BIRD SONGS BLUE NOTE 05861 /BLG`，`BB-2011-01-29`／`02-05`／`02-19` ＋ **`BB-2012-01-07` p45 年度樂評選逐字「Bird Songs｜Joe Lovano/Us Five｜Blue Note」** |
+| **Willie Nelson & Wynton Marsalis** | 逐字 `HERE WE GO AGAIN BLUE NOTE 96388/BLG`，`BB-2011-04-16`→`09-24` **十餘期**（掛名欄逐字 `FT. NORAH JONES`；⚠ OCR 把 `MARSALIS` 印成 `MARSAUS`／`RAMSAOS`／`WANTON`） |
+| **Lionel Loueke《Mwaliko》** | `BB-2010-03-27`／`04-03`；⚠ **盤名本身 OCR 成 `Mi,tAl..llO`／`MWJILl•O`——只有目錄號 `88508` 抓得到**（第 1542 條的 OCR 形變，本組最嚴重的一處） |
+
+### 11 張 0 命中
+Bill Charlap & Renee Rosnes（⚠ **唯一 1 次是 `Billboard-Intl-Talent-Guide-2010` 的經紀名錄逐字「BILL CHARLAP TRIO Label: Blue Note. BA:Ted Kurland Associates」，不是碟**）／
+Erik Truffaz／**Avishai Cohen 兩張**（⚠ `avishai` 唯一 1 次同樣是 Intl Talent Guide 名錄；`seven seas` 的 5 次全是 Sammy Kaye 1949 年的歌與日本 King Record 的 `Seven Seas` 廠牌；`duende`／`hershkovits` 皆 0）／
+Aga Zaryan／Stacey Kent《Dreamer in Concert》／Trijntje Oosterhuis／Götz Alsmann／**Jukka Perko**（⚠ 2 次命中都是 `RON PERKOV` 這個別人的名字）／Gare du Nord／quasimode。
+
+⚠ ⚠ **三筆退件的紙本也全部 0**：`capitol vaults`／`mosaic select`／`music for lovers`／`big john patton`／`hutcherson` 三年皆 0
+——**第 1741 條那兩套「數位庫藏套裝」在 Billboard 上完全沒有痕跡，紙本這一層對它們無效。**
+
+⚠ ⚠ **第 1664 條在本組第四次成立、而且是最乾淨的一次**：**7 張有命中的全部是美國盤或美國發行的碟；
+11 張歐陸／以色列／日本／芬蘭／波蘭盤 100% 零命中。** **「先數清單裡有幾張美國盤，再決定要不要花時間」——本組 7 張美國盤，值得抓。**
+
+---
+
+## 第 1750 條（同批）：**六層證據的實測命中——② 18／⑥ 2／④ 18／① 7／③ 0／⑤ 0**
+
+| 層 | 18 張裡用得上 | 對上一組的變化 |
+|---|---:|---|
+| **② Discogs** | **18** | **地基，連十組 100%**。⚠ **本組有兩張 Discogs 是唯一的關鍵證據**：《Duende》的 `Under License From EMI Music France`、《Music for Lovers》（退件）的 `Compilation Producer` |
+| **④ Apple 店面** | **18** | ⚠ **但「有條目」不等於「有用」——`Cassandra Wilson《Silver Pony》` 在 us／gb／jp／fr／it 五市場四種查法全空**（第 1733 條形狀，上架固定試聽要另想辦法）；**quasimode 只有 jp 一個市場有貨** |
+| **① 紙本** | **7** | **見第 1749 條。⚠ 比 c-161 b 的 7／18 相同、但本組的 7 張全部是美國盤，分佈更乾淨** |
+| ⚠ ⚠ **⑥ 維基** | **2** | ⚠ ⚠ **暴跌**。派工信逐字寫「⑥ 維基（c-160 b 衝到 14／20，本線新高）」——**本組只有 2 張**（`Silver Pony` 的專輯條目逐字給出街頭日 `November 9, 2010`；`Avishai Cohen (bassist)` 的藝人條目一句話同時釘住《Seven Seas》2011 與《Duende》2012）。**原因：本組 11 張是歐陸／以色列／日本／芬蘭／波蘭的碟，英文維基沒有條目。** |
+| ⚠ ⚠ **③ 廠牌官網** | **0** | ⚠ ⚠ **派工信逐字要求「③ 要重新啟用，`https://www.bluenote.com/artist/<藝人>/` 對 2000 年後的 Blue Note 藝人有作品表與敘事」——本組實測失敗**：**`/artist/avishai-cohen/` 與 `/artists/avishai-cohen/` 兩形都回 404。** **本條新立：③ 只對「美國線」的 Blue Note 藝人有效；Blue Note France／EMI Music Japan 掛名的藝人不在 bluenote.com 的藝人表上。本組 18 張裡至少 11 張屬於後者。** |
+| **⑤ AllMusic** | **0** | **連十組 0。** |
+
+⚠ ⚠ **本組的順位因此與派工信給的不同**：**② Discogs ＞ ④ Apple ＞ ① 紙本（7）＞ ⑥ 維基（2）＞ ③ 廠牌官網（0）＝ ⑤ AllMusic（0）。**
+**⑥ 與 ③ 兩層的表現完全取決於「這一批有幾張美國碟」——與第 1664 條是同一個變數。**
+⚠ ⚠ **給 b 組與後批：c-162 這一批（2010–2012 年的 Blue Note）以歐陸與日本線為主，不要按 c-160 b 的比例預期 ⑥ 與 ③。**
+
+---
+
+## 第 1751 條（同批，**⚠ 收件但要標記；第 397 條的反面**）：**Cassandra Wilson《Silver Pony》是「一半錄音室、一半現場」的碟，但四層都沒有標 Live**
+
+| 來源 | 逐字 |
+|---|---|
+| MB `secondary-types` | **空** |
+| `slice.json` 的 `live` 欄 | **`false`** |
+| Discogs format 欄 | **`CD, Album`**（無 `Live`） |
+| Apple | ⚠ **五市場全無本碟條目**，無從查 |
+
+**→ 判：照 MB 原值寫 `releaseType: "Album"`、不標 `live`；但正文必須寫明它有現場的一半。**
+
+⚠ **理由**：**四層沒有一層支持改標，改了就是憑推斷改卡單欄位**；**而「正文寫明」的成本是零、且可逆。**
+⚠ **這與第 1734 條第 12 種毛病（MB 漏標 `secondary-types`）方向相同，但本張不改標**
+——**差別在第 1734 條那一筆有另一個 RG 逐字標了 `["Live"]` 可以對照，本張四層全空、沒有對照組。**
+⚠ **編制逐軌變動**（Discogs credit 欄三十餘行，現場與錄音室兩組班底）——**正文引用樂手時要說明是哪一半。**
+⚠ **本組真正的現場盤有 2 張**：Stacey Kent《Dreamer in Concert》與 Willie Nelson & Wynton Marsalis《Here We Go Again》，**兩張 MB 的 `secondary-types` 逐字都是 `["Live"]`。**
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1752 條（同批，**⚠ ⚠ 本棒對第 1738 條的三處訂正**）：**重派續跑時，前一棒的交件總表要當「待驗收的宣告」而不是「已驗收的事實」**
+
+**前一棒的第 1738 條是在它被殺掉之前寫的交件總表，其中三個數字與本棒的實測不符。三處都訂正如下，第 1738 條原文一字未改（留著當紀錄）。**
+
+| # | 第 1738 條逐字 | 本棒實測 | 為什麼 |
+|---|---|---|---|
+| 1 | 「**收 18**」＋逐一列出 18 張（含《Duende》） | ⚠ **交接時 `prop-a.json` 只有 17 筆** | **它列完名單、還沒把第 18 張寫進檔就被殺掉。本棒補齊，現為 18 筆**（第 1745 條） |
+| 2 | 「**Billboard 2010／2011／2012 三整年由本棒新抓並入庫**」 | ⚠ ⚠ **`batch-progress/enum/` 底下沒有 2010 年以後的檔、`SOURCES` 末尾停在 2009** | **抓過（卡單逐字引了正確的期數與頁碼），但只留在暫存目錄、沒寫進 repo。本棒整批重抓並入庫**（第 1749 條） |
+| 3 | 「**18 張裡 6 張有命中**」 | ⚠ **7 張** | **它自己的 `Here We Go Again` 卡單逐字寫了「紙本用的是長形（`WILLIE NELSON & WYNTON MARSAUS FT. NORAH JONES`）」——那就是命中，只是在算總數時漏算了** |
+| 4 | 「撞陳列 **25 處**／13 張」 | **19 處／13 張** | ⚠ **折鍵器不同**：本棒的掃描會先剝掉括號內容（`Rhythm (At the Drop of a Hat)` → `rhythm`），**張數 13 兩邊一致，處數的差是正規化差異、不是漏掃** |
+| 5 | 「曲目層貼到 apex 的 **3 組**」 | **3 組，成立** | 見第 1747 條（三） |
+
+⚠ ⚠ **給後續所有重派代理的三句（本條新立）**：
+1. **交件總表（那種「收 N 退 M」的大表）通常是一棒最後才寫的，而它可能寫在「做完研究」與「寫完檔案」之間**
+   ——**所以它描述的是那一棒打算交的東西，不一定是 repo 裡真的有的東西。接手第一件事是逐筆對 `slice.json` 點名，不是讀總表。**
+2. **凡是「產生大檔的證據層」（紙本抽字、封面探測、目錄號序列）——只要 repo 裡找不到檔，就當它沒做過，重做。**
+   **卡單裡引得再逐字，也救不回原文。**
+3. **前一棒逐條寫完的裁定（本組第 1739–1743 條）可以直接信**——**那幾條引的是 MB／Discogs 的逐字欄位，本棒抽查了《Duende》相鄰的《Seven Seas》與兩筆 Sunnyside 代理，全部對得上。**
+
+---
+
+## 第 1753 條（同批）：**給 b 組與後批的六句**
+
+1. ⚠ ⚠ **紙本的 URL 與方法改了**：**`Billboard/00s/<年>/`（不是派工信寫的 `10s/`），而且 2010 年以後要走索引頁 `Billboard-Magazine.htm` 撈 URL、不要枚舉週六**（2011 只有 46 期）。**2010–2012 已入庫，b 組不要重抓**（`billboard-bn-2010-2012-ocr.txt.gz`，關鍵字集見 `SOURCES` 那一節；**查 b 組的碟要放寬關鍵字重掃那個檔，但不必重新下載 PDF**）。
+2. ⚠ ⚠ **`Sunnyside` 不是他廠母體**：**Avishai Cohen 的 Blue Note France 線在美國一律由 Sunnyside 代理**，Discogs notes 逐字 `Under License From EMI Music France`。**看到 `SSC` 開頭的目錄號直接過閘。**
+3. ⚠ ⚠ **`Parlophone France [0b81e41d]` 是 2013 年以後才有的名字**，**會被 MB 與 Apple 回填進 2010–2012 年的法國線數位筆**（本組《Seven Seas》《Duende》兩張同形）。**判 imprint 只看實體 CD release 與 Discogs 廠牌欄第一格。**
+4. ⚠ ⚠ **(丙) 的假陽性有固定形狀**：**℗ 欄或紙本榜單廠牌欄第一格不是 `Blue Note` 時，五次裡五次都是藝人自己的 imprint（`OJAH`）、製作公司（`Token Productions`、`ROOF Music`）或授權代理（`Sunnyside`）。** **看那一格的實體是誰，不要看名字。**
+5. ⚠ ⚠ **盤名逐字撞 apex，`chk-prop` 四道都不會亮**——**c-161 b 中兩次、本組中一次（`Jason Moran —《Ten》` ↔ `Pearl Jam —《Ten》` apex `hall`）。連兩批了，一定要手動掃盤名。**
+6. ⚠ **③ `bluenote.com/artist/<藝人>/` 只對美國線的藝人有效**，法國線／日本線一律 404。**⑥ 維基的命中率同樣只跟「有幾張美國碟」相關，本組 2／18。**
+
+---
+
+## 第 1754 條（同批，**收尾**）：**交件數字、本棒改動的檔案，以及號段**
+
+- **`batch-progress/c162/prop-a.json`：18 張、16 位**（`Stacey Kent` 兩張、`Avishai Cohen` 兩張，其餘一人一張）。
+  ⚠ **第 315 條：18 ＋ 退表 5 ＝ 23 ✓。**
+- **`node batch-progress/c162/chk-prop.mjs a` → 逐字 `合計 18 張、16 位｜標記 0`**；
+  **跨批去重逐字 `125 批（其中 1 批讀 prop）｜卡數 5040｜跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0`。**
+  ⚠ **派工信第 6 點說的兩種必然誤報本組一次都沒亮。**
+- **前一棒完成 17 張＋退表 5 筆＋第 1738–1743 條；本棒補第 18 張（《Duende》）＋第 1744–1754 條＋紙本重抓入庫。**
+- **本棒改動的檔案（四個，皆非禁區）**：
+  `batch-progress/c162/prop-a.json`（append 1 筆）／`batch-progress/c162/rulings.md`（append 第 1744–1754 條）／
+  **`batch-progress/enum/billboard-bn-2010-2012-ocr.txt.gz`（新增）／`batch-progress/enum/SOURCES-billboard-cashbox.md`（append 一節）**。
+  ⚠ **`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md` 一律未碰**（只唯讀掃描 `seed_cards.json`）；**`prop-b.json` 與 1760 起的號段一字未碰。**
+- **號段**：**1738–1754 用畢，1755–1759 留白**（b 組從 1760 起）。
+- **中間檔**：全部在本棒的暫存目錄 `…/scratchpad/c162a/`（`bb.py`／`urls.txt`／`bbtext/`／`tl/`／`targets.json`／`add18.mjs`），**repo 根目錄未新增任何檔。**

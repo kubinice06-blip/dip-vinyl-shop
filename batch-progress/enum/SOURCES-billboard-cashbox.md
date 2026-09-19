@@ -1388,3 +1388,49 @@ Carnegie Hall performance were found in the Library of Congress**」（**判 (�
   **`chano` 唯一 1 次命中是 `BB-2009-07-04` p39 的 JVC 爵士節節目表逐字「JUNE 30: Stevie Wonder, Wynton Marsalis and the Jazz at Lincoln Center Orchestra with pianist Chano Dominguez」——講的是一場演出，不是那張 2010 年的碟**（第 1250 條「查得到人、查不到碟」）；
   **`36957`（Freddie Hubbard 的目錄號）全年 0 命中——那張碟有評介、沒有榜位。**
 - **到此合計覆蓋：Billboard 1955→2009 全年**（2005 缺 3 期、2006／2007／2008 各缺 1 期、**2009 缺 2 期**，其餘無斷點）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2010 以後尚未抓。**
+
+---
+
+## 2026-09-19 再追加（c-162 **a 組**策展層自抓：**Billboard 2010／2011／2012 三整年**）
+
+- **檔案**：`batch-progress/enum/billboard-bn-2010-2012-ocr.txt.gz`（**3.8 MiB 壓縮／8.8 MiB 原文**，**148 期**、**939 命中頁**、**零 FETCH-FAIL、零 PARSE-FAIL**）。
+  **三年併成一個檔**（與 2003–2009 一年一檔不同），每期以 `######## BB-YYYY-MM-DD ########` 分隔。
+- ⚠ ⚠ **派工信給的 URL 是錯的，這一條要改掉**。派工信逐字寫
+  `www.worldradiohistory.com/Archive-All-Music/Billboard/10s/<年>/`——**那個目錄不存在，2010／2011／2012 三年全部回 404**。
+  **正確的目錄是 `Billboard/00s/<年>/`**：**worldradiohistory 把 2010–2019 全部放在 `00s/` 底下**
+  （實測 `00s/2010/`～`00s/2019/` 都有內容）。**c-161 b 那一節末尾寫的 `BB-2010-01-16` 探測回 206，用的就是 `00s/`，只是當時沒寫出目錄名。**
+- ⚠ ⚠ **而且 2010 年以後不能再用「枚舉當年週六」**（第 1542 條那套在 2003–2009 生效九次的方法**在這裡會漏**）：
+  **2011 只有 46 期、2012 只有 48 期，而且 2013 起檔名改成 `Billboard-BB-2013-03-09.pdf`、2014–15 起變成
+  `BB-2014-49-12-20--Double-Issue.pdf` 這種帶期號與 `Double-Issue` 的形狀。**
+  **本棒改用「抓 `https://www.worldradiohistory.com/Billboard-Magazine.htm` 這一頁的索引、用正則把 `href="Billboard/00s/201[0-2]/…pdf"` 全部撈出來」**
+  ——**148 個 URL 一次到齊、零 404。給後批：2010 年以後一律走索引頁，不要枚舉日期。**
+- **每年期數**：**2010 = 50 期、2011 = 46 期、2012 = 48 期**（另含 `BB-2010.pdf` 年終合輯、`BB-2011-BBMA.pdf`、`BB-2011-Charts.pdf`
+  與 `Billboard-Intl-Talent-Guide-2010.pdf` 等專刊，一併收進本檔）。
+- **抽字法**：照第 1542 條用 `pymupdf` 抽文字層，**沒有跑 OCR**。⚠ **148 期下載＋抽字實測不到一分鐘**
+  （比 2003–2009 的「一年約三分半鐘」快得多——**本棒六支並行、且 2010 年代的 PDF 有完整文字層**）。
+- **關鍵字集（約 70 個）**：通用詞（`blue note` 與五種 OCR 形變／`/blg`／`top jazz`／`top jall`／`top jail`／`jazz albums`／
+  `contemporary jazz`／`traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`toct`／`toshiba emi`／`emi music japan`／
+  `somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／`emi jazz`／**`capitol vaults`／`mosaic select`**）
+  ＋ c-162 a 的 23 個藝人名與盤名 ＋ 目錄號片段（`57186`／`58320`／`27560`／`88508`／`62682`／`08278`／`91739`／`94954`／
+  `62975`／`07145`／`07146`／`71106`／`79125`／`26725`／`96388`／`01565`／`05861`／`95601`／`67994`／`90020`／`49549`／`41572`／
+  `40725`／`57615`／`79559`）。⚠ **查別的 2010–12 年碟要重抓或放寬關鍵字。**
+- ⚠ ⚠ **產出：c-162 a 收下的 18 張裡 7 張有命中**（**不是 6 張**——見 rulings 第 1749／1752 條）。
+  **7 張全部是美國盤或美國發行的碟，11 張歐陸／以色列／日本／芬蘭／波蘭盤 100% 零命中**
+  ——**第 1664 條「先數清單裡有幾張美國盤，再決定要不要花時間」在本組第四次成立。**
+- ⚠ **2010–2012 年最有用的五處**：
+  **`BB-2011-04-16` p26 Reviews 欄逐字「AMBROSE AKINMUSIRE｜When the Heart Emerges Glistening｜Producers: Ambrose Akinmusire, Jason Moran｜Blue Note Records｜Release Date: April 5」**
+  （**第 1487 條的正例：紙本直接給出街頭日**；另有 `BB-2010-07-17` 的整頁人物特寫逐字「will "tour right into the studio" this fall to record Akinmusire's major-label debut for EM l's Blue Note Records」
+  ＋ Top Jazz Albums `04-23` 逐字 `WHEN THE HEART EMERGES GLISTEN BLUE NOTE 70619/BLG` 空降第 3、`04-30` 第 4）；
+  **Jason Moran《Ten》Top Jazz Albums 逐字 `TEN BLUE NOTE 57186/BLG`**（`BB-2010-07-10`／`07-17`／`07-24`／`07-31`／`08-07` 五期，另 `BB-2011-04-30` 回榜）；
+  **Cassandra Wilson《Silver Pony》逐字 `SILVER PONY OJAH /BLUE NOTE 29752/BLG`**（`BB-2010-11-27`／`BB-2011-01-29`／`02-05`，另 `BB-2010.pdf` 年終榜；⚠ **廠牌欄第一格是 `OJAH`——她自己的 imprint，`Blue Note` 在第二格**）；
+  **Stacey Kent《Raconte-moi…》逐字 `RACONTE-MOI... TOKEN /BLUE NOTE 26823/BLG`**（`BB-2010-04-10`／`06-19`／`06-26`、`BB-2011-06-25`／`07-02`／`07-09` 共六期；⚠ **第一格是 `TOKEN`＝Token Productions，另一期逐字 `TOKEN /BLUE NOTE DIGITAL EX/BLG`**）；
+  **Joe Lovano Us Five《Bird Songs》逐字 `BIRD SONGS BLUE NOTE 05861 /BLG`**（`BB-2011-01-29`／`02-05`／`02-19`，另 `BB-2012-01-07` p45 的年度樂評選逐字「Bird Songs｜Joe Lovano/Us Five｜Blue Note」）。
+  **另有 Willie Nelson & Wynton Marsalis《Here We Go Again》逐字 `HERE WE GO AGAIN BLUE NOTE 96388/BLG`**（`BB-2011-04-16`→`09-24` 十餘期，掛名欄逐字 `FT. NORAH JONES`）
+  與 **Lionel Loueke《Mwaliko》逐字 `MWALIKO BLUE NOTE 88508/BLG`**（`BB-2010-03-27`／`04-03`）。
+- ⚠ **查無也要記（2010–2012 三年 0 命中）**：`charlap`（唯一 1 次是 `Billboard-Intl-Talent-Guide-2010` 的經紀名錄逐字「BILL CHARLAP TRIO Label: Blue Note. BA:Ted Kurland Associates」，**不是碟**）／
+  `rosnes`／`double portrait`／`truffaz`／`avishai`（唯一 1 次同樣是 Intl Talent Guide 名錄）／`seven seas`（5 次命中全是 Sammy Kaye 1949 年的歌與日本 King Record 的 `Seven Seas` 廠牌）／`duende`／`hershkovits`／
+  `zaryan`／`luminous things`／`trijntje`／`oosterhuis`／`sundays in new york`／`alsmann`／`gare du nord`／`lilywhite`／`quasimode`／`magic ensemble`／`dreamer in concert`／`mwaliko`（盤名本身 OCR 成 `Mi,tAl..llO`／`MWJILl•O`，**只有目錄號 `88508` 抓得到**）；
+  **`perko` 的 2 次命中都是 `RON PERKOV` 這個別人的名字**（第 1250 條的假陽性）。
+- ⚠ ⚠ **三筆退件的紙本全部 0**：**`capitol vaults`／`mosaic select`／`music for lovers`／`big john patton`／`hutcherson`（唯一 1 次是別的碟）三年皆 0**
+  ——**第 1741 條那兩套「數位庫藏套裝」在 Billboard 上完全沒有痕跡，紙本這一層對它們無效。**
+- **到此合計覆蓋：Billboard 1955→2012**（2005 缺 3 期、2006／2007／2008 各缺 1 期、2009 缺 2 期；**2010–2012 以索引頁為準、無缺**）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2013 以後尚未抓，且檔名形狀已變，見上。**
