@@ -1461,3 +1461,273 @@ cd desc-tools && node qa-batch.mjs research c169
 本層**未動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`previews.json`／`caa.json`／`c169-b.json`／其他批次的檔案，**未 `git commit`、未 `git push`、未動 git 索引**。暫存檔全部落在 scratchpad 且帶 `c169ra-` 前綴。
 
 ---
+
+# c-169 **a 組鉤子層（20 張，2000–2009）** 裁定　2026-09-19
+
+*（編號 3041–3080 為 a 組鉤子層專用區間。本段以 append 寫入，未動前面第 1557–1560-AE 條、a 組策展第 2126–2149 條、b 組策展第 2186–2209 條與 a 組研究第 2851–2871 條。）*
+
+## 第 3041 條（a 組鉤子，**第 1793-B／1809-B／1816-B／2811 條的例行動作**）：**尺先倒回去量 c-168 a，逐格重現 209–229／中位 222.5／分佈 1-4-13-0**
+
+本棒用的公式逐字是 `hook-base.md` 雲端註記第 2 點寫死的那一條，**只扣四樣、其餘一律算**：
+
+```
+預算 ＝ Array.from(hook).length ＋ Array.from(note).length
+      − 「主故事：」 − 每一個「→」 − 「正文只寫上列各項。」 − 「這條骨架全批只走本張。」
+```
+
+**倒回去量 `desc-tools/batches/hooks/c168-hooks-a.json`（18 張）的結果：min 209、max 229、中位數 222.5，
+四格分佈 ≤209 一張／210-219 四張／220-229 十三張／230+ 零張——與 c-168 a 第 2811 條回報的數字逐格相同。**
+**→ 尺同、公式同，本組的數字可以與前批並排讀。**（年份指定、演出年指定、載體交代全部計入；本組沒有用到指派／排除句。）
+
+**本組 20 張實測（程式產生，未手動歸類——第 1814-B 條）**：min **213**、max **229**、中位數 **226**、**超標 0**；
+分佈 **≤209 零張／210-219 一張／220-229 十九張／230+ 零張**。
+hook 加權 **19–31.5**（上限 50）、note 原始字元 **198–234**（上限 350）、**拉丁字母＋數字佔計入字元 34.3%**。
+
+---
+
+## 第 3042 條（a 組鉤子，**第 1816-B／2812 條在本批的實測；係數確實不可繼承**）：**第一版 20 張全部超標，幅度 3–63%，與 c-168 a 同向但幅度散得多**
+
+第一版草稿（主故事鏈四到五格、編制與客座逐人點名）**20 張全部超標**：分佈 **237–374**，中位數 **313**。
+最嚴重的三張是 Trio Focan **374**（超 63%）、High Five Quintet **352**（超 53%）、Kitty Hoff **349**（超 52%）；
+最輕的 U-Street《Helsinki Sessions》**237**（超 3%）。**定稿中位數 226，整體砍掉約 28%。**
+
+⚠ **與前批比對，方向與幅度都不能繼承**：c-165 a 低估 5–41%、c-166 a 超標 15–36%、c-166 b 只有 9／22 超標、
+c-168 a 全超標 15–73%、**本組全超標但幅度分佈最散（3%～63%）**。
+**散的原因是本批 20 張的專名密度落差極大**：Trio Focan 一張裡有土耳其人名、芬蘭人名、土耳其曲名與錄音室名四種；
+U-Street《Helsinki Sessions》那張的事實密度低、天生就短。**「同一批內部」的係數也不可互相繼承。**
+
+**→ 給 c-170 與後批：2000 年後的歐洲分支盤，note 只能容納三到四格，編制與客座合計最多點兩個人；
+拉丁人名一個 11–22 字元，一格「五人編制逐一點名」就是 60–90 字元，等於整份預算的三到四成。**
+
+---
+
+## 第 3043 條（a 組鉤子，**整格捨去清單；第 1793-B 條末句：算不下就在鉤子層捨，不留給寫作層砍**）：**共 23 格**
+
+| 碟 | 捨去的格 |
+|---|---|
+| Supergenerous | 盤面樂器欄逐字 `Percussion [Things]`／`Strings`；母帶 Greg Calbi ＋ 錄音師 Danny Kopelson；兩首標準曲縫進自作曲的軌目 |
+| Guide Me Home | 錄音師 Jan Erik Kongshaug 與 Steinway D；標題曲原作者 Freddie Mercury 與 Mike Moran ＋《Barcelona》；日版 TOCJ-66099 |
+| Loop in Release | 母帶工程 Alex Gopher（**與 U-Street 兩張的母帶軸撞模子，見第 3046 條**）；Studio Tex Avril；管樂客座名單只留兩人 |
+| standard a'la Turc | 1998 年那張《Beneath the Stars》的盤名；Sezen Aksu 與 Zülfü Livaneli 兩位作者；器材那一格 |
+| Helsinki Sessions | 五人編制逐一點名；作曲分配 |
+| Oh! | 四人的舊帳（Miles Davis 樂團／波士頓）；錄音師 James Farber 與母帶 Greg Calbi；三位非 Blue Note 藝人的合約狀態 |
+| Music Stories | Melina Mercouri；指揮 Alexandre Myrat 與 Kamerata Orchestra Of The Friends Of Music；1986 年那張的盤名與廠牌 |
+| Tangled | 鋼琴由 Ben Lewis 與 Laurence Hobgood 分擔；製作人 Eric Hochberg；〈Solitary Moon〉的 Johnny Mandel |
+| Bowling | EMI 防拷層那一格 |
+| Anna-Mari Kähärän Orkesteri | 六位詩人只留兩位；Yrjö 獎與芬蘭獎（**第 3045 條**）；HIP Studiot 與母帶 Pauli Saastamoinen |
+| The Chase | 法版 18 個編號、兩段〈Intermission〉與隱藏軌整格；混音 Scott Harding 與 Michael Leonhart |
+| Kosmopolites | 五重奏編制逐一點名；錄音與混音日期 |
+| Frost | Jyväskylä 以外的成團細節；封面設計 Janne Uotila |
+| Thinking | 盤名副標 `Plays The Music Of Ettore Fioravanti`；曲名〈Danza…〉的括號副題 `(da "Lo Schiaccianoci")` |
+| Comes Love | Fabrizio Bosso 客座（**見第 3047 條**）；七人編制逐一點名 |
+| The Siena Concert | D'Andrea 的 Modern Art Trio 與 Perigeo 經歷；後製由 Aldo Mella 兼任；第一段 27 分 25 秒的五曲清單 |
+| Five for Fun | 錄音與混音日期 ＋ House Recording Studio；五人編制逐一點名；日版 bonus 兩首 |
+| 55/21 | 曲目橫跨的六位作者清單；Gianluca Petrella 等四組客座只留一組；17 軌 55 分鐘 |
+| Free Runner | 第 2 軌〈I Wake Up Crying〉的 Burt Bacharach 與 Hal David；樂評的取樣／循環／嘻哈斷句那一句 |
+| Zuhause | 第 11 軌〈En Planant - Près De Moi〉；〈Pension Fuchs〉；曲名小場景只留一個 |
+
+**捨去的優先序照第 1809-B 條：先砍名單型（三人以上並列人名，每格 30–90 字元）→ 再砍與主故事鏈無關的第二層軼事 → 最後才動鏈上的格。**
+**本組 20 張沒有一張靠潤飾句子壓下來，全部是整格捨去。**
+
+⚠ **一格是改寫而不是捨去**：Thinking 的第 10 軌曲名由逐字全形（含 `(da "Lo Schiaccianoci")`）縮成〈Danza Della Fata Dei Confetti〉，
+**同一格補上「柴可夫斯基《胡桃鉗》裡的〈糖梅仙子之舞〉」**——括號副題省下 24 字元，而「這是《胡桃鉗》的曲子」這個資訊一個字都沒少。
+
+---
+
+## 第 3044 條（a 組鉤子，**骨架歸屬；照雲端註記第 3 點，只有擁有者寫「這條骨架全批只走本張。」，讓出的卡什麼都不寫**）：**17 張擁有、3 張讓出**
+
+**程式從輸出檔實掃（第 1802-B 條的新規：以 `*-hooks-*.json` 裡帶歸屬句的卡為準，不以本表為準；本表由程式產生、未手打）：17／20。**
+
+| 擁有者 | 那一條骨架 |
+|---|---|
+| Supergenerous | **替一部並不存在的電影寫配樂** |
+| Guide Me Home | **別的樂種的經紀人把樂手帶進這個廠牌** |
+| Loop in Release | **一個人在自宅做完整張，客座卻是半個圈子** |
+| standard a'la Turc | **某國第一位替 Blue Note 錄音的人** |
+| Helsinki Sessions | **團名的字母取自一個地名** |
+| Oh! | **直接錄到兩軌母帶、不做多軌後製** |
+| Music Stories | **同一張碟收了相隔十六年的兩場錄音** |
+| Tangled | **整個曲庫刻意避開標準曲** |
+| Anna-Mari Kähärän Orkesteri | **歌詞整批取自別人（詩人）的文本** |
+| The Chase | **街頭賣唱被發掘，最後簽進大廠** |
+| Kosmopolites | **一套碟、每張獻給樂團裡一位團員的作曲** |
+| Frost | **作曲前半張歸一人、後半張歸另一人** |
+| The Siena Concert | **盤面上的「軌」其實是 medley，底下另有一層曲目** |
+| Five for Fun | **標題曲由全團共同署名** |
+| 55/21 | **樂團起於一次臨時代打** |
+| Free Runner | **別的樂種的樂團主唱改藝名轉行** |
+| Zuhause | **主唱在盤面掛著一件非常規樂器（鋸琴）** |
+
+### 讓出的 3 張，逐張寫明讓給誰（**寫在裁定裡給主線與 b 組看，note 裡一個字都沒寫**）
+
+| 讓出的卡 | 讓出的骨架 | 為什麼讓 |
+|---|---|---|
+| **U-Street All Stars《Bowling》** | **團名／樂團身世那條線** | **同批同團的《Helsinki Sessions》已擁有**；本張改走「第二張把錄音、混音與母帶集中到同一間錄音室」與「貝斯手在團的最後一年」 |
+| **Paolo Fresu Quintet《Thinking》** | **「一套碟、每張獻給一位團員」那條系列骨架** | **同批的《Kosmopolites》已擁有**；本張改走「輪到鼓手」＋「第 10 軌是柴可夫斯基」＋「錄完兩年才發行」 |
+| **Alice Ricciardi《Comes Love》** | **「領班／個人首作」那條骨架** | ⚠ **依第 1809-B 條讓給 b 組**：`prop-b.json` 裡**同形狀的卡有五張**（Jon Cowherd《Mercy》、Otis Brown III《The Thought of You》、Kendrick Scott Oracle《We Are the Drum》、Kenny Barron Quintet《Concentric Circles》、The James Carter Organ Trio《Live From Newport Jazz》，五張的 `why` 逐字都寫「領班首作」）。**a 組一張鎖住等於卡死 b 組五張。** 本張改走「Montreux 的比賽第二名」＋「唯一的義大利語曲」 |
+
+⚠ **本組沒有任何一張在 note 裡點名骨架歸給哪一張**（雲端註記第 3 點）——`qa-batch hooks c169` 的 **`互指? 0 處`** 證實沒有把別張的盤名寫進 note。
+
+### ⚠ 動手前掃過 `prop-b.json` 全 20 筆，另外主動避開的兩條（沒 claim 也沒用）
+
+1. **「廠牌某國分部自己簽人、自己出盤」**——b 組有 Ruben Hein（荷蘭）、Aron Ottignon（法國簽紐西蘭人）、Sarah McCoy（法國）三張，
+   **而 a 組 20 張裡 18 張都是歐洲分支盤**。**若 a 組把它寫成任何一張的主故事鏈，b 組那三張就全被鎖死。**
+   **本組一張都不寫「這是 Blue Note 某國分部的出品」這條軸**，分支身分只以「Blue Note 義大利發行」這類發行事實出現在鏈上。
+2. **「超級團／廠牌把名冊湊成一團」**——b 組有 The Blue Note 7、Blue Note All-Stars、R+R=NOW 三張。
+   **a 組的 `Scolohofo` 是本組唯一的全明星團，改走「直接錄到兩軌母帶」**，成軍經過只寫「1999 年在蒙特婁爵士節成形、兩度巡演後才進錄音室」，**不展開「把名家湊成一團」那條軸。**
+
+⚠ **第 1814-B 條（`hook` 本體用掉的形狀也算已占用）在本組的一處自我檢查**：
+**b 組的 `R+R=NOW` 有「團名的字母各代表一個字」這條**（`prop-b.json` 逐字引 Glasper 的 `R+R stands for 'Reflect' and 'Respond'`）。
+**a 組有兩張同形（《Helsinki Sessions》的 U＝街名、《Oh!》的四姓縮寫）**——**依第 1809-B 條，多的那一方不該把兩張都 claim 起來**：
+**本組只由《Helsinki Sessions》claim 團名由來這條**；**《Oh!》的歸屬句給的是「直錄兩軌母帶」，它 note 裡的團名縮寫只是鏈上一格、不是它擁有的骨架。**
+**→ b 組的 `R+R=NOW` 仍可寫團名解義。**
+
+---
+
+## 第 3045 條（a 組鉤子，**裁定；「第一位／第一張」型素材的處置**）：**研究層採用 2 筆、本層全部留下；「首張專輯」型的序數句壓到 4 張並逐張換說法**
+
+派工信第五節第 4 點要求「本批有多張『第一位／第一張』型素材，自己盯，最多留兩張」。**逐筆處置如下。**
+
+### （一）「某國第一位」型：研究層第 2865 條採用 2 筆，本層 2 筆全留，**但切入面向完全分開**
+
+| 卡 | 素材 | 本層的處置 |
+|---|---|---|
+| **Trio Focan《standard a'la Turc》** | Önder Focan 是第一位替 Blue Note 錄音的土耳其音樂家（1998） | **當 hook 本體＋鏈的第一格**，**歸屬句給本張** |
+| **Thierry Lang《Guide Me Home》** | 第一位與 Blue Note 簽下藝人合約的瑞士人（1996） | ⚠ **降成鏈上的第二格**，hook 走的是「Queen 的經紀人 Jim Beach」；**兩張的 hook 一個講國籍、一個講人，句子骨架不同形** |
+
+**研究層退掉的 3 筆（Alice Ricciardi 的「第一位義大利爵士女歌手」、Kitty Hoff 的「Blue Note Germany 第一位德國女性」、Juliano Rossi 的「第三位德國音樂家」）本層一個字都沒寫**
+——**照第 1815-B 條的處置：安靜地不寫，note 裡不出現任何否定句或「查無」字樣**（`chk-hook-crossgroup` 的校對痕跡那一道 0 命中）。
+
+### （二）⚠ 真正的模子不是「第一位」，是「本作是他們的首張專輯」——第一版 7 張、壓到 4 張
+
+第一版有 **7 張**寫了序數首作（Loop in Release／Helsinki Sessions／Anna-Mari／The Chase／Kosmopolites／Comes Love／Five for Fun）。
+**`chk-hook-crossgroup` 對這個模子一次都不會亮**（定稿前後兩版該腳本都是 `✓ 全部通過`）。**判：壓到 4 張，而且四張的範圍與說法各不相同。**
+
+| 卡 | 定稿的說法 | 範圍 |
+|---|---|---|
+| Helsinki Sessions | 「兩年後他們在 Blue Note 出了第一張」 | 樂團出道作 |
+| Anna-Mari Kähärän Orkesteri | 「這是她的第一張個人專輯」 | 個人首作 |
+| The Chase | 「本作是她第一張大廠專輯」 | 大廠首作 |
+| Five for Fun | 「這是他們第一張出在 Blue Note 的碟」 | 廠牌首作 |
+| ~~Loop in Release~~ | 改成「他 2000 年先替 Blue Note 編了兩卷目錄混音帶，**這回換成自己的碟**」 | **序數整格捨去** |
+| ~~Kosmopolites~~ | hook 由「這是第一張」改成「**從鋼琴手開始**」 | **序數整格捨去** |
+| ~~Comes Love~~ | 只在 hook 保留「換來一張 Blue Note **首作**」，note 整格不寫 | **note 側捨去；骨架讓給 b 組，見第 3044 條** |
+
+---
+
+## 第 3046 條（a 組鉤子，**`chk-hook-crossgroup` 看不到、只能自己盯的四種句型模子**）：**用程式掃自己的 20 份 note，四種全部壓到 2 次以內**
+
+第 1764-B／1816-B／2818 條點名的是「同一句型三次以上也是同構」。**本棒定稿前寫了一支掃描逐詞數自己的 20 張，抓到四種。**
+
+| 模子 | 第一版 | 定稿 | 怎麼壓的 |
+|---|---:|---:|---|
+| **「團名由來」** | **3**（Helsinki Sessions／Oh!／55/21） | **2** | 55/21 的「團名指的正是這種配置」改成「編制就只有這兩件」 |
+| **「唯一的外來曲是 X」** | **5**（Kosmopolites／Thinking／The Siena Concert／Five for Fun／Free Runner） | **2** | Kosmopolites 改「唯一的例外」、Thinking 只點曲名不貼標籤、The Siena Concert 改「曲子幾乎都是 D'Andrea 自己的」、Free Runner 整格捨去 |
+| **「唯一」二字本身** | **4** | **2** | Tangled 的「唯一一張 Blue Note 盤」改成「她只在 Blue Note 出過這一張」；Comes Love 的「唯一的義大利語曲」改成「只有收尾的〈Le Tue Mani〉唱義大利語」 |
+| **「＜日期＞錄於＜地點＞」的獨立時地格**（第 2818 條） | **5 種同形** | **`錄於` 2／`錄音在` 1／`收音` 1／`在…完成` 1** | 五張各換一種句式；**本批 20 張裡 15 張有錄音時地，是資料形狀造成的（Discogs 整筆 credits 是主力），但句子形狀必須拆開** |
+| **「某某一人寫了 N 首／一人完成」** | **3** | **2** | Bowling 的「Markus Holkko 一人寫了四首」改成「寫了其中四首」 |
+| **「母帶工程掛給某某」** | **3** | **2** | Loop in Release 的 Alex Gopher 整格捨去，換成「10 軌裡有四首超過 9 分鐘」；**留下的兩處（Helsinki Sessions 的 Otto Donner／Bowling 的 Pauli Saastamoinen）是同一個團第一、二張的刻意對照，不是模子** |
+
+⚠ **`chk-hook-crossgroup c169` 在壓之前與壓之後都是 `✓ 全部通過`**——**這六種模子它一次都沒亮。** 與第 1816-B 條的結論一致：**機器只看前四字與關鍵詞，句型層的同構只能靠人掃。**
+
+---
+
+## 第 3047 條（a 組鉤子，**四條硬限制與研究層九處推翻，逐條落實**）
+
+### （一）派工信第四節的四條硬限制
+
+| 限制 | 定稿怎麼寫 |
+|---|---|
+| **Music Stories 第 7–9 軌** | 逐字照研究層第 2852 條的保守寫法：「**第 7 至 9 軌是 1985 年的錄音**……**這套二重奏最早以 1986 年的希臘盤問世**」。**沒有寫成 2001 年錄的，也沒有任何一句斷言同一條母帶。** ⚠ 另照第 2852 條末段把 Gary Burton 限住：「**Gary Burton 的顫音琴獨奏只涵蓋這六軌**」 |
+| **Scolohofo《Oh!》寫 2002 必須帶「日本先發」** | 鏈的末格逐字：「**日本先發，東芝 EMI 版 2002 年 12 月 26 日上市，美國版 2003 年 1 月 27 日才發**」；`發行年寫 2002 年。` 緊接其後 |
+| **Kitty Hoff 的鼓手不要點名** | **整張 note 沒有鼓手，也沒有任何團員名**；只寫 Kitty Hoff 本人掛名的樂器 |
+| **The Chase 的軌數版本分歧** | ⚠ **整格捨去**：法版 18 個編號、兩段〈Intermission〉、隱藏軌〈Ride 600〉**一個都不寫**。**因為 `正文只寫上列各項。` 在，寫作層拿不到任何軌目素材，就不可能把 bonus 寫成原盤曲目**（第 1814-B 條那個「軌名整格拿掉比留軌名再加引用指示便宜」的手法） |
+
+### （二）研究層推翻策展層的 9 處，在 hook 層的落點
+
+| # | 推翻 | 定稿 |
+|---|---|---|
+| 1 | Kosmopolites 末軌是 Händel | 鏈上逐字「唯一的例外是收尾的〈Lascia Ch'io Pianga〉，那是 Händel 的詠嘆調」 |
+| 2 | 系列是五張不是三張 | 鏈上逐字「一套**五張**的企劃……計畫橫跨三年」 |
+| 3 | Thinking 第 10 軌是柴可夫斯基 | hook 本體＋鏈上一格 |
+| 4 | Five for Fun 是 Cedar Walton 與 McCoy Tyner | 鏈的末格逐字兩人；**Kenny Dorham／Woody Shaw 全篇 0 命中**（程式實掃） |
+| 5 | The Chase 只有兩段〈Intermission〉 | **整格捨去**，正文碰不到這一格 |
+| 6 | Guide Me Home 就是 13 軌 | **軌數整格不寫**（只寫「原壓是雙 CD，第二片 4 軌」，這是 MB 與 Discogs 一致的那一層） |
+| 7 | **Oliver Perau 就是 Juliano Rossi 本人** | ⚠ 鏈的第一格逐字「**Juliano Rossi 的本名是 Oliver Perau**」；**「製作夥伴」「作詞者」這兩個說法全篇 0 命中**，不可能寫成兩個人 |
+| 8 | The Siena Concert 是六段 medley、17 首 | hook 本體逐字「六個編號、七十七分鐘，底下其實是十七首曲子串成的六段連奏」；**「平均一軌十三分鐘」「長篇即興」0 命中**。⚠ Mingus 那首另寫「只有 1 分鐘」 |
+| 9 | 〈A Lynmouth Widow〉 | **該曲名整格未寫**（Anna-Mari 那張只列詩人與 Kuusisto），錯字不可能外漏 |
+
+**研究層補齊的 5 條「策展層整層沒查到的主故事」，本層 5 條全部當成該張的鏈上主軸**：
+Trio Focan 的土耳其第一人＋Nardis Jazz Club／Thierry Lang 的 Jim Beach（**hook 本體**）／
+Anna-Mari 的英語詩人歌詞（**hook 本體**）／Joona Toivanen 的作曲一人一半（**歸屬句**）／Brisa Roché 的 Erik Truffaz 客座第 13 軌。
+
+---
+
+## 第 3048 條（a 組鉤子，**兩支腳本的結果與 `互指?` 判讀**）
+
+```
+cd desc-tools && node qa-batch.mjs hooks c169
+  → ⚠ b 缺 hook 檔
+  → 總標記 1
+cd desc-tools && node chk-hook-crossgroup.mjs c169
+  → c169｜1 組｜20 張｜hook 加權 19–31.5｜note 198–234
+  → ✓ 全部通過
+```
+
+- ⚠ **那 1 個標記不是 a 組的**：`b 組的 c169-hooks-b.json 還沒交件`，**`⚠ b 缺 hook 檔` 是管線形狀不是旗標**（第 1815-B 條末段、派工信第二節已預告）。
+  **a 組自己的四道（hook key 不在卡單／hook 事實對照／note 事實對照／字元四掃描）全部 0。**
+- **`互指? 0 處`。** 逐筆人工判讀（第 1763-B 條）：**本組 20 張的 note 裡沒有任何一個專名或曲名落在「本卡研究稿沒有、同批別張有」那一級**。
+  ⚠ **三處刻意檢查過的同批鄰居，全部確認取自本卡自己的 `facts`**：
+  1. **`Fabrizio Bosso` 同時是 High Five 的領班與 Alice Ricciardi 的客座小號**（研究層第 2856 條要求兩卡 `risk` 互指）——
+     **本層在 Comes Love 那張整格不寫 Bosso**，High Five 那張也只寫 Bosso 自己的生平，**兩張零交叉**。
+  2. **`Erik Truffaz` 出現在 The Chase 的第 13 軌**——**那一條在本卡 `facts[5]` 逐字有**，不是從 b 組那張 `Erik Truffaz Quartet` 搬來的；**b 組那張是不同碟、不同掛名**。
+  3. **兩張 Paolo Fresu 與兩張 U-Street 各自的鏈**——**逐格回查各自的 `facts`**（第 2817 條的判準：同一個人在同批多張時，每一條生平都要回該卡自己的 facts 對一次）。
+     **Thinking 的「五重奏的成員與前一張完全相同」取自本卡 `facts[3]`；Bowling 的「與首作相反的錄音室安排」取自本卡 `facts[1]`。**
+- **字元自檢（程式，不用眼睛掃）**：`charScan` 對 `hooks-a` 的四道（非拉丁亂碼／簡體字／半形逗號貼中文／千分位逗號）**全部 0**。
+  ⚠ **希臘文 `Θάνος Μικρούτσικος` 是掛名專名，依 base 檔字元條合法且必須照原文保留**；
+  ⚠ **`Şımarık`／`Kållered`／`Jyväskylä`／`Mylläri`／`Près De Moi`／`Forêt-Noire`／`Brücke`／`Händel`／`Roché`／`Kähärä` 的變音符一律照原文保留、未做任何折換**；
+  ⚠ **卡單掛名 `Franco D’Andrea Quartet` 的 U+2019 照卡單原樣**；note 內文寫 ASCII 形 `D'Andrea`（`qa-batch` 的 `norm` 兩形折同鍵，未誤報）。
+- **schema 自檢**：20 筆、`[{key, hook, note}]`、**key 順序與研究稿逐字全等**（`JSON.stringify` 比對）、重複 key 0、
+  **hook 開頭前四字 20／20 互異**、hook 句末全形標點 20／20、hook 禁語 0、hook 否定句 0、分數星等 0。
+
+---
+
+## 第 3049 條（a 組鉤子，**⚠ 派工信與 base 檔／既有裁定牴觸之處**）
+
+派工信第一節逐字要求「本信若與它牴觸，以它為準，並在交件回報裡指出本信哪一句寫錯了」。**本棒查到一處真牴觸、兩處與實況有出入。**
+
+### （一）⚠ 真牴觸：第五節第 2 點把 c-168 的捨去優先序引成「**先砍名單型（三人以上並列人名）**」
+
+**第 1809-B 條與 c-168 第 2811–2816 條的原文沒有「三人以上」這個門檻**，第 1809-B 條逐字是
+「**先砍名單型（三人以上並列人名，每格 30–55 字元、密度最低）**」——**括號裡是當時那一批的實況描述，不是判準的條件。**
+**照「三人以上」這個字面執行，本組會保不住預算**：實測本批**兩人並列的名單格就已經 30–50 字元**
+（`Neal Miner 與 Will Terrill` 一格 28、`Ben Lewis 與 Laurence Hobgood` 一格 26、`Cedar Walton 與 McCoy Tyner` 一格 35），
+**而本組 20 張要砍的 23 格裡有 9 格是兩人並列。**
+**→ 本棒照原意執行（砍的是「名單型」這個形狀，不是「人數」），並在此更正判準句：
+「名單型＝一格裡出現兩個以上只起點名作用的專名，密度最低者先砍」，門檻與人數無關。**
+⚠ **這與第 1795-B 條同一族：主線把裁定的括號說明當成條件摘出來。**
+
+### （二）與實況有出入、不算牴觸的兩句
+
+1. **第三節第 9 點說「另有五張策展層主故事整層沒查到，研究層補齊了」——正確，而且低估了影響**：
+   **那五條裡有兩條（Thierry Lang 的 Jim Beach、Anna-Mari 的英語詩人歌詞）直接成了該張的 hook 本體。**
+   **照策展層的 `why` 寫，這兩張的 hook 會整個走偏。**
+2. **第五節第 4 點說「本批有多張『第一位／第一張』型素材……最多留兩張」——方向對，但指錯了模子**：
+   **真正會塌成同一個模子的是「本作是他們的首張專輯」那個序數句（第一版 7 張），不是「第一位」（研究層只採用了 2 筆，天生就只有兩張）。**
+   **見第 3045 條。**
+
+---
+
+## 第 3050 條（a 組鉤子，**第 1803-B 條的交件聲明**）：**工作區當下的 `desc-tools/batches/hooks/c169-hooks-a.json` 才是交件版**
+
+⚠ **「筆數對了」不等於「定稿了」**（第 1803-B 條，本線已七次）。
+**本棒的交件版就是工作區當下的那一份**：20 筆、預算 213–229／中位 226／超標 0、`qa-batch` 的 a 組旗標 0、`互指? 0 處`、`chk-hook-crossgroup` ✓ 全部通過。
+**寫檔是分四次落地的**（5／10／15／20 張，**每一次都把完整陣列整份寫回**，因此任何一個中途版本都是合法 JSON）；
+**筆數到 20 之後又改過三輪**（模子壓縮、事實校正、預算微調），**任何一個 20 筆的中途版本都不是定稿。**
+**若容器重啟後看到的檔案筆數少於 20，接續補完即可，不要從頭重寫。**
+
+本層**未動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`previews.json`／`caa.json`／
+`c169-hooks-b.json`／`c169-b.json`／其他批次的檔案，**未 `git commit`、未 `git push`、未動 git 索引**。
+暫存檔全部落在 scratchpad 且帶 `c169ha-` 前綴。
+
+---
