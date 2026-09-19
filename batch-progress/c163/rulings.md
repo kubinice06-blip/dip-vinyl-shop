@@ -606,3 +606,475 @@ c-162 a 第 1750 條與 c-162 b 第 1775 條實測都是 0／18，並下了「�
   **b 組從 1810 起。**
 - **中間檔**：全部在本棒的暫存目錄 `…/scratchpad/c163a/`（`mb.mjs`／`mb/`／`summ.mjs`／`pool.mjs`／`pool.json`／`clash.mjs`／`clash2.mjs`／`dg.mjs`／`dg/`／`ap.mjs`／`bb.py`／`urls.txt`／`bbtext/`／`bn-2014.txt`／`bn-2015.txt`／`add.py`／`ctx.py`），
   **repo 根目錄未新增任何檔**（第 533 條）。
+
+---
+---
+
+# c-163 b 組裁定（編號 **1810–1826**）
+
+本檔自此以下為 **c-163 b 組**（22 筆，**2015 年 10 張、2016 年 12 張、全部 jazz、全部 1985+**）策展層的裁定。
+**號段由派工信指定從 1810 起；a 組的 1778–1802（含 1794-B）一字未碰，1803–1809 依 a 組交接留白、本棒也不使用。**
+判準沿用 **c-158 a 第 1500–1516**、**c-158 b 第 1530–1555**、**c-159 a 第 1560–1578**、**c-159 b 第 1590–1609**、
+**c-160 a 第 1620–1640**、**c-160 b 第 1650–1668**、**c-161 a 第 1680–1689 ＋ 1700–1711**、
+**c-161 b 第 1690–1699 ＋ 1730–1737**、**c-162 a 第 1738–1754**、**c-162 b 第 1760–1777**、
+**c-163 a 第 1778–1802** 條，尤其：
+**第 307／1657（四）／1768／1769（四）條的團名形與裸名分界**（本組一次用上七組，見第 1816 條）、
+**第 1672 條（主線）的跨文字系統掛名與日籍藝人命名**（見第 1815／1817 條）、
+**第 1702／1769（五）條的標點字元不同碼位**（見第 1819 條）、
+**第 1753（4）／1770 條的 (丙) 假陽性形狀**（本組亮 6 次、成立 0 次）、
+**第 1762／1763／1780／1783 條的 `format`／`series`／`label-info` 查法**（見第 1813 條）、
+**第 1784 條收斂出來的 imprint 判準「Discogs 零售條目的廠牌鏈裡有沒有 Blue Note」**（見第 1814 條）、
+**c-149 b 第 991 條「盤名裡的 Blue Note 是東京的俱樂部不是廠牌」**（見第 1814 條）、
+**a 組第 1785 條「(乙) 還是年份改判」的分界**（本組用它判 (甲)，見第 1818 條）、
+**第 1433 條「兩張卡不得共用同一個 `collectionId`」**（見第 1812 條）、
+**第 1572 條 `contemporary jazz` 不跟**、**第 1601 條 Apple 年初佔位日**、**第 1664 條紙本與美國盤**、
+**第 1674 條 barcode 取用順序**、**第 646／865 條軌數不一致**。
+**c-158～c-163 a 的條文一字未改。**
+
+---
+
+## 第 1810 條（c-163 b 交件）：**22 筆 → 收 19、退 3；退貨率 13.6%。本組的形狀是「2013–14 年那種庫藏／再發幾乎絕跡，三筆退件是三種完全不同的理由，一筆一種」**
+
+| | 數 |
+|---|---:|
+| slice `g: "b"` | **22**（**2015 年 10 張、2016 年 12 張**；全部 `genre: "jazz"`、全部 `period: "1985+"`） |
+| **收** | **19**（**17 位**：`Robert Glasper` 兩張、`山中千尋` 兩張，其餘一人一張） |
+| **退** | **3**（**(乙) 日版 SHM-CD 化＋撞已發卡 1 筆、slice／MB 重複 RG 1 筆、非 Blue Note imprint 1 筆**） |
+| **年份改判** | **0**（⚠ **a 組第 1791 條那種「MB 只建數位再發、`frd` 落在數位年」的形狀，本組一次都沒有**） |
+| 年份覆核成立 | **19／19**（**三層同到日 12 張、三層同年但日期粒度不同 6 張、只有兩層可用 1 張**——見第 1821 條） |
+| **(甲) 從未發行過** | **1**（⚠ ⚠ **`Joe Lovano Quartet —《Classic! Live at Newport》`：2005 年的 Newport 現場、2016 年才首次發行，十一年落差**——**(甲) 的第七種辨識形狀，本條新立，見第 1818 條**） |
+| **(乙) 母體在 BN／Liberty／UA／Solid State** | **1**（`Lonnie Smith —《Turning Point》`，退；⚠ **走的是 (戊) 名單外的第六條再發系列 `Blue Note, The Masterworks`，改判 (乙)，見第 1813 條**） |
+| **(丙) 母體在真正的他廠** | **0**（⚠ **訊號亮 6 次，逐筆查完全部不成立，見第 1823 條**） |
+| **(丁) 部分重疊／形狀不同** | **4**（`Kyoto Jazz Sextet —《Mission》`八軌全是 Blue Note 1960 年代曲目的重奏、`José James —《Yesterday I Had the Blues》`是 Billie Holiday 歌本、`Joe Lovano Quartet —《Classic! Live at Newport》`與 c-159《I'm All for You》同編制同曲、`Norah Jones —《Day Breaks》`的〈Peace〉由同批的 Lonnie Smith 彈管風琴——**四張全部收並標**） |
+| **(戊) 四條再發系列** | **0**；⚠ **但退件那張走的 `Blue Note, The Masterworks` 不在 (戊) 名單上、改判 (乙)**（與 a 組第 1783 條的 `Music Matters` 同一種處理） |
+| **(己) 載體只有影像** | **0**（⚠ **訊號亮 2 次——`山中千尋` 的兩張初回限定盤都附 DVD-Video，但主載體是 SHM-CD，(己) 不成立**） |
+| 現場盤 | **4**（`Robert Glasper —《Covered》`、`Joe Lovano & Dave Douglas Sound Prints —《Live at Monterey Jazz Festival》`、`Joe Lovano Quartet —《Classic! Live at Newport》`三張 MB `secondary-types` 逐字 `["Live"]`；**退掉的 `森山威男 with 市川修` 那張也是**）；⚠ **第 1771 條那三種毛病本組一次都沒中** |
+| 撞陳列 | **收下的 19 張共 42 處／12 張**；⚠ ⚠ **盤名逐字撞 apex 王牌 1 處**（`Lonnie Smith —《Evolution》` ↔ seed `Shintaro Quintet —《Evolution》(1984)` apex 逐字 `pearl`）——**派工信逐字要求「盤名也要獨立掃一次 apex」，本組就中在這一張**；**軌名撞 apex 0 處**；**折鍵撞卡 0 處**（19 張全過） |
+| 新掛名字串 | **5**（`Yaron Herman`／`Marcus Miller`／`Joe Lovano & Dave Douglas Sound Prints`／`Terence Blanchard featuring The E-Collective`／`Marcus Strickland's Twi-Life`／`Nels Cline`／`Kyoto Jazz Sextet`＝**7 個新字串、其中 3 個是團名形新造**）；**沿用池中／卡單 10**；**新造分裂 0**（詳見第 1825 條） |
+| 紙本 | ⚠ ⚠ **2015 年那十張裡 5 張有命中**（Marcus Miller 5 處、Robert Glasper 2 處、Terence Blanchard 4 處、José James 1 處、Sound Prints 2 處）；⚠ ⚠ **2016 年那十二張 0 命中，而且是結構性的——`SOURCES` 的 Billboard 目前只覆蓋到 2015 年**（見第 1822 條） |
+| `chk-prop b` | **標記 0**（`node batch-progress/c163/chk-prop.mjs b` 實跑：`prop-b.json：19 張、17 位`、`跨批撞卡 0`、`同 rgMbid 不同掛名 0`、`同掛名盤名詞元包含 0`、`共用目錄號 0`） |
+
+**收下的 19 張（依 `slice` 原序）**：
+Yaron Herman《Everyday》2015、Marcus Miller《Afrodeezia》2015、Robert Glasper《Covered》2015（現場）、
+Lionel Loueke《Gaïa》2015、**Joe Lovano & Dave Douglas Sound Prints《Live at Monterey Jazz Festival》2015（現場、團名形新造、盤名切分改判）**、
+José James《Yesterday I Had the Blues: The Music of Billie Holiday》2015（(丁)）、
+**Terence Blanchard featuring The E-Collective《Breathless》2015（團名形新造、U+2010 已修）**、
+Kyoto Jazz Sextet《Mission》2015（(丁)）、**山中千尋《Syncopation Hazard》2015**、
+**Charles Lloyd & The Marvels《I Long to See You》2016（slice 重複的存活者）**、Derrick Hodge《The Second》2016、
+**Marcus Strickland's Twi-Life《Nihil Novi》2016（團名形新造）**、Nels Cline《Lovers》2016、
+Norah Jones《Day Breaks》2016（(丁)）、Julia Kadel Trio《Über und unter》2016、
+**Lonnie Smith《Evolution》2016（掛名判裸名、盤名撞 apex pearl）**、**Robert Glasper《ArtScience》2016（掛名判裸名）**、
+**Joe Lovano Quartet《Classic! Live at Newport》2016（現場、(甲)、(丁)）**、**山中千尋《Guilty Pleasure》2016**。
+
+---
+
+## 第 1811 條（同批）：**退表 3 筆，逐筆與理由分類**
+
+| # | 掛名 ／ 盤名 | rgMbid | 理由分類 | 一句話證據 |
+|---|---|---|---|---|
+| 1 | **Lonnie Smith《Turning Point》**（slice `g:"b"` 第 10 筆） | `157bd413-582c-430d-9afe-9a60efe4a375` | **(乙)（Blue Note 1969 年原盤的 2015 年日版 SHM-CD 化）＋撞已發卡** | **Discogs 7890659 的 notes 欄逐字「Originally recorded on January 2, 1969 at the Van Gelder Studio, Englewood Cliffs, New Jersey／Originally issued in 1969 as BST 84313」，`format` 欄逐字 `CD, Album, Reissue, Remastered`（text `SHM-CD`）、`series` 欄逐字 `Blue Note, The Masterworks`；而且 `Lonnie Smith —《Turning Point》(1969)` 已在 `seed_cards.json` 與 `c142-cards.json`**（第 1813 條） |
+| 2 | **Charles Lloyd & the Marvels《I Long to See You》**（slice `g:"b"` 第 11 筆，XW 數位） | `4978e2e2-5db9-4320-bd55-4129b827fead` | **slice 重複／MB 重複 RG（只掛數位發行）** | **同一張碟在 slice 裡出現兩次；本筆 `country: XW`、`formats: ["Digital Media"]`、`nReleases: 1`、`catno: []`、唯一 release `7db36185` 的 barcode 逐字 null、packaging 逐字 `None`、label 逐字 `Blue Note Records [d3865f1e]`（不是實體那兩筆的 `Blue Note [713c4a95]`）——另一筆 `8e5c4814` 帶美版 CD ＋ 歐版、UPC `602547652577` 與目錄號 `B002427702`，取後者**（第 1812 條） |
+| 3 | ⚠ ⚠ **森山威男 with 市川修《Moriyama Takeo meets Ichikawa Osamu at Blue Note》**（slice `g:"b"` 第 21 筆） | `88466097-d9a6-4cd9-9590-da6827689a5c` | **非 Blue Note imprint（廠牌是 ブルーノート東京 俱樂部的自營盤，不是 Blue Note Records）** | **MB 的 `label-info` 逐字 `Nihon Blue Note [76903afe-db26-4116-b596-39ac8eaa08fc] catno=NBN-150`——⚠ 不是 `713c4a95`；Discogs 25629262 的廠牌欄逐字只有一格 `Nihon Blue Note`、companies 逐字 `Recorded At: The Blue Note Tokyo`。與 c-149 b 第 991 條退掉的 Bill Evans《Let The Juice Loose ... Live At Blue Note Tokyo》同一種形狀，而且本張更硬——那張是盤名裡的 Blue Note 是場地，本張是連廠牌都是那家俱樂部的公司**（第 1814 條） |
+
+**⚠ 第 315 條：19 ＋ 3 ＝ 22 ✓。**
+⚠ **三筆退件的紙本全部 0**（`lonnie smith`／`turning point`／`i long to see you`／`moriyama`／`森山` 在 `billboard-bn-2015-ocr.txt.gz` 全年 40 期逐一 `zgrep`，`turning point` 的兩次命中都是無關的散文用語）
+——**第 1765 條「紙本這一層對退件候選沒有鑑別力」第四次成立。**
+
+---
+
+## 第 1812 條（同批，**派工信的地雷 1；主線已於本棒進行中以 `rulings-mainline.md` 第 1718 條預先裁定，本條只補逐字證據、結論完全照它**）：**#11 與 #18 是兩個不同的 MB release-group，不是大小寫變體；只收帶實體首發的那一個**
+
+**本棒獨立打過兩個端點，欄位與主線的預先裁定逐字相符**：
+
+| | **#11 `4978e2e2-5db9-4320-bd55-4129b827fead`（退）** | **#18 `8e5c4814-742e-45bf-a9ef-e24e3f7a6009`（收）** |
+|---|---|---|
+| RG title | 逐字「I Long to See You」 | 逐字「I Long to See You」 |
+| **RG artist-credit** | **逐字 `Charles Lloyd & the Marvels`（小寫 `the`）** | **逐字 `Charles Lloyd & The Marvels`（大寫 `The`）** |
+| artist 實體 | **714e6338-2752-4aea-ab06-cd9146d654d0**，名稱逐字 `Charles Lloyd & the Marvels`、type `Group`、country `US` | **同一個實體 714e6338**（credited-name 覆寫成大寫 `The`） |
+| frd ／ primary ／ secondary | `2016-01-15` ／ `Album` ／ 空陣列 | `2016-01-15` ／ `Album` ／ 空陣列 |
+| **genres** | **逐字空陣列** | **逐字 `jazz`(2)** |
+| **轄下 release** | **1 筆：`7db36185`（2016-01-15 **XW** Official **Digital Media** 10 軌，**barcode null**、packaging 逐字 `None`、**label 逐字 `Blue Note Records [d3865f1e]`**、catno null）** | **2 筆：`6a2a5364`（2016-01-15 **US** Official **CD** 10 軌，barcode `602547652577`，packaging 逐字 `Jewel Case`，label 逐字 `Blue Note [713c4a95]` catno=`B002427702`）＋ `7a791d4c`（2016-02-05 **XE** Official CD 10 軌，同 barcode，catno=`0602547652577`）** |
+| `slice.json` 欄位 | `country: "XW"`、`formats: ["Digital Media"]`、`nReleases: 1`、**`catno: []`** | `countries: ["US","XE"]`、`formats: ["CD"]`、`nReleases: 2`、**`catno: ["0602547652577","B002427702"]`** |
+
+**→ 判：只收 `8e5c4814`，`4978e2e2` 退、理由分類寫「slice 重複／MB 重複 RG（只掛數位發行）」。**
+**判準沿用「同一張碟有多個 RG 時取帶實體首發的那一個」，並避開第 1433 條「兩張卡共用同一個 `collectionId`」的形狀——**
+**兩個 RG 的十軌內容完全相同，若兩筆都收，下游配固定試聽時必然配到同一個 Apple `collectionId`（us `1443094889`），那正是第 1433 條明令禁止的。**
+⚠ ⚠ **`Blue Note Records [d3865f1e]` 與 `Blue Note [713c4a95]` 是 MB 上兩個不同的廠牌實體**
+——**這是判「哪一個 RG 是真的」的第二層證據，也給後批一個可複用的訊號：只掛 `d3865f1e` 的數位 RG 多半是回填出來的重複條目。**
+⚠ **主線另已以第 1719 條回報：c-163～c-170 八批共 272 筆 slice 全量掃過折鍵重複與 rgMbid 重複，只有 c-163 這一組命中，其餘七批都是 0——孤例，不往別批延伸。**
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1813 條（同批，**⚠ (戊) 名單以外的第六條再發系列；與 a 組第 1783 條同一種處理**）：**`Lonnie Smith《Turning Point》`退——`Blue Note, The Masterworks` 日版 SHM-CD 化，而且原盤已經發過卡**
+
+| 層 | 逐字 |
+|---|---|
+| **MB RG `157bd413`** | title「Turning Point」、artist-credit「Lonnie Smith」（**背後實體 58c2a0ee 逐字 `Dr. Lonnie Smith`**）、**frd 逐字只有年份 `2015`**、primary `Album`、secondary 空、genres 逐字 `jazz`／`soul jazz`、轄下 **1** 個 release |
+| **MB release `01364b27`** | **`2015` JP，status 逐字 null，CD **5 軌**，`Blue Note[713c4a95] catno=UCCQ-5127`，barcode `4988005876447`** |
+| ⚠ ⚠ **Discogs 7890659（2015-03-25 日版）** | **`format` 欄逐字 `CD, Album, Reissue, Remastered`（text 欄 `SHM-CD`）**；**`series` 欄逐字 `Blue Note, The Masterworks`**；廠牌欄逐字 `Blue Note` `UCCQ-5127`；companies 逐字 `Phonographic Copyright (p): Blue Note Records`、`Recorded At: Van Gelder Studio, Englewood Cliffs, New Jersey`、`Record Company: Universal Classics & Jazz` |
+| ⚠ ⚠ **Discogs notes 欄** | **逐字「Originally recorded on January 2, 1969 at the Van Gelder Studio, Englewood Cliffs, New Jersey」＋「Originally issued in 1969 as BST 84313」** |
+| **五軌（MB 與 Discogs 逐字逐序相同）** | Seesaw／Slow High／People Sure Act Funny／Eleanor Rigby／Turning Point |
+| ⚠ ⚠ **池中** | ⚠ ⚠ **`Lonnie Smith —《Turning Point》(1969)` 已在 `seed_cards.json`（曲風欄逐字 `["jazz","soul"]`）與 `c142-cards.json`／`c142/prop-a.json`** |
+
+**→ 判：退。理由分類寫「(乙)：母體是 Blue Note 1969 年的 `BST 84313`，2015 年的 `UCCQ-5127` 只是日版 SHM-CD 化」＋「撞已發卡」。**
+
+⚠ ⚠ ⚠ **`Blue Note, The Masterworks` 是 (戊) 四條名單以外的第六條再發系列**（前五條：Blue Note 75／80、Tone Poet、Classic Vinyl、Blue Note Review ＋ a 組第 1783 條記下的 `Music Matters`）。
+**處理方式與第 1783 條完全相同：判準不必動 (戊) 的名單，走 (乙) 就夠了——母體在 Blue Note 自家目錄。**
+⚠ ⚠ **本條把 `series` 欄的查法補完整**：**第 1762 條說「先看 `series` 欄」、a 組第 1780 條補了「也可能記在廠牌鏈第三格」——本張是記在 `series` 欄（`Blue Note, The Masterworks`），兩個位置都要看這句成立。**
+⚠ ⚠ **給後批的省時查法（本條新立）**：**`UCCQ-5xxx` 這個日版號段是 Universal Japan 的「The Masterworks」復刻線（與 `UCCQ-1xxx` 的新作線分開）**
+——**本組同時出現兩段：退掉的這張是 `UCCQ-5127`，收下的 `山中千尋` 兩張是 `UCCQ-1043`／`UCCQ-1064`、`Robert Glasper《Covered》`日版是 `UCCQ-1042`、`Charles Lloyd` 日版是 `UCCQ-1060`。**
+**→ 看到 `UCCQ-5` 開頭先當 (乙)，看到 `UCCQ-1` 開頭才去查是不是新作。**
+⚠ ⚠ **本張退掉之後，`Lonnie Smith` 這個掛名在本批仍然有一張卡（《Evolution》2016）**——**掛名同形的處理見第 1815 條。**
+⚠ **紙本 0。** ⚠ **缺口 0**（母體《Turning Point》(1969) 已在池中）。 ⚠ **本裁定可逆。**
+
+---
+
+## 第 1814 條（同批，**最重要的一筆退件；c-149 b 第 991 條那個形狀第一次在本線出現，而且升級了一層**）：**`森山威男 with 市川修《Moriyama Takeo meets Ichikawa Osamu at Blue Note》`退——廠牌是「日本ブルーノート」俱樂部公司，不是 Blue Note Records**
+
+**c-149 b 第 991 條逐字記過：「盤名裡的『Blue Note』是東京的俱樂部，不是廠牌」，並在第 539 條立下固定動作「盤名帶俱樂部名的（Blue Note Tokyo、Village Vanguard、Sweet Basil……）一律先查是不是場地」。**
+**本張的盤名逐字就帶 `at Blue Note`，照那條動作查下去，發現它比 c-149 那張更硬——連廠牌都是那家俱樂部的公司**：
+
+| 層 | 逐字 |
+|---|---|
+| ⚠ ⚠ **MB `label-info`（唯一一筆 release `a199914c`）** | **`Nihon Blue Note` ／ id 逐字 `76903afe-db26-4116-b596-39ac8eaa08fc` ／ catno 逐字 `NBN-150`**——**⚠ 不是 `713c4a95`，是另一個 MB 廠牌實體** |
+| ⚠ ⚠ **② Discogs 25629262（2016-01-31 日版 CD，紙盒）** | **廠牌欄逐字只有一格 `Nihon Blue Note` `NBN-150`**；**companies 逐字 `Recorded At: The Blue Note Tokyo`、`Mixed At: Simpty Studio`**；**`format` 欄逐字 `CD, Album`（text `Cardboard Sleeve`）、`series` 欄逐字空陣列**；**廠牌鏈裡零個 `Blue Note`（Blue Note Records 那一個）** |
+| ⚠ **Discogs notes 欄** | **逐字「Recording Date : November 22th, 2000.」** |
+| **掛名（MB）** | **artist-credit 逐字「Takeo Moriyama」＋ joinphrase ` with ` ＋「Osamu Ichikawa」；⚠ 背後兩個 artist 實體的名稱逐字是漢字 `森山威男`（f80dfb12，disambiguation `drummer`）與 `市川修`（30559f1d，disambiguation `Japanese jazz pianist`）** |
+| **Discogs 掛名** | 逐字 `Takeo Moriyama` ＋ `Osamu Ichikawa (2)` |
+| **六軌（MB 逐字）** | Mr. P.C.／Blue Monk／My One and Only Love／Hush‐A‐Bye／Impressions／Good Bye |
+| ⚠ **③ 廠牌官網** | **`bluenote.com/artist/takeo-moriyama/` 與 `/artist/moriyama/` 皆無效路徑**（第 1750／1775 條的日本線形狀） |
+| ⚠ **① 紙本** | **`moriyama`／`ichikawa`／`森山` 在 `billboard-bn-2015-ocr.txt.gz` 全年 0 命中**（日本盤；且本碟 2016 年發行，見第 1822 條） |
+
+**→ 判：退。理由分類寫「非 Blue Note imprint」。與 a 組第 1784 條的 `Leon Russell《Life Journey》`、c-161 a 的 `Milton Nascimento & Jobim Trio《Novas bossas》`同一類。**
+
+⚠ ⚠ ⚠ **本條把第 1784 條收斂的動作再補一句，給後批照抄**：
+**第 1784 條說「要問的是：Discogs 的零售條目裡，有沒有任何一筆的廠牌鏈出現 `Blue Note`（不限第一格）」——**
+**本張的答案是「有 `Nihon Blue Note`、有 `The Blue Note Tokyo`，但沒有 `Blue Note`」。**
+**→ 補的那一句是：`Blue Note` 必須是 Discogs 的那個廠牌實體本身，`Nihon Blue Note`（日本ブルーノート株式會社，經營 ブルーノート東京 等俱樂部的公司）與 `The Blue Note Tokyo`（場地）是名字裡含 `Blue Note` 的另外兩個實體，不算數。**
+**同理可用的訊號：目錄號 `NBN-` 是那家俱樂部的自營盤號段，看到就先退。**
+
+⚠ ⚠ **本張若不是 imprint 站不住，它會是 (甲)**：
+**Discogs notes 逐字「Recording Date : November 22th, 2000.」，2016-01-31 才首次發行——十五年的落差，與本組收下的 `Joe Lovano Quartet`（第 1818 條）完全同形。**
+**寫下來是為了說清楚退的理由與碟的品質無關，只與 imprint 有關**（與 a 組第 1784 條對 Leon Russell 的處理一致）。
+⚠ ⚠ **掛名的部分仍然查完了，寫在這裡供日後別條線用**：
+**池中 `森山威男 —《East Plants》(1983)` 在 `seed_cards.json` 且 apex 層級逐字 `pearl`、`森山威男カルテット —《My Dear》(1982)` 在 seed 與 `c67-cards.json`、`森山威男 —《Hush-A-Bye》(1978)` 在 `c51/prop-c.json`、`Moriyama Takeo Percussion Ensemble —《Full Load》(1975)` 在 seed 與 `c67-cards.json`；`市川修`／`Ichikawa` 池中 0 列。**
+**→ 若日後由日本爵士線收這張，掛名應為 `森山威男 with 市川修`（§0.5 的漢字本名，且池中既有形就是漢字），盤名依派工信逐字照發行品保留羅馬字倒置形 `Moriyama Takeo meets Ichikawa Osamu at Blue Note`、不翻譯也不倒置。**
+⚠ ⚠ **順帶一提：本張的〈Hush‐A‐Bye〉軌名裡的連字號是 U+2010**（與同組 `The E‐Collective` 同一種毛病，見第 1819 條）。
+⚠ **缺口**：**退掉之後 `市川修` 仍然不在卡池裡，但那是日本爵士線的缺口、不是 Blue Note 線的，不該用一張 imprint 站不住的碟來補。**
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1815 條（同批，**派工信的地雷 2；四邊都給 `Dr.` 形仍然沿用池中裸名——第 1768 條的第二次應驗**）：**`Lonnie Smith` 與 `Dr. Lonnie Smith` 判同形 `Lonnie Smith`**
+
+**派工信逐字要求：「不管收幾張，本批這兩筆的掛名必須同形，且必須與池中既有形一致」。先掃池，再看四邊**：
+
+| 來源 | 掛名欄逐字 |
+|---|---|
+| **MB artist 實體 `58c2a0ee`** | **`Dr. Lonnie Smith`**（sort-name 逐字 `Smith, Lonnie, Dr.`、type `Person`、country `US`） |
+| **MB `《Evolution》`RG 的 artist-credit** | **`Dr. Lonnie Smith`** |
+| **MB `《Turning Point》`RG 的 artist-credit** | ⚠ **`Lonnie Smith`**（**同一個實體 58c2a0ee 的 credited-name 覆寫**） |
+| **Discogs 8165171／8043689 標題列** | **`Dr. Lonnie Smith*`** |
+| ⚠ **Discogs 同一頁的 credits 欄** | ⚠ **`Lonnie Smith – Organ [Hammond B3 Organ], Keyboards`、`Lonnie Smith – Written-By`（沒有 `Dr.`）** |
+| **Apple us `1444079286`** | **`Dr. Lonnie Smith`** |
+| ⚠ **③ 廠牌官網** | ⚠ **`bluenote.com/artist/dr-lonnie-smith/` 回 200；`bluenote.com/artist/lonnie-smith/` 回 404** |
+| ⚠ ⚠ **池中既有** | ⚠ ⚠ **`Lonnie Smith` **8 列**：seed 6（《Think!》1968、《Turning Point》1969、《Move Your Hand》1970、《Drives》1970、`Lonnie Smith Trio —《Purple Haze》1994`、`The Lonnie Smith = John Abercrombie Trio —《Afro Blue》1994`）＋ 卡單 2（c-142《Turning Point》、c-153《Live at Club Mozambique》1995）；**`Dr. Lonnie Smith` 0 列**（seed 17,248 列與卡單／prop 9,850 筆兩形都掃過） |
+
+**→ 判 `Lonnie Smith`。理由三層**：
+1. **第 307／1657（四）／1768 條逐字**：「**三邊（四邊）用另一形是建新字串的必要條件不是充分條件；池中已有同一位藝人的既有字串時，第 307 條壓過它**」
+   ——**本張與第 1768 條的 `Robert Glasper Experiment` 是完全同形的一次。**
+2. **`Dr.` 是他 1990 年代起自加的敬稱，不是改藝名**：**MB 就是同一個 artist 實體 `58c2a0ee`**（池中六列 seed 全部指向它），**而且 Discogs 自己的 credits 欄仍然寫裸名**——**四邊一致這件事在本張比表面上鬆。**
+3. ⚠ ⚠ **`seed_cards.json` 的六列雲端不能改**（`REMOTE_RUNBOOK.md`）——**只能往裸名靠、不能往 `Dr.` 形靠；若建 `Dr.` 形，池中必然出現「1968–70 年掛裸名、2016 年掛 `Dr.` 形」的分裂，那正是第 1672 條要防的事。**
+
+⚠ ⚠ **本批實際只剩一張要掛這個名**（《Turning Point》已依第 1813 條退），**但裁定照樣寫死，因為 (a) 派工信要求兩筆同形、(b) 後批若再遇到 Blue Note 2017–2021 年的 `Dr. Lonnie Smith`（《All in My Mind》2018、《Breathe》2021）要沿用同一形。**
+⚠ ⚠ **代價要講明**：**`bluenote.com` 只認 `dr-lonnie-smith`**——**③ 這一層日後要查這位藝人，路徑一定要帶 `dr-`，不能照卡池字串組網址。這一點寫進 `queryAlias` 了。**
+⚠ **`Dr. Lonnie Smith` 已寫進 `queryAlias`。本裁定可逆（改的是卡單值，不是卡池結構）。**
+
+---
+
+## 第 1816 條（同批，**派工信的地雷 3；本組一次用上七組團名形測試，結果三建四不建，分界全部落在「池中有沒有同系列前作」這一句上**）
+
+**第 1769（四）條把分界收斂成一句：「同一組判準、同一批碟，`Wayne Shorter Quartet` 建、`Robert Glasper Experiment` 不建，差別只在池中有沒有同系列前作」。本組七組逐一套用**：
+
+| 組 | MB artist-credit 逐字 | Discogs 逐字 | Apple 逐字 | **池中同系列前作** | **判** |
+|---|---|---|---|---|---|
+| **1. `Robert Glasper《Covered》`** | `Robert Glasper`（裸名） | `Robert Glasper` | `Robert Glasper` | 裸名 5 列 seed | **`Robert Glasper`**（三邊本來就是裸名，無爭議；⚠ **只有 Billboard 兩處用 `THE ROBERT GLASPER TRIO`／`ROBERT GLASPER & THE ROBERT GLASPER TRIO`，依第 1698（四）不採**） |
+| ⚠ ⚠ **2. `Robert Glasper《ArtScience》`** | **`Robert Glasper Experiment`（Group）** | **`Robert Glasper Experiment`（三筆）** | **查無**（第 1733 條） | ⚠ ⚠ **有：seed 的《Black Radio》(2012) ＋ c-162 b 的《Black Radio 2》(2013)，同編制同系列、兩張都掛裸名** | **`Robert Glasper`（不建）——第 1768 條的直接再次應驗，這次是同系列第三張** |
+| ⚠ ⚠ **3. `Joe Lovano & Dave Douglas Sound Prints`** | RG 層 `Joe Lovano & Dave Douglas`；⚠ **release 層逐字 `Joe Lovano & Dave Douglas, Sound Prints`** | **`Joe Lovano & Dave Douglas - Sound Prints`（兩筆）** | **`Joe Lovano & Dave Douglas Sound Prints`** | **無**（團 2012 年成軍；池中的 `Joe Lovano Quartet`／`Us Five`／`Nonet` 與三組聯名都是別的編制，`Dave Douglas —《Five》(1996)` 是他的個人盤） | **`Joe Lovano & Dave Douglas Sound Prints`（建）** ＋ **盤名切分改判，見下** |
+| **4. `Joe Lovano Quartet《Classic! Live at Newport》`** | `Joe Lovano Quartet`（Group b8088b2a） | `Joe Lovano Quartet`（兩筆） | `Joe Lovano Quartet` | ⚠ **有，而且就是同一個字串：seed 的 `Joe Lovano Quartet —《Tones Shapes & Colors》(1986)`** | **`Joe Lovano Quartet`（沿用，第 307 條）** |
+| ⚠ ⚠ **5. `Charles Lloyd & The Marvels`** | **`Charles Lloyd & The Marvels`（大寫 `The`；實體 714e6338 的名稱是小寫 `the`）** | **`Charles Lloyd & The Marvels`（五筆全部大寫）** | **`Charles Lloyd & The Marvels`** | ⚠ **有：seed 的 `Charles Lloyd & the Marvels Featuring Lucinda Williams —《Vanished Gardens》(2018)`（The Marvels 的第二張），但那是另一串字（多了 `Featuring Lucinda Williams`）** | **`Charles Lloyd & The Marvels`（建團名形、取大寫 `The`）** |
+| **6. `Terence Blanchard featuring The E-Collective`** | **`Terence Blanchard featuring The E‐Collective`（⚠ U+2010）** | **`Terence Blanchard Featuring The E-Collective`** | ⚠ **裸名 `Terence Blanchard`，團名塞進盤名 `Breathless (feat. The E-Collective)`** | **無**（E-Collective 2014 年成軍；池中四張 `Terence Blanchard` 全部是 2003／2005／2007／2013 年的原五重奏） | **`Terence Blanchard featuring The E-Collective`（建，連字號改 ASCII）** |
+| **7. `Marcus Strickland's Twi-Life`** | **`Marcus Strickland's Twi-Life`**（⚠ 背後實體 610a028f 逐字只是 `Marcus Strickland`、type `Person`——credited-name 覆寫） | **`Marcus Strickland's Twi-Life`** | **`Marcus Strickland's Twi-Life`** | **無**（裸名與團名池中皆 0 列） | **`Marcus Strickland's Twi-Life`（建）** |
+
+**另外兩組不需要測試、直接沿用**：
+- **`Julia Kadel Trio《Über und unter》`** ——⚠ **a 組同批已收《Im Vertrauen》(2014)，`prop-a.json` 的 `artist` 欄逐字 `Julia Kadel Trio`，本卡逐字元核過、一字不差**（同一批兩張卡掛名分裂是第 1672 條最不能出的錯，本組當硬檢查做）。
+- **`Kyoto Jazz Sextet《Mission》`** ——官方拉丁團名，§0.5「官方藝名本身就是拉丁字者保留」；⚠ **池中 `Kyoto Jazz Massive —《Spirit of the Sun》(2002)` 是沖野兄弟 1994 年成立的雙人組、MB 上是另一個 Group 實體，依第 1131 條不併、也不改池中那一列。**
+
+### ⚠ ⚠ 第 3 組的盤名切分要單獨說：**`Sound Prints:` 這個前綴判給掛名欄，不是盤名欄**
+
+| 來源 | 掛名欄逐字 | 盤名欄逐字 |
+|---|---|---|
+| **MB RG** | `Joe Lovano & Dave Douglas` | **`Sound Prints: Live at Monterey Jazz Festival`** |
+| ⚠ **MB release `abca4e0d` 的 artist-credit** | ⚠ **`Joe Lovano & Dave Douglas, Sound Prints`**（joinphrase 逐字 `, `） | `Sound Prints: Live at Monterey Jazz Festival` |
+| **Discogs 6898717／28407163** | **`Joe Lovano & Dave Douglas - Sound Prints`** | **`Live At Monterey Jazz Festival`** |
+| **Apple us `1443280640`** | **`Joe Lovano & Dave Douglas Sound Prints`** | **`Live At Monterey Jazz Festival`** |
+
+**→ 三比一（MB release 層、Discogs、Apple 都把 `Sound Prints` 放在掛名側；只有 MB 的 RG title 把它併進盤名）。**
+**取 Apple 的無標點形 `Joe Lovano & Dave Douglas Sound Prints` ＋ 盤名 `Live at Monterey Jazz Festival`**
+——**Discogs 的 ` - ` 是它的掛名／盤名分隔符、不是團名的一部分；MB release 層的逗號是 joinphrase、不是盤面字元。**
+⚠ **四形全部寫進 `queryAlias`，`termsFor()` 送任何一形都查得到。**
+
+### ⚠ ⚠ 第 5 組的大小寫要單獨說，並回答派工信問的「為什麼不算分裂」
+
+**(a) 大小寫取大寫 `The`**：**本 RG（`8e5c4814`，收下的那一個）的 artist-credit 逐字是大寫、Discogs 五筆與 Apple 也全部大寫**——
+**派工信逐字指定「掛名大小寫以 MB `artist-credit` 逐字為準」，主線的預先裁定亦逐字寫「掛名取該 RG 的 `artist-credit` 逐字形」，照辦。**
+⚠ **差異已逐字元核過並寫進 `queryAlias`：MB 的 artist 實體名與池中 2018 年那張卡都是小寫 `the`。**
+**兩者折鍵下同鍵（`chk-prop` 第二／七種盲區都不會亮），但寫進卡池的是兩串不同的字元序列——後批看到請照本條。**
+
+**(b) 裸名與團名形並存為什麼不算分裂**：
+**池中原本就同時有裸名 `Charles Lloyd`（seed 5 列，1966／1967／1969／1979／1985，Atlantic 與四重奏時期）與團名形 `Charles Lloyd & the Marvels Featuring Lucinda Williams`（2018）。**
+**The Marvels 是 2015 年才成軍的固定編制（Bill Frisell 吉他、Greg Leisz 踏板鋼棒吉他、Reuben Rogers 貝斯、Eric Harland 鼓），與 a 組同批收的 `Charles Lloyd —《Wild Man Dance》2015`（四重奏加希臘 lyra 與匈牙利 cimbalom 的委託組曲）是完全不同的編制與企劃**
+——**依第 1131 條「不同編制各自成立」並存。**
+**反過來說才是分裂：若本張掛裸名，池中會出現「The Marvels 第一張掛裸名、第二張掛團名」，那正是第 1768 條要防的形狀。**
+
+⚠ ⚠ **本組的七組對照案值得後批整段照抄**：**同一批碟裡，建三個團名形、不建兩個（Glasper 兩張）、沿用兩個（Lovano Quartet、Julia Kadel Trio），判準從頭到尾只有一句——「池中有沒有同系列前作」。**
+⚠ **新造分裂 0**（`chk-prop` 的「同 rgMbid 不同掛名 0」「跨批撞卡 0」兩道全過）。 ⚠ **七組皆可逆。**
+
+---
+
+## 第 1817 條（同批，**派工信的地雷 4；日籍藝人命名 §0.5**）：**`山中千尋` 兩張直接照主線第 1672 條；`森山威男`／`市川修` 查完了但碟退了**
+
+| 藝人 | slice／MB 逐字 | Discogs 逐字 | **Apple 逐字** | 池中既有 | **判** |
+|---|---|---|---|---|---|
+| **`Chihiro Yamanaka`（#9《Syncopation Hazard》、#22《Guilty Pleasure》）** | 羅馬字 `Chihiro Yamanaka`（Person、JP） | 羅馬字 `Chihiro Yamanaka`（12663934／10445688 兩筆） | ⚠ **漢字 `山中千尋`**（1442299606／1443567440 兩筆） | **seed 0 列；卡單／prop 2 筆，全在 c-163 a（《Somethin' Blue》2014、`THE SPHÈRES feat. 山中千尋, …`）** | **`山中千尋`**（**主線第 1672 條已預先定好，不必再議；Apple 是四層裡唯一給漢字的一層，與 a 組第 1787 條的觀察一致**） |
+| **`Takeo Moriyama`（#21，碟已退）** | RG 的 credited-name 是羅馬字 `Takeo Moriyama`，⚠ **背後 artist 實體 f80dfb12 的名稱逐字是漢字 `森山威男`** | 羅馬字 `Takeo Moriyama` | — | ⚠ **`森山威男 —《East Plants》(1983)` seed，apex 逐字 `pearl`；`森山威男カルテット —《My Dear》(1982)` seed ＋ c-67；`森山威男 —《Hush-A-Bye》(1978)` c-51；`Moriyama Takeo Percussion Ensemble —《Full Load》(1975)` seed ＋ c-67** | **`森山威男`（池中既有形就是漢字，§0.5 與第 307 條指向同一邊）**——**但碟依第 1814 條退，本判定留給日後的日本爵士線** |
+| **`Osamu Ichikawa`（#21，碟已退）** | RG 的 credited-name 是羅馬字，⚠ **artist 實體 30559f1d 的名稱逐字是漢字 `市川修`** | `Osamu Ichikawa (2)` | — | **`市川修`／`Ichikawa` 池中皆 0 列** | **`市川修`**（同上，碟已退） |
+| **`Kyoto Jazz Sextet`（#8）** | 拉丁團名 | 拉丁團名 | `KYOTO JAZZ SEXTET`（全大寫排版） | 0 列 | **`Kyoto Jazz Sextet`**（§0.5「官方藝名本身就是拉丁字者保留」） |
+
+⚠ ⚠ **`森山威男`／`市川修` 的連接詞與盤名，本棒也判完了寫在這裡**（碟退了，但下次遇到不必重查）：
+**掛名 `森山威男 with 市川修`**——**連接詞照 MB 的 joinphrase 逐字 ` with `，不翻譯**（先例：a 組第 1793 條的 `THE SPHÈRES feat. 山中千尋, Karen Teperberg & Dana Roth` 就是保留英文連接詞的同一種處理）。
+**盤名 `Moriyama Takeo meets Ichikawa Osamu at Blue Note` 逐字照發行品保留**——**羅馬字姓名倒置形是盤面印的形，派工信逐字要求「不要自己翻譯或倒置」，照辦。**
+⚠ **`森山威男` 這一形在池中有 apex `pearl` 一張，是本組所有掛名裡與 apex 關係最近的一個**——**若日後真的收這張，掛名必須逐字沿用，否則會把 apex 那張的藝人頁切成兩半。**
+⚠ **`山中千尋` 兩張與 a 組兩張已逐字元核為同一串（U+5C71 U+4E2D U+5343 U+5C0B）。** ⚠ **本裁定可逆。**
+
+---
+
+## 第 1818 條（同批，**⚠ ⚠ (甲) 的第七種辨識形狀，本條新立**）：**`Joe Lovano Quartet《Classic! Live at Newport》`收——2005 年的音樂節現場，2016 年才首次發行**
+
+**(甲) 目前已有六種辨識形狀（見 c-158～c-162 各批裁定，最新是第 1704 條「先前只以影像載體發行過，首次以純音訊發行仍算 (甲)」）。本組給出第七種**：
+
+| 判據 | 逐字 |
+|---|---|
+| **① 錄音年可考，且與發行年差十一年** | **Discogs 9904304 的 notes 欄逐字「Recorded at Newport Jazz Festival®, RI, US (2005)」** |
+| **② 音樂節本身是共同權利人** | **Discogs 9904304 的廠牌鏈第五格逐字 `Newport Jazz Festival`、companies 逐字 `Recorded At: Newport Jazz Festival`**（與同批 Sound Prints 那張的 `Monterey Jazz Festival` 同形） |
+| **③ 中間十一年沒有任何載體** | **MB 全庫只有這一個 RG（`9460deda`，轄下 1 個 release）；Discogs 上 2005–2015 年零條目** |
+| **④ 不是 (乙)** | **母體從來沒有發行過**——**不是 Blue Note 舊目錄的再發，`format` 欄逐字 `CD, Album`（無 `Reissue`）、`series` 欄逐字空陣列** |
+
+**→ 收。`year` 依 (甲) 的規則取首次發行年 `2016`，不取錄音年 2005。**
+
+⚠ ⚠ **第七種形狀的一句話定義（給後批照抄）**：
+**「音樂節／俱樂部的現場錄音，由音樂節與廠牌共同持有，擱置多年後首次以錄音發行」**
+——**判據是「Discogs 的 notes／companies 欄有錄音年與場地、廠牌鏈裡有音樂節的名字、MB 全庫只有一個 RG」。**
+⚠ ⚠ **與 a 組第 1785 條的分界一致**：**那條說「(乙) 擋的是『這一批錄音在本店已經有、或會有另一張卡』」——本張退掉的話，這場 2005 年的 Newport 現場會永久掉出本線，池中沒有、也不會有第二張卡承載它。**
+⚠ ⚠ **同一個形狀本組出現兩次，另一次被 imprint 擋掉**：**退掉的 `森山威男 with 市川修` 那張是 2000-11-22 錄音、2016-01-31 首發（第 1814 條），十五年落差，判據一模一樣——但廠牌不是 Blue Note Records，所以進不了本線。**
+**→ 給後批：**(甲) 的判定在 imprint 之後，不在之前；imprint 站不住的碟不管形狀多漂亮都不收。**
+⚠ ⚠ **本張同時是 (丁)**：**六軌裡的〈I'm All For You〉折鍵撞 `Joe Lovano —《I'm All for You》(2004)`（在 `c159-cards.json` 與 `c159/prop-a.json`，尚未上線），那張正是同一組四重奏（Lovano／Hank Jones／George Mraz／Lewis Nash）的錄音室盤，〈Don't Ever Leave Me〉亦為該盤曲目**
+——**零軌實體重疊（不同次錄音），但形狀相近；已在 `risk` 標明「下游簡介必須寫明本卡是 2005 年 Newport 的現場、與 c-159 那張錄音室盤分開論述」。**
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1819 條（同批，**派工信的地雷 5 ＋ `chk-prop` 第七種盲區**）：**非 ASCII 連字號與其他標點字元，本組逐字元核過六處**
+
+| # | 字串 | 字元 | 來源 | **處理** |
+|---|---|---|---|---|
+| 1 | ⚠ ⚠ **`The E‐Collective`（掛名）** | **U+2010 HYPHEN** | **MB 的 artist 實體 `e025a183` 名稱與 artist-credit 都是 U+2010** | **改 ASCII `-`**：**Discogs 16104077 逐字 `Terence Blanchard Featuring The E-Collective`、Apple us 逐字 `Breathless (feat. The E-Collective)`、Billboard 葛萊美特刊 p74 逐字 `TERENCE BLANCHARD FEATURING THE E-COLLECTIVE` 三邊全部 ASCII**——**派工信逐字：不可留非 ASCII 連字號。`chk-prop b` 標記 0。** |
+| 2 | **`Gaïa`（盤名）** | **`ï` U+00EF** | MB／Discogs 逐字帶分音符；Apple us 逐字全大寫 `GAÏA` | **保留 `Gaïa`**；**`Gaia` 無分音符形也掃過（seed 17,248 列＋卡單 9,850 筆皆 0），兩形都寫進 `queryAlias`**（第 1702 條） |
+| 3 | **`José James`（掛名）** | **`é` U+00E9** | MB／Discogs credits／Apple 帶重音；⚠ **Billboard 榜列逐字是無重音的 `JOSE JAMES`** | **沿用池中／卡單的帶重音形**；**`Jose James` 也掃過（0 筆）**（第 1769（二）已記同一位藝人） |
+| 4 | **`Über und unter`（盤名）** | **`Ü` U+00DC** | MB 逐字德語句首大寫；Discogs 逐字 `Über Und Unter`；Apple de 逐字 `Über und Unter` | **取 MB 的 `Über und unter`**；**`Uber und unter` 無分音符形也掃過（0 命中），三形都寫進 `queryAlias`** |
+| 5 | **`Marcus Strickland's Twi-Life`（掛名）** | **撇號 `'` U+0027、連字號 `-` U+002D** | **MB／Discogs／Apple 三邊逐字元核過，三邊都是 ASCII** | **照用**（第 1702／1769（五）條的固定動作做過） |
+| 6 | ⚠ **`Hush‐A‐Bye`（退件的軌名）** | **U+2010 ×2** | MB release `a199914c` 的軌目 | **碟已退（第 1814 條），但記下來**——⚠ **池中 `森山威男 —《Hush-A-Bye》(1978)` 在 `c51/prop-c.json` 用的是 ASCII，日後若兩者相遇要用 ASCII 形** |
+
+⚠ ⚠ **另有兩處軌名層的 U+2019，不進卡池欄位但下游簡介引用時要逐字元核**：
+**`Terence Blanchard` 第 11 軌 MB 逐字 `I Ain’t Got Nothin’ but Time`、`Joe Lovano Quartet` 的 `Bird’s Eye View`／`Don’t Ever Leave Me`／`I’m All For You`、`Robert Glasper《ArtScience》` 的 `Let’s Fall in Love`、`Norah Jones` 的 `It’s a Wonderful Time for Love`／`Don’t Be Denied`。**
+⚠ **第 1769（五）條的固定動作（掛名或盤名含 `'`／`’`／`"`／`”`／`&`／`＆` 時逐字元比對池中既有字串）本組執行了六次，`chk-prop` 的四道一次都沒亮——這正是那一條說的「標記 0 不等於沒問題」。**
+
+---
+
+## 第 1820 條（同批）：**撞陳列 42 處／12 張；⚠ ⚠ 盤名逐字撞 apex 王牌 1 處（派工信逐字要求查的那一條，本組中了）；軌名撞 apex 0 處、折鍵撞卡 0 處**
+
+**掃法**：**19 張的「掛名｜盤名」折鍵 ＋ 盤名單獨折鍵 ＋ 全部軌名折鍵，逐一對 `seed_cards.json` 17,248 列（`r[8]` 同時讀 apex 層級）與卡單／prop 9,850 筆。**
+
+### ⚠ ⚠ 盤名撞 apex 1 處（本組唯一一處）
+**`Lonnie Smith —《Evolution》(2016)` 的盤名折鍵 `evolution` 撞池中四張同名卡**：
+**`Shintaro Quintet —《Evolution》(1984)`（⚠ ⚠ **apex 層級逐字 `pearl`**）／`Grachan Moncur III —《Evolution》(1963)`／`Dennis Coffey & the Detroit Guitar Band —《Evolution》(1971)`／`Boyz II Men —《Evolution》(1997)`（後三張非 apex）。**
+**掛名不同、零軌重疊、非同碟——但下游簡介不得讓本卡的論述碰到 Shintaro Quintet 那張王牌。**
+⚠ **這正是派工信逐字寫的那個坑（「盤名逐字撞上某張 apex 王牌、但掛名不同——盤名也要獨立掃一次 apex」，先例是《Never Can Say Goodbye》與《Ten》）。本組 19 張全部做了這一掃，只有這一張中。**
+
+### 逐張明細（12 張有命中、7 張 0 處）
+| 卡 | 處 | 命中 |
+|---|---:|---|
+| `Yaron Herman《Everyday》` | **3** | **盤名 `Everyday` ↔ `The Cinematic Orchestra —《Every Day》(2002)`（空格被折掉、同鍵不同碟；同名軌亦撞同一張）**；〈Volcano〉↔ `Jungle (2023)`；〈City Lights〉↔ `Lee Morgan (1958)` |
+| `Robert Glasper《Covered》` | **1** | 〈Introduction〉↔ `Mr. Fingers —《Introduction》(1992)` |
+| `José James《Yesterday I Had the Blues》` | **8** | **〈Body and Soul〉↔ 六張（⚠ 含 `Billie Holiday —《Body and Soul》(1957)`，即本張的致敬對象本人）**；〈Tenderly〉↔ `Don Byas (1951)` |
+| `Kyoto Jazz Sextet《Mission》` | **2** | **〈Search For The New Land〉↔ `Lee Morgan —《Search for the New Land》(1964)`；〈Speak No Evil〉↔ `Wayne Shorter —《Speak No Evil》(1965)`（兩張逐字查過 `r[8]`，**都不是 apex**）** |
+| `山中千尋《Syncopation Hazard》` | **1** | 〈The Entertainer〉↔ `三浦大知 —《The Entertainer》(2013)` |
+| `Charles Lloyd & The Marvels《I Long to See You》` | **1** | 〈La Llorona〉↔ `Chavela Vargas —《La Llorona》(1993)` |
+| `Marcus Strickland's Twi-Life《Nihil Novi》` | **6** | 〈Alive〉↔ `KISS (1975)`／`Grant Green (1970)`；〈Mantra〉↔ `Shelter (1995)`；〈Drive〉↔ `Béla Fleck (1988)`；〈Truth〉↔ `Jeff Beck (1968)`／`THE SQUARE (1987)` |
+| `Nels Cline《Lovers》` | **4** | 〈Beautiful Love〉↔ `Derek Smith Trio (2009)`；〈Secret Love〉↔ `Dry Cleaning (2026)`；〈Invitation〉↔ `Jaco Pastorius (1983)`／`Andrew Hill Trio (1975)` |
+| `Norah Jones《Day Breaks》` | **6** | 〈Burn〉↔ `Deep Purple (1974)`；〈Tragedy〉↔ `Julia Holter (2011)`／`Disclose (1994)`；〈Peace〉↔ `Eurythmics (1999)`／`Chet Baker (1982)`／`Yasuhiro Kohno Trio + 1 (1983)` |
+| ⚠ ⚠ **`Lonnie Smith《Evolution》`** | **6** | **盤名 4 張（含 apex `pearl` 1 張，見上）** ＋ 〈Straight No Chaser〉↔ `Thelonious Monk —《Straight, No Chaser》(1967)`（逗號被剝掉、折鍵同鍵）＋〈My Favorite Things〉↔ `John Coltrane (1961)` |
+| `Robert Glasper《ArtScience》` | **3** | 〈Let's Fall in Love〉↔ `Simone (2008)`；〈Human〉↔ `Death (1991)`／`이승환 (1995)`（**後者另在 `c104-cards.json`／`c104/prop-a.json`**） |
+| `Joe Lovano Quartet《Classic! Live at Newport》` | **1** | **〈I'm All For You〉↔ `Joe Lovano —《I'm All for You》(2004)`（`c159-cards.json`／`c159/prop-a.json`）——(丁)，見第 1818 條** |
+| **0 處的 7 張** | **0** | `Marcus Miller《Afrodeezia》`／`Lionel Loueke《Gaïa》`／`Joe Lovano & Dave Douglas Sound Prints《Live at Monterey Jazz Festival》`／`Terence Blanchard featuring The E-Collective《Breathless》`／`Derrick Hodge《The Second》`／`Julia Kadel Trio《Über und unter》`／`山中千尋《Guilty Pleasure》` |
+
+⚠ ⚠ **同批內部的三組交叉點（不是撞卡，是敘事要分開的地方）**：
+1. **`Lonnie Smith《Evolution》` 的 credits 欄逐字有 `Robert Glasper – Piano` 與 `Joe Lovano – Tenor Saxophone`**——**本組另外三張卡的掛名。**
+2. **`Robert Glasper《ArtScience》` 的 credits 欄逐字有 `Derrick Hodge – Bass`**——**本組《The Second》那張的掛名。**
+3. **`Norah Jones《Day Breaks》` 的〈Peace〉是 Horace Silver 的曲、管風琴由 Dr. Lonnie Smith 彈**——**與《Evolution》同一位。**
+**→ 下游簡介這四張要分開寫，不要四張卡講同一個班底。**
+⚠ **折鍵撞卡 0 處**（19 張全過 `chk-prop` 的「與線上池撞卡」與「跨批撞卡」兩道）。
+
+---
+
+## 第 1821 條（同批）：**年份覆核 19／19 成立、改判 0；三層粒度的分佈與兩個只有兩層的例外**
+
+| 層級 | 張數 | 例 |
+|---|---:|---|
+| **三層同到日**（MB frd ＝ Discogs `released` ＝ Apple `releaseDate`） | **12** | Yaron Herman `2015-08-28`／Lionel Loueke `2015-10-30`／Kyoto Jazz Sextet `2015-04-15`／山中千尋《Syncopation Hazard》`2015-07-15`／Charles Lloyd `2016-01-15`／Julia Kadel Trio `2016-04-01`／Norah Jones `2016-10-05`／Joe Lovano Quartet `2016-07-29`／山中千尋《Guilty Pleasure》`2016-07-13` 等 |
+| **三層同年、日期粒度不同**（取 MB／Discogs 的街頭日） | **6** | Robert Glasper《Covered》（MB `2015-06-10` 日版最早、Apple `2015-06-16` 美版）／Sound Prints（MB `2015-04-07`、Apple `2015-04-03`）／José James（MB `2015-02-04` 歐版數位、Apple `2015-03-31` 美版實體）／Terence Blanchard（MB `2015-05-26`、Apple `2015-05-22`）／Nels Cline（MB `2016-08-05` 數位、Discogs `2016-08-19` 實體）／Marcus Strickland（Discogs 只有年） |
+| ⚠ **只有兩層可用** | **1** | **`Robert Glasper《ArtScience》`：Apple 三個 storefront 全查無（第 1733 條），只有 MB frd `2016-09-16` 與 Discogs `released` `2016-09-16` 兩層——兩層同到日，過「兩層以上可用就取多數」的門檻** |
+| ⚠ **MB frd 只有年份** | **2** | `Derrick Hodge《The Second》`（MB 與 Discogs 都只有 `2016`，日級日期只有 Apple 的 `2016-08-26` 那一層）／`Lonnie Smith《Evolution》`（Discogs 只有 `2016`，MB 與 Apple 同到 `2016-01-29`） |
+
+⚠ **第 1601 條的 Apple 年初佔位日（`YYYY-01-01T08:00:00Z`）本組 0 張中**——**19 張的 Apple `releaseDate` 全部是真的日級日期（查無的兩張除外）；⚠ 對照 a 組同批有 4 張中，差別在年代（2015–16 的條目比 2013–14 完整）。**
+⚠ ⚠ **a 組第 1791 條那種「MB 只建了數位再發的 release、`frd` 落在數位年、實體首發早很多年」的形狀，本組一次都沒有**
+——**已逐張反查：19 張裡有 9 張的 MB 轄下同時有數位與實體 release，`frd` 全部落在同一年，沒有一張的實體條目早於 MB 的 `frd`。**
+⚠ ⚠ **兩個錄音年與發行年落差很大的，都不是年份改判，理由各不相同**：
+**(a) `Joe Lovano Quartet`（錄 2005、發 2016）是 (甲)，依規則取首發年**（第 1818 條）；
+**(b) `Nels Cline《Lovers》`（Discogs notes 逐字「Recorded in November / December 2013」、發 2016）不是 (甲) 也不是年份錯——那是一張排程延後的新作，MB 全庫只有一個 RG、Discogs 上 2013–15 年沒有任何條目、也沒有任何一版標 `Previously Unreleased`，`year` 取首發年 2016。**
+**→ 給後批：錄音年與發行年落差大，要先分「庫藏出土（(甲)，收、取首發年）／排程延後（普通新作，取首發年）／MB 把數位年當首發（年份錯，改 `year`）」三種，判據是「MB 有幾個 RG」與「那一年 Discogs 上有沒有實體條目」（a 組第 1785 條的兩步）。**
+
+---
+
+## 第 1822 條（同批，**⚠ ⚠ 本組最該寫進交接的一條**）：**紙本這一層對本組後半完全失效——Billboard 只覆蓋到 2015 年，本組有 12 張是 2016 年的碟**
+
+### 覆蓋狀況
+- **`batch-progress/enum/` 現有 `billboard-bn-2013-ocr.txt.gz`／`billboard-bn-2014-ocr.txt.gz`／`billboard-bn-2015-ocr.txt.gz`（後兩份由 a 組第 1786 條本批新抓入庫，2014 年 43 期、2015 年 40 期）。**
+- ⚠ ⚠ **`SOURCES` 的 Billboard 覆蓋到 2015 為止。本組 22 筆裡 12 筆是 2016 年的碟——① 這一層對它們的命中率結構性為 0，不是「查無」。**
+- **本棒因此沒有新抓任何 PDF、沒有新增任何 OCR 檔、`SOURCES-billboard-cashbox.md` 未改**（a 組同批已 append 過一節；⚠ **`git status` 顯示該檔為 a 組的未提交改動，本棒一字未碰**）。
+
+### 2015 年那十張的命中（**逐字**）
+| 卡 | 命中 |
+|---|---|
+| **`Marcus Miller《Afrodeezia》`（5 處，本組最高）** | **`BB-2015-10-04-04` p60 側欄逐字「Also on Heatseekers, Marcus Miller's latest album, Afrodeezia, bows at No. 5 with 2,000 sold.」**；同頁榜位逐字 `MARCUS MILLER  Afrodeezia  HANNIBAL/BLUE NOTE`；另 `BB-2015-11-04-11` p56、**`BB-2015-14-05-09` p68**、`BB-2015-45-01-02-Issue-39` p68 三期同形榜位 |
+| **`Terence Blanchard featuring The E-Collective《Breathless》`（4 處）** | ⚠ ⚠ **`BB-2015-45-01-02-Issue-39`（葛萊美特刊）p74 的第 58 屆「Best Jazz Instrumental Album」入圍表逐字 `Breathless ／ TERENCE BLANCHARD FEATURING THE E-COLLECTIVE ／ LABEL Blue Note Records`**；同刊 p90 的 Blue Note 全版廣告逐字引 AP「Trumpeter Terence Blanchard makes a powerful musical and political statement on \"Breathless\".」 |
+| **`Robert Glasper《Covered》`（2 處）** | **`BB-2015-22-23-07-04-Double-Issue-20` p63 的 Billboard 200 逐字 `THE ROBERT GLASPER TRIO  Robert Glasper: Covered, Recorded Live At Capitol Studios  BLUE NOTE`（第 66 位、在榜第 1 週）**；**同一份葛萊美特刊 p74 入圍表逐字 `Covered: Recorded Live At Capitol Studios ／ ROBERT GLASPER & THE ROBERT GLASPER TRIO ／ LABEL Blue Note Records`** |
+| **`José James《Yesterday I Had the Blues》`（1 處）** | **`BB-2015-14-05-09` p68 的 Jazz Albums 榜逐字 `JOSE JAMES  Yesterday I Had The Blues: The Music Of Billie Holiday  BLUE NOTE`**——⚠ **同一頁往下三行逐字 `BILLIE HOLIDAY  The Centennial Collection  COLUMBIA/LEGACY`，百年誕辰的兩張碟同榜** |
+| **`Joe Lovano & Dave Douglas Sound Prints》`（2 處）** | `BB-2015-35-10-24-Issue-31` p158 的 Capitol 年度藝人名單逐字 `HALSEY • JAMES DAVIS • JAMIE CULLUM • JOE LOVANO & DAVE DOUGLAS`；`BB-2015-51-01-03---Grammy-Issue` p74／p76 另有 Lovano 的入圍記載 |
+| **0 命中的 5 張（2015 年）** | `Yaron Herman`（法國盤）／`Lionel Loueke`（⚠ **美國盤卻 0**）／`Kyoto Jazz Sextet`（日本盤）／`山中千尋《Syncopation Hazard》`（日本盤）／退掉的 `Lonnie Smith《Turning Point》`（日本盤） |
+
+⚠ ⚠ **a 組第 1786 條要補的那一句在本組再次成立**：**`Lionel Loueke《Gaïa》` 是美國盤卻 0 命中**——**與 a 組的 `Fabian Almazan《Rhizome》` 同形，原因都是「沒有進 Billboard 的零售榜與評介欄」。**
+**→ 第 1664 條的修正版：「美國盤」要再問一層「它走不走零售通路／有沒有進 SoundScan 榜」。本線目前兩個實例。**
+⚠ ⚠ **同一頁 `BB-2015-14-05-09` p68 一次替本組兩張與 a 組一張背書**（`CHARLES LLOYD  Wild Man Dance  BLUE NOTE`、`JOSE JAMES  …`、`MARCUS MILLER  Afrodeezia  HANNIBAL/BLUE NOTE`）——**a 組與 b 組的 2015 年那一格是同一批榜單，本機覆核時可以一次看完。**
+⚠ ⚠ ⚠ **給 c-164 與後批的交接（本條最重要的一句）**：
+**這條線接下來的碟會愈來愈多落在 2016–2024，① 紙本這一層會一路失效。**
+**要嘛本機補抓 Billboard 2016 以後（⚠ a 組第 1786 條已記：2014／2015 那兩份沒有留 PDF，關鍵字集只有 41 個，要查別的碟得重新下載），要嘛把 ① 的權重讓給 ③ 廠牌官網與 ② Discogs。**
+**本組實測的順位是 ② 19／19 ＞ ④ 17／19 ＞ ③ 12／19 ＞ ① 5／19 ＞ ⑥ 0 ＞ ⑤ 0**（見第 1823 條）。
+
+---
+
+## 第 1823 條（同批）：**六層證據的實測命中——② 19／19、④ 17／19、③ 12／19、① 5／19、⑥ 0、⑤ 0；(丙) 的訊號亮 6 次、成立 0 次**
+
+| 層 | 命中 | 說明 |
+|---|---:|---|
+| **② Discogs（地基）** | **19／19** | **連十三組 100%。** ⚠ **本組有四張的 Discogs 是決定性證據**：退件 `Lonnie Smith《Turning Point》`（`format` 欄 `Reissue, Remastered` ＋ `series` 欄 `Blue Note, The Masterworks` ＋ notes 欄的 `BST 84313`）、退件 `森山威男`（廠牌欄只有 `Nihon Blue Note`）、收下的 `Joe Lovano Quartet`（notes 欄的 `(2005)` 讓 (甲) 成立）、收下的 `Nels Cline`（notes 欄的 `Recorded in November / December 2013` 讓 (甲) 不成立）。 |
+| **④ Apple 店面** | **17／19** | ⚠ ⚠ **查不到的兩張是 `Marcus Miller《Afrodeezia》` 與 `Robert Glasper《ArtScience》`**——**us／gb／fr／jp 多個 storefront ＋ `attribute=albumTerm` 的精準查法全部 0 命中，第 1733 條形狀，上架固定試聽要另想辦法。** ⚠ **17 張的 `collectionExplicitness` 逐字全部 `notExplicit`（第 1433 條那種淨化版雙胞胎本組 0 例）。** ⚠ ⚠ **Apple 是本組唯一替 `山中千尋` 用漢字掛名的一層**（兩張的 `artistName` 逐字都是漢字），**直接支持主線第 1672 條，與 a 組第 1787 條的觀察一致。** |
+| ⚠ **③ 廠牌官網** | **12／19** | **`bluenote.com/artist/<藝人>/` 逐一試過**：**`marcus-miller`／`robert-glasper`／`lionel-loueke`／`joe-lovano`／`dave-douglas`／`jose-james`／`terence-blanchard`／`dr-lonnie-smith`／`charles-lloyd`／`derrick-hodge`／`marcus-strickland`／`nels-cline`／`norah-jones` 十三個路徑回 200**（涵蓋 12 張卡）；**`yaron-herman`（法）／`kyoto-jazz-sextet`（日）／`chihiro-yamanaka`（日）／`julia-kadel`（德）／`lonnie-smith`（⚠ **裸名路徑 404，只有 `dr-` 形有效**）五個回 404。** ⚠ **與 a 組第 1787 條的結論一致：③ 不是「只對美國線有效」，是「只對廠牌現在還在推的藝人有效」；日本線改查 universal-music.co.jp（a 組第 1800 條）。** |
+| **① 紙本 Billboard** | **5／19** | ⚠ ⚠ **分母其實只有 10（2015 年那一格），2016 年那 12 張結構性 0**——**見第 1822 條。以 2015 年那十張算是 5／10。** |
+| **⑥ 維基** | **0／19** | **本組沒有任何一張需要動用維基**（②④③ 三層已經把每一張的 imprint、年份與版本釘死）。⚠ **與 a 組的 3／17 不同，差別在本組沒有 imprint 爭議需要第四層佐證的收件**（退件的兩張是靠 ② 就判掉的）。 |
+| **⑤ AllMusic** | **0／19** | **連十三組 0。** |
+
+### ⚠ ⚠ (丙) 的訊號亮 6 次，逐筆查完全部不成立——而且是四種不同的假陽性
+| # | 卡 | 訊號逐字 | **為什麼不成立** |
+|---|---|---|---|
+| 1 | **`Yaron Herman《Everyday》`** | **Apple fr ℗ 欄逐字 `℗ 2015 Decca Records France`（零個 Blue Note）；Discogs 廠牌欄第一格逐字 `Blue Note France`（不是 `Blue Note`）** | ⚠ **本線沒見過的新形狀**：**`Blue Note France` 是 Discogs 上的 Label 實體、是 Blue Note 的法國 imprint；而且法版宣傳 CDr（Discogs 7832454）的廠牌欄逐字只有一格 `Blue Note`；MB `label-info` 亦逐字 `Blue Note [713c4a95]`。照第 1784 條的動作，三筆零售條目全部有 Blue Note。** |
+| 2 | **`Marcus Miller《Afrodeezia》`** | 南非版 Discogs 34944083 的廠牌欄逐字只有 `Universal` | **美版 7035030 與歐版 7114810 的廠牌鏈第一格都逐字 `Blue Note`**；南非版是 Universal 在地分公司的壓片 |
+| 3 | **`José James《Yesterday I Had the Blues》`** | Apple us ℗ 欄第一格逐字 `Universal Classics & Jazz, a division of UNIVERSAL MUSIC LLC` | **`Universal Classics & Jazz` 是 Blue Note 的母公司部門名、不是別家廠牌**；三筆 Discogs 零售條目第一格全部逐字 `Blue Note`（與 a 組 quasimode《My Favorite Songs》同形） |
+| 4 | **`Kyoto Jazz Sextet《Mission》`** | Apple jp ℗ 欄第一格逐字 `℗ 2015 Extra Freedom.,Ltd`（沖野修也自有公司） | **第 1753 條第 4 點／第 1770 條的形狀**；Discogs 7621486 廠牌鏈第一格逐字 `Blue Note`、第二格才是 `Extra Freedom Ltd.` |
+| 5 | **`Nels Cline《Lovers》`** | Apple us ℗ 欄逐字 `℗ 2016 Memorize and Destroy, Under Exclusive License To Blue Note Records` | **寫了 `under exclusive license`，第 1753（4）／1770 條一律過閘** |
+| 6 | **`Charles Lloyd & The Marvels《I Long to See You》`** ／ **`Julia Kadel Trio《Über und unter》`** | Apple ℗ 欄第一格是藝人本人（`Charles Lloyd` ／ `Julia Kadel`）＋ `Under Exclusive License To …` | **同上；Julia Kadel 那張 a 組已就同一位藝人判過一次（《Im Vertrauen》），本張照先例** |
+
+⚠ ⚠ **(丙) 在本線已經連續四組亮訊號、零成立**（c-162 b 3 次、a 組 5 次、本組 6 次）——**第 1753（4）／1770 條這條假陽性規則的價值愈來愈高，建議後批直接把「℗ 欄第一格不是 Blue Note」降級成「只是要去查 Discogs 廠牌鏈」的提示，不要當成 (丙) 的判據。**
+⚠ ⚠ **真正判掉 imprint 的兩次，用的都是 Discogs 廠牌鏈那一層**（第 1814 條的 `Nihon Blue Note`、a 組第 1784 條的 `UMe`）——**第 1784 條收斂出來的那個動作是目前最可靠的 imprint 判準。**
+
+---
+
+## 第 1824 條（同批）：**曲風取捨——`['jazz']` 12 張、`['jazz','soul']` 5 張、`['jazz','pop']` 1 張、`['jazz','blues']` 1 張、`['jazz','folk']` 1 張**
+
+| 曲風 | 張數 | 卡 |
+|---|---:|---|
+| `['jazz']` | **11** | Yaron Herman／Robert Glasper《Covered》／Lionel Loueke《Gaïa》／Sound Prints／Terence Blanchard／Kyoto Jazz Sextet／山中千尋 ×2／Nels Cline／Julia Kadel Trio／Joe Lovano Quartet |
+| `['jazz','soul']` | **5** | Marcus Miller《Afrodeezia》／Derrick Hodge《The Second》／Marcus Strickland's Twi-Life／Lonnie Smith《Evolution》／Robert Glasper《ArtScience》 |
+| `['jazz','pop']` | **1** | Norah Jones《Day Breaks》 |
+| `['jazz','blues']` | **1** | José James《Yesterday I Had the Blues》 |
+| `['jazz','folk']` | **1** | Charles Lloyd & The Marvels《I Long to See You》 |
+
+**固定處理**：
+- ⚠ **`contemporary jazz` 依第 1572 條不跟**——**本組 MB 或 Discogs 給了這個標籤的有 9 張，一張都沒跟。**
+- **不在十類名單上的也不跟**：`post-bop`／`post bop`（4 張）、`jazz fusion`／`fusion`（2 張）、`vocal jazz`／`jazz blues`／`pop rock`（Norah Jones）、`ragtime`（山中千尋《Syncopation Hazard》，**整張的 ragtime 題旨寫進簡介、不進曲風欄**）、`soul jazz`（退件）、`jazzy hip-hop`／`neo soul`（ArtScience 的歐／加版 style）、`easy listening`（José James 的歐／東南亞版 style）。
+- ⚠ ⚠ **`jazz-funk` 一律折到 `soul`**：**Marcus Miller、Marcus Strickland、Lonnie Smith 三張；池中先例逐字可查（`Lonnie Smith —《Move Your Hand》`／`Grant Green —《Live at Club Mozambique》` 皆 `["jazz","soul"]`）。**
+- ⚠ ⚠ **三處刻意與「同一位藝人的其他卡」不同，都寫在各卡的 `risk` 裡**：
+  **(a) `Lionel Loueke《Gaïa》` 取 `['jazz']`，而池中／卡單的《Mwaliko》《Heritage》是 `['jazz','world']`**——**MB `genres` 逐字只有 `jazz`(3)、Discogs `style` 逐字空陣列，兩邊都沒給世界音樂標籤；本張是電聲三重奏，不是把西非素材放前景的那兩張。曲風欄逐張判、不逐藝人判。**
+  **(b) `Robert Glasper《Covered》` 取 `['jazz']`、《ArtScience》取 `['jazz','soul']`**——**前者是純鋼琴三重奏（Discogs `genre` 逐字只有 `Jazz`），後者的歐／加版 Discogs `genre` 逐字是 `["Hip Hop","Jazz","Funk / Soul"]`。**
+  **(c) `José James《Yesterday I Had the Blues》` 取 `['jazz','blues']`，而 c-162 b 的《No Beginning No End》是 `['jazz','soul']`**——**本張是 Billie Holiday 歌本，Discogs 三筆的 `genre` 欄逐字都是 `["Jazz","Blues"]`。**
+- ⚠ **`hiphop` 考慮過一次沒取**（ArtScience，歐／加版把 Hip Hop 放在第一格）——**理由是第 307 條：池中《Black Radio》與 c-162 b《Black Radio 2》的曲風欄逐字都是 `['jazz','soul']`，同系列三張取同一組。標籤已寫進該卡 `risk`，留給本機覆核。**
+- ⚠ **`world` 考慮過一次沒取**（Marcus Miller《Afrodeezia》，整張是非洲—大西洋路線的田野合作）——**MB 與 Discogs 兩邊都沒給世界音樂標籤。**
+
+---
+
+## 第 1825 條（同批）：**掛名總表——沿用池中／卡單 10、新字串 7（其中團名形新造 3）、新造分裂 0**
+
+### （一）沿用既有字串 10
+`Robert Glasper`（**2 張本批**；池中 seed 5 ＋ c-162 b 1，見第 1816 條第 2 組）／
+`Lionel Loueke`（卡單 3，c-161 a＋c-162 a／b）／`José James`（卡單 2，c-162 b＋c-163 a）／
+`Norah Jones`（seed 4 ＋ 卡單 3）／`Derrick Hodge`（卡單 1，c-162 b）／
+`Julia Kadel Trio`（**c-163 a 同批 1，逐字元核過**）／`Joe Lovano Quartet`（seed 1，1986）／
+**`Lonnie Smith`**（seed 6 ＋ 卡單 2，**四邊都給 `Dr.` 形仍沿用，見第 1815 條**）／
+**`山中千尋`**（**2 張本批**；c-163 a 同批 2，**主線第 1672 條指定的漢字形**）／
+**`Charles Lloyd & The Marvels`**（⚠ **嚴格說是「半沿用」：池中團名形是 2018 年那張的長串 `Charles Lloyd & the Marvels Featuring Lucinda Williams`，本卡是它的前作、取本 RG 的大寫 `The`，見第 1816 條第 5 組**）。
+
+### （二）新字串 7（池中 seed 17,248 列與卡單／prop 9,850 筆皆 0，**羅馬字／漢字／片假名／去重音形都掃過**）
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| **`Yaron Herman`** | Person／IL-FR | 三邊一致（MB／Discogs 三筆／Apple fr）；希伯來文形亦 0 |
+| **`Marcus Miller`** | Person／US | 三邊一致（MB／Discogs 三筆／Billboard 榜單欄逐字 `MARCUS MILLER`）；⚠ Apple 查無 |
+| **`Nels Cline`** | Person／US | 三邊一致；⚠ 池中沒有 Wilco 的卡，不會與樂團掛名相混 |
+| **`Kyoto Jazz Sextet`** | Group／JP | 三邊一致；⚠ **與池中 `Kyoto Jazz Massive` 是兩個 Group 實體，不併**（第 1131 條） |
+| ⚠ **`Joe Lovano & Dave Douglas Sound Prints`**（團名形新造 1） | 兩個 Person 實體 ＋ 團名 | **見第 1816 條第 3 組（含盤名切分改判）** |
+| ⚠ **`Terence Blanchard featuring The E-Collective`**（團名形新造 2） | Person ＋ Group（⚠ 名稱含 U+2010） | **見第 1816 條第 6 組與第 1819 條第 1 列** |
+| ⚠ **`Marcus Strickland's Twi-Life`**（團名形新造 3） | ⚠ **credited-name 覆寫（背後實體是 Person `Marcus Strickland`）** | **見第 1816 條第 7 組** |
+
+### （三）新造分裂 0
+**`chk-prop b` 的四道全過，且第三道（同掛名盤名詞元包含）逐字 0**
+——⚠ **本組的 `Robert Glasper《Covered》`／《ArtScience》兩張同掛名不同碟，折鍵分別是 `robertglasper|covered` 與 `robertglasper|artscience`，不同鍵、不會亮；`山中千尋` 兩張同理。**
+⚠ **與第 1768 條那次不同，本組沒有製造任何「刻意的預期輸出」——第三道是真的 0。**
+
+---
+
+## 第 1826 條（同批，交接）：**b 組收工狀態、號段、中間檔**
+
+- **交付物兩個，皆已寫入 repo**：
+  **`batch-progress/c163/prop-b.json`（19 張，欄位與 `prop-a.json` 逐字同構；`mbNote` 的第一個 UUID 皆為 release-group MBID，供下游 `fix-rgmbid.mjs` 抓 `rgMbid`）** ＋ **本檔自「# c-163 b 組裁定」起的這一段。**
+- **`chk-prop b` 實跑結果**：`prop-b.json：19 張、17 位`／**標記 0**／`跨批撞卡 0`／`同 rgMbid 不同掛名 0`／`同掛名盤名詞元包含 0`／`共用目錄號 0`（126 批、卡數 5,094 的全域比對）。
+- **號段**：**1810–1826 用畢，無留白。**⚠ **a 組的 1778–1802 與留白的 1788／1789／1790、1803–1809 一字未碰；`prop-a.json` 一字未碰。**
+- ⚠ **`queryAlias` 一律寫成分號分隔的可檢索字串（第 1610 條），19 張逐張核過，沒有散文。**
+- **本棒未新增任何 OCR／證據大檔**（紙本只讀了 a 組已入庫的 `billboard-bn-2015-ocr.txt.gz`；2016 年沒有可用來源，見第 1822 條），**`SOURCES-billboard-cashbox.md` 未改、repo 根目錄未新增任何檔**（第 533 條）。
+- **中間檔全部在本棒的暫存目錄 `…/scratchpad/c163b/`**（`scan.mjs`／`xb.mjs`／`fetch-mb.mjs`／`mb.json`／`fetch-dg.mjs`／`dgq.json`／`dg.json`／`ap.sh`／`coll.mjs`／`decided.json`／`gen1–4.mjs`）。
+- ⚠ **未提交、未 push**（派工信邊界：主線統一提交）。**`git status --short` 本棒開工時即有 a 組的三筆未提交改動（`prop-a.json`／`rulings.md`／`SOURCES-billboard-cashbox.md`），本棒只動 `prop-b.json` 與 `rulings.md` 的檔尾。**
+
+### ⚠ ⚠ 需要本機／主線接手時特別看的四件事
+1. **`Marcus Miller《Afrodeezia》` 與 `Robert Glasper《ArtScience》` 的 Apple 店面全空（第 1733 條）**——固定試聽要另想辦法。
+2. **軌數不一致的五張**（第 646／865 條）：`Robert Glasper《Covered》`（日版 13／美歐版 12）、`Kyoto Jazz Sextet《Mission》`（CD 8／LP 7 且曲序不同）、`Nels Cline《Lovers》`（數位 18／實體 2CD 10＋8）、`Norah Jones《Day Breaks》`（標準 12／日版與歐版 16／2017 年 Deluxe 21）、`Yaron Herman《Everyday》`（Apple 14／MB 與 Discogs 13）。
+3. **`Lonnie Smith` 的 ③ 路徑只有 `bluenote.com/artist/dr-lonnie-smith/` 有效**（第 1815 條）——本機補證時不要照卡池字串組網址。
+4. **`Charles Lloyd & The Marvels` 的大小寫**（第 1816 條第 5 組）——**池中 2018 年那張是小寫 `the`，本卡是大寫 `The`，兩串字元序列不同；若店主日後要統一，改的是卡單值（可逆），但 seed 那一列雲端不能動。**
