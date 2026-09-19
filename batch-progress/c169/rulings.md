@@ -586,3 +586,563 @@ barcode 反查掃不到的版本，用 `artist + release_title` 全掃補上：
 ⚠ ⚠ **方法論（新立，後批照抄）**：**「掃過 Discogs 原壓群」不等於「用 MB 的 barcode 反查過」。**
 **日本／歐洲／俱樂部版的 barcode 與美版不同，MB 又常常只建其中一個地區**——**barcode 反查在這種情形下永遠碰不到首發那一版**。
 **至少要跑兩種查法：① `barcode=<MB 每一筆的 barcode>`；② `artist=<掛名>&release_title=<盤名>&per_page=50`。** 本組跑了②之後，20 張裡有 **1 張改年份、5 張補版本**。
+
+---
+
+# c-169 **b 組（20 張，2009–2019）** 裁定　2026-09-19
+
+*（編號 2186–2245 為 b 組專用區間；a 組用 2126–2185。本段以 append 寫入，未動前面第 1557–1560-AE 條與 a 組的第 2126–2144 條。）*
+
+## 第 2186 條（b 組，**總表**）：**20 張＝收 20 ／ 退 0**
+
+| | 張 |
+|---|---:|
+| **`prop-b.json` 收件** | **20** |
+| **退件** | **0** |
+| **合計** | **20** ✔（第 315 條結算通過，見第 2207 條） |
+
+**收件 20 張逐筆**（依 `prop-b.json` 順序）：
+The Blue Note 7《Mosaic: A Celebration Of Blue Note Records》**2008**（年份改判，見第 2196 條）／Ruben Hein《Loose Fit》2010／Emma Salokoski & UMO《Rytmihyrrä / Rytmyra》2011／Musica Nuda《Complici》2011／**Erik Truffaz Quartet**《El tiempo de la revolución》2012／The Northern Governors《This Is the Northern Governors》2012／Jon Cowherd《Mercy》2013／Musica Nuda《Banda larga》2013／Otis Brown III《The Thought of You》2014／Kendrick Scott Oracle《We Are the Drum》2015／Sunaga t Experience《STE》2015／Logan Richardson《Shift》**2015**（年份改判，見第 2196 條）／Aron Ottignon《Team Aquatic》2017／**Blue Note All-Stars**《Our Point of View》2017／Chris Dave and The Drumhedz《Chris Dave and The Drumhedz》2018／**Kenny Barron Quintet**《Concentric Circles》2018／R+R=NOW《Collagically Speaking》2018／**The Charles Lloyd New Quartet**《Passin' Thru》**2017**（年份改判，見第 2196 條）／Sarah McCoy《Blood Siren》2019／The James Carter Organ Trio《Live From Newport Jazz》2019。
+
+**20 張、19 個掛名字串**（`Musica Nuda` 兩張）。**因撞池退 0、判為合輯退 0、非 Blue Note imprint 退 0、EP 退 0、曲風退 0。**
+
+---
+
+## 第 2187 條（b 組，**本批最需要細判的一張；裁定**）：**`The Blue Note 7《Mosaic: A Celebration Of Blue Note Records》` 不是合輯，收成 `Album`——但同一張碟的 2 CD 版在 MB 是另一個 RG，而那個 RG 掛 `Compilation` 是對的**
+
+派工信第三節第 1 點要求「合輯條款（第 397／613／782 條）判準只讀逐張文案與軌目來源，不讀標題，逐軌核完再定」。**逐軌核完的結果如下。**
+
+### （一）釘住的 RG：八軌全是 2008 年的新錄音
+
+| 逐軌回問 MB `recording` 端點 | 結果 |
+|---|---|
+| `8c9c925b`〈Mosaic〉 | `artist-credit` 逐字 **`The Blue Note 7`**、`first-release-date` 逐字 **`2009-01-12`** |
+| `e6e39798`〈Idle Moments〉 | 同上 |
+| `dd0bf2de`〈Criss Cross〉 | 同上 |
+| 其餘五軌（`2cc3aa7a`／`fae7c884`／`1d785531`／`1f7b2e4f`／`12c258d2`） | 同形，**八軌都只出現在本盤與下述 2 CD 版上** |
+
+**釘住的 RG `7edc4d0d` 轄下只有一筆 release（`e4480f14`，GB 2009-01-12，單 CD 8 軌），`secondary-types` 逐字空陣列。**
+**Discogs 單 CD 條目 `3235910`（歐版）與 `10750267`（美版）的 `formats` descriptions 逐字只有 `Album`**，無 `Compilation`、無 `Reissue`。
+維基 `Mosaic: A Celebration of Blue Note Records` 逐字：「The group recorded Mosaic in 2008, which was released in 2009 on Blue Note Records/EMI」「the group plays the music of Blue Note Records, with arrangements by members of the band and Renee Rosnes」。
+bluenote.com 本盤頁逐字：「These are clearly reimagined tunes, faithful to the precepts of Blue Note」。
+
+**→ 新錄音的翻奏盤，不是舊錄音集結。判 `Album`。**
+
+### （二）⚠ ⚠ 但 MB 把同一張碟建成兩個 RG，而另一個真的該掛 `Compilation`
+
+| | 本卡釘的 RG | 刻意不釘的 RG |
+|---|---|---|
+| MBID | **`7edc4d0d-d04e-36dc-a94b-0a4390c3c273`** | `770967e1-03cc-4fcf-8312-82d816049f45` |
+| title | `Mosaic: A Celebration Of Blue Note Records` | `Mosaic: A Celebration of Blue Note Records`（**小寫 of**） |
+| frd | `2009-01-12` | `2009-01-13` |
+| secondary-types | **逐字空陣列** | **逐字 `["Compilation"]`** |
+| 轄下 release | `e4480f14`（GB，單 CD 8 軌，catno `2281232`） | `c6eb2f30`（US，**2 CD**，barcode `5099926619422`，catno `50999 2 66194 2 2`） |
+
+**`c6eb2f30` 的 medium 1 title 逐字 `Mosaic`（八首新錄音，recording MBID 與本卡完全相同）、medium 2 title 逐字 `The Original Sessions`（八首原版母帶）。**
+逐軌回問 medium 2：`edfe8650`〈Mosaic〉credit 逐字 **`Art Blakey & The Jazz Messengers`**／frd 逐字 `1961-10-02`；`a742306c`〈Idle Moments〉逐字 **`Grant Green`**／frd `1964`；`8cf58584`〈Little B's Poem〉逐字 **`Bobby Hutcherson`**／frd `1965`。
+**Discogs `4339923`（2 CD Special Edition）的 `format` 欄逐字 `CD, Album, CD, Compilation, All Media, Special Edition`——它自己就把兩片分開標了。**
+
+**→ `Compilation` 標在 `770967e1` 上是對的、標在 `7edc4d0d` 上會是錯的。本卡釘單 CD 版，2 CD 那個 RG 在 `mbNote` 明寫「刻意不釘」。**
+
+### （三）給下游的兩句
+
+1. **封面、試聽、上架比對一律以 8 軌形為準**；**抓到 16 軌的就是 2 CD Special Edition，不是本卡。**
+2. **正文不得寫成「收錄 Blue Note 經典錄音」**——那會把讀者導向 2 CD 版的第二片。要寫成「七人團重新錄製」。
+
+⚠ **第 611 條盲區三（「MB 把同一張碟建成兩個 RG」）在本線的第一次應驗**；`chk-prop` 的 rgMbid 掃描不會亮（兩個 RG 只有一個在清單裡）。
+
+---
+
+## 第 2188 條（b 組，**掛名總表**）：**19 個字串；照 MB RG credit 原樣 19、收攏 0、新造分裂 0**
+
+**規則照 c-168 第 2078 條**（本線 2026-09-19 的統一規則）：**掛名照 MB RG artist-credit 原樣寫；當 MB 的群組實體與池中既有的個人字串是兩個不同實體時，兩個字串並存，不收攏、不合併。**
+上游是 **c-149 a 第 964 條**、**c-150 a 第 196／197 條**、**c-168 第 2080 條**，並與**同批 a 組第 2128／2129 條**同向。
+
+| 掛名 | MB 實體 | 池中既有 | 處理 |
+|---|---|---|---|
+| `The Blue Note 7` | `6a8f2262` **Group**／US（life-span.begin `2008`） | 0 | 新字串；同字串反查無異人 |
+| `Ruben Hein` | `347bd1f6` Person／NL | 0 | 新字串 |
+| `Emma Salokoski & UMO` | `1d804fc5` Person／FI ＋ joinphrase ` & ` ＋ `dec63f48` **Orchestra**／FI | 0 | **依第 1539 條取 credited-name ＋ joinphrase 串接形**（真並列聯名，前提成立）；Apple 的 `Emma Salokoski & UMO Jazz Orchestra` 與 Discogs 的 `Emma Salokoski, Umo Jazz Orchestra` 只進 `queryAlias` |
+| `Musica Nuda` | `b7840712` Group／IT | 0 | **照 a 組第 2130 條的跨組定案，一字不差**（見第 2192 條） |
+| **`Erik Truffaz Quartet`** | `54da4dfb` **Group**／CH | **`Erik Truffaz` 34 列（12 張碟）** | **並存不收攏**（第 2193 條） |
+| `The Northern Governors` | `136468a7` Group／FI | 0 | 新字串；定冠詞三邊一致 |
+| `Jon Cowherd` | `2130c778` Person／US | 0 | 新字串 |
+| `Otis Brown III` | `741eb270` Person | 0 | 新字串；⚠ **`Otis Brown` 裸名在 MB 另有 soul 歌手實體，日後進池要帶消歧** |
+| `Kendrick Scott Oracle` | `71d3da26` **Group**／US | `Kendrick Scott, Reuben Rogers, Walter Smith III` 1 張（c-166 a） | **兩個不同掛名主體，不是分裂**（第 2191 條） |
+| `Sunaga t Experience` | `6f9c7a65` Person | 0 | 新字串；**小寫 t 照 MB＝Apple**，Discogs 的大寫 T 進 `queryAlias`（第 2197 條） |
+| `Logan Richardson` | `7208ea2f` Person／US | 0 | 新字串 |
+| `Aron Ottignon` | `96bbc7f4` Person | 0 | 新字串 |
+| **`Blue Note All-Stars`** | `a475738b` **Group**（disambiguation 逐字 `formed in 2014 for Blue Note's 75th anniversary, ft. Robert Glasper`） | 0 | **U+2010 正規化成 ASCII**（第 2189 條）；**與 c-168 的 `The Blue Note All Stars` 是兩團**（第 2190 條） |
+| `Chris Dave and The Drumhedz` | `87e23315` **Group**／US | 0 | 新字串；**大寫 `The` 照 MB**，Discogs 的 `And The`、Apple 的 `and the` 進 `queryAlias` |
+| **`Kenny Barron Quintet`** | `28d91e80` **Group** | **`Kenny Barron` 2 張（seed）** | **並存不收攏**（第 2194 條） |
+| `R+R=NOW` | `88e39d68` **Group**／US | 0（c-170 slice 另有一張同掛名） | 新字串；Discogs 的 `R+R=Now`、Apple 的三名串接形進 `queryAlias` |
+| **`The Charles Lloyd New Quartet`** | `c5c626e3` **Group** | **`Charles Lloyd` 22 列** | **並存不收攏；⚠ 與 c-146 判法相反**（第 2195 條） |
+| `Sarah McCoy` | `1db39276` Person／US | 0 | 新字串；⚠ **常見人名，日後進池要帶消歧** |
+| `The James Carter Organ Trio` | `9f82bfc6` **Group** | **`James Carter` 裸名 0 張** | 新字串；**池中沒有裸名，沒有分裂可避，照 MB RG credit**；⚠ MB 歐版 release 的 credit 少了定冠詞、Apple 只寫 `James Carter`，兩形進 `queryAlias` |
+
+⚠ **`chk-prop` 的 `&`／`and` 盲區（第 611 條）已逐字串手查**：`Emma Salokoski and UMO`、`Chris Dave & The Drumhedz`、`Chris Dave and the Drumhedz`、`The Blue Note All Stars`、`Blue Note Allstars` 五種替代寫法在池中（seed ＋ 全部待上架批次）皆 0。
+
+---
+
+## 第 2189 條（b 組，**裁定；c-168 交件時點名要判的那一格**）：**`Blue Note All‐Stars` 的 U+2010 正規化成 ASCII `-`**
+
+**MB artist 主名與 RG credited-name 逐字都是 `Blue Note All‐Stars`，中間那一格是 U+2010 HYPHEN。**
+`chk-prop.mjs` 的反模式檢查（2026-09-06 起加掃 `artist` 欄）會**直接擋**。
+
+**判：取 ASCII `Blue Note All-Stars`，MB 的 U+2010 形進 `queryAlias`。** 三個依據：
+
+1. **c-110 第 1 條**（逐字）：「掛名照 `album` 欄同一個標準辦……MB 的 U+2013 寫法與 Apple 的無連接號寫法都進 `queryAlias`」，理由逐字是「池中 97% 是 ASCII（不製造第二種鍵），且原盤／實體 release 這一層就是 ASCII」。
+2. **c-150 的同形處理**（逐字）：「MB 的 `Niels‐Henning Ørsted Pedersen` 用的是 U+2010 HYPHEN……**chk-prop 會直接擋**，池中既有三張 NHØP 卡一律 ASCII `-`，本卡照池中改」。
+3. ⚠ **本張的旁證比那兩例更硬**：**Discogs 兩筆零售條目（`15843970` 美版／`10927547` 歐版）的 `artists` 欄逐字是 `Blue Note All-Stars`（ASCII）、Apple 三店的 `artistName` 逐字也是 `Blue Note All-Stars`（ASCII）**——**三邊只有 MB 用 U+2010，改 ASCII 不是我方新造字串，是回到實體那一層的寫法。**
+
+⚠ **這條與第 2078 條「照 MB RG credit 原樣」不牴觸**：正規化的是**一個字元的碼位**，不是掛名的形狀（沒有把群組名改成個人名、沒有增刪詞）。
+⚠ **c-110 第 3 條（「release-group 標題本身就是 U+2010 的碟，本批不收」）不適用**：那條管的是 `album` 欄，**本張的盤名 `Our Point of View` 全 ASCII**。
+
+---
+
+## 第 2190 條（b 組）：**`Blue Note All-Stars`（2017）與 c-168 的 `The Blue Note All Stars`（1996）是兩團——MB 上同族字串共四個實體**
+
+派工信第三節第 2 點與 c-168 交件都要求不要合併、也不要判成撞卡。**逐實體核完，確認兩團無關**：
+
+| MB artist | 字串逐字 | type | life-span／disambiguation | 落點 |
+|---|---|---|---|---|
+| **`a475738b-d51d-4a0d-9de2-724e909435c3`** | **`Blue Note All‐Stars`（U+2010）** | Group | disambiguation 逐字 `formed in 2014 for Blue Note's 75th anniversary, ft. Robert Glasper` | **本卡《Our Point of View》2017** |
+| `232efc20-…` | `The Blue Note All Stars` | Group | — | **c-168 slice《Blue Spirit》1996**（RG `b4072123`） |
+| `2f32fbfb-…` | `Blue Note All-Stars`（ASCII） | Group | life-span 逐字 `1976-06-28`～`1976-06-28`（**單日**） | 未進任何 slice |
+| `8cbffb8c-…` | `Blue Spirit: The Blue Note All Stars` | Group | — | 未進任何 slice |
+
+**依第 179／250／324 條核 `type`／`area`／`life-span`／`disambiguation`、不看 score：四個都是不同實體。**
+**陣容也對不上**：本卡是 Glasper／Akinmusire／Strickland／Loueke／Hodge／Scott 六人（bluenote.com 本盤頁逐字），1996 那張是另一代。
+
+⚠ **撞卡檢查**：`chk-prop` 的折鍵 `bluenoteallstars` 與 `thebluenoteallstars` **不相等**，且兩張的盤名不同（`Our Point of View` vs `Blue Spirit`），**複合鍵本來就不會亮**。
+⚠ **`2f32fbfb` 的 ASCII 字串與本卡正規化後的字串逐字相同**——**若日後 1976 那場的碟進池，兩張卡會共用同一個掛名鍵**。**本條先記一筆：那時要靠年份與 `mbNote` 的 artist MBID 區分，不得把本卡改掛回 U+2010。**
+
+---
+
+## 第 2191 條（b 組）：**`Kendrick Scott Oracle` 與 c-166 的 `Kendrick Scott, Reuben Rogers, Walter Smith III` 是兩個掛名主體，不是分裂**
+
+派工信第三節第 4 點要求「逐筆照 MB credited-name 判（第 1539 條）」。**逐筆判完**：
+
+| | 本卡《We Are the Drum》2015 | c-166 a《Corridors》2023 |
+|---|---|---|
+| MB RG artist-credit | **單一成分**，credited-name 與 `artist.name` 逐字 **`Kendrick Scott Oracle`**（`71d3da26` **Group** US） | **三個成分**以 joinphrase `, ` 串接（`Kendrick Scott`／`Reuben Rogers`／`Walter Smith III`） |
+| Discogs `artists` | `Kendrick Scott Oracle`（三筆零售條目 `8550212`／`10307891`／`19119046` 一致） | 三人以 `,` 並列 |
+| Apple `artistName` | `Kendrick Scott Oracle` | `Kendrick Scott`（聯名被塞進 collectionName） |
+| bluenote.com 藝人頁 | 逐字 **「Scott's first two releases on Blue Note as a leader presented his band Kendrick Scott Oracle: We Are The Drum (2015) and A Wall Becomes A Bridge (2019)」** | 逐字「Scott's 2023 Blue Note album Corridors finds him paring down to a trio…」 |
+
+**→ 一個是他的樂團名（Group 實體），一個是三人並列聯名。四邊一致，各照各自發行品的掛名。**
+**若硬改成裸名 `Kendrick Scott`，會造出四邊都沒有的字串**（第 1745-B 條）。
+⚠ **`Kendrick Scott` 裸名在池中目前 0 張**；**日後他的裸名領班盤進池時照那張碟自己的 credit，不得回頭改本卡或 c-166 那張**（第 197 條）。
+⚠ ⚠ **順帶**：bluenote.com 同頁逐字提到 **`A Wall Becomes A Bridge`（2019）也是 Kendrick Scott Oracle 的 Blue Note 盤**——**它不在 c-169 的 slice 上**。**建議主線回列舉檔查它有沒有被同一個曲風判錯層級的缺口漏掉。**
+
+---
+
+## 第 2192 條（b 組）：**`Musica Nuda` 兩張照 a 組第 2130 條，一字不差**
+
+a 組先判、b 組照抄（第 1418 條）。**b 組獨立覆核的三邊也無分歧**：MB RG artist-credit 單一 Group 實體逐字 `Musica Nuda`（`b7840712`）、Discogs `3215014`／`6600079` 的 `artists` 欄逐字 `Musica Nuda`、Apple fr `425341018`／it `766422660`／fr `606220971` 的 `artistName` 逐字 `Musica Nuda`。
+⚠ **Discogs 的條目標題寫成 `Musica Nuda = Petra Magoni & Ferruccio Spinetti`——那是 Discogs 的 alias 語法、不是掛名本身，不得採用**（與 a 組第 2130 條同向）。
+⚠ **a 組第 2130 條提醒的那個鄰居（2004–06 年 Apple 上的 `Petra Magoni & Ferruccio Spinetti`）本組沒有碰到**，兩張都是 2011／2013。
+⚠ **曲風也與 a 組一致**：a 組《55/21》逐字 `['jazz','pop']`，本組兩張同判（見第 2203 條）。
+
+---
+
+## 第 2193 條（b 組，**裁定；可逆**）：**`Erik Truffaz Quartet《El tiempo de la revolución》` 不收攏成池中的 `Erik Truffaz`**
+
+池中／各批 `Erik Truffaz` 這個字串有 **34 列、12 張碟**（c-154／155／157／158／159／160／161／162／166），全部出自本線且本機尚未上架。**第 307 條的字面與 c-149／c-150／c-168 的「兩個 MB 實體不收攏」在這一張上正面相撞**——形狀與 **c-168 第 2080 條（`Ron Carter Trio` 對上池中 11 張 `Ron Carter`）完全相同**。
+
+**判：取 `Erik Truffaz Quartet`（MB `54da4dfb` **Group** CH）。三個理由照第 2080 條的三段式：**
+
+1. **有先例**：c-149 a 第 964 條、c-150 a 第 196／197 條、c-168 第 2078／2080 條、同批 a 組第 2128／2129 條，**方向一致**。
+2. **實體證據與 MB 同向**：**Discogs `4052391` 的條目標題逐字是 `Erik Truffaz Quartet - El Tiempo De La Revolución`**。（Apple `artistName` 逐字只有 `Erik Truffaz`，**一比二**。）
+3. **可逆**：只動卡單的掛名欄，不動卡池結構。
+
+### ⚠ 為什麼池中那 12 張是裸名、而本張不是——不是前後不一致
+
+**逐張回查 MB RG 的 artist-credit**：c-154／155／157／158／161／162／166 那幾張的 RG credit 逐字都是 **Person 實體 `Erik Truffaz`（`aecd2d93`）**；**c-160《Face à face》的 RG credit 逐字是 `Erik Truffaz Ladyland / Erik Truffaz Quartet`（兩個 Group 以斜線串接）**，c-160 b 依**第 611 條第四種盲區（斜線掛名）＋第 1600 條**收攏成裸名；**c-161《Paris》的 slice 原字串是 `Erik Truffaz / Sly Johnson`，也是斜線形。**
+**→ 那些卡照 MB 原樣就是裸名，本卡照 MB 原樣就是 Quartet。「照 MB RG credit 原樣」這條規則在十三張上是同一條，結果不同是因為 MB 的 credit 本來就不同。**
+⚠ **本張不是斜線形**，第 1600 條的前提不成立。
+
+⚠ **反向適用**：收下之後 `Erik Truffaz` 與 `Erik Truffaz Quartet` 兩個字串並存，**日後絕不得事後合併**（第 197 條）。
+
+---
+
+## 第 2194 條（b 組，**裁定；可逆**）：**`Kenny Barron Quintet` 不收攏——⚠ 順帶更正列舉檔「Kenny Barron 零張」的錯誤**
+
+### （一）⚠ ⚠ slice 的 note 寫錯了
+
+`c169/slice.json` 該筆的 `note` 逐字寫：「實掃：池中與批次的 `Kenny` 開頭全是 Kenny Drew／Kenny Burrell，**Kenny Barron 零張**」。
+**實掃結果相反**：**seed 有兩張精確命中的 `Kenny Barron` 卡——《Scratch》(1985)、《What If?》(1986)**，另有聯名 `Joe Locke & Kenny Barron —《But Beautiful》`。
+**佐證是廠牌自己的文案**：bluenote.com 的《Concentric Circles》頁逐字寫「his critically acclaimed **1986 LP What If** with trumpeter Wallace Roney, saxophonist John Stubblefield, bassist Cecil McBee, and drummer Victor Lewis」——**就是池中那一張，同一位鋼琴家。**
+⚠ **這是 c-168 交件第 4 點（「slice 的 `note` 寫『僅 XX 盤』的一律不可信」）的同一族毛病**，只是換成了「實掃結論不可信」：**`note` 欄裡任何「池中零張」「僅 XX 盤」的斷言，策展層都必須自己重掃一次。**
+
+### （二）掛名判定
+
+**判：取 `Kenny Barron Quintet`（MB `28d91e80` **Group**），與池中的 `Kenny Barron`（seed 2 張）並存。**
+依據同第 2193 條的三段式：(1) 先例（第 964／196／197／2078／2080 條 ＋ 同批 a 組第 2128 條的 `Paolo Fresu Quintet`／`Joona Toivanen Trio`／`High Five Quintet`／`Franco D'Andrea Quartet`）；(2) **Discogs 兩筆零售條目 `11973964`／`12008078` 的 `artists` 欄逐字都是 `Kenny Barron Quintet`**；(3) 可逆。
+⚠ **Apple `artistName` 逐字是 `The Kenny Barron Quintet`（第三種寫法，多一個定冠詞）——依 c-150 a 第 218 條「不得因店面的寫法造出第三種字串」，只進 `queryAlias`。**
+
+---
+
+## 第 2195 條（b 組，**裁定；可逆；⚠ 與 c-146 對同一位藝人的判法相反**）：**`The Charles Lloyd New Quartet《Passin' Thru》` 不收攏成池中的 `Charles Lloyd`**
+
+**判：取 `The Charles Lloyd New Quartet`（MB `c5c626e3` **Group**），與池中的 `Charles Lloyd`（22 列）並存。**
+
+### 三項佐證（第 2080 條三段式）
+
+1. **有先例**：c-168 第 2078 條的統一規則 ＋ 第 964／196／197／2080 條 ＋ 同批 a 組第 2128／2129 條。
+2. **實體證據與 MB 同向**：**Discogs 兩筆零售條目（`10745067` 美版／`10568881` 歐版）的藝人欄逐字是 `Charles Lloyd New Quartet*`、Apple 三店的 `artistName` 逐字是 `Charles Lloyd New Quartet`**——**兩邊都指這支四重奏，不是裸名。**（只有 Discogs master `1211978` 的 `artists` 欄逐字寫成 `The Charles Lloyd Quartet`，少了 `New`。）
+3. **可逆**：只動卡單掛名欄。
+
+### ⚠ ⚠ 與 c-146 的落差——本條明寫，不掩蓋
+
+**c-146 a《A Night in Copenhagen》(1985) 的 MB RG credit 逐字是 `The Charles Lloyd Quartet`（`dbbc9be6` **Group** US、獨立實體），c-146 a 卻收攏成 `Charles Lloyd`**，risk 欄的理由逐字是「池中 seed 的《Forest Flower》(1967) 盤面同樣印 Charles Lloyd Quartet 卻用 `Charles Lloyd`」＋第 307／784 條。
+**同一位藝人、同樣是 Group 實體、兩批判法相反。** 這正是 **c-168 第 2079 條**記下的「Ralph Peterson 同一個團兩張碟兩個字串」的同形落差。
+
+**本棒依 c-168 第 2078 條的統一規則走**（那是本線 2026-09-19 最新、且明文適用於 c-168／c-169／c-170 的規則），**並且不動 c-146 那張**（不碰別批檔案）。
+**→ 給本機：若要統一，只能連 c-146 那張一起改；只改本卡會把落差留在原地。**
+
+⚠ **池中 Charles Lloyd 目前會有四個字串**：`Charles Lloyd`（22 列，其中 c-163／c-164／c-165／c-166 那幾張的 MB RG credit 本來就是 Person 實體 `b9b579ad`，**照 MB 原樣就是裸名，沒有違反第 2078 條**）、`Charles Lloyd & The Marvels`（c-163／c-165 三張）、`Charles Lloyd & the Marvels Featuring Lucinda Williams`（seed）、**`The Charles Lloyd New Quartet`（本卡）**。**第 1131 條：不同編制各自成立。日後絕不得事後合併。**
+
+---
+
+## 第 2196 條（b 組，**年份**）：**改判 3 筆、覆核成立 17 筆——⚠ 三筆的失效方式各不相同，而且有兩筆是第二種 Discogs 掃描才查出來的**
+
+### 改判 1：`The Charles Lloyd New Quartet《Passin' Thru》` **2018 → 2017**（MB frd 的年份跳了一格，月日完全正確）
+
+| 層 | 逐字 |
+|---|---|
+| **MB** | RG `first-release-date` **`2018-07-14`**；轄下唯一 release 的 `date` 亦 **`2018-07-14`** |
+| **Discogs 原壓群** | 美版 `10745067` 的 `year` 逐字 **`2017`**、歐版 `10568881` 逐字 **`2017`**（**兩筆的 barcode 逐字就是 MB 那筆的 `602557649888`**）、**master `1211978` 的 `year` 逐字 `2017`**；**第二種掃描再補五筆全 2017**（日版 `16781841` `UCCQ-1071`、歐版黑膠 `10624706`、美歐版黑膠 `10590110`、宣傳 CDr `11272533`、FLAC `32459694`） |
+| **Apple** | `1440884105` 的 `releaseDate` 逐字 **`2017-07-14T07:00:00Z`**（**月日與 MB 完全相同，只有年份差一**）、℗ 欄逐字 `℗ 2017 Charles Lloyd, under exclusive license to Blue Note Records` |
+| **維基** | 逐字「recorded at the Montreux Jazz Festival and in Santa Fe in 2016 and **released on the Blue Note label in 2017**」 |
+
+**依簡報第二節 2000 年後的階序（廠牌新聞稿／榜位 ＞ Discogs 原壓群 ＞ MB first-release-date）：取 2017。**
+⚠ **`slice.json` 的 `year` 欄逐字 2018、`note` 欄逐字卻寫「2017 這張《Passin' Thru》缺」——列舉檔自己前後矛盾。**
+⚠ **這個形狀值得記**：**MB 的日期不是亂填，是「月日對、年份跳一格」**——**光比月日會以為兩邊一致**，必須連年份一起逐字比。
+⚠ **俄版 `11137083` 的 `formats` descriptions 逐字含 `Unofficial Release`，依 a 組的結論不當年份依據。**
+
+### 改判 2：`The Blue Note 7《Mosaic: A Celebration Of Blue Note Records》` **2009 → 2008**（日版先發，MB 根本沒建日版）
+
+**⚠ 這一筆是主線 2026-09-19 中途補下來的第二種掃描才查出來的**——**用 MB 的 barcode（`e4480f14` 根本沒有 barcode）反查，永遠碰不到日版。**
+
+| 來源 | 逐字 |
+|---|---|
+| **原本看得到的四層（全是歐美）** | MB frd `2009-01-12`（GB）／MB 重複 RG `2009-01-13`（US）／Discogs 歐美四筆 `year` 全 2009／維基逐字「the 2009 debut album」「released in 2009」 |
+| **第二種掃描補進來的四筆日版** | **零售單 CD `17285473`（`Blue Note TOCJ-66466`，`released` 欄逐字 `2008-12-26`，barcode `4988006868328`，**8 軌**）**／宣傳盤 `16099799`（同號，notes 逐字 `Japan official promo release. Identical to commercial release`）／**2 CD HQCD 限量版 `17955550`（`TOCJ-90007·08`，`released` 欄逐字 `2008-12-26`，18 軌）**／其宣傳盤 `11429270` |
+
+**判：取 2008。** 依據三條：
+1. **第 1696 條**（逐字：「`Somethin' Else`／東芝EMI／EMI Music Japan 的碟，年份一律先假設日本比歐美早半年到一年」，**c-161 兩張 Eliane Elias 已依此改判成功**）；**`TOCJ-` 正是 EMI Music Japan／東芝EMI 的 Blue Note 號段。**
+2. **c-145 第 817 條**的同形處理（《Poppin'》取日本首發年）。
+3. **c-156 第 1414 條要求的四項比對全過**：盤名同、掛名同、**軌數 8＝8**（與本卡釘的 GB 單 CD 同形）、封面同版式。
+4. **兩筆獨立 Discogs 條目給出同一個精確街頭日 `2008-12-26`**，不是年份猜測。
+
+⚠ **反向證據留著**：維基逐字 `released in 2009`、樂團宣傳巡演是 2009 年 1–4 月、歐美壓片全 2009。
+⚠ **不引用 Apple**：`releaseDate 2008-01-01` 是年初佔位日（第 1447 條）、℗ 欄 `℗ 2008` 是錄音年（第 1601 條），**兩者都不是 2008 的獨立證據。**
+⚠ ⚠ **本裁定是本組最可逆的一格**：若本機採「以歐美首發年為準」的慣例，只要把 `year` 改回 2009，`label` 與 `risk` 的日版段落照留。
+⚠ **副作用**：這張因此落在 2008 年，**跨出了 b 組名義上的 2009–2019 年帶**（第 1558 條的切批界線是 2020 年，2008 仍在 c169 的 2000–2019 範圍內，**批次歸屬不變**）。
+
+### 改判 3：`Logan Richardson《Shift》` **2016 → 2015**（日版 SHM-CD 先發四個月，MB 沒建日版）
+
+| 來源 | 逐字 |
+|---|---|
+| **原本看得到的三層（全是歐美）** | MB frd `2016-02-26`（CD 與數位同日）／Discogs 美版 `9590844`、歐版 `8251979` 的 `year` 逐字 2016／Apple `releaseDate` 逐字 `2016-01-22` |
+| **第二種掃描補進來的日版** | **`7658280`（`Blue Note UCCQ-1044`，SHM-CD，`released` 欄逐字 `2015-10-14`，barcode `4988031115695`，**13 軌**，notes 逐字 `Recorded December 4 & 5, 2013` ＋ `Tracks 12 & 13 are bonus tracks` ＋ `SHM-CD`）** |
+| **旁證** | **Apple ℗ 欄逐字 `℗ 2015 Brain Child World`——與日版發行年同向**（本組九次 ℗ 異常裡，唯一一次 ℗ 的年份其實是對的） |
+
+**判：取 2015。** 依第 1696 條 ＋ c-156 第 1414 條的四項比對：盤名同、掛名同、封面同版式、**軌數 13 vs 11（日版多兩首 bonus，同一張碟的 bonus 版）**。
+⚠ **本張是雙重時間差**：**錄音 2013-12-04／05 → 日版 2015-10-14 → 歐美 2016-02-26**。**正文不得把錄音年寫成發行年，也不得把歐美年寫成首發年。**
+⚠ **軌數以 11 軌的歐美原盤為準**，日版 13 軌形要標明。
+⚠ **俄版 `8444720` 的 `formats` descriptions 逐字含 `Unofficial Release`，不當年份依據。**
+⚠ **本裁定可逆**（改回 2016 只動一格）。
+
+### 覆核成立 17 筆（無一改判）
+
+**三層以上一致的 13 筆**；**MB 只有年份精度、靠 Discogs＋Apple 補日的 2 筆**（Jon Cowherd《Mercy》、Otis Brown III《The Thought of You》）；**MB 與 Apple 差幾天到三個月、同年故不影響的 4 筆**（Ruben Hein 差 7 天、Kendrick Scott 差 10 天、Musica Nuda《Complici》fr/us 差兩個月、Musica Nuda《Banda larga》差 3 個月）。
+⚠ **本組有日版、但日版與歐美同年、故不影響年份的 5 筆**：Otis Brown III（`UCCQ-1020`）、Kendrick Scott Oracle（`UCCQ-1047`）、Blue Note All-Stars（`UCCQ-1072/3`）、Chris Dave（`UCCQ-1078`）、R+R=NOW（`UCCQ 1085`）——**五筆 MB 都沒建，全靠第二種掃描才看到。**
+⚠ **宣傳盤早一年、但不採的 1 筆**：Chris Dave 的 `11859123`（`year` 逐字 2017、`formats` descriptions 逐字 `Album, Promo`）——**`year` 取首次商業發行年，宣傳 CDr 不算**，2018 不動。
+
+### ⚠ 第 1447 條（Apple 年初佔位日）在本組應驗 **5 次**
+
+| 卡 | Apple `releaseDate` 逐字 | 採用的年份來源 |
+|---|---|---|
+| The Blue Note 7 | `2008-01-01T08:00:00Z` | **日版 Discogs `released` 逐字 `2008-12-26`**（**佔位日的年份剛好對上，但那是巧合，不是證據**） |
+| Ruben Hein（nl id） | `2011-01-01T08:00:00Z` | MB frd `2010-10-29` ＋ Discogs `2010` ＋ Apple gb `2010-11-05` |
+| Emma Salokoski & UMO | `2011-01-01T08:00:00Z` | MB frd `2011-03-11` ＋ Discogs `2011` |
+| The Northern Governors | `2012-01-01T08:00:00Z` | MB frd `2012-03-16` ＋ Discogs `2012` |
+| Musica Nuda《Banda larga》（it id） | `2012-01-01T08:00:00Z`（**差一年**） | MB frd `2013-01-29` ＋ Discogs 五筆全 2013 ＋ Apple fr `2013-04-23` |
+
+### ⚠ 第 1601 條（℗ 欄只當年份弱證據、絕不可判廠牌）在本組應驗 **9 次**
+
+**廠牌全錯 7 次**：Ruben Hein `℗ 2011 Universal Music B.V.`／Musica Nuda《Complici》`℗ 2011 Magoni / Spinetti under exclusive license to Bonsai Music`／Erik Truffaz `℗ 2012 Foufino Productions`／Musica Nuda《Banda larga》`℗ 2012 Petra Magoni, Ferruccio Spinetti`／**Aron Ottignon `℗ 2017 Decca Records France`**／**Kenny Barron `℗ 2018 Decca Records France`**／Sarah McCoy `℗ 2019 Universal Music Jazz Germany, a division of Deutsche Grammophon GmbH, Berlin`。
+**年份跑掉 2 次**：The Blue Note 7 `℗ 2008`（**錄音年；雖然與改判後的 2008 同年，仍不當證據**）／Logan Richardson `℗ 2015 Brain Child World`（**比歐美發行年早一年，而這一次它其實指到了日版的發行年**）。
+⚠ **`Decca Records France` 連續兩次**——**這是 UMG 法國把旗下爵士發行的 ℗ 統一掛在 Decca France 名下造成的，不是廠牌判定的證據。**
+
+---
+
+## 第 2197 條（b 組）：**字形裁定三筆——撇號取 ASCII、斜線盤名照 MB、小寫 t 照 MB＝Apple**
+
+1. **`Passin' Thru`**：MB RG title 逐字 `Passin’ Thru`（**U+2019**），**本卡取 ASCII `'`**。依 **c-110 第 5 條**（逐字：「兩張都取 ASCII 撇號，MB 的彎撇號寫法進 `queryAlias`」，理由逐字「池中 97% 是 ASCII」）與 **c-166 的同批先例**（slice 逐字 `Rollin’`、prop 層逐字改成 `Rollin'`）。**Apple 的 `collectionName` 逐字也是 ASCII 撇號。**
+2. **`Rytmihyrrä / Rytmyra`**：MB RG title 用**斜線**、Discogs `10832336` 與 Apple `713954121` 逐字都用 **ASCII 連字號**（`Rytmihyrrä - Rytmyra`）。**取 MB 的斜線形**（第 6／70／120 條），連字號形進 `queryAlias`。⚠ **派工信第三節第 6 點要求「兩種寫法都要拿去掃卡池」——已照做，`Rytmihyrrä` 與 `Rytmyra` 各掃一次，皆 0 命中。**
+3. **`Sunaga t Experience`**：MB 與 Apple 逐字都是**小寫 t**，Discogs `7058519` 的 `artists` 欄逐字是**大寫 T**（`Sunaga T Experience`）。**取 MB＝Apple 的小寫形**，大寫形進 `queryAlias`。
+   ⚠ **2026-08-11 東亞藝人名裁定（有漢字照漢字）在這一張不適用**：**MB／Discogs／Apple 三邊逐字都是拉丁字串，這是「樂團企劃名」而不是「本人姓名」**；`須永辰緒` 進 `queryAlias`，**兩種寫法都已進去重表**。
+
+⚠ **`chk-prop` 的四道字形檢查（非 ASCII 連字號 ×2、U+30FC 誤用、盤名撞 apex）本組全部不亮**，但**前三道之所以不亮，是因為第 2189 條與本條先把三個字形改掉了**——**「標記 0」在字形這一關同樣不等於乾淨**（第 611 條的同一句話）。
+
+---
+
+## 第 2198 條（b 組）：**合輯風險逐張核——判為合輯 0；三張細判過**
+
+派工信與簡報第一節第 2 點要求「盤名帶 Best of／Greatest／Collection／Anthology／The Very Best／Blue Note Trip／Sidetracks 的一律細看；判準只讀逐張文案與軌目來源」。
+**本組 20 張的 `secondary-types` 逐字核完：18 張空陣列、2 張 `["Live"]`（見第 2199 條）、`Compilation` 0 張。** 另外三張形狀可疑的細判過：
+
+| 卡 | 可疑處 | 判定 |
+|---|---|---|
+| **The Blue Note 7《Mosaic: A Celebration Of Blue Note Records》** | 盤名帶 `Celebration`；**MB 另一個 RG 真的掛 `Compilation`** | **Album**（第 2187 條，逐軌核完） |
+| **Sunaga t Experience《STE》** | DJ 選曲／再製企劃，第 1559 條列的邊界張 | **Album**——**十一軌 recording 的 frd 逐字全是 `2015-05-20`、credit 逐字全是 `Sunaga t Experience`**（實查 `f3d09f82`／`b6053689`）；`f3d09f82` 後來才出現在他 2016 年的《須永辰緒の夜ジャズ・外伝2》上，**那張才是集結盤、本張是它的來源**；Discogs `7058519` 的 `formats` descriptions 逐字只有 `Album`（無 `Compilation`／`Mixed`／`DJ Mix`） |
+| **Emma Salokoski & UMO《Rytmihyrrä / Rytmyra》** | 42 軌兩片，形狀像套裝 | **Album**——**兩片是同一套 21 首曲目的芬蘭語版與瑞典語版**（Discogs `10832336` notes 逐字記瑞典語詞 `Mayvor Fridlund`），不是集結 |
+
+⚠ **第 782 條（Discogs 的 `format` 欄會錯）本組沒有中**：20 張的 Discogs `format`／`formats` 欄與 MB 的 primary/secondary type 逐張對得上。**唯一一處「Discogs 標了 Compilation」是 The Blue Note 7 的 2 CD 條目——那一標是對的。**
+
+---
+
+## 第 2199 條（b 組）：**現場盤 2 張，`live: true` 收但要標；MB 這兩張都標對了**
+
+| 卡 | MB `secondary-types` | 其他三層 |
+|---|---|---|
+| **The Charles Lloyd New Quartet《Passin' Thru》** | 逐字 `["Live"]` | Apple `collectionName` 逐字帶 `(Live)`；Discogs 廠牌鏈逐字含演出場地 `Montreux Jazz Festival`／`The Lensic, Santa Fe, NM`；維基逐字 `is a live album` |
+| **The James Carter Organ Trio《Live From Newport Jazz》** | 逐字 `["Live"]` | 數位版六個軌名逐字全帶 `(Live)`；Discogs notes 逐字 `Recorded Live at Newport Jazz Festival, Newport, RI, USA on August 5, 2018.` |
+
+⚠ ⚠ **`Passin' Thru` 不是單一場次的現場**：`slice.json` 的 `note` 逐字只寫「Montreux 現場」，**但 bluenote.com 本盤頁逐字寫第 1 軌〈Dream Weaver〉錄於 2016-06-30 的 Montreux、「The remaining six pieces were drawn from the band's sublime performance at The Lensi[c]」（聖塔菲）**。**正文不得把整張寫成 Montreux 一場。**（**又一筆 slice `note` 不可信的實例**，同 c-168 交件第 4 點。）
+⚠ **第 397／613 條（`secondary-types` 兩個方向都會漏）本組沒有中**：兩張現場盤 MB 都標了，18 張非現場盤也沒有誤標。
+⚠ **`releaseType` 兩張仍寫 `Album`**——照 MB 的 `primary-type`，與 c-164《8: Kindred Spirits (Live From the Lobero)》的既有寫法一致。
+
+---
+
+## 第 2200 條（b 組，**⚠ 給下游**）：**同一張碟在不同版本之間軌數不同的，本組 7 筆——正文與試聽比對不得抓錯形**
+
+| 卡 | 原盤形 | 其他形 |
+|---|---|---|
+| **The Blue Note 7** | **CD 8 軌** | **2 CD Special Edition 16 軌**（第二片是原版母帶，第 2187 條） |
+| **Ruben Hein** | **CD 12 軌** | Apple nl `715942743` 逐字 **16 軌**（`Loose Fit (Bonus Track Version)`） |
+| **Erik Truffaz Quartet** | **CD 10 軌** | 限量版另附 **DVD-Video 9 軌**（曲目是舊曲現場，含〈In Between〉——池中 c-162 同名專輯的標題曲） |
+| **Jon Cowherd** | **CD 11 軌** | Apple `739960265` 逐字 **12 軌** |
+| **Musica Nuda《Banda larga》** | **CD 20 軌** | MB 數位 21 軌、Apple it 21 軌（多末軌〈I ricordi della sera〉）、Apple fr 20 軌 |
+| **Aron Ottignon** | **CD 11 軌** | Apple `1442272798` 逐字 **14 軌** |
+| **R+R=NOW** | **CD 11 軌** | **日本數位三筆逐字 12 軌**（多〈Reflect Reprise (MC Rob G version)〉） |
+
+⚠ **另有兩筆「軌數看起來怪但四邊一致」，不算分歧**：Emma Salokoski & UMO **42 軌**（21×2 語言）、Blue Note All-Stars **6＋5＝11 軌**（兩片）。
+⚠ **軌數單一、無分歧的 11 張**：Otis Brown III／Kendrick Scott Oracle／Sunaga t Experience／Logan Richardson／Chris Dave／Kenny Barron Quintet／Charles Lloyd／Sarah McCoy／James Carter／Musica Nuda《Complici》／The Northern Governors。
+
+---
+
+## 第 2201 條（b 組）：**imprint 前置閘（第 1560-AD／1631／1633 條的分界）逐張跑過——20 張全過**
+
+**分界逐字是「有沒有任何一版真的掛過 Blue Note」。**
+
+- **MB `label-info` 逐字 `Blue Note` `713c4a95` 的：19 張**（唯一例外見下）。
+- **Discogs 廠牌鏈第一格逐字 `Blue Note`（或 `Blue Note France`）的：20 張全部。**
+- ⚠ **`Blue Note Label Group [2eb19785]` 本組只出現 1 次**：The Blue Note 7 的 2 CD 條目廠牌鏈逐字 `Blue Note / EMI / The Blue Note Label Group`——**在鏈上但不在第一格，第一格逐字是 `Blue Note`**，**方向與被退掉的 Anoushka Shankar 那張（第一格逐字 `Manhattan Records`）相反，過閘。**
+- ⚠ **`Blue Note France` 是正規 imprint**：Aron Ottignon（Discogs 廠牌鏈三格逐字全是 `Blue Note France`）與 Sarah McCoy 的 MB label id 逐字都是 **`713c4a95`**，**不是第 1560-AD 條列的兩個冒名廠牌**（`Blue Note Compagnie` 用 `BNS-` 目錄號、`Blue Note Digital` 是 MB label `0293ae5c`）。
+- ⚠ **同一 RG 內兩筆 release 掛不同廠牌的 4 筆**：Emma Salokoski（數位掛 `EMI Finland` `4c418bbc`、CD 掛 Blue Note）、Musica Nuda《Complici》（法版掛 `Bonsaï Music`、德版掛 `edel`、**只有義大利原壓掛 Blue Note，而它就是 frd 那一版**）、Erik Truffaz（數位掛 `Parlophone France` `0b81e41d`、兩個實體版掛 Blue Note）、Logan Richardson（數位掛 `Universal Music` `13a464dc`、CD 掛 Blue Note）。**四張都有實體版掛 Blue Note，過閘。**
+- ⚠ **MB `label-info` 逐字空的 3 筆**（裁定 259：「查無」與「沒問」長得一樣）：Chris Dave 的數位版、Kenny Barron 的數位版、James Carter 的數位版。**三張的實體版都掛了 Blue Note。**
+- ⚠ **兩家並列共用同一目錄號的 2 筆**：Jon Cowherd（`ArtistShare` ＋ `Blue Note`，同為 `ASBN-0126`）、Chris Dave（`Blue Note` ＋ `GLOW365`，同為 `B002705302`）。**都是家族／自營廠牌並列，不是他廠。**
+- ⚠ **Capitol／UMG／Deutsche Grammophon 出現在鏈上的 5 筆**（R+R=NOW、Chris Dave、James Carter、Kendrick Scott、Sarah McCoy）——**同集團母體，第 1753(4)／1770 條的既有假陽性型態，不成立。**
+
+---
+
+## 第 2202 條（b 組）：**第 1250 條（`catno` 不可反查）在本組應驗 8 次——其中兩筆是「目錄號記到別的載體上」**
+
+| 卡 | 形狀 |
+|---|---|
+| **Aron Ottignon** | 列舉檔已標：`577682-0` 反查會撞 RCA 的 Westlife（barcode `828765776820` 內含同串數字）——**教科書例** |
+| **The Blue Note 7** | 列舉檔 `catno` 只留 `2281232`，**全號是 `50999 2 28123 2 2`**；裸數字毫無唯一性 |
+| **Erik Truffaz Quartet** | 列舉檔把 **barcode 當目錄號**放進 `catno`（`5099997903628`／`5099997903925`） |
+| **Sarah McCoy** | 三個號只差末碼：CD `60025 6768576`／黑膠 `06025 6768577`／宣傳 CDr `00602567685760`；**MB 的 `catalog-number` 欄還是空的** |
+| **Otis Brown III** | 歐版 `0602537877003`（＝barcode）vs 美版 `B002100202`，**兩形** |
+| **Blue Note All-Stars** | MB 記 `B002709202JK02`（**帶 UMG 組件碼 `JK02`**）、Discogs 記 `B002709202` |
+
+| **Ruben Hein** | ⚠ **列舉檔記的 `50999 9174741 9` 是荷蘭黑膠 `5278992` 的目錄號，CD `2983088` 是 `50999 9174742 6`**——**錯的不是位數而是載體**（第二種 Discogs 掃描才查出來，第 2209 條） |
+| **Sunaga t Experience** | 2022 黑膠的 catno，**MB 記 `PROZ-7910/1`、Discogs `22953746` 記 `PROZ7-910/1`——連字號位置不同** |
+
+**→ 本組一律以「目錄號＋廠牌」或 barcode 判同碟；盤名反查一次都沒有採用。**
+
+⚠ **另記一個相反方向的毛病（本條新增）**：**Chris Dave《Chris Dave and The Drumhedz》的 barcode `602537794409` 前綴屬 2014 年前後的 UMG 配號，看起來像 2014 年的碟**——**四層核完全是 2018。條碼號段不是年份證據。**
+
+---
+
+## 第 2203 條（b 組）：**曲風——`['jazz']` 10 張、兩層 10 張；因曲風退件 0**
+
+| 組合 | 張 | 名單 |
+|---|---:|---|
+| `['jazz']` | **10** | The Blue Note 7／Emma Salokoski & UMO／Jon Cowherd／Otis Brown III／Kendrick Scott Oracle／Logan Richardson／Blue Note All-Stars／Kenny Barron Quintet／Charles Lloyd／James Carter |
+| `['jazz','soul']` | **4** | The Northern Governors／Chris Dave and The Drumhedz／R+R=NOW／Sarah McCoy |
+| `['jazz','electronic']` | **3** | Erik Truffaz Quartet／Sunaga t Experience／Aron Ottignon |
+| `['jazz','pop']` | **3** | Ruben Hein／Musica Nuda《Complici》／Musica Nuda《Banda larga》 |
+
+**四條取捨規則**：
+
+1. **`contemporary jazz`／`post-bop`／`hard bop`／`jazzdance`／`future jazz`／`soul jazz`／`avant-garde jazz`／`jazz-funk` 等子類一律不跟**（第 1572 條），因為十個合法值裡沒有它們。
+2. **嘻哈成分折進 `soul`、不開 `hiphop`**——**Glasper 圈的既有先例**：seed 的《Black Radio》《In My Element》、c-162《Black Radio 2》《Live Today》、c-163《The Second》《ArtScience》《Nihil Novi》的 `genres` 欄逐字**全部是 `["jazz","soul"]`，沒有一張用 `hiphop`**。本組的 Chris Dave 與 R+R=NOW 同判（MB `genres` 都逐字含 `hip hop`）。
+3. **Discogs 的 `genre` 欄與 MB 的 `genres` 打架時，取兩邊的交集**——**Sarah McCoy 是唯一一張兩個 Discogs 條目給出不同集合的碟**（CD `13318607` 逐字 `Jazz, Funk / Soul, Pop`；黑膠／master 那邊逐字 `Jazz, Funk / Soul, Blues`）：**交集是 `Jazz` ＋ `Funk / Soul`，故取 `['jazz','soul']`，不賭 `blues` 也不賭 `pop`。**
+4. **非曲風的分類欄不跟**：Emma Salokoski 的 Discogs `genre` 逐字 `Jazz, Children's`，**`Children's` 不對應十個值裡的任何一個，也不折成 `pop`。**
+
+⚠ **第 1559 條的兩張邊界張（Emma Salokoski & UMO、Sunaga t Experience）都收，沒有拿曲風退**。
+⚠ **Musica Nuda 兩張的 `classical` 刻意不跟**：MB《Banda larga》的 `genres` 逐字含 `classical:1`（來自管弦編曲與〈Bach Aire〉那一路曲目），**跟了會讓同一組二重奏的兩張卡曲風不一致，也會讓 a 組《55/21》的 `['jazz','pop']` 對不上**（第 1418 條）。
+⚠ **Ruben Hein 的 `pop` 是本組證據最弱的一格**（Discogs 只給 `Jazz`，`pop` 來自「人聲爵士唱自寫流行曲」的形狀），**本機審稿可退成 `['jazz']`，可逆。**
+
+---
+
+## 第 2204 條（b 組）：**三種店面查法的觀察（只寫觀察不下結論——第 254 條）**
+
+**跑法**：每張用 `search`（`entity=album`，依碟的來源選 2–3 個市場，共涵蓋 us／gb／jp／fr／de／nl／fi／it 八個）＋ `lookup?upc=`（19 張有 barcode 可用，Jon Cowherd 的 MB 與 Discogs barcode 欄都空、這一種查法無從跑起）。**藝人目錄 `lookup?id=<artistId>&entity=album` 這一種留給研究層。**
+
+| 覆蓋 | 張 | 名單 |
+|---|---:|---|
+| **所跑市場全中** | **12** | The Blue Note 7（us/gb/jp）／Erik Truffaz（fr/us/gb）／Jon Cowherd（us/gb/jp）／Otis Brown III／Kendrick Scott Oracle／Logan Richardson（us/gb/fr）／Blue Note All-Stars／Chris Dave／Kenny Barron／Charles Lloyd／Sarah McCoy（fr/de/us）／James Carter（us/gb/fr） |
+| **部分市場空** | **7** | Ruben Hein（**us 空**）／Emma Salokoski（**us 空**）／Musica Nuda《Complici》（**it 空——義大利原壓的市場反而查不到**）／The Northern Governors（**us 空**）／Musica Nuda《Banda larga》（**us 空**）／Sunaga t Experience（**只有 jp**）／Aron Ottignon（**gb 空**） |
+| ⚠ ⚠ **`search` 全空、靠 `lookup?upc=` 救回** | **1** | **R+R=NOW《Collagically Speaking》**——us／gb／jp 三市場用 `R+R=NOW Collagically Speaking` 全部 0 命中（**帶 `+` 與 `=` 的字串搜尋端點吃不下**），`lookup?upc=602567554318` 才回 `1383057057`（第 1605 條的救援在本組成立一次） |
+| **四種查法全空** | **0** | — |
+
+⚠ **`lookup?upc=` 的命中率：19 張裡 8 張命中**（The Blue Note 7、Emma Salokoski、Erik Truffaz〔兩個條碼只有數位那個通〕、The Northern Governors、Kendrick Scott、Blue Note All-Stars、Chris Dave、Kenny Barron、R+R=NOW、Sarah McCoy〔兩個條碼都通〕）——**與 c-159 b 第 1605 條「成功率不高」的經驗一致。**
+⚠ **一個 UPC 回兩個 collectionId 的 1 筆**：**Chris Dave `lookup?upc=602537794409` 同時回 `1440881381` 與 `1442962527`，兩筆的 collectionName／trackCount／releaseDate／℗ 欄逐字全部相同**——**探測鏈要能容忍一碼兩 id。**
+⚠ **兩個 collectionId、軌數不同的 3 筆**：Ruben Hein（gb 12 軌／nl 16 軌）、Musica Nuda《Banda larga》（fr 20 軌／it 21 軌）、Musica Nuda《Complici》（fr `425341018`／us `440255891`，同 14 軌但 releaseDate 差兩個月）。
+⚠ **Apple 的 `artistName`／`collectionName` 與本卡掛名對不上、探測鏈會落空的 4 筆**：**R+R=NOW**（artistName 逐字 `R+R=NOW, Robert Glasper & Terrace Martin`）、**Blue Note All-Stars**（collectionName 逐字帶 `(feat. Lionel Loueke, Ambrose Akinmusire, Marcus Strickland, Kendrick Scott, Robert Glasper & Derrick Hodge)`）、**James Carter**（artistName 逐字只有 `James Carter`、collectionName 逐字 `James Carter Organ Trio: Live From Newport Jazz`）、**Kenny Barron**（artistName 逐字 `The Kenny Barron Quintet`）。
+⚠ **日文片假名 artistName 的 5 筆**：`ブルーノート・セブン`／`ジョン・カウハード`／`オーティス・ブラウン3世`（**用半形阿拉伯數字 3 ＋「世」，不是 III**）／`ケンドリック・スコット・オラクル`／`ケニー・バロン・クインテット`／`クリス・デイヴ&ザ・ドラムヘッズ`／`チャールス・ロイド・ニュー・カルテット`／`ブルーノート・オールスターズ`（實為 8 筆，全部進 `queryAlias`）。
+
+---
+
+## 第 2205 條（b 組）：**CAA——RG 層有圖 15／20，但只有 6 張的來源是原盤或唯一版本**
+
+| 狀態 | 張 | 名單 |
+|---|---:|---|
+| **有圖，來源是原盤或 RG 唯一的 release** | **6** | Ruben Hein（`b53f9b8a`）／Erik Truffaz（`7928f99e` 單 CD）／Kendrick Scott Oracle（`168e453c`）／Blue Note All-Stars（`055a7f13`）／Charles Lloyd（`32d3efe0`）／Sarah McCoy（`f4940eda`） |
+| ⚠ **有圖，但來源是數位版或他版** | **9** | Emma Salokoski（數位 `084f4989`）／Musica Nuda《Complici》（**法版 Bonsaï 壓片 `6841ac94`，不是義大利原壓**）／The Northern Governors（數位）／Musica Nuda《Banda larga》（數位）／Logan Richardson（數位）／Chris Dave（數位）／Kenny Barron（數位）／**R+R=NOW（日本數位 12 軌版 `bd48bf5f`）**／James Carter（**歐版 `af1b1863`，不是美版**） |
+| ⚠ **RG 層 HTTP 404、一張圖都沒有** | **5** | **The Blue Note 7／Jon Cowherd／Otis Brown III／Sunaga t Experience／Aron Ottignon** |
+
+**→ 五張留 `pending-local`；九張「來源不是原盤」的要由研究層與封面層看版式**（Discogs 已記下版式的兩筆：Aron Ottignon 逐字 `4-panel digisleeve with a 12-page booklet`、Sarah McCoy 逐字 `Gatefold cardboard, including a 16-page booklet, inserted in left panel`）。
+
+---
+
+## 第 2206 條（b 組）：**`chk-prop` 與 `dedup-crossbatch` 的結果，以及第 611 條五種盲區的人工掃**
+
+```
+node batch-progress/c169/chk-prop.mjs b
+  → prop-b.json：20 張、19 位
+  → 132 批（其中 1 批讀 prop）｜卡數 5297｜跨批撞卡 0｜同 rgMbid 不同掛名 0
+     ｜同掛名盤名詞元包含 0｜共用目錄號 0（後三項只報不擋）
+  → 合計 20 張、19 位｜標記 0
+node batch-progress/dedup-crossbatch.mjs c169
+  → 1 批（其中 1 批讀 prop）｜卡數 40｜跨批撞卡 0｜同 rgMbid 不同掛名 0
+     ｜同掛名盤名詞元包含 0｜共用目錄號 0
+```
+
+**第五道（盤名逐字撞 apex、掛名不同，report-only）：0 處。** 本組 20 個盤名折鍵後對 seed 裡所有 apex 卡皆無命中。
+
+⚠ **第 611 條：標記 0 不等於沒撞卡。五種盲區逐一人工掃過**：
+
+1. **群組掛名 vs 個人掛名**——**本組最密的一格**。逐筆掃過：`Erik Truffaz`（34 列，第 2193 條）、`Kenny Barron`（2 列，第 2194 條）、`Charles Lloyd`（22 列，第 2195 條）、`Kendrick Scott`（c-166 那張，第 2191 條）、`Robert Glasper`（12 列）、`Ambrose Akinmusire`（13 列）、`Lionel Loueke`（12 列）、`Derrick Hodge`（9 列）、`Bill Charlap`（3 列＋`Bill Charlap Trio`）、`Ravi Coltrane`（3 列）、`Pat Metheny`（5 列＋三種聯名）、`Jason Moran`（24 列）、`Brian Blade Fellowship`／`Brian Blade & the Fellowship Band`、`Marcus Strickland's Twi-Life`、`Christian Scott aTunde Adjuah`——**全部查過，沒有一張是同碟；側人身分不影響掛名。**
+2. **同名但不同盤的 Volume 碟**——0 筆（本組沒有帶 Vol. 的碟）。
+3. **MB 把同一張碟建成兩個 RG**——**1 筆，而且是本批最重要的一筆**：The Blue Note 7（`7edc4d0d` vs `770967e1`，第 2187 條）。**其餘 19 個 rgMbid 互不重複、也與其他批不重複。**
+4. **斜線掛名**——0 筆（本組沒有斜線 credit；c-160／c-161 的 Truffaz 斜線形是別批的事）。
+5. **同名但不同盤**——逐筆核完**真的同碟 0 筆**：`Mercy`（撞 seed 的 Armand Hammer《Mercy》2025 與 Don Covay《Mercy!》1964）、`Mosaic`（撞 seed／c-138 的 Art Blakey and the Jazz Messengers《Mosaic》1962）、`Shift`（子字串撞 Commodores《Nightshift》）、`Passin' Thru`（維基消歧義頁列的 James Gang 1972／Chico Hamilton 1962 兩張，**池中皆無**）、`Team Aquatic`（子字串撞 seed 三張 Aqua）、`Live From Newport Jazz`（子字串撞 seed 的樂團 `Live`）、`STE`（三字母短盤名，**必須帶掛名與 `UCCJ-2123` 才有意義**）。
+
+⚠ **撞陳列（第 738／859／845 條，內容重疊但不是撞卡）4 處**，四張卡的 `risk` 已互指：
+
+| 本組的軌 | 池中的原版 |
+|---|---|
+| The Blue Note 7〈Mosaic〉 | **seed／c-138 `Art Blakey and the Jazz Messengers —《Mosaic》(1962)`** |
+| Blue Note All-Stars〈Bayyinah〉 | **c-162 b `Lionel Loueke —《Heritage》(2012)`**（bluenote.com 逐字：`originally recorded on Loueke's 2012 album Heritage`） |
+| Blue Note All-Stars〈Henya〉 | **c-162 a `Ambrose Akinmusire —《When the Heart Emerges Glistening》(2011)`**（bluenote.com 逐字：`which first appeared on his 2011 debut`） |
+| Charles Lloyd〈Dream Weaver〉 | **seed `Charles Lloyd —《Dream Weaver》(1966)`**（bluenote.com 逐字：`the song was originally recorded on his first quartet's 1966 debut album of the same name`） |
+
+**四處都是同一首曲子的不同次錄音、不是同一段母帶**（第 845 條）；`chk-prop` 的任何一道都不會亮。
+
+---
+
+## 第 2207 條（b 組）：**第 315 條結算**
+
+**`prop-b.json` 20 筆 ＋ 本段退表 0 筆 ＝ 20 ＝ `slice.json` 的 `g === "b"` 筆數。✔**
+
+### 退表（逐筆、附理由分類）
+
+**本組退 0 張。** 逐類清點：**撞池 0**（第 2206 條五種盲區掃完，真的同碟 0 筆）／**判為合輯 0**（第 2198 條）／**非 Album 形態（EP／Single）0**（20 張的軌數與總長都在 Album 區間，最短的是 James Carter 的 6 軌 54 分）／**非 Blue Note imprint 0**（第 2201 條 20 張全過閘）／**原盤他廠改判 0**（本段全是 1985 後的首發盤，沒有再發盤混入）／**曲風 0**（第 1559 條的兩張邊界張都收）／**非爵士 0**。
+
+⚠ **a 組退了 1 張（Dr. John《Sippiana Hericane》，EP），b 組退 0**——**兩組合計 41 張＝收 40／退 1，與 `slice.json` 的 41 筆對得上。**
+⚠ **a 組第 2127 條的 EP 裁定（EP 一律不收）本組沒有機會適用**，但**本組認可該裁定並沿用**：b 組 20 張沒有任何一張是 EP 形態。
+
+---
+
+## 第 2208 條（b 組，**⚠ 派工信與原文／既有裁定牴觸之處**）
+
+派工信第一節逐字要求「本信若與它們牴觸，以它們為準，並在交件回報裡指出本信哪一句寫錯了」。**本棒查到四處，其中兩處主線已在任務中途自行來信更正。**
+
+### （一）⚠ ⚠ 第三節第 4 點把第 307 條寫窄了——**主線已在任務中途更正，本條記下更正後的版本**
+
+派工信逐字：「**Glasper 圈的掛名要照池中先例（第 307 條）：……池中已有卡的一律沿用既有字串，絕不新造分裂。**」
+**照這句字面執行，`Erik Truffaz Quartet`／`Kenny Barron Quintet`／`The Charles Lloyd New Quartet` 三張都會被收攏成裸名。**
+
+**但第 964／196／197 條明文允許且要求「個人字串與群組字串並存、不收攏」**，**c-168 第 2078 條已把它定成本線（c-168／c-169／c-170）的統一規則**，**同批 a 組第 2128／2129 條也照這個方向判了五個字串**。
+**主線在本棒進行中已來信更正**（逐字：「我那句話寫錯了，以原文為準」）。**本棒照更正後的規則走**——見第 2193／2194／2195 條。
+**→ 這一句的正確版本是：「掛名照 MB RG artist-credit 原樣寫；MB 的群組實體與池中既有的個人字串是兩個不同實體時，兩個字串並存。」**
+
+### （二）⚠ 第三節第 4 點的 Glasper 圈名單有一個字串在池中根本不存在
+
+派工信逐字列出「`R+R=NOW`、`Chris Dave and The Drumhedz`、`Kendrick Scott Oracle`、`Otis Brown III`、`Logan Richardson`——**池中已有卡的一律沿用既有字串**」。
+**實掃：這五個字串在 seed 17,248 列 ＋ cards 5,806 張 ＋ 各批 prop 5,512 張裡，全部 0 命中。**
+**「池中已有卡」的是他們的**側人**——Glasper、Hodge、Loueke、Akinmusire——**不是這五個掛名本身。** 本組因此是**五個全新字串**，沒有可沿用的先例，也就沒有分裂風險。
+
+### （三）⚠ 第三節第 7 點把 `Passin' Thru` 的年份寫成 2018、且把它寫成「Montreux 現場」
+
+- **年份**：派工信與 `slice.json` 的 `year` 欄都寫 2018，**正確是 2017**（第 2196 條，四層來源）。⚠ **`slice.json` 的 `note` 欄自己寫的是「2017 這張《Passin' Thru》缺」——列舉檔前後矛盾。**
+- **場次**：派工信逐字「`The Charles Lloyd New Quartet《Passin' Thru》2018` ⋯⋯ Montreux 現場」；**bluenote.com 逐字說只有第 1 軌〈Dream Weaver〉錄於 Montreux，其餘六軌錄於聖塔菲的 The Lensic**（第 2199 條）。
+
+### （四）⚠ ⚠ 派工信第四節第 1 點的「實掃卡池」漏了一種 Discogs 查法——主線已在任務中途補下來
+
+派工信第四節第 1 點只要求「實掃卡池」與跨批去重，**沒有規定 Discogs 要怎麼掃**；本棒原本只跑 `barcode=` 反查。
+**主線 2026-09-19 從 a 組的 `Scolohofo《Oh!》` 查出這個缺口並來信要求補跑第二種掃描**（`artist=<掛名>&release_title=<盤名>&per_page=50`），**b 組補跑後 2 張改年份、18 張補出 MB 沒建的版本**（第 2209 條）。
+**→ 建議把這一句寫進簡報第三節，成為固定動作。**
+
+### ⚠ 另記三句不算牴觸、但與實況有出入的
+
+- 派工信第三節第 5 點說第 1250 條「本線已應驗七次」——**本組又多 6 次**（第 2202 條），**而且多出一種相反方向的形狀：條碼號段看起來像 2014 年、碟其實是 2018 年的**（Chris Dave）。
+- 派工信第三節第 7 點說《Passin’ Thru》是 2018——**第二種掃描下八筆 Discogs 條目（含日版）逐字全是 2017**，改判更硬了（第 2196 條）。
+- 簡報第三節第 4 點說「這一段店面命中率應該很高（現役目錄）」——**本組確實高**（20 張只有 1 張 `search` 全空、0 張四種查法全空，與 a 組的 6 張全空相比落差很大），**但 CAA 反過來很差：15／20 有圖，其中只有 6 張的來源是原盤或唯一版本，5 張 404**（第 2205 條）。
+
+### ⚠ 給主線的兩個回頭查建議
+
+1. **`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)`**（bluenote.com 藝人頁逐字點名的第二張 Oracle 專輯）**不在 c-169 的 slice 上**——**建議回列舉檔查它有沒有被同一個「讀藝人端曲風」的缺口漏掉。**
+2. **`The Blue Note 7` 的重複 RG `770967e1`（掛 `Compilation`）在列舉檔裡有沒有被當成另一張碟切出去**——**建議比對 `enum/blue-note.json`。**
+
+## 第 2209 條（b 組，**新立；主線 2026-09-19 從 a 組帶下來的查法缺口，在 b 組再次應驗**）：**「掃過 Discogs 原壓群」不等於「用 MB barcode 反查過」——20 張補跑第二種掃描，2 張改年份、18 張補出 MB 沒建的版本**
+
+### 缺口的形狀
+
+**第一種查法**（本棒原本跑的）：拿 **MB 每一筆 release 的 barcode** 去 `api.discogs.com/database/search?barcode=…` 反查。
+**盲點**：**MB 沒建的版本沒有 barcode 可拿，於是那一版永遠不會出現在結果裡。** a 組的 `Scolohofo《Oh!》` 就是這樣漏掉日版 `TOCJ-66204`（`released` 逐字 `2002-12-26`）而把年份記成 2003。
+
+**第二種查法**（補跑的）：`api.discogs.com/database/search?artist=<掛名>&release_title=<盤名>&type=release&per_page=50`，**拉全 release 列表**。
+
+### b 組 20 張的結果
+
+| 結果 | 張 | 名單 |
+|---|---:|---|
+| ⚠ ⚠ **改年份** | **2** | **The Blue Note 7 2009→2008**（日版 `TOCJ-66466`，`released` 逐字 `2008-12-26`）／**Logan Richardson 2016→2015**（日版 `UCCQ-1044` SHM-CD，`released` 逐字 `2015-10-14`）——**兩筆 MB 都沒建日版** |
+| **補出 MB 沒建的版本、但年份不變** | **16** | Ruben Hein（荷版黑膠）／Musica Nuda《Complici》（義版黑膠、法版 CD、FLAC）／Erik Truffaz（法版黑膠、2016 Parlophone 再發 LP、Repress、FLAC）／The Northern Governors（芬蘭黑膠）／Musica Nuda《Banda larga》（歐版黑膠、法版 CD、Trecolori、Edel）／Otis Brown III（**日版 `UCCQ-1020`** ＋美版黑膠）／Kendrick Scott Oracle（**美／歐／日三個實體 CD**——MB 只建了數位）／Sunaga t Experience（2022 黑膠的 catno 逐字 `PROZ7-910/1`，與 MB 的 `PROZ-7910/1` 連字號位置不同）／Aron Ottignon（法國宣傳 CDr）／Blue Note All-Stars（**日版 2 CD `UCCQ-1072/3`** ＋美歐兩款黑膠＋宣傳 CDr）／Chris Dave（**日版 `UCCQ-1078`** ＋美歐兩款黑膠＋**2017 宣傳 CDr**）／Kenny Barron Quintet（法國宣傳 CDr、AIFF）／R+R=NOW（**日版 `UCCQ 1085`** ＋美歐兩款黑膠＋數位＋宣傳 CDr）／Charles Lloyd（**日版 `UCCQ-1071`** ＋兩款黑膠＋宣傳 CDr＋FLAC）／Sarah McCoy（黑膠、宣傳 CDr）／James Carter（德國版 CD） |
+| **Discogs 上只有 MB 已有的版本** | **2** | Emma Salokoski & UMO（1 筆）／Jon Cowherd（1 筆，**而且沒有 barcode——第二種掃描是本張唯一能跑的 Discogs 查法**） |
+
+**→ 20 張裡 18 張有 MB 沒建的版本，其中 6 張有 MB 沒建的日版，2 張的日版早於歐美而改了年份。**
+
+### ⚠ 兩條副產物
+
+1. **`Unofficial Release` 在本組出現 3 次**：Erik Truffaz 俄版 `28774099`、Logan Richardson 俄版 `8444720`、Charles Lloyd 俄版 `11137083`。**依 a 組的結論一律不當年份依據**（三筆的 catno／barcode 都是照抄歐版，最容易被第一種 barcode 查法撈進來當「原壓」）。
+2. **列舉檔的 `catno` 又錯一格**：**Ruben Hein 的 `50999 9174741 9` 其實是荷蘭黑膠 `5278992` 的目錄號，CD `2983088` 是 `50999 9174742 6`**——**第 1250 條的同一族，只是這次錯的不是位數而是載體。**
+
+### → 給後批的固定動作
+
+**年份定案前，兩種 Discogs 查法都要跑**：
+1. `barcode=<MB 每一筆 release 的 barcode>`（抓得到 MB 已建版本的細節）；
+2. **`artist=<掛名>&release_title=<盤名>&per_page=50`（抓得到 MB 沒建的版本，尤其日版）。**
+**只跑第一種，「掃過 Discogs 原壓群」這句話是假的。**
+⚠ **掛名字串要用店面／Discogs 那一種**：本組 `Charles Lloyd New Quartet` 用卡上的 `The Charles Lloyd New Quartet` 查會回 **0 筆**，改用 `Charles Lloyd` 才回 8 筆。
+
+---

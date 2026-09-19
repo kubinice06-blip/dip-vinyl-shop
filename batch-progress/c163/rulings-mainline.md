@@ -2091,3 +2091,66 @@ b 組實測 **179–229，超標 0**；**但第一輪草稿 22 張仍有 9 張�
 **與第 1947-A／2045／2066 條同形，本線第三次。**
 **處置**：**主線的檢查點提交一律不得當作交件版，即使筆數已經等於目標張數**；
 **代理交件後必須再提交一次工作區版本**（本次已照做）。
+
+## 第 1804-B 條（c-169 b 驗收）：**20 張收 20 退 0，c-169 全批 40 張零退件**
+
+`chk-prop b` 20 張 19 位標記 0、第五道撞 apex 0 處；`dedup-crossbatch c169` 40 張四項全 0；
+第 611 條五種盲區人工掃完同碟 0 筆（**盲區三「MB 一碟兩 RG」命中 1 筆**，見下）。卡單已建：**c169 40 張全部 pinned、人工 0、重複鍵 0**。
+
+### `The Blue Note 7《Mosaic》` 判 Album，不是合輯
+
+釘的 RG `7edc4d0d` 轄下只有 GB 單 CD 8 軌，**八軌 recording 逐一回問 MB，`artist-credit` 全是 `The Blue Note 7`、
+`frd` 全是 2009-01-12——沒有一段舊母帶**；Discogs 單 CD `3235910` 的 format 逐字只有 `Album`。
+⚠ **但 MB 把同一張碟建了第二個 RG `770967e1`，`secondary-types` 逐字 `["Compilation"]`**：
+那是美版 2 CD，**medium 2 的 title 逐字 `The Original Sessions`＝八首原版母帶**
+（`edfe8650`＝Art Blakey 1961、`a742306c`＝Grant Green 1964、`8cf58584`＝Bobby Hutcherson 1965）。
+**Compilation 標在那個 RG 上是對的**，本卡明寫「刻意不釘」，**下游一律鎖 8 軌形**。
+**主線回查完畢：`770967e1` 已在 `batch-progress/enum/blue-note-comp.json` 裡被分到合輯，沒有被切成另一張卡。**
+
+### 年份改判 3 筆，其中兩筆完全靠第 1800-B 條的第二種掃描才查到
+
+- **`The Charles Lloyd New Quartet《Passin' Thru》` 2018→2017**（MB frd 月日對、**年份跳一格**；Discogs 8 筆＋Apple＋維基全 2017）
+- **`The Blue Note 7《Mosaic》` 2009→2008**（**日版 `TOCJ-66466`，Discogs `released` 逐字 2008-12-26，8 軌同形，MB 沒建日版**）
+- **`Logan Richardson《Shift》` 2016→2015**（**日版 SHM-CD `UCCQ-1044`，`released` 逐字 2015-10-14**）
+
+**第 1800-B 條在 b 組的成效**：20 張全部補跑，**2 張改年份、18 張補出 MB 沒建的版本（其中 6 張有 MB 沒建的日版）**，
+只有 2 張 Discogs 上沒有 MB 以外的版本。
+⚠ **查的時候掛名字串要用 Discogs 那一種**：用 `The Charles Lloyd New Quartet` 查回 0 筆，改 `Charles Lloyd` 才回 8 筆。
+**俄版 `Unofficial Release` 在 c-169 兩組共出現 5 次，一律排除。**
+
+### 掛名：`Blue Note All-Stars` 正規化成 ASCII
+
+**MB 主名的連字號是 U+2010，正規化成 ASCII `Blue Note All-Stars`**（c-110 第 1 條／c-150 NHØP 先例；
+**Discogs 與 Apple 本來就是 ASCII**）。**與 c-168 的 `The Blue Note All Stars`（1996）確認是兩團**，不合併。
+`Kendrick Scott Oracle` 保留（Group `71d3da26`），**與 c-166《Corridors》的三人並列 credit 是兩個掛名主體**，
+bluenote.com 逐字稱 Oracle 為 "his band"。
+
+⚠ **`The Charles Lloyd New Quartet` 與 c-146 的判法方向相反**（c-146 把 `The Charles Lloyd Quartet` 收攏成裸名）。
+**裁定：本批照 MB RG credit 原樣寫 `The Charles Lloyd New Quartet`，不回頭改 c-146。**
+理由與第 1801-B 條同一條線：**`Quartet` 與 `New Quartet` 在 MB 是不同實體**（同族共 4 個），
+**不是同一實體的兩種寫法**，所以不落在第 1418 條的分裂裡；c-146 的卡單已建，回頭改的成本高於收益。
+
+## 第 1805-B 條（⚠ 派工信在 c-169 b 又寫錯三處，兩處是事實）
+
+1. **「Glasper 圈池中已有卡」的五個字串在池中實際全是 0 命中**——有卡的是他們的側人（Glasper／Hodge／Loueke／Akinmusire）。
+   **與第 1738-B／1746-C 條同形：主線又把「我以為池中有」寫成了「池中有」。**
+2. **《Passin' Thru》的年份 2018 是錯的（正確 2017），而且不是「Montreux 現場」**
+   ——bluenote.com 逐字：**只有第 1 軌錄於 Montreux，其餘六軌在聖塔菲 The Lensic。**
+3. 第 307 條引窄（已中途更正，見第 1795-B 條）。
+
+**另外兩筆不是派工信的錯，但要記**：
+- ⚠ **`slice.json` 的 `note` 第三次出錯**（c-168 一筆、c-169 a 兩筆、本組一筆）：
+  Kenny Barron 那筆逐字寫「Kenny Barron 零張」，**seed 實際有《Scratch》1985 與《What If?》1986 兩張**，
+  bluenote.com 本盤頁還直接點名《What If》。**第 1796-B 條擴大：`slice` 的 `note` 凡是「零張／僅 XX 盤」這類數量或範圍斷言，一律要自己重掃。**
+- **列舉檔 catno 又錯一筆**（第 1250 條）：Ruben Hein 的 `50999 9174741 9` 是**黑膠**的號，CD 是 `…742 6`。
+
+### 主線回查的兩件事，都已澄清
+
+- **`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)` 不是漏切**——**它在 `c166` 的卡單裡**（`c166-cards.json`），b 組看的是 c-169 的 slice 所以沒看到。
+- **Blue Note 7 的重複 RG `770967e1` 沒有被切成另一張碟**——它在 `enum/blue-note-comp.json` 的合輯分類裡。
+
+### 其他數字
+
+曲風 `['jazz']` 10／`['jazz','soul']` 4／`['jazz','electronic']` 3／`['jazz','pop']` 3，因曲風退 0
+（第 1559 條落在 b 組的兩張邊界張 Salokoski、STE 都收）。現場盤 2 張 MB 都標對，imprint 前置閘 20 張全過，軌數分歧 7 筆。
+**店面 `search` 全命中 12、部分空 7、全空 1（R+R=NOW，靠 UPC 救回）、四種全空 0；CAA 有圖 15／20，但只有 6 張來源是原盤或唯一版本、5 張 404。**
