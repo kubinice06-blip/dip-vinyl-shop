@@ -148,6 +148,10 @@ export const LINES = {
   c165: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
   c166: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
   c167: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  // c168／c169／c170 是列舉層讀錯曲風層級後的補批（第 1557 條），同一條線。c168 只有 a 組。
+  c168: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）' } },
+  c169: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c170: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
