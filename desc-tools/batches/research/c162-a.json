@@ -434,5 +434,647 @@
    "note": "策展層已把卡單從 2010 改判為 2011，本層覆核成立：Discogs 六筆零售條目的年份欄逐字都是 2011、法版 2774941 自己的 notes 逐字 `© 2011 EMI Music France`、MB 的 2a5a9417（FR CD）與 3bc2994c（US CD）年份欄都是 2011。MB frd 的 2010-12-08 取的是數位筆 6e69552d，不是實體首發。錄音 2010 年 9–10 月。"
   },
   "notes": "⚠ ⚠ 推翻策展層一處，而且會直接寫進正文：curatorWhy 逐字寫「Nat Adderley 的〈Work Song〉是唯一的美國爵士標準曲」。Discogs 2774941 的 Written-By 欄逐字把軌 7〈Worksong〉算在 `Avishai Cohen | tracks 1, 3 to 8, 11` 之內，MB 2a5a9417 的 work relations 同樣逐字記 `W:Avishai Cohen(writer)`——**兩個來源都說這是 Cohen 自己的曲子，不是 Nat Adderley 的翻唱**。正文不可寫成翻唱。（撞陳列那一處 seed `Nat Adderley —《Work Song》(1960)` 因此只是同名，不是同一首。）⚠ 軌 2 的作者兩邊不同：Discogs 逐字 `Mark Warshawsky`，MB 逐字作詞 Itzik Manger、作曲 unknown；本稿只引 MB 的作詞欄，正文不要寫作曲者。⚠ 本卡與本組第 18 張《Duende》同為 Avishai Cohen，編制與錄音地點完全不同（《Seven Seas》是瑞典 Nilento＋室內編制，《Duende》是鋼琴二重奏），兩張的事實不可互相沾染。⚠ 紙本 0 命中：Billboard 2010–2012 查 `avishai`／`seven seas` 皆 0，正文不可引用榜位或評介。⚠ Apple 三個條目三種軌數（10／11／12 軌），實體零售是 10 軌。⚠ 封面：Discogs 2774941 primary 圖 https://i.discogs.com/MkDCozSIojC9zCBdKmNetKxRi3sOvkJ5ejRE89QTNHI/rs:fit/g:sm/q:90/h:591/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NzQ5/NDEtMTMwMDQ2Nzk5/My5qcGVn.jpeg"
+ },
+ {
+  "key": "desc2:Cassandra Wilson|Silver Pony",
+  "artist": "Cassandra Wilson",
+  "album": "Silver Pony",
+  "facts": [
+   {
+    "f": "十一軌是錄音室與現場兩種素材剪在一起的：維基逐字寫「A mixture of live and studio-recorded tracks」，現場部分錄自她在華沙、塞維亞與格拉納達的巡演，錄音室部分在紐奧良 John Fischbach 的 Piety Street Recording 完成。",
+    "src": "https://en.wikipedia.org/wiki/Silver_Pony"
+   },
+   {
+    "f": "三首現場曲在她上一張《Loverly》（2008）裡已經有錄音室版本：開場的〈Lover Come Back to Me〉、〈Went Down to St James Infirmary〉與〈A Day in the Life of a Fool〉。",
+    "src": "https://en.wikipedia.org/wiki/Silver_Pony"
+   },
+   {
+    "f": "Ravi Coltrane 在〈Beneath a Silver Moon〉吹一段次中音薩克斯風獨奏，Discogs 的 credit 欄逐字把他標在軌 4；同一軌 Cassandra Wilson 自己彈合成器。",
+    "src": "https://www.discogs.com/release/10829965"
+   },
+   {
+    "f": "John Legend 在終曲〈Watch the Sunrise〉彈鋼琴並合唱；那一軌的伴奏也換人——Brandon Ross 的木吉他、Luke Laird 的節奏木吉他、Helen Gillet 的大提琴與古提琴，Wilson 自己踩大鼓。",
+    "src": "https://www.discogs.com/release/10829965"
+   },
+   {
+    "f": "固定班底是 Marvin Sewell（電吉他）、Jon Batiste（鋼琴，軌 3 改彈 Fender Rhodes）、Reginald Veal（低音提琴與電貝斯）、Herlin Riley（鼓）與 Lekan Babalola（打擊）；這五個人連同 Wilson 都掛聯合製作。",
+    "src": "https://www.discogs.com/release/10829965"
+   },
+   {
+    "f": "標題曲〈Silver Pony〉只有三十七秒，是全碟最短的一軌；最長的〈Saddle Up My Pony〉九分三十二秒。",
+    "src": "https://www.discogs.com/release/10829965"
+   },
+   {
+    "f": "〈Saddle Up My Pony〉改的是 Charley Patton 1929 年的三角洲藍調〈Pony Blues〉；〈If It's Magic〉是 Stevie Wonder 的歌、〈Blackbird〉的作曲欄逐字 Lennon-McCartney、〈A Day in the Life of a Fool〉是 Luiz Bonfá 與 Carl Sigman。",
+    "src": "https://en.wikipedia.org/wiki/Silver_Pony"
+   },
+   {
+    "f": "軌 3〈A Night in Seville〉是全碟唯一沒有 Wilson 人聲的一軌——Discogs 的 credit 欄逐字把她的 `Vocals` 標在軌 1、2、4 至 11。",
+    "src": "https://www.discogs.com/release/10829965"
+   },
+   {
+    "f": "盤名與封面來自她在密西西比州傑克森的童年：一個牽著小馬、帶著相機的人上門，付錢就能拍照，母親讓她坐上去拍了一張，那張照片就是封面。",
+    "src": "https://en.wikipedia.org/wiki/Silver_Pony"
+   },
+   {
+    "f": "Wilson 與 John Fischbach 共同製作，Fischbach 兼錄音與混音；現場那一半的錄音師逐字是 Don Juan Holder，助理是 Tobias Lange，Bob Katz 在 Digital Domain 做母帶，內頁由 Larry Blumenfeld 撰寫。",
+    "src": "https://www.discogs.com/release/10829965"
+   },
+   {
+    "f": "2010 年 11 月 27 日出刊的 Billboard 第 39 頁 Top Jazz Albums 上，本碟逐字印作 `SILVER PONY OJAH /BLUE NOTE 29752/BLG`；2011 年 1 月 29 日與 2 月 5 日兩期續榜。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2010/BB-2010-11-27.pdf"
+   },
+   {
+    "f": "這張碟在 Billboard 的 Jazz Albums 榜上最高到第六名。",
+    "src": "https://en.wikipedia.org/wiki/Silver_Pony"
+   }
+  ],
+  "hookCandidates": [
+   "封面那個坐在小馬上的女孩，是傑克森街頭一個牽馬拍照的人留下的。",
+   "標題曲只有三十七秒，而那首翻自 Charley Patton 的〈Saddle Up My Pony〉唱了九分半。"
+  ],
+  "sound": "一半在紐奧良的錄音室、一半剪自歐洲巡演的現場，同一組五人班底貫穿兩邊；曲單從 1920 年代的百老匯歌、公版的〈St. James Infirmary〉、Charley Patton 的三角洲藍調一路到 Stevie Wonder 與 Beatles，中間插進樂團集體寫的三首短曲。",
+  "keyTracks": [
+   "Lover Come Back to Me",
+   "Beneath a Silver Moon",
+   "Saddle Up My Pony",
+   "Watch the Sunrise"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2010,
+   "recorded": null,
+   "note": "維基逐字「Released November 9, 2010」、Discogs 美版 10829965 與歐版 2624601 年份欄逐字 2010、MB frd 逐字 2010-11-22（那是英國版）、紙本 BB-2010-11-27 首度上榜——四層同年，維持卡單 2010。街頭日取維基的 11-09。"
+  },
+  "notes": "⚠ ⚠ 推翻策展層兩處。(1) curatorWhy 逐字寫 John Legend「也是共同作者之一」——Discogs 10829965 軌 11 的 Written-By 欄逐字是 `Geoff Stephens, Luke Laird, Steven Dale Jones` 三人，沒有 Legend，正文只能寫他彈琴與合唱。(2) curatorWhy 逐字寫「Muddy Waters〈Forty Days and Forty Nights〉」——盤面的 Written-By 欄逐字是 `Bernie Roth`，Muddy Waters 是唱過它的人。⚠ 策展層完全沒提到的兩件事，本層補上：Ravi Coltrane 在軌 4 吹次中音薩克斯風（維基逐字說那是 solo），以及〈Saddle Up My Pony〉改自 Charley Patton 的〈Pony Blues〉。⚠ 這是「一半現場」的碟，但 MB secondary-types 空、Discogs format 欄只有 `CD, Album`、卡單 `live` 欄是 false（第 1751 條：四層都沒標，不改欄位，但正文要寫明有現場的一半）。⚠ 軌 9〈A Day in the Life of a Fool〉與 seed `Antonio Carlos Jobim & Luiz Bonfá —《Black Orpheus》(1959)`（apex hall）同源，下游敘事要迴避與那張 apex 重疊。⚠ 固定試聽：Apple 七個市場（us／gb／jp／fr／it／ca／de）搜尋 `cassandra wilson silver pony`，回的全是《Blue Light 'Til Dawn》1442272040，本碟在 Apple 沒有任何條目。"
+ },
+ {
+  "key": "desc2:Aga Zaryan|A Book of Luminous Things",
+  "artist": "Aga Zaryan",
+  "album": "A Book of Luminous Things",
+  "facts": [
+   {
+    "f": "盤名取自 Czesław Miłosz 1996 年編的世界詩選；十二軌全部以英語演唱，歌詞是米沃什自己的詩，以及他選進那本詩選的三位女詩人——Anna Świrszczyńska、Jane Hirshfield 與 Denise Levertov——的作品。",
+    "src": "https://pl.wikipedia.org/wiki/A_Book_of_Luminous_Things"
+   },
+   {
+    "f": "十二首詞的分配逐軌可查：米沃什佔六軌（〈This Only〉〈Meaning〉〈A Parable of the Poppy〉〈A Song on the End of the World〉〈On Prayer〉〈This World〉），Jane Hirshfield 與 Anna Świrszczyńska 各兩軌，Denise Levertov 兩軌。",
+    "src": "https://www.discogs.com/release/20374477"
+   },
+   {
+    "f": "作曲幾乎全出自鋼琴家 Michał Tokaj——Discogs 的 Composed By 欄逐字把他標在軌 1 至 11，Aga Zaryan 與他共寫軌 7 至 9，最後一軌〈This World〉則是 David Dorůžka 的曲子。",
+    "src": "https://www.discogs.com/release/20374477"
+   },
+   {
+    "f": "錄音在加州的 Castle Oaks 錄音室進行，波蘭廣播管弦樂團的段落則在華沙另錄。",
+    "src": "https://pl.wikipedia.org/wiki/A_Book_of_Luminous_Things"
+   },
+   {
+    "f": "班底五人：Aga Zaryan 人聲、Michał Tokaj 鋼琴、Larry Koonse 吉他、Darek Oleszkiewicz 低音提琴、Munyungo Jackson 打擊——歐版的掛名欄索性把五個名字並排印上去。",
+    "src": "https://pl.wikipedia.org/wiki/A_Book_of_Luminous_Things"
+   },
+   {
+    "f": "這是 Aga Zaryan 的第五張錄音室專輯，2011 年 6 月 14 日由 EMI Music Poland 與 Blue Note 共同發行。",
+    "src": "https://pl.wikipedia.org/wiki/A_Book_of_Luminous_Things"
+   },
+   {
+    "f": "同年 10 月 4 日又發了一個波蘭語版本《Księga olśnień》，曲序與英語版相同、歌詞改唱波蘭文原詩，其中〈To Jedno〉找來 Grzegorz Turnau 對唱。",
+    "src": "https://pl.wikipedia.org/wiki/A_Book_of_Luminous_Things"
+   },
+   {
+    "f": "英語版在波蘭拿到白金唱片、波蘭語版拿到金唱片；波蘭語版並入圍 2012 年 Fryderyk 獎的「年度專輯：詩歌歌曲」。",
+    "src": "https://pl.wikipedia.org/wiki/A_Book_of_Luminous_Things"
+   },
+   {
+    "f": "軌 2 的標題把三首短詩串成一軌，盤面逐字印作〈Like a He-Bear and She-Bear / Falling Asleep / Eyelashes〉，四分三十九秒。",
+    "src": "https://www.discogs.com/release/20374477"
+   },
+   {
+    "f": "歐版 CD 的廠牌欄逐字 Blue Note 與 EMI，目錄號 50999 0 84498 2 5；波蘭原壓的廠牌欄只有 EMI Music Poland 一格，目錄號 60501660，released 欄逐字 2011-06-14。",
+    "src": "https://www.discogs.com/release/3730350"
+   },
+   {
+    "f": "十二軌沒有一軌超過六分鐘，最長的〈Autumn Quince〉五分四十八秒、最短的〈Eye Mask〉兩分三十三秒。",
+    "src": "https://www.discogs.com/release/20374477"
+   }
+  ],
+  "hookCandidates": [
+   "盤名是米沃什編的一本詩選，十二軌就是從那本書裡挑出來的詩。",
+   "在加州錄人聲與樂團，在華沙錄管弦樂，唱的是波蘭詩人的英譯。"
+  ],
+  "sound": "人聲、鋼琴、吉他、低音提琴與打擊的小編制，加上另錄的管弦段落；每一軌都是先有詩再譜曲，十二軌沒有一首超過六分鐘。",
+  "keyTracks": [
+   "Music Like Water",
+   "A Song on the End of the World",
+   "I Talk to My Body",
+   "This World"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2011,
+   "recorded": null,
+   "note": "Discogs 波蘭版 3730350 released 欄逐字 2011-06-14、MB frd 逐字同日、Apple 691999483 逐字 releaseDate 2011-06-14、波蘭文維基逐字「wydany 14 czerwca 2011 roku」——四層逐日相符，維持卡單 2011。"
+  },
+  "notes": "⚠ 訂正策展層一處：curatorWhy 逐字寫「十二軌的歌詞全部是米沃什自己的詩或他選譯的詩」，實際上米沃什自己的詩是六軌，另外六軌分屬 Anna Świrszczyńska、Jane Hirshfield 與 Denise Levertov（Discogs 20374477 的逐軌 Lyrics By 欄與波蘭文維基逐字一致）。⚠ 策展層提醒「Discogs 兩筆條目的 credits 只有 Composed By 三行，演奏者一個都沒有列」——本層改由波蘭文維基的 Twórcy 一節取得五人編制與樂器，並取得錄音地點（加州 Castle Oaks ＋ 華沙錄管弦），coverage 因此判 full。⚠ MB 對本碟的 recording-level relations 全空，樂手資訊不能從 MB 取。⚠ 軌 2 的副標兩邊不同：MB 作 `Sleepy Eyelashes`、Discogs 作 `Eyelashes`；本稿取 Discogs 盤面形。⚠ Apple 的 ℗ 欄寫的是 Warner Music Poland，那是 2013 年以後的權利人回填，正文不可據以寫廠牌。⚠ 紙本 0 命中，正文不可引用榜位或評介（白金／金唱片與 Fryderyk 入圍引自波蘭文維基，可用）。⚠ 封面：Discogs 3730350 primary 圖 https://i.discogs.com/KtZfhe4cxJ6ypdb7dTQOtdNvnqBOeCq4XUYxBrMSQx8/rs:fit/g:sm/q:90/h:536/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MzAz/NTAtMTM0MjA2NDkx/MS04Mzc5LmpwZWc.jpeg"
+ },
+ {
+  "key": "desc2:Ambrose Akinmusire|When the Heart Emerges Glistening",
+  "artist": "Ambrose Akinmusire",
+  "album": "When the Heart Emerges Glistening",
+  "facts": [
+   {
+    "f": "2011 年 4 月 16 日出刊的 Billboard 第 26 頁的評介欄逐字列出這張碟的資料：「Producers: Ambrose Akinmusire, Jason Moran｜Blue Note Records｜Release Date: April 5」——共同製作是同廠牌的鋼琴家 Jason Moran。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2011/BB-2011-04-16.pdf"
+   },
+   {
+    "f": "同一篇評介逐字稱他「the brightest beacon on trumpet, the sharpest in a few decades」，並寫他在這張 Blue Note 首作上「continues to emphasize ensemble work over showmanship and loose song structures over tight themes」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2011/BB-2011-04-16.pdf"
+   },
+   {
+    "f": "盤面 notes 逐字寫「Recorded September 20-22, 2010」，地點欄逐字 Brooklyn Studios；David Darlington 一人包辦錄音、混音與母帶。",
+    "src": "https://www.discogs.com/release/3426934"
+   },
+   {
+    "f": "五重奏是 Walter Smith III（次中音薩克斯風）、Gerald Clayton（鋼琴）、Harish Raghavan（低音提琴）、Justin Brown（鼓）；Akinmusire 自己的 credit 欄逐字是 `Trumpet, Celesta, Voice, Producer`。",
+    "src": "https://www.discogs.com/release/3426934"
+   },
+   {
+    "f": "十三軌裡有十一軌是 Akinmusire 自己寫的；軌 2〈Jaya〉出自低音提琴手 Harish Raghavan，軌 11〈What's New〉是 Bob Haggart 與 Johnny Burke 的標準曲，也是全碟唯一的外來曲。",
+    "src": "https://www.discogs.com/release/3426934"
+   },
+   {
+    "f": "〈Ayneh〉拆成兩軌放在碟的中後段——軌 8〈Ayneh (Cora)〉一分十秒、軌 13〈Ayneh (Campbell)〉一分三十六秒；〈Henya〉同樣拆成軌 3 的四十九秒低音提琴前奏與軌 4 的本體。",
+    "src": "https://www.discogs.com/release/3426934"
+   },
+   {
+    "f": "2010 年 7 月 17 日的 Billboard 第 39 頁專文逐字預告了這張碟：「he and his band will 'tour right into the studio' this fall to record Akinmusire's major-label debut for EMI's Blue Note Records. Co-producing the set of original tracks with the trumpeter will be labelmate/pianist Jason Moran.」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2010/BB-2010-07-17.pdf"
+   },
+   {
+    "f": "同一篇專文引他的話說明為什麼用自己的樂團而不是找大牌：「I wasn't going to be one of those cats who signs and then calls in all these heroes. I've been playing with the same guys for 10 years. I want to develop and feature this band—and stay with them for the next 30-40 years.」",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2010/BB-2010-07-17.pdf"
+   },
+   {
+    "f": "Akinmusire 在奧克蘭出生長大，四歲在教堂彈鋼琴，大一那年就跟著薩克斯風手 Steve Coleman 上路；2007 年他在南加大念碩士時拿下 Thelonious Monk 國際大賽，評審席上坐著 Quincy Jones 與 Herb Alpert。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2010/BB-2010-07-17.pdf"
+   },
+   {
+    "f": "Blue Note 的藝人頁把《When the Heart Emerges Glistening》列為他在該廠的第一張，之後才有《the imagined savior is far easier to paint》(2014)、《A Rift in Decorum: Live at the Village Vanguard》(2017) 與《Origami Harvest》(2018)。",
+    "src": "https://www.bluenote.com/artist/ambrose-akinmusire/"
+   },
+   {
+    "f": "低音提琴 Harish Raghavan 與鼓手 Justin Brown 一直留在他的樂團裡，直到 2020 年的《on the tender spot of every calloused moment》仍是同一組人。",
+    "src": "https://www.bluenote.com/artist/ambrose-akinmusire/"
+   },
+   {
+    "f": "內頁由當時的 Blue Note 主事者 Bruce Lundvall 撰寫，A&R 是 Eli Wolf；美版 CD 的廠牌與目錄號逐字 Blue Note 509990 70612 2 9。",
+    "src": "https://www.discogs.com/release/3426934"
+   }
+  ],
+  "hookCandidates": [
+   "簽進大廠的第一句話是：我不會找一堆英雄來，我要用一起打了十年的這幾個人。",
+   "〈My Name Is Oscar〉只有口白與一套鼓。"
+  ],
+  "sound": "小號與次中音薩克斯風在前、鋼琴三重奏在後的五重奏，曲式刻意鬆散，短曲與前奏切成獨立軌次插在長曲之間；十三軌裡只有一首不是團內的作品。",
+  "keyTracks": [
+   "Confessions to My Unborn Daughter",
+   "Jaya",
+   "My Name Is Oscar",
+   "What's New"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2011,
+   "recorded": 2010,
+   "note": "紙本 BB-2011-04-16 p26 的評介欄逐字 `Release Date: April 5`、Apple us 715863618 逐字 releaseDate 2011-04-05（逐日相符）、Discogs 美版 3426934 年份欄逐字 2011、MB frd 逐字 2011（只有年）——維持卡單 2011。錄音 2010-09-20～22，與發行年不可互寫（第 1550 條）。美版宣傳盤 6940099 的年份欄是 2010，依第 1655 條宣傳盤不改年份。"
+  },
+  "notes": "⚠ 補策展層三處未提的事實：錄音地點 Brooklyn Studios；Akinmusire 自己的 credit 除小號外還有 celesta 與 voice；軌 2〈Jaya〉的作曲者是低音提琴手 Harish Raghavan、軌 11〈What's New〉的作曲者是 Bob Haggart 與 Johnny Burke。⚠ Discogs 3426934 把 Jason Moran 誤登成 `Film Producer`，紙本 BB-2011-04-16 的 Producers 欄逐字是 `Ambrose Akinmusire, Jason Moran`，以紙本為準。⚠ 〈My Name Is Oscar〉是為 2009 年在奧克蘭捷運站被警員射殺的 Oscar Grant 所寫，策展層有此敘述但本層在 Discogs、MB、Blue Note 藝人頁與兩期 Billboard 都找不到逐字依據，因此只放進 hookCandidates 的措辭素材而未收成 fact；正文若要寫這一層，請主線另補來源。⚠ 紙本榜單上的目錄號逐字 `70619`、盤面是 `70612`，差一碼是抄寫差異、不是另一張碟。⚠ Apple 三市場軌數 13／13／14 不一，實體零售 13 軌。⚠ 本卡的共同製作人 Jason Moran 同時是本組第 1 張《Ten》的掛名藝人，兩張卡的敘事不要互相沾染。⚠ 封面：Discogs 3426934 primary 圖 https://i.discogs.com/uzjNUxDiZk3SKkEtnh446P8Qm6XNlJZvRqPQyduAevA/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MjY5/MzQtMTUxNTc5Nzcz/Ni04MzE3LmpwZWc.jpeg"
+ },
+ {
+  "key": "desc2:Stacey Kent|Dreamer in Concert",
+  "artist": "Stacey Kent",
+  "album": "Dreamer in Concert",
+  "facts": [
+   {
+    "f": "盤面 notes 逐字寫「Recorded Live at La Cigale, Paris, France, May 30-31 2011」——十三軌全部錄自 2011 年 5 月 30、31 兩晚在巴黎 La Cigale 的演出。",
+    "src": "https://www.discogs.com/release/22274170"
+   },
+   {
+    "f": "台上五個人：Stacey Kent 唱並彈吉他、Jim Tomlinson 吹次中音與高音薩克斯風兼打擊、Graham Harvey 鋼琴與 Fender Rhodes、Jeremy Brown 低音提琴、Matt Skelton 鼓與打擊；製作與編曲仍是 Tomlinson。",
+    "src": "https://www.discogs.com/release/22274170"
+   },
+   {
+    "f": "現場由 João Paulo Nogueira 錄音，Curtis Schwartz 混音與母帶——與她錄音室作品同一位工程師。",
+    "src": "https://www.discogs.com/release/22274170"
+   },
+   {
+    "f": "三首原創出自 Jim Tomlinson 與小說家 Kazuo Ishiguro 的合作：軌 3〈Postcard Lovers〉、軌 10〈Breakfast on the Morning Tram〉；軌 8〈O Comboio〉則是 Tomlinson 與 Antonio Ladeira 合寫。",
+    "src": "https://www.discogs.com/release/22274170"
+   },
+   {
+    "f": "巴西那一線佔三軌，全部來自 Jobim：軌 5〈Quiet Nights of Quiet Stars〉與軌 9〈Dreamer〉的作曲欄是 Jobim 與 Gene Lees，軌 6〈Waters of March〉是 Jobim；軌 12〈Samba Saravah〉則是 Baden Powell 與 Pierre Barouh 的曲、Vinicius de Moraes 的詞。",
+    "src": "https://www.discogs.com/release/22274170"
+   },
+   {
+    "f": "法語那一線兩軌：軌 2〈Ces Petits Riens〉的作曲欄逐字是 Serge Gainsbourg，軌 13〈Jardin d'Hiver〉是 Benjamin Biolay 與 Keren Ann——後者也收在她 2010 年的全法語碟《Raconte-moi…》上。",
+    "src": "https://www.discogs.com/release/22274170"
+   },
+   {
+    "f": "美國歌本四軌：Rodgers & Hammerstein〈It Might as Well Be Spring〉（七分二十九秒，全場最長）、Frank Loesser〈If I Were a Bell〉、Cy Coleman 與 Carolyn Leigh〈The Best Is Yet to Come〉、Gershwin 兄弟〈They Can't Take That Away From Me〉。",
+    "src": "https://www.discogs.com/release/22274170"
+   },
+   {
+    "f": "軌 10〈Breakfast on the Morning Tram〉正是她 2007 年同名專輯的標題曲，這一場唱的是現場版。",
+    "src": "https://www.discogs.com/release/22274170"
+   },
+   {
+    "f": "法版零售 CD 的廠牌欄逐字 EMI、目錄號 5099968093228，℗© 欄逐字 Token Productions；加拿大版與 2012 年的美版廠牌欄第一格逐字都是 Blue Note。",
+    "src": "https://www.discogs.com/release/3406048"
+   },
+   {
+    "f": "美版晚了一年，2012 年 6 月 5 日才發（Blue Note 50999 6 38484 2 7），而且多收一軌 Irving Berlin 的〈They Say It's Wonderful〉。",
+    "src": "https://www.discogs.com/release/6001349"
+   },
+   {
+    "f": "MB 的 release-group 把本碟的 secondary-types 逐字標成 `[\"Live\"]`，first-release-date 逐字 2011-08-31——數位版先上架，實體要到 10 月。",
+    "src": "https://musicbrainz.org/release-group/1fffb0b5-898c-40ee-a6fe-a0cad6ecf031"
+   }
+  ],
+  "hookCandidates": [
+   "巴黎 La Cigale 連續兩晚，五個人把她三張錄音室作品的曲目串成一場。",
+   "唱到〈Breakfast on the Morning Tram〉時，那是石黑一雄寫的詞。"
+  ],
+  "sound": "人聲、木管、鋼琴、低音提琴與鼓的五人現場，曲序把美國歌本、法語香頌與 Jobim 的巴西曲交錯排開，中間插進三首石黑一雄與 Jim Tomlinson 合寫的原創。",
+  "keyTracks": [
+   "It Might as Well Be Spring",
+   "Postcard Lovers",
+   "Breakfast on the Morning Tram",
+   "Samba Saravah"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2011,
+   "recorded": 2011,
+   "note": "MB frd 逐字 2011-08-31（數位）、Apple 七市場 1532380298 逐字 releaseDate 2011-08-31、Discogs 法版 3406048 與加拿大版年份欄逐字 2011——維持卡單 2011。錄音 2011-05-30～31，與發行同年。美版與日版晚到 2012，依第 1597 條 year 取首發市場法國的 2011。"
+  },
+  "notes": "⚠ 策展層說錄於 La Cigale 是對的，但沒有日期；本層從加拿大版 22274170 的 notes 取到逐字的「May 30-31 2011」，並補上完整的五人編制與工程人員（法版零售 3406048 的 Discogs 條目 credits 整個是空的，樂手只能從加拿大版取）。⚠ 訂正策展層一處：curatorWhy 逐字寫「〈Que reste-t-il de nos amours ?〉」在曲單裡，實體 13 軌沒有那一首（那是《Raconte-moi…》數位版的第 13 軌）；同樣地〈Coração Vagabundo〉只在數位／Bonus Edition 上。⚠ 本卡與本組第 4 張《Raconte-moi…》同為 Stacey Kent，編制、錄音地點與曲單各不相同，兩張的事實不可互相沾染——唯一合法的交集是軌 13〈Jardin d'Hiver〉兩張都收。⚠ 軌 10〈Breakfast on the Morning Tram〉撞 seed `Stacey Kent —《Breakfast on the Morning Tram》(2007)`，正文必須寫明本張是現場版。⚠ 軌數四層不一致：實體 13 軌／MB 的 US 版 14 軌／數位與 Apple Bonus Edition 16 軌／已退的巴西雙碟 21 軌。⚠ 紙本 0 命中，正文不可引用榜位或評介。⚠ 封面：Discogs 3406048 primary 圖 https://i.discogs.com/fcLiJJvnr5jHnE-3G0347tsp6lgiTkAUGH2y7wh3Yqk/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MDYw/NDgtMTYyNTM0NDA0/NS0xMjI3LmpwZWc.jpeg"
+ },
+ {
+  "key": "desc2:Trijntje Oosterhuis|Sundays in New York",
+  "artist": "Trijntje Oosterhuis",
+  "album": "Sundays in New York",
+  "facts": [
+   {
+    "f": "盤面 notes 逐字寫「Recorded and Mixed at Capital Studios, Hollywood, CA」——荷蘭歌手飛到好萊塢的 Capitol Studios，與 Clayton-Hamilton Jazz Orchestra 合錄。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "錄音與混音掛在 Al Schmitt 名下；軌 1、2 另由 Tijmen Zinkhaan 在 Shamrock Studio 混，追加的人聲在她自己的 Trijntje's Tuinhuis 錄，Sander van der Heide 在 The Saint Of Sound 做母帶。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "John Clayton 一人掛製作、全部編曲與指揮，還寫了內頁、拍了照，並在終曲〈You and I〉拉弓貝斯。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "十五軌其實是兩組節奏組交替：大樂團那一組（軌 3、6–9、11、13、15）是 Tamir Hendelman 鋼琴、Graham Dechter 吉他、Christoph Luty 低音提琴、Jeff Hamilton 鼓；另一組（軌 1、2、4、5、10、14）換成 Rickey Minor 電貝斯、Teddy Campbell 鼓、Paul Jackson Jr. 吉他與 David Delhomme、Wayne Linsey 的鍵盤。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "管樂席是完整的大樂團編制：小號 Bijon Watson、Sal Cracchiolo、Gilbert Castellanos、Kye Palmer、Scotty Barnhart，長號 George Bohanon、Ira Nepus、Maurice Spears、Ryan Porter，薩克斯風 Jeff Clayton、Keith Fiddmont、Rickey Woodard、Charles Owens、Lee Callet、Adam Schroeder。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "Candy Dulfer 只吹一軌——軌 14〈Everything Has Changed (Instrumental)〉，credit 欄逐字標 `tracks 14`；Frank McComb 唱軌 4 與軌 6 的和聲並在軌 2 掛 featuring，Keith John 只在軌 1。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "開場的〈Everything Has Changed (Imaani's Song)〉是她自己與哥哥 Tjeerd P. Oosterhuis 作曲、與 Sandra St. Victor 共同作詞，全碟唯一的原創，並在軌 14 以純樂器版再出現一次。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "曲單以美國流行與靈魂歌本為主：Ashford & Simpson〈Ain't Nothing Like The Real Thing〉、Curtis Mayfield〈People Get Ready〉、Sam Cooke〈Another Saturday Night〉、Little Willie John 的〈Crying Over You〉、Stevie Wonder〈You and I〉。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "軌 11〈The Best Things in Life Are Free〉的作曲欄逐字是 James Harris III & Terry Lewis 與 Michael Bivins，是 1992 年那首同名歌，不是 1927 年的老標準曲。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "內頁由三個人分寫：John Clayton、製作人 Tommy LiPuma 與她自己。",
+    "src": "https://www.discogs.com/release/4142550"
+   },
+   {
+    "f": "荷蘭零售版 2011 年 3 月 10 日發行，廠牌欄逐字 Blue Note、目錄號 50999 0714592 6；在那之前，荷蘭報紙《Algemeen Dagblad》已在 1 月 15 日隨報附送一張 10 軌的版本。",
+    "src": "https://www.discogs.com/release/2652868"
+   },
+   {
+    "f": "日版與巴西版的掛名欄改用她的英語盤藝名，逐字印作 `Traincha With The Clayton-Hamilton Jazz Orchestra`。",
+    "src": "https://www.discogs.com/release/10861228"
+   }
+  ],
+  "hookCandidates": [
+   "Capitol Studios 的控台後面坐著 Al Schmitt，台前是 Clayton-Hamilton 的整個大樂團。",
+   "十五軌裡有六軌偷偷換掉了節奏組，大樂團退到後面。"
+  ],
+  "sound": "大樂團編制唱美國流行與靈魂歌本，John Clayton 的編曲把管樂堆起來；但十五軌裡有六軌換上電貝斯、鍵盤與節奏吉他，靠近節奏藍調的作法，兩種編制交錯排列。",
+  "keyTracks": [
+   "Everything Has Changed (Imaani's Song)",
+   "People Get Ready",
+   "Crying Over You (In Remembrance of Little Willie John)",
+   "You and I"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2011,
+   "recorded": null,
+   "note": "MB frd 逐字 2011-01-15，但那是荷蘭報紙贈碟版（MB 0ae96c30 的 status 逐字 Promotion、10 軌）。零售首發是 MB e4cceeae 的 2011-03-10 NL、15 軌。Discogs 荷版 4142550 年份欄逐字 2011、Apple 712255837 的 releaseDate 逐字 2011-01-01（年初佔位日，不可引用月日）。維持卡單 2011；正文若要寫街頭日，用 2011-03-10。"
+  },
+  "notes": "⚠ ⚠ 訂正策展層三處作者歸屬（curatorWhy 把演唱者當成作者）：〈Ain't Nothing Like the Real Thing〉的 Written-By 欄逐字是 Ashford & Simpson（Marvin Gaye 與 Tammi Terrell 是唱的人）；〈Try a Little Tenderness〉逐字是 Harry Woods、James Campbell 與 Reginald Connelly（Otis Redding 是唱的人）；〈Here You Come Again〉逐字是 Mann And Weil（Dolly Parton 是唱的人）。正文寫「翻自某某」時要用演唱者、寫「某某寫的」時要用作者，不可混用。⚠ 策展層漏了錄音／混音的 Al Schmitt，以及「十五軌其實有兩組節奏組」這個最能寫進正文的結構；本層補上，逐軌軌號都來自 Discogs 4142550 的 credit 欄。⚠ 掛名判裸名 `Trijntje Oosterhuis`（第 1700 條（四）＋第 1711 條）；`Traincha` 是她的英語盤藝名，日版與巴西版用的就是那一形，正文提及時要說明是同一人。⚠ 軌 15〈You and I〉撞 seed `Teddy Pendergrass —《You and I》(1997)`，但本張這首的作曲欄逐字是 Stevie Wonder，兩者無關。⚠ Apple 的 ℗ 欄寫 Universal Music B.V.，那是 2013 年後的回填，不可據以寫廠牌。⚠ 紙本 0 命中，正文不可引用榜位或評介。⚠ 封面：Discogs 4142550 primary 圖 https://i.discogs.com/rG1vmnspyv4kLsnaQEDnRb4Rd6GBN8w0i7Ox8TuZIb8/rs:fit/g:sm/q:90/h:534/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNDI1/NTAtMTM1Njc0MDkw/Ni0xNDk4LmpwZWc.jpeg"
+ },
+ {
+  "key": "desc2:Götz Alsmann|In Paris.",
+  "artist": "Götz Alsmann",
+  "album": "In Paris.",
+  "facts": [
+   {
+    "f": "盤面 notes 只有一句德文，逐字「Aufgenommen in Paris im April 2011」——2011 年 4 月在巴黎錄的，地點欄逐字 Studios Ferber。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "製作是法國人 Régis Ceccarelli，Jean-Pierre Sluys 錄音並與 Ceccarelli 共同混音，Jens Müller-Koslowski 在 Railroad Tracks 做母帶。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "Götz Alsmann 一個人的 credit 欄就佔八種樂器，逐字 `Vocals, Piano, Accordion, Organ, Banjo, Ukulele, Guitar, Mandolin`。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "其餘四人各自也一人多工：Altfrid M. Sicking 的顫音琴、木琴、馬林巴、鐘琴、鈴與小號，Michael Müller 電貝斯，Rudi Marhold 鼓與打擊，Markus Paßlick 康加、邦哥與打擊。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "十五軌全部唱德語，曲子卻幾乎全是法國香頌：Charles Trenet 佔三軌（〈Bumm〉〈Das Meer〉〈Du, du gehst an mir vorbei〉）、Serge Gainsbourg 兩軌（〈Die verlorenen Lieben〉〈Der Wolf tanzt Cha-Cha-Cha〉）、Charles Aznavour 一軌（〈Du lässt dich geh'n〉）。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "另外三首法國源頭分別是 Henri Salvador 作曲的〈Der Junge im Boot〉、Joseph Kosma 作曲加 Jacques Prévert 作詞的〈Der Schleier fiel〉，以及 Gilbert Bécaud 作曲的〈Was wird aus mir〉。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "Alsmann 自己填了三軌的德語詞：〈Die verlorenen Lieben〉〈Liebe mich〉〈Der Junge im Boot〉。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "軌 12〈Die Schlittschuhläufer〉是十九世紀作曲家 Emil Waldteufel 的圓舞曲，credit 欄逐字把改編掛在 Götz Alsmann 名下，也是全碟唯一的純器樂改編。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "Discogs 的 genre 欄逐字 `Jazz, Pop`、style 欄逐字 `Chanson`；最長的一軌是五分五十七秒的〈Du lässt dich geh'n〉，最短的〈Die Schlittschuhläufer〉兩分十七秒。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "℗ 欄逐字寫「The Copyright in this sound recording is owned by Roof Music GmbH under exclusive license to EMI Music Germany GmbH & Co. KG」——母帶權在他長年合作的德國廠牌 Roof Music，Blue Note 是授權方。",
+    "src": "https://www.discogs.com/release/5802260"
+   },
+   {
+    "f": "歐版 CD 的廠牌欄兩格逐字是 EMI 與 Blue Note、共用同一個目錄號 50999 6 79125 2 0；MB 的 release-group first-release-date 逐字 2011-10-21。",
+    "src": "https://musicbrainz.org/release-group/1eb5735e-dd7d-4a18-883b-cc546a0bcbda"
+   }
+  ],
+  "hookCandidates": [
+   "十五首德語歌，源頭幾乎全在巴黎：Trenet、Gainsbourg、Aznavour、Bécaud。",
+   "一個人唱歌，另外還彈鋼琴、手風琴、管風琴、班鳩、烏克麗麗、吉他與曼陀林。"
+  ],
+  "sound": "五個人、一堆樂器：顫音琴與木琴敲在前景，手風琴與管風琴補中段，電貝斯與康加把節奏拉向拉丁；唱的是德語詞，骨架卻是巴黎香頌的旋律。",
+  "keyTracks": [
+   "Bumm",
+   "Du lässt dich geh'n",
+   "Der Wolf tanzt Cha-Cha-Cha",
+   "Die Schlittschuhläufer"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2011,
+   "recorded": 2011,
+   "note": "MB frd 逐字 2011-10-21、Apple de／at／gb 1641679457 逐字 releaseDate 2011-10-21、Discogs 兩筆歐版年份欄逐字 2011、盤面 notes 逐字「im April 2011」錄音——四層同年，維持卡單 2011。"
+  },
+  "notes": "⚠ 盤名末尾的句點：MB RG title 逐字 `In Paris.`、卡單照抄；Discogs 兩筆與 Apple 三市場逐字都是 `In Paris`（無句點）。本稿的 album 欄與卡單逐字一致。⚠ 軌 10 的盤面標題中間是 U+2010（`Der Wolf tanzt Cha‐Cha‐Cha`）、軌 4 帶 U+2019（`Du lässt dich geh’n`），本稿一律改寫成 ASCII 形，下游照本稿即可。⚠ 補策展層未提的三處：錄音室是 Studios Ferber（另有 Studio Badabing 參與錄音與混音）、軌 12 是 Emil Waldteufel 的圓舞曲改編、Alsmann 自己填了三軌的德語詞。⚠ 策展層說〈Der Junge im Boot〉是原創之一，實際上 Discogs 的 Music By 欄逐字是 Henri Salvador，Alsmann 只填德語詞。⚠ 紙本 0 命中，正文不可引用榜位或評介。⚠ 本卡與池中他的前三張（《Mein Geheimnis》2007、《Mein Geheimnis (Live)》2008、《Engel oder Teufel》2009）是同一位藝人，敘事不要重複。⚠ 封面：Discogs 5802260 primary 圖 https://i.discogs.com/AucTS33pMrkZcbbua7vNXJ1a4i4hLKS3lq57X1ODcHE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4MDIy/NjAtMTY5MDgwMzI2/Ny00MDkzLmpwZWc.jpeg"
+ },
+ {
+  "key": "desc2:Willie Nelson & Wynton Marsalis|Here We Go Again: Celebrating the Genius of Ray Charles",
+  "artist": "Willie Nelson & Wynton Marsalis",
+  "album": "Here We Go Again: Celebrating the Genius of Ray Charles",
+  "facts": [
+   {
+    "f": "盤面 notes 逐字寫「Recorded live at Rose Theater, Frederick P. Rose Hall, February 9th and 10th 2009.」——兩晚在林肯中心的實況，隔了兩年才發行。",
+    "src": "https://www.discogs.com/release/2843478"
+   },
+   {
+    "f": "台上七個人：Willie Nelson 唱並彈吉他、Wynton Marsalis 唱並吹小號、Norah Jones 人聲、Walter Blanding 次中音薩克斯風兼唱、Dan Nimmer 鋼琴、Ali Jackson 鼓與打擊、Mickey Raphael 口琴。",
+    "src": "https://www.discogs.com/release/2843478"
+   },
+   {
+    "f": "十二軌全部是 Ray Charles 唱紅的曲目：〈Hallelujah I Love Her So〉〈Unchain My Heart〉〈Hit the Road Jack〉〈Busted〉〈What'd I Say〉，以及他跨進鄉村歌本那一路的〈Cryin' Time〉〈I'm Moving On〉〈I Love You So Much (It Hurts)〉與標題曲〈Here We Go Again〉。",
+    "src": "https://www.discogs.com/release/2843478"
+   },
+   {
+    "f": "最長的一軌是七分四十五秒的〈Hit the Road Jack〉，最短的是兩分五十三秒的〈I Love You So Much (It Hurts)〉。",
+    "src": "https://www.discogs.com/release/2843478"
+   },
+   {
+    "f": "製作由 Jeff Jones 與 Jazz at Lincoln Center 共同掛名，Jones 並負責混音與母帶，Mark Rothbaum 掛執行製作，Rob Macomber 與 Saundra Palmer-Grassi 錄音。",
+    "src": "https://www.discogs.com/release/2843478"
+   },
+   {
+    "f": "MB 的 release-group 把本碟的 secondary-types 逐字標成 `[\"Live\"]`，artist-credit 逐字是 `Willie Nelson & Wynton Marsalis featuring Norah Jones`。",
+    "src": "https://musicbrainz.org/release-group/15d1029c-25b0-47f9-b105-b540cfc9aeca"
+   },
+   {
+    "f": "Apple 的數位版多收一軌〈You Don't Know Me〉，十三軌裡有六軌的曲名後面逐字加了 `[feat. Norah Jones]`——〈Come Rain or Come Shine〉〈Cryin' Time〉〈Hit the Road Jack〉〈Here We Go Again〉〈Makin' Whoopee〉〈What'd I Say〉與〈You Don't Know Me〉。",
+    "src": "https://itunes.apple.com/lookup?id=716160282&country=us&entity=song"
+   },
+   {
+    "f": "這是 Willie Nelson 與 Wynton Marsalis 在同一個舞台上的第二張碟，前一張是 2008 年的《Two Men With the Blues》。",
+    "src": "https://www.discogs.com/release/2843478"
+   },
+   {
+    "f": "2011 年 4 月 16 日出刊的 Billboard 第 43 頁 Top Jazz Albums 上，本碟逐字印作 `HERE WE GO AGAIN BLUE NOTE 96388/BLG`，掛名欄逐字帶 `FT. NORAH JONES`；同期第 3 頁的 Over the Counter 欄把它列為 Traditional Jazz 榜冠軍。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2011/BB-2011-04-16.pdf"
+   },
+   {
+    "f": "它在 Top Jazz Albums 上一路待到 9 月；2011 年 12 月 17 日出刊的年終榜第 96 頁逐字把它排在第 13 名，標示逐字「HERE WE GO AGAIN: CELEBRATING THE GENIUS OF RAY CHARLES｜Willie Nelson & Wynton Marsalis Feat. Norah Jones｜Blue Note」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2011/BB-2011-12-17.pdf"
+   },
+   {
+    "f": "美版 CD 的廠牌與目錄號逐字 Blue Note 509990 96388 2 2，released 欄逐字 2011-03-29，壓片在 Sony DADC 的 Terre Haute 廠。",
+    "src": "https://www.discogs.com/release/2843478"
+   }
+  ],
+  "hookCandidates": [
+   "2009 年林肯中心的兩個晚上，一把鄉村吉他、一支古典訓練出來的小號，唱的全是 Ray Charles。",
+   "十二軌裡有一半是 Norah Jones 一起唱的。"
+  ],
+  "sound": "現場錄音，鄉村嗓音與大樂團式小號在同一個麥克風前對接；節奏組是爵士五重奏的配置，口琴補上藍調的一層，曲目從節奏藍調名曲走到 Ray Charles 那批鄉村翻唱。",
+  "keyTracks": [
+   "Hit the Road Jack",
+   "Cryin' Time",
+   "Here We Go Again",
+   "What'd I Say"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2011,
+   "recorded": 2009,
+   "note": "Discogs 美版 2843478 released 欄逐字 2011-03-29、Apple us 716160282 逐字 releaseDate 2011-03-29（逐日相符）、MB frd 逐字 2011-03-28、紙本 BB-2011-04-16 首度上榜——四層同年，維持卡單 2011。⚠ 錄音是 2009-02-09／10，與發行差兩年，正文一律不可把錄音年寫成發行年（第 1550 條）。Discogs 台版 35359198 的年份欄寫 2009，那是抄錄音年，不採。"
+  },
+  "notes": "⚠ ⚠ 固定試聽覆核（本層的第一項交付）：`batch-progress/c162/apple-candidates.md` 列的六個候選裡，**`716160282` 命中**。三條判準逐一：(1) 盤名——Apple 逐字《Here We Go Again: Celebrating the Genius of Ray Charles (feat. Norah Jones)》，與卡單盤名逐字相同、只多 `(feat. Norah Jones)` 尾綴（判準明文允許）；(2) 年份——Apple `releaseDate` 逐字 2011-03-29，與 Discogs 美版 2843478 的 released 欄逐字同一天；(3) 軌數——Apple 13 軌，前 12 軌的曲名與曲序與美版實體 12 軌逐字、逐序完全相同，第 13 軌是〈You Don't Know Me (Live)〉，正對應 MB 同一個 RG 裡的數位筆 14fd5f81（2011-03-29 XW Digital Media 13 軌）。另加兩項旁證：Apple 的 artistName 逐字 `Willie Nelson & Wynton Marsalis`、copyright 逐字 `℗ 2011 Blue Note Records`。⚠ 其餘五個候選全部不過：`469547290`《Selections from Swingin' Into The 21st》、`495069759`《THE MUSIC OF AMERICA: Inventing Jazz》、`1443547407`《Vitoria Suite》、`446932489`《Live In Europe, 1992》、`679138542`《Swingin' Into The 21st》154 軌——五個盤名都對不上。⚠ ⚠ 撞陳列最重的一處：整張是 Ray Charles 致敬盤，軌 12〈What'd I Say〉逐字撞 seed `Ray Charles —《What'd I Say》(1959)`，而〈Cryin' Time〉〈I'm Moving On〉〈Here We Go Again〉是 apex hall 卡 `Ray Charles —《Modern Sounds in Country and Western Music》(1962)` 及其續集的曲目——正文必須另闢說法，不得重複那張王牌卡的論述。⚠ 掛名沿用池中 `Willie Nelson & Wynton Marsalis`，不採 MB／Discogs 的 featuring 長形（Apple 三市場把客座名放在盤名欄）。⚠ Discogs 的軌 11 盤面逐字〈I Love You So Much (It Hurts)〉，MB 作〈I Love You So Much It Hurts〉，本稿取 Discogs 盤面形。⚠ 軌名帶 U+2019 五處，本稿一律用 ASCII 直撇。⚠ 封面：Discogs 2843478 primary 圖 https://i.discogs.com/C-357aULB0CxSqwW7NTYnEZHZ_pnJ9lMRFRhQCzysLU/rs:fit/g:sm/q:90/h:360/w:360/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDM0/NzgtMTMwODg0ODI5/MC5qcGVn.jpeg（只有 360px，Apple 716160282 的 600x600 較佳）。"
+ },
+ {
+  "key": "desc2:Joe Lovano Us Five|Bird Songs",
+  "artist": "Joe Lovano Us Five",
+  "album": "Bird Songs",
+  "facts": [
+   {
+    "f": "十一軌裡有九軌的作曲欄逐字掛 Charlie Parker，整張是 Parker 曲目的重新編排；例外是軌 5〈Lover Man〉（Jimmy Davis、Roger Ramirez、Jimmy Sherman）與軌 6〈Birdyard〉（Joe Lovano 自己寫的一分四十七秒短曲）。",
+    "src": "https://www.discogs.com/release/2769968"
+   },
+   {
+    "f": "Us Five 的編制有兩位鼓手同時在場：Otis Brown III 與 Francisco Mela 都掛 `Drums, Percussion`，加上 James Weidman 的鋼琴與 Esperanza Spalding 的低音提琴。",
+    "src": "https://www.discogs.com/release/2769968"
+   },
+   {
+    "f": "Lovano 一個人在這張碟上吹四種薩克斯風，credit 欄逐字 `Tenor Saxophone, Soprano Saxophone [Mezzo Soprano], Alto Saxophone [Straight Alto], Soprano Saxophone [Aulochrome]`——aulochrome 是一種雙管高音薩克斯風。",
+    "src": "https://www.discogs.com/release/2769968"
+   },
+   {
+    "f": "軌 8〈Blues Collage〉一分五十二秒，盤面逐字加註它串了三首 Parker 的曲子：〈Carving the Bird〉〈Bird Feathers〉與〈Bloomdido〉。",
+    "src": "https://www.discogs.com/release/2769968"
+   },
+   {
+    "f": "十一軌的長度落差極大：最長的〈Yardbird Suite〉十一分五十七秒、〈Lover Man〉九分三秒、〈Dewey Square〉八分二十五秒，最短的〈Birdyard〉只有一分四十七秒。",
+    "src": "https://www.discogs.com/release/2769968"
+   },
+   {
+    "f": "盤面 notes 逐字寫「Recorded on September 7-8, 2010 at Sear Sound, New York, NY／Mixed at Sear Sound／Mastered at Sterling Sound」——錄音與混音同一間，母帶在 Sterling Sound。",
+    "src": "https://www.discogs.com/release/2769968"
+   },
+   {
+    "f": "Lovano 自任製作並與錄音師 James Farber 共同混音，Greg Calbi 做母帶，Eli Wolf 掛 A&R。",
+    "src": "https://www.discogs.com/release/2769968"
+   },
+   {
+    "f": "2011 年 1 月 29 日出刊的 Billboard 第 49 頁 Top Jazz Albums 上，本碟逐字印作 `BIRD SONGS BLUE NOTE 05861 /BLG`；2 月 5 日與 2 月 19 日兩期續榜，其中一期的掛名欄逐字寫成 `JOE LOVANO /US FIVE`。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2011/BB-2011-01-29.pdf"
+   },
+   {
+    "f": "2012 年 1 月 7 日出刊的 Billboard 第 45 頁的年度樂評選逐字列出「Bird Songs｜Joe Lovano/Us Five｜Blue Note」。",
+    "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2012/BB-2012-01-07.pdf"
+   },
+   {
+    "f": "美版 CD 的廠牌與目錄號逐字 Blue Note 509999 05861 2 5，℗© 欄逐字 Blue Note Records，內頁照片由 Jimmy Katz 拍攝。",
+    "src": "https://www.discogs.com/release/2769968"
+   },
+   {
+    "f": "這是 Us Five 這個團的第二張碟，前一張是 2009 年的《Folk Art》。",
+    "src": "https://musicbrainz.org/release-group/5dd5f802-57f2-4061-a848-a7e3e8b2ae81"
+   }
+  ],
+  "hookCandidates": [
+   "兩套鼓同時在場，一個人吹四種薩克斯風，唱的全是 Charlie Parker 的曲子。",
+   "〈Blues Collage〉只有一分五十二秒，裡面塞了三首 Parker。"
+  ],
+  "sound": "兩位鼓手、一台鋼琴、一把低音提琴撐開節奏層，Lovano 在四種薩克斯風之間換管；Parker 的曲子被拆開重排，長短差到十分鐘，不走比波普的定速。",
+  "keyTracks": [
+   "Donna Lee",
+   "Ko Ko",
+   "Blues Collage",
+   "Yardbird Suite"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2011,
+   "recorded": 2010,
+   "note": "Discogs 四筆條目年份欄逐字全是 2011、紙本 BB-2011-01-29 已在榜上、MB frd 逐字 2011-02-28（那是英國版，比美國街頭日晚一個月）——維持卡單 2011。⚠ Apple us／gb／jp 715473977 的 releaseDate 逐字 2010-01-01、℗ 逐字 2010 Blue Note Records，比實體早一整年而且是年初佔位日，不可引用（第 1447／1601 條）。錄音 2010-09-07／08。"
+  },
+  "notes": "⚠ 封面：卡單的 cover 欄是 null。本層撿到兩個可用網址，主線可擇一——Apple us 715473977 的 600x600 https://is1-ssl.mzstatic.com/image/thumb/Music/v4/f7/90/1e/f7901e45-2e85-5630-b061-8073593cad2d/05099990586156.jpg/600x600bb.jpg（數位母版、畫質較佳），Discogs 2769968 primary https://i.discogs.com/fQae_ZlnDY5TwhUQqu03xJvOfGPMUOUNnLwOjLkdRS8/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3Njk5/NjgtMTM2ODI3MDAx/Ny03MzgzLmpwZWc.jpeg。⚠ 撞陳列要特別標：整張是 Charlie Parker 致敬盤，〈Ko Ko〉〈Donna Lee〉〈Moose the Mooche〉〈Dexterity〉〈Yardbird Suite〉〈Barbados〉〈Dewey Square〉的原錄音幾乎都在池中那七張 Charlie Parker 卡裡，正文必須寫明本張是 2010 年的重新編曲。⚠ Discogs 把 `Charlie Parker` 掛在 `Written-By`，那是作曲者、不是演出者。⚠ 策展層說〈Donna Lee〉拆成慢板、〈Ko Ko〉改成集體即興——本層在 Discogs、MB 與兩期 Billboard 都找不到逐字依據，未收成 fact，正文請勿寫成盤面事實。⚠ Esperanza Spalding 同時在本組第 3 張 Lionel Loueke《Mwaliko》上，兩張卡的敘事不要互相沾染。⚠ MB 的 GB 筆 fc49d50b 是 12 軌、實體零售 11 軌。"
+ },
+ {
+  "key": "desc2:Jukka Perko|Avara",
+  "artist": "Jukka Perko",
+  "album": "Avara",
+  "facts": [
+   {
+    "f": "盤面 notes 逐字寫「äänitetty Turussa Hirvensalon Taidekappelissa 8.7.2011」——2011 年 7 月 8 日一天錄完，地點是圖爾庫 Hirvensalo 的藝術禮拜堂。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "編制只有三個人：Jukka Perko 薩克斯風、Teemu Viinikainen 木吉他、Jarmo Saari 電吉他，三人同時掛 `Performer`。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "八軌的編曲欄逐軌都是 Perko、Viinikainen 與 Saari 三人共同掛名；只有軌 5〈Suojelusenkeli〉多掛一位 Pekka Pohjola。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "盤面 notes 另有一句逐字提醒「Credits for each song also list the Lyrics-credit even if all songs are instrumental versions.」——每一軌都列了作詞人，但整張沒有人聲。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "八軌裡有七軌是芬蘭路德會聖詩，曲名後面逐字標著詩集編號：〈Jo joutui armas aika〉（Suvivirsi, virsi 571）、〈Kun herra hoitaa, paimentaa〉（375）、〈Minä vaivainen, vain mato, matkamies maan〉（622）、〈Kaitse, jeesus, paimen hyvä〉（378）、〈Kosketa minua, henki〉（125）、〈Herraa hyvää kiittäkää〉（332）、〈Oi herra, luoksein jää〉（555）。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "軌 5〈Suojelusenkeli〉不是聖詩，作曲欄逐字是 Pekka Juhani Hannikainen、作詞 Immi Hellen，是芬蘭的兒歌〈Maan korvessa kulkevi lapsosen tie〉。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "三首聖詩的作曲有名有姓：〈Kosketa minua, henki〉是 Ilkka Kuusisto、〈Herraa hyvää kiittäkää〉是 Heinrich Albert、〈Oi herra, luoksein jää〉是 William Henry Monk；其餘四首的作曲欄逐字 Traditional。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "八軌的長度落差很大：最長的〈Minä vaivainen, vain mato, matkamies maan〉八分十一秒、〈Suojelusenkeli〉八分十六秒，最短的〈Oi herra, luoksein jää〉只有一分七秒。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "Perko 自任製作，Timo Kuisma 錄音與混音，Svante Forsbäck 在 Chartmakers 做母帶，內頁由演員 Hannu-Pekka Björkman 撰寫，封面攝影與設計是 Tanja Ahola。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "芬蘭版 CD 的廠牌欄第一格逐字 Blue Note、第二格 EMI，目錄號 50999 956010 2 1，℗© 欄逐字 Oy EMI Finland Ab。",
+    "src": "https://www.discogs.com/release/10811152"
+   },
+   {
+    "f": "MB 的 release-group first-release-date 逐字只有年份 2011，轄下兩筆 release 分別是 2011 年的芬蘭版與 2012 年 3 月 14 日的再發。",
+    "src": "https://musicbrainz.org/release-group/49fce635-d526-4bd3-94cf-20ccb6c3d80c"
+   }
+  ],
+  "hookCandidates": [
+   "一支薩克斯風、兩把吉他，在圖爾庫一座藝術禮拜堂裡一天錄完。",
+   "八首芬蘭聖詩，曲名後面都還留著詩集編號，但沒有人唱。"
+  ],
+  "sound": "薩克斯風、木吉他與電吉他的三人編制，全部是器樂即興；旋律取自芬蘭路德會聖詩與一首兒歌，禮拜堂的殘響是編曲的一部分，八軌從一分多鐘到八分鐘不等。",
+  "keyTracks": [
+   "Jo joutui armas aika (Suvivirsi, virsi 571)",
+   "Minä vaivainen, vain mato, matkamies maan (Virsi 622)",
+   "Suojelusenkeli (Maan korvessa kulkevi lapsosen tie)",
+   "Oi herra, luoksein jää (Virsi 555)"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2011,
+   "recorded": 2011,
+   "note": "Discogs 10811152 released 欄逐字 2011、notes 的錄音日逐字 8.7.2011、℗© 逐字 2011、MB frd 逐字 2011——維持卡單 2011。⚠ Apple fi／se／gb 714164277 的 releaseDate 逐字 2012-01-01、℗ 逐字 2012，對上的是 2012 年的再發／數位上架（MB 8b1484a2 同為 2012-03-14），不是首發。"
+  },
+  "notes": "⚠ ⚠ 推翻策展層一處：curatorRisk 逐字寫「編制資料極薄：Discogs 唯一的條目 credits 欄沒有任何演奏者」，實際上 10811152 的 credits 欄有完整的三人編制（Jukka Perko 薩克斯風、Teemu Viinikainen 木吉他、Jarmo Saari 電吉他，三人另掛 Performer）與逐軌編曲人；coverage 因此判 full，正文可以寫樂手。⚠ 封面：卡單的 cover 欄是 null。本層撿到兩個可用網址——Apple fi 714164277 的 600x600 https://is1-ssl.mzstatic.com/image/thumb/Music/v4/84/c5/b7/84c5b7ed-c1ba-bfce-f181-0d3e0b28930a/05099995601052.jpg/600x600bb.jpg，以及 Discogs 10811152 的圖（該條目只有 secondary、沒有 primary）https://i.discogs.com/O-dtNFd0QJIytzKSMVRRsZCVVbeiCq0TbxTWbcr0cxA/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODEx/MTUyLTE1MDQ3MDAw/NDItODM0MS5qcGVn.jpeg；建議取 Apple。⚠ `Avara` 在 2013 年以後變成他的樂團名（Apple fi 有《Martan ja Rudolfin joulu》2013 與《Laulu keskeneräinen》2019 兩張掛 `Jukka Perko Avara`），本張 2011 年時它還是盤名，掛名欄不可寫成 `Jukka Perko Avara`。⚠ 紙本 0 命中（`perko` 的兩次命中是別人的名字 `RON PERKOV`），正文不可引用榜位或評介。⚠ 軌 6 的盤面逐字是〈Kosketa Minua, Henki〉（中間有逗號），MB 作〈Kosketa minua henki〉；本稿取 Discogs 盤面形。"
  }
 ]
