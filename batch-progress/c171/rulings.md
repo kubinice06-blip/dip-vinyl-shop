@@ -1299,3 +1299,163 @@ Smith 生於 **1967-04-27**；錄音 1988-09-07／09 時確為二十一歲，但
 **唯一一句需要更正的是派工信的第四節表格**：`1989 | Tommy Smith《Step By Step》`那一列寫「**與 1992《Paris》同一人；LP 6 軌／CD 8 軌（策展層查到的版本差）**」——**版本差正確，但同列沒有提醒「策展層把他的 Blue Note 盤數寫成三張」這個錯**（見第 3082 條）。派工信是照 `prop-a.json` 轉述的，錯在策展層不在派工信。
 
 **本信其餘每一句本層都對過，無一句與 `research-base.md` 開頭那三處雲端例外、或與 `CURATION-BRIEF-bluenote-post1985.md` 附錄二牴觸。**
+
+---
+
+# c-171 **b 組研究層**（10 張，1997–2019）裁定，編號區間 3171–3220，本節用到 3180
+
+## 第 3171 條（**總表**）：**b 組 10 張全數交件，113 條 `facts`、6 個來源網域**
+
+| 卡 | 年 | `facts` | 來源網域 |
+|---|---:|---:|---|
+| `Gonzalo Rubalcaba《The Trio》` | 1997 | 10 | discogs／bluenote.com／en.wiki |
+| `Prysm《Time》` | 1999 | 11 | discogs／fr.wiki |
+| `Ron Carter《Stardust》` | 2001 | 11 | discogs／en.wiki／bluenote.com |
+| `Stefano Di Battista《Round About Roma》` | 2002 | 10 | discogs／fr.wiki／it.wiki／en.wiki |
+| `Jason Moran《The Bandwagon》` | 2003 | 11 | discogs／en.wiki |
+| `Bill Charlap & Sandy Stewart《Love Is Here to Stay》` | 2005 | 12 | discogs／en.wiki |
+| `Ruben Hein《Live》` | 2011 | 12 | nl.wiki／discogs |
+| `James Francies《Flight》` | 2018 | 12 | discogs／en.wiki／bluenote.com |
+| `Joel Ross《KingMaker》` | 2019 | 12 | discogs／en.wiki／bluenote.com |
+| `Kendrick Scott Oracle《A Wall Becomes a Bridge》` | 2019 | 12 | bluenote.com／discogs／en.wiki |
+
+**合計 113 條**，網域分佈 `discogs` 48／`en.wikipedia` 27／`bluenote.com` 19／`fr.wikipedia` 9／`nl.wikipedia` 8／`it.wikipedia` 2。
+**十張全部 `status: "full"`，沒有一張湊不滿 8 條**，`hookCandidates` 每張 2 條。
+**每一張都至少有兩個相異的 https 網域**（manifest gate 的硬性要求，本層逐張驗過）。
+
+⚠ **派工信預期「查證難度高於同年代的正規批」，本組實測不成立**——見第 3179 條。
+
+## 第 3172 條（**推翻 `slice.json`，兩筆；而且 MB 自己早就標對了**）：**兩張現場盤的 `live` 欄都該是 `true`**
+
+派工信已指出 slice 的 `live` 欄兩張都寫 `false`。本層另查到一件更要緊的事：**MB 端本身就是對的，錯的是 slice 的取值管線**。
+
+| 卡 | MB RG | `secondary-types` 逐字 | 盤面／來源佐證 |
+|---|---|---|---|
+| `Jason Moran《The Bandwagon》` | `77690c69` | **`["Live"]`** | Discogs 1872228 `notes` 逐字 `Recorded November 29-30, 2002 at The Village Vanguard.`；英文維基 `Jason Moran (musician)` 逐字 `a live trio album, recorded at New York's Village Vanguard` |
+| `Ruben Hein《Live》` | `d00a707f` | **`["Live"]`** | Discogs 4604332 `companies` 逐字 `Recorded At: Theater Carré`；荷文維基逐字 `Van dit concert werd een livealbum uitgegeven` |
+
+**→ 兩張的 MB release-group 都有 `secondary-types: ["Live"]`，slice 卻寫 `live: false`。**
+**裁定**：兩張一律 `live: true`。**並建議主線回頭看切 slice 的腳本有沒有讀 `secondary-types`**——
+這不是資料缺失（第 1827-B 條那一類），是取值漏欄，成本很低但會跨批復發。
+
+## 第 3173 條（**推翻策展層／Discogs，第 1 處**）：**`Kendrick Scott Oracle《A Wall Becomes a Bridge》` 第 2 軌叫〈Mocean〉，不是〈Moccan〉**
+
+Discogs 14078627 的 `tracklist` 第 2 列逐字 `Moccan`。**Blue Note 官方新聞稿的曲目表逐字是 `>>>>>>>>>>>Mocean`**，
+先行單曲的標題也逐字寫 `Mocean`（`https://www.bluenote.com/kendrick-scott-oracle-to-release-inspiring-new-album-a-wall-becomes-a-bridge-out-april-5/`）。
+**判定：Discogs 誤植，採官方的 `Mocean`。** 本層的 `facts`／`keyTracks` 都已改。
+⚠ **同時釘死一件版面的事**：本作十二首曲名在官方曲目表上**每首前面都帶一串大於符號**（十二個遞減到一個），
+**那是作品結構的一部分，但卡片正文不要逐字照搬**（會被字元檢查與版面吃掉）；本層已把它寫成敘述形式。
+
+## 第 3174 條（**覆核派工信對 `Bill Charlap & Sandy Stewart` 掛名的三句話：逐字全部成立**）
+
+| 派工信的話 | Discogs 逐字 | 判定 |
+|---|---|---|
+| 「Discogs 條目逐字是 `Sandy Stewart (2), Bill Charlap`（逗號，不是 `&`）」 | 零售條目 8390356／13840437／5992975 的 `artists` 欄逐字皆為 `Sandy Stewart (2)` ＋ `Bill Charlap`，`join` 欄逐字 `,` | ✔ |
+| 「帶 `&` 的是宣傳盤且順序相反」 | **10351326**（US、`format` 逐字 `CD, Album, Copy Protected, Promo`、catno `7243 5 60340 2 0V`）逐字 `Bill Charlap & Sandy Stewart (2)` | ✔ **順序與卡單相同**（Charlap 在前），與零售條目相反 |
+| 「掛名是 MB 的兩實體串接（joinphrase 逐字 ` & `），本批新立」 | 本層未改動掛名，沿用卡單 | ✔ |
+
+**裁定**：掛名維持 `Bill Charlap & Sandy Stewart`。`(2)` 是 Discogs 的同名消歧編號，**不進任何資料欄**。
+
+⚠ **同時記一條下游會用到的**：**美版 8390356 的 `extraartists` 只有兩行**（Piano／Vocals），
+**沒有逐軌寫作者、沒有錄音日期、沒有製作人**；這些全在**歐版 13840437** 的整筆裡
+（`notes` 逐字 `Recorded on October 23 & 24, 2004 at Sound on Sound Studio A, New York.`，
+十一軌逐軌 `Written-By`，製作 `Joel Moss`，內頁解說 `Barbara Carroll`）。
+**這是第 1678／1821-B 條「策展層寫查不到就先換一個版本條目」的一個乾淨正例**，本組兩次靠它救回整張卡的主故事（另一次見第 3175 條）。
+
+## 第 3175 條（**補策展層完全沒查到的：`Joel Ross《KingMaker》` 錄於 2016 年 12 月，壓了兩年多才發**）
+
+`prop-b.json` 與 Discogs 13619280、Blue Note 官方稿**三邊都只寫 2019 年發行**，沒有一筆提錄音年。
+**英文維基 `Joel Ross (musician)` 條目逐字**：`Ross made his recording debut as a leader on his album KingMaker for in December 2016.
+It was released on Blue Note Records in 2019, after Ross was brought to the attention of label executive Don Was by his son, Sol Was.`
+（原句的 `for in` 是該條目的筆誤，語意明確。）
+
+**裁定**：**`year` 維持 2019**（首發年，依 `research-base.md` 的通則），**錄音年 2016 年 12 月寫進 `facts`**。
+這一條是本張最強的切角——**同一張碟錄好之後在抽屜裡放了兩年半，出得成是因為廠牌社長的兒子跟父親提了一句**——
+**策展層與廠牌官網都沒有它**，⚠ **再一次驗證派工信第五節那句「廠牌官網不是年份的一手依據」。**
+
+⚠ **另記一個下游會踩的**：**同一批的 `James Francies《Flight》`（2018）裡彈鐵琴的就是 Joel Ross**，
+**`Jeremy Dutton` 同時是這兩張的鼓手**，**`Derrick Hodge` 同時是《Flight》與《A Wall Becomes a Bridge》的製作人**。
+**三條人脈在本組十張裡重疊**，鉤子層做同批反同構時要先看過這一條，不要三張都從「休士頓／Glasper 圈的人脈」切。
+
+## 第 3176 條（**覆核策展層對 `Gonzalo Rubalcaba《The Trio》` 的年份改判：成立，1997 不動；另退掉一個英文維基給的版本**）
+
+策展層把 1998 改判 1997。**本層獨立重查，改判成立**：Discogs 11564432 的 `released` 欄逐字 `1997-12-22`、
+`country` 逐字 `Japan`、`labels` 逐字 `Somethin' Else / TOCJ-5591`、barcode `4988006736207`；
+歐版 8259286 的 `released` 只有年份 `1998`、`labels` 第一格逐字 `Blue Note / 4944422`；
+**兩版七軌的曲名、時長（10:04／10:28／8:05／9:23／9:21／13:32／8:03）逐字完全相同。**
+
+⚠ **本層另退掉一筆策展層沒碰、但下游很可能撿到的**：**英文維基 `Gonzalo Rubalcaba` 的作品表另列一行 `The Trio (Angel, 2005)`。**
+`artist=Gonzalo Rubalcaba&release_title=The Trio` 的 Discogs 全掃描回**六筆條目**（日版零售、日版宣傳、歐版兩筆、俄版兩筆），
+**沒有任何 Angel 版**。**無法交叉驗證 → 不寫進 `facts`**（依 `research-base.md`「只有單一來源支撐的年份請交叉驗證再採用」）。
+俄版 23220110 與 9342983 的 `format` 欄逐字 `Unofficial Release`，維持策展層的不採。
+
+## 第 3177 條（**推翻策展層，第 2 處；以及本組唯一一次逐軌 credits 比策展層細**）：**`Prysm《Time》` 十軌的寫作權不是「三人共有」，是逐軌分派＋最後一軌合寫**
+
+`prop-b.json` 的 `why` 逐字寫「十軌全部由三人自己寫（Discogs 930303 的 `Composed By` 欄逐字只列這三人）」。
+**敘述沒錯，但停在摘要層**。整筆 `extraartists` 展開後是：
+
+| 寫作者 | 軌 |
+|---|---|
+| Pierre de Bethmann | **1、6、8**、10 |
+| Christophe Wallemme | **2、4、7**、10 |
+| Benjamin Henocq | **3、5、9**、10 |
+
+**→ 九軌各歸一人、各三軌，第 10 軌〈Scratch...〉三人同時掛名。** 這個「一人三軌、最後一軌合寫」的分配本身才是可寫的事實。
+⚠ **這正是附錄二第 3 點的形狀**：`search` 摘要的 `extraartists` 只回前四筆，**本筆整筆有 13 行、寫作權在第 2 到 4 行與第 8 行**，
+**只看摘要會完全看不到這個分配。**
+
+## 第 3178 條（**`Ron Carter《Stardust》` 逐軌編制兩版本打架，採日版＋維基那一組**）
+
+| 來源 | 鐵琴 Joe Locke | 次中音 Benny Golson | 鼓 Lenny White |
+|---|---|---|---|
+| Discogs **9780419**（US、Blue Note） | 逐字 `[1, 3 to 5, 7]` | 逐字 `[1 to 5]` | 逐字 `[1 to 7]` |
+| Discogs **11783920**（JP 宣傳盤、Somethin' Else `TOCJ-68053`） | 逐字 `except 2, 7, 8` ＝ **1、3、4、5、6** | 逐字 `except 6 to 8` ＝ 1–5 | 逐字 `except 8` ＝ 1–7 |
+| 英文維基 `Stardust (Ron Carter album)` | 逐字 `tracks 1, 3–6` | 逐字 `tracks 1–5` | 逐字 `tracks 1–7` |
+
+**兩票對一票，採日版與維基的 `1、3–6`。** 判準第 1 條（有先例：逐軌 credits 以最完整的那一版為準）與第 2 條（可逆）。
+⚠ **順帶釘死一個切角**：**三份來源一致顯示第 8 軌〈Stardust〉沒有鼓、沒有薩克斯風、也沒有鐵琴**——
+全碟唯一的貝斯＋鋼琴二重奏，3 分 59 秒，而且是壓軸。**策展層沒有提這件事。**
+
+## 第 3179 條（**方法論；更正派工信第二節對本組查證難度的預期**）：**b 組 10 張一張都沒有 `thin`，`bluenote.com` 的命中率反而是本線第二高**
+
+派工信第二節寫「**請預期查證難度高於同年代的正規批**」（理由是 MB `label-info` 缺失與封面／串流的低能見度高度相關，第 1827-B 條）。
+**本組實測不成立**，逐條記下來免得下一棒照著少查：
+
+| 查法 | b 組 10 張的命中 | 對照（附錄二） |
+|---|---|---|
+| **Discogs 整筆逐軌 credits** | **10／10**，48 條 `facts` | c-168 18／18、c-169 a 20／20，一致 |
+| **各國語維基** | **10／10**（en 7 張、fr 3 張、nl 1 張、it 1 張） | c-169 a 13／20，**本組更高** |
+| **`bluenote.com`（wp-json 搜尋＋新聞稿頁）** | **5／10**（Rubalcaba／Ron Carter 靠同一篇悼念文，Francies／Joel Ross／Kendrick Scott 各有自己的新聞稿） | c-168 1／18、c-169 a 2／20，**本組高出一個量級** |
+| `universal-music.co.jp` | **0／10**，未動用（兩張日版盤的品番都能從 Discogs 直接取得，沒有非查不可的欄位） | c-170 實測落空 |
+| 藝人官網 | **0／2 嘗試**（`rubenhein.com` 是 JS 渲染，靜態抓不到文字） | c-166／c-167 也是 0／2、同樣的成因 |
+
+**為什麼跟預期相反**：**`label-info` 缺失影響的是「以廠牌為軸的列舉」，不影響「以藝人為軸的查證」。**
+本組十張裡有五張的藝人在 `bluenote.com` 有專頁級的新聞稿——⚠ **而且分界確實如附錄二所說是出身地不是年代**：
+**美國本部的五張（Rubalcaba 靠日方線、Ron Carter、Francies、Joel Ross、Kendrick Scott）全中，
+歐洲分支的五張（Prysm、Di Battista、Ruben Hein，以及法國線的兩張）`bluenote.com` 全空。**
+**→ 附錄二那句「有沒有專頁的分界是碟的出身地不是年代」，在本組是 5:5 的乾淨對半，建議升格成定律。**
+
+⚠ **另記兩個雲端環境的實測**（與第 3102 條並列）：
+1. **`en.wikipedia.org/w/api.php` 會回 `You are making too many requests to the API.`**（純文字、不是 JSON，直接 `JSON.parse` 會炸）。
+   **間隔拉到 5 秒、並對這個字串做重試就穩了**；本組之後零失敗。**這不是 403、不是封鎖，別當成查無。**
+2. **`api.discogs.com`（API 網域）本組 20 餘次呼叫 0 次 403**——**第 3102 條說的 403 是 `www.discogs.com` 的網頁端**，兩者要分開講。
+3. **`itunes.apple.com` 本組未動用**（店面覆蓋率是探測層的事，不是研究層的），**故無法覆核附錄二第 2 點的 403 是否仍在。**
+
+## 第 3180 條（**派工信與 `research-base.md`／既有裁定的牴觸盤點：一處措辭牴觸、一處預期被實測推翻**）
+
+| # | 派工信 | 正本／實測 | 處理 |
+|---:|---|---|---|
+| 1 | 第五節「**`itunes.apple.com/search` 曾出現 403（c-170 那批 0 次，狀態會變）**」 | 附錄二第 2 點逐字寫「**`itunes.apple.com/search` 在雲端會回 HTTP 403**（c-171 a 整批的三種店面查法都做不了）」 | **兩處都沒錯，是不同批的實測**；本組未動用店面查法，**無法覆核**。下一棒請以自己那一次的實測為準 |
+| 2 | 第二節「**請預期查證難度高於同年代的正規批**」 | **實測不成立**：10／10 `full`、無一張湊不滿 8 條 | 見第 3179 條，**這是派工信唯一一句被本組實測推翻的話** |
+| 3 | 第一節「**`slice.json` 只有五欄可讀**」 | 本層**全程未讀 `slice.json`**（輸入是卡單＋`prop-b.json`＋`caa.json`／`previews.json` 的既有結論） | 對研究層不適用，無影響（與第 3104 條第 3 列同形） |
+| 4 | 第六節「**`互指?` 不會在 research 階段輸出**」 | ✔ 實測 `node qa-batch.mjs research c171` 的輸出只有 `a 10`／`b 10`／`key 與卡單完全一致`／`全部通過` | 派工信正確 |
+
+**其餘每一句本層都對過**，與 `research-base.md` 開頭那三處雲端例外、與 `CURATION-BRIEF-bluenote-post1985.md` 附錄二**無牴觸**。
+
+⚠ **交件狀態（第 1803-B 條，本線第八次；本次結果與前七次相反，但成因一樣要記）**：
+`desc-tools/batches/research/c171-b.json` 在本層作業中途存過一次**五張**的快照，十張的完整版是後寫的。
+**期間主線另一個工作階段以 `checkpoint: c171 研究 b 中途存檔`（`1a3def0`）把這個檔提交進了 `HEAD`。**
+**本層交件前實測**：`git diff --stat HEAD -- desc-tools/batches/research/c171-b.json` **為空**、
+`git show HEAD:...` 解出來**是 10 筆且與工作區逐字相同** → **這一次 `HEAD` 與工作區一致，沒有發生前七次那種「提交到的是中途快照」。**
+**但規則不變：驗收與合併一律以工作區當下版本為準**，主線仍請在收件時各跑一次上面那兩個指令確認。
+**本層不 `git add`、不 `commit`、不 `push`。**

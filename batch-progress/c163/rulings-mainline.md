@@ -3159,3 +3159,50 @@ b 組倒尺時因此與 a 組的回報差 0.5，**改用腳本判準後 7 格全
    （**本線每一批我都做了，這條只是把它寫成規則**）。
 2. **兩支腳本全過不等於定稿**——**它們驗不到預算。**
 3. **檢查點提交的 commit 訊息一律標明「代理仍在跑」**，且**交件後必須重新 `git add` 並確認 `git diff HEAD` 為空。**
+
+## 第 1835-B 條（c-171 研究 b 驗收）：**10/10 全 `full`，113 條 facts；「稽核補批比較難查」被實測推翻**
+
+`qa-batch research c171` 兩組全部通過、b 組旗標 0、key 與卡單逐字同序、src 全為完整 https。
+facts 每張 10–12 條；網域 discogs 48／en.wikipedia 27／bluenote 19／fr 9／nl 8／it 2。
+
+### ⚠ 我派工信的預期錯了，而且錯在把兩件事混為一談
+
+我寫「**預期查證難度高於同年代的正規批**」（理由是第 1827-B 條）——**實測相反，10／10 全 `full`。**
+**代理給的解釋是對的**：**`label-info` 缺失影響的是「以廠牌為軸的列舉」，不影響「以藝人為軸的查證」。**
+**→ 第 1827-B 條要再收窄一次**：**那條相關性只在「店面／封面」那一層成立**（c-171 a 已指出一半，
+**b 組把另一半也否掉了**）。**文字史料的多寡與 `label-info` 有沒有填無關。**
+真正偏薄的兩張（`Prysm《Time》`／`Ruben Hein《Live》`）**缺的是同一類：樂評與商業成績**，
+與 c-171 a 的 `Paris`／`Jazz, My Romance` 完全同型。
+
+### 「官網覆蓋率的分界是出身地」在本組是乾淨的 5:5
+
+**美國本部五張全中、歐洲／法國／荷蘭分支五張全空**（`bluenote.com` 5／10，**比 c-168 的 1／18、c-169 a 的 2／20 高一個量級**）。
+**三批獨立驗證，這條可以當定律用了。**
+⚠ **新的查法**：**`bluenote.com/wp-json/wp/v2/search?search=<人名>` 比站內 `?s=` 好用**（直接回 JSON 的 title＋url）。
+**`hitoshi-namekata-a-remembrance` 那一篇又餵飽兩張卡**（Rubalcaba 與 Ron Carter 共用 Somethin' Else 這條線）
+——**「關鍵字用製作人人名」第三次生效。**
+
+### 兩個雲端環境實測，要與既有的 403 分開講
+
+1. ⚠ **`en.wikipedia.org/w/api.php` 會回純文字 `You are making too many requests to the API.`**
+   ——**不是 JSON，直接 `JSON.parse` 會炸；不是 403、也不是查無。間隔 5 秒＋針對這個字串重試就零失敗。**
+2. ⚠ **`api.discogs.com` 本組 20 餘次呼叫 0 次 403**——**第 1832-B 條講的 403 是 `www.discogs.com` 的網頁端，兩者要分開講。**
+
+### 推翻五處，其中一處的歸因要更正
+
+**`Jason Moran《The Bandwagon》` 與 `Ruben Hein《Live》` 的 MB `secondary-types` 逐字都是 `["Live"]`，
+而 slice 的 `live` 欄都是 `false`。** 代理建議「回頭看那支切 slice 的腳本」——
+⚠ **但 c-171 的 slice 不是那支腳本產的，是我從稽核 JSON 手寫出來的，`live` 我直接寫死成 `false`。**
+**錯在我，不在列舉腳本。** 已在第 1824-B 條記過「本批 slice 的 8 個欄位全部不可信」，**這是它的具體代價。**
+**→ 以後從稽核產物建 slice，沒查證的欄位一律留 `null`，不要填預設值**——**`false` 看起來像結論，`null` 看起來像沒查。**
+
+其餘四處：`Kendrick Scott Oracle` 第 2 軌採官方曲目表的〈Mocean〉（Discogs 印 `Moccan`）；
+`Prysm《Time》` 的逐軌寫作權展開後是「一人三軌、末軌三人合寫」（策展層只停在摘要層）；
+`Ron Carter《Stardust》` 的鐵琴軌號兩票對一票採 `1,3-6`，**且第 8 軌是全碟唯一沒有鼓／薩克斯風／鐵琴的一軌**；
+**`Joel Ross《KingMaker》` 錄於 2016 年 12 月**（三邊都只寫 2019 發行，英文維基逐字才有），`year` 維持 2019。
+
+### 給鉤子層的跨卡警告（研究層第 3175 條）
+
+**`Joel Ross` 在 `James Francies《Flight》` 彈鐵琴、`Jeremy Dutton` 是這兩張的鼓手、
+`Derrick Hodge` 同時製作《Flight》與《A Wall Becomes a Bridge》——三條人脈在本組十張裡重疊。**
+**別讓三張都從「休士頓／Glasper 圈人脈」切。**
