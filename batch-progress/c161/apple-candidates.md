@@ -35,3 +35,14 @@
 - `1639032142` us｜《Freddie Hubbard: The Complete Jazz Heritage Society Recordings》2008｜22 軌｜依據：年份
 
 ## China Moses《This One's for Dinah》2009 — **目錄裡找不到**
+
+## quasimode《daybreak》2009
+- `287007642` us｜《Soulphiction & Slope Remixes - Single》2008｜2 軌｜依據：年份
+- `276349751` us｜《Down In the Village / Oneself-Likeness - EP》2008｜2 軌｜依據：年份
+- `277154016` us｜《Ipe Amarelo (Spriritual South Remix) / 1000 Days for Spirit - EP》2008｜3 軌｜依據：年份
+- `1801634508` us｜《GOLDEN WORKS -quasimode remix-》2009｜7 軌｜依據：年份
+- `1801640893` us｜《Straight to the Land of Freedom~LIVE at LIQUIDROOM~ (Live)》2008｜14 軌｜依據：年份
+- `720582150` us｜《Whisky's High (featuring AFRA) - EP》2010｜4 軌｜依據：年份
+- `1801594268` us｜《SOUNDS OF PEACE》2008｜11 軌｜依據：年份
+
+## Sabrina Starke《Bags & Suitcases》2010 — **目錄裡找不到**
