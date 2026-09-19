@@ -2024,3 +2024,335 @@ cd desc-tools && node qa-batch.mjs research c169
 **「筆數對了」不等於「定稿了」**：那一輪改動之後 `qa-batch` 與全部字元自檢都重跑過一次，**以磁碟上這一版為準。**
 
 ---
+
+# c-169 **b 組鉤子層（20 張，2008–2019）** 裁定　2026-09-19
+
+*（編號 3261–3300 為 b 組鉤子層專用區間。本段以 append 寫入，未動前面第 1557–1560-AE 條、
+a 組策展第 2126–2149 條、b 組策展第 2186–2209 條、a 組研究第 2851–2871 條、
+a 組鉤子第 3041–3050 條與 b 組研究第 2991–3002 條。）*
+
+## 第 3261 條（b 組鉤子，**第 1793-B／1816-B／3041 條的例行動作**）：**尺先倒回去量 a 組，逐格重現 213–229／中位 226／分佈 0-1-19-0**
+
+本棒用的公式逐字是 `hook-base.md` 雲端註記第 2 點寫死的那一條，**只扣四樣、其餘一律算**：
+
+```
+預算 ＝ Array.from(hook).length ＋ Array.from(note).length
+      − 「主故事：」 − 每一個「→」 − 「正文只寫上列各項。」 − 「這條骨架全批只走本張。」
+```
+
+**倒回去量 `desc-tools/batches/hooks/c169-hooks-a.json`（20 張）的結果：min 213、max 229、中位數 226、
+分佈 ≤209 零張／210-219 一張／220-229 十九張／230+ 零張——與第 3041／3050 條回報的數字逐格相同。**
+**→ 尺同、公式同，本組的數字可以與 a 組並排讀。**
+
+⚠ **另校準了 hook 加權的算法**：a 組回報 19–31.5，本棒先用 `/[A-Za-z0-9]/→0.5` 量到 19–33，
+改用 **`/[\x00-\x7F]/→0.5`**（`chk-hook-crossgroup.mjs` 第 116 行的原樣，**半形空格與 ASCII 標點也折半**）
+才逐格重現 19–31.5。**給後批：hook 加權一律照該行的 `[\x00-\x7F]`，不要只折英數。**
+
+**本組 20 張實測（程式產生，未手動歸類——第 1814-B 條）**：min **213**、max **229**、中位數 **225**、**超標 0**；
+分佈 **≤209 零張／210-219 兩張／220-229 十八張／230+ 零張**。
+hook 加權 **15–32**（上限 50）、note 原始字元 **208–237**（上限 350）。
+**兩組合計 40 張：預算 213–229、超標 0。**
+
+---
+
+## 第 3262 條（b 組鉤子，**第 1816-B／3042 條在本批的實測；係數同樣不可繼承，而且本組是反方向**）：**第一版 20 張全部超標 267–351（16%–53%），中位數 323.5**
+
+第一版草稿（主故事鏈四到六格、編制與客座逐人點名）**20 張全部超標**：分佈 **267–351**，中位數 **323.5**。
+最嚴重的三張是 Blue Note All-Stars **351**（超 53%）、Otis Brown III **342**、Kendrick Scott **341**；
+最輕的 R+R=NOW **267**（超 16%）。**定稿中位數 225，整體砍掉約 30%，共跑了四輪整格捨去。**
+
+⚠ **與 a 組比對，幅度分佈不同**：a 組 237–374（3%–63%），**b 組 267–351（16%–53%）——
+b 組的下緣高得多（最輕的一張也超 16%），因為 b 組 20 張的事實密度比 a 組平均**。
+**a 組那種「天生就短」的卡（U-Street《Helsinki Sessions》237）在 b 組一張都沒有。**
+**→ 第 3042 條「同一批內部的係數也不可互相繼承」在跨組這一層同樣成立：a 組的幅度分佈不能拿來預估 b 組。**
+
+⚠ **本組的專名密度另有一種 a 組沒有的形狀**：**Glasper 圈五張的側人名單特別長**
+（Blue Note All-Stars 六位團員一格 65 字元、Chris Dave 的 Drumhedz 名單一格 90+、
+R+R=NOW 六位團員一格 62），**一格就是整份預算的三成。這三格全部整格捨去或壓成「六人團」四個字。**
+
+---
+
+## 第 3263 條（b 組鉤子，**整格捨去清單；第 1793-B 條末句：算不下就在鉤子層捨，不留給寫作層砍**）：**共 31 格**
+
+| 碟 | 捨去的格 |
+|---|---|
+| Mosaic | 〈Search for Peace〉與〈Dolphin Dance〉兩首由團外 Renee Rosnes 編曲；Lundvall 的英文發片語錄；2009 年北美五十城巡演 |
+| Loose Fit | 先行單曲〈Elephants〉；製作 Stefan Kruger 與 Fons Merkies；皇家音樂廳管弦樂團銅管組；2012 年《Revisited》重錄；1982 年生於荷蘭 |
+| Rytmihyrrä / Rytmyra | Salokoski 是芬蘭瑞典語族、母語即瑞典語；二十一首的曲風清單（螞蟻藍調／企鵝森巴）；UMO 的創團沿革 |
+| Complici | 六位外找作者裡的四位（Luigi Salerno／Alessio Bonomo／Massimiliano Casacci／Pasquale Ziccardi）；四首翻唱的原唱名單；義大利原壓版式 |
+| El tiempo de la revolución | 《Bending New Corners》的法國銀唱片；錄音分 2011 年 9 月與 12 月兩段；限量版 DVD 的 Montreux 場次 |
+| This Is the Northern Governors | 合音三位與客串饒舌 Redrama；七人編制逐一點名；發行方 Oy EMI Finland Ab；Prince／Miles Davis／Zappa 三位英雄 |
+| Mercy | 四人錄音班底（Blade／Patitucci／Frisell）；〈Mercy Suite〉三樂章；父母的職業；1998 與 2000 兩張 Fellowship 碟的年份 |
+| Banda larga | Di Gregorio 兼打的六種敲擊樂器與 Spinetti 的 saz；〈Spina Dorsale〉與 Joe Barbieri 的對唱；兩首翻唱的原作者 |
+| The Thought of You | 福音那一格（Nikki Ross／Shedrick Mitchell／Glasper）；核心陣容逐一點名；Byrd 那句「改變一生」的自述 |
+| We Are the Drum | DownBeat 學生獎與 Berklee 獎學金；五人編制逐一點名；歐版版式與 Lizz Wright 出借聲明 |
+| STE | 芬蘭短號手 Jukka Eskola 與〈キエフの空〉；末軌〈スランバー〉翻 Lee Morgan；伴奏班底九位日本樂手逐一點名 |
+| Shift | New School 的三位老師；貝斯 Harish Raghavan 與鼓 Nasheet Waits；SHIFT 這個團名的十年來歷 |
+| Team Aquatic | Stromae 與 Woodkid 兩段合作；Aronas 與 ARIA 入圍；摩洛哥／西非／maloya 的節奏來源清單 |
+| Our Point of View | 六位團員逐一點名；Monterey 首演；十一軌九十分鐘兩片；Glasper 與 Don Was 的兩段英文引語 |
+| Chris Dave and The Drumhedz | 近五十人的 Drumhedz 名單；2013 年免費 Mixtape；Kingsize Soundlabs 包場一個多月；第 61 屆葛萊美入圍 |
+| Concentric Circles | 側手時期的 Stanley Turrentine／Booker Ervin；新五重奏四位團員逐一點名；Systems Two 的錄音日 |
+| Collagically Speaking | 六位團員逐一點名；客席人聲名單；Christian Scott 的那段英文引語 |
+| Passin' Thru | 1965 年第一支四重奏（Jarrett／McBee／DeJohnette）；New Quartet 三位團員；獻給 Judith McBean；七軌裡五軌超過八分鐘 |
+| Blood Siren | Oopsie Daisies 的塑膠桶貝斯；2014 年 OffBeat 入圍；Gonzales 在碟上彈的樂器清單；紀錄片導演 Bruno Moynie |
+| Live From Newport Jazz | 六首曲名逐一列出；Don Was 的底特律同鄉線；管風琴三重奏的「底特律理由」那段自述；《Chasin' the Gypsy》續篇 |
+
+**捨去的優先序照第 1809-B 條與 a 組第 3049 條更正後的判準句：
+「名單型＝一格裡出現兩個以上只起點名作用的專名，密度最低者先砍」，門檻與人數無關。**
+⚠ **本組實測再證 a 組那條更正**：**兩人並列的名單格 26–48 字元**
+（`Stefan Kruger 與 Fons Merkies` 一格 28、`Gerard Gibbs 與 Alexander White` 一格 32、
+`Jason Moran、Reuben Rogers 與 Eric Harland` 一格 41、`Marjatta Pokela 與 Martti Pokela` 一格 36），
+**本組捨去的 31 格裡有 14 格是兩人並列。照「三人以上」那個字面執行，本組一格都砍不動。**
+**本組 20 張沒有一張靠潤飾句子壓下來，全部是整格捨去（只有兩處是同義縮寫，見下）。**
+
+⚠ **兩處是改寫而不是捨去**：
+1. **Mosaic 的年份守門格**由「日版⋯最早上市，歐美版⋯才跟上」改成「**歐美版要到 2009 年 1 月才上架，日本 2008 年 12 月 26 日就先出了**」
+   ——**字數幾乎相同，但句子的起點換成歐美**，避免與 Shift 那格的「日版先／歐美後」撞成同一個模子（第 3266 條）。
+2. **We Are the Drum 的校名**由英文全稱 `High School for the Performing and Visual Arts`（44 字元）
+   改成中文「當地的表演與視覺藝術高中」（12 字元），**省下 32 字元而資訊一個字都沒少**。
+   ⚠ **不可改用縮寫 `HSPVA`**：那個字串四邊來源都沒有，`qa-batch` 的專名對照會硬標記。
+
+---
+
+## 第 3264 條（b 組鉤子，**骨架歸屬；照雲端註記第 3 點，只有擁有者寫「這條骨架全批只走本張。」**）：**20 張全部擁有、讓出 0**
+
+**程式從輸出檔實掃（第 1802-B 條：以 `c169-hooks-b.json` 裡帶歸屬句的卡為準，不以本表為準；本表由程式產生、未手打）：20／20。**
+
+| 擁有者 | 那一條骨架 |
+|---|---|
+| Mosaic | **廠牌為自己的週年，把旗下現役名冊組成一團，重錄自家舊目錄** |
+| Loose Fit | **一張碟的聲音分頭在兩個國家接起來（本體在瑞典、弦樂在布拉格）** |
+| Rytmihyrrä / Rytmyra | **同一批歌用一國的兩種官方語言各錄一次** |
+| Complici | **靠剝光別人的名曲成名的組合，改請外面的人替自己寫新歌** |
+| El tiempo de la revolución | **裸名發了十幾年唱片之後，第一次把樂團名放上封面** |
+| This Is the Northern Governors | **整團是同一個音樂家族的血親後代** |
+| Mercy | **唱片是樂迷先掏錢才錄成的（集資模式）** |
+| Banda larga | **以極簡編制聞名的組合，週年時把一整個管弦樂團請上台** |
+| The Thought of You | **把自己婚禮上的說話錄音放進一首曲子** |
+| We Are the Drum | **同一所高中送出的同學名單** |
+| STE | **放了三十年唱片的 DJ，把一路上有淵源的人全找回來錄一張** |
+| Shift | **同一張碟有三個不相同的年份：錄音年、日版年、歐美年** |
+| Team Aquatic | **整張的曲名都繞著同一個題材（水）** |
+| Our Point of View | **唱片獻給一位已故的廠牌主事者，並把他的聲音放進開場曲** |
+| Chris Dave and The Drumhedz | **先賣光了演出，手上卻一張唱片都還沒有** |
+| Concentric Circles | **領班／個人首作**（⚠ a 組第 3044 條依第 1809-B 條讓給本組的那一條，見第 3265 條） |
+| Collagically Speaking | **團名是一道算式／一句話**（⚠ a 組第 3044 條主動釋出的那一條，見第 3266 條） |
+| Passin' Thru | **五十年前寫的一首曲子，五十年後被同一個人在台上拉長** |
+| Blood Siren | **親人在幾天內相繼過世，接住她的是一架別人留下的鋼琴** |
+| Live From Newport Jazz | **把某個外來樂種的整套曲目搬進一個完全不同的編制** |
+
+**本組讓出 0 張、`note` 裡一個字都沒有點名骨架歸給哪一張**（雲端註記第 3 點）
+——`qa-batch hooks c169` 的 **`互指? 0 處`** 證實沒有把別張的盤名寫進 note。
+
+### ⚠ 動手前逐張讀過 a 組 20 張，確認與 a 組 17 條擁有骨架無一相撞
+
+**兩處差點相撞、已改掉的**：
+
+1. ⚠ ⚠ **`Sarah McCoy《Blood Siren》` 的天然骨架就是 a 組《The Chase》擁有的那一條**
+   （**「街頭賣唱被發掘，最後簽進大廠」**——McCoy 在紐奧良街頭與 Spotted Cat 賣唱、被法國導演發現、最後簽進 Blue Note，**逐格同形**）。
+   **本卡改走「親人驟逝後一架別人留下的鋼琴把她接住」**，Gonzales 那一段只寫成「巴黎的一次暖場之後當晚就進錄音室」的具體事件，
+   **不寫成「被發掘」的弧線**；`facts` 裡的 Monterey 街頭賣藝、塑膠桶貝斯整格未寫。
+2. ⚠ **`The Charles Lloyd New Quartet《Passin' Thru》` 的「兩場演出剪成一張碟」與 a 組《Music Stories》擁有的
+   「同一張碟收了相隔十六年的兩場錄音」是同一條骨架。**
+   **本卡改走〈Dream Weaver〉五十年後被拉長那一條**；**兩場演出仍寫進鏈上一格**
+   （策展層第 2199 條與研究層第 2998 條都要求正文不得寫成 Montreux 單場，整格拿掉會讓寫作層失去防呆），
+   **但它不是本卡的 hook 本體、也不是本卡擁有的骨架**——與 a 組《Oh!》把「團名縮寫」留在鏈上而歸屬句給別條的處理同形。
+
+**另外主動避開、沒有任何一張 claim 的一條**：**「廠牌某國分部自己簽人、自己出盤」**。
+a 組第 3044 條為了本組的 Ruben Hein（NL）／Aron Ottignon（FR）／Sarah McCoy（DE）三張主動不用它，
+**但本組實際上一張都沒有把它寫成主故事鏈**——三張各自走了別的骨架，
+**分支身分只以「這張由 Blue Note France 發行」這類發行事實出現在鏈上。**
+**→ 給 c-170 與後批：這條骨架在 c-169 兩組都沒有被 claim，仍然是空的。**
+
+---
+
+## 第 3265 條（b 組鉤子，**裁定；a 組第 3044 條讓給本組的「領班／個人首作」五張同形怎麼分**）：**歸 `Kenny Barron Quintet`，其餘四張各換一條骨架、並把序數句整格拿掉**
+
+`prop-b.json` 裡「領班首作」同形的**五張**（a 組第 3044 條點名，`why` 逐字都寫「領班首作」）：
+`Jon Cowherd《Mercy》`／`Otis Brown III《The Thought of You》`／`Kendrick Scott Oracle《We Are the Drum》`／
+`Kenny Barron Quintet《Concentric Circles》`／`The James Carter Organ Trio《Live From Newport Jazz》`。
+
+**判：歸 `Kenny Barron Quintet`。** 三個理由：
+
+1. **只有這一張的「首作」本身帶著一個反差**：**他 1967 年就在 Blue Note 的唱片上彈琴，只是身分是側手，領銜的第一張等了五十一年**
+   （研究層 `facts[3]` 逐字）。另外四張的「首作」都只是一個序數，沒有第二層。
+2. **另外四張各有一條比「首作」強得多的骨架**（見第 3264 條的歸屬表），**首作在它們身上是最弱的一格**。
+3. **可逆**：改的是 `note` 的鏈，不是卡池結構。
+
+### 其餘四張的處置：**序數句整格拿掉，不是降級**
+
+| 卡 | 改走的骨架 | 「首作／第一張」在定稿裡出現幾次 |
+|---|---|---:|
+| Mercy | 樂迷集資 | **0**（`facts[4]` 的「第一張領班專輯」整格未寫） |
+| The Thought of You | 婚禮口白錄音 | **0**（`facts[4]` 的「十五年側手／第一張領班作」整格未寫） |
+| We Are the Drum | HSPVA 校友名單 | **0**（`facts[4]` 的「以領班身分在 Blue Note 的第一張」整格未寫） |
+| Live From Newport Jazz | Django 曲目搬進管風琴三重奏 | **0**（`facts[1]` 的「以領班身分在 Blue Note 的第一張」整格未寫） |
+
+⚠ **這比 a 組第 3045 條的處理更嚴**：a 組把序數句壓到 4 張、四張範圍各不相同；
+**本組壓到 2 張**（`El tiempo de la revolución` 的「第一張把樂團名掛上封面的」＝掛名範圍、
+`Concentric Circles` 的「在這個廠牌的第一張領班作」＝領班範圍），**兩張的範圍完全不重疊。**
+**跨組合計 9 次**（a 7／b 2），**但 a 組那 7 次裡有 2 次是「某國第一位」而不是序數首作**。
+⚠ **另記一處改寫**：`Passin' Thru` 原稿寫「他 1966 年**第一張**四重奏專輯的同名曲」，
+**定稿改成「1966 年**那張**四重奏專輯」**——指的是 1966 年的舊碟不是本作，留著會讓序數句多一次、而且容易被誤讀成本作。
+
+---
+
+## 第 3266 條（b 組鉤子，**`chk-hook-crossgroup` 看不到、只能自己盯的句型模子；跨組逐條數**）：**a 組壓的六種本組全部守住，本組自己另壓下四種；只有兩種跨組到 3**
+
+**動手前用程式把 a 組 20 張與本組 20 張串起來逐詞數**（第 1764-B／1816-B／3046 條）。**結果**：
+
+| 模子 | a 組 | b 組 | 合計 | 處置 |
+|---|---:|---:|---:|---|
+| ① **團名由來／解義** | 2 | **1** | **3** | ⚠ **刻意超過 2，見下** |
+| ② **「唯一的外來曲是 X」** | 2 | **0** | 2 | 本組五張有素材（Kendrick Scott 的 Flying Lotus／Sunaga 的 Lee Morgan／Logan Richardson 的 Bruno Mars／Banda larga 的兩首翻唱／Kenny Barron 的三首翻奏），**全部改寫成不帶「唯一／只有一首」的敘述或整格捨去** |
+| ③ **「唯一」二字本身** | 2 | **0** | 2 | **程式實掃：本組 20 張的 hook 與 note 裡「唯一」0 次。** Aron Ottignon 的「唯一的例外是收尾的〈Rothesay Bay〉」改成「收尾的〈Rothesay Bay〉只剩他一個人彈鋼琴」 |
+| ④ **獨立時地格** | 錄於 2／錄音在 2／收音 1／在…完成 2 | **0**（另用四種新句式） | — | 本組的錄音時地一律換句式：「主錄音落在…」「錄音是…兩天」「錄音只花四天」「這張是…的現場」「七軌剪自…兩場演出」**五種各 1 次，與 a 組的四種零重疊** |
+| ⑤ **「某人一人寫／一人包辦」** | 2 | **0** | 2 | Emma Salokoski 的「Markku Veijonsuo 一人包辦錄音混音母帶」、Banda larga 的「Di Gregorio 一手包辦編曲指揮」**兩格都捨去** |
+| ⑥ **「母帶掛給某某」** | 2 | **0** | 2 | 本組七張有母帶工程師（Dave Kutch ×2／Bernie Grundman／Ian Sefchick／Norman Nitzsche／Max Ross／Paul Blakemore），**七格全部捨去**（也是名單型，兩條規則同向） |
+
+### ⚠ 本組自己另外抓到、a 組沒有的四種模子
+
+| 模子 | 第一版 | 定稿 | 怎麼壓的 |
+|---|---:|---:|---|
+| **「入圍而非得獎」** | **5**（Ruben Hein 的 3FM／Otis Brown 的《Bird Songs》／Aron Ottignon 的 ARIA／Sarah McCoy 的 OffBeat／Chris Dave 的第 61 屆葛萊美） | **0** | **五格全部捨去。** 研究層每一張都逐項標了「入圍不是得獎」，照寫會讓五張的成績段長成同一個模子；**Chris Dave 那張改寫成「他參與的三張唱片各自拿下葛萊美」——那是得獎，而且獎是給那三張碟不是給本作** |
+| **「日本先發／歐美後出」** | 3 | **2** | ⚠ **這兩次是事實強制的年份守門**（Mosaic 判 2008、Shift 判 2015，兩張的 MB 與歐美壓片都寫晚一年），**不寫就會被寫作層寫成 2009／2016**。**兩格的句子起點刻意相反**：Mosaic 從歐美講起、Shift 從日版講起。**跨組含 a 組《Oh!》共 3 次，本條明記，不掩蓋** |
+| **「獻給／悼念已故者」** | 3 | **1** | Passin' Thru 的「獻給已故好友 Judith McBean」整格捨去（**收尾曲名本來就是研究層標 uncertain 的三處之一**），**只留 Our Point of View 的 Bruce Lundvall**；Blood Siren 的父親與祖母是傳記事件不是題獻，不同形 |
+| **「校友／同學名單」** | 3 | **1** | Kendrick Scott 的 HSPVA 校友名單（Moran／Glasper／Beyoncé）**只由本張寫**；**Chris Dave 同校，本卡整格不寫學校**（照研究層第 3000 條的分配）；**Otis Brown III 的母親當校長的 Newark 藝術高中是 Sarah Vaughan 與 Wayne Shorter 的母校——那兩個名字整格捨去**，只留「母親後來是那所高中的校長」 |
+
+### ⚠ ① 團名由來跨組到 3，這是本層的一個裁定，不是疏忽
+
+**派工信第三節逐字要求「每種壓到 2 次以內——跨組也要算」，而 a 組已經用掉 2 次**
+（《Helsinki Sessions》的 U＝街名、《Oh!》的四姓縮寫）。**照字面執行，`R+R=NOW` 不能寫團名解義。**
+
+**判：仍由 `R+R=NOW` 寫，跨組來到 3 次。** 三個理由（裁定權下放的三條判準都指同一邊）：
+
+1. **有先例，而且是 a 組自己立的**：**第 3044 條末段逐字寫「本組只由《Helsinki Sessions》claim 團名由來這條」「**→ b 組的 `R+R=NOW` 仍可寫團名解義**」**
+   ——**a 組把《Oh!》那一次明確定性成「鏈上一格、不是它擁有的骨架」，並把這條骨架的第二個擁有權留給本組。**
+   **以「擁有權」計，跨組是 2（Helsinki Sessions ／ R+R=NOW）；以「出現次數」計才是 3。**
+2. **卡住整條線**：`R+R=NOW` 的 12 條 facts 裡，**團名算式與 Nina Simone 那句回答是唯一一條帶人物與立場的故事**
+   （其餘是 SXSW 的成團經過、四天錄音、客席名單、六人各自的來歷——全是流程與名單）。
+   **拿掉它，這張只剩「一場即興演出變成一張碟」，而那與 Chris Dave 的「先有演出後有唱片」直接撞。**
+3. **可逆**：只動 `note` 的鏈。
+
+⚠ **同時把本組另外兩張同形的整格壓掉**，否則會到 5 次：
+- **`The Northern Governors`**：`facts[4]` 有「團名與奈及利亞的關聯？Prättälä 說那只是巧合」——**整格未寫。**
+- **`Emma Salokoski & UMO`**：`facts[6]` 有「UMO＝Uuden Musiikin Orkesteri 的縮寫」——**整格未寫。**
+
+⚠ **`chk-hook-crossgroup c169` 在壓之前與壓之後都是 `✓ 全部通過`，這十種模子它一次都沒亮。**
+與第 1816-B／3046 條的結論一致：**機器只看前四字與關鍵詞，句型層的同構只能靠人掃。**
+
+---
+
+## 第 3267 條（b 組鉤子，**研究層第 3000 條那張「5 組人脈重疊的切角分配表」逐條落實**）
+
+研究層第 3000 條是專門寫給本層的。**五條逐條對照定稿**：
+
+| # | 重疊 | 研究層指定 | 定稿 |
+|---|---|---|---|
+| 1 | **休士頓 HSPVA** | Kendrick Scott 寫、Chris Dave 不重述校友名單 | ✔ **Kendrick Scott 的 hook 本體就是這條**；**Chris Dave 那張整格沒有學校**（連「HSPVA」四個字都沒有，只寫「中學時已經在休士頓替唱詩班打鼓」→ 後來連這一格也因預算捨去） |
+| 2 | **Blue Note All-Stars 這支團** | All-Stars 那張寫、Kendrick Scott 不寫 | ✔ **Kendrick Scott 的 note 完全沒有 All-Stars**；All-Stars 那張的六位團員逐一點名也捨去了，只寫「這支六人團」 |
+| 3 | **Salokoski 與 Prättälä／Louhivuori 的人脈** | 兩張都不寫 | ✔ **兩張都沒有。** Emma Salokoski 那張只寫 UMO 與 Lintinen，Northern Governors 那張只寫 Pokela 家族 |
+| 4 | **Erik Truffaz 是《Musica nuda 2》第二片的客人** | Complici 寫、Truffaz 那張不寫 | ⚠ **兩張都不寫。** Complici 的客人名單是名單型、密度最低，**在第二輪整格捨去**；**Truffaz 那張本來就不提 Musica Nuda。** 研究層的分配沒有被違反（它要求的是「不要兩張都寫」） |
+| 5 | **Musica Nuda 這組二重奏本身** | Complici 寫「改請外面的人寫新歌」／Banda larga 寫「十週年＋管弦樂團」 | ✔ **兩張的鏈零重疊**；⚠ **只有「Petra Magoni 加 Ferruccio Spinetti 的二重奏」這個編制說明兩張都有**——**那是識別這張碟所必需的，不是切角** |
+
+⚠ **研究層另記的兩處「同名不同物」，本層的處置**：
+1. **〈Dream Weaver〉**（Charles Lloyd 的開場曲 vs Logan Richardson 日版 bonus 的同名曲）——
+   **Logan Richardson 那張的曲名整格未寫**（日版 bonus 只寫「多收兩首」不寫曲名），**曲名不可能被寫錯卡。**
+2. **`Nicholas Payton`**（Blue Note 7 的團員 vs Otis Brown III 的 Kickstarter 贊助者）——
+   **兩張都整格未寫他。** Blue Note 7 的七人只點名音樂總監 Bill Charlap，Otis Brown 那張的 Kickstarter 那一格整格捨去
+   （**順帶避開與 Jon Cowherd 的集資骨架撞形**，見第 3268 條）。
+
+---
+
+## 第 3268 條（b 組鉤子，**派工信第四節的六條硬事實，逐條落實**）
+
+| 派工信第四節 | 定稿怎麼寫 |
+|---|---|
+| **1. `The Blue Note 7《Mosaic》` 是 Album 不是合輯、年份 2008** | 鏈上逐字「**八首曲子全部取自 1950 到 1960 年代的自家目錄，由這七個人重新錄製**」——**「重錄」兩個字在 hook 本體與鏈上各出現一次**；**「收錄」「經典錄音」「原版母帶」「Special Edition」「16 軌」全篇 0 命中**（程式實掃），寫作層拿不到任何可以寫成合輯的素材。年份走「歐美版要到 2009 年 1 月才上架，日本 2008 年 12 月 26 日就先出了」＋`發行年寫 2008 年。` |
+| **2. `Passin' Thru` 年份 2017、不是 Montreux 單場** | 鏈的末格逐字「**七軌剪自 2016 年夏天的兩場演出：Montreux 一軌，聖塔菲 The Lensic 六軌**」；`發行年寫 2017 年。` 緊接其後。**「Montreux 現場」這個說法全篇 0 命中** |
+| **3. `Emma Salokoski & UMO` 瑞典語是原詞** | 鏈上逐字「**瑞典語是原詞、出自 Mayvor Fridlund-Lintinen，芬蘭語是 Hannele Huovi 的翻譯**」——**姓氏帶連字號的全名照研究層原樣**，語言方向明寫 |
+| **4. `Jon Cowherd《Mercy》` 不是純 ArtistShare 盤** | 鏈的末格逐字「**目錄號同時掛 ArtistShare 與 Blue Note 兩個廠牌**」；集資那一格也寫成「走 ArtistShare 的樂迷集資」而不是「由 ArtistShare 發行」 |
+| **5. `Kenny Barron` 在 seed 是 3 列不是 2 列** | ⚠ **本層沒有任何一張寫「池中既有數」**——那是掛名層與策展層的資訊，**不是寫給消費者的正文**。**這一條在鉤子層無落點**，記在此處供主線核對 |
+| **6. 三處來源打架不寫進 `note`** | ✔ **三處全部 0 命中**（程式實掃）：Truffaz 隱藏曲只寫到「四重奏／客席」為止，**秒數與「隱藏曲」整格未寫**；Charles Lloyd **末軌曲名整格未寫**（〈Shiva Dreams〉與〈Shiva Prayer〉都沒有）；James Carter **第 4／5 軌時長與「碟面印錯」整格未寫**，只留開場曲的 11:29（那一格四層一致） |
+| **7. 兩筆查不到而不寫** | ✔ **Blue Note 7 的 Bennett Studios 與錄音日期 0 命中**（本卡整張沒有錄音地點）；**Jon Cowherd 的錄音年份 0 命中**（本卡整張沒有錄音日期，連「12 月 14 到 16 日」都沒寫——**寫月日而不寫年份反而會誘發寫作層去補年份**） |
+
+---
+
+## 第 3269 條（b 組鉤子，**兩支腳本的結果與 `互指?` 判讀**）
+
+```
+cd desc-tools && node qa-batch.mjs hooks c169
+  → （略過 qa-check-hooks.mjs：本 repo 無此檔）
+  → 全部通過 ✓
+cd desc-tools && node chk-hook-crossgroup.mjs c169
+  → c169｜2 組｜40 張
+  → hook 加權 15–32｜note 198–237
+  → ✓ 全部通過
+```
+
+- **`qa-batch hooks c169` 總標記 0。** ⚠ **a 組交件時的那 1 個標記（`⚠ b 缺 hook 檔`）已消失**
+  ——那是管線形狀不是旗標（第 1815-B 條、第 3048 條），**b 組交件後兩組合計 40 張、標記 0，與派工信第五節第 3 點的預期一致。**
+- **`互指? 0 處`。** 逐筆人工判讀（第 1763-B 條）：**本組 20 張的 note 裡沒有任何一個專名或曲名落在「本卡研究稿沒有、同批別張有」那一級。**
+  ⚠ **四處刻意檢查過的同批鄰居，全部確認取自本卡自己的 `facts`**：
+  1. **`Robert Glasper`** 出現在 We Are the Drum 的 hook 與 note——**取自本卡 `facts[1]` 的 HSPVA 校友名單**，
+     不是從 Collagically Speaking 那張搬來的；**Collagically Speaking 那張的 Glasper 取自它自己的 `facts[1]`。**
+  2. **`Charles Lloyd`** 在 We Are the Drum 的研究稿 `facts[3]` 逐字有（他替 Lloyd 巡演過）——**本層那一格已整格捨去**，定稿只留 Herbie Hancock 與 Terence Blanchard，**兩張零交叉。**
+  3. **`Kendrick Scott`** 是 Our Point of View 的團員——**All-Stars 那張的六位團員逐一點名整格捨去**，定稿只寫「這支六人團」，**兩張零交叉。**
+  4. **兩張 Musica Nuda 各自的鏈**——**逐格回查各自的 `facts`**（第 2817 條）：Complici 的《Musica nuda 2》與 Premio Tenco 取自本卡 `facts[2]`，Banda larga 的十週年與管弦樂團取自本卡 `facts[1][3]`。
+- **字元自檢（程式，不用眼睛掃）**：`qa-batch` 的 `charScan('hooks-b')` 四道（非拉丁亂碼／簡體字／半形逗號貼中文／千分位逗號）**全部 0**；
+  本層另跑一次獨立掃描（西里爾／天城體／諺文／希伯來／阿拉伯五個字集）**亦 0**。
+  ⚠ **日文假名與漢字是專名，依 base 檔字元條合法且必須照原文保留**：
+  `レコード番長`／`須永辰緒の夜ジャズ`／`〈愛のバラード〉`／`《犬神家の一族》`／`須永辰緒`／`大野雄二`；
+  **`qa-batch` 的 `GARBAGE` 樣式本來就不含假名，實測不亮。**
+  ⚠ **變音符一律照原文保留、未做任何折換**：`Rytmihyrrä`／`Malmö`／`Benoît`／`Prättälä`／`Beyoncé`／`revolución`／`Läm`（無）。
+  ⚠ **`Bruce’s Vibe` 與 `You’re Still the One` 的 U+2019 照研究稿原樣**；**卡單盤名 `Passin' Thru` 的 ASCII 撇號照第 2197 條。**
+- **schema 自檢**：20 筆、`[{key, hook, note}]` 三欄、**key 順序與研究稿逐字全等**（`JSON.stringify` 比對）、重複 key 0、
+  **key 全部在卡單內**、**hook 開頭前四字 40／40 跨組互異**、hook 句末全形標點 20／20、
+  hook 禁語 0、hook 否定句 0、分數星等 0、note 校對痕跡 0。
+
+---
+
+## 第 3270 條（b 組鉤子，**⚠ 派工信與 base 檔／既有裁定牴觸之處**）
+
+派工信第一節逐字要求「本信若與它牴觸，以它為準，並在交件回報裡指出本信哪一句寫錯了」。**本棒查到一處真牴觸、三處與實況有出入。**
+
+### （一）⚠ 真牴觸：第三節最後一段的「六種模子每種壓到 2 次以內，跨組也要算」與 a 組第 3044 條末段直接相撞
+
+派工信逐字：「**a 組已自查過「團名字母各代表一個字」這條（你的 `R+R=NOW` 有、它有兩張同形，**只由 `Helsinki Sessions` claim**）**」
+——**這一句是對的**；但同一節上面又逐字寫「**每種壓到 2 次以內——跨組也要算**」。
+**a 組的《Oh!》已經是第 2 次，照後面那句字面執行，`R+R=NOW` 就不能寫，而派工信自己前一句才說它可以寫。**
+
+**→ 以 a 組第 3044 條的原文為準**（逐字：「**b 組的 `R+R=NOW` 仍可寫團名解義**」）。
+**正確的計法是：「擁有權」跨組不超過 2，「鏈上一格」的出現次數另計。**
+**本組照此執行，並把本組另外兩張同形（Northern Governors、Emma Salokoski）整格壓掉**（第 3266 條）。
+⚠ **這與第 1795-B／3049 條同一族**：**把裁定的括號說明或另一節的摘要當成獨立條件，兩句就會互相打架。**
+
+### （二）與實況有出入、不算牴觸的三句
+
+1. **派工信第二節說「a 組 claim 17 張、讓出 3 張」——正確，本棒實掃 `c169-hooks-a.json` 覆核，帶歸屬句的是 17 張。**
+   ⚠ **但「歸屬表在裁定第 3044 條」這句要補一格**：**第 3044 條的擁有者表只列了 17 列，
+   而它同時寫「程式從輸出檔實掃⋯17／20」——兩者一致，覆核通過。**
+2. **派工信第五節第 1 點說「a 組第一版 20／20 全超標 237–374（3–63%），幅度分佈是本線最散的一批」——正確，
+   但「最散」這個形容對本組沒有預測力**：b 組第一版 267–351（16–53%），**幅度較窄而下緣高得多**（第 3262 條）。
+   **要能預估的話，該看的是「每張有幾條 facts 帶名單」，不是上一組的百分比。**
+3. **派工信第五節第 1 點說「a 組實測兩人並列的名單格就已 26–35 字元」——本組實測是 26–48 字元**
+   （`Jason Moran、Reuben Rogers 與 Eric Harland` 一格 41、`Gerard Gibbs 與 Alexander White` 一格 32、
+   `Marjatta Pokela 與 Martti Pokela` 一格 36）。**上緣比 a 組高，因為本組的英美人名比 a 組的芬蘭／義大利人名長。**
+
+---
+
+## 第 3271 條（b 組鉤子，**第 1803-B 條的交件聲明**）：**工作區當下的 `desc-tools/batches/hooks/c169-hooks-b.json` 才是交件版**
+
+⚠ **「筆數對了」不等於「定稿了」**（第 1803-B 條，本線已七次）。
+**本棒的交件版就是工作區當下的那一份**：20 筆、預算 213–229／中位 225／超標 0、
+`qa-batch hooks c169` 全部通過（總標記 0）、`互指? 0 處`、`chk-hook-crossgroup c169` ✓ 全部通過（40 張）。
+**寫檔是分四次落地的**（5／10／15／20 張，**每一次都把完整陣列整份寫回**，因此任何一個中途版本都是合法 JSON）；
+**筆數到 20 之後又整份改過四輪**（整格捨去四輪、模子壓縮、事實校正、預算微調），
+**任何一個 20 筆的中途版本都不是定稿。**
+**若容器重啟後看到的檔案筆數少於 20，接續補完即可，不要從頭重寫。**
+
+本層**未動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`previews.json`／`caa.json`／
+`c169-hooks-a.json`／`c169-b.json`／其他批次的檔案，**未 `git commit`、未 `git push`、未動 git 索引**。
+暫存檔全部落在 scratchpad 且帶 `c169hb-` 前綴。
+
+---
