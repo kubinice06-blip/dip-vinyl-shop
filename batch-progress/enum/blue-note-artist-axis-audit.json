@@ -1,10 +1,10 @@
 {
  "generated": "2026-09-19",
  "progress": {
-  "scanned": 0,
+  "scanned": 541,
   "total": 541,
   "rgSeen": 1231,
-  "status": "進行中：藝人軸列舉執行中"
+  "status": "進行中：541 位藝人已全數列舉完畢；候選 7,184 筆的 Blue Note 家族判定執行中（已判 2580 筆）"
  },
  "method": [
   "**藝人宇宙**：取 `batch-progress/c1[4-7]*/slice.json`（c-148～c-170，共 23 個 slice、624 列）＋`desc-tools/batches/cards/c1[4-7]*-cards.json`（31 個卡單）的 `artist` 欄，再加 `seed_cards.json`（唯讀）中與 `enum/blue-note.json` 1985 年後列對得上的卡，取聯集去重。⚠ **`seed_cards.json` 實際上沒有 `label`／`scene` 欄位**（它是 7／8／9 元素的緊湊陣列 `[artist, album, a, b, c, genres, year, (composer), (hall)]`）——派工信第二節第 3 點的敘述與檔案不符，本層改用「seed 的 (artist, album) 能對到 `enum/blue-note.json` 且該列 `year >= 1985`」作等效替代（第 2483 條）。",
