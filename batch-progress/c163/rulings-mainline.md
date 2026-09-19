@@ -837,3 +837,92 @@ c-163 a 實測 19 個路徑：**藝人頁 200 的 9 位**（`tim-hagans`／`anni
 
 **(三) 一筆紙本的引用限制**：`Tim Hagans` 那條出自 `BB-1995-07-01` p47 廣告的 **COMING SOON 欄**，
 **是預告不是上榜**——**不得寫成「當年進榜」**。研究稿 notes 已標明。
+
+## 第 1751-B 條（更正我自己的第 1750-B(2) 條）：**`universal-music.co.jp` 的 slug 順序沒有規律，兩種都要試**
+
+我在第 1750-B(2) 條從**一個樣本**（`黒田卓也` 是 `kuroda-takuya`、`takuya-kuroda` 404）
+推論出「日本線 slug 是姓在前」。**c-163 b 提出反證，主線實打四個路徑確認它說得對**：
+
+```
+universal-music.co.jp/chihiro-yamanaka/  → 200   （名在前）
+universal-music.co.jp/yamanaka-chihiro/  → 404
+universal-music.co.jp/kuroda-takuya/     → 200   （姓在前）
+universal-music.co.jp/takuya-kuroda/     → 404
+```
+
+**同一個網站、兩位日本藝人、兩種相反的順序。第 1750-B(2) 條的「一律姓在前」作廢，改成「兩種順序都要試」。**
+
+⚠ ⚠ **這是我這一輪第八次從單一樣本推出過度概括的結論**（前面是第 1738-B／1742-B／1745-B／1746-C 條那一串）。
+**本條把判準寫死：一個樣本只能立「這一個樣本的事實」，不能立規律。要立規律至少要兩個同向樣本，
+而且要在裁定裡寫明樣本數。** 寫成「預期」而非「是」，並要求代理回報實況——這一點第 1738-B 條已經立過，**本條是它的再次應驗。**
+
+---
+
+## 第 1752-B 條（採納 c-163 b 的新發現）：**③ 廠牌官網的第四條路徑：WordPress 搜尋 API**
+
+c-163 b 新立並實測有效：
+
+```
+https://www.bluenote.com/wp-json/wp/v2/search?search=<關鍵字>&per_page=N
+```
+
+**直接回 `title` ＋ `url` 的 JSON，不必從 HTML 抽 href，比 `?s=` 好用。**
+⚠ **它靠這條替 14 張各撈到一篇「專輯專屬發片稿」**（含編制、錄音日期、製作人、藝人原話），
+**資訊密度遠高於藝人頁**——本組 facts 的主要來源之一。
+
+**③ 現在有四條路徑，優先序**：
+1. **WP 搜尋 API**（`/wp-json/wp/v2/search?search=`）—— 找專輯專屬發片稿，密度最高。
+2. `/artist/<藝人>/` —— ⚠ **裸名形與團名形兩形都試**（第 1747-B 條）。
+3. `?s=` 站內搜尋 —— WP API 落空時的備援。
+4. 日本線：`universal-music.co.jp/<slug>/products/<目錄號>/` —— ⚠ **slug 兩種順序都試**（第 1751-B 條）。
+
+**實測回應碼（19 個路徑，與第 1823 條完全一致）**：200 的 13 個、404 的 6 個
+（`yaron-herman`／`kyoto-jazz-sextet`／`chihiro-yamanaka`／`julia-kadel`／`lonnie-smith`／`sound-prints`）。
+⚠ **`derrick-hodge` 確認已由 404 轉 200**（第 1747-B 條那則的獨立覆核）；
+⚠ **`lonnie-smith` 裸名路徑 404、`dr-lonnie-smith` 200——第 1815 條成立、第 1747-B 條的「兩形都試」再次應驗。**
+
+---
+
+## 第 1753-B 條：**c-163 b 五張 `0→0` 全部命中，其中兩張推翻第 1733 條，成因都是「掛名不同形」**
+
+| 卡 | `collectionId` | 店面 | 成因 |
+|---|---|---|---|
+| `Marcus Miller《Afrodeezia》` | `960994951` | **jp 獨有** | ⚠ ⚠ **jp 的 `artistName` 逐字 `マーカス・ミラー`**（℗ `Victor Entertainment`，對得上 MB 那筆 JP release 的 `Victor`／`VEAWA-32343`）——**用拉丁掛名搜不到**。且 us／gb／fr／de／it 對同一 id 都回 0 軌，**front 取 jp** |
+| `Robert Glasper《Covered》` | `1440873451` | us | 13 軌對上日版 UCCQ-1042／MB `frd` 那版（美版 CD 12 軌，多出的是 `Dillalude 3`） |
+| `Terence Blanchard featuring The E-Collective《Breathless》` | `1442942572` | us | — |
+| `Robert Glasper《ArtScience》` | `1440834038` | us | ⚠ ⚠ **us 的 `artistName` 逐字 `Robert Glasper Experiment`，卡單用裸名**——**掛名不同形導致搜不到** |
+| `Joe Lovano Quartet《Classic! Live at Newport》` | `1443215479` | us | — |
+
+**五筆都經第 1433 條核對，已寫入 `previews.json`。**
+⚠ ⚠ **第 1733 條「`Afrodeezia` 與 `ArtScience` 的 Apple 店面全空」作廢**——**兩張都在架上，是搜尋用的掛名不對。**
+
+**`0→0` 的成因至此有四種**（第 1741-B／1749-B 條的延伸）：
+1. 這個市場真的沒有這張碟（15 市場全零才可能）。
+2. 店面把並列聯名拆成「短掛名 ＋ 盤名裡的 feat. 子句」（`Enjoy the View`）。
+3. ⚠ **店面的 `artistName` 是本地語言形**（`マーカス・ミラー`）。
+4. ⚠ **店面的 `artistName` 用團名形、卡單用裸名**（`Robert Glasper Experiment`）。
+
+**後三種都是「掛名不同形」。往後 `0→0` 的第一步固定成：
+用 `/search?term=<第一位藝人的裸名>&entity=album&limit=30` 多市場反查藝人目錄，不要只用完整掛名去搜。**
+⚠ **UPC 反查不是萬靈丹**：`Afrodeezia` 的 `602547214416` 在 14 個市場全回 0。
+
+---
+
+## 第 1754-B 條（c-163 b 推翻既有裁定與資料層歧異，逐筆存查）
+
+**(一) ⚠ 第 1822 條的 Billboard 名次讀錯欄。**
+該條記 `Covered` 的 Billboard 200「第 66 位、在榜第 1 週」。**c-163 b 指出該頁表頭逐字 `…PEAK POS./WKS. ON CHART`，
+Glasper 那一列的兩個數是 `190`／`1`＝最高名次 190、在榜 1 週；`66` 是上一列 `Dierks Bentley《Riser》` 的 WKS。**
+**同頁四列可對照。採納更正。** ⚠ **紙本 OCR 的榜單表格要先確認表頭欄序，跨列讀值是這一層最容易犯的錯。**
+
+**(二) 作曲者訂正一筆、資料層歧異四筆**（全部寫進研究稿 notes）：
+- `Yaron Herman《Everyday》` 軌 9 的作曲者**是 Alexander Scriabin，不是蕭邦**（Discogs 7542508 逐字；蕭邦前奏曲是 Op.28）。
+  ⚠ 同卡另兩處：MB 把該軌題成 `Opus 54`（Discogs 與 Apple 皆 `74`）；
+  ⚠ ⚠ **這張是雙人錄音（Herman ＋ Ziv Ravitz），簡介不可寫成三重奏。**
+- `Julia Kadel Trio《Über und unter》` 軌 6 Discogs 的 `Heat Of A Dreamer` 是誤植（MB／Apple 皆 `Heart`）。
+- `Lionel Loueke《Gaïa》` 軌 10 Discogs `Veuve Malienne` vs MB／Apple `Veuve Malienee`。
+- `Joe Lovano & Dave Douglas Sound Prints` 街頭日 MB＋官網 `04-07` vs Discogs／Apple `04-03`，**取 04-07**。
+- `Lonnie Smith《Evolution》`：`bluenote.com` 藝人頁的 `released in 2015` 與其他三層（2016-01-29）矛盾，**取 2016，判該頁筆誤**。
+
+**(三) 一筆下游要注意的**：`Julia Kadel Trio《Über und unter》` **是本組唯一只靠 ②④ 兩層撐起來的卡**
+（藝人頁 404、WP 搜尋 API 回空、`universal-music.de` 作品頁 404、`juliakadel.de` 200 但無該碟可引用段落）。facts 仍達 12 條。

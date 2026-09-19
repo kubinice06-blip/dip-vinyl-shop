@@ -1078,3 +1078,97 @@ Norah Jones《Day Breaks》2016（(丁)）、Julia Kadel Trio《Über und unter�
 2. **軌數不一致的五張**（第 646／865 條）：`Robert Glasper《Covered》`（日版 13／美歐版 12）、`Kyoto Jazz Sextet《Mission》`（CD 8／LP 7 且曲序不同）、`Nels Cline《Lovers》`（數位 18／實體 2CD 10＋8）、`Norah Jones《Day Breaks》`（標準 12／日版與歐版 16／2017 年 Deluxe 21）、`Yaron Herman《Everyday》`（Apple 14／MB 與 Discogs 13）。
 3. **`Lonnie Smith` 的 ③ 路徑只有 `bluenote.com/artist/dr-lonnie-smith/` 有效**（第 1815 條）——本機補證時不要照卡池字串組網址。
 4. **`Charles Lloyd & The Marvels` 的大小寫**（第 1816 條第 5 組）——**池中 2018 年那張是小寫 `the`，本卡是大寫 `The`，兩串字元序列不同；若店主日後要統一，改的是卡單值（可逆），但 seed 那一列雲端不能動。**
+
+---
+
+# c-163 b 組研究層覆核（2026-09-19，**未編號，供主線收編**）
+
+交付物：`desc-tools/batches/research/c163-b.json`（19 張、228 條 facts、`src` 全 https）。
+`node qa-batch.mjs research c163` 逐字 `全部通過 ✓`，a／b 兩組零警告。
+
+## 一、五張 `0→0` 全部覆核成立，五個 `collectionId` 逐筆列出
+
+| 卡 | `collectionId` | 店面 | 軌數 | 盤名 | 年份 | 判準 |
+|---|---|---|---:|---|---|---|
+| **#2 `Marcus Miller《Afrodeezia》`** | **`960994951`** | **`jp`（us／gb／fr／de／it 對同一 id 回 0 軌）** | 11＝11 ✓ | `Afrodeezia` 逐字同形 ✓ | 2015＝2015 ✓ | **三條全過** |
+| **#3 `Robert Glasper《Covered》`** | **`1440873451`** | `us` | **13**（美版 CD 12、日版 UCCQ-1042 與 MB frd 那版 13） | `Covered (The Robert Glasper Trio Recorded Live At Capitol Studios)` ✓ | 2015 ✓ | **過**（軌數對上的是 13 軌版，多出的第十三軌逐字 `Dillalude 3`；MB frd 就是日版那天，判為同一張碟的另一種切法） |
+| **#7 `Terence Blanchard featuring The E-Collective《Breathless》`** | **`1442942572`** | `us` | 13＝13 ✓ | `Breathless (feat. The E-Collective)` ✓ | 2015 ✓ | **三條全過** |
+| **#17 `Robert Glasper《ArtScience》`** | **`1440834038`** | `us` | 12＝12 ✓ | `ArtScience` 逐字同形 ✓ | 2016 ✓ | **三條全過** |
+| **#18 `Joe Lovano Quartet《Classic! Live at Newport》`** | **`1443215479`** | `us` | 6＝6 ✓ | `Classic! (Live At Newport) [feat. …]` ✓ | 2016 ✓ | **三條全過** |
+
+⚠ **五個 id 的每一軌都帶 `previewUrl`。#3 與 #17 是不同 id，第 1433 條不亮。**
+⚠ **`previews.json` 本棒一字未碰**（派工信邊界），上表交主線寫入。
+
+## 二、推翻的既有結論（三筆）
+
+1. ⚠ ⚠ **第 1733 條「`Afrodeezia` 與 `ArtScience` 的 Apple 店面全空」不成立。**
+   **`Afrodeezia` 在 `jp` 有貨**（`960994951`，`artistName` 逐字 `マーカス・ミラー`、℗ 欄逐字 `℗ Victor Entertainment`，
+   與 MB 那筆 `2015-03-16 JP` release 的廠牌欄逐字 `Victor`／catno `VEAWA-32343` 對得上）。
+   **`ArtScience` 在 `us` 有貨**（`1440834038`，**`artistName` 逐字 `Robert Glasper Experiment`**）。
+   ⚠ ⚠ **兩次落空的共同成因是「掛名不同形」**：一個是日本店面的片假名掛名，一個是店面用團名而卡單用裸名。
+   **→ 與第 1749-B 條同一族：`0→0` 先換掛名形重搜，不要先斷定沒有。**
+   ⚠ **UPC 反查（`602547214416`）在 14 個市場全回 0 筆，這條路徑對本碟無效**；命中靠的是 `/search?term=<藝人>&entity=album` 多市場反查。
+
+2. ⚠ ⚠ **第 1822 條記 `Covered` 的 Billboard 200「第 66 位、在榜第 1 週」是讀錯欄。**
+   **`BB-2015-22-23-07-04-Double-Issue-20` p63 的欄位表頭逐字是
+   `LAST WEEK／THIS WEEK／ARTIST CERTIFICATION／Title／IMPRINT/DISTRIBUTING LABEL／PEAK POS./WKS. ON CHART`，
+   Glasper 那一列尾隨的兩個數字 `190` 與 `1` 是「最高名次 190、在榜 1 週」；`66` 是上一列 `DIERKS BENTLEY《Riser》` 的 WKS。**
+   同頁四列可對照（`KATY PERRY《Teenage Dream》`1／216、`KEVIN GATES`38／27、`MARVIN SAPP`40／3、`IWRESTLEDABEARONCE`186／1）。
+
+3. ⚠ **#1 `Yaron Herman《Everyday》` 軌 9 的作曲者不是蕭邦。**
+   **Discogs 7542508 的 `Composed By` 欄逐字 `Alexander Scriabin`**（蕭邦的前奏曲集是 Op.28，Op.74 是 Scriabin 的《五首前奏曲》）；
+   策展層 `curatorWhy` 逐字寫「另收蕭邦〈Prelude No4 Opus 74〉的改編」。
+   ⚠ **同卡第二處**：**MB 把這一軌題成 `Preludes No4 Opus 54`（54），Discogs 與 Apple fr 都是 `74`**，本稿採 74。
+   ⚠ **同卡第三處**：**這張是雙人錄音**（Herman：Piano／Vocals；Ziv Ravitz：Drums／Percussion／Vocals），
+   卡單 `queryAlias` 列的 `Yaron Herman Trio` 與本張的樂手欄對不上，**簡介不可寫成三重奏**。
+
+## 三、其他實查訂正（四筆，非推翻、屬資料層歧異）
+
+- **#11 `Derrick Hodge《The Second》` 軌 6**：**Discogs 9996876 逐字 `Heat Of A Dreamer`，MB 與 Apple us 逐字皆 `Heart of a Dreamer`——Discogs 誤植**，採 `Heart`。
+- **#4 `Lionel Loueke《Gaïa》` 軌 10**：**Discogs 逐字 `Veuve Malienne`，MB 與 Apple us 逐字皆 `Veuve Malienee`**，本稿採 Discogs 形。
+- **#5 `Sound Prints`**：**MB 與 Blue Note 官網稿逐字 `2015-04-07`，Discogs `released` 與 Apple `releaseDate` 逐字皆 `2015-04-03`。**
+- **#16 `Lonnie Smith《Evolution》`**：**`bluenote.com/artist/dr-lonnie-smith/` 逐字寫 `Smith's return to Blue Note, Evolution, is released in 2015`，
+  但同站發片稿逐字 `January 29 release`、MB frd 逐字 `2016-01-29`、Discogs 與 Apple 亦 2016。三層對一層，採 2016。**
+
+## 四、③ 廠牌官網：本棒新立**第四條路徑**，且逐一回報實際回應碼
+
+⚠ ⚠ **新路徑：`https://www.bluenote.com/wp-json/wp/v2/search?search=<關鍵字>&per_page=N`（WordPress 搜尋 API，回 JSON，帶 `title` 與 `url`）。**
+**它比第 1800 條的 `?s=` 好用在「一次就拿到可直接引用的 URL 清單」，`?s=` 要自己從 HTML 抽 href。兩條都有效，本棒兩條都實測過。**
+**本組靠這條替 12 張各找到一篇專輯專屬發片稿**（`Afrodeezia`／`Covered`＋`Reckoner`／`ArtScience`／`Gaïa`／`Sound Prints`／
+`Yesterday I Had the Blues`／`Breathless`／`The Second`／`Nihil Novi`／`Lovers`／`Day Breaks`／`Classic! Live at Newport`／
+`I Long to See You`／`Evolution`，另加第 58 屆葛萊美入圍頁）——**這些稿子給出編制、錄音日期、製作人與藝人原話，資訊密度遠高於藝人頁。**
+
+**`/artist/<藝人>/` 19 個路徑的實測回應碼（本棒 2026-09-19 重跑，與第 1823 條完全一致）：**
+**200（13）**：`marcus-miller`／`robert-glasper`／`lionel-loueke`／`joe-lovano`／`dave-douglas`／`jose-james`／`terence-blanchard`／
+`charles-lloyd`／`derrick-hodge`（⚠ **確認已從 404 變 200**）／`marcus-strickland`／`nels-cline`／`norah-jones`／`dr-lonnie-smith`。
+**404（6）**：`yaron-herman`／`kyoto-jazz-sextet`／`chihiro-yamanaka`／`julia-kadel`／**`lonnie-smith`（裸名路徑，第 1815 條成立）**／`sound-prints`。
+
+⚠ **對 `rulings-mainline.md` 第 1750-B 條第 2 點的一筆反證**：**`universal-music.co.jp` 的 slug 不是一律「姓在前」。**
+**`https://www.universal-music.co.jp/chihiro-yamanaka/` 回 200 且內容正確，`/yamanaka-chihiro/` 回 404**——**與 `黒田卓也` 的 `kuroda-takuya` 相反。
+→ 這個站的 slug 沒有一致規則，兩種順序都要試。** `kyoto-jazz-sextet` 一次即中。
+
+⚠ **`Julia Kadel Trio《Über und unter》` 是本組唯一只靠 ②④ 兩層撐起來的卡**：
+`/artist/julia-kadel/` 404、WordPress 搜尋 API 對 `Kadel` 回空陣列、`universal-music.de` 的作品頁 404、
+藝人官網 `juliakadel.de` 回 200 但頁上沒有 2016 年這張碟的可引用段落。**facts 仍達 12 條。**
+
+## 五、① 紙本的實際覆蓋
+
+**2015 年那 9 張用 `billboard-bn-2015-ocr.txt.gz` 逐一掃過，命中 4 張**（`Afrodeezia` 5 處、`Breathless` 2 處、`Covered` 2 處、`Yesterday I Had the Blues` 1 處），
+`Yaron Herman`／`Lionel Loueke`／`Kyoto Jazz Sextet`／`山中千尋`／`Sound Prints`（該團名本身）0 命中。
+**2016 年那 10 張結構性 0——依第 1728／1822 條不計為缺失，本棒未新抓任何 PDF、未改 `SOURCES-billboard-cashbox.md`、repo 根目錄未新增任何檔。**
+⚠ **`BB-2015-14-05-09` p68 的 Jazz Albums 榜一次替本組兩張背書**（`JOSE JAMES`、`MARCUS MILLER`）。
+
+## 六、研究層自行裁定（照「裁定權下放」，各一行）
+
+1. **#3 `Covered` 的 Apple 13 軌 vs 美版 CD 12 軌 → 判過。** 13 軌版是 MB `first-release-date` 那一版（日版 UCCQ-1042），是同一張碟的另一種切法，不是另一張碟。
+2. **#5 `Sound Prints` 的街頭日取 `2015-04-07`**（MB ＋ Blue Note 官網稿兩層），Discogs／Apple 的 04-03 寫進 notes。
+3. **#16 `Evolution` 的年份取 2016**，`bluenote.com` 藝人頁那句 `released in 2015` 判為該頁筆誤。
+4. **#8／#9／#19 三張日本線的盤名一律維持拉丁形**，`universal-music.co.jp` 的片假名盤名只寫進 notes——**第 307／1743-B 條壓過「日本線以官網為準」。**
+5. **#18〈Don't Ever Leave Me〉的作曲者照唱片自身的著作欄寫成 Thad Jones**（Discogs credit ＋ Blue Note 官網稿兩層一致），notes 已標明這是唱片著作欄的說法。
+6. **#8〈Mr. Jin〉採 Discogs 的作曲欄 `Wayne Shorter`**；`universal-music.co.jp` 標的 `アート・ブレイキー` 是原錄音的樂團、不是作曲者，兩者並存不衝突。
+7. **#19 的 (丙) 訊號判不成立**：`universal-music.co.jp` UCCQ-1064 頁的「レーベル」欄逐字 `Universal Music`，但 Discogs 廠牌欄、companies 的 ℗／© 兩欄與 MB 四筆 release 的 `label-info` 逐字全部 `Blue Note`——照第 1784 條的動作三層都有。
+8. **#16 `Lonnie Smith《Evolution》` 與 apex `Shintaro Quintet —《Evolution》(1984)` 的區隔素材已寫死在 facts**：Hammond B-3、四十五年後重回 Blue Note、Robert Glasper 與 Joe Lovano 客座、七軌長篇。
+9. **`src` 保留 20 個 `discogs.com/release/<id>` 網址**：`curl` 對它們回 403 是站方的 UA 阻擋（同 20 個 id 在 `api.discogs.com` 全部回正常資料），**不是死連結**，與 c-162 b 的既有體例一致。
+
+⚠ **本棒改動的檔案兩個，皆非禁區**：`desc-tools/batches/research/c163-b.json`（新建）＋ 本檔尾的這一節（**append-only，未整檔覆寫**）。
+⚠ **`c163-a.json`／`c163-cards.json`／`previews.json`／`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md` 一字未碰；未 commit、未 push。**
