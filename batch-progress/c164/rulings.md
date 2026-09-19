@@ -1487,3 +1487,273 @@ Discogs 把它放在 **`companies` 欄**、前綴逐字 `Recorded At:`；**`labe
 最密的是 `山中千尋《Monk Studies》`（Thelonious Monk／The Mars Volta／The Roots／William Henry Monk ＝ 4）。
 
 ---
+
+# c-164 b 組鉤子裁定（編號 1910–1916）
+
+**本組 19 筆**（`desc-tools/batches/research/c164-b.json`，全 `full`、228 條 facts）。
+輸出 `desc-tools/batches/hooks/c164-hooks-b.json`，三欄、順序同研究稿。
+沿用 `hook-base.md`／`writer-base.md` 正本，以及 `c163/rulings-mainline.md` 第 1718–1783 條與本檔 1840–1896 條。
+
+---
+
+## 第 1910 條：交件總表與字元預算（第 1739-B ＋ 1766-B ＋ 1780-B 條）
+
+| 項目 | 數 |
+|---|---|
+| 交件張數 | **19／19** |
+| `hook` 字數 | **14–29**（上限 30） |
+| `hook` 加權 | **14–26**（上限 50） |
+| `note` 原始字元 | **222–293**（上限 350） |
+| **自算預算（`hook` 字元 ＋ Σ 各項目字元）** | **196–230，中位 217，19 張全部 ≤230** |
+| 主故事鏈項目數 | 4 項 ×11 張、5 項 ×8 張 |
+| `qa-batch hooks c164` b 組硬標記 | **0**（a＋b 合計 0，`全部通過 ✓`） |
+| `chk-hook-crossgroup c164` | **✓ 41 張全部通過**（開頭四字 41 張互異、禁語 0、否定句 0、分數星等 0、校對痕跡 0、同構骨架詞 0） |
+| `互指?` | **8 處，全部是本組自己寫的骨架歸屬句** |
+
+**逐張「hook ＋ 各項目字元」**：
+
+| 卡 | 算式 | 合計 |
+|---|---|---:|
+| Thomas Dutronc《Live Is Love》 | 26+35+37+35+47+28 | **208** |
+| Ambrose Akinmusire《Origami Harvest》 | 25+28+31+28+66+18 | **196** |
+| Mark Knopfler《Down the Road Wherever》 | 28+33+81+34+41 | **217** |
+| Lonnie Smith《All in My Mind》 | 23+51+70+53+17 | **214** |
+| Jacky Terrasson《53》 | 25+46+45+44+40+17 | **217** |
+| Bill Frisell《Harmony》 | 21+80+49+52+28 | **230** |
+| Norah Jones《Begin Again》 | 26+55+54+75+19 | **229** |
+| Yaron Herman Trio《Songs of the Degrees》 | 21+68+58+34+48 | **229** |
+| Ron Carter & Danny Simmons《The Brown Beatnik Tomes》 | 23+61+42+59+45 | **230** |
+| 山中千尋《Prima del Tramonto》 | 25+62+48+61+17 | **213** |
+| Charles Lloyd《8: Kindred Spirits》 | 23+67+46+52+34 | **222** |
+| Derrick Hodge《COLOR OF NOIZE》 | 17+64+52+48+38 | **219** |
+| GoGo Penguin《Live from Studio 2》 | 22+66+29+58+29+24 | **228** |
+| Rick Margitza《Hope》 | 26+45+37+52+50 | **210** |
+| Götz Alsmann《L.I.E.B.E.》 | 20+51+58+35+21+27 | **212** |
+| The Nels Cline Singers《Share the Wealth》 | 24+43+32+58+35+21 | **213** |
+| Gregory Porter《All Rise》 | 29+45+43+47+51 | **215** |
+| Art Blakey《Just Coolin'》 | 14+47+46+31+61+10 | **209** |
+| Norah Jones《Pick Me Up Off the Floor》 | 20+41+60+36+36+32 | **225** |
+
+⚠ **初稿 9 張超標（233–276，最高是 Knopfler 的 276），全部在鉤子層整格捨去、零張留給寫作層**
+（沿 c-163／c-164 a 的位置）。**捨去清單見第 1916 條。**
+⚠ **第 1766-B 條（末尾也要計入）在本組命中 0 張**：19 張的末尾全部是指派／排除／骨架歸屬句，不產生正文字數，計 0。
+⚠ ⚠ **第 1780-B 條再獲一次佐證，而且方向與 a 組相同、幅度更大**：本棒手算 5 張的預算全部低估，
+實測比手算高 **12–25%**（最極端是 Knopfler：手算 213、實測 276，低估 30%；`Charles Lloyd` 手算 224、實測 248）。
+**a 組的 +15% 係數若直接沿用，本組仍會有三張撞破 230。** 本棒的作法與 a 組相同：**寫完先用 `Array.from().length` 逐項實測再砍，全程不估。**
+⚠ **另記一則工具面**：本棒把預算量測寫成一支獨立腳本（`c164hb-measure.mjs`，切 `主故事：…最後一個 → 之後的第一個「。」`），
+**每寫五張跑一次**，所以每一波只需針對超標那幾張做定點修改，不必回頭重讀整檔。
+
+---
+
+## 第 1911 條：序數逐張判定（第 1729／1732／1755-B 條三分法）——**5 寫 14 不寫**
+
+**寫的 5 張**：
+
+| 卡 | 寫成 | 類別 | 依據 |
+|---|---|---|---|
+| Bill Frisell | 掛自己名字在 Blue Note 發的第一張 | **(三)** | 發片稿逐字 `Blue Note debut`，N=1 無計數歧義（第 1755-B 條） |
+| Mark Knopfler | 第九張個人錄音室專輯 | **(二)** | 廠牌官網發片稿逐字，一手來源一層即可 |
+| Gregory Porter | 第六張錄音室專輯 | **(二)** | 同上 |
+| Norah Jones《Pick Me Up Off the Floor》 | 第七張個人錄音室專輯 | **(二)** | 同上 |
+| **Rick Margitza** | **第二張個人專輯** | **(二)** | **Billboard 1991-02-02 期樂評欄逐字 `second solo album`；紙本是一手來源。照派工信指示只寫原話、不自行推算** |
+
+**不寫的 14 張，分四種理由**：
+
+1. **(一) 廠牌目錄序數、官網有逐字但湊不出第二層 → 不寫**（1 張）：
+   `The Nels Cline Singers` 官網逐字「在 Blue Note 的第三張碟」，N=3≥2，**2020 年的碟紙本層結構性不存在**（主線第 1728 條）
+   → 不寫；`note` 改走「計畫中途改變」那條，完全不碰序數。**與 a 組對同藝人《The Nels Cline 4》的處置同形。**
+2. **(二) 可寫但因預算整格捨去**（3 張）：`Ambrose Akinmusire`（官網逐字第四張錄音室專輯）、
+   `Jacky Terrasson`（官網逐字第十五張唱片 ＋「距 1994 年首作二十五年」）、`Derrick Hodge`（官網逐字第三張唱片）。
+   ⚠ **這三筆是取捨不是遺漏**，本機若要補回，各從同張的次要一格挪（見第 1916 條）。
+3. **官網 404 或整頁無計數 → 不寫**（7 張）：`Thomas Dutronc`／`Yaron Herman Trio`／`Götz Alsmann`（③ 實測 404）、
+   `Lonnie Smith`／`Norah Jones《Begin Again》`／`Ron Carter & Danny Simmons`／`Charles Lloyd`（有頁但無計數）。
+   ⚠ **`Thomas Dutronc` 是唯一一張有替代來源的**：黑膠玻璃紙標語逐字 `1er Album de Thomas Dutronc pour le label mythique Blue Note`，
+   N=1 歸 (三)、該卡 facts 有逐字 src，**判可寫但預算捨去**。
+4. **本來就沒有序數素材**（3 張）：`山中千尋`（日本官方頁無計數）／`GoGo Penguin`（a 組第 1891 條已判官網只能推得）／`Art Blakey`。
+
+⚠ **(一) 類在本組同樣實質上寫不了**：18 張是 2018–2020 的碟，紙本層不存在；
+**唯一有紙本的 `Rick Margitza《Hope》`(1991) 反而是全批唯一寫得出 N≥2 序數的一張**，與派工信第三節的預判一致。
+
+---
+
+## 第 1912 條：中間欄三種污染形狀——**本組抓到 4 處**（形狀 (1) 3 處、形狀 (2) 1 處、形狀 (3) 0 處）
+
+依第 1733-B／1756-B／1763-B 條逐條回查該卡自己的 `facts`：
+
+| # | 卡 | 中間欄逐字寫的 | 該卡 `facts` 實際只有 | 形狀 | 本棒處置 |
+|---|---|---|---|---|---|
+| 1 | `Ron Carter & Danny Simmons` | `hookCandidates` 逐字「**那晚他八十一歲**」 | F1 逐字只有「發片稿記他**下週滿八十二歲**」——**演出是更早的一個秋夜，年齡是從發稿日往回推算的** | **(2) 斷語超出引文** | **年齡整條不寫** |
+| 2 | `Lonnie Smith` | `hookCandidates` 逐字「七十五歲生日**那幾晚**」；`sound`／`notes` 另把場地講成俱樂部 | F0 逐字只有「他在紐約 Jazz Standard 辦的七十五歲**生日場**」，**沒有任何一層寫出場次數，也沒有寫出場地性質** | **(1)** | hook 與 note 一律寫「生日**那一場**」，場地只寫店名、**不寫「俱樂部」** |
+| 3 | `Thomas Dutronc` | `sound` 與 `notes` 逐字把本碟定位成「**吉普賽爵士**」 | facts 三層都沒有曲風斷語，能撐起來的只有 F0 的 `100% Acoustique` 與 F3 的六人樂器欄 | **(1)** | note 降級成「六人班底＋逐件樂器＋全程原音」，**曲風名整個不寫** |
+| 4 | `Ambrose Akinmusire` | `hookCandidates` 的委託來歷寫成「**兩個音樂節**的策展人」 | F0 逐字是 `Ecstatic Music Festival`（音樂節）**與 `St. Paul's Liquid Music Series`（系列，不是音樂節）** | **(1)** | 改寫成「**兩位策展人**」，機構性質不寫 |
+
+⚠ **形狀 (3)（整段來自同批另一張卡）0 處，但本組有五對形狀高度相似的卡，逐條回查過「這一條到底在哪張卡的 facts 裡」**：
+- **Norah Jones ×2**：`Jeff Tweedy`／`Spencer Tweedy`／`Brian Blade`／`Christopher Thomas`／`Pete Remm`／`Leon Michels`／`Dave Guy`
+  **七個名字在兩張的 facts 裡都各自出現**，不是串卡。本棒把 `Jeff Tweedy` 與 `Hammond B-3` 的分組寫在《Begin Again》、
+  把 `Brian Blade` 的「整張骨架來源」寫在《Pick Me Up Off the Floor》，**兩張的班底句不重疊**。
+- **`Derrick Hodge` ↔ `The Nels Cline Singers`**：⚠ **兩張的發片稿各自都有一句幾乎一字不差的「帶進錄音間的那點材料，大家當場學、當場錄」**
+  （Hodge F3、Cline F4），**兩條都在各自的 facts 裡、各有各的 src，不是串卡**——但**放在同一批會讀成同一篇**，
+  所以本棒把「樂隊第一次一起演奏」整條骨架歸 Hodge，Cline 改走「計畫中途改變」（見第 1913 條）。
+- **`Derrick Hodge` ↔ `Ambrose Akinmusire`**：共用鍵盤手一人、兩張盤面拼法不同（`Michael Aaberg`／`Michael Aalberg`）。
+  **本棒兩張都不寫這個名字**，衝突就不存在。
+- **`Bill Frisell` ↔ `Charles Lloyd`**：`Julian Lage` 在兩張的 facts 裡都有（Frisell F1 的 The Marvels、Lloyd F1/F3 的台上）。
+  **本棒只在 Lloyd 那張寫「三十一歲的吉他手」、且不具名**，Frisell 那張一個字都沒提。
+- **`Charles Lloyd` ↔ `山中千尋`**：兩張共用母帶工程師 `Greg Calbi`。**兩張都不寫**。
+
+⚠ **另有兩筆「不做連結」的自制，研究層已做、本棒延續**：
+`Rick Margitza` 的 `Richard Margitza`（小提琴欄）與官網「父親是底特律交響樂團小提琴手」**兩條都沒寫進 note**；
+`Derrick Hodge` 第 3 軌的三個同姓人聲**整軌不寫**。**「同姓不等於親屬」在本組因此連一次判斷都不必做。**
+
+---
+
+## 第 1913 條：反同構（第 1764-B ＋ 1779-B 條，兩段都做了）
+
+### （1）a 組五條骨架的避讓——本組 8 張受影響，逐張改軸並在 `note` 寫死歸屬
+
+| a 組已鎖的骨架 | 歸屬 | 本組受影響的卡 | 改走的骨架 |
+|---|---|---|---|
+| **現場盤** | `Ambrose Akinmusire《A Rift in Decorum》` | `Lonnie Smith`／`Ron Carter & Danny Simmons`／`Charles Lloyd`／`GoGo Penguin` | 重回廠牌的續作／**書→活動→唱片的三段變形**／**跨世代名單**／**同一棟建築的第二份現場** |
+| **歐陸樂手進 Blue Note** | `Charles Pasi《Bricks》` | `Thomas Dutronc`／`Yaron Herman Trio`／`Götz Alsmann` | 曲目跨度／極簡編制與盤名單複數／**德語詞是後補上去的** |
+| **日本線** | `Kyoto Jazz Sextet《Unity》` | `山中千尋《Prima del Tramonto》` | **兩個週年疊在同一張碟上** |
+| 非洲節奏進 Blue Note | `Tony Allen《The Source》` | 無 | — |
+| 翻唱致敬前輩 | `Louis Hayes《Serenade for Horace》` | 無（本組無致敬盤） | — |
+
+**這 8 張的 `note` 末尾各寫一句歸屬（「現場盤骨架歸《A Rift in Decorum》」等），這 8 句就是第 1915 條那 8 處 `互指?` 的全部來源。**
+⚠ **依第 1779-B 條當骨架讀、不當題材配額**：本組四張現場盤照樣各寫各自的演出、場地、曲目與載體，
+**被讓出去的只有「以現場性本身撐全文」那一套結構**。
+
+### （2）本組自鎖的四條骨架，各限一張、在該張 `note` 寫死
+
+| 骨架 | 指定給 | 為什麼需要鎖 |
+|---|---|---|
+| **庫藏出土（當年錄完未發）** | `Art Blakey《Just Coolin'》` | 本組唯一一張 (甲) |
+| **樂隊第一次一起演奏就是這場錄音** | `Derrick Hodge《COLOR OF NOIZE》` | ⚠ **`The Nels Cline Singers` 的發片稿有幾乎一字不差的同一句**（見第 1912 條） |
+| **計畫中途改變** | `The Nels Cline Singers《Share the Wealth》` | 上一條的對手方 |
+| **未發表素材長成一張** | `Norah Jones《Pick Me Up Off the Floor》` | ⚠ **同組《Begin Again》出自同一段單曲錄音期**，兩張互寫排除（那張＝已發表單曲的收攏） |
+| **跨世代名單** | `Charles Lloyd《8: Kindred Spirits》` | 把「現場盤」讓出去之後的替代骨架 |
+
+### （3）逐句讀完 a 組 22 張 hook 之後的模子計數（第 1764-B 條第二段）
+
+**本組用到的句型模子與張數，以及 a＋b 合計**：
+
+| 句型模子 | a 組 | **b 組** | 合計 | b 組落在哪張 |
+|---|---:|---:|---:|---|
+| 「N 個裡有 M 個」數字模子 | 1（note） | **1（hook）** | **2** | Bill Frisell「四個人裡有三個開口唱」 |
+| 「某個時間點之後，某人做了某事」時序模子 | 2 | **0** | **2** | ⚠ **初稿的 Art Blakey hook 原是「錄完五週之後，老闆決定去 Birdland 再錄一次」，會讓這個模子到 3 張，交件前改成「這批母帶在架上躺了六十一年」** |
+| 數量對照模子（A 幾個對 B 幾個） | 2 | **0** | **2** | — |
+| 「某個欄位上寫著誰」credit 模子 | 2 | **0** | **2** | — |
+| 引語定調模子（某人說了一句話） | 2 | **0（hook）／1（note）** | **hook 2** | Gregory Porter 的「這就是純福音」只在 note，hook 改走錄影帶 |
+| 「盤名來自⋯」模子 | 1 | **1** | **2** | Jacky Terrasson《53》 |
+| 「上一張 vs 這一張」對比模子 | 1 | **0** | **1** | — |
+| 「一人包辦多項」模子 | 1 | **0（hook）／1（note）** | **hook 1** | Götz Alsmann 的八件樂器只在 note；hook 改走德語詞，**避開與 a 組 `Charles Pasi`「一個人掛了七個欄位」幾乎同句的撞擊** |
+| 「同一首 X 出現兩次」 | 1 | **0** | **1** | — |
+| **編制並置／極簡編制**（新） | 0 | **2** | 2 | Akinmusire「弦樂四重奏、饒舌與一支小號」／Yaron Herman Trio「三個人、十一軌、一間錄音室」 |
+| **年齡對照**（新） | 0 | **2** | 2 | Charles Lloyd／Lonnie Smith |
+| **曲目跨度／曲目來歷**（新） | 0 | **2** | 2 | Thomas Dutronc／GoGo Penguin |
+| **場景單句**（新） | 0 | **2** | 2 | Mark Knopfler／Gregory Porter |
+| **成形過程**（新） | 0 | **3** | 3 | Norah Jones ×2／The Nels Cline Singers |
+
+**沒有任何一種模子在 41 張裡到 4 張；a 組列的九種沒有任何一種被本組推到 3 張。**
+⚠ **兩處交件前自己抓到的撞擊，`chk-hook-crossgroup` 的開頭四字那一道都沒亮**（再次佐證第 1764-B 條）：
+1. **`Lonnie Smith` 與 `Charles Lloyd` 的初稿 hook 都是「N 歲生日那場／那晚，台上⋯」**——同一個句型模子。
+   **改掉 Lloyd 那張的開頭**（生日與八十歲那一層壓進 note），兩張才分開。
+2. **`Jacky Terrasson`／`Derrick Hodge`／`Yaron Herman Trio` 三張的初稿 note 都有「X 軌裡只有／有 M 軌⋯」**——
+   **同一個數字模子在一組裡出現三次**。保留 Terrasson 那筆改成「別人的曲子只有一首」、Hodge 改用發片稿自己的「多數時候」、
+   Yaron Herman Trio 整條改寫，**最後只剩 Frisell 的 hook 用這個模子一次**。
+⚠ **本組刻意避開的三種**：「第一張／首張」當 hook 開頭（5 張有序數可寫，全部壓進 `note`，hook 一張都不用，與 a 組同步）；
+「盤名來自⋯」（本組有 `53`／`8`／`Songs of the Degrees`／`All Rise`／`Pick Me Up Off the Floor`／`Live Is Love` 六張的盤名都有故事，**只放一張進 hook**）；
+「一個人掛了 N 個欄位」（`Götz Alsmann` 與 a 組 `Charles Pasi` 幾乎同句）。
+
+---
+
+## 第 1914 條：派工信第四節八件特有的事——逐件處置
+
+| # | 派工信要求 | 處置 |
+|---|---|---|
+| (一)a | `Thomas Dutronc` 是現場拼盤、不是錄音室碟 | `note` 第一項就寫「十五軌全部錄在 2018 年巡演途中，軌名逐一標著法國各地的城鎮」，末尾另寫「現場那一層要寫明」 |
+| (一)a | 〈Rocking Chair〉不是 Hoagy Carmichael | **該軌整條不寫**，衝突不存在 |
+| (一)b | `GoGo Penguin` 曲目出處的訂正 | `note` 逐字照研究稿：四首出自 2020 年同名專輯、一首 2018、一首 2016 |
+| (一)b | 〈Petit_a〉不指定出處 | **不指定**；`note` 只寫「七軌全是自己既有曲目的重奏」＋三個年份的分佈，**〈Petit_a〉一個字都沒出現** |
+| (一)c | `Lonnie Smith` 以 2018 年七軌首發 CD 為準 | `note` 末尾寫「軌數用 2018 年首發的七軌」；**Tone Poet 三個字全檔 0 次** |
+| (二) | `Art Blakey` 與 seed 現場盤的區隔 | `note` 寫死「本張寫成 1959 年 3 月 8 日的錄音室版、當年未發，那四首同曲寫成與四月那場現場的兩次不同演出」，主故事鏈把因果講完整（三月錄音室 → 五週後改錄現場 → 現場那套取代了錄音室版）。⚠ **那套現場盤的盤名一個字都沒引**（只寫「那套現場的兩卷本」），因為它逐字就是 seed 卡名，不引就不會撞 |
+| (三) | `Bill Frisell《Harmony》` 與 seed `The Wake《Harmony》(1982)` 的區隔 | `note` 帶齊三項區隔素材（2019 年、Blue Note、無鼓四重奏、三副人聲加大提琴、**團名就叫 Harmony**），末尾寫「盤名出現時一律帶掛名與年份」 |
+| (四) | `Ron Carter & Danny Simmons` 的三軌 `cleaned` | **那三軌的歌詞細節一個字都沒寫**（〈Where Do I Begin〉〈The Jigaboo Waltz〉〈The Final Stand of Two Dick Willie〉三個軌名全檔 0 次）；`note` 也沒提 explicit 這件事 |
+| (五) | 同藝人本組內一組、跨組六組 | Norah Jones 兩張互寫排除（見第 1913 條）；`Charles Lloyd`／`Gregory Porter`／`Derrick Hodge`／`GoGo Penguin`／`Yaron Herman Trio`／`The Nels Cline Singers` 六張**各自只寫本碟的人、地、曲**，生涯概述與別張的編制一律不寫 |
+| (六) | 五筆「不做連結」的自制 | 見第 1912 條末段，**三筆相關素材本棒全部不寫**，`Emeli Sandé` 那條連帶也不寫（`Gregory Porter` 的 note 不點名任何合作者） |
+| (七) | 串流 19/19、封面 19/19 | `note` 全檔 **0 次**提到串流、試聽或封面 |
+| (八) | `Mark Knopfler` 藝人頁 404 但新聞稿有；`lonnie-smith` 走 `dr-lonnie-smith` | 兩者都是來源層事實，**不進 `note`**；`Lonnie Smith` 的行文照卡單裸名，**`Dr.` 前綴全檔 0 次** |
+
+---
+
+## 第 1915 條：`互指?` 8 處逐條覆核，以及 `qa-batch` 的活性驗證
+
+**(一) `互指?` 8 處，全部正當，而且全部是同一種形狀**：本組依派工信第五節(1)要求，
+在 8 張的 `note` 末尾寫了骨架歸屬句——`《A Rift in Decorum》`×4（Lonnie Smith／Ron Carter／Charles Lloyd／GoGo Penguin）、
+`《Bricks》`×3（Thomas Dutronc／Yaron Herman Trio／Götz Alsmann）、`《Unity》`×1（山中千尋）。
+**這三個盤名都在 a 組的卡單裡、不在本卡的研究稿裡，所以必然被判成 `互指?`。**
+⚠ **它們是指派／排除句，不產生正文字數，也不要求寫作層把那三個盤名寫進正文**（三張的 `note` 都另有「正文只寫上列各項」）。
+⚠ **a 組是 0 處**，因為 a 組的骨架歸屬句寫成「全批只走本張」、不點名對組；
+**本組因派工信明文要求「寫明那條歸 a 組哪一張」而點名。兩種寫法各自成立，代價就是這 8 行。**
+
+**(二) 第 1765-B 條說 `互指?` 會漏報，印出來的是子集**——本棒另外人工逐張比對了五對形狀相似的卡，**見第 1912 條末段，五對都乾淨。**
+
+**(三) 活性驗證（照 a 組第 1895 條(四)的做法）**：故意把 `Thomas Dutronc` 那張的發行年改成 `1973`、
+並塞進一個不存在的專名 `Zaphod Beeblebrox`，**`qa-batch` 兩筆都印出來（`專名?Zaphod Beeblebrox | 年份?1973`，總標記 1）**，
+隨即以交件前的備份還原並 `diff` 確認逐位元組一致。**確認「零標記」是真的零。**
+⚠ **順帶再記一次工具限制**：`qa-batch` 的年份正則 `(19|20)\d{2}` 抓不到 19 世紀以前的年份。
+
+**(四) `chk-hook-crossgroup c164`**：41 張、`✓ 全部通過`。
+其中「同構骨架關鍵詞」那一道 **0 命中**——本棒交件前特別確認 `沒有鼓`（`Bill Frisell`）、`一人包辦`、`首次合作`、
+`塵封多年`／`錄完擱置`／`多年後才發行`（`Art Blakey`）這幾個詞**在 41 張裡各自只出現 0 或 1 次**，
+所以那一道不亮不是因為沒掃到，是因為真的只有一張。
+
+---
+
+## 第 1916 條：本信（派工信）與正本／實況的落差，以及整格捨去清單
+
+### （一）落差三筆
+
+1. ⚠ **`hook-base.md` 開頭逐字寫「工作目錄一律 `C:\Users\User\dip-vinyl-home\desc-restyle`」，雲端不存在這個路徑。**
+   本棒照雲端實況在 `/home/user/dip-vinyl-shop/desc-tools` 下作業，輸出路徑（`batches/hooks/<批次>-hooks-<組>.json`）與正本一致。
+   **這與第 1748-B 條對 `research-base.md` 的處置同形，建議也在 `hook-base.md` 開頭加一行雲端註記。**
+2. ⚠ **派工信第五節(1)要求「在 note 裡寫明那條歸 a 組哪一張」，而 a 組（第 1893 條）的作法是寫「全批只走本張」、不點名。**
+   **兩者不相容**：點名就必然產生 `互指?`（本組 8 處），不點名就達不到派工信的字面要求。
+   **本棒照派工信點名**，並在第 1915 條逐條說明。**建議主線擇一定為體例**——若以「`互指?` 越少越好」為準，
+   a 組那種寫法較好；若以「下游看得出讓給誰」為準，本組這種較好。
+3. ⚠ **派工信第二節 2 寫「一張卡的拉丁專名上限 3–4 個」，但沒有說骨架歸屬句裡的盤名算不算。**
+   本棒判**不算**（那是指派句、不進正文），實際計數只算會進正文的實體名。
+   **19 張逐張實測：0 個 ×3 張、1 個 ×4 張、2 個 ×5 張、3 個 ×4 張、4 個 ×3 張，全部 ≤4。**
+   最密的三張是 `Lonnie Smith`（Jazz Standard／《Evolution》／Wayne Shorter／Paul Simon）、
+   `Art Blakey`（Van Gelder／Birdland／Lee Morgan／Hank Mobley）與 `Charles Lloyd`（Lobero Theatre／Memphis／Booker T. Jones）。
+
+⚠ **`PROJECT_MEMORY.md` 本棒未動**（派工信第九節與 `REMOTE_RUNBOOK.md` 明文禁止雲端碰），交由本機端補記。
+⚠ **本棒只寫了 `desc-tools/batches/hooks/c164-hooks-b.json` 與本檔的 append**；`git status` 另有一筆
+`batch-progress/probe/previews.json` 的未提交改動，**那是別的工作階段的，本棒沒有碰。**
+
+### （二）整格捨去清單（初稿 9 張超標，全部在鉤子層砍完；本機若要補回，從同張的次要人名挪）
+
+| 卡 | 捨去的那一格 |
+|---|---|
+| Thomas Dutronc | 一分零六秒那一軌與它的獨奏吉他；作曲欄的 `David Chiron`（改寫成「團裡的低音提琴手」）；黑膠標語那條「在這個廠牌的第一張」序數 |
+| Ambrose Akinmusire | 官網逐字的「第四張錄音室專輯」；樂評對 Newport 那場演出的評語 |
+| Mark Knopfler | 〈Just A Boy Away From Home〉作者欄的 `Richard Rodgers` 與 `Oscar Hammerstein II`；製作人 `Guy Fletcher` 與 `British Grove Studios`；豪華版三軌 |
+| Lonnie Smith | 標題曲的人聲 `Alicia Olatuja` 那一格；製作人 `Don Was` 與「Frank Wolff 的時代」那一段；1968 到 1970 的年段（壓成「當年」） |
+| Jacky Terrasson | 官網逐字的「第十五張唱片」與「距 1994 年首作二十五年」；三組搭檔的六個人名；`Studio Recall` 與 `Philippe Gaillot` |
+| Bill Frisell | `FreshGrass Foundation` 的委託那一格；`Petra Haden`／`Charlie Haden` 與〈There In A Dream〉；十四軌三種來源的曲目清單 |
+| Norah Jones《Begin Again》 | `Thomas Bartlett` 的名字（改寫成「鋼琴、鍵盤與合成器」）；〈Just A Little Bit〉四人作曲欄；十二頁小冊 |
+| Yaron Herman Trio | 「十一軌裡十軌由他一人作曲」那一格（讓出數字模子）；母帶 `Graemme Brown`；美術指導 |
+| Ron Carter & Danny Simmons | 金氏紀錄與兩千兩百場錄音那一格；`Donald Vega`／`Russell Malone`／`Oscar Pettiford`／`Liza Jessie Peterson`／`Amiri Baraka` 五個名字；九軌的長度落差 |
+| 山中千尋 | 「十軌裡她自己寫了四首」與 `Duke Ellington` 的組曲那一格；`Boomtown Studio Brooklyn`；錄音月份（兩層各執一詞，整條不寫，衝突消失） |
+| Charles Lloyd | `Santa Barbara`（只留 Lobero Theatre）；開場那首二十一分零五秒；豪華盒裝的規格；〈Dream Weaver〉與 1965 年那個四重奏 |
+| Derrick Hodge | `Don Was` 的名字（只留「共同製作人」，**同時避開與 a 組 `Dave McMurray`「廠牌總裁」hook 的撞擊**）；`United Studio A` 與 `Rudy Van Gelder`；〈Fall〉與 `Wayne Shorter`；第 3 軌的三個同姓人聲 |
+| GoGo Penguin | 兩筆數位條目的格式與 ℗ 欄；`GGP/RMX` 的盤名與六位重混製作人 |
+| Rick Margitza | 大編制那一整格（鋼琴三重奏、打擊、雙簧管、大提琴、中提琴、兩把小號——hook 已帶到兩件）；`Joey Calderazzo` 與第 4 軌他自彈鋼琴；1991-02-02 那期的新片欄 |
+| Götz Alsmann | 三版軌數的差異；`Swonderful Orchestra` 與首席；兩間錄音室與製作人 |
+| The Nels Cline Singers | 五位團員的名字（只留樂器）；`The Bunker` 的店名；〈Segunda〉與 `Caetano Veloso`；前兩張 Blue Note 唱片的盤名 |
+| Gregory Porter | 加大陣容那一整格（銅管組、十人合唱團、倫敦交響樂團弦樂部——**與 a 組《One Night Only》「四人對七十人」的數量對照撞模子**）；導演與舞者的名字；2017 年那張致敬碟的盤名 |
+| Art Blakey | `Bobby Timmons` 的名字（只留「一位鋼琴手」）；六軌的長度；`Bob Blumenthal` 的解說；Blakey 百歲冥誕與目錄規模 |
+| Norah Jones《Pick Me Up Off the Floor》 | 「十一軌裡六軌」那個數字（讓出數字模子）；九間錄音室的清單；〈How I Weep〉的弦樂編制；三十軌的數位豪華版 |
+
+⚠ **本組每張的拉丁專名（不含本卡掛名、Blue Note 與骨架歸屬句裡的盤名）都壓在 0–4 個以內。**
+
+---
