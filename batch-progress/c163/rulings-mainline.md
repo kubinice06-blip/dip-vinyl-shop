@@ -2705,3 +2705,63 @@ c-169 策展層預測「店面與封面覆蓋率要照歐洲分支預期」（�
 **→ 串流沒有比較差，差的是封面。**
 **CAA 的 release-group 層對非美國本部的發行覆蓋明顯偏低**，而 Apple 對它們幾乎一視同仁。
 **後批預期要分開講：串流照常，封面要預留一半的替代來源工。**
+
+## 第 1823-B 條（c-171 a 驗收）：**13 張收 10 退 3——稽核層的 `gap` 判定本身有 1／13 是錯的**
+
+`chk-prop a` 10 張 8 位標記 0、撞 apex 0 處；`dedup-crossbatch c171` 四項全 0
+（⚠ **該腳本把 a＋b 當同一批讀，批內 a／b 交集不在它守備範圍**——代理另外手動核過，交集為空）。
+第 315 條結算 10＋3＝13 ✔。**卡池實掃比對面 30,184 列**（seed 17,248＋全部 cards＋prop＋slice），**正規化直接抄 `chk-prop.mjs` 的 `k()`**。
+
+### 三筆退件，三種不同分類，其中兩筆推翻或補正了稽核層
+
+| 卡 | 分類 | 要點 |
+|---|---|---|
+| **`Dexter Gordon《Tenor Titans》`** | ⚠ **非 Blue Note 家族**（推翻稽核層的 `gap`） | 實際是 **Storyville STCD 8288（丹麥）**。⚠ ⚠ **稽核層引的那筆 Blue Note 佐證是另一張碟**——`The Three Tenors – Titans Of The Tenor Sax, Blue Notables Vol. 1`（1996 UK/EU **Compilation／Sampler**） |
+| **`Jackie McLean《Fire and Love》`** | **撞批次** | 與 **c-154 的《Fire & Love》** 是同一張碟，MB 建了兩個 RG（日版 7 軌／美版 9 軌） |
+| **`Elvin Jones《At This Point in Time》`** | **合輯＋撞陳列** | Discogs 三個條目（US/EU/JP，跨 24 年）**全標 `Compilation`**；notes 逐字 `#1-4 previously issued as part of the double album (BN LA 506-2)`＝**池中已收的《The Prime Element》**，7 軌中 4 軌、66% 時長重疊 |
+
+### ⚠ 兩條要立刻回頭修的
+
+1. ⚠ ⚠ **「有佐證網址」不等於「佐證對」。**
+   稽核層每一筆 `gap` 都附了 Discogs 佐證，**但第 8 筆的佐證指向另一張碟**。
+   **→ 用稽核產物開批時，策展層必須逐筆點開佐證網址、核對它講的是不是同一張碟。** 已同步發訊息給 c-171 b。
+2. ⚠ **稽核層的正規化沒有沿用 `chk-prop.mjs` 的 `&`→`and`**，因此把一筆撞批次判成了真缺口。
+   **→ 任何自訂的比對正規化，一律抄 `chk-prop.mjs` 的 `k()`，不要自己寫一套。**
+   **c-171 b 已收到通知，會用修正後的正規化重掃它那 12 張。**
+
+### 1985 後「再發混入」的第三種形狀
+
+簡報第一節第 1 點講的是「再發系列折不乾淨」（RVG／Tone Poet 這類尾碼）。
+**這兩張都不是那種**：`Tenor Titans` 錄音 1972／1969、`At This Point in Time` 錄音 1973，
+**兩張都是 1985 後首發、內容是 1985 前錄音，而盤名與尾碼完全看不出來**
+——**只有 Discogs notes 的錄音日期看得出來。**
+⚠ **兩張的處置還不一樣**：`Tenor Titans` 全碟 `Previously unissued`＝真庫存盤（若他日開 Storyville 線可走 c-145 寫法）；
+**`At This Point in Time` 有 4／7 軌 1976 年就發行過，c-145 寫法不適用，它是合輯。**
+
+### 掛名
+
+**`Ron Carter` 三張一律 `Ron Carter`**（MB RG credit 都是單一實體 `57db3f59`），**`Ron Carter Trio`（c-168）並存不收攏**；
+**a／b 兩組獨立判出同一字串** ✔。
+⚠ **我派工信寫「池中已有 11 張」，實掃是 9 張，而且 9 張全在未上架批次、`seed_cards.json` 裡 0 張**
+——**第 1738-B／1746-C／1805-B 那一族，我又憑印象給了一個池中數字。**
+**`大西順子` 取漢字**（MB 實體名就是漢字，池中 seed＋c-152＋c-161 三處一致），羅馬字兩形進 `queryAlias`；
+**`Jackie McLean Meets Junko Onishi`** 照 MB credit 的兩實體串接（joinphrase 逐字 ` Meets `），**不自造 `…Meets 大西順子` 這種混拼第三形**。
+
+### 年份改判 1 筆
+
+**`Ron Carter《Brandenburg Concerto》` 1997→1996**：**MB frd 1997 沒有任何 release 支持**
+（唯一 release 無日期、無國別、`label-info` 空）；第 1800-B 條兩種掃描都跑，
+**全 release 掃描回 5 筆全 1996、barcode 反查回 2 筆皆 1996**，錄音日 1995-12-27。
+
+⚠ **另一個要寫進 `label` 欄的形狀**：**同一張碟美／加版掛 Blue Note、日版 `TOCJ-6037` 的 `label` 只有 `EAU Records`**
+——**不得寫成「全球 Blue Note 發行」。**
+
+### ⚠ 雲端環境：`itunes.apple.com/search` 回 HTTP 403
+
+**c-171 a 整批的三種店面查法都做不了**（`/lookup` 通但需要先有 ID）。
+**與第 1784-B 條的節流不同，這次是直接 403。** 本批的店面查法要留給本機，或改走已知 ID 的 `/lookup`。
+
+### 順手發現的新缺口
+
+**`Kevin Eubanks《Spiritalk》(1993, Blue Note)` 池中與所有批次都沒有**——**與 c-171 這 25 張同成因的機率很高。**
+**主線待辦：藝人軸稽核用修正後的正規化重跑一次，並把這一筆一起納入。**
