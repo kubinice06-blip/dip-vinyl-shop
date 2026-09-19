@@ -87,3 +87,383 @@ c-160 策展 a 建議「用 label id 重跑 1,812 列過濾」**在雲端這一�
 **→ 已在 `batch-progress/c169/slice.json` 的該筆 `note` 標註。**
 **收不收 EP 由 c-169 策展層當場定**（與 c170 的 `lophiile《The Good Days Between》`，8 軌 17 分鐘，同一個問題）
 ——**兩張一起決定，不要一張收一張退。** 判準先看池中同形狀的前例。
+
+---
+
+# c-169 **a 組（21 張，2000–2009）** 裁定　2026-09-19
+
+*（編號 2126–2185 為 a 組專用區間；b 組用 2186–2245。本段以 append 寫入，未動前面第 1557–1560-AE 條。）*
+
+## 第 2126 條（a 組，**總表**）：**21 張＝收 20 ／ 退 1**
+
+| | 張 |
+|---|---:|
+| **`prop-a.json` 收件** | **20** |
+| **退件** | **1**（Dr. John and the Lower 911《Sippiana Hericane》，理由分類：**非 Album 形態（EP），未落在 §5.5 白名單**） |
+| **合計** | **21** ✔（第 315 條結算通過） |
+
+**收件 20 張逐筆**（依 `prop-a.json` 順序）：Supergenerous《Supergenerous》2000／Thierry Lang《Guide Me Home》2000／Booster《Loop in Release》2001／Trio Focan feat. Mika Mylläri & Mikko Helevä《standard a'la Turc》**2002**／U-Street All Stars《Helsinki Sessions》2002／Scolohofo《Oh!》2003／Θάνος Μικρούτσικος《Music Stories》2003／Jackie Allen《Tangled》**2006**／U-Street All Stars《Bowling》2004／Anna-Mari Kähärän Orkesteri《Anna-Mari Kähärän Orkesteri》2005／Brisa Roché《The Chase》2005／**Paolo Fresu Quintet**《Kosmopolites》2005／Joona Toivanen Trio《Frost》2006／**Paolo Fresu Quintet**《Thinking》2006／Alice Ricciardi《Comes Love》2008／Franco D’Andrea Quartet《The Siena Concert》2008／High Five Quintet《Five for Fun》2008／Musica Nuda《55/21》2008／Juliano Rossi《Free Runner》2009／Kitty Hoff & Forêt-Noire《Zuhause》2009。
+
+**20 張、18 位掛名**（`U-Street All Stars` 與 `Paolo Fresu Quintet` 各兩張）。
+
+---
+
+## 第 2127 條（a 組，**裁定；第 1560-AE 條授權本層當場定**）：**EP 一律不收——Dr. John《Sippiana Hericane》退，c170 的 lophiile《The Good Days Between》同判**
+
+第 1560-AE 條把「收不收 EP」下放給本層，並要求「兩張一起決定，不要一張收一張退」，判準「先看池中同形狀的前例」。**實查前例，四筆一致指向不收**：
+
+| 前例 | 逐字 |
+|---|---|
+| **共通五條第 4 條**（`CURATION-BRIEF-c128-c130.md` 第〇節，本線經 `c131` → `c127` 鏈引） | **「EP 不收，除非落在 §5.5 白名單（`electronic`／`hardcore-7inch`／`asia-mini-album`）」** |
+| **c-093 第 1 段** | Slint「只剩 1994 年同名 EP」→ 判 **「目錄已滿（EP 不進一般卡池）」** |
+| **c-131 C 段** | 秋吉敏子的 EP `f13fc3f9`《Toshiko…》→ **不收**（與大樂團、合輯、合掛並列在同一段） |
+| **c-112 第 9 條** | **「這一組只收 `primary-type=Album`，EP 一律不碰」** |
+
+**Blue Note 爵士線不在 §5.5 的三個白名單裡。**
+
+### 本張的形態覆核（不是照抄第 1560-AE 條，是重查）
+
+- **MB 兩筆實體 release 都是 7 軌、總長 25 分 25 秒**（〈Clean Water〉2:31／〈Wade: Hurricane Suite〉四段 3:18＋3:49＋3:28＋3:40／〈Sweet Home New Orleans〉8:14／〈Clean Water (reprise)〉0:25）；XW 數位版 9 軌 33 分。
+- **Discogs 美版零售條目 4207906 的 `format` 欄逐字 `CD, EP`**（4 軌，它把 Hurricane Suite 併成一軌）。
+- ⚠ **MB 的 `primary-type` 逐字是 `Album`**——**這正是「MB 與盤面不一致」的那一格**。**判準取盤面／零售條目的 `format` 欄（第 1734 條的同一句：看 Discogs `format` 欄，不看 MB 的型別欄）**，加上 25 分鐘的實測時長，**判定為 EP。**
+
+### 裁定
+
+**退。** 理由分類：**非 Album 形態（EP），未落在 §5.5 白名單。**
+
+- **對照組（同組 6～7 軌但不是 EP）**：`Franco D’Andrea Quartet《The Siena Concert》`（6 軌 **77 分**，Discogs format 逐字 `CD, Album, Stereo`）與 `Anna-Mari Kähärän Orkesteri` 同名盤（7 軌 **46 分**，format 逐字 `CD, Album`）——**分界在時長與 `format` 欄，不在軌數。**
+- ⚠ **退這張不傷目錄深度**：`Dr. John` 池中已有 **10 張**（seed 6：Gris-Gris／In the Right Place／Desitively Bonnaroo／Goin' Back to New Orleans／Dr. John's Gumbo（apex `hall`）／Locked Down；待上架 4：c-156《Duke Elegant》、c-157《Creole Moon》、c-159《N’Awlinz》、c-159《Mercernary》），**2005 這一年前後左右都已補齊。**
+- ⚠ **本張的掛名 `Dr. John and the Lower 911` 是池中沒有的第二個字串**（seed 與待上架批次的十張全是裸名 `Dr. John`）。**退掉這張等於本線不新立這個字串**——**若 c170／後批遇到同一團的另一張 Album，掛名要照 MB 的 `Dr. John and the Lower 911`（ecaca7ba，Group／US），不要合併進裸名。**
+
+### **→ 給 c-170 策展層（第 1560-AE 條要求兩張一起定）**
+
+**`lophiile《The Good Days Between》`（2023，8 軌 17 分鐘）依同一判準退，理由分類相同。** 17 分鐘比本張還短，**不必再重查一次，照本條執行**；若 c-170 查到它的 Discogs `format` 欄逐字是 `Album` 而非 `EP`，**以時長為準仍判 EP**（17 分鐘沒有任何一條前例把它當 Album 收過）。
+
+---
+
+## 第 2128 條（a 組，**掛名**）：**沿用池中既有字串 1、照既有裁定的先例 1（共 2 張卡）、新字串 15；新造分裂 0**
+
+### （一）沿用池中既有字串 1
+**`Θάνος Μικρούτσικος`**（seed 1 列：《Ο Σταυρός του Νότου》1979，c-62 a 已上線）——見第 2131 條。
+
+### （二）照既有裁定的先例 1 個字串／2 張卡
+**`Paolo Fresu Quintet`**（c-160 b 已建卡單，《Rosso, verde, giallo e blu》2007）——見第 2129 條。
+
+### （三）新字串 15（三形都掃過，seed 與所有待上架批次皆 0 列）
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| `Supergenerous` | 4044ccb7 Group（member：Cyro Baptista、Kevin Breit） | 同字串單一實體；裸名 `Kevin Breit`／`Cyro Baptista` 池中亦 0 列 |
+| `Thierry Lang` | aa3a0a69 Person／CH | 同字串單一實體 |
+| `Booster` | 32fbb6e4 Person／FR（disambiguation 逐字 `FR jazz artist Olivier Armbuster`） | ⚠ **極短通用字串（第 179／250 條）**，池中有無只看完整字串 |
+| `Trio Focan feat. Mika Mylläri & Mikko Helevä` | 5ee6a1bd Group／TR ＋ c5f85b3b ＋ a58449e3 | ⚠ **`Önder Focan` 裸名池中已有 2 張**（c-153 b／c-155 b）——**第 1131 條：不同編制各自成立，那兩張一個字都不動** |
+| `U-Street All Stars` | eccdde08 Group／FI（disambiguation `Finnish jazz band`） | **本組兩張卡共用同一字串** |
+| `Scolohofo` | 0d1f449a Group（member：Al Foster、Dave Holland、Joe Lovano、John Scofield） | ⚠ **四位成員的既有字串全部不動**（`Joe Lovano` 光是本線就 24 張、`John Scofield` 8 張、`Dave Holland Quartet` 2 張 seed、`Al Foster` 另計）——第 1131 條 |
+| `Jackie Allen` | 13d4fb5a Person／US | ⚠ **Discogs 寫 `Jackie Allen (2)`，括號裡是 Discogs 的同名消歧編號、不是掛名的一部分**（第 250 條同形） |
+| `Anna-Mari Kähärän Orkesteri` | 2210a5a3 Group／FI | ⚠ **掛名等於盤名（`selfTitled: true`）**，下游引用務必帶年份 |
+| `Brisa Roché` | 26183789 Person／FR | 同字串單一實體 |
+| `Joona Toivanen Trio` | bc719e76 Group／FI | 裸名 `Joona Toivanen` 池中亦 0 列 |
+| `Alice Ricciardi` | d30aa77d Person／IT | 同字串單一實體 |
+| `Franco D’Andrea Quartet` | 8145fd7d Group／IT | ⚠ **含 U+2019**；Discogs 與 Apple 用 ASCII `'`，兩形都進 `queryAlias` |
+| `High Five Quintet` | 6e062659 Group／IT | ⚠ **Discogs 用 `The High Five Quintet`＋anv `High Five`**，三形；取 MB／slice 形 |
+| `Musica Nuda` | b7840712 Group／IT | **跨組定案，見第 2130 條** |
+| `Juliano Rossi` | 72ee0d29 Person | 同字串單一實體 |
+| `Kitty Hoff & Forêt-Noire` | 117b1d13 Group／DE | 四邊逐字一致，**無 `and` 形** |
+
+### （四）新造分裂 0。**聯名新造 0**（本組沒有任何一張是兩位並列藝人共同掛名——見第 2129／2131 條）。
+
+---
+
+## 第 2129 條（a 組，**⚠ ⚠ 派工信第三點與既有先例牴觸；照先例**）：**兩張 Paolo Fresu 判 `Paolo Fresu Quintet`，不取 MB 串接形**
+
+**派工信第三節第 3 點逐字寫：「掛名取 MB credited-name 串接那一種（第 1539 條原文，不是「取 `&`」）」。照這句執行會得到兩個掛名字串：**
+`Paolo Fresu 5et Plays the music of Roberto Cipelli` 與 `Paolo Fresu 5et Plays the music of Ettore Fioravanti`。
+
+### ⚠ 但 c-160 b 對**完全同形**的一筆已經判過，而且判的是相反方向
+
+| | c-160 b 已建卡單的那張 | 本組兩張 |
+|---|---|---|
+| RG | `48da0c29`《Rosso, verde, giallo e blu》2007 | `c9f31697`《Kosmopolites》2005／`ed889e2a`《Thinking》2006 |
+| MB artist-credit 第一格 | **`Paolo Fresu Quintet` `8799705f`，credited-name 逐字 `Paolo Fresu 5et`** | **同一個 `8799705f`，credited-name 同樣逐字 `Paolo Fresu 5et`** |
+| joinphrase | **逐字 ` Plays the music of `** | **逐字 ` Plays the music of `** |
+| 第二格 | `Paolo Fresu` `c7301466`（本人） | `Roberto Cipelli` `ecf0246e`／`Ettore Fioravanti` `3e8e8b57` |
+| 串接形 | `Paolo Fresu 5et Plays the music of Paolo Fresu` | `…Roberto Cipelli`／`…Ettore Fioravanti` |
+| **c-160 b 判的掛名** | **`Paolo Fresu Quintet`** | — |
+
+**有先例照先例（裁定權下放的第 1 條判準）。判 `Paolo Fresu Quintet`。**
+
+### 三項獨立佐證
+
+1. **Discogs 四筆條目（3412494／28206658／24926006／32858634 ＋《Thinking》的 5148183）的 `artists` 欄逐字全是 `Paolo Fresu Quintet`、`anv` 逐字 `Paolo Fresu 5et`**；**「Plays The Music Of …」是印在 `title` 欄裡的**（逐字 `Kosmopolites (Plays The Music Of Roberto Cipelli)`／`Thinking (Plays The Music Of Ettore Fioravanti)`）。**那句話是盤名的一部分，不是掛名。**
+2. **Apple 三店（it／us／fr）同一 id 713684432／714246276，掛名逐字都是裸名 `Paolo Fresu`**——**沒有任何一邊把 Cipelli 或 Fioravanti 當共同掛名。**
+3. **第 1745-B 條**：`Paolo Fresu 5et Plays the music of Roberto Cipelli` 這個**掛名**字串**只有 MB 一邊有**，四邊都沒有的不可新造；且照串接會與池中 c-160 b 的 `Paolo Fresu Quintet` **分裂**（第 307／1418 條）。
+
+### ⚠ 為什麼第 1539 條在這裡不適用
+
+**第 1539 條原文（`c158/rulings.md`）處理的是「並列聯名的連接形」**——Renee Rosnes 與 DR Big Band 是**兩個共同掛名的演出者**，爭的是 `and the`／逗號／`With` 哪一形。**本例的第二格是作曲者兼團員（Cipelli 是本團鋼琴手、Fioravanti 是本團鼓手），joinphrase 是一句盤名片語而不是連接符。** 第 1539 條的判準句（第 1745-B 條更正後的版本）逐字是「**並列聯名**的連接形，取 MB `credited-name` 與 joinphrase 串接出來的那一種」——**本例不是並列聯名，前提不成立。**
+
+**→ 給後批：`… Plays the music of X` 這個 joinphrase 形狀在 Paolo Fresu 的 Blue Note 目錄裡至少三筆（2005／2006／2007），一律判成團名掛名 `Paolo Fresu Quintet`、把「Plays the music of X」留給 `queryAlias`。** 這個判定是**可逆的**（只動卡單的掛名欄，不動卡池結構）。
+
+---
+
+## 第 2130 條（a 組，**跨組定案；b 組必讀**）：**`Musica Nuda` 三張共用一個掛名字串**
+
+第 1418 條點名「同一位藝人被兩組各判一次掛名是已知的分裂來源」。本團在 c-169 落三張：**a 組 1 張（2008《55/21》）、b 組 2 張（2011《Complici》／2013《Banda larga》）。a 組先判，b 組照抄。**
+
+**判 `Musica Nuda`。** 四邊實查，**無分歧**：
+
+| 來源 | 逐字 |
+|---|---|
+| **MB artist-credit** | **單一 Group 實體 `Musica Nuda`（`b7840712-9e9a-4acb-a40a-8e337bd060f3`，IT，disambiguation 逐字 `Petra Magoni & Ferruccio Spinetti`，member：Petra Magoni 主唱、Ferruccio Spinetti 低音提琴）** |
+| **Discogs 3387869（2008 法版原壓）／9406580（2012 義版再發）** | **`Musica Nuda`，無 anv** |
+| **Apple fr 332543854（55/21）／425341018（Complici）** | **`Musica Nuda`** |
+| **slice.json** | **`Musica Nuda`** |
+
+**池中 0 列**（`Musica Nuda`／`Petra Magoni`／`Ferruccio Spinetti` 三形都掃過；子字串命中的 `Petra —《Petra》`(1974)、`Petra —《Come and Join Us》`(1977) 是 c-72 的美國基督搖滾團，假陽性）。
+
+⚠ ⚠ **b 組要注意的那個鄰居**：**他們 2004–06 年的碟在 Apple 上掛的是 `Petra Magoni & Ferruccio Spinetti`**（178823140《Musica nuda》2004、205274814《Musica Nuda (Bonus Track Version)》2004、260702636《Musica nuda - Live à Fip》2006）。**那是舊掛名，不是本線的字串。** 日後若那幾張進批次，照第 1131 條當成不同時期的掛名另立，**不得回頭改這三張卡**。
+
+---
+
+## 第 2131 條（a 組，**裁定**）：**`Θάνος Μικρούτσικος《Music Stories》`——Gary Burton 不進掛名，三比一但仍取希臘文單掛名**
+
+| 來源 | 掛名欄逐字 |
+|---|---|
+| **MB artist-credit** | **單一實體 `Θάνος Μικρούτσικος`（`1ba86abf`，Person／GR）** |
+| ⚠ **Discogs 3264997** | **兩格：`Thanos Mikroutsikos` ＋ join 逐字 `/` ＋ `Gary Burton`** |
+| ⚠ **Apple fr 1383518011** | **`Thanos Mikroutsikos & Gary Burton`** |
+| ⚠ Spotify／RYM | 同樣並列（`Thanos Mikroutsikos, Gary Burton`／`thanos-mikroutsikos-gary-burton`） |
+| **slice.json** | `Θάνος Μικρούτσικος` |
+
+**判 `Θάνος Μικρούτσικος`（希臘文單掛名）。** 三個理由：
+
+1. **第 307 條**：**池中 seed 已有這個字串**（`Θάνος Μικρούτσικος —《Ο Σταυρός του Νότου》1979`，c-62 a 已上線）。並列會造第二個字串。
+2. **第 1745-B 條**：**「希臘文 ＋ Gary Burton」這個混字形字串四邊都沒有**——Discogs 與 Apple 的並列形都是**羅馬轉寫**（`Thanos Mikroutsikos / Gary Burton`），要並列就得連主名一起換成羅馬字，**那會直接與池中那張分裂**。
+3. **Burton 在盤面上的身分是獨奏者不是共同領班**：Discogs credits 欄逐字 `Gary Burton=Vibraphone`、`Thanos Mikroutsikos=Composed By`、`Alexandre Myrat=Conductor`、`Kamerata Orchestra Of The Friends Of Music=Orchestra`。**這是「作曲家＋協奏獨奏者」的形狀，不是第 1539 條的並列聯名。**
+
+⚠ **`Gary Burton` 池中已有三張 seed（`Gary Burton & Chick Corea`：Crystal Silence 1973／Duet 1979／The ECM Recordings 1972–79 2009），裸名 `Gary Burton` 0 列——本卡不動那三張，也不新立裸名。** 兩種並列寫法全部進 `queryAlias`。
+
+⚠ **掃卡池時希臘文原字串與羅馬轉寫兩種字形都掃過**（`Μικρούτσικος` 命中 3 筆＝seed／c62-cards／c62 prop 的同一張 1979 年碟；`Mikroutsikos` 0 筆）。**`dedup-crossbatch` 的正規化用 `\p{L}\p{N}` 保留非拉丁文字**（腳本開頭註解逐字記了 c-53／c-62 那次把希臘文壓成空字串、誤報 76 筆的修法），本卡入表無誤。
+
+---
+
+## 第 2132 條（a 組，**年份改判 2 筆、覆核成立 18 筆**）
+
+### （一）`Jackie Allen《Tangled》`：**2004 → 2006**
+
+| 層 | 逐字 |
+|---|---|
+| slice／MB frd | **2004**（來源是 MB release `5d797c5e`＝GB 版） |
+| Discogs 2270010／master 1232342 | **年份欄 2004**（UK，catno `0946 3 30081 2 0`） |
+| **Apple us／gb／de 三店同一 id 716517015** | **releaseDate 逐字 `2006-01-01`、copyright 逐字 `℗ 2006 Blue Note Records`** |
+| **AllMusic／零售條目（Amazon barcode 0094633008021）** | **2006** |
+| **目錄號配號** | **`0946 3 30080 2 1`（US）與 `0946 3 30081 2 0`（UK）連號＝同一次配號**；EMI 的 `0946 3 xxxxx 2 x` 段是 **2005 年以後**才啟用（同組佐證：Brisa Roché《The Chase》`0946 3 35930 2 2`＝2005-10、Joona Toivanen《Frost》`0946 3 52099 2 1`＝2006-01） |
+| Discogs 10798559（US 2006） | format 逐字帶 `Reissue`，**但軌目與軌長與 UK 版 12 軌逐秒相同**——兩者是同一張碟的兩地發行，不是隔兩年的再發 |
+
+**判 2006。** Discogs 那一欄的 2004 是年份欄誤植（**第 550／570／708 條**），MB frd 抄了它。**可逆**（只動 `year`）。
+
+### （二）`Trio Focan feat.…《standard a'la Turc》`：**2001 → 2002**
+
+| 層 | 逐字 |
+|---|---|
+| slice／MB frd／Discogs 14930583 | **2001**（Discogs 年份欄無月日） |
+| **Discogs 14930583 的 notes** | **`Recorded live and mixed on November 18-19-20th 2001`** |
+| **Apple tr／fi 同一 id 1457831663** | **releaseDate 逐字 `2002-01-18`**（**不是 01-01 佔位值，也不是錄音日**——第 484 條的兩種假陽性都不成立）、copyright 逐字 `℗ 2002 Universal Music Türkiye` |
+| **同批卡帶版 Discogs 17440579** | catno `MD 5378284`（與 CD 的 `CD 5378282` 連號），**年份欄 2002** |
+
+**判 2002。** 錄音與混音到 2001-11-20 才結束，距年底只剩五週；**兩個 2002 的獨立訊號（Apple 的精確日 ＋ 連號卡帶）壓過 Discogs 一格沒有月日的年份欄。可逆**（只動 `year`；若本機端拿到 2001 年 12 月的土耳其發行證據，改回即可）。
+
+### （三）覆核成立 18 筆
+其餘 18 張的 MB frd／Discogs 原壓群／Apple ℗ 三層一致（Apple 的 `-01-01` 一律當佔位值只取年）。**2000 年後這一段紙本不是主要來源，`yearVerified` 一律寫到「Discogs 原壓群 ＋ Apple ℗ ＋ MB frd」這一層**（簡報第二節）。⚠ **`Anna-Mari Kähärän Orkesteri` 那張只有兩層**（Apple 查無），已在卡的 `risk` 註明。
+
+---
+
+## 第 2133 條（a 組）：**六句判準（甲～己）逐張跑過的結果——(甲) 0、(乙) 0、(丙) 0（訊號亮 3 次全部不成立）、(丁) 1、(戊) 0、(己) 0，另加第七種退件 1（EP）**
+
+| 句 | 成立 | 說明 |
+|---|---:|---|
+| **(甲) 從未發行過 → 收** | **0** | 依第 1734 條**看 Discogs `format` 欄有沒有 `Reissue`／`Compilation`，不看軌數比例**：20 張收件的零售原壓 `format` 欄逐字全是 `CD, Album`（或加 `Copy Protected`／`Stereo`／`Limited Edition`／`Jewel Case`／`Promo`），**無一筆帶 `Reissue`**。**2000–09 這一格本來就沒有庫藏首發。** ⚠ 唯一「錄音早、發行晚」的 `Paolo Fresu Quintet《Thinking》`（2004-10 錄、2006 發）只隔一年半，沒有庫藏性質，第 1553／1734／1766 條三種認法一個都不成立 |
+| **(乙) 母體在 BN／Liberty／UA／Solid State → 退** | **0** | 本組無再發盤；唯一的再發形 `Scolohofo《Oh!》` 2023 Tone Poet 雙黑膠已折進原盤 RG，本卡釘 2003 原盤 |
+| **(丙) 母體在真正的他廠 → 收、`year` 取他廠版** | **0** | **訊號亮 3 次全部不成立**（見下） |
+| **(丁) 部分重疊／形狀不同 → 收** | **1** | **`Θάνος Μικρούτσικος《Music Stories》`**——見第 2141 條 |
+| **(戊) Pacific Jazz／Capitol Jazz／West Coast Classics／Roulette Jazz 再發系列 → 退** | **0** | 四條復刻線本組 0 筆（這一段是現役目錄）；`Blue Note Compagnie`（`BNS-`）與 `Blue Note Digital`（label `0293ae5c`、barcode 810211 段）亦 0 筆。逐張閘門見第 2134 條 |
+| **(己) 載體只有影像 → 退** | **0** | 本組 20 張全部是 CD 主體，無 DVD／Blu-ray 版本 |
+| ⚠ **第七種（不在六句裡）：非 Album 形態** | **1** | **Dr. John《Sippiana Hericane》（EP）**——第 2127 條。**六句判準沒有涵蓋 EP，因為它假設「碟已經確定是一張專輯」；這個假設在 2005 年的募款企劃盤上破了。給後批：六句判準之前除了第 1792 條的 imprint 前置閘，還要再加一道「形態閘」（看零售條目 `format` 欄有沒有 `EP`／`Single`，並實算總長）。** |
+
+### ⚠ (丙) 的三次訊號，逐一為什麼不成立
+
+| # | 卡 | 訊號 | 查完 |
+|---|---|---|---|
+| 1 | **`Brisa Roché《The Chase》`** | **Apple ℗ 欄逐字 `The copyright in this sound recording is owned by Capitol Music, a division of Parlophone Music France`**；Discogs 美版廠牌鏈第一格逐字 `Metro Blue` | **`Capitol Music` 是 EMI 法國的發行部門（地區發行公司型假陽性，第 1748 條第五種）**；**`Metro Blue` 是 Blue Note 自家 1994 年起的副廠牌**，第二格逐字就是 `Blue Note`，**法版零售條目第一格逐字 `Blue Note`** |
+| 2 | **`Musica Nuda《55/21》`** | **Apple ℗ 欄逐字 `℗ 2008 Magoni-Spinetti under exclusive license to Bonsai Music`** | **藝人自己的名義 ＋ `under exclusive license`——第 1748 條列的第一種假陽性，一律過閘**；Discogs 法版廠牌鏈第一格逐字 `Blue Note` |
+| 3 | **`Juliano Rossi《Free Runner》`** | **Apple ℗ 欄逐字 `℗ 2009 Oliver Perau`** | **`Oliver Perau` 是本盤的作詞者兼製作夥伴的個人名義**（Discogs notes 逐字 `Lyrics by Oliver Perau`），同第 1 種假陽性；Discogs 廠牌欄逐字單一 `Blue Note` |
+
+⚠ **本組沒有出現「碟先在別家發、Blue Note 後來才拿到」的真 (丙)。** 三次訊號三次都是第 1748 條已經寫死的那兩類（藝人／製作方自己的名義、地區發行公司）。
+
+---
+
+## 第 2134 條（a 組）：**(戊)／imprint 前置閘逐張跑過——20 張全過；訊號不乾淨的 5 張靠第 1445 條第二層證據過閘**
+
+**MB `label-info` 逐字：20 張裡 19 張是 `Blue Note [713c4a95]`（正規 imprint，不是部門名 `2eb19785`）；唯一的例外是 `Brisa Roché《The Chase》` 的法版 release（`bd10e348`＝`EMI Music France [d2d352a2]`、`df737ff0`＝`Parlophone France [0b81e41d]`、`e29352ca`＝無 label-info），但同 RG 的美版 `c1f18271` 逐字就是 `Blue Note [713c4a95]`。**
+
+| 卡 | 不乾淨的訊號 | 第 1445 條的第二層證據 | 判 |
+|---|---|---|---|
+| **Thierry Lang《Guide Me Home》** | **Discogs 瑞士原壓 3987761 的廠牌鏈第一格逐字 `EMI`**、第二格才是 `Blue Note` | **日本零售盤 6474752 的第一格逐字 `Blue Note`（TOCJ-66099）** ＋ MB label-info 逐字 `Blue Note [713c4a95]` | **過** |
+| **Trio Focan《standard a'la Turc》** | **Discogs 14930583 的廠牌鏈第一格逐字 `EMI`**、第二格 `Blue Note`（第三格起是 `EMI-Kent Elektronik San. Ve Tic. A.Ş.`＝土耳其製造商） | MB label-info 逐字 `Blue Note [713c4a95]` ＋ 簡報 2026-09-18 附錄逐字查實「2000 年後的歐洲分支查到的全是正規發行」 | **過** |
+| **Brisa Roché《The Chase》** | **美版廠牌鏈第一格 `Metro Blue`**；Apple ℗ 第一格 `Capitol Music` | **法版零售條目 1285705 的第一格逐字 `Blue Note`**；美版 MB release label-info 逐字 `Blue Note [713c4a95]`；**`Metro Blue` 是 Blue Note 自家副廠牌，不是第 1631 條點名的部門名，也不是附錄點名的兩個非家族廠牌** | **過** |
+| ⚠ **Kitty Hoff & Forêt-Noire《Zuhause》** | **Discogs 5688942 的廠牌鏈第一格逐字 `Blue Note Germany`——不是裸的 `Blue Note`** | **這是 Blue Note 的德國分支標記，與本組芬蘭／義大利分支的 `Oy EMI Finland Ab`／`EMI Music Italy` 同形**；barcode `5099969662324` 屬 EMI 的 `50999` 段，**不是 `Blue Note Digital` 的 `810211` 段**，也沒有 `Blue Note Compagnie` 的 `BNS-` 目錄號；MB label-info 逐字 `Blue Note [713c4a95]` | **過** |
+| **Juliano Rossi《Free Runner》** | Apple ℗ 第一格 `Oliver Perau` | Discogs 8203661 廠牌欄逐字單一 `Blue Note`；MB label-info 逐字 `Blue Note [713c4a95]` | **過** |
+
+⚠ ⚠ **新立一句（本組第一次遇到，後批照抄）**：**「廠牌鏈第一格是 `Blue Note <國名>`（如 `Blue Note Germany`）的，屬正規 imprint 的國別分支標記，過閘。」**
+**與第 1631 條那個要退的形狀的分界**：`Blue Note Label Group [2eb19785]` 是 **EMI 2006 年起的部門名**（一個實體，涵蓋 Manhattan／Narada／Angel），**`Blue Note Germany` 則是同一個 imprint 的地區標記**——**判準是看 barcode 段與 MB 的 label id，不是看名字長短。**
+
+⚠ **`Blue Note Label Group [2eb19785]` 在本組出現 1 次**：**`Dr. John《Sippiana Hericane》` 的美版 `355972fb`（catno `45687`）**——第 1560-AE 條已逐項查過並判「收」，**本層是以 EP 形態退掉它，與 imprint 無關**（第 2127 條）。
+
+---
+
+## 第 2135 條（a 組，**⚠ MB 的缺口**）：**只建了一個版本／欄位整格空的，本組 5 筆**
+
+**第 642 條要求「MB 取不到某欄位時，先換一種端點組合再說 MB 沒有」——五筆都換過 `release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`，仍然缺。這是 MB 真的缺，不是沒問到。**
+
+| 卡 | MB 的缺口 | 補法 |
+|---|---|---|
+| **`Alice Ricciardi《Comes Love》`** | **只建了日版 `3e48ed76`（TOCJ-66445，country 欄空）；義版原盤 `50999-512842-2-0` 完全沒有** | Discogs 5973930／38237157（零售）／31184011（宣傳），已寫進卡的 `label` |
+| **`High Five Quintet《Five for Fun》`** | **只建了日版 `5a296e60`（TOCJ-66462）；義版 `50999-227843-2-2` 完全沒有** | Discogs 16217874，已寫進卡的 `label`。⚠ **「首發地是義大利還是日本」本層無法定案**（兩版同為 2008，`year` 不受影響），研究層若拿到義版精確日要回填 |
+| **`Joona Toivanen Trio《Frost》`** | **`catalog-number` 欄填的是 barcode `094635209921`**，真正的目錄號 `0946 3 52099 2 1` 只有 Discogs 有 | Discogs 1024748 |
+| **`Juliano Rossi《Free Runner》`** | **`catalog-number` 欄整格空**，且**13 軌的 `length` 全部為空**（算出來總長 0 分） | Discogs 8203661。⚠ **那個 0 分是 MB 缺資料，不是碟很短——判 EP 與否不得用它** |
+| **`Kitty Hoff & Forêt-Noire《Zuhause》`** | **`catalog-number` 欄整格空** | Discogs 5688942 |
+
+⚠ **另記**：**本組 20 張裡有 6 張的 release-group 端 `genres` 與 `tags` 都是空陣列**（Supergenerous／Trio Focan／Anna-Mari Kähärän Orkesteri／Joona Toivanen Trio／High Five Quintet／Kitty Hoff & Forêt-Noire）——**這正是第 1557 條講的那批「RG 端也空、藝人端更空」的碟**。曲風一律改讀 Discogs 的 `genres`／`styles` 欄。
+
+---
+
+## 第 2136 條（a 組，**⚠ 給下游**）：**同一張碟在不同版本之間軌數不同的，本組 7 筆——正文不得把 bonus 寫成原盤曲目**
+
+| 卡 | 軌數分歧 | 差異來源（已逐軌比對） |
+|---|---|---|
+| **Thierry Lang《Guide Me Home》** | MB 9＋4＝13／Discogs 15 | MB 是雙碟（正盤 9 ＋ Freddie Mercury 紀錄片配樂 4）；**Discogs 那 15 軌的差額未核** |
+| ⚠ ⚠ **Brisa Roché《The Chase》** | **法版 18／美版 17／另一法版 18（53 分）／數位 21** | **美版拿掉三段〈Intermission〉、把隱藏軌〈Ride 600〉排成第 12 軌；數位版多出〈Du bout des yeux〉與〈Summer surprise〉。本卡釘 2005 法版 `bd10e348`** |
+| **Θάνος Μικρούτσικος《Music Stories》** | 一致 9 軌 | — |
+| **Alice Ricciardi《Comes Love》** | 義版 13／MB 日版 14／Discogs 日版 15／Apple 14 | 日版 OBI 帶版本的 bonus |
+| **High Five Quintet《Five for Fun》** | Discogs 義版 10／MB 日版 12／Discogs 日版 13 | 日版 bonus |
+| **Juliano Rossi《Free Runner》** | MB 13／Discogs 13／**Apple 15** | **多出的兩軌來源未核** |
+| **Scolohofo《Oh!》** | CD 11／Tone Poet 雙黑膠 5＋6＝11 | 同軌目，只是分面 |
+
+---
+
+## 第 2137 條（a 組）：**第 1250 條在本組應驗三種形狀——「目錄號＋廠牌」以外的任何反查都不可信**
+
+1. **裸數字**：`Supergenerous` 的列舉檔 `catno` 只留 `24633`，反查撞 Giant Records 的 Big Mountain《Resistance》（slice 的 `note` 已先標）。本卡以 `Blue Note ＋ 7243 5 24633 2 9` 為準。
+2. **catno 欄填的是 barcode**：`Joona Toivanen Trio《Frost》`（MB 填 `094635209921`）、`Juliano Rossi《Free Runner》`（Discogs 填 `5099969316623`）。
+3. **catno 欄整格空**：`Juliano Rossi`、`Kitty Hoff & Forêt-Noire`（MB 側）。
+4. ⚠ **空格切法不同不等於兩張碟**：`U-Street All Stars《Helsinki Sessions》` 列舉檔 `7243 5 40052 2 0` vs Discogs `7243 540052 2 0`——同一組數字。
+
+**盤名反查的假陽性本組同樣高**：`Bowling`、`Five for Fun`、`Comes Love`、`Frost`、`Thinking`、`Zuhause`、`The Chase` 七個盤名在 Apple 或池中都撞到別碟，**逐筆核完真的同碟 0 筆**。
+
+---
+
+## 第 2138 條（a 組）：**三種店面查法的觀察（只寫觀察不下結論——第 254 條）**
+
+| | 張 |
+|---|---:|
+| **Apple 至少一個市場命中本盤** | **17 / 20** |
+| ⚠ **Apple 三種查法（盤名＋掛名／掛名目錄／盤名單查）在所有試過的市場全部查無** | **3**：Thierry Lang《Guide Me Home》（ch／fr／jp 三店）、Anna-Mari Kähärän Orkesteri 同名盤（fi／us 兩店）、High Five Quintet《Five for Fun》（it／jp／us 三店） |
+| **CAA release-group 層有圖** | **10 / 20**：Booster 2、Trio Focan **8**、Scolohofo 2、Music Stories 1、Jackie Allen 1、Brisa Roché 1、Kosmopolites 3、Frost 1、Thinking 3、Musica Nuda 1 |
+| **CAA 404（0 圖）** | **10 / 20**：Supergenerous／Thierry Lang／U-Street ×2／Anna-Mari／Alice Ricciardi／Franco D’Andrea／High Five／Juliano Rossi／Kitty Hoff |
+
+⚠ **這一段的店面命中率遠低於簡報第三節的預期（「現役目錄，命中率應該很高」）**——**原因是本批幾乎全是 Blue Note 各國分支的本地出品**（芬蘭 4、義大利 4、德國 2、法國 2、瑞士 1、土耳其 1、希臘 1，美國本部只有 Supergenerous 與 Scolohofo 兩張），**不是美國本部目錄**。給後批：**c-169／c-170 這兩個補批的店面與 CAA 覆蓋率要照「歐洲分支」而不是「Blue Note 正廠」來預期。**
+
+⚠ **第 254 條那個坑本組踩到三次**：
+1. **盤名搜尋落空、換掛名才中**——`Paolo Fresu 5et Plays the music of…` 在三店全部落空，改用 `Paolo Fresu Kosmopolites` 才命中。
+2. **同一市場兩個條目指向兩個軌數**——`Brisa Roché《The Chase》` 的 Apple us 有 693750621（21 軌）與 843420174（19 軌）。
+3. ⚠ **CAA 的圖不是原壓的圖**——`Brisa Roché` 的 CAA 來源 release 逐字是 `df737ff0`（XW 數位版）、`Jackie Allen` 的是 `5d797c5e`（英版），**研究層看版式時要先確認來源 release**。
+
+⚠ **店面上的同名不同碟，本組列進「絕對不得採用」的有 6 筆**：`Kevin Breit & Supergenerous —《São Paulo Slim》`(2008)、`Jalen Johnson —《Super Generous - EP》`(2026)、`Ronald Baker Quintet —《Five for Fun》`(2004 Cristal)、`Joona Toivanen Trio —《Gravity》`(2025 We Jazz)、`High Five —《Live For Fun》`(2009 TOCJ-66496)、`Paolo Fresu —《LAMPONE (feat. Roberto Cipelli, Ettore Fioravanti…)》`(2024 單曲)。
+
+---
+
+## 第 2139 條（a 組）：**現場盤 1 張、四層一致——第 1771 條那三種毛病本組一次都沒中**
+
+| 碟 | MB `secondary-types` | slice `live` | Apple 盤名 | Discogs |
+|---|---|---|---|---|
+| **Franco D’Andrea Quartet《The Siena Concert》** | **`["Live"]`** | **true** | **`The Siena Concert (Live)`**（fr 713545183） | notes 逐字 `The concert was recorded live on July 26t…` |
+
+**`releaseType` 照 MB 原值寫 `Album`（第 1797 條先例），現場身分寫在 `risk` 與 `queryAlias`。**
+
+⚠ **另外 19 張的 `secondary-types` 逐字都是空陣列。** 兩張 notes 帶 `live` 字樣但**不是現場**，已逐筆查明並寫進卡：
+- **`Scolohofo《Oh!》`**——`Recorded live to two-track` 指直錄兩軌母帶，地點 Sear Sound 是錄音室。
+- **`Trio Focan《standard a'la Turc》`**——`Recorded live and mixed` 指在錄音室一次過收音，地點逐字 `the Master Recording Oy in Helsinki`。
+
+**→ 第 1771 條第 1 點（是現場卻沒標）本組 0 張；第 3 點（盤名帶 Live 卻不是現場）0 張；但「notes 帶 live 卻不是現場」出現 2 次——這是第 1771 條沒寫過的第四種形狀，記下給後批。**
+
+---
+
+## 第 2140 條（a 組）：**曲風——`['jazz']` 13 張、兩層 7 張；邊界張 3 張全部照收，因曲風退件 0**
+
+- **第 1559 條在 c169 點名的五張邊界張，落在 a 組的有 3 張**：`Jackie Allen《Tangled》`（人聲爵士唱 folk-rock 曲目）、`Anna-Mari Kähärän Orkesteri` 同名盤（爵士×北歐民謠）、`Kitty Hoff & Forêt-Noire《Zuhause》`（德語 chanson-jazz）。**三張全部照收，本層沒有拿曲風退任何一張**（另兩張 `Emma Salokoski & UMO`、`Sunaga t Experience` 在 b 組）。
+- **兩層 6 張**：`Booster`＝`['jazz','electronic']`／`Θάνος Μικρούτσικος`＝`['jazz','classical']`／`Jackie Allen`＝`['jazz','folk']`／`Anna-Mari Kähärän Orkesteri`＝`['jazz','folk']`／`Brisa Roché`＝`['jazz','rock']`／`Musica Nuda`＝`['jazz','pop']`／`Kitty Hoff & Forêt-Noire`＝`['jazz','pop']`（共 7 張，其餘 13 張 `['jazz']`）。
+- ⚠ **6 張的 MB RG 端 `genres`／`tags` 都是空的**（第 2135 條末段），曲風改讀 Discogs 的 `genres`／`styles`。
+- ⚠ **本組沒有任何一張不含 `jazz`。**
+
+---
+
+## 第 2141 條（a 組，**合輯風險逐張核；判為合輯 0，(丁) 1**）
+
+簡報第一節第 2 點要求「盤名帶 Best of／Greatest／Collection／Anthology／The Very Best／Blue Note Trip／Sidetracks 的一律細看，判準只讀逐張文案與軌目來源，不讀標題、不看尾碼」。**本組 20 張沒有任何一張的盤名帶那些字眼**，但有兩張的**形狀**觸發了合輯判定，逐筆核完：
+
+### （一）`Booster《Loop in Release》`——**Apple 把掛名登成 `Multi-interprètes`（Various Artists），不是合輯**
+- **Apple fr 693636945 的 `artistName` 逐字 `Multi-interprètes`。**
+- 核完：**Discogs 718356 的 `artists` 欄逐字單一 `Booster`、`format` 逐字 `CD, Album`（無 `Compilation`／`Reissue`）、notes 逐字寫明整張由 Booster 一人在自宅與 Studio Tex Avril 錄音與混音**；**MB primary-type `Album`、secondary-types 空陣列**。
+- **判：不是合輯。** Apple 的 Various 標記是客座人聲多所致的店面 metadata 誤登。
+- ⚠ ⚠ **新立一句**：**第 782 條講的是「Discogs 的 `format` 欄會錯」，第 397 條講的是「MB 的 `secondary-types` 兩個方向都會漏」——本例是第三種：Apple 把單一製作人的碟登成 Various Artists。給後批：Apple 的 `artistName` 欄不可拿來判合輯。**
+
+### （二）`Θάνος Μικρούτσικος《Music Stories》`——**9 軌裡 3 軌是 1985 年的舊錄音，仍判 Album（(丁)）**
+- **Discogs 3264997 的 notes 逐字**：`Tracks 1 to 6 recorded at the Friend's of Music Hall on November 2nd and 3rd 2001` ／ **`Tracks 7 to 9 recorded at the "Action" studio in 1985`**。
+- 7–9 軌是〈Duo: Moderato／Largo／Presto〉，credits 欄的對應演出者是 `David Lynch (3)=Alto Saxophone` 與 `Giorgos Fakanas=Electric Bass`；**jazzlibrary.gr 的他個人目錄列有一張 1986 年《Duo For Alto Saxophone And Electric Bass / Opera for One》**——**這三軌很可能是那張希臘盤的再收錄。**
+- **判：收，`releaseType` 判 `Album` 不判 `Compilation`。** 理由：**主體六軌（36 分／53 分）是 2001 年的新錄音、2003 年首發**；MB primary-type `Album`、secondary-types 空陣列；**Discogs `format` 逐字 `CD, Album`，無 `Compilation`／`Reissue`**。**形狀屬 (丁)「部分重疊／形狀不同 → 收」**（第 1796 條）。
+- ⚠ **與第 1412 條退掉的《Live at the Lighthouse》的分界**：那張是「**整張 1967 年 LP** ＋ 八軌 bonus」（主體是舊的），本張是「**主體是 2001 年新錄音** ＋ 三軌舊作」（主體是新的）。
+- ⚠ **研究層必做**：核 1986 那張《Duo For Alto Saxophone And Electric Bass》是否同一份錄音。**正文不得把 7–9 軌寫成 2001 年錄的。**
+
+⚠ **`Scolohofo《Oh!》` 的 2023 Tone Poet 雙黑膠（RG 內的 `01cdc37a`／Discogs 25705846，series 欄逐字 `Blue Note Tone Poet Series`、format 帶 `Reissue`）是再發、不是另一張碟**——軌目與 2003 CD 完全相同，本卡釘 2003 原盤，Tone Poet 只寫進 `label` 與 `risk`。
+
+---
+
+## 第 2142 條（a 組）：**`chk-prop` 與 `dedup-crossbatch` 的結果**
+
+- **`node batch-progress/c169/chk-prop.mjs a`：`prop-a.json`：20 張、18 位｜標記 0。**
+- **第五道（盤名逐字撞 apex、掛名不同，只報不擋）：0 處。** ⚠ 逐筆人工複掃過——本組 20 個盤名（Supergenerous／Guide Me Home／Loop in Release／standard a'la Turc／Helsinki Sessions／Oh!／Music Stories／Tangled／Bowling／Anna-Mari Kähärän Orkesteri／The Chase／Kosmopolites／Frost／Thinking／Comes Love／The Siena Concert／Five for Fun／55/21／Free Runner／Zuhause）**沒有一個逐字撞到 apex 王牌的盤名**。
+- **`node batch-progress/dedup-crossbatch.mjs c169`：1 批（讀 prop）｜卡數 30｜跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0。**（執行時 b 組已寫入 10 張。）
+- **全域 `dedup-crossbatch`（chk-prop 串跑）：132 批｜卡數 5287｜跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0。**
+- ⚠ **第 611 條：標記 0 不等於沒撞卡。** 五種盲區逐一人工掃過：**群組掛名 vs 個人掛名**（Scolohofo 的四位成員、Trio Focan 的 Önder Focan、Musica Nuda 的 Magoni／Spinetti、Paolo Fresu 的三個編制字串、Supergenerous 的 Breit／Baptista——**全部查過，沒有一張是同碟**）；**同名但不同盤的 Volume 碟**（0 筆）；**MB 把同一張碟建成兩個 RG**（0 筆，20 個 rgMbid 互不重複且與其他批不重複）；**斜線掛名**（`Θάνος Μικρούτσικος` 在 Discogs 是斜線並列形，池中那張 1979 年碟是單掛名——**不同碟**）；**同名但不同盤**（第 2137 條末段的七個盤名，逐筆核完真的同碟 0 筆）。
+
+---
+
+## 第 2143 條（a 組）：**第 315 條結算**
+
+**`prop-a.json` 20 筆 ＋ 本段退表 1 筆 ＝ 21 ＝ `slice.json` 的 `g === "a"` 筆數。✔**
+
+### 退表（逐筆、附理由分類）
+
+| # | 卡 | 理由分類 | 條 |
+|---|---|---|---|
+| 1 | **Dr. John and the Lower 911《Sippiana Hericane》2005**（RG `46d6e500`） | **非 Album 形態（EP，7 軌 25 分／Discogs `format` 逐字 `CD, EP`），未落在 §5.5 白名單** | **第 2127 條** |
+
+**因撞池退 0、判為合輯退 0、原盤他廠改判退 0、非 Blue Note imprint 退 0、曲風退 0。**
+
+---
+
+## 第 2144 條（a 組，**⚠ 派工信與原文／既有裁定牴觸之處**）
+
+派工信第一節逐字要求「本信若與原文牴觸，以原文為準，並在交件回報裡指出本信哪一句寫錯了」。**本棒查到一句**：
+
+> **派工信第三節第 3 點：「`Paolo Fresu 5et Plays the music of Roberto Cipelli《Kosmopolites》2005` 與 `…Plays the music of Ettore Fioravanti《Thinking》2006`——MB 把「Plays the music of X」寫進了 artist credit。**掛名取 MB credited-name 串接那一種**（第 1539 條原文，不是「取 `&`」）。」
+
+**這一句有兩處錯**：
+
+1. **它把第 1539 條的適用範圍寫寬了。** 第 1539 條（`c158/rulings.md`）原文處理的是**並列聯名的連接形**；**本例的第二格是作曲者兼團員、joinphrase 是一句盤名片語**，不是並列聯名，前提不成立。**第 1745-B 條更正後的判準句逐字是「並列聯名的連接形，取 MB `credited-name` 與 joinphrase 串接出來的那一種」——「並列聯名」四個字是條件。**
+2. ⚠ ⚠ **它與 c-160 b 已建卡單的先例直接牴觸。** **`Paolo Fresu Quintet《Rosso, verde, giallo e blu》`（RG `48da0c29`，c-160 b／`c160-cards.json` 已有）是完全同形的一筆**（同一個 MB 實體 `8799705f`、同一個 credited-name `Paolo Fresu 5et`、同一個 joinphrase ` Plays the music of `），**c-160 b 判的是 `Paolo Fresu Quintet`**。照派工信執行會**在同一位藝人的同一個編制上造出兩種字串**——正是第 1418 條點名的那種分裂。
+
+**→ 本棒照原文與先例判 `Paolo Fresu Quintet`（第 2129 條）。**
+
+⚠ **另記兩句不算牴觸、但與實況有出入的**：
+- 派工信第三節第 4 點說 U-Street 等芬蘭／歐洲分支「不要因為是歐洲分支就排除」——**正確，本棒一張都沒有因此退**；但**簡報第三節「這一段店面命中率應該很高」在本批不成立**（20 張裡 6 張 Apple 三種查法全部查無、10 張 CAA 404），原因見第 2138 條。
+- 派工信第三節第 5 點說希臘文掛名要「卡池掃描兩種字形都掃」——**已照做**（第 2131 條）；但它沒提到 **Discogs／Apple 把 Gary Burton 並列進掛名**這件事，那才是這張真正的掛名爭點。

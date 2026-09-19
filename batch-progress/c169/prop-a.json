@@ -288,5 +288,102 @@
   "why": "義大利人聲爵士歌手 Alice Ricciardi（MB d30aa77d Person／IT）的首張盤，Blue Note 義大利出品、日本 Toshiba-EMI 同步發行。曲目以美國歌本為主（〈Comes Love〉本身是 1939 年的 Brown／Stept／Tobias 曲），配義大利本地的當代節奏組，唱法走的是低音量、貼麥克風、不帶抖音的路線——Discogs styles 逐字 `Vocal`。她後來 2014 年的第二張《Optics》出在 Greg Osby 的 Inner Circle Music（Discogs 7079478 的宣傳文逐字提到「Debut album \"Comes Love\" was released on Blue Note/EMI」），**而 Greg Osby 本人在池中已有 14 張**，兩條線在此交會。實掃卡池：`Alice Ricciardi` seed 0 列、待上架批次 0 張。",
   "risk": "⚠ ⚠ **MB 只建了日版，義版才是原盤**（第 642 條：換端點組合之後仍然只有一筆——這是 MB 真的缺，不是沒問到）。`release?release-group=<id>&inc=media+labels` 只回 3e48ed76（TOCJ-66445，country 欄空）；**Discogs 有四筆義大利條目（5973930／38237157 零售、31184011 宣傳、外加同目錄號重複建檔）**。**本卡 `label` 欄兩地都記，MBID 仍釘 RG 79855039（`mbNote` 第一個 UUID）。**⚠ 年份：MB frd 2008、Discogs 義版兩筆與日版皆 2008（日版有精確日 2008-05-14）、Apple us 713066337 releaseDate 2008-01-01（佔位值）＋ copyright 逐字 `℗ 2008 EMI Music Italy s.r.l.`——**四層一致取 2008，義日同年，不需要判首發地**。⚠ ⚠ **三個版本軌數各不相同：義版 13 軌／MB 記的日版 14 軌／Discogs 記的日版 15 軌／Apple 14 軌。** 日版的加軌是 OBI 帶版本的 bonus，**正文不得把 bonus 寫成原盤曲目**；下游試聽要註明用的是哪一版。⚠ (戊) 前置閘：Discogs 四筆的廠牌欄第一格逐字都是 `Blue Note`；MB label-info 逐字 `Blue Note [713c4a95]`；℗ 欄逐字 `EMI Music Italy s.r.l.`（母集團的義大利分公司，不是別家 imprint）——過閘。⚠ 店面（第 254 條，只寫觀察）：Apple us 713066337（14 軌），it／jp 兩店的盤名＋掛名搜尋落空、只有 us 命中；**CAA RG 層 404（0 圖）**，封面要走 Discogs 5973930（義版）或 12227249（日版含 OBI）。⚠ **盤名撞擊**：`Comes Love` 是標準曲名，同名盤在爵士圈不只一張——**下游引用這個盤名務必帶掛名 `Alice Ricciardi` 與年份 2008**。⚠ 掛名：MB／Discogs 四筆／Apple／slice 四邊逐字都是 `Alice Ricciardi`，無 anv、無聯名；池中 0 列，**新字串**。",
   "mbNote": "釘 release-group 79855039-b059-4389-add1-d3cfc7f6e633。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Comes Love」、first-release-date 2008（只有年份）、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`、tags 逐字 `jazz`、artist-credit 逐字 `Alice Ricciardi`（d30aa77d-27cd-405b-ae19-b611c75dce17，Person／IT）、轄下 **1** 個 release。release 端點（inc=media+labels+recordings+artist-credits）：3e48ed76（2008，**country 欄空**，Official CD 14 軌 59 分，Blue Note [713c4a95] TOCJ-66445，無 barcode）。**MB 沒有義版**——義版資料來自 Discogs 5973930／38237157／31184011（catno 50999-512842-2-0／-2-9，barcode 5099951284220）。"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "releaseType": "Album",
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Siena Concert；The Siena Concert (Live)（Apple 逐字）；Franco D'Andrea Quartet（ASCII 撇號形）；Blue Note 50999-520334-2-1",
+  "artist": "Franco D’Andrea Quartet",
+  "album": "The Siena Concert",
+  "year": 2008,
+  "label": "Blue Note 50999-520334-2-1（2008 IT CD 6 軌 77 分，MB release 413cce49，barcode 5099952033421；Discogs 義版原壓 2936002，format 逐字 `CD, Album, Stereo`，notes 逐字 `The concert was recorded live on July 26t[h]…`、`Music from EMI`）",
+  "why": "義大利鋼琴家 Franco D’Andrea 的四重奏（MB 群組 8145fd7d）在錫耶納的一場音樂會全紀錄：**只有 6 軌，卻是 77 分鐘**——平均一軌近 13 分鐘，等於把整晚的長篇即興原樣留下，這在 2008 年的 Blue Note 目錄裡是極少見的形狀。曲目除了自作（Into the Mystery／Slow Five／March，出版方分別是 Millesuoni 與 Pentaflowers）還有 Mingus 的〈Goodbye Pork Pie Hat〉（出版方逐字 `Jazz Workshop Inc./Complete Music Ltd`）。D’Andrea 是義大利戰後爵士鋼琴的第一代人物，池中零張。實掃卡池：`Franco D’Andrea Quartet`、`Franco D'Andrea Quartet`（ASCII 撇號形）、裸名 `Franco D’Andrea` 三形 seed 0 列、待上架批次 0 張（子字串命中的 `Chicken Shack —《Forty Blue Fingers…》` 是折鍵假陽性）。",
+  "risk": "⚠ ⚠ **這是本組唯一的現場盤**：MB `secondary-types` 逐字 `[\"Live\"]`、slice `live: true`、**Apple fr 713545183 的盤名逐字 `The Siena Concert (Live)`**、Discogs notes 逐字 `The concert was recorded live on July 26t…`——**四層一致**（第 1771 條那三種毛病本卡一個都沒中）。**`releaseType` 照 MB 原值寫 `Album`（第 1797 條先例），現場身分寫在這裡與 `queryAlias`，下游建卡時要標 live。**⚠ 年份：MB frd 2008、Discogs 2936002 年份欄 2008、Apple fr 713545183 releaseDate 2008-01-01（佔位值）＋ copyright 逐字 `℗ 2008 EMI Music Italy s.r.l.`——三層一致取 2008。**Discogs notes 的演出日期被截成 `July 26t`（年份未印全），研究層要補**；本卡不把演出年寫進正文。⚠ ⚠ **掛名含 U+2019（`D’Andrea`）**：MB artist-credit 與 slice 逐字用的是彎撇號 U+2019，**Discogs 2936002 與 Apple fr 逐字用 ASCII 撇號 `D'Andrea`**。**本卡照 MB／slice 取 U+2019 形**（`chk-prop` 只擋非 ASCII 連字號與 U+30FC 誤用，U+2019 不在擋列），**ASCII 形進 `queryAlias`；下游做店面比對時兩形都要試**。⚠ (戊) 前置閘：Discogs 廠牌欄逐字單一 `Blue Note`；MB label-info 逐字 `Blue Note [713c4a95]`；notes 的 `Music from EMI` 與出版商欄的 `EMI Music Publishing Italia Srl` 是出版（publishing）不是 imprint——過閘。⚠ 店面（第 254 條，只寫觀察）：Apple fr 713545183（**6 軌，與 MB／Discogs 相符**），**us 店查無**；**CAA RG 層 404（0 圖）**，封面要走 Discogs 2936002。⚠ **6 軌不是 EP**：總長 77 分鐘，MB primary-type Album、Discogs format 無 `EP`——與本組退件的 Dr. John（7 軌 25 分、Discogs format 逐字 `CD, EP`）是相反的形狀。",
+  "mbNote": "釘 release-group 63bf308a-b38f-4bc8-8e04-2128cd689ed4。release-group 端點（inc=artist-credits+genres+tags+releases）：title「The Siena Concert」、first-release-date 2008（只有年份）、primary-type Album、**secondary-types 逐字 `[\"Live\"]`**、genres 逐字 `contemporary jazz`／`jazz`、tags 同、artist-credit 逐字 `Franco D’Andrea Quartet`（8145fd7d-1967-4275-afce-fb778a240d49，Group／IT，掛名含 U+2019）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：413cce49（2008 IT Official CD 6 軌 77 分，Blue Note [713c4a95] 50999-520334-2-1，barcode 5099952033421）。"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "releaseType": "Album",
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Five for Fun；Five For Fun；High Five（Discogs anv／Apple 用的短形）；The High Five Quintet；TOCJ-66462（日版）／50999-227843-2-2（義版）",
+  "artist": "High Five Quintet",
+  "album": "Five for Fun",
+  "year": 2008,
+  "label": "Blue Note 50999-227843-2-2（2008 IT CD 10 軌，Discogs 義版 16217874，barcode 5099922784322，廠牌鏈逐字 `Blue Note` ＋ `EMI Music Italy S.r.l.`）；日版 Blue Note TOCJ-66462（**MB 唯一建檔的 release 5a296e60，2008-11-19，12 軌 77 分**；Discogs 4149843，13 軌，廠牌鏈 `Blue Note` ＋ `EMI Music Japan Inc` ＋ `EMI Music Italy S.r.l.`，notes 逐字 `Recorded on January 8 to 10, 2008. Mixed on January 21 to 23, 2008.`、`Comes with obi and additional insert with liner notes in Japanese.`，日文解說 Mitsuru Ogawa）",
+  "why": "義大利 High Five（MB 群組 6e062659：Fabrizio Bosso 小號／柔音號、Daniele Scannapieco 次中音、Luca Mannutza 鋼琴、Pietro Ciancaglini 低音提琴、Lorenzo Tucci 鼓）——2000 年代義大利硬咆勃復興的核心編制——在 Blue Note 的盤，2008 年 1 月 8–10 日錄音、1 月 21–23 日混音。曲目除自作外收了 Kenny Dorham 的〈Ojos de Rojo〉與 Woody Shaw 系的〈Inception〉，Discogs styles 逐字 `Latin Jazz`。**日本 Blue Note 為它另配了 TOCJ 編號並加寫日文解說**，是義大利團少有的日本同步待遇。實掃卡池：`High Five Quintet`、`The High Five Quintet`、`High Five` 三形 seed 0 列、待上架批次 0 張；`Fabrizio Bosso` 裸名亦 0 列（c-156 第 1418 條記過 MB 有 `Fabrizio Bosso & Flavio Boltro Quintet` 這個群組，池中未收）。",
+  "risk": "⚠ ⚠ **MB 只建了日版**（`release?release-group=<id>&inc=media+labels` 只回 5a296e60，TOCJ-66462，country 逐字 JP，frd 2008-11-19）；**義版 50999-227843-2-2 只在 Discogs 16217874**。**義版與日版同年（2008），`year` 取 2008 不受影響**；但**「首發地是義大利還是日本」本層無法定案**——MB frd 的 2008-11-19 是日版日期，義版 Discogs 條目只有年份欄。**`risk` 記下，研究層若拿到義版的精確發行日要回填。**⚠ ⚠ **三個版本軌數不同：Discogs 義版 10 軌／MB 日版 12 軌／Discogs 日版 13 軌。** 日版多出的是 bonus，**正文不得把 bonus 寫成原盤曲目**。⚠ 掛名：**MB artist-credit 逐字 `High Five Quintet`（6e062659）＝slice**；**Discogs 兩筆的 `artists` 欄逐字是 `The High Five Quintet`、`anv` 逐字 `High Five`**——三形。**本卡取 MB／slice 的 `High Five Quintet`**（第 307 條：池中 0 列，新字串取 MB 形），另兩形進 `queryAlias`。⚠ **`High Five` 是極短的通用字串（第 179／250 條）**：拿它去搜店面會整頁假陽性（實查 Apple it／jp／us 三店回的是 Miles Davis《Kind of Blue》、Cannonball Adderley、Scotty McCreery……），**判池中有無一律看完整字串。**⚠ (戊) 前置閘：Discogs 兩筆的廠牌鏈第一格逐字都是 `Blue Note`；MB label-info 逐字 `Blue Note [713c4a95]`——過閘。⚠ 店面（第 254 條，只寫觀察）：**Apple it／jp／us 三店、三種查法全部查無本盤**（回的全是同名假陽性，含 `Ronald Baker Quintet —《Five for Fun》` 2004 Cristal Records——**同盤名不同碟，絕對不得採用**）；**CAA RG 層 404（0 圖）**，封面只能走 Discogs 4149843（日版含 OBI）或 16217874（義版）。⚠ 同團後續：Discogs 14876468 是他們 2009 年的《Live For Fun》（TOCJ-66496，日本 Blue Note）——**盤名只差一字、是另一張現場碟，不在本批，下游不得混用。**",
+  "mbNote": "釘 release-group 7def3aa8-6986-41cb-aa3b-53cb288b8c53。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Five for Fun」、first-release-date 2008-11-19、primary-type Album、secondary-types 空陣列、**genres 與 tags 都是空的**（第 1557 條那一批）、artist-credit 逐字 `High Five Quintet`（6e062659-af60-438b-8c99-9b9a412e98c0，Group／IT，member 欄：Fabrizio Bosso 小號／柔音號、Daniele Scannapieco 次中音、Luca Mannutza 鋼琴、Pietro Ciancaglini 低音提琴、Lorenzo Tucci 鼓）、轄下 **1** 個 release。release 端點（inc=media+labels+recordings+artist-credits）：5a296e60（2008-11-19 JP Official CD 12 軌 77 分，Blue Note [713c4a95] TOCJ-66462，barcode 4988006868045）。**MB 沒有義版**——義版資料來自 Discogs 16217874（catno 50999-227843-2-2，barcode 5099922784322）。"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "releaseType": "Album",
+  "selfTitled": false,
+  "genres": [
+   "jazz",
+   "pop"
+  ],
+  "queryAlias": "55/21；Musica Nuda（Petra Magoni & Ferruccio Spinetti 的團名）；Blue Note 509992137732 7（2008 法版）／50999 644242 2 4（2012 義版再發）",
+  "artist": "Musica Nuda",
+  "album": "55/21",
+  "year": 2008,
+  "label": "Blue Note 509992137732 7（2008-06 FR CD 17 軌 55 分，MB release 86716ef4，barcode 5099921377327；Discogs 法版原壓 3387869 廠牌鏈逐字 `Blue Note` ＋ `Bonsaï Music` ＋ `EMI Music France`，format 逐字 `CD, Album, Jewel Case`）；2012 義版再發 Blue Note 50999 644242 2 4（MB 3f5ea478，Discogs 9406580，format 逐字帶 `Reissue`、notes 逐字 `Re-édition 2012`）",
+  "why": "Petra Magoni（人聲）與 Ferruccio Spinetti（低音提琴）的二人組（MB 群組 b7840712，disambiguation 逐字 `Petra Magoni & Ferruccio Spinetti`）——**一把貝斯配一個人聲、沒有第三件樂器**，這個極簡編制本身就是他們的整套美學。《55/21》是他們進 Blue Note／Bonsaï 之後的一張，17 軌 55 分鐘，曲目橫跨爵士標準曲、義大利歌謠與流行改編（MB 的 RG 端 genres 逐字 `jazz`／`pop`，Discogs genres 逐字 `Jazz, Pop`）。實掃卡池：**`Musica Nuda` 這個字串 seed 0 列、待上架批次 0 張**；`Petra Magoni`／`Ferruccio Spinetti` 兩個裸名亦 0 列（子字串命中的 `Petra —《Petra》`(1974)、`Petra —《Come and Join Us》`(1977) 是 c-72 的美國基督搖滾團，假陽性）。**⚠ 本批 b 組另有這個團的兩張（2011《Complici》、2013《Banda larga》）——掛名字串已在本層定案，見 `risk`。**",
+  "risk": "⚠ ⚠ **跨組掛名定案（第 1418 條：同一位藝人被兩組各判一次是已知的分裂來源）：判 `Musica Nuda`，b 組的《Complici》(2011) 與《Banda larga》(2013) 一字不差照用。** 四邊實查：**MB artist-credit 單一 Group 實體 `Musica Nuda`（b7840712-9e9a-4acb-a40a-8e337bd060f3）**；**Discogs 兩筆（3387869／9406580）的 artists 欄逐字 `Musica Nuda`、無 anv**；**Apple fr 332543854 逐字 `Musica Nuda`**（同店的 425341018《Complici》2011 也逐字 `Musica Nuda`）；**slice 逐字 `Musica Nuda`**——四邊一致，無分歧。⚠ **但有一個會造分裂的鄰居**：他們 2004 年的兩張（Apple fr 178823140《Musica nuda》、205274814《Musica Nuda (Bonus Track Version)》）與 2006 年的《Musica nuda - Live à Fip》(260702636) **在 Apple 上掛的是 `Petra Magoni & Ferruccio Spinetti`**——**那是 2004–06 年的舊掛名，不是本卡的字串；日後若那幾張進批次，要照第 1131 條當成不同時期的掛名處理，不得回頭改本卡。**⚠ 年份：MB frd 2008-06、Discogs 法版 3387869 年份欄 2008、Apple fr 332543854 releaseDate 逐字 2008-05-12——**取 2008**（Apple 的 5 月與 MB 的 6 月差一個月，只記不改判）。**2012 義版（3f5ea478／9406580）format 逐字帶 `Reissue`、notes 逐字 `Re-édition 2012`，是再發，不另立一張卡。**⚠ (戊) 前置閘**訊號不乾淨、但過閘**：**Apple 的 ℗ 欄逐字 `℗ 2008 Magoni-Spinetti under exclusive license to Bonsai Music`**——依第 1748 條的結論句，**「藝人自己的公司 ＋ `under exclusive license`」是五次裡五次的假陽性，一律過閘**；且 **Discogs 法版零售條目的廠牌鏈第一格逐字就是 `Blue Note`**（第二格 `Bonsaï Music`、第三格 `EMI Music France`），MB 兩筆 release 的 label-info 逐字都是 `Blue Note [713c4a95]`。⚠ **盤名 `55/21` 含斜線**：`chk-prop` 的折鍵會把它剝成 `5521`，**下游做檔名與 URL 時要注意；引用盤名務必帶掛名。**⚠ 店面（第 254 條，只寫觀察）：Apple fr 332543854（**17 軌，與 MB／Discogs 相符**），**it 店查無**；CAA RG 層 1 圖，來源 release 逐字 86716ef4（2008 法版原壓本身）。",
+  "mbNote": "釘 release-group 0e0c7e5a-ed3f-378e-a2c6-1ede52ab81bd。release-group 端點（inc=artist-credits+genres+tags+releases）：title「55/21」、first-release-date 2008-06、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`／`pop`、tags 同、artist-credit 逐字 `Musica Nuda`（b7840712-9e9a-4acb-a40a-8e337bd060f3，Group／IT，disambiguation 逐字 `Petra Magoni & Ferruccio Spinetti`，member 欄：Petra Magoni 主唱、Ferruccio Spinetti 低音提琴）、轄下 2 個 release。release 端點（inc=media+labels+recordings+artist-credits）：86716ef4（**2008-06 FR** Official CD 17 軌 55 分，Blue Note [713c4a95] 509992137732 7，barcode 5099921377327）、3f5ea478（2012 IT Official CD 17 軌，Blue Note 50999 644242 2 4，barcode 5099964424224，**再發**）。"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "releaseType": "Album",
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Free Runner；Juliano Rossi；Blue Note 5099969316623（MB catno 欄空，Discogs 用 barcode 當 catno）",
+  "artist": "Juliano Rossi",
+  "album": "Free Runner",
+  "year": 2009,
+  "label": "Blue Note（2009-02-27 DE CD 13 軌，MB release 9a74eb81，barcode 5099969316623，**MB 的 catalog-number 欄是空的**；Discogs 歐版原壓 8203661 的 catno 欄逐字填 barcode `5099969316623`、廠牌欄逐字單一 `Blue Note`，format `CD, Album, Stereo`；另有 2008 年宣傳盤 Discogs 27589527，catno 逐字 `50999 6 931672 2`，format 帶 `Promo`）",
+  "why": "德國歌手 Juliano Rossi（MB 72ee0d29 Person）在 Blue Note 德國的盤，13 軌。它的製作班底是德國流行圈的人：Discogs notes 逐字「All Songs produced by Juliano Rossi / All Songs composed by Oliver & Lutz Krajenski / Lyrics by Oliver Perau」，錄音在漢諾威的 Marlene 與 Kiosk 兩間錄音室；唯一的外來曲是 Bacharach／David 的〈I Wake Up Crying〉，另錄於 Jens Nick 處。這是 2000 年代末 Blue Note 各國分支「本地男聲＋大編制編曲」那一路的德國版本，MB 的 RG 端 genres 逐字 `jazz`。實掃卡池：`Juliano Rossi` seed 0 列、待上架批次 0 張。",
+  "risk": "⚠ 年份：**MB frd 2009-02-27（精確日）、Discogs 零售 8203661 年份欄 2009、Apple de／us 716215950 releaseDate 2009-01-01（佔位值）**——取 2009。⚠ ⚠ **Discogs 27589527 是 2008 年的宣傳盤（format 逐字帶 `Promo`、catno `50999 6 931672 2` 與零售版不同）**——**依第 1505 條，宣傳盤不當廠牌／目錄號／年份依據**，不改判 2008。⚠ ⚠ **第 1250 條在本卡的第三種形狀**：**MB release 的 `catalog-number` 欄整格是空的，Discogs 則把 barcode `5099969316623` 填進 catno 欄**——**兩邊都沒有真正的目錄號**。**判「同一張碟」只能靠「廠牌（Blue Note）＋ barcode 5099969316623」，不得拿 `5099969316623` 當目錄號去反查別的碟。**⚠ (戊) 前置閘**訊號不乾淨、但過閘**：**Apple 的 ℗ 欄逐字 `℗ 2009 Oliver Perau`**（第一格不是 Blue Note）——查完是**本盤的作詞者兼製作夥伴的個人名義**，屬第 1748 條列的第一種假陽性（藝人／製作方自己的名義）；**Discogs 零售條目的廠牌欄逐字單一 `Blue Note`**，MB label-info 逐字 `Blue Note [713c4a95]`（不是部門名 `2eb19785`）——過閘。⚠ ⚠ **軌數兩層不一致：MB 13 軌／Discogs 13 軌／Apple 15 軌**（Apple de 716215950 逐字 15 軌）——**多出的兩軌來源未核，下游試聽要註明用的是哪一版，正文不得把 Apple 那兩軌寫成原盤曲目。**⚠ **MB 的 release 完全沒有軌長**（13 軌 length 全空，總長算出來是 0 分）——**這不是「碟很短」，是 MB 缺資料**；判 EP 與否不得用這個數字，Discogs format 逐字 `CD, Album`（無 `EP`）。⚠ 店面（第 254 條，只寫觀察）：Apple de／us 716215950（15 軌）；**CAA RG 層 404（0 圖）**，封面要走 Discogs 8203661。⚠ 掛名：MB／Discogs 兩筆／Apple 兩店／slice 四邊逐字都是 `Juliano Rossi`；池中 0 列，**新字串**；第 307 條反查同字串只有這一個 MB 實體（type Person，country 欄空）。",
+  "mbNote": "釘 release-group 8adf251d-a5eb-3328-b2a9-6d4fc39efa2f。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Free Runner」、first-release-date 2009-02-27、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`、tags 逐字 `jazz`、artist-credit 逐字 `Juliano Rossi`（72ee0d29-9c1b-494d-bf9a-5eb9c4407f19，Person，country 欄空）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：9a74eb81（2009-02-27 DE Official CD 13 軌，Blue Note [713c4a95]，**catalog-number 欄空**，barcode 5099969316623；**13 軌的 length 全部為空**）。"
+ },
+ {
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "releaseType": "Album",
+  "selfTitled": false,
+  "genres": [
+   "jazz",
+   "pop"
+  ],
+  "queryAlias": "Zuhause；Kitty Hoff & Foret-Noire；Kitty Hoff und Forêt-Noire；Blue Note Germany 50999 6 96623 2 4",
+  "artist": "Kitty Hoff & Forêt-Noire",
+  "album": "Zuhause",
+  "year": 2009,
+  "label": "Blue Note 50999 6 96623 2 4（2009-04-24 DE CD 14 軌 50 分，MB release 8bba1524，**MB 的 catalog-number 欄是空的**，barcode 5099969662324；Discogs 德版原壓 5688942 的廠牌鏈逐字 `Blue Note Germany` ＋ `EMI`，format `CD, Album`；另有無編號的宣傳 CDr 24834086，廠牌鏈同）",
+  "why": "德國歌手 Kitty Hoff 與她的樂團 Forêt-Noire（MB 群組 117b1d13，member 欄：Kitty Hoff（original）、Phil Marone、Florian Achatzy、Mark Wenzel、Moe Jaksch）的 Blue Note 盤，14 軌 50 分鐘，唱的是德語——**這是德語 chanson 與爵士編制的交會點**，不是把德語歌塞進爵士框架，而是把香頌那套敘事語法整個搬到小編制爵士上（樂團名 Forêt-Noire＝黑森林，本身就是德法之間的雙關）。Blue Note 德國分支在 2009 年前後只出過幾張本地語言的碟，這是其中一張。實掃卡池：`Kitty Hoff & Forêt-Noire`、`Kitty Hoff`、`Forêt-Noire`（含去變音符折鍵 `foretnoire`）三形 seed 0 列、待上架批次 0 張。",
+  "risk": "⚠ 年份：MB frd 2009-04-24（精確日）、Discogs 5688942 年份欄 2009、Apple de 713057677 releaseDate 2009-01-01（佔位值）＋ copyright 逐字 `℗ 2009 EMI Music Germany GmbH & Co KG`——三層一致取 2009。⚠ ⚠ **(戊) 前置閘要特別看一眼**：**Discogs 廠牌鏈第一格逐字是 `Blue Note Germany`，不是裸的 `Blue Note`**。查完：**這是 Blue Note 的德國分支標記，不是 2026-09-18 附錄點名的兩個「名字有 Blue Note 但不算家族」的廠牌**（`Blue Note Compagnie`＝法國獨立小廠、`BNS-` 目錄號；`Blue Note Digital`＝MB label 0293ae5c、barcode 810211 段）——**本盤 barcode 5099969662324 屬 EMI 的 50999 段，MB label-info 逐字 `Blue Note [713c4a95]`（正規 imprint，不是部門名 `2eb19785`）**，與本組其他芬蘭／義大利分支盤同形（`Oy EMI Finland Ab`／`EMI Music Italy`）。**過閘。**⚠ **第 1250 條**：**MB release 的 `catalog-number` 欄整格是空的**，目錄號 `50999 6 96623 2 4` 只有 Discogs 有——判同碟以「Blue Note ＋ barcode 5099969662324」為準。⚠ 掛名：MB／Discogs 兩筆／Apple de／slice 四邊逐字都是 `Kitty Hoff & Forêt-Noire`（`ê`＝U+00EA，連字號是 ASCII `-`），**四邊一致、無 anv、無 `and` 形**；池中 0 列，**新字串**。⚠ 曲風：**這是第 1559 條點名的五張邊界張之一（德語 chanson-jazz），已通過 jazz 判準進 slice，本層不以曲風退件**；MB 的 RG 端 genres／tags **都是空的**（第 1557 條那一批），Discogs genres 逐字 `Jazz, Pop`——取 `[\"jazz\",\"pop\"]`。⚠ 店面（第 254 條，只寫觀察）：Apple de 713057677（**14 軌，與 MB／Discogs 相符**），us 店查無；**CAA RG 層 404（0 圖）**，封面要走 Discogs 5688942。⚠ 宣傳 CDr 24834086 的 `year` 欄逐字 `undefined`、catno 逐字 `none`——**第 1505 條：宣傳盤不當年份或目錄號依據。**",
+  "mbNote": "釘 release-group 43a7648f-52d4-45d3-910e-f6f1666a9ac2。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Zuhause」、first-release-date 2009-04-24、primary-type Album、secondary-types 空陣列、**genres 與 tags 都是空的**（第 1557 條那一批）、artist-credit 逐字 `Kitty Hoff & Forêt-Noire`（117b1d13-4b80-44b4-b353-2be284de52ac，Group／DE，member 欄：Kitty Hoff（original）、Phil Marone、Florian Achatzy、Mark Wenzel、Moe Jaksch）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：8bba1524（2009-04-24 DE Official CD 14 軌 50 分，Blue Note [713c4a95]，**catalog-number 欄空**，barcode 5099969662324）。"
  }
 ]
