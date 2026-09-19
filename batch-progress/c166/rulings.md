@@ -892,3 +892,108 @@ b 組的裁定在本檔**分成兩段**，中間夾著 a 組的 1960–1985：
 | **新造分裂** | **0**（不變） |
 
 **第 1972 條的其餘內容（掃描清單實況、四處人工核掉的分裂、一處跨文字系統）全部不變。**
+
+---
+
+## c-166 a 組 研究層裁定　號段 2246–2295
+
+（本節一律 append 於檔末，不整檔覆寫、不碰 a 組策展的 1960–1989 與 b 組的 1990–2007——第 1743-B(四) 條。）
+
+### 第 2246 條（交件總表）
+
+| 項目 | 值 |
+|---|---|
+| 產出檔 | `desc-tools/batches/research/c166-a.json` |
+| 張數 | **23／23**（`key` 逐字複製自 `desc-tools/batches/cards/c166-cards.json` 的 `group === "a"`，含 22 個 `desc2:` 與 1 個 `desc4:`（`山中千尋`）前綴） |
+| `facts` 條數分佈 | **12 條 ×21 張、13 條 ×2 張**（`Dolce Vita`／`The Sky Will Still Be There Tomorrow`），合計 **278 條**，每條都帶完整 `https` `src`，`qa-batch` 的「src 不是完整 https 網址」0 筆 |
+| `status`／`coverage` | **23 張全部 `full`**（兩欄同值並存） |
+| `hookCandidates` | 每張 2 條，未超上限 |
+| `node qa-batch.mjs research c166` | **a 組旗標 0**（過程中出現過的兩筆已修掉，見第 2252 條）；`互指?` **0 行**（該檢查只在 hook／out 兩階段輸出，research 階段結構上不會產生，第 1763-B 條無可判讀之處） |
+| 用掉的號段 | **2246–2254**（2255–2295 未用） |
+
+### 第 2247 條：③ 來源層各查法的命中率——`wp-json/wp/v2/posts` 是本批的主力
+
+派工信給的優先序逐一實測（查詢字串一律去掉撇號，**`O%27Farrill` 回 0 筆、`Ofarrill` 回 3 筆，撇號會讓 `search` 落空**）：
+
+| 查法 | 覆蓋張數 | 說明 |
+|---|---:|---|
+| **(1) `bluenote.com/wp-json/wp/v2/posts?search=`** | **19／23** | 回 `content.rendered` 全文，發片稿、單曲稿與獎項稿都在裡面；本批絕大多數的引號逐字都出自這一層 |
+| **(2) `bluenote.com/artist/<slug>/`** | **1／23 為決定性**（`Erik Truffaz`，兩張碟都靠它的傳記段） | 其餘藝人頁的內容都被 (1) 涵蓋 |
+| (3) `bluenote.com/?s=` | 0（本棒未再用，(1) 已足） | — |
+| **(4) `universal-music.co.jp`** | **1／23**（`山中千尋《Dolce Vita》`，`chihiro-yamanaka` 200） | 該頁是本卡唯一的官方敘事來源，含編制、錄音年月、錄音地與題旨 |
+| (5) 藝人官網 | **0／1 成功**（`markknopfler.com` 的 `/biography/` 是 JS 渲染、`wp-json` 的 `posts` 回 0 筆，只有 `pages/54` 一筆標題為 `One Deep River` 但無 `content` 欄） | `eriktruffaz.com` 回 526、`bluenote.fr` 被 proxy 擋 |
+
+**③ 層整批落空的只有 3 張**：`Erik Truffaz` 兩張（法國線，`wp-json` 以 `Truffaz`／`Rollin`／`Clap` 查皆 0 筆，只有藝人傳記頁）與 `Norah Jones《Little Broken Hearts: Live at Allaire Studios》`（`wp-json` 以 `Allaire`／`Little Broken Hearts` 查只回母體專輯與豪華版的稿，沒有本碟專屬稿）。**這三張的專輯層事實改以 Discogs 條目的 `credits`／`companies`／`notes` 欄為主**，已逐張寫進 `notes`。
+
+### 第 2248 條：獎項逐項核定——本批 6 筆，全部分清屆數／類別／入圍或得獎
+
+| 卡 | 獎項 | 判 | 交叉核 |
+|---|---|---|---|
+| `Meshell Ndegeocello《The Omnichord Real Book》` | 第 66 屆葛萊美 **最佳另類爵士專輯** | **先入圍（2023-11-10 公布）後得獎（2024-02-05 官方稿），且是該獎項首屆得主** | 英文維基第 66 屆條目該類別第一筆（粗體＝得主）逐字就是本碟 |
+| `Julian Lage《Speak to Me》` | 第 67 屆葛萊美 **最佳當代器樂專輯** | **入圍，未得獎** | 得主為 Taylor Eigsti《Plot Armor》（維基第 67 屆該類別粗體條目） |
+| `Gregory Porter《Christmas Wish》` | 第 67 屆葛萊美 **最佳傳統流行人聲專輯** | **入圍，未得獎** | 得主為 Norah Jones《Visions》 |
+| `Mark Knopfler《One Deep River》` | 第 67 屆葛萊美 **最佳美式根源歌曲**，單位是〈Ahead of the Game〉這**首歌**不是專輯 | **入圍，未得獎** | 得主為 Sierra Ferrell 與 Melody Walker 的〈American Dreaming〉 |
+| `Ron Miles《Old Main Chapel》`（藝人生涯） | 第 61 屆葛萊美 **最佳爵士器樂專輯**，以樂手身分列名 Joshua Redman《Still Dreaming》 | **入圍，未得獎** | 得主為 The Wayne Shorter Quartet《Emanon》 |
+| `Chris Botti《Vol. 1》`（藝人生涯） | 第 55 屆葛萊美 **最佳流行器樂專輯**，作品《Impressions》 | **得獎**（2013-02-10）；另《Italia》2008 年入圍同類別、《Chris Botti in Boston》2010 年三項入圍 | 英文維基 Chris Botti 條目的獎項表 |
+
+**兩筆累計型的宣稱已標明「是累計得獎數、與本碟無關」**：`Arturo O'Farrill` 的 `the 8-time GRAMMY-winner`（另補一項可逐項核到的得獎：2015 年最佳拉丁爵士專輯《The Offense of the Drum》）與 `Norah Jones《Playing Along》` 的 `9-time GRAMMY Award winning`。
+**其餘 15 張逐一查過，本碟本身無任何葛萊美入圍或得獎紀錄**（第 66／67 屆的 Blue Note 官方入圍名單兩篇已全文讀過）。
+**非葛萊美的獎項兩筆**：`Erik Truffaz` 的 1991 年 Prix Special（官網傳記逐字 bestowed，**得獎**）、`Harold López-Nussa` 的 2005 年蒙特勒爵士鋼琴大賽（官方稿逐字 winning，**得獎**）。
+
+### 第 2249 條：**策展層（`prop-a.json`）被推翻或補正的逐筆清單——硬錯誤 1 處、不精確 2 處，其餘 20 張零推翻**
+
+派工信要求「策展層的 `why`／`risk` 若與你查到的衝突，以你的來源為準，並逐筆寫進交件回報」。逐張比對後：
+
+1. ⚠ **`Chris Botti《Vol. 1》` 的 `why` 把合作名單寫成含 `Steven Tyler`。** 本棒抓到的三份 2023 年發片稿（`chris-botti-announces-blue-note-debut-vol-1`／`chris-botti-my-funny-valentine-featuring-joshua-bell`／`chris-botti-teams-with-singer-john-splithoff-on-romantic-new-single-paris`）**逐字名單是 Sting、Paul Simon、Barbra Streisand、Lady Gaga、Tony Bennett、Frank Sinatra、Aretha Franklin、Bette Midler、Joni Mitchell、Andrea Bocelli、Herbie Hancock、Yo-Yo Ma，沒有 Steven Tyler**（策展層引的是藝人頁的傳記段，本棒引的是發片稿，兩者不同源）。**本稿不引用該名單**，改引可逐字核到的其他事實。
+2. ⚠ **`Arturo O'Farrill《Legacies》` 的 `why` 把〈Obsession〉歸進「Herbie Hancock、Monk、Sonny Rollins、Bud Powell 與 Carla Bley 的曲目」那一串。** 官網逐字把它歸給**波多黎各作曲家 Pedro Flores**，另把〈Pure Emotion〉歸給他父親 Chico O'Farrill。**本稿照官網寫。**
+3. ⚠ **`Chris Botti《Vol. 1》` 的 `why` 把〈Paris〉當成一般單曲列出，未寫明它是全碟唯一的人聲曲。** 官網逐字 `the vocal feature "Paris" with John Splithoff`。**本稿補上。**
+
+**另有 3 處是策展層沒查、本棒補進來的關鍵事實**（不算推翻，但下游會用到）：`Dave McMurray《Grateful Deadication 2》` 的錄音地與工程師（Clubhouse Studios、Elliot Scheiner、四天四夜）與出版公司 Ice Nine（Grateful Dead 自己的出版社）；`Ron Miles《Old Main Chapel》` 的製作人 Hans Wendl 與五位解說執筆者；`山中千尋《Dolce Vita》` 的**整張碟是 Wayne Shorter 致敬盤、末兩軌另悼坂本龍一**——**這一點策展層的 `why`／`risk` 完全沒有，而它是本卡的主故事。**
+
+**策展層的軌數釘定、掛名判定、碼位判定、(甲)～(己) 判定，本棒逐張複核後全部成立，零推翻。**
+
+### 第 2250 條：**本派工信與 base 檔／既有裁定牴觸之處——2 處**
+
+1. ⚠ **派工信第三節說「`③` 來源層的查法優先序⋯(2) `bluenote.com/artist/<slug>/`，裸名與團名兩種形式都試」並附第 1751-B 條「一個樣本只證明一件事」的警語——這一句沒錯，但本批的實況是 (1) `wp-json` 幾乎把 (2) 完全覆蓋**（19／23 張的決定性逐字出自 (1)，(2) 只在 `Erik Truffaz` 一位身上是決定性的）。**不是牴觸，是優先序的權重在本批與派工信的預期不同，記下供後批參考。**
+2. ⚠ **派工信第四節第 3 點要求「`互指?` 逐筆人工判讀，第 1763-B 條」——`qa-batch.mjs` 的 `互指?` 只在 hook（第 265 行）與 out（第 332 行）兩個階段輸出，`research` 階段結構上不會產生任何 `互指?` 行。** 實跑 `node qa-batch.mjs research c166` 逐字確認 0 行。**這一句對研究層是空指令，建議主線在研究層的派工信裡拿掉，或改寫成「若有才判」。**
+
+**另有一處派工信寫對、本棒實測確認的**：第三節第 1 點說的兩張真缺（`Norah Jones《Playing Along》` 與《Little Broken Hearts: Live at Allaire Studios》）屬實，本棒未重跑串流回撈、也未碰 `previews.json`；`Little Broken Hearts (Deluxe Edition)` 的第二／三碟確實是 **2012 年的 Austin City Limits**（官網逐字 `a previously unreleased live version of the album that was recorded for Austin City Limits in 2012`），**不是 Allaire，已逐字寫進該卡的 `notes` 當硬警告。**
+
+### 第 2251 條：`Erik Truffaz` 兩張的反同構切角分配（同批同一個計畫的前後兩集）
+
+依 base 檔「同一批裡多張同源流的卡各張要指定不同切入面向並互寫排除」：
+
+- **《Rollin'》**：切角是**翻奏譜系**——Miles Davis 替 Louis Malle 寫的〈Ascenseur pour l'échafaud〉、Nino Rota／Michel Magne／John Barry／Morricone 的作者欄，以及演員 Sandrine Bonnaire 的人聲。
+- **《Clap!》**：切角是**版本差異與樂手身分**——CD 與黑膠第 6／8 軌對調（法版 CD 的 notes 欄逐字 `Tracklist corrected!`）、Philippe Sarde／Georges Delerue／Michel Colombier／Peter Ivers 的作者欄，以及「他罕見地收起 drum'n'bass 與嘻哈的節奏實驗」。
+- **兩張共用的生平段（父親的舞廳樂隊、十六歲聽《Kind of Blue》、2000 年簽進 Blue Note）只寫在《Rollin'》那張**，《Clap!》只取傳記裡的節奏實驗與鼓手更替兩句。**已在兩張的 `notes` 互相寫明排除。**
+
+同理，`Norah Jones` 兩張（《Playing Along》的 podcast 合作集 vs《…Allaire Studios》的整張重演）與 `Dave McMurray` 的續集關係也已各自在 `notes` 標明切角與必須提到前作。
+
+### 第 2252 條：`qa-batch` 結果——a 組旗標 0，唯一剩下的總標記來自 b 組缺 2 張
+
+首跑逐字三筆警告：`⚠ research-a 簡體字: 会`、`⚠ research-a 千分位逗號: 2,500`、`⚠ key 集合與卡單不一致`。
+
+1. **`会`** 出在 `山中千尋《Dolce Vita》` 一條 facts 逐字引用 `universal-music.co.jp` 商品頁的日文欄位 `発売元 ユニバーサル ミュージック合同会社`。**`会` 是日文新字體、與簡體字無法區分（base 檔字元條已預告這一類 QA 掃得到但語義上不是簡體）。** 本棒的處置是**改寫該句、不再逐字引用那個公司名**（改寫成「發行者是日本環球音樂」），保留同句其餘的 `SHM-CD`／`UCCJ-2227`／`Blue Note` 逐字。**旗標清掉。**
+2. **`2,500`** 出在 `Norah Jones《…Allaire Studios》` 一條 facts 逐字引用 Discogs 的英文 notes `Limited edition of 2,500 copies.`。**base 檔「數字不用千分位逗號」是硬規，且該條的資訊量不依賴逐字引號**，改寫成「限量 2500 張」。**旗標清掉。**
+3. **`key 集合與卡單不一致` 不是 a 組造成的**：`qa-batch` 第 211 行比的是 a＋b 兩組的 `key` 聯集對 45 張卡單，實跑逐字 `a 23`／`b 20`——**b 組目前是 20／22，缺 2 張**。a 組這一側逐張比對通過（`key 不在卡單` 0 筆）。**本棒不碰 `c166-b.json`（邊界明訂禁碰），這一項留給 b 組收尾。**
+
+複跑結果逐字：`a 23 full×23`／`b 20 full×20`／`⚠ key 集合與卡單不一致`／`總標記 1`。
+
+### 第 2253 條：三處交給下游的硬警告（都寫進了各卡的 `notes`，在此彙整供主線覆核）
+
+1. **`Gregory Porter《Christmas Wish》`**：Apple 上 2023 年的 12 軌原版已下架，us／jp 現在只剩 2024-12-06 的 `Christmas Wish (Deluxe)`（15 軌，`1779846239`），四個 UPC lookup 全回那一筆。**卡上的年份取 2023、正文照 12 軌敘述；固定試聽若配到 Deluxe 必須在備註寫明（第 646／865 條）。**
+2. **`Cautious Clay《KARPEH》`**：Apple 淨化／未淨化雙胞胎，關鍵字與三個 UPC 回的都是淨化版 `1692484931` 在前，**上架一律取 `1692470376`（explicit）**。
+3. **`Norah Jones` 兩張**：Apple 完全查無。**絕不可拿同名單曲 `1488043432` 或母體《…Little Broken Hearts》的 Apple 條目充數（第 528／707 條）。**
+
+另兩處提醒：**`Ron Miles《Old Main Chapel》` 的 `keyTracks` 只有〈I Will Be Free〉與〈New Medium〉兩首有官方逐字支撐**，另兩首取自 MB 軌名，已在 `notes` 標明供寫作層覆核；**`Charles Lloyd《The Sky Will Still Be There Tomorrow》` 的〈Balm in Gilead〉與〈Lift Every Voice〉在 Discogs 的版權欄逐字是 Public Domain**，正文若寫「全碟自作曲」會錯。
+
+### 第 2254 條：號段結餘
+
+**本節用掉 2246–2254，2255–2295 未用**，下一棒若沿用 a 組研究層的號段可從 2255 起。
+
+### 第 2255 條（收尾前重跑，更新第 2252／2254 條）
+
+交件前最後一次 `node qa-batch.mjs research c166`，**b 組已在此期間補齊到 22 張**，輸出逐字變成：
+`a 23 full×23`／`b 22 full×22`／`key 與卡單完全一致 ✓`／`全部通過 ✓`。
+**第 2252 條第 3 點記的那個 `⚠ key 集合與卡單不一致` 已自然消失，總標記 0；a 組這一側自始至終 0 旗標（兩筆字元類警告已於該條記載的方式修掉）。**
+**本節實際用掉 2246–2255，2256–2295 未用。**
