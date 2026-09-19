@@ -54672,7 +54672,16 @@
    "es:0→0",
    "pl:0→0"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "us",
+  "collectionId": 1434927808,
+  "appleTitle": "Origami Harvest",
+  "appleArtist": "Ambrose Akinmusire",
+  "appleYear": "2018",
+  "explicitness": "explicit",
+  "trackCount": 6,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9e/79/8b/9e798b76-0edb-1ea2-076e-ed3e7cc6210b/mzaf_18432509029852958035.plus.aac.p.m4a",
+  "note": "2026-09-19 研究 b 組覆核、主線採納——⚠ ⚠ **這推翻了策展層「Apple us 完全查不到、極可能走 unavailable」的結論，碟其實在架上。** 六軌，℗ 欄逐字 `Blue Note Records; ℗ 2018 UMG Recordings, Inc.`，`collectionExplicitness` 逐字 `explicit`；**us/gb/ca/fr/de/jp/au/nl/it/es/se/pl/br/mx/tw 十五個市場的 lookup 端點全部回同一筆**。⚠ ⚠ **這是 `0→0` 的第五種成因，本線沒記錄過：碟在店面裡、`lookup` 命中，但搜尋索引整個撈不到它。** 研究層把第 1753-B 條的四種成因逐條跑完、四種全部不成立：裸名 `/search` 回 27 筆涵蓋他 2007–2026 的個人碟與客座碟卻沒有這張；`term=Origami Harvest` 與其變體各 0 筆（同端點 `term=Origami` 回得出 10 筆別的碟，不是端點壞掉）；UPC 三種寫法在 us 全回 0；Apple 那筆的 `artistName` 逐字就是 `Ambrose Akinmusire`（不是本地語言形也不是團名形）。**唯一命中的路徑是拿 `apple-candidates.md` 裡探測層留下的候選 id 直接 lookup。**"
  },
  "Mark Knopfler|Down the Road Wherever": {
   "batch": "c164",

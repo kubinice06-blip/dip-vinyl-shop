@@ -1390,3 +1390,63 @@ c-163 writer-2 把鉤子層 `note` 要求的兩條對稱互指判定不寫，並
 
 ⚠ **`universal-music.co.jp` 的 slug 順序第三次實測**：`chihiro-yamanaka` 200／`yamanaka-chihiro` 404、
 `kyoto-jazz-sextet` 200／`sextet-kyoto-jazz` 404——**第 1751-B 條「兩種順序都要試」再次應驗。**
+
+## 第 1775-B 條（`0→0` 的第五種成因，本線第一次）：**碟在店面裡、`lookup` 命中，但搜尋索引整個撈不到它**
+
+c-164 b 把第 1753-B 條的四種成因**逐條跑完、四種全部不成立**，然後靠 `apple-candidates.md` 裡探測層留下的候選 id
+直接 `lookup` 命中 `Ambrose Akinmusire《Origami Harvest》` → **`1434927808`**（六軌、℗ 逐字 `Blue Note Records; ℗ 2018 UMG Recordings, Inc.`、`explicit`）。
+**us/gb/ca/fr/de/jp/au/nl/it/es/se/pl/br/mx/tw 十五個市場的 `lookup` 端點全部回同一筆。**
+
+**它排除四種成因的證據**：
+- 裸名 `/search` 回 **27 筆**、涵蓋他 2007–2026 的個人碟與客座碟，**就是沒有這張**（`limit=30`／加 `explicit=Yes` 結果相同）。
+- `term=Origami Harvest` 與各種變體**各 0 筆**——⚠ **同端點 `term=Origami` 回得出 10 筆別的碟，所以不是端點壞掉。**
+- **UPC 三種寫法在 us 全回 0。**
+- Apple 那筆的 `artistName` **逐字就是 `Ambrose Akinmusire`**——不是本地語言形、不是團名形、沒有 feat. 子句被吃進盤名。
+
+**⚠ ⚠ 這推翻了策展層「Apple us 完全查不到、極可能走 unavailable、別花工時」的結論。碟一直在架上。**
+
+**`0→0` 的成因至此五種，第 1753-B 條的處理順序改寫成**：
+> **第一步：先看 `batch-progress/<批>/apple-candidates.md` 有沒有探測層留下的候選 id——有就直接 `lookup`。**
+> **第二步：用「第一位藝人的裸名」`/search` 多市場反查藝人目錄。**
+> **第三步：UPC 反查。**
+> **四種掛名不同形的成因在第二步會現形；第五種（搜尋索引撈不到）只有第一步救得回來。**
+
+⚠ **這條的價值等同第 1753-B 條**：**它又把一張本來要判「版權缺口」的卡救回來了。**
+**兩條合起來的意思是：「`/search` 回 0」對「這張碟在不在架上」幾乎沒有證據力。**
+
+---
+
+## 第 1776-B 條（c-164 b 交件驗收，兩組合計 41 張研究層完成）
+
+19 張全 `full`、**facts 228 條（每張整齊 12 條）、`src` 全 https 228/228**、`hookCandidates` 皆 ≤2、
+`qa-batch research c164` **兩組同時通過、`key 與卡單完全一致 ✓`、警告 0**。
+**c-164 研究層合計 41 張、489 條 facts、`src` 全 https。**
+
+**(一) `Ron Carter & Danny Simmons` 的 explicit 覆核：店面沒有未消音版。**
+兩種查法掃過十五個市場，含 `beatnik` 的條目**只有 `1458903206` 一個 id**，`collectionExplicitness` 一律 `cleaned`。
+⚠ **軌層逐字**：第 2、6、8 軌 `cleaned`，其餘六軌 `notExplicit`——**已寫進 notes 供固定試聽避開那三軌。**
+
+**(二) 訂正策展層四處**，其中兩處是我自己裁定裡的錯：
+1. **第 1880 條的曲目出處錯了一筆**：實際是〈Totem〉〈Atomised〉〈F Maj Pixie〉〈Kora〉在 2020 年同名專輯、
+   **〈Bardo〉在 2018 年《A Humdrum Star》**、〈Protest〉在 2016 年《Man Made Object》。
+   ⚠ 〈Petit_a〉掃遍全部專輯只出現在本張與 2021 年《GGP/RMX》，**該棒刻意不替它指定出處**。
+2. **第 1858 條那筆黑膠／數位的關係**（已記在第 1774-B 條）。
+3. `Thomas Dutronc《Live Is Love》` **是現場拼盤不是錄音室碟**——Apple fr 的十六個軌名**逐字全部帶 `Live in <城鎮> / 2018`**，
+   MB `secondary-types` 亦逐字 `Live`。
+4. 同碟〈Rocking Chair〉**不是 Hoagy Carmichael**——Discogs 作曲欄逐字 `Gaby Concato` 與 `Norman Langolff`。
+
+**(三) ⚠ 五筆「不做連結」的自制值得記**（全部是第 1733-B 條的預防）：
+Discogs 小提琴欄的 `Richard Margitza` 與官網「父親是底特律交響樂團小提琴手」**不連成「他父親」**；
+第 3 軌人聲欄的三個 `Hodge` **不寫成家人**；序數只照 Billboard 原話寫「第二張個人專輯」、**不自行推算**；
+發片稿把 `Emeli Sandé` 拼錯 → **只引名單中拼法無誤的兩位**；〈Petit_a〉**不指定出處**。
+**「同姓不等於親屬」「欄位空白不是邀請推測」這兩句可以當研究層的通用自制。**
+
+**(四) ① 紙本把 `Rick Margitza《Hope》` 的 1991 釘死了**：
+`1991-02-02` 期新片欄逐字 `RICK MARGITZA Hope CD Blue Note B2-94858 CA B4-94858`；
+同期樂評欄稱它是 `second solo album`；**Top Contemporary Jazz Albums 榜六期**（03-02 新進 #22 → 04-27 最高 #11、在榜第 9 週 → 05-11 #15）。
+⚠ **這是第 1721／1791 條那個「`frd` 被數位年拉晚」形狀的最完整反證鏈**——**紙本在覆蓋範圍內時，它是最硬的一層。**
+
+**(五) ③ 實測 26 個路徑**：200 十三個、**404 十三個**；**301 本組 0 次、「200 但正文 0 字」0 次**。
+⚠ **`Mark Knopfler` 是「藝人頁 404 但新聞稿有」那一型**（第 1747-B 條），本組唯一一例。
+⚠ **`lonnie-smith` 裸名 404、要走 `dr-lonnie-smith`**——**第 1747-B 條「兩形都試」第四次應驗。**
+**③ 最終有素材的 16/19。**
