@@ -1,0 +1,156 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Nublues（Discogs 四筆條目的首字大寫形）；ジョエル・ロス（Apple jp artistName）；Joel Ross (3)（Discogs 同名消歧編號）",
+  "artist": "Joel Ross",
+  "album": "nublues",
+  "year": 2024,
+  "label": "Blue Note 00602458376623（Worldwide 2024-02-09 CD 10 軌 68 分；MB 609c8252 的 catalog-number 欄逐字只填 `5837662`；Discogs 29869387，barcode 602458376623，notes 逐字 `All tracks ℗2024 UMG Recordings, Inc. Blue Note Records except nublues ℗2023 UMG Recordings, Inc. Blue Note Records`）；黑膠 00602458376630（Discogs 29769334）／00602458376647（29824600）；法國宣傳 CD（30250757，format 逐字 `CD, Promo`）；XW 數位 92f5c4e0（MB）",
+  "why": "Joel Ross 的第四張 Blue Note 領班盤，2024-02-09 發行，在布魯克林 The Bunker Studio 錄音，他與 Walter Smith III 共同製作。Good Vibes 班底：Immanuel Wilkins 中音薩克斯風、Jeremy Corren 鋼琴、Kanoa Mendenhall 貝斯、Jeremy Dutton 鼓，Gabrielle Garo 長笛（第 4–6 軌）。十軌 68 分是「把藍調當成態度而不是曲式」的一張——三首取自標準曲庫（Coltrane〈Equinox〉〈Central Park West〉、Monk〈Evidence〉），〈Bach (God the Father in Eternity)〉把巴哈的聖詠拆進藍調行進，標題曲〈Nublues〉由全團五人共同掛名作曲。Metacritic 84／100，是他評價最高的一張。**實掃卡池：`Joel Ross` 在 seed 17,248 列、`desc-tools/batches/cards/` 全部卡單與各批 `prop-*.json` 皆 0 命中**；盤名 `nublues`／`Nublues` 反查 0。",
+  "risk": "⚠ 年份：MB frd 2024-02-09、Discogs 四筆原壓群 released 逐字全 2024-02-09、Apple us／gb／jp 同一 id 1718894439 releaseDate 逐字 `2024-02-09T08:00:00Z`、維基逐字 `Released February 9, 2024`——**取 2024**。⚠ **℗ 欄與發行年不同**：Apple 的 copyright 逐字 `Blue Note Records; ℗ 2023 UMG Recordings, Inc.`，Discogs notes 逐字說明只有標題曲是 ℗2023（先行單曲〈nublues (fade)〉2023-12-08 發行，Apple 1718857727）——**第 1601 條的既有形狀，℗ 不是年份證據**。第 1800-B 條第二種掃描補出兩款黑膠與法國宣傳 CD，無一更早、也沒有日版。⚠ 盤名字形：**MB 與 Apple 三店逐字都是全小寫 `nublues`，Discogs 四筆條目逐字是首字大寫 `Nublues`**——二比一取小寫形，大寫形進 `queryAlias`。⚠ **第 1250 條**：`slice.json` 與列舉檔的 `catno` 逐字 `5837662`（MB 的 catalog-number 欄也只填這一串），**裸數字反查會撞 Pro-Zak Trax 的 `583 766-2`**；真正可判同碟的是 `Blue Note ＋ 00602458376623`。⚠ **MB 的 `genres` 與 `tags` 兩欄都是空陣列**（第 1557 條那批「RG 端也空」的碟）——曲風改讀 Discogs：genre 逐字 `Jazz`、style 逐字 `Post Bop`，`post-bop` 不在十個合法值裡（第 1572 條），判 `['jazz']`。⚠ 撞陳列（第 845 條，不同次錄音不是撞卡）：〈Equinox〉〈Central Park West〉是 Coltrane 的曲子、〈Evidence〉是 Monk 的曲子，池中兩人各有多張卡；**正文不得把這三軌寫成 Ross 的原創**。⚠ 側人：Immanuel Wilkins 在池中已有 6 張卡（c-165／c-166／c-167），本卡是客座身分，不影響掛名（第 1131 條）。⚠ 掛名同批一致 `Joel Ross`（MB 6d09039b Person／US）；MB 另有同名合唱指揮 `02f84b16`，非本人。⚠ 店面（第 254 條）：Apple us／gb／jp 三店同一 id、10 軌與實體相符；`lookup?upc=602458376623` 亦命中。CAA release-group 層 1 圖，來源 release 逐字 609c8252（CD 版）。",
+  "mbNote": "釘 release-group 80bf36ec-d228-4bc3-8550-d523471024f6。`release-group?inc=artist-credits+genres+tags`：title 逐字「nublues」（全小寫）、artist-credit 單一 `Joel Ross`（6d09039b，Person／US，disambiguation 逐字 `US vibraphonist`）、first-release-date 2024-02-09、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆逐字空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條第二種組合已跑）：轄下 2 筆，皆 10 軌 68 分、label-info 逐字 `Blue Note [713c4a95]`——609c8252（2024-02-09 XW CD，catalog-number 逐字 `5837662`，**barcode 欄整格空**）與 92f5c4e0（2024-02-09 XW Digital Media，barcode 欄亦空）。**MB 未建兩款黑膠與法國宣傳盤；且因兩筆都沒有 barcode，第一種（barcode 反查）查法在本張完全跑不起來。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Out Of / Into（Discogs artists 欄帶空格的斜線形）；Motion I (feat. Gerald Clayton, Immanuel Wilkins, Joel Ross, Kendrick Scott & Matt Brewer)（Apple collectionName）；アウト・オブ/イントゥ（Apple jp artistName）；Blue Note Quintet（樂團成立時的名目）",
+  "artist": "Out Of/Into",
+  "album": "Motion I",
+  "year": 2024,
+  "label": "Blue Note 00602465981971（Worldwide 2024-12-06 CD 7 軌 46 分；Discogs 32557383，barcode 602465981971；**MB 只建了一筆無 barcode、無 catalog-number 的數位 release**）；EU LP 00602465981988（Discogs 32494611）／US LP（32585832，barcode 602465982008，GZ Media 壓片）；⚠ 日本盤 Blue Note／Universal Classics & Jazz UCCQ-1215（Discogs 32758233，released 逐字 **2024-12-10**，**9 軌**，bonus 逐字 `Bonus Track For Japan`＋〈Infant Eyes〉，barcode 4988031750971，另有同號宣傳盤 34949084，**MB 未建**）；FLAC 32504781／AAC 32494599；MB 數位 ea26d0ab",
+  "why": "Out Of/Into 是 Blue Note 為創立 85 週年組的五重奏（bluenote.com 樂團頁逐字：「began as the Blue Note Quintet in celebration of the label's 85th anniversary」、「'Out Of/Into' reflects the evolution of the Blue Note story, and of our sound」），成員是鋼琴手兼音樂總監 Gerald Clayton、中音薩克斯風 Immanuel Wilkins、顫音琴 Joel Ross、鼓手 Kendrick Scott、貝斯手 Matt Brewer——**五人裡有四位在本店已經是領班**。《Motion I》是他們的第一張，2024-12-06 發行，七軌 46 分全是團員原創（Clayton 的〈Gabaldon's Glide〉先發單曲、Wilkins 的〈Radical〉、Ross 的〈Aspiring to Normalcy〉11:50）。廠牌自己把這支團放進 Out of the Blue、Superblue、New Directions、The Blue Note 7、Blue Note All-Stars 這條「全明星團」系譜裡——**那五支團有四支已經在本線的前幾批收過（c-168 兩支、c-169 兩支）**。**實掃卡池：`Out Of/Into`／`Out Of / Into`／`Out of Into` 三形在 seed 17,248 列、全部卡單與各批 `prop-*.json` 皆 0 命中**；`Motion I`／`Motion` 盤名反查 0。",
+  "risk": "⚠ 掛名：**MB RG artist-credit 是單一 Group 實體 `Out Of/Into`（897b9986，type Group，area 欄空），不是斜線串接的兩個藝人**——**第 611 條第四種盲區（斜線掛名）在這一張不成立，斜線是團名的一部分**；MB 同名反查只有這一個實體。Discogs 三筆的 artists 欄逐字是 `Out Of / Into`（斜線兩側帶空格）、Apple 的 artistName 逐字 `Out Of/Into`（與 MB 相同）——**二比一取無空格形**，帶空格形進 `queryAlias`。⚠ ⚠ **五位團員全部是池中既有或同線的領班，但一張都不是撞卡**（第 1131 條，不同編制各自成立）：`Gerald Clayton` 6 列 3 張（c-165《Happening: Live at The Village Vanguard》《Bells on Sand》、c-166《Ones & Twos》）、`Immanuel Wilkins` 12 列 6 張（c-165／c-166／c-167）、`Kendrick Scott Oracle` 與 `Kendrick Scott, Reuben Rogers, Walter Smith III` 各 1 張（c-169 b／c-166 a）、`Joel Ross` 本批四張、`Matt Brewer` 0 列。**日後絕不得把本卡收攏成任何一位成員的字串。**⚠ 年份：MB frd 2024-12-06、Discogs 七筆 released 逐字 2024-12-06（日本盤 2024-12-10，**晚四天**）、Apple us／jp／de 同一 id 1772812035 releaseDate 逐字 `2024-12-06T08:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2024 UMG Recordings, Inc.`——三層一致，**取 2024**。⚠ ⚠ **這張是第 1800-B 條最需要第二種掃描的一筆**：**MB 只建了一筆數位 release，barcode 與 catalog-number 兩欄都空，第一種（barcode 反查）查法完全跑不起來**；`artist=Out Of/Into&release_title=Motion I` 的全 release 掃描補出實體 CD、兩款黑膠、日本盤 UCCQ-1215 與宣傳盤共六筆。**年份不變，但 `label` 欄若只抄 MB 會整格空。**⚠ 軌數兩形：原盤 7 軌 46 分／**日本盤 9 軌 50 分**（Discogs 32758233 的 tracklist 逐字有 `Bonus Track For Japan` 分隔行與第 8 軌〈Infant Eyes〉，Wayne Shorter 的曲子）——bonus 不得寫成原盤曲目，**〈Infant Eyes〉也不得寫成團員原創**。⚠ 曲風：**MB RG 的 genres 與 tags 都是空陣列**，Discogs 四筆 genre 逐字 `Jazz`、style 逐字 `Contemporary Jazz`——`contemporary jazz` 不在十個合法值裡（第 1572 條），判 `['jazz']`。⚠ 店面（第 254 條）：Apple us／jp／de 三店皆命中（**collectionName 逐字帶 `(feat. Gerald Clayton, Immanuel Wilkins, Joel Ross, Kendrick Scott & Matt Brewer)`，探測鏈比對盤名會落空**）；`lookup?upc=602465981971` 回 0。CAA release-group 層 1 圖，**來源 release 逐字是 ea26d0ab（唯一的數位版），不是 CD 原壓**。",
+  "mbNote": "釘 release-group 5f487b0c-82b4-4d4b-b9e1-8b22e0b3c596。`release-group?inc=artist-credits+genres+tags`：title 逐字「Motion I」、**artist-credit 單一成分，credited-name 與 artist.name 逐字都是 `Out Of/Into`（897b9986，type Group，country 欄 null）**、first-release-date 2024-12-06、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條第二種組合已跑，仍然只有一筆）：ea26d0ab（2024-12-06，country 欄空，Digital Media 7 軌 46 分，**barcode 與 catalog-number 兩欄皆空**，label-info 逐字 `Blue Note [713c4a95]`）。**MB 未建 CD、兩款黑膠、日本盤 UCCQ-1215 與宣傳盤。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "queryAlias": "The Long Way Round (Deluxe)（Apple 1868490452／1868491059，16 軌，2026-01-08／09）；The Long Way Round（日本盤 UCCQ-1216，15 軌）；マヤ・デライラ（Apple jp artistName）",
+  "artist": "Maya Delilah",
+  "album": "The Long Way Round",
+  "year": 2025,
+  "label": "Blue Note 00602475136705（2025-03-28 歐版 CD 12 軌 45 分；Discogs 33619413，barcode 602475450795；MB 0485085a 的 status 欄逐字 null）；⚠ 日本盤 Blue Note UCCQ-1216（Discogs 35121977，released 逐字 2025-03-28，**15 軌**，notes 逐字 `Housed in jewel case with obi strip`，另有同號宣傳盤 34941209，**MB 未建**）；EU LP 00602475136705（Discogs 33538188，barcode 602475136705）／美歐限量 LP（35959963，barcode 602475136712）；XW 數位 791b8fa3（barcode 602475808909）；**2026-01-09 Deluxe 16 軌 aafd777d（MB，同一個 RG）**",
+  "why": "北倫敦出身的吉他手兼歌手 Maya Delilah 的 Blue Note 首張專輯，2025-03-28 發行。她是 BRIT School 出身、2020 年封城期間靠 TikTok 與直播累積聽眾、2022 年簽進 Blue Note／Capitol 的一位（bluenote.com 藝人頁逐字：「sits at the intersection of old soul and new pop, where autumn chill meets summer breeze」）。十二軌 45 分以她自己的吉他與人聲為主體，先行單曲〈Look at the State of Me Now〉由 Aquilo 的 Ben Fletcher 與 Tom Higham 共同寫作與製作。這是 Blue Note 近年把英國新生代創作歌手拉進目錄的一步，與同線的 Sarah McCoy（c-169 b）、Norah Jones 那條脈絡同向。**實掃卡池：`Maya Delilah`／`Delilah` 與盤名 `The Long Way Round` 在 seed 17,248 列、全部卡單與各批 `prop-*.json` 皆 0 命中**；MB 同名反查只有 `6b0d2727` 一個實體。",
+  "risk": "⚠ ⚠ **邊界張（第 1559 條那一族），本層照收、沒有拿曲風退**：`slice.json` 逐字標「⚠ 邊界張，可逆」。**MB 的 `genres` 欄整格空、tag 只有 `alternative`**；判斷靠 Discogs——五筆條目裡四筆的 genre 逐字 `Jazz, Funk / Soul, Pop`、style 逐字 `Funk, Soul-Jazz, Soul`，黑膠那筆逐字 `Jazz, Pop`／`Vocal, Contemporary Jazz, Indie Pop`。**五筆全部帶 `Jazz`**，故過曲風閘。⚠ **曲風取值是本組最需要裁量的一格**：嚴格取五筆交集會得到 `Jazz + Pop`，但 `Funk / Soul` 出現在 5 筆中的 4 筆、style 欄的 `Soul-Jazz` 與 `Soul` 也出現 4 次，slice 的人工判定逐字是「soul-jazz／neo-soul」——**判 `['jazz','soul']`，`pop` 刻意不跟**（理由同第 2203 條第 3 點：不賭證據較弱的第三格；本機審稿若要改成 `['jazz','pop']` 只動一格，可逆）。⚠ 年份：MB frd 2025-03-28、Discogs 五筆 released 逐字全 2025（日本盤同為 2025-03-28）、Apple gb／us／jp 同一 id 1793003921 releaseDate 逐字 `2025-03-28T07:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2025 UMG Recordings, Inc.`——三層一致，**取 2025**。⚠ ⚠ **bluenote.com 藝人頁的摘讀會把年份講錯**：本層抓到的摘要把首發寫成「March 28」2024、Deluxe 寫成 2025-01-09，**與四層一手資料整整差一年**；**以 MB／Discogs／Apple 為準，廠牌頁的年份不採**。⚠ 軌數三形：原盤 12 軌 45 分／**日本盤 15 軌**（Discogs 35121977 的 tracklist 逐字有 `Bonus Tracks For Japan` 分隔行，第 13／14 軌是〈Look at the State of Me Now〉〈Maya, Maya, Maya〉的 Studio Live 版）／**2026-01-09 Deluxe 16 軌（MB aafd777d、Apple 1868490452 與 1868491059）**——**Deluxe 與本卡是同一個 RG，本卡釘 2025 年的 12 軌原盤**；正文與試聽比對不得抓到 16 軌形。⚠ **一個 UPC 回四個 collectionId**：`lookup?upc=602475450795` 同時回 1868491059／1868490452（Deluxe 16 軌）與 1793003921／1792968883（原盤 12 軌）——探測鏈要能容忍一碼多 id，且**要挑 12 軌那兩個**。⚠ **MB 的 CD release `0485085a` 的 `status` 欄逐字是 null、date 欄只有年份 `2025`**（第 259 條那一族：「沒填」與「不是正式發行」長得一樣）——實體零售條目 Discogs 33619413 逐字 2025-03-28，本卡以它為準。⚠ **MB 三筆 release 的 catalog-number 欄全部整格空**（第 1250 條的第三種形狀），目錄號 `00602475136705` 只有 Discogs 有。⚠ 店面（第 254 條）：Apple gb／us／jp 三店皆命中。CAA release-group 層 1 圖，**來源 release 逐字是 791b8fa3（XW 數位），不是 CD 原壓**。",
+  "mbNote": "釘 release-group a8e4489d-27dd-4ba1-a55c-987f174d137b。`release-group?inc=artist-credits+genres+tags`：title 逐字「The Long Way Round」、artist-credit 單一 `Maya Delilah`（6b0d2727，Person，country 欄 null）、first-release-date 2025-03-28、primary-type Album、secondary-types 逐字空陣列、**genres 逐字空陣列、tags 只有 `alternative`**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 3 筆，label-info 逐字皆 `Blue Note [713c4a95]`——0485085a（date 欄逐字只有 `2025`，XW CD 12 軌 45 分，barcode 602475450795，**status 欄逐字 null**）／791b8fa3（2025-03-28 XW Digital Media，12 軌 45 分，barcode 602475808909，status Official）／**aafd777d（2026-01-09 XW Digital Media，16 軌 60 分＝Deluxe，本卡刻意不釘）**。**三筆的 catalog-number 欄全空；MB 未建日本盤 UCCQ-1216、兩款黑膠與宣傳盤。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Nate Mercereau, Josh Johnson, Carlos Niño（Discogs artists 欄的逗號串接形，無 `&`）；Nate Mercereau ／ Josh Johnson ／ Carlos Niño（個別字串）；Josh Johnson (13)（Discogs 同名消歧編號）",
+  "artist": "Nate Mercereau, Josh Johnson & Carlos Niño",
+  "album": "Openness Trio",
+  "year": 2025,
+  "label": "Blue Note 00602475821366（2025 歐版 CD 5 軌；Discogs 34564816，barcode 602475821366，notes 逐字 `four panel cardboard sleeve`）；黑膠 00602475821373（Discogs 34587931，另有限量版 34843727，style 欄逐字 `Free Improvisation`）；XW 數位（MB c1eadda4，barcode 0602475821403，**MB 的 catalog-number 欄逐字填的是 `[none]`**）",
+  "why": "吉他手／合成器手 Nate Mercereau、薩克斯風手 Josh Johnson、打擊樂手兼製作人 Carlos Niño 三人的 Blue Note 盤，2025-07-11 發行。五軌 38 分是三人在洛杉磯多個地點錄下的即興合奏——Mercereau 用 MIDI 吉他與現場取樣、Johnson 的中音與長笛全程過取樣器與效果器、Niño 帶來鈸、貝殼、鈴、鑼、植物聲與呼吸聲（Discogs 34564816 credits 欄逐字 `Carlos Niño=Cymbal, Percussion [Shells], Bells, Shaker, Aerophone, Gong, Other [Plants], Sounds [Breathing]`）。三人共同作曲，Mercereau 製作與混音，Daddy Kev 母帶。這是 Blue Note 把洛杉磯 Leaving Records／International Anthem 那一圈的即興生態拉進正規目錄的一步。**實掃卡池：`Nate Mercereau`／`Josh Johnson`／`Carlos Niño`／`Carlos Nino`（含去掉波浪符的字形）四種寫法與三人串接形，在 seed 17,248 列、全部卡單與各批 `prop-*.json` 皆 0 命中**；盤名 `Openness Trio`／`Openness` 反查 0。",
+  "risk": "⚠ ⚠ **掛名是本組唯一一筆真並列聯名，依第 1539 條（第 1745-B 條更正後的版本）取 MB credited-name ＋ joinphrase 串接形**：MB RG 的 artist-credit 逐字是 `Nate Mercereau`（900efa6c，Person）＋ joinphrase 逐字 `, ` ＋ `Josh Johnson`（37b60764，Person／US，disambiguation 逐字 `saxophone, keyboards, composer, USA, member of Holophonor`）＋ joinphrase 逐字 ` & ` ＋ `Carlos Niño`（f6e8d274，Person／US）——串出 `Nate Mercereau, Josh Johnson & Carlos Niño`。**Apple 1809012204 的 artistName 逐字完全相同**；Discogs 逐字是 `Nate Mercereau ,Josh Johnson (13) ,Carlos Niño`（三格逗號串接、沒有 `&`）——**二比一取 MB＝Apple 形**。**與第 2129 條那種「joinphrase 是一句盤名片語」的情形不同：這裡的三格都是並列演出者、joinphrase 就是連接符，第 1539 條的前提成立。**⚠ **三人的個別字串日後若各自進池，與本卡的串接形並存、不得事後合併**（第 964／196／197／1131 條）。⚠ **`Josh Johnson` 是極常見人名**（Discogs 已經用到 `(13)` 這個消歧編號）——**日後若他的裸名領班盤進池，務必帶 MB artist id `37b60764` 區分**（第 179／250 條；括號裡的編號是 Discogs 的消歧符，不是掛名的一部分，同第 2128 條 `Jackie Allen (2)` 的處理）。⚠ 年份：MB frd 2025-07-11、Apple us／gb 同一 id 1809012204 releaseDate 逐字 `2025-07-11T07:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2025 UMG Recordings, Inc.`、**Discogs 三筆的 released 欄只有年份 `2025`（沒有月日）**——三層同年，**取 2025**；第 1800-B 條第二種掃描補出兩款黑膠，無一更早。⚠ **第 1250 條的新形狀**：**MB 的 `catalog-number` 欄逐字填的是字串 `[none]`**（不是空值、也不是真的目錄號），`slice.json` 的 `catno` 欄照抄成 `[\"[none]\"]`——**拿它去反查會撞到任意碟，一律不可用**；真正的目錄號是 Discogs 的 `00602475821366`（CD）／`00602475821373`（LP）。⚠ **軌數與時長**：MB 逐字 5 軌 38 分；Discogs CD 條目 34564816 的 tracklist 有五軌但 duration 欄全空（總長算出來 0 分，**那是 Discogs 缺資料、不是碟很短，判 EP 與否不得用它**，同第 2135 條 Juliano Rossi 那格）。**五軌 38 分落在 Album 區間，形態閘過。**⚠ 曲風：MB RG 的 genres 與 tags 都是空陣列；Discogs 三筆分歧——CD 條目 genre 逐字 `Electronic, Jazz`、style 逐字 `Contemporary Jazz, Avant-garde Jazz`，兩款黑膠逐字只有 `Jazz`（style `Free Improvisation`）。**依第 2203 條第 3 點取交集＝`Jazz`，判 `['jazz']`，`electronic` 刻意不跟**（三筆裡只有一筆有，slice 的人工判定逐字也只寫「avant-garde jazz／contemporary jazz」）。**可逆。**⚠ 店面（第 254 條）：Apple us／gb 皆命中，`lookup?upc=602475821366` 亦命中，5 軌與實體相符。CAA release-group 層 1 圖，來源 release 逐字 c1eadda4（唯一版本）。",
+  "mbNote": "釘 release-group 1df797df-d373-42da-9b53-187e44a72ba5。`release-group?inc=artist-credits+genres+tags`：title 逐字「Openness Trio」、**artist-credit 三個成分**——`Nate Mercereau`（900efa6c，Person，disambiguation 逐字 `US guitarist and songwriter`）＋joinphrase 逐字 `, `、`Josh Johnson`（37b60764，Person／US）＋joinphrase 逐字 ` & `、`Carlos Niño`（f6e8d274，Person／US，disambiguation 逐字 `Californian music producer, percussionist, and composer`）——first-release-date 2025-07-11、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條第二種組合已跑）：**轄下只有 1 筆** c1eadda4（2025-07-11 XW Digital Media，5 軌 38 分，barcode 0602475821403，**catalog-number 欄逐字 `[none]`**，label-info 逐字 `Blue Note [713c4a95]`，release 層 artist-credit 逐字 `Nate Mercereau, Josh Johnson & Carlos Niño`）。**MB 未建實體 CD 與兩款黑膠。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "Out Of / Into（Discogs artists 欄帶空格的斜線形）；Motion II (feat. Gerald Clayton, Immanuel Wilkins, Joel Ross, Kendrick Scott & Matt Brewer)（Apple collectionName）；アウト・オブ/イントゥ（Apple jp artistName）",
+  "artist": "Out Of/Into",
+  "album": "Motion II",
+  "year": 2025,
+  "label": "Blue Note 00602478346217（2025-12-05 歐版 CD 6 軌 40 分；Discogs 35975692，barcode 602478346217，notes 逐字 `four panel cardboard sleeve`）；黑膠 00602478346224（Discogs 35898952，另有限量版 36156640）；AAC 35876923（**Discogs 的 catno 欄逐字誤植成 `nonbe`**）；XW 數位 29453d20（MB，barcode 602478346248）",
+  "why": "Out Of/Into 五重奏的第二張，2025-12-05 發行，與同批《Motion I》相隔近一年。六軌 40 分同樣全是團員原創（〈Brothers in Arms〉〈Juno〉〈The Catalyst〉〈Nacho Supreme〉），**五位團員這次全部列名共同製作**（Discogs 35975692 credits 欄逐字 `Gerald Clayton=Producer; Immanuel Wilkins=Producer; Joel Ross=Producer; Kendrick Scott=Producer; Matt Brewer=Producer`），Joel Ross 這張加了馬林巴，David Darlington 混音與母帶。先行單曲逐字是〈Familiar Route〉。兩張《Motion》是同一支團的兩張不同錄音，**各算一張、`risk` 互指**（同簡報第二節第 6 點對 Volume 碟的處理）。**實掃卡池：`Out Of/Into` 三形在 seed、全部卡單與各批 `prop-*.json` 皆 0 命中**；盤名 `Motion II` 反查 0。",
+  "risk": "⚠ 掛名與《Motion I》**逐字相同**，兩張共用 MB 群組實體 `897b9986`（第 1418 條：同一支團在同一批不得判出兩個字串）。⚠ 年份：MB frd 2025-12-05、Discogs 四筆 released 逐字全 2025-12-05、Apple us／jp／de 同一 id 1840031776 releaseDate 逐字 `2025-12-05T08:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2025 UMG Recordings, Inc.`——三層一致，**取 2025**。⚠ **發行日落在 12 月，是本批最容易被下一年的版本頂掉的一筆**——第 1800-B 條第二種掃描（`artist=Out Of/Into&release_title=Motion II`）四筆全部 2025，**沒有任何一版落在 2026**，也沒有日版。⚠ **MB 只建了一筆數位 release、catalog-number 欄整格空**——實體 CD、兩款黑膠都靠第二種掃描補；**`slice.json` 的 `catno` 是空陣列，`note` 裡的 `00602478346217` 其實是 Discogs CD 的目錄號、不是 MB 的**（MB 那筆的 barcode 逐字是 `602478346248`，**與 CD 不同碼**）。⚠ **第 1250 條再中一次**：Discogs AAC 條目 35876923 的 catno 欄逐字是 `nonbe`（`none` 的打字錯誤）——**列舉層與下游都不得把它當目錄號**。⚠ 軌數單一，MB／Discogs／Apple 逐字全 6 軌，無分歧（40 分，落在 Album 區間，形態閘過）。⚠ 曲風：**MB RG 的 genres 欄逐字空、tags 只有 `jazzthing 162` 與 `ph_temp_checken`（雜誌與維護標記，不是曲風）**；Discogs 四筆 genre 逐字全 `Jazz`、style 逐字 `Contemporary Jazz`——`contemporary jazz` 不在十個合法值裡（第 1572 條），判 `['jazz']`，與《Motion I》一致。⚠ 五位團員的既有字串一律不動（同《Motion I》的 risk）。⚠ 店面（第 254 條）：Apple us／jp／de 三店皆命中（**collectionName 同樣帶五人 `(feat. …)` 尾巴，探測鏈比對盤名會落空**）；`lookup?upc=602478346217` 回 0。CAA release-group 層 1 圖，來源 release 逐字 29453d20（唯一的數位版）。",
+  "mbNote": "釘 release-group a58f8f86-6edf-43e4-bd3c-11bfc4a68eaa。`release-group?inc=artist-credits+genres+tags`：title 逐字「Motion II」、artist-credit 單一 Group 實體 `Out Of/Into`（897b9986，**與《Motion I》同一個實體**）、first-release-date 2025-12-05、primary-type Album、secondary-types 逐字空陣列、**genres 逐字空陣列**、tags 逐字 `jazzthing 162`／`ph_temp_checken`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：**轄下只有 1 筆** 29453d20（2025-12-05 XW Digital Media，6 軌 40 分，barcode 602478346248，catalog-number 欄空，label-info 逐字 `Blue Note [713c4a95]`）。**MB 未建實體 CD 00602478346217 與兩款黑膠。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "You’re Exaggerating!（MB RG title 與 Apple collectionName 的 U+2019 彎撇號形）；ユーアー・エグザジャレイティング（音譯，僅供查詢）",
+  "artist": "Paul Cornish",
+  "album": "You're Exaggerating!",
+  "year": 2025,
+  "label": "Blue Note 00602475855149（US 2025-08-22 CD 9 軌 42 分；MB 2f716156 的 catalog-number 欄逐字 `602475855149`；Discogs 34964609，barcode 602475855149，notes 逐字 `Standard CD edition  Gatefold digisleeve`）；EU CD 602475855149（Discogs 35508061，format 逐字 `CD, Album`）；US LP 00602475855156（Discogs 34904078，barcode 602475855156，錄音室欄逐字 `UCLA Herb Alpert School Of Music Recording Studio`／`Bass Hit Studios`，**MB 未建**）；XW 數位 fe46e7d7（barcode 602475855187）",
+  "why": "休士頓出身的鋼琴手 Paul Cornish 的 Blue Note 領班首作，2025-08-22 發行。他是 Houston High School for the Performing and Visual Arts 出身、以全額獎學金念完 UCLA 的 Herbie Hancock Institute of Jazz，2023 年 American Pianists Awards 與 Herbie Hancock 國際鋼琴大賽雙料決選；側人資歷逐字含「Joshua Redman, Louis Cole, Mark Guiliana, HAIM, Snoh Aalegra, Terrace Martin, Kanye West」。九軌全是他的原創，三重奏班底 Joshua Crumbly 貝斯、Jonathan Pinson 鼓，Jeff Parker 吉他客座；第 8 軌〈Queen Geri〉是寫給 Geri Allen 的（bluenote.com 藝人頁逐字稱她是他「most important influences」之一），廠牌自己把這張定位成「a mission statement for Blue Note's next generation」。**實掃卡池：`Paul Cornish`／`Cornish` 與盤名 `You're Exaggerating!`／`Exaggerating` 在 seed 17,248 列、全部卡單與各批 `prop-*.json` 皆 0 命中**；MB 同名反查只有 `104721c5` 一個實體。",
+  "risk": "⚠ ⚠ **字形裁定：盤名取 ASCII 撇號 `You're Exaggerating!`**。**MB RG title 逐字是 `You’re Exaggerating!`（U+2019 RIGHT SINGLE QUOTATION MARK），Apple 1817728467 的 collectionName 逐字也是 U+2019**；**只有 Discogs 兩筆零售條目的 title 欄逐字是 ASCII `You're Exaggerating!`**。依 **c-110 第 5 條**（逐字：「兩張都取 ASCII 撇號，MB 的彎撇號寫法進 `queryAlias`」，理由逐字「池中 97% 是 ASCII」）與 **c-166／c-169 第 2197 條第 1 點的同形先例**（`Rollin’`→`Rollin'`、`Passin’ Thru`→`Passin' Thru`）取 ASCII。**⚠ 與 c-169 第 2197 條那一筆的差別要記下：那張的 Apple 是 ASCII（三比一），本張的 Apple 是彎撇號（二比一反向）——本層仍取 ASCII，理由是池中一致性（不製造第二種鍵）而不是票數**，兩形都進 `queryAlias`。`chk-prop` 的四道字形檢查只擋非 ASCII 連字號與 U+30FC，**不擋 U+2019，所以這一格「標記 0」不等於乾淨**（第 611 條的同一句話）。⚠ 年份：MB frd 2025-08-22、Discogs 三筆 released 逐字全 2025-08-22、Apple us／gb 同一 id 1817728467 releaseDate 逐字 `2025-08-22T07:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2025 UMG Recordings, Inc.`、bluenote.com 藝人頁逐字 `released on August 22`——四層一致，**取 2025**；第二種掃描只補出美版黑膠一筆，無更早版本、無日版。⚠ **Discogs 美版 CD 條目 34964609 的 `format` 欄逐字只有 `CD`、descriptions 整格空**（沒有 `Album` 也沒有 `EP`）——**形態閘改看歐版 35508061（逐字 `CD, Album`）＋ 9 軌 42 分的實測時長，判 Album**。⚠ 曲風：MB RG genres 逐字 `instrumental jazz:1, jazz:1`（`instrumental jazz` 不在十個合法值裡，第 1572 條）、Discogs 逐字 genre `Jazz`／style `Contemporary Jazz`——判 `['jazz']`。⚠ 側人 Jeff Parker（Tortoise／International Anthem）在池中是否有卡未影響本卡掛名；`Joshua Crumbly`／`Jonathan Pinson` 皆 0 列。⚠ 店面（第 254 條）：Apple us／gb 皆命中，9 軌與實體相符；`lookup?upc=602475855149` 亦命中。CAA release-group 層 1 圖，**來源 release 逐字是 2f716156（美版 CD 原壓）**。",
+  "mbNote": "釘 release-group 9caf6f3b-df86-42ad-bb4b-0429b4ffc3e2。`release-group?inc=artist-credits+genres+tags`：**title 逐字「You’re Exaggerating!」（U+2019；本卡的 `album` 欄已正規化成 ASCII 撇號，見 risk）**、artist-credit 單一 `Paul Cornish`（104721c5，Person／US）、first-release-date 2025-08-22、primary-type Album、secondary-types 逐字空陣列、genres `instrumental jazz:1`／`jazz:1`、tags 另含 `jazzthing 160`／`jazzthing.de`／`ph_temp_checken`（雜誌與維護標記）。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 2 筆，皆 9 軌 42 分、label-info 逐字 `Blue Note [713c4a95]`——2f716156（2025-08-22 US CD，catalog-number 逐字 `602475855149`，barcode 602475855149）與 fe46e7d7（2025-08-22 XW Digital Media，barcode 602475855187）。**MB 未建歐版 CD 與美版黑膠。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": true,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "queryAlias": "Fathers（Discogs 三筆條目的 title 欄首字大寫形）；Fathers (6)（Discogs 的同名消歧編號，不是掛名的一部分）；Nate Smith, Kiefer, CARRTOONS & Kenny Beats（Apple 6779502137 的 artistName，也是 MB 該實體的 disambiguation）；Nate Smith — Fathers（MB 重複 RG 6391b52e 的建錯形，c-167 b 已退）",
+  "artist": "FATHERS",
+  "album": "FATHERS",
+  "year": 2026,
+  "label": "Blue Note 00199957415965（2026-07-10 歐版 CD 8 軌 27 分；Discogs 37859667，barcode 199957415965，format 逐字 `CD (Album)`，廠牌鏈逐字 `Blue Note` ＋ `Fathers`）；歐版 LP Blue Note 15972（Discogs 37844577，barcode 199957415972，notes 逐字 `\"Made in The Netherlands\" sticker on back cover.`）／Worldwide 限量藍膠（37909314，barcode 199957415989，style 欄逐字 `Soul-Jazz, Smooth Jazz, Fusion`）；MB 數位 e7d2891e（**barcode 與 catalog-number 兩欄皆空**）",
+  "why": "Blue Note 2026 年推出的四人合作團 FATHERS 的自我同名首作，2026-07-10 發行。四人逐字是製作人 Kenny Beats（Kenneth Blume，Vince Staples／Denzel Curry／Rico Nasty／IDLES／Freddie Gibbs 的製作人）、鍵盤手 Kiefer（Kiefer Shackelford）、貝斯手 CARRTOONS（Ben Carr）與鼓手 Nate Smith（bluenote.com 2026-06-17 的發表稿逐字：「FATHERS, the self-titled debut by a collective of groove-savvy producer-musicians」）。八軌 27 分全部是全大寫曲名（〈EYE LEVEL〉〈PATCHWORK〉〈PEARL〉〈STUB〉〈THE LEAK〉〈TOMORROW, AGAIN〉〈FRONT YARD〉〈FIGURE 8〉），先行單曲逐字是〈PEARL〉；Kenny Beats 製作與錄音、Neal Pogue 混音、Mike Bozzi 母帶。**實掃卡池：`FATHERS`／`Fathers`／`Nate Smith`／`Kenny Beats`／`CARRTOONS` 在 seed 17,248 列、全部卡單與各批 `prop-*.json` 皆 0 精確命中**（子字串命中的 `Father MC —《Father's Day》`、`Muddy Waters —《Fathers and Sons》`、`丸山繁雄 —《A Young Father's Song》` 三筆逐筆核完全是別碟）；**團員 `Kiefer` 在 c-167 a 已有一張領班卡《Memory Bomb》(2026)，那是他個人的碟、不是本張**（第 1131 條，不得合併）。",
+  "risk": "⚠ ⚠ ⚠ **`slice.json` 的 `note` 有一句是錯的**：它逐字寫「盤名 `FATHERS` 撞 `batch-progress/c167/slice.json` 的 Nate Smith 條目（**同名不同碟**）」——**實況相反，那就是同一張碟**。c-167 b 第 2024 條已經逐項查實並把 `Nate Smith《Fathers》`（MB 重複 RG `6391b52e-fa14-4a9a-88d8-0e51d9b65244`）**退件**，理由是 MB 把四人團建成其中一位團員的個人作、又另外建了一個 RG；**兩邊的目錄號逐字同為 `00199957415965`、同日 2026-07-10、同廠牌、同 8 軌**。**本卡依第 2024 條釘 `458ef48c`、掛名 `FATHERS`、盤名《FATHERS》、`selfTitled: true`。**這是第 611 條盲區三（MB 把同一張碟建成兩個 RG）在本批的唯一一次命中，**`chk-prop` 的 rgMbid 掃描不會亮，因為兩個 RG 只有一個在清單裡**。⚠ ⚠ **形態閘（c-169 a 新立）逐項跑過，判 Album 不判 EP**：8 軌、**MB 實測總長 27 分 18 秒**（最短〈TOMORROW, AGAIN〉2:12、最長〈FIGURE 8〉4:34）；**Discogs 三筆零售條目的 format 欄逐字分別是 `CD (Album)`、`Vinyl (LP/Album/Stereo)`、`Vinyl (LP/Album/Limited Edition)`——沒有任何一筆帶 `EP` 或 `Single`**；MB primary-type 逐字 `Album`；**而且有兩款實體黑膠壓片**。**與第 2127 條退掉的 Dr. John《Sippiana Hericane》的分界在這裡：那張的 Discogs format 欄逐字就是 `CD, EP`、時長 25 分，兩個訊號同向；本張兩個訊號都指向 Album。判準照第 2127 條原文「分界在時長與 `format` 欄，不在軌數」執行，27 分落在 Album 區間的下緣但不在 EP 那一側。可逆。**⚠ 掛名：**MB artist 實體 `8bda4e58`（Group，disambiguation 逐字 `Nate Smith, Kiefer, CARRTOONS & Kenny Beats`）**；⚠ **MB 上至少有五個 `Fathers` 同族實體**——`4d9e78ff`（Group／US，逐字 `post-hardcore band`）、`aec4b5f5`（Group，逐字 `Toronto punk band`）、`08fbe163`（Group／FR，逐字 `techno duo`）、`c8a987d3`（`Fathers Day`）——**依第 179／250／324 條核 type／area／disambiguation、不看 score，本卡釘的是 `8bda4e58`**；Discogs 的 `Fathers (6)` 與 Apple 的四人串接形都只進 `queryAlias`（第 218 條：不得因店面寫法造第三種字串）。⚠ **全大寫是四邊的共識**：MB RG title 與 artist 名逐字全大寫、Apple collectionName 逐字 `FATHERS`、bluenote.com 發表稿逐字 `FATHERS`；只有 Discogs 寫成 `Fathers`。⚠ 年份：MB frd 2026-07-10、Discogs CD released 逐字 2026-07-10、Apple 6779502137 releaseDate 逐字 `2026-07-10T07:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2026 FATHERS, under exclusive license to UMG Recordings, Inc.`（**權利人逐字就是 `FATHERS`**）、bluenote.com 發表稿逐字 `the July 10 release`——四層一致，**取 2026**。⚠ ⚠ **第 1800-B 條在這一張是唯一可跑的查法**：**MB 那唯一一筆 release 的 barcode 欄整格空**，barcode 反查完全跑不起來；`artist=Fathers&release_title=FATHERS` 的全 release 掃描（回 51 筆，其中 48 筆是別的 Fathers）才撈出實體 CD 與兩款黑膠，**也才撈出那個與 c-167 對上的目錄號**。⚠ **barcode 段不是 `602…`**：本張三筆實體的 barcode 逐字是 `1 99957 415…`，不在 UMG 慣用的 602 序列裡——**`lookup?upc=199957415965` 回 0**，探測鏈要靠 `search` 或 Apple id。⚠ 曲風：MB RG 的 genres 與 tags 都是空陣列；Discogs 三筆 genre 逐字全 `Jazz`，style 逐字 `Jazz-Funk`（37844577）與 `Soul-Jazz, Smooth Jazz, Fusion`（37909314）——**`jazz-funk`／`soul-jazz` 依第 1572／2203 條折進 `soul`，判 `['jazz','soul']`**。⚠ 店面（第 254 條）：Apple us 6779502137（8 軌，artistName 逐字 `Nate Smith, Kiefer, CARRTOONS & Kenny Beats`——**與本卡掛名對不上，探測鏈會落空**）；`lookup?upc=` 回 0。CAA release-group 層 1 圖，來源 release 逐字 e7d2891e（唯一的數位版）。⚠ **下游寫作**：`Nate Smith` 與 `CARRTOONS` 同時出現在 c-167 a《Memory Bomb》的客座名單與本團的團員名單（c-167 第 2024 條末段已提醒），**不得把兩邊的事實串在一起**。",
+  "mbNote": "釘 release-group 458ef48c-0ccb-4fb8-9d34-b8fdf0edbfe7（**依 c-167 b 第 2024 條指定**）。`release-group?inc=artist-credits+genres+tags`：title 逐字「FATHERS」（全大寫）、artist-credit 單一 Group 實體 `FATHERS`（8bda4e58-1876-4f99-939c-362e57f7c04e，type Group，country 欄 null，**disambiguation 逐字 `Nate Smith, Kiefer, CARRTOONS & Kenny Beats`**）、first-release-date 2026-07-10、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條第二種組合已跑）：**轄下只有 1 筆** e7d2891e（2026-07-10，country 欄空，Digital Media 8 軌，**barcode 與 catalog-number 兩欄皆空**，label-info 逐字 `Blue Note [713c4a95]`）。逐軌 length 逐字：EYE LEVEL 189173／PATCHWORK 158107／PEARL 231067／STUB 163707／THE LEAK 257587／TOMORROW, AGAIN 132387／FRONT YARD 230853／FIGURE 8 273907 ms，**合計 1,636,788 ms＝27 分 17 秒**。⚠ **刻意不釘的重複 RG：`6391b52e-fa14-4a9a-88d8-0e51d9b65244`（MB 把本碟建成 `Nate Smith` 的個人作、盤名寫成 `Fathers`），已由 c-167 b 第 2024 條退件。** MB 未建歐版 CD 00199957415965 與兩款黑膠。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "b",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "ジョエル・ロス（Apple jp artistName）；Joel Ross (3)（Discogs 同名消歧編號）",
+  "artist": "Joel Ross",
+  "album": "Gospel Music",
+  "year": 2026,
+  "label": "Blue Note 00602488058292（Worldwide 2026-01-30 CD 17 軌 78 分；MB f66ff9e7，barcode 602488058292；Discogs 36507067）；黑膠 00602488058308（Discogs 36412324，barcode 602488058308；另有限量版 36408643，barcode 602488058315）；FLAC 36407854；XW 數位 0c2567be（MB，barcode 602488058322）",
+  "why": "Joel Ross 的第五張 Blue Note 領班盤，2026-01-30 發行，**本批四張 Joel Ross 裡最新的一張**。廠牌逐字稱它是「a sonic interpretation of the biblical story and an exploration of his faith that delivers a message of hope and love」，由 Good Vibes 擴編的六重奏演出：Josh Johnson 中音薩克斯風、Maria Grand 次中音、Jeremy Corren 鋼琴、Kanoa Mendenhall 貝斯、Jeremy Dutton 鼓——**中音位置從 Immanuel Wilkins 換成 Josh Johnson，變成雙薩克斯風編制**。十七軌 78 分是他篇幅最長的一張，首軌〈Wisdom Is Eternal (For Barry Harris)〉悼念 2021 年辭世的 Barry Harris，曲序從〈Protoevangelium (The First Gospel)〉一路排到〈Now & Forevermore〉。Ross 自己製作，Jason Rostkowski 錄音與混音。**實掃卡池：`Joel Ross` 在 seed 17,248 列、全部卡單與各批 `prop-*.json` 皆 0 命中**；盤名 `Gospel Music` 子字串命中 c-114 的 `Sister Lucille Pope & The Pearly Gates —《Our Silver Anniversary In Gospel Music》(1974)`，**掛名與盤名都不同，不是同碟**。",
+  "risk": "⚠ 年份：MB frd 2026-01-30、Discogs 四筆原壓群 released 逐字全 2026-01-30、Apple us／gb／jp 同一 id 1853728278 releaseDate 逐字 `2026-01-30T08:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2026 UMG Recordings, Inc.`、Universal Music Canada 新聞稿同日——三層一致，**取 2026**；第 1800-B 條第二種掃描補出兩款黑膠與 FLAC，無一更早、也沒有日版。⚠ **本卡是本批年份最新的一張（2026-01-30），`chk-prop` 的年份上限逐字是 2026，剛好在界內。**⚠ **`Josh Johnson` 同時是本批 b 組《Openness Trio》的共同掛名人與本張的側人**——**兩張是不同的碟、不同的掛名主體，不是撞卡**（第 1131 條）；下游寫作不得把兩邊的事實串在一起。⚠ **陣容更替要寫清楚**：Immanuel Wilkins 在《Who Are You?》（2020）、《The Parable of the Poet》（2022）、《nublues》（2024）三張上都是中音，**本張不在陣中**——正文不得沿用前三張的陣容。⚠ 曲風：MB RG genres 逐字 `instrumental jazz:1, jazz:2, post-bop:1`（`instrumental jazz` 與 `post-bop` 都不在十個合法值裡，第 1572 條）、Discogs 四筆 genre 逐字全 `Jazz`（FLAC 那筆 style 逐字 `Post Bop`）——判 `['jazz']`。**⚠ 盤名叫《Gospel Music》但曲風不折成別的**：十七軌是爵士六重奏的原創演奏，不是福音樂類；`gospel` 也不在十個合法值裡。⚠ 軌數單一，MB／Discogs／Apple 逐字全 17 軌，無分歧（78 分，黑膠是雙片）。⚠ 掛名同批一致 `Joel Ross`（MB 6d09039b Person／US）；MB 另有同名合唱指揮 `02f84b16`——**這一張的盤名是《Gospel Music》、那位又正好是 choral arranger，是本批最容易誤判的一格，已逐字核過 artist id**。⚠ **MB 兩筆 release 的 catalog-number 欄都整格空**（第 1250 條第三種形狀），目錄號只有 Discogs 有。⚠ 店面（第 254 條）：Apple us／gb／jp 三店同一 id、17 軌與實體相符；`lookup?upc=602488058292` 亦命中。CAA release-group 層 1 圖，來源 release 逐字 f66ff9e7（CD 版）。",
+  "mbNote": "釘 release-group f1e43e36-2209-41f4-9897-cf2fef11da83。`release-group?inc=artist-credits+genres+tags`：title 逐字「Gospel Music」、artist-credit 單一 `Joel Ross`（6d09039b，Person／US，disambiguation 逐字 `US vibraphonist`）、first-release-date 2026-01-30、primary-type Album、secondary-types 逐字空陣列、genres `instrumental jazz:1`／`jazz:2`／`post-bop:1`、tags 另含 `jazzthing 162`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 2 筆，皆 17 軌 78 分、label-info 逐字 `Blue Note [713c4a95]`、**catalog-number 欄皆空**——0c2567be（2026-01-30 XW Digital Media，barcode 602488058322）與 f66ff9e7（2026-01-30 CD，country 欄空，barcode 602488058292）。**MB 未建兩款黑膠與 FLAC 版。**"
+ }
+]
