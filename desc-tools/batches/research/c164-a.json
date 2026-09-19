@@ -1228,5 +1228,281 @@
   "status": "full",
   "coverage": "full",
   "notes": "⚠ ⚠ 探測層那個零到零的覆核結論：本卡命中 Apple collection **1358522378**，五個市場都有貨、七軌都有預覽。三條判準逐條——軌數七、與美版實體 CD 的七軌相同；盤名一致，差別只在店面把聯名寫成盤名後綴、逐字是「Live (feat. The E-Collective)」；releaseDate 逐字 2018-04-20、與卡單的 2018 同年。成因是第 1753-B 條的第二種：店面的 artistName 逐字只有 Terence Blanchard，聯名被拆到盤名的括號裡，用完整掛名搜尋會落空。走的路徑是以第一位藝人的裸名在五個市場 lookup。⚠ 日本區的 artistName 逐字是片假名形，用拉丁掛名在該區搜尋同樣會落空。⚠ 掛名：卡單是 featuring 形、連字號取 ASCII，MB 的 artist-credit 是 & 形且連字號是非 ASCII 的 U+2010，Discogs 是逗號形，本稿照卡單形。⚠ 盤名撞陳列最嚴重的一組：池中有五張卡的盤名折鍵與 Live 相同（Donny Hathaway 1972、Mike Westbrook 1973、Ewa Demarczyk 1982、日野皓正 Quintet 1973（池中該列的掛名尾段是片假名形）、Fela Ransome-Kuti and the Africa '70 with Ginger Baker 1971），折鍵不同鍵、非同碟，正文提盤名時務必帶掛名與年份。⚠ 獎項：《Breathless》是入圍葛萊美而非得獎，發片稿逐字是 GRAMMY-nominated；本作自己的獎項本稿沒有任何逐字依據。⚠ 題材：槍枝暴力與三地事件是廠牌官方稿逐字寫出的內容，本稿照寫、不渲染細節。⚠ 錄音地點的拼法：Discogs 逐字寫 The Wyley Theater，發片稿逐字寫 Wyly Theatre，兩層拼法不同。⚠ 跨批同名藝人：Terence Blanchard 在別批另有作品，本卡的編制與錄音地點只涵蓋這一張。⚠ ① 紙本：2018 年的碟，Billboard OCR 覆蓋到 2015，這一層在結構上不適用。"
+ },
+ {
+  "key": "desc4:山中千尋|Utopia",
+  "artist": "山中千尋",
+  "album": "Utopia",
+  "facts": [
+   {
+    "f": "廠牌官方商品頁逐字說明選曲的由來：這是一張以古典名曲為主的碟，扣著當年迎來誕生一百二十週年的 Gershwin 與誕生一百週年的 Bernstein 兩位作曲家。",
+    "src": "https://www.universal-music.co.jp/chihiro-yamanaka/products/uccj-2157/"
+   },
+   {
+    "f": "官方商品頁逐字寫演奏的是她自己的固定三重奏，以出色的改編與充滿速度感的演奏把古典曲目表現成當代爵士。",
+    "src": "https://www.universal-music.co.jp/chihiro-yamanaka/products/uccj-2157/"
+   },
+   {
+    "f": "官方商品頁逐字點名三首曲子當代表：Gershwin 的〈I Loves You, Porgy〉與〈Strike Up The Band〉，以及 Tekla Bądarzewska-Baranowska 的〈La Priere D'une Vierge〉。",
+    "src": "https://www.universal-music.co.jp/chihiro-yamanaka/products/uccj-2157/"
+   },
+   {
+    "f": "十二軌的曲序逐字是〈Utopia〉〈La Priere D'une Vierge〉〈Mambo -from West Side Story-〉〈Rhapsody In Blue~Strike Up The Band〉〈Le Cygne〉〈Piano Sonata No.4〉〈Orchestral Suite No.2-Badinerie~Ricochet〉〈Arpeggione Sonata〉〈I Loves You, Porgy〉〈Shinda Otokono Nokoshita Monowa~Hope For Tomorrow〉〈Hungarian Dance No.5〉〈Songs My Mother Taught Me〉。",
+    "src": "https://www.discogs.com/release/12153960-Chihiro-Yamanaka-Utopia"
+   },
+   {
+    "f": "逐軌的作曲欄逐字掛出六位古典作曲家：Tekla Bądarzewska-Baranowska、Leonard Bernstein、Camille Saint-Saëns、Alexander Scriabin、Franz Schubert、Johannes Brahms 與 Antonín Dvořák，Gershwin 佔了兩軌，開場的同名曲〈Utopia〉則逐字掛山中千尋自己。",
+    "src": "https://www.discogs.com/release/12153960-Chihiro-Yamanaka-Utopia"
+   },
+   {
+    "f": "三重奏的成員逐字是山中千尋的鋼琴、合成器、Fender Rhodes 與 Hammond B-3，Yoshi Waki 的貝斯，John Davis 的鼓；製作與編曲兩項逐字都掛她自己。",
+    "src": "https://www.discogs.com/release/12153960-Chihiro-Yamanaka-Utopia"
+   },
+   {
+    "f": "Discogs 條目的 notes 欄逐字寫錄音在 2018 年三月與四月、母帶完成於 2018 年 4 月 12 日，companies 欄逐字是「Recorded At: Boomtown Studio」「Mastered At: Sterling Sound」。",
+    "src": "https://www.discogs.com/release/12153960-Chihiro-Yamanaka-Utopia"
+   },
+   {
+    "f": "由上一條與同一位鋼琴手前一年那張碟的條目並列可以推出：《Utopia》與 2017 年的《Monk Studies》用的是同一間錄音室 Boomtown Studio、同一位錄音兼混音的 Eric Elterman，母帶也同樣由 Greg Calbi 在 Sterling Sound 完成，換掉的是整組節奏組。",
+    "src": "https://www.discogs.com/release/11353474-Chihiro-Yamanaka-Monk-Studies"
+   },
+   {
+    "f": "全碟最長的一軌是六分四十四秒的〈Le Cygne〉，最短的是三分十三秒的〈I Loves You, Porgy〉，開場同名曲三分五十一秒。",
+    "src": "https://www.discogs.com/release/12153960-Chihiro-Yamanaka-Utopia"
+   },
+   {
+    "f": "封面攝影逐字掛 Keita Haginiwa、內頁照片逐字由山中千尋自己拍、美術設計逐字掛 Yoichiro Sezaki，這三個位置的分工與她前一年那張碟相同。",
+    "src": "https://www.discogs.com/release/12153960-Chihiro-Yamanaka-Utopia"
+   },
+   {
+    "f": "MusicBrainz 的首發日逐字 2018-06-20、primary-type 逐字 Album、secondary-types 逐字空陣列，轄下六筆 release 裡標準版 SHM-CD 逐字十二軌、品番 UCCJ-2157、barcode 4988031277621，2018-11-03 的黑膠版逐字只有十軌、品番 UCJJ-9015。",
+    "src": "https://musicbrainz.org/release-group/9b8d8301-e1f3-4877-a288-59d3dab8c106"
+   },
+   {
+    "f": "廠牌官方商品頁的發售日逐字 2018-06-20、品番逐字 UCCJ-2157、定價逐字三千三百日圓含稅，同一頁把同日的限定版與 11 月 3 日的黑膠列為別版本。",
+    "src": "https://www.universal-music.co.jp/chihiro-yamanaka/products/uccj-2157/"
+   }
+  ],
+  "hookCandidates": [
+   "十二軌裡只有第一首是她自己寫的，其餘從 Saint-Saëns 的天鵝一路排到 Dvořák 的母親教我的歌。",
+   "和前一年那張碟同一間錄音室、同一位錄音師、同一位母帶工程師，換掉的是整組節奏組。"
+  ],
+  "sound": "鋼琴三重奏把古典旋律當成爵士主題處理：速度往前推、和聲重新配置，鋼琴在段落之間切進合成器與 Fender Rhodes 的音色，貝斯與鼓維持乾淨俐落的推力。",
+  "keyTracks": [
+   "Utopia",
+   "La Priere D'une Vierge",
+   "Le Cygne",
+   "I Loves You, Porgy"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 曲風：MB 的 genres 逐字出現 classical（count 為一）、廠牌官網也逐字寫以古典名曲為中心，但那描述的是曲目來源，本作的演奏語彙是爵士鋼琴三重奏，卡單維持單格 jazz。⚠ 兩軌無作曲欄：第七軌〈Orchestral Suite No.2-Badinerie~Ricochet〉與第十軌〈Shinda Otokono Nokoshita Monowa~Hope For Tomorrow〉在 Discogs 的作曲欄是空的，本稿因此只列曲名、沒有指認作曲者，正文也請停在曲名這一層。⚠ 盤名：廠牌官方商品頁的標題用的是日文片假名譯名並帶 SHM-CD 這個版本裝飾詞，MB、Discogs 與 Apple 逐字都是 Utopia，依第 1747-B(一) 條照拉丁形。`artist` 欄用漢字、`album` 欄維持拉丁形。⚠ 盤名撞陳列：池中另有 Björk —《Utopia》(2017)（只差一年）與 Travis Scott —《UTOPIA》(2023)，折鍵不同鍵、非同碟，正文提盤名時請帶掛名與年份。⚠ ③ 廠牌官網：bluenote.com 那邊本層實測 404、WordPress 搜尋 API 回空陣列，日本線走 universal-music.co.jp，slug 逐字 chihiro-yamanaka 實測 200。序數本稿沒寫。⚠ 同批同名藝人：山中千尋在本組另有 2017 年的《Monk Studies》，兩張的曲目來源與節奏組不同，facts 第八條刻意把兩張共用的幕後三個位置列清楚，正文寫的時候請只用自己這張的部分。⚠ 軌數：CD 十二、黑膠十、Apple 十二。⚠ 店面：Apple 美國區沒有這張。⚠ 年份三層一致 2018：MB 首發日、Discogs released 與官方商品頁的發售日逐字都是 2018-06-20。⚠ ① 紙本：2018 年的日本盤，Billboard OCR 覆蓋到 2015，這一層在結構上不適用。"
+ },
+ {
+  "key": "desc2:José James|Lean On Me",
+  "artist": "José James",
+  "album": "Lean On Me",
+  "facts": [
+   {
+    "f": "廠牌發片稿逐字說明這是一張向 Bill Withers 致敬的碟，收十二首他的歌，時間點扣著 Withers 的八十歲生日那一年，製作人是 Blue Note 總裁 Don Was，錄音在 Capitol 那間傳奇的 Studio B。",
+    "src": "https://www.bluenote.com/jose-james-pays-tribute-to-bill-withers/"
+   },
+   {
+    "f": "發片稿逐字列出樂團：貝斯 Pino Palladino、鍵盤 Kris Bowers、吉他 Brad Allen Williams、鼓 Nate Smith，客座包含歌手 Lalah Hathaway、薩克斯風手 Marcus Strickland 與小號手 黒田卓也（Takuya Kuroda），先行曲逐字是〈Use Me〉。",
+    "src": "https://www.bluenote.com/jose-james-pays-tribute-to-bill-withers/"
+   },
+   {
+    "f": "發片稿逐字引 James 說明作法：Bill 寫的是你一輩子都愛的歌，他不想在那些歌底下墊嘻哈節拍、也不想用十分鐘的咆勃獨奏把它拆掉，唯一正確的做法就是帶一支很強的樂團進去、把帶子跑起來、把氣氛抓住，他們就只是把歌彈出來。",
+    "src": "https://www.bluenote.com/jose-james-pays-tribute-to-bill-withers/"
+   },
+   {
+    "f": "發片稿逐字交代這件事的起點：過去幾年他在現場一首一首把 Withers 的歌加進歌單，最後累積成一段很長的串燒，他形容那像最好的那種教會場面，有人哭、有人跳舞、有人跟著唱跟著喊。",
+    "src": "https://www.bluenote.com/jose-james-pays-tribute-to-bill-withers/"
+   },
+   {
+    "f": "發片稿逐字寫選曲過程：這個企劃 2017 年底以巡演計畫的形式起步，他把 Withers 的九張專輯、2009 年的紀錄片《Still Bill》與大量網路影片全部看過一輪才定出名單，之後透過 Don Was 直接去問本人。",
+    "src": "https://www.bluenote.com/jose-james-pays-tribute-to-bill-withers/"
+   },
+   {
+    "f": "發片稿逐字記下他與 Withers 見面的場合：兩人在好萊塢那間老店 Musso & Frank's 吃飯，Withers 給了祝福；James 說那一個小時學到的比在音樂學校或十年現場演出學到的還多，還說 Withers 看了那份歌單非常喜歡。",
+    "src": "https://www.bluenote.com/jose-james-pays-tribute-to-bill-withers/"
+   },
+   {
+    "f": "發片稿逐字指出這支樂團大致上就是他 2013 年在 Blue Note 那張打開局面的《No Beginning No End》的班底。",
+    "src": "https://www.bluenote.com/jose-james-pays-tribute-to-bill-withers/"
+   },
+   {
+    "f": "十二軌的曲序逐字是〈Ain't No Sunshine〉〈Grandma's Hands〉〈Lovely Day〉〈Lean On Me〉〈Kissing My Love〉〈Use Me〉〈Who Is He〉〈Hello Like Before〉〈Just The Two Of Us〉〈Hope She'll Be Happier〉〈The Same Love That Made Me Laugh〉〈Better Off Dead〉，每一軌的作曲欄都掛著 Bill Withers。",
+    "src": "https://www.discogs.com/release/12589453-Jos%C3%A9-James-Lean-On-Me"
+   },
+   {
+    "f": "逐軌 credit 顯示只有〈Lovely Day〉那一軌有客座人聲，逐字掛 Lalah Hathaway；同一軌與〈Use Me〉〈Just The Two Of Us〉三軌加進管樂組——小號與管樂編寫逐字掛 黒田卓也（Takuya Kuroda）、長號逐字掛 Corey King、薩克斯風逐字掛 Marcus Strickland。",
+    "src": "https://www.discogs.com/release/12589453-Jos%C3%A9-James-Lean-On-Me"
+   },
+   {
+    "f": "第五軌〈Kissing My Love〉的長笛逐字掛 David McMurray，那是與本批另一張碟同名的那位薩克斯風手；第四軌〈Lean On Me〉的 credit 欄逐字把拍手掛給 José James 與 Talia Billig 兩人。",
+    "src": "https://www.discogs.com/release/12589453-Jos%C3%A9-James-Lean-On-Me"
+   },
+   {
+    "f": "Discogs 條目的 companies 欄逐字列出六處錄音室（Capitol Studios、Lucy's Meat Market、The Bunker, Brooklyn、Electric Garden, Brooklyn、Motherbrain Studio、United Recording Studios），母帶在 Capitol Mastering 由 Ian Sefchick 處理，混音逐字掛 Brian Bender，錄音逐字掛 Ed Cherney。",
+    "src": "https://www.discogs.com/release/12589453-Jos%C3%A9-James-Lean-On-Me"
+   },
+   {
+    "f": "MusicBrainz 的首發日逐字 2018-09-28、primary-type 逐字 Album、secondary-types 逐字空陣列，轄下三筆 release：美版 CD 十二軌（barcode 602567737353）、一筆數位十二軌、日版數位十四軌（barcode 602567951865）。",
+    "src": "https://musicbrainz.org/release-group/9c8e3dee-d175-41a6-839c-92682670536d"
+   }
+  ],
+  "hookCandidates": [
+   "定好歌單之後他還是不確定，製作人說那就去問本人——兩人在好萊塢一間老餐館吃飯，Withers 當面點頭。",
+   "十二首全是同一個人寫的歌，樂團大致就是他 2013 年那張打開局面的碟的原班人馬。"
+  ],
+  "sound": "把歌交還給歌本身的靈魂樂編制：貝斯與鼓走鬆而穩的律動，Hammond 與 Rhodes 鋪暖底，吉他用乾淨的切分，三軌加進管樂組把段落抬起來，人聲從頭到尾維持在不加裝飾的敘述位置。",
+  "keyTracks": [
+   "Use Me",
+   "Lovely Day",
+   "Ain't No Sunshine",
+   "Lean On Me"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 同批同名藝人：José James 在本組另有 2017 年的《Love in a Time of Madness》，那張是鼓機與合成器為底的節奏藍調、由 Antario Holmes 主導，本張是真樂團在 Capitol 錄的翻唱集、由 Don Was 製作，兩張各寫各的。⚠ 敘事鄰居：池中有 Bill Withers —《Live at Carnegie Hall》(1973)，屬王牌層級，本卡的論述請集中在這次翻唱本身與 Withers 給祝福那段。⚠ 人名字形：小號手在 Discogs 與廠牌官網逐字都是 Takuya Kuroda，本稿依東亞音樂人照原文漢字的體例寫成 黒田卓也 並在括號內保留拉丁形。⚠ 跨卡：第五軌長笛的 David McMurray 與本組第十三張的掛名 Dave McMurray 是同一人的兩種寫法，正文引用時請只寫本卡這一軌。⚠ 序數：廠牌官網沒有給任何第幾張的數字，本稿沒寫序數；發片稿把《No Beginning No End》寫成 2013 年在 Blue Note 打開局面的那張，是可查證的排序敘述。⚠ 軌數：實體十二、Apple 美英法德十二、Apple 日本十四。⚠ 年份兩層一致 2018：MB 首發日與 Discogs released 逐字都是 2018-09-28。⚠ ① 紙本：2018 年的碟，Billboard OCR 覆蓋到 2015，這一層在結構上不適用。"
+ },
+ {
+  "key": "desc2:GoGo Penguin|A Humdrum Star",
+  "artist": "GoGo Penguin",
+  "album": "A Humdrum Star",
+  "facts": [
+   {
+    "f": "廠牌發片稿逐字交代盤名的由來：它取自美國天文物理學家 Carl Sagan 在 1980 年電視影集《Cosmos》裡的一段話——我們住在一顆平凡無奇的恆星旁邊那顆微不足道的行星上，那顆恆星迷失在一個銀河裡，而那個銀河又收在一個宇宙被遺忘的角落。",
+    "src": "https://www.bluenote.com/gogo-penguin-new-album-a-humdrum-star/"
+   },
+   {
+    "f": "發片稿逐字寫他們是先把曲序全部定完，才決定這個盤名的。",
+    "src": "https://www.bluenote.com/gogo-penguin-new-album-a-humdrum-star/"
+   },
+   {
+    "f": "發片稿逐字介紹這支曼徹斯特三人團的養分來源：共同的電子樂愛好、古典音樂學院與爵士樂團的底子、還有搖滾獨立樂團的經驗，作法是把原音與電子兩種手法合在一起；發行日 2 月 9 日、先行曲逐字是〈Raven〉。",
+    "src": "https://www.bluenote.com/gogo-penguin-new-album-a-humdrum-star/"
+   },
+   {
+    "f": "發片稿逐字列出兩張前作：2014 年入圍水星獎的《V2.0》與 2016 年他們在 Blue Note 的第一張《Man Made Object》，並逐字記載 The New York Times 把他們選為 2017 年 SXSW 十二支最佳樂團之一。",
+    "src": "https://www.bluenote.com/gogo-penguin-new-album-a-humdrum-star/"
+   },
+   {
+    "f": "發片稿逐字說明寫作方式：曲子的來源有兩種，一種是鼓手 Rob Turner 用 Logic 與 Ableton 這些 DJ 與製作人的工具寫出「草稿」再由三人一起發展，另一種是直接在貝斯上或鋼琴上寫成。",
+    "src": "https://www.bluenote.com/gogo-penguin-new-album-a-humdrum-star/"
+   },
+   {
+    "f": "發片稿逐字引 Rob Turner 的話：他們從「內與外」這個想法出發，去處理那些看似對立、本質上卻是同一回事的東西；很多質地與聲響來自電子的寫作，但製作人 Brendan Williams 要求一切都盡可能以有機的方式做出來。",
+    "src": "https://www.bluenote.com/gogo-penguin-new-album-a-humdrum-star/"
+   },
+   {
+    "f": "發片稿逐字把音效工程師 Joe Reiser 稱作 GoGo Penguin 的「第四位成員」，不論巡演或進錄音室都算在內，共同製作是 Brendan Williams；貝斯手 Nick Blacka 的原話逐字是他們在這張碟上覺得更自由了，而且每個人在裡面的份量都更重。",
+    "src": "https://www.bluenote.com/gogo-penguin-new-album-a-humdrum-star/"
+   },
+   {
+    "f": "三人的編制逐字是 Chris Illingworth 的鋼琴、Nick Blacka 的低音提琴、Rob Turner 的鼓，而九軌的作曲欄逐字三個人並列、沒有分軌。",
+    "src": "https://www.discogs.com/release/28404286-GoGo-Penguin-A-Humdrum-Star"
+   },
+   {
+    "f": "九軌的曲序逐字是〈Prayer〉〈Raven〉〈Bardo〉〈A Hundred Moons〉〈Strid〉〈Transient State〉〈Return To Text〉〈Reactor〉〈Window〉，最長的是八分十一秒的〈Strid〉、最短的是兩分五十四秒的開場曲〈Prayer〉。",
+    "src": "https://www.discogs.com/release/28404286-GoGo-Penguin-A-Humdrum-Star"
+   },
+   {
+    "f": "Discogs 條目的 companies 欄逐字是「Recorded At: Low Four Studios」「Mixed At: 80 Hertz Studios」「Mixed At: Low Four Studios」「Mastered At: Calyx Mastering」，母帶逐字掛 Norman Nitzsche，設計逐字掛 Paul Middlewick。",
+    "src": "https://www.discogs.com/release/28404286-GoGo-Penguin-A-Humdrum-Star"
+   },
+   {
+    "f": "MusicBrainz 的首發日逐字 2018-02-09、primary-type 逐字 Album、secondary-types 逐字空陣列，轄下六筆 release 的軌數分四種：歐版 CD 九軌、一筆數位十一軌、歐版黑膠是五加四共九軌、日版 CD 十二軌（品番 UCCQ-1080、barcode 4988031262504）。",
+    "src": "https://musicbrainz.org/release-group/de5e3956-f770-4734-a205-d91cbaccf76c"
+   },
+   {
+    "f": "Apple Music 那邊同時掛著四個版本：美英德的十二軌《A Humdrum Star (Deluxe)》1440897364、美日的九軌 1440905311、美英的十軌 1440899948、日本另有一個十三軌的 1440908832，℗ 欄逐字全部是「℗ 2018 Decca Records France」、releaseDate 逐字全部是 2018-02-09。",
+    "src": "https://music.apple.com/us/album/a-humdrum-star/1440905311"
+   }
+  ],
+  "hookCandidates": [
+   "盤名來自 Carl Sagan 在《Cosmos》裡形容太陽的那句話：一顆平凡無奇的恆星。曲序是先排好的，名字後來才有。",
+   "很多聲響是鼓手先用 Logic 與 Ableton 寫成草稿，再由三個人用鋼琴、低音提琴與鼓重新做出來。"
+  ],
+  "sound": "把電子音樂的結構交給原音三重奏演奏：鋼琴打出重複的短句、低音提琴撐住低頻的推進、鼓用細碎的切分模擬鼓機的顆粒，整體張力來自原音與電子兩種寫法互相拉扯。",
+  "keyTracks": [
+   "Raven",
+   "Bardo",
+   "Strid",
+   "Prayer"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 獎項：《V2.0》是入圍水星獎而非得獎，發片稿逐字是 Mercury Prize-nominated；本作自己的獎項本稿沒有任何逐字依據。⚠ 序數：發片稿逐字把《Man Made Object》寫成「their 2016 Blue Note debut」，N 等於一、依第 1755-B 條屬身分敘述可寫；本作是在 Blue Note 的第幾張，官網沒有逐字寫出，本稿因此沒寫這個數字。⚠ 軌數四種：實體歐版九、日版十二，Apple 有九、十、十二（豪華版）、十三四個值，正文用歐版那個數。⚠ 曲風：MB 的 genres 逐字有 electronic 與 techno，卡單取 jazz 與 electronic 兩格。⚠ 年份兩層一致 2018：MB 首發日與 Apple releaseDate 逐字都是 2018-02-09。⚠ ① 紙本：2018 年的碟，Billboard OCR 覆蓋到 2015，這一層在結構上不適用。"
+ },
+ {
+  "key": "desc2:Marcus Miller|Laid Black",
+  "artist": "Marcus Miller",
+  "album": "Laid Black",
+  "facts": [
+   {
+    "f": "廠牌發片稿逐字引 Marcus Miller 自己說明這張碟與前作的關係：《Afrodeezia》像一趟穿過他自身歷史的音樂航行，他沿著祖先的路線與西非、北非、南美與加勒比海的樂手合作；到了《Laid Black》他決定把音樂拉到當下，用今天都會音樂裡正在發生的元素，所以碟上聽得到嘻哈、trap、靈魂樂、放克、節奏藍調與爵士。",
+    "src": "https://www.bluenote.com/marcus-miller-returns-with-laid-black/"
+   },
+   {
+    "f": "發片稿逐字寫這是他前一張《Afrodeezia》之後隔了三年的作品，發行日 6 月 1 日、先行單曲逐字是〈Untamed〉。",
+    "src": "https://www.bluenote.com/marcus-miller-returns-with-laid-black/"
+   },
+   {
+    "f": "發片稿逐字說明錄製方式與客座：九軌裡大部分是他和自己的樂團在紐約一間錄音室錄的，另外找來 Trombone Shorty、Kirk Whalum、Take Six、Jonathan Butler 與比利時歌手 Selah Sue 當客座。",
+    "src": "https://www.bluenote.com/marcus-miller-returns-with-laid-black/"
+   },
+   {
+    "f": "發片稿逐字列出他的獎項與榮銜：兩度葛萊美得主、2013 年荷蘭 Edison 獎的爵士終身成就獎得主、2010 年法國 Victoire du Jazz 得主，並在 2013 年獲聯合國教科文組織任命為和平藝術家。",
+    "src": "https://www.bluenote.com/marcus-miller-returns-with-laid-black/"
+   },
+   {
+    "f": "發片稿逐字記載他年輕時在 Miles Davis 的樂團巡演數年之後，為《Tutu》這張專輯與同名曲擔任作曲、製作與編曲，那張碟拿下兩座葛萊美，被視為 Miles Davis 晚期的代表作之一。",
+    "src": "https://www.bluenote.com/marcus-miller-returns-with-laid-black/"
+   },
+   {
+    "f": "發片稿逐字列出他的貝斯出現過的曲目，包括 Bill Withers 的〈Just The Two Of Us〉、Luther Vandross 的〈Never Too Much〉、Aretha Franklin 的〈Jump To It〉、Snoop Dogg 的〈Gz and Hustlas〉、Jay-Z 的〈Can't Knock the Hustle〉與 Beyoncé 的〈All Night〉，並逐字寫他與 Vandross 有長達十五年的寫歌與製作夥伴關係、期間有十三張連續白金專輯、其中七張由他共同製作。",
+    "src": "https://www.bluenote.com/marcus-miller-returns-with-laid-black/"
+   },
+   {
+    "f": "九軌的曲序與長度逐字是〈Trip Trap〉六分五十五秒、〈Que Sera Sera〉六分零七秒、〈7-T's〉五分五十八秒、〈Sublimity 'Bunny's Dream'〉六分四十八秒、〈Untamed〉四分五十二秒、〈No Limit〉五分三十九秒、〈Someone To Love〉四分四十八秒、〈Keep 'Em Runnin〉五分二十一秒、〈Preacher's Kid〉七分四十三秒。",
+    "src": "https://www.discogs.com/release/34187608-Marcus-Miller-Laid-Black"
+   },
+   {
+    "f": "逐軌 credit 把客座分得很清楚：Selah Sue 唱〈Que Sera Sera〉的主唱，Trombone Shorty 在〈7-T's〉吹長號獨奏，Jonathan Butler 在〈Sublimity 'Bunny's Dream'〉唱歌兼彈木吉他，Take 6 在末軌〈Preacher's Kid〉唱和聲，Kirk Whalum 在〈Untamed〉吹長笛、在〈Keep 'Em Runnin〉與〈Preacher's Kid〉吹次中音薩克斯風。",
+    "src": "https://www.discogs.com/release/34187608-Marcus-Miller-Laid-Black"
+   },
+   {
+    "f": "九軌裡只有兩軌不是他寫的或共寫的：〈Que Sera Sera〉的作者欄逐字是 Jay Livingston 與 Ray Evans，〈Keep 'Em Runnin〉的作者欄逐字並列 Maurice White、Larry Dunn、Eduardo Del Barrio 與 Marcus Miller。",
+    "src": "https://www.discogs.com/release/34187608-Marcus-Miller-Laid-Black"
+   },
+   {
+    "f": "他自己在這張碟上的樂器欄橫跨貝斯、無琴格貝斯、低音單簧管、鍵盤、Wurlitzer、管風琴、Clavinet、合成器、節奏吉他、中音薩克斯風與人聲，製作與編曲兩項也逐字掛他，共同製作與企劃統籌逐字掛 Brenda Miller。",
+    "src": "https://www.discogs.com/release/34187608-Marcus-Miller-Laid-Black"
+   },
+   {
+    "f": "Discogs 條目的 companies 欄逐字列出十一處錄音地點，從 Santa Monica 的 Hannibal Studios、紐約的 Sear Sound 與 The Village，到西雅圖、拉斯維加斯、費城、波士頓、紐奧良與比利時的工作室，混音在 Cane River Studios、母帶在 Resolution Mastering 由 Ron Boustead 處理；版權欄逐字是 Hannibal LLC 再授權給 UMG Recordings。",
+    "src": "https://www.discogs.com/release/34187608-Marcus-Miller-Laid-Black"
+   },
+   {
+    "f": "MusicBrainz 的首發日逐字 2018-06-01、primary-type 逐字 Album、secondary-types 逐字空陣列，轄下兩筆 Official 的實體 CD 都是九軌、barcode 逐字 602567645900，另有四筆狀態逐字是 Withdrawn 的數位 release。",
+    "src": "https://musicbrainz.org/release-group/d9a2acde-6916-49ec-a48b-a8dbd3f99217"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟上出現 Trombone Shorty 的長號、Take 6 的和聲與一位比利時歌手的主唱，錄音地點橫跨十一間工作室。",
+   "他把上一張碟形容成沿著祖先路線走的航行，這一張則刻意拉回當下的都會音樂。"
+  ],
+  "sound": "以貝斯為主角的當代放克爵士：低音線佔據最前面的位置，鍵盤與合成器鋪出光滑的和聲層，管樂在段落轉折處齊奏，節拍借了嘻哈與 trap 的骨架但由真鼓打出來。",
+  "keyTracks": [
+   "Untamed",
+   "7-T's",
+   "Que Sera Sera",
+   "Preacher's Kid"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 店面異常一筆：Apple 只有日本區有這張，collection 逐字 1403663799、十軌、℗ 欄逐字「℗ (C) 2018 Hannibal L.L.C.」，而該區的 artistName 逐字是片假名形——這正是第 1753-B 條第三種成因，用拉丁掛名在其他四區搜尋會落空。本層以裸名在美英日法德五區各搜一次確認，美英法德確實沒有。上架配固定試聽時請以日本區那個 collection 為準，並再查一次美國區有沒有補上。⚠ 獎項：兩座葛萊美、2013 年 Edison 爵士終身成就獎、2010 年 Victoire du Jazz 三項逐字都寫成得獎；《Tutu》拿下兩座葛萊美那一筆也是得獎。本作自己的獎項本稿沒有任何逐字依據。⚠ 序數：廠牌官網另一處逐字寫他在 Blue Note 發過兩張、最近的一張是 2018 年的《Laid Black》、2015 年的《Afrodeezia》是他在該廠牌的第一張，那是廠牌目錄序數（第一類），2018 年的碟在紙本這一層結構上不存在、湊不出兩層，本稿因此沒寫這個數字；發片稿裡「隔了三年」那一句是間隔敘述，可寫。⚠ 跨卡：〈7-T's〉的客座 Trombone Shorty 在本組另有自己的一張碟，這一軌的客座敘述歸本卡。⚠ 軌數：實體九、Apple 日本區十。⚠ 年份兩層一致 2018：MB 首發日與 Discogs released 逐字都是 2018-06-01。⚠ ① 紙本：2018 年的碟，Billboard OCR 覆蓋到 2015，這一層在結構上不適用。"
  }
 ]
