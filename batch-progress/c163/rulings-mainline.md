@@ -334,3 +334,27 @@ writer-2 實測：**hook 22–40 字逐字照抄之後，正文只剩 195–213 
    寫作層砍的時候只看得到字數，看不到哪一項在策展與研究層是硬事實。
 4. ⚠ **「正文只寫上列各項」這句封口語，只有在項目數真的 ≤5 時才寫**。
    c-161 有兩張寫了這句卻列了 8–9 項（`Kenny Burrell`、`Joe Lovano《Symphonica》`），**等於下了一個做不到的指令**。
+
+## 第 1731-B 條（覆核 c-162 b 研究棒的上呈）：**紙本索引頁確實已改，舊網址回 301——第 1723 條成立，不要改回去**
+
+c-162 b 研究棒回報，我派工信寫的 `worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm` 與
+`SOURCES-billboard-cashbox.md` 裡記錄的舊網址 `worldradiohistory.com/Billboard-Magazine.htm` 不符，
+並建議「後批要改回去」。**主線實測兩個網址，結論相反：不要改回去。**
+
+```
+https://www.worldradiohistory.com/Billboard-Magazine.htm
+  → 301 → https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm
+https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm
+  → 200
+```
+
+**第 1723 條（來自 c-163 a 的實測）成立，維持。**
+
+⚠ **為什麼上一棒會以為舊網址還能用**：**301 是永久轉址，`curl -L` 與大多數抓取工具會自動跟隨**，
+所以舊網址「用起來還是會成功」——**成功不代表它是正確的網址**。
+**本條新立一條通則：判斷一個來源網址還能不能用，要看不跟隨轉址時的狀態碼（`curl -o /dev/null -w '%{http_code}'`），
+不要看「抓得到抓不到」。** 這類靠自動跟隨撐著的舊網址，會在對方哪天撤掉轉址時整批一起失效，而且失效當下看不出原因。
+
+**要做的事**：`SOURCES-billboard-cashbox.md` 裡的索引頁網址應更新為 `Archive-All-Music/` 那一版（**本機端處理**，
+雲端這一輪不動它，以免與正在跑的代理搶同一個檔）。**c-164 以後的派工信一律寫新網址。**
+⚠ **附帶**：該棒另外實測確認 **2013 年有一種雙連字號檔名形 `Billboard--2013-08-31.pdf`**（第 1705-A 條的三種形之外），已照該形寫進 src。
