@@ -2765,3 +2765,71 @@ c-169 策展層預測「店面與封面覆蓋率要照歐洲分支預期」（�
 
 **`Kevin Eubanks《Spiritalk》(1993, Blue Note)` 池中與所有批次都沒有**——**與 c-171 這 25 張同成因的機率很高。**
 **主線待辦：藝人軸稽核用修正後的正規化重跑一次，並把這一筆一起納入。**
+
+## 第 1824-B 條（c-171 b 驗收＋全批結算）：**25 張收 20 退 5，稽核層的 `gap` 判定錯了 3／25**
+
+`chk-prop a b` 合計 20 張 17 位標記 0、第五道撞 apex 0 處；`dedup-crossbatch c171` 四項全 0；
+第 315 條 a 10＋3、b 10＋2 ＝ 25 ✔。**卡單已建：20 張全 pinned、人工 0、重複鍵 0。**
+
+**b 組退 2**：`Michel Petrucciani《Trio in Tokyo》`（**不是 Blue Note 家族**）、
+`Van Morrison《Born to Sing: No Plan B》`（**曲風閘：非爵士**）。
+
+### ⚠ ⚠ 「是不是 Blue Note」的判定有兩種完全不同的失效模式，各要一道不同的關
+
+| | a 組那筆（`Tenor Titans`） | b 組這兩筆 |
+|---|---|---|
+| 形狀 | **引錯碟**——佐證指向另一張同名系列碟 | **引對碟，但把 `companies` 欄的角色讀成廠牌** |
+| 擋得住的關 | **盤名關**（第 2693 條新加的第三關） | ⚠ **盤名關擋不住** |
+| 要加的關 | — | **打 `releases/<id>`，把 `labels` 與 `companies` 分開看** |
+
+⚠ **b 組實測：12 張裡 3 張（25%）的 Discogs `search` API `label` 陣列含 Blue Note、但 `releases/<id>` 的 `labels` 欄不含**
+——Petrucciani 的是 **`The Blue Note Tokyo`，role 逐字 `Recorded At`（演出場地）**；
+Van Morrison 的是 `Licensed To`／`Manufactured By`；Ruben Hein 的是**第二格而非第一格**。
+**第 2490 條的白名單只寫了 `The Blue Note Jazz Club`，涵蓋不到東京那家**——**白名單治不了這個，要改成「只讀 `labels` 欄、且只看第一格」。**
+
+**`&`→`and` 重掃：b 組 0 筆新撞卡**（它的實掃腳本從一開始就用與 `chk-prop.mjs` 的 `k()` 逐字相同的正規化）。
+**佐證網址 12／12 逐筆點開核過，碟本身 12／12 都對。**
+
+### Van Morrison 那筆的分界寫得很乾淨，值得留作範例
+
+**十三處證據 `jazz` 出現 0 次**（MB RG genres/tags 逐字 `blues／folk rock／rock`；Discogs 10 筆 genre 全 `Rock, Blues, Pop`；Apple gb `primaryGenreName` 逐字 `Rock`）。
+**與 c-158 收《What's Wrong With This Picture?》的先例分界**：那張 MB genres 含 `jazz`＋`jazz blues`、Discogs genre 含 `Jazz`、
+**Billboard 2003-09-20 p96 逐字 `blues- and jazz-infused`**、零售廠牌欄第一格是 Blue Note。**本張四項全反**（廠牌欄第一格是 `Exile`）。
+⚠ **完全可逆**：家族閘本身過得了（notes 逐字 `under exclusive license to Blue Note Records`），
+rgMbid／版本／建議曲風 `['rock','blues']` 都寫進第 2753 條，**主線要收不必重查。**
+
+### 掛名：新立一個四實體並存的例子
+
+**`Bill Charlap & Sandy Stewart`（本批新立）**——**前提成立**（MB RG credit 兩位、**joinphrase 逐字 ` & `**，
+MB release credit 與 Apple `artistName` 逐字都是這個串接形），
+**與 `Bill Charlap Trio`(6)／裸名(1)／`& Renee Rosnes`(1) 四種編制並存**；**`& Renee Rosnes`(c-162) 是同形先例。**
+⚠ **我派工信寫「Discogs 條目逐字是 `Sandy Stewart (2) & Bill Charlap`」也錯了**——**是逗號不是 `&`，帶 `&` 的是宣傳盤而且順序相反。**
+
+### 年份與版本：第 1800-B 條的第二種掃描在本批是唯一可用的查法
+
+**改判 1 筆**：`Gonzalo Rubalcaba《The Trio》` 1998→1997（日版 `TOCJ-5591`，Discogs `released` 逐字 `1997-12-22`、7 軌逐軌相同）。
+⚠ **b 組 10 張裡 6 張的 MB release 完全沒有 barcode**（c-170 是 3／15）——**第一種查法根本跑不起來。**
+⚠ **`Ruben Hein《Live》` 要改 `artist=` 單欄查才撈得到**（Discogs 端的盤名逐字是 `Live (At The Royal Theatre Carré)`，
+**我派工信寫「盤名逐字只有 `Live`」只對 MB 端**）。
+
+### 第 611 條盲區三命中 1 筆，且處置帶了代價
+
+**`Ruben Hein《Live》` 在 MB 有兩個 RG**：`d00a707f`（secondary-types 對，但 release 無 barcode、無 label-info）
+與 `47b79830`（credit 多掛 `& Metropole Orkest`、漏標 Live，**但有 barcode**）。十軌軌名逐字相同＝同一張碟。
+**維持釘 `d00a707f`**（改釘就得新造池中零張的聯名字串）。
+⚠ **代價**：**CAA 與 UPC 兩條探測鏈可能撈不到這張，落空就改試 `47b79830`。**
+
+### ⚠ slice 的欄位在這一批全部不可信
+
+**本批 slice 的 8 個欄位（`live`／`country`／`format`／`catno`／`countries`／`formats`／`nReleases`／`reissueSeries`）
+全部是空或預設值**——它不是列舉檔產的。**`live` 兩張現場盤都寫 `false`。**
+**→ 用稽核產物開的批，slice 只有 `artist`／`album`／`year`／`rgMbid`／`note` 五欄可讀。**
+
+### 順手掃到三筆同形線索，主線待辦
+
+1. ⚠ **`Stefano Di Battista Quintet《A prima vista》(1998)`**：MB RG `81f84659`、**`primary-type` 欄未設**，
+   `enum` 與四處全 0 命中，Discogs 逐字 `Blue Note 7243 4 97945 2 8`。
+   **`primary-type` 沒設，連藝人軸稽核的 `type=album` 過濾都會漏掉——這可能是第六種列舉失效形狀。**
+2. ⚠ **`Stefano Di Battista《Parker's Mood》(2004)`**：**在 enum 裡，但該列 `year` 欄逐字 `null`**，依年份排序切批時掉出去。
+   **待辦：查 enum 裡還有多少列 `year` 是 null。**
+3. **`Kevin Eubanks《Spiritalk》(1993)`**（a 組提報）與上面兩筆，**建議合併成一次補掃**。
