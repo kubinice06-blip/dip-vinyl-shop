@@ -1172,3 +1172,102 @@ Norah Jones《Day Breaks》2016（(丁)）、Julia Kadel Trio《Über und unter�
 
 ⚠ **本棒改動的檔案兩個，皆非禁區**：`desc-tools/batches/research/c163-b.json`（新建）＋ 本檔尾的這一節（**append-only，未整檔覆寫**）。
 ⚠ **`c163-a.json`／`c163-cards.json`／`previews.json`／`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md` 一字未碰；未 commit、未 push。**
+
+---
+
+# c-163 a 組 鉤子層裁定（第 1803–1809 條，append-only）
+
+## 第 1803 條（c-163 a 鉤子交件）：**17 張全數產出；hook 字數 13–26、加權 13–24；note 原始字元 222–298；`qa-batch hooks c163` 的 a 組硬標記 0、`chk-hook-crossgroup c163` 全部通過**
+
+唯一一筆 `qa-batch` 標記是 `⚠ b 缺 hook 檔`（b 組尚未派工，非 a 組問題）。
+
+## 第 1804 條：**第 1739-B 條的字元預算逐張算過，17 張全部 ≤230；八張在初稿階段超標、當場整格捨去**
+
+估法：`hook 字元 + 主故事鏈各項目字元`（以 `note` 主故事鏈的實寫字元為代理值，
+它比抽象估項更接近寫作層的實際渲染量）。**初稿八張超出 230**
+（`Rhizome` 236／`ALL RISE` 239／`Rising Son` 236／`Somethin' Blue` 241／
+`Vamos Lá Brasil` 247／`Wild Man Dance` 236／`Im Vertrauen` 231／`Nostalgia` 231），
+**一律在鉤子層先整格捨去**（捨去的是次要人名、第二個地點、引語的後半句），
+**定稿區間 181–230、中位 220**。
+⚠ **拉丁專名逐張壓到 3–4 個**（不含本卡自己的掛名與 `Blue Note`）：
+`Somethin' Blue` 與 `1 Hopeful Rd.` 各 4 個貼著上限，其餘 2–4。
+`Audible Architecture` 原本要點名 `Larry Grenadier`／`Billy Kilson`，
+兩個名字合計 28 字元、**在動筆前就整格捨去**，節奏組改寫成「低音提琴與鼓」。
+
+## 第 1805 條：**序數逐張判定（照第 1732 條三分法），17 張裡 9 張寫、8 張不寫**
+
+| 卡 | 判 | 依據 |
+|---|---|---|
+| `Annie Lennox《Nostalgia》` | **不寫** | 廠牌藝人頁 `sixth solo album`／廠牌新聞稿 `seventh solo album`，**兩份官方文件打架** |
+| `Jason Moran《ALL RISE》` | **不寫** | 「Blue Note 第九張」屬 (一) 廠牌目錄序數，**只有紙本一層**、`bluenote.com/artist/jason-moran/` 無此計數 |
+| `José James` 的「Blue Note 第二張」 | **不寫** | 同上，(一) 類、紙本那期只有 OUT NOW 欄 |
+| `José James` 的「第五張錄音室作」 | **寫** | (二) 藝人目錄序數，來源是**廠牌新聞稿**（一手），符合第 1732 條的「一層即可但要一手」 |
+| `Julia Kadel Trio`「首張專輯」 | **寫** | (三) 身分敘述 |
+| `quasimode《My Favorite Songs》`「第一張翻唱專輯」 | **寫** | (三)，廠牌官方商品頁逐字「初のカヴァー・アルバム」 |
+| `Jazztronik`「第一張翻唱專輯」 | **寫** | (三)，廠牌官方商品頁逐字「初のカヴァー・アルバム」 |
+| `黒田卓也`「第一個與美國 Blue Note 簽約的日本人」＋「首張專輯」 | **寫** | (三)，廠牌日本官方商品頁逐字 |
+| `山中千尋`「第一次用六重奏錄音」 | **寫** | (三)，廠牌官方商品頁逐字「セクステット編成に初挑戰」 |
+| `THE SPHÈRES`「現場 CD 這是頭一次」 | **寫** | (三)，廠牌官方商品頁逐字並自帶「配信を除く」的限定條件，本層照該限定寫 |
+| `Vintage Trouble`「在 Blue Note 的第一張專輯」 | **寫** | 判 (三) 不判 (一)——**「首張」沒有計數歧義**（(一) 要兩層的理由是各家算法不同：算不算 EP、合輯、客座），`bluenote.com` 藝人頁逐字有 |
+| `Fabian Almazan`「合辦廠牌的第一張作品」 | **寫** | 判 (三)。`Blue Note/ArtistShare` 是 2013 年才成立的合資線，N=1 無歧義，廠牌新聞稿逐字 `the very first Blue Note-ArtistShare project`；紙本 0 命中屬第 1801 條第 8 點那個例外（群眾集資線不進 SoundScan） |
+| `Charles Lloyd`「三十年來的第一張」 | **寫** | (三) 間隔敘述，廠牌新聞稿逐字 `his first Blue Note album since 1985's A Night in Copenhagen` |
+| 其餘五張（`Soul Delivery`／`Audible Architecture`／`Am Broadway`／`Enjoy the View`／`The Imagined Savior`） | **無序數** | note 一字未提，依第 1729 條寫作層不自行補 |
+
+## 第 1806 條：**反同構四條的落點，逐條寫死在該張 `note` 裡**
+
+| 骨架 | 候選 | 落點 | 其餘各張改走 |
+|---|---|---|---|
+| 日本樂手／日本線的碟 | 6 張 | **`黒田卓也《Rising Son》`** | `Soul Delivery`＝道歉啟事與現場盤／`My Favorite Songs`＝選曲來源（廣告曲與兩部電影）／`Somethin' Blue`＝首度六重奏／`Vamos Lá Brasil`＝九軌全翻巴西的兩個例外／`Live in Osaka!!`＝生涯第一張現場 CD |
+| 翻唱整本老歌本 | 3 張 | **`Annie Lennox《Nostalgia》`** | `Am Broadway`＝德語版與隱藏軌／`My Favorite Songs`＝選曲來源 |
+| 向某位前輩致敬 | 2 張 | **`Jason Moran《ALL RISE》`** | `Rhizome` 改走「合辦廠牌的第一張作品＋再生主題」，**〈The Elders〉那條 Wayne Shorter 的改編素材整格捨去**（見第 1808 條） |
+| 歐陸樂手進 Blue Note | 2 張 | **`Julia Kadel Trio《Im Vertrauen》`** | `Am Broadway` 走德語版與隱藏軌 |
+
+⚠ **hook 骨架同構也查過**：初稿的 `Im Vertrauen`（十三軌裡有五軌⋯）與 `Enjoy the View`（七軌裡有三軌⋯）
+**是 c-161 撞過的同一種形狀**，`Enjoy the View` 的 hook 已改成「社長臨時決定把彩排也錄下來」。
+開頭前四字 17 張互異（`chk-hook-crossgroup` 第 1 道通過）。
+
+## 第 1807 條：**`qa-batch hooks` 印出的 4 處 `互指?` 逐條看過，全部正當**
+
+| 處 | 內容 | 判 |
+|---|---|---|
+| `Somethin' Blue` → 《Live in Osaka!!》 | 「現場三重奏那條軸歸《Live in Osaka!!》」 | **正當**，同批同一位藝人分軸 |
+| `Live in Osaka!!` → 《Somethin' Blue》 | 「六重奏那條軸歸《Somethin' Blue》」 | **正當**，與上一條互為正反面 |
+| `Wild Man Dance` → 《I Long to See You》 | 「與 The Marvels 的那張歸《I Long to See You》」 | **正當**，b 組同藝人分軸（b 組的鉤子棒會讀到這一句） |
+| `Wild Man Dance` → `The Marvels` | 同上句裡的專名 | **正當**，同一句的另一個切片 |
+
+⚠ **本組另有兩處跨張互指沒有被機器印出來**（因為兩張卡的研究稿都有對方）：
+`Rising Son` 的「José James 自己那張的班底與方向歸《While You Were Sleeping》」、
+`While You Were Sleeping` 的「小號手自己那張的來歷歸《Rising Son》」。
+**這兩張是本組最容易混的一對**（策展層把 `Nate Smith` 掛錯到 `While You Were Sleeping`），互指是刻意的。
+
+## 第 1808 條：**研究稿本身的四點，逐條列出**
+
+1. ⚠ **`hookCandidates` 超出 `facts`（第 1733-B 條那個形狀的變體，本組一筆）**：
+   `THE SPHÈRES《Live in Osaka!!》` 的 hookCandidate 逐字寫「Monk 與**群馬民謠**排在同一份曲單裡」，
+   但該卡 `facts` 對〈Yagibushi〉只有 Discogs 作曲欄逐字的 `traditional`，**沒有任何一層寫到群馬或八木節的出處**。
+   **本層改寫成「一首標為傳統曲的〈Yagibushi〉」**，不寫產地。
+2. ⚠ **`facts` 之間的一處並存歧異（研究稿自己已標，本層照它處理）**：
+   `黒田卓也` 的兩份廠牌文件對他與 `José James` 的相識地點說法不同（藝人頁說 Berklee、2013 年新聞稿說 New School）。
+   **本層兩說都不寫**，相識那條軸整格捨去，`note` 只寫 James 當製作人這件事。
+3. ⚠ **`sound` 欄有一處超出 `facts` 的印象語**：`Enjoy the View` 的 `sound` 寫「低音由管風琴的**腳鍵**撐著」，
+   `facts` 的 credit 欄只有 `Trumpet` 與 `Organ` 兩項、**沒有腳鍵的逐字依據**。
+   **本層降級成「低音由管風琴撐著」**（沿用 `hook-base.md`「遇到明顯超出的細節就降級成不指定的寫法」）。
+4. **`Fabian Almazan` 的〈The Elders〉素材（研究稿標為「本張最好用的素材之一」）本層未採用**——
+   理由是第 1806 條的反同構落點（致敬骨架歸 `ALL RISE`），**加上第 1739-B 條的專名預算**：
+   寫進去要一次帶 `Wayne Shorter`／`Joe Zawinul`／`Jaco Pastorius`／`Weather Report`／《Mr. Gone》五個拉丁專名，
+   **單這一格就吃掉 70 字元以上**。**這是取捨不是遺漏，本機若要補回，從同張的 `Camila Meza` 那格挪。**
+
+## 第 1809 條：**派工信與正本牴觸 0 處；但派工信第五節的「日本線候選六張」在算法上要記一筆**
+
+**本信與 `hook-base.md`／`writer-base.md`／既有裁定逐條比對，沒有牴觸。**
+派工信第零節明寫「不寫任何怎麼下筆的細則」，**第 1734-B 條那個毛病本批確實沒有重演**。
+
+⚠ **唯一值得回報的一點**：派工信第五節把「日本樂手／日本線的碟」列為**六個候選只准一張走**，
+但這六張裡 `Vintage Trouble` 之外的**其他非日本線卡並沒有被同一條限制約束**，
+而 `Jazztronik` 與 `THE SPHÈRES` 的 note 骨架本來就不是「日本線」（一張是全翻巴西、一張是生涯第一張現場 CD）。
+**照辦沒有損失**（六張各走各的軸，見第 1806 條），**記在這裡只是說明：這條反同構條款在本組實際只約束到一張。**
+
+⚠ **本棒改動的檔案兩個，皆非禁區**：`desc-tools/batches/hooks/c163-hooks-a.json`（新建，17 筆）
+＋ 本檔尾的這一節（**append-only，未整檔覆寫**）。
+⚠ **`c163-hooks-b.json`／`research/c163-{a,b}.json`／`c163-cards.json`／`previews.json`／
+`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md` 一字未碰；未 commit、未 push。**
