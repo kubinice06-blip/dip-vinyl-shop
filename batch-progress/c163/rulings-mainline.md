@@ -1565,3 +1565,73 @@ c-164 a 鉤子棒指出：我在派工信第五節列了五條軸，其中一條
 ⚠ **一處刻意的取捨要記**：**`Dave McMurray` 的長笛那條跨卡交叉，該棒兩張都沒寫**——
 **是預算整格捨去，不是漏看**。**「兩張都不寫」也達成了防雙寫的目的，但與我派工信「各歸一張」的字面不同，它主動回報了。**
 **這種「照目的不照字面」的處理是對的，而且要回報——本條記下這個做法。**
+
+## 第 1781-B 條（修正第 1752-B 條的端點）：**WP 要用 `posts?search=`，不是 `search?search=`——後者只回標題與網址**
+
+c-165 b 指出第 1752-B 條寫的端點不夠好。**主線實打兩個端點，它說得對**：
+
+```
+/wp-json/wp/v2/search?search=Trios%20Chapel&per_page=1
+  → 欄位只有 id, title, url, type, subtype, _links
+
+/wp-json/wp/v2/posts?search=Trios%20Chapel&per_page=1
+  → 欄位含 content（content.rendered 實測 5,480 字元）、excerpt、slug、date、yoast_head_json…
+```
+
+**`search` 端點只是個索引，要再抓一次 URL 才拿得到內文；`posts` 端點直接回全文。**
+⚠ **該棒回報：本組 22/22 靠 `posts` 拿到發行方逐字新聞稿，264 條 facts 有超過三分之一出自這一層——
+「只用 `search` 端點的話 ③ 命中會從 22 掉到 0」。**
+
+**第 1752-B 條的路徑 (1) 改寫成**：
+> **`https://www.bluenote.com/wp-json/wp/v2/posts?search=<詞>&per_page=2`（直接回 `content.rendered` 全文）；
+> 已知 slug 時用 `posts?slug=<slug>` 精準定位。`search` 端點只在需要先找 URL 時當索引用。**
+
+⚠ **這是第三次由代理把某一層的用法往前推進**（前兩次是「站內搜尋 `?s=`」與「WP `search` API」）。
+**③ 這一層的命中率從一開始的 9/19 到現在的 22/22，全是代理實測堆出來的，不是我設計的。**
+
+---
+
+## 第 1782-B 條（新體例，由 c-165 b 自己犯錯後提出）：**非工具原樣複製的 `src`，交件前要整批驗回應碼**
+
+該棒主動回報自己犯的一個錯：**有一條 `src` 它憑印象補了前綴**
+（寫成 `bluenote.com/organ-great-ronnie-foster-releases-new-version-…`，**正確 slug 沒有 `organ-great-`**），**回 404**。
+**它是交件前把 38 個 bluenote／UMJ 網址整批 `curl` 驗回應碼才抓到的。**
+
+**立為研究層體例**：
+> ⚠ **凡不是從工具輸出原樣複製、而是自己拼出來的 `src`（補前綴、猜 slug、改參數），
+> 交件前一律整批 `curl -o /dev/null -w '%{http_code}'` 驗一次。**
+
+⚠ **為什麼這條必要**：**一條 404 的 `src` 在 `qa-batch` 眼裡是完全合格的**——
+它只驗「是不是 `https://` 開頭」，不驗連不連得上。**編出來的網址看起來和真的一模一樣。**
+⚠ **既有的例外照舊**：`www.discogs.com` 網頁端對機器人一律回 403（API 端 200），**那不是死連結，不必改**（第 1776-B 條同向）。
+
+---
+
+## 第 1783-B 條（c-165 b 交件驗收）
+
+22 張全 `full`、**facts 264 條（每張 12 條）、`src` 全 https 264/264**、`hookCandidates` 皆 2 條、
+`qa-batch research c165` 對 b 組 0 警告。**四張無串流全部命中並合併回寫 `previews.json`。**
+
+**(一) 四張的 `collectionId`**：`Trios: Chapel` `1623224880`（5 軌）／`Trios: Ocean` `1639930633`（4 軌）／
+`Trios: Sacred Thread` `1651929174`（7 軌）／`Kyoto Jazz Sextet《Succession》` `1615143143`（jp，7 軌）。
+⚠ **四個 id 互不相同**（第 1433 條已核）；⚠ ⚠ **合裝《Trio Of Trios》（`1649706072`，16 軌）不是任何一張的 id，固定試聽不可配到它。**
+
+**(二) ⚠ 修正策展層第 1945 條的預期**：`《Succession》` **不是純 `N→0`**——
+**`us`／`gb`／`jp` 三市場 `lookup` 共用同一 id、直接命中，屬第 1775-B 條的第五種成因。**
+⚠ **四張的店面軌名都帶尾綴**（`(feat. …) [Live]`；《Succession》jp 帶 `(feat. 森山威男)`、gb/us 帶 `(feat. Takeo Moriyama)`）——
+**逐軌比對前要先剝尾綴。**
+
+**(三) 推翻策展層一處**：`Julian Lage《Squint》` 的「十一軌裡十軌是自作曲」**實際是九軌**——
+Discogs 19106557 出版欄逐字 `Tracks A1 to A4, A6 to B4: Published by Julian Lage Music [BMI]`（＝9 軌）、
+`Track A5: Primary Wave Songs`（〈Emily〉）、`Track B5: Public Domain`（〈Call Of The Canyon〉）。
+
+**(四) ⚠ 「同姓不推斷」的執行很乾淨，值得當範例**：
+**四組只寫欄位字串**（Indigo／Lage Lund、Jeff／John Clayton、Kaylie／Chris Foster、Omagugu／Nduduzo Makhathini）；
+**三組有官網逐字出處的才寫關係**（Blake 的父親 John Blake, Jr.、Clayton 的父親 John Clayton、Foster 的兒子 Chris Foster）。
+**第 1776-B(三) 條的「同姓不等於親屬」在這裡被正確地執行成「有出處才寫，沒出處只寫名字」。**
+
+**(五) 給下游的三則**（已寫進各卡 notes）：
+`Ethan Iverson`〈Blue〉↔ Joni Mitchell《Blue》——**該軌作曲人逐字是 Jack DeJohnette**；
+`Kyoto Jazz Sextet`〈Watarase〉↔ 板橋文夫《Watarase》——**本軌正是該曲翻奏**（作曲欄逐字 `Fumio Itabashi`），**要寫成致敬而非撞名**；
+**三張蒙特勒卡的區隔**（本組 Donald Byrd ＝1973-07-05 當年沒發那場，**黑膠背面逐字 `℗ 2013 © 2022` 解釋了 Apple 的 2013 佔位日**；
+seed 的 `Ronnie Foster《Live at Montreux》`(1974) ＝同屆真的發出來的四張之一；本組 `Ronnie Foster《Reboot》` ＝Capitol Studios 新錄音、與蒙特勒無關）。

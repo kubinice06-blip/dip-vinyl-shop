@@ -1017,3 +1017,123 @@ MB／Discogs／Apple gb 逐字都是 `Chihiro Yamanaka`（寫進 `queryAlias`，
 **→ 依第 1726 條「下游動作只能吃驗收版、不得吃檢查點」，`ca78a81` 那一版直接忽略即可；HEAD 這一版是正確的。**
 ⚠ **`c166/prop-a.json` 與 `c166/prop-b.json` 本棒一個字都沒動**，那 15 筆在 c-166 自己的檔案裡是完整的，沒有遺失。
 ⚠ **一眼認出來的特徵是 `g` 欄**：**往後並行批次的檢查點提交前，跑一次 `node -e "require('./batch-progress/<批>/prop-<組>.json').every(x=>x.g==='<組>')"` 就能擋住這一類。**
+
+---
+
+# c-165 研究 b 組（22 張）——第 1960–1966 條
+
+## 第 1960 條（交件總表）：**22 張全 `full`，facts 264 條、`src` 全 https 264／264，`qa-batch research c165` 的 b 組警告 0**
+
+| 項目 | 數字 |
+|---|---|
+| 張數 | **22／22**，`key` 與卡單 b 組逐字同序（程式比對 `JSON.stringify` 全等） |
+| `status`／`coverage` | **22 張皆 `full`／`full`**，`thin` 0 |
+| facts | **每張 12 條、合計 264 條**（上限 12，全部打滿） |
+| `src` | **264／264 是完整 `https://` 網址**；38 個 `bluenote.com`／`universal-music.co.jp` 網址逐一以 `curl -o /dev/null -w '%{http_code}'` 實測，**全部 200**（其中一個是本棒自己拼錯後查出來並改正的，見第 1965 條） |
+| `hookCandidates` | **每張 2 條**，無一張超過上限 |
+| 禁字／字元 | 程式逐字掃過，禁字 0、千分位逗號 0；**日文新字體 `会` 一處（引 UMJ 商品名的「ライヴ会場限定盤」）被 `qa-batch` 擋下，已改寫成中文敘述** |
+| `qa-batch research c165` | **b 組 22 張 0 警告**；唯一剩下的 `⚠ key 集合與卡單不一致` 是 **a 組尚在進行（當時 15／23）**造成的批次層警告，與 b 組無關 |
+
+---
+
+## 第 1961 條：**四張無串流全部覆核命中，三張《Trios》的 `collectionId` 互不相同**
+
+**走的路徑一律是第 1753-B 條的第 1 步**——`batch-progress/c165/apple-candidates.md` 已有候選 id，直接 `itunes.apple.com/lookup?id=…&entity=song`，**四張一次命中，沒有用到第 2／3 步（藝人裸名反查、UPC 反查）**。
+
+| 卡 | `collectionId` | 樂曲軌數 | 盤名 | 年份 | 判 |
+|---|---|---|---|---|---|
+| **`Charles Lloyd《Trios: Chapel》`** | **`1623224880`** | **5 對 5**（Discogs CD 23741012 五軌、MB 五軌、Apple `trackCount` 逐字 5，逐軌一一對應） | 店面逐字 `Trios: Chapel (Live) [feat. Bill Frisell & Thomas Morgan]`，差異只在 `(Live)` 與 feat. 子句 | MB frd 逐字 `2022-06-22`（美版）、Apple 逐字 `2022-06-24`，**差 2 天** | **命中** |
+| **`Charles Lloyd《Trios: Ocean》`** | **`1639930633`** | **4 對 4** | 店面逐字 `Trios: Ocean (Live) [feat. Anthony Wilson & Gerald Clayton]` | 三邊逐字都是 `2022-09-23` | **命中** |
+| **`Charles Lloyd《Trios: Sacred Thread》`** | **`1651929174`** | **7 對 7** | 店面逐字 `Trios: Sacred Thread (feat. Julian Lage & Zakir Hussain)` | 三邊逐字都是 `2022-11-18` | **命中** |
+| **`Kyoto Jazz Sextet《Succession》`** | **`1615143143`** | **7 對 7** | 店面逐字 `Succession (feat. Takeo Moriyama)`，長度差 25（第 1945 條預告的形狀） | 三邊逐字都是 `2022-04-13` | **命中** |
+
+⚠ ⚠ **三張《Trios》的 id 逐字互不相同**（`1623224880` ≠ `1639930633` ≠ `1651929174`），第 1433 條的要求成立；**合裝的 `Trio Of Trios`（`1649706072`，16 軌）不是任何一張的 id，固定試聽不可配到它。**
+
+⚠ ⚠ **《Succession》是第 1775-B 條第五種成因的又一例**：**`us` 市場的 `lookup` 直接回傳完整條目**（`artistName` 逐字 `Kyoto Jazz Sextet`），
+**`jp`／`gb`／`us` 三個市場共用同一個 `collectionId`**——碟在架上，落空的只是搜尋索引與標題比對。**「`/search` 回 0」對上架狀態確實沒有證據力。**
+
+⚠ **一個逐軌比對才看得出來的差異**：**四張的店面軌名每一軌都帶尾綴**——三張《Trios》帶 `(feat. …) [Live]`、《Succession》在 `jp` 帶 `(feat. 森山威男)`、在 `gb`／`us` 帶 `(feat. Takeo Moriyama)`。**比對前要先剝尾綴，否則字串長度全部不過。**
+
+---
+
+## 第 1962 條：**推翻策展層一處（`Julian Lage《Squint》` 的自作曲軌數）**
+
+**卡單 `curatorWhy` 逐字寫「十一軌裡十軌是自作曲」，實查是九軌。**
+依據是同一筆條目（Discogs `19106557`）自己的出版欄，逐字：
+
+- `Tracks A1 to A4, A6 to B4: Published by Julian Lage Music [BMI]` → **A1、A2、A3、A4、A6、B1、B2、B3、B4 共 9 軌**
+- `Track A5: Published by Primary Wave Songs [ASCAP]` → 第五軌〈Emily〉，`Written-By` 欄逐字 `Johnny Mandel` 與 `Johnny Mercer`
+- `Track B5: Public Domain` → 末軌〈Call Of The Canyon〉，`Written-By` 欄逐字 `Billy Hill`
+
+**③ 官網的曲目表（`julian-lage-shares-new-single-familiar-flower-announces-north-american-tour/`）逐字在括號裡標作曲人，同樣是 9＋2。**
+**→ facts 寫九軌，`notes` 已標明推翻了哪一句。** 其餘 21 張與策展層的敘述逐條核對後**沒有需要推翻的地方**。
+
+---
+
+## 第 1963 條：**③ 四條路徑的實際回應碼——18 個 `bluenote.com` 藝人頁 ＋ 3 個 UMJ 商品頁 ＋ 22 篇新聞稿，全部實測**
+
+### （一）藝人頁（`/artist/<slug>/`，不跟隨轉址）：**與第 1944 條完全一致**
+
+| 路徑 | 碼 |
+|---|---|
+| `julian-lage`／`dave-mcmurray`／`james-francies`／`johnathan-blake`／`charles-lloyd`／`immanuel-wilkins`／`donald-byrd`／`trombone-shorty`／`melissa-aldana`／`ethan-iverson`／`gerald-clayton`／`ronnie-foster`／`nduduzo-makhathini`／`bill-frisell`／`elvin-jones` | **200**（15 個） |
+| **`joshua-redman-2`** | **200**（照第 1933 條直接用 `-2`，本棒沒有再去踩那個 301） |
+| `kyoto-jazz-sextet` | **404** |
+| `chihiro-yamanaka` | **404** |
+
+### （二）⚠ ⚠ **WP 路徑本棒改用 `posts` 端點，比 `search` 端點好用一個量級**
+
+第 1752-B 條路徑 (1) 寫的是 `wp-json/wp/v2/search`，**那支只回標題與網址**。
+**實測 `https://www.bluenote.com/wp-json/wp/v2/posts?search=<關鍵字>&per_page=2` 會直接回 `content.rendered` 全文**，
+**22 張裡有 22 張靠它拿到發行方的逐字新聞稿**（含引述、編制、錄音時地、題獻對象）——**本組 264 條 facts 有超過三分之一出自這一層。**
+⚠ **另一支更精準**：`…/posts?slug=<文章 slug>`，用 `search` 端點先取 slug、再用 `posts?slug=` 取全文，兩步就定位。
+**建議後批的派工信把這兩支寫進第 1752-B 條路徑 (1)。**
+
+### （三）日本線（路徑 (4)）：**三個 UMJ 路徑全部 200，slug 順序再次驗證第 1751-B 條**
+
+| 路徑 | 碼 |
+|---|---|
+| `universal-music.co.jp/kyoto-jazz-sextet/products/uccj-2206/` | **200**（H1 逐字 `Kyoto Jazz Sextet`） |
+| `universal-music.co.jp/chihiro-yamanaka/products/uccj-2215/` | **200**（H1 逐字 `山中千尋`） |
+| `universal-music.co.jp/chihiro-yamanaka/products/uccj-9241/` | **200** |
+| ⚠ `universal-music.co.jp/sextet-kyoto-jazz/products/uccj-2206/`（反序測試） | **404** |
+| ⚠ `universal-music.co.jp/yamanaka-chihiro/products/uccj-2215/`（反序測試） | **404** |
+
+⚠ **UMJ 頁給出兩筆 Discogs 與 Apple 都沒有的事實**：《Succession》的 `録音方式 オール・アナログ録音`、以及只在官方商店與演出現場賣的 DVD 付き版本（品番逐字 `D2CZ-1051`）。**日本線值得每張都查。**
+
+---
+
+## 第 1964 條：**本組自己下的六個裁定（照「裁定權下放」當場定，各一行）**
+
+1. **`Squint` 的自作曲軌數取 9 不取 10**——出版欄逐字可數，策展層那句不採（第 1962 條）。
+2. **`Trios: Chapel` 的年份以卡單的 2022 為準，不因 MB 美版 `2022-06-22` 與 Apple `2022-06-24` 差 2 天而另記**——同年同月，差異寫進 facts 即可。
+3. **《Trios: Sacred Thread》的時長以 CD 條目為準**——黑膠條目 `25256662` 的 A2／A3／A4 時長明顯錯位，Apple 逐軌與 CD 條目 `25240642` 對得上。
+4. **UMJ 商品名裡的日文新字體不照抄**——「ライヴ会場限定盤」被 `qa-batch` 當簡體字擋下，改寫成中文敘述；**專名照抄的原則讓位給 QA 硬標記，因為那是商品規格尾綴而不是作品名。**
+5. **價格欄一律不寫進 facts**——UMJ 的 `¥3,300`／`¥4,400`／`¥4,070` 都帶千分位逗號，與禁令衝突，且對簡介無用。
+6. **同姓但來源沒寫關係的一律不推斷**——`Indigo Lund`／`Lage Lund`（12 Stars）、`Jeff Clayton`／`John Clayton`（Bells on Sand）、`Kaylie Foster`／`Chris Foster`（Reboot）、`Omagugu Makhathini`／`Nduduzo Makhathini`（Ntu）四組只寫欄位字串；**有來源的三組才寫**（Blake 的父親 John Blake, Jr.、Clayton 的父親 John Clayton、Foster 的兒子 Chris Foster，官網三處皆逐字）。
+
+---
+
+## 第 1965 條（本棒自己的錯，已修正）：**我在一條 `src` 上憑印象補了前綴，網址回 404**
+
+`Ronnie Foster《Reboot》` 那條引 `Isn't She Lovely` 新聞稿的 `src`，我寫成
+`bluenote.com/organ-great-ronnie-foster-releases-new-version-of-stevie-wonders-isnt-she-lovely/`——
+**`organ-great-` 是隔壁那篇的前綴，本篇的 slug 逐字是 `ronnie-foster-releases-new-version-of-…`。**
+
+**交件前把 38 個 `bluenote.com`／UMJ 網址整批 `curl` 過一遍才抓到，改正後回 200。**
+**本條立為研究層的交件前動作**：**`src` 只要不是從工具輸出原樣複製的，交件前一律整批驗一次回應碼**——
+描述型 `src` 已經被第 1728 條擋掉了，但「看起來對、其實拼錯」的網址下游一樣打不開。
+
+---
+
+## 第 1966 條：**與正本牴觸之處——0 條；派工信的三處預告全部實測相符或更寬**
+
+`desc-tools/prompts/research-base.md`（含開頭那節雲端三處例外）、`CLAUDE.md`、第 1718–1778 條與第 1900–1948 條逐條核過，**本次沒有發現派工信與正本牴觸的地方。**
+
+派工信標為預期的三處，實測結果：
+
+1. **「四張無串流全是 `0→0`、第一步查 `apple-candidates.md` 就能救」** → **成立，四張全部第一步命中**（第 1961 條）。
+2. **「三張《Trios》的掛名一律裸名 `Charles Lloyd`」** → **成立**：Discogs 三張的 `artists` 欄、Apple 三個 id 的 `artistName` 逐字都是裸名；MB 的 RG 層才給長形。
+3. **「`Kyoto Jazz Sextet《Succession》` 是 `N→0` 的近親」** → **比預期更寬**：標題長度差 25 確實成立，**但 `us` 市場的 `lookup` 本身就命中**，所以它其實是第 1775-B 條第五種成因（搜尋索引撈不到、店面有貨），不是純粹的標題比對失敗。
+
+⚠ **一處派工信少講、實測補上的**：**第 1752-B 條路徑 (1) 的 WP 端點應該用 `posts` 而不是 `search`**（第 1963 條（二））——`search` 端點拿不到正文，本組若只用它，③ 這一層的命中會從 22 掉到 0。
