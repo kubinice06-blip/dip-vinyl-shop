@@ -24,7 +24,15 @@ const cardsPath = [`batches/wave2/${batch}-cards.json`, `batches/cards/${batch}-
 if (!cardsPath) { console.error(`找不到卡單：batches/wave2|cards|recut/${batch}-cards.json`); process.exit(1); }
 const cards = JSON.parse(fs.readFileSync(cardsPath, 'utf8'));
 const cardKeys = new Set(cards.map(x => x.key));
-const norm = s => String(s || '').toLowerCase().replace(/[^a-z0-9㐀-鿿぀-ヿ]/g, '');
+const cardByKey = new Map(cards.map(x => [x.key, x]));
+// 2026-09-19：加上拉丁附加符號摺疊（NFD 後剝掉組合記號）。
+// 在此之前 `ñ`／`á`／`é` 這類字元會被後面的白名單整個剝掉，於是
+// 〈Danza De Los Ñañigos〉（盤面）折成 `danzadelosaigos`、
+// 〈Danza de los Ñáñigos〉（成品）折成 `danzadelosigos` ——
+// **同一首曲的兩種寫法折出不同鍵**，c-155 因此誤報。
+// 這也正是裁定第 1702 條那個盲點（José vs Jose、Gaïa vs Gaia）在比對層的同一個根因。
+const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase().replace(/[^a-z0-9㐀-鿿぀-ヿ]/g, '');
 // 簡體專用字表（正體字不會出現的字形；「制值台准」等正體字曾造成誤報，勿加入）
 // 2026-09-05：**「个」移出字表。** 它不是「個」的簡體專用字——**「个」是教育部台語推薦用字**
 // （讀作 ê，例：農村武裝青年〈Tsit 个老歲仔〉），台語盤的曲名與歌詞本來就會用它。
@@ -80,6 +88,83 @@ const stripLegit = s => {
 let flags = 0;
 const warn = (...a) => { flags++; console.log('⚠', ...a); };
 
+// ────────────────────────────────────────────────────────────────────────────
+// 事實對照：把一段文字裡的〈曲名〉《專輯名》、拉丁專名、四位數年份逐一回查該卡的研究稿。
+//
+// 2026-09-19 新增。**在此之前這套比對只跑 hook 一個欄位**，note 與 desc 完全不驗——
+// c-161 兩支鉤子代理各自寫了一支臨時掃描才發現一個曲名被掛到錯的卡上
+// （〈Hub-Tones〉是 Freddie Hubbard 的末軌，派工信與裁定都誤植到 Marsalis 那張）。
+// 靠代理自己想到要寫掃描才抓得到的檢查，等於沒有檢查。這裡把同一套比對接到三個欄位上。
+// card：卡單那一列。只取它的 `year`——策展層覆核過的發行年是已查證的事實，
+// 但它不在研究稿的 facts 裡，note 的「發行年寫 YYYY 年」會因此被誤報（c-161《Symphonica》實測）。
+// ⚠ 只取 year，**不取 `curatorWhy`／`curatorRisk`／`mbNote`**：那三欄是長篇散文、夾帶大量
+// 人名與曲名，摻進來等於讓這道檢查失效——寫作層只能寫研究層查證過的東西，這條界線不能鬆。
+function factBlob(r, card) {
+  let raw = [r.artist, r.album, r.sound || '', card && card.year ? String(card.year) : '',
+    ...(r.facts || []).map(f => (typeof f === 'object' ? f.f : f)),
+    ...(r.keyTracks || []), ...(r.hookCandidates || []), r.notes || ''].join(' ');
+  // 研究稿常混用中文數字年份（一九八六年），轉成阿拉伯數字再比對，避免誤報
+  const CN = { 〇: '0', 零: '0', 一: '1', 二: '2', 三: '3', 四: '4', 五: '5', 六: '6', 七: '7', 八: '8', 九: '9' };
+  raw += ' ' + raw.replace(/[一二][〇零一二三四五六七八九]{3}/g, m => [...m].map(c => CN[c]).join(''));
+  return { raw, norm: norm(raw) };
+}
+
+// otherCards：同批其他卡的「掛名／盤名」正規化字串集合。
+// batchNorm：**同批全部研究稿**串成的正規化大字串。
+//
+// 三級判定，因為 note 與 desc 的互指是刻意的、但互指與「掛錯卡」長得一模一樣：
+//   · 命中本卡研究稿                       → 過。
+//   · 本卡沒有、但同批別張有               → **`xref`，印出前後文供人眼判**，不計入 flags。
+//     （鉤子層會寫「這一軸歸《X》那張」把事實讓給別卡，那是對的；
+//      但 c-161 的〈Hub-Tones〉被誤植到別人那張，形狀完全相同——
+//      機器分不出「讓出去」和「拿錯了」，所以這一級不能靜默，也不該擋住整批。）
+//   · 全批都沒有                           → 硬標記。
+function factCheck(text, blob, otherCards, batchNorm) {
+  const bad = [], xref = [];
+  const seen = (t) => blob.norm.includes(norm(t));
+  const elsewhere = (t) => otherCards.has(norm(t)) || (batchNorm && batchNorm.includes(norm(t)));
+  const ctxOf = (t) => {
+    const i = String(text).indexOf(t);
+    if (i < 0) return t;
+    return '…' + String(text).slice(Math.max(0, i - 20), i + t.length + 14).replace(/\s+/g, ' ') + '…';
+  };
+  for (const m of String(text).matchAll(/〈([^〉]+)〉|《([^》]+)》/g)) {
+    const t = m[1] || m[2];
+    if (seen(t)) continue;
+    if (elsewhere(t)) xref.push('曲名/專輯 ' + t + ' ' + ctxOf(t));
+    else bad.push('曲名/專輯?' + t);
+  }
+  // 專名比對：拆詞比對降低「綽號夾中間」誤報（Lisa "Left Eye" Lopes、Maureen Yancey 類）。
+  // ⚠ 先把〈〉《》裡的內容整段挖掉再掃：那些字串上一輪已經**當成一個完整標題**驗過了，
+  // 留著只會讓專名正則從標題中間切出殘片來重報一次——而殘片是對不上互指豁免的。
+  // （c-160 實測：《I Am You》被切出 `Am You`、《A Tale of God's Will》被切出 `Tale` 與
+  // `God's Will`，三筆都是指向同批另一張卡的互指，卻因為切碎了而全部誤報成標記。）
+  const noTitles = String(text).replace(/〈[^〉]*〉|《[^》]*》/g, ' ');
+  for (const nm of new Set([...noTitles.matchAll(/[A-Z][a-zA-Z.'’-]+(?: [A-Z][a-zA-Z.'’&-]+)*/g)]
+    .map(x => x[0]).filter(x => x.length > 3))) {
+    const parts = nm.split(' ').filter(w => w.length > 2);
+    if (seen(nm) || parts.every(w => seen(w))) continue;
+    if (elsewhere(nm)) xref.push('專名 ' + nm + ' ' + ctxOf(nm));
+    else bad.push('專名?' + nm);
+  }
+  for (const y of String(text).matchAll(/(19|20)\d{2}/g)) if (!blob.raw.includes(y[0])) bad.push('年份?' + y[0]);
+  return { bad, xref };
+}
+
+// 同批所有卡的掛名與盤名（含分號／冒號前的主標），供互指豁免用
+function batchTitleSet(all) {
+  const s = new Set();
+  for (const r of all) {
+    for (const v of [r.artist, r.album]) {
+      if (!v) continue;
+      s.add(norm(v));
+      const base = String(v).split(/[:：(（]/)[0].trim();
+      if (base) s.add(norm(base));
+    }
+  }
+  return s;
+}
+
 function charScan(label, s) {
   const t = stripLegit(s);
   if (GARBAGE.test(t)) warn(label, '非拉丁亂碼:', [...new Set(t.match(new RegExp(GARBAGE, 'g')))].join(''));
@@ -128,6 +213,17 @@ if (stage === 'research') {
 }
 
 if (stage === 'hooks') {
+  const otherCards = batchTitleSet(cards);
+  let xrefTotal = 0;
+  // 同批全部研究稿串成一個大字串，供三級判定的第二級用
+  let batchNorm = '';
+  for (const g of GROUPS) {
+    const rp = `batches/research/${batch}-${g}.json`;
+    if (!fs.existsSync(rp)) continue;
+    let R = JSON.parse(fs.readFileSync(rp, 'utf8'));
+    if (!Array.isArray(R)) R = Object.values(R);
+    for (const r of R) batchNorm += factBlob(r, cardByKey.get(r.key)).norm;
+  }
   // 先跑既有 hook 品管（字數/禁語/開頭雷同/箭頭等）
   // ⚠ qa-check-hooks.mjs 目前不在 repo 裡（本機有、從未提交，雲端工作階段拿不到）。
   // 舊寫法把「檔案不存在」和「檢查不通過」都算成一個 flags，於是雲端每次跑 hooks 都必然
@@ -159,24 +255,36 @@ if (stage === 'hooks') {
     for (const r of R) {
       const h = hm.get(r.key); if (!h) { warn('漏卡', r.key); continue; }
       if (!cardKeys.has(h.key)) warn(g, 'hook key 不在卡單:', JSON.stringify(h.key));
-      let blobRaw = [r.artist, r.album, r.sound || '', ...(r.facts || []).map(f => (typeof f === 'object' ? f.f : f)), ...(r.keyTracks || []), ...(r.hookCandidates || []), r.notes || ''].join(' ');
-      // 研究稿常混用中文數字年份（一九八六年），轉成阿拉伯數字再比對，避免誤報
-      const CN = { 〇: '0', 零: '0', 一: '1', 二: '2', 三: '3', 四: '4', 五: '5', 六: '6', 七: '7', 八: '8', 九: '9' };
-      blobRaw += ' ' + blobRaw.replace(/[一二][〇零一二三四五六七八九]{3}/g, m => [...m].map(c => CN[c]).join(''));
-      const blob = norm(blobRaw); const e = [];
-      for (const m of h.hook.matchAll(/〈([^〉]+)〉|《([^》]+)》/g)) { const t = m[1] || m[2]; if (!blob.includes(norm(t))) e.push('曲名/專輯?' + t); }
-      // 專名比對：拆詞比對降低「綽號夾中間」誤報（Lisa "Left Eye" Lopes、Maureen Yancey 類）
-      for (const nm of new Set([...h.hook.matchAll(/[A-Z][a-zA-Z.'’-]+(?: [A-Z][a-zA-Z.'’&-]+)*/g)].map(x => x[0]).filter(x => x.length > 3))) {
-        const parts = nm.split(' ').filter(w => w.length > 2);
-        if (!blob.includes(norm(nm)) && !parts.every(w => blob.includes(norm(w)))) e.push('專名?' + nm);
-      }
-      for (const y of h.hook.matchAll(/(19|20)\d{2}/g)) if (!blobRaw.includes(y[0])) e.push('年份?' + y[0]);
-      if (e.length) warn(g, r.album, '→', e.join(' | '));
+      const blob = factBlob(r, cardByKey.get(r.key));
+      const kh = factCheck(h.hook, blob, otherCards, batchNorm);
+      if (kh.bad.length) warn(g, r.album, 'hook →', kh.bad.join(' | '));
+      // note 也要驗。它會被原樣複製進寫手輸入、當成劇本照寫，
+      // 一個掛錯卡的曲名在這裡不攔，下游就會原封不動寫進 desc。
+      const kn = factCheck(h.note || '', blob, otherCards, batchNorm);
+      if (kn.bad.length) warn(g, r.album, 'note →', kn.bad.join(' | '));
+      for (const x of [...kh.xref, ...kn.xref]) console.log(`  互指? ${g} ${r.album} → ${x}`);
+      xrefTotal += kh.xref.length + kn.xref.length;
     }
   }
+  if (xrefTotal) console.log(`  （互指 ${xrefTotal} 處：本卡研究稿沒有、同批別張有。刻意讓給別卡是對的，拿錯卡是錯的，機器分不出來——請逐條看上面的前後文。不計入標記。）`);
 }
 
 if (stage === 'out') {
+  // desc 也要回查研究稿。2026-09-19 之前這一段完全沒有事實對照——
+  // 寫作層拿到的 note 是劇本、facts 是素材庫，但成品從來沒有被機器比對回去過。
+  const otherCards = batchTitleSet(cards);
+  const research = new Map();
+  for (const g of GROUPS) {
+    const rp = `batches/research/${batch}-${g}.json`;
+    if (!fs.existsSync(rp)) continue;
+    let R = JSON.parse(fs.readFileSync(rp, 'utf8'));
+    if (!Array.isArray(R)) R = Object.values(R);
+    for (const r of R) research.set(r.key, r);
+  }
+  let descXref = 0, descNoResearch = 0;
+  let batchNorm = '';
+  for (const r of research.values()) batchNorm += factBlob(r, cardByKey.get(r.key)).norm;
+
   // 動態掃出所有 out-N（組數可能是 2 或 5），不要寫死，否則多出來的組會被安靜略過
   const outNums = fs.readdirSync('batches/output')
     .map(f => (f.match(new RegExp(`^${batch}-out-(\\d+)\\.json$`)) || [])[1])
@@ -216,6 +324,14 @@ if (stage === 'out') {
       const ctx = r.desc.slice(Math.max(0, i - 24), i + m[0].length + 12).replace(/\s+/g, ' ');
       warn('out', '未具名出處?', label, '→', r.key, ':: …' + ctx + '…');
     }
+    for (const r of o) {
+      const rr = research.get(r.key);
+      if (!rr) { descNoResearch++; continue; }
+      const k = factCheck(r.desc, factBlob(rr, cardByKey.get(r.key)), otherCards, batchNorm);
+      if (k.bad.length) warn('out-' + n, rr.album, 'desc →', k.bad.join(' | '));
+      for (const x of k.xref) console.log(`  互指? out-${n} ${rr.album} → ${x}`);
+      descXref += k.xref.length;
+    }
     const lens = o.map(r => Array.from(r.desc).length);
     outTotal += o.length;
     console.log(`out-${n}｜${o.length} 張｜字數 ${Math.min(...lens)}–${Math.max(...lens)}｜>260: ${lens.filter(x => x > 260).length}`);
@@ -253,6 +369,9 @@ if (stage === 'out') {
     if (over.length) warn('thin 卡超過 180 字', `${over.length}/${thinKeys.size}`, '→', over.join('、'));
     else console.log(`thin 卡 ${thinKeys.size} 張，全部 ≤180 ✓`);
   }
+
+  if (descXref) console.log(`desc 互指 ${descXref} 處：本卡研究稿沒有、同批別張有——請逐條看上面的前後文，不計入標記`);
+  if (descNoResearch) console.log(`desc 未比對 ${descNoResearch} 張：研究稿裡找不到對應 key`);
 
   // 總數對卡單——這是擋住「只驗到部分組別」的最後防線
   if (outTotal !== cardKeys.size) warn('輸出總張數與卡單不符', `${outTotal} vs ${cardKeys.size}`);
