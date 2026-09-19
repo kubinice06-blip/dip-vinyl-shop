@@ -1459,3 +1459,218 @@ It was released on Blue Note Records in 2019, after Ross was brought to the atte
 `git show HEAD:...` 解出來**是 10 筆且與工作區逐字相同** → **這一次 `HEAD` 與工作區一致，沒有發生前七次那種「提交到的是中途快照」。**
 **但規則不變：驗收與合併一律以工作區當下版本為準**，主線仍請在收件時各跑一次上面那兩個指令確認。
 **本層不 `git add`、不 `commit`、不 `push`。**
+
+---
+
+# c-171 **鉤子層 a 組**（10 張，1989–1998）裁定，編號 3301–3340，本檔用到 3312
+
+## 第 3301 條（**總表**）：**10 張全數交件，預算 217–229／中位 224，0 張超標**
+
+| 項 | 值 |
+|---|---|
+| 交件張數 | **10／10**，key 與順序逐字同 `c171-cards.json` 的 `group === "a"` |
+| 預算（`hook + note − 四項扣除`） | **min 217／max 229／中位 224**，**>230 共 0 張** |
+| 分佈 | 209–214：0／215–219：2／220–224：5／225–229：3／230+：0 |
+| `hook` 加權（英數 0.5） | **20–31.5**，上限 50，無一張逼近 |
+| `note` 原始字元 | 208–233，上限 350 |
+| 前四字互異 | **10／10 互異**（`Blue`／倫敦錄的／十三分鐘／二十六歲／沒有鼓手／接下深夜／同一首輓／作者欄上／他找來的／錄音室是） |
+| 骨架 claim | **10 張各 claim 一條、彼此不重複**（第 3304 條） |
+| `qa-batch.mjs hooks c171` | **a 組旗標 0**；批次層 1 個「b 缺 hook 檔」——**派工信第二節預測正確，是管線形狀** |
+| `chk-hook-crossgroup.mjs c171` | **✓ 全部通過** |
+| `互指?` | **0 筆**，無可人工判讀者 |
+| 字元掃描 | 簡體／假名／西里爾／希臘／諺文／千分位逗號／半形逗號 **全部 0 命中** |
+
+## 第 3302 條（**先把尺倒回去量 c-168 a，再量自己；公式逐字寫出來**）：**c-168 a 逐格重現 209–229／中位 222.5**
+
+**本層實作的公式**（`hook-base.md` 雲端註記第 2 點寫死的那條，逐項 `Array.from().length`，零心算）：
+
+```
+預算 = Array.from(hook).length + Array.from(note).length
+     − 4 × count(note, "主故事：")
+     − 1 × count(note, "→")
+     − 9 × count(note, "正文只寫上列各項。")
+     − 11 × count(note, "這條骨架全批只走本張。")
+```
+
+**只扣這四樣**：年份指定（`發行年寫 YYYY 年。`）、時序指定、引用限制、載體交代、克制指示**全部計入**。
+
+**倒回去量 `desc-tools/batches/hooks/c168-hooks-a.json`（18 張，同為 1985–1999 段）**：
+**min 209／max 229／中位數 222.5／>230 為 0** ——**與派工信給的 209–229／中位 222.5 逐格對上**，尺確認同一把。
+
+⚠ **係數不可繼承這條再次成立**：本層第一版 10／10 全超標 **12–66%**（258–383），
+與 c-168 第一版 18／18 超標 15–73%、c-169 a 20／20 超標 3–63%、c-170 a 7／7 超標 27–67% 同形狀。
+**成因與前幾批一樣：專名密度。** 本批十張裡有八張的主故事鏈掛著 3 個以上的拉丁專名，
+**一個 `Symphony of the New World` 就是 28 字元、一個 `Jan Erik Kongshaug` 是 18**——
+**中文格數看起來一樣，字元數差三倍。** 收斂靠的是第 3303 條的整格捨去，不是修辭壓縮。
+
+## 第 3303 條（**整格捨去清單；判準照第 1830-B 條更正後的定義**）：**十一格**
+
+**判準逐字**：「名單型＝一格裡兩個以上只起點名作用的專名，密度最低者先砍，與人數無關」。
+
+| 卡 | 捨去的那一格 | 理由 |
+|---|---|---|
+| `Step By Step` | 班底三人（John Scofield／Eddie Gomez／Jack DeJohnette）與製作人 Gary Burton | 名單型；四個專名全部只起點名作用，且與「支線第一號」的骨架無關 |
+| `Step By Step` | 錄音、助理錄音、執行製作三職 | 名單型，密度最低 |
+| `Paris` | 六重奏英國班底五人（Guy Barker／Julian Argüelles／Jason Rebello／Mick Hutton／Jeremy Stacey） | 名單型；**改寫成「班底整批換成英國樂手」一句**，事實不掉、字元省 60 以上 |
+| `Paris` | 封套設計 The Artful Dodgers 與攝影 Nick White | 名單型 |
+| `Ode to Life` | 三位作曲團員的姓名（Nilson Matta／Mor Thiam／Alberto Beserra＋Guilherme Franco／Carlos Ward） | 名單型；**改寫成「另三首由巴西、西非與美國籍的三位團員各寫一首」**——研究層第 3086 條要的正是「三方各出一手」這個形狀，姓名本身不是它 |
+| `Cruisin'` | 東芝 EMI 製作班底（Namekata／Tsuge／Anderson／Okazaki／Taku）——**同格在 `Jazz, My Romance`／`Hat Trick`／`Brandenburg Concerto` 一併捨去，共四張** | 名單型，且四張一模一樣，留著就是四張同構 |
+| `Cruisin'` | Ellington 三首的曲名 | 只保留「三首 Duke Ellington」的數字，曲名是純點名 |
+| `Jazz, My Romance` | Herb Ellis 進 Oscar Peterson Trio 接替 Barney Kessel 那一段 | 兩個專名只起點名作用；`Soft Winds` 對 `Nat King Cole Trio` 那一層才是家譜本身 |
+| `That Day…` | 樂隊四人（Mulgrew Miller／Kevin Eubanks／Munyungo Jackson／Terri Lyne Carrington 的鼓） | 名單型；Carrington 已在作者欄那一格出現，重複 |
+| `That Day…` | 中段曲庫作者（Mann & Weil／Johnny Mandel／Livingston & Webster） | 名單型；頭尾兩首足以撐起「曲庫跨度」 |
+| ⚠ `Brandenburg Concerto` | **整支弦樂團十九人名單＋鼓手 Lewis Nash** | **派工信第六節預判正確，這一格整格捨去。** ⚠ **但 `Kermit Moore` 與 `Sanford Allen` 兩人留下**——他們不是「只起點名作用」，**那兩句話本身就是本張的骨架**（第 3099 條）。**鼓手 Lewis Nash 是純點名，跟著名單一起捨去。** |
+| `Brian Blade Fellowship` | 團員七人名單 | 名單型；**只留 Dave Easley 的踏板鋼棒吉他（它是這個團的識別音色）與共同創團的 Jon Cowherd**——後者最後仍因字元壓力縮成「八軌裡七軌是 Blade 寫的」 |
+
+## 第 3304 條（**骨架歸屬；程式實掃產生，非手打**）：**a 組 claim 10 條、讓給 b 組 6 條**
+
+表由 `tab-c171-ha.mjs` 讀 `c171-hooks-a.json` 與 `c171-cards.json` 產生：
+
+| # | 卡 | 預算 | hook 加權 | 前四字 | 骨架 | claim |
+|--:|---|--:|--:|---|---|:-:|
+| 1 | Tommy Smith《Step By Step》 | 228 | 31.5 | Blue | 廠牌新開的支線，第一號給了這張 | ✔ |
+| 2 | Tommy Smith《Paris》 | 218 | 24.5 | 倫敦錄的 | 錄音與混音分兩國，混音師的手決定了聲音 | ✔ |
+| 3 | Don Pullen & The African-Brazilian Connection《Ode to Life》 | 229 | 23 | 十三分鐘 | 替剛過世的長年搭檔錄的追悼盤 | ✔ |
+| 4 | 大西順子《Cruisin'》 | 220 | 29 | 二十六歲 | 曲單挑的作曲家，正是鼓凳上那位樂手當年替他錄第一批唱片 | ✔ |
+| 5 | Ron Carter《Jazz, My Romance》 | 224 | 23 | 沒有鼓手 | 編制本身的家譜（無鼓三重奏的祖宗） | ✔ |
+| 6 | Kevin Eubanks《Spiritalk 2: Revelations》 | 224 | 23 | 接下深夜 | 電視樂團接位與發片同月發生的時序 | ✔ |
+| 7 | Jackie McLean Meets Junko Onishi《Hat Trick》 | 227 | 24 | 同一首輓 | 同一位樂手隔三十七年再錄同一首曲子 | ✔ |
+| 8 | Dianne Reeves《That Day…》 | 224 | 20 | 作者欄上 | 作者欄裡的第三個名字是一位詩人 | ✔ |
+| 9 | Ron Carter《Brandenburg Concerto》 | 217 | 25 | 他找來的 | 伴奏席上的指揮與首席各是黑人古典樂史的第一人 | ✔ |
+| 10 | Brian Blade Fellowship《Brian Blade Fellowship》 | 222 | 25 | 錄音室是 | 跨界製作人把爵士首作錄進一間舊電影院 | ✔ |
+
+**寫法照 `hook-base.md` 雲端註記第 3 點**：claim 句只寫「這條骨架全批只走本張。」，**讓出的卡什麼都不寫、不點名讓給誰**。
+機器實掃確認：**b 組十張的盤名字串在 a 組 `hook` 與 `note` 裡 0 命中**（唯二命中是掛名 `Ron Carter`，那是同藝人不是互指）。
+
+**⚠ 動手前掃過 `batch-progress/c171/prop-b.json` 那 10 張，依第 1809-B／1814-B 條讓出六條骨架**
+（「歸屬不是先到先得」「`hook` 本體用掉的形狀也算已占用」）：
+
+| 讓出的骨架 | b 組有幾張同形狀 | a 組的處置 |
+|---|--:|---|
+| **Somethin' Else／Blue Note 雙軌流通、日版先發** | **2**（Rubalcaba《The Trio》、Ron Carter《Stardust》） | a 組四張東芝 EMI 企劃盤（`Cruisin'`／`Jazz, My Romance`／`Hat Trick`／`Brandenburg Concerto`）**整格不寫發行地、版本與廠牌流通**。⚠ 這同時一次解掉派工信第三節第 3 點與第四節第 1 點兩條限制，見第 3308 條 |
+| **首張領班盤** | **2**（James Francies《Flight》、Joel Ross《KingMaker》） | `Brian Blade Fellowship` 的骨架改成製作人與錄音場地，**正文不以「這是他的第一張」為主軸** |
+| **盤名即團名／團名的起點** | 1（Jason Moran《The Bandwagon》） | a 組唯一的同名專輯 `Brian Blade Fellowship` 讓；`selfTitled` 這件事不進 note |
+| **家人同台** | 1（Bill Charlap & Sandy Stewart 母子二重奏） | `Spiritalk 2` 把 **哥哥** Robin Eubanks 降成班底一格，不當骨架 |
+| **曲庫跨度極大** | 1（Jason Moran，布拉姆斯到 Afrika Bambaataa） | `That Day…` 的骨架是詩人不是曲庫、`Cruisin'` 的骨架是鼓手的來歷不是曲單 |
+| **一天錄完＋`Clinton Studios`** | 1（Ron Carter《Stardust》，同一間錄音室） | **a 組三張 Carter 相關卡全部不寫錄音室名**；`Brandenburg Concerto` 原稿那句「三年前他在同一間錄音室錄《Friends》」連同錄音室一起捨去 |
+
+## 第 3305 條（**三張 Ron Carter 的切入面向；跨 a／b 一起分**）：**編制／人／流通，三面各一張**
+
+派工信第六節指名：`Ron Carter` 兩張在 a 組、`《Stardust》` 在 b 組，**三張要一起分**。
+
+| 卡 | 組 | 切入面向 | 不碰的面向 |
+|---|:-:|---|---|
+| 《Jazz, My Romance》(1994) | a | **編制的家譜**：無鼓三重奏，上溯 Herb Ellis 的 Soft Winds 與 Nat King Cole Trio | 不寫廠牌流通、不寫錄音室、不寫他的生涯錄音場次紀錄 |
+| 《Brandenburg Concerto》(1996) | a | **伴奏席上那群人的身分史**：指揮 Kermit Moore 與首席 Sanford Allen；獨奏用 piccolo bass | 不寫廠牌與發行地（第 3308 條）、不寫「一天錄完」、不寫錄音室 |
+| 《Stardust》(2001) | b | **留給 b 組**：六重奏、一天錄完、Somethin' Else／Blue Note 雙軌流通 | —— |
+
+**兩張 `Tommy Smith` 同理**：《Step By Step》走**廠牌支線的開張**，《Paris》走**錄音／混音的地理與那位混音師**；
+**兩張都不重述對方的班底，也不重述「他是誰」**。
+⚠ **大西順子也橫跨兩張**（`Cruisin'` 領班、`Hat Trick` 聯名）：前者寫她的**選曲**、後者寫她的**作曲**（〈Jackie's Hat〉），
+**她的生平只在 `Cruisin'` 出現一次（1967 年生於京都），`Hat Trick` 一字不重述。**
+
+## 第 3306 條（**榜位型與序數型模子的處置；派工信第五節指名要自己盯的那兩個**）
+
+**派工信實測正確**：有榜位／評介原句的只集中在 `Ode to Life`／`That Day…`／`Brian Blade Fellowship`／`Spiritalk 2`／`Hat Trick`，
+**而 `Paris`、`Jazz, My Romance`、`Brandenburg Concerto` 三張的 Billboard 紙本是 0 命中或只有 session 表**。
+**若照「有什麼寫什麼」，就會變成半批寫榜位、半批寫不出成績——那正是第 1821-B 條的數字模子同構。**
+
+**裁定（程式實掃複驗）**：
+
+| 模子 | 實掃結果 | 處置 |
+|---|--:|---|
+| **榜位型**（`第 N 名`） | **1／10** | **只給 `Ode to Life` 一張**——它是本組唯一「紙本與維基兩層一致、可寫死不標 uncertain」的榜位（第 3087 條）。`That Day…` 的最高名次帶著 OCR 隔週取樣的保留（第 3097 條），**整格不寫**；`Brian Blade Fellowship` 的「新進榜」與 `Spiritalk 2` 的系列前作榜位**一併不寫** |
+| **序數型**（第幾張） | **2／10**，且句型不同 | `Paris` 寫「Blue Note 四張裡的**最後一張**」、`Cruisin'` 寫「她的**第二張**領班盤」。⚠ **`Spiritalk 2` 原稿也是「Blue Note 四張裡的最後一張」，與 `Paris` 逐字同型——已整格刪除**；`Ode to Life` 的「第二張」改寫成「團是 1990 年底才組的」，序數退場、新團的時間感留著 |
+| **評介型**（引樂評原句） | **0／10** | 本組有 `Hat Trick` 1997-01-11 全文、`Spiritalk 2` 1995-02-25、`Brian Blade Fellowship` 1998-05-30 三篇可用，**三張全部不走評介**——`Hat Trick` 改走〈Left Alone〉、`Spiritalk 2` 改走時序、`Blade` 改走製作人與錄音場地 |
+| **廠牌時差型**（美版／日版） | **0／10** | 整條讓給 b 組（第 3304 條） |
+| 句型重複掃描 | 主故事各格開頭三字，重複最高者為「199」5 次 | ⚠ 其中 `Ode to Life` 與 `Jazz, My Romance` 原稿各有一格逐字「YYYY 年 M 月**錄於紐約**」——**兩格已改寫**（一格倒裝成「錄音在 1993 年 2 月的紐約」、一格把編制提到句首），**現在沒有任何兩格同句型** |
+
+⚠ **`chk-hook-crossgroup.mjs` 看不到這一層**（它比的是跨組的專名與盤名），**上表四行全部是本層自己寫程式掃出來的**。
+
+## 第 3307 條（**研究層推翻策展層的十二處，逐處在鉤子層的落點**）：**六處硬錯誤全部沒有進 note**
+
+| # | 研究層條號 | 硬錯誤 | 本層落點 |
+|--:|---|---|---|
+| 1 | 3082 | Tommy Smith 的 Blue Note 盤是**四張**不是三張 | `Paris` 的 note 逐字寫「他 Blue Note **四張**裡的最後一張」；`Step By Step` 的 note 不提盤數，只寫「他的 Blue Note **首張領班盤**」（⚠ 第 3083 條的「四字不可掉」已遵守，`Blue Note` 限定詞在） |
+| 2 | 3085／3086 | 《Ode to Life》是**第二張**；**七軌只有四軌是 Pullen 寫的** | 序數整格退場（第 3306 條）；「七軌只有四首出自 Pullen，另三首由巴西、西非與美國籍的三位團員各寫一首」逐字進 note |
+| 3 | 3089／3090 | 〈Roz〉是 **Rodney Whitaker** 寫的；Ellington 是**三首** | 兩句都逐字進 note（「曲單收了**三首** Duke Ellington」「〈Roz〉是三重奏的貝斯手 **Rodney Whitaker** 寫的」） |
+| 4 | 3088 | 美版是 1994 不是同年 | **整格不寫發行地與版本**（第 3304／3308 條），時差在正文裡不存在，因此無從寫錯 |
+| 5 | 3092／3093 | 時序**相反**；Robin 是**哥哥** | note 逐字「他**已經**在 Branford Marsalis 休假期間代理這個樂團的音樂總監，同年正式接任，**正文要寫明這個時序**」；「長號是他**哥哥** Robin Eubanks」 |
+| 6 | 3094／3095 | 錄音地是 **Power Studio**；〈Left Alone〉是**兩人合寫、Holiday 從沒錄過** | ⚠ **錄音地整格捨去**——見第 3309 條；〈Left Alone〉的四層來歷是本張的骨架，逐字進 note |
+| 7 | 3096 | 〈That Day〉是**三人合寫**、〈Dark Truths〉是 **Joan Armatrading** 的 | 兩句都進 note，且三人合寫那句就是本張的 hook 與骨架 |
+| 8 | 3099 | **有鼓手 Lewis Nash**、弦樂團名單查得到、`eau` 是東芝 EMI 的專用廠牌名 | 弦樂團名單與鼓手**整格捨去**（第 3303 條）；`Kermit Moore` 與 `Sanford Allen` 兩人升為骨架；**`eau` 這條廠牌線不寫**（第 3308 條） |
+
+## 第 3308 條（**派工信第四節三條硬限制的處置**）：**三條全部靠「整格捨去」達成，不靠否定句**
+
+1. **`Brandenburg Concerto` 的年份**：note 只留標準指定句「**發行年寫 1996 年。**」，
+   **主故事鏈裡一個年份都沒有**——1996 因此不可能變成敘事重點，jazzdisco 的 1997 反證也不會被寫作層看見而搖擺。
+2. **`Brandenburg Concerto` 的廠牌**：**整張 note 沒有出現 `Blue Note`、`eau`、`EAU Records`、美版、日版、軌數差**。
+   **「全球 Blue Note 發行」這句話因此沒有生成的可能。** ⚠ **這比在 note 裡寫「不得寫成全球發行」安全得多**——
+   `hook-base.md` 第 152 行定死「note 一律用正面表述」，否定句與研究限制會被寫作層原樣抄進消費者看的正文（校對痕跡第一至四型）。
+3. **`大西順子` 的官網**：**兩張卡的 hook 與 note 都沒有出現任何網域、官網或外部連結**，第 3091 條的禁用來源在本層沒有接觸面。
+4. **`Brian Blade Fellowship` 的 1998 原盤與 2020 再發**：**note 整格不寫 2020 年的 Blue Note 80 再發**，
+   並以「發行年寫 1998 年。」把版本釘死；**兩者不會被混成一件事。**
+
+## 第 3309 條（**`Power Studio` 的處置；本層唯一一次「研究層查對了、但仍然整格不寫」**）
+
+研究層第 3094 條把盤面逐字 `Power Studio` 查清楚了，也警告不得與《Cruisin'》的 `Power Station` 互套。
+**本層的裁定是整格不寫錄音地。** 理由三條：
+1. **`Hat Trick` 的骨架是〈Left Alone〉隔三十七年再錄**，錄音地與它沒有關係，是預算裡密度最低的一格。
+2. ⚠ **`Power Studio` 與 `Power Station` 差一個字、在同一批裡分屬兩張卡**——**只要兩者都不進 note，互套的機率就是零**；
+   留一個進去，就得同時在另一張寫排除句，那是兩格成本換一格資訊。
+3. 依第 3308 條的同一條理由：**排除句不能寫成否定式**，而正面寫法（「錄音地寫 Power Studio」）又會把一個沒有故事的專名塞進正文。
+**判準第 2 條（可逆：這是 note 欄位，主線若要補只需加一句）。**
+
+## 第 3310 條（**收工實跑**）
+
+```
+$ node qa-batch.mjs hooks c171
+（略過 qa-check-hooks.mjs：本 repo 無此檔。……）
+⚠ b 缺 hook 檔
+總標記 1
+
+$ node chk-hook-crossgroup.mjs c171
+c171｜1 組｜10 張
+hook 加權 20–31.5｜note 208–233
+✓ 全部通過
+```
+
+- **a 組旗標 0。** 唯一的標記是批次層的「b 缺 hook 檔」——**派工信第二節已預告，是管線形狀不是本組的錯。**
+- **`互指?` 0 筆**（第 1763-B 條要求的逐筆人工判讀因此無事可判）。
+  **成因寫明**：本層十張的 note 全部只寫本卡研究稿有的專名，**同批別張的盤名一個都沒有引用**；
+  第 3304 條的骨架讓渡也照第 1787-B 條寫成「什麼都不寫」，**沒有任何一張點名把軸讓給了誰**——
+  那正是 `互指?` 每批多出好幾行的來源。
+- 另跑本層自寫的 `chk-c171-ha.mjs`：hook 加權上限、前四字互異、句末標點、禁語、分數星等、
+  否定前提（`不是`／`卻不是`／`並非`）、note 否定句（`不得`／`禁補`／`查無`／`未能查證`／`卡池標錯`）、
+  假名／西里爾／希臘／諺文／千分位逗號 —— **全部 0 命中**。
+
+## 第 3311 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）：**一處實質、兩處需要寫明處置、其餘全部正確**
+
+| # | 派工信 | 正本 | 判 |
+|--:|---|---|---|
+| 1 | 第三節第 1 點把《Step By Step》的「三張」與《Paris》的「第四張」並列成「**策展層兩張卡自己互相牴觸**」 | 第 3082 條：**錯的只有《Step By Step》那句**，《Paris》的「第四張」**本身是對的**（四張的最後一張） | ⚠ **敘述容易讀成兩句都錯。** 本層照研究層寫：`Paris`＝四張裡的最後一張、`Step By Step`＝Blue Note 首張領班盤 |
+| 2 | 第三節第 3 點與第四節第 1 點：「**正文不得寫**『同年美日兩地發行』」「**不得寫成**『全球 Blue Note 發行』」 | `hook-base.md` 第 152 行：**note 一律用正面表述，不要寫「不得寫 X」**——否定句會被寫作層原樣抄進正文 | **派工信的意圖正確、寫法不能照搬進 note。** 本層改以整格捨去達成同一效果（第 3308 條），note 裡沒有任何否定句 |
+| 3 | 第六節第 1 點：「本批有一整支弦樂團名單，**那一格幾乎一定要整格捨去**」 | 第 3099 條：同一格裡的 `Kermit Moore` 與 `Sanford Allen` **是本張唯一的故事** | **兩句不牴觸，但界線要寫明**：名單（十九位團員＋鼓手 Lewis Nash）整格捨去，**Moore 與 Allen 兩人留下**——他們不符第 1830-B 條「只起點名作用」的定義 |
+| 4 | 第二節：`qa-batch hooks c171` 會報 `b 缺 hook 檔` | —— | **實測正確** |
+| 5 | 第六節第 1 點：c-168 a 應對得上 209–229／中位 222.5 | —— | **實測逐格對上**（第 3302 條） |
+| 6 | 第五節：`Paris` 與 `Jazz, My Romance` 的 Billboard 紙本 0 命中，「不要硬找『這張碟紅不紅』那種軸」 | —— | **實測正確且有效**：這兩張的骨架分別是混音師與編制家譜，**完全不需要商業成績** |
+
+**本信其餘每一句本層都對過，與 `hook-base.md`（含雲端註記三點）及既有裁定無牴觸。**
+
+## 第 3312 條（**交件版本認定；第 1803-B 條的第八次**）
+
+**`desc-tools/batches/hooks/c171-hooks-a.json` 的工作區當下版本才是交件版。**
+本層在收斂過程中對同一個路徑寫過四版（第一版 10／10 超標、第四版才全數落進 217–229），
+**每一版都覆寫同一個檔案，所以「檔案存在且有 10 筆」不等於「是定稿」。**
+主線驗收請以本條之後、工作區未再變動的那份為準；**筆數對了不等於定稿了。**
+**本層不 `git add`、不 `commit`、不 `push`、不動 git 索引。**
+
+### 附：收工時的 `HEAD` 比對（2026-09-19 12:53）
+
+主線在本層收工前後做了一次 checkpoint 提交
+（`54dfe5e checkpoint: c169 鉤子 b／c171 鉤子 a／c170 寫作 1 中途存檔`，12:53:08），
+**時間點落在本層最後一次寫檔（12:52）之後**。實跑
+`git show HEAD:desc-tools/batches/hooks/c171-hooks-a.json` 與工作區 `diff`：**逐字相同、`git status` 無此檔**
+→ **這一次 `HEAD` 與工作區一致，沒有重演第 3103 條那種「提交到的是中途快照」。**
+⚠ **但本層在同一路徑上覆寫過四版，規則不變：驗收與合併一律以工作區當下版本為準。**
+⚠ **`batch-progress/c171/rulings.md` 本身仍是未提交狀態（`M`），第 3301–3312 條不在 `HEAD` 裡。**
