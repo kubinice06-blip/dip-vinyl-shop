@@ -57305,7 +57305,9 @@
    "es:0→0",
    "pl:0→0"
   ],
-  "status": "unavailable"
+  "status": "unavailable",
+  "previewUrl": null,
+  "noSourceReason": "藝人目錄在架但唯獨這張缺（Thierry Lang ch 目錄 10 筆、Anna-Mari Kähärä fi 目錄含 Orchestra 名義的作品，本張皆不在）"
  },
  "Booster|Loop in Release": {
   "batch": "c169",
@@ -57450,7 +57452,9 @@
    "es:0→0",
    "pl:0→0"
   ],
-  "status": "unavailable"
+  "status": "unavailable",
+  "previewUrl": null,
+  "noSourceReason": "藝人目錄在架但唯獨這張缺（Thierry Lang ch 目錄 10 筆、Anna-Mari Kähärä fi 目錄含 Orchestra 名義的作品，本張皆不在）"
  },
  "Brisa Roché|The Chase": {
   "batch": "c169",
@@ -57851,9 +57855,20 @@
    "it:0→0",
    "es:ratelimited-after-retries",
    "es:0→0",
-   "pl:0→0"
+   "pl:0→0",
+   "manual-lookup:1440885750"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "us",
+  "collectionId": 1440885750,
+  "appleTitle": "Our Point of View (feat. Lionel Loueke, Ambrose Akinmusire, Marcus Strickland, Kendrick Scott, Robert Glasper & Derrick Hodge)",
+  "appleArtist": "Blue Note All-Stars",
+  "appleYear": "2017",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/23/05/3f/23053ff2-8369-1db7-42ad-0c79248912e4/mzaf_461193783525730495.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "recoveredBy": "manual-catalogue-lookup"
  },
  "Chris Dave and The Drumhedz|Chris Dave and The Drumhedz": {
   "batch": "c169",
@@ -57907,9 +57922,20 @@
    "dk:0→0",
    "it:0→0",
    "es:0→0",
-   "pl:0→0"
+   "pl:0→0",
+   "manual-lookup:1383057057"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "us",
+  "collectionId": 1383057057,
+  "appleTitle": "Collagically Speaking (feat. Christian Scott aTunde Adjuah, Derrick Hodge, Taylor McFerrin & Justin Tyson)",
+  "appleArtist": "R+R=NOW, Robert Glasper & Terrace Martin",
+  "appleYear": "2018",
+  "explicitness": "explicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/e1/57/b0e15764-b71b-7a86-2620-cf6155fa2e23/mzaf_5625863046887244053.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "recoveredBy": "manual-catalogue-lookup"
  },
  "The Charles Lloyd New Quartet|Passin' Thru": {
   "batch": "c169",
@@ -57961,8 +57987,19 @@
    "dk:0→0",
    "it:0→0",
    "es:0→0",
-   "pl:0→0"
+   "pl:0→0",
+   "manual-lookup:1474274232"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "us",
+  "collectionId": 1474274232,
+  "appleTitle": "James Carter Organ Trio: Live From Newport Jazz",
+  "appleArtist": "James Carter",
+  "appleYear": "2019",
+  "explicitness": "notExplicit",
+  "trackCount": 6,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9d/ca/f6/9dcaf621-9101-63e4-7492-28c757090668/mzaf_13855321948884650370.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "recoveredBy": "manual-catalogue-lookup"
  }
 }

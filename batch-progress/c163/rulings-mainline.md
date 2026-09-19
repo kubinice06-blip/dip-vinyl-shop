@@ -2675,3 +2675,33 @@ Top Jazz Albums 最高名次：`Live at Mt. Fuji`／`Superblue`／`The Manhattan
 
 **獎項兩筆都是入圍**：`Portraits Plus` 1993 Mercury Prize 入圍（Suede 得獎）、
 `Contact!` 第 41 屆葛萊美 Best Latin Jazz Performance 入圍（Arturo Sandoval 得獎）。
+
+## 第 1822-B 條（c-169 探測收尾）：**串流 38/40、封面 25/40——「歐洲分支」的兩個數字剛好相反**
+
+探測層判 unavailable 5 張，**人工回撈救回 3 張、2 張確認真缺**。
+
+**救回的三張全部是第 (2) 種（掛名或盤名被店面改寫）**：
+`Blue Note All-Stars《Our Point of View》`（店面掛六位客座的 feat. 串，11 軌＝MB 的 6+5 雙 CD）、
+`R+R=NOW《Collagically Speaking》`（同形，11 軌）、
+`The James Carter Organ Trio《Live From Newport Jazz》`（**店面把團名塞進盤名前綴** `James Carter Organ Trio: `，6 軌）
+——**三張的軌數與 MB 逐筆對得上。**
+
+⚠ **「店面把團名當盤名前綴」這個形狀，c-167 的三張 Wilkins 也是同一種**（第 1810-B 條）
+——**兩批合計四張，已經不是個案。回撈時盤名逐字比對一定要允許前綴。**
+
+**2 張真缺**（`Thierry Lang《Guide Me Home》`、`Anna-Mari Kähärän Orkesteri` 同名專輯）：
+**兩位的藝人目錄都在架**（Thierry Lang 的 ch 店面有 10 筆、Anna-Mari Kähärä 的 fi 店面連 `Orchestra` 名義的都有），
+**唯獨這兩張缺**——**第 (c) 種單張版權缺口，停手。**
+
+### ⚠ 「歐洲分支覆蓋率低」這句話要拆成兩半
+
+c-169 策展層預測「店面與封面覆蓋率要照歐洲分支預期」（第 1799-B 條），**實測結果一半對一半錯**：
+
+| | c-169（歐洲分支為主） | 對照 c-166（現役目錄） |
+|---|---|---|
+| **串流** | **38/40（95%）** | 43/45（96%） |
+| **封面（CAA）** | **25/40（63%）** | **45/45** |
+
+**→ 串流沒有比較差，差的是封面。**
+**CAA 的 release-group 層對非美國本部的發行覆蓋明顯偏低**，而 Apple 對它們幾乎一視同仁。
+**後批預期要分開講：串流照常，封面要預留一半的替代來源工。**
