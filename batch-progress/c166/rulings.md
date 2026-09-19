@@ -997,3 +997,157 @@ b 組的裁定在本檔**分成兩段**，中間夾著 a 組的 1960–1985：
 `a 23 full×23`／`b 22 full×22`／`key 與卡單完全一致 ✓`／`全部通過 ✓`。
 **第 2252 條第 3 點記的那個 `⚠ key 集合與卡單不一致` 已自然消失，總標記 0；a 組這一側自始至終 0 旗標（兩筆字元類警告已於該條記載的方式修掉）。**
 **本節實際用掉 2246–2255，2256–2295 未用。**
+
+---
+
+## c-166 b 組（22 筆）**研究層**裁定　號段 2296–2345
+
+（本節一律 append，不整檔覆寫——第 1743-B(四) 條。開工時本檔已含 b 組策展（1990–2007）與 a 組策展（1960–1987）、a 組研究（2246–2255）三節，本棒接在最後。
+⚠ **號段不連續是已知情況，不是越界**：本檔實際用到的最大號是 a 組研究的 2255，派工信給 b 組研究的號段是 2296–2345，中間 2256–2295 是 a 組保留而未用完的。依第 1794-B 條「主線給的號段靠不住」，本棒**照派工信給的區間用，不往下補洞**，以免與 a 組撞號。）
+
+### 2296　交件總表
+
+| 項目 | 值 |
+|---|---|
+| 完成張數 | **22／22** |
+| `facts` 條數 | **每張 12 條，合計 264 條**（分佈：12×22，無一張落在 8–11） |
+| 每條 `src` 皆為完整 https 網址 | **264／264** |
+| `hookCandidates` | 每張 2 條（上限），合計 44 |
+| `status`／`coverage` | 22 張皆 `full`／`full`（兩欄同值） |
+| `key` 逐字複製 | 22／22 與 `c166-cards.json` 的 `group === "b"` 完全一致（含第 12 張的 `desc4:` 前綴） |
+| `node qa-batch.mjs research c166` | **`a 23 full×23`／`b 22 full×22`／`key 與卡單完全一致 ✓`／`全部通過 ✓`**，**b 組旗標 0**、`互指?` **0 處**（研究層單獨跑時 hook／desc 兩段不觸發，故無互指可判讀） |
+| 推翻策展層 | **1 處**（第 2297 條）；另有 3 處是「策展層沒寫、本棒補上」的缺漏，不算推翻 |
+| 產出 | `desc-tools/batches/research/c166-b.json`（22 筆） |
+
+⚠ **未碰**：`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`previews.json`／`caa.json`／`c166-a.json`／其他批次的檔案。**未 `git commit`、未 `git push`、未動 git 索引。**
+
+### 2297　**推翻策展層一處**：`Meshell Ndegeocello《No More Water》` 的葛萊美是**得獎**，不是入圍
+
+`prop-b.json` 第 4 張的 `why`／`risk` **完全沒有寫獎項**，而 ③ Blue Note 官網唯一提到本碟獎項的那一篇是 2024-11-08 的
+`https://www.bluenote.com/2025-grammy-award-nominees/`（**入圍名單**，逐字 `BEST ALTERNATIVE JAZZ ALBUM : Meshell Ndegeocello No More Water`）。
+**只讀官網會寫成「入圍」——那正是 base 檔獎項那節警告的最高頻錯誤。**
+
+實查結果：**本作在 2025-02-02 的第 67 屆葛萊美獎「得獎」**，證據兩層——
+`https://www.grammy.com/videos/meshell-ndegeocello-wins-best-alternative-jazz-album-2025-grammys`（得獎影片頁），
+以及 Blue Note 自己 2026-07-15 的《Synonym》新聞稿逐字 `earning her the first two GRAMMY Awards to honor her own albums in her three-decade long recording career`。
+同段另確認《The Omnichord Real Book》(2023) 是**首屆**該獎項的得主，也是得獎。
+
+**處置**：facts 寫「得獎」並附 grammy.com 的 src，notes 標明官網那篇只到入圍階段。
+**這一條對後批的意義**：**Blue Note 官網每年 11 月那篇「入圍名單」是本線最容易被當成結論的來源，它只證明入圍，不證明結果。**
+
+### 2298　同批另外四張的葛萊美**全部是入圍未得獎**，得主已逐項查明
+
+依第 2297 條的教訓，本組凡出現葛萊美字樣一律查到「誰得獎」為止：
+
+| 卡 | 屆次／類別 | 結果 | 該屆得主 |
+|---|---|---|---|
+| `Bill Frisell《Orchestras》` | 第 67 屆（2025）最佳當代器樂專輯 | **入圍未得獎** | Taylor Eigsti《Plot Armor》 |
+| `Immanuel Wilkins《Blues Blood》` | 第 68 屆（2026）最佳另類爵士專輯 | **入圍未得獎** | Nate Smith《LIVE-ACTION》 |
+| `Branford Marsalis Quartet《Belonging》` | 第 68 屆（2026）最佳爵士器樂專輯 | **入圍未得獎** | Sullivan Fortner《Southern Nights》 |
+| `Gerald Clayton《Ones & Twos》` | 第 68 屆（2026）最佳當代器樂專輯 | **入圍未得獎** | ARKAI《Brightside》 |
+
+src：`https://www.grammy.com/news/2026-grammys-nominations-full-winners-nominees-list/`（2026 三筆）與
+`https://www.grammy.com/awards/categories/best-contemporary-instrumental-album/`（2025 那筆）。
+⚠ **官網沒有「得獎貼文」不等於沒得獎**，本棒不以此推論，四筆都另查了得主。
+
+### 2299　`Blue Lab Beats` 的獎項：官網寫「入圍」、實況是該專輯「得獎」，但受獎人不是他們——只寫可查證的那一層
+
+③ `bluenote.com/artist/blue-lab-beats/` 逐字 `a Grammy nomination for their work on the Angelique Kidjo album Mother Nature`。
+實查 `https://www.grammy.com/news/angelique-kidjo-mother-nature-best-global-music-album-winner-2022-grammys`：
+**《Mother Nature》在第 64 屆（2022）拿下最佳全球音樂專輯，是 Kidjo 生涯第五座。**
+官網那段簡歷寫於 2022 年頒獎前、停在入圍階段。
+
+**判**：最佳全球音樂專輯的受獎人是掛名藝人，**製作人是否列名受獎者本棒查不到明文**，所以
+facts 只寫「他們參與製作的那張專輯得獎」這個可查證的層級，**不寫「雙人組拿到葛萊美」**。MOBO 2021 最佳爵士演出則是入圍。
+（判準 2「可逆」：這是卡單值層級的敘述，本棒自行定案。）
+
+### 2300　③ 來源層各查法的命中率（22 張實測）
+
+| 查法 | 命中 | 備註 |
+|---|---:|---|
+| **(1) `bluenote.com/wp-json/wp/v2/posts?search=`** | **20／22** | 回 `content.rendered` 全文，**單篇新聞稿常同時帶完整曲序、編制、錄音／混音／母帶 credits 與藝人第一人稱引句**，是本層 CP 值最高的路徑 |
+| **(2) `bluenote.com/artist/<slug>/`** | **21／22** | 21 個路徑實測全部 200（只有 `chihiro-yamanaka` 未試，第 2004 條已記為 404）。傳記段落補足「第幾張 Blue Note 專輯」「生平」「獎項沿革」這三類 (1) 不一定有的資料 |
+| (3) `bluenote.com/?s=` | **0 次使用** | (1) 的涵蓋率已足，本組沒有一張需要退到站內搜尋 |
+| **(4) `universal-music.co.jp`** | **1／1** | 只有第 12 張需要，見第 2301 條 |
+| (5) 藝人官網 | **0／1** | 只試過 `bluelabbeats.com`（200 但整站 JS 渲染、去標籤後只剩 113 字元，等於零內容） |
+
+⚠ **兩張例外要記下來**：
+
+1. **`Blue Lab Beats《Blue Eclipse》`——(1)(2) 兩條路徑對「本碟」都是空的。** 以「Blue Eclipse Blue Lab Beats」搜 `wp-json` 回 **0 篇**，改搜「Blue Lab Beats」回 6 篇但全部與本碟無關；藝人頁 200，但 Releases 欄逐字只列《Motherland Journey》與《We Will Rise》。**第 1998 條記的「本碟在 Blue Note 官網零報導」本棒獨立複驗成立。** 本張的曲目與客座名單改走 ④ Apple 的 `lookup?id=…&entity=song`（一次回 12 軌的完整 feat. 名單），藝人背景走 ③ 藝人頁，曲風與包裝走 ② Discogs。
+2. ⚠ **`Joshua Redman《Words Fall Short》`——關鍵字順序會決定成敗。** 用「Words Fall Short Joshua Redman」搜，回的 6 篇有一半是 **Paul Cornish 的新聞稿**（因為那些稿子提到本碟）；改用「**Joshua Redman Words Fall Short album**」才把本碟的三篇（公告稿＋兩支單曲稿）撈齊。**後批遇到「搜到的全是別人的稿子」時，把藝人名放到關鍵字最前面再搜一次。**
+
+### 2301　日本線（第 12 張）：商品頁 slug 要從 `/discography/` 反查，`uccj-2245` 是 404
+
+第 2004(2) 條已記「`universal-music.co.jp/chihiro-yamanaka/`（名在前）200、`yamanaka-chihiro/` 404」，本棒複驗成立。
+**本條要補的是商品頁怎麼找**：直接猜 `/products/uccj-2245/` 回 **404**；
+`https://www.universal-music.co.jp/chihiro-yamanaka/discography/`（200）的 HTML 裡可以用 `products/[a-z0-9-]+/` 一次抓出全部 slug，
+本碟的三個是 **`uccj-2251`（SHM-CD 通常盤）／`uccj-9256`（UHQCD 初回限定盤）／`ucjj-9065`（2026 重量盤黑膠）**，三頁皆 200。
+前兩頁內容相同，帶**演奏者、錄音地、製作人、母帶工程師與逐軌作曲者**——這些欄位 MB 與 Discogs 都沒有，是本張 facts 的主要來源。
+**後批查日本線時，先抓 `/discography/` 的 slug 清單，不要猜品番。**
+
+### 2302　兩個東亞人名**刻意不套 2026-08-11 漢字裁定**，維持羅馬字
+
+base 檔的東亞人名裁定要求照原文漢字寫，**但前提是查得到可靠的寫法**；另一條「單一來源的人名要交叉驗證，驗不到就標 uncertain 或略去」在本組壓過它兩次：
+
+1. **`Noriko Ueda`**（第 13 張 ARTEMIS 的低音提琴手）——網路上同時出現「上田典子」與「植田典子」兩種漢字寫法，其中一個來源是規則明令不可採信的 grokipedia。**facts 維持 ③ 官網的 `Noriko Ueda`。**
+2. **`Kazutomi Aoki`**（第 16 張日版 CD 的內頁文案作者，Discogs 35437573／33670617 逐字）——查不到可交叉驗證的漢字寫法。**維持羅馬字。**
+
+**兩筆都寫進該卡 notes**，若本機日後查到唱片公司或本人官網的漢字寫法再改。
+（對照：**`山中千尋`／`筒美京平` 兩個名字有 `universal-music.co.jp` 的官方漢字頁，照裁定寫漢字，沒有例外。**）
+
+### 2303　兩處來源互相打架，本棒當場定案
+
+1. **`Horace Silver《Silver in Seattle》` 的 A 面錄音日**：Discogs 35470252（歐版黑膠）跨頁內頁逐字 `Side A Recorded 8/13/65`，
+   但 35752099（美版黑膠）逐字 `Side A Recorded 8/12/65`，兩筆 CD（35468755 與日版 35900185）的 notes 逐字都是
+   `August 12, 1965 (tracks 1 to 3)`。**三比一取 8 月 12 日**，歐版那筆疑為印刷誤植。（判準 2：可逆，寫進 facts 與 notes 供本機覆核。）
+2. **`McCoy Tyner & Joe Henderson《Forces of Nature》` 的發行日**：MB 的 `first-release-date` 逐字 `2024-10-01`，
+   ③ 官網新聞稿（`2024-11-22T00:01:57`，標題逐字 `OUT NOW`）、Discogs 四筆與 Apple 逐字都是 `2024-11-22`。
+   **facts 取 11 月 22 日**；年份不受影響，與第 2007 條「同年、不改判」一致。
+
+### 2304　本棒自行補查、官網沒寫的兩層事實
+
+1. **`Walter Smith III《three of us are from Houston and Reuben is not》` 的那首 Sam Rivers 作品**：
+   ③ 官網三篇都只寫 `an imaginative rendering of a Sam Rivers composition`，**沒說是哪一首、也沒說出自哪張碟**。
+   本棒以 MB 交叉確認第 7 軌〈Point of Many Returns〉是 Rivers 的作品、原收於他 1967 年的 Blue Note 專輯《Contours》
+   （RG `019093e2-0dd5-3564-a5f0-11a0dfb6202b`）。**兩層分開列成兩條 facts**，下游若只要一層可只用官網那條。
+   ⚠ 這是一條 Blue Note 內部的源流（Blue Note 現役藝人翻 Blue Note 舊作），**依曲風源流／廠牌規則本來就該寫**。
+2. **`Aaron Parks《By All Means》` 的第 1721／1742-B 條訊號**：第 2006(7) 條記「MB 端形狀近似觀察名單」。
+   本棒實查：MB 端確實只有一筆 Digital Media release、`country` 空、`catno` 空，**但 Discogs 五筆實體零售條目的 `released`
+   逐字都是 `2025-11-07`，與 MB frd 同日，沒有任何一筆更早**。**訊號亮但不改判**，與該條結論一致。
+
+### 2305　字元與體例的程式化自檢（base 檔要求「不要用眼睛掃」）
+
+交件前對 `c166-b.json` 全檔逐字元跑過一次，結果：
+
+- **簡體字 0**（以常用簡體字集掃描，命中的 `表走缺向台菜通骨里角` 十個字在正繁兩體同形，非簡體）。
+- **西里爾／希臘／天城體／諺文 0**，唯一的希臘字母是 **`Π professional Audio`**（馬德里錄音室的**專名**，Discogs 逐字，依字元條的專名例外保留）。
+- **日文假名只剩一處**：`〈スニーカーぶる〜す〉`（第 12 張翻唱曲的**原曲名**，專名例外，首次出現處已併記碟上的拉丁題名〈Sneaker Blues〉）。
+  **原本直引官網欄位的兩處描述性日文（「ジャズ・ピアニスト」「ジャンル ジャズ , 邦楽」）已全部改寫成中文。**
+- **日文新字體 0**：`楽`／`沢`／`実`／`発`／`売` 全檔各 0 次（改寫時一律用 `樂`／`澤`／`實`）。**這一項 QA 掃不到，只能自檢。**
+- **千分位逗號 0**（以 `\d{1,3},\d{3}` 掃描）。
+- **`src` 全部 https**：264／264。
+
+### 2306　本派工信與 base 檔／既有裁定牴觸之處
+
+逐條核對後，**本信沒有與 base 檔或既有裁定實質牴觸的句子**；以下三點是「數字或預期與實測不同」，記錄如下：
+
+1. **號段 2296–2345 與本檔的既有號段不連續**（本檔開工時最大號是 a 組研究的 2255，中間 2256–2295 空著）。
+   派工信本身已用第 1794-B 條提醒「主線給的號段靠不住」，本棒**照給的區間用、不往下補洞**，見本節開頭。**這不是錯，只是要讓後批知道洞是刻意留的。**
+2. **「本批 43/45 有來源」對 b 組而言是 22／22。** 派工信說真缺的兩張是 `Norah Jones` 的兩張 RSD 盤——**那兩張都在 a 組**，
+   b 組 22 張在 `previews.json` 裡逐張都有 `collectionId` 與 `previewUrl`（`caa.json` 的 `art.url` 亦 22／22）。**b 組沒有無來源卡。**
+3. **③ 查法優先序 (2) 的「裸名與團名兩種形式都試」在本組沒有需要動用的場合**：22 張裡有團名掛名的三張
+   （`Bill Charlap Trio`／`Branford Marsalis Quartet`／`ARTEMIS`），**前兩張的團名形 404 已由策展層第 1995／2004 條實測記載**，
+   本棒未重跑（那是掛名層的問題，不影響取材）；`artemis` 本身就是團名且 200。**派工信提醒的第 1751-B 條（一個樣本不是一條規律）成立，但本組沒有新樣本可加。**
+
+⚠ **base 檔本身的衝突已由其開頭的「雲端例外」節解掉，本棒照例外走**：產出直接寫進 repo、每張 8–12 條 facts 而非 2 個來源、`key` 照卡單逐字複製（第 12 張是 `desc4:`）、`status` 與 `coverage` 兩欄並存。**其餘（獎項分入圍／得獎、禁簡體、禁千分位逗號、`hookCandidates` 上限 2、暫存檔帶批次組別前綴）全部照 base 檔原文。**
+
+### 2307　暫存檔與工具（全部帶 `c166b-` 前綴，第 118 行規定）
+
+放在本工作階段的 scratchpad，未進 repo：
+`c166b-fetch-bn.mjs`（`wp-json` 抓取，可續跑）／`c166b-fetch-mb.mjs`（MB RG＋release＋軌名，可續跑）／
+`c166b-fetch-url.mjs`（任意頁面抓取＋去標籤）／`c166b-digest.mjs`（把 MB／Discogs／新聞稿／藝人頁併成單卡摘要）／
+`c166b-merge.mjs`（把 `c166b-cards/<1..22>.json` 依卡單順序併成 `c166-b.json`，併前逐張比對 `key`）。
+**每張寫完就存成獨立的 `c166b-cards/N.json`，每三張跑一次 merge 寫回 repo**——容器若重啟，重派同一支代理可直接從缺號那張接續，不必重寫。
+MusicBrainz User-Agent 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，每次請求間隔 ≥1.1 秒，503 走重試不當查無。抓取日期：2026-09-19。
+
+**本節實際用掉 2296–2307，2308–2345 未用。**

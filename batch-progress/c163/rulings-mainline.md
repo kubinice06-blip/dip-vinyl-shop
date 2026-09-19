@@ -2227,3 +2227,38 @@ research 階段結構上不會產生任何一行。**後批的研究層派工信
 - **Cautious Clay 必須取 explicit 的 `1692470376`。**
 - **Norah Jones 兩張 Apple 全空，絕不可拿同名單曲 `1488043432` 或母體專輯條目充數**；
   **`Little Broken Hearts (Deluxe Edition)` 的第三張黑膠逐字是 Austin City Limits 2012，不是 Allaire**（第 1792-B 條同一件事的第二次確認）。
+
+## 第 1808-B 條（c-166 研究 b 驗收）：**22/22 全 `full`，264 條 facts，b 組沒有無來源卡**
+
+`qa-batch research c166` 全部通過、b 組旗標 0、key 與卡單完全一致；**facts 每張 12 條、264／264 都有完整 https src**。
+來源分佈 **bluenote.com 188／discogs 39／musicbrainz 18／universal-music.co.jp 9／grammy.com 6／music.apple.com 4**。
+**b 組 22 張在 `previews.json` 逐張有 `collectionId` 與 `previewUrl`、`caa.json` 的 `art.url` 也是 22／22**
+——第 1792-B 條那兩張真缺的 Norah Jones RSD 盤都在 a 組。
+
+### ⚠ 推翻策展層一處，形狀正是 base 檔警告的最高頻錯誤
+
+**`Meshell Ndegeocello《No More Water》` 的 `why`／`risk` 完全沒寫獎項，而官網上唯一相關的是 2024-11-08 的「入圍名單」。**
+**實查本作在第 67 屆（2025）葛萊美「得獎」**（最佳另類爵士專輯）
+——grammy.com 得獎影片頁＋Blue Note 2026《Synonym》稿逐字 `the first two GRAMMY Awards to honor her own albums`。
+**只讀官網就會寫成入圍。** 同批另四張葛萊美**全部入圍未得獎**，代理逐筆查明了得主。
+
+**另補三處策展層沒寫的**：第 5 張那首「Sam Rivers composition」是〈Point of Many Returns〉（原收於 Rivers 1967 年《Contours》）；
+第 22 張 A 面錄音日三邊打架（歐版黑膠 8/13、美版黑膠與兩張 CD 8/12）**三比一取 8/12**；
+第 8 張發行日 MB frd `2024-10-01` vs 官網／Discogs／Apple `2024-11-22`，**facts 取 11/22、年份不變**。
+
+### ③ 來源層：兩批合計 45 張的數字
+
+**(1) `wp-json` 39／45（19＋20），是主力**；(2) `artist/<slug>/` **路徑幾乎都回 200（c-166 b 實測 21／22），但決定性素材只有 1–2 張**；
+**(3) `?s=` 兩組合計 0 次用上**；(4) `universal-music.co.jp` 2／2；**(5) 藝人官網 0／2**（兩次都是 JS 渲染，去標籤後只剩百餘字元）。
+
+**三條新的操作細節**：
+1. ⚠ **撇號會讓 `wp-json` 的 search 落空**：`O%27Farrill` 回 0、`Ofarrill` 回 3。
+2. ⚠ **關鍵字要把藝人名放最前面**：「Words Fall Short Joshua Redman」撈回一半是別人的稿子，改「Joshua Redman Words Fall Short album」才齊。
+3. ⚠ **日本線商品頁的 slug 要從 `/discography/` 反查**，用猜的會 404（`uccj-2245` 404，正確是 `uccj-2251`／`uccj-9256`／`ucjj-9065`）。
+
+### 字元自檢要寫程式跑，不要用眼睛掃
+
+b 組自寫程式逐字元掃：**簡體 0、西里爾／希臘／諺文 0、日文新字體 0、千分位逗號 0**；
+唯二非拉丁殘留是專名例外（錄音室名 `Π professional Audio`、翻唱原曲名〈スニーカーぶる〜す〉）。
+**a 組首跑就是靠這種掃法抓到兩筆**（逐字引用來的 `合同会社` 與 `2,500`），**兩筆都是「引用原文」帶進來的**
+——**逐字引用是字元類違規的主要入口。**
