@@ -152,3 +152,125 @@ Blue Note 藝人有作品表與敘事**——本次給出 Jason Moran 三份委�
 `Patrick Roques` 做了同批 Grant Green 與 Jimmy Smith 兩張庫存盤的美術、
 `Nicolas Pflug` 是 Erik Truffaz 本張的製作人（**第 1620-A 條同一人**）。
 ⚠ **Jeff Lorber 與 Andrew Hill 兩張的最高名次在 OCR 裡被打散、查不到——正文不得寫第幾名。**
+
+## 第 1680-A 條（主線）：**c-160 研究 b 組交件——20 張全 full、facts 157 條 src 全過、QA 零警告；串流再救回 1 張 → 36／38**
+
+**六層證據**：① 紙本 **9／20**（**與策展層同樣是那 9 張美國盤，13 張歐陸盤 0**
+——**第 1650 條的「先數美國盤」完全成立，兩層獨立驗證同一個結論**）｜② **Discogs 20／20（地基）**｜
+③ 廠牌官網 **0（連九組）**｜④ 店面 9／20｜⑤ **AllMusic 0（連九組）**，allaboutjazz 也 403｜
+⑥ ⚠⚠ **維基 14／20——本線新高**（獎項五筆、兩筆改判、Moulin 卒年、Töykeät 解散、Truffaz 客座反證全靠它）｜
+另 pulitzer.org 1。
+
+✅ **Mingus《Cornell 1964》救回 → `720113157`**：**主線的 UPC 掃描全 0，但 `search` 端點查得到。**
+六市場逐軌驗證，**十軌全部回得到 `previewUrl`**，與實體十軌逐軌對得上；第 646 條零重複。
+⚠ **`collection` 的 `trackCount` 欄寫 11 是 Apple 的欄位毛病，實際十軌**——**不要拿它當軌數證據。**
+**→ 第 1614 條的固定步驟再補一句：UPC 全 0 不代表店面沒有，`search` 與 `lookup?upc=` 要都跑。**
+
+❌ **兩張確認是單張版權缺口，已停手**（第 1620-D 條）：
+- **Ron Carter《Dear Miles,》**：兩個條碼（含**從美版 matrix 反推出來的東芝EMI 條碼 `4988006843905`**）各掃 27 市場全 0；
+  **藝人目錄 us 150 張／jp 174 張、2004–2010 前後作密集在架，唯獨這張缺。**
+- **Di Battista《Trouble Shootin'》**：三個條碼各掃 27 市場全 0，**再用三首原創曲名做單曲層搜尋，四市場零命中**；
+  **藝人目錄裡 EMI／Parlophone France 時期五張（1997–2004）全在架、2021 年後 Warner 時期也在，只缺這張 2007 年的 Blue Note 盤。**
+
+**年份覆核**：⚠ **Ron Carter《Dear Miles,》→ 2006 的目錄號序列從策展層的 4 個號擴到 6 個號，全部單調遞增**
+（TOCJ-68071 `2006-01-12` → 68072 `2006-02-22` → **68073 本作 `2006-07-19`** → 68074 `2007-03-21`
+→ 68075 `2007-08-08` → 68076 `2007-10-24`）。
+⚠ **順帶查到 TOCJ-68075 就是 Ron Carter 的下一張 Somethin' Else 盤《It's the Time》**
+——**美版《Dear Miles,》上市那週，他為同一家日本廠牌錄的下一張已經進了錄音室。**
+**Van Hunt《Popular》→ 2017** 採維基現行寫法（2007 年 12 月廠牌決定不發、2017 年 8 月正式上架）。
+
+## 第 1681 條（主線，**重要；整批要統一調度**）：**c-160 有四張卡上第 50 屆葛萊美，而且兩組各佔兩張**
+
+| 卡 | 組 | 獎項 | 結果 |
+| --- | :---: | --- | --- |
+| **Terence Blanchard《A Tale of God's Will》** | b | Best Large Jazz Ensemble Album | ✅ **得獎** |
+| 同上，以第 2 軌〈Levees〉 | b | Best Jazz Instrumental Solo | ❌ 入圍未得（得主 Michael Brecker〈Anagram〉，**辭世後追頒**） |
+| **Charles Tolliver《With Love》** | b | Best Large Jazz Ensemble Album | ❌ **入圍未得——輸給的正是同組的 Blanchard** |
+| **Bill Charlap Trio《Live at the Village Vanguard》** | b | Best Jazz Instrumental Album | ❌ 入圍未得（得主 Michael Brecker《Pilgrimage》） |
+| **Joe Lovano & Hank Jones《Kids》** | **a** | **同屆同項** | ❌ 入圍未得（**同一個得主**） |
+
+**→ 主線統一調度（要寫進鉤子層與寫作層兩層的派工詞）**：
+1. **「第 50 屆葛萊美」這條線在全批只准 1 張當主軸，指定給 `Terence Blanchard|A Tale of God's Will`**
+   （它是唯一的得獎者，而且同時有一項入圍）。
+2. **`Charles Tolliver|With Love` 要寫明「輸給的是同批的 Blanchard」**，不得寫成「唯一入圍」。
+3. **`Bill Charlap Trio|Live at the Village Vanguard`（b）與 `Joe Lovano & Hank Jones|Kids`（a）
+   同屆同項同時入圍——兩張都不得寫「唯一入圍」，兩張的 risk 必須互指。**
+   ⚠ **這兩張分屬不同組，鉤子層與寫作層都各有兩支代理，四份派工詞都要帶這句。**
+
+**另外三個屆次／作品陷阱**：
+- ⚠ **Stacey Kent《Breakfast on the Morning Tram》入圍的是第 51 屆（2009）Best Jazz Vocal Album**
+  （得主 Cassandra Wilson《Loverly》）——**碟是 2007 年發的、獎隔了一屆，寫成「2007 年的葛萊美」就錯。**
+- ⚠ **Van Hunt 2007 年確實拿過葛萊美，但那是〈Family Affair〉**（與 John Legend、Joss Stone 合唱，2006 年 Sly 致敬輯）
+  ——**絕不可寫成《Popular》的獎。**
+- ⚠ **BB-2007-02-10 p55 名單裡的「Flow: Living In The Stream Of Music」是 c-159《Flow》的影像作品、
+  「Mingus Big Band《Live in Tokyo》」是第 49 屆遺作樂團的碟**——**兩者都不是本組這兩張的獎。**
+
+## 第 1682 條（主線，**事實硬錯誤八處**）
+
+1. ⚠⚠ **Truffaz《Arkhangelsk》：Sophie Hunger 與 Sly Johnson 在這張碟上不存在。**
+   兩個 Discogs 零售條目的逐軌欄＋英文維基三層一致：客座只有 **Ed Harcourt（2、4、5 軌）、Nya（3 軌）、Christophe（8 軌）**。
+   **正文絕不可出現那兩個名字。**（主線已驗證 `c160-b.json` 的 facts 零命中。）
+2. ⚠⚠ **Petrella《Kaleido》：Indigo 4 的第四人是 Francesco Bearzatti**（次中音／單簧管，**無軌號限制＝固定團員**），
+   策展層整個漏掉，**還把只在六軌客座的 Michele Papadia 當成團員**。
+   另**〈Almost Cried〉是 Duke Ellington 的曲**（不是原創）、**John De Leo（人聲，13、15 軌並共同作曲）也漏了**。
+   ⚠ **Bearzatti 與 c-159 a 的《Indigo 4》是同一支團，兩張卡編制必須一致。**
+3. ⚠⚠ **Ron Carter：開場〈Gone〉是 Gil Evans 的曲子**，不是 Carter 自己的（他只寫了〈Cut and Paste〉與〈595〉）。
+   **寫錯反而丟掉「整張都在致敬同一條線」這個最好的切口。**
+4. ⚠⚠ **Fresu Quintet：〈Almeno tu nell'universo〉是 Maurizio Fabrizio 作曲（1974）、Bruno Lauzi 作詞**，
+   不是 Mimmo Cavallo；Mia Martini 1989 聖雷莫首唱、24 首裡第 9 名並拿下評審團獎。
+5. ⚠⚠ **Di Battista：「Fabrizio Bosso 在四軌客座」與它自己列的軌號打架**——Discogs 逐字 `tracks 2, 4, 5, 8 to 10` ＝**六軌**。
+   ⚠ **同一個錯也被抄進 Bosso 那張卡的 `curatorWhy`，兩張都要改**
+   （**第 1560-AB 條那一族的第八例，而且是跨卡傳染的第一例**）。
+6. ⚠ **Werner：「十軌裡八首自作」不對**——Werner 一人掛七軌、與 Pickett 共同一軌、Pickett 一人一軌、翻唱一軌。
+7. ⚠ **Trijntje：Bacharach 實際彈琴的是第 5、8、10 軌**（〈God Give Me Strength〉不在其中）；
+   **編曲是 Patrick Williams 十軌、Mendoza 四軌、Peter Tiehuis 第 15 軌，Mendoza 只是指揮。**
+8. ⚠ **Moulin 的三個軌名抄的是 MB、與盤面不同**：〈Hazard〉（非 Hazard Mind）、〈Everyday Is D-Day〉、
+   〈Me & My Ego〉、〈Lord, You **Make** Me So Weak〉。
+
+## 第 1683 條（主線）：**策展層漏掉的七件好料**
+
+1. ⚠⚠ **Trijntje 第 8 軌同名曲的口琴是 Toots Thielemans 吹的**（布魯塞爾 Studio Caraïbes 單獨錄）
+   ——**整張碟最大的一個名字。**
+2. ⚠⚠ **Bosso 的四位客座全數漏掉**：**Dianne Reeves 唱第 3 軌同名曲**（⚠ **她池中有十張卡，這是人名層的撞陳列**）、
+   Di Battista 高音薩克斯風（4、9 軌）、Sergio Cammariere（6 軌唱／10 軌自彈自唱）、Bebo Ferra 吉他（7、8 軌）。
+   ⚠⚠ **靠日版 TOCJ-66376 救回逐軌樂器欄，義版只標 Featuring——第 1620-E 條「日版救回編制」第二次成立。**
+3. ⚠⚠ **Floratone：Ron Miles（短號）與 Eyvind Kang（中提琴）同在 1、2、3、7、8 五軌，Bill Frisell 本人在第 3 軌唱。**
+   另 Discogs 把四位（含兩位製作人）一起掛 `Songs By`——**製作人是共同作曲者不只是剪接者。**
+4. ⚠⚠ **Mingus：內頁文字是 Gary Giddins 寫的**（Billboard 逐字引了兩句）。
+   ⚠ **本作的產品經理 Perry Greenfield 也做過 2005 年那張 Monk／Coltrane《At Carnegie Hall》**（＝c-159 a 的卡）
+   ——**兩張把「Blue Note 靠檔案遺珠連做兩次話題盤」接成一條線。**
+5. ⚠⚠ **Tolliver 的大樂團名單策展層只寫了五人**，實際還有首席小號 **Dave Guy**、**David Weiss** 等十餘人，
+   **末軌的小號獨奏給了當時還是新人的 Keyon Harrold，不是團長**；內頁文字共同作者是電視主持人 **Gil Noble**。
+6. ⚠⚠ **`Burton Yount` 做了 Tolliver 這張的封面——他在 c-158 四張、c-159 四張，c-160 再添一張，三批連續。**
+7. ⚠ **Moulin**：**Philip Catherine 的電吉他（5、6 軌）與 Tanga Rema 的 mouth music（5、10 軌）兩位客座全漏**；
+   **Moulin 2008-09-26 因喉癌辭世，本作是他生前最後一張個人專輯**（屬「與作品直接綁定」那一類，**時序要寫明**）。
+
+**跨卡同一批人**：製作人 **Nicolas Pflug** 在 Truffaz 與 Di Battista 兩張都在，加上 c-159 的《Saloua》《Intimidade》
+＝**本線第四次**；母帶 **Greg Calbi** 同時做了 Floratone 與 Gino Paoli；混音 **Roberto Rosu** 同時做了 Gino Paoli 與 Di Battista。
+⚠ **Trio Töykeät 的錄音是向 Zen Master Records Oy 授權來的，不是 Blue Note 自己錄的。**
+
+## 第 1684 條（主線）：**載體、序數與來源衝突**
+
+**載體（黑膠店的卡）**：**20 張裡只有 1 張碟有同期黑膠，而且是兩筆**——
+**Marc Moulin《I Am You》2007 年比利時 LP（`0946 3 82976 1 1`）＋同年 12 吋混音單曲《I Am You (Remixes)》**
+（A 面專輯版／B 面 Recto、Verso 兩個混音）。**2015 年的 Music On Vinyl 才是再壓。**
+其餘 19 張同期全部只有 CD；後來的再壓三筆（Truffaz 2017、Stacey Kent 2012、Trijntje 2021）**正文提黑膠必須寫明是再壓**。
+
+**序數與無來源宣稱（第 1620-N 條，本組抓到八處，全部沒寫進 facts）**：
+Bosso「Blue Note 第二張領班盤」、Fresu Devil「第二張」（**Discogs 上本作反而是該編制最早的一張**）、
+Töykeät「在 Blue Note 的第三張」、Fresu Quintet「帶了二十年」、Marsalis〈Where Y'All At?〉「點名越戰世代」、
+Fresu Devil「盤名向 Kubrick 致敬」、Gino Paoli「Sellani 在部分軌接鋼琴」、Werner「Pickett 是 SNL 樂團領班」。
+✅ **有紙本可引的序數只有一個**：**Tolliver「his first for the label as a leader」（BB-2007-01-13 p36），可寫。**
+
+**來源衝突（已就地解決）**：
+- ⚠ **Charlap 的錄音年**：網路二手介紹說是 Village Vanguard **七十週年（2005）**的演出
+  ——**Discogs 歐版與日版兩個獨立條目都逐字寫 2003 年 9 月**，採 2003，**正文不得寫七十週年**。
+- ⚠ **Marsalis**：BB-2007-03-10 的評介把普立茲那部作品寫成「**1995** epic《Blood on the **Field**》」
+  ——**正確是《Blood on the Fields》、1997 年**（pulitzer.org）。**facts 只引它的評語、不引它的年份與拼法。**
+- **兩條未採信**：Stacey Kent 的 2007 ISC 爵士組首獎與 Ishiguro 的《Desert Island Discs》（都只有二手來源）。
+- ⚠ **Kenny Werner**：多篇二手樂評把本作與他喪女之痛連在一起，**維基把那條明確繫在 2010 年的另一張碟上、
+  實際打開的 PopMatters 樂評裡也沒有那句話**——**依單一來源不採＋逝者克制兩條，不寫。處置正確。**
+
+⚠ **第 1609 條「只剩 Discogs 一層」六張裡最極端的是 `Fresu Devil Quartet|Stanley Music!`**：
+**Discogs 條目的 notes、companies 兩欄全空，credit 只有四位團員——連製作人、錄音師、錄音室、錄音日期、
+封面設計都沒有。** Marsalis 的條目同樣三欄全空，**但他有三篇紙本頂著。**
