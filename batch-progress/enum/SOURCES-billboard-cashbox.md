@@ -1484,3 +1484,40 @@ Carnegie Hall performance were found in the Library of Congress**」（**判 (�
 - **到此合計覆蓋：Billboard 1955→2013**（2005 缺 3 期、2006／2007／2008 各缺 1 期、2009 缺 2 期；
   **2010–2012 以索引頁為準、無缺；2013 全 50 期到齊**）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2014 以後尚未抓，
   且 2014–15 的檔名形狀再變（`BB-2014-49-12-20--Double-Issue.pdf`，見 c-162 a 第 1749 條）。**
+
+---
+
+## Billboard 2014／2015（c-163 策展 a 新抓入庫，2026-09-19）
+
+- **檔案**：`billboard-bn-2014-ocr.txt.gz`（**43 期**、2.42 MiB 壓縮／5.75 MiB 原文）、
+  `billboard-bn-2015-ocr.txt.gz`（**40 期**、1.87 MiB 壓縮／4.35 MiB 原文）。
+  **合計 83 期、1,586 命中頁、零 FETCH-FAIL、零 PARSE-FAIL。**
+- ⚠ ⚠ **索引頁的網址在 2026-09-19 改了**：c-162 a／b 寫的
+  `https://www.worldradiohistory.com/Billboard-Magazine.htm` **現在回 301**，
+  **正確位置是 `https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm`**
+  （PDF 本身仍在 `Archive-All-Music/Billboard/00s/<年>/`）。**`curl -L` 就能跟過去，但正則要對新頁面跑。**
+- ⚠ ⚠ **2014–15 的檔名形狀與 2013 以前完全不同**，枚舉週六在這兩年**完全無效**：
+  **2014 一律 `BB-2014-<期號>-<月>-<日>.pdf`**（期號是刊期序號不是週次，`BB-2014-01-01-18.pdf`＝第 1 期 1 月 18 日），
+  **另有兩種異形**：`BB-2014-05-17.pdf`（**缺期號**）、`BB-2014-49-12-20--Double-Issue.pdf`／`BB-2014-53-01-04--Grammy-Issue.pdf`；
+  **2015 再加三種尾綴**：`-Issue-NN`（`BB-2015-24-07-25-Issue-21.pdf`）、`-Double-Issue-NN`、`-(2)`（`BB-2015-04-02-07-(2).pdf`），
+  **而且有一檔用舊前綴 `Billboard-2015-02-14.pdf`。**
+  **→ 這兩年一定要走索引頁撈 URL，不可能用日期枚舉猜到。**
+- **檔數**：**2014 年 43 期、2015 年 40 期**（Billboard 2014 起改成每年約 43–45 期的刊期制，
+  雙期號與 Grammy 特刊各算一期）。**索引頁上就只有這些，不是抓失敗。**
+- **抽字法**：`pymupdf` 抽文字層、**沒有跑 OCR**（六支並行，83 期下載＋抽字約四分鐘）。
+- **關鍵字集（41 個）**：通用詞 `blue note`
+  ＋ **c-163 a 組的 23 個掛名與盤名片段**（`elvin jones`／`chico hamilton`／`horace silver`／`turrentine`／`grant green`／
+  `quasimode`／`julia kadel`／`leon russell`／`tim hagans`／`alsmann`／`annie lennox`／`almazan`／`jason moran`／`kuroda`／
+  `akinmusire`／`jose james`／`josé james`／`hutcherson`／`sanborn`／`defrancesco`／`billy hart`／`yamanaka`／`jazztronik`／
+  `sphères`／`spheres`／`vintage trouble`／`charles lloyd`／`rising son`／`wild man dance`／`hopeful rd`／`life journey`／
+  `nostalgia`／`rhizome`／`enjoy the view`／`imagined savior`／`while you were sleeping`／`fats waller`／
+  `audible architecture`／`somethin`／`vamos la`／`im vertrauen`／`am broadway`／`soul delivery`）。
+  ⚠ ⚠ **這一份的關鍵字集比 2010–2013 那幾份窄**（沒有收 `top jazz`／`/blg`／`tocj` 這類通用榜單詞），
+  **因為 2014 起 Billboard 的榜單廠牌欄已不再印 `/BLG` 尾碼**；
+  **b 組與 c-164 以後若要查別的碟，放寬關鍵字重抓即可——PDF 不必重新下載的做法對這兩年不成立**
+  （本批只保留了命中頁，沒有留整份 PDF）。
+- ⚠ **2014／2015 兩年的 Blue Note 在 Billboard 上的能見度明顯低於 2013**：
+  **c-163 a 的 18 張收件裡只有 6 張有命中、3 個街頭日**（詳見 `batch-progress/c163/rulings.md` 第 1786 條）。
+  **`Top Jazz Albums` 榜在 2014 起大幅縮版、多期整年不印**，這是命中率下滑的主因，不是抓漏。
+- **到此合計覆蓋：Billboard 1955→2015**，Cash Box 1960-11→1996-11（停刊）。
+  ⚠ **2016 以後尚未抓**；**索引頁上 2016 起的檔名再變一次，後批一樣要先撈索引頁。**
