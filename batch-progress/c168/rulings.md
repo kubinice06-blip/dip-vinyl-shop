@@ -431,3 +431,203 @@ Blue Note All Stars 與 c-169 那筆確為兩團 ✓（第 2083 條）、`catno`
 (己) 只有影音載體退件 0（**The Manhattan Project 有 VHS／雷射影碟版，但本卡釘的是 1990 年的唱片 RG，不是 2005 年那張 DVD RG**）。
 
 **第 315 條：prop 18 ＋ 退表 0 ＝ slice 18 ✓。**
+
+---
+
+# c-168 a 研究層裁定（編號 2641–2690；本棒用到 2641–2653）
+
+## 第 2641 條（**推翻策展層第 2091／2096 條；本棒最重要的一筆**）：**三張「錄音日期兩邊都沒有」全部查到了——形狀是「查錯版本」，不是「查不到」**
+
+策展層點名要研究層補的三張，**三張都補到了，而且兩張的答案本來就在 Discogs 上**：
+
+| 碟 | 錄音日期 | 出處 | 為什麼策展層沒看到 |
+|---|---|---|---|
+| **Bobby Watson & Horizon《Post-Motown Bop》** | **1990-09-17／18** | Discogs **日版 TOCJ-5286（19360981）** notes 逐字 `Recorded digitally September 17 & 18, 1990` | 美版條目 4876807 的 notes 只有 `Total time 63:48` 與 `Printed in Canada` |
+| **Stan Tracey Octet《Portraits Plus》** | **1992-03-30** | Discogs **另一個英版 CD 條目 16399932** notes 逐字 `Recorded on March 30th 1992` | 黑膠 3850228 的 notes 全空、CD 11592521 只寫總長與書背廠牌 |
+| **Frank Emilio Flynn《Reflejos Ancestrales》** | **1998 年 11 月、哈瓦那** | `anapapaya.com` 的西語樂評頁逐字 `Grabado en La Habana en noviembre de 1998`，頁尾另抄錄了整份內頁製作與編制表 | Discogs 兩個條目的 notes 都只有 `Printed in US`／`Printed in EU` |
+
+**→ 判準（給 c-169／c-170）：`notes` 欄要逐一版本掃，不能只看美版或只看 MB 釘的那一版。**
+**「這張碟的錄音日期查不到」與「我只查了一個版本的 Discogs 條目」在回傳裡長得一樣**
+——**這正是第 259／2088 條那一族在 `notes` 欄的第三個變形。** 前兩個變形是 `country` 欄與 `first-release-date`。
+
+---
+
+## 第 2642 條（**順帶解掉策展層第 2095 條的疑問**）：**`Portraits Plus` 的 Discogs `released` 欄填的是錄音日，不是發行日**
+
+策展層記「Apple 的 releaseDate 1992-12-14 與 Discogs 的 1992-03-30 差九個月」，掛著沒判。
+**本棒查清楚了**：`1992-03-30` 是**錄音日**——同一張碟的另一個英版 CD 條目 16399932 的 notes 逐字寫 `Recorded on March 30th 1992`，
+而英文維基的條目開頭逐字 `It was released in December 1992`，與 Apple 的 1992-12-14 同向。
+**Discogs 11592521 的建檔者把錄音日填進了 `released` 欄。**
+⚠ **`year` 仍取 1992，不受影響**（錄音與發行同年）。**但下游不得把 1992-03-30 寫成發行日。**
+
+---
+
+## 第 2643 條（**推翻策展層第 2095／2096 條的軌數判讀**）：**《Blue Spirit》是十軌，九軌的是加拿大壓片**
+
+策展層寫「Apple 10 軌，與 MB／Discogs 的 9 軌不符」。**實掃結果相反**：
+
+| 來源 | 軌數 | 首軌 |
+|---|---:|---|
+| **Discogs 美版 6613901** | **10** | Hank Mobley〈A Caddy For Daddy〉（該條目把曲名誤植成 `A Candy For Daddy`） |
+| **Discogs 荷蘭版 4286775** | **10** | 同上 |
+| **jazzdisco 的 Blue Note All Stars 錄音資料** | **10** | 同上 |
+| Discogs 加拿大版 30033250 | 9 | 〈Twist And Out〉（Mobley 那首被拿掉） |
+| MB 76d6497a | 9 | — |
+
+**→ Apple 的十軌才是與美國原版一致的那一個；九軌是加拿大壓片的縮編。**
+**判：正文可以寫「十軌」，並可寫「唯一一首非團員原創的是 Hank Mobley 的曲子」。** ⚠ **可逆**（只是 facts 的一句）。
+
+---
+
+## 第 2644 條（**推翻卡單 `label` 欄的一項**）：**《Spiral Staircase》美版黑膠是六軌，不是七軌**
+
+卡單 `label` 欄寫「Blue Note B1-93006（US 1989 12" Vinyl **7 軌**）」。
+**Discogs 美國原壓 2988705 的曲目表只有 A1–B3 共六軌**（〈Gerri-Ann〉〈Samba LaRue〉〈Input〉〈The Perpetrator〉〈Spiral Staircase〉〈North Of The Border〉）。
+Apple us 1767694352 是七軌，落差應在 CD 版（CDP 7 93006 2）。
+**判：研究稿不寫軌數，下游正文也不要寫。** ⚠ **可逆。** ⚠ **這與第 2095 條記的「Live at Mt. Fuji 的 Apple 七軌 vs 黑膠五軌」同形：一九八〇年代末 Blue Note 的 CD 版常比黑膠多一到兩軌，軌數不能跨載體引用。**
+
+---
+
+## 第 2645 條：**③ 來源層在 1985–1999 段的實測命中率——派工信「把 Discogs 整筆 credits 當主力」完全正確**
+
+| 查法 | 本批命中 | 說明 |
+|---|---|---|
+| **`api.discogs.com/releases/<id>` 整筆** | **18／18** | **絕對主力。**不需 token，未認證亦可讀，實測約 2.6 秒一發不會被擋。逐軌 `extraartists`、`notes`、`companies`、`identifiers` 四欄合起來就能撐起八成的 facts |
+| **repo 內 Billboard／Cash Box 紙本 OCR** | **11／18** | **本段的第二主力**，而且是唯一能給榜位、樂評原句與同期產業脈絡的來源 |
+| 英文維基 | **6／18** | 只有 Nu Blaxploitation／Portraits Plus／The Manhattan Project／Contact!／So What? 五張有作品條目，另靠藝人條目補 |
+| `bluenote.com` WP posts `search=` | **1／18** | 見第 2646 條 |
+| `grammy.com` 藝人頁 | 1／18 | Contact! 的入圍狀態 |
+| 西語樂評站（`anapapaya.com`） | 1／18 | Reflejos Ancestrales 的錄音日期與完整編制 |
+| `jazzdisco.org` | 1／18 | Blue Note All Stars 的 session 表 |
+| `music.apple.com` | 8／18 | 沿用策展層第 2095 條的結果，未重查 |
+| `universal-music.co.jp` | **0（未動用）** | 本批十八張沒有一張是 UMJ 現役商品，品番全是 TOCJ-／CJ32-／RJ28- 的絕版號段 |
+| **`allmusic.com`／`allaboutjazz.com`** | **0／2，兩站皆 403** | 見第 2651 條 |
+
+**→ 給 c-169／c-170：1985–1999 段的 facts 預算要照「Discogs 整筆 ＋ 紙本 OCR」來編，不要指望廠牌官網。**
+
+---
+
+## 第 2646 條（**`bluenote.com` 在本批唯一一次有用，而且不是用藝人名查到的**）：**關鍵字要試「人名」，不只是「藝人名」**
+
+十八張逐張查 `bluenote.com/wp-json/wp/v2/posts?search=`，**十七張全是假陽性**
+（`Out of the Blue` 回五筆 2026 年新聞稿、`Superblue` 回 Out of/Into 與 Blue Note Quintet、`Bobby Watson` 回 Sweet Pea Atkinson，
+`Ray Barretto`／`Stan Tracey`／`Frank Emilio Flynn`／`Don Byron Nu Blaxploitation` 皆 0 筆）。
+
+**唯一有用的一筆是 `search=Namekata`**，命中 2020-03-14 的 `HITOSHI NAMEKATA: A REMEMBRANCE`
+（`https://www.bluenote.com/hitoshi-namekata-a-remembrance/`，Michael Cuscuna 執筆）。**這一篇一次餵飽了本批三條線**：
+1. **富士山音樂節的緣起與 1986 年首屆的颱風**（第 3 張《Live at Mt. Fuji》就錄在那三天）；
+2. **Somethin' Else 1988 年在 EMI 的 Blue Note 部門內部創立**，文中第一個被點名的簽約藝人就是 Ralph Peterson（第 4／7／11／16 張都在這條線上）；
+3. 1985-02-22 的 `One Night With Blue Note`（Town Hall）是整串事件的起點。
+
+**→ 判準：查一九八〇、九〇年代的廠牌史，關鍵字要放製作人／A&R／廠牌主管的人名**
+（`Cuscuna`、`Lundvall`、`Namekata`、`Belden`、`Evered`），**不要只放藝人名與盤名。**
+⚠ **這條與派工信第四節的「關鍵字要把藝人名放最前面」不牴觸**——那條講的是藝人有專頁的情形；
+**1985–1999 段的藝人根本沒有專頁，能命中的只有廠牌自己的回顧文。**
+
+---
+
+## 第 2647 條：**Billboard 與 Cash Box 的榜位欄位順序相反，混用會把名次讀錯一格**
+
+本批要判七張的榜位，**兩刊的 OCR 行序不同，必須分開讀**：
+
+- **Billboard**：`<本週名次> <上週名次> <在榜週數> <藝人> <廠牌 目錄號> <盤名>`——**數字在藝人名之前**。
+  例（BB-1991-04-13）：`8 6 25 MACEO PARKER … / O 9 5 BOBBY WATSON BLUE NOTE 95148 /CAPITOL POST MOTOWN BOP / 1 12 3 CANNONBALL ADDERLY …`
+  → Bobby Watson **本週第 9 名**（前後兩筆是 8 與 10，本週名次被圈起來所以 OCR 成 `O`）。
+- **Cash Box**：`<本週名次> <盤名>（<廠牌 目錄號>）<藝人> <上週名次> <在榜週數>`——**上週與週數落在藝人名之後、下一筆名次之前**。
+  例（CB-1989-06-17）：`… 8 MING'S DYNASTY … David Murray 8 9 | 9 SUPER BLUE (Blue Note 91731) Super Blue 10 9 | 10 IN A SENTIMENTAL MOOD …`
+  → Super Blue **本週第 9 名、上週第 10 名、在榜 9 週**。
+
+**本批查到的榜位（全部是 Top Jazz Albums）**：
+
+| 碟 | 刊 | 進榜 | 最高 |
+|---|---|---|---|
+| Out of the Blue《O.T.B.》 | Billboard | — | **第 29 名**（BB-1986-04-12） |
+| 同《Inside Track》 | Billboard | 第 37 名（BB-1986-10-11） | **第 31 名**（BB-1986-11-08、11-22） |
+| 同《Live at Mt. Fuji》 | Billboard | 第 19 名（BB-1987-08-29） | **第 9 名**（BB-1987-10-10、10-24）**本團最佳** |
+| 同上 | Cash Box | 第 23 名（CB-1987-09-26） | 第 20 名（CB-1987-10-10） |
+| Superblue《Superblue》 | Billboard | 第 15 名（BB-1989-04-15） | **第 9 名**（BB-1989-05-27） |
+| 同上 | Cash Box | 第 26 名（CB-1989-04-22） | **第 9 名**（CB-1989-06-17） |
+| Ralph Peterson Quintet《V》 | Cash Box | — | 第 29 名（CB-1989-06-03，前一週第 25 名） |
+| The Manhattan Project | Billboard | BB-1991-01-05 | **第 9 名**（BB-1991-02-02） |
+| Bobby Watson《Post-Motown Bop》 | Billboard | 第 13 名（BB-1991-03-16） | **第 9 名**（BB-1991-04-13） |
+
+⚠ **《Portraits Plus》《Blue Spirit》《Contact!》《My Summertime》《So What》《Reflejos Ancestrales》《Volition》《Ornettology》《Superblue 2》《Spiral Staircase》十張在兩刊都沒有榜位**
+（有的只有樂評或新片列表）。**《Portraits Plus》是本批唯一連新片列表都沒有的一張**——它是英國盤，
+而且目錄號 `80696` 在美國紙本上全部撞到 Sony 的 Roberto Carlos《Super Heroe》。
+
+---
+
+## 第 2648 條（**獎項逐項分開查，兩筆都是入圍不是得獎**）
+
+| 碟 | 獎項 | 屆次／年 | 結果 | 該屆得主 | 憑據 |
+|---|---|---|---|---|---|
+| **Stan Tracey Octet《Portraits Plus》** | **Mercury Prize 入選名單** | **1993** | **入圍，未得獎** | Suede《Suede》 | 維基 Mercury Prize 的 1993 名單（共九張，同榜有 PJ Harvey、New Order、Sting、Stereo MCs、Gavin Bryars） |
+| **Ray Barretto & New World Spirit《Contact!》** | **Best Latin Jazz Performance** | **第 41 屆（1999）** | **入圍，未得獎** | Arturo Sandoval《Hot House》 | `grammy.com` 藝人頁逐字 NOMINEE |
+
+⚠ **同一個掛名在同一類別另有一次更早的入圍**：第 37 屆（1995）的《Taboo》，同樣未得獎。
+⚠ **維基的 Contact! 條目只寫 `was nominated`、沒寫結果**；**本棒以 grammy.com 的逐筆狀態欄為準**
+——這正是 base 檔「獎項要分入圍／得獎逐項查」那一條的標準用法。
+
+---
+
+## 第 2649 條（**裁定；可逆**）：**Discogs 的作曲欄在《Superblue 2》有兩處與通說相反，處置是 facts 只列曲名**
+
+Discogs 30376286／9741220 把〈Flight To Jordan〉記成 **Duke Jordan**、把〈Blue Minor〉記成 **Kenny Dorham**；
+策展層第 2092 條則寫成 **Duke Pearson**〈Flight to Jordan〉與 **Sonny Clark**〈Blue Minor〉（與通說一致）。
+
+**判：facts 只列這兩首的曲名、不指定作曲者**，其餘八首照 Discogs 逐字寫。三個理由：
+1. **可逆**（少寫兩個人名，不影響卡片結構）；
+2. **兩邊都只有單一來源**，base 檔明文「只有單一來源支撐的人名請交叉驗證再採用，驗不到就略去」；
+3. **這張碟的敘事重點是「十軌全部來自 Blue Note 自家曲庫」，不靠逐首的作曲者名撐**。
+⚠ **給下游：不要替這兩首補作曲者。**
+
+---
+
+## 第 2650 條（**推翻 Discogs 的一處樂器歸屬**）：**《Reflejos Ancestrales》的 Barbarito Torres 彈的是 laúd，不是長笛**
+
+Discogs 美版 13744554 與歐版 9531044 的 credits 都把 `Barbaro Torres` 記成 **Flute**。
+**唱片內頁的編制表（由 `anapapaya.com` 的樂評逐項抄錄）寫的是 `Barbarito Torres: laúd`**，
+而且該表同時補齊了 Discogs 完全沒有的 **貝斯（William Rubalcaba）、兩把小提琴（Lázaro Jesús Ordóñez／Pablo Mesa Suárez）、
+康加（Tata Güines）、güiro（Enrique Lazaga Varona）與兩位合聲**——Discogs 那七條 credits 只是內頁的一小塊。
+
+**判：採內頁。** ⚠ **這張的編制是一支 charanga（木笛＋雙小提琴＋刮瓜＋定音鼓），不是爵士四重奏**，
+正文若照 Discogs 寫成「兩把長笛」會把整張碟的樂種寫錯。⚠ **可逆。**
+
+---
+
+## 第 2651 條：**`allmusic.com` 與 `allaboutjazz.com` 在雲端容器一律 403（Cloudflare），不要再排進來源順位**
+
+兩站各試兩次（預設 UA ＋ 桌面瀏覽器 UA ＋ `Accept-Language`），**四次全部 403，回傳的 body 是 `Just a moment... Enable JavaScript and cookies to continue`**。
+**但這兩站的內容仍然拿得到——透過英文維基的引用段落**（《Nu Blaxploitation》《Portraits Plus》《Contact!》《So What?》四張的 AllMusic 評語都是這樣取得的，`src` 掛維基）。
+**→ 給 c-169／c-170：要 AllMusic 的評語，直接查維基的作品條目，不要浪費回合在 403 上。**
+
+---
+
+## 第 2652 條（**派工信與 base 檔／既有裁定的牴觸之處；依規定回報**）
+
+**派工信沒有與 base 檔牴觸的句子**，但有**三處轉述與實況不符**：
+
+1. ⚠ **派工信第三節第 3 點寫「錄音日期有 3 張 Discogs 與 MB 兩邊都沒有」**——**這一句錯了兩張**。
+   `Post-Motown Bop` 與 `Portraits Plus` 的錄音日期 **Discogs 上有**，只是不在策展層查的那個版本條目上（第 2641 條）。
+   這一句原本出自策展層第 2091 條，派工信照抄。
+2. ⚠ **派工信第三節第 2 點寫「封面缺 9 張、另 4 張的圖來自再發或非原盤 release」**——數字成立，
+   但 **策展層第 2096 條的表格裡《Superblue 2》佔了兩列**（c541f4a0 的 2 圖其實是《Superblue》第一張的美版 CD，72c6201f 才是《Superblue 2》），
+   表格的排版讓人誤以為《Superblue 2》有四張圖。**不影響處置，記一筆。**
+3. ⚠ **派工信第四節寫「`bluenote.com/wp-json/wp/v2/posts?search=` 是主力」**——
+   **那是 c-166／c-167（2020 年代新盤）的實測結論，在 1985–1999 段不成立**（第 2645／2646 條：十八張裡只有一張、而且是靠製作人姓名查到的）。
+   **派工信第四節後段自己也寫了「本批請把 Discogs 整筆 credits 當主力」，兩句並存；本棒照後一句做，結果證明後一句對。**
+
+⚠ **派工信第三節第 1、4、5、6 點與第五節全部經實查成立**：串流七張真缺不必再查 ✓、三筆年份改判覆核成立 ✓、
+`Nu Blaxploitation` 釘 `6aab4e1b` ✓、`slice`／`why` 的數量斷言逐條重掃（本棒另抓到軌數斷言錯兩處，見第 2643／2644 條）✓。
+
+---
+
+## 第 2653 條（**第 1803-B 條的交件聲明**）：**工作區當下的 `desc-tools/batches/research/c168-a.json` 才是交件版**
+
+18 筆、每筆 12 條 `facts`（合計 216 條），**全部 `src` 為完整 `https` 網址**，`status` 與 `coverage` 兩欄並存同值 `full`，
+`hookCandidates` 每張 2 條，key 順序與卡單逐字一致。
+- `cd desc-tools && node qa-batch.mjs research c168` → **`key 與卡單完全一致 ✓`／`全部通過 ✓`／exit 0，旗標 0**。
+- **字元自檢全部用程式跑**（第 1808 條）：qa-batch 同款簡體表 0 命中；
+  **另用 `opencc` 的 `s2t` 全檔轉換做獨立覆核，25 處差異全是台灣標準本來就在用的異體對（群→羣、台→臺、才→纔、只→隻、吃→喫、了→瞭、克→剋），無一是簡體**；
+  西里爾／希臘／諺文／天城體／假名 0 命中；日文新字體對照表 0 命中；千分位逗號 0；中文之間的半形逗號 0。
+- ⚠ **`互指?` 依第 1807-B 條不在 research 階段輸出，本棒未判。**

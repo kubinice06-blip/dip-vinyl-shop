@@ -2631,3 +2631,47 @@ b 組倒回去量 a 組 7 張：**min 217／max 227／中位 225 三項逐項對
 ⚠ **切批界線刻意不按年代分**（20 筆擠在 1989–2005），**改成單純依年份排序後對切**，
 理由：本批的風險不是年代，是**同一位藝人連續漏**（Ron Carter 3、Jackie McLean 2、Tommy Smith 2），
 **`Ron Carter` 三張刻意跨在 a（1994／1997）與 b（2001）兩組**——**掛名要兩組一致，故意讓兩邊都得做一次判定並互相對照。**
+
+## 第 1821-B 條（c-168 研究驗收）：**18/18 全 `full`，216 條 facts；1985–1999 段的來源結構跟現役目錄完全相反**
+
+`qa-batch research c168` 全部通過、旗標 0、key 與卡單完全一致；**每張 12 條 facts、216／216 都有完整 https src**，
+**每張至少 2 個不同網域**。
+
+### ③ 來源層在 1985–1999 段的實測（與 c-166／c-167 不是同一個量級）
+
+| 路徑 | c-168（18 張） | 對照：c-166／c-167 |
+|---|---|---|
+| **`api.discogs.com/releases/<id>` 整筆** | **18／18，絕對主力（113 條 src）** | c-167 才列進來的第六條路徑 |
+| **repo 內 Billboard／Cash Box OCR** | **11／18，第二主力（44 條）——唯一能給榜位與樂評原句的** | 前幾批幾乎沒動用 |
+| en.wikipedia.org | 6／18（36 條，多為引用 AllMusic 的段落） | 只用於獎項覆核 |
+| **`bluenote.com` wp-json** | ⚠ **1／18** | **c-166 39／45、c-167 13／14 的主力** |
+| `universal-music.co.jp` | 未動用（全批無現役品番） | c-167 拿到決定性素材 |
+| **allmusic／allaboutjazz** | ⚠ **四次全 403（Cloudflare）** | — |
+
+⚠ **`bluenote.com` 那唯一有用的一筆是 `search=Namekata`**（2020 年 Cuscuna 寫的悼念文），
+**一篇同時餵飽富士山音樂節緣起、1986 首屆颱風、Somethin' Else 1988 年成立、1985-02-22 One Night With Blue Note 三條線。**
+**→ 新判準：查八〇、九〇年代的廠牌史，關鍵字要用製作人／A&R 的人名，不是藝人名。**
+
+### 推翻策展層六處，其中一處是「查錯版本」而不是「查不到」
+
+⚠ **策展層第 2091 條說「三張錄音日期 Discogs 與 MB 兩邊都沒有」——其中兩張 Discogs 上本來就有**：
+`Post-Motown Bop` 的 1990-09-17／18 在**日版 TOCJ-5286 的條目**、`Portraits Plus` 的 1992-03-30 在**另一個英版 CD 條目**。
+**這是第 259／2088 條在 `notes` 欄的第三個變形：「我查的那個版本沒有」被寫成「查不到」。**
+（⚠ **第 1678 條早就立過同一條**：策展層說「完全查不到」不可直接寫成裁定，要寫成「在 X、Y 查不到，請換 Z 再查」。**同一個病第三次。**）
+
+其餘五處：**`Blue Spirit` 是十軌不是九軌**（9 軌的是加拿大壓片與 MB）；
+**`Spiral Staircase` 的軌數版本間不一致**（美版 6、CD 7）→ **判「正文不寫軌數」**；
+**`Portraits Plus` 的 Discogs `released` 欄其實是錄音日**，實際發行晚九個月；
+`Reflejos Ancestrales` 的 Barbarito Torres 是 **laúd** 不是長笛；
+**`Superblue 2` 兩首的作曲者兩邊說法相反、都單一來源 → 只列曲名不指定作曲者。**
+
+### ⚠ 榜位是本批少見的硬素材，但四張都是 #9
+
+Top Jazz Albums 最高名次：`Live at Mt. Fuji`／`Superblue`／`The Manhattan Project`／`Post-Motown Bop` **四張都是 #9**，
+另有 #31／#29／#29 三張。
+**四張都寫「最高衝到第九名」就是第 1764-B 條的數字模子同構，而 `chk-hook-crossgroup` 對這種模子一次都不會亮**
+——已寫進鉤子層派工信要求自己盯。
+⚠ **Billboard 與 Cash Box 的榜位欄位順序相反**（研究層寫成判讀規則，第 2647 條）。
+
+**獎項兩筆都是入圍**：`Portraits Plus` 1993 Mercury Prize 入圍（Suede 得獎）、
+`Contact!` 第 41 屆葛萊美 Best Latin Jazz Performance 入圍（Arturo Sandoval 得獎）。
