@@ -1,12 +1,746 @@
-# c-164 a 組裁定（編號 1840–）
+# c-164 a 組裁定（編號 1840–1867）
 
-⚠ **本檔尚未寫完，是續跑安全用的中途檢查點**（`CLAUDE.md`「容器會不定時重啟」那節）。
-交件版會把 1840–1869 號段內的各條補齊。
+**本組 23 筆**（`batch-progress/c164/slice.json` 的 `g: "a"` 切片），
+年份分布 **2016×1、2017×12、2018×10**，`slice.json` 的 `genre` 欄 23 筆全部逐字 `jazz`。
+沿用 `c158`～`c162` 各批裁定、`c163/rulings.md`、
+**`c163/rulings-mainline.md`（主線第 1718–1730 條）**，條文一字未改。
+證據層三份原始快取已入庫：`batch-progress/c164/evidence-a/{mb,dg,apple}.json` ＋ `SOURCES.md`。
 
-**本組 23 筆**（`batch-progress/c164/slice.json` 的 `g: "a"` 切片），年份分布 2016×1、2017×12、2018×10，
-`slice.json` 的 `genre` 欄 23 筆全部逐字 `jazz`。
-沿用 `c158`～`c162` 各批裁定、`c163/rulings.md` 與 **`c163/rulings-mainline.md`（第 1718–1730 條）**，條文一字未改。
-**b 組另從 1870 起 append，本檔不碰那個號段。**
+**本檔用掉 1840–1867，剩 1868–1869 未用。b 組另從 1870 起 append，本檔不碰那個號段。**
+
+---
+
+## 第 1840 條：交件總表
+
+| 項目 | 數 |
+|---|---:|
+| 派下 | **23** |
+| **收** | **22** |
+| **退** | **1** |
+| **退貨率** | **4.3%**（1／23，本線目前最低的一批） |
+| 年份**改判** | **0**（23 筆全部覆核成立） |
+| **盤名改判** | **3**（見第 1854 條） |
+| (甲) 從未發行過的錄音首次以錄音發行 | 0 |
+| **(乙) 母體原本就發在 Blue Note／Liberty／UA／Solid State** | **1**（Hank Mobley《Poppin'》，見第 1842 條） |
+| (丙) 母體其實發在真正的他廠 | **0 成立／訊號亮 12 次**（見第 1844 條） |
+| **(丁) 與既有卡部分重疊、形狀不同** | **13**（見下） |
+| (戊) 四條再發系列 | **0 成立／訊號亮 2 次**（見第 1845 條） |
+| (己) 這張碟的載體只有影像 | **0 成立／訊號亮 4 次**（見第 1846 條） |
+| **現場盤（`live: true`）** | **3**（Akinmusire／Gregory Porter／Terence Blanchard，四層全部一致，見第 1859 條） |
+| **撞陳列：撞卡（折鍵命中）** | **1**（即那筆退件） |
+| **撞陳列：軌名撞 apex 王牌** | **1 處**（Tony Allen《The Source》的〈On Fire〉↔ `Galaxie 500 —《On Fire》(1989)` `hall`） |
+| **撞陳列：盤名逐字撞池中卡名（非撞卡）** | **5 組共 14 張**（見第 1860 條） |
+| **新掛名（池中 0 列的新字串）** | **6** |
+| 紙本 | **本組不查**（主線第 1728 條：Billboard OCR 只覆蓋到 2015，本組全部 2016–2018） |
+| **`node batch-progress/c164/chk-prop.mjs a` 標記** | **0** |
+
+**(丁) 那 13 張**（池中已有同一藝人／同一系列的其他碟，形狀不同故收）：
+Akinmusire（池中 3）／Brian Blade Fellowship（1）／山中千尋《Monk Studies》《Utopia》（3）／
+Yaron Herman（1）／Götz Alsmann（5）／Tony Allen《The Source》（1）／José James《Love in a Time of Madness》《Lean On Me》（3）／
+Kyoto Jazz Sextet（1）／Gregory Porter（4）／Wayne Shorter（14）／Terence Blanchard featuring The E-Collective（1）／
+GoGo Penguin（3）／Marcus Miller（1）。
+其餘 9 張裡 6 張是新掛名（Ben l'Oncle Soul／Charles Pasi／Trombone Shorty／Louis Hayes／Dave McMurray／The Nels Cline 4），
+`Tony Allen & Jeff Mills` 是聯名新造。
+
+---
+
+## 第 1841 條：退表（逐筆）
+
+| # | 掛名 | 盤名 | 年 | rgMbid | 理由分類 | 一句話證據 |
+|---|---|---|---:|---|---|---|
+| 1 | **Hank Mobley** | **Poppin'** | 2017 | `72dbc981-32e8-4a26-ad28-816020f01672` | **(乙) 純庫藏再發 ＋ 撞卡** | **Discogs 11635351 的 `series` 欄逐字 `Blue Note, The Masterworks, Top 50`、`formats` 逐字帶 `Reissue`／`Remastered`；而且 `seed_cards.json` 已有 `Hank Mobley —《Poppin'》(1980)`，折鍵 `hankmobley|poppin` 逐字相同。** |
+
+**退貨率 1／23 ＝ 4.3%。**
+
+---
+
+## 第 1842 條：`Hank Mobley《Poppin'》2017` 退——三個理由各自獨立成立；⚠ 但**派工信指定的那條快捷查法（第 1763 條）實查沒中**
+
+派工信地雷 1 逐字說「**第 1763 條：MB `label-info` 同時並列老號段與日版號段，(乙) 直接成立，不必再查 Discogs。先跑這一條**」。
+**本棒先跑了，沒中**：MB release `26c754c7`（2017 JP Official SHM-CD 5 軌，barcode `4988031254431`）的
+**`label-info` 只有一格，逐字 `Blue Note [713c4a95]` catno `UCCQ-9319`——沒有並列任何老號段。**
+**第 1763 條那個形狀在本張不成立，必須退回查 Discogs。**（這一點請後批知悉：**那條快捷查法是充分條件不是必要條件，沒中不等於不是 (乙)。**）
+
+**查完 Discogs 之後，三個理由各自獨立成立**：
+
+1. **(戊) 名單以外的再發系列 → 依第 1813 條改判 (乙)。**
+   **Discogs 11635351（2017 日版）的 `series` 欄逐字 `Blue Note, The Masterworks, Top 50`、
+   `formats` 逐字 `CD, Album, Limited Edition, Reissue, Remastered (SHM-CD)`。**
+   ⚠ **`Blue Note, The Masterworks` 正是 c-163 b 第 1813 條對 `Lonnie Smith《Turning Point》` 判過的那一條系列**
+   （該條逐字：「日版 SHM-CD 化，而且原盤已經發過卡」）——**同形，照先例走。**
+2. **(乙) 母體本來就是 Blue Note 的庫藏。**
+   Discogs 全庫八筆同碟條目，逐字排下來就是一部 Blue Note 庫藏史：
+   `GXF 3066`（1980 日版 LP，`series` 逐字 **`ブルーノート世界初登場1800シリーズ`**）、
+   `GXK 8163`（1981 日版 LP，`series` 逐字 **`Unissued Masters Series Part 1`**）、
+   `TOCJ-1620`＋`LP-1620`（1996 日版 CD，`series` 逐字 **`The BN Works 1500 Unissued`**，
+   ⚠ **這一筆的廠牌欄兩格正是第 1763 條那個「老號段 ＋ 日版號段」的形狀，只是它在 Discogs 不在 MB**）、
+   `UCCQ-5020`（2014 SHM-CD，`series` 逐字 `Blue Note, The Masterworks` ＋ **`75 Blue Note`**，⚠ **(戊) 名單上的第一條**）、
+   `B0030597-01`（2020 LP，`series` 逐字 **`Blue Note Tone Poet Series`**，⚠ **(戊) 名單上的第三條**）。
+   **③ `bluenote.com/artist/hank-mobley/` 也逐字寫了：「Poppin' was one of many sessions tenor saxophonist Hank Mobley
+   recorded in the late '50s and early '60s but remained unreleased until the late '70s and '80s」。**
+   **錄於 1957（Discogs companies 逐字 `Recorded At: Van Gelder Studio, Hackensack, New Jersey`），
+   1980 年首度發行——2017 這張是第五次再發。**
+3. **撞卡。** `seed_cards.json` 已有 `Hank Mobley —《Poppin'》(1980)`（曲風欄逐字 `["jazz"]`、非 apex），
+   `batch-progress/c145/prop-a.json` 也有同一張。**折鍵 `hankmobley|poppin` 逐字相同，`chk-prop` 會直接標記。**
+   ⚠ **Apple us／jp／gb／fr／de 五地區的 `1494403691` 的 `releaseDate` 逐字是 `1980-01-01T08:00:00Z`、
+   ℗ 欄逐字 `A Blue Note Records Release; ℗ 1980 Capitol Records, LLC`**——**Apple 自己也把它歸在 1980，
+   而那個 `01-01T08:00:00Z` 正是第 1601 條說的年初佔位日，不可當街頭日引用。**
+
+**(甲) 不成立**：1980 年那次首發才是「首次以錄音發行」，而**那一張池中已經有卡**。
+
+---
+
+## 第 1843 條：imprint 前置閘——23 筆全部跑過，**23／23 過閘**，但過閘的理由分四種
+
+依 c-163 a 第 1794 條的分界跑：**不是「Discogs 廠牌鏈第一格是不是 Blue Note」，是「零售條目裡有沒有任何一筆的廠牌鏈出現 Blue Note」。**
+
+| 過閘形狀 | 筆數 | 例 |
+|---|---:|---|
+| **Discogs 零售條目的廠牌欄第一格全部逐字 `Blue Note`** | 15 | Akinmusire／Trombone Shorty／Louis Hayes／José James×2／Nels Cline 4 等 |
+| **MB 只有部分 release 掛 Blue Note，Discogs 零售全中** | 4 | **Ben l'Oncle Soul**（MB 法版首發逐字 `Mercury Music Group [67ca3fec]`，但 Discogs 加／法／歐／日四筆廠牌欄第一格全是 `Blue Note`）／Charles Pasi／GoGo Penguin／Tomorrow Comes The Harvest |
+| **廠牌欄是 Blue Note 的地區分支或子廠印** | 3 | `Blue Note France`（Tony Allen《The Source》的歐版兩筆）／`Blue Note Lab`（Tomorrow Comes The Harvest 的 10"）／`Blue Note Records` 唱片公司層實體（見下） |
+| **MB 給的是唱片公司層實體、不是 imprint** | 1 | **Terence Blanchard《Live》**：MB `ceb58d31` 的 label-info 逐字 `Blue Note Records`、MBID `d3865f1e-ae0c-4a97-99b9-016966d49cb5`，**本棒實查該實體，disambiguation 欄逐字「this is the record company; for release labels use its imprint "Blue Note"」** |
+
+⚠ **`Nihon Blue Note [76903afe]`（c-163 b 第 1817 條的陷阱）本組 0 筆**——
+**逐筆查過，23 筆的 MB label-info 裡出現的 Blue Note 實體只有兩個：imprint `713c4a95-6616-442b-9cf6-14e1ddfd5946`（22 筆）
+與唱片公司 `d3865f1e-ae0c-4a97-99b9-016966d49cb5`（1 筆）。**
+⚠ **派工信點名要認得的歐洲公版再發廠（`EJC`／`AJC`／`WaxTime`／`Jazz Wax Records`／`Blue Moon`）本組一家都沒出現**——
+**合理：那五家做的是 1950–60 年代錄音的公版再發，本組全部是 2016–2018 的新錄音。**
+
+---
+
+## 第 1844 條：(丙) 的訊號亮 **12 次**、**一次都不成立**；歸納成四種假陽性，**其中第四種本線沒見過**
+
+| # | 卡 | ℗／廠牌欄逐字 | 假陽性型別 |
+|---|---|---|---|
+| 1 | Brian Blade Fellowship | `Blue Note Records; ℗ 2017 Middle Way Music, LLC, under exclusive license to UMG Recordings, Inc.` | **A：藝人自有公司 ＋ `under exclusive license to`**（第 1753(4)／1770 條） |
+| 2 | Wayne Shorter《Emanon》 | `Blue Note Records; ℗ 2018 Wayne Shorter, under exclusive license to UMG Recordings, Inc.` | **A**（℗ 主體逐字就是藝人本人） |
+| 3 | The Nels Cline 4 | `Blue Note Records; ℗ 2018 Memorize and Destroy, under exclusive license to UMG Recordings, Inc.` | **A** |
+| 4 | Gregory Porter | `℗ 2018 Golden Slipper Publishing Inc, under Exclusive Licence to Decca Records France` | **A** |
+| 5 | Marcus Miller | `℗ (C) 2018 Hannibal L.L.C.` ＋ Discogs `Licensed To: UMG Recordings, Inc.`／廠牌欄第二格逐字 `3 Deuces Records` | **A**（兩家都是他自有） |
+| 6 | Götz Alsmann《In Rom》 | `℗ 2017 ROOF Music, under exclusive license to Universal Music Strategic Marketing…` | **B：長期合作的在地製作廠**（c-162 a 第 1750 條與 c-163 a 對同一實體已裁定兩次，照先例） |
+| 7 | Charles Pasi | Apple `℗ 2017 Decca Records France`／MB 數位 label-info `Decca Records France [6900cc9e]` | **C：Universal 同集團的姊妹部門**（管 Blue Note France／歐洲線） |
+| 8 | Yaron Herman | 同上 | **C** |
+| 9 | Tony Allen《The Source》 | 同上；Discogs 歐版廠牌欄第一格逐字 `Blue Note France` | **C** |
+| 10 | GoGo Penguin | Apple `℗ 2018 Decca Records France`／Discogs `(p): Decca Records`／MB 一筆數位 label-info `Decca Records [f18f3b31]` | **C** |
+| 11 | Tomorrow Comes The Harvest | Apple `℗ 2018 Decca Records France`；2024 再上架那筆 label-info `Universal Music Division Decca Records France [9c314019]` | **C** |
+| 12 | **Ben l'Oncle Soul** | **Apple `℗ 2016 Decca Records France`／Discogs companies `(p): Mercury Music Group`／MB 法版首發 label-info 逐字 `Mercury Music Group [67ca3fec]`** | ⚠ **D（本線沒見過的一種）** |
+
+⚠ ⚠ **第四種（D）值得單獨記**：**前三種都能靠「℗ 主體是誰」判掉，D 不行**——
+**`Mercury Music Group` 既不是藝人自有、也不是製作廠、而且它在 MB 端直接佔了首發 release 的 `label-info` 那一格，
+`Blue Note` 在 MB 端只出現在日版。**
+**唯一判得掉的路徑是第 1794 條的那句話：「零售條目裡有沒有任何一筆的廠牌鏈出現 Blue Note」——
+② Discogs 四筆零售（加拿大 `5713092`／法版 `571309-2`／歐版 `571779-4`／日版 `UCCM-1239`）的廠牌欄第一格逐字全部是 `Blue Note`。**
+**→ 給後批的一句：MB 的 `label-info` 不足以判 imprint，必須把 Discogs 的零售條目全部列出來再判。**
+⚠ **這一條同時反證了 `slice.json` 的 `note` 欄**：那筆逐字寫「僅 JP 盤」，**實查不成立**（見第 1865 條）。
+
+---
+
+## 第 1845 條：(戊) 的訊號亮 2 次——1 成立 1 不成立；**新立一句：`series` 欄才是判據，SHM-CD／HQCD／UHQCD 這些日本載體不是**
+
+| # | 卡 | Discogs `series` 欄逐字 | 判 |
+|---|---|---|---|
+| 1 | **Hank Mobley《Poppin'》2017** | **`Blue Note, The Masterworks, Top 50`** | **成立 → 依第 1813 條改判 (乙)，退**（第 1842 條） |
+| 2 | Gregory Porter《One Night Only》 | **`Eagle Rock Films`** | **不成立、收** |
+
+**`Eagle Rock Films` 不成立的兩個理由**：**(a)** 它是 Universal 旗下**音樂影像發行線**的系列名，不是 (戊) 名單上的四條再發系列
+（Blue Note 75／80、Tone Poet、Classic Vinyl、Blue Note Review），也不是第 1783 條的 `Music Matters`、第 1813 條的 `Blue Note, The Masterworks`；
+**(b)** 本碟是 **2018-04-02 的新錄音、2018-11-30 首發**，**在定義上不可能是再發**。
+
+⚠ ⚠ **新立（本組的對照組給得很乾淨）**：
+**本組有 6 張帶 SHM-CD／HQCD／UHQCD／Limited Edition 的日本載體**——
+Brian Blade Fellowship（日版 `UCCQ-1076` SHM-CD）、山中千尋《Monk Studies》（`UCCQ-1070` SHM-CD ＋ `UCCQ-9303` Ultimate HQCD）、
+山中千尋《Utopia》（`UCCJ-2157` SHM-CD ＋ `UCCJ-9215` UHQCD）、Wayne Shorter《Emanon》（日版 `UCCQ-9403` 3×SHM-CD）、
+José James《Lean On Me》（日版 `UCCQ-1088` SHM）、GoGo Penguin（日版 `UCCQ-1080`）。
+**這六張的 Discogs `series` 欄逐字全部是空陣列，`formats` 也全部沒有 `Reissue`／`Remastered`——六張全收。**
+**而退掉的 Hank Mobley 那張同樣是 SHM-CD，差別只在 `series` 欄有字、`formats` 帶 `Reissue, Remastered`。**
+**→ 給後批：日本的高規格 CD 載體（SHM-CD／HQCD／UHQCD／Blu-spec）本身不是 (戊)／(乙) 的判據，
+`series` 欄與 `formats` 的 `Reissue`／`Remastered` 描述才是。** 這是第 1705-A 條第 2 點（「盤名像系列名時先看 `series` 欄」）的延伸。
+
+---
+
+## 第 1846 條：(己) 的訊號亮 4 次、一次都不成立；**其中一次是「漫畫不是影像載體」，本線第一次遇到**
+
+| # | 卡 | `format` 逐字 | 判 |
+|---|---|---|---|
+| 1 | Gregory Porter《One Night Only》 | MB `4be43f95` 逐字 **`CD 19 軌 ＋ DVD-Video 20 軌`**；Discogs 12988484 逐字 `CD, Album ＋ DVD, Album`，companies 逐字 `Filmed At: Royal Albert Hall` | **不成立**：另有美加版單 CD（Discogs 13011962）、兩筆純音訊數位、Apple 19 軌純音訊 |
+| 2 | Götz Alsmann《In Rom》 | Discogs 11443508 逐字 `CD, Album ＋ DVD, DVD-Video` | **不成立**：另有單 CD（`5763319`）與 2LP＋CD（`5763323`） |
+| 3 | 山中千尋《Monk Studies》 | MB `039ae8c0` 逐字 `HQCD 10 軌 ＋ DVD-Video 3 軌` | **不成立**：DVD 是完全生產限定盤的附件，同批有單 SHM-CD、LP 與兩筆數位 |
+| 4 | 山中千尋《Utopia》 | MB `3876e319` 逐字 `HQCD 12 軌 ＋ DVD-Video 3 軌` | **不成立**：同上 |
+
+**(己) 的條文是「這張碟的載體只有影像」——上面四筆的純音訊載體都是獨立存在的，一筆都不是。**
+
+⚠ ⚠ **第五個要交代的是 `Wayne Shorter《Emanon》`，派工信地雷 7 逐字點名「三張一套的漫畫＋CD 盒裝，`format` 欄會很複雜」。**
+逐層看完：**MB `9b53be5a` 的 media 逐字 `CD 4 軌 ＋ CD 2 軌 ＋ CD 4 軌`（三片、合計 10 軌）；
+③ bluenote.com 逐字「Emanon is a physical-only release that will be available in two versions;
+a Standard Edition that packages 3x CDs with the graphic novel, and a Deluxe Edition that packages 3x 180g vinyl LPs and 3x CDs
+with the graphic novel enclosed in a beautiful hardcover slipcase」。**
+**裁定：(己) 不成立。漫畫（graphic novel）是一本書，不是 (己) 所指的影像載體（雷射影碟／DVD／藍光那一類）；
+載體是三片 CD（豪華版另加三張 LP），全部是純音訊。**
+⚠ **也要與第 1704 條（(甲) 的第六種形狀）分清**：那條講的是「先前只以影像載體發行過的錄音」，
+**本張是全新錄音、沒有先前的發行，兩件事無關。**
+⚠ **附帶**：官網說它 `physical-only`，**但 Apple 現在五地區都有 `1449097210`（11 軌）**——上架固定試聽配得到，只是曲數與實體 10 軌不一致。
+
+---
+
+## 第 1847 條：掛名總表——**沿用池中 14、新字串 6、聯名新造 1、團名形新造 1、新造分裂 0**
+
+### （一）沿用池中既有字串 **14**（第 307 條）
+`Ambrose Akinmusire`（seed 1＋prop 2）／**`Brian Blade Fellowship`**（prop 1，**見第 1848 條**）／
+`山中千尋`（prop 3，**漢字，主線第 1672 條**）×2 張／`Yaron Herman`（prop 1）／`Götz Alsmann`（prop 5）／
+`Tony Allen`（seed 1）／`José James`（prop 3，**帶重音**）×2 張／`Kyoto Jazz Sextet`（prop 1）／
+`Gregory Porter`（seed 4）／`Wayne Shorter`（seed 13＋prop 1，**裸名**）／
+**`Terence Blanchard featuring The E-Collective`**（prop 1，**見第 1850 條**）／`GoGo Penguin`（seed 3）／`Marcus Miller`（prop 1）。
+
+### （二）新字串 **6**（池中皆 0 列；羅馬字／漢字／片假名三形都掃過）
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| **`Ben l'Oncle Soul`** | Person／FR，`2dbdbbad-9427-4360-b6c7-13a2f7214627` | **撇號取 ASCII 形**，見第 1853 條 |
+| **`Charles Pasi`** | Person | 四邊一致，`Charles Pasi` 全 ASCII |
+| **`Trombone Shorty`** | Person | MB／Discogs 四筆／Apple 五地區／③ bluenote.com 四邊一致；本名 `Troy Andrews` 也掃過，seed 0 |
+| **`Louis Hayes`** | Person | 四邊一致 |
+| **`Dave McMurray`** | Person | MB／Apple／③ bluenote.com 三邊一致（⚠ **② Discogs 全庫 0 筆**，見第 1857 條） |
+| **`The Nels Cline 4`** | Group | **團名形新造，見第 1849 條** |
+
+### （三）聯名新造 **1**：**`Tony Allen & Jeff Mills`**——見第 1851 條。
+### （四）團名形新造 **1**：**`The Nels Cline 4`**——見第 1849 條。
+### （五）新造分裂 **0**。`chk-prop` 的「同 rgMbid 不同掛名 0」「跨批撞卡 0」兩道全過。
+
+---
+
+## 第 1848 條（派工信地雷 4 第一組，**本組最需要寫清楚的掛名**）：**`Brian Blade & The Fellowship Band《Body and Shadow》` 判沿用池中的 `Brian Blade Fellowship`**
+
+| 來源 | 掛名欄逐字 |
+|---|---|
+| `slice.json`（抄 MB） | `Brian Blade & the Fellowship Band` |
+| **MB artist-credit** | **兩格：`Brian Blade` ＋ joinphrase ` & ` ＋ `the Fellowship Band`（小寫 the）** |
+| **④ Apple 五地區 `1445882915`** | **`Brian Blade & The Fellowship Band`（大寫 The）** |
+| **③ bluenote.com 內文** | **`Brian Blade & The Fellowship Band marks its 20th anniversary in 2017…`** |
+| ⚠ **② Discogs 三筆 `artists_sort`** | ⚠ **`Brian Blade Fellowship`**（11291364／11538232／12960190） |
+| ⚠ **Apple jp** | 片假名 `ブライアン・ブレイド&ザ・フェロウシップ・バンド`（池中 0 列） |
+| ⚠ ⚠ **池中既有** | ⚠ ⚠ **`Brian Blade Fellowship —《Perceptual》(2000)`（`batch-progress/c156/prop-b.json`）** |
+
+**→ 判 `Brian Blade Fellowship`。理由三層**：
+
+1. **第 1703 條（主線）收斂出來的那一句直接適用**：「**先看池中有沒有同系列前作；有就沿用那個字串，沒有才建團名形**」——**池中有。**
+2. **與第 1768 條《Black Radio 2》同形、同處置**：三邊（這裡是 MB／Apple／官網）用另一形**只是必要非充分條件**（第 1657 條（四）／第 1665 條）；
+   **《Perceptual》在 `c156/prop-b.json` 裡，本棒依派工信第七節的邊界不得動它**——**只能往既有字串靠、不能往新形靠，
+   否則池中必然出現「第二張掛 A 形、第五張掛 B 形」的分裂。**
+3. **與第 1727 條那個反例要分清。** `Charles Lloyd & the Marvels` 之所以不適用第 307 條，是因為池中的鄰居字串
+   （多了 `Featuring Lucinda Williams`）**代表另一組編制**；**本張不是**——**③ bluenote.com 同一頁逐字說這是「their sublime fifth album」、
+   樂團 1997 年成軍（官網逐字「Formed in 1997, the band released their eponymous Blue Note debut in 1998」）至今同一批人**，
+   **是同一支樂團改了寫法，不是換了編制。**
+
+⚠ **`chk-prop` 完全抓不到這一筆**：`brianbladefellowship` 與 `brianbladeandthefellowshipband` **折鍵後不同鍵**，四道都不亮（盲點三）。
+⚠ **代價要講明**：**池中這支樂團會是「用 1998–2000 年的團名寫法去掛 2017 年的碟」。**
+本棒認為這個代價小於分裂的代價，**但這是可逆的（改的是卡單值、不動卡池結構），本機審稿層若判相反，改一格即可。**
+⚠ **`Brian Blade` 在本組出現兩次**：本張之外，他也是 `Wayne Shorter《Emanon》` 的鼓手（官網逐字）。**兩張卡的敘事不得互相佔用。**
+
+---
+
+## 第 1849 條（派工信地雷 4 第二組）：**`The Nels Cline 4` 建團名形——三個字串同一人，逐一掃完，不算分裂**
+
+三個字串各自掃過池中：
+
+| 字串 | seed | prop | 代表的編制 |
+|---|---:|---:|---|
+| `Nels Cline`（裸名） | **0** | **1**（`c163/prop-b.json`《Lovers》2016） | **大編制管弦企劃**（③ 官網逐字「a "quietly ravishing double-album" featuring Cline with a large ensemble conducted and arranged by Michael Leonhart」） |
+| **`The Nels Cline 4`** | **0** | **0** | **2018 年首度亮相的四重奏**（Cline／Julian Lage／Scott Colley／Tom Rainey） |
+| `The Nels Cline Singers` | **0** | **0**（`c-164 b` 的 slice 另有一張） | 他 2000 年就開始的另一支長年樂團（③ 官網逐字「an expanded line-up of The Nels Cline Singers took things up a notch on 2020's…」） |
+
+**→ 判建團名形 `The Nels Cline 4`。理由兩層**：
+
+**(a) 第 1703 條的反面條件成立——池中沒有同系列前作，而且這件事有官網逐字保證：
+③ `bluenote.com/artist/nels-cline/` 逐字「With Currents, Constellations, Cline's second Blue Note release,
+we hear the debut of The Nels Cline 4, made up of Cline and Lage plus the fierce and versatile rhythm section of
+bassist Scott Colley and drummer Tom Rainey」——「the debut of」四個字把「沒有前作」寫死了。**
+**(b) 三邊門檻過**：**MB artist-credit 逐字 `The Nels Cline 4`（Group 實體、單一 credit）、
+Apple 五地區 `artistName` 逐字 `The Nels Cline 4`、③ bluenote.com 逐字 `The Nels Cline 4`——三邊一字不差。**
+⚠ **Discogs 的 `Nels Cline 4, The` 不計入**：定冠詞後置是站方排序欄的體例，**同一筆的 `uri` 逐字是 `.../11862405-The-Nels-Cline-4-Currents-Constellations`。**
+
+**直接先例是第 1769 條（四）的 `Wayne Shorter Quartet`（池中十三張裸名仍然建了團名形，因為那十三張全是別的編制）
+與 c-159 a 的 `Wynton Marsalis Quartet`。**
+⚠ **三個字串折鍵後互不同鍵，`chk-prop` 抓不到這組（盲點三），三形都已寫進該卡的 `queryAlias`。**
+⚠ **給 c-164 b 一句**：**`The Nels Cline Singers` 那張也照同一條判——它同樣是一支池中沒有前作的獨立樂團，建自己的字串，不併裸名。**
+
+---
+
+## 第 1850 條（派工信地雷 3）：**`Terence Blanchard featuring The E-Collective《Live》`——連字號取 ASCII、形取池中的 `featuring` 形；⚠ 並指出派工信這一段自相矛盾**
+
+**(一) 連字號碼位。**
+**MB artist-credit 第二格逐字 `The E‐Collective`，中間是 U+2010。**
+② Discogs 三筆的 uri 逐字 `Terence-Blanchard-Featuring-The-E-Collective`、
+④ Apple 五地區 `collectionName` 逐字 `Live (feat. The E-Collective)`、
+③ bluenote.com 內文與 Releases 區逐字 `The E-Collective`——**三邊都是 ASCII `-`（U+002D）。取 ASCII。**
+⚠ **`chk-prop` 的掛名連字號檢查會直接標記 U+2010**（本棒實測），取 ASCII 後標記 0。
+⚠ **這與 c-163 b 對同一個掛名的處置一致**（派工信逐字說那批「Discogs／Apple／Billboard 三邊都是 ASCII `-`，已改 ASCII」）。
+
+**(二) `featuring` 形還是 `&` 形。**
+**MB 給 `&` 形（joinphrase 逐字 ` & `）；Discogs／Apple／bluenote.com 三邊給 `featuring`／`feat.` 形；
+而池中 `batch-progress/c163/prop-b.json` 已有 `Terence Blanchard featuring The E-Collective —《Breathless》(2015)`。**
+**→ 判沿用池中形（第 307 條），並取小寫 `featuring`——那是池中先例的逐字形。**
+⚠ **Discogs 的 `Featuring`（大寫 F）不計入大小寫的票**：`artists_sort` 逐字是 `Terence Blanchard Featuring E-Collective, The`，
+**定冠詞後置 ＋ 全詞大寫，兩個都是站方體例。**
+
+**(三) ⚠ ⚠ 派工信這一段自相矛盾，在此指出（派工信自己要求「發現牴觸要在回報裡指出來」）。**
+地雷 3 一方面逐字寫「**本組照 MB `artist-credit` 逐字取形，不可留非 ASCII 連字號**」，
+一方面又逐字寫「**先掃池中既有形，有就沿用（第 307 條）**」。
+**MB 給的是 `&` ＋ U+2010，兩句話指向不同結果，而且第一句本身就自相矛盾
+（「照 MB 逐字取形」與「不可留非 ASCII 連字號」在這張碟上不可能同時滿足，因為 MB 的逐字形裡就有 U+2010）。**
+**本棒依第 307 條與正本的去重優先原則採後者。** 若照前者走，會同時製造兩個問題：
+**非 ASCII 連字號（`chk-prop` 直接標記）＋ `&`／`featuring` 分裂（盲點一，折鍵抓不到）。**
+
+⚠ **不與裸名 `Terence Blanchard` 併**：池中裸名有 5 筆 prop（c-158 b／c-159 b／c-160 b／c-162 b），
+**那是他自己的五重奏、不是 E-Collective**；c-163 b 已為這支編制另建字串，本張照走（比照第 1727 條）。
+
+---
+
+## 第 1851 條（派工信地雷 4 第三組）：**`Tony Allen & Jeff Mills` 取 `&` 式；同組 `Tony Allen` 另一張判裸名，兩張各照自己的發行品**
+
+**(一) 逗號式還是 `&` 式。**
+
+| 來源 | 逐字 |
+|---|---|
+| **MB artist-credit** | **兩格：`Tony Allen` ＋ joinphrase `, ` ＋ `Jeff Mills`（逗號式）** |
+| **② Discogs 四筆 `artists_sort`** | **`Tony Allen, Jeff Mills`（逗號式）** |
+| **④ Apple 五地區 `artistName`** | **`Tony Allen & Jeff Mills`（`&` 式）**；jp 逐字 `トニー・アレン & ジェフ・ミルズ` |
+
+**→ 依第 1539 條（聯名取 `&`）判 `Tony Allen & Jeff Mills`。**
+⚠ **這一筆 `chk-prop` 也抓不到**：逗號式折出 `tonyallenjeffmills`、`&` 式折出 `tonyallenandjeffmills`（`k()` 先把 `&` 換成 `and` 再剝），
+**兩者不同鍵**（盲點一）。**池中兩形都掃過，皆 0 列。**
+
+**(二) `Tony Allen` 本組兩張的掛名分開判。**
+**《The Source》判裸名 `Tony Allen`**（四邊逐字皆裸名 ＋ 池中 seed《Lagos No Shaking》(2006) 同形，第 307 條）；
+**《Tomorrow Comes The Harvest》判聯名新字串**。
+**依第 1131 條（不同編制各自成立）與第 1769 條（三）`Elvis Costello and The Roots` 的同形處置：
+池中的 `Tony Allen` 1 列與 `Jeff Mills` 11 列一列都不動，聯名是新建一個本來不存在的字串，不是把既有主體拆開。**
+⚠ **`Jeff Mills` 池中 11 列裡有一張 apex `hall`（《Mix-Up Vol. 2: Live Mix at Liquid Room, Tokyo》1996）**——
+**零軌重疊、非同碟，但下游敘事碰 Mills 的 techno 背景時不得把論述滑到那張王牌上。**
+
+---
+
+## 第 1852 條（派工信地雷 2）：**日本線三張的掛名直接照用；⚠ 但「日本線盤名以 universal-music.co.jp 為準」那句，本棒三次都以第 307 條壓過它**
+
+**(一) 掛名，照主線第 1672 條與 c-163 a 第 1817 條，不再議。**
+- **`山中千尋`**（《Monk Studies》《Utopia》兩張）。**店面層正面佐證：
+  Apple jp `1440890874`／`1384328786` 的 `artistName` 逐字都是 `山中千尋`；
+  ③ universal-music.co.jp 兩個商品頁的 title 逐字 `モンク・スタディーズ [SHM-CD][CD] - 山中千尋`／`ユートピア [SHM-CD][CD] - 山中千尋`。**
+  （Apple us／gb／fr／de 與 MB／Discogs 逐字都是 `Chihiro Yamanaka`，已進 `queryAlias`。）
+- **`Kyoto Jazz Sextet` 保留拉丁**（`ALBUM_ONBOARDING.md` §0.5 的但書：官方藝名本身就是拉丁字者保留），
+  且第 307 條有 c-163 b《Mission》的先例。
+  ⚠ **全大寫形 `KYOTO JAZZ SEXTET` 出現在兩處**（Apple jp `1440897383` 與 ③ 官網頁面 title），**不採**——
+  **Apple gb／fr／de 三地區 ＋ MB ＋ Discogs 三筆逐字都是首字大寫形，五比二。**
+- ⚠ **不與 `Kyoto Jazz Massive` 併**：池中 seed 有《Spirit of the Sun》(2002) 一列，**那是沖野兄弟的另一個團**
+  （比照第 1769 條（二）「池中的 `James —《Laid》` 是英國同名樂團，不併」）。
+
+**(二) ⚠ ⚠ 盤名：派工信逐字說「日本線盤名以那裡（universal-music.co.jp）為準」，本棒三張都沒照做，理由是第 307 條。**
+
+| 卡 | ③ 官網 title 逐字 | 其餘來源逐字 | 本棒取 |
+|---|---|---|---|
+| 山中千尋《Monk Studies》 | **`モンク・スタディーズ`** | MB RG／Discogs 四筆／Apple 五地區（含 jp）逐字 `Monk Studies` | **`Monk Studies`** |
+| 山中千尋《Utopia》 | **`ユートピア`** | MB RG／Discogs 三筆／Apple 四地區逐字 `Utopia`；⚠ **官網自己的曲目表第一軌就逐字並列 `ユートピア Utopia`** | **`Utopia`** |
+| Kyoto Jazz Sextet《Unity》 | **`UNITY`**（全大寫） | MB／Discogs 三筆／Apple 四地區逐字 `Unity` | **`Unity`** |
+
+**理由：池中山中千尋既有三張（c-163 a《Somethin' Blue》、c-163 b《Syncopation Hazard》《Guilty Pleasure》）
+與 Kyoto Jazz Sextet 的《Mission》，盤名逐字全部是拉丁形、片假名形一律只進 `queryAlias`。
+改走片假名會讓同一條線在池中裂成兩種命名體例（第 307 條壓過派工信的單句指示）。**
+⚠ **`UNITY` 的全大寫是日本商品頁的排版體例，不是盤名。**
+**本棒把三筆的衝突都寫進了各卡的 `risk`，也記在這裡，請主線知悉。**
+
+**(三) 操作面，給後批省時間**：
+**`universal-music.co.jp` 的藝人 slug 是「名在前、連字號」的羅馬字**——
+`chihiro-yamanaka/products/uccq-1070/`（200）、`chihiro-yamanaka/products/uccj-2157/`（200）、
+`kyoto-jazz-sextet/products/uccj-2143/`（200）；
+⚠ **`yamanaka-chihiro/...`（姓在前）回 404、目錄號用大寫也回 404、站內 `search/?q=` 是 JS 產生的、HTML 裡沒有結果。**
+**必須用「小寫 slug ＋ 小寫目錄號」直接打商品頁。**
+
+---
+
+## 第 1853 條（派工信地雷 5，`chk-prop` 盲點七／第 1702 條）：**三筆標點字元逐字元核完**
+
+| 筆 | 問題 | 逐字元查證 | 判 |
+|---|---|---|---|
+| **`Ben l'Oncle Soul`** | 撇號是 ASCII 還是 U+2019？ | **`slice.json` 與 MB artist-credit 逐字 `Ben l’Oncle Soul`（U+2019）；Apple us `1442850987`／gb-fr `1440885475` 的 `artistName` 逐字 `Ben l'Oncle Soul`（U+0027）；Discogs 四筆逐字 `Ben L'Oncle Soul`（U+0027，但 `L` 大寫）** | **`Ben l'Oncle Soul`**——**撇號 ASCII（Apple 對 MB 二比一）＋ 小寫 `l`（MB＋Apple 對 Discogs 二比一）** |
+| **`Poppin'`** | 同上 | **Discogs 八筆與 Apple 五地區逐字都是 ASCII `Poppin'`（U+0027）；MB RG title 逐字亦為 ASCII**；⚠ **1970 年代那筆日版 LP（Discogs 5818342）的軌目逐字連撇號都沒有（`Poppin`）** | **不適用——這張退了**（第 1842 條）；池中既有的《Poppin'》(1980) 逐字也是 ASCII，形狀一致 |
+| **`Louis Hayes《Serenade For Horace》`** | `For` 大寫是否照盤面？ | **`slice.json`／MB RG title／Discogs 三筆逐字 `Serenade For Horace`；④ Apple 五地區 `1442907864` 逐字 `Serenade for Horace`；③ bluenote.com 內文兩處逐字都是 `Serenade for Horace`** | **改判 `Serenade for Horace`**（小寫，見第 1854 條） |
+
+⚠ **22 張收件卡的 `artist` 與 `album` 兩欄全部逐字元查過碼位**，非 ASCII 字元清單：
+`Götz Alsmann` 的 `ö`（U+00F6）、`José James` 的 `é`（U+00E9，兩張）、`山中千尋`（全 CJK，兩張）。
+**沒有任何一張留下連字號類字元（U+2010／U+2011／U+2012／U+2013／U+2014／U+2015／U+FF0D）或 U+2019 撇號**，
+**`chk-prop` 的三道字元檢查（`album` 連字號／`artist` 連字號／U+30FC 誤用）全部不亮，且這次的「不亮」是逐字元核過的、不是折鍵摺掉的。**
+
+---
+
+## 第 1854 條：**盤名改判 3 筆；並新立一句——② Discogs 的全詞大寫是站方體例，不計入「大小寫」那一票**
+
+| # | 卡 | slice／MB 逐字 | 改判為 | 依據 |
+|---|---|---|---|---|
+| 1 | Ambrose Akinmusire | `A Rift In Decorum` | **`A Rift in Decorum: Live at the Village Vanguard`** | **副標題三比一**（Discogs 三筆＋Apple 五地區＋③ 官網都有副標，只有 MB 沒有）；**大小寫取 ④ Apple 與 ③ 官網一字不差的那一形**（③ 逐字 `A Rift in Decorum: Live at the Village Vanguard (2017)`） |
+| 2 | Louis Hayes | `Serenade For Horace` | **`Serenade for Horace`** | 扣掉 Discogs 的體例大寫後，**④ Apple ＋ ③ 官網 二比一壓 ⑤ MB**，而 ④③ 的權重都在 ⑤ 之前（主線第 1728 條） |
+| 3 | José James | `Lean on Me` | **`Lean On Me`** | **② Discogs 三筆 ＋ ④ Apple 五地區 ＋ ③ 官網的 Releases 條目與新聞稿（`OUT SEPT. 28`／`the September 28 release of Lean On Me (Blue Note)`）**；⚠ **③ 官網同頁散文用小寫、MB 的 JP 數位 release title 逐字又是大寫——兩邊自己都不一致，取權重最高的兩層** |
+
+⚠ ⚠ **新立（本組給出了四筆反證，足以當通則）：`Discogs` 的標題欄把每個詞的首字母都大寫，是站方體例，不是盤面。**
+四筆反證（左為 Discogs 逐字、右為 ③ bluenote.com／④ Apple 逐字）：
+`Love In A Time Of Madness` ↔ **`Love in a Time of Madness`**；
+`Body And Shadow` ↔ **`Body and Shadow`**；
+`A Rift In Decorum: Live At The Village Vanguard` ↔ **`A Rift in Decorum: Live at the Village Vanguard`**；
+`Serenade For Horace` ↔ **`Serenade for Horace`**。
+**→ 給後批：Discogs 仍是 ② 權重第一，但它的票只算「有沒有這個詞／有沒有副標題／標點是什麼」，
+不算「哪個字母大寫」。大小寫的票要看 ④ Apple 與 ③ 廠牌官網。**
+⚠ **反過來也要守住**：**`Lean On Me` 那筆不是被 Discogs 一票決定的**——Apple 與官網商品條目都站在大寫那邊，Discogs 只是第三票。
+⚠ **另外兩筆沒改但要記**：
+**Gregory Porter《One Night Only: Live At The Royal Albert Hall》有五種形**（MB RG 冒號形／Discogs 三筆各一種標點／Apple 帶 `/ 02 April 2018`），
+**取 ⑤ MB RG 與 ③ 官網 Releases 條目一字不差的冒號形**；
+**`Tony Allen & Jeff Mills《Tomorrow Comes The Harvest》` 取大寫 `The`**（②＋④ 對 ⑤）。
+**四筆全部折鍵後同鍵，`chk-prop` 一道都不會亮（盲點二／盲點四）。**
+
+---
+
+## 第 1855 條：年份——**改判 0、覆核成立 23**；四層俱全 3 筆，兩層可用 2 筆
+
+**23 筆全部跑過 MB `first-release-date` × Discogs `released` × Apple `releaseDate` 三層對照**（日本線三張另加 ③ universal-music.co.jp 的 `発売日`）。
+
+- **四層逐日相符 3 筆**：山中千尋《Monk Studies》（`2017-06-21`）／《Utopia》（`2018-06-20`）／Kyoto Jazz Sextet《Unity》（`2017-06-14`）。
+- **三層逐日相符 17 筆。**
+- **只有兩層可用 2 筆**（依派工信第三節「兩層以上可用就取多數」）：
+  **`Louis Hayes《Serenade for Horace》`**（MB frd 逐字只有 `2017`；Apple `2017-05-26T07:00:00Z` ＋ Discogs 兩筆 `2017-05-26`）、
+  **`Terence Blanchard featuring The E-Collective《Live》`**（MB frd 逐字只有 `2018`；Apple `2018-04-20T07:00:00Z` ＋ Discogs `year` 欄 `2018`）。
+- **另外一筆的 MB release date 欄是空字串**：`Wayne Shorter《Emanon》` 的數位 release `b399fdf8`（實體那筆是 `2018-09-14`，三層相符）。
+
+⚠ **第 1601 條（Apple 的 `YYYY-01-01T08:00:00Z` 是年初佔位日）在本組命中 1 次，而且正好在退件那張上**：
+**`Hank Mobley《Poppin'》` 的 Apple `1494403691` 五地區逐字 `1980-01-01T08:00:00Z`**——**不可當街頭日引用**，
+但它同時佐證了 Apple 也把這張碟歸在 1980（第 1842 條）。**22 張收件卡的 Apple `releaseDate` 一筆都不是年初佔位日。**
+
+⚠ **日期歧異（同年、不影響 `year`）7 筆，逐筆記下供本機參考**：
+Ben l'Oncle Soul（法版 CD `2016-11-11`／日版 `2016-12-07`，取歐版首發 `2016-11-04`）／
+Charles Pasi（法版 LP `2017-09-27`，取 `2017-09-29`）／Brian Blade Fellowship（歐版 LP `2017-11-00` 只到月）／
+**Tony Allen《The Source》（⚠ 美版 Discogs 10834147 `released` 逐字 `2017-08-08`，比歐版早一個月）**／
+山中千尋《Monk Studies》（LP `2017-07-26`）／《Utopia》（LP `2018-11-03`）／
+Wayne Shorter《Emanon》（歐版宣傳 `2018-08-24`／日版 `2018-10-03`）／
+Gregory Porter（**美加版 `2019-01-11`，晚兩個月，⚠ 這一筆最容易被誤當 `year`**）／
+José James《Lean On Me》（日版宣傳 `2018-09-21`）／Tomorrow Comes The Harvest（宣傳 CDr `2018-09-21`；
+⚠ **MB `cffa354f` 是 `2024-04-18` 的再上架，差六年，絕對不可當 `year`**）。
+
+---
+
+## 第 1856 條（**更正派工信地雷 7**）：**主線第 1721 條的觀察名單，本組不是 0 筆——`Dave McMurray《Music Is Life》` 就是那個形狀；覆核完不改判**
+
+派工信第二節地雷 7 逐字寫「**主線第 1721 條的觀察名單，本組 0 筆、但 c-164 b 有 4 筆。
+偵測訊號（MB 只有一筆 `Digital Media`＋catno 空＋country `XW`）在你這組不會亮**」。
+**實查不成立。`Dave McMurray《Music Is Life》` 三個條件全中**：
+**MB release-group `c8ef4b92` 轄下只有 2 筆 release，兩筆都是 `XW`／`Digital Media` 12 軌／catno 欄 null
+（`a7a575c1` barcode `00602567502425`、`fcb37890` barcode `00602567502418`）；
+`slice.json` 那一列的 `catno` 欄逐字是空陣列、`formats` 逐字 `["Digital Media"]`、`country` 逐字 `XW`。**
+（**訊號原文說「只有一筆」，本張是兩筆，但兩筆都是同一個形狀——條件的精神完全命中，只是字面差一個數字。**）
+
+**逐條跑完年份覆核，結論：2018 正確，不改判。** 三層依據：
+**(1) MB frd 逐字 `2018-05-18`；(2) Apple 五地區 `1369411347` 的 `releaseDate` 逐字 `2018-05-18T07:00:00Z`——
+不是第 1601 條那種年初佔位日，逐日可用；(3) ③ `bluenote.com/artist/dave-mcmurray/` 逐字
+`Dave McMurray's Blue Note Records debut, Music Is Life`，而他的第二張《Grateful Deadication》是 2021 年（同頁 Releases 區可見），時序對得上。**
+
+**這正是第 1721 條自己警告的那一種：「訊號會亮不代表要改判，逐筆看」——
+本張是真的數位獨家首發（Blue Note 2018 年少數幾張沒有實體的正規專輯之一），不是「只建數位再發把 frd 拉晚」。**
+
+⚠ **另外兩筆訊號部分亮、也都不改判**：
+**`Charles Pasi《Bricks》`**（數位 release `7b2489a8` 是 XW＋catno 空，**但同 RG 另有法版實體 CD、frd 就是數位那天**）；
+**`Tony Allen & Jeff Mills《Tomorrow Comes The Harvest》`**（**MB 四筆全部 Digital Media、catno 全空、含 XW**——
+**MB 端看起來就是那個形狀，但實體版存在於 Discogs 12557764（`Blue Note Lab` `778630 6` 的 10"），
+而且 frd 與 Apple／Discogs 的 `2018-09-28` 逐日相符**）。
+
+**→ 給主線：第 1721 條的偵測訊號如果只掃「`nReleases === 1`」，會漏掉本組這三筆。
+c-164 a 的實際命中是 3 筆（1 筆完整形狀 ＋ 2 筆部分），全部覆核不改判。**
+
+---
+
+## 第 1857 條：**`Dave McMurray《Music Is Life》` 是本組唯一一張「② Discogs 全庫 0 筆」的碟——三道前置閘只能靠兩層跑，封面來源鏈也要跟著改**
+
+`api.discogs.com/database/search?type=release&artist=Dave%20McMurray&release_title=Music%20Is%20Life` 回 **`items: 0`**。
+**本線的來源序列以 ② Discogs 為首，而它的 `format`／`series`／廠牌鏈／companies 四欄正是 (乙)／(戊)／(丙) 的判據——
+這張碟把那四欄整個抽掉了。**
+
+**本棒的替代跑法（記下來給後批照抄）**：
+- **(乙)**：MB 兩筆 release 都是 2018 首發、label-info 各一格逐字 `Blue Note [713c4a95]`、**沒有並列老號段（第 1763 條不成立）**；
+  **而且沒有老母體可再發——McMurray 1981 年才隨 Was (Not Was) 出道，不可能有 Blue Note 庫藏。**
+- **(戊)**：四條再發系列一條都沒出現；**而且數位獨家發行在定義上不會走 Tone Poet／Classic Vinyl 這些黑膠復刻線。**
+- **(丙)**：**Apple ℗ 欄逐字 `Blue Note Records; ℗ 2018 UMG Recordings, Inc.`——第一格就是 Blue Note，訊號根本沒亮。**
+
+⚠ ⚠ **要交給本機的兩件事**：
+1. **`ALBUM_ONBOARDING.md` §4 的封面來源四（`discogs`）對本張在定義上走不通**——沒有 release id，
+   要件二「目錄號／年份／廠牌至少對上兩項」無從比對，**`data/discogs-cover-registry.json` 也無從登錄。**
+   **CAA 若對 release-group `c8ef4b92` 也是空的，就走 `coverSourceHint: "apple-verified-collection"`
+   （2026-09-10 店主放寬後，釘得住 MBID 的卡也適用）——確切 `collectionId` 逐字是 `1369411347`。**
+2. **軌名撞陳列掃描這張做不了**（Discogs 0 筆、MB 的 release 端點本棒是用 `inc=labels+media+artist-credits` 抓的、未含 recordings）。
+   **本組其他 21 張都做了，只有這張留白，請本機補。**
+
+---
+
+## 第 1858 條：**`Tony Allen & Jeff Mills《Tomorrow Comes The Harvest》` 的 releaseType 疑義——判收；⚠ 並回報本批 prop 格式在結構上不支援 §5.5**
+
+**② Discogs 唯一的實體條目 12557764 的 `formats` 逐字是 `Vinyl, 10", 33 ⅓ RPM, EP`，
+軌目逐字只有四軌（A1 Locked And Loaded／A2 Altitudes／B1 On The Run／B2 The Seed）。**
+**而 `ALBUM_ONBOARDING.md` §1 的操作判準是 MusicBrainz 的 `primary-type`，MB 逐字給 `Album`（`secondary-types` 空陣列）。**
+
+**本棒判收、`releaseType` 填 `Album`，依據三層**：
+1. **§1 的門檻掛在 MB `primary-type` 上，MB 給 Album。**
+2. **④ Apple 的 `collectionType` 逐字 `Album`、`trackCount` 10、`primaryGenreName` 逐字 `Jazz`；
+   本棒另外拉了 `lookup?id=1403295920&entity=song` 逐軌時長：293＋293＋304＋240＋270＋467＋472＋488＋430＋475 秒
+   ＝ **3,732 秒 ＝ 62 分 12 秒**——**長度上是不折不扣的專輯。**
+3. **Discogs 的 `EP` 描述掛在那張四軌 10" 上——那是同一套錄音的黑膠精簡版，不是這張碟的完整形狀。**
+   （數位版的十軌 ＝ 四首原曲的完整版 ＋ 四個 Edit ＋ 一個 Instrumental ＋ 一個 Instrumental/Edit。）
+
+⚠ ⚠ **不走 §5.5 白名單的兩個理由，第二個是工具面的，請主線知悉**：
+**(a) 不需要**——MB 既然給 Album，就不必動用例外條款；
+**(b) 走不了**——**`batch-progress/c164/chk-prop.mjs` 的例外欄位檢查逐字只放行 `releaseType === 'Compilation'`：**
+```
+} else if (x.exceptionReason || (x.exceptionEvidenceUrls || []).length) {
+  say(`非合輯卻帶例外欄位：${x.artist} — ${x.album}`);
+}
+```
+**也就是說，本批的 prop 格式在結構上不支援 §5.5 的 `EP`／`Single`／`DJ-mix` 例外
+（填了 `genreException`／`exceptionReason` 就直接標記）。**
+**若日後真要在這條線上收 §5.5 的碟，`chk-prop.mjs` 要先改。**
+
+**本裁定依裁定權下放第 2／3 條當場定**（改的是 `releaseType` 一個欄位、可逆；不定就卡住這張），
+**兩邊的逐字證據都留在該卡的 `risk` 裡，本機審稿層若判它是 EP，退掉只要刪一列。**
+
+---
+
+## 第 1859 條：現場盤 3 張，**四層全部一致——第 1771 條那三種毛病本組一次都沒中**
+
+| 卡 | MB `secondary-types` | slice `live` | 盤名 | Discogs companies |
+|---|---|---|---|---|
+| Ambrose Akinmusire《A Rift in Decorum: Live at the Village Vanguard》 | 逐字 `["Live"]` | `true` | 副標自帶 `Live at the Village Vanguard` | 逐字 `Recorded At: Village Vanguard` |
+| Gregory Porter《One Night Only: Live At The Royal Albert Hall》 | 逐字 `["Live"]` | `true` | 副標自帶 `Live At The Royal Albert Hall` | 逐字 `Filmed At: Royal Albert Hall`／`Recorded At: Royal Albert Hall` |
+| Terence Blanchard featuring The E-Collective《Live》 | 逐字 `["Live"]` | `true` | 盤名逐字就是 `Live` | 逐字 `Recorded At: The Cleveland Bop Stop`／`The Wyley Theater, Dallas`／`The Dakota Bar & Grill` |
+
+**第 1771 條的三種毛病（「是現場卻沒標」「盤名帶 Live 卻不是現場」「四層不一致」）本組 0 次**，
+與 c-163 a 第 1797 條的結果相同。
+⚠ **另外要記一筆反向的**：**`Wayne Shorter《Emanon》` 的第二、三碟是倫敦現場**（Discogs 軌目分段標題逐字
+`The Wayne Shorter Quartet Live In London`），**但 MB `secondary-types` 逐字 `[]`、slice `live` 欄 `false`。**
+**本棒不改標 `live`**：三碟裡第一碟是錄音室（與 Orpheus Chamber Orchestra），**整張碟不是現場盤，是半現場的三碟企劃**，
+**標 `live: true` 會讓它在前端被當成現場盤。這一筆已寫進該卡的 `mbNote`，供下游知悉。**
+
+---
+
+## 第 1860 條：撞陳列總表——**撞卡 1（即退件那張）；軌名撞 apex 王牌 1 處；盤名逐字撞池中卡名 5 組 14 張**
+
+**(一) 撞卡（折鍵命中）1 筆**：`Hank Mobley|Poppin'`（第 1842 條）。**22 張收件卡的折鍵對 seed 17,248 列 ＋ 全部 prop 5,357 筆，0 命中。**
+
+**(二) ⚠ 軌名撞 apex 王牌 1 處**：
+**`Tony Allen《The Source》` 第 4 軌〈On Fire〉↔ seed `Galaxie 500 —《On Fire》(1989)`，apex 層級逐字 `hall`。**
+**零軌重疊、非同碟（一張是後龐克夢幻流行、一張是 afrobeat 爵士），但下游簡介不得讓這一軌的論述碰到那張王牌。**
+
+**(三) ⚠ ⚠ 盤名逐字撞池中卡名（折鍵不同鍵、`chk-prop` 不亮、不是撞卡）5 組共 14 張**——
+**這是本線踩過兩次（`Never Can Say Goodbye`、`Ten`）那個形狀，本組一次出現五組，是歷來最多的一批**：
+
+| 本組的卡 | 池中同名卡 |
+|---|---|
+| **`Terence Blanchard featuring The E-Collective —《Live》`** | `Donny Hathaway (1972)`／`Mike Westbrook (1973)`／`Ewa Demarczyk (1982)`／`日野皓正クインテット —《Live!》(1973)`／`Fela Ransome-Kuti and the Africa '70 with Ginger Baker —《Live!》(1971)`（後兩者的驚嘆號折鍵後被剝掉、同鍵）**共 5 張** |
+| **`Tony Allen —《The Source》`** | `Ayreon (2017)`／`Ted Hearne (2014)`／`Ali Farka Touré (1992)` **共 3 張** |
+| **`Kyoto Jazz Sextet —《Unity》`** | **`Larry Young (1965)`（⚠ Blue Note 正典，本卡的致敬對象）**／`Carl Craig (2015)`／`Avishai Cohen (2001)` **共 3 張** |
+| **`山中千尋 —《Utopia》`** | **`Björk (2017)`（⚠ 只差一年）**／`Travis Scott —《UTOPIA》(2023)` **共 2 張** |
+| **`Yaron Herman —《Y》`** | **`The Pop Group —《Y》(1979)`**（⚠ **單字母盤名，這一組最危險**）**共 1 張** |
+
+**五組的池中卡逐列查過，14 張全部非 apex。**
+**→ 給下游：這五張卡的盤名在探測層與撰稿層都必須帶掛名（與年份），不得單獨出現。**
+
+**(四) 軌名撞卡名（一般卡）共 29 處、分佈在 15 張卡上**，逐張寫在各卡的 `risk`。
+**其中三處要特別提醒下游**：
+`Louis Hayes《Serenade for Horace》` 的〈Song For My Father〉與〈Silver's Serenade〉**逐字撞的就是致敬對象 Horace Silver 本人的兩張專輯名**（皆非 apex）；
+`Gregory Porter` 的〈The Christmas Song〉**逐字撞 `Nat King Cole —《The Christmas Song》(1960)`，而 Nat King Cole 正是他致敬的對象**；
+`José James《Lean On Me》` 的十二軌全部是 Bill Withers 曲目，**而池中 `Bill Withers —《Live at Carnegie Hall》(1973)` 的 apex 層級逐字是 `hall`。**
+
+**(五) 兩張致敬盤的 apex 鄰居（零軌重疊，但敘事要避開）**：
+`山中千尋《Monk Studies》`↔`Thelonious Monk` 池中 21 列、其中 **`《Brilliant Corners》(1957)` 與 `《Genius of Modern Music, Volume 1》(1951)` 是 apex `hall`**；
+`José James《Lean On Me》`↔`Bill Withers —《Live at Carnegie Hall》(1973)` apex `hall`。
+
+---
+
+## 第 1861 條：曲風——**13 張 `['jazz']`、9 張帶第二格；MB 出現的 10 種非 `VALID` 曲風一個都沒跟**
+
+| 曲風 | 張數 | 卡 |
+|---|---:|---|
+| `['jazz']` | **13** | Akinmusire／Charles Pasi／Brian Blade Fellowship／Trombone Shorty／山中千尋《Monk Studies》／山中千尋《Utopia》／Yaron Herman／Louis Hayes／Kyoto Jazz Sextet／Dave McMurray／Wayne Shorter／The Nels Cline 4／Terence Blanchard |
+| `['jazz','soul']` | **5** | Ben l'Oncle Soul／José James《Love in a Time of Madness》／José James《Lean On Me》／Gregory Porter／Marcus Miller |
+| `['jazz','electronic']` | **2** | GoGo Penguin（第 307 條，沿用 seed《Man Made Object》）／Tomorrow Comes The Harvest |
+| `['jazz','pop']` | **1** | Götz Alsmann（第 307 條，沿用池中四張） |
+| `['jazz','world']` | **1** | Tony Allen《The Source》 |
+
+**合計 22 張：單格 13、雙格 9。`VALID` 十格裡用到 5 格（jazz／soul／electronic／pop／world），
+`rock`／`hiphop`／`folk`／`classical`／`blues` 五格 0 張。**
+
+**MB 出現但不跟的非 `VALID` 曲風 10 種**：
+`contemporary jazz`（**第 1572 條明文不跟**，出現 4 次）／`jazz-funk`（4）／`soul jazz`（2）／`contemporary r&b`（2）／
+`post-bop`（2）／`afrobeat`（2）／`modern creative`（1）／`swing`（1）／`techno`（1）／`r&b`（1）。
+
+⚠ **四筆本棒自己定的，逐筆記**：
+1. **`Tony Allen《The Source》` 取 `['jazz','world']`**——`afrobeat` 不在 `VALID`，折成 `world`，
+   **依據是池中 `Tony Allen —《Lagos No Shaking》(2006)` 的曲風欄逐字就是 `["world"]`（第 307 條）。**
+2. **`Tomorrow Comes The Harvest` 取 `['jazz','electronic']`、`afrobeat` 不折 `world`**——
+   **與上一筆刻意不同。理由：本碟的聲響主體是 Mills 的合成器脈衝與 Allen 的鼓對位，不是西非樂團編制；
+   且池中 `Jeff Mills` 11 列的曲風欄逐字全部是 `["electronic"]`（第 307 條）。**
+3. **`山中千尋《Utopia》` 的 `classical` 刻意不跟**——MB `genres` 逐字有 `classical`（count 1），
+   **③ 廠牌官網也逐字寫「クラシックの名曲を中心に収録」**；
+   **但那句描述的是曲目來源，本碟的演奏語彙是爵士鋼琴三重奏。掛 `classical` 會讓這張卡掉進古典的類型挑片池，
+   而古典卡另有 §0.6 作曲家欄與 §0.7 錨點制三軸一整套不同的處理。** 池中山中千尋三張逐字全部 `["jazz"]`。
+4. **`Gregory Porter` 取 `['jazz','soul']`**——MB 只有 `jazz` 單格，
+   **但池中他四張裡三張逐字 `["jazz","soul"]`（《Great Voices of Harlem》《Nat "King" Cole & Me》《Take Me to the Alley`），
+   只有《Liquid Spirit》是 `["jazz"]`，第 307 條取多數形。**
+
+⚠ **三張刻意只填單格、不照散文加第二格**（依「不確定的事實不寫」）：
+`Trombone Shorty`（官網散文逐字 `New Orleans soul`／`deep-groove funk`，**但 MB／Discogs／Apple 三邊都沒有 `soul`／`funk` 欄位值**）、
+`Dave McMurray`（官網逐字 `bristles with unalloyed soul`／`the spirit of a funk record`，**MB 空、Discogs 缺席**）、
+`Wayne Shorter《Emanon》`（**有 34 人的室內樂團協演，但 `classical` 沒有任何來源欄位支持，MB `genres` 是空陣列**）。
+⚠ **`Charles Pasi`／`Yaron Herman`／`Kyoto Jazz Sextet`／`Terence Blanchard`／`Dave McMurray`／`Wayne Shorter` 六張的 MB `genres` 與 `tags` 兩欄都是空陣列**，
+全部依 `slice.json` 的 `genre` 欄與池中先例填 `['jazz']`。
+
+---
+
+## 第 1862 條：來源命中率結算——**② Discogs 22／23、④ Apple 23／23、③ 廠牌官網 17／23；主線第 1728 條的調整在本組完全站得住**
+
+| 層 | 命中 | 備註 |
+|---|---:|---|
+| **④ Apple**（us／jp／gb／fr／de 五地區各查一次） | **23／23** | **本組唯一一層零缺口的來源**；⚠ 但地區覆蓋差異大（見第 1864 條） |
+| **② Discogs** | **22／23** | **唯一的缺口是 `Dave McMurray《Music Is Life》`（全庫 0 筆，第 1857 條）** |
+| **⑤ MusicBrainz** | 23／23 | ⚠ 但 `genres` 空的有 6 張、`barcode` 欄 null 的有 3 張、`catno` 全空的有 4 張 |
+| **③ 廠牌官網** | **17／23** | `bluenote.com` 14 中（美國線）／404 6 次；**其中 3 次（日本線）改走 `universal-music.co.jp` 全部 200** |
+| **① 紙本 Billboard** | **本組不查** | 主線第 1728 條：Billboard OCR 只覆蓋到 2015，**本組 23 筆全部是 2016–2018，結構性查不到，不得寫成缺失** |
+| **⑥ 維基／⑤ AllMusic** | 0 | 本棒未動用（前四層已足） |
+
+⚠ **這組數字與 c-163 b 第 1822 條回報的（② 19/19 ＞ ④ 17/19 ＞ ③ 12/19 ＞ ① 5/19）**方向一致，**但有一個新的事實**：
+**本組 ④ Apple 反而比 ② Discogs 多命中一張。**
+原因是本組有數位獨家發行（Dave McMurray），**而 Discogs 是「實體版本資料庫」、對純數位發行覆蓋率極低。**
+**→ 給主線的一句：來源序列 ②→④ 在 2016 年以後的批次可能要視「有沒有實體發行」而定；
+碰到 MB 只有 `Digital Media` 的碟，④ Apple 應該排在 ② 前面。** 這與第 1721 條的偵測訊號是同一個根因的兩面。
+
+---
+
+## 第 1863 條（操作面）：③ 廠牌官網的實測結果與可引用序數清單
+
+**(一) `bluenote.com/artist/<slug>/` 實測**（全部帶 `User-Agent: Mozilla/5.0`）：
+
+| 200（14） | 404（6） |
+|---|---|
+| `ambrose-akinmusire`／`brian-blade`／`trombone-shorty`／`tony-allen`／`jose-james`／`louis-hayes`／`dave-mcmurray`／`gregory-porter`／`wayne-shorter`／`nels-cline`／`terence-blanchard`／`marcus-miller`／`gogo-penguin`／`hank-mobley` | **`charles-pasi`／`yaron-herman`／`gotz-alsmann`／`ben-loncle-soul`**（四筆歐陸線，**與派工信預期逐字相符**）／**`kyoto-jazz-sextet`／`chihiro-yamanaka`**（兩筆日本線，改走 universal-music.co.jp） |
+
+⚠ **頁面結構要記**：**藝人頁的專輯介紹文字是整段 URL 百分比編碼塞在 `data-flip-*` 屬性裡的**，
+直接 grep HTML 抓不到，**要先 `urllib.parse.unquote` 再剝標籤**。本棒的抓法已寫在 `evidence-a/SOURCES.md`。
+⚠ **`gotz-alsmann` 404 與 c-163 a 第 1750 條第 6 點逐字相同**，這條線四張卡四次都是 404。
+
+**(二) 可引用序數（第 1714／1620-N 條要求的「逐字依據」）——本組有 6 筆，全部有 ③ 官網逐字原文**：
+
+| 卡 | 官網逐字 | 型別（第 1729 條的分界） |
+|---|---|---|
+| Trombone Shorty | `Trombone Shorty's 2017 Blue Note debut Parking Lot Symphony is a 12-track tour de force` | **廠牌目錄序數** |
+| Tony Allen《The Source》 | `The Source (his debut album for Blue Note Records)`／`The Source is the Nigerian-born Paris-based drummer's first full-length album for Blue Note, following the tantalizing 4-track EP release A Tribute to Art Blakey and the Jazz Messengers` | **廠牌目錄序數**（⚠ 官網自己加了 `full-length` 這個限定詞） |
+| Louis Hayes | `Hayes makes his Blue Note debut with Serenade for Horace`／`Now Hayes makes his own Blue Note Records debut as leader` | ⚠ **身分敘述**（他 1956 年就以側手在 Blue Note 錄過音，官網自己把 `as leader` 寫進去了） |
+| Dave McMurray | `Dave McMurray's Blue Note Records debut, Music Is Life` | **廠牌目錄序數** |
+| The Nels Cline 4 | `Currents, Constellations, Cline's second Blue Note release` | **廠牌目錄序數** |
+| Marcus Miller | `Miller has released two Blue Note albums, the most recent Laid Black came out in 2018 following his 2015 label debut Afrodeezia` | **廠牌目錄序數** |
+| Brian Blade Fellowship | `marks its 20th anniversary in 2017 with the release of their sublime fifth album, Body and Shadow` | **樂團自己的目錄序數**（不是 Blue Note 序數） |
+| Wayne Shorter | `his first release since 2013's Without A Net` | ⚠ **間隔敘述**（第 1729 條（一）：只要該卡 facts 有逐字 src 就可寫，不必過兩層門檻） |
+| GoGo Penguin | ⚠ **推得、非逐字**：官網一句說 `their 2016 Blue Note debut Man Made Object`、另一句說 2020 那張是 `the third to be released by the legendary Blue Note label following Man Made Object and A Humdrum Star` | **推得的廠牌目錄序數，依第 1714 條的「逐字依據」要求，本棒不代鉤子層下結論** |
+
+⚠ ⚠ **第 1714 條要求的第二層（紙本）在本組結構性不存在**（主線第 1728 條：Billboard 只到 2015）。
+**本棒的處置是統一的：把官網原文一字不改地留在各卡的 `why` 裡，不代鉤子層決定寫不寫。**
+**這一點請鉤子層依第 1729 條的分界自行判：「間隔／身分敘述」有 src 就可寫，「廠牌目錄序數」要自己權衡只有一層依據夠不夠。**
+
+**(三) 官網沒有給序數的 4 張，本棒明文禁止自己算**：
+Ambrose Akinmusire（官網只列了四張碟的年份清單，**沒有寫「第幾張」**）／José James 兩張／Gregory Porter／Terence Blanchard／GoGo Penguin（見上）。
+**404 的 6 張一律不得寫序數。**
+
+---
+
+## 第 1864 條：店面狀況（④ Apple 五地區）——**23／23 有貨，但版本問題比命中率重要**
+
+**(一) 地區覆蓋**：五地區全有 14 張；四地區 5 張（**us 缺 3 張：山中千尋《Utopia》／Götz Alsmann《In Rom》(us、gb 皆缺)／Yaron Herman《Y》**）；
+**⚠ 只有 2 個地區 1 張：`José James《Love in a Time of Madness》`（us／gb）**；
+**⚠ ⚠ 只有 1 個地區 1 張：`Marcus Miller《Laid Black》`（只有 jp）**——
+**這一筆在本組是異常的（他是美國藝人、美版 CD 由 Blue Note 製造），本機上架固定試聽時要再查一次 us。**
+
+**(二) ⚠ ⚠ §6（2026-08-23 增列）的淨化版問題，本組命中 1 筆**：
+**`José James《Love in a Time of Madness》` 的 Apple us／gb `1443256951` 的 `collectionExplicitness` 逐字是 `cleaned`，
+而且五個 storefront 都查過、整份目錄確實只有淨化版。**
+**依該條「淨化版屬不同版本、一律優先取 `explicit`；若整份目錄確實只有淨化版，可收但要在備註寫明」——已寫明。**
+**⚠ 本機上架時要再查一次有沒有 explicit 雙胞胎（同名、同曲數、曲序一致，只看盤名分不出來）。**
+**其餘 21 張的 `collectionExplicitness` 逐字全部是 `notExplicit`**（＝本來就無不雅內容，不是問題）。
+
+**(三) ⚠ 軌數不一致 10 張，本機配固定試聽要逐軌核**（第 646／865 條）：
+Ben l'Oncle Soul（**Apple 13／14／11 三種，實體法版 11、日版 13**）／Charles Pasi（Apple 12 vs 實體 11）／
+**Yaron Herman（Apple jp 13／gb-fr-de 14，實體 12——三種）**／Tony Allen《The Source》（Apple 12 vs 實體 11）／
+Wayne Shorter《Emanon》（Apple 11 vs 實體 10）／**GoGo Penguin（Apple 9／10／13 ＋ `A Humdrum Star (Deluxe)` 12，實體歐版 9、日版 12——四種）**／
+**Gregory Porter（Apple 兩個 id：19 軌的 `1437630474` 與 20 軌的 `1442760243`／`1442908829`，實體 19）**／
+José James《Lean On Me》（Apple us-gb-fr-de 12、**jp `1426175061` 14**，實體 12）／Marcus Miller（Apple jp 10 vs 實體 9）／
+山中千尋《Utopia》（Apple 12 vs **LP 版 MB media 逐字 10 軌**）。
+**軌數相符的 12 張：Akinmusire 16／Brian Blade Fellowship 9／Trombone Shorty 12／山中千尋《Monk Studies》10／
+Götz Alsmann 18／Louis Hayes 11／Kyoto Jazz Sextet 9／Dave McMurray 12／Tomorrow Comes The Harvest 10／
+The Nels Cline 4 8／Terence Blanchard 7。**
+
+---
+
+## 第 1865 條：**本信（派工信）與正本或既有裁定牴觸之處——四筆，逐筆列出**
+
+派工信第零節逐字要求「**你若發現本信與正本或既有裁定牴觸，以正本為準，並在回報裡指出來**」。本組有四筆：
+
+1. **地雷 1（第 1763 條的快捷查法）——寫成「先跑這一條、(乙) 直接成立、不必再查 Discogs」，實查沒中。**
+   `Hank Mobley《Poppin'》` 的 MB `label-info` 只有一格、沒有並列老號段。
+   **判 (乙) 的實際依據是 Discogs 的 `series` 欄（第 1813 條那條）。**
+   **→ 第 1763 條是充分條件不是必要條件，沒中不等於不是 (乙)。**（第 1842 條）
+2. **地雷 3 自相矛盾。** 同一段同時要求「照 MB `artist-credit` 逐字取形」與「不可留非 ASCII 連字號」與「先掃池中既有形，有就沿用」，
+   **三句話在這張碟上不可能同時滿足**（MB 的逐字形就帶 U+2010、而且是 `&` 形不是池中的 `featuring` 形）。
+   **本棒依第 307 條採池中形。**（第 1850 條）
+3. **地雷 7 的事實有誤。** 派工信逐字說「主線第 1721 條的觀察名單，本組 0 筆」，
+   **實查 `Dave McMurray《Music Is Life》` 三個偵測條件全中**（另有 2 筆部分中）。**覆核完不改判。**（第 1856 條）
+4. **第五節第 3 點「日本線盤名以 universal-music.co.jp 為準」，本棒三張都沒照做。**
+   照做會把 `Monk Studies`／`Utopia`／`Unity` 分別寫成 `モンク・スタディーズ`／`ユートピア`／`UNITY`，
+   **與池中山中千尋三張、Kyoto Jazz Sextet 一張的既有拉丁盤名體例分裂（第 307 條壓過派工信的單句指示）。**（第 1852 條）
+
+⚠ **另有一筆不是牴觸、是上游資料有誤，一併記**：
+**`slice.json` 給 `Ben l'Oncle Soul《Under My Skin》` 的 `note` 欄逐字「僅 JP 盤」，不成立。**
+那是切片器只看 MB `label-info` 有沒有 `Blue Note` 造成的（MB 兩筆 release 裡只有日版掛 Blue Note，法版首發掛 `Mercury Music Group`），
+**但 Discogs 的加拿大／法國／歐洲三筆零售條目廠牌欄逐字都是 `Blue Note`。這是一張歐洲首發、日本加曲的碟。**（第 1844 條 D 型）
+
+⚠ **還有一筆是舊裁定的附註要更正**：
+**c-162 a 第 1750 條在處理 Götz Alsmann《In Paris.》時附註「後續的《In Rom.》同形」（推測這條城市系列都帶句點）。
+實查 MB／Discogs 三筆／Apple 三地區逐字都是 `In Rom`，沒有句點。本棒取無句點形。**
+
+---
+
+## 第 1866 條：`chk-prop` 的七個盲點在本組各中幾次——**標記 0，但七個盲點中了五個**
+
+| 盲點 | 本組命中 | 逐筆 |
+|---|---:|---|
+| **1. `&`／`and` 分裂** | **1** | `Tony Allen & Jeff Mills`（`&` 式折 `tonyallenandjeffmills`、MB／Discogs 的逗號式折 `tonyallenjeffmills`，**不同鍵**） |
+| **2. 大小寫不同形** | **5** | `Serenade for Horace`／`Lean On Me`／`Tomorrow Comes The Harvest`／`Unity` vs `UNITY`／`Kyoto Jazz Sextet` vs `KYOTO JAZZ SEXTET` |
+| **3. 裸名／團名／別名分裂** | **2**（各 2–3 個字串） | **`Brian Blade Fellowship` vs `Brian Blade & The Fellowship Band`（第 1848 條）／`Nels Cline` vs `The Nels Cline 4` vs `The Nels Cline Singers`（第 1849 條）** |
+| **4. 盤名副標題有無** | **1** | `A Rift In Decorum` vs `A Rift in Decorum: Live at the Village Vanguard`（第 1854 條） |
+| 5. 折鍵把不同碟摺成同鍵 | **0** | — |
+| **6. 跨文字系統分裂** | **2** | `山中千尋` vs `Chihiro Yamanaka`（兩張；第 1672 條） |
+| **7. 標點字元不同碼位** | **2** | `Ben l’Oncle Soul`（U+2019）vs `Ben l'Oncle Soul`（U+0027）／`The E‐Collective`（U+2010）vs `The E-Collective`（U+002D） |
+
+**七個盲點中了五個、共 13 筆，`chk-prop a` 的標記仍然是 0。**
+**這正是派工信第四節那句話的實測：標記 0 不等於沒問題。**
+⚠ **其中盲點七的第二筆（`The E‐Collective`）是唯一一筆 `chk-prop` 抓得到的**——
+**若照派工信地雷 3 的第一句「照 MB 逐字取形」，`chk-prop` 會直接標記「掛名含非 ASCII 連字號」。取 ASCII 後標記 0。**
+
+---
+
+## 第 1867 條：給 b 組與後批的六句
+
+1. **`series` 欄才是 (戊)／(乙) 的判據，SHM-CD／HQCD／UHQCD 這些日本載體不是**（第 1845 條，本組 6 張帶日本高規格載體全收、1 張帶 `series` 的退）。
+2. **Discogs 的全詞大寫是站方體例，不計入「哪個字母大寫」那一票；大小寫要看 ④ Apple 與 ③ 廠牌官網**（第 1854 條，四筆反證）。
+3. **MB 的 `label-info` 不足以判 imprint**——**Ben l'Oncle Soul 的 MB 首發 release 掛的是 `Mercury Music Group`，
+   但 Discogs 四筆零售的廠牌欄第一格全是 `Blue Note`。必須把 Discogs 的零售條目全部列出來再套第 1794 條**（第 1844 條 D 型）。
+4. **`universal-music.co.jp` 的 slug 是「小寫、名在前、連字號」＋「小寫目錄號」**，站內 search 是 JS 產生的、抓不到（第 1852 條（三））。
+5. **碰到 MB 只有 `Digital Media` 的碟，② Discogs 很可能整個查無**——
+   **那時三道前置閘要改用「MB label-info ＋ Apple ℗ 欄 ＋ 藝人出道年」三層跑，
+   封面也要預先標成 `apple-verified-collection` 並記下 `collectionId`**（第 1857 條）。
+6. **`chk-prop.mjs` 的例外欄位檢查只放行 `Compilation`**——**本批的 prop 格式在結構上不支援 §5.5 的 EP／Single／DJ-mix 例外**（第 1858 條）。
+
+⚠ **給 c-164 b 一句專門的**：**`The Nels Cline Singers` 照第 1849 條判——
+它同樣是一支池中沒有前作的獨立樂團，建自己的字串，不併 `Nels Cline` 裸名、也不併 `The Nels Cline 4`。**
+⚠ **另一句**：**b 組的 4 筆第 1721 條觀察名單（Ai Kuwabara／Jacky Terrasson／GoGo Penguin／Rick Margitza）
+請照第 1856 條的三層跑法覆核——本組實測那個訊號會亮但多半不用改判，重點是 Apple 的 `releaseDate` 是不是年初佔位日。**
 
 ---
 ---
