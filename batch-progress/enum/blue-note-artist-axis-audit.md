@@ -1,7 +1,7 @@
 # Blue Note 1985 後線・列舉層缺口稽核（**藝人軸**重掃）
 
 > **已掃 541／541 位藝人**（藝人＝MB artist MBID，由本線 1,231 個已知 release-group 精確反解，不是字串比對，因此沒有同名實體問題）。
-> **Discogs 覆核 147／1,025 筆**（MB 兩端都查不到 Blue Note 廠牌的候選）。
+> **Discogs 覆核 297／1,025 筆**（MB 兩端都查不到 Blue Note 廠牌的候選）。
 > 生成：2026-09-19　狀態：**覆核未跑完，逐筆詳見第五節**
 
 > ⚠ **「筆數對了」不等於「定稿了」（第 1803-B 條）——工作區當下版本才是交件版。**
@@ -46,9 +46,9 @@
 
 | verdict | 筆 |
 |---|---:|
-| `gap` | 6 |
-| `unclear` | 876 |
-| `not-blue-note` | 143 |
+| `gap` | 11 |
+| `unclear` | 727 |
+| `not-blue-note` | 287 |
 | `already-covered` | 0 |
 | **逐筆裁定合計** | **1025** |
 
@@ -58,7 +58,7 @@
 
 | 成因 | 筆 |
 |---|---:|
-| `label-info` 空 | 5 |
+| `label-info` 空 | 10 |
 | MB 掛成母公司 `Capitol Records`＋另一筆 `label-info` 空 | 1 |
 
 ---
@@ -80,7 +80,22 @@
   - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
 - **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
 
-### 2. Dianne Reeves《That Day…》(1997) — **`gap`**
+### 2. Jackie McLean《Hat Trick》(1996) — **`gap`**
+
+- **RG MBID**：`823b61c2-8402-4f27-a611-d95806fd703c`
+- **artist MBID**：`5b6993ef-14af-4374-aa91-d42622b133d1`（／jazz saxophonist）
+- **為什麼列舉檔碰不到它**：`label-info` 空
+- **實查**：MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。
+- **佐證**：
+  - MB release-group：https://musicbrainz.org/release-group/823b61c2-8402-4f27-a611-d95806fd703c（`first-release-date` 1996、`primary-type` Album）
+  - MB release `7f6f2a8a-ba02-4397-a484-ad8ddd2a10e7`（1996、JP）——**`label-info` 逐字為空陣列 `[]`**
+  - **Discogs release 12750647**：https://www.discogs.com/release/12750647-Jackie-McLean-meets-Junko-Onishi-Hat-Trick——`label` 逐字 `['Blue Note', 'Power Station', 'Power Station', "Somethin' Else Records", "Somethin' Else Records", 'Toshiba EMI Ltd', 'Capitol Records, Inc.', 'Blue Note Records', 'BMG Direct Marketing, Inc.']`、`catno` 逐字 `CDP 7243 8 38363 2 1`、US 1996 CD／Album／Club Edition
+  - **Discogs release 33077577**：https://www.discogs.com/release/33077577-Jackie-McLean-meets-Junko-Onishi-Hat-Trick——`label` 逐字 `['Blue Note', 'Toshiba EMI Ltd', 'Blue Note Records', 'Capitol Records, Inc.', "Somethin' Else Records", "Somethin' Else Records", 'Power Station', 'Power Station', 'EMI MFG.']`、`catno` 逐字 `CDP 7243 8 38363 2 1`、US 1996 CD／Album／Promo
+  - **Discogs release 10811254**：https://www.discogs.com/release/10811254-Jackie-McLean-meets-Junko-Onishi-Hat-Trick——`label` 逐字 `['Blue Note', 'Power Station', 'Power Station', "Somethin' Else Records", "Somethin' Else Records", 'Toshiba EMI Ltd', 'Capitol Records, Inc.', 'Blue Note Records']`、`catno` 逐字 `CDP 7243 8 38363 2 1`、US 1996 CD／Album
+  - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
+- **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
+
+### 3. Dianne Reeves《That Day…》(1997) — **`gap`**
 
 - **RG MBID**：`bb230b81-f930-3b99-9d16-9df70f85ea6a`
 - **artist MBID**：`069c1f30-fd2a-4342-924a-cca7c605807f`
@@ -95,7 +110,22 @@
   - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
 - **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
 
-### 3. Brian Blade Fellowship《Brian Blade Fellowship》(1998) — **`gap`**
+### 4. Jackie McLean《Fire and Love》(1997) — **`gap`**
+
+- **RG MBID**：`eca6903a-3e10-43ad-a40d-f480aa474255`
+- **artist MBID**：`5b6993ef-14af-4374-aa91-d42622b133d1`（／jazz saxophonist）
+- **為什麼列舉檔碰不到它**：`label-info` 空
+- **實查**：MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。
+- **佐證**：
+  - MB release-group：https://musicbrainz.org/release-group/eca6903a-3e10-43ad-a40d-f480aa474255（`first-release-date` 1997、`primary-type` Album）
+  - MB release `9043f594-97e2-4272-a5ff-d47bb9df48bd`（1997、JP）——**`label-info` 逐字為空陣列 `[]`**
+  - **Discogs release 14071935**：https://www.discogs.com/release/14071935-Jackie-McLean-The-MacBand-Fire-Love——`label` 逐字 `['Blue Note', 'BMG Direct']`、`catno` 逐字 `CDP 7243 4 93254 2 5`、US 1997 CD／Album／Club Edition
+  - **Discogs release 5343073**：https://www.discogs.com/release/5343073-Jackie-McLean-The-MacBand-Fire-Love——`label` 逐字 `['Blue Note', "Somethin' Else", "Somethin' Else", 'EMI', 'EMI', 'Capitol Records']`、`catno` 逐字 `7 24349 32542 5`、Europe 1998 CD／Album
+  - **Discogs release 11316980**：https://www.discogs.com/release/11316980-Jackie-McLean-The-MacBand-Fire-Love——`label` 逐字 `['Blue Note', "Somethin' Else Records", "Somethin' Else Records", 'Capitol Records, Inc.']`、`catno` 逐字 `CDP 7243 4 93254 2 5`、US 1997 CD／Album
+  - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
+- **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
+
+### 5. Brian Blade Fellowship《Brian Blade Fellowship》(1998) — **`gap`**
 
 - **RG MBID**：`20765029-3ac1-3dae-bc61-76eefcf58e32`
 - **artist MBID**：`ad45a94c-8afb-4091-afc4-829b6d52c3c1`
@@ -110,7 +140,36 @@
   - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
 - **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
 
-### 4. Bill Charlap《Love Is Here to Stay》(2005) — **`gap`**
+### 6. Elvin Jones《At This Point in Time》(1998) — **`gap`**
+
+- **RG MBID**：`0351ea63-7b0f-31af-b871-8716589821ac`
+- **artist MBID**：`d5ac66e4-ea5d-4ebb-9e0d-bed4063208e7`（／jazz drummer）
+- **為什麼列舉檔碰不到它**：`label-info` 空
+- **實查**：MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。
+- **佐證**：
+  - MB release-group：https://musicbrainz.org/release-group/0351ea63-7b0f-31af-b871-8716589821ac（`first-release-date` 1998-03-31、`primary-type` Album）
+  - MB release `0e5ab3d6-3083-4d4f-9586-a7bc84c5a70d`（1998-03-31、US）——**`label-info` 逐字為空陣列 `[]`**
+  - **Discogs release 13883750**：https://www.discogs.com/release/13883750-Elvin-Jones-At-This-Point-In-Time——`label` 逐字 `['Blue Note', 'Capitol Records, Inc.', 'Capitol Records, Inc.', 'Capitol Records, Inc.', 'Capitol Records, Inc.', 'A&R Studios', 'EMI MFG.']`、`catno` 逐字 `CDP 7243 4 93385 2 4`、US 1998 CD／Compilation
+  - **Discogs release 4963884**：https://www.discogs.com/release/4963884-Elvin-Jones-At-This-Point-In-Time——`label` 逐字 `['Blue Note', 'Capitol Records, Inc.', 'EMI', 'EMI', 'Capitol Records, Inc.', 'Capitol Records, Inc.', 'A&R Studios']`、`catno` 逐字 `7243 4 93385 2 4`、Europe 1998 CD／Compilation／Stereo
+  - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
+- **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
+
+### 7. Jason Moran《The Bandwagon》(2003) — **`gap`**
+
+- **RG MBID**：`77690c69-cda4-3031-a834-bcdb3521a2b4`
+- **artist MBID**：`2f97f8ef-1bd6-439e-b725-c65081d12d86`（／American jazz pianist and composer）
+- **為什麼列舉檔碰不到它**：`label-info` 空
+- **實查**：MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。
+- **佐證**：
+  - MB release-group：https://musicbrainz.org/release-group/77690c69-cda4-3031-a834-bcdb3521a2b4（`first-release-date` 2003、`primary-type` Album）
+  - MB release `a75925b6-e0bd-4367-9c7b-bc7e4dbab30a`（2003、XE）——**`label-info` 逐字為空陣列 `[]`**
+  - **Discogs release 442265**：https://www.discogs.com/release/442265-Jason-Moran-The-Bandwagon——`label` 逐字 `['Blue Note', 'Blue Note Records', 'Blue Note Records', 'EMI Uden', 'Village Vanguard', 'Lundvall Mastering', 'Lundvall Mastering', 'EMI Uden', 'Blue Note', 'Capitol Records, Inc.']`、`catno` 逐字 `7243 5 91893 2 1`、Europe 2003 CD／Album／Copy Protected
+  - **Discogs release 18142315**：https://www.discogs.com/release/18142315-Jason-Moran-The-Bandwagon——`label` 逐字 `['Blue Note', 'BMG Direct', 'EMI MFG.']`、`catno` 逐字 `7243 5 80917 2 4`、US 2003 CD／Album／Club Edition
+  - **Discogs release 1872228**：https://www.discogs.com/release/1872228-Jason-Moran-The-Bandwagon——`label` 逐字 `['Blue Note', 'EMI MFG.']`、`catno` 逐字 `7243 5 80917 2 4`、US 2003 CD／Album
+  - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
+- **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
+
+### 8. Bill Charlap《Love Is Here to Stay》(2005) — **`gap`**
 
 - **RG MBID**：`6820c0ec-085b-4a2f-ab50-ac941198f509`
 - **artist MBID**：`85cc88c3-f595-463a-8674-a54a6891eaa9`
@@ -125,7 +184,22 @@
   - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
 - **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
 
-### 5. Joel Ross《KingMaker》(2019) — **`gap`**
+### 9. James Francies《Flight》(2018) — **`gap`**
+
+- **RG MBID**：`f4539fe1-df19-4ad4-99d3-c2d5a2539471`
+- **artist MBID**：`604f0692-4d31-479b-a93a-e4c75be21f81`（／US jazz pianist/keyboardist）
+- **為什麼列舉檔碰不到它**：`label-info` 空
+- **實查**：MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。
+- **佐證**：
+  - MB release-group：https://musicbrainz.org/release-group/f4539fe1-df19-4ad4-99d3-c2d5a2539471（`first-release-date` 2018、`primary-type` Album）
+  - MB release `7c7e845f-4d50-44a2-ac3d-1ef8e4999291`（無日期）——**`label-info` 逐字為空陣列 `[]`**
+  - **Discogs release 34231921**：https://www.discogs.com/release/34231921-James-Francies-Flight——`label` 逐字 `['Blue Note']`、`catno` 逐字 `B002868602`、US 2018 CD／Album
+  - **Discogs release 13995462**：https://www.discogs.com/release/13995462-James-Francies-Flight——`label` 逐字 `['Blue Note']`、`catno` 逐字 `00602567741343`、Europe 2018 CD／Album／Stereo
+  - **Discogs release 14779127**：https://www.discogs.com/release/14779127-James-Francies-Flight——`label` 逐字 `['Blue Note']`、`catno` 逐字 `none`、Unknown 2018 CDr／Album／Promo
+  - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）
+- **判定**：**`gap`**　**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。
+
+### 10. Joel Ross《KingMaker》(2019) — **`gap`**
 
 - **RG MBID**：`6cd0a509-b96a-40cc-a807-7b6025bc2a99`
 - **artist MBID**：`6d09039b-3e1f-49ef-b8e3-b8b7267a8578`（Person／US vibraphonist）
@@ -139,7 +213,7 @@
   - 四處比對結果：`enum/blue-note.json` 的 `Joel Ross` 只有四筆、無 `KingMaker`；全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 亦 0 筆。
 - **判定**：**`gap`**　**真缺口**：Blue Note 正廠家族發行（Discogs 廠牌鏈＋目錄號＋官網藝人頁三重佐證），四處皆無。
 
-### 6. Kendrick Scott Oracle《A Wall Becomes a Bridge》(2019) — **`gap`**
+### 11. Kendrick Scott Oracle《A Wall Becomes a Bridge》(2019) — **`gap`**
 
 - **RG MBID**：`c8f8ec1c-1899-4495-a6a1-57a555df47c8`
 - **artist MBID**：`71d3da26-aafb-4e29-9159-a4ae9cf4ae9f`（Group）
@@ -160,7 +234,7 @@
 
 ## 四、`unclear`（未覆核）逐筆
 
-共 **876** 筆：MB 兩端都沒有 Blue Note 廠牌可判，Discogs 覆核在本層時間內沒跑到。**這些不是「判為不是 Blue Note」，是「還沒判」**——接手的人請從這張表往下跑。
+共 **727** 筆：MB 兩端都沒有 Blue Note 廠牌可判，Discogs 覆核在本層時間內沒跑到。**這些不是「判為不是 Blue Note」，是「還沒判」**——接手的人請從這張表往下跑。
 
 | 藝人 | 盤名 | 年 | RG MBID | MB 形狀 |
 |---|---|---:|---|---|
@@ -283,259 +357,110 @@
 | Duke Ellington | The First Annual Connecticut Jazz Festival, July 28, 1956 | 1987 | `b8f18e51-c86f-4bd8-9edc-a0074714403d` | label-info 部分空 |
 | Duke Ellington | Hot Summer Dance | 1991 | `528f6107-a2f9-393f-a95d-910e876c276b` | label-info 部分空 |
 | Duke Ellington | The Piano Player | 2005 | `4dea6f3c-c220-42b7-b97a-5a9a86fba31d` | label-info 部分空 |
-| Duke Ellington | Nutcracker Suites | 2013 | `c556b291-3e21-4b3c-94b3-1e37a09979d3` | label-info 全空 |
-| Duke Ellington | The Duke in Munich | 2022 | `74b72626-8c60-4831-9899-a04b99f54001` | label-info 全空 |
 | Duke Ellington and His Orchestra | Harlem | 1985 | `38a4b0af-2771-3dda-aec7-0a1ad8cd846b` | label-info 部分空 |
 | Duke Ellington and His Orchestra | The 1953 Pasadena Concert | 1986 | `559a9364-9aca-33d8-85f0-df2654b7695a` | label-info 部分空 |
 | Duke Ellington and His Orchestra | Essential Jazz | 1990 | `8524d047-0918-35dc-be73-2871a46aaa81` | label-info 部分空 |
 | Duke Ellington and His Orchestra | The Symphonic Ellington | 1992 | `1a7ca676-e0f2-3710-90bf-137b02980f52` | label-info 部分空 |
-| Duke Ellington and His Orchestra | Happy Birthday, Duke! The Birthday Sessions Vol. 5 | 1992 | `2242e073-bfb3-4304-8531-075238ce7204` | label-info 全空 |
 | Duke Ellington and His Orchestra | Concert in the Virgin Islands | 2007 | `6db1959c-f88b-4c38-94d8-e8d6843699b2` | label-info 部分空 |
-| Duke Ellington and His Orchestra | Caravan - The Fargo Concert 1940 Vol. II | 2014 | `26580b39-185f-4deb-ac35-efa98ca74ede` | label-info 全空 |
 | Duke Ellington and His Orchestra | Rotterdam 1969 | 2016 | `55db4feb-450f-4063-afa5-4688005993b7` | label-info 部分空 |
-| Earl Klugh | Naked Guitar | 2005 | `cd623a0a-af33-3d49-b942-98ec96bc3547` | label-info 全空 |
 | Earl Klugh | The Spice of Life | 2008 | `74954ad8-8ab3-3243-92e7-0a8b6b9c60ff` | label-info 部分空 |
-| Edmond Hall | One Time Too Many | 2012 | `f812baaa-5912-49c9-807d-9ca125591aee` | label-info 全空 |
 | Eliane Elias | Amanda | 1985 | `2d16719d-d44d-355e-ac72-33d1da314943` | label-info 部分空 |
 | Eliane Elias | Kissed by Nature | 2002 | `0071cfe3-388c-3274-ba25-018c5eeac0c3` | label-info 部分空 |
-| Eliane Elias | On the Classical Side | 2010 | `f25c0bb6-c18a-4e6d-91c1-eeec11b1f593` | label-info 全空 |
 | Eliane Elias | Made in Brazil | 2015 | `98bfbff4-7ba2-4902-890a-c9f5bc475a42` | label-info 部分空 |
 | Elvin Jones | Live at "Pit Inn" Tokyo Japan | 1992 | `ee188504-8e96-4bda-8e52-edebaa29a285` | label-info 部分空 |
-| Elvin Jones | At This Point in Time | 1998 | `0351ea63-7b0f-31af-b871-8716589821ac` | label-info 全空 |
 | Elvis Costello | Mighty Like a Rose | 1991 | `61bbd4a1-9275-3a0e-9435-f315ee9e3076` | label-info 部分空 |
-| Elvis Costello | 1996‐05‐20: Paradise Theater, Boston, MA, USA | 1996 | `5fb709d0-f0d8-34eb-961f-802a13fb150a` | label-info 全空 |
-| Elvis Costello | Later | 1996 | `dbcbcb09-19a7-46b9-a8c1-960e53d9ff2f` | label-info 全空 |
-| Elvis Costello | 1996‐05‐15: The Fillmore, San Francisco, CA, USA | 1996 | `e5fc5d25-f13d-3cd3-94bd-829288458b53` | label-info 全空 |
-| Elvis Costello | 1999‐06‐16: Massey Hall, Toronto, ON, Canada | 1999 | `61b15d04-35a1-45d6-8dcd-186f9ba7aed9` | label-info 全空 |
 | Elvis Costello | Il sogno | 2002 | `27452452-23d4-347b-bd68-adc7488bd149` | label-info 部分空 |
 | Elvis Costello | North | 2003 | `c8b51e53-df15-3418-a566-affe80e07d77` | label-info 部分空 |
 | Elvis Costello | Secret, Profane & Sugarcane | 2009 | `b1b6052d-ff2b-449a-83d8-a2f718030f1b` | label-info 部分空 |
 | Elvis Costello | Brilliant Parade | 2020 | `b2996110-63b5-3253-82d5-82cdf50d46c2` | label-info 部分空 |
-| Elvis Costello | Radio Broadcast, Part One (live American radio broadcast) | 2022 | `b982cb8c-0fbe-41ec-89af-507ead28a133` | label-info 全空 |
-| Elvis Costello | 1978-02-07 Berkeley (Remastered, Live On Broadcasting) | 2024 | `cebe114c-4f95-415f-a37d-a8ba15ccdb1d` | label-info 全空 |
 | Enrico Rava | Rava Ullmann Willers Lillich Schäuble | 1989 | `ba53d70a-d92b-4412-92d9-93d705ef5954` | label-info 部分空 |
-| Eric Darius | Retro Forward | 2014 | `6c381fff-951d-45ca-8c54-ffac2f681012` | label-info 全空 |
-| Eric Darius | Breakin’ thru | 2018 | `44cedcd2-30a1-4097-8bd2-73cedba03486` | label-info 全空 |
 | Eric Dolphy | Eric Dolphy in Europe, Volume 2 | 1990 | `2adffebc-21fd-3332-9909-854590707b71` | label-info 部分空 |
 | Eric Dolphy | Left Alone | 2003 | `054716e7-79e3-38ff-afd2-e58466d83330` | label-info 部分空 |
-| Eric Dolphy | Eric Dolphy, a Night in Copenhagen | 2009 | `a3a631e1-9f24-4d0a-8e0a-edf4c5a2aad3` | label-info 全空 |
-| Ettore Fioravanti | Sotto il sole giaguaro | 1989 | `525a926f-09b1-4c6d-81b8-5e8ed3a9c201` | label-info 全空 |
-| Ettore Fioravanti | Sette canzoni | 1990 | `a340bdaa-13c8-4dae-b345-a9b5a1fd3fab` | label-info 全空 |
-| Ettore Fioravanti | Canzoni Non Cantate | 1993 | `18ec8c93-5676-442e-9442-d67831141a35` | label-info 全空 |
-| Ettore Fioravanti | Quasi troppo serio | 2009 | `652d1616-b9ff-4cd7-8274-91ebae263e97` | label-info 全空 |
-| Ettore Fioravanti | Opus Magnum | 2010 | `48fa6318-78aa-4640-87bd-cc9e534ed077` | label-info 全空 |
-| Ettore Fioravanti | Le vie del pane e del fuoco | 2011 | `3cca1444-eadf-408a-be04-849ce1bbb9af` | label-info 全空 |
-| Ettore Fioravanti | Traditori | 2014 | `e77d60f9-22c9-4afe-8ad1-3724b25b61e2` | label-info 全空 |
-| Ettore Fioravanti | Old and New Dances | 2024 | `7e17d7a0-e788-44b2-a247-7f2440233796` | label-info 全空 |
-| Fabrizio Bosso | The Golden Circle | 2013 | `47c51c16-b3dc-4916-a936-56fa60a98495` | label-info 全空 |
-| Fabrizio Bosso | Dialogo a due | 2013 | `60edeefb-408b-42d0-9c46-7f995a835f07` | label-info 全空 |
-| Fabrizio Bosso | Love Vibrations | 2020 | `788ca6c4-0dae-4e64-8154-e418ed64b589` | label-info 全空 |
-| Flavio Boltro | Volare | 2005 | `0842a2dd-a504-3c43-95d8-f518c7fb134c` | label-info 全空 |
-| Flavio Boltro | With Love | 2018 | `46e4a964-919b-4dc2-8480-066a8b75e717` | label-info 全空 |
 | Floratone | Floratone II | 2012 | `48a1142b-f638-4136-9544-cd22ffe9c26e` | label-info 部分空 |
-| Franco D’Andrea Quartet | Dancin' Structures | 2004 | `4390b8bd-65d6-43ff-8e67-2bfa5cae9ad4` | label-info 全空 |
-| Frank Sinatra | Songs Selected From Young At Heart (Restored 2024) | 2024 | `98f6a522-8061-491d-8082-ae15f468b0c2` | label-info 全空 |
-| Freddie Hubbard | Piazzetta Trepponti Comacchio, July 8, 1984 | 1985 | `5d2e2293-fd29-4874-8696-edf67080b72f` | label-info 全空 |
 | Freddie Hubbard | At Jazz Jamboree Warszawa ’91: A Tribute to Miles | 1991 | `043ccfd0-7830-3091-8e45-21c5683542eb` | label-info 部分空 |
-| Gabrielle Cavassa | Gabrielle Cavassa | 2020 | `bc6883d1-c7a1-4695-998e-184ddee7c73d` | label-info 全空 |
 | Gare du Nord | In Search of Excellounge | 2001 | `5f3731a6-d2f0-3486-8712-5afba1fa9666` | label-info 部分空 |
 | Gare du Nord | Kind Of Cool | 2002 | `910d2ac0-9b08-36e7-a492-41ec12970d95` | label-info 部分空 |
-| Geoffrey Keezer | Rising Tide | 2003 | `2465a17e-9ff2-4927-832d-8951601d8783` | label-info 全空 |
-| Geoffrey Keezer | Curveball | 2007 | `ff60a2b2-8ea6-3956-b634-ff505cd723d8` | label-info 全空 |
-| Geoffrey Keezer | Hymn | 2012 | `4e99267d-aa1c-4fce-a91e-5d2cab94457e` | label-info 全空 |
 | George Howard | Love Will Follow | 1986 | `3ce1a1fa-7a80-4a12-905d-ddc4382b4cdc` | label-info 部分空 |
-| George Robert | Live in Taormina | 2001 | `87a184fa-7256-4135-935b-933303c422ff` | label-info 全空 |
-| George Robert | Soul Eyes | 2007 | `8314fa5c-e941-4a00-97e2-e268671064be` | label-info 全空 |
 | Geri Allen | The Gathering | 1998 | `7f60b122-b25f-35da-abd0-85ca1936a9c9` | label-info 部分空 |
 | Geri Allen | The Life of a Song | 2004 | `4c7234f5-359b-30e1-9d53-5fbfd6e0ee3c` | label-info 部分空 |
 | Gino Paoli | Insieme | 1985 | `29cc16cd-079a-3a95-91fe-1ec76847d592` | label-info 部分空 |
-| Gino Paoli | Sempre | 1988 | `6d457a62-ca13-375b-955a-bc07dae1747b` | label-info 全空 |
 | Gino Paoli | Matto come un gatto | 1991 | `ee8d9bd2-32d9-36b3-9e46-7b91803755a2` | label-info 部分空 |
-| Gino Paoli | Per una storia | 2000 | `06165b6d-7ca8-3db8-85a4-a183285a716e` | label-info 全空 |
-| Gino Paoli | Live @ RTSI 25 nov 1980 | 2001 | `74c7d3a3-078e-49fe-a2de-4fbe13ff6f41` | label-info 全空 |
-| Gino Paoli | Se | 2002 | `a5badf09-bd14-304c-9e81-a8c802e49302` | label-info 全空 |
-| Gino Paoli | Ti ricordi? No non mi ricordo | 2004 | `a6007d36-8dca-3e2b-8ad6-a2528d45f481` | label-info 全空 |
-| Gino Paoli | L'unica volta insieme: I mitici lunedì del Sistina 1969-1979 | 2012 | `f56ce762-2ce1-4a3f-9156-7a1d8219a5ae` | label-info 全空 |
 | Gonzalo Rubalcaba | The Trio | 1998 | `8ebd5349-dd56-3257-9378-dff56259e57c` | label-info 部分空 |
 | Gonzalo Rubalcaba | XXI Century | 2011 | `0e638512-2187-40b1-94e3-0d4e9ed741b8` | label-info 部分空 |
-| Gov’t Mule | 1994-12-29: Lake Boone Country Club Raleigh, NC | 1994 | `6d9885da-8ba6-4b57-8b83-ce330cf56a0b` | label-info 全空 |
-| Gov’t Mule | 1996-06-11: Lawrence, KS, USA | 1996 | `30ca71e7-42fe-3c7d-b471-64c3d71bb186` | label-info 全空 |
-| Gov’t Mule | Lynaughs (live, 1997-11-14: Lynaughs, Lexington, KY, USA) | 1997 | `324ff5a7-358a-473c-9977-39ab0b52decb` | label-info 全空 |
-| Gov’t Mule | 1997-03-05: Lynaugh's, Lexington, KY | 1997 | `a9ff4ca2-2252-41e6-a3be-8f460b8da3b9` | label-info 全空 |
-| Gov’t Mule | 1998-09-26: The Odeon, Cleveland, OH | 1998 | `258c341d-7120-4b1c-bd0e-deee6081893d` | label-info 全空 |
 | Gov’t Mule | Live... With a Little Help From Our Friends | 1999 | `d2ed8ba7-4d9b-3f76-9ae2-0ad31c9f4b5a` | label-info 部分空 |
-| Gov’t Mule | 2001‐05‐05: Orpheum Theatre, New Orleans, LA, USA | 2001 | `a5c09042-0357-4a36-99dd-0d8e3a04e0a0` | label-info 全空 |
-| Gov’t Mule | 2003-11-15: The Fillmore, San Francisco, CA, USA | 2003 | `24b27a1f-69d9-36bb-96f6-a08086189ba2` | label-info 全空 |
 | Gov’t Mule | The Deepest End: Live in Concert | 2003 | `c3c6bef1-223e-318e-b2a6-21aa64c18b4f` | label-info 部分空 |
-| Gov’t Mule | Mule Tracks Presents... Deep Ellum Mule | 2004 | `1435d516-7226-3bde-a53e-c1679bb75785` | label-info 全空 |
-| Gov’t Mule | 2004-04-16: The Warfield, San Francisco, CA | 2004 | `71bff388-8116-4d83-8182-3177a9656eea` | label-info 全空 |
-| Gov’t Mule | 2004-09-18: Town Park, Telluride, CO | 2004 | `8845c0c5-4a7b-4a1a-b563-68bd660edd2f` | label-info 全空 |
-| Gov’t Mule | 2005-02-13: Fox Theater, Boulder, CO, USA | 2005 | `7a3af815-3bab-33ab-aef6-970434c8607f` | label-info 全空 |
 | Gov’t Mule | High & Mighty | 2006 | `ce684e6e-8bbc-305d-8752-4ff268c3472e` | label-info 部分空 |
-| Gov’t Mule | 2007-06-16: Bonnaroo Music Festival, Manchester, TN | 2007 | `467f4430-68b7-4c6e-9aab-b096208b57c8` | label-info 全空 |
-| Gov’t Mule | Miles Tour Summer '07 Sala Joy Eslava, Madrid, Spain | 2007 | `82642e28-1d1c-4fbd-9263-7440662b5459` | label-info 全空 |
-| Gov’t Mule | Warren Haynes Presents: The 19th Annual X-Mas Jam & Pre-Jam Ashville, NC | 2007 | `a3460a6e-7edc-4714-af67-b2ae4a452a3f` | label-info 全空 |
-| Gov’t Mule | 2007-12-31: Beacon Theatre, New York, NY | 2007 | `e1b7ac10-520c-4a7e-b210-3c3c767ea277` | label-info 全空 |
-| Gov’t Mule | 2007-06-02: Mountain Jam, Hunter, NY | 2007 | `eb131f9c-24f0-467d-8280-3b40d58f60de` | label-info 全空 |
-| Gov’t Mule | Bonnaroo Music & Arts Festival-Manchester, TN 6/13/09 | 2009 | `164f3b8c-8cad-420c-a4d6-97194852e3fd` | label-info 全空 |
-| Gov’t Mule | Fall '09 - Tower Theatre, Philadelphia, PA 10.31.09 | 2009 | `49eb4eed-a3e3-4db5-abf9-91f0ad4a1d3c` | label-info 全空 |
-| Gov’t Mule | The Soundcheck Series | 2009 | `d1dcaed3-7eaa-4517-90f3-cacd9b8dc45e` | label-info 全空 |
-| Gov’t Mule | 2011-12-31: Mad Mules & Englishmen: The Beacon Theatre, New York City, NY, USA | 2011 | `d2cb1086-79a5-47cf-9520-c5c8d6acc580` | label-info 全空 |
-| Gov’t Mule | Beacon Theatre, New York, December 31, 2011 | 2011 | `ff96b0e4-339f-4d97-834b-d483fa323098` | label-info 全空 |
-| Gov’t Mule | 2012-06-24: Oakdale Theater, Wallingford, CT | 2012 | `0727ccfb-18ce-46fb-b093-0f474fbbf3cd` | label-info 全空 |
-| Gov’t Mule | 2012-12-30 / 31: The Beacon Theatre, New York City, NY, USA | 2012 | `0e8aa2fb-812f-4263-8e49-6ff97e1f217b` | label-info 全空 |
-| Gov’t Mule | Mountain Jam - Hunter Mountain, NY (June 1, 2012) | 2012 | `64d0bb3a-d697-4ab8-81b6-6a82f06f37ba` | label-info 全空 |
-| Gov’t Mule | 2013-05-03: Mahalia Jackson Theater New Orleans, LA, USA | 2013 | `70489e26-4fba-4deb-a644-85291999bc3f` | label-info 全空 |
-| Gov’t Mule | Gov’t Mules’s, Island Exodus IV | 2013 | `b9fe5ceb-424f-4aba-ab04-d08d72a1d687` | label-info 全空 |
-| Gov’t Mule | 2014-10-31: Taft Theatre, Cincinnati, OH, USA | 2014 | `2029bac0-dadf-463d-b0c1-2e5c201caa6e` | label-info 全空 |
-| Gov’t Mule | The Beacon Theatre | 2015 | `81bd8dd7-4655-4b20-b15d-b92921787a5a` | label-info 全空 |
-| Gov’t Mule | 2017-11-02: Fabrik, Hamburg, DE | 2017 | `2fa25b23-aa66-4c5c-b99d-2e6cec462eda` | label-info 全空 |
-| Gov’t Mule | 2017-10-31 Paradiso, Amsterdam, NL | 2017 | `3638584a-1c10-44db-8312-7c8f0ad28c4d` | label-info 全空 |
-| Gov’t Mule | 2017-06-15 Live Club, Milan, IT | 2017 | `43c85977-0a4f-4898-a9ee-6bfd3098fce9` | label-info 全空 |
-| Gov’t Mule | 2017-06-14 Kaufleuten, Zurich, CH | 2017 | `4d1216c6-fa80-4be7-95b6-284e9fe888e2` | label-info 全空 |
-| Gov’t Mule | 2017-12-31: The Beacon Theatre, New York City, NY, USA | 2017 | `9f0fcb57-43d8-4260-b748-57a0feb8e304` | label-info 全空 |
-| Gov’t Mule | 2018-07-13: PNC Bank Center, Holmdel, NJ | 2018 | `ba860df0-7388-4b00-ba68-7b5c1d006bc3` | label-info 全空 |
-| Gov’t Mule | 2019‐07‐07 Roanoke Island Festival Park, Manteo, NC | 2019 | `2cd2eb2b-df3a-4265-a1af-fea280de760f` | label-info 全空 |
-| Gov’t Mule | 2019-07-11 MECU Pavilion, Baltimore, MD | 2019 | `53c1361c-0729-4e1b-9ff1-1d4165c93276` | label-info 全空 |
-| Gov’t Mule | Bring On the Music: Live at the Capitol Theatre, Part 2 | 2019 | `a015c82d-5cb7-43d1-920c-e98ac80f2557` | label-info 全空 |
-| Gov’t Mule | 2022-08-13: Westville Bowl, New Haven, CT, USA | 2022 | `3ee47fdb-ca76-43bc-9ec0-6d6a7d1cfe31` | label-info 全空 |
-| Gov’t Mule | 2022-01-19: Jewel Paradise Cove Runaway Bay, Jamaica | 2022 | `7cf884dc-d75c-4485-8a48-8af2dbb98453` | label-info 全空 |
-| Gov’t Mule | 2022-08-06: Beak & Skiff Apple Orchards, Lafayette, NY, USA | 2022 | `e93ba6f1-a4da-4e94-b924-ee0662006c82` | label-info 全空 |
-| Gov’t Mule | 2023-01-18: Govt Mule & Friends, Island Exodus 13, Runaway Bay, Jamaica | 2023 | `be8d6e01-549f-474f-8ee7-5c0bb1594dab` | label-info 全空 |
-| Gov’t Mule | 2024-12-28: College Street Music Hall New Haven, CT | 2024 | `96ed30b9-f1c0-46bf-b949-454682d2d7ca` | label-info 全空 |
-| Gov’t Mule | 2024-05-01: Daze Between New Orleans | 2024 | `cb56c498-9c90-4a8a-82d7-8ba1e24911e1` | label-info 全空 |
-| Greg Osby | Reflections of the Eternal Line | 2020 | `19e956ed-727d-438c-9ec7-9e73d0048b3b` | label-info 全空 |
 | Grover Washington, Jr. | Grover Live | 2010 | `3cb9628c-bb80-4137-8040-0b9385d40ebf` | label-info 部分空 |
-| Götz Alsmann | Eventuell | 2018 | `bb584195-4f5c-48fd-892a-335255b2e725` | label-info 全空 |
 | Hampton Hawes | All Night Session!, Volume 2 | 1991 | `08e7a126-455a-3568-a1cf-54b4ac8338d4` | label-info 部分空 |
 | Hampton Hawes | All Night Session!, Volume 3 | 1991 | `c5d89afc-cdc1-3656-abc7-d116b62d630d` | label-info 部分空 |
 | Hampton Hawes | The Sermon | 2002 | `c031d202-f25c-3dc5-b026-18db800aa20c` | label-info 部分空 |
 | Hank Jones | I Remember You | 1987 | `39e10860-f9f3-44f9-9861-b4927523f76c` | label-info 部分空 |
 | Hank Jones | The Oracle | 1989 | `3fce0fb8-9675-381f-9656-3d6b2a2625a0` | label-info 部分空 |
-| Hank Jones | Just for Fun | 1991 | `0bfcb1b1-7023-38d3-bfb1-31043049aeb3` | label-info 全空 |
 | Hank Jones | Jesper Thilo Quintet Featuring Hank Jones | 1991 | `81f3774d-e4ca-412b-ac44-ee0f54e013d4` | label-info 部分空 |
-| Hank Jones | Bluesette | 2002 | `17408d06-4f3c-3e48-8ee7-8f8d09bef859` | label-info 全空 |
-| Hank Jones | Hank and Frank | 2006 | `4d237414-2eda-407b-adb5-f59be6afed0d` | label-info 全空 |
 | Henri Salvador | Ma chère et tendre | 2003 | `738adfa4-024e-3aaa-a17a-7aebc80be4d3` | label-info 部分空 |
 | Herbie Hancock | Dis Is da Drum | 1994 | `56859652-9ec0-312f-bc84-2e2f15fcf39e` | label-info 部分空 |
 | Herbie Hancock | 1+1 | 1997 | `929696e9-fff3-3720-8736-0a4af7ab5ef6` | label-info 部分空 |
 | Herbie Hancock | Gershwin’s World | 1998 | `4942f382-8e44-3d31-9b50-07fb940598ea` | label-info 部分空 |
 | Herbie Hancock | Possibilities | 2005 | `6b984369-6e16-3600-9f75-b0f1e6f8d8c0` | label-info 部分空 |
 | Herbie Hancock | River: The Joni Letters | 2007 | `056a9f39-b5a6-338f-946f-4cc4e22ce1e7` | label-info 部分空 |
-| Herbie Hancock | 2007-06-18: Britt Amphitheater, Jacksonville, OR | 2007 | `70f5c76a-32db-4335-b5a8-57d56b26c2be` | label-info 全空 |
-| Herbie Hancock | 2008-12-08: Goeteborg, SE | 2008 | `5a142253-7ec6-46da-ac5c-f937308949e0` | label-info 全空 |
-| Herbie Hancock | Complete Live at Jorgie's 1961 | 2012 | `20c69e97-a517-4aaf-980f-c80a5abd7f28` | label-info 全空 |
 | Herbie Hancock | Future Shock Live – Live at Yumiuri Land Open East Theatre 1984 | 2022 | `b6737c1b-8b78-441d-b338-e47283a28084` | label-info 部分空 |
 | Herbie Hancock | Live in Chicago 1977 | 2022 | `f1218504-8c44-479a-b668-4fb25ab1a125` | label-info 部分空 |
 | Horace Silver | The Baghdad Blues - 1959 | 1999 | `7fff707f-b3c3-3a51-a7a3-c48ed2cde0eb` | label-info 部分空 |
 | Irakere | Boleros inigualables | 1996 | `58ff131f-1206-48de-bc55-ff1083764eaa` | label-info 部分空 |
-| Israel “Cachao” López | Descargas: Cuban Jam Sessions | 2000 | `36b07e53-9105-3b3d-bc69-8150ab640224` | label-info 全空 |
 | J.J. Cale | Number 10 | 1992 | `f9f3732a-97cf-3955-b74c-6dab024ce7fa` | label-info 部分空 |
-| J.J. Cale | Live in London | 1994 | `60751eca-4dd2-4e1b-801d-c585a38a56ca` | label-info 全空 |
-| J.J. Cale | KFOG Private Show, San Francisco 2002 | 2002 | `1ba2ac07-12e7-48a2-9812-24c65d9f1030` | label-info 全空 |
-| J.J. Cale | After Hours in Minneapolis | 2019 | `a4c7216e-c919-469b-8943-4ecbf7f2e41a` | label-info 全空 |
 | Jack DeJohnette | The Jack DeJohnette Piano Album | 1985 | `11f62416-38b4-3149-8b8e-11d0ffed567f` | label-info 部分空 |
 | Jack DeJohnette | Parallel Realities | 1990 | `f40479e4-e4b7-3e00-a560-19e3e714eb65` | label-info 部分空 |
-| Jack DeJohnette | For Evans Sake | 1992 | `3994657c-3d8f-4be0-a2e7-81890bddd9ed` | label-info 全空 |
 | Jack DeJohnette | Music for the Fifth World | 1992 | `ae189b70-5cd0-3cdf-adb5-f49844f93708` | label-info 部分空 |
 | Jack DeJohnette | Dancing With Nature Spirits | 1996 | `275348a3-9bb2-3363-9865-26e62442ada7` | label-info 部分空 |
-| Jack DeJohnette | Music in the Key of Om | 2005 | `c86f1d3e-ac24-4f4a-9d63-35e33136ff9f` | label-info 全空 |
-| Jack DeJohnette | The Green Field | 2006 | `a8b13f46-08a6-3162-ba4c-ca32548cb6d5` | label-info 全空 |
-| Jack DeJohnette | Saalfelden | 2021 | `f0516819-e747-47dd-863b-adb00e265dda` | label-info 全空 |
-| Jack DeJohnette | The Art of The Quartet Vol.1 (Remastered) | 2025 | `85ba61cd-b228-46c1-a6af-4a632b1bb34d` | label-info 全空 |
-| Jack Walrath | Gut Feelings | 1990 | `6ece7e3b-d6c2-47e2-936e-2dad00baf9e3` | label-info 全空 |
 | Jack Walrath | Single Petal of a Rose | 1994 | `2c7f8eaa-baa6-3514-9860-e2b60d99c3ce` | label-info 部分空 |
 | Jackie McLean | The Jackie Mac Attack Live | 1993 | `131e9076-a8b5-4ece-852f-d434f9d36205` | label-info 部分空 |
-| Jackie McLean | Hat Trick | 1996 | `823b61c2-8402-4f27-a611-d95806fd703c` | label-info 全空 |
-| Jackie McLean | Fire and Love | 1997 | `eca6903a-3e10-43ad-a40d-f480aa474255` | label-info 全空 |
-| Jackie McLean | Monuments | 2016 | `63e46365-b900-40a3-a80d-7cbd306c4bb3` | label-info 全空 |
 | Jacky Terrasson | Claude Debussy… et le jazz: Preludes for a quartet | 2018 | `c08b54ab-2068-480c-ae49-0d8a23ef345f` | label-info 部分空 |
 | James Blood Ulmer | Guitar Music | 2003 | `c5a3eda0-1a5a-3d6c-beee-cbd2d13d7147` | label-info 部分空 |
-| James Blood Ulmer | The Stone Residency 2015 - Day 2 Set 2 | 2021 | `1addd634-b5c1-4eef-b131-c75e92f4bb98` | label-info 全空 |
-| James Blood Ulmer | The Stone Residency 2015 - Day 2 Set 1 | 2021 | `4229dd4f-79b4-4f1a-8dd8-7c5907d9516c` | label-info 全空 |
-| James Francies | Flight | 2018 | `f4539fe1-df19-4ad4-99d3-c2d5a2539471` | label-info 全空 |
 | James Moody | Moody Plays Mancini | 1997 | `d48bb2c4-8a75-304a-8391-5887246491ad` | label-info 部分空 |
-| James Newton | If Love | 1990 | `c89e1131-b86f-48a8-9080-ab830ce8fb30` | label-info 全空 |
 | Jamie Cullum | Live at Blenheim Palace | 2004 | `c3b9a04d-e682-3e5a-a201-2ec2a727eb50` | label-info 部分空 |
-| Jamie Cullum | Live at Ronnie Scott's | 2005 | `8e5645cc-643a-3d1f-8451-e1978ac95981` | label-info 全空 |
 | Jamie Cullum | The Pursuit | 2009 | `86a4f207-945a-4a3b-bd78-4eb2dbb4d51c` | label-info 部分空 |
 | Jamie Cullum | The Song Society Playlist | 2018 | `220a0b61-bc64-4c4b-a5d1-8d4d9d079cdc` | label-info 部分空 |
-| Jason Moran | The Bandwagon | 2003 | `77690c69-cda4-3031-a834-bcdb3521a2b4` | label-info 全空 |
-| Jason Moran | The Sound Will Tell You | 2021 | `7cda364c-88a5-4077-b081-208b059d3981` | label-info 全空 |
 | Jason Moran | Let My People Go | 2021 | `f5f8f5db-9cc1-4fa6-bc06-75c3d941f196` | label-info 部分空 |
-| Jason Moran | From the Dancehall to the Battlefield | 2023 | `3caf1de2-9fb7-468d-a8d4-1ccd0104175e` | label-info 全空 |
-| Jason Moran | Go To Your North | 2025 | `a417747d-7217-4ff7-ace7-01290d081049` | label-info 全空 |
-| Jason Moran | Shards | 2026 | `33494d69-85ec-4a1f-8b1a-5eca481366eb` | label-info 全空 |
-| Javier Edgardo Girotto | 10/15 | 2009 | `4b21417e-6ef9-41c3-a1d4-ef1d14565a5c` | label-info 全空 |
-| Javier Edgardo Girotto | Alrededores de la ausencia | 2009 | `fd073e7b-0c7a-4e6e-a6e3-9b354020db32` | label-info 全空 |
-| Javier Edgardo Girotto | Kaleidoscopic Arabesque | 2010 | `2ac88c18-1256-44af-9f14-64bcba992c5d` | label-info 全空 |
-| Javier Edgardo Girotto | Iguazù | 2011 | `b5d95340-18e4-4113-9167-98b0d654b8cc` | label-info 全空 |
-| Javier Edgardo Girotto | Tango or Not Tango | 2015 | `0cb68970-15be-4e1a-958f-dd2a19798e24` | label-info 全空 |
-| Javon Jackson | Jackson Plays Dylan | 2026 | `2dfb9ebf-1f03-49ac-a6ce-21d7788a0f5e` | label-info 全空 |
 | Jazztronik | Horizon | 2003 | `bfc17d43-1899-39f7-bd9f-d2537d326781` | label-info 部分空 |
 | Jazztronik | 七色 | 2004 | `62c27b64-8849-3716-8d80-f6c61d6ea1af` | label-info 部分空 |
 | Jazztronik | Nu Balance | 2005 | `63785fd2-4cf5-34eb-ba57-e21b2371d212` | label-info 部分空 |
 | Jazztronik | Real Clothes: Motion Pictures Sound Track | 2009 | `0a753e43-fa9d-430f-9bca-c957931adec6` | label-info 部分空 |
-| Jean-Pierre Como | Padre | 1998 | `16ddfb78-4ea7-4d01-8e99-ddba88643303` | label-info 全空 |
-| Jean-Pierre Como | Storia... | 2001 | `8ed4cf7b-a1c9-4379-8bbf-47973f14f40e` | label-info 全空 |
 | Jean‐Luc Ponty | Storytelling | 1989 | `ecf3287f-175d-354a-a59a-16386205bfe1` | label-info 部分空 |
 | Jean‐Luc Ponty | The Atacama Experience | 2007 | `989f420c-475d-3c13-a983-ce82fd3afa3f` | label-info 部分空 |
 | Jeff Mills | And Then There Was Light | 2017 | `7b855892-220a-40fd-ba15-ccb3b379b15b` | label-info 部分空 |
-| Jeff Mills | Moon - The Area of Influence | 2019 | `90d50613-eb20-4820-b21b-0e7d6b59a859` | label-info 全空 |
-| Jerry Bergonzi | Art | 1999 | `8f39f3c6-7dbb-4b51-9764-4c4891fe0f59` | label-info 全空 |
-| Jerry Bergonzi | Sunday | 2018 | `1c436a0b-a0a3-4314-a3be-f02f004de330` | label-info 全空 |
 | Jimmy McGriff | Steppin' Up | 1987 | `18d33458-7597-395b-9db5-e7e9b97ee48a` | label-info 部分空 |
-| Jimmy McGriff | Blue to the Bone | 1988 | `72e37800-da59-4210-b43e-cd0bdcd5829b` | label-info 全空 |
 | Jimmy McGriff | You Ought to Think About Me | 1990 | `0a277e6d-bc29-4c13-8f3c-e1cc67723d5b` | label-info 部分空 |
 | Jimmy McGriff | On the Blue Side | 1990 | `ffd83419-0da2-3947-934d-62305f86361f` | label-info 部分空 |
-| Jimmy McGriff | Straight Up | 1998 | `7475c7ce-8360-49f5-95d8-1930f6263786` | label-info 全空 |
 | Jimmy Smith | Prime Time | 1989 | `3e71b400-58c6-389c-9548-81cd07f942f2` | label-info 部分空 |
 | Jimmy Smith | Fourmost - Recorded Live at Fat Tuesday's NYC | 1991 | `3409a02c-7049-33ff-bbab-a4e9405a2848` | label-info 部分空 |
 | Jimmy Smith | Fourmost Return | 2006 | `cd71f39d-4715-48c4-bfcd-dbfe0400ae2e` | label-info 部分空 |
 | Jimmy Witherspoon | Jimmy Witherspoon With the Junior Mance Trio | 1997 | `d5fe04de-e89b-3cf8-add2-99f83af21694` | label-info 部分空 |
-| Jimmy Witherspoon | Spoon Meets Pao | 2002 | `7ef26579-8dc3-415b-a2a8-dcbe14ee5052` | label-info 全空 |
-| Joe Chambers | Crystals | 2004 | `11573dd7-93f1-4751-aa10-65da451456df` | label-info 全空 |
 | Joe Henderson | Akio | 1989 | `13388ae2-5039-41e7-b6a7-14673bfde01e` | label-info 部分空 |
 | Joe Henderson | Four! | 1994 | `d146e7de-4fd8-3419-80e1-4c623c7df8ba` | label-info 部分空 |
-| Joe Henderson | Sextet & Quartet | 1995 | `06d7f4f3-649d-4c1c-9bc9-cb8793e47cb8` | label-info 全空 |
 | Joe Henderson | Porgy and Bess | 1997 | `134fad0e-804f-3bff-a566-38c6dc3a559a` | label-info 部分空 |
 | Joe Henderson | Consonance: Live at the Jazz Showcase | 2026 | `61fa6454-ed1f-4366-b721-e491d4a91701` | label-info 部分空 |
 | Joe Lovano | Solid Steps | 1986 | `c26b2a19-44ca-4915-9461-b49de407bd6b` | label-info 部分空 |
 | Joe Lovano | Kurdish Dance | 1992 | `1ff3b078-46c2-320e-934a-86f3338a3d27` | label-info 部分空 |
 | Joe Pass | Sound Project | 1987 | `7d51b6ee-1e74-393a-80b0-80b5fc0f2794` | label-info 部分空 |
-| Joe Pass | Copenhagen Jazz Festival 1988 | 1988 | `8eed405e-d7e8-4dc1-8b5e-768f8d1423fc` | label-info 全空 |
 | Joe Pass | Joe Pass Quartet Live at Yoshi's | 1992 | `ccd1e566-3aeb-352c-ac8f-ccf5649c403a` | label-info 部分空 |
 | Joe Pass | Songs for Ellen | 1994 | `54808341-3fb7-32f7-b70b-cacf7cfa21e5` | label-info 部分空 |
 | Joe Williams | Having the Blues Under a European Sky | 1985 | `e4f0a202-b385-3abc-a4e0-5830d1d04915` | label-info 部分空 |
 | Joe Williams | The Overwhelming Joe Williams | 1988 | `bc982d56-6120-3eb5-b2dd-1fb4c2da01a3` | label-info 部分空 |
-| Joe Williams | Joe Williams With Thad Jones / Mel Lewis Orchestra | 1994 | `d9c99855-3b29-302c-b5de-4a4966a208a5` | label-info 全空 |
 | Joe Williams | Me and the Blues | 1999 | `6827dd0e-51cc-3d40-ab21-0dace415948c` | label-info 全空 |
-| Joe Williams | End of a Beautiful Friendship | 2020 | `ef1f16fc-3c3a-4db6-89a2-34924bf41cca` | label-info 全空 |
 | Joey Calderazzo | Simply Music | 1997 | `70031008-d34c-3b08-b00a-5f185cf381f9` | label-info 全空 |
-| Joey Calderazzo | Calderazzo Trio: 2011-10-20, Toulouse | 2011 | `0256c34a-17e9-47d4-b64c-a71122fbf269` | label-info 全空 |
 | Joey DeFrancesco | All of Me | 1989 | `1f496ed1-d5a2-329c-b997-aa14586beff4` | label-info 部分空 |
 | Joey DeFrancesco | Reboppin' | 1992 | `54238428-f0aa-3672-97ae-176ddc210cec` | label-info 部分空 |
-| Joey DeFrancesco | The Champ, Round 2 | 2000 | `8adeb690-4a40-4ae5-933f-4b3f5410de4f` | label-info 全空 |
 | Joey DeFrancesco | 40 | 2001 | `0231d965-8660-465c-92da-8df24767dbed` | label-info 全空 |
-| Joey DeFrancesco | Estate | 2008 | `88a11fb9-538f-429f-a067-d1f532b0eb26` | label-info 全空 |
 | Joey DeFrancesco | In the Key of the Universe | 2019 | `32089a73-3737-4466-8331-915f038be34c` | label-info 部分空 |
 | John Coltrane | On Green Dolphin Street | 1997 | `35537d22-bdb3-39b9-a528-1264893119ef` | label-info 部分空 |
 | John Coltrane | Complete Live in Stuttgart 1963 | 2010 | `4a22b297-9231-4d31-926f-60e3fb6368b6` | label-info 部分空 |
-| John Patton | Green 14 | 2015 | `b8ffca66-51fd-4f09-9dcc-bdeb9bf7ca50` | label-info 全空 |
 | John Scofield | Live at the Artpark, Lewiston, NY | 1995 | `08b854e5-d73e-4a23-af86-d4ac66778cbd` | label-info 全空 |
-| John Scofield | Live in Zürich | 1998 | `e59173a5-d504-44e6-9983-a80f35246ced` | label-info 全空 |
 | John Scofield | Old Folks | 1999 | `a37c53e0-2ccd-45e0-8337-ec44ee3c4214` | label-info 部分空 |
-| John Scofield | Live at the Palace Theatre | 2000 | `308e5317-9fc8-42cd-b0ad-e70b7dac961e` | label-info 全空 |
 | John Scofield | Live Fasching Stockholm Sweden 2000 | 2000 | `6c9fd708-b921-4977-854b-b6055555d06f` | label-info 全空 |
-| John Scofield | Live at Michelson Hall | 2002 | `b348e354-2239-4d2b-8201-97dc227606a5` | label-info 全空 |
-| John Scofield | Berkfest, MA 8.11.02 | 2002 | `d7ed269a-6823-4552-aaf0-bed723fcc1b0` | label-info 全空 |
 | John Scofield | Dortmund 2007 | 2007 | `6638db85-7188-44c0-acde-db99e7b1c6d9` | label-info 全空 |
-| John Scofield | Linz 2007 | 2007 | `a8f70761-7546-4b02-b05b-1f732a03d4e8` | label-info 全空 |
-| John Storgårds | Percussion Concertos | 2021 | `7a6e98c4-a270-4156-9405-ae07a011c749` | label-info 全空 |
 | Johnathan Blake | Trion | 2018 | `27c7c982-718b-49ce-be80-767bea943ad8` | label-info 部分空 |
 | Johnathan Blake | Lost In Geneva | 2026 | `ed3e742e-521c-4427-b984-46f1d344eac2` | label-info 全空 |
 | Josh Johnson | Spring Garden Promenade | 2025 | `40874b33-54ba-4a04-85cf-6da5236fb1eb` | label-info 全空 |
-| Juliano Rossi | If my friends could see me now | 2004 | `8d740c63-1b67-41a4-ad87-f7bf94ed418e` | label-info 全空 |
 | Junko Onishi Trio | Play, Piano, Play: Live in Europe | 1996 | `8ef986a9-7b22-4bae-ba3c-28c7879daeb4` | label-info 全空 |
 | Kandace Springs | My Name Is Sheba | 2022 | `f8e36b01-eded-42ab-9f5b-6b29ee2e8ea5` | label-info 全空 |
 | Karsh Kale | Tokyo Rotation 1 - Day 2 Set 2 | 2021 | `7beb4802-71e4-4275-8273-2068893875f2` | label-info 全空 |
@@ -1051,6 +976,6 @@
 - **MB 廠牌判定 7,184／7,184 全數跑完**，結果：`other-label-only` 6,159／`all-label-info-empty` 609／`partial-label-info-empty` 416／**`bn-label-present` 0**。
 - ⚠ **`bn-label-present` 掛零是本層最重要的整體結論**：**沒有任何一個「MB 上掛著 Blue Note 家族廠牌」的 release-group 被列舉檔漏掉。**換句話說，`enum/blue-note.json` 的 label 軸對「MB 有填 Blue Note 廠牌」的碟是**完整的**，**它唯一的盲區就是 MB 那一端沒把 Blue Note 填上去**（空 `label-info`，或掛成母公司）。
 - **Discogs 覆核進度：30／1,025**。
-- **Discogs 覆核：147／1,025**（順序：`label-info` 全空且該藝人在 ±8 年內有已知 Blue Note 盤者優先，其次是部分空且鄰近者，最後是其餘）。
-- **`not-blue-note` 143 筆是逐筆核過年份與掛名的**（Discogs 搜尋結果須年份差 ≤2 年、且掛名字串含該藝人名，才拿來判廠牌——否則會被 `Love Is Here to Stay` 這種同名碟帶偏）。
+- **Discogs 覆核：297／1,025**（順序：`label-info` 全空且該藝人在 ±8 年內有已知 Blue Note 盤者優先，其次是部分空且鄰近者，最後是其餘）。
+- **`not-blue-note` 287 筆是逐筆核過年份與掛名的**（Discogs 搜尋結果須年份差 ≤2 年、且掛名字串含該藝人名，才拿來判廠牌——否則會被 `Love Is Here to Stay` 這種同名碟帶偏）。
 

@@ -5,7 +5,7 @@
   "artistsTotal": 541,
   "rgResolved": 1231,
   "candidatesScreened": 7184,
-  "discogsVerified": 147,
+  "discogsVerified": 297,
   "discogsTotal": 1025,
   "status": "partial"
  },
@@ -22,12 +22,12 @@
   "note": "沒有任何「MB 掛著 Blue Note 家族廠牌」的 RG 被列舉檔漏掉；列舉檔的唯一盲區是 MB 的 label-info 殘缺。"
  },
  "verdictCounts": {
-  "unclear": 876,
-  "not-blue-note": 143,
-  "gap": 6
+  "unclear": 727,
+  "not-blue-note": 287,
+  "gap": 11
  },
  "gapReasonCounts": {
-  "`label-info` 空": 5,
+  "`label-info` 空": 10,
   "MB 掛成母公司 `Capitol Records`＋另一筆 `label-info` 空": 1
  },
  "records": [
@@ -4490,13 +4490,14 @@
    "artistMbid": "3af06bc4-68ad-4cae-bb7a-7eeeb45e411f",
    "artistType": null,
    "artistDisambig": "US composer, pianist & jazz bandleader",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Avatar Studios／DiMenna Center for Classical Music, New York City／G. Schirmer Inc.／Harmonia Mundi／Harmonia Mundi USA。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/c556b291-3e21-4b3c-94b3-1e37a09979d3"
+    "MB release-group：https://musicbrainz.org/release-group/c556b291-3e21-4b3c-94b3-1e37a09979d3",
+    "Discogs `database/search`（artist=Duke Ellington, release_title=Nutcracker Suites）回 8 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -4543,13 +4544,14 @@
    "artistMbid": "3af06bc4-68ad-4cae-bb7a-7eeeb45e411f",
    "artistType": null,
    "artistDisambig": "US composer, pianist & jazz bandleader",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 其他廠牌。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/74b72626-8c60-4831-9899-a04b99f54001"
+    "MB release-group：https://musicbrainz.org/release-group/74b72626-8c60-4831-9899-a04b99f54001",
+    "Discogs `database/search`（artist=Duke Ellington, release_title=The Duke in Munich）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -4664,13 +4666,14 @@
    "artistMbid": "c01557ad-d41e-4316-a285-605769e2ab3b",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Delta Music Inc.／LaserLight Digital。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/2242e073-bfb3-4304-8531-075238ce7204"
+    "MB release-group：https://musicbrainz.org/release-group/2242e073-bfb3-4304-8531-075238ce7204",
+    "Discogs `database/search`（artist=Duke Ellington and His Orchestra, release_title=Happy Birthday, Duke! The Birthday Sessions Vol. 5）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -4734,13 +4737,14 @@
    "artistMbid": "c01557ad-d41e-4316-a285-605769e2ab3b",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/26580b39-185f-4deb-ac35-efa98ca74ede"
+    "MB release-group：https://musicbrainz.org/release-group/26580b39-185f-4deb-ac35-efa98ca74ede",
+    "Discogs `database/search`（artist=Duke Ellington and His Orchestra, release_title=Caravan - The Fargo Concert 1940 Vol. II）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -4804,13 +4808,14 @@
    "artistMbid": "5c44b1b8-07ad-4aca-ac5d-ebdad8e62e12",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 BMG Direct／JVC Disc America／Koch Entertainment LLC／Koch Records／Studio 861。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/cd623a0a-af33-3d49-b942-98ec96bc3547"
+    "MB release-group：https://musicbrainz.org/release-group/cd623a0a-af33-3d49-b942-98ec96bc3547",
+    "Discogs `database/search`（artist=Earl Klugh, release_title=Naked Guitar）回 3 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -4874,13 +4879,14 @@
    "artistMbid": "d0025855-ed85-40c1-8584-fa0171862ca2",
    "artistType": null,
    "artistDisambig": "American jazz clarinetist, bandleader",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/f812baaa-5912-49c9-807d-9ca125591aee"
+    "MB release-group：https://musicbrainz.org/release-group/f812baaa-5912-49c9-807d-9ca125591aee",
+    "Discogs `database/search`（artist=Edmond Hall, release_title=One Time Too Many）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -4961,13 +4967,14 @@
    "artistMbid": "9974cbc1-6a00-4a97-8a36-e4a25bfe0293",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 其他廠牌。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/f25c0bb6-c18a-4e6d-91c1-eeec11b1f593"
+    "MB release-group：https://musicbrainz.org/release-group/f25c0bb6-c18a-4e6d-91c1-eeec11b1f593",
+    "Discogs `database/search`（artist=Eliane Elias, release_title=On the Classical Side）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5012,13 +5019,17 @@
    "artistMbid": "d5ac66e4-ea5d-4ebb-9e0d-bed4063208e7",
    "artistType": null,
    "artistDisambig": "jazz drummer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "`label-info` 空",
+   "detail": "MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/0351ea63-7b0f-31af-b871-8716589821ac"
+    "MB release-group：https://musicbrainz.org/release-group/0351ea63-7b0f-31af-b871-8716589821ac（`first-release-date` 1998-03-31、`primary-type` Album）",
+    "MB release `0e5ab3d6-3083-4d4f-9586-a7bc84c5a70d`（1998-03-31、US）——**`label-info` 逐字為空陣列 `[]`**",
+    "**Discogs release 13883750**：https://www.discogs.com/release/13883750-Elvin-Jones-At-This-Point-In-Time——`label` 逐字 `['Blue Note', 'Capitol Records, Inc.', 'Capitol Records, Inc.', 'Capitol Records, Inc.', 'Capitol Records, Inc.', 'A&R Studios', 'EMI MFG.']`、`catno` 逐字 `CDP 7243 4 93385 2 4`、US 1998 CD／Compilation",
+    "**Discogs release 4963884**：https://www.discogs.com/release/4963884-Elvin-Jones-At-This-Point-In-Time——`label` 逐字 `['Blue Note', 'Capitol Records, Inc.', 'EMI', 'EMI', 'Capitol Records, Inc.', 'Capitol Records, Inc.', 'A&R Studios']`、`catno` 逐字 `7243 4 93385 2 4`、Europe 1998 CD／Compilation／Stereo",
+    "四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "gap",
+   "verdictWhy": "**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5064,13 +5075,14 @@
    "artistMbid": "8a338e06-d182-46f2-bd16-30a09bc840ba",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/5fb709d0-f0d8-34eb-961f-802a13fb150a"
+    "MB release-group：https://musicbrainz.org/release-group/5fb709d0-f0d8-34eb-961f-802a13fb150a",
+    "Discogs `database/search`（artist=Elvis Costello, release_title=1996‐05‐20: Paradise Theater, Boston, MA, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5081,13 +5093,14 @@
    "artistMbid": "8a338e06-d182-46f2-bd16-30a09bc840ba",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Star。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/dbcbcb09-19a7-46b9-a8c1-960e53d9ff2f"
+    "MB release-group：https://musicbrainz.org/release-group/dbcbcb09-19a7-46b9-a8c1-960e53d9ff2f",
+    "Discogs `database/search`（artist=Elvis Costello, release_title=Later）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5098,13 +5111,14 @@
    "artistMbid": "8a338e06-d182-46f2-bd16-30a09bc840ba",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/e5fc5d25-f13d-3cd3-94bd-829288458b53"
+    "MB release-group：https://musicbrainz.org/release-group/e5fc5d25-f13d-3cd3-94bd-829288458b53",
+    "Discogs `database/search`（artist=Elvis Costello, release_title=1996‐05‐15: The Fillmore, San Francisco, CA, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5115,13 +5129,14 @@
    "artistMbid": "8a338e06-d182-46f2-bd16-30a09bc840ba",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/61b15d04-35a1-45d6-8dcd-186f9ba7aed9"
+    "MB release-group：https://musicbrainz.org/release-group/61b15d04-35a1-45d6-8dcd-186f9ba7aed9",
+    "Discogs `database/search`（artist=Elvis Costello, release_title=1999‐06‐16: Massey Hall, Toronto, ON, Canada）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5200,13 +5215,14 @@
    "artistMbid": "8a338e06-d182-46f2-bd16-30a09bc840ba",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/b982cb8c-0fbe-41ec-89af-507ead28a133"
+    "MB release-group：https://musicbrainz.org/release-group/b982cb8c-0fbe-41ec-89af-507ead28a133",
+    "Discogs `database/search`（artist=Elvis Costello, release_title=Radio Broadcast, Part One (live American radio broadcast)）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5217,13 +5233,14 @@
    "artistMbid": "8a338e06-d182-46f2-bd16-30a09bc840ba",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/cebe114c-4f95-415f-a37d-a8ba15ccdb1d"
+    "MB release-group：https://musicbrainz.org/release-group/cebe114c-4f95-415f-a37d-a8ba15ccdb1d",
+    "Discogs `database/search`（artist=Elvis Costello, release_title=1978-02-07 Berkeley (Remastered, Live On Broadcasting)）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5251,13 +5268,14 @@
    "artistMbid": "8375f598-db25-4b59-ba59-f04224a02a99",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Shanachie／Shanachie Entertainment Corporation。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/6c381fff-951d-45ca-8c54-ffac2f681012"
+    "MB release-group：https://musicbrainz.org/release-group/6c381fff-951d-45ca-8c54-ffac2f681012",
+    "Discogs `database/search`（artist=Eric Darius, release_title=Retro Forward）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5268,13 +5286,14 @@
    "artistMbid": "8375f598-db25-4b59-ba59-f04224a02a99",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 SagiDarius Music。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/44cedcd2-30a1-4097-8bd2-73cedba03486"
+    "MB release-group：https://musicbrainz.org/release-group/44cedcd2-30a1-4097-8bd2-73cedba03486",
+    "Discogs `database/search`（artist=Eric Darius, release_title=Breakin’ thru）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5319,13 +5338,14 @@
    "artistMbid": "badda5cf-f2c5-4dc2-b3d3-07467bdf0f71",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a3a631e1-9f24-4d0a-8e0a-edf4c5a2aad3"
+    "MB release-group：https://musicbrainz.org/release-group/a3a631e1-9f24-4d0a-8e0a-edf4c5a2aad3",
+    "Discogs `database/search`（artist=Eric Dolphy, release_title=Eric Dolphy, a Night in Copenhagen）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5336,13 +5356,14 @@
    "artistMbid": "3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Barigozzi Studio／Edizioni Musicali Esagono／Solstice Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/525a926f-09b1-4c6d-81b8-5e8ed3a9c201"
+    "MB release-group：https://musicbrainz.org/release-group/525a926f-09b1-4c6d-81b8-5e8ed3a9c201",
+    "Discogs `database/search`（artist=Ettore Fioravanti, release_title=Sotto il sole giaguaro）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5353,13 +5374,14 @@
    "artistMbid": "3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Phrases。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a340bdaa-13c8-4dae-b345-a9b5a1fd3fab"
+    "MB release-group：https://musicbrainz.org/release-group/a340bdaa-13c8-4dae-b345-a9b5a1fd3fab",
+    "Discogs `database/search`（artist=Ettore Fioravanti, release_title=Sette canzoni）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5370,13 +5392,14 @@
    "artistMbid": "3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Alrac Music／C.A. Rossi Editore／Casa Musicale Tarasconi s.r.l.／Edizioni Acqua Azzurra／Edizioni Musicali Mas。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/18ec8c93-5676-442e-9442-d67831141a35"
+    "MB release-group：https://musicbrainz.org/release-group/18ec8c93-5676-442e-9442-d67831141a35",
+    "Discogs `database/search`（artist=Ettore Fioravanti, release_title=Canzoni Non Cantate）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5387,13 +5410,14 @@
    "artistMbid": "3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/652d1616-b9ff-4cd7-8274-91ebae263e97"
+    "MB release-group：https://musicbrainz.org/release-group/652d1616-b9ff-4cd7-8274-91ebae263e97",
+    "Discogs `database/search`（artist=Ettore Fioravanti, release_title=Quasi troppo serio）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5404,13 +5428,14 @@
    "artistMbid": "3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Alfa Music。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/48fa6318-78aa-4640-87bd-cc9e534ed077"
+    "MB release-group：https://musicbrainz.org/release-group/48fa6318-78aa-4640-87bd-cc9e534ed077",
+    "Discogs `database/search`（artist=Ettore Fioravanti, release_title=Opus Magnum）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5421,13 +5446,14 @@
    "artistMbid": "3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Note Sonanti。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/3cca1444-eadf-408a-be04-849ce1bbb9af"
+    "MB release-group：https://musicbrainz.org/release-group/3cca1444-eadf-408a-be04-849ce1bbb9af",
+    "Discogs `database/search`（artist=Ettore Fioravanti, release_title=Le vie del pane e del fuoco）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5438,13 +5464,14 @@
    "artistMbid": "3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Alfa Music／Artesuono Recording Studio。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/e77d60f9-22c9-4afe-8ad1-3724b25b61e2"
+    "MB release-group：https://musicbrainz.org/release-group/e77d60f9-22c9-4afe-8ad1-3724b25b61e2",
+    "Discogs `database/search`（artist=Ettore Fioravanti, release_title=Traditori）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5455,13 +5482,14 @@
    "artistMbid": "3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Casa Del Jazz／Parco Della Musica Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/7e17d7a0-e788-44b2-a247-7f2440233796"
+    "MB release-group：https://musicbrainz.org/release-group/7e17d7a0-e788-44b2-a247-7f2440233796",
+    "Discogs `database/search`（artist=Ettore Fioravanti, release_title=Old and New Dances）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5472,13 +5500,14 @@
    "artistMbid": "98a755b9-cb2a-494f-81a4-0c62d3cf7bc5",
    "artistType": null,
    "artistDisambig": "Italian post-bop jazz trumpet player",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Oneemusic Studios／Via Veneto Jazz。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/47c51c16-b3dc-4916-a936-56fa60a98495"
+    "MB release-group：https://musicbrainz.org/release-group/47c51c16-b3dc-4916-a936-56fa60a98495",
+    "Discogs `database/search`（artist=Fabrizio Bosso, release_title=The Golden Circle）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5489,13 +5518,14 @@
    "artistMbid": "98a755b9-cb2a-494f-81a4-0c62d3cf7bc5",
    "artistType": null,
    "artistDisambig": "Italian post-bop jazz trumpet player",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 其他廠牌。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/60edeefb-408b-42d0-9c46-7f995a835f07"
+    "MB release-group：https://musicbrainz.org/release-group/60edeefb-408b-42d0-9c46-7f995a835f07",
+    "Discogs `database/search`（artist=Fabrizio Bosso, release_title=Dialogo a due）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5506,13 +5536,14 @@
    "artistMbid": "98a755b9-cb2a-494f-81a4-0c62d3cf7bc5",
    "artistType": null,
    "artistDisambig": "Italian post-bop jazz trumpet player",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/788ca6c4-0dae-4e64-8154-e418ed64b589"
+    "MB release-group：https://musicbrainz.org/release-group/788ca6c4-0dae-4e64-8154-e418ed64b589",
+    "Discogs `database/search`（artist=Fabrizio Bosso, release_title=Love Vibrations）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5523,13 +5554,14 @@
    "artistMbid": "fb7dacde-3469-43cd-8c75-fa1804687743",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/0842a2dd-a504-3c43-95d8-f518c7fb134c"
+    "MB release-group：https://musicbrainz.org/release-group/0842a2dd-a504-3c43-95d8-f518c7fb134c",
+    "Discogs `database/search`（artist=Flavio Boltro, release_title=Volare）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5540,13 +5572,14 @@
    "artistMbid": "fb7dacde-3469-43cd-8c75-fa1804687743",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Greta's Bakery Music。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/46e4a964-919b-4dc2-8480-066a8b75e717"
+    "MB release-group：https://musicbrainz.org/release-group/46e4a964-919b-4dc2-8480-066a8b75e717",
+    "Discogs `database/search`（artist=Flavio Boltro, release_title=With Love）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5574,13 +5607,14 @@
    "artistMbid": "8145fd7d-1967-4275-afce-fb778a240d49",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/4390b8bd-65d6-43ff-8e67-2bfa5cae9ad4"
+    "MB release-group：https://musicbrainz.org/release-group/4390b8bd-65d6-43ff-8e67-2bfa5cae9ad4",
+    "Discogs `database/search`（artist=Franco D’Andrea Quartet, release_title=Dancin' Structures）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5591,13 +5625,14 @@
    "artistMbid": "197450cd-0124-4164-b723-3c22dd16494d",
    "artistType": null,
    "artistDisambig": "American singer and actor, “Ol’ Blue Eyes”",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/98f6a522-8061-491d-8082-ae15f468b0c2"
+    "MB release-group：https://musicbrainz.org/release-group/98f6a522-8061-491d-8082-ae15f468b0c2",
+    "Discogs `database/search`（artist=Frank Sinatra, release_title=Songs Selected From Young At Heart (Restored 2024)）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5608,13 +5643,14 @@
    "artistMbid": "59ae7a1a-f454-435b-8a5a-e327e692bb5a",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Not On Label。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/5d2e2293-fd29-4874-8696-edf67080b72f"
+    "MB release-group：https://musicbrainz.org/release-group/5d2e2293-fd29-4874-8696-edf67080b72f",
+    "Discogs `database/search`（artist=Freddie Hubbard, release_title=Piazzetta Trepponti Comacchio, July 8, 1984）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5642,13 +5678,14 @@
    "artistMbid": "7120c991-558d-42bf-b810-ba1e8db80916",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Jazz Fest Records／New Orleans Record Press／New Orleans Vinyl Club／Not On Label (Gabrielle Cavassa Self-released)。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/bc6883d1-c7a1-4695-998e-184ddee7c73d"
+    "MB release-group：https://musicbrainz.org/release-group/bc6883d1-c7a1-4695-998e-184ddee7c73d",
+    "Discogs `database/search`（artist=Gabrielle Cavassa, release_title=Gabrielle Cavassa）回 3 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5693,13 +5730,14 @@
    "artistMbid": "5b098a4b-6a89-4667-b85e-45826817c7f2",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/2465a17e-9ff2-4927-832d-8951601d8783"
+    "MB release-group：https://musicbrainz.org/release-group/2465a17e-9ff2-4927-832d-8951601d8783",
+    "Discogs `database/search`（artist=Geoffrey Keezer, release_title=Rising Tide）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5710,13 +5748,14 @@
    "artistMbid": "5b098a4b-6a89-4667-b85e-45826817c7f2",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/ff60a2b2-8ea6-3956-b634-ff505cd723d8"
+    "MB release-group：https://musicbrainz.org/release-group/ff60a2b2-8ea6-3956-b634-ff505cd723d8",
+    "Discogs `database/search`（artist=Geoffrey Keezer, release_title=Curveball）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5727,13 +5766,14 @@
    "artistMbid": "5b098a4b-6a89-4667-b85e-45826817c7f2",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/4e99267d-aa1c-4fce-a91e-5d2cab94457e"
+    "MB release-group：https://musicbrainz.org/release-group/4e99267d-aa1c-4fce-a91e-5d2cab94457e",
+    "Discogs `database/search`（artist=Geoffrey Keezer, release_title=Hymn）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5761,13 +5801,14 @@
    "artistMbid": "5421a640-ac3b-49f1-af0c-56097dc2f7d5",
    "artistType": null,
    "artistDisambig": "saxophone",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/87a184fa-7256-4135-935b-933303c422ff"
+    "MB release-group：https://musicbrainz.org/release-group/87a184fa-7256-4135-935b-933303c422ff",
+    "Discogs `database/search`（artist=George Robert, release_title=Live in Taormina）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5778,13 +5819,14 @@
    "artistMbid": "5421a640-ac3b-49f1-af0c-56097dc2f7d5",
    "artistType": null,
    "artistDisambig": "saxophone",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 其他廠牌。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/8314fa5c-e941-4a00-97e2-e268671064be"
+    "MB release-group：https://musicbrainz.org/release-group/8314fa5c-e941-4a00-97e2-e268671064be",
+    "Discogs `database/search`（artist=George Robert, release_title=Soul Eyes）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5846,13 +5888,14 @@
    "artistMbid": "9671bd12-21df-4e35-90aa-ab7bd60efc7f",
    "artistType": null,
    "artistDisambig": "singer, songwriter",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 CGD Messaggerie Musicali S.p.A.／Canale 5 Music／Edizioni Bixio C.e.m.s.a.／Edizioni Fama／Edizioni Musicali CAM。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/6d457a62-ca13-375b-955a-bc07dae1747b"
+    "MB release-group：https://musicbrainz.org/release-group/6d457a62-ca13-375b-955a-bc07dae1747b",
+    "Discogs `database/search`（artist=Gino Paoli, release_title=Sempre）回 12 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5880,13 +5923,14 @@
    "artistMbid": "9671bd12-21df-4e35-90aa-ab7bd60efc7f",
    "artistType": null,
    "artistDisambig": "singer, songwriter",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 CGD East West／Fonoprint／Forum Recording Studio, Roma, Italy／Grande Lontra Srl／I Grandi Album。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/06165b6d-7ca8-3db8-85a4-a183285a716e"
+    "MB release-group：https://musicbrainz.org/release-group/06165b6d-7ca8-3db8-85a4-a183285a716e",
+    "Discogs `database/search`（artist=Gino Paoli, release_title=Per una storia）回 5 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5897,13 +5941,14 @@
    "artistMbid": "9671bd12-21df-4e35-90aa-ab7bd60efc7f",
    "artistType": null,
    "artistDisambig": "singer, songwriter",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 I Concerti Live @ RTSI／S4。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/74c7d3a3-078e-49fe-a2de-4fbe13ff6f41"
+    "MB release-group：https://musicbrainz.org/release-group/74c7d3a3-078e-49fe-a2de-4fbe13ff6f41",
+    "Discogs `database/search`（artist=Gino Paoli, release_title=Live @ RTSI 25 nov 1980）回 3 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5914,13 +5959,14 @@
    "artistMbid": "9671bd12-21df-4e35-90aa-ab7bd60efc7f",
    "artistType": null,
    "artistDisambig": "singer, songwriter",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Grande Lontra Srl／Sony Music／Sony Music Entertainment (Italy) S.p.a.。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a5badf09-bd14-304c-9e81-a8c802e49302"
+    "MB release-group：https://musicbrainz.org/release-group/a5badf09-bd14-304c-9e81-a8c802e49302",
+    "Discogs `database/search`（artist=Gino Paoli, release_title=Se）回 25 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5931,13 +5977,14 @@
    "artistMbid": "9671bd12-21df-4e35-90aa-ab7bd60efc7f",
    "artistType": null,
    "artistDisambig": "singer, songwriter",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 其他廠牌。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a6007d36-8dca-3e2b-8ad6-a2528d45f481"
+    "MB release-group：https://musicbrainz.org/release-group/a6007d36-8dca-3e2b-8ad6-a2528d45f481",
+    "Discogs `database/search`（artist=Gino Paoli, release_title=Ti ricordi? No non mi ricordo）回 7 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5948,13 +5995,14 @@
    "artistMbid": "9671bd12-21df-4e35-90aa-ab7bd60efc7f",
    "artistType": null,
    "artistDisambig": "singer, songwriter",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Halidon／I mitici lunedì del Sistina。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/f56ce762-2ce1-4a3f-9156-7a1d8219a5ae"
+    "MB release-group：https://musicbrainz.org/release-group/f56ce762-2ce1-4a3f-9156-7a1d8219a5ae",
+    "Discogs `database/search`（artist=Gino Paoli, release_title=L'unica volta insieme: I mitici lunedì del Sistina 1969-1979）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -5999,13 +6047,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/6d9885da-8ba6-4b57-8b83-ce330cf56a0b"
+    "MB release-group：https://musicbrainz.org/release-group/6d9885da-8ba6-4b57-8b83-ce330cf56a0b",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=1994-12-29: Lake Boone Country Club Raleigh, NC）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6016,13 +6065,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/30ca71e7-42fe-3c7d-b471-64c3d71bb186"
+    "MB release-group：https://musicbrainz.org/release-group/30ca71e7-42fe-3c7d-b471-64c3d71bb186",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=1996-06-11: Lawrence, KS, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6033,13 +6083,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/324ff5a7-358a-473c-9977-39ab0b52decb"
+    "MB release-group：https://musicbrainz.org/release-group/324ff5a7-358a-473c-9977-39ab0b52decb",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Lynaughs (live, 1997-11-14: Lynaughs, Lexington, KY, USA)）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6050,13 +6101,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a9ff4ca2-2252-41e6-a3be-8f460b8da3b9"
+    "MB release-group：https://musicbrainz.org/release-group/a9ff4ca2-2252-41e6-a3be-8f460b8da3b9",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=1997-03-05: Lynaugh's, Lexington, KY）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6067,13 +6119,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/258c341d-7120-4b1c-bd0e-deee6081893d"
+    "MB release-group：https://musicbrainz.org/release-group/258c341d-7120-4b1c-bd0e-deee6081893d",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=1998-09-26: The Odeon, Cleveland, OH）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6101,13 +6154,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a5c09042-0357-4a36-99dd-0d8e3a04e0a0"
+    "MB release-group：https://musicbrainz.org/release-group/a5c09042-0357-4a36-99dd-0d8e3a04e0a0",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2001‐05‐05: Orpheum Theatre, New Orleans, LA, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6118,13 +6172,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/24b27a1f-69d9-36bb-96f6-a08086189ba2"
+    "MB release-group：https://musicbrainz.org/release-group/24b27a1f-69d9-36bb-96f6-a08086189ba2",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2003-11-15: The Fillmore, San Francisco, CA, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6152,13 +6207,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/1435d516-7226-3bde-a53e-c1679bb75785"
+    "MB release-group：https://musicbrainz.org/release-group/1435d516-7226-3bde-a53e-c1679bb75785",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Mule Tracks Presents... Deep Ellum Mule）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6169,13 +6225,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/71bff388-8116-4d83-8182-3177a9656eea"
+    "MB release-group：https://musicbrainz.org/release-group/71bff388-8116-4d83-8182-3177a9656eea",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2004-04-16: The Warfield, San Francisco, CA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6186,13 +6243,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/8845c0c5-4a7b-4a1a-b563-68bd660edd2f"
+    "MB release-group：https://musicbrainz.org/release-group/8845c0c5-4a7b-4a1a-b563-68bd660edd2f",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2004-09-18: Town Park, Telluride, CO）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6203,13 +6261,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/7a3af815-3bab-33ab-aef6-970434c8607f"
+    "MB release-group：https://musicbrainz.org/release-group/7a3af815-3bab-33ab-aef6-970434c8607f",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2005-02-13: Fox Theater, Boulder, CO, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6237,13 +6296,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/467f4430-68b7-4c6e-9aab-b096208b57c8"
+    "MB release-group：https://musicbrainz.org/release-group/467f4430-68b7-4c6e-9aab-b096208b57c8",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2007-06-16: Bonnaroo Music Festival, Manchester, TN）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6254,13 +6314,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/82642e28-1d1c-4fbd-9263-7440662b5459"
+    "MB release-group：https://musicbrainz.org/release-group/82642e28-1d1c-4fbd-9263-7440662b5459",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Miles Tour Summer '07 Sala Joy Eslava, Madrid, Spain）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6271,13 +6332,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a3460a6e-7edc-4714-af67-b2ae4a452a3f"
+    "MB release-group：https://musicbrainz.org/release-group/a3460a6e-7edc-4714-af67-b2ae4a452a3f",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Warren Haynes Presents: The 19th Annual X-Mas Jam & Pre-Jam Ashville, NC）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6288,13 +6350,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/e1b7ac10-520c-4a7e-b210-3c3c767ea277"
+    "MB release-group：https://musicbrainz.org/release-group/e1b7ac10-520c-4a7e-b210-3c3c767ea277",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2007-12-31: Beacon Theatre, New York, NY）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6305,13 +6368,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/eb131f9c-24f0-467d-8280-3b40d58f60de"
+    "MB release-group：https://musicbrainz.org/release-group/eb131f9c-24f0-467d-8280-3b40d58f60de",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2007-06-02: Mountain Jam, Hunter, NY）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6322,13 +6386,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/164f3b8c-8cad-420c-a4d6-97194852e3fd"
+    "MB release-group：https://musicbrainz.org/release-group/164f3b8c-8cad-420c-a4d6-97194852e3fd",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Bonnaroo Music & Arts Festival-Manchester, TN 6/13/09）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6339,13 +6404,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/49eb4eed-a3e3-4db5-abf9-91f0ad4a1d3c"
+    "MB release-group：https://musicbrainz.org/release-group/49eb4eed-a3e3-4db5-abf9-91f0ad4a1d3c",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Fall '09 - Tower Theatre, Philadelphia, PA 10.31.09）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6356,13 +6422,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/d1dcaed3-7eaa-4517-90f3-cacd9b8dc45e"
+    "MB release-group：https://musicbrainz.org/release-group/d1dcaed3-7eaa-4517-90f3-cacd9b8dc45e",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=The Soundcheck Series）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6373,13 +6440,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/d2cb1086-79a5-47cf-9520-c5c8d6acc580"
+    "MB release-group：https://musicbrainz.org/release-group/d2cb1086-79a5-47cf-9520-c5c8d6acc580",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2011-12-31: Mad Mules & Englishmen: The Beacon Theatre, New York City, NY, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6390,13 +6458,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/ff96b0e4-339f-4d97-834b-d483fa323098"
+    "MB release-group：https://musicbrainz.org/release-group/ff96b0e4-339f-4d97-834b-d483fa323098",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Beacon Theatre, New York, December 31, 2011）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6407,13 +6476,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/0727ccfb-18ce-46fb-b093-0f474fbbf3cd"
+    "MB release-group：https://musicbrainz.org/release-group/0727ccfb-18ce-46fb-b093-0f474fbbf3cd",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2012-06-24: Oakdale Theater, Wallingford, CT）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6424,13 +6494,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/0e8aa2fb-812f-4263-8e49-6ff97e1f217b"
+    "MB release-group：https://musicbrainz.org/release-group/0e8aa2fb-812f-4263-8e49-6ff97e1f217b",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2012-12-30 / 31: The Beacon Theatre, New York City, NY, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6441,13 +6512,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/64d0bb3a-d697-4ab8-81b6-6a82f06f37ba"
+    "MB release-group：https://musicbrainz.org/release-group/64d0bb3a-d697-4ab8-81b6-6a82f06f37ba",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Mountain Jam - Hunter Mountain, NY (June 1, 2012)）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6458,13 +6530,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/70489e26-4fba-4deb-a644-85291999bc3f"
+    "MB release-group：https://musicbrainz.org/release-group/70489e26-4fba-4deb-a644-85291999bc3f",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2013-05-03: Mahalia Jackson Theater New Orleans, LA, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6475,13 +6548,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 2 筆 release，其中 2 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 2 筆 release／2 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/b9fe5ceb-424f-4aba-ab04-d08d72a1d687"
+    "MB release-group：https://musicbrainz.org/release-group/b9fe5ceb-424f-4aba-ab04-d08d72a1d687",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Gov’t Mules’s, Island Exodus IV）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6492,13 +6566,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 2 筆 release，其中 2 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 2 筆 release／2 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/2029bac0-dadf-463d-b0c1-2e5c201caa6e"
+    "MB release-group：https://musicbrainz.org/release-group/2029bac0-dadf-463d-b0c1-2e5c201caa6e",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2014-10-31: Taft Theatre, Cincinnati, OH, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6509,13 +6584,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/81bd8dd7-4655-4b20-b15d-b92921787a5a"
+    "MB release-group：https://musicbrainz.org/release-group/81bd8dd7-4655-4b20-b15d-b92921787a5a",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=The Beacon Theatre）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6526,13 +6602,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/2fa25b23-aa66-4c5c-b99d-2e6cec462eda"
+    "MB release-group：https://musicbrainz.org/release-group/2fa25b23-aa66-4c5c-b99d-2e6cec462eda",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2017-11-02: Fabrik, Hamburg, DE）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6543,13 +6620,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/3638584a-1c10-44db-8312-7c8f0ad28c4d"
+    "MB release-group：https://musicbrainz.org/release-group/3638584a-1c10-44db-8312-7c8f0ad28c4d",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2017-10-31 Paradiso, Amsterdam, NL）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6560,13 +6638,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/43c85977-0a4f-4898-a9ee-6bfd3098fce9"
+    "MB release-group：https://musicbrainz.org/release-group/43c85977-0a4f-4898-a9ee-6bfd3098fce9",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2017-06-15 Live Club, Milan, IT）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6577,13 +6656,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/4d1216c6-fa80-4be7-95b6-284e9fe888e2"
+    "MB release-group：https://musicbrainz.org/release-group/4d1216c6-fa80-4be7-95b6-284e9fe888e2",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2017-06-14 Kaufleuten, Zurich, CH）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6594,13 +6674,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/9f0fcb57-43d8-4260-b748-57a0feb8e304"
+    "MB release-group：https://musicbrainz.org/release-group/9f0fcb57-43d8-4260-b748-57a0feb8e304",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2017-12-31: The Beacon Theatre, New York City, NY, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6611,13 +6692,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/ba860df0-7388-4b00-ba68-7b5c1d006bc3"
+    "MB release-group：https://musicbrainz.org/release-group/ba860df0-7388-4b00-ba68-7b5c1d006bc3",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2018-07-13: PNC Bank Center, Holmdel, NJ）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6628,13 +6710,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/2cd2eb2b-df3a-4265-a1af-fea280de760f"
+    "MB release-group：https://musicbrainz.org/release-group/2cd2eb2b-df3a-4265-a1af-fea280de760f",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2019‐07‐07 Roanoke Island Festival Park, Manteo, NC）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6645,13 +6728,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/53c1361c-0729-4e1b-9ff1-1d4165c93276"
+    "MB release-group：https://musicbrainz.org/release-group/53c1361c-0729-4e1b-9ff1-1d4165c93276",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2019-07-11 MECU Pavilion, Baltimore, MD）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6662,13 +6746,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a015c82d-5cb7-43d1-920c-e98ac80f2557"
+    "MB release-group：https://musicbrainz.org/release-group/a015c82d-5cb7-43d1-920c-e98ac80f2557",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=Bring On the Music: Live at the Capitol Theatre, Part 2）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6679,13 +6764,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/3ee47fdb-ca76-43bc-9ec0-6d6a7d1cfe31"
+    "MB release-group：https://musicbrainz.org/release-group/3ee47fdb-ca76-43bc-9ec0-6d6a7d1cfe31",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2022-08-13: Westville Bowl, New Haven, CT, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6696,13 +6782,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/7cf884dc-d75c-4485-8a48-8af2dbb98453"
+    "MB release-group：https://musicbrainz.org/release-group/7cf884dc-d75c-4485-8a48-8af2dbb98453",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2022-01-19: Jewel Paradise Cove Runaway Bay, Jamaica）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6713,13 +6800,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/e93ba6f1-a4da-4e94-b924-ee0662006c82"
+    "MB release-group：https://musicbrainz.org/release-group/e93ba6f1-a4da-4e94-b924-ee0662006c82",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2022-08-06: Beak & Skiff Apple Orchards, Lafayette, NY, USA）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6730,13 +6818,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/be8d6e01-549f-474f-8ee7-5c0bb1594dab"
+    "MB release-group：https://musicbrainz.org/release-group/be8d6e01-549f-474f-8ee7-5c0bb1594dab",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2023-01-18: Govt Mule & Friends, Island Exodus 13, Runaway Bay, Jamaica）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6747,13 +6836,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/96ed30b9-f1c0-46bf-b949-454682d2d7ca"
+    "MB release-group：https://musicbrainz.org/release-group/96ed30b9-f1c0-46bf-b949-454682d2d7ca",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2024-12-28: College Street Music Hall New Haven, CT）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6764,13 +6854,14 @@
    "artistMbid": "f8796712-19fd-49ca-9cc7-99c30215b3cd",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/cb56c498-9c90-4a8a-82d7-8ba1e24911e1"
+    "MB release-group：https://musicbrainz.org/release-group/cb56c498-9c90-4a8a-82d7-8ba1e24911e1",
+    "Discogs `database/search`（artist=Gov’t Mule, release_title=2024-05-01: Daze Between New Orleans）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6781,13 +6872,14 @@
    "artistMbid": "bbef05c0-ec64-46df-b7af-08c85d96da39",
    "artistType": null,
    "artistDisambig": "American jazz saxophonist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Florian Arbenz／Florian Arbenz Hammer Recordings／GZ Media／Inner Circle Music。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/19e956ed-727d-438c-9ec7-9e73d0048b3b"
+    "MB release-group：https://musicbrainz.org/release-group/19e956ed-727d-438c-9ec7-9e73d0048b3b",
+    "Discogs `database/search`（artist=Greg Osby, release_title=Reflections of the Eternal Line）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6815,13 +6907,14 @@
    "artistMbid": "f07ceb71-ceec-4df7-845e-ebfd5db56fd0",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Optimal Media GmbH／Roof Music／Roof Music GmbH／Roof Records／SWR。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/bb584195-4f5c-48fd-892a-335255b2e725"
+    "MB release-group：https://musicbrainz.org/release-group/bb584195-4f5c-48fd-892a-335255b2e725",
+    "Discogs `database/search`（artist=Götz Alsmann, release_title=Eventuell）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6917,13 +7010,14 @@
    "artistMbid": "80d610fe-7771-4226-aa9b-950944791698",
    "artistType": null,
    "artistDisambig": "piano",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Carrere／Fantasy Records／Fantasy Studios／Galaxy／Galaxy Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/0bfcb1b1-7023-38d3-bfb1-31043049aeb3"
+    "MB release-group：https://musicbrainz.org/release-group/0bfcb1b1-7023-38d3-bfb1-31043049aeb3",
+    "Discogs `database/search`（artist=Hank Jones, release_title=Just for Fun）回 8 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6951,13 +7045,14 @@
    "artistMbid": "80d610fe-7771-4226-aa9b-950944791698",
    "artistType": null,
    "artistDisambig": "piano",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 其他廠牌。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/17408d06-4f3c-3e48-8ee7-8f8d09bef859"
+    "MB release-group：https://musicbrainz.org/release-group/17408d06-4f3c-3e48-8ee7-8f8d09bef859",
+    "Discogs `database/search`（artist=Hank Jones, release_title=Bluesette）回 5 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -6968,13 +7063,14 @@
    "artistMbid": "80d610fe-7771-4226-aa9b-950944791698",
    "artistType": null,
    "artistDisambig": "piano",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Lineage Records／Nola Recording Studios／ODS Optical Disc Solutions。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/4d237414-2eda-407b-adb5-f59be6afed0d"
+    "MB release-group：https://musicbrainz.org/release-group/4d237414-2eda-407b-adb5-f59be6afed0d",
+    "Discogs `database/search`（artist=Hank Jones, release_title=Hank and Frank）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7087,13 +7183,14 @@
    "artistMbid": "27613b78-1b9d-4ec3-9db5-fa0743465fdd",
    "artistType": null,
    "artistDisambig": "US jazz pianist, keyboardist, bandleader and composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/70f5c76a-32db-4335-b5a8-57d56b26c2be"
+    "MB release-group：https://musicbrainz.org/release-group/70f5c76a-32db-4335-b5a8-57d56b26c2be",
+    "Discogs `database/search`（artist=Herbie Hancock, release_title=2007-06-18: Britt Amphitheater, Jacksonville, OR）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7104,13 +7201,14 @@
    "artistMbid": "27613b78-1b9d-4ec3-9db5-fa0743465fdd",
    "artistType": null,
    "artistDisambig": "US jazz pianist, keyboardist, bandleader and composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/5a142253-7ec6-46da-ac5c-f937308949e0"
+    "MB release-group：https://musicbrainz.org/release-group/5a142253-7ec6-46da-ac5c-f937308949e0",
+    "Discogs `database/search`（artist=Herbie Hancock, release_title=2008-12-08: Goeteborg, SE）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7121,13 +7219,14 @@
    "artistMbid": "27613b78-1b9d-4ec3-9db5-fa0743465fdd",
    "artistType": null,
    "artistDisambig": "US jazz pianist, keyboardist, bandleader and composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Solar Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/20c69e97-a517-4aaf-980f-c80a5abd7f28"
+    "MB release-group：https://musicbrainz.org/release-group/20c69e97-a517-4aaf-980f-c80a5abd7f28",
+    "Discogs `database/search`（artist=Herbie Hancock, release_title=Complete Live at Jorgie's 1961）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7206,13 +7305,14 @@
    "artistMbid": "d6060786-dac7-4101-80f1-8a10c81d0a7a",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/36b07e53-9105-3b3d-bc69-8150ab640224"
+    "MB release-group：https://musicbrainz.org/release-group/36b07e53-9105-3b3d-bc69-8150ab640224",
+    "Discogs `database/search`（artist=Israel “Cachao” López, release_title=Descargas: Cuban Jam Sessions）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7240,13 +7340,14 @@
    "artistMbid": "4b0be624-6b87-47e8-bbf0-588a2c6c0439",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/60751eca-4dd2-4e1b-801d-c585a38a56ca"
+    "MB release-group：https://musicbrainz.org/release-group/60751eca-4dd2-4e1b-801d-c585a38a56ca",
+    "Discogs `database/search`（artist=J.J. Cale, release_title=Live in London）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7257,13 +7358,14 @@
    "artistMbid": "4b0be624-6b87-47e8-bbf0-588a2c6c0439",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/1ba2ac07-12e7-48a2-9812-24c65d9f1030"
+    "MB release-group：https://musicbrainz.org/release-group/1ba2ac07-12e7-48a2-9812-24c65d9f1030",
+    "Discogs `database/search`（artist=J.J. Cale, release_title=KFOG Private Show, San Francisco 2002）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7274,13 +7376,14 @@
    "artistMbid": "4b0be624-6b87-47e8-bbf0-588a2c6c0439",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Hobo／Parachute Recording Company。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a4c7216e-c919-469b-8943-4ecbf7f2e41a"
+    "MB release-group：https://musicbrainz.org/release-group/a4c7216e-c919-469b-8943-4ecbf7f2e41a",
+    "Discogs `database/search`（artist=J.J. Cale, release_title=After Hours in Minneapolis）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7325,13 +7428,14 @@
    "artistMbid": "f2d13d28-6f74-4dd5-b596-8bd0b6f67615",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Dreamland Recording Studios／JMS.／Studio Davout／WMD。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/3994657c-3d8f-4be0-a2e7-81890bddd9ed"
+    "MB release-group：https://musicbrainz.org/release-group/3994657c-3d8f-4be0-a2e7-81890bddd9ed",
+    "Discogs `database/search`（artist=Jack DeJohnette, release_title=For Evans Sake）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7376,13 +7480,14 @@
    "artistMbid": "f2d13d28-6f74-4dd5-b596-8bd0b6f67615",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 DCA／Golden Beams Productions／Magic Moments Studio。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/c86f1d3e-ac24-4f4a-9d63-35e33136ff9f"
+    "MB release-group：https://musicbrainz.org/release-group/c86f1d3e-ac24-4f4a-9d63-35e33136ff9f",
+    "Discogs `database/search`（artist=Jack DeJohnette, release_title=Music in the Key of Om）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7393,13 +7498,14 @@
    "artistMbid": "f2d13d28-6f74-4dd5-b596-8bd0b6f67615",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 55 Records／Avatar Studios／EMI Feist Catalog, Inc.／ESC Medien GmbH／ESC Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a8b13f46-08a6-3162-ba4c-ca32548cb6d5"
+    "MB release-group：https://musicbrainz.org/release-group/a8b13f46-08a6-3162-ba4c-ca32548cb6d5",
+    "Discogs `database/search`（artist=Jack DeJohnette, release_title=The Green Field）回 4 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7410,13 +7516,14 @@
    "artistMbid": "f2d13d28-6f74-4dd5-b596-8bd0b6f67615",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Jazzfestival Saalfelden／Not On Label (Bill Laswell Self-Released)／Orange Music／Randesign。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/f0516819-e747-47dd-863b-adb00e265dda"
+    "MB release-group：https://musicbrainz.org/release-group/f0516819-e747-47dd-863b-adb00e265dda",
+    "Discogs `database/search`（artist=Jack DeJohnette, release_title=Saalfelden）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7427,13 +7534,14 @@
    "artistMbid": "f2d13d28-6f74-4dd5-b596-8bd0b6f67615",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/85ba61cd-b228-46c1-a6af-4a632b1bb34d"
+    "MB release-group：https://musicbrainz.org/release-group/85ba61cd-b228-46c1-a6af-4a632b1bb34d",
+    "Discogs `database/search`（artist=Jack DeJohnette, release_title=The Art of The Quartet Vol.1 (Remastered)）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7444,13 +7552,14 @@
    "artistMbid": "622fa84e-8366-4347-80d4-6a3cdc35e814",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Merkin Hall／Muse Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/6ece7e3b-d6c2-47e2-936e-2dad00baf9e3"
+    "MB release-group：https://musicbrainz.org/release-group/6ece7e3b-d6c2-47e2-936e-2dad00baf9e3",
+    "Discogs `database/search`（artist=Jack Walrath, release_title=Gut Feelings）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7495,13 +7604,18 @@
    "artistMbid": "5b6993ef-14af-4374-aa91-d42622b133d1",
    "artistType": null,
    "artistDisambig": "jazz saxophonist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "`label-info` 空",
+   "detail": "MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/823b61c2-8402-4f27-a611-d95806fd703c"
+    "MB release-group：https://musicbrainz.org/release-group/823b61c2-8402-4f27-a611-d95806fd703c（`first-release-date` 1996、`primary-type` Album）",
+    "MB release `7f6f2a8a-ba02-4397-a484-ad8ddd2a10e7`（1996、JP）——**`label-info` 逐字為空陣列 `[]`**",
+    "**Discogs release 12750647**：https://www.discogs.com/release/12750647-Jackie-McLean-meets-Junko-Onishi-Hat-Trick——`label` 逐字 `['Blue Note', 'Power Station', 'Power Station', \"Somethin' Else Records\", \"Somethin' Else Records\", 'Toshiba EMI Ltd', 'Capitol Records, Inc.', 'Blue Note Records', 'BMG Direct Marketing, Inc.']`、`catno` 逐字 `CDP 7243 8 38363 2 1`、US 1996 CD／Album／Club Edition",
+    "**Discogs release 33077577**：https://www.discogs.com/release/33077577-Jackie-McLean-meets-Junko-Onishi-Hat-Trick——`label` 逐字 `['Blue Note', 'Toshiba EMI Ltd', 'Blue Note Records', 'Capitol Records, Inc.', \"Somethin' Else Records\", \"Somethin' Else Records\", 'Power Station', 'Power Station', 'EMI MFG.']`、`catno` 逐字 `CDP 7243 8 38363 2 1`、US 1996 CD／Album／Promo",
+    "**Discogs release 10811254**：https://www.discogs.com/release/10811254-Jackie-McLean-meets-Junko-Onishi-Hat-Trick——`label` 逐字 `['Blue Note', 'Power Station', 'Power Station', \"Somethin' Else Records\", \"Somethin' Else Records\", 'Toshiba EMI Ltd', 'Capitol Records, Inc.', 'Blue Note Records']`、`catno` 逐字 `CDP 7243 8 38363 2 1`、US 1996 CD／Album",
+    "四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "gap",
+   "verdictWhy": "**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7512,13 +7626,18 @@
    "artistMbid": "5b6993ef-14af-4374-aa91-d42622b133d1",
    "artistType": null,
    "artistDisambig": "jazz saxophonist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "`label-info` 空",
+   "detail": "MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/eca6903a-3e10-43ad-a40d-f480aa474255"
+    "MB release-group：https://musicbrainz.org/release-group/eca6903a-3e10-43ad-a40d-f480aa474255（`first-release-date` 1997、`primary-type` Album）",
+    "MB release `9043f594-97e2-4272-a5ff-d47bb9df48bd`（1997、JP）——**`label-info` 逐字為空陣列 `[]`**",
+    "**Discogs release 14071935**：https://www.discogs.com/release/14071935-Jackie-McLean-The-MacBand-Fire-Love——`label` 逐字 `['Blue Note', 'BMG Direct']`、`catno` 逐字 `CDP 7243 4 93254 2 5`、US 1997 CD／Album／Club Edition",
+    "**Discogs release 5343073**：https://www.discogs.com/release/5343073-Jackie-McLean-The-MacBand-Fire-Love——`label` 逐字 `['Blue Note', \"Somethin' Else\", \"Somethin' Else\", 'EMI', 'EMI', 'Capitol Records']`、`catno` 逐字 `7 24349 32542 5`、Europe 1998 CD／Album",
+    "**Discogs release 11316980**：https://www.discogs.com/release/11316980-Jackie-McLean-The-MacBand-Fire-Love——`label` 逐字 `['Blue Note', \"Somethin' Else Records\", \"Somethin' Else Records\", 'Capitol Records, Inc.']`、`catno` 逐字 `CDP 7243 4 93254 2 5`、US 1997 CD／Album",
+    "四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "gap",
+   "verdictWhy": "**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7529,13 +7648,14 @@
    "artistMbid": "5b6993ef-14af-4374-aa91-d42622b133d1",
    "artistType": null,
    "artistDisambig": "jazz saxophonist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Crossover & Fusion Collection 1000／RCA／Sony Music Entertainment／Sony Music Labels／Sony Music Labels Inc.。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/63e46365-b900-40a3-a80d-7cbd306c4bb3"
+    "MB release-group：https://musicbrainz.org/release-group/63e46365-b900-40a3-a80d-7cbd306c4bb3",
+    "Discogs `database/search`（artist=Jackie McLean, release_title=Monuments）回 5 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7580,13 +7700,14 @@
    "artistMbid": "a5209546-b1e8-449f-8b74-04ff88255f84",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Not On Label (Bill Laswell Self-released)／Orange Music／Randesign／The Stone。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/1addd634-b5c1-4eef-b131-c75e92f4bb98"
+    "MB release-group：https://musicbrainz.org/release-group/1addd634-b5c1-4eef-b131-c75e92f4bb98",
+    "Discogs `database/search`（artist=James Blood Ulmer, release_title=The Stone Residency 2015 - Day 2 Set 2）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7597,13 +7718,14 @@
    "artistMbid": "a5209546-b1e8-449f-8b74-04ff88255f84",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Not On Label (Bill Laswell Self-released)／Orange Music／Randesign／The Stone。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/4229dd4f-79b4-4f1a-8dd8-7c5907d9516c"
+    "MB release-group：https://musicbrainz.org/release-group/4229dd4f-79b4-4f1a-8dd8-7c5907d9516c",
+    "Discogs `database/search`（artist=James Blood Ulmer, release_title=The Stone Residency 2015 - Day 2 Set 1）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7614,13 +7736,18 @@
    "artistMbid": "604f0692-4d31-479b-a93a-e4c75be21f81",
    "artistType": null,
    "artistDisambig": "US jazz pianist/keyboardist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "`label-info` 空",
+   "detail": "MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/f4539fe1-df19-4ad4-99d3-c2d5a2539471"
+    "MB release-group：https://musicbrainz.org/release-group/f4539fe1-df19-4ad4-99d3-c2d5a2539471（`first-release-date` 2018、`primary-type` Album）",
+    "MB release `7c7e845f-4d50-44a2-ac3d-1ef8e4999291`（無日期）——**`label-info` 逐字為空陣列 `[]`**",
+    "**Discogs release 34231921**：https://www.discogs.com/release/34231921-James-Francies-Flight——`label` 逐字 `['Blue Note']`、`catno` 逐字 `B002868602`、US 2018 CD／Album",
+    "**Discogs release 13995462**：https://www.discogs.com/release/13995462-James-Francies-Flight——`label` 逐字 `['Blue Note']`、`catno` 逐字 `00602567741343`、Europe 2018 CD／Album／Stereo",
+    "**Discogs release 14779127**：https://www.discogs.com/release/14779127-James-Francies-Flight——`label` 逐字 `['Blue Note']`、`catno` 逐字 `none`、Unknown 2018 CDr／Album／Promo",
+    "四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "gap",
+   "verdictWhy": "**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7648,13 +7775,14 @@
    "artistMbid": "5fa6d546-430c-4e18-b911-09b4560242a2",
    "artistType": null,
    "artistDisambig": "US jazz and classical flutist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Cornet Studio／Delta Music Inc.／Janew Music／Jazzline／Mills Music。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/c89e1131-b86f-48a8-9080-ab830ce8fb30"
+    "MB release-group：https://musicbrainz.org/release-group/c89e1131-b86f-48a8-9080-ab830ce8fb30",
+    "Discogs `database/search`（artist=James Newton, release_title=If Love）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7682,13 +7810,14 @@
    "artistMbid": "b10806de-2198-4313-af6a-13df4acb912f",
    "artistType": null,
    "artistDisambig": "pianist, jazz‐pop artist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 2 筆 release，其中 2 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 2 筆 release／2 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/8e5645cc-643a-3d1f-8451-e1978ac95981"
+    "MB release-group：https://musicbrainz.org/release-group/8e5645cc-643a-3d1f-8451-e1978ac95981",
+    "Discogs `database/search`（artist=Jamie Cullum, release_title=Live at Ronnie Scott's）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7733,13 +7862,18 @@
    "artistMbid": "2f97f8ef-1bd6-439e-b725-c65081d12d86",
    "artistType": null,
    "artistDisambig": "American jazz pianist and composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "`label-info` 空",
+   "detail": "MB 這個 release-group 有 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）——**沒有一筆掛 Blue Note 家族實體，所以以 label 為軸的列舉腳本碰不到它**。Discogs 則明確把它記在 Blue Note 名下。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/77690c69-cda4-3031-a834-bcdb3521a2b4"
+    "MB release-group：https://musicbrainz.org/release-group/77690c69-cda4-3031-a834-bcdb3521a2b4（`first-release-date` 2003、`primary-type` Album）",
+    "MB release `a75925b6-e0bd-4367-9c7b-bc7e4dbab30a`（2003、XE）——**`label-info` 逐字為空陣列 `[]`**",
+    "**Discogs release 442265**：https://www.discogs.com/release/442265-Jason-Moran-The-Bandwagon——`label` 逐字 `['Blue Note', 'Blue Note Records', 'Blue Note Records', 'EMI Uden', 'Village Vanguard', 'Lundvall Mastering', 'Lundvall Mastering', 'EMI Uden', 'Blue Note', 'Capitol Records, Inc.']`、`catno` 逐字 `7243 5 91893 2 1`、Europe 2003 CD／Album／Copy Protected",
+    "**Discogs release 18142315**：https://www.discogs.com/release/18142315-Jason-Moran-The-Bandwagon——`label` 逐字 `['Blue Note', 'BMG Direct', 'EMI MFG.']`、`catno` 逐字 `7243 5 80917 2 4`、US 2003 CD／Album／Club Edition",
+    "**Discogs release 1872228**：https://www.discogs.com/release/1872228-Jason-Moran-The-Bandwagon——`label` 逐字 `['Blue Note', 'EMI MFG.']`、`catno` 逐字 `7243 5 80917 2 4`、US 2003 CD／Album",
+    "四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 0 筆（以 `rgMbid` ＋（正規化藝人名, 正規化盤名）兩種鍵逐列比對）"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "gap",
+   "verdictWhy": "**真缺口**：Discogs 廠牌鏈＋目錄號確認為 Blue Note 家族發行，四處皆無。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7750,13 +7884,14 @@
    "artistMbid": "2f97f8ef-1bd6-439e-b725-c65081d12d86",
    "artistType": null,
    "artistDisambig": "American jazz pianist and composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Yes Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/7cda364c-88a5-4077-b081-208b059d3981"
+    "MB release-group：https://musicbrainz.org/release-group/7cda364c-88a5-4077-b081-208b059d3981",
+    "Discogs `database/search`（artist=Jason Moran, release_title=The Sound Will Tell You）回 4 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7784,13 +7919,14 @@
    "artistMbid": "2f97f8ef-1bd6-439e-b725-c65081d12d86",
    "artistType": null,
    "artistDisambig": "American jazz pianist and composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Yes Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/3caf1de2-9fb7-468d-a8d4-1ccd0104175e"
+    "MB release-group：https://musicbrainz.org/release-group/3caf1de2-9fb7-468d-a8d4-1ccd0104175e",
+    "Discogs `database/search`（artist=Jason Moran, release_title=From the Dancehall to the Battlefield）回 3 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7801,13 +7937,14 @@
    "artistMbid": "2f97f8ef-1bd6-439e-b725-c65081d12d86",
    "artistType": null,
    "artistDisambig": "American jazz pianist and composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Audio Virus Lab／Norsk Kulturråd／Rainbow Studio／Sear Sound／Trondheim Kommune。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a417747d-7217-4ff7-ace7-01290d081049"
+    "MB release-group：https://musicbrainz.org/release-group/a417747d-7217-4ff7-ace7-01290d081049",
+    "Discogs `database/search`（artist=Jason Moran, release_title=Go To Your North）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7818,13 +7955,14 @@
    "artistMbid": "2f97f8ef-1bd6-439e-b725-c65081d12d86",
    "artistType": null,
    "artistDisambig": "American jazz pianist and composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Red Hook Ltd.／Red Hook Records／The Bridge Studio, New York。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/33494d69-85ec-4a1f-8b1a-5eca481366eb"
+    "MB release-group：https://musicbrainz.org/release-group/33494d69-85ec-4a1f-8b1a-5eca481366eb",
+    "Discogs `database/search`（artist=Jason Moran, release_title=Shards）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7835,13 +7973,14 @@
    "artistMbid": "34fc95da-78b6-4a22-bb63-befdf68a5a14",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/4b21417e-6ef9-41c3-a1d4-ef1d14565a5c"
+    "MB release-group：https://musicbrainz.org/release-group/4b21417e-6ef9-41c3-a1d4-ef1d14565a5c",
+    "Discogs `database/search`（artist=Javier Edgardo Girotto, release_title=10/15）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7852,13 +7991,14 @@
    "artistMbid": "34fc95da-78b6-4a22-bb63-befdf68a5a14",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/fd073e7b-0c7a-4e6e-a6e3-9b354020db32"
+    "MB release-group：https://musicbrainz.org/release-group/fd073e7b-0c7a-4e6e-a6e3-9b354020db32",
+    "Discogs `database/search`（artist=Javier Edgardo Girotto, release_title=Alrededores de la ausencia）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7869,13 +8009,14 @@
    "artistMbid": "34fc95da-78b6-4a22-bb63-befdf68a5a14",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/2ac88c18-1256-44af-9f14-64bcba992c5d"
+    "MB release-group：https://musicbrainz.org/release-group/2ac88c18-1256-44af-9f14-64bcba992c5d",
+    "Discogs `database/search`（artist=Javier Edgardo Girotto, release_title=Kaleidoscopic Arabesque）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7886,13 +8027,14 @@
    "artistMbid": "34fc95da-78b6-4a22-bb63-befdf68a5a14",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/b5d95340-18e4-4113-9167-98b0d654b8cc"
+    "MB release-group：https://musicbrainz.org/release-group/b5d95340-18e4-4113-9167-98b0d654b8cc",
+    "Discogs `database/search`（artist=Javier Edgardo Girotto, release_title=Iguazù）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7903,13 +8045,14 @@
    "artistMbid": "34fc95da-78b6-4a22-bb63-befdf68a5a14",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/0cb68970-15be-4e1a-958f-dd2a19798e24"
+    "MB release-group：https://musicbrainz.org/release-group/0cb68970-15be-4e1a-958f-dd2a19798e24",
+    "Discogs `database/search`（artist=Javier Edgardo Girotto, release_title=Tango or Not Tango）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -7920,13 +8063,14 @@
    "artistMbid": "9a6465be-d9d3-4c75-9820-b12ec3d4c8c7",
    "artistType": null,
    "artistDisambig": "US jazz saxophonist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Solid Jackson Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/2dfb9ebf-1f03-49ac-a6ce-21d7788a0f5e"
+    "MB release-group：https://musicbrainz.org/release-group/2dfb9ebf-1f03-49ac-a6ce-21d7788a0f5e",
+    "Discogs `database/search`（artist=Javon Jackson, release_title=Jackson Plays Dylan）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8005,13 +8149,14 @@
    "artistMbid": "6ef49abb-b02e-4a02-af8b-a12cd2843a4b",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 其他廠牌。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/16ddfb78-4ea7-4d01-8e99-ddba88643303"
+    "MB release-group：https://musicbrainz.org/release-group/16ddfb78-4ea7-4d01-8e99-ddba88643303",
+    "Discogs `database/search`（artist=Jean-Pierre Como, release_title=Padre）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8022,13 +8167,14 @@
    "artistMbid": "6ef49abb-b02e-4a02-af8b-a12cd2843a4b",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Editions Caravelli Universal／Editions Just Looking／Just Looking Productions／Naïve／Sony DADC。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/8ed4cf7b-a1c9-4379-8bbf-47973f14f40e"
+    "MB release-group：https://musicbrainz.org/release-group/8ed4cf7b-a1c9-4379-8bbf-47973f14f40e",
+    "Discogs `database/search`（artist=Jean-Pierre Como, release_title=Storia...）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8090,13 +8236,14 @@
    "artistMbid": "470a4ced-1323-4c91-8fd5-0bb3fb4c932a",
    "artistType": null,
    "artistDisambig": "Detroit based DJ",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Axis／Axis Records／Copyright Control／Disc Makers／News Distribution。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/90d50613-eb20-4820-b21b-0e7d6b59a859"
+    "MB release-group：https://musicbrainz.org/release-group/90d50613-eb20-4820-b21b-0e7d6b59a859",
+    "Discogs `database/search`（artist=Jeff Mills, release_title=Moon - The Area of Influence）回 4 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8107,13 +8254,14 @@
    "artistMbid": "30ad70b4-2267-47c0-933b-81f5e2210b23",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Double-Time Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/8f39f3c6-7dbb-4b51-9764-4c4891fe0f59"
+    "MB release-group：https://musicbrainz.org/release-group/8f39f3c6-7dbb-4b51-9764-4c4891fe0f59",
+    "Discogs `database/search`（artist=Jerry Bergonzi, release_title=Art）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8124,13 +8272,14 @@
    "artistMbid": "30ad70b4-2267-47c0-933b-81f5e2210b23",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Blau Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/1c436a0b-a0a3-4314-a3be-f02f004de330"
+    "MB release-group：https://musicbrainz.org/release-group/1c436a0b-a0a3-4314-a3be-f02f004de330",
+    "Discogs `database/search`（artist=Jerry Bergonzi, release_title=Sunday）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8158,13 +8307,14 @@
    "artistMbid": "58f23499-f263-4772-9b7a-2f6cd2fe428f",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Fantasy Studios／Fantasy, Inc.／Milestone／Van Gelder Studio, Englewood Cliffs, New Jersey／Victor Musical Industries, Inc.。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/72e37800-da59-4210-b43e-cd0bdcd5829b"
+    "MB release-group：https://musicbrainz.org/release-group/72e37800-da59-4210-b43e-cd0bdcd5829b",
+    "Discogs `database/search`（artist=Jimmy McGriff, release_title=Blue to the Bone）回 3 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8209,13 +8359,14 @@
    "artistMbid": "58f23499-f263-4772-9b7a-2f6cd2fe428f",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 DADC／Fantasy, Inc.／Milestone／Van Gelder Studio, Englewood Cliffs, New Jersey。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/7475c7ce-8360-49f5-95d8-1930f6263786"
+    "MB release-group：https://musicbrainz.org/release-group/7475c7ce-8360-49f5-95d8-1930f6263786",
+    "Discogs `database/search`（artist=Jimmy McGriff, release_title=Straight Up）回 2 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8294,13 +8445,14 @@
    "artistMbid": "1eaf1688-4f52-49e8-98bc-743828fe3e7e",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Eastside／Eureka Music／Eureka Music Limited／Kindred Spirits。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/7ef26579-8dc3-415b-a2a8-dcbe14ee5052"
+    "MB release-group：https://musicbrainz.org/release-group/7ef26579-8dc3-415b-a2a8-dcbe14ee5052",
+    "Discogs `database/search`（artist=Jimmy Witherspoon, release_title=Spoon Meets Pao）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8311,13 +8463,14 @@
    "artistMbid": "74061fae-e2c8-4fea-92b9-b03012cc81ef",
    "artistType": null,
    "artistDisambig": "American jazz drummer, vibraphonist and pianist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Almarecords／Egea Distribution／Lady Music Studio, Cervinara。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/11573dd7-93f1-4751-aa10-65da451456df"
+    "MB release-group：https://musicbrainz.org/release-group/11573dd7-93f1-4751-aa10-65da451456df",
+    "Discogs `database/search`（artist=Joe Chambers, release_title=Crystals）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8362,13 +8515,14 @@
    "artistMbid": "bcab8301-c7e5-4689-a4ad-9ee947b4ce37",
    "artistType": null,
    "artistDisambig": "US jazz tenor saxophonist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 ITM-Media／Jazz Door。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/06d7f4f3-649d-4c1c-9bc9-cb8793e47cb8"
+    "MB release-group：https://musicbrainz.org/release-group/06d7f4f3-649d-4c1c-9bc9-cb8793e47cb8",
+    "Discogs `database/search`（artist=Joe Henderson, release_title=Sextet & Quartet）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8464,13 +8618,14 @@
    "artistMbid": "2f43e416-f1bf-4f04-8853-a0019aa12441",
    "artistType": null,
    "artistDisambig": "jazz guitarist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/8eed405e-d7e8-4dc1-8b5e-768f8d1423fc"
+    "MB release-group：https://musicbrainz.org/release-group/8eed405e-d7e8-4dc1-8b5e-768f8d1423fc",
+    "Discogs `database/search`（artist=Joe Pass, release_title=Copenhagen Jazz Festival 1988）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8549,13 +8704,14 @@
    "artistMbid": "de09faf8-c78b-4c3a-9c0d-76b1de15f40e",
    "artistType": null,
    "artistDisambig": "US jazz vocalist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/d9c99855-3b29-302c-b5de-4a4966a208a5"
+    "MB release-group：https://musicbrainz.org/release-group/d9c99855-3b29-302c-b5de-4a4966a208a5",
+    "Discogs `database/search`（artist=Joe Williams, release_title=Joe Williams With Thad Jones / Mel Lewis Orchestra）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8583,13 +8739,14 @@
    "artistMbid": "de09faf8-c78b-4c3a-9c0d-76b1de15f40e",
    "artistType": null,
    "artistDisambig": "US jazz vocalist",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/ef1f16fc-3c3a-4db6-89a2-34924bf41cca"
+    "MB release-group：https://musicbrainz.org/release-group/ef1f16fc-3c3a-4db6-89a2-34924bf41cca",
+    "Discogs `database/search`（artist=Joe Williams, release_title=End of a Beautiful Friendship）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8637,13 +8794,14 @@
    "artistMbid": "2be2cd01-8501-4769-952e-3cec14cfb74c",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/0256c34a-17e9-47d4-b64c-a71122fbf269"
+    "MB release-group：https://musicbrainz.org/release-group/0256c34a-17e9-47d4-b64c-a71122fbf269",
+    "Discogs `database/search`（artist=Joey Calderazzo, release_title=Calderazzo Trio: 2011-10-20, Toulouse）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8688,13 +8846,14 @@
    "artistMbid": "6d3f9ca6-4fc7-42dd-a6da-a440ff90b886",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 HighNote Records, Inc.。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/8adeb690-4a40-4ae5-933f-4b3f5410de4f"
+    "MB release-group：https://musicbrainz.org/release-group/8adeb690-4a40-4ae5-933f-4b3f5410de4f",
+    "Discogs `database/search`（artist=Joey DeFrancesco, release_title=The Champ, Round 2）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8722,13 +8881,14 @@
    "artistMbid": "6d3f9ca6-4fc7-42dd-a6da-a440ff90b886",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 Spazi Sonori, Livorno／Zucca Records。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/88a11fb9-538f-429f-a067-d1f532b0eb26"
+    "MB release-group：https://musicbrainz.org/release-group/88a11fb9-538f-429f-a067-d1f532b0eb26",
+    "Discogs `database/search`（artist=Joey DeFrancesco, release_title=Estate）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8790,13 +8950,14 @@
    "artistMbid": "b76182c3-3b98-40cf-b34a-b9743e57f632",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/b8ffca66-51fd-4f09-9dcc-bdeb9bf7ca50"
+    "MB release-group：https://musicbrainz.org/release-group/b8ffca66-51fd-4f09-9dcc-bdeb9bf7ca50",
+    "Discogs `database/search`（artist=John Patton, release_title=Green 14）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8824,13 +8985,14 @@
    "artistMbid": "cbfd7f01-87c3-44bf-a3a2-fe4dbff20ad2",
    "artistType": null,
    "artistDisambig": "US guitarist/composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/e59173a5-d504-44e6-9983-a80f35246ced"
+    "MB release-group：https://musicbrainz.org/release-group/e59173a5-d504-44e6-9983-a80f35246ced",
+    "Discogs `database/search`（artist=John Scofield, release_title=Live in Zürich）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8858,13 +9020,14 @@
    "artistMbid": "cbfd7f01-87c3-44bf-a3a2-fe4dbff20ad2",
    "artistType": null,
    "artistDisambig": "US guitarist/composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/308e5317-9fc8-42cd-b0ad-e70b7dac961e"
+    "MB release-group：https://musicbrainz.org/release-group/308e5317-9fc8-42cd-b0ad-e70b7dac961e",
+    "Discogs `database/search`（artist=John Scofield, release_title=Live at the Palace Theatre）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8892,13 +9055,14 @@
    "artistMbid": "cbfd7f01-87c3-44bf-a3a2-fe4dbff20ad2",
    "artistType": null,
    "artistDisambig": "US guitarist/composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/b348e354-2239-4d2b-8201-97dc227606a5"
+    "MB release-group：https://musicbrainz.org/release-group/b348e354-2239-4d2b-8201-97dc227606a5",
+    "Discogs `database/search`（artist=John Scofield, release_title=Live at Michelson Hall）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8909,13 +9073,14 @@
    "artistMbid": "cbfd7f01-87c3-44bf-a3a2-fe4dbff20ad2",
    "artistType": null,
    "artistDisambig": "US guitarist/composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/d7ed269a-6823-4552-aaf0-bed723fcc1b0"
+    "MB release-group：https://musicbrainz.org/release-group/d7ed269a-6823-4552-aaf0-bed723fcc1b0",
+    "Discogs `database/search`（artist=John Scofield, release_title=Berkfest, MA 8.11.02）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8943,13 +9108,14 @@
    "artistMbid": "cbfd7f01-87c3-44bf-a3a2-fe4dbff20ad2",
    "artistType": null,
    "artistDisambig": "US guitarist/composer",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/a8f70761-7546-4b02-b05b-1f732a03d4e8"
+    "MB release-group：https://musicbrainz.org/release-group/a8f70761-7546-4b02-b05b-1f732a03d4e8",
+    "Discogs `database/search`（artist=John Scofield, release_title=Linz 2007）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -8960,13 +9126,14 @@
    "artistMbid": "dabe4b28-239c-4c53-9f29-df52137c1906",
    "artistType": null,
    "artistDisambig": "violinist/conductor",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 的廠牌是 BBC／Colin Currie Records／Royal Albert Hall／The Bridgewater Hall, Manchester。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/7a6e98c4-a270-4156-9405-ae07a011c749"
+    "MB release-group：https://musicbrainz.org/release-group/7a6e98c4-a270-4156-9405-ae07a011c749",
+    "Discogs `database/search`（artist=John Storgårds, release_title=Percussion Concertos）回 1 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
@@ -9028,13 +9195,14 @@
    "artistMbid": "72ee0d29-9c1b-494d-bf9a-5eb9c4407f19",
    "artistType": null,
    "artistDisambig": "",
-   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）；**本層時間內未做 Discogs 覆核**",
-   "detail": "MB 1 筆 release，其中 1 筆 `label-info` 為空；非空者掛的是 （無）。",
+   "reason": "MB 未掛任何 Blue Note 家族廠牌（label-info 全空）",
+   "detail": "MB 1 筆 release／1 筆 `label-info` 空；非空者掛 （無）。Discogs 查無同碟（年份／掛名對不上或無此盤）。",
    "evidence": [
-    "MB release-group：https://musicbrainz.org/release-group/8d740c63-1b67-41a4-ad87-f7bf94ed418e"
+    "MB release-group：https://musicbrainz.org/release-group/8d740c63-1b67-41a4-ad87-f7bf94ed418e",
+    "Discogs `database/search`（artist=Juliano Rossi, release_title=If my friends could see me now）回 0 筆，逐筆核年份與掛名後無 Blue Note 家族命中"
    ],
-   "verdict": "unclear",
-   "verdictWhy": "**未覆核**：Discogs 廠牌鏈尚未查；不能斷定是不是 Blue Note。",
+   "verdict": "not-blue-note",
+   "verdictWhy": "**不是 Blue Note**：MB 與 Discogs 兩端都查不到 Blue Note 家族廠牌。",
    "cat": "all-label-info-empty"
   },
   {
