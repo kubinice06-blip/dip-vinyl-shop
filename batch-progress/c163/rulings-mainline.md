@@ -3081,3 +3081,46 @@ universal-music.co.jp 7／umohelsinki.fi 5／loop.co.nz 5／downbeat 3／artists
 **`Jon Cowherd《Mercy》` 不是純 ArtistShare 盤**（維基寫錯，兩家並列共用同一目錄號）。
 **三處來源自己打架只標 uncertain**（Truffaz 隱藏曲秒數、Charles Lloyd 末軌曲名、James Carter 兩軌時長）
 ——**已要求鉤子層一律不寫進 `note`。**
+
+## 第 1832-B 條（c-171 研究 a 驗收）：**10/10 全 `full`，120 條 facts；推翻策展層十二處，本線單批最高**
+
+`qa-batch research c171` a 組旗標 0（批次層那一個是 b 組未交件的管線形狀）、key 與卡單逐字同序、
+src 全為完整 https、**64 個相異網址逐一做過 HTTP 取回驗證**。
+src 分佈：discogs 51／en.wikipedia 41／**worldradiohistory（Billboard 紙本）22**／jazzdisco 4／diannereeves.com 1／bluenote.com 1。
+
+### 十二處推翻分佈在七張卡，六處寫進正文就是硬錯誤
+
+**最值得記的三處**：
+- ⚠ ⚠ **`Hat Trick` 的〈Left Alone〉不是「Mal Waldron 寫給 Billie Holiday」**——**是兩人合寫、Holiday 從沒錄過**；
+  **首錄是 Waldron 1959 年的同名專輯，中音手就是 Jackie McLean，隔 37 年再錄一次**
+  ——**這是那張唯一的獨家切角，而策展層一層都沒碰。**
+- **`Spiritalk 2` 的時序被寫反了**：1995-03-04 的 Billboard 寫他發行本張時**已經**在代理 Tonight Show 音樂總監；
+  **且 Robin Eubanks 是哥哥不是弟弟。**
+- **`That Day…` 的兩首作者全錯**：〈That Day〉是三人合寫（含詩人 Nikki Giovanni）、〈Dark Truths〉是 Joan Armatrading 的。
+
+⚠ **一處是策展層自己兩張卡互相牴觸**：`Step By Step` 的 `why` 寫「三張裡最早的」，**同批《Paris》的 `why` 卻寫「第四張」**
+——**策展層的 `why` 之間沒有互相校對過。**
+⚠ **一處是把同批另一張的錄音地套過來**：`Hat Trick` 盤面逐字 `Power Studio`，**`Power Station` 是《Cruisin'》那張**
+——**第 1763-B 條的跨卡汙染，這次發生在策展層。**
+
+### ⚠ 第 1827-B 條要收窄：「資料缺失高度相關」只在店面／封面那一層成立
+
+**在文字史料這一層不成立**：**CAA 0 圖的四張裡，`Cruisin'` 與 `Spiritalk 2` 是本組材料最豐的兩張。**
+**真正缺的是「這張碟自己的評價與商業成績」**——`Paris`／`Jazz, My Romance` 的 Billboard 紙本 0 命中，
+12 條全靠 Discogs 整筆＋側人來歷撐起來。**下游對這兩張不要硬找「紅不紅」那種軸。**
+
+### 兩條新的來源層方法論
+
+1. ⚠ **用廠牌名（而非人名）當關鍵字掃同期紙本的產業報導**：`somethin' else` 掃到 BB-1996-07-27 的 Tom Evered 專訪，
+   **一篇餵飽本組四張東芝 EMI 企劃盤**——**與 c-168 用製作人名掃到 Namekata 悼念文同一招的變體。**
+2. ⚠ **Billboard PDF 有 `BB-…-N.pdf` 等三種檔名形狀**——**不要自己拼，拼完一定要驗。**
+   （代理自己在最後一刻修掉一條 404，而**我的檢查點提交剛好收進了修正前的版本**——第 1829-B 條的處置生效，驗收時已確認 `git diff` 為空。）
+
+### ⚠ 新增一條禁用來源
+
+**`junkoonishi.com` 已經易主**，現在是印尼文的博弈導流站（**HTTP 200**），**而英文維基仍掛它當 Official website。**
+**→ 附錄二的「藝人官網」路徑，1990 年代藝人的網域常被搶註，不能只看 HTTP 200，要看內容。**
+研究稿的 `notes` 已寫明不得引用；**全批 facts 的 `src` 0 次命中該網域。**
+
+**另記**：`api.discogs.com` 全 200、**`discogs.com` 網頁在雲端間歇 403 是 Cloudflare**
+——**與第 1831-B 條的裁定一致：後續各層做 `src` 存活驗證時一律不算死連結。**
