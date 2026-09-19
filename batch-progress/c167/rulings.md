@@ -623,3 +623,267 @@ MB 有兩個 RG，掛名同為 `DOMi & JD BECK`（Group `bbe3ca80`）：
 4. ⚠ **MB 對 2026 年 Blue Note 新碟的建檔慣例（第 2030 條（二））**：
    **數位那一筆的 `label-info` 常掛 `UMG Recordings, Inc.`（`ee9d7dfa`）、只有實體那一筆掛 `Blue Note`（`713c4a95`）。**
    **單一數位 release 的碟若剛好抽到那種建檔，會憑空長出一個 (丙) 訊號——後批要去 ② 與 ③ 補。**
+
+---
+
+# c-167 研究層裁定（14 張一支代理做完，a 7／b 7）
+
+號段 **2441–2490**（實際用到 2455）。日期 2026-09-19。
+暫存檔一律 `c167r-` 前綴（`c167r-fetch-bn.mjs`／`c167r-fetch-mb.mjs`／`c167r-fetch-artist.mjs`／
+`c167r-fetch-dg2.mjs`／`c167r-fetch-jp.mjs`／`c167r-fetch-misc.mjs`／`c167r-selfcheck.mjs`／`c167r-charcheck.mjs`），
+未使用任何通用檔名。**本層 append 進本檔，未覆寫任何既有行（第 1806-B 條）。**
+
+---
+
+## 第 2441 條（**解掉第 2035 條留下的未決項**）：**Wilkins Vol. 1 的實體只收 Vol. 1 自己的四軌，不是三卷合計 13 軌**
+
+第 2035 條逐字寫「Vol. 1 的實體 CD `00602488170826` 與 2LP `00602488170871` 的軌數本棒未取得——**可能是三卷合計 13 軌。不可預設**」。
+**實查兩筆 Discogs 條目的逐軌表，答案是四軌：**
+
+| Discogs id | 載體 | 逐軌表 |
+|---|---|---|
+| **36858649** | CD（gatefold digisleeve ＋雙面內襯） | `1 Warriors` `2 Composition II` `3 Charanam` `4 Eternal` |
+| **37337043** | 2LP（綠色透明限量） | `A Warriors` `B Composition II` `C Charanam` `D Eternal`（**一面一軌**） |
+
+**→ 本機配封面與試聽時可以直接用四軌，不必再確認。** 2LP 是一面一軌，所以四軌要兩張黑膠。
+
+---
+
+## 第 2442 條：**三卷的錄音日期是 2025 年 5 月 15 與 16 日兩晚；Vol. 3 的發行日撞上第一個錄音夜的整整一年**
+
+錄音日期**只在 Discogs 兩筆實體條目的 notes 欄出現**，逐字 `Recorded at the Village Vanguard, New York, NY on May 15 & 16, 2025`；
+**MB 與 Apple 兩層都沒有這個資訊，官網三篇稿也沒寫。**
+
+- **Vol. 3 的發行日是 2026-05-15，正好是第一個錄音夜（2025-05-15）的一週年。** 這是巧合還是安排本棒查不到，
+  **facts 只寫「正好是整整一年後」這個可查證的事實，沒有寫成廠牌刻意安排。**
+- ⚠ **本棒未能取得「哪一卷來自哪一晚」的分卷對照**——三篇官網稿與兩筆實體條目都只給兩晚的合併日期。
+  **下游不可寫「Vol. 1 是第一晚、Vol. 2 是第二晚」這種推測。** 派工信要求「三張的 facts 要能讓下游把
+  『這一卷是哪幾晚、哪一套曲目』講清楚」——**「哪一套曲目」三卷各自寫足了，「哪幾晚」只能寫到「兩晚合錄」這一層，
+  再細的分卷對照沒有來源。**
+
+---
+
+## 第 2443 條（**來源打架，判 3:1**）：**Wilkins Vol. 3 第 2 軌取 `COMPOSITION IX`，Discogs 的 `Composition XI` 判為建檔誤植**
+
+| 層 | 逐字 |
+|---|---|
+| ③ `bluenote.com` 三篇稿的軌表 | **`COMPOSITION IX`** |
+| ① MusicBrainz release `ceaade16` | **`COMPOSITION IX`** |
+| ④ Apple us／jp `1895320634` | **`COMPOSITION IX`** |
+| ⚠ ② Discogs 37352382 | ⚠ **`Composition XI`** |
+
+**三比一，取 `COMPOSITION IX`。** 佐證：Vol. 1 的〈COMPOSITION II〉與本軌同屬 Wilkins 那組
+「以 J.S. Bach《平均律鍵盤曲集》為模型所寫的十二首無標題作品」（③ Vol. 1 內襯文逐字），
+**十二首的編號上限是 XII，IX 與 XI 都在範圍內、無法用範圍排除，所以只能靠票數判。**
+⚠ **給後批**：Discogs 的純數位 AAC 條目（本例 37352382、37096089、36831211）**沒有 credits、沒有 notes，逐軌表是使用者手打的**，
+**曲名可靠度低於 MB 與 Apple**；實體條目才有掃描件可依。
+
+---
+
+## 第 2444 條（**推翻第 2033 條（四）與第 2035 條**）：**`Minyo Crusaders` 日版 CD 的品番是 `UCCJ-2257`，不是 `UCJJ-2257`**
+
+第 2033 條（四）與第 2035 條都逐字寫「日版 UCJJ-2257／UCJJ-9059」。**實查兩個字母抄錯了一個。**
+
+| 路徑 | 回應 |
+|---|---|
+| `https://www.universal-music.co.jp/minyo-crusaders/products/ucjj-2257/` | **404** |
+| `https://www.universal-music.co.jp/products/ucjj-2257/` | **404** |
+| **`https://www.universal-music.co.jp/minyo-crusaders/products/ucjj-9059/`（黑膠）** | **200** |
+| `https://www.universal-music.co.jp/products/uccq-1228/`（Lage，無藝人段） | **404** |
+| **`https://www.universal-music.co.jp/julian-lage/products/uccq-1228/`** | **200** |
+
+**黑膠那一頁的「別バージョン」欄逐字印著 `CD 日本民謡より愛をこめて 発売日 2026.06.26 価格 ¥3,300 品番 UCCJ-2257`。**
+
+⚠ ⚠ **第 1751-B 條（「日本線 slug 順序沒有規律，兩種都要試」）在本批的實測結論要修正**：
+**兩張日本線的碟，`/<藝人 slug>/products/<品番>/` 都回 200、`/products/<品番>/` 都回 404——本批 2/2 一致，沒有出現順序沒規律的情形。**
+**真正讓 `ucjj-2257` 落空的不是 slug 順序，是品番本身抄錯。**
+**→ 給後批的操作建議：日本線路徑 404 時，先懷疑品番、再懷疑 slug 順序；品番可以從藝人頁（`/<藝人 slug>/`）的 RELEASE 區塊或另一個載體頁的「別バージョン」欄反查。**
+
+⚠ **另記**：`Minyo Crusaders` 兩種載體的發行日不同（**CD 2026-06-26／黑膠 2026-07-17**），Discogs 兩筆的 `released` 欄分別是這兩天，不要合成一天。
+
+---
+
+## 第 2445 條（**本批最重的一筆事實錯誤，而且錯的是廠牌官網自己**）：**`Kiefer` 的葛萊美宣稱不成立——官網把「入圍」寫成「得獎」，而且連作品都掛錯**
+
+③ `https://www.bluenote.com/artist/kiefer/` 逐字寫：
+> `A Grammy Award–winning producer for his contributions to **Malibu** by Anderson .Paak`
+
+**這句話兩層都不對：**
+
+1. **Anderson .Paak《Malibu》在第 59 屆葛萊美（2017）只入圍「最佳都會當代專輯」，並未得獎。**
+2. **Kiefer 實際有份的得獎作是 .Paak 的《Ventura》**（**第 62 屆最佳 R&B 專輯，2020 年**），他在那張共同製作了〈Yada Yada〉與首支單曲〈King James〉。
+
+**→ 判：本卡 facts 一律不寫這個獎。** 下游若要提葛萊美，只能寫《Ventura》那一筆，**而且要標明那是專輯得獎、不是 Kiefer 個人獲獎**。
+
+⚠ ⚠ **這一筆對整條線的意義**：base 檔把「入圍被寫成得獎」列為本產線最高頻的事實錯誤，
+**過去的實例都是研究層或維基寫錯；本批是第一次抓到廠牌官網自己寫錯。**
+**→ 通則：`bluenote.com` 的藝人頁對獎項的措辭不可直接採信，凡出現 `Grammy Award–winning`／`GRAMMY-nominated` 都必須另查屆次、類別與得獎／入圍。**
+本批另外兩筆同形的已逐一查清（第 2450、2451 條）。
+
+---
+
+## 第 2446 條：**`Gabrielle Cavassa` 的 `award-winning` ＝ 2021 年 Sarah Vaughan 大賽**並列**冠軍，不是獨得**
+
+③ 官網四處都只寫 `award-winning vocalist` 與 `crowned a winner of the prestigious International Sarah Vaughan Jazz Vocal Competition`，**沒有指明年份，也沒有指明是並列。**
+實查三個獨立來源一致：**2021 年，她與 Tawanda Suessbrich-Joaquim 同列第一，是該賽事九屆以來第一次判並列冠軍，兩人各得五千美元獎金。**
+（`https://jazz.fm/sarah-vaughan-international-jazz-vocal-competition-2021-winners/`、DownBeat、BroadwayWorld）
+
+**→ 下游不可寫「獨得冠軍」。** ⚠ **她本人與本張目前查無葛萊美得獎或入圍紀錄，不要把大賽冠軍升格成葛萊美。**
+
+---
+
+## 第 2447 條（**推翻第 2032 條（四）**）：**`Ron Carter, Ricky Dillard《Sweet, Sweet Spirit》` 的十軌「全是公有領域的老詩歌」查無來源**
+
+第 2032 條（四）逐字寫「**十軌全是公有領域的老詩歌**（〈Just a Closer Walk With Thee〉〈In the Garden〉…）」。
+
+**本棒查不到任何來源支持「全部公有領域」這個宣稱：**
+- ② Discogs 37296477 的 `extraartists` 與 publishing 欄**全空**（該筆條目 0 條 credits）；
+- ③ 官網兩篇稿通篇沒有作者資訊，只說那是 Carter 母親最愛的聖詩；
+- ⚠ **同名曲兼片名曲〈Sweet, Sweet Spirit〉是二十世紀的創作聖詩，不可能是公有領域。**
+
+**→ 判：facts 只寫「Carter 母親生前最愛的十首聖詩」這個有來源的說法，不寫「公有領域」也不寫「傳統聖詩」。**
+⚠ **給後批的通則**：老聖詩／老讚美詩的碟，**「聽起來很老」不等於公有領域**；
+**沒有拿到 publishing 欄或作者名之前，一律不要寫版權狀態。** 這與第 2032 條（四）對 Meshell 那張「全是知名翻唱」的處理不同——
+**那一張的原唱與原作是官網逐軌列出的，本張沒有。**
+
+---
+
+## 第 2448 條：**`Julian Lage《Scenes From Above》` 盤上有第五位樂手 Patrick Warren，③ 與策展層都沒查到**
+
+③ 三篇 `bluenote.com` 稿、prop-b 的 `why` 與 `risk`，**全部只寫四重奏（Lage／Medeski／Roeder／Wollesen）。**
+② Discogs 36365092 的**逐軌 credits** 顯示還有第五個人：
+
+| 軌 | Patrick Warren 彈什麼 |
+|---|---|
+| 3 Talking Drum ／ 7 Ocala | **dulcitone** |
+| 4 Havens ／ 7 Ocala | **Chamberlin** |
+| 5 Night Shade | **bells、piano** |
+| 6 Solid Air ／ 9 Something More | **strings** |
+
+**九軌之中五軌有他。→ 下游寫「四重奏」時要留意這一點，不可寫成「全碟只有四個人」。**
+⚠ **給後批**：**Discogs 的逐軌 credits（`tracklist[].extraartists`）是官網新聞稿查不到的一層**，
+本批另有兩張靠它補到策展層沒有的東西（`Nduduzo` 換鼓手的兩軌、`Charles Pasi` 的獻名對照，見第 2452 條）。
+**用 `api.discogs.com/releases/<id>` 拉整筆，不要只用 search 的摘要欄——摘要的 `extraartists` 只回前四筆。**
+
+---
+
+## 第 2449 條（**來源打架，判 2:1**）：**`Julian Lage` 日版 SHM-CD 的 bonus track 是第 10 軌〈Aberdeen〉**
+
+| 層 | 逐字 |
+|---|---|
+| ② Discogs 36608539 的 notes | **`Japanese release with one bonus track (Aberdeen, Track 10).`** |
+| ① MB SHM-CD release `a42a0d43`（UCCQ-1228） | 10 軌，**第 10 軌 `Aberdeen`**、第 9 軌 `Something More` |
+| ⚠ ④ UMJ 商品頁 `uccq-1228` 的曲目表 | ⚠ **把 `アバディーン Aberdeen` 排在第 9、`サムシング・モア Something More` 排在第 10** |
+
+**二比一，取 Aberdeen 為第 10 軌的日版限定 bonus track。** UMJ 頁的排序判為該頁版型問題
+（「※日本盤限定ボーナス・トラック」那行的位置讓抓取後的順序錯位）。
+**軌數釘定：國際版與數位 9 軌、日版 SHM-CD 10 軌**——與第 2035 條的要求一致，本機配試聽與封面不可取日版。
+
+---
+
+## 第 2450 條：**`Meshell Ndegeocello` 的葛萊美逐項分開——得獎三次、入圍十餘次，官網只寫了「一座」**
+
+③ `https://www.bluenote.com/artist/meshell-ndegeocello/` 逐字只寫 `has earned a GRAMMY Award along with numerous nominations`（**單數、未指明**）。
+實查**得獎三筆，逐項列**：
+
+| 屆／年 | 類別 | 作品 | 得獎／入圍 |
+|---|---|---|---|
+| 2021 | **最佳 R&B 歌曲** | 〈Better Than I Imagined〉 | **得獎** |
+| 2024 | **最佳另類爵士專輯** | 《The Omnichord Real Book》（Blue Note 第一張） | **得獎** |
+| 2025 | **最佳另類爵士專輯** | 《No More Water: The Gospel of James Baldwin》（Blue Note 第二張） | **得獎** |
+
+**另有十餘次入圍未得獎，本卡不寫。**
+⚠ **重點**：她的**兩張 Blue Note 專輯連續兩屆拿下同一個獎項**，《Synonym》是第三張——**這是本卡最硬的一條背景，但它是前作的獎、不是本張的獎，下游不可混寫。**
+
+---
+
+## 第 2451 條：**`Melissa Aldana` 的兩項榮譽性質不同，必須分開寫**
+
+③ `https://www.bluenote.com/artist/melissa-aldana/` 逐字同時給了兩件事，**一件是得獎、一件是入圍**：
+
+1. **得獎**：她二十四歲時贏得 **Thelonious Monk International Jazz Saxophone Competition**，
+   是**第一位獲勝的女性器樂演奏者、也是第一位獲勝的南美洲音樂家**；⚠ **她父親在 1991 年曾是同一項比賽的準決賽選手**（冷知識，官網逐字）。
+2. ⚠ **入圍未得獎**：2019 年的《Visions》（Motéma）替她拿下**生涯第一次葛萊美入圍**，類別是**最佳即興爵士獨奏**。
+
+**《Filin》本身目前沒有任何獎項。** 下游不可把上述兩項寫成這張碟的，也不可把 Monk 大賽寫成葛萊美。
+
+---
+
+## 第 2452 條：**`Charles Pasi《Adamas》` ③ 來源層全軍覆沒，整張靠 ② 的逐軌 credits 撐起來；另記一處年份落差**
+
+**③ 三條路徑全空，與第 2033 條實測一致，本棒重跑確認不是漏查：**
+
+| 路徑 | 回應 |
+|---|---|
+| WP posts `?search=Charles%20Pasi%20Adamas` | **200，0 筆** |
+| WP posts `?search=Charles%20Pasi`（只放藝人名） | **200，0 筆** |
+| WP search API `?search=Charles%20Pasi` | **200，0 筆** |
+| `?s=Charles+Pasi` 站內搜尋 | **200，0 筆** |
+| `https://www.bluenote.com/artist/charles-pasi/` | **404** |
+
+**→ 本張是本批唯一一張 ③ 零覆蓋的碟。** 十二條 facts 裡有八條的 src 是 ② Discogs，
+**決定性的素材是 ② 的逐軌 credits**：CD 條目 notes 逐字 `Adamas is dedicated to Nino Pasi and Maurice Suissa`，
+而第 2 軌〈Nino, Cielo e Terra〉由 **Nina Pasi** 獻聲、第 5 軌〈Maurice, Samouraï〉由 **Lisa Suissa** 獻聲、
+末軌〈Mikado〉由 **Carla Pasi** 獻聲——**獻名的兩個人，各自有一位同姓的家人在那首歌裡唱**。這是本卡唯一一條夠強的鉤子。
+
+⚠ **另記一處年份落差（不在本批範圍，給主線覆核）**：prop-a 的 `why` 引 c-165 a 的《Zebra》為 **2020**，
+但 **MB 該 RG 的 `first-release-date` 逐字是 `2021-02-05`**（兩筆 release 的 date 也都是 2021-02-05）。
+**本批不改該卡**，只記下來。`Adamas` 是 Pasi 在 Blue Note 的第三張（Bricks 2017／Zebra／Adamas，三張的 MB `label-info` 都逐字是 `Blue Note`），
+第六張錄音室專輯（另有 2006《Mainly Blue》、2009《Uncaged》、2014《Sometimes Awake》）。
+
+---
+
+## 第 2453 條（**輸出檔形狀；派工信與管線實況牴觸，兩者都產**）：**單一檔 `c167.json` ＋ 組別檔 `c167-a.json`／`c167-b.json` 並存**
+
+派工信 §二逐字要求「**輸出**：`desc-tools/batches/research/c167.json`（**單一檔，14 筆，順序同卡單**）」，
+§四又要求「收工前 `node qa-batch.mjs research c167`，**旗標清成 0**」。**這兩句在管線上是互斥的：**
+
+- `qa-batch.mjs` 第 17／189 行只讀 `batches/research/${batch}-${g}.json`（g ∈ a–e）；
+- `merge-writer-input.mjs` 第 9／14／43 行同樣只讀 `batches/research/${batch}-${g}.json`，找不到就 `process.exit(1)`。
+
+**只產單一檔的話，qa-batch 會報「a–e 五組缺檔＋key 集合與卡單不一致」共 6 個旗標，而且寫作層的合併會直接失敗。**
+
+**→ 判：兩者都產，內容同源。**
+- **`batches/research/c167.json`**：14 筆、順序同卡單，**這是派工信指名的交件檔**。
+- **`batches/research/c167-a.json`（7 筆）／`c167-b.json`（7 筆）**：由單一檔依 `prop-a`／`prop-b` 的成員切出，
+  **組別歸屬與策展層完全一致**（a ＝ Pasi／Cavassa／Wilkins ×3／Kiefer／Meshell；b ＝ Minyo／Nduduzo／Ron Carter／Frisell／Walter Smith III／Aldana／Lage），
+  欄位與 c-166 兩組逐欄相同（`key,artist,album,facts,hookCandidates,sound,keyTracks,status,coverage,notes`）。
+- **`node qa-batch.mjs research c167` 在補上組別檔後回「a 7 full×7／b 7 full×7／key 與卡單完全一致 ✓／全部通過 ✓」，旗標 0。**
+
+⚠ ⚠ **給主線**：**派工信那一句「單一檔」是寫錯的**（第 1725／1734-B 條）。
+**後批的研究層派工信請改回「`<批>-<組>.json`，組別沿用策展層的 prop 分組」**，否則每一支代理都要重判一次這件事。
+⚠ **若主線只要保留一種，請留組別檔**——單一檔對整條管線不可見。
+
+---
+
+## 第 2454 條：**③ 來源層四條路徑的實測命中率（14 張，可與第 2033 條的 17 筆對照）**
+
+| 路徑 | 命中 | 備註 |
+|---|---|---|
+| **(1) `wp-json/wp/v2/posts?search=`** | **13／14** | **主力，本層 168 條 facts 有 107 條的 src 是 bluenote.com。⚠ 唯一 0 命中的是 `Charles Pasi`（第 2452 條）。** |
+| **(2) `/artist/<slug>/`** | **11／13 路徑回 200** | 404 兩個：`charles-pasi`、`ricky-dillard`。⚠ **決定性素材比 (1) 少，但本批有三張靠它拿到關鍵獎項與生平**（Cavassa 的大賽、Aldana 的 Monk 大賽與葛萊美入圍、Ron Carter 的大提琴改貝斯）——**與 c-166 b 記的「路徑 2 決定性素材少」不同，本批路徑 2 的價值高於前批。** |
+| **(3) `?s=` 站內搜尋** | **1 次，0 命中** | 只在 `Charles Pasi` 用上，回 200 但無結果。**與 c-166 兩組合計 0 次的紀錄相比，本批是第一次動用，結論仍是備援無效。** |
+| **(4) `universal-music.co.jp`** | **2／2 回 200（用對品番之後）** | 見第 2444 條。⚠ **本批是日本線首次拿到決定性素材**：Minyo 的成軍地（東京福生的美軍住宅、橫田基地旁）、Ry Cooder 的評語、逐軌都道府縣對照、紀錄片與 Tiny Desk 資歷，**全部只在 UMJ 頁有，③ 與 ② 都沒有。** |
+| **(5) 藝人官網** | **0 次** | 本批未動用，(1)(2)(4) 已足。 |
+
+⚠ **本層另外動用的兩層，不在第 2033 條的五條路徑裡，但本批決定性**：
+- **② `api.discogs.com/releases/<id>` 的整筆逐軌 credits**（11 筆），**補到錄音日期、逐軌樂手、獻名對照、混音母帶人員**——見第 2441／2442／2448 條。
+- **`en.wikipedia.org` 兩次，只用於獎項的得獎／入圍覆核**（第 2445、2450 條），**未用於任何編制或年份的斷言**（base 檔對單一來源編制的警告）。
+
+---
+
+## 第 2455 條：**派工信與正本或既有裁定牴觸之處——共 3 處**
+
+1. ⚠ ⚠ **派工信 §二的「輸出：單一檔 `c167.json`」與管線實況牴觸**，且與同一封信 §四要求的「`qa-batch` 旗標清成 0」互斥。
+   **已依第 2453 條兩者都產。這是本信最該修的一句。**
+2. ⚠ **派工信 §三第 3 點把第 1751-B 條轉述成「日本線 slug 順序沒有規律，兩種都要試」。**
+   **本批實測 2/2 都是 `/<藝人 slug>/products/<品番>/` 回 200、`/products/<品番>/` 回 404，順序是有規律的**；
+   **真正讓路徑落空的是品番抄錯（第 2444 條）。轉述沒錯，但它把注意力導向了錯的地方。**
+3. ⚠ **派工信 §三第 1 點要求「三張的 facts 要能讓下游把『這一卷是哪幾晚、哪一套曲目』講清楚」。**
+   **「哪一套曲目」三卷各自寫足了；「哪幾晚」只能寫到「2025 年 5 月 15 與 16 日兩晚合錄」這一層**——
+   **三篇官網稿與兩筆實體條目都沒有分卷對照，本棒不做推測（第 2442 條）。**
+
+⚠ **不是牴觸、但值得記的一處**：派工信 §二警告「串流探測鏈還在跑（10／14），`previews.json` 的 c167 部分尚未定案，
+不要據此下『無來源』的結論，也不要在交件回報寫串流覆蓋率」——**本層全程未讀 `previews.json`、未寫入任何檔案，
+交件回報也不含串流覆蓋率。** 本層對 `Kiefer` 與 `Meshell` 兩張標的「未發行」是依 **MB `first-release-date` ＋ ③ 官網發行日**，
+**不是依串流探測結果**（兩張的發行日 2026-09-25／2026-10-02 都晚於本棒交件日 2026-09-19）。
