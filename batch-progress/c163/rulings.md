@@ -1271,3 +1271,136 @@ Norah Jones《Day Breaks》2016（(丁)）、Julia Kadel Trio《Über und unter�
 ＋ 本檔尾的這一節（**append-only，未整檔覆寫**）。
 ⚠ **`c163-hooks-b.json`／`research/c163-{a,b}.json`／`c163-cards.json`／`previews.json`／
 `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md` 一字未碰；未 commit、未 push。**
+
+---
+
+## 第 1830 條（c-163 b 鉤子交件）：**19 張全數產出；hook 字數 14–28、加權 14–26；note 原始字元 230–318；`qa-batch hooks c163` 的 b 組硬標記 0、`chk-hook-crossgroup c163` 36 張全部通過**
+
+`qa-batch hooks c163` 本輪零硬標記、零缺卡，`chk-hook-crossgroup c163` 兩組 36 張全通過
+（開頭四字 36 張互異、禁語 0、分數星等 0、hook 句末標點 36/36、note 全部 ≤350）。
+
+## 第 1831 條：**第 1739-B 條的字元預算逐張自算，19 張全部 ≤230；六張在初稿階段超標、當場整格捨去**
+
+估法沿用 a 組（第 1804 條）：`hook 字元 + 主故事鏈實寫字元`。**定稿區間 204–229、中位 221。**
+
+| 卡 | hook | 鏈 | 預算 | 卡 | hook | 鏈 | 預算 |
+|---|---:|---:|---:|---|---:|---:|---:|
+| Everyday | 21 | 204 | 225 | The Second | 21 | 188 | 209 |
+| Afrodeezia | 22 | 202 | 224 | Nihil Novi | 20 | 205 | 225 |
+| Covered | 25 | 199 | 224 | Lovers | 21 | 183 | 204 |
+| Gaïa | 20 | 194 | 214 | Day Breaks | 25 | 203 | 228 |
+| Live at Monterey | 19 | 187 | 206 | Über und unter | 14 | 196 | 210 |
+| Yesterday I Had the Blues | 23 | 193 | 216 | Evolution | 20 | 186 | 206 |
+| Breathless | 28 | 198 | 226 | ArtScience | 19 | 210 | 229 |
+| Mission | 26 | 195 | 221 | Classic! Live at Newport | 23 | 204 | 227 |
+| Syncopation Hazard | 18 | 192 | 210 | Guilty Pleasure | 18 | 190 | 208 |
+| I Long to See You | 26 | 200 | 226 | | | | |
+
+**初稿六張超標**（`Classic!` 264／`Afrodeezia` 257／`Everyday` 243／`Mission` 240／`Breathless` 236／`Yesterday I Had the Blues` 235），
+**一律在鉤子層整格捨去**：`Classic!` 砍掉節奏組兩人、六軌長度與封面畫作三格；`Afrodeezia` 砍掉五個錄音地點的清單
+（hook 已帶頭尾兩地）與「UNESCO 和平藝術家」那半句；`Everyday` 砍掉共同掛名軌與廠牌兩格並名；
+`Mission` 砍掉第二次出現的 `Kyoto Jazz Massive`；`Breathless` 砍掉發片稿的引述框；`Yesterday` 砍掉青少年時期那一段。
+⚠ **拉丁專名逐張 2–4 個**（不含本卡掛名與 `Blue Note`）：`I Long to See You`／`Syncopation Hazard`／`ArtScience`／
+`Evolution`／`Guilty Pleasure` 各 4 個貼著上限，`Über und unter` 只有 2 個。
+⚠ **本組 hook 幾乎不放拉丁專名**：30 字的硬上限下，一個 `Kendrick Lamar` 就吃掉 14 字元，
+**19 張裡只有 3 張的 hook 帶專名**（`Eric Garner`／`Willie Nelson`／`Breathless` 那張）。
+
+## 第 1832 條：**序數逐張判定（第 1732／1755-B 條三分法），19 張裡 7 張寫、12 張不寫**
+
+| 卡 | 判 | 依據 |
+|---|---|---|
+| `Norah Jones《Day Breaks》`「第六張個人專輯」 | **寫** | (二) 藝人目錄序數，來源是 `bluenote.com` 發片稿（一手），符合「一層即可但要一手」 |
+| `Nels Cline《Lovers》`「廠牌首作」 | **寫** | (三)，N=1 無計數歧義（第 1755-B 條），發片稿逐字 `Blue Note debut` |
+| `Derrick Hodge`「2013 年《Live Today》第一次用自己的名字出碟」 | **寫** | (三)，N=1，發片稿逐字 |
+| `Lonnie Smith`「睽違四十五年」 | **寫** | (三) 間隔敘述，發片稿逐字 |
+| `Joe Lovano Quartet`「錄音與發行隔了將近十一年」 | **寫** | (三) 間隔敘述，發片稿逐字 |
+| `山中千尋《Syncopation Hazard》`「大廠出道十週年」 | **寫** | (三) 身分敘述，廠牌日本商品頁逐字 |
+| `山中千尋《Guilty Pleasure》`「CD 出道十五週年」 | **寫** | (三)，同上；兩個週年基準年不同，研究稿已分清 |
+| ⚠ `Derrick Hodge`「在廠牌的第二張」 | **不寫** | (一) 廠牌目錄序數、**N≥2**，`bluenote.com` 有、**紙本這一層對 2016 年的碟結構性不適用**（第 1822 條），兩層湊不齊。改走上表那條 N=1 的身分敘述 |
+| ⚠ `Joe Lovano Quartet`「Blue Note 目錄裡的第二十五張」 | **不寫** | 同上，(一) 類、只有官網一層 |
+| ⚠ `Lionel Loueke《Gaïa》`「第四張作品」 | **不寫** | 官網藝人頁同一頁同時列出 Blue Note 作品序（2008／2010／2012），**這個「第四張」讀成廠牌目錄序數與藝人目錄序數都說得通**，屬 (一)(二) 灰帶；第 1732 條對同一位藝人的《Mwaliko》已判不寫，**照先例**。改寫成「2008 年首作那一組班底」(三) |
+| 其餘九張 | **無序數** | `note` 一字未提，依第 1729 條寫作層不自行補 |
+
+## 第 1833 條：**反同構——b 組四條軸寫死，另修掉兩個「派工信沒列到」的跨組隱形撞擊**
+
+**b 組自挑四條，各限一張（已逐張寫進 `note`）**：
+
+| 骨架 | 落點 | 其餘同型各張改走 |
+|---|---|---|
+| 音樂節現場錄音 | **`Sound Prints《Live at Monterey Jazz Festival》`** | `Covered`＝棚內小群聽眾＋曲目來源／`Classic!`＝錄音與發行的間隔／`Gaïa`＝同房不補錄的錄法 |
+| 錄音與發行相隔多年 | **`Joe Lovano Quartet《Classic! Live at Newport》`** | `Lovers` 改走「二十五年的構想＋二十三位樂手」，**2013 年錄音、2016 年上市那一格整格捨去** |
+| 跨界客座歌手 | **`Charles Lloyd & The Marvels《I Long to See You》`** | `Day Breaks` 改走紐波特兩個台／`Evolution` 改走〈Afrodesia〉／`Breathless` 改走盤名來歷 |
+| 非洲到美洲的節奏路線 | **`Marcus Miller《Afrodeezia》`** | `Gaïa` 改走錄法／`Nihil Novi` 改走「十四軌全原創＋打節奏」 |
+
+**a 組四條的避讓，逐張寫進 `note`**：日本線→a 組《Rising Son》（`Mission`／`Syncopation Hazard` 各自改走攝影節連動與散拍題旨）；
+翻唱整本老歌本→a 組《Nostalgia》（`Yesterday I Had the Blues` 改走同榜相遇、`Mission` 改走展覽連動）；
+向前輩致敬→a 組《ALL RISE》（`Yesterday`／`Live at Monterey` 各寫了讓軸句）；
+歐陸樂手進 Blue Note→a 組《Im Vertrauen》（`Über und unter` 改走短章與調音師）。
+**a 組《Wild Man Dance》留給本組的那條互指也接上了**（`I Long to See You` 寫回「睽違多年重回廠牌那條歸《Wild Man Dance》」）。
+
+⚠ ⚠ **本組真正的撞點有兩個不在派工信列的四條裡，靠人眼抓到並在初稿階段改掉**：
+1. **`Lonnie Smith《Evolution》`（睽違四十五年重回廠牌）與 a 組《Wild Man Dance》（「他上一次在這個廠牌發片，要回到 1985 年」）是同一個骨架。**
+   `Evolution` 改走「第二軌的曲名，正是那位客座當年的出道盤」（〈Afrodesia〉／Joe Lovano 1975 年的錄音處女作），
+   四十五年只留成一句時間座標——**同時滿足第 1820 條要求的 apex 盤名區隔**（Hammond B-3、四十五年、Lovano 與 Glasper 客座、七軌長篇四個標記全在鏈上）。
+2. **`山中千尋《Syncopation Hazard》` 初稿 hook 是「她把十九世紀末的散拍，整張搬進鋼琴三重奏」，與 a 組同一位藝人的《Somethin' Blue》
+   （「一向只錄鋼琴三重奏的她，這次把管樂器拉了進來」）同時出現「鋼琴三重奏」的編制對比。** 改成「十九世紀末的散拍，成了整張碟的題目」，編制降到 `note` 裡。
+
+⚠ **另修掉三處組內同模**：`Gaïa` 初稿「一支三重奏⋯」與上面兩張三重奏碟疊字，改成「全團待在同一個房間」；
+`Classic!` 與 `Afrodeezia` 兩個 hook 都以「錄音」開頭，前者改成「前任總裁的兒子⋯」；
+`Breathless` 與 `ArtScience` 都用「出自」，前者改成「來自」。
+⚠ **「N 軌裡有 M 軌」這個模子本組一張都沒用**——a 組已有兩張（《Im Vertrauen》《Audible Architecture》），
+本組 `Everyday`／`Über und unter`／`The Second` 三張原本最適合這個模子的卡全部改寫。
+
+## 第 1834 條：**`qa-batch hooks` 印出的 14 處 `互指?` 裡，b 組占 10 處，逐條看過全部正當**
+
+| 處 | 內容 | 判 |
+|---|---|---|
+| `Covered` → 《Breathless》 | 第 58 屆葛萊美同項入圍互指 | **正當**，派工信第六節「同屆同項同批兩張以上就互指」的落點；反向那筆在 `Breathless` 的研究稿裡本來就有，機器沒印 |
+| `Live at Monterey` → 《ALL RISE》 | 致敬骨架讓軸 | **正當**，跨組讓軸 |
+| `Yesterday I Had the Blues` → 《ALL RISE》《Nostalgia》 | 致敬與翻唱歌本兩條讓軸 | **正當**，跨組讓軸 |
+| `Mission` → 《Rising Son》《Nostalgia》 | 日本線與翻唱歌本讓軸 | **正當**，跨組讓軸 |
+| `Syncopation Hazard` → 《Rising Son》 | 日本線讓軸 | **正當** |
+| `Day Breaks` → 《Covered》 | 回到原聲三重奏讓軸 | **正當**，組內同題材分軸 |
+| `Evolution` → 《Wild Man Dance》 | 睽違多年重回廠牌讓軸 | **正當**，第 1833 條那個隱形撞擊的處置 |
+| `Classic!` → 《Live at Monterey Jazz Festival》 | 同藝人兩張分軸 | **正當**，與研究稿「錄音年、地點、編制與曲目零重疊」一致 |
+
+⚠ **另有五處跨張互指沒有被機器印出來**（兩張卡的研究稿本來就互相寫到對方）：
+`The Second`→《ArtScience》、`Nihil Novi`→《The Second》、`ArtScience`→《Covered》《The Second》、
+`I Long to See You`→《Wild Man Dance》《Day Breaks》、`Guilty Pleasure`→《Syncopation Hazard》、`Über und unter`→《Im Vertrauen》。
+**這些都是刻意的分軸句，不是拿錯卡。**
+
+## 第 1835 條：**第 1756-B 條那個形狀本組抓到四筆，全部在中間欄，全部降級或整格不寫**
+
+| 卡 | 中間欄寫的 | 該卡 facts 實際只有 | 處置 |
+|---|---|---|---|
+| `Yaron Herman《Everyday》` | `sound` 寫「**巴黎近郊**錄下的琴音」「**瑞典** Nilento」 | `companies` 欄逐字只有 `Recorded At: Studio De Meudon`、`Nilento Studio`；**「巴黎近郊」與「瑞典」兩層都沒有**（冰島那層有：製作人逐字「冰島製作人」＋`Greenhouse Studios Iceland`） | 錄音地點整格不寫，只寫「一位冰島製作人」 |
+| `Marcus Miller《Afrodeezia》` | `hookCandidates` 寫「末軌〈I Can't Breathe〉，**客座是 Chuck D.**」「路線就是**十六世紀**奴隸船的路線」 | facts 只把 Chuck D. 列在**整張的客座名單**裡、沒有把他綁到末軌；`Slave Route Project` 也**沒有世紀這一層** | `note` 把客座與末軌拆成兩件事，世紀不寫 |
+| ⚠ ⚠ `Terence Blanchard《Breathless》` | `hookCandidates` 寫「碟上有一軌的口白，是小號手**五歲**兒子**看新聞時**說的話」 | 本卡 facts 只有 `Terence Blanchard Jr.` 在兩軌掛 `Voice [Spoken Words]`，**沒有年齡、沒有看新聞這個情境**——**那一層是 #17《ArtScience》的 Riley Glasper**（五歲、電視上 Michael Brown 的新聞） | **本卡口白整格不寫**，五歲兒子那條軸整條歸《ArtScience》 |
+| `Robert Glasper《ArtScience》` | `hookCandidates` 寫「兩張 Black Radio **找遍了客座歌手**」 | facts 沒有 Black Radio 的客座陣容這一層，只有「兩張拿下節奏藍調類葛萊美、登上榜首」與「該聽聽只有他們四個人時是什麼樣子」 | 改寫成官網稿逐字的後者 |
+
+⚠ **第三筆是本線第一次看到「中間欄把別張卡的事實搬過來」**——不是加修飾，是**整段跨卡污染**，
+而且兩張卡同批、同樣是「樂手的兒子在碟上說話」，**極容易被下游當成同一件事寫進兩張正文**。
+`qa-batch` 抓不到（兩張都在同批，專名比對走的是 `batchNorm` 那一級），**只能靠鉤子層逐條回查 facts**。
+
+⚠ **另有兩處自我攔下的推論**（不是研究稿的錯，是本層動筆時差點寫出去的）：
+`Derrick Hodge` 的 `companies` 欄有三間錄音室、但只有兩間帶城市名，**「錄音分在三個城市」改寫成「三間錄音室」**；
+`Breathless` 的〈I Ain't Got Nothin' But Time〉作者是 Hank Williams，**「鄉村老歌」這個曲風標籤 facts 沒有，整格不寫**。
+
+## 第 1836 條：**派工信與正本牴觸 0 處；一點記錄**
+
+本信與 `hook-base.md`／`writer-base.md`／第 1729／1730-B／1732／1739-B／1743-B／1755-B／1756-B 各條逐項比對，**沒有牴觸**。
+派工信的 `hook ≤30 字`、`note 主故事鏈 4–5 項`、`hook＋各項目 ≤230`、序數三分法四項，
+與 `hook-base.md` 的 `加權 ≤50`、`note ≤350` 是兩套互相相容的上限，兩套同時守住。
+⚠ **唯一值得記的一點**：派工信第五節要本組「自己再挑四條軸各限一張」並比對 a 組四條，
+但**本組實際撞到的兩條都不在那八條裡**（見第 1833 條），**兩條都是 a 組某張的 hook 骨架與 b 組某張的主故事骨架相撞**。
+**往後派工信與其列舉軸線，不如要求鉤子棒「把對組 17–19 個 hook 逐句讀過一遍再定稿」**——本組兩個撞點都是這樣抓到的，
+`chk-hook-crossgroup` 的第 1 道（開頭四字）對這兩筆一次都沒有亮。
+
+## 第 1837 條（b 組鉤子收尾）：**改動的檔案與號段**
+
+⚠ **本棒改動的檔案兩個，皆非禁區**：`desc-tools/batches/hooks/c163-hooks-b.json`（新建，19 筆，只有 `key`／`hook`／`note` 三欄、
+`key` 逐字複製、順序同研究稿）＋本檔尾的這一節（**append-only，未整檔覆寫**）。
+⚠ **`c163-hooks-a.json`（只讀比對）／`research/c163-{a,b}.json`／`c163-cards.json`／`previews.json`／
+`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore 一字未碰；未 commit、未 push。**
+⚠ **號段**：b 組鉤子用 1830–1837，**1838 起留給下一棒**。
+⚠ **中間檔**：建檔與量測腳本在 scratchpad，檔名 `build-c163b-hooks.mjs`／`data-c163b-hooks.mjs`（帶批次組別前綴，非 repo 內）。
