@@ -50,6 +50,27 @@ for (const g of groups) {
     all.push({ ...x, _g: g });
   });
 }
+// 第五道（2026-09-19 新增，主線第 1744-B 條）：**盤名逐字撞 apex 王牌，但掛名不同。**
+// 上面那道 `live.get(掛名|盤名)` 用的是複合鍵，掛名不同就不會亮——但**消費者看到的是盤名**，
+// 兩張同名卡擺在一起、其中一張還是王牌，敘述就必須寫得分得開。
+// 本線已四批踩到（`Never Can Say Goodbye`／`Ten`／`Evolution`／`Omega`），每次都靠策展代理人工掃出來。
+// **只報不擋**：同名不同碟是正當的，這一道要的是「下游引用這個盤名時務必帶掛名」。
+const apexByAlbum = new Map();
+for (const r of rows) if (r[8]) {
+  const key = k(r[1]);
+  if (!apexByAlbum.has(key)) apexByAlbum.set(key, []);
+  apexByAlbum.get(key).push(`${r[0]} —《${r[1]}》(${r[6] || '?'}) apex:${r[8]}`);
+}
+let apexNote = 0;
+for (const x of all) {
+  const owners = (apexByAlbum.get(k(x.album)) || []).filter(o => !o.startsWith(`${x.artist} —`));
+  for (const o of owners) {
+    apexNote++;
+    console.log(`  · 盤名撞 apex（掛名不同，只報不擋）：${x._g}:${x.artist} —《${x.album}》 ↔ ${o}`);
+  }
+}
+if (apexNote) console.log(`  · 共 ${apexNote} 處——下游引用這些盤名時必須帶掛名。`);
+
 // 跨組重複——五組並行、名單有重疊風險
 const kk = all.map(x => k(x.artist) + '|' + k(x.album));
 const dup = [...new Set(kk.filter((x, i) => kk.indexOf(x) !== i))];
