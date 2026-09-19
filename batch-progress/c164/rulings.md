@@ -1238,3 +1238,252 @@ Discogs 把它放在 **`companies` 欄**、前綴逐字 `Recorded At:`；**`labe
 **19 張的 `label` 欄逐一記了 barcode，全部取自 MB release 的 `barcode` 欄**；
 ⚠ **只有 `Jacky Terrasson《53》` 的實體 CD 那一筆例外**——**MB `75384baf` 的 `barcode` 逐字 `null`、`label-info` 逐字空陣列，改取 Discogs `14200033` 的 `602508081965`**（第二順位），已在該卡 `label` 欄註明。
 
+
+---
+---
+
+# c-164 **a 組鉤子層**裁定（編號 **1890–1896**）
+
+**本段由鉤子 a 棒從檔尾 append，上方 a 組策展（1840–1869）與 b 組（1870–1882）一行未動。**
+交件檔 `desc-tools/batches/hooks/c164-hooks-a.json`（22 筆，只有 `key`／`hook`／`note` 三欄，key 逐字複製、順序同研究稿）。
+**`c164-hooks-b.json`、`research/c164-{a,b}.json`、`c164-cards.json` 一律未碰。**
+正本三份（`hook-base.md`／`writer-base.md`／`CLAUDE.md`）與 `c163/rulings-mainline.md` 第 1718–1776 條開工前已完整讀過。
+
+---
+
+## 第 1890 條：交件總表與字元預算（第 1739-B ＋ 1766-B 條）
+
+| 項目 | 數 |
+|---|---|
+| 交件張數 | **22／22** |
+| `hook` 字數 | **13–26**（上限 30） |
+| `hook` 加權 | **13–23**（上限 50） |
+| `note` 原始字元 | **240–334**（上限 350） |
+| **自算預算（`hook` 字元 ＋ Σ 各項目字元 ＋ 末尾要求寫進正文者）** | **200–230，中位 222，22 張全部 ≤230** |
+| 主故事鏈項目數 | 4 項 ×18 張、5 項 ×4 張（全部落在 4–5） |
+| `qa-batch hooks c164` a 組硬標記 | **0**（唯一那 1 個標記是「b 缺 hook 檔」，b 組未派工） |
+| `chk-hook-crossgroup c164` | **✓ 全部通過**（開頭四字 22 張互異、禁語 0、否定句 0、分數星等 0、校對痕跡 0） |
+| `互指?` | **0 處** |
+
+**逐張「hook ＋ 各項目字元」（末尾要求寫進正文者以 `+` 另計）**：
+
+| 卡 | 算式 | 合計 |
+|---|---|---:|
+| Ben l'Oncle Soul《Under My Skin》 | 24+59+41+39+42**+9** | **214** |
+| Ambrose Akinmusire《A Rift in Decorum…》 | 17+67+45+53+39 | **221** |
+| Charles Pasi《Bricks》 | 19+47+60+50+44 | **220** |
+| Brian Blade Fellowship《Body and Shadow》 | 21+50+56+37+63 | **227** |
+| Trombone Shorty《Parking Lot Symphony》 | 19+53+53+53+35 | **213** |
+| 山中千尋《Monk Studies》 | 26+50+74+12+62 | **224** |
+| Yaron Herman《Y》 | 15+41+61+39+24+20 | **200** |
+| Götz Alsmann《In Rom》 | 16+52+67+28+60 | **223** |
+| Tony Allen《The Source》 | 21+61+51+44+50 | **227** |
+| José James《Love in a Time of Madness》 | 20+41+69+61+30 | **221** |
+| Louis Hayes《Serenade for Horace》 | 26+70+65+37+29 | **227** |
+| Kyoto Jazz Sextet《Unity》 | 24+46+50+50+42 | **212** |
+| Dave McMurray《Music Is Life》 | 13+67+35+41+65 | **221** |
+| Gregory Porter《One Night Only…》 | 19+75+50+40+30 | **214** |
+| Tony Allen & Jeff Mills《Tomorrow Comes The Harvest》 | 19+49+71+63+20 | **222** |
+| Wayne Shorter《Emanon》 | 19+65+32+78+21 | **215** |
+| The Nels Cline 4《Currents, Constellations》 | 20+59+51+59+37 | **226** |
+| Terence Blanchard featuring The E-Collective《Live》 | 19+62+46+57+42 | **226** |
+| 山中千尋《Utopia》 | 20+69+41+54+46 | **230** |
+| José James《Lean On Me》 | 19+60+38+55+55 | **227** |
+| GoGo Penguin《A Humdrum Star》 | 22+68+24+59+56 | **229** |
+| Marcus Miller《Laid Black》 | 20+57+52+40+58 | **227** |
+
+⚠ **初稿 14 張超標（231–261，最高是《Utopia》的 261），全部在鉤子層整格捨去、零張留給寫作層**
+（沿 c-163 的位置：a 組砍 8、b 組砍 6）。**捨去清單見第 1896 條。**
+⚠ **第 1766-B 條的「末尾也要計入」在本組只命中一張**：`Ben l'Oncle Soul` 的「日版另加兩首原聲版（一句）」
+是要寫進正文的次要軼事，已獨立計 9 字元。**其餘 21 張的末尾全是指派／排除句，不產生正文字數，計 0。**
+⚠ **手算與實測的偏差方向**：本組**單向低估，中位約 +15%**（估 200 的那一格實測常是 230）。
+**與 c-163 相反，第 1739-B 條「任何係數都不要繼承」再獲一次佐證**——本棒的作法是逐項用 `Array.from().length` 實測後再改，不靠估。
+
+---
+
+## 第 1891 條：序數逐張判定（第 1729／1732／1755-B 條三分法）——**8 寫 14 不寫**
+
+**寫的 8 張**：
+
+| 卡 | 寫成 | 類別 | 依據 |
+|---|---|---|---|
+| Trombone Shorty | 在 Blue Note 的第一張 | **(三)** | 官網逐字 `his debut album for Blue Note Records`，N=1 無計數歧義（第 1755-B 條） |
+| Tony Allen《The Source》 | 在 Blue Note 的第一張全長專輯，並把那張四軌 EP 一起帶到 | **(三)** | 官網逐字 `debut full-length album`；**限定詞 `full-length` 與 EP 兩層一起寫進 `note`** |
+| Louis Hayes | 以領班身分在 Blue Note 的第一張 | **(三) 身分敘述** | 官網兩篇稿逐字都有 `as leader`（他 1956 年起即以側手在該廠牌錄音） |
+| Dave McMurray | 在 Blue Note 的第一張 | **(三)** | 官網逐字 `Blue Note Records debut` |
+| Gregory Porter | 生涯第一張現場作品 | **(三)** | 官網逐字 `his first-ever live release` |
+| Wayne Shorter | 自 2013 年《Without A Net》以來的第一張 | **(三) 間隔敘述** | 官網逐字 `his first release since 2013's Without A Net` |
+| Brian Blade Fellowship | 樂團自己的第五張 | **(二) 藝人目錄序數** | 廠牌官網逐字 `their sublime fifth album`，一手來源一層即可（第 1732 條） |
+| Kyoto Jazz Sextet | 這支團自己的第二張 | **(二)** | 廠牌官方商品頁逐字「隔了兩年的第二張」，一手來源 |
+
+**不寫的 14 張，分三種理由**：
+
+1. **(一) 廠牌目錄序數、官網有逐字但湊不出第二層 → 不寫，改用可查證的排序敘述**（3 張）：
+   - `The Nels Cline 4`：官網逐字 `Cline's second Blue Note release`。**2018 年的碟在紙本層結構性不存在**（主線第 1728 條），
+     兩層對不上 → 不寫；`note` 改寫成「比起 2016 年那張大編制的《Lovers》」。
+   - `Marcus Miller`：官網逐字「在 Blue Note 發過兩張、2015 年的《Afrodeezia》是第一張」。同上 → 不寫；改用官網逐字的「隔了三年」（(三) 間隔敘述）。
+   - `GoGo Penguin`：策展層第 1863 條已標明**官網只能推得、不逐字**（第 1714 條）→ 不寫。
+2. **官網有頁但整頁沒有任何計數 → 不寫**（4 張）：`Ambrose Akinmusire`／`José James` 兩張／`Terence Blanchard`。
+3. **③ 廠牌官網 404 → 一律不得寫序數**（6 張）：`Ben l'Oncle Soul`／`Charles Pasi`／`Yaron Herman`／`Götz Alsmann`／`山中千尋` 兩張。
+   ⚠ `Yaron Herman` 的藝人官網目錄頁只列年份、沒有序數，**(二) 類同樣不成立**；`山中千尋` 兩張的 universal-music.co.jp 商品頁也沒有計數。
+
+⚠ **本組沒有出現「官網寫第 N 張但沒寫明是廠牌還是藝人目錄」那種灰帶**（c-163 b 的 `Gaïa` 那型）。
+⚠ **(一) 類在本組實質上寫不了**，與派工信第三節的預判一致：22 張全部是 2016–2018 的碟，紙本層結構性不存在。
+
+---
+
+## 第 1892 條：中間欄三種污染形狀——**本組抓到 5 處，全部是形狀 (1)「在真事實上多加沒出處的修飾」；形狀 (2)(3) 各 0 處**
+
+依第 1733-B／1756-B／1763-B 條逐條回查該卡自己的 `facts`：
+
+| # | 卡 | 中間欄逐字寫的 | 該卡 `facts` 實際只有 | 本棒處置 |
+|---|---|---|---|---|
+| 1 | `Brian Blade Fellowship` | `hookCandidates` 逐字「同一首**十九世紀**的聖詩」 | F7 只有作曲欄 `George C. Stebbins`、作詞欄 `Adelaide A. Pollard`，**沒有任何一層寫出年代** | hook 與 note 一律寫「同一首聖詩」，**年代整個不寫** |
+| 2 | `GoGo Penguin` | `hookCandidates` 逐字「Carl Sagan 在《Cosmos》裡形容**太陽**的那句話」 | F0 的引文逐字只有 `a humdrum star`，**全篇沒有出現太陽** | hook 改寫成「一位天文學家在電視影集裡說的一句話」，note 只引原話本身 |
+| 3 | `Tony Allen《The Source》` | `hookCandidates` 逐字「**七十七歲的**鼓手」 | F6 只寫 1940 年生於拉哥斯，**年齡是用發行年減出來的，沒有任何一層寫出** | **年齡整條不寫** |
+| 4 | `Yaron Herman` | `hookCandidates` 逐字「盤名只有一個字母，是**他姓氏的第一個字母**」 | 三層都沒有寫出盤名由來（**研究層自己已在 `notes` 標明**） | **整條不寫**，改用軌目那一條 |
+| 5 | `山中千尋《Monk Studies》` | `hookCandidates` 逐字「替她打鼓的**是** The Mars Volta 的鼓手」 | F2 逐字是「**曾是** The Mars Volta 與 Flying Lotus 的鼓手」——時態被改掉 | note 寫「鼓手**來自** The Mars Volta」，不寫現在式的隸屬 |
+
+⚠ **形狀 (3)（整段來自同批另一張卡）0 處，但本組有三對形狀高度相似的卡，本棒逐條回查過「這一條到底在哪張卡的 facts 裡」**：
+- **山中千尋 ×2**：`Boomtown Studio`／`Eric Elterman`／`Greg Calbi` 三個共用位置**寫在《Utopia》自己的 F7 裡**（研究層是從兩張條目並列推出的），
+  **所以歸《Utopia》**；《Monk Studies》的 note 一個都沒寫。
+- **Tony Allen ×2**：`Jean-Phi Dary` 在兩張各自的 facts 裡都有（《The Source》F9 的作曲欄、《Tomorrow Comes The Harvest》F1 的第三位作曲編曲者），
+  **兩條是各自獨立的出處，不是串卡**；本棒在《The Source》只寫到「〈On Fire〉推的是鋼琴」（不寫人名），在聯名碟寫 `Jean-Phi Dary`。
+- **José James ×2**：`Antario Holmes` 只在《Love in a Time of Madness》、`Don Was` 只在《Lean On Me》，**兩張互不沾**。
+
+⚠ **另有一筆是策展層被研究層訂正、本棒照研究稿走**：`Ben l'Oncle Soul` 的 `curatorWhy` 寫「曲目走 big-band 路線」，
+逐軌 credit 撐不起來——**note 照 facts 的小編制寫（吉他兼貝斯一人、鍵盤兼程式一人、管樂一人）**，並在末尾寫「編制照上列的小班底寫」。
+`Kyoto Jazz Sextet` 的 `curatorRisk` 把 `Larry Young《Unity》` 寫成致敬對象——**note 停在官網那句「1960 年代 Blue Note 的新主流派調式爵士」的範圍內，Larry Young 一個字都沒寫**。
+
+---
+
+## 第 1893 條：反同構（第 1764-B 條兩段都做了）
+
+### （1）五條軸的落點——每條只走一張，並在該張 `note` 裡寫死
+
+| 軸 | 指定給 | `note` 寫死的句子 | 其餘候選改走的軸 |
+|---|---|---|---|
+| **日本線** | `Kyoto Jazz Sextet《Unity》` | 「日本線這條骨架全批只走本張」 | 山中千尋《Monk Studies》→「兩個姓 Monk 的人各佔一格」；《Utopia》→「古典曲目進三重奏」 |
+| **非洲節奏進 Blue Note** | `Tony Allen《The Source》` | 「非洲節奏進 Blue Note 這條骨架全批只走本張」 | 《Tomorrow Comes The Harvest》→「黑膠與數位兩版不是包含關係」的載體軸 |
+| **現場盤** | `Ambrose Akinmusire` | 「現場盤這條骨架全批只走本張」 | Gregory Porter →「四人樂團對七十人管弦樂團」；Terence Blanchard →「三場演出的選點」 |
+| **歐陸樂手** | `Charles Pasi` | 「歐陸樂手進 Blue Note 這條骨架全批只走本張」 | Götz Alsmann →「城市三部曲＋義大利歌的德語唱法」；Yaron Herman →「客座名字寫進曲名」 |
+| **翻唱致敬前輩** | `Louis Hayes《Serenade for Horace》` | 「翻唱致敬前輩這條骨架全批只走本張」 | José James《Lean On Me》→「當面求得本人祝福」；山中千尋《Monk Studies》→「同姓兩人」；Ben l'Oncle Soul →「那幾首歌本來就是法國人寫的」 |
+
+⚠ **這五條一律當成「骨架」讀，不是題材配額**（`writer-base.md`「配額與反同構條款是兩件事」那節）：
+四張致敬盤照樣各寫各自與被致敬者的具體關係，被限制的只有「以整張碟向前輩致敬」這一套撐全文的結構。
+
+### （2）組內逐句自查——**本棒用到的句型模子與張數（給 b 組避開）**
+
+**b 組沒有對組可讀（交件時 a 組已在檔），請把下表當成「已用額度」：**
+
+| 句型模子 | a 組用了幾張 | 落在哪張 |
+|---|---:|---|
+| **「N 軌裡有 M 軌」數字模子** | **note 1 張、hook 0 張** | Brian Blade 的「九軌裡有兩軌」。⚠ **c-163 a 用 2、b 刻意用 0；本組壓到 1。b 組請再壓到 0 或 1，全批不要超過 3** |
+| 「同一首 X 在碟上出現兩次」 | 1 | Brian Blade（hook） |
+| 「某個時間點之後，某人做了某事」時序模子 | 2 | Tony Allen《The Source》「動筆之前」／José James《Lean On Me》「定好歌單之後」 |
+| 數量對照模子（A 幾個對 B 幾個） | 2 | Gregory Porter「四人對七十人」／Tomorrow Comes The Harvest「黑膠四軌對數位十軌」 |
+| 「某個欄位上寫著誰」credit 模子 | 2 | Ben l'Oncle Soul「作者欄是三個法國名字」／山中千尋《Monk Studies》「作曲欄與編曲欄」 |
+| 引語定調模子（某人說了一句話） | 2 | Akinmusire「他說那個場子裡…」／Dave McMurray「廠牌總裁只說了一句」 |
+| 「盤名來自⋯」模子 | 1 | GoGo Penguin |
+| 「上一張 vs 這一張」對比模子 | 1 | Marcus Miller |
+| 「一個人包辦多項」模子 | 1 | Charles Pasi |
+
+**每種模子 ≤2 張，沒有任何一種到 3 張。** 開頭四字 22 張互異（`chk-hook-crossgroup` 已驗）。
+⚠ **本組刻意避開的兩種**：「第一張／首張」當 hook 開頭（8 張都有序數可寫，全部壓進 `note`，hook 一張都不用），
+以及「錄音室名當 hook 主語」（本組有六間以上錄音室的卡兩張，都改走別的切角）。
+
+---
+
+## 第 1894 條：跨卡交叉三條的歸屬（派工信第四節(三)）
+
+| 交叉 | 歸屬 | 處置 |
+|---|---|---|
+| `Trombone Shorty` 客座在 `Marcus Miller` 的〈7-T's〉 | **歸 `Marcus Miller`** | 該條在 Marcus Miller 自己的 F2／F7 裡；`Trombone Shorty` 那張的 note 一個字都沒提 Marcus Miller |
+| `Tony Allen` 兩張共用的三個幕後名字（Jean-Phi Dary／Eric Trosset／Chab） | **歸《Tomorrow Comes The Harvest》** | ⚠ **但本棒只寫 `Jean-Phi Dary`，而且是以「第三位作曲編曲者」的身分寫**（該卡 F1，不是共用那條 F11）；**共用關係本身整條捨去**（預算）。`Eric Trosset`／`Chab` 兩個名字兩張都沒寫 |
+| `Dave McMurray` 吹長笛在 `José James《Lean On Me》` 的〈Kissing My Love〉 | **歸《Lean On Me》**（該條在該卡 F9） | ⚠ **但本棒在《Lean On Me》整格捨去了它**（見第 1896 條）：那一格與「當面求得 Withers 祝福」的主故事無關，且會把該卡的專名推到第五個。**`Dave McMurray` 那張因此也沒有寫**——兩張都不寫，不會雙寫 |
+
+⚠ **另一條研究層點名、本棒照辦的**：`Louis Hayes` 的〈Song For My Father〉客座 `Gregory Porter` **歸 `Louis Hayes`**（研究稿 `notes` 逐字指定）。
+**本棒同時把那個軌名整個拿掉、只寫「唯一有人聲的一軌由 Gregory Porter 客串演唱」**——
+理由是第 1860 條(四)：〈Song For My Father〉與〈Silver's Serenade〉**逐字撞的就是致敬對象 Horace Silver 本人的兩張專輯名**，
+不引軌名就不會讓論述碰到那兩張卡，而且省下 16 字元。
+
+---
+
+## 第 1895 條：撞陳列的下游處置，以及 `互指?` 0 處的人工覆核
+
+**(一) 盤名撞陳列五組 14 張（第 1860 條(三)）——五張的 `note` 全部寫了「盤名出現時帶掛名與年份」這句指派**：
+`Terence Blanchard《Live》`（「務必」）／`Tony Allen《The Source》`／`Kyoto Jazz Sextet《Unity》`／`山中千尋《Utopia》`／`Yaron Herman《Y》`（「一律」）。
+⚠ **另外，這五張的 hook 沒有任何一張把盤名放進去**——單字母的《Y》與單詞的《Live》尤其危險，hook 層先把風險移除。
+
+**(二) 軌名撞 apex 王牌 1 處**：`Tony Allen《The Source》` 第 4 軌〈On Fire〉。
+**`note` 寫成「第四軌〈On Fire〉推的是鋼琴」＋末尾指派「〈On Fire〉出現時帶上鋼琴那一層」**——
+照研究稿 `notes` 給的兩個區隔依據取了「發片稿說它突出的是鋼琴」那一個。
+`Galaxie 500` 那張、以及 apex 這個字，`note` 裡一個都沒有出現。
+
+**(三) 兩張致敬盤的 apex 鄰居（第 1860 條(五)）**：
+`山中千尋《Monk Studies》` 的 note 末尾寫「論述集中在這次重新詮釋本身」；
+`José James《Lean On Me》` 寫「論述集中在這次翻唱與那次見面」。**Thelonious Monk 與 Bill Withers 本人的專輯名一張都沒引。**
+
+**(四) `互指?` 0 處。** ⚠ **第 1765-B 條說這一道會漏報，印出來的是子集**，所以本棒另外人工逐張比對過三對形狀相似的卡
+（山中千尋 ×2、Tony Allen ×2、José James ×2）——**見第 1892 條末段，三對都乾淨。**
+⚠ **`qa-batch` 的事實對照本棒另做過一次「活性驗證」**：故意把一張的年份改成 `1972`、另一張塞進一個不存在的專名，
+**兩筆都被印出來（`年份?1972`／`專名?Zaphod Beeblebrox`）**，確認這道檢查在本批確實有在跑，隨即還原。
+（⚠ 給後批一句：**`(19|20)\d{2}` 這個年份正則抓不到 19 世紀以前的年份**，古典批要注意。）
+
+**(五) 獎項（第 1767-B 條）**：本組有獎項的三張——`Wayne Shorter` 第六十一屆葛萊美最佳爵士演奏專輯（**得獎**）、
+`Terence Blanchard` 的《Breathless》第 58 屆入圍（**入圍**，note 寫死「《Breathless》寫成入圍」）、
+`Yaron Herman` 2008 年 Victoire du Jazz 年度新人獎（**得獎**）、`Marcus Miller` 的兩座葛萊美（本棒因預算整格捨去）。
+**三張分屬不同屆不同項，沒有任何一張寫成「唯一」，依第 1767-B 條不需互相點名；`note` 與正文都不會出現「同批」二字。**
+
+---
+
+## 第 1896 條：本信（派工信）與正本／實況的落差，以及整格捨去清單
+
+### （一）落差三筆
+
+1. ⚠ **派工信第五節(一)把「翻唱致敬某位前輩」列成「每種最多一張」的軸，但本組有四張是致敬／翻唱盤**
+   （Louis Hayes／José James《Lean On Me》／山中千尋《Monk Studies》／Ben l'Oncle Soul）。
+   **若當成題材配額執行，等於三張整條事實不能寫**——那正是 `hook-base.md`「廠牌規則」「曲風源流規則」兩節
+   與 `writer-base.md`「配額與反同構條款是兩件事」那節取消掉的東西。
+   **本棒把它讀成反同構條款**：四張照寫各自與被致敬者的具體關係，只有「以整張碟向前輩致敬」這套**骨架**歸 Louis Hayes。
+   **這不是駁回派工信，是把它依正本讀成骨架限制。** 建議往後派工信照第 1725 條的正確措辭寫成
+   「某某**骨架**在本批只准 N 張，指定給某某卡」，不要寫成題材名。
+2. ⚠ **派工信第四節(三)要求三條跨卡交叉「各歸一張」，但其中一條（Dave McMurray 的長笛）本棒兩張都沒寫**——
+   **不是漏看，是預算整格捨去**（見第 1894 條）。「各歸一張」的目的是防雙寫，捨去同樣達成，但與字面不同，逐筆記在這裡。
+3. ⚠ **派工信第四節(一)點名 `Terence Blanchard` 的錄音地拼法兩層不同**（Discogs `The Wyley Theater`／官網 `Wyly Theatre`）。
+   **本棒的處置是把錄音地點整個降級到城市這一層**（明尼亞波利斯、克里夫蘭、達拉斯），
+   `note` 末尾寫「錄音地點只寫到城市這一層」——**兩種拼法都不進正文，衝突就不存在。**
+
+⚠ **`PROJECT_MEMORY.md` 本棒未動**：`CLAUDE.md` 要求改檔就追加一筆，但派工信第九節與 `REMOTE_RUNBOOK.md` 明文禁止雲端碰它。
+**依邊界從嚴，交由本機端補記。**
+
+### （二）整格捨去清單（初稿 14 張超標，全部在鉤子層砍完；⚠ 本機若要補回，從同張的次要人名挪，不要加長）
+
+| 卡 | 捨去的那一格 |
+|---|---|
+| Ben l'Oncle Soul | 〈The Good Life〉的法國作者欄那一句（與〈My Way〉同型，留一個就夠） |
+| Charles Pasi | 第二位製作人 `Jean-Philippe Verdin` 的名字（改寫成「另一位製作人兼吉他與鍵盤」） |
+| Brian Blade Fellowship | 聖詩的作曲者 `George C. Stebbins`；兩個版本的秒數（改寫成「各一分多鐘」） |
+| Trombone Shorty | 壓軸場次的前輩 `The Neville Brothers` 與 `Professor Longhair`；製作人 `Chris Seefried` |
+| 山中千尋《Monk Studies》 | 鼓手 `Deantoni Parks` 與貝斯手 `Mark Kelley` 的名字；錄音室 `Boomtown Studio` |
+| Yaron Herman | `Adami` 爵士才華獎；`Montreux Jazz Festival` 評審主席那一格 |
+| Götz Alsmann | 他一人兼八種樂器那一格；德語詞作者 `Kurt Feltz`／`Hans Bradtke` |
+| Tony Allen《The Source》 | `Yann Jankielewicz`／`Lester Bowie`／`Gil Evans`／`Art Blakey` 四個名字；〈On Fire〉那一軌的 `Jean-Phi Dary` |
+| José James《Love in a Time of Madness》 | 「他想的是移動、要人走上舞池」那一格；《Fifty Shades Darker》的演出 |
+| Louis Hayes | 〈Hastings Street〉的軌名；`Don Was`／`Dezron Douglas` 的製作分工；「發片當月他將滿八十歲」 |
+| Kyoto Jazz Sextet | 客座歌手 `Navasha Daya`；`Tomoki Sanders` 的名字（只留「Pharoah Sanders 的兒子」）；前作《Mission》的盤名 |
+| Dave McMurray | 「和弦支撐少到最低反而給了他自由」那一格；班底 `Ibrahim Jones` 與兩位鼓手的名字 |
+| Gregory Porter | 指揮兼編曲 `Vince Mendoza`；CD 加 DVD 版 12 月 21 日那一筆 |
+| Tony Allen & Jeff Mills | 人聲 `Carl Hancock Rux` 的名字；完整版四首的長度 |
+| Wayne Shorter | 圖像小說腳本的 `Monica Sly` 與繪者；「同樣三首曲子各出現兩次」與〈The Three Marias〉的長度差 |
+| The Nels Cline 4 | 貝斯手 `Scott Colley` 與鼓手 `Tom Rainey` 的名字；駐場場地 `The Stone` |
+| Terence Blanchard | 三個錄音場地名（降級成城市）；新加入的貝斯手 `David Ginyard` |
+| 山中千尋《Utopia》 | `Tekla Bądarzewska-Baranowska`（單一專名就 30 字元）與〈La Priere D'une Vierge〉 |
+| José James《Lean On Me》 | 〈Kissing My Love〉的長笛 `David McMurray`；樂團四人的名字；《No Beginning No End》的盤名 |
+| GoGo Penguin | 音效工程師 `Joe Reiser`「第四位成員」那一格；《V2.0》入圍水星獎 |
+| Marcus Miller | 兩座葛萊美與 Edison／Victoire du Jazz 三個獎；《Tutu》那一段；`Take 6`／`Kirk Whalum`／`Jonathan Butler` 三位客座 |
+
+⚠ **本組每張的拉丁專名（不含本卡掛名與 Blue Note）都壓在 3–4 個以內**，
+最密的是 `山中千尋《Monk Studies》`（Thelonious Monk／The Mars Volta／The Roots／William Henry Monk ＝ 4）。
+
+---
