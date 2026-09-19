@@ -1842,3 +1842,34 @@ Virgo Four《Virgo》                              → 0 筆（回的是別人�
 
 ⚠ **本機若要處理那 29 張，建議的優先序**：先看 `batch` 欄落在 c-155 以後的（本輪四張，都已回收），
 **其餘 25 張排在其他工作之後**——抽查的四張是那批的典型形狀。
+
+## 第 1792-B 條（主線）：**`0→0` 的第六種成因——RSD 黑膠獨佔，數位版從來沒發過**
+
+c-166 探測層判 unavailable 7 張，**人工回撈救回 5 張、確認 2 張是真缺**，串流收在 **43/45**。
+
+**救回的五張，成因分佈與前四批一致**：
+
+| 卡 | 成因 | 店面實際條目 |
+|---|---|---|
+| `Kendrick Scott, Reuben Rogers, Walter Smith III《Corridors》` | **(2) 聯合掛名被店面拆成短名＋feat.** | `Kendrick Scott《Corridors (feat. Reuben Rogers & Walter Smith III)》`，9 軌 |
+| `Meshell Ndegeocello《The Omnichord Real Book》` | **(5) 在架、`lookup` 通、`search` 索引查不到** | 盤名一字不差，18 軌 |
+| `Meshell Ndegeocello《No More Water: The Gospel of James Baldwin》` | **(5)**（且 `tried` 有 `us:ratelimited-after-retries`） | 17 軌 |
+| `Blue Lab Beats《Blue Eclipse》` | **(5)** | 12 軌 |
+| `McCoy Tyner & Joe Henderson《Forces of Nature: Live at Slugs'》` | **(2)**（且 `tried` 有 `pl:ratelimited-after-retries`） | `《…(feat. Henry Grimes & Jack DeJohnette)》`，5 軌 |
+
+**五張的軌數與首發日與 MB release 端點逐筆對得上**（9／18／12／17／5；日期 2023-03-03／2023-06-16／
+2024-04-19／2024-08-02／2024-11-22 全同），**不是對到別碟**。
+
+### ⚠ 新的第六種：**Record Store Day 黑膠獨佔**
+
+**`Norah Jones《Playing Along》`（2023-11-24）與 `《Little Broken Hearts: Live at Allaire Studios》`（2023-04-22）
+兩張走固定無來源狀態。**
+
+- **MB release 端點各只有一筆，載體分別是 `Phonograph record`／`12" Vinyl`，沒有任何 `Digital Media` 版。**
+- **UPC（`602455728791`／`602448976796`）掃 us/gb/jp/de/fr/nl/ca/tw 全 0。**
+- **藝人目錄其餘作品全部在架**——連 podcast 單曲都有八筆以上，`Little Broken Hearts (Deluxe Edition)`（31 軌）也在，
+  ⚠ **但那張的第二碟是 Austin City Limits 2012，不是 Allaire**，**兩張不是同一個現場，不能拿來頂替**。
+
+**判準寫成**：**MB 的 release 端點「一筆 `Digital Media` 都沒有」＋ UPC 全 0 ＋ 藝人目錄其餘作品在架**
+——三條同時成立時，這是**發行本身就沒有數位版**，不是第 (c) 種的版權缺口，**也不必再往下掃市場**。
+兩者的差別在**可行動性**：版權缺口日後可能補上，RSD 黑膠獨佔基本上不會。
