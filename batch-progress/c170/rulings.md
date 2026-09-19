@@ -640,3 +640,368 @@ c-169 出現 5 次，**本批一次都沒有**——**2016 年以後的碟沒有
 3. **派工信第三節第 3 點說 Joel Ross 是「四張」**——**字面成立（本批確實是四張），但他的 Blue Note 目錄是五張**：**`KingMaker`（2019）完全不在 `enum/blue-note.json` 的 1,812 列裡**，而且缺的原因與第 1557 條那 75 張**不同**（那 75 張在列舉檔裡只是曲風判錯；這一張根本不在列舉檔裡，因為 MB 那筆 release 的 `label-info` 是空的、以 label 為軸的列舉腳本碰不到它）。**這是本棒最重要的線外發現，詳見第 2356 條。**
 
 ---
+
+# c-170 追記：**Blue Note 1985 後線・列舉層缺口稽核（藝人軸重掃）**（編號 2481–2540）
+
+本節**只產報告，不建 slice、不建卡單、不把缺口接進管線**——接不接、怎麼切批由主線定。
+產出兩檔：`batch-progress/enum/blue-note-artist-axis-audit.md` ＋ `.json`。
+起因是本檔第 2356 條（`Joel Ross《KingMaker》` 一列都不在列舉檔裡）。
+**本節一律 append 於檔末，未覆寫任何既有行（第 1806-B 條）。**
+
+---
+
+## 第 2481 條（**總表**）：**藝人軸掃完 541／541 位藝人，查出 25 筆真缺口**
+
+| | 數 |
+|---|---:|
+| 藝人宇宙（相異 MB artist MBID） | **541** |
+| 由本線已知 release-group 反解、全數成功 | 1,231 ／ 1,231 |
+| 藝人軸看到的 1985 年後 Album（扣掉 secondary-type／無日期後） | **8,937** |
+| 以 `rgMbid` 命中四處既有資料 | 1,128 |
+| 以（藝人, 盤名）命中 | 176 |
+| **四處都沒有、進入 Blue Note 家族判定** | **7,184** |
+| ├ MB 掛著非 Blue Note 廠牌（整批篩掉） | 6,159 |
+| ├ MB `label-info` 全空 | 609 |
+| ├ MB `label-info` 部分空 | 416 |
+| └ **MB 掛著 Blue Note 家族廠牌卻不在列舉檔裡** | **0** |
+| **Discogs 逐筆覆核** | **1,025 ／ 1,025（跑完，無 `unclear`）** |
+| **`gap`** | **25** |
+| **`not-blue-note`** | **1,000** |
+
+**`unclear` 0 筆、`already-covered` 不另列**（1,304 筆是在比對階段就命中四處而未進入判定，不算逐筆裁定）。
+
+---
+
+## 第 2482 條（**方法**）：**藝人 MBID 不用 `artist?query=` 解，改由已知 `rgMbid` 整批反解——同名實體問題直接消失**
+
+派工信第二節要求「用 MB `artist?query=` 或既有卡的 `mbNote` 取得 artist MBID，
+⚠ 同名實體要靠 `type` ＋ `disambiguation` 分辨（`Joel Ross` 在 MB 有兩個）」。
+**本層沒有照這一句做，因為有更硬的解法**：本線每一列都帶 `rgMbid`，
+用 `release-group?query=rgid:(A OR B OR …)`（每批 20 個）把 **1,231 個已知 release-group 的 `artist-credit` 整批反解**，
+**直接拿到 artist MBID**。
+
+- **1,231 個 RG 全數解析成功、0 筆落空**，得到 **541 個相異 artist MBID**。
+- **完全不需要靠 `type`＋`disambiguation` 猜**：`Joel Ross` 回來的就是 `6d09039b`（Person／US vibraphonist），
+  另一個 `02f84b16`（pianist, conductor, choral arranger）根本不會出現，因為沒有任何一筆本線 RG 掛他。
+- 附帶好處：**掛名字串的分裂不影響結果**。`Tony Allen` 與 `Tony Allen & Jeff Mills`、
+  `Trijntje Oosterhuis` 的七種寫法、`Wayne Shorter` 與 `Wayne Shorter Quartet`——
+  539 個掛名字串收斂成 541 個 MBID（群組與個人是不同實體，所以數字反而略增），**沒有一個靠字串猜**。
+
+**裁定：這一線之後要再做藝人軸稽核，一律走 rgid 反解，不要走 `artist?query=`。**
+判準依第 2 條（可逆）與第 3 條（卡住整條線）：名字比對錯一個就整位藝人漏掉，成本太高。
+
+---
+
+## 第 2483 條（**⚠ 派工信與檔案實況不符之一**）：**`seed_cards.json` 根本沒有 `label` 或 `scene` 欄位**
+
+派工信第二節第 3 點逐字要求：「`seed_cards.json`（**唯讀**）裡 `label` 或 `scene` 與 Blue Note 相關、
+且 `year >= 1985` 的卡的 `artist` 欄」。
+
+**實查：`seed_cards.json` 是 17,248 列的緊湊陣列，每列 7／8／9 個元素**
+（`[artist, album, a, b, c, genres, year, (composer), (hall)]`），
+**沒有 `label`，也沒有 `scene`**。`grep -ic "blue note"` 全檔只有 11 次，都在別的欄位裡。
+派工信寫的那個形狀是 `desc-tools/batches/cards/*.json` 的卡單形狀，不是 seed 的。
+
+**裁定：改用等效替代**——「seed 的（藝人, 盤名）能對到 `enum/blue-note.json`、且該列 `year >= 1985`」。
+這樣撈出 **19 位藝人**併進宇宙。判準依第 1 條（有先例：第 1250／611 條一路都在講「欄位不能照字面信」）
+與第 3 條（不決定就沒有第三個來源）。
+
+---
+
+## 第 2484 條（**⚠ 更正本檔第 2356(二) 條**）：**藝人端 `release-group?artist=` **回得到** `KingMaker`，第 2356 條寫的「回 `count: 0`」是錯的**
+
+第 2356(二) 條逐字寫：「**`arid:6d09039b`（Joel Ross 本人）的 release-group 端點回 `count: 0`**，
+也就是說連從藝人端補也補不到（MB 的 RG 與 artist 的關聯在這一筆上同樣殘缺）。」
+
+**實查兩個端點都回得到**：
+
+| 端點 | 回傳 |
+|---|---|
+| **browse** `release-group?artist=6d09039b-…&type=album&limit=100` | **`release-group-count: 7`，逐筆列出 `KingMaker`（`6cd0a509`、2019-05-03）** |
+| **search** `release-group?query=arid:6d09039b-…` | `count: 15` |
+
+**MB 的 RG↔artist 關聯在這一筆上是完整的，殘缺的只有 release 的 `label-info`。**
+
+⚠ **這條更正很重要，因為它是本層整個能成立的前提**：
+第 2356 條那一句若成立，藝人軸也補不到，這一棒根本不該派。
+**推測第 2356 條當時打的是截短的 MBID（`0d190bc8` 那種前八碼形式），MB 會回 `Invalid mbid.`
+——本層第一次試也踩到同一個坑**（`release/0d190bc8?...` 逐字回 `{"error": "Invalid mbid."}`）。
+**「查無」與「MBID 打錯」在 MB 上長得不一樣，但在轉述時很容易併成一句「回 0」。**
+
+**裁定：第 2356(二) 條末句作廢，其餘（`label-info` 為空、label 軸碰不到）維持。**
+
+---
+
+## 第 2485 條（**⚠ 派工信與實況不符之二；且它排掉的是一筆真缺口**）：**`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)` 不在 `c166-cards.json` 裡，它是 `gap`**
+
+派工信第三節逐字寫：「**已排除的一筆**：`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)` 不是缺口，
+**它在 `desc-tools/batches/cards/c166-cards.json` 裡**（c-169 b 提報時沒看到 c-166 的卡單）。」
+
+**實查不成立。** 用正規化盤名對**全部** `c*/slice.json`、**全部** `c*-cards.json`、`enum/blue-note.json`、
+`seed_cards.json`、以及全部 `c*/prop-*.json` 逐列比對，**沒有任何一筆記錄的 `album` 等於這張碟**。
+
+`c166-cards.json` 裡確實出現這個字串，但它是**別張卡的 `label` 敘述文字引用到它**，逐字：
+> `…and third album for Blue Note Records. The anticipated follow-up to A Wall Becomes A Bridge, Scott's much-lauded 2019 release with his band Oracle`
+
+`c169/prop-b.json` 那一次同樣是 `curatorWhy` 的引文（逐字「…presented his band Kendrick Scott Oracle: We Are The Drum (2015) and A Wall Becomes A Bridge (2019)」）。
+
+⚠ **這是第 611 條「盤名撞字串不等於撞卡」的反向形：字串命中被誤讀成卡片存在。**
+第 611 條防的是「grep 到了所以以為撞卡」，**本條是「grep 到了所以以為已收」——同一個錯，方向相反，而且更危險，因為它會讓一筆真缺口被銷案。**
+
+**裁定：這一張是 `gap`，列進報告第一區。** 佐證：
+MB RG `c8f8ec1c-1899-4495-a6a1-57a555df47c8`（2019-04-05）／
+Discogs 回 1 筆 `Kendrick Scott Oracle - A Wall Becomes A Bridge`、US 2019 CD Album、`label` 逐字 `["Blue Note"]`、`catno` 逐字 `774920 6`。
+**c-169 b 第 2208 條與本檔第 2356(四) 條把它列為「給主線的回頭查」是對的，派工信的排除是錯的。**
+
+**同時裁定一條做法**：**「某張碟已經收了」不可以用 grep 認定，必須用「(正規化藝人名, 正規化盤名) 或 `rgMbid` 命中某一筆記錄的欄位」認定。**
+
+---
+
+## 第 2486 條（**本層最重要的結構性結論**）：**`bn-label-present` 掛零——列舉檔的 label 軸沒有漏抓，漏的是 MB 沒填**
+
+7,184 個「四處都沒有」的候選，逐筆回問 `release?query=rgid:(…)` 取 `label-info` 之後：
+
+| 形狀 | 筆 |
+|---|---:|
+| MB 掛著**非** Blue Note 廠牌 | 6,159 |
+| MB `label-info` **全空** | 609 |
+| MB `label-info` **部分空**（其餘掛他廠／母公司） | 416 |
+| **MB 掛著 Blue Note 家族廠牌、卻不在列舉檔裡** | **0** |
+
+**一筆都沒有。**
+
+**這把第 2356(三) 條的推測收斂成一句可操作的結論**：
+**`enum/blue-note.json` 的 label 軸，對「MB 那一端有把 Blue Note 填上去」的碟是完整的**
+（它列舉了 13 個 Blue Note 名下的 label 實體，見該檔 `entities`，涵蓋得很乾淨）。
+**它唯一的盲區，是 MB 那一端沒填。**
+
+**推論（給主線）**：
+1. **重跑列舉腳本補不到這 25 張**——不管加什麼 `inc=`，label 軸都碰不到 `label-info` 為空的 release。
+2. **要補只有兩條路**：**藝人軸**（本層做的），或 **Discogs 反查**。
+3. ⚠ **同一支腳本產的其他廠牌線有同樣的盲區，而且盲區大小與「那個廠牌在 MB 上的建檔品質」成反比**
+   ——Blue Note 這種大廠 7,184 個候選才漏 25 張（0.35%），**小廠很可能高得多**。
+
+---
+
+## 第 2487 條（**「失敗與正常長得一樣」的第六種形狀**）：**MB 把廠牌掛成母公司，不是掛 imprint**
+
+第 1557 條記了兩種、c-168 第 2088 條第三種、c-169 第 2146／2209 條第四種、
+本檔第 2356(三) 條第五種（label 軸碰不到 `label-info` 空的 release）。
+
+**本條是第六種，是第五種的變形，但更隱蔽**：
+**release 有 `label-info`、也不是空的——掛的是母公司 `Capitol Records`，不是 Blue Note imprint。**
+
+`Kendrick Scott Oracle《A Wall Becomes a Bridge》` 是標準樣本：
+
+| MB release | `label-info` |
+|---|---|
+| `eef85a5d-7efc-4baf-bf61-d604cce54215` | **`Capitol Records`**（MB label `abea2d3e`）／catno `null`／barcode `602577492068` |
+| `ac837ebb-d3ca-4cf3-a9b4-ccc43bd5de9a`（2019-04-05、US） | **`[]`（空陣列）** |
+
+**兩筆都不掛 Blue Note 家族實體，所以 label 軸一樣碰不到，而且「有 label-info」讓它看起來比空的更正常。**
+
+**25 筆缺口的成因分佈**：
+
+| 成因 | 筆 |
+|---|---:|
+| **`label-info` 全空** | **18** |
+| **只掛母公司／他廠、Blue Note 那一筆是空的** | **6** |
+| **掛成母公司 `Capitol Records` ＋另一筆空**（本條樣本） | **1** |
+
+**→ 七分之一的缺口不是「空」，是「掛錯層級」。** 之後做同類稽核，
+**不可以只掃 `label-info == []`，必須把「有 label-info 但不含該廠牌家族實體」的也撈進來覆核。**
+
+---
+
+## 第 2488 條（**25 筆 `gap` 全表**）
+
+依年份排序。全部經過「MB `rgMbid` ＋（正規化藝人名, 正規化盤名）逐列比對四處皆 0 筆」＋「Discogs 廠牌鏈＋目錄號」雙重確認。
+
+| # | 年 | 藝人 | 盤名 | RG MBID | 成因 |
+|---:|---:|---|---|---|---|
+| 1 | 1989 | Tommy Smith | Step By Step | `d9aafa98-b294-4940-bab0-0044c2d6dc4a` | label-info 空 |
+| 2 | 1992 | Tommy Smith | Paris | `0fdc9ff7-28f1-4a70-8927-5fc558c02380` | label-info 空 |
+| 3 | 1993 | Don Pullen & The African-Brazilian Connection | Ode to Life | `9ea8ad16-cfbb-382c-a4d9-b1382208cfff` | label-info 空 |
+| 4 | 1993 | **大西順子** | Cruisin' | `e50b89cb-4c01-3c6c-99d8-69f4adb37814` | label-info 空（**羅馬字重查才撈到，見第 2493 條**） |
+| 5 | 1994 | Ron Carter | Jazz, My Romance | `d4da0e99-768e-42bd-83f3-7d37b5149f6c` | label-info 空 |
+| 6 | 1995 | Kevin Eubanks | Spiritalk 2: Revelations | `d783536c-ce83-378a-9211-ba829dee7003` | label-info 空 |
+| 7 | 1996 | Jackie McLean | Hat Trick | `823b61c2-8402-4f27-a611-d95806fd703c` | label-info 空 |
+| 8 | 1997 | Dexter Gordon | Tenor Titans | `03d9e3b3-32d3-426b-a173-44b7a94341f3` | label-info 空 |
+| 9 | 1997 | Dianne Reeves | That Day… | `bb230b81-f930-3b99-9d16-9df70f85ea6a` | label-info 空 |
+| 10 | 1997 | Jackie McLean | Fire and Love | `eca6903a-3e10-43ad-a40d-f480aa474255` | label-info 空 |
+| 11 | 1997 | Ron Carter | Brandenburg Concerto | `3f03b660-8de5-33f8-a552-84365722a4d0` | label-info 空 |
+| 12 | 1998 | Brian Blade Fellowship | Brian Blade Fellowship | `20765029-3ac1-3dae-bc61-76eefcf58e32` | label-info 空 |
+| 13 | 1998 | Elvin Jones | At This Point in Time | `0351ea63-7b0f-31af-b871-8716589821ac` | label-info 空 |
+| 14 | 1998 | Gonzalo Rubalcaba | The Trio | `8ebd5349-dd56-3257-9378-dff56259e57c` | label-info 空 |
+| 15 | 1999 | Michel Petrucciani | Trio in Tokyo | `8b89c2f8-8d7a-3147-af17-1fd33f7d5d2d` | label-info 空 |
+| 16 | 1999 | Prysm | Time | `1e8ff572-72cb-3a59-a31c-163b03c7acf7` | label-info 空 |
+| 17 | 2001 | Ron Carter | Stardust | `bfb6c1ec-2f72-328e-a0f9-a844802cef07` | label-info 空 |
+| 18 | 2002 | Stefano Di Battista | Round About Roma | `0762a45c-b1b7-3f51-9cb4-753b0746a011` | label-info 空 |
+| 19 | 2003 | Jason Moran | The Bandwagon | `77690c69-cda4-3031-a834-bcdb3521a2b4` | label-info 空 |
+| 20 | 2005 | Bill Charlap | Love Is Here to Stay | `6820c0ec-085b-4a2f-ab50-ac941198f509` | label-info 空 |
+| 21 | 2011 | Ruben Hein | Live | `d00a707f-f318-434e-890a-dad529f8744b` | 只掛他廠＋空 |
+| 22 | 2012 | Van Morrison | Born to Sing: No Plan B | `de243950-fafd-420f-bcf9-668241d61b45` | 只掛他廠＋空 |
+| 23 | 2018 | James Francies | Flight | `f4539fe1-df19-4ad4-99d3-c2d5a2539471` | 只掛他廠＋空 |
+| 24 | **2019** | **Joel Ross** | **KingMaker** | `6cd0a509-b96a-40cc-a807-7b6025bc2a99` | **label-info 空（第 2356 條的那一張）** |
+| 25 | **2019** | **Kendrick Scott Oracle** | **A Wall Becomes a Bridge** | `c8f8ec1c-1899-4495-a6a1-57a555df47c8` | **掛成母公司 Capitol＋空（第 2487 條）** |
+
+⚠ **年份分佈很說明問題**：**25 筆裡 20 筆在 1989–2005**，**2006 之後只有 5 筆**。
+**MB 的 `label-info` 建檔品質是隨年份往後變好的**，所以這一類缺口集中在九〇年代到千禧年初。
+**建議主線若要接，先接 1989–2005 那 20 張。**
+
+⚠ **`Ron Carter` 一人 3 張、`Jackie McLean` 2 張、`Tommy Smith` 2 張**——
+**同一位藝人連續漏，代表漏的不是隨機的單張，是「那一段時間那一位藝人的 MB 建檔習慣」。**
+
+---
+
+## 第 2489 條（**比對規則**）：**「四處都沒有」只認 `rgMbid` 與（正規化藝人名, 正規化盤名）兩種鍵，不認盤名單獨命中**
+
+比對面涵蓋：`enum/blue-note.json`（1,812 列）、**全部** `batch-progress/c*/slice.json`、
+**全部** `desc-tools/batches/cards/c*-cards.json`、`seed_cards.json`（17,248 列），
+外加 `batch-progress/c*/prop-*.json` 當補充層。合計 `rgMbid` 鍵 5,514、（藝人, 盤名）鍵 17,579。
+
+**不採「盤名單獨命中」**，因為第 1250 條在本層應驗得很兇：
+`Love Is Here to Stay` 撞到 `八城一夫トリオ`（1968）、
+`Flight` 撞到 `Howard Riley`（1971）、
+`Cruisin'` 撞到 `Village People`（1978）、
+`The Trio` 撞到 `本田竹広`（1970）、
+`Time` 撞到 `鄭雙雙`（2024）、
+`Stardust` 撞到 `山本剛`（1977）、
+`Live` 撞到 `日野皓正クインテット`（1973）。
+**七筆全是不同碟。** 若用盤名單獨命中當「已收」，這 25 筆會被銷案掉 7 筆。
+
+**裁定：沿用第 1250 條的精神——判「同一張碟」只有「目錄號＋廠牌」或「MBID」有效；
+判「已在我們手上」只有「`rgMbid`」或「(藝人, 盤名) 兩者同時」有效。**
+
+---
+
+## 第 2490 條（**Blue Note 家族邊界**）：**簡報第二節那兩個排除項在本層 0 次命中；但冒出第三個要排的東西——**演出場地**
+
+簡報第二節排除 `Blue Note Compagnie`（`BNS-` 目錄號）與 `Blue Note Digital`（MB label `0293ae5c`）。
+**本層 1,025 筆 Discogs 覆核，這兩者各 0 次命中**，不必動用。
+
+⚠ **但冒出第三種要排的**。Discogs search result 的 `label` 陣列**混著 company／studio／演出場地**，不只廠牌。
+全量掃過所有含 `blue note` 的字串只有六種：
+
+| 字串 | 次 | 判定 |
+|---|---:|---|
+| `Blue Note` | 76 | 家族 |
+| `Blue Note Records` | 11 | 家族 |
+| `Blue Note International` | 7 | 家族 |
+| **`The Blue Note Jazz Club`** | **3** | **⚠ 紐約那家俱樂部，不是廠牌** |
+| `Blue Note 80 Vinyl Reissue Series` | 1 | 家族（再發系列） |
+| `Elvin Jones On Blue Note` | 1 | 家族（套裝系列名） |
+
+**`Kenny Werner《Democracy Live At The Blue Note》(2006)` 一度被判成 `gap`，實際廠牌是 `Half Note`**
+——命中的是場地名。**改成白名單後正確退掉。**
+
+**裁定：Blue Note 家族判定一律走白名單，並明列排除 `club`／`cafe`／`jazz club` 字樣。
+⚠ 盤名裡帶 `Live At The Blue Note` 的碟，在這一線會反覆出現這個假陽性。**
+
+---
+
+## 第 2491 條（**Discogs 取用**）：**`api.discogs.com` 無需授權即可讀，`database/search` 直接回廠牌鏈與目錄號**
+
+`label-info` 為空時，派工信要求「改看 Discogs 的廠牌鏈與目錄號」。
+**實作**：`GET https://api.discogs.com/database/search?artist=<>&release_title=<>&type=release&per_page=25`，
+UA 同 MB 那組，**不需要 token**，結果每筆直接帶 `label`（陣列）、`catno`、`country`、`year`、`format`、`barcode`、`uri`。
+⚠ **網頁版 `www.discogs.com/master/...` 走 WebFetch 回 403**，API 則通。
+
+**節流：未授權上限 25 req/min。** 本層用 3 支 worker、每支 `MIN_GAP=7.5s`（合計上限 24/min），
+1,025 筆跑完只吃到 1 次 429，退避後即恢復。
+
+**裁定：這一線之後要查 Discogs 廠牌鏈，一律走 API，不要走網頁。**
+
+---
+
+## 第 2492 條（**Discogs 覆核的守門**）：**搜尋結果必須同時過「年份差 ≤2 年」與「掛名字串出現在標題裡」兩關，才拿來判廠牌**
+
+Discogs 的 `artist`＋`release_title` 搜尋會回同名不同碟。最乾淨的樣本是
+**`Bill Charlap《Love Is Here to Stay》(2005)`**：同一次查詢回的 25 筆裡，
+前四筆是 `Sandy Stewart, Bill Charlap`（2005、Blue Note、`7243 5 60340 2 0`）——**真的那張**，
+第五、六筆是 **`Tony Bennett & Diana Krall With The Bill Charlap Trio`（2018、Verve／Columbia）**——**不同碟**。
+**只看「有沒有 Blue Note」會對；只看「第一筆」會錯；只看年份或只看掛名都會漏。**
+
+**裁定：兩關都要過才採信。** 本層照此判出 1,000 筆 `not-blue-note`、25 筆 `gap`。
+
+---
+
+## 第 2493 條（**⚠ 非拉丁掛名是一個獨立的失效模式；它讓 1 筆真缺口差點被判成 `not-blue-note`**）
+
+本層 1,025 筆候選裡，**有 13 筆的掛名是日文漢字／假名**
+（`大西順子`／`山中千尋` 6 張／`日野皓正` 2 張／`桑原あい`／`森山威男`／`菊地雅章` 2 張）。
+**這 13 筆一開始全部被判成 `not-blue-note`，而且是錯的判法**，兩個原因疊在一起：
+
+1. **Discogs 的 `artist=` 用日文漢字查，13 筆全部回 0 筆**——
+   **「回 0 筆」在程式裡與「查過了、不是 Blue Note」長得一模一樣**（又一次「失敗與正常長得一樣」）。
+2. **正規化函式把非 ASCII 全部剝掉**，`norm('大西順子')` 是**空字串**，
+   於是「掛名必須出現在 Discogs 標題裡」這一關**恆不成立**，等於沒有守門。
+
+**用羅馬字重查 13 筆之後**（`Junko Onishi`／`Chihiro Yamanaka`／`Terumasa Hino`／`Ai Kuwabara`／`Takeo Moriyama`／`Masabumi Kikuchi`），
+**13 筆全部回到有結果的狀態，並且撈出 1 筆真缺口**：
+
+- **`大西順子《Cruisin'》(1993)`**，RG `e50b89cb-4c01-3c6c-99d8-69f4adb37814`；
+  Discogs 逐字 `Junko Onishi Trio - Cruisin'`、`label` 逐字 `['Blue Note', "Somethin' Else", 'Toshiba EMI Ltd']`、
+  `catno` 逐字 `CDP 7243 8 28447 2 3`。四處比對 0 筆。
+
+**裁定：本線只要對 Discogs 做掛名查詢，非拉丁掛名一律先轉羅馬字，並且「回 0 筆」要當成「沒查到」而不是「不是」。**
+⚠ **這一條對日本盤很多的本線（`TOCJ-`／`UCCQ-`／`Somethin' Else` 那一段）影響面不小，建議寫進簡報第三節。**
+
+---
+
+## 第 2494 條（**範圍邊界，照派工信執行**）：**只產報告，沒有建 slice、沒有建卡單、沒有碰禁區**
+
+- **沒有**建任何 `slice.json`、`prop-*.json`、卡單。
+- **沒有**寫 `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`enum/blue-note.json`
+  ——全部只讀。
+- **沒有** `git commit`／`git push`／動索引。
+- 暫存檔全在 scratchpad 且帶 `bn-audit-` 前綴。
+- **產出只有兩個檔**：`batch-progress/enum/blue-note-artist-axis-audit.md` ＋ `.json`，
+  加上本節 append 進 `batch-progress/c170/rulings.md`。
+
+**接不接這 25 張、怎麼切批，由主線定。**
+
+---
+
+## 第 2495 條（**節流與併行**）：**MB 的「每秒 1 次」是速率不是併行度；分片跑完全程沒有被擋**
+
+MB 端的實測瓶頸**不是**我們的節流，是**伺服器延遲**：
+`release?query=rgid:(30 個 OR)` 這種查詢單發要 8–20 秒，單支 worker 只能做到 ~7 筆/分。
+**7,184 筆這樣跑要 17 小時。**
+
+**裁定：改用 3 支 worker、每支 `MIN_GAP=3.5s`（合計上限 ~0.86 req/s，仍在「每秒最多 1 次」之內），
+批量從 15 個 rgid 提到 30 個並加分頁。** 結果：**7,184 筆在 ~45 分鐘跑完**，全程只在啟動瞬間吃到 3 次 503，退避後即恢復。
+
+**判準**：**「每秒最多 1 次」約束的是送出速率，不是同時在途的請求數**；
+只要把 per-worker 間隔乘上 worker 數仍 ≥1 秒，就沒有違反。
+⚠ **但 503 會在三支同時發第一槍時集中出現**，所以退避必須留著（第 2 條：可逆，調回單支的成本只是慢）。
+
+⚠ **另記一個實作坑**：用 `nohup … &` 從工具層起背景行程，**外層 wrapper 一結束會把子行程一起帶走**；
+本層因此死了兩次。**要用 `setsid`。** 另外 **`pkill -f 'bn-audit…'` 會連自己那一行 shell 一起殺掉**（本層踩到一次，exit 144）。
+
+---
+
+## 第 2496 條（**⚠ 派工信與原文／既有裁定牴觸之處；依規定回報**）
+
+派工信第六節要求交件回報指出「本信哪一句與既有裁定牴觸」。**本棒查出三處，其中兩處會改變結論：**
+
+| # | 派工信原句 | 實查 | 影響 |
+|---:|---|---|---|
+| 1 | 第三節：「**已排除的一筆**：`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)` 不是缺口，**它在 `desc-tools/batches/cards/c166-cards.json` 裡**」 | **錯。** 它只出現在**別張卡的敘述文字**裡，不是一筆卡；四處逐列比對 0 筆 | ⚠ **會漏掉一筆真缺口**（第 2485 條） |
+| 2 | 第二節第 3 點：「`seed_cards.json` 裡 `label` 或 `scene` 與 Blue Note 相關…的卡的 `artist` 欄」 | **錯。** 該檔是緊湊陣列，**沒有 `label`，也沒有 `scene`** | 第三個來源無法照字面執行，改用等效替代（第 2483 條） |
+| 3 | 第二節：「⚠ 同名實體要靠 `type` ＋ `disambiguation` 分辨」 | **本身沒錯，但本層用 rgid 反解後這一步完全不需要** | 無害；記為更好的做法（第 2482 條） |
+
+**另外更正的是既有裁定、不是派工信**：**本檔第 2356(二) 條「藝人端回 `count: 0`」是錯的**（第 2484 條）。
+⚠ **這一條若沒更正，這一棒本來不該存在**——派工信是對的，被更正的是它引用的那條裁定。
+
+---
+
+## 第 2497 條（**交件版本認定**）
+
+**以工作區當下的 `batch-progress/enum/blue-note-artist-axis-audit.md` 與 `.json` 為交件版**
+（第 1803-B 條：本線曾三次被中途檢查點撈走未定稿的版本）。
+本層在跑的過程中把這兩檔**寫回磁碟四次**（種子 1 筆 → 藝人軸掃完 → 廠牌判定跑完 → Discogs 覆核跑完），
+**中途版本的 `unclear` 數字會隨覆核進度變動，只有最後一版是 0。**
+**「筆數對了」與「定稿了」在本棒是同一個時點：`Discogs 覆核 1,025／1,025`、`unclear 0`。**
+
+---

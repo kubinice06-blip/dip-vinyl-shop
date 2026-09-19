@@ -2567,3 +2567,67 @@ b 組倒回去量 a 組 7 張：**min 217／max 227／中位 225 三項逐項對
 | c-169（預期） | 2000–2019，歐洲分支為主 | — | 策展層實測 CAA 404 有 15/40 |
 
 **→ 後批對 1985–1999 段與歐洲分支段的覆蓋率，要照「一半上下」預期，不要照現役目錄。**
+
+## 第 1818-B 條（藝人軸稽核交件）：**掃完 541/541 位藝人，25 筆真缺口；列舉腳本重跑一次也補不到**
+
+**方法**：由本線 1,231 個已知 `rgMbid` 整批反解出 541 個相異 artist MBID（全數成功、0 落空），
+藝人軸看到 **8,937 張 1985 後 Album**，扣掉已命中的 1,304 張，**7,184 個候選進廠牌判定**；
+**Discogs 覆核 1,025／1,025，`unclear` 0 筆**。
+
+### ⚠ 最重要的結構性結論：`bn-label-present` 掛零
+
+**7,184 個候選裡，沒有任何一個「MB 掛著 Blue Note 家族廠牌」的 RG 被列舉檔漏掉。**
+**→ `enum/blue-note.json` 的 label 軸沒有漏抓，它唯一的盲區是 MB 那一端沒填。**
+**→ 重跑列舉腳本補不到這 25 張，只有藝人軸或 Discogs 反查補得到。**
+
+### 成因分類：**七分之一的缺口不是「空」，是「掛錯層級」**
+
+| 成因 | 筆 |
+|---|---:|
+| `label-info` 全空 | 18 |
+| 只掛母公司／他廠，Blue Note 那一筆是空的 | 6 |
+| 掛成母公司 `Capitol Records` ＋另一筆空 | 1 |
+
+**→ 之後同類稽核不能只掃 `label-info == []`。**
+
+**25 筆裡 20 筆在 1989–2005、2006 後只有 5 筆**（MB 建檔品質隨年份變好）；
+⚠ **Ron Carter 3 張、Jackie McLean 2 張、Tommy Smith 2 張——同一人連續漏，漏的是該藝人該時期的建檔習慣，不是隨機單張。**
+
+## 第 1819-B 條（⚠ 主線判錯一筆，差點讓真缺口被銷案）
+
+**我在第 1812-B 條寫「`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)` 不是缺口，它在 `c166-cards.json` 裡」——錯的。**
+**主線自己複查確認**：該字串在 `c166-cards.json` 只出現一次，**在 `Corridors` 那張卡的 `curatorWhy` 敘述文字裡**
+（逐字 `The anticipated follow-up to A Wall Becomes A Bridge…`）；
+**全部卡單的 `album` 欄逐字命中 0 筆。** c-169 b 提報時那次同樣是 `curatorWhy` 引文。
+**它是真缺口，Discogs：US 2019 CD、`label` 逐字 `["Blue Note"]`、`catno` `774920 6`。**
+
+⚠ **這是第 611 條的反向形：字串命中被誤讀成卡片存在。**
+**比原形更危險——原形是漏掉撞卡，這個形狀會讓真缺口被銷案。**
+**→ 判「已收」一律比對 `album` 欄逐字，不可用 grep 掃整份 JSON。**
+稽核層實測：**盤名單獨命中的假陽性 7 次**（`Love Is Here to Stay`→八城一夫トリオ、`Flight`→Howard Riley、
+`Cruisin'`→Village People…），**若拿 grep 當「已收」，25 筆會被銷案 7 筆。**
+
+### ⚠ 另外更正一條既有裁定（不是派工信的錯）
+
+**c-170 的第 2356(二) 條寫「`arid:6d09039b` 的 release-group 端點回 `count: 0`」是錯的。**
+**實查 browse 回 `count: 7` 並逐筆列出 `KingMaker`、search 回 15。**
+**這一條若沒更正，這一棒本來不該存在。** 推測原判是打了截短的 MBID（MB 會回 `Invalid mbid.`）。
+
+### 三個實作發現，值得寫進簡報
+
+1. ⚠ **非拉丁掛名是獨立失效模式**：13 筆日文漢字掛名，**Discogs `artist=` 查全部回 0 筆**，
+   而正規化後變空字串**讓守門條件恆不成立**——**「回 0」與「不是 Blue Note」長得一樣**。
+   **羅馬字重查後多撈出 1 筆真缺口**（`大西順子《Cruisin'》`）。
+2. ⚠ **Discogs 的 `label` 陣列混著 company／studio／演出場地**：
+   `The Blue Note Jazz Club` 讓 `Kenny Werner《Democracy Live At The Blue Note》` 一度誤判成 gap（實際是 Half Note）。**要用白名單。**
+3. **`seed_cards.json` 沒有 `label`／`scene` 欄**——它是 17,248 列的緊湊陣列
+   `[artist, album, a, b, c, genres, year, (composer), (hall)]`。**我的派工信寫錯了欄位名**，代理改用等效替代。
+
+## 第 1820-B 條（處置）：**25 筆切成 `c171`，a 13／b 12，依年份排序**
+
+`batch-progress/c171/slice.json` 已建（`chk-prop.mjs` 由 c-170 複製改名，`label-lines.mjs` 已補登）。
+**每筆的 `note` 都帶「【藝人軸稽核補批】＋成因＋佐證檔路徑」**，
+**`catno`／`countries`／`nReleases` 一律留空**——**這批的 slice 不是列舉檔產的，沒有那些欄位，策展層要自己去 Discogs 補。**
+⚠ **切批界線刻意不按年代分**（20 筆擠在 1989–2005），**改成單純依年份排序後對切**，
+理由：本批的風險不是年代，是**同一位藝人連續漏**（Ron Carter 3、Jackie McLean 2、Tommy Smith 2），
+**`Ron Carter` 三張刻意跨在 a（1994／1997）與 b（2001）兩組**——**掛名要兩組一致，故意讓兩邊都得做一次判定並互相對照。**
