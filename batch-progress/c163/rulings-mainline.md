@@ -1450,3 +1450,74 @@ Discogs 小提琴欄的 `Richard Margitza` 與官網「父親是底特律交響�
 ⚠ **`Mark Knopfler` 是「藝人頁 404 但新聞稿有」那一型**（第 1747-B 條），本組唯一一例。
 ⚠ **`lonnie-smith` 裸名 404、要走 `dr-lonnie-smith`**——**第 1747-B 條「兩形都試」第四次應驗。**
 **③ 最終有素材的 16/19。**
+
+## 第 1777-B 條（採納 c-167 的建議，第四次也是最後一次調整這個訊號）：**加一道「年份早於當年−2」，把當代新碟的必然假陽性整批濾掉**
+
+c-167 指出：**這個訊號對 2025 年以後的碟幾乎必然是假陽性**——**當代新碟本來就是 MB 數位先進、實體後補**，
+`frd` 落在發行年是對的。它建議加一道「`frd` 早於 <當年−2>」，並說這樣**不會漏掉真陽性**（第 1791 條那個真陽性差十九年）。
+
+**主線實掃驗證，它說得對**：
+
+| 篩選 | 筆數 |
+|---|---:|
+| 第 1761-B 條版（`Digital Media` 全部 ＋ `country` `XW` 或空 ＋ `catno` 空） | 60 |
+| **加上「年份 < 2024」** | **47**（濾掉 13） |
+
+**濾掉的 13 筆，全部是 2024–2026 的當代碟**，其中 11 筆正是這一輪各棒逐筆覆核後判「維持、不改判」的那些：
+`Aaron Parks` ×2、`Out Of/Into` ×2、`山中千尋《Ooh-La-La》`、`DOMi & JD BECK`、`FATHERS`、
+`Immanuel Wilkins` 三卷、`Minyo Crusaders`、`Nduduzo Makhathini`、`Ron Carter, Ricky Dillard`。
+**兩個已確認的真陽性（`Tim Hagans` 2014→1995、`Rick Margitza` 2020→1991）都留在名單上。**
+
+⚠ **為什麼這道濾網在原理上是安全的**：**真陽性的定義是「MB 的 `frd` 比實體首發晚很多年」。**
+**若 enum 記的年份已經是 2024 以後，那實體首發只會更晚——不可能有可觀的落差。**
+**所以這道濾網濾掉的必然是假陽性，不會誤殺。**
+
+**真陽性率更新：1/5 → 1/7 → 加濾網後，前方未完成批次只剩 1 筆待查**：
+**`c170 (a) lophiile《The Good Days Between》2023`**。**c-170 的策展派工信要點名它。**
+
+⚠ ⚠ **這個訊號至此調整了四次**（`nReleases` → `country` → 年齡濾網）。**把過程記下來當方法論**：
+**前兩次是「篩太緊、漏真陽性」，這次是「篩太寬、假陽性淹掉訊號」。
+訊號篩選要同時顧兩端，而判斷該往哪邊調的依據是「逐筆覆核後的真陽性率」——
+不是憑感覺，是讓幾批人工覆核累積出分母。**
+
+---
+
+## 第 1778-B 條（c-167 交件驗收）：**收 14 退 3，三筆退件有兩筆是本線第一次遇到的形狀**
+
+14 張、`chk-prop a b` **標記 0**、跨組重複 0、跨批撞卡 0、`· 盤名撞 apex` 0 處、號段 2020–2035。
+
+**(一) ⚠ `DOMi & JD BECK《YOU ASKED!》` 是「全碟 instrumental 版」——本線第一次，已立第 2023 條。**
+它是 seed 已有的《WHO ASKED?》(2026) 的**全碟純演奏版**：**15 軌曲名與曲序逐字相同，MB 逐軌帶 `(instrumental)`**；
+③ 官網 Releases 欄只列《WHO ASKED?》與《NOT TiGHT》兩張；Discogs 0 筆。
+**判：不是 (甲)（沒有新演奏）、不是 (丁)（100% 重疊、形狀相同），與 §6「淨化版雙胞胎取一筆」同形，退。**
+⚠ ⚠ **兩個折鍵不同（`whoasked`／`youasked`），`chk-prop` 四道全不亮，純人工抓出。**
+**本條把它立為第六種退件形狀：「同一張碟的另一種混音／版本（instrumental、淨化版、卡拉版）」。**
+
+**(二) ⚠ `Nate Smith《Fathers》2026` 與 c-170 b 的 `FATHERS《FATHERS》2026` 是同一張碟。**
+證據：**目錄號 `00199957415965` 兩邊逐字相同**；Discogs 兩筆的 artists 欄逐字 `Fathers (6)`；
+③ 官網逐字 `the July 10 release of FATHERS, the self-titled debut by a collective … Kenny Beats, Kiefer, CARRTOONS, Nate Smith`；
+**`/artist/fathers/` 200、`/artist/nate-smith/` 404**；Apple `6779502137` 的 collectionName 與 ℗ 權利人逐字都是 `FATHERS`。
+**退本批這筆、留給 c-170**（那邊的 rgMbid `458ef48c` 才是對的，**`selfTitled` 要填 `true`**）；
+MB RG `6391b52e` 是第 1594 條那種重複 RG。**c-170 的派工信要帶上這段。**
+
+**(三) `Jackie McLean《Jacknife》` 退，三個獨立理由——⚠ 最前面那個我派工信漏了。**
+**複合折鍵直接撞 `seed_cards.json` 的 `Jackie McLean —《Jacknife》(1975)`**（主線已實掃確認）。
+⚠ **我的派工信只把它當 (乙)/(戊) 的題目**，**§1 去重先行與第 1746-C 條的複合折鍵壓過那兩條**。
+⚠ **我指名的第 1763 條快捷查法實查沒中**（label-info 四格全是 Blue Note、無日版號段）——**第 1743-B(一) 條再次應驗**（它是充分非必要條件）。
+
+**(四) 三張 Village Vanguard 判裸名 `Immanuel Wilkins` ＋ 盤名去前綴，理由成立。**
+MB 三卷自己不一致（Vol.1 是 Group、Vol.2/3 是 Person）、Discogs 六筆全給團名形、**Apple 三卷全給裸名**、
+**③ `/artist/immanuel-wilkins/` 200 而 `/artist/immanuel-wilkins-quartet/` 404**；
+池中已有三張裸名（c-165 a／c-165 b／c-166 b），**後兩張就是同一個四重奏**。
+**盤名去前綴的依據**：③ 官網軌表逐字把 `Immanuel Wilkins Quartet: Live At The Village Vanguard` 當**整體／系列名**，
+後面才分 `Vol. 1 … Vol. 2 … Vol. 3 …`；Discogs 六筆逐字都無前綴。
+⚠ **代價已寫進 risk**：**Apple 的 collectionName 帶前綴，用卡單盤名搜不到**——三個 collectionId 已釘
+（Vol.1 `1872550960`／Vol.2 `1890295355`／Vol.3 `1895320634`），⚠ **Vol.1 與 Vol.3 同為 4 軌，本機不可用軌數區分。**
+
+**(五) ⚠ (丙) 的新形狀**：**MB 把數位那筆的 `label-info` 掛成 `UMG Recordings, Inc.`（`ee9d7dfa`）、只有實體那筆掛 Blue Note**
+（`Bill Frisell` 與 `Walter Smith III` 兩張同形）。**與第 1736-B 條同向：MB 單一 release 的 label 欄不可單獨成立，要看實體那筆。**
+
+**(六) 我派工信的兩處小錯**：說「`Ron Carter` 在 seed 是 0 列（實掃過）」——**裸名單獨一列確實 0，但含 `Ron Carter` 的有 2 列**
+（`Red Garland / Ron Carter / Philly Joe Jones —《Crossings》`、`Jim Hall & Ron Carter —《Alone Together》`）。
+**第 1738-B 條的較輕版本：講池中有什麼時要說清楚「哪一種比對方式下的幾列」。**
+另預測地雷 1 會亮 `· 盤名撞 apex`，**實測 0 處**（`Vol. N` 讓折鍵不同鍵）——**與第 1762-B(三) 的 `Belonging` 那次同型，我第二次預測錯。**
