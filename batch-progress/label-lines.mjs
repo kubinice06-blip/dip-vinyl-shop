@@ -154,6 +154,8 @@ export const LINES = {
   c170: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
   // c171 是藝人軸稽核補批（第 1812-B 條）：MB 的 label-info 沒填或掛錯層級，廠牌軸列舉永遠碰不到的 25 張。
   c171: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  // c172 是本線最後的補遺：列舉失效的第六種（primary-type 未設）與第七種（enum 該列 year 為 null）各一張。
+  c172: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）' } },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
