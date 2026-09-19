@@ -2006,3 +2006,43 @@ Frost 的 `catno` 欄填的是 barcode；Juliano Rossi 與 Kitty Hoff 的 `catno
 **9 軌裡 7–9 軌是 1985 年的錄音**（Discogs notes 逐字），jazzlibrary.gr 另列有 1986《Duo For Alto Saxophone And Electric Bass》
 ——**要核那 1986 年那張是不是同一份錄音，正文不得把 7–9 軌寫成 2001 年錄的。**
 掛名取希臘文單掛名 `Θάνος Μικρούτσικος`（Gary Burton 是 `Vibraphone` 獨奏者、不進掛名；池中 seed 已有此字串）。
+
+## 第 1800-B 條（主線，⚠ 年份層新查法）：**「掃過 Discogs 原壓群」不等於「用 MB barcode 反查過」**
+
+c-169 a 收到主線的第 1796-B 條提醒後回頭重跑，**第三筆年份改判**：
+**`Scolohofo《Oh!》` 2003→2002**（日版 `Blue Note TOCJ-66204`，Discogs 15672011 的 `released` 欄逐字 `2002-12-26`、
+country `Japan`、format 逐字 `CD, Album`、barcode `4988006807631`、11 軌與美版相同，
+**notes 逐字 `Advance release in Japan (stated on obi)`**）。
+
+⚠ **根因是查法本身**：原查法是**拿 MB 每一筆 release 的 `barcode` 去 Discogs 反查**。
+**日版 barcode `4988006807631` 與美歐版 `724354208126` 不同，而 MB 沒建日版**
+——**barcode 反查永遠碰不到首發那一版**，跑再多次都一樣。
+
+**處置（從此列入策展層固定查法）**：**barcode 反查之外，必須另跑一次
+`artist=<掛名>&release_title=<盤名>&per_page=50` 的全 release 掃描。**
+c-169 a 跑了第二種查法之後，**20 張裡 1 張改年份、5 張補版本**。
+**這是第 1370／1371／1433 那一族的又一次應驗**：barcode 反查「查完沒有」與「MB 沒建那一版」回傳長得一樣。
+
+**同批另兩條**：
+- **「僅 XX 盤」note 在 c-169 a 命中兩筆、兩筆都錯**（`Alice Ricciardi《Comes Love》`、`High Five Quintet《Five for Fun》`
+  的義版原盤 `50999-512842-2-0`／`50999-227843-2-2` 都存在）。**命中率 0／2**，與 c-168 第 2088 條同根因。
+- **俄版 `Unofficial Release` 一律不當年份依據**（本批兩張）。
+
+## 第 1801-B 條（主線，**裁定**）：**兩張 Paolo Fresu 維持 `Paolo Fresu Quintet`，不改成 MB credited-name 串接形**
+
+c-169 a 就第 1795-B 條的更正回問：既然「照 MB RG credit 原樣並存」，那兩張 Fresu 要不要改成串接形？
+
+**裁定：不改。** 第 1795-B 條要防的是**「群組實體被收攏成個人實體」**（第 964 條），
+**而 `Paolo Fresu Quintet` 本來就是 MB 群組實體 `8799705f` 的實體名——它是群組字串，不是個人字串。**
+本組沒有收攏成 `Paolo Fresu`（`c7301466`），也沒動 `Paolo Fresu & Uri Caine`／`Paolo Fresu Devil Quartet`
+（兩者在 `c160-cards.json` 內已建）。**第 964 條要防的事在這組發生 0 次，我的更正在這張卡上不適用。**
+
+**決定性事實**：`desc-tools/batches/cards/c160-cards.json` 內逐字已有
+`{"artist":"Paolo Fresu Quintet","album":"Rosso, verde, giallo e blu","year":2007}`，
+**而那張的 RG `48da0c29` 與本組兩張形狀一模一樣**（同實體 `8799705f`、同 credited-name `Paolo Fresu 5et`、
+同 joinphrase ` Plays the music of `）。**改成串接形＝同一個 MB 實體在池中有三個字串**
+——那不是第 964 條的「兩個不同實體並存」，是**同一實體的三種寫法，正是第 1418 條的分裂**。
+
+⚠ **順帶記一條主線自律**：**更正一條錯的指示時，要先確認被更正的那張卡真的落在更正的射程內。**
+我為了修第 1795-B 條發出的更正，**對 `Musica Nuda`／`U-Street All Stars` 是空砲**（它們本來就是單一群組實體、無 joinphrase），
+**對兩張 Fresu 則會把對的改成錯的**。代理沒有照做而是回問，並附上一鍵反轉的三張清單（若真要改，是三張一起改、不是兩張），**判斷正確**。
