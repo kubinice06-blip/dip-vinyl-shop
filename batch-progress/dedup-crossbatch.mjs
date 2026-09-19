@@ -172,9 +172,16 @@ for (const r of propSide) {
 // 只報不擋，一樣只看還在策展中的批次那一側。
 const COUNTRYDATE = /^[A-Z]{0,5}(19|20)\d{2}(\d{2}(\d{2})?)?$/;   // 國別碼＋日期，不是目錄號
 const NOTCAT = /^(MB|BC|RG|ISBN|UPC|EAN)/;
+// 2026-09-19（c-166 a 抓到，主線第 1760-B 條）：**美國郵遞區號會被當成目錄號。**
+// Blue Note 版權行的地址 `Hollywood, CA 90028` 逐字出現在多張卡的 `label` 欄，
+// 被字母前綴型那條抓成 `CA90028`，於是「共用目錄號」報出四張毫無關係的卡
+// （c162 Derrick Hodge／c165 Immanuel Wilkins／c166 ARTEMIS／c166 Norah Jones）。
+// **先把「兩個大寫字母＋五位數（可帶 -四位）」整段剝掉再抽**——真正的目錄號前綴
+// 幾乎都不是恰好兩碼字母配恰好五位數字，而美國地址一定是這個形狀。
+const ZIP = /\b[A-Z]{2}\s?\d{5}(-\d{4})?\b/g;
 const catnos = s => {
   const out = new Set();
-  const txt = String(s || '');
+  const txt = String(s || '').replace(ZIP, ' ');
   // 字母前綴型：CDP 7 84353 2、BLP 1595、TOCJ-5526、B1-92894、BNJ-61013、LT-1089
   for (const m of txt.matchAll(/\b([A-Z]{1,5})[\s-]?(\d[\d\s-]{2,14}\d)\b/g)) {
     const tok = (m[1] + m[2]).replace(/[^A-Z0-9]/gi, '').toUpperCase();

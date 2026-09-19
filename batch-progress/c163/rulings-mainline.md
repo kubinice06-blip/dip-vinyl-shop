@@ -830,7 +830,9 @@ c-163 a 實測 19 個路徑：**藝人頁 200 的 9 位**（`tim-hagans`／`anni
 ⚠ ⚠ **但 59 條 bluenote 來源裡「大半來自新聞稿而非藝人頁」**——`Almazan` 藝人頁 404、**兩篇新聞稿 200**。
 **第 1747-B(二) 條再加一句：藝人頁 404 不等於這個來源沒東西，站內搜尋與新聞稿頁要各試一次。**
 
-**(二) ⚠ `universal-music.co.jp` 的 slug 不是「名在前姓在後」的羅馬字。**
+**(二) ⚠ ⚠ 本小節已被第 1751-B 條作廢，保留僅供追溯——不要照它做。**
+**（原文如下，其「一律姓在前」的結論是從單一樣本過度概括出來的，實測 `chihiro-yamanaka` 才是 200。）**
+⚠ `universal-music.co.jp` 的 slug 不是「名在前姓在後」的羅馬字。
 **`黒田卓也` 的 slug 是 `kuroda-takuya`，`takuya-kuroda` 回 404。**
 ⚠ **`THE SPHÈRES` 沒有自己的藝人頁，商品頁掛在 `chihiro-yamanaka/products/uccq-1050/` 之下（200）。**
 **日本線查不到藝人頁時，改用「同碟其他掛名的藝人頁 + 目錄號」。**
@@ -1061,3 +1063,90 @@ slice 給的三種長形互不相同（一個 `feat. A & B`、兩個逗號並列
 `共用目錄號 CA90028` 四張（Blue Note 黑膠系列的共用號）、
 `同掛名盤名詞元包含` 三處（`Grateful Deadication` ↔ `Grateful Deadication 2` 是續作；
 `Little Broken Hearts: Live at Allaire Studios` ↔ `…Little Broken Hearts` 是 c-166 a 那張刻意的 (丁) 對）。
+
+## 第 1760-B 條（工具，c-166 a 抓到）：**`dedup-crossbatch.mjs` 把美國郵遞區號當成目錄號**
+
+Blue Note 版權行的地址 `Hollywood, CA 90028` 逐字出現在多張卡的 `label` 欄，
+被 `catnos()` 的「字母前綴型」那條抓成 `CA90028`，**於是「共用目錄號」報出四張毫無關係的卡**
+（c162 `Derrick Hodge《Live Today》`／c165 `Immanuel Wilkins《The 7th Hand》`／
+c166 `ARTEMIS《In Real Time》`／c166 `Norah Jones《Little Broken Hearts: Live at Allaire Studios》`）。
+**已波及三批四張，而且會隨批次增加繼續長。**
+
+**已修**：在 `catnos()` 抽取前先剝掉 `\b[A-Z]{2}\s?\d{5}(-\d{4})?\b`。
+**理由**：真正的目錄號前綴幾乎都不是「恰好兩碼字母配恰好五位數字」，而美國地址一定是這個形狀。
+**實測：`共用目錄號` 由 1 降為 0，其餘兩項（`同掛名盤名詞元包含` 2 處）不受影響、且兩處都是良性**
+（`Grateful Deadication` ↔ `Grateful Deadication 2` 是續作；`Little Broken Hearts: Live at Allaire Studios` ↔ `…Little Broken Hearts` 是刻意的 (丁) 對）。
+
+---
+
+## 第 1761-B 條（再次放寬第 1721／1742-B 條的偵測條件）：**`country` 可能是空陣列，不只是 `XW`**
+
+c-166 a 指出它實查到一筆三條件全中、但**我的名單沒有**：`Aaron Parks《Little Big III》`。
+**成因是 `country` 欄是 `null`／空陣列，不是 `XW`。** 建議把條件改成「`XW` 或空」。**採納，重掃全庫。**
+
+| 篩選 | 筆數 |
+|---|---:|
+| 第 1721 條原版（`nReleases==1` ＋ `Digital Media` ＋ `XW` ＋ 無 catno） | 44 |
+| 第 1742-B 條（拿掉 `nReleases`） | 48 |
+| **本條（`country` 改成「`XW` 或空」）** | **60** |
+
+**多出的 12 筆裡，8 筆落在進行中或未策展的批次**：
+
+| 批次 | 年 | 掛名 —《盤名》 |
+|---|---:|---|
+| c163 (a) | 2015 | THE SPHÈRES《Live in Osaka!!》（**已收、已回收試聽，年份經三層覆核無誤**） |
+| c166 (a) | 2024 | Aaron Parks《Little Big III》（**該棒已覆核、不改判**） |
+| c166 (b) | 2025 | Aaron Parks《By All Means》（**該棒已覆核：Discogs 六筆實體＋Apple id 齊全，不觸發**） |
+| **c166 (b)** | 2025 | **山中千尋《Ooh-La-La》**（⚠ **未經覆核，留給本機**） |
+| **c167 (a)** | 2026 | **Immanuel Wilkins Quartet: Live at the Village Vanguard Vol. 3** |
+| **c167 (b)** | 2026 | **Ron Carter, Ricky Dillard《Sweet, Sweet Spirit》** |
+| **c170 (b)** | 2024／2026 | **Out Of/Into《Motion I》／FATHERS《FATHERS》** |
+
+**c-167 與 c-170 的策展派工信要逐筆點名這四張跑第 1791 條的年份覆核。**
+⚠ **另 4 筆落在已上架批次**（c137 a `George Shearing《The Shearing Piano》` 1957、c142 b `Kenny Burrell《Asphalt Canyon Suite》` 1969、
+c152 a `Chet Baker《Embraceable You》` 1995、c160 a `Norah Jones《Live in 2007》` 2007）——
+**四個年份都與盤名／已知史實相符，不像被數位年拉晚，不回頭重開**（比照第 1721 條的結算方式）。
+
+⚠ ⚠ **這是這個偵測條件第三次被放寬**（`nReleases` → `country`）。**教訓寫死**：
+**做「訊號篩選」時，每一個入篩的欄位都要問「這個欄位有沒有可能是空的、或有第二種表示法」。**
+`nReleases` 會漂移、`country` 會是空——**真正表達訊號的只有 `formats` 全為 `Digital Media` 與 `catno` 空這兩件事，
+其餘都是雜訊欄位。** 往後這類篩選，**寧可放寬到多報幾筆讓人去看，也不要收緊到漏掉真陽性。**
+
+---
+
+## 第 1762-B 條（c-166 兩組交件驗收）
+
+**a 組收 23 退 0（號段 1960–1987）、b 組收 22 退 0（號段 1990–2007），合計 45 張。**
+**`chk-prop a b` 標記 0、跨組重複 0、`· 盤名撞 apex` 0 處、兩組 `g` 欄與 `rgMbid` 歸屬各自全對。**
+
+**(一) ⚠ b 組把 (甲)/(乙) 的分界寫成一句，值得升格成通用條文**：
+> **(乙) 擋的是「以前發行過、現在再發一次」。母帶落在老時期不是 (乙) 的要件。**
+
+三張庫藏現場盤（`McCoy Tyner & Joe Henderson《Forces of Nature》` 1966 母帶、`Horace Silver《Silver in Seattle》` 1965 母帶、
+`Wayne Shorter《Celebration, Volume 1》` 2014 母帶）**全判 (甲) 收**，③ 官網逐字各有 `NEVER-BEFORE-ISSUED`／`previously unissued` 一類的說法。
+⚠ **`Forces of Nature` 的母帶連 Blue Note 庫房都不是**——Discogs 腰封逐字 `transferred from Jack DeJohnette's original tape reel`。
+⚠ **三處重疊覆核全部零重疊、不改判 (丁)**，該棒的判準也對：**(丁) 判的是錄音重疊，不是曲目重疊**（第 1759-B 條同向）。
+
+**(二) 兩筆盤名／掛名判斷值得記**：
+- `Norah Jones《Playing Along》` **不走 (己)**：MB `format` 逐字 `Phonograph record`、Discogs 兩筆逐字 `Vinyl / LP, Record Store Day`、
+  ③ 官網逐字 `a Black Friday Record Store Day exclusive LP`。**podcast 是曲目來源，不是載體。**
+- `Branford Marsalis Quartet` **去掉 MB RG 獨有的 `The`**（Discogs×5＋Apple＋MB CD release＋官網 spotlight，**四比一**）。
+
+**(三) ⚠ 派工信的一處預測錯誤，值得記其反面**：我寫「地雷 8 那張（`Belonging`）很可能會亮 `· 盤名撞 apex`」——**實測不亮**。
+**因為 `Keith Jarrett —《Belonging》(1974)` 在 seed 裡第 9 欄是空的，根本不是 apex。**
+**那處仍是真的撞陳列，只是第四、第五道都不亮、純靠人工掃出。**
+⚠ **提醒：第 1744-B 條那一道只比 apex，「盤名撞一般卡」仍然沒有機器在看。** 這是已知缺口，**目前靠策展層人工掃。**
+
+**(四) ⚠ b 組指出撞陳列最高風險的一處，`chk-prop` 完全抓不到**：
+`Horace Silver《Silver in Seattle》` 的〈Song for My Father〉與〈The Cape Verdean Blues〉
+**撞的是同一位藝人自己的 1964／1966 錄音室名盤**——**同掛名、同曲名、不同錄音**，
+而且 **MB 的軌名還帶 `(live at the Penthouse…)` 後綴，折鍵後不同鍵**。已寫進 risk。
+
+**(五) 給本機的三張清單**（已在各卡 `risk`）：
+- **先行單曲雙胞胎 3 張**（`Bill Charlap Trio《And Then Again》` 專輯 `1750814631`/8軌 ↔ 單曲 `1750564571`/1軌；
+  `Branford Marsalis Quartet《Belonging》` `1790354778`/6軌 ↔ `1794907788`/1軌；
+  `Horace Silver《Silver in Seattle》` `1830639316`/6軌 ↔ EP `1837826392`/1軌）——**探測鏈可能配到單曲。**
+- **`Cautious Clay《KARPEH》` 有淨化／未淨化雙胞胎**：`1692470376` ＝ **explicit（依 §6 取這筆）**、`1692484931` ＝ cleaned；
+  ⚠ **關鍵字搜尋與三個 UPC 回的都是淨化版在前。**
+- **7 張有兩種以上軌數已逐張釘定**，其中 ⚠ **`Gregory Porter《Christmas Wish》` 釘 12 軌，但 Apple 只剩 15 軌 Deluxe `1779846239`，不可直接用**；
+  ⚠ **`Mark Knopfler《One Deep River》` 釘 12 軌，取 `1718922576`、不可取 `1759217201`**。
