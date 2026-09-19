@@ -1151,3 +1151,200 @@ base 檔的東亞人名裁定要求照原文漢字寫，**但前提是查得到�
 MusicBrainz User-Agent 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，每次請求間隔 ≥1.1 秒，503 走重試不當查無。抓取日期：2026-09-19。
 
 **本節實際用掉 2296–2307，2308–2345 未用。**
+
+---
+
+## c-166 a 組（23 筆）**鉤子層**裁定　號段 2401–2440
+
+（本節一律 append 於檔末，不整檔覆寫、不碰既有的 1960–1987／1990–2007／2246–2255／2296–2307——第 1743-B(四)／第 1806-B 條。
+開工前本檔已有 1153 行、四節，本棒只在檔末追加。）
+
+### 第 2401 條（交件總表）
+
+| 項目 | 值 |
+|---|---|
+| 產出檔 | `desc-tools/batches/hooks/c166-hooks-a.json` |
+| 張數 | **23／23**，`key` 逐字複製自 `desc-tools/batches/research/c166-a.json`、**順序與研究稿完全相同**（22 個 `desc2:` ＋ 1 個 `desc4:`） |
+| 與卡單比對 | `c166-cards.json` 的 `group === "a"` 23 張，**缺 0 多 0** |
+| `hook` 加權字元（英數 0.5） | **16–25.5**，全部 ≤50 |
+| `note` 原始字元（`Array.from`） | **203–232**，全部 ≤350 |
+| **`note` 字元預算**（公式見第 2402 條） | **202–230，中位數 221，0 筆超標** |
+| 骨架歸屬 | **11 張**寫「這條骨架全批只走本張。」，其餘 12 張一字不寫、不點名（見第 2404 條） |
+| `node qa-batch.mjs hooks c166` | **a 組旗標 0**；`互指?` **0 行**（見第 2406 條） |
+| `node chk-hook-crossgroup.mjs c166` | **`c166｜1 組｜23 張`／`hook 加權 16–25.5｜note 203–232`／`✓ 全部通過`** |
+| 用掉的號段 | **2401–2407**（2408–2440 未用） |
+
+⚠ **工作區當下版本才是交件版**（第 1803-B 條，本線已三次）：本節所有數字都是對**磁碟上當下那一份** `c166-hooks-a.json` 實跑出來的，不是中途快照。「筆數對了」與「定稿了」在本棒是同一個時點。
+
+### 第 2402 條：**本棒實際用的字元預算公式（逐字，第 1793-B 條）**
+
+照 `hook-base.md` 雲端註記第 2 點寫死的那條，一字未改、未自創係數：
+
+```
+預算 = Array.from(hook).length + Array.from(note).length
+       − Array.from('主故事：').length            //  4
+       − (note.match(/→/g)||[]).length            //  每個箭號扣 1
+       − Array.from('正文只寫上列各項。').length   //  9（有才扣）
+       − Array.from('這條骨架全批只走本張。').length // 11（有才扣）
+```
+
+**只扣這四樣，其餘一律算**：年份指定（「發行年寫 2023 年」）、軌數指定、引用限制（「引用盤名時帶完整副標題」）、
+克制指示（「悼念的部分克制地寫」）、獎項寫法指定（「第 67 屆⋯寫成入圍」）**全部計入**。
+
+⚠ **這把尺先在 `c165-hooks-a.json` 上倒回去驗過**：23 張逐格算出
+`209,211,212,212,213,214,214,215,215,217,217,219,224,224,224,228,228,228,229,229,229,230,230`，
+**分佈 1-11-9-2（<210／210–219／220–229／230）、中位數 219**——與 c-165 a 組回報、c-165 b 組復算的三方數字逐格相同。**確認同尺後才開始量本批。**
+
+**本批 23 張的實測分佈**（同樣的四格切法）：
+
+| 區間 | 張數 |
+|---|---:|
+| <210 | **3**（202／206／208） |
+| 210–219 | **6** |
+| 220–229 | **13** |
+| 230 | **1** |
+| 合計 | **23**（min 202、max 230、中位數 221） |
+
+**逐格心算一次都沒用**，每改一次 note 就重跑一次腳本
+（`/tmp/.../scratchpad/chk-c166-a-hooks.mjs`，同時檢 hook 加權、前四字互異、禁語、句末標點、否定句、千分位、key 順序）。
+⚠ **實測再次證實「上一批的係數不可繼承」**：本批的專名密度比 c-165 a 高（大量拉丁字母人名與盤名，`Array.from` 一字一格不打折），
+**第一版草稿全部在 245–313 之間、超標 15–36%**，全部是靠整格捨去壓下來的，不是靠字句潤飾。
+
+### 第 2403 條：**整格捨去清單（在鉤子層就砍掉，不留給寫作層）**
+
+`hook-base.md`：「算不下就在鉤子層整格捨去，不要留給寫作層砍」。本批 23 張**每一張都有捨去**，逐張記錄：
+
+| 卡 | 整格捨去的項目 |
+|---|---|
+| `Arturo O'Farrill《Legacies》` | 獨奏／三重奏對應的兩處錄音地點；翻奏原作者名單（Hancock／Monk／Rollins／Powell／Bley）；貝斯手 Liany Mateo；混音與母帶工序；**「前一張才是首作」那句身分指派**（第 1732 條只是禁序數，不寫身分關係也不違規） |
+| `Chris Botti《Vol. 1》` | 三張參照模型（《Kind of Blue》等）；日版第 11 軌〈Milestones〉；年度耶誕駐店檔期；〈Fix You〉是 Coldplay 的指派句；錄音室與母帶；**合作名單整格不寫**（見第 2405 條） |
+| `Dave McMurray《Grateful Deadication 2》` | 三位客座（Jamey Johnson／Oteil Burbridge／Bob James）；底特律固定班底六人；1981 年 Was (Not Was) 的淵源；紐約時報對前作的評語；混音與母帶 |
+| `Kendrick Scott…《Corridors》` | 委託人 Rio Sakairi 的名字；九個曲名連成門與走廊的敘事；他對兩位夥伴的人物評語；錄音室工序；美版灰膠限量 |
+| `Walter Smith III《return to casual》` | 樂隊四人名單；側手資歷名單；In Common 計畫；〈River Styx〉的五重奏編制；Village Vanguard 首度領班駐演 |
+| `Erik Truffaz《Rollin'》` | **配樂原作者整格名單**（Nino Rota／Michel Magne／John Barry／Morricone 等）；歌手 Camélia Jordana；解說執筆 Arnaud Robert；1991 年 Prix Special；全碟三十三分鐘；樂隊四人 |
+| `Erik Truffaz《Clap!》` | 八軌的作者名單；Stone Jack Jones 的人聲吉他二重奏；2015 年之後的鼓手更替；解說與雙語；Discogs 的 Stage & Screen 分類 |
+| `Gregory Porter《Christmas Wish》` | Stevie Wonder〈Someday at Christmas〉；製作人 Troy Miller 與樂隊七人；Sear Sound 與 Abbey Road 第一錄音室的兩地錄音；〈Everything's Not Lost〉的題旨引言；Royal Albert Hall 與 Kennedy Center 行程；他個人的兩座葛萊美 |
+| `Norah Jones《Playing Along》` | 十二組搭檔中的九組；曲目與搭檔的對應表；她的動機引言；後製團隊；累計九座葛萊美（研究層已標與本碟無關） |
+| `Joe Chambers《Dance Kobina》` | 六〇年代側手名單的其餘六張碟；共同製作人 Andrés Vial 與同名曲的作者身分；〈Power to the People〉與 Joe Henderson 的關係；剛果打擊樂手 Elli Miller Maboungou；混音與母帶 |
+| `Harold López-Nussa《Timba a la Americana》` | 樂隊名單（Grégoire Maret／Luques Curtis／弟弟 Ruy Adrián）；2005 年蒙特勒冠軍；《Ninety Miles》；danzón 的馬坦薩斯來歷與 mambo 一格；〈Tumba la Timba〉的挑釁說法；美國巡演 |
+| `Norah Jones《…Allaire Studios》` | 母體專輯與 Danger Mouse 的合作背景；她兩手空空進錄音室那句；〈Miriam〉；線上直播的兩位共同製作人；**Gus Seyffert 十年前參與過母體錄音那一層**（最後被預算擠掉） |
+| `Meshell Ndegeocello《The Omnichord Real Book》` | 製作人 Josh Johnson；〈Clear Water〉與〈The 5th Dimension〉；末軌 Oliver Lake 的編曲；日版第 19 軌；她承接母親那份鬱的引言後半 |
+| `Cautious Clay《KARPEH》` | 舅舅 Kai Eckhardt；長笛老師 Greg Pattillo；大學主修與 Soundcloud 出身；〈Yesterday's Price〉；〈Cold War〉被《London Boy》取用；Newport 演出 |
+| `山中千尋《Dolce Vita》` | Shorter 曲目的逐首列舉；各軌樂手分工與 Fender Rhodes／B-3 的用法；限定盤與 2LP 的規格與品番；發行者與 SHM-CD 載體 |
+| `Aaron Parks《Little Big III》` | 樂團三人名單；〈Sports〉與 Greg Tuohey；紐約時報評語；四十歲與身心狀態那一段；三首先行單曲的時程；巡演 |
+| `Ron Miles《Old Main Chapel》` | Jason Moran 對那一晚的描述；解說五位執筆者；紐約時報對他音色的描述；生平與學歷；第 61 屆葛萊美入圍；《Rainbow Sign》；2021 年 Village Vanguard 那場 |
+| `Nduduzo Makhathini《uNomkhubulwane》` | 三重奏兩位樂手；〈Omnyama〉的吟誦與吸氣音；〈Izinkonjana〉；《Modes of Communication》與紐約時報的選評；聽眾定位那串名字 |
+| `Mark Knopfler《One Deep River》` | 節奏組與和聲人聲四人；十二軌曲名；盒裝的徽章、匹克與插頁；載體分佈（卡帶／Blu-ray）；版權公司 Will D. Side |
+| `Ethan Iverson《Technically Acceptable》` | 〈Killing Me Softly With His Song〉；Jaki Byard；〈Conundrum〉與〈Who Are You, Really?〉；The Bad Plus；《Every Note Is True》與 Jack DeJohnette 的世代對照；Village Vanguard 檔期；**「用現代手法馴服古舊曲式」整格** |
+| `Charles Lloyd《The Sky…》` | 六首新作的曲名；〈Defiant, Tender Warrior〉與〈Monk's Dance〉；Booker Little 的兩段引言；Big Ears 發片演出；錄音室與母帶；〈Balm in Gilead〉與〈Lift Every Voice〉的公版狀態；**「新舊各半」的結構句** |
+| `Julian Lage《Speak to Me》` | Joe Henry 的履歷與他自己的引言；Lage 形容他「罩了一層力場」那句；〈Nothing Happens Here〉；色膠版 bonus track〈Cars/Colors〉；他同期的客座紀錄 |
+
+⚠ **捨去的原則**：先砍**名單型**（三人以上的並列人名，每格 30–55 字元、資訊密度最低），
+再砍**與主故事鏈無關的第二層軼事**，最後才動主故事鏈上的格。**沒有任何一張是靠縮短句子解決的。**
+
+### 第 2404 條（⚠ **給 b 組看的那張表**）：**骨架歸屬——11 張，以輸出檔為準**
+
+⚠ **本表是對 `desc-tools/batches/hooks/c166-hooks-a.json` 當下版本程式化掃出來的**
+（`note.includes('這條骨架全批只走本張。')`），**不是手抄**——第 1802-B 條：c-165 就是因為 rulings 的表與檔案不一致（表八條、檔案九張），害 b 組差點兩張一起撞。
+
+| # | 卡 | 擁有的骨架（一句話，給 b 組判斷用） |
+|---:|---|---|
+| 1 | `Kendrick Scott, Reuben Rogers, Walter Smith III《Corridors》` | 以「從既有編制裡逐件刪掉樂器」定義這張碟 |
+| 2 | `Walter Smith III《return to casual》` | 碟名與自己多年前另一張碟的碟名成對話 |
+| 3 | `Erik Truffaz《Rollin'》` | 本國樂手回頭翻外國前輩替本國電影寫的曲子 |
+| 4 | `Gregory Porter《Christmas Wish》` | 做某個類型的專輯卻刻意避開該類型最熱門的曲目 |
+| 5 | `Norah Jones《Playing Along》` | 廣播／節目裡的合奏被集結成一張唱片 |
+| 6 | `Joe Chambers《Dance Kobina》` | 當年回絕了廠牌創辦人的邀約，數十年後才以自己的名字回來 |
+| 7 | `Norah Jones《Little Broken Hearts: Live at Allaire Studios》` | 多年後把一整張舊專輯同曲同序從頭演一次 |
+| 8 | `Cautious Clay《KARPEH》` | 碟名是本名姓氏，家族口述錄音把全碟切成段落 |
+| 9 | `山中千尋《Dolce Vita》` | 整張碟獻給同一個月過世的一位逝者，末兩軌另獻給第二位 |
+| 10 | `Nduduzo Makhathini《uNomkhubulwane》` | 儀式中得到的一首歌長成一整套多樂章組曲 |
+| 11 | `Ethan Iverson《Technically Acceptable》` | 碟名是作者對自己的評語 |
+
+**其餘 12 張的 `note` 一字不寫、也不點名讓給了誰**（`hook-base.md` 雲端註記第 3 點）——
+實掃確認這 12 張的 `note` 裡沒有任何別張卡的盤名，`qa-batch` 的 `互指?` 因此 0 行。
+
+⚠ **本棒刻意沒有claim的兩條，理由記下來給 b 組**：
+
+1. **`Harold López-Nussa《Timba a la Americana》` 的「離鄉驅動整張碟」不 claim**——
+   b 組同批有同一位藝人的《Nueva Timba》(2025)，若 a 把這條鎖住，b 很可能整張無角可切。
+   **可逆、不卡線，依裁定權下放判準 2 自己決定，不上呈。**（為此把該卡的 note 再砍 15 字元補回預算。）
+2. **`Ron Miles《Old Main Chapel》` 的「多年前的庫藏錄音今天才首次發行」不 claim**——
+   b 組第 1996 條已裁定該組有**三張**庫藏／現場盤同判 (甲)（`Wayne Shorter《Celebration, Volume 1 (Live)》`／
+   `McCoy Tyner & Joe Henderson《Forces of Nature: Live at Slugs'》`／`Horace Silver《Silver in Seattle》`）。
+   **一條骨架只能歸一張，但 b 組有三張非用不可**——a 若鎖住，等於一次卡死三張。
+   本卡改走「**錄音當晚與隔天另一份錄音的時間關係**」這條更窄的線（hook 逐字不提「擱置多年」），
+   **但不 claim**，把整個庫藏敘事的空間留給 b。
+
+### 第 2405 條：**研究層推翻策展層的三處，在鉤子層的落點**
+
+派工信第三節第 1 點列的三處，逐處交代處置（以研究層為準，不回頭引策展層）：
+
+1. **`Chris Botti《Vol. 1》` 的合作名單沒有 Steven Tyler** —— **整格不寫**。
+   理由不只是預算：`hook-base.md` 的「hook 不得否定讀者沒有的前提」與「note 一律用正面表述」兩條都要求
+   **不得把「更正了什麼」表演給讀者看**。名單本身不在主故事鏈上，**最乾淨的處置是一個名字都不提**——
+   note 裡沒有「名單」二字，寫作層沒有任何素材可以把 Steven Tyler 寫回去。
+2. **`Arturo O'Farrill《Legacies》` 的〈Obsession〉是 Pedro Flores 的** —— **逐字寫進 note 的第三格**
+   （「〈Obsession〉出自波多黎各作曲家 Pedro Flores」），**而那一串爵士名家的名單整格捨去**。
+   這樣寫作層既拿不到錯誤的歸屬，也拿得到正確的那一條。研究層 `notes` 另記〈Obsession〉折鍵撞
+   `EXO《OBSESSION》(2019)`，**帶作者名正好同時解掉撞陳列的引用要求**。
+3. **`Chris Botti《Vol. 1》` 的〈Paris〉是全碟唯一人聲曲** —— **逐字寫進 note**（「全碟唯一的人聲曲是〈Paris〉」）。
+
+**研究層另補的三處（策展層沒查）也逐一落地**：`Dave McMurray` 的 Clubhouse Studios／Elliot Scheiner 進了 hook 與 note 的第二格、Ice Nine 進了第四格；
+`Ron Miles` 的製作人 Hans Wendl 進了 note 的末格（五位解說執筆者整格捨去）；
+⚠ **`山中千尋《Dolce Vita》` 的 Wayne Shorter 致敬盤＋末兩軌另悼坂本龍一，整條就是本卡的 hook 與主故事鏈**——hook 逐字「整張碟獻給 3 月過世的那個人，末兩軌獻給另一個。」，note 四格全部在講這件事。
+
+**獎項六筆照研究層第 2248 條原樣寫、一筆沒有重算**：
+`Meshell《The Omnichord Real Book》` 寫「第 66 屆⋯最佳另類爵士專輯，而且是該獎項的首屆得主」（得獎）；
+`Julian Lage《Speak to Me》` 與 `Gregory Porter《Christmas Wish》` 各寫「第 67 屆⋯寫成入圍」；
+`Mark Knopfler《One Deep River》` 逐字寫「入圍單位寫成〈Ahead of the Game〉這首歌」（**單位是歌不是專輯**）；
+`Ron Miles` 與 `Chris Botti` 的生涯獎項**整格捨去**（兩筆都與本碟無關，且都吃 40 字元以上）。
+**兩筆累計型（O'Farrill 8 座、Norah Jones 9 座）一格未寫。**
+
+### 第 2406 條：**`qa-batch` 結果與 `互指?` 判讀**
+
+`cd desc-tools && node qa-batch.mjs hooks c166` 的輸出逐字只有四行：
+
+```
+（略過 qa-check-hooks.mjs：本 repo 無此檔。字數／禁語／開頭雷同／分數星等
+  請改跑 node chk-hook-crossgroup.mjs c166，本階段只做事實對照與字元掃描。）
+⚠ b 缺 hook 檔
+總標記 1
+```
+
+- **a 組旗標 0**：簡體字 0、千分位逗號 0、`key` 與卡單不一致 0、事實對照 0。
+- **`互指?` 0 行**（`grep -c 互指` 逐字回 `0`）。**沒有可判讀的行**，成因是第 2404 條的處置：讓出骨架的 12 張一字不寫、也不點名，`note` 裡零個別張卡的盤名。**這正是 `hook-base.md` 雲端註記第 3 點要達到的效果。**
+- **唯一的 `總標記 1` 是 `⚠ b 缺 hook 檔`**——b 組的 `c166-hooks-b.json` 尚未產出，**該檔在本棒的禁碰清單上**，留給 b 組收尾（與第 2252 條第 3 點同形）。
+
+⚠ **`qa-batch.mjs` 在 hooks 階段自己會說它不做字數／禁語／開頭雷同／分數星等**，要另跑 `chk-hook-crossgroup.mjs`。
+本棒兩支都跑了：`node chk-hook-crossgroup.mjs c166` 逐字回 `c166｜1 組｜23 張`／`hook 加權 16–25.5｜note 203–232`／`✓ 全部通過`。
+**建議主線在 hook 層派工信的第四節第 3 點把這一支一併寫進去**（與第 2250 條對研究層派工信的同型建議）。
+
+另外自寫的機器自檢（不靠眼睛掃）逐項 0 筆：hook 加權 >50、note >350、預算 >230、句末缺全形標點、
+以「這張專輯」開頭、hook 出現你我、七個禁語、引號整句包裹、note 出現否定句（不得／禁／查無／未能查證／卡池標錯）、
+分數星等、千分位逗號、**開頭前四字相撞**（23 組前四字兩兩互異）、中英數之間缺半形空格（全檔 0 處）、
+`key` 與研究稿順序不符。
+
+### 第 2407 條：**本派工信與 `hook-base.md`／既有裁定牴觸之處——硬牴觸 0，需要記錄的 3 處**
+
+1. **派工信第四節第 3 點「收工前 `node qa-batch.mjs hooks c166`（⋯`互指?` 逐筆人工判讀，第 1763-B 條）」**——
+   **不是牴觸，但實況是該腳本在 hooks 階段只做事實對照與字元掃描**，並自己提示要改跑 `chk-hook-crossgroup.mjs`。
+   `互指?` 本批 0 行（見第 2406 條）。**派工信少給了一支必跑的腳本。**
+2. **派工信第三節第 4 點「`Erik Truffaz` 兩張的反同構切角，研究層已在第 2251 條分配好，照它走」**——
+   照走了，但**第 2251 條給《Rollin'》的「翻奏譜系」切角裡那一整排配樂原作者名單，在 230 字元預算下放不進去**。
+   依 `hook-base.md`「算不下就在鉤子層整格捨去」，本棒**整格捨去名單**，只留〈Ascenseur pour l'échafaud〉↔ Miles Davis ↔ 1958 年 Louis Malle 那一條譜系線（**那也是第 1975 條唯一撞 apex 的一處，必須帶翻奏交代**）。
+   《Clap!》則照第 2251 條走「版本差異」（CD 與黑膠第 6／8 軌對調）＋「收起節奏實驗」。
+   **兩張共用的生平段只寫在《Rollin'》**，《Clap!》一格未寫。**這不是牴觸，是預算與切角的取捨，記錄在案。**
+3. **派工信第三節第 1 點把三處研究層更正描述成「以研究層為準」**——成立，但其中
+   **`Chris Botti` 那一處是「排除性更正」**（名單裡沒有某人）。`hook-base.md`「hook 不得否定讀者沒有的前提」與
+   「note 一律用正面表述」兩條合起來的結論是**不能寫成「名單裡沒有 X」**，
+   **正確處置是整格不寫**（第 2405 條第 1 點）。**派工信沒寫錯，但字面照抄會踩校對痕跡。**
+
+**派工信寫對、本棒實測確認的**：第三節第 5 點「③ 來源層整批落空 3 張」對鉤子層無影響（那三張的 note 全部取自研究稿 `facts`，本棒未上網補查、未碰 `previews.json`）；
+第四節第 4 點「號段 2401–2440」實測未與任何既有條號相撞（本檔既有最大號是 b 組研究層的 2307）。
+
+### 第 2408 條：號段結餘
+
+**本節用掉 2401–2407，2408–2440 未用。**
+**b 組鉤子層可逐張讀 `desc-tools/batches/hooks/c166-hooks-a.json` 做反同構**，
+骨架歸屬以**第 2404 條的表**為準，而該表是對輸出檔程式化掃出來的，與檔案逐張一致（11 張）。
