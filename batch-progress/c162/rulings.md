@@ -530,3 +530,511 @@ Aga Zaryan／Stacey Kent《Dreamer in Concert》／Trijntje Oosterhuis／Götz A
   ⚠ **`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md` 一律未碰**（只唯讀掃描 `seed_cards.json`）；**`prop-b.json` 與 1760 起的號段一字未碰。**
 - **號段**：**1738–1754 用畢，1755–1759 留白**（b 組從 1760 起）。
 - **中間檔**：全部在本棒的暫存目錄 `…/scratchpad/c162a/`（`bb.py`／`urls.txt`／`bbtext/`／`tl/`／`targets.json`／`add18.mjs`），**repo 根目錄未新增任何檔。**
+
+---
+
+# c-162 b 組裁定（編號 **1760–1789**）
+
+本檔下半段為 **c-162 b 組**（22 筆，**2012 年 11 張、2013 年 11 張**）策展層的裁定。
+**號段由派工信指定 1760 起 append；a 組的 1738–1754 與留白的 1755–1759 一字未碰、`prop-a.json` 亦未碰。**
+判準沿用 **c-158 a 第 1500–1516**、**c-158 b 第 1530–1555**、**c-159 a 第 1560–1578**、**c-159 b 第 1590–1609**、
+**c-160 a 第 1620–1640**、**c-160 b 第 1650–1668**、**c-161 a 第 1680–1689 ＋ 1700–1711**、
+**c-161 b 第 1690–1699 ＋ 1730–1737**、**c-161 主線第 1670–1672**、**c-162 a 第 1738–1754** 各條。
+（尤其**第 1553／1734 條的 (甲) 認法**、**第 1631／1633／1685 條的 imprint 分界**、**第 1601 條的 Apple ℗**、
+**第 1657 條（四）與第 1600／1608 條的掛名分界**、**第 1672 條（主線）的 `quasimode` 裁定**、
+**第 1664 條「先數清單裡有幾張美國盤」**、**第 1741／1625 條的系列名合輯**、**第 1250 條的目錄號反查**、
+**第 1749／1753 條的紙本 URL 訂正**。）**c-158～c-162 a 的條文一字未改。**
+
+---
+
+## 第 1760 條（c-162 b 交件）：**22 筆 → 收 18、退 4；退貨率 18.2%。本組的形狀是「四筆退件全部是同一種——母體早就在 Blue Note 自家目錄裡的舊料重包」，而唯一一張看起來最像退件的碟（Monk《Paris 1969》）反而是本線第二張 (甲)**
+
+| | 數 |
+|---|---:|
+| slice `g: "b"` | **22**（**2012 年 11 張、2013 年 11 張**） |
+| **收** | **18**（**18 位，一人一張，本線第三組零重複掛名**） |
+| **退** | **4**（**(乙)＋合輯 2 筆、(乙) 純庫藏 LP 再發 2 筆**——**四筆全部是「母體在 Blue Note／Liberty／UA」**） |
+| **年份改判** | **0**（22 筆逐張覆核，18 張收件全部維持 slice 的年份；⚠ **但有 1 張的 MB `frd` 是錯的、不可引用**，見第 1767 條） |
+| 年份覆核成立 | **18** |
+| **(甲) 從未發行過** | **1**（**Thelonious Monk《Paris 1969》**，見第 1766 條——**本線繼 c-161 b 的 Freddie Hubbard《Without a Song》之後第二張**） |
+| **(丙) 母體在真正的他廠** | **0**（訊號亮 3 次：Gare du Nord 的 `Sweet Lemon`／Jukka Perko 的 `Oy EMI Finland Ab`／Gov't Mule 的 `Provogue`，**逐筆查完全部不成立**，見第 1770 條） |
+| 現場盤 | **3**（Gare du Nord《Lifesexy》、Thelonious Monk《Paris 1969》＝ MB `secondary-types` 逐字 `["Live"]`；⚠ **另 2 張「是現場卻四層都沒標」**：Chano Domínguez《Flamenco Sketches》、Wayne Shorter Quartet《Without a Net》，見第 1771 條）＋⚠ **1 張「盤名帶 Live 卻不是現場」**（Derrick Hodge《Live Today》） |
+| 撞陳列（軌名／盤名＝池中卡名） | **收下的 18 張共 17 處／12 張**（全 22 筆含退件是 **19 處**）；⚠ ⚠ **軌名逐字撞 apex 王牌 1 處**（`quasimode —〈Closing Time〉` ↔ seed `Tom Waits —《Closing Time》(1973)` apex `hall`）；**盤名逐字撞池中一般卡 2 處**（`Lionel Loueke —《Heritage》` ↔ `Eddie Henderson —《Heritage》(1976)`、`Gov't Mule —《Shout!》` ↔ seed `The Isley Brothers —《Shout!》(1959)`）；**盤名撞 apex 0 處**；**同掛名貼到 apex 3 組**（見第 1772 條） |
+| 新掛名字串 | **4**（`Ravi Coltrane`／`José James`／`Robert Randolph & The Family Band`／`Derrick Hodge`）＋**聯名新造 1**（`Elvis Costello and The Roots`）＋**團名形新造 1**（`Wayne Shorter Quartet`）；**沿用池中 12**；**新造分裂 0** |
+| 紙本 | ⚠ ⚠ **Billboard 2013 全年 50 期由本棒新抓並入庫**（**Billboard 現已覆蓋 1955→2013**）；**18 張裡 11 張有命中、6 個街頭日**——**本線紙本產出最好的一年**（第 1774 條） |
+| `chk-prop b` | **標記 0**（125 批、5,058 卡；**跨批撞卡 0、同 rgMbid 不同掛名 0、共用目錄號 0、同掛名盤名詞元包含 1**——**那 1 筆是本棒刻意造成的，見第 1768 條**） |
+
+**收下的 18 張（依 `slice` 原序）**：
+Lionel Loueke《Heritage》2012、Gare du Nord《Lifesexy》2012（現場）、Jukka Perko《Streamline Jazztet》2012、
+Norah Jones《…Little Broken Hearts》2012、Chano Domínguez《Flamenco Sketches》2012（現場未標）、
+Ravi Coltrane《Spirit Fiction》2012、quasimode《Soul Cookin'》2012、José James《No Beginning No End》2013、
+**Thelonious Monk《Paris 1969》2013（現場，(甲)）**、Elvis Costello and The Roots《Wise Up Ghost》2013、
+Aaron Neville《My True Story》2013、Joe Lovano Us Five《Cross Culture》2013、Terence Blanchard《Magnetic》2013、
+**Wayne Shorter Quartet《Without a Net》2013（現場未標）**、Robert Randolph & The Family Band《Lickety Split》2013、
+**Robert Glasper《Black Radio 2》2013（掛名判裸名）**、Gov't Mule《Shout!》2013、Derrick Hodge《Live Today》2013。
+
+---
+
+## 第 1761 條（同批）：**退表 4 筆，逐筆與理由分類**
+
+| # | 掛名 ／ 盤名 | rgMbid | 理由分類 | 一句話 |
+|---|---|---|---|---|
+| 1 | **Duke Ellington《Blue Note Jazz Inspiration》** | `00efaf6c` | **(乙)＋合輯（系列名當盤名）** | **`Jazz Inspiration` 是 Blue Note／EMI 的德國廉價系列名，Discogs 7868417 的 `series` 欄逐字 `Jazz Inspiration (2)`、`format` 欄逐字 `CD, Compilation`；17 軌橫跨 Capitol、United Artists（《Money Jungle》的〈Fleurette Africaine〉）與 Roulette（與 Louis Armstrong 的兩軌），全部在 EMI／Capitol／Blue Note 家族目錄內**（第 1762 條） |
+| 2 | **Stanley Turrentine《New Time Shuffle》** | `06d2eb65` | **(乙)（Blue Note `LT-` 庫藏系列的日版再發）** | **MB 自己的 `label-info` 就把兩個目錄號並列成 `Blue Note [713c4a95] catno=LT-993` ＋ `Blue Note [713c4a95] catno=TOCJ-50277`——`LT-993` 是 Blue Note 1979 年的實體 LP，2012 年的 `TOCJ-50277` 只是它的日版 CD 化**（第 1763 條） |
+| 3 | **Stanley Turrentine《Ain't No Way》** | `2392b1ea` | **(乙)（Blue Note `LT-` 庫藏系列的日版再發）** | **同上形狀，原盤是 Blue Note `LT-1095`（1980）；2012 年 `TOCJ-50302` 與 2021 年 `UCCU-8157` 是兩次日版再發，5 軌軌目逐字逐序相同**（第 1763 條） |
+| 4 | **quasimode《Four Pieces-The Best Selection》** | `47196e2e` | **(乙)＋合輯（自家目錄的精選重包）** | **盤名逐字寫 `The Best Selection`，Discogs 7852250 的 `format` 欄逐字 `CD, Compilation, Remastered, Stereo`；14 軌全部取自他們自己在 Blue Note Japan 的四張專輯，其中 4 軌標 `Single Edit`、1 軌標 `2012 Full Length Version`**（第 1764 條） |
+
+**⚠ 第 315 條：18 ＋ 4 ＝ 22 ✓。**
+⚠ **四筆的共同形狀**：**母體全部在 Blue Note／Liberty／UA 自家目錄裡**，
+**沒有一筆是 (戊) 的四條復刻線（Pacific Jazz／Capitol Jazz／West Coast Classics／Roulette Jazz）**
+——**這是本線第一組「退件全部落在 (乙)、(戊) 一筆都沒中」。**
+
+---
+
+## 第 1762 條（同批，**第 1741 條的第三次應驗，而且這次系列名印在盤名欄而不是廠牌欄第二格**）：**Duke Ellington《Blue Note Jazz Inspiration》退**
+
+**派工信逐字提醒「『Blue Note Jazz Inspiration』是系列名不是盤名」。查完的證據四層**：
+
+| 層 | 逐字 |
+|---|---|
+| **Discogs `7868417`（德版 CD，barcode `5099900900720`）** | **`format` 欄逐字 `CD, Compilation`**；**`series` 欄逐字 `Jazz Inspiration (2)`（Discogs label id `888186`）**；廠牌鏈兩格逐字 `Blue Note` ＋ `EMI Germany` |
+| **Discogs 系列頁 `label/888186`** | 逐字說明「a series by the Blue Note and EMI labels, and should be added to the "Series" field along with the actual label of the release」 |
+| **Discogs 全庫反查 `Blue Note Jazz Inspiration`** | **68 筆**（Michel Petrucciani 2011 德版 `5099968094027` 等，`format` 欄逐字都帶 `Compilation`）——**整條系列，不是單張碟** |
+| **MB `00efaf6c`** | ⚠ ⚠ **四個欄位全部乾淨**：`primary-type` 逐字 `Album`、**`secondary-types` 逐字空陣列**、`genres` 逐字 `big band／dixieland／jazz／swing`、**唯一一筆 release 的 `status` 逐字 `Official`、`label-info` 逐字 `Blue Note [713c4a95]`** |
+
+**→ 判：退。理由分類寫「(乙)＋合輯（系列名當盤名）」。**
+⚠ **17 軌的母體逐一追過**：〈Satin Doll〉〈Prelude to a Kiss〉〈Just a Sittin' and a Rockin'〉〈Body and Soul〉〈In the Mood〉
+出自 **Capitol 1953–55 年那批**；〈Fleurette Africaine (African Flower)〉出自 **United Artists 的《Money Jungle》(1962)**；
+〈The Mooche〉〈Mood Indigo〉的掛名逐字是 `Duke Ellington & Louis Armstrong`，出自 **Roulette 的 1961 年合作盤**
+——**三個來源全部落在 (乙) 的號段或 EMI／Capitol／Blue Note 家族目錄裡，沒有一軌是 2012 年的新錄音。**
+⚠ ⚠ **本條與第 1741 條（`The Capitol Vaults Jazz Series` 兩張）的差別、給後批**：
+**第 1741 條那兩張是「系列名當盤名的數位庫藏套裝」，系列名在 MB 與 Discogs 都只出現在盤名欄；
+本張的系列名同時出現在盤名欄與 Discogs 的 `series` 欄**——**`series` 欄是本線第一次派上用場的欄位，
+而且它比 `format` 欄更早亮**（`format` 欄要展開 `formats[0].descriptions` 才看得到 `Compilation`，`series` 欄是頂層）。
+**→ 後批看到盤名像系列名時，先打 Discogs release 端點看 `series` 欄有沒有東西。**
+⚠ **紙本 0**（`jazz inspiration` 在 2010–2012 與 2013 兩份 gz 全年 0 命中——與第 1749 條那句同形）。
+⚠ **缺口 0**：池中 `Duke Ellington` 已有 15 張（含 apex `hall` 四張），**這 17 軌的母盤有 3 張已在池中**
+（《Money Jungle》seed、《Masterpieces by Ellington》apex、《…And His Mother Called Him Bill》apex）。
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1763 條（同批，**重要；本線第一次抓到「MB 自己把原盤目錄號與再發目錄號並列在同一筆 release 的 label-info 裡」**）：**Stanley Turrentine 兩張退——`LT-993` 與 `LT-1095` 是 Blue Note 1979／1980 年的實體 LP**
+
+**派工信逐字寫「c-159 b 與 c-161 a 已經各退過兩張 Turrentine 的 (乙)，這兩張大概率同形」。查完確實同形，但證據的形狀是新的**：
+
+| | **《New Time Shuffle》（退）** | **《Ain't No Way》（退）** |
+|---|---|---|
+| rgMbid | `06d2eb65-b37e-4668-9cf1-f1ff66bbb3f2` | `2392b1ea-842c-41a4-85ee-97102e5f87b3` |
+| MB frd ／ secondary-types | `2012-07-25` ／ **空** | `2012-09-19` ／ **空** |
+| MB `genres` | ⚠ **逐字空陣列** | 逐字 `hard bop／jazz／soul jazz` |
+| ⚠ ⚠ **MB `label-info`** | ⚠ ⚠ **兩格，逐字 `Blue Note [713c4a95] catno=LT-993` ＋ `Blue Note [713c4a95] catno=TOCJ-50277`** | 逐字 `Blue Note [713c4a95] catno=TOCJ-50302`（2012 那筆）；2021 那筆兩格逐字 `TOCJ-50302` ＋ `UCCU-8157` |
+| **原盤** | **Blue Note `LT-993`（1979）**，13 軌，錄音日 **1967-02-17 與 1967-06-23** | **Blue Note `LT-1095`（1980）**，5 軌，錄音在 **1968–69** |
+| 轄下 release | 1（2012-07-25 JP CD 13 軌） | 2（2012-09-19 JP CD 5 軌、**2021-10-20 JP CD 5 軌，軌目逐字逐序相同**） |
+
+**→ 兩張都判退。理由分類寫「(乙)：母體是 Blue Note 的 `LT-` 庫藏系列實體 LP，2012 年的 `TOCJ-50xxx` 只是日版 CD 化」。**
+
+⚠ ⚠ **為什麼不是 (甲)**：**(甲) 要的是「從未發行過」。`LT-` 系列本身就是 Liberty／United Artists 時代（1979–81）
+把 Blue Note 庫房裡未發行的母帶做成實體 LP 的那條線**——**它在 1979／1980 年已經是一次正規商業發行**，
+**2012 年這次只是第二次（日版 CD）。這與 c-161 b 那張 Horace Silver《Live at Newport '58》（第 1553 條，2008 年首度商業發行）
+與本組的 Monk《Paris 1969》（第 1766 條）形狀相反。**
+⚠ ⚠ ⚠ **給後批（本條新立的查法）**：**MB 的 `label-info` 若在同一筆 release 裡並列兩個目錄號，
+而其中一個是 `LT-`／`BN-LA`／`BST-` 這種老號段、另一個是 `TOCJ-`／`UCCU-` 這種日版號段
+——那就是「原盤號＋再發號」被塞進同一格，(乙) 直接成立，不必再查 Discogs。**
+**本線前四次退 Turrentine 都是先去 Discogs 查廠牌鏈才確認的；這一次 MB 自己把答案寫在欄位裡。**
+⚠ **附帶確認**：《New Time Shuffle》的第 1 軌逐字〈Return of the Prodigal Son〉——**與 c-161 a 已退的
+`Stanley Turrentine —《Return of the Prodigal Son》`（(乙)＋合輯）是同一批 1967 年的 session**，兩者互為旁證。
+⚠ **紙本 0**（`turrentine`／`new time shuffle`／`ain't no way` 在 2013 那份 gz 全年 0）。
+⚠ **缺口**：池中 `Stanley Turrentine` 已有 62 列（seed 十餘張含《Sugar》《Hustlin'》《Blue Hour》《Joyride》《The Spoiler》等）
+——**這兩張庫藏碟不收不構成缺口。** ⚠ **本裁定可逆。**
+
+---
+
+## 第 1764 條（同批）：**quasimode《Four Pieces-The Best Selection》退——盤名寫著 Best Selection，Discogs `format` 欄逐字 `Compilation`**
+
+| 層 | 逐字 |
+|---|---|
+| **Discogs `7852250`（日版 `TOCT-28047`，barcode `4988006230521`）** | **`format` 欄逐字 `CD, Compilation, Remastered, Stereo`**；廠牌鏈兩格逐字 `Blue Note` ＋ `EMI Music Japan Inc` |
+| **MB `47196e2e`** | ⚠ **`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列**（**MB 這一次是往「漏標」的方向錯，第 1625 條那種形**） |
+| **軌目（14 軌，MB 逐字）** | `Catch The Fact (2012 Full Length Version)`／The Man From Nagpur／Ascension (The Land Of Freedom Part2)／**`Relight My Fire (Single Edit)`**／Havana Brown／Ant Soldier／Down In The Village／**`Music Can Change the World (Single Edit)`**／All Is One／**`Whisky's High (Single Edit)`**／Finger Tip／Last Nine Days／Object in the Mirror／oneself-LIKENESS |
+| **第二筆 release** | **2013-07-10 XW 數位，label-info 逐字 `EMI Music Japan Inc. [753a8b77]`（不是 `Blue Note`）**、catno `DD-01665`、盤名逐字帶空格 `Four Pieces - The Best Selection` |
+
+**→ 判：退。理由分類寫「(乙)＋合輯：母體全部在 Blue Note Japan 自家目錄，14 軌無一新錄音」。**
+⚠ **四軌帶 `Single Edit`、一軌帶 `2012 Full Length Version`——那是精選盤的標準指紋**（§5.6 逐字排除「氾濫的 greatest-hits 重複包裝」）。
+⚠ **§5.6 的精選制有沒有可能救它？沒有。** **§5.6 要的是「該合輯本身是公認的正典入口或該藝人／該樂種的代表性文獻」**
+——**本張是一個 2012 年還在發新作的現役團體的自家五年精選，而且他們的原盤已經在卡池裡**
+（c-161 b《mode of blue》《daybreak》已發卡、c-162 a《Magic Ensemble》、**本組《Soul Cookin'》**，共四張），
+**「同一藝人同一批錄音的多種合輯只挑最權威的一種」那一句直接適用，而最權威的形態就是原盤本身。**
+⚠ **掛名照主線第 1672 條維持小寫 `quasimode`（本條只是退件，不動池中字串）。**
+⚠ ⚠ **派工信第 4 點要求檢查的 U+2010 在本張沒有發生**：**`slice.json` 的 `Four Pieces-The Best Selection` 逐字是 ASCII 連字號 `0x2D`**
+（本棒把 b 組 22 筆的 `album` 與 `artist` 兩欄全部逐字元印出碼位查過，**唯四個非 ASCII 字元是
+`Norah Jones` 盤名首字的 `…`(U+2026)、`Chano Domínguez` 的 `í`(U+00ED)、`José James` 的 `é`(U+00E9)、`Gov’t Mule` 的 `’`(U+2019)
+——沒有一個是連字號類**）。**`chk-prop` 的兩道非 ASCII 連字號檢查本組全程不亮。**
+⚠ **缺口 0。** ⚠ **本裁定可逆。**
+
+---
+
+## 第 1765 條（同批）：**四筆退件的紙本全部 0——但那不是「查無」，是「這一層對這種碟無效」**
+
+`billboard-bn-2013-ocr.txt.gz`（本棒新抓，50 期）與 `billboard-bn-2010-2012-ocr.txt.gz`（c-162 a 入庫，148 期）兩份都掃過：
+**`jazz inspiration`／`new time shuffle`／`ain't no way`／`four pieces`／`turrentine`／`quasimode` 全部 0 命中。**
+⚠ **這與 c-162 a 第 1749 條末尾那句完全同形**（`capitol vaults`／`mosaic select`／`music for lovers` 三年皆 0）。
+**→ 通則（本條把它寫成一句）**：**廉價系列、庫藏再發與自家精選重包不上 Billboard 的榜、也不進 Reviews 欄；
+紙本這一層對「退件候選」沒有鑑別力，只對「新品」有。派工時不要指望用紙本去證明一張碟該退。**
+
+---
+
+## 第 1766 條（同批，**最重要；(甲) 的邊界，本線新立**）：**Thelonious Monk《Paris 1969》判 (甲) 收——但先前有過「只有影像」的正規發行，這是 (甲) 與 (己) 第一次在同一張碟上交會**
+
+**派工信逐字要求「查先前有沒有任何廠牌正規發行過；只有 bootleg 的話照第 1553 條是 (甲)，收」。查完的實況比那句複雜一層。**
+
+### 收的三層證據
+
+1. **Discogs `format` 欄（第 1734 條的認法）**：三筆零售條目逐字 `CD, Album`（`8107968` 為 `CD, Album + DVD, DVD-Video`）、
+   `Vinyl, 2×LP, Album`（`5147152`）、`CD, Album + DVD, DVD-Video, NTSC`（`7574752`）——**沒有一筆帶 `Reissue` 或 `Compilation`。**
+2. **廠牌鏈與 ℗**：三筆的廠牌鏈都是三格逐字 `Blue Note` ＋ `Laser Swing Productions` ＋ `Lower 5th`，
+   companies 逐字 `Phonographic Copyright (p): Laser Swing Productions`／**`Licensed To: Blue Note Records`**；
+   盤面 ℗ 逐字 **`℗ 1969 Laser Swing Productions S.A./Switzerland under exclusive license to Blue Note Records`**
+   ——**母帶四十四年來一直在一家瑞士製作公司手上。**
+3. **紙本**：**`BB-2013-11-30` p47** Reviews 欄逐字「**THELONIOUS MONK｜Paris 1969｜Producer: Don Was｜LABEL: Blue Note records｜RELEASE DATE: Nov. 25**」
+   ＋內文逐字「A CD/DVD package of a Paris performance featuring longtime saxophonist Charlie Rouse and a rhythm section of rookies
+   ofers a compelling look at Monk just two years before he stopped recording」——**Billboard 把它列在 Reviews（新品）而不是 catalog。**
+
+### ⚠ ⚠ ⚠ 但邊界在這裡，後批一定要知道
+
+**Jazz History Online 的樂評逐字指出，這場演出的『影像』早就流通過**：
+**「has circulated among collectors since its first broadcast, and has been available on a **Japanese Pioneer laserdisc**
+and on a French bootleg DVD」**，並把 Blue Note 這一版定性為
+**「probably the concert's **first appearance on any audio-only format**」**。
+
+**→ 所以「從未發行過」這句在本張只對『聲音』成立，對『影像』不成立。判準怎麼落**：
+
+- **(己)「載體只有影像 → 退」擋的是本碟本身的載體。** 本碟有 **CD 單碟（`B001881902`）、CD＋DVD（`B001882000`／`0602537460519`）
+  與 2×12 吋（`B001882101`）三種形態**，**不是影像獨佔**，(己) 不成立。
+- **(甲) 照第 1553／1734 條走 Discogs `format` 欄，三筆都乾淨**，(甲) 成立。
+- **先前那張日本 Pioneer 雷射影碟是「正規發行」沒錯，但它發行的是影像商品**
+  ——**把它算成「這批錄音已經發行過」會讓 (甲) 這一句在所有「先有影像後有聲音」的碟上全部失效，
+  而本線的目標是收唱片不是收影像。**
+
+**→ 判 (甲)，收。`year` 取首次商業發行年 **2013**（照 c-145 的庫存盤寫法），錄音年 **1969-12-15**（Salle Pleyel）寫進 `risk`。**
+
+⚠ ⚠ **給後批的新規則（本條新立，編為 (甲) 的第三種形狀）**：
+**第 1553 條原本講的是「錄音日反查全庫零前發」；第 1734 條補了「看 Discogs `format` 欄不看軌數比例」。本條再補第三句：**
+**「先前只有『影像載體』（雷射影碟／VHS／DVD／電視播出）發行過的錄音，其首次聲音發行仍判 (甲)；
+(己) 擋的是本碟自己的載體，不是前身的載體。」**
+**判斷時要做的動作：查到前發時，先看那次發行的『載體』是什麼，再決定它算不算 (甲) 的前發。**
+⚠ **本線目前的 (甲) 共 3 張**：Chet Baker《Embraceable You》（第 1146／874 條）、
+Horace Silver《Live at Newport '58》（第 1553 條，c-161 a 拿到紙本正面佐證）、Freddie Hubbard《Without a Song: Live in Europe 1969》（c-161 b 第 1731 條），
+**本張是第 4 張、也是第一張帶「影像前身」的。**
+⚠ **本裁定可逆（改的是 `releaseType` 與 `risk` 的文字，不是卡池結構）。**
+
+---
+
+## 第 1767 條（同批，**⚠ 年份；MB 的 `frd` 錯了三個半月，紙本把它糾回來**）：**Robert Glasper《Black Radio 2》的 MB first-release-date `2013-05-13` 不可引用**
+
+| 層 | 逐字 |
+|---|---|
+| ⚠ **MB RG `frd`** | **`2013-05-13`** |
+| ⚠ **來源** | MB release `228d15b2`… 不，是 **日版 CD `UCCQ-1039`** 那一筆，`date` 欄逐字 `2013-05-13`、barcode `4980058858524` |
+| **MB 美版兩筆** | **`2013-10-29 US`**（CD 16 軌 `B001866202`、CD 12 軌 `B001866102`） |
+| **Discogs `5039899`** | `released` 逐字 **`2013-10-29`** |
+| **Apple us `1440813358`／`1443262305`** | `releaseDate` 逐字 **`2013-10-29`**／`2013-01-01`（後者是年初佔位日） |
+| ⚠ ⚠ **紙本 `BB-2013-09-28` p41** | 資料框逐字「**RELEASE DATE: Oct. 29**」＋內文逐字「Glasper is referencing his **Oct. 29** Blue Note release, Black Radio 2」 |
+
+**→ `frd` 那一筆是 MB 的日版建檔錯誤（第 817 條：MB 會建出不存在的版本／日期）。**
+**年份兩邊同為 2013，`year` 不改判；但 `frd` 在本張不可當年份證據，已寫進卡的 `risk` 與 `mbNote`。**
+⚠ ⚠ **給後批**：**本線到目前為止「MB frd 取到數位版／日版而早於實體」的案例（c-162 a 的 Avishai Cohen《Seven Seas》是早一季）
+都還在同一年之內；本張是第一次早了將近半年。`frd` 只能當第四順位的年份證據，這一條再確認一次。**
+⚠ **本裁定可逆。**
+
+---
+
+## 第 1768 條（同批，**最需要寫下來的掛名裁定**）：**`Robert Glasper Experiment《Black Radio 2》`判裸名 `Robert Glasper`——四邊都給團名形仍然沿用池中裸名**
+
+| 來源 | 掛名欄逐字 |
+|---|---|
+| `slice.json`（抄 MB） | `Robert Glasper Experiment` |
+| **MB artist-credit** | **`Robert Glasper Experiment`（Group 實體）** |
+| **Discogs 四筆條目** | **`Robert Glasper Experiment`** |
+| **Apple us `1440813358`／`1443262305`** | **`Robert Glasper Experiment`** |
+| **紙本 `BB-2013-09-28` p41 資料框** | **逐字 `ARTIST: Robert glasper Experiment`** |
+| ⚠ **MB 日版 release 的逐軌 artist-credit** | ⚠ **片假名 `ロバート・グラスパー・エクスペリメント`**（池中 0 列） |
+| ⚠ ⚠ **池中既有** | ⚠ ⚠ **`Robert Glasper` 6 張，其中 seed 的《Black Radio》(2012) 就是本張的直接前作** |
+
+**→ 判 `Robert Glasper`。理由三層**：
+1. **第 1657 條（四）逐字**：「**三邊用團名形是建新字串的必要條件不是充分條件；池中已有同一位藝人、
+   同一套作品（同系列／同編制／同一次企劃）的既有字串時，第 307 條壓過它**」——
+   **《Black Radio》與《Black Radio 2》是同系列、同編制、同一次企劃，連盤名都只差一個數字，這是第 1657 條（四）最純粹的一次應驗。**
+2. ⚠ ⚠ **《Black Radio》那張在 `seed_cards.json` 裡，雲端不能改**（`REMOTE_RUNBOOK.md`）
+   ——**所以只能往裸名靠、不能往團名靠；若建團名形，池中必然出現「第一集掛裸名、第二集掛團名」的分裂。**
+3. ⚠ **Billboard 自己就不一致**：**`BB-2013-12-21` 的年終榜 p133 逐字 `BLACK RADIO Robert Glasper` 與 `ROBERT GLASPER 13) Blue Note`，
+   p134 逐字 `BLACK RADIO 2 Robert Glasper Experiment Blue Note`**——**相隔一頁兩種寫法，四邊一致這件事本身沒有想像中硬。**
+
+⚠ ⚠ **與 c-161 b 第 1698 條（三）建 `Joe Lovano Us Five` 的差別，一句話講清楚**：
+**那張《Folk Art》是 Us Five 的第一張，池中沒有同系列前作，所以建團名形不造成分裂；
+本張有前作而且前作掛裸名，所以不建。** **→ 團名形的分界收斂成一句：「池中有沒有同系列前作」。**
+⚠ ⚠ **代價：`chk-prop` 的第三道會報一筆**——本棒跑完逐字
+`⚠ 同掛名盤名詞元包含（只報不擋）：c162 Robert Glasper《Black Radio 2》 ←→ 線上池 Robert Glasper《Black Radio》`。
+**那不是誤報、也不是漏掃，是本裁定刻意造成的預期輸出**（`Black Radio` 是 `Black Radio 2` 的詞元前綴）。
+**標記仍為 0（第三道只報不擋）。後批看到這一行不必處理。**
+⚠ **`Robert Glasper Experiment` 與片假名形都進 `queryAlias`。本裁定可逆（改的是卡單值）。**
+
+---
+
+## 第 1769 條（同批）：**掛名總表——沿用池中 12、新字串 4、聯名新造 1、團名形新造 1、新造分裂 0；⚠ 其中兩筆是同一條分界的正反兩面**
+
+### （一）沿用池中既有字串 12
+`Lionel Loueke`（3，c-161 a＋c-162 a）／`Gare du Nord`（1，c-162 a）／`Jukka Perko`（3，c-158／c-159／c-162 a）／
+`Norah Jones`（8，seed 4＋c-160 a 2＋prop 2）／`Chano Domínguez`（2，c-161 b，**帶重音形**）／`quasimode`（5，c-161 b＋c-162 a，**全小寫**）／
+`Thelonious Monk`（25，seed，含 apex `hall` 2）／`Aaron Neville`（1，seed）／`Joe Lovano Us Five`（3，c-161 b＋c-162 a）／
+`Terence Blanchard`（6，c-158／c-159／c-160）／**`Robert Glasper`（6，seed，見第 1768 條）**／**`Gov't Mule`（1，seed，見（五））**。
+
+### （二）新字串 4（池中皆 0 列，**羅馬字／漢字／片假名三形都掃過**）
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| **`Ravi Coltrane`** | Person／US | 四邊一致（MB／Discogs 六筆／Apple／Billboard 榜單欄）；⚠ **池中的 `John Coltrane` 與 `Alice Coltrane` 是另外兩個人，不併** |
+| **`José James`** | Person，**帶重音** | MB／Apple 帶重音、Discogs 標題列無重音 credit 欄帶重音；⚠ **池中的 `James —《Laid》` 是英國同名樂團，不併** |
+| **`Robert Randolph & The Family Band`** | Group | 三邊一致用 `&` 形（MB／Discogs 三筆／Billboard 逐字 `ROBERT RANDOLPH & THE FAMILY BAND`），**依第 1539 條取 `&`**；`and` 形與裸名 `Robert Randolph` 都掃過，池中皆 0 |
+| **`Derrick Hodge`** | Person／US | 四邊一致，單一實體 |
+
+### （三）聯名新造 1：**`Elvis Costello and The Roots`**
+**MB artist-credit 是兩個實體串接、joinphrase 逐字 ` and `；Apple us `1445887865` 逐字同形；Discogs 逐字 `Elvis Costello And The Roots`；
+Billboard 榜單欄逐字 `ELVis COstELLO aND tHE rOOts`（`&` 只出現在 Reviews 欄的標題）。**
+**池中已有 `Elvis Costello and The Attractions` 6 張（含 apex `hall` 的《Armed Forces》）這個完全同形的聯名先例**
+——**依第 1131 條（不同編制各自成立）新造，`and` 而不是 `&` 也是照那一串。`Elvis Costello` 5 張與 `The Roots` 5 張一張都不動。**
+
+### （四）團名形新造 1：**`Wayne Shorter Quartet`**——**與第 1768 條正好相反的一面**
+| 來源 | 掛名欄逐字 |
+|---|---|
+| **MB artist-credit** | **`Wayne Shorter Quartet`（Group 實體）** |
+| **Discogs 六筆條目** | **`Wayne Shorter Quartet Featuring Danilo Perez, John Patitucci And Brian Blade`** |
+| **紙本 `BB-2013-02-23` p73** | **Traditional Jazz Albums 的 ARTIST 欄逐字 `WAYNE SHORTER QUARTET`（NEW 空降第 2）** |
+| ⚠ **Apple us `716382910`** | ⚠ **裸名 `Wayne Shorter`**，盤名逐字 `Without a Net (Live)` |
+| **池中既有** | **`Wayne Shorter` 13 張（seed 12＋c-143《Moto Grosso Feio》），`Wayne Shorter Quartet` 0 張** |
+
+**→ 判 `Wayne Shorter Quartet`（建團名形）。理由兩層**：
+**(a) 三比一過第 1600／1608 條的三邊門檻；**
+**(b) 第 1657 條（四）的反向條件不成立——池中十三張全是 1964–1985 年的不同編制（Blue Note 五重奏時期、Weather Report 之後的獨奏盤），
+沒有一張與這個 2000 年成軍的四重奏是同系列／同編制／同一次企劃。**
+**直接先例是 c-159 a 的 `Wynton Marsalis Quartet —《The Magic Hour》`（池中十七張裸名仍然建了團名形）。**
+⚠ **Discogs 的 `Featuring…` 長形不採**（第 1698 條（四）：MB 的實體全名與 Discogs 的 featuring 串不是盤面掛名）。
+⚠ ⚠ **本條與第 1768 條放在一起，就是團名形分界的完整形狀**：
+**同一組判準、同一批碟，`Wayne Shorter Quartet` 建、`Robert Glasper Experiment` 不建，
+差別只在「池中有沒有同系列前作」——請後批照這一組對照案來判，不要只看三邊門檻。**
+
+### （五）⚠ 一個容易漏的字元級沿用：**`Gov’t Mule`（U+2019）→ 判 `Gov't Mule`（ASCII 撇號）**
+**`slice.json` 與 MB 的 artist-credit 逐字都是 U+2019 的 `Gov’t Mule`；池中 seed 的《Heavy Load Blues》(2021) 逐字是 ASCII 撇號 `Gov't Mule`；
+Apple 的 `artistName` 逐字是 ASCII、但同一筆的 ℗ 欄用 U+2019。**
+**→ 依第 307 條取池中既有的 ASCII 形。**
+⚠ ⚠ **這是 `chk-prop` 的第七種盲區（本條新立）**：
+**第 611 條列五種、c-161 b 第 1698 條補第六種（跨文字系統）。第七種是「同一串字的標點字元不同形」**
+——**`chk-prop` 的折鍵 `replace(/[^\p{L}\p{N}]+/gu,'')` 會把兩形壓成同一個鍵，所以四道全不會亮燈，
+但寫進卡池的字串會是兩串不同的字元序列，前端的 `COMPOSER_MAP`／KV 鍵是逐字元比對的。**
+**→ 給後批的固定動作：掛名或盤名含 `'`／`’`／`"`／`”`／`&`／`＆` 時，一定要逐字元比對池中既有字串，不能只信 `chk-prop`。**
+**本組另外三個非 ASCII 字元（`…` U+2026、`í`、`é`）都已逐一與池中／MB／Discogs／Apple 四邊對過。**
+
+### （六）新造分裂 0。**`chk-prop` 的「同 rgMbid 不同掛名 0」「跨批撞卡 0」兩道全過。**
+
+---
+
+## 第 1770 條（同批）：**(丙) 的訊號亮 3 次，逐筆查完全部不成立——而且三次是三種不同的假陽性**
+
+| 碟 | 亮燈的那一格 | 查完是什麼 |
+|---|---|---|
+| **Gare du Nord《Lifesexy》** | **Apple nl 的 ℗ 逐字 `Sweet Lemon Sound Recordings`；Discogs 3979288 與 Muziekweb 的廠牌欄只寫 `EMI`** | **`Sweet Lemon` 是樂團自己的錄音公司**；**同團前一張《Lilywhite Soul》(2011) 由 c-162 a 收下時，Discogs 3302984 的廠牌欄兩格逐字就是 `Sweet Lemon` ＋ `Blue Note`**——**同一個形狀，本張只是 Discogs 那筆條目太薄（`companies` 與 `identifiers` 兩欄都是空陣列）** |
+| **Jukka Perko《Streamline Jazztet》** | **Discogs notes 與 Apple ℗ 都逐字 `Oy EMI Finland Ab`** | **芬蘭的發行／代製實體**；**Discogs 廠牌鏈第一格逐字仍是 `Blue Note`**，與 c-162 a《Avara》(2011) 完全同形 |
+| **Gov't Mule《Shout!》** | ⚠ ⚠ **MB 四筆 release 裡有三筆的 label-info 逐字 `Provogue [53ea7200]`（Mascot 集團），只有美版那筆是 `Blue Note`** | **按地區拆的同一次企劃**：**Provogue 2013-09-20 發歐洲與全球數位、Blue Note 2013-09-24 發美國，相差四天**；**℗ 一直在 `Gov't Mule, Inc.` 手上，兩家都是授權發行方**；**紙本 `BB-2013-10-12` 的廠牌欄逐字 `BLUE NOTE`** |
+
+⚠ ⚠ **本條與 c-162 a 第 1753 條第 4 點合起來看**：**那一棒說「(丙) 的假陽性五次裡五次都是藝人自己的 imprint、製作公司或授權代理」。
+本組三次再加一種新的——「同一次企劃的地區分工」（`Provogue` ／ `Blue Note`）。**
+**→ 給後批的分界收斂成一句：**
+**「℗ 欄或廠牌鏈第一格不是 `Blue Note` 時，先問『那一格的實體是誰、它發的是同一批母帶的第幾次』。
+只有當它比 Blue Note 早、而且是一次獨立的商業發行，(丙) 才成立；同年同月的地區分工不算。」**
+⚠ **三張全部照 (丁)／正常收件處理，`year` 都不因 (丙) 改判**（Provogue 版也是 2013）。
+
+---
+
+## 第 1771 條（同批，**第 1751 條的第二與第三次應驗，而且本組還有一個反例**）：**「是現場卻沒標」2 張、「盤名帶 Live 卻不是現場」1 張**
+
+| 碟 | MB `secondary-types` | slice `live` | Apple 盤名 | Discogs | 實況 |
+|---|---|---|---|---|---|
+| **Gare du Nord《Lifesexy》** | **`["Live"]`** | **true** | **`Lifesexy - Live`** | **`Lifesexy (Live In Holland)`** | **現場，四層都標了**（本組唯一） |
+| **Thelonious Monk《Paris 1969》** | **`["Live"]`** | **true** | `Paris 1969 (Live From Salle Pleyel, Paris, France / 1969)` | notes 逐字記場地與日期 | 現場，MB 與 slice 都標了 |
+| ⚠ **Chano Domínguez《Flamenco Sketches》** | **空** | **false** | 無 `(Live)` | ⚠ **notes 逐字「Recorded live at Jazz Standard」** | ⚠ **是現場，四層裡只有 Discogs notes 說** |
+| ⚠ ⚠ **Wayne Shorter Quartet《Without a Net》** | **空** | **false** | ⚠ **`Without a Net (Live)`** | ⚠ notes 逐字「Recorded at Walt Disney Concert Hall, December 8, 2010.」 | ⚠ **是現場（2011 歐洲巡演為主），MB 與 slice 都沒標** |
+| ⚠ **Derrick Hodge《Live Today》** | 空 | false | 無 `(Live)` | notes 逐字列三間錄音室 | ⚠ ⚠ **盤名帶 Live，但是錄音室碟** |
+
+⚠ ⚠ **給後批（本條把三種形狀並列）**：
+1. **MB 的 `secondary-types` 會漏標現場**（本組 2 次，加 c-162 a 的 Cassandra Wilson 共 3 次）——**要去 Discogs 的 `notes` 欄看有沒有 `Recorded live at`。**
+2. **Apple 的盤名後綴 `(Live)` 是最便宜的一層**（Wayne Shorter 那張 MB 漏標、Apple 有標）——**四層都要看。**
+3. ⚠ **反過來，盤名帶 `Live` 不代表是現場**（`Live Today` 是「活在今天」不是「今日現場」）——**不能用盤名反推。**
+⚠ **Wayne Shorter 那張還有一個坑**：**Discogs 的 notes 只寫了 Walt Disney Concert Hall 那一場（2010-12-08），
+但那是 23 分 07 秒的〈Pegasus〉一軌（四重奏＋Imani Winds 木管五重奏）的錄音地，其餘八軌來自 2011 年歐洲巡演。**
+**不要把整張的錄音日期寫成 2010-12-08，卡的 `risk` 已註明。**
+
+---
+
+## 第 1772 條（同批）：**撞陳列——收下的 18 張共 17 處／12 張；⚠ ⚠ 軌名逐字撞 apex 王牌 1 處、盤名撞一般卡 2 處、盤名撞 apex 0 處**
+
+**掃法**（照第 738／859／1370 條）：**先印出 `seed_cards.json` 前兩列確認形狀**（逐字
+`["The Rolling Stones","Some Girls",4,2,1,["rock","blues"],1978]`，**7 欄的陣列的陣列，apex 層級在 `r[8]`**），
+再把 **seed 17,248 列 ＋ `desc-tools/batches/cards/` 199 份卡單 ＋ `batch-progress/*/prop-*.json` 全部**
+合成 **28,139 個「掛名｜盤名」字串**，拿本組 **18 張的全部軌名（含各版本差異軌）＋18 個盤名** 逐一折鍵比對。
+
+### ⚠ ⚠ 撞 apex 1 處（**軌名 → apex 卡名**）
+**`quasimode —《Soul Cookin'》` 的第 14 軌〈Closing Time〉 ↔ seed `Tom Waits —《Closing Time》(1973)`，apex 層級逐字 `hall`。**
+**曲名對盤名、零軌重疊、非同碟**——**但下游寫簡介時不得讓那一軌的論述碰到 Tom Waits 那張王牌卡。**
+
+### ⚠ 盤名逐字撞池中一般卡 2 處
+- **`Lionel Loueke —《Heritage》` ↔ `Eddie Henderson —《Heritage》(1976)`**（seed ＋ c-144 已發卡）——**Henderson 那張是 Blue Note 1976 年的電子融合盤，零軌重疊。**
+- **`Gov't Mule —《Shout!》` ↔ seed `The Isley Brothers —《Shout!》(1959)`**——**完全同盤名、不同藝人、零軌重疊**（與 c-161 a 第 1704 條的 `The Wood Brothers《Loaded》` ↔ `The Velvet Underground《Loaded》` 同形）。
+**兩處都非 apex。盤名撞 apex 0 處**（派工信逐字要求「盤名撞 apex 也要查」，**本組查完是 0**）。
+
+### 軌名撞池中一般卡 14 處／10 張
+〈Summertime〉↔`MFSB`／〈Travelin' On〉↔`The Gospel Keynotes`／〈So What〉↔`George Russell & The Living Time Orchestra`／
+〈Cross Roads〉↔`Kenny Knight —《Crossroads》`（**折鍵後同鍵，空白被剝掉**）／〈King Of Kings〉↔`The Pyramids`／
+〈Keep On Steppin'〉↔`The Fatback Band`（**該卡名用 U+2019，兩形都掃過**）／〈Trouble〉↔`Ray LaMontagne`＋`Silas Hogan`（2 處）／
+〈Straight, No Chaser〉↔**`Thelonious Monk —《Straight, No Chaser》(1967)`（同一位藝人）**／〈Gypsy Woman〉↔`Joe Bataan`／
+〈Pegasus〉↔`Trippie Redd`／〈Born Again〉↔`The Notorious B.I.G.`／〈Get Ready〉↔`Rare Earth`＋`New Order`＋`Kleeer`（3 處）／
+〈Welcome Home〉↔`Carole King`／〈Trust〉↔`Low`＋**`Elvis Costello and The Attractions —《Trust》(1981)`（本組另一張碟的同一位藝人）**／
+〈Night Visions〉↔`Imagine Dragons`。**全部是曲名對盤名、零軌重疊、非同碟。**
+
+### ⚠ 同掛名貼到 apex 3 組（**掃描器不會報**）
+- **`Thelonious Monk`**：池中 25 張，含 apex `hall` 的《Brilliant Corners》與《Genius of Modern Music, Volume 1》。
+- **`Elvis Costello`／`Elvis Costello and The Attractions`**：池中 11 張，含 apex `hall` 的《My Aim Is True》《This Year's Model》《Armed Forces》。
+- **`Chano Domínguez —《Flamenco Sketches》`**：**盤名本身是 `Miles Davis —《Kind of Blue》`（池中 apex）的第五軌軌名**
+  ——**這是第 1747 條那種「曲目層貼到 apex」的反方向：本組是『盤名貼到 apex 碟的軌名』。**
+**三組都要寫進下游的注意事項：簡介不得重複那幾張王牌卡的論述。**
+
+⚠ **本組全清的碟 4 張**（軌名與盤名皆 0 命中）：Jukka Perko《Streamline Jazztet》、Elvis Costello and The Roots《Wise Up Ghost》、
+Joe Lovano Us Five《Cross Culture》、Terence Blanchard《Magnetic》。
+
+---
+
+## 第 1773 條（同批）：**六句判準（甲～己）逐張跑過的結果——(甲) 1、(乙) 4（全部退）、(丙) 0、(丁) 0、(戊) 0、(己) 0**
+
+- **(甲) 從未發行過 → 收：1 張**（Monk《Paris 1969》，第 1766 條）。
+- **(乙) 母體在 Blue Note／Liberty／UA／Solid State → 退：4 張**（全部的退件，第 1761–1764 條）。
+- **(丙) 母體在真正的他廠 → 收、`year` 取他廠那一版：0 張**（訊號亮 3 次全部不成立，第 1770 條）。
+- **(丁) 部分重疊或形狀不同 → 收：0 張**（本組沒有遇到部分重疊的形狀）。
+- **(戊) Pacific Jazz／Capitol Jazz／West Coast Classics／Roulette Jazz 再發系列 → 退：0 張。**
+  ⚠ **18 張全部過閘**：**MB 的 `label-info` 第一格 18／18 逐字 `Blue Note [713c4a95]`（Gov't Mule 的美版那筆；歐版三筆是 `Provogue`），
+  Discogs 零售條目的廠牌鏈第一格 17／18 逐字 `Blue Note`**——**唯一的例外是 Gare du Nord《Lifesexy》（Discogs 只寫 `EMI`），
+  已在第 1770 條逐層裁定過。**
+  ⚠ ⚠ **本組全部落在「2012 年 Universal 併購 EMI 之後」這個 c-161 交接第 1 點警告的風險區，特別做了兩件事**：
+  **(a) `50999`／`0946`／`60253` 這幾個前綴一律不當 imprint 證據（第 1685 條）**；
+  **(b) 三條日版目錄號線各抓前後號驗過**——**`TOCT-28047`／`TOCT-29063`／`TOCT-90020`／`TOCT-27025`（東芝 EMI 流行線）、
+  `TOCJ-50277`／`TOCJ-50302`（東芝 EMI 爵士線）、`TOCP-71280`／`TOCP-71459`（東芝 EMI 洋樂線）、`UCCQ-1039`／`UCCQ-1185/6`（Universal Japan）
+  ——四條線的廠牌鏈第一格在 Discogs 上都逐字是 `Blue Note`，本組沒有抓到 MB 填錯 imprint 的例子。**
+  **→ 給後批：這個風險區在 2012–2013 年的日版上目前是乾淨的，但仍要逐張驗，不要憑本條跳過。**
+- **(己) 載體只有影像 → 退：0 張**（Monk《Paris 1969》是本線第一次需要認真判這一句的碟，結論是不成立，第 1766 條）。
+
+---
+
+## 第 1774 條（同批，**⚠ 本棒重抓並入庫；派工信與 c-162 a 第 1749 條各對一半**）：**紙本——Billboard 2013 全年 50 期；18 張裡 11 張有命中、6 個街頭日，是本線紙本產出最好的一年**
+
+### 先做第 1650／1664 條那一步：數美國盤
+**本組 22 筆裡美國盤 13 張**（Norah Jones、Ravi Coltrane、José James、Monk、Elvis Costello、Aaron Neville、Joe Lovano、
+Terence Blanchard、Wayne Shorter、Robert Randolph、Robert Glasper、Gov't Mule、Derrick Hodge），**其中 2013 年的 11 張**
+——**派工信逐字說「值得抓 2012／2013 紙本」，而 `SOURCES` 末尾顯示 2010–2012 已由 c-162 a 入庫，所以本棒只抓 2013。**
+
+### ⚠ ⚠ URL 與檔名：派工信寫的 `10s/<年>/` 是錯的，c-162 a 的訂正對但不完整
+- **派工信逐字 `www.worldradiohistory.com/Archive-All-Music/Billboard/10s/<年>/`——不存在，全回 404。**
+- **c-162 a 第 1749 條訂正成 `Billboard/00s/<年>/`——正確**，而且它逐字預告「2013 起檔名變成 `Billboard-BB-2013-03-09.pdf`」。
+- ⚠ ⚠ **實況是 2013 年有三種檔名，一次抓不齊**：
+  **`Billboard-2013-MM-DD.pdf`（47 期）**／**`Billboard-BB-2013-03-09.pdf`（多一段 `BB-`）**／
+  ⚠ ⚠ **`Billboard--2013-08-31.pdf`（連續兩個連字號）**。
+  **本棒第一輪枚舉週六拿到 48 期，再靠索引頁 `https://www.worldradiohistory.com/Billboard-Magazine.htm`
+  正則撈 `Billboard/00s/2013/…pdf` 才發現另外兩個異形檔名，補齊到 50。**
+- **2013 真的只有 50 期**：**索引頁的 2013 清單共 50 檔，不含 `2013-07-13` 與 `2013-12-28`**（`12-14` 是年終雙期號）。
+  **入庫檔以 `### NOT-PUBLISHED-IN-ARCHIVE` 兩行標明，不是抓失敗。**
+- **入庫檔**：**`batch-progress/enum/billboard-bn-2013-ocr.txt.gz`（1.19 MiB 壓縮／2.6 MiB 原文，50 期、384 命中頁、零 PARSE-FAIL）**，
+  **`SOURCES-billboard-cashbox.md` 末尾已 append 一節。** **抽字用 `pymupdf`、沒有跑 OCR，50 期約三分鐘。**
+
+### 11 張有命中（**逐字**；6 個街頭日以 **粗體** 標）
+
+| 卡 | 命中 |
+|---|---|
+| **José James《No Beginning No End》** | ⚠ **`BB-2013-01-12` p25 整版專文，標題逐字「NEW BLUE｜Singer/songwriter Jose James and Blue Note strive for genre-bending crossover success with his new album」＋內文逐字「No Beginning No End, James' independently recorded Blue Note debut **due Jan. 22**」**＋「Don Was, head of EMI-owned Blue Note Records」＋「the former signed to Blue Note last May」；另 `BB-2013-01-19` p46 |
+| **Aaron Neville《My True Story》** | **`BB-2013-01-26` p55 Reviews 逐字「AARON NEVILLE｜My True Story｜Producers: Don Was, Keith Richards｜Label: Blue Note｜**Release Date: Jan.22**」**（列在 `POP` 分類） |
+| **Joe Lovano Us Five《Cross Culture》** | `BB-2013-01-26` p71 Heatseekers 逐字（兩欄疊在一起）`BLUE｜JOENOTE LOVANO/USFIVE｜Cross Culture`，還原為 `JOE LOVANO/US FIVE｜Cross Culture｜BLUE NOTE`，NEW 進榜 |
+| **Wayne Shorter Quartet《Without a Net》** | `BB-2013-02-23` p73 Traditional Jazz Albums 逐字 `NEW｜0WAYNE SHORTER QUARTET｜Without A Net｜BLUE NOTE` **空降第 2** |
+| **Terence Blanchard《Magnetic》** | `BB-2013-06-15` p63／`BB-2013-06-22` p59 逐字 `TERENCE BLANCHARD｜BLUE NOTE｜Magnetic` |
+| **Robert Randolph & The Family Band《Lickety Split》** | `BB-2013-08-03` p64 Billboard 200 逐字 `NEW｜0 ROBERT RANDOLPH & THE FAMILY BAND｜LiCkety Split｜**DARE/BLUE NOTE**` |
+| **Derrick Hodge《Live Today》** | `BB-2013-08-24` p123（兩處，含 `WEST NORTH CENTRAL` 分區第 10）／p129／`BB-2013-08-31` p61／`BB-2013-09-07` p79 逐字 `DErriCK HODGE｜Live Today｜BLUE NOTE` |
+| **Gov't Mule《Shout!》** | ⚠ ⚠ **`BB-2013-08-31` p24–25 Warren Haynes 整版專訪，逐字「The new Shout! **arrives on Blue Note Records Sept. 24**, packed with… sporting a bonus CD with those same tracks rearranged and resung by guest vocalists, including Dave Matthews, Dr. John, Toots Hibbert, Elvis Costello, Grace Potter, Steve Winwood, Jim James and Vintage Trouble's Ty Taylor」**＋ Don Was 逐字「releasing records like Shout! is why he came to Blue Note in the first place」；榜位 `BB-2013-10-12` p62／p73 逐字 `GOV’t MULE｜Shout!｜BLUE NOTE` |
+| **Elvis Costello and The Roots《Wise Up Ghost》** | **`BB-2013-09-28` p43 Reviews 逐字「ELVIS COSTELLO & THE ROOTS｜Wise Up Ghost｜Producers: Steven Mandel, Elvis Costello, Ahmir “?uestlove” Thompson｜LABEL: blue Note｜**RELEASE DATE: Sept. 17**」**＋內文逐字「the accidental sequel to Costello's Get Happy!! 33 years after that album's Stax worship」；Billboard 200 四期以上 |
+| **Robert Glasper《Black Radio 2》** | ⚠ ⚠ **`BB-2013-09-28` p41 整版專文，資料框逐字「ARTIST: Robert glasper Experiment｜ALBuM: Black Radio 2｜LABEL: Blue Note｜**RELEASE DATE: Oct. 29**｜CHART HISTORY: Black Radio (2012), No. 15 Billboard 200, No. 1 Traditional Jazz Albums, 92,000」**（**推翻 MB frd，第 1767 條**）；榜位 `BB-2013-11-02` p35／`11-16` p92；**年終榜 `BB-2013-12-21` p134 Contemporary Jazz 第 4** |
+| **Thelonious Monk《Paris 1969》** | **`BB-2013-11-30` p47 Reviews 逐字「THELONIOUS MONK｜Paris 1969｜Producer: Don Was｜LABEL: Blue Note records｜**RELEASE DATE: Nov. 25**」**＋內文（**(甲) 的第三層證據，第 1766 條**） |
+
+### 7 張 0 命中（2013 那份）
+**Norah Jones《…Little Broken Hearts》與 Ravi Coltrane《Spirit Fiction》與 Lionel Loueke《Heritage》的命中在 2010–2012 那份**
+（Norah Jones：**`BB-2012-04-28` Reviews 逐字「Producer: Danger Mouse｜Blue Note Records｜**Release Date: May 1**」**＋ Billboard 200 十二期以上；
+Ravi Coltrane：**`BB-2012-07-07` Reviews 逐字「Producers: Ravi Coltrane, Joe Lovano｜Blue Note Records｜**Release Date: June 19**」**＋ Top Jazz 五期；
+Lionel Loueke：Top Jazz `BB-2012-09-15`／`09-22`／`09-29` 逐字 `HERITAGE BLUE NOTE 27742`）
+——**合計實際有紙本命中的是 14／18，街頭日 8 個。**
+**真正 0 命中的 4 張是 Gare du Nord（荷）、Jukka Perko（芬）、Chano Domínguez（西）、quasimode（日）——全部是非美國盤。**
+
+⚠ ⚠ **第 1664 條在本線第五次成立，而且這一次的相關性最強**：
+**14 張有命中的裡面 13 張是美國盤／美國發行；4 張 0 命中的 100% 是歐陸／日本盤。**
+⚠ **另記一處產業新聞**：**`BB-2013-10-05` p8 逐字「Blue Note Records signed a licensing deal with Panasonic…
+whose artists range from Thelonius Monk to Norah Jones and Gov't Mule」——三個名字裡有兩個在本組。**
+⚠ ⚠ **`magnetic` 這個關鍵字在 2013 回 73 次命中，絕大多數是 `Edward Sharpe & The Magnetic Zeros`
+與 Goo Goo Dolls 同名的《Magnetic》**——**同年三張同名碟同時在榜，盤名反查一定要綁掛名（第 1250 條）。**
+
+---
+
+## 第 1775 條（同批）：**六層證據的實測命中——② 18／④ 17／① 14／⑥ 3／③ 0／⑤ 0**
+
+| 層 | 命中 | 說明 |
+|---|---:|---|
+| **② Discogs（地基）** | **18／18** | **仍然是唯一一層對全組有效的。** ⚠ **但本組有 2 張的 Discogs 條目薄到失真**（Gare du Nord《Lifesexy》廠牌欄只有 `EMI`、`companies` 與 `identifiers` 兩欄全空；Derrick Hodge《Live Today》未列時長）。⚠ **`format` 欄是四筆退件裡 2 筆的決定性證據，`series` 欄是第 3 筆的（第 1762 條）。** |
+| **④ Apple 店面** | **17／18** | **唯一查不到的是 Robert Randolph《Lickety Split》**（us 市場「掛名＋盤名」反查 0 筆）。⚠ **`releaseDate` 有 9 張逐字是 `2013-01-01`／`2012-01-01` 的年初佔位日**（第 1601 條），**真正可用的日級日期只有 6 張**；⚠ **1 張把盤名拼錯**（quasimode 的 `Soul Cockin'`）、**1 張用了與四邊都不同的裸名**（Wayne Shorter）。 |
+| **① 紙本 Billboard** | **14／18** | **本線最高。** 8 個街頭日、2 篇整版專文、1 篇整版專訪、1 則產業新聞。**全部集中在美國盤。**（第 1774 條） |
+| **⑥ 維基** | **3／18** | **本線新高 14／20 那個紀錄本組沒有重現**——本組只有 Gare du Nord（樂團條目）、Thelonious Monk、Norah Jones 三個有可用敘事，**2012–13 年的爵士新作條目普遍很薄。** |
+| **③ 廠牌官網** | **0／18** | ⚠ ⚠ **派工信逐字要求「③ 要重新啟用，`bluenote.com/artist/<藝人>/` 對 2000 年後的藝人有作品表與敘事」——本組實測 0。** 試過的路徑全部回 **404**（`gare-du-nord`／`jose-james`／`derrick-hodge` 等）。**與 c-162 a 第 1753 條第 6 點一致：③ 只對「一直在美國線的老牌藝人」有效，而本組的新人與歐陸／日本線藝人都沒有頁面。** |
+| **⑤ AllMusic** | **0／18** | **連十組 0。** ⚠ **唯一一次派上用場是間接的**：**Gare du Nord 的藝人敘事（經搜尋摘要）逐字「the Blue Note association resulted in additional releases such as 2012's live release Lifesexy」——那救了本組唯一一張 imprint 分裂的碟（第 1770 條）。** |
+
+⚠ **順位與派工信給的「② ＞ ⑥ ＞ ④ ＞ ① ＞ ③ ＞ ⑤」相比，本組是 ② ＞ ④ ＞ ① ＞ ⑥ ＞ ③ ＝ ⑤**
+——**差別全部來自「本組是 2012–13 年、13 張美國盤」**：**紙本與店面在這一段遠比維基有用。**
+**→ 給後批：紙本與店面的名次跟年代與國別走，不是固定的。**
+
+---
+
+## 第 1776 條（同批）：**給 c-163 以後的七句**
+
+1. ⚠ ⚠ **紙本已覆蓋到 1955→2013。** **2013 那份的檔名有三種形（`Billboard-`／`Billboard-BB-`／`Billboard--`），
+   一定要走索引頁 `Billboard-Magazine.htm` 撈 URL；2014–15 再變形（`BB-2014-49-12-20--Double-Issue.pdf`）。**
+   **2014 以後還沒有人抓。**
+2. ⚠ ⚠ **團名形的分界收斂成一句：「池中有沒有同系列前作」。**
+   **本組同時給了正反兩例——`Wayne Shorter Quartet` 建（池中十三張都是別的編制）、
+   `Robert Glasper Experiment` 不建（池中有《Black Radio》）。第 1768／1769（四）條。**
+3. ⚠ ⚠ **`chk-prop` 的第七種盲區（本組新立）：同一串字的標點字元不同形**（`Gov’t` U+2019 ↔ `Gov't` ASCII）。
+   **折鍵會把兩形壓成同一個鍵，四道都不亮，但寫進卡池的是兩串不同的字元。**
+   **掛名或盤名含 `'`／`’`／`&`／`＆` 時逐字元比對池中既有字串。**
+4. ⚠ ⚠ **(甲) 的第三種形狀（本組新立）：先前只有影像載體發行過的錄音，其首次聲音發行仍判 (甲)。**
+   **(己) 擋的是本碟自己的載體。第 1766 條。**
+5. ⚠ **MB 的 `label-info` 若在同一筆 release 並列「老號段＋日版號段」兩個目錄號（`LT-993` ＋ `TOCJ-50277`），
+   (乙) 直接成立，不必再查 Discogs。第 1763 條。**
+6. ⚠ **盤名像系列名時，先打 Discogs release 端點看 `series` 欄**——**它比 `format` 欄更早亮（頂層欄位，不用展開）。第 1762 條。**
+7. ⚠ **2012–2013 年的日版 imprint 目前是乾淨的**（`TOCT-`／`TOCJ-`／`TOCP-`／`UCCQ-` 四條線各驗過前後號，
+   廠牌鏈第一格都是 `Blue Note`）——**但那是實測結果不是通則，後批仍要逐張驗。第 1773 條。**
+
+---
+
+## 第 1777 條（同批，**收尾**）：**交件數字、本棒改動的檔案，以及號段**
+
+- **`batch-progress/c162/prop-b.json`：18 張、18 位**（**一人一張，本線第三組零重複掛名**）。
+  ⚠ **第 315 條：18 ＋ 退表 4 ＝ 22 ✓。** **18 筆的 `rgMbid` 全部寫在 `mbNote` 的第一句（「釘 release-group …」），與 slice 逐一對上。**
+- **`node batch-progress/c162/chk-prop.mjs b` → 逐字 `合計 18 張、18 位｜標記 0`**；
+  跨批去重逐字 `125 批（其中 1 批讀 prop）｜卡數 5058｜跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 1｜共用目錄號 0`。
+  ⚠ **那「1」是第 1768 條刻意造成的預期輸出**（`Robert Glasper《Black Radio 2》` ↔ 線上池 `Robert Glasper《Black Radio》`），
+  **不是派工信第 6 點說的那兩種必然誤報，也不是漏掃。只報不擋，標記仍為 0。**
+- **本棒改動的檔案（四個，皆非禁區）**：
+  `batch-progress/c162/prop-b.json`（**新建，18 筆**）／`batch-progress/c162/rulings.md`（**append 第 1760–1777 條**）／
+  **`batch-progress/enum/billboard-bn-2013-ocr.txt.gz`（新增）／`batch-progress/enum/SOURCES-billboard-cashbox.md`（append 一節）**。
+  ⚠ **`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md` 一律未碰**（只唯讀掃描 `seed_cards.json`）；
+  **`prop-a.json` 與 1738–1759 號段一字未碰；append 前已備份 `rulings.md`。**
+- **中間檔**：全部在本棒的暫存目錄 `…/scratchpad/c162b/`（`mb.json`／`pool.mjs`／`fetch-mb.mjs`／`billboard-bn-2013-ocr.txt.gz`／`rulings.md.bak-*`），
+  **repo 根目錄未新增任何檔。**
+- **號段**：**1760–1777 用畢，1778–1789 留白。**

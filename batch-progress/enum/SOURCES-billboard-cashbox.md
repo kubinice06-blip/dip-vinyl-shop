@@ -1434,3 +1434,53 @@ Carnegie Hall performance were found in the Library of Congress**」（**判 (�
 - ⚠ ⚠ **三筆退件的紙本全部 0**：**`capitol vaults`／`mosaic select`／`music for lovers`／`big john patton`／`hutcherson`（唯一 1 次是別的碟）三年皆 0**
   ——**第 1741 條那兩套「數位庫藏套裝」在 Billboard 上完全沒有痕跡，紙本這一層對它們無效。**
 - **到此合計覆蓋：Billboard 1955→2012**（2005 缺 3 期、2006／2007／2008 各缺 1 期、2009 缺 2 期；**2010–2012 以索引頁為準、無缺**）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2013 以後尚未抓，且檔名形狀已變，見上。**
+
+## Billboard 2013 全年（2026-09-19，c-162 策展 b 新抓入庫）
+
+- **檔案**：`batch-progress/enum/billboard-bn-2013-ocr.txt.gz`（**1.19 MiB 壓縮／2.6 MiB 原文**，**50 期、384 命中頁、零 FETCH-FAIL、零 PARSE-FAIL**）。
+- **目錄仍是 `Billboard/00s/2013/`**（照 c-162 a 第 1749 條的訂正；派工信與策展簡報寫的 `10s/<年>/` 不存在，全回 404）。
+- ⚠ ⚠ **2013 的檔名有三種形，一次抓不齊，必須走索引頁**：
+  - **常態 47 期**：`Billboard-2013-MM-DD.pdf`
+  - ⚠ **`Billboard-BB-2013-03-09.pdf`**（多一段 `BB-`）
+  - ⚠ ⚠ **`Billboard--2013-08-31.pdf`（連續兩個連字號）**
+  **本棒第一輪枚舉週六只拿到 48 期，靠索引頁 `https://www.worldradiohistory.com/Billboard-Magazine.htm`
+  正則撈 `Billboard/00s/2013/…pdf` 才發現另外兩個異形檔名，補齊到 50。**
+  **→ 給後批：照 c-162 a 第 1749 條走索引頁，並且不要假設檔名前綴只有一種。**
+- **2013 真的只有 50 期**：**索引頁的 2013 清單共 50 檔，不含 `2013-07-13` 與 `2013-12-28`**
+  （`12-14` 是年終雙期號）。檔內以 `### NOT-PUBLISHED-IN-ARCHIVE` 兩行標明，**不是抓失敗。**
+- **抽字法**：`pymupdf` 抽文字層，**沒有跑 OCR**（2010 年代的 PDF 文字層完整）。**50 期下載＋抽字約三分鐘。**
+- **關鍵字集（約 100 個）**：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／
+  `contemporary jazz`／`traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`tocp`／`toshiba emi`／`emi music japan`／
+  `somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／`blue note label group`／`/blg`／`emi jazz`）
+  ＋ **c-162 b 的 22 個藝人名與盤名**＋目錄號片段（`27742`／`97880`／`79323`／`63638`／`23087`／`79453`／`18937`／
+  `50277`／`50302`／`28047`／`29063`／`05980`／`71459`／`46051`／`88190`／`87500`／`23489`／`38761`／`03354`／
+  `79516`／`85730`／`86610`／`88040`／`84770`／`1874802`／`1875002`／`B00185`／`B00186`／`B00188`／`UCCQ`／`059802`）。
+  ⚠ **查別的 2013 年碟要重抓或放寬關鍵字**（與前幾份相同的限制）。
+- ⚠ ⚠ **2013 是本線目前紙本產出最好的一年**：**c-162 b 收下的 18 張裡 11 張有命中**
+  （**街頭日 5 個：Aaron Neville `Jan.22`／José James `Jan. 22`／Elvis Costello & The Roots `Sept. 17`／
+  Robert Glasper `Oct. 29`／Gov't Mule `Sept. 24`；另加 Thelonious Monk `Nov. 25`＝6 個**），
+  **而 2013 年那 11 張全部是美國盤**——**第 1664 條在本組第五次成立。**
+- ⚠ **2013 年最有用的六處**：
+  **`BB-2013-11-30` p47 逐字「THELONIOUS MONK｜Paris 1969｜Producer: Don Was｜LABEL: Blue Note records｜RELEASE DATE: Nov. 25」**
+  ＋內文逐字「A CD/DVD package of a Paris performance… ofers a compelling look at Monk just two years before he stopped recording」
+  （**(甲) 判定的第三層證據，rulings 第 1766 條**）；
+  **`BB-2013-09-28` p41 的 Robert Glasper 整版專文，資料框逐字「ALBuM: Black Radio 2｜LABEL: Blue Note｜RELEASE DATE: Oct. 29」
+  ＋ CHART HISTORY 逐字「Black Radio (2012), No. 15 Billboard 200, No. 1 Traditional Jazz Albums, 92,000」**
+  （**推翻 MB 的 frd `2013-05-13`，rulings 第 1767 條**）；
+  **`BB-2013-08-31` p24–25 的 Warren Haynes 專訪逐字「The new Shout! arrives on Blue Note Records Sept. 24… sporting a bonus CD
+  with those same tracks rearranged and resung by guest vocalists」**（**街頭日＋雙碟企劃一次到手**）；
+  **`BB-2013-01-12` p25 的整版專文標題逐字「NEW BLUE｜Singer/songwriter Jose James and Blue Note strive for genre-bending crossover success」
+  ＋內文逐字「No Beginning No End, James' independently recorded Blue Note debut due Jan. 22」＋「Don Was, head of EMI-owned Blue Note Records」**；
+  **`BB-2013-01-26` p55 逐字「AARON NEVILLE｜My True Story｜Producers: Don Was, Keith Richards｜Label: Blue Note｜Release Date: Jan.22」**；
+  **`BB-2013-09-28` p43 逐字「ELVIS COSTELLO & THE ROOTS｜Wise Up Ghost｜Producers: Steven Mandel, Elvis Costello, Ahmir "?uestlove" Thompson｜LABEL: blue Note｜RELEASE DATE: Sept. 17」**。
+  **另有 `BB-2013-10-05` p8 的產業新聞逐字「Blue Note Records signed a licensing deal with Panasonic… whose artists range from
+  Thelonius Monk to Norah Jones and Gov't Mule」——三個名字裡有兩個在本組。**
+- ⚠ **查無也要記（2013 全年 0 命中）**：`gare du nord`／`lifesexy`／`perko`／`streamline jazztet`／`chano`／`flamenco sketches`／
+  `quasimode`／`soul cookin`／`four pieces`／`turrentine`／`jazz inspiration`／`loueke`（2013 全年 0，2012 才有）；
+  ⚠ ⚠ **`magnetic` 回 73 次命中，但絕大多數是 `Edward Sharpe & The Magnetic Zeros` 與 Goo Goo Dolls 同名的《Magnetic》**
+  ——**同年三張同名碟同時在榜，盤名反查一定要綁掛名**（第 1250 條）。
+- ⚠ **四筆退件的紙本全部 0**：`jazz inspiration`／`new time shuffle`／`ain't no way`／`four pieces`／`turrentine` 全年皆 0
+  ——**與 c-162 a 第 1749 條那句同形：庫藏系列與精選重包在 Billboard 上沒有痕跡，紙本這一層對它們無效。**
+- **到此合計覆蓋：Billboard 1955→2013**（2005 缺 3 期、2006／2007／2008 各缺 1 期、2009 缺 2 期；
+  **2010–2012 以索引頁為準、無缺；2013 全 50 期到齊**）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2014 以後尚未抓，
+  且 2014–15 的檔名形狀再變（`BB-2014-49-12-20--Double-Issue.pdf`，見 c-162 a 第 1749 條）。**
