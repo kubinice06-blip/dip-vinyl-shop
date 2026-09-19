@@ -1635,3 +1635,83 @@ Discogs 19106557 出版欄逐字 `Tracks A1 to A4, A6 to B4: Published by Julian
 `Kyoto Jazz Sextet`〈Watarase〉↔ 板橋文夫《Watarase》——**本軌正是該曲翻奏**（作曲欄逐字 `Fumio Itabashi`），**要寫成致敬而非撞名**；
 **三張蒙特勒卡的區隔**（本組 Donald Byrd ＝1973-07-05 當年沒發那場，**黑膠背面逐字 `℗ 2013 © 2022` 解釋了 Apple 的 2013 佔位日**；
 seed 的 `Ronnie Foster《Live at Montreux》`(1974) ＝同屆真的發出來的四張之一；本組 `Ronnie Foster《Reboot》` ＝Capitol Studios 新錄音、與蒙特勒無關）。
+
+## 第 1784-B 條（修正 c-165 a 提出的「第六種成因」，並找出真正的原因）：**那不是撇號，是節流——而且觸發者是我**
+
+c-165 a 提出 `0→0` 的新形狀：「**關鍵字含 ASCII 撇號（`O'Farrill`）時 Apple `/search` 與 bluenote WP `/search` 兩個端點都回 0**」。
+**主線實打驗證，這個診斷不成立**：
+
+```
+Apple /search term=«Arturo O'Farrill»                               → 5 筆
+Apple /search term=«Arturo O'Farrill …dreaming in lions…»           → 10 筆，首筆就是本碟
+Apple /search term=«Arturo O'Farrill, The Afro Latin Jazz Ensemble …dreaming in lions…»
+   （＝探測層 `termsFor()` 產生的第一個 term，逐字重打）                → 10 筆
+```
+
+**含撇號、含 U+2026、含完整逗號並列掛名的那個 term，現在回 10 筆且首筆就是本碟。**
+
+**真正的原因在同一輪的 `tried` 記錄裡**：
+```
+Trijntje Oosterhuis|Everchanging Times…  tried: ["us:12→0","gb:ratelimited-after-retries","gb:12→0",…]
+```
+⚠ ⚠ **`ratelimited-after-retries` ——Apple 在那一輪對我們節流了。**
+
+⚠ ⚠ **而節流的觸發者是我**：第 1769-B／1771-B 條記的那次，**我誤判探測鏈已死、重啟了一支，一度有兩支同時打 Apple**。
+**請求速率加倍，於是那段時間探測的卡整批回 0。**
+
+**三條結論**：
+1. **`0→0` 不一定代表任何結構性成因——它也可能只是那一輪被節流了。**
+   **判斷之前先看同一輪其他卡的 `tried` 有沒有 `ratelimited` 字樣。** 探測層有記，看就有。
+2. ⚠ **第 1753-B／1775-B 條那五種成因仍然成立**（都有各自的實證），**但要在前面加一句**：
+   > **先排除節流**：同一輪出現 `ratelimited-after-retries`，就把那一輪的 `0→0` 全部當成「未探測」而非「查無」，**重跑那幾張**。
+3. ⚠ **`ratelimited` 之後即使重試成功（`gb:12→0` 緊接在後），前面失敗的那些市場不會自動補回**——
+   **所以一張卡的 `tried` 裡只要出現過那個字樣，整張的結果就要重新看待。**
+
+**本批的實際損失是 0**（四張都被研究層找回來了），**但那是因為研究層照第 1753-B 條逐條跑完才發現碟在架上。
+若當時直接判「版權缺口」，四張就都錯了。**
+
+⚠ **給主線自己的教訓，接第 1769-B 條**：**那次重啟的代價不只是產出了一份錯的候選清單（第 1771-B 條），
+還讓同一時段探測的卡整批拿到不可信的 `0→0`。** **並行打同一個外部 API 的成本會延後好幾層才顯現。**
+
+---
+
+## 第 1785-B 條（我派工信裡一處自相矛盾的指示）：**同一節裡先寫「日本線以官網為準」，又引了說相反話的第 1747-B(一) 條**
+
+c-165 a 指出：我派工信第五節前半寫「**日本線盤名以那裡為準**」，後半又引第 1747-B(一) 條
+「**三邊一致時不因官網帶版本裝飾詞而改寫盤名**」——**兩句在 `山中千尋《Rosa》` 這張上直接打架**
+（官網商品名帶兩個版本裝飾詞，而 MB RG title、三筆日版 release、Discogs 四筆、Apple jp 逐字全是 `Rosa`，**五比一**）。
+**該棒照正本取 `Rosa`，與策展層第 1920 條（二）同向。判得對。**
+
+⚠ **這與第 1743-B(二) 條是同一個毛病的第二次**：**我在同一段裡列了多條規則，卻沒想過它們會在同一張碟上互斥。**
+**第 1743-B 條已經立了「列多條規則時要標明優先序」——我沒照做。**
+**本條把那句話再寫一次，並定死日本線這一條的正確寫法**：
+> **日本線：MB 與 Discogs 的題法有歧異時，以 `universal-music.co.jp` 為準；
+> 三邊一致時照三邊，不因官網帶 `[通常盤]`／`[SHM-CD]` 等版本裝飾詞而改寫。**
+
+---
+
+## 第 1786-B 條（c-165 a 交件驗收）
+
+23 張全 `full`、**facts 276 條（每張 12 條）、`src` 全 https 276/276**、`hookCandidates` 皆 2 條、
+`qa-batch research c165` **兩組同時通過、警告 0**。**c-165 研究層合計 45 張、540 條 facts。**
+**兩張無串流全部命中並合併回寫**（`…dreaming in lions…` → `1577846867`；`Everchanging Times…` → `1574931448`）。
+**無封面那張撿到 Apple `1536934133` 的 artwork（尾段換 `600x600bb` 即大圖）。**
+
+**⚠ 推翻策展層八處，其中三處是作曲歸屬整段錯**：
+1. **`ARTEMIS`** 三處作曲人全錯——實際是〈Nocturno〉**Anat Cohen**、〈Big Top〉**Renee Rosnes**、〈Frida〉**Melissa Aldana**、
+   〈Goddess Of The Hunt〉Allison Miller、〈Step Forward〉Noriko Ueda（官網曲目表＋Discogs 逐軌 `Written-By` 兩層一致）。
+2. **`Bill Frisell《Valentine》`**：〈Baba Drame〉**不是自作**（Boubacar Traoré）、〈Wagon Wheels〉**不是傳統曲**（Billy Hill／Peter DeRose）；自作 7→**8 軌**。
+3. **`Terence Blanchard《Absence》`**：Wayne Shorter 的曲子 2→**5 軌**（策展層把〈When It Was Now〉〈Diana〉列進「團員自作」）。
+4. **`Bill Charlap Trio`**：〈Your Host〉作者 Sonny Clark → **Kenny Burrell**。
+5. **`Joe Chambers`**：〈Visions〉是 **Bobby Hutcherson**；〈New York State of Mind Rain〉**不是 Billy Joel 的曲子改題**（官網逐字掛 Joe Chambers／Fenton Chambers）。
+6. **`Arturo O'Farrill`**：後九軌**不是與詩人 Rita Dove 合作**——兩篇官網發片稿逐字都寫是與 **Malpaso Dance Company**，靈感來自 Hemingway《The Old Man and the Sea》，**兩篇都沒有 Rita Dove 這個名字**。
+7. **`Nduduzo Makhathini`**：isiZulu 曲名 七→**八軌**（策展層自己列了八個名字卻寫七）。
+8. ⚠ **第 1919 條的「MB／Apple 14 軌 vs Discogs 歐版 16 軌」不成立**——
+   **Discogs 那 16 項裡有兩項 `type` 逐字是 `heading`（組曲標題），樂曲軌數同樣 14。三層其實一致。**
+   **這是第 1772-B 條（「軌數」要算樂曲軌數）的反向實例：那次是店面把訪談算進去，這次是 Discogs 把標題列算進去。**
+
+⚠ **三則值得記的自制**：
+- `Wonderful Christmastime` 末軌兩筆 Discogs 作者欄都空 → **不指認作曲者**。
+- **「Blue Note 史上第一位南非簽約藝人」是單一樂評在官網稿裡被引述 → 不採**（**廠牌史第一類宣稱要反查廠牌沿革**）。
+- **三處官方目錄序數（Frisell `second`／Lloyd `sixth`／Lonnie Smith `third`）一律不寫**，改用間隔敘述——
+  **2021 年的碟紙本層不存在，(一) 類的兩層門檻過不了。**
