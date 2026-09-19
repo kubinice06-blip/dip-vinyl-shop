@@ -52459,7 +52459,16 @@
    "es:0→0",
    "pl:0→0"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "gb",
+  "collectionId": 715617027,
+  "appleTitle": "Something for You",
+  "appleArtist": "Eliane Elias",
+  "appleYear": "2008",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8f/fb/4a/8ffb4a22-6ffc-adec-d109-d0d56e47b7f4/mzaf_15409912896024385198.plus.aac.p.m4a",
+  "note": "2026-09-19 研究 a 組查出、主線覆核：17 軌國際版，gb/br/de/fr/nl/it/ca 七個市場 17/17 全部回得到 previewUrl，曲序與盤面逐軌相符，℗ 欄逐字「℗ 2007 EMI Japan」與判年一致。⚠ 探測層判 unavailable 的原因：us 市場 lookup 回得到 collection 但 0 軌——建議探測腳本改成「us 回 0 軌時自動換市場再跑」。"
  },
  "Trijntje Oosterhuis|Ken je mij (live & akoestisch in de Rode Hoed)": {
   "batch": "c161",
@@ -52510,7 +52519,17 @@
    "es:0→0",
    "pl:0→0"
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "fr",
+  "collectionId": 1841638049,
+  "appleTitle": "Rendez-vous (Paris - Benares - Mexico)",
+  "appleArtist": "Erik Truffaz",
+  "appleYear": "2008",
+  "explicitness": "notExplicit",
+  "trackCount": 17,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/19/6e/d9196e38-82f9-3cac-d2fe-77affef7e061/mzaf_1604723114757030687.plus.aac.p.m4a",
+  "discNumber": 1,
+  "note": "2026-09-19 研究 a 組查出、主線裁定（第 1708 條）：《Paris》單碟在十市場查無獨立條目，取同年三碟合集《Rendez-vous (Paris - Benares - Mexico)》(1841638049，℗ 2008 Foufino Productions) 的碟一——碟一逐軌就是本作完整九軌、曲序完全相同、九軌全有 previewUrl。previewUrl 已強制取碟一第一軌〈Mr Wyatt〉（第 472 條）。第 646 條已掃：全庫零張卡用此 id；三部曲的另兩張（Benares、Mexico）不在任何 slice 裡，Arkhangelsk 另有自己的 id 1841955603，不會撞。"
  },
  "Aaron Parks|Invisible Cinema": {
   "batch": "c161",
@@ -52851,6 +52870,622 @@
   "explicitness": "notExplicit",
   "trackCount": 11,
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/47/56/80/47568065-852b-b14f-31be-c278bc1d2b8d/mzaf_14056430815870857235.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jason Moran|Ten": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 716357777,
+  "appleTitle": "Ten",
+  "appleArtist": "Jason Moran",
+  "appleYear": "2010",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/2b/55/7c2b5536-4fde-5526-d8a0-fa5130b5e840/mzaf_16930224460176250339.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Bill Charlap & Renee Rosnes|Double Portrait": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 716100068,
+  "appleTitle": "Double Portrait",
+  "appleArtist": "Bill Charlap & Renee Rosnes",
+  "appleYear": "2010",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/99/b5/2099b5ae-2726-2322-a387-4a9251b3cba0/mzaf_10850460674534030527.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Lionel Loueke|Mwaliko": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715718390,
+  "appleTitle": "Mwaliko",
+  "appleArtist": "Lionel Loueke",
+  "appleYear": "2010",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5e/27/b9/5e27b983-75b3-2a69-72bc-e2ce91d983da/mzaf_15472731931339684149.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Stacey Kent|Raconte-moi…": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1532379152,
+  "appleTitle": "Raconte-moi... (Bonus Edition)",
+  "appleArtist": "Stacey Kent",
+  "appleYear": "2010",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3a/fa/2f3afa9a-7041-c0f6-7bd0-737aa48acecf/mzaf_16635729036777626833.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Erik Truffaz|In Between": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1841701249,
+  "appleTitle": "In Between (Edition Deluxe)",
+  "appleArtist": "Erik Truffaz",
+  "appleYear": "2010",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/b1/ef/8bb1eff6-649a-ce78-49a7-5b48055990ea/mzaf_9326006997638611816.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Avishai Cohen|Seven Seas": {
+  "batch": "c162",
+  "tried": [
+   "us:2→1"
+  ],
+  "front": "us",
+  "collectionId": 448826288,
+  "appleTitle": "Seven Seas",
+  "appleArtist": "Avishai Cohen",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/ae/fc/7e/aefc7ea5-dc1a-8bfb-d06a-afb8c2c95493/mzaf_7289084894970833706.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Cassandra Wilson|Silver Pony": {
+  "batch": "c162",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "nl:0→0",
+   "ca:0→0",
+   "tw:0→0",
+   "fi:0→0",
+   "se:0→0",
+   "no:0→0",
+   "dk:0→0",
+   "it:0→0",
+   "es:0→0",
+   "pl:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Aga Zaryan|A Book of Luminous Things": {
+  "batch": "c162",
+  "tried": [
+   "us:3→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 691999483,
+  "appleTitle": "A Book of Luminous Things",
+  "appleArtist": "Aga Zaryan",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c0/5b/52/c05b5289-7c2f-0d2c-0a06-35be36d9e1d7/mzaf_6612360113257782174.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Ambrose Akinmusire|When the Heart Emerges Glistening": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715863618,
+  "appleTitle": "When the Heart Emerges Glistening",
+  "appleArtist": "Ambrose Akinmusire",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f4/cd/49/f4cd4995-b48d-0076-3549-8f5103b5791e/mzaf_14329520268979741326.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Stacey Kent|Dreamer in Concert": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1532380298,
+  "appleTitle": "Dreamer in Concert (Bonus Edition)",
+  "appleArtist": "Stacey Kent",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 16,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/0f/dd/0b0fdd88-0910-c0be-b0ac-8272784d4aef/mzaf_5486748339492760290.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Trijntje Oosterhuis|Sundays in New York": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 712255837,
+  "appleTitle": "Sundays In New York",
+  "appleArtist": "Trijntje Oosterhuis",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 15,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c0/05/89/c00589ee-38e0-a41d-7605-83f52be8ae70/mzaf_16343159177469406616.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Götz Alsmann|In Paris.": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1641679457,
+  "appleTitle": "In Paris",
+  "appleArtist": "Götz Alsmann",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 15,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/74/df/bd/74dfbdd1-93ae-b49e-3544-68aa85f88daa/mzaf_7097506732420791658.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Willie Nelson & Wynton Marsalis|Here We Go Again: Celebrating the Genius of Ray Charles": {
+  "batch": "c162",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "nl:0→0",
+   "ca:0→0",
+   "tw:0→0",
+   "fi:0→0",
+   "se:0→0",
+   "no:0→0",
+   "dk:0→0",
+   "it:0→0",
+   "es:0→0",
+   "pl:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Joe Lovano Us Five|Bird Songs": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715473977,
+  "appleTitle": "Bird Songs",
+  "appleArtist": "Joe Lovano Us Five",
+  "appleYear": "2010",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/74/22/38/742238f4-8179-9f0e-8d59-1c8a6abc0a21/mzaf_10187386987631202992.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jukka Perko|Avara": {
+  "batch": "c162",
+  "tried": [
+   "us:3→0",
+   "gb:2→1"
+  ],
+  "front": "gb",
+  "collectionId": 714164277,
+  "appleTitle": "Avara",
+  "appleArtist": "Jukka Perko",
+  "appleYear": "2012",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e6/b7/f5/e6b7f5ff-103f-a1fc-a002-c5648c5b9e3a/mzaf_14401373392705672297.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Gare du Nord|Lilywhite Soul": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1316618570,
+  "appleTitle": "Lilywhite Soul",
+  "appleArtist": "Gare du Nord",
+  "appleYear": "2009",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/1d/eb/fc1deb8f-1318-a447-1ff2-742acfbb377e/mzaf_11370543415725253588.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "quasimode|Magic Ensemble": {
+  "batch": "c162",
+  "tried": [
+   "us:0→0",
+   "gb:2→2"
+  ],
+  "front": "gb",
+  "collectionId": 715600285,
+  "appleTitle": "Magic Ensemble",
+  "appleArtist": "quasimode",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0b/70/6d/0b706d61-8708-5303-4401-ff8530fc6536/mzaf_3011734698019428732.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Avishai Cohen|Duende": {
+  "batch": "c162",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:12→0",
+   "tw:12→0",
+   "fi:12→0",
+   "se:12→0",
+   "no:12→0",
+   "dk:12→0",
+   "it:12→0",
+   "es:12→0",
+   "pl:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Lionel Loueke|Heritage": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 716411514,
+  "appleTitle": "Heritage",
+  "appleArtist": "Lionel Loueke",
+  "appleYear": "2012",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/56/93/48/5693482e-2e04-93d8-e9ae-0489b01c9a17/mzaf_61645672065106214.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Gare du Nord|Lifesexy": {
+  "batch": "c162",
+  "tried": [
+   "us:12→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 714322256,
+  "appleTitle": "Lifesexy - Live",
+  "appleArtist": "Gare du Nord",
+  "appleYear": "2012",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/e4/42/21e442cc-1db4-b0c4-dbee-78b51938a9c1/mzaf_2462048325168667561.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Jukka Perko|Streamline Jazztet": {
+  "batch": "c162",
+  "tried": [
+   "us:0→0",
+   "gb:1→1"
+  ],
+  "front": "gb",
+  "collectionId": 714349755,
+  "appleTitle": "Streamline Jazztet",
+  "appleArtist": "Jukka Perko",
+  "appleYear": "2012",
+  "explicitness": "cleaned",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f3/3f/a9/f33fa921-fac4-6935-0352-7681c949fe72/mzaf_10051687559973703084.plus.aac.p.m4a",
+  "cleanedOnly": true,
+  "status": "ready"
+ },
+ "Norah Jones|…Little Broken Hearts": {
+  "batch": "c162",
+  "tried": [
+   "us:3→2"
+  ],
+  "front": "us",
+  "collectionId": 716742697,
+  "appleTitle": "...Little Broken Hearts",
+  "appleArtist": "Norah Jones",
+  "appleYear": "2012",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/da/bd/b1dabd3c-adc6-8416-8d1d-89e5a1b4eb44/mzaf_2912891709992196904.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Chano Domínguez|Flamenco Sketches": {
+  "batch": "c162",
+  "tried": [
+   "us:12→1"
+  ],
+  "front": "us",
+  "collectionId": 716038307,
+  "appleTitle": "Flamenco Sketches",
+  "appleArtist": "Chano Dominguez",
+  "appleYear": "2011",
+  "explicitness": "notExplicit",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/55/6a/32556aa0-1706-d1db-698c-9e61a96b2a1d/mzaf_4689119984800094644.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Ravi Coltrane|Spirit Fiction": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 715557245,
+  "appleTitle": "Spirit Fiction",
+  "appleArtist": "Ravi Coltrane",
+  "appleYear": "2012",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ba/9e/fa/ba9efa0b-df0d-4219-f8f3-6978c3bd6083/mzaf_2504208229741438362.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "quasimode|Soul Cookin'": {
+  "batch": "c162",
+  "tried": [
+   "us:0→0",
+   "gb:1→0",
+   "jp:12→0",
+   "de:1→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:0→0",
+   "tw:12→0",
+   "fi:12→0",
+   "se:12→0",
+   "no:12→0",
+   "dk:12→0",
+   "it:12→0",
+   "es:12→0",
+   "pl:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "José James|No Beginning No End": {
+  "batch": "c162",
+  "tried": [
+   "us:3→1"
+  ],
+  "front": "us",
+  "collectionId": 1446339923,
+  "appleTitle": "No Beginning No End",
+  "appleArtist": "José James",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/56/67/265667ea-2cf2-6c55-5f82-16fd0b3c52fd/mzaf_7375018217465179869.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Thelonious Monk|Paris 1969": {
+  "batch": "c162",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "nl:0→0",
+   "ca:0→0",
+   "tw:0→0",
+   "fi:0→0",
+   "se:0→0",
+   "no:0→0",
+   "dk:0→0",
+   "it:0→0",
+   "es:0→0",
+   "pl:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "Elvis Costello and The Roots|Wise Up Ghost": {
+  "batch": "c162",
+  "tried": [
+   "us:3→0",
+   "gb:3→0",
+   "jp:12→0",
+   "de:3→0",
+   "fr:12→0",
+   "nl:12→0",
+   "ca:3→0",
+   "tw:12→0",
+   "fi:12→0",
+   "se:12→0",
+   "no:12→0",
+   "dk:12→0",
+   "it:12→0",
+   "es:12→0",
+   "pl:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Aaron Neville|My True Story": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1471082338,
+  "appleTitle": "My True Story",
+  "appleArtist": "Aaron Neville",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5b/78/38/5b78384f-9801-5f4e-dc16-9fbb21ef460a/mzaf_8871207804216643843.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Joe Lovano Us Five|Cross Culture": {
+  "batch": "c162",
+  "tried": [
+   "us:2→2"
+  ],
+  "front": "us",
+  "collectionId": 715531004,
+  "appleTitle": "Cross Culture",
+  "appleArtist": "Joe Lovano Us Five",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7d/82/95/7d8295cf-337e-9fbc-946c-f051ed6e0e75/mzaf_11991820060054096347.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Terence Blanchard|Magnetic": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 716411850,
+  "appleTitle": "Magnetic",
+  "appleArtist": "Terence Blanchard",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7e/b0/1c/7eb01c2b-b80b-a00a-1349-77a9f1fa8e8a/mzaf_11714297443168255506.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Wayne Shorter Quartet|Without a Net": {
+  "batch": "c162",
+  "tried": [
+   "us:12→1"
+  ],
+  "front": "us",
+  "collectionId": 716382910,
+  "appleTitle": "Without a Net (Live)",
+  "appleArtist": "Wayne Shorter",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/99/f3/05/99f3057a-326b-0125-22d2-3b04700b2527/mzaf_15214274710547283164.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Robert Randolph & The Family Band|Lickety Split": {
+  "batch": "c162",
+  "tried": [
+   "us:0→0",
+   "gb:0→0",
+   "jp:8→0",
+   "de:0→0",
+   "fr:4→0",
+   "nl:4→0",
+   "ca:0→0",
+   "tw:4→0",
+   "fi:4→0",
+   "se:4→0",
+   "no:4→0",
+   "dk:4→0",
+   "it:4→0",
+   "es:4→0",
+   "pl:4→0"
+  ],
+  "status": "unavailable"
+ },
+ "Robert Glasper|Black Radio 2": {
+  "batch": "c162",
+  "tried": [
+   "us:12→2"
+  ],
+  "front": "us",
+  "collectionId": 1443262305,
+  "appleTitle": "Black Radio 2",
+  "appleArtist": "Robert Glasper Experiment",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9d/43/05/9d4305d9-569d-3eee-9b25-79d222fbcc35/mzaf_12927422741769865598.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Gov't Mule|Shout!": {
+  "batch": "c162",
+  "tried": [
+   "us:2→2"
+  ],
+  "front": "us",
+  "collectionId": 1444223935,
+  "appleTitle": "Shout!",
+  "appleArtist": "Gov't Mule",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 22,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/98/15/d2/9815d2fc-e558-7ac7-95a4-95733ed5d9d3/mzaf_217062963402789994.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Derrick Hodge|Live Today": {
+  "batch": "c162",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1443232861,
+  "appleTitle": "Live Today",
+  "appleArtist": "Derrick Hodge",
+  "appleYear": "2013",
+  "explicitness": "notExplicit",
+  "trackCount": 14,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/99/e1/0499e12f-1664-7161-348b-0cb34d1688e0/mzaf_4820791472019072708.plus.aac.p.m4a",
   "cleanedOnly": false,
   "status": "ready"
  }
