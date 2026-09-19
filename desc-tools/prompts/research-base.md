@@ -2,6 +2,38 @@
 
 工作目錄一律 `C:\Users\User\dip-vinyl-home\desc-restyle`。**不動任何 git repo、不動 PROJECT_MEMORY.md。**
 
+---
+
+## ⚠ 雲端 Blue Note 線（c-15x 起）的三處例外（2026-09-19 主線加註，裁定第 1748-B 條）
+
+**本節只適用於雲端工作階段跑的 Blue Note 批次（c-150 以後）。本機批次照本檔原文，不受影響。**
+
+連續三支研究代理各自回報本檔與雲端派工信牴觸，逐條查完**確實是本檔這三處對雲端不適用**，
+在此標明，**免得代理照「以正本為準」的規矩照做、反而做少了**：
+
+1. **工作目錄與 git**：雲端沒有 `C:\Users\User\...` 那個路徑，**產出直接寫進 repo**
+   （`desc-tools/batches/research/<批>-<組>.json`）。⚠ **但「不動 `PROJECT_MEMORY.md`」照舊有效**，
+   而且雲端另有 `REMOTE_RUNBOOK.md` 的禁碰清單（`seed_cards.json`／`apex_pool.json`／KV／Firestore）。
+   **代理一律不 `git commit`、不 `git push`，由主線統一提交。**
+
+2. ⚠ ⚠ **「每張最多 2 次 WebSearch、2 個來源，查到主故事就停」在雲端線作廢，改成「每張 8–12 條 `facts`、每條附完整 https `src`」。**
+   **原因**：那條規則是為「一張卡寫一段主故事」設計的；**雲端線的下游多了一個鉤子層**，
+   它要從 facts 裡挑切角、做同批反同構、還要替寫作層算字元預算——**兩條來源餵不動這三件事**。
+   ⚠ **實務上雲端線幾乎不用 WebSearch**：走 Discogs API、MusicBrainz API（**User-Agent 必須是
+   `dip-vinyl-shop/1.0 (<聯絡信箱>)`**）、廠牌官網（含 `?s=` 站內搜尋與新聞稿頁）、
+   `universal-music.co.jp` 商品頁、iTunes lookup，以及 repo 內既有的 Billboard OCR。
+
+3. **`key` 的前綴**：本檔寫「含 `desc2:` 前綴」，**但 CJK 鍵用的是 `desc4:`**
+   （`ALBUM_ONBOARDING.md` §0.5）。**一律從卡單逐字複製 `key`，不要照前綴的敘述自己拼。**
+   ⚠ 卡單路徑在雲端線是 `batches/cards/<批>-cards.json`，不是本檔寫的 `batches/wave2/`。
+
+⚠ **輸出 schema**：本檔沒有 `coverage` 欄、範本有。**兩欄並存**（`status` 與 `coverage` 同值），下游兩邊都讀得到。
+
+⚠ **本節以外的規則一律照本檔原文**——尤其獎項要分「入圍／得獎」、禁簡體字、禁千分位逗號、
+`hookCandidates` 最多 2 條、暫存檔要帶批次組別前綴。**那幾條雲端線一樣會被 QA 擋。**
+
+---
+
 ## 獎項：入圍與得獎必須逐項分開查（2026-08-08 定案）
 
 **「入圍」被寫成「得獎」是本產線最高頻的事實錯誤**——w2-084／085／086 三批連續發生，
@@ -87,6 +119,7 @@ Death 的卡抽掉 death metal 這個詞的來歷，剩下的只是「兩面各�
 （例：`chk-w2-044-1.mjs`，不要用 `chk.mjs`、`tmp.json` 這類通用名），否則會被其他代理覆寫。
 
 - 每張最多 2 次 WebSearch、2 個來源，查到主故事就停。每 3 張存檔一次，最後覆寫完整版。
+  ⚠ **雲端 Blue Note 線（c-15x 起）此條作廢，改成每張 8–12 條 facts——見本檔開頭的例外節。**
 - **key**：從 `batches/wave2/<批次>-cards.json` **逐字複製** `key` 欄（含 `desc2:` 前綴）。
   不得自行拼寫、不得帶「｜artist｜album」、不得漏前綴或只留藝人名。
 - **字元**：只用繁體中文＋拉丁字母；禁簡體字與非拉丁文字系統（西里爾、希臘、天城體、諺文、假名等）。

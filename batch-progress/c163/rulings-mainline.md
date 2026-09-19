@@ -772,3 +772,68 @@ c-165 a 指出：照我派工信的字面「這幾位在池中已有卡 → 撞�
 
 ⚠ **一筆留給本機的資料異常**：**`Terence Blanchard《Absence》` 的 Apple `releaseDate` 逐字 `1986-01-01T00:00:00Z`**——
 **比第 1601 條的年初佔位日更壞（年份整個錯 35 年）。** 該卡年份不可採 Apple 這一層。
+
+## 第 1748-B 條：**`research-base.md` 有三處對雲端線不適用，已在該檔開頭加註——「以正本為準」的規矩需要正本本身是對的**
+
+⚠ ⚠ **這條是第 1725 條的反面，同樣重要。**
+第 1725 條立的規矩是「派工信不得複述正本，代理一律以 base 檔為準」。
+**但 c-163 a 研究棒指出：`research-base.md` 本身有三處在雲端線是錯的**——
+**如果代理照那條規矩老實照做，會做少、做錯。逐條查完，它說得對。**
+
+| # | `research-base.md` 原文 | 雲端線實況 |
+|---|---|---|
+| 1 | 第 3 行「工作目錄一律 `C:\Users\User\dip-vinyl-home\desc-restyle`，**不動任何 git repo**」 | 雲端沒有那個路徑；**產出直接寫進 repo**。⚠ 「不動 `PROJECT_MEMORY.md`」照舊有效 |
+| 2 | ⚠ ⚠ 第 89 行「**每張最多 2 次 WebSearch、2 個來源，查到主故事就停**」 | **與「每張 8–12 條 facts」直接衝突** |
+| 3 | 「`key` 含 `desc2:` 前綴」、卡單在 `batches/wave2/` | **CJK 鍵是 `desc4:`**（§0.5）；雲端卡單在 `batches/cards/` |
+
+**第 2 點是實質的**，不是路徑差異。**原因**：那條規則是為「一張卡寫一段主故事」設計的；
+**雲端線的下游多了一個鉤子層**——它要從 facts 裡挑切角、做同批反同構、還要替寫作層算字元預算（第 1739-B 條）。
+**兩條來源餵不動這三件事。**
+⚠ **而且實務上雲端線幾乎不用 WebSearch**：c-163 a 這一棒 **0 次 WebSearch、197 條 facts、`src` 全 https**，
+全部走 Discogs API、MB API、廠牌官網（含 `?s=` 與新聞稿頁）、`universal-music.co.jp` 商品頁、iTunes lookup 與 repo 內的 Billboard OCR。
+
+**處置：在 `research-base.md` 開頭加一個標明適用範圍的例外節**（`## ⚠ 雲端 Blue Note 線（c-15x 起）的三處例外`），
+並在第 89 行那句後面加一行指回例外節。
+⚠ **不改本機線的規則**——那一節逐字寫明「本節只適用於雲端工作階段跑的 Blue Note 批次（c-150 以後）。本機批次照本檔原文，不受影響。」
+⚠ **例外節以外的規則照舊全部有效**（獎項分入圍／得獎、禁簡體、禁千分位逗號、`hookCandidates` 最多 2 條、暫存檔前綴）——**那幾條雲端線一樣會被 QA 擋。**
+
+**本條立為通則**：**「以 base 檔為準」只有在 base 檔跟得上實務時才安全。
+代理回報 base 檔與實務衝突時，主線要去改 base 檔（加註適用範圍），不是在派工信裡再寫一次例外**——
+**在派工信裡寫例外就回到第 1725 條那個坑了。**
+
+---
+
+## 第 1749-B 條：**c-163 a 三張無串流全部命中，`N→0` 與 `0→0` 各自的成因都查清楚了**
+
+| 卡 | `collectionId` | 探測層形狀 | 成因 |
+|---|---|---|---|
+| `José James《While You Were Sleeping》` | `1442224969`（12 軌） | `0→0` | — |
+| `Bobby Hutcherson, David Sanborn & Joey DeFrancesco《Enjoy the View》` | `1444043015`（7 軌） | `0→0` | ⚠ **店面的 artist 欄用短形，feat. 子句被塞進盤名欄**（`Enjoy the View (feat. Billy Hart)`）——**三位並列的長掛名因此搜不到** |
+| `Charles Lloyd《Wild Man Dance》` | `1443196436`（6 軌） | **`2→0`** | ⚠ **盤名的括號後綴**（`Wild Man Dance (Live At Jazztopad Festival, Wroclaw, Poland)`）**撞上第 1610 條第二層的長度差** |
+
+**三筆都經第 1433 條核對（id 未被任何其他卡使用），三市場（us／gb／jp）回同一個 id 與同樣軌數，無幽靈條目。已寫入 `previews.json`。**
+
+⚠ **`Wild Man Dance` 是第 1741-B 條那個形狀的教科書案例**：**`N→0` ＝碟在架上、只是標題比對沒過**。
+⚠ **`Enjoy the View` 則補上第三種成因**（前兩種是「市場沒貨」與「標題比對沒過」）：
+**掛名形狀不對——店面把並列聯名拆成「短掛名＋盤名裡的 feat. 子句」，用長掛名去搜就搜不到。**
+**往後遇到三位以上並列聯名判 `0→0` 的，先用「第一位藝人的裸名」重搜一次。**
+
+---
+
+## 第 1750-B 條（交接用的實測資料，c-163 a 提供）
+
+**(一) ⚠ `bluenote.com/?s=` 站內搜尋這條路對歐陸與日本藝人極有效。**
+c-163 a 實測 19 個路徑：**藝人頁 200 的 9 位**（`tim-hagans`／`annie-lennox`／`jason-moran`／`takuya-kuroda`／
+`ambrose-akinmusire`／`jose-james`／`bobby-hutcherson`／`vintage-trouble`／`charles-lloyd`），
+**404 的 10 個**（`fabian-almazan`／`julia-kadel`／`julia-kadel-trio`／`gotz-alsmann`／`quasimode`／
+`chihiro-yamanaka`／`jazztronik`／`the-spheres`／`david-sanborn`／`joey-defrancesco`）。
+⚠ ⚠ **但 59 條 bluenote 來源裡「大半來自新聞稿而非藝人頁」**——`Almazan` 藝人頁 404、**兩篇新聞稿 200**。
+**第 1747-B(二) 條再加一句：藝人頁 404 不等於這個來源沒東西，站內搜尋與新聞稿頁要各試一次。**
+
+**(二) ⚠ `universal-music.co.jp` 的 slug 不是「名在前姓在後」的羅馬字。**
+**`黒田卓也` 的 slug 是 `kuroda-takuya`，`takuya-kuroda` 回 404。**
+⚠ **`THE SPHÈRES` 沒有自己的藝人頁，商品頁掛在 `chihiro-yamanaka/products/uccq-1050/` 之下（200）。**
+**日本線查不到藝人頁時，改用「同碟其他掛名的藝人頁 + 目錄號」。**
+
+**(三) 一筆紙本的引用限制**：`Tim Hagans` 那條出自 `BB-1995-07-01` p47 廣告的 **COMING SOON 欄**，
+**是預告不是上榜**——**不得寫成「當年進榜」**。研究稿 notes 已標明。
