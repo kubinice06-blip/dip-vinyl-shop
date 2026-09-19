@@ -2906,3 +2906,25 @@ key 與卡單逐字同序、src 全為完整 https、`hookCandidates` 全 ≤2�
   策展層的四項依據逐項覆核未被推翻（含兩版 12 軌軌長逐秒相同）。卡的 notes 已留「英版可能 2004 年就在英國上市」，可逆。
 - **`Kitty Hoff & Forêt-Noire` 的鼓手無法定案**（德文維基 `Beat Lee Burns`／MB `Florian Achatzy`，Discogs 無 credits 可裁決）
   ——**卡的 notes 已寫明「正文不要點名鼓手」。**
+
+## 第 1827-B 條（c-171 探測收尾）：**封面 14/20、串流 14/20——稽核補批的覆蓋率最低，而且有結構原因**
+
+探測層判 unavailable 7 張，**只救回 1 張**。**這是五批裡回撈成效最差的一次**（前五批 31 筆救回 20 筆，65%）。
+
+**救回的那一張是第 (3) 種成因**（`artistName` 是當地語言形）：
+**`Jackie McLean Meets Junko Onishi《Hat Trick》`**——**Apple jp 的 `artistName` 逐字是 `ジャッキー・マクリーン`**，
+盤名逐字是 `Hat Trick / Jackie McLean Meets Junko Onishi`，9 軌與 MB 對得上。
+**用羅馬字掛名搜永遠搜不到它，要靠盤名搜。**
+
+**6 張走固定無來源狀態**：`Tommy Smith《Step By Step》`(1989)、`Ron Carter` 三張
+（`Jazz, My Romance`(1994)／`Brandenburg Concerto`(1996)／`Stardust`(2001)）、
+`Kevin Eubanks《Spiritalk 2: Revelations》`(1995)、`Ruben Hein《Live》`(2011)。
+
+⚠ **這個數字本身就是 c-171 這批的性質證明**：
+**這 20 張是「MB 的 `label-info` 沒填或掛錯層級」才被廠牌軸列舉漏掉的**——
+**同一批碟在 Apple 與 CAA 也同樣是低能見度發行。** 資料缺失不是各家獨立發生的，**它們高度相關。**
+**→ 後續若再開稽核補批，覆蓋率要照 c-171 的數字預期（七成上下），不要照同年代的正規批。**
+
+⚠ **`Ruben Hein《Live》` 的無來源另有一層可救**（第 1824-B 條）：
+**釘的 RG `d00a707f` 無 barcode、無 label-info**，而同碟的另一個 RG `47b79830` **有 barcode `5099994101225`**
+——**本機若要再試，可改用那個 RG 跑 UPC。** 已寫進該卡的 `noSourceReason`。
