@@ -1,7 +1,7 @@
 # Blue Note 1985 後線・列舉層缺口稽核（**藝人軸**重掃）
 
 > **已掃 541／541 位藝人**（藝人＝MB artist MBID，由本線 1231 個已知 release-group 精確反解，非字串比對）。
-> 生成：2026-09-19　狀態：**進行中：541 位藝人已全數列舉完畢；候選 7,184 筆的 Blue Note 家族判定執行中（已判 2580 筆）**
+> 生成：2026-09-19　狀態：**進行中：541 位藝人全數掃完、7,184 筆候選的 MB 廠牌判定全數跑完；1,025 筆「MB 查不到 Blue Note 廠牌」的 Discogs 覆核執行中（已覆核 30 筆）**
 
 > ⚠ **「筆數對了」不等於「定稿了」（第 1803-B 條）——工作區當下版本才是交件版。**
 
@@ -24,17 +24,18 @@
 
 | verdict | 筆 |
 |---|---:|
-| `gap` | 1 |
+| `gap` | 2 |
 | `already-covered` | 0 |
 | `not-blue-note` | 0 |
 | `unclear` | 0 |
-| **合計** | **1** |
+| **合計** | **2** |
 
 ### `gap` 的「列舉檔碰不到」成因分類
 
 | 成因 | 筆 |
 |---|---:|
 | `label-info` 空 | 1 |
+| MB 掛成母公司 `Capitol Records`＋另一筆 `label-info` 空 | 1 |
 
 ---
 
@@ -54,13 +55,31 @@
   - 四處比對結果：`enum/blue-note.json` 的 `Joel Ross` 只有四筆、無 `KingMaker`；全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 亦 0 筆。
 - **判定**：**`gap`**　**真缺口**：Blue Note 正廠家族發行（Discogs 廠牌鏈＋目錄號＋官網藝人頁三重佐證），四處皆無。
 
+### 2. Kendrick Scott Oracle《A Wall Becomes a Bridge》(2019) — **`gap`**
+
+- **RG MBID**：`c8f8ec1c-1899-4495-a6a1-57a555df47c8`
+- **artist MBID**：`71d3da26-aafb-4e29-9159-a4ae9cf4ae9f`（Group）
+- **為什麼列舉檔碰不到它**：MB 掛成母公司 `Capitol Records`＋另一筆 `label-info` 空
+- **實查**：⚠ **派工信第三節把這一張列為「已排除的一筆」，理由是「它在 `desc-tools/batches/cards/c166-cards.json` 裡」——實查不成立。** 全部 `c*/slice.json`、全部 `c*-cards.json`、`enum/blue-note.json`、`seed_cards.json` 逐列比對，**沒有任何一筆記錄的 `album` 等於這張碟**；`c166-cards.json` 裡出現的那一次，是**別張卡的 `label` 敘述文字裡引用到它**（逐字「The anticipated follow-up to A Wall Becomes A Bridge, Scott’s much-lauded 2019 release with his band Oracle」），不是一筆卡。`c169/prop-b.json` 那一次同樣是 `curatorWhy` 的引文。**這是第 611 條「盤名撞字串不等於撞卡」的反向形：字串命中被誤讀成卡片存在。**
+
+根因也與 `KingMaker` 不同：MB 這個 RG 有**兩筆** release——`eef85a5d` 的 `label-info` 掛的是 **`Capitol Records`（MB label `abea2d3e`，母公司，不是 Blue Note imprint）**、`ac837ebb`（2019-04-05、US）的 `label-info` 是**空陣列**。**兩筆都不掛 Blue Note 家族實體，所以 label 軸一樣碰不到。**
+- **佐證**：
+  - MB release-group：https://musicbrainz.org/release-group/c8f8ec1c-1899-4495-a6a1-57a555df47c8（`first-release-date` 2019-04-05、`primary-type` Album、`secondary-types` 空）
+  - MB release `eef85a5d-7efc-4baf-bf61-d604cce54215`——`label-info` 逐字 `Capitol Records`／catno `null`，barcode `602577492068`（UMG 段）
+  - MB release `ac837ebb-d3ca-4cf3-a9b4-ccc43bd5de9a`（2019-04-05、US）——`label-info` 逐字 `[]`
+  - **Discogs**（`api.discogs.com/database/search`，`artist=Kendrick Scott Oracle`＋`release_title=A Wall Becomes A Bridge`）**回 1 筆**：US 2019 CD Album、`label` 逐字 `["Blue Note"]`、`catno` 逐字 `774920 6`
+  - 四處比對結果：`enum/blue-note.json`、全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json` 皆 **0 筆**（以正規化盤名逐列比對，不是 grep）
+  - 旁證：c-169 b 第 2208 條與 c-170 第 2356(四) 條都把這一張列為「給主線的回頭查」，**本層確認它們是對的、派工信的排除是錯的**
+- **判定**：**`gap`**　**真缺口**，且與 `KingMaker` 是**不同成因**（母公司掛名＋空 label-info，而非單純空 label-info）。
+
 ---
 
 ## 四、掃描進度明細
 
 - **藝人軸列舉：541／541 位藝人全部掃完**（`release-group?artist=<id>&type=album`，含分頁）。
-- 藝人軸共看到 **8,937 張 1985 年後的 Album**（已扣掉 5,616 張 secondary-type 被排除的、863 張無日期的）。
+- 藝人軸共看到 **8,937 張 1985 年後的 Album**（另扣掉 5,616 張 secondary-type 被排除、863 張無日期）。
 - 其中 **1,128 張以 `rgMbid` 命中四處既有資料、176 張以（藝人, 盤名）命中**，**其餘 7,184 個相異 release-group 進入 Blue Note 家族判定**。
-- **Blue Note 家族判定進度：2580／7,184**。
-- 第 1 筆（`Joel Ross《KingMaker》`）是派工信指名的已知種子，佐證已補齊。
+- **MB 廠牌判定 7,184／7,184 全數跑完**，結果：`other-label-only` 6,159／`all-label-info-empty` 609／`partial-label-info-empty` 416／**`bn-label-present` 0**。
+- ⚠ **`bn-label-present` 掛零是本層最重要的整體結論**：**沒有任何一個「MB 上掛著 Blue Note 家族廠牌」的 release-group 被列舉檔漏掉。**換句話說，`enum/blue-note.json` 的 label 軸對「MB 有填 Blue Note 廠牌」的碟是**完整的**，**它唯一的盲區就是 MB 那一端沒把 Blue Note 填上去**（空 `label-info`，或掛成母公司）。
+- **Discogs 覆核進度：30／1,025**。
 
