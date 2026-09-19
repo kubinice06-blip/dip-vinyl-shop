@@ -564,3 +564,456 @@ seed 6 列（《Move Your Hand》1970、《Think!》1968、《Drives》1970、�
 1. **`Charles Pasi《Zebra》` 的 `year: 2020` 覆核**（第 1904 條；若能取得法國實體盤的確切街頭日，以那個為準）。
 2. **`Tony Allen《There Is No End》` 的 `['jazz','hiphop']` 覆核**（第 1915 條（3）；是否要讓他的兩張卡同時進世界音樂抽牌池）。
 3. **`Joe Chambers《Mirrors》` 的年份**：③ 官網逐字 `his Blue Note debut, Mirrors, came out in 1998`，**而 c-155 a 的卡記 1999**——不是本組的卡，順手記在這裡。
+
+---
+
+# c-165 **b 組**裁定（號段 **1930–1948**）
+
+**a 組用 1900–1922，本段從 1930 起，只 append、未改動 a 組任何一行**（第 1743-B 條（四））。
+
+---
+
+## 第 1930 條（交件總表）：**22 筆全收、退 0 筆，退貨率 0%；`chk-prop b` 標記 0**
+
+| 項 | 數 |
+|---|---:|
+| 派下 | **22** |
+| 收 | **22** |
+| 退 | **0**（退貨率 **0%**） |
+| 年份改判 | **0** |
+| 新掛名字串 | **5** |
+| 沿用池中／卡單既有字串 | **13 筆卡、13 個字串位**（見第 1932 條） |
+| 掛名判裸名（不採 slice／MB 的長形） | **4**（三張《Trios》＋《Where Are We》） |
+| 掛名判裸團名（去掉 feat. 子句） | **1**（《Succession》） |
+| `chk-prop b` 標記 | **0**（22 張、18 位；跨批撞卡 0） |
+
+**為什麼退 0 筆是合理的**：本組 22 筆全部是 2021–2023 年的碟，其中 20 張是當代新錄音、2 張是 (甲) 的庫藏首次發行。
+**(乙)（庫藏再發）與 (戊)（四條再發系列）這兩種退件理由在這個年份格裡結構性地不會出現**——
+它們擋的是「把 1950–70 年代的母帶重新壓片」，而本組沒有任何一張是那個形狀。
+⚠ **(丙) 的訊號亮了 5 次、(戊) 的訊號亮了 3 次，逐筆查完全部不成立**（第 1934／1935 條）。
+
+---
+
+## 第 1931 條（退表）：**本組退 0 筆，退表為空**
+
+**逐筆確認過沒有任何一筆該退**：22 筆的 MB `label-info` 或 Discogs 零售條目廠牌鏈都有 `Blue Note [713c4a95]`（第 1794 條的 imprint 前置閘 22／22 過閘）；
+沒有一筆的 Discogs `format` 欄帶 `Reissue`（**在本卡釘定的那一筆 release 上**）；
+沒有一筆的載體只有影像；沒有一筆與池中既有卡指向同一批錄音。
+
+---
+
+## 第 1932 條：**掛名總表——新字串 5、沿用 13、裸名裁定 4、裸團名裁定 1、新造分裂 0**
+
+### （一）新字串 5（seed 17,248 列與卡單／各批 prop 共 15,720 列**兩層都實掃過，皆 0 命中**）
+
+| 掛名 | MB 實體 | 第 307 條反查 |
+|---|---|---|
+| **`Julian Lage`** | Person `c116b504-ce24-4264-96dc-d10a7458236f` | 兩層 0 列；本組兩張領班卡共用此字串 |
+| **`James Francies`** | Person `604f0692-4d31-479b-a93a-e4c75be21f81` | 兩層 0 列；⚠ seed 的 `James —《Laid》(1993)` 是英國同名樂團，折鍵後不同鍵，不併 |
+| **`Johnathan Blake`** | Person `11b75b19-1265-4ee6-85a3-b68a7dfa9b9b` | 兩層 0 列；本組兩張領班卡共用此字串 |
+| **`Melissa Aldana`** | Person `faa21ccf-f0d3-4a84-95d4-ae596aa40744` | 兩層 0 列；⚠ 她是 c-165 a `ARTEMIS` 的團員，但那張判團名形，字串不重疊 |
+| **`Ethan Iverson`** | Person `bd6637bd-38bf-491e-8036-3044c139aec1` | 兩層 0 列 |
+
+### （二）沿用既有字串 13 筆卡
+
+`Dave McMurray`（c-164 卡單《Music Is Life》）／`Charles Lloyd`（**seed 5 ＋ c-163《Wild Man Dance》＋ c-164《8: Kindred Spirits》＝ 7 筆**，本組三張《Trios》沿用）／
+`Immanuel Wilkins`（c-165 a《Omega》）／`Donald Byrd`（**seed 28 ＋ 卡單 15**）／`Trombone Shorty`（c-164《Parking Lot Symphony》）／
+`Gerald Clayton`（c-165 a《Happening》）／`Ronnie Foster`（**seed 5**）／`Nduduzo Makhathini`（c-165 a《Modes of Communication》）／
+`Bill Frisell`（**⚠ seed 0 列、卡單 c-164《Harmony》＋ c-165 a《Valentine》**）／`Elvin Jones`（**seed 10 ＋ 卡單 8**）／
+`Kyoto Jazz Sextet`（卡單 c-163《Mission》＋ c-164《Unity》）／`山中千尋`（**卡單 c-163 ×3 ＋ c-164 ×3 ＋ c-165 a《Rosa》＝ 7 筆**）／`Joshua Redman`（**seed 2**）。
+
+### （三）新造分裂 **0**
+**18 個掛名字串逐一對 seed 折鍵反查（`&`→`and` 後剝非字母數字），無一與池中既有字串折出不同鍵。**
+⚠ **唯一的非 ASCII 掛名是 `山中千尋`（漢字），`chk-prop` 的四道都不擋漢字**（盲點六），**但它與卡單層七張同字串，是沿用不是新造。**
+
+---
+
+## 第 1933 條（**地雷 1，本組最大的題目**）：**三張《Trios》一律判裸名 `Charles Lloyd`**
+
+**slice 給的三種掛名形互不相同**，這正是問題本身：
+
+| 碟 | `slice.json`／MB artist-credit 逐字 |
+|---|---|
+| 《Trios: Chapel》 | `Charles Lloyd feat. Bill Frisell & Thomas Morgan` |
+| 《Trios: Ocean》 | `Charles Lloyd, Gerald Clayton, Anthony Wilson` |
+| 《Trios: Sacred Thread》 | `Charles Lloyd, Zakir Hussain, Julian Lage` |
+
+**實查四邊，三邊給裸名**：
+
+| 來源 | 逐字 |
+|---|---|
+| **② Discogs（三張各 2 筆零售條目 ＋ 3LP 盒 23712383 ＋ 日版三片裝 28076530）** | **`artists` 欄全部是單一實體 `Charles Lloyd`，一筆 feat. 子句都沒有** |
+| **④ Apple us／gb（1623224880／1639930633／1651929174）** | **`artistName` 全部逐字 `Charles Lloyd`**；feat. 一律被放進 `collectionName` 的括號裡 |
+| ⚠ **MB** | RG 給三種長形；**但《Sacred Thread》的 CD release `770bac99` 的 artist-credit 逐字只有 `Charles Lloyd`——同一個 RG 的 release 層與 RG 層自己打架** |
+| ⚠ **Apple jp** | 三張逐字都是 `チャールス・ロイド・クァルテット`（**片假名，而且寫成「四重奏」，與三重奏的事實不符**），不採 |
+
+**→ 判裸名 `Charles Lloyd`，三張一致。四層理由**：
+
+1. **第 1746 條（四）(a)：三邊計票二比一**，而且 MB 這一票自己在內部就不一致（上表第三列）。
+2. **第 307 條**：**池中 `Charles Lloyd` 裸名已有 7 筆**（seed 5 ＋ c-163 ＋ c-164），另有 `Charles Lloyd & the Marvels Featuring Lucinda Williams`(seed) 與 `Charles Lloyd & The Marvels`(c-163、c-165 a) 兩種團名形。
+   **三張各留一個長形，這位藝人在池中就會有六種字串、其中三種各只掛一張卡。**
+3. **保護三位成員的既有字串**：`Bill Frisell`（c-164＋c-165 a ＋本組《Four》）、`Gerald Clayton`（c-165 a ＋本組《Bells on Sand》）、`Julian Lage`（本組兩張領班卡）——
+   **長形會讓四位藝人同時分裂。**
+4. **先例完全同形**：第 1746 條（四）的 `Willie Nelson & Wynton Marsalis featuring Norah Jones` 與 `Trijntje Oosterhuis feat. The Clayton–Hamilton Jazz Orchestra` 都判裸名，理由一模一樣。
+
+⚠ **另一個選項（三張各用一個長掛名）明確評估過並否決**：三種長形彼此不同形、無法收斂成一個團名，
+**它不是「建一個團名形」，是「建三個一次性字串」**——第 1703 條的團名形分界（池中有沒有同系列前作）在這裡根本套不上，因為那三個字串各自只有一張碟。
+
+⚠ **代價寫明**：成員名全部寫進三張卡的 `why`／`risk` 與 `queryAlias`；三張盤名共用 `Trios: ` 前綴，
+`dedup-crossbatch` 第三道若日後報「同掛名盤名詞元包含」是**本裁定刻意造成的預期輸出**（與第 1768 條的 `Black Radio`／`Black Radio 2` 同形），不必處理。
+⚠ **本次實跑 `chk-prop b` 該道對三張《Trios》** **0 命中**（`chapel`／`ocean`／`sacred`／`thread` 彼此不含）。
+
+**可逆性**：改的是卡單的 `artist` 欄字串，不動卡池結構，屬「可逆」，依裁定權下放第 2 條當場定。
+
+---
+
+## 第 1934 條（**地雷 2**）：**兩張現場庫藏盤都判 (甲) 收，逐字確認「從未發行過」**
+
+### （一）`Donald Byrd《Live: Cookin' with Blue Note at Montreux》2022`
+
+**三層都查了，三層一致**：
+- **MB 全庫反查** `artist:"Donald Byrd" AND releasegroup:Montreux` → **只回一個 RG**（`e674d134`，frd `2022-12-09`）。
+- **② Discogs 兩次搜尋**（`Donald Byrd Montreux` 29 筆、`Cookin' With Blue Note At Montreux` 21 筆）→
+  **Byrd 名下只有 2022 年那五筆**；**1974 年那一批逐字是 Bobbi Humphrey／Marlena Shaw／Ronnie Foster／Bobby Hutcherson 四位，沒有 Byrd。**
+- **③ `bluenote.com/artist/donald-byrd/`（200）逐字**：`Donald Byrd's dynamic 1973 live recording Live: Cookin' with Blue Note at Montreux gets its first-ever official release today on what would have been the legendary trumpeter's 90th birthday.`
+
+**→ (甲) 成立，不是 (丁)：六軌沒有一軌先前出過。** 曲名層與 seed 的 `Donald Byrd —《Black Byrd》(1973)` 撞一處，
+**但那是同一年的錄音室版、不是同一次錄音**，屬撞陳列不屬 (丁)。
+
+⚠ ⚠ **第 1736-B 條的但書本組唯一一次要跑（盤名含 `Blue Note`），跑完是「不可疑」**：
+該條要看的三者——**實體零售條目廠牌欄（Discogs 五筆第一格全部 `Blue Note`）、店面 ℗ 欄（Apple 三市場逐字 `Blue Note Records; ℗ 2013 UMG Recordings, Inc.`）、發行方官網（200 且逐字報導本碟）**——**三者一致指向 Blue Note 本廠**，
+與《Live at Blue Note Tokyo》那種「三者一致指向他廠」正好相反。
+**而且本張的 `Blue Note` 不是場地名**（companies 逐字 `Recorded At: Montreux Jazz Festival`），是 1974 年那個系列的名字。
+
+⚠ **(戊) 不成立**：Discogs 五筆的 `series` 欄逐字都是 `Cookin' With Blue Note At Montreux`，**但它不在四條再發系列名單上、也不是 `Music Matters`**；
+依第 1737-B 條看系列掛在哪一筆——**五筆全部是 2022 年的首發、`format` 欄全部沒有 `Reissue`。**
+
+### （二）`Elvin Jones《Revival (Live at Pookie's Pub)》2022`
+
+- **MB 全庫反查** `artist:"Elvin Jones" AND (releasegroup:Pookie OR releasegroup:Revival)` → **只回一個 RG**（`872880e5`）。
+- **② Discogs** `Elvin Jones Pookie` 4 筆 → 三筆是 2022 年的本碟，第四筆逐字是 `Various —《Instrumentalists - Almost Forgotten》(1983, Columbia)`，無關。
+- **③ `bluenote.com/artist/elvin-jones/`（200）逐字**：`a thrilling previously unissued live recording of Elvin Jones' quartet`，
+  並逐字說它 `captures the legendary drummer's emergence as a bandleader at a little-known club in New York City where he had a weekly residency after leaving John Coltrane's band in 1966`。
+
+⚠ ⚠ **派工信要求的掃池做完了，不撞**：`Elvin Jones` seed 10 列（含《Live at the Lighthouse》1973）＋卡單 8 筆，
+**十八個盤名折鍵後沒有一個與 `Revival (Live at Pookie's Pub)` 同鍵。**
+**c-163 a 退掉的《Live at the Lighthouse Vol. 2》是 (乙)（母體 1973 年就發過、正篇已在池中），本卡是 1967 年從未發行的錄音，兩者不同形。**
+
+⚠ ⚠ **一個容易混的同藝人條目**：**Discogs `25315255`（2022 日版 `UCCU-45066/7`，`format` 逐字 `CD, Album, Reissue`、`series` 逐字 `Elvin Jones On Blue Note` ＋ `The Blue Note Re-Issue Series`）
+是《The Prime Element》(1976) 的 CD 化，不是本卡**（曲目完全不同，而且《The Prime Element》池中已有卡）。**那一筆才是 (乙)＋(戊) 的形狀。**
+
+---
+
+## 第 1935 條：**三道前置閘的實測——imprint 22／22 過閘；(丙) 亮 5 次、(戊) 亮 3 次，全部不成立**
+
+### （一）imprint 前置閘（第 1794 條）：**22／22 過閘**
+判準照第 1784 條收斂出來的動作——「Discogs 零售條目的廠牌鏈裡有沒有 `Blue Note`」。
+⚠ **第 1817 條的日本線陷阱逐張查過**：兩張日本線（《Succession》《Today Is Another Day》）的 MB `label-info` 逐字都是 **`Blue Note [713c4a95]`**，**不是 `Nihon Blue Note [76903afe]`**。
+
+### （二）(丙) 的訊號亮 5 次，逐筆查完全部不成立
+
+| # | 卡 | 亮燈的那一格 | 查完是什麼 |
+|---|---|---|---|
+| 1–3 | **三張《Trios》** | Discogs ℗© 兩欄逐字都是 **`Charles Lloyd` 本人** | notes 同句逐字接 `under exclusive license to UMG Recordings Inc.`——第 1753 條第 4 點／第 1770 條 (a)；**c-163 a 第 1794 條第 3 列的《Wild Man Dance》是同一位藝人、同一形狀** |
+| 4 | **`Nduduzo Makhathini《In the Spirit of Ntu》`** | ⚠ **三格同時亮**：Apple ℗ 逐字 `℗ 2022 Universal Music (Pty) Ltd South Africa`；MB `b350ca81` 的 label 逐字 **`Blue Note Africa [ad2e5c11]`**；Discogs 無損檔條目廠牌欄逐字只有 `Universal Music` | 兩筆實體零售條目第一格逐字都是 `Blue Note`、另兩筆 MB release 逐字 `Blue Note [713c4a95]`。**`Blue Note Africa` 是 Blue Note 自己的地區 imprint（與第 1817 條要擋的 `Nihon Blue Note` 是另一家公司，不同）**；南非 Universal 是第 1770 條 (c) 的地區分工。**與 c-163 b `Marcus Miller《Afrodeezia》` 南非版同形** |
+| 5 | **`Joshua Redman《Where Are We》`** | Apple 三市場 ℗ 逐字 `℗ 2023 Creative Control Corp., under exclusive license to UMG Recordings, Inc.` | 藝人自己那一側的公司 ＋ 獨家授權，第 1753 條第 4 點；**同一句最前面逐字就是 `Blue Note Records`** |
+
+⚠ **另有兩筆「地區發行體系」的訊號，歸在 (c) 不另計**：《Succession》的 ℗ 逐字 `Extra Freedom Ltd.`（沖野修也自己的公司，Discogs notes 逐字給了 `www.extra-freedom.co.jp`）＋ `UNIVERSAL MUSIC LLC`；
+《Today Is Another Day》的 ℗© 逐字 `Universal Music LLC`。**兩張的 Discogs 廠牌欄逐字都是 `Blue Note`，與第 1736-B 條的對照組 `山中千尋《Prima del Tramonto》` 同形，照那筆先例過閘。**
+
+### （三）(戊) 的訊號亮 3 次，逐筆查完全部不成立（**三次都是第 1737-B 條的形狀**）
+
+| 卡 | `series` 欄逐字 | 掛在哪一筆 | 判 |
+|---|---|---|---|
+| **`Johnathan Blake《Homeward Bound》`** | **`Blue Note Tone Poet Series`**（Discogs 35773909，`format` 逐字帶 `Reissue`） | **2025 年的黑膠復刻**；2021 年首發 CD 的 `series` 逐字空陣列、`format` 無 `Reissue` | **收** |
+| **`Trombone Shorty《Lifted》`** | `Tipitina's Record Club`（Discogs 23170415） | 紐奧良俱樂部的**黑膠訂閱會員盤**，不在四條名單上；首發 CD 的 `series` 逐字空陣列 | **收** |
+| **`Donald Byrd《Live: Cookin'…》`** | `Cookin' With Blue Note At Montreux`（五筆都有） | **五筆全是 2022 年的首發**，`format` 全無 `Reissue` | **收** |
+
+⚠ ⚠ **第 1743-B 條（一）在本組被反向印證一次**：**`Johnathan Blake《Homeward Bound》` 的 `slice.json` `reissueSeries` 欄逐字是空陣列，但 Discogs 上真的有 Tone Poet 復刻。**
+**`reissueSeries` 沒亮不等於沒有系列，一定要自己去 Discogs 看 `series` 欄。**
+
+---
+
+## 第 1936 條（**地雷 3**）：**`Ronnie Foster《Reboot》` 判新錄音，收——③ 官網逐字就是判據**
+
+③ `bluenote.com/artist/ronnie-foster/`（200）開頭逐字：
+`The 2022 return of Ronnie Foster to Blue Note Records for his first new album in 36 years, Reboot, is an event of synergistic quintessence, completeness, and cool that brings the organ great back home to the label where he released his debut album Two Headed Freap in 1972.`
+
+**`format`／`series` 兩欄逐字確認**：Discogs 五筆的 `format` 欄逐字 `Vinyl, LP, Album, Stereo`／`Vinyl, LP, Album, Limited Edition, Stereo`／`CD, Album`，
+**五筆全部沒有 `Reissue`**；**`series` 欄逐字全部空陣列**；`slice.json` 的 `reissueSeries` 逐字空陣列。
+**錄音地逐字 `Recorded and Mixed by Josh Connolly at Capitol Studios, Los Angeles, CA`（Discogs 23906579 notes）——2022 年新錄。**
+⚠ **序數依第 1732 條（三）處理**：`his first new album in 36 years` 是間隔敘述，不是廠牌目錄序數，一層即可。
+
+---
+
+## 第 1937 條（**地雷 4**）：**`Kyoto Jazz Sextet Feat.Takeo Moriyama` 判裸團名 `Kyoto Jazz Sextet`，feat. 子句不留**
+
+**(a) 第 307 條（最硬的一條）**：**`Kyoto Jazz Sextet` 這個字串卡單層已有兩張（c-163《Mission》2015、c-164《Unity》2017）。**
+**(b) `森山威男` 的池中狀態實掃過，兩種文字系統都在**：
+**`森山威男` 在 `seed_cards.json` 有 1 列（`《East Plants》(1983)`，⚠ `r[8]` 逐字 `pearl`，是王牌卡）、另有 `森山威男カルテット —《My Dear》(1982)`；卡單層另有 `森山威男 —《Hush-A-Bye》(1978)`（c-51 prop）。羅馬字形 `Takeo Moriyama` 在兩層共 32,968 列裡 0 命中。**
+**→ 留 feat. 子句的兩條路都製造分裂**：寫羅馬字會與 §0.5 與池中的 `森山威男` 分裂；寫漢字會造出 `Kyoto Jazz Sextet Feat.森山威男` 這種混文字系統的第三個字串（`chk-prop` 盲點六）。
+**(c) 三邊的「藝人欄」都給裸團名**：
+- **③ `universal-music.co.jp/kyoto-jazz-sextet/products/uccj-2206/`（200）的 H1 逐字 `Kyoto Jazz Sextet`**；
+  同頁掛名行逐字並列 `KYOTO JAZZ SEXTET feat. 森山威男` 與拉丁對照 `Kyoto Jazz Sextet featuring Takeo Moriyama`。
+- **② Discogs 2024 LP 條目 31387427 的 artists 欄逐字 `Kyoto Jazz Sextet`**（三筆 2022 CD 條目逐字是切壞的 `Kyoto Jazz SextetFeat.` ＋ `Takeo Moriyama` 兩實體，**那是建檔雜訊不是盤面掛名**）。
+- **④ Apple gb `artistName` 逐字 `Kyoto Jazz Sextet`**、jp 逐字 `KYOTO JAZZ SEXTET`（全大寫，折鍵後同鍵）；feat. 被放進 `collectionName`（逐字 `Succession (feat. Takeo Moriyama)`）。
+
+⚠ **`Feat.` 後面沒有空格是 slice 的原樣，一個字都沒照抄進掛名。**
+⚠ **`森山威男` 與 `Takeo Moriyama` 兩形都寫進 `queryAlias`。**
+⚠ **盤名保留拉丁形 `Succession`**（第 1743-B 條（三）：官網是用來解決 MB／Discogs 歧異的，不是用來改寫池中既有體例的；UMJ 的 `SUCCESSION[CD]` 是商品頁排版）。
+
+---
+
+## 第 1938 條：**`山中千尋` 與盤名體例——照主線第 1672 條與第 1743-B 條（三），一字未改**
+
+**掛名取漢字 `山中千尋`**：Apple jp `artistName` 逐字 `山中千尋`；③ UMJ `universal-music.co.jp/chihiro-yamanaka/products/uccj-2215/`（200）的掛名行逐字並列 `山中千尋` 與 `Chihiro Yamanaka`；
+MB／Discogs／Apple gb 逐字都是 `Chihiro Yamanaka`（寫進 `queryAlias`，§0.5 明文要求串流與 Last.fm 查詢用這個拼法）。
+**卡單層已有七張同字串**（c-163 ×3、c-164 ×3、c-165 a《Rosa》），本卡是第八張。
+
+**盤名保留拉丁形 `Today Is Another Day`**：UMJ 的盤名逐字帶 `[通常盤] [SHM-CD]` 規格尾綴，那是商品頁排版；MB／Discogs／Apple 三邊逐字同形，取三邊同形的那一種。
+
+---
+
+## 第 1939 條：**年份覆核——22／22 三層一致，改判 0 筆；唯一亮燈的一筆是 `Donald Byrd`**
+
+**三層對照全部做完**（MB `first-release-date` × Discogs `released`／`year` × Apple `releaseDate` ＋ ℗ 年）：
+
+- **21 筆三層一致到日**（多數還與 ℗ 年同年）。
+- ⚠ ⚠ **`Donald Byrd《Live: Cookin'…》` 是唯一的例外，兩層對一層取 2022**：
+  **MB frd 逐字 `2022-12-09`、Discogs 五筆 `year` 逐字全部 `2022`**；
+  **Apple us／gb／jp 的 `releaseDate` 逐字 `2013-01-01T00:00:00Z`（第 1601 條的年初佔位日形狀）、℗ 年逐字 2013。**
+  **℗ 2013 的來歷查清楚了**：母帶 2013 年（Byrd 過世那年）才從 Blue Note 庫房被找出來並登錄權利，**Discogs 上 2013 年沒有任何條目**。
+  **第 1791 條的三個偵測訊號只中第三個，訊號不齊，不改判。**
+
+### ⚠ **第 1721／1742-B 條的觀察名單：派工信說本組 0 筆，實測成立**
+**逐張跑過三條件（`formats` 全為 `Digital Media` ＋ `countries` 只有 `XW` ＋ `catno` 全空）**：
+
+| 卡 | 中幾條 | 結論 |
+|---|---|---|
+| `Julian Lage《View With a Room》` | **2／3**（catno 四筆全 null、但有一筆 XE 實體 CD、countries 含 `DZ`／`XE`） | 不中 |
+| `Joshua Redman《Where Are We》` | **2／3**（catno 四筆全 null、countries 全 `XW`／null、**但有一筆 XW 實體 CD**） | 不中 |
+| `Donald Byrd《Live: Cookin'…》` | **1／3**（countries 只有 `XW`，但有實體 CD 且帶 catno） | 不中 |
+| 其餘 19 筆 | 0／3 | 不中 |
+
+**→ 三條件全中者 0 筆，派工信的預測成立。**
+⚠ **但兩筆 2／3 的卡另外用第 1791 條（二）覆核過**（「Discogs 在 MB 那個年份上完全沒有條目」）：
+**《View With a Room》2022 年有五筆實體零售條目、《Where Are We》2023 年有六筆**——**明確不成立，不改判。**
+⚠ **`Dave McMurray` 與 `Immanuel Wilkins`／`Nduduzo Makhathini` 三位被第 1721／1742-B 條點名過，但點的是別批的別張碟**，本組這幾張三條件一個都不中。
+
+---
+
+## 第 1940 條：**撞陳列——盤名撞 4 處（全在一張卡上）、軌名撞 18 處／14 張；⚠ 軌名撞 apex 王牌 2 處**
+
+**掃法**：取每張 RG 轄下軌數最多的那一筆 release 的全部軌名 ＋ 盤名，折鍵後對 `seed_cards.json` 的 **17,248 列**（其中 **917 列帶 apex 旗標，在 `r[8]`**）逐一比對。
+
+### （一）⚠ ⚠ ⚠ 盤名撞卡 4 處，**全部集中在 `Bill Frisell《Four》`，而且 `chk-prop` 四道一道都不會亮**（掛名不同、折鍵後不同鍵）
+
+| 撞到 | 年 | 等級 |
+|---|---|---|
+| `Blues Traveler —《Four》` | 1994 | seed，非 apex |
+| `Bloc Party —《Four》` | 2012 | seed，非 apex |
+| `One Direction —《Four》` | 2014 | seed，非 apex |
+| ⚠ **`Hampton Hawes —《Four!》`** | 1958 | seed，非 apex（**帶驚嘆號，折鍵後同鍵，而且同為爵士卡**） |
+
+**四張全部非 apex、零軌重疊、非同碟**；⚠ **Hampton Hawes 那張是同曲風，陳列與簡介層一定要寫清楚是哪一張**（第 1699／1747 條的形狀）。
+**盤名獨立掃 apex：22 張全部 0 處。**
+
+### （二）軌名撞卡 18 處／14 張，**其中 2 處撞 apex 王牌**
+
+| 本組卡 | 軌 | 撞到 | 等級 |
+|---|---|---|---|
+| ⚠ ⚠ **`Ethan Iverson《Every Note Is True》`** | 〈Blue〉 | **`Joni Mitchell —《Blue》(1971)`** | **apex `hall`**（另撞 `The Jesus Lizard —《Blue》(1998)`） |
+| ⚠ ⚠ **`Kyoto Jazz Sextet《Succession》`** | 〈Watarase〉 | **`板橋文夫 —《Watarase》(1982)`** | **apex `pearl`**（⚠ **本軌正是翻奏該曲，而且 `森山威男` 也在那條日本爵士脈絡裡——他自己的《East Plants》(1983) 同為 `pearl`**） |
+| `Dave McMurray《Grateful Deadication》` | 〈Fire On The Mountain〉 | `Highwoods String Band —《Fire on the Mountain》(1973)` | seed |
+| `James Francies《Purest Form》` | 〈My Favorite Things〉 | `John Coltrane —《My Favorite Things》(1961)` | seed |
+| `Johnathan Blake《Homeward Bound》` | 〈Steppin' Out〉 | `Harold Vick —《Steppin' Out!》(1963)` | seed |
+| `Julian Lage《View With a Room》` | 〈Echo〉 | `Tom Petty and the Heartbreakers —《Echo》(1999)`、`Dave Burrell —《Echo》(1969)` | seed ×2 |
+| `Immanuel Wilkins《The 7th Hand》` | 〈Witness〉 | `Katy Perry —《Witness》(2017)` | seed |
+| ⚠ **`Donald Byrd《Live: Cookin'…》`** | 〈Black Byrd〉 | **`Donald Byrd —《Black Byrd》(1973)`（同一位藝人）** | seed |
+| `Trombone Shorty《Lifted》` | 〈Lie to Me〉 | `Jonny Lang —《Lie to Me》(1997)` | seed |
+| `Melissa Aldana《12 Stars》` | 〈Intuition〉 | `Linx —《Intuition》(1981)` | seed |
+| `Gerald Clayton《Bells on Sand》` | 〈Rip〉 | `Actress —《R.I.P.》(2012)` | seed（點被折掉後同鍵） |
+| `Ronnie Foster《Reboot》` | 〈Swingin'〉 | `Kenny Burrell —《Swingin'》(1980)` | seed |
+| `Bill Frisell《Four》` | 〈Holiday〉／〈Always〉 | `The Magnetic Fields —《Holiday》(1994)`／`BIGBANG —《ALWAYS》(2007)` | seed ×2 |
+| `Elvin Jones《Revival…》` | 〈My Funny Valentine〉／〈Oleo〉 | `Miles Davis —《My Funny Valentine》(1965)`／`Grant Green —《Oleo》(1980)` | seed ×2（**兩張都是爵士卡**） |
+| `Joshua Redman《Where Are We》` | 〈By the Time I Get to Phoenix〉／〈Where Are You?〉 | `Injury Reserve —《By the Time I Get to Phoenix》(2021)`／`Frank Sinatra —《Where Are You?》(1957)` | seed ×2 |
+
+**零撞陳列的 8 張**：《Squint》《Trios: Chapel》《Trios: Ocean》《Trios: Sacred Thread》《In the Spirit of Ntu》《Today Is Another Day》《Passage》（＋盤名層 21 張）。
+
+⚠ ⚠ **一組「同一次音樂節、兩張卡」的交叉，下游必須分清楚**：
+**seed 的 `Ronnie Foster —《Live at Montreux》(1974)` 是 1974 年 `Cookin' With Blue Note At Montreux` 系列真的發出來的四張之一，
+而本組的 `Donald Byrd —《Live: Cookin' with Blue Note at Montreux》(2022)` 正是同一屆（1973 年 7 月）音樂節裡當年沒發的那一場；
+同時 `Ronnie Foster` 本組另有《Reboot》(2022)。** **三張卡的簡介都會提到蒙特勒。**
+
+⚠ **另一組交叉**：**`Gerald Clayton《Bells on Sand》` 的 Discogs extraartists 逐字 `Saxophone: Charles Lloyd`，而 Clayton 又是《Trios: Ocean》的三重奏成員**——**兩個方向的客座都不進 `artist` 欄。**
+
+---
+
+## 第 1941 條：**曲風取捨——`['jazz']` 18、`['jazz','soul']` 3、`['jazz','world']` 1**
+
+| 組合 | 張 | 卡 |
+|---|---:|---|
+| `['jazz']` | **18** | 其餘全部 |
+| `['jazz','soul']` | **3** | `Donald Byrd《Live: Cookin'…》`／`Trombone Shorty《Lifted》`／`Ronnie Foster《Reboot》` |
+| `['jazz','world']` | **1** | `Nduduzo Makhathini《In the Spirit of Ntu》` |
+
+**三個 `soul` 的依據**：
+- **Donald Byrd**：Discogs 五筆 `style` 欄逐字全部 `Jazz-Funk`、一筆 `genre` 逐字含 `Funk / Soul`；**先例就在同一位藝人身上**（seed 的《Black Byrd》《Places and Spaces》逐字都是 `["jazz","soul"]`）。
+- **Ronnie Foster**：Discogs 23963204 `genre` 逐字 `Jazz`＋`Funk / Soul`、`style` 逐字 `Jazz-Funk`；**seed 的 Ronnie Foster 五張逐字全部 `["jazz","soul"]`**，取 `["jazz"]` 反而製造同藝人曲風分裂。
+- **Trombone Shorty**：**Discogs 六筆零售條目的 `genre` 欄逐字全部是 `Jazz` ＋ `Funk / Soul`**（不是單筆雜訊），`style` 逐字 `Funk`／`Soul`／`Jazz-Funk`／`Contemporary R&B`。
+  ⚠ **與 c-164 卡單《Parking Lot Symphony》的 `["jazz"]` 不同，本棒不回頭改那張**——曲風欄逐張判，本卡的證據明顯更強。
+
+**`world` 的依據**：Discogs 三筆的 `genre` 欄逐字全部 `Jazz` ＋ `Folk, World, & Country`、`style` 逐字 `African`；**與 c-165 a《Modes of Communication》的 `["jazz","world"]` 一致。**
+
+⚠ **`world` 考慮過但沒取的一張**：**`Charles Lloyd《Trios: Sacred Thread》`**——Zakir Hussain 的塔布拉鼓是結構性的、曲名帶 Saraswati 與 Rumi，
+**但 MB 與 Discogs 兩邊都沒有給任何世界音樂標籤**，依「取到有依據為止」不自造（比照 c-163 b `Marcus Miller《Afrodeezia》` 的寫法）。
+⚠ `soul` 考慮過但沒取的一張：`Dave McMurray《Grateful Deadication》`（只有歐版一筆的 `style` 有 `Soul-Jazz`，兩筆的 `genre` 欄都只給 `Jazz`，且 c-164《Music Is Life》逐字是 `["jazz"]`）。
+
+⚠ **被剔掉的標籤**：`contemporary jazz`（第 1572 條不跟，本組 7 張有）、`post-bop`／`free jazz`／`spiritual jazz`／`avant-garde jazz`／`smooth jazz`／`vocal jazz`／`instrumental jazz`／`fusion`／`modal`（都不在十類名單）。
+
+---
+
+## 第 1942 條：**`chk-prop` 七個盲點的逐字元核——四道都不亮，但有五張要人眼看**
+
+`node batch-progress/c165/chk-prop.mjs b` → **22 張、18 位｜標記 0｜跨批撞卡 0**。
+**派工信的地雷 6 逐字元核過了**：
+
+| 字串 | 核什麼 | 結果 |
+|---|---|---|
+| `Live: Cookin' with Blue Note at Montreux` | 撇號碼位 | **ASCII U+0027**（逐字元掃 MB RG title，全欄無 >U+007E 字元） |
+| `Revival (Live at Pookie's Pub)` | 撇號碼位 | **ASCII U+0027**，括號亦 ASCII |
+| `Trios: Chapel`／`Trios: Ocean`／`Trios: Sacred Thread` | 冒號碼位 | **ASCII U+003A** |
+| `Kyoto Jazz Sextet` | `Feat.` 有沒有被照抄 | **沒有**（feat. 子句整段不進 `artist` 欄） |
+| `12 Stars` | 數字開頭 | **`chk-prop` 四道沒有一道針對數字開頭**；折鍵 `12stars`，對 seed 0 命中 |
+
+**需要人眼看、機器不會亮的五處**（盲點二／六）：
+1. **盲點二（大小寫）**：`View With a Room`（MB 小寫 `a` vs Apple／Discogs 大寫 `A`）、`Bells on Sand`（MB 小寫 `on`）、`In the Spirit of Ntu`（MB 小寫 `the`／`of`）、`Where Are We`（Apple 逐字全小寫 `where are we`）——**四張一律取 MB 形，寫進卡池的字元序列以 `album` 欄為準。**
+2. **盲點六（跨文字系統）**：`山中千尋` 是漢字，`chk-prop` 不擋；**折鍵後與卡單層七張同鍵，是沿用不是新造。**
+3. **盤名撞卡**：`Bill Frisell《Four》` 撞四張（第 1940 條（一））——**`chk-prop` 的任何一道都不會報。**
+
+⚠ **一個「只報不擋」的已知良性輸出**：`共用目錄號 CA90028`——那是 Discogs notes 裡 Blue Note 好萊塢地址 `1750 North Vine Street, Hollywood, CA 90028` 被當成目錄號抓出來的，
+**c-162 與 c-166 也各有一筆同樣的行**，不是真的共用目錄號。
+
+---
+
+## 第 1943 條：**六層證據的實測命中——② 22／22、④ 22／22、③ 20／22、①⑤⑥ 見下**
+
+| 層 | 命中 | 備註 |
+|---|---:|---|
+| **② Discogs** | **22／22** | 每張至少兩筆零售條目，`format`／`series`／廠牌鏈／companies 四欄逐字取到 |
+| **④ Apple** | **22／22** | ⚠ **兩張 `us` storefront 0 命中**（《Succession》《Today Is Another Day》，日本線常態），**jp／gb 有貨**；`Dave McMurray` 的 us 兩度回 403（代理端限流，不是店面查無） |
+| **③ 廠牌官網** | **20／22**（見第 1944 條） | 日本線兩張改查 UMJ，**兩個 UMJ 路徑都回 200** |
+| **① 紙本** | **本組不查** | 派工信明文：Billboard OCR 只覆蓋到 2015，本組全部 2021–2023，結構性查不到。**依第 1728 條（2），「紙本 0」不寫成缺失。** |
+| **⑥ 維基** | 1（Donald Byrd 那張的旁證） | 只用來交叉確認「首次發行」，不當主要依據 |
+| **⑤ AllMusic** | 0 | 未使用 |
+
+---
+
+## 第 1944 條：**③ `bluenote.com` 的實際回應碼——18 個路徑實測，15 個 200、2 個 404、1 個 301**
+
+⚠ **派工信要求「實測後回報實況」（第 1738-B 條第 2 點），實測結果如下**（用不跟隨轉址的 `curl -o /dev/null -w '%{http_code}'`，依第 1731-B 條）：
+
+| 路徑 | 碼 |
+|---|---|
+| `julian-lage`／`dave-mcmurray`／`james-francies`／`johnathan-blake`／`charles-lloyd`／`immanuel-wilkins`／`donald-byrd`／`trombone-shorty`／`melissa-aldana`／`ethan-iverson`／`gerald-clayton`／`ronnie-foster`／`nduduzo-makhathini`／`bill-frisell`／`elvin-jones` | **200**（15 個） |
+| `kyoto-jazz-sextet` | **404** |
+| `chihiro-yamanaka`（另測 `yamanaka-chihiro` 與漢字路徑，亦 404） | **404** |
+| ⚠ **`joshua-redman`** | **301 → `bluenote.com/artist/joshua-redman-2/`（200）** |
+
+⚠ ⚠ **`joshua-redman` 的 301 是本線第一次記錄到的形狀**：**後批查這位藝人要直接寫 `-2` 那個路徑**；
+依第 1731-B 條，`curl -L` 會自動跟隨、看起來「還能用」，**但那是轉址撐著的，不是正確網址。**
+
+**日本線兩張改查 UMJ，三個路徑全部 200**：
+`universal-music.co.jp/kyoto-jazz-sextet/products/uccj-2206/`、
+`universal-music.co.jp/chihiro-yamanaka/products/uccj-2215/`、
+`universal-music.co.jp/chihiro-yamanaka/products/uccj-9241/`。
+
+---
+
+## 第 1945 條：**版本／軌數釘定——22 張裡 5 張有兩種以上軌數或載體，逐張釘一版**
+
+| 卡 | 情形 | 釘哪一版 |
+|---|---|---|
+| `Immanuel Wilkins《The 7th Hand》` | CD／數位 7 軌；歐版 LP 兩面 4＋3 軌；**測試壓片只有 3 軌**（`sides C and D of the full album`） | **7 軌** |
+| `Elvin Jones《Revival…》` | US CD 是兩片 5＋4 軌；數位單一媒體 9 軌；3LP 三片 | **9 軌** |
+| `山中千尋《Today Is Another Day》` | 通常盤 SHM-CD 10 軌；限定盤 UHQCD 10 軌 **＋ DVD-Video 4 軌**；2023 LP 10 軌 | **10 軌** |
+| `Kyoto Jazz Sextet《Succession》` | CD 7 軌；Universal Music Store 限定版 **CD 7 軌 ＋ DVD 現場 6 軌** | **7 軌** |
+| 三張《Trios》 | 各自 5／4／7 軌；**另有 3LP 盒 `B003531401` 與日版三片裝 `UCCQ-1178/80` 把三張合裝** | **各釘自己那一版；合裝不另開卡、固定試聽不要配到盒裝的 id** |
+
+⚠ **另有兩筆「同名但不是本卡」的店面條目，探測鏈要擋開**：
+**`Johnathan Blake《Passage》` 的 Apple 先行單曲 `Passage - Single`（1693521721，1 軌，2023-07-07）**；
+**`Julian Lage《View With a Room》` 同市場另回 `Nels Cline & Julian Lage —《ROOM》`（1850026648，2014，Mack Avenue）。**
+
+⚠ **一張的店面標題長度差超過探測鏈門檻**：**`Kyoto Jazz Sextet《Succession》` 的 Apple `collectionName` 逐字 `Succession (feat. Takeo Moriyama)`，與卡上的 `Succession` 差 25 字，超過 `titleOk` 的 8 字門檻**——
+**這會是第 1741-B 條的 `N→0` 形狀（碟在架上、標題比對沒過），本機拿到 `apple-candidates.md` 時直接人工覆核即可。**
+
+---
+
+## 第 1946 條：**本信（派工信）與正本／既有裁定牴觸之處——0 條**
+
+**逐條核過，本次沒有發現派工信與 `ALBUM_ONBOARDING.md`／`REMOTE_RUNBOOK.md`／`CLAUDE.md` 或既有裁定牴觸的地方。**
+派工信標「預期」的三處都實測了，**三處都與實況相符或更寬**：
+
+1. **「第 1721／1742-B 條的觀察名單本組 0 筆」** → **實測成立**（第 1939 條）。
+2. **「`slice.json` 的 `note` 欄是切片器的推測」** → **本組唯一一筆 `note`（《Succession》的「僅 JP 盤」）覆核後成立**，但要加一句：
+   **MB 與 Discogs 確實只有日本條目，Apple 的 `us` 也 0 命中——但 `gb` 有貨，數位層是全球上架的。**「僅 JP 盤」對實體成立、對數位不成立。
+3. **「③ 的 404 名單不是常數」** → **實測到一個派工信沒預告的形狀：`joshua-redman` 回 301**（第 1944 條）。
+
+⚠ **一處派工信寫得比正本嚴、本棒照正本做**：派工信地雷 2 說「若部分軌先前出過就改判 (丁)」。
+**兩張庫藏盤的軌名確實都與池中既有卡撞到**（Byrd 的〈Black Byrd〉、Elvin Jones 的〈My Funny Valentine〉〈Oleo〉〈Keiko's Birthday March〉），
+**但那是「同一首曲子的不同次錄音」，不是「同一批母帶先前發過」**。
+**(丁) 判的是錄音的重疊，不是曲名的重疊**——照正本的六句判準走，兩張都判 (甲) 收，撞到的部分寫進 `risk`。
+
+---
+
+## 第 1947 條（**操作事故與處置，必讀**）：**雲端 scratchpad 目錄與 c-166 的代理共用，中間檔被覆寫一次**
+
+**事發經過**：本棒把分批寫好的提案存在 `<scratchpad>/parts/p1.json`～`p4.json`，每五筆合併一次寫進 `prop-b.json`（續跑安全的做法）。
+**跑到第三個檢查點時發現 `prop-b.json` 的內容變成 c-166 a 組的 15 筆 ＋ 本組的 7 筆**——
+實查 `<scratchpad>/parts/` 的檔案時間戳，**`p1.json`／`p2.json`／`p3.json` 三個檔在 04:26／04:31／04:35 被改寫，內容逐字是 c-166 a 組的碟**。
+**根因：雲端 scratchpad 路徑對同一個工作階段底下的多支代理是共用的，而 `p1.json` 這種通用檔名必然相撞。**
+
+**處置**：本棒把三個檔的內容從自己的上下文逐字重建，改存到 **`<scratchpad>/c165b-parts/c165b-p1.json`～`c165b-p4.json`**（帶批號與組別的檔名），
+重新合併後 **逐筆驗過 22 筆的 `g` 欄全部是 `b`**，`chk-prop b` 重跑 **標記 0、跨批撞卡 0**。
+⚠ **c-166 的檔案一個字都沒動**（`batch-progress/c166/prop-a.json` 15 筆、`prop-b.json` 6 筆維持原狀）。
+
+**本條立為往後並行派工的體例（建議主線採納）**：
+1. **中間檔的檔名一律帶批號與組別**（`c165b-p1.json`，不要用 `p1.json`／`part1.json` 這種通用名）。
+2. **合併寫檔前要加一道自檢**：`if (all.length !== N) throw` ＋ `if (all.some(x => x.g !== '<本組>')) throw`。
+   **本次就是靠「`g` 欄不是 `b`」這個特徵才一眼認出來的**——若兩組的 `g` 欄剛好相同，這個事故會靜靜通過。
+3. ⚠ **`CLAUDE.md` 已經為 `PROJECT_MEMORY.md`、第 1743-B 條（四）已經為 `rulings.md` 訂了「不要整檔覆寫」的規矩，
+   但那兩條管的是 repo 內的共用檔；本條是同一個毛病在 scratchpad 上的版本**，而 scratchpad 沒有 git 可以救。
+
+---
+
+## 第 1948 條（收尾）：**交件數字、本棒改動的檔案、號段**
+
+**改動的檔案只有兩個**：
+- **`batch-progress/c165/prop-b.json`**（新建，22 筆，170 KB 級）
+- **`batch-progress/c165/rulings.md`**（**只在檔尾 append 第 1930–1948 條，a 組的 1900–1922 段一行未動**）
+
+**沒有動**：`seed_cards.json`（唯讀掃描）／`PROJECT_MEMORY.md`／KV／Firestore／`prop-a.json`／`batch-progress/c166/` 底下任何檔案。
+**沒有 commit、沒有 push、沒有 `git add`。**
+
+**用掉的號段：1930–1948（19 條）。1923–1929 留空給 a 組或主線。**
+
+**給下游的四句**：
+1. **三張《Trios》全部掛裸名 `Charles Lloyd`**，成員名在 `why`／`risk` 裡，簡介務必寫明各是哪一組三重奏。
+2. **`Bill Frisell《Four》` 的盤名撞四張卡**（含同曲風的 `Hampton Hawes —《Four!》`），陳列要迴避。
+3. **兩張現場庫藏盤（Byrd 1973 蒙特勒、Elvin Jones 1967 Pookie's Pub）的「錄音年」與「發行年」差 49 與 55 年**，簡介兩個數字不要混用。
+4. **`Kyoto Jazz Sextet《Succession》` 的固定試聽多半會是第 1741-B 條的 `N→0`**（Apple 標題帶 feat. 尾巴），本機直接人工覆核候選。
+
+---
+
+## 第 1947-A 條（補記，**給主線／本機**）：**中途檢查點 `ca78a81` 收進的 `c165/prop-b.json` 是被覆寫過的版本，不可使用**
+
+第 1947 條那次覆寫剛好被一個中途檢查點提交進去了。實查兩個提交：
+
+| 提交 | `c165/prop-b.json` | 內容 |
+|---|---:|---|
+| **`ca78a81`**（「c165 策展 b 15/22」） | 15 筆 | ⚠ ⚠ **`g` 欄有 `a` 也有 `b`**——**前 5 筆逐字是 c-166 a 組的碟**（Arturo O'Farrill《Legacies》／Chris Botti《Vol. 1》／Dave McMurray《Grateful Deadication 2》／Kendrick Scott…《Corridors》／Walter Smith III《return to casual》），後 10 筆才是本組的 |
+| **`a4f72fd`**（「c165 策展 b 22 筆」，目前 HEAD） | **22 筆** | **全部 `g: "b"`，逐筆對得上 slice 的 b 組 22 筆，`chk-prop b` 標記 0** |
+
+**→ 依第 1726 條「下游動作只能吃驗收版、不得吃檢查點」，`ca78a81` 那一版直接忽略即可；HEAD 這一版是正確的。**
+⚠ **`c166/prop-a.json` 與 `c166/prop-b.json` 本棒一個字都沒動**，那 15 筆在 c-166 自己的檔案裡是完整的，沒有遺失。
+⚠ **一眼認出來的特徵是 `g` 欄**：**往後並行批次的檢查點提交前，跑一次 `node -e "require('./batch-progress/<批>/prop-<組>.json').every(x=>x.g==='<組>')"` 就能擋住這一類。**
