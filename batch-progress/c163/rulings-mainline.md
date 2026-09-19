@@ -3438,3 +3438,59 @@ artist-credit `Kevin Eubanks`）。**主線已直查該 RG 端點確認。**
 **`Parker's Mood` 的美版是 2005-01-25 才上市**
 （`enum/billboard-bn-2005-ocr.txt.gz`，Billboard 2005-01-29 p33 逐字 `Blue Note 7243 8 66740 RELEASE DATE: Jan. 25`）
 ——**Discogs 把美版標 2004 是盤面 ℗© 年。正文不得寫「2004 年美日歐同步發行」。**
+
+## 第 1844-B 條（⚠ 更正第 1842-B 條的理由——結論對，理由錯，而且錯的方向會害人）
+
+**第 1842-B 條把「MB search 回 0」歸因成「索引假陰性、browse 才拿得到」。錯的。**
+**真正的原因：`title:` 不是 release-group 檢索面上的欄位。**
+
+**主線實跑（同一支 curl，只換欄名）**：
+| 查詢 | 回 |
+|---|---|
+| `release-group?query=artist:"Kevin Eubanks" AND **title**:"Spirit Talk"` | **count 0** |
+| `release-group?query=artist:"Kevin Eubanks" AND **releasegroup**:"Spirit Talk"` | **count 1、score 100、`b2295ebc…`** |
+
+**代理另拿兩張確定存在且池中已收的碟做對照實驗，`title:` 一律回 0、`releasegroup:` 回 1**
+——**與碟無關，是查詢語法。**
+⚠ ⚠ **MB 的 Lucene 解析器對不存在的欄名不報錯，直接回零結果**——**這是會靜默吃掉任何查詢的錯。**
+
+### 規則要寫成這樣，不能寫成「MB search 不可信」
+
+1. **`release-group` 檢索面的盤名欄是 `releasegroup:`；`release` 檢索面的是 `release:`。`title:` 兩邊都不是欄位。**
+2. ⚠ **不要推論成「一律改用 browse」**——**browse 需要先有 artist MBID，
+   在「只知道藝人名與盤名」的場合仍然只有 search 走得通。**
+3. ⚠ **也不與 Apple `/search` 同型**：**Apple 是地區店面覆蓋（換店面就有），MB 是查詢語法（換欄名就有）。**
+   **補救方式不同，不可併成一條。**（第 1842-B 條把兩者併在一起，那一句作廢。）
+4. **主線已 grep 過全部 rulings：用 `title:` 查 MB 的只有第 1842-B 條這一處**（即本條更正的對象）。
+   ⚠ **但 c-104 起有十餘批的 rulings 以「MB 查無」為由下過判定，雲端這一輪沒有能力逐筆重跑**
+   ——**列為本機待辦：凡以「MB search 回 0」為由判查無的，用 `releasegroup:` 重跑一次。**
+
+### 另一個獨立的坑：無空格拼法不回 0，回的是續作
+
+**MB 的 title 是 `Spirit Talk`（有空格），續作是 `Spiritalk 2: Revelations`（無空格）。**
+**用無空格查不會回 0——會回續作的 RG `d783536c`。**
+⚠ **比回 0 更陰險：會把 1995 年的續作當成 1993 年的第一集。** c-171 的第 2708 條踩的正是這一個。
+
+## 第 1845-B 條（c-172 策展全批驗收）：**3 張收 3 退 0，本線最後一批**
+
+`chk-prop a` 3 張 3 位標記 0、第五道 0 處；`dedup-crossbatch c172` 三項全 0；第 315 條 3＋0＝3 ✔；MBID 3／3 對齊。
+**卡單已建：3 張全 pinned、人工 0、重複鍵 0。**
+**掛名 `Kevin Eubanks` 沿用**（MB `artist?query` 逐字 count 1、無同名實體）；
+**收進來之後 Eubanks 的 Blue Note 線 1992／1993／1994／1995 四張連號不斷。**
+
+### ⚠ 年份 1993，但 MB 的 frd 是錄音首日不是發行日
+
+**MB frd `1993-04-19`；Discogs notes 逐字 `Recorded direct to 2-track at Sound On Sound Studios, New York City on April 19-23, 1993`**
+——**與 frd 第一天一字不差**（第 484 條形狀，**這次出在 MB 端**）。
+**紙本兩層把發行釘在 1993 年 10 月**：**Cash Box 1993-10-16 樂評** ＋ **Billboard 1993-10-23 Top Jazz Albums 新進第 24 名**。
+**→ 正文不得寫「1993 年 4 月發行」。** 榜位只寫觀察（OCR 只到 11-20，不得寫死最高名次）。
+
+### 三條給下游的
+
+1. ⚠ **與已收的續作極易混**：**三種拼法**（MB `Spiritalk 2: Revelations`／Discogs `Spiritalk 2 - Revelations`／
+   **Apple `Spirit Talk II - Revelations`**）、**Apple 同一次查詢兩張都回**、**兩張 `trackCount` 都是 9**。
+   **辨別一律靠年份與目錄號，不可靠盤名或軌數。**
+2. **`direct to 2-track`（九軌一次過不疊錄）值得寫進正文，但不得寫成現場盤**；
+   **曲風 `['jazz']`，正文不得寫成 smooth jazz**（荷版 style 有 `Smooth Jazz` 但不跟）。
+3. **CAA 逐字 404、RG 層 0 圖，封面待本機補**（Discogs 原壓 12110512／8053308）；
+   **`lookup?upc=077778928621` 回 `resultCount: 1`，是本批三張裡唯一 UPC 反查命中的。**
