@@ -42,5 +42,27 @@
   "triageN": null,
   "triageGenre": null,
   "g": "a"
+ },
+ {
+  "artist": "Kevin Eubanks",
+  "album": "Spirit Talk",
+  "year": 1993,
+  "rgMbid": "b2295ebc-2cf2-4022-9c77-c5200c990ecd",
+  "country": "",
+  "format": "",
+  "live": null,
+  "inPool": false,
+  "poolString": "",
+  "note": "【第六批補遺・第三列，2026-09-19 補入】⚠ 主線一度判「這張碟不在 MB 裡、得走 §1 人工」——那是錯的。MB 有 RG b2295ebc-2cf2-4022-9c77-c5200c990ecd（title 逐字「Spirit Talk」有空格、frd 1993-04-19、primary-type Album），主線已直查確認。判錯的成因是 MB 的 search 端點對 artist:\"Kevin Eubanks\" AND title:\"Spirit Talk\" 回 0 筆，而 browse 拿得到——與 Apple 的 /search 同型：search 回 0 沒有證據力。廠牌軸漏掉它的真正原因是 MB 唯一那筆 release 的 label-info 逐字「Capitol Records」（掛母公司，第 2487 條型）。Discogs 四筆實體的 labels 第一格全部逐字 Blue Note（CDP 0777 7 89286 2 1 US／NL、TOCJ-5868 JP、C 101579 卡帶），9 軌 53:08。catno／countries／nReleases 一律留空，策展層自補。",
+  "period": "1985+",
+  "genre": "jazz",
+  "countries": [],
+  "formats": [],
+  "catno": [],
+  "nReleases": null,
+  "reissueSeries": null,
+  "triageN": null,
+  "triageGenre": null,
+  "g": "a"
  }
 ]

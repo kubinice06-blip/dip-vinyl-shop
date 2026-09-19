@@ -3383,3 +3383,58 @@ b 組十張撞到四張（初稿的第二句都在複述 hook）。
 ⚠ **注意池中那兩張 `George Lewis` 是長號手（AACM）那位，與這位紐奧良單簧管手同名不同人。**
 
 **→ 已建 `batch-progress/c172/slice.json`（兩張，第六與第七種各一），策展層已派出。**
+
+## 第 1842-B 條（⚠ 作廢第 1841-B 條的「第八種形狀」——那是我自己的假陰性）
+
+**第 1841-B 條寫「`Kevin Eubanks《Spirit Talk》` 碟根本不在 MB 裡、得走 §1 人工」——錯的。**
+**MB 有 RG `b2295ebc-2cf2-4022-9c77-c5200c990ecd`**（title 逐字 `Spirit Talk`、frd `1993-04-19`、primary-type `Album`、
+artist-credit `Kevin Eubanks`）。**主線已直查該 RG 端點確認。**
+
+### ⚠ 成因比「拼法錯」更值得記：**MB 的 `search` 端點對這張碟本身就是假陰性**
+
+**我跑的是 `query=artist:"Kevin Eubanks" AND title:"Spirit Talk"`（空格正確），回的是 `count: 0`。**
+**而 `browse`（`release-group?artist=<id>&type=album`）拿得到。**
+**→ 與第 1753-B／1775-B 條的 Apple `/search` 完全同型：`search` 回 0 對「存不存在」沒有證據力。**
+**判「MB 沒有這張碟」一律要用 browse 或直接打 RG 端點，不可用 search。**
+（c-171 a 的第 2708 條另有一個拼法問題——它記成無空格的《Spiritalk》——**但那不是我這次判錯的原因。**）
+
+**廠牌軸漏掉它的真正原因是第五種形狀**：**MB 唯一那筆 release 的 `label-info` 逐字 `Capitol Records`**（掛母公司）。
+**Discogs 四筆實體的 `labels` 第一格全部逐字 `Blue Note`**（`CDP 0777 7 89286 2 1` US／NL、`TOCJ-5868` JP、`C 101579` 卡帶）。
+
+**→ 沒有第八種形狀，只有第五、六、七種。它有 rgMbid，已加進 `c172/slice.json` 當第三列，不必走 §1 人工。**
+⚠ **我在聊天裡也把這一筆報成「需要店主決定的 §1 人工」——那句話同樣作廢，已更正。**
+
+## 第 1843-B 條（c-172 策展驗收＋三條方法論，兩條補進既有裁定）
+
+`chk-prop a` 2 張 2 位標記 0、撞 apex 0 處；`dedup-crossbatch c172` 三項全 0；第 315 條 2＋0＝2 ✔。
+**掛名**：`A prima vista` 取 **`Stefano Di Battista Quintet`（MB `88131738`，`type` 逐字 `Group`）**，
+**與池中三張所掛的 `f6c8ec20`（`Person`）是兩個實體 → 第 964 條並存不收攏**；
+`Parker's Mood` 沿用 `Stefano Di Battista`（就是同一實體 `f6c8ec20`，第 307 條正例）。
+
+### ⚠ ⚠ 補進第 1824-B 條：**打 `releases/<id>` 之前要先讀 `type` 欄**
+
+**Discogs `search` 的結果混著 `type: "master"`。**
+**實例**：barcode `724349794528` 回的 `2029279` 是 **master**，
+**而 `releases/2029279` 回的是完全不同的一張碟**（`John Abercrombie / Jan Hammer / Jack DeJohnette《Timeless》`，ECM 1047）**，一樣 200。**
+⚠ **盤名、掛名、廠牌、catno、barcode 在 search 摘要上全部正確，第 2693 條的三關全過——只有 `type` 欄看得出來。**
+**→ 先讀 `type`，只對 `release` 打 `releases/<id>`；master 改打 `/masters/<id>/versions`。**
+**這一支同時列為第 1800-B 條的第三種掃描**（本批兩張各靠它補齊 3／9 個版本）。
+
+### 我的派工信三處事實錯誤
+
+1. **「c-169 b 的《Round About Roma》」——在 c-171 b**；**且池中 Di Battista 是 3 張不是 2 張**
+   （c-157《Stefano di Battista》2000／c-160《Trouble Shootin'》2007／c-171《Round About Roma》2002，**seed 0 張**）。
+   **主線已實掃確認。這是我第四次給錯池中數字**（第 1738-B／1805-B／1831-B／本條）——**從此派工信一律不給池中數字，只給掃描範圍。**
+2. **「碟根本不在 MB 裡」** —— 見第 1842-B 條。
+3. **「`itunes.apple.com/search` 有時 403」本棒沒有重現**（四個店面全 200）——**403 是間歇的，不是常態。**
+
+### 兩條給後續補掃的
+
+- ⚠ **`primary-type` 為 null 的 RG 要單獨掃一次**——**它不出現在任何 `type=album` browse，也不被任何以 primary-type 分流的統計算到。**
+- ⚠ **`year == null` 只有兩列不等於只漏兩張**：**真正該掃的面是 `period == "unknown"`**（根因是 MB 的 `first-release-date` 為空字串）。
+
+### 一條給下游的硬事實
+
+**`Parker's Mood` 的美版是 2005-01-25 才上市**
+（`enum/billboard-bn-2005-ocr.txt.gz`，Billboard 2005-01-29 p33 逐字 `Blue Note 7243 8 66740 RELEASE DATE: Jan. 25`）
+——**Discogs 把美版標 2004 是盤面 ℗© 年。正文不得寫「2004 年美日歐同步發行」。**
