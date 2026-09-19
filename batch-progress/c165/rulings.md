@@ -1137,3 +1137,212 @@ MB／Discogs／Apple gb 逐字都是 `Chihiro Yamanaka`（寫進 `queryAlias`，
 3. **「`Kyoto Jazz Sextet《Succession》` 是 `N→0` 的近親」** → **比預期更寬**：標題長度差 25 確實成立，**但 `us` 市場的 `lookup` 本身就命中**，所以它其實是第 1775-B 條第五種成因（搜尋索引撈不到、店面有貨），不是純粹的標題比對失敗。
 
 ⚠ **一處派工信少講、實測補上的**：**第 1752-B 條路徑 (1) 的 WP 端點應該用 `posts` 而不是 `search`**（第 1963 條（二））——`search` 端點拿不到正文，本組若只用它，③ 這一層的命中會從 22 掉到 0。
+
+---
+
+# c-165 **鉤子層 a 組**（23 張）——第 2036–2048 條
+
+**號段 2036–2075 為本棒專用，實際用到 2048，2049–2075 未用。只 append，未改動前面任何一行。**
+產出：`desc-tools/batches/hooks/c165-hooks-a.json`（23 筆，`key` 與卡單 a 組逐字同序）。
+
+---
+
+## 第 2036 條（交件總表）
+
+| 項目 | 數字 |
+|---|---|
+| 張數 | **23／23**，`key` 與卡單 a 組 `JSON.stringify` 全等同序 |
+| 欄位 | 只有 `key`／`hook`／`note` 三欄 |
+| **字元預算（`hook` ＋ Σ 各項目 ＋ 末尾會進正文的句子）** | **全部 ≤230；實測 209–230，中位數 219** |
+| 預算分佈 | 200–209：**1**｜210–219：**11**｜220–229：**9**｜230：**2** |
+| 主故事鏈項目數 | 四項 **19** 張、三項 **4** 張（`Omega`／`Rainbow Sign`／`…dreaming in lions…`／`…'Til We Meet Again`，都是整格捨去後的結果） |
+| `hook` 加權長度（英數 0.5） | **19–35.5**，上限 50，無一張逼近 |
+| `note` 原始字元 | **194–235**，上限 350，`qa-batch` 的 `note>350` 提示一次都沒觸發 |
+| `node qa-batch.mjs hooks c165` | **a 組標記 0、`互指?` 0 行**（唯一的總標記是 `⚠ b 缺 hook 檔`，b 組尚未交件，與 a 組無關） |
+| `node chk-hook-crossgroup.mjs c165` | 開頭前四字相同 **0**、校對痕跡 **0**、分數星等 **0**、禁語 **0**；同構關鍵詞待人工判斷 **1 項**（見第 2039 條） |
+
+---
+
+## 第 2037 條：**字元預算——本批的偏差方向是「心算低估」，幅度 5–41%，根因是拉丁專名密度**
+
+依第 1780-B 條，**沒有沿用上一批的係數，23 張逐項用 `Array.from().length` 實際量。**
+**第一輪草稿 23 張裡有 15 張超標**，實測值比動筆時的心算高 **5–41%**（最極端是 `Ron Miles《Rainbow Sign》`：心算約 222、實測 313）。
+
+**根因量化**：本組 `hook` ＋各項目的字元裡，**拉丁字母與阿拉伯數字佔 37.4%**。
+Blue Note 線的班底、錄音室、出版社全是拉丁專名，**一個 `Jazz Orchestra Of The Concertgebouw` 就是 36 個字元、抵得上 36 個漢字**，而心算時會把它當成「一個詞」。
+⚠ **給後批的一句**：**2010 年代以後的 Blue Note 批，專名密度結構性偏高，草稿階段一律假設會超標，先寫三項、量完再決定要不要加第四項**，比先寫四項再砍便宜。
+
+### 整格捨去清單（18 張各捨一至二格，逐張列出捨掉的是什麼）
+
+| 卡 | 整格捨去的內容 |
+|---|---|
+| `ARTEMIS` | 六國成員名單（美、加、法、智利、以色列、日本）；末軌「由 Rosnes 重編」那半格 |
+| `Trijntje《Wonderful Christmastime》` | 兩位鋼琴手分軌彈完整張碟 |
+| `Thomas Dutronc` | 另五軌雙語標題的曲名；〈Get Lucky〉四位作者的名單 |
+| `Ben l'Oncle Soul` | 三間錄音室全名（31db Studio／Studio K／Anchor Recording Studio），只留城市 |
+| `Nduduzo Makhathini` | `SABC Studios` 與 12 月 19 至 22 日的確切日期，只留「12 月四天」 |
+| `Bill Frisell《Valentine》` | 〈Baba Drame〉〈A Flower Is A Lovesome Thing〉〈What The World Needs Now Is Love〉三個曲名，只留三位作者 |
+| `Immanuel Wilkins《Omega》` | **整格**：後四軌的編號樂章與同字末軌 |
+| `Ron Miles` | **整格兩格**：五人班底名單；〈Like Those Who Dream〉15 分 56 秒的長度落差 |
+| `山中千尋《Rosa》` | 〈Yardbird Suite〉〈Someday Somewhere〉兩個曲名；她自己的鋼琴與 Rhodes、John Davis 的鼓 |
+| `Arturo O'Farrill` | **整格**：十人編制與三位打擊樂手；Adam O'Farrill 吹小號那半格 |
+| `Terence Blanchard` | `Mo Ostin Recording Studio` 全名與「四天錄成」（後者另因骨架歸屬讓給 `Bill Charlap Trio`） |
+| `Norah Jones《…'Til We Meet Again》` | **整格**：Pete Remm／Christopher Thomas／Brian Blade 的班底；里約那一晚的確切日期 |
+| `Art Blakey` | **整格**：〈Now's The Time〉22 分 34 秒與兩段半分鐘的〈The Theme〉 |
+| `Norah Jones《I Dream of Christmas》` | **整格**：Brian Blade 與 Russ Pahl 的班底；〈Christmastime〉〈You're Not Alone〉兩個曲名 |
+| `Bill Charlap Trio` | 兩位 Washington 的全名（改寫成「兩位 Washington」，省 32 字元）；〈Street Of Dreams〉曲名（盤名同字，正文自會帶出） |
+| `Tony Allen` | 客座名單（`Sampa The Great`／`Danny Brown`／`Lava La Rue`） |
+| `André Manoukian` | **整格**：〈Sous Le Soleil Exactement〉與 Isabelle Adjani；純器樂那格的編制細目 |
+| `Charles Lloyd《Tone Poem》` | **整格**：〈Dismal Swamp〉那軌改吹中音長笛；The Marvels 的貝斯與鼓 |
+| `Joe Chambers` | **整格**：〈Never Let Me Go〉與 Stephanie Jordan；Andrew Hill 與 Brad Merritt 兩個名字 |
+| `Lonnie Smith《Breathe》` | **整格**：Jonathan Kreisberg 與 Johnathan Blake（改寫成「回到三重奏」）；兩首錄音室曲的曲名 |
+
+**捨的一律是整格或整串專名，沒有任何一張是把長句硬砍成半句留給寫作層。**
+
+---
+
+## 第 2038 條：**骨架歸屬——八條有爭議的骨架，八張卡各擁有一條；讓出的卡一個字都沒寫**
+
+照 `hook-base.md` 雲端註記第 3 點：**只有擁有者在 `note` 裡寫「這條骨架全批只走本張」，讓出的卡不寫、也不點名歸給了誰。**
+**哪條歸哪張列在這裡給主線與 b 組看。**
+
+| # | 骨架（句子結構） | **擁有者** | 讓出的卡（它們改走什麼軸） |
+|---|---|---|---|
+| 1 | **盤名的出處＋作者自述** | **`Ron Miles《Rainbow Sign》`** | `Gerald Clayton`（改走編制中途縮編）、`Arturo O'Farrill`（改走兩組曲換鼓手）、`Tony Allen`（改走節拍與身後發行） |
+| 2 | **演奏者自述為何要留下現場錄音** | **`Lonnie Smith《Breathe》`** | `Gerald Clayton`（現場那一層只寫場地與編制，不引他談現場的話） |
+| 3 | **一人包辦多個 credit 欄位** | **`Nduduzo Makhathini`** | `山中千尋`（改走三個週年）、`Charles Pasi`（改走缺席的貝斯聲部）、`Tony Allen`（改走時序） |
+| 4 | **逝世使本作成為身後之作** | **`Tony Allen《There Is No End》`** | `Lonnie Smith`（改走「辭世與黑膠上市」的載體時序，不用遺作框架） |
+| 5 | **與廠牌關係的回歸敘事** | **`Joe Chambers《Samba de Maracatu》`** | `Lonnie Smith`／`Charles Lloyd`／`Bill Charlap Trio`／`Bill Frisell`／`Gerald Clayton`／`Ron Miles` 六張全部讓出，一句「他在這個廠牌的第幾張／回到這個廠牌」都沒寫 |
+| 6 | **同一個職位交給多人分擔** | **`Trijntje《Wonderful Christmastime》`**（六位編曲者） | `Ben l'Oncle Soul`（七位製作人那條讓出，改走封面縮名與跨城市錄音）、`Trijntje《Everchanging Times》`（改走 Bacharach 本人掛監修欄） |
+| 7 | **全碟曲目出自單一他人之手** | **`André Manoukian`**（十二軌一位作者） | `Thomas Dutronc`（改走雙語標題）、`Bill Charlap Trio`（改走三個三分之一）、`Trijntje《Everchanging Times》`（改走監修欄） |
+| 8 | **錄音在極短天數內完成** | **`Bill Charlap Trio`**（兩天） | `Nduduzo Makhathini`（四天，只留月份）、`Terence Blanchard`（四天，整句捨去） |
+
+**其餘 15 張各自走的軸互不同構，不構成爭議，因此一句歸屬都沒寫**（照第 1787-B 條，沒有爭議就不要寫，寫了只會多出 `互指?` 要複核）。
+
+⚠ **給 b 組的一句**：**上表第 5 條是本組最擁擠的一條**——Blue Note 線幾乎每張卡的官網稿都有「回到這個廠牌」那句話，
+**a 組已經把它整條鎖在 `Joe Chambers` 上，b 組若也要用，請自己在 b 的號段裡另立一條、不要沿用本表。**
+
+---
+
+## 第 2039 條：**`chk-hook-crossgroup` 唯一的待判項——「辭世」×3，判為三種不同骨架，不改**
+
+機器標的是 `Norah Jones《…'Til We Meet Again》`／`Tony Allen《There Is No End》`／`Lonnie Smith《Breathe》` 三張同時出現「辭世」。**逐張看過，三種形狀完全不同**：
+
+1. **`…'Til We Meet Again`**：辭世的是**第三人** `Chris Cornell`，本碟末軌是在同一個場地、他辭世前幾天的演出後錄下的致敬——這是**場地與時序**的骨架。
+2. **`There Is No End`**：辭世的是**作者本人**，節拍生前完成、人聲身後疊上——**身後之作**的骨架，本組的擁有者。
+3. **`Breathe`**：辭世的也是本人，但軸是**載體時序**（多收一軌的雙黑膠版在他辭世後兩個多月才上市），`note` 的末尾寫的是「並寫明辭世與黑膠上市的時序」，沒有用遺作框架。
+
+**三張都屬於反向禁令的第一類（與作品直接綁定），依題材原則『招牌事實必寫、克制不是跳過』一律寫入，並各自要求正文寫明時序。**
+**不改寫、不刪除任何一張。** ⚠ 這條也是給後批的提醒：**`chk-hook-crossgroup` 的 `SKELETON` 表掃的是關鍵詞，同一個詞底下可以有完全不同的骨架，這個標記不能自動當成違規。**
+
+---
+
+## 第 2040 條：**`互指?` 0 行——不是機器沒跑，是逐字核過的結果**
+
+`qa-batch hooks c165` 對 a 組的 23 張 `hook` 與 23 條 `note` 跑完事實對照，**硬標記 0、`互指?` 0 行。**
+依第 1763-B 條「`互指?` 每一筆都要人工看過」，**本組是零筆，但仍把跨卡重疊的專名逐一人工核了一次**，因為零筆的成因可能是「兩張卡的研究稿都有這個名字、所以機器不報」：
+
+| 跨卡重疊的專名 | 出現在 | 人工判讀 |
+|---|---|---|
+| `Bill Frisell` | `Tone Poem`（側手） | ✓ 正確：官網稿的 The Marvels 編制逐字有他；`Valentine` 那張才是他當主角，兩張沒有互換 |
+| `Thomas Morgan`／`Rudy Royston` | `Valentine` | ✓ 正確：是 Frisell 三重奏的兩人，`Rainbow Sign` 的班底整格已捨去，不會混 |
+| `Jason Moran` | `Omega`（製作人） | ✓ 正確：`Rainbow Sign` 的班底整格已捨去 |
+| `Wayne Shorter` | `Absence`（致敬對象）／`First Flight to Tokyo`（台上樂手）／`Samba de Maracatu`（當年替他打鼓） | ✓ 三處各自成立，三張的研究稿都各有 `src` |
+| `Iggy Pop` | `Frenchy`（對唱）／`Breathe`（頭尾兩軌合唱） | ✓ 兩處各自成立 |
+| `John Clayton` | `Wonderful Christmastime`（〈Baby, It's Cold Outside〉的編曲） | ✓ **不是 `Gerald Clayton`**，兩人是不同的名字、不同的卡，逐字核過 |
+| `Brian Blade` | `I Dream of Christmas` 的班底格已捨去 | ✓ 現在只剩零處 |
+
+---
+
+## 第 2041 條：**派工信與 `hook-base.md`（正本）牴觸之處——0 條；三處出入寫在這裡**
+
+依派工信第一節「本信若與 base 檔牴觸，以它為準，並在回報裡指出本信哪一句寫錯了」逐條核過，**沒有一句與正本相反。** 三處值得記的出入：
+
+1. **派工信第一節：「掃一遍 `rulings.md`（第 1917–1966 條在最後）」——號段寫得不完整。**
+   本檔實際的區段是 **1900–1922（策展 a）、1930–1948 ＋ 1947-A（策展 b）、1960–1966（研究 b）**；
+   **研究 a 組沒有留下任何裁定條文**（1949–1959 全空）。**本棒改為整檔讀過。**
+   ⚠ 這不影響判斷，但**「第 1917–1966 條」這個範圍會讓後棒漏掉 1900–1916 那十七條**，其中第 1902／1903／1904 條正是本批三張卡的判準來源。
+2. **派工信第三節第 3 點：「`互指?` 每一筆都要人工看過再判」——本組是零筆。**
+   本棒仍照第 1763-B 條的用意做了等價的人工核（第 2040 條的表），**因為零筆本身也可能是假陰性。**
+3. **派工信第三節第 5 點：「骨架歸屬照 hook-base 雲端註記第 3 點寫」——正本說的是「有爭議才寫」。**
+   本棒因此**只在八張卡上寫歸屬句、其餘 15 張一句都沒寫**。若派工信的原意是「23 張每張都要寫一句」，那會與正本第 1787-B 條相反（每批多出十幾行 `互指?`），**以正本為準。**
+
+---
+
+## 第 2042 條：**hook 的四型輪換與開頭前四字**
+
+- **四型分佈**：懸疑 **7**（`Wonderful Christmastime`／`Addicted to You`／`Modes of Communication`／`Omega`／`…dreaming in lions…`／`Zebra`／`Everchanging Times`）、場景 **5**（`ARTEMIS`／`…'Til We Meet Again`／`First Flight to Tokyo`／`I Dream of Christmas`／`Samba de Maracatu`）、人物定調 **2**（`Street of Dreams`／`Breathe`）、斷言 **9**。
+  ⚠ **第一輪草稿有 17 張是斷言**，量完預算之後才回頭把四張改成問句型——**改成問句平均只多 1 至 4 個字元，是本批最便宜的一種調整。**
+- **四個懸念型的 hook 全部在 `note` 的主故事鏈第一或第二格就收尾**（六個名字＝六位編曲者、六個欄位＝他一人、低音從哪來＝`Bass Moog` 合成器、監修欄為什麼也是他＝Bacharach 本人掛 `Supervised By`）。
+- **開頭前四字 23 張互異**（`chk-hook-crossgroup` 第 1 項 0 命中）。⚠ 最接近的一組是 **「十三軌聖」（`Wonderful Christmastime`）與「十二軌的」（`Les Pianos de Gainsbourg`）**——機器判為互異，**但 b 組請避開「十N軌…」這個開頭形，三張就會開始看起來像同一支代理寫的。**
+
+---
+
+## 第 2043 條（本棒自己下的四個裁定，照「裁定權下放」當場定）
+
+1. **週年數字用中文數字，不用阿拉伯數字**（`Rosa` 的「貝多芬兩百五十年、Charlie Parker 一百年、她自己出道十五年」）。
+   依據：正本的規則是「**年月日與榜單名次**一律阿拉伯，**年代與概略數量**維持中文」——**週年數兩邊都不屬於**，本棒歸到「數量」那一邊。同理 `First Flight to Tokyo` 的「五十六頁的書」、`Wonderful Christmastime` 的「一千五百張」都用中文數字。**年齡則用阿拉伯**（`Tony Allen` 的 79 歲、`Immanuel Wilkins` 的 22 歲、`Lonnie Smith` 的 75 歲生日演出），因為那是可數的確切值且常與日期並列。
+2. **研究層推翻策展層的五處，鉤子層一律照研究層寫**：`ARTEMIS` 的三處作曲歸屬、`Bill Frisell` 的〈Baba Drame〉與自作曲八軌、`Arturo O'Farrill` 的組曲來源（**不是 Rita Dove，是 Malpaso Dance Company 與 Hemingway**）與 14 軌、`Bill Charlap Trio` 的〈Your Host〉作者是 Kenny Burrell、`Joe Chambers` 的〈Visions〉歸 Bobby Hutcherson。**這些點有兩層獨立來源，策展層只有一層。**
+3. **廠牌目錄序數 23 張一條都不寫。** 研究層對 `Bill Frisell`／`Charles Lloyd`／`Lonnie Smith` 三張都逐字記下官網稿有「第 N 張」，並依第 1732 條（一）判定 2020 年以後的碟沒有紙本那一層。**鉤子層照判，`note` 裡連「他在這個廠牌的第一張」這種身分敘述也只保留在 `Joe Chambers` 一張上**（那張的軸就是回歸本身）。
+4. **`Charles Pasi《Zebra》` 的發行年寫 2020**，與卡單上游原記的 2021 不同，照策展層第 1904 條與研究層的改判。`note` 的年份指定句逐字寫「發行年寫 2020 年。」，並在主故事鏈裡寫明「2020 年 9 月 14 日實體上架」，讓寫作層不必知道 MB 的 2021 數位補發日。
+
+---
+
+## 第 2044 條：**兩處「否定讀者沒有的前提」的自我檢查結果**
+
+依 2026-08-08 那條規則，對三個帶否定詞的寫法逐一自檢：
+
+1. **`Zebra` 的 hook「三個人的編制裡沒有貝斯手，低音從哪裡來？」——保留。**
+   讀者對「三重奏」確實有「應該有低音聲部」的前提，這個否定**指向的是編制事實本身**，不是研究層的更正外漏；而且它立刻被問句導向答案，`note` 第二格就交代是 `Fred Dupont` 用 `Bass Moog` 彈的。
+2. **`Street of Dreams` 的「兩位 Washington 同姓但沒有親屬關係」——保留。**
+   讀者看到兩個同姓的人**本來就會有親屬的前提**，而且官方發片稿自己加了那句括號說明，**這是原始事實不是校對痕跡。**
+3. **`First Flight to Tokyo` 原草稿的「此前從未發行過」——改寫。**
+   這一句是研究層「(甲) 從未發行過的錄音」判定的外漏，改成正面的「**2021 年首度發行**」，並在末尾的年份句補「寫成 1961 年的錄音在 2021 年首度發行」。**避免寫作層把「不是再版」表演給讀者看。**
+
+---
+
+## 第 2045 條（**操作事故，已無損失，但要記給主線**）：**中途檢查點 `f1fff21` 收進的 `c165-hooks-a.json` 是 5／23 的中間版本**
+
+本棒依派工信第三節第 2 點「每做完 5 張就把整份輸出檔寫回磁碟」存檔，**主線在其中一次存檔之後就做了檢查點提交**（`f1fff21 checkpoint: c166 回撈候選表＋c165 鉤子 a 中途存檔`）。
+**那個 commit 裡的 `c165-hooks-a.json` 是前五張的中間版本，而且那五張後來又因為四型輪換與專名去重改過 hook。**
+
+**處置**：本棒收工時的工作區版本才是交件版（23 筆、預算全部 ≤230）。**未 `git add`、未 `git commit`、未 `git push`，由主線統一提交。**
+⚠ **給主線的一句**：**續跑型代理的「每 N 筆存檔」與檢查點提交會互相踩到**（與第 1947-A 條同一個形狀）。
+**檢查點提交若收進某個代理仍在跑的輸出檔，commit 訊息要寫明它是中間版本、不可直接餵下游。**
+
+---
+
+## 第 2046 條：**與 `hook-base.md` 各節的逐條對照——全過**
+
+- 曲風源流／廠牌規則（2026-08-08／08-02）：**沒有任何一張因為「別張寫過」而不寫廠牌**；唯一的限制照規則走反同構（第 2038 條第 5 條）。
+- 「派工詞裡的常識不算事實」（2026-08-11）：**23 張的每一個專名、日期、曲名、編制都能在該卡的 `facts` 或研究稿 `notes` 裡對到**，`qa-batch` 的事實對照 0 硬標記就是機器側的佐證。**沒有一條需要回報主線落空。**
+- 「研究稿的卡池現值是過期快照」（2026-08-14）：**本組沒有把任何一處寫成「待主線處理的卡池問題」。** 唯一與卡池有關的是 `Zebra` 的年份，已照第 2043 條（4）寫成正面指派句。
+- 古典卡通則：**本組 0 張古典卡**，`Rosa` 有兩軌貝多芬改編，但那是爵士盤裡的翻奏軌，照一般專輯規則寫。
+- 分數與星等：**hook 與 note 全數 0 處**。`Omega` 的「紐約時報年度第一名」是榜單名次、`Happening` 的葛萊美兩項是入圍，兩者都不是評分。
+- 正面表述：**23 條 `note` 沒有一句「不得寫」「禁補」「查無來源」「卡池標錯」「未能查證」。**
+
+---
+
+## 第 2047 條：**給 b 組的四句**
+
+1. ⚠ ⚠ **第 2038 條的八條骨架已被 a 組鎖走**，尤其**第 5 條（廠牌回歸敘事）擠了六張讓出的卡**——b 組的 22 張裡 `Charles Lloyd` 三張《Trios》、`Ronnie Foster《Reboot》`、`Donald Byrd`、`Elvin Jones` 都極可能撞到，**請在 b 的號段裡另立一條並自己指定擁有者。**
+2. ⚠ ⚠ **字元預算的心算在這條線上一定低估**：拉丁字元佔比 37.4%，**先寫三項、量完再決定加不加第四項。**
+3. ⚠ **開頭前四字避開「十N軌…」與「他說…」兩種形**（a 組各用掉一個），也避開 `2018`／`1960`／`Tone` 三個已用掉的開頭。
+4. ⚠ **`chk-hook-crossgroup` 的「同構骨架」標記不是旗標**：它掃關鍵詞，同一個詞底下可以有完全不同的骨架（第 2039 條），**逐張看過再判，不要為了清掉它而改寫正確的內容。**
+
+---
+
+## 第 2048 條（收尾）：**交件數字、本棒改動的檔案、號段**
+
+**交件**：`desc-tools/batches/hooks/c165-hooks-a.json`，**23 筆**，`key` 與卡單 a 組逐字同序。
+**`node qa-batch.mjs hooks c165` → a 組標記 0、`互指?` 0**（總標記 1 是 `⚠ b 缺 hook 檔`，b 組尚未交件）。
+**`node chk-hook-crossgroup.mjs c165` → 開頭／校對痕跡／分數星等／禁語全 0，1 項同構關鍵詞經人工判為三種不同骨架、不改。**
+
+**本棒新增／改動的檔案**：
+- `desc-tools/batches/hooks/c165-hooks-a.json`（23 筆，覆蓋 `f1fff21` 收進的 5／23 中間版本）
+- `batch-progress/c165/rulings.md`（本段，**號段 2036–2048，2049–2075 未用**）
+
+**未碰**：`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`prop-a.json`／`prop-b.json`／
+`c165-hooks-b.json`／`batch-progress/c164`／`c166`／`c167`／`c168` 的任何檔／1900–2035 的號段（只讀未改）。
+**未執行**：`git add`／`git commit`／`git push`／`git reset`／`git revert`。
+**臨時檔**：全部寫在雲端 scratchpad，檔名一律帶 `c165-ha-` 前綴（第 1947 條的教訓），repo 內沒有殘留。
