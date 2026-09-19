@@ -3032,3 +3032,52 @@ Anderson .Paak《Ventura》）。⚠ **`Paul Cornish` 那筆值得記一下：�
 「超級團／把名冊湊成一團」（b 有三張）。
 **c-170 a 讓出 3 條給 b，並逐條反向檢查那些模子在自己的 hook 本體裡 0 次**（第 1814-B 條的正確用法）。
 **`Joel Ross` 全批四張，a 組主動只取兩個面向、把另外兩個留給 b**，且**「顫音琴手的成長史」四張裡誰都沒用。**
+
+## 第 1831-B 條（c-169 研究 b 驗收）：**20/20 全 `full`，235 條 facts，12 個來源網域**
+
+`qa-batch research c169` b 組旗標 0、key 與卡單完全一致、src 全為完整 https、`hookCandidates` 全 ≤2。
+src 分佈：discogs 88／bluenote 67／en.wikipedia 30／it.wikipedia 11／universal-music.de 9／finland.fi 7／
+universal-music.co.jp 7／umohelsinki.fi 5／loop.co.nz 5／downbeat 3／artistshare 2／joncowherd.com 1。
+
+### ⚠ 官網覆蓋率的分界量化了：是出身地，不是年代
+
+**b 組 20 張：美國本部 11 張有 9 張有官網頁，歐洲與日本分支 9 張 0 頁。**
+**第 1826-B 條那句「分界是碟的出身地」在 b 組成立並量化。**
+例外兩張是 `Jon Cowherd`（共同發行盤）與 `Logan Richardson`（本部簽約卻無頁）。
+
+### ⚠ 我派工信寫錯的盤頁路徑，是唯一一處「照做會做錯」的
+
+**`bluenote.com` 的盤頁是 `/music/<slug>/`，`/release/<slug>/` 會回 301**——**照我的寫法會把 301 網址寫進 `src`。**
+代理把 14 個網址全改成轉址後的形。另記：`/artist/erik-truffaz/` 301→`/artist/erik-truffaz-2/`；`R+R=NOW` 的 slug 是 `rrnow`。
+⚠ **另一句也不準**：「關鍵字要把藝人名放最前面」對盤頁無效，**原因不是關鍵字而是端點**
+——**`wp-json/wp/v2/types` 只有 `post`／`page`，`/music/` 與 `/artist/` 都不是 post，怎麼排都搜不到。**
+
+### 新立的查法陷阱：同一張碟要挑對版本條目才拿得到 credits
+
+**本組中兩次**：`Kendrick Scott` 美版 `8550212` 的 `extraartists` **整格空**、歐版 `10307891` 才有 21 筆；
+`Musica Nuda` 義版原壓只有一行、法版 `9820411` 才有 13 筆。
+⚠ **「抓到了」與「抓到空的」長得一樣**——**第 1370／1371／1433 那一族在 credits 欄的又一次應驗。**
+
+### ⚠ 我又給錯一個池中數字（本線第三次）
+
+**派工信與第 2194 條都寫「seed 有兩張 Kenny Barron」——主線實掃是 3 列**
+（`Scratch`／`What If?`／**`Joe Locke & Kenny Barron《But Beautiful》(1991)`**）。
+**兩邊都只用前綴比對，聯名形掃不到。**
+**→ 掃池中既有數時，掛名要同時掃「裸名開頭」與「聯名形裡出現該名字」兩種。**
+
+### 裁定：`src` 的 Discogs 網址維持 `www.discogs.com/release/…`，不改成 api 端點
+
+代理回報 **26 個 `www.discogs.com/release/…` 在雲端一律 403**（bot 防護；`api.discogs.com` 端點全 200），並問要不要改。
+**裁定：不改，維持 www 形。**
+1. **`src` 是給人覆核用的**——`www` 形在一般瀏覽器打得開，**api 端點回的是 JSON，對人更難讀**。
+2. **403 是雲端環境的特性，不是網址失效**——**不可用雲端 curl 的結果判斷 `src` 有效性。**
+3. **c-167／c-168 都是 www 形，改了會讓同一條線前後不一致。**
+⚠ **但要記一條給本機**：**若 manifest gate 會對 `src` 發請求驗活，這 26 條在雲端會被判失效**——**驗活要在本機跑。**
+
+### 另補正四處，三處掛 uncertain 不定案
+
+**推翻／補正**：`Emma Salokoski` 的瑞典語詞是原詞、芬蘭語是翻譯，作詞者全名 `Mayvor Fridlund-Lintinen`；
+`Passin' Thru` 的兩個錄音地點與日期（獨立再證）；`Ruben Hein` 的 CD catno（獨立再證第 2209 條）；
+**`Jon Cowherd《Mercy》` 不是純 ArtistShare 盤**（維基寫錯，兩家並列共用同一目錄號）。
+**三處來源自己打架只標 uncertain**（Truffaz 隱藏曲秒數、Charles Lloyd 末軌曲名、James Carter 兩軌時長）
+——**已要求鉤子層一律不寫進 `note`。**

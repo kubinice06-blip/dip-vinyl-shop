@@ -1731,3 +1731,296 @@ cd desc-tools && node chk-hook-crossgroup.mjs c169
 暫存檔全部落在 scratchpad 且帶 `c169ha-` 前綴。
 
 ---
+## 第 2991 條（b 組研究，**總表**）：**20 張全交，`facts` 235 條、平均 11.75 條，`src` 100% 為可開啟的 https 一手頁面**
+
+| | 值 |
+|---|---:|
+| **交件張數** | **20／20**（`status` 與 `coverage` 兩欄並存同值，20 張全 `full`、`thin` 0） |
+| **`facts` 總數** | **235** |
+| **每張條數分佈** | **11 條 5 張**（The Blue Note 7／Ruben Hein／Emma Salokoski／Musica Nuda《Complici》／Musica Nuda《Banda larga》）、**12 條 15 張**；**低於 8 條者 0** |
+| **`hookCandidates`** | 每張 2 條，**無一張超過 2** |
+| **唯一 `src` 網域數** | **12**（59 個不重複網址） |
+
+**`src` 網域分佈（依條數）**：`discogs.com` 88／`bluenote.com` 67／`en.wikipedia.org` 30／`it.wikipedia.org` 11／`universal-music.de` 9／`finland.fi` 7／`universal-music.co.jp` 7／`umohelsinki.fi` 5／`loop.co.nz` 5／`downbeat.com` 3／`artistshare.com` 2／`joncowherd.com` 1。
+
+**每張的網域組合都至少兩個**，最少的一張是 Blue Note All-Stars（`bluenote.com`×11 ＋ `discogs.com`×1），
+**沒有任何一張只靠單一網域**，滿足下游 manifest gate「每張至少兩個 HTTPS 來源」的硬性要求（第 201 行原文）。
+
+---
+
+## 第 2992 條（b 組研究，**覆核第 2208 條（二）；結論相同，另補六位團員的逐名重掃**）：**Glasper 圈五個掛名在池中確實 0 命中，池中有的是側人**
+
+派工信第三節第 3 點與第 2208 條（二）都說派工信原句寫錯。**本棒不照抄結論，獨立重掃 `seed_cards.json`（17248 列）覆核**：
+
+| 掃的字串 | seed 命中 | 命中的是什麼 |
+|---|---:|---|
+| `R+R=NOW`／`Chris Dave`／`Kendrick Scott`／`Otis Brown`／`Logan Richardson` | **0** | — |
+| `Robert Glasper` | **5** | 《Black Radio》2012／《In My Element》2007／《Let Go》2024／《Canvas》2005／《Double Booked》2009 |
+| `Christian Scott` | **6** | aTunde Adjuah 名義五張 ＋ 一張三人聯名《Ninety Miles》 |
+| `Terrace Martin`／`Taylor McFerrin`／`Justin Tyson` | **0** | — |
+
+**→ 第 2208 條（二）成立。** ⚠ **另記一筆方法論**：本條是**第 1796-B／1805-B／1812-B 條（「數量或範圍斷言一律自己重掃」）在本棒的第一次執行**，
+**重掃的結果與策展層一致**——**這一次沒有推翻，但下一條就推翻了。**
+
+---
+
+## 第 2993 條（b 組研究，**⚠ 推翻第 2194 條與派工信的同一個數字**）：**seed 裡的 `Kenny Barron` 是 3 列不是 2 列——第三列是聯名卡，被兩邊都漏掉了**
+
+派工信第三節第 4 點逐字：「**seed 實際有《Scratch》1985 與《What If?》1986 兩張**」；第 2194 條的表格逐字也記「**`Kenny Barron` 2 張（seed）**」。
+
+**本棒重掃 `seed_cards.json` 的實際結果是 3 列**：
+
+| seed 列 | 形狀 |
+|---|---|
+| `Kenny Barron —《Scratch》(1985)` | 裸名領班 |
+| `Kenny Barron —《What If?》(1986)` | 裸名領班 |
+| ⚠ **`Joe Locke & Kenny Barron —《But Beautiful》(1991)`** | **聯名，掛名字串不是裸名** |
+
+**為什麼會漏**：兩邊都只掃了 `artist` 欄**等於**或**開頭為** `Kenny Barron` 的列，
+**聯名形的 `Kenny Barron` 落在字串中段**，用前綴比對掃不到。
+
+**判：第 2194 條的「不收攏」結論不受影響**（第三列是第三個掛名字串，與裸名／群組名之爭無關），
+**但那張表的數字要改成 3**。**給後批的固定動作**：掃池中既有掛名時，**一律用「字串包含」掃一次、再用「欄位相等」掃一次**，兩個數字並列；
+只跑後者會系統性漏掉所有 `A & B`／`A, B, C` 形的聯名卡。
+
+⚠ **順帶一個撞陳列**：`bluenote.com/music/concentric-circles/` 逐字點名的 **1986 年《What If》**，
+**就是 seed 那張《What If?》**（seed 帶問號、官網不帶）——**同一張碟**。下游若替本卡寫「他的五重奏傳統」，那是撞陳列不是撞卡（第 845 條）。
+
+---
+
+## 第 2994 條（b 組研究，**新立；把第 2867 條的分界線量化，並補一個例外**）：**`bluenote.com` 的覆蓋率分界是「碟的出身地」——美國本部 9／11，歐洲與日本分支 0／9**
+
+第 2867 條（a 組研究）已經定出「不是年代、是出身地」這條分界。**b 組 20 張逐張測完，數字如下**：
+
+| 出身 | 張 | `bluenote.com` 有頁 | 名單 |
+|---|---:|---:|---|
+| **美國本部** | **11** | **9** | 有頁：The Blue Note 7／Otis Brown III／Kendrick Scott Oracle／Blue Note All-Stars／Chris Dave／Kenny Barron／R+R=NOW／Charles Lloyd／James Carter |
+| | | | ⚠ **無頁的 2 張**：**Jon Cowherd《Mercy》**（`/artist/jon-cowherd/` 與 `/music/mercy/` 皆 404——**這張是 ArtistShare／Blue Note 共同發行，不是純本部盤**）、**Logan Richardson《Shift》**（`/artist/logan-richardson/` 與 `/music/shift/` 皆 404，**他是本部簽約藝人，這一張是真正的例外**） |
+| **歐洲與日本分支** | **9** | **0** | Ruben Hein（NL）／Emma Salokoski & UMO（FI）／Musica Nuda ×2（IT）／Erik Truffaz Quartet（FR）／The Northern Governors（FI）／Sunaga t Experience（JP）／Aron Ottignon（FR）／Sarah McCoy（DE）——**逐張測過 `/artist/<slug>/` 與 `/music/<slug>/` 兩種路徑，全部 HTTP 404** |
+
+**→ 第 2867 條的分界線在 b 組成立，但要補一句：「美國本部」不等於「一定有頁」。**
+**共同發行盤與個別藝人仍會落空，測到 404 不代表判錯 imprint。**
+
+---
+
+## 第 2995 條（b 組研究，**⚠ 派工信第四節的路徑清單漏了兩條，其中一條是本線盤頁的真正路徑**）
+
+### （一）⚠ ⚠ **`bluenote.com` 的盤頁路徑是 `/music/<slug>/`，不是派工信與既有裁定慣用的 `/release/<slug>/`**
+
+`/release/<slug>/` **會回 HTTP 301**，`Location` 逐字指到 `/music/<slug>/`。跟著轉址走得到同一頁，
+**但寫進 `src` 的網址若停在 `/release/`，下游 manifest gate 拿到的就是一個 301**。**本棒交件前把 14 個 `bluenote.com` 網址全部改成轉址後的形。**
+
+⚠ **同一個毛病在藝人頁上也有一例**：`/artist/erik-truffaz/` 301 → **`/artist/erik-truffaz-2/`**（帶 `-2` 尾碼），
+**已改成轉址後的形。**
+
+⚠ **`R+R=NOW` 的藝人頁 slug 是 `rrnow`**——**`+` 與 `=` 被整個吃掉**，猜 `r-r-now` 會 404。
+**帶符號的掛名要猜 slug 時，先試「只留英數字」的形。**
+
+### （二）**派工信沒列的第二條：`wp-json/wp/v2/types` 告訴我們官網只有 `posts` 與 `pages` 兩種公開型別**
+
+**這解釋了派工信第四節第 1 點為什麼老是落空**：`wp-json/wp/v2/posts?search=` **只搜新聞稿，搜不到 `/music/` 與 `/artist/` 頁**——
+**那兩種頁不是 `post`。** 本棒實測 4 次 `posts?search=`，只在**找新聞稿**時有用（2 次命中：James Carter 的發片稿、61 屆葛萊美入圍公告），
+**拿它找盤頁則一次都沒中。**
+
+**→ 給後批的正確順序**：**(1) 直接猜 `/music/<盤名 slug>/` → (2) 直接猜 `/artist/<掛名 slug>/` → (3) `posts?search=` 只用來找新聞稿。**
+
+---
+
+## 第 2996 條（b 組研究）：**③ 來源層各查法的實測命中率（含本棒另外動用的六條路徑）**
+
+| 查法 | 用了幾次 | 命中 | 評語 |
+|---|---:|---:|---|
+| **`api.discogs.com/releases/<id>` 整筆** | **26 筆條目** | **26** | ⚠ **絕對主力，20 張全部用到，與 c-167／c-168 的結論完全一致。** 無需 token，雲端直通 |
+| `api.discogs.com/database/search?artist=&release_title=` | 2 | 2 | **第 2209 條的第二種掃描在雲端無 token 可跑**（本棒實測 Ruben Hein 回 3 筆、Musica Nuda《Banda larga》回 5 筆） |
+| **`bluenote.com/music/<slug>/`**（本棒新增的路徑） | 15 | **7** | 美國本部盤的主故事幾乎只在這裡 |
+| `bluenote.com/artist/<slug>/` | 13 | **7** | 傳記線；Otis Brown III、Chris Dave、James Carter 三張的整段生平只有這裡有 |
+| `bluenote.com/wp-json/wp/v2/posts?search=` | 4 | 2 | **只對新聞稿有效**（見第 2995 條（二）） |
+| `bluenote.com/?s=` | **0** | — | 未動用；前批已證備援無效，本棒改走 `wp-json` |
+| `universal-music.co.jp/<slug>/products/<品番>/` | 2 | **1** | ⚠ **對 `Sunaga t Experience《STE》` 決定性**——團員漢字名、「レコード番長」稱號、DJ 三十週年這三件事只有這一頁有。⚠ **路徑的第一段是「藝人 slug」而不是本名**：`sunaga-t-experience` 通、`sunaga-tatsuo` 404 |
+| 藝人官網 | 1 | **1** | `joncowherd.com/music` 命中（標題逐字「Artist Share/Blue Note Releases…」）；本棒未遇到 JS 渲染的官網 |
+
+### ⚠ 本棒另外動用、派工信沒列的六條路徑
+
+| 路徑 | 用在哪 | 為什麼非它不可 |
+|---|---|---|
+| **`universal-music.de/<藝人>/biografie`** | **Sarah McCoy（12 條 facts 裡 9 條）** | ⚠ ⚠ **本棒最大的一個發現：`universal-music.co.jp` 那條路徑有德國版**。McCoy 是 Universal Music Jazz Germany 掛 Blue Note 發的歐洲盤，`bluenote.com` 完全沒有她，**整條傳記線（Pine Plains 出身、父親與祖母數日內相繼過世、紐奧良 Spotted Cat、Chilly Gonzales 在巴黎發現她）只有這一頁有**，頁尾還逐字註明「Stand: Januar 2019」與發行同期。**強烈建議把 `universal-music.de` 寫進簡報第三節，與日本版並列。** |
+| **`finland.fi`**（芬蘭外交部 Finland Promotion Board） | **The Northern Governors（12 條裡 7 條）** | **這張是血緣家族團**——成員互為表親、全部是 Marjatta Pokela 與 Martti Pokela 的後代——**這件事 Discogs、MB、slice、策展層一個都沒寫到**，只有這一篇 2012 年的官方報導有 |
+| **`umohelsinki.fi/album/<slug>/`**（樂團官方站） | Emma Salokoski & UMO（11 條裡 5 條） | **錄音室（Varistoteles Studios／Yle M1）、catno `50999 097943 2 0`、以及「據信是第一張把同一批歌用芬蘭兩種官方語言各唱一次的 CD」三項只有這一頁有** |
+| **`artistshare.com/Projects/…`** | Jon Cowherd | **樂迷集資模式的實際內容（贊助者換到錄音影片與內頁署名）與「Blue Note/ArtistShare release」這個自稱** |
+| **`downbeat.com/news/detail/…`** | The Blue Note 7（12 條裡 3 條） | **Bruce Lundvall 的發片語錄、巡演起訖（1 月 7 日 Yakima 起、五十座城市、四月中 Birdland 連演六晚）、以及「一人一首、只有兩首是 Renee Rosnes 編」** |
+| **`it.wikipedia.org` 的 `w/api.php`** | Musica Nuda 兩張（共 11 條） | 英文維基沒有 `Musica Nuda` 條目（實測 MISSING），義大利文有，而且有專屬的《Banda larga (album)》頁 |
+
+### ⚠ 三個查不到／被擋的
+
+- **`allaboutjazz.com`：HTTP 403**（雲端被擋，`WebFetch` 與 `curl` 皆然）。維基引述的 John Kelman 評論只能透過維基轉引。
+- **`jazzwise.com`：HTTP 403**。
+- **`itunes.apple.com/search`：本棒未動用**——第 1823-B 條說雲端會 403，而策展層第 2204 條已把三種店面查法跑完，研究層沒有非跑不可的缺口。**因此本棒不提供任何「在不在架上」的斷言。**
+
+---
+
+## 第 2997 條（b 組研究，**新立；一個會讓整格 credits 消失的查法陷阱**）：**同一張碟要挑對版本條目才拿得到 Discogs 的 credits——本組中 2 次**
+
+| 碟 | 錯的條目 | 對的條目 |
+|---|---|---|
+| **Kendrick Scott Oracle《We Are the Drum》** | **美版 `8550212` 的 `extraartists` 整格是空陣列**（連鼓手是誰都沒有） | **歐版 `10307891` 有完整的 21 筆 credits**（Taylor Eigsti／Mike Moreno／Joe Sanders／John Ellis／Derrick Hodge 製作／Don Was A&R／Lizz Wright 出借聲明／錄音室與版式） |
+| **Musica Nuda《Banda larga》** | **義大利原壓 `6600079` 的 credits 只有一行**（`Arranged By, Conductor = Daniele Di Gregorio`） | **法版 Bonsaï `9820411` 有 13 筆**（Orchestre da Chambre des Marche、Di Gregorio 兼打馬林巴與巴拉風、Spinetti 兼彈 saz、三間錄音室、製作人二人） |
+
+⚠ **這個陷阱與第 1250 條不同族**：那條管的是「目錄號不可反查」，**這條管的是「同一張碟的不同條目資訊量差一個數量級」**。
+**形狀很陰險**：拉到的是**正確**那張碟、`formats` 與 `tracklist` 都對，**只有 credits 是空的**——**「抓到了」與「抓到空的」長得一樣**（第 1370／1371 條那一族在資料欄上的應驗）。
+
+**→ 給後批的固定動作**：**`extraartists` 回空陣列或少於 3 筆時，不要當成「這張碟沒有 credits」**，
+**改拉同一 master 底下的另一個地區版本再看一次。** 原壓不必然是資訊最全的那一版——本組兩次都是**非原壓**那一版才完整。
+
+---
+
+## 第 2998 條（b 組研究，**逐筆清單**）：**推翻或修正策展層／列舉檔／派工信的 6 處，另有 3 處「來源自己打架」只標不定案**
+
+### （一）推翻或補正 6 處
+
+| # | 出處 | 原句 | 本棒查到的 | 依據 |
+|---|---|---|---|---|
+| 1 | **派工信第三節第 4 點＋第 2194 條** | 「seed 實際有《Scratch》與《What If?》**兩張**」 | **3 列**，第三列是 `Joe Locke & Kenny Barron《But Beautiful》(1991)` | 重掃 seed 17248 列（第 2993 條） |
+| 2 | **策展層 `Emma Salokoski & UMO` 的 `risk`** | 只寫「Discogs notes 記瑞典語詞 Mayvor Fridlund」，未指語言方向 | **瑞典語是原詞、芬蘭語是翻譯**；且姓名全名是 **`Mayvor Fridlund-Lintinen`**（帶連字號，與作曲者 Kirmo Lintinen 同姓） | `umohelsinki.fi` 逐字「laulujen sanoittaja Mayvor Fridlund-Lintinen. Suomenkielisestä käännöksestä vastaa useasti palkittu lastenkirjailija Hannele Huovi」 |
+| 3 | **派工信第三節第 2 點** | `Passin' Thru` 是「Montreux 現場」 | **只有第 1 軌**錄於 Montreux（2016-06-30），其餘六軌錄於聖塔菲 The Lensic（2016-07-29） | `bluenote.com/music/passin-thru/` ＋ Discogs `10745067` 的 notes 逐字（與第 2199／2208 條同向，**本棒獨立再證一次**） |
+| 4 | **派工信第四節** | 盤頁路徑寫成 `/release/<slug>/` | **真正的路徑是 `/music/<slug>/`**，`/release/` 回 301 | 逐一實測 14 個網址（第 2995 條） |
+| 5 | **列舉檔 `Ruben Hein` 的 `catno`** | `50999 9174741 9` | **那是荷蘭黑膠 `5278992` 的號**；CD `2983088` 是 **`50999 9174742 6`**（barcode `5099991747426`） | Discogs 兩筆條目逐字（**與第 2209 條的結論一致，本棒獨立再證**） |
+| 6 | **維基 `Jon Cowherd` 條目** | 「released in 2013 on **ArtistShare**」 | **是 Blue Note／ArtistShare 共同發行**：Discogs `5449947` 的 labels 欄逐字同時列兩家、共用目錄號 `ASBN-0126`；`joncowherd.com` 標題逐字「Artist Share/Blue Note Releases…」；ArtistShare 專案頁逐字「Blue Note/ArtistShare release」 | 三邊一致 |
+
+### （二）來源自己打架、只標 uncertain 不定案 3 處
+
+| # | 碟 | 兩邊各說什麼 | 處置 |
+|---|---|---|---|
+| 1 | **Erik Truffaz Quartet** | Discogs `4052391` 的 notes 逐字「Track 10.1 lasts for 5:05 before a period of silence」，**同頁 tracklist 卻把 10.1 記成 11:08** | `facts` 只寫「留白後藏一首未列名的曲子」，**不寫秒數** |
+| 2 | **The Charles Lloyd New Quartet** | `bluenote.com` 把收尾那首寫成 **〈Shiva Dreams〉**，Discogs tracklist 逐字 **〈Shiva Prayer〉** | `facts` 避開曲名，只寫「收尾的祈禱曲是為 Judith McBean 寫的」 |
+| 3 | **The James Carter Organ Trio** | Discogs notes 逐字說碟面把第 4、5 軌的時長印錯了並給出 11:41／08:31，**同頁 tracklist 卻是 7:12／6:27** | `facts` 只寫「碟面印錯」這個事實，**不寫哪一組數字才對** |
+
+### （三）查不到而刻意不寫的 2 筆
+
+1. **The Blue Note 7 的錄音日期與地點**：網路摘要普遍說「2008-05-27／28 於 Bennett Studios (Englewood, NJ)」，
+   **但逐一開啟維基、DownBeat 與 `bluenote.com` 三個一手頁面都查不到這兩項**，不寫。
+2. **Jon Cowherd《Mercy》的錄音年份**：Discogs notes 逐字只有「Recorded December 14-16」與「Mixed December 20-22」，**沒有年份**。
+   `facts` 照原文只寫月日。
+
+---
+
+## 第 2999 條（b 組研究，**派工信第七節指定的覆核**）：**`The Blue Note 7` 的八軌來源，研究層獨立再核一次——結論與第 2187 條完全相同**
+
+策展層第 2187 條是從 **MB 的 recording 端點**逐軌核的。**本棒改從 Discogs 的整筆條目核，等於換一個資料源做同一件事**：
+
+| 核什麼 | 本棒查到的 |
+|---|---|
+| **歐版單 CD `3235910`** | `formats` 逐字 `CD: Album`（**無 `Compilation`、無 `Reissue`**）；八軌，`extraartists` 九筆**全是 The Blue Note 7 的七位團員加三位製作人**，沒有任何一筆是 1960 年代的樂手 |
+| **日版單 CD `17285473`** | `released` 逐字 `2008-12-26`、catno 逐字 `Blue Note TOCJ-66466`、barcode `4988006868328`；**同樣八軌**，曲序與歐版逐軌相同（秒差 1–3 秒，是壓片差異）；`companies` 逐字 `Record Company: EMI Music Japan Inc`；credits 比歐版多一筆 `Liner Notes = Takao Ogawa`（日文解說） |
+| **⚠ 2 CD Special Edition `4339923`** | `format` 逐字 **`CD, Album` ＋ `CD, Compilation` ＋ `All Media, Special Edition`**——**它自己就把兩片分開標了**；`notes` 逐字 **`Original Sessions produced by Alfred Lion.`**；credits 逐字分成 `Producer [The Blue Note 7] = Bill Charlap／Eli Wolf／Michael Cuscuna` 與 **`Producer [Original Sessions] = Alfred Lion`** 兩組；medium 2 的標題逐字 `The Original Sessions` |
+
+**→ 三筆條目交叉核完，結論與第 2187 條一字不差：本卡釘的八軌形是 2008 年的全新錄音，`Album` 判定成立；
+`Compilation` 只屬於 2 CD 版的第二片。** ⚠ **給下游的兩句照第 2187 條（三）不變**：**以 8 軌形為準，抓到 16 軌的就是 2 CD 版；正文不得寫成「收錄 Blue Note 經典錄音」。**
+
+⚠ **本棒另補一格策展層沒記的**：**日版比歐美版多的不只是發行日，還多了 Takao Ogawa 的日文解說**——
+**這是「日版是另一個商品而不只是另一個壓片」的第二個證據，可以加強年份改判 2008 的說服力。**
+
+---
+
+## 第 3000 條（b 組研究，**⚠ 給鉤子層與寫作層；本組最密的同構風險**）：**同批二十張裡有 5 組人脈重疊，研究層已先分好切角**
+
+**本組的 20 張不是彼此獨立的**：Glasper 圈五張互為班底、兩張芬蘭盤共用同一群人、兩張 Musica Nuda 是同一組二重奏。
+**研究層在 `facts` 這一層就先把重疊的段落拆開**，逐筆記在各卡的 `notes` 裡，下游不要再把它們寫回來：
+
+| # | 重疊 | 誰寫 | 誰不寫 |
+|---|---|---|---|
+| 1 | **休士頓 HSPVA（Jason Moran／Robert Glasper／Beyoncé 的母校）** | **Kendrick Scott Oracle**（`bluenote.com` 藝人頁逐字列出校友名單） | **Chris Dave**（同校，但本卡只把 HSPVA 寫成生涯線上的一站，不重述校友名單） |
+| 2 | **Blue Note All-Stars 這支團** | **Blue Note All-Stars《Our Point of View》** | **Kendrick Scott Oracle**（他是團員，但本卡不寫這一層） |
+| 3 | **Emma Salokoski 與 Tuomo Prättälä／J.K. Louhivuori 的人脈**（Prättälä 曾共同領導她的樂團 Quintessence、Louhivuori 是她的姊夫） | **都不寫進 `facts`**，只記在 The Northern Governors 的 `notes` | 兩張皆不寫 |
+| 4 | **Erik Truffaz 是《Musica nuda 2》第二片的客人** | **Musica Nuda《Complici》**（列在客人名單裡，一句帶過） | **Erik Truffaz Quartet**（本卡不提 Musica Nuda） |
+| 5 | **Musica Nuda 這組二重奏本身** | 《Complici》寫「第一次整張唱自己的新歌」／《Banda larga》寫「第一次與管弦樂團合奏＋十週年」 | **兩卡的 `facts` 沒有任何共用段落** |
+
+⚠ **另有兩處「同名不同物」，下游比對時會踩到**：
+
+1. **〈Dream Weaver〉**：`Charles Lloyd《Passin' Thru》` 的開場曲（Lloyd 1966 年的曲子）**對上** `Logan Richardson《Shift》` 日版 bonus 第 12 軌（Discogs 的 `Composed By` 欄逐字是 **Logan Richardson**）——**同名不同曲。**
+2. **`Nicholas Payton`**：在 `The Blue Note 7` 那張是**吹小號的團員**，在 `Otis Brown III` 那張是 Discogs 記的 **`Executive-Producer [Kickstarter Backer]`**——**同一個人、兩種完全不同的角色，不算同構。**
+
+---
+
+## 第 3001 條（b 組研究）：**`qa-batch` 與字元自檢的結果**
+
+```
+cd desc-tools && node qa-batch.mjs research c169
+  a 20 full,full,…（20 個 full）
+  b 20 full,full,…（20 個 full）
+  key 與卡單完全一致 ✓
+  全部通過 ✓
+```
+
+**b 組旗標 0。** ⚠ **`互指?` 沒有輸出，與第 1807-B 條一致**（那是鉤子階段才跑的檢查）。
+
+**字元自檢一律用程式跑、沒有用眼睛掃**（第 126–129 行原文與本批的芬蘭文／日文密度都要求如此）。逐項結果：
+
+| 掃什麼 | 樣式 | 命中 |
+|---|---|---:|
+| 簡體專用字 | `qa-batch.mjs` 的 `SIMP` 字表原樣 | **0** |
+| 非拉丁亂碼 | `qa-batch.mjs` 的 `GARBAGE`（西里爾／天城體／諺文） | **0** |
+| 千分位逗號 | `/\d{1,3}(?:,\d{3})+(?!\d)/` | **0** |
+| 半形逗號貼中文 | `/[㐀-鿿],\|,[㐀-鿿]/` | **0** |
+| `key` 逐字與順序 | 與卡單 `group==='b'` 的 20 個 `key` 全等比對 | **完全相同** |
+| `status`／`coverage` 兩欄並存同值 | 逐張比對 | **20／20 一致** |
+| `src` 全為 `https` | `/^https:\/\/\S+$/` | **235／235 通過** |
+| `hookCandidates ≤ 2` | 逐張 | **20／20 通過** |
+| **`src` 實際可開啟** | 59 個不重複網址逐一 `curl` | **見下** |
+
+⚠ **`src` 連線實測的兩個發現（都已修）**：
+
+1. **`bluenote.com` 的 14 個網址裡有 6 個回 301**（`/release/` → `/music/`，另一個是 `/artist/erik-truffaz/` → `/artist/erik-truffaz-2/`）——**已全部改成轉址後的形，現在全數 200。**
+2. **`discogs.com/release/<id>-<slug>` 的 26 個網址在雲端一律回 HTTP 403**（換瀏覽器 UA 也一樣，是 Discogs 的 bot 防護，不是網址失效；同一批 release 的 `api.discogs.com` 端點全部 200）。
+   **這是既有慣例**：c-167／c-168 的研究稿逐字用的就是同一種 `www.discogs.com/release/…` 形，**本棒照舊**，
+   **但記一筆給主線**：若下游的 manifest gate 會對 `src` 發 HTTP 請求，**這 26 個網址會全部被判成失效**。
+
+⚠ **本批的字元類風險點逐一處理過**（第 144 行「逐字引用是字元類違規的主要入口」）：
+
+- **芬蘭文／瑞典文**（`Rytmihyrrä`／`Öronmaneten`／`Jättepandan`／`Ojajärvi`／`Päivinen`／`Långbacka`）：**拉丁變體，依規則合法且照原文保留。**
+- **日文假名**（〈愛のバラード〉〈色彩のブルース〉〈キエフの空〉〈スランバー〉〈新千歳空港〉）：**曲名屬專名，依第 144 行的例外合法**；`qa-batch` 的 `GARBAGE` 樣式本來就不含假名，實測不亮。
+- **日文漢字人名**依 2026-08-11 裁定照原文寫（須永辰緒／大野雄二／佐野 観／小泉P克人／太宰百合／小島 翔／西嶋 徹／藤井 摂／松岡「MATZZ」高廣），**每一個都有 `universal-music.co.jp` 逐字為據**；
+  ⚠ **查不到漢字寫法的（Kazufumi Kodama／Junnosuke Fujita／Yusuke Orita）一律照 Discogs 的羅馬字原樣抄，不自行推回漢字**——**猜錯字形等於改掉人名，比違反字形規則更糟。**
+- **法文重音**：James Carter 那張的 Discogs tracklist 把重音全拿掉，`facts` 內文補回原字形（〈Le Manoir de mes rêves〉），
+  ⚠ **但 `keyTracks` 欄刻意照 Discogs 的無重音形**——那一欄下游要拿去折鍵比對盤面，補了重音反而對不上（第 30–33 行 `norm` 的 NFD 剝除只處理組合字元，來源兩形不同時仍會折出不同鍵）。
+
+---
+
+## 第 3002 條（b 組研究，**⚠ 派工信與 base 檔／既有裁定牴觸之處**）
+
+派工信第一節逐字要求「本信若與它牴觸，以它為準，並在交件回報裡指出本信哪一句寫錯了」。**本棒查到四處。**
+
+### （一）⚠ 第三節第 2 點把 `Passin' Thru` 寫成「Montreux 現場」——**與第 2199／2208 條同向，派工信自己在第三節第 2 點的括號裡也更正了**
+
+派工信第三節第 2 點的正文逐字先寫「⚠ **`Passin' Thru` 不是「Montreux 現場」**」再展開，**這一點派工信是對的**；
+**真正寫錯的是 `slice.json` 的 `note`**（第 2208 條（三）已記）。**本棒實測 `bluenote.com/music/passin-thru/` 與 Discogs `10745067` 的 notes，兩邊都逐字支持「1 軌 Montreux ＋ 6 軌 The Lensic」。**
+
+### （二）⚠ ⚠ 第四節的路徑清單把盤頁寫成 `/release/<slug>/`
+
+**這是本棒唯一一處「照派工信做會做錯」的**：`/release/<slug>/` 回 301。**正確是 `/music/<slug>/`**（第 2995 條）。
+**建議把這一句寫進簡報第三節，與第 2867 條的「出身地分界」並列。**
+
+### （三）⚠ 第四節第 1 點「⚠ 關鍵字要把藝人名放最前面」這條建議在本棒無效——**原因不是關鍵字，是端點**
+
+派工信教的是調整 `posts?search=` 的關鍵字順序。**本棒實測：`wp-json/wp/v2/types` 回的公開型別只有 `post` 與 `page`，
+`/music/` 與 `/artist/` 兩種頁都不是 `post`**——**關鍵字怎麼排都搜不到盤頁，這是端點的邊界不是查詢技巧的問題**（第 2995 條（二））。
+**「撇號會讓 search 落空」那一句本棒沒有機會驗證**（本組帶撇號的只有 `Passin' Thru`，而它的盤頁是用直接猜 slug 找到的）。
+
+### （四）⚠ 第三節第 4 點「seed 實際有兩張 Kenny Barron」——**漏了第三列**（第 2993 條）
+
+### ⚠ 另記三句不算牴觸、但與實況有出入的
+
+- 派工信第四節說「c-168（1985–1999 段）實測 Discogs 整筆 18／18 是絕對主力、`bluenote.com` 只有 1／18」，並預測「你這一段的歐洲分支盤大概率也是這樣，Glasper 圈那幾張才回得到 `bluenote.com`」——
+  **預測正確，但比例要修正**：b 組的 `bluenote.com` 是 **7／20**（美國本部 9／11、歐洲與日本分支 0／9），**比 c-168 高得多**，
+  **因為 b 組的美國本部盤有 11 張、c-168 只有 1 張**。**Discogs 整筆仍是 20／20 的絕對主力。**
+- 派工信第二節說策展層 b 組實測「15／20 有圖、只有 6 張來源是原盤或唯一版本、5 張 404」——**本棒未重驗封面，照抄第 2205 條**，
+  但已把 Discogs 記到的兩筆版式（Aron Ottignon 的 `4-panel digisleeve with a 12-page booklet`、Sarah McCoy 的 `Gatefold cardboard, including a 16-page booklet`）寫進對應卡的 `notes` 供封面層使用。
+- 派工信第五節第 6 點提醒 `itunes.apple.com/search` 會 403——**本棒完全沒有動用店面查法**（策展層第 2204 條已跑完），
+  **因此本稿沒有任何一條 fact 涉及「在不在架上」。**
+
+### ⚠ **第 1803-B 條的交件聲明**
+
+**工作區當下的 `desc-tools/batches/research/c169-b.json` 才是交件版。**
+本棒中途存檔 7 次（每 3 張一次，最後一次是 19–20 張），**交件前又整檔改過一輪 `src`（14 個 `bluenote.com` 網址改成轉址後的形）**——
+**「筆數對了」不等於「定稿了」**：那一輪改動之後 `qa-batch` 與全部字元自檢都重跑過一次，**以磁碟上這一版為準。**
+
+---
