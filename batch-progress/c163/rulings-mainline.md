@@ -2192,3 +2192,38 @@ bluenote.com 逐字稱 Oracle 為 "his band"。
 **另有一處破例已記錄**：`Greg Tardy《Four》` 補寫「沒有貝斯手」
 （盤名與四張 seed 卡折鍵同鍵、機器不會報，需要辨識點；來源在 `facts`、不在 `note` 列項內）——裁定 2108，
 **本機若要嚴守 `note`，刪七字即可，字數仍落 185。**
+
+## 第 1807-B 條（c-166 研究 a 驗收）：**23/23 全 `full`，278 條 facts，src 全為完整 https**
+
+`qa-batch research c166` 全部通過、總標記 0、key 與卡單完全一致；facts 12–13 條／張。
+來源分佈 **bluenote.com 191／discogs 57／musicbrainz 15／universal-music.co.jp 10／wikipedia 5**（維基只用於獎項交叉核）。
+
+### ③ 來源層的權重要改：`wp-json` 幾乎一支打天下
+
+**(1) `wp-json/wp/v2/posts?search=` 19／23（主力）｜(2) `artist/<slug>/` 決定性只有 1／23｜
+(3) `?s=` 一次都沒用上｜(4) `universal-music.co.jp` 1／23｜(5) 藝人官網 0／1**（markknopfler.com 是 JS 渲染）。
+⚠ **撇號會讓 `wp-json` 的 search 落空**：`O%27Farrill` 回 0、**`Ofarrill` 回 3**——**專名帶撇號時要另試去撇號形。**
+⚠ **`chihiro-yamanaka` 200，名在前**——與第 1751-B 條一致：**日本線的 slug 順序沒有規律，兩種都要試。**
+
+### 策展層被推翻三處（硬錯誤 1、不精確 2），其餘 20 張零推翻
+
+- `Chris Botti《Vol. 1》` 的合作名單被策展層加了 **Steven Tyler**——三份 2023 發片稿的逐字名單**沒有他**。
+- `Arturo O'Farrill《Legacies》` 的〈Obsession〉被歸進 Hancock／Monk／Rollins／Powell／Bley 那一串
+  ——官網逐字歸給**波多黎各作曲家 Pedro Flores**；〈Pure Emotion〉才是他父親 Chico O'Farrill 的。
+- 同卡未寫明〈Paris〉是**全碟唯一人聲曲**（官網逐字 `the vocal feature "Paris"`）。
+
+⚠ **另有一張的主故事策展層整層沒查到**：**`山中千尋《Dolce Vita》` 整張是 Wayne Shorter 致敬盤、末兩軌另悼坂本龍一。**
+**這是該卡的主故事，`why`／`risk` 一個字都沒有。**
+
+### ⚠ 派工信一句是空指令
+
+**「`互指?` 逐筆人工判讀」對研究層不成立**：`qa-batch.mjs` 的 `互指?` **只在 hook 與 out 兩階段輸出**，
+research 階段結構上不會產生任何一行。**後批的研究層派工信改成「若有才判」或直接拿掉。**
+（這與第 1795-B／1805-B 同族：**主線把別的層的流程原封貼到這一層**。）
+
+### 三處下游硬警告（已寫進各卡 notes）
+
+- **Gregory Porter 的 Apple 12 軌原版已下架，只剩 15 軌 Deluxe `1779846239`。**
+- **Cautious Clay 必須取 explicit 的 `1692470376`。**
+- **Norah Jones 兩張 Apple 全空，絕不可拿同名單曲 `1488043432` 或母體專輯條目充數**；
+  **`Little Broken Hearts (Deluxe Edition)` 的第三張黑膠逐字是 Austin City Limits 2012，不是 Allaire**（第 1792-B 條同一件事的第二次確認）。
