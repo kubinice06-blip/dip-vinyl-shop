@@ -1146,3 +1146,318 @@ node batch-progress/dedup-crossbatch.mjs c169
 ⚠ **掛名字串要用店面／Discogs 那一種**：本組 `Charles Lloyd New Quartet` 用卡上的 `The Charles Lloyd New Quartet` 查會回 **0 筆**，改用 `Charles Lloyd` 才回 8 筆。
 
 ---
+
+# c-169 **a 組研究層（20 張，2000–2009）** 裁定　2026-09-19
+
+*（編號 2851–2900 為 a 組研究層專用區間。本段以 append 寫入，未動前面第 1557–1560-AE 條、a 組策展第 2126–2149 條與 b 組策展第 2186–2209 條。）*
+
+## 第 2851 條（a 組研究，**總表**）：**20 張全部 `full`；232 條 facts、每張 11–12 條；每張至少 2 個不同來源網域**
+
+| | 值 |
+|---|---|
+| 交件張數 | **20／20**，`status` 與 `coverage` 兩欄並存同值，全部 `full` |
+| facts 條數 | **總 232 條**；分佈 **11 條 8 張、12 條 12 張**（規定 8–12） |
+| `hookCandidates` | 每張 **2 條**，無超額 |
+| src 網域 | `discogs.com` 138／`en.wikipedia.org` 24／`musicbrainz.org` 20／`de.wikipedia.org` 7／**`bluenote.com` 6**／`fi.wikipedia.org` 4／`it.wikipedia.org` 4／`thierrylang.ch` 3／`fr.wikipedia.org` 3／`debaser.it` 3／其餘 11 個網域各 1–2 條 |
+| 每張的不同網域數 | **最少 2（Brisa Roché）、最多 5（Juliano Rossi）**，全部達到 manifest gate 的「至少兩個 HTTPS 來源」 |
+
+**派工信第三節第 1 點要求的「把 `api.discogs.com/releases/<id>` 的整筆逐軌 credits 當主力」已照做**：本層逐筆拉了 **27 個 Discogs release 的完整 JSON**（不是 `search` 摘要），本批 20 張裡**有 13 張的主故事是從整筆 credits 的 `extraartists` 或逐軌 `written-by` 欄挖出來的**——**`search` 的 `extraartists` 只回前四筆，這 13 條裡沒有一條會出現在前四筆裡。**
+
+---
+
+## 第 2852 條（a 組研究，**派工信第三節第 3 點指定必查的那一件；查證完成**）：**`Θάνος Μικρούτσικος《Music Stories》` 的 7–9 軌確實是 1985 年的〈Duo〉，最早發行在 1986 年的希臘盤——但「是否同一份母帶」無法鎖死**
+
+| 項 | 逐字 |
+|---|---|
+| 本盤 notes（Discogs 3264997） | **`Tracks 7 to 9 recorded at the "Action" studio in 1985`** |
+| 本盤 7–9 軌的演出者 | **`David Lynch (3)=Alto Saxophone(7 to 9)`／`Giorgos Fakanas=Electric Bass(7 to 9)`** |
+| **1986 年那張（Discogs 9204561）** | **`Thanos Mikroutsikos — Duo For Alto Saxophone And Electric Bass / Opera For One`，label 逐字 `Εταιρία Νέας Μουσικής`，catno `CP 91019`，Greece，Vinyl LP，1986** |
+| **該盤 A1 面逐字** | **`Duo For Alto Saxophone And Electric Bass` 14:48，演出者逐字 `David Lynch (3)=Alto Saxophone`／`Giorgos Fakanas=Electric Bass`** |
+| 旁證 | **`jazzlibrary.gr` 的 Giorgos Fakanas 個人頁把 1986 年那張列在他的參與作品裡**；英文維基的 Μικρούτσικος 器樂作品目錄逐字含 **duets for saxophone and electric bass** |
+
+**結論（三句，正文請照這三句寫）**：
+1. **7–9 軌是 1985 年錄的，不是 2001 年。**（盤面 notes 逐字。）
+2. **這套作品最早以 1986 年的希臘盤《Duo For Alto Saxophone And Electric Bass / Opera For One》問世，演出者是同樣兩位。**
+3. ⚠ **不得斷言「就是 1986 年那張的同一條母帶」**：1986 年 LP 把它收成**單一段落 14:48**，本盤拆成三個樂章共 **16:26**（9:26 ＋ 5:05 ＋ 1:55），差 **1 分 38 秒**；兩邊的 notes 都沒有寫母帶來源，沒有任何一層能把「同一份錄音」鎖死。**保守寫法：「第 7 至 9 軌是 1985 年的錄音，這套二重奏最早以 1986 年的希臘盤問世。」**
+
+⚠ **策展層第 2141 條的 (丁) 判定不受影響**：主體六軌是 2001 新錄音、2003 首發，`releaseType` 仍是 `Album`。
+⚠ **另補一格策展層沒寫的**：**Gary Burton 的 credits 欄逐字只涵蓋第 1 至 6 軌**（`Vibraphone(1 to 6)`），7–9 軌完全沒有他——這比策展層第 2131 條「Burton 是獨奏者不是共同領班」更硬。
+
+---
+
+## 第 2853 條（a 組研究，**推翻策展層的逐筆清單：9 處，分佈在 9 張卡**）
+
+| # | 卡 | 策展層寫的 | 查證結果 | 條 |
+|---|---|---|---|---|
+| 1 | **Paolo Fresu Quintet《Kosmopolites》** | 「整張 15 軌**全部**是鋼琴手 Roberto Cipelli 的作品」 | ❌ **末軌〈Lascia Ch'io Pianga〉是 Händel 的詠嘆調**，兩份義大利樂評逐字點名這是唯一例外 | 2854 |
+| 2 | **同上** | 「這套系列⋯⋯**三張**同形」 | ❌ **樂評逐字 `una serie di cinque dischi`（五張）**，計畫橫跨三年 | 2854 |
+| 3 | **Paolo Fresu Quintet《Thinking》** | 「12 軌 60 分鐘**全部**是鼓手 Ettore Fioravanti 的作品」 | ❌ **第 10 軌〈Danza Della Fata Dei Confetti (da "Lo Schiaccianoci")〉是柴可夫斯基《胡桃鉗》的〈糖梅仙子之舞〉** | 2855 |
+| 4 | **High Five Quintet《Five for Fun》** | 「收了 **Kenny Dorham** 的〈Ojos de Rojo〉與 **Woody Shaw 系**的〈Inception〉」 | ❌ **兩筆 Discogs 條目的逐軌 written-by 逐字是 `Cedar Walton` 與 `McCoy Tyner`** | 2856 |
+| 5 | **Brisa Roché《The Chase》** | 「美版拿掉**三段**〈Intermission〉」（第 2136 條） | ❌ **法版原壓只有兩段**〈Intermission 1〉0:48 與〈Intermission 2〉0:49 | 2857 |
+| 6 | **Thierry Lang《Guide Me Home》** | 「Discogs 那 15 軌的**差額未核**」（第 2136 條） | ❌ **不是版本差異**：Discogs 的 15 列裡有兩列是標題列（`Guide Me Home`／`Bonus Cd`），實際曲目就是 9 ＋ 4 ＝ 13 軌，與 MB 一致 | 2858 |
+| 7 | **Juliano Rossi《Free Runner》** | 「`Oliver Perau` 是本盤的**作詞者兼製作夥伴**的個人名義」（第 2133 條 (丙) 訊號 3） | ❌ **Oliver Perau 就是 Juliano Rossi 本人的本名**（laut.de 逐字）。**過閘結論不變，理由要改** | 2859 |
+| 8 | **Franco D'Andrea《The Siena Concert》** | 「只有 6 軌卻是 77 分鐘——平均一軌近 13 分鐘，等於把整晚的長篇即興原樣留下」 | ❌ **那 6 個編號每一個都是 medley**，底下共 **17 首**子曲；不是六首長篇即興 | 2860 |
+| 9 | **Anna-Mari Kähärän Orkesteri** 同名盤 | 軌目抄 MB 寫成〈A Lynmouth **Window**〉 | ❌ **Discogs 芬蘭原壓盤面逐字〈A Lynmouth Widow〉**（寡婦） | 2861 |
+
+⚠ **另有 5 處「不算推翻、但策展層整層沒查到主故事」**：
+| 卡 | 策展層沒查到的那條 |
+|---|---|
+| **Trio Focan《standard a'la Turc》** | **Önder Focan 是第一位替 Blue Note 錄音的土耳其音樂家（1998《Beneath the Stars》）**，本作是同一條線的第三張；他還在本作出版的同一年（2002）開了伊斯坦堡的 Nardis Jazz Club |
+| **Thierry Lang《Guide Me Home》** | **1996 年美國巡演途中認識 Queen 的經紀人 Jim Beach，Beach 成為他的經紀人，他因此成為第一位簽下 Blue Note 藝人合約的瑞士人**——這正是那張 Freddie Mercury 附碟的由來，Beach 本人掛本盤 executive producer |
+| **Anna-Mari Kähärän Orkesteri** | **七首的歌詞整批取自英語詩人**（Robert Louis Stevenson／Charles Bukowski／Elizabeth Siddal／Lorna Crozier／Amelia Josephine Burr／June Faith），而且**小提琴家 Pekka Kuusisto 全程參與** |
+| **Joona Toivanen Trio《Frost》** | **8 首的作曲是鼓手 Olavi Louhivuori 寫 1–4 軌、鋼琴手 Joona Toivanen 寫 5–8 軌**，一人一半 |
+| **Brisa Roché《The Chase》** | **製作 Daniel Yvinec、混音 Scott Harding、編曲兼多樂器 Michael Leonhart**，以及 **Erik Truffaz 客座第 13 軌〈Coco〉** |
+
+---
+
+## 第 2854 條（a 組研究，**裁定**）：**《Kosmopolites》的系列是五張、末軌是 Händel——正文兩句都要改**
+
+- **Händel**：debaser 與 allaboutjazz 的義大利文樂評都逐字寫「唯一的例外是 Georg Friedrich Händel 的〈Lascia ch'io pianga〉」，且它是**收尾曲**。Discogs 軌目第 15 軌逐字就是〈Lascia Ch'io Pianga〉。
+- **五張**：debaser 逐字 `una serie di cinque dischi, ciascuno dedicato alla musica scritta da uno dei componenti del gruppo`，並寫計畫橫跨三年。**五重奏五個人、一人一張，數字自洽。**
+- ⚠ ⚠ **引用 debaser 那頁時只能取這兩點**：**該頁把團員名字寫錯了**（`Bruno Cipelli`／`Furio Zanchi`／`Adriano Fioravanti`／`Andrea Tacanna`）。編制一律照 Discogs 3412494 的盤面 credits：**Paolo Fresu 小號、柔音號、效果器｜Tino Tracanna 次中音與高音薩克斯風｜Roberto Cipelli 平台鋼琴｜Attilio Zanchi 低音提琴｜Ettore Fioravanti 鼓**。
+- **可逆**（只動 facts 與正文措辭，不動卡池結構）。
+
+---
+
+## 第 2855 條（a 組研究，**裁定**）：**《Thinking》第 10 軌是柴可夫斯基；Discogs 的 credits 欄有兩處不可照抄**
+
+- **第 10 軌盤面曲名逐字 `Danza Della Fata Dei Confetti (da "Lo Schiaccianoci")`**——《胡桃鉗》的〈糖梅仙子之舞〉。**與《Kosmopolites》的 Händel 是同一種安排：兩張各留一首古典曲當外來物。**
+- ⚠ **Discogs 5148183 的 credits 欄兩處錯，不得照抄**：
+  1. **`Attilio Zanchi=Contrabassoon`**（低音管）——Zanchi 是低音提琴手，《Kosmopolites》同一份編制逐字是 `Contrabass`。
+  2. **`Paolo Fresu=Flugelhorn, Trombone`**（長號）——Fresu 吹小號與柔音號，《Kosmopolites》逐字 `Trumpet, Flugelhorn, Effects`。
+  **→ 給後批：同一個編制的兩張碟，credits 欄要交叉比對；單張的樂器欄會錯。**
+- ⚠ 第 2 軌盤面拼作〈DB Tinking〉（少一個 h），照盤面抄。
+
+---
+
+## 第 2856 條（a 組研究，**裁定**）：**《Five for Fun》的兩首外來曲是 Cedar Walton 與 McCoy Tyner，不是 Kenny Dorham 與 Woody Shaw**
+
+**Discogs 義版 16217874 與日版 4149843 兩筆條目的逐軌 `written-by` 欄逐字**：
+- 第 2 軌〈Ojos De Rojo〉＝ **`Cedar Walton`**
+- 第 7 軌〈Inception〉＝ **`McCoy Tyner`**
+
+**兩筆獨立條目一致，策展層那兩個名字沒有任何一層支撐。正文不得寫成 Kenny Dorham 或 Woody Shaw。**
+⚠ 另補：**標題曲〈Five For Fun〉的作者欄逐字掛五個人**（全團集體創作），其餘由團員分寫；日版 bonus 兩首是 **Joe Henderson〈A Shade Of Jade〉** 與 **Antonio Carlos Jobim〈Ligia〉**。
+⚠ 第 8 軌兩版拼法不同：義版〈Evan's Even〉、日版〈Evan' Seven〉。
+⚠ **Fabrizio Bosso 同時是本卡的領班與本組第 15 筆 `Alice Ricciardi《Comes Love》` 的客座小號**——同年、同廠牌、同國，**兩張卡的 `risk` 應互指**（第 738／859 條的撞陳列型態，但那是客座不是同碟）。
+
+---
+
+## 第 2857 條（a 組研究，**更正第 2136 條的一格**）：**《The Chase》法版只有兩段〈Intermission〉**
+
+**Discogs 法版原壓 1285705 的軌目逐字**：第 8 軌〈Intermission 1〉0:48、第 12 軌〈Intermission 2〉0:49，**沒有第三段**。
+美版 36180364 的 17 軌是**把這兩段拿掉、並把隱藏軌〈Ride 600〉提成第 12 軌**。
+法版第 18 個編號拆成 **18a〈Now That It's Long Over〉4:05 ／ 18b 靜默 0:25 ／ 18c〈Ride 600〉3:55**，notes 逐字 `CD contains hidden track "Ride 600"`。
+
+⚠ **本卡最強的一條新事實**：**第 13 軌〈Coco〉的小號客座逐字是 `Erik Truffaz`**——池中 `Erik Truffaz` 這個字串有 12 張碟（c-154～c-166），**這是本線第一次出現「池中藝人以客座身分出現在另一張卡上」**。不是撞卡（不同碟、不同掛名），但下游寫作層若要用，要寫成客座。
+⚠ 另補：製作與編曲 **Daniel Yvinec**、混音 **Scott Harding**（紐約）、母帶 **Greg Calbi**（Sterling Sound）、編曲兼多樂器 **Michael Leonhart**；第 3 軌〈Dans Le Vert De Ses Yeux〉的作者逐字是 **Adamo（Salvatore Adamo）**。
+
+---
+
+## 第 2858 條（a 組研究，**解掉第 2136 條的一格懸案**）：**《Guide Me Home》的「Discogs 15 軌」是計數方式，不是版本差異**
+
+Discogs 瑞士原壓 3987761 的 `tracklist` 陣列有 15 個元素，**但其中兩個是 `position` 為空的標題列**（逐字 `Guide Me Home` 與 `Bonus Cd`）。
+**扣掉這兩列，實際曲目就是 1-1～1-9（9 軌）＋ 2-1～2-4（4 軌）＝ 13 軌，與 MB 的 9 ＋ 4 完全一致。**
+**日版 TOCJ-66099（Discogs 6474752）是同樣 13 首，只是連號成 1–13 收在單片上。**
+
+**→ 給後批（新立一句）：Discogs 的 `tracklist` 陣列含 `type_=heading` 的標題列，逐張比軌數前必須先濾掉 `position` 為空的元素；本線已有兩次因此誤報版本分歧（本卡與 `Alice Ricciardi` 日版的 15 列）。**
+
+⚠ 本卡的主故事另見第 2853 條下半：**Jim Beach → Blue Note → Freddie Mercury 附碟**這條線策展層四層都沒查到。
+⚠ 錄音是 **1999-12-11 奧斯陸 Rainbow Studio**、**Jan Erik Kongshaug 錄音與混音**、Lang 彈 Steinway D——這三格也是策展層沒有的。
+⚠ 標題曲〈Guide Me Home "Jazz"〉的原曲是 1988 年《Barcelona》裡 Freddie Mercury 與 Mike Moran 合寫的〈Guide Me Home〉。
+
+---
+
+## 第 2859 條（a 組研究，**更正第 2133 條 (丙) 訊號 3 的理由**）：**`Oliver Perau` 就是 Juliano Rossi 本人**
+
+laut.de 的藝人頁逐字：**`Juliano Rossi aka Oliver Perau erblickt 1970 in Hannover das Licht der Welt`**。
+**→ Apple ℗ 欄的 `℗ 2009 Oliver Perau` 是「藝人本人名義」，不是策展層寫的「作詞者兼製作夥伴的個人名義」。**
+**過閘的結論完全不變**（第 1748 條第一種假陽性），**但理由要改**——正文若照策展層寫成「製作夥伴」會是事實錯誤。
+
+⚠ **本卡的主故事也因此浮出來**：Perau **十七歲創了漢諾威搖滾團 Terry Hoax**（1988 成立、1996 解散前演過約 600 場，翻唱的〈Policy of Truth〉一度是 MTV 上播放次數最多的德國樂團錄影帶），**2003 年前後才改用 Juliano Rossi 這個藝名唱搖擺樂**。
+⚠ 盤面 notes 的 `composed by Oliver & Lutz Krajenski` 裡的 `Oliver` 指的就是 Perau 自己——**這張碟的詞曲他都有份，署的是本名。**
+⚠ 網路上另有「以第三位德國音樂家的身分簽進 Blue Note」的說法，**只在搜尋摘要層出現、找不到可開啟的一手頁面，未寫進 facts**（第 48 條「某廠牌史上第一張一律反查」的同一條規矩）。
+
+---
+
+## 第 2860 條（a 組研究，**補齊第 2139 條要求研究層補的那一格，並更正曲目形狀**）：**《The Siena Concert》演出日是 2006-07-26；六個編號其實是六段 medley、共 17 首**
+
+- **完整 notes（策展層那邊被截成 `July 26t`）逐字**：`The concert was recorded live on July 26th 2006 at "Enoteca Italiana" during "Enoteca Jazz Club Festival" 12th Edition, organized by "Siena Jazz Foundation"`。**演出年 2006、發行年 2008，正文可以寫演出日期了。**
+- ⚠ **形狀更正**：Discogs 2936002 的 6 個編號**每一個的 `title` 欄逐字都是 `Medley`**，底下共 17 首 `sub_tracks`：
+  | 段 | 長 | 子曲 |
+  |---|---|---|
+  | 1 | 27:25 | Into The Mystery／Riff／Dancin' Thirds／Six Bars／Dancing Colours |
+  | 2 | 12:16 | Monodic／Afro Abstraction／Deep |
+  | 3 | 6:41 | Fragole／Monodic |
+  | 4 | 12:50 | Slow Five／Another Riff |
+  | 5 | 7:33 | Old Time Blues／**Goodbye Pork Pie Hat（1:00）** |
+  | 6 | 10:15 | Altalena／March |
+  **→ 不是「六首長篇即興」，是「六段連奏」。〈Monodic〉在整場出現兩次。Mingus 的〈Goodbye Pork Pie Hat〉只有 1 分鐘、是第五段的收尾而不是獨立一軌。**
+- ⚠ **後製由樂團內部完成**：貝斯手 Aldo Mella 兼任剪輯與母帶。
+- ⚠ D'Andrea 的 2010 年 Musicien Européen de l'année 與 2011 年 Italian Jazz Awards 榮譽獎**晚於本作且與本作無關**，依反向禁令未寫進 facts（只在 notes 記一筆）。
+
+---
+
+## 第 2861 條（a 組研究，**曲名更正 ＋ 主故事補上**）：**Anna-Mari Kähärän Orkesteri 同名盤**
+
+- **曲名兩處更正**（策展層 `why` 與 `mbNote` 抄 MB 軌目）：〈A Lynmouth **Window**〉→ **〈A Lynmouth Widow〉**；〈Love is in your heart〉→ 盤面逐字 **〈Love Is In Your Heart〉**。
+- **主故事（策展層整層沒有）**：**七首全部由 Kähärä 作曲，歌詞則整批取自英語詩人**——Robert Louis Stevenson（〈Requiem〉）、Amelia Josephine Burr（〈A Lynmouth Widow〉）、Charles Bukowski（〈War〉）、Lorna Crozier（〈So This Is Love〉）、Elizabeth Siddal（〈Dead Love〉）、June Faith（〈Love Is In Your Heart〉）。
+- **第二格主故事**：**小提琴家 Pekka Kuusisto** 在盤上掛小提琴、電小提琴、電小提琴貝斯與曼陀林，還參與人聲——芬蘭最知名的小提琴家全程參與一張 Blue Note 爵士盤。
+- **發行日補上 2005-03-30**（策展層只有年份，Apple 查無、MB frd 也只有年份）。
+- **獎項逐項分開**：Yrjö 獎（2002-11，**得獎**，第一位獲此獎的女性）、芬蘭獎 Suomi-palkinto（2002-12，**得獎**）——**兩者都是給本人、不是給本作**；**Jazz-Emma（2005，提名，未得獎）** 才是本作的。
+
+---
+
+## 第 2862 條（a 組研究）：**《Frost》的作曲分工是一人一半；整張的製作其實都在瑞典**
+
+- **Discogs 1024748 的逐軌 written-by 欄逐字**：**`Olavi Louhivuori=Written-By(1 to 4)`／`Joona Toivanen=Written-By(5 to 8)`**——鼓手寫前半張、鋼琴手寫後半張。**策展層只把 Louhivuori 寫成「後來成為北歐即興圈的主力」，沒發現他在本盤就寫了一半。**
+- **錄音在瑞典 Kållered 的 Nilento Studio、混音與母帶在哥德堡 Studio Bunkern，三項全由 Johannes Lundberg 一人完成**——這張芬蘭 Blue Note 盤的製作整個在瑞典。
+- **三人是童年在 Jyväskylä 認識、1990 年代中期還是少年時就成團，本作是第三張而不是首作。**
+- ⚠ 封面設計 Janne Uotila 與 U-Street All Stars 兩張是同一位——**本組四張芬蘭盤（U-Street ×2、Joona Toivanen、Anna-Mari Kähärä）共用的側人不只 J-P Virtanen（行政製作）還有這一位。**
+
+---
+
+## 第 2863 條（a 組研究，**年份：對第 2132 條（一）提出反證，但建議維持改判**）：**`Jackie Allen《Tangled》` 仍取 2006**
+
+**新查到的反證一條**：**英文維基的 Jackie Allen 條目逐字把《Tangled》寫成 `Released in 2004`**，與 Discogs 英版條目的年份欄、MB frd 同向。
+
+**但策展層第 2132 條的四項依據本層逐項覆核，一項都沒被推翻**：
+1. Apple us／gb／de 三店同一 id 716517015，℗ 逐字 2006 Blue Note Records；
+2. 美版 Discogs 10798559 的年份欄 2006、℗© 與製造欄逐字 `Blue Note Records`；
+3. 目錄號 30080／30081 連號＝同一次配號，`0946 3 xxxxx 2 x` 段是 2005 年以後才啟用（同組佐證兩筆）；
+4. **兩版的 12 軌軌目與軌長逐秒相同**（本層逐軌比對過），是同一張碟的兩地發行。
+
+**裁定：維持 2006。** 維基那一句沒有引註，且與它自己引的 Thom Jurek 評論（AllMusic，2006）矛盾。**可逆**（只動 `year`）。
+⚠ **`risk` 請保留一句**：「英版可能 2004 年就在英國上市，本卡取全球零售年 2006」——本機端若拿到 2004 年英國的紙本或榜位，改回即可。
+⚠ **另補兩格策展層寫偏的**：(一) 鋼琴不是只有 Laurence Hobgood，**Ben Lewis 彈的軌數還比較多**（第 1、2、4、6–8、10 軌 vs Hobgood 的第 3、9、11、12 軌）；(二) **Donald Fagen 的那一首是〈Do Wrong Shoes〉**，〈Solitary Moon〉的作曲是 **Johnny Mandel**。
+
+---
+
+## 第 2864 條（a 組研究）：**獎項逐項分「入圍／得獎」——本組查到 11 項，全部標明歸屬與年份**
+
+| 卡 | 獎 | 年 | 入圍／得獎 | 給誰 |
+|---|---|---|---|---|
+| Anna-Mari Kähärän Orkesteri | Yrjö 獎（芬蘭爵士聯盟） | 2002-11 | **得獎**（第一位女性） | **本人** |
+| 同上 | 芬蘭獎 Suomi-palkinto | 2002-12 | **得獎** | **本人** |
+| 同上 | **Jazz-Emma** | **2005** | **提名（未得獎）** | **本作** |
+| Alice Ricciardi | Montreux Jazz Festival International Vocal Competition | 2005-07 | **第二名**（不是首獎） | 本人 |
+| Paolo Fresu ×2 | 《Musica Jazz》最佳義大利音樂家／最佳樂團／最佳唱片 | 1990 | **得獎** ×3 | 本人與五重奏 |
+| 同上 | Bobby Jaspar 獎（Académie du Jazz）／Django d'Or 最佳歐洲爵士音樂家 | 1996 | **得獎** ×2 | 本人 |
+| Paolo Fresu《Thinking》 | Nastro d'Argento 最佳配樂 | 2004 | **得獎** | 本人（電影配樂，與本作同年錄音） |
+| High Five Quintet | 《Musica Jazz》最佳新人 | 1999 | **得獎** | Fabrizio Bosso 本人 |
+| Musica Nuda《55/21》 | **Premio Tenco（interpreti 類）／MEI 最佳義大利巡演** | **2006** | **得獎** | ⚠ **給的是《Musica nuda 2》那張，不是本作** |
+| Kitty Hoff | Lale Andersen 獎 | 2008 | **得獎** | 本人（本作前一年） |
+| 同上 | 柏林全國歌唱比賽香頌／歌曲組 | — | **兩度首獎** | 本人 |
+
+⚠ **「本作本身拿到獎」的只有 0 張**：20 張裡沒有任何一張查到頒給該專輯的獎項，Anna-Mari 那張是**提名**。**正文不得把藝人的生涯獎項寫成這張碟的獎項**——Musica Nuda 那一格最容易寫錯（得獎的是前一張）。
+
+---
+
+## 第 2865 條（a 組研究）：**「某某第一張／第一位」一律反查——採用 2 筆、退掉 2 筆**
+
+| 宣稱 | 反查 | 處置 |
+|---|---|---|
+| **Önder Focan 是第一位替 Blue Note 錄音的土耳其音樂家（1998《Beneath the Stars》）** | 英文維基條目逐字寫明，且與池中 c-153 b／c-155 b 那兩張（1998／1999）的年份對得上 | ✔ **採用** |
+| **Thierry Lang 是第一位簽下 Blue Note 藝人合約的瑞士人（1996）** | 他自己的官網傳記逐字 `le premier musicien suisse à obtenir un contrat d'artiste avec le célèbre label Blue Note`，與 1996 年首張同名專輯的時序對得上 | ✔ **採用**（並在 facts 寫成「第一位與 Blue Note 簽下藝人合約的瑞士音樂家」，不寫成「第一張瑞士碟」） |
+| Alice Ricciardi 是「第一位在 Blue Note 錄音的義大利爵士女歌手」 | 廠牌官網無此頁；只在義大利媒體的轉述層出現，jazzitalia 的個人傳記整段沒有提到 Blue Note | ❌ **不寫進 facts** |
+| Kitty Hoff 是「Blue Note Germany 的第一位德國女性簽約者」 | 只在搜尋摘要層出現，德文維基與 Discogs 都沒有；Blue Note Germany 本身是分支標記而非獨立廠牌，這個宣稱的分母定義不清 | ❌ **不寫進 facts** |
+| Juliano Rossi「以第三位德國音樂家的身分簽進 Blue Note」 | 只在搜尋摘要層出現，laut.de 的藝人頁與唱片評論都沒有這一句 | ❌ **不寫進 facts** |
+
+**→ 本條是第 48 條（「某廠牌史上第一張一律要反查廠牌沿革」）在本批的第五次應驗；五筆宣稱只有兩筆站得住。**
+
+---
+
+## 第 2866 條（a 組研究，**③ 來源層各查法命中率**）
+
+| 查法 | 命中 | 說明 |
+|---|---:|---|
+| **`api.discogs.com/releases/<id>` 整筆** | **20／20** | **絕對主力**；27 個 release 全部 HTTP 200。**13 張的主故事來自 `extraartists` 或逐軌 `written-by`，而這些欄位在 `search` 摘要裡看不到**（`search` 的 `extraartists` 只回前四筆） |
+| **`api.discogs.com/database/search?artist=…`（全 release 掃描）** | **1／1 需要時** | 只跑了 `Thanos Mikroutsikos` 一次（為了找 1986 年那張），**一次就命中**（Discogs 9204561） |
+| **MusicBrainz release-group／release 端點** | **20／20** | UA 一律 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；⚠ **一次 release 端點回傳非預期結構（`media` 缺）**，依第 259 條當「沒問到」處理、改用 Discogs，未寫成「MB 沒有」 |
+| ⚠ **`bluenote.com` 專頁** | **2／20** | **派工信說「幾乎沒有專頁」——這一句對，但不是零**：`bluenote.com/artist/supergenerous/` 與 `bluenote.com/artist/scolohofo/` **兩張都有專頁，而且兩張的成軍故事只有官網有**（見第 2867 條） |
+| **英文維基（作品條目或藝人條目）** | **7／20** | Scolohofo《Oh!》、Brisa Roché、Thierry Lang、Jackie Allen、Önder Focan、U-Street All Stars、Franco D'Andrea、Paolo Fresu、Thanos Mikroutsikos（9 個條目、7 張卡） |
+| **各國語維基（de／fi／it／fr／tr）** | **6／20** | Kitty Hoff（de）、Terry Hoax（de）、Anna-Mari Kähärä（fi）、Musica Nuda 與 Ferruccio Spinetti（it）、Booster（fr）、Zindanı Taştan Oyarlar（tr） |
+| **藝人／樂團官網** | **2／20** | `thierrylang.ch`（決定性的 Jim Beach 那一段）、`fabriziobosso.eu` |
+| **當地樂評／樂迷資料庫** | **5／20** | `debaser.it`（Kosmopolites 的五張系列與 Händel）、`mescalina.it`（55/21 的 cabala）、`laut.de`（Juliano Rossi 兩頁）、`win.jazzitalia.net`（Alice Ricciardi 的 Montreux 名次）、`jazzfinland.fi`（Anna-Mari 樂團簡介） |
+| **本層另外動用的路徑** | — | **`jazzlibrary.gr`**（希臘爵士資料庫，用來旁證 1986 年那張）、**`secondhandsongs.com`**（用來鎖〈Guide Me Home〉的原作者與原盤）、**`wejazzrecords.bandcamp.com`**（Joona Toivanen Trio 的成團年代）、**`barattelli.it`**（Musica Nuda 的成軍經過） |
+| ⚠ **被擋下的** | — | **`allmusic.com` 與 `allaboutjazz.com` 全部回 HTTP 403**（各試兩次），本層一條事實都沒有從這兩站取得 |
+
+**→ 給後批（新立一句）：`allmusic.com` 與 `allaboutjazz.com` 在雲端這條線會回 403，不要把它們排進查證路徑；當地語系的樂評站（debaser／mescalina／laut.de／jazzitalia）與藝人官網是本批真正可用的第四層。**
+
+---
+
+## 第 2867 條（a 組研究，**更正派工信與第 2138 條的一個印象**）：**`bluenote.com` 對本批不是「幾乎沒有專頁」，美國本部那兩張都有，而且只有官網有主故事**
+
+派工信第三節第 1 點逐字：「**`bluenote.com` 對這些本地出品幾乎沒有專頁**」；第 2138 條也把店面覆蓋率整個下修。
+**這一句對本批 18 張歐洲分支盤成立，但對美國本部那兩張不成立**：
+
+| 頁 | 只有官網有的那一格 |
+|---|---|
+| **`bluenote.com/artist/supergenerous/`** | **兩人在一場 Town Hall 演出上結識、在 Baptista 位於紐澤西的車庫開始寫曲、構想是「替一部不存在的電影配樂」**；另有 Craig Street 的身分說明與兩人的合作名單 |
+| **`bluenote.com/artist/scolohofo/`** | **這個組合 1999 年在蒙特婁爵士節成形、1999 與 2002 兩度巡演之後才進錄音室**；**Foster 與 Scofield 1980 年代初同在 Miles Davis 團、Lovano 與 Scofield 的交情回到 1970 年代的波士頓** |
+
+**→ 給後批：本線的美國本部盤（不分年代）一律先試 `bluenote.com/artist/<slug>/`；歐洲分支盤才跳過這一層。** c-168 實測「18 張只有 1 張」與本批「20 張只有 2 張」的共同點不是年代，**是碟的出身地。**
+
+---
+
+## 第 2868 條（a 組研究）：**`qa-batch` 與字元自檢的結果**
+
+```
+cd desc-tools && node qa-batch.mjs research c169
+  → a 20 full,full,full,…（20 個 full）
+  → ⚠ key 集合與卡單不一致
+  → 總標記 1
+```
+- ⚠ **那 1 個標記不是 a 組的**：`qa-batch.mjs` 第 211 行是**批次層**檢查（`[...all]` 對 `[...cardKeys]`），**b 組的 `c169-b.json` 還沒交件，40 個 key 只湊到 20 個，這個標記必然亮。a 組自己的三道（key 不在卡單／src 不是完整 https／hookCandidates 超過 2）全部 0。**
+- ⚠ **`互指?` 不會在 research 階段輸出**（第 1807-B 條），本層未據此判斷。
+- **字元自檢用程式跑，不用眼睛掃**（第 1808-B 條）：
+  - 逐字掃 Cyrillic／Greek／Hangul／Kana／Devanagari／Arabic／Hebrew 七個字集：**只有 Greek 命中**，內容是 **`Θάνος Μικρούτσικος`（掛名）與 `Εταιρία Νέας Μουσικής`（1986 年那張的希臘廠牌名）**——兩者都是專名，依 research-base 字元條「專名本身就用非拉丁文字時合法且必須照原文保留」**合法**。
+  - 簡體字：拿約 2,300 字的簡化字表逐字比對，命中 `只`／`向`／`游` 三個，**逐字覆核全部是正體字**（`只`＝副詞「僅」、`向`、`下游`），**真簡體 0 字**。
+  - 日文新字體（`楽沢`等）：**0 字**。
+  - 千分位逗號：**0 處**。
+  - CJK 旁的半形逗號：**0 處**。
+- **schema 自檢**：20 張、`key` 與卡單逐字相同且順序相同、`artist`／`album` 逐字相同、`status` 與 `coverage` 兩欄並存同值、每張 `hookCandidates` 2 條、每條 `src` 皆 `^https://` 完整網址、**每張至少 2 個不同來源網域**。
+
+⚠ **本批有希臘文、芬蘭文、義大利文、土耳其文、法文、德文專名**，變音符與特殊字母（`ä ö å é è ê ç ñ ı ş ğ ü`）一律照原文保留、未做任何折換；`Franco D’Andrea` 的 U+2019 照卡單原樣。
+
+---
+
+## 第 2869 條（a 組研究，**⚠ 派工信與 base 檔／既有裁定牴觸之處**）
+
+派工信第一節逐字要求「本信若與它牴觸，以它為準，並在交件回報裡指出本信哪一句寫錯了」。**本棒查到三處**：
+
+### （一）⚠ 第三節第 1 點：「`bluenote.com` 對這些本地出品**幾乎沒有專頁**」——對 18 張成立、對 2 張不成立
+
+**`bluenote.com/artist/supergenerous/` 與 `bluenote.com/artist/scolohofo/` 兩頁都存在，而且是本批唯二能提供成軍故事的來源。** 照這句字面跳過官網，會漏掉這兩張的主故事。**正確版本見第 2867 條。**
+
+### （二）⚠ 第三節第 2 點：「`Scolohofo《Oh!》` 2003→2002（日版 `TOCJ-66204`⋯⋯）」——改判正確，但派工信把日版寫成唯一依據，漏了一個反向事實
+
+日版 `released` 逐字 `2002-12-26` 與 obi 的 `Advance release in Japan` 本層覆核成立；**但英文維基的作品條目逐字記美版 `January 27, 2003 (US) (CD)`**。兩者不衝突（日本先發、美國後發），**但正文寫「2002 年發行」時必須帶上「日本先發」四個字，否則會與所有英語資料對不上。**
+
+### （三）⚠ 第三節第 6 點：「現場盤 1 張（`Franco D'Andrea《The Siena Concert》`，**四層一致**）」——四層一致成立，但派工信與第 2139 條都沒提到「這 6 軌其實是 6 段 medley」
+
+**這不是牴觸，是漏**。但它直接影響正文：照「6 軌 77 分、平均一軌近 13 分鐘的長篇即興」去寫會是錯的（第 2860 條）。
+
+### ⚠ 另記一句本信寫對、但方向要補的
+
+- 派工信第三節第 1 點說「**請把 `api.discogs.com/releases/<id>` 的整筆逐軌 credits 當主力**」——**完全正確，而且低估了**：本批 **13／20 張的主故事**只存在於整筆的 `extraartists` 與逐軌 `written-by` 欄裡（策展層看的是 `search` 摘要與條目頁，所以第 2853 條那 9 處推翻有 6 處出在這兩個欄位上）。
+- 派工信第三節第 5 點列的「MB 缺口 5 筆」**全部覆核成立**，本層沒有新增第 6 筆；但 **Discogs 這一側也有缺口**：`Kitty Hoff & Forêt-Noire《Zuhause》` 的德版條目 5688942 **`credits` 與 `notes` 兩欄整格是空的、軌長全缺**，是本批唯一一張連盤面 credits 都拿不到的碟（第 2870 條）。
+
+---
+
+## 第 2870 條（a 組研究，**資料最薄的一張與唯一一處無法定案**）
+
+- **資料最薄**：**`Kitty Hoff & Forêt-Noire《Zuhause》`**。Discogs 德版 5688942 的 `credits`／`notes` 兩欄整格空、軌長全缺、MB 的 `catalog-number` 欄空。可查證的只剩曲目、發行日、目錄號、barcode 與藝人本人的來歷（德文維基）。**本卡仍達到 12 條 facts，但其中 6 條來自藝人條目而非盤面。**
+- ⚠ **唯一一處查完仍無法定案**：**該團的鼓手是誰。** 德文維基的團員表逐字 `Beat Lee Burns`（Schlagzeug, Perkussion），**MusicBrainz 的 member 欄逐字 `Florian Achatzy`**；Discogs 沒有 credits 欄可以裁決。**正文不要點名鼓手。**
+- ⚠ **另一處只寫到一半的**：`Musica Nuda《55/21》` **盤名的解法**。兩處義大利樂評都只寫到「rimanda alla cabala」（那不勒斯解夢數字），更細的對應在搜尋摘要層出現過但**找不到可開啟的一手頁面**（wuz.it 的原頁已 301 到 Feltrinelli 的檔案索引、內容不存在）。**facts 只寫到 cabala 為止，正文也不要往下寫。**
+
+---
+
+## 第 2871 條（a 組研究，**交件版本**）
+
+⚠ **「筆數對了」不等於「定稿了」**（第 1803-B 條，本線已五次）。
+**本棒的交件版就是工作區當下的 `desc-tools/batches/research/c169-a.json`**：20 筆、232 條 facts、`qa-batch` 的 a 組旗標 0、字元自檢 0。
+**寫檔是分三次落地的**（1–5 張、6–10 張、11–20 張），**每一次都把完整陣列整份寫回**，因此任何一個中途版本都是合法 JSON；**若容器重啟後看到的檔案筆數少於 20，接續補完即可，不要從頭重寫。**
+本層**未動** `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`previews.json`／`caa.json`／`c169-b.json`／其他批次的檔案，**未 `git commit`、未 `git push`、未動 git 索引**。暫存檔全部落在 scratchpad 且帶 `c169ra-` 前綴。
+
+---

@@ -2859,3 +2859,50 @@ MB release credit 與 Apple `artistName` 逐字都是這個串接形），
 | **合計** | **31** | **20（65%）** | **11** |
 
 ⚠ **三分之二的「unavailable」是假的。** **探測層的 `search` 判定不可當結論，這件事現在有 31 筆樣本。**
+
+## 第 1826-B 條（c-169 研究 a 驗收）：**20/20 全 `full`，232 條 facts、23 個來源網域**
+
+`qa-batch research c169` a 組三道全 0（總標記 1 是 b 組未交件的批次層比對，管線形狀）；
+key 與卡單逐字同序、src 全為完整 https、`hookCandidates` 全 ≤2。
+
+### ⚠ 推翻策展層九處，**六處出在 Discogs 整筆的 `extraartists` 與逐軌 `written-by`**
+
+**13／20 張的主故事只存在於整筆 credits**——**`search` 摘要看不到。**
+六處中最要命的三處：
+- **`Kosmopolites` 末軌是 Händel**（策展層寫「15 軌全部是 Cipelli 的作品」）、**那套系列是五張不是三張**；
+- **`Thinking` 第 10 軌是柴可夫斯基《胡桃鉗》**；
+- **`Five for Fun` 兩首的 written-by 逐字是 Cedar Walton 與 McCoy Tyner**，不是策展層寫的另兩人。
+
+⚠ **一處會寫成兩個人的錯**：**`Oliver Perau` 就是 `Juliano Rossi` 本人的本名**，策展層當成「作詞者兼製作夥伴」。
+⚠ **一處把整張碟的形狀講反**：**`The Siena Concert` 的 6 個編號每一個都是 medley、底下共 17 首子曲**
+——「平均一軌近 13 分鐘的長篇即興」是錯的。
+**另有五張「策展層主故事整層沒查到」**，最戲劇性的是 `Thierry Lang`：
+**1996 年認識 Queen 經紀人 Jim Beach，Beach 成為他的經紀人並讓他成為第一位簽 Blue Note 的瑞士人，
+且 Beach 本人掛本盤 executive producer。**
+
+### `Music Stories` 的 1985 錄音：查到什麼、查不到什麼，都寫清楚了
+
+**確認第 7–9 軌就是 1985 年錄的〈Duo〉**，與 1986 年那張（Discogs 9204561，希臘廠牌 `Εταιρία Νέας Μουσικής`，catno `CP 91019`）
+**是同一部作品、同兩位演出者**（A1 面逐字 14:48，演出者 credits 完全相同）。
+⚠ **但無法鎖死的一格也寫明了**：1986 年 LP 是單一段落 14:48、本盤拆成三樂章共 16:26，**兩邊 notes 都沒寫母帶來源**
+——**正文只能寫「第 7 至 9 軌是 1985 年的錄音，這套二重奏最早以 1986 年的希臘盤問世」，不得斷言同一條母帶。**
+**這是「查證到邊界就停」的好樣本**，比硬下結論或整格不寫都好。
+附帶：**Gary Burton 的 credits 欄逐字只涵蓋第 1–6 軌**，比第 2131 條原本的理由更硬。
+
+### 三條查證路徑的更正，已寫進簡報附錄二
+
+1. ⚠ ⚠ **`allmusic.com` 與 `allaboutjazz.com` 在雲端一律 403**（c-168 四次、c-169 a 四次，**一條事實都沒取到**）。
+2. ⚠ **`itunes.apple.com/search` 在雲端會 403**（第 1823-B 條），`/lookup` 通但需要先有 ID。
+3. ⚠ **`Discogs` 的 `tracklist` 會夾標題列（`position` 為空），數軌數前要先濾掉**
+   ——`Guide Me Home` 的「15 軌 vs 13 軌」懸案就是這樣解掉的。
+
+⚠ **我派工信「`bluenote.com` 對這些本地出品幾乎沒有專頁」只對 18 張，對美國本部那兩張不成立**
+（`supergenerous`／`scolohofo` 都有專頁，**而且是那兩張唯一能提供成軍故事的來源**）。
+**分界不是年代，是碟的出身地。** 已寫進簡報。
+
+### 兩件留給本機的
+
+- **`Jackie Allen《Tangled》` 維持 2006**：英文維基逐字寫 `Released in 2004`，**但沒有引註、且與它自己引的 AllMusic 2006 評論矛盾**；
+  策展層的四項依據逐項覆核未被推翻（含兩版 12 軌軌長逐秒相同）。卡的 notes 已留「英版可能 2004 年就在英國上市」，可逆。
+- **`Kitty Hoff & Forêt-Noire` 的鼓手無法定案**（德文維基 `Beat Lee Burns`／MB `Florian Achatzy`，Discogs 無 credits 可裁決）
+  ——**卡的 notes 已寫明「正文不要點名鼓手」。**
