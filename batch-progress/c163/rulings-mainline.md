@@ -2928,3 +2928,67 @@ key 與卡單逐字同序、src 全為完整 https、`hookCandidates` 全 ≤2�
 ⚠ **`Ruben Hein《Live》` 的無來源另有一層可救**（第 1824-B 條）：
 **釘的 RG `d00a707f` 無 barcode、無 label-info**，而同碟的另一個 RG `47b79830` **有 barcode `5099994101225`**
 ——**本機若要再試，可改用那個 RG 跑 UPC。** 已寫進該卡的 `noSourceReason`。
+
+## 第 1828-B 條（c-170 研究驗收）：**15/15 全 `full`，179 條 facts；兩張 2026 盤其實都已發行**
+
+`qa-batch research c170` 兩組旗標皆 0、key 與卡單完全一致、src 全為完整 https、`hookCandidates` 全 ≤2。
+src 網域：bluenote.com 96／discogs 61／apple 9／musicbrainz 8／universal-music.co.jp 3／wikipedia 2（只用於獎項交叉驗證）。
+
+### ⚠ 我把年份當成了狀態
+
+**派工信寫「兩張尚未發行（`FATHERS` 與 `Joel Ross《Gospel Music》` 都是 2026）」——兩張都已經上市**：
+`FATHERS` **2026-07-10**（MB frd／Discogs／Apple 三邊逐字相同，廠牌 2026-06-17 稿逐字 `the July 10 release`），**距今 71 天**；
+`Gospel Music` **2026-01-30**，**距今 232 天**。
+**→ `year` 等於今年時，狀態要逐張用官方日期判，不可用年份推定。**
+（c-167 那兩張是真的未發行——`Kiefer` 9/25、`Synonym` 10/2，**都在今天之後**，那次的判定是對的。）
+
+### 推翻策展層兩筆，都是「計數方法」而不是事實
+
+1. **策展層「`_BY.ALEXANDER` Apple 三種查法全空」錯**：
+   **`lookup?id=<artistId>&entity=album` 回得到本作**，再用 `entity=song` 撈出 **Discogs 與 MB 都沒有的全部客座名單**。
+   ⚠ **差別在策展層跑的是 `attribute=artistTerm` 的 `search`，不是 `lookup?id=&entity=album`**
+   ——**這兩者要分開記成兩種查法**，不能互相代表。
+2. ⚠ ⚠ **三筆日本盤軌數錯，根因與 c-169 a 的 `Guide Me Home` 完全相同**：
+   **Discogs 的 `tracks` 計數把「Bonus Tracks For Japan」那一列標題也算了進去**
+   ——三張日本盤**都是 14 軌不是 15 軌**。
+   **→ 第 1826-B 條那句「數軌數前要先濾掉 `position` 為空的列」，兩批獨立踩到，已是通則。**
+
+### ③ 來源層：現役目錄段回到 `bluenote.com` 主場
+
+**(1) wp `?search=` 14／15 張有專屬新聞稿、取回 25 篇全文**（`slug=` ＋ `_fields=content`；**藝人名放最前面有效**）；
+**(2) `/artist/<slug>/` 6 個 200 全部有決定性素材**、2 個 404；(3)(5) 未動用；
+**(4) `universal-music.co.jp` 5／7**——⚠ **落空的兩筆是藝人 slug 猜錯、不是品番錯**
+（`UCCQ-1132` 要走 `/rrnow/` 或 `/robert-glasper/`，`/r-r-now/`、`/r-rnow/` 都 404）。
+**另外動用兩條**：`api.discogs.com/releases/<id>` 整筆 18 次（逐軌 credits、錄音室鏈、℗ 欄、日本盤 bonus 分隔列**只在整筆裡**）；
+**`itunes.apple.com` 21 次，`lookup?upc=` 中 10／15，最終 15／15 全拿到 collectionId。⚠ 第 1823-B 條的 403 本批 0 次（狀態已恢復）。**
+
+### 獎項：15 張專輯本身 0 獎項
+
+三筆訊號都是側人或前作的（`Nate Smith《Live-Action》` 2026 兩座、`Paul Cornish` 兩個大賽**藝人頁自己就寫 `finalist`**、
+Anderson .Paak《Ventura》）。⚠ **`Paul Cornish` 那筆值得記一下：官網沒有膨脹，c-167 的 Kiefer 形狀沒有重演**
+——**「官網會寫錯」是傾向，不是定律，仍要逐筆查。**
+
+## 第 1829-B 條（⚠ 更正代理的一處歸因，順帶把檢查點政策收緊）
+
+**c-170 研究層回報「根因是 `git add -A` 那一類全域暫存，`CLAUDE.md` 明文禁止」——這個歸因是錯的。**
+**主線全程沒有用過 `git add -A` 或 `git add .`，每一筆都是逐檔列名。**
+那一次（`6cec6d8`）是**我主動把 `desc-tools/batches/research/c170-a.json` 列進檢查點提交**，
+**當時它只有 3 張，而且日本盤軌數還是更正前的舊值。**
+
+**真正的根因是檢查點政策本身**（第 1803-B／1806-B 條講過兩次，這是第三次）：
+**主線為了讓 stop hook 不再叫，把代理正在寫的檔案收進提交。**
+**檢查點提交只保底、不背書**——**但「保底」本身也有代價：它讓 HEAD 出現一個看起來完整、其實是半成品的版本。**
+
+**處置（收緊）**：
+1. **檢查點提交的 commit 訊息，一律逐檔標明「代理仍在跑，以工作區為準」**（已在做）。
+2. ⚠ **代理交件後，主線必須重新 `git add` 該檔並確認 `git diff HEAD` 為空**，**不可假設檢查點那筆就是交件版**。
+3. **回報裡看到「主線用了 `git add -A`」這類指控，要自己查 `git log` 與實際指令再認**
+   ——**代理只看得到結果，看不到我下了什麼指令。**
+
+### 三個給下游的提醒（研究層列的）
+
+1. **`R+R=NOW Live` 是現場盤（MB 漏標）**：正文必寫現場、錄音 2018 年 10 月紐約 Blue Note 俱樂部、**發行年 2021 不是錄音年**。
+2. ⚠ **`The Women Who Raised Me` 十二軌全翻唱但是她本人 2019 年的新錄音**——**不得寫成「收錄爵士名伶的經典錄音」。**
+3. **`Motion I` 日本盤 bonus〈Infant Eyes〉是 Wayne Shorter 的曲子**，不得寫成團員原創；
+   **`Maya Delilah` 本卡釘 2025 年十二軌原盤**，2026-01 的十六軌 Deluxe 曲目不得寫進來。
+   ⚠ **`Motion I`／`Motion II` 都不是現場盤**（「巡演途中錄下」≠ 現場；Motion II 逐字錄於 EastWest Studios）。

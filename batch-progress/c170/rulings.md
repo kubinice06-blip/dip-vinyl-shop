@@ -1005,3 +1005,219 @@ MB 端的實測瓶頸**不是**我們的節流，是**伺服器延遲**：
 **「筆數對了」與「定稿了」在本棒是同一個時點：`Discogs 覆核 1,025／1,025`、`unclear 0`。**
 
 ---
+
+# c-170 追記：**研究層（a 組 7 張＋b 組 8 張，同一棒）**（編號 2931–2990）
+
+**本節一律 append 於檔末，未覆寫任何既有行（第 1806-B 條）。**
+產出兩檔：`desc-tools/batches/research/c170-a.json`（7 筆）＋ `c170-b.json`（8 筆）。
+
+---
+
+## 第 2931 條（**⚠ 推翻派工信第三節第 7 點；兩張 2026 盤都已經發行**）
+
+派工信逐字寫：「**兩張尚未發行**（`FATHERS` 與 `Joel Ross《Gospel Music》` 都是 2026）
+——若官方發行日在今天之後，`notes` 開頭要寫明未發行與官方預定日期（c-167 的做法）。」
+
+**實查兩張都已上市**，今天是 2026-09-19：
+
+| 卡 | MB first-release-date | Discogs `released` | Apple `releaseDate` | 廠牌新聞稿 | 距今 |
+|---|---|---|---|---|---|
+| **`FATHERS《FATHERS》`** | **2026-07-10** | **2026-07-10**（37859667） | **2026-07-10**（6779502137） | 2026-06-17 稿逐字「the July 10 release of FATHERS」 | 已發行 71 天 |
+| **`Joel Ross《Gospel Music》`** | **2026-01-30** | **2026-01-30**（36507067） | **2026-01-30**（1853728278） | 2025-12-10 稿逐字「On January 30… will release his 5th Blue Note album」 | 已發行 232 天 |
+
+**裁定：兩張都不套「未發行卡」的寫法**（research-base 的 2026-08-02 常設裁定只適用於「已宣布但尚未上市」）。
+兩張的 `notes` 改成明講**已發行＋官方發行日**，讓寫作層不要寫成「即將推出」。
+判準依第 1 條（有先例：c-167 的做法本身就是「日期在今天之後才寫未發行」）與第 2 條（可逆）。
+⚠ **給後批**：派工信寫「2026 年＝未發行」是把年份當成狀態。**2026 年的碟在 2026 年 9 月已經過了大半，狀態要逐張用官方日期判，不能用年份判。**
+
+---
+
+## 第 2932 條（**⚠ 推翻本檔第 2366 條的一格**）：**`_BY.ALEXANDER《000 CHANNEL BLACK》` 在 Apple 查得到，不是「三種查法全空」**
+
+第 2366 條逐字寫本張「**三種查法全空**（專輯本身不在所跑市場的 Apple 目錄裡）」，並說查法 3 的
+`attribute=artistTerm` 只回兩支 2020 單曲與一支 2026 單曲。
+
+**本層用 `lookup?id=1525815469&entity=album&limit=60&country=US`（藝人目錄）查到本作**：
+
+> **`collectionId` 1528271227、`collectionName` 逐字 `000 CHANNEL BLACK`、`trackCount` 11、
+> `releaseDate` 逐字 `2020-08-27T07:00:00Z`、℗ 欄逐字
+> `℗ 2020 _by.ALEXANDER records., Distributed by Blue Note Records, a division of UMG Recordings, Inc.`**
+
+再以 `lookup?id=1528271227&entity=song` 拉逐軌，**撈出 Discogs 沒有的全部客座名單**：
+〈TRUMPETS〉feat. 070 Shake／〈STALLING〉feat. Tanerélle／〈BLOOM IN PARIS〉feat. Charles Bukowski／
+〈THE CHEF & THE DJ〉feat. Michèle Lamy／〈My Margaret〉feat. Rainsford／〈THE MONSTER & THE MUSE〉feat. Irina Shayk。
+**這是本張唯一能取得客座名單的來源**——Discogs 的 `extraartists` 整格空、MB 也沒有。
+
+**裁定：第 2366 條該格改判為「查法 1、2 與 `lookup?upc=` 全空，靠查法 3 的藝人目錄端點救回」**，
+與同條記的 `R+R=NOW` 那一筆同形。**第 2366 條的差別在於它跑的是 `attribute=artistTerm` 的 search，
+不是 `lookup?id=<artistId>&entity=album`——兩者都叫「查法 3」，但只有後者會回整份專輯目錄。**
+⚠ **給後批：`attribute=artistTerm` 與 `lookup?id=&entity=album` 要分開記成兩種查法。**
+
+---
+
+## 第 2933 條（**⚠ 更正第 2365 條三筆日本盤軌數**）：**Discogs 的 `tracks` 計數把「Bonus Tracks For Japan」那一列標題也算進去**
+
+第 2365 條逐字記「Kandace Springs《Soul Eyes》日本盤 **15 軌**」「《The Women Who Raised Me》日本盤 **15 軌** 63 分」
+「Maya Delilah《The Long Way Round》日本盤 **15 軌**」。**逐筆拉整筆 release 的 tracklist 之後，三筆都是 14 軌。**
+
+| 卡 | Discogs release | `tracklist` 陣列長度 | **有編號的實際軌** | 差額來源 |
+|---|---|---:|---:|---|
+| Soul Eyes | 10467233 | 15 | **14**（11＋3） | 第 12 列 `position` 為空、`title` 逐字 `Bonus Tracks For Japan` |
+| The Women Who Raised Me | 15041298 | 15 | **14**（12＋2） | 同上，逐字 `Japan Edition Bonus Tracks` |
+| The Long Way Round | 35121977 | 15 | **14**（12＋2） | 同上 |
+| Motion I | 32758233 | 9 | **8**（7＋1） | 同上，逐字 `Bonus Track For Japan`（此筆第 2365 條沒有寫錯） |
+
+**日本限定曲逐筆**：Soul Eyes ＝〈The Windmills of Your Mind〉〈Too Good to Last (Shacho From Soil & "Pimp" Sessions Remix)〉〈Stay With Me〉；
+Women ＝〈Lush Life〉〈You've Got a Friend〉（第 14 軌另在東京 Lab Recorders 補錄）；
+Long Way Round ＝〈Look at the State of Me Now (Studio Live)〉〈Maya, Maya, Maya (Studio Live)〉；
+Indigo ＝第 14 軌〈Cold Summer〉（12919209，這筆的 tracklist 沒有標題列，第 2365 條寫的 14 軌正確）。
+
+**裁定：本線之後引用 Discogs 軌數，一律數 `position` 非空的列，不要用陣列長度。**
+判準依第 2 條（可逆：只改 `notes` 的數字）。⚠ **這是「失敗與正常長得一樣」的又一形狀：標題列與真軌在同一個陣列裡，長度看起來完全正常。**
+
+---
+
+## 第 2934 條（**人名更正**）：**`The Women Who Raised Me` 的貝斯手是 `Scott Colley`，Discogs 印成 `Scott Cooley`**
+
+Discogs 15005394 的 credits 欄逐字 `Scott Cooley – Bass`；
+**廠牌新聞稿逐字是「bassist Scott Colley (Carmen McRae)」**，而該張的選角邏輯正是「班底與被致敬的歌手有淵源」，
+Colley 確為 Carmen McRae 的貝斯手。**facts 採 `Scott Colley`。**
+⚠ 依 research-base 的 2026-08-15 條，樂手名一律寫拉丁原文，不寫中文音譯。
+
+---
+
+## 第 2935 條（**同一人的兩個名字**）：**FATHERS 的製作人 `Kenny Beats` ＝本名 `Kenneth Blume`，facts 兩名並列**
+
+⚠ **廠牌新聞稿的標題逐字是「INTRODUCING FATHERS FEATURING KIEFER • CARRTOONS • NATE SMITH • KENNETH BLUME」——
+標題用本名、內文用藝名**（逐字「FATHERS' producer is Kenneth Blume — better known as Kenny Beats」）；
+`bluenote.com/artist/fathers/` 逐字則寫「FATHERS' **creative director** is the producer Kenneth Blume」。
+**Discogs 37859667 的 credits 欄與作曲欄一律用 `Kenneth Blume`。**
+**裁定：facts 以「Kenny Beats，本名 Kenneth Blume」並列寫一次**，避免寫作層把兩個名字當成兩個人。
+⚠ 同形的還有 `Kiefer` ＝ `Kiefer Shackelford`、`CARRTOONS` ＝ `Ben Carr`（Discogs 作曲欄逐字 `Benjamin Eric Carr`）。
+
+---
+
+## 第 2936 條（**獎項逐項分開查；本批 1 筆得獎、2 筆只到決選**）
+
+research-base 的 2026-08-08 條要求逐項寫明屆次／類別／入圍或得獎。**本批只有三筆獎項訊號：**
+
+| # | 對象 | 查完 | 處理 |
+|---|---|---|---|
+| 1 | **Nate Smith《Live-Action》** | **得獎，兩座**：類別逐字是 Best Alternative Jazz Album 與 Best Arrangement, Instrumental and Vocals，2026 年頒發 | 寫進 `FATHERS` 的 facts，**類別逐項寫明、寫「拿下」** |
+| 2 | **Paul Cornish** | **只到決選**：`bluenote.com/artist/paul-cornish/` 逐字「He **was a finalist** in the 2023 American Pianists Awards and the Herbie Hancock International Jazz Piano Competition」 | facts 逐字寫「兩項都是入圍決選，不是得獎」 |
+| 3 | **Anderson .Paak《Ventura》**（Kiefer 的側人資歷） | **得獎**：2020 年葛萊美最佳節奏藍調專輯 | 寫進 `FATHERS` 的 facts |
+
+**第 1 筆是雙來源核對過的**：`bluenote.com/artist/fathers/` 逐字「In 2026, he won two GRAMMY Awards for LIVE-ACTION」
+＋ `en.wikipedia.org/wiki/Nate_Smith_(drummer)` 逐字「Live-Action (2025), won two Grammy Awards for
+Best Alternative Jazz Album and Best Arrangement, Instrumental and Vocals」。**兩邊都說「得獎」且座數相同，類別由後者補齊。**
+⚠ **派工信第三節第 1 點警告的「藝人頁把只入圍的作品寫成得獎作」（c-167 的 Kiefer）本批沒有重演**，
+但**第 2 筆正是那個形狀的反面**：藝人頁自己就寫了 `finalist`，沒有膨脹。**本批的獎項風險 0 筆。**
+⚠ **本批 15 張沒有任何一張的專輯本身有獎項**（`nublues`／`Gospel Music`／`Motion I` 等在 bluenote.com 的
+葛萊美相關貼文裡 0 命中），**正文不得替任何一張加獎項。**
+
+---
+
+## 第 2937 條（**③ 來源層命中率實測；派工信第四節的五條路徑逐條回報**）
+
+| 查法 | 跑法 | 命中 |
+|---|---|---|
+| **(1) `bluenote.com/wp-json/wp/v2/posts?search=`** | 藝人名放最前面，17＋12 次查詢 | **14／15 張有專屬新聞稿**，合計取回 **25 篇全文**（`slug=` ＋ `_fields=content` 一次一篇）。**唯一 0 命中的是 `_BY.ALEXANDER`**（四種寫法：`BY.ALEXANDER`／`000 Channel Black`／`070 Shake`／`Alexander Grant` 全 0） |
+| **(2) `/artist/<slug>/`** | 8 個 slug | **6 個 200、2 個 404**（`_by-alexander`／`by-alexander`）。**200 的六個都有決定性素材**：Joel Ross 的成長史與五張目錄、Kandace Springs 的 Prince 段落與 Norah Jones 段落、Paul Cornish 的學經歷與獎項、Maya Delilah 的 BRIT School 與兩張自資 EP、Out Of/Into 的團名解釋、FATHERS 的四人小傳與 Nate Smith 的葛萊美 |
+| **(3) `?s=`** | **本層 0 次動用** | 查法 1 已足夠；第 2366 條記「三批合計 1 次 0 命中」，不再重跑 |
+| **(4) `universal-music.co.jp/<藝人 slug>/products/<品番>/`** | 7 個路徑 | **5 個 200、2 個 404**。⚠ **落空的兩個是藝人 slug 猜錯，不是品番錯**：`UCCQ-1132` 用 `/r-r-now/` 與 `/r-rnow/` 都 404，**改用 `/rrnow/` 與 `/robert-glasper/` 都回 200**；`UCCQ-1215` 用 `/out-of-into/`／`/outofinto/`／`/gerald-clayton/` 三種都 404，未找到正確 slug |
+| **(5) 藝人官網** | **本層 0 次動用** | 第 2366 條已記命中 0／2 |
+| ⚠ **(6) `api.discogs.com/releases/<id>` 整筆** | **18 筆整筆** | **決定性**：逐軌 credits、錄音室鏈、℗ 欄、日本盤的 bonus 分隔列全部只在整筆裡。`search` 摘要完全取不到 |
+| ⚠ **(7) `itunes.apple.com`** | `lookup?upc=` 15 次、`search`／`lookup?id=&entity=album` 6 次 | **`lookup?upc=` 命中 10／15、`search` 與藝人目錄補回 5 張，最終 15／15 全部拿到 collectionId。⚠ 派工信第五節第 6 點警告的 HTTP 403 本批 0 次**，`/search` 與 `/lookup` 都正常回 200 |
+| ⚠ **(8) `en.wikipedia.org/w/api.php`** | 4 次 | 只用於**獎項與人物生卒的交叉驗證**（Nate Smith 兩座葛萊美的類別、`Ventura` 的葛萊美、Prince 的卒年由 MB 取得）。**不用於音樂事實本身** |
+
+**裁定：`universal-music.co.jp` 落空時，先換藝人 slug 再說**（把團名的符號拔掉試 `rrnow`、或改用團內最知名成員的個人 slug），
+**不要當成「日本盤不存在」**。這是第 1678／1821-B 條（「查不到先換一個條目」）在店面層的同一個形狀。
+
+---
+
+## 第 2938 條（**曲名字形**）：**`facts` 與 `keyTracks` 的曲名一律採 ASCII 撇號，MB 的彎撇號不進研究稿**
+
+MB 的軌名用 U+2019（`Leavin’`／`Gabaldon’s Glide`／`Don’t Need the Real Thing`／`King’s Loop`），
+Discogs 與 Apple 多為 ASCII。**本層一律寫 ASCII**，理由與第 2364(一) 條相同（池中一致性，不製造第二種鍵），
+不是票數。**本批兩檔的 U+2019 出現次數 0**，以程式掃過（第 1808-B 條：字元類自檢不用眼睛）。
+⚠ **`3-1-2`（`Who Are You?` 末軌）MB 逐字用的是 U+2010 HYPHEN**，本層改寫成 ASCII 連字號。
+⚠ **U+2014 EM DASH 保留**：那是行文的中文破折號，不是連字號，兩檔合計 20 次，全部在 `facts`／`notes` 的散文裡，
+**`artist`／`album`／`key` 三個欄位 0 次**（已程式驗過）。
+
+---
+
+## 第 2939 條（**來源打架；可逆**）：**`Openness Trio` 的錄音地點採廠牌新聞稿的五個戶外場次，`Studio Tujunga` 只當製作與混音基地**
+
+| 來源 | 逐字 |
+|---|---|
+| **廠牌新聞稿**（2025-05-28） | 「**five recordings from five different sessions** all around Los Angeles and Ventura County」——Ojai 山丘（望見 Topatopa 山脈）／Elysian Park 的客廳／Ojai `Churchill Orchard` 的 Oak Tree Cathedral／Echo Park 某戶院子的 `Garden of Electronics`／Topanga Canyon `Elsewhere` 的胡椒樹下 |
+| ⚠ **Discogs 34564816 的公司欄** | **`Produced At`／`Mixed At`／`Recorded At` 三格逐字都是 `Studio Tujunga`**，`Mastered At` 逐字 `Cosmic Zoo` |
+
+**判：facts 寫新聞稿的五個場次，Discogs 的 `Studio Tujunga` 寫成製作與混音基地，不寫成錄音地點。**
+三個理由：(1) 新聞稿是同期一手稿且三位團員各有引言佐證那幾個地點（Josh Johnson 逐字提到「2021 年初在 Ojai 的果園」）；
+(2) Discogs 的公司欄把三種角色填成同一個值，是條目填寫的常見偷懶形；(3) 可逆，只改一條 fact。
+**已在該卡 `notes` 寫明分歧。**
+
+---
+
+## 第 2940 條（**`Motion I`／`Motion II` 不是現場盤**）：**「在巡演途中錄下」不等於現場錄音**
+
+兩張的新聞稿逐字都寫曲子「thoroughly explored and developed during **nearly 40 live engagements**」，
+**但兩張都不是現場盤**：`Motion II` 的 Discogs 35975692 公司欄逐字 `Recorded At: Eastwest Studios`（洛杉磯的錄音室），
+`Recorded By` 逐字 `Qmillion`；`Motion I` 的 MB `secondary-types` 與 Discogs `format` 欄都沒有 `Live`，
+兩張的 Apple `collectionName` 也都不帶 `(Live)`——**與本批真正的現場盤 `R+R=NOW Live`（Discogs notes 逐字
+`Recorded at Blue Note Club, New York, NY.`、Apple collectionName 帶 `(Live)`）三個訊號全部相反。**
+**裁定：兩張的 `notes` 逐字寫明「曲子在巡演中發展、錄音另外進行」，正文不得寫成現場盤。**
+⚠ **這一格很容易錯**，因為新聞稿的主句就是在講巡演。
+
+---
+
+## 第 2941 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）
+
+| # | 派工信原句 | 實查 | 影響 |
+|---:|---|---|---|
+| 1 | 第三節第 7 點：「**兩張尚未發行**（`FATHERS` 與 `Joel Ross《Gospel Music》` 都是 2026）」 | **錯。** 兩張分別在 2026-07-10 與 2026-01-30 上市，都早於今天 | ⚠ **會讓兩張的 `notes` 開頭寫上不存在的「未發行」**（第 2931 條） |
+| 2 | 第四節：「⚠ **`previews.json` 尚未定案**，不要據此下無來源的結論」 | **✔ 照辦**：本層全程未讀 `previews.json`、未寫串流覆蓋率 | 無 |
+| 3 | 第二節：「`caa.json`（⚠ 有圖 15／15）」 | **✔ 正確**，但本層未動該檔（禁碰清單） | 無 |
+| 4 | 第五節第 6 點：「⚠ 雲端的 `itunes.apple.com/search` 最近出現 HTTP 403」 | **本批 0 次 403**，`/search` 與 `/lookup` 全程 200 | 無害；記為狀態已恢復（第 2937 條） |
+| 5 | 第一節：「`research-base.md` 的原文勝過本信」 | **✔ 三處例外節照走**：產出寫進 repo、每張 8–12 條 facts、`key` 逐字複製、`status` 與 `coverage` 並存 | 無 |
+
+**另外更正的是既有裁定、不是派工信**：本檔**第 2366 條**（`_BY.ALEXANDER` 三種查法全空，第 2932 條）
+與**第 2365 條**（三筆日本盤軌數，第 2933 條）。**兩條都是策展層自己的觀察被更精細的查法推翻，不影響任何一張的收退。**
+
+⚠ **策展層的 `why`／`risk`／`mbNote` 被本層推翻的只有上述兩條**；其餘 15 張的年份、掛名、曲風、imprint、
+合輯與現場判定**逐張核過皆成立**，本層沒有任何一張要求改判。
+
+---
+
+## 第 2942 條（**交件版本認定**）
+
+**以工作區當下的 `desc-tools/batches/research/c170-a.json`（7 筆）與 `c170-b.json`（8 筆）為交件版**（第 1803-B 條）。
+本層在跑的過程中把兩檔**分四次寫回磁碟**（a 組 3 筆 → a 組 7 筆 → b 組 4 筆 → b 組 8 筆），
+**最後另做過一次數值更正**（第 2933 條的三筆日本盤軌數、`000 CHANNEL BLACK` 的全長由「約四十二分鐘」改為「約四十四分鐘」）。
+**「筆數對了」不等於定稿**：7＋8 這個數字在更正之前就已經成立。
+**定稿的時點是 `node qa-batch.mjs research c170` 回「全部通過 ✓」且字元自檢 0 標記之後。**
+⚠ **`互指?` 不會在 research 階段輸出**（第 1807-B 條），本層沒有把它的沉默當成通過。
+
+---
+
+## 第 2943 條（**⚠ ⚠ 第 1803-B 條在本棒第六次應驗，而且這次真的被撈走了**）：**主線的 `probe(c171)` 提交把本層做到一半的 `c170-a.json`（3 筆）掃進 HEAD**
+
+**實況**：本層照派工信第五節第 3 點「每做完 3 張就把輸出檔整份寫回磁碟」，在 a 組第 3 張之後存了一次檔。
+**在本層還在做第 4 到第 7 張的期間，主線提交了 `6cec6d8 probe(c171): 探測鏈跑完，封面 14/20、串流 13/20，7 張待回撈`，
+`desc-tools/batches/research/c170-a.json` 被一併帶進那一筆提交。**
+
+| | 張數 | 內容 |
+|---|---:|---|
+| **`git show HEAD:desc-tools/batches/research/c170-a.json`** | **3** | Soul Eyes／Indigo／000 CHANNEL BLACK |
+| **工作區（＝交件版）** | **7** | 上列三張＋Who Are You?／The Women Who Raised Me／R+R=NOW Live／The Parable of the Poet |
+
+**兩個版本的差別不只是張數**：HEAD 那份的三張裡，`Soul Eyes` 的日本盤軌數與 `000 CHANNEL BLACK` 的全長
+**都是第 2933 條更正之前的舊值**。
+
+**裁定：以工作區為準，HEAD 那份作廢。** 本層不 `git commit`、不動索引（派工信第六節），**請主線提交時直接以工作區版本覆蓋。**
+⚠ **根因是 `git add -A` 那一類的全域暫存**——`CLAUDE.md` 的 Git 檢查節逐字禁止（「**絕不 `git add -A` / `git add .`**，
+會掃走其他工作階段未提交的改動」）。**本次被掃走的不是別人的改動，是同一條線上一支還在跑的代理的半成品，後果相同。**
+⚠ **給主線：研究層跑到一半的 `batches/research/<批>-<組>.json` 在檔案系統上與定稿長得完全一樣**
+（合法 JSON、`status` 全 `full`、`qa-batch` 也會過，因為它只驗有出現的那幾筆的 `key` 在不在卡單裡）——
+**唯一能分辨的是張數要對得上卡單的分組數，以及研究層自己的交件回報。**
