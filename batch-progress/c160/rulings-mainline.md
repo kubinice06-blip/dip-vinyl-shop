@@ -274,3 +274,81 @@ Fresu Devil「盤名向 Kubrick 致敬」、Gino Paoli「Sellani 在部分軌接
 ⚠ **第 1609 條「只剩 Discogs 一層」六張裡最極端的是 `Fresu Devil Quartet|Stanley Music!`**：
 **Discogs 條目的 notes、companies 兩欄全空，credit 只有四位團員——連製作人、錄音師、錄音室、錄音日期、
 封面設計都沒有。** Marsalis 的條目同樣三欄全空，**但他有三篇紙本頂著。**
+
+## 第 1685 條（主線）：**c-160 鉤子兩組交件——38 張跨組全過，兩組都是一次到位**
+
+| 組 | 張數 | hook 加權 | note 原始 | >350 |
+| --- | ---: | --- | --- | ---: |
+| a | 18 | 20–30 | 327–350 | 0 |
+| b | 20 | 22–31.5 | 318–350 | 0 |
+
+`qa-batch hooks c160` 兩組全過；`chk-hook-crossgroup c160` **38 張一起驗 → ✓ 全部通過**
+（跨組開頭前四字互異、同構骨架零命中、校對痕跡 0、`唯一入圍` 零命中、兩張無串流卡 note 零串流指示）。
+**`merge-writer-input c160` 已跑：38 張 → writer-1(a) 18／writer-2(b) 20。**
+
+✅ **第 1681 條的四張葛萊美卡調度成功**：主軸只在 `Terence Blanchard|A Tale of God's Will`；
+**Tolliver 寫「輸給同批的《A Tale of God's Will》」**、
+**Charlap 寫「同屆同項另有一張 Blue Note 作品入圍，那是同批的《Kids》」**、
+**a 組的 Lovano／Hank Jones 寫「入圍者之一」**——**四張互指，零張寫成「唯一入圍」。**
+⚠ **a 組的做法值得記**：**「唯一入圍」這種否定式排除改寫成「入圍者之一」的正面表述**
+——**既守住事實又避開否定句禁令，比我在派工詞裡的寫法乾淨。**
+
+⚠ **note 長度**：**a 組照派工詞從動筆就守 350，仍有 12 張初稿落在 351–484**（最難壓的 Lovano 是 484→350）。
+**兩組都是定點縮寫、零重寫**，犧牲順序照派工詞（先錄音室名、再次要製作人與工程師、最後次要軌名），
+**事實更正與獎項歸屬 38 張一處都沒犧牲。**
+
+## 第 1686 條（主線，**自糾；兩組合計駁回我七條**）
+
+**a 組駁回三條**：
+1. ⚠ **Lovano／Hank Jones「兩人差三十四歲」查無 src**——**兩個生年在該卡 18 條 facts 裡一條都沒有**，只在 `notes`。
+   （**這是我從研究 b 組的回報抄來的，沒有回頭 grep facts**——第 1494(甲) 又漏做一次。）
+2. ⚠ **Steve Kuhn「〈Lotus Blossom〉是 Kenny Dorham（同名異曲）」的「曲—作者對應」查無 src**
+   ——**facts F2 只把 Dorham 列進「其餘七軌的作者」名單裡，沒有把他繫到哪一首。**
+   **→ 這是新形狀：「人名有 src、曲名有 src，但兩者的連線沒有 src」。**
+   **後批要當成固定檢查項——名單式的 facts 不能拿來做逐軌指派。**
+3. ⚠⚠ **Erik Truffaz《Face à face》的「Blue Note 簽下的歐陸樂手」骨架查無 src**
+   ——**該卡 facts 完全沒有 Blue Note 三個字；F3 逐字寫出品公司是 Truffaz 自己的 Foufino Production。**
+   ⚠ **這一條有策展意義**：**這張碟掛在 Blue Note 線上，但實際是藝人自營公司出品的**
+   ——**本機審稿時值得回頭確認它的 imprint 歸屬**（與第 1670 條的殘留風險同一族）。
+
+**b 組駁回四條**：
+4. **Blanchard〈Levees〉那項的「得主 Michael Brecker〈Anagram〉、辭世後追頒」只在 notes**
+   （facts f1 只寫「該項未得獎」）——note 只寫「該項未得獎」。
+   （⚠ **Charlap 那張的得主 Michael Brecker《Pilgrimage》是 f0 有 src 的，照寫。同一屆兩項，一項能寫一項不能。**）
+5. **Moulin 的三個軌名更正只在 notes**；**facts f2 有 src 的是〈Music Is My Husband〉〈Me & My Ego〉〈Le bruit de l'ombre〉**
+   ——改用後者。
+6. **「Bearzatti 與 c-159《Indigo 4》是同一支團、兩張卡編制必須一致」只在 notes**
+   ——改成正面指派「編制寫成上列四人」（Bearzatti 固定團員、Papadia 六軌客座，**f0／f1 都有 src**），**不引跨批比對。**
+7. **跨批統計（Burton Yount 三批連續、Pflug 第四次）只在 notes**，facts 只有本碟掛名
+   ——note 只寫本碟封面設計是 Burton Yount。
+   ⚠⚠ **這一條我要認**：**跨批統計本來就只可能在我的裁定裡、不可能在單卡的 facts 裡。**
+   **→ 主線自律：跨批統計是給本機看的，不是給寫作層寫的。派工詞要標明「這條只供你避開重複，不要寫進正文」。**
+
+## 第 1687 條（主線）：**鉤子 a 組另抓到五處 `sound` 與 `facts` 打架**
+
+| 卡 | 殘留 | 與 facts 的出入 |
+| --- | --- | --- |
+| **Dave Koz** | `sound`「四首換上人聲」 | **F2 逐軌寫得很清楚，帶客座歌手的只有三軌**（4、7、11）；**軌 9 是三位器樂客座**——**把器樂軌算進人聲** |
+| Lovano／Hank Jones | `sound`「十一軌裡有六軌超過七分鐘」 | **該卡 facts 沒有任何一條帶時長** |
+| Norah Jones《Not Too Late》 | `sound`「編制比前兩張雜」 | 與前兩張的比較 facts 裡沒有依據 |
+| **Götz Alsmann** | `sound`「合唱團與弦樂只在四、五首裡出現」 | **F4 是合唱團四軌、弦樂三軌**；另「顫音琴與木琴的叮噹是招牌」是評價語 |
+| **Andrew Hill** | `sound`「只有收尾的鋼琴獨奏版短於**六**分鐘」 | **F7 逐字是「短於**七**分鐘」**——5 分 31 秒兩者皆成立，**但門檻寫法不同，照抄會失準** |
+
+⚠ **最後一處是新形狀**：**`sound` 與 `facts` 講的是同一件事、結論也都對，但門檻數字不同。**
+**照抄 `sound` 不會寫出假話，只會寫出比來源更弱或更強的斷言。** 代理照 facts 寫，正確。
+
+## 第 1688 條（主線）：**c-161 探測鏈與 UPC 固定步驟——串流 29 → 31／37**
+
+`fix-rgmbid` 原本就對 37、修正 0。**CAA 有圖 30／37**（7 張真 404，交研究層）。
+**串流探測 29／37**；**主線依第 1614 條跑「MB barcode 欄 × 27 店面」，救回 2 張**：
+- ✅ **Trijntje Oosterhuis《Ken je mij (live & akoestisch in de Rode Hoed)》→ `713902652`**（nl，barcode `5099922911223`）
+  ——⚠ **MB 這張是雙碟共 25 軌，Apple 也是 25 軌，完全相符。**
+- ✅ **Freddie Hubbard《Without a Song: Live in Europe 1969》→ `715554703`**（us，barcode `5099923695757`）
+  ——**MB 五個 release 全部 7 軌、首三軌曲名一致**；Apple 的盤名少了副標。
+
+⚠ **這次的 barcode 全部取自 MB release 的 `barcode` 欄**（第 1674 條的新順序），
+**六張全 0 的卡也都是先拿到 barcode 才掃的**——**「跑不出 UPC」這個藉口從此不成立。**
+
+**仍未 ready 6 張**，交研究層：Ron Carter《Jazz & Bossa》／Eliane Elias《Something for You》／
+Erik Truffaz《Paris》／China Moses《This One's for Dinah》／quasimode《daybreak》／Sabrina Starke《Bags & Suitcases》。
+⚠ **其中 quasimode《daybreak》在藝人目錄裡有 7 個候選**，**研究層要逐筆覆核**（第 174／175／1067 條）。
