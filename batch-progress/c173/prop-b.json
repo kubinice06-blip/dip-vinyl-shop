@@ -1,0 +1,98 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sadao Watanabe；渡辺貞夫；Sadao Watanabe Quartet；渡辺貞夫クワルテット；Sadao Watanabe Sextet；ジャズ & ボッサ",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "渡辺貞夫",
+  "album": "Jazz & Bossa",
+  "year": 1967,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Takt JAZZ-1（JP 1967 12\" Vinyl Stereo Gatefold 11 軌；Discogs releases/4851044 的 labels 欄逐字為「Takt (2) JAZZ-1 [Label]」，companies 欄「Made By: Takt Denki Co., Ltd.」「Recorded At: Teichiku Kaikan Studio」）；1977 再發 Columbia YS-7504-CT、1987 Denon 32C38-7870、2018 Columbia COCB-54251（Takt Jazz Series 50 周年）",
+  "why": "渡辺貞夫 1965 年自 Berklee 回國後、在タクト電機自營的 Takt Jazz Series 掛第一號（JAZZ-1）的領銜盤，1966 年 11 月 25／30 日與 12 月 4 日在帝蓄会館錄音室分三次錄完：A 面四重奏（菊地雅章鋼琴、中牟礼貞則吉他、萩原栄二郎貝斯、富樫雅彦鼓）打 Monk〈I Mean You〉與〈America〉，B 面加宮田英夫打擊成六重奏走 Jobim／Bonfá 的〈Felicidade〉〈Morning of Carnival〉與〈Reza〉——盤名「Jazz & Bossa」就是這個兩面兩編制的設計（Discogs releases/4851044 的 notes 逐字記了三個錄音日與 gatefold 封套內附冊；整筆 extraartists 九筆逐名對得上）。這張是他把 Berklee 學回來的 modal 手法與巴西素材接在一起的起點，後面《Sadao Meets Brazilian Friends》（1968）、《Dedicated to Charlie Parker》（1969）都從這裡長出來。實掃卡池渡辺貞夫掛名 9 張，全部是漢字字串、羅馬字 0 張：Pamoja 1976、California Shower 1978、Orange Express 1981、My Romance: Sadao Plays Ballads 1967、Sadao Meets Brazilian Friends 1968、Dedicated to Charlie Parker 1969、Pastoral 1969、Paysages 1971、Open Road 1973（其中 1967／1968 那兩張是 c-132 這一批補的，已在 seed_cards 與 desc-tools/batches/cards/c132-cards.json 兩邊）——**Takt 三張裡池中已有 JAZZ-5 與 XMS-10003-CT，缺的正是掛頭號的 JAZZ-1**。",
+  "risk": "⚠ 廠牌欄與列舉檔的 house 不一致：slice 的 `house` 記「コロムビア」、`entities` 記「Takt」，但 1967 年盤面印的發売元是**タクト電機株式会社**（Takt Denki Co., Ltd.），Takt 當時是獨立公司，日本コロムビア是 1977 年 YS-7504-CT 起才接手這批目錄——本卡 `label` 照 Discogs releases/4851044 的 labels 欄寫 Takt JAZZ-1，不寫 Columbia（第 2487 條同形狀）。⚠ **同名撞擊兩處**：(a) 渡辺貞夫另有 1996《Jazz & Bossa (Live at Suntory Hall)》（Apple us id1596988460／jp id1594502815，14 軌，1996-10-19 現場），與本盤同名不同碟，行文引盤名務必帶年份與「Takt JAZZ-1」；(b) `desc-tools/batches/cards/c161-cards.json` 有 Ron Carter《Jazz & Bossa》2008，掛名不同、chk-prop 複合鍵不會亮，下游引用這個盤名一定要帶掛名。掛名：MB artist-credit 寫羅馬字「Sadao Watanabe」（實體 378278bf）、Discogs 盤面寫「Sadao Watanabe Quartet, Sextet = 渡辺貞夫クワルテット 及び同 セクステット」、本卡照 2026-08-11 東亞藝人名裁定與第 307 條取**池中多數的漢字字串 `渡辺貞夫`（9/9）**，Apple jp 也是「渡辺貞夫」。軌數三方一致 11 軌（MB release 3decf7ed／Discogs 4851044／Apple jp id1868591070）。三種店面查法（第 254 條，只寫觀察）：Apple `search` us 未直接命中原盤、jp 命中 id1868591070（1967-04-01、11 軌）；Apple jp 的 1967-04-01 與盤面只印年份不合，日期不採信。年份無分歧，不改判。",
+  "mbNote": "釘 release-group 1041020f-39ab-431a-a2a4-b7a6b26cc150（slice 的 rgMbid，未改釘）。回問 release-group 端點（inc=artist-credits+releases+tags+genres）：title「Jazz & Bossa」、artist-credit「Sadao Watanabe」（單一實體 378278bf-b3fe-4e50-8d43-90e3b6e3f0ce＝渡辺貞夫，Person）、first-release-date 1967、primary-type Album、secondary-types 空、轄下 1 個 release。RG tags：bossa nova(1)／jazz(1)／post-bop(1)。release 端點（inc=media+labels+artist-credits）：3decf7ed（1967 JP Official 12\" Vinyl 11 軌，label「Takt」catno JAZZ-1）——**MB 只建了原盤這一張，1977 以後的コロムビア再發與 2018 的 COCB-54251 都沒建**，所以 nReleases=1 是 MB 建檔稀薄、不是這張碟只發過一次。Discogs master 752853（main_release 4851044）轄下 8 個版本，最早即 1967 Takt JAZZ-1。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Sadao & Charlie；サダオ & チャーリー；Sadao Watanabe & Charlie Mariano；渡辺貞夫 & チャーリー・マリアーノ；イベリアン・ワルツ",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "渡辺貞夫 & チャーリー・マリアーノ",
+  "album": "Iberian Waltz",
+  "year": 1967,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Takt JAZZ-7（JP 1967 12\" Vinyl Stereo Gatefold 4 軌；Discogs releases/4856063 的 labels 欄逐字為「Takt (2) JAZZ-7 [Label]」，companies 欄「Made By: Takt Denki Co., Ltd.」）；1969 コロムビア XMS-10012-CT、2000 COCB-31023、2018 COCB-54253",
+  "why": "1967 年 6 月 28 日帝蓄会館錄音室一天錄完的中音薩克斯風對奏盤：Charlie Mariano 1967 年住在東京、渡辺貞夫正是在 Berklee 上過他的課，兩支 alto 加菊地雅章、原田政長、富樫雅彦這組當時日本最前面的節奏組，四首長曲——同名的〈Iberian Waltz〉、Mariano 寫的〈God Has Mercy〉與以京都龍安寺石庭為題的〈Stone Garden of Ryoanji〉（Discogs releases/4856063 的 notes 逐字記了錄音日與 gatefold 內附四頁冊，整筆 extraartists 九筆：兩支 alto、原田政長 bass、富樫雅彦 drums、菊地雅章 piano、油井正一 liner notes、大森盛太郎 supervised by）。這是 Takt 系列裡唯一一張日美對等聯名盤，也是富樫雅彦 1969 年受傷前三重奏編制的重要記錄。實掃卡池：渡辺貞夫漢字 9 張（見前一筆逐張列表）、羅馬字 0；Charlie Mariano 掛名 0 張，池中與他相關的只有秋吉敏子《Toshiko Mariano Quartet》1961（掛在秋吉名下，c-131 補的）——**Mariano 自己的名字池中一張都沒有**，本卡是第一張。",
+  "risk": "⚠ ⚠ **掛名是本筆最大的判斷**：MB artist-credit 與盤面都寫「Sadao & Charlie」（兩個實體 378278bf 渡辺貞夫／9f7f5005 Charlie Mariano，joinphrase「 & 」），Discogs 的 anv 欄同時給「Sadao*／Charlie*」與「サダオ*／チャーリー*」，三者都是只取名的藝名式寫法。c-131 的先例（Stan Getz & The Oscar Peterson Trio）是「照 MB 聯名寫」，但 2026-08-11 東亞藝人名裁定（有漢字照漢字）與第 307 條（照池中多數寫法）指向漢字，而池中渡辺貞夫 9/9 都是漢字——**兩條規則在這裡打架**。本卡取 `渡辺貞夫 & チャーリー・マリアーノ`，理由：(1) Apple jp 逐字就是「渡辺貞夫 & チャーリー・マリアーノ」（id1868591146），是可引的第三方寫法；(2) 這個字串含池中既有的 `渡辺貞夫` 全字串，日後合併成本最低；(3) 「Sadao & Charlie」只取名，單獨看認不出是誰。**這是新造的聯名字串、不是把既有分裂再劈一次**（第 964／196／197：人名字串與團名字串可以並存）；`Sadao & Charlie` 與 `サダオ & チャーリー` 都寫進 queryAlias。⚠ 盤名的片假名對譯 Discogs 記成「イベリアン・ワル**シ**」（應為ワル**ツ**），是 Discogs 的輸入錯字，本卡 `album` 用羅馬字原題「Iberian Waltz」、不採那個片假名。⚠ **1969 年的コロムビア XMS-10012-CT 版 Discogs format 標 Compilation**（master 506450），但那是同一張碟的再發、不是合輯（軌目相同），本卡釘的是 1967 原盤，releaseType 照 MB 寫 Album。⚠ `batch-progress/enum/jp-1.md` 的「§1 候選（MB 完全沒有）」把「渡辺貞夫《Iberian Waltz》（1967，Takt）」列為 **MB 查無**——實際 MB 建了（54892085），是列舉層那份名單的誤記，見 rulings 第 3767 條。三種店面查法（只寫觀察）：Apple us id1868591146「Sadao Watanabe & Charlie Mariano」／jp 同 id「渡辺貞夫 & チャーリー・マリアーノ」，1967-06-01、4 軌，軌數與 MB／Discogs 一致；Apple 的 06-01 與 Discogs 的錄音日 06-28 矛盾，Apple 日期不採信，年份 1967 三方無分歧、不改判。",
+  "mbNote": "釘 release-group 54892085-37cf-4716-a965-1df1979af185（slice 的 rgMbid，未改釘）。回問 release-group 端點（inc=artist-credits+releases+tags+genres）：title「Iberian Waltz」、artist-credit「Sadao」＋joinphrase「 & 」＋「Charlie」（實體 378278bf-b3fe-4e50-8d43-90e3b6e3f0ce 渡辺貞夫 Person／9f7f5005-e5de-4a1e-8e6a-0a8ee3f03b9d Charlie Mariano Person）、first-release-date 1967、primary-type Album、secondary-types 空、轄下 1 個 release。RG tags：jazz(1)／post-bop(1)。release 端點（inc=media+labels+artist-credits）：e97ee958（1967 JP Official 12\" Vinyl 4 軌，label「Takt」catno JAZZ-7）——**MB 只建原盤，1969／2000／2018 三次再發皆未建**。Discogs 有兩個 master：2523913（1967 Takt JAZZ-7，本卡採）與 506450（1969 コロムビア XMS-10012-CT，同碟再發，被 Discogs 標成 Compilation）。⚠ 第 1839-B 條實測成立：本筆 `search` 回來的四筆混著 master 與 release，兩個 master id 指的是同一張碟的不同壓次，先讀 `type` 才沒打錯端點。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "Hidehiko Matsumoto, Akira Miyazawa；松本英彦・宮沢昭；Hidehiko Matsumoto；松本英彦；宮沢昭；オペレーション・サム・テイラー",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "松本英彦・宮沢昭",
+  "album": "Operation Sam Taylor",
+  "year": 1967,
+  "genres": [
+   "jazz"
+  ],
+  "label": "King Records 45SDS-1（JP 1967 12\" Vinyl 45 RPM Stereo 12 軌；Discogs releases/7054132 的 labels 欄逐字為「King Records 45SDS-1 [Label]」，companies 欄「Made By: King Record Co. Ltd」「Recorded At: Setagaya Public Hall」；另有同號 Promo 壓次 24196358）",
+  "why": "1967 年 9 月 23 日與 26 日在世田谷区民会館一次錄成、King 以 45 轉發行的高音質企劃盤：松本英彦（左聲道）與宮沢昭（右聲道）兩支次中音薩克斯風分軌對奏，八木正生、東海林修、平井（T. Hirai）分工編曲，加 SDS 合唱團——盤名直接挑明是衝著當時在日本賣到街知巷聞的 Sam Taylor 而來（Discogs releases/7054132 的 notes 與整筆 extraartists 六筆逐字：兩支 tenor 的左右聲道指定、三位編曲、合唱團）。曲目是〈My Funny Valentine〉〈Summertime〉〈Days of Wine and Roses〉〈Stardust〉這類爵士標準曲加〈Harlem Nocturne〉〈Moon River〉，兩位當時日本最頂的次中音手正面對打，是 King 六〇年代本土爵士企劃裡最被記得的一張，`batch-progress/enum/jp-1.md` 的「King 值得先看的」也逐字點名了它。實掃卡池：松本英彦**漢字 1 張**（Four Wings 1980）＋**羅馬字 1 張**（Hidehiko Matsumoto — Hot Jazz 1983）＝既有分裂；宮沢昭**漢字 8 張、羅馬字 0**（山女魚 1962、Love For Sale 1967、いわな 1969、Four Units 1969、My Piccolo 1981、On Green Dolphin Street 1982、'Round Midnight 1985、宮沢昭カルテット Sea Horse 2002）。兩人的**聯名盤池中一張都沒有**，1967 這一年兩人各自只有宮沢的 Love For Sale。",
+  "risk": "⚠ ⚠ **曲風是本筆最需要交代的**：`why` 欄列舉層給的是 `artist-tag`（簡報第二節第 5 點指名要逐張覆核），而 MB 的 RG **tags 全空**，判爵士的依據只剩兩位藝人的 artist tag（松本英彦 easy listening(1)／hard bop(1)／jazz(1)；宮沢昭 avant-garde jazz(1)／easy listening(1)／hard bop(1)／jazz(1)／post-bop(1)）——**這兩位的 artist tag 本身就帶 easy listening**。實際覆核：Discogs 的 genre 只有 Jazz、**styles 欄是空的**（沒有 Easy Listening／Kayōkyoku），曲目十二首全是英美標準曲與電影主題曲、沒有一首日本歌謡曲，編曲掛的是八木正生這位正牌爵士鋼琴手兼編曲。**本卡判為爵士並收**，但要標明：合唱團加〈Ebb Tide〉〈More〉〈Strangers in the Night〉是明確的 mood-sax 配方，盤名本身也是衝著 mood-sax 的招牌去的，**行文不可把它寫成純即興的 blowing session**。本批另外四張「Discogs style 明寫 Easy Listening／Kayōkyoku」的（松浦ヤスノブ三張＋高橋達也と東京ユニオン・プラス・アルファ）已依同一把尺退件，判準逐字寫在 rulings 第 3753 條。⚠ 掛名：MB artist-credit 是羅馬字「Hidehiko Matsumoto, Akira Miyazawa」（實體 d4027a8f 松本英彦／59e0a0d4 宮沢昭，兩者 MB 本名欄都是漢字），Discogs 同樣羅馬字。本卡依 2026-08-11 東亞藝人名裁定與第 307 條取漢字聯名 `松本英彦・宮沢昭`，分隔符用中黑點——池中兩人以上日本人聯名的先例是 `細野晴臣・鈴木茂・山下達郎`（Pacific 1978）與 `三上寛・古澤良治郎`（職業 1987），都用 `・`。⚠ 池中 `Hidehiko Matsumoto` 這個羅馬字字串仍在（Hot Jazz 1983），**本卡不合併也不修**，只在此標明待本機統一（第 964／196／197：兩種字串可以並存）。三種店面查法（只寫觀察）：Apple `search` us 與 jp **兩邊都 0 筆**（本工作階段 itunes.apple.com/search 回 HTTP 200、不是附錄二說的 403，所以 0 筆是真的沒命中，但依第 254 條**不寫成「不在架上」**）。年份：Discogs 原盤 1967、MB first-release-date 1967、錄音 1967-09-23／26，三方一致，不改判。",
+  "mbNote": "釘 release-group 1d2ed313-4c0f-49ea-b01c-2f7c5bff8246（slice 的 rgMbid，未改釘）。回問 release-group 端點（inc=artist-credits+releases+tags+genres）：title「Operation Sam Taylor」、artist-credit「Hidehiko Matsumoto」＋joinphrase「, 」＋「Akira Miyazawa」（實體 d4027a8f-…＝松本英彦 Person／59e0a0d4-…＝宮沢昭 Person）、first-release-date 1967、primary-type Album、secondary-types 空、轄下 1 個 release、**RG tags 全空**。release 端點（inc=media+labels+artist-credits）：9f525a41（1967 JP Official 12\" Vinyl 12 軌，label「KING」catno 45SDS-1）。Discogs master 2748929 轄下兩個 1967 壓次（7054132 市販、24196358 Promo），**沒有任何再發版本**——這張碟從未 CD 化，是本批唯一一張連日本本土都沒再發過的。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "決定盤!これぞジャズ・ロック；これぞジャズ・ロック；This is Jazz Rock；Norio Maeda / Jiro Inagaki & The All-Stars；前田憲男、稲垣次郎オールスターズ",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "前田憲男 & 稲垣次郎オールスターズ",
+  "album": "This Is Jazz-Rock",
+  "year": 1968,
+  "genres": [
+   "jazz",
+   "rock"
+  ],
+  "label": "Columbia YS-10036-J（JP 1968 12\" Vinyl 12 軌；Discogs releases/6095119 的 labels 欄逐字為「Columbia YS-10036-J [Label]」，companies 欄「Made By: Nippon Columbia Co., Ltd.」，notes 欄「1968 Japanese original copy.」）；2008 再發 Columbia Music Entertainment／columbia*readymade COCP-34682、2020 數位 Columbia COKM-42669",
+  "why": "1968 年日本コロムビア的和製 jazz-rock 企劃盤：前田憲男編曲指揮、稲垣次郎オールスターズ演奏，十二首全是當年的熱門曲——Miriam Makeba〈Pata Pata〉、Cannonball Adderley〈Mercy, Mercy, Mercy〉、Beatles〈Day Tripper〉〈Here, There and Everywhere〉、Temptations〈My Girl〉、Herbie Hancock〈Watermelon Man〉、Animals〈House of the Rising Sun〉、Bar-Kays〈Soul Finger〉——用大編制銅管打成 8 beat。這張是稲垣次郎把樂隊從純爵士轉向 jazz-rock／ソウル的**起點盤**，兩年後的《Head Rock》（1970）與《Jazz & Rock \"Out\"》（1970）、以及池中王牌《Funky Stuff》（1975）都是從這條線長出來的；Discogs 的 genre 給 Jazz／Rock、style 給 Jazz-Rock。實掃卡池：稲垣次郎**漢字 5 張**（稲垣次郎とソウル・メディア：Woodstock Generation 1970、Jazz & Rock \"Out\" 1970、Wandering Birds 1971、Dosojin 1972、In the Groove 1973）＋**羅馬字 2 張**（Jiro Inagaki and Soul Media：Head Rock 1970、**Funky Stuff 1975 是 apex 王牌**）——**全部都是「ソウル・メディア」時期，1968 的「オールスターズ」時期池中零張**；前田憲男池中 2 張（前田憲男トリオ《Alpha Ray》1969、前田憲男《Falling in Love With Love》1980）。這張補的正是兩人交會、且早於所有既有卡的那一年。",
+  "risk": "⚠ ⚠ **盤名要改判**：slice 與 MB RG title 用的是「決定盤!これぞジャズ・ロック」——那是 **2020-04-22 數位再發（Columbia COKM-42669）的標題**，1968 年盤面印的原題是「**This Is Jazz-Rock**」（Discogs releases/6095119，1968 Japanese original copy）。依簡報第三節第 5 點「`album` 欄用盤面原題（Discogs 的 title 為準）」，本卡改用 This Is Jazz-Rock，MB 的再發題寫進 queryAlias。⚠ **順帶避開一顆地雷**：MB 那個 1968 release（73d83b9a）的 title 寫成「This Is Jazz‐Rock」，中間是 **U+2010 HYPHEN**，直接抄會被 chk-prop 的非 ASCII 連字號那道擋下——本卡用 Discogs 的 ASCII 連字號。⚠ 掛名：MB artist-credit 是「前田憲男」＋joinphrase「、」＋「稲垣次郎オールスターズ」（實體 5f569b75 Person／745a98c5 Group），Discogs 反過來排成「Jiro Inagaki & The All-Stars, Norio Maeda」，slice 又寫成「Norio Maeda / Jiro Inagaki & The All-Stars」——**三方順序與分隔符都不同**。本卡取 `前田憲男 & 稲垣次郎オールスターズ`：順序照 MB 與 Apple jp（前田在前），分隔符照池中「個人＋具名樂隊」的先例 `早坂紗知 & Stir Up`（Free Fight 1988）、`喜納昌吉&チャンプルーズ`、`伍佰 & China Blue`，Apple jp 逐字也是「前田憲男 & 稲垣次郎オールスターズ」（id1508944497）。⚠ **絕不與池中的 `稲垣次郎とソウル・メディア`／`Jiro Inagaki and Soul Media` 合併**——オールスターズ與ソウル・メディア是前後兩個不同樂隊名（第 964／196／197）。⚠ 覆核 `why`：列舉層給 `rg-tag`，MB RG tags 為 jazz(1)／jazz rock(1)／rock(1)，Discogs genre Jazz／Rock、style Jazz-Rock，**是爵士無誤**；但十二首全是翻唱、沒有原創曲，行文不可寫成原創作品集。⚠ 不是合輯：單一樂隊＋單一編曲者的一張錄音室盤，MB secondary-types 空、Discogs format 只有 LP/Album（第 397 條兩個方向都查過了）。三種店面查法（只寫觀察）：Apple us id1508944497「Norio Maeda & Jiro Inagaki and the All Stars — This is Jazz Rock」、jp 同 id 作「前田憲男 & 稲垣次郎オールスターズ」，**1968-09-10、12 軌**，軌數與 MB／Discogs 一致，這個日期是本批唯一一筆比年份更細的第三方發行日。年份 1968 三方一致，不改判。",
+  "mbNote": "釘 release-group 5a4b6ac8-9b87-4259-83be-99e6a8011a58（slice 的 rgMbid，未改釘）。回問 release-group 端點（inc=artist-credits+releases+tags+genres）：title「決定盤!これぞジャズ・ロック」（⚠ 用的是 2020 數位再發題）、artist-credit「前田憲男」＋「、」＋「稲垣次郎オールスターズ」（5f569b75-… Person／745a98c5-… Group）、first-release-date 1968、primary-type Album、secondary-types 空、轄下 4 個 release、RG tags jazz(1)／jazz rock(1)／rock(1)。release 端點（inc=media+labels+artist-credits）：73d83b9a（**1968 JP Official 12\" Vinyl 12 軌，label「Columbia」catno YS-10036-J，title「This Is Jazz‐Rock」含 U+2010**）、2ddf0875（2008-04-16 JP Official CD 12 軌，Columbia Music Entertainment／columbia*readymade COCP-34682，title 同上）、4169969f（2020-04-22 JP Official Digital Media 12 軌，Columbia COKM-42669，title「決定盤!これぞジャズ・ロック」）、72e8142d（Pseudo-Release 12 軌）。Discogs master 802033，main_release 6095119＝1968 原盤。⚠ **本筆是本批唯一一筆 MB 的 RG title 取自再發、與原盤盤面不符的**，其餘 19 筆 RG title 都對得上原盤。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "queryAlias": "松本浩〜市川秀男カルテット；Matumoto Hiroshi • Ichikawa Hideo Quartet；松本浩；市川秀男；メガロポリス",
+  "reissuedBy": "",
+  "g": "b",
+  "artist": "松本浩・市川秀男カルテット",
+  "album": "Megalopolis",
+  "year": 1969,
+  "genres": [
+   "jazz"
+  ],
+  "label": "Victor World Group SMJX-10071（JP 1969 12\" Vinyl Stereo 5 軌，ビクター〈日本のジャズ〉シリーズ；Discogs releases/2968595 的 labels 欄逐字為「Victor World Group SMJX-10071 [Label]」，companies 欄「Manufactured By: Victor Company Of Japan, Ltd.」；另有同號 Promo 壓次 13182905）；2006 CD 再發 Think! Records THCD-027、2010 LP 再發 Think! THLP-130、2015 數位 Victor",
+  "why": "1969 年ビクター〈日本のジャズ〉シリーズ的四重奏盤：松本浩的顫音琴與市川秀男的鋼琴共同領銜，稲葉国光貝斯、**日野元彦**鼓（Discogs releases/2968595 整筆 extraartists 四筆逐字）。五首全是原創（〈A Sketch of City Life〉〈Nostalgia〉〈Megalopolis〉〈Serenade to Dimly-Lit Street〉〈Irritation〉），以六〇年代末東京的都市感為題，Discogs 給 Contemporary Jazz／Modal——是那條 modal／contemporary 路線在日本最早成形的一批錄音之一，`batch-progress/enum/jp-1.md` 的「Victor 值得先看的」逐字點名了「松本浩〜市川秀男《Megalopolis》」。2006 年 Think! Records（專做和ジャズ復刻的廠牌）把它 CD 化、2010 再壓 LP，是這批 Victor 盤裡少數兩種載體都復刻過的。實掃卡池：**松本浩 0 張、市川秀男 0 張、Megalopolis 這個盤名 0 張**——兩位在池中都是全新掛名；對照之下鼓手日野元彦池中已有 3 張（First Album 1971、TOKO: Motohiko Hino Quartet at Nemu Jazz Inn 1975、フラッシュ 1977），這張是他最早期的側錄之一。",
+  "risk": "⚠ 掛名分隔符：MB artist-credit 是「松本浩」＋joinphrase「〜」（**U+301C WAVE DASH**）＋「市川秀男カルテット」，slice 直接照抄了這個波浪號；Discogs 用「•」（Matumoto Hiroshi • Ichikawa Hideo Quartet）。本卡取中黑點 `松本浩・市川秀男カルテット`：池中兩人以上日本人聯名的先例（`細野晴臣・鈴木茂・山下達郎`、`三上寛・古澤良治郎`）都用 `・`，且 **Apple us 與 jp 逐字都是「松本浩・市川秀男カルテット」**（id1795358156），三處互相印證。⚠ **U+301C 不在 `chk-prop` 的非 ASCII 連字號黑名單裡**（它只擋 ‐‑‒–—―－ 與被當破折號用的 U+30FC），照抄 slice 的波浪號會靜靜過關、卻讓下游標題比對失準——已寫進 rulings 第 3769 條建議主線補這一道。⚠ 藝人實體兩邊都沒有任何 tag（松本浩／市川秀男カルテット 的 artist tags 全空），判爵士靠的是 RG tags（contemporary jazz(1)／jazz(1)）與 Discogs 的 genre Jazz／style Contemporary Jazz＋Modal，兩層獨立，`why` 欄的 `rg-tag` 覆核通過。⚠ 廠牌欄：MB 的 label 實體寫「VICTOR WORLD GROUP」（全大寫）、slice 的 `entities` 寫「Victor(JP imprint)」，盤面實際印的是 Victor World Group／SMJX-10071 並掛〈日本のジャズ〉系列——本卡 `label` 照 Discogs 的 labels 欄逐字寫。⚠ 同系列的姊妹盤：原信夫とシャープス・アンド・フラッツ《Little Giant》是同一系列的 SMJX-10082、已在池中（1969），行文可互指但不要寫成同一張。三種店面查法（只寫觀察）：Apple us／jp 各命中 1 筆 id1795358156（1969-01-01、5 軌，軌數與 MB／Discogs 一致）。年份：Discogs 原盤 1969、MB first-release-date 1969、Apple 1969，三方一致，不改判。",
+  "mbNote": "釘 release-group b5cbaa25-9f1e-480a-9ac2-dad23916e861（slice 的 rgMbid，未改釘）。回問 release-group 端點（inc=artist-credits+releases+tags+genres）：title「Megalopolis」、artist-credit「松本浩」＋joinphrase「〜」＋「市川秀男カルテット」（實體 dd43b97c-… 松本浩 Person／93f024a7-… 市川秀男カルテット Group，兩者 tags 皆空）、first-release-date 1969、primary-type Album、secondary-types 空、轄下 3 個 release、RG tags contemporary jazz(1)／jazz(1)。release 端點（inc=media+labels+artist-credits）：3b527088（1969 JP Official 12\" Vinyl 5 軌，label「VICTOR WORLD GROUP」catno SMJX-10071）、132ced6e（2006-08-25 JP Official CD 5 軌，Think! Records THCD-027）、7b20f9ac（2015-11-20 XW Official Digital Media 5 軌，Victor）。⚠ slice 的 `country` 記 XW、`format` 記 Digital Media、`nReleases` 記 1，**三個欄位都只反映了 2015 那張數位版**；回問 release 端點才看得到 1969 的原盤黑膠，這是簡報第二節第 1 點「先回問 release 端點」在本批最有用的一次。Discogs master 416169，另有 2010 Think! LP 再發 5007560（THLP-130，title「Megalopolis = メガロポリス」）未建進 MB。"
+ }
+]
