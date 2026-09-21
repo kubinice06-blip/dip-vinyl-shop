@@ -991,3 +991,156 @@ Discogs 的 `Min'yō`／`Folk, World, & Country` 有時標的是**樂器與一�
 **未執行任何 git 指令**（不 add／不 commit／不 push／未動索引）。
 中間檔全部在 scratchpad 的 `c174b/`（`mb.json`／`part1-3.json` 與 `c174b-mb.mjs`／`c174b-dg.mjs`／`c174b-poolscan.mjs`／`apple.sh`）。
 MB 全程 1 req/s、UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；Discogs 約 1 req/2s，未遇 429／503；Apple 16 次。
+
+---
+
+## 3961　c-174 試聽回撈層：8 張 unavailable 回撈 **6 張**（75%），2 張確定沒有
+
+本批探測鏈標成非 ready 的 8 張，逐張重查完的結果是 **6 救回、2 確定無數位版**；
+c-174 串流覆蓋率從 **11/19 升到 17/19**。
+⚠ **本層最重要的一句話**：**6 張救回的沒有一張是「掛名寫法」的問題，全部是「盤名對不上」**。
+既有七種診斷有六種講的是掛名，**本批實際卡住的是盤名**——詳見 3973。
+
+## 3962　富樫雅彦《We Now Create - Music for Strings, Winds and Percussions》→ **救回**
+`collectionId=1680426132`，店面題 `We Now Create`，4 軌（與 SMJX-10065 盤面 4 軌一致），releaseDate `1969-01-01`。
+jp 掛名 `富樫雅彦`／us 掛名 `Masahiko Togashi`，兩市皆有整張與 previewUrl，寫入取 `front=us`。
+命中寫法：`term=Masahiko Togashi We Now Create`（jp rc=1）、`term=ウィ・ナウ・クリエイト`（jp rc=1）、
+`term=富樫雅彦 We Now Create`（jp rc=25，**排第 1**）。
+**原判 `us:12→0`／`jp:11→0` 是誤判**：店面盤名**只有主標，副標 `- Music for Strings, Winds and Percussions` 整段不存在**。
+成因歸 **新第 8 種（盤名副標被店面截掉）**。
+
+## 3963　渡辺貞夫《Music Break》→ **救回**
+`collectionId=1868591907`，店面題 **`Music Break (Live, 1967)`**，掛名 `Sadao Watanabe`／`渡辺貞夫`，
+11 軌（與 Columbia XMS-10017-CT 盤面 11 軌一致），releaseDate `1969-06-10`（盤面 ©69・6，**逐字相符**）。寫入 `front=us`。
+命中寫法：`term=渡辺貞夫 Music Break`（jp rc=25 排第 1）、`term=Sadao Watanabe Music Break`（jp rc=1）、
+`term=ミュージック・ブレイク`（jp rc=25 排第 1）。
+**原判 `jp:12→0` 是誤判**：卡在店面替盤名加了括號補註 `(Live, 1967)`。成因歸 **新第 9 種（店面盤名帶括號補註）**。
+⚠ 附帶：卡單 `queryAlias` 裡本來就寫了 `Music Break (Live, 1967)` 這個寫法——**探測鏈沒有把 queryAlias 逐項拿去比對**。
+
+## 3964　渡辺貞夫《Sadao Plays Bacharach and Beatles》→ **救回**
+`collectionId=1868591966`，店面題 **`Sadao Plays Bacharach & Beatles`**（`and` → `&`），
+9 軌（與 XMS-10010-CT 盤面 9 軌一致），releaseDate `1969-03-10`（盤面 ©69-3）。寫入 `front=us`。
+命中寫法：`term=渡辺貞夫 バカラック`（jp rc=1）、`term=Sadao Plays Bacharach and Beatles`（jp rc=1，**Apple 自己就把 and 當 & 模糊匹配了**）、
+`term=サダオ・プレイズ・バカラック・アンド・ビートルズ`（jp rc=1）。
+**原判六市全 `12→0` 是誤判**，成因歸 **新第 10 種（`and` ↔ `&` 一字之差）**。
+
+## 3965　The Freedom Unity《Down By The Naked City》→ **救回**（既有第 7 種一次命中）
+`collectionId=1062217935`，店面掛名 **`ザ・フリーダム・ユニティ`**、店面題 **`ダウン・バイ・ザ・ネイキッド・シティ`**，
+4 軌（與 SMJX-10116 盤面 4 軌一致），`℗ Victor Entertainment`。
+⚠ **us／gb 皆 `rc=0`，只有 jp 有**——寫入取 `front=jp`。
+命中寫法：`term=ダウン・バイ・ザ・ネイキッド・シティ`（jp rc=1）、`term=ザ・フリードム・ユニティ`（jp rc=1）。
+**這正是第 7 種**（拿盤名的片假名轉寫直接查 `entity=album`），**c-174 再度驗證**。
+⚠ **附帶新發現**：卡單 `queryAlias` 寫的是 `ザ・フリードム・ユニティ`（**ド**），店面逐字是 `ザ・フリーダム・ユニティ`（**ダ**），
+**Apple 的模糊匹配吸收了這一字之差、仍然 rc=1**——**片假名轉寫不必逐字精確也值得一試**。
+
+## 3966　佐藤允彦 & ウォルフガング・ダウナー《Pianology》→ **救回**（第 3815 條的 `Pianorogy` 就是它）
+`collectionId=720367684`，店面題 **`Pianorogy`**（l／r 誤植，第 3815 條已逐字記過），掛名店面只掛 `佐藤允彦`／`Masahiko Satoh`，
+5 軌（與 Express ETP-9030 盤面 5 軌一致），releaseDate `1971-07-05`，`℗ 1971 EMI Music Japan Inc.`（＝東芝音工 Express 的權利繼承者，**佐證正確**）。
+⚠ **us `lookup` 只回 collection、不回 track（拿不到 previewUrl）**，寫入取 `front=jp`。
+命中寫法：`term=Masahiko Satoh Wolfgang Dauner`（jp rc=1）、`term=佐藤允彦 Pianology`（jp rc=1）。
+**`term=佐藤允彦 ピアノロジー` 是 rc=0**——**片假名轉寫在這一張反而查不到**，因為店面題根本不是片假名而是誤植的羅馬字。
+成因歸 **新第 11 種（店面盤名是羅馬字誤植）**。**策展層第 3815 條已經把答案寫在卷宗裡，探測鏈沒讀。**
+
+## 3967　山下洋輔トリオとブラス12《Introducing Takeo Moriyama》→ **救回**（第 7 種的鏡像）
+`collectionId=720405216`，店面題 **`Yosuke Yamashita Trio with Brass 12`**——
+⚠ **店面把「掛名」整個當成盤名，真正的盤名 `Introducing Takeo Moriyama` 在整筆資料裡完全不存在**。
+掛名欄反而只掛 `山下洋輔`／`Yosuke Yamashita`。4 軌（與 Express ETJ-9001 盤面 4 軌一致），
+軌名逐字 `ハチ`／`バラード・フォー・Y.Y.`／`テイク・ワン`／`グガン`，`℗ 1971 EMI Music Japan Inc.`。
+⚠ us `lookup` 同樣只回 collection 不回 track，寫入取 `front=jp`。
+命中路徑：**盤名與片假名轉寫全部 rc=0**（`イントロデューシング・タケオ・モリヤマ`、`Introducing Takeo Moriyama` 皆 0），
+最後是 **`entity=musicArtist` 取 `artistId=4214803`（山下洋輔）再 `lookup?id=4214803&entity=album&limit=200` 掃完 36 筆目錄**才找到。
+成因歸 **新第 12 種（店面把掛名當盤名，盤名整個消失）**——**這是第 7 種的鏡像**：
+第 7 種是「盤名的轉寫變成掛名」，第 12 種是「掛名變成盤名」。**兩種都要靠藝人目錄整份掃才穩。**
+⚠ **年份對不上但仍採信**：店面 `1971-06-21`，盤面（Discogs releases/7265634 notes 逐字）是
+`Recorded at Toshiba Studio, September 25, 1971`＋`released ... on December 1, 1971`。
+**依軌數（4／4）、軌名、廠牌權利（EMI Japan＝東芝）、掛名逐字四項判定為同一張**，
+年份差視為 Apple 側 metadata 誤植（同一批 EMI Japan 上架的 `720367684` 也有類似偏移）。
+**此裁定可逆**（改的是 previews 的單值），依裁定權下放第 2 條當場定。
+
+## 3968　三保敬太郎と彼のグループ《Sound Poesy "Sachio"》→ **確定沒有**
+試過的寫法（全部 jp，另加 us 交叉）：`三保敬太郎`（rc=2）、`Keitaro Miho`（rc=2）、`Keitaro Miho & His Group`（jp/us rc=2）、
+`三保敬太郎と彼のグループ`（rc=0）、`Sound Poesy`（rc=1，是 Jorge Rivera-Herrans 的無關碟）、`サウンド・ポエジー`（rc=0）、
+`三保敬太郎 サウンド・ポエジー`（rc=0）、`ポエジー`（rc=18，無一相關）、`Poesy`（rc=25，無一相關）、
+`Sachio`（rc=25，無一相關）、`サチオ`（rc=25，無一相關）、`ミホケイタロウ`（rc=0）。
+**決定性證據**：`entity=musicArtist` 取到 `artistId=889808906`（Keitaro Miho），
+`lookup?id=889808906&entity=album&limit=200` 在 **jp 與 us 都只回 2 張**，逐字是
+《映画『すべてが狂ってる』オリジナル・サウンドトラック》（1960）與《映画『帰ってきた狼』オリジナル・サウンドトラック》（1965）。
+**三保敬太郎在 Apple 的整份目錄就只有這兩張配樂**，Columbia YS-10071-J 與 2008 年的
+`columbia*readymade COCP-34685` 再發 **都沒有數位化**。成因歸 **既有第 6 種（只有黑膠／CD、沒有數位版）**。
+
+## 3969　横田年昭《Exciting Flute》→ **確定沒有**
+試過的寫法：`横田年昭`（jp rc=6）、`Toshiaki Yokota`（jp rc=2）、`エキサイティング・フルート`（rc=0）、
+`横田年昭 エキサイティング`（rc=0）、`エキサイティング・フルート 横田`（rc=0）、`Exciting Flute`（jp rc=25 全無關／us rc=0）、
+`Toshiaki Yokota Exciting Flute`（jp rc=1 但回的是《FLUTE ADVENTURE》／us rc=0）、`横田年昭 フルート`（jp rc=1 同上）、
+`横田年昭とリオアルマ`（rc=2，皆為《サインはV》的翻唱卡拉 OK 單曲）。
+**決定性證據**：兩個 `artistId` 的整份目錄都掃過——
+`456851832`（横田年昭とビート・ジェネレーション）jp/us 各只有 1 張＝`1777009896`《FLUTE ADVENTURE》（8 軌，**本批已 ready 的另一張**）；
+`1468865946`（Toshiaki Yokota）jp/us 各只有 1 張＝`1681938840`《Primitive Community (Remastered 2023)》（6 軌，1971）。
+**Express EP-7766（12 軌）與 2011 年 Think! Records DTHK-005 再發都沒有數位版。**
+成因歸 **既有第 6 種**。⚠ 並且**要小心**：`Toshiaki Yokota Exciting Flute` 在 jp 會回 rc=1，
+但回的是**同一藝人的另一張**——**`rc=1` 不等於命中**，軌數（8 vs 12）與盤名一比就知道不是。
+
+## 3970　本批成因彙整：**8 張裡 0 張是「市場真的沒有因為冷門」，2 張是沒數位版，6 張全是比對誤判**
+| 卡單盤名 | 原 `tried` | 結果 | 成因 |
+|---|---|---|---|
+| 富樫雅彦《We Now Create - Music for…》 | us:12→0 等 6 市 | 救回 | **新 8：副標被截掉** |
+| 渡辺貞夫《Music Break》 | 六市 12→0 | 救回 | **新 9：括號補註** |
+| 渡辺貞夫《Sadao Plays Bacharach and Beatles》 | 六市 12→0 | 救回 | **新 10：`and`↔`&`** |
+| The Freedom Unity《Down By The Naked City》 | 六市 9〜10→0 | 救回 | **既有 7：片假名轉寫** |
+| 佐藤允彦 & ダウナー《Pianology》 | 六市 12→0 | 救回 | **新 11：羅馬字誤植 `Pianorogy`** |
+| 山下洋輔トリオとブラス12《Introducing Takeo Moriyama》 | 六市 12→0 | 救回 | **新 12：掛名當盤名** |
+| 三保敬太郎《Sound Poesy "Sachio"》 | 六市 0→0 | 無 | 既有 6：無數位版 |
+| 横田年昭《Exciting Flute》 | 0〜2→0 | 無 | 既有 6：無數位版 |
+
+**回撈率 75%**，落在 Blue Note 線（65%）之上、遠高於 c-173 的 29%。
+⚠ **c-173 的 29% 不可以外推到 1969–1971 年段**：c-173 是 1950–60 年代盤，本批是 1969–1971，
+**1970 年前後的日本爵士在 Victor Entertainment／EMI Music Japan 兩家手上數位化得相當完整**。
+
+## 3971　**新成因（本層最有價值的產出）：第 8–12 種，五種全部是「盤名對不上」**
+既有七種診斷裡有六種（2／2b／2c／3／4／7）講的是**掛名**，只有第 6 種與盤名無關。
+**本批六張救回的沒有一張是掛名問題**，全部卡在盤名：
+- **第 8 種　副標被店面截掉**：卡單 `We Now Create - Music for Strings, Winds and Percussions`，店面只有 `We Now Create`。
+- **第 9 種　店面替盤名加括號補註**：`Music Break` → `Music Break (Live, 1967)`。**方向與第 8 種相反（店面比卡單長）。**
+- **第 10 種　`and` ↔ `&`（以及 `＆`／`+`）**：`Bacharach and Beatles` → `Bacharach & Beatles`。
+- **第 11 種　店面盤名是羅馬字誤植**：`Pianology` → **`Pianorogy`**（l／r）。**片假名轉寫對這種完全無效**（`ピアノロジー` rc=0）。
+- **第 12 種　店面把掛名整個當成盤名，原盤名消失**：`Introducing Takeo Moriyama` → `Yosuke Yamashita Trio with Brass 12`。
+  **這是第 7 種的鏡像**，**唯一可靠解法是 `entity=musicArtist` → `lookup?entity=album&limit=200` 掃整份目錄**。
+
+## 3972　**建議改探測鏈的比對規則（不是查詢規則）——本批六張誤判全部出在這裡**
+本批六張的 `tried` 都是 `12→0`／`9→0` 形狀：**搜尋索引明明回了東西，是比對把正確答案丟掉了。**
+建議比對盤名前先做這五步正規化（成本極低、本批六張全部可救）：
+1. **砍副標**：`—`／`-`／`：`／`:` 之後整段切掉再比一次（救第 8 種）。
+2. **砍括號**：`(...)`／`［...］`／`【...】` 整段切掉再比一次（救第 9 種）。
+3. **符號歸一**：`and`／`&`／`＆`／`+`／`と` 一律折成同一個 token（救第 10 種）。
+4. **容錯一個字**：盤名長度 ≥6 時允許 Levenshtein 距離 1（救第 11 種 `Pianology`／`Pianorogy`；片假名同理救 `フリードム`／`フリーダム`）。
+5. ⚠ **年份不可以當否決條件，只能當加分條件**：本批兩張救回的年份都對不上——
+   `1062217935` 標 `2015-12-09`（數位再發日蓋掉 1971 原盤），`720405216` 標 `1971-06-21`（盤面是 12-01）。
+   **改用「軌數相符」當主要否決條件**：本批 6 張救回的**軌數 6/6 與盤面逐字相符**，是全場最可靠的一格。
+
+## 3973　**`queryAlias` 沒有被探測鏈用掉——這是純粹的浪費**
+《Music Break》的卡單 `queryAlias` 逐字就寫著 `Music Break (Live, 1967)`，**與店面題一字不差**；
+《Pianology》的 `queryAlias` 逐字寫著 `Pianorogy`，**與店面誤植一字不差**（策展層第 3815 條就是這麼記的）。
+**兩張都被探測鏈判成 unavailable。**
+→ **後續批次的固定動作：探測鏈要把 `queryAlias` 用「；」切開後逐項當 `term` 打一輪，並逐項當比對候選**。
+光這一條，本批 8 張裡有 2 張根本不會進回撈層。
+
+## 3974　市場與節流實測
+- **jp 是本線最完整的店面**：6 張救回**全部**在 jp 命中；其中 **1 張（Freedom Unity）us/gb 皆 rc=0，只有 jp 有**。
+- **us 仍然可用且對本線有價值**：4 張在 us 同號可取、掛名是羅馬字（與本批既有 ready 條目的 `appleArtist` 形狀一致），故 `front` 取 us。
+- ⚠ **`lookup` 的 `entity=song` 在 us 有時只回 collection、不回 track**（`720367684`／`720405216` 皆如此，us rc=1）。
+  **拿不到 previewUrl 時換 `country=jp` 再打一次**，本批兩張都是這樣拿到的。
+- **本層共打 Apple 約 60 次，節流 1.3 秒，0 次 403、0 次 429**（與策展層首輪 9 次 403 的經驗不同；
+  推測 403 與節流間隔相關，1.3 秒以上就沒再出現過）。本層仍保留 7 次退避重試的機制，整場沒用上。
+- **`entity=musicArtist` → `artistId` → `lookup?entity=album&limit=200`** 是本層最有效的單一招：
+  8 張裡有 **3 張**（Miho、Yokota ×2 artistId、Yamashita）靠它定案（2 張確認沒有、1 張救回）。**`0→0` 的碟一律先走這招。**
+
+## 3975　本層的邊界自述（未碰任何被禁項）
+只寫了兩個檔：
+1. `batch-progress/probe/previews.json`——**先整份讀入（3485 鍵），只改本批 6 個鍵，整份寫回**；
+   寫回前後各數一次鍵數，**皆為 3485，未增未減**；**未動任何其他批次的鍵**；
+   JSON 以 `ensure_ascii=False, indent=1` 序列化，寫入前已驗證原檔 round-trip 位元組完全相同（格式未被改動）。
+2. 本檔（`batch-progress/c174/rulings.md`）——**只 append 第 3961–3975 條，寫入前重讀過全檔，未覆寫既有任何一行**。
+**未碰** `seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`caa.json`、任何卡單、
+`batch-progress/c175/*`（⚠ 工作區有別的工作階段未提交的 `c175/rulings.md` 改動，**全程未觸碰**）、KV、Firestore。
+**未執行任何 git 指令**（不 add／不 commit／不 push／未動索引）。
+中間檔全部在 scratchpad 的 `c174rec/`（`q.py`／`write.py`／`cache/`）。
