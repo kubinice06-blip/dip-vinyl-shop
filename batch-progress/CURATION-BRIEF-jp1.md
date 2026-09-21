@@ -71,8 +71,24 @@ Discogs `tracklist` 含 `position` 為空的標題列。
   **腳本刻意不自動判定**——**這一格要你逐張人工比**。撞到就退。
 - `artistVariants` 是該掛名的全部同義字串，**掃池與查店面時兩種文字都要試**。
 
+⚠ **c-175 起改用 v2（`jp1-slice-enrich.mjs`），同義字串的來源換了**（第 1856-B 條）：
+v1 用 `artist?query=artist:"<名>"` 找同義字串是錯的——**MB 的 `artist:` 欄位查詢不比對 alias**
+（實測 `artist:"Mina Aoe"`、`artist:"Takehiro Honda"` 都回 **count 0**），
+而且回得到的可能是**別的實體**（`artist:"Sadao Watanabe"` 回的是 `Sadao Watanabe Quintet`，
+它的 alias 裡沒有 `渡辺貞夫`）。
+v2 改成**由 `rgMbid` 反查藝人 MBID**（`release-group/<id>?inc=artist-credits+releases`），再取該藝人的 alias。
+
 ⚠ **重算只保證「確定撞池」的已被剔除，不保證沒有漏網**：
-腳本對 c-173 的 13 筆實際撞池抓到 12 筆（92%），**剩下那 8% 還是要靠你**。
+v1 對 c-173 的 13 筆實際撞池抓到 12 筆（92%），**剩下那 8% 還是要靠你**。
+
+### `titleCheck`（c-175 起）
+
+⚠ **`album` 欄一律以「最早 release 的 title」為準，不讀 RG title**（第 1858-B 條）。
+c-174 b 組實測 **RG title 取自再發的比例 33%（收件裡 57%）**，形狀是**原盤與再發 MB 都建了、
+RG title 卻取了再發那一筆**。slice 的 `titleCheck` 欄已掛好：
+`rgTitle`／`earliestRelease{date,title,country}`／`titlesSeen`（全部出現過的標題），
+兩者不同時 `note` 會有一行逐字警語。
+⚠ **只報不判**——最早的 release 未必是日本原壓（可能他國先發或 pseudo-release），**逐張人工定案。**
 
 ## 二、⚠ 你的工作是覆核，不是挑
 
@@ -111,9 +127,16 @@ Discogs `tracklist` 含 `position` 為空的標題列。
 
    ⚠ **判準用這一套**（c-173 b 組第 3753 條確立，後九批照此）：
 
-   **退（非爵士）**，任一條成立：
+   ⚠ **四款不是全等的**（第 1857-B 條，c-174 b 組第 3819 條提出並經我採納）：
+
+   **①②成立 → 進人工判，不是自動退**：
    1. Discogs `styles` 含 **`Easy Listening`** 或 **`Kayōkyoku`**；
-   2. Discogs `genres` 含 **`Folk, World, & Country`**（Discogs 把演歌／歌謡曲歸在這個桶）；
+   2. Discogs `genres` 含 **`Folk, World, & Country`**（Discogs 把演歌／歌謡曲歸在這個桶）。
+   **理由**：Discogs 對日本盤的 genre 桶很粗，**尺八／琴／和太鼓演奏的爵士盤會被丟進去**。
+   實例是《Bamboo》（村岡実，尺八）字面中①②但③④不成立 → 收；
+   而同一位藝人的《Harlem Nocturne》在單一 Easy Listening style 下 c-173 也是判收。
+
+   **③或④成立 → 退（充分理由）**：
    3. **曲目過半是日本歌謡曲／演歌**（即使 genre 只寫 Jazz）；
    4. 藝人的整份 Discogs 目錄落在ムード／ソフト・コーラス／イージー・リスニング 系列。
 
