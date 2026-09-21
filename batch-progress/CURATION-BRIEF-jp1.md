@@ -121,6 +121,14 @@ RG title 卻取了再發那一筆**。slice 的 `titleCheck` 欄已掛好：
    **每一筆的年與盤名都要回查原盤**，主要靠 **Discogs**（日本盤的 Discogs 覆蓋遠優於 MB）：
    `search` → 讀 `type`（⚠ **master 與 release 混在同一份結果裡；拿 master id 去打 `releases/<id>`
    會回一張完全不同的專輯，而且一樣 200**，第 1839-B 條）→ master 走 `/masters/<id>/versions`。
+   ⚠ ⚠ **`catno=` 反查回來的年份與 slice 一致，也不保證那是原壓**（第 1887-B 條）——
+   **固定動作是逐筆打 `/masters/<id>/versions` 看整張版本表**，不是比對單筆年份就算數。
+   **`versions` 是本線在「原壓年／原盤盤名／再發數」三件事上的單一真相來源。**
+   ⚠ **查日本樂手漢字名的來源順序**（第 1890-B 條）：MB `artist-rels`／alias → Apple jp → 盤面
+   → ⚠ **第四條：`api.discogs.com/artists/<id>` 的 `namevariations`**（c-176 a 靠它查到 `野村元`，前三條全落空）。
+   ⚠ **`live` 的判準要收窄**：`Recorded At: <場館>` **本身不足以判實況**，
+   還要 notes 有 live／觀眾／單一日期；反向則是**系列欄有 `Direct Cutting` 而 MB 標 `Live` 時先假設是工法**。
+   ⚠ **slice 的 `artist` 欄本身可能帶 U+2010**（`Hi‐Fi Set`），照抄會被 `chk-prop` 擋。
    改判就在 `rulings.md` 寫明改判前後與依據。
 4. **掛名照池中先例**（第 307 條）：**新卡一律用池中多數寫法**，`risk` 標明 MB credit 的寫法。
    **絕不新造分裂、不自行合併。** ⚠ **漢字／羅馬字是這條線的分裂大宗**，
