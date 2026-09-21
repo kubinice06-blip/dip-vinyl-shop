@@ -34,8 +34,8 @@ for (const g of groups) {
     // **只報不擋**——它們不是 ASCII 連字號的排版替身，是盤面上的正確字元，
     // 池中也有合法先例（`高木元輝＝加古隆カルテット`，c-87）。
     // 正規化（上面的 `k()`）本來就把四種一併剝掉，折不出分裂鍵，所以不進 `say()`。
-    if (/[\u301c\uff5e\uff1d]/.test(x.album + x.artist))
-      console.log(`  （報告）含日文分隔符 〜／～／＝：${x.artist} — ${x.album}`);
+    if (/[\u301c\uff5e\uff1d\u30a0]/.test(x.album + x.artist))
+      console.log(`  （報告）含日文分隔符 〜／～／＝／゠：${x.artist} — ${x.album}`);
     // 2026-09-15（c-133 a 組抓到）：**片假名長音記號 U+30FC 也會被拿來當破折號用**
     // （MB 原題 `Rock Joint Cither ー Silk Road`）。但 `ー` 在 `シャープス`／`ニューハード`
     // 裡是合法的長音，不能整個字元一律擋。**只擋兩側都是空白或 ASCII 英數的那種**——

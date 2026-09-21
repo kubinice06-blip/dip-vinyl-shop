@@ -71,6 +71,13 @@ Discogs `tracklist` 含 `position` 為空的標題列。
   **腳本刻意不自動判定**——**這一格要你逐張人工比**。撞到就退。
 - `artistVariants` 是該掛名的全部同義字串，**掃池與查店面時兩種文字都要試**。
 
+⚠ ⚠ **`artistVariants` 裡沒有漢字／假名字串就當「沒查過」，長度不是判準**（第 1868-B 條）：
+`Kosuke Mine Quintet` 的變體長度是 2、兩個都是羅馬字編制串，
+漏掉 seed 裡逐字同碟的 `峰厚介《Daguri》1973`。
+**而且要逐「方」檢查**（第 1873-B 條）：**聯名列裡任何一方只出現羅馬字，那一方就算沒查過**——
+c-175 a 組的 `沢田靖司`（MB `inc=aliases` 回的是空陣列）與 `東京室内楽協会`
+都是人工查出漢字字串才補掃到的。那種列一律要你自己查出漢字名再掃一次池。
+
 ⚠ **c-175 起改用 v2（`jp1-slice-enrich.mjs`），同義字串的來源換了**（第 1856-B 條）：
 v1 用 `artist?query=artist:"<名>"` 找同義字串是錯的——**MB 的 `artist:` 欄位查詢不比對 alias**
 （實測 `artist:"Mina Aoe"`、`artist:"Takehiro Honda"` 都回 **count 0**），
@@ -136,11 +143,24 @@ RG title 卻取了再發那一筆**。slice 的 `titleCheck` 欄已掛好：
    實例是《Bamboo》（村岡実，尺八）字面中①②但③④不成立 → 收；
    而同一位藝人的《Harlem Nocturne》在單一 Easy Listening style 下 c-173 也是判收。
 
-   **③或④成立 → 退（充分理由）**：
-   3. **曲目過半是日本歌謡曲／演歌**（即使 genre 只寫 Jazz）；
-   4. 藝人的整份 Discogs 目錄落在ムード／ソフト・コーラス／イージー・リスニング 系列。
+   **③成立 → 退（唯一的充分理由）**：
+   3. **曲目過半是日本歌謡曲／演歌**（即使 genre 只寫 Jazz）。
 
-   **收（爵士）**：Discogs `genres` 為 Jazz（或 Jazz/Rock）且 `styles` **不含** Easy Listening／Kayōkyoku，
+   **④也降為「進人工判」**（第 1871-B 條，c-175 a 組第 3873 條提出並經我採納）：
+   4. 藝人的整份 Discogs 目錄落在ムード／ソフト・コーラス／イージー・リスニング 系列。
+   **理由**：④ 看的是**藝人的職業身分**，而 **1960–70 年代的日本錄音室樂手個個兼接ムード與爵士**。
+   照字面執行會退掉 `Singers 3《Foliole #2》` 那種——A 面是佐藤允彦 16:36 的委作、
+   伴奏是 The Freedom Unity ＋ 六位池中爵士樂手、King 自家爵士復刻線再發三次。
+   **退件要看這張碟本身，不是看這個人平常接什麼案子。**
+
+   **⑤（第 1861-B 條補，堵收件款的縫；措辭經第 1871-B 條修正）**：
+   `genres` **不含 Jazz**，或含 `Non-Music`／`Stage & Screen`，而曲目又非爵士標準曲或原創曲
+   → **不成立收件**。
+   ⚠ **不要寫成「不以 Jazz 為首」**——**Discogs 的 `genres` 陣列是字母序**
+   （c-175 a 組實測 19 筆有 14 筆嚴格字母序），`Electronic, Jazz, Rock` 不代表它不是爵士盤。
+   **「首位」這個概念只對 `styles` 有意義。**
+
+   **收（爵士）**：Discogs `genres` **含** Jazz（或 Jazz/Rock）且 `styles` **不含** Easy Listening／Kayōkyoku，
    且曲目是爵士標準曲或原創曲。
 
    **非爵士就退，理由與命中的條號寫進 `rulings.md`。退件不補張。**
