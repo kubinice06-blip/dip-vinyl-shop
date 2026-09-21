@@ -176,7 +176,11 @@ RG title 卻取了再發那一筆**。slice 的 `titleCheck` 欄已掛好：
 7. **廠牌欄**：`entities` 是 MB 的廠牌實體名，**不等於盤面印的廠牌**
    （imprint 與母公司常互掛；Blue Note 線的第 2487 條就是這個形狀）。
    **`label` 欄要寫盤面實際廠牌＋目錄號**，以 Discogs `releases/<id>` 的 `labels` 欄為準，逐字引。
-8. **三種店面查法**（第 254 條），**只寫觀察不寫結論**。
+8. ⚠ **只印片假名的日本原盤，用 `lookup?id=<id>&entity=song` 可拿到全部英文原題**（第 1882-B 條）——
+   《Count Buffalo Plays Country Rock》十二軌因此全部對回原曲。
+   ⚠ us 的 `entity=song` 有時只回 collection 不回 track，**換 `country=jp` 再打即可**。
+
+   **三種店面查法**（第 254 條），**只寫觀察不寫結論**。
    ⚠ **日本盤的店面覆蓋率預期比 Blue Note 低很多**，查不到是常態，不是退件理由。
 9. **`why`／`risk` 的密度照 `batch-progress/c131/prop-b.json`。**
 

@@ -1483,3 +1483,456 @@ b 7 full,full,full,full,full,full,full
 - **續跑保護**：照派工信每 3 張寫回一次整份 `c174-b.json`（3 → 5 → 7），本層未遇容器重啟。
 
 ## 4030　**編號區間結算**：本節用到 **4011–4030**（共 20 條，區間用滿）。
+
+---
+
+# c-174 **a 組研究層**裁定（編號區間 3981–4010）
+
+批次 c-174｜a 組 12 張（1969–1970）｜研究層｜2026-09-21
+輸出：`desc-tools/batches/research/c174-a.json`（新增）。
+規則照 `desc-tools/prompts/research-base.md`（含開頭「雲端 Blue Note 線的三處例外」）
+→ 派工信 → `batch-progress/CURATION-BRIEF-jp1.md` 第〇節與附錄二
+→ 本檔第 3771–3799 條（本組策展層）與 `c173/rulings.md` 第 3843–3860 條（上一批研究層）。
+⚠ **b 組研究層先交件、用了 4011–4030**；本節照派工信用 **3981–4010**，兩段互不覆寫。
+
+## 3981　總表：**12 張全部 `full`，thin 0 張；facts 合計 144 條，每張恰好 12 條**
+
+| # | 卡 | facts | status／coverage | 相異 `src` |
+|---:|---|---:|---|---:|
+| 0 | 沢田駿吾とオールスターズ《Fool On The Hill》 | 12 | full | 7 |
+| 1 | 富樫雅彦《We Now Create - Music for Strings, Winds and Percussions》 | 12 | full | 6 |
+| 2 | 石川晶とカウント・バッファローズ《Prayer With Faith And Love》 | 12 | full | 9 |
+| 3 | 石川晶とカウント・バッファローズ《Soul & Rock》 | 12 | full | 9 |
+| 4 | 鈴木弘＝富樫雅彦クインテット《Variation》 | 12 | full | 7 |
+| 5 | 鈴木弘とハピー・キャッツ《Up Up and Away》 | 12 | full | 6 |
+| 6 | 渡辺貞夫《Music Break》 | 12 | full | 9 |
+| 7 | 渡辺貞夫《Sadao Plays Bacharach and Beatles》 | 12 | full | 8 |
+| 8 | 石川晶とカウント・バッファローズ《Exciting Drums African Rock Party》 | 12 | full | 8 |
+| 9 | 三保敬太郎と彼のグループ《Sound Poesy "Sachio"》 | 12 | full | 6 |
+| 10 | 横田年昭《Exciting Flute》 | 12 | full | 8 |
+| 11 | 石川晶とカウント・バッファローズ《Count Buffalo Plays Country Rock》 | 12 | full | 9 |
+
+**每張都壓在上限 12 條、每條附完整 https `src`，`status` 與 `coverage` 兩欄同值並存。**
+`key` 從卡單逐字複製，順序與卡單 `group === "a"` 的 12 筆完全一致（已用程式逐筆比對 `key`／`artist`／`album` 三欄）。
+
+## 3982　**thin 0 張**——與派工信的預期不同，理由寫在這裡
+
+派工信第二節逐字警告「一手史料比 Blue Note 稀薄，查不到不要編⋯`status` 誠實標 `thin`」。
+**實測沒有一張需要標 thin**，與 c-173 第 3844 條、b 組第 4012 條三次結論一致。本組的四口井是：
+
+1. **原廠商品頁**（見第 3983 條）——它給的是原盤發行日、完整編制與獎項，比 Discogs 高一層。
+2. **日文維基的樂手條目**：本組 30 個查詢裡 22 個命中（見第 3984 條）。
+3. **Discogs 的整筆 credits**：本組十二張裡十張有 credits，最多的一張（Bacharach）十九筆、次多（Exciting Flute）二十一筆。
+4. **英文維基的曲目條目**：本線大量翻唱英美流行曲，**每一首原曲都查得到作者、年份與榜位**——
+   這是 Blue Note 線沒有的一口井，本組十二張裡有八張是翻唱盤，靠它把 facts 撐滿。
+
+**最接近 thin 的是兩張 `extraartists` 全空的碟**（《Sound Poesy "Sachio"》與《Count Buffalo Plays Country Rock》，見第 3999 條），
+**它們仍達 12 條，但那 12 條裡沒有一條是伴奏樂手。**
+
+## 3983　⚠ ⚠ 本層最有價值的兩個來源發現
+
+**(a) 原廠商品頁在本組四次命中，兩家（コロムビア／ビクター），每一次都給了策展層拿不到的東西。**
+承 c-173 第 3845 條與 b 組第 4017 條，本組再擴一次：
+
+| 卡 | 頁面 | 官方頁逐字給了什麼（策展層沒有的） |
+|---|---|---|
+| Up Up and Away | `columbia.jp/prod-info/COCB-54010/` | 「**オリジナルリリース：1969/9/10**」「LP番号：HS-10004」、**八人完整編制**（更正了策展層兩個錯名）、鈴木弘 待過**バディ・リッチ・オーケストラ**、「【初CD化】(「125th St. 7th Ave」を除く)」、解說尾川雄介 |
+| Sound Poesy "Sachio" | `columbia.jp/prod-info/COCP-34685/` | 「＜**オリジナル発売日: 1969.11.10**／旧レコード番号: YS-10071-J＞」、十二軌日英對照、監修小西康陽／解說濱田高志 |
+| Music Break | `columbia.jp/artist-info/watanabesadao/discography/COCB-54258.html` | 「**ボサ・ノヴァ・コンサートの未収録曲集**」（**整張碟的身分**，見第 3989 條）、**含弦樂的完整編制**、「1967年7月4日 東京新宿厚生年金ホールでの実況録音盤」、「takt JAZZ series 50th anniversary」九張復刻 |
+| Sadao Plays Bacharach and Beatles | `columbia.jp/artist-info/watanabesadao/discography/COCB-54257.html` | 「**1968年11月8日　東京サンケイホール　他**」（**錄音日與場地**，見第 3990 條）、編制、「1969年3月発売」 |
+| Fool On The Hill | `jvcmusic.co.jp/-/Discography/-/VICJ-70044.html` | 「**1969年リリースの記念すべきファースト・アルバム**」「1952年に国内でジャズ・コンボを結成」、日文曲題全表、2018 年「ニッポンのジャズ presented by Guitar magazine」八張系列的來龍去脈（策劃原田和典／尾川雄介） |
+
+⚠ **`columbia.jp` 的兩種網址在本組是「各命中一半」**：`prod-info/<catno>/` 12 個查詢只有 **2 個 200**
+（COCB-54010／COCP-34685），`artist-info/<slug>/discography/<catno>.html` 才把渡辺貞夫 的兩張撈出來。
+→ **c-173 說 prod-info 全 404、b 組第 4017 條說 prod-info 全 200，本組是一半一半——結論是兩種都要試，不要因為前一批的經驗跳過任何一種。**
+⚠ **`artist-info` 的 slug 是羅馬字姓名全小寫無分隔**（`watanabesadao` ✔／`ishikawaakira` ✔／`togashimasahiko` ✔／`suzukihiroshi` ✘ 404）。
+**找 slug 的辦法**：抓 `columbia.jp/jazz/` 的 HTML，裡面就列著一整排 `artist-info/<slug>/` 連結（`columbia.jp/search/?s=` 是 JS 驅動、抓不到結果）。
+⚠ **`jvcmusic.co.jp` 的路徑是 `/-/Discography/-/<catno>.html`**（第二段用單一連字號即可，不必知道藝人代碼）。
+本組實測 `VICJ-70044` ✔／`VICJ-61367` ✔，但 `VICJ-23007`／`EM-1002`／`NJS-856`／`NJS-808`／`VIJ-6332` **全部 404**
+——**Victor 的舊商品頁與 Project Re:Vinyl 的黑膠都不在這個 DB 裡。**
+
+**(b) ⚠ ⚠ 新招：`itunes.apple.com/lookup?id=<id>&entity=song` 可以把只印片假名的日本原盤曲目對回英文原題。**
+《Count Buffalo Plays Country Rock》的 Discogs 曲目是十二個純片假名字串、沒有任何 Written-By，
+策展層只能照抄，B2〈四枚のかべ〉與 B6〈二人の青い鳥〉兩首完全對不出原曲。
+本層用 `lookup?id=1680848563&entity=song`（jp／us 兩地各回十二軌，曲名逐字一致）一次拿到全部英文原題：
+**B2 = 〈Four Walls〉、B6 = 〈My Elusive Dreams〉**，其餘十首也全部確認。
+→ **給 c-175…c-182**：**日本原盤只印片假名時，廠牌自家的數位條目是唯一能把曲名對回原曲的來源**，
+而且 `lookup` 不是 `search`、**本組 3 次全 200，沒有遇到附錄二第 2 點的間歇性 403**。
+
+## 3984　來源網域實測（本工作階段逐一記錄）
+
+**可用**：
+
+| 網域 | 本層用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（`releases/`／`masters/<id>/versions`） | **25 次** | **全數 HTTP 200**，免 token，自我節流 3.2 s／次，**0 次 429／503** |
+| `ja.wikipedia.org/w/api.php`（`prop=extracts&explaintext=1&redirects=1`） | **48 次** | 全數 200，0.7 s 間隔，**33 命中／15 missing** |
+| `en.wikipedia.org/w/api.php`（`exintro=1`） | **21 次** | 全數 200，**19 命中／2 missing** |
+| `musicbrainz.org/ws/2/release-group/<id>` | 1 次 | 200，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，1.5 s 間隔 |
+| `columbia.jp` | **17 次** | `prod-info` 12 次（**2 次 200、10 次 404**）、`artist-info/.../discography/` 12 次（**4 次 200、8 次 404**）、目錄頁 3 次全 200 |
+| `www.jvcmusic.co.jp` | 11 次 | **3 次 200、8 次 404** |
+| `itunes.apple.com/lookup` | 3 次 | **全數 200**，1.5 s 間隔，**0 次 403** |
+| `music.apple.com/jp/album/<id>`（當 `src` 用，逐一開過） | 1 次 | 200 |
+
+**查無條目的日文維基人名（本層逐字查過，全部回 `missing`）**：
+`吉沢元治`／`高木元輝`／`村岡建`／`横田年昭`／`原田政長`／`池田芳夫`／`八城一夫`／`羽鳥幸次`／`市原康助`／
+`宮間利之とニューハード`／`ハピー・キャッツ`／`ジャズディスク大賞`／`日本ジャズ賞`／`原信夫とシャープス・アンド・フラッツ`／`スイングジャーナル・ジャズ・ディスク大賞`。
+→ **承 c-173 第 3846 條再確認**：1960–70 年代的側錄樂手（貝斯、上低音、長號席）在日文維基普遍沒有條目；
+**本組多一個發現——獎項本身也沒有條目**（`ジャズディスク大賞` 與 `日本ジャズ賞` 兩個都 missing），
+所以本線凡要寫這個獎，**只能引提到它的藝人條目或商品頁，引不到獎項條目**。
+
+**本層未使用**：`allmusic`／`allaboutjazz`（派工信已標 403，未試不浪費配額）、
+`jazzdisco.org`（本組十二張全是日本本土盤，該站覆蓋美國廠牌）、`junkoonishi.com`（禁用）、
+`itunes.apple.com/search`（策展層已把十二張的店面逐一查過並寫進卡單與第 3797 條，研究層不重跑——沿用 c-173 第 3846 條）。
+
+## 3985　推翻／補正策展層：**共 33 處，十二張卡全部中**
+
+分四類。**每一處都已在對應卡的 `notes` 裡逐條寫明，facts 一律用正確版本。**
+
+**A 類：事實錯誤（14 處）**
+
+| # | 卡 | 策展層逐字 | 實際 | 依據 |
+|---:|---|---|---|---|
+| 1 | Fool On The Hill | 「導演**神保二也**」 | **神保富士也**（`Fujiya Jimbo [神保富士也]`） | Discogs 12315483 |
+| 2 | We Now Create | 本作是事故前「**最後幾張**領銜盤之一」 | 本作（5 月）之後還有 11 月《スピード・アンド・スペイス》與 12 月《アイソレーション》；**被逐字標為「最後」的是《アイソレーション》** | ja.wikipedia 富樫雅彦 |
+| 3 | Prayer／Soul & Rock／Exciting Drums | 三張的順序是「7 月→9 月本盤→**隔月** Exciting Drums」 | **7/25 Soul & Rock → 8 月 Exciting Drums → 9 月 Prayer**（MB frd 1969-08 對 1969-09） | MB `fe3c2812`／`d4241b67` |
+| 4 | Prayer | 打擊手「**河原正巳**」 | **川原正美**（`Masami Kawahara [川原正美]`） | Discogs 15308872 |
+| 5 | Variation | 貝斯手「**鈴木潤**」 | **鈴木淳**（`Jun Suzuki (3) [鈴木淳]`） | Discogs 5646460 |
+| 6 | Variation | 「〈鈴の歌〉把**日本旋律**拆進即興」 | 〈鈴の歌〉的作曲欄是 **`Composed By: Masahiko Togashi`**，是原創曲；正確比例是**四首原創＋一首 Bacharach** | Discogs 5646460 |
+| 7 | Up Up and Away | 中音「**鈴木重雄**」 | **鈴木重男**（原廠頁與 Discogs anv 兩處一致） | `columbia.jp/prod-info/COCB-54010/` |
+| 8 | Up Up and Away | 上低音「**大野四郎**」 | **大野史郎**（同上兩處一致） | 同上 |
+| 9 | Music Break | 場地「厚生年金**会館**」 | **東京新宿厚生年金ホール** | `columbia.jp/.../COCB-54258.html` |
+| 10 | Sadao Plays Bacharach… | 「**十二首**裡沒有任何日本歌謡曲」 | **這張碟是九軌**（策展層自己的 `curatorWhy` 列的也是九首） | Discogs 8867874 |
+| 11 | Exciting Drums | 本盤是 1969 年三張裡的「**第三張**」 | 是**中間**那張（1969-08） | MB `fe3c2812` |
+| 12 | Exciting Drums | 「**吉米·史密斯**的〈The Cat〉」 | 盤面作曲欄逐字 **`Lalo Schifrin`** | Discogs 8295209 |
+| 13 | **Sound Poesy "Sachio"** | 福澤幸雄 「1969 年 2 月在**鈴鹿**試車時身亡」 | **靜岡縣袋井市的ヤマハテストコース**，測試トヨタ・7，1969-02-12 | ja.wikipedia 福澤幸雄「事故死」節 |
+| 14 | Exciting Flute | 電貝斯「鈴木潤」、中音「鈴木重雄」 | **鈴木淳**、**鈴木重男**（與第 5／7 處同源） | Discogs 17041263 |
+
+**B 類：查不到支撐，已退成可查證的版本（1 處）**
+
+| # | 卡 | 策展層逐字 | 本層處理 |
+|---:|---|---|---|
+| 15 | Sound Poesy "Sachio" | 「A 面因此排了〈Start Your Engine〉〈Slip Stream〉〈Race Is Over〉三首**自己寫的**、以賽車為題的原創曲」 | Discogs 這筆**沒有任何 Written-By 欄**，廠牌復刻頁也沒有；日文維基只寫「自作曲を加えた」而未指名。**facts 只寫這三首的標題是賽車術語、整張是翻唱加自作曲的組合，沒有把作曲權指給特定曲目。** |
+
+**C 類：漏列／不完整（10 處）** — Fool On The Hill 的 extraartists 是十一筆不是十筆、〈Chattanooga Choo Choo〉被誤歸進「英美流行曲」（它是 1941 年 Glenn Miller 的搖擺曲，正是 Discogs styles 第二位 `Swing` 的來源）；
+Prayer 漏列〈Crying In The Chapel〉〈Hallelujah I Love Her So〉〈Danny Boy〉〈Georgia On My Mind〉〈The Green Leaves Of Summer〉五首、
+且把整張描述成「黑人靈歌與福音曲」（**傳統靈歌只有四首**）；Variation 漏列解說いソノてルヲ 與錄音師大塚真二；
+Music Break 漏列 A3〈The Song Of Jet〉、漏了渡辺貞夫 **兼吹長笛**；Bacharach 的 extraartists 是十九筆不是二十筆；
+Exciting Drums 漏列〈Touch Me〉〈Otis Sleep On〉〈Amen〉〈Hold Tight〉四首；Exciting Flute 漏列〈The Maltese Melody〉〈Little Green Band〉〈Rain〉三首。
+
+**D 類：本層挖到、策展層三個欄位裡完全沒有的新格（8 處）** — 見第 3986–3990 條與第 3983(b) 條。
+
+## 3986　⚠ ⚠ 第 3985 條第 13 處展開：本組最硬的一次更正——福澤幸雄 不是在鈴鹿身亡
+
+《Sound Poesy "Sachio"》整張碟的由來就繫在這個人身上，**地點寫錯等於把碟的來歷寫錯**。
+
+- **策展層 `curatorWhy` 逐字**：「盤名的『SACHIO』指 1969 年 2 月在**鈴鹿**試車身亡的賽車手兼模特兒福澤幸雄」。
+- **日文維基福澤幸雄 條目有專節「事故死」，逐字**：「1969年（昭和44年）2月12日に**静岡県袋井市のヤマハテストコース**で行われていた
+  トヨタのレーシングカー「トヨタ・7」のテスト走行中に発生した事故により死去。享年25。」
+  同條目的年表也逐字寫「1969年2月12日 - 静岡県袋井市のヤマハコースで「トヨタ・7」のテスト走行中、事故により死去」。
+- 鈴鹿 在他的年表裡另有其事（1966 年鈴鹿 1000 公里首勝、1968 年鈴鹿 1000 公里總合優勝），**策展層很可能是把這兩件事混在一起。**
+
+**裁定：以日文維基的「事故死」專節為準，facts 寫袋井。寫作層絕不能寫鈴鹿。**
+⚠ **逝者克制**：該條目對事故經過（撞擊、起火、救援失敗、死因、以及後續十年的訴訟與 1981 年和解）寫得很詳細，
+**本卡 facts 一律沒有寫**，只留日期、地點、測試中的車與年齡。**這不是跳過事實，是不渲染細節。**
+
+## 3987　⚠ 第 3985 條第 3 處展開：Count Buffalo 1969 年三張的順序，本組四張卡有三張會被寫錯
+
+策展層在《Prayer》的 `curatorWhy` 裡把順序寫成「7 月《Soul & Rock》→ 9 月本盤 → **隔月**《Exciting Drums African Rock Party》」，
+而 **MB 的 first-release-date 是《Exciting Drums》1969-08、《Prayer》1969-09**，Discogs 的 master 與原盤 release 年份也一致。
+正確順序是 **7 月 25 日《Soul & Rock》→ 8 月《Exciting Drums African Rock Party》→ 9 月《Prayer With Faith And Love》**。
+
+**這個錯會傳染**：策展層是在《Prayer》那張寫的，但《Soul & Rock》與《Exciting Drums》兩張卡若照抄，
+就會出現「三張裡的第一張／第三張」互相矛盾的敘述。**本層在三張卡的 facts 與 notes 裡都用了正確順序。**
+⚠ **下游若要寫「半年三張」，只能照 7→8→9 寫。**
+
+## 3988　⚠ ⚠ 給主線：第 3793 條的證據鏈有一環站不住——但**處置不變**
+
+第 3793 條判《Up Up and Away》盤名取英文，列了三條理由，其中第三條逐字是：
+「**廠牌自己 2012 年的官方 CD 再發在 Apple 上逐字是「Up Up and Away」**（Apple us id1742129612）」。
+
+**本層實抓日本コロムビア 自家的商品頁** `columbia.jp/prod-info/COCB-54010/`：
+**頁面 `<title>` 與商品名逐字都是「鈴木弘とハッピー・キャッツ / ビートでジャンプ」**，
+內文的曲目表第 3 首才寫「UP UP AND AWAY －ビートでジャンプ」。
+→ **廠牌自己的官方頁用的是日文題。** Apple 上那一筆與原廠頁不一致，**「廠牌官方再發用英文題」這條理由不成立。**
+
+⚠ **但本層不建議翻案**，理由是第 3793 條的另外兩條理由仍然成立、而且位階更高：
+該條自訂的優先序第一位是「**MB 的原盤 release title**」，MB 的 RG 與 1969 原盤 release 都寫 `Up Up and Away`；
+同目錄號的 Discogs Promo 盤（11904917）題也只有英文。**處置維持不變，只是理由要減掉一條。**
+→ **給 c-175…c-182**：**「Apple 上的條目 ≠ 廠牌官方頁」**，兩者在日本盤上會不一致；
+要拿「廠牌自己怎麼寫」當證據，**一定要打原廠商品頁，不能用 Apple 代替。**
+
+## 3989　⚠ ⚠ 本層挖到的最大一格：《Music Break》是《ボサ・ノヴァ・コンサート》的未收錄曲集
+
+策展層三個欄位都沒有這一層，而它解釋了整張碟最奇怪的一件事——**為什麼一張 1967 年的實況要到 1969 年 6 月才出**。
+
+- `columbia.jp/artist-info/watanabesadao/discography/COCB-54258.html` **逐字**：
+  「ボサ・ノヴァ・コンサートの未収録曲集」「1967年7月4日　東京新宿厚生年金ホールでの実況録音盤。」「1969年6月発売」。
+- 同一條 2018 年復刻線裡的 `COCB-54254`（《ボサ・ノヴァ・コンサート》）**逐字**：
+  「1967年7月4日　東京新宿厚生年金ホール」「**1967年10月発売**」。
+- 日文維基渡辺貞夫 的作品表也把兩張並列，兩張的錄音日都是 1967 年 7 月 4 日。
+
+→ **同一場演出、兩張碟、相隔兩年**：先發的那一半是《ボサ・ノヴァ・コンサート》（1967 年 10 月），
+本作收的是當時沒放進去的曲子（1969 年 6 月）。
+
+**第二格**：官方頁的編制欄逐字是
+`渡辺貞夫(as,fl),菊地雅章(p,rib),富樫雅彦(ds),原田政長(b),中牟礼貞則(g),宮田英夫(cabasa),高珠恵ストリングス(str)`
+——**有一組弦樂，Discogs 的七筆 credits 完全沒有這一層**；而且**渡辺貞夫 兼吹長笛**，Discogs 只寫中音。
+⚠ 「高珠恵ストリングス」本層找不到第二個來源，也查不到「高珠恵」這個人的條目，
+**facts 照官方頁逐字寫，寫作層不要替這組弦樂加任何形容**。
+⚠ 官方頁把菊地雅章 記成 `(p,rib)`，`rib` 是什麼本層查不出來，**facts 只寫他彈鋼琴**。
+
+## 3990　⚠ 第二大格：《Sadao Plays Bacharach and Beatles》的錄音日與場地——**但 `live` 維持 false**
+
+策展層三個欄位完全沒有錄音資訊，而且 `curatorRisk` 把它與《Music Break》對照成
+「一張是錄音室、一張是 1967 年的現場」。兩個獨立來源顯示**它有一半不是在錄音室錄的**：
+
+- **日文維基渡辺貞夫 作品表逐字**：「1968年 - 『サダオ・プレイズ・バカラック・ビートルズ』⋯（**1968年11月8日、12月16日録音**）(Takt)（「**サンケイホール**」および**スタジオ**にて）」。
+- **`columbia.jp/.../COCB-54257.html` 逐字**：「**1968年11月8日　東京サンケイホール　他**」「1969年3月発売」。
+
+**裁定：`live` 維持 `false`，不改標。** 依據三項：
+1. 兩個來源**都沒有**寫「実況録音」「ライヴ」「コンサート」——**對照組就在隔壁**：同一條復刻線的《Music Break》官方頁逐字有「実況録音盤」、《ボサ・ノヴァ・コンサート》盤名就叫コンサート，**廠牌會寫的時候就會寫**；
+2. 日文維基明寫「およびスタジオにて」，是**兩種場地混合**，不是一場演出；
+3. サンケイホール 在 1960 年代常被當成大編制的錄音場地（本盤編制十九人），**在音樂廳錄音 ≠ 現場盤**。
+（可逆性：這是卡單的一個布林值，改回去不動卡池結構——裁定下放第 2 條。）
+→ **行文要寫的是「1968 年底分兩次錄成、其中一次在サンケイホール，隔年 3 月才發行」，不是「現場盤」。**
+⚠ **這一條同時修掉策展層的對照**：本組兩張渡辺貞夫 **不是「一張錄音室、一張現場」**，
+而是「**一張是 1967 年實況的未發表曲、一張是 1968 年底在音樂廳與錄音室分兩次錄的大編制翻唱盤**」。
+
+## 3991　人名與作曲者更正一覽（供下游逐字比對）
+
+| 錯 | 對 | 卡 | 依據 |
+|---|---|---|---|
+| 神保二也 | **神保富士也** | Fool On The Hill | Discogs anv |
+| 河原正巳 | **川原正美** | Prayer | Discogs anv |
+| 鈴木潤 | **鈴木淳** | Variation、Exciting Flute | Discogs anv（同一個 `Jun Suzuki (3)` 實體） |
+| 鈴木重雄 | **鈴木重男** | Up Up and Away、Exciting Flute | 原廠頁＋Discogs anv |
+| 大野四郎 | **大野史郎** | Up Up and Away | 原廠頁＋Discogs anv |
+| 〈鈴の歌〉是日本旋律 | **富樫雅彦 作曲** | Variation | Discogs 逐軌 Composed By |
+| 〈The Cat〉是吉米·史密斯的 | **Lalo Schifrin 作曲** | Exciting Drums | Discogs 逐軌 Written-By |
+
+⚠ **同一個人在同一批裡有兩種字形**，下游不可互抄：
+`村岡 健`（Prayer／Soul & Rock 的 anv）／`村岡建`（卡池字串）／`Takeru Muraoka`（Exciting Drums）；
+`斎藤敏`（Prayer）／`斉藤敏`（Exciting Drums）；`猪俣猛`（多數）／`猪股猛`（Up Up and Away 的 anv，是 Discogs 的誤植）；
+`沢田駿吾`（卡單與ビクター 官方頁）／`澤田駿吾`（日文維基條目名與寺川正興 條目內文）。
+
+## 3992　⚠ ⚠ 同名陷阱：兩個日文維基條目查得到、但**不是本組的人**
+
+- **`鈴木弘`** 的日文維基條目是 **1952 年赫爾辛基奧運競泳銀牌選手**（1933 年生），**不是本組兩張碟的長號手**。
+  長號手鈴木弘 **在日文維基沒有條目**，他的資料只有 Discogs 的 credits 與日本コロムビア 的商品頁兩層。
+- **`伏見哲夫`** 的日文維基條目是 **1946 年生的男演員**（東京演劇アンサンブル 講師），**不是本組三張碟的小號手**。
+
+⚠ **b 組研究層在完全獨立的情況下撞到同一個鈴木弘 陷阱**（第 4018 條末段），兩組結論一致。
+→ **給 c-175…c-182**：**日文維基回了 200 不等於回對了人，一定要讀開頭那一句的職業。**
+本線 1960–70 年代的錄音室樂手大量與運動員、演員同名。
+
+## 3993　富樫雅彦 1970 年 1 月那件事：本層沿用 c-173 的處置，**facts 一條都沒有寫**
+
+c-173 研究層第 3848 條第 13 點已更正過年份（**1970 年 1 月，不是 1969**），
+而《We Now Create》的 `curatorWhy` 逐字寫「1970 年那場讓他失去下半身機能的**事故**」。
+
+**本層查到的兩件事，都不寫進 facts：**
+1. **年份**確實是 1970 年 1 月（日文維基富樫雅彦 條目）；
+2. **性質不是「事故」也不是「意外」**——該條目逐字寫的是妻子持刀刺傷造成脊椎損傷。
+
+**裁定：照 c-173 的先例，歸反向禁令第二類（與本作無直接綁定的後續生平事件），facts 完全不寫**，
+只在《We Now Create》的 `notes` 裡把年份與性質記下來當防線。
+⚠ **下游若想碰，必須先知道這兩點；本層的建議是完全不寫。**
+⚠ **連帶推翻一個常見的寫法**：本作**不是**他「最後一張以兩手兩腳打鼓的唱片」——
+日文維基把那句話逐字指給 1969 年 12 月的《アイソレーション》（與高木元輝，足立正生 電影《略称・連続射殺魔》配樂）。
+**寫作層不得把《We Now Create》寫成「最後一張」或「絕響」。**
+
+## 3994　獎項：逐項分「得獎／入圍」——本組**六項得獎、一項入圍**
+
+| 卡 | 獎項 | 得獎／入圍 | 來源 |
+|---|---|---|---|
+| We Now Create | 《スイングジャーナル》ジャズディスク大賞「日本ジャズ賞」 | **得獎** | ja.wikipedia 富樫雅彦（作品表逐字「受賞作品」） |
+| Prayer | 〈The Green Leaves Of Summer〉1961 年奧斯卡最佳歌曲 | **入圍、未得獎** | en.wikipedia |
+| Prayer | 電影《The Alamo》原創配樂的金球獎最佳原創配樂 | **得獎**（得的是配樂、不是歌曲） | 同上 |
+| Up Up and Away | 〈Up, Up and Away〉1968 年第 10 屆葛萊美年度製作 | **得獎** | en.wikipedia |
+| Up Up and Away | 同上，年度歌曲 | **得獎** | 同上 |
+| Sound Poesy | 三保敬太郎 1959 年《モグラの唄》藝術祭獎勵賞 | **得獎** | ja.wikipedia 三保敬太郎 |
+| Sound Poesy | 三保敬太郎 1961 年第二次藝術祭獎勵賞 | **得獎** | 同上 |
+| Count Buffalo Plays Country Rock | 〈Games People Play〉1970 年葛萊美最佳當代歌曲＋年度歌曲 | **兩項都得獎** | en.wikipedia |
+
+⚠ **三件「像獎項但不是獎項」的，本層已在 notes 分開標明，寫作層不得混為一談**：
+〈Chattanooga Choo Choo〉1942 年由 RCA Victor 頒發的**史上第一張金唱片**與〈Galveston〉1969 年 10 月的 **RIAA 金唱片**都是**銷售認證**；
+〈Harper Valley PTA〉「史上第一次有女歌手的單曲同時登上 Billboard 鄉村榜與 Hot 100 冠軍」是**排行榜紀錄**；
+〈The Sidewinder〉1964 年打進流行榜與節奏藍調榜是**商業成績**。
+
+⚠ **一項只有單一來源，已在卡的 notes 標明**：《We Now Create》的日本ジャズ賞。
+`ジャズディスク大賞` 與 `日本ジャズ賞` 兩個條目在日文維基**都是 missing**（第 3984 條），
+本層找不到第二個可引的網頁來源。**facts 照「得獎」寫，但刻意不寫屆次與年份**（來源沒有給）。
+⚠ **旁證**：b 組第 4017 條從 `columbia.jp/prod-info/COCB-53493/` 抓到的
+「スイングジャーナル主催ジャズ・ディスク大賞 **1970年度**日本ジャズ賞」證明**這個獎確實存在、而且原廠頁會寫**
+——本盤（1969 年度）的原廠復刻頁本層試過 `VICJ-23007`／`EM-1002`／`NJS-856` **全部 404**，拿不到同等級的佐證。
+**給後八批：遇到這個獎，先去打原廠商品頁。**
+
+## 3995　本層**沒有裁定、兩邊都記下來**的分歧（四處，留給下游不要亂選）
+
+1. **《Sadao Plays Bacharach and Beatles》的四個人名**：Discogs 寫 `Yoshio Ikeda`（池田芳夫）／`Yuji Imamura`（今村祐司）／`Yasushi Ichiura`（市浦靖司）／`Yoshio Suzuki`，
+   原廠頁寫 `池田良夫`／`今村裕司`／`市浦靖`／`鈴木良夫`。**本層以 Discogs 的盤面轉錄為準**（原廠頁在人名上明顯較粗），
+   唯獨 `Yoshio Suzuki` 因兩邊漢字不一致（良雄／良夫）而**保留羅馬字不寫漢字**。
+   ⚠ **寫作層不得把這個 Yoshio Suzuki 寫成貝斯手鈴木良雄**——他在本盤掛的是大鍵琴與風琴，身分無法確認。
+2. **《Prayer》B6〈The Lord's Prayer〉的作曲者**：Discogs 記 `Alan Hovhaness`，只有單一來源，
+   而最通行的同名曲是 Albert Hay Malotte 1935 年的版本。**facts 只寫曲名、不寫作曲者。**
+3. **《Exciting Flute》B4「Little Green Band」**：1969–70 年的同期熱門裡只有 George Baker Selection 的〈Little Green Bag〉對得上，
+   **但沒有第二個來源，facts 照盤面寫 `Little Green Band`、不改寫也不指認原唱。**
+4. **富樫雅彦 的父親**：英文維基寫是搖擺樂團的低音提琴手、日文維基寫是小提琴家。
+   **兩邊牴觸，facts 只寫他自己先學小提琴、不寫父親的職業。**
+
+## 3996　曲風覆核：**12 張全部維持收件，一張都沒有翻案**
+
+第 3753 條（經第 1857-B 條修訂）的四款逐張再驗，逐條不成立。要特別交代的三張：
+
+- **《Fool On The Hill》**（第 3782 條的翻盤案）：本層獨立再驗一次——
+  ① 成立（styles 含 Easy Listening，排第三、首位是 Modal）→ 進人工判；③ 不成立（八首沒有一首日本歌謡曲）；
+  ④ 不成立。**本層補一層策展層沒有的佐證：ビクター 官方頁自己把這張碟放在「ニッポンのジャズ presented by Guitar magazine」
+  這條和ジャズ 復刻線裡，策劃人是爵士樂評原田和典 與 universounds 的尾川雄介**——**廠牌與和ジャズ 圈子兩邊都把它當爵士盤。收件成立。**
+- **《Sound Poesy "Sachio"》**（第 3794 條的邊界案）：`genres` 跨到 `Stage & Screen`，但 styles 首位是 Bossa Nova。
+  **本層補一層佐證：這個桶的來源已經查清楚了——它是一張追悼概念盤**（第 3986 條），
+  `Stage & Screen` 對應的是概念而不是輕音樂或電影配樂。**收件成立。**
+- **《Count Buffalo Plays Country Rock》**：盤名帶「Country Rock」四個字最容易被誤判，
+  但 Discogs 的 styles 是 Jazz-Rock 與 Psychedelic Rock、genres 是 Jazz／Rock，十二首**全部是美國鄉村流行曲、沒有一首日本歌謡曲**（英文曲名全表見第 3983(b) 條）。**收件成立。**
+
+## 3997　⚠ ⚠ 下游最容易寫錯的九點（鉤子層與寫作層必讀）
+
+**這一條是本節最重要的一條。**
+
+1. **福澤幸雄 身亡的地點是袋井，不是鈴鹿**（第 3986 條）。
+2. **Count Buffalo 1969 年三張的順序是 7 月→8 月→9 月**（第 3987 條）；**《Prayer》是最後一張、《Exciting Drums》是中間那張。**
+3. **〈Amen〉同時出現在《Prayer With Faith And Love》（A1）與《Exciting Drums African Rock Party》（A3）**——
+   同一年、同一個團、兩張碟上的同一首傳統曲。**引這首一律帶目錄號**（Denon CD-5014／Columbia JDX-28）。
+4. **〈Up, Up And Away〉〈The Fool On The Hill〉〈The Look Of Love〉三首同時出現在《Fool On The Hill》（Victor SMJX-10066）與《Up Up and Away》（Columbia HS-10004-CT）兩張碟上**——
+   同年、兩家廠牌、兩個樂團。**引曲名一律帶掛名與目錄號。**
+   ⚠ 而且**《Up Up and Away》這個盤名，在《Fool On The Hill》那張碟上是 A1 的曲名**。
+5. **《We Now Create》不是富樫雅彦 的「最後一張」**（第 3993 條）。
+6. **《Sadao Plays Bacharach and Beatles》是九軌，不是十二軌**；而且**不是純錄音室盤**（第 3990 條）。
+7. **《Music Break》是同一場演出的第二批曲子，不是一張獨立企劃的實況盤**（第 3989 條）；
+   **編制裡有一組弦樂**；**錄音 1967、發行 1969，兩個年份都要寫。**
+8. **《Sound Poesy "Sachio"》與《Count Buffalo Plays Country Rock》兩張的伴奏樂手完全查不到**（第 3999 條）。
+   **不得虛構樂手，也不得把同團另一張碟的班底套過去。**連「三保敬太郎 彈鋼琴」這一點都沒有來源。
+9. **《Exciting Drums African Rock Party》與池中的《African Rock》（1971，DAN VC-5003）是兩張不同的碟**（第 3796 條已提），
+   **《Soul & Rock》與 Discogs 上的《Soul & Soul》（1972，Express ETP-8228，同一位鼓手）也是兩張不同的碟。**
+
+## 3998　跨卡串連點（**每一條只能用在一張卡上**，鉤子層分配時當稀缺資源）
+
+本組十二張的人物網重疊極高（`石川晶とカウント・バッファローズ` 四張、`渡辺貞夫` 兩張、
+富樫雅彦 三張、鈴木弘 三張、猪俣猛 三張、寺川正興 三張、伏見哲夫 三張），本層已在 facts 層先分配完：
+
+| 串連 | 涉及的卡 | **本層已指定給** |
+|---|---|---|
+| 「慶應のピアノ三羽烏」（鈴木宏昌・佐藤允彦・大野雄二） | Soul & Rock ↔ Prayer ↔ Variation | **Soul & Rock** |
+| 猪俣猛 的兩個錄音化名（ありた・しんたろう／はらだたけし） | Fool On The Hill ↔ Up Up and Away ↔ Exciting Flute | **Up Up and Away** |
+| いソノてルヲ 的解說者身分 | Variation ↔ Up Up and Away | **Variation** |
+| 尾川雄介（universounds）的復刻解說／策劃 | Fool On The Hill ↔ Up Up and Away | **Fool On The Hill**（2018 Guitar magazine 系列） |
+| 阿部克自 的封面攝影 | Prayer ↔ Soul & Rock | **Prayer** |
+| 「沢田駿吾とダブルビーツ」是寺川正興 與渡辺文男 的起點 | Fool On The Hill ↔ Soul & Rock ↔ Bacharach | **Fool On The Hill** |
+| 渡辺文男 是渡辺貞夫 的親弟弟 | Bacharach | **Bacharach**（唯一可用處） |
+| 富樫雅彦 的生平 | We Now Create ↔ Variation ↔ Music Break | **We Now Create** |
+| 石川晶 的生平（三段互不重疊） | 四張 Count Buffalo | **Prayer**＝1960 年代樂團履歷／**Soul & Rock**＝ゲンチャーズ 與「ビートポップス」／**Exciting Drums**＝非洲志業／**Country Rock** 不展開 |
+| 1961 年 Jazz Academy（富樫＋高柳昌行＋菊地雅章＋金井英人） | We Now Create ↔ Music Break | **We Now Create** |
+| 中牟礼貞則 的生平 | Music Break ↔ Exciting Flute | **Music Break** |
+| 前田憲男 的生平 | Fool On The Hill ↔ Exciting Flute | **Fool On The Hill** |
+| 寺川正興 的兩格 | Soul & Rock（1969 年人氣投票第 2 名）／Exciting Drums（エレベーター奏法） | 各一格，**Exciting Flute 只列名** |
+| 三保幹太郎 當過日本コロムビア 社長 | Sound Poesy | **Sound Poesy**（⚠ c-173 第 3853 條曾把這條指給 c-173 的《Modern Jazz Screen Mood》；**那是 c-173 批內的分配，研究層基準檔明訂「跨批已用盡」不成立**，且本卡是三保 自己的領銜盤、發行廠牌正是日本コロムビア，本層照用） |
+
+## 3999　本組證據最薄的三張
+
+| 卡 | 缺什麼 | 可引的是什麼 |
+|---|---|---|
+| Sound Poesy "Sachio" | **Discogs `extraartists` 整欄是空的**（整筆抓過，不是只讀 search 摘要），廠牌 2008 復刻頁也沒有 personnel 欄 | 掛名、十二軌日英對照曲目、兩個目錄號、追悼盤的來由、三保敬太郎 與福澤幸雄 兩人的生平 |
+| Count Buffalo Plays Country Rock | **同上，`extraartists` 全空** | 掛名、**十二軌英文原題全表**（第 3983(b) 條）、封底那一行「Akira Ishikawa & Count Buffaloe & The Jazz Rock Band.」、每一首原曲的作者與榜位 |
+| Exciting Flute | **領銜者横田年昭 在日文維基 missing**，連生年都查不到；同盤的羽鳥幸次、市原康助 也 missing | 二十一筆完整 credits、兩個錄音日、十二軌曲目、市川秀男 與今田勝 兩位鋼琴手的生平、Express 號段的曲風混雜 |
+
+⚠ **這三張是本組最容易被下游補成編造的**。**寫作層不得替横田年昭 編造經歷。**
+
+## 4000　`hookCandidates`／`sound`／`keyTracks` 自我檢查
+
+- **`hookCandidates` 每張恰好 2 條**（上限），十二張共 24 條，**逐條比對過沒有跨卡同構**。
+  ⚠ 初稿時《Prayer》與《Soul & Rock》的第 2 條都寫成「一張碟上兩台鋼琴」，**已改掉《Prayer》那一條**（改寫曲目性質），
+  「兩位鋼琴手」這個切角**只留給《Soul & Rock》的慶應三羽烏**。
+- `sound` 每張一段，寫的是編制與織度，**沒有把 facts 的內容照抄**；四張 Count Buffalo 的 `sound` 刻意寫成四種不同的質地
+  （第一張＝方正的八分音符／靈歌＝兩層打擊與完整旋律線／Exciting Drums＝把流行曲重編成打擊樂曲／Country Rock＝迷幻色彩的伴奏語彙）。
+- `keyTracks` 每張 2 首（《Fool On The Hill》3 首），全部取自盤面實際曲目。
+
+## 4001　交件自檢（`qa-batch` 與逐張人工量測）
+
+- `node qa-batch.mjs research c174` → **`a 12 full×12`／`b 7 full×7`／`key 與卡單完全一致 ✓`／`全部通過 ✓`**
+  （b 組已先交件，本層跑到時沒有缺檔）。
+- **逐張人工量測**：facts 條數 12／12／12／12／12／12／12／12／12／12／12／12（全在 8–12 內）；
+  **144 條 `src` 全部通過 `/^https:\/\/\S+$/`**；`hookCandidates` 全部 2 條；
+  **千分位逗號 0 處**；`key`／`artist`／`album` 三欄與卡單逐筆相符。
+- **`src` 逐一開過**：`music.apple.com/jp/album/1680848563` 200、`columbia.jp` 四頁 200、`jvcmusic.co.jp` 一頁 200、
+  維基全部 200。⚠ **`www.discogs.com/release/<id>` 的 HTML 在本工作階段抓不到（連線被切）**，
+  但 `api.discogs.com/releases/<id>` 全部 200、且 `uri` 欄回的就是同一個 `www.discogs.com/release/<id>-<slug>` 網址，
+  **本層照 c-173 第 3843 條的既有慣例寫不帶 slug 的短網址**（該形式會自動導到帶 slug 的頁）。
+- ⚠ **ja.wikipedia 的 `src` 一律用 percent-encoded 形式**（照 c173-a.json 的既有慣例）；
+  帶括號的條目名（`渡辺文男 (ミュージシャン)`）**空白已改成底線**，不用 `%20`。
+
+⚠ **`jp-proper-names.json` 加了一筆**（承 b 組第 4026 條記的同一個 §五／§七 衝突）：
+`qa-batch` 對本組報 `簡體字: 国双会` 四處，逐字查過**四處全是日文**，處理分兩種：
+1. **三處是日文句子的逐字引用**（ビクター 官方頁的「1952年に国内で⋯」、日文維基的「鈴木弘との双頭コンボで⋯」、
+   Discogs 的羅馬字場地名被我寫成漢字「厚生年金会館」）——**這不是專名誤報，是我自己引了整句日文**，
+   **已改寫成中文轉述或羅馬字，沒有動任何專名**；
+2. **一處是真正的專名**：`モダンジャズ3人の会`（1959 年三保敬太郎・前田憲男・山屋清 組的團）。
+   **照派工信 §五 append 進 `desc-tools/jp-proper-names.json`，只加這一個字串、未刪未改任何既有項**（14 筆 → 15 筆）。
+   ⚠ 本層寫入時 b 組已加的兩筆（`国立音楽大学`／`国定正夫`）都在，**未覆寫**。
+   **重跑 `qa-batch` → `全部通過 ✓`。**
+
+## 4002　盤名與掛名字串的分歧彙總（下游逐字比對用）
+
+| 卡 | 卡單用的 | 別處怎麼寫 |
+|---|---|---|
+| Fool On The Hill | `沢田駿吾とオールスターズ` | **ビクター 官方頁與 Discogs anv 都是 `沢田駿吾オールスターズ`（無「と」）**，官方羅馬字 `Syungo Sawada All Stars`；日文維基條目名是 `澤田駿吾` |
+| Up Up and Away | `鈴木弘とハピー・キャッツ`／`Up Up and Away` | **原廠頁與 Apple 都是 `鈴木弘とハッピー・キャッツ`（有促音）**；**原廠頁的商品名是 `ビートでジャンプ`**（第 3988 條） |
+| We Now Create | 英文題＋副題（複數 `Percussions`） | MB 原盤 release title 是片假名；2017 Monkey Dog 版副題是單數 `Percussion` |
+| Variation | `鈴木弘＝富樫雅彦クインテット` | MB 用羅馬字加 ASCII 連字號；Apple 拿掉了編制詞；1974／2000 日本再發的片假名題是「ヴァリエーション」（Discogs 原盤是「ヴァリェイション」） |
+| Sadao Plays Bacharach and Beatles | Bacharach 在前 | **Discogs 的版本表顯示 1980 年起的再發都翻成 Beatles 在前**，**但日本コロムビア 自家 2018 年的商品頁仍是 Bacharach 在前**——兩處對同一張再發登記相反 |
+| Sound Poesy "Sachio" | ASCII 直引號、一般大小寫 | MB 用全大寫與彎引號；廠牌復刻的日文題是「サウンドポエジー・サチオ」 |
+| Count Buffalo Plays Country Rock | 無驚嘆號 | **Apple 兩地的盤名都帶驚嘆號**；Apple jp 掛 `石川晶とカウント・バッファローズ`、us 掛 `Akira Ishikawa and His Count Buffalos` |
+
+## 4003　Discogs 的資料瑕疵一覽（本組實際撞到的，`facts` 一律照盤面原樣寫、不自行改）
+
+1. **`releases/12315483`（Fool On The Hill）的 A2 片假名欄被填成「アップ・アップ・アンド・アウェイ」，與 A1 重複**
+   ——ビクター 官方頁的 A2 日文題是「朝日のようにさわやかに」（Softly, As In A Morning Sunrise）。
+2. **`releases/15308872`（Prayer）的 title 欄把日文副題寫成「神に愛と折りを」**（應為「祈り」），**三筆版本一路錯到 2014 年的再發**。
+3. **`releases/17041263`（Exciting Flute）的第二個錄音日印成「Juni 3, 1970」**（Juni 是德文的六月）；
+   而且 **B1 同時出現在兩個錄音日的軌號清單裡**（5/17 那組列 A-1,3,4／B-1,6，6/3 那組列 A-2,5／B-1,3,4,5），**兩組重疊一軌**。
+   → **下游不要引用逐軌的錄音日對照。**
+4. **`releases/17652481`（Up Up and Away）把猪俣猛 的 anv 寫成「猪股猛」**（股／俣）。
+5. **同一張碟的市售盤與 Promo 盤 styles 不一致**：Up Up and Away 的 main_release 是 Jazz-Rock、Promo（11904917）卻是 Big Band／Soul-Jazz。
+   **判準以 main_release 為準**（策展層已如此處理，本層同意）。
+
+## 4004　給 c-175…c-182 的操作建議（本批已驗證可行）
+
+1. **原廠商品頁要打三家、兩種路徑**：`columbia.jp/prod-info/<catno>/` 與
+   `columbia.jp/artist-info/<slug>/discography/<catno>.html` **命中率各約一半，兩種都要試**；
+   slug 從 `columbia.jp/jazz/` 的 HTML 裡撈。Victor 走 `jvcmusic.co.jp/-/Discography/-/<catno>.html`（第二段用單一連字號）。
+   東芝／Express 走 `universal-music.co.jp`（b 組第 4017 條）。King 走 `kingrecords.co.jp/cs/g/g<catno>/`（同條，命中率低）。
+2. **原廠頁最值錢的三個欄位**：「オリジナル発売日／オリジナルリリース」（把年推到日）、
+   「旧レコード番号／LP番号」（原盤目錄號，**常與盤面的尾碼不同**）、以及**personnel 欄**（本組靠它更正了兩個錯名）。
+3. **只印片假名的曲目，用 `itunes.apple.com/lookup?id=<id>&entity=song` 對回英文原題**（第 3983(b) 條）。
+   `lookup` 在本組 3 次全 200，**沒有 `search` 那種間歇性 403**。
+4. **翻唱盤的 facts 靠英文維基的曲目條目撐**：本組十二張有八張是翻唱盤，
+   每一首原曲的作者、年份、榜位與獎項都查得到，**而且獎項條目會明寫 nominated／won**，正好滿足入圍／得獎的分項要求。
+5. **日文維基要讀開頭那一句確認職業**（第 3992 條）。
+6. **不要只看 MB 的 release 數判斷有沒有再發**（c-173 第 3847 條）：本組《Music Break》MB 只有 1 筆，
+   Discogs master 有 2 筆（2018 年的官方 CD）；《We Now Create》MB 5 筆、Discogs master **9 筆**（含 2026 年的 Victor NJS-856 黑膠）。
+
+## 4005　交付與邊界（自述）
+
+- **新增**：`desc-tools/batches/research/c174-a.json`（12 張）。
+- **append**：本檔第 3981–4006 條（**未覆寫任何既有行**；寫入前已跑 `git show HEAD:batch-progress/c174/rulings.md`
+  與工作區逐位元組比對，兩者 **identical**，b 組的 4011–4030 已在 HEAD 裡，本節接在其後）。
+- **append 一筆**：`desc-tools/jp-proper-names.json`（見第 4001 條，只加 `モダンジャズ3人の会` 一個字串）。
+- **未碰**：`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／
+  卡單／b 組的 `c174-b.json`／其他批次的任何檔案／KV／Firestore。
+- **未執行任何 git 寫入指令**（不 `add`／不 `commit`／不 `push`／未動索引；只讀性的 `git show`／`git status` 各用過一次）。
+- **中間檔全部在 scratchpad 的 `c174ra/`**：五支帶 `c174ra-` 前綴的腳本
+  （`c174ra-fetch.mjs`／`c174ra-wiki.mjs`／`c174ra-enwiki.mjs`／`c174ra-dg.mjs`／`c174ra-mv.mjs`／`c174ra-col*.mjs`）
+  與三支 `w0..w2.mjs`（分批寫回），以及 33 份 `wiki-*.txt`、`col-*.txt`、`jvc-*.txt` 快取。
+- **節流**：Discogs 3.2 s／次、維基 0.7 s／次、Apple 1.5 s／次、一般 HTML 0.9–1.2 s／次。**全程 0 次 429／503。**
+- **續跑保護**：照派工信每 3 張寫回一次整份 `c174-a.json`（3 → 6 → 9 → 12），本層未遇容器重啟。
+
+## 4006　**編號區間結算**：本節用到 **3981–4006**（共 26 條），**4007–4010 未使用**，留給後續層。
