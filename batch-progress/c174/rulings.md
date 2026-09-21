@@ -1936,3 +1936,303 @@ c-173 研究層第 3848 條第 13 點已更正過年份（**1970 年 1 月，不
 - **續跑保護**：照派工信每 3 張寫回一次整份 `c174-a.json`（3 → 6 → 9 → 12），本層未遇容器重啟。
 
 ## 4006　**編號區間結算**：本節用到 **3981–4006**（共 26 條），**4007–4010 未使用**，留給後續層。
+
+---
+
+# c-174 **鉤子層**裁定（編號區間 4121–4160）
+
+批次 c-174｜鉤子層｜2026-09-21｜**a 組 12 張、b 組 7 張，一人做完兩組**
+產出：`desc-tools/batches/hooks/c174-hooks-a.json`（12 筆）與 `c174-hooks-b.json`（7 筆）。
+規則照 `desc-tools/prompts/hook-base.md`（含開頭「雲端 Blue Note 線」三點）→ 派工信
+→ 本檔第 3771–3830（策展）、3961–3975（回撈）、3981–4006（研究 a）、4011–4030（研究 b）
+→ `c173/rulings.md` 第 3931–3945 條（上一批鉤子層）。
+**寫入前重讀過本檔全文，`git show HEAD:batch-progress/c174/rulings.md` 與工作區逐位元組相同，未覆寫既有任何一行。**
+
+## 4121　先倒回去量上一批，確認尺一致才動筆
+
+派工信給的答案逐格重現，**一個數字都沒有差**：
+
+| 檔案 | 派工信 | 本層量到 |
+|---|---|---|
+| `c173-hooks-a.json`（6 筆） | 222／222／228／223／214／229 | **222／222／228／223／214／229** ✔ |
+| `c173-hooks-b.json`（5 筆） | 229／229／214／229／227 | **229／229／214／229／227** ✔ |
+
+公式逐字（`Array.from().length`）：
+`預算 = len(hook) + len(note) − 出現次數×len("主故事：") − (hook+note 裡「→」總數) − 出現次數×len("正文只寫上列各項。") − 出現次數×len("這條骨架全批只走本張。")`。
+**只扣這四樣**；年份指定句、錄音年指定句、逝者克制指定句、載體與目錄號全部計入。上限 230。
+量測腳本在 scratchpad 的 `c174h/c174h-lib.py`。
+
+## 4122　逐筆預算與 hook 加權（19 筆全表，**兩支 QA 腳本都驗不到這一欄**）
+
+| 組 | 卡 | hook 字元 | **hook 加權** | note 原始長度 | **預算** |
+|---|---|---:|---:|---:|---:|
+| a | 沢田駿吾とオールスターズ《Fool On The Hill》 | 31 | **28** | 219 | **223** |
+| a | 富樫雅彦《We Now Create》 | 22 | **22** | 230 | **225** |
+| a | 石川晶とカウント・バッファローズ《Prayer With Faith And Love》 | 25 | **25** | 231 | **229** |
+| a | 石川晶とカウント・バッファローズ《Soul & Rock》 | 30 | **30** | 225 | **228** |
+| a | 鈴木弘＝富樫雅彦クインテット《Variation》 | 24 | **24** | 230 | **227** |
+| a | 鈴木弘とハピー・キャッツ《Up Up and Away》 | 26 | **26** | 220 | **219** |
+| a | 渡辺貞夫《Music Break》 | 25 | **25** | 230 | **229** |
+| a | 渡辺貞夫《Sadao Plays Bacharach and Beatles》 | 23 | **23** | 233 | **229** |
+| a | 石川晶とカウント・バッファローズ《Exciting Drums African Rock Party》 | 24 | **24** | 231 | **228** |
+| a | 三保敬太郎と彼のグループ《Sound Poesy "Sachio"》 | 20 | **20** | 230 | **223** |
+| a | 横田年昭《Exciting Flute》 | 23 | **23** | 227 | **223** |
+| a | 石川晶とカウント・バッファローズ《Count Buffalo Plays Country Rock》 | 22 | **22** | 233 | **228** |
+| b | 宮間利之とニューハード + 佐藤允彦《Canto of Libra》 | 24 | **24** | 232 | **229** |
+| b | 横田年昭とビート・ジェネレーション《Flute Adventure》 | 26 | **25** | 228 | **228** |
+| b | 村岡実《Bamboo》 | 26 | **26** | 227 | **226** |
+| b | The Freedom Unity《Down By The Naked City》 | 27 | **24** | 224 | **223** |
+| b | 渡辺香津美《Infinite》 | 21 | **21** | 225 | **219** |
+| b | 佐藤允彦 & ウォルフガング・ダウナー《Pianology》 | 29 | **23.5** | 226 | **228** |
+| b | 山下洋輔トリオとブラス12《Introducing Takeo Moriyama》 | 28 | **28** | 218 | **219** |
+
+**預算 min 219／max 229／中位 228（a 組 219–229、b 組 219–229），19 筆全部 ≤230。**
+**hook 加權 20–30，上限 50 有餘裕**（加權照 `chk-hook-crossgroup.mjs` 第 103 行，
+`/[\x00-\x7F]/ ? 0.5 : 1`，**半形空格也打折**）。**note 原始長度 218–233，上限 350。**
+
+⚠ **初稿 19 筆全部超標**（276–379，最嚴重的《Count Buffalo Plays Country Rock》是 379），
+**全部靠「整格捨去」降到 230 以內，沒有把砍的動作留給寫作層**。捨掉的格逐筆記在第 4125 條。
+⚠ **本批的預算比 c-173 難壓**，原因單一且可量化：**1969–1971 年段的日本盤，目錄號與英文曲名密度極高**
+（`Columbia XMS-10014-CT` 一個字串就吃掉 22 個字元，`Victor World Group SMJX-10116` 吃 29 個），
+而 `note` 的長度不打折。**給 c-175…c-182：這條線的 note 每一格只能放一個目錄號，第二個一律整格捨去。**
+
+## 4123　骨架歸屬表：哪張擁有、哪張讓出
+
+⚠ 照第 1787-B 條：**只有擁有的那張在 `note` 裡寫「這條骨架全批只走本張。」；讓出的卡一個字都不寫，也不點名歸給了誰。**
+本表只給主線看。**19 張全部寫了那一句，沒有一張是「純讓出、自己什麼都不擁有」。**
+
+| 骨架／串連點 | **擁有** | 讓出的卡（`note` 未提及、未點名） |
+|---|---|---|
+| 1952 年組團、第一張領銜盤等了十七年 | **Fool On The Hill** | — |
+| 四個曲名＝四種做法（回授／簧管／打擊面／弦樂化） | **We Now Create** | — |
+| 富樫雅彦 的生平（十三歲改志向當鼓手） | **We Now Create** | Variation、Music Break |
+| 靈歌與福音曲只佔四首＋唯一的專職打擊手 | **Prayer With Faith And Love** | — |
+| 阿部克自 的封面設計與攝影 | **Prayer With Faith And Love** | Soul & Rock |
+| 「慶應のピアノ三羽烏」 | **Soul & Rock** | Prayer、Variation、Down By The Naked City、Pianology |
+| 樂團的第一張碟＋雜食選曲（披頭四／英國民謠／靈歌／馬子唄） | **Soul & Rock** | — |
+| 團內原創四首、外來曲只留一首 | **Variation** | — |
+| いソノてルヲ 的解說者身分 | **Variation** | Up Up and Away |
+| 「廠牌自家的商品頁」當骨架（原廠頁釘出發行日與名單） | **Up Up and Away** | Fool On The Hill、Music Break、Canto of Libra（三張改用別的主詞，見第 4126 條） |
+| 猪俣猛 的兩個錄音化名 | **Up Up and Away** | Fool On The Hill、Exciting Flute |
+| 《ボサ・ノヴァ・コンサート》的未収録曲集（同一場演出的第二批） | **Music Break** | — |
+| 「高珠恵ストリングス」那一組弦樂 | **Music Break** | — |
+| 1968 年底分兩次錄成（サンケイホール ＋ 錄音室） | **Sadao Plays Bacharach and Beatles** | — |
+| 〈Blue Jay Way〉14 分 05 秒獨佔整張三分之一 | **Sadao Plays Bacharach and Beatles** | — |
+| 盤名前半＝做法、後半＝去向＋非洲路線 | **Exciting Drums African Rock Party** | — |
+| 福澤幸雄 追悼盤的由來 | **Sound Poesy "Sachio"** | — |
+| 三保幹太郎 當過日本コロムビア 社長 | **Sound Poesy "Sachio"** | — |
+| 二十一人大樂團的雙人配置＋〈Let It Be〉只隔十週 | **Exciting Flute** | — |
+| 盤名說 Country Rock、styles 卻是 Jazz-Rock 與 Psychedelic Rock | **Count Buffalo Plays Country Rock** | — |
+| Swing Journal Jazz Workshop 6 委作＋十八人團員表 | **Canto of Libra** | — |
+| King 的 `SKK(x)` 號段與外國字標 | **Flute Adventure** | Bamboo（只留 United Artists 字標與目錄號本身） |
+| 粟津則雄 的解說者身分與藤村記念歴程賞 | **Flute Adventure** | — |
+| 山木幸三郎 的編曲身分 | **Bamboo** | Canto of Libra（只寫團員人數，未點名吉他席） |
+| 一張碟兩種伴奏（和樂器／一般節奏組） | **Bamboo** | — |
+| 這支團的錄音全擠在 1971 那一年 | **Down By The Naked City** | — |
+| 石川晶 進團之前是宮間利之とニューハード 的鼓手 | **Down By The Naked City** | Prayer（該卡改走曲目性質與打擊手） |
+| 十七歲的出道盤＋中牟礼貞則 的師承 | **Infinite** | Music Break、Flute Adventure（兩張都未寫中牟礼貞則） |
+| 兩台鍵盤、兩位樂評編選曲目 | **Pianology** | — |
+| 1978 年 Far East Jazz Series 把盤名換成《Gugan》 | **Introducing Takeo Moriyama** | Infinite、Pianology（兩張的 1978 再發都未寫） |
+| 碟名點鼓手、掛名欄寫的是別人 | **Introducing Takeo Moriyama** | — |
+
+⚠ **「日本ジャズ賞」是唯一一條刻意讓兩張都寫的**（《We Now Create》1969 年度、《Canto of Libra》1970 年度）：
+**那是兩個不同年度、頒給兩張不同碟的同一個獎**，兩卡的 facts 各自有 src，不是同構。
+兩張的句子主詞與年度都不同（一張不寫年度、一張寫 1970 年度），已逐字比對過。
+
+## 4124　渡辺貞夫 與 Count Buffalo 怎麼分軸
+
+**(a) 渡辺貞夫：掛名其實只有 2 張，第三個接觸點在別人的卡上。**
+派工信寫「渡辺貞夫 3 張」，`c174-a.json` 裡掛他名字的是 **2 張**（《Music Break》《Sadao Plays Bacharach and Beatles》）；
+第三處是 b 組《Infinite》的 facts——**鈴木良雄 在ヤマハ音楽教室 師事渡辺貞夫**。
+**本層把《Infinite》那一格整個捨去**（該卡的師承格留給中牟礼貞則，見第 4123 條），
+所以「渡辺貞夫」三個字在本批只出現在他自己的兩張卡上。兩張的軸：
+
+| 卡 | 軸 |
+|---|---|
+| Music Break | **1967 年 7 月 4 日的實況，是《ボサ・ノヴァ・コンサート》的未収録曲集**；編制裡有一組弦樂；他除了中音也吹長笛；錄音年與發行年兩個年份都要寫 |
+| Sadao Plays… | **1968 年底分兩次錄成（一次在音樂廳、一次在錄音室），九軌，隔年 3 月才發行**；八首短曲對一首 14 分 05 秒；十九人的銅管底色 |
+
+⚠ **這一分法直接吃掉策展層的錯誤對照**（第 3990 條）：兩張**不是**「一張錄音室、一張現場」。
+《Sadao Plays…》的 `note` 逐字寫「分兩次錄成」，**沒有出現「現場」「實況」「live」任何一個字**；
+《Music Break》的 `note` 則明寫「實況」。**兩張的 `live` 值不會被寫作層寫反。**
+
+**(b) Count Buffalo 四張：四種素材、四個位置，順序一律 7→8→9。**
+
+| 卡 | 在 1969 年那一串裡的位置 | 軸 |
+|---|---|---|
+| Soul & Rock | **第一張**（7 月 25 日） | 樂團留下的第一張碟＋雜食選曲＋慶應三羽烏＋ゲンチャーズ 是母體 |
+| Exciting Drums African Rock Party | **中間那張**（8 月） | 盤名前半＝做法／後半＝去向＋兩塊 soul jazz 招牌＋非洲路線 |
+| Prayer With Faith And Love | **最後一張**（9 月） | 靈歌與福音曲的素材比例＋唯一的專職打擊手＋阿部克自的封面 |
+| Count Buffalo Plays Country Rock | 1970 年，**不在那一串裡** | 五首 Glen Campbell 招牌曲＋盤名與 styles 對不上 |
+
+⚠ **只有兩張的 `note` 提到「連發三張」**（Prayer 寫「最後一張，7 月 25 日、8 月、9 月各一張」、
+Exciting Drums 寫「中間一張」），**《Soul & Rock》改寫成「這支樂團留下的第一張碟」、不數三張**——
+三張都寫「半年三張」會變成第 3997 條第 2 點警告的那種互相矛盾的敘述。
+⚠ **《Exciting Drums African Rock Party》的 `note` 從頭到尾沒有出現「African Rock」這個字串**
+（第 3997 條第 9 點：池中另有 1971 年的《African Rock》），盤名後半只以「盤名後半」指稱。
+⚠ **石川晶 的生平在本批展開三次、互不重疊**：Soul & Rock＝ゲンチャーズ 是母體／
+Exciting Drums＝非洲路線／Down By The Naked City＝進團前是ニューハード 的鼓手。
+**Prayer 與 Country Rock 兩張一個字都不寫他的生平。**
+
+## 4125　「整格捨去」逐筆（本層砍掉的東西，不留給寫作層）
+
+| 卡 | 初稿預算 | 捨去的格 | 定稿 |
+|---|---:|---|---:|
+| Fool On The Hill | 298 | モカンボ・セッション 與 Dempsey Wright 門下、2018 Guitar magazine 復刻線、〈Chattanooga Choo Choo〉的金唱片 | 223 |
+| We Now Create | 276 | 1961 年 Jazz Academy、封面掛他自己的名字、1965 年那支四重奏的名號、四位樂手的逐名編制 | 225 |
+| Prayer With Faith And Love | 358 | 石川晶 的 1960 年代樂團履歷、〈We Shall Overcome〉的民權運動來歷、四首傳統靈歌裡的兩首曲名、載體細目 | 229 |
+| Soul & Rock | 305 | 杉本喜代志 的非爵士出身、寺川正興 的人氣投票第 2 名、2021 年才有數位版那一格 | 228 |
+| Variation | 307 | 「New Stream In Jazz」子系列、大野雄二 師事前田憲男、gatefold 解說印在內側那條版本辨識 | 227 |
+| Up Up and Away | 331 | 八人名單的逐名列舉（改成「八人編制」＋領班一人）、2012 年再發的「初 CD 化」與尾川雄介、〈Up, Up and Away〉的兩座葛萊美 | 219 |
+| Music Break | 312 | 菊地雅章 的生平、富樫雅彦 與渡辺 的コージー・カルテット 舊淵源、2018 年九張復刻線 | 229 |
+| Sadao Plays… | 291 | 日野皓正 與増尾好秋 的生平、中村とうよう 與《ニューミュージック・マガジン》、盤名前後順序的再發分歧 | 229 |
+| Exciting Drums… | 342 | 寺川正興 的「エレベーター奏法」、鈴木宏昌 的「二代目コルゲン」、〈Soul Limbo〉與〈Going Up The Country〉的來歷 | 228 |
+| Sound Poesy "Sachio" | 292 | 三保敬太郎 兩次藝術祭獎勵賞、慶應義塾幼稚舎 的前後輩交情、2008 年小西康陽 的復刻 | 223 |
+| Exciting Flute | 295 | 市川秀男 與今田勝 兩位鋼琴手的生平、〈Travelin' Band〉與〈Bridge Over Troubled Water〉的卡位、Express 號段曲風混雜 | 223 |
+| Count Buffalo Plays Country Rock | 379 | 〈Games People Play〉的兩座葛萊美、〈Harper Valley PTA〉的雙榜冠軍紀錄、五首 Glen Campbell 曲的逐一列舉、1970 年另外兩張非洲盤 | 228 |
+| Canto of Libra | 337 | 「New Herd Modern Jazz Series」與「MS Master Sonic」兩條系列名、児山紀芳／宮間利之／佐藤允彦 三篇解說、1976 與 2005 兩次再發 | 229 |
+| Flute Adventure | 362 | 水谷公生 的 GS 出身與 Julian Cope 的評語、B 面四首的 Orfeu 巴西線、横田年昭 1970 年三張領銜盤、2007 年首次 CD 化 | 228 |
+| Bamboo | 343 | 「New Emotional Work Series」系列名與 King 的版權製造欄、A 面和樂器四位的逐名列舉、2018 年 KING LEGENDARY JAZZ COLLECTION 50 | 226 |
+| Down By The Naked City | 329 | 「ビクター〈日本のジャズ〉シリーズ」、1971 年那五張碟的逐張盤名、鈴木宏昌 的コルゲン 綽號與ザ・プレイヤーズ | 223 |
+| Infinite | 376 | 副標「Kazumi Watanabe First」、テイチク・スタジオ 的錄音場所、鈴木良雄 1975 年進 Art Blakey、日野元彦 是日野皓正 的弟弟 | 219 |
+| Pianology | 328 | 「Express Jazz Series」與對開封套、Dauner 1964 年的《Dream Talk》、1978 年 ETJ-65017 的再發 | 228 |
+| Introducing Takeo Moriyama | 316 | 首壓封底印錯曲序那一格、四首曲名的逐一列舉、十二人銅管的完整分部 | 219 |
+
+## 4126　措辭：否定句與研究層警示一律「整格捨去」，不寫成「不得寫 X」
+
+照派工信第四節與第 1837-B 條逐條處理。**19 句 hook 裡 0 句出現「不是」「卻不是」「並非」「而不是」**
+（`chk-hook-crossgroup` 第 5 節逐句掃過，0 命中）；**19 則 note 裡 0 處校對痕跡**
+（該腳本第 3 節的 `卡池|查無|並非|而非|無從查證|不得寫|禁補|未能查證|標錯|有出入` 全表 0 命中）。逐條：
+
+- **《Canto of Libra》的兩個未決點（第 4016 條）**：錄音日兩說、佐藤允彦 有沒有下場彈——
+  **兩格整個捨去**。`note` **完全沒有寫錄音日**（只寫 1970 年 12 月發行），
+  也**沒有任何一個字碰到鋼琴席的歸屬**，只寫「作曲欄從頭到尾只掛一個名字」與「連領班共十八人」。
+  **沒有寫「不得寫兩台鋼琴」那種否定句。**
+- **《Down By The Naked City》的作曲歸屬兩說（第 4013 條第 9 處）**：**整格捨去**，
+  `note` 一個作曲者都沒有提，切角改成「錄音全擠在 1971 那一年」與五人編制。
+- **《Sound Poesy "Sachio"》的 A 面三首是不是三保 自己寫的（第 3985 條第 15 處）**：
+  `note` 寫成正面的「把福澤 生前喜歡的幾首翻唱曲加上自作曲」，**沒有把作曲權指給特定曲目**，
+  也沒有寫「查無 Written-By」。**伴奏樂手整格不提**（該卡 `extraartists` 全空）。
+- **《Flute Adventure》與 Rimbaud（第 4027 條第 3 點）**：`note` 只寫「末樂章題與《地獄の季節》
+  那一章的日譯逐字相同」這一層事實，**沒有因果句**，也沒有寫「不得寫成以 Rimbaud 為題材」。
+- **《Pianology》的 Chinatsu 與大阪萬博（第 4027 條第 1／2 點）**：**兩格都整個捨去**，
+  `note` 沒有出現 `Chinatsu`、`中山千夏`、`萬博`、`Berendt 籌辦` 任何一個。
+- **《We Now Create》**：`note` **沒有出現「最後」「絕響」**，也沒有寫富樫 1970 年 1 月那件事（反向禁令第二類）。
+- **《Count Buffalo Plays Country Rock》與《Sound Poesy "Sachio"》**：`note` 都**沒有寫任何樂手名字**
+  （第 3999 條：兩張的 `extraartists` 整欄是空的），也沒有寫「查不到樂手」。
+- **《Exciting Flute》**：`note` **沒有替横田年昭 寫任何經歷**，只寫「掛名是一位長笛手」；
+  盤面那兩個錄音日只寫「兩個錄音日」，**沒有引逐軌對照**（第 4003 條第 3 點）。
+- **唯一一處看起來像負面的表述**是《Down By The Naked City》的「五人編制沒有吉他也沒有原聲鋼琴」——
+  那是該卡 F3 的編制事實本身、是要寫進正文的招牌事實，不是校對痕跡。
+- **本批 19 張的 `hook` 與 `note` 沒有任何一句寫成「可以去聽」那種話**（逐句確認）：
+  **《Sound Poesy "Sachio"》與《Exciting Flute》兩張確定無數位版**（第 3968／3969 條），
+  加上 4 張無封面，**固定無來源狀態不會被下游寫破。**
+
+## 4127　⚠ ⚠ 跨張 n-gram 自查：初稿 14 條命中 3 張以上，**13 條是句型同構，已全部改掉**
+
+`chk-hook-crossgroup` 看不到這一項（第 3938 條），本層自己寫腳本掃。
+做法：19 張的 `hook`＋`note` 串起來，**剝掉六段樣板字**
+（`主故事：`／`發行年寫`／`正文只寫上列各項。`／`這條骨架全批只走本張。`／`逝者一節寫得克制。`／`錄音年 1967 年要寫明。`），
+只留漢字（U+3400–U+9FFF），逐張取**相異** 4-gram 集合，統計「出現在幾張卡上」。
+
+**初稿命中 3 張以上的 14 條，逐條處置**：
+
+| 4-gram 群 | 張數 | 性質 | 處置 |
+|---|---:|---|---|
+| `官方商品`／`方商品頁`／`商品頁把` | **4** | **句型同構**（「官方商品頁把⋯」四張同一個句型） | 只留《Up Up and Away》（它的 hook 就是這條骨架）；Fool On The Hill 改「廠牌自己把這張碟記成⋯」、Music Break 改「日本コロムビア 逐字寫它是⋯」、Canto of Libra 改「原廠的資訊欄把⋯」 |
+| `東芝音楽`／`芝音楽工`／`音楽工業` | **4** | **句型同構**（廠牌全名連打四張） | Introducing 與 Pianology 兩張改成目錄號與「東芝 的 Express 線」；剩《Exciting Flute》《Infinite》兩張 |
+| `由東芝音`／`楽工業以`／`工業以發`／`業以發行` | **3** | **句型同構**（「由東芝音楽工業 以⋯發行」） | 同上，改掉兩張 |
+| `年月日在` | **3** | **句型同構**（「⋯年⋯月⋯日在〈地點〉」） | We Now Create 改成頓開的「1969 年 5 月 23 日，東京スタジオセンター，一天錄完」；Sound Poesy 把地點後移 |
+| `年月日由` | **3** | **句型同構** | Sound Poesy 改「原盤是⋯的日本コロムビア YS-10071-J」；Introducing 改「才上架，目錄號⋯」 |
+| `月日發行` | **3** | **句型同構** | Soul & Rock 改「出的」、Variation 改「上市」；只留《Up Up and Away》 |
+| `佐藤允彦` | 3 | **專名** | **不改**，見下 |
+
+**改寫後的複掃結果**：
+
+- **出現在 3 張以上的中文 4-gram：1 條，是專名 `佐藤允彦`**
+  （Fool On The Hill 的編曲席／Soul & Rock 的三羽烏／Pianology 的掛名）。
+  **三張他都真的在場、三張的 facts 都有他，而且三處的句型完全不同**（編曲分擔／大學綽號／鍵盤編制），
+  **不是句型同構**。照 c-173 第 3938 條對專名的處置（該批 `渡辺貞夫`／`薩克斯風` 兩張並存）保留。
+- **出現在 2 張的 4-gram 共 56 條**，逐條看過**全部是專名、樂器名、編制列舉或年月日骨架**，無句型同構。
+  另外處理掉兩處：`支小號三支長號與一支低音` 原本在《Introducing》與《Sadao Plays…》同構，
+  已把前者的分部倒序寫成「一支低音號、三支長號與四支小號」。
+- **上一批寫作層初稿那 5 條同構形狀**（`發行編號`×4／`由日本發`×3／`在年月日`×3／`錄音在年`×3／`的次中音`×3）
+  **在本層定稿全部 0 命中**：`的次中音` 之所以歸零，是因為本層刻意讓
+  **「薩克斯風」三個字全批只出現一次**（《Down By The Naked City》的前線），
+  其餘六張有次中音席的卡不是只寫「次中音」就是整格不寫編制。
+
+**另查**：
+- **hook 開頭前四字 19 張全異**——`組團在 `／`四首曲子`／`靈歌與福`／`披頭四、`／`五首裡四`／`廠牌自家`／
+  `同一場演`／`九首裡八`／`盤名前半`／`盤名引號`／`掛的是一`／`十二首裡`／`十八個人`／`A 面整`／
+  `同一張碟`／`這支團的`／`發片那天`／`兩台鍵盤`／`碟名點的`。
+- **19 句 hook 句末全部是全形句號**；禁語表（這張專輯／傑作／必聽／里程碑／獨樹一格／融合多種元素／
+  具有代表性／層次豐富／你／我們）**0 命中**；分數・星等・`X/10`・Metacritic・Pitchfork **0 命中**。
+- `chk-hook-crossgroup` 的 `SKELETON` 28 條裡**只有 `第一張領銜` 命中，而且只命中 1 張**
+  （《Fool On The Hill》）——`沒有鼓`／`無鋼琴`／`唯一一次`／`辭世`／`遺作` 等全部 0 命中，
+  **這是刻意避的**：《Pianology》寫「全碟只有兩台鍵盤」而不寫「沒有貝斯也沒有鼓」、
+  《We Now Create》寫「四件樂器裡沒有鋼琴」而不寫「無鋼琴」、《Infinite》寫「發片那天他十七歲」
+  而不寫「第一張領銜作」，三處都是為了讓 `第一張領銜` 這條骨架只屬於一張卡。
+
+## 4128　同姓不同人／同名不同碟的防線（第 4022 條逐點對照）
+
+| 第 4022 條的點 | 本層的 `note` 怎麼擋 |
+|---|---|
+| `村岡実`（尺八）≠ `村岡建`（薩克斯風），**連 King 官方頁都誤植** | **兩張都帶全名**：《Bamboo》寫「主奏全是村岡実 的尺八」、《Down By The Naked City》寫「前線是村岡建 的薩克斯風」。**兩張各自帶樂器，樂器自帶區隔**；那條廠牌誤植是校對層級的事，兩張 `note` 都沒有寫 |
+| 《Introducing Takeo Moriyama》不掛在森山威男 名下 | hook 逐字「碟名點的是鼓手，四首裡三首也是他寫的，**掛名欄寫的是別人**」——**這是正面陳述，不是否定句**；`note` 的編制句把山下洋輔 放在第一位 |
+| 盤名是 `Pianology` 不是 `Pianorogy` | 該卡的 `hook`＋`note` 全篇**沒有出現盤名字串本身**（切角是兩台鍵盤與兩位樂評），**連誤植的機會都不留** |
+| 渡辺香津美 寫十七歲 | `note` 逐字「1953 年 10 月生，發片時十七歲，當年被喊成『17 歲天才吉他手的出現』」——**兩個十七互相釘住**，寫作層寫不出十八歲 |
+| 錄音室一律寫「東芝スタジオ」 | 《Introducing》`note` 逐字「1971 年 9 月 25 日錄於東芝スタジオ」，**沒有出現 `Toshiba-EMI`** |
+| 兩個「粟津」 | 《Flute Adventure》`note` 只寫「評論家粟津則雄」，**粟津潔 一個字都沒有** |
+| 〈Amen〉同時在兩張 Count Buffalo 上 | 《Prayer》的 `note` 帶 `Denon CD-5014`；《Exciting Drums》的 `note` **完全沒有提〈Amen〉**（整格捨去），兩張不可能撞 |
+| 三首曲子同時在《Fool On The Hill》與《Up Up and Away》上 | **兩張都不引那三首**：前者改引〈Israel〉、後者改引 A2〈125 St. & 7th Ave.〉，**重疊歸零** |
+| 《Soul & Rock》↔ 1972 年的《Soul & Soul》 | `note` 逐字帶「1969 年 7 月 25 日」與「Denon CD-5010」 |
+| 《Exciting Drums African Rock Party》↔ 1971 年的《African Rock》 | `note` 帶「1969 年 8 月」與「Columbia JDX-28」，且全篇不出現 `African Rock` 字串 |
+
+## 4129　兩支腳本的逐字結果（工作目錄 `desc-tools/`）
+
+```
+$ node qa-batch.mjs hooks c174
+（略過 qa-check-hooks.mjs：本 repo 無此檔。字數／禁語／開頭雷同／分數星等
+  請改跑 node chk-hook-crossgroup.mjs c174，本階段只做事實對照與字元掃描。）
+全部通過 ✓
+```
+
+```
+$ node chk-hook-crossgroup.mjs c174
+c174｜2 組｜19 張
+
+hook 加權 20–30｜note 218–233
+
+✓ 全部通過
+```
+
+⚠ **`qa-batch` 這一次連一行 `互指?` 都沒有**（c-173 是 1 行，且抓對了）。
+原因是本層在同藝人多卡時**一律只引本卡 facts 裡的專名與曲名**：
+四張 Count Buffalo 沒有一張引另外三張的曲目、兩張渡辺貞夫 沒有互相點名、
+兩張横田年昭 的軸完全分開。**`note>350` 提示也沒有出現（最長 233）。**
+⚠ **`簡體字` 標記 0 處**：本層沒有引用任何整句日文，`国`／`内`／`双` 這幾個字一次都沒有進 `note`
+（《Down By The Naked City》的貝斯手 `稲葉国光`、《Bamboo》的琴手 `山内喜美子`、
+《Canto of Libra》的貝斯手 `国定正夫` 三個名字**都因預算整格捨去**，剛好順帶避開）。
+→ **`desc-tools/jp-proper-names.json` 本層一個字串都沒有加**（第 4001／4026 條加的 15 筆原樣不動）。
+
+## 4130　交付與邊界（自述）
+
+- **只動了三個檔裡的兩個**：`desc-tools/batches/hooks/c174-hooks-a.json`（**新增**，12 筆）、
+  `desc-tools/batches/hooks/c174-hooks-b.json`（**新增**，7 筆）、本檔（**append** 第 4121–4131 條）。
+- **兩個檔案，不是一個**（第 1813-B／3858 條）：`qa-batch` 與 `merge-writer-input` 只讀
+  `<批>-hooks-<組>.json`，已逐字確認檔名。
+- **key 逐字複製自研究稿、順序不變**（程式 `assert [x.key for x in research] == [x.key for x in hooks]`，兩組皆通過）；
+  **欄位只有 `key`／`hook`／`note` 三個**。
+- **`desc-tools/jp-proper-names.json` 未動**（第 4129 條：本層沒有觸發任何專名誤報）。
+- **未碰**：`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、
+  `desc-tools/batches/research/*`（唯讀）、`desc-tools/batches/cards/*`（未讀寫）、
+  其他批次的任何檔案、KV、Firestore、`qa-batch.mjs` 與 `chk-hook-crossgroup.mjs`（只執行，未修改）。
+- **未執行任何 git 寫入指令**（不 `add`／不 `commit`／不 `push`／未動索引；只讀性的 `git show` 用過一次，
+  用途是比對本檔與 HEAD）。
+- 中間檔全部在 scratchpad 的 `c174h/`，檔名帶 `c174h-` 前綴：`c174h-lib.py`（預算與加權量測）、
+  `c174h-budget.mjs`（倒回去量 c-173 用）、`c174h-data.py`／`c174h_data.py`（草稿）、
+  `c174h-draft.py`、`c174h-res-a.txt`／`c174h-res-b.txt`（研究稿的可讀化轉存）。
+- **續跑保護**：照派工信每 5 筆寫回一次；實際上 a 組 12 筆定稿後整份寫檔、b 組 7 筆再整份寫檔，
+  兩檔各自獨立可讀。本層未遇容器重啟。
+
+## 4131　**編號區間結算**：本節用到 **4121–4131**（共 11 條），**4132–4160 未使用**，留給後續層。
