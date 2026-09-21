@@ -622,3 +622,154 @@ slice 直接照抄了波浪號；Discogs 用「•」。**取 `・`**：池中�
 9. **Discogs 免 token 可用**：`database/search`、`releases/<id>`、`masters/<id>`、`masters/<id>/versions`
    在本工作階段未帶 token 全部 HTTP 200（速率自我節流到約 1 req/3s，沒撞 429）。
 
+
+---
+
+# 試聽回撈層（c-173，7 張未 ready 的人工回撈）
+
+## 3831　總結：7 張回撈 **2 張**，其餘 5 張判定無數位來源
+
+探測鏈把 c-173 的 11 張標了 7 張 `unavailable`。逐張人工回撈後：
+
+| # | 掛名｜盤名 | 結果 |
+|---|---|---|
+| 1 | ジョージ川口とビッグ4｜The Original Big Four（1959 King KC 10） | **救回**（jp `1770440982`） |
+| 2 | Modern Jazz Playboys｜Modern Jazz Screen Mood（1960 コロムビア SL-1001） | 無來源 |
+| 3 | Modern Jazz Playboys｜Modern Jazz Show Case（1961 コロムビア ZL-1160） | 無來源 |
+| 4 | 横内章次とクインテット・プラス・ラテン｜真夜中のラテン（1963 Victor SJL-5057） | 無來源 |
+| 5 | 村岡実｜Harlem Nocturne - Bamboo Flute Miracle Sounds（1967 コロムビア JPS-5132） | **救回**（jp `1619045298`） |
+| 6 | Charlie Mariano & Sadao Watanabe｜同名盤（1967 Victor SMJ-7446） | 無來源 |
+| 7 | 松本英彦・宮沢昭｜Operation Sam Taylor（1967 King 45SDS-1） | 無來源 |
+
+**假陽性率 2/7 = 29%**，低於 c-166…c-170 的 65%，但兩張都是靠**日文寫法**才撈到的，
+不是靠多試幾個店面——**`country=jp` 是唯一有產出的店面，us／gb／tw／de 全程 0 產出**。
+
+## 3832　救回 1：`ジョージ川口とビッグ4｜The Original Big Four`
+
+- 命中：jp `collectionId=1770440982`，`appleArtist=オリジナル・ビッグ・フォア`，
+  `appleTitle=THE ORIGINAL BIG FOUR`，1959，**11 軌**，`notExplicit`，有試聽。
+- 佐證：軌單與卡單的 King KC 10 曲目逐首對上——バードランドの子守唄／サヴォイでストンプ／
+  ジャンピン・アット・ザ・ウッドサイド／ブルース・イン・ザ・クローゼット／A列車で行こう，
+  軌數 11 與 Discogs 原壓相同，年份 1959 相同。**判定同一張碟，不是 1976 TBM-66 那張重聚盤。**
+- 有效查法：`search?term=オリジナル・ビッグ・フォア&country=jp&entity=album`（回 1 筆，直接命中）。
+  `The Original Big Four` 在 jp 也會命中（排第一），但探測層用的是 `limit=12` ＋ 掛名比對，被掛名擋掉了。
+
+## 3833　救回 2：`村岡実｜Harlem Nocturne - Bamboo Flute Miracle Sounds`
+
+- 命中：jp `collectionId=1619045298`，`appleArtist=村岡 実`（⚠ **姓名之間有一個半形空格**），
+  `appleTitle=Harlem Nocturne`（⚠ **副標 Bamboo Flute Miracle Sounds 整段不在店面盤名裡**），
+  1967，**12 軌**，有試聽。
+- 佐證：12 軌與 JPS-5132 相同，曲序 HARLEM NOCTURNE／TABOO／YESTERDAY／…／MEDITATION，年份 1967 相同。
+- 有效查法：`search?term=村岡実&country=jp&entity=musicArtist` → `artistId=318668695`
+  → `lookup?id=318668695&entity=album&limit=200&country=jp`（11 張目錄，1967 那張就在裡面）。
+  ⚠ **漢字與羅馬字兩種 term 回的是同一個 artistId**，這一張不是第 3 種成因。
+
+## 3834　無來源 1／2：`Modern Jazz Playboys` 兩張（Screen Mood 1960、Show Case 1961）
+
+試過的寫法（全部 `entity=album`）：`Modern Jazz Screen Mood`／`MODERN JAZZ SCREEN MOOD Playboys`／
+`モダン・ジャズ・スクリーン・ムード`／`スクリーン・ムード`／`ジャズ・スクリーン・ムード`／
+`Modern Jazz Show Case`／`MODERN JAZZ SHOW CASE`／`Modern Jazz Showcase Playboys`／
+`モダン・ジャズ・ショー・ケース`／`ショーケース モダンジャズ`／`Modern Jazz Playboys`／
+`モダン・ジャズ・プレイボーイズ`／`モダンジャズ・プレイボーイズ`。
+店面：**jp／us／gb／tw／de**。
+掛名查法：`entity=musicArtist` 的 `Modern Jazz Playboys`（jp／us）、`モダン・ジャズ・プレイ・ボーイズ`、
+`プレイボーイズ` → **這個團在 Apple 完全沒有 artist 實體**（jp 的 `プレイボーイズ` 只回到
+`小西康陽とプレイボーイズ` 等不相干的掛名）。
+→ **成因第 6 種（只有黑膠／CD，沒有數位版）。** 兩張的 2009／2010 年 Columbia CD 再發
+（COCB-53831／COCB-53622）都確實存在，但**沒有跟著上數位**——這是本批最乾淨的「CD 有、數位無」形狀。
+
+## 3835　無來源 3：`横内章次とクインテット・プラス・ラテン｜真夜中のラテン`
+
+寫法：`真夜中のラテン`／`Mayonaka no Latin`／`横内章次`／`Shoji Yokouchi`／
+`横内章次とクインテット・プラス・ラテン`／`クインテット・プラス・ラテン`／`Yokouchi Latin`。
+店面：**jp／us／gb／tw／de**。
+掛名查法：jp 與 us 的 `entity=musicArtist` 都只回到**同一個** artistId `1780734006`
+＝`Shoji Yokouchi and His Rainbow Quintet`，`lookup` 出來的目錄**只有一張**：
+1962 年的 `Ginza de Twist/Miki no Blues - Single`（仲宗根美樹合唱，2 軌）。
+→ **成因第 6 種。** 1963 Victor SJL-5057 這張 LP 沒有任何數位版；
+Apple 上這位吉他手只存在那一張 1962 年的單曲。
+
+## 3836　無來源 4：`Charlie Mariano & Sadao Watanabe｜同名盤`（Victor SMJ-7446，1967，10 軌）
+
+寫法：`Charlie Mariano & Sadao Watanabe`／`Sadao Watanabe Charlie Mariano`／
+`チャーリー・マリアーノと渡辺貞夫`／`Charlie Mariano Sadao Watanabe`。
+店面：**jp／us／gb／tw／de**。
+掛名查法：`渡辺貞夫`／`Sadao Watanabe` → `artistId=298235`（jp 目錄 1955–1979 段共 19 張）；
+`Charlie Mariano`／`チャーリー・マリアーノ` → `artistId=5054223`（20 張）。
+**兩份目錄裡 1967 前後的聯名只有兩張，都是 Takt 盤**：
+`Iberian Waltz`（`1868591146`，1967，4 軌，JAZZ-7）與 `We Got a New Bag`（`1868591653`，1968，5 軌）。
+⚠ **`Iberian Waltz` 是 c-173 另一張卡（已 ready），不可以拿來配這一張**；
+軌數（4／5 vs 本盤 10）與廠牌（Takt vs Victor World Group）兩項都對不上。
+→ **成因第 1／6 種。** Victor SMJ-7446 這個獨立編號的同名盤沒有數位版。
+
+## 3837　無來源 5：`松本英彦・宮沢昭｜Operation Sam Taylor`（King 45SDS-1，1967，12 軌）
+
+寫法：`Operation Sam Taylor`／`オペレーション・サム・テイラー`／`サム・テイラー作戦`／
+`Hidehiko Matsumoto Akira Miyazawa`／`松本英彦 宮沢昭`。
+店面：**jp／us／gb／tw／de**（`Operation Sam Taylor` 在四個店面全部 `resultCount=0`）。
+掛名查法：`松本英彦`／`Hidehiko Matsumoto` → `153540229`（5 張）與 `松本英彦クインテット` → `304321154`（1 張）；
+`宮沢昭`／`Akira Miyazawa` → `1370709057`（7 張，含 1962 YAMAME、1968 Go Go Sax Vol.3、1969 Bull Trout、
+1969 Karajishi Botan）與 `MIYAZAWA AKIRA QUARTET` → `1055603130`（2 張）。
+**四份目錄加起來 15 張，沒有 1967 年的 King 盤，也沒有任何 Sam Taylor 相關盤名。**
+→ **成因第 6 種。** 與第 3762 條（策展層收件時就記到「Apple 兩個 store 都 0 筆」）互相印證，
+本層把它從「觀察」升級為**結論：寫成無來源狀態**。
+
+## 3838　⚠ ⚠ **新成因（第 7 種）：店面把「盤名」當成掛名，樂團名整個不出現**
+
+`The Original Big Four` 在 Apple jp 的 `artistName` 是 **`オリジナル・ビッグ・フォア`**——
+那是**盤名的片假名轉寫**，不是樂團名。這張碟在 Apple 上同時存在兩個掛名實體：
+`GEORGE KAWAGUCHI BIG FOUR`（`artistId=1062217181`，目錄裡只有 1969 的 `George and Sleepy`）
+與 `ジョージ川口`（`1017238980`，4 張，全是 1957／1982／1987／2011），
+**1959 這張兩邊都不在**，因為它被掛到了第三個、由盤名生出來的掛名底下。
+
+這**不是**既有清單的第 2b（團名當專輯標題前綴）或 2c（團員全進 feat.）——
+那兩種至少樂團名還在某個欄位裡；這一種是**樂團名在整筆資料裡完全消失**。
+
+**→ 給後續批次的查法（新增到診斷清單第 7 條）**：
+**日本 1950–60 年代盤，除了掛名，一定要拿「盤名本身的片假名轉寫」去查 `entity=album`。**
+本張用 `オリジナル・ビッグ・フォア` 一次命中、`resultCount=1`，是七張裡最快的一筆。
+
+## 3839　`recover-unavailable.mjs` 為什麼這兩張都漏掉——腳本的兩個具體缺口
+
+`batch-progress/c173/apple-candidates.md` 對這 7 張的結論是「7 張裡 6 張目錄裡找不到」，
+但其中 2 張實際找得到。根因不是 Apple，是腳本：
+
+1. **`catalogueOf()` 用 `artistOk`／`looseArtistOk` 過濾 `entity=musicArtist` 的結果。**
+   卡單掛名 `ジョージ川口とビッグ4` 對上店面掛名 `GEORGE KAWAGUCHI BIG FOUR`（**全羅馬字、無「と」**）
+   過不了比對，那個 artistId 當場被丟掉，於是只剩 `ジョージ川口` 的 4 張目錄——1959 那張不在裡面。
+   ⚠ **日文掛名與店面羅馬字掛名之間，`artistOk` 這一關是漏斗不是篩子。**
+2. **腳本只走「掛名 → 目錄」一條路，沒有「盤名直接 `entity=album`」那條路。**
+   第 3838 條那種形狀（掛名由盤名生成）在設計上就撈不到。
+   村岡実那張則是第二個缺口的另一面：掛名對得上、**盤名對不上**
+   （店面 `Harlem Nocturne` vs 卡單 `Harlem Nocturne - Bamboo Flute Miracle Sounds`），
+   `titleOk`／`looseTitleOk` 都不會過，只有「年份 ±1」那條旁路救得了它——而那張確實是 1967，
+   照理應該被列成候選卻沒有，**因為 artistId 那一關在更前面就沒讓目錄進來**（`村岡 実` 中間有空格）。
+
+**建議（不在本層動手，留給主線）**：`recover-unavailable.mjs` 加第三條路——
+把 `c.album` 與 `c.queryAlias` 裡的每個候選字串直接丟 `entity=album&country=jp&limit=50`，
+不經掛名過濾，只用「年份 ±1」收斂。本批這一條就能多撈 2 張。
+
+## 3840　副標與空格：兩張救回的碟，店面欄位都與卡單不同字
+
+- `村岡 実` vs 卡單 `村岡実`（半形空格）。
+- `Harlem Nocturne` vs 卡單 `Harlem Nocturne - Bamboo Flute Miracle Sounds`（副標整段缺）。
+- `オリジナル・ビッグ・フォア` vs 卡單 `ジョージ川口とビッグ4`（完全不同的字串）。
+
+**裁定：`previews.json` 的 `appleArtist`／`appleTitle` 照店面原字記**，不改寫成卡單寫法——
+這兩欄是「店面那筆長什麼樣」的存證，卡單的掛名與盤名不因回撈而變動（第 307 條、第 3763–3768 條照舊）。
+本層**沒有**動任何卡單欄位。
+
+## 3841　Apple 端點在本層的可用性（補第 3770 條併記第 6 點）
+
+本層共發出約 90 次請求（`search` ＋ `lookup`，jp／us／gb／tw／de 五個店面）。
+**`/search` 沒有出現恆定 403**，只在 us 連續打第 9 次時回過 **2 次 HTTP 429**，
+退避 1.2s／4.8s 後即恢復。**「雲端會回 403」在本工作階段同樣不成立**（與第 3770 條併記第 6 點一致）。
+⚠ 但要節流：連打同一個店面超過 8 次就會撞 429，`recover-unavailable.mjs` 的 700ms 間隔偏短。
+
+## 3842　交付與邊界
+
+- 改動檔案只有兩個：`batch-progress/probe/previews.json`（**只改 c-173 那 2 個鍵**，
+  鍵總數 3466 前後不變，已驗）與本檔（append）。
+- `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`caa.json`／其他批次檔案／KV／Firestore **皆未觸碰**。
+- 未 commit、未 push、未動 git 索引。
+- 剩下 **5 張維持 `status: unavailable` 原樣**，交給下游寫成固定「無來源狀態」。

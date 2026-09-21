@@ -52,17 +52,45 @@ const catalogueOf = async (artist, alias, front) => {
   let items = [];
   for (const term of [artist, alias].filter(Boolean)) {
     const s = await get(`https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=musicArtist&limit=10&country=${front}`);
-    await sleep(700);
+    await sleep(1200);
     const arts = ((s && s.results) || []).filter(a => artistOk(term, a.artistName) || looseArtistOk(term, a.artistName));
     for (const a of arts.slice(0, 3)) {
       const l = await get(`https://itunes.apple.com/lookup?id=${a.artistId}&entity=album&limit=200&country=${front}`);
-      await sleep(700);
+      await sleep(1200);
       items.push(...((l && l.results) || []).filter(x => x.wrapperType === 'collection'));
     }
     if (items.length) break;
   }
   catalogue.set(ck, items);
   return items;
+};
+
+// ── 第三條路：盤名直接查 `entity=album`（2026-09-21，第 1859-B 條）────────────
+// c-173 回撈層實證：上面那條「掛名→目錄」在日本盤會整條斷掉，兩個原因——
+//   (1) `catalogueOf` 用 `artistOk`/`looseArtistOk` 過濾 `entity=musicArtist`，
+//       **日文掛名對上羅馬字店面掛名過不了**，artistId 當場被丟；
+//   (2) 更根本的是**新成因第 7 種**：店面把「盤名的片假名轉寫」當成掛名，
+//       樂團名在整筆資料裡完全消失（`The Original Big Four` 的 `artistName`
+//       逐字是 `オリジナル・ビッグ・フォア`）——**這種盤從掛名那端永遠找不到。**
+// 所以補一條不經過掛名的路：拿盤名（與 queryAlias）直接打 `entity=album`。
+// ⚠ 只在第一條路**一個候選都沒有**時才跑，且**必須盤名對得上**——
+// 只靠年份會把那一年的所有專輯都收進來。
+const albumSearch = async (c, front) => {
+  const terms = [...new Set([c.album, c.queryAlias, `${c.album} ${c.artist}`].filter(Boolean))];
+  const out = [];
+  for (const term of terms) {
+    const s2 = await get(`https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=album&limit=25&country=${front}`);
+    await sleep(1200);
+    for (const it of ((s2 && s2.results) || [])) {
+      const tOk = titleOk(c.album, it.collectionName, c.selfTitled) || looseTitleOk(c.album, it.collectionName, c.selfTitled);
+      if (!tOk) continue;                       // 盤名對不上就不收，年份不足以單獨成立
+      const y = Number(String(it.releaseDate || '').slice(0, 4));
+      out.push({ front, id: it.collectionId, name: it.collectionName, y, tr: it.trackCount,
+        why: (c.year && y && Math.abs(y - c.year) <= 1) ? '盤名直查＋年份' : '盤名直查' });
+    }
+    if (out.length) break;
+  }
+  return out;
 };
 
 const lines = [];
@@ -86,6 +114,12 @@ for (const c of todo) {
       if (tOk || near) found.push({ front, id: it.collectionId, name: it.collectionName, y, tr: it.trackCount, why: tOk ? (near ? '盤名＋年份' : '盤名') : '年份' });
     }
     if (found.length) break;
+  }
+  if (!found.length) {                          // 第一條路全空 → 走盤名直查
+    for (const front of FRONTS) {
+      found.push(...await albumSearch(c, front));
+      if (found.length) break;
+    }
   }
   const uniq = [...new Map(found.map(f => [f.id, f])).values()].slice(0, 8);
   if (uniq.length) hit++;
