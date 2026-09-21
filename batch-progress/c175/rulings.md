@@ -1217,3 +1217,300 @@ MB artist-credit 是 `猪俣猛とサウンド・リミテッド`（397912f7，G
 `mb.mjs`／`dg.mjs`／`dgrel.mjs`／`apple.mjs`／`poolscan.mjs`／`build1-3.mjs`）。
 MB 全程 1 req/s、UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，未遇 503；
 Discogs 免 token、自我節流約 1 req/3s，未遇 429／503；Apple 32 次全部 200。
+
+## 4161　試聽回撈層（c-175）範圍與總計
+
+探測鏈把本批 28 張裡的 **12 張**標成 `status !== 'ready'`（串流 16/28）。本層逐張重查，
+**救回 2 張**（Singers 3《Foliole #2 The Sound Of Singers 3》、岡沢章《ギリシャについて書かれた本》），
+**10 張確認 Apple 兩個店面的藝人目錄裡都沒有**。串流覆蓋由 16/28 升到 **18/28（64%）**。
+命中率 **2/12 ＝ 17%**，**比 c-173 的 29%（7 撈 2）與 c-174 的 75%（8 撈 6）都低**——
+原因不是查法退步，而是本批 12 張裡有 **10 張是日本 1971–1975 年段、從未進過數位發行的原盤**（見 4180）。
+Apple `search`／`lookup` 本層共打 **101 次**（jp 88／us 13），403 三次（退避後全部成功）、429 零次。
+
+## 4162　前田憲男・藤舎推峰《Fantastic Sounds In Shino Flute》1971（Express ETP-9019）— **沒救回**
+
+查法（全部 `country=jp`）：`幽玄の世界 藤舎推峰`／`前田憲男 幽玄の世界`（`entity=album`，皆 0）、
+`藤舎推峰`／`Suiho Tosha`／`Norio Maeda`（`entity=musicArtist`）、
+`Concerto For Shino Flute`（`entity=song`，6 筆全是不相干的西洋協奏曲）。
+**決定性的一步是兩位掛名的 artistId 目錄全掃**：
+`lookup?id=1524391387&entity=album`（Suiho Tosha）**只有 2 張**，逐字是 1988 年的《Shiki No Fue》與《Kokoro No Senritsu Fue》；
+`lookup?id=79434607&entity=album`（Norio Maeda）**26 張全列**，1968–2015 都有（含池中已收的《This is Jazz Rock》1968、《Shadow of the Highway》1971），
+**唯獨沒有 1971 年這張**。→ 歸 **成因 1（市場真的沒有）**，非掛名或盤名寫法問題。
+（附帶佐證：Norio Maeda 目錄裡 1971 年的《Shadow of the Highway》在架上，
+**同一位藝人同一年的另一張在架、本張不在**，可以排除「整年沒數位化」的替代解釋。）
+
+## 4163　ツトム・ヤマシタ & 佐藤允彦《Metempsychosis》1971（Columbia NCB-7009）— **沒救回**
+
+探測層的 `us:6→0`（六個市場各回 6 筆卻沒一筆對得上）本層覆核為**同名撞擊**：
+`search?term=Metempsychosis&country=jp` 回 25 筆，**全是 2011–2026 的金屬／電子樂團同名盤**
+（hubris.／Bliss of Flesh／Nordvargr／Hexsystem／Nest／Macro/micro…），與本盤無關。
+⚠ **`apple-candidates.md` 列的 8 筆候選（1886479833／1320339728／1825426970／1866698833／1505982099／1597695074／6800806846／1393921389）全部出自這一堆，一筆都不是**——
+**與 c-174 的 4 筆候選全誤配同一形狀，該檔第三次被證實只能當線索。**
+另試 `ものみな壇ノ浦へ`（album 0；`entity=song` 回 14 筆，全是平家物語題材的新曲）、`メテンプシコーシス`（0）、
+`ツトム・ヤマシタ 佐藤允彦`（0）、`Masahiko Satoh Metempsychosis`（0）、`壇ノ浦`（19 筆全不相干）。
+目錄全掃：`854230`（Stomu Yamash'ta，jp 11 張）、`1144351385`（ツトム・ヤマシタ，jp 1 張＝《Da: Tsutomu Yamashita No Sekai》1971）、
+`19063311`（Masahiko Satoh，**jp 44 張／us 42 張全列**）——**三份目錄都沒有本盤**。
+→ 歸 **成因 1**。⚠ 但要記一筆：**山下勉在 Apple 被拆成兩個 artist 實體**（854230 掛「クラシック」、1144351385 掛「ポップ」），
+**只查其中一個會漏掉《Da》那張 1971 年的原盤**，見 4176。
+
+## 4164　Singers 3《Foliole #2 The Sound Of Singers 3》1971（King SKK(L) 3010）— ✔ **救回**
+
+`collectionId 1782070992`｜jp｜`artistName` **シンガーズ・スリー**｜`collectionName` **Foliole #2**｜
+1971-06-01｜**5 軌**｜`copyright` 逐字「℗ 1971 King Record Co.,Ltd」｜artwork 檔名 `NOPA-6528.jpg`。
+**兩種成因疊在同一張上**：
+- **成因 3（`artistName` 是當地語言）**：卡單掛名 `Singers 3` 是阿拉伯數字，店面逐字是片假名 `シンガーズ・スリー`；
+  探測層六個市場各回 12 筆卻 `→0`，就是卡在這裡。
+- **成因 8（副標被店面截掉）**：卡單盤名 `Foliole #2 The Sound Of Singers 3`，店面**只留 `Foliole #2`**。
+**軌序逐首對上 Discogs releases/4933017**：A1 Foliole # 2／B1 See See Rider／B2 Eli's Comin／B3 Upa Neguinho／B4 Ani Zanta
+↔ 店面 T1 フォリオール Ⅱ／T2 シー・シー・ライダー(SeeーSeeーRider)／T3 イーライズ・カミング／T4 ウパ・ネギーニョ／T5 アニ・ザンタ，**5/5 同序**。
+`previewUrl` 取 T1（沿用全線慣例：collection 端點不帶 previewUrl，一律用 `entity=song` 的第 1 軌）。
+⚠ **`apple-candidates.md` 這一筆（1782070992，依據「盤名直查＋年份」）是全份 6 筆候選裡唯二正確的一筆**，但**仍然是逐首覆核後才採用的**。
+
+## 4165　Yamash'ta & The Horizon《Sunrise From West Sea "Live"》1971（London SLC(J)-359）— **沒救回**
+
+查法：jp `Yamash'ta Horizon`（0）、`サンライズ・フロム・ウエスト・シー`（0）、
+`Sunrise From West Sea`（album 10 筆／song 25 筆，**全是 ABBA、Beach Boys 之類的詞元噪音**）、
+`ザ・ホライゾン`（`entity=musicArtist`，14 筆全是 Sound Horizon／Linked Horizon／T-SQUARE 一類）、
+`Yamash'ta`（musicArtist，只回 854230 一個實體）。
+目錄全掃同 4163 的三份，**都沒有這張團名盤**。⚠ **本盤的 `tried` 欄是六市場全 `0→0`，
+但覆核後確認「搜尋索引沒回東西」的原因不是寫法，是庫裡真的沒有**——
+`The Horizon` 這個團名在 Apple 沒有任何實體，`apple-candidates.md` 列的 5 筆《The Horizon》（1444473675／379013873／1686277797／1749876330／1756547750）
+**全是 2010–2024 年不相干的同名專輯**，一筆都不是。→ 歸 **成因 1**。
+
+## 4166　佐藤允彦 & ゲイリー・ピーコック《三昧》1972（Express ETJ-9003）— **沒救回**
+
+查法：jp `サマーディー`（16 筆全是「サマーデイ／Summer Day」的音近噪音）、`Samadhi 佐藤允彦`（0）、
+`Masahiko meets Gary`（0）、us `Masahiko Satoh Gary Peacock`（0）、
+`フェアリー・リングス 佐藤`（`entity=song`，只回 1974《ストレイト・アヘッド》裡的同名曲，**不是本盤**）。
+目錄全掃：`19063311` jp **44 張**／us **42 張**逐張看過，**1970–1979 年段列了 20 張**
+（Holography 1970／Amalgamation 1971／Pianorogy 1971／Switched on East 1971／TRINITY 1971／Yamataifu 1972／双晶 1973／Piano Duo 1974／Straight Ahead 1974…），
+**就是沒有《三昧》**；`1524305606`（Gary Peacock 的第二實體）只有 1 張 2020 年的西岸合輯。
+→ 歸 **成因 1**。⚠ `apple-candidates.md` 這一欄的 6 筆（ボカロ三昧／慈悲三昧水懺／念佛三昧／演歌三昧／呼吸三昧／レゲエ馬鹿三昧）
+**是「三昧」這兩個漢字的詞元撞擊，與爵士無關**，**逐筆誤配**。
+
+## 4167　石川晶とカウント・バッファローズ《Dynamic Latin Exotic Sound》1972（Toshiba TP-9531Z）— **沒救回**
+
+⚠ **本張是本層工時最重的一筆，因為石川晶在 Apple jp 被拆成 7 個 artist 實體**（見 4176）。
+`search?term=Akira Ishikawa&entity=musicArtist&country=jp` 回 8 筆，扣掉同名的石川皓也／Chiaki Ishikawa，
+**本人相關的有 6 個 ID**，逐一 `lookup ... &entity=album` 全掃：
+- `585618738`（Akira Ishikawa）2 張：Drums Method 1972、Back to Rhythm 1975
+- `1506560116`（Akira Ishikawa and His Count Buffalos）8 張：アフリカン・ロック 1971、African Rock 2021、Count Buffalo Plays Country Rock! 1970、Electrum、Jam Trip ×2、Sensational Jazz '70 ×2
+- `1571811111`（Akira Ishikawa & Count Buffaloes）1 張：**Uganda 1972-08-07**
+- `1782228407`（AKIRA ISHIKAWA & COUNT BUFFALO）1 張：OKINAWA 1976
+- `1679734386`（Akira Ishikawa & The Gentures）3 張：Golden Drum 1969、Beat Pops / Drum Hits 1970、Rock, Rock '70 1970
+- `1556379994`／`1556380153`（Count Buffalo & His Rock Band／& The Jazz Rock Band）共 3 張，全是 1969
+**七份目錄合計 18 張，沒有《Dynamic Latin Exotic Sound》。**
+另試 `ダイナミック・ラテン`（3 筆，**最接近的是見砂直照と東京キューバン・ボーイズ《Dynamic Latin》1971-03-25，12 軌——
+盤名與軌數都很像，但掛名是完全不同的樂團，不採用**）、`石川晶 ラテン`（0）、`Count Buffalo Latin Beats`（17 筆全噪音）、
+`エル・クンバンチェロ カウント・バッファロー`（song，0）。
+→ 歸 **成因 1**。⚠ **同團同年的《Uganda》1972 在架、本盤不在**，再次排除「整年沒數位化」。
+
+## 4168　村岡実とニュー・ディメンション・グループ《鳴門》1972（King SKD 135）— **沒救回**
+
+## 4169　村岡実とニュー・ディメンション・グループ《蘇》1973（Victor SPX-1028）— **沒救回**
+
+## 4170　岡沢章《ギリシャについて書かれた本》1973（Columbia JDX-7011）— ✔ **救回**
+
+`collectionId 1508949052`｜jp｜`artistName` **岡沢 章 & 稲垣次郎とソウル・メディア**｜
+`collectionName` **A Sunflower in Greece**｜1973-05-25｜**15 軌**｜
+`copyright` 逐字「℗ 1973 Nippon Columbia Co., Ltd./NIPPONOPHONE」｜artwork 檔名 `COKM-42682.jpg`（CD 再發番號）。
+找到的路徑：`lookup?id=887722885&entity=album`（Akira Okazawa 的 artistId 目錄），**整個目錄只有 2 張**，一眼就對上。
+**三種成因疊在同一張上**：
+- **成因 2（店面把聯名拆成掛名＋伴奏團）**：卡單掛名是單名 `岡沢章`，店面把伴奏團 `稲垣次郎とソウル・メディア` 併進 `artistName`。
+- **成因 12 的變形（店面把「標題曲」當盤名）**，⚠ 而且是**新的一種**，見 4174。
+- **CD 再發補軌**：15 軌 vs 原盤 12 軌，⚠ 見 4175。
+**軌序逐首對上 Discogs releases/10197348**（該筆用英文題）：
+A1 Whatever In The Ruin↔T1 朝の都会には乾いた花がよく似合う／A2 Shadow↔T2 影／A3 Large Drops Of Rain↔T3 大粒の雨／
+A4 One Last Word↔T4 ひとつの言葉／A5 Lullaby With Love↔T5 小さな愛だけど／**A6 A Sunflower In Greece↔T6 ギリシャについて書かれた本**／
+B1 What's Going On↔T7 愛のゆくえ／B2 Alone Again (Naturally)↔T8 アローン・アゲイン／B3 Separate Love↔T9 ふたつの椅子／
+B4 Bare Foot Girl↔T10 裸足の女／B5 If You Should Go Away↔T11 行くがいい／B6 Tell Them Good-Bye↔T12 ひとりだけさ，
+**12/12 同序**；T13 ユア・ソング／T14 スマック・ウォーター・ジャック／T15 バカラック・メドレー 是 CD 再發加的 3 首。
+`previewUrl` 取 T1。
+⚠ **第 3918 條第 7 點（策展層）對這一筆的判斷「artistName 把伴奏團併進來、collectionName 用的是曲名、15 軌 CD 再發」逐項成立**，
+**但策展層的結論是「不能用 Apple 定掛名或盤名」，不等於「不能用來取試聽」**——
+本層確認它是同一張錄音的再發，**取 preview 成立**。**這兩件事要分開判，後七批照辦。**
+
+## 4171　村岡実とニュー・ディメンション・グループ《ルーパス》1974（Victor SPX-1029）— **沒救回**
+
+4168／4169／4171 三張合併記錄（同一位掛名、同一個樂團、同一種結論）：
+查法：jp `村岡実 鳴門`（25 筆全是古典鋼琴噪音）、`村岡 実 蘇`（7 筆同）、`ルーパス 村岡`（0）、
+`Minoru Muraoka New Dimension`（0）、`ニュー・ディメンション`（musicArtist，**0**）、
+`New Dimension Group`（musicArtist，25 筆全是 Momoiro Clover Z／Måneskin 一類噪音）、
+`尺八とベースの対話`（song，0）、`虚無僧 村岡`（song，3 筆全不相干）。
+目錄全掃：`318668695`（Minoru Muraoka）**12 張全列**——Harlem Nocturne 1967／This is Modern Shakuhachi Vol. 2 1968／
+Muraiki / Oiwake 1968／La Macarena / Zen 1968／Shakuhachi Oriental Mood 1969／バンブー 1970／
+Shakuhachi Rock: Enka 1970／Shakuhachi Rock: Pops 1971／Shakuhachi Rock: Matroos 1971／Modern Shakuhachi Method 1972／
+Shakuhachi Hana No Stage 1996；`1782072161`（Minoru Muraoka and His Group with Joe）1 張：memories of CHIYO 1978。
+⚠ **村岡実本人 1967–1972 有 11 張在架，1972 年 4 月的《Modern Shakuhachi Method》就在裡面，
+但「ニュー・ディメンション・グループ」名義的三張（1972 鳴門／1973 蘇／1974 ルーパス）一張都沒有，
+而且這個團名在 Apple 連 artist 實體都不存在**——這是「同一位藝人、同一時期、**特定團體名義整條線沒數位化**」的清楚形狀。
+→ 三張全歸 **成因 1**。⚠ `apple-candidates.md` 給《蘇》的候選 `986800858`《So》1986 9 軌
+**是羅馬字盤名 `So` 的詞元撞擊，誤配**。
+
+## 4172　浅川マキ《Maki VI》1974（Express ETP-72011）— **沒救回**
+
+查法：jp `浅川マキ`（11 筆）、`Maki VI`（25 筆全是「麻季／真希／まき」一類的噪音，**探測層 12→0 就是撞在這裡**）、
+`わたしの金曜日 浅川マキ`（song，只回 1970《浅川マキの世界》裡的〈十三日の金曜日のブルース〉，**不是本盤**）、
+`あんな女ははじめてのブルース`（song，4 筆不相干）。
+目錄全掃：`391660263`（Maki Asakawa）**jp 5 張／us 2 張**——
+jp 是《浅川マキの世界》1970-09-05、《Maki II》1971-09-05、《Maki Live》1972-03-05、
+《Single Collection》2000（22 軌合輯）、《Long Good-Bye》2010（32 軌合輯）；us **只有兩張合輯**。
+⚠ **Apple 的浅川マキ原盤只數位化到 1972 年 3 月為止**，1974 年 12 月的《Maki VI》不在；
+**那 8 首（わたしの金曜日／港町／ジン・ハウス・ブルース／キャバレー／あんな女ははじめてのブルース／今夜はおしまい／戸を叩くのは、誰／ボロと古鉄）
+在兩張合輯的曲目裡也沒有出現**（合輯是單曲選與晚期選）。
+→ 歸 **成因 1**。**第 3 節「1978 前後的碟先查有沒有再發改名」這一條在本張不適用**（1974 年盤，`Maki VI` 從未改題）。
+
+## 4173　深町純《Introducing Jun Fukamachi》1975（Toshiba LF-91007）— **沒救回**
+
+查法：jp `Introducing Jun Fukamachi`（**0**）、`深町純`（19 筆）、`イントロデューシング`、`Bamboo Bong`（song，25 筆全是 Chitty Chitty Bang Bang 一類噪音）。
+目錄全掃：`259060938` jp **15 張**／us **13 張**、`387193239` jp **6 張**（兩個 artist 實體，見 4176），
+**1975 年段在架的是三張**：《中島みゆき作品集〜Piano by Jun Fukamachi》12 軌、《LOVE SONG〜Piano by Jun Fukamachi》12 軌、
+**《六喩》（深町純 & 21st Century Band）4 軌**。
+⚠ **《六喩》一度看起來像「同一張的日文題」**（同年、同 Toshiba、同屬前衛路線），**本層逐首查證否決**：
+`lookup?id=1542140659&entity=song` 逐字回 T1 迷宮 (MEIKYU)／T2 波照間 (HATERUMA)／T3 真空 (SHINKU)／T4 六喩 (ROKUYU)；
+Discogs releases/2987476（LF-91007，Pro-Use Direct Cutting Series）逐字回
+A1 Evening Star: Oh, Star Of Eve, Thy Tender Beam／A2 Noah's Ark／A3 Perfidy／B1 Bamboo Bong／B2 La Fille Aux Cheveux De Lin，
+**5 軌、零首重疊，是兩張完全不同的錄音**。→ 歸 **成因 1**。
+**這一筆值得留著**：它是「同年同廠同藝人、軌數相近、盤名一個英一個日」這種**最像而其實不是**的形狀，
+**只有逐首比對軌名才擋得住**，年份與廠牌都擋不住。
+
+## 4174　⚠ ⚠ **新成因（第 13 種）：店面用「標題曲的另一語言題名」當盤名，兩個題名指的是同一首歌**
+
+派工信列的十二種成因裡，**第 12 種是「店面把掛名當盤名、原盤名消失」**（Introducing Takeo Moriyama → Yosuke Yamashita Trio with Brass 12），
+**第 11 種是「羅馬字誤植」**（Pianology → Pianorogy）。**本批 4170 這一張都不是。**
+它的形狀是：**原盤有一首同名標題曲，該曲在原盤上同時有日文題與英文題；
+卡單的盤名取了日文題（ギリシャについて書かれた本），店面的 `collectionName` 取了同一首的英文題（A Sunflower in Greece）。**
+**兩個字串沒有任何共用詞元、沒有任何轉寫關係、羅馬字化也對不上**——
+`ギリシャ`（Greece）在兩邊都出現過，但一個是片假名一個是英文，任何字面比對都失效。
+**→ 後七批的固定動作：只要卡單盤名是「標題曲」型（盤名 = 曲目表裡的某一首），
+就把 Discogs 該 release 的 `tracklist` 裡**那一首的另一語言題**也丟進查詢寫法，
+並且優先走 artistId 目錄全掃而不是盤名直查。**
+⚠ 這一種與第 7 種（店面把盤名的片假名轉寫當掛名）是**相反方向**：第 7 種是轉寫，本種是**翻譯**。
+
+## 4175　⚠ ⚠ **新比對規則：軌數不相等不可當否決條件，要看「原盤軌序是不是店面軌序的前綴」**
+
+派工信逐字寫「**年份不可當否決條件，改用軌數**」（來自 c-174 的兩張救回）。
+**本批 4170 這一張證明軌數也不能當硬否決**：原盤 12 軌、店面 **15 軌**，差 3 軌，
+**若照「軌數不合就退」會直接漏掉一張真的**。
+正確的判準是：**把原盤軌序與店面軌序逐首對齊，看原盤的 N 軌是不是店面軌序的前綴（前 N 首同序同曲）**；
+是前綴就成立，多出來的尾巴是 CD 再發的 bonus。本張 12/12 同序、尾巴 3 首是 1970s 西洋曲翻唱（ユア・ソング／スマック・ウォーター・ジャック／バカラック・メドレー）的 bonus，形狀乾淨。
+**反過來，4173 的《六喩》4 軌 vs 原盤 5 軌，前綴檢查零首重疊，當場否決**——**同一把尺，兩個方向都好用。**
+→ **三條比對規則的正式順位（後七批照此）：(1) 軌序前綴比對 ＞ (2) copyright／artwork 番號 ＞ (3) 軌數 ＞ (4) 年份。**
+**年份與軌數都只能當排序線索，不能當否決。**
+
+## 4176　⚠ **新成因（第 14 種，操作面）：同一位日本樂團首領在 Apple 被拆成多個 artist 實體，只查一個必漏**
+
+本批實測的拆分數：
+- **石川晶＝ 6 個本人實體**（585618738／1506560116／1571811111／1782228407／1679734386 ＋ Count Buffalo 的 1556379994／1556380153），
+  且**團名寫法四種並存**：`Count Buffalos`／`Count Buffaloes`／`COUNT BUFFALO`／`ザ・ゲンチャーズ`，
+  **連大小寫與單複數都不一致**（`Akira Ishikawa and His Count Buffalos` vs `AKIRA ISHIKAWA & COUNT BUFFALO`）。
+- **ツトム・ヤマシタ＝ 2 個**（854230「クラシック」／1144351385「ポップ」），**1971 年的《Da》只掛在後者**。
+- **深町純＝ 2 個**（259060938／387193239），**兩份目錄只有 2 張重疊**。
+- **佐藤允彦＝ 2 個**（19063311／75534413 Satoh Masahiko Trio）。**村岡実＝ 2 個。前田憲男＝ 2 個。Gary Peacock＝ 3 個。**
+→ **後七批的固定動作：做藝人目錄全掃之前，一律先跑 `search?entity=musicArtist` 把該藝人的 artistId **全部**列出來
+（漢字與羅馬字兩種都要打），再逐個 `lookup?id=<artistId>&entity=album`。
+只掃一個 ID 就下「目錄裡沒有」的結論是不成立的。**
+
+## 4177　本層最有效的一招：`lookup?id=<artistId>&entity=album` 目錄全掃
+
+**12 張裡有 10 張是靠目錄全掃定案的**，兩張救回也都是（4164 是先命中盤名再回頭確認、4170 是直接在 2 張的目錄裡撞到）。
+理由：`search` 的命中與否受詞元、語言、轉寫、副標四重干擾（本批 `0→0` 與 `12→0` 各半，**兩種都不代表庫裡沒有**），
+而 `lookup?id=<artistId>&entity=album` **回的是該實體名下的完整專輯清單，`resultCount` 就是全量**，
+一眼就能判「在架／不在架」，**而且順手抓到同期在架的鄰居當對照**
+（Norio Maeda 1971《Shadow of the Highway》、Count Buffaloes 1972《Uganda》、Muraoka 1972《Modern Shakuhachi Method》），
+**用來排除「這一年整批沒數位化」的替代解釋。**
+⚠ 限制：**必須先解決 4176 的多實體問題**，否則全掃的「全」是假的。
+
+## 4178　`apple-candidates.md` 的逐筆覆核結果
+
+該檔對 12 張裡的 6 張給了候選，合計 **22 筆**。本層逐筆覆核：
+- **採用 1 筆**：Singers 3 的 `1782070992`（4164）。
+- **誤配 21 筆**：Metempsychosis 8 筆（全是同名金屬／電子樂團）、The Horizon 5 筆（全是同名新盤）、
+  三昧 6 筆（「三昧」兩字的詞元撞擊：ボカロ三昧／慈悲三昧水懺／念佛三昧／演歌三昧／呼吸三昧／レゲエ馬鹿三昧）、
+  蘇 1 筆（`So` 的詞元撞擊）、岡沢章 1 筆（`1508949052`——**這一筆其實是對的，但該檔給的依據「盤名直查＋年份」是錯的**：
+  盤名根本沒直查到，是 artistId 目錄撞到的；**依據錯、結論對，仍算覆核後才成立**）。
+**命中率 2/22 ＝ 9%**（c-174 是 0/4）。
+→ **該檔在本線連續三批都不可直接採信的結論成立。後七批照舊「當線索看、逐筆覆核」，不要改成信任。**
+⚠ 並且：**該檔標「目錄裡找不到」的 6 張（前田憲男／Dynamic Latin／鳴門／ルーパス／Maki VI／Introducing Jun Fukamachi），
+本層獨立全掃後結論一致**——**它的「找不到」比它的「找到」可靠得多。**
+
+## 4179　`tried` 欄的 `0→0` 與 `N→0` 在本批的意義覆核
+
+本批 12 張的分布：**`0→0` 七張**（前田憲男 jp/tw/fr 各 1 筆其實有回、Sunrise、三昧、Dynamic Latin、鳴門、蘇、ルーパス、Introducing Jun Fukamachi）、
+**`N→0` 五張**（Metempsychosis 6、Singers 3 12、Maki VI 12、岡沢章 2）。
+**兩張救回一張來自 `12→0`（Singers 3）、一張來自 `2→0`（岡沢章）**——
+⚠ **本批沒有任何一張是從 `0→0` 救回來的**，與 c-174「六張救回全部卡在盤名那一端」是不同的形狀。
+解讀：`N→0` 代表**詞元有命中、只是對不上**，通常是寫法問題，**值得重查**；
+`0→0` 代表**索引連詞元都沒命中**，在日本 1971–1975 這個年段**多半真的是庫裡沒有**。
+→ **後七批的派工可以用這個當排序：先重查 `N→0` 的，`0→0` 的直接進 artistId 目錄全掃、不要再花時間試寫法。**
+
+## 4180　十二種成因在本批的命中統計
+
+| 成因 | 命中張數 | 說明 |
+|---|---|---|
+| 1 市場真的沒有 | **10** | 本批壓倒性主因 |
+| 2 聯名拆成短掛名＋feat./伴奏團 | 1 | 岡沢章（4170） |
+| 3 `artistName` 是當地語言 | 1 | Singers 3（4164），派工信點名的「頭號嫌疑」**只中一次** |
+| 8 副標被店面截掉 | 1 | Singers 3（4164） |
+| 2b／2c／4／5／7／9／10／11／12 | **0** | 本批一次都沒出現 |
+| **13（新）標題曲的另一語言題名** | 1 | 岡沢章（4170），見 4174 |
+| **14（新，操作面）藝人被拆成多實體** | 6 | 見 4176 |
+
+⚠ **關鍵觀察：本批 12 張裡 10 張歸成因 1，比例（83%）遠高於 c-174。**
+原因不是查法退步：**c-174 的年段與廠牌組合數位化程度較高，本批 12 張裡有 9 張是
+「特定團體名義／特定子系列」的冷門原盤**（村岡実の New Dimension 三張、石川晶のラテン盤、
+浅川マキ 1974、深町純の Pro-Use Direct Cutting、前田憲男の和樂器協奏、山下勉の Columbia／London 兩張），
+**這些線在 Apple 連 artist 實體都不存在或整條缺席。**
+→ **後七批的預期：jp-1 線越往 1970 年代中後段的「單廠子系列」走，回撈率越低，這是資料現實不是查法問題。**
+
+## 4181　節流實測：1.35 秒在單支跑到約 90 次後開始出現 403
+
+派工信逐字寫「節流拉到 1.3–1.4 秒（c-174 與 c-176 用這個間隔各打 48–60 次，0 次 403／429）」。
+**本層在同一個間隔下打到第 ~90 次時連續吃了 3 次 403**（同一輪 r12 裡的三筆查詢），
+**退避 4／8／12 秒重試後全部 200，沒有一筆被誤讀成查無**。其後把間隔調到 **1.5 秒**，剩下的 ~40 次 0 次 403。
+→ **後七批的建議：**
+- **單支代理的 Apple 呼叫超過 60 次，就把間隔從 1.35 秒調到 1.5 秒**；
+- **403 一律退避重試（本層用 4000ms×(a+1)，最多 6 次），絕不讀成 `resultCount=0`**——
+  ⚠ 本層若把那 3 次 403 讀成查無，會誤判《Count Buffalo Latin Beats》與《Exotic Sound 石川》兩組查詢。
+- 附錄二第 2 點（「Apple 403 不成立」）**在本工作階段第四次被檢驗，這次是「成立但可退避」**，
+  **與第 3918 條第 8 點（32 次全 200）不衝突：差別在呼叫次數，不在時段。**
+
+## 4182　`country=jp` 是本線唯一有產出的店面（再次成立）
+
+本層 101 次呼叫裡 jp 88／us 13。**兩張救回全部出自 jp**；us 只用來做對照全掃
+（Maki Asakawa us 2 張 vs jp 5 張、Jun Fukamachi us 13 vs jp 15、Masahiko Satoh us 42 vs jp 44）。
+⚠ **us 店面在本批沒有任何一張是 jp 沒有的**，但 **us 的 `artistName` 是羅馬字、jp 是漢字／片假名**
+（Maki Asakawa↔浅川マキ、Jun Fukamachi↔深町純），**做掛名逐字證據時 us 仍有用**。
+gb／tw／de／fr 本層一次都沒打（探測層已證實六市場結果一致）。
+
+## 4183　再發改名檢查在本批的結果
+
+派工信第 2 節末段逐字要求「本批若有 1978 前後的碟查不到，先查它有沒有再發改過名」（Gugan 的形狀）。
+**本批 12 張的年份是 1971×4／1972×3／1973×2／1974×2／1975×1，沒有一張落在 1978 前後**，
+但本層仍對三張做了再發改名檢查：《蘇》（`So`）、《ルーパス》（`Lupus`／`狼座`）、《Introducing Jun Fukamachi》（對照《六喩》），
+**三張都沒有改名再發，Discogs 的 master 版本表也只有原壓**。
+→ **這一條在本批不成立，但檢查成本低（每張 1–2 次呼叫），後七批的 1976–1980 年段要繼續跑。**
+
+## 4184　`batch-progress/probe/previews.json` 的寫入方式與鍵數自檢
+
+**寫入前完整讀進記憶體、只改本批那 2 個鍵、整份寫回**，縮排沿用原檔的 **1 空格**（`JSON.stringify(p, null, 1)`）。
+寫入腳本加了三道硬檢查，任何一道不過就 `process.exit(1)` 不寫檔：
+(1) 鍵必須已存在；(2) 該鍵的 `batch` 必須逐字是 `c175`；(3) **寫入前後的鍵總數必須相等**。
+**實測：寫入前 3513 鍵、寫入後 3513 鍵，`batch` 欄全部正確，沒有動到任何別批的鍵。**
+`tried` 欄的處理：**保留探測層原有的六市場紀錄、只 append 本層的一筆**
+（`jp-recover:シンガーズ・スリー:6→1`、`jp-recover:artistLookup887722885:3→1`），**不覆寫。**
+⚠ **`previewUrl` 的取法**：collection 端點（`lookup?id=<collectionId>` 不帶 entity）**不回 previewUrl**，
+必須 `lookup?id=<collectionId>&entity=song` 取**第 1 軌**的 `previewUrl`——
+本層用本批既有的 ready 筆（`1508947949`《Something》）反查驗證過，**全線慣例就是第 1 軌**。
+
+## 4185　本層沒有動到的東西（邊界自述）
+
+只寫了 `batch-progress/probe/previews.json` 的 **2 個鍵**（Singers 3、岡沢章）與本檔的 **4161–4185** 段落
+（**append 前跑過 `ls` 與 `git show HEAD:batch-progress/c175/rulings.md` 兩者都看，兩邊都是 1219 行、內容一致，
+最高既有條號 3919，未覆寫既有任何一行**）。
+**未碰** `seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`batch-progress/c175/caa.json`、
+`desc-tools/batches/cards/c175-cards.json`（唯讀）、`prop-a.json`／`prop-b.json`、其他批次的任何檔案、KV、Firestore。
+**未執行任何 git 指令**（不 add／不 commit／不 push／未動索引；判斷檔案存在與否一律用 `ls` 與直接讀檔，未用 `git status`）。
+中間檔全部在 scratchpad 的 `c175rec/`（`q.mjs`／`batch.mjs`／`write.mjs`／`u1.json`／`r1.txt`–`r15.txt`）。
+Apple 101 次（jp 88／us 13），403 三次、429 零次，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；
+Discogs 免 token、自我節流 1 req/3.2s 共 11 次，未遇 429／503。
