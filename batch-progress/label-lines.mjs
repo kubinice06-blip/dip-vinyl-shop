@@ -156,6 +156,20 @@ export const LINES = {
   c171: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
   // c172 是本線最後的補遺：列舉失效的第六種（primary-type 未設）與第七種（enum 該列 year 為 null）各一張。
   c172: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）' } },
+  // 2026-09-21 店主指示「Jp1 先開 切批次 先做 10 批」。
+  // jp-1 ＝ Victor／JVC、東芝 EMI／Express、日本コロムビア／Better Days／Takt、King／Paddle Wheel。
+  // c-173～c-182 切的是「本土爵士盤、1989 年前」那 408 張，依年份排序平均分批，
+  // 所以每批橫跨四家、scene 用單一字串標年代段，不分 a／b。
+  c173: { lineType: '深掘', scene: '日本爵士四大廠 1958–1969' },
+  c174: { lineType: '深掘', scene: '日本爵士四大廠 1969–1971' },
+  c175: { lineType: '深掘', scene: '日本爵士四大廠 1971–1973' },
+  c176: { lineType: '深掘', scene: '日本爵士四大廠 1973–1977' },
+  c177: { lineType: '深掘', scene: '日本爵士四大廠 1977–1979' },
+  c178: { lineType: '深掘', scene: '日本爵士四大廠 1979–1981' },
+  c179: { lineType: '深掘', scene: '日本爵士四大廠 1981–1982' },
+  c180: { lineType: '深掘', scene: '日本爵士四大廠 1982–1984' },
+  c181: { lineType: '深掘', scene: '日本爵士四大廠 1984–1987' },
+  c182: { lineType: '深掘', scene: '日本爵士四大廠 1987–1989' },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
