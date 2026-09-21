@@ -29,7 +29,7 @@ const DIR = path.join(ROOT, 'batch-progress/probe');
 const BATCHES = process.argv.slice(2).length ? process.argv.slice(2)
   : ['c51a', 'c51b', 'c51c', 'c51d', 'cseaa', 'cseab', 'cseac'];
 
-import { norm, SUFFIX, titleOk, artistOk, hasNonLatin, translit, DECO, canon, looseTitleOk, looseArtistOk, termsFor } from './match-lib.mjs';
+import { norm, SUFFIX, titleOk, artistOk, hasNonLatin, translit, DECO, canon, looseTitleOk, looseArtistOk, termsFor, aliasParts } from './match-lib.mjs';
 // 比對規則已抽到 match-lib.mjs（裁定第 90 條），改規則請先跑 test-match.mjs。
 // c-SEA 三批先試在地目錄再回退國際；c-51 是西方與東亞盤，us 命中率最高。
 const SEA = ['id', 'ph', 'th', 'vn', 'my', 'sg', 'us', 'gb', 'jp'];
@@ -322,8 +322,16 @@ for (const c of cards) {
     // 比對用的候選名：原文與轉寫都算數，否則轉寫查到了也會被 titleOk 擋掉。
     // queryAlias 可能是盤名的別名（見 match-lib 的 termsFor 註解），比對時也要算進候選盤名，
     // 否則字串查到了、titleOk 這一關還是會把它擋掉。
-    const albumCands = [c.album, translit(c.album), c.queryAlias].filter(Boolean);
-    const artistCands = [c.artist, c.queryAlias, translit(c.artist)].filter(Boolean);
+    // ⚠ 2026-09-21（c-176 回撈層抓到，主線第 1900-B 條）：**這兩行原本把整串 `queryAlias`
+    // 當成一個候選名**，而 `queryAlias` 是用 `；` 串起來的多個別名
+    // （逐字例：`Story Of Wind Behind Left；Story of Wind Behind Left；風の遺した物語；Masahiko Togashi；…`）。
+    // `termsFor()` 那一端是用 `aliasParts()` 切開才送出去查的，**查得到，卻在這一關被擋掉**
+    // ——`titleOk(整串, 'Story of Wind Behind Left')` 永遠 false。
+    // 本批 6 張救回有 4 張是這個形狀（翻譯型盤名、平假名掛名），**`queryAlias` 裡本來就寫著命中的寫法**。
+    // 改成與 `termsFor()` 同樣用 `aliasParts()` 切開後逐段比對。
+    const aparts = aliasParts(c.queryAlias);
+    const albumCands = [c.album, translit(c.album), ...aparts].filter(Boolean);
+    const artistCands = [c.artist, translit(c.artist), ...aparts].filter(Boolean);
     let hits = [];
     let raw = 0;
     // 2026-09-05：`raw` 的初值 0 會讓「每個 term 都 HTTP 失敗」印成 `front:0→0`，
