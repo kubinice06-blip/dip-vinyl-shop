@@ -166,6 +166,13 @@ RG title 卻取了再發那一筆**。slice 的 `titleCheck` 欄已掛好：
    **非爵士就退，理由與命中的條號寫進 `rulings.md`。退件不補張。**
 6. **`releaseType`**：列舉層已濾掉 Compilation／Soundtrack；**`live: true` 的收但要標**（本窗 45 張）。
    ⚠ **第 397 條：`secondary-types` 兩個方向都會漏**——盤名帶「ライヴ」「実況」「at ○○」的要再看一次。
+6b. ⚠ ⚠ **再發版本數一律以 Discogs master 的 `versions` 為準，MB 的 release 數不算數**
+   （第 1879-B 條）。**連續兩批都在這裡出錯**：c-173 的《Charlie Mariano & Sadao Watanabe》
+   被寫成「無再發」（Discogs master 644584 實有 10 版，含 1977 美國 Catalyst 盤）；
+   c-174 b 組 **7 張有 5 張（71%）低估版本數**——《Bamboo》記 5 版、**實際 15 版**；
+   《Down By The Naked City》的 `curatorRisk` 逐字寫「MB 與 Discogs 都只有 1971 原壓一版」、實際 3 版。
+   **根因是只數 `mbNote` 裡的 MB release。**
+
 7. **廠牌欄**：`entities` 是 MB 的廠牌實體名，**不等於盤面印的廠牌**
    （imprint 與母公司常互掛；Blue Note 線的第 2487 條就是這個形狀）。
    **`label` 欄要寫盤面實際廠牌＋目錄號**，以 Discogs `releases/<id>` 的 `labels` 欄為準，逐字引。
