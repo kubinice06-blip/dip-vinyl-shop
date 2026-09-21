@@ -18,7 +18,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -28,7 +28,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "風媒花",
+   "firstReleaseDate": "1979",
+   "earliestRelease": {
+    "date": "1979",
+    "title": "風媒花",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "風媒花"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "富樫雅彦・鈴木勲",
@@ -49,15 +62,48 @@
   "nReleases": null,
   "note": "藝人池中有18張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973"
+   ]
   },
   "artistVariants": [
-   "富樫雅彦・鈴木勲"
+   "富樫雅彦・鈴木勲",
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi",
+   "鈴木勲",
+   "Suzuki, Isao",
+   "鈴木勲夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "陽光",
+   "firstReleaseDate": "1979",
+   "earliestRelease": {
+    "date": "1979",
+    "title": "陽光",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "陽光",
+    "A Day of the Sun"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Dave Grusin & The GRP All-Stars with special guest Sadao Watanabe",
@@ -77,15 +123,50 @@
   "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Dave Grusin & The GRP All-Stars with special guest Sadao Watanabe"
+   "Dave Grusin & The GRP All-Stars with special guest Sadao Watanabe",
+   "Dave Grusin",
+   "Grusin, Dave",
+   "Dave Grosin",
+   "Dave Grushin",
+   "Dave Grusinch",
+   "Dave Grusind",
+   "Dave Grusing",
+   "Dave Grusinn",
+   "Dave Grusint",
+   "Dave Grussin",
+   "Dave Grusyn",
+   "Dave Gursin",
+   "Dave Gusin",
+   "Davey Grusin",
+   "David Grusin",
+   "Davy Grusin",
+   "Grusin",
+   "Robert David",
+   "Robert David Grusin",
+   "Robert Grusin",
+   "The GRP All-Stars",
+   "GRP All-Stars, The"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Live in Japan",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Live in Japan",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Live in Japan"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "NATIVE SON",
@@ -105,7 +186,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -113,7 +194,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Coast to Coast (Live in USA)",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Coast to Coast (Live in USA)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Coast to Coast (Live in USA)"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Sunburst",
@@ -133,7 +227,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -141,7 +235,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Sunburst",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Sunburst",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Sunburst"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "高橋真梨子",
@@ -161,21 +268,35 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "高橋真梨子",
    "Takahashi, Mariko",
-   "髙橋真梨子",
    "Mariko Takahashi",
-   "高橋まり",
+   "たかはし まりこ",
    "高橋 真梨子",
-   "たかはし まりこ"
+   "高橋まり",
+   "髙橋真梨子"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Monologue",
+   "firstReleaseDate": "1980-08-21",
+   "earliestRelease": {
+    "date": "1980-08-21",
+    "title": "Monologue",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Monologue",
+    "モノローグ"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "日野皓正",
@@ -214,13 +335,26 @@
   "artistVariants": [
    "日野皓正",
    "Hino, Terumasa",
+   "Terumasa Hino",
    "ひの てるまさ",
-   "日野 皓正",
-   "Terumasa Hino"
+   "日野 皓正"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Daydream",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Daydream",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Daydream"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Anli Sugano",
@@ -240,15 +374,30 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Anli Sugano"
+   "Anli Sugano",
+   "アンリ菅野",
+   "Sugano, Anli"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Just Groovin'",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Just Groovin'",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Just Groovin'"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "赤尾三千子",
@@ -268,15 +417,29 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "赤尾三千子"
+   "赤尾三千子",
+   "Akao, Michiko"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "横笛幻想",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "横笛幻想",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "横笛幻想"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -304,12 +467,25 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "ONE",
+   "firstReleaseDate": "1980-04-05",
+   "earliestRelease": {
+    "date": "1980-04-05",
+    "title": "ONE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ONE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "たかしまあきひこ",
@@ -329,7 +505,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -339,7 +515,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "野獣死すべし (The Beast Must Die) (Original Soundtrack)",
+   "firstReleaseDate": "1980-09",
+   "earliestRelease": {
+    "date": "1980-09",
+    "title": "野獣死すべし (The Beast Must Die) (Original Soundtrack)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "野獣死すべし (The Beast Must Die) (Original Soundtrack)"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "向井滋春",
@@ -359,7 +548,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -369,7 +558,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Pleasure",
+   "firstReleaseDate": "1980-06",
+   "earliestRelease": {
+    "date": "1980-06",
+    "title": "Pleasure",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Pleasure"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "坂田明トリオ",
@@ -389,7 +591,7 @@
   "nReleases": null,
   "note": "藝人池中有2張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -399,7 +601,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Pochi",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Pochi",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Pochi"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "上田力",
@@ -419,7 +634,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -428,7 +643,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Flying Easy",
+   "firstReleaseDate": "1980-09",
+   "earliestRelease": {
+    "date": "1980-09",
+    "title": "Flying Easy",
+    "country": ""
+   },
+   "titlesSeen": [
+    "Flying Easy"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Shunzo Ohno",
@@ -448,17 +676,30 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "Shunzo Ohno",
-   "Shunzo Ohno Quartet",
-   "Ohno, Shunzo, Quartet"
+   "大野俊三",
+   "Ohno, Shunzo"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Antares",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Antares",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Antares"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "益田幹夫",
@@ -478,18 +719,31 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "益田幹夫",
    "Masuda, Mikio",
-   "益田　幹夫",
-   "Mikio Masuda"
+   "Mikio Masuda",
+   "益田　幹夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Silver Shadow",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Silver Shadow",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Silver Shadow"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "森園勝敏",
@@ -509,7 +763,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -518,7 +772,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Escape",
+   "firstReleaseDate": "1980-04-06",
+   "earliestRelease": {
+    "date": "1980-04-06",
+    "title": "Escape",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Escape"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "清水信之",
@@ -538,15 +805,33 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "清水信之"
+   "清水信之",
+   "Shimizu, Nobuyuki",
+   "Nobuyuki Shimizu",
+   "SIMIZU Nobuyuki",
+   "しみず のぶゆき",
+   "清水 信之"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "CORNER TOP",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "CORNER TOP",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "CORNER TOP"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "清水靖晃",
@@ -578,7 +863,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Berlin",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "Berlin",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Berlin"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "富樫雅彦",
@@ -622,7 +920,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "セッション・イン・パリ VOL.2 彩られた夢",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "セッション・イン・パリ VOL.2 彩られた夢",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "セッション・イン・パリ VOL.2 彩られた夢"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "富樫雅彦&インプロヴィゼーション・ジャズ・オーケストラ",
@@ -642,15 +953,31 @@
   "nReleases": null,
   "note": "藝人池中有12張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "富樫雅彦&インプロヴィゼーション・ジャズ・オーケストラ"
+   "富樫雅彦&インプロヴィゼーション・ジャズ・オーケストラ",
+   "Masahiko Togashi & His Improvisation Jazz Orchestra",
+   "Togashi, Masahiko, & Improvisation Jazz Orchestra, His",
+   "Masahiko Togashi & Improvisation Jazz Orchestra"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "アル・アラーフ",
+   "firstReleaseDate": "1980",
+   "earliestRelease": {
+    "date": "1980",
+    "title": "アル・アラーフ",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "アル・アラーフ"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Keiko Goto",
@@ -670,15 +997,31 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Keiko Goto"
+   "Keiko Goto",
+   "後藤啓子",
+   "Gotō, Keiko",
+   "後藤 啓子"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Natural Woman",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Natural Woman",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Natural Woman"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "阿川泰子",
@@ -698,22 +1041,36 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "阿川泰子",
    "Agawa, Yasuko",
-   "Yasuko Lovebird",
    "MISS A",
+   "Yasuko Lovebird",
    "Yasuko, Love‐Bird",
-   "麻里 とも恵",
    "佐藤康子",
-   "麻理ともえ"
+   "麻理ともえ",
+   "麻里 とも恵"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Sunglow",
+   "firstReleaseDate": "1981-06-21",
+   "earliestRelease": {
+    "date": "1981-06-21",
+    "title": "SUNGLOW",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "SUNGLOW",
+    "Sunglow"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "奥慶一",
@@ -734,7 +1091,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -745,7 +1102,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "THE GOOD BAD GIRL",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "THE GOOD BAD GIRL",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "THE GOOD BAD GIRL",
+    "The Good Bad Girl"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "高橋真梨子",
@@ -766,21 +1137,34 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "高橋真梨子",
    "Takahashi, Mariko",
-   "髙橋真梨子",
    "Mariko Takahashi",
-   "高橋まり",
+   "たかはし まりこ",
    "高橋 真梨子",
-   "たかはし まりこ"
+   "高橋まり",
+   "髙橋真梨子"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Tenderness",
+   "firstReleaseDate": "1981-03-05",
+   "earliestRelease": {
+    "date": "1981-03-05",
+    "title": "Tenderness",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Tenderness"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Hi‐Fi Set",
@@ -800,17 +1184,30 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "Hi‐Fi Set",
-   "ハイ・ファイ・セット",
-   "ハイファイセット"
+   "ハイファイセット",
+   "ハイ・ファイ・セット"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "3 NOTES",
+   "firstReleaseDate": "1981-06-21",
+   "earliestRelease": {
+    "date": "1981-06-21",
+    "title": "3 NOTES",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "3 NOTES"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "赤尾三千子",
@@ -830,15 +1227,29 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "赤尾三千子"
+   "赤尾三千子",
+   "Akao, Michiko"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "風舞",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "風舞",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "風舞"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Kazumi Band",
@@ -858,15 +1269,39 @@
   "nReleases": null,
   "note": "藝人池中有5張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜渡辺香津美｜To Chi Ka｜1980",
+    "seed｜渡辺香津美｜KYLYN｜1979",
+    "seed｜渡辺香津美｜Olive's Step｜1977",
+    "seed｜渡辺香津美｜Dogatana｜1981",
+    "seed｜渡辺香津美｜Village In Bubbles｜1978"
+   ]
   },
   "artistVariants": [
-   "Kazumi Band"
+   "Kazumi Band",
+   "渡辺香津美",
+   "Watanabe, Kazumi",
+   "Kazumi Watanabe",
+   "わたなべ かづみ",
+   "渡辺 香津美"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Talk You All Tight",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Talk You All Tight",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Talk You All Tight"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Mariah",
@@ -897,7 +1332,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "MARGINAL LOVE",
+   "firstReleaseDate": "1981-10-25",
+   "earliestRelease": {
+    "date": "1981-10-25",
+    "title": "MARGINAL LOVE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "MARGINAL LOVE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Ryojiro Furusawa, Lee Oskar",
@@ -917,15 +1365,37 @@
   "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Ryojiro Furusawa, Lee Oskar"
+   "Ryojiro Furusawa, Lee Oskar",
+   "古澤良治郎",
+   "Furusawa, Ryojiro",
+   "Ryojiro Furusawa",
+   "Lee Oskar",
+   "Oskar, Lee",
+   "Lee Levitin",
+   "Lee Oskar Levitin"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Ano Koro",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "あのころ(Ano Koro)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "あのころ(Ano Koro)",
+    "Ano Koro",
+    "Free"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "Wha-ha-ha",
@@ -945,7 +1415,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -953,7 +1423,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Live-Dub",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Live-Dub",
+    "country": ""
+   },
+   "titlesSeen": [
+    "Live-Dub"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Wha-ha-ha",
@@ -974,7 +1457,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -982,7 +1465,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "下駄はいてこなくちゃ",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "下駄はいてこなくちゃ",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "下駄はいてこなくちゃ",
+    "下駄はいてこなくちゃ+1"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Wha-ha-ha",
@@ -1002,7 +1499,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1010,7 +1507,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "死ぬ時は別",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "死ぬ時は別",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "死ぬ時は別"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "井野信義",
@@ -1030,7 +1540,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1039,7 +1549,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "MOUNTAIN",
+   "firstReleaseDate": "1981-04-25",
+   "earliestRelease": {
+    "date": "1981-04-25",
+    "title": "MOUNTAIN",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "MOUNTAIN"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "上田力",
@@ -1059,7 +1582,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1068,7 +1591,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Sunlight Whisper",
+   "firstReleaseDate": "1981-04-25",
+   "earliestRelease": {
+    "date": "1981-04-25",
+    "title": "Sunlight Whisper",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Sunlight Whisper"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "森山威男",
@@ -1100,7 +1636,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Smile",
+   "firstReleaseDate": "1981-03-25",
+   "earliestRelease": {
+    "date": "1981-03-25",
+    "title": "Smile",
+    "country": ""
+   },
+   "titlesSeen": [
+    "Smile"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "森山威男カルテット",
@@ -1134,6 +1683,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "スマイル",
+   "firstReleaseDate": "1981-03-25",
+   "earliestRelease": {
+    "date": "1981-03-25",
+    "title": "スマイル",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "スマイル",
+    "Smile"
+   ],
+   "note": ""
+  }
  }
 ]

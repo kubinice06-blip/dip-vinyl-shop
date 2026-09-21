@@ -17,15 +17,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Kanako Wada"
+   "Kanako Wada",
+   "和田加奈子",
+   "Wada, Kanako",
+   "眞木加奈子"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Quiet Storm",
+   "firstReleaseDate": "1987-03-04",
+   "earliestRelease": {
+    "date": "1987-03-04",
+    "title": "QUIET STORM",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "QUIET STORM",
+    "Quiet Storm"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Masayoshi Takanaka",
@@ -45,15 +62,36 @@
   "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜高中正義｜Seychelles｜1976",
+    "seed｜高中正義｜虹伝説 The Rainbow Goblins｜1981",
+    "seed｜高中正義｜Jolly Jive｜1979"
+   ]
   },
   "artistVariants": [
-   "Masayoshi Takanaka"
+   "Masayoshi Takanaka",
+   "高中正義",
+   "Takanaka, Masayoshi",
+   "Takanaka Masayoshi",
+   "高中 正義"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "RENDEZ-VOUS",
+   "firstReleaseDate": "1987-06-05",
+   "earliestRelease": {
+    "date": "1987-06-05",
+    "title": "RENDEZ-VOUS",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "RENDEZ-VOUS"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Toshiyuki Honda",
@@ -73,15 +111,31 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Toshiyuki Honda"
+   "Toshiyuki Honda",
+   "本多俊之",
+   "Honda, Toshiyuki",
+   "Toshiyuka Honda"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Radio Club",
+   "firstReleaseDate": "1987-07-22",
+   "earliestRelease": {
+    "date": "1987-07-22",
+    "title": "Radio Club",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Radio Club"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "加藤和彦",
@@ -101,7 +155,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -110,12 +164,25 @@
    "Kazuhiko Kato",
    "Kazuhiko Katoh",
    "Kazuhiko Katou",
-   "加藤 和彦",
-   "かとう かずひこ"
+   "かとう かずひこ",
+   "加藤 和彦"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "マルタの鷹",
+   "firstReleaseDate": "1987-12-05",
+   "earliestRelease": {
+    "date": "1987-12-05",
+    "title": "マルタの鷹",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "マルタの鷹"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "笠井紀美子",
@@ -161,7 +228,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Perigo A Noite",
+   "firstReleaseDate": "1987",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "Perigo A Noite",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Perigo A Noite"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山本達彦",
@@ -181,7 +261,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -191,7 +271,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Boom Days",
+   "firstReleaseDate": "1987",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "Boom Days",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Boom Days"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -219,12 +312,25 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "UNDERGROUND",
+   "firstReleaseDate": "1987-12-25",
+   "earliestRelease": {
+    "date": "1987-12-25",
+    "title": "UNDERGROUND",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "UNDERGROUND"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -252,12 +358,25 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "こぼれる黄金の砂 -What it be like-",
+   "firstReleaseDate": "1987-02-25",
+   "earliestRelease": {
+    "date": "1987-02-25",
+    "title": "こぼれる黄金の砂 -What it be like-",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "こぼれる黄金の砂 -What it be like-"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Kazumi Watanabe",
@@ -277,15 +396,38 @@
   "nReleases": null,
   "note": "藝人池中有5張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜渡辺香津美｜To Chi Ka｜1980",
+    "seed｜渡辺香津美｜KYLYN｜1979",
+    "seed｜渡辺香津美｜Olive's Step｜1977",
+    "seed｜渡辺香津美｜Dogatana｜1981",
+    "seed｜渡辺香津美｜Village In Bubbles｜1978"
+   ]
   },
   "artistVariants": [
-   "Kazumi Watanabe"
+   "Kazumi Watanabe",
+   "渡辺香津美",
+   "Watanabe, Kazumi",
+   "わたなべ かづみ",
+   "渡辺 香津美"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "The Spice of Life",
+   "firstReleaseDate": "1987-03-25",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "The Spice of Life",
+    "country": "US"
+   },
+   "titlesSeen": [
+    "The Spice of Life"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "鈴木茂",
@@ -305,7 +447,7 @@
   "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -317,7 +459,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Sunset Hills Hotel Reservation Calendar",
+   "firstReleaseDate": "1987-11-21",
+   "earliestRelease": {
+    "date": "1987-11-21",
+    "title": "Sunset Hills Hotel Reservation Calendar",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Sunset Hills Hotel Reservation Calendar",
+    "SUNSET HILLS HOTEL RESERVATION CALENDER"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Bobby Lyle Trio",
@@ -337,7 +493,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -346,7 +502,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Night Breeze",
+   "firstReleaseDate": "1987",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "Night Breeze",
+    "country": "DE"
+   },
+   "titlesSeen": [
+    "Night Breeze"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "ジョージ川口",
@@ -366,7 +535,7 @@
   "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -377,7 +546,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Maiden Voyage: The Music of Herbie Hancock",
+   "firstReleaseDate": "1987",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "Maiden Voyage: The Music of Herbie Hancock",
+    "country": "US"
+   },
+   "titlesSeen": [
+    "Maiden Voyage: The Music of Herbie Hancock"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山形由美",
@@ -397,7 +579,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -406,7 +588,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "wind for mind",
+   "firstReleaseDate": "1987-09-21",
+   "earliestRelease": {
+    "date": "1987-09-21",
+    "title": "wind for mind",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "wind for mind"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "John Kaizan Neptune",
@@ -426,23 +621,36 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "John Kaizan Neptune",
    "Neptune, John Kaizan",
-   "ネプチューン海山",
-   "ジョン・海山・ネプチューン",
-   "John Neptune",
-   "John David Neptune",
    "J.K. Neptune",
+   "John David Neptune",
+   "John Neptune",
    "John 海山 Neptune",
-   "ジョン海山ネプチューン"
+   "ジョン・海山・ネプチューン",
+   "ジョン海山ネプチューン",
+   "ネプチューン海山"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Tokyosphere",
+   "firstReleaseDate": "1988",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "Tokyosphere",
+    "country": "US"
+   },
+   "titlesSeen": [
+    "Tokyosphere"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Malta",
@@ -462,7 +670,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -471,7 +679,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Obsession",
+   "firstReleaseDate": "1988-05-11",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "Obsession",
+    "country": "US"
+   },
+   "titlesSeen": [
+    "Obsession"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "MALTA",
@@ -491,7 +712,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -499,7 +720,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "My Hit & Run",
+   "firstReleaseDate": "1988-12-07",
+   "earliestRelease": {
+    "date": "1988-12-07",
+    "title": "My Hit & Run",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "My Hit & Run"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Masami Nakagawa",
@@ -519,15 +753,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Masami Nakagawa"
+   "Masami Nakagawa",
+   "中川昌三",
+   "Nakagawa, Masami",
+   "Shōzō Nakagawa",
+   "中川 昌三"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Touch of Spring",
+   "firstReleaseDate": "1988-03-09",
+   "earliestRelease": {
+    "date": "1988-03-09",
+    "title": "Touch of Spring",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Touch of Spring"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Mikio Masuda",
@@ -547,15 +798,31 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Mikio Masuda"
+   "Mikio Masuda",
+   "益田幹夫",
+   "Masuda, Mikio",
+   "益田　幹夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Smokin' Night",
+   "firstReleaseDate": "1988",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "Smokin' Night",
+    "country": "US"
+   },
+   "titlesSeen": [
+    "Smokin' Night"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "国府弘子",
@@ -575,7 +842,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -585,7 +852,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Globe Trotting With Hiroko Kokubu",
+   "firstReleaseDate": "1988-11-21",
+   "earliestRelease": {
+    "date": "1988-11-21",
+    "title": "Globe Trotting With Hiroko Kokubu",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Globe Trotting With Hiroko Kokubu",
+    "グローブ・トロッティング"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Masayoshi Takanaka",
@@ -605,15 +886,36 @@
   "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜高中正義｜Seychelles｜1976",
+    "seed｜高中正義｜虹伝説 The Rainbow Goblins｜1981",
+    "seed｜高中正義｜Jolly Jive｜1979"
+   ]
   },
   "artistVariants": [
-   "Masayoshi Takanaka"
+   "Masayoshi Takanaka",
+   "高中正義",
+   "Takanaka, Masayoshi",
+   "Takanaka Masayoshi",
+   "高中 正義"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "HOT PEPPER",
+   "firstReleaseDate": "1988-07-06",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "HOT PEPPER",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "HOT PEPPER"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山本達彦",
@@ -633,7 +935,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -643,7 +945,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Heart Notes",
+   "firstReleaseDate": "1988",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "Heart Notes",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Heart Notes"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -671,12 +986,26 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Nothing at all to lose",
+   "firstReleaseDate": "1988-12-02",
+   "earliestRelease": {
+    "date": "1988-12-02",
+    "title": "Nothing at all to lose",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Nothing at all to lose",
+    "Nothing at All to Lose"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -704,12 +1033,25 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "幻の女たち",
+   "firstReleaseDate": "1988-05-25",
+   "earliestRelease": {
+    "date": "1988-05-25",
+    "title": "幻の女たち",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "幻の女たち"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "小田陽子",
@@ -730,7 +1072,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -741,7 +1083,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Half‐Swing Romance",
+   "firstReleaseDate": "1988-09-01",
+   "earliestRelease": {
+    "date": "1988-09-01",
+    "title": "Half‐Swing Romance",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Half‐Swing Romance",
+    "Half-Swing Romance"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "ウエイブ",
@@ -761,7 +1117,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -770,7 +1126,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "ウエイブII",
+   "firstReleaseDate": "1988-01-21",
+   "earliestRelease": {
+    "date": "1988-01-21",
+    "title": "ウエイブII",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ウエイブII"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "鮎川麻弥",
@@ -790,18 +1159,31 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "鮎川麻弥",
    "Ayukawa, Mami",
-   "加藤雅弥",
-   "Mami Ayukawa"
+   "Mami Ayukawa",
+   "加藤雅弥"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "SMILE",
+   "firstReleaseDate": "1988-10-21",
+   "earliestRelease": {
+    "date": "1988-10-21",
+    "title": "SMILE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "SMILE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "MALTA",
@@ -821,7 +1203,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -829,7 +1211,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Sapphire",
+   "firstReleaseDate": "1989-05-21",
+   "earliestRelease": {
+    "date": "1989-05-21",
+    "title": "Sapphire",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Sapphire"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Masami Nakagawa",
@@ -849,15 +1244,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Masami Nakagawa"
+   "Masami Nakagawa",
+   "中川昌三",
+   "Nakagawa, Masami",
+   "Shōzō Nakagawa",
+   "中川 昌三"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Four Seasons",
+   "firstReleaseDate": "1989-12-06",
+   "earliestRelease": {
+    "date": "1989-12-06",
+    "title": "Four Seasons",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Four Seasons"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "阿川泰子",
@@ -878,22 +1290,35 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "阿川泰子",
    "Agawa, Yasuko",
-   "Yasuko Lovebird",
    "MISS A",
+   "Yasuko Lovebird",
    "Yasuko, Love‐Bird",
-   "麻里 とも恵",
    "佐藤康子",
-   "麻理ともえ"
+   "麻理ともえ",
+   "麻里 とも恵"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "DANCING LOVERS’ NIGHT",
+   "firstReleaseDate": "1989-11-21",
+   "earliestRelease": {
+    "date": "1989-11-21",
+    "title": "DANCING LOVERS’ NIGHT",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "DANCING LOVERS’ NIGHT"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "響野夏子",
@@ -913,7 +1338,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -922,7 +1347,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Qui Qui",
+   "firstReleaseDate": "1989-09-06",
+   "earliestRelease": {
+    "date": "1989-09-06",
+    "title": "Qui Qui",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Qui Qui"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Masayoshi Takanaka",
@@ -942,15 +1380,36 @@
   "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜高中正義｜Seychelles｜1976",
+    "seed｜高中正義｜虹伝説 The Rainbow Goblins｜1981",
+    "seed｜高中正義｜Jolly Jive｜1979"
+   ]
   },
   "artistVariants": [
-   "Masayoshi Takanaka"
+   "Masayoshi Takanaka",
+   "高中正義",
+   "Takanaka, Masayoshi",
+   "Takanaka Masayoshi",
+   "高中 正義"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "GAPS!",
+   "firstReleaseDate": "1989",
+   "earliestRelease": {
+    "date": "1989",
+    "title": "GAPS!",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "GAPS!"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -978,12 +1437,25 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Stranger's Touch",
+   "firstReleaseDate": "1989-12-13",
+   "earliestRelease": {
+    "date": "1989-12-13",
+    "title": "Stranger's Touch",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Stranger's Touch"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -1011,12 +1483,25 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "夜のカーニバル",
+   "firstReleaseDate": "1989-04-26",
+   "earliestRelease": {
+    "date": "1989-04-26",
+    "title": "夜のカーニバル",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "夜のカーニバル"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Eiji Kitamura Quintet",
@@ -1036,15 +1521,42 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜北村英治｜Happy Cooking｜1973",
+    "seed｜北村英治｜Because of You｜1976",
+    "seed｜北村英治｜Sophisticated Lady｜1978",
+    "seed｜北村英治｜April Date｜1979",
+    "seed｜北村英治｜Happy Cooking Vol. II｜1973",
+    "c134｜北村英治｜Happy Cooking｜1973",
+    "c134｜北村英治｜Because of You｜1976",
+    "c134｜北村英治｜Sophisticated Lady｜1978",
+    "c134｜北村英治｜April Date｜1979",
+    "c134｜北村英治｜Happy Cooking Vol. II｜1973"
+   ]
   },
   "artistVariants": [
-   "Eiji Kitamura Quintet"
+   "Eiji Kitamura Quintet",
+   "北村英治",
+   "Kitamura, Eiji",
+   "Eiji Kitamura"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Japanese Jazz File",
+   "firstReleaseDate": "1989-08-21",
+   "earliestRelease": {
+    "date": "1989-08-21",
+    "title": "Japanese Jazz File",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Japanese Jazz File"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Tsuyoshi Yamamoto",
@@ -1064,16 +1576,33 @@
   "nReleases": null,
   "note": "藝人池中有10張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜山本剛｜Star Dust｜1977"
+   ]
   },
   "artistVariants": [
    "Tsuyoshi Yamamoto",
-   "Tsuyoshi Yamamoto Trio"
+   "山本剛",
+   "Yamamoto, Tsuyoshi",
+   "山本 剛"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Ryu's Bar 気ままにいい夜",
+   "firstReleaseDate": "1989-08-05",
+   "earliestRelease": {
+    "date": "1989-08-05",
+    "title": "Ryu's Bar 気ままにいい夜",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Ryu's Bar 気ままにいい夜"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "篠崎正嗣",
@@ -1093,18 +1622,31 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "篠崎正嗣",
    "Shinozaki, Masatsugu",
    "Masatsugu Shinozaki",
-   "篠崎 正嗣",
-   "しのざきまさつぐ"
+   "しのざきまさつぐ",
+   "篠崎 正嗣"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "WATER & VIOLIN",
+   "firstReleaseDate": "1989-06-21",
+   "earliestRelease": {
+    "date": "1989-06-21",
+    "title": "WATER & VIOLIN",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "WATER & VIOLIN"
+   ],
+   "note": ""
+  }
  }
 ]

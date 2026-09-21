@@ -17,15 +17,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Shigeharu Mukai Quintet"
+   "Shigeharu Mukai Quintet",
+   "向井滋春",
+   "Mukai, Shigeharu",
+   "Shigeharu Mukai"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "A Head Wind",
+   "firstReleaseDate": "1975-12-25",
+   "earliestRelease": {
+    "date": "1975-12-25",
+    "title": "A Head Wind",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "A Head Wind",
+    "むかい風"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Shigeo Sekito",
@@ -45,15 +62,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Shigeo Sekito"
+   "Shigeo Sekito",
+   "関藤繁生",
+   "Sekito, Shigeo",
+   "セキトオ・シゲオ"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Special Sound Series Vol. 2",
+   "firstReleaseDate": "1975-01",
+   "earliestRelease": {
+    "date": "1975-01",
+    "title": "華麗なるエレクトーン (ザ・ワード)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "華麗なるエレクトーン (ザ・ワード)",
+    "華麗なるエレクトーン −ザ・ワード−"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "しばたはつみ",
@@ -74,19 +108,33 @@
   "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "しばたはつみ",
    "Shibata, Hatsumi",
    "Hatsumi Shibata",
-   "はつみかんな",
-   "しばた はつみ"
+   "しばた はつみ",
+   "はつみかんな"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "SINGER LADY",
+   "firstReleaseDate": "1975-11-25",
+   "earliestRelease": {
+    "date": "1975-11-25",
+    "title": "SINGER LADY",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "SINGER LADY",
+    "Singer Lady"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "花柳幻舟",
@@ -106,7 +154,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -115,7 +163,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "残・曽根崎心中",
+   "firstReleaseDate": "1975",
+   "earliestRelease": {
+    "date": "1975",
+    "title": "残・曽根崎心中",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "残・曽根崎心中"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "関藤繁生",
@@ -135,18 +196,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "関藤繁生",
    "Sekito, Shigeo",
-   "セキトオ・シゲオ",
-   "Shigeo Sekito"
+   "Shigeo Sekito",
+   "セキトオ・シゲオ"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "華麗なるエレクトーン –キャッチ・イン・アリス– (Special Sound Series Vol.1)",
+   "firstReleaseDate": "1975-01-25",
+   "earliestRelease": {
+    "date": "1975-01-25",
+    "title": "華麗なるエレクトーン (キャッチ・イン・アリス)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "華麗なるエレクトーン (キャッチ・イン・アリス)",
+    "華麗なるエレクトーン –キャッチ・イン・アリス– (Special Sound Series Vol.1)"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "富樫雅彦",
@@ -189,7 +264,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "風の遺した物語",
+   "firstReleaseDate": "1975-11",
+   "earliestRelease": {
+    "date": "1975-11",
+    "title": "風の遺した物語",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "風の遺した物語"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Kazuo Yashiro, Masanaga Harada, Hajime Nomura, Sadao Watanabe",
@@ -209,15 +297,66 @@
   "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜八城一夫｜Drivin'｜1973",
+    "seed｜八城一夫｜Side By Side｜1974",
+    "seed｜八城一夫｜The Way We Were｜1978",
+    "seed｜八城一夫｜Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway｜1976",
+    "seed｜八城一夫｜It's a Sin to Tell a Lie｜1980",
+    "c134｜八城一夫｜Drivin'｜1973",
+    "c134｜八城一夫｜Side By Side｜1974",
+    "c134｜八城一夫｜The Way We Were｜1978",
+    "c134｜八城一夫｜Side By Side 2. Kazuo Yashiro Plays Bösendorfer & Steinway｜1976",
+    "c134｜八城一夫｜It's a Sin to Tell a Lie｜1980",
+    "seed｜渡辺貞夫｜Pamoja｜1976",
+    "seed｜渡辺貞夫｜California Shower｜1978",
+    "seed｜渡辺貞夫｜Orange Express｜1981",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "seed｜渡辺貞夫｜Pastoral｜1969",
+    "seed｜渡辺貞夫｜Paysages｜1971",
+    "seed｜渡辺貞夫｜Open Road｜1973",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "c132｜渡辺貞夫｜Pastoral｜1969",
+    "c132｜渡辺貞夫｜Paysages｜1971",
+    "c132｜渡辺貞夫｜Open Road｜1973",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967"
+   ]
   },
   "artistVariants": [
-   "Kazuo Yashiro, Masanaga Harada, Hajime Nomura, Sadao Watanabe"
+   "Kazuo Yashiro, Masanaga Harada, Hajime Nomura, Sadao Watanabe",
+   "八城一夫",
+   "Yashiro, Kazuo",
+   "原田政長",
+   "Harada, Masanaga",
+   "Hajime Nomura",
+   "Nomura, Hajime",
+   "渡辺貞夫",
+   "Watanabe, Sadao",
+   "Sadao Watanabe",
+   "わたなべ さだお",
+   "渡辺 貞夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Let's Swing Now",
+   "firstReleaseDate": "1976",
+   "earliestRelease": {
+    "date": "1976",
+    "title": "Let's Swing Now",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Let's Swing Now"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "ゼロ戦",
@@ -238,7 +377,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -247,7 +386,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "アスファルト",
+   "firstReleaseDate": "1976",
+   "earliestRelease": {
+    "date": "1976",
+    "title": "アスファルト",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "アスファルト"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "\"Ponta\" Murakami",
@@ -267,7 +419,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -279,7 +431,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Introducing \"Ponta\" Murakami",
+   "firstReleaseDate": "1976",
+   "earliestRelease": {
+    "date": "1976",
+    "title": "Introducing \"Ponta\" Murakami",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Introducing \"Ponta\" Murakami",
+    "驚異のパーカッションサウンド!! INTRODUCING “PONTA” MURAKAMI"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Hi‐Fi Set",
@@ -299,17 +465,30 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "Hi‐Fi Set",
-   "ハイ・ファイ・セット",
-   "ハイファイセット"
+   "ハイファイセット",
+   "ハイ・ファイ・セット"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Fashionable Lover",
+   "firstReleaseDate": "1976-06-05",
+   "earliestRelease": {
+    "date": "1976-06-05",
+    "title": "Fashionable Lover",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Fashionable Lover"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Jun Fukamachi",
@@ -329,16 +508,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "Jun Fukamachi",
-   "Jun Fukamachi 21st Century Band"
+   "深町純",
+   "Fukamachi, Jun",
+   "ふかまち じゅん",
+   "深町 純"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Jun Fukamachi At Steinway",
+   "firstReleaseDate": "1976",
+   "earliestRelease": {
+    "date": "1976",
+    "title": "Jun Fukamachi At Steinway",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Jun Fukamachi At Steinway"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "深町純",
@@ -358,19 +553,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "深町純",
    "Fukamachi, Jun",
-   "深町 純",
    "Jun Fukamachi",
-   "ふかまち じゅん"
+   "ふかまち じゅん",
+   "深町 純"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Jun Fukamachi At Steinway (Take 2)",
+   "firstReleaseDate": "1976",
+   "earliestRelease": {
+    "date": "1976",
+    "title": "Jun Fukamachi At Steinway (Take 2)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Jun Fukamachi At Steinway (Take 2)"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -398,12 +606,26 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "灯ともし頃",
+   "firstReleaseDate": "1976-03-05",
+   "earliestRelease": {
+    "date": "1976-03-05",
+    "title": "灯ともし頃",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "灯ともし頃",
+    "灯ともし頃 (Hi Tomoshi Goro)"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "萩田光雄",
@@ -424,25 +646,38 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "萩田光雄",
    "Hagita, Mitsuo",
-   "荻田光雄",
-   "荻田 光雄",
-   "萩田光男",
-   "はぎた みつお",
-   "Mitsuo Hagita .",
-   "萩田 光雄",
    "Mitsuo Hagita",
+   "Mitsuo Hagita .",
+   "はぎた みつお",
+   "はぎた みつお .",
+   "荻田 光雄",
+   "荻田光雄",
    "萩田 光男",
-   "はぎた みつお ."
+   "萩田 光雄",
+   "萩田光男"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "SECRET LOVE",
+   "firstReleaseDate": "1976",
+   "earliestRelease": {
+    "date": "1976",
+    "title": "SECRET LOVE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "SECRET LOVE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Mieko Hirota",
@@ -462,15 +697,34 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Mieko Hirota"
+   "Mieko Hirota",
+   "弘田三枝子",
+   "Hirota, Mieko",
+   "ひろた みえこ",
+   "弘田 三枝子",
+   "高木 三枝子",
+   "高木三枝子"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "My Funny Valentine",
+   "firstReleaseDate": "1976-05",
+   "earliestRelease": {
+    "date": "1976-05",
+    "title": "My Funny Valentine",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "My Funny Valentine"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Steve Lacy, Yuji Takahashi & Takehisa Kosugi",
@@ -490,15 +744,52 @@
   "nReleases": null,
   "note": "藝人池中有11張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Steve Lacy｜The Straight Horn of Steve Lacy｜1960",
+    "seed｜Steve Lacy｜Evidence｜1962",
+    "seed｜Steve Lacy｜Gemini Rights｜2022",
+    "seed｜Steve Lacy｜Apollo XXI｜2019",
+    "seed｜Steve Lacy｜Dreams｜1975",
+    "seed｜Steve Lacy｜Lapis｜1971",
+    "seed｜Steve Lacy｜The Owl｜1979",
+    "seed｜Steve Lacy｜Oh yeah?｜2026",
+    "c112｜Steve Lacy｜Oh yeah?｜2026"
+   ]
   },
   "artistVariants": [
-   "Steve Lacy, Yuji Takahashi & Takehisa Kosugi"
+   "Steve Lacy, Yuji Takahashi & Takehisa Kosugi",
+   "Steve Lacy",
+   "Lacy, Steve",
+   "Steven Norman Lackritz",
+   "スティーブ・レイシー",
+   "高橋悠治",
+   "Takahashi, Yuji",
+   "TAKAHASHI Yuuji",
+   "Yuji Takahashi",
+   "Yūji Takahashi",
+   "たかはし ゆうじ",
+   "高橋 悠治",
+   "小杉武久",
+   "Kosugi, Takehisa",
+   "Takehisa Kosugi"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Distant Voices",
+   "firstReleaseDate": "1976",
+   "earliestRelease": {
+    "date": "1976",
+    "title": "Distant Voices",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Distant Voices"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "佐藤博",
@@ -526,13 +817,27 @@
   "artistVariants": [
    "佐藤博",
    "Sato, Hiroshi",
+   "Hiroshi Sato",
    "Hiroshi Satoh",
-   "佐藤浩",
-   "Hiroshi Sato"
+   "佐藤浩"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "スーパー・マーケット",
+   "firstReleaseDate": "1976-05-25",
+   "earliestRelease": {
+    "date": "1976-05-25",
+    "title": "SUPER MARKET",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "SUPER MARKET",
+    "スーパー・マーケット"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "三橋貴風 編曲 山屋 清",
@@ -552,15 +857,34 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "三橋貴風 編曲 山屋 清"
+   "三橋貴風 編曲 山屋 清",
+   "三橋貴風",
+   "Mitsuhashi, Kifu",
+   "Kifu Mitsuhashi",
+   "山屋清",
+   "Yamaya, Kiyoshi",
+   "Kiyoshi Yamaya"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "尺八 里の詩",
+   "firstReleaseDate": "1976-06",
+   "earliestRelease": {
+    "date": "1976-06",
+    "title": "尺八 里の詩",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "尺八 里の詩"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "米川敏子、山屋清",
@@ -580,15 +904,36 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "米川敏子、山屋清"
+   "米川敏子、山屋清",
+   "米川敏子",
+   "Yonekawa, Toshiko",
+   "Toshiko Yonekawa",
+   "山屋清",
+   "Yamaya, Kiyoshi",
+   "Kiyoshi Yamaya"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "筝 クロスオーバーの世界 里を詩う",
+   "firstReleaseDate": "1976-08-25",
+   "earliestRelease": {
+    "date": "1976-08-25",
+    "title": "Tapestry Koto & The Occident Country = 琴 里を詩う",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Tapestry Koto & The Occident Country = 琴 里を詩う",
+    "筝 クロスオーバーの世界 里を詩う",
+    "Tapestry Koto & the Occident Country"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "土取利行＋坂本龍一",
@@ -608,15 +953,56 @@
   "nReleases": null,
   "note": "藝人池中有16張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜坂本龍一｜async｜2017",
+    "seed｜坂本龍一｜1996｜1996",
+    "seed｜坂本龍一｜Thousand Knives｜1978",
+    "seed｜坂本龍一｜B-2 Unit｜1980",
+    "seed｜坂本龍一｜左うでの夢｜1981",
+    "seed｜坂本龍一｜音楽図鑑｜1984",
+    "seed｜坂本龍一｜未来派野郎｜1986",
+    "seed｜坂本龍一｜戦場のメリークリスマス｜1983"
+   ]
   },
   "artistVariants": [
-   "土取利行＋坂本龍一"
+   "土取利行＋坂本龍一",
+   "土取利行",
+   "Tsuchitori, Toshiyuki",
+   "Toshi Tsuchitori",
+   "Toshiyuki Tsuchitori",
+   "Tsuchitori Toshiyuki",
+   "つちとり としゆき",
+   "坂本龍一",
+   "Sakamoto, Ryūichi",
+   "R.S.",
+   "Riuichi Sakamoto",
+   "Ryuchi Sakamoto",
+   "Ryuichi Sakamamoto",
+   "Ryûichi Sakamoto",
+   "Ryūichi Sakamoto",
+   "Sakamoto Ryuuichi",
+   "Sakamoto Ryūichi",
+   "坂本 龍一",
+   "坂本龙一",
+   "사카모토 류이치"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Disappointment-Hateruma",
+   "firstReleaseDate": "1976",
+   "earliestRelease": {
+    "date": "1976",
+    "title": "Disappointment-Hateruma",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Disappointment-Hateruma"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Isao Suzuki",
@@ -636,17 +1022,31 @@
   "nReleases": null,
   "note": "藝人池中有5張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "Isao Suzuki",
-   "Isao Suzuki Sextet",
-   "Suzuki, Isao, Sextet"
+   "鈴木勲",
+   "Suzuki, Isao",
+   "鈴木勲夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Cadillac Woman",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "Cadillac Woman",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Cadillac Woman"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Sadao Watanabe",
@@ -666,17 +1066,49 @@
   "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜渡辺貞夫｜Pamoja｜1976",
+    "seed｜渡辺貞夫｜California Shower｜1978",
+    "seed｜渡辺貞夫｜Orange Express｜1981",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "seed｜渡辺貞夫｜Pastoral｜1969",
+    "seed｜渡辺貞夫｜Paysages｜1971",
+    "seed｜渡辺貞夫｜Open Road｜1973",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "c132｜渡辺貞夫｜Pastoral｜1969",
+    "c132｜渡辺貞夫｜Paysages｜1971",
+    "c132｜渡辺貞夫｜Open Road｜1973",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967"
+   ]
   },
   "artistVariants": [
    "Sadao Watanabe",
-   "Sadao Watanabe Quintet",
-   "Watanabe, Sadao, Quintet"
+   "渡辺貞夫",
+   "Watanabe, Sadao",
+   "わたなべ さだお",
+   "渡辺 貞夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Autumn Blow",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "Autumn Blow",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Autumn Blow"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Sadao Watanabe",
@@ -696,17 +1128,49 @@
   "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜渡辺貞夫｜Pamoja｜1976",
+    "seed｜渡辺貞夫｜California Shower｜1978",
+    "seed｜渡辺貞夫｜Orange Express｜1981",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "seed｜渡辺貞夫｜Pastoral｜1969",
+    "seed｜渡辺貞夫｜Paysages｜1971",
+    "seed｜渡辺貞夫｜Open Road｜1973",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "c132｜渡辺貞夫｜Pastoral｜1969",
+    "c132｜渡辺貞夫｜Paysages｜1971",
+    "c132｜渡辺貞夫｜Open Road｜1973",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967"
+   ]
   },
   "artistVariants": [
    "Sadao Watanabe",
-   "Sadao Watanabe Quintet",
-   "Watanabe, Sadao, Quintet"
+   "渡辺貞夫",
+   "Watanabe, Sadao",
+   "わたなべ さだお",
+   "渡辺 貞夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "My Dear Life",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "My Dear Life",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "My Dear Life"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "サディスティックス",
@@ -726,7 +1190,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -735,7 +1199,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "サディスティックス",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "サディスティックス",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "サディスティックス",
+    "Sadistics"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "ゼロ戦",
@@ -755,7 +1233,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -764,7 +1242,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "サンライズ",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "サンライズ",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "サンライズ",
+    "Sunrise"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "芸能山城組",
@@ -793,12 +1285,26 @@
   "artistVariants": [
    "芸能山城組",
    "Geinoh Yamashirogumi",
-   "Geinō Yamashirogumi",
-   "Akira"
+   "Akira",
+   "Geinō Yamashirogumi"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "やまと幻唱",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "やまと幻唱",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "やまと幻唱",
+    "Yamato Gensho"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "石田勝範",
@@ -819,15 +1325,35 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "石田勝範"
+   "石田勝範",
+   "Ishida, Katsunori",
+   "Katsunori Ishida",
+   "いしだ かつのり",
+   "いしだかつのり",
+   "石田 かつのり",
+   "石田 勝範",
+   "石田かつのり"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "ボディー・トーク",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "ボディー・トーク",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ボディー・トーク"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "日野皓正",
@@ -866,13 +1392,26 @@
   "artistVariants": [
    "日野皓正",
    "Hino, Terumasa",
+   "Terumasa Hino",
    "ひの てるまさ",
-   "日野 皓正",
-   "Terumasa Hino"
+   "日野 皓正"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "May Dance",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "May Dance",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "May Dance"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Jun Fukamachi",
@@ -893,16 +1432,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "Jun Fukamachi",
-   "Jun Fukamachi 21st Century Band"
+   "深町純",
+   "Fukamachi, Jun",
+   "ふかまち じゅん",
+   "深町 純"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Sgt. Pepper's Lonely Hearts Club Band",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "Sgt. Pepper's Lonely Hearts Club Band",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Sgt. Pepper's Lonely Hearts Club Band"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "深町純",
@@ -922,19 +1477,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "深町純",
    "Fukamachi, Jun",
-   "深町 純",
    "Jun Fukamachi",
-   "ふかまち じゅん"
+   "ふかまち じゅん",
+   "深町 純"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Second Phase",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "Second Phase",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Second Phase"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -962,12 +1530,25 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "流れを渡る",
+   "firstReleaseDate": "1977-03-05",
+   "earliestRelease": {
+    "date": "1977-03-05",
+    "title": "流れを渡る",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "流れを渡る"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "直居隆雄",
@@ -987,19 +1568,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "直居隆雄",
    "Naoi, Takao",
-   "直居 隆雄",
+   "Takao Naoi",
    "なおい たかお",
-   "Takao Naoi"
+   "直居 隆雄"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "In The Mood",
+   "firstReleaseDate": "1977-02-05",
+   "earliestRelease": {
+    "date": "1977-02-05",
+    "title": "In The Mood",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "In The Mood"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Mieko Hirota",
@@ -1019,15 +1613,34 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Mieko Hirota"
+   "Mieko Hirota",
+   "弘田三枝子",
+   "Hirota, Mieko",
+   "ひろた みえこ",
+   "弘田 三枝子",
+   "高木 三枝子",
+   "高木三枝子"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "In My Feeling",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "In My Feeling",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "In My Feeling"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Sadao Watanabe",
@@ -1047,17 +1660,49 @@
   "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜渡辺貞夫｜Pamoja｜1976",
+    "seed｜渡辺貞夫｜California Shower｜1978",
+    "seed｜渡辺貞夫｜Orange Express｜1981",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "seed｜渡辺貞夫｜Pastoral｜1969",
+    "seed｜渡辺貞夫｜Paysages｜1971",
+    "seed｜渡辺貞夫｜Open Road｜1973",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "c132｜渡辺貞夫｜Pastoral｜1969",
+    "c132｜渡辺貞夫｜Paysages｜1971",
+    "c132｜渡辺貞夫｜Open Road｜1973",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967"
+   ]
   },
   "artistVariants": [
    "Sadao Watanabe",
-   "Sadao Watanabe Quintet",
-   "Watanabe, Sadao, Quintet"
+   "渡辺貞夫",
+   "Watanabe, Sadao",
+   "わたなべ さだお",
+   "渡辺 貞夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Goin' Home",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "Goin' Home",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Goin' Home"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "益田幹夫",
@@ -1077,18 +1722,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "益田幹夫",
    "Masuda, Mikio",
-   "益田　幹夫",
-   "Mikio Masuda"
+   "Mikio Masuda",
+   "益田　幹夫"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "MOON STONE",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "Moon Stone",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Moon Stone",
+    "MOON STONE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "佐藤博",
@@ -1116,13 +1775,27 @@
   "artistVariants": [
    "佐藤博",
    "Sato, Hiroshi",
+   "Hiroshi Sato",
    "Hiroshi Satoh",
-   "佐藤浩",
-   "Hiroshi Sato"
+   "佐藤浩"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Time",
+   "firstReleaseDate": "1977",
+   "earliestRelease": {
+    "date": "1977",
+    "title": "Time",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Time",
+    "TIME"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "富樫雅彦+高橋悠治",
@@ -1142,14 +1815,50 @@
   "nReleases": null,
   "note": "藝人池中有13張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973"
+   ]
   },
   "artistVariants": [
-   "富樫雅彦+高橋悠治"
+   "富樫雅彦+高橋悠治",
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi",
+   "高橋悠治",
+   "Takahashi, Yuji",
+   "TAKAHASHI Yuuji",
+   "Yuji Takahashi",
+   "Yūji Takahashi",
+   "たかはし ゆうじ",
+   "高橋 悠治"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "トゥワイライト",
+   "firstReleaseDate": "1977-03",
+   "earliestRelease": {
+    "date": "1977-03",
+    "title": "トゥワイライト",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "トゥワイライト"
+   ],
+   "note": ""
+  }
  }
 ]

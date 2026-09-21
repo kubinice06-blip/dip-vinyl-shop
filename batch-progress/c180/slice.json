@@ -17,7 +17,7 @@
   "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -26,7 +26,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "'S Wonderful",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "'S Wonderful",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "'S Wonderful"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "林英哲",
@@ -46,7 +59,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -56,7 +69,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "風の使者",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "風の使者",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "風の使者"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Woody Herman, Eiji Kitamura",
@@ -76,15 +102,47 @@
   "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Woody Herman｜Woody's Winners｜1965",
+    "seed｜北村英治｜Happy Cooking｜1973",
+    "seed｜北村英治｜Because of You｜1976",
+    "seed｜北村英治｜Sophisticated Lady｜1978",
+    "seed｜北村英治｜April Date｜1979",
+    "seed｜北村英治｜Happy Cooking Vol. II｜1973",
+    "c134｜北村英治｜Happy Cooking｜1973",
+    "c134｜北村英治｜Because of You｜1976",
+    "c134｜北村英治｜Sophisticated Lady｜1978",
+    "c134｜北村英治｜April Date｜1979",
+    "c134｜北村英治｜Happy Cooking Vol. II｜1973"
+   ]
   },
   "artistVariants": [
-   "Woody Herman, Eiji Kitamura"
+   "Woody Herman, Eiji Kitamura",
+   "Woody Herman",
+   "Herman, Woody",
+   "Woddy Herman",
+   "Woody Hermann",
+   "北村英治",
+   "Kitamura, Eiji",
+   "Eiji Kitamura"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "We",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "We",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "We"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山本達彦",
@@ -104,7 +162,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -114,7 +172,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Martini Hour",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "Martini Hour",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Martini Hour"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "赤尾三千子",
@@ -134,15 +205,30 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "赤尾三千子"
+   "赤尾三千子",
+   "Akao, Michiko"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "横笛",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "横笛",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "横笛",
+    "Yokobue"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "浅川マキ",
@@ -170,12 +256,26 @@
   "artistVariants": [
    "浅川マキ",
    "Asakawa, Maki",
-   "Maki Asakawa",
-   "Asakawa Maki"
+   "Asakawa Maki",
+   "Maki Asakawa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "WHO’S KNOCKING ON MY DOOR",
+   "firstReleaseDate": "1983-08-01",
+   "earliestRelease": {
+    "date": "1983-08-01",
+    "title": "WHO’S KNOCKING ON MY DOOR",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "WHO’S KNOCKING ON MY DOOR",
+    "Who’s Knocking on My Door"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "麻生小百合",
@@ -195,7 +295,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -205,7 +305,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Pink",
+   "firstReleaseDate": "1983-09-01",
+   "earliestRelease": {
+    "date": "1983-09-01",
+    "title": "Pink",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Pink"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Curtis Creek Band",
@@ -225,7 +338,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -233,7 +346,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "’83 Suzuka 8-Hours World Endurance Championship Race",
+   "firstReleaseDate": "1983-12",
+   "earliestRelease": {
+    "date": "1983-12",
+    "title": "’83 Suzuka 8-Hours World Endurance Championship Race",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "’83 Suzuka 8-Hours World Endurance Championship Race"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "高橋達也と東京ユニオン",
@@ -275,7 +401,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Jam Trip The かぼちゃワイン (Pumpkin Wine)",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "Jam Trip The かぼちゃワイン (Pumpkin Wine)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Jam Trip The かぼちゃワイン (Pumpkin Wine)"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "清水靖晃 & The Saxophonettes",
@@ -295,15 +434,36 @@
   "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜清水靖晃｜Kakashi｜1982"
+   ]
   },
   "artistVariants": [
-   "清水靖晃 & The Saxophonettes"
+   "清水靖晃 & The Saxophonettes",
+   "清水靖晃",
+   "Shimizu, Yasuaki",
+   "Yasuaki Shimizu",
+   "The Saxophonettes",
+   "Saxophonettes, The"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "L’Automne à Pékin",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "L'Automne À Pékin",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "L'Automne À Pékin",
+    "L’Automne à Pékin"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "石川晶とカウント・バッファローズ",
@@ -342,17 +502,30 @@
   "artistVariants": [
    "石川晶とカウント・バッファローズ",
    "Ishikawa, Akira & Count Buffaloes",
+   "Akira Ishikawa & His Count Buffalos",
+   "Akira Ishikawa & His Group",
+   "Akira Ishikawa and His Group",
    "Count Buffalo & His Rock Band",
    "Count Buffalo & The Jazz Rock Band",
-   "Akira Ishikawa & His Group",
    "石川晶とそのグループ",
-   "Akira Ishikawa & His Count Buffalos",
-   "Akira Ishikawa and His Group",
    "石川晶と彼のグループ"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "フィリップ・マーロウ, 君がいないと",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "フィリップ・マーロウ, 君がいないと",
+    "country": ""
+   },
+   "titlesSeen": [
+    "フィリップ・マーロウ, 君がいないと"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "石川晶とカウント・バッファローズ",
@@ -391,17 +564,30 @@
   "artistVariants": [
    "石川晶とカウント・バッファローズ",
    "Ishikawa, Akira & Count Buffaloes",
+   "Akira Ishikawa & His Count Buffalos",
+   "Akira Ishikawa & His Group",
+   "Akira Ishikawa and His Group",
    "Count Buffalo & His Rock Band",
    "Count Buffalo & The Jazz Rock Band",
-   "Akira Ishikawa & His Group",
    "石川晶とそのグループ",
-   "Akira Ishikawa & His Count Buffalos",
-   "Akira Ishikawa and His Group",
    "石川晶と彼のグループ"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "超時空要塞 マクロス Macross",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "超時空要塞 マクロス Macross",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "超時空要塞 マクロス Macross"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "猪俣猛とサウンド・リミテッド＆パーカッション・アンサンブル",
@@ -421,15 +607,37 @@
   "nReleases": null,
   "note": "藝人池中有2張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜猪俣猛とサウンド・リミテッド｜サウンド・オブ・サウンド・リミテッド｜1970",
+    "seed｜猪俣猛とサウンド・リミテッド｜Innocent Canon｜1971",
+    "c131｜猪俣猛とサウンド・リミテッド｜サウンド・オブ・サウンド・リミテッド｜1970",
+    "c133｜猪俣猛とサウンド・リミテッド｜Innocent Canon｜1971"
+   ]
   },
   "artistVariants": [
-   "猪俣猛とサウンド・リミテッド＆パーカッション・アンサンブル"
+   "猪俣猛とサウンド・リミテッド＆パーカッション・アンサンブル",
+   "猪俣猛とサウンド・リミテッド",
+   "Inomata, Takeshi and Sound Limited",
+   "Takeshi Inomata & Sound L.T.D."
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "うる星やつら",
+   "firstReleaseDate": "1983-07-21",
+   "earliestRelease": {
+    "date": "1983-07-21",
+    "title": "うる星やつら",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "うる星やつら",
+    "Jam Trip うる星やつら"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "99.99",
@@ -449,16 +657,28 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "99.99",
-   "Four Nine"
+   "99.99"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "More of 99.99",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "More of 99.99",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "More of 99.99"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Hang Raiji",
@@ -478,15 +698,30 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Hang Raiji"
+   "Hang Raiji",
+   "ハング・ライジ",
+   "HANG RAIJI"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Hang Raiji",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "Hang Raiji",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Hang Raiji"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "小田陽子",
@@ -506,7 +741,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -517,7 +752,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Shadow & Me",
+   "firstReleaseDate": "1983-03",
+   "earliestRelease": {
+    "date": "1983-03",
+    "title": "Shadow & Me",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Shadow & Me"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "富樫雅彦",
@@ -560,7 +808,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "コントラスト",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "コントラスト",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "コントラスト"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "富樫雅彦〜高柳昌行",
@@ -580,15 +841,61 @@
   "nReleases": null,
   "note": "疑似池中(盤名相似度0.72)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973",
+    "seed｜高柳昌行｜銀巴里セッション｜1971",
+    "seed｜高柳昌行｜Lonely Woman｜1982",
+    "seed｜高柳昌行｜インディペンデンス｜1970",
+    "seed｜高柳昌行｜A Jazzy Profile of Jojo｜1970",
+    "seed｜高柳昌行｜Eclipse/侵蝕｜1975",
+    "seed｜高柳昌行｜April Is the Cruellest Month｜1991",
+    "c121｜高柳昌行｜インディペンデンス｜1970",
+    "c121｜高柳昌行｜A Jazzy Profile of Jojo｜1970",
+    "c121｜高柳昌行｜Eclipse/侵蝕｜1975",
+    "c121｜高柳昌行｜April Is the Cruellest Month｜1991"
+   ]
   },
   "artistVariants": [
-   "富樫雅彦〜高柳昌行"
+   "富樫雅彦〜高柳昌行",
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi",
+   "高柳昌行",
+   "Takayanagi, Masayuki",
+   "Jojo",
+   "Masayuki Takayanagi",
+   "Masayuki “Jojo” Takayanagi",
+   "高柳 昌行"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "パルセーション",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "パルセーション",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "パルセーション",
+    "Pulsation"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "富樫雅彦＆スティーブ・レイシー",
@@ -608,15 +915,58 @@
   "nReleases": null,
   "note": "疑似池中(盤名相似度0.61)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973",
+    "seed｜Steve Lacy｜The Straight Horn of Steve Lacy｜1960",
+    "seed｜Steve Lacy｜Evidence｜1962",
+    "seed｜Steve Lacy｜Gemini Rights｜2022",
+    "seed｜Steve Lacy｜Apollo XXI｜2019",
+    "seed｜Steve Lacy｜Dreams｜1975",
+    "seed｜Steve Lacy｜Lapis｜1971",
+    "seed｜Steve Lacy｜The Owl｜1979",
+    "seed｜Steve Lacy｜Oh yeah?｜2026",
+    "c112｜Steve Lacy｜Oh yeah?｜2026"
+   ]
   },
   "artistVariants": [
-   "富樫雅彦＆スティーブ・レイシー"
+   "富樫雅彦＆スティーブ・レイシー",
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi",
+   "Steve Lacy",
+   "Lacy, Steve",
+   "Steven Norman Lackritz",
+   "スティーブ・レイシー"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "エターナル・デュオ",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "エターナル・デュオ",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "エターナル・デュオ",
+    "Eternal Duo"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Kangaroo",
@@ -636,15 +986,29 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Kangaroo"
+   "Kangaroo",
+   "カンガルー"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Nice! Nice!! Nice!!!",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "Nice! Nice!! Nice!!!",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Nice! Nice!! Nice!!!"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "MALTA",
@@ -664,7 +1028,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -672,7 +1036,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Sweet Magic",
+   "firstReleaseDate": "1984-09-21",
+   "earliestRelease": {
+    "date": "1984-09-21",
+    "title": "Sweet Magic",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Sweet Magic"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Mari Nakamoto",
@@ -692,17 +1069,41 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜中本マリ｜Unforgettable!｜1973",
+    "seed｜中本マリ｜Just in Time｜1975",
+    "seed｜中本マリ｜Nice Feeling｜1977",
+    "seed｜中本マリ｜Shiny Stockings｜1978",
+    "seed｜中本マリ｜Aphrodite｜1979",
+    "c134｜中本マリ｜Unforgettable!｜1973",
+    "c134｜中本マリ｜Just in Time｜1975",
+    "c134｜中本マリ｜Nice Feeling｜1977",
+    "c134｜中本マリ｜Shiny Stockings｜1978",
+    "c134｜中本マリ｜Aphrodite｜1979"
+   ]
   },
   "artistVariants": [
    "Mari Nakamoto",
-   "Mari Nakamoto III",
-   "Nakamoto, Mari, III"
+   "中本マリ",
+   "Nakamoto, Mari"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "TV",
+   "firstReleaseDate": "1984-04-21",
+   "earliestRelease": {
+    "date": "1984-04-21",
+    "title": "TV",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "TV"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Yasuko Agawa",
@@ -723,16 +1124,37 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "Yasuko Agawa",
-   "Yasuko Agawa & Big band"
+   "阿川泰子",
+   "Agawa, Yasuko",
+   "MISS A",
+   "Yasuko Lovebird",
+   "Yasuko, Love‐Bird",
+   "佐藤康子",
+   "麻理ともえ",
+   "麻里 とも恵"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Gravy",
+   "firstReleaseDate": "1984-06-21",
+   "earliestRelease": {
+    "date": "1984-06-21",
+    "title": "Gravy",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Gravy",
+    "GRAVY"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "ツトム・ヤマシタ",
@@ -753,24 +1175,38 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "ツトム・ヤマシタ",
    "Yamashta, Stomu",
-   "山下勉",
-   "Stomu Yamash’ta",
-   "Tsutomu Yamashita",
    "S. Yamash'ta",
    "Stomu Yamash'ta",
-   "Stomu Yamashta",
    "Stomu Yamash'ta & Come to the Edge",
-   "Stomu Yamashta & Come to the Edge"
+   "Stomu Yamashta",
+   "Stomu Yamashta & Come to the Edge",
+   "Stomu Yamash’ta",
+   "Tsutomu Yamashita",
+   "山下勉"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Sea & Sky",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "空と海",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "空と海",
+    "Sea & Sky"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "高橋真梨子",
@@ -790,21 +1226,35 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "高橋真梨子",
    "Takahashi, Mariko",
-   "髙橋真梨子",
    "Mariko Takahashi",
-   "高橋まり",
+   "たかはし まりこ",
    "高橋 真梨子",
-   "たかはし まりこ"
+   "高橋まり",
+   "髙橋真梨子"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Triad",
+   "firstReleaseDate": "1984-09-21",
+   "earliestRelease": {
+    "date": "1984-09-21",
+    "title": "Triad",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Triad",
+    "トライアード"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "NORIKI",
@@ -824,7 +1274,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -833,7 +1283,21 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "DREAM CRUISE",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "DREAM CRUISE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "DREAM CRUISE",
+    "Dream Cruise"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山本達彦",
@@ -853,7 +1317,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -863,7 +1327,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Music",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "Music",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Music"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Keizo Inoue",
@@ -883,15 +1360,31 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Keizo Inoue"
+   "Keizo Inoue",
+   "井上敬三",
+   "Inoue, Keizo",
+   "井上慶三"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Boys, Be Ambitious!",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "Boys, Be Ambitious!",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Boys, Be Ambitious!"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "向井滋春オリッサ",
@@ -912,7 +1405,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -922,7 +1415,22 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "JAPONESIA",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "Japonesia",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Japonesia",
+    "JAPONESIA",
+    "ヤポネシア"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山本邦山 / 富樫雅彦 / 山下洋輔",
@@ -942,15 +1450,52 @@
   "nReleases": null,
   "note": "藝人池中有24張(盤名未比中)",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973",
+    "seed｜山下洋輔｜バンスリカーナ｜1976",
+    "c121｜山下洋輔｜バンスリカーナ｜1976"
+   ]
   },
   "artistVariants": [
-   "山本邦山 / 富樫雅彦 / 山下洋輔"
+   "山本邦山 / 富樫雅彦 / 山下洋輔",
+   "山本邦山",
+   "Yamamoto, Hozan",
+   "Hozan Yamamoto",
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi",
+   "山下洋輔",
+   "Yamashita, Yosuke",
+   "Yosuke Yamashita"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "ブレス",
+   "firstReleaseDate": "1984-10-21",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "ブレス",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ブレス"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "深町純",
@@ -970,19 +1515,33 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "深町純",
    "Fukamachi, Jun",
-   "深町 純",
    "Jun Fukamachi",
-   "ふかまち じゅん"
+   "ふかまち じゅん",
+   "深町 純"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "DIGITAL TRIP うる星やつら SYNTHESIZER FANTASY",
+   "firstReleaseDate": "1984-09-21",
+   "earliestRelease": {
+    "date": "1984-09-21",
+    "title": "DIGITAL TRIP うる星やつら SYNTHESIZER FANTASY",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "DIGITAL TRIP うる星やつら SYNTHESIZER FANTASY",
+    "Digital Trip 1800 うる星やつら SYNTHESIZER FANTASY"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "石川晶とカウント・バッファローズ",
@@ -1021,17 +1580,30 @@
   "artistVariants": [
    "石川晶とカウント・バッファローズ",
    "Ishikawa, Akira & Count Buffaloes",
+   "Akira Ishikawa & His Count Buffalos",
+   "Akira Ishikawa & His Group",
+   "Akira Ishikawa and His Group",
    "Count Buffalo & His Rock Band",
    "Count Buffalo & The Jazz Rock Band",
-   "Akira Ishikawa & His Group",
    "石川晶とそのグループ",
-   "Akira Ishikawa & His Count Buffalos",
-   "Akira Ishikawa and His Group",
    "石川晶と彼のグループ"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Lupin III (ルパン三世)",
+   "firstReleaseDate": "1984-05",
+   "earliestRelease": {
+    "date": "1984-05",
+    "title": "Lupin III (ルパン三世)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Lupin III (ルパン三世)"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "大徳俊幸 & De Cat",
@@ -1051,15 +1623,31 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "大徳俊幸 & De Cat"
+   "大徳俊幸 & De Cat",
+   "大徳俊幸",
+   "Daitoku, Toshiyuki",
+   "De Cat"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "JAM TRIP GU-GU GANMO",
+   "firstReleaseDate": "1984-11-21",
+   "earliestRelease": {
+    "date": "1984-11-21",
+    "title": "JAM TRIP GU-GU GANMO",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "JAM TRIP GU-GU GANMO"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "猪俣猛とサウンド・リミテッド",
@@ -1094,7 +1682,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "うる星やつら Vol. 2",
+   "firstReleaseDate": "1984-10-21",
+   "earliestRelease": {
+    "date": "1984-10-21",
+    "title": "うる星やつら Vol. 2",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "うる星やつら Vol. 2"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "French Toast",
@@ -1114,7 +1715,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1122,7 +1723,20 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "French Toast",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "French Toast",
+    "country": "DE"
+   },
+   "titlesSeen": [
+    "French Toast"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Hiroshi Inoue & Rasa",
@@ -1142,15 +1756,32 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Hiroshi Inoue & Rasa"
+   "Hiroshi Inoue & Rasa",
+   "井上博",
+   "Inoue, Hiroshi",
+   "Hiroshi Inoue",
+   "Rasa"
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Magnetic Storm",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "Magnetic Storm",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Magnetic Storm"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "MARTY & MYSTICS",
@@ -1170,7 +1801,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（同義字串全掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1178,6 +1809,19 @@
   ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "ARRIVAL",
+   "firstReleaseDate": "1984",
+   "earliestRelease": {
+    "date": "1984",
+    "title": "ARRIVAL",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ARRIVAL"
+   ],
+   "note": ""
+  }
  }
 ]
