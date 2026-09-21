@@ -35,6 +35,20 @@ const protectedTokens = (() => {
     const rows = Array.isArray(raw) ? raw : Object.values(raw).flat();
     for (const r of rows) for (const s of [r[0], r[1]]) if (typeof s === 'string' && adjacent.test(s)) out.add(s);
   }
+  // 2026-09-21（c-174 writer-2 抓到，主線第 1889-B 條）：**保護清單漏了「本批自己的卡」。**
+  // 清單只從 `seed_cards.json` 抓，而正在寫的這一批**還沒進池**，於是
+  // `山下洋輔トリオとブラス12` 被建議拆成 `ブラス 12`——卡單藝人欄逐字就是無空格，
+  // 補了會讓標題與簡介對不上。**卡進池後這筆會自動消失，但在那之前每一批都會中。**
+  // 因此把 `desc-tools/batches/cards/*-cards.json` 的掛名與盤名一併納入保護。
+  try {
+    const cdir = new URL('./batches/cards/', import.meta.url);
+    for (const f of fs.readdirSync(cdir)) {
+      if (!/^c\d+-cards\.json$/.test(f)) continue;
+      let cards; try { cards = JSON.parse(fs.readFileSync(new URL(f, cdir), 'utf-8')); } catch { continue; }
+      for (const c of (Array.isArray(cards) ? cards : Object.values(cards)))
+        for (const s of [c.artist, c.album]) if (typeof s === 'string' && adjacent.test(s)) out.add(s);
+    }
+  } catch { /* 目錄不存在（本機路徑不同）就略過 */ }
   // 長的先比，避免短字串先咬掉長專名的一半
   return [...out].sort((a, b) => b.length - a.length);
 })();
