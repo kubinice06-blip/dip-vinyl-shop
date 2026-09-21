@@ -1,89 +1,5 @@
 [
  {
-  "artist": "Yoshio Suzuki & MATSURI",
-  "album": "Fairy Tale",
-  "year": 1987,
-  "rgMbid": "8fe00939-8f6d-49b8-8518-dddcb22d664d",
-  "country": "JP",
-  "format": "12\" Vinyl",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "Victor",
-  "entities": [
-   "JVC"
-  ],
-  "why": "artist-tag",
-  "nReleases": 1,
-  "note": "藝人池中有1張(盤名未比中)",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
-  "artist": "阿川泰子",
-  "album": "Ms. Mystery",
-  "year": 1987,
-  "rgMbid": "d477f42b-4446-41ee-8559-0fec67a1114e",
-  "country": "JP",
-  "format": "CD",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "Victor",
-  "entities": [
-   "INVITATION"
-  ],
-  "why": "artist-tag",
-  "nReleases": 1,
-  "note": "",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
-  "artist": "高橋真梨子",
-  "album": "BLUESette",
-  "year": 1987,
-  "rgMbid": "7a9ce892-0504-4ffb-ae81-6b7ff3b26c17",
-  "country": "JP",
-  "format": "CD/Digital Media",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "Victor",
-  "entities": [
-   "INVITATION"
-  ],
-  "why": "artist-search-tag",
-  "nReleases": 2,
-  "note": "",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
-  "artist": "国府弘子",
-  "album": "More Than You Know",
-  "year": 1987,
-  "rgMbid": "4f0505d3-e441-4374-a737-309864765fe0",
-  "country": "JP",
-  "format": "12\" Vinyl/CD",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "Victor",
-  "entities": [
-   "JVC"
-  ],
-  "why": "rg-tag",
-  "nReleases": 2,
-  "note": "",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
   "artist": "Kanako Wada",
   "album": "Quiet Storm",
   "year": 1987,
@@ -98,8 +14,15 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Kanako Wada"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -119,8 +42,15 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Masayoshi Takanaka"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -140,8 +70,15 @@
    "EASTWORLD"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Toshiyuki Honda"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -161,8 +98,21 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "加藤和彦",
+   "Katou, Kazuhiko",
+   "Kazuhiko Kato",
+   "Kazuhiko Katoh",
+   "Kazuhiko Katou",
+   "加藤 和彦",
+   "かとう かずひこ"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -182,8 +132,33 @@
    "EASTWORLD"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜笠井紀美子｜Butterfly｜1979",
+    "seed｜笠井紀美子｜Just Friends｜1970",
+    "seed｜笠井紀美子｜Umbrella｜1972",
+    "seed｜笠井紀美子｜What's New｜1973",
+    "seed｜笠井紀美子｜Thanks, Dear｜1974",
+    "seed｜笠井紀美子｜This Is My Love｜1975",
+    "seed｜笠井紀美子｜TOKYO SPECIAL｜1977",
+    "c134｜笠井紀美子｜Just Friends｜1970",
+    "c134｜笠井紀美子｜Umbrella｜1972",
+    "c134｜笠井紀美子｜What's New｜1973",
+    "c134｜笠井紀美子｜Thanks, Dear｜1974",
+    "c134｜笠井紀美子｜This Is My Love｜1975",
+    "c134｜笠井紀美子｜TOKYO SPECIAL｜1977"
+   ]
+  },
+  "artistVariants": [
+   "笠井紀美子",
+   "Kasai, Kimiko",
+   "Kimiko Kasai",
+   "かさい きみこ",
+   "笠井 紀美子"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -203,8 +178,17 @@
    "EASTWORLD"
   ],
   "why": "artist-search-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "山本達彦",
+   "Yamamoto, Tatsuhiko",
+   "Tatsuhiko Yamamoto"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -224,8 +208,20 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970"
+   ]
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Maki Asakawa",
+   "Asakawa Maki"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -245,8 +241,20 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970"
+   ]
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Maki Asakawa",
+   "Asakawa Maki"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -266,8 +274,15 @@
    "Domo(Kazumi Watanabe)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有5張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Kazumi Watanabe"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -287,8 +302,19 @@
    "Columbia(JP)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "鈴木茂",
+   "Suzuki, Shigeru",
+   "Shigeru Suzuki",
+   "すずき しげる",
+   "鈴木 茂"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -308,8 +334,16 @@
    "ELECTRIC BIRD"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Bobby Lyle Trio",
+   "Lyle, Bobby, Trio"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -329,8 +363,18 @@
    "Paddle Wheel"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "ジョージ川口",
+   "Kawaguchi, George",
+   "George Kawaguchi",
+   "川口譲二"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -350,8 +394,16 @@
    "KING"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "山形由美",
+   "Yamagata, Yumi"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -371,8 +423,23 @@
    "JVC"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "John Kaizan Neptune",
+   "Neptune, John Kaizan",
+   "ネプチューン海山",
+   "ジョン・海山・ネプチューン",
+   "John Neptune",
+   "John David Neptune",
+   "J.K. Neptune",
+   "John 海山 Neptune",
+   "ジョン海山ネプチューン"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -392,8 +459,16 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Malta",
+   "MALTA"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -413,8 +488,15 @@
    "Victor(JP imprint)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "MALTA"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -434,11 +516,18 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Masami Nakagawa"
+  ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "a"
  },
  {
   "artist": "Mikio Masuda",
@@ -455,11 +544,18 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Mikio Masuda"
+  ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "a"
  },
  {
   "artist": "国府弘子",
@@ -476,8 +572,17 @@
    "JVC"
   ],
   "why": "artist-tag",
-  "nReleases": 3,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "国府弘子",
+   "Kokubu, Hiroko",
+   "Hiroko Kokubu"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -497,8 +602,15 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Masayoshi Takanaka"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -518,8 +630,17 @@
    "EASTWORLD"
   ],
   "why": "artist-search-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "山本達彦",
+   "Yamamoto, Tatsuhiko",
+   "Tatsuhiko Yamamoto"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -539,8 +660,20 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970"
+   ]
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Maki Asakawa",
+   "Asakawa Maki"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -560,8 +693,20 @@
    "EASTWORLD"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970"
+   ]
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Maki Asakawa",
+   "Asakawa Maki"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -582,8 +727,18 @@
    "Columbia(JP)"
   ],
   "why": "artist-search-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "小田陽子",
+   "Oda, Yōko",
+   "Yōko Oda",
+   "小田 陽子"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -603,8 +758,16 @@
    "Paddle Wheel"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "ウエイブ",
+   "Wave"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -624,8 +787,18 @@
    "KING"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "鮎川麻弥",
+   "Ayukawa, Mami",
+   "加藤雅弥",
+   "Mami Ayukawa"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -645,8 +818,15 @@
    "Victor(JP imprint)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "MALTA"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -666,8 +846,15 @@
    "Victor(JP imprint)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Masami Nakagawa"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -688,8 +875,22 @@
    "INVITATION"
   ],
   "why": "artist-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "阿川泰子",
+   "Agawa, Yasuko",
+   "Yasuko Lovebird",
+   "MISS A",
+   "Yasuko, Love‐Bird",
+   "麻里 とも恵",
+   "佐藤康子",
+   "麻理ともえ"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -709,8 +910,16 @@
    "Victor(JP imprint)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "響野夏子",
+   "Natsuko, Kyōno"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -730,8 +939,15 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 3,
+  "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Masayoshi Takanaka"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -751,8 +967,20 @@
    "EASTWORLD"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970"
+   ]
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Maki Asakawa",
+   "Asakawa Maki"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -772,8 +1000,20 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970"
+   ]
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Maki Asakawa",
+   "Asakawa Maki"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -793,8 +1033,15 @@
    "KING"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Eiji Kitamura Quintet"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -814,8 +1061,16 @@
    "KING"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有10張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Tsuyoshi Yamamoto",
+   "Tsuyoshi Yamamoto Trio"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -835,8 +1090,19 @@
    "SEVEN SEAS"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "篠崎正嗣",
+   "Shinozaki, Masatsugu",
+   "Masatsugu Shinozaki",
+   "篠崎 正嗣",
+   "しのざきまさつぐ"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"

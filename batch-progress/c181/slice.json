@@ -1,131 +1,5 @@
 [
  {
-  "artist": "石川晶とカウント・バッファローズ",
-  "album": "Lupin III (ルパン三世)",
-  "year": 1984,
-  "rgMbid": "32549a9d-08a4-402f-ba92-de686c423659",
-  "country": "JP",
-  "format": "CD",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "コロムビア",
-  "entities": [
-   "Columbia(JP)"
-  ],
-  "why": "rg-tag",
-  "nReleases": 1,
-  "note": "藝人池中有2張(盤名未比中)",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
-  "artist": "大徳俊幸 & De Cat",
-  "album": "JAM TRIP GU-GU GANMO",
-  "year": 1984,
-  "rgMbid": "eb1e19d8-025c-4b9c-9356-de15bbf84bca",
-  "country": "JP",
-  "format": "12\" Vinyl",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "コロムビア",
-  "entities": [
-   "Columbia(JP)"
-  ],
-  "why": "curator-list",
-  "nReleases": 1,
-  "note": "",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
-  "artist": "猪俣猛とサウンド・リミテッド",
-  "album": "うる星やつら Vol. 2",
-  "year": 1984,
-  "rgMbid": "a3b3b067-76f3-497e-9ace-c29a32aedb30",
-  "country": "JP",
-  "format": "12\" Vinyl",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "コロムビア",
-  "entities": [
-   "Columbia(JP)"
-  ],
-  "why": "artist-tag",
-  "nReleases": 1,
-  "note": "藝人池中有2張(盤名未比中)",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
-  "artist": "French Toast",
-  "album": "French Toast",
-  "year": 1984,
-  "rgMbid": "836f4c63-4a3f-4be3-b2c1-58a24e519c43",
-  "country": "DE",
-  "format": "CD",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "King",
-  "entities": [
-   "ELECTRIC BIRD"
-  ],
-  "why": "rg-tag",
-  "nReleases": 1,
-  "note": "",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
-  "artist": "Hiroshi Inoue & Rasa",
-  "album": "Magnetic Storm",
-  "year": 1984,
-  "rgMbid": "8528de39-1ed6-4f8a-b528-6bd6ff04f8f6",
-  "country": "JP",
-  "format": "12\" Vinyl",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "King",
-  "entities": [
-   "ELECTRIC BIRD"
-  ],
-  "why": "artist-disambig",
-  "nReleases": 1,
-  "note": "",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
-  "artist": "MARTY & MYSTICS",
-  "album": "ARRIVAL",
-  "year": 1984,
-  "rgMbid": "a1ed28a6-f2c3-455f-b4c4-658a496d8ee3",
-  "country": "JP",
-  "format": "12\" Vinyl",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "King",
-  "entities": [
-   "ELECTRIC BIRD"
-  ],
-  "why": "imprint",
-  "nReleases": 1,
-  "note": "",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "a"
- },
- {
   "artist": "AKIRA (EMOTO+SAKATA)",
   "album": "D.D.T.",
   "year": 1985,
@@ -141,8 +15,15 @@
    "Victor(JP imprint)"
   ],
   "why": "rg-tag",
-  "nReleases": 3,
+  "nReleases": null,
   "note": "藝人池中有15張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "AKIRA (EMOTO+SAKATA)"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -162,8 +43,16 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Malta",
+   "MALTA"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -183,8 +72,17 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Mari Nakamoto",
+   "Mari Nakamoto III",
+   "Nakamoto, Mari, III"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -204,8 +102,17 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Mari Nakamoto",
+   "Mari Nakamoto III",
+   "Nakamoto, Mari, III"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -225,8 +132,16 @@
    "INVITATION"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Yasuko Agawa",
+   "Yasuko Agawa & Big band"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -246,8 +161,16 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "森園勝敏",
+   "Morizono, Katsutoshi"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -267,8 +190,15 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Toshiyuki Honda"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -288,8 +218,23 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜高中正義｜Seychelles｜1976",
+    "seed｜高中正義｜虹伝説 The Rainbow Goblins｜1981",
+    "seed｜高中正義｜Jolly Jive｜1979"
+   ]
+  },
+  "artistVariants": [
+   "高中正義",
+   "Takanaka, Masayoshi",
+   "Masayoshi Takanaka",
+   "Takanaka Masayoshi",
+   "高中 正義"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -309,8 +254,17 @@
    "EASTWORLD"
   ],
   "why": "artist-search-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "山本達彦",
+   "Yamamoto, Tatsuhiko",
+   "Tatsuhiko Yamamoto"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -330,8 +284,20 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970"
+   ]
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Maki Asakawa",
+   "Asakawa Maki"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -351,8 +317,18 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜中村照夫｜Unicorn｜1973"
+   ]
+  },
+  "artistVariants": [
+   "中村照夫",
+   "Nakamura, Teruo"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -372,8 +348,15 @@
    "Domo(Kazumi Watanabe)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有5張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Kazumi Watanabe"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -393,8 +376,19 @@
    "Columbia(JP)"
   ],
   "why": "artist-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "深町純",
+   "Fukamachi, Jun",
+   "深町 純",
+   "Jun Fukamachi",
+   "ふかまち じゅん"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
@@ -414,32 +408,25 @@
    "Columbia(JP)"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有2張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜猪俣猛とサウンド・リミテッド｜サウンド・オブ・サウンド・リミテッド｜1970",
+    "seed｜猪俣猛とサウンド・リミテッド｜Innocent Canon｜1971",
+    "c131｜猪俣猛とサウンド・リミテッド｜サウンド・オブ・サウンド・リミテッド｜1970",
+    "c133｜猪俣猛とサウンド・リミテッド｜Innocent Canon｜1971"
+   ]
+  },
+  "artistVariants": [
+   "猪俣猛とサウンド・リミテッド",
+   "Inomata, Takeshi and Sound Limited",
+   "Takeshi Inomata & Sound L.T.D."
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "a"
- },
- {
-  "artist": "Akira Miyazawa",
-  "album": "'Round Midnight - Amazing Jazz Ballad",
-  "year": 1985,
-  "rgMbid": "8e076914-562b-4c43-bf36-d422286417a1",
-  "country": "JP",
-  "format": "12\" Vinyl",
-  "live": false,
-  "inPool": false,
-  "poolString": "",
-  "house": "King",
-  "entities": [
-   "Paddle Wheel"
-  ],
-  "why": "artist-tag",
-  "nReleases": 1,
-  "note": "藝人池中有1張(盤名未比中)",
-  "period": "jp-1",
-  "genre": "jazz",
-  "g": "b"
  },
  {
   "artist": "Masahiko Togashi & His Improvisation Jazz Orchestra",
@@ -456,11 +443,21 @@
    "Paddle Wheel"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有12張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Masahiko Togashi & His Improvisation Jazz Orchestra",
+   "Togashi, Masahiko, & Improvisation Jazz Orchestra, His",
+   "Masahiko Togashi & Improvisation Jazz Orchestra",
+   "富樫雅彦&インプロヴィゼーション・ジャズ・オーケストラ"
+  ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "a"
  },
  {
   "artist": "Nobuyoshi Ino & Lester Bowie",
@@ -477,11 +474,18 @@
    "Paddle Wheel"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Nobuyoshi Ino & Lester Bowie"
+  ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "a"
  },
  {
   "artist": "Malta",
@@ -498,11 +502,19 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Malta",
+   "MALTA"
+  ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "a"
  },
  {
   "artist": "Yasuko Agawa",
@@ -519,11 +531,19 @@
    "INVITATION"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Yasuko Agawa",
+   "Yasuko Agawa & Big band"
+  ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "a"
  },
  {
   "artist": "Yoshihiro Naruse",
@@ -540,11 +560,18 @@
    "INVITATION"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Yoshihiro Naruse"
+  ],
   "period": "jp-1",
   "genre": "jazz",
-  "g": "b"
+  "g": "a"
  },
  {
   "artist": "Yoshio Suzuki",
@@ -561,8 +588,15 @@
    "JVC"
   ],
   "why": "pool-jazz-artist",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Yoshio Suzuki"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -582,8 +616,18 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "益田幹夫",
+   "Masuda, Mikio",
+   "益田　幹夫",
+   "Mikio Masuda"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -603,8 +647,21 @@
    "INVITATION"
   ],
   "why": "artist-search-tag",
-  "nReleases": 3,
+  "nReleases": null,
   "note": "藝人池中有15張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜芸能山城組｜恐山/銅之剣舞｜1976",
+    "seed｜芸能山城組｜Symphonic Suite AKIRA｜1988"
+   ]
+  },
+  "artistVariants": [
+   "芸能山城組",
+   "Geinoh Yamashirogumi",
+   "Geinō Yamashirogumi",
+   "Akira"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -624,8 +681,20 @@
    "Victor(JP imprint)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "土取利行",
+   "Tsuchitori, Toshiyuki",
+   "つちとり としゆき",
+   "Tsuchitori Toshiyuki",
+   "Toshi Tsuchitori",
+   "Toshiyuki Tsuchitori"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -645,8 +714,17 @@
    "INVITATION"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "櫻井哲夫",
+   "Sakurai, Tetsuo",
+   "Tetsuo Sakurai"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -666,8 +744,15 @@
    "EASTWORLD"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Takanaka"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -687,8 +772,23 @@
    "EASTWORLD"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "藝人池中有3張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜高中正義｜Seychelles｜1976",
+    "seed｜高中正義｜虹伝説 The Rainbow Goblins｜1981",
+    "seed｜高中正義｜Jolly Jive｜1979"
+   ]
+  },
+  "artistVariants": [
+   "高中正義",
+   "Takanaka, Masayoshi",
+   "Masayoshi Takanaka",
+   "Takanaka Masayoshi",
+   "高中 正義"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -708,8 +808,17 @@
    "EASTWORLD"
   ],
   "why": "artist-search-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "山本達彦",
+   "Yamamoto, Tatsuhiko",
+   "Tatsuhiko Yamamoto"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -729,8 +838,15 @@
    "Paddle Wheel"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Tamami Koyake With Great Jazz Quartet"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -750,8 +866,15 @@
    "Paddle Wheel"
   ],
   "why": "artist-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "高橋達也と東京ユニオン Arranged By David Mathews"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -771,8 +894,16 @@
    "KING"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "山形由美",
+   "Yamagata, Yumi"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -792,8 +923,16 @@
    "INVITATION"
   ],
   "why": "rg-tag",
-  "nReleases": 2,
+  "nReleases": null,
   "note": "藝人池中有2張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Akira Sakata",
+   "Akira Sakata Italian Ensemble"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -813,8 +952,16 @@
    "Victor(JP imprint)"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Frank Potenza",
+   "Potenza, Frank"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"
@@ -834,8 +981,143 @@
    "JVC"
   ],
   "why": "rg-tag",
-  "nReleases": 1,
+  "nReleases": null,
   "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Malta",
+   "MALTA"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b"
+ },
+ {
+  "artist": "Yoshio Suzuki & MATSURI",
+  "album": "Fairy Tale",
+  "year": 1987,
+  "rgMbid": "8fe00939-8f6d-49b8-8518-dddcb22d664d",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "JVC"
+  ],
+  "why": "artist-tag",
+  "nReleases": null,
+  "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Yoshio Suzuki & MATSURI"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b"
+ },
+ {
+  "artist": "阿川泰子",
+  "album": "Ms. Mystery",
+  "year": 1987,
+  "rgMbid": "d477f42b-4446-41ee-8559-0fec67a1114e",
+  "country": "JP",
+  "format": "CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "INVITATION"
+  ],
+  "why": "artist-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "阿川泰子",
+   "Agawa, Yasuko",
+   "Yasuko Lovebird",
+   "MISS A",
+   "Yasuko, Love‐Bird",
+   "麻里 とも恵",
+   "佐藤康子",
+   "麻理ともえ"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b"
+ },
+ {
+  "artist": "高橋真梨子",
+  "album": "BLUESette",
+  "year": 1987,
+  "rgMbid": "7a9ce892-0504-4ffb-ae81-6b7ff3b26c17",
+  "country": "JP",
+  "format": "CD/Digital Media",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "INVITATION"
+  ],
+  "why": "artist-search-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "高橋真梨子",
+   "Takahashi, Mariko",
+   "髙橋真梨子",
+   "Mariko Takahashi",
+   "高橋まり",
+   "高橋 真梨子",
+   "たかはし まりこ"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b"
+ },
+ {
+  "artist": "国府弘子",
+  "album": "More Than You Know",
+  "year": 1987,
+  "rgMbid": "4f0505d3-e441-4374-a737-309864765fe0",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "JVC"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（同義字串全掃過）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "国府弘子",
+   "Kokubu, Hiroko",
+   "Hiroko Kokubu"
+  ],
   "period": "jp-1",
   "genre": "jazz",
   "g": "b"

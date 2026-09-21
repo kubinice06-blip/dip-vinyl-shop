@@ -15,7 +15,8 @@ Blue Note 線（c-148…c-172，839 張）已收尾。這條線接手 `batch-pro
 → `c126` → `c103plus` → `c93plus`，**一字不改**。共通五條照 `CURATION-BRIEF-c128-c130.md` 第〇節。
 **沒有 §1.5 獨立閘。**
 ⚠ **`CURATION-BRIEF-bluenote-post1985.md` 的「附錄二（雲端線實測）」照用**——
-allmusic／allaboutjazz 在雲端一律 403、`itunes.apple.com/search` 間歇 403、
+allmusic／allaboutjazz 在雲端一律 403、`itunes.apple.com/search` **間歇性 403，不是恆定**
+（第 1853-B 條：c-173 b 組 11 次全部 200、us／jp 皆通，3 筆掛名是靠 Apple jp 定案的；**仍要備援**）、
 `api.discogs.com/releases/<id>` 的完整 credits 是必跑的（`search` 摘要的 `extraartists` 只回 4 筆）、
 Discogs `tracklist` 含 `position` 為空的標題列。
 
@@ -38,18 +39,40 @@ Discogs `tracklist` 含 `position` 為空的標題列。
 | 批 | 張數 | 年份 | 廠牌分佈 |
 |---|---|---|---|
 | c-173 | 41 | 1958–1969 | コロムビア14 King13 Victor13 東芝1 |
-| c-174 | 41 | 1969–1971 | コロムビア28 Victor6 東芝4 King3 |
-| c-175 | 41 | 1971–1973 | コロムビア17 Victor10 東芝9 King5 |
-| c-176 | 41 | 1973–1977 | コロムビア18 Victor11 東芝10 King2 |
-| c-177 | 41 | 1977–1979 | Victor18 東芝9 King7 コロムビア7 |
-| c-178 | 41 | 1979–1981 | King17 Victor13 コロムビア6 東芝5 |
-| c-179 | 41 | 1981–1982 | コロムビア17 東芝10 King8 Victor6 |
-| c-180 | 41 | 1982–1984 | King12 コロムビア11 Victor11 東芝7 |
-| c-181 | 40 | 1984–1987 | Victor17 King9 東芝8 コロムビア6 |
-| c-182 | 40 | 1987–1989 | 東芝15 Victor14 King8 コロムビア3 |
+| c-174 | 37 | 1969–1971 | コロムビア22 東芝6 Victor6 King3 |
+| c-175 | 37 | 1971–1975 | コロムビア16 Victor9 東芝7 King5 |
+| c-176 | 37 | 1975–1977 | コロムビア16 東芝10 Victor10 King1 |
+| c-177 | 37 | 1977–1979 | Victor18 King13 コロムビア4 東芝2 |
+| c-178 | 37 | 1979–1981 | コロムビア14 King9 Victor9 東芝5 |
+| c-179 | 37 | 1981–1983 | King13 東芝9 Victor8 コロムビア7 |
+| c-180 | 37 | 1983–1984 | コロムビア13 King9 Victor8 東芝7 |
+| c-181 | 37 | 1985–1987 | Victor21 東芝8 King5 コロムビア3 |
+| c-182 | 36 | 1987–1989 | 東芝15 Victor10 King8 コロムビア3 |
+
+⚠ **c-174…c-182 在 c-173 交件後重切過**（第 1849-B 條）：原本各 40–41 張，
+**`jp1-pool-recheck.mjs` 重算確定撞池的 35 筆已剔除**，所以現在是 36–37 張。
+**c-173 的 41 張維持原樣**（它跑完才發現這件事）。
 
 每批的 `batch-progress/c1XX/slice.json` 已切好（`g: "a"` 前半、`g: "b"` 後半），每筆帶
 `artist／album／year／rgMbid／country／format／live／poolString／house／entities／why／nReleases／note`。
+
+⚠ ⚠ **`inPool` 這一欄整欄作廢，不要看它**（第 1849-B 條）。列舉檔的池比對日是 2026-09-15，
+而 **c-131…c-134 那四批日本爵士是之後才落地的**，吃掉的正是這條線前半的年段
+（c-173 實測 **41/41 假陰性、實際撞池 13 張**）。
+
+**c-174 起的 slice 改掛 `poolRecheck` 與 `artistVariants` 兩欄**，由
+`node batch-progress/jp1-pool-recheck.mjs` 產生（每個掛名向 MB 問 `artist?query=`，
+把 `name`／`sort-name`／`aliases` 收成同義字串集，再掃 `seed_cards.json` ＋ 本機卡單）：
+
+- `poolRecheck.status` 逐字 **「池中查無此藝人（同義字串全掃過）」** → 這位藝人池中沒有，可以直接做。
+- `poolRecheck.status` 逐字 **「同藝人在池中，盤名不同——逐張人工比」** →
+  `artistAlbumsInPool` 列出這位藝人池中已有的盤（格式 `來源｜掛名｜盤名｜年`）。
+  ⚠ **跨文字系統的盤名比對不可靠**（`Harlem Nocturne` vs `ハーレム・ノクターン`），
+  **腳本刻意不自動判定**——**這一格要你逐張人工比**。撞到就退。
+- `artistVariants` 是該掛名的全部同義字串，**掃池與查店面時兩種文字都要試**。
+
+⚠ **重算只保證「確定撞池」的已被剔除，不保證沒有漏網**：
+腳本對 c-173 的 13 筆實際撞池抓到 12 筆（92%），**剩下那 8% 還是要靠你**。
 
 ## 二、⚠ 你的工作是覆核，不是挑
 
@@ -65,10 +88,14 @@ Discogs `tracklist` 含 `position` 為空的標題列。
    **不要補別張**（下一批清單已固定）。
    ⚠ **日本藝人要同時試漢字與羅馬字**（池中兩種都有：`渡辺貞夫`、`Hidehiko Matsumoto`），
    MB 別名也要試。
-3. ⚠ ⚠ **年份是本線最大的風險，比 Blue Note 嚴重得多。**
-   列舉檔的 `year` 取 **MB 最早發行日**，而 **MB 對這四家「只建了再發」的比例很高**
-   （`jp-1.md` 逐字：「只建了再發的會顯示再發年」）。
-   **每一筆都要回查原盤年**，主要靠 **Discogs**（日本盤的 Discogs 覆蓋遠優於 MB）：
+3. ⚠ ⚠ **原盤年與原盤盤名，兩件都要量**（第 1851-B 條；**這一段原本寫「年份是本線最大的風險」，
+   c-173 實測不成立**：41 筆只改判 1 筆年份，b 組 20/20 原盤年與 slice 完全一致、18/20 的 release
+   端點直接有 label ＋ catno。**真正在漏的是盤名**——b 組 3 筆（15%）的 RG title 取自再發版，
+   例如 `イージー・リスニングの貴族達`→原題《Gazing The Cygnus》、
+   `決定盤!これぞジャズ・ロック`→《This Is Jazz-Rock》。
+   **照抄再發標題會做出一張盤名自稱「易聽音樂的貴族們」的爵士卡。**）
+   列舉檔的 `year` 與 `album` 都取自 **MB 最早建檔的那一筆**，而 **MB 對這四家「只建了再發」的比例很高**。
+   **每一筆的年與盤名都要回查原盤**，主要靠 **Discogs**（日本盤的 Discogs 覆蓋遠優於 MB）：
    `search` → 讀 `type`（⚠ **master 與 release 混在同一份結果裡；拿 master id 去打 `releases/<id>`
    會回一張完全不同的專輯，而且一樣 200**，第 1839-B 條）→ master 走 `/masters/<id>/versions`。
    改判就在 `rulings.md` 寫明改判前後與依據。
@@ -76,9 +103,24 @@ Discogs `tracklist` 含 `position` 為空的標題列。
    **絕不新造分裂、不自行合併。** ⚠ **漢字／羅馬字是這條線的分裂大宗**，
    `audits/pool-artist-name-splits.md` 要先讀。
    ⚠ **第 964／196／197 條：人名字串與團名字串是可以並存的**，不要把兩者收斂成一個。
-5. **`why` 欄是列舉層判爵士的依據**，四種值：`rg-tag`（最可信）／`artist-tag`／`artist-search-tag`／
-   imprint 推定（最寬鬆）。**`artist-tag` 與 `artist-search-tag` 的要逐張覆核曲風**——
-   這四家什麼都出，演歌／偶像／輕音樂混進來的風險高。**非爵士就退，理由寫進 `rulings.md`。**
+5. ⚠ ⚠ **`why` 欄一律只當線索、不當結論**（第 1850-B 條，**這一段原本寫「`rg-tag` 最可信」，c-173 兩組實測推翻**：
+   a 組 16 筆 `rg-tag` 有 5 筆非爵士、b 組 16 筆有 7 筆非爵士——**MB 的 RG tag 沒有票數門檻**，
+   列舉腳本只看有沒有 `jazz`，同一筆並列的 `easy listening(1)`／`pop(1)` 被忽略）。
+   實際出現的值有七種：`rg-tag`／`artist-tag`／`artist-search-tag`／`artist-disambig`／
+   `pool-jazz-artist`／`imprint`／**`curator-list`**（本窗 7 筆，最不可信）。**不分哪個值，每一筆都要獨立覆核曲風。**
+
+   ⚠ **判準用這一套**（c-173 b 組第 3753 條確立，後九批照此）：
+
+   **退（非爵士）**，任一條成立：
+   1. Discogs `styles` 含 **`Easy Listening`** 或 **`Kayōkyoku`**；
+   2. Discogs `genres` 含 **`Folk, World, & Country`**（Discogs 把演歌／歌謡曲歸在這個桶）；
+   3. **曲目過半是日本歌謡曲／演歌**（即使 genre 只寫 Jazz）；
+   4. 藝人的整份 Discogs 目錄落在ムード／ソフト・コーラス／イージー・リスニング 系列。
+
+   **收（爵士）**：Discogs `genres` 為 Jazz（或 Jazz/Rock）且 `styles` **不含** Easy Listening／Kayōkyoku，
+   且曲目是爵士標準曲或原創曲。
+
+   **非爵士就退，理由與命中的條號寫進 `rulings.md`。退件不補張。**
 6. **`releaseType`**：列舉層已濾掉 Compilation／Soundtrack；**`live: true` 的收但要標**（本窗 45 張）。
    ⚠ **第 397 條：`secondary-types` 兩個方向都會漏**——盤名帶「ライヴ」「実況」「at ○○」的要再看一次。
 7. **廠牌欄**：`entities` 是 MB 的廠牌實體名，**不等於盤面印的廠牌**
