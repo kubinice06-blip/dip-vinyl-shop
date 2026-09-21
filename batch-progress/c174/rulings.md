@@ -1144,3 +1144,342 @@ jp 掛名 `富樫雅彦`／us 掛名 `Masahiko Togashi`，兩市皆有整張與 
 `batch-progress/c175/*`（⚠ 工作區有別的工作階段未提交的 `c175/rulings.md` 改動，**全程未觸碰**）、KV、Firestore。
 **未執行任何 git 指令**（不 add／不 commit／不 push／未動索引）。
 中間檔全部在 scratchpad 的 `c174rec/`（`q.py`／`write.py`／`cache/`）。
+
+---
+
+批次 c-174｜研究層 b 組｜2026-09-21｜編號區間 **4011–4030**（本節只 append，3975 以前一行未動；寫入前以 `git show HEAD:batch-progress/c174/rulings.md` 與工作區逐行比對過，兩者相同，a 組尚未寫入）
+
+產出：`desc-tools/batches/research/c174-b.json`（`group === "b"` 的 7 張）。
+
+## 4011　總表：**7 張全部 `full`，thin 0 張；facts 合計 84 條，每張恰好 12 條**
+
+| # | 卡 | facts | status／coverage | 相異 `src` |
+|---:|---|---:|---|---:|
+| 1 | 宮間利之とニューハード + 佐藤允彦《Canto of Libra》 | **12** | full／full | 6 |
+| 2 | 横田年昭とビート・ジェネレーション《Flute Adventure: Le Soleil Était Encore Chaud》 | **12** | full／full | 9 |
+| 3 | 村岡実《Bamboo》 | **12** | full／full | 6 |
+| 4 | The Freedom Unity《Down By The Naked City》 | **12** | full／full | 7 |
+| 5 | 渡辺香津美《Infinite》 | **12** | full／full | 7 |
+| 6 | 佐藤允彦 & ウォルフガング・ダウナー《Pianology》 | **12** | full／full | 7 |
+| 7 | 山下洋輔トリオとブラス12《Introducing Takeo Moriyama》 | **12** | full／full | 7 |
+
+全批 **84 條 facts、46 個相異 `src`，每一條都是完整可開啟的 `https://` 網址**（以 `/^https:\/\/\S+$/` 逐條驗過）。
+`status` 與 `coverage` 兩欄同值並存。`hookCandidates` 每張恰好 2 條，`keyTracks` 每張 3 首。
+
+## 4012　**thin 0 張**——本年段比 c-173 更不需要標 thin，理由
+
+派工信第二節警告「一手史料比 Blue Note 稀薄，查不到不要編」。**實測 7 張全部輕鬆過 12 條**，
+原因是 **1969–1971 這個年段多了兩口 c-173 沒有的井**：
+
+1. **原廠商品頁不只有日本コロムビア**。本組四家廠牌裡有三家都查到了現役的官方商品頁：
+   `columbia.jp`（《Canto of Libra》的 2005 CD）、`universal-music.co.jp`（《Infinite》的 2022 SHM-CD，
+   東芝EMI 目錄的權利繼承者）、`kingrecords.co.jp`（《Bamboo》的 2018 SHM-CD）。
+   **三張都直接拿到了原廠層級的錄音日／編制／獎項**，見第 4017 條。
+2. **1970 年前後出道的樂手，日文維基條目密度遠高於 1950 年代的側錄樂手**。
+   本層查了 30 個日文維基條目，**22 命中、8 missing**——c-173 是 36 命中／18 missing。
+   命中的還都是長條目（渡辺香津美 11,893 字元、山下洋輔 7,856、佐藤允彦 5,368）。
+
+**最接近 thin 的是《Down By The Naked City》**：五名樂手裡 稲葉国光 與 鈴木弘 的日文維基皆無可用條目
+（⚠ `鈴木弘` 該條目是一位 1952 年赫爾辛基奧運的游泳選手，**不是本卡的長號手**，本層已排除，後八批注意），
+村岡建 只有 Discogs 藝人頁一層。它仍達 12 條，靠的是兩次復刻的 credits 與樂團自己 1971 年的五張碟。
+
+## 4013　推翻／補正策展層：**共 9 處，分佈在 6 張卡上**（逐處前後與依據）
+
+**A 類：事實錯誤（4 處，facts 用正確版本，卡的 `notes` 已逐條寫明）**
+
+| # | 卡 | 策展層逐字 | 實際 | 依據 |
+|---:|---|---|---|---|
+| 1 | Down By The Naked City | `curatorRisk`：「本盤在 MB 與 Discogs **都只有 1971 原壓一版，沒有再發可混淆**」；`mbNote`：「Discogs master 1125540 轄下亦只有 1971 原壓一版」 | **有兩次再發**：2009-06-25 Hayabusa Landings／Birdsong **BIRD-2017** 紙盒 CD（Victor Entertainment 授權、解說 松井巧）、2016-08-31 Victor World Group **HRLP039** 黑膠（Deep Jazz Reality／Project Re:Vinyl／Universounds 三條系列、再發製作 尾川雄介） | `masters/1125540/versions`、`releases/2109178`、`releases/9155922` |
+| 2 | Canto of Libra | `mbNote`：「Discogs master 744772 轄下 **3 版**」 | **4 版**，漏的是 **1976 年黑膠再發 Columbia SW-7032**（Glory Of Dynamic Jazz In Japan 系列、瀬川昌久 監修、附 児山紀芳 訪問 宮間利之 與 佐藤允彦 的插頁）與 **2005-12-21 首次 CD 化 COCB-53493** | `masters/744772/versions`、`releases/7177256`、`releases/6133261` |
+| 3 | Canto of Libra | `curatorWhy`：「extraartists 逐筆列出**二十三名樂手**」 | extraartists 共 **22 筆**，其中 3 筆是 Sleeve Notes、1 筆 Composed By、1 筆 Leader；**實際演奏者 18 人**（與 `columbia.jp` 官方頁連領班共十八人的團員表一致） | `releases/5617899`、`columbia.jp/prod-info/COCB-53493/` |
+| 4 | Introducing Takeo Moriyama | `mbNote`：「Discogs master 798979 轄下 **4 版**」 | **6 版**，漏的兩筆正是本卡最有價值的一格——**1978-09-05 的再發把盤名整個換成《Gugan》**（ETJ-60005 市售 `releases/4851985` ＋宣傳 `releases/18323200`），原盤名降成副標 | `masters/798979/versions` |
+
+**B 類：不完整／漏列（3 處，已補進 facts）**
+
+| # | 卡 | 補了什麼 |
+|---:|---|---|
+| 5 | Infinite | `mbNote` 說 master 836570「轄下 1971 市售與宣傳兩版」——實際 **7 版**：另有 1978-08-05 的 **Express／Far East ETJ-60001**（市售＋宣傳）、1995 TOCT-9217、2011 Think! DTHK-009、2022 Universal **UCCJ-4185**（JAPANESE JAZZ REVISITED 企劃，首次 SHM-CD 化） |
+| 6 | Pianology | `mbNote` 說 master 738733「市售與宣傳兩版」——實際 **6 版**：另有 1978 年 **ETJ-65017**（市售＋宣傳，Far East Jazz Series）、1996 TOCT-9364，以及 2016 年一張歐洲非官方盤（Victory VP9030，**本層未寫進 facts**） |
+| 7 | Bamboo | `mbNote` 說 master 537797「含 1970 原壓兩版與 Mr Bongo 三版」——實際 **15 版**：另有 2007／2012／2018 三次 King CD、2014 年法國 Superfly SRLP015、Mr Bongo 共 6 筆（含 test pressing 與 promo），以及**一張西班牙白標試壓 Discográfica Talar, S.A. TKS 4034** |
+
+**C 類：本層查出的新分歧，未裁定、兩說並陳（2 處）**
+
+| # | 卡 | 分歧 |
+|---:|---|---|
+| 8 | Canto of Libra | **錄音日兩說**：`columbia.jp` 官方頁「1970年7月1日、日本コロムビア第1スタジオ」vs Discogs 對**同一張 2005 CD** 的 notes「Recorded in Tokyo on July 15 & 18, 1970」；原盤封底只寫「Recorded July 1970」。facts 只寫到「1970 年 7 月」與官方頁那一句的逐字引用。**另一處同卡分歧**：1970 原盤把 佐藤允彦 只掛 Composed By＋Sleeve Notes、官方頁團員表也沒有他（鋼琴是 今城嘉信），但 **2005 CD 的 credits 把他掛成 Piano, Celesta, Composed By, Arranged By** |
+| 9 | Down By The Naked City | **作曲歸屬兩份再發打架**：2009 CD 把〈Down By The Naked City〉〈The Old Castle〉〈Light Up〉掛給 **鈴木宏昌**（電鋼琴），2016 LP 把同三首掛給 **鈴木弘**（長號）；〈The Equator〉兩邊都掛 村岡建。**1971 原盤的 tracklist 根本沒有作曲欄**，本層無第三方可判 |
+
+⚠ **第 1 處是本組最重要的一處，而且是 c-173 第 3847 條的第二個實例**：
+**MB 只建原盤，絕不可推論成「沒有再發」。** 本組 7 張裡有 **5 張**的策展層再發數低估
+（第 1／2／5／6／7 處），**低估率 71%**。
+→ **給 c-175…c-182 的固定動作：要在 `risk`／`mbNote` 寫版本數，一律先打 `masters/<id>/versions?per_page=100`，不要只數 `mbNote` 裡的 release。**
+
+## 4014　⚠ ⚠ 第 4013 條第 1 處展開：「沒有再發」是這條線最容易寫錯的一句話
+
+《Down By The Naked City》在 MB 只有一個 release（策展層 `mbNote` 逐字寫「MB 只建了原盤這一張」，
+這句是對的），但 Discogs master 轄下有三版。**兩次再發的性質都不小**：
+
+- **2009-06-25 Hayabusa Landings BIRD-2017**：向 Victor Entertainment 取得授權的紙盒 CD，帶 OBI 與日文插頁，解說 松井巧。
+- **2016-08-31 Victor World Group HRLP039**：黑膠復刻，封套同掛 **Deep Jazz Reality／Project Re:Vinyl／Universounds** 三條系列名，
+  再發製作 **尾川雄介**——⚠ **與 c-173 第 3848 條第 12 點《Megalopolis》2025 年黑膠復刻的同一位再發製作人與同一條 Project Re:Vinyl 線**。
+  尾川雄介 在本組還出現第三次：2015 年法國 Superfly Records 版《Flute Adventure》的解說也是他。
+
+**結論**：`尾川雄介／universounds` 是這條線橫跨多批的一個節點，**c-173 已把這條串連點分配給《Megalopolis》**，
+本組三張都沾得到，**本層只在卡的 `notes` 記錄、沒有寫進任何一張的 facts**，留給主線決定要不要在本批用掉。
+
+## 4015　⚠ ⚠ 第 4013 條第 4 處展開：《Introducing Takeo Moriyama》1978 年改名叫《Gugan》
+
+`releases/4851985`（Express／Far East **ETJ-60005**，1978-09-05）的 title 逐字是 **`Gugan = グガン`**，
+notes 逐字寫 **`Subtitle "Introducing Takeo Moriyama".`**——**原盤名被降成副標，末曲的曲名升成盤名。**
+同一版另有宣傳盤 `releases/18323200`。該版的封套解說是樂評 **岩浪洋三**（c-173 第 3852 條第 4 點那五位樂評之一）。
+
+**這一格同時解釋了回撈層第 3967 條（新第 12 種：店面把掛名當盤名）為什麼特別難查**：
+這張碟在歷史上**至少有三個檢索字串**——盤名 `Introducing Takeo Moriyama`、
+1978 年的盤名 `Gugan`、以及 Apple 店面用的掛名 `Yosuke Yamashita Trio with Brass 12`。
+→ **建議主線把 `Gugan` 補進這張卡的 `queryAlias`**（現行 `queryAlias` 沒有這個字串）。
+
+## 4016　Canto of Libra 的兩個未決點——為什麼本層不裁定
+
+1. **錄音日**：`columbia.jp` 是原廠頁（權重最高），但 Discogs 轉錄的是**同一張 2005 CD 的實體 notes**（權重也不低），
+   兩者一個寫 7 月 1 日、一個寫 7 月 15 與 18 日。**本層沒有第三個來源**，照 c-173 第 3850 條的處理方式，
+   facts 只寫到「1970 年 7 月」這一層，**寫作層不得挑一個日子當定論**。
+2. **佐藤允彦 有沒有下場彈**：1970 原盤與官方頁團員表都指向「他只寫不彈」，2005 CD 的 credits 指向「他彈鋼琴與鋼片琴」。
+   ⚠ **這一點特別危險**，因為它直接決定寫作層能不能寫「兩台鋼琴」或「他坐進鋼琴椅」。
+   卡的 `notes` 已逐字寫明兩邊，**facts 只寫「作曲欄從頭到尾只掛一個名字」與那份十八人的團員名單**。
+
+## 4017　⚠ ⚠ 本層最有價值的來源發現：**原廠商品頁在 1969–1971 年段是三家都有，不只コロムビア**
+
+c-173 第 3845 條只證實了 `columbia.jp`。本組把它擴成三家，**三次都直接解決了策展層拿不到的東西**：
+
+| 卡 | 網域與頁面 | 官方頁逐字給了什麼（策展層沒有的） |
+|---|---|---|
+| Canto of Libra | `columbia.jp/prod-info/COCB-53493/` | 「**1970年7月1日、日本コロムビア第1スタジオにて録音**」、**連領班共十八人的完整團員表**、**「スイングジャーナル主催ジャズ・ディスク大賞 1970年度日本ジャズ賞」**（獎項，策展層完全沒有）、「初CD化」 |
+| Infinite | `universal-music.co.jp/watanabe-kazumi/products/uccj-4185/` | 分欄的「録音年 1971年5月19日」「録音場所 東京、テイチク・スタジオ」「演奏者 渡辺香津美(g) 植松孝夫(ts) 市川秀男(p) 鈴木良雄(b) 日野元彦(ds)」、「**弱冠17歳で発表した鮮烈なデビュー・アルバム**」、2022 年 JAPANESE JAZZ REVISITED 企劃的內容（從ポリドール／日本フォノグラム／キティ／**東芝EMI** 四家目錄挑 30 張） |
+| Bamboo | `kingrecords.co.jp/cs/g/gKICJ-2645/` | A 面與 B 面**逐面分開的編制表**（琴／琵琶／鼓／和太鼓セット／b 與兩個伴奏團體對到軌）、KING LEGENDARY JAZZ COLLECTION 50 的**商品號區間 KICJ-2611～2660** 與**監修暨解說 小川隆夫** |
+
+⚠ **`columbia.jp` 的兩種網址在本組的結果與 c-173 相反**：本組 `prod-info/<catno>/` **一次就 200**
+（c-173 記的是 `prod-info` 全 404、要走 `artist-info/<slug>/discography/<catno>.html`）。
+→ **兩種都要試，順序不重要，不要因為 c-173 的經驗就跳過 `prod-info`。**
+
+⚠ **`kingrecords.co.jp` 的 `/cs/g/g<catno>/` 命中率只有 1/7**：`KICJ-2645` 回 200，
+`KICJ-2649`／`KICS-2536`／`KICS-2535`／`KICJ-2286`／`KICJ-2288`／`NAS-2095` **全部 404**。
+**King 的舊商品頁大量下架，查不到不代表沒有這個商品號**（六個 404 的商品號在 Discogs 上都有實體）。
+
+⚠ **東芝／EMI 的原廠頁要去 `universal-music.co.jp` 找，不是東芝**：東芝音楽工業 1973 年因英國 EMI 入股改名東芝EMI，
+2013 年被ユニバーサル ミュージック 吸收合併，**Express 目錄現在掛在 Universal 名下**。本組兩張東芝盤
+（Infinite／Pianology）只有 Infinite 有現役商品頁（2022 年 UCCJ-4185），Pianology 沒有。
+
+## 4018　來源網域實測（本工作階段逐一記錄）
+
+**可用**：
+
+| 網域 | 本層用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（`releases/`／`masters/<id>/versions`／`artists/`／`database/search`） | **29 次** | **全數 HTTP 200**，免 token，自我節流 3.2 s／次，**0 次 429／503** |
+| `ja.wikipedia.org/w/api.php`（`prop=extracts&explaintext=1`） | **30 次** | 全數 200，0.7 s 間隔，**22 命中／8 missing** |
+| `en.wikipedia.org/w/api.php` | 5 次 | 全數 200 |
+| `columbia.jp`（`prod-info/` 與 `artist-info/`） | 3 次 | **全數 200**（⚠ 與 c-173 的「prod-info 全 404」相反） |
+| `universal-music.co.jp`（商品頁） | 1 次 | 200，127 KB |
+| `kingrecords.co.jp`（`/cs/g/g<catno>/`） | 7 次 | **1 次 200、6 次 404**（404 也回 15 KB 的頁面，**要看內容不能看長度**） |
+
+**查無條目的日文維基人名／團名（本層逐字查過，全部回 `missing`）**：
+`宮間利之`／`宮間利之とニューハード`／`横田年昭`／`村岡建`／`稲葉国光`／`植松孝夫`／`児山紀芳`／`堅田喜三久`。
+→ **給後八批**：**大樂團的團長與團名在日文維基普遍沒有條目**（宮間利之 兩種寫法都沒有），
+但**團員反而有**（山木幸三郎 有、石川晶 有）——**查大樂團要從團員的條目往回查團**。
+
+⚠ **同名陷阱**：`鈴木弘` 的日文維基條目是**游泳選手**（1952 年赫爾辛基奧運銀牌），不是爵士長號手；
+`中村誠一` 回的是**消歧義頁**（考古學者／ミュージシャン／長州藩士／陸軍軍人／小說家／俳優六個人），
+`中村誠一 (ミュージシャン)` 這個條目名**不存在**。**日文維基回了東西不等於回對了人，要讀開頭那一句。**
+
+**本層未使用**：`allmusic`／`allaboutjazz`（派工信已標 403，未試）、`jazzdisco.org`（本組全是日本本土盤，該站覆蓋美國廠牌）、
+`junkoonishi.com`（禁用）、`itunes.apple.com`（策展層與回撈層已各自查過本組 7 張的店面，
+第 254 條的觀察都寫在卡單與第 3961–3974 條，**研究層沒有必要重跑**，沿用 c-173 第 3846 條的做法）。
+
+## 4019　曲風覆核：**7 張全部維持收件，一張都沒有翻案**
+
+第 3753 條四款逐張再驗，逐條不成立。要特別交代的兩張：
+
+- **《Bamboo》**（策展層第 3819 條的邊界收件）：本層**完全同意**，並補上一層策展層沒有的獨立佐證——
+  **日文維基 村岡実 條目逐字把本作寫成「和太鼓、筝、琵琶を取り入れたジャズバンド」的專輯**，
+  並列出全九軌。九軌裡日本素材確實只有〈最上川船唄〉**一首民謡**，其餘是 Take Five、兩首日本人寫的原創器樂曲
+  （池田孝〈陰と陽〉9:23、山木幸三郎〈ソウル・バンブー〉）與五首英美流行曲。
+  第 3 款（過半歌謡曲）與第 4 款（藝人整份目錄落在ムード系列）**明確不成立**。
+  ⚠ 行文照策展層要求：**寫成尺八跨界盤，不得寫成邦樂／民謡盤，也不得寫成純硬派爵士。**
+- **《Flute Adventure》**：Discogs `styles` 是 Free Jazz／Soul-Jazz／Jazz-Rock、`genres` 只有 Jazz，四款全不中；
+  B 面四首是 Orfeu 系的巴西曲目，**不是日本歌謡曲**。收件成立。
+
+## 4020　獎項：逐項分「得獎／入圍」——本批**三項全部是得獎，一項入圍都沒有**
+
+| 獎項 | 得主與作品 | 得獎還是入圍 | 依據 |
+|---|---|---|---|
+| スイングジャーナル 主辦ジャズ・ディスク大賞 **1970 年度日本ジャズ賞** | 本卡《Canto of Libra》 | **得獎** | `columbia.jp` 官方頁把它與「初CD化」並列在作品資訊欄 |
+| 同上（**1969 年度**） | 佐藤允彦《Palladium》 | **得獎**（日文維基逐字「受賞」） | ja.wikipedia 佐藤允彦 |
+| **芸術祭優秀賞**（1970 年） | 佐藤允彦《四つのジャズコンポジション》 | **得獎**（逐字「受賞」） | ja.wikipedia 佐藤允彦 |
+| 藤村記念歴程賞（1970 年） | 粟津則雄《詩人たち》《詩の空間》 | **得獎**（條目的「受賞・栄典」節） | ja.wikipedia 粟津則雄 |
+
+⚠ **本層擋下、沒有寫進 facts 的一項**：`columbia.jp` 那一句「スイングジャーナル主催ジャズ・ディスク大賞 1970年度日本ジャズ賞」
+**沒有寫第幾屆**，本層也查不到屆次，所以 facts 只寫年度與獎項名，**沒有寫屆次**。
+另，**《四つのジャズコンポジション》與本卡是不同的兩張碟**（前者在池中已有，1970 年，c-13x 補的），
+facts 已把兩者分開寫，**寫作層不得把芸術祭優秀賞掛到本卡頭上**。
+
+## 4021　反向禁令的分類處理（逐項）
+
+**第一類（與作品直接綁定，已寫進 facts 並標明時序）**：
+各張的復刻史（本組七張全部有，最長的《Bamboo》橫跨 1970–2021）、
+《Introducing Takeo Moriyama》1978 年改名《Gugan》再發、
+森山威男 1975 年底離開 山下洋輔トリオ（那一組編制的終點）、
+1972 年 坂田明 接替 中村誠一（同上）。
+
+**第二類（與作品無關的後續生平，一律未寫，只取生卒年）**：
+渡辺香津美 2024 年腦幹出血與療養、日野元彦 1999 年病逝的病名、中牟礼貞則 2026 年辭世、
+村岡実 2014 年辭世、石川晶 2002 年在肯亞辭世與晚年的非洲活動、鈴木宏昌 2001 年病逝、
+粟津則雄 2024 年辭世、児山紀芳 2019 年辭世、Wolfgang Dauner 2020 年辭世、油井正一 1998 年辭世。
+⚠ **這一批的生卒年密度很高（本組 facts 裡出現 14 組生卒年），寫作層引用時只寫年份、不展開死因。**
+
+## 4022　⚠ ⚠ 下游最容易寫錯的八點（鉤子層與寫作層必讀）
+
+**這一條是本節最重要的一條。**
+
+1. ⚠ ⚠ **`村岡実` 與 `村岡建` 是兩個人，而且兩個人都在本組**：
+   `村岡実`（Minoru Muraoka，1924 年生，**尺八**）是《Bamboo》的掛名；
+   `村岡建`（Takeru Muraoka，1941 年 1 月 12 日生，**次中音／高音薩克斯風**）是《Down By The Naked City》的前線。
+   **連 King Records 自家的官方商品頁都踩過**——2018 年 KICJ-2645 的商品頁把《バンブー》的掛名印成
+   「**村岡建とヒズ・ニュー・グループ**」，同頁的編制欄卻仍逐字寫「村岡 実（尺八）」。
+   **行文出現「村岡」兩字一律帶全名。**
+2. ⚠ ⚠ **《Introducing Takeo Moriyama》不掛在 森山威男 名下**：盤名點的是他、四首有三首是他寫的、
+   碟名就是在介紹他，**但掛名是一次性的擴編字串 `山下洋輔トリオとブラス12`**。
+   不得併進池中的 `山下洋輔トリオ`（6 張）或 `森山威男`（3 張，含 apex:pearl《East Plants》1983）。
+   **這張碟的正確講法是「山下洋輔的三重奏加十二人銅管，替自己的鼓手做的一張碟」。**
+3. ⚠ ⚠ **《Pianology》的盤名是 `Pianology`，不是 `Pianorogy`**。後者是 Apple 店面的 l／r 誤植
+   （策展層第 3815 條、回撈層第 3966 條都記過）。本層 facts 與 `sound` 全篇沒有出現那個錯字，下游也不得出現。
+4. ⚠ **《Canto of Libra》不能寫「兩台鋼琴」**：見第 4016 條第 2 點，佐藤允彦 有沒有演奏兩份 credits 打架。
+   安全的寫法只有「五個樂章的作曲欄從頭到尾只有他一個名字」。
+5. ⚠ **《Down By The Naked City》的作曲者不能只寫一個人**：見第 4013 條第 9 處，
+   **鈴木宏昌（電鋼琴）與鈴木弘（長號）兩份再發各掛一個**，兩人都姓 Suzuki。
+6. ⚠ **錄音室名稱**：《Introducing Takeo Moriyama》1971 原盤寫 **`Toshiba Studio`**，
+   2013 年 CD 的 notes 寫 `Toshiba-EMI Studio`——**東芝音楽工業 要到 1973 年英國 EMI 入股後才改名東芝EMI**，
+   1971 年不可能叫 Toshiba-EMI。**一律寫「東芝スタジオ」。**
+7. ⚠ **兩個「粟津」不是同一人**：《Flute Adventure》封套解說的是**文藝評論家 粟津則雄**（1927–2024，法政大学，譯介 Rimbaud）；
+   而 山下洋輔 1973 年主演的《ピアノ炎上》是**平面設計師 粟津潔**的作品。**兩人都會出現在本組的查證路徑上。**
+8. ⚠ **年齡**：渡辺香津美 生於 1953-10-14，《Infinite》發行於 1971-09-25，**差十九天滿十八歲**——
+   一律寫**十七歲**（ユニバーサル 官方頁逐字也是「弱冠17歳」）。**不要寫十八歲，也不要寫「未成年」這種法律用語。**
+
+## 4023　跨卡串連點（**每一條只能用在一張卡上**，鉤子層分配時當稀缺資源）
+
+| 串連 | 涉及的卡 | 建議給誰 |
+|---|---|---|
+| **山木幸三郎**：ニューハード 的吉他手兼團內編曲，同時是《Bamboo》B 面五首的編曲者與〈ソウル・バンブー〉的作曲者 | 《Canto of Libra》 ↔ 《Bamboo》 | **《Bamboo》**（在那張他是編曲主角，在 Canto 只是吉他席之一） |
+| **市川秀男**（1945 年生）同時是《Flute Adventure》與《Infinite》的鍵盤手 | 《Flute Adventure》 ↔ 《Infinite》 | **《Flute Adventure》**（《Infinite》的編制已經有更強的格） |
+| **中牟礼貞則** 是《Flute Adventure》的吉他手，也是 渡辺香津美 的老師 | 《Flute Adventure》 ↔ 《Infinite》 | **《Infinite》**（師承是那張的核心） |
+| **石川晶** 進 The Freedom Unity 之前是 宮間利之とニューハード 的鼓手 | 《Down By The Naked City》 ↔ 《Canto of Libra》 | **《Down By The Naked City》** |
+| **佐藤允彦 與 鈴木宏昌** 是慶應義塾大学経済学部 的「慶應三羽烏」（另一位是 大野雄二），綽號「コルゲン」原本是佐藤的 | 《Down By The Naked City》 ↔ 《Canto of Libra》／《Pianology》 | **《Down By The Naked City》**（佐藤那兩張各自有更強的格） |
+| **King 的 `SKK(x)` 號段**用括號字母區分授權外國字標：(L)=London、(U)=United Artists | 《Flute Adventure》 ↔ 《Bamboo》 | **《Flute Adventure》**（《Bamboo》的格是尺八與兩種伴奏） |
+| **東芝的 `ETJ-6000x`「Far East Jazz Series」**1978 年把三張本組的碟一起再發（Infinite=60001、Gugan=60005、Pianology=65017） | 三張東芝盤都沾得到 | 建議 **《Introducing Takeo Moriyama》**（它是唯一被改掉盤名的那張） |
+| **尾川雄介／universounds** 是《Down By The Naked City》2016 黑膠的再發製作、《Flute Adventure》2015 法國版的解說 | 兩張 | **c-173 第 3853 條已把這條分配給《Megalopolis》**，建議本批**不用** |
+| **Joachim-Ernst Berendt** 籌辦過大阪萬博的爵士企劃；佐藤允彦 1970 年替萬博地方自治體館寫過館內音樂 | 《Pianology》 | **《Pianology》**（⚠ 但見第 4027 條，不得寫成因果） |
+
+## 4024　`hookCandidates`／`sound`／`keyTracks` 自我檢查
+
+- **`hookCandidates` 每張恰好 2 條**，7 張共 14 條，**逐條比對過沒有跨卡同構**。
+  ⚠ 初稿有兩組同構、已改掉並記在這裡：
+  （a）《Flute Adventure》與《Down By The Naked City》原本都寫「A 面整面一條長曲」——
+  後者改成「這支團的錄音全部擠在 1971 那一年」；
+  （b）《Flute Adventure》與《Pianology》原本都走「credits 裡出現意外的文人／樂評」——
+  後者改成「佐藤允彦 手上還有一台電大鍵琴」。
+- `sound` 每張一段，寫的是編制與織度，**沒有把 facts 照抄**。
+- `keyTracks` 每張 3 首，曲名照盤面：
+  ⚠ 《Bamboo》三首用片假名（陰と陽／ソウル・バンブー／テイク・ファイブ，盤面九軌全是「片假名 = 英文」對照，取片假名側）；
+  ⚠ 《Infinite》用通行曲名 `Here's That Rainy Day`、**不用盤面誤植的 `Here That Rainy Day`**，
+  照策展層 `curatorRisk` 逐字要求，誤植本身已寫進 facts；
+  ⚠ 《Flute Adventure》的 A 面整條，盤面寫成「組曲“太陽はまだ暑く燃えていた･･･"」（Discogs 的轉錄連結尾引號都缺、
+  刪節號用的是半形片假名中點），本層收斂成與盤名日文題一致的 `太陽はまだ暑く燃えていた…`，
+  **這是全批唯一一處沒有逐字照 Discogs 抄的曲名**，已寫在該卡 `notes`。
+
+## 4025　交件自檢（`qa-batch` 與逐張人工量測）
+
+`node qa-batch.mjs research c174`（工作目錄 `desc-tools/`）：
+
+```
+b 7 full,full,full,full,full,full,full
+```
+
+**b 組 0 標記。** 同一次執行另有兩個標記，**兩個都不是本組的**：
+（a）`⚠ research-a 簡體字: 国双会`——a 組的檔；
+（b）`⚠ key 集合與卡單不一致`——a 組交件中、`c174-a.json` 當時只有 6→9 張（卡單 a 組 12 張），
+本層另以程式逐一比對過 **b 組 7 個 `key` 與 `c174-cards.json` 中 `group === "b"` 的 7 筆逐字相同、順序也相同**。
+
+逐張人工量測：
+
+- `facts` 條數：**7 張全部恰好 12 條**（上限），無低於 8 者。
+- 每條 `src`：**84 條全部是完整可開啟的 `https://` 網址**（`/^https:\/\/\S+$/` 逐條驗過），**0 條描述型 src**；相異來源 46 個。
+- 簡體字：以獨立的嚴格字表（排除日文新字體與正體同形字）掃過整檔，只剩 `内`（`山内喜美子`）與 `体`（盤名《原始共同体》）
+  **兩處，都是專名、照原文字形抄**，依 `research-base.md` 字元條的規定不得改寫。
+- 千分位逗號：以 `/\d{1,3}(?:,\d{3})+(?!\d)/` 掃過，**0 處**（初稿有 5 處日圓定價 `¥2,000`／`¥1,500`／`¥1,950`，
+  已改寫成「兩千日圓」「一千五百日圓」「一千九百五十日圓」）。
+- 半形逗號貼中文：以 `/[㐀-鿿],|,[㐀-鿿]/` 掃過，**0 處**。
+- `hookCandidates`：**每張恰好 2 條**。
+- 獎項「入圍／得獎」：見第 4020 條，**四項全部是得獎**，無一項寫成兩可的「獲得」。
+- `status` 與 `coverage`：**7 張兩欄同值並存**（全部 `full`）。
+- Markdown 粗體：`facts[].f` 裡**不留 `**`**（初稿有 1 處，已清掉；`notes` 保留粗體，它不進寫作層正文）。
+- 非拉丁文字：行文只在**專名**（藝人名、團名、盤名、曲名、廠牌名、日文獎項名與系列名）裡使用假名與日文漢字，
+  **沒有把一般名詞寫成日文**；諺文與西里爾字母 0 處。
+
+## 4026　⚠ ⚠ 派工信 §五 與 §七 衝突：`jp-proper-names.json` 加了兩筆（本層唯一的第三個檔）
+
+派工信 **§五逐字**：「遇到新的日文專名被誤報，**把整個專名加進那個檔**，不要改寫正文去規避（第 1866-B 條）」；
+派工信 **§七逐字**：「**只准動** `desc-tools/batches/research/c174-b.json`（新增）與 `batch-progress/c174/rulings.md`（append）」。
+**兩節直接衝突。** 本層照 **§五**（它是針對這個檔案與這個情境的具體指示，且帶條號），並在此逐字記錄，供主線覆核：
+
+`desc-tools/jp-proper-names.json` **只 append 兩個字串、未刪未改任何既有項**，12 筆 → **14 筆**：
+
+1. `国立音楽大学`（山下洋輔 的母校，`国` 命中 `SIMP` 表）
+2. `国定正夫`（ニューハード 的貝斯手，同上）
+
+⚠ **a 組代理同時在寫這個檔的可能性存在**（本層寫入時 a 組的 `簡體字: 国双会` 標記仍在，代表他們也會遇到）。
+本層採 **read → 檢查不存在才 append → write** 的方式，**未使用整檔覆寫的既有內容**；
+**若主線在 diff 裡看到這個檔多於兩筆新增，那多出來的是 a 組加的，不是本層。**
+
+## 4027　本層刻意**沒有**寫進 facts 的三條推測（標 uncertain，留給下游不要用）
+
+1. **《Pianology》A3 的〈For Chinatsu And Regina〉**：`Chinatsu` 很可能指 佐藤允彦 的前妻、作家 **中山千夏**
+   （日文維基記兩人 **1971 年結婚**、1978 年離婚，正是本作發行的同一年），`Regina` 可能是 Dauner 那一方的人名。
+   **沒有任何來源把曲名與這兩個人連起來。寫作層不得寫成「獻給妻子的曲子」。**
+2. **《Pianology》與大阪萬博**：Berendt 籌辦過大阪萬博的爵士企劃（en.wikipedia），佐藤允彦 1970 年替萬博地方自治體館寫過館內音樂
+   （ja.wikipedia），**兩件事都成立、都在 1970 年，但沒有任何來源說這張碟是萬博促成的**。
+   facts 兩條並列、沒有因果句。**寫作層不得寫成「兩人在大阪萬博相遇」。**
+3. **《Flute Adventure》與 Rimbaud**：A 面組曲末樂章題〈地獄の夜〉與 Rimbaud《地獄の季節》（Une saison en enfer, 1873）
+   那一章的日譯標題**逐字相同**，封套解說又正好是譯介 Rimbaud 的 粟津則雄——
+   **但沒有來源說這條組曲是照 Rimbaud 寫的**。facts 只寫「標題逐字相同」這一層。
+   ⚠ 另，`首吊りどもの舞踏会` 看起來像 Rimbaud〈Bal des pendus〉的日譯，**本層查不到佐證，一個字都沒寫。**
+4.（附）**《Introducing Takeo Moriyama》的小號手 `Kunio Fujisaki` 與《Canto of Libra》的 `藤崎邦夫`**
+   羅馬字逐字相同、年代吻合，很可能是同一人，**但只有 Discogs 一層來源，未寫進 facts。**
+
+## 4028　給 c-175…c-182 的操作建議（本批已驗證可行）
+
+1. **要寫版本數或「無再發」，一律打 `masters/<id>/versions?per_page=100`**——本組 7 張有 5 張的策展層低估（71%），見第 4013 條。
+2. **原廠商品頁三家都要試**：`columbia.jp`（`prod-info/<catno>/` 與 `artist-info/<slug>/discography/<catno>.html` **兩種都試**）、
+   `universal-music.co.jp`（東芝EMI／Express／ポリドール 目錄的現在權利人）、`kingrecords.co.jp/cs/g/g<catno>/`（命中率低但值得一打）。
+3. **大樂團要從團員的維基條目往回查團**——團長與團名普遍無條目。
+4. **日文維基回了東西要讀開頭那一句**：`鈴木弘` 是游泳選手、`中村誠一` 是消歧義頁（第 4018 條）。
+5. **1978 年東芝的「Far East Jazz Series」（ETJ-6000x／ETJ-65xxx）會改盤名**——看到這個號段先比對曲目。
+6. **`queryAlias` 要補 1978 年再發的盤名**（本組的《Gugan》就是一例），對回撈層直接有用。
+
+## 4029　交付與邊界（自述）
+
+- **動了三個檔**：
+  1. `desc-tools/batches/research/c174-b.json`（**新增**，7 張）；
+  2. `batch-progress/c174/rulings.md`（**只 append 第 4011–4030 條**；寫入前以
+     `git show HEAD:batch-progress/c174/rulings.md` 與工作區逐行比對，兩者相同，**3975 以前一行未動**）；
+  3. `desc-tools/jp-proper-names.json`（**只 append 兩個字串**，理由與衝突說明見第 4026 條）。
+- **未碰**：`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、
+  `desc-tools/batches/cards/*`（唯讀）、**a 組的 `desc-tools/batches/research/c174-a.json`**（唯讀，只為了量 `qa-batch` 的輸出）、
+  `batch-progress/c174/prop-a.json`／`prop-b.json`（唯讀）、`batch-progress/enum/*`、其他批次的任何檔案、
+  KV、Firestore、`desc-tools/qa-batch.mjs`（只執行，未修改）。
+- **未執行任何 git 指令**（不 `add`／不 `commit`／不 `push`／未動索引；只讀性的 `git show` 用了一次，用途見上）。
+- **中間檔全部在 scratchpad 的 `c174rb/`**：`cache/`（29 筆 Discogs、35 筆維基、3 筆 columbia.jp、1 筆 universal、7 筆 kingrecords）
+  與六支帶 `c174rb-` 前綴的腳本（`c174rb-fetch.mjs`／`c174rb-show.mjs`／`c174rb-wiki.mjs`／`c174rb-read.mjs`／
+  `c174rb-html.sh`／`c174rb-txt.py`／`c174rb-build1..3.mjs`）。
+- **節流**：Discogs 3.2 s／次、維基 0.7 s／次、一般 HTML 1.5 s／次。**全程 0 次 429／503**。
+- **續跑保護**：照派工信每 3 張寫回一次整份 `c174-b.json`（3 → 5 → 7），本層未遇容器重啟。
+
+## 4030　**編號區間結算**：本節用到 **4011–4030**（共 20 條，區間用滿）。
