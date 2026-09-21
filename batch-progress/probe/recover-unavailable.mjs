@@ -75,14 +75,24 @@ const catalogueOf = async (artist, alias, front) => {
 // 所以補一條不經過掛名的路：拿盤名（與 queryAlias）直接打 `entity=album`。
 // ⚠ 只在第一條路**一個候選都沒有**時才跑，且**必須盤名對得上**——
 // 只靠年份會把那一年的所有專輯都收進來。
+// 2026-09-21 追加（c-174 回撈層，第 1875-B 條）：**`queryAlias` 的括號內容要保留著查一次。**
+// `match-lib.mjs` 的 `aliasParts()` 會把括號說明剝掉，於是 `Music Break (Live, 1967)`
+// 這種**店面題逐字就是 alias** 的情形，探測鏈既查不到也比不上
+// （比對那端 `digitResidual()` 會因為 `1967` 把它擋掉）。
+// 這裡不動共用的 match-lib（它被一百多批共用，改了風險太大），
+// 只在回撈這條路上：① 把帶括號的 alias 原字串也當查詢詞；② 店面題與 alias **逐字相同**就採用。
+const aliasRaw = c => String(c.queryAlias || '').split(/[；;]/).map(x => x.trim()).filter(x => Array.from(x).length >= 2);
 const albumSearch = async (c, front) => {
-  const terms = [...new Set([c.album, c.queryAlias, `${c.album} ${c.artist}`].filter(Boolean))];
+  const terms = [...new Set([c.album, ...aliasRaw(c), `${c.album} ${c.artist}`].filter(Boolean))];
   const out = [];
   for (const term of terms) {
     const s2 = await get(`https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=album&limit=25&country=${front}`);
     await sleep(1200);
     for (const it of ((s2 && s2.results) || [])) {
-      const tOk = titleOk(c.album, it.collectionName, c.selfTitled) || looseTitleOk(c.album, it.collectionName, c.selfTitled);
+      const aliasExact = aliasRaw(c).some(a => norm(a) === norm(it.collectionName));
+      const tOk = aliasExact
+        || titleOk(c.album, it.collectionName, c.selfTitled)
+        || looseTitleOk(c.album, it.collectionName, c.selfTitled);
       if (!tOk) continue;                       // 盤名對不上就不收，年份不足以單獨成立
       const y = Number(String(it.releaseDate || '').slice(0, 4));
       out.push({ front, id: it.collectionId, name: it.collectionName, y, tr: it.trackCount,
