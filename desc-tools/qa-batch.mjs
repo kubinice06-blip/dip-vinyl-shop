@@ -165,13 +165,27 @@ function batchTitleSet(all) {
   return s;
 }
 
+// 2026-09-21（第 1866-B 條）：**日文新字體與簡體同形字**。
+// `国`（稲葉国光）、`会`（東京厚生年金会館）這類在日文裡是正確字形，
+// 而「專名一律照原文字形抄」是本產線的規定——改成 `國`／`會` 反而是錯的。
+// ⚠ **不從 `SIMP` 字表移除那些字**（會整條線失去對真簡體的偵測），
+// 改用**逐字串的白名單**：只把列在 `jp-proper-names.json` 的**完整專名**剝掉再掃。
+// 名單是精確字串、不是字元，所以 `国际`／`开会` 這種真簡體仍然照報。
+// 遇到新的日文專名被誤報，**把整個專名加進那個檔**，不要去動 SIMP。
+const JP_NAMES = (() => {
+  try { return JSON.parse(fs.readFileSync(new URL('./jp-proper-names.json', import.meta.url), 'utf8')); }
+  catch { return []; }
+})().sort((a, b) => b.length - a.length);   // 長的先剝，免得短名先吃掉長名的一部分
+const stripJpNames = s => JP_NAMES.reduce((acc, n) => acc.split(n).join(''), String(s));
+
 function charScan(label, s) {
   const t = stripLegit(s);
   if (GARBAGE.test(t)) warn(label, '非拉丁亂碼:', [...new Set(t.match(new RegExp(GARBAGE, 'g')))].join(''));
   // 簡體掃描同樣剝除《》〈〉內的專名：中國發行的專輯官方標題本來就是簡體
   // （崔健《新长征路上的摇滚》），照原文保留是規定，不該報錯。整份寫成簡體的情況
   // （w2-121 e 組）仍會被抓到，因為那種錯誤絕大多數落在標題之外。
-  if (SIMP.test(t)) warn(label, '簡體字:', [...new Set(t.match(new RegExp(SIMP, 'g')))].join(''));
+  const tSimp = stripJpNames(t);
+  if (SIMP.test(tSimp)) warn(label, '簡體字:', [...new Set(tSimp.match(new RegExp(SIMP, 'g')))].join(''));
   // 這條原本掃的是未剝除專名的原文，於是林憶蓮《都市觸覺, Part II: Fuir la ville》
   // 這種官方標題本身就帶半形逗號的卡必然誤報。掃 t（已剝除《》〈〉與卡單全字串）才對。
   if (/[㐀-鿿],|,[㐀-鿿]/.test(t)) warn(label, '半形逗號貼中文');

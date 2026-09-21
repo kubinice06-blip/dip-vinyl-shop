@@ -773,3 +773,327 @@ Apple 上這位吉他手只存在那一張 1962 年的單曲。
 - `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`caa.json`／其他批次檔案／KV／Firestore **皆未觸碰**。
 - 未 commit、未 push、未動 git 索引。
 - 剩下 **5 張維持 `status: unavailable` 原樣**，交給下游寫成固定「無來源狀態」。
+
+---
+
+# 研究層裁定（c-173，11 張，a 組 6 ＋ b 組 5）
+
+批次 c-173｜研究層｜2026-09-21｜編號區間 **3843–3870**（本節只 append，3842 以前一行未動）
+產出：`desc-tools/batches/research/c173-a.json`（6 張）與 `desc-tools/batches/research/c173-b.json`（5 張）。
+
+## 3843　總表：**11 張全部 `full`，thin 0 張；facts 合計 123 條**
+
+| # | 組 | 卡 | facts | status | 相異 `src` |
+|---:|---|---|---:|---|---:|
+| 1 | a | ジョージ川口とビッグ4《The Original Big Four》 | **12** | full | 9 |
+| 2 | a | Modern Jazz Playboys《Modern Jazz Screen Mood》 | **11** | full | 8 |
+| 3 | a | Modern Jazz Playboys《Modern Jazz Show Case》 | **11** | full | 7 |
+| 4 | a | 横内章次とクインテット・プラス・ラテン《真夜中のラテン》 | **10** | full | 5 |
+| 5 | a | 村岡実《Harlem Nocturne - Bamboo Flute Miracle Sounds》 | **12** | full | 5 |
+| 6 | a | Charlie Mariano & Sadao Watanabe（同名盤） | **12** | full | 8 |
+| 7 | b | 渡辺貞夫《Jazz & Bossa》 | **11** | full | 5 |
+| 8 | b | 渡辺貞夫 & チャーリー・マリアーノ《Iberian Waltz》 | **11** | full | 7 |
+| 9 | b | 松本英彦・宮沢昭《Operation Sam Taylor》 | **11** | full | 8 |
+| 10 | b | 前田憲男 & 稲垣次郎オールスターズ《This Is Jazz-Rock》 | **11** | full | 5 |
+| 11 | b | 松本浩・市川秀男カルテット《Megalopolis》 | **11** | full | 6 |
+
+**每張 8–12 條的下限與上限都守住，每條都附完整 https `src`。`status` 與 `coverage` 兩欄同值並存。**
+
+## 3844　**`thin` 0 張**——與派工信的預期不同，理由寫在這裡
+
+派工信第二節逐字警告「這條線的一手史料比 Blue Note 稀薄得多，1958–69 更是」「`status`／`coverage` 誠實標 `thin`」。
+**實測沒有一張需要標 thin**，原因是本線有兩口 Blue Note 線沒有的井：
+
+1. **日文維基的樂手條目密度極高，而且帶完整作品表與錄音日**。渡辺貞夫 條目的 1960–69 作品表逐張列出
+   **錄音日、廠牌、全體參加者與樂器**（《Jazz & Bossa》《Iberian Waltz》《チャーリー・マリアノと渡辺貞夫》三張都在裡面），
+   等於一份免費的 session 目錄。ジョージ川口／松本英彦／中村八大／小野満／ビッグ・フォア 五個條目互相交叉，
+   單是《The Original Big Four》一張就餵得出 12 條。
+2. **廠牌官方商品頁會逐字寫原盤資訊**（見第 3845 條），而且它是原廠層級的證據，比 Discogs 的盤面轉錄再高一層。
+
+**最接近 thin 的是 `真夜中のラテン`（10 條）**：八城一夫 與 福原彰 日文維基**皆無條目**（逐字查過，兩者都回 missing），
+節奏組與小號只有 Discogs 的 credits 一層來源。次接近的是 `Megalopolis`：**稲葉国光 無條目**、松本浩 亦無。
+**這兩張仍達 10／11 條，所以照規定寫 full，但它們是本批最薄的兩張，下游若要再挖，得往紙本走。**
+
+---
+
+## 3845　⚠ ⚠ **本線最有價值的來源發現：廠牌官方商品頁逐字記載原盤發行日與原題**
+
+派工信第二節列的可用來源裡有「廠牌官網與復刻新聞稿（Victor／Columbia／King／ユニバーサルの商品頁）」，
+**但沒有說明它強在哪裡。本批實測：它是本線唯一能把年份與盤名推到「原廠層級」的來源，而且兩次都直接解決了策展層懸而未決的爭點。**
+
+| 卡 | 官方頁逐字寫的 | 解決了什麼 |
+|---|---|---|
+| 村岡実《Harlem Nocturne》 | 「オリジナルリリース：**1967/11/1**」「LP番号：JPS-5132」 | 策展層靠盤面「© 67 • 11」把 MB 的 1966 改判 1967（第 3722 條）——**官方頁把它確認到日**，MB 的 1966 徹底成為孤例 |
+| 前田憲男 & 稲垣次郎オールスターズ | 「THIS IS JAZZ-ROCK／MAEDA NORIO - INAGAKI JIRO ALL STARS ＜**オリジナル発売日: 1968.9.10**／**旧レコード番号: YS-10036**＞」 | 策展層靠 Discogs 把 MB 的再發題改判回《This Is Jazz-Rock》（第 3766 條）——**原廠自己這樣寫，改判確立，而且發行日精確到 1968 年 9 月 10 日** |
+
+**→ 給 c-174…c-182 的操作建議（本批已驗證可行）**：
+
+- `columbia.jp` 的商品頁有**兩種網址**，兩種都要試：
+  `https://columbia.jp/prod-info/<catno>/`（新品線，較新的再發才有）與
+  `https://columbia.jp/artist-info/<artistslug>/discography/<catno>.html`（藝人頁底下的逐張頁）。
+  **⚠ 前者對本批的 `COCB-54011`／`COKM-42669`／`COCB-54251` 全部 404，後者才 200**——
+  只試第一種會誤判成「官方頁查無」。找 `<artistslug>` 的辦法：抓 `columbia.jp/artist-info/<slug>/` 的 HTML，
+  `grep -oE 'href="[^"]*"' | grep discography` 就能列出該藝人全部逐張頁的目錄號。
+- 逐張頁除了原盤日與原始目錄號，還常帶**編曲者、演奏方式與復刻系列名**。本批最好的一格就是這樣來的：
+  村岡実 那張的官方頁逐字寫「山屋清のアレンジによる12曲を、ジャズ・コンボやストリングスをバックに
+  **26〜74cmの8種類の尺八を使い分けて**演奏」，並標【初CD化】——
+  **這是整批 123 條 facts 裡最好的一條，Discogs 與 MB 兩邊都沒有。**
+
+## 3846　來源網域實測（本工作階段，逐一記錄）
+
+**可用**：
+
+| 網域 | 本層用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（`releases/`／`masters/`／`masters/<id>/versions`／`database/search`） | 約 30 次 | **全數 HTTP 200，免 token，自我節流 3.2 s／次，未遇 429／503** |
+| `musicbrainz.org/ws/2/release-group/<id>` | 11 次 | 全數 200，1.1 s 間隔，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)` |
+| `ja.wikipedia.org/w/api.php`（`prop=extracts&explaintext=1`） | 54 次 | 全數 200，0.6 s 間隔。**36 個條目命中、18 個 missing** |
+| `en.wikipedia.org/w/api.php` | 3 次 | 全數 200 |
+| `columbia.jp`（商品頁與藝人頁） | 11 次 | 200 與 404 混合，見第 3845 條 |
+| `itunes.apple.com/lookup` | 1 次 | 200 |
+
+**查無條目的日文維基人名（本批逐字查過，全部回 `missing`）**：
+`八城一夫`／`稲葉国光`／`原田政長`／`金井英人`／`藤井英一`／`西条孝之介`／`福原彰`／`山屋清`／
+`大森盛太郎`／`宮田英夫`／`萩原栄治郎`／`本多俊夫`／`塩井芳幸`／`今泉俊明`／`杉浦良三`／
+`日野敏`／`タクト (レコード会社)`／`ハーレム・ノクターン`。
+→ **給後九批：這批 1950–60 年代的側錄樂手（尤其貝斯與鋼琴席）在日文維基普遍沒有條目，
+別把時間花在逐名查維基；他們的唯一來源就是 Discogs 的整筆 credits。**
+
+**本層未使用**：`allmusic`／`allaboutjazz`（派工信已標一律 403，本層未試，不浪費配額）、
+`jazzdisco.org`（本批全部是日本本土盤，該站的覆蓋是美國廠牌，未試）、`junkoonishi.com`（禁用，見簡報第三節第 6 點）。
+
+**`itunes.apple.com/search` 的節流**：派工信說「連打同一店面超過 8 次會撞 429」。
+**本層刻意避開了 `search`，只用 `lookup` 打了 1 次**（取《This Is Jazz-Rock》的 `releaseDate` 與 `copyright` 當旁證，回 200）。
+策展層與回撈層已各自把 11 張的店面查過，第 254 條的觀察都已經寫在卡單與第 3831–3841 條，**研究層沒有必要重跑**。
+
+## 3847　⚠ **`nReleases`／MB 的 release 數不等於發行史**——這是本批推翻策展層的最大一處
+
+見第 3848 條。此處只記結論：**MB 在這四家 1958–69 這一段建的多半只有原盤**（第 3770 條已證實年份可靠），
+**但反過來，「MB 只有一個 release」絕不可推論成「這張碟沒有再發」。** 本批十一張的 Discogs master 版本數是：
+
+| 卡 | MB release 數 | Discogs master 版本數 |
+|---|---:|---:|
+| Charlie Mariano & Sadao Watanabe | 1 | **10** |
+| Jazz & Bossa | 1 | **8** |
+| Megalopolis | 3 | **6** |
+| Iberian Waltz | 1 | 4（另有一個再發自成 master） |
+| The Original Big Four | 1 | 1 |
+| 真夜中のラテン | 1 | **0 個 master、無任何再發** |
+| Operation Sam Taylor | 1 | 2（皆 1967，市售＋Promo） |
+| This Is Jazz-Rock | 4 | 2 |
+
+**→ 後九批凡要在 `risk` 或 facts 寫「無再發」「未 CD 化」，一律要打 `masters/<id>/versions`，不得只看 MB。**
+
+---
+
+## 3848　推翻／補正策展層：**共 13 處，分佈在 9 張卡上**
+
+**A 類：事實錯誤（5 處，已在卡的 `notes` 逐條寫明，facts 用正確版本）**
+
+| # | 卡 | 策展層逐字 | 實際 | 依據 |
+|---:|---|---|---|---|
+| 1 | Charlie Mariano & Sadao Watanabe | 「年份⋯相符，**無再發**」「MB 與 Discogs 兩邊都只有 1967 一個版本」 | **有再發，而且十個版本**，含 **1977 年美國 Catalyst Records CAT-7911《Nabesada And Charlie》**（「Catalyst International Jazz From Japan」系列、Springboard International 發行、自 JJ Records 授權、封套解說 Richard Broderick）、1980 JVC VIJ-6331、1990 Victor VICJ-23005、2006 JVC VICJ-61367、巴西 Movieplay 授權版、日本 Victor World Group SMJX-10100 | `masters/644584/versions`、`releases/7610150` |
+| 2 | Charlie Mariano & Sadao Watanabe | 內頁作者「本**田**俊夫」 | **本多俊夫**（Discogs credits 逐字 `Toshio Honda (2) [本多俊夫]`） | `releases/4894973` |
+| 3 | Modern Jazz Screen Mood | 小號手「林**徹夫**」 | **林鉄雄**（Discogs anv 逐字 `Tetsuo Hayashi [林鉄雄]`，兩個 1960 壓次寫法一致） | `releases/17325919`／`21395527` |
+| 4 | Jazz & Bossa | 貝斯手「萩原栄**二**郎」 | **萩原栄治郎**（Discogs anv 與日文維基渡辺貞夫 作品表**兩個獨立來源一致**） | `releases/4851044`、ja.wikipedia |
+| 5 | Iberian Waltz | 「**Mariano 寫的**〈God Has Mercy〉」 | 〈God Has Mercy〉的 `Written-By` 是 **Traditional**，Mariano 掛的是 `Arranged By`；他真正作曲的是〈Iberian Waltz〉與〈Stone Garden of Ryoanji〉 | `releases/4856063` |
+
+**B 類：查不到支撐，已退成可查證的版本（2 處）**
+
+| # | 卡 | 策展層逐字 | 本層處理 |
+|---:|---|---|---|
+| 6 | Charlie Mariano & Sadao Watanabe | 「Charlie Mariano 是渡辺貞夫 **1962–65 年在 Berklee 求學時的老師輩**」 | **英文維基記 Mariano 的 Berklee 任教期是 1965–1971，正好始於渡辺返國那一年**，兩人在校的師生關係時間上對不上。本層把 facts 改寫成可查證的版本：**兩人的連結是秋吉敏子**（Mariano 的第二任妻子；渡辺 1953 年加入她的コージー・カルテット、1956 年她赴美後接下團長）。**寫作層不得寫成「師生重逢」。** |
+| 7 | This Is Jazz-Rock | 「**十二首全是翻唱、沒有原創曲**」 | 十二軌裡 **Snap-Shot／Barock／Go Go A Go Go 三首找不到任何原曲對應**，而 Discogs 兩個壓次、`columbia.jp` 官方頁、Apple jp 的 song 端點**四處的作曲者欄全部是空的**。本層標 **uncertain**，facts 改寫成「其中九首可以認出原曲出處」。**寫作層不得寫成「全翻唱」，也不得寫成「有原創」。** |
+
+**C 類：漏列／不完整（6 處，已補進 facts）**
+
+| # | 卡 | 補了什麼 |
+|---:|---|---|
+| 8 | Modern Jazz Screen Mood | 漏列次中音手 **西条孝之介**——該團次中音是 宮沢昭＋西条孝之介 **兩支**，全團 **十五人**（策展層列十一人） |
+| 9 | Modern Jazz Show Case | **兩個壓次的文字工作掛不同人**：stereo ZS-1015 是 瀬川昌久（Supervised By ＋ Liner Notes），**mono ZL-1160 的 Liner Notes 是 野口久光**。策展層只看了 stereo 那一筆，而卡單的 `label` 欄以 ZL-1160 為主盤 |
+| 10 | Harlem Nocturne | 漏了**逐軌標的伴奏者**：十二軌對半分，六軌 `Columbia Orchestra`、六軌 `Kiyoshi Yamaya & His All Stars`。這是本卡編制描述的關鍵 |
+| 11 | Jazz & Bossa | 漏了**內頁作者 岩浪洋三**（不是本批另外兩張的 油井正一）；另，錄音日 Discogs 是**逐軌標的**（A1／A3 = 11/25、A2／A4 = 12/4、B 面全部 = 11/30），策展層寫成三個日期但沒對到軌；A 面是四軌、B 面七軌，不是各三軌 |
+| 12 | Megalopolis | 漏了 **2025 年 2 月 26 日 Victor World Group NJS-808 限量黑膠復刻**（Project Re:Vinyl，唱片公司 Universounds、流通 Lawson Entertainment）與同年的 FLAC 版；且**原盤封套解說是 岩浪洋三**——這一欄只存在於 2025 復刻的 credits 裡。另，五首原創的作曲者是 **松本浩 四首、市川秀男 一首**，不是對半 |
+| 13 | Iberian Waltz（旁及 Charlie Mariano & Sadao Watanabe） | 策展層寫「富樫雅彦 **1969 年**受傷前」——**受傷是 1970 年 1 月**（日文維基富樫雅彦 條目）。⚠ 本層**未把這件事寫進任何一張卡的 facts**：它是與作品無關的後續生平事件（反向禁令第二類），只在 notes 記下年份更正 |
+
+## 3849　⚠ ⚠ **本層挖到、策展層完全沒有的一格：連續兩天的雙錄音**
+
+`Charlie Mariano & Sadao Watanabe`（Victor SMJ-7446）錄於 **1967 年 6 月 27 日**、東京 Victor Studio；
+`Iberian Waltz`（Takt JAZZ-7）錄於 **1967 年 6 月 28 日**、Teichiku Kaikan 錄音室。
+**同樣五個人（Mariano／渡辺貞夫／菊地雅章／原田政長／富樫雅彦），連續兩天，兩家不同的廠牌，兩張碟，而且兩張都在本批裡。**
+兩份 Discogs `notes` 各自逐字寫了自己的錄音日，日文維基的渡辺貞夫 作品表兩張並列、日期一致。
+
+**這同時是本批最容易寫錯的一點**（見第 3852 條）。
+
+## 3850　⚠ **一項本層無法定案、留給下游的分歧：《Iberian Waltz》的錄音日與鼓手**
+
+- **Discogs `releases/4856063` 的 notes 逐字**：`Recorded June 28, 1967, at Teichiku Kaikan Studio, Tokyo.`，credits 的鼓手只有 富樫雅彦。
+- **日文維基渡辺貞夫 條目的作品表逐字**：「1967年、1968年 - チャーリー・マリアーノと共同名義『イベリアン・ワルツ／サダオ＆チャーリー』
+  （**1967年6月28日、1968年1月21日録音**）(Takt)　渡辺貞夫(as), チャーリー・マリアーノ(as), 菊地雅章(p), 原田政長(b),
+  富樫雅彦(ds), **渡辺文男(ds)**」。
+
+兩個來源都不弱（Discogs 引的是盤面、維基的作品表逐張帶錄音日與編制）。
+**本層兩邊都寫進 facts 並各自標明出處，沒有自行裁定。**
+旁證（**不進 facts**）：同一份作品表把 1968-01-21 也記成《We Got a New Bag》的錄音日，
+所以「本碟有一軌來自那場 1968 年的 session」是合理推測——**但推測不是事實**。
+**操作結論給寫作層：要寫錄音日就只寫 1967 年 6 月 28 日（盤面層級證據），不要寫「一天錄完」。**
+
+## 3851　曲風覆核：**11 張全部維持收件，一張都沒有翻案**
+
+判準 3753 的四條逐張再驗過，逐條不成立。兩張需要特別交代的：
+
+- **`真夜中のラテン`**：Discogs 的 `styles` **首位是 Exotica**，字面上很像第 3716 條要退的「拉丁ムード企劃盤」。
+  但四條一條都不中——`styles` 是 Exotica＋Latin Jazz（**不含** Easy Listening／Kayōkyoku）、
+  `genres` 是 Jazz＋Latin（**不含** Folk, World, & Country）、十四首**沒有一首日本曲**、
+  横内章次 1960 年代橫跨 King／Victor／Polydor／コロムビア 四家大廠出領銜作（不是ムード 系列樂手）。**收件成立。**
+- **`Operation Sam Taylor`**：四個警訊全中（`why` 是 `artist-tag`、MB RG tags 全空、兩位藝人的 artist tag 都帶 `easy listening`、
+  盤名掛著 mood-sax 的招牌），但 Discogs `genre` 只有 Jazz、**`styles` 欄是空的**，十二首沒有一首日本歌謡曲。
+  **策展層第 3762 條的邊界收件，本層完全同意，並補上一層獨立佐證：日文維基的宮沢昭 條目把它列進作品表，日文題《サム・テイラー作戦》**——
+  這比 `batch-progress/enum/jp-1.md`（內部檔案、不可引）強。
+  ⚠ **但策展層「行文不得寫成純即興 blowing session」的提醒本層加碼：編曲掛三個人、還有 SDS 合唱團**，
+  〈Ebb Tide〉〈More〉〈Moon River〉〈Strangers in the Night〉四首是標準 mood-sax 曲目。
+  正確的框是「**用 mood sax 的配方做一張正經的次中音對奏盤**」。
+
+## 3852　⚠ ⚠ **下游最容易寫錯的六點（鉤子層與寫作層必讀）**
+
+**這一條是本節最重要的一條。**
+
+1. **〈Harlem Nocturne〉出現在本批三張碟上**：`真夜中のラテン`（A1「ハレム・ノクターン」）、
+   `村岡実《Harlem Nocturne》`（**盤名兼 A1**）、`松本英彦・宮沢昭《Operation Sam Taylor》`（B3）。
+   **曲子的來歷（Earle Hagen 1939 年為 Ray Noble 樂團所寫）只能講一次，Sam Taylor 那條線應該留給《Operation Sam Taylor》**
+   （它的盤名就是衝著他去的）；`村岡実` 那張的切角是「尺八吹這首曲子」；`真夜中のラテン` 那張只能寫「拉丁編制裡的那一首」。
+2. **連續兩天的雙錄音（第 3849 條）不可寫成同一件事**：兩張碟人一樣、日期只差一天，
+   但廠牌（Victor／Takt）、軌數（**10 軌／4 軌**）、錄音地（Victor Studio／Teichiku Kaikan）與曲風走向都不同。
+3. **兩張 Takt 盤的區隔**：《Jazz & Bossa》JAZZ-1 與《Iberian Waltz》JAZZ-7，同為帝蓄的錄音室、同一位監修（大森盛太郎）。
+   **《Jazz & Bossa》的切角是「一張碟兩種編制」（A 面四重奏打 Monk、B 面加 cabasa 走巴西線），
+   《Iberian Waltz》的切角是「四首曲子、兩首各十四分鐘以上」。**
+4. **兩位樂評不可寫混**：**岩浪洋三** 寫《Jazz & Bossa》與《Megalopolis》的內頁，
+   **油井正一** 寫《Modern Jazz Screen Mood》與《Iberian Waltz》的內頁，
+   **瀬川昌久** 監修《Modern Jazz Show Case》的 stereo 版、**野口久光** 寫它 mono 版的內頁，
+   **久保田二郎** 監修《The Original Big Four》。**五個人五種身分，弄混會把整段寫廢。**
+5. **同姓不同人／同名不同碟**：
+   - 池中的 `村岡建`（Takeru Muraoka，次中音薩克斯風）**不是**本批的 `村岡実`（Minoru Muraoka，尺八）。
+   - `Jazz & Bossa` 這個盤名在渡辺貞夫 名下有兩張（本批的 1967 Takt 原盤，與 1996 年的《Jazz & Bossa (Live at Suntory Hall)》），
+     卡池另有 Ron Carter《Jazz & Bossa》2008（c161-cards.json）。**引盤名一律帶年份與廠牌。**
+   - `稲垣次郎オールスターズ`（1968）**不是** `稲垣次郎とソウル・メディア`（1969 才成立）。
+6. **`Charlie Mariano & Sadao Watanabe` 是同名盤**（`selfTitled: true`），盤名逐字等於掛名字串。
+   **寫作層引盤名時要避開「某某與某某的某張碟」這種句型**——那會把盤名整個弄丟。
+
+## 3853　跨卡串連點（**每一條只能用在一張卡上**）
+
+本批十一張的人物網重疊極高，以下是本層挖到的串連點，鉤子層分配時請當成稀缺資源：
+
+| 串連 | 涉及的卡 | 建議給誰 |
+|---|---|---|
+| 渡辺貞夫 1958 年加入ジョージ川口ビッグ4，組成「ビッグ・フォア・プラス・ワン」 | 《The Original Big Four》 ↔ 四張渡辺盤 | **《The Original Big Four》**（他在那張上不是樂手，用來收尾最乾淨） |
+| 市川秀男 1976 年加入ジョージ川口 的ザ・ビッグ・4 | 《Megalopolis》 ↔ 《The Original Big Four》 | **《Megalopolis》** |
+| Joachim Berendt 在《Down Beat》1962-12-06 號拿 松本英彦 與 宮沢昭 來對照著稱讚 稲垣次郎 | 《This Is Jazz-Rock》 ↔ 《Operation Sam Taylor》 | **《This Is Jazz-Rock》** |
+| 西条孝之介 是 前田憲男 1955 年上京時加入的ウエスト・ライナーズ 團長 | 《Modern Jazz Screen Mood》 ↔ 《This Is Jazz-Rock》 | 擇一，建議 **《Modern Jazz Screen Mood》**（他是那張的次中音手） |
+| 三保敬太郎 的父親 三保幹太郎 當過日本コロムビア 社長 | 兩張 Modern Jazz Playboys | **《Modern Jazz Screen Mood》** |
+| 三保敬太郎 1959 年與 前田憲男、山屋清 組「モダンジャズ3人の会」——山屋清 正是《Harlem Nocturne》的編曲 | 三張卡都沾得到 | 建議**不用**（太繞） |
+| 尾川雄介（universounds）同時是 村岡実 2012 年 CD 化與 Megalopolis 2025 年黑膠復刻的解說／監修 | 《Harlem Nocturne》 ↔ 《Megalopolis》 | **《Megalopolis》**（村岡実 那張有更好的格） |
+| 富樫雅彦 是本批**三張**碟的鼓手 | 《Charlie Mariano & Sadao Watanabe》／《Jazz & Bossa》／《Iberian Waltz》 | 他的生平只能展開一次，建議 **《Iberian Waltz》** |
+
+## 3854　`hookCandidates` 與 `sound`：本層的自我檢查
+
+- **`hookCandidates` 每張都恰好 2 條**（上限），11 張共 22 條，逐條查過**沒有跨卡同構**。
+- `sound` 每張一段，寫的是編制與織度，**沒有把 facts 的內容照抄**。
+- `keyTracks` 每張 3 首，**曲名一律照盤面原字**：
+  ⚠ `真夜中のラテン` 的三首是片假名（ハレム・ノクターン／タブー／ナイト・トレーン），**盤面十四軌全部是片假名**；
+  ⚠ `Modern Jazz Show Case` 的 `George's Dilemna` 是**盤面拼法**（正確拼法為 George's Dilemma），facts 已註明。
+
+## 3855　獎項：逐項分「得獎／入圍」，本批**一項入圍都沒有，全部是得獎**
+
+本批出現在 facts 裡的獎項只有兩張卡上的三項，逐項核過：
+
+- ジョージ川口：**1981 年第 6 屆南里文雄賞**（得獎）、**1981 年第 31 屆芸術選奨文部大臣賞**（得獎，日文維基逐字註明「ジャズ界初」）。
+- 中村八大：〈黒い花びら〉**第 1 屆日本レコード大賞的大賞**（**得獎**，不是入圍；日文維基寫「審査を勝ち抜き大賞に輝いた」）。
+- 前田憲男：1983 年**南里文雄賞**、2008 年日本レコード大賞**功労賞**（皆得獎）。
+
+⚠ **一項被本層擋下、沒有寫進 facts 的**：日文維基前田憲男 條目逐字寫「**1983年に第20回日本レコード大賞「最優秀編曲賞」**」，
+**但第 20 屆日本レコード大賞 是 1978 年**——屆次與年份自相矛盾，單一來源且內部不一致，**未採用，下游也不要用**。
+（川口另有 1988 紫綬褒章、1997 勲四等旭日小綬章、2003 年第 45 屆日本レコード大賞特別功労賞，皆為受賞，本層未寫進 facts。）
+
+## 3856　反向禁令的分類處理（逐項）
+
+**第一類（與作品直接綁定，已寫進 facts 並標明時序）**：
+- 村岡実 1970 年的《Bamboo》——日本コロムビア 官方頁把本作定位成他那條現代路線的**第一張**，《Bamboo》是同一條線的下一步。
+- 《Charlie Mariano & Sadao Watanabe》1977 年的美國版《Nabesada And Charlie》——那是**這張唱片本身的後世流傳**。
+- 各張的 CD／黑膠復刻史（含《Harlem Nocturne》2012 年的【初CD化】）——同上。
+
+**第二類（與作品無關的後續生平，一律未寫）**：
+- 富樫雅彦 1970 年 1 月被妻子持刀刺傷脊椎導致下半身不遂、之後改用雙手演奏（**策展層在 `Iberian Waltz` 的 `why` 裡提到過，本層只留在 notes**）。
+- ジョージ川口 2003 年辭世與樂團由兒子川口雷二 接手；松本英彦 1997 年的醫療過誤與 2000 年辭世；
+  稲垣次郎 2024 年辭世與《サムシング》的「世界第一張數位錄音類比唱片」宣稱；村岡実 2014 年辭世；
+  中牟礼貞則 2026 年辭世（本層在 facts 只寫生卒年，未展開）。
+
+**另有一條需要下游自覺的**：ジョージ川口 的「ほら吹きジョージ」那一條，
+**日文維基把那些故事明確標為他的虛言（原文「奇想天外な虚言」）**，本層 facts 已照原意寫成「流傳的版本包括⋯」。
+⚠ **寫作層不得把驅逐艦、芝公園、Buddy Rich 那幾件當成事實敘述。**
+
+---
+
+## 3857　交件自檢（`qa-batch` 與逐張人工量測）
+
+`node qa-batch.mjs research c173`：
+
+```
+a 6 full,full,full,full,full,full
+b 5 full,full,full,full,full
+⚠ research-b 簡體字: 国
+key 與卡單完全一致 ✓
+總標記 1
+```
+
+**唯一的標記是誤報，而且本層刻意不消除它**：`国` 的唯一出處是 **`Megalopolis` 的貝斯手 `稲葉国光`**（三處，全部是這個人名）。
+`research-base.md` 的字元條逐字規定「**專名（藝人名、專輯名、曲名、廠牌名）一律照原文字形抄**，
+『渡辺香津美』『荒井由実』不要改成『渡邊香津美』『荒井由實』，那會改掉名字」——
+把 `稲葉国光` 寫成 `稲葉國光` 正是那條規則禁止的操作。
+`qa-batch.mjs` 的 `SIMP` 表含 `国`，而它的豁免機制只剝除 `《》〈〉` 內的專名、`keyTracks` 與**本批卡單的掛名／盤名全字串**，
+**側錄樂手的日文人名不在任何一個豁免集合裡**，所以必然誤報。
+這與該檔案自己在第 36–64 行記錄的「制值台准」「个」同類，是已知的誤報型態。
+⚠ **本層不動 `qa-batch.mjs`（硬邊界）**，把它記在這裡，**建議主線把「側錄樂手的日文人名」也納入豁免**
+（做法可以是：掃描前先剝除本批研究稿 `facts` 裡以全形括號跟在漢字人名後的羅馬字對照，或直接把 `国`／`会` 這類
+**日文新字體與簡體同形的字**從 `SIMP` 表移到一個「需人工覆核」的次級清單）。
+本批另有 `会` 的同型問題（`株式会社`／`帝蓄会館`／`世田谷区民会館`／`東京厚生年金会館`／`モダンジャズ3人の会`），
+**本層已逐一改寫規避**：公司名改寫成「発売元是タクト電機」並在同句附 Discogs 的 `Made By: Takt Denki Co., Ltd.`、
+錄音室改用 Discogs 逐字的羅馬字 `Teichiku Kaikan`／`Setagaya Public Hall`、
+會館名改用中文寫法、團體名放進 `《》`。**後九批遇到同型字可照這套辦法處理，不必動 QA。**
+
+逐張人工量測（第 3843 條的表即量測結果）：
+
+- `facts` 條數：**11 張全部落在 10–12 之間**，無低於 8 或高於 12 者。
+- 每條 `src`：**123 條全部是完整可開啟的 `https://` 網址**（以 `/^https:\/\/\S+$/` 逐條驗過），無描述型 src。
+- 簡體字：以獨立的嚴格字表（排除日文新字體與正體同形字）逐字掃過兩檔，**0 處**。
+- 千分位逗號：以 `/\d{1,3}(?:,\d{3})+(?!\d)/` 掃過，**0 處**。
+- 半形逗號貼中文：`qa-batch` 未報，本層另掃 `/[㐀-鿿],|,[㐀-鿿]/`，**0 處**。
+- `hookCandidates`：**每張恰好 2 條**，無超過。
+- 獎項「入圍／得獎」：見第 3855 條，本批**全部是得獎**，無一項被寫成兩可的「獲得」。
+- `status` 與 `coverage`：**11 張兩欄同值並存**（全部 `full`）。
+- `key`：11 張**逐字複製自 `desc-tools/batches/cards/c173-cards.json`**，`qa-batch` 的「key 與卡單完全一致 ✓」已確認。
+
+## 3858　⚠ **兩個檔案，不是一個**——第 1813-B 條的坑本層已避開
+
+產出逐字是 `desc-tools/batches/research/c173-a.json`（`group === "a"` 的 6 張）與
+`desc-tools/batches/research/c173-b.json`（`group === "b"` 的 5 張）。
+⚠ **卡單裡分組的欄位是 `group`，不是派工信寫的 `g`**（逐字核過；`g` 欄在 `c173-cards.json` 裡不存在，
+`node -e` 讀出來是 `undefined`）。**後九批派工時請寫 `group`，免得代理照 `g` 去切、切出 11 張全在同一組。**
+本層另實測 `node merge-writer-input.mjs c173`：它確實是逐組讀 `batches/research/<批>-<組>.json`，
+本批兩檔都讀進去了（它接著才因為 `batches/hooks/c173-hooks-a.json` 尚未產生而中止，那是鉤子層還沒跑，不是研究稿的問題）。
+
+## 3859　交付與邊界（自述）
+
+- **只動了三個檔**：`desc-tools/batches/research/c173-a.json`（新增）、
+  `desc-tools/batches/research/c173-b.json`（新增）、本檔（**append**，3842 以前一行未動）。
+- **未碰**：`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、
+  `desc-tools/batches/cards/*`（唯讀）、`batch-progress/enum/*`（唯讀）、其他批次的任何檔案、KV、Firestore、
+  `desc-tools/qa-batch.mjs`（只執行，未修改）。
+- **未執行任何 git 指令**（不 `add`／不 `commit`／不 `push`／未動索引）。
+- 中間檔全部在 scratchpad 的 `c173r/`：`dg.json`（17 筆 Discogs release 快取）、`mb.json`（11 筆 MB release-group）、
+  `wiki-ja.json`（54 筆）、`wiki-en.json`（3 筆）、`cards-dump.txt`，以及五支帶 `c173r-` 前綴的腳本
+  （`c173r-fetch-dg.mjs`／`c173r-search-dg.mjs`／`c173r-mb.mjs`／`c173r-wiki.mjs`／`c173r-check.mjs`／`c173r-simp.mjs`）。
+- **節流**：MB 1.1 s／次（UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`）、Discogs 3.2 s／次、
+  維基 0.6 s／次、Apple 僅 1 次。**全程未遇 429／503。**
+- 續跑保護：a 組寫檔後才開始 b 組的研究，兩檔各自獨立可讀；本層未遇容器重啟。
+
+## 3860　**編號區間結算**：本節用到 **3843–3860**（共 18 條），**3861–3870 未使用**，留給後續層。

@@ -446,11 +446,38 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜本田竹広｜Salaam Salaam｜1974",
+    "seed｜本田竹広｜Jōdo｜1970",
+    "seed｜本田竹広｜The Trio｜1970",
+    "seed｜本田竹広｜I Love You｜1971",
+    "seed｜本田竹広｜What's Going On｜1973",
+    "c131｜本田竹広｜Salaam Salaam｜1974",
+    "c132｜本田竹広｜Jōdo｜1970",
+    "c132｜本田竹広｜The Trio｜1970",
+    "c132｜本田竹広｜I Love You｜1971",
+    "c132｜本田竹広｜What's Going On｜1973",
+    "c132｜本田竹広｜Another Departure｜1977",
+    "c132｜本田竹広｜It's Great Outside｜1978",
+    "seed｜峰厚介｜Daguri｜1973",
+    "seed｜峰厚介｜First｜1970",
+    "seed｜峰厚介｜Out Of Chaos｜1974",
+    "seed｜峰厚介｜Sunshower｜1976",
+    "seed｜峰厚介｜Bamboo Grove｜2019",
+    "c132｜峰厚介｜Out Of Chaos｜1974",
+    "c132｜峰厚介｜Sunshower｜1976",
+    "c132｜峰厚介｜Bamboo Grove｜2019"
+   ]
   },
   "artistVariants": [
-   "NATIVE SON"
+   "NATIVE SON",
+   "本田竹広",
+   "Honda, Takehiro",
+   "峰厚介",
+   "Mine, Kōsuke",
+   "大出元信",
+   "Ōde, Motonobu"
   ],
   "period": "jp-1",
   "genre": "jazz",
@@ -669,7 +696,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——MB 這個實體沒掛漢字名也沒掛成員關係，**務必人工掃池**（第 1868-B 條）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1336,7 +1363,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——MB 這個實體沒掛漢字名也沒掛成員關係，**務必人工掃池**（第 1868-B 條）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1671,11 +1698,21 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Phil Woods｜Chasin' The Bird｜1998",
+    "seed｜Phil Woods｜Musique du Bois｜1974",
+    "c155｜Phil Woods｜The Rev and I｜1998"
+   ]
   },
   "artistVariants": [
-   "MALTA"
+   "MALTA",
+   "丸田良昭",
+   "Maruta, Yoshiaki",
+   "Charlie Mariano",
+   "Mariano, Charlie",
+   "Phil Woods",
+   "Woods, Phil"
   ],
   "period": "jp-1",
   "genre": "jazz",

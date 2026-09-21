@@ -338,11 +338,23 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID＋成員關係、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "Curtis Creek Band"
+   "Curtis Creek Band",
+   "Toshiro Sakka",
+   "Sakka, Toshiro",
+   "八木伸郎",
+   "Yagi, Nobuo",
+   "平井 宏",
+   "Hirai, Hiroshi",
+   "平野肇",
+   "Hirano, Hajime",
+   "平野融",
+   "Hirano, Tooru",
+   "塩入俊哉",
+   "Shioiri, Toshiya"
   ],
   "period": "jp-1",
   "genre": "jazz",
@@ -657,7 +669,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——MB 這個實體沒掛漢字名也沒掛成員關係，**務必人工掃池**（第 1868-B 條）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1028,11 +1040,21 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Phil Woods｜Chasin' The Bird｜1998",
+    "seed｜Phil Woods｜Musique du Bois｜1974",
+    "c155｜Phil Woods｜The Rev and I｜1998"
+   ]
   },
   "artistVariants": [
-   "MALTA"
+   "MALTA",
+   "丸田良昭",
+   "Maruta, Yoshiaki",
+   "Charlie Mariano",
+   "Mariano, Charlie",
+   "Phil Woods",
+   "Woods, Phil"
   ],
   "period": "jp-1",
   "genre": "jazz",
@@ -1274,12 +1296,14 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID＋成員關係、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
    "NORIKI",
-   "Noriki"
+   "Noriki",
+   "野力奏一",
+   "Noriki, Souichi"
   ],
   "period": "jp-1",
   "genre": "jazz",
@@ -1715,7 +1739,7 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——MB 這個實體沒掛漢字名也沒掛成員關係，**務必人工掃池**（第 1868-B 條）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
@@ -1801,11 +1825,17 @@
   "nReleases": null,
   "note": "",
   "poolRecheck": {
-   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
+   "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID＋成員關係、取其全部 alias 掃過）",
    "artistAlbumsInPool": []
   },
   "artistVariants": [
-   "MARTY & MYSTICS"
+   "MARTY & MYSTICS",
+   "Marty Bracey",
+   "Bracey, Marty",
+   "高橋佳作",
+   "Takahashi, Keisaku",
+   "竹内雅彦",
+   "Takeuchi, Masahiko"
   ],
   "period": "jp-1",
   "genre": "jazz",
