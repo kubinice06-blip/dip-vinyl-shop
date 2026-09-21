@@ -1514,3 +1514,419 @@ gb／tw／de／fr 本層一次都沒打（探測層已證實六市場結果一�
 中間檔全部在 scratchpad 的 `c175rec/`（`q.mjs`／`batch.mjs`／`write.mjs`／`u1.json`／`r1.txt`–`r15.txt`）。
 Apple 101 次（jp 88／us 13），403 三次、429 零次，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；
 Discogs 免 token、自我節流 1 req/3.2s 共 11 次，未遇 429／503。
+
+---
+
+# c-175 **a 組研究層**裁定（編號區間 4186–4215）
+
+批次 c-175｜a 組 15 張（1971–1972）｜研究層｜2026-09-21
+輸出：`desc-tools/batches/research/c175-a.json`（新增）。
+規則照 `desc-tools/prompts/research-base.md`（含開頭「雲端 Blue Note 線的三處例外」）→ 派工信
+→ `batch-progress/CURATION-BRIEF-jp1.md` 第〇節與附錄二 → 本檔第 3871–3898 條（本組策展層）
+→ `c174/rulings.md` 第 3981–4006／4011–4030 條（上一批研究層）。
+⚠ 寫入前已跑 `ls` ＋ `git show HEAD:batch-progress/c175/rulings.md`，兩者逐行 `diff` **identical**（1516 行），
+本節接在回撈層第 4185 條之後 **append**，**既有的一行都沒有改**。
+
+## 4186　總表：**15 張，facts 合計 180 條，每張恰好 12 條；full 14、thin 1**
+
+| # | 卡 | facts | status／coverage | 相異 `src` |
+|---:|---|---:|---|---:|
+| 0 | 前田憲男・藤舎推峰《Fantastic Sounds In Shino Flute》 | 12 | full | 7 |
+| 1 | スティーヴ・マーカス + 稲垣次郎とソウル・メディア《Something》 | 12 | full | 8 |
+| 2 | ツトム・ヤマシタ & 佐藤允彦《Metempsychosis》 | 12 | full | 4 |
+| 3 | 宮間利之とニューハード + 富樫雅彦《Canto of Aries》 | 12 | full | 6 |
+| 4 | 佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア《Bridge Over Troubled Water》 | 12 | full | 8 |
+| 5 | Singers 3《Foliole #2 The Sound Of Singers 3》 | 12 | full | 6 |
+| 6 | Yamash'ta & The Horizon《Sunrise From West Sea "Live"》 | 12 | full | 5 |
+| 7 | Richard Pine & Company《Cosmos》 | 12 | **thin** | 8 |
+| 8 | 佐藤允彦 & ゲイリー・ピーコック《三昧》 | 12 | full | 7 |
+| 9 | 宮間利之とニューハード + 佐藤允彦《Yamataifu》 | 12 | full | 3 |
+| 10 | 浅川マキ《Live》 | 12 | full | 6 |
+| 11 | 石川晶《Drums Method》 | 12 | full | 8 |
+| 12 | 杉本喜代志《Guitar Method》 | 12 | full | 7 |
+| 13 | 沢田靖司 & 稲垣次郎とソウル・メディア《Dock of My Mind》 | 12 | full | 7 |
+| 14 | サミー & 稲垣次郎とソウル・メディア《Woman, Robinson Crusoe / Rock Steady》 | 12 | full | 8 |
+
+**每張都壓在上限 12 條、每條附完整 https `src`，`status` 與 `coverage` 兩欄同值並存。**
+全組 **91 個相異來源**。`key` 從卡單逐字複製，順序與卡單 `group === "a"` 的 15 筆完全一致
+（已用程式逐筆比對 `key`／`artist`／`album` 三欄，15/15 相符）。
+
+## 4187　**thin 1 張**——《Cosmos》為什麼標 thin（與前三批的 0 張不同）
+
+c-173 第 3844 條、c-174 a 第 3982 條、c-174 b 第 4012 條連續三次結論是「本線不需要標 thin」。**本組出了一張。**
+
+slice #7 `Richard Pine & Company —《Cosmos》`（London SKK (L) 3008）的可查證欄位其實很齊
+（廠牌、目錄號、系列、八軌曲目、genres／styles、再發），**但關於領銜者本人，本層一條可靠的傳記事實都查不到**：
+
+- **1971 年原盤的 Discogs `extraartists` 整欄是空的**（整筆抓過，不是只讀 `search` 摘要），封套沒印任何樂手、編曲或製作；
+- **2012 年 King 的 CD 再發 KICJ 2290（releases/4476546）同樣 0 筆 credits**；
+- 日文與英文維基都查無 `Richard Pine`／`リチャード・パイン`／`松本易夫` 的條目；
+- `kingrecords.co.jp/cs/g/gKICJ-2290/` 回 **404**（第 4017 條記的低命中率再次成立）；
+- Discogs 藝人頁 3355060 的 `profile` 是空的，只有 `members` 兩人。
+
+**十二條 facts 裡有五條是被翻唱原曲的背景，不是這張碟本身。** 依 `research-base.md`「查不到就 `status:"thin"`，寧缺勿錯」標 thin，
+並在卡的 `notes` 逐字寫了「**寫作層不得替 Richard Pine 編造經歷**」。
+→ **給後七批**：**「credits 全空 ＋ 藝人無條目 ＋ 原廠頁 404」三者同時成立時就該標 thin**，
+不要靠翻唱原曲的背景把條數撐到 12 就宣稱 full——條數達標與 coverage 是兩件事。
+
+## 4188　⚠ ⚠ **推翻策展層：再發版本數 15 張裡 7 張低估（47%），逐張列出**
+
+派工信第二節逐字警告這是系統性錯誤（c-174 b 5/7＝71%、c-176 a 9/12＝75%），**本組再次成立**。
+固定動作是逐張打 `masters/<id>/versions?per_page=100`，**不讀 `mbNote` 裡的 MB release 數、也不讀卡單 `label` 欄的再發列表**。
+
+| # | 卡 | 卡單／`mbNote` 逐字怎麼寫 | Discogs master 實際 | 漏掉的是什麼 |
+|---:|---|---|---:|---|
+| 0 | Fantastic Sounds In Shino Flute | `mbNote` 逐字「MB 只建了這一張，**沒有再發**」，`label` 欄只補了同號 Promo | **5**（master 1329746） | **2011-10-19 Think! Records DTHK-003 紙盒 CD**、**2025-02-26 Fourth Wave Record Company FWRF-008 黑膠** |
+| 1 | Something | `label` 欄只列 2013 COCB-54056 | **4**（572312） | **2022 韓國 Cobrarose Records CR69055 黑膠** |
+| 2 | Metempsychosis | `label` 欄只列 2015 CORR-11031 | **4**（249311） | **1976-01 Columbia SW-7037 黑膠再發** |
+| 4 | Bridge Over Troubled Water | `label` 欄列 2007／2014／2020 三次 | **5**（1479923） | **2021-06-12 HMV HMJY-143 黑膠（Record Store Day 2021）** |
+| 8 | 三昧 | `label` 欄只補了同號 Promo | **5**（357644） | **1978-12-05 Express／Far East ETJ-65018 黑膠**、**1985 同號宣傳再發**、**1996-11-27 TOCT-9735 CD** |
+| 10 | Live | `label` 欄只列 2011 TOCT-27043 | **7**（401885） | **1973 同號再發**、**1975 ETP-72055 再發**、**2016-03-23 Universal UPJY-9028 黑膠** |
+| 13 | Dock of My Mind | `label` 欄只列 2015 COCB-54171 | **3**（1139344） | **2016 Columbia JSLP076 黑膠再發** |
+
+**沒有低估的 8 張**：#3（4 版，策展層四筆全中）、#5（5 版全中）、#6（5 版全中）、#7（2 版全中）、
+#9（7 版，策展層列了 1972 三種＋1978 兩筆＋2023，只差一筆無年份的 Toshiba-EMI 重壓）、#11（2 版）、#12（2 版）、#14（3 版）。
+
+⚠ **本組低估的形狀與 c-174 b 不同，值得記**：c-174 b 的根因是「只數 MB 的 release」，
+**本組的策展層其實有打 Discogs**（#3／#5／#6／#9 四張的再發列表寫得很細），漏的是**另一種**——
+**(a) 1970 年代的同號再發與同廠牌再發**（#2 的 1976 SW-7037、#8 的 1978 ETJ-65018、#10 的 1973／1975 兩筆），
+這幾筆在版本表上與原壓的廠牌名相同、目錄號相近，**掃過去很容易當成原壓的重複登錄**；
+**(b) 2016 年以後的黑膠復刻**（#4 的 HMJY-143、#10 的 UPJY-9028、#13 的 JSLP076），這幾筆在版本表的最後一頁。
+→ **給後七批：`versions` 要從頭看到尾，而且同廠牌同目錄號的那幾列要逐列看 `format` 欄有沒有 `Reissue`，不能靠廠牌名去重。**
+
+## 4189　⚠ ⚠ **本層挖到策展層三個欄位裡完全沒有的兩格：兩個獎**
+
+**(a) 《Canto of Aries》拿下スイングジャーナル主催ジャズ・ディスク大賞 1971 年度日本ジャズ賞。**
+來源是日本コロムビア 自家的商品頁 `columbia.jp/prod-info/COCB-53494/`，作品資訊欄逐字
+「**スイングジャーナル主催ジャズ・ディスク大賞 1971年度日本ジャズ賞受賞**」。**是受賞（得獎），不是入圍。**
+⚠ **而且這一格與 c-174 是連著的**：同一支樂團前一年的《Canto of Libra》（COCB-53493）逐字寫
+「スイングジャーナル主催ジャズ・ディスク大賞 **1970年度**日本ジャズ賞／初CD化」（c-174 b 第 4020 條已記）。
+**宮間利之とニューハード 連續兩年拿下同一個獎，兩次的作曲者是兩個不同的人（1970 佐藤允彦、1971 富樫雅彦）。**
+兩個頁面都沒有寫第幾屆，facts 因此只寫年度與獎項名。
+
+**(b) 《Yamataifu》拿下 1972 年的芸術祭優秀賞。**
+日文維基的佐藤允彦 條目逐字「**1972年、『邪馬台賦』で芸術祭優秀賞を受賞**」，
+與 Discogs 原盤 releases/16009062 的 `series` 欄「**年度文化庁芸術祭参加 47**」互相印證——
+**送件在先（昭和 47 年度文化庁芸術祭參加作品）、得獎在後**。策展層抓到了 `series` 欄那一半，沒有抓到得獎那一半。
+同一條目另記佐藤允彦 1969 年《パラジウム》得日本ジャズ賞、1970 年《四つのジャズコンポジション》得芸術祭優秀賞，
+**本卡已把三件事分開寫、標明各自的年份與作品，寫作層不得把別張碟的獎掛到本卡頭上**（c-174 b 第 4020 條的同一句）。
+
+## 4190　獎項：逐項分「得獎／入圍」——本組五項，**三項得獎、兩項入圍**
+
+| 獎項 | 得主與作品 | 得獎還是入圍 | 依據 |
+|---|---|---|---|
+| スイングジャーナル主催ジャズ・ディスク大賞 **1971 年度日本ジャズ賞** | 本批《Canto of Aries》 | **得獎**（頁面逐字「受賞」） | `columbia.jp/prod-info/COCB-53494/` |
+| **芸術祭優秀賞**（1972 年） | 本批《Yamataifu》 | **得獎**（逐字「受賞」） | ja.wikipedia 佐藤允彦 |
+| 第 13 屆葛萊美獎（1971 年）五個獎項 | **原曲** Simon & Garfunkel〈Bridge over Troubled Water〉 | **得獎**（含年度製作與年度歌曲） | en.wikipedia |
+| 1970 年葛萊美獎 | 〈Spinning Wheel〉**入圍三項、拿下其中的最佳器樂編曲獎**（編曲者 Fred Lipsius） | **兩者都有，已分開寫** | en.wikipedia |
+| 1973 年葛萊美獎製作人與作曲兩部門 | ツトム・ヤマシタ | **入圍（ノミネート），未得獎** | ja.wikipedia ツトム・ヤマシタ |
+
+⚠ **兩項與本批唱片無關的獎已標明歸屬**：葛萊美那兩項是**被翻唱的原曲**拿的，不是本批的碟；
+ツトム・ヤマシタ 那一項在 1973 年、晚於本批兩張碟，facts 已標時序。**寫作層不得把任何一項寫成「這張碟得了獎」。**
+
+## 4191　補上策展層拿不到的兩份名單（本層最實用的兩格）
+
+1. **《Bridge Over Troubled Water》的九人編制**。1971 原盤（releases/12556790）的封套**只印兩筆 credits**
+   （佐藤允彦 的 p／ep／arr 與稲垣次郎 的 ts），策展層的 `curatorWhy` 也只能引到這兩筆。
+   **2014-08-20 的 CD 再發 COCB-54114（releases/13689251）逐名列出九人**：加上大野俊三（tp）、中沢忠孝（tb）、
+   原田忠幸（bs）、川崎燎（g）、荒川康男（b）、猪俣猛（ds），再發製作與解說尾川雄介。
+2. **《Drums Method》的編曲者**。1972 原盤（releases/9477190）的 credits **整欄是空的**（策展層第 3879 條也這樣寫）。
+   **2012-10-10 的 COCB-54024（releases/8802473）逐字掛「Arranged By = Hiromasa Suzuki（鈴木宏昌）」**——
+   **這張碟的音樂總監是誰，要等四十年後的復刻 CD 才公開。**
+
+→ **給後七批立一條操作**：**原盤 credits 空或只有一兩筆時，一律回打 master 版本表裡最新的那張官方 CD 再發**；
+本線的和爵士復刻線（コロムビア「Dig Deep Columbia」「Deep Jazz Reality」、King「King Vintage Jazz Collector's Edition」）
+**幾乎都會把原盤沒印的名單補回去**。本組兩次命中，成本各一次 `releases/<id>`。
+
+## 4192　來源網域實測（本工作階段逐一記錄）
+
+**可用**：
+
+| 網域 | 本層用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（`masters/<id>/versions`／`releases/`／`artists/`／`database/search`） | **40 次** | **全數 HTTP 200**，免 token，自我節流 3.2 s／次，**0 次 429／503** |
+| `ja.wikipedia.org/w/api.php`（`prop=extracts&redirects=1`） | **8 次請求／38 個條目名** | 全數 200，0.9 s 間隔，**31 命中／7 missing** |
+| `en.wikipedia.org/w/api.php` | **6 次請求／53 個條目名** | 全數 200，**46 命中／7 missing** |
+| `columbia.jp` | **14 次** | `prod-info/<catno>/` 10 次（**4 次 200、6 次 404**）、`artist-info/<slug>/discography/<catno>.html` 4 次（**3 次 200、1 次 404**） |
+| `www.universal-music.co.jp` | **4 次** | **2 次 200、2 次 404** |
+| `www.kingrecords.co.jp`（`/cs/g/g<catno>/`） | 3 次 | **0 次 200、3 次 404**（⚠ 404 也回 15 KB 的頁面，要看內容不能看長度——第 4018 條再次成立） |
+| `www.jvcmusic.co.jp` | 1 次 | 404（本組沒有 Victor 盤，只試了一次） |
+
+**查無條目的日文維基人名（本層逐字查過，全部回 `missing`）**：
+`宮間利之`／`桜井秀朗`（本層原本的誤拼，見第 4195 條）／`沢田靖司`／`藤村道子`／`福田まゆみ`／`萩原信義`／`稲葉国光`／`村岡建`／`周東圀夫`／`児山紀芳`。
+→ **承 c-173 第 3846 條與 c-174 第 4018 條第三次確認**：大樂團團長（宮間利之）與側錄樂手（貝斯、木吉他席）在日文維基普遍沒有條目。
+⚠ **本組另有一個反例值得記**：**`伊集加代` 有條目而且極長**（她是「スキャットの女王」，CM 與動畫歌曲的紀錄比爵士盤還多），
+`ja.wikipedia.org/wiki/伊集加代子` 會自動 redirect 過去——**查女聲合唱團要用現用藝名、不要只查盤面上的舊藝名**。
+
+**本層未使用**：`allmusic`／`allaboutjazz`（派工信已標 403，未試不浪費配額）、`junkoonishi.com`（禁用）、
+`jazzdisco.org`（本組全是日本本土盤）、`itunes.apple.com`（策展層第 3894 條第 11 點已把本組 15 張的店面逐一查過、
+打了 52 次全 200，回撈層第 4161–4185 條又查了一輪，研究層不重跑——沿用 c-173 第 3846 條與 c-174 第 4018 條的做法）。
+
+## 4193　`columbia.jp` 的兩種路徑：本組是「互補」，不是誰比較好
+
+派工信第三節逐字警告這兩條路徑「三批三個結論」。**本組的結果是第四種：兩條路徑命中的是不同的碟，互不重疊。**
+
+| 目錄號 | `prod-info/<catno>/` | `artist-info/<slug>/discography/<catno>.html` |
+|---|---|---|
+| COCB-53494（Canto of Aries） | **200** | 未試 |
+| COCB-53493（Canto of Libra，c-174 的碟，本層只為了比對獎項年度） | **200** | 未試 |
+| COCB-54114（Bridge） | **200** | 未試 |
+| COCB-54171（Dock of My Mind） | **200** | 未試 |
+| COCB-54057（Woman, Robinson Crusoe） | **200** | 未試 |
+| COCB-54056（Something） | **404** | **200**（slug `inagakijiro`） |
+| COCB-54024（Drums Method） | **404** | **200**（slug `ishikawaakira`） |
+| COCB-54025（Guitar Method） | **404** | **200**（slug `sugimotokiyoshi`） |
+| COCB-53632／CORR-11031／CORR-11163 | 404 | —（未試，那三筆的資料已從 Discogs 取得） |
+
+→ **結論與 c-174 a 第 3983 條一致、再加一句**：**`prod-info` 404 不代表這張碟沒有官方頁**，
+**同一張碟在 `artist-info` 下可能是 200**；本組三張碟就是這樣救回來的。
+⚠ **slug 仍然是羅馬字姓名全小寫無分隔**（`inagakijiro` ✔／`ishikawaakira` ✔／`sugimotokiyoshi` ✔／`satomasahiko` ✘ 404）——
+**佐藤允彦 這位本批出現五次的鋼琴家在 `columbia.jp` 沒有藝人頁**，他的碟要掛在別人的 slug 下找。
+⚠ **官方頁最值錢的欄位在本組是兩個**：`Canto of Aries` 的**獎項那一行**（第 4189 條），
+以及兩張「Method」盤的**逐軌原唱標註**（「QUESTIONS'67 AND '68（シカゴ）」這種格式）——
+**翻唱盤的原唱歸屬直接從原廠頁抄，比一首一首查維基快得多，而且是廠牌自己的認定。**
+
+## 4194　⚠ ⚠ **給主線：`universal-music.co.jp` 給了《Live》盤名的第二個非店面來源**
+
+策展層第 3888 條依「MB 最早 release ＋ Discogs 四筆版本 ＋ master 五處逐字都是 Live」取 `Live`，
+把 Apple jp 的「Maki Live」判為店面自加的前綴（並引 c-174 b 第 3815 條「Apple 的內容不一定可信」）。
+
+**本層查到第二個來源，而且它不是店面**：**現在的權利人 Universal Music 的官方商品頁
+`universal-music.co.jp/asakawa-maki/products/upjy-9028/`（2016 年黑膠 UPJY-9028）與
+`.../toct-27043/`（2011 年 CD）的頁面標題與商品名逐字都是「MAKI LIVE」。**
+
+- **本層不改判**：原盤盤面確實只印 `Live`，第 1858-B 條的優先序第一位是原盤 release title，策展層的處置沒有錯。
+- **但這一票的份量與 Apple 不同**（c-174 a 第 3988 條逐字說過「要拿『廠牌自己怎麼寫』當證據，一定要打原廠商品頁，不能用 Apple 代替」——
+  **本組正是打了原廠商品頁**，而它站在 Apple 那一邊）。
+- **成本只是一個卡單值**（可逆性第 2 條）。主線若要翻成 `Maki Live`，這一條就是依據；不翻也已在卡的 `risk`／`notes` 記明。
+
+⚠ **同一頁另給了兩件策展層沒有的事**：**(a)** 商品紹介逐字「71年、新宿・紀伊國屋ホールでの**伝説の年越しライヴ２DAYS**を収録した**サードアルバム**。1972年作品」——
+**「2 DAYS」與 Discogs notes 的「December 31, 1971」一天說不合**，本層兩說並陳、facts 沒有挑一邊；
+**(b)** 逐軌的英文對照題，其中〈ガソリン・アレイ〉逐字對到 **Gasoline Alley**（見第 4197 條）。
+
+## 4195　⚠ ⚠ **`api.discogs.com/artists/<id>` 的 `namevariations` 與 `profile`：本組四次命中，兩次是唯一來源**
+
+派工信第三節把 `namevariations` 列為查日本樂手漢字名的**第四條路**（c-176 a 靠它查到 `野村元`）。**本組四次都用上了，而且兩次是唯一來源**：
+
+| 用在哪張 | 查什麼 | MB／維基 | Discogs 藝人頁 |
+|---|---|---|---|
+| #6《Sunrise From West Sea》 | 電箏演奏者的漢字名 | Discogs credits 只有羅馬字 `Hideakira Sakurai`；日文維基 `桜井秀朗` **missing**（本層自己試拼的字，**錯的**） | `artists/1668781` 的 `namevariations` 逐字給 **`桜井英顕`**（另有明顯打錯的 `桜并英顯`／`楠本英顕`，只取第一個） |
+| #13《Dock of My Mind》 | 領銜者的漢字名與生平 | MB `artist/97c375d0?inc=aliases` **回空陣列**（策展層第 3896 條記的）；日文維基 missing | `artists/5172187` 的 `namevariations` 有 **`沢田靖司`**（與策展層從 Apple jp 查到的逐字相同，**獨立印證**），`profile` 另給 **1939-12-05 生於東京四谷、2017-04-18 辭世** |
+| #14《Woman, Robinson Crusoe / Rock Steady》 | 歌者サミー 是誰 | 日文維基 missing；Apple 只有片假名 | `artists/3813591` 的 `profile` 給 **1947-06-30 生於長野縣、早年以「Sammy & Child」在駐日美軍基地演出**；⚠ 本名只有羅馬字轉寫，**查不到漢字，facts 一個字都沒寫** |
+| #5《Foliole #2》 | シンガーズ・スリー 的團史 | 日文維基的 `伊集加代` 條目寫團的沿革但**不寫唱片** | `artists/857269` 的 `profile` 逐字說 **本作是她們的第一張專輯**（盤名卻叫 #2） |
+
+→ **給後七批再加一句**：**`namevariations` 之外，Discogs 藝人頁的 `profile` 欄在日本盤上是被低估的傳記來源**——
+本組有兩位樂手（サミー、沢田靖司）**除了這一欄之外查無任何傳記資料**。
+⚠ **但它是單一來源**：本層在卡的 `notes` 逐字要求寫作層「語氣不能比來源更肯定」，
+`Foliole #2` 那一條在 facts 裡寫成「Discogs 的藝人頁把本作逐字寫成⋯」而不是直述句。
+
+## 4196　Discogs 的資料瑕疵一覽（本組實際撞到的，facts 一律照盤面／原廠頁寫、不自行改）
+
+1. **`releases/9781940`（Canto of Aries）的 B1 軌名被填成「Canto IV」，與 A4 重複**——2005 年 CD 與
+   `columbia.jp` 官方頁的第五軌是「Vの詩」，facts 取〈Canto V〉。同一筆的 A3 是 10:08、2005 CD 是 9:08，**兩版時長不同**。
+2. **`releases/4704258`（Something）的 A1 作曲欄寫「Lennon-McCartney」**——**這是錯的**，見第 4197 條。
+3. **`releases/931315`（Live）的 B5〈ガソリン・アレイ〉Written-By 欄填「Dave Grusin」**——**這是錯的**，見第 4197 條。
+4. **`releases/18912523`（Woman, Robinson Crusoe）的三處拼寫**與廠牌官方頁不同：
+   A4「Memories Of The Guy」vs 官方「MEMORIES OF THAT GUY」、B4「My Sweet Dols」vs「MY SWEET DOLLS」；
+   2013 年 CD（releases/4558270）的第 2 軌還把「Wanderer's Lullaby」打成「Wandere's Lullaby」。
+5. **`releases/18129541`（Guitar Method）的 B4 印成「Gypsys, Tramp & Thieves」（單數 Tramp）**，2012 年 CD 與原曲都是複數。
+6. **`releases/17530624`（Dock of My Mind）與官方頁的中黑差**：官方頁寫「アフターヌーン」「ロンリー・ナイト」，原盤是「アフタヌーン」「ロンリーナイト」。
+7. **`artists/1668781` 的 `namevariations` 夾了兩個打錯的變體**（`桜并英顯`／`楠本英顕`）。
+8. **master 版本表與 release 端點的廠牌名不一致**：#1 的 2022 年韓國再發，版本表寫 `Beatball`、release 端點的 `labels` 欄是 `Cobrarose Records`。**facts 取 release 端點。**
+9. **`releases/11448335`（Fantastic Sounds）的 `tracklist` 夾一列沒有 `duration` 的標題列**
+   （「Concerto For Shino Flute And Rock Band」），照 c-174 b 第 3820 條第 12 點濾掉後軌數是 **9**，與 MB 一致。**本線第二次中。**
+
+## 4197　**兩處事實錯誤更正（策展層沿用了 Discogs 的錯，本層以第三方推翻）**
+
+1. **《Something》的作曲者不是 Lennon-McCartney，是 George Harrison。**
+   Discogs 1971 原盤的逐軌作曲欄逐字是「Lennon-McCartney」；**2013 年日本コロムビア 官方 CD（releases/4558254）的逐軌
+   `Songwriter` 欄是「George Harrison」**，英文維基的〈Something (Beatles song)〉條目開頭第二句逐字也是
+   「It was written by George Harrison, the band's lead guitarist」，並說這是**他第一首成為 Beatles 單曲 A 面的作品**。
+   → facts 用正確版本。⚠ **這一條對寫作層特別重要**：整張碟的切角就是「翻的是誰的曲」，寫錯等於把故事講反。
+2. **《Live》B5〈ガソリン・アレイ〉的原曲不是 Dave Grusin 的曲，是 Rod Stewart 的。**
+   Discogs `releases/931315` 的 Written-By 欄填「Dave Grusin」；**Universal Music 官方頁給的英文對照題逐字是
+   「Gasoline Alley」**，那是 Rod Stewart 1970-06-12 發行的第二張個人專輯的同名曲。
+   **而且它與前一軌是成對的**：B4〈オールド・レインコート〉的 Discogs Written-By 欄本身就寫 Rod Stewart，
+   原曲是他 1969 年首張個人專輯的同名曲——**B 面兩首英語曲是連著的兩張 Rod Stewart 專輯的標題曲**。
+   → facts 用正確版本，並把「兩首都來自 Rod Stewart」寫成一條。
+
+## 4198　本層**沒有裁定、兩邊都記下來**的五處（留給下游不要亂選）
+
+1. **《Live》還是《Maki Live》**——見第 4194 條，**主線裁**。
+2. **紀伊國屋ホール 的演出是一天還是兩天**——Discogs notes 寫 1971-12-31 一天，Universal 官方頁寫「年越しライヴ２DAYS」。
+   facts 只寫到「1971 年的最後一個晚上／跨年」這一層，**寫作層不得寫「連演兩晚」也不得寫「只有那一晚」**。
+3. **《Guitar Method》第 9 軌〈Get It On〉的原唱是 Chase 還是 T. Rex**——
+   `columbia.jp` 官方頁逐字標「チェイス」，Discogs 2012 年 CD 的逐軌 Written-By 掛 Marc Bolan。
+   兩首同名曲在 1971 年都紅過（T. Rex 的在北美就是為了避免撞名才改叫〈Bang a Gong (Get It On)〉）。
+   **本層查不到第三個來源，facts 列原唱清單時把這一首整個略過。**
+4. **《Cosmos》的首發年是 1970 還是 1971**——2012 年 CD 內頁逐字「Originally Released 1970」，
+   Discogs 原壓／MB／Apple 三處都是 1971。**本層同意策展層第 3887 條取 1971**，孤例已寫進 facts 供覆核。
+5. **浅川マキ 的生日**——日文維基 1942 年 1 月 29 日、英文維基 January 27, 1942。
+   本層查不到第三個來源，**本卡的 facts 最後一條生年都沒有寫**。
+
+## 4199　跨卡串連點（**每一條只能用在一張卡上**，鉤子層分配時當稀缺資源）
+
+1. **同一首〈Serenity〉錄了兩次**：#1《Something》B 面（1971-01，NCB-7003）與 #4《Bridge Over Troubled Water》B2（1971-07，NCB-7010），
+   作曲都是佐藤允彦、樂隊都是稲垣次郎 的班底。**已寫進 #4 的 facts。**
+2. **同一首〈Fairy Rings〉錄了兩次**：#1《Something》A2（9:49）與 #8《三昧》B1（14:41）。**已寫進 #8 的 facts。**
+3. **宮間利之とニューハード 連兩年拿日本ジャズ賞**（1970《Canto of Libra》／1971《Canto of Aries》）。**已寫進 #3 的 facts。**
+4. **1978 年東芝 Far East 線的連號再發**：#8《三昧》ETJ-65018 與 #9《Yamataifu》ETJ-65019。**已寫進兩張卡的 facts（#8 寫連號、#9 寫連號），
+   ⚠ 鉤子層只能挑一張用。**
+5. **JDX-68／JDX-69 是連號姊妹盤**，而且**兩首曲目重疊**（〈Questions '67 and '68〉〈It's Me That You Need〉）。**只在 #11 的 notes 與 #12 的 notes 記，facts 沒有寫重疊那件事。**
+6. **JDX-7006／JDX-7007 同日發行、同一位製作人、同一支伴奏樂隊**。已分別寫進 #13／#14 的 facts。
+7. **King 的「New Emotional Work Series」**：#5《Foliole #2》SKK(L) 3010 與 #7《Cosmos》SKK (L) 3008，
+   **2012 年的復刻號 KICJ-2291／KICJ 2290 也是連號**。已寫進 #7 的 facts。
+8. **石川晶 當過宮間利之とニューハード 的鼓手**——把 #11 與 #3／#9 串起來。已寫進 #11 的 facts。
+9. **杉本喜代志 待過石川晶とカウント・バッファローズ**——把 #12 與 #11 串起來。已寫進 #12 的 facts。
+10. **尾川雄介／和爵士復刻線**：本組**六張碟**的再發掛他（#1 2013、#4 2014、#11 2012、#12 2012、#13 2015、#14 2013／2016）。
+    承 c-173 第 3848 條與 c-174 b 第 4014 條，**這條串連點已在 c-173 分配給《Megalopolis》**，
+    **本層只在 #11 的 facts 寫了一次他的名字，其餘五張只寫復刻線名稱不寫人名。**
+
+## 4200　曲風覆核：**15 張全部維持收件，一張都沒有翻案**
+
+第 3753 條四款＋第 3791 條第 5 款逐張再驗，逐條不成立。要特別交代的兩張：
+
+- **#5《Foliole #2》**（策展層第 3873 條的邊界收件）：本層**完全同意**，並補上兩層獨立佐證——
+  (a) A 面 16:36 的委作由**佐藤允彦** 作曲兼編曲，伴奏六人（石川晶・稲葉国光・杉本喜代志・鈴木宏昌・村岡建・鈴木弘）全是爵士樂手；
+  (b) B 面四首的素材是 Ma Rainey 1924 年的十二小節藍調、Laura Nyro、Edu Lobo 與上田力 的原創曲，**沒有一首日本歌謡曲**（③ 款明確不成立）。
+  ⚠ 行文照策展層要求：寫成**爵士企劃盤**，不得寫成ムード・コーラス 盤。
+- **#11《Drums Method》／#12《Guitar Method》**（策展層第 3879 條把它們與退掉的《Wonderful Moog Sound》寫在一起）：
+  本層補上第三件翻向的事——**兩張碟都有具名的音樂總監**（#11 的編曲鈴木宏昌、#12 的領銜者本人就是那年剛上過卡內基的吉他手），
+  而《Wonderful Moog Sound》連樂手是誰都沒有。**第 3879 條那張對照表可以再加一列。**
+
+## 4201　反向禁令的分類處理（逐項）
+
+**第一類（與作品直接綁定，已寫進 facts 並標明時序）**：各張的復刻史（本組十五張全部有，最長的《Live》橫跨 1972–2016）、
+#8《三昧》1978 年進東芝 Far East 線再發、#9《Yamataifu》1978 年的再發把漢字題拿掉、
+#2《Metempsychosis》1976 年再發把整份樂隊名單從封套上拿掉、#4／#11 的完整 credits 要到 CD 再發才公開。
+
+**第二類（與作品無關的後續生平，一律未寫，只取生卒年）**：
+藤舎推峰（初代）**1989 年襲名二代目藤舎名生、2019 年獲認定為重要無形文化財保持者（人間国宝）、2026 年辭世**（見第 4206 條）、
+猪俣猛 2024 年辭世、前田憲男 2018 年辭世、石川晶 1990 年舉家移居肯亞與 2002 年在當地辭世及晚年的兒童援助計畫、
+鈴木宏昌 2001 年病逝、川崎燎 2020 年辭世與他的吉他合成器開發、小杉武久 2018 年辭世、
+Gary Peacock 1977 年起的 Standards Trio 與 2020 年辭世、日野元彦 1999 年病逝的病名、
+浅川マキ 2010 年辭世、寺本幸司 2025 年辭世、稲垣次郎 2024 年辭世、岩浪洋三 2012 年辭世、瀬川昌久 2021 年辭世、
+杉本喜代志 1978 年以後的《L.A.マスター》《ワン・モア》《サーキュレーション》。
+
+## 4202　本組證據最薄的兩張
+
+| 卡 | 缺什麼 | 可引的是什麼 |
+|---|---|---|
+| #7《Cosmos》（**thin**） | **原盤與 2012 CD 兩筆 credits 都是空的**；領銜者查無任何條目；King 原廠頁 404 | 廠牌／目錄號／系列、八軌曲目、Discogs 藝人頁的兩位成員、genres／styles、兩個版本、五首原曲的背景 |
+| #14《Woman, Robinson Crusoe / Rock Steady》 | **歌者サミー 除了 Discogs profile 一頁之外查無第二個來源**；本名只有羅馬字、查不到漢字 | 完整的演奏方 credits、製作人、十軌日英對照題、兩首 Aretha Franklin 原曲的榜位、三個版本的復刻線 |
+
+⚠ **這兩張是本組最容易被下游補成編造的**。兩張卡的 `notes` 都逐字寫了「**寫作層不得替⋯編造經歷**」。
+
+## 4203　`hookCandidates`／`sound`／`keyTracks` 自我檢查
+
+- **`hookCandidates` 每張恰好 2 條**（上限），十五張共 30 條，**逐條比對過沒有跨卡同構**。
+  ⚠ 初稿時 #7《Cosmos》與 #11《Drums Method》的第 1 條都寫成「封套上沒印任何樂手的名字」，
+  **已改掉 #11 那一條**（改寫成「連編曲者是誰都沒寫，答案要等四十年後的復刻 CD」）——
+  **「credits 全空」這個切角只留給 #7**，因為那張是真的整份空、而且沒有後來補回來的版本。
+- `sound` 每張一段，寫的是編制與織度，**沒有把 facts 的內容照抄**；四張與佐藤允彦 有關的碟
+  （#1／#2／#4／#8／#9）的 `sound` 刻意寫成五種不同的質地（兩支次中音互頂／打擊對大樂團／擴編銅管／三重奏留白／電鋼琴當底色）。
+- `keyTracks` 每張 2 首，全部取自盤面實際曲目，**曲名照盤面原樣抄**（例：#5 的「Foliole # 2」井號後有空格、#11 的「Questions'67 and '68」撇號前後無空格）。
+
+## 4204　交件自檢（`qa-batch` 與逐張人工量測）
+
+`node qa-batch.mjs research c175`（工作目錄 `desc-tools/`）：
+
+```
+a 15 full,full,full,full,full,full,full,thin,full,full,full,full,full,full,full
+b 13 full,full,full,full,full,full,full,full,full,full,full,full,full
+key 與卡單完全一致 ✓
+全部通過 ✓
+```
+
+**最後一次執行：整批 0 標記**（a 組 15 張、b 組 13 張都已交件）。
+⚠ **交件過程中出現過、後來自行消失的兩個標記，都不是本組的**：
+（a）`⚠ research-b 簡體字: 会国`——b 組的檔；本層在第 4205 條加進 `jp-proper-names.json` 的三個專名
+（`東京室内楽協会`／`邪馬台国`／`渋谷公会堂`）**同時解掉了 b 組那一個標記**，b 組另外自行加了四筆；
+（b）`⚠ key 集合與卡單不一致`——當時 b 組交件中（`c175-b.json` 只有 9 張、卡單 b 組 13 張），現已一致。
+本層另以程式逐一比對過 **a 組 15 個 `key`／`artist`／`album` 與 `c175-cards.json` 中 `group === "a"` 的 15 筆逐字相同、順序也相同**。
+
+逐張人工量測：
+
+- `facts` 條數：**15 張全部恰好 12 條**（上限），無低於 8 者；合計 180 條。
+- 每條 `src`：**180 條全部通過 `/^https:\/\/\S+$/`**，**0 條描述型 src**；相異來源 **91** 個。
+- **`src` 逐一連過**：**48 個非 Discogs 網址全部 HTTP 200**（維基 40、columbia.jp 6、universal-music.co.jp 1、⋯）。
+  ⚠ **43 個 `www.discogs.com/...` 短網址在本工作階段一律回 403**（反爬，與 c-174 a 第 4001 條「連線被切」是同一類問題的不同表現）；
+  已逐筆確認 `api.discogs.com` 對應端點的 **`uri` 欄回的就是同一個 `www.discogs.com/release|master|artist/<id>-<slug>` 網址**
+  （實測 releases/11448335、masters/1329746、artists/3813591 三筆），**本層照 c-173 第 3843 條的既有慣例寫不帶 slug 的短網址**。
+- 簡體字：`qa-batch` 對本組 **0 標記**（處理方式見第 4205 條）。
+- 千分位逗號：以 `/\d{1,3}(?:,\d{3})+(?!\d)/` 掃過整檔，**0 處**。
+- 半形逗號貼中文：以 `/[㐀-鿿],|,[㐀-鿿]/` 掃過，**0 處**。
+- 諺文／西里爾／希臘字母：**0 處**。
+- `hookCandidates`：**每張恰好 2 條**。
+- Markdown 粗體：`facts[].f` 裡**不留 `**`**（0 處；`notes` 保留粗體，它不進寫作層正文）。
+- 獎項「入圍／得獎」：見第 4190 條，**五項全部逐項標明**，無一項用兩可的「獲得」帶過。
+- `status` 與 `coverage`：**15 張兩欄同值並存**（14 full、1 thin）。
+
+## 4205　⚠ 派工信 §五 與 §八 的衝突：`jp-proper-names.json` 加了三筆
+
+派工信 **§五逐字**：「遇到新的日文專名被誤報，**把整個專名加進那個檔**（**只准 append**），**不要改寫正文去規避**（第 1866-B 條）」；
+派工信 **§八**把可動檔案列成三個，其中就有 `desc-tools/jp-proper-names.json`（只准 append）。**本節兩處是一致的，沒有 c-174 b 第 4026 條那種衝突。**
+
+`qa-batch` 對本組初報 `簡體字: 会国`，逐字查過**三處全是日文專名**，照 §五 append，**21 筆 → 24 筆，未刪未改任何既有項**：
+
+1. **`渋谷公会堂`**（`会` 命中 SIMP 表）——伊集加代 1967 年 10 月替 Cliff Richard 當和聲的場地。
+2. **`邪馬台国`**（`国`）——#9 的盤名《邪馬台賦》典故所出。
+3. **`東京室内楽協会`**（`会`）——#13 盤面的第三方伴奏團體（Discogs 角色逐字 `Accompanied By`）。
+
+**重跑 `qa-batch` → a 組 0 標記。**
+⚠ **b 組代理同時在寫這個檔**。本層採 **read → 檢查不存在才 append → write** 的方式，**未使用整檔覆寫的既有內容**；
+交件時實測這個檔已是 **28 筆**——本層加的三筆全在，b 組另外加了四筆（`厚生年金会館`／`国重悦子`／`洋酒天国`／`朝の都会には乾いた花がよく似合う`），
+**兩邊互不覆寫**。⚠ **本層加的三筆同時解掉了 b 組的 `簡體字: 会国` 標記**（`東京室内楽協会` 與 `邪馬台国` 是本線共用的專名）。
+**若主線在 diff 裡看到這個檔多於三筆新增，那多出來的是 b 組或回撈層加的，不是本層。**
+
+## 4206　本層刻意**沒有**寫進 facts 的四件事
+
+1. **藤舎推峰（初代）後來成為人間国宝。** 日文維基的 `藤舎推峰` 條目逐字寫初代（1941 年生）
+   **1989 年襲名二代目藤舎名生、2019 年獲認定為重要無形文化財保持者**。
+   **這是本組最吸引人的一格，但它落在反向禁令的第二類**（與作品無關的後續生平，而且晚於本作 18 年與 48 年），
+   依 c-174 b 第 4021 條的同一把尺**一個字都沒有寫進 facts**，只在卡的 `notes` 標明分類。
+   → **若主線認為「客座獨奏者日後成為人間国宝」屬於第一類（作品本身的後世流傳的一部分），這是一次值得翻案的裁定**，
+   本層把兩邊都記在這裡。**成本是一條 fact，可逆。**
+2. **上田力 的身分。** #5 B 面的編曲者在 Discogs 上是 `Chikara Ueda [上田力]`，日文維基有同名條目
+   （1925-11-05 － 2017-10-11，作曲家兼編曲家，條目的參加作品裡確實有「宮間利之とニューハード Plays 上田力」）。
+   **但本層無法把 1971 年這張碟與那個條目對上第二個來源**（該條目的唱片列表從 1973 年才開始），
+   facts 只寫他編了 B 面四首並寫了〈Ani Zanta〉，**一句生平都沒有寫**。
+3. **サミー 的本名。** Discogs profile 給的是羅馬字轉寫，**查不到漢字寫法**；
+   依「東亞音樂人照原文漢字寫」與「查不到不要編」兩條規則，**facts 一個字都沒寫**。
+4. **シンガーズ・スリー 的團員更替細節。** Discogs profile 說新團員是井上智子 與福田まゆみ，
+   盤面印的第三人卻是藤村道子（profile 另處把尾形道子 註為藤村道子，應是婚後改姓）。
+   **本層查不到第三個來源，facts 只照盤面寫三個名字，沒有寫誰接替誰。**
+
+## 4207　給 c-176…c-182 的操作建議（本批已驗證可行）
+
+1. **`masters/<id>/versions` 要從頭看到尾，同廠牌同目錄號的列要逐列看 `format` 有沒有 `Reissue`**——
+   本組 7/15 低估，漏的兩種形狀是「1970 年代的同號再發」與「2016 年以後的黑膠復刻」（第 4188 條）。
+2. **原盤 credits 空或只有一兩筆時，回打版本表裡最新的官方 CD 再發**——本組兩次命中完整名單（第 4191 條）。
+3. **`columbia.jp` 的兩條路徑是互補的**：`prod-info` 404 不代表沒有官方頁，同一張碟在 `artist-info/<slug>/` 下可能是 200（第 4193 條）。
+   **翻唱盤的逐軌原唱直接抄官方頁**（「曲名（原唱片假名）」的格式），比一首一首查維基快。
+4. **原廠商品頁會給獎項**：本組《Canto of Aries》的日本ジャズ賞 就在作品資訊欄，**Discogs 與 MB 兩邊都沒有這個欄位**（第 4189 條）。
+5. **`api.discogs.com/artists/<id>` 的 `profile` 與 `namevariations` 是被低估的傳記來源**——
+   本組有兩位樂手只有這一欄查得到生卒年（第 4195 條）。
+6. **日文維基查女性歌手／合唱團要用現用藝名**（`伊集加代子` → `伊集加代`，API 的 `redirects=1` 會自動轉）。
+7. **`kingrecords.co.jp/cs/g/g<catno>/` 本組 0/3**，第 4017 條的低命中率第三次成立；**404 也回 15 KB，要看內容。**
+8. **一次查十個維基條目**：`prop=extracts&titles=A|B|C…`（上限 10）一次請求就回全部，本組 91 個條目名只用了 14 次請求。
+
+## 4208　交付與邊界（自述）
+
+- **新增**：`desc-tools/batches/research/c175-a.json`（15 張）。
+- **append**：本檔第 4186–4209 條（**未覆寫任何既有行**；寫入前已跑 `ls` 與
+  `git show HEAD:batch-progress/c175/rulings.md`，與工作區逐行 `diff` **identical**，1516 行；本節接在回撈層第 4185 條之後）。
+- **append 三個字串**：`desc-tools/jp-proper-names.json`（見第 4205 條，21 → 24 筆，未刪未改）。
+- **未碰**：`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／
+  `desc-tools/batches/cards/*`（唯讀）／**b 組的 `desc-tools/batches/research/c175-b.json`**（唯讀，只為了看 `qa-batch` 的輸出）／
+  `batch-progress/c175/prop-a.json`／`prop-b.json`（唯讀）／`batch-progress/enum/*`／其他批次的任何檔案／KV／Firestore／
+  `desc-tools/qa-batch.mjs`（只執行，未修改）。
+- **未執行任何 git 寫入指令**（不 `add`／不 `commit`／不 `push`／未動索引；只讀性的 `git show` 用過一次，用途見上）。
+- **中間檔全部在 scratchpad 的 `c175ra/`**：`cache/`（40 筆 Discogs、14 筆維基、10 筆 HTML）與帶 `c175ra-` 前綴的腳本
+  （`c175ra-fetch.mjs`／`c175ra-dg1.mjs`／`c175ra-dg2.mjs`／`c175ra-show.mjs`／`c175ra-art.mjs`／`c175ra-wiki.mjs`／
+  `c175ra-html.mjs`／`c175ra-txt.mjs`／`c175ra-lib.mjs`／`c175ra-w1..w5.mjs`）。
+- **節流**：Discogs 3.2 s／次、維基 0.9 s／次、一般 HTML 1.3 s／次。**全程 0 次 429／503。**
+- **續跑保護**：照派工信每 3 張寫回一次整份 `c175-a.json`（3 → 6 → 9 → 12 → 15），
+  且 `save()` 會**先讀既有檔再合併**，被重啟後重派同一支代理可以直接接著跑。本層未遇容器重啟。
+
+## 4209　**編號區間結算**：本節用到 **4186–4209**（共 24 條），**4210–4215 未使用**，留給後續層。
