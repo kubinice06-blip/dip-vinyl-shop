@@ -1585,3 +1585,1288 @@ Apple `itunes.apple.com/search` **共 46 次（18 個關鍵字 × jp／us ＋ 10
    **後五批（1979–1989）這個比例只會更高，建議把這一句寫進固定規格，免得下游寫出「在東京錄的」這種錯。**
 
 ---
+
+# c-177 b 組研究層裁定（4596–4625）
+
+批次 c-177｜b 組 15 張（1979 年段；ビクター／JVC 6・King 6・コロムビア 2・Invitation 1）｜研究層｜2026-09-22
+依據 `desc-tools/prompts/research-base.md`（含開頭的雲端線三處例外）、`batch-progress/CURATION-BRIEF-jp1.md` 第〇節
+與 `CURATION-BRIEF-bluenote-post1985.md` 附錄二、本檔 4406–4425（策展層 b 組）、`c176/rulings.md` 4316–4375（上一批研究層）。
+**15 張全部 `full`、facts 合計 180 條（每張恰好 12 條，上限）、`src` 180/180 完整 https｜推翻策展層八處｜本檔用到 4625。**
+
+---
+
+## 4596　總表：**15 張，facts 合計 180 條，每張恰好 12 條；full 15、thin 0**
+
+| # | 掛名 — 盤名 | facts | status | 本層對這張做了什麼 |
+|---:|---|---:|---|---|
+| 0 | Native Son — Native Son | 12 | full | 盤面誤拼〈Bump Crusing〉被 2016 官方頁原樣繼承；團的成立日與代表曲的 BGM 史 |
+| 1 | Native Son — Savanna Hot-Line | 12 | full | 封面攝影是《プロヴォーク》的高梨豊；**推翻 VIP-2786 是「廉價再壓」**（4603） |
+| 2 | 渡辺貞夫 with The Great Jazz Trio — Bird of Paradise | 12 | full | ビクター 官方頁補到第二個 1977-05-04 來源；〈Star Eyes〉作曲欄補齊 Don Raye |
+| 3 | 鈴木茂 — White Heat | 12 | full | **推翻「第四張個人盤」**（4599）＋ 逐日發行日 1979-02-25 |
+| 4 | Spectrum — Spectrum | 12 | full | 團的出身、同日單曲與 24時間テレビ（4609）；**推翻前線編制**（4605） |
+| 5 | 日野皓正 — City Connection | 12 | full | **推翻作曲分工**（4598）；Blue Mitchell 的死期（4607）；サントリーホワイト CM（4608） |
+| 6 | 渡辺貞夫 — Morning Island | 12 | full | A&R Recording 的沿革；操上和美 的 1978 年 ADC 賞；22 版的海外授權地圖 |
+| 7 | 井上敬三 — Intimate | 12 | full | **本組最大一格：他生於 1922 年、錄音時五十六歲**（4606） |
+| 8 | Spick & Span — The Spick & Span | 12 | full | **推翻三個樂手漢字**（4601）；官方頁的 1979-09-25 與 2013 初 CD 化（4610） |
+| 9 | 富樫雅彦 — セッション・イン・パリ Vol.1 | 12 | full | 野口久光 與 Truffaut；**推翻「Vol.2 不在任何一批」**（4604） |
+| 10 | 八木正生 — Inga | 12 | full | 他的另一面（《あしたのジョー》、東映、サザンオールスターズ）；富樫 在他的トリオ 打過鼓 |
+| 11 | 大野俊三 — Quarter Moon | 12 | full | **推翻 Gil Evans 的時序**（4602）；Marcus Miller 與 Kenny Kirkland 的年齡 |
+| 12 | 本多俊之 — Opa Com Deus | 12 | full | 父親本多俊夫 反對到死；Electric Bird 號段；錄音期只印在 2014 年復刻上 |
+| 13 | 益田幹夫 — Corazón | 12 | full | Electric Lady Studios 的建造史；生年只有 Discogs 藝人頁有 |
+| 14 | 清水靖晃 — Far East Express | 12 | full | **推翻「第一張個人盤」與「組成マライア 之前」**（4600） |
+
+**thin 0 張。** 理由：15 張全部有 Discogs 原壓的完整 credits，十四位領銜者裡十二位在 ja wiki 有條目或在 Discogs／MB 有可用的身分欄，
+而且 **6 張有ビクター 官方商品頁、1 張有コロムビア 官方商品頁**——沒有一張需要靠推測補。
+
+---
+
+## 4597　再發版本數：**15 張逐筆重跑 `masters/<id>/versions`，數字改判 0 筆；但「數字對不等於內容全」再次成立**
+
+派工信第二節點名的系統性錯誤在本組**不成立**（策展層第 4414 條自己跑過版本表）。
+15 筆全部重打 `/masters/<id>/versions?per_page=100`，逐版讀過 `released`／`country`／`catno`／`format`／`major_formats`：
+
+| 卡 | 策展層 | 實測 | |
+|---|---:|---:|---|
+| Native Son | 14 | 14 | ✔ |
+| Savanna Hot-Line | 9 | 9 | ✔ |
+| Bird of Paradise | 13 | 13 | ✔ |
+| White Heat | 6 | 6 | ✔ |
+| Spectrum | 6 | 6 | ✔ |
+| City Connection | 11 | 11 | ✔ |
+| Morning Island | 22 | 22 | ✔ |
+| Intimate | 3 | 3 | ✔ |
+| The Spick & Span | 2 | 2 | ✔ |
+| セッション・イン・パリ Vol.1 | 8 | 8 | ✔ |
+| Inga | 3 | 3 | ✔ |
+| Quarter Moon | 5 | 5 | ✔ |
+| Opa Com Deus | 4 | 4 | ✔ |
+| Corazón | 7 | 7 | ✔ |
+| Far East Express | 4 | 4 | ✔ |
+
+**數字 15/15 全中——本線連續第三批零改判。**
+⚠ **但本層在「內容」那一層抓到兩處**，見 4603（兩個「沒折進來的 master」其實是七吋單曲）
+與 4613（本組的ビクター 系卡在 `miqqe.jp` 上查無任何 Discogs 沒有的黑膠，與 c-176 b 第 4364 條的 3/3 相反）。
+⚠ 另外逐筆用盤名重 `search` 過一輪 master（派工信與第 4422 條第 4 點要的固定動作）：
+**除了那兩個七吋單曲的 master 之外，15 張都沒有第二個沒折進來的 master。**
+
+---
+
+## 4598　⚠ ⚠ 推翻策展層第一處：`日野皓正 —《City Connection》` **七軌裡他只寫了兩軌，標題曲不是他寫的**
+
+卡單 `curatorWhy` 逐字：「七軌裡〈Hino's Reggae〉〈City Connection〉〈Blue Smiles (Tribute To Blue Mitchell)〉**等四軌掛他自己的 written-by**」，
+第 4419 條的外國藝人表也跟著記「日野皓正／**四軌**」。
+**`api.discogs.com/releases/909731` 的整筆逐軌 `written-by` 實際是**：
+
+| 作曲者 | 軌 |
+|---|---|
+| Harry Whitaker | A1〈Hino's Reggae〉、B1〈Send Me Your Feelings〉、B3〈Samba De-La Cruz〉 |
+| Leon Pendarvis | A2〈Stay In My Waking Heart〉、**A3〈City Connection〉** |
+| Janice Gadsden | A2（與 Pendarvis 合寫） |
+| **日野皓正** | **B2〈High Tide-Manhattan Ecstasy〉、B4〈Blue Smiles〉——只有兩軌** |
+
+**兩處都錯**：軌數是二不是四，而且**被點名的〈Hino's Reggae〉與標題曲〈City Connection〉都不是他寫的**——
+前者是 Harry Whitaker 的曲、後者是 Leon Pendarvis 的曲。編曲與指揮也是這兩人各自分擔自己那幾軌。
+⚠ **這是本組最需要下游注意的一處**：一張以日本樂手掛名的碟，主要創作權其實在兩位美國編曲家身上，
+行文若照策展層寫就會把作者歸錯人。第 4419 條「領銜／作曲／製作／原盤發行」四項判準裡的**作曲那一項在本筆並不成立**，
+但**領銜、製作（伊藤潔）與原盤發行（ビクター Flying Disk）三項仍成立，收件結論不變**。
+（可逆性：只改 facts 的敘述，不動卡單值——照裁定權下放第 2 條直接定。）
+
+---
+
+## 4599　⚠ ⚠ 推翻策展層第二處：`鈴木茂 —《White Heat》` **是第六張個人盤，不是第四張；而且有逐日的發行日**
+
+卡單 `curatorWhy` 逐字寫「在ビクター 的 Invitation 廠標錄的**第四張個人盤**」。兩個來源都不支持：
+
+1. **ビクター 自家商品頁逐字**：「1979年発売の**6thソロアルバム**」「ビクター期唯一のインストルメンタル中心とした作品」。
+2. **ja wiki `鈴木茂 (ギタリスト)` 的作品表**：BAND WAGON（1975-03-25）／LAGOON（1976-12-05）／Caution!（1978-01-25）／
+   TELESCOPE（1978-11-25）／**WHITE HEAT（1979-02-25）**／COSMOS'51（1979-09-05），另有《幻のハックルバック》(1976) 掛「鈴木茂とハックルバック」。
+   **不含ハックルバック 那張是第五張、含了才是第六張**——官方頁算的是後者。**兩種算法都不是「第四張」。**
+
+⚠ **順帶一個年份升級**：**ja wiki 給出逐日的 1979 年 2 月 25 日**，
+而 **MB first-release-date 只有 1979、Discogs 版本表最早只有 1979、Apple 給的是 2007 年的再發日**——**三個資料庫都沒有這個日期。**
+本層**沒有改卡單的 `year`**（本來就是 1979），只把逐日日期寫進 facts。
+→ **給後五批**：ビクター 系的卡，ja wiki 的藝人作品表常常比三個資料庫精確到日，值得固定查一次。
+
+---
+
+## 4600　⚠ ⚠ 推翻策展層第三處：`清水靖晃 —《Far East Express》` **不是他的第一張個人盤，「組成マライア 之前」也要改寫**
+
+卡單 `curatorWhy` 逐字：「在組成マライア 之前、**以個人名義錄的第一張**」。兩半都要修。
+
+**(a) 第一張是 1978 年的《Get You》。**
+- 英文維基逐字：「He released his first solo album, **Get You, in 1978**」；
+- `api.discogs.com/artists/13411/releases` 的作品表按年排序，`Main` 的第一筆逐字是 **1978 年的 master `Get You`**，本盤（Far East Express）排在它之後。
+- ja wiki 的清水靖晃 條目也寫「**1978年、自作曲含む初のソロ・アルバムを発表**」。
+**三處一致，本盤是第二張。**
+
+**(b) 「マライア」這個名字 1979 年就已經出現。**
+`ja wiki マライア (バンド)` 逐字：1978 年前後以「清水靖晃グループ」結成（笹路正徳・山木秀夫・土方隆行 等）、
+**1979 年該編制以《マライア》為專輯名在ユピテルレコード 發過一張碟**、1980 年才以樂團名「マライア」在 **King 的ビルボックス 廠標**出道。
+→ 行文只能寫成「**マライア 名義正式出道之前**」，不能寫成「組成マライア 之前」。
+⚠ **而且這條還多給了一個正向事實**：他與 King 的關係從本盤（Electric Bird，1979）一路延續到マライア 的出道（ビルボックス，1980）。
+（可逆性：只改 facts 的敘述——照裁定權下放第 2 條直接定。）
+
+---
+
+## 4601　⚠ ⚠ 推翻策展層第四處：`Spick & Span —《The Spick & Span》` **三個樂手的漢字都寫錯了**
+
+卡單 `curatorWhy` 的編制是從 Discogs 的羅馬字回推的，**日本コロムビア 官方商品頁（`columbia.jp/prod-info/COCB-54067/`）的 PERSONNEL 欄逐字可查**：
+
+| Discogs 羅馬字 | 卡單寫的漢字 | **官方頁逐字** |
+|---|---|---|
+| Hiroshi Isokawa | 磯川宏 | **五十川博** |
+| Kazuhiro Mishima | 三島一裕 | **三島一洋** |
+| Koichi Hiroki | 広木光一 | **廣木光一** |
+
+官方頁的七人全表逐字是：吉田和雄(leader, drums, percussion)／向井滋春(trombone)／榎本秀一(soprano & tenor saxophone, flute)／
+大徳俊幸(keyboards & synthesizers)／**廣木光一**(electric & acoustic guitars)／**五十川博**(electric bass)／**三島一洋**(cuica & percussion)。
+→ **這是 c-176 b 第 4320 條（兩個日本樂手的漢字名寫錯）在本線的第二次，成因也相同：從 Discogs 的羅馬字猜漢字。**
+**給後五批：コロムビア 系的卡一定要打一次 `columbia.jp/prod-info/<再發 catno>/`，它的 PERSONNEL 欄是漢字名的一級來源。**
+
+---
+
+## 4602　⚠ ⚠ 推翻策展層第五處：`大野俊三 —《Quarter Moon》` **Gil Evans 是 1983 年的事，比本盤晚四年**
+
+卡單 `curatorWhy` 逐字：「**1974 年移居紐約、進入 Art Blakey 與 Gil Evans 樂團之後**，在 King 新設的クロスオーバー 廠標 Electric Bird 錄的領班盤」。
+- **Art Blakey 那一半成立**：ja wiki 與英文維基都記 1973 年 Art Blakey 訪日時當面邀他、1974 年赴美隨 Jazz Messengers 巡演。
+- ⚠ **Gil Evans 那一半是時序錯置**：**ja wiki 逐字「1983年からはギル・エヴァンス・オーケストラに参加」**、
+  英文維基逐字「**From 1983**, he participated in Gil Evans Orchestra」——**兩處一致，晚於本盤（1979-05 錄音）四年。**
+- 1974–1979 之間他實際的合作對象是 **Machito y sus Afrocubanos、Roy Haynes、Norman Connors、Wayne Shorter、Larry Coryell、Buster Williams**。
+→ **行文不得把 Gil Evans 寫進這張碟的背景。**
+⚠ **順帶記下一處本層刻意不採的資料**：他的兩座葛萊美，**ja wiki 記 1983（Machito）與 1989（Bud and Bird）、英文維基記 1984 與 1988**——
+兩邊各說各話，而且都在本盤之後、與本作無關（反向禁令第二類），**facts 一個字都沒寫**。
+
+---
+
+## 4603　⚠ ⚠ 推翻策展層第六處：**`VIP-2786` 與 `VIP-2774` 是七吋單曲，不是「廉價再壓」的 LP**
+
+第 4414 條與第 4422 條第 4 點把它們寫成「ビクター 的 `VIP-` 廉價線把同一張碟重新編號、Discogs 的貢獻者把它建成了獨立 master」，
+並據此說《Savanna Hot-Line》與《City Connection》的「實際版本數各要再加至少 1」。**實測兩筆都不是那個形狀**：
+
+| master | 盤 | `format` 逐字 | `major_formats` |
+|---|---|---|---|
+| 2126278 | ネイティブ・サン — Savanna Hot-Line（VIP-2786） | **`7", Single`**（另一筆 `7", Single, Promo`） | `Vinyl` |
+| 3381136 | Terumasa Hino — City Connection（VIP-2774） | **`7", 45 RPM, Single, Stereo`**（另一筆再加 `Promo`） | `Vinyl` |
+
+**兩個 master 各有兩筆，四筆全部是七吋單曲**（正式版＋電台宣傳版），**載體與專輯不同，不是專輯的再壓**。
+⚠ **《City Connection》真正的 1979 年廉價再壓在版本表裡面**：**`VIJ-4006`，兩個壓次，已經算在 11 版之內**。
+→ **結論修正**：**「同一張碟有兩個沒互相折疊的 master」這個現象成立，但本組的兩個實例是『單曲 master 沒折進專輯 master』，
+不是『廉價 LP 被建成獨立 master』**。專輯的版本數不必加一。
+**給後五批：讀第二個 master 時一定要先看 `format`／`major_formats`，單曲與專輯在 Discogs 上本來就是兩個 master。**
+（順帶：ja wiki 的ネイティブ・サン 條目把〈サバンナ・ホットライン〉與〈スーパー・サファリ〉/〈ウインド・サーフィン〉逐字列為 1979 年的兩張單曲，
+與 `VIP-2786` 這個號對得上，是第二個佐證。）
+
+---
+
+## 4604　⚠ ⚠ 推翻策展層第七處：`《セッション・イン・パリ VOL.2 彩られた夢》` **就在 c-178 b 組，不是「斷號」**
+
+第 4418 條末段逐字寫「**目前不在 c-173…c-182 的任何一批裡**」，第 4425 條第 3 點進一步寫「**那是斷號，建議確認是不是『MB 沒建檔』的缺口**」。
+**實掃 `desc-tools/batches/cards/c178-cards.json`（29 筆），逐字存在**：
+
+| group | key | year |
+|---|---|---:|
+| b | `desc4:富樫雅彦|セッション・イン・パリ Vol.2 彩られた夢` | 1980 |
+| b | `desc4:富樫雅彦|アル・アラーフ` | 1980 |
+| a | `desc4:富樫雅彦・鈴木勲|陽光` | 1979 |
+
+→ **派工信第五節第 2 點（「Vol.2 在 c-178 b 組已收」）才是對的，第 4418／4425 兩條要更正。**
+⚠ **而且本層另外查出兩張的編制完全不同**（Discogs master 564541，Paddle Wheel **GP-3221**，1980）：
+**Vol.2 是富樫雅彦 與 Albert Mangelsdorff、加古隆、Jean-François Jenny-Clark 的四人編制**，曲目是
+〈クリスタル〉〈オレンジ〉〈アクティング〉〈スノウ (デュオ)〉〈レーヴ・メルヴェイユ〉〈バラード〉六軌，**與 Vol.1 零重疊**。
+→ **兩張的 `risk` 互指時務必寫明「搭檔不同人」**，否則下游很容易寫成同一場錄音的上下集。
+（可逆性：這一條只是更正裁定文字與補 `notes`，不動任何卡單值。）
+
+---
+
+## 4605　⚠ 推翻策展層第八處：`Spectrum —《Spectrum》` **前線是兩把小號加一把長號**；鼓手漢字另有一說
+
+**(a) 編制**：卡單 `curatorWhy` 逐字「以三管（**小號兩把＋長號兩把**）為前線的七人團」——自相矛盾（兩加兩是四管），而且與兩個來源都不合。
+Discogs 整筆 credits 的管樂只有三位：**新田一郎**（小號／フリューゲルホルン／バルブ・トロンボーン）、**兼崎順一**（小號／フリューゲルホルン）、
+**吉田俊之**（テナーバス・トロンボーン／バス・トロンボーン）。ja wiki 也逐字寫舞台前排是「ギター、ベース、トランペット X 2、トロンボーン の5人」。
+→ **兩把小號、一把長號**（新田 另兼活塞長號）。
+
+**(b) 鼓手的漢字有兩說**：盤面 credits 逐字是 **`Atsuo Okamoto`／anv `オカモト・アツオ`**，卡單寫**岡本敦男**；
+**ja wiki 的人物條目名是「岡本郭男」**（1955-12-14 生於京都府舞鶴市，19 歲被浜田省吾 找進「愛奴」出道，スペクトラム 解散後組 AB'S），
+而「岡本敦男」在 ja wiki 是**重新導向到「岡本郭男」的舊名**。
+→ **本層沒有裁定**：兩種寫法都記下，**卡的 facts 刻意不指名鼓手漢字**（只寫七人編制的其他六位），留給主線決定卡片上要用哪一個。
+⚠ **這是本線第一次遇到「盤面漢字與本人現用漢字不同」的形狀**（c-176 b 第 4353 條的「いしだかつのり」是同一人的兩個**名義**，
+本筆是同一人的**兩個漢字寫法**，成因不同）。
+
+---
+
+## 4606　⚠ ⚠ 本層挖到的最大一格：`井上敬三` **生於 1922 年，錄《Intimate》時五十六歲**
+
+卡單只說他是「單簧管兼薩克斯手」，**沒有任何年齡資訊，ja wiki 的「井上敬三」是 missing**。本層靠兩個資料庫的身分欄交叉取到：
+
+| 來源 | 逐字 |
+|---|---|
+| **MusicBrainz `artist/1e7cf5f5`** | `life-span` **begin 1922-11-03、end 2002-01-15、ended true**；`disambiguation` 逐字 **「Japanese free saxophonist」** |
+| **`api.discogs.com/artists/770486`** | `realname` **井上敬三**；profile 逐字「Japanese clarinetist and saxophonist. **Born in 1922 in Osaka, died in January 2002**」 |
+
+→ **1979 年 5 月錄音時他五十六歲**，而**製作人兼吉他的渡辺香津美 二十五歲、鍵盤的坂本龍一 二十七歲**——
+**這個年齡差是本卡唯一的敘事支點，策展層完全沒有。**
+
+⚠ **第三個互相支持的來源，但本層標明它是推論不是直述**：
+**ja wiki 的坂田明 條目逐字寫他在「広島大学水畜産学部水産学科に進学し、井上敬三に師事」**，
+而**本盤 B3 上坂田明 吹第二支中音薩克斯、內頁解說也是他寫的**——兩件事相符。
+**但那句維基原文並沒有寫明是本盤的這位井上敬三**，所以本層在 `notes` 裡逐字要求下游若要寫死師生關係，
+**必須保留「據坂田明 的維基條目」這一層**，不得直述成已證實的事實。
+（照研究層通則「只有單一來源支撐的關係要交叉驗證，驗不到就標 uncertain」。）
+
+---
+
+## 4607　⚠ ⚠ 本層挖到的第二格：`《City Connection》` **B4 致敬的 Blue Mitchell，死在這張碟開錄的兩個月前**
+
+B4 的全名逐字是〈**Blue Smiles (Tribute To Blue Mitchell)**〉，是日野皓正 本人寫的兩軌之一（見 4598）。
+**英文維基：Blue Mitchell 生於 1930-03-13、卒於 1979-05-21。**
+**本盤的錄音期是 1979 年 7 月**（Discogs 原壓 notes 逐字「Recorded and Mixed at A&R Recording Studios, New York City in July, 1979.」）。
+→ **致敬曲寫在被致敬者去世後兩個月，而且就錄在紐約。**
+這是反向禁令**第一類**（與作品直接綁定的死亡事件），**facts 逐條標明時序**。
+⚠ **本層核過另一個方向**：Blue Mitchell 與本盤的演奏者名單沒有交集，他沒有參加這張碟，**不是遺作**，行文不得那樣寫。
+
+---
+
+## 4608　本層挖到的第三格：`〈シティ・コネクション〉` **從 1979 年 9 月起是サントリーホワイト 的電視廣告曲**
+
+ja wiki 的日野皓正 條目 CM 欄逐字：「サントリー／**サントリーホワイト（1979年9月～、BGM「シティ・コネクション」）**」。
+→ **錄音 1979 年 7 月、唱片同年發行、九月標題曲就上了威士忌廣告**——
+**這是本組十五張裡唯一一筆可查證的「商業／傳播成績」**（日本 1979 年的爵士盤沒有可查的專輯榜名次，見 4623 末段）。
+⚠ 同一欄另記他替日野自動車、大正製薬 等做過廣告音樂，**與本盤無關，不寫。**
+
+---
+
+## 4609　本層挖到的第四格：`Spectrum` **的出身、同日發行的單曲與 24時間テレビ**
+
+策展層只寫「1979 年由小號手新田一郎 召集」。ja wiki 的 `スペクトラム (日本のバンド)` 條目把整條線交代得很細，本層取了五點進 facts：
+
+1. **團名的來源**：キャンディーズ 的伴奏樂團 **MMP（ミュージック・メイツ・プレイヤーズ）**裡，新田一郎・兼崎順一 與薩克斯手中村哲 組過一個叫「**ホーン・スペクトラム**」的小組。
+2. **成團的時點**：1978-04-04 キャンディーズ 在後楽園球場 的「ファイナルカーニバル」之後中村 退出，新田 與兼崎 找上同是 MMP 的貝斯手渡辺直樹，再招募其他人，1979 年成團。
+3. ⚠ ⚠ **1979-08-25 本盤與出道單曲〈トマト・イッパツ〉同日發售，同一天樂團登上《24時間テレビ 愛は地球を救う》的慈善演唱會**
+   ——**這個日期與 MB 的 first-release-date 逐字 `1979-08-25` 完全吻合，互為佐證。**
+4. **三種主唱並存**（新田 的假聲／西慎嗣 的搖滾／渡辺直樹 的 AOR）與**古羅馬盔甲＋維京頭飾、五人一排邊吹邊跳**的舞台形式。
+5. **新田一郎 自己說是聽了 Chicago 第一張第一軌〈Introduction〉才改變人生**；外界說他們像 EW&F，實際受 Chicago 與 Brecker Brothers 影響更大。
+
+⚠ **兼崎順一 的綽號解開了一個 credits 之謎**：盤面把他印成 **`カネザキ・ドンペイ`**，
+ja wiki 的兼崎順一 條目逐字解釋「ドンペイ」來自他愛喝酒的「**呑兵衛**」別讀。**沒有這條，下游會把它當成另一個人。**
+
+---
+
+## 4610　本層挖到的第五格：`《The Spick & Span》` **官方頁給出 1979-09-25 的原始發行日，而它等了三十四年才 CD 化**
+
+`columbia.jp/prod-info/COCB-54067/` 是本組唯一一個命中的コロムビア 官方頁，一次給了六件策展層沒有的東西：
+
+1. **「オリジナル・リリース：1979/9/25」「LP番号：YX-7597(Better Days)」**——逐日的原始發行日（策展層只有 MB 的 `1979-09`）。
+2. **七人 PERSONNEL 的漢字全表**（見 4601，改掉三個名字）。
+3. **定位逐字**：「日本を代表するブラジリアン・フュージョン・バンド、スピック＆スパンの**ファーストにして向井滋春在籍時唯一のアルバム**」。
+4. **製作逐字**：「Produced by 吉田和雄 with スピック＆スパン」。
+5. **2013/06/26 發售、COCB-54067、兩千六百四十日圓、解說中原仁、逐字「ついに初CD化」**——**1979 到 2013，三十四年才第一次變成 CD。**
+6. **文案逐字**：「日本人による本格的なブラジル音楽はここから始まった！」，並歸在コロムビア 的「**和ジャズ**」復刻線。
+
+⚠ **第 3 點與 ja wiki 的向井滋春 條目拼得起來**：**他 1979 年搬去紐約住了約一年**——
+這正好解釋了為什麼七人編制裡有他的碟前後只有這一張。**兩個獨立來源拼出一條因果，本層寫進 facts 但只寫並列、不寫成官方說法。**
+
+---
+
+## 4611　來源網域實測（本工作階段逐一記錄）
+
+**可用：**
+
+| 網域 | 本層用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（`releases/`＋`masters/<id>/versions`＋`masters/<id>`＋`artists/<id>`＋`artists/<id>/releases`＋`database/search`） | **64 次** | **全數 HTTP 200**，免 token，自我節流 3.2 s／次，**0 次 403／429／503** |
+| `ja.wikipedia.org/w/api.php`（`prop=extracts&explaintext=1&redirects=1`） | **94 次** | 全數 200，0.7 s 間隔，**71 命中／23 missing（命中率 76%）** |
+| `en.wikipedia.org/w/api.php` | **45 次** | 全數 200，**41 命中／4 missing** |
+| `www.jvcmusic.co.jp/-/Discography/-/<catno>.html` | **7 次** | ⚠ ⚠ **7/7 全部 200**，見 4612 |
+| `columbia.jp/prod-info/<catno>/` | **1 次** | **1/1 命中**（COCB-54067），見 4610／4614 |
+| `miqqe.jp/item/search/?s=<關鍵字>` | **10 次** | 全數 200，但**本組 0 筆新增**，見 4613 |
+| `musicbrainz.org/ws/2/artist/<mbid>?inc=aliases` | **10 次** | 全數 200，1.2 s 間隔，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；**`life-span` 一次決定性命中**（4606） |
+
+**不可用／未使用：**
+
+| 網域 | 結果 |
+|---|---|
+| `www.kingrecords.co.jp/cs/g/g<catno>/` | ⚠ **8 種寫法全部 404**，見 4615 |
+| `www.kingrecords.co.jp/cs/list.aspx?keyword=` | **404**（1,048 位元組，與商品頁的 404 頁不同） |
+| `allmusic.com`／`allaboutjazz.com` | 派工信已標 403，未試 |
+| `junkoonishi.com` | 派工信標明禁用，未試 |
+| `itunes.apple.com` | **本層 0 次**——策展層第 4411 條已把十五張的 Apple 條目與日期逐張查完並寫進卡單，沿用 c-173 第 3846 條不重跑；⚠ **因此派工信第四節「Apple 的 403／429 要退避重試、節流 1.35 秒」本組無從驗證。** |
+
+**交件前另跑一輪 `src` 可用性自檢**（`chk-c177b-src.mjs`）：
+**88 個相異 `src` 網址逐一打過，扣掉 19 個 `www.discogs.com/` 短網址（派工信第四節已載明對程式化 UA 一律 403、照慣例仍寫短網址），
+其餘 69 個全部 HTTP 200，零失效。**
+
+---
+
+## 4612　⚠ ⚠ `jvcmusic.co.jp`：本組 **7/7 全中**，原因與 c-176 b 第 4363 條完全相同
+
+| 目錄號 | 卡 | 官方頁多給了什麼 |
+|---|---|---|
+| VICJ-77016 | Native Son | 2016.08.24 發售、¥2,530、日英對照曲名——**英文曲名逐字仍是誤拼的「BUMP CRUSING」** |
+| VICJ-77017 | Savanna Hot-Line | 2016.08.24（與上一張同日）、日英對照曲名 |
+| VICJ-77042 | Bird of Paradise | 2017.08.23、**逐字「ハンク．ジョーンズ率いるグレイト・ジャズ・トリオと共にパーカーの愛奏曲を取り上げる。1977年5月4日録音。」**（錄音日的第二個來源） |
+| VICJ-77032 | White Heat | 2016.09.21、**「1979年発売の6thソロアルバム」**（4599）＋〈WILD FIRE〉是 FM 常用 jingle ＋**整段「ADLIB presents ビクター和フュージョン」的企劃說明** |
+| VICJ-77014 | City Connection | 2016.08.24、日英對照曲名（A2 的日文題是「ウェイキング・ハート」） |
+| VICJ-77003 | Morning Island | 2016.07.20、**「エリック・ゲイル、スティーブ・ガッド等が参加したNY録音盤。デイブ・グルーシンの洗練されたアレンジも魅力。」** |
+| VICL-23022 | Spectrum | 1991.01.21、¥2,456、日英對照曲名；側欄的 DISCOGRAPHY 與 NEWS 另給出 2025-01 的 MV 公開與 2026-09 的「ギャツビー」CM |
+
+→ **命中率 7/7 的原因就是第 4363 條說的那一條：本組六張ビクター 系收件全部落在 2016–2017 年的 `VICJ-770xx` 復刻線上**
+（77003／77014／77016／77017／77032／77042），**那條線的每一張都有完整商品頁**；第七張（Spectrum）則是靠 1991 年的 `VICL-23022`。
+**給後五批：這條規律已經連兩批成立——先從 `versions` 看有沒有 2016–2017 的 `VICJ-770xx`／`VICL-2xxxx`，有就一定打得到官方頁。**
+
+⚠ **本組另外從那個系列頁抄到整條線的規格**（只有《White Heat》那一頁有）：
+Invitation・Flying Dog・Flying Disk・JVC・Victor 五個廠標的七〇到八〇年代日本フュージョン 一次復刻 **40 張**、
+與休刊的雜誌《ADLIB》完全合作、**監修是前總編松下佳男 與前ビクタースタジオ 主管高田英男**、
+全部從原始母帶做 2016 年新的 **K2HD PRO** 母帶處理並採 **UHQCD**、復刻黑膠當年的腰帶並做成雙面可翻。
+⚠ **高田英男 這個人在本組出現兩次**：他是 1979 年《Native Son》《Savanna Hot-Line》《White Heat》三張的錄音工程師，
+**也是 2016 年這條復刻線的監修**。本層把這條跨卡線索分配給《White Heat》（它的官方頁是唯一寫出整段企劃的），見 4620。
+
+---
+
+## 4613　⚠ `miqqe.jp`：本組 **0/6**——與 c-176 b 第 4364 條的 3/3 相反，理由要寫清楚
+
+第 4364 條立過一條固定動作：「ビクター 系的卡，`versions` 跑完後再打一次 miqqe.jp，它比 Discogs 新」。
+本層照做，**用站內搜尋 `miqqe.jp/item/search/?s=<關鍵字>` 打了 10 次（六張專輯名＋兩個藝人名＋兩次團名），全部 HTTP 200**，結果：
+
+| 關鍵字 | miqqe 回的商品 | 是否為 Discogs 版本表沒有的？ |
+|---|---|---|
+| ネイティブ・サン | ネイティブ・サン（2016.08.24）／サバンナ・ホットライン（2016.08.24）／シャイニング（2017.09.20）／コースト・トゥ・コースト（2017.09.20）／ウインド・サーフィン+1（2018.07.25） | **否**（前兩筆＝VICJ-77016／77017，已在版本表；後三筆是別張碟） |
+| モーニング・アイランド／シティ・コネクション／バード・オブ・パラダイス／WHITE HEAT | 各回一筆，日期與 `jvcmusic` 的 VICJ-770xx 完全一致 | **否** |
+| スペクトラム | 只回「ゴールデン☆ベスト スペクトラム -レジェンド-」（2015.06.24） | **否**（那是精選輯） |
+
+→ ⚠ ⚠ **本組沒有任何一張在 miqqe 上有 Discogs 版本表沒收的黑膠**。
+**第 4364 條那條動作依然該做，但它的命中率是「看有沒有新壓黑膠企劃」，不是「ビクター 系就會中」。**
+⚠ **附帶一筆給主線（不屬本組）**：**miqqe 上查到兩張新壓黑膠，都不是 b 組的卡**——
+**日野皓正《ヒップ・シーガル》2026.09.30 發售、アナログアルバム、四千九百五十日圓**（那是 **c-177 a 組**的收件）、
+**日野皓正《メイ・ダンス》2026.06.17 發售、アナログアルバム、同價**（那是 **c-176 b** 已落地的卡）。
+**兩張的 Discogs 版本表裡都沒有這兩筆**——**c-176 b 第 4347 條記的《サンライズ》形狀（Discogs 版本表落後於原廠）在這兩張上再次成立，建議主線回頭補。**
+
+---
+
+## 4614　⚠ `columbia.jp` 的兩條路徑：本組是**第七種結論——只有一張卡需要它，而 `prod-info` 一次就中**
+
+本組只有兩張コロムビア 系收件（《Intimate》與《The Spick & Span》），兩張的再發情況完全不同：
+- **《The Spick & Span》**有 2013 年的自家再發 COCB-54067 → **`prod-info/COCB-54067/` 一次命中**，收穫見 4610。
+- **《Intimate》**的唯一一次再發是 **2000 年 P-Vine 的 PCD-1442**——**P-Vine 不是コロムビア**，
+  所以 `columbia.jp` 上根本不會有這張的商品頁，**本層沒有浪費請求去試**。
+
+→ 連同 c-173（prod-info 全 404）、c-174 b（全 200）、c-174 a（各一半）、c-175 b（prod-info 1/8、artist-info 3/6）、
+c-176 a（prod-info 全滅、artist-info 才是活路）、c-176 b（兩條各中一筆、中的不是同一張卡），**七批七個分佈。**
+⚠ **本組要補進那條經驗的是一句更早的判斷**：**先看這張碟有沒有コロムビア 自家的 CD 再發目錄號**——
+**沒有（像《Intimate》那樣只有他廠再發）就不必試任何一條路徑**，兩條路徑的前提都是「コロムビア 自己現在還在賣它」。
+
+---
+
+## 4615　⚠ `kingrecords.co.jp`：**8 種寫法全部 404**；404 頁一律回約 14.4 KB，長度完全不能當判準
+
+本組有 6 張 King 系收件，全部試過。逐字試過的路徑：
+`gKICJ-2277`／`gKICJ2277`／`gKICJ-2410`／`gKICJ2410`／`gKICJ-2416`／`gKICJ2416`／`gKICJ2418`／`gKICJ2629`／`gNAS2127`，
+**全部 HTTP 404**，而且**每一次回的內容長度都落在 14,357–14,359 位元組之間**。
+另試 `www.kingrecords.co.jp/cs/list.aspx?keyword=<藝人漢字>`，**也是 404（1,048 位元組）**。
+→ **派工信第三節那句「404 也回 15KB，不能用長度判斷」在本組第二次成立，而且更精確：本組的 404 頁固定是 14.4 KB。**
+→ **給後五批：King 系的卡不要把 `kingrecords.co.jp` 排進查證路徑**，本線至今累計 9 次嘗試、0 次命中。
+**King 盤的替代路徑是 Discogs 的再發整筆**——本組《Opa Com Deus》的錄音期（1978-12 至 1979-01）就只印在
+**2014 年的 KICJ-2410（releases/11789432）**上，原壓的 notes 是空的；**那一筆還順便給出「Electric Bird ベスト・セレクション 1000」這個系列名與川島重行 親撰解說**。
+**這是 c-176 a 第 4328 條「原壓 credits 稀薄時回頭打再發那一筆」在本組的第二個實例**（第一個是《Bird of Paradise》的錄音日，見 4596 表）。
+
+---
+
+## 4616　⚠ ⚠ `api.discogs.com/artists/<id>` 與 MB 的 `life-span`：本組**兩次決定性命中，一次是唯一來源**
+
+派工信第四節的「第四條路」在本組連五批命中，而且本組把它擴成兩個欄位：
+
+| 來源 | 拿回什麼 | 用在哪 |
+|---:|---|---|
+| **MB `artist/1e7cf5f5` 的 `life-span` ＋ `disambiguation`** | 井上敬三 **1922-11-03／2002-01-15**、「Japanese free saxophonist」 | 《Intimate》——**ja wiki 查無此人，這是唯一的生卒年來源**（4606） |
+| **`artists/770486` 的 `realname`＋`profile`** | 井上敬三 **生於大阪、卒於 2002 年 1 月**、「Japanese clarinetist and saxophonist」 | 同上，交叉驗證 |
+| **`artists/663528` 的 `profile`** | 益田幹夫 **born August 14, 1949 in Osaka** | 《Corazón》——**ja wiki 同樣查無此人**（c-176 b 第 4365 條已對同一位記過，本組是第二次） |
+| **`artists/13411/releases`** | 清水靖晃 的作品表按年排序，`Main` 第一筆是 **1978 年的 `Get You`** | 《Far East Express》——4600 的第二個佐證 |
+
+⚠ **本組新增一個用法**：**`artists/<id>/releases` 的按年作品表可以直接否證「這是他第一張」這類宣稱**，
+比 profile 更硬。**建議後五批把它加進那份順序表的第五條。**
+⚠ **一個踩空**：`api.discogs.com/database/search?q=Yasuaki+Shimizu&type=artist` 的第一筆命中是 **artist 13411**，
+但本層第一次是直接猜 id（259990）打過去，**回的是一個叫 `Area_39` 的外國化名藝人、`realname` 欄逐字是四個歐美人名**——
+**Discogs 的 artist id 不能猜，一律先 `database/search?type=artist`。**
+
+---
+
+## 4617　同名陷阱：本組踩到四個，全部避開
+
+| 查詢字串 | ja wiki 回的是什麼 | 處置 |
+|---|---|---|
+| `ネイティブ・サン` | **1986 年的美國電影**（Richard Wright 原作《アメリカの息子》改編） | 改查 `ネイティブ・サン (バンド)` |
+| `大野俊三` | **消歧義頁**（另一位是前足球選手） | 改查 `大野俊三 (ジャズトランペッター)` |
+| `鈴木茂` | **消歧義頁**（經營者、牧師、經濟學者、歷史學者、哲學家、醫學者、航空機技術者⋯⋯共九位） | 改查 `鈴木茂 (ギタリスト)` |
+| `スペクトラム` | **消歧義頁**（物理學、數學、自閉スペクトラム、火箭、英國團、澳洲團、韓國團⋯⋯） | 改查 `スペクトラム (日本のバンド)` |
+| ⚠ `榎本秀一` | **1963 年生的藥學者**（北海道大學藥學博士） | **未採用任何維基資料**；《The Spick & Span》的薩克斯手只引コロムビア 官方頁的 credits |
+| ⚠ `パドル・ホイール` | 自動重新導向到 **`キングレコード`** 的公司條目（不是錯，但不是廠標專頁） | 未採用；Paddle Wheel 的資料靠 Discogs |
+
+→ **第 4366 條那條經驗在本組再次成立，而且擴大了一級**：
+**c-176 b 記的是「廠標與樂團名不要用片假名直接查 ja wiki」，本組多出兩種——
+「純漢字的日本人名也會是消歧義頁」（鈴木茂 九位、大野俊三 兩位），以及「同名的是另一個行業的學者」（榎本秀一）。**
+**ja wiki 的日本樂手查詢一律先確認職業欄，這一條在本組四次全中。**
+
+---
+
+## 4618　Discogs 的資料瑕疵一覽（本組實際撞到的，facts 一律照盤面／官方頁／英文維基寫）
+
+1. ⚠ **作曲欄漏人**（《Bird of Paradise》）：A4〈Star Eyes〉的 `written-by` 只掛 **Gene DePaul**，
+   英文維基逐字是 **Gene de Paul 與 Don Raye 兩人合寫**（1943 年電影《I Dood It》）；A3〈Embraceable You〉只掛 George Gershwin。
+   **這是派工信第四節「Discogs 的作曲欄會錯」在本組的第一次。**
+2. ⚠ **錄音日前後顛倒**（《Quarter Moon》）：notes 逐字「Recorded at Electric Lady Studio, N.Y., **May 20-19, 1979**」。
+   facts 只寫「1979 年五月」。
+3. ⚠ **樂手名拼錯成堆**（《Quarter Moon》）：`Kenny Karkland`（Kenny Kirkland）、`Victor Louis`（Victor Lewis）、`Jeff Laton`（Jeff Layton）；
+   （《Corazón》）：`Albert Brown`（Alfred Brown）、`Richad Maximoff`、`Lamaar Alsop`、`Led Kahn`、`Diva Grey`（Diva Gray）。
+4. ⚠ **曲名誤拼被官方頁繼承**（《Native Son》）：盤面把 A1 印成「Bump Crusing」，Discogs 的 notes 自己記下了這件事，
+   **而 2016 年ビクター 的官方商品頁英文曲名逐字仍是「BUMP CRUSING」**——**誤拼被原樣繼承了三十七年。**
+5. ⚠ **廠牌名帶消歧序號**：`Better Days (2)`（《Intimate》《The Spick & Span》）、`Spectrum (31)`、`Spick & Span (4)`。
+6. ⚠ **`labels` 欄的 imprint 欄位錯置**（《Far East Express》）：`database/search` 回的 `label` 陣列逐字是
+   `['Electric Bird', 'Electric Lady Studios']`——**把錄音室放進了廠牌欄**。整筆 `releases/<id>` 的 `labels` 欄才是對的。
+7. ⚠ **artist id 不能猜**（4616 末段）：259990 是 `Area_39`，不是清水靖晃。
+
+---
+
+## 4619　本層**沒有裁定、兩邊都記下來**的五處（留給下游不要亂選）
+
+1. ⚠ ⚠ **《The Spick & Span》A5〈Cravo E Canela〉的作曲者**：**Discogs 與コロムビア 官方頁兩處都沒有印任何作曲者**，
+   而這個曲名與 Milton Nascimento 一九七二年的名曲同名。
+   → **本卡的 facts 因此刻意不寫「十軌全部是團內原創」**（卡單 `curatorWhy` 是那樣寫的），**也不寫它是翻奏**。
+   **下游一律避開這個斷言。**
+2. ⚠ ⚠ **《Far East Express》A4〈Summer Time〉**：Discogs 把 `written-by` 掛給清水靖晃，
+   而 Gershwin 的〈Summertime〉是拼寫不同的另一首曲。**沒有第二個來源可以確認**，
+   → facts 只寫「唯一掛他人作曲的是 B1〈Day Tripper〉」，**不寫「其餘八軌全是原創」這種更強的斷言。**
+3. ⚠ **《Inga》B3〈Lament〉**：Discogs 把九軌的作曲與編曲**整筆**掛在八木正生 名下（不是逐軌），
+   而〈Lament〉與 J.J. Johnson 的同名標準曲撞名。→ facts 只寫「Discogs 整筆把作曲與編曲掛在他名下」，不寫「九軌全部是他原創」。
+4. ⚠ **《Spectrum》的錄音年**：Discogs 盤面逐字「**1979**, May, 12th~June, 7th」，ja wiki 逐字「**1978年**5月12日から**6月8日**にかけて」。
+   **年份與結束日兩處都不同，而 ja wiki 同一段又寫樂團 1979 年才結成，自相矛盾。** facts 取盤面那一說。
+5. ⚠ **《Spectrum》2020 年 SACD 的監修者**：ja wiki 逐字寫由「**オリジナルのレコーディング・エンジニアである高田英男**」監修，
+   但本盤 Discogs 的 credits 只列 **Bobby Hata** 一位工程師（兼母帶）。**兩邊不合，本卡一個字都沒寫。**
+6. ⚠ **《Savanna Hot-Line》的錄音期**：Discogs 原壓 notes 逐字「in August and September, 1979」，
+   ja wiki 本田竹広 條目的作品表寫「**1979年8月～12月録音**」。facts 取盤面那一說，兩邊都記在 `notes`。
+
+---
+
+## 4620　跨卡串連點（**每一條只能用在一張卡上**，鉤子層分配時當稀缺資源）
+
+本組十五張裡有十二張互相連著，本層已在各卡 `notes` 逐字指定歸屬：
+
+| 串連點 | 配給哪張 | 其他卡只能用什麼 |
+|---|---|---|
+| **高田英男**（1979 年的錄音工程師 ＋ 2016 年復刻線監修） | **《White Heat》**（只有它的官方頁寫出整段企劃） | 《Native Son》只寫他是 1979 年的工程師；《Savanna Hot-Line》只把他列進「同一組班底」 |
+| 「ADLIB presents ビクター和フュージョン」40 張復刻線 | **《White Heat》** | 其餘五張ビクター 系各寫自己那一筆目錄號與日期 |
+| **A&R Recording** 的沿革（Phil Ramone／哥倫比亞 Studio A／1983 拆樓） | **《Morning Island》** | 《City Connection》雖然也錄在那裡，一句不提 |
+| **Electric Lady Studios** 的建造史（Hendrix／Storyk／Kramer） | **《Corazón》**（本組三張錄於該處的碟裡錄得最早） | 《Quarter Moon》《Far East Express》都不重述 |
+| **Inner City Records** 的廠牌史（1976 創立／1979 年度廠牌） | **《Bird of Paradise》** | 《City Connection》《Quarter Moon》只寫自己的 IC 目錄號 |
+| **Electric Bird 廠標與 SKS-80xx 號段** | **《Opa Com Deus》** | 《Quarter Moon》《Corazón》《Far East Express》只寫自己的目錄號 |
+| **野口久光**（一千張電影海報／Truffaut 的道謝） | **《セッション・イン・パリ Vol.1》** | 《Corazón》的內頁解說也是他，**一個字不提** |
+| **富樫雅彦 少年時在八木正生トリオ 打鼓** | **《Inga》**（從八木這一側寫） | 《セッション・イン・パリ Vol.1》寫的是他自己的生平，不重述 |
+| **山木秀夫 與清水靖晃 的樂團線** | **《Far East Express》** | 《Inga》只把山木秀夫 列進編制 |
+| **大野俊三 的生平** | **《Quarter Moon》** | 《Far East Express》只寫「指揮是大野俊三」一句 |
+| **1979 年的渡辺香津美 與坂本龍一** | **《Intimate》** | 《White Heat》只把坂本龍一 當兩軌的共同編曲者提一句 |
+| **杉山健二 ＋ 高橋利彦 的幕後班底、與相鄰號的連結** | **《The Spick & Span》** | 《Intimate》只列名不展開 |
+| **封面攝影**：高梨豊（プロヴォーク） | **《Savanna Hot-Line》** | — |
+| **封面攝影**：操上和美（1978 年 ADC 賞／1981 寫真集） | **《Morning Island》** | — |
+| **美術指導**：浅葉克己 ＋ 坂田栄一郎 | **《City Connection》** | — |
+
+⚠ **一條跨批的線索**：**川島重行**（King Electric Bird 的製作人）同時出現在《Quarter Moon》《Corazón》《Far East Express》三張的 credits，
+**而且 2014 年《Opa Com Deus》復刻的內頁解說也是他寫的**——**那一條已鎖給《Opa Com Deus》**（見上表 Electric Bird 那一列）。
+
+---
+
+## 4621　反同構：本組四組重複藝人與跨組兩張，軸怎麼分
+
+派工信第五節點名六件事，逐一：
+
+1. **`Native Son` 同組兩張**（VIJ-6301／VIJ-6309）：
+   - 《Native Son》的軸＝**成團（1978-03）、八軌全是本田竹広 一人的曲、盤面誤拼與官方頁照抄、兩首成了日本電視廣播二十年的 BGM**；
+   - 《Savanna Hot-Line》的軸＝**作曲權改成兩位前線一人三首、高梨豊 的封面、美國 MCA 的授權盤、七吋單曲**。
+   **兩張的 facts 零重疊，各自的樂手介紹也分開**（《Native Son》寫本田竹広 與峰厚介，《Savanna Hot-Line》寫川端民生 與村上寛）。
+2. **`富樫雅彦 —《セッション・イン・パリ Vol.1》`**：a 組另有他 1977 年的《エッセンス》《モーション》兩張。
+   **本卡的軸鎖在「巴黎的三重奏 ＋ 1970 年的受傷與 1973 年的復歸 ＋ 野口久光」**；
+   **a 組那兩張是コロムビア 的 DENON PCM 線、編制完全不同**，本卡一個字都沒有提到 PCM 錄音或ギルド・フォー・ヒューマン・ミュージック。
+   **與 c-178 b 的 Vol.2 互指已寫進 `notes`**（見 4604，並寫明「搭檔不同人」）。
+3. **`渡辺貞夫` 同組兩張**：《Bird of Paradise》＝**1977 年錄、1979 年發＋純 bebop 曲單＋Inner City**；
+   《Morning Island》＝**Dave Grusin／GRP＋A&R Recording＋操上和美＋22 版的海外授權**。
+   ⚠ **他的生平已在 c-176《Goin' Home》用掉（c-176 第 4370 條第 1 點），本組兩張一句生平都沒有寫。**
+4. **`日野皓正 —《City Connection》`**：a 組另有《Hip Seagull》。**本卡的軸是作曲分工的改寫、Blue Mitchell 的致敬與サントリー 的廣告**，
+   **生平（c-176《May Dance》已用）一句不寫**，紐約時期只以「1979 年 7 月在 A&R 錄音」這個事實出現。
+5. **`本多俊之 —《Opa Com Deus》`**：a 組另有《Burnin' Waves》。**本卡的軸是父親本多俊夫 的反對與巴西班底**；
+   ja wiki 的作品表已確認《バーニング・ウェイブ》是 1978 年的前一張、兩張同在 Electric Bird，**本卡只用「排在它之後」一句帶過，不展開前一張的內容。**
+6. **`清水靖晃 —《Far East Express》`**：**他同時是 c-178 兩張收件盤的伴奏樂手，本卡一個字都沒提**；
+   **同批退件的《Summer-Time Love Song》也一個字都沒提**（已逐字寫進該卡 `notes`）。
+
+---
+
+## 4622　反向禁令的分類處理（逐項）
+
+**第一類（與作品直接綁定，寫，並標明時序）**：
+- **Blue Mitchell 1979-05-21 辭世 → 本盤 1979 年 7 月錄的〈Blue Smiles (Tribute To Blue Mitchell)〉**（4607）。**本組唯一一筆死亡事件入卡。**
+- **富樫雅彦 1970 年 1 月的脊椎受傷與 1973-07-07 的舞台復歸**——**發生在本作之前**，是理解「他為什麼只用雙手演奏」的必要背景（沿用 c-176 第 4371 條的同一處置）。
+- **〈シティ・コネクション〉1979 年 9 月起的サントリーホワイト 廣告**、**〈スーパー・サファリ〉〈ウインド・サーフィン〉長期當電視廣播 BGM**、
+  **〈アクトショー〉〈トマト・イッパツ〉2025 年的 MV 與 2026 年的「ギャツビー」CM**——**作品本身的後世流傳，寫，並標明是後來的事。**
+- **向井滋春 1979 年赴紐約一年** → 說明了為什麼《The Spick & Span》是他在團裡唯一的碟。
+
+**第二類（與作品無關的後續生平事件，一律不寫）**：
+本田竹広 1995–1997 的兩次腦梗塞與 2006 年辭世、川端民生 2000 年辭世、富樫雅彦 1962 年的入獄與 2002 年引退、2007 年辭世、
+大野俊三 1988 年的車禍與 1996 年的癌症、鈴木茂 2009 年的大麻案、坂本龍一 2023 年辭世、村上秀一 2021 年辭世、
+Michael Brecker 2007 年辭世、Anthony Jackson 2025 年辭世、Kenny Kirkland 1998 年辭世、Lew Soloff 2015 年辭世、
+本多俊之 1987 年之後的電影配樂獎項、清水靖晃 1996 年起的巴哈計畫與 1997 年的日本唱片大獎企劃賞、
+Hank Jones 1989／2008 的兩個獎與 2010 年辭世、Spectrum 的〈F・L・Y〉2024 年在海外竄紅（那首曲出自 1980 年的另一張碟）。
+
+**生卒年的處理**：沿用 c-176 b 第 4371 條——**只以括號形式出現在身分標記裡**
+（井上敬三／八木正生／宮沢昭／野口久光／Blue Mitchell／Kenny Kirkland／Lew Soloff／Oscar Castro-Neves／川端民生），**不展開成敘事。**
+
+---
+
+## 4623　獎項：逐項分「得獎／入圍」——本組**七項，全部是得獎；零項入圍**
+
+| 獎 | 誰／哪一年 | 得獎還是入圍 | 寫進哪張卡 |
+|---|---|---|---|
+| 《スイングジャーナル》讀者人氣票選 鼓手部門第 1 位 | 富樫雅彦，1970 年 5 月 | **得獎（票選第一）** | セッション・イン・パリ Vol.1 |
+| 《スイングジャーナル》ジャズディスク大賞「日本ジャズ賞」 | 富樫雅彦《スピリチュアル・ネイチャー》，1975 年 | **得獎**；該獎他反覆得過、次數是日本樂手最多 | 同上 |
+| 芸術選奨新人賞 | 富樫雅彦，1978 年 | **得獎** | 同上 |
+| 第 5 屆巴黎青年雙年展 攝影部門大獎 | 高梨豊，1967 年 | **得獎** | Savanna Hot-Line |
+| 第 23 屆 ADC 賞 | 操上和美，1978 年，作品是あいミュージック「SADAO WATANABE」 | **得獎** | Morning Island |
+| 新宿ジャズ賞 | 向井滋春，1975 年 | **得獎** | （本層查到但未寫進 facts，篇幅讓給 1979 年赴美那條） |
+| Modern Drummer 名人堂 | Bernard Purdie，2013 年 | **入選名人堂（非競賽獎）** | Corazón |
+
+**零項入圍、零處用「獲得」這種兩可的動詞。**
+⚠ **刻意不寫的兩組**：**大野俊三 的兩座葛萊美**（年份兩個來源打架，而且與本作無關，見 4602）、
+**本多俊之 1987 年的日本電影學院獎最優秀音樂賞**（與本作無關）。
+⚠ **商業成績**：**1979 年段的日本爵士盤沒有可查證的專輯榜名次**，本線八批以來一次都沒查到過。
+本組以**廣告採用（City Connection）、同日出道單曲（Spectrum）、海外授權版本數（Morning Island 22 版／Native Son 14 版）**
+與**復刻定價**代替，逐張至少一筆。
+
+---
+
+## 4624　曲風覆核：**15 張全部維持收件，一張都沒有翻案**
+
+本層逐張重讀 Discogs 原壓的 `genres`／`styles` 與完整曲目來源，第 3753 條的四款與第 5 款逐款對過：
+
+- **①② 兩款十五張全部不成立**：沒有一張的 `styles` 含 `Easy Listening` 或 `Kayōkyoku`，也沒有一張的 `genres` 含 `Folk, World, & Country`。
+- **③ 款十五張全部不成立**：**本組零首日本歌謡曲、零首演歌**。唯一兩首翻奏是《Far East Express》B1 的披頭四
+  與《Opa Com Deus》A3 的 Boz Scaggs，兩首都是英美曲——**第 3781 條的分界（差別在素材是英美曲還是日本歌謡曲）成立。**
+  《Corazón》七軌裡四軌是他人作品（Carole King／Lee Oskar／Robert Lamm／渡辺貞夫），**也全部是英美與日本爵士樂手的曲，不是歌謡曲。**
+- **④ 款不成立**：十四位領銜者沒有一位的目錄落在ムード／ソフト・コーラス／イージー・リスニング 線上。
+- **⑤ 款不成立**：十五張的 `genres` 全部含 Jazz，零張含 `Non-Music`／`Stage & Screen`。
+- **三張邊界收件本層完全同意策展層**：《White Heat》（`genres: jazz + rock`，八軌全是為本盤新寫的曲）、
+  《Spectrum》（`artist-search-tag`，十軌全原創、數軌帶人聲）、《Corazón》（盤面 notes 自己寫「Crossover」）。
+  **三張的 `sound` 欄都逐字寫明「不是即興主導的爵士盤」，`notes` 也重申一次。**
+
+---
+
+## 4625　交件自跑的結果、`jp-proper-names.json`（**本批未動**）、續跑保護與邊界自述
+
+**機器 QA**（工作目錄 `desc-tools/`）：
+```
+node qa-batch.mjs research c177
+a 15 full,... ⚠ research-a 簡體字: 点 ／ ⚠ research-a 半形逗號貼中文 ／ ⚠ research-a 千分位逗號: 4,950、2,515、1,100、2,300、2,500
+b 15 full,full,full,full,full,full,full,full,full,full,full,full,full,full,full
+key 與卡單完全一致 ✓
+總標記 3
+```
+⚠ **三個標記全部落在 a 組的 `c177-a.json` 上，b 組 0 標記。** **本層沒有碰 a 組的檔**（邊界），只把結果記在這裡供主線與 a 組處理。
+
+**逐張人工量測**（本層另寫程式跑，不用眼睛掃）：
+
+| 項目 | 結果 |
+|---|---|
+| `facts` 條數 | **15 張全部恰好 12 條，合計 180 條**（上限） |
+| `src` 完整 https | **180/180 通過**，零描述型 src；另跑一輪可用性自檢，**扣掉 19 個 Discogs 短網址，其餘 69 個相異網址全部 HTTP 200** |
+| 來源網域 | 6 個：`www.discogs.com`／`ja.wikipedia.org`／`en.wikipedia.org`／`www.jvcmusic.co.jp`／`columbia.jp`／`musicbrainz.org` |
+| 簡體字 | **0**（剝除白名單後逐字掃過，全檔只有 3 處 `国`，都落在既有白名單的「国立音楽大学」與「稲葉国光」裡） |
+| 千分位逗號 | **0**（`\d{1,3}(?:,\d{3})+` 全檔零命中；金額一律寫「兩千五百三十日圓」「四千九百五十日圓」） |
+| CJK 旁的半形逗號 | **0** |
+| 日文新字體混進行文 | **0**（`楽沢学会発売録収変体号歳図独経済両価戦芸` 等逐字掃過，**所有命中都落在專名或「」內的逐字引用裡**：国立音楽大学／武蔵野音楽大学／広島大学水畜産学部／青山学院高校／陸軍戸山学校／後楽園球場／宮沢昭／成蹊大学 経済学部／芸術選奨新人賞／《二十歳の恋》／「1979年発売の6thソロアルバム」／「1977年5月4日録音」／「日本人による本格的なブラジル音楽はここから始まった！」。⚠ `台`（電視台・舞台）是正體字，不是新字體，照第 4625 條這一行的判準不計） |
+| `hookCandidates` | 15 張全部 2 條，**未超過上限** |
+| 獎項的入圍／得獎 | **7 項逐項分開**（4623），零處用「獲得」 |
+| `status` 與 `coverage` | **兩欄並存且同值**（15 張皆 `full`） |
+| `key` 逐字複製 | **15/15 與卡單 `group === "b"` 逐字相同、順序相同** |
+
+⚠ ⚠ **`desc-tools/jp-proper-names.json` 本批一個字都沒有動。**
+理由：本層的 b 組全檔只有 3 處會被簡體規則命中的字（都是 `国`），
+**而「国立音楽大学」與「稲葉国光」兩個字串既有名單裡已經有了**——**不需要 append，也不必改寫正文去規避。**
+（既有 39 筆一字未改；本層只讀取，沒有寫入。）
+
+**續跑保護**：照派工信第六節，**每做完 3 張就把目前結果整份寫回 `desc-tools/batches/research/c177-b.json`**
+（1–3 → 1–6 → 1–9 → 1–12 → 1–15，**五次都是整檔覆寫、不是追加片段**）。
+判斷檔案在不在一律用 `ls` 與直接讀檔，**沒有用 `git status`**。
+臨時檔全部放在指定的 scratchpad `c177rb/` 底下、檔名一律帶批次組別前綴
+（`fetch-c177b-dg.mjs`／`fetch-c177b-wiki.mjs`／`fetch-c177b-lbl.mjs`／`fetch-c177b-mb.mjs`／`chk-c177b-src.mjs`／
+`build-c177b-1.py`〜`build-c177b-5.py`／`dg-rel.json`／`dg-ver.json`／`dg-art.json`／`dg-art2.json`／`dg-srch.json`／`dg-extra.json`／
+`ja-wiki.json`〜`ja-wiki4.json`／`en-wiki.json`／`lbl.json`〜`lbl3.json`／`mb-art.json`），
+**沒有用 `tmp.json`／`chk.mjs` 這種通用名。** 本工作階段沒有被重啟，五次寫檔都是預防性的。
+
+**節流實測**：`api.discogs.com` 3.2 s／次共 64 次、`ja/en.wikipedia` 0.7 s／次共 139 次、
+`musicbrainz.org` 1.2 s／次共 10 次、廠牌官網 1.4 s／次共 26 次，**全程 0 次 403／429／503**，沒有用到退避重試。
+
+**本層沒有動到的東西（邊界自述）**：
+- 只寫了 **`desc-tools/batches/research/c177-b.json`（新增）** 與 **本檔的這一段（純 append，4596–4625）**。
+- **完全沒有碰**：`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、
+  卡單（`c177-cards.json`）、`slice.json`、`prop-a.json`／`prop-b.json`、**a 組的 `c177-a.json`**、
+  `desc-tools/jp-proper-names.json`（只讀）、其他批次的任何檔案（`c178-cards.json` 只做唯讀掃描）、KV、Firestore。
+- **沒有 `git add`／`git commit`／`git push`，沒有動 git 索引**；寫入本檔前照派工信第八節同時跑了
+  `ls batch-progress/c177/` 與 `git show HEAD:batch-progress/c177/rulings.md`（兩者都是 1587 行、a 組研究層尚未落檔），
+  **確認 4596 之前沒有任何既有內容，再以純追加方式寫入。**
+
+**編號區間結算**：本節用到 **4596–4625（共 30 條），區間用滿。** a 組研究層用 4566–4595。
+
+---
+
+---
+
+# c-177 a 組研究層（4566–4595）
+
+批次 c-177｜a 組 15 張（收件全表）｜研究層｜2026-09-22
+輸入：`desc-tools/batches/cards/c177-cards.json` 的 `group === "a"` 15 筆
+輸出：`desc-tools/batches/research/c177-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含開頭「雲端 Blue Note 線的三處例外」：產出直接寫進 repo、
+每張 8–12 條 `facts` ＋ 完整 https `src`、`key` 從卡單逐字複製、`status` 與 `coverage` 並存），
+判準沿用 c-176 a 第 4316–4345 條與 c-176 b 第 4346–4375 條。
+
+## 4566　總表：**15 張，facts 合計 180 條，每張恰好 12 條；full 15、thin 0**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---|---|---:|---|---|
+| 1 | 富樫雅彦 —《エッセンス》 | 12 | full | 封面照片是他自己拍的；富樫美枝 的樂器逐字是葡萄酒杯 |
+| 2 | 富樫雅彦 —《モーション》 | 12 | full | 1977 年的盤上已經有「PCM Operator」這個職稱 |
+| 3 | 鈴木勲 —《My Spare Time》 | 12 | full | **封套設計是石岡瑛子**；**推翻原廠頁把佐藤允彦 寫成「佐藤光彦」** |
+| 4 | 菊地雅章 —《But Not For Me》 | 12 | full | **推翻卡單：解說是児山紀芳 不是小川隆夫**；2017 年才初 CD 化 |
+| 5 | 高中正義 —《On Guitar》 | 12 | full | **推翻卡單：〈Breezin'〉的作曲者是 Bobby Womack**；教則系列在他之前已有兩本 |
+| 6 | 日野皓正 —《Hip Seagull》 | 12 | full | 唱〈Fall〉的是笠井紀美子；Tawatha 是 Mtume〈Juicy Fruit〉的聲音 |
+| 7 | 福村博 with 渡辺貞夫 —《Hunt Up Wind》 | 12 | full | 錄音工程高田英男 就是日後監修復刻線的那個人 |
+| 8 | 浅川マキ —《寂しい日々》 | 12 | full | 混音是吉野金次；**兩首日本語詩版另有翻譯者掛名** |
+| 9 | 森園勝敏 —《Bad Anima》 | 12 | full | **推翻卡單三處人名＋一處曲目**；Horn Spectrum 是盤上的隊名 |
+| 10 | 原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster —《Giant Steps》 | 12 | full | **團名的來歷：美國人唸不出「ツカハラ」** |
+| 11 | 本多俊之 —《Burnin' Waves》 | 12 | full | ⚠ ⚠ **錄音日與錄音室：Seawind 是飛到東京錄的**（卡單完全沒有） |
+| 12 | 大友義雄カルテット —《As a Child》 | 12 | full | 他1975／1976／1977 已有三張碟，**本盤不是出道作** |
+| 13 | 増尾好秋 —《Sailing Wonder》 | 12 | full | ⚠ ⚠ **推翻卡單兩處：不是一天錄成、七軌全部是他寫的** |
+| 14 | 池田芳夫クインテット —《スケッチ・オブ・マイ・ライフ》 | 12 | full | **他的側錄史直接連到本批另外三位領銜者**；**推翻幕後三處人名** |
+| 15 | 鈴木勲 —《The Thing》 | 12 | full | **推翻卡單兩處人名**；廠牌自己的文案叫它「美しき問題作」 |
+
+**thin 0 張。** 本年段的五口井（Discogs 整筆 credits／`jvcmusic.co.jp`／`kingrecords.co.jp`／`miqqe.jp`／日文維基）
+在 a 組全部出水，沒有一張掉到三條來源以下（每張的 `src` 相異網域數是 3 到 10）。
+
+---
+
+## 4567　⚠ 再發版本數：**15 張逐筆重跑 `masters/<id>/versions`（`per_page=100`），改判 0 筆**
+
+派工信第二節逐字說「本批策展層已經跑過版本表」「重點不是重數一次，是『數字對不等於內容全』」。**逐筆重跑的結果與第 4386 條完全一致：**
+
+| 碟 | master | 卡單記 | 本層重跑 | 差 |
+|---|---:|---:|---:|---:|
+| エッセンス | 946351 | 2 | **2** | 0 |
+| モーション | 1003503 | 3 | **3** | 0 |
+| My Spare Time | 4128754 | 5 | **5** | 0 |
+| But Not For Me | 1244023 | 4 | **4** | 0 |
+| On Guitar | 1050166 | 8 | **8** | 0 |
+| Hip Seagull | 690599 | 6 | **6** | 0 |
+| Hunt Up Wind | 163860 | 12 | **12** | 0 |
+| 寂しい日々 | 401886 | 4 | **4** | 0 |
+| Bad Anima | 809690 | 4 | **4** | 0 |
+| Giant Steps | 1566857 | 2 | **2** | 0 |
+| Burnin' Waves | 303212 | 7 | **7** | 0 |
+| As a Child | 1362390 | 5 | **5** | 0 |
+| Sailing Wonder | 1114681 | 6 | **6** | 0 |
+| スケッチ・オブ・マイ・ライフ | 1436693 | 6 | **6** | 0 |
+| The Thing | 4196184 | 3 | **3** | 0 |
+
+→ **c-176 a 第 4317 條的結論在本批第二次成立**：策展層自己跑完版本表之後，研究層的重跑就是純覆核。
+⚠ **但派工信第二節警告的那個形狀本批也驗了**：**「數字對」確實不等於「內容全」**——
+本層另外打了 `miqqe.jp` 的三個 NJS 號（842／843／845），**三筆黑膠 Discogs 版本表裡都已經有了**，
+**本批沒有出現 c-176 b 第 4364 條《サンライズ》那種「原廠通販有、Discogs 沒建」的缺口**。
+⚠ **反過來有一個新形狀**：`miqqe.jp/item/njs-815/` 與 `/njs-849/`（《On Guitar》的兩張黑膠）**都回 HTTP 404**，
+**而 Discogs 的版本表裡有這兩版**——**`miqqe.jp` 只覆蓋部分 NJS 號段，不是全部**，
+它是 Discogs 的補漏來源而不是取代來源。**這一條請寫進後五批的來源表。**
+
+---
+
+## 4568　⚠ ⚠ 推翻策展層第一處：`増尾好秋 —《Sailing Wonder》` **不是「一天錄成」**
+
+卡單 `curatorWhy` 逐字寫「1977 年 11 月 15 日在 Jimi Hendrix 蓋的 Electric Lady Studios 錄、1978 年 5 月 21 日發行」，
+第 4385 條的實況判定表也把本盤記成「Electric Lady Studios（#16，notes 逐字「Recorded on Nov 15, 1977.」）」，
+第 4390 條更逐字寫「整張在紐約 Electric Lady Studios **一天錄成**（1977-11-15）」。
+
+**來源是 Discogs 1978 年原壓 releases/6688969 的 notes，那一行確實只寫了一天。**
+**但キング 自家的商品頁寫的是一段期間**：
+
+> `https://www.kingrecords.co.jp/cs/g/gKICJ-2381/` 逐字：「録音： 6.25ー11.15 1977, at Electric Lady Studio, N.Y.C」
+
+→ **1977 年 6 月 25 日到 11 月 15 日**，橫跨四個半月。**11 月 15 日應該只是最後一次 session 的日期**，
+Discogs 的 notes 把最後一天寫成了唯一一天。
+**本層取原廠頁，facts 寫錄音期、`notes` 逐字記明推翻依據。**
+⚠ **行文不得再寫「一天錄成」**——那會把一張斷續錄了四個半月的碟說成一場 session。
+⚠ **給後五批的操作結論**：**Discogs 的 `Recorded on <單一日期>` 在本線不可當成「單日錄音」的證據**，
+**キング 與ビクター 兩家的原廠商品頁都會把錄音期寫成區間**（本批另一個正例見 4570）。
+
+---
+
+## 4569　⚠ ⚠ 推翻策展層第二處：`《Sailing Wonder》` **七軌全部出自増尾好秋 的筆，不是五軌**
+
+卡單 `curatorWhy` 逐字寫「七軌裡五首是他自己的作品（…），另兩首分別由夫人 Shirley Masuo 與貝斯手 T.M. Stevens 所寫」。
+**兩層都錯。**
+
+| 軌 | キング 官方頁逐字 | Discogs written-by 逐字 |
+|---|---|---|
+| A2〈Treasure Island／トレジャー・アイランド〉 | **作曲：増尾 好秋／作詞：Ｓｈｉｒｌｅｙ　Ｍａｓｕｏ** | `Shirley Masuo=Written-By[A2]` |
+| B1〈Kirk Out／カーク船長〉 | **作曲：増尾 好秋, Ｔ．Ｍ．Ｓｔｅｖｅｎｓ** | `T.M. Stevens=Written-By[B1]` |
+| 其餘五軌 | 作曲：増尾 好秋 | `Yoshiaki Masuo=Written-By`（無軌限定） |
+
+→ **Shirley Masuo 掛的是作詞不是作曲；T.M. Stevens 是共同作曲者不是單獨作曲者。**
+**正確的說法是：七軌全部由増尾好秋 作曲（其中兩軌有共同作者），而且七軌的編曲欄也全部掛他。**
+⚠ **形成原因值得記**：Discogs 的 written-by 欄**把「無軌限定」與「有軌限定」兩種掛法並列**，
+只看有軌限定那兩行就會讀成「那兩軌是別人寫的」。**這一欄要與無軌限定的那一行一起讀。**
+⚠ **併記一處本層刻意不裁定的**：B1 在 Discogs 原壓上逐字是〈Kirk Out〉，キング 的日文題卻是「カーク船長」——
+**兩邊都寫進 facts，不替它挑一個。**
+
+---
+
+## 4570　⚠ ⚠ 本層挖到的最大一格：`本多俊之 —《Burnin' Waves》` **的錄音日與錄音室——Seawind 是飛到東京錄的**
+
+卡單第 4385 條逐字把本盤列進「**無 `Recorded At` 也無錄音 notes**」那四筆裡（#13／#14／#15／#17），
+Discogs 1978 年原壓 releases/1263773 的 `companies` 與 `notes` 兩欄確實都是空的。
+
+**キング 自家的商品頁把這一格補滿了**：
+
+> `https://www.kingrecords.co.jp/cs/g/gKICJ-2406/` 逐字：「録音：Media Studio & King Records Studio Apr. 22,25,29,1978」
+
+→ **1978 年 4 月 22、25、29 三天，地點是東京的 Media Studio 與キング 錄音室。**
+**這改變了整張碟的故事方向**：卡單與第 4390 條把本盤寫成「日本領銜＋美國伴奏」的形狀（Seawind 整團七人），
+**但實際上是 Seawind 整團飛到東京錄的**——不是本多俊之 飛去美國。
+**這是本層在 a 組挖到最值錢的一格，而且它完全不在 Discogs 上。**
+⚠ **給後五批**：**`kingrecords.co.jp` 的商品頁固定有一行「録音：」，那一行在 Discogs credits 稀薄的 King 盤上是唯一來源。**
+本批三個能打通的 King 號（KICJ-2408／2406／2381）**三筆都有錄音欄**，命中率 3/3。
+
+---
+
+## 4571　⚠ ⚠ 推翻策展層第三處：`菊地雅章 —《But Not For Me》` **的解說者是児山紀芳，不是小川隆夫**
+
+卡單 `curatorWhy` 逐字寫「錄音與混音 Tony May、母帶小鉄徹、**解說小川隆夫**、製作伊藤潔與菊地雅章 本人」。
+
+- **Discogs 原壓 releases/3774353 的 credits 逐字是「Kiyoshi Koyama=Liner Notes」。**
+- **Discogs 藝人頁 `artists/548364` 的 `realname` 逐字是「児山紀芳」**，profile 逐字：
+  「Japanese jazz record producer, editor, radio DJ, and liner notes writer. Born in February 12, 1936 in Sakai.
+  Died February 3, 2019 in Kashiwa, (aged 82). He was editor of the Japanese jazz magazine "Swing Journal"
+  from 1962 to 1979 and from 1990 to 1993.」
+
+→ **`Kiyoshi Koyama` ＝児山紀芳**（《スイングジャーナル》兩度任總編輯的那一位），
+**`Takao Ogawa` 才是小川隆夫**。兩位都是日本爵士樂評人、寫過大量解說，**極容易互換**。
+⚠ **給後五批的固定動作**：**卡單上的解說者／評論家漢字名一律回打 `api.discogs.com/artists/<id>` 的 `realname` 覆核**
+（這與 c-176 a 第 4344 條第 4 點對「樂手漢字名」的要求是同一條，本批把它擴到幕後與評論者）。
+
+---
+
+## 4572　⚠ ⚠ 推翻策展層第四處：`高中正義 —《On Guitar》` **〈Breezin'〉的作曲者是 Bobby Womack，不是 George Benson**
+
+卡單 `curatorWhy` 逐字把八軌的翻奏來源寫成「**George Benson〈Breezin'〉**、Billy Joel〈Just The Way You Are〉、
+Pérez Prado〈Mambo Jambo〉、Santana〈Samba Pa Ti〉、Earth, Wind & Fire〈That's The Way Of The World〉、
+Boz Scaggs〈We're All Alone〉」——**那是把「唱紅它的人」寫成了作曲者。**
+
+Discogs 原壓 releases/4835911 的逐軌 written-by 欄逐字：
+
+| 軌 | 逐軌 written-by |
+|---|---|
+| A1 Breezin' | **Bobby Womack** |
+| A4 Mambo Jambo | **Charlie Towne；Perez Prado；Raymond Karl**（三人） |
+| B3 That's The Way Of The World | **Charles Stepney；Maurice White；Verdine White**（三人） |
+| A3／B1／B4 | Billy Joel／Carlos Santana／Boz Scaggs（卡單寫對） |
+
+→ **〈Breezin'〉是 Bobby Womack 1971 年寫的曲子，George Benson 1976 年的版本才讓它變成名曲。**
+另外兩首卡單各漏了兩位共同作曲者。**三處都已補進 facts。**
+⚠ **這與派工信第四節警告的「Discogs 的作曲欄會錯」方向相反**：**本筆是 Discogs 對、卡單錯**。
+**兩個方向都要防：Discogs 的逐軌作曲欄仍要交叉驗，但它比「憑印象寫演唱者」可靠。**
+
+---
+
+## 4573　⚠ ⚠ 推翻策展層第五到第八處：**四個樂手的漢字名**
+
+四處全部有**兩個獨立來源**（Discogs 藝人頁的 `realname`／`namevariations` ＋ 原廠商品頁或第二個資料庫）：
+
+| 碟 | 卡單寫 | **正確** | 依據 |
+|---|---|---|---|
+| Bad Anima | 中村悟 | **中村哲** | Discogs `artists/143937` realname 逐字「中村哲 (Nakamura Satoshi)」（1954-09-16 生於埼玉）＋ **キング 官方頁編制欄逐字「中村哲(ts,ac.p…)」** |
+| Bad Anima | 相良宗仁 | **相良宗男** | Discogs `artists/2984350` namevariations 逐字「相良宗男」＋ キング 官方頁逐字「相良宗男(ds,perc)」 |
+| Burnin' Waves | 安井正臣 | **穴井忠臣** | Discogs `artists/777621` realname 逐字「穴井忠臣」（credits 羅馬字 `Tadaomi Anai`）；旁證：日文維基「佐藤允彦」條目記 1980 年 MSB 編制時逐字寫「穴井忠臣(per、congas)」 |
+| The Thing | 平山滋夫 | **平山恵勇** | Discogs `artists/2129356` realname 逐字「平山恵勇」（1954-03-02 生於大阪）＋ **ビクター `miqqe.jp` 商品頁把他羅馬化成 `Keiyu Hirayama`，正好對上「恵勇」的讀音** |
+
+⚠ **四處的形成機制完全相同**：**策展層從 Discogs credits 的羅馬字逆推漢字**
+（`Satoshi Nakamura`→「悟」、`Muneo Sagara`→「宗仁」、`Tadaomi Anai`→「安井」、`Shigeo Hirayama`→「滋夫」）。
+**日本人名的羅馬字對漢字是一對多，逆推必錯。**
+⚠ **`The Thing` 那一筆特別值得記**：**兩個資料庫的羅馬字互相打架**（Discogs `Shigeo` vs ビクター `Keiyu`），
+**但兩者指的是同一個漢字名「平山恵勇」**——**羅馬字打架時，去找漢字，不要在兩個羅馬字之間挑。**
+
+---
+
+## 4574　⚠ ⚠ 推翻策展層第九到第十一處：**三個幕後人員的漢字名（全部出在同一張碟上）**
+
+`池田芳夫クインテット —《スケッチ・オブ・マイ・ライフ》` 的四行幕後掛名，卡單三行寫錯：
+
+| 職稱 | Discogs credits 羅馬字 | 卡單寫 | **正確** | 依據 |
+|---|---|---|---|---|
+| Producer | `Yoichiro Sone` | 曾根義郎 | **曽根陽一郎** | Discogs `artists/3726324` namevariations 逐字 |
+| A&R Producer | `Tsuneaki Tone` | 刀根恒明 | **利根常昭** | Discogs `artists/1069569` namevariations 逐字 |
+| Recording Engineer | `Hatsuro Takanami` | 高波初郎 | **高浪初郎** | Discogs `artists/873378` realname 逐字；profile 另給 1937 年生、1953 年進 KRC 國際ラジオセンター、**1964 年轉進キングレコード、1997 年退休** |
+
+⚠ **第四行標 `uncertain`、facts 仍照寫**：Recording Supervisor `Yoshiteru Hayashi` 卡單寫「林義照」，
+Discogs `artists/4478413` 的 namevariations 逐字是「林芳輝」——**只有單一來源、無旁證**，
+本層取「林芳輝」並在該卡 `notes` 逐字標明存疑，**若下游有盤面掃描請覆核。**
+⚠ **形成機制同 4573**（羅馬字逆推），**但幕後人員更危險**：他們在日文維基普遍沒有條目、
+Apple 與原廠頁也不列，**Discogs 藝人頁是唯一的漢字來源**。
+→ **給後五批：卡單上的製作人／A&R／錄音工程師漢字名，一律回打 Discogs 藝人頁，一個都不要信羅馬字逆推。**
+
+---
+
+## 4575　⚠ 推翻策展層第十二處：**「三處逐日相符」其實只有兩處——Discogs 的 `released` 欄在本組五張碟上只有年**
+
+卡單第 4383 條的年份表逐字寫：
+「**Bad Anima（SKS 8003）｜1978｜1978-12-21｜1978-12-21（notes 記 1978-10-14〜30 錄音）｜1978-12-21（三處逐日相符）**」，
+末段又逐字寫「**#12《Bad Anima》是三處逐日相符的一筆，值得記**」。
+
+**本層逐張重打 `api.discogs.com/releases/<id>` 的 `released` 欄：**
+
+| 碟 | 卡單記的 Discogs `released` | **實際的 `released` 欄** |
+|---|---|---|
+| Bad Anima 1967889 | 1978-12-21 | **`"1978"`** |
+| As a Child 8919110 | 1978 | `"1978"` |
+| スケッチ 8940554 | 1978 | `"1978"` |
+| Sailing Wonder 6688969 | 1978 | `"1978"` |
+| Burnin' Waves 1263773 | 1978 | `"1978"` |
+
+→ **《Bad Anima》逐日到 12 月 21 日的只有 MB 的 `first-release-date` 與 Apple 兩處，不是三處。**
+（MB 端點本層也重打過，`first-release-date` 確為 `1978-12-21`，那一半是對的。）
+⚠ **推測形成原因**：Discogs 的**網頁**版面會把「Released: 21 Dec 1978」這類資訊顯示在 master 或其他欄位，
+**但 API 的 `released` 欄只有年**——策展層很可能讀到了不同的欄位。
+⚠ **影響**：年份一個都沒變（15/15 仍是 0 差），**但「幾個來源逐日相符」這種話不能再照抄**。
+**給後五批：要宣稱「N 處逐日相符」時，逐處把欄位名與原值抄進 `mbNote`，不要只寫結論。**
+
+---
+
+## 4576　卡單漏列的樂手與曲目（五處，全部補進 facts）
+
+| 碟 | 漏了什麼 | 依據 |
+|---|---|---|
+| Bad Anima | **第二軌〈You'll Stay In My Heart〉（Barry Dean 作詞作曲）整首沒提**；卡單把「他自己的新作」寫成四首，**逐軌欄是三首作曲＋七軌全部編曲** | Discogs releases/1967889 逐軌欄 ＋ キング 官方頁逐軌欄 |
+| Bad Anima | **伊藤幸毅**（mini Moog／polyphonic 合成器／Hammond 電風琴，掛 A1・A2・B1・B2）與**マック清水**（本名清水祐一，1956 年生於東京，打擊）兩位樂手 | Discogs credits ＋ `artists/6801259`／`artists/2812903` |
+| Bad Anima | Horn Spectrum 的另外兩人：**兼崎順一**（小號、富魯格號）與**新田一郎**（小號、長號、富魯格號，1954-05-02 生於奈良） | Discogs credits ＋ `artists/534682`／`artists/766819` |
+| Hunt Up Wind | 〈That's Enough For Me〉卡單只掛 Dave Grusin，**逐軌欄是 Dave Grusin ＋ Patti Austin**；〈To Say Goodbye〉卡單只掛 Edu Lobo／Lani Hall，**逐軌欄還有 Torquato Neto** | Discogs releases/1862991 逐軌欄 |
+| 寂しい日々 | 〈Too Much Mystery〉卡單漏 **Raymond Jackson**；〈Mr. マジック・マン〉卡單漏 **Carl Fisher**；**五首日本語詩版裡有兩首另有翻譯者掛名**（〈ナイロン・カバーリング〉山本安見、〈暗い日曜日〉橋本千恵子） | Discogs releases/2266638 逐軌欄 |
+
+⚠ **最後那一列特別要交代**：c-176 b 第 4370 條把「**日本語詩不是訳詩**」那條浅川マキ 自己的規矩鎖給了《流れを渡る》，
+**而本盤的逐軌欄顯示有兩首確實先經過翻譯者、她再填詞**——**兩件事不衝突（規矩講的是成品不是流程），
+但行文絕不可把本盤寫成「她全部直接從原文改寫」**。本層已在該卡 `notes` 逐字標明。
+
+---
+
+## 4577　本層挖到的第一格：**「ADLIB presents ビクター和フュージョン」是一條四十張的企劃，監修者有名有姓**
+
+卡單第 4386 條只記到「ビクター 2017 再發（VICJ-770xx）是同一個批次」。**原廠頁把整條企劃寫完了**：
+
+> `https://www.jvcmusic.co.jp/-/Discography/-/VICJ-77005.html` 逐字：
+> 「ビクターがInvitation,Flying Dog,Flying Disk,JVC,Victorのレーベルに残した70～80年代の国産良質のフュージョン商品をまとめて40Ｗ復刻。
+> 廃盤、初ＣＤ化等の商品も多数含む。」「雑誌「ADLIB」（2010年休刊）と完全タイアップ。」
+> 「**監修：松下佳男（ADRIB元編集長） / 高田英男（元ビクタースタジオ長、サウンド・プロデューサー）**」
+> 「ビクターの新マスタリングシステム＝K2HD PRO MASTERINGと高音質ＣＤ=UHQCDを採用。」
+> 「全てオリジナル・マスターからの2016年最新リマスタリング。」「レコード発売時の帯を復刻、リバーシブル帯の採用」
+
+→ **四十張、五條廠標（Invitation／Flying Dog／Flying Disk／JVC／Victor）、與《ADLIB》雜誌完全綁定、兩位監修。**
+⚠ **這條線在本批涵蓋四張**：VICJ-77005《On Guitar》、VICJ-77031《Hunt Up Wind》、
+VICJ-77044《But Not For Me》、VICJ-77052《Hip Seagull》。
+⚠ **而且它接上了 c-176 b 第 4357 條**：那一條記《Sadistics》時逐字寫過「**高田英男 監修**」——
+**同一個人，而且他在本批的《Hunt Up Wind》上是 1978 年的錄音工程師**（Discogs `artists/506042`：1951 年生、1969 年起任職ビクター）。
+**「錄它的人四十年後回來監修它的復刻」這條線已配給《Hunt Up Wind》，企劃本身配給《On Guitar》。**
+
+---
+
+## 4578　本層挖到的第二格：**《But Not For Me》到 2017 年才第一次做成 CD**
+
+`jvcmusic.co.jp/-/Discography/-/VICJ-77044.html` 的作品說明逐字：
+「アフリカのポリリズムにスピリチュアルなジャズが融合した菊池雅章の傑作アルバム。**初CD化**。」
+
+→ **1978 年的原盤到 2017 年 8 月 23 日才第一次 CD 化**，中間三十九年只有黑膠。
+⚠ **Discogs 的版本表看不出這件事**：master 1244023 的四版是「原壓／宣傳盤／2017 CD／2026 黑膠」，
+**數字對、也排得出順序，但「這是初 CD 化」這個判斷要原廠頁講。**
+⚠ **同一頁還有一處值得記給後五批**：**藝人欄寫「菊地　雅章」，作品說明卻寫成三點水的「菊池雅章の傑作アルバム」**
+——**廠牌自己的頁面上兩種漢字並存**（卡單 `curatorRisk` 逐字提醒過誤寫的「菊池雅章」只能進 `queryAlias`，
+本批證實那個誤寫連原廠都會犯）。
+
+---
+
+## 4579　本層挖到的第三格：**池田芳夫 的側錄史直接連到本批另外三位領銜者**
+
+`api.discogs.com/artists/663530/releases` 逐筆看過，1968–1971 那一段：
+
+| 年 | 碟 | 與本批的關係 |
+|---|---|---|
+| 1969 | **富樫雅彦クワルテット —《スピード&スペイス》** | **本批 #1／#2 的領銜者**（而且那張是池中的 apex:pearl） |
+| 1969 | 渡辺貞夫 —《サダオ・プレイズ・バカラック・アンド・ビートルズ》 | 本批 #7 的共同掛名者 |
+| 1970 | **菊地雅章 —《Poo-Sun》／《再確認そして発展》／《コラボレイション》** | **本批 #4 的領銜者**（後兩張在池中） |
+| 1970 | **《ギター・ワークショップ》**（杉本喜代志・川崎燎・**増尾好秋**・高柳昌行） | **本批 #13 的領銜者** |
+
+→ **一張 1978 年的五重奏盤，它的貝斯手在十年前彈過本批另外三位領銜者的碟。**
+**這是本批最值錢的跨卡串連點，本層已把它鎖給《スケッチ・オブ・マイ・ライフ》那一張卡**
+（該卡的 `notes` 逐字寫明「這條是本批最值錢的一格，只能用在本卡」）。
+⚠ **另外兩筆同源線索**：他的下一張領銜作是 1979 年的《風媒花 Anemophilous Flower》，
+**1982 年他與本盤的鋼琴手高瀬アキ 錄了雙人盤《エスプリ Esprit》**——同樣鎖在該卡。
+⚠ **他的生日（1942-01-01 生於大阪）也只有 Discogs 藝人頁有**，日文維基查無「池田芳夫」條目。
+
+---
+
+## 4580　本層挖到的第四格：**シャープス・アンド・フラッツ 這個團名，是被美國人的舌頭逼出來的**
+
+日文維基「原信夫」條目逐字：
+
+> 「1950年、神奈川県横浜市のキャバレーで演奏していたバンド『ムーンライト』に参加。…
+> 活動場所を横浜から東京都品川区にあった在日アメリカ合衆国軍のクラブ（ヴィラ・クラブ）へ移す。
+> **品川への活動拠点を機に、芸名を『原信夫』に改め、バンド名もムーンライトから『シャープス・アンド・フラッツ（♯&♭）』に改名。
+> アメリカ人に「ツカハラ」の発音が困難と言われたのが契機。**」
+
+→ **他本名塚原信夫，因為美國人唸不出「ツカハラ」，他同時改掉了自己的藝名與樂團名。**
+⚠ **而那個簡稱「♯&♭」直接印在本盤的盤面題上**：
+`GIANT STEPS #&♭ MEET ELVIN JONES by FRANK FOSTER`（卡單 `queryAlias` 逐字收了這一串）。
+⚠ **樂團規模也補到第二個來源**：Discogs `artists/1319014` 的 profile 逐字「**a 17-member big band formed in 1951**」，
+與卡單 `curatorRisk` 說的「整支十七人日本大樂團」一致。
+⚠ **同條另記一處日文維基自相矛盾、本層沒有寫進 facts**：條目開頭寫「富山県富山市出身」，
+內文第一句卻寫「1926年、**樺太で誕生**」——**兩句對不上**，facts 只寫「1926 年生於樺太、養在富山東岩瀬」這個內文版本，
+出生地那一欄不引。
+
+---
+
+## 4581　本層挖到的第五格：**《My Spare Time》的封套設計是石岡瑛子**
+
+Discogs 原壓 releases/5016450 的 credits 逐字有「**Eiko Ishioka=Design [Album]**」與「Motoko Naruse=Design [Album]」兩行，
+封面攝影是沢渡朔（`Hajime Sawatari`）、內頁攝影森山徹。**卡單的三十餘行編制只寫了樂手，沒有提美術。**
+
+⚠ **這一格為什麼重要**：c-176 b 第 4370 條把「石岡瑛子 的封面」鎖給了 `渡辺貞夫 —《My Dear Life》(VIJ-6001)`，
+**而本盤（VIJ-6011）是同一條 Flying Disk 線上的第二張石岡瑛子 封套**——
+**這不是重複，是同一條美術線在本線的第二個實例**（廠標的美術總監是同一人）。
+⚠ **反向禁令的分類**：她的奧斯卡（第 65 屆，《吸血鬼德古拉》，衣裝設計，**得獎**）與葛萊美
+（第 29 屆，Miles Davis《TUTU》封面，**得獎**）都是 1986 年以後的事，
+**本層寫了一句並逐字標明「日後」**——理由是她在本盤的身分就是封套設計者，她是誰直接決定這條 fact 的份量
+（分類照 c-176 b 第 4371 條對「石田勝範 1979 年起寫配樂」的同一處理）。
+
+---
+
+## 4582　⚠ ⚠ **原廠頁會寫錯自己盤上的人名與編制——`miqqe.jp` 兩處實例**
+
+派工信第三節的標題是「官方不等於原盤」，**本批發現的是更基本的一種**：**原廠頁連自己盤上的人名都會打錯。**
+
+| 頁 | 逐字寫的 | **正確** | 對照來源 |
+|---|---|---|---|
+| `miqqe.jp/item/njs-842/`（My Spare Time） | 「**佐藤光彦**(p)」「編曲。指揮：**佐藤光彦**」 | **佐藤允彦** | Discogs `artists/596931` realname 逐字「佐藤允彦 = Satō Masahiko」；本盤 credits 羅馬字 `Masahiko Satoh`；日文維基「佐藤允彦」1941-10-06 生 |
+| `miqqe.jp/item/njs-843/`（But Not For Me） | 「Bells: **Alyrio Roy**, Azzedin Weston」 | **Badal Roy（塔布拉鼓）與 Alyrio Lima（兩個人）** | Discogs releases/3774353 逐字「Badal Roy=Tabla」「Alyrio Lima=Berimbau…」 |
+
+→ **`miqqe.jp` 的編制欄是二次轉錄，不是一手資料。**
+⚠ **操作結論（請寫進後五批的來源表）**：**`miqqe.jp` 只用它的發行日、價格、系列歸屬與商品解說**；
+**編制與人名一律回 Discogs 的 credits ＋ Discogs 藝人頁**。
+⚠ **反過來，它的商品解說是有用的一手素材**：njs-845 逐字把《The Thing》定位成
+「ジャズの偉大な個性と若き感性の出逢いが生んだ**80年代の日本のジャズを示唆する美しき問題作**」
+——**廠牌自己對一張 1979 年的碟下的定性**，本層已寫進該卡的 facts。
+
+---
+
+## 4583　來源網域實測（本工作階段逐一記錄）
+
+**可用**：
+
+| 網域 | 本層用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（`releases/`＋`masters/<id>/versions`＋`artists/<id>`＋`artists/<id>/releases`＋`database/search`） | **約 110 次** | **全數 HTTP 200**，免 token，自我節流 3.2 s／次，**0 次 403／429／503** |
+| `ja.wikipedia.org/w/api.php`（`prop=extracts&explaintext=1&redirects=1`） | **48 個條目** | 全數 200，0.8 s 間隔，**42 命中／6 missing（命中率 88%）** |
+| `en.wikipedia.org/w/api.php` | **21 個條目** | 全數 200，**17 命中／4 missing** |
+| `www.jvcmusic.co.jp/-/Discography/-/<catno>.html` | **4 個目錄號** | ⚠ ⚠ **4/4 全部 200**，見 4585 |
+| `www.kingrecords.co.jp/cs/g/g<catno>/` | **5 個目錄號** | **3/5 命中**（KICJ-2408／2406／2381 回 200；KICJ-2268／2631 回 **404**，⚠ **404 仍回 14.4 KB**） |
+| `miqqe.jp/item/<njs-xxx>/` | **5 個號** | **3/5 命中**（njs-842／843／845 回 200；**njs-815／849 回 404**） |
+| `www.universal-music.co.jp/<slug>/products/<catno>/` | 1 次 | **1/1 命中**（`asakawa-maki/toct-27050`） |
+| `musicbrainz.org/ws/2` | 1 次 | 200（只為覆核《Bad Anima》的 `first-release-date`，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，1 req/s） |
+| `columbia.jp` | **6 次** | ⚠ **0/6 全滅**，見 4584 |
+
+**未使用**：`allmusic`／`allaboutjazz`（派工信已標 403，未試不浪費配額）、`junkoonishi.com`（禁用）、
+`itunes.apple.com`（策展層第 4392 條第 11 點已打 52 次、逐張寫進卡單，本層不重跑——沿用 c-176 b 第 4361 條）。
+
+**查無條目的日文維基名（本層逐字查過、全部回 `missing`）**：
+`中川昌三`／`大友義雄`／`池田芳夫`／`米田正義`／`清水末寿`／`益田幹夫`／`エレクトリック・バード`／`Pecker (ミュージシャン)`。
+→ **承 c-175 b 第 4226 條與 c-176 b 第 4361 條再確認**：**側錄樂手與廠牌子品牌在日文維基普遍沒有條目**；
+**本批多一個發現——連領銜者都可能沒有**（大友義雄 與池田芳夫 兩位都是本批的卡主，兩人的生日都只有 Discogs 藝人頁有）。
+
+---
+
+## 4584　⚠ `columbia.jp` 的兩條路徑：本組是**第七種結論——兩條全滅**
+
+本批只有兩張コロムビア 盤（#1《エッセンス》／#2《モーション》），對應四個再發目錄號：
+
+| 目錄號 | `prod-info/<catno>/` | `artist-info/togashimasahiko/discography/<catno>.html` |
+|---|---|---|
+| COCP-30976（エッセンス 2000 CD） | **404** | **404** |
+| COCP-30977（モーション 2000 CD） | **404** | —（同 slug，未重複打） |
+| CORR-11271（エッセンス 2017 CD） | **404** | **404** |
+| CORR-11272（モーション 2017 CD） | **404** | —（同 slug，未重複打） |
+
+→ **六次請求全部 404，兩條路徑都沒有任何一張命中。**
+⚠ **c-176 a 第 4330 條逐字記過 `togashimasahiko` 這個 slug 在 `columbia.jp` 沒有藝人頁**（該批查《風の遺した物語》時也是 404），
+**本批是同一個 slug 的第二次確認**——**富樫雅彦 在コロムビア 官網上沒有藝人頁，這一條可以當定論了。**
+⚠ **七批的分佈**：c-173（prod-info 全 404）、c-174 b（prod-info 全 200）、c-174 a（各一半）、
+c-175 b（prod-info 1/8、artist-info 3/6）、c-176 a（prod-info 0/5、artist-info 2/3）、
+c-176 b（prod-info 1/12、artist-info 1/6）、**c-177 a（兩條全滅）**。
+**結論仍然是「兩種都要試」，但本批證明第三種結果存在：兩種都沒有。**
+
+---
+
+## 4585　⚠ ⚠ `jvcmusic.co.jp` 4/4 全中；`kingrecords.co.jp` 3/5；`miqqe.jp` 3/5
+
+**c-176 b 第 4363 條逐字給過後六批一句話：「Victor／JVC 的卡，先查 2016–2017 年有沒有 `VICJ-770xx`／`VICL-70xxx` 的復刻，有就一定打得到官方頁。」**
+**本批四個號全中，那句話第二次成立：**
+
+| 目錄號 | 卡 | 官方頁多給了什麼 |
+|---|---|---|
+| VICJ-77005 | On Guitar | **整條「ビクター和フュージョン」企劃的規格與兩位監修**（4577）＋「唯一のギター・インスト・アルバム」＋兩首自作曲別版本的稀有性 |
+| VICJ-77031 | Hunt Up Wind | 全套日文曲名 ＋ **〈To Say Goodbye〉的葡萄牙原題「(PRA DIZER ADEOS)」** |
+| VICJ-77044 | But Not For Me | **「初CD化」**（4578）＋ 藝人欄與說明欄兩種漢字並存 |
+| VICJ-77052 | Hip Seagull | **「活動拠点をNYに移したヒノテルが、日本とNYで録音した名盤」**（廠牌自己對兩地錄音的定位） |
+
+**`kingrecords.co.jp/cs/g/g<catno>/` 的命中規律本批也看出來了**：
+**3 個 200 的號（KICJ-2408／2406／2381）全部屬於 2014 年「エレクトリック・バード ベスト・セレクション 1000」企劃**
+（五十張、一律含稅 1100 日圓）；**2 個 404 的號（KICJ-2268／2631）是 2012／2018 年的單張 Seven Seas 再發，不在企劃線上。**
+→ **給後五批：King 盤先看 2014 年有沒有 `KICJ-24xx` 的 Electric Bird 復刻號，有就打得到，而且那條線的商品頁固定有「録音：」一行。**
+⚠ **`kingrecords.co.jp` 的 404 回 14.4 KB**（c-176 b 第 4361 條記的是同一個數字），**一律讀 HTTP status。**
+⚠ **`miqqe.jp` 的 3/5**：njs-842／843／845 中，**njs-815／849 不中**——**它只覆蓋部分 NJS 號段**（見 4567 末段）。
+
+---
+
+## 4586　同名陷阱：本組踩到兩個，全部避開
+
+1. ⚠ ⚠ **`中村哲`**——日文維基的「中村哲」是**消歧義頁**，底下列了七個人：
+   政治學者兼前參議院議員（なかむら あきら）、**サックス奏者・作曲家・アレンジャー的「中村哲 (作曲家)」（なかむら さとし）**、
+   グランジロックバンド的鼓手、計算機科學者、**1908 年生的加拿大出生日裔演員**、經濟學者、
+   以及ペシャワール会 的醫師中村哲（なかむら てつ）。
+   **本盤要的是讀作「さとし」的那一位**（Discogs `artists/143937` 的 realname 逐字「中村哲 (Nakamura Satoshi)」、1954-09-16 生於埼玉）。
+   **派工信第四節「日文維基的樂手查詢一律先確認職業欄」在本批第一次中，而且是七選一。**
+2. ⚠ **`森園勝敏`**——**日文維基沒有他的獨立條目，查詢會被重導到「四人囃子」**（樂隊條目）。
+   **重導本身不是錯的**（他確實是該團 1971 年結成時的吉他手），**但條目裡的作品年表講的是樂隊不是他**：
+   ⚠ **1978 年的《包》已經不是他彈的**（他退團後由佐藤ミツル 接手，《PRINTED JELLY》與《包》都是佐藤時期）——
+   **卡單 `curatorRisk` 逐字寫「發行月（1978-12）甚至與《包》同年」，那句話本身沒錯，
+   但下游若照字面寫成「同年他還出了《包》」就是錯的。** 本層已在該卡 facts 逐字寫明接手的人。
+   他的生日（1954-02-18）同樣只有 Discogs `artists/1286448` 有。
+
+---
+
+## 4587　Discogs 與原廠頁的資料瑕疵一覽（本組實際撞到的）
+
+| 來源 | 瑕疵 | 本層處置 |
+|---|---|---|
+| Discogs releases/6688969（Sailing Wonder） | notes 只寫「Recorded on Nov 15, 1977.」，**把四個半月的錄音期寫成一天** | 取キング 官方頁的區間（4568） |
+| Discogs releases/1263773（Burnin' Waves） | **`companies` 與 `notes` 兩欄全空，沒有任何錄音資訊** | 取キング 官方頁的三天與兩間錄音室（4570） |
+| Discogs written-by 欄（Sailing Wonder） | **無軌限定與有軌限定兩種掛法並列**，只讀後者會誤判作曲歸屬 | 兩種一起讀（4569） |
+| Discogs `released` 欄（五張） | **只有年、沒有月日**，但策展層記成逐日 | 年份照寫、逐日的宣稱撤掉（4575） |
+| `kingrecords.co.jp/cs/g/gKICJ-2408/` | 〈ラスト・タンゴ・イン・メンフィス〉作曲欄逐字「Ｂｏｏｋｅｒ　Ｔ．Ｊｏｎｅｓ, Ｓｔｅｖｅ　Ｃｒｏｐｐｅｒ, Ｄｏｎａｌｄ　“Ｄａｒｋ”　Ｄａｎ, Ｄｏｎａｌｄ　“Ｄｕｃｋ”　Ｄａｎ」——**同一個人被拆成兩筆、姓還拼錯（Dunn→Dan）** | facts 照 Discogs 逐軌欄寫 Donald「Duck」Dunn |
+| `miqqe.jp`（兩頁） | **人名與編制轉錄錯誤兩處**（4582） | 只用發行日／價格／系列／商品解說 |
+| `jvcmusic.co.jp/-/Discography/-/VICJ-77044.html` | **同一頁兩種漢字**（菊地／菊池） | 取卡單與 MB 實體本名的「菊地雅章」 |
+| 日文維基「原信夫」 | 開頭寫「富山県富山市出身」、內文寫「1926年、樺太で誕生」，**兩句對不上** | 只引內文版本，出生地欄不引（4580） |
+
+---
+
+## 4588　獎項：逐項分「得獎／入圍」——本組**五項，四項得獎、一項入圍**
+
+| 卡 | 獎項 | 屆次／年 | 類別 | **得獎或入圍** |
+|---|---|---|---|---|
+| エッセンス | スウィング・ジャーナル 誌ジャズ・ディスク大賞「日本ジャズ賞」（頒給 1975 年的《スピリチュアル・ネイチャー》） | 1975 | 日本ジャズ賞 | **得獎**（日文維基逐字「輝く」；同條另記他得獎次數是日本音樂人最多） |
+| エッセンス | 芸術選奨新人賞 | 1978 | 新人賞 | **得獎**（日文維基逐字「受賞」） |
+| エッセンス | スウィング・ジャーナル「日本ジャズ賞」（頒給佐藤允彦 1969 年的《パラジウム》） | 1969 | 日本ジャズ賞 | **得獎** |
+| Giant Steps | Benny Golson Jazz Master Award（Howard University 頒給 Frank Foster） | 1998 | Jazz Master Award | **得獎** |
+| Burnin' Waves | 葛萊美最佳人聲伴奏編曲獎（Seawind，〈The Devil Is a Liar〉） | 1978 | Best Arrangement Accompanying Vocalist(s) | ⚠ **入圍，未得獎**（英文維基逐字「achieved a Grammy nomination」） |
+
+⚠ **另記兩項不是「獎項」但形狀相近、facts 已分開寫的**：
+Elvin Jones **1995 年入選 Modern Drummer 名人堂**（名人堂收錄，不是年度獎）；
+John Coltrane《Giant Steps》**2004 年被美國國會圖書館選入國家錄音登記簿**（典藏保存，不是獎）。
+⚠ **石岡瑛子 的奧斯卡（第 65 屆衣裝設計）與葛萊美（第 29 屆）都是得獎**，見 4581。
+**本組沒有任何一項「入圍」被寫成「得獎」。**
+
+---
+
+## 4589　反向禁令的分類處理（逐項，15 張全表）
+
+**第一類（與作品直接綁定，寫，並標明時序）**：
+- **富樫雅彦 1970 年 1 月的脊椎損傷與 1973 年 7 月 7 日的舞台復歸**——發生在兩張本作之前，
+  是理解「他為什麼只用雙手演奏」的必要背景，**照實寫但不渲染細節**（沿用 c-176 b 第 4371 條對同一位藝人的同一處理）。
+  ⚠ **只寫在《モーション》，《エッセンス》一句都沒有**（反同構，見 4591）。
+- **富樫雅彦 2002 年引退後專事作曲與繪畫**——與《エッセンス》封面是他自攝這一條直接相連，寫一句並標明是後來的事。
+- **Al Foster 在 Miles Davis 退隱期（1975–1980）仍與他保持聯繫**——那正是《But Not For Me》錄音的年份。
+- **石岡瑛子 日後的奧斯卡與葛萊美**——她在《My Spare Time》的身分就是封套設計者（4581）。
+- **高田英男 2012 年起轉任製作人、成為和フュージョン 復刻線的監修者**——他是《Hunt Up Wind》1978 年的錄音工程師（4577）。
+- **笠井紀美子 1978 年移居洛杉磯**——與《Hip Seagull》的發行同年。
+
+**第二類（與作品無關的後續生平事件，一律不寫）**：
+富樫雅彦 2007 年辭世的經過與 2002 年那場中止的演出、
+鈴木勲 2009 年的南里文雄賞與 2022 年辭世的經過、
+菊地雅章 2015 年辭世的經過、Al Foster 2025 年辭世的經過、Gary Peacock 與 Keith Jarrett 的三十年三重奏（只一句帶過）、
+**高橋幸宏 2023 年辭世**（c-176 b 第 4371 條已逐字列為第二類）、
+高中正義 1981 年的《虹伝説》與八〇年代以後的巡演、
+**本多俊之 1980 年代以後的電影配樂與第 11 屆日本アカデミー賞最優秀音楽賞**、1988 年替尾崎豊 當伴奏、
+村上秀一 2021 年辭世、四人囃子 二十一世紀的再結成、
+浅川マキ 2010 年辭世的經過與 1992 年以後的活動、
+増尾好秋 1980 年代前半再度與 Sonny Rollins 合作、**Sonny Rollins 本人的生卒**、
+高瀬アキ 1988 年定居柏林、橋本一子 1980 年替矢野顕子 代打 YMO 巡演、
+日野皓正 2017 年的暴力事件（c-176 b 第 4371 條已逐字列為第二類）、
+原信夫 2021 年辭世的經過、Frank Foster 1986 年接掌 Basie 樂團、Elvin Jones 1966 年後的 Jazz Machine。
+
+---
+
+## 4590　跨卡串連點（**每一條只能用在一張卡上**，鉤子層分配時當稀缺資源）
+
+本組十五張裡有十一張互相連著，本層已在各卡 `notes` 逐字指定歸屬：
+
+| 串連點 | 配給哪張 | 另一張只能用什麼 |
+|---|---|---|
+| **佐藤允彦 的生平**（柏克萊、《パラジウム》得日本ジャズ賞） | **《エッセンス》**（他在那裡彈鋼琴兼打擊） | 《My Spare Time》只寫他在該盤的編曲兼指揮分工 |
+| 翠川敬基 的生平（貝斯手轉大提琴） | **《エッセンス》** | 《モーション》只寫他在那裡改拉貝斯 |
+| **日野元彦 的生平與十五連霸** | **《My Spare Time》** | 《Hip Seagull》只寫他是日野皓正 的弟弟；《スケッチ》只把他列進編制 |
+| 伊藤潔 是誰（1946 年生於名古屋的爵士製作人） | **《My Spare Time》** | 《But Not For Me》《Hip Seagull》只把他列進製作欄 |
+| 菊地雅章／Al Foster／《WISHES/KOCHI》1976 | **《But Not For Me》** | 《Hip Seagull》不寫這一條 |
+| **「ビクター和フュージョン」四十張復刻線的來歷與監修** | **《On Guitar》**（該線 VICJ-770xx 最早的一張） | 《But Not For Me》《Hip Seagull》《Hunt Up Wind》只提自己的目錄號 |
+| **高田英男：1978 年的錄音工程師＝日後的復刻監修者** | **《Hunt Up Wind》** | 《On Guitar》寫的是企劃本身、不寫這條人物線 |
+| **操上和美 的封面攝影**（同時拍了兩張） | **《Hip Seagull》** | 《Hunt Up Wind》只把他列在設計欄一行 |
+| Patti Austin 同時是兩張碟的（共同）作曲者 | **《Hunt Up Wind》** | 《Burnin' Waves》只把她列在曲目裡 |
+| **「エレクトリック・バード ベスト・セレクション 1000」2014 年復刻線** | 三張各提自己的目錄號，**沒有任何一張重述整條企劃** | — |
+| **川島重行 是誰**（Electric Bird／Sweet Basil／Wave Inc. 的製作人） | **《Bad Anima》** | 《Sailing Wonder》改寫另一位西村ジョージ |
+| **「Electric Bird 是什麼、第一彈藝人是誰」** | **《Sailing Wonder》**（本盤就是 SKS-8001） | 《Burnin' Waves》《Bad Anima》只提自己的號 |
+| Elvin Jones 的生平 | **《Giant Steps》** | 《Sailing Wonder》只寫増尾好秋 1971 年參加過他的碟 |
+| **「同一天、連號 SKS-3002／3003、同一家設計公司 Front Publicity Inc.」** | **《As a Child》** | 《スケッチ》改走池田芳夫 自己的側錄史 |
+| **池田芳夫 的側錄史連到本批三位領銜者**（4579） | **《スケッチ・オブ・マイ・ライフ》** | — |
+| 村上「ポンタ」秀一 的生平 | **c-176 a 的《Introducing 「Ponta」 Murakami》已用掉** | 《Bad Anima》只寫他在本盤只打兩軌電子鼓 |
+| 向井滋春 兼吹浅川マキ 的碟 | **c-176 a 第 4335 條已配給《灯ともし頃》** | 《寂しい日々》只把他列進 B 面編制 |
+
+⚠ **本層刻意不分配的一條**：**Elvin Jones 的哥哥 Thad Jones 寫的〈A Child Is Born〉正是《My Spare Time》A3 那首**
+——**兩張碟之間沒有實際關係，只是巧合**，本層沒有把它寫進任何一張卡的 facts，記在此供鉤子層自行斟酌。
+
+---
+
+## 4591　反同構：**同批兩組雙張 ＋ 跨組三位藝人，軸怎麼分**
+
+派工信第五節點名了本組的重複掛名與跨組重疊。逐一：
+
+1. **`富樫雅彦` 本組兩張 ＋ b 組第三張**（派工信逐字警告「三張的軸要分得開，`facts` 不要都堆同一條生平線」）：
+   - **《エッセンス》(1977-06, YX-7513-ND)**：七人編制、全員兼打擊、**富樫美枝 的葡萄酒杯**、
+     **封面照片是他自己拍的**、佐藤允彦 與豊住芳三郎 的生平。**一句傷病史都沒有。**
+   - **《モーション》(1977-08, YX-7514-ND)**：**1970 年的傷、只用雙手的打擊組、1969 年《アイソレーション》是最後一張四肢演奏的碟、
+     入獄與「新宿の三大天才」**、以及 1977 年的「PCM Operator」職稱。**整條生平線鎖在這一張。**
+   - **b 組《セッション・イン・パリ Vol.1》(1979, GP 3206)**：**請走巴黎與 Don Cherry／Charlie Haden**，
+     ⚠ **不要再寫一次受傷那一段**（本層已在《モーション》的 `notes` 逐字留話給 b 組）。
+2. **`鈴木勲` 本組兩張**：
+   - **《My Spare Time》(1978)**：弦樂編制、七軌全是他人作品、**石岡瑛子 的封套**、**他的生平與 Jazz Messengers**。
+   - **《The Thing》(1979)**：全日本年輕編制、五軌四首他自己寫、**錄完即發**、Flying Disk 三部曲的收尾、
+     廠牌自己那句「美しき問題作」。**一句生平都沒有。**
+3. **`日野皓正`（本組《Hip Seagull》／b 組《City Connection》）**：本卡的軸是**東京與紐約兩段錄音、
+   A 面十六分鐘的單曲、兩位主唱與兩位鼓手**；生平只寫父親日野敏 與弟弟日野元彦 這條家族線。
+   **b 組請走別的軸，不要重寫柏林爵士音樂節與家族線。**
+4. **`本多俊之`（本組《Burnin' Waves》／b 組《Opa Com Deus》）**：本卡的軸是**二十一歲的出道盤、
+   Seawind 整團來東京、上田力 的編曲**；**生平（父親本多俊夫 反對、成蹊大學在學）鎖在本卡。**
+5. **`浅川マキ`（本組《寂しい日々》）與池中既有五張**：c-176 a 的《灯ともし頃》軸是アケタの店 連錄六天、
+   c-176 b 的《流れを渡る》軸是 Langston Hughes 的詩與「日本語詩不是訳詩」——
+   **本卡的軸是「A 面與 B 面兩組完全不同的班底」與「吉野金次 的混音」**，
+   ⚠ **並在 `notes` 逐字警告不要重寫「日本語詩不是訳詩」那條論述**（本盤有兩首確實先經過翻譯者，方向相反）。
+6. **`渡辺貞夫`（本組《Hunt Up Wind》的共同掛名者）**：池中十六列、c-176 b 已寫過三張，
+   **本卡一句渡辺貞夫 的生平都沒有**，他只以「共同掛名、吹三種管、自寫自編〈Pogo〉」的身分出現；
+   生平那一段全部給了福村博（本卡是他在池中的第一張人名字串）。
+
+---
+
+## 4592　`hookCandidates`／`sound`／`keyTracks` 自我檢查
+
+- **`hookCandidates` 每張恰好 2 條，15 張共 30 條，沒有一張超過上限。**
+- **30 條逐條檢查過「是不是只有這張卡能用」**：沒有一條是「日本爵士的黃金年代」這種放諸四海皆準的句子；
+  每一條都綁定本盤的具體事實（葡萄酒杯／PCM 操作員／石岡瑛子／盤名不是那首標準曲／教則本要另外買／
+  A 面只有一首／一天錄完八首／翻到 B 面整組換人／七首只寫三首卻七首全編／美國人唸不出ツカハラ／
+  二十一歲與飛來的美國樂團／三十四年後才補上作曲者／Electric Bird 第一號與 Hendrix 的錄音室／
+  五個人裡第五個不帶樂器／六月錄完六月發行）。
+- **`sound` 每張都是一段、不含任何獎項或商業數字、不含查證過程**；15 段互相讀過一次，
+  **沒有兩段使用同一組形容**（最接近的是《エッセンス》與《スケッチ》都提到「長句／留白」，
+  但前者講的是打擊器的顆粒、後者講的是貝斯在寫結構，切入面不同）。
+- **`keyTracks` 每張 2 首、全部逐字取自盤面曲名**（《エッセンス》取〈Essence〉〈Turning Point〉、
+  《As a Child》取〈As a Child〉照 MB 原盤 title 的小寫 a、〈All In Love Is Fair〉照盤面大寫）。
+- **`facts[].f` 逐條檢查過派工信與 `research-base.md` 禁止的四類內容**：
+  無榜名沿革的括號說明、**無查證過程與研究限制**（「查無可靠來源」「已推翻卡單」這類句子一律只在 `notes`）、
+  無否定敘述（「並非」「不是先…」改寫成正面版本）、無不可靠的序數。
+  ⚠ **唯一的例外是刻意的**：《On Guitar》有一條寫「作曲欄掛的是 Bobby Womack，不是把它唱紅的 George Benson」——
+  **那是一條正面事實加一個必要的對照，不是查證過程**，而且下游若沒有那個對照會再寫錯一次。
+
+---
+
+## 4593　交件自跑的結果、`jp-proper-names.json` 的 append
+
+- **`node qa-batch.mjs research c177`（工作目錄 `desc-tools/`）→ 「全部通過 ✓」**，
+  a 組 15 張全 `full`、b 組 15 張全 `full`、**`key` 與卡單完全一致 ✓、總標記 0**。
+  ⚠ **第一次跑報了 3 個標記，逐一處理如下（全部是本層自己的問題，不是卡單的）：**
+  1. **「簡體字: 点」**——出在《Hip Seagull》引用ビクター 官方頁的那句日文原文「活動拠点をNYに移した…」裡，
+     **`点` 是日文新字體、不是簡體字**。照派工信第七節的規定**把整個專名（這裡是整句原廠文案）append 進
+     `desc-tools/jp-proper-names.json`**，沒有改寫正文規避。
+  2. **「半形逗號貼中文」**——出在《Bad Anima》`notes` 引用キング 官方頁的「中村哲(ts,ac.p,他)」，
+     **逐字引用截短成「中村哲(ts,ac.p…)」**（截短引文不是改寫事實）。
+  3. **「千分位逗號: 4,950、2,515、1,100、2,300、2,500」**——五處日圓金額，
+     **全部改成無逗號寫法（4950／2515／1100／2300／2500 日圓）**，照 `research-base.md`「數字不用千分位逗號」。
+- **本層自己再逐張量過**（不依賴 QA）：**facts 條數 15 張全部是 12**（合計 180 條，落在 8–12 的規定內）；
+  **180 條的 `src` 全部是完整可開啟的 https 網址、零條描述型來源**；
+  **46 個非 Discogs 網址逐一回打、全部 HTTP 200**（Discogs 短網址對程式化 UA 一律 403，照派工信第四節仍寫短網址）；
+  每張的相異來源網域數是 3 到 10；`hookCandidates` 全部 2 條；`status` 與 `coverage` 兩欄同值並存。
+- **`desc-tools/jp-proper-names.json` 的 append（本批唯一動到的第三個檔）**：
+  **既有 39 個字串一字未改、順序未動，四個新字串 append 在陣列尾端**（39 → 43）：
+
+| 新增字串 | 理由 |
+|---|---|
+| `活動拠点をNYに移したヒノテルが、日本とNYで録音した名盤` | 《Hip Seagull》引用的ビクター 官方文案逐字，含新字體 `拠`／`点`（形狀同既有的「朝の都会には乾いた花がよく似合う」） |
+| `高中正義がビクターに残した唯一のギター・インスト・アルバム` | 《On Guitar》引用的ビクター 官方文案逐字 |
+| `エレクトリック・バード ベスト・セレクション 1000` | キング 2014 年復刻企劃的正式名稱，本批三張都用到 |
+| `ADLIB presents ビクター和フュージョン` | ビクター 2016–2017 年復刻企劃的正式名稱，本批四張都用到 |
+
+⚠ **刻意沒有加進去的**：`中村哲`／`相良宗男`／`穴井忠臣`／`平山恵勇`／`加藤崇之`／`曽根陽一郎`／`利根常昭`／`高浪初郎`
+（**是漢字人名、不含新字體，QA 不會誤報**）、`Horn Spectrum`／`SPIN THIS NOW`／`Professional High-technique Series`
+（**是英文系列名與隊名**，照 c-176 第 4081 條末段的同一但書）。
+
+---
+
+## 4594　續跑保護、節流與本層沒有動到的東西（邊界自述）
+
+**續跑保護（派工信第六節）**：**每完成 3 張就把整份結果寫回 `desc-tools/batches/research/c177-a.json`**，
+實際落檔 6 次（3／6／9／12／15 張，另加三次 QA 修正後的重寫）。
+中間狀態存在 scratchpad 的 `c177ra/parts.json`（逐卡片段）與 `p1…p5.json`（分批草稿），
+**容器若在中途重啟，重派同一支代理會先讀 `c177-a.json` 判斷哪幾張已完成再接續**。
+⚠ **判斷檔案在不在一律用 `ls` 與直接讀檔**，本層全程沒有用 `git status` 判斷過任何檔案的存在。
+
+**節流（自述）**：Discogs 免 token、自我節流 3.2 s／次、約 110 次請求、**0 次 429／503**；
+日文與英文維基 0.8 s 間隔、共 69 個條目；`jvcmusic.co.jp`／`kingrecords.co.jp`／`miqqe.jp`／
+`columbia.jp`／`universal-music.co.jp` 五個原廠網域合計 21 次、1.2 s 間隔；
+MusicBrainz 1 次、1 req/s、UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；
+**`itunes.apple.com` 本層 0 次**（策展層已逐張查完寫進卡單）。
+
+**本批只寫了三個檔**：**`desc-tools/batches/research/c177-a.json`（新增）**、
+**本檔的 a 組研究層段落（純追加）**、**`desc-tools/jp-proper-names.json`（只 append 四個字串）**。
+⚠ ⚠ **落檔前照派工信第八節同時跑了 `ls batch-progress/c177/` 與 `git show HEAD:batch-progress/c177/rulings.md`，而且跑了兩次——兩次的結果不一樣，這正是派工信要求兩者都看的原因**（與 a 組策展層第 4393 條末段同一個形狀，本線第三次）：
+**開工時兩邊都是 159349 bytes、逐字相同，檔尾是 b 組策展層的 4425 條，4566–4595 與 4596–4625 兩個區間都還不存在**；
+**真正落檔前再查一次，工作區已經長到 215192 bytes——b 組研究層在本層寫稿期間把 4596–4625 寫進去了**（HEAD 仍停在 159349，主線還沒 checkpoint）。
+→ **本層因此只做純追加（append 到檔尾）**，寫完以 `新檔.startswith(落檔前的原文)` 逐字驗過為 **True**，
+**b 組研究層的 4596–4625 一個字都沒有被碰到**，本節因此排在該區間之後、條號仍是 4566–4595。
+⚠ **給後五批再補一句**：派工信說「判斷檔案在不在要用 `ls`／直接讀檔，不要用 `git status`」——
+**`git show HEAD:` 的結果也會在你跑的時候改變，而且工作區會比 HEAD 更新；落檔前那一次的「工作區原文」才是要拿來驗 prefix 的東西。**
+**未碰** `seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、
+卡單 `desc-tools/batches/cards/c177-cards.json`（唯讀）、**b 組的 `desc-tools/batches/research/c177-b.json`**（唯讀，
+只為跑 `qa-batch.mjs research c177` 時它會一起被掃到）、`batch-progress/c177/prop-*.json`（唯讀）、
+其他批次的任何檔案、KV、Firestore。
+**未執行任何 git 指令**（不 add／不 commit／不 push／未動索引；只跑過唯讀的 `git show HEAD:<檔>`）。
+中間檔全部在 scratchpad 的 `c177ra/`，**檔名一律帶 `c177a-` 前綴**
+（`c177a-fetch.mjs`／`c177a-w1…w9.mjs`／`c177a-sites.mjs`／`c177a-txt.mjs`／`c177a-srccheck.mjs`／
+`c177a-build.mjs`／`cards-a.json`／`parts.json`／`p1…p5.json`／`rulings-4566.md`／`cache/`）。
+
+---
+
+## 4595　**編號區間結算**：本節用到 **4566–4595**（共 30 條），**區間用滿**。b 組研究層用 4596–4625。
+
+**給主線的四件小事（不影響本批交件）**：
+
+1. ⚠ ⚠ **策展層的「N 處逐日相符」這種宣稱要改寫規格**（4575）：本批實測 Discogs API 的 `released` 欄
+   在本組五張碟上**全部只有年**，而卡單第 4383 條記成逐日。**建議把「逐處抄欄位名與原值進 `mbNote`」寫進策展層的固定動作。**
+2. ⚠ ⚠ **羅馬字逆推漢字是本線的系統性錯誤源**（4573／4574）：本批八處人名改判，**八處全部是這個機制**。
+   **建議把「卡單上的日本人漢字名（含樂手、製作人、A&R、工程師、解說者）一律回打 `api.discogs.com/artists/<id>` 的
+   `realname`／`namevariations` 覆核」正式寫進策展層的固定動作**——c-176 a 第 4344 條第 4 點只寫了「樂手」，範圍太窄。
+3. **`kingrecords.co.jp` 的命中規律**（4585）：**2014 年「エレクトリック・バード ベスト・セレクション 1000」那五十張有頁、其餘沒有**，
+   而**有頁的那些固定帶一行「録音：」**——這一行在 Discogs credits 稀薄的 King 盤上常常是唯一來源（4570 就是靠它）。
+   **建議把它與 `jvcmusic.co.jp` 的 `VICJ-770xx` 規律並列寫進後五批的派工信。**
+4. **`大友義雄` 的 `queryAlias` 建議補一個字串**：他 1976 年那張《Oh! Friends》用的片假名是「大友義雄**クアルテット**」，
+   本盤（Apple jp）是「大友義雄**カルテット**」。**卡單取カルテット 沒有問題**（第 4387 條第 11 點的依據成立），
+   **但兩種片假名都在流通，`queryAlias` 值得補上クアルテット**，免得下游反查漏掉他 1976–1977 那兩張。
