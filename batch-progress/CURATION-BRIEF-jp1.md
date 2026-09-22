@@ -175,6 +175,11 @@ RG title 卻取了再發那一筆**。slice 的 `titleCheck` 欄已掛好：
 6. **`releaseType`**：列舉層已濾掉 Compilation／Soundtrack；**`live: true` 的收但要標**（本窗 45 張）。
    ⚠ **第 397 條：`secondary-types` 兩個方向都會漏**——盤名帶「ライヴ」「実況」「at ○○」的要再看一次。
 6b. ⚠ ⚠ **再發版本數一律以 Discogs master 的 `versions` 為準，MB 的 release 數不算數**
+   ——⚠ ⚠ **而且是策展層自己逐筆跑完整張 `versions` 清單**（第 1905-B 條）。
+   **c-176 的策展層這麼做了，結果研究層 12 筆逐筆重跑、改判 0 筆——本線五批以來第一次。**
+   **前四批 71%／75%／47%／54% 的低估不是 Discogs 的問題，是「沒有跑版本表」的問題。**
+   ⚠ **看 master 摘要不算跑版本表**；**沒有 master 頁的，只寫「資料庫裡只有這一筆」，
+   不要寫成「沒有再發」。**
    （第 1879-B 條）。**連續兩批都在這裡出錯**：c-173 的《Charlie Mariano & Sadao Watanabe》
    被寫成「無再發」（Discogs master 644584 實有 10 版，含 1977 美國 Catalyst 盤）；
    c-174 b 組 **7 張有 5 張（71%）低估版本數**——《Bamboo》記 5 版、**實際 15 版**；
