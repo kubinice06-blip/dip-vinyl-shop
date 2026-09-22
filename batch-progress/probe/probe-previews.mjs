@@ -195,7 +195,15 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   c167: BN2K,
   c168: BN2K,
   c169: BN2K,
-  c170: BN2K };
+  c170: BN2K,
+  // ⚠ 2026-09-22（主線第 1943-B 條）：**jp-1 線（日本爵士四大廠）十批一直沒登記，整條線都落到 `GEN`**
+  // （`GEN` 是 `us` 先、`jp` 排第三）。實測後果兩面都有：
+  //   精準度——`MALTA《Malta》` 在 gb 配到瑞典流行團 Malta 的同名碟（℗1973 Parlophone Sweden、曲目全是瑞典文），
+  //            `Native Son《Coast to Coast》` 配到蘇格蘭廠牌、`富樫雅彦〜高柳昌行` 配到美國歌手 JoJo；
+  //   召回率——`阿川泰子《Night Line》` 的 2016 ビクター 數位版在 jp 與 us 都有，卻先在 us 配到別張二合一。
+  // 這是**日本國內盤的線**，`jp` 必須排第一。
+  c173: JPN, c174: JPN, c175: JPN, c176: JPN, c177: JPN,
+  c178: JPN, c179: JPN, c180: JPN, c181: JPN, c182: JPN };
 
 const cards = [];
 for (const b of BATCHES)
@@ -416,7 +424,43 @@ for (const c of cards) {
     const drift = x => (c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0);
     const rank = x => ({ explicit: 0, notExplicit: 1, cleaned: 2 }[x?.collectionExplicitness] ?? 1);
     hits.sort((x, y) => (deco(x) - deco(y)) || (drift(x) - drift(y)) || (rank(x) - rank(y)));
+
+    // ⚠ 2026-09-22 第二版（主線第 1942-B 條）：第三、四道原本寫在「選完 best、查完 lookup」之後，
+    // 退掉就 `continue` 換下一個 storefront——**於是同一個 storefront 剩下的候選一起被丟掉。**
+    // c-179 `阿川泰子《Night Line》` 在 jp 有四筆候選、正解就在裡面，
+    // 卻因為排序後的第一筆（`Sunglow/Yasuko, Love-Bird` 那張二合一）被退而整批放棄。
+    // → 改成**排序後當過濾器**：退掉的那筆剔除、換下一筆，整批都被剔除才換 storefront。
+    // 這兩道只需要 search 結果就有的三個欄位，所以也省掉一次 lookup。
+    const coreTitles = new Set([canon(c.album), canon(translit(c.album))]);
+    const judge = x => {
+      const gt = x.collectionName || '', ga = x.artistName || '';
+      const tw = albumCands.filter(a => titleOk(a, gt, !!c.selfTitled));
+      if (looseTitleOk(c.album, gt, !!c.selfTitled)) tw.push(c.album);
+      const aliasOnly = tw.length > 0 && tw.every(t => !coreTitles.has(canon(t)));
+      if (!aliasOnly) return { ok: true, aliasOnly };
+      const sameNameEntry = canon(gt) === canon(ga) && canon(c.artist) !== canon(ga);
+      const yd = c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0;
+      const fragment = tw.every(t => canon(t) !== canon(gt) && canon(gt).includes(canon(t)));
+      if (sameNameEntry) return { ok: false, aliasOnly, why: 'aliasOnlyTitle＋盤名掛名同名' };
+      if (fragment && yd > 3) return { ok: false, aliasOnly, why: 'aliasOnlyTitle＋證人只是片段＋年份漂移' };
+      return { ok: true, aliasOnly };
+    };
+    const dropped = [];
+    const kept = [];
+    for (const x of hits) {
+      const v = judge(x);
+      if (v.ok) { kept.push({ x, aliasOnly: v.aliasOnly }); continue; }
+      dropped.push({ why: v.why, collectionId: x.collectionId, appleTitle: x.collectionName,
+                     appleArtist: x.artistName, appleYear: String(x.releaseDate || '').slice(0, 4) });
+    }
+    if (!kept.length) {
+      if (dropped.length) rec.rejectedMatch = dropped[0];
+      rec.tried.push(`${front}:第1935-B條退${dropped.length}筆`);
+      continue;
+    }
+    hits = kept.map(k => k.x);
     let best = hits[0];
+    const bestAliasOnly = kept[0].aliasOnly;
     // 排序後最好的還是 cleaned → 回藝人頁找同名同軌數的 explicit 雙胞胎（見上方註解）。
     if (best?.collectionExplicitness === 'cleaned') {
       const tw = await explicitTwin(best, front, albumCands, !!c.selfTitled);
@@ -442,42 +486,10 @@ for (const c of cards) {
     DECO.lastIndex = 0;                                 // 全域旗標的正規式要自己歸零
     const yd = c.year ? Math.abs(Number(rec.appleYear) - c.year) : 0;
     if (yd > 3) { rec.yearDrift = yd; rec.reissueTitle = isReissue; }
-    // ⚠ 只報不擋的旗標（主線第 1935-B 條）：盤名那一關**沒有任何「卡片本身的盤名」當證人**、
-    // 整個靠 `queryAlias` 的某一段過關時標起來。真的再發（`The Good Bad Girl+6`、`IQ-179`）也會中，
-    // **所以不擋**；但「掛名的別名頂了盤名那一關」那種錯配也只剩這一個外顯特徵。
-    // 年份漂移大又只有別名證人的，研究層要逐張回查。
-    {
-      const gt = best.collectionName || '';
-      const coreT = new Set([canon(c.album), canon(translit(c.album))]);
-      const tw = albumCands.filter(a => titleOk(a, gt, !!c.selfTitled));
-      if (looseTitleOk(c.album, gt, !!c.selfTitled)) tw.push(c.album);
-      if (tw.length && tw.every(t => !coreT.has(canon(t)))) rec.aliasOnlyTitle = true;
-      // ⚠ 第三、四道（同一條裁定）：`aliasOnlyTitle` 自己不擋，但它加上另外兩個特徵就擋。
-      // (3) **Apple 那一筆的盤名與掛名逐字相同，而卡片的掛名不是它**
-      //     —— `富樫雅彦〜高柳昌行《パルセーション》→ JoJo /《JoJo》`：
-      //     綽號 `Jojo` 過了盤名那一關，掛名那一關則由更長的 `Masayuki “Jojo” Takayanagi` 頂過去，
-      //     兩個證人「不同」，所以第二道抓不到。自我同名卡（`Spectrum《Spectrum》`）掛名對得上，不受影響。
-      // (4) **盤名那一關的證人只是 Apple 盤名的一小段，而年份又差超過三年**
-      //     —— 五張浅川マキ 的碟全被配到同一張《Asakawa Maki No Sekai》（別名裡的羅馬字藝名頂了盤名那一關）。
-      //     真的再發（`The Good Bad Girl+6`／`IQ-179`／`Anokoro`）證人與 Apple 盤名是**逐字相等**的，不受影響。
-      if (rec.aliasOnlyTitle) {
-        const ga = best.artistName || '';
-        const sameNameEntry = canon(gt) === canon(ga) && canon(c.artist) !== canon(ga);
-        const drift = c.year && rec.appleYear ? Math.abs(Number(rec.appleYear) - c.year) : 0;
-        const fragment = tw.every(t => canon(t) !== canon(gt) && canon(gt).includes(canon(t)));
-        if (sameNameEntry || (fragment && drift > 3)) {
-          // 被這兩道退掉的，**把配錯的那一筆整組搬到 `rejectedMatch`**，
-          // 不要留在 `appleTitle`／`appleArtist` 欄——留著會讓下游以為它還是這張碟的資料。
-          rec.rejectedMatch = { why: sameNameEntry ? 'aliasOnlyTitle＋盤名掛名同名' : 'aliasOnlyTitle＋證人只是片段＋年份漂移',
-            collectionId: rec.collectionId, appleTitle: rec.appleTitle, appleArtist: rec.appleArtist, appleYear: rec.appleYear };
-          rec.front = undefined; rec.status = undefined; rec.previewUrl = undefined;
-          rec.collectionId = undefined; rec.appleTitle = undefined; rec.appleArtist = undefined;
-          rec.appleYear = undefined; rec.trackCount = undefined; rec.explicitness = undefined;
-          rec.yearDrift = undefined; rec.reissueTitle = undefined; rec.aliasOnlyTitle = undefined;
-          continue;
-        }
-      }
-    }
+    // ⚠ 只報不擋的旗標：盤名那一關**沒有任何「卡片本身的盤名」當證人**、整個靠 `queryAlias` 的某一段過關。
+    // 真的再發（`The Good Bad Girl+6`、`IQ-179`、`Anokoro`）也會中，**所以不擋**；
+    // 它只提示研究層回查。擋人的是上面那兩道，寫在排序之後、lookup 之前。
+    if (bestAliasOnly) rec.aliasOnlyTitle = true;
     rec.status = rec.previewUrl ? 'ready' : 'no-preview';
     // 同一張碟在不同 storefront 的試聽授權不一樣（2026-09-02，c-53 實測）：
     // Матвеева《Какой большой ветер》的 collectionId 1509982713 在 de 有 .m4a、在 us 沒有。
