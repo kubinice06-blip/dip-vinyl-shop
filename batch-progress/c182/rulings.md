@@ -1987,3 +1987,444 @@ c-179 第 4940／4945 條把成因 1 的對照組做成「同廠同期在不在�
 **臨時腳本與中間檔一律放在 scratchpad 的 `c182rec/` 底下。**
 ⚠ **append 前照派工跑過 `git show HEAD:batch-progress/c182/rulings.md` 與 `ls` 兩者**：
 兩邊都停在第 5218 條、1666 行，**工作區沒有別人未提交的段落**；本層只在檔尾 append，未改動任何既有行。
+
+---
+
+# a 組研究層（5366–5395）
+
+批次 c-182｜a 組 12 張（收件全表）｜研究層｜2026-09-22
+輸入：`desc-tools/batches/cards/c182-cards.json` 的 `group === "a"` 12 筆（⚠ 分組欄位逐字是 `group`，不是 `g`）
+輸出：`desc-tools/batches/research/c182-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含開頭「雲端 Blue Note 線的三處例外」：產出直接寫進 repo、
+每張 8–12 條 `facts` ＋ 完整 https `src`、`key` 從卡單逐字複製、`status` 與 `coverage` 兩欄並存），
+判準沿用 `batch-progress/CURATION-BRIEF-jp1.md` 第〇節與一之二節、`batch-progress/c182/rulings.md` 的 a 組策展層（5166–5195）與回撈層（5426–5455）、
+主線 `batch-progress/c163/rulings-mainline.md` 第 1934-B 至 1946-B 條，以及 `batch-progress/c178/rulings.md` 的兩段研究層（4776–4805／4806–4835）。
+
+## 5366　總表：**12 張，facts 合計 144 條、每張恰好 12 條；full 12、thin 0**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---|---|---:|---|---|
+| 1 | 高中正義 —《Rendez-Vous》 | 12 | full | 封面攝影是 Lynn Goldsmith、混音在 Compass Point——一張日本盤的製作地圖橫跨三地 |
+| 2 | 本多俊之 —《Radio Club》 | 12 | full | ⚠ **推翻卡單人名：`是則克仁` → `是方博邦`**；第 2 軌是《マルサの女》的主題曲 |
+| 3 | 加藤和彦 —《Maltese Falcon》 | 12 | full | ⚠ ⚠ **Carlo Savina 是他的老師**——卡單只把他當成「義大利電影音樂編曲家」 |
+| 4 | 浅川マキ —《Underground》 | 12 | full | ⚠ ⚠ **盤上的 Bobby Watson 是 Rufus 的貝斯手，不是同名的爵士中音薩克斯手** |
+| 5 | 浅川マキ —《こぼれる黄金の砂 -What it be like-》 | 12 | full | A3 的底是 Daryl Hall 1986 年的〈Dreamtime〉，他獨唱唯一一首美國前十單曲 |
+| 6 | 鈴木茂 —《Sunset Hills Hotel Reservation Calendar》 | 12 | full | ⚠ **推翻兩處、退掉一處人名**；盤面另有卡單沒列到的七行合成器 |
+| 7 | ジョージ川口 —《George Kawaguchi Plays Herbie Hancock》 | 12 | full | ⚠ ⚠ **三位紐約樂手是同一支五重奏**，不是各自找來的「新人」 |
+| 8 | 山形由美 —《wind for mind》 | 12 | full | ⚠ **2008 年 King 復刻那條線索查到不成立**，零復刻的說法保住 |
+| 9 | John Kaizan Neptune —《Tokyosphere》 | 12 | full | ⚠ ⚠ **推翻卡單人名：`片田博光` → `堅田啓光`**（姓與名都錯） |
+| 10 | MALTA —《Obsession》 | 12 | full | ⚠ **1978 年他參與過 Mingus 的最後兩場錄音**；前一張拿下第 1 屆日本ゴールドディスク大賞 |
+| 11 | MALTA —《My Hit & Run》 | 12 | full | ⚠ ⚠ **十首重錄的原版全部在池中，不是卡單說的四首**；選曲理由是香菸廣告 |
+| 12 | 益田幹夫 —《Smokin' Night》 | 12 | full | ⚠ **推翻卡單人名：`川原英雄` → `河原秀夫`**（與 c-178《Sunburst》同一個人） |
+
+**thin 0 張。** 每張的 `src` 相異網域數是 2 到 4；`node qa-batch.mjs research c182` 逐項通過（a 12 full、key 與卡單完全一致）。
+
+---
+
+## 5367　⚠ 再發版本數：**12 張逐筆重跑 `masters/<id>/versions`（`per_page=100`），數字改判 0 筆；內容也沒有補到版**
+
+派工信第二節逐字說「本批策展層已經跑過版本表」「重點不是重數一次，是『數字對不等於內容全』」。**逐筆重跑的結果與第 5176 條完全一致：**
+
+| 碟 | master | 卡單記 | 本層重跑 | 差 |
+|---|---:|---:|---:|---:|
+| Rendez-Vous | 1098761 | 6 | **6** | 0 |
+| Radio Club | 1720665 | 3 | **3** | 0 |
+| Maltese Falcon | 762968 | 3 | **3** | 0 |
+| Underground | 1120912 | 5 | **5** | 0 |
+| こぼれる黄金の砂 | 1130676 | 5 | **5** | 0 |
+| Sunset Hills Hotel… | 668009 | 7 | **7** | 0 |
+| George Kawaguchi Plays… | 1070740 | 8 | **8** | 0 |
+| wind for mind | 1702864 | 4 | **4** | 0 |
+| Tokyosphere | 1303975 | 5 | **5** | 0 |
+| Obsession | 560404 | 8 | **8** | 0 |
+| My Hit & Run | 1654360 | 3 | **3** | 0 |
+| Smokin' Night | 1056650 | 6 | **6** | 0 |
+| **合計** | | **63** | **63** | **0** |
+
+→ **c-176 a 第 4317 條、c-177 a 第 4567 條、c-178 第 4777 條的結論在本批第四次成立**：策展層自己跑完版本表之後，研究層的重跑就是純覆核。
+
+⚠ ⚠ **但派工信第二節警告的那個形狀（「Discogs 版本表自己是舊的」，本線已經第三次）本組零命中，而且本層是查到不成立為止、不是沒查**——
+**逐張打過八個原廠網域裡與本組有關的五個，實測結果見第 5385／5386／5387 條。**
+**本組 12 張裡唯一一條真的有機會推翻版本數的線索是 #8《wind for mind》的「2008 年 King 復刻」（第 5387 條），四處查完不成立。**
+
+---
+
+## 5368　⚠ ⚠ **推翻策展層總表：本組 6 處人名 ＋ 3 處判斷 ＝ 9 處**
+
+| # | 卡 | 被推翻的是什麼 | 依據 | 條號 |
+|---:|---|---|---|---|
+| 1 | Radio Club | 吉他手「是則克仁」→ **是方博邦** | Discogs credit 逐字 `Hirokuni Korekata` ＋ ja 維基職業欄 | 5369 |
+| 2 | Smokin' Night | 低音提琴「川原英雄」→ **河原秀夫** | `api.discogs.com/artists/788557` 的 `realname` | 5370 |
+| 3 | Tokyosphere | 打擊「片田博光」→ **堅田啓光** | `api.discogs.com/artists/623517` 的 `realname`／`namevariations` | 5371 |
+| 4 | Sunset Hills… | 電貝斯「高水健三?／髙水健司」→ **高水健司**（定案） | `api.discogs.com/artists/143940` 的 `realname` | 5372 |
+| 5 | Sunset Hills… | 薩克斯「土岐英二」→ **整格不寫漢字** | `api.discogs.com/artists/2958577` 兩欄全空 | 5373 |
+| 6 | My Hit & Run | 貝斯「山本知彦」→ **山本智彦** | `api.discogs.com/artists/4520020` 的 `namevariations` | 5374 |
+| 7 | George Kawaguchi Plays… | 「Cyrus Chestnut 還在讀 Berklee」→ **1985 年就已畢業** | en 維基 | 5375 |
+| 8 | My Hit & Run | 「四首的原版在池中」→ **十首全部** | 五張原版盤的 Discogs master 曲目表 | 5376 |
+| 9 | Underground | 吉他手寫成羅馬字 `June Yamagishi` → **山岸潤史** | `api.discogs.com/artists/642011` 的 `realname` | 5377 |
+
+⚠ **形狀與 c-177 a 第 4597 條、c-178 a 第 4785 條一致**：**六處人名改判裡有五處出自同一個機制——`api.discogs.com/artists/<id>` 的 `realname`／`namevariations`**（第 1890-B 條的第四條路），**連七批命中。**
+⚠ **本線單批推翻數的排名**：c-178 研究層的 27 處仍是最高，c-177 a 的 20 處次之，**本組 9 處是中段**——成因很明確：**本批的策展層自己跑完了版本表與逐軌 credits，剩下能推翻的幾乎只有人名與外部背景。**
+
+---
+
+## 5369　⚠ ⚠ 推翻第一處：`本多俊之 —《Radio Club》` **吉他手不是「是則克仁」，是是方博邦**
+
+卡單 `curatorWhy` 逐字寫「**是則克仁（吉他，notes 逐字「by the Courtesy of Kitty Records」）**」。
+**Discogs releases/15141675 的 credits 欄逐字是「Hirokuni Korekata — Guitar」**，
+**ja 維基的職業欄逐字是「是方 博邦（これかた ひろくに、1955年3月3日 - ）は、日本のギタリスト。大阪府出身、兵庫県神戸市育ち。通称コレちゃん」**
+——**羅馬字逐字相符、職業相符、Kitty Records 那一層也相符**（他正是 Kitty 線上的吉他手）。
+**「是則克仁」三種寫法在 Discogs／MB／ja 維基三處全部查無此人。**
+→ **本卡一律作是方博邦。**
+⚠ **同一筆還有一處資料庫自己的不一致要記**：**盤面的 notes 欄逐字寫「Hiroyuki Korekata by the Courtesy of Kitty Records, Inc.」，credits 欄逐字寫「Hirokuni Korekata」——同一張碟的兩個欄位把同一個人的名拼成兩種**，本層兩處都逐字記在卡的 `notes` 裡。
+（可逆性：改的是研究稿的一個字串，不動卡池結構——照裁定權下放第 2 條直接定。）
+
+## 5370　⚠ ⚠ 推翻第二處：`益田幹夫 —《Smokin' Night》` **低音提琴不是「川原英雄」，是河原秀夫**
+
+卡單 `curatorWhy` 逐字寫「**川原英雄（低音提琴）**」。
+**`api.discogs.com/artists/788557` 的 `realname` 欄逐字是「Hideo Kawahara (河原 秀夫)」、`namevariations` 逐字只收一個「河原秀夫」、profile 逐字「Japanese Bassist.」。**
+→ **姓是河原不是川原、名是秀夫不是英雄。**
+⚠ ⚠ **同一個人、同一個機制在本線已經是第二次**：**c-178 a 第 4780 條的研究層把《Sunburst》的客座貝斯手從卡單的寫法改判成河原秀夫，依據逐字也是 Discogs 的原壓 credits。**
+→ **給主線與 c-183 之後的批次：`河原秀夫` 這個名字在本線的日本爵士錄音裡會反覆出現，卡單側連兩次寫成別的漢字，建議列進常錯名單。**
+（可逆性同 5369。）
+
+## 5371　⚠ ⚠ 推翻第三處：`John Kaizan Neptune —《Tokyosphere》` **打擊不是「片田博光」，是堅田啓光；而且 1991 復刻印的是另一個人**
+
+卡單 `curatorWhy` 與 `mbNote` 逐字把 1988 年原壓的打擊手寫成「**片田博光**」，並且已經誠實記下「1988 原壓逐字 `Hiromitsu Katada`、1991 復刻逐字 `Hiromitsu Nishikawa [西川啓光]`，讀音相同但姓不同」這個衝突，也逐字寫「第 1890-B 條第四條路在本筆沒有解掉這一格」。
+**本層打了那一條路，解掉了一半：**
+**`api.discogs.com/artists/623517` 的 `realname` 欄逐字是「中沢啓光 Nakazawa Hiromitsu」、`namevariations` 逐字是
+`["Harumitsu Katada","Keik Katada","堅田ひろみつ","堅田啓光","堅田啓照","堅田啓輝"]`、
+profile 逐字是「Hiromitsu Katada is a Japanese percussionist, drummer, music historian, author and instructor. Katada is the alias of [a2411876] after 1970.」；
+而 `api.discogs.com/artists/2411876` 的 `namevariations` 逐字是 `["Nakazawa Hiromitsu","中沢啓光"]`、profile 逐字說他是 GS 樂團 Out Cast 的前成員。**
+
+→ **1988 年原壓那一行的漢字是「堅田啓光」——姓是堅田不是片田、名是啓光不是博光，卡單兩個字都錯。**
+⚠ ⚠ **另一半本層不強行解**：**`Hiromitsu Nishikawa`（artists/1689928）是 Discogs 上獨立的另一個藝人實體，`namevariations` 逐字只有「西川啓光」**，
+**而 1991 復刻的盤面逐字並印「西川啓光」**——**兩邊都是盤面直證，一邊是 1988 的原壓、一邊是 1991 的復刻。**
+**本層的處置：facts 裡兩筆並記、不裁哪一個對；卡的 `notes` 逐字寫明「兩個壓次寫的是兩個不同的人，而且 Discogs 建成兩個實體」。**
+→ ⚠ **給主線**：**若日後要在正文裡點名這位打擊手，只能寫 1988 原壓那一筆的堅田啓光，並帶上「原壓」兩個字**；
+**要合併兩個實體需要盤外證據（例如本人或廠牌的說明），本層查不到。**
+（可逆性：改的是研究稿的字串與一條並記，不動卡池結構——照裁定權下放第 2 條直接定；**但本層請主線知道這一格是未閉合的。**）
+
+## 5372　推翻第四處：`鈴木茂 —《Sunset Hills Hotel Reservation Calendar》` **電貝斯的「高水健三?」定案為高水健司**
+
+卡單 `curatorWhy` 的編制列逐字寫「**高水健三?／髙水健司**」——**帶著問號、兩種寫法並列，是策展層自己標明沒有定案的一格。**
+**`api.discogs.com/artists/143940` 的 `realname` 欄逐字是「Takamizu Kenji = 高水健司 (たかみず けんじ)」、profile 逐字「♂ Japanese jazz bassist. Born March 29, 1951 in Kobe, Hyogo, Japan.」、`namevariations` 二十串裡「高水健司」逐字在列（另有 `高水健二`／`高水健次`／`高山健司`／`高水建司`／`高水憲司` 等明顯的誤植變體）。**
+→ **定案為高水健司，生年與出身地一併補進 facts。**
+⚠ **`namevariations` 裡那一串誤植變體本身就是一條提醒**：**這個名字在日本盤上被拼錯過至少五種寫法，往後撞到 `Kenji Takamizu` 一律回打藝人頁，不要照盤面抄。**
+（可逆性同 5369。）
+
+## 5373　⚠ ⚠ 推翻第五處（**退成不寫**）：`Sunset Hills Hotel Reservation Calendar` 的薩克斯 **「土岐英二」三個字本層不採用，也不改寫成別的漢字**
+
+卡單 `curatorWhy` 逐字寫「**土岐英二 與 Jake H. Concepcion（薩克斯）**」，第 5185 條的三肢表裡也逐字寫「土岐英二」。
+**Discogs releases/4083687 的 credits 欄逐字是「Eiji Toki — Saxophone」，藝人實體是 artists/2958577。**
+**本層打了那一頁：`realname` 與 `namevariations` 兩欄全空，profile 只有一句「Eiji Toki is a Japanese Saxophonist.」——第 1890-B 條的第四條路在這一筆完全落空。**
+**而池中的土岐英史（ja 維基逐字「とき ひでふみ、1950年2月1日 - 2021年6月26日」）羅馬字是 `Hidefumi Toki`，與 `Eiji Toki` 對不上。**
+→ **三種可能都不能排除**：(a) 是另一位同姓的薩克斯手；(b) 是盤面把 `Hidefumi` 誤植成 `Eiji`；(c) Discogs 建了一個重複實體。
+→ **照研究層通則「查不到不要編」，本卡的薩克斯只寫羅馬字掛名 `Eiji Toki`、不寫任何漢字**，並在 `notes` 逐字寫明三種可能與排除不了的理由。
+⚠ ⚠ **這一條要記給主線，因為它與第 1936-B 條第三點（`酒巻昇吾`／`坂巻昌吾`／`坂巻祥吾` 一律回打 Discogs 藝人頁定案，查不到就退成不寫）是同一個形狀的第二個實例**——
+**該條逐字說「下一次撞到時由研究層打 Discogs 藝人頁定案，查不到就退成不寫，不要三選一猜」，本層照辦。**
+（可逆性：退成不寫的成本只是少一個名字，比寫錯低——照裁定權下放第 2 條直接定。）
+
+## 5374　推翻第六處：`MALTA —《My Hit & Run》` **貝斯是山本智彦，不是「山本知彦」**
+
+卡單 `curatorWhy` 與 `curatorRisk` 兩處逐字都寫「**山本知彦（貝斯）**」。
+**`api.discogs.com/artists/4520020` 的 `namevariations` 逐字是 `["山本智彦"]`（`realname` 與 profile 兩欄空白）。**
+→ **本卡作山本智彦。**
+⚠ **本層把證據強度誠實標出來**：**這一筆只有 `namevariations` 一個欄位支撐，沒有第二來源**（ja 維基查無此人、jvcmusic 與 miqqe 都沒有他的頁）；
+**依第 1890-B 條，`namevariations` 是本線指定的第四條路而且連五批命中，本層採用它；但若主線要更硬的收尾，這一格值得回頭再驗一次。**
+（可逆性同 5369。）
+
+## 5375　推翻第七處：`George Kawaguchi Plays Herbie Hancock` **Cyrus Chestnut 1987 年不是「還在讀 Berklee」**
+
+卡單 `curatorRisk` 逐字寫「**Terence Blanchard 與 Donald Harrison 當年剛離開 Art Blakey 的樂團、Cyrus Chestnut 還在讀 Berklee**」。
+**en 維基逐字：「In 1985, Chestnut earned a degree in jazz composition and arranging from Boston's Berklee College of Music.」**
+→ **本盤錄音的 1987 年 7 月 31 日，他已經畢業兩年、是職業樂手。**
+⚠ **同一段裡卡單的另外兩項成立**（Blanchard 與 Harrison 1986 年離團屬實），**但本層另外補了一件更關鍵的**，見 5381。
+（可逆性同 5369。）
+
+## 5376　⚠ ⚠ 推翻第八處，**本組最重要的一處**：`MALTA —《My Hit & Run》` **十首重錄的原版全部在池中，不是卡單說的四首**
+
+派工信第五節第 2 點逐字要求「`facts` 要把『哪幾軌是重錄、原版出自哪張』查清楚寫明」。**本層逐首回查五張原版盤的 Discogs master 曲目表，十首全部有出處：**
+
+| 本盤軌 | 原版出處 | 該碟上的位置 |
+|---|---|---|
+| Sweet Magic II | **《Sweet Magic》1984（master 690059）** | A1 |
+| Manhattan In Blue II | **《Sweet Magic》1984（master 690059）** | B3 |
+| Summer Dreamin' II | **《Summer Dreamin'》1985（master 895041）** | A1 |
+| Morning Flight II | **《Summer Dreamin'》1985（master 895041）** | A2 |
+| Sea Express II | **《Summer Dreamin'》1985（master 895041）** | A3 |
+| Scramble Avenue II | **《SPARKLING》1986（master 1096703）** | A2（Power Side） |
+| Sexy Galaxy II | **《SPARKLING》1986（master 1096703）** | A4（Power Side） |
+| High Pressure II | **《High Pressure》1987（master 567208）** | A1（同名曲） |
+| Obsession II | **《Obsession》1988（master 560404）** | A2（同名曲） |
+| Lucky Seven II | **《Obsession》1988（master 560404）** | B1 |
+
+**卡單 `curatorRisk` 逐字寫「其中四首的原版正是本線已經收進卡池的碟上的曲」並列了四張碟（Sweet Magic／Summer Dreamin'／High Pressure／Obsession）。**
+⚠ ⚠ **實測是十首全中**：**卡單自己的實掃結果逐字寫「池中已有 c-179《Malta》1983／c-180《Sweet Magic》1984／c-181《Summer Dreamin'》1985／《Sparkling》1986／《High Pressure》1987」——`Sparkling` 也在池裡**，
+**而《Obsession》就是同批的 #14。五張原版盤全部在池中，所以十首重錄曲的原版一首不漏地全部在池中。**
+⚠ ⚠ **而且最近的一組距離只有七個月**：**〈Obsession II〉與〈Lucky Seven II〉的原版是 1988-05-11 的《Obsession》，本盤是 1988-12-07。**
+→ ⚠ ⚠ **給下游寫作層的硬限制（本層把卡單的 `risk` 加重）**：
+**〈Sweet Magic〉〈Manhattan In Blue〉〈Summer Dreamin'〉〈Morning Flight〉〈Sea Express〉〈Scramble Avenue〉〈Sexy Galaxy〉〈High Pressure〉〈Obsession〉〈Lucky Seven〉十首一律不得當成本盤的新曲介紹**，
+**凡提到必須帶「重錄」兩個字與原版的年份。兩軌新曲逐字是〈Dancing Makes You Smile〉與〈Zoom〉。**
+→ ⚠ **給主線**：**第 1944-B 條第 4 點逐字說「這是六道 dedup 全部抓不到的新盲點……記給本機，上傳時人工看一眼那四張」——本層把「那四張」更正為「那五張」**
+（`Sweet Magic`／`Summer Dreamin'`／`Sparkling`／`High Pressure`／`Obsession`）。
+（可逆性：改的是研究稿與下游的行文限制，不動卡池結構——照裁定權下放第 2 條直接定。）
+
+## 5377　推翻第九處（寫法）：`浅川マキ —《Underground》` 的吉他手 **取漢字山岸潤史，不取盤面的羅馬字**
+
+卡單逐字寫「**June Yamagishi（吉他）**」並把他列在「日本人」那一側。
+**`api.discogs.com/artists/642011` 的 `realname` 逐字是「山岸潤史 (Junshi Yamagishi)」、`namevariations` 逐字含「山岸潤史」「山岸潤士」；ja 維基逐字「山岸 潤史（やまぎし じゅんし、1953年6月6日 - ）は、三重県伊勢市生まれの米国ルイジアナ州ニューオーリンズを拠点に活動するギタリスト」。**
+→ **依 2026-08-11 東亞藝人名裁定（日本音樂人照原文漢字寫），本卡作山岸潤史**；**盤面用的是羅馬字藝名 `June Yamagishi` 這件事本身有意義，facts 裡並記。**
+（可逆性同 5369。）
+
+## 5378　補充（不是推翻，是呈現方式）：`加藤和彦 —《Maltese Falcon》` **節奏組只出現在三軌，不是一組固定編制**
+
+卡單 `curatorWhy` 把「加藤和彦（鋼琴・Fairlight・短號）、清水靖晃、大村憲司（吉他）、Ray Ohara（貝斯）、高橋幸宏（鼓）」列成一組演奏編制。
+**逐軌 credits（2009 復刻 releases/9008271）逐字顯示**：
+**Ray Ohara 的貝斯只在第 4／5／8 軌、高橋幸宏 的鼓只在第 5／8 兩軌、大村憲司 的吉他只在第 4／5 兩軌；
+第 9 軌〈Just A Sympathy〉逐字只掛他一個人的鋼琴；第 1／6 兩軌是 Carlo Savina And His Orchestra；
+第 3／7／10 三軌逐字是「Arranged By: The Saxophonettes／Yasuaki Shimizu」＋清水靖晃 一人的多管樂器。**
+→ **這張碟不是五個人一起錄的，是三種編制拼起來的十個短篇。行文若寫成「這五個人錄了這張碟」會失真。**
+⚠ **本層沒有把它算進第 5368 條的推翻數**——**卡單列的人名一個都沒錯，錯的是讀法**；記在這裡是為了下游行文。
+
+## 5379　⚠ ⚠ **本組最值錢的一格**：`Maltese Falcon` 的兩軌義大利管弦樂 **是他師父的樂團**
+
+卡單 `curatorRisk` 逐字把 Carlo Savina 稱作「**義大利電影音樂編曲家**」，並以此論證外國藝人那一關不啟動。
+**ja 維基的加藤和彦 條目逐字寫：「作曲家カルロ・サヴィーナ (Carlo Savina)に師事して音楽理論、オーケストレーションを学び、1980年代から映画・舞台音楽……を幅広く手がけていた」。**
+→ ⚠ ⚠ **他不是外包來的編曲家，是加藤和彦 本人學管弦配器法的老師。**
+**這條同時解釋了三件卡單沒有解釋的事**：**(1) 一張日本盤為什麼會有兩軌在巴黎錄；(2) 為什麼是管弦樂而不是爵士大樂團；(3) 加藤和彦 1980 年代開始接電影與舞台音樂的來歷。**
+⚠ **Carlo Savina 的身分另查一次補足**（en 維基逐字）：**1919-08-02 至 2002-06-23 的義大利作曲家兼指揮，是《教父》(1972)、《阿瑪珂德》(1973)、《大熊》(1988) 的音樂總監，合作過 Ennio Morricone、Nino Rota、Miklós Rózsa。**
+→ **facts 裡三條相關的格子（師承、Savina 的身分、逐軌的三種編曲分工）都寫足了，下游可以直接用。**
+
+## 5380　⚠ ⚠ **第二值錢的一格，而且它是一個防錯**：`Underground` 的 Bobby Watson **不是那位爵士中音薩克斯手**
+
+卡單在 `curatorWhy`／`curatorRisk`／第 5179 條的外國藝人表裡，一律只寫「Bobby Watson（貝斯・鍵盤・製作・全張作曲）」——**沒有指出他是誰，也沒有指出他不是誰。**
+⚠ ⚠ **`api.discogs.com/artists/166864` 的 profile 逐字寫：「American bass player. Brother of [a=René Moore]. **Lived and worked in Japan 1985-1995.** NOTE: For the jazz alto saxophonist, bandleader and composer, please use [a293253].」**，
+**`realname` 逐字是「Robert J. Watson」、`namevariations` 逐字含「Bobby 'Rufus' Watson」。**
+→ ⚠ ⚠ **這是一個對下游寫作層極危險的同名陷阱**：**Bobby Watson 這個名字在爵士語境裡預設指的是那位中音薩克斯手（Art Blakey 的樂團出身、Horizon 的團長）**，
+**寫作層若照預設理解，會寫出「爵士薩克斯手替浅川マキ 寫了整張的曲」這種完全錯誤的句子。**
+⚠ **而且正確的那一個更有故事**：**他 1985 年到 1995 年住在日本工作**——這正好涵蓋本盤（1987）與同批 #7《こぼれる黄金の砂》（1987）兩張，
+**他在後者上掛的是貝斯與合成器，還寫了一軌；本盤則是貝斯、鍵盤、製作與全張作曲四職一身。**
+⚠ **同一組人還有兩位要補**（卡單都只有名字）：
+**Tony Maiden 與這位 Bobby Watson 是 Rufus 的同一組人**（en 維基逐字：「Additionally, Tony Maiden and bassist Bobby Watson, who was also from Los Angeles, were recruited by drummer Andre Fischer」；Maiden 1974–1983 在團，與 Chaka Khan 合寫了〈Sweet Thing〉）；
+**Ricky Lawson 本名 William Riser III（1954-11-08 至 2013-12-23），底特律人，Yellowjackets 創團成員，1987–1989 年正在打 Michael Jackson 的 Bad Tour。**
+→ **三個人合起來是一句話：浅川マキ 1987 年那張碟的節奏組，是 Rufus 的貝斯與吉他加上 Michael Jackson 巡演的鼓手。**
+
+## 5381　⚠ ⚠ **第三值錢的一格**：`George Kawaguchi Plays Herbie Hancock` 的三位紐約樂手 **是同一支現成的五重奏**
+
+卡單 `curatorRisk` 逐字寫「**主角是六十歳的日本第一代鼓手 ＋ 三位二十幾歲的紐約新人**（Terence Blanchard 與 Donald Harrison 當年剛離開 Art Blakey 的樂團、Cyrus Chestnut 還在讀 Berklee）」。
+**en 維基的 Terence Blanchard 條目逐字：「In 1986, Blanchard and Harrison left the Jazz Messengers to form their own quintet, featuring a rhythm section of young lions, Cyrus Chestnut, Rodney Whitaker, and drummer Carl Allen.」**
+→ ⚠ ⚠ **三個人不是各自找來的，是 Blanchard–Harrison 五重奏的三個成員——那支團 1986 年才成立，1987 年 7 月整組被請到東京 King Studio 錄了這張碟。**
+**這正是盤面 `series` 欄逐字「N.Y. 1st Call Series」的意思，卡單記了那個系列名卻沒有把它與這三個人連起來。**
+⚠ **另補兩人的身分**（卡單都沒有）：**Blanchard 1962-03-13 生，1980 年在 Rutgers 讀書時就隨 Lionel Hampton 樂團巡演，1982 年由 Wynton Marsalis 推薦頂替他進 Jazz Messengers 並被 Blakey 任命為音樂總監；Donald Harrison Jr. 1960-06-23 生於紐奧良，十六歲開始吹中音薩克斯。**
+
+## 5382　⚠ ⚠ **第四值錢的一格**：`My Hit & Run` 的選曲不是隨機的——**三首是香菸廣告用過的曲子**
+
+卡單完整地記下了十二軌的內容與重錄的性質，**但沒有回答一個很自然的問題：為什麼是這十首。**
+**ja 維基的 MALTA 條目逐字寫：「1980年代後半、自身の楽曲「SCRAMBLE AVENUE」「HIGH PRESSURE」「OBSESSION」をBGMに、レーサーの松本恵二や星野一義らを起用したJT・キャビンのコマーシャルが話題となった。」**
+→ ⚠ ⚠ **那三首逐字都在本盤的重錄名單上。**
+**盤名裡的「My Hit」因此不是自誇，是字面意思——這是一張把自己真的變成熱門曲的那幾首重錄一遍的碟。**
+⚠ **本層另補一件卡單沒有的細節，它會影響「II 這個記號是不是本盤發明的」這個讀法**：
+**1985 年的《Summer Dreamin'》自己的 B5 逐字就叫〈Summer Dreamin' Ⅱ〉**（Discogs master 895041 的曲目表逐字）
+——**「II」這個後綴在 1985 年就用過一次，本盤的〈Summer Dreamin' II〉是同一個標題第二次出現，中間隔了三年。**
+**下游不得寫成「他第一次用 II 這個記號」。**
+
+## 5383　年份與盤名的兩處改判：**逐筆重核，兩處都成立**
+
+派工信第五節第 3 點與第 4 點分別點名了 #11 的盤名改判與 #17（本層編號 #12）的年份改判。**本層各自回查一次：**
+
+| 改判 | 卡單的依據 | 本層的覆核 | 結論 |
+|---|---|---|---|
+| **盤名**《Maiden Voyage: The Music of Herbie Hancock》→《George Kawaguchi Plays Herbie Hancock》 | MB 只建美國 CD、Discogs 六處是後者 | **`/masters/1070740/versions` 逐筆重跑，八個壓次裡只有 1987 年美國 CD `CDJ 655` 用前者；日本原壓 LP、同期日本 CD、三筆德國盤、2004 復刻、無年份數位版六處逐字都是後者** | ✅ **成立** |
+| **年份** 1988 → 1987 | MB 只建 1988 美國 CD、Discogs 版本表有五筆 1987 | **`/masters/1056650/versions` 逐筆重跑，六個壓次裡五個是 1987 年（日本市售 LP／同號見本 LP／CD `VDJ-1111`／卡帶 `VCJ-10107`／美國見本卡帶 `JC-3313`），只有美國市售 CD `JD-3313` 是 1988** | ✅ **成立** |
+
+⚠ **第三筆（#13《Tokyosphere》的原盤歸屬）本層也核過**：**1988 年的兩筆（美國 CD `JD-3316` 與日本 CD `VDP-1367`）的 `released` 欄逐字都只有年份、沒有月日**，
+**卡單取日本那一筆當原盤的三項依據（錄音地、`℗`／`©` 的歸屬、`JVC` 是ビクター 的海外輸出字標）本層逐項核過成立**；**這個取捨不影響 `year`。**
+→ ⚠ **三筆合起來證實第 5183 條與第 1944-B 條那條新的系統性漏法（「MB 只建他國版」）在本組確實存在，而且三筆的 `titleCheck` 三欄一致、機器完全不報。**
+
+## 5384　⚠ 逐張再核一次「MB 建了什麼」：**12 張裡 10 張的 MB 沒建原壓，與第 5183 條完全一致**
+
+本層逐張打過 `release-group/<id>?inc=releases`，**結果與卡單的 `mbNote` 逐筆相符，零筆改釘、零筆差異**：
+- **只建同年 CD 的 7 筆**：#1 `CA32-1445`／#2 `CA32-1494`／#3 `CT32-5059`／#4 `CT32-5089`／#5 `CA32-1370`／#8 `K32X-193`／#10 `VDJ-1139`；
+- **只建他國版的 3 筆**：#7 美國 CD `CDJ 655`／#9 美國 CD `JD-3316`／#12 美國 CD `JD-3313`；
+- **MB 釘對原盤的 2 筆**：#6（`Interface YF-7147`，而且是本組唯一一張 MB 真的建了原壓黑膠的碟）、#11（`VDJ-1176`，因為那張碟根本沒出黑膠）。
+
+⚠ **本層對第 5183 條第 4 點的補充**：**#11《My Hit & Run》的版本表三筆全部是 CD 或卡帶，`catno=VDJ-1176` 反查回來的也是同樣三筆**
+——**「1988 年底以後 `VDJ-` 可能就是原盤號」這句話在本層的重跑裡再次成立，不是孤證。**
+
+## 5385　⚠ ⚠ 原廠網域實測：**本組逐一打過，命中率與簡報第四節的預期相符，且全部落在「不可外推」的那一側**
+
+簡報第四節列了八個原廠網域。**本層把與本組有關的五個逐一打過（一律看 HTTP 狀態碼，不看長度）：**
+
+| 網域 | 本組打了幾次 | 命中 | 逐筆結果 |
+|---|---:|---:|---|
+| `columbia.jp` | **2** | **0** | `prod-info/YF-7147/` 404；`artist-info/suzukishigeru/discography/YF-7147.html` 404——⚠ **兩條路徑都試了，兩條都空**（簡報逐字要求兩種都要試） |
+| `universal-music.co.jp` | **8** | **4** | `asakawa-maki/` 200、`asakawa-maki/products/toct-27082/` 200、`.../toct-27081/` 200、`takanaka-masayoshi/products/upcy-6864/` 200；`prot-7154`／`prot-7153` 兩筆黑膠復刻 **404**、`kato-kazuhiko/` 與 `honda-toshiyuki/` 兩個藝人頁 **404** |
+| `jvcmusic.co.jp` | **9** | **1** | 只有 `VICJ-18012`（1995 年《Obsession》復刻）回 200；`VIJ-28135`／`VDJ-1111`／`VIJ-28157`／`VDJ-1139`／`VDP-1367`／`VICG-8015`／`VDJ-1176`／`VCJ-10074` 八個號全部 404 |
+| `kingrecords.co.jp` | **3** | **0** | `cs/g/gKICJ-2087/`、`cs/g/gK28A-808/`、`search/?keyword=山形由美` 全部 404——⚠ **簡報逐字警告的「404 也回 15KB」實測屬實（15095／15094 位元組），本層一律看狀態碼** |
+| `miqqe.jp` | **8** | **3**（皆非本組的碟） | 見 5386 |
+
+→ ⚠ **結論與簡報第四節的「不可外推」完全一致**：**`jvcmusic.co.jp` 在本組是 1/9（簡報記過 0/1 與 6/6 兩個極端都出現過）；`universal-music.co.jp` 的命中集中在 CD 復刻，黑膠復刻（`PROT-` 那條線）一筆都沒有商品頁。**
+→ ⚠ **給 c-183 與主線的一條新觀察**：**`universal-music.co.jp` 的藝人頁只涵蓋它現在還在經營的目錄**（浅川マキ 與高中正義 有頁，加藤和彦 與本多俊之 沒有），
+**所以「藝人頁 404」不等於「這位藝人不在東芝EMI 線上」，不可當成廠牌歸屬的反證。**
+
+## 5386　⚠ ⚠ `miqqe.jp`：**本層修正它的用法，並實測本組四張ビクター／JVC 的碟全部零命中**
+
+簡報第四節逐字把 `miqqe.jp` 列為「ビクター 自家通販，3/3 全中而且比 Discogs 新」的補漏來源。
+⚠ ⚠ **但它沒有寫路徑，而直接猜商品頁的 URL 一律 404**（本層第一次試 `miqqe.jp/products/detail.php?product_id=<catno>` 回 404，差一點誤判成「這個站對本組整組無效」）。
+→ ⚠ **正確的用法是兩步**：**(1) 站內搜尋 `https://miqqe.jp/?s=<關鍵字>`（⚠ 不是 `/search?q=`，那個回 301；也不是 `/item/search/`）；(2) 從搜尋結果進 `https://miqqe.jp/artist/<slug>/` 看那位藝人的全部商品。**
+
+**本組四張ビクター／JVC 的碟逐一查完的結果：**
+
+| 卡 | 查法 | 結果 |
+|---|---|---|
+| #9 Tokyosphere | `?s=Tokyosphere`／`?s=ジョン海山` | **兩次都逐字回「一致する検索結果は見つかりませんでした」** |
+| #10 Obsession | `?s=MALTA` | **回兩筆商品：《ハーフ・ムーン・ストリート+1》2018.07.25／《ハイ・プレッシャー》2016.08.24——都不是本盤** |
+| #11 My Hit & Run | `?s=MALTA` | 同上，**不是本盤** |
+| #12 Smokin' Night | `?s=益田幹夫` → `artist/mikio_masuda/` | **藝人頁逐字只掛三張：《ディア・フレンズ》《CHI CHI》《Mickey Finn》——本盤不在其中** |
+
+→ ⚠ ⚠ **本組零筆補到 Discogs 以外的壓次，但這條路在本線是有效的、不是廢的**：
+**它查到的三筆復刻（MALTA《ハイ・プレッシャー》2016-08-24、益田幹夫《CHI CHI》2016-09-21、《ディア・フレンズ》2017-10-25）全部是本線已經收進池的碟**
+——**c-181 b 的《High Pressure》、c-179 的《Chi Chi》、c-181 的《Dear Friends》三張的版本數若沒有記到這幾筆復刻，值得回頭補一次。**
+→ **給主線：建議把上面那兩步的路徑寫進簡報第四節，省掉下一位研究層的試誤。**
+
+## 5387　⚠ ⚠ 唯一一條可能推翻版本數的線索：`山形由美 —《wind for mind》` 的 **「2008 年 King 復刻」查到不成立**
+
+**ja 維基的山形由美 條目逐字寫：「2008年（平成20年）にキングレコードから発売した各作品がデジタルリマスターによって復刻発売された。」**
+⚠ **若本盤在那一批裡，Discogs 的四版版本表就是舊的——這正是派工信第二節警告的「Discogs 版本表自己是舊的」（本線已經第三次）的形狀。**
+
+**本層逐一查完四處，四處都查無：**
+1. **`kingrecords.co.jp/cs/g/gK28A-808/` → 404**（⚠ 該站 404 回 15094 位元組，本層看的是狀態碼）；
+2. **`kingrecords.co.jp/search/?keyword=山形由美` → 404**（站內搜尋的路徑本身不存在）；
+3. **`/masters/1702864/versions` 逐筆跑完只有四版，全部是 1987 年的同期壓次**；
+4. **`catno=K28A-808` 反查回來的兩筆都在版本表內，差集 0。**
+
+→ **本層的處置：facts 寫「三十九年來沒有任何復刻」，把那句維基敘述當成未能證實的線索記在卡的 `notes` 與本條，不寫進 facts。**
+⚠ **措辭的分寸照簡報第四節末段**：**本層寫的是「Discogs 與 King 官網兩處都查不到本盤的 2008 年復刻」，不是「King 沒有做過 2008 年的復刻」**——
+**那句維基敘述說的是「她在 King 發行的各作品」，本盤是不是在那個「各作品」的射程裡，四處來源都回答不了。**
+（可逆性：這一格只影響 facts 的一句話，不動卡池結構——照裁定權下放第 2 條直接定。**但本層請主線知道這是本組唯一一個未閉合的版本數線索。**）
+
+## 5388　⚠ 浅川マキ 兩張的原廠側實測：**`universal-music.co.jp` 有 CD 復刻的商品頁、沒有黑膠復刻的，作品列表裡零筆 Discogs 以外的壓次**
+
+**#4《Underground》與 #5《こぼれる黄金の砂》兩張的 2011 年復刻 CD（`TOCT-27082`／`TOCT-27081`）在 `universal-music.co.jp` 都有商品頁（200），
+而 2022 年的黑膠復刻（`PROT-7154`／`PROT-7153`）兩筆都是 404。**
+**本層另外把她的藝人頁作品列表抓下來逐筆看過：列出的十筆商品（`UPCY-7087`／`UPCY-7681`／`UPCY-7947`／`UPCY-90174`／`UPGY-6011`／`UPJY-9026`／`UPJY-9027`／`UPJY-9331`／`UPJY-9332`／`UPBY-9175`）逐筆打開確認，
+全部是選輯、單曲集、Live 盒裝或別張專輯的黑膠復刻，沒有一筆是本組這兩張碟的壓次。**
+→ **兩張的版本數以 Discogs 為準，5 版與 5 版都成立。**
+⚠ **另從 ja 維基補到一件對版本表有解釋力的事**：**2011 年 6 月那一批紙套復刻逐字是「『ONE』からLP盤が発売された最後のアルバム『Nothing at all to lose』まで80年代のアルバム14作」**
+——**本組這兩張是那十四張裡的兩張，`TOCT-2708x` 這個連號號段就是那一批。**（⚠ **同一句話還指出《Nothing at all to lose》是她最後一張發過黑膠的專輯——那張在本批 b 組。**）
+
+## 5389　⚠ ⚠ 同名陷阱：**本組踩到三個，逐一記給 c-183 之後的批次**
+
+簡報第四節列了七個日文維基的同名陷阱。**本組又加三個，而且其中兩個不在日文維基側：**
+
+1. ⚠ ⚠ **`Bobby Watson`（Discogs 側）**——**貝斯手（artists/166864）與爵士中音薩克斯手（artists/293253）是兩個人，而爵士語境的預設指向後者**；見 5380。**這一個最危險，因為兩個人都在爵士側。**
+2. ⚠ ⚠ **`Tony Maiden`（en 維基側）**——**`en.wikipedia.org/wiki/Tony_Maiden` 逐字是一位英國男演員（`died 17 February 2004 in Torrevieja`，演過 The Adventures of Black Beauty）**，
+   **不是 Rufus 的吉他手；後者要從 `en.wikipedia.org/wiki/Rufus_(band)` 的正文裡查。**
+   → **與簡報記的「ja wiki 的 `鈴木弘`＝游泳選手、`伏見哲夫`＝男演員」同一個形狀，只是這一次在英文維基。**
+3. ⚠ **`鈴木茂`（ja 維基側）**——**`ja.wikipedia.org/wiki/鈴木茂` 是一個消歧義頁（列了經營者、牧師、經濟學者、歷史學者、哲學者、醫學者、航空機技術者等九個人）**，
+   **吉他手要打 `鈴木茂 (ギタリスト)`。**⚠ **同一頁還逐字記著一件有趣的事：2011 年 7 月的調查裡「鈴木茂」是日本企業代表者名字中最多的一個（163 家，與「佐藤誠」同數）。**
+→ ⚠ **給主線**：**簡報第四節的同名陷阱清單建議擴成「三個文字系統都要查職業欄」——ja 維基、en 維基與 Discogs 三側都出現過。**
+
+## 5390　⚠ ⚠ 跨組串連點：**`〈夜のカーニバル〉` 這個字串在本批出現兩次，一次是曲題、一次是盤名，而且分屬兩組**
+
+**本組 #4《Underground》的第 4 軌逐字是〈夜のカーニバル〉4:34。**
+**b 組的 #14 逐字是 `浅川マキ —《夜のカーニバル》`（Eastworld CT32-5421，1989，第 5196 條總表）。**
+→ ⚠ ⚠ **兩者不是同一個東西**：**一首 1987 年碟上的曲，與一張 1989 年的專輯同名。**
+⚠ ⚠ **六道 dedup 全部抓不到這種形狀**：**`chk-prop` 比的是盤名對盤名、掛名對掛名；`dedup-crossbatch` 比的是跨批的卡與卡。「曲題撞他卡的盤名」不在任何一道的射程裡**
+——**這是第 5187 條記的「不同的碟、相同的曲」（第七種）之外的第八種。**
+→ ⚠ **給 b 組的研究層與下游的鉤子層／寫作層**：**兩張卡引用這個字串時一律要帶年份與性質（「1987 年《Underground》的第四軌」／「1989 年的專輯《夜のカーニバル》」），不得互相借用對方的素材。**
+⚠ **本層另記一條方向相同但無害的**：**ja 維基逐字說《夜のカーニバル》(1989) 與《STRANGER'S TOUCH》(1989) 兩張在 2011 年的紙套復刻批次裡「再生産も復刻もされなかった」——b 組那兩張的版本數會比本組這兩張少，那是正常的，不是漏數。**
+
+## 5391　同批內的串連點與反同構分配：**七個交叉點，逐一指定寫在哪一張**
+
+**本組十二張裡有七組人或事會重複出現。為免鉤子層與寫作層做出同構的卡，本層逐一指定切角並在各卡的 `notes` 裡互鎖：**
+
+| 串連點 | 出現在 | 指定寫在 | 另一張的處置 |
+|---|---|---|---|
+| サディスティック・ミカ・バンド（加藤和彦 組團、高中正義 當吉他手） | #1／#3 | **#3**（樂團與他本人的沿革） | #1 只寫「解散後與高橋ユキヒロ 等人另組サディスティックス」 |
+| 本多俊之 | #2（領銜）／#4（三軌） | **#2** | #4 只在日本側名單裡帶過，不寫他的生平 |
+| Bobby Watson | #4（全張作曲兼製作）／#5（貝斯與合成器、一軌作曲） | **#4**（Rufus 與「1985–1995 住在日本」） | #5 只當作曲者之一帶過 |
+| 浅川マキ 的生平 | #4／#5 | **#4**（出道與蠍座） | #5 寫「日本語詩」的創作原則與 1993 年廢盤 |
+| 山形由美 | #6（作曲一軌）／#8（領銜） | **#8** | #6 只寫「A3 的作曲者是 Yumi Yamagata」並指出是同批的領銜者 |
+| MALTA 的背景 | #10／#11 | **#10**（Mingus、Lionel Hampton、金唱片） | #11 只寫 Berklee 講師與出道年份，重心放在重錄 |
+| Herbie Hancock 線（#7 是他的曲庫、#10 有 Headhunters 的鼓手 Harvey Mason） | #7／#10 | **#10**（Harvey Mason 的身分） | #7 不碰 Headhunters，只寫 Blanchard–Harrison 五重奏 |
+| ビクター 青山スタジオ | #9／#12 | **兩張都寫錄音地，但切角分開** | #9 寫邦樂編制與人名衝突、#12 寫直刻兩軌的工法 |
+| 横山達治 | #4（兩軌打擊）／#12（打擊） | **#12**（生年與出身地） | #4 只列名 |
+
+⚠ **c-178 第 4900 條記過「兩組研究層各寫一張串連點表、互相看不到對方，c-177 打架五處、c-178 四處」**——**本層的表只涵蓋 a 組內部，b 組那一側請 b 組自行處理；唯一跨組的一點是第 5390 條的〈夜のカーニバル〉，已逐字寫明。**
+
+## 5392　⚠ 晚於發行的事件：**兩類逐張分清楚，整格不寫的有六處**
+
+照 `research-base.md` 的反向禁令，**本層逐張標出屬於哪一類：**
+
+**(a) 與作品直接綁定、可寫但必須標明時序（facts 裡已逐字標年份）：**
+- **#2**：第 11 屆日本アカデミー賞最優秀音楽賞（**1988 年，本盤發行的隔年**）——**頒的是本盤第 2 軌素材所出的那部電影的配樂**；
+- **#1**：2014 年的「J FUSION BREEZE」復刻；**#3**：2009 年的 Super Fuji Discs 紙套復刻；
+- **#4／#5**：2011 年的紙套復刻與 2022 年的黑膠復刻；**#5** 另有 2015 年 Honest Jon's 的企劃盤；
+- **#9**：1991 年的復刻（並印漢字題與新增的樂團一方）；**#10**：1995 年的「定番 Collection」復刻。
+
+**(b) 與作品無關的後續生平事件，整格不寫（六處）：**
+1. **#1 高中正義** 2010 年代中期之後在海外被重新發現、2025–2026 年的世界巡演；
+2. **#3 加藤和彦** 2009 年 10 月的辭世與 2024 年的紀錄片；**同卡的安井かずみ** 1994 年過世；
+3. **#4／#5 浅川マキ** 2010 年 1 月的辭世；
+4. **#6 鈴木茂** 2009 年的刑事案件與 2012 年的執行猶豫期滿；
+5. **#7 ジョージ川口** 1988 年的紫綬褒章、1997 年的勳章、2003 年的辭世與日本レコード大賞特別功労賞（**facts 只用 1981 年那兩個在本盤之前的獎**）；
+6. **#8 山形由美** 1992 年之後的再渡歐、1994 年的歸國獨奏會與 2005 年之後的自製作品。
+
+⚠ **另有一處刻意不寫但值得記**：**浅川マキ 1992 年製作了植松孝夫 的「ゼロアワー・シリーズ」專輯——植松孝夫 正是本組兩張碟上的薩克斯手，但那是本盤之後五年的事，與本作沒有直接綁定，本層不寫。**
+
+## 5393　⚠ 「查不到不要編」的清單：**本組整格不寫的人名共九個**
+
+| 卡 | 掛名逐字 | 職位 | 為什麼不寫漢字 |
+|---|---|---|---|
+| #2 | `Seiji Okumura`／`Shunichi Kogai` | 工程 | Discogs 藝人頁無 `namevariations` |
+| #2 | `Katsumi Asaba`／`Masato Ohki` | 藝術指導 | 同上 |
+| #6 | `Eiji Toki` | 薩克斯 | 見 5373（**本組最值得記的一個**） |
+| #6 | `Atsushi Tohyama`／`Hiroshi Yamada (3)`／`Hiroyuki Suzuki`／`Keishi Urata`／`Masaki Sekijima`／`Masatoh Fujii`／`Shinpei Kimura` | 合成器（七行） | **本層未逐一回打藝人頁**，facts 一律照盤面羅馬字寫並在 `notes` 標明 |
+
+⚠ **#6 那七行本身是一個發現**：**卡單的「三十四行 credits」清單裡一行都沒有列到它們**，本層把「盤面另有七行合成器掛名」這個事實寫進 facts（不點名到漢字），並在 `notes` 請下游要點名時先各查一次。
+⚠ **#8 的十三人伴奏名單本層照盤面羅馬字的常見對應寫了漢字，但同樣在 `notes` 標明未逐一回打藝人頁**——**那份名單是卡單已經列過的，本層沒有推翻也沒有加強，誠實標出證據強度。**
+
+## 5394　`desc-tools/jp-proper-names.json`：**本層 append 0 個；字元自檢逐項通過**
+
+- **`node qa-batch.mjs research c182` 的 `charScan` 對 a 組零命中**（b 組同時交件，兩組一起跑、兩組都過）。
+- **本層另外自跑了四道程式化自檢**（不靠眼睛掃）：
+  1. **簡體字**：照 `qa-batch.mjs` 第 43 行的 `SIMP` 字表全檔掃描，**零命中**（⚠ 白名單裡的 `国吉良一`／`烏龍茶会` 兩串本來就在 c-182 策展層 append 進去的 60 個字串裡，本層不必再加）；
+  2. **日文新字體**（QA 掃不到、只能靠自覺的那一類）：全檔掃 `楽／沢／発／斉／団／実／学／県／図／声／来` 十一個字，**命中 13 處，逐處人工確認全部落在專名或逐字引用的日文原文裡**
+     （`最優秀音楽賞`／`ビクター音楽産業`／`東芝音楽工業`／ja 維基逐字引用的 `音楽理論`／`柳沢一彦`／`中沢啓光` ×2／`オリジナル発売：1987年` ×2／ja 維基逐字引用的 `発売` ×2／`斉藤ノブ`／`極東探偵団`）——**本層行文用的字沒有一處是新字體**；
+  3. **千分位逗號**：全檔掃 `[0-9],[0-9]{3}`，**零命中**（⚠ #10 的 jvcmusic 商品頁定價逐字是「¥1,923(税込)」，**本層寫成「1923 円」**）；
+  4. **`src` 與 `hookCandidates`**：`qa-batch.mjs` 已擋，本層另外逐條目視確認 144 條 `src` 全部是可開啟的完整 https 網址、12 張的 `hookCandidates` 各 2 條。
+- **獎項的三件事逐項分開寫**（第幾屆／哪一年、哪個類別、入圍還是得獎）：本組出現四個獎，**四個都是得獎、零個入圍**
+  （#1 第 23 屆日本レコード大賞企画賞、#2 第 11 屆日本アカデミー賞最優秀音楽賞、#7 第 6 屆南里文雄賞與第 31 屆藝術選獎文部大臣賞、#10 第 1 屆日本ゴールドディスク大賞 The Best Album of the Year 爵士／フュージョン 部門），**facts 裡逐條寫明「是得獎不是入圍」。**
+
+## 5395　交件前自跑的結果與邊界聲明
+
+**自跑：**
+- `node qa-batch.mjs research c182`（工作目錄 `desc-tools/`）→ **`a 12 full×12`／`b 12 full×12`／`key 與卡單完全一致 ✓`／`全部通過 ✓`**。
+- **逐張自量**：facts 條數 **12／12／12／12／12／12／12／12／12／12／12／12（合計 144，每張恰好 12，落在 8–12 的上限）**；
+  `src` 144 條全部完整 https；簡體字 0；千分位逗號 0；日文新字體在行文中 0；`hookCandidates` 每張 2 條、無超過 2 條者；
+  獎項四處全部標明得獎／入圍。
+- **`status` 與 `coverage` 兩欄並存**，12 張都是 `full`／`full`，**thin 0 張**。
+
+**來源實測（本層總計約 140 次外部請求，零次失敗到底）：**
+- **`api.discogs.com` 約 47 次全部 200**（節流 3.1 秒；releases／masters／masters/versions／artists／artists/releases 五種端點，**零次 429、零次退避**）；
+- **維基百科 約 65 次全部 200**（`ja` 與 `en` 兩側合計，節流 2.5 秒；⚠ **REST 的 `page/summary/` 與 action API 的 `prop=extracts` 兩種都用得到，但 action API 在節流不足時會回「You are making too many requests」的純文字而不是 JSON**，本層調到 2.5 秒後零命中）；
+- **原廠網域約 30 次**（`columbia.jp` 2／`universal-music.co.jp` 8 個決定性路徑再加該站的作品列表與十筆商品頁／`jvcmusic.co.jp` 9／`kingrecords.co.jp` 3／`miqqe.jp` 8），**決定性的 30 次裡命中 8 次**，逐筆見 5385／5386；
+- ⚠ **`miqqe.jp` 在連續請求時踩到一次 `ws_closed_mid_exchange`（代理側的連線中斷，不是站方的錯誤），退避三秒重試後 200**——**記給下一位研究層。**
+- **本層沒有用到 WebSearch**（照 `research-base.md` 開頭的例外節：雲端線幾乎不用）。
+
+**邊界：**
+- **只寫了** `desc-tools/batches/research/c182-a.json`（新增）與本檔（**append**，第 5366–5395 條）。
+- ⚠ **`desc-tools/jp-proper-names.json` 本層 append 0 個字串，整個檔案一個字都沒有改**（見 5394）。
+- ⚠ **append 前照派工跑過 `git show HEAD:batch-progress/c182/rulings.md` 與 `ls` 兩者**：
+  **兩邊都是 1989 行、都停在回撈層的第 5455 條，工作區沒有別人未提交的段落**；**本層只在檔尾 append，未改動任何既有行。**
+  ⚠ **判斷檔案在不在一律用 `ls` 與直接讀檔，沒有用 `git status`。**
+- ⚠ **`batch-progress/probe/previews.json` 本層一個位元組都沒碰**（回撈層的第 5452 條逐字聲明它也沒改）；
+  **交件時以該檔現況為準：本組 12 張在 `previews.json` 裡零個鍵，派工信點名的五張無串流（`Underground`／`こぼれる黄金の砂 -What it be like-`／`Tokyosphere`／`My Hit & Run`／`Smokin' Night`）維持無串流**，
+  **回撈層的第 5453 條逐筆把它們歸在成因 1、救回 0 張。**
+- **`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`caa.json`／卡單／b 組的 `c182-b.json`（未讀、未改）／`prop-a.json`／`prop-b.json`／其他批次的檔案／KV／Firestore 全部沒碰。**
+- **沒有 `git add`／`git commit`／`git push`，沒有動 git 索引。**
+- **臨時腳本與中間檔一律放在 scratchpad 的 `c182ra/` 底下**（`c182ra-fetch.mjs`／`c182ra-ver.mjs`／`c182ra-rel.mjs`／`c182ra-art.mjs`／`c182ra-wfull2.mjs` 等，全部帶批次與組別前綴）。
+
+**編號區間結算**：本節用到 **5366–5395（共 30 條），區間用滿**；b 組研究層用 5396–5425。
