@@ -4708,3 +4708,36 @@ Discogs notes 逐字 `Live recordings from … First Appearance-Tour` ＋ Apple 
 
 **給本機的調度**：`JVC VIJ-6338`（`Dave Grusin & The GRP All-Stars《Live in Japan》`）
 加進「外國藝人在日本錄的本土企劃盤」候選清單——**c-175／c-176 連兩批零新增後的第一筆。**
+
+## 第 1913-B 條（2026-09-22）：**維持收《Just Groovin'》與《CORNER TOP》**——與第 4410 條的分界成立
+
+c-178 a 組收了兩張與 c-177 第 4410 條退掉的《Summer-Time Love Song》**同形狀**的碟
+（日本主唱／編曲家 ＋ 英美曲翻唱 ＋ 城市流行標籤 ＋ 爵士樂手伴奏），並寫了一張六項的並排對照表。
+**我逐項讀過，維持收。** 決定性的差別有三項、不是一項：
+
+| | 《Summer-Time Love Song》（退） | 《Just Groovin'》（收） |
+|---|---|---|
+| `styles` 含 Easy Listening | ❌ **有** | ✅ **無** |
+| `styles` 首位 | ❌ `AOR` | ✅ `Jazz-Funk` |
+| 演奏主體 | ❌ **三位主唱**，爵士樂手是錄音室伴奏 | ✅ **主唱一位，伴奏是近三十位具名日本爵士樂手** |
+
+**另加兩項**：Discogs profile 逐字「**Japanese jazz/pop singer**」；
+**五軌翻唱全是英美流行／靈魂曲、零日本歌謡曲，另有兩首真正的爵士標準曲**（〈Alfie〉與
+〈The World Is Waiting For The Sunrise〉）。
+**《CORNER TOP》同理**（十一軌只有一軌是日本流行曲、七軌原創、credits 幾乎整份是日本爵士樂手，
+**其中兩位就是本組另外兩張收件的領銜者**）。
+
+⚠ **代理把「再發線的性質」這一票判成不具分辨力，那是對的**：
+《CORNER TOP》**兩邊都有**（2013 King `NKCD-6636` 是城市流行線、
+1994 與 2019 兩次掛回原字標 `Bill Box`、2025 King 的《Crossover City》合輯），
+**照第 4410 條自己對 Wewantsounds 的處置辦。**
+
+**翻唱那一層照第 3781 條一律不構成退件理由**（分界在**被翻唱的素材是英美曲還是日本歌謡曲**），
+本組四張踩到這一層、**四張全收**。
+
+**`dedup` 的「共用目錄號 YX7266」是假陽性，我查過**：
+《Pleasure》是 Better Days **`YX-7266-ND`**、《Flying Easy》是 Columbia **`YX-7276`**——
+**兩個號不同**，`YX-7266` 之所以出現在後者的欄位裡，
+**是因為策展層自己在 `risk` 欄寫了「`YX-` 號段同時被 Columbia 本體與 Better Days 字標用，兩者只差十個號」的警語。**
+⚠ **`catnos()` 掃的是 `label`／`mbNote` 全文，會把警語裡引用的別張目錄號也抽出來**——
+**只報不擋所以無害，但下次看到這種配對要先確認是不是引用。**
