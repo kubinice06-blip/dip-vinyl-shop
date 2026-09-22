@@ -182,10 +182,20 @@ const JP_NAMES = (() => {
   catch { return []; }
 })().sort((a, b) => b.length - a.length);   // 長的先剝，免得短名先吃掉長名的一部分
 const stripJpNames = s => JP_NAMES.reduce((acc, n) => acc.split(n).join(''), String(s));
+// ⚠ 2026-09-22（c-180 b 組研究層提出，主線第 1941-B 條）：`GARBAGE`（非拉丁）那一道**沒有白名單**，
+// 而 `SIMP` 有。本批以 `「」` 逐字引用的 `Мелодия` 是靠 `stripLegit` 剝掉引號才合法通過的
+// ——**沒被引號包起來的合法非拉丁專名（c-123／c-53 的舊稿裡就有）會誤報。**
+// 補法與 `SIMP` 同構：多讀一份選用的非拉丁專名檔，**檔案不存在時行為與舊版完全一致。**
+const NONLATIN_NAMES = (() => {
+  try { return JSON.parse(fs.readFileSync(new URL('./nonlatin-proper-names.json', import.meta.url), 'utf8')); }
+  catch { return []; }
+})().sort((a, b) => b.length - a.length);
+const stripNonLatinNames = s => NONLATIN_NAMES.reduce((acc, n) => acc.split(n).join(''), String(s));
 
 function charScan(label, s) {
   const t = stripLegit(s);
-  if (GARBAGE.test(t)) warn(label, '非拉丁亂碼:', [...new Set(t.match(new RegExp(GARBAGE, 'g')))].join(''));
+  const tGarb = stripNonLatinNames(t);
+  if (GARBAGE.test(tGarb)) warn(label, '非拉丁亂碼:', [...new Set(tGarb.match(new RegExp(GARBAGE, 'g')))].join(''));
   // 簡體掃描同樣剝除《》〈〉內的專名：中國發行的專輯官方標題本來就是簡體
   // （崔健《新长征路上的摇滚》），照原文保留是規定，不該報錯。整份寫成簡體的情況
   // （w2-121 e 組）仍會被抓到，因為那種錯誤絕大多數落在標題之外。
