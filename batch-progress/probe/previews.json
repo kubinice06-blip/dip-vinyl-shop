@@ -60719,9 +60719,22 @@
    "jp:12→0",
    "tw:12→0",
    "de:12→0",
-   "fr:12→0"
+   "fr:12→0",
+   "rec:jp:search(坂田明 Pochi)→1",
+   "rec:jp:lookup→1"
   ],
-  "status": "unavailable"
+  "front": "jp",
+  "collectionId": 6795426144,
+  "appleTitle": "Pochi (1980 Live)",
+  "appleArtist": "坂田明",
+  "appleYear": "1980",
+  "explicitness": "notExplicit",
+  "trackCount": 5,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/31/07/823107b5-0db9-4354-24f3-24f64ffc8a04/mzaf_204409821896256186.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "recoveredBy": "c178-recover",
+  "recoverNote": "成因 9（店面加括號補註 `Pochi (1980 Live)`）；match-lib 的「數字殘餘」那道擋掉。軌序 5/5 逐字前綴相符、copyright ℗1980 Nippon Columbia/NIPPONOPHONE 對應 Better Days YF-7002-N。"
  },
  "上田力|Flying Easy": {
   "batch": "c178",
@@ -60980,9 +60993,22 @@
    "jp:12→0",
    "tw:12→0",
    "de:12→0",
-   "fr:12→0"
+   "fr:12→0",
+   "rec:jp:search(Wha-ha-ha)→1",
+   "rec:jp:lookup→1"
   ],
-  "status": "unavailable"
+  "front": "jp",
+  "collectionId": 6795427520,
+  "appleTitle": "Live Dub - EP",
+  "appleArtist": "Wha-ha-ha",
+  "appleYear": "1981",
+  "explicitness": "notExplicit",
+  "trackCount": 2,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b8/4d/00/b84d004d-74ac-f06d-493a-9d9189bfb070/mzaf_15404387682491141405.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready",
+  "recoveredBy": "c178-recover",
+  "recoverNote": "Apple 把 12 吋 45 轉兩軌 LP 標成 `Live Dub - EP`，被 match-lib.mjs 第 30 行的 SUFFIX 防呆整筆擋掉（卡名無 EP 字樣）。軌序 2/2 逐字相符（boiled side／scrambled side）、copyright ℗1981 Nippon Columbia/NIPPONOPHONE、artwork COKM-46630 與同批 Pochi 的 COKM-46626 同號段。"
  },
  "Wha-ha-ha|下駄はいてこなくちゃ": {
   "batch": "c178",
