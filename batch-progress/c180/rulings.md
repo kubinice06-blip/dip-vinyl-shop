@@ -2383,8 +2383,9 @@ Discogs `extraartists`／`companies`／`notes` 三欄全空、`master_id` 逐字
   `batch-progress/c180/rulings.md`（**純 append 本段 5136–5165**）、
   `desc-tools/jp-proper-names.json`（**只 append 4 個字串，既有 50 條一個字未改**）。
 - **寫 `rulings.md` 之前依派工信第八節同時看了 `git show HEAD:batch-progress/c180/rulings.md` 與 `ls`**：
-  **兩者都是 1,672 行、內容相同，`5106–5135`（a 組研究層的區間）當時尚未寫入。**
-  **本段從檔尾 append，未覆寫任何既有的一行。**
+  **當時兩者都是 1,672 行、內容相同，`5106–5135`（a 組研究層的區間）尚未寫入。**
+  ⚠ **本層查證期間 a 組研究層把 5106–5135 寫進工作區了（1,672 → 1,993 行）**，
+  **本段是在那之後才從檔尾 append 的；append 後逐行 diff 過，`git show HEAD:` 的 1,672 行與 a 組新增的那一段都原封不動。**
 - **沒有碰**：`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、
   卡單（`c180-cards.json` 唯讀）、**a 組的 `c180-a.json`**、`prop-a.json`／`prop-b.json`、其他批次的檔案、KV、Firestore。
 - **沒有 `git add`／`git commit`／`git push`，沒有動 git 索引。**
@@ -2446,5 +2447,5 @@ Discogs `extraartists`／`companies`／`notes` 三欄全空、`master_id` 逐字
 ## 5165　編號區間結算
 
 **本節用到 5136–5165（共 30 條），區間用滿。** a 組研究層用 5106–5135。
-**兩段各自 append、互不覆寫**（本段寫入前 `git show HEAD:` 與工作區兩份都是 1,672 行、`5106–5135` 尚未出現）。
+**兩段各自 append、互不覆寫**（本層開工時兩份都是 1,672 行；a 組在本層查證期間寫入 5106–5135，本段再從檔尾 append，事後逐行 diff 驗過前 1,993 行一字未動）。
 **下一層（鉤子層）請從本檔的 5166 起編。**
