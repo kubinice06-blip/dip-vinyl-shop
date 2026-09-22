@@ -421,7 +421,17 @@ for (const c of cards) {
     // remaster／deluxe／expanded／edition／anniversary／bonus tracks／version，
     // 之前只拿來判「年份不計」，現在讓它進排序：**同樣配得上的候選，素面的那個先。**
     const deco = x => { DECO.lastIndex = 0; const r = DECO.test(x?.collectionName || ''); DECO.lastIndex = 0; return r ? 1 : 0; };
-    const drift = x => (c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0);
+    // ⚠ 2026-09-22（c-182 回撈層抓到，主線第 1947-B 條）：**同一位藝人底下多筆共用同一個上架日時，
+    // 那個日期不是發行日，是「這一批一起上架」的日子**——`国府弘子` 有七筆再發被壓成同一個
+    // `2006-08-02`，原始年份整個丟失。**年份本來就不是門檻（裁定第 77 條），但它還在排序裡**，
+    // 壓扁的日期會讓排序誤以為某張「年份最接近」。→ 這種日期一律當成沒有年份（drift 0 不參與排序）。
+    const dateCount = new Map();
+    for (const x of hits) {
+      const k = `${x.artistId || '?'}|${String(x.releaseDate || '').slice(0, 10)}`;
+      dateCount.set(k, (dateCount.get(k) || 0) + 1);
+    }
+    const collapsed = x => (dateCount.get(`${x.artistId || '?'}|${String(x.releaseDate || '').slice(0, 10)}`) || 0) >= 3;
+    const drift = x => (c.year && !collapsed(x) ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0);
     const rank = x => ({ explicit: 0, notExplicit: 1, cleaned: 2 }[x?.collectionExplicitness] ?? 1);
     hits.sort((x, y) => (deco(x) - deco(y)) || (drift(x) - drift(y)) || (rank(x) - rank(y)));
 
@@ -454,7 +464,10 @@ for (const c of cards) {
                      appleArtist: x.artistName, appleYear: String(x.releaseDate || '').slice(0, 4) });
     }
     if (!kept.length) {
-      if (dropped.length) rec.rejectedMatch = dropped[0];
+      // ⚠ 2026-09-22（c-182 回撈層提出，主線第 1947-B 條）：原本只記第一筆，
+      // 於是「`jp:8→1` 之後被退掉」的那幾張，另外七個候選下一位回撈層完全看不到、得重打一次。
+      // 改成整批記下來。
+      if (dropped.length) rec.rejectedMatch = dropped;
       rec.tried.push(`${front}:第1935-B條退${dropped.length}筆`);
       continue;
     }
@@ -490,6 +503,7 @@ for (const c of cards) {
     // 真的再發（`The Good Bad Girl+6`、`IQ-179`、`Anokoro`）也會中，**所以不擋**；
     // 它只提示研究層回查。擋人的是上面那兩道，寫在排序之後、lookup 之前。
     if (bestAliasOnly) rec.aliasOnlyTitle = true;
+    if (collapsed(best)) rec.collapsedDate = String(best.releaseDate || '').slice(0, 10);
     rec.status = rec.previewUrl ? 'ready' : 'no-preview';
     // 同一張碟在不同 storefront 的試聽授權不一樣（2026-09-02，c-53 實測）：
     // Матвеева《Какой большой ветер》的 collectionId 1509982713 在 de 有 .m4a、在 us 沒有。

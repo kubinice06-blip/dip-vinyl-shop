@@ -1664,3 +1664,326 @@ genres **只有 `Jazz`**；styles **`Easy Listening`（首位）／`Smooth Jazz`
 **臨時腳本與中間檔一律放在 scratchpad 的 `c182b/` 底下（第 306／533 條）。**
 
 ---
+
+---
+
+# 回撈層（14 張未 ready｜人工回查）｜2026-09-22
+
+## 5426　本層的任務、查法與節流——**70 次 Apple 查詢、零次退避到底**
+c-182 探測鏈跑完後有 **14 張判 `unavailable`**，本層逐張人工回查。
+查法：`itunes.apple.com/search`（`entity=musicArtist`／`album`／`song`）與
+`lookup?id=<artistId>&entity=album&limit=200`；市場以 `jp` 為主（第 1943-B 條登記 `JPN` 之後本線的首選店面），
+`us`／`gb` 作回退。節流 1.35 秒、超過 60 次後 1.5 秒；403／429／5xx 退避 `1.5s×n²` 最多 6 次。
+**本層共打 70 次，403／429 零次、退避到底零次、`NOQUERY` 零次**
+——**所以本層的每一個 0 都是「查成了、回 0 筆」**（裁定第 28／98 條）。
+⚠ MB 與 Discogs 本層沒有用到：14 張全部在 Apple 這一端就定案了。
+
+## 5427　⚠ 排序：**六張浅川マキ 是被第 1935-B 條第四道退掉的，不是查不到**
+14 張的 `tried` 分兩群：
+- **六張浅川マキ 系**（`Underground`／`こぼれる黄金の砂 -What it be like-`／`Nothing At All To Lose`／
+  `幻の女たち`（與本多俊之 聯名）／`Stranger's Touch`／`夜のカーニバル`）：`jp:8→1` 或 `jp:10→1` ＋
+  `jp:第1935-B條退1筆`，**六筆的 `rejectedMatch` 逐字都是同一個 `1443465175`
+  ＝《Asakawa Maki No Sekai》1970**——**這張碟在本線是第七到第十二次冒出來。**
+  **→ 本層要回答的是「她這六張 1987–1989 的碟在 Apple 上到底有沒有」，不是把那張 1970 年的接回去。**
+- **其餘八張全是 `N→0`**，照第 1894-B 條第 1 點先重查寫法、再進目錄全掃。
+
+## 5428　浅川マキ：**Apple 上只有一個藝人實體，成因 14 不成立**
+`entity=musicArtist&country=jp` 四種寫法——`浅川マキ`／`Maki Asakawa`／`Asakawa Maki`／`アサカワマキ`
+——**四次全部只回同一筆 `391660263`**（`artistName` 逐字 `Maki Asakawa`、`primaryGenre` 逐字 `ロック`、
+URL 逐字 `/jp/artist/浅川マキ/391660263`）。
+再用 `term=Asakawa` 掃 25 筆藝人（朝川朋之／浅川太平／浅川悠／朝川ひろこ…），**她仍然只有這一個實體。**
+⚠ **與 c-179 第 4939 條的本田竹広（被拆成三個實體）相反**——**這一位沒有被拆，成因 14 在這六張全部不適用。**
+
+## 5429　浅川マキ 的目錄全掃：**jp 只有 5 筆，零筆是 1987–1989**
+`lookup?id=391660263&entity=album&limit=200`，逐筆列：
+| collectionId | 盤名 | 日期 | 軌數 | copyright |
+|---|---|---|---|---|
+| 1443465175 | Asakawa Maki No Sekai | 1970-09-05 | 12 | ℗ 1970 USM JAPAN, a division of UNIVERSAL MUSIC LLC. |
+| 1443281425 | Maki II | 1971-09-05 | 12 | ℗ 1971 USM JAPAN / UNIVERSAL MUSIC LLC. |
+| 1443116680 | Maki Live | 1972-03-05 | 12 | ℗ 1972 USM JAPAN / UNIVERSAL MUSIC LLC. |
+| 720499031 | Single Collection | 2000-04-12 | 22 | This Compilation ℗ 1988 EMI Music Japan Inc. |
+| 720577490 | Long Good-Bye | 2010-10-27 | 32 | This Compilation ℗ 2010 EMI Music Japan Inc. |
+`country=us` 只有那兩張合輯、`country=gb` **0 筆**。
+⚠ ⚠ **在架的原盤只有 1970–72 那三張、全部 ℗ Universal；EMI Music Japan 那一端只上了兩張合輯、零張原盤。**
+**六張卡全部是 1987–1989 的 Eastworld（東芝EMI）原盤——目錄裡一張都沒有。**
+
+## 5430　浅川マキ：盤名直查六種寫法**全部 0 相符**
+`entity=album&country=jp` 逐字試：`こぼれる黄金の砂` **0 筆**／`夜のカーニバル 浅川マキ` **0 筆**／
+`ナッシング・アット・オール・トゥ・ルーズ` **0 筆**／`ストレンジャーズ・タッチ` **0 筆**／
+`アンダーグラウンド 浅川マキ` **0 筆**／`幻の女たち` 回 15 筆、**全部是久石譲／ジブリ 系的噪音**（零相符）。
+⚠ **片假名題（成因 13 的一支）在這六張全部不成立**——卡單 `queryAlias` 列的片假名寫法逐一試過，一筆都沒叫出東西來。
+
+## 5431　⚠ ⚠ **本層最硬的一次對照：同廠、同期、同一天的 本多俊之 在架，浅川マキ 不在**
+排除「東芝EMI 沒把 1987–89 放上來」這個解釋。
+`lookup?id=5601596`（本多俊之）jp **31 筆**、`lookup?id=1676267143`（本多俊之ラジオクラブ）jp **3 筆**，
+其中 1987–1990 的 EMI Music Japan 盤密集在架：
+《The Woman From Marusa》**1987-02-25** ℗1987／《Radio Club》1987-07-22／《Marusa no Onna 2》1988-01-25／
+《Something Coming On》1988-10-26／《FOOT PRINTS》1989-04-08／《Touhou Kenbunroku》1989-12-06／
+《Symbiosis》1990-07-25（另有《Shangrila》1982-11-21、《ドリーム》《Modan》1984、《Saxophone Music》1986…）。
+⚠ ⚠ **《The Woman From Marusa》的發行日 1987-02-25，與 `浅川マキ《こぼれる黄金の砂》Eastworld WTP-90451`
+的 1987-02-25 逐字是同一天、同一家廠。一張在架、一張不在。**
+⚠ **`幻の女たち`（Eastworld RT28-5147、1988-05-25）是 浅川マキ・本多俊之 對等聯名**——
+**本多那一端在它前後各有一張在架（1988-01-25 與 1988-10-26），這張仍然不在。**
+**→ 成因不在廠牌、不在年段、不在聯名的另一方；缺的是「浅川マキ」這一個藝人本身。**
+
+## 5432　⚠ 1993 年廢盤：**事件屬實，但射程對不上，只能當旁證不能當成因**
+c-179 研究層報的「她 1993 年自己要求廢盤過」——本層去查實。
+**ja.wikipedia「浅川マキ」條逐字**：
+「1993年、東芝EMIが「音蔵シリーズ」と称するアルバム作品群のCD化企画を行い、
+その中に浅川マキのアルバムが4タイトル含まれていたが、発売するも短期間で自ら廃盤にした。」
+理由逐字是**音質が気に入らなかった**（她特別提到「マイ・マン」的 CD 音色不是爵士）。
+**→ 事件成立：她本人確實把自己的 CD 化作品撤掉過。**
+⚠ **但那是 1993 年音蔵シリーズ 的 4 張 CD，不是 1987–89 Eastworld 那一整段**，
+**所以它只能當「她的目錄曾因本人意願被撤」的先例，不能直接當本批六張的成因。**
+⚠ ⚠ **一個直接的接點**：**她提到的「マイ・マン」就是池中 c-179 的 `浅川マキ｜My Man`，目前也是 `unavailable`。**
+
+## 5433　⚠ ⚠ 池中 16 張浅川マキ：**ready 只有 1 張，而那 1 張正好是 Universal 持有的那一張**
+`previews.json` 掃 `浅川マキ` 開頭的鍵共 **16 個**：
+**`ready` 1 個**——`浅川マキ｜Live`（c-175、`front: jp`、`appleTitle` 逐字 `Maki Live`）＝ 第 5429 條那張 **1972 ℗ Universal**。
+**`unavailable` 15 個**——`Maki VI`（c175）／`灯ともし頃`・`流れを渡る`（c176）／`寂しい日々`（c177）／`ONE`（c178）／
+`Cat Nap`・`My Man`（c179）／`Who's Knocking On My Door`（c180）／`Some Years Parst`（c181）／**本批六張**。
+⚠ ⚠ **1/16，而且唯一那一張的權利人與其餘十五張不同。**
+**本層判定：六張全歸成因 1（市場真的沒有），且成因落在藝人／權利人側，不在比對邏輯側。**
+**那張 1970 年的《Asakawa Maki No Sekai》一筆都不接回去**——第 1935-B 條第四道退得對。
+
+## 5434　`John Kaizan Neptune —《Tokyosphere》`（1988，Victor VDP-1367）：實體與寫法
+`musicArtist` jp：`John Kaizan Neptune` 與 `ジョン・海山・ネプチューン` 都回 **`2726341`**
+（顯示名 `ジョン・海山・ネプチューン`、ジャズ），另有 `1752055411`「竹竹 with Neptune(ジョン・海山・ネプチューン)」
+與 c-179 第 4943 條記過的 `2677490`「TakéDaké」。
+⚠ **卡單 `queryAlias` 裡有 `John Kaizan Neptune And Tokyosphere`（疑似團名）——
+`term=Tokyosphere&entity=musicArtist&country=jp` 回 **0 筆**，`トウキョウスフィア&entity=album` 也 **0 筆**。
+**「And Tokyosphere 被 Apple 建成團名實體」這個假設實測否決。**
+
+## 5435　⚠ `Tokyosphere` 歸**成因 1**——對照組是**他自己的另一張 Victor 盤**
+`lookup?id=2726341&entity=album` jp **12 筆**（較 c-179 第 4944 條多一筆 `Sky Spirit` 換了 id）：
+《The Circle》1985／《Jazzen》1987（`1435800449` ℗Savoy ＋ `1747569937` ℗1998 日本コロムビア 兩筆重複建檔）／
+**《Sky Spirit》1991-09-21、9 軌、`6781955671`、copyright 逐字 `℗ Victor Entertainment`**／
+《WORDS CAN'T GO THERE》1991／《Dance for the One in Six》1991／《Kite》1992／《River Rhythm》1994／
+《Steps In Time》2004／《Bamboo Magic》2007／《John Kaizan Neptune Collection》2009；
+`1752055411` 另 1 筆《Asian Roots》2006。
+⚠ ⚠ **同一位藝人、同一家 Victor、相差三年：《Sky Spirit》1991 在架，《Tokyosphere》VDP-1367 1988 不在。**
+**→ 這比 c-179 第 4945 條那次（「東芝 Eastworld 1980–83 整段空」）更緊**：
+**這裡不是廠牌整段空，是同廠同人之間單獨缺這一張。仍歸成因 1。**
+
+## 5436　`MALTA` 的兩個爵士實體——**先分辨清楚再掃，否則會掃錯人**
+`term=MALTA&entity=musicArtist&country=jp` 回 12 個實體，爵士側兩個：
+- **`1044928273`「Malta」ジャズ ＝ 本人**（下一條全掃）。
+- **`414174108`「MALTA」ジャズ ＝ 另一個人**：目錄 10 筆全是 2019–2025 的義大利電音單曲與 EP
+  （`Attention - Single` ℗2020 Eleveh Records／`Psychological - EP` ℗2019 Deep Bear／
+  `Cronofobia EP` ℗2022 Miniline／`Reborn - Single` ℗2025 Discotec…）——**與 1980 年代的日本サックス 手無關。**
+⚠ **這是 c-179 第 4939 條那個陷阱（「查到 Native Son」≠「查到我們的 Native Son」）在本批的第二例，
+而且這一次連 `primaryGenre` 都同樣是 `ジャズ`，只能靠年代與廠牌分辨。**
+另有 `212621561`「Malta」ロック ＝ 第 1946-B 條記過的瑞典流行團。
+`Malta Hit & Run`／`マルタ・ヒット・アンド・ラン` 當 `musicArtist` 查皆 **0 相符**（前者回 U2／Pet Shop Boys 等噪音）
+——**「Hit & Run 被建成團名實體」實測否決。**
+
+## 5437　MALTA 的目錄全掃：**16 筆、全部 Victor Entertainment，1987 起跳**
+`lookup?id=1044928273&entity=album&limit=200` jp，依年份排：
+《My Ballads》1987（℗1995 Victor）／**《Obsession》1988-01-01、11 軌、℗1988 Victor**／
+**《Emission》1990-06-21、10 軌、℗1990 Victor**／《Excelsior》1991-09-21／《High Pressure》1991-10-25／
+《Felicia》1994／《Sparkling》《Summer Dreamin'》1995／《UK Underground》1996／《Cinematrix》1997／
+《Apasionado》1998／《Half Moon Street》2003／《Manhattan In Blue》2004／
+《BIG BAND STAGE》2006（與角田健一ビッグバンド）／《BRASS》2008／《Malta De Chopin》2010。
+**確認第 1946-B 條那句「Apple jp 的 MALTA 目錄最早是 1987 年」逐字成立。**
+
+## 5438　⚠ `MALTA《My Hit & Run》` 與 `《Sapphire》` 同歸**成因 1**——對照是**目錄裡一段精準的缺口**
+兩張卡：`My Hit & Run` ＝ Victor **VDJ-1176**、**1988-12-07**、12 軌；
+`Sapphire` ＝ Victor **VDJ-1205**、**1989-05-21**、12 軌。
+**目錄裡 1988-01-01《Obsession》之後，下一筆就是 1990-06-21《Emission》——中間 29 個月整段空白，
+而這兩張正好落在那個缺口裡**，同一位藝人、同一家 Victor、同一個 `VDJ-` 號段。
+⚠ **`VDJ-1176` 與 `VDJ-1205` 差 29 號、兩張一起缺**，不是單張漏配。
+盤名直查補證：`My Hit and Run MALTA&entity=album` jp 回 2 筆（U2《The Joshua Tree》，零相符）、
+`サファイア MALTA` **0 筆**。
+⚠ **順帶否掉成因 16**：Apple 上**沒有任何對應條目**，所以不可能是被 `SUFFIX`（`- EP`）防呆擋掉。
+
+## 5439　`益田幹夫 —《Smokin' Night》`（1987，JVC VIJ-28135）：**兩個實體都掃過**
+`musicArtist` jp 的 `益田幹夫` 與 `Mikio Masuda` **兩種寫法都回同樣兩筆**：
+`547982809`（顯示名 `益田幹夫`、ジャズ）與 `250055146`（顯示名 `益田幹夫`、ジャズ）
+——⚠ **成因 14 在這一張成立：同一個人被 Apple 拆成兩個實體，而且兩個的顯示名逐字相同。**
+`lookup` 兩個實體合計 **9 筆**：
+- `547982809` 7 筆：《Trace》1974-11-05（℗Universal）／《Mickey's Mouth》1976-08-25（℗Universal）／
+  《Moon Stone》1978-03-25（℗日本コロムビア）／《Silver Shadow》1980-10-21（℗King）／
+  《Black Daffodils Mikio Masuda》1998-02-23（℗Victor）／《CHI CHI》《Mickey Finn》2016-09-21（℗2016 Victor）。
+- `250055146` 2 筆：《Corazon》1979-02-21／《Goin' Away》1979-10-21（皆 ℗1979 King）。
+
+## 5440　⚠ `Smokin' Night` 歸**成因 1**——**1981–1997 整段十七年空白**
+**九筆的年份是 1974／1976／1978／1979／1979／1980／1998／2016／2016——零筆落在 1981–1997。**
+本卡是 **1987 年的 JVC `VIJ-28135`**，**正在那段空白的正中間。**
+⚠ **不是「Victor 沒有他」**：他的《Black Daffodils》1998 與《CHI CHI》《Mickey Finn》2016 三筆都是 ℗Victor
+——**Victor 上了他 1998 年以後的碟，沒上 1987 年那張。**
+盤名直查補證：`スモーキン・ナイト 益田&entity=album` jp **0 筆**。
+
+## 5441　`国府弘子 —《Globe Trotting With Hiroko Kokubu》`（1988，JVC VIJ-28165／CD VDJ-1168）：目錄全掃
+`musicArtist` jp 的 `国府弘子` 與 `Hiroko Kokubu` 兩種寫法**都只回 `167595717`**（單一實體、成因 14 不成立）。
+`lookup?id=167595717&entity=album` jp **17 筆、幾乎全部 Victor**：
+《ピュア・ハート》**1992-08-26**／《Bridge》1997／《Piano Letter》1999／《Moments》2000／《Welcome Home》2002／
+《Winter Selection》2005／《Hola!》2007／《Piano Iccho!》2015／《Piano Party》2020／
+《Piano Songs》2016（與岩崎宏美、℗TEICHIKU）
+**＋ 七筆日期被壓成 `2006-08-02` 的 Victor 再發**（《ダイアリー》9軌／《ライト・アンド・カラー》11軌／
+《ポイント・オブ・ノー・リターン》9軌／《ピアノ・アニヴァーサリー》12軌／《ピアノ・タペストリー》18軌／
+《ニューヨーク・アンカヴァード》10軌／《ピアノ・ヴォイセス》11軌）。
+**有日期的最早一筆是 1992-08-26。**
+
+## 5442　⚠ ⚠ **本層唯一一次「靠軌名才能否掉」的覆核**——那七筆 `2006-08-02` 是真的陷阱
+**那七筆的發行日全被壓成同一天，原始年份整個丟失**——**光看日期無法排除其中一筆就是 1988 年這張。**
+**其中《ピアノ・アニヴァーサリー》12 軌，與本卡 CD 版 `VDJ-1168` 的 12 軌逐字相同**，是最像的一筆。
+兩道獨立覆核：
+1. **取本卡軌單**（cdjournal／官方 discography，12 軌逐字）：`Listen to My Heartbeat`／`Over the Seven Seas`／
+   `Englishman in New York`／`Piazza in the Rain`／`Song for Bohemian`／`Metropolis`／`La Isla Bonita`／
+   `Lady of Spain ~ Mi Tesoro`／`Seaside Street`／`Someday in Paradise`／`Blue Mosque`／`Manhattan 2:00 A.M.`。
+   `lookup?id=167595717&entity=song&limit=200` 取她名下 **200 首**逐首比對——**十二個關鍵詞一首都沒中。**
+2. **直接拉《ピアノ・アニヴァーサリー》`167108848` 的軌單**：逐字是
+   `オールウェイズ~いつもそばに`／`トゥモロウ・ネヴァー・ノウズ`／`フィエスタ`／`シング・フォー・ラヴ`／
+   `リトル・アニヴァーサリー`／`ライフライン`／`スターランド`／`イースター・エッグ`／`シフォン・ケーキ・ボッサ`／
+   `ユーアー・マイ・ムース`／`アイ・ウィッシュ(回想)`／`ノスタルジア`——**與本卡零重疊，是另一張碟。**
+⚠ **記給後面幾批：店面把一整批再發壓成同一個上架日（本例 `2006-08-02` 七筆）時，
+年份這一欄完全不能用，要照第 1893-B 條退回去比軌序。**
+⚠ **`entity=song&limit=200` 會被 200 筆截斷**（她 17 張碟約略就是 200 首），**所以第 1 道單獨不夠硬，是第 2 道封掉的。**
+
+## 5443　`Globe Trotting With Hiroko Kokubu` 歸**成因 1**
+盤名直查補證：`グローブ・トロッティング&entity=album` jp **0 筆**、`Globe Trotting Kokubu` **0 筆**。
+**她的 Apple 目錄從 1992 年起跳，1988 年的這張首作期的碟（以及 1989–1991 那幾年）一筆都沒有。**
+⚠ **與第 1945-B 條第 3 點呼應**：這張是靠第 3716 條救濟才收進來的邊界碟，**版本面與數位化程度本來就薄，方向一致。**
+
+## 5444　`ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦 —《Wave II》`（1988，Paddle Wheel K28P-6477）：**三方各自查**
+照派工（第 1945-B 條記的 `poolRecheck` 第五種失效：MB 把三人聯名建成團名實體），**三個人分開查**：
+- `Gary Peacock`／`ゲイリー・ピーコック` → **`3852152`**（＋`1524305606`、`987016746` Gary Peacock Trio）。
+- `佐藤允彦`／`Masahiko Satoh` → **`19063311`**（＋`75534413` Satoh Masahiko Trio）。
+- `富樫雅彦`／`Masahiko Togashi` → **`4272710`**（＋`1447784770` Masahiko Togashi Trio、
+  `1793263233`／`1793264186` 兩個 Improvisation Jazz Orchestra 實體）。
+- ⚠ **`ウエイブ` 當 `musicArtist` 查 jp 回 8 筆全是 J-Pop 噪音**（Mrs. GREEN APPLE／YOASOBI／back number…）
+  ——**Apple 上沒有把這個三人組建成團名實體，MB 那個形狀在 Apple 這一端不存在。**
+`lookup` 五個實體合計 **169 筆專輯**：`3852152` 84 筆、`19063311` 43 筆、`4272710` 37 筆、
+`75534413` 4 筆、`1447784770` 1 筆。**盤名含 `Wave`／`ウエイ`／`ウェイ` 的只有一筆
+——`1784914454《Think Like the Waves》2006`，不是它。零筆是《Wave II》。**
+
+## 5445　⚠ ⚠ `Wave II` 歸**成因 1**——**King 那一批上架批次在 1983 年就停了**
+`4272710`（富樫雅彦）的 37 筆依日期排，**King Record 那一段逐筆是**：
+《Ma mere l'oye》1968-10-10／《A DAY OF THE SUN》1979-05-21／《セッション・イン・パリ VOL.1》1979-12-21／
+《同 VOL.2》1980-04-21／《THE FACE OF PERCUSSION》1981-02-21／《The Ballad My Favorite》1981-10-21／
+《CONTRAST》1982-01-01／**《SPIRITUAL MOMENTS》1982-02-21（`1793263615`）**／
+**《Flame Up》1982-11-21（`1793263762`）**／《ETERNAL DUO》1983-03-05／《Pulsation》1983-10-21。
+⚠ ⚠ **`1793263xxx` 這一整串連號 id 就是 King 的同一次批次上架，涵蓋 1979–1983；
+之後他的目錄直接跳到 1999 年。本卡 `K28P-6477` 是 1988-01-22，落在那個批次的射程之外。**
+**這與 c-179 第 4950／4954 條的同號段對照互補**：那兩次是 `K28P-61xx/62xx`（1982）在架，
+**本次是同一家 King 的 `K28P-6477`（1988）不在——King 上的是 1983 年以前那一段。**
+⚠ **另外兩位不是瓶頸**：Gary Peacock 84 筆、1986–1991 的 ECM 盤密集在架
+（《Standards Live》1986／《Guamba》1987／《Cosi Lontano... Quasi Dentro》1989／《Partners》1989／
+《The Cure (Live)》1990／《Out a Day》1990／《In the Evenings Out There》1991）
+——**他本人同期的歐洲盤全部在架，缺的只有這張日本盤。**
+佐藤允彦 43 筆裡 1985–1991 只有《As If...》1985-05-21 一筆（℗日本コロムビア）。
+
+## 5446　`響野夏子 —《Qui Qui》`（1989，Victor VDP-1484）：⚠ **Apple 上根本沒有這個人的實體**
+`musicArtist&country=jp` 四種寫法逐字試：
+`響野夏子` 回 8 筆（優里／YUKI／大野克夫／JUDY AND MARY／くるり／坂本龍一／Sia／BGM 頻道）**零相符**；
+`Natsuko Kyono` **0 筆**；`キョウノナツコ` **0 筆**；`Kyono Natsuko` **0 筆**；
+再放寬成 `響野` 回 10 筆（柊乙葉(CV:響野こひめ)／優里／JUDY AND MARY／BGM channel／MY FIRST STORY／
+久石譲／Cafe Music BGM Channel／ASIAN KUNG-FU GENERATION／Sia／Michael Jackson）**同樣零相符**。
+⚠ **與 c-179 第 4949 條的 `99.99` 同形：不是實體被拆（成因 14），是一個實體都沒有。**
+**本線第二次遇到這種形狀，兩次都在同一條 jp-1 線上。**
+
+## 5447　`Qui Qui` 歸**成因 1**
+**掛名側沒有實體可掃、盤名側探測層七個店面全 0（`jp:12→0` 起）。**
+⚠ **本卡的掛名字串 `響野夏子` 是 b 組第 5207 條新立的**——**新立掛名＋Apple 零實體，兩件事互相印證：
+這一位在數位端幾乎沒有足跡。**
+⚠ **否掉成因 12（店面把掛名當盤名）**：若成立，`響野夏子` 那次 `entity=musicArtist` 查詢就會撈到盤面，實測沒有。
+
+## 5448　`篠崎正嗣 —《Water & Violin》`（1989，Seven Seas 292E-2047）：單一實體、2 筆
+`musicArtist` jp 的 `篠崎正嗣`／`Masatsugu Shinozaki`／`しのざきまさつぐ`／`Shinozaki Masatsugu`
+**四種寫法全部只回 `308048137`**（顯示名 `篠崎正嗣`、**primaryGenre 逐字 `サウンドトラック`**）
+——**單一實體，成因 14 不成立；成因 16 那一支（平假名化，c-176 第 4303 條、已於第 4353 條被推翻）也用不上。**
+`lookup` jp **只有 2 筆**：
+《Nasa = Masa (2017 Remaster)》**1980-05-25**、8 軌、℗1980, 2017 WARNER MUSIC JAPAN／
+《Nobuhiko Obayashi Director's Work Sound Collection the Discarnates OST》1998-02-18、18 軌、℗1998 松竹。
+
+## 5449　`Water & Violin` 歸**成因 1**
+盤名直查：`ウォーター&ヴァイオリン&entity=album` jp 回 8 筆（東京ディズニーランド／劇団四季／JUJU…）**零相符**；
+`Water and Violin Shinozaki` **0 筆**。
+⚠ **對照：他自己 1980 年的 Warner 盤《Nasa = Masa》在架（而且是 2017 重製版）**
+——**不是「這位小提琴手沒數位化」，是 King／Seven Seas 的 `292E-` 那一張沒上。**
+⚠ **他的 Apple 實體被歸在 `サウンドトラック`，目錄裡唯一的另一筆也是電影配樂**
+——**他在數位端的身分是配樂樂手，不是個人名義的爵士／フュージョン 演奏者，與 1989 年這張個人作的定位不同。**
+
+## 5450　⚠ ⚠ **本層的方法論收穫：成因 1 底下要分「藝人層級」與「廠牌／年段層級」兩種形狀**
+c-179 第 4940／4945 條把成因 1 的對照組做成「同廠同期在不在架」，本批 14 張全部照做，
+**結果分成清楚的兩群，而且兩群的下一步不一樣**：
+- **廠牌／年段層級的缺口**（8 張）：`Tokyosphere`／`My Hit & Run`／`Sapphire`／`Smokin' Night`／
+  `Globe Trotting`／`Wave II`／`Qui Qui`／`Water & Violin`。
+  形狀是「這位藝人在架，但缺的那幾年／那家字標沒上」——
+  **MALTA 是 1988-01→1990-06 的 29 個月缺口、益田幹夫 是 1981–1997 的十七年缺口、
+  富樫雅彦 是 King 上架批次只做到 1983、国府弘子 是目錄從 1992 起跳、篠崎正嗣 與 響野夏子 是整份目錄只有 0–2 筆。**
+  **→ 往後同一位藝人的碟若落在已知的在架區間內，值得再查一次；落在缺口裡的，不必再查。**
+- **藝人層級的整段缺席**（6 張，全是浅川マキ）：形狀是
+  **「同廠、同年、甚至同一天發行的別人在架，就是這一位一張原盤都沒有」**（第 5431 條），
+  **而且權利人那一端明明有在上架（EMI Music Japan 的兩張合輯）**，
+  **再加上這位藝人有「本人要求廢盤」的成案先例**（第 5432 條）。
+  **→ 這一種不必再逐張查**：池中 16 張已經驗證 15 張不在、唯一在架的那張權利人不同（第 5433 條）。
+⚠ **本層不把它記成第十七種成因**——**它不是新的 `0→0` 機制，是成因 1 的診斷分層。**
+**但它是可操作的：它決定「下一批同一位藝人的碟要不要再花一次回撈工時」。**
+
+## 5451　⚠ `apple-candidates.md` 本批的實測命中率：**覆核 17 個候選，0 個成立**
+該清單給 14 張標了 17 個候選 id，本層逐筆覆核（配合第 1894-B 條「否定可靠、肯定不可靠」）：
+- **標 `掛名沒過` 的 12 個全部確實不成立**（Thelonious Monk／Chris Potter／T3r Elemento／La Zenda Norteña／
+  Here Come the Mummies 的各種《Underground》、Dizzy D《What It Be Like》、The Jazz Crew《Smokin' Nights》、
+  Various Artists《Globe Trotting》48 軌、Joseph of Mercury 與 James Waves 的《Wave II》、
+  Crystal Castles《(II)》、Charles Aznavour《Qui ?》、星野源《Stranger》）——**逐筆看過再否，沒有一筆冤枉。**
+- **標 `走藝人目錄` 的 5 個（Neptune《Jazzen》×2、Malta《Obsession》《My Ballads》《Emission》）
+  全部是「同一位藝人、但是另一張碟」**——依據欄寫的逐字是「年份」，**而年份照第 1893-B 條是優先序最低的一欄。**
+- **標「目錄裡找不到」的 4 張**（`Nothing At All To Lose`／`幻の女たち`／`夜のカーニバル`／`Water & Violin`）
+  ——**本層獨立全掃後結論全部一致。**
+**→ 第 1894-B 條再得一個實例：17/17 否定全對、17/0 肯定全錯。措辭維持不變。**
+
+## 5452　⚠ ⚠ `previews.json`：**一個鍵都沒有改**
+**14 張全部確定 Apple 上沒有，照派工「確定沒有的留原樣」，本層沒有寫入任何一個鍵。**
+**因此 `recoveredBy: "c182-recover"` 與 `recoverNote` 一筆都沒有寫出去**
+——⚠ **那兩個欄位只給真的救回來的鍵用；在沒救回的鍵上寫它，會讓第 1935-B 條那條
+「`recoveredBy` 非空的鍵任何重跑都不准刪」的保護誤套在一個機器判得對的格子上。**
+**進出各數一次：鍵總數 `3697 → 3697`，檔案 sha256 前 16 碼 `233279434db8de80` 未變。**
+⚠ 六張浅川マキ 的 `rejectedMatch` 欄原樣保留——**它逐字記著被第 1935-B 條退掉的那一筆，是有用的稽核痕跡，不該抹掉。**
+
+## 5453　交件總表：**救回 0 張，14 張全歸成因 1**
+| # | 卡片 | `tried` | 成因 | 排除掉的其他成因 | 對照組 |
+|---|---|---|---|---|---|
+| 1 | `浅川マキ｜Underground` | `jp:8→1`＋1935-B退 | **1（藝人層級）** | 14（單一實體）、13（片假名題全試） | 第 5431／5433 條 |
+| 2 | `浅川マキ｜こぼれる黄金の砂 -What it be like-` | 同上 | **1（藝人層級）** | 同上 | ⚠ **本多俊之《The Woman From Marusa》同一天 1987-02-25 在架** |
+| 3 | `浅川マキ｜Nothing At All To Lose` | `jp:8→1`＋1935-B退 | **1（藝人層級）** | 同上 | 同上 |
+| 4 | `浅川マキ・本多俊之｜幻の女たち` | `jp:10→1`＋1935-B退 | **1（藝人層級）** | 2／2c（本多那一端 31 筆單獨掃過） | **本多 1988 年前後各一張在架** |
+| 5 | `浅川マキ｜Stranger's Touch` | `jp:8→1`＋1935-B退 | **1（藝人層級）** | 同 #1 | 同上 |
+| 6 | `浅川マキ｜夜のカーニバル` | `jp:8→1`＋1935-B退 | **1（藝人層級）** | 同 #1 | 同上 |
+| 7 | `John Kaizan Neptune｜Tokyosphere` | `jp:12→0` | **1（廠牌／年段）** | 團名實體（`Tokyosphere` 0 筆） | **他自己的 Victor 盤《Sky Spirit》1991 在架** |
+| 8 | `MALTA｜My Hit & Run` | `jp:11→0` | **1（廠牌／年段）** | 16（無條目）、團名實體 | **目錄 1988-01→1990-06 缺口** |
+| 9 | `MALTA｜Sapphire` | `jp:12→0` | **1（廠牌／年段）** | 同上 | 同上 |
+| 10 | `益田幹夫｜Smokin' Night` | `jp:10→0` | **1（廠牌／年段）** | — | **1981–1997 十七年空白；Victor 有他 1998 後的碟** |
+| 11 | `国府弘子｜Globe Trotting With Hiroko Kokubu` | `jp:12→0` | **1（廠牌／年段）** | ⚠ **七筆 `2006-08-02` 再發逐軌否掉** | **目錄從 1992-08-26 起跳** |
+| 12 | `ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II` | `jp:12→0` | **1（廠牌／年段）** | 團名實體（`ウエイブ` 零相符）、14 | **King 上架批次 1979–1983 就停；Peacock 同期 ECM 全在架** |
+| 13 | `響野夏子｜Qui Qui` | `jp:12→0` | **1（廠牌／年段）** | 14（零實體）、12 | **Apple 上沒有這個人** |
+| 14 | `篠崎正嗣｜Water & Violin` | `jp:2→0` | **1（廠牌／年段）** | 14（單一實體）、16 | **他自己 1980 年的 Warner 盤在架** |
+**c-182 的最終數字維持不變：探測層怎麼判，就是最後的數字。**
+
+## 5454　給主線與 c-183 之後的四件
+1. ⚠ ⚠ **浅川マキ 不要再派回撈**：池中 16 張已驗完 15 張確定不在、唯一 ready 的那張權利人不同（第 5433 條）。
+   **往後她的碟一判 `unavailable` 就直接收下這個結果**，省掉整整一支代理的工時。
+   **若主線要更硬的收尾，該做的不是再查 Apple，是去問權利人側（EMI Records Japan／Universal）有沒有公開說明。**
+2. ⚠ ⚠ **`2006-08-02` 這種「整批再發壓成同一個上架日」會讓年份欄完全失效**（第 5442 條）。
+   **建議 `probe-previews.mjs` 的年份漂移那一道加一個例外**：
+   **同一個 artistId 底下有 N 筆（本例 7 筆）共用同一個 `releaseDate` 時，那個日期不可當年份證人。**
+   （本層是靠逐軌比對封掉的，機器目前沒有這道。）
+3. **第 1935-B 條第四道在本批是對的**：六筆退件逐筆覆核，**零筆冤枉**。
+   ⚠ **但它的 `rejectedMatch` 只記了一筆**——**那六筆的 `jp:8→1` 其實是「八個候選裡只有一個通過前三道」，
+   本層無從得知另外七個是什麼。** 建議把被退的候選一起記進 `rejectedMatch`（陣列），
+   下一位回撈層就不必重打那八次查詢。
+4. **本層沒有發現反方向的偽陽性**（c-179 第 4941 條那種）。`dup-collection.mjs` 的結果不受影響：本層零寫入。
+
+## 5455　邊界聲明
+**只讀了** `batch-progress/c179/rulings.md`（4936–4955）、`batch-progress/c163/rulings-mainline.md`
+（1893-B／1935-B／1937-B／1938-B／1942-B／1943-B／1944-B／1945-B／1946-B）、
+`batch-progress/c182/apple-candidates.md`、`batch-progress/c182/slice.json`、
+`batch-progress/c182/prop-a.json`／`prop-b.json`（只做唯讀比對）、`batch-progress/probe/previews.json`。
+**只寫了** 本檔（append，第 5426–5455 條）。
+⚠ **`batch-progress/probe/previews.json` 一個鍵都沒有改**（第 5452 條），**鍵總數 3697 → 3697、sha256 未變。**
+**`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`caa.json`／卡單／研究稿／
+其他批次的檔案／KV／Firestore 全部沒碰。**
+**沒有 `git add`／`git commit`／`git push`，沒有動 git 索引。**
+**臨時腳本與中間檔一律放在 scratchpad 的 `c182rec/` 底下。**
+⚠ **append 前照派工跑過 `git show HEAD:batch-progress/c182/rulings.md` 與 `ls` 兩者**：
+兩邊都停在第 5218 條、1666 行，**工作區沒有別人未提交的段落**；本層只在檔尾 append，未改動任何既有行。
