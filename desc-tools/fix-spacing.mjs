@@ -49,6 +49,15 @@ const protectedTokens = (() => {
         for (const s of [c.artist, c.album]) if (typeof s === 'string' && adjacent.test(s)) out.add(s);
     }
   } catch { /* 目錄不存在（本機路徑不同）就略過 */ }
+  // 2026-09-22（c-176 writer-1 抓到，主線第 1914-B 條）：**`jp-proper-names.json` 也該進保護清單。**
+  // 那個檔本來是給 `qa-batch` 的簡體掃描當白名單用的，但它裝的正是
+  // 「日文專名與逐字引用的官方原句」——`ドラム・ブレイクが炸裂する国内外のDJ人気曲`
+  // 這種句子裡的 `DJ` 被這支腳本要求補空格，而那是日文原句，補了就改壞引用。
+  // **同一份名單同時服務兩個檢查是對的：它記的就是「這串字不要動」。**
+  try {
+    const raw = JSON.parse(fs.readFileSync(new URL('./jp-proper-names.json', import.meta.url), 'utf-8'));
+    for (const s of raw) if (typeof s === 'string' && adjacent.test(s)) out.add(s);
+  } catch { /* 檔不存在就略過 */ }
   // 長的先比，避免短字串先咬掉長專名的一半
   return [...out].sort((a, b) => b.length - a.length);
 })();
