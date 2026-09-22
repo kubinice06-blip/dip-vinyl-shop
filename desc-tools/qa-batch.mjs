@@ -79,8 +79,13 @@ const collectKeyTracks = obj => {
   walk(obj);
   return out;
 };
+// 2026-09-22（c-178 a 抓到，主線第 1930-B 條）：**`「」` 裡的逐字引用也要剝掉。**
+// jp-1 線的 `facts` 常引日本廠牌官方頁的原句，那些句子裡本來就有半形逗號與英數夾中文；
+// 那是**引文**，照原文抄才對，插空格或換標點就是改掉引文本身。
+// 與 `《》〈〉` 同一個理由，只是括號換了一種——`fix-spacing` 已經在第 1916-B 條做過同樣的補。
+// ⚠ 只剝成對的 `「」`（避免單邊出現時把半篇正文吃掉）。
 const stripLegit = s => {
-  let t = String(s).replace(/《[^》]*》/g, '').replace(/〈[^〉]*〉/g, '');
+  let t = String(s).replace(/《[^》]*》/g, '').replace(/〈[^〉]*〉/g, '').replace(/「[^」]*」/g, '');
   for (const a of KEYTRACKS) t = t.split(a).join('');
   for (const a of ALLOW) t = t.split(a).join('');
   return t;
