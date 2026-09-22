@@ -1759,3 +1759,543 @@ c-178 研究層兩段（4776–4835）。
 8. ⚠ **`阿川泰子《Melodies》` 的第 4977 條救濟仍然成立，但第二肢的數字要改寫**（見 5505）
    ——**「10 軌裡 5 軌」實為「一軌新寫器樂曲＋九軌翻唱，其中兩到三首是爵士標準曲」**；
    **主線若要覆核那條救濟，請照本條的逐軌表看，不要照原數字。**
+
+---
+
+# c-181 b 組研究層裁定（5526–5555）
+
+批次 c-181｜b 組 13 張（1985–1987 年段；ビクター 8・東芝 2・King 2、其中ビクター 8 含 Invitation 3）｜研究層｜2026-09-22
+輸入：`desc-tools/batches/cards/c181-cards.json` 的 `group === "b"` 13 筆（⚠ 分組欄位逐字是 `group`，不是 `g`）
+輸出：`desc-tools/batches/research/c181-b.json`
+依據 `desc-tools/prompts/research-base.md`（含開頭的雲端線三處例外：產出直接寫進 repo、每張 8–12 條 `facts` ＋ 完整 https `src`、`key` 從卡單逐字複製、`status` 與 `coverage` 並存）、
+`batch-progress/CURATION-BRIEF-jp1.md` 第〇節與 `CURATION-BRIEF-bluenote-post1985.md` 附錄二、
+本檔 4986–5007（策展層 b 組）、`c163/rulings-mainline.md` 第 1934-B 至 1948-B 條、`c178/rulings.md` 的研究層兩段（4776–4805／4806–4835）。
+
+**13 張全部 `full`、facts 合計 156 條（每張恰好 12 條，上限）、`src` 156/156 完整 https｜推翻策展層十五處｜另推翻派工信與主線第 1948-B 條轉述各一處｜本檔用到 5555。**
+
+---
+
+## 5526　總表：**13 張，facts 合計 156 條，每張恰好 12 條；full 13、thin 0**
+
+| # | 掛名 —《盤名》 | facts | status | 本層對這張做了什麼 |
+|---|---|---:|---|---|
+| 0 | 鈴木良雄 —《Touch of Rain》 | 12 | full | 製琴家族（祖父鈴木政吉・叔父鈴木鎮一）；**推翻兩處人名**（5529／5535） |
+| 1 | 益田幹夫 —《Dear Friends》 | 12 | full | ⚠ ⚠ **推翻派工信第五節第 1 點**（5540）；CD 多的兩軌是標準曲（5541）；蕭邦與 Lecuona 的兩段引子 |
+| 3 | 土取利行 —《磬石（サヌカイト） 古代石の自然律》 | 12 | full | 製作人是他的伴侶桃山晴衣；サヌカイト 的命名史；青ノ山 在他自己的縣 |
+| 4 | 櫻井哲夫 —《Dewdrops》 | 12 | full | ⚠ ⚠ **推翻「大野愛果」**（5531）；和田アキラ 是他十六歲就認識的人 |
+| 5 | 高中正義 —《Jungle Jane Tour Live》 | 12 | full | 舊曲全是前一年半的單曲；中野サンプラザ；逐軌時長已重比 |
+| 6 | 高中正義 —《Jungle Jane》 | 12 | full | ⚠ ⚠ **推翻外國藝人表：EVE 是沖繩三姊妹**（5537）；**推翻兩處管樂人名**（5534） |
+| 8 | 小宅珠実 With Great Jazz Quartet —《Hot Flutes》 | 12 | full | ⚠ ⚠ **本層最值錢的一格：前一天的實況盤**（5539）；**Alan Dowson 是拼錯**（5538） |
+| 9 | 高橋達也と東京ユニオン —《Keeping Count》 | 12 | full | Basie 走後兩年的致敬盤；**推翻一處人名**（5535）；高浪初郎 的資歷 |
+| 11 | 坂田明 —《Tacology》 | 12 | full | ⚠ ⚠ **千野秀一 在本線第二次被寫錯**（5530）；Plankton Studio |
+| 13 | MALTA —《High Pressure》 | 12 | full | 第一屆ゴールドディスク大賞（5551）；キャビン 香菸廣告；**推翻製作人名**（5532） |
+| 14 | 鈴木良雄 & MATSURI —《Fairy Tale》 | 12 | full | **推翻三處人名**（5529／5532／5533）；空 `styles` 的反證（CD 逐字 Contemporary Jazz） |
+| 15 | 阿川泰子 —《Ms. Mystery》 | 12 | full | ⚠ ⚠ **邊界收件補到兩格證據**（5549）：廠牌自稱西海岸フュージョン 傑作、伴奏是 Karizma；〈Blue〉有日本作曲者 |
+| 17 | 国府弘子 —《More Than You Know》 | 12 | full | 出道作第二來源確認；盤名是標準曲題而碟裡沒有那首曲 |
+
+**thin 0 張。** 每張的 `src` 相異網域數是 2 到 5；13 張全部有 Discogs 原壓的整筆 credits，十位領銜者裡八位在 ja 維基有條目（益田幹夫 的條目是空的、MALTA 的條目在 `MALTA` 這個題名下），**沒有一張需要靠推測補。**
+
+---
+
+## 5527　⚠ 再發版本數：**13 張逐筆重跑 `masters/<id>/versions`（`per_page=100`），數字改判 0 筆——但內容補到七格**
+
+派工信第二節逐字說「本批策展層已經跑完整版本表」「你這一層的重點不是重數一次，是『數字對不等於內容全』」。**逐筆重跑的結果與第 4999 條完全一致：**
+
+| 碟 | master | 策展層 | 本層重跑 | 差 |
+|---|---:|---:|---:|---:|
+| Touch of Rain | 604489 | 5 | **5** | 0 |
+| Dear Friends | 1320026 | 4 | **4** | 0 |
+| 磬石（サヌカイト） | 875540 | 4 | **4** | 0 |
+| Dewdrops | 1040720 | 6 | **6** | 0 |
+| Jungle Jane Tour Live | 3570809 | 2 | **2** | 0 |
+| Jungle Jane | 426260 | 6 | **6** | 0 |
+| Hot Flutes | 2121838 | 2 | **2** | 0 |
+| Keeping Count | 994336 | 5 | **5** | 0 |
+| Tacology | 1368689 | 3 | **3** | 0 |
+| High Pressure | 567208 | 11 | **11** | 0 |
+| Fairy Tale | 1347150 | 3 | **3** | 0 |
+| Ms. Mystery | 1347876 | 4 | **4** | 0 |
+| More Than You Know | 1036272 | 5 | **5** | 0 |
+| **合計** | | **60** | **60** | **0** |
+
+→ **c-176 a 第 4317 條、c-177 a 第 4567 條、c-178 兩組的結論在本批第五次成立：策展層自己跑完整張版本表之後，研究層的重跑就是純覆核。**
+⚠ **但「內容全」那一層補到七格**，逐項見 5542（CD 多出來的軌別，五張）、5543（數位發行，三張）、5544（逐日日期，四格）。
+⚠ **三筆「資料庫裡只有初版族」照第 1879-B 條的但書處理**：**Jungle Jane Tour Live**（原壓＋1994 音蔵）、**Hot Flutes**（原壓＋同期 CD）、**Fairy Tale**（原壓＋宣傳盤＋同期 CD），三張的 facts 逐字寫的是「Discogs 的完整版本表只有 N 筆」，**沒有一張寫成「沒有再發」。**
+⚠ **沒有 master 頁的碟：本組 0 筆**（13 筆全部有 master），⚠ **同一張碟有兩個未折疊 master 的：本組 0 筆**（`High Pressure` 的七吋單曲 master 1524543 與 `Jungle Jane` 的七吋單曲 master 1153452 逐字都是 `7", Single`，不計入）。
+
+---
+
+## 5528　⚠ ⚠ **推翻總表：本組 13 處人名 ＋ 2 處判斷 ＝ 15 處，另推翻派工信與主線轉述各 1 處**
+
+| # | 卡 | 被推翻的是什麼 | 依據 | 條號 |
+|---:|---|---|---|---|
+| 1 | Touch of Rain／Fairy Tale | 「井上智彦」→ **井上淑彦** | Discogs `realname` ＋ ja 維基森山威男 條目 | 5529 |
+| 2 | Tacology | 「知野秀一」→ **千野秀一** | Discogs `namevariations` ＋ ja 維基條目 | 5530 |
+| 3 | Dewdrops | 「大野愛果」→ **大野えり** | Discogs `realname` ＋ 生年時序反證 | 5531 |
+| 4 | High Pressure／Fairy Tale／More Than You Know | 「田口明」→ **田口晃** | Discogs `realname` | 5532 |
+| 5 | Fairy Tale | 「內田浩世」→ **内田浩誠** | Discogs `realname` | 5533 |
+| 6 | Jungle Jane | 「金崎潤一」→ **兼崎順一** | Discogs `namevariations` 十餘形全姓兼崎 | 5534 |
+| 7 | Jungle Jane | 「淵野繁雄」→ **渕野繁雄** | Discogs `realname` | 5534 |
+| 8 | Tacology | 「西尾美枝子」→ **西尾美汐** | Discogs `namevariations` | 5535 |
+| 9 | Dewdrops | 「楠木勇有」→ **楠木勇有行** | Discogs `namevariations` | 5535 |
+| 10 | Touch of Rain | 「斎藤純」→ **斉藤純** | Discogs `realname` | 5535 |
+| 11 | Keeping Count | 「根崎達也」→ **根﨑達也** | Discogs `namevariations` | 5535 |
+| 12 | Dewdrops | 「數原晋」→ **数原晋** | Discogs `realname`（專名照原文字形） | 5535 |
+| 13 | Hot Flutes | Discogs 的「Alan Dowson」→ **Alan Dawson**（策展層寫對了，錯的是資料庫） | 同行程實況盤 releases/13382685 | 5538 |
+| 14 | Jungle Jane | 外國藝人表把 **Eve 算成外國樂手** → EVE 是沖繩三姊妹合唱團 | ja 維基 `EVE (歌手グループ)` | 5537 |
+| 15 | Dear Friends | 「八軌全部由益田幹夫 作曲」的射程 → **只對黑膠成立，CD 的十軌裡有兩首標準曲** | releases/25187296 | 5541 |
+| — | 派工信第五節第 1 點／主線第 1948-B 條第 2 點 | 「《ディア・フレンズ》2017 復刻 Discogs 版本表沒收」→ **Discogs 收了** | `masters/1320026/versions` 第四筆 | 5540 |
+
+**本線單批推翻數的排名**：c-178 兩組合計 27 處仍是最高，**本組 15 處與 c-177 a 的 20 處、c-178 a 的 16 處同一量級**。
+⚠ **形狀與前三批完全一致**：**十三處裡有十二處出自同一個機制——`api.discogs.com/artists/<id>` 的 `realname`／`namevariations`**（第 1929-B／1936-B 條的機制，連八批命中）。
+
+---
+
+## 5529　⚠ ⚠ 推翻第一處：**`井上智彦` 不存在，吹薩克斯的是 `井上淑彦`，而且一批兩張都寫錯**
+
+卡單在《Touch of Rain》的 `curatorWhy` 與《Fairy Tale》的 `curatorWhy` 兩處逐字都寫「井上智彦」。三個來源同向，沒有一個支持「智」：
+
+| 來源 | 逐字 |
+|---|---|
+| **Discogs 藝人頁 2291521** | 規範名 `Toshihiko Inoue`，**`realname` 欄逐字「井上淑彦」**，變體欄逐字 `井上 俊彦`／`井上俊彦`／`井上叔彦`／`井上淑彦` 四形，**沒有「井上智彦」**；profile 逐字「Japanese jazz saxophonist, born 25 February 1952, Yokohama, Kanagawa, Japan」 |
+| **ja 維基 `森山威男`** 的ディスコグラフィー | 1982 年《マイ・ディア》逐字「森山威男(DS) **井上淑彦(TS)** 藤原幹典(TS,SS) 望月英明(B)」；1983 年《イースト・プランツ》逐字「榎本秀一,**井上淑彦**(TS,SS)」 |
+| ja 維基 `井上智彦` | **條目不存在**（同名陷阱那一關反查，本層確認沒有這個音樂人條目） |
+
+→ **兩張卡都取井上淑彦，生年與出身地一併寫進 facts。**
+⚠ **這個人在本批是一條跨卡的線**：他同時吹了 1985 年的《Touch of Rain》（高音薩克斯）與 1987 年的《Fairy Tale》（次中音兼高音），**兩張卡的領銜者是同一位**——**本層把他的生年寫在《Touch of Rain》、把森山威男 那兩張唱片的旁證寫在《Fairy Tale》，兩張不重複。**
+
+## 5530　⚠ ⚠ 推翻第二處：**`千野秀一` 在本線第二次被寫成別的姓，而且是同一位樂手**
+
+卡單《Tacology》的 `curatorWhy` 逐字寫「共同製作與鋼琴／合成器是**知野秀一**」。
+
+**Discogs 藝人頁 372520**（規範名 `Shuichi Chino`）的變體欄逐字只有 `千野 秀一` 與 `千野秀一` 兩形；
+**ja 維基有 `千野秀一` 的條目**，逐字「千野 秀一（ちの しゅういち、1951年11月1日 - ）は、日本のキーボーディスト、作曲家、編曲家、即興演奏家」。
+**沒有任何來源支持「知野秀一」。**
+
+⚠ ⚠ **值得記的是它的來歷**：**c-178 b 第 4808 條剛把 Wha-ha-ha 的鍵盤手從「知野芳彦」改正成千野秀一**（該條三處全錯），
+**同一位樂手、同一個機制（千被讀成知）、相隔三批又犯一次**，而且這一次連名字的下半截也不同（芳彦 → 秀一）。
+→ **給主線的建議**：把 `千野秀一` 連同 `知野芳彦`／`知野秀一` 兩個錯形寫進卡單自檢的字串表，**這是本線唯一一個連錯兩次的人名。**
+
+## 5531　⚠ ⚠ 推翻第三處：**《Dewdrops》唱歌的是 `大野えり`，不是 `大野愛果`——時序上差了一整代**
+
+卡單 `curatorRisk` 逐字把人聲列成「Cindy、楠木勇有、山川恵津子、**大野愛果** 等」。
+
+**Discogs 藝人頁 16422**（`Eri Ohno`）的 `realname` 欄逐字是「久墨えり」，變體欄逐字是 `大野えり`／`大野恵理`；
+**ja 維基 `大野えり` 逐字「大野 えり（おおの えり、本名：久墨えり、1955年1月23日 - ）は、日本のジャズ歌手」。**
+**大野愛果 是 1974 年生的作曲家，1986 年本盤錄音時只有十二歲——時序上直接排除。**
+
+→ **本卡取大野えり。**
+⚠ **這一處與第 1919-B 條那批人名改判不同型**：那批是字形錯，**本筆是張冠李戴**（把一位爵士歌手換成另一個世代的流行曲作曲家），
+**而且靠的不是資料庫比對，是生年與錄音年的算術**。→ **給後續批次：人名改判的第二種查法是「這個人那一年幾歲」。**
+
+## 5532　⚠ 推翻第四處：**製作人是 `田口晃`，不是 `田口明`——而且他一個人製作了本組三張碟**
+
+卡單在《High Pressure》《Fairy Tale》《More Than You Know》三處逐字都寫「田口明」（或只寫「田口明」當製作）。
+**Discogs 藝人頁 915559**（`Akira Taguchi`）的 `realname` 欄逐字是「**田口 晃**」，變體欄是空的，profile 逐字「Producer with occasional photography credits.」
+**兩字同讀 akira，這是讀音對、字形錯。**
+
+→ **三張卡一律取田口晃。**
+⚠ **順帶補到策展層完全沒有記的一件事**：**本組 13 張裡有三張的製作人是同一個人，而且三張都在 1987 年、都掛 JVC 或 Invitation**
+——`High Pressure`（1987-06-21）、`Fairy Tale`（1987）、`More Than You Know`（1987-10-21）。
+**這條線已寫進三張卡的 facts，寫作層若要做同批串連，這是本組最乾淨的一條。**
+
+## 5533　推翻第五處：**`内田浩誠`，不是「內田浩世」**
+
+卡單《Fairy Tale》的 `curatorWhy` 逐字寫鋼琴「內田浩世」。
+**Discogs 藝人頁 2603809**（`Kosei Uchida`）的 `realname` 欄逐字是「内田浩誠」，變體欄逐字同形，profile 逐字「Japanese jazz pianist. Born in 1953.」
+→ **本卡取内田浩誠，生年一併寫進 facts。**
+
+## 5534　⚠ ⚠ 推翻第六、七處：**《Jungle Jane》的管樂三人裡有兩個名字是錯的**
+
+卡單 `curatorWhy` 逐字寫「管樂是金崎潤一・斉藤清・淵野繁雄 一組」。逐一回打 Discogs 藝人頁：
+
+| 卡單 | Discogs 藝人頁 | 處置 |
+|---|---|---|
+| **金崎潤一** | 534682 `Junichi Kanezaki`，**`realname` 空**，變體欄逐字 `兼崎順一`／`兼崎純一`／`兼崎 順`／`兼崎“ドン平”順一`／`兼崎ドンペイ`／`兼崎ドンペイ順一`／`カネザキ・ドンペイ` 等**十餘形，全部姓「兼崎」，一形都不姓「金崎」** | **改判兼崎順一**（取最常見的一形） |
+| 斉藤清 | 623514 `Kiyoshi Saito`，變體首形逐字「斉藤 清」（另有斎藤清 一形） | **不改** |
+| **淵野繁雄** | 296794 `Shigeo Fuchino`，**`realname` 欄逐字「渕野繁雄」**（渕），變體欄裡淵／渕兩形並存 | **改判渕野繁雄**（依第 1929-B 條以 `realname` 為準） |
+
+⚠ **兩處的性質不同**：兼崎 那一處是**姓被整個換掉**，渕野 那一處是**異體字**（淵／渕，與 `audits/pool-artist-name-splits.md` 記的浜／濱、櫻／桜 同一家族）。
+⚠ **兼崎順一 的變體集裡還有一個綽號形 `ドンペイ`**，多數盤面把它夾在名字中間（`兼崎“ドン平”順一`），**下游若回打 Discogs 要預期到這一形。**
+
+## 5535　⚠ 推翻第八到十二處：**四處字形與一處字體，全部來自同一個端點**
+
+| 卡 | 卡單逐字 | Discogs 藝人頁逐字 | 本卡取 |
+|---|---|---|---|
+| Tacology | 西尾美枝子 | 6674149 的變體欄逐字 **`西尾美汐`**（`realname` 空） | **西尾美汐** |
+| Dewdrops | 楠木勇有 | 435704 的變體欄逐字 **`楠木勇有行`**（四個字，`realname` 空） | **楠木勇有行** |
+| Touch of Rain | 斎藤純 | 2440374 的 `realname` 逐字 **`斉藤 純`**（斉，變體另有 `斎藤 順`） | **斉藤純** |
+| Keeping Count | 根崎達也 | 2696037 的變體欄逐字 **`根﨑達也`**（U+FA11 的﨑） | **根﨑達也** |
+| Dewdrops | 數原晋 | 488318 的 `realname` 逐字 **`数原晋`**（新字體的数），變體十一形裡只有一形是 `數原晉` | **数原晋**（專名照原文字形） |
+
+⚠ **最後一列要分清楚**：**這不是「把新字體改成舊字體」的問題，是反過來**——`research-base.md` 的字元條逐字寫「專名一律照原文字形抄」，
+**盤面與資料庫用的是 `数原晋`，卡單自己把它改成了繁體的 `數`**，本層改回去。
+⚠ **`根﨑` 的﨑 是 U+FA11（CJK 相容字），任何 NFKC 正規化都會把它摺成 `崎`**——**與第 4994 條記的櫻／桜 家族是同一類問題的另一面，`chk-prop` 的 `k()` 判不出。**
+
+## 5536　⚠ **「查不到就不寫」本組執行四格，逐格記下來由下游決定要不要補**
+
+1. ⚠ ⚠ **《Tacology》的小號手**：卡單逐字寫「小號篠原勝之」。本盤的 credits 裡 `Katsuyuki Shinohara` 出現**兩次**——
+   整筆 extraartists 裡是 **id 0 的 `Artwork By [Object Producer]`**，A1 逐軌裡是 **藝人 3411031 的 `Trumpet`**；
+   **3411031 的 `realname` 與 `namevariations` 兩欄都是空的**，ja 維基的 `篠原勝之` 是ゲージツ家（造型藝術家，1942 年生），
+   **職業欄對得上美術那一筆、對不上小號那一筆**。→ **依主線第 1936-B 條「查不到就退成不寫」，facts 兩筆都沒寫這個人，寫作層也不要寫。**
+2. **《Dewdrops》的作詞者之一**：`Masako Arikawa`（1339556）的 `realname` 逐字是「山口えみ」，
+   變體欄同時有 `有川 正沙子`／`有川正子`／`有川正沙子`／`有川沙子` **四形**，**本層判不出盤面用的是哪一形，整格不寫。**
+   （另一位 `Shun Taguchi`（1843279）的 `realname` 逐字「田口 俊」，**這一位寫進 facts。**）
+3. **《Jungle Jane Tour Live》的錄音監督**：`Ken Sugaya`（2805232）的變體欄同時有 **`菅家健`** 與 **`菅谷憲`** 兩形、`realname` 空，
+   **本層取與同期東芝盤一致的菅谷憲並在卡的 notes 標明兩形都存在**，下游若要縮字這一條優先刪。
+4. **《High Pressure》的樂手名單**：原壓 releases/5696984 的 `extraartists` **只有製作人一筆、逐軌欄全空**，
+   ⚠ **而同批 a 組第 4972 條剛抓到 MALTA 的 LP credits 有整塊污染**（1983 年首作的名單被複製到 1985／1986 兩張上）
+   ——**本盤的 credits 區塊索性是空的，本層沒有從別張碟推補任何人名，facts 整格不寫樂手。**
+
+## 5537　⚠ ⚠ 推翻第十四處（判斷層級）：**《Jungle Jane》的「外國樂手六位」裡，`Eve` 是沖繩的三姊妹**
+
+卡單 `curatorRisk` 與第 4996 條的表逐字把外國樂手列成「**6**（Sheila E.・Joey Carbone・Waters 三兄妹・**Eve**）」。
+
+**ja 維基 `EVE (歌手グループ)` 逐字**：「'''EVE'''（イヴ）は、日本のコーラス・グループ」「**沖縄県出身のレオナ (LEONA) 、クララ (CLARA) 、リリカ (LILIKA) の3姉妹によって結成された**」，
+三人本名逐字是**新里玲乙奈・新里久良良・新里梨里佳**；來歷段逐字寫她們「**主にスタジオミュージシャンとして活動**」「3姉妹の抜群な歌唱力にハーモニーを重ねた分厚いコーラスと完璧な英語の発音で日本のスタジオシーンの水準を高めた」。
+
+⚠ ⚠ **而本盤四軌的填詞人「Lilika Shinzato（リリカ新里）」正是其中的リリカ**——**卡單把同一組人拆成「一位外國樂手」與「一位日本作詞者」兩筆。**
+
+→ **外國側實為五位（Sheila E.・Joey Carbone・Luther／Maxine／Oren Waters），日本側多一組三人合唱團。**
+⚠ **結論不變**（該關本來就因比例過低不啟動第 3787 條），**但第 4996 條那張表的 #6 那一列要改。**
+⚠ **給主線與 c-182**：**`Eve` 這個字串是本線第一個「看起來像外國藝人、實際是日本團」的實例**，
+**同批 a 組的《Traumatic・極東探偵団》也有リリカ新里 的填詞 credit，兩張卡的外國藝人那一關若曾把她算進外國側，一併要改。**
+
+## 5538　⚠ ⚠ 推翻第十三處（資料庫層級）：**Discogs 的 `Alan Dowson` 是拼錯，《Hot Flutes》的鼓手就是 Alan Dawson**
+
+本盤 releases/18685357 的 credits 逐字是 `Alan Dowson(7526274) = Drums`。**藝人 7526274 名下只有這一張碟**（`releases?role=Main` 回 1 筆）、**沒有 profile、沒有任何變體**。
+
+**同一趟行程前一天的實況盤 releases/13382685 逐字是 `Alan Dawson(251688) = Drums`**，
+而 master 1520655 的 `artists` 欄逐字把四人列成 `Great Jazz Quartet / Hank Jones / Ray Brown / Sam Most / **Alan Dawson**`。
+en 維基 `Alan Dawson` 逐字「(July 14, 1929 – February 23, 1996) was an American jazz drummer and percussion teacher based in Boston」。
+
+→ **策展層寫的 Alan Dawson 是對的，錯的是 Discogs 建了一個拼錯的孤兒實體。** facts 用 Dawson。
+⚠ **這一條要記下來的原因是下游**：**任何回打 `releases/18685357` 的程式都會拿到 `Alan Dowson`**，
+**零編造 QA 若拿 Discogs 當證人，會把正確的 `Alan Dawson` 判成編造。** → **給主線：把這一組（Dowson→Dawson）寫進 c-181 的比對例外。**
+
+## 5539　⚠ ⚠ **本層最值錢的一格：《Hot Flutes》是一趟日本行的第二天，前一天同一組人在郵便貯金ホール 錄了一張實況盤**
+
+卡單、第 4986 條與第 4996 條都把《Hot Flutes》寫成「邀美方四重奏來東京」，**但沒有一處指出這趟行程本身留下了兩張唱片。**
+
+| | **《Great Jazz Quartet Live In Japan》** | **《Hot Flutes》** |
+|---|---|---|
+| 錄音 | **1985 年 10 月 15 日，東京・郵便貯金ホール**（Discogs notes 逐字「Recorded October 15, 1985 - Youbin-Chokin Hall, Tokyo.」） | **1985 年 10 月 16 日，東京・King Record Studio** |
+| 目錄號 | **All Art K26P-6438**（另有 CD K32Y 6109） | Paddle Wheel K28P 6427（另有 CD K32Y 6102） |
+| 廠牌 | **キングレコード**（All Art 字標） | **キングレコード**（Paddle Wheel 字標） |
+| 編制 | Hank Jones・Ray Brown・Sam Most・**Alan Dawson** | 同四人 ＋ **小宅珠実**（領銜）＋ 土井一郎 |
+| 製作 | 石塚隆夫 | 川島重行 |
+
+→ **兩張碟隔一天、同一家公司、同一組美國樂手，只是一張在音樂廳、一張在錄音室，而且錄音室那張多了一位日本領銜者。**
+**這解釋了《Hot Flutes》為什麼「一天就錄完」，也解釋了四位美國名家為什麼會同時在東京。**
+⚠ **這一格是派工信第二節要的那個東西的變形**：**不是版本表漏了版本，是「同一趟錄音行程的另一張碟」整個不在本線的視野裡**——
+**`versions` 查不到它（不同 master、不同碟），`dedup` 查不到它（不同掛名、不同盤名），只有逐筆讀 credits 再回查藝人目錄才撞得到。**
+⚠ **給 c-182 與主線**：`Great Jazz Quartet` 名下 Discogs 共三個 master——**本盤、那張實況盤、1987 年峰純子 的《Love Me Tender》**，
+**後兩張都不在 jp-1 的名單上**（實況盤的字標 `All Art` 是キング 的，**理論上過得了第 1924-B 條的四大廠硬門**）。**建議列舉層回頭掃 `All Art` 這條字標。**
+
+## 5540　⚠ ⚠ **推翻派工信第五節第 1 點與主線第 1948-B 條第 2 點的一句轉述：《ディア・フレンズ》的 2017 復刻，Discogs 收了**
+
+派工信逐字：「`益田幹夫 —《Dear Friends》` 的復刻要特別查：c-182 a 組在 `miqqe.jp` 上查到 2017 年的《ディア・フレンズ》復刻，**Discogs 版本表沒收**（主線第 1948-B 條）——**這一張的再發數要回頭補。**」
+
+**實查不成立。** `masters/1320026/versions` 逐筆跑完四筆，**第四筆逐字是**：
+
+```
+11612113 | 2017 | Japan | Album, Limited Edition, Reissue, Remastered | JVC VICJ-77061 | Dear Friends
+```
+
+**而且策展層第 4986 條的 `label` 欄與第 4999 條的版本數（4 版）本來就已經把它數進去了。**
+本層另打了 `releases/11612113` 覆核：notes 逐字「Originally released as VIJ-28096 JVC (1986)」「℗&© 2017」，**確是同一張碟的 2017 復刻。**
+
+→ **《Dear Friends》的再發數維持四版，不必回頭補。**
+⚠ **miqqe 這一筆真正的價值是另一件事**：**它給出 Discogs 沒有的逐日發售日 `2017.10.25`、售價（含稅兩千五百三十日圓）與商品狀態（生産限定）**
+——**Discogs 那一筆只有年份。** **「miqqe 比 Discogs 新」這個判斷在本盤成立的是「更細」而不是「更多」。**
+⚠ **給主線**：**第 1948-B 條第 2 點列的另外兩張（MALTA《ハイ・プレッシャー》2016、益田幹夫《CHI CHI》2016）也該用同一個方式覆核一次**
+——本層順手查了前者：**`masters/567208/versions` 的第十一筆逐字就是 2016 年的 VICJ-77028，Discogs 同樣收了。**
+**那一點的措辭「值得回頭補」對這三張裡至少兩張不成立。**
+
+## 5541　⚠ ⚠ 推翻第十五處：**「八軌全部由益田幹夫 作曲」只對黑膠成立，CD 的十軌裡有兩首是標準曲**
+
+卡單 `curatorWhy` 逐字把「八軌全部由益田幹夫 作曲（Discogs 原壓 notes 逐字「All Songs Composed By Mikio Masuda」）」當成收件理由之一。
+
+**黑膠那一句成立。但同期 CD（releases/25187296，JVC VDJ-1051，1986-11-21）與 2017 復刻（releases/11612113）都是十軌，多出來的兩軌是**：
+
+| 軌 | 曲 | 依據 |
+|---|---|---|
+| 6 | **〈Passion Flower〉** | 兩張 CD 的曲目表逐字有，黑膠沒有 |
+| 9 | **〈If I Were A Bell〉** | 1986 年 CD 的逐軌欄逐字掛 **`Frank Loesser = Composed By`** |
+
+⚠ ⚠ **而兩張 CD 的 notes 欄逐字仍然照抄了黑膠那一句「All Songs Composed By Mikio Masuda」**
+——**盤面自己前後矛盾**：說明欄說全是他寫的，逐軌欄卻掛了 Frank Loesser。**這是「原壓的一句話被再發整句繼承」的形狀。**
+→ **facts 已寫成「黑膠盤面那句只對黑膠的八軌成立」，寫作層引軌數與作曲歸屬時必須綁在黑膠那一側。**
+⚠ **〈Passion Flower〉一般認為是 Billy Strayhorn 的曲，但 Discogs、廠牌頁與 MB 三處都沒有給本盤這一軌的作曲欄**，
+**依「查不到不要編」，facts 只寫「不是他寫的」與「CD 才有」，不寫作曲者。**
+⚠ **廠牌自家的作品頁另外給了兩格 Discogs 沒有的**：〈マジョルカ〉逐字標「**INTRO BY CHOPIN FROM PRELUDE NO.4 IN E MINOR OP.28**」、
+〈パッション・フラワー〉逐字標「**INTRO BY ERNESTO LECUONA FROM MALAGUENA**」——**兩首曲各有一段取自別人作品的引子，這是本卡最好的一格。**
+
+## 5542　⚠ **「CD 比黑膠多幾軌」本組五張中招，本層逐張把「多的是哪一軌」查出來**
+
+策展層第 4992／4999 條逐張記了「軌數兩說」，**但五張都只記了數字、沒有記是哪一軌**。逐張回打同期 CD 的曲目表：
+
+| 卡 | 黑膠 | CD | **多出來的那一軌** | CD 的曲序 | 依據 |
+|---|---:|---:|---|---|---|
+| Touch of Rain | 7 | 8 | **〈Shinjuku〉**（CD 第 5 軌） | ⚠ **整張重排**（同名曲從 A2 挪到第 7） | releases/4971971 |
+| Dear Friends | 8 | 10 | **〈Passion Flower〉〈If I Were A Bell〉** | 同序插入 | releases/25187296 |
+| Tacology | 5 | 6 | **〈Don's Theme (Instrumental)〉**（CD 第 6 軌） | ⚠ **整張重排**（B1 挪到第 2） | releases/12455028 |
+| High Pressure | 10 | 11 | **〈Over Night Trip〉**（CD 第 5 軌） | 同序插入 | releases/3860801 |
+| Fairy Tale | 8 | 9 | **〈Long Distance Call〉**（CD 第 8 軌） | 同序插入 | releases/30117407 |
+| More Than You Know | 9 | 10 | **〈A Night Affair〉**（CD 第 4 軌） | 同序插入 | releases/8843790 |
+
+⚠ **六張，不是五張**（策展層漏記了 `More Than You Know` 的軌名）。**六張的多出軌名全部已寫進各卡的 facts。**
+⚠ ⚠ **兩張的 CD 曲序整個重排過**（Touch of Rain、Tacology）——**下游若用「第幾軌」引用曲目，必須註明是黑膠還是 CD。**
+⚠ **這一格解釋了本線一個長期現象的一半**：**第 4999 條把 1985 年後低估的根因定為「(c) 同期異載體」**，
+**本層的補充是：同期異載體不只是「多一個版本」，它往往是「不同的碟」——多一軌、換曲序，甚至說明欄與逐軌欄互相矛盾（見 5541）。**
+
+## 5543　⚠ ⚠ **Discogs 的版本表不收數位發行：本組三張在 Apple 日本店面上有 Discogs 看不到的數位版**
+
+| 卡 | Apple 的 `collectionId` | 日期 | 版權欄 | 軌數 |
+|---|---:|---|---|---:|
+| Touch of Rain | 1453373790 | **2019-03-06** | ℗ Victor Entertainment | 8（＝CD 曲序） |
+| Fairy Tale | 1453373184 | **2019-03-06** | ℗ Victor Entertainment | 9（＝CD 曲序） |
+| Hot Flutes | 1789253756 | 1986-08-21 | **℗ 1986 King Record Co.,Ltd** | 7（＝黑膠） |
+| Keeping Count | 1793265036 | 1986-11-21 | **℗ 1986 King Record Co.,Ltd** | 9（＝黑膠） |
+
+→ **四筆，而 Discogs 的版本表一筆都沒有。**
+⚠ **這是 c-178 b 第 4824 條《The Good Bad Girl》那個形狀的同型**（該例是 miqqe 上的配信限定版），**但本組的成因更一般**：
+**Discogs 的 `versions` 只收實體壓次，數位發行本來就不在它的射程**。→ **「Discogs 版本表自己是舊的」在本組要改寫成「Discogs 版本表自己是實體的」。**
+⚠ **兩張ビクター 盤的 2019-03-06 是同一天，兩張都是鈴木良雄 的碟**——**第 5002 條已記這是「一整批碟同一天上架的批次日」，本層確認這個形狀，facts 依第 1907-B 條未寫日期。**
+⚠ **兩張 King 盤的日期與黑膠原壓逐日相符、℗ 年也對**，**依第 1907-B 條可引，已寫進 facts。**
+
+## 5544　⚠ **逐日日期的四格補充：四筆日期是本層從別處補到的**
+
+| 卡 | 策展層有的 | **本層補到的** | 來源 |
+|---|---|---|---|
+| Dear Friends | 只有 `1986` | **錄音 1986-08-21／22 於ビクター 錄音室；同期 CD 的發行日 1986-11-21** | releases/25187296 的 notes 與 `released` |
+| Fairy Tale | 只有 `1987` | **同期 CD 的發行日 1987-05-21** | releases/30117407 |
+| Touch of Rain | 2021 年復刻只有年 | **2021-12-22** | releases/21427672 |
+| Dewdrops／High Pressure | 2016 年復刻只有年 | **2016-09-21**（⚠ 有衝突，見 5548） | jvcmusic 作品頁 |
+| Dear Friends／Ms. Mystery | 2017 年復刻只有年 | **2017-10-25（兩張同一天）** | jvcmusic 作品頁 ＋ miqqe |
+| Jungle Jane | 2014 年復刻只有年 | **2014-06-18** | releases/26908571 |
+
+⚠ ⚠ **`Dear Friends` 的錄音日期那一格要特別記**：**黑膠原壓 releases/4964799 整筆沒有任何錄音資料**
+（`companies` 只有一行 Manufactured By），**錄音室與日期是靠同期 CD 的 notes 拿到的**——**c-178 第 4458 條第 2 點「原壓 credits 稀薄時回頭打再發那一筆」在本組命中兩次**（另一次是 `Ms. Mystery`，見 5549）。
+⚠ **`Fairy Tale` 那一格要警告下游**：**1987-05-21 是 CD 的日期，不是黑膠的**，寫作層不得拿它當專輯發行日。
+
+## 5545　⚠ `miqqe.jp`：**九次查詢、三次命中，而且它的用法只有一種**
+
+派工信第四節與第 1948-B 條第 2 點逐字要求「`?s=<關鍵字>` ＋ `/artist/<slug>/`，直接猜商品頁一律 404」。本層照做，九個關鍵字全部 HTTP 200：
+
+| 關鍵字 | `?s=` 頁裡有沒有 `/artist/` 或 `/item/search/` 連結 | 結果 |
+|---|---|---|
+| 益田幹夫 | ✅ 兩者都有 | **/artist/mikio_masuda/ → 三張碟（ディア・フレンズ／CHI CHI／Mickey Finn）** |
+| 阿川泰子 | ✅ 兩者都有 | **/artist/yasuko_agawa/ → 十五筆，含 MS.MYSTERY** |
+| MALTA | ✅ 只有 `/artist/` | **/artist/malta/ → 兩張（ハーフ・ムーン・ストリート+1／ハイ・プレッシャー）** |
+| 鈴木良雄・国府弘子・坂田明・土取利行・櫻井哲夫・ディア・フレンズ | ❌ 只回站台骨架 | **查無** |
+
+→ **命中率 3/9（33%），而且三筆全部是ビクター 有做過 CD 復刻的藝人。**
+⚠ ⚠ **「`?s=` 的 HTML 長度」不能當判準**：**查無的那幾個關鍵字回來的頁面一樣是 HTTP 200、24KB 上下**，
+**差別只在頁面裡有沒有 `https://miqqe.jp/artist/<slug>/` 或 `https://miqqe.jp/item/search/?s=` 這兩種連結**
+——**這與第 1924-B 條記的 `kingrecords.co.jp`「404 也回 15KB」是同一種陷阱的另一個站。**
+⚠ **`/item/search/?s=<關鍵字>` 比 `/artist/<slug>/` 多給一欄逐日發售日**，**要日期就打前者。**
+
+## 5546　⚠ `jvcmusic.co.jp`：**八次查詢、五次命中（63%），而且它給的東西是別處沒有的**
+
+| 目錄號 | 結果 | 這一頁給了什麼 |
+|---|---|---|
+| **VICJ-77061**（Dear Friends 2017） | **200** | **十軌的曲目表（含兩首 CD 才有的標準曲）＋兩段引子的逐字註記＋商品解說＋2017.10.25** |
+| **VICJ-77034**（Dewdrops 2016） | **200** | ⚠ ⚠ **「ベーシスト櫻井哲夫の1stソロアルバム」「ヴォーカル曲も収録したポップなAORアルバム」——廠牌自己給的定位** |
+| **VICJ-77028**（High Pressure 2016） | **200** | 十軌曲目表＋2016.09.21＋串流與下載入口 |
+| **VICJ-77070**（Ms. Mystery 2017） | **200** | ⚠ ⚠ **「“カリズマ”のバックによるウエスト・コースト・フュージョンの傑作」——伴奏班底的團名** |
+| VICJ-18010（High Pressure 1995） | 200 | ＜定番コレクション＞的商品頁 |
+| VICL-18178（Dewdrops 1995） | **404** | — |
+| kingrecords `gK32Y-6102`／`gK32Y-6129` | **404** | — |
+
+→ **`VICJ-770xx` 這條 2016–2017 的復刻線 4/4 全中**（派工信第四節逐字說這條路徑的命中率取決於有沒有這批復刻，本組是「有」的那一邊）；
+**1995 年的 `VICL-`／`VICJ-18xxx` 線 1/2。**
+⚠ ⚠ **本組兩格最重要的證據都是這個站給的**（`Dewdrops` 的「1stソロ」與 `Ms. Mystery` 的「カリズマ」），
+**兩格在 Discogs、MB、Apple 與 ja 維基四處都取不到。**
+⚠ **但第三節「官方不等於原盤」在本站同樣要當心**：**這五頁講的都是復刻盤**，
+**〈Dear Friends〉那一頁的十軌曲目是 CD 的、不是黑膠的**——**本層引用時逐格標明了是哪一個版本。**
+
+## 5547　⚠ `kingrecords.co.jp`：**兩次查詢、0 命中，而且 404 頁逐字回 14,359 位元組**
+
+`https://www.kingrecords.co.jp/cs/g/gK32Y-6102/` 與 `gK32Y-6129/` 兩個 CD 號段都回 **HTTP 404**，
+**但回來的 HTML 長度逐字是 14,359 位元組**（站台骨架＋SNS 連結），**與第 1924-B 條記的「404 也回 15KB」完全一致。**
+→ **本組的兩張 King 盤（Hot Flutes／Keeping Count）沒有任何官方頁，人物與錄音資料全部靠 Discogs 藝人頁與 Apple。**
+⚠ **給 c-182**：**這條路徑對 1985–87 年段的 `K28P-`／`K32Y-` 號段是死的，不要排進查證路徑。**
+
+## 5548　⚠ ⚠ **兩個官方來源對同一次復刻給了兩個日期：2016-09-21 對 2016-08-24**
+
+`MALTA —《High Pressure》` 的 2016 年復刻（VICJ-77028）：
+
+| 來源 | 逐字 |
+|---|---|
+| **`jvcmusic.co.jp` 作品頁** | **2016.09.21** |
+| **`miqqe.jp`（同一家公司的自家通販）** | **2016.08.24** |
+
+**兩者都是ビクター 自己的站台，相差二十八天。** 本層沒有第三個來源可以裁，**facts 只寫「2016 年」、不寫月日。**
+⚠ **同一頁的對照組**：`Dewdrops`（VICJ-77034）在 jvcmusic 上逐字也是 **2016.09.21**，
+而 miqqe 上查不到這張碟——**兩個站對 2017 年那兩張（VICJ-77061／VICJ-77070）倒是逐日一致（2017.10.25）。**
+→ **給主線的通則建議：ビクター 的兩個官方站在 2016 年那一批上不一致、在 2017 年那一批上一致；日期以 `jvcmusic.co.jp` 的作品頁為主，兩站衝突時整格不寫。**
+⚠ **這是簡報第三節「官方不等於原盤」的一個變形**：**這次不是「官方講的是再發」，是「兩個官方講的是同一次再發的兩個日子」。**
+
+## 5549　⚠ ⚠ **`阿川泰子 —《Ms. Mystery》`：派工信點名要「查得比別張更硬」的那一筆，本層補到兩格證據，結論支持收件**
+
+第 4991 條把這張碟判成本組最接近退件線的一筆（新判準 (2) 的形狀：genres 含 Jazz、styles 逐字只有 `City Pop`），並請主線覆核。本層查完，**不推翻三肢二過的算法，但補到兩格策展層沒有的證據，兩格都在收這一邊**：
+
+1. ⚠ ⚠ **廠牌自己的定位**：`jvcmusic.co.jp` 的 VICJ-77070 作品頁逐字是
+   「ロニー・フォスターとデビィッド・ガーフィールドをプロデューサーに迎え、マイケル・ランドウ、カルロス・ベガ、ジョン・ペーニャ、レニー・カストロら“**カリズマ**”のバックによる**ウエスト・コースト・フュージョンの傑作**」
+   ——**伴奏不是逐個找來的錄音室樂手，是 David Garfield 的樂團 Karizma 整支**，**而廠牌自己把這張碟歸在フュージョン 而不是シティ・ポップ。**
+   ⚠ **這一格比第 4991 條用的「2017 復刻掛在和フュージョン 線」更硬**：那是系列名，**這是對這張碟本身的一句話定位。**
+2. **作曲那一項不是純外國側**：**A4〈Blue〉的逐軌作曲欄逐字有兩個名字——`Jim Steele (2)` 與 `Hitoshi Haba`**，
+   後者的 Discogs 藝人頁 662599 `realname` 逐字是「**羽場仁志**」。
+   → **第 4106 條那四項裡「作曲」這一格是混的，不是整格在外國側；第 4996 條的表把本筆寫成「作曲外國側」要改成「作曲以外國側為主、一軌有日本作曲者」。**
+
+⚠ **另兩軌也不是單純的英語原創曲**：〈Honeysun〉逐字是 `Sofie Kremen = Written-By` ＋ `Tommy Snyder = Adapted By [English Lyrics By]`、
+〈Into The Night〉逐字是 `Osny Melo = Written-By` ＋ `Douglas Pashley = Adapted By [English Lyrics By]`
+——**九軌裡有三軌的作曲來歷比「為本盤新寫的英語曲」複雜，facts 已逐軌寫明。**
+⚠ **原壓 credits 稀薄在本盤第二次出現**：releases/4679400 的 `companies` 欄整欄空白，**錄音室名本層同樣取不到，facts 只寫「整張在洛杉磯錄製」。**
+
+## 5550　⚠ **序數覆核：`MALTA —《High Pressure》` 的「第五張」成立，而同年的《My Ballads》不算**
+
+照 c-178 a 第 4782 條立的固定動作，回打 `artists/1543351/releases?role=Main&sort=year`：
+
+**1983《Malta》→ 1984《Sweet Magic》→ 1985《Summer Dreamin'》→ 1986《Sparkling》→ 1987《High Pressure》。**
+
+→ **策展層的「第五張領銜作」成立。**
+⚠ **同一年名下還有一張《My Ballads》（master 958749），本層判定不計入**：
+**它的十四軌裡至少有〈The Only Name Missing Is...〉與〈Secret Island〉兩首直接取自本盤**（本盤 A3 與 A5），
+**風格欄逐字是 `Smooth Jazz` 與 `Easy Listening`**——**是一張抒情曲精選，不是新的錄音室作**（依主線第 1948-B 條「看的是錄音不是曲目」，既有錄音重排 → 不算新作）。
+⚠ **另外兩位的序數也順手核過**：**`国府弘子 —《More Than You Know》` 是出道作**（`artists/1215280/releases` 最早一筆就是本盤，下一筆是 1990 年的《Point Of No Return》；ja 維基經歴段逐字「デビュー・アルバム『More Than You Know』を発表、メジャー・デビュー」，**兩邊同向**）；
+**`小宅珠実 —《Hot Flutes》` 是她的第四張**（1980《Tamami First》→1982《Someday》→1985《Elsa / Tamami Meets Coryell II》→本盤）。
+
+## 5551　⚠ 獎項：**本組一項，是得獎不是入圍，而且得獎的不是本盤**
+
+`MALTA` 那一張的獎項逐字寫齊了三件事（屆次／年份、類別、得獎還是入圍）：
+
+**第一屆（1987 年 3 月）日本ゴールドディスク大賞・ジャズ・フュージョン 部門「The Best Album of the Year」，得獎，得獎的專輯是前一張《SPARKLING》。**
+
+依據：ja 維基 `MALTA` 逐字「1987年、アルバム『SPARKLING』で第1回日本ゴールドディスク大賞、The Best Album of the Year（ジャズ・フュージョン部門）を**受賞**」；
+ja 維基 `日本ゴールドディスク大賞` 逐字「**1987年3月に第1回授賞式が赤坂プリンスホテルにて開催**」、對象期間「第1回(1987) - 第13回(1999) 前年1月21日 - 1月20日」。
+
+⚠ ⚠ **寫作層的硬限制：不得把這個獎寫成本盤得獎。** 《High Pressure》1987-06-21 發行，**在頒獎典禮之後三個月**，
+**facts 已經把時序寫進去（「得獎三個月後本盤問世」），那是本卡的切角，不是本卡的獎。**
+⚠ **`獲得` 這個兩可的動詞全檔零處。** 本組其餘十二張零獎項。
+
+## 5552　⚠ **`High Pressure` 的作曲歸屬查不到，整格不寫**
+
+卡單 `curatorWhy` 逐字寫「十軌零日本歌謡曲，**九軌原創加一首〈Stranger In Paradise〉標準曲**」，並把它當收件款第三肢的依據。
+
+**本層在四處都取不到本盤的逐軌作曲欄**：Discogs 原壓 releases/5696984 的 `extraartists` **只有 `Akira Taguchi = Producer` 一筆、逐軌欄全空**；
+同期 CD releases/3860801 同樣；`jvcmusic.co.jp` 的 VICJ-77028 作品頁只有曲名、沒有作曲欄；MB 的 RG 也沒有。
+
+→ **「九軌原創」這個說法本層無法證實也無法否證，facts 整格不寫，寫作層不要引用軌別的作曲歸屬。**
+⚠ **收件判定不受影響**（收件款第三肢另有「爵士標準曲」那一邊，而且第 3753 條五款逐款不成立與曲風欄無關），**但這一格要留給下一批：本盤是本組唯一一張連作曲欄都沒有的碟。**
+⚠ **同批 a 組第 4972 條剛抓到 MALTA 的 LP credits 有整塊污染**——**本盤的 credits 區塊索性是空的，本層因此一個樂手名都沒有從別張碟推補。**
+
+## 5553　⚠ **一條只有單一來源的事實，已在卡的 notes 標出優先刪除順位**
+
+`高橋達也と東京ユニオン` 的「**東京ユニオン 是 1989 年解散的日本大樂隊**」只見於 ja 維基 `東京ユニオン` 這個消歧義頁的一行逐字
+（「1989年に解散した日本のビッグバンド。かつてはテナーサックス奏者の高橋達也が率いており、高橋達也と東京ユニオンの名でも知られる」）。
+
+**本層沒有找到第二個可開啟的來源**（`高橋達也` 的條目本身是 stub，只有本名與生卒年；キングレコード 與 Sony Music 的藝人頁本層未取到）。
+→ **facts 照那個來源的說法寫，並在卡的 `notes` 標明「下游若要縮字，這一條優先刪」。**
+⚠ **對照組**：同一張卡上的「高橋達也 本名高橋達朗、1931-12-27 生於山形県鶴岡市」有**兩個**來源
+（ja 維基條目逐字 ＋ Discogs 藝人頁 1066837 的 `realname` 逐字「高橋達朗 = Tatsuro Takahashi」），**這一條不受影響。**
+
+## 5554　⚠ 反向禁令與東亞人名的處理（逐項）
+
+**反向禁令，逐項分類（本組全表）**：
+
+| 事件 | 類別 | 處置 |
+|---|---|---|
+| 鈴木良雄 2010 年南里文雄賞（第 35 回） | 第二類（與本作無關的後續生平） | **不寫** |
+| 高橋達也 2008-02-29 辭世 | 第二類 | **不寫** |
+| 日野元彦 1999-05-13 辭世 | 第二類 | **不寫** |
+| Cecil Monroe 2011-08-27 於千葉館山辭世 | 第二類 | **不寫**（只寫 1955 年生與 1978 年起長住日本） |
+| 篠原勝之 2026-04-17 辭世 | 第二類（而且該人名本身沒有寫進卡，見 5536） | **不寫** |
+| 櫻井哲夫 1989 年離開カシオペア、之後的シャンバラ／ジンサク／かつしかトリオ | 第二類 | **不寫** |
+| 坂田明 2003 年日本プランクトン学会 特別表彰、2007 年客座教授 | 第二類 | **不寫** |
+| 土取利行 1988–1993 年的立光学舍フェスティバル、1990 年代的縄文鼓 復元 | 第二類 | **不寫** |
+| 本多俊之 後來的東京芸術大学 客座教授職 | 第二類 | **不寫** |
+| 中野サンプラザ 2023-07-02 結束營業 | 第二類（場館的後續，與本作無關） | **不寫**（只寫 1973 年開業與「音楽の聖地」） |
+| **土取利行 與桃山晴衣 1987 年共同創辦立光学舎** | **第一類（與作品直接綁定：製作人與領銜者的關係，緊接在本作之後）** | **寫，並標明時序（「本盤錄完的隔年」）** |
+| **鈴木良雄 1993 年的 EAST BOUNCE 仍由 Cecil Monroe 打鼓** | **第一類（同一組人的後續合作，與本作的編制直接相關）** | **寫，並標明時序（「六年後」）** |
+| **MALTA 的〈HIGH PRESSURE〉被用作 JT キャビン 的廣告配樂（八〇年代後半）** | **第一類（作品本身的後世流傳）** | **寫** |
+| **1986-06-04 的單曲〈SHAKE IT〉c/w〈JUNGLE JANE〉、1986-11-01 的〈WARM SUMMER WOMAN〉** | 第一類（作品本身的發行時序，而且早於或緊接專輯） | **寫** |
+
+**東亞人名：全部照 2026-08-11 裁定用原文漢字**（鈴木良雄、益田幹夫、土取利行、櫻井哲夫、高中正義、小宅珠実、高橋達也、坂田明、阿川泰子、国府弘子⋯⋯），
+**只有三處羅馬字**：團名 **`MATSURI`**（MB／Discogs／Apple 三處皆拉丁、無漢字或假名形，照裁定的例外條）、
+掛名 **`MALTA`**（池中既有的全大寫字串）、團名 **`Great Jazz Quartet`**（外國四人團）。
+**Hank Jones、Ray Brown、Alan Dawson、Sam Most、Sheila E.、Ronnie Foster、David Garfield、Nathan East、Michael Landau、Carlos Vega、
+Lenny Castro、Luis Conte、Brandon Fields、Walt Fowler、Dave Shank、John Peña、Phillip Ingram、Paulette Brown、Phil Perry、
+David Matthews、Joey Carbone、Luther／Maxine／Oren Waters、Cecil Monroe、Darek Jackson、Marvin Baker、Linda Hennrick、
+Bob Ludwig、Ron St. Germain、Chris Blackwell、Gilbert O'Sullivan、Barry Harris、Larry Coryell、Jake H. Concepcion、Alan Hirshberg、
+Jim Steele、Sofie Kremen、Osny Melo、Douglas Pashley、Tommy Snyder、Marti Sharron、Joa Savan、Joseph Brooks、Terry Silverlight、
+Michael Parker、Ernie Wilkins、Eddie Durham、Edgar Battle、Frank Foster、Count Basie、Neal Hefti、Freddie Green、
+Boudleaux & Felice Bryant、Rodgers & Hart、John Coltrane、Eddie DeLange、Jimmy Van Heusen、Sonny Rollins、Miles Davis、
+Vincent Youmans、Billy Rose、Edward Eliscu、Frank Loesser、Ernesto Lecuona、Milford Graves、Derek Bailey、Steve Lacy、
+Stan Getz、Art Blakey、Bill Hardman、Junior Cook、Lee Konitz、Chet Baker、Leonard Feather、Heinrich Edmund Naumann、Weinschenk、
+Peter Brook、Dave Simmons、Beck, Bogert & Appice 一律拉丁原文**；
+**蕭邦 這類非音樂人以外的歷史人物用台灣慣用中譯**（本組只有一處，在《Dear Friends》的引子那一格）。
+
+## 5555　交件自跑的結果、來源實測、續跑保護與邊界自述
+
+**機器 QA**（工作目錄 `desc-tools/`）：
+
+```
+node qa-batch.mjs research c181
+a 15 full,full,full,full,full,full,full,full,full,full,full,full,full,full,full
+b 13 full,full,full,full,full,full,full,full,full,full,full,full,full
+key 與卡單完全一致 ✓
+全部通過 ✓
+```
+⚠ **中途出過兩個標記，兩個都是本組的，交件前已清掉**：
+(1) `research-b 千分位逗號: 2,530`（三處日圓售價，已全部改寫成「兩千五百三十日圓」）；
+(2) `key 集合與卡單不一致`——**那一筆不是本組**：本層第一次跑 QA 時 a 組的檔只有 12 張、卡單有 15 張，
+**本層逐鍵比對過 b 組 13/13 逐字相同且順序相同**，未碰 a 組的檔；a 組補齊後該標記自行消失。
+
+**逐張人工量測**（另寫程式跑，不用眼睛掃）：
+
+| 項目 | 結果 |
+|---|---|
+| `facts` 條數 | **13 張全部恰好 12 條，合計 156 條**（上限） |
+| `src` 完整 https | **156/156 通過**，零描述型 src；**90 個相異網址**，另跑一輪可用性自檢（`chk-c181b-src.mjs`）：**扣掉 47 個 Discogs 短網址（派工信第四節已載明對程式化 UA 一律 403、照既有慣例仍寫短網址），其餘 43 個全部 HTTP 200、零失效** |
+| 來源網域 | **6 個**：`www.discogs.com` 92／`ja.wikipedia.org` 41／`en.wikipedia.org` 10／`www.jvcmusic.co.jp` 5／`music.apple.com` 5／`miqqe.jp` 3 |
+| 簡體字 | **0**（`qa-batch.mjs` 的 `SIMP` 字表剝除白名單後逐字掃過） |
+| 千分位逗號 | **0**（`\d{1,3},\d{3}` 全檔零命中） |
+| CJK 旁的半形逗號 | **0** |
+| 日文新字體混進行文 | **0**（`楽沢学会国芸読欧価売録変戦図営歳廃広伝産様実験団浜斉県聴評` 等逐字掃過，**所有命中都落在專名或「」內的逐字引用裡**：長野県／早稲田大学／ヤマハ音楽教室／香川県／岐阜県／立光学舎／日本伝統文化振興財団／慶應義塾志木高等学校／向谷実／浜口茂外也／「音楽の聖地」／国際ラジオセンター／山形県／邦楽囃子仙波流家元／東京藝術大学音楽学部邦楽科／広島県呉市広長浜／広島大学水畜産学部水産学科／国府弘子／神奈川県立多摩高等学校／国立音楽大学／小宅珠実／斉藤純／斉藤清／「生産限定」／「芸能堂」，以及 jvcmusic 與 miqqe 的逐字日文引用） |
+| `hookCandidates` | **13 張全部 2 條，未超過上限** |
+| 獎項的入圍／得獎 | **1 項，逐項寫明屆次／類別／得獎，並寫明得獎的是前一張碟；`獲得` 零處**（5551） |
+| `status` 與 `coverage` | **兩欄並存且同值**（13 張皆 `full`） |
+| `key` 逐字複製 | **13/13 與卡單 `group === "b"` 逐字相同、順序相同**（⚠ 分組欄位逐字是 `group`，不是 `g`） |
+
+⚠ **`desc-tools/jp-proper-names.json` 本批未新增字串**：本層用到的含 `SIMP` 同形字的日文專名（`国府弘子`／`国立音楽大学`／`国際ラジオセンター`）**既有名單裡三個都有**，
+拿 `qa-batch.mjs` 的 `SIMP` 字表剝除現有白名單後重掃 13 張卡的全部欄位，**零處命中**，**所以一個字串都沒有 append。**
+
+**節流實測**：`api.discogs.com` 3.1 秒／次共 **107** 次、`ja/en.wikipedia.org` 0.7–0.9 秒／次共 **73** 次、
+`www.jvcmusic.co.jp` 與 `www.kingrecords.co.jp` 1.6 秒／次共 **8** 次、`miqqe.jp` 1.5 秒／次共 **15** 次、
+`itunes.apple.com` 1.4 秒／次共 **11** 次，**全程 0 次 403／429／503，沒有用到退避重試**
+（⚠ 附錄二記的 `itunes.apple.com/search` 間歇性 403 本組一次都沒踩到，與第 5002 條的 12/12 全 200 一致；`/lookup` 11 次全 200）。
+
+**續跑保護**：照派工信第六節，**每做完 3 張就把目前結果整份寫回 `desc-tools/batches/research/c181-b.json`**
+（1–3 → 1–6 → 1–9 → 1–11 → 1–13，**五次都是整檔覆寫、按卡單順序重排，不是追加片段**；另有三次修正寫入）。
+**判斷檔案在不在一律用 `ls` 與直接讀檔，沒有用 `git status`。**
+臨時檔全部放在指定的 scratchpad `c181rb/` 底下、檔名一律帶批次組別前綴
+（`fetch-c181b-lib.mjs`／`fetch-c181b-dg.mjs`／`fetch-c181b-dg2.mjs`／`fetch-c181b-cd.mjs`／`fetch-c181b-art.mjs`／`fetch-c181b-art2.mjs`／
+`fetch-c181b-disc.mjs`／`fetch-c181b-wiki.mjs`〜`fetch-c181b-wiki4.mjs`／`fetch-c181b-wsearch.mjs`／`fetch-c181b-en.mjs`／
+`fetch-c181b-lbl.mjs`／`fetch-c181b-miqqe.mjs`／`fetch-c181b-miqqe2.mjs`／`fetch-c181b-apple.mjs`／`chk-c181b-audit.mjs`／`chk-c181b-src.mjs`／
+`build-c181b-1.mjs`〜`build-c181b-5.mjs`／`fix-c181b-a.mjs`〜`fix-c181b-c.mjs`／`lib-c181b-emit.mjs`／
+`dg-c181b.json`／`dg-cd.json`／`dg-art.json`／`dg2.json`／`disc.json`／`ja-wiki.json`〜`ja-wiki4.json`／`en-wiki.json`／`lbl.json`／
+`miqqe.json`／`miqqe2.json`／`apple.json`／`art-ids.json`／`b-cards.json`），**沒有用 `tmp.json`／`chk.mjs` 這種通用名。**
+本工作階段沒有被容器重啟，五次寫檔都是預防性的。
+
+**本層沒有動到的東西（邊界自述）**：
+- 只寫了 **`desc-tools/batches/research/c181-b.json`（新增）** 與 **本檔的這一段（純 append，5526–5555）**。
+- **完全沒有碰**：`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、**`previews.json`**、`caa.json`、
+  卡單（`c181-cards.json` 只做唯讀讀取）、`slice.json`、`prop-a.json`／`prop-b.json`、**a 組的 `c181-a.json`**（只做唯讀，用於反同構比對）、
+  其他批次的任何檔案（`c163/rulings-mainline.md`／`c178/rulings.md`／`c178-b.json` 只做唯讀）、`desc-tools/jp-proper-names.json`（本批無需 append）、KV、Firestore。
+- **沒有 `git add`／`git commit`／`git push`，沒有動 git 索引**；寫入本檔前照派工信第八節同時跑了
+  `ls batch-progress/c181/` 與 `git show HEAD:batch-progress/c181/rulings.md`（**兩者都是 1,360 行、末條逐字是 `## 5007`，a 組的 5496–5525 尚未落檔**），
+  **確認 5526 之前沒有任何既有內容，再以 `cat >>` 純追加到檔尾，一行既有內容都沒有動**；落檔後重掃 `^## \d{4}`，**零個重複條號。**
+
+**編號區間結算**：本節用到 **5526–5555（共 30 條），區間用滿。** a 組研究層用 5496–5525。
