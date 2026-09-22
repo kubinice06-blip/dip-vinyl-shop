@@ -1481,3 +1481,221 @@ c-178 的《Natural Woman》《3 NOTES》與本批的《キャンディ・ジャ
     **建議記進 `audits/pool-artist-name-splits.md`**（第 4668 條末段，本層不動 audits 檔）。
 14. ⚠ **給主線**：**#6《Ganaesia》的盤面廠牌是 DOMO／トリオ・ケンウッド，不屬本線四大廠**——
     **列舉層把它分到コロムビア 是錯的**；本層照曲風與撞池判收，**但建議主線在收尾時另外標註它的 `scene`**（第 4667 條）。
+
+---
+
+# 試聽回撈層（c-179，4936–4955）
+
+## 4936　本層的任務、查法與節流
+探測鏈跑完後 c-179 有 **4 張**判 `unavailable`（串流 23/27、封面 22/27），本層逐張回撈。
+⚠ 這 4 張是**探測層修好 `queryAlias` 那個 bug 之後**仍然落空的
+（第 1900-B 條：整串 `queryAlias` 被當成一個候選名塞進 `titleOk`；修正後三批的未 ready 是 2/30、4/29、4/27）。
+查法：`itunes.apple.com/search`（`entity=album`／`song`／`musicArtist`）與 `lookup?id=`，
+市場 `jp`（本線唯一有產出的店面，優先）＋ `us`／`gb`／`de` 回退。
+節流 1.35–1.4 秒、403／429／5xx 逐級退避（1.5s×n²，最多 6 次）。
+**本層共打 ~50 次查詢，零次退避到底、零次記成 `NOQUERY`**——所以本層的每一個 0 都是「查成了、回 0 筆」。
+
+## 4937　⚠ 排序：四張的 `tried` **全部是 `N→0`、零個 `0→0`**，所以四張都先重查寫法、再進目錄全掃
+逐筆的探測 `tried`：
+- `Native Son｜Shining` — `us:8→0 gb:9→0 jp:9→0 tw:9→0 de:9→0 fr:9→0`
+- `John Kaizan Neptune / 直居隆雄｜Two in Flight` — `us:2→0 gb:3→0 jp:5→0 tw:3→0 de:3→0 fr:3→0`
+- `99.99｜99.99` — `us:6→0 gb:7→0 jp:9→0 tw:9→0 de:7→0 fr:9→0`
+- `兼崎順一｜Natural-E` — `us:12→0 gb:12→0 jp:12→0 tw:12→0 de:12→0 fr:12→0`
+**四張都是「搜尋回得到東西、但一筆都比不上」**，不是索引查不到；
+因此本層的重點不在重寫查詢字串，而在**成因 14 的 artistId 目錄全掃**與**鄰居對照**。
+
+## 4938　`Native Son —《Shining》`（1982，JVC VIJ-28016）：查詢寫法與市場
+逐字試過的寫法：`Native Son`／`ネイティブ・サン`（ブ）／`ネイティヴ・サン`（ヴ）／
+`Native Son 本田竹広`／`Native Son Shining`（`entity=song`）／`シャイニング 本田竹広`／
+`サバンナ・ホットライン`／`サヴァンナ・ホットライン`／`Native Son Savanna Hot-Line`。
+市場：`jp` 為主，`us` 補一次。**九種寫法全部 0 筆相符。**
+⚠ 卡單 `queryAlias` 裡的 `Shining = シャイニング`（2017 VICJ-77054 的盤面題）與
+`Сияя`（1985 蘇聯 Мелодия 壓片題）兩種都試過，同樣 0 筆——**成因 13（翻譯型盤名）在這張不成立。**
+
+## 4939　`Native Son`：成因 14 的目錄全掃——**六個 artist 實體逐一掃完**
+Apple jp 上與這張碟相關的實體不只一個，逐一 `lookup?id=…&entity=album&limit=200`：
+1. **`4395842`「Native Son／ネイティブ・サン」——⚠ 是同名的另一個團**，
+   primaryGenre 逐字 `ロック`，目錄 9 筆全是 2020–2024 的 RonkRockRecords 單曲與 EP
+   （`A Day to Remember`／`Angel`／`Alter-Ego - EP`…），與 1979–83 的日本フュージョン 團無關。
+   **這是本層第一個陷阱：搜尋層「查到 Native Son」不等於查到我們的 Native Son。**
+2. `1508942921`「本田竹広」（ジャズ）— 3 筆，全是 2004–2006 TEICHIKU。
+3. `250055187`「本田竹曠」（ジャズ）— 15 筆，1969–2006 的 TRIO RECORDS 與 Solid／Ultra-Vybe 復刻。
+4. `366407604`「本田竹曠トリオ」— 2 筆（`This Is Honda`／`ジス・イズ・ホンダ remaster`）。
+5. `96563256`「Kosuke Mine／峰 厚介」— 7 筆，1970–2019（Universal＝TBM 系、King、Days of Delight）。
+6. `1294671923`「Kohsuke Mine／峰厚介」— 2 筆（`Daguri` Victor 2017、`First` TBM 1970）。
+   （另有 `1735111386`「Kosuke Mine」，只掛 2024 年守谷美由貴 的三筆 feat. 單曲。）
+⚠ **本田竹広 在 Apple jp 被拆成三個實體（広／曠／曠トリオ）、峰厚介 被拆成三個**
+——**成因 14 在本線成立，而且是同一批碟的兩位領班同時中。**
+**六個實體、合計 38 筆專輯裡，零筆是 Native Son 名下的碟。**
+
+## 4940　⚠ `Native Son —《Shining》` 歸**成因 1（市場真的沒有）**——鄰居對照做完
+排除「整年沒數位化」的對照組：**同兩位領班的同期碟在架**——
+本田竹曠 的 1969《本田竹曠の魅力》、1971《ミスティ》、1972《ジス・イズ・ホンダ》、
+1973《ホワッツ・ゴーイング・オン》、1974《サラーム・サラーム》全部在 Apple jp；
+峰厚介 的 1970《KOSUKE MINE FIRST》、1974《アウト・オブ・ケイオス》、1976《サンシャワー》《ソリッド》亦然。
+**在架的全部是 TRIO／TBM／Universal 系；Native Son 名下的 JVC（Victor）碟一張都沒有。**
+再加上池中同團的另外兩張——`Native Son｜Native Son`（c-177）與 `Native Son｜Savanna Hot-Line`（c-177）
+——**探測層六個店面全 0**，**本層判定：Native Son 的 JVC 1979–1983 目錄整條未數位化。**
+⚠ 派工說「這個團的數位化是逐張的、c-178 那張有串流」——**該前提不成立，見下一條。**
+
+## 4941　⚠ ⚠ **給主線（跨批，本層不動）：c-178 的 `Native Son｜Coast to Coast (Live in USA)` 是誤配**
+該鍵目前記 `front: de`、`collectionId: 1589020169`、`status: ready`，`tried` 是
+`us:0→0 gb:0→0 jp:0→0 tw:0→0 de:11→1`。本層 `lookup?id=1589020169&country=de` 逐字回：
+**`artistId 1568294987`／`artistName "Coast To Coast"`／`collectionName "Coast To Coast"`／
+`releaseDate 2007-01-01`／10 軌／`copyright "℗ 2021 Athens Of The North"`。**
+Athens Of The North 是蘇格蘭的放克／靈魂考古廠牌，`Coast To Coast` 是另一個團
+——**與日本フュージョン 團 Native Son 無關。**
+**成因：`looseArtistOk`／`looseTitleOk` 讓「掛名＝盤名＝Coast To Coast」這一筆整個穿過去**
+（卡片的盤名 `Coast to Coast (Live in USA)` 去掉括號補註後與對方的掛名字面相同）。
+⚠ **這不是十六種 `0→0` 成因裡的任何一種，是相反方向的偽陽性**：
+**「鬆比對讓同名的另一個團穿過」**。建議主線把 c-178 該鍵改回 `unavailable`，
+並考慮在 `match-lib` 的鬆比對加一道「盤名與掛名逐字相同時不套用 loose」的防呆。
+**本層邊界只准動 c-179 的鍵，所以沒有改它，只回報。**
+
+## 4942　`John Kaizan Neptune / 直居隆雄 —《Two in Flight》`（1982，Eastworld WTP-90189）：查詢寫法與市場
+逐字試過：`John Kaizan Neptune`／`Takao Naoi`／`直居隆雄`／`Two in Flight`／`Neptune Naoi`。
+市場 `jp`（全部）＋ `us`／`gb`（Neptune 目錄）。
+⚠ `Two in Flight` 在 jp 的 `entity=album` 回 12 筆，**一筆都不沾邊**
+（ヨルシカ《second person》、清水翔太《FLY》、UVERworld、NCT 127…）——
+**`apple-candidates.md` 給這張的候選 `1538281370` 就是清水翔太《FLY》，確定是錯的。**
+
+## 4943　⚠ 成因 2／2c（拆成短掛名＋feat.）在這張**不成立**——兩個名字都單獨試過
+派工的假設是「一方外國人、一方日本人，很可能被拆成短掛名＋feat.」。逐一驗：
+- **`John Kaizan Neptune` 在 Apple jp 只有一個實體 `2726341`**，顯示名 `ジョン・海山・ネプチューン`。
+- **`直居隆雄` 有實體 `1512386079`**（ジャズ），目錄只有 1 筆：《Greetin' Live at TheGLEE》2020 THEGLEE。
+- **`Takao Naoi` 這串羅馬字在 jp 搜不到他**（回的是 `高尾直樹`）——⚠ 成因 3 的一個小佐證：
+  **這一位在 Apple 上只有漢字實體、沒有羅馬字實體。**
+- 另有 `2677490`「TakéDaké」（Neptune 的竹樂團），目錄 1 筆《Asian Roots (feat. John Kaizan Neptune)》1998 Savoy。
+**三個實體、合計 14 筆，零筆是《Two in Flight》，也零筆有 `feat.` 形式的 1982 年碟。**
+
+## 4944　`John Kaizan Neptune` 的目錄全掃：jp／us／gb 三個市場逐一比對
+`lookup?id=2726341&entity=album&limit=200`：**jp 12 筆、us 9 筆、gb 12 筆**，內容相同、只有顯示名不同
+（jp 記 `ジョン・海山・ネプチューン`、us／gb 記 `John Kaizan Neptune`）。全部逐筆列：
+《The Circle》1985（Nippon Columbia／NIPPONOPHONE）、《Jazzen》1987（Savoy，另有 Columbia 的重複建檔一筆）、
+《Sky Spirit》1991（Victor）、《WORDS CAN'T GO THERE》1991（Nep Tunes）、
+《Dance for the One in Six》1991、《Kite》1992、《River Rhythm》1994（以上三筆 Kosei Publishing）、
+《Steps In Time》2004、《Bamboo Magic》2007（Nep Tunes）、《John Kaizan Neptune Collection》2009（EML）。
+**最早的一筆是 1985。**
+
+## 4945　⚠ `Two in Flight` 歸**成因 1**——鄰居對照給出的是「**廠牌期間**的缺口」，不是「整年沒數位化」
+Neptune 本人的數位化程度其實很高（12 筆），**但在架的最早一筆是 1985 年的日本コロムビア 盤**；
+**1980–1983 的東芝 EMI／Eastworld 期整段空白**（《Two in Flight》WTP-90189 是這一段的碟）。
+⚠ 這與本組的另一個觀察互相印證：同批 `本多俊之｜Shangri-La`（Eastworld EWJ-90013）
+探測層是在 **`gb`** 命中 `834892015`、appleTitle 逐字 `Shangri Las Speak`
+——**東芝 Eastworld 的碟在 Apple 上落點極不規則**。
+**判定：不是 Neptune 沒數位化，是東芝 EMI 沒把 Eastworld 1982 那一批放上來。仍歸成因 1（市場真的沒有）。**
+
+## 4946　⚠ ⚠ `apple-candidates.md` 的實測命中率：**本層覆核的 9 筆候選，0 筆成立**
+該清單給這四張標了 9 個候選 id，本層逐筆查證：
+- `Shining` → `1757878639`／`1793186768`（us、2024／2025）：**都不是 Native Son 名下的碟**，盤名字面撞名。
+- `Two in Flight` → `1538281370`：**是清水翔太《FLY》2017**（第 4942 條）。
+- `99.99` → `1330922530`（tw《99》2012）：與 1982 年 King 盤無關。
+- `Natural-E` → `508507303`／`1443343592`／`1443825522`／`1791123779`：全是英文 `Natural` 撞名。
+**9/9 全否，與派工說的「命中率只有 9%」一致，甚至更低。**
+**本層照派工把它當「哪幾張不用再查」用，沒有把任何一個候選寫進 `previews.json`。**
+⚠ 該清單抬頭寫的依據全部逐字是「盤名直查」——**這正是它肯定不可靠的原因：它沒有過掛名那一關。**
+
+## 4947　`99.99 —《99.99》`（1982，Electric Bird K28P-6139）：查詢寫法與市場
+逐字試過：`99.99`（`entity=musicArtist` jp／`entity=album` jp／`entity=album` us）／
+`フォーナイン`（`musicArtist` jp／`album` jp）／`Four Nine`（`musicArtist` jp）／
+`More Of 99.99`（1983 續篇，`album` jp）／`服部まさ晴`／`Masey Hattori`／`菅沼孝三`／`成田忍`（皆 `musicArtist` jp）／
+`Nexus Rock Legend`（2018 復刻線名，`album` jp）。**全部 0 筆相符。**
+
+## 4948　⚠ ⚠ **成因 12 與「搜尋索引吃不吃純數字掛名」的假設——本層實測推翻**
+派工的假設是「掛名是純數字，**成因 12（店面把掛名當盤名）與搜尋索引對數字字串的處理都要試**」。
+實測結果：**Apple 的 `search` 對 `99.99` 這串字是逐字比對的、完全沒有被當成噪音丟掉**——
+`term=99.99&entity=album&country=us` 回 12 筆，**每一筆的盤名裡都真的有 `99.99` 這串字**
+（`99.99% of YOU Will Sleep to This ASMR`、`99.99 - Single`、`99.99 (The YouTube Guru Song)`…）；
+`country=jp` 同一串字同樣回字面命中。
+**結論：純數字（含小數點）的掛名／盤名在 Apple 的搜尋索引裡是可查的，不是索引失效。**
+⚠ **所以「掛名是純數字」不構成第十七種成因**——**這是本層唯一一個被實測否決掉的候選新成因，記下來免得後面幾批再試一次。**
+同理，**成因 12 也不成立**：若店面真把 `99.99` 當成盤名，上面那兩次字面查詢就會撈到它。
+
+## 4949　`99.99`：**Apple 上沒有這個團的 artist 實體，領班也沒有**
+`entity=musicArtist` 三種寫法的結果逐字：
+- `99.99` → 回的是 i-dle／Victoria Monét／SALU…（純粹相關度排序的雜訊，零相符）。
+- `フォーナイン` → 回 `9nine`／`フォーエイト48`／Major Lazer…（零相符）。
+- `Four Nine` → 回 `FourNine`（ヒップホップ／ラップ 2019–）／`Three Four Nine`／`Four Nine Ace`（イージーリスニング）
+  ——**三個都是別人**，逐筆看 primaryGenre 與年代即可排除。
+領班 **`服部まさ晴`（Masey Hattori）兩種寫法在 jp 皆 0 筆——Apple 上沒有這個人的實體。**
+成員側只有鼓手 `菅沼孝三` 有實體（`405460766`，ジャズ），**目錄只有 1 筆**：《Drum Paradise》2018 King Record。
+⚠ **成因 14（領班被拆成多個實體）在這張不適用——這裡是反過來的：一個實體都沒有。**
+
+## 4950　⚠ ⚠ `99.99` 歸**成因 1**——鄰居對照用的是**同號段連號**，這是本線最硬的一次對照
+一般的鄰居對照是「同藝人同期」，但 `99.99` 在 Apple 上沒有藝人實體可比。
+**改用目錄號連號比**（第 4669 條已確認 `K28P-` 前綴在本組裝了四個 King 字標，但號碼是連續配的）：
+- **`K28P-6138` ＝ 同批 `富樫雅彦｜スピリチュアル・モーメンツ`（Paddle Wheel）→ 探測層 `jp` 命中 `1793263615`、ready。**
+- **`K28P-6139` ＝ 本筆《99.99》（Electric Bird）→ 六個店面全 0。**
+**前後號差 1、同一家 King、同一年（1982），一張在架、一張不在。**
+再加同批的 `K28P-6086`《Spirits》（jp `1651768703` ready）、`K28P-611x`《Boomerang》（jp `1651762331` ready）
+——**Electric Bird 這個字標本身在 Apple jp 有大量在架碟。**
+**判定：不是廠牌沒數位化、不是那一年沒數位化，是這一張沒上架。成因 1。**
+⚠ 順帶否掉成因 16：本筆是 8 軌 LP，**Apple 上根本沒有對應條目可被標成 `- EP`**，不是被 `SUFFIX` 防呆擋掉。
+
+## 4951　`兼崎順一 —《Natural-E》`（1982，King Records K28P 6210）：查詢寫法與市場
+逐字試過：`兼崎順一`（`musicArtist` jp）／`Junichi Kanezaki`（`musicArtist` jp）／
+`Natural-E`（`album` jp）／`ナチュラル・E`（`album` jp）＋ 命中實體的目錄全掃。
+`Natural-E` 與 `ナチュラル・E` 兩次查詢回的全是英文 `Natural` 的撞名碟
+（MINMI／YUI／ORANGE RANGE《ИATURAL》／noon／SHERBETS…），零相符。
+⚠ 策展層已查過：**整張碟在 Discogs 上沒有 master 頁（`master_id=0`）**，再發只有 MB 建的 NKCD-6649 一筆
+——**版本面本來就薄，與本層的結果方向一致。**
+
+## 4952　⚠ 成因 3 的新變體：**Apple jp 用的是第三種羅馬字 `Jyunichi Kanezaki`**
+卡單 `queryAlias` 逐字給了八種寫法：
+`Junichi Kanezaki；Kanezaki, Jun-ichi；KANEZAKI Jun'ichi；Kanesaki, Junichi；Mr "Donpei" Kanezaki；かねざき じゅんいち；兼崎 順一；ナチュラル・E`。
+**Apple jp 的實體 `804422935` 的 `artistName` 逐字是 `Jyunichi Kanezaki`**（`Jyu-`，日本國內常見的訓令式變形）
+——**八種寫法裡一種都沒有。**
+⚠ 好消息是**這一次不影響結果**：`兼崎順一`（漢字）與 `Junichi Kanezaki`（羅馬字）**兩種查法都把這個實體叫出來了**，
+因為 Apple 的 artist 頁同時掛著漢字顯示名（URL 逐字 `/artist/兼崎順一/804422935`）。
+**記進成因 3：漢字／片假名／羅馬字三種都要試這一條，本層再得一個佐證——而且羅馬字那一種可能有第三、第四種拼法，
+不要因為 `queryAlias` 列了羅馬字就以為羅馬字那一端試完了。**
+
+## 4953　`兼崎順一` 的目錄全掃：**同一個人、只有 2025 年的動畫原聲在架**
+`lookup?id=804422935&entity=album&limit=200`（jp），逐筆 3 筆：
+- 《『魔神英雄伝ワタル』オリジナル・サウンドトラック》2025-10-29／157 軌／℗ 2025 Bandai Namco Music Live（掛名 `兼崎順一 & 門倉 聡`）
+- 《『魔神英雄伝ワタル2』オリジナル・サウンドトラック》2025-10-29／124 軌／同廠（掛名 `兼崎順一, 門倉 聡 & 神林早人`）
+- 《パワー全開!龍王丸 (『魔神英雄伝ワタル』)》2025-07-12／單曲／同廠
+**確認是同一人**（1980 年代後期起轉做動畫配樂的那位兼崎順一），**primaryGenre 逐字 `J-Pop`**。
+⚠ **只有一個實體，沒有第二個**——成因 14 在這張查過、不成立。
+**三筆全是 2025 年 Bandai Namco 的動畫原聲，零筆是 King／Electric Bird 的 1982 年個人作。**
+
+## 4954　⚠ `Natural-E` 歸**成因 1**——鄰居對照同樣走同號段
+- **`K28P-6205` ＝ 同批 `富樫雅彦｜フレイム・アップ`（King Records）→ 探測層 `jp` 命中 `1793263762`、ready。**
+- **`K28P 6210` ＝ 本筆《Natural-E》→ 六個店面全 0。**
+**號差 5、同一家 King、同一年（1982），一張在架、一張不在。**
+另一條對照：本盤班底的 `難波弘之` 在池中有 1 張（seed《Sense of Wonder》1979），
+King／Electric Bird 在 Apple jp 的在架量見第 4950 條。
+**判定：成因 1（市場真的沒有）。**
+⚠ 也順帶否掉成因 9 與 16：本筆在 Apple 上**沒有任何對應條目**，
+**所以不可能是被 `match-lib` 的「數字殘餘」或 `SUFFIX` 防呆擋掉的**——那兩種要有條目才擋得到。
+
+## 4955　交件：**救回 0 張，四張全部歸成因 1**；零個新成因、一個候選新成因被否決
+**本層沒有改 `batch-progress/probe/previews.json` 的任何一個鍵**
+（四張都確定沒有，依派工「確定沒有的留原樣」）。
+⚠ 進場與離場各數一次：**鍵數 3626 → 3626，檔案 sha256 前 16 碼 `e1052fa50265440b` 未變。**
+c-179 的最終數字維持 **串流 23/27、封面 22/27**。
+逐張成因：
+| 卡片 | 成因 | 排除掉的其他成因 | 對照組 |
+|---|---|---|---|
+| `Native Son｜Shining` | **1** | 3（三種文字都試）、13（蘇聯題與片假名題都試）、14（六個實體全掃） | 本田竹曠 1969–74、峰厚介 1970–76 同期在架 |
+| `John Kaizan Neptune / 直居隆雄｜Two in Flight` | **1** | 2／2c（兩端各自單獨試、無 feat. 形式）、3（`Takao Naoi` 羅馬字無實體） | Neptune 自己 12 筆在架，**最早 1985**；東芝 Eastworld 1980–83 整段空 |
+| `99.99｜99.99` | **1** | **12（實測否決）**、16（無條目可被標 `- EP`）、14（無實體可拆） | **同號段 `K28P-6138` 在架、`K28P-6139` 不在** |
+| `兼崎順一｜Natural-E` | **1** | 9／16（無條目可被防呆擋）、14（只有一個實體） | **同號段 `K28P-6205` 在架、`K28P 6210` 不在** |
+**有沒有十六種以外的新成因：沒有。** 但有三件事要記給後面幾批：
+1. ⚠ ⚠ **一個候選新成因被實測否決**：「純數字掛名讓搜尋索引失效」**不成立**，
+   Apple 的 `search` 對 `99.99` 在 jp 與 us 都回字面命中（第 4948 條）。**後面幾批不用再試這一種。**
+2. ⚠ ⚠ **抓到一個反方向的偽陽性**（不屬十六種 `0→0` 成因）：
+   **c-178 `Native Son｜Coast to Coast (Live in USA)` 的 ready 是鬆比對讓同名的另一個團穿過**（第 4941 條）。
+   **給主線處理，本層沒動跨批的鍵。**
+3. ⚠ **成因 1 的鄰居對照可以用「同號段連號」代替「同藝人同期」**（第 4950／4954 條）——
+   **掛名在 Apple 上沒有實體時，這是唯一做得出對照的辦法，而且比同藝人對照更硬**
+   （同廠、同年、同號段，只差一個號碼）。建議往後的回撈層在日本廠牌線優先用這一招。
+
+### （第 4955 條附）本層沒有動到的東西——邊界自述
+只讀不寫：`desc-tools/batches/cards/c179-cards.json`、`batch-progress/c179/apple-candidates.md`、
+`batch-progress/probe/probe-previews.mjs`、`batch-progress/probe/previews.json`。
+**零寫入** `previews.json`（本批四個鍵留原樣、其他批的鍵一個沒碰）。
+**完全沒碰**：`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`caa.json`、卡單、其他批次的檔案、KV、Firestore。
+**沒有跑 `git add`／`git commit`／`git push`，沒有動 git 索引。**
+本檔以**純追加**寫入（寫前比對過 `git show HEAD:batch-progress/c179/rulings.md` 與工作區版本，兩者皆 1483 行、內容一致）。
+臨時檔在 `/tmp/claude-0/-home-user-dip-vinyl-shop/f5085309-84aa-5485-a270-96aad3644d92/scratchpad/c179rec/`。
