@@ -64,7 +64,10 @@ Discogs `tracklist` 含 `position` 為空的標題列。
 `node batch-progress/jp1-pool-recheck.mjs` 產生（每個掛名向 MB 問 `artist?query=`，
 把 `name`／`sort-name`／`aliases` 收成同義字串集，再掃 `seed_cards.json` ＋ 本機卡單）：
 
-- `poolRecheck.status` 逐字 **「池中查無此藝人（同義字串全掃過）」** → 這位藝人池中沒有，可以直接做。
+- `poolRecheck.status` 說「池中查無此藝人」→ ⚠ ⚠ **這一格同樣要逐張人工掃，不要當結論**
+  （第 1909-B 條：c-177 a 組實測 **9 筆裡錯了 5 筆，56%**）。**三種失效機制會同時出現**：
+  反查到 Group 實體就掃不到人名／反查到 Person 實體就掃不到編制字串／**比對日早於近批落地**。
+  **c-178 起的 slice 已用今天的池重掃並加了第三道「聯名內含」比對，但那只是把機率壓低，不是解決。**
 - `poolRecheck.status` 逐字 **「同藝人在池中，盤名不同——逐張人工比」** →
   `artistAlbumsInPool` 列出這位藝人池中已有的盤（格式 `來源｜掛名｜盤名｜年`）。
   ⚠ **跨文字系統的盤名比對不可靠**（`Harlem Nocturne` vs `ハーレム・ノクターン`），

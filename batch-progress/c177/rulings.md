@@ -1,3 +1,817 @@
+# c-177 裁定（日本爵士四大廠線 jp-1・**第五批**；a 組 19 張，1977–1979 年段）
+
+批次 c-177｜a 組 19 筆（Victor 9・King 6・コロムビア 2・東芝 2）｜策展層｜2026-09-22
+判準照 `batch-progress/CURATION-BRIEF-jp1.md`（2026-09-21 依 c-173…c-176 改過六次的版本）
+→ `CURATION-BRIEF-bluenote-post1985.md`（含**附錄二：雲端線實測**）→ `CURATION-BRIEF-bluenote.md`
+→ `CURATION-BRIEF-c131.md` → `c127` → `c126` → `c103plus` → `c93plus`，**固定規格一字未改**。
+曲風判準照 **c-173 b 第 3753 條 ＋ 第 1857-B 條（①② 進人工判）＋ 第 1871-B 條（④ 也降為人工判）
+＋ 第 1861-B 條第 5 款（措辭照 c-175 a 第 3876 條「不含 Jazz」的讀法）**，命中款次逐筆寫在各條。
+**a 組編號區間 4376–4405，本檔用到 4395**（b 組 4406–4435，本段落只寫 a 組、不覆寫對方）。
+
+**收 15、退 4｜年份改判 0 筆、盤名真改判 0 筆（等價形 8 筆、寫法差 3 筆、三欄一致 4 筆）、
+`live` 改判 0 筆、廠牌欄 6 筆與 slice 不符（1 筆因此退件）、再發版本數逐筆改以 Discogs master 為準（13/15 低估）。**
+
+---
+
+## 第 4376 條（**總表**）：**19 張＝收 15 ／ 退 4**
+
+| slice # | 掛名 — 盤名 | 廠／原盤目錄號 | 處置 | 理由（命中條款） |
+|---:|---|---|---|---|
+| 1 | 富樫雅彦とギルド・フォー・ヒューマン・ミュージック —《エッセンス》 | Denon Jazz YX-7513-ND | **收** | → `富樫雅彦 —《エッセンス》`（掛名縮成人名，見第 4387 條） |
+| 2 | 富樫雅彦トリオ —《モーション》 | Denon Jazz YX-7514-ND | **收** | → `富樫雅彦 —《モーション》`（同上） |
+| 3 | Isao Suzuki —《My Spare Time = マイ・スペア・タイム》 | Flying Disk VIJ-6011 | **收** | → `鈴木勲 —《My Spare Time》`；沿用 c-176 b 第 4102 條第 7 點的字串 |
+| 4 | Masabumi Kikuchi —《But Not For Me》 | Flying Disk VIJ-6016 | **收** | → `菊地雅章`；外國樂手 5/6 仍收，見第 4390 條 |
+| 5 | 芸能山城組 —《黄金鱗讃揚》 | Invitation VIH-6017 | **退** | 非爵士（② → 人工判 → 退；4095／3884 先例第二次），見第 4377 條 |
+| 6 | 高中正義 —《On Guitar》 | Invitation VIH-6033 | **收** | **邊界案：教則企劃盤，五項全部向收**，見第 4388 條 |
+| 7 | 坂本龍一 —《宇宙～人類の夢と希望～》 | Victor VV-5006 | **退** | 非爵士（**第 5 款兩半同時成立**，本線最乾淨的一次），見第 4378 條 |
+| 8 | 日野皓正 —《Hip Seagull》 | Flying Disk VIJ-6010 | **收** | → `日野皓正`；填的是池中 1976–1988 那一格 |
+| 9 | 福村博 With 渡辺貞夫 —《Hunt Up Wind》 | Flying Disk VIJ-6015 | **收** | → `福村博 with 渡辺貞夫`（分隔符見第 4387 條） |
+| 10 | 深町純 —《Disco Fever Over Classics》 | Express ETP-72315 | **退** | 非爵士（**第 5 款兩半同時成立**；盤面掛名根本不是他），見第 4379 條 |
+| 11 | 浅川マキ —《寂しい日々》 | Express ETP-80051 | **收** | `genres: jazz + blues`（照 4091 #11 對同一位藝人的處置） |
+| 12 | Katsutoshi Morizono —《Bad Anima》 | Electric Bird SKS 8003 | **收** | → `森園勝敏`（新立，池中 0 張） |
+| 13 | Nobuo Hara and His Sharps & Flats Meet Elvin Jones By Frank Foster —《Giant Steps》 | King Records SKA 3016 | **收** | → `原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster`（三方聯名，見第 4387 條）；**盤名撞 apex** |
+| 14 | Toshiyuki Honda —《BURNIN' WAVES》 | Electric Bird SKS 8002 | **收** | → `本多俊之 —《Burnin' Waves》`（寫法差）；外國伴奏 7/10 仍收 |
+| 15 | Yoshio Ohtomo Quartet —《As a Child》 | Seven Seas SKS-3003(S) | **收** | → `大友義雄カルテット`（**漢字是自己查出來的**，見第 4381 條） |
+| 16 | 増尾好秋 —《Sailing Wonder》 | Electric Bird SKS-8001 | **收** | 外國伴奏 **11/12**，本線至今最極端，仍收，見第 4390 條 |
+| 17 | 池田芳夫クインテット —《スケッチ・オブ・マイ・ライフ》 | Seven Seas SKS-3002(S) | **收** | `why` 是 `curator-list`（零機器依據），曲風全靠 Discogs ＋ credits 定案 |
+| 18 | Isao Suzuki & New Family —《The Thing》 | Flying Disk VIJ-6019 | **收** | → `鈴木勲`（MB 是同一個 Person 實體，見第 4387 條） |
+| 19 | Naoya Matsuoka & Wesing —《Fiesta Fiesta》 | **Discomate DSP-5112** | **退** | **原盤廠牌不在本線四家**（3714／3905／4094 形狀第三次），見第 4380 條 |
+
+**第 315 條結算：`prop-a.json` 15 筆 ＋ 本表退件 4 筆 ＝ slice `g:"a"` 19 筆。✔**
+**15 張、13 個相異掛名字串**（`富樫雅彦` 2 張、`鈴木勲` 2 張）。
+`chk-prop a` **標記 0**（只報不擋的一處是《Giant Steps》撞 apex，見第 4391 條）；
+`dedup-crossbatch c177` 跨批撞卡 **0**、同 rgMbid 不同掛名 **0**、共用目錄號 **0**、同掛名盤名詞元包含 **0**。
+**退件不補張**（簡報第二節第 2 點）。**收得率 79%（15/19）**，與 c-175 a 同水位、僅次於 c-176 b 的 83%。
+
+⚠ **收得率高的原因與 c-176 b 第 4091 條末段完全同構，而且更集中**：
+**1977–1979 是四家同時開新廠標的三年**，本組 19 筆有 **13 筆落在四條新線上**——
+ビクター 的 **Flying Disk**（VIJ-6010／6011／6015／6016／6019 五張）與 **Invitation**（VIH-6017／6033 兩張）、
+King 的 **Electric Bird**（SKS-8001／8002／8003 **開張三號全在本組**）與 **Seven Seas**（SKS-3002(S)／3003(S) 兩張）、
+コロムビア 的 **DENON PCM Jazz Series**（YX-7513-ND／7514-ND 兩張）。
+**列舉層撈進這幾條號段的，幾乎都真的是爵士／フュージョン 盤。**
+**ムード・テナー 與歌謡翻奏線在這個年段已經完全退潮**——本組一筆松浦ヤスノブ 形狀的碟都沒有。
+
+---
+
+## 第 4377 條：**退（非爵士）：`芸能山城組 —《黄金鱗讃揚》`（rg 7e802a5a）——與 c-176 b 第 4095 條同一個團、同一年、同一條廠標，退法也一樣**
+
+slice #5、**Invitation VIH-6017**、1978、5 軌、`why` `rg-tag`
+（MB 的 RG tags／genres 逐字 `experimental(1)`／`jazz(1)`／`rock(1)`——**三個並列、count 全是 1，第 3752 條形狀**）。
+
+**② 成立**：Discogs releases/1846193 的 genres 逐字 `Jazz`／`Rock`／**`Folk, World, & Country`**；
+⚠ **styles 逐字是 `Ethereal`／`Experimental`——兩項都不是爵士 style，一個都不是**。
+依第 1857-B 條進人工判。**人工判的結果是退**，依據四項：
+
+1. **五軌沒有一首爵士標準曲、也沒有一首爵士原創曲**（Discogs 逐軌 written-by）：
+   〈アベ・マリア (Ave Maria)〉（**Giuliano Buonaugurio Da Tivoli，文藝復興曲**）、
+   〈うぐいす (The Nightingale)〉（**Thomas Bateson ＋ Sir Philip Sidney，伊麗莎白時代牧歌**）、
+   〈クリネックス (Kleenex)〉（山城祥二 作曲、山城竜 作詞）、
+   〈老人〉（**Traditional**）、〈黄金鱗讃揚〉16:33（山城祥二 作曲、山城竜 作詞）。
+   **兩首原創曲是合唱寫作，不是爵士原創曲。**
+2. **編制是民族藝能合唱團，一件爵士樂器都沒有**。整筆 extraartists 二十八行逐字看過，
+   只有「Yamashiro Shoji=Conductor」一個指揮，其餘是ソリスト（千谷東海・土屋由里子）、
+   **`Vocals [Peddlar]` 六名、`Vocals [Priest]` 三名**、ゴング（山本恵子）、
+   B2 的 Victron EO-10S 鍵盤（鹿島典子）與 Roland SH-3A 合成器（中村慎一）。
+   **沒有節奏組、沒有管樂、沒有即興段。**
+3. **先例直接命中，而且是同一個團**：**c-176 b 第 4095 條** 退掉的 `芸能山城組 —《やまと幻唱》`
+   是 **1977 年、同一條 Invitation 廠標、同一個 VIH-60xx 號段**（VIH-6001 vs 本盤 VIH-6017），
+   該條逐字寫「**芸能山城組（指揮山城祥二＝大橋力）整份目錄就是民族音楽**——ケチャ、ブルガリアン・ヴォイス、
+   声明、そして《AKIRA》。池中已有的兩張（`恐山/銅之剣舞` 1976、`Symphonic Suite AKIRA` 1988）
+   **正是以民族音楽／サウンドトラック 的身分進池的，不是以爵士身分**，本線不該再從爵士側補第三張」。
+   **本盤是該條的第二次，一字不必改。**
+4. **第 3884 條末段的通則同向**（日本傳統曲的改編盤一律退，素材來源是判準）：
+   本盤的素材是**文藝復興聖歌＋伊麗莎白牧歌＋日本傳統曲＋自創合唱曲**，
+   **一樣不是爵士標準曲或原創曲**，只是這一次的外來素材是歐洲早期音樂而不是日本民謡。
+
+⚠ **③ 款字面不成立**（五軌沒有日本歌謡曲／演歌），**⑤ 款的前半也不成立**（genres 含 Jazz）
+——**本條靠 ② ＋ 人工判的四項退，與第 4095／3884／3906 三條同一種退法**，逐字記明以免被讀成「單看 genres 桶就退」。
+⚠ **④ 款這一次也字面成立**（整份目錄落在一條具名的產品線上，只是那條線是「民族芸能」不是「ムード」），
+但依第 1871-B 條 ④ 只能進人工判，**不當主要依據**。
+⚠ **併記一筆載體事實**：本盤是 **12 吋 45 轉、五軌**，**Apple 兩地的條目逐字標成 `Ogon Rinsanyo - EP`**
+（id1799627467，5 軌），1994 年的 CD 再發（Invitation VICL-15033）在 Discogs 上的 format 逐字是 `Mini-Album`。
+**若日後有人要翻案收它，還要先過「EP 不收」那一關**（共通五條）。
+⚠ 掛名本筆不入池：`芸能山城組` 池中已有 2 張，**本盤不加第三張**。
+（可逆性：收退名單與卡單值，不動卡池結構——照裁定權下放的第 1 條「有先例」與第 2 條「可逆」直接定，不上呈。）
+
+---
+
+## 第 4378 條：**退（非爵士）：`坂本龍一 —《宇宙～人類の夢と希望～》`（rg 856d363a）——第 5 款兩半同時成立，本線至今最乾淨的一次**
+
+slice #7、**Victor VV-5006**、1978-07、**2 軌**、`why` **`artist-search-tag`**
+（c-176 b 第 4108 條第 3 點逐字建議「把 `artist-search-tag` 比照 `curator-list` 處理」，**本筆是那條建議的第一次應驗**）。
+**MB 的 RG `tags` 與 `genres` 兩欄都是空的——零機器依據。**
+
+**第 5 款的兩半在本筆同時成立**（該款逐字：「`genres` **不含 Jazz**，或含 `Non-Music`／`Stage & Screen`，
+**而**曲目又非爵士標準曲或原創曲」）：
+
+- **前半中兩次**：Discogs releases/9610931 的 genres 逐字是 **`Electronic`／`Non-Music`**
+  ——**`Jazz` 根本不在陣列裡**（第 3876 條的讀法），**而且逐字含 `Non-Music`**。
+  styles 逐字是 **`Dialogue`／`Electro`／`New Age`／`Field Recording`**，**四項沒有一項沾到爵士**。
+- **後半也中**：**整張只有兩軌，A 面與 B 面逐字都叫〈宇宙〉**，是同一部作品的兩面。
+  **既不是爵士標準曲，也不是爵士原創曲。**
+
+**人工判要看的碟本身也看了，看完更清楚——這是一張語り物／展覽企劃盤，不是音樂專輯**：
+同號 Promo 盤（releases/12590965）的 notes 逐字寫明
+「Supervised by Doctor of Science, Professor of the University of Tokyo, NASA Space Shuttle Senior Researcher-**Ohbayashi Takeshi**」
+「Music composition / composition / synthesizer performance is **Ryuichi Sakamoto**」
+「Narration is **Dan Coughlin**」「Composition and commentary **Nobuo Nakatomi** of the editor in chief of the space magazine "Space Era"」
+「Recording audio, photo materials provided by the **Space Science Expo Association** Secretariat」
+——**是宇宙科学博覧会 的企劃盤，由東大教授監修、英語旁白、坂本龍一 掛作曲與合成器演奏**；
+notes 還逐字寫著「**Joe Meek composed Telster is included as an inserted music on side A**」
+（A 面插了 Joe Meek 的〈Telstar〉），**盤上唯一的第三方作曲 credit 就是那一筆**。
+**整筆 `extraartists` 是空的——連演奏者都沒有列。**
+
+→ **退。判準：第 5 款（前後兩半同時成立）＋ 人工判的企劃屬性。**
+⚠ **這是本線第一次「第 5 款兩半同時成立」的乾淨命中**——
+c-176 a 第 4075 條的《残・曽根崎心中》是「只中前半、後半不成立所以收」，**本筆正好是它的反面**，
+兩條並讀就是第 5 款那個「而」字的完整用法。
+⚠ **退的是這張碟、不是這個人**（第 3721 條末段的同一句）：**`坂本龍一` 池中已有十列**
+（async 2017／1996／Thousand Knives 1978／B-2 Unit 1980／左うでの夢 1981／音楽図鑑 1984／未来派野郎 1986／
+戦場のメリークリスマス 1983 apex:hall／BTTB 1999／12 2023，另有 `Alva Noto & Ryuichi Sakamoto` 等聯名串），
+**其中《Thousand Knives》就是同一年（1978）的碟**——**他 1978 年在池中已經有一張，本盤不是缺口。**
+⚠ **`house`／`entities` 沒有問題**（Victor／`Victor(JP imprint)`，盤面逐字 `Victor VV-5006`），退的純粹是曲風與形狀。
+⚠ **盤名帶 `～`(U+FF5E)**：收進來會觸發 `chk-prop` 的「（報告）含日文分隔符」那一行（只報不擋），
+本筆因退件而沒有實際觸發，記給後五批。
+（可逆性：收退名單，改回去只要補卡、不動卡池結構——照裁定權下放第 2 條直接定，不上呈。）
+
+---
+
+## 第 4379 條：**退（非爵士）：`深町純 —《Disco Fever Over Classics》`（rg dd5443a3）——第 5 款兩半同時成立；⚠ 盤面掛名根本不是他**
+
+slice #10、**Express ETP-72315**、1978、**2 軌**、`why` **`artist-tag`**。
+**MB 的 RG `tags` 與 `genres` 兩欄都是空的——零機器依據**（`artist-tag` 來自藝人層）。
+
+**第 5 款兩半同時成立**：
+
+- **前半**：Discogs releases/13639947 的 genres 逐字是 **`Funk / Soul`／`Pop`／`Classical`**
+  ——**`Jazz` 不在陣列裡**；同號 Promo 盤 releases/964130 逐字只有 `Funk / Soul`／`Pop`。
+  **styles 逐字只有 `Disco`。**
+- **後半**：**整張兩「軌」其實是兩面各一段連續混音**——
+  A 面逐字是 **二十首古典名曲的迪斯可串燒**（乙女の祈り／森の水車／American Patrol／エリーゼのために／
+  トルコ行進曲／Die Schmied Im Walde／かっこうワルツ／アマリリス／ドナウ河の漣／トロイメライ／野ばら／
+  Ave Maria／G線上のアリア／運命／美しく青きドナウ／亜麻色の髪の乙女／新世界より／剣の舞／白鳥の湖／第九），
+  B 面是韋瓦第〈四季・春〉。**逐軌的 Composed By 掛的是貝多芬、莫札特、巴哈、舒伯特、德弗札克、
+  柴可夫斯基、德布西、舒曼、小約翰・史特勞斯、哈察都量……十七位古典作曲家。**
+  **零爵士標準曲、零原創曲。**
+
+⚠ ⚠ **本筆另有一項比曲風更硬的事實：盤面的掛名根本不是深町純**。
+Discogs 兩筆 1978 年壓次的 `artists` 陣列逐字是 **`The Chameleon Band`**（Promo 盤只有這一個），
+深町純 在整筆 credits 裡的角色逐字是 **「Jun Fukamachi=Arranged By, Keyboards」與逐軌的「Jun Fukamachi=Remix」**
+——**他是編曲、鍵盤與混音，不是領銜者**。照第 3817 條第 4 款，這種角色不寫進掛名；
+**若硬要收，掛名應該是一個池中 0 張的錄音室化名樂隊 `The Chameleon Band`**。
+形狀與 c-175 a 第 3879 條退掉的《Wonderful Moog Sound》（「1864 Cotton Field Rock Band」是錄音室化名）同構：
+**廠牌拿一位爵士名家的名字包裝一個示範／企劃產品。**
+
+→ **退。判準：第 5 款（兩半同時成立）＋ 第 3879 條的化名企劃盤形狀。**
+⚠ **退的是這張碟、不是這個人**：**`深町純` 池中已有四張**（c-175 b《Introducing Jun Fukamachi》1975、
+c-176 a《Jun Fukamachi At Steinway》與《(Take 2)》1976、c-176 b《Second Phase》1977），
+**他的爵士／フュージョン 盤照常收**——這與 c-176 b 第 4096 條退《Sgt. Pepper's》時的處置完全一致，
+**本筆是同一位藝人在本線的第二次退件，兩次的理由都是「這張碟本身」。**
+⚠ ⚠ **併記一件 MB 的資料問題（退件不入卡，但要記）**：
+**MB 把兩張不同的碟折進同一個 RG**——轄下兩筆 release 是
+021a4bea（1978 EXPRESS **ETP-72315**「Disco Fever Over Classics」**2 軌**）與
+66ccb640（1980 EXPRESS **ETP-50077**「**Fusion Synthesizer**」**5 軌**），
+**目錄號差 22,238、年份差兩年、軌數差三軌、標題完全不同**。
+slice 的 `titleCheck.titlesSeen` 因此同時出現兩個題（`note` 欄仍然是空的，機器層沒報）。
+**→ 這是簡報坑 4「同一張碟多個 RG」的反向：同一個 RG 裝了兩張碟**，
+**`titleCheck` 三欄一致、note 空白時仍可能有這種形狀**（接 c-175 b 第 3904 條與 c-176 b 第 4099(a) 的同一警告）。
+⚠ 掛名本筆不入池：`The Chameleon Band` 池中 0 張。
+
+---
+
+## 第 4380 條：⚠ **退：`Naoya Matsuoka & Wesing —《Fiesta Fiesta》`（rg 2aef5175）——原盤是 TBS 系的 Discomate，Victor 只出現在 2008 年的 CD 再發上**
+
+slice #19、slice 的 `house` 是 Victor、`entities` 是 `Victor(JP imprint)`、`why` 是 `rg-tag`、
+⚠ **`format` 欄逐字是 `Digital Media`**（**這一欄本身就是警訊**）。
+**曲風那一關過得很輕鬆**（Discogs releases/4047493：genres 逐字只有 `Jazz`、styles 逐字 `Fusion`／`Latin Jazz`／`Jazz-Funk`；
+六軌全是原創的ラテン・フュージョン，樂手逐名可查——高橋ゲタ夫 貝斯、村上秀一 鼓、宮沢昭 長笛、
+大村憲司 吉他、土岐英史 高音／中音薩克斯風、向井滋春 長號、清水靖晃 次中音薩克斯風、Pecker 打擊、
+吉田美奈子 與 Eve 主唱、東京ストリングス・アンサンブル），**退的是身分**：
+
+| Discogs master 548188 的八個版本 | 年 | 廠牌／catno |
+|---|---:|---|
+| **releases/4047493（原壓）** | **1979** | **Discomate DSP-5112** |
+| releases/6196087 | 1979 | Discomate DSP-5112（Promo，notes 逐字「Printed ''見本盤''」） |
+| releases/16268044 | 1979 | Discomate DCP-1512 |
+| releases/2916230 | 1982 | Discomate DSP-3023（Reissue） |
+| releases/18984514 | 1982 | Discomate DCP-3007（Remastered） |
+| releases/19795468 | 1984 | Discomate CDP-2（Reissue） |
+| releases/9566011 | 2000 | Ant Inc. (2) ANT-1（Reissue, Remastered） |
+| **releases/8245886** | **2008** | **Victor VICL-62862（Album, Reissue；notes 逐字「Mini LP 2008 issue」）** |
+
+**MB 自己的資料也同向**：轄下兩筆 release 裡 **1979-10-25 那一筆（51570be2）的 label 欄逐字是 `discomate`、catno `DSP-5112`**，
+掛到 `Victor` 的是 2013-07-02 的 **Digital Media**（68a74b40，VICL-62862）。
+⚠ **本筆比 c-176 b 第 4094 條的《Disappointment-Hateruma》更容易漏**：該筆的 slice `format` 是 `CD`，
+**本筆逐字是 `Digital Media`**——**列舉層是從 2013 年那個數位再發反推出「這是 Victor 盤」的**，
+**第 4108 條第 8 點那道快篩（「`format` 只寫 CD 而年份在 1980 年前，先假設列舉層釘到的是 CD 再發」）在本筆要再放寬一格：`Digital Media` 也算。**
+
+**Discomate（ディスコメイト）是誰，查到底了**：
+- **MB label 實體 76b6153a**：name `discomate`、type **Imprint**、area **Japan**、life-span **1975–1983（ended）**，
+  `label-rels` 逐字只有一條「imprint backward: **Disco Co., Ltd.**」。
+- **Discogs label 71114** 的 `profile` 欄逐字：「**TBS Group** / A subsidiary of **Tokyo Broadcasting System**
+  (TBS, now Tokyo Broadcasting System Holdings, Inc., 東京放送ホールディングス). **The sales were outsourced to
+  Victor Music Industries**… Established in 1975, the company was dissolved and liquidated at the end of 1984.」
+  `parent_label` 逐字是 **`Disco Co., Ltd.`**。
+
+→ **Discomate 是東京放送（TBS）的子公司ディスコ株式会社 的廠標，不是ビクター 的字標**；
+**ビクター 只是它的販売受託（發行代理），而且 1979 年原壓的 Discogs `companies` 欄是空的、
+兩筆 1979 壓次都沒有出現 Victor Musical Industries 任何一行。**
+→ 這與 c-176 第 4076／4101 條收下的 `Wave Concept`／`Denon`／`Denon Jazz`／`Seven Seas` **形狀完全不同**：
+那幾個的 `companies` 欄逐字都寫著「Record Company / Made By: Nippon Columbia Co., Ltd.」或「King Record Co. Ltd」，
+**是母公司自家的字標**；**Discomate 的母公司是 TBS。**
+→ **本盤是 Discomate 盤，不是 Victor 盤。** 本線的範圍逐字是「四家的日本本土爵士盤」，
+**依 c-173 第 3714 條「卡的身分應歸原盤」、c-175 b 第 3905 條（URC 原盤＋東芝 CD 再發）與
+c-176 b 第 4094 條（ALM 原盤＋King CD 再發）退。這是同一形狀的第三次。**
+
+⚠ **這是真實缺口、不是重複**：實掃池中 `松岡直也` **只有 1 張**（seed《Majorca》1979）、
+`Matsuoka`／`Wesing` 羅馬字 **0 張**，**本盤與《Majorca》同年但不同碟**。
+⚠ **記給主線調度**：**Discomate／ディスコメイト（TBS 系，1975–1983）該另立一線，本線不收**
+——松岡直也 與ウィシング 1979–1982 的主要目錄（《Fiesta Fiesta》《The September Wind》一系）全在這家，
+**Apple jp 上查得到至少九張**，池中只有一張。形狀與第 4094 條末段對 ALM Records／コジマ録音 的建議相同。
+⚠ 掛名本筆不入池（`Naoya Matsuoka & Wesing`／`松岡直也 & ウィシング` 池中 0 張）。
+（可逆性：收退名單，不動卡池結構——照裁定權下放的第 1 條「有先例」與第 2 條「可逆」直接定，不上呈。）
+
+---
+
+## 第 4381 條：⚠ ⚠ **`poolRecheck` 逐筆人工比對——19 筆實掃零撞卡，但「池中查無此藝人」那句話在 9 筆裡錯了 5 筆**
+
+本組 19 筆的分佈是 **「同藝人在池中，盤名不同——逐張人工比」9 筆**（#4／#5／#6／#7／#8／#9／#11／#13／#19）、
+**「池中查無此藝人」9 筆**（#1／#2／#3／#10／#12／#14／#16／#17／#18）、
+**「⚠ 變體全是羅馬字，等於沒查過」1 筆**（#15）。三種都自行掃過池：
+以 `chk-prop` 同一把正規化鍵（`&`→`and`、剝非文數字）子字串掃 `seed_cards.json`（**17,248 列**）
+＋ `desc-tools/batches/cards/*.json`（**214 檔**）＋ 各批 `prop-*.json`，**合計索引 28,918 列**，
+**每個掛名的漢字、片假名、羅馬字三種寫法都試過**（另加盤名一輪）。
+
+**(a) 9 筆「逐張人工比」的結果：一筆都沒撞。**
+
+| slice # | 池中已有 | 比對結論 |
+|---:|---|---|
+| 4 `菊地雅章` | 6 列（Susto 1981／End for the Beginning 1973／East Wind 1974／Wishes/Kochi 1976／`菊地雅章セクステット` Matrix 1969・Re-confirmation 1970）＋c-153《Acoustic Boogie》 | 本盤是 **Flying Disk VIJ-6016、1978**，**池中 1977–1980 整段空白** → **可收** |
+| 5 `芸能山城組` | 2 張（恐山/銅之剣舞 1976、Symphonic Suite AKIRA 1988） | 無一是本盤（退件理由是曲風，見第 4377 條） |
+| 6 `高中正義` | 3 張（Seychelles 1976／Jolly Jive 1979／虹伝説 1981） | 本盤是 **Invitation VIH-6033、1978**，**正好落在前兩張之間** → **可收** |
+| 7 `坂本龍一` | 10 列（含 apex:hall《戦場のメリークリスマス》與**同年的《Thousand Knives》1978**） | 無一是本盤（退件理由是曲風，見第 4378 條） |
+| 8 `日野皓正` | 15 列（seed 6＋`日野皓正クインテット` 3＋c-149/150/151＋c-153＋c-175＋**c-176 b《May Dance》1977**） | 本盤是 **VIJ-6010、1978** → **可收**；第 4092 條逐字寫過「池中 1976–1988 整段空白」，**本卡填的正是 1978 那一格** |
+| 9 `渡辺貞夫`（聯名的一方） | 16 列（seed 9＋c-173 兩列＋c-174 兩張＋c-176 三張） | 無一是本盤；⚠ **另一方 `福村博` 的人名字串池中 0 張**，只有 seed 的 `福村博クインテット —《Morning Flight》1973` 一張編制字串 → **可收** |
+| 11 `浅川マキ` | 5 列（浅川マキの世界 1970／c-175 Live 1972・Maki VI 1974／c-176 灯ともし頃 1976・流れを渡る 1977） | 本盤是 **ETP-80051、1978-12-01** → **可收** |
+| 13 三方 | `原信夫とシャープス・アンド・フラッツ` 6 張（1963–1970）＋`Elvin Jones` 12 列＋`Frank Foster` 1 張 | 三方逐張比完零撞卡；**原信夫 那六張全部停在 1970 年** → **可收** |
+| 19 `松岡直也` | 1 張（Majorca 1979） | 同年但不同碟（退件理由是廠牌，見第 4380 條） |
+
+**(b) ⚠ ⚠ 9 筆「池中查無此藝人」裡有 5 筆是錯的**（實掃結果如下，**沒有一筆造成誤收**，但那句話不可信）：
+
+| slice # | `poolRecheck.status` | slice `note` | **實掃結論** | 失效機制 |
+|---:|---|---|---|---|
+| **1** | 池中**查無**此藝人 | 「藝人池中**有 12 張**」 | ⚠ **錯**：`富樫雅彦` 池中 **13 列**（seed 7＋c-174 兩列＋c-175 一列＋c-176 兩張＋c-51 prop 一張） | **MB 由 rgMbid 反查到的是 Group 實體 `富樫雅彦とギルド・フォー・ヒューマン・ミュージック`（8d4b5168），它的 alias 集裡一個人名都沒有**——**c-175 b 第 3902 條 (b) 的同一機制**（`Kosuke Mine Quintet` → 掃不到 `峰厚介`） |
+| **2** | 池中**查無**此藝人 | 「藝人池中**有 12 張**」 | ⚠ **錯**：同上 | 同上（Group 實體 `富樫雅彦トリオ` 4d227f51） |
+| **3** | 池中**查無**此藝人 | 「藝人池中**有 5 張**」 | ⚠ **錯**：`鈴木勲` 池中 **6 列**（c-176 b《Cadillac Woman》1977 ＋`鈴木勲トリオ` 2＋`鈴木勲クァルテット` 2＋`鈴木勲セクステット` 1） | **反過來**：MB 反查到的是 Person 實體，**四個同義字串沒有一個帶編制詞**——**c-176 b 第 4108 條第 1 點的同一機制** |
+| **18** | 池中**查無**此藝人 | 「藝人池中**有 5 張**」 | ⚠ **錯**：同 #3 | 同上（artist-credit 是 `Isao Suzuki & New Family`，實體仍是 Person） |
+| **10** | 池中**查無**此藝人 | 空 | ⚠ **錯**：`深町純` 池中 **4 張**（c-175 b 1＋c-176 a 2＋c-176 b 1） | **`poolRecheck` 的比對日早於 c-175／c-176 落地**——**c-176 b 第 4108 條第 2 點的同一機制，第三次** |
+| 12／14／16／17 | 池中查無此藝人 | 空 | **對**：`森園勝敏`／`Morizono`、`本多俊之`／`Toshiyuki Honda`、`増尾好秋`／`Masuo`、`池田芳夫`／`Yoshio Ikeda` **每個都用漢字＋羅馬字兩到三輪掃過，池中確實 0 張** | — |
+
+→ ⚠ **給後五批的操作結論（把 c-175 b 第 3902 條、c-176 b 第 4108 條第 1／2 點三條合成一句）**：
+**`poolRecheck.status` 的「池中查無此藝人」整句不可信，理由有三種而且會同時出現**——
+(i) MB 反查到編制型 Group → 掃不到人名；(ii) MB 反查到人名 Person → 掃不到編制字串；
+(iii) 比對日早於近批落地。**本組 9 筆「查無」錯了 5 筆（56%）。**
+**固定動作：每一筆都要自己用「漢字本名 ＋ 羅馬字 ＋『本名＋トリオ／カルテット／クインテット／セクステット／と○○／& ○○』」三輪重掃。**
+⚠ **`note` 欄在本組反而比 `poolRecheck` 準**（#1／#2 的「12 張」、#3／#18 的「5 張」都接近實數），
+**但它一樣不可當結論**（c-176 第 4067 條末段的同一句），本層兩欄都當作沒有。
+
+**(c) #15 那一筆「變體全是羅馬字，等於沒查過」——照第 1868-B 條自己查漢字，翻判 0 筆。**
+`Yoshio Ohtomo Quartet` 的 `artistVariants` 只有兩個羅馬字編制串。逐項查漢字的四條路徑
+（第 3896 條的三條 ＋ c-176 a 第 4067 條補的第四條）：
+
+| 來源 | 結果 |
+|---|---|
+| MB `artist/c3d9c4a3`（由 rgMbid 反查） | name `Yoshio Ohtomo Quartet`、sort-name `Ohtomo, Yoshio, Quartet`、**type Group**、**沒有漢字 alias、也沒有掛成員關係** ← 第一條路落空 |
+| **Apple jp** | ⚠ **一次命中：artistName 逐字是「大友義雄カルテット」**（id1782072107，1978-05-21、5 軌，與原盤逐軌相符） |
+| 盤面（Discogs releases/8919110） | 規範名 `Yoshio Otomo Quartet`、anv `Yoshio Ohtomo Quartet`，**兩個都是羅馬字** |
+| Discogs `artists` 搜尋 | 三個相關實體 `Yoshio Otomo`(2048982)／`Yoshio Otomo Quartet`(2048984)／`Yoshio Ohtomo`(2494535)，**規範名全是羅馬字** |
+
+→ **`大友義雄` 重掃池：0 張**（另掃 `大友`／`Ohtomo`／`Otomo` 亦 0），**盤名兩種寫法重掃亦 0**。**翻判 0 筆。**
+⚠ **給後五批：本筆的漢字是靠 Apple jp 查到的，第 3896 條那份順序表的第二條在本批是唯一成功的一條**
+（c-176 a 第 4067 條那一筆是第四條 `namevariations` 成功、前三條全落空——**兩批各有一條路管用，四條都要備著**）。
+
+---
+
+## 第 4382 條：**`why` 欄逐筆覆核結果（19 筆全表）**
+
+| slice # | `why` | 覆核結論 | 處置 |
+|---:|---|---|---|
+| 1 | rg-tag | 成立（Discogs genres 只有 `Jazz`、styles 只有 `Free Jazz`／`Free Improvisation`） | **收** |
+| 2 | rg-tag | 成立（同上，styles 只有 `Free Jazz`） | **收** |
+| 3 | **artist-tag** | 成立（Discogs genres 只有 `Jazz`、**styles 欄空**；七軌全是爵士標準曲與英美名曲；⚠ **MB RG tags／genres 兩欄全空，零機器依據**） | **收** |
+| 4 | **artist-tag** | 成立（Discogs genres 只有 `Jazz`、styles `Post Bop`／`Modal`／`Fusion`；六軌全原創；⚠ **MB RG 兩欄全空**） | **收** |
+| 5 | rg-tag | **不成立**：genres 含 `Folk, World, & Country`、**styles 兩項都不是爵士**、五軌是文藝復興聖歌＋民謡＋自創合唱（②） | 退 |
+| 6 | rg-tag | 成立（genres 含 `Jazz`、**styles `Fusion`／`Smooth Jazz` 兩項全在爵士側**；⚠ **本組唯一 count＞1 的 RG 標籤：`jazz(2)`／`jazz fusion(2)`**） | **收**（邊界案，見第 4388 條） |
+| 7 | **artist-search-tag** | **不成立**：genres `Electronic`／`Non-Music`（**Jazz 不在陣列裡**）、styles 四項全非爵士、兩軌是旁白作品（**第 5 款兩半**） | 退 |
+| 8 | **artist-tag** | 成立（genres 只有 `Jazz`、styles `Jazz-Funk`／`Fusion`；⚠ **MB RG 兩欄全空**） | **收** |
+| 9 | rg-tag | 成立（genres `Jazz`／`Funk / Soul`、styles `Jazz-Funk`／`Fusion`；RG tags `jazz(1)`／`jazz-funk(1)` **兩項都在爵士側**） | **收** |
+| 10 | **artist-tag** | **不成立**：genres `Funk / Soul`／`Pop`／`Classical`（**Jazz 不在陣列裡**）、styles 只有 `Disco`、兩面是古典名曲的迪斯可串燒（**第 5 款兩半**） | 退 |
+| 11 | rg-tag | 成立（genres `Jazz`／`Blues`、**styles 欄空**；四首原創＋五首英美ソウル 的日本語詩版，**零首日本歌謡曲**） | **收** |
+| 12 | **artist-tag** | 成立（genres `Jazz`／`Blues`、styles `Fusion`／`Jazz-Funk`／`Contemporary Jazz` **三項全在爵士側**；⚠ **MB RG 兩欄全空**） | **收** |
+| 13 | rg-tag | 成立（genres 只有 `Jazz`、**styles 欄空**；系列欄逐字「New Emotional Jazz Series」） | **收** |
+| 14 | rg-tag | 成立（genres `Jazz`／`Funk / Soul`、styles `Jazz-Funk`／`Fusion`／`Funk`；RG tags `jazz(1)`／`jazz-funk(1)`） | **收** |
+| 15 | rg-tag | 成立（genres 只有 `Jazz`、styles `Bop`／`Jazz-Funk`；五軌四首原創） | **收** |
+| 16 | **artist-tag** | 成立（genres 只有 `Jazz`、styles 只有 `Fusion`；⚠ **MB RG 兩欄全空**） | **收** |
+| 17 | **curator-list** | 成立（genres 只有 `Jazz`、**styles 欄空**；四軌全是池田芳夫 的原創；⚠ **MB RG 兩欄全空，`why` 又是本線最不可信的值——零機器依據疊加**） | **收** |
+| 18 | **artist-tag** | 成立（genres 只有 `Jazz`、**styles 欄空**；五軌四首原創；⚠ **MB RG 兩欄全空**） | **收** |
+| 19 | rg-tag | **成立**（genres 只有 `Jazz`、styles `Fusion`／`Latin Jazz`／`Jazz-Funk`）——**退的不是曲風，是原盤廠牌** | 退 |
+
+**`rg-tag` 10 筆裡 1 筆曲風不成立（10%）；`artist-tag` 7 筆裡 1 筆不成立（14%）；
+`artist-search-tag` 1 筆不成立（100%）；`curator-list` 1 筆成立。**
+本線逐批的 `rg-tag` 非爵士率：c-173 a 31%／c-173 b 44%／c-174 a 19%／c-174 b 53%／c-175 a 19%／
+c-175 b 8%／c-176 a 40%／c-176 b 0%／**c-177 a 10%**。
+⚠ **c-176 a 那個 40% 的解釋在本年段自動失效**：該條逐字說原因是「コロムビア 的 `GS-`、東芝 的 `TP-60xxx`
+與 `FZ-`／`WP-` 三條非爵士企劃線同時在跑」——**1977–1979 這三條線都已經收攤**，
+本組 19 筆裡コロムビア 只有 2 筆、東芝 只有 2 筆，**十三筆集中在四條新開的爵士／フュージョン 廠標上**（見第 4376 條末段）。
+⚠ ⚠ **`artist-search-tag` 的不可信在本批第三次確認**：c-176 b 第 4108 條第 3 點建議「比照 `curator-list` 處理」，
+**本組唯一的一筆（#7）就是退件**。三批累計 `artist-search-tag` **7 筆裡 3 筆退件（43%）**。
+⚠ ⚠ **本組真正的新發現是「零機器依據」的比例**：**MB 的 RG `tags` 與 `genres` 兩欄同時為空的有 7 筆（37%）**
+（#3／#4／#8／#12／#16／#17／#18，**全部是收件**），對照 c-176 a 的 2/19（11%）與 c-176 b 的 3/18（17%）。
+**這七張的曲風完全靠 Discogs 的 genres／styles ＋ `releases/<id>` 的整筆 credits ＋ 逐軌 written-by 定案**
+——**附錄二第 3 點（整筆 credits 是必跑的）在本組是 37% 的碟唯一的依據。**
+⚠ `why` 的七種值本組出現四種（`rg-tag` 10／`artist-tag` 7／`artist-search-tag` 1／`curator-list` 1），
+`artist-disambig`／`pool-jazz-artist`／`imprint` 三種一筆都沒有。
+
+---
+
+## 第 4383 條：**年份：15 筆收件全部回查原盤，改判 0 筆**（本線第七次成立）
+
+| 收件 | slice `year` | MB first-release-date | Discogs 原壓 `released` | Apple | 差 |
+|---|---:|---|---|---|---:|
+| エッセンス（YX-7513-ND） | 1977 | **1977-06** | **1977-06-00**（notes 記 1976-11-03〜06 錄音、「Ⓟ 1977・6」） | **1977-06-25** | 0 |
+| モーション（YX-7514-ND） | 1977 | 1977 | **1977-08-00**（notes 記 1977-01-30／31 錄音） | **1977-08-25** | 0 |
+| My Spare Time（VIJ-6011） | 1978 | 1978 | 1978（notes 記 1978-02-06／07／08／13 錄音） | 1978 | 0 |
+| But Not For Me（VIJ-6016） | 1978 | 1978 | 1978 | **1978-04-01** | 0 |
+| On Guitar（VIH-6033） | 1978 | 1978 | **1978-11-25** | 1978 | 0 |
+| Hip Seagull（VIJ-6010） | 1978 | 1978 | 1978（notes 記 1977-08-10／11 東京＋1977-12-15 紐約錄音） | 1978 | 0 |
+| Hunt Up Wind（VIJ-6015） | 1978 | 1978 | 1978（notes 記 1978-06-25 錄音） | —（查無） | 0 |
+| 寂しい日々（ETP-80051） | 1978 | **1978-12-01** | **1978-12-01（逐日相符）** | —（查無） | 0 |
+| Bad Anima（SKS 8003） | 1978 | **1978-12-21** | **1978-12-21**（notes 記 1978-10-14〜30 錄音） | **1978-12-21（三處逐日相符）** | 0 |
+| Giant Steps（SKA 3016） | 1978 | 1978 | 1978 | **1978-07-21** | 0 |
+| Burnin' Waves（SKS 8002） | 1978 | 1978 | 1978 | **1978-07-05** | 0 |
+| As a Child（SKS-3003(S)） | 1978 | 1978 | 1978 | **1978-05-21** | 0 |
+| Sailing Wonder（SKS-8001） | 1978 | 1978 | 1978（notes 記 1977-11-15 錄音） | **1978-05-21** | 0 |
+| スケッチ・オブ・マイ・ライフ（SKS-3002(S)） | 1978 | 1978 | 1978 | **1978-05-21** | 0 |
+| The Thing（VIJ-6019） | 1979 | 1979 | **1979-06-00**（notes 逐字「Recorded in June 1979」） | 1979 | 0 |
+
+**15／15 完全一致。** 本線七批累計 **128 筆收件只改判過 3 筆年份**（c-175 b 的《Jazz at the Torys》1973→1957、
+c-176 b 的《Goin' Home》1977→1966 與《Moon Stone》1977→1978）。
+⚠ **c-176 b 第 4108 條第 14 點要主線確認的那件事，本層順手核了**：
+該條逐字寫「請主線在切 c-177 時確認 `益田幹夫 —《Moon Stone》` 不會重複出現」——
+**本組 19 筆裡沒有這一張**（`dedup-crossbatch c177` 跨批撞卡 0，30 筆全批也沒有），**a 組這邊沒有重複。**
+⚠ **catno 反查的命中率：19／19 全部命中本盤，零失敗**（與 c-176 a 的 19/19 同水位）。
+**唯一被稀釋的一筆是 `SKA 3016`（#13）**：回 4 筆，**第一筆是瑞典 Hurriganes《Roadrunner》的 `SKA-3016` 卡帶（1975）**
+——**第 1250 條「短前綴撞號」在本線第六次應驗**，靠 country=Japan＋年份收斂後第二至四筆都是本盤。
+⚠ **本組出現一個新的稀釋來源（只稀釋、沒漏接）**：King 的 `SKS-` 號段在 Discogs 上**同一條線三張碟三種寫法**
+（`SKS-8001` 有連字號／`SKS 8002` 空格／`SKS 8003` 空格），**三種寫法都查得到本盤**，
+但**行文引目錄號必須逐盤照抄各自的 Discogs `labels` 欄，不可統一**。
+⚠ **Apple 的 `releaseDate` 在本組給了 9 筆月日，而 MB／Discogs 只給年**——
+照 c-176 b 第 4108 條第 9 點，**那一欄在本線不可當發行日直接引用**（本組三筆的 Apple 日期與 Discogs 的錄音日無關、
+也不等於盤面的發行日），**本卡一律只取年**；但 **#12《Bad Anima》是三處逐日相符的一筆**，值得記。
+
+---
+
+## 第 4384 條：**盤名：真改判 0 筆、等價形 8 筆、寫法差 3 筆、三欄一致 4 筆**
+
+⚠ **本組 19 筆的 `titleCheck` 一筆警語都沒有**（派工信逐字說過本組 `note` 有警語的是 0 筆），
+**逐張回打 Discogs 原壓後也確實沒有第 3872／3904 條那兩種看不見的形狀**（RG 與 release 兩層同時被污染／整個 RG 只建了再發）。
+⚠ **但「無警語不等於沒問題」在本組中了一次，中在退件上**：#10 的 MB **把兩張不同的碟折進同一個 RG**
+（ETP-72315 的 2 軌與 ETP-50077 的 5 軌），**`titleCheck` 的三欄仍然一致、`note` 仍然空白**（見第 4379 條末段）。
+
+| # | slice／MB RG title | 本卡採用 | 性質 |
+|---:|---|---|---|
+| 1 | `エッセンス` | **`エッセンス`** | 等價形，**取日文**（MB 的 RG 與原盤 release 兩處日文；Discogs 與 Apple 兩地英文 `Essence`） |
+| 2 | `モーション` | **`モーション`** | 等價形，**取日文**（同上；Discogs 原壓是「Motion = モーション」） |
+| 3 | `My Spare Time = マイ・スペア・タイム` | **`My Spare Time`** | 等價形，**取英文**（Apple jp／us 兩處逐字只有英文） |
+| 4 | `But Not For Me` | `But Not For Me` | 寫法差（**Apple 兩地寫小寫的 `But Not for Me`，三處對一處取 MB／Discogs**） |
+| 6 | `On Guitar` | `On Guitar` | 等價形（只有 2016 的 XW 數位 release 寫片假名「オン・ギター」，再發層） |
+| 8 | `Hip Seagull` | `Hip Seagull` | 等價形（1990 VICJ-23023 起的再發才寫「Hip Seagull = ヒップ・シーガル」） |
+| 9 | `Hunt Up Wind` | `Hunt Up Wind` | 等價形（1986 VDP-5012 與 1990 VICJ-23020 才寫「= ハント・アップ・ウインド」） |
+| 11 | `寂しい日々` | `寂しい日々` | 三欄一致、無警語、無等價形 |
+| 12 | `Bad Anima` | `Bad Anima` | 三欄一致 |
+| 13 | `Giant Steps` | `Giant Steps` | 三欄一致；⚠ **撞 apex，見第 4391 條** |
+| 14 | **`BURNIN' WAVES`** | **`Burnin' Waves`** | 寫法差（全大寫改一般大小寫，第 3913 條 (c)；Discogs 七版＋Apple 八處全是一般大小寫） |
+| 15 | `As a Child` | `As a Child` | 寫法差（Discogs 五版寫 `As A Child`、Apple 寫全大寫；**取 MB 原盤 release title 的小寫 a**） |
+| 16 | `Sailing Wonder` | `Sailing Wonder` | 三欄一致 |
+| 17 | **`スケッチ・オブ・マイ・ライフ`** | **`スケッチ・オブ・マイ・ライフ`** | ⚠ **等價形，取日文——本組唯一一筆「三處對一處仍取 MB」**，見下 |
+| 18 | `The Thing` | `The Thing` | 等價形（2026 兩張再發才寫「The Thing = ザ・シング」） |
+
+**c-174 a 第 3793 條的等價形判準在本組跑了 8 次，一次都沒有失效**，
+取捨依據一律是該條第 3 點的優先序（**MB 的原盤 release title ＞ 廠牌自己的官方再發／數位 ＞ Discogs**），
+**結果是 5 次取英文／羅馬字、3 次取日文**（《エッセンス》《モーション》《スケッチ・オブ・マイ・ライフ》）。
+⚠ **本線三批的方向統計**：c-175 a 是 6 英 1 日、c-176 b 是 1 英 3 日、**c-177 a 是 5 英 3 日**
+——**判準是對稱的、跟著 MB 的原盤 release title 走，不是英文優先**（第 3888 條末段逐字說過）。
+
+⚠ ⚠ **#17 要逐字交代，因為它是本組唯一一筆「來源多數在另一邊仍取 MB」的盤名**：
+**MB 的 RG title 與 1978 原盤 release（dd9445ed）title 兩處都是片假名**，
+而 **Discogs 的兩個 1978 壓次寫 `Sketch Of My Life`、Apple jp 寫全大寫 `SKETCH OF MY LIFE`**
+（2012／2018 兩張 King CD 寫等價形「Sketch Of My Life = スケッチ・オブ・マイ・ライフ」，**證實兩者是同一個題的兩種文字**）。
+**照第 3793 條第 3 點的優先序取 MB 的原盤 release title**（與 c-176 b 第 4099(b) 的四筆同一把尺），
+英文兩種寫法都進 `queryAlias`。
+**這一筆刻意留一句給主線**：若判定 1978 年盤面只印英文、應改取 `Sketch Of My Life`，
+**改的是卡單值、完全可逆**（照裁定權下放第 2 條，本層直接定、不上呈）。
+
+⚠ **本組另有兩筆是「取日文順便避開同名撞擊」**（c-176 b 第 4099(b) 的同一實務理由）：
+**#2 取英文會做出池中第五張逐字同名的 `Motion`**（Lee Konitz 1961／Calvin Harris 2014／The Cinematic Orchestra 1999，
+**三張都不是 apex 所以 `chk-prop` 的第五道不會報**）；#1 的 `Essence` 池中雖無逐字同名，但有 6 筆含 `Essence` 的碟。
+
+---
+
+## 第 4385 條：**`live`：改判 0 筆，19 筆逐張查過全部是錄音室盤**
+
+本組 slice 標 `live: true` 的 **0 筆**（派工信逐字說過），**MB 的 `secondary-types` 19 筆全部是空的**。
+**逐張打 Discogs `releases/<id>` 的 `companies` 與 `notes` 兩欄**（c-176 第 4071 條收窄後的固定動作）：
+
+| 錄音場所（Discogs `companies` 的 `Recorded At` 或 notes 逐字） | 筆數 |
+|---|---:|
+| 日本コロムビア第一スタジオ（#1／#2，notes 逐字「Nippon Columbia's 1st Studio, Tokyo」） | 2 |
+| 音響ハウス（#3，notes 逐字「Onkio Haus, Tokyo」） | 1 |
+| Generation Sound Studios（#4，紐約） | 1 |
+| Sound City Studio ＋ Media Studio (2)（#6） | 2 場 |
+| ビクター 錄音室（#8 東京＋紐約 Sound Ideas、#9 Victor Studio、#18 Victor Studio 錄音兼混音） | 3 |
+| Take One Studio, Tokyo（#11） | 1 |
+| King Record Studio（#12，notes 逐字「Recorded at King Studios, 14~30 Oct. 1978」） | 1 |
+| Electric Lady Studios（#16，notes 逐字「Recorded on Nov 15, 1977.」） | 1 |
+| 無 `Recorded At` 也無錄音 notes（#13／#14／#15／#17，四張都是 King／Seven Seas 盤） | 4 |
+
+**沒有一筆的 `notes` 出現 `live`／`Recorded live`／觀眾／單一演出日期，也沒有一筆的 `companies` 出現場館名。**
+→ **19 筆全部不標實況盤，改判 0。**
+⚠ **四筆「三欄全空」的處置照 c-176 b 第 4100 條末段**（《Second Phase》的同一形狀）：
+**沒有正面證據也沒有反面證據，記 `false` 並在卡的 `risk` 寫明已做過第 3915 條的固定動作**；
+本組那四筆的 King／Seven Seas 盤面 notes 只寫 Ⓟ 年與発売元。
+⚠ **本組沒有遇到 c-176 第 4071 條那兩個形狀**（`Recorded At: <現場場館>` 卻不標實況、
+系列欄 `Direct Cutting` 而 MB 標 `Live`）——**東芝 的 `LF-95xxx` 直刻線在本年段已經不在本組的號段裡**。
+⚠ **反向也記一筆**：#12《Bad Anima》的 notes 逐字有「This album was mixed with the **Aphex Aural Exciter** (A-2, B-2)」
+——**那是混音器材不是錄音工法，與 `Direct Cutting` 不同類，不會誤導 `live` 判定**，但同樣是「錄音工法寫進 notes」的形狀。
+
+---
+
+## 第 4386 條：**再發版本數：15 筆全部改以 Discogs master 的 `versions` 為準（第 1879-B 條），13 筆（87%）MB 低估**
+
+逐筆跑完 `/masters/<id>/versions`（`per_page=100`）：
+
+| # | 收件 | Discogs master | **版本數** | MB release 數 | 低估倍數 |
+|---:|---|---|---:|---:|---|
+| 9 | Hunt Up Wind | 163860 | **12** | 4 | **3.0×**（含 **1978 新加坡 FDC 6015**、1980/81 美國 Inner City IC 6067 三筆、**1982 墨西哥 Jazz Unlimited JUN-4002**） |
+| 6 | On Guitar | 1050166 | **8** | 4 | 2.0×（含 **2024 Tower Records NCS-80044 SACD**、2025 NJS-815、**2026 NJS-849 RSD 重壓**） |
+| 14 | Burnin' Waves | 303212 | **7** | 2 | **3.5×**（含 **1981 美國 Inner City IC 6074**、**2023 義大利 Holy Basil HBR-015**） |
+| 8 | Hip Seagull | 690599 | **6** | **1** | **6.0×**（含 1990 JVC 兩筆、2010 IPM-8023、2017 VICJ-77052） |
+| 16 | Sailing Wonder | 1114681 | **6** | **1** | **6.0×**（含 Test Pressing 與 2000／2009／2014 三張 Electric Bird CD） |
+| 17 | スケッチ・オブ・マイ・ライフ | 1436693 | **6** | 3 | 2.0×（含 **2026 Studio Mule 55 黑膠復刻**與一筆無日期的 King FLAC） |
+| 3 | My Spare Time | 4128754 | **5** | **1** | **5.0×**（含 **2026 Victor Entertainment NJS842 黑膠**與 2026 JVC FLAC） |
+| 15 | As a Child | 1362390 | **5** | 2 | 2.5×（含 2012 King KICJ 2268 正式與 Promo 兩筆、一筆無日期 FLAC） |
+| 4 | But Not For Me | 1244023 | **4** | **1** | **4.0×**（含 2017 VICJ-77044、**2026 NJS-843**） |
+| 11 | 寂しい日々 | 401886 | **4** | 2 | 2.0×（含 1978 卡帶 ZT25-298） |
+| 12 | Bad Anima | 809690 | **4** | **1** | **4.0×**（含 2009 KICJ 92312、2014 KICJ 2408） |
+| 18 | The Thing | 4196184 | **3** | **1** | **3.0×**（含 **2026 Flying Disk NJS845**與一筆無日期 JVC FLAC） |
+| 2 | モーション | 1003503 | **3** | 3 | **持平**（但兩邊互有出入：Discogs 多一筆 Promo、MB 多 2017 CORR-11272） |
+| 13 | Giant Steps | 1566857 | **2** | **1** | 2.0×（⚠ **兩版都是 1978 的原壓與 Promo，Discogs 上沒有任何再發**，`reissuedBy` 留空） |
+| 1 | エッセンス | 946351 | **2** | **3** | ⚠ **反向：MB 多一筆 2017 Columbia CORR-11271，Discogs master 沒收** |
+
+**15 筆裡 13 筆 MB 低估（87%）、1 筆持平、1 筆反向**，平均低估約 **3.4 倍**
+——**與 c-174 b 的 71%、c-176 a 的 75%、c-176 b 的 93% 同一量級，第 1879-B 條在本線第四次完全成立。**
+⚠ **反向與持平那兩筆是同一組（#1／#2，コロムビア 的 DENON PCM Jazz Series 兩張）**，
+**兩張 MB 都有 2017-10-26 的 Columbia `CORR-112xx` 再發、Discogs master 兩邊都沒收**
+——**「以 Discogs master 為準」不等於「Discogs 是全集」，兩邊都要看過再寫**（c-176 第 4072 條末段的同一句）。
+⚠ ⚠ **本組出現一個新的系統性缺口：Discogs 的無日期數位版**。
+#15／#17／#18 三筆的 `versions` 裡各有一筆 **`released` 欄逐字是 `0`（無日期）的 FLAC 再發**（King／JVC 的官方數位），
+**排序時會被排到最前或最後，逐筆看整張清單才抓得到**（第 1887-B 條要的正是這個動作）。
+⚠ ⚠ **本組另有一條可預測線索，值得給後五批**：
+**ビクター 現行的和ジャズ 黑膠復刻線 `NJS-8xx` 在本組一次出現四張**
+（#3 NJS842、#4 NJS-843、#18 NJS845，加 #6 的 NJS-815／NJS-849），**全部是 2025–2026 年**
+——**與 c-176 第 4293 條記的「Victor 2017 再發（VICJ-770xx）是同一個批次」是同一種形狀的第二條**，
+本組的 #4 VICJ-77044 與 #8 VICJ-77052 正好也在那一批裡。
+`reissuedBy` 欄只寫「有官方再發廠牌與目錄號可引」的那幾版，**Promo／Test Pressing／無日期數位不寫**（第 4105 條末段）。
+
+---
+
+## 第 4387 條：⚠ ⚠ **掛名：15 張 13 個相異字串——本批最重要的一條是「編制字串收不收斂」的分界線**
+
+**沿用池中既有字串（6 筆）**：
+1. **`富樫雅彦`**（#1／#2 兩張）——見下方的分界線一段。
+2. **`菊地雅章`**（#4）——池中漢字 6 列、羅馬字 0 列（⚠ 池中另有 `Masabumi Kikuchi Quintet —《End For The Beginning》1973` 與
+   漢字的同一張碟並存，**那是既有分裂，第 964／196／197 條允許並存，本批不動、不合併**）。
+   MB 的 artist-credit 顯示羅馬字 `Masabumi Kikuchi`、**實體本名（5216d6d4）是漢字**，**Apple jp 逐字「菊地雅章」**。
+   ⚠ **誤寫的 `菊池雅章`（三點水）在 `artistVariants` 裡出現過，只進 `queryAlias`。**
+3. **`高中正義`**（#6）——池中 3 張全是漢字；**Apple jp 與 us 兩地在本盤條目上逐字都是「高中正義」**
+   （⚠ **同一份 us 搜尋結果裡他的其他碟卻寫 `Masayoshi Takanaka`——同一位藝人在同一個 store 裡兩種寫法並存**，記給後五批）。
+4. **`日野皓正`**（#8）——池中漢字 15 列、羅馬字 0；⚠ **Apple us 寫成全大寫的「TERUMASA HINO」，不跟**
+   （c-176 第 4102 條第 2 點的同一處理）；**不與池中的 `日野皓正クインテット`（3 張）合併**。
+5. **`浅川マキ`**（#11）——池中 5 列全是這個串；**Discogs 的規範藝人名是羅馬字 `Maki Asakawa`，不跟**。
+6. **`原信夫とシャープス・アンド・フラッツ`**（#13 的一方）——池中 6 張全是這個串（seed＋c-131＋c-133）；
+   **MB 的 artist-credit 顯示羅馬字 `Nobuo Hara and His Sharps & Flats`，MB 實體本名（e18d9179）才是漢字串，取漢字。**
+
+**沿用本線前批剛立的字串（1 筆）**：
+7. **`鈴木勲`**（#3／#18 兩張）——**直接沿用 c-176 b 第 4102 條第 7 點**，本批不再重做取捨。
+   ⚠ **Apple jp 的「鈴木 勲」（有空格）與 us 的全大寫「ISAO SUZUKI」兩種都不跟**（第 3817 條）。
+   ⚠ **池中的 `鈴木勲トリオ`／`鈴木勲クァルテット`／`鈴木勲セクステット` 三串一律不動、不合併**。
+
+**新立的單人字串（3 筆，池中皆 0 張、無既有分裂可劈）**：
+8. **`森園勝敏`**（#12）——MB 實體本名（b5c7018a）與 **Apple jp 的 artistName** 兩處逐字漢字；
+   Discogs 規範名 `Katsutoshi Morizono` 進 `queryAlias`。
+   ⚠ **絕不可與池中的 `四人囃子`（seed 2 張）合併**——他是那支樂隊的吉他手，**但 MB／Discogs 兩處都判成兩個實體**
+   （第 3775 vs 3766 的分界線），而且《包》與本盤同為 1978 年。
+9. **`本多俊之`**（#14）——MB 實體本名（d00cff50）與 **Apple jp** 兩處逐字漢字。
+   ⚠ **不可與他日後的樂團字串 `本多俊之 & バーニング・ウェイヴ` 合併**（Apple jp 上有 1981 年的兩張），
+   **那是以本盤盤名為名的後繼樂團、是另一個掛名**，池中兩者皆 0 張，本批只立人名串。
+10. **`増尾好秋`**（#16）——MB 實體本名（136cc5cd）、artist-credit 與 **Apple jp** 三處逐字漢字。
+
+**新立的編制字串（2 筆）**：
+11. **`大友義雄カルテット`**（#15）——**漢字是本層自己查出來的**（見第 4381 條 (c)），
+    片假名用 **`カルテット`**（Apple jp 逐字），**不自創 `クァルテット`**。
+12. **`池田芳夫クインテット`**（#17）——**MB 實體本名（939abdd2）本身就是漢字＋片假名**，
+    **Apple jp 的 artistName 逐字相同**；Discogs 規範名 `Yoshio Ikeda Quintet` 只進 `queryAlias`。
+
+**新立的聯名字串（2 筆）**：
+13. **`福村博 with 渡辺貞夫`**（#9）——見下方分隔符一段。
+14. **`原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster`**（#13）——見下方三方聯名一段。
+
+（合計 13 個相異字串：`富樫雅彦` 與 `鈴木勲` 各佔兩張。）
+
+### ⚠ ⚠ **分界線：編制字串什麼時候縮成人名、什麼時候不縮**
+
+**本組同時出現兩個方向，必須把分界線寫死，否則下一批一定再撞。**
+
+| | **縮成人名**（#1／#2／#18） | **保留編制字串**（#15／#17） |
+|---|---|---|
+| 例 | `富樫雅彦とギルド・フォー・ヒューマン・ミュージック`→`富樫雅彦`；`富樫雅彦トリオ`→`富樫雅彦`；`Isao Suzuki & New Family`→`鈴木勲` | `Yoshio Ohtomo Quartet`→`大友義雄カルテット`；`池田芳夫クインテット` 照留 |
+| **池中有沒有那位藝人的人名字串** | **有**（`富樫雅彦` 13 列、`鈴木勲` 1 列） | **沒有**（`大友義雄` 0 張、`池田芳夫` 0 張） |
+| **MB 把編制建成獨立實體了嗎** | #1／#2 **有**（Group 8d4b5168／4d227f51）、#18 **沒有**（credited-as 變體，實體仍是 Person cf594e51，**與 #3 同一個 MBID**） | **有**（Group c3d9c4a3／939abdd2） |
+| **Discogs 呢** | #1 兩方並列、#2 獨立實體、#18 獨立實體 | **獨立實體**（2048984／Yoshio Ikeda Quintet） |
+| **直接先例** | **c-174 a 第 3776 條**（`富樫雅彦カルテット`→`富樫雅彦`，理由是 apex:pearl《Speed and Space》的 Discogs 掛名同樣是編制字串、池中仍是人名字串）＋ **c-175 b 第 3912 條**（`猪俣猛とサウンド・リミテッド`→`猪俣猛`） | **c-175 b 第 3912 條第 3 點**（`村岡実とニュー・ディメンション・グループ` 不與人名串合併，理由逐字是「MB 與 Discogs 兩處都判成獨立實體」）＋ **c-131 簡報第一節**（編制型 Group 的碟掛「漢字＋片假名編制」） |
+
+→ **裁定（本批確立，後五批照用）：先看池中有沒有那位藝人的人名字串。**
+- **池中已有人名字串 → 縮成人名**（第 307 條「照池中已經成立的寫法走」優先，第 3776 條的原話）。
+  ⚠ **#1 有一個特別硬的佐證**：**池中的 `富樫雅彦 —《ギルド・フォー・ヒューマン・ミュージック》1976`
+  本身就是同一支編制的碟，池中仍收成人名字串**——**這不是類比，是同一支樂隊的現成先例。**
+- **池中沒有人名字串 → 照第 3775 vs 3766 的分界線看 MB／Discogs 判不判成同一個實體**：
+  兩處都判成獨立實體就保留編制字串（#15／#17），**MB 判成同一個實體就縮**（#18）。
+⚠ **#18 是本組唯一一筆「MB 與 Discogs 判法相反」的**：MB 的 artist-credit `Isao Suzuki & New Family`
+**指向的是 Person 實體 cf594e51 本人、與 #3 同一個 MBID**，而 **Discogs 把 `Isao Suzuki & New Family` 建成獨立藝人實體**。
+**本層採 MB 那一邊**（理由：池中已有 `鈴木勲` 人名串，第一層判準就已經決定了；Discogs 那一邊的寫法、
+Apple jp 的「鈴木 勲 & ニュー・ファミリー」與 us 的全大寫版**全部進 `queryAlias`**）。
+
+### **分隔符：`福村博 with 渡辺貞夫`——池中有現成的日本藝人 ` with ` 先例**
+
+第 3874 條（c-175 a 立）逐字是：「`・` 只用在兩方字串都不含中黑的日本個人聯名；任一方含中黑時改用 ` & `」。
+**本筆兩方都不含中黑，照字面應取 `福村博・渡辺貞夫`。本卡不取。** 三項依據：
+
+1. **三處來源都明印 `with`**：**MB 的 joinphrase 逐字是 ` with `**、**Discogs 的 `artists` 陣列 join 逐字是 `With`**、
+   盤面題逐字「Hiroshi Fukumura **With** Sadao Watanabe」。
+2. **c-176 b 第 4103 條已經立過這個做法**（該條在《トゥワイライト》上取盤面明印的 `+`，
+   並逐字寫明「**第 3874 條的 `・` 是『來源沒有明印分隔符時的預設』，兩條規則的適用範圍不重疊，不是打架**」）。
+3. ⚠ **池中有一個日本藝人用 ` with ` 的現成先例**：**seed 的 `戸谷重子 with 今田勝トリオ —《Toya, Shigeko with The Imada, Masaru Trio》1972`**，
+   另有二十餘列西洋卡用同一分隔符（`Horace Tapscott with the Pan-Afrikan Peoples Arkestra`／
+   `Thelonious Monk Quartet with John Coltrane`／`Charles Mingus Sextet with Eric Dolphy`／`Frank Sinatra with the Red Norvo Quintet`…）。
+   **這不是第五種新分隔符，是池中已經成立的第五種寫法**（前四種是 `・`／` & `／` + `／`＝`(U+FF1D)）。
+⚠ **兩方都取漢字**：`渡辺貞夫` 照池中 16 列（第 307 條）、`福村博` 是 MB 實體本名——
+**池中此前只有編制字串 `福村博クインテット`（seed 1 張），本卡是「補上他的人名字串」，不與那一串合併**
+（形狀與 c-176 b 第 4102 條第 7 點的 `鈴木勲` 相同）。
+
+### **三方聯名：`原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster`**
+
+逐項照 **c-176 a 第 4073 條第 10 點**（`Steve Lacy, 高橋悠治, 小杉武久`）的同一套：
+- **日本一方沿用池中既有的漢字團名串**（6 張），MB 的羅馬字 artist-credit 不跟。
+- **兩位外國人取羅馬字**——**池中已有 `Elvin Jones` 12 列、`Frank Foster` 1 列**，
+  改用 **Apple jp 的片假名「エルヴィン・ジョーンズ」「フランク・フォスター」等於為兩位池中已有卡的樂手新造分裂字串**，
+  **第 307 條優先於第 3815 條「外國人一方取盤面片假名」**（c-175 b 第 3911 條第 3 點的同一裁定）。
+- **分隔符全部取半形逗號**：**Discogs 的 `artists` 陣列三方的 join 逐字都是 `,`**，
+  池中的三方先例 `Keith Jarrett, Gary Peacock, Jack DeJohnette`（7 張）也是全逗號；
+  **MB 的 joinphrase 是 ` Meet ` ＋ ` By `、Apple jp 是 `, ` ＋ ` & ` 混合式，兩者都不跟**
+  （跟 MB 會把「編曲者是誰」寫進掛名，跟 Apple 會在同一串裡出現兩種分隔符）。
+⚠ **Frank Foster 留在掛名裡是因為他真的演奏**：同號 Promo 盤 releases/13785151 的整筆 extraartists 逐字四行是
+「Frank Foster=Arranged By, Conductor」「Elvin Jones=Drums」「Nobuo Hara and His Sharps & Flats=Orchestra」
+**「Frank Foster=Soprano Saxophone, Tenor Saxophone」**——**第 3817 條第 4 款（只掛編曲／伴奏的不寫進掛名）在本筆不適用。**
+⚠ **原壓 releases/7260176 的 `extraartists` 是空的，那四行只存在於 Promo 那一筆**
+——**c-176 a 第 4075 條末段「原壓 credits 稀薄時回頭打另一筆」在本組中了兩次**（另一筆是 #15，見第 4394 條）。
+
+⚠ **本組沒有任何一次合併或收斂到不該收斂的地方，新造分裂 0**：
+逐項核過的四組「看起來像分裂、其實不是」——`森園勝敏` vs `四人囃子`、`本多俊之` vs `本多俊之 & バーニング・ウェイヴ`、
+`鈴木勲` vs 三個編制字串、`菊地雅章` vs `Masabumi Kikuchi Quintet`，**四組全部照第 964／196／197 條並存處理。**
+
+---
+
+## 第 4388 條：⚠ **邊界收件：`高中正義 —《On Guitar》`——一張「教則本附屬 LP」，為什麼過了同一把尺**
+
+slice #6、Invitation **VIH-6033**、1978-11-25、8 軌、`why` `rg-tag`。**這是本組唯一踩在收件款邊線上的碟**，理由寫足。
+
+**它為什麼像企劃盤**：Discogs 的 `series` 欄逐字是「**Professional High-technique Series**」，
+notes 逐字「**Part of the LP and book series (books purchased separately) covering music playing technique.**」
+——**LP 與另售的教則本成套，是一條演奏技法產品線**；而且**八軌裡六軌是英美流行／フュージョン 名曲的改編**
+（George Benson〈Breezin'〉、Billy Joel〈Just The Way You Are〉、Pérez Prado〈Mambo Jambo〉、
+Santana〈Samba Pa Ti〉、Earth, Wind & Fire〈That's The Way Of The World〉、Boz Scaggs〈We're All Alone〉），
+**只有〈Blue Curacao〉與〈Rainbow〉是他自己的新曲**。
+
+**逐項照 c-175 a 第 3879 條立的分界**（該條把兩張收下的「Method」盤與退掉的《Wonderful Moog Sound》並排寫）：
+
+| 該條的分界項 | 《On Guitar》 | 對照：該條**退**的《Wonderful Moog Sound》 |
+|---|---|---|
+| Discogs `genres` | **含 `Jazz`**（`Jazz`／`Funk / Soul`／`Blues`） | ❌ `Electronic`／`Rock`／`Pop`，**Jazz 不在陣列裡** |
+| Discogs `styles` | **`Fusion`／`Smooth Jazz`，兩項全在爵士側** | ❌ `Jazzdance` |
+| 曲目來源 | **八軌全是英美曲，零首日本歌謡曲** | ❌ 英美曲 ＋ **四首日本歌謡曲** |
+| 領銜者與樂手 | **高中正義 本人掛帥、樂手逐名可查**（細野晴臣／高橋ゲタ夫 貝斯、高橋幸宏／Rob Brill 鼓、石川清澄 鍵盤、Pecker／浜口茂外也 打擊） | ❌ 「No credits provided」＋化名樂隊 |
+| 再發線的性質 | **ビクター 自家的和フュージョン 正規復刻線**（VICJ-77005、NJS-815、NJS-849、Tower NCS-80044 SACD） | ❌ 無 |
+| 錄音是不是為本盤新錄 | **是**（notes 逐字「Unique recordings for this album.」） | — |
+
+**六項全部向收。** 另有兩項獨立佐證：
+- ⚠ **MB 的 RG tags／genres 是本組唯一一筆 count 大於 1 的**：逐字 `blues(1)`／**`jazz(2)`／`jazz fusion(2)`**
+  ——**兩個高票都在爵士側**，不是第 3752 條那種「一堆 count 1 並列」的形狀。
+- **池中先例同向**：`高中正義` 已經以フュージョン 吉他手的身分在池裡有三張（1976／1979／1981），
+  **本盤正好落在前兩張之間**，不是替一個新身分開門。
+
+→ **收。** ⚠ **卡的 `risk` 逐字要求：行文必須寫明它是「教則系列的一張」，不得寫成他的正規原創專輯**
+（八軌裡六軌是翻奏）——第 3716／3762／3781 條對邊界收件的統一要求。
+⚠ **與 c-176 b 第 4096 條退掉的《Sgt. Pepper's》分得開**：那張的三肢是**單人多軌鍵盤／六軌全是披頭四零原創／
+styles 三項全非爵士**，**三肢全敗**；本盤是**五人以上的樂團／兩首原創＋六首英美曲／styles 兩項全在爵士側**，
+**收件款三肢全中**。**分界不在「是不是翻奏盤」，在收件款的三肢。**
+（可逆性：卡單值與收退名單，改回去只要退卡、不動卡池結構——照裁定權下放第 2 條直接定，不上呈。）
+
+---
+
+## 第 4389 條：**廠牌欄：6 筆與 slice 的 `house`／`entities` 不符（1 筆因此退件），其餘 13 筆一致**
+
+| # | slice `house`／`entities` | 盤面實際（Discogs `labels` 欄逐字） | 性質 |
+|---:|---|---|---|
+| **19** | Victor／`Victor(JP imprint)` | **`Discomate DSP-5112`（1979）** | ⚠ ⚠ **原盤不在四家** → 退件（第 4380 條）。**Discomate 的母公司是 TBS，不是ビクター；Victor 只出現在 2008 年的 CD 再發上** |
+| 1 | コロムビア／`Columbia(JP)` | **`Denon Jazz YX-7513-ND`**（companies 欄才是「Manufactured By: Nippon Columbia Co., Ltd.」） | ⚠ **改寫**：Denon Jazz 是日本コロムビア 自家的爵士企劃字標，**仍在四家之內**（第二種失效：imprint 與母公司互掛） |
+| 2 | コロムビア／`Columbia(JP)` | **`Denon Jazz YX-7514-ND`**（companies 欄「Record Company: Nippon Columbia Co., Ltd.」） | 同上 |
+| 15 | King／`SEVEN SEAS`,`KING` | **`Seven Seas SKS-3003(S)`**（companies 欄「Record Company: King Record Co. Ltd」） | ⚠ **改寫**：Seven Seas（セブン・シーズ）是キングレコード 自家字標，仍在四家之內 |
+| 17 | King／`SEVEN SEAS`,`KING` | **`Seven Seas SKS-3002(S)`**（notes 逐字「セブン・シーズ・レコード」「発売元 ・ キングレコード株式会社」） | 同上 |
+| 9 | Victor／**`JVC`**,`Flying Disk` | **1978 原壓逐字只印 `Flying Disk VIJ-6015`** | ⚠ **`JVC` 要到 1990 年的 VICJ-23020 才出現在盤面上**——**slice 的 `entities` 把再發字標並列進來了**（與 c-176 第 4076 條 #7 的 Victor／JVC 兩說是同一家公司的兩個字標，但本筆是**不同年代**的兩個字標） |
+
+**其餘 13 筆的 `house`／`entities` 與盤面一致**（Flying Disk VIJ-6010／6011／6016／6019、Invitation VIH-6017／6033、
+Victor VV-5006、Express ETP-72315／ETP-80051、Electric Bird SKS-8001／SKS 8002／SKS 8003、King Records SKA 3016）。
+
+→ ⚠ **`house`／`entities` 在本線至此的失效方式增加到六種**（前五種是 c-176 b 第 4101 條列的：
+外國原盤、imprint 與母公司互掛、MB 誤掛到不相干的 imprint、非四家的日本獨立廠原盤、列舉層從 CD 再發反推廠牌），
+**本條新增第六種：`entities` 把不同年代的再發字標與原盤字標並列**（#9）。
+**固定動作不變：`label` 欄一律以 Discogs master 最早那一版的 `labels` 欄為準，不讀 slice 的 `house`／`entities`。**
+⚠ **本組新記四條系列名／號段**（都只能當快篩，c-174 a 第 3795 條的同一但書）：
+**コロムビア 的 `YX-75xx-ND` 是「Denon PCM Jazz Series」**、
+**King 的 `SKS-80xx` 是 Electric Bird 的開張號段（8001／8002／8003 三張全在本組）**、
+**King 的 `SKS-30xx(S)` 是 Seven Seas 的爵士線**、
+**King 的 `SKA-30xx` 是「New Emotional Jazz Series」**、
+以及 **Invitation 的 `VIH-60xx` 同時裝了爵士盤（VIH-6033）與民族音樂盤（VIH-6001／6017 都已退）——這一條特別不能當快篩。**
+
+---
+
+## 第 4390 條：**外國藝人那一關：本組四筆，四筆全收；日本人比例被推到 1/12**
+
+c-173 第 3714 條、c-174 a 第 3787／3788 條、c-174 b 第 3804 條一共退了四張「外國藝人的日本盤」；
+c-176 b 第 4106 條把尺寫成「**看的是主導權不是人頭數：領銜掛名、作曲、企劃與原盤發行；不是錄音地點也不是伴奏國籍**」。
+本組有四筆碰到這個形狀：
+
+| # | 外國樂手 | 日本樂手 | 比例 | 處置與依據 |
+|---:|---|---|---|---|
+| 8 | Clint Houston（b）、John Scofield（g）、M'tume（perc/voc）、Tawatha（voc） | **日野皓正**（領銜、A 面 16:01 唯一作曲）、峰厚介、益田幹夫、日野元彦、ジョージ大塚、笠井紀美子 | **4/10** | **收**。東京ビクター 錄音室＋紐約兩地錄音，製作伊藤潔／森崎之雄，ビクター Flying Disk 唯一發行 |
+| 4 | Gary Peacock（b）、Al Foster（ds）、Badal Roy（tabla）、Azzedin Weston（congas）、Alyrio Lima（perc） | **菊地雅章**（領銜、六軌裡四軌作曲、共同製作） | **5/6** | **收**。整張在紐約 Generation Sound Studios 錄，**但企劃、共同製作與唯一原盤發行方都是ビクター** |
+| 14 | **Seawind 整團七人**（Ken Wild／Bob Wilson／Larry Williams／Bud Nuanez／Gary Herbig／Jerry Hey／Pauline Wilson） | **本多俊之**（領銜、八軌裡五軌作曲）、上田力（編曲兼指揮）、安井正臣、新井英治 | **7/11** | **收**。編曲與指揮是日本人，企劃與唯一原盤發行方是キング（Electric Bird 開張號段） |
+| 16 | Steve Gadd／Howard King／Al Mack（ds）、Eric Gale（g）、Richard Tee（kb）、Gordon Edwards／T.M. Stevens（b）、Dave Grusin／Mike Nock（syn）、Warren Smith／Bachiri（perc） | **増尾好秋**（領銜、七軌裡五軌作曲、編曲、共同製作） | ⚠ **11/12** | **收**。⚠ **本線至今日本人比例最低的一筆**，見下 |
+
+⚠ ⚠ **#16 把第 4106 條那把尺推到了極限（日本人 1/12），所以理由要寫到位**：
+整張在紐約 Electric Lady Studios 一天錄成（1977-11-15）、伴奏是 Stuff 那一組人，
+**但七軌裡五軌是増尾好秋 的作品、編曲逐字掛他、共同製作是他本人與西村ジョージ、
+企劃與唯一原盤發行方是キング（而且是 Electric Bird 的開張第一號 SKS-8001），美國方沒有任何一家廠牌參與**。
+**與第 3714／3787／3788／3804 條退掉的四張的差別仍然是「領銜者本身是不是外國人」**：
+那四張退的都是 Cecil Taylor 四重奏、Roy Ayers Quartet、Everything Is Everything 這種**外國人領銜**的碟。
+⚠ **#13《Giant Steps》不列進本表**：兩位美國客座（Elvin Jones、Frank Foster）對上整支十七人日本大樂團，
+**日本方是絕對主體，連邊界都不算。**
+⚠ **本組沒有新增 c-174 a 第 3787 條那份「外國藝人在日本錄的本土企劃盤」候選清單的成員**——
+四筆都是「日本領銜 ＋ 外國伴奏」，不是那一類。
+⚠ **給後五批的一句話**：**1978 這一年ビクター Flying Disk 與 King Electric Bird 同時採「日本領銜＋美國一線錄音室班底」的製作模式**，
+**本組四筆全在這兩條線上**——**這個形狀在 c-178…c-182 只會更多，第 4106 條的尺要備著。**
+
+---
+
+## 第 4391 條：**交件前自跑的結果**
+
+- `node batch-progress/c177/chk-prop.mjs a` → **15 張、13 位，標記 0**。
+  只報不擋的一處：⚠ **盤名撞 apex：`原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster —《Giant Steps》`
+  ↔ `John Coltrane —《Giant Steps》(1960) apex:hall`**（掛名不同所以不擋）。
+  **這一處是預期中的，而且比一般同名撞擊更需要交代**——**本盤的 B1 就是在翻奏 Coltrane 那首曲子**，
+  卡的 `risk` 已逐字要求「下游引用本盤盤名時必須同時帶掛名與年份，行文必須寫明它是日本大樂團對 Coltrane 那首曲子的大編制改編」。
+  ⚠ 本組**沒有**觸發「（報告）含日文分隔符 〜／～／＝／゠／＋」那一行（派工信說那行不算標記）；
+  非 ASCII 連字號、U+30FC 誤用、合輯例外欄位、與線上池撞卡、跨組重複五道全部乾淨。
+  ⚠ **退件裡本來會觸發一處**：#7《宇宙～人類の夢と希望～》的盤名帶 `～`(U+FF5E)，因退件而沒有實際觸發。
+- `node batch-progress/dedup-crossbatch.mjs c177` → **跨批撞卡 0、同 rgMbid 不同掛名 0、共用目錄號 0、同掛名盤名詞元包含 0**
+  （含 b 組同時在寫的 15 筆，**c-177 合計 30 筆**；全庫 140 批、卡數 5,450）。
+- **第 315 條結算：15 收 ＋ 4 退 ＝ 19。✔**
+- **第 1263 條那一步（本線改成用 Discogs master 反查年份）：19／19 全部命中、年份差全部是 0**，見第 4383 條。
+
+---
+
+## 第 4392 條：⚠ **簡報／判準與本批實際資料對不上的地方（彙總，供後五批與主線）**
+
+1. ⚠ ⚠ **`poolRecheck.status` 的「池中查無此藝人」在本組 9 筆裡錯了 5 筆（56%）**（第 4381 條 (b)）。
+   **三種失效機制會同時出現**：MB 反查到編制型 Group 掃不到人名（第 3902 條）、
+   MB 反查到人名 Person 掃不到編制字串（第 4108 條第 1 點）、比對日早於近批落地（第 4108 條第 2 點）。
+   **→ 建議簡報第一節把那一句從「這位藝人池中沒有，可以直接做」改成「這一格同樣要逐張人工掃」。**
+2. ⚠ **`artist-search-tag` 在本組第三次證實不可信**（第 4382 條）：**本組唯一一筆就是退件**，
+   三批累計 7 筆裡 3 筆退件（43%）。**c-176 b 第 4108 條第 3 點的建議（比照 `curator-list`）應正式寫進簡報第二節第 5 點。**
+3. ⚠ ⚠ **「零機器依據」（MB 的 RG `tags` 與 `genres` 兩欄同時為空）在本組佔 7/19（37%）**，
+   遠高於 c-176 a 的 11% 與 c-176 b 的 17%，**而且七筆全部是收件**。
+   **這七張的曲風完全靠 Discogs 的 genres／styles ＋ `releases/<id>` 整筆 credits ＋ 逐軌 written-by 定案**
+   ——**附錄二第 3 點在本年段不是「建議」，是 37% 的碟唯一的依據。**
+   ⚠ **原因很具體**：1977–1979 的ビクター Flying Disk／King Electric Bird 兩條新線，**MB 建檔普遍只有原盤一筆、RG 層沒人打標籤**。
+4. ⚠ **`format` 欄那道快篩要放寬一格**（第 4380 條）：c-176 b 第 4108 條第 8 點寫「`format` 只寫 `CD` 而年份在 1980 年前，
+   先假設列舉層釘到的是 CD 再發」——**本組 #19 的 `format` 逐字是 `Digital Media`，同一個坑**。
+   **改成：`format` 只有 `CD` 或 `Digital Media` 而年份在 1980 年前的，一律先假設列舉層釘到的是再發。**
+5. ⚠ **`house`／`entities` 的第六種失效**（第 4389 條）：**`entities` 會把不同年代的再發字標與原盤字標並列**
+   （#9 的 `JVC` 要到 1990 年才出現在盤面上）。
+6. ⚠ ⚠ **同一個 RG 裝了兩張碟**（第 4379 條）：#10 的 MB RG 轄下是 ETP-72315（2 軌）與 ETP-50077（5 軌，**標題完全不同**）兩張碟，
+   **而 `titleCheck` 三欄一致、`note` 空白，機器層完全看不出來**。
+   **這是簡報坑 4「同一張碟多個 RG」的反向，簡報要補上。**
+7. ⚠ **第 5 款的「而」字在本組有了兩個乾淨的正例**（第 4378／4379 條）：
+   #7 與 #10 都是**前半（genres 不含 Jazz／含 Non-Music）與後半（曲目非爵士標準曲或原創曲）同時成立**。
+   **與 c-176 a 第 4075 條那個「只中前半所以收」的反例並讀，第 5 款的用法就完整了。**
+8. ⚠ **Discogs `versions` 的無日期數位版**（第 4386 條）：本組三筆的 `released` 欄逐字是 `0`（King／JVC 的官方 FLAC），
+   **只有逐筆看整張清單才抓得到**——第 1887-B 條「不是看 master 摘要，是逐筆看整張 `versions` 清單」在本組的具體理由。
+9. ⚠ **`catno` 反查的第五種稀釋**（第 4383 條）：**同一條號段在 Discogs 上寫法不統一**
+   （King 的 `SKS-8001`／`SKS 8002`／`SKS 8003` 三種），**三種都查得到，但行文引號必須逐盤照抄**。
+   另 `SKA 3016` 撞瑞典 Hurriganes 的同號卡帶，**第 1250 條在本線第六次應驗**。
+10. ⚠ **查日本樂手漢字名的四條路，本批靠的是第二條（Apple jp）**（第 4381 條 (c)）——
+    c-176 a 第 4067 條那一筆靠的是第四條（Discogs `namevariations`），**前三條全落空**。
+    **兩批各有一條路管用，四條都要備著，不要按順序試到第一條失敗就放棄。**
+11. **附錄二第 2 點（Apple 403）在本工作階段第五次不成立**：`itunes.apple.com/search` 共打 **52 次**
+    （26 個關鍵字 × jp／us），**52 次全部 HTTP 200，一次 403、一次 429 都沒有**（自我節流 1,450ms）。
+    **命中率是本線至今最高的一次：15 筆收件裡 13 筆命中（87%）**，只有《Hunt Up Wind》與《寂しい日々》兩筆查無
+    （兩筆各試過兩組關鍵字、jp／us 共六次）。
+    **Apple 在本組是四次決定性的一票**：(a) **#15 的 artistName「大友義雄カルテット」是漢字掛名的唯一來源**；
+    (b) #17 的「池田芳夫クインテット」是掛名的第二個佐證；(c) #1／#2 的 artistName「富樫雅彦」是掛名縮成人名的第三個佐證；
+    (d) #12 的 1978-12-21 與 MB／Discogs 逐日相符。
+    ⚠ **「Apple 不可信」在本組也中四次**：把 `鈴木勲` 寫成有空格的「鈴木 勲」、把 `日野皓正` 寫成全大寫「TERUMASA HINO」、
+    把 #13 的軌數寫成 **8 軌（原盤 4 軌）**、**同一位藝人（高中正義）在同一個 us store 裡兩種寫法並存**。
+12. **第 1839-B 條成立**：Discogs `search` 的結果混著 `master` 與 `release`（本組每一次 `catno=` 反查都同時回兩種），
+    **先讀 `type` 才沒打錯端點**。Discogs **免 token，約 85 次請求、自我節流約 1 req/3s，遇到 1 次 429 後退避重試即通**；
+    **MB 全程 1 req/s、共 40 次請求（39 次 ws/2 ＋ 1 次 label 端點），未遇 503。**
+
+---
+
+## 第 4393 條：**本批沒有動到的東西（邊界自述）**
+
+只寫了 **`batch-progress/c177/prop-a.json`**、**本檔的 a 組段落**與
+**`desc-tools/jp-proper-names.json`（只 append，既有 33 個字串一字未改，見第 4394 條）**。
+⚠ ⚠ **寫本檔前照派工信第九節同時跑了 `ls batch-progress/c177/` 與 `git show HEAD:batch-progress/c177/rulings.md` 兩者，而且跑了兩次——兩次的結果不一樣，這正是派工信要求兩者都看的原因**：
+**開工時兩邊都不存在本檔**（HEAD 回 `fatal: path ... does not exist`）；
+**落檔前再查一次，b 組的 4406–4435 段落已經存在，而且主線已經 checkpoint commit 進 HEAD**（44,173 bytes、與工作區逐字相同）。
+→ **本層因此只做 prepend**：把 a 組段落接在檔首，**b 組整段一字未動**（落檔後以 `full.endswith(b 組原文)` 逐字驗過為 True）。
+**第 1870-B 條與 c-175 a 第 3895 條的教訓在本批第二次生效**；
+⚠ **併記給後五批：派工信第七節說的「判斷檔案在不在要用 `ls`／直接讀檔，不要用 `git status`」在本批要再補一句——`git show HEAD:` 的結果也會在你跑的時候改變，落檔前那一次才算數。**
+**未碰** `seed_cards.json`（唯讀掃描 17,248 列）、`apex_pool.json`、`PROJECT_MEMORY.md`、
+`batch-progress/enum/*`（唯讀）、`audits/pool-artist-name-splits.md`（唯讀）、**b 組的 `prop-b.json`**（唯讀，只為 `dedup-crossbatch` 的結果解讀）、
+其他批次的任何檔案、KV、Firestore。
+**未執行任何 git 指令**（不 add／不 commit／不 push／未動索引；只跑過唯讀的 `git show HEAD:<檔>`）。
+中間檔全部在 scratchpad 的 `c177a/`（`mb.json`／`dgsearch.json`／`dgrel.json`／`dgx.json`／`apple.json`／`poolidx.json`／
+`queries.json`／`aterms.json`／`rulings-a.md` 與 `mb.mjs`／`mkq.mjs`／`dgsearch.mjs`／`dgrel.mjs`／`dgx.mjs`／
+`apple.mjs`／`poolscan.mjs`／`show-mb.mjs`／`show-dg.mjs`／`build1-3.mjs`）。
+MB 全程 1 req/s、UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；Discogs 免 token、約 1 req/3s；Apple 52 次、1,450ms 間隔。
+
+---
+
+## 第 4394 條：**`desc-tools/jp-proper-names.json` 的 append（本批唯一動到的第三個檔）**
+
+派工信第十節允許「只准 append 新字串，不准刪改既有的」。**本批 append 五個**，
+全部是本組收件的 `artist`／`label`／`why`／`risk` 欄逐字用到、而寫作層一定會遇到的日文固有名詞：
+
+| 新增字串 | 來源（逐字） |
+|---|---|
+| `セブン・シーズ・レコード` | #17《スケッチ・オブ・マイ・ライフ》盤面 notes 逐字（Discogs releases/8940554），**既有名單只有「キングレコード株式会社」，沒有這個自家字標的日文社名** |
+| `ギルド・フォー・ヒューマン・ミュージック` | #1 的 MB 實體本名與池中既有卡《富樫雅彦 —《ギルド・フォー・ヒューマン・ミュージック》1976》逐字 |
+| `シャープス・アンド・フラッツ` | #13 掛名 `原信夫とシャープス・アンド・フラッツ` 的後半，池中六張逐字 |
+| `ニュー・ファミリー` | #18 的樂團名（Apple jp artistName 逐字「鈴木 勲 & ニュー・ファミリー」），已進本卡 `queryAlias` |
+| `バーニング・ウェイヴ` | #14 的 `risk` 逐字（本多俊之 日後的樂團 `本多俊之 & バーニング・ウェイヴ`，Apple jp id1651760477／id1651762331） |
+
+**既有的 33 個字串一字未改（含 b 組在本工作階段 append 的 `ビクター音楽産業株式会社`，本層讀檔後才接在其後）、順序未動，五個新字串 append 在陣列尾端。**
+⚠ **刻意沒有加進去的**：`エルヴィン・ジョーンズ`／`フランク・フォスター`（**是外國人名的片假名音譯，不是日文固有名詞**，
+與 c-176 第 4073 條不採 `レイシー` 同一理由）、`大友義雄カルテット`／`池田芳夫クインテット`
+（**是掛名字串本身，不是另一個固有名詞**）、`Denon PCM Jazz Series`／`Professional High-technique Series`／
+`New Emotional Jazz Series`／`Electric Bird`／`Flying Disk`／`Invitation`（**是英文系列名與廠標名**，
+照 c-176 第 4081 條末段的同一但書）。
+
+---
+
+## 第 4395 條：**給主線的四件小事（不影響本批交件）**
+
+1. ⚠ ⚠ **`Discomate`／ディスコメイト（東京放送 TBS 系的ディスコ株式会社，1975–1983）建議另立一線，本線不收**（第 4380 條）。
+   **松岡直也 與ウィシング 1979–1982 的主要目錄全在這家**（《Fiesta Fiesta》1979／《The September Wind》1982…，
+   Apple jp 查得到至少九張），**池中只有一張 `松岡直也 —《Majorca》1979`**。
+   形狀與第 4094 條末段對 ALM Records／コジマ録音 的建議相同，**兩家可以併成同一次調度**。
+2. **`芸能山城組` 在本線已經退了兩張**（c-176 b 第 4095 條的《やまと幻唱》VIH-6001、本批第 4377 條的《黄金鱗讃揚》VIH-6017）。
+   **這個團的 Invitation 目錄若再出現在 c-178…c-182，直接照第 4377 條退，不必再逐張查**——
+   **他們在池中的兩張是以民族音楽／サウンドトラック 的身分進去的，本線不該從爵士側補第三張。**
+3. **本組查出四個真實缺口**（池中 0 張、四位都是七〇年代日本爵士／フュージョン 的第一線人物，**本批各補了一張**）：
+   **`森園勝敏`**（吉他，四人囃子 出身）、**`本多俊之`**（薩克斯風）、**`増尾好秋`**（吉他，長駐紐約）、
+   **`大友義雄`**（中音薩克斯風）、**`池田芳夫`**（貝斯）——**五位，不是四位**。
+   另有兩位只在池中以編制字串存在、本批補上人名串的：**`福村博`**（長號）與 **`鈴木勲`**（貝斯，c-176 b 已補）。
+   ⚠ **`高瀬アキ` 與 `橋本一子` 兩位（#17 的成員）池中都是 0 張**，**本線不硬補**（簡報坑 1），記給之後的 §1 人工身分補遺批。
+4. ⚠ **ビクター Flying Disk 的號段在本線已經很密，建議主線核一次連號**：
+   c-176 b 收了 VIJ-6001／6002／6003／6006 四號（該批第 4108 條第 13 點逐字問過「VIJ-6004／6005 是不是缺口」），
+   **本批再收 VIJ-6010／6011／6015／6016／6019 五號**——
+   **VIJ-6004／6005／6007／6008／6009／6012／6013／6014／6017／6018 十號本線至今都沒出現過。**
+   照簡報第三節第 1 點，那多半是「MB 沒建檔」的缺口，**不在本線硬補**，但這條號段已經密到值得用 Discogs 的 `label=Flying Disk` 整段反查一次。
+
+---
+
 # c-177 b 組裁定（4406–4435）
 
 批次 c-177｜b 組 18 筆（1979 年段；Victor 9・King 7・コロムビア 2）｜策展層｜2026-09-22
