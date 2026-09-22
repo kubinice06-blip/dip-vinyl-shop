@@ -95,8 +95,14 @@ const albumSearch = async (c, front) => {
         || looseTitleOk(c.album, it.collectionName, c.selfTitled);
       if (!tOk) continue;                       // 盤名對不上就不收，年份不足以單獨成立
       const y = Number(String(it.releaseDate || '').slice(0, 4));
-      out.push({ front, id: it.collectionId, name: it.collectionName, y, tr: it.trackCount,
-        why: (c.year && y && Math.abs(y - c.year) <= 1) ? '盤名直查＋年份' : '盤名直查' });
+      // ⚠ 2026-09-22（主線第 1935-B 條）：這條路**只驗盤名、不驗掛名**，
+      // 所以候選裡混著「盤名對、掛名是另一個人」的碟（c-179 九個候選零成立，抬頭全是「盤名直查」）。
+      // 這裡不擋——擋掉就失去「盤名直查」這條路的意義——**改成把掛名那一關的結果逐筆標出來**，
+      // 讓覆核的人一眼看見哪幾筆連掛名都沒過。
+      const aOk = artistOk(c.artist, it.artistName || '') || looseArtistOk(c.artist, it.artistName || '');
+      out.push({ front, id: it.collectionId, name: it.collectionName, art: it.artistName || '', y, tr: it.trackCount,
+        why: (c.year && y && Math.abs(y - c.year) <= 1) ? '盤名直查＋年份' : '盤名直查',
+        artGate: aOk ? '掛名也過' : '**掛名沒過**' });
     }
     if (out.length) break;
   }
@@ -121,7 +127,7 @@ for (const c of todo) {
       const y = Number(String(it.releaseDate || '').slice(0, 4));
       const near = c.year && y && Math.abs(y - c.year) <= 1;
       const tOk = titleOk(c.album, it.collectionName, c.selfTitled) || looseTitleOk(c.album, it.collectionName, c.selfTitled);
-      if (tOk || near) found.push({ front, id: it.collectionId, name: it.collectionName, y, tr: it.trackCount, why: tOk ? (near ? '盤名＋年份' : '盤名') : '年份' });
+      if (tOk || near) found.push({ front, id: it.collectionId, name: it.collectionName, art: it.artistName || '', y, tr: it.trackCount, why: tOk ? (near ? '盤名＋年份' : '盤名') : '年份', artGate: '走藝人目錄' });
     }
     if (found.length) break;
   }
@@ -134,7 +140,7 @@ for (const c of todo) {
   const uniq = [...new Map(found.map(f => [f.id, f])).values()].slice(0, 8);
   if (uniq.length) hit++;
   lines.push(`## ${c.artist}《${c.album}》${c.year || ''}${uniq.length ? '' : ' — **目錄裡找不到**'}`);
-  for (const f of uniq) lines.push(`- \`${f.id}\` ${f.front}｜《${f.name}》${f.y || '?'}｜${f.tr} 軌｜依據：${f.why}`);
+  for (const f of uniq) lines.push(`- \`${f.id}\` ${f.front}｜《${f.name}》／${f.art || '?'}｜${f.y || '?'}｜${f.tr} 軌｜依據：${f.why}｜${f.artGate || ''}`);
   lines.push('');
   console.log(`[${n}/${todo.length}] ${c.artist}《${c.album}》→ ${uniq.length} 個候選`);
   if (n % 3 === 0) flush();

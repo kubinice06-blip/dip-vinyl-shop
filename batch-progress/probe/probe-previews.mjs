@@ -329,9 +329,38 @@ for (const c of cards) {
     // ——`titleOk(整串, 'Story of Wind Behind Left')` 永遠 false。
     // 本批 6 張救回有 4 張是這個形狀（翻譯型盤名、平假名掛名），**`queryAlias` 裡本來就寫著命中的寫法**。
     // 改成與 `termsFor()` 同樣用 `aliasParts()` 切開後逐段比對。
+    // ⚠ 2026-09-22（c-179 回撈層抓到，主線第 1935-B 條）：上面那一版把 `aparts` **同時**倒進
+    // 兩個候選桶，於是**盤名的別名被當成掛名候選**——`Native Son《Coast to Coast (Live in USA)》`
+    // 的 `queryAlias` 第一段逐字就是 `Coast to Coast`，它讓 de 店面一筆
+    // `artistName "Coast To Coast"／collectionName "Coast To Coast"／2007／℗ Athens Of The North`
+    // 的蘇格蘭放克考古盤兩關同時過，整筆判成 ready。
+    // **`queryAlias` 的語意是「外部服務認得的字串」，沒有規定是掛名還是盤名**（第 25 條），
+    // 所以兩種都試是對的；錯的是**同一段別名可以同時充當兩邊**。
+    // → 倒進掛名桶之前先剔掉「長得像本張盤名」的段，倒進盤名桶之前先剔掉「長得像本張掛名」的段。
+    // ⚠ 自我同名卡（掛名＝盤名）整個跳過這道，否則兩桶會被剔空。
     const aparts = aliasParts(c.queryAlias);
-    const albumCands = [c.album, translit(c.album), ...aparts].filter(Boolean);
-    const artistCands = [c.artist, translit(c.artist), ...aparts].filter(Boolean);
+    const selfNamed = !!c.selfTitled || canon(c.artist) === canon(c.album);
+    const albumLike  = a => titleOk(a, c.album, !!c.selfTitled)  || looseTitleOk(a, c.album, !!c.selfTitled);
+    const artistLike = a => artistOk(a, c.artist) || looseArtistOk(a, c.artist);
+    const albumParts  = selfNamed ? aparts : aparts.filter(a => !artistLike(a));
+    const artistParts = selfNamed ? aparts : aparts.filter(a => !albumLike(a));
+    const albumCands = [c.album, translit(c.album), ...albumParts].filter(Boolean);
+    const artistCands = [c.artist, translit(c.artist), ...artistParts].filter(Boolean);
+    // ⚠ 第二道（同一條裁定的後半）：**盤名那一關與掛名那一關不准靠同一段別名過。**
+    // 只剔掉「盤名形的別名」還漏得掉另一種形狀——**掛名側的綽號同時頂過兩關**：
+    // `富樫雅彦〜高柳昌行《パルセーション》` 的 alias 裡有高柳的綽號 `Jojo`，
+    // 它既不像本張盤名（所以留在掛名桶）、也留在盤名桶，於是 `JoJo /《JoJo》2004` 兩關同時過。
+    // → 命中的條件改成「存在一組**不同**的證人各自過一關」。
+    // ⚠ 自我同名卡（掛名＝盤名）豁免這一道，否則它永遠不可能有兩個不同的證人。
+    const pairOk = (gotT, gotA) => {
+      const TW = albumCands.filter(a => titleOk(a, gotT, !!c.selfTitled));
+      if (looseTitleOk(c.album, gotT, !!c.selfTitled)) TW.push(c.album);
+      const AW = artistCands.filter(a => artistOk(a, gotA));
+      if (looseArtistOk(c.artist, gotA)) AW.push(c.artist);
+      if (!TW.length || !AW.length) return false;
+      if (selfNamed) return true;
+      return TW.some(t => AW.some(a => canon(t) !== canon(a)));
+    };
     let hits = [];
     let raw = 0;
     // 2026-09-05：`raw` 的初值 0 會讓「每個 term 都 HTTP 失敗」印成 `front:0→0`，
@@ -347,11 +376,7 @@ for (const c of cards) {
       if (j._http || j._err) { rec.tried.push(`${front}:${j._http || j._err}`); continue; }
       okQueries++;
       raw = (j.results || []).length;
-      hits = (j.results || []).filter(r =>
-        (albumCands.some(a => titleOk(a, r.collectionName || '', !!c.selfTitled)) ||
-         looseTitleOk(c.album, r.collectionName || '', !!c.selfTitled)) &&
-        (artistCands.some(a => artistOk(a, r.artistName || '')) ||
-         looseArtistOk(c.artist, r.artistName || '')));
+      hits = (j.results || []).filter(r => pairOk(r.collectionName || '', r.artistName || ''));
       // 年份不再當門檻（裁定第 77 條）：Apple 記的常是數位重製日不是原盤年。
       // 主閘是藝人＋盤名的粗形比對；年份只用來排序與標記。
       if (hits.length) break;                           // 命中就不再試下一種寫法
@@ -369,9 +394,11 @@ for (const c of cards) {
         artistCands.some(a => artistOk(a, x.artistName || '')) || looseArtistOk(c.artist, x.artistName || ''));
       for (const a of artists.slice(0, 2)) {
         const list = await artistAlbums(a.artistId, front);
-        const found = list.filter(x =>
-          albumCands.some(al => titleOk(al, x.collectionName || '', !!c.selfTitled)) ||
-          looseTitleOk(c.album, x.collectionName || '', !!c.selfTitled));
+        // ⚠ 2026-09-22（主線第 1935-B 條）：這條路原本**只驗盤名**，於是上面那兩道防呆全被繞過——
+        // `富樫雅彦〜高柳昌行《パルセーション》` 的別名裡有高柳的綽號 `Jojo`，
+        // 它把 Apple 上的藝人 `JoJo` 找出來，再拿同一段 `Jojo` 去比中該藝人的同名專輯《JoJo》。
+        // → 這條路也走 `pairOk`，兩關要有不同的證人。
+        const found = list.filter(x => pairOk(x.collectionName || '', x.artistName || ''));
         if (found.length) { hits = found; rec.tried.push(`${front}:artistPage→${found.length}`); break; }
       }
     }
@@ -415,6 +442,42 @@ for (const c of cards) {
     DECO.lastIndex = 0;                                 // 全域旗標的正規式要自己歸零
     const yd = c.year ? Math.abs(Number(rec.appleYear) - c.year) : 0;
     if (yd > 3) { rec.yearDrift = yd; rec.reissueTitle = isReissue; }
+    // ⚠ 只報不擋的旗標（主線第 1935-B 條）：盤名那一關**沒有任何「卡片本身的盤名」當證人**、
+    // 整個靠 `queryAlias` 的某一段過關時標起來。真的再發（`The Good Bad Girl+6`、`IQ-179`）也會中，
+    // **所以不擋**；但「掛名的別名頂了盤名那一關」那種錯配也只剩這一個外顯特徵。
+    // 年份漂移大又只有別名證人的，研究層要逐張回查。
+    {
+      const gt = best.collectionName || '';
+      const coreT = new Set([canon(c.album), canon(translit(c.album))]);
+      const tw = albumCands.filter(a => titleOk(a, gt, !!c.selfTitled));
+      if (looseTitleOk(c.album, gt, !!c.selfTitled)) tw.push(c.album);
+      if (tw.length && tw.every(t => !coreT.has(canon(t)))) rec.aliasOnlyTitle = true;
+      // ⚠ 第三、四道（同一條裁定）：`aliasOnlyTitle` 自己不擋，但它加上另外兩個特徵就擋。
+      // (3) **Apple 那一筆的盤名與掛名逐字相同，而卡片的掛名不是它**
+      //     —— `富樫雅彦〜高柳昌行《パルセーション》→ JoJo /《JoJo》`：
+      //     綽號 `Jojo` 過了盤名那一關，掛名那一關則由更長的 `Masayuki “Jojo” Takayanagi` 頂過去，
+      //     兩個證人「不同」，所以第二道抓不到。自我同名卡（`Spectrum《Spectrum》`）掛名對得上，不受影響。
+      // (4) **盤名那一關的證人只是 Apple 盤名的一小段，而年份又差超過三年**
+      //     —— 五張浅川マキ 的碟全被配到同一張《Asakawa Maki No Sekai》（別名裡的羅馬字藝名頂了盤名那一關）。
+      //     真的再發（`The Good Bad Girl+6`／`IQ-179`／`Anokoro`）證人與 Apple 盤名是**逐字相等**的，不受影響。
+      if (rec.aliasOnlyTitle) {
+        const ga = best.artistName || '';
+        const sameNameEntry = canon(gt) === canon(ga) && canon(c.artist) !== canon(ga);
+        const drift = c.year && rec.appleYear ? Math.abs(Number(rec.appleYear) - c.year) : 0;
+        const fragment = tw.every(t => canon(t) !== canon(gt) && canon(gt).includes(canon(t)));
+        if (sameNameEntry || (fragment && drift > 3)) {
+          // 被這兩道退掉的，**把配錯的那一筆整組搬到 `rejectedMatch`**，
+          // 不要留在 `appleTitle`／`appleArtist` 欄——留著會讓下游以為它還是這張碟的資料。
+          rec.rejectedMatch = { why: sameNameEntry ? 'aliasOnlyTitle＋盤名掛名同名' : 'aliasOnlyTitle＋證人只是片段＋年份漂移',
+            collectionId: rec.collectionId, appleTitle: rec.appleTitle, appleArtist: rec.appleArtist, appleYear: rec.appleYear };
+          rec.front = undefined; rec.status = undefined; rec.previewUrl = undefined;
+          rec.collectionId = undefined; rec.appleTitle = undefined; rec.appleArtist = undefined;
+          rec.appleYear = undefined; rec.trackCount = undefined; rec.explicitness = undefined;
+          rec.yearDrift = undefined; rec.reissueTitle = undefined; rec.aliasOnlyTitle = undefined;
+          continue;
+        }
+      }
+    }
     rec.status = rec.previewUrl ? 'ready' : 'no-preview';
     // 同一張碟在不同 storefront 的試聽授權不一樣（2026-09-02，c-53 實測）：
     // Матвеева《Какой большой ветер》的 collectionId 1509982713 在 de 有 .m4a、在 us 沒有。
