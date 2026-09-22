@@ -5380,3 +5380,21 @@ c-182：**確定撞池 0｜要人工比 23｜池中查無 13**。
 ⚠ **與上一次重跑（c-181 落地前）相比，b 組的「要人工比」從 10 變 11、「查無」從 8 變 7**
 ——**一批卡單落地就會改變下一批的提示欄，這就是為什麼這個動作必須在派工的當下做。**
 **兩份派工信的數字已照 `dispatch-stats.mjs` 的輸出更新過。**
+
+## 第 1939-B 條（2026-09-22）：`dup-collection.mjs`——「同一張 Apple 碟被兩張卡引用」全庫掃過一次
+
+第 1938-B 條記下的那個新特徵已經寫成腳本（`batch-progress/probe/dup-collection.mjs`，**只報不擋**）。
+**全庫 2840 個 `collectionId`，被兩張以上的卡引用的有 11 個，全部落在 Blue Note 線（c-114…c-145）、jp-1 線零筆。**
+
+⚠ ⚠ **11 筆裡沒有一筆是「配錯碟」**，全部是同一個形狀：
+**Apple 把兩張 LP 併成一筆數位發行**——
+`Orgy In Rhythm, Vols. 1 & 2`／`Blue Lights, Vol. 1 & 2`／`Holiday for Skins`／
+`Meet You at the Jazz Corner of the World`／`Medina & Spiral`／`Overture to Dawn` 兩對／
+`Hank Mobley Quartet` 與《Hank Mobley》／`Lou Donaldson` 的 `Quartet/Quintet/Sextet`。
+**這正是成因 15（兩張 LP 併成一筆、掛名還可能換成另一位領班）。**
+
+**→ 這不是探測層的錯，是市場真的只發了併版。**
+⚠ **但它有一個實際後果：Vol.1 與 Vol.2 兩張卡的試聽會指到同一段音檔。**
+**本機決定要不要兩張都掛同一個來源，或其中一張改走固定無來源狀態——雲端不動它。**
+
+**腳本從此是每批探測後的固定動作之一**（`chain-c<N>.sh` 之後跑一次，零筆才算乾淨）。
