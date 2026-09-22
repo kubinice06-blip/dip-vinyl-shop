@@ -1,1783 +1,1994 @@
 [
  {
-   "artist": "清水靖晃",
-   "album": "IQ‐179 愛究壹百七拾九",
-   "year": 1981,
-   "rgMbid": "2bd3a635-dd13-477c-80e6-1988bed85a0b",
-   "country": "JP",
-   "format": "HQCD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "コロムビア",
-   "entities": [
-     "Columbia(JP)"
+  "artist": "清水靖晃",
+  "album": "IQ‐179 愛究壹百七拾九",
+  "year": 1981,
+  "rgMbid": "2bd3a635-dd13-477c-80e6-1988bed85a0b",
+  "country": "JP",
+  "format": "HQCD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "コロムビア",
+  "entities": [
+   "Columbia(JP)"
+  ],
+  "why": "curator-list",
+  "nReleases": null,
+  "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜清水靖晃｜Kakashi｜1982"
    ],
-   "why": "curator-list",
-   "nReleases": null,
-   "note": "藝人池中有1張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜清水靖晃｜Kakashi｜1982"
-     ]
-   },
-   "artistVariants": [
-     "清水靖晃",
-     "Shimizu, Yasuaki",
-     "Yasuaki Shimizu"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "IQ‐179 愛究壹百七拾九",
-     "firstReleaseDate": "1981-08",
-     "earliestRelease": {
-       "date": "1981-08",
-       "title": "IQ‐179 愛究壹百七拾九",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "IQ‐179 愛究壹百七拾九"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜清水靖晃｜Kakashi｜1982": "等值"
    }
+  },
+  "artistVariants": [
+   "清水靖晃",
+   "Shimizu, Yasuaki",
+   "Yasuaki Shimizu"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "IQ‐179 愛究壹百七拾九",
+   "firstReleaseDate": "1981-08",
+   "earliestRelease": {
+    "date": "1981-08",
+    "title": "IQ‐179 愛究壹百七拾九",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "IQ‐179 愛究壹百七拾九"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "村田有美",
-   "album": "卑弥呼",
-   "year": 1981,
-   "rgMbid": "7648018a-0bbd-4be0-a471-43b6b383aa83",
-   "country": "JP/XW",
-   "format": "CD-R/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "コロムビア",
-   "entities": [
-     "Columbia(JP)"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "村田有美",
+  "album": "卑弥呼",
+  "year": 1981,
+  "rgMbid": "7648018a-0bbd-4be0-a471-43b6b383aa83",
+  "country": "JP/XW",
+  "format": "CD-R/Digital Media",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "コロムビア",
+  "entities": [
+   "Columbia(JP)"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "村田有美",
+   "Murata, Yumi",
+   "Yumi Murata"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "卑弥呼",
+   "firstReleaseDate": "1981-09-01",
+   "earliestRelease": {
+    "date": "1981-09-01",
+    "title": "Himiko",
+    "country": "JP"
    },
-   "artistVariants": [
-     "村田有美",
-     "Murata, Yumi",
-     "Yumi Murata"
+   "titlesSeen": [
+    "Himiko",
+    "卑弥呼"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "卑弥呼",
-     "firstReleaseDate": "1981-09-01",
-     "earliestRelease": {
-       "date": "1981-09-01",
-       "title": "Himiko",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Himiko",
-       "卑弥呼"
-     ],
-     "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
-   }
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
-   "artist": "Isao Suzuki",
-   "album": "Self-Portrait",
-   "year": 1981,
-   "rgMbid": "e431d842-08a5-47e6-b0fe-be43bcf48662",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "Paddle Wheel"
+  "artist": "Isao Suzuki",
+  "album": "Self-Portrait",
+  "year": 1981,
+  "rgMbid": "e431d842-08a5-47e6-b0fe-be43bcf48662",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "Paddle Wheel"
+  ],
+  "why": "artist-tag",
+  "nReleases": null,
+  "note": "藝人池中有5張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c176｜鈴木勲｜Cadillac Woman｜1977"
    ],
-   "why": "artist-tag",
-   "nReleases": null,
-   "note": "藝人池中有5張(盤名未比中)",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
-   },
-   "artistVariants": [
-     "Isao Suzuki",
-     "鈴木勲",
-     "Suzuki, Isao",
-     "鈴木勲夫"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Self-Portrait",
-     "firstReleaseDate": "1981",
-     "earliestRelease": {
-       "date": "1981",
-       "title": "Self-Portrait",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Self-Portrait"
-     ],
-     "note": ""
+   "matchedBy": {
+    "c176｜鈴木勲｜Cadillac Woman｜1977": "等值"
    }
+  },
+  "artistVariants": [
+   "Isao Suzuki",
+   "鈴木勲",
+   "Suzuki, Isao",
+   "鈴木勲夫"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Self-Portrait",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Self-Portrait",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Self-Portrait"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "Isao Suzuki",
-   "album": "Three Cushion = スリー・クッション",
-   "year": 1981,
-   "rgMbid": "d698acd5-d243-4b88-b2d3-b020dade9fed",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "Paddle Wheel"
+  "artist": "Isao Suzuki",
+  "album": "Three Cushion = スリー・クッション",
+  "year": 1981,
+  "rgMbid": "d698acd5-d243-4b88-b2d3-b020dade9fed",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "Paddle Wheel"
+  ],
+  "why": "artist-tag",
+  "nReleases": null,
+  "note": "藝人池中有5張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c176｜鈴木勲｜Cadillac Woman｜1977"
    ],
-   "why": "artist-tag",
-   "nReleases": null,
-   "note": "藝人池中有5張(盤名未比中)",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
-   },
-   "artistVariants": [
-     "Isao Suzuki",
-     "鈴木勲",
-     "Suzuki, Isao",
-     "鈴木勲夫"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Three Cushion = スリー・クッション",
-     "firstReleaseDate": "1981",
-     "earliestRelease": {
-       "date": "1981",
-       "title": "Three Cushion = スリー・クッション",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Three Cushion = スリー・クッション"
-     ],
-     "note": ""
+   "matchedBy": {
+    "c176｜鈴木勲｜Cadillac Woman｜1977": "等值"
    }
+  },
+  "artistVariants": [
+   "Isao Suzuki",
+   "鈴木勲",
+   "Suzuki, Isao",
+   "鈴木勲夫"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Three Cushion = スリー・クッション",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Three Cushion = スリー・クッション",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Three Cushion = スリー・クッション"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "Katsutoshi Morizono With Bird's Eye View",
-   "album": "Spirits",
-   "year": 1981,
-   "rgMbid": "0ca586bf-66a0-4cce-8e37-6cc044391772",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "ELECTRIC BIRD"
-   ],
-   "why": "artist-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "Katsutoshi Morizono With Bird's Eye View",
+  "album": "Spirits",
+  "year": 1981,
+  "rgMbid": "0ca586bf-66a0-4cce-8e37-6cc044391772",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "ELECTRIC BIRD"
+  ],
+  "why": "artist-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Katsutoshi Morizono With Bird's Eye View",
+   "森園勝敏",
+   "Morizono, Katsutoshi",
+   "Bird’s Eye View"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Spirits",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Spirits",
+    "country": "JP"
    },
-   "artistVariants": [
-     "Katsutoshi Morizono With Bird's Eye View",
-     "森園勝敏",
-     "Morizono, Katsutoshi",
-     "Bird’s Eye View"
+   "titlesSeen": [
+    "Spirits"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Spirits",
-     "firstReleaseDate": "1981",
-     "earliestRelease": {
-       "date": "1981",
-       "title": "Spirits",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Spirits"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "Toshiyuki Honda & Burning Waves",
-   "album": "Boomerang",
-   "year": 1981,
-   "rgMbid": "69917d69-2c18-46e5-a119-f895a1ecf9a6",
-   "country": "",
-   "format": "Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "ELECTRIC BIRD"
-   ],
-   "why": "artist-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "Toshiyuki Honda & Burning Waves",
+  "album": "Boomerang",
+  "year": 1981,
+  "rgMbid": "69917d69-2c18-46e5-a119-f895a1ecf9a6",
+  "country": "",
+  "format": "Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "ELECTRIC BIRD"
+  ],
+  "why": "artist-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Toshiyuki Honda & Burning Waves",
+   "本多俊之",
+   "Honda, Toshiyuki",
+   "Toshiyuka Honda",
+   "Burning Waves"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Boomerang",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Boomerang",
+    "country": ""
    },
-   "artistVariants": [
-     "Toshiyuki Honda & Burning Waves",
-     "本多俊之",
-     "Honda, Toshiyuki",
-     "Toshiyuka Honda",
-     "Burning Waves"
+   "titlesSeen": [
+    "Boomerang"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Boomerang",
-     "firstReleaseDate": "1981",
-     "earliestRelease": {
-       "date": "1981",
-       "title": "Boomerang",
-       "country": ""
-     },
-     "titlesSeen": [
-       "Boomerang"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "富樫雅彦",
-   "album": "ザ・バラード",
-   "year": 1981,
-   "rgMbid": "b1632f1f-23cf-45d3-b83f-61aa1683ae62",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "Paddle Wheel"
+  "artist": "富樫雅彦",
+  "album": "ザ・バラード",
+  "year": 1981,
+  "rgMbid": "b1632f1f-23cf-45d3-b83f-61aa1683ae62",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "Paddle Wheel"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "藝人池中有13張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971",
+    "c176｜富樫雅彦｜風の遺した物語｜1975",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "藝人池中有13張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜富樫雅彦｜Eternal Duo｜1983",
-       "seed｜富樫雅彦｜Speed and Space｜1969",
-       "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
-       "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
-       "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
-       "seed｜富樫雅彦｜リングス｜1976",
-       "seed｜富樫雅彦｜双晶｜1973",
-       "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
-       "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
-       "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
-       "c121｜富樫雅彦｜リングス｜1976",
-       "c121｜富樫雅彦｜双晶｜1973"
-     ]
-   },
-   "artistVariants": [
-     "富樫雅彦",
-     "Togashi, Masahiko",
-     "Masahiko Togashi"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "ザ・バラード",
-     "firstReleaseDate": "1981",
-     "earliestRelease": {
-       "date": "1981",
-       "title": "ザ・バラード",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "ザ・バラード"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜富樫雅彦｜Eternal Duo｜1983": "等值",
+    "seed｜富樫雅彦｜Speed and Space｜1969": "等值",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "seed｜富樫雅彦｜リングス｜1976": "等值",
+    "seed｜富樫雅彦｜双晶｜1973": "等值",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "c121｜富樫雅彦｜リングス｜1976": "等值",
+    "c121｜富樫雅彦｜双晶｜1973": "等值",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969": "等值",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969": "聯名內含",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971": "聯名內含",
+    "c176｜富樫雅彦｜風の遺した物語｜1975": "等值",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977": "前綴"
    }
+  },
+  "artistVariants": [
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "ザ・バラード",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "ザ・バラード",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ザ・バラード"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "富樫雅彦",
-   "album": "フェイス・オブ・パーカッション",
-   "year": 1981,
-   "rgMbid": "dafa1d7d-1049-4d72-b38e-4ade1c9ff829",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "Paddle Wheel"
+  "artist": "富樫雅彦",
+  "album": "フェイス・オブ・パーカッション",
+  "year": 1981,
+  "rgMbid": "dafa1d7d-1049-4d72-b38e-4ade1c9ff829",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "Paddle Wheel"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "藝人池中有13張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971",
+    "c176｜富樫雅彦｜風の遺した物語｜1975",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "藝人池中有13張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜富樫雅彦｜Eternal Duo｜1983",
-       "seed｜富樫雅彦｜Speed and Space｜1969",
-       "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
-       "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
-       "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
-       "seed｜富樫雅彦｜リングス｜1976",
-       "seed｜富樫雅彦｜双晶｜1973",
-       "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
-       "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
-       "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
-       "c121｜富樫雅彦｜リングス｜1976",
-       "c121｜富樫雅彦｜双晶｜1973"
-     ]
-   },
-   "artistVariants": [
-     "富樫雅彦",
-     "Togashi, Masahiko",
-     "Masahiko Togashi"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "フェイス・オブ・パーカッション",
-     "firstReleaseDate": "1981",
-     "earliestRelease": {
-       "date": "1981",
-       "title": "フェイス・オブ・パーカッション",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "フェイス・オブ・パーカッション"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜富樫雅彦｜Eternal Duo｜1983": "等值",
+    "seed｜富樫雅彦｜Speed and Space｜1969": "等值",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "seed｜富樫雅彦｜リングス｜1976": "等值",
+    "seed｜富樫雅彦｜双晶｜1973": "等值",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "c121｜富樫雅彦｜リングス｜1976": "等值",
+    "c121｜富樫雅彦｜双晶｜1973": "等值",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969": "等值",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969": "聯名內含",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971": "聯名內含",
+    "c176｜富樫雅彦｜風の遺した物語｜1975": "等值",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977": "前綴"
    }
+  },
+  "artistVariants": [
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "フェイス・オブ・パーカッション",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "フェイス・オブ・パーカッション",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "フェイス・オブ・パーカッション"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "鈴木勲、山本剛",
-   "album": "SAMBA CLUB",
-   "year": 1981,
-   "rgMbid": "ae1fd9c7-2776-4f21-adbf-f398999c9b8f",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "Paddle Wheel",
-     "KING"
+  "artist": "鈴木勲、山本剛",
+  "album": "SAMBA CLUB",
+  "year": 1981,
+  "rgMbid": "ae1fd9c7-2776-4f21-adbf-f398999c9b8f",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "Paddle Wheel",
+   "KING"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "藝人池中有17張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜山本剛｜Star Dust｜1977",
+    "c176｜鈴木勲｜Cadillac Woman｜1977"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "藝人池中有17張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜山本剛｜Star Dust｜1977"
-     ]
-   },
-   "artistVariants": [
-     "鈴木勲、山本剛",
-     "鈴木勲",
-     "Suzuki, Isao",
-     "鈴木勲夫",
-     "山本剛",
-     "Yamamoto, Tsuyoshi",
-     "Tsuyoshi Yamamoto",
-     "山本 剛"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "SAMBA CLUB",
-     "firstReleaseDate": "1981",
-     "earliestRelease": {
-       "date": "1981",
-       "title": "SAMBA CLUB",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "SAMBA CLUB"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜山本剛｜Star Dust｜1977": "等值",
+    "c176｜鈴木勲｜Cadillac Woman｜1977": "等值"
    }
+  },
+  "artistVariants": [
+   "鈴木勲、山本剛",
+   "鈴木勲",
+   "Suzuki, Isao",
+   "鈴木勲夫",
+   "山本剛",
+   "Yamamoto, Tsuyoshi",
+   "Tsuyoshi Yamamoto",
+   "山本 剛"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "SAMBA CLUB",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "SAMBA CLUB",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "SAMBA CLUB"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "NATIVE SON",
-   "album": "Shining",
-   "year": 1982,
-   "rgMbid": "09e3b96e-1a3e-4829-9d15-10267c89588c",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "Victor",
-   "entities": [
-     "JVC"
+  "artist": "NATIVE SON",
+  "album": "Shining",
+  "year": 1982,
+  "rgMbid": "09e3b96e-1a3e-4829-9d15-10267c89588c",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "JVC"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜峰厚介｜Daguri｜1973",
+    "seed｜峰厚介｜First｜1970",
+    "seed｜本田竹広｜Salaam Salaam｜1974",
+    "seed｜峰厚介｜Out Of Chaos｜1974",
+    "seed｜峰厚介｜Sunshower｜1976",
+    "seed｜峰厚介｜Bamboo Grove｜2019",
+    "seed｜本田竹広｜Jōdo｜1970",
+    "seed｜本田竹広｜The Trio｜1970",
+    "seed｜本田竹広｜I Love You｜1971",
+    "seed｜本田竹広｜What's Going On｜1973",
+    "c131｜本田竹広｜Salaam Salaam｜1974",
+    "c132｜峰厚介｜Out Of Chaos｜1974",
+    "c132｜峰厚介｜Sunshower｜1976",
+    "c132｜峰厚介｜Bamboo Grove｜2019",
+    "c132｜本田竹広｜Jōdo｜1970",
+    "c132｜本田竹広｜The Trio｜1970",
+    "c132｜本田竹広｜I Love You｜1971",
+    "c132｜本田竹広｜What's Going On｜1973",
+    "c132｜本田竹広｜Another Departure｜1977",
+    "c132｜本田竹広｜It's Great Outside｜1978"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜本田竹広｜Salaam Salaam｜1974",
-       "seed｜本田竹広｜Jōdo｜1970",
-       "seed｜本田竹広｜The Trio｜1970",
-       "seed｜本田竹広｜I Love You｜1971",
-       "seed｜本田竹広｜What's Going On｜1973",
-       "c131｜本田竹広｜Salaam Salaam｜1974",
-       "c132｜本田竹広｜Jōdo｜1970",
-       "c132｜本田竹広｜The Trio｜1970",
-       "c132｜本田竹広｜I Love You｜1971",
-       "c132｜本田竹広｜What's Going On｜1973",
-       "c132｜本田竹広｜Another Departure｜1977",
-       "c132｜本田竹広｜It's Great Outside｜1978",
-       "seed｜峰厚介｜Daguri｜1973",
-       "seed｜峰厚介｜First｜1970",
-       "seed｜峰厚介｜Out Of Chaos｜1974",
-       "seed｜峰厚介｜Sunshower｜1976",
-       "seed｜峰厚介｜Bamboo Grove｜2019",
-       "c132｜峰厚介｜Out Of Chaos｜1974",
-       "c132｜峰厚介｜Sunshower｜1976",
-       "c132｜峰厚介｜Bamboo Grove｜2019"
-     ]
-   },
-   "artistVariants": [
-     "NATIVE SON",
-     "本田竹広",
-     "Honda, Takehiro",
-     "峰厚介",
-     "Mine, Kōsuke",
-     "大出元信",
-     "Ōde, Motonobu"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Shining",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Shining",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Shining"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜峰厚介｜Daguri｜1973": "等值",
+    "seed｜峰厚介｜First｜1970": "等值",
+    "seed｜本田竹広｜Salaam Salaam｜1974": "等值",
+    "seed｜峰厚介｜Out Of Chaos｜1974": "等值",
+    "seed｜峰厚介｜Sunshower｜1976": "等值",
+    "seed｜峰厚介｜Bamboo Grove｜2019": "等值",
+    "seed｜本田竹広｜Jōdo｜1970": "等值",
+    "seed｜本田竹広｜The Trio｜1970": "等值",
+    "seed｜本田竹広｜I Love You｜1971": "等值",
+    "seed｜本田竹広｜What's Going On｜1973": "等值",
+    "c131｜本田竹広｜Salaam Salaam｜1974": "等值",
+    "c132｜峰厚介｜Out Of Chaos｜1974": "等值",
+    "c132｜峰厚介｜Sunshower｜1976": "等值",
+    "c132｜峰厚介｜Bamboo Grove｜2019": "等值",
+    "c132｜本田竹広｜Jōdo｜1970": "等值",
+    "c132｜本田竹広｜The Trio｜1970": "等值",
+    "c132｜本田竹広｜I Love You｜1971": "等值",
+    "c132｜本田竹広｜What's Going On｜1973": "等值",
+    "c132｜本田竹広｜Another Departure｜1977": "等值",
+    "c132｜本田竹広｜It's Great Outside｜1978": "等值"
    }
+  },
+  "artistVariants": [
+   "NATIVE SON",
+   "本田竹広",
+   "Honda, Takehiro",
+   "峰厚介",
+   "Mine, Kōsuke",
+   "大出元信",
+   "Ōde, Motonobu"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Shining",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Shining",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Shining"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "益田幹夫",
-   "album": "Chi Chi",
-   "year": 1982,
-   "rgMbid": "18abf337-f7f0-4eb7-b48e-9e12887a3e9e",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "Victor",
-   "entities": [
-     "JVC",
-     "INVITATION"
+  "artist": "益田幹夫",
+  "album": "Chi Chi",
+  "year": 1982,
+  "rgMbid": "18abf337-f7f0-4eb7-b48e-9e12887a3e9e",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "JVC",
+   "INVITATION"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c176｜益田幹夫｜Moon Stone｜1978"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
-   },
-   "artistVariants": [
-     "益田幹夫",
-     "Masuda, Mikio",
-     "Mikio Masuda",
-     "益田　幹夫"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Chi Chi",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Chi Chi",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Chi Chi"
-     ],
-     "note": ""
+   "matchedBy": {
+    "c176｜益田幹夫｜Moon Stone｜1978": "等值"
    }
+  },
+  "artistVariants": [
+   "益田幹夫",
+   "Masuda, Mikio",
+   "Mikio Masuda",
+   "益田　幹夫"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Chi Chi",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Chi Chi",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Chi Chi"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "芸能山城組",
-   "album": "アフリカ幻唱",
-   "year": 1982,
-   "rgMbid": "e0ba849d-4742-3ba2-befe-b5e594d15386",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "Victor",
-   "entities": [
-     "INVITATION"
+  "artist": "芸能山城組",
+  "album": "アフリカ幻唱",
+  "year": 1982,
+  "rgMbid": "e0ba849d-4742-3ba2-befe-b5e594d15386",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "INVITATION"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "藝人池中有15張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜芸能山城組｜恐山/銅之剣舞｜1976",
+    "seed｜芸能山城組｜Symphonic Suite AKIRA｜1988"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "藝人池中有15張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜芸能山城組｜恐山/銅之剣舞｜1976",
-       "seed｜芸能山城組｜Symphonic Suite AKIRA｜1988"
-     ]
-   },
-   "artistVariants": [
-     "芸能山城組",
-     "Geinoh Yamashirogumi",
-     "Akira",
-     "Geinō Yamashirogumi"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "アフリカ幻唱",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "アフリカ幻唱",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "アフリカ幻唱",
-       "Africa Genjoh (The African Vision Singing)"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜芸能山城組｜恐山/銅之剣舞｜1976": "等值",
+    "seed｜芸能山城組｜Symphonic Suite AKIRA｜1988": "等值"
    }
+  },
+  "artistVariants": [
+   "芸能山城組",
+   "Geinoh Yamashirogumi",
+   "Akira",
+   "Geinō Yamashirogumi"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "アフリカ幻唱",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "アフリカ幻唱",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "アフリカ幻唱",
+    "Africa Genjoh (The African Vision Singing)"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "秋本奈緒美",
-   "album": "Rolling 80's",
-   "year": 1982,
-   "rgMbid": "ab5524c1-8ec6-4ea8-9aca-ac11fe4c0e53",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "Victor",
-   "entities": [
-     "JVC",
-     "INVITATION"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "秋本奈緒美",
+  "album": "Rolling 80's",
+  "year": 1982,
+  "rgMbid": "ab5524c1-8ec6-4ea8-9aca-ac11fe4c0e53",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "JVC",
+   "INVITATION"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "秋本奈緒美",
+   "Akimoto, Naomi",
+   "Naomi Akimoto"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Rolling 80's",
+   "firstReleaseDate": "1982-01-21",
+   "earliestRelease": {
+    "date": "1982-01-21",
+    "title": "Rolling 80's",
+    "country": "JP"
    },
-   "artistVariants": [
-     "秋本奈緒美",
-     "Akimoto, Naomi",
-     "Naomi Akimoto"
+   "titlesSeen": [
+    "Rolling 80's"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Rolling 80's",
-     "firstReleaseDate": "1982-01-21",
-     "earliestRelease": {
-       "date": "1982-01-21",
-       "title": "Rolling 80's",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Rolling 80's"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "秋本奈緒美",
-   "album": "The 20th Anniversary",
-   "year": 1982,
-   "rgMbid": "880a73a2-11cb-448e-861a-afc8c793ee7c",
-   "country": "JP/XW",
-   "format": "12\" Vinyl/Digital Media/HQCD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "Victor",
-   "entities": [
-     "INVITATION",
-     "Victor(JP imprint)"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "秋本奈緒美",
+  "album": "The 20th Anniversary",
+  "year": 1982,
+  "rgMbid": "880a73a2-11cb-448e-861a-afc8c793ee7c",
+  "country": "JP/XW",
+  "format": "12\" Vinyl/Digital Media/HQCD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "INVITATION",
+   "Victor(JP imprint)"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "秋本奈緒美",
+   "Akimoto, Naomi",
+   "Naomi Akimoto"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "The 20th Anniversary",
+   "firstReleaseDate": "1982-12-12",
+   "earliestRelease": {
+    "date": "1982-12-12",
+    "title": "THE 20th ANNIVERSARY",
+    "country": "JP"
    },
-   "artistVariants": [
-     "秋本奈緒美",
-     "Akimoto, Naomi",
-     "Naomi Akimoto"
+   "titlesSeen": [
+    "THE 20th ANNIVERSARY",
+    "The 20th Anniversary"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "The 20th Anniversary",
-     "firstReleaseDate": "1982-12-12",
-     "earliestRelease": {
-       "date": "1982-12-12",
-       "title": "THE 20th ANNIVERSARY",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "THE 20th ANNIVERSARY",
-       "The 20th Anniversary"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "AJF '82 All Star Jam",
-   "album": "Aurex Jazz Festival (1982): All Star Jam",
-   "year": 1982,
-   "rgMbid": "53bcc827-2c94-4cb7-9a38-856c8955c796",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EASTWORLD"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——MB 這個實體沒掛漢字名也沒掛成員關係，**務必人工掃池**（第 1868-B 條）",
-     "artistAlbumsInPool": []
+  "artist": "AJF '82 All Star Jam",
+  "album": "Aurex Jazz Festival (1982): All Star Jam",
+  "year": 1982,
+  "rgMbid": "53bcc827-2c94-4cb7-9a38-856c8955c796",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": true,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EASTWORLD"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "AJF '82 All Star Jam"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Aurex Jazz Festival (1982): All Star Jam",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Aurex Jazz Festival (1982): All Star Jam",
+    "country": "JP"
    },
-   "artistVariants": [
-     "AJF '82 All Star Jam"
+   "titlesSeen": [
+    "Aurex Jazz Festival (1982): All Star Jam"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Aurex Jazz Festival (1982): All Star Jam",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Aurex Jazz Festival (1982): All Star Jam",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Aurex Jazz Festival (1982): All Star Jam"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "Hi‐Fi Set",
-   "album": "1&2",
-   "year": 1982,
-   "rgMbid": "aea01bcc-7ea9-476f-8653-ca02507f5c92",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EXPRESS"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "Hi‐Fi Set",
+  "album": "1&2",
+  "year": 1982,
+  "rgMbid": "aea01bcc-7ea9-476f-8653-ca02507f5c92",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EXPRESS"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Hi‐Fi Set",
+   "ハイファイセット",
+   "ハイ・ファイ・セット"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "1&2",
+   "firstReleaseDate": "1982-04-01",
+   "earliestRelease": {
+    "date": "1982-04-01",
+    "title": "1&2",
+    "country": "JP"
    },
-   "artistVariants": [
-     "Hi‐Fi Set",
-     "ハイファイセット",
-     "ハイ・ファイ・セット"
+   "titlesSeen": [
+    "1&2"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "1&2",
-     "firstReleaseDate": "1982-04-01",
-     "earliestRelease": {
-       "date": "1982-04-01",
-       "title": "1&2",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "1&2"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "John Kaizan Neptune / Takao Naoi",
-   "album": "Two in Flight",
-   "year": 1982,
-   "rgMbid": "04bd7c1b-f502-4de0-96dd-c8e40104b369",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EASTWORLD"
+  "artist": "John Kaizan Neptune / Takao Naoi",
+  "album": "Two in Flight",
+  "year": 1982,
+  "rgMbid": "04bd7c1b-f502-4de0-96dd-c8e40104b369",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EASTWORLD"
+  ],
+  "why": "artist-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c176｜直居隆雄｜In The Mood｜1977"
    ],
-   "why": "artist-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
-   },
-   "artistVariants": [
-     "John Kaizan Neptune / Takao Naoi",
-     "John Kaizan Neptune",
-     "Neptune, John Kaizan",
-     "J.K. Neptune",
-     "John David Neptune",
-     "John Neptune",
-     "John 海山 Neptune",
-     "ジョン・海山・ネプチューン",
-     "ジョン海山ネプチューン",
-     "ネプチューン海山",
-     "直居隆雄",
-     "Naoi, Takao",
-     "Takao Naoi",
-     "なおい たかお",
-     "直居 隆雄"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Two in Flight",
-     "firstReleaseDate": "1982-09-01",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Two in Flight",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Two in Flight"
-     ],
-     "note": ""
+   "matchedBy": {
+    "c176｜直居隆雄｜In The Mood｜1977": "等值"
    }
+  },
+  "artistVariants": [
+   "John Kaizan Neptune / Takao Naoi",
+   "John Kaizan Neptune",
+   "Neptune, John Kaizan",
+   "J.K. Neptune",
+   "John David Neptune",
+   "John Neptune",
+   "John 海山 Neptune",
+   "ジョン・海山・ネプチューン",
+   "ジョン海山ネプチューン",
+   "ネプチューン海山",
+   "直居隆雄",
+   "Naoi, Takao",
+   "Takao Naoi",
+   "なおい たかお",
+   "直居 隆雄"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Two in Flight",
+   "firstReleaseDate": "1982-09-01",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Two in Flight",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Two in Flight"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "山本達彦",
-   "album": "LE PLEIN SOLEIL",
-   "year": 1982,
-   "rgMbid": "b64d17b1-520d-4ed3-bb1e-053c06a34187",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EASTWORLD"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "山本達彦",
+  "album": "LE PLEIN SOLEIL",
+  "year": 1982,
+  "rgMbid": "b64d17b1-520d-4ed3-bb1e-053c06a34187",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EASTWORLD"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "山本達彦",
+   "Yamamoto, Tatsuhiko",
+   "Tatsuhiko Yamamoto"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "LE PLEIN SOLEIL",
+   "firstReleaseDate": "1982-10-21",
+   "earliestRelease": {
+    "date": "1982-10-21",
+    "title": "LE PLEIN SOLEIL",
+    "country": "JP"
    },
-   "artistVariants": [
-     "山本達彦",
-     "Yamamoto, Tatsuhiko",
-     "Tatsuhiko Yamamoto"
+   "titlesSeen": [
+    "LE PLEIN SOLEIL"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "LE PLEIN SOLEIL",
-     "firstReleaseDate": "1982-10-21",
-     "earliestRelease": {
-       "date": "1982-10-21",
-       "title": "LE PLEIN SOLEIL",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "LE PLEIN SOLEIL"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "山本達彦",
-   "album": "Tatsuhiko Live",
-   "year": 1982,
-   "rgMbid": "22e571c3-ad95-4f54-8cf3-8befc53f6bc0",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": true,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EASTWORLD"
-   ],
-   "why": "artist-search-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "山本達彦",
+  "album": "Tatsuhiko Live",
+  "year": 1982,
+  "rgMbid": "22e571c3-ad95-4f54-8cf3-8befc53f6bc0",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": true,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EASTWORLD"
+  ],
+  "why": "artist-search-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "山本達彦",
+   "Yamamoto, Tatsuhiko",
+   "Tatsuhiko Yamamoto"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "a",
+  "titleCheck": {
+   "rgTitle": "Tatsuhiko Live",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Tatsuhiko Live",
+    "country": "JP"
    },
-   "artistVariants": [
-     "山本達彦",
-     "Yamamoto, Tatsuhiko",
-     "Tatsuhiko Yamamoto"
+   "titlesSeen": [
+    "Tatsuhiko Live"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "a",
-   "titleCheck": {
-     "rgTitle": "Tatsuhiko Live",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Tatsuhiko Live",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Tatsuhiko Live"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "浅川マキ",
-   "album": "CAT NAP",
-   "year": 1982,
-   "rgMbid": "a8ea1d5c-3014-4cad-8449-9cde14a69da4",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EXPRESS"
+  "artist": "浅川マキ",
+  "album": "CAT NAP",
+  "year": 1982,
+  "rgMbid": "a8ea1d5c-3014-4cad-8449-9cde14a69da4",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EXPRESS"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970",
+    "c175｜浅川マキ｜Live｜1972",
+    "c175｜浅川マキ｜Maki VI｜1974",
+    "c176｜浅川マキ｜灯ともし頃｜1976",
+    "c176｜浅川マキ｜流れを渡る｜1977"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "藝人池中有1張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜浅川マキ｜浅川マキの世界｜1970"
-     ]
-   },
-   "artistVariants": [
-     "浅川マキ",
-     "Asakawa, Maki",
-     "Asakawa Maki",
-     "Maki Asakawa"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "CAT NAP",
-     "firstReleaseDate": "1982-10-21",
-     "earliestRelease": {
-       "date": "1982-10-21",
-       "title": "CAT NAP",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "CAT NAP"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜浅川マキ｜浅川マキの世界｜1970": "等值",
+    "c175｜浅川マキ｜Live｜1972": "等值",
+    "c175｜浅川マキ｜Maki VI｜1974": "等值",
+    "c176｜浅川マキ｜灯ともし頃｜1976": "等值",
+    "c176｜浅川マキ｜流れを渡る｜1977": "等值"
    }
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Asakawa Maki",
+   "Maki Asakawa"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "CAT NAP",
+   "firstReleaseDate": "1982-10-21",
+   "earliestRelease": {
+    "date": "1982-10-21",
+    "title": "CAT NAP",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "CAT NAP"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "浅川マキ",
-   "album": "My Man",
-   "year": 1982,
-   "rgMbid": "9b7eb62e-ce64-4f25-b1b8-0b15f20cc0cb",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EXPRESS"
+  "artist": "浅川マキ",
+  "album": "My Man",
+  "year": 1982,
+  "rgMbid": "9b7eb62e-ce64-4f25-b1b8-0b15f20cc0cb",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EXPRESS"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "藝人池中有1張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜浅川マキ｜浅川マキの世界｜1970",
+    "c175｜浅川マキ｜Live｜1972",
+    "c175｜浅川マキ｜Maki VI｜1974",
+    "c176｜浅川マキ｜灯ともし頃｜1976",
+    "c176｜浅川マキ｜流れを渡る｜1977"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "藝人池中有1張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜浅川マキ｜浅川マキの世界｜1970"
-     ]
-   },
-   "artistVariants": [
-     "浅川マキ",
-     "Asakawa, Maki",
-     "Asakawa Maki",
-     "Maki Asakawa"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "My Man",
-     "firstReleaseDate": "1982-02-21",
-     "earliestRelease": {
-       "date": "1982-02-21",
-       "title": "My Man",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "My Man"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜浅川マキ｜浅川マキの世界｜1970": "等值",
+    "c175｜浅川マキ｜Live｜1972": "等值",
+    "c175｜浅川マキ｜Maki VI｜1974": "等值",
+    "c176｜浅川マキ｜灯ともし頃｜1976": "等值",
+    "c176｜浅川マキ｜流れを渡る｜1977": "等值"
    }
+  },
+  "artistVariants": [
+   "浅川マキ",
+   "Asakawa, Maki",
+   "Asakawa Maki",
+   "Maki Asakawa"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "My Man",
+   "firstReleaseDate": "1982-02-21",
+   "earliestRelease": {
+    "date": "1982-02-21",
+    "title": "My Man",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "My Man"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "本多俊之",
-   "album": "Shangri-La",
-   "year": 1982,
-   "rgMbid": "18eec5a0-0ec4-40a8-96a0-4abd5a67b6b2",
-   "country": "US",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EASTWORLD"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "本多俊之",
+  "album": "Shangri-La",
+  "year": 1982,
+  "rgMbid": "18eec5a0-0ec4-40a8-96a0-4abd5a67b6b2",
+  "country": "US",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EASTWORLD"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "本多俊之",
+   "Honda, Toshiyuki",
+   "Toshiyuka Honda"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Shangri-La",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Shangri-La",
+    "country": "US"
    },
-   "artistVariants": [
-     "本多俊之",
-     "Honda, Toshiyuki",
-     "Toshiyuka Honda"
+   "titlesSeen": [
+    "Shangri-La"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Shangri-La",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Shangri-La",
-       "country": "US"
-     },
-     "titlesSeen": [
-       "Shangri-La"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "麻生小百合",
-   "album": "CANDY JAZZ",
-   "year": 1982,
-   "rgMbid": "89a2f3c6-a855-4b32-a93d-7a06427f4aca",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "東芝",
-   "entities": [
-     "EASTWORLD"
-   ],
-   "why": "artist-search-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "麻生小百合",
+  "album": "CANDY JAZZ",
+  "year": 1982,
+  "rgMbid": "89a2f3c6-a855-4b32-a93d-7a06427f4aca",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "東芝",
+  "entities": [
+   "EASTWORLD"
+  ],
+  "why": "artist-search-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "麻生小百合",
+   "Asō, Sayuri",
+   "大庭淑子"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "CANDY JAZZ",
+   "firstReleaseDate": "1982-09-21",
+   "earliestRelease": {
+    "date": "1982-09-21",
+    "title": "CANDY JAZZ",
+    "country": "JP"
    },
-   "artistVariants": [
-     "麻生小百合",
-     "Asō, Sayuri",
-     "大庭淑子"
+   "titlesSeen": [
+    "CANDY JAZZ"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "CANDY JAZZ",
-     "firstReleaseDate": "1982-09-21",
-     "earliestRelease": {
-       "date": "1982-09-21",
-       "title": "CANDY JAZZ",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "CANDY JAZZ"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "Eri Ohno",
-   "album": "Eri, My Dear",
-   "year": 1982,
-   "rgMbid": "dfd776eb-6e87-326a-81be-de1f6fe9c332",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "コロムビア",
-   "entities": [
-     "BETTER DAYS"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "Eri Ohno",
+  "album": "Eri, My Dear",
+  "year": 1982,
+  "rgMbid": "dfd776eb-6e87-326a-81be-de1f6fe9c332",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "コロムビア",
+  "entities": [
+   "BETTER DAYS"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Eri Ohno",
+   "大野えり",
+   "Ohno, Eri",
+   "OONO Eri",
+   "おおの えり",
+   "大野 えり"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Eri, My Dear",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Eri My Dear",
+    "country": "JP"
    },
-   "artistVariants": [
-     "Eri Ohno",
-     "大野えり",
-     "Ohno, Eri",
-     "OONO Eri",
-     "おおの えり",
-     "大野 えり"
+   "titlesSeen": [
+    "Eri My Dear",
+    "Eri, My Dear"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Eri, My Dear",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Eri My Dear",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Eri My Dear",
-       "Eri, My Dear"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "Kazumi Band",
-   "album": "Ganaesia",
-   "year": 1982,
-   "rgMbid": "c98d946d-109b-462d-a1f1-913d68b49525",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "コロムビア",
-   "entities": [
-     "Domo(Kazumi Watanabe)"
+  "artist": "Kazumi Band",
+  "album": "Ganaesia",
+  "year": 1982,
+  "rgMbid": "c98d946d-109b-462d-a1f1-913d68b49525",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "コロムビア",
+  "entities": [
+   "Domo(Kazumi Watanabe)"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "藝人池中有5張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜渡辺香津美｜To Chi Ka｜1980",
+    "seed｜渡辺香津美｜KYLYN｜1979",
+    "seed｜渡辺香津美｜Olive's Step｜1977",
+    "seed｜渡辺香津美｜Dogatana｜1981",
+    "seed｜渡辺香津美｜Village In Bubbles｜1978",
+    "c174｜渡辺香津美｜Infinite｜1971",
+    "c175｜渡辺香津美｜Endless Way｜1975"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "藝人池中有5張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜渡辺香津美｜To Chi Ka｜1980",
-       "seed｜渡辺香津美｜KYLYN｜1979",
-       "seed｜渡辺香津美｜Olive's Step｜1977",
-       "seed｜渡辺香津美｜Dogatana｜1981",
-       "seed｜渡辺香津美｜Village In Bubbles｜1978"
-     ]
-   },
-   "artistVariants": [
-     "Kazumi Band",
-     "渡辺香津美",
-     "Watanabe, Kazumi",
-     "Kazumi Watanabe",
-     "わたなべ かづみ",
-     "渡辺 香津美"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Ganaesia",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Ganaesia",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Ganaesia"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜渡辺香津美｜To Chi Ka｜1980": "等值",
+    "seed｜渡辺香津美｜KYLYN｜1979": "等值",
+    "seed｜渡辺香津美｜Olive's Step｜1977": "等值",
+    "seed｜渡辺香津美｜Dogatana｜1981": "等值",
+    "seed｜渡辺香津美｜Village In Bubbles｜1978": "等值",
+    "c174｜渡辺香津美｜Infinite｜1971": "等值",
+    "c175｜渡辺香津美｜Endless Way｜1975": "等值"
    }
+  },
+  "artistVariants": [
+   "Kazumi Band",
+   "渡辺香津美",
+   "Watanabe, Kazumi",
+   "Kazumi Watanabe",
+   "わたなべ かづみ",
+   "渡辺 香津美"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Ganaesia",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Ganaesia",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Ganaesia"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "向井滋春オリッサ",
-   "album": "Orissa",
-   "year": 1982,
-   "rgMbid": "5d4763d0-ad6f-422c-b8cf-910774ddc80c",
-   "country": "",
-   "format": "",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "コロムビア",
-   "entities": [
-     "BETTER DAYS"
-   ],
-   "why": "artist-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "向井滋春オリッサ",
+  "album": "Orissa",
+  "year": 1982,
+  "rgMbid": "5d4763d0-ad6f-422c-b8cf-910774ddc80c",
+  "country": "",
+  "format": "",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "コロムビア",
+  "entities": [
+   "BETTER DAYS"
+  ],
+  "why": "artist-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "向井滋春オリッサ",
+   "Mukai, Shigeharu, Orissa",
+   "Shigeharu Mukai Orissa"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Orissa",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Orissa",
+    "country": ""
    },
-   "artistVariants": [
-     "向井滋春オリッサ",
-     "Mukai, Shigeharu, Orissa",
-     "Shigeharu Mukai Orissa"
+   "titlesSeen": [
+    "Orissa",
+    "ORISSA"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Orissa",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Orissa",
-       "country": ""
-     },
-     "titlesSeen": [
-       "Orissa",
-       "ORISSA"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "坂本龍一＆渡辺香津美",
-   "album": "TOKYO JOE",
-   "year": 1982,
-   "rgMbid": "2db00398-3a0d-4475-8214-2c9147b6a67f",
-   "country": "JP/XW",
-   "format": "Digital Media/Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "コロムビア",
-   "entities": [
-     "BETTER DAYS"
+  "artist": "坂本龍一＆渡辺香津美",
+  "album": "TOKYO JOE",
+  "year": 1982,
+  "rgMbid": "2db00398-3a0d-4475-8214-2c9147b6a67f",
+  "country": "JP/XW",
+  "format": "Digital Media/Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "コロムビア",
+  "entities": [
+   "BETTER DAYS"
+  ],
+  "why": "pool-jazz-artist",
+  "nReleases": null,
+  "note": "藝人池中有21張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜坂本龍一｜async｜2017",
+    "seed｜坂本龍一｜1996｜1996",
+    "seed｜坂本龍一｜Thousand Knives｜1978",
+    "seed｜坂本龍一｜B-2 Unit｜1980",
+    "seed｜渡辺香津美｜To Chi Ka｜1980",
+    "seed｜渡辺香津美｜KYLYN｜1979",
+    "seed｜渡辺香津美｜Olive's Step｜1977",
+    "seed｜渡辺香津美｜Dogatana｜1981",
+    "seed｜渡辺香津美｜Village In Bubbles｜1978",
+    "seed｜Ryuichi Sakamoto 坂本龍一｜BTTB｜1999",
+    "seed｜Ryuichi Sakamoto 坂本龍一｜12｜2023",
+    "seed｜坂本龍一｜左うでの夢｜1981",
+    "seed｜坂本龍一｜音楽図鑑｜1984",
+    "seed｜坂本龍一｜未来派野郎｜1986",
+    "seed｜坂本龍一｜戦場のメリークリスマス｜1983",
+    "c174｜渡辺香津美｜Infinite｜1971",
+    "c175｜渡辺香津美｜Endless Way｜1975"
    ],
-   "why": "pool-jazz-artist",
-   "nReleases": null,
-   "note": "藝人池中有21張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜坂本龍一｜async｜2017",
-       "seed｜坂本龍一｜1996｜1996",
-       "seed｜坂本龍一｜Thousand Knives｜1978",
-       "seed｜坂本龍一｜B-2 Unit｜1980",
-       "seed｜坂本龍一｜左うでの夢｜1981",
-       "seed｜坂本龍一｜音楽図鑑｜1984",
-       "seed｜坂本龍一｜未来派野郎｜1986",
-       "seed｜坂本龍一｜戦場のメリークリスマス｜1983",
-       "seed｜渡辺香津美｜To Chi Ka｜1980",
-       "seed｜渡辺香津美｜KYLYN｜1979",
-       "seed｜渡辺香津美｜Olive's Step｜1977",
-       "seed｜渡辺香津美｜Dogatana｜1981",
-       "seed｜渡辺香津美｜Village In Bubbles｜1978"
-     ]
-   },
-   "artistVariants": [
-     "坂本龍一＆渡辺香津美",
-     "坂本龍一",
-     "Sakamoto, Ryūichi",
-     "R.S.",
-     "Riuichi Sakamoto",
-     "Ryuchi Sakamoto",
-     "Ryuichi Sakamamoto",
-     "Ryûichi Sakamoto",
-     "Ryūichi Sakamoto",
-     "Sakamoto Ryuuichi",
-     "Sakamoto Ryūichi",
-     "坂本 龍一",
-     "坂本龙一",
-     "사카모토 류이치",
-     "渡辺香津美",
-     "Watanabe, Kazumi",
-     "Kazumi Watanabe",
-     "わたなべ かづみ",
-     "渡辺 香津美"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "TOKYO JOE",
-     "firstReleaseDate": "1982-11-21",
-     "earliestRelease": {
-       "date": "1982-11-21",
-       "title": "TOKYO JOE",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "TOKYO JOE",
-       "Tokyo Joe",
-       "東京ジョー"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜坂本龍一｜async｜2017": "等值",
+    "seed｜坂本龍一｜1996｜1996": "等值",
+    "seed｜坂本龍一｜Thousand Knives｜1978": "等值",
+    "seed｜坂本龍一｜B-2 Unit｜1980": "等值",
+    "seed｜渡辺香津美｜To Chi Ka｜1980": "等值",
+    "seed｜渡辺香津美｜KYLYN｜1979": "等值",
+    "seed｜渡辺香津美｜Olive's Step｜1977": "等值",
+    "seed｜渡辺香津美｜Dogatana｜1981": "等值",
+    "seed｜渡辺香津美｜Village In Bubbles｜1978": "等值",
+    "seed｜Ryuichi Sakamoto 坂本龍一｜BTTB｜1999": "聯名內含",
+    "seed｜Ryuichi Sakamoto 坂本龍一｜12｜2023": "聯名內含",
+    "seed｜坂本龍一｜左うでの夢｜1981": "等值",
+    "seed｜坂本龍一｜音楽図鑑｜1984": "等值",
+    "seed｜坂本龍一｜未来派野郎｜1986": "等值",
+    "seed｜坂本龍一｜戦場のメリークリスマス｜1983": "等值",
+    "c174｜渡辺香津美｜Infinite｜1971": "等值",
+    "c175｜渡辺香津美｜Endless Way｜1975": "等值"
    }
+  },
+  "artistVariants": [
+   "坂本龍一＆渡辺香津美",
+   "坂本龍一",
+   "Sakamoto, Ryūichi",
+   "R.S.",
+   "Riuichi Sakamoto",
+   "Ryuchi Sakamoto",
+   "Ryuichi Sakamamoto",
+   "Ryûichi Sakamoto",
+   "Ryūichi Sakamoto",
+   "Sakamoto Ryuuichi",
+   "Sakamoto Ryūichi",
+   "坂本 龍一",
+   "坂本龙一",
+   "사카모토 류이치",
+   "渡辺香津美",
+   "Watanabe, Kazumi",
+   "Kazumi Watanabe",
+   "わたなべ かづみ",
+   "渡辺 香津美"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "TOKYO JOE",
+   "firstReleaseDate": "1982-11-21",
+   "earliestRelease": {
+    "date": "1982-11-21",
+    "title": "TOKYO JOE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "TOKYO JOE",
+    "Tokyo Joe",
+    "東京ジョー"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "前野曜子",
-   "album": "TWILIGHT",
-   "year": 1982,
-   "rgMbid": "5a1cc97b-0877-4ac2-a1f1-ab0bd42ff2c4",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "コロムビア",
-   "entities": [
-     "Columbia(JP)"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "前野曜子",
+  "album": "TWILIGHT",
+  "year": 1982,
+  "rgMbid": "5a1cc97b-0877-4ac2-a1f1-ab0bd42ff2c4",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "コロムビア",
+  "entities": [
+   "Columbia(JP)"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "前野曜子",
+   "Maeno, Youko",
+   "Yohko Maeno",
+   "Youko Maeno",
+   "Yōko Maeno",
+   "前野 曜子"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "TWILIGHT",
+   "firstReleaseDate": "1982-08",
+   "earliestRelease": {
+    "date": "1982-08",
+    "title": "TWILIGHT",
+    "country": "JP"
    },
-   "artistVariants": [
-     "前野曜子",
-     "Maeno, Youko",
-     "Yohko Maeno",
-     "Youko Maeno",
-     "Yōko Maeno",
-     "前野 曜子"
+   "titlesSeen": [
+    "TWILIGHT"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "TWILIGHT",
-     "firstReleaseDate": "1982-08",
-     "earliestRelease": {
-       "date": "1982-08",
-       "title": "TWILIGHT",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "TWILIGHT"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "99.99",
-   "album": "99.99",
-   "year": 1982,
-   "rgMbid": "2330f185-1320-4c57-ae9c-7ac17771df6a",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "ELECTRIC BIRD"
-   ],
-   "why": "imprint",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——MB 這個實體沒掛漢字名也沒掛成員關係，**務必人工掃池**（第 1868-B 條）",
-     "artistAlbumsInPool": []
+  "artist": "99.99",
+  "album": "99.99",
+  "year": 1982,
+  "rgMbid": "2330f185-1320-4c57-ae9c-7ac17771df6a",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "ELECTRIC BIRD"
+  ],
+  "why": "imprint",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "99.99"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "99.99",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "99.99",
+    "country": "JP"
    },
-   "artistVariants": [
-     "99.99"
+   "titlesSeen": [
+    "99.99"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "99.99",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "99.99",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "99.99"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "Junichi Kanezaki",
-   "album": "Natural-E",
-   "year": 1982,
-   "rgMbid": "8260b503-063b-47e4-9516-4e3b70905ae3",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "ELECTRIC BIRD"
-   ],
-   "why": "imprint",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "Junichi Kanezaki",
+  "album": "Natural-E",
+  "year": 1982,
+  "rgMbid": "8260b503-063b-47e4-9516-4e3b70905ae3",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "ELECTRIC BIRD"
+  ],
+  "why": "imprint",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Junichi Kanezaki",
+   "兼崎順一",
+   "Kanezaki, Jun-ichi",
+   "KANEZAKI Jun’ichi",
+   "Kanesaki, Junichi",
+   "Kanezaki, Junichi",
+   "Mr \"Donpei\" Kanezaki",
+   "かねざき じゅんいち",
+   "兼崎 順一"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Natural-E",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Natural-E",
+    "country": "JP"
    },
-   "artistVariants": [
-     "Junichi Kanezaki",
-     "兼崎順一",
-     "Kanezaki, Jun-ichi",
-     "KANEZAKI Jun’ichi",
-     "Kanesaki, Junichi",
-     "Kanezaki, Junichi",
-     "Mr \"Donpei\" Kanezaki",
-     "かねざき じゅんいち",
-     "兼崎 順一"
+   "titlesSeen": [
+    "Natural-E"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Natural-E",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Natural-E",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Natural-E"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "小田陽子",
-   "album": "NEW YORK 1961",
-   "year": 1982,
-   "rgMbid": "1d17ffea-0eb6-4d36-86ad-03fbe7d5e940",
-   "country": "JP",
-   "format": "CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "KING"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "小田陽子",
+  "album": "NEW YORK 1961",
+  "year": 1982,
+  "rgMbid": "1d17ffea-0eb6-4d36-86ad-03fbe7d5e940",
+  "country": "JP",
+  "format": "CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "KING"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "小田陽子",
+   "Oda, Yōko",
+   "Yōko Oda",
+   "小田 陽子"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "NEW YORK 1961",
+   "firstReleaseDate": "1982-07",
+   "earliestRelease": {
+    "date": "1982-07",
+    "title": "NEW YORK 1961",
+    "country": "JP"
    },
-   "artistVariants": [
-     "小田陽子",
-     "Oda, Yōko",
-     "Yōko Oda",
-     "小田 陽子"
+   "titlesSeen": [
+    "NEW YORK 1961"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "NEW YORK 1961",
-     "firstReleaseDate": "1982-07",
-     "earliestRelease": {
-       "date": "1982-07",
-       "title": "NEW YORK 1961",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "NEW YORK 1961"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "増尾元章",
-   "album": "Natural Mind",
-   "year": 1982,
-   "rgMbid": "784cde6f-7b78-4ede-a679-40d11f834db4",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "KING"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "増尾元章",
+  "album": "Natural Mind",
+  "year": 1982,
+  "rgMbid": "784cde6f-7b78-4ede-a679-40d11f834db4",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "KING"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "増尾元章",
+   "Masuo, Motoaki"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Natural Mind",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Natural Mind",
+    "country": "JP"
    },
-   "artistVariants": [
-     "増尾元章",
-     "Masuo, Motoaki"
+   "titlesSeen": [
+    "Natural Mind"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Natural Mind",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "Natural Mind",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Natural Mind"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "富樫雅彦",
-   "album": "スピリチュアル・モーメンツ",
-   "year": 1982,
-   "rgMbid": "1a821970-7faf-46f1-8cb6-f914d79fd62c",
-   "country": "JP",
-   "format": "12\" Vinyl/CD/SHM-CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "富樫雅彦|スピリチュアル・ネイチャー",
-   "house": "King",
-   "entities": [
-     "Paddle Wheel",
-     "KING"
+  "artist": "富樫雅彦",
+  "album": "スピリチュアル・モーメンツ",
+  "year": 1982,
+  "rgMbid": "1a821970-7faf-46f1-8cb6-f914d79fd62c",
+  "country": "JP",
+  "format": "12\" Vinyl/CD/SHM-CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "富樫雅彦|スピリチュアル・ネイチャー",
+  "house": "King",
+  "entities": [
+   "Paddle Wheel",
+   "KING"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "疑似池中(盤名相似度0.67)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971",
+    "c176｜富樫雅彦｜風の遺した物語｜1975",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "疑似池中(盤名相似度0.67)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜富樫雅彦｜Eternal Duo｜1983",
-       "seed｜富樫雅彦｜Speed and Space｜1969",
-       "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
-       "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
-       "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
-       "seed｜富樫雅彦｜リングス｜1976",
-       "seed｜富樫雅彦｜双晶｜1973",
-       "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
-       "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
-       "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
-       "c121｜富樫雅彦｜リングス｜1976",
-       "c121｜富樫雅彦｜双晶｜1973"
-     ]
-   },
-   "artistVariants": [
-     "富樫雅彦",
-     "Togashi, Masahiko",
-     "Masahiko Togashi"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "スピリチュアル・モーメンツ",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "スピリチュアル・モーメンツ",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "スピリチュアル・モーメンツ"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜富樫雅彦｜Eternal Duo｜1983": "等值",
+    "seed｜富樫雅彦｜Speed and Space｜1969": "等值",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "seed｜富樫雅彦｜リングス｜1976": "等值",
+    "seed｜富樫雅彦｜双晶｜1973": "等值",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "c121｜富樫雅彦｜リングス｜1976": "等值",
+    "c121｜富樫雅彦｜双晶｜1973": "等值",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969": "等值",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969": "聯名內含",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971": "聯名內含",
+    "c176｜富樫雅彦｜風の遺した物語｜1975": "等值",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977": "前綴"
    }
+  },
+  "artistVariants": [
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "スピリチュアル・モーメンツ",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "スピリチュアル・モーメンツ",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "スピリチュアル・モーメンツ"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "富樫雅彦",
-   "album": "フレイム アップ",
-   "year": 1982,
-   "rgMbid": "3c4e85bc-5d04-458a-a1e1-ce1dce81dc56",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "King",
-   "entities": [
-     "KING"
+  "artist": "富樫雅彦",
+  "album": "フレイム アップ",
+  "year": 1982,
+  "rgMbid": "3c4e85bc-5d04-458a-a1e1-ce1dce81dc56",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "King",
+  "entities": [
+   "KING"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "藝人池中有13張(盤名未比中)",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971",
+    "c176｜富樫雅彦｜風の遺した物語｜1975",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "藝人池中有13張(盤名未比中)",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜富樫雅彦｜Eternal Duo｜1983",
-       "seed｜富樫雅彦｜Speed and Space｜1969",
-       "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
-       "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
-       "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
-       "seed｜富樫雅彦｜リングス｜1976",
-       "seed｜富樫雅彦｜双晶｜1973",
-       "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
-       "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
-       "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
-       "c121｜富樫雅彦｜リングス｜1976",
-       "c121｜富樫雅彦｜双晶｜1973"
-     ]
-   },
-   "artistVariants": [
-     "富樫雅彦",
-     "Togashi, Masahiko",
-     "Masahiko Togashi"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "フレイム アップ",
-     "firstReleaseDate": "1982",
-     "earliestRelease": {
-       "date": "1982",
-       "title": "フレイム アップ",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "フレイム アップ",
-       "Flame Up"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜富樫雅彦｜Eternal Duo｜1983": "等值",
+    "seed｜富樫雅彦｜Speed and Space｜1969": "等值",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "seed｜富樫雅彦｜リングス｜1976": "等值",
+    "seed｜富樫雅彦｜双晶｜1973": "等值",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "c121｜富樫雅彦｜リングス｜1976": "等值",
+    "c121｜富樫雅彦｜双晶｜1973": "等值",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969": "等值",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969": "聯名內含",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971": "聯名內含",
+    "c176｜富樫雅彦｜風の遺した物語｜1975": "等值",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977": "前綴"
    }
+  },
+  "artistVariants": [
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "フレイム アップ",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "フレイム アップ",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "フレイム アップ",
+    "Flame Up"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "Hirokuni Korekata",
-   "album": "Kobe Korekata",
-   "year": 1983,
-   "rgMbid": "ce3d8951-5833-4611-9784-2c134fb9115e",
-   "country": "JP",
-   "format": "12\" Vinyl",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "Victor",
-   "entities": [
-     "INVITATION"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "Hirokuni Korekata",
+  "album": "Kobe Korekata",
+  "year": 1983,
+  "rgMbid": "ce3d8951-5833-4611-9784-2c134fb9115e",
+  "country": "JP",
+  "format": "12\" Vinyl",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "INVITATION"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "Hirokuni Korekata",
+   "是方博邦",
+   "Korekata, Hirokuni",
+   "Korekata Hirokuni",
+   "是方 博邦"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Kobe Korekata",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "Kobe Korekata",
+    "country": "JP"
    },
-   "artistVariants": [
-     "Hirokuni Korekata",
-     "是方博邦",
-     "Korekata, Hirokuni",
-     "Korekata Hirokuni",
-     "是方 博邦"
+   "titlesSeen": [
+    "Kobe Korekata"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Kobe Korekata",
-     "firstReleaseDate": "1983",
-     "earliestRelease": {
-       "date": "1983",
-       "title": "Kobe Korekata",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Kobe Korekata"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  },
  {
-   "artist": "MALTA",
-   "album": "Malta",
-   "year": 1983,
-   "rgMbid": "db40136a-83aa-4c99-b582-d1db637894e5",
-   "country": "JP",
-   "format": "12\" Vinyl/CD",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "Victor",
-   "entities": [
-     "JVC"
+  "artist": "MALTA",
+  "album": "Malta",
+  "year": 1983,
+  "rgMbid": "db40136a-83aa-4c99-b582-d1db637894e5",
+  "country": "JP",
+  "format": "12\" Vinyl/CD",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "JVC"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Phil Woods｜Chasin' The Bird｜1998",
+    "seed｜Phil Woods｜Musique du Bois｜1974",
+    "c155｜Phil Woods｜The Rev and I｜1998"
    ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "同藝人在池中，盤名不同——**逐張人工比**",
-     "artistAlbumsInPool": [
-       "seed｜Phil Woods｜Chasin' The Bird｜1998",
-       "seed｜Phil Woods｜Musique du Bois｜1974",
-       "c155｜Phil Woods｜The Rev and I｜1998"
-     ]
-   },
-   "artistVariants": [
-     "MALTA",
-     "丸田良昭",
-     "Maruta, Yoshiaki",
-     "Charlie Mariano",
-     "Mariano, Charlie",
-     "Phil Woods",
-     "Woods, Phil"
-   ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Malta",
-     "firstReleaseDate": "1983",
-     "earliestRelease": {
-       "date": "1983",
-       "title": "Malta",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Malta"
-     ],
-     "note": ""
+   "matchedBy": {
+    "seed｜Phil Woods｜Chasin' The Bird｜1998": "等值",
+    "seed｜Phil Woods｜Musique du Bois｜1974": "等值",
+    "c155｜Phil Woods｜The Rev and I｜1998": "等值"
    }
+  },
+  "artistVariants": [
+   "MALTA",
+   "丸田良昭",
+   "Maruta, Yoshiaki",
+   "Charlie Mariano",
+   "Mariano, Charlie",
+   "Phil Woods",
+   "Woods, Phil"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Malta",
+   "firstReleaseDate": "1983",
+   "earliestRelease": {
+    "date": "1983",
+    "title": "Malta",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Malta"
+   ],
+   "note": ""
+  }
  },
  {
-   "artist": "阿川泰子",
-   "album": "Night Line",
-   "year": 1983,
-   "rgMbid": "6be29ff6-ce03-4985-ba4f-12edded50c03",
-   "country": "JP/XW",
-   "format": "12\" Vinyl/CD/Digital Media",
-   "live": false,
-   "inPool": false,
-   "poolString": "",
-   "house": "Victor",
-   "entities": [
-     "INVITATION",
-     "Victor(JP imprint)"
-   ],
-   "why": "rg-tag",
-   "nReleases": null,
-   "note": "",
-   "poolRecheck": {
-     "status": "池中查無此藝人（由 rgMbid 反查藝人 MBID、取其全部 alias 掃過）",
-     "artistAlbumsInPool": []
+  "artist": "阿川泰子",
+  "album": "Night Line",
+  "year": 1983,
+  "rgMbid": "6be29ff6-ce03-4985-ba4f-12edded50c03",
+  "country": "JP/XW",
+  "format": "12\" Vinyl/CD/Digital Media",
+  "live": false,
+  "inPool": false,
+  "poolString": "",
+  "house": "Victor",
+  "entities": [
+   "INVITATION",
+   "Victor(JP imprint)"
+  ],
+  "why": "rg-tag",
+  "nReleases": null,
+  "note": "",
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）",
+   "artistAlbumsInPool": []
+  },
+  "artistVariants": [
+   "阿川泰子",
+   "Agawa, Yasuko",
+   "MISS A",
+   "Yasuko Lovebird",
+   "Yasuko, Love‐Bird",
+   "佐藤康子",
+   "麻理ともえ",
+   "麻里 とも恵"
+  ],
+  "period": "jp-1",
+  "genre": "jazz",
+  "g": "b",
+  "titleCheck": {
+   "rgTitle": "Night Line",
+   "firstReleaseDate": "1983-09-21",
+   "earliestRelease": {
+    "date": "1983-09-21",
+    "title": "Night Line",
+    "country": "JP"
    },
-   "artistVariants": [
-     "阿川泰子",
-     "Agawa, Yasuko",
-     "MISS A",
-     "Yasuko Lovebird",
-     "Yasuko, Love‐Bird",
-     "佐藤康子",
-     "麻理ともえ",
-     "麻里 とも恵"
+   "titlesSeen": [
+    "Night Line"
    ],
-   "period": "jp-1",
-   "genre": "jazz",
-   "g": "b",
-   "titleCheck": {
-     "rgTitle": "Night Line",
-     "firstReleaseDate": "1983-09-21",
-     "earliestRelease": {
-       "date": "1983-09-21",
-       "title": "Night Line",
-       "country": "JP"
-     },
-     "titlesSeen": [
-       "Night Line"
-     ],
-     "note": ""
-   }
+   "note": ""
+  }
  }
 ]
