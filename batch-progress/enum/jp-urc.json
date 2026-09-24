@@ -1,0 +1,78 @@
+{
+ "label": "jp-urc",
+ "entities": [
+  {
+   "id": "0b2969d0-6e6c-4d33-ab75-e458d0423438",
+   "name": "URC",
+   "type": "Original Production",
+   "releases": 100
+  }
+ ],
+ "rows": [
+  {
+   "artist": "三上寛",
+   "album": "BANG!",
+   "year": 1974,
+   "rgMbid": "b2e543f6-e8eb-3316-82c8-e557d8cf9966",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "labelYear": 1974,
+   "entity": "URC",
+   "domestic": true,
+   "why": "rg-tag",
+   "inPool": false,
+   "poolString": ""
+  },
+  {
+   "artist": "柳田ヒロ",
+   "album": "HIRO",
+   "year": 1972,
+   "rgMbid": "56f36ed6-ca88-4969-bdd9-b6584cbe834e",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "labelYear": 1972,
+   "entity": "URC",
+   "domestic": true,
+   "why": "rg-tag",
+   "inPool": false,
+   "poolString": ""
+  }
+ ],
+ "pendingGenre": [
+  {
+   "artist": "五つの赤い風船",
+   "album": "イン・コンサート",
+   "year": 1970,
+   "rgMbid": "17561013-4510-44aa-9f8d-eb6b77d5cc8c",
+   "country": "JP",
+   "format": "CD",
+   "live": false,
+   "labelYear": 1970,
+   "entity": "URC",
+   "domestic": true,
+   "why": "",
+   "inPool": false,
+   "poolString": ""
+  },
+  {
+   "artist": "よしだたかし",
+   "album": "大きな樹の下で",
+   "year": 1977,
+   "rgMbid": "bd6627d7-c125-42e7-9de8-a4baa1dda4f9",
+   "country": "JP",
+   "format": "12\" Vinyl",
+   "live": false,
+   "labelYear": 1977,
+   "entity": "URC",
+   "domestic": true,
+   "why": "",
+   "inPool": false,
+   "poolString": ""
+  }
+ ],
+ "nonJazzAlbumsExcluded": 51,
+ "builtAt": "2026-09-24",
+ "method": "見 batch-progress/enum-label.mjs 檔頭"
+}

@@ -1,0 +1,22 @@
+{
+ "label": "jp-kenwood",
+ "entities": [
+  {
+   "id": "08f10241-8b52-4215-89d6-9609e02f1546",
+   "name": "KENWOOD",
+   "type": "Imprint",
+   "releases": 6
+  },
+  {
+   "id": "51ecc78e-aa2e-4ff3-82e0-4a3da4d2db8d",
+   "name": "株式会社ケンウッド",
+   "type": "Holding",
+   "releases": 1
+  }
+ ],
+ "rows": [],
+ "pendingGenre": [],
+ "nonJazzAlbumsExcluded": 3,
+ "builtAt": "2026-09-24",
+ "method": "見 batch-progress/enum-label.mjs 檔頭"
+}

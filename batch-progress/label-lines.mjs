@@ -170,6 +170,24 @@ export const LINES = {
   c180: { lineType: '深掘', scene: '日本爵士四大廠 1982–1984' },
   c181: { lineType: '深掘', scene: '日本爵士四大廠 1984–1987' },
   c182: { lineType: '深掘', scene: '日本爵士四大廠 1987–1989' },
+  // jp-2 線（2026-09-24 起）：四大廠之外的日本爵士廠牌十五家
+  // CBS/Sony・Polydor JP・Alfa・East Wind・Trio／Whynot・Denon・Nippon Crown・Kitty・Union・Frasco
+  // ＋ DOMO・ALM・discomate・URC・KENWOOD（後五家 2026-09-24 才列舉）
+  c183: { lineType: '深掘', scene: '日本爵士獨立廠牌 1966–1972' },
+  c184: { lineType: '深掘', scene: '日本爵士獨立廠牌 1972–1974' },
+  c185: { lineType: '深掘', scene: '日本爵士獨立廠牌 1974–1976' },
+  c186: { lineType: '深掘', scene: '日本爵士獨立廠牌 1976–1977' },
+  c187: { lineType: '深掘', scene: '日本爵士獨立廠牌 1977–1977' },
+  c188: { lineType: '深掘', scene: '日本爵士獨立廠牌 1977–1978' },
+  c189: { lineType: '深掘', scene: '日本爵士獨立廠牌 1978–1979' },
+  c190: { lineType: '深掘', scene: '日本爵士獨立廠牌 1979–1981' },
+  c191: { lineType: '深掘', scene: '日本爵士獨立廠牌 1981–1982' },
+  c192: { lineType: '深掘', scene: '日本爵士獨立廠牌 1982–1983' },
+  c193: { lineType: '深掘', scene: '日本爵士獨立廠牌 1983–1984' },
+  c194: { lineType: '深掘', scene: '日本爵士獨立廠牌 1984–1985' },
+  c195: { lineType: '深掘', scene: '日本爵士獨立廠牌 1985–1987' },
+  c196: { lineType: '深掘', scene: '日本爵士獨立廠牌 1987–1988' },
+  c197: { lineType: '深掘', scene: '日本爵士獨立廠牌 1988–1989' },
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。
