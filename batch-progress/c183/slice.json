@@ -18,7 +18,37 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "朝丘雪路",
+   "Asaoka, Yukiji",
+   "Yukie Katsuta",
+   "Yukiji Asaoka",
+   "あさおか ゆきじ",
+   "かつた ゆきえ",
+   "勝田 雪会",
+   "勝田雪会",
+   "朝丘 雪路",
+   "浅丘 雪路",
+   "浅丘雪路"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "ふり向いてもくれない",
+   "firstReleaseDate": "1966",
+   "earliestRelease": {
+    "date": "1966",
+    "title": "ふり向いてもくれない",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ふり向いてもくれない"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Sadao Watanabe, Sadao Watanabe Quintet",
@@ -39,7 +69,89 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Sadao Watanabe, Sadao Watanabe Quintet",
+   "渡辺貞夫",
+   "Watanabe, Sadao",
+   "Sadao Watanabe",
+   "わたなべ さだお",
+   "渡辺 貞夫",
+   "Sadao Watanabe Quintet",
+   "Watanabe, Sadao, Quintet"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜渡辺貞夫｜Pamoja｜1976",
+    "seed｜渡辺貞夫｜California Shower｜1978",
+    "seed｜渡辺貞夫｜Orange Express｜1981",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "seed｜渡辺貞夫｜Pastoral｜1969",
+    "seed｜渡辺貞夫｜Paysages｜1971",
+    "seed｜渡辺貞夫｜Open Road｜1973",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "c132｜渡辺貞夫｜Pastoral｜1969",
+    "c132｜渡辺貞夫｜Paysages｜1971",
+    "c132｜渡辺貞夫｜Open Road｜1973",
+    "c173｜Charlie Mariano & Sadao Watanabe｜Charlie Mariano & Sadao Watanabe｜1967",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967",
+    "c173｜渡辺貞夫 & チャーリー・マリアーノ｜Iberian Waltz｜1967",
+    "c174｜渡辺貞夫｜Music Break｜1969",
+    "c174｜渡辺貞夫｜Sadao Plays Bacharach and Beatles｜1969",
+    "c176｜渡辺貞夫｜Autumn Blow｜1977",
+    "c176｜渡辺貞夫｜My Dear Life｜1977",
+    "c176｜渡辺貞夫｜Goin' Home｜1966",
+    "c177｜福村博 with 渡辺貞夫｜Hunt Up Wind｜1978",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979",
+    "c177｜渡辺貞夫｜Morning Island｜1979"
+   ],
+   "matchedBy": {
+    "seed｜渡辺貞夫｜Pamoja｜1976": "等值",
+    "seed｜渡辺貞夫｜California Shower｜1978": "等值",
+    "seed｜渡辺貞夫｜Orange Express｜1981": "等值",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967": "等值",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968": "等值",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969": "等值",
+    "seed｜渡辺貞夫｜Pastoral｜1969": "等值",
+    "seed｜渡辺貞夫｜Paysages｜1971": "等值",
+    "seed｜渡辺貞夫｜Open Road｜1973": "等值",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967": "等值",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968": "等值",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969": "等值",
+    "c132｜渡辺貞夫｜Pastoral｜1969": "等值",
+    "c132｜渡辺貞夫｜Paysages｜1971": "等值",
+    "c132｜渡辺貞夫｜Open Road｜1973": "等值",
+    "c173｜Charlie Mariano & Sadao Watanabe｜Charlie Mariano & Sadao Watanabe｜1967": "聯名內含",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967": "等值",
+    "c173｜渡辺貞夫 & チャーリー・マリアーノ｜Iberian Waltz｜1967": "前綴",
+    "c174｜渡辺貞夫｜Music Break｜1969": "等值",
+    "c174｜渡辺貞夫｜Sadao Plays Bacharach and Beatles｜1969": "等值",
+    "c176｜渡辺貞夫｜Autumn Blow｜1977": "等值",
+    "c176｜渡辺貞夫｜My Dear Life｜1977": "等值",
+    "c176｜渡辺貞夫｜Goin' Home｜1966": "等值",
+    "c177｜福村博 with 渡辺貞夫｜Hunt Up Wind｜1978": "聯名內含",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979": "前綴",
+    "c177｜渡辺貞夫｜Morning Island｜1979": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Bossa Best Collection",
+   "firstReleaseDate": "1967",
+   "earliestRelease": {
+    "date": "1967",
+    "title": "Bossa Best Collection",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Bossa Best Collection"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "ホキ徳田",
@@ -60,7 +172,28 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "ホキ徳田",
+   "Tokuda, Hoki"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "“あの日のあなた” と ボサ・ノヴァと⋯",
+   "firstReleaseDate": "1968-09",
+   "earliestRelease": {
+    "date": "1968-09",
+    "title": "“あの日のあなた” と ボサ・ノヴァと⋯",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "“あの日のあなた” と ボサ・ノヴァと⋯"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Miles Davis",
@@ -81,7 +214,141 @@
   "note": "Live",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Miles Davis",
+   "Davis, Miles",
+   "Davis",
+   "Miles Davies",
+   "Miles Dewey Davis III",
+   "Miles Favis",
+   "Майлз Дейвис"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Miles Davis｜Milestones｜1958",
+    "seed｜Miles Davis｜Round About Midnight｜1957",
+    "seed｜Miles Davis｜Sketches of Spain｜1960",
+    "seed｜Miles Davis｜Porgy and Bess｜1958",
+    "seed｜Miles Davis｜Miles Ahead｜1957",
+    "seed｜Miles Davis｜In a Silent Way｜1969",
+    "seed｜Miles Davis｜On the Corner｜1972",
+    "seed｜Miles Davis｜A Tribute to Jack Johnson｜1971",
+    "seed｜Miles Davis｜Nefertiti｜1968",
+    "seed｜Miles Davis｜Miles Smiles｜1967",
+    "seed｜Miles Davis｜E.S.P.｜1965",
+    "seed｜Miles Davis｜Filles de Kilimanjaro｜1969",
+    "seed｜Miles Davis｜Cookin' with the Miles Davis Quintet｜1957",
+    "seed｜Miles Davis｜Relaxin' with the Miles Davis Quintet｜1958",
+    "seed｜Miles Davis｜Workin' with the Miles Davis Quintet｜1959",
+    "seed｜Miles Davis｜Steamin' with the Miles Davis Quintet｜1961",
+    "seed｜Miles Davis｜Agharta｜1975",
+    "seed｜Miles Davis｜Pangaea｜1975",
+    "seed｜Miles Davis｜Get Up with It｜1974",
+    "seed｜Miles Davis｜Dark Magus｜1977",
+    "seed｜Miles Davis｜Tutu｜1986",
+    "seed｜Miles Davis｜You're Under Arrest｜1985",
+    "seed｜Miles Davis｜Blue Haze｜1956",
+    "seed｜Miles Davis｜Blue Moods｜1955",
+    "seed｜Miles Davis｜Someday My Prince Will Come｜1961",
+    "seed｜Miles Davis｜My Funny Valentine｜1965",
+    "seed｜Miles Davis｜Walkin'｜1957",
+    "seed｜Miles Davis｜Bags Groove｜1957",
+    "seed｜Miles Davis｜Miles Davis and the Modern Jazz Giants｜1959",
+    "seed｜Miles Davis｜Seven Steps to Heaven｜1963",
+    "seed｜Miles Davis｜Four & More｜1966",
+    "seed｜Miles Davis｜Sorcerer｜1967",
+    "seed｜Miles Davis｜Miles in the Sky｜1968",
+    "seed｜Miles Davis｜Live-Evil｜1971",
+    "seed｜Miles Davis｜Big Fun｜1974",
+    "seed｜Miles Davis｜We Want Miles｜1982",
+    "seed｜Miles Davis｜The Man with the Horn｜1981",
+    "seed｜Miles Davis｜Kind of Blue｜1959",
+    "seed｜Miles Davis｜Bitches Brew｜1970",
+    "seed｜Miles Davis｜Birth of the Cool｜1957",
+    "seed｜Miles Davis｜Ascenseur pour l'échafaud｜1958",
+    "seed｜Miles Davis｜Young Man With a Horn｜1953",
+    "seed｜Miles Davis｜Miles Davis, Vol. 2｜1953",
+    "seed｜Miles Davis｜Miles Davis, Vol. 3｜1954",
+    "seed｜Miles Davis｜Miles Davis, Volume 1｜1955",
+    "seed｜Miles Davis｜Miles Davis, Volume 2｜1956",
+    "c135｜Miles Davis｜Young Man With a Horn｜1953",
+    "c135｜Miles Davis｜Miles Davis, Vol. 2｜1953",
+    "c135｜Miles Davis｜Miles Davis, Vol. 3｜1954",
+    "c147｜Miles Davis｜Miles Davis, Volume 1｜1955",
+    "c147｜Miles Davis｜Miles Davis, Volume 2｜1956",
+    "c158｜Miles Davis｜Birdland 1951｜2004"
+   ],
+   "matchedBy": {
+    "seed｜Miles Davis｜Milestones｜1958": "等值",
+    "seed｜Miles Davis｜Round About Midnight｜1957": "等值",
+    "seed｜Miles Davis｜Sketches of Spain｜1960": "等值",
+    "seed｜Miles Davis｜Porgy and Bess｜1958": "等值",
+    "seed｜Miles Davis｜Miles Ahead｜1957": "等值",
+    "seed｜Miles Davis｜In a Silent Way｜1969": "等值",
+    "seed｜Miles Davis｜On the Corner｜1972": "等值",
+    "seed｜Miles Davis｜A Tribute to Jack Johnson｜1971": "等值",
+    "seed｜Miles Davis｜Nefertiti｜1968": "等值",
+    "seed｜Miles Davis｜Miles Smiles｜1967": "等值",
+    "seed｜Miles Davis｜E.S.P.｜1965": "等值",
+    "seed｜Miles Davis｜Filles de Kilimanjaro｜1969": "等值",
+    "seed｜Miles Davis｜Cookin' with the Miles Davis Quintet｜1957": "等值",
+    "seed｜Miles Davis｜Relaxin' with the Miles Davis Quintet｜1958": "等值",
+    "seed｜Miles Davis｜Workin' with the Miles Davis Quintet｜1959": "等值",
+    "seed｜Miles Davis｜Steamin' with the Miles Davis Quintet｜1961": "等值",
+    "seed｜Miles Davis｜Agharta｜1975": "等值",
+    "seed｜Miles Davis｜Pangaea｜1975": "等值",
+    "seed｜Miles Davis｜Get Up with It｜1974": "等值",
+    "seed｜Miles Davis｜Dark Magus｜1977": "等值",
+    "seed｜Miles Davis｜Tutu｜1986": "等值",
+    "seed｜Miles Davis｜You're Under Arrest｜1985": "等值",
+    "seed｜Miles Davis｜Blue Haze｜1956": "等值",
+    "seed｜Miles Davis｜Blue Moods｜1955": "等值",
+    "seed｜Miles Davis｜Someday My Prince Will Come｜1961": "等值",
+    "seed｜Miles Davis｜My Funny Valentine｜1965": "等值",
+    "seed｜Miles Davis｜Walkin'｜1957": "等值",
+    "seed｜Miles Davis｜Bags Groove｜1957": "等值",
+    "seed｜Miles Davis｜Miles Davis and the Modern Jazz Giants｜1959": "等值",
+    "seed｜Miles Davis｜Seven Steps to Heaven｜1963": "等值",
+    "seed｜Miles Davis｜Four & More｜1966": "等值",
+    "seed｜Miles Davis｜Sorcerer｜1967": "等值",
+    "seed｜Miles Davis｜Miles in the Sky｜1968": "等值",
+    "seed｜Miles Davis｜Live-Evil｜1971": "等值",
+    "seed｜Miles Davis｜Big Fun｜1974": "等值",
+    "seed｜Miles Davis｜We Want Miles｜1982": "等值",
+    "seed｜Miles Davis｜The Man with the Horn｜1981": "等值",
+    "seed｜Miles Davis｜Kind of Blue｜1959": "等值",
+    "seed｜Miles Davis｜Bitches Brew｜1970": "等值",
+    "seed｜Miles Davis｜Birth of the Cool｜1957": "等值",
+    "seed｜Miles Davis｜Ascenseur pour l'échafaud｜1958": "等值",
+    "seed｜Miles Davis｜Young Man With a Horn｜1953": "等值",
+    "seed｜Miles Davis｜Miles Davis, Vol. 2｜1953": "等值",
+    "seed｜Miles Davis｜Miles Davis, Vol. 3｜1954": "等值",
+    "seed｜Miles Davis｜Miles Davis, Volume 1｜1955": "等值",
+    "seed｜Miles Davis｜Miles Davis, Volume 2｜1956": "等值",
+    "c135｜Miles Davis｜Young Man With a Horn｜1953": "等值",
+    "c135｜Miles Davis｜Miles Davis, Vol. 2｜1953": "等值",
+    "c135｜Miles Davis｜Miles Davis, Vol. 3｜1954": "等值",
+    "c147｜Miles Davis｜Miles Davis, Volume 1｜1955": "等值",
+    "c147｜Miles Davis｜Miles Davis, Volume 2｜1956": "等值",
+    "c158｜Miles Davis｜Birdland 1951｜2004": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Miles in Tokyo",
+   "firstReleaseDate": "1969-06",
+   "earliestRelease": {
+    "date": "1969-06",
+    "title": "Miles in Tokyo: Miles Davis Live in Concert",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Miles in Tokyo: Miles Davis Live in Concert",
+    "Miles in Tokyo"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "Yoshiaki Masuo and His Group",
@@ -102,7 +369,28 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Yoshiaki Masuo and His Group",
+   "Masuo, Yoshiaki and His Group"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Winds Of Barcelona",
+   "firstReleaseDate": "1969",
+   "earliestRelease": {
+    "date": "1969",
+    "title": "Winds Of Barcelona",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Winds Of Barcelona"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山下洋治と’68オールスターズ",
@@ -123,7 +411,35 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "山下洋治と’68オールスターズ",
+   "山下洋治",
+   "Yamashita, Yoji",
+   "Yoji Yamashita",
+   "’68オールスターズ",
+   "’68 All Stars",
+   "68オールスターズ",
+   "‘68 All Stars",
+   "‘68オールスターズ"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "初恋のひと（魅惑のスチール・ギター・ムード）",
+   "firstReleaseDate": "1969-04",
+   "earliestRelease": {
+    "date": "1969-04",
+    "title": "初恋のひと（魅惑のスチール・ギター・ムード）",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "初恋のひと（魅惑のスチール・ギター・ムード）"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山下洋治と’68オールスターズ",
@@ -144,7 +460,35 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "山下洋治と’68オールスターズ",
+   "山下洋治",
+   "Yamashita, Yoji",
+   "Yoji Yamashita",
+   "’68オールスターズ",
+   "’68 All Stars",
+   "68オールスターズ",
+   "‘68 All Stars",
+   "‘68オールスターズ"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "長崎は今日も雨だった (魅惑のスチール・ギター・ムード)",
+   "firstReleaseDate": "1969",
+   "earliestRelease": {
+    "date": "1969",
+    "title": "長崎は今日も雨だった (魅惑のスチール・ギター・ムード)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "長崎は今日も雨だった (魅惑のスチール・ギター・ムード)"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "廣瀬量平; 山岡重信, 青木静夫, 山本邦山, 横山勝也",
@@ -165,7 +509,48 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "廣瀬量平; 山岡重信, 青木静夫, 山本邦山, 横山勝也",
+   "廣瀬量平",
+   "Hirose, Ryōhei",
+   "Hirose Ryouhei",
+   "Ryōhei Hirose",
+   "広瀬 量平",
+   "広瀬量平",
+   "山岡重信",
+   "Yamaoka, Shigenobu",
+   "青木静夫",
+   "Aoki, Shizuo",
+   "山本邦山",
+   "Yamamoto, Hozan",
+   "Hozan Yamamoto",
+   "横山勝也",
+   "Yokoyama, Katsuya",
+   "Katsuya Yokoyama"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984"
+   ],
+   "matchedBy": {
+    "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984": "前綴"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "尺八1969",
+   "firstReleaseDate": "1969",
+   "earliestRelease": {
+    "date": "1969",
+    "title": "尺八1969",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "尺八1969"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "フォー・ユニッツ",
@@ -186,7 +571,28 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "フォー・ユニッツ",
+   "Four Units"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "フォー・ユニッツ",
+   "firstReleaseDate": "1969",
+   "earliestRelease": {
+    "date": "1969",
+    "title": "フォー・ユニッツ",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "フォー・ユニッツ"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "宮沢昭, 前田憲男, 原田政長, 富樫雅彦",
@@ -207,7 +613,153 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "宮沢昭, 前田憲男, 原田政長, 富樫雅彦",
+   "宮沢昭",
+   "Miyazawa, Akira",
+   "前田憲男",
+   "Maeda, Norio",
+   "Nobuhito Maeda",
+   "Norio Maeda",
+   "まえだ のりお",
+   "前田 憲男",
+   "前田 暢人",
+   "前田暢人",
+   "原田政長",
+   "Harada, Masanaga",
+   "富樫雅彦",
+   "Togashi, Masahiko",
+   "Masahiko Togashi"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜富樫雅彦｜Eternal Duo｜1983",
+    "seed｜Masahiko Togashi Quartet｜Sketch｜1977",
+    "seed｜富樫雅彦｜Speed and Space｜1969",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "seed｜富樫雅彦｜リングス｜1976",
+    "seed｜富樫雅彦｜双晶｜1973",
+    "seed｜宮沢昭｜いわな｜1969",
+    "seed｜宮沢昭｜山女魚｜1962",
+    "seed｜宮沢昭｜Four Units｜1969",
+    "seed｜宮沢昭｜Love For Sale｜1967",
+    "seed｜宮沢昭｜My Piccolo: Live at Nagoya Yamaha Jazz Club｜1981",
+    "seed｜宮沢昭｜On Green Dolphin Street｜1982",
+    "seed｜宮沢昭｜'Round Midnight - Amazing Jazz Ballad｜1985",
+    "seed｜前田憲男トリオ｜Alpha Ray｜1969",
+    "seed｜前田憲男｜Falling in Love With Love｜1980",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976",
+    "c121｜富樫雅彦｜リングス｜1976",
+    "c121｜富樫雅彦｜双晶｜1973",
+    "c131｜宮沢昭｜いわな｜1969",
+    "c132｜宮沢昭｜山女魚｜1962",
+    "c132｜宮沢昭｜Four Units｜1969",
+    "c132｜宮沢昭｜Love For Sale｜1967",
+    "c132｜宮沢昭｜My Piccolo: Live at Nagoya Yamaha Jazz Club｜1981",
+    "c132｜宮沢昭｜On Green Dolphin Street｜1982",
+    "c132｜宮沢昭｜'Round Midnight - Amazing Jazz Ballad｜1985",
+    "c134｜前田憲男トリオ｜Alpha Ray｜1969",
+    "c134｜前田憲男とオール・スターズ｜Rock Communication｜1970",
+    "c134｜前田憲男｜Falling in Love With Love｜1980",
+    "c173｜前田憲男 & 稲垣次郎オールスターズ｜This Is Jazz-Rock｜1968",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969",
+    "c175｜前田憲男・藤舎推峰｜Fantastic Sounds In Shino Flute｜1971",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971",
+    "c176｜富樫雅彦｜風の遺した物語｜1975",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977",
+    "c177｜富樫雅彦｜エッセンス｜1977",
+    "c177｜富樫雅彦｜モーション｜1977",
+    "c177｜富樫雅彦｜セッション・イン・パリ Vol.1 ソング・オヴ・ソイル｜1979",
+    "c178｜富樫雅彦・鈴木勲｜陽光｜1979",
+    "c178｜富樫雅彦｜セッション・イン・パリ Vol.2 彩られた夢｜1980",
+    "c178｜富樫雅彦｜アル・アラーフ｜1980",
+    "c179｜富樫雅彦｜The Ballad My Favorite｜1981",
+    "c179｜富樫雅彦｜The Face of Percussion｜1981",
+    "c179｜富樫雅彦｜スピリチュアル・モーメンツ｜1982",
+    "c179｜富樫雅彦｜フレイム・アップ｜1982",
+    "c180｜富樫雅彦｜コントラスト｜1983",
+    "c180｜富樫雅彦〜高柳昌行｜パルセーション｜1983",
+    "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984",
+    "c181｜富樫雅彦｜Follow the Dream｜1985",
+    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988"
+   ],
+   "matchedBy": {
+    "seed｜富樫雅彦｜Eternal Duo｜1983": "等值",
+    "seed｜Masahiko Togashi Quartet｜Sketch｜1977": "聯名內含",
+    "seed｜富樫雅彦｜Speed and Space｜1969": "等值",
+    "seed｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "seed｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "seed｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "seed｜富樫雅彦｜リングス｜1976": "等值",
+    "seed｜富樫雅彦｜双晶｜1973": "等值",
+    "seed｜宮沢昭｜いわな｜1969": "等值",
+    "seed｜宮沢昭｜山女魚｜1962": "等值",
+    "seed｜宮沢昭｜Four Units｜1969": "等值",
+    "seed｜宮沢昭｜Love For Sale｜1967": "等值",
+    "seed｜宮沢昭｜My Piccolo: Live at Nagoya Yamaha Jazz Club｜1981": "等值",
+    "seed｜宮沢昭｜On Green Dolphin Street｜1982": "等值",
+    "seed｜宮沢昭｜'Round Midnight - Amazing Jazz Ballad｜1985": "等值",
+    "seed｜前田憲男トリオ｜Alpha Ray｜1969": "前綴",
+    "seed｜前田憲男｜Falling in Love With Love｜1980": "等值",
+    "c121｜富樫雅彦｜ソング・フォー・マイセルフ｜1974": "等值",
+    "c121｜富樫雅彦｜スピリチュアル・ネイチャー｜1975": "等值",
+    "c121｜富樫雅彦｜ギルド・フォー・ヒューマン・ミュージック｜1976": "等值",
+    "c121｜富樫雅彦｜リングス｜1976": "等值",
+    "c121｜富樫雅彦｜双晶｜1973": "等值",
+    "c131｜宮沢昭｜いわな｜1969": "等值",
+    "c132｜宮沢昭｜山女魚｜1962": "等值",
+    "c132｜宮沢昭｜Four Units｜1969": "等值",
+    "c132｜宮沢昭｜Love For Sale｜1967": "等值",
+    "c132｜宮沢昭｜My Piccolo: Live at Nagoya Yamaha Jazz Club｜1981": "等值",
+    "c132｜宮沢昭｜On Green Dolphin Street｜1982": "等值",
+    "c132｜宮沢昭｜'Round Midnight - Amazing Jazz Ballad｜1985": "等值",
+    "c134｜前田憲男トリオ｜Alpha Ray｜1969": "前綴",
+    "c134｜前田憲男とオール・スターズ｜Rock Communication｜1970": "前綴",
+    "c134｜前田憲男｜Falling in Love With Love｜1980": "等值",
+    "c173｜前田憲男 & 稲垣次郎オールスターズ｜This Is Jazz-Rock｜1968": "前綴",
+    "c174｜富樫雅彦｜We Now Create - Music for Strings, Winds and Percussions｜1969": "等值",
+    "c174｜鈴木弘＝富樫雅彦クインテット｜Variation｜1969": "聯名內含",
+    "c175｜前田憲男・藤舎推峰｜Fantastic Sounds In Shino Flute｜1971": "前綴",
+    "c175｜宮間利之とニューハード + 富樫雅彦｜Canto of Aries｜1971": "聯名內含",
+    "c176｜富樫雅彦｜風の遺した物語｜1975": "等值",
+    "c176｜富樫雅彦 + 高橋悠治｜トゥワイライト｜1977": "前綴",
+    "c177｜富樫雅彦｜エッセンス｜1977": "等值",
+    "c177｜富樫雅彦｜モーション｜1977": "等值",
+    "c177｜富樫雅彦｜セッション・イン・パリ Vol.1 ソング・オヴ・ソイル｜1979": "等值",
+    "c178｜富樫雅彦・鈴木勲｜陽光｜1979": "前綴",
+    "c178｜富樫雅彦｜セッション・イン・パリ Vol.2 彩られた夢｜1980": "等值",
+    "c178｜富樫雅彦｜アル・アラーフ｜1980": "等值",
+    "c179｜富樫雅彦｜The Ballad My Favorite｜1981": "等值",
+    "c179｜富樫雅彦｜The Face of Percussion｜1981": "等值",
+    "c179｜富樫雅彦｜スピリチュアル・モーメンツ｜1982": "等值",
+    "c179｜富樫雅彦｜フレイム・アップ｜1982": "等值",
+    "c180｜富樫雅彦｜コントラスト｜1983": "等值",
+    "c180｜富樫雅彦〜高柳昌行｜パルセーション｜1983": "前綴",
+    "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984": "聯名內含",
+    "c181｜富樫雅彦｜Follow the Dream｜1985": "等值",
+    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "ミュージカル・プレイ・イン・ジャズ",
+   "firstReleaseDate": "1969",
+   "earliestRelease": {
+    "date": "1969",
+    "title": "ミュージカル・プレイ・イン・ジャズ",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ミュージカル・プレイ・イン・ジャズ"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "富樫雅彦カルテット",
@@ -228,7 +780,29 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "富樫雅彦カルテット",
+   "Togashi, Masahiko, Quartet"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Speed and Space",
+   "firstReleaseDate": "1969",
+   "earliestRelease": {
+    "date": "1969",
+    "title": "Speed and Space",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Speed and Space",
+    "Speed & Space"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山本邦山",
@@ -249,7 +823,34 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "山本邦山",
+   "Yamamoto, Hozan",
+   "Hozan Yamamoto"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984"
+   ],
+   "matchedBy": {
+    "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984": "前綴"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Shakuhachi & Bossa Nova",
+   "firstReleaseDate": "1969",
+   "earliestRelease": {
+    "date": "1969",
+    "title": "Shakuhachi & Bossa Nova",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Shakuhachi & Bossa Nova"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "柳田ヒロ",
@@ -270,7 +871,36 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "柳田ヒロ",
+   "Yanagida, Hiro",
+   "Hiro Yanagida",
+   "Hiroyoshi Yanagida",
+   "やなぎだ ひろ",
+   "やなぎだ ひろよし",
+   "やなぎだ ヒロ",
+   "柳田 ヒロ",
+   "柳田 博義",
+   "柳田博義"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Milk Time",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Milk Time",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Milk Time"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Jack DeJohnette",
@@ -291,7 +921,57 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Jack DeJohnette",
+   "DeJohnette, Jack",
+   "J. DeJohnette",
+   "Jack De Johnette"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Bye Bye Blackbird｜1993",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜The Cure｜1991",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Inside Out｜2001",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Changes｜1984",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Standards, Vol. 1｜1983",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Standards, Vol. 2｜1985",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜My Foolish Heart: Live at Montreux｜2007",
+    "seed｜John Abercrombie / Dave Holland / Jack DeJohnette｜Gateway｜1976",
+    "seed｜Terje Rypdal & Miroslav Vitous & Jack DeJohnette｜Terje Rypdal / Miroslav Vitous / Jack DeJohnette｜1979",
+    "seed｜Jack DeJohnette｜Time & Space｜1973",
+    "c150｜Jack DeJohnette's Special Edition｜Earth Walk｜1991",
+    "c152｜Jack DeJohnette｜Extra Special Edition｜1994"
+   ],
+   "matchedBy": {
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Bye Bye Blackbird｜1993": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜The Cure｜1991": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Inside Out｜2001": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Changes｜1984": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Standards, Vol. 1｜1983": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Standards, Vol. 2｜1985": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜My Foolish Heart: Live at Montreux｜2007": "聯名內含",
+    "seed｜John Abercrombie / Dave Holland / Jack DeJohnette｜Gateway｜1976": "聯名內含",
+    "seed｜Terje Rypdal & Miroslav Vitous & Jack DeJohnette｜Terje Rypdal / Miroslav Vitous / Jack DeJohnette｜1979": "聯名內含",
+    "seed｜Jack DeJohnette｜Time & Space｜1973": "等值",
+    "c150｜Jack DeJohnette's Special Edition｜Earth Walk｜1991": "聯名內含",
+    "c152｜Jack DeJohnette｜Extra Special Edition｜1994": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Have You Heard?",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Have You Heard?",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Have You Heard?"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Miroslav Vitouš",
@@ -312,7 +992,34 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Miroslav Vitouš",
+   "Vitouš, Miroslav",
+   "Miroslav Vitous"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Terje Rypdal & Miroslav Vitous & Jack DeJohnette｜Terje Rypdal / Miroslav Vitous / Jack DeJohnette｜1979"
+   ],
+   "matchedBy": {
+    "seed｜Terje Rypdal & Miroslav Vitous & Jack DeJohnette｜Terje Rypdal / Miroslav Vitous / Jack DeJohnette｜1979": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Purple",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Purple",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Purple"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Percy Faith and His Orchestra",
@@ -333,7 +1040,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Percy Faith and His Orchestra",
+   "Faith, Percy and His Orchestra",
+   "Percy Faith Orchestra",
+   "The Percy Faith Strings"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Held Over! Today's Great Movie Themes",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Held Over! Today's Great Movie Themes",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Held Over! Today's Great Movie Themes"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Sadao Watanabe",
@@ -354,7 +1084,86 @@
   "note": "Live",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Sadao Watanabe",
+   "渡辺貞夫",
+   "Watanabe, Sadao",
+   "わたなべ さだお",
+   "渡辺 貞夫"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜渡辺貞夫｜Pamoja｜1976",
+    "seed｜渡辺貞夫｜California Shower｜1978",
+    "seed｜渡辺貞夫｜Orange Express｜1981",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "seed｜渡辺貞夫｜Pastoral｜1969",
+    "seed｜渡辺貞夫｜Paysages｜1971",
+    "seed｜渡辺貞夫｜Open Road｜1973",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "c132｜渡辺貞夫｜Pastoral｜1969",
+    "c132｜渡辺貞夫｜Paysages｜1971",
+    "c132｜渡辺貞夫｜Open Road｜1973",
+    "c173｜Charlie Mariano & Sadao Watanabe｜Charlie Mariano & Sadao Watanabe｜1967",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967",
+    "c173｜渡辺貞夫 & チャーリー・マリアーノ｜Iberian Waltz｜1967",
+    "c174｜渡辺貞夫｜Music Break｜1969",
+    "c174｜渡辺貞夫｜Sadao Plays Bacharach and Beatles｜1969",
+    "c176｜渡辺貞夫｜Autumn Blow｜1977",
+    "c176｜渡辺貞夫｜My Dear Life｜1977",
+    "c176｜渡辺貞夫｜Goin' Home｜1966",
+    "c177｜福村博 with 渡辺貞夫｜Hunt Up Wind｜1978",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979",
+    "c177｜渡辺貞夫｜Morning Island｜1979"
+   ],
+   "matchedBy": {
+    "seed｜渡辺貞夫｜Pamoja｜1976": "等值",
+    "seed｜渡辺貞夫｜California Shower｜1978": "等值",
+    "seed｜渡辺貞夫｜Orange Express｜1981": "等值",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967": "等值",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968": "等值",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969": "等值",
+    "seed｜渡辺貞夫｜Pastoral｜1969": "等值",
+    "seed｜渡辺貞夫｜Paysages｜1971": "等值",
+    "seed｜渡辺貞夫｜Open Road｜1973": "等值",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967": "等值",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968": "等值",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969": "等值",
+    "c132｜渡辺貞夫｜Pastoral｜1969": "等值",
+    "c132｜渡辺貞夫｜Paysages｜1971": "等值",
+    "c132｜渡辺貞夫｜Open Road｜1973": "等值",
+    "c173｜Charlie Mariano & Sadao Watanabe｜Charlie Mariano & Sadao Watanabe｜1967": "聯名內含",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967": "等值",
+    "c173｜渡辺貞夫 & チャーリー・マリアーノ｜Iberian Waltz｜1967": "前綴",
+    "c174｜渡辺貞夫｜Music Break｜1969": "等值",
+    "c174｜渡辺貞夫｜Sadao Plays Bacharach and Beatles｜1969": "等值",
+    "c176｜渡辺貞夫｜Autumn Blow｜1977": "等值",
+    "c176｜渡辺貞夫｜My Dear Life｜1977": "等值",
+    "c176｜渡辺貞夫｜Goin' Home｜1966": "等值",
+    "c177｜福村博 with 渡辺貞夫｜Hunt Up Wind｜1978": "聯名內含",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979": "前綴",
+    "c177｜渡辺貞夫｜Morning Island｜1979": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Live at the Junk",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Live at the Junk",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Live at the Junk"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Sadao Watanabe, Chick Corea, Miroslav Vitouš, Jack DeJohnette",
@@ -375,7 +1184,150 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Sadao Watanabe, Chick Corea, Miroslav Vitouš, Jack DeJohnette",
+   "渡辺貞夫",
+   "Watanabe, Sadao",
+   "Sadao Watanabe",
+   "わたなべ さだお",
+   "渡辺 貞夫",
+   "Chick Corea",
+   "Corea, Chick",
+   "Armando Anthony Corea",
+   "C. Corea",
+   "Miroslav Vitouš",
+   "Vitouš, Miroslav",
+   "Miroslav Vitous",
+   "Jack DeJohnette",
+   "DeJohnette, Jack",
+   "J. DeJohnette",
+   "Jack De Johnette"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Chick Corea｜Return to Forever｜1972",
+    "seed｜Chick Corea｜Now He Sings, Now He Sobs｜1968",
+    "seed｜Gary Burton & Chick Corea｜Crystal Silence｜1973",
+    "seed｜Chick Corea｜Hymn of the Seventh Galaxy｜1973",
+    "seed｜Chick Corea｜Light as a Feather｜1973",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Bye Bye Blackbird｜1993",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜The Cure｜1991",
+    "seed｜Chick Corea｜Piano Improvisations, Volume 1｜1971",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Inside Out｜2001",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Changes｜1984",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Standards, Vol. 1｜1983",
+    "seed｜Gary Burton & Chick Corea｜Duet｜1979",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Standards, Vol. 2｜1985",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜My Foolish Heart: Live at Montreux｜2007",
+    "seed｜John Abercrombie / Dave Holland / Jack DeJohnette｜Gateway｜1976",
+    "seed｜Gary Burton & Chick Corea｜Crystal Silence: The ECM Recordings 1972–79｜2009",
+    "seed｜Chick Corea, Dave Holland, Barry Altschul｜A.R.C.｜1971",
+    "seed｜Terje Rypdal & Miroslav Vitous & Jack DeJohnette｜Terje Rypdal / Miroslav Vitous / Jack DeJohnette｜1979",
+    "seed｜Jack DeJohnette｜Time & Space｜1973",
+    "seed｜渡辺貞夫｜Pamoja｜1976",
+    "seed｜渡辺貞夫｜California Shower｜1978",
+    "seed｜渡辺貞夫｜Orange Express｜1981",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "seed｜渡辺貞夫｜Pastoral｜1969",
+    "seed｜渡辺貞夫｜Paysages｜1971",
+    "seed｜渡辺貞夫｜Open Road｜1973",
+    "seed｜Chick Corea｜The Song of Singing｜1971",
+    "seed｜Chick Corea｜Circulus｜1978",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969",
+    "c132｜渡辺貞夫｜Pastoral｜1969",
+    "c132｜渡辺貞夫｜Paysages｜1971",
+    "c132｜渡辺貞夫｜Open Road｜1973",
+    "c143｜Chick Corea｜The Song of Singing｜1971",
+    "c144｜Chick Corea｜Circulus｜1978",
+    "c150｜Jack DeJohnette's Special Edition｜Earth Walk｜1991",
+    "c151｜Bobby McFerrin & Chick Corea｜Play｜1992",
+    "c152｜Jack DeJohnette｜Extra Special Edition｜1994",
+    "c173｜Charlie Mariano & Sadao Watanabe｜Charlie Mariano & Sadao Watanabe｜1967",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967",
+    "c173｜渡辺貞夫 & チャーリー・マリアーノ｜Iberian Waltz｜1967",
+    "c174｜渡辺貞夫｜Music Break｜1969",
+    "c174｜渡辺貞夫｜Sadao Plays Bacharach and Beatles｜1969",
+    "c176｜渡辺貞夫｜Autumn Blow｜1977",
+    "c176｜渡辺貞夫｜My Dear Life｜1977",
+    "c176｜渡辺貞夫｜Goin' Home｜1966",
+    "c177｜福村博 with 渡辺貞夫｜Hunt Up Wind｜1978",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979",
+    "c177｜渡辺貞夫｜Morning Island｜1979"
+   ],
+   "matchedBy": {
+    "seed｜Chick Corea｜Return to Forever｜1972": "等值",
+    "seed｜Chick Corea｜Now He Sings, Now He Sobs｜1968": "等值",
+    "seed｜Gary Burton & Chick Corea｜Crystal Silence｜1973": "聯名內含",
+    "seed｜Chick Corea｜Hymn of the Seventh Galaxy｜1973": "等值",
+    "seed｜Chick Corea｜Light as a Feather｜1973": "等值",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Bye Bye Blackbird｜1993": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜The Cure｜1991": "聯名內含",
+    "seed｜Chick Corea｜Piano Improvisations, Volume 1｜1971": "等值",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Inside Out｜2001": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Changes｜1984": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Standards, Vol. 1｜1983": "聯名內含",
+    "seed｜Gary Burton & Chick Corea｜Duet｜1979": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜Standards, Vol. 2｜1985": "聯名內含",
+    "seed｜Keith Jarrett, Gary Peacock, Jack DeJohnette｜My Foolish Heart: Live at Montreux｜2007": "聯名內含",
+    "seed｜John Abercrombie / Dave Holland / Jack DeJohnette｜Gateway｜1976": "聯名內含",
+    "seed｜Gary Burton & Chick Corea｜Crystal Silence: The ECM Recordings 1972–79｜2009": "聯名內含",
+    "seed｜Chick Corea, Dave Holland, Barry Altschul｜A.R.C.｜1971": "聯名內含",
+    "seed｜Terje Rypdal & Miroslav Vitous & Jack DeJohnette｜Terje Rypdal / Miroslav Vitous / Jack DeJohnette｜1979": "聯名內含",
+    "seed｜Jack DeJohnette｜Time & Space｜1973": "等值",
+    "seed｜渡辺貞夫｜Pamoja｜1976": "等值",
+    "seed｜渡辺貞夫｜California Shower｜1978": "等值",
+    "seed｜渡辺貞夫｜Orange Express｜1981": "等值",
+    "seed｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967": "等值",
+    "seed｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968": "等值",
+    "seed｜渡辺貞夫｜Dedicated to Charlie Parker｜1969": "等值",
+    "seed｜渡辺貞夫｜Pastoral｜1969": "等值",
+    "seed｜渡辺貞夫｜Paysages｜1971": "等值",
+    "seed｜渡辺貞夫｜Open Road｜1973": "等值",
+    "seed｜Chick Corea｜The Song of Singing｜1971": "等值",
+    "seed｜Chick Corea｜Circulus｜1978": "等值",
+    "c132｜渡辺貞夫｜My Romance: Sadao Plays Ballads｜1967": "等值",
+    "c132｜渡辺貞夫｜Sadao Meets Brazilian Friends｜1968": "等值",
+    "c132｜渡辺貞夫｜Dedicated to Charlie Parker｜1969": "等值",
+    "c132｜渡辺貞夫｜Pastoral｜1969": "等值",
+    "c132｜渡辺貞夫｜Paysages｜1971": "等值",
+    "c132｜渡辺貞夫｜Open Road｜1973": "等值",
+    "c143｜Chick Corea｜The Song of Singing｜1971": "等值",
+    "c144｜Chick Corea｜Circulus｜1978": "等值",
+    "c150｜Jack DeJohnette's Special Edition｜Earth Walk｜1991": "聯名內含",
+    "c151｜Bobby McFerrin & Chick Corea｜Play｜1992": "聯名內含",
+    "c152｜Jack DeJohnette｜Extra Special Edition｜1994": "等值",
+    "c173｜Charlie Mariano & Sadao Watanabe｜Charlie Mariano & Sadao Watanabe｜1967": "聯名內含",
+    "c173｜渡辺貞夫｜Jazz & Bossa｜1967": "等值",
+    "c173｜渡辺貞夫 & チャーリー・マリアーノ｜Iberian Waltz｜1967": "前綴",
+    "c174｜渡辺貞夫｜Music Break｜1969": "等值",
+    "c174｜渡辺貞夫｜Sadao Plays Bacharach and Beatles｜1969": "等值",
+    "c176｜渡辺貞夫｜Autumn Blow｜1977": "等值",
+    "c176｜渡辺貞夫｜My Dear Life｜1977": "等值",
+    "c176｜渡辺貞夫｜Goin' Home｜1966": "等值",
+    "c177｜福村博 with 渡辺貞夫｜Hunt Up Wind｜1978": "聯名內含",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979": "前綴",
+    "c177｜渡辺貞夫｜Morning Island｜1979": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Round Trip",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Round Trip",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Round Trip"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "太田幸雄とハミングバーズ",
@@ -396,7 +1348,28 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "太田幸雄とハミングバーズ",
+   "Ota, Yukio & His Humming Birds"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "夜を盗む男たち",
+   "firstReleaseDate": "1970-07",
+   "earliestRelease": {
+    "date": "1970-07",
+    "title": "夜を盗む男たち",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "夜を盗む男たち"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山下洋治と’68オールスターズ",
@@ -417,7 +1390,35 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "山下洋治と’68オールスターズ",
+   "山下洋治",
+   "Yamashita, Yoji",
+   "Yoji Yamashita",
+   "’68オールスターズ",
+   "’68 All Stars",
+   "68オールスターズ",
+   "‘68 All Stars",
+   "‘68オールスターズ"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Steel Guitar Mood",
+   "firstReleaseDate": "1970-07",
+   "earliestRelease": {
+    "date": "1970-07",
+    "title": "Steel Guitar Mood",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Steel Guitar Mood"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "山下洋治と’68オールスターズ",
@@ -438,7 +1439,35 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "山下洋治と’68オールスターズ",
+   "山下洋治",
+   "Yamashita, Yoji",
+   "Yoji Yamashita",
+   "’68オールスターズ",
+   "’68 All Stars",
+   "68オールスターズ",
+   "‘68 All Stars",
+   "‘68オールスターズ"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Steel Guitar Mood Series 女のブルース -魅惑のスチール・ギター・ムード-",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Steel Guitar Mood Series 女のブルース -魅惑のスチール・ギター・ムード-",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Steel Guitar Mood Series 女のブルース -魅惑のスチール・ギター・ムード-"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Teddy Wilson meets Eiji Kitamura",
@@ -459,7 +1488,65 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Teddy Wilson meets Eiji Kitamura",
+   "Teddy Wilson",
+   "Wilson, Teddy",
+   "Theodore Shaw Wilson",
+   "北村英治",
+   "Kitamura, Eiji",
+   "Eiji Kitamura"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Teddy Wilson｜With Billie in Mind｜1972",
+    "seed｜北村英治｜Happy Cooking｜1973",
+    "seed｜北村英治｜Because of You｜1976",
+    "seed｜北村英治｜Sophisticated Lady｜1978",
+    "seed｜北村英治｜April Date｜1979",
+    "seed｜北村英治｜Happy Cooking Vol. II｜1973",
+    "c134｜北村英治｜Happy Cooking｜1973",
+    "c134｜北村英治｜Because of You｜1976",
+    "c134｜北村英治｜Sophisticated Lady｜1978",
+    "c134｜北村英治｜April Date｜1979",
+    "c134｜北村英治｜Happy Cooking Vol. II｜1973",
+    "c134｜北村英治クインテット｜Ai No Cocktail｜1979",
+    "c180｜Woody Herman, 北村英治｜We｜1983",
+    "c95｜Teddy Wilson｜With Billie in Mind｜1972"
+   ],
+   "matchedBy": {
+    "seed｜Teddy Wilson｜With Billie in Mind｜1972": "等值",
+    "seed｜北村英治｜Happy Cooking｜1973": "等值",
+    "seed｜北村英治｜Because of You｜1976": "等值",
+    "seed｜北村英治｜Sophisticated Lady｜1978": "等值",
+    "seed｜北村英治｜April Date｜1979": "等值",
+    "seed｜北村英治｜Happy Cooking Vol. II｜1973": "等值",
+    "c134｜北村英治｜Happy Cooking｜1973": "等值",
+    "c134｜北村英治｜Because of You｜1976": "等值",
+    "c134｜北村英治｜Sophisticated Lady｜1978": "等值",
+    "c134｜北村英治｜April Date｜1979": "等值",
+    "c134｜北村英治｜Happy Cooking Vol. II｜1973": "等值",
+    "c134｜北村英治クインテット｜Ai No Cocktail｜1979": "前綴",
+    "c180｜Woody Herman, 北村英治｜We｜1983": "聯名內含",
+    "c95｜Teddy Wilson｜With Billie in Mind｜1972": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Teddy Wilson meets Eiji Kitamura",
+   "firstReleaseDate": "1970-10-05",
+   "earliestRelease": {
+    "date": "1970-10-05",
+    "title": "Teddy Wilson meets Eiji Kitamura",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Teddy Wilson meets Eiji Kitamura",
+    "After You’ve Gone"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Kiyoshi Sugimoto, Ryo Kawasaki, Yoshiaki Masuo, Masayuki Takayanagi",
@@ -480,7 +1567,95 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Kiyoshi Sugimoto, Ryo Kawasaki, Yoshiaki Masuo, Masayuki Takayanagi",
+   "杉本喜代志",
+   "Sugimoto, Kiyoshi",
+   "川崎燎",
+   "Kawasaki, Ryo",
+   "Ryo Kawasaki",
+   "増尾好秋",
+   "Masuo, Yoshiaki",
+   "Masuo",
+   "Yoshiaki Masuo",
+   "高柳昌行",
+   "Takayanagi, Masayuki",
+   "Jojo",
+   "Masayuki Takayanagi",
+   "Masayuki “Jojo” Takayanagi",
+   "高柳 昌行"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜高柳昌行ニュー・ディレクション・ユニット｜Live at Moers Festival｜1980",
+    "seed｜高柳昌行｜銀巴里セッション｜1971",
+    "seed｜高柳昌行｜Lonely Woman｜1982",
+    "seed｜川崎燎｜Prism｜1976",
+    "seed｜高柳昌行 / 阿部薫｜解体的交感｜1970",
+    "seed｜高柳昌行｜インディペンデンス｜1970",
+    "seed｜高柳昌行｜A Jazzy Profile of Jojo｜1970",
+    "seed｜高柳昌行｜Eclipse/侵蝕｜1975",
+    "seed｜高柳昌行｜April Is the Cruellest Month｜1991",
+    "seed｜杉本喜代志カルテット｜Country Dream｜1970",
+    "seed｜杉本喜代志｜Our Time｜1975",
+    "seed｜杉本喜代志｜L.A. Master｜1978",
+    "seed｜杉本喜代志｜One More｜1981",
+    "c121｜高柳昌行｜インディペンデンス｜1970",
+    "c121｜高柳昌行｜A Jazzy Profile of Jojo｜1970",
+    "c121｜高柳昌行｜Eclipse/侵蝕｜1975",
+    "c121｜高柳昌行｜April Is the Cruellest Month｜1991",
+    "c134｜杉本喜代志カルテット｜Country Dream｜1970",
+    "c134｜杉本喜代志｜Our Time｜1975",
+    "c134｜杉本喜代志｜L.A. Master｜1978",
+    "c134｜杉本喜代志｜One More｜1981",
+    "c175｜杉本喜代志｜Guitar Method｜1972",
+    "c177｜増尾好秋｜Sailing Wonder｜1978",
+    "c180｜富樫雅彦〜高柳昌行｜パルセーション｜1983",
+    "c59｜高柳昌行 / 阿部薫｜解体的交感｜1970"
+   ],
+   "matchedBy": {
+    "seed｜高柳昌行ニュー・ディレクション・ユニット｜Live at Moers Festival｜1980": "前綴",
+    "seed｜高柳昌行｜銀巴里セッション｜1971": "等值",
+    "seed｜高柳昌行｜Lonely Woman｜1982": "等值",
+    "seed｜川崎燎｜Prism｜1976": "等值",
+    "seed｜高柳昌行 / 阿部薫｜解体的交感｜1970": "前綴",
+    "seed｜高柳昌行｜インディペンデンス｜1970": "等值",
+    "seed｜高柳昌行｜A Jazzy Profile of Jojo｜1970": "等值",
+    "seed｜高柳昌行｜Eclipse/侵蝕｜1975": "等值",
+    "seed｜高柳昌行｜April Is the Cruellest Month｜1991": "等值",
+    "seed｜杉本喜代志カルテット｜Country Dream｜1970": "前綴",
+    "seed｜杉本喜代志｜Our Time｜1975": "等值",
+    "seed｜杉本喜代志｜L.A. Master｜1978": "等值",
+    "seed｜杉本喜代志｜One More｜1981": "等值",
+    "c121｜高柳昌行｜インディペンデンス｜1970": "等值",
+    "c121｜高柳昌行｜A Jazzy Profile of Jojo｜1970": "等值",
+    "c121｜高柳昌行｜Eclipse/侵蝕｜1975": "等值",
+    "c121｜高柳昌行｜April Is the Cruellest Month｜1991": "等值",
+    "c134｜杉本喜代志カルテット｜Country Dream｜1970": "前綴",
+    "c134｜杉本喜代志｜Our Time｜1975": "等值",
+    "c134｜杉本喜代志｜L.A. Master｜1978": "等值",
+    "c134｜杉本喜代志｜One More｜1981": "等值",
+    "c175｜杉本喜代志｜Guitar Method｜1972": "等值",
+    "c177｜増尾好秋｜Sailing Wonder｜1978": "等值",
+    "c180｜富樫雅彦〜高柳昌行｜パルセーション｜1983": "聯名內含",
+    "c59｜高柳昌行 / 阿部薫｜解体的交感｜1970": "前綴"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Guitar Workshop",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Guitar Workshop",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Guitar Workshop"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "ジミー竹内",
@@ -501,7 +1676,31 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "ジミー竹内",
+   "Takeuchi, Jimmy",
+   "Jimmy Takaeuchi",
+   "Jimmy Takeuchi",
+   "Jimmy Takeucki"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Drumming Beat Pops",
+   "firstReleaseDate": "1970",
+   "earliestRelease": {
+    "date": "1970",
+    "title": "Drumming Beat Pops",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Drumming Beat Pops"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Buck Clayton",
@@ -522,7 +1721,28 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Buck Clayton",
+   "Clayton, Buck"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "All The Cats Join In (A Buck Clayton Jam Session)",
+   "firstReleaseDate": "1971",
+   "earliestRelease": {
+    "date": "1971",
+    "title": "All The Cats Join In (A Buck Clayton Jam Session)",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "All The Cats Join In (A Buck Clayton Jam Session)"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Circle",
@@ -543,7 +1763,28 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Circle",
+   "Chick Corea, Anthony Braxton, Dave Holland, Barry Altschul, Circle"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Circle 2: Gathering",
+   "firstReleaseDate": "1971",
+   "earliestRelease": {
+    "date": "1971",
+    "title": "Circle 2: Gathering",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Circle 2: Gathering"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "市原宏祐",
@@ -564,7 +1805,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "市原宏祐",
+   "Ichihara, Kosuke",
+   "Ichihara K. Project",
+   "Kosuke Ichihara"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "DEPARTRUE / Introducing KOSUKE ICHIHARA",
+   "firstReleaseDate": "1971",
+   "earliestRelease": {
+    "date": "1971",
+    "title": "DEPARTRUE / Introducing KOSUKE ICHIHARA",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "DEPARTRUE / Introducing KOSUKE ICHIHARA"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "伊東ゆかりとグリーン・ジンジャー",
@@ -585,7 +1849,39 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "伊東ゆかりとグリーン・ジンジャー",
+   "伊東ゆかり",
+   "Ito, Yukari",
+   "ITOU Nobuko",
+   "ITOU Yukari",
+   "Yukari Ito",
+   "Yukari Itō",
+   "いとう のぶこ",
+   "いとう ゆかり",
+   "伊東 ゆかり",
+   "伊東 信子",
+   "グリーン・ジンジャー",
+   "Green Ginger"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "LOVE",
+   "firstReleaseDate": "1971-06",
+   "earliestRelease": {
+    "date": "1971-06",
+    "title": "LOVE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "LOVE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "飯吉馨 & The WIP",
@@ -606,7 +1902,31 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "飯吉馨 & The WIP",
+   "飯吉馨",
+   "Īyoshi, Kaoru",
+   "The WIP",
+   "WIP, The"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Soul Tripper",
+   "firstReleaseDate": "1971-08",
+   "earliestRelease": {
+    "date": "1971-08",
+    "title": "Soul Tripper",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Soul Tripper"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "石川晶と彼のグループ",
@@ -627,7 +1947,74 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "石川晶と彼のグループ",
+   "石川晶とカウント・バッファローズ",
+   "Ishikawa, Akira & Count Buffaloes",
+   "Akira Ishikawa & His Count Buffalos",
+   "Akira Ishikawa & His Group",
+   "Akira Ishikawa and His Group",
+   "Count Buffalo & His Rock Band",
+   "Count Buffalo & The Jazz Rock Band",
+   "石川晶とそのグループ"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜石川晶とカウント・バッファローズ｜ウガンダ（アフリカン・ロックの夜明け）｜1972",
+    "seed｜石川晶とカウント・バッファローズ｜エレクトラム｜1970",
+    "seed｜石川晶とカウント・バッファローズ｜バキシンバ：アフリカの想い出｜1970",
+    "seed｜石川晶とカウント・バッファローズ｜African Rock｜1971",
+    "seed｜石川晶とカウント・バッファローズ｜Get Up!｜1975",
+    "seed｜石川晶とカウント・バッファローズ｜Okinawa｜1976",
+    "c131｜石川晶とカウント・バッファローズ｜ウガンダ（アフリカン・ロックの夜明け）｜1972",
+    "c133｜石川晶とカウント・バッファローズ｜エレクトラム｜1970",
+    "c133｜石川晶とカウント・バッファローズ｜バキシンバ：アフリカの想い出｜1970",
+    "c133｜石川晶とカウント・バッファローズ｜African Rock｜1971",
+    "c133｜石川晶とカウント・バッファローズ｜Get Up!｜1975",
+    "c133｜石川晶とカウント・バッファローズ｜Okinawa｜1976",
+    "c174｜石川晶とカウント・バッファローズ｜Prayer With Faith And Love｜1969",
+    "c174｜石川晶とカウント・バッファローズ｜Soul & Rock｜1969",
+    "c174｜石川晶とカウント・バッファローズ｜Exciting Drums African Rock Party｜1969",
+    "c174｜石川晶とカウント・バッファローズ｜Count Buffalo Plays Country Rock｜1970",
+    "c175｜石川晶とカウント・バッファローズ｜Dynamic Latin Exotic Sound｜1972",
+    "c180｜石川晶とカウント・バッファローズ｜フィリップ・マーロウ, 君がいないと｜1983"
+   ],
+   "matchedBy": {
+    "seed｜石川晶とカウント・バッファローズ｜ウガンダ（アフリカン・ロックの夜明け）｜1972": "等值",
+    "seed｜石川晶とカウント・バッファローズ｜エレクトラム｜1970": "等值",
+    "seed｜石川晶とカウント・バッファローズ｜バキシンバ：アフリカの想い出｜1970": "等值",
+    "seed｜石川晶とカウント・バッファローズ｜African Rock｜1971": "等值",
+    "seed｜石川晶とカウント・バッファローズ｜Get Up!｜1975": "等值",
+    "seed｜石川晶とカウント・バッファローズ｜Okinawa｜1976": "等值",
+    "c131｜石川晶とカウント・バッファローズ｜ウガンダ（アフリカン・ロックの夜明け）｜1972": "等值",
+    "c133｜石川晶とカウント・バッファローズ｜エレクトラム｜1970": "等值",
+    "c133｜石川晶とカウント・バッファローズ｜バキシンバ：アフリカの想い出｜1970": "等值",
+    "c133｜石川晶とカウント・バッファローズ｜African Rock｜1971": "等值",
+    "c133｜石川晶とカウント・バッファローズ｜Get Up!｜1975": "等值",
+    "c133｜石川晶とカウント・バッファローズ｜Okinawa｜1976": "等值",
+    "c174｜石川晶とカウント・バッファローズ｜Prayer With Faith And Love｜1969": "等值",
+    "c174｜石川晶とカウント・バッファローズ｜Soul & Rock｜1969": "等值",
+    "c174｜石川晶とカウント・バッファローズ｜Exciting Drums African Rock Party｜1969": "等值",
+    "c174｜石川晶とカウント・バッファローズ｜Count Buffalo Plays Country Rock｜1970": "等值",
+    "c175｜石川晶とカウント・バッファローズ｜Dynamic Latin Exotic Sound｜1972": "等值",
+    "c180｜石川晶とカウント・バッファローズ｜フィリップ・マーロウ, 君がいないと｜1983": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "ドラム八木節ドラム",
+   "firstReleaseDate": "1971",
+   "earliestRelease": {
+    "date": "1971",
+    "title": "ドラム八木節ドラム",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ドラム八木節ドラム"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "水谷公生",
@@ -648,7 +2035,38 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "水谷公生",
+   "Mizutani, Kimio",
+   "Kimio Mizutani",
+   "水谷 公生",
+   "水谷 広生",
+   "水谷 淳",
+   "水谷 竜緒",
+   "水谷 龍緒",
+   "水谷広生",
+   "水谷淳",
+   "水谷竜緒",
+   "水谷龍緒"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "A Path Through Haze",
+   "firstReleaseDate": "1971",
+   "earliestRelease": {
+    "date": "1971",
+    "title": "A Path Through Haze",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "A Path Through Haze"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "深町純",
@@ -669,7 +2087,44 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "深町純",
+   "Fukamachi, Jun",
+   "Jun Fukamachi",
+   "ふかまち じゅん",
+   "深町 純"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c175｜深町純｜Introducing Jun Fukamachi｜1975",
+    "c176｜深町純｜Jun Fukamachi At Steinway｜1976",
+    "c176｜深町純｜Jun Fukamachi At Steinway (Take 2)｜1976",
+    "c176｜深町純｜Second Phase｜1977",
+    "c181｜深町純｜エイリアン魔獣鏡｜1985"
+   ],
+   "matchedBy": {
+    "c175｜深町純｜Introducing Jun Fukamachi｜1975": "等值",
+    "c176｜深町純｜Jun Fukamachi At Steinway｜1976": "等值",
+    "c176｜深町純｜Jun Fukamachi At Steinway (Take 2)｜1976": "等值",
+    "c176｜深町純｜Second Phase｜1977": "等值",
+    "c181｜深町純｜エイリアン魔獣鏡｜1985": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "ある若者の肖像",
+   "firstReleaseDate": "1971-11",
+   "earliestRelease": {
+    "date": "1971-11",
+    "title": "ある若者の肖像",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ある若者の肖像"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "T. Honda & G. Dudek",
@@ -690,7 +2145,63 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "T. Honda & G. Dudek",
+   "本田竹広",
+   "Honda, Takehiro",
+   "Takehiro Honda",
+   "本田竹曠",
+   "Gerd Dudek",
+   "Dudek, Gerd",
+   "Gerhard Dudek"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜本田竹曠｜This Is Honda｜1972",
+    "seed｜本田竹広｜Salaam Salaam｜1974",
+    "seed｜本田竹広｜Jōdo｜1970",
+    "seed｜本田竹広｜The Trio｜1970",
+    "seed｜本田竹広｜I Love You｜1971",
+    "seed｜本田竹広｜What's Going On｜1973",
+    "c131｜本田竹広｜Salaam Salaam｜1974",
+    "c132｜本田竹広｜Jōdo｜1970",
+    "c132｜本田竹広｜The Trio｜1970",
+    "c132｜本田竹広｜I Love You｜1971",
+    "c132｜本田竹広｜What's Going On｜1973",
+    "c132｜本田竹広｜Another Departure｜1977",
+    "c132｜本田竹広｜It's Great Outside｜1978"
+   ],
+   "matchedBy": {
+    "seed｜本田竹曠｜This Is Honda｜1972": "等值",
+    "seed｜本田竹広｜Salaam Salaam｜1974": "等值",
+    "seed｜本田竹広｜Jōdo｜1970": "等值",
+    "seed｜本田竹広｜The Trio｜1970": "等值",
+    "seed｜本田竹広｜I Love You｜1971": "等值",
+    "seed｜本田竹広｜What's Going On｜1973": "等值",
+    "c131｜本田竹広｜Salaam Salaam｜1974": "等值",
+    "c132｜本田竹広｜Jōdo｜1970": "等值",
+    "c132｜本田竹広｜The Trio｜1970": "等值",
+    "c132｜本田竹広｜I Love You｜1971": "等值",
+    "c132｜本田竹広｜What's Going On｜1973": "等值",
+    "c132｜本田竹広｜Another Departure｜1977": "等值",
+    "c132｜本田竹広｜It's Great Outside｜1978": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Flying To The Sky",
+   "firstReleaseDate": "1971",
+   "earliestRelease": {
+    "date": "1971",
+    "title": "Flying To The Sky",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Flying To The Sky"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Minoru Muraoka & Tadao Sawai",
@@ -711,7 +2222,44 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Minoru Muraoka & Tadao Sawai",
+   "村岡実",
+   "Muraoka, Minoru",
+   "Minoru Muraoka",
+   "沢井忠夫",
+   "Sawai, Tadao",
+   "Sawai Tadao",
+   "さわい ただお",
+   "沢井 忠夫",
+   "沢井忠夫 / 石垣 征山 / 多忠麿"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c173｜村岡実｜Harlem Nocturne - Bamboo Flute Miracle Sounds｜1967",
+    "c174｜村岡実｜Bamboo｜1970"
+   ],
+   "matchedBy": {
+    "c173｜村岡実｜Harlem Nocturne - Bamboo Flute Miracle Sounds｜1967": "等值",
+    "c174｜村岡実｜Bamboo｜1970": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Shakuhachi & Koto - Mandom",
+   "firstReleaseDate": "1971",
+   "earliestRelease": {
+    "date": "1971",
+    "title": "尺八＆琴 男の世界 <ボサ・ノヴァ編>",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "尺八＆琴 男の世界 <ボサ・ノヴァ編>",
+    "Shakuhachi & Koto - Mandom"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "山本邦山",
@@ -732,7 +2280,34 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "山本邦山",
+   "Yamamoto, Hozan",
+   "Hozan Yamamoto"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984"
+   ],
+   "matchedBy": {
+    "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984": "前綴"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Shakuhachi And Bossa Nova Vol.2",
+   "firstReleaseDate": "1971",
+   "earliestRelease": {
+    "date": "1971",
+    "title": "Shakuhachi And Bossa Nova Vol.2",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Shakuhachi And Bossa Nova Vol.2"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Barbra Streisand",
@@ -753,7 +2328,51 @@
   "note": "Live",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Barbra Streisand",
+   "Streisand, Barbra",
+   "B. Streizande",
+   "Barbara Joan Streisand",
+   "Barbara Streisand",
+   "Barbara Striesand",
+   "Streisand Barbra",
+   "バーブラ・ストライサンド",
+   "芭芭拉史翠珊"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Barbra Streisand & Kris Kristofferson｜A Star Is Born｜1976",
+    "seed｜Barbra Streisand｜Guilty｜1980",
+    "seed｜Barbra Streisand｜People｜1964",
+    "seed｜Barbra Streisand｜The Way We Were｜1974",
+    "seed｜Barbra Streisand｜The Barbra Streisand Album｜1963",
+    "seed｜Barbra Streisand｜Stoney End｜1971"
+   ],
+   "matchedBy": {
+    "seed｜Barbra Streisand & Kris Kristofferson｜A Star Is Born｜1976": "聯名內含",
+    "seed｜Barbra Streisand｜Guilty｜1980": "等值",
+    "seed｜Barbra Streisand｜People｜1964": "等值",
+    "seed｜Barbra Streisand｜The Way We Were｜1974": "等值",
+    "seed｜Barbra Streisand｜The Barbra Streisand Album｜1963": "等值",
+    "seed｜Barbra Streisand｜Stoney End｜1971": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Live Concert at the Forum",
+   "firstReleaseDate": "1972-10",
+   "earliestRelease": {
+    "date": "1972",
+    "title": "Live Concert at the Forum",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Live Concert at the Forum",
+    "Live Concert At The Forum"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Kimiko Kasai with Gil Evans Orchestra",
@@ -774,6 +2393,64 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Kimiko Kasai with Gil Evans Orchestra",
+   "笠井紀美子",
+   "Kasai, Kimiko",
+   "Kimiko Kasai",
+   "かさい きみこ",
+   "笠井 紀美子",
+   "The Gil Evans Orchestra",
+   "Evans, Gil, Orchestra, The",
+   "Gil Evans Orchestra",
+   "Gil Evans and His Orchestra"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜笠井紀美子｜Butterfly｜1979",
+    "seed｜笠井紀美子｜Just Friends｜1970",
+    "seed｜笠井紀美子｜Umbrella｜1972",
+    "seed｜笠井紀美子｜What's New｜1973",
+    "seed｜笠井紀美子｜Thanks, Dear｜1974",
+    "seed｜笠井紀美子｜This Is My Love｜1975",
+    "seed｜笠井紀美子｜TOKYO SPECIAL｜1977",
+    "c134｜笠井紀美子｜Just Friends｜1970",
+    "c134｜笠井紀美子｜Umbrella｜1972",
+    "c134｜笠井紀美子｜What's New｜1973",
+    "c134｜笠井紀美子｜Thanks, Dear｜1974",
+    "c134｜笠井紀美子｜This Is My Love｜1975",
+    "c134｜笠井紀美子｜TOKYO SPECIAL｜1977"
+   ],
+   "matchedBy": {
+    "seed｜笠井紀美子｜Butterfly｜1979": "等值",
+    "seed｜笠井紀美子｜Just Friends｜1970": "等值",
+    "seed｜笠井紀美子｜Umbrella｜1972": "等值",
+    "seed｜笠井紀美子｜What's New｜1973": "等值",
+    "seed｜笠井紀美子｜Thanks, Dear｜1974": "等值",
+    "seed｜笠井紀美子｜This Is My Love｜1975": "等值",
+    "seed｜笠井紀美子｜TOKYO SPECIAL｜1977": "等值",
+    "c134｜笠井紀美子｜Just Friends｜1970": "等值",
+    "c134｜笠井紀美子｜Umbrella｜1972": "等值",
+    "c134｜笠井紀美子｜What's New｜1973": "等值",
+    "c134｜笠井紀美子｜Thanks, Dear｜1974": "等值",
+    "c134｜笠井紀美子｜This Is My Love｜1975": "等值",
+    "c134｜笠井紀美子｜TOKYO SPECIAL｜1977": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Satin Doll",
+   "firstReleaseDate": "1972",
+   "earliestRelease": {
+    "date": "1972",
+    "title": "Satin Doll",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Satin Doll"
+   ],
+   "note": ""
+  }
  }
 ]

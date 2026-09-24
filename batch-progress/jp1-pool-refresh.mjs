@@ -12,6 +12,8 @@ for (const f of fs.readdirSync('desc-tools/batches/cards').filter(x=>/^c\d+-card
   for (const c of (Array.isArray(a)?a:Object.values(a))) pool.push({artist:c.artist,album:c.album,year:c.year,rgMbid:c.rgMbid,src:f.replace('-cards.json','')});
 }
 const poolRg = new Set(pool.filter(p=>p.rgMbid).map(p=>p.rgMbid));
+const TODAY = new Date().toISOString().slice(0, 10);
+const POOLBATCHES = new Set(pool.filter(p=>p.src!=='seed').map(p=>p.src)).size;
 console.log(`池：${pool.length} 列（含本機卡單 ${new Set(pool.filter(p=>p.src!=='seed').map(p=>p.src)).size} 批）`);
 
 for (const b of process.argv.slice(2)) {
@@ -49,7 +51,9 @@ for (const b of process.argv.slice(2)) {
     if (inPoolNow) { coll++; r.poolRecheck = { status:'⚠ 確定撞池——退', hit: exact, artistAlbumsInPool: hits, matchedBy: why }; }
     else if (hits.length) { hint++; r.poolRecheck = { status:'同藝人在池中，盤名不同——**逐張人工比**', artistAlbumsInPool: hits, matchedBy: why }; }
     else if (!anyCJK) { flat++; r.poolRecheck = { status:'⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）', artistAlbumsInPool: [] }; }
-    else { none++; r.poolRecheck = { status:'池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-22、含 c-173…c-177 卡單）', artistAlbumsInPool: [] }; }
+    // ⚠ 2026-09-24：這一行原本把比對日與涵蓋批次寫死成 `2026-09-22、含 c-173…c-177`，
+    // 於是 jp-2 線切出來的 slice 帶著一句與事實不符的說明。改成當場產生。
+    else { none++; r.poolRecheck = { status:`池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 ${TODAY}、池 ${pool.length} 列／${POOLBATCHES} 批卡單）`, artistAlbumsInPool: [] }; }
   }
   fs.writeFileSync(p, JSON.stringify(S,null,1) + '\n');
   console.log(`${b}：確定撞池 ${coll}｜要人工比 ${hint}｜全羅馬字 ${flat}｜查無 ${none}`);

@@ -18,7 +18,45 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Casiopea",
+   "CASIOPEA 3rd",
+   "CASIOPEA-P4",
+   "Casiopea-P4",
+   "カシオペア"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Casiopea｜Casiopea｜1979",
+    "seed｜Casiopea｜Mint Jams｜1982",
+    "seed｜Casiopea｜The Party｜1990",
+    "seed｜Casiopea｜Dramatic｜1993",
+    "seed｜Casiopea｜Super Flight｜1979"
+   ],
+   "matchedBy": {
+    "seed｜Casiopea｜Casiopea｜1979": "等值",
+    "seed｜Casiopea｜Mint Jams｜1982": "等值",
+    "seed｜Casiopea｜The Party｜1990": "等值",
+    "seed｜Casiopea｜Dramatic｜1993": "等值",
+    "seed｜Casiopea｜Super Flight｜1979": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "EYES OF THE MIND",
+   "firstReleaseDate": "1981-04-21",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "EYES OF THE MIND",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "EYES OF THE MIND",
+    "Eyes of the Mind"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "大村憲司",
@@ -39,7 +77,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "大村憲司",
+   "Omura, Kenji",
+   "Kenji Ohmura",
+   "Kenji Omura"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "春がいっぱい",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "春がいっぱい",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "春がいっぱい"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Bob James",
@@ -60,7 +121,39 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Bob James",
+   "James, Bob",
+   "Robert James",
+   "Robert M. James",
+   "Robert McElhiney James"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Bob James｜One｜1974",
+    "seed｜Bob James｜Two｜1975"
+   ],
+   "matchedBy": {
+    "seed｜Bob James｜One｜1974": "等值",
+    "seed｜Bob James｜Two｜1975": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Sign of the Times",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Sign of the Times",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Sign of the Times",
+    "Sign Of The Times"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Herbie Hancock Trio with Ron Carter + Tony Williams",
@@ -81,7 +174,94 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Herbie Hancock Trio with Ron Carter + Tony Williams",
+   "The Herbie Hancock Trio",
+   "Hancock, Herbie, The, Trio",
+   "Ron Carter",
+   "Carter, Ron",
+   "Ronald Levin Carter, Sr.",
+   "Tony Williams",
+   "Williams, Tony",
+   "Anthony Tillmon Williams",
+   "Anthony Williams",
+   "トニーウィリアムズ"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Tony Williams｜Life Time｜1964",
+    "seed｜Tony Williams｜Spring｜1965",
+    "seed｜Tony Williams Lifetime｜Emergency!｜1969",
+    "seed｜Red Garland / Ron Carter / Philly Joe Jones｜Crossings｜1978",
+    "seed｜Jim Hall & Ron Carter｜Alone Together｜1973",
+    "c148｜Tony Williams｜Foreign Intrigue｜1985",
+    "c148｜Tony Williams｜Civilization｜1987",
+    "c149｜Tony Williams｜Angel Street｜1988",
+    "c149｜Tony Williams｜Native Heart｜1990",
+    "c150｜Ron Carter｜Ron Carter Meets Bach｜1992",
+    "c151｜Tony Williams｜The Story of Neptune｜1992",
+    "c151｜Ron Carter｜Friends｜1993",
+    "c151｜Tony Williams｜Tokyo Live｜1993",
+    "c153｜Ron Carter｜Mr. Bow-Tie｜1995",
+    "c154｜Ron Carter｜The Bass and I｜1997",
+    "c156｜Ron Carter｜Orfeu｜1999",
+    "c157｜Ron Carter｜When Skies Are Grey｜2000",
+    "c158｜Ron Carter｜The Golden Striker｜2003",
+    "c160｜Ron Carter｜Dear Miles,｜2006",
+    "c161｜Ron Carter｜Jazz & Bossa｜2008",
+    "c164｜Ron Carter & Danny Simmons｜The Brown Beatnik Tomes (Live at BRIC House)｜2019",
+    "c167｜Ron Carter, Ricky Dillard｜Sweet, Sweet Spirit｜2026",
+    "c168｜Ron Carter Trio｜So What｜1998",
+    "c171｜Ron Carter｜Jazz, My Romance｜1994",
+    "c171｜Ron Carter｜Brandenburg Concerto｜1996",
+    "c171｜Ron Carter｜Stardust｜2001"
+   ],
+   "matchedBy": {
+    "seed｜Tony Williams｜Life Time｜1964": "等值",
+    "seed｜Tony Williams｜Spring｜1965": "等值",
+    "seed｜Tony Williams Lifetime｜Emergency!｜1969": "聯名內含",
+    "seed｜Red Garland / Ron Carter / Philly Joe Jones｜Crossings｜1978": "聯名內含",
+    "seed｜Jim Hall & Ron Carter｜Alone Together｜1973": "聯名內含",
+    "c148｜Tony Williams｜Foreign Intrigue｜1985": "等值",
+    "c148｜Tony Williams｜Civilization｜1987": "等值",
+    "c149｜Tony Williams｜Angel Street｜1988": "等值",
+    "c149｜Tony Williams｜Native Heart｜1990": "等值",
+    "c150｜Ron Carter｜Ron Carter Meets Bach｜1992": "等值",
+    "c151｜Tony Williams｜The Story of Neptune｜1992": "等值",
+    "c151｜Ron Carter｜Friends｜1993": "等值",
+    "c151｜Tony Williams｜Tokyo Live｜1993": "等值",
+    "c153｜Ron Carter｜Mr. Bow-Tie｜1995": "等值",
+    "c154｜Ron Carter｜The Bass and I｜1997": "等值",
+    "c156｜Ron Carter｜Orfeu｜1999": "等值",
+    "c157｜Ron Carter｜When Skies Are Grey｜2000": "等值",
+    "c158｜Ron Carter｜The Golden Striker｜2003": "等值",
+    "c160｜Ron Carter｜Dear Miles,｜2006": "等值",
+    "c161｜Ron Carter｜Jazz & Bossa｜2008": "等值",
+    "c164｜Ron Carter & Danny Simmons｜The Brown Beatnik Tomes (Live at BRIC House)｜2019": "聯名內含",
+    "c167｜Ron Carter, Ricky Dillard｜Sweet, Sweet Spirit｜2026": "聯名內含",
+    "c168｜Ron Carter Trio｜So What｜1998": "聯名內含",
+    "c171｜Ron Carter｜Jazz, My Romance｜1994": "等值",
+    "c171｜Ron Carter｜Brandenburg Concerto｜1996": "等值",
+    "c171｜Ron Carter｜Stardust｜2001": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Herbie Hancock Trio with Ron Carter + Tony Williams",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Herbie Hancock Trio with Ron Carter + Tony Williams",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Herbie Hancock Trio with Ron Carter + Tony Williams",
+    "Herbie Hancock Trio With Ron Carter + Tony Williams",
+    "Herbie Hancock Trio with Ron Carter & Tony Williams"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Marlene",
@@ -102,7 +282,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Marlene",
+   "Marlene Pena Lim",
+   "マリーン",
+   "マリーン・ペーニャ・リム"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "JUST LIKE FIRST LOVE",
+   "firstReleaseDate": "1981-10-21",
+   "earliestRelease": {
+    "date": "1981-10-21",
+    "title": "JUST LIKE FIRST LOVE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "JUST LIKE FIRST LOVE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Masahiko Satoh & Medical Sugar Bank",
@@ -123,7 +326,81 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Masahiko Satoh & Medical Sugar Bank",
+   "佐藤允彦",
+   "Satoh, Masahiko",
+   "Masahiko Sato",
+   "Masahiko Satoh",
+   "Masahiko Satō",
+   "SATOU Masahiko",
+   "さとう まさひこ",
+   "佐藤 允彦",
+   "Medical Sugar Bank"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜佐藤允彦とサウンド・ブレイカーズ｜Amalgamation｜1971",
+    "seed｜佐藤允彦｜Trinity｜1971",
+    "seed｜佐藤允彦トリオ｜Palladium｜1969",
+    "seed｜佐藤允彦｜Holography｜1970",
+    "seed｜佐藤允彦トリオ｜Transformation '69/'71｜1971",
+    "seed｜佐藤允彦｜マグノリアの木｜1977",
+    "seed｜佐藤允彦｜All-in All-out｜1979",
+    "c121｜佐藤允彦｜Trinity｜1971",
+    "c132｜佐藤允彦トリオ｜Palladium｜1969",
+    "c132｜佐藤允彦｜Holography｜1970",
+    "c132｜佐藤允彦トリオ｜Transformation '69/'71｜1971",
+    "c132｜佐藤允彦｜マグノリアの木｜1977",
+    "c132｜佐藤允彦｜All-in All-out｜1979",
+    "c174｜宮間利之とニューハード + 佐藤允彦｜Canto of Libra｜1970",
+    "c174｜佐藤允彦 & ウォルフガング・ダウナー｜Pianology｜1971",
+    "c175｜ツトム・ヤマシタ & 佐藤允彦｜Metempsychosis｜1971",
+    "c175｜佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア｜Bridge Over Troubled Water｜1971",
+    "c175｜佐藤允彦 & ゲイリー・ピーコック｜三昧｜1972",
+    "c175｜宮間利之とニューハード + 佐藤允彦｜Yamataifu｜1972",
+    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988",
+    "c59｜佐藤允彦とサウンド・ブレイカーズ｜Amalgamation｜1971"
+   ],
+   "matchedBy": {
+    "seed｜佐藤允彦とサウンド・ブレイカーズ｜Amalgamation｜1971": "前綴",
+    "seed｜佐藤允彦｜Trinity｜1971": "等值",
+    "seed｜佐藤允彦トリオ｜Palladium｜1969": "前綴",
+    "seed｜佐藤允彦｜Holography｜1970": "等值",
+    "seed｜佐藤允彦トリオ｜Transformation '69/'71｜1971": "前綴",
+    "seed｜佐藤允彦｜マグノリアの木｜1977": "等值",
+    "seed｜佐藤允彦｜All-in All-out｜1979": "等值",
+    "c121｜佐藤允彦｜Trinity｜1971": "等值",
+    "c132｜佐藤允彦トリオ｜Palladium｜1969": "前綴",
+    "c132｜佐藤允彦｜Holography｜1970": "等值",
+    "c132｜佐藤允彦トリオ｜Transformation '69/'71｜1971": "前綴",
+    "c132｜佐藤允彦｜マグノリアの木｜1977": "等值",
+    "c132｜佐藤允彦｜All-in All-out｜1979": "等值",
+    "c174｜宮間利之とニューハード + 佐藤允彦｜Canto of Libra｜1970": "聯名內含",
+    "c174｜佐藤允彦 & ウォルフガング・ダウナー｜Pianology｜1971": "前綴",
+    "c175｜ツトム・ヤマシタ & 佐藤允彦｜Metempsychosis｜1971": "聯名內含",
+    "c175｜佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア｜Bridge Over Troubled Water｜1971": "前綴",
+    "c175｜佐藤允彦 & ゲイリー・ピーコック｜三昧｜1972": "前綴",
+    "c175｜宮間利之とニューハード + 佐藤允彦｜Yamataifu｜1972": "聯名內含",
+    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988": "聯名內含",
+    "c59｜佐藤允彦とサウンド・ブレイカーズ｜Amalgamation｜1971": "前綴"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "MSB Two",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "MSB Two",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "MSB Two"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "THE SQUARE",
@@ -144,7 +421,40 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "THE SQUARE",
+   "T‐SQUARE",
+   "T-Square",
+   "The Square",
+   "T‐Square",
+   "T‐スクェア",
+   "ザ・スクェア"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜THE SQUARE｜TRUTH｜1987"
+   ],
+   "matchedBy": {
+    "seed｜THE SQUARE｜TRUTH｜1987": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Magic",
+   "firstReleaseDate": "1981-11-01",
+   "earliestRelease": {
+    "date": "1981-11-01",
+    "title": "Magic",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Magic",
+    "MAGIC",
+    "マジック"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "ラジ",
@@ -165,7 +475,35 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "ラジ",
+   "RAJIE",
+   "Rajie",
+   "本田淳子"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Rajie｜Heart to Heart｜1977"
+   ],
+   "matchedBy": {
+    "seed｜Rajie｜Heart to Heart｜1977": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "ACOUSTIC MOON",
+   "firstReleaseDate": "1981-11-21",
+   "earliestRelease": {
+    "date": "1981-11-21",
+    "title": "ACOUSTIC MOON",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ACOUSTIC MOON"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "大野雄二",
@@ -186,7 +524,60 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "大野雄二",
+   "Ohno, Yuji",
+   "OONO Yuuji",
+   "Yoji Ohno",
+   "Yuhji Ohno",
+   "Yuji Ohno",
+   "Yuji Ono",
+   "ŌNO Yūji",
+   "大野 雄二"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜大野雄二｜ルパン三世 カリオストロの城 オリジナル・サウンドトラック｜1983",
+    "seed｜大野雄二｜Original Soundtrack from Lupin III｜1978",
+    "seed｜大野雄二｜Sound Adventure Act.1｜1975",
+    "seed｜大野雄二トリオ｜My Little Angel｜1976",
+    "seed｜大野雄二｜Space Kid｜1978",
+    "seed｜大野雄二｜Lifetide｜1982",
+    "c102｜大野雄二｜Original Soundtrack from Lupin III｜1978",
+    "c133｜大野雄二｜Sound Adventure Act.1｜1975",
+    "c133｜大野雄二トリオ｜My Little Angel｜1976",
+    "c133｜大野雄二｜Space Kid｜1978",
+    "c133｜大野雄二｜Lifetide｜1982"
+   ],
+   "matchedBy": {
+    "seed｜大野雄二｜ルパン三世 カリオストロの城 オリジナル・サウンドトラック｜1983": "等值",
+    "seed｜大野雄二｜Original Soundtrack from Lupin III｜1978": "等值",
+    "seed｜大野雄二｜Sound Adventure Act.1｜1975": "等值",
+    "seed｜大野雄二トリオ｜My Little Angel｜1976": "前綴",
+    "seed｜大野雄二｜Space Kid｜1978": "等值",
+    "seed｜大野雄二｜Lifetide｜1982": "等值",
+    "c102｜大野雄二｜Original Soundtrack from Lupin III｜1978": "等值",
+    "c133｜大野雄二｜Sound Adventure Act.1｜1975": "等值",
+    "c133｜大野雄二トリオ｜My Little Angel｜1976": "前綴",
+    "c133｜大野雄二｜Space Kid｜1978": "等值",
+    "c133｜大野雄二｜Lifetide｜1982": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "コスモス",
+   "firstReleaseDate": "1981-02-25",
+   "earliestRelease": {
+    "date": "1981-02-25",
+    "title": "コスモス",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "コスモス"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "日野皓正",
@@ -207,7 +598,80 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "日野皓正",
+   "Hino, Terumasa",
+   "Terumasa Hino",
+   "ひの てるまさ",
+   "日野 皓正"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜日野皓正クインテット｜Live!｜1973",
+    "seed｜日野皓正｜Live in Concert｜1975",
+    "seed｜日野皓正｜Hi-nology｜1969",
+    "seed｜日野皓正｜Alone, Alone and Alone｜1967",
+    "seed｜日野皓正｜Feelin' Good｜1968",
+    "seed｜日野皓正クインテット｜Into the Heaven｜1970",
+    "seed｜日野皓正クインテット｜Hino at Berlin Jazz Festival '71｜1971",
+    "seed｜日野皓正｜Journey Into My Mind｜1973",
+    "seed｜日野皓正｜Into Eternity｜1974",
+    "c132｜日野皓正｜Feelin' Good｜1968",
+    "c132｜日野皓正クインテット｜Into the Heaven｜1970",
+    "c132｜日野皓正クインテット｜Hino at Berlin Jazz Festival '71｜1971",
+    "c132｜日野皓正｜Journey Into My Mind｜1973",
+    "c132｜日野皓正｜Into Eternity｜1974",
+    "c149｜日野皓正｜Bluestruck｜1989",
+    "c150｜日野皓正｜Unforgettable｜1992",
+    "c151｜日野皓正｜Spark｜1994",
+    "c153｜日野皓正 & 菊地雅章｜Acoustic Boogie｜1995",
+    "c175｜Mal Waldron & 日野皓正｜Reminicent Suite｜1973",
+    "c176｜日野皓正｜May Dance｜1977",
+    "c177｜日野皓正｜Hip Seagull｜1978",
+    "c177｜日野皓正｜City Connection｜1979",
+    "c178｜日野皓正｜Daydream｜1980"
+   ],
+   "matchedBy": {
+    "seed｜日野皓正クインテット｜Live!｜1973": "前綴",
+    "seed｜日野皓正｜Live in Concert｜1975": "等值",
+    "seed｜日野皓正｜Hi-nology｜1969": "等值",
+    "seed｜日野皓正｜Alone, Alone and Alone｜1967": "等值",
+    "seed｜日野皓正｜Feelin' Good｜1968": "等值",
+    "seed｜日野皓正クインテット｜Into the Heaven｜1970": "前綴",
+    "seed｜日野皓正クインテット｜Hino at Berlin Jazz Festival '71｜1971": "前綴",
+    "seed｜日野皓正｜Journey Into My Mind｜1973": "等值",
+    "seed｜日野皓正｜Into Eternity｜1974": "等值",
+    "c132｜日野皓正｜Feelin' Good｜1968": "等值",
+    "c132｜日野皓正クインテット｜Into the Heaven｜1970": "前綴",
+    "c132｜日野皓正クインテット｜Hino at Berlin Jazz Festival '71｜1971": "前綴",
+    "c132｜日野皓正｜Journey Into My Mind｜1973": "等值",
+    "c132｜日野皓正｜Into Eternity｜1974": "等值",
+    "c149｜日野皓正｜Bluestruck｜1989": "等值",
+    "c150｜日野皓正｜Unforgettable｜1992": "等值",
+    "c151｜日野皓正｜Spark｜1994": "等值",
+    "c153｜日野皓正 & 菊地雅章｜Acoustic Boogie｜1995": "前綴",
+    "c175｜Mal Waldron & 日野皓正｜Reminicent Suite｜1973": "聯名內含",
+    "c176｜日野皓正｜May Dance｜1977": "等值",
+    "c177｜日野皓正｜Hip Seagull｜1978": "等值",
+    "c177｜日野皓正｜City Connection｜1979": "等值",
+    "c178｜日野皓正｜Daydream｜1980": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Double Rainbow",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Double Rainbow",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Double Rainbow"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Dollar Brand / Archie Shepp",
@@ -228,7 +692,116 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Dollar Brand / Archie Shepp",
+   "Abdullah Ibrahim",
+   "Ibrahim, Abdullah",
+   "Abdullah Abrahim",
+   "Abdullah Ibrahim (Dollar Brand)",
+   "Adolph Johannes Brand",
+   "Dollar Brand",
+   "Dollar Brand / Abdullah Ibrahim",
+   "Dollar Brand; Abdullah Ibrahim",
+   "ダラー・ブランド",
+   "Archie Shepp",
+   "Shepp, Archie",
+   "Archie Vernon Shepp"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Archie Shepp｜Attica Blues｜1972",
+    "seed｜Archie Shepp｜Fire Music｜1965",
+    "seed｜Archie Shepp｜Four for Trane｜1964",
+    "seed｜Dollar Brand｜African Piano｜1970",
+    "seed｜Abdullah Ibrahim｜Water from an Ancient Well｜1986",
+    "seed｜Archie Shepp｜Things Have Got to Change｜1971",
+    "seed｜Archie Shepp Quartet｜Blue Ballads｜1996",
+    "seed｜Archie Shepp Quartet｜True Blue｜1999",
+    "seed｜Archie Shepp & Horace Parlan｜Trouble in Mind｜1980",
+    "seed｜Archie Shepp and Horace Parlan｜Goin' Home｜1977",
+    "seed｜Archie Shepp & Niels-Henning Ørsted Pedersen｜Looking at Bird｜1981",
+    "seed｜Abdullah Ibrahim｜African Magic｜2002",
+    "seed｜Abdullah Ibrahim｜Dream Time｜2019",
+    "seed｜Abdullah Ibrahim｜A Celebration｜2004",
+    "seed｜Abdullah Ibrahim｜Banyana｜1976",
+    "seed｜Abdullah Ibrahim｜South Africa｜1986",
+    "seed｜Archie Shepp｜Steam｜1976",
+    "seed｜Abdullah Ibrahim｜Good News From Africa｜1990",
+    "seed｜Abdullah Ibrahim｜Mantra Mode｜1991",
+    "seed｜Abdullah Ibrahim｜Mindif｜1988",
+    "seed｜Abdullah Ibrahim｜African Dawn｜1983",
+    "seed｜Abdullah Ibrahim｜Africa - Tears and Laughter｜1979",
+    "seed｜Abdullah Ibrahim & Ekaya｜African River｜1989",
+    "seed｜Abdullah Ibrahim Trio｜Cape Town Revisited｜2000",
+    "seed｜Archie Shepp & Mal Waldron｜Left Alone Revisited｜2002",
+    "seed｜Abdullah Ibrahim｜African Symphony｜2001",
+    "seed｜Dollar Brand｜African Space Program｜1974",
+    "seed｜Abdullah Ibrahim｜Desert Flowers｜1992",
+    "seed｜Abdullah Ibrahim｜African Suite - For Trio and String Orchestra｜1998",
+    "seed｜Archie Shepp｜Poem for Malcolm｜1969",
+    "seed｜Archie Shepp｜Live at the Panafrican Festival｜1971",
+    "seed｜Archie Shepp And The Full Moon Ensemble｜Live in Antibes, Volume 1｜1971",
+    "seed｜Dollar Brand｜Dollar Brand Plays Sphere Jazz / Jazz Epistle – Verse 1｜2015",
+    "seed｜Archie Shepp｜Mama Too Tight｜1967",
+    "seed｜Archie Shepp｜The Magic of Ju-Ju｜1967",
+    "c131｜Archie Shepp｜Mama Too Tight｜1967",
+    "c131｜Archie Shepp｜The Magic of Ju-Ju｜1967"
+   ],
+   "matchedBy": {
+    "seed｜Archie Shepp｜Attica Blues｜1972": "等值",
+    "seed｜Archie Shepp｜Fire Music｜1965": "等值",
+    "seed｜Archie Shepp｜Four for Trane｜1964": "等值",
+    "seed｜Dollar Brand｜African Piano｜1970": "等值",
+    "seed｜Abdullah Ibrahim｜Water from an Ancient Well｜1986": "等值",
+    "seed｜Archie Shepp｜Things Have Got to Change｜1971": "等值",
+    "seed｜Archie Shepp Quartet｜Blue Ballads｜1996": "聯名內含",
+    "seed｜Archie Shepp Quartet｜True Blue｜1999": "聯名內含",
+    "seed｜Archie Shepp & Horace Parlan｜Trouble in Mind｜1980": "聯名內含",
+    "seed｜Archie Shepp and Horace Parlan｜Goin' Home｜1977": "聯名內含",
+    "seed｜Archie Shepp & Niels-Henning Ørsted Pedersen｜Looking at Bird｜1981": "聯名內含",
+    "seed｜Abdullah Ibrahim｜African Magic｜2002": "等值",
+    "seed｜Abdullah Ibrahim｜Dream Time｜2019": "等值",
+    "seed｜Abdullah Ibrahim｜A Celebration｜2004": "等值",
+    "seed｜Abdullah Ibrahim｜Banyana｜1976": "等值",
+    "seed｜Abdullah Ibrahim｜South Africa｜1986": "等值",
+    "seed｜Archie Shepp｜Steam｜1976": "等值",
+    "seed｜Abdullah Ibrahim｜Good News From Africa｜1990": "等值",
+    "seed｜Abdullah Ibrahim｜Mantra Mode｜1991": "等值",
+    "seed｜Abdullah Ibrahim｜Mindif｜1988": "等值",
+    "seed｜Abdullah Ibrahim｜African Dawn｜1983": "等值",
+    "seed｜Abdullah Ibrahim｜Africa - Tears and Laughter｜1979": "等值",
+    "seed｜Abdullah Ibrahim & Ekaya｜African River｜1989": "聯名內含",
+    "seed｜Abdullah Ibrahim Trio｜Cape Town Revisited｜2000": "聯名內含",
+    "seed｜Archie Shepp & Mal Waldron｜Left Alone Revisited｜2002": "聯名內含",
+    "seed｜Abdullah Ibrahim｜African Symphony｜2001": "等值",
+    "seed｜Dollar Brand｜African Space Program｜1974": "等值",
+    "seed｜Abdullah Ibrahim｜Desert Flowers｜1992": "等值",
+    "seed｜Abdullah Ibrahim｜African Suite - For Trio and String Orchestra｜1998": "等值",
+    "seed｜Archie Shepp｜Poem for Malcolm｜1969": "等值",
+    "seed｜Archie Shepp｜Live at the Panafrican Festival｜1971": "等值",
+    "seed｜Archie Shepp And The Full Moon Ensemble｜Live in Antibes, Volume 1｜1971": "聯名內含",
+    "seed｜Dollar Brand｜Dollar Brand Plays Sphere Jazz / Jazz Epistle – Verse 1｜2015": "等值",
+    "seed｜Archie Shepp｜Mama Too Tight｜1967": "等值",
+    "seed｜Archie Shepp｜The Magic of Ju-Ju｜1967": "等值",
+    "c131｜Archie Shepp｜Mama Too Tight｜1967": "等值",
+    "c131｜Archie Shepp｜The Magic of Ju-Ju｜1967": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Duet",
+   "firstReleaseDate": "1981-12",
+   "earliestRelease": {
+    "date": "1981-12",
+    "title": "Duet",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Duet"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Elvin Jones",
@@ -249,7 +822,75 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Elvin Jones",
+   "Jones, Elvin",
+   "Elvin Jones Group",
+   "Elvin Ray Jones"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Elvin Jones｜Puttin' It Together｜1968",
+    "seed｜Elvin Jones & Richard Davis｜Heavy Sounds｜1968",
+    "seed｜Elvin Jones｜Live at the Village Vanguard｜1974",
+    "seed｜Elvin Jones｜The Ultimate｜1969",
+    "seed｜Elvin Jones｜Poly-Currents｜1970",
+    "seed｜Elvin Jones｜Coalition｜1971",
+    "seed｜Elvin Jones｜Genesis｜1971",
+    "seed｜Elvin Jones｜Live at the Lighthouse｜1973",
+    "seed｜Elvin Jones｜Merry-Go-Round｜1972",
+    "seed｜Elvin Jones｜Mr. Jones｜1973",
+    "seed｜Elvin Jones｜The Prime Element｜1976",
+    "c142｜Elvin Jones｜The Ultimate｜1969",
+    "c142｜Elvin Jones｜Poly-Currents｜1970",
+    "c143｜Elvin Jones｜Coalition｜1971",
+    "c143｜Elvin Jones｜Genesis｜1971",
+    "c143｜Elvin Jones｜Live at the Lighthouse｜1973",
+    "c143｜Elvin Jones｜Merry-Go-Round｜1972",
+    "c143｜Elvin Jones｜Mr. Jones｜1973",
+    "c144｜Elvin Jones｜The Prime Element｜1976",
+    "c165｜Elvin Jones｜Revival (Live at Pookie's Pub)｜2022",
+    "c177｜原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster｜Giant Steps｜1978"
+   ],
+   "matchedBy": {
+    "seed｜Elvin Jones｜Puttin' It Together｜1968": "等值",
+    "seed｜Elvin Jones & Richard Davis｜Heavy Sounds｜1968": "聯名內含",
+    "seed｜Elvin Jones｜Live at the Village Vanguard｜1974": "等值",
+    "seed｜Elvin Jones｜The Ultimate｜1969": "等值",
+    "seed｜Elvin Jones｜Poly-Currents｜1970": "等值",
+    "seed｜Elvin Jones｜Coalition｜1971": "等值",
+    "seed｜Elvin Jones｜Genesis｜1971": "等值",
+    "seed｜Elvin Jones｜Live at the Lighthouse｜1973": "等值",
+    "seed｜Elvin Jones｜Merry-Go-Round｜1972": "等值",
+    "seed｜Elvin Jones｜Mr. Jones｜1973": "等值",
+    "seed｜Elvin Jones｜The Prime Element｜1976": "等值",
+    "c142｜Elvin Jones｜The Ultimate｜1969": "等值",
+    "c142｜Elvin Jones｜Poly-Currents｜1970": "等值",
+    "c143｜Elvin Jones｜Coalition｜1971": "等值",
+    "c143｜Elvin Jones｜Genesis｜1971": "等值",
+    "c143｜Elvin Jones｜Live at the Lighthouse｜1973": "等值",
+    "c143｜Elvin Jones｜Merry-Go-Round｜1972": "等值",
+    "c143｜Elvin Jones｜Mr. Jones｜1973": "等值",
+    "c144｜Elvin Jones｜The Prime Element｜1976": "等值",
+    "c165｜Elvin Jones｜Revival (Live at Pookie's Pub)｜2022": "等值",
+    "c177｜原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster｜Giant Steps｜1978": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Heart to Heart",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Heart to Heart",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Heart to Heart"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Kazumi Watanabe",
@@ -270,7 +911,53 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Kazumi Watanabe",
+   "渡辺香津美",
+   "Watanabe, Kazumi",
+   "わたなべ かづみ",
+   "渡辺 香津美"
+  ],
+  "poolRecheck": {
+   "status": "⚠ 確定撞池——退",
+   "hit": [
+    "seed｜渡辺香津美｜Dogatana｜1981"
+   ],
+   "artistAlbumsInPool": [
+    "seed｜渡辺香津美｜To Chi Ka｜1980",
+    "seed｜渡辺香津美｜KYLYN｜1979",
+    "seed｜渡辺香津美｜Olive's Step｜1977",
+    "seed｜渡辺香津美｜Dogatana｜1981",
+    "seed｜渡辺香津美｜Village In Bubbles｜1978",
+    "c174｜渡辺香津美｜Infinite｜1971",
+    "c175｜渡辺香津美｜Endless Way｜1975",
+    "c178｜渡辺香津美｜Talk You All Tight｜1981"
+   ],
+   "matchedBy": {
+    "seed｜渡辺香津美｜To Chi Ka｜1980": "等值",
+    "seed｜渡辺香津美｜KYLYN｜1979": "等值",
+    "seed｜渡辺香津美｜Olive's Step｜1977": "等值",
+    "seed｜渡辺香津美｜Dogatana｜1981": "等值",
+    "seed｜渡辺香津美｜Village In Bubbles｜1978": "等值",
+    "c174｜渡辺香津美｜Infinite｜1971": "等值",
+    "c175｜渡辺香津美｜Endless Way｜1975": "等值",
+    "c178｜渡辺香津美｜Talk You All Tight｜1981": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Dogatana",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Dogatana",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Dogatana"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Toshiko Akiyoshi Trio & Flute Quartet",
@@ -291,7 +978,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Toshiko Akiyoshi Trio & Flute Quartet",
+   "Toshiko Akiyoshi Trio",
+   "Akiyoshi, Toshiko Trio",
+   "Flute Quartet"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Tuttie Flutie",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Tuttie Flutie",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Tuttie Flutie"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "The Great Jazz Trio",
@@ -312,7 +1022,35 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "The Great Jazz Trio",
+   "Great Jazz Trio, The"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜The Great Jazz Trio｜At the Village Vanguard｜1978",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979"
+   ],
+   "matchedBy": {
+    "seed｜The Great Jazz Trio｜At the Village Vanguard｜1978": "等值",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Moreover",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Moreover",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Moreover"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "日野皓正",
@@ -333,7 +1071,80 @@
   "note": "Live",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "日野皓正",
+   "Hino, Terumasa",
+   "Terumasa Hino",
+   "ひの てるまさ",
+   "日野 皓正"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜日野皓正クインテット｜Live!｜1973",
+    "seed｜日野皓正｜Live in Concert｜1975",
+    "seed｜日野皓正｜Hi-nology｜1969",
+    "seed｜日野皓正｜Alone, Alone and Alone｜1967",
+    "seed｜日野皓正｜Feelin' Good｜1968",
+    "seed｜日野皓正クインテット｜Into the Heaven｜1970",
+    "seed｜日野皓正クインテット｜Hino at Berlin Jazz Festival '71｜1971",
+    "seed｜日野皓正｜Journey Into My Mind｜1973",
+    "seed｜日野皓正｜Into Eternity｜1974",
+    "c132｜日野皓正｜Feelin' Good｜1968",
+    "c132｜日野皓正クインテット｜Into the Heaven｜1970",
+    "c132｜日野皓正クインテット｜Hino at Berlin Jazz Festival '71｜1971",
+    "c132｜日野皓正｜Journey Into My Mind｜1973",
+    "c132｜日野皓正｜Into Eternity｜1974",
+    "c149｜日野皓正｜Bluestruck｜1989",
+    "c150｜日野皓正｜Unforgettable｜1992",
+    "c151｜日野皓正｜Spark｜1994",
+    "c153｜日野皓正 & 菊地雅章｜Acoustic Boogie｜1995",
+    "c175｜Mal Waldron & 日野皓正｜Reminicent Suite｜1973",
+    "c176｜日野皓正｜May Dance｜1977",
+    "c177｜日野皓正｜Hip Seagull｜1978",
+    "c177｜日野皓正｜City Connection｜1979",
+    "c178｜日野皓正｜Daydream｜1980"
+   ],
+   "matchedBy": {
+    "seed｜日野皓正クインテット｜Live!｜1973": "前綴",
+    "seed｜日野皓正｜Live in Concert｜1975": "等值",
+    "seed｜日野皓正｜Hi-nology｜1969": "等值",
+    "seed｜日野皓正｜Alone, Alone and Alone｜1967": "等值",
+    "seed｜日野皓正｜Feelin' Good｜1968": "等值",
+    "seed｜日野皓正クインテット｜Into the Heaven｜1970": "前綴",
+    "seed｜日野皓正クインテット｜Hino at Berlin Jazz Festival '71｜1971": "前綴",
+    "seed｜日野皓正｜Journey Into My Mind｜1973": "等值",
+    "seed｜日野皓正｜Into Eternity｜1974": "等值",
+    "c132｜日野皓正｜Feelin' Good｜1968": "等值",
+    "c132｜日野皓正クインテット｜Into the Heaven｜1970": "前綴",
+    "c132｜日野皓正クインテット｜Hino at Berlin Jazz Festival '71｜1971": "前綴",
+    "c132｜日野皓正｜Journey Into My Mind｜1973": "等值",
+    "c132｜日野皓正｜Into Eternity｜1974": "等值",
+    "c149｜日野皓正｜Bluestruck｜1989": "等值",
+    "c150｜日野皓正｜Unforgettable｜1992": "等值",
+    "c151｜日野皓正｜Spark｜1994": "等值",
+    "c153｜日野皓正 & 菊地雅章｜Acoustic Boogie｜1995": "前綴",
+    "c175｜Mal Waldron & 日野皓正｜Reminicent Suite｜1973": "聯名內含",
+    "c176｜日野皓正｜May Dance｜1977": "等值",
+    "c177｜日野皓正｜Hip Seagull｜1978": "等值",
+    "c177｜日野皓正｜City Connection｜1979": "等值",
+    "c178｜日野皓正｜Daydream｜1980": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Wheel Stone - Live in Nemuro, Volume 2",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Wheel Stone - Live in Nemuro, Volume 2",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Wheel Stone - Live in Nemuro, Volume 2"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Carioca",
@@ -354,7 +1165,29 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Carioca",
+   "カリオカ",
+   "CARIOCA"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Snooze",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Snooze",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Snooze"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "小林泉美",
@@ -375,7 +1208,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "小林泉美",
+   "Kobayashi, Izumi",
+   "Izumi Kobayashi",
+   "小林 泉美"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Coconuts High",
+   "firstReleaseDate": "1981-12-01",
+   "earliestRelease": {
+    "date": "1981-12-01",
+    "title": "Coconuts High",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Coconuts High"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "高中正義",
@@ -396,7 +1252,55 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "高中正義",
+   "Takanaka, Masayoshi",
+   "Masayoshi Takanaka",
+   "Takanaka Masayoshi",
+   "高中 正義"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜高中正義｜Seychelles｜1976",
+    "seed｜高中正義｜虹伝説 The Rainbow Goblins｜1981",
+    "seed｜高中正義｜Jolly Jive｜1979",
+    "c177｜高中正義｜On Guitar｜1978",
+    "c181｜高中正義｜Traumatic・極東探偵団｜1985",
+    "c181｜高中正義｜Jungle Jane Tour Live｜1986",
+    "c181｜高中正義｜Jungle Jane｜1986",
+    "c182｜高中正義｜Rendez-Vous｜1987",
+    "c182｜高中正義｜Hot Pepper｜1988",
+    "c182｜高中正義｜Gaps!｜1989"
+   ],
+   "matchedBy": {
+    "seed｜高中正義｜Seychelles｜1976": "等值",
+    "seed｜高中正義｜虹伝説 The Rainbow Goblins｜1981": "等值",
+    "seed｜高中正義｜Jolly Jive｜1979": "等值",
+    "c177｜高中正義｜On Guitar｜1978": "等值",
+    "c181｜高中正義｜Traumatic・極東探偵団｜1985": "等值",
+    "c181｜高中正義｜Jungle Jane Tour Live｜1986": "等值",
+    "c181｜高中正義｜Jungle Jane｜1986": "等值",
+    "c182｜高中正義｜Rendez-Vous｜1987": "等值",
+    "c182｜高中正義｜Hot Pepper｜1988": "等值",
+    "c182｜高中正義｜Gaps!｜1989": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "ALONE",
+   "firstReleaseDate": "1981-12-10",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "ALONE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "ALONE",
+    "Alone"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Charlie Haden / Jan Garbarek / Egberto Gismonti",
@@ -417,7 +1321,63 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Charlie Haden / Jan Garbarek / Egberto Gismonti",
+   "Charlie Haden",
+   "Haden, Charlie",
+   "Charles Edward Haden",
+   "チャーリー・ヘイデン",
+   "Jan Garbarek",
+   "Garbarek, Jan",
+   "Jan Garbarek Group",
+   "Egberto Gismonti",
+   "Gismonti, Egberto",
+   "Egberto Gismondi",
+   "Egberto Gismoti"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Jan Garbarek｜Afric Pepperbird｜1970",
+    "seed｜Jan Garbarek & The Hilliard Ensemble｜Officium｜1994",
+    "seed｜Charlie Haden｜Liberation Music Orchestra｜1970",
+    "seed｜Charlie Haden & Pat Metheny｜Beyond the Missouri Sky｜1997",
+    "seed｜Egberto Gismonti｜Sol do Meio Dia｜1978",
+    "seed｜Egberto Gismonti｜Água e Vinho｜1972",
+    "seed｜Egberto Gismonti｜Solo｜1979",
+    "seed｜Egberto Gismonti｜Dança das Cabeças｜1977",
+    "seed｜Egberto Gismonti｜Circense｜1980",
+    "seed｜Jan Garbarek｜Places｜1978",
+    "c150｜Charlie Haden and The Liberation Music Orchestra｜Dream Keeper｜1990"
+   ],
+   "matchedBy": {
+    "seed｜Jan Garbarek｜Afric Pepperbird｜1970": "等值",
+    "seed｜Jan Garbarek & The Hilliard Ensemble｜Officium｜1994": "聯名內含",
+    "seed｜Charlie Haden｜Liberation Music Orchestra｜1970": "等值",
+    "seed｜Charlie Haden & Pat Metheny｜Beyond the Missouri Sky｜1997": "聯名內含",
+    "seed｜Egberto Gismonti｜Sol do Meio Dia｜1978": "等值",
+    "seed｜Egberto Gismonti｜Água e Vinho｜1972": "等值",
+    "seed｜Egberto Gismonti｜Solo｜1979": "等值",
+    "seed｜Egberto Gismonti｜Dança das Cabeças｜1977": "等值",
+    "seed｜Egberto Gismonti｜Circense｜1980": "等值",
+    "seed｜Jan Garbarek｜Places｜1978": "等值",
+    "c150｜Charlie Haden and The Liberation Music Orchestra｜Dream Keeper｜1990": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Folk Songs",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Folk Songs",
+    "country": "DE"
+   },
+   "titlesSeen": [
+    "Folk Songs"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Masaru Imada",
@@ -438,7 +1398,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Masaru Imada",
+   "今田勝",
+   "Imada, Masaru",
+   "いまだまさる"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Carnival",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Carnival",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Carnival"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "松風鉱一",
@@ -459,7 +1442,42 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "松風鉱一",
+   "Matsukaze, Koichi",
+   "Koichi Matsukaze",
+   "Kouichi Matsukaze",
+   "Kōichi Matsukaze",
+   "マツカゼ, コウイチ"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Koichi Matsukaze Trio｜Earth Mother｜1978",
+    "seed｜Koichi Matsukaze Trio｜At the Room 427｜1976",
+    "c67｜Koichi Matsukaze Trio｜At the Room 427｜1976"
+   ],
+   "matchedBy": {
+    "seed｜Koichi Matsukaze Trio｜Earth Mother｜1978": "聯名內含",
+    "seed｜Koichi Matsukaze Trio｜At the Room 427｜1976": "聯名內含",
+    "c67｜Koichi Matsukaze Trio｜At the Room 427｜1976": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Good Nature",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "Good Nature",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Good Nature",
+    "GOOD NATURE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "鈴木良雄",
@@ -480,7 +1498,42 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "鈴木良雄",
+   "Suzuki, Yoshio",
+   "Yoshio \"Chin\" Suzuki",
+   "Yoshio Suzuki"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜鈴木良雄｜Morning Picture｜1984",
+    "c181｜鈴木良雄｜Touch of Rain｜1985",
+    "c181｜鈴木良雄 & MATSURI｜Fairy Tale｜1987",
+    "c76｜鈴木良雄｜Morning Picture｜1984"
+   ],
+   "matchedBy": {
+    "seed｜鈴木良雄｜Morning Picture｜1984": "等值",
+    "c181｜鈴木良雄｜Touch of Rain｜1985": "等值",
+    "c181｜鈴木良雄 & MATSURI｜Fairy Tale｜1987": "前綴",
+    "c76｜鈴木良雄｜Morning Picture｜1984": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "ウイングス",
+   "firstReleaseDate": "1981",
+   "earliestRelease": {
+    "date": "1981",
+    "title": "WINGS",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "WINGS",
+    "ウイングス"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "Casiopea",
@@ -501,7 +1554,47 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Casiopea",
+   "CASIOPEA 3rd",
+   "CASIOPEA-P4",
+   "Casiopea-P4",
+   "カシオペア"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Casiopea｜Casiopea｜1979",
+    "seed｜Casiopea｜Mint Jams｜1982",
+    "seed｜Casiopea｜The Party｜1990",
+    "seed｜Casiopea｜Dramatic｜1993",
+    "seed｜Casiopea｜Super Flight｜1979"
+   ],
+   "matchedBy": {
+    "seed｜Casiopea｜Casiopea｜1979": "等值",
+    "seed｜Casiopea｜Mint Jams｜1982": "等值",
+    "seed｜Casiopea｜The Party｜1990": "等值",
+    "seed｜Casiopea｜Dramatic｜1993": "等值",
+    "seed｜Casiopea｜Super Flight｜1979": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "4×4",
+   "firstReleaseDate": "1982-12-16",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "4x4",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "FOUR BY FOUR",
+    "4x4",
+    "4×4",
+    "4 X 4 (Four By Four)"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "artist": "Harvey Mason",
@@ -522,7 +1615,31 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Harvey Mason",
+   "Mason, Harvey",
+   "H. Mason",
+   "Harvey Mason, Sr.",
+   "Harvey William Mason"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Stone Mason",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Stone Mason",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Stone Mason"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Hiroshi Sato feat. Wendy Matthews",
@@ -543,7 +1660,48 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Hiroshi Sato feat. Wendy Matthews",
+   "佐藤博",
+   "Sato, Hiroshi",
+   "Hiroshi Sato",
+   "Hiroshi Satoh",
+   "佐藤浩",
+   "Wendy Matthews",
+   "Matthews, Wendy",
+   "Wendy Mathews"
+  ],
+  "poolRecheck": {
+   "status": "⚠ 確定撞池——退",
+   "hit": [
+    "seed｜佐藤博｜Awakening｜1982"
+   ],
+   "artistAlbumsInPool": [
+    "seed｜佐藤博｜Awakening｜1982",
+    "c176｜佐藤博｜Super Market｜1976",
+    "c176｜佐藤博｜Time｜1977"
+   ],
+   "matchedBy": {
+    "seed｜佐藤博｜Awakening｜1982": "等值",
+    "c176｜佐藤博｜Super Market｜1976": "等值",
+    "c176｜佐藤博｜Time｜1977": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Awakening",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Awakening",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Awakening",
+    "アウェイクニング スペシャル・エディション"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Osamu Kitajima",
@@ -564,7 +1722,29 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Osamu Kitajima",
+   "喜多嶋修",
+   "Kitajima, Osamu"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Dragon King",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Dragon King",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Dragon King"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "吉田美奈子",
@@ -585,7 +1765,45 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "吉田美奈子",
+   "Yoshida, Minako",
+   "Minako Yoshida",
+   "よしだ みなこ",
+   "吉田 美奈子"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜吉田美奈子｜Flapper｜1976",
+    "seed｜吉田美奈子｜Monochrome｜1980",
+    "seed｜吉田美奈子｜扉の冬｜1973",
+    "seed｜吉田美奈子｜Twilight Zone｜1977",
+    "seed｜吉田美奈子｜Let's Do It｜1978"
+   ],
+   "matchedBy": {
+    "seed｜吉田美奈子｜Flapper｜1976": "等值",
+    "seed｜吉田美奈子｜Monochrome｜1980": "等值",
+    "seed｜吉田美奈子｜扉の冬｜1973": "等值",
+    "seed｜吉田美奈子｜Twilight Zone｜1977": "等值",
+    "seed｜吉田美奈子｜Let's Do It｜1978": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "LIGHT’N UP",
+   "firstReleaseDate": "1982-09-21",
+   "earliestRelease": {
+    "date": "1982-09-21",
+    "title": "LIGHT’N UP",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "LIGHT’N UP",
+    "Light'n Up"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Greg Mathieson Project",
@@ -606,7 +1824,28 @@
   "note": "Live",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Greg Mathieson Project",
+   "Mathieson, Greg, Project"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Baked Potato Super Live!",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Baked Potato Super Live!",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Baked Potato Super Live!"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Herbie Hancock",
@@ -627,7 +1866,80 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Herbie Hancock",
+   "Hancock, Herbie",
+   "\"Mwandishi\" Herbie Hancock",
+   "H. Hancock",
+   "Hancock",
+   "Herbert Hancock",
+   "Herbert Jeffrey Hancock"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Herbie Hancock｜Maiden Voyage｜1965",
+    "seed｜Herbie Hancock｜Empyrean Isles｜1964",
+    "seed｜Herbie Hancock｜Takin' Off｜1962",
+    "seed｜Herbie Hancock｜Speak Like a Child｜1968",
+    "seed｜Herbie Hancock｜Sextant｜1973",
+    "seed｜Herbie Hancock｜Thrust｜1974",
+    "seed｜Herbie Hancock｜Mwandishi｜1971",
+    "seed｜Herbie Hancock｜Future Shock｜1983",
+    "seed｜Herbie Hancock｜Fat Albert Rotunda｜1969",
+    "seed｜Herbie Hancock｜Inventions & Dimensions｜1964",
+    "seed｜Herbie Hancock｜Dedication｜1974",
+    "seed｜Herbie Hancock｜Man-Child｜1975",
+    "seed｜Herbie Hancock｜Flood｜1975",
+    "seed｜Herbie Hancock｜Secrets｜1976",
+    "seed｜Herbie Hancock｜Sunlight｜1978",
+    "seed｜Herbie Hancock｜Mr. Hands｜1980",
+    "seed｜Herbie Hancock｜Blow-Up｜1967",
+    "seed｜Herbie Hancock｜Head Hunters｜1973",
+    "seed｜Herbie Hancock｜My Point of View｜1963",
+    "seed｜Herbie Hancock｜The Prisoner｜1970",
+    "c139｜Herbie Hancock｜My Point of View｜1963",
+    "c142｜Herbie Hancock｜The Prisoner｜1970"
+   ],
+   "matchedBy": {
+    "seed｜Herbie Hancock｜Maiden Voyage｜1965": "等值",
+    "seed｜Herbie Hancock｜Empyrean Isles｜1964": "等值",
+    "seed｜Herbie Hancock｜Takin' Off｜1962": "等值",
+    "seed｜Herbie Hancock｜Speak Like a Child｜1968": "等值",
+    "seed｜Herbie Hancock｜Sextant｜1973": "等值",
+    "seed｜Herbie Hancock｜Thrust｜1974": "等值",
+    "seed｜Herbie Hancock｜Mwandishi｜1971": "等值",
+    "seed｜Herbie Hancock｜Future Shock｜1983": "等值",
+    "seed｜Herbie Hancock｜Fat Albert Rotunda｜1969": "等值",
+    "seed｜Herbie Hancock｜Inventions & Dimensions｜1964": "等值",
+    "seed｜Herbie Hancock｜Dedication｜1974": "等值",
+    "seed｜Herbie Hancock｜Man-Child｜1975": "等值",
+    "seed｜Herbie Hancock｜Flood｜1975": "等值",
+    "seed｜Herbie Hancock｜Secrets｜1976": "等值",
+    "seed｜Herbie Hancock｜Sunlight｜1978": "等值",
+    "seed｜Herbie Hancock｜Mr. Hands｜1980": "等值",
+    "seed｜Herbie Hancock｜Blow-Up｜1967": "等值",
+    "seed｜Herbie Hancock｜Head Hunters｜1973": "等值",
+    "seed｜Herbie Hancock｜My Point of View｜1963": "等值",
+    "seed｜Herbie Hancock｜The Prisoner｜1970": "等值",
+    "c139｜Herbie Hancock｜My Point of View｜1963": "等值",
+    "c142｜Herbie Hancock｜The Prisoner｜1970": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Quartet",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Quartet",
+    "country": "XE"
+   },
+   "titlesSeen": [
+    "Quartet"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Marlene",
@@ -648,7 +1960,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Marlene",
+   "Marlene Pena Lim",
+   "マリーン",
+   "マリーン・ペーニャ・リム"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "My Favorite Songs",
+   "firstReleaseDate": "1982-12-21",
+   "earliestRelease": {
+    "date": "1982-12-21",
+    "title": "My Favorite Songs",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "My Favorite Songs"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Marlene with Seawind",
@@ -669,7 +2004,32 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Marlene with Seawind",
+   "Marlene",
+   "Marlene Pena Lim",
+   "マリーン",
+   "マリーン・ペーニャ・リム",
+   "Seawind"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Summer Nights",
+   "firstReleaseDate": "1982-07-21",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Summer Nights",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Summer Nights"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Masabumi Kikuchi",
@@ -690,7 +2050,59 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Masabumi Kikuchi",
+   "菊地雅章",
+   "Kikuchi, Masabumi",
+   "菊池雅章"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜菊地雅章｜Susto｜1981",
+    "seed｜菊地雅章｜End for the Beginning｜1973",
+    "seed｜Masabumi Kikuchi Quintet｜End For The Beginning｜1973",
+    "seed｜菊地雅章セクステット｜Matrix｜1969",
+    "seed｜菊地雅章セクステット｜Re-confirmation｜1970",
+    "seed｜菊地雅章｜East Wind｜1974",
+    "seed｜菊地雅章｜Wishes/Kochi｜1976",
+    "c132｜菊地雅章セクステット｜Matrix｜1969",
+    "c132｜菊地雅章セクステット｜Re-confirmation｜1970",
+    "c132｜菊地雅章｜East Wind｜1974",
+    "c132｜菊地雅章｜Wishes/Kochi｜1976",
+    "c153｜日野皓正 & 菊地雅章｜Acoustic Boogie｜1995",
+    "c177｜菊地雅章｜But Not For Me｜1978"
+   ],
+   "matchedBy": {
+    "seed｜菊地雅章｜Susto｜1981": "等值",
+    "seed｜菊地雅章｜End for the Beginning｜1973": "等值",
+    "seed｜Masabumi Kikuchi Quintet｜End For The Beginning｜1973": "聯名內含",
+    "seed｜菊地雅章セクステット｜Matrix｜1969": "前綴",
+    "seed｜菊地雅章セクステット｜Re-confirmation｜1970": "前綴",
+    "seed｜菊地雅章｜East Wind｜1974": "等值",
+    "seed｜菊地雅章｜Wishes/Kochi｜1976": "等值",
+    "c132｜菊地雅章セクステット｜Matrix｜1969": "前綴",
+    "c132｜菊地雅章セクステット｜Re-confirmation｜1970": "前綴",
+    "c132｜菊地雅章｜East Wind｜1974": "等值",
+    "c132｜菊地雅章｜Wishes/Kochi｜1976": "等值",
+    "c153｜日野皓正 & 菊地雅章｜Acoustic Boogie｜1995": "聯名內含",
+    "c177｜菊地雅章｜But Not For Me｜1978": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "One-Way Traveller",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "One-Way Traveller",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "One-Way Traveller"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "Maynard Ferguson",
@@ -711,7 +2123,34 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Maynard Ferguson",
+   "Ferguson, Maynard",
+   "Walter Maynard Ferguson"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Maynard Ferguson｜M.F. Horn｜1970"
+   ],
+   "matchedBy": {
+    "seed｜Maynard Ferguson｜M.F. Horn｜1970": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Hollywood",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Hollywood",
+    "country": "AU"
+   },
+   "titlesSeen": [
+    "Hollywood"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "NANIWA EXPRESS",
@@ -732,7 +2171,30 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "NANIWA EXPRESS",
+   "Naniwa Express",
+   "ナニワエキスプレス"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "NO FUSE",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "No Fuse",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "No Fuse",
+    "NO FUSE"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "The Players",
@@ -753,7 +2215,29 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "The Players",
+   "Players, The",
+   "ザ・プレイヤーズ"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Space Travel",
+   "firstReleaseDate": "1982",
+   "earliestRelease": {
+    "date": "1982",
+    "title": "Space Travel",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Space Travel"
+   ],
+   "note": ""
+  }
  },
  {
   "artist": "THE SQUARE",
@@ -774,6 +2258,38 @@
   "note": "",
   "period": "jp-2",
   "genre": "jazz",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "THE SQUARE",
+   "T‐SQUARE",
+   "T-Square",
+   "The Square",
+   "T‐Square",
+   "T‐スクェア",
+   "ザ・スクェア"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜THE SQUARE｜TRUTH｜1987"
+   ],
+   "matchedBy": {
+    "seed｜THE SQUARE｜TRUTH｜1987": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "脚線美の誘惑",
+   "firstReleaseDate": "1982-11-21",
+   "earliestRelease": {
+    "date": "1982-11-21",
+    "title": "脚線美の誘惑",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "脚線美の誘惑",
+    "Kyakusenbi no yuhwaku"
+   ],
+   "note": ""
+  }
  }
 ]
