@@ -10,7 +10,8 @@
 //   3. 「你負責 X 組」與組別參數一致；
 //   4. 裁定條號區間有沒有與「另一組用」的區間重疊；
 //   5. ⚠ 2026-09-25（主線第 1964-B 條，派工信第十五次出錯）：**張數與 hook 舉例是不是對方那一組的**；
-//   6. ⚠ 2026-09-25（主線第 1970-B 條）：**本批的 rulings.md 在派工前就要存在**（並行覆寫過一次）。
+//   6. ⚠ 2026-09-25（主線第 1970-B 條）：**本批的 rulings.md 在派工前就要存在**（並行覆寫過一次）；
+//   7. ⚠ 2026-09-25（主線第 1971-B 條，派工信第十八次出錯）：**「本組 <廠牌> N 張」回比 slice**。
 //      c-183 writer-2 的信裡 §二 逐字寫「本組五張的 hook 有四張是代稱開頭」並列了四個 a 組的 hook
 //      ——**我用 `.replace()` 換那一段而字串沒對上，整段靜靜留著 a 組的內容**（第三次同一種失效）。
 //      這一道用實際檔案的張數與 hook 原文回比，不靠我自己記得有沒有換到。
@@ -121,4 +122,23 @@ else {
   if (mineRange && !new RegExp(`${mineRange[1]}[–-]${mineRange[2]}`).test(t))
     console.log(`  （只報不擋）rulings.md 的檔頭沒有寫到本組區間 ${mineRange[1]}–${mineRange[2]}`);
 }
+// 7. ⚠ 2026-09-25（主線第 1971-B 條，派工信第十八次出錯）：**「本組 <廠牌> N 張」要回比 slice**。
+//    c-186 a 的信第二節寫的是 c-185 a 的廠牌分佈，而同一封信第六節自己給的是對的
+//    ——第五道擋不到，因為那些數字不是檔名也不是 hook。
+try {
+  const sp = `batch-progress/${batch}/slice.json`;
+  if (fs.existsSync(sp)) {
+    const rows = JSON.parse(fs.readFileSync(sp, 'utf8')).filter(r => r.g === gl);
+    const cnt = {};
+    for (const r of rows) cnt[r.house] = (cnt[r.house] || 0) + 1;
+    let checked = 0;
+    for (const m of s.matchAll(/本組[^\n]{0,8}?`([^`\n]{2,20})`\s*(\d+)\s*張/g)) {
+      const house = m[1], n = Number(m[2]);
+      if (!(house in cnt)) continue;
+      checked++;
+      if (cnt[house] !== n) warn(`廠牌張數不符：信裡「本組 \`${house}\` ${n} 張」，而 ${sp} 的 ${gl} 組實際 ${cnt[house]} 張`);
+    }
+    if (checked) console.log(`  廠牌張數回比 ${checked} 處 ✓`);
+  }
+} catch {}
 console.log(bad ? `\n標記 ${bad}` : '\n全部通過 ✓');

@@ -169,6 +169,26 @@ jp-1 的 slice 帶著 `why`（`rg-tag`／`artist-tag`／…）當曲風線索。
 ⚠ ⚠ **查日本樂手漢字名一律回打 `api.discogs.com/artists/<id>` 的 `realname`／`namevariations`／`profile`**
 （第 1890-B 條第四條路）——**c-184 兩組合計打了 278 個藝人頁、改對 25 個人名**，**這一條是本線最有產出的動作。**
 
+17. ⚠ ⚠ ⚠ **slice 的 `artist` 欄本身也會錯**（主線第 1971-B 條，c-186 a 實測 3/19＝16%，三種形狀）：
+   **(a) `Various Artists` 實為聯名**（該筆是八位吉他手）、**(b) MB 把盤名建成團名實體**（`カレイドスコープ`）、
+   **(c) 同一張碟兩個 RG**（`Samba Calioca` 與 `カリオカ` 是同一張 `Kitty MKF 1041`）。
+   ⚠ **本線切了四批才第一次抓到這一欄——`artist` 要與 `album`／`house`／`live` 同列，逐筆回查。**
+18. ⚠ ⚠ ⚠ **合輯的第 (f) 種看不見的形狀**（主線第 1971-B 條）：
+   **整張是池中既有錄音的重新排列，而所有機器欄位都說它是 Album**
+   ——`日野皓正《Horizon》`（1979）六軌全部來自池中兩張 1973／74 的碟、兩軌時長逐秒相同，
+   **MB 標 `Album`、`secondary-types` 空、RG tags 空、`titleCheck` 三欄一致、`chk-prop` 與六道 dedup 全部放行。**
+   ⚠ **唯一線索是 Discogs 原壓的 `formats` descriptor（`Compilation`）與 `notes` 裡寫出的來源 master**
+   ——**跑 `releases/<id>` 時一定要讀這兩欄。**
+19. ⚠ **再發版本數改成「取 MB 與 Discogs 的聯集」**（主線第 1971-B 條）：
+   **`THE SQUARE《Make Me A Star》` 是本線第一個反例——MB 10 筆 vs Discogs 9 版，MB 獨有兩筆實體。**
+   ⚠ **第 1858-B 條「以最早 release 的 title 為準」不含大小寫**（該筆 MB 最早 release 逐字 `Make me a Star`）。
+20. ⚠ **`recorded live` 在直刻盤上指「一次過錄音」，不是「有觀眾」**（主線第 1971-B 條）：
+   `Kahuna` 的 `Recorded live` ＋ 錄音室 ＋ `Direct-To-Masterdisk` 判非實況，
+   **決定性證據是廠牌自己 2004 年的併輯用場館名把兩種 `recorded live` 分開**（Yamaha Hall vs Victor Studios）。
+21. ⚠ ⚠ **第 4106 條的某一票兩方各佔一半時 ＝ 不可判定**（主線第 1971-B 條）：
+   **那一票不計分、門檻按比例向下取整**（第 1965-B 條）——**不要引入「按演奏時間」這種新的量化尺**，
+   **第 5680 條已經把人頭比這類指標排除在分界之外。**
+
 ## 四、交付
 
 **與 jp-1 完全相同**：`batch-progress/c1XX/prop-{a,b}.json`、
