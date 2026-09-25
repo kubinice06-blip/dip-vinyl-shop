@@ -52,3 +52,24 @@
 - `377794848` us｜《Concierto de Aranjuez》／Lex Vandyke｜1993｜18 軌｜依據：盤名直查｜**掛名沒過**
 - `1485748506` us｜《Concierto de Aranjuez》／Giulio Tampalini, Piercarlo Orizio & Arturo Benedetti Michelangeli｜2005｜13 軌｜依據：盤名直查｜**掛名沒過**
 - `997472828` us｜《Concierto de Aranjuez》／Muñoz Coca & Santi Pavón｜2015｜14 軌｜依據：盤名直查｜**掛名沒過**
+
+---
+
+## 主線逐筆裁定（2026-09-25，第 1974-B 條）：**11 張裡救回 2 張，其餘 9 張維持無來源**
+
+### ✓ 救回兩張（`recoveredBy: manual-catalogue-lookup`，`previewUrl` 兩張都有）
+
+- **`Cosmic Pulsation Unity《C・P・U》1976`** → `1853786046`
+  《C·P·U (Cosmic Pulsation Unity)》／**`Masahiko Togashi, Masahiko Satoh & Keiki Midorikawa`**｜1976｜2 軌。
+  **掛名是三位樂手的本名、團名在盤題裡**；**年份相同、2 軌＝A/B 兩面。**
+  ⚠ **回撈腳本標「掛名沒過」，但那是掛名寫法的差別，不是不同的碟。**
+- **`古沢良治郎カルテット《Racco》1977`** → `6803733513`《RACCO》／**`古澤良治郎カルテット`**｜1977｜7 軌。
+  ⚠ ⚠ **差的只有異體字 `沢`／`澤`**——**「掛名沒過」那一關對異體字完全沒有豁免。**
+
+### ✗ 其餘九張維持無來源
+
+**`深町純` 三張（`Spiral Steps`／`The Sea Of Dirac`／`Triangle Session`）的候選全部是他自己別的碟**
+（《六喩》1975／《オン・ザ・ムーヴ》1978／《ニューヨーク・オールスターズ・ライヴ》1978／《Sessions 1978》）
+——**「藝人目錄裡找得到這位藝人」不等於「找到這張碟」**（第 174／175 條）。
+**其餘六張是通用盤名撞別人的碟**（`家`／`Song Of The Birds`／`Soul Samba`／`Landscape` 一張回了八筆／
+`Concierto De Aranjuez` 全是古典錄音），**`渡辺香津美カルテット《Milky Shade》` 連候選都沒有。**

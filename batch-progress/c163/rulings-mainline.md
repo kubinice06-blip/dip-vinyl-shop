@@ -6498,3 +6498,38 @@ c-183 writer-1、c-184 研究層兩封 → **全部通過**（c-184 兩封原本
    ⚠ **但 hook-vs-未來正文 那一縫在結構上無法在鉤子層掃到——只能靠鉤子層挑字不要太通用**）。
 3. **b3 的拉丁專名 5 個（超過 `writer-base` 建議的 3 個以內）** → **維持**。
    **五個都是 note 四格的主體、實測 233 字未超標**；⚠ **`Gerald Oshita` 那一格是 a 組讓出的，只有這張寫得到，不砍。**
+
+## 第 1974-B 條（2026-09-25）：c-185／c-186 回撈層逐筆裁定——**19 張裡救回 4 張**，並立「掛名沒過」的兩種豁免
+
+**c-185：11 張未 ready → 救回 2 張**；**c-186：8 張未 ready → 救回 2 張**。
+**四張都有 `previewUrl`，`recoveredBy: manual-catalogue-lookup`。**
+⚠ **新腳本 `batch-progress/probe/manual-recover.mjs`**：吃 `<key> <collectionId> [front] [理由]`，
+**打 `itunes.apple.com/lookup` 取 collection ＋ 第一個有 preview 的 track，把理由寫進 `recoverNote`**；
+⚠ ⚠ **它拒絕覆寫已經有 `recoveredBy` 的鍵**（那一欄是 never-delete 不變量，本線曾經差點整批刪掉）。
+
+### 一、⚠ ⚠ 「掛名沒過」有兩種是**豁免**，不是退件理由
+
+1. ⚠ ⚠ **異體字**：`古沢良治郎カルテット` vs Apple 的 `古澤良治郎カルテット`（`沢`／`澤`）
+   ——**盤名、年份、軌數三項全同。** **`artistOk` 那一關對異體字完全沒有豁免，這是它第一次被抓到。**
+2. ⚠ ⚠ **團名在盤題裡、掛名是成員本名**：`Cosmic Pulsation Unity《C・P・U》` vs
+   `Masahiko Togashi, Masahiko Satoh & Keiki Midorikawa《C·P·U (Cosmic Pulsation Unity)》`
+   ——**年份相同、2 軌＝A/B 兩面。**
+   ⚠ **這一種與「羅馬字掛名」是同一族**（`上田力 & The Power Station` vs `Chikara Ueda & The Power Station`）。
+3. ⚠ ⚠ **另記一種 Apple 自己的誤標**：**`THE SQUARE《Midnight Lover》` 在 Apple 上逐字是 `Midnight Lover - EP`，
+   而它是六軌 LP**——**c-178 已有同形先例（Apple 標 `- EP`、實際是 33⅓ 轉全長盤）。**
+   **→ `- EP` 後綴不足以判它不是本盤，要看軌數與年份。**
+
+### 二、維持無來源的十五張，兩種形狀
+
+- ⚠ ⚠ **「藝人目錄裡找得到這位藝人」不等於「找到這張碟」**（第 174／175 條）：
+  **`深町純` 在 c-185 三張、c-186 一張，候選全部是他自己別的碟**（《六喩》／《オン・ザ・ムーヴ》／
+  《ニューヨーク・オールスターズ・ライヴ》／《Sessions 1978》）——**四張全退。**
+- **通用盤名撞別人的碟**：`家`／`Song Of The Birds`／`Soul Samba`／`Landscape`（一張回八筆）／
+  `Concierto De Aranjuez`（全是古典錄音）／`Peking`／`Kahuna`／`GAP`（美國的 `The Gap Band`）。
+- **連候選都沒有的**：`渡辺香津美カルテット《Milky Shade》`／`渡辺香津美 & The Gentle Thoughts《Mermaid Boulevard》`。
+
+### 三、⚠ 給探測層的兩條（下一批改腳本時一起做）
+
+1. **`artistOk`／`looseArtistOk` 要加異體字正規化**（`沢`↔`澤`、`崎`↔`﨑`、`辺`↔`邊`↔`邉` 這一族）。
+2. **盤題含團名時，把團名從 Apple 的 `collectionName` 裡切出來與掛名比一次**
+   ——**本次兩筆都是這樣救回的，而兩筆的 `rejectedMatch` 都只寫「掛名沒過」。**
