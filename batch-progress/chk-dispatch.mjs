@@ -94,13 +94,16 @@ if (mine) {
   const CN = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10, 十一: 11, 十二: 12, 十三: 13, 十四: 14, 十五: 15 };
   const claims = [];
   for (const m of s.matchAll(/你負責[^\n]{0,40}?(\d+) 張/g)) claims.push({ what: '你負責', n: Number(m[1]), text: m[0] });
-  for (const m of s.matchAll(/本組(\d+|[一二三四五六七八九十]{1,3})張/g)) claims.push({ what: '本組', n: Number(m[1]) || CN[m[1]] || 0, text: m[0] });
+  // ⚠ 2026-09-25（派工信第二十次出錯）：**要吃得下「本組 12 張」這種帶空白的寫法**
+  //  ——c-185 兩封寫作信的第六節逐字寫「本組 12 張」（那是 c-184 的張數），而第五道當時的正則沒有允許空白。
+  for (const m of s.matchAll(/本組\s*(\d+|[一二三四五六七八九十]{1,3})\s*張/g)) claims.push({ what: '本組', n: Number(m[1]) || CN[m[1]] || 0, text: m[0] });
+  for (const m of s.matchAll(/本(?:批|組)[^\n]{0,12}?(\d+)\s*張，每(?:寫|做)完/g)) claims.push({ what: '續跑那節', n: Number(m[1]), text: m[0] });
   // ⚠ 「本組N張」也會是子集的說法（「`渡辺貞夫` 本組三張」），所以只有**等於對方那組的張數**時才硬報
   // ——那正是「整段是對方那組的」的指紋（c-183 writer-2 逐字「本組五張」＝ a 組的 5 張）。
   const theirN = theirsRows ? theirsRows.rows.length : -1;
   for (const c of claims) {
     if (!c.n || c.n === n) continue;
-    if (c.what === '你負責' || c.n === theirN) warn(`張數不符：信裡「${c.text}」，而 ${mine.f} 實際 ${n} 張${c.n === theirN ? `——⚠ 這個數字正好是對方那組的張數` : ''}`);
+    if (c.what === '你負責' || c.what === '續跑那節' || c.n === theirN) warn(`張數不符：信裡「${c.text}」，而 ${mine.f} 實際 ${n} 張${c.n === theirN ? `——⚠ 這個數字正好是對方那組的張數` : ''}`);
     else console.log(`  （只報不擋）「${c.text}」不等於本組 ${n} 張，多半是子集的說法，自己看一眼`);
   }
   if (claims.length) console.log(`  張數宣稱 ${[...new Set(claims.map(c => c.n))].join('／')}｜實際 ${n}（${mine.f}）`);
