@@ -64047,12 +64047,14 @@
   "appleYear": "2025",
   "explicitness": "notExplicit",
   "trackCount": 8,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/32/8d/09328dfd-c321-c612-d52d-fb51d8aafc38/mzaf_6205883764604785567.plus.aac.p.m4a",
+  "previewUrl": null,
   "cleanedOnly": false,
   "yearDrift": 47,
   "reissueTitle": false,
   "aliasOnlyTitle": true,
-  "status": "ready"
+  "status": "unavailable",
+  "downgradedBy": "mainline-1980-B",
+  "downgradeNote": "⚠ 誤命中：aliasOnlyTitle 且 yearDrift 47（appleTitle Carioca／appleArtist Samba／2025）——不是本盤"
  },
  "深町純|Evening Star": {
   "batch": "c186",
@@ -64207,12 +64209,14 @@
   "appleYear": "2006",
   "explicitness": "notExplicit",
   "trackCount": 8,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/43/81/ed/mzm.usetosoq.aac.p.m4a",
+  "previewUrl": null,
   "cleanedOnly": false,
   "yearDrift": 27,
   "reissueTitle": false,
   "aliasOnlyTitle": true,
-  "status": "ready"
+  "status": "unavailable",
+  "downgradedBy": "mainline-1980-B",
+  "downgradeNote": "⚠ 誤命中：aliasOnlyTitle 且 yearDrift 27（appleTitle Players／appleArtist C-Money and the Players Inc／2006）——不是本盤"
  },
  "THE SQUARE|Make Me A Star": {
   "batch": "c186",
@@ -64254,5 +64258,474 @@
   "previewTrack": "A Clue",
   "recoveredBy": "manual-catalogue-lookup",
   "recoverNote": "Apple 掛名是羅馬字 `Chikara Ueda & The Power Station`、盤名 `Bos & Boz - EP`、年份 1979、6 軌（A 面 3 軌 Boz Scaggs ＋ B 面 3 軌原創，與策展層第 5988 條的軌數相符）"
+ },
+ "松岡直也 & Wesing|Fiesta Fiesta": {
+  "batch": "c187",
+  "tried": [
+   "jp:2→1"
+  ],
+  "front": "jp",
+  "collectionId": 282753045,
+  "appleTitle": "FIESTA FIESTA",
+  "appleArtist": "松岡 直也&ウィシング",
+  "appleYear": "2008",
+  "explicitness": "notExplicit",
+  "trackCount": 5,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/46/2d/ee462dd2-d413-80c9-197a-84e5e766b8f7/mzaf_11601877050132586241.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 29,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "日野皓正|Wheel Stone - Live in Nemuro": {
+  "batch": "c187",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1467713264,
+  "appleTitle": "ライヴ・イン・ネムロ ホイール・ストーン (車石)",
+  "appleArtist": "日野皓正",
+  "appleYear": "1979",
+  "explicitness": "notExplicit",
+  "trackCount": 2,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/7d/c4/f6/7dc4f64f-d75d-0323-31f1-9b84ec42ddf7/mzaf_12531191098813552176.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "aliasOnlyTitle": true,
+  "status": "ready"
+ },
+ "山下洋輔トリオ|Hot Menu": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "カリオカ|Little Train": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→1",
+   "jp:第1935-B條退1筆",
+   "us:8→0",
+   "gb:9→0",
+   "de:9→0",
+   "fr:12→1"
+  ],
+  "rejectedMatch": [
+   {
+    "why": "aliasOnlyTitle＋證人只是片段＋年份漂移",
+    "collectionId": 1596298901,
+    "appleTitle": "Bossa Carioca",
+    "appleArtist": "オス・カリオカス",
+    "appleYear": "2005"
+   }
+  ],
+  "front": "fr",
+  "collectionId": 1844943186,
+  "appleTitle": "Carioca",
+  "appleArtist": "Samba",
+  "appleYear": "2025",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/32/8d/09328dfd-c321-c612-d52d-fb51d8aafc38/mzaf_6205883764604785567.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 46,
+  "reissueTitle": false,
+  "aliasOnlyTitle": true,
+  "status": "ready"
+ },
+ "佐藤博|Orient": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Prism|Prism Live": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→1"
+  ],
+  "front": "ca",
+  "collectionId": 1631587044,
+  "appleTitle": "Prism",
+  "appleArtist": "Prism",
+  "appleYear": "1977",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/d6/75/d0/d675d036-f3c9-b9cd-816d-97a9cb71f198/mzaf_1488018023212379014.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "生活向上委員会大管弦楽団|This Is Music Is This!?": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Casiopea|Make Up City": {
+  "batch": "c187",
+  "tried": [
+   "jp:2→1"
+  ],
+  "front": "jp",
+  "collectionId": 1535038192,
+  "appleTitle": "MAKE UP CITY",
+  "appleArtist": "カシオペア",
+  "appleYear": "1980",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c7/4e/2ec74e94-2d5b-022a-5e58-1cb28ba12002/mzaf_15435923852476618032.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Casiopea|Thunder Live": {
+  "batch": "c187",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1535034886,
+  "appleTitle": "THUNDER LIVE",
+  "appleArtist": "カシオペア",
+  "appleYear": "1992",
+  "explicitness": "notExplicit",
+  "trackCount": 6,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/52/68/6b/52686bb8-d897-1f6d-2957-ed33ae41f93f/mzaf_9032181964083813715.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 12,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "深町純|Quark": {
+  "batch": "c187",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1542227722,
+  "appleTitle": "クオーク",
+  "appleArtist": "深町純",
+  "appleYear": "1980",
+  "explicitness": "notExplicit",
+  "trackCount": 4,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/10/d3/f0/10d3f079-62d8-5a53-3389-556209294a7e/mzaf_11976160765402013314.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "aliasOnlyTitle": true,
+  "status": "ready"
+ },
+ "喜多嶋修|Masterless Samurai": {
+  "batch": "c187",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1460599245,
+  "appleTitle": "Masterless Samurai",
+  "appleArtist": "喜多嶋修",
+  "appleYear": "1980",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4f/7b/db/4f7bdbcf-758c-87e3-51f9-e983cf214ed0/mzaf_13583371126226359335.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "北村英治 Featuring 八城一夫|The Amazing Eiji Kitamura - Eight Degrees North": {
+  "batch": "c187",
+  "tried": [
+   "jp:6→0",
+   "us:5→0",
+   "gb:8→0",
+   "de:6→0",
+   "fr:6→0",
+   "ca:6→0",
+   "au:6→0"
+  ],
+  "status": "unavailable"
+ },
+ "THE SQUARE|Rockoon": {
+  "batch": "c187",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1538795192,
+  "appleTitle": "Rockoon",
+  "appleArtist": "THE SQUARE",
+  "appleYear": "1980",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/bd/fe/bfbdfefd-5b22-8386-f592-4ee0a9c19622/mzaf_4412050486048116788.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Wind-Breakers|Wind-Breakers": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→1"
+  ],
+  "front": "jp",
+  "collectionId": 1371262613,
+  "appleTitle": "Wind-Breakers",
+  "appleArtist": "前田憲男とウィンドブレイカーズ",
+  "appleYear": "2010",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/67/d2/b3/67d2b34b-c84f-5321-1511-1f04e2865923/mzaf_5335508771552590202.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 30,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "高中正義|Super Takanaka Live!": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→2"
+  ],
+  "front": "jp",
+  "collectionId": 1443119149,
+  "appleTitle": "Super Takanaka Live!",
+  "appleArtist": "高中正義",
+  "appleYear": "1980",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/32/e7/38/32e73805-7e43-ede7-0986-d1bb0db7ce6b/mzaf_4353026192612678465.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "高中正義|T-Wave": {
+  "batch": "c187",
+  "tried": [
+   "jp:3→1"
+  ],
+  "front": "jp",
+  "collectionId": 1442930745,
+  "appleTitle": "T-Wave",
+  "appleArtist": "高中正義",
+  "appleYear": "1998",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/8d/16/eb/8d16ebd2-7c81-0e38-ea2d-c1a917bc6c9e/mzaf_2871136008141044017.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 18,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "北村英治 & Happy Cooking All Stars|Sapporo Concert": {
+  "batch": "c187",
+  "tried": [
+   "jp:3→1"
+  ],
+  "front": "jp",
+  "collectionId": 1329376704,
+  "appleTitle": "札幌コンサート",
+  "appleArtist": "北村英治 & ハッピー・クッキング・オールスターズ",
+  "appleYear": "1991",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ec/a7/10/eca710a3-6156-0040-f751-184b9aecfc32/mzaf_18207164649257959451.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 11,
+  "reissueTitle": false,
+  "aliasOnlyTitle": true,
+  "status": "ready"
+ },
+ "今田勝|Andalusian Breeze": {
+  "batch": "c187",
+  "tried": [
+   "jp:2→1"
+  ],
+  "front": "jp",
+  "collectionId": 1329374471,
+  "appleTitle": "アンダルシアの風",
+  "appleArtist": "今田 勝",
+  "appleYear": "1996",
+  "explicitness": "notExplicit",
+  "trackCount": 6,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f2/4d/5c/f24d5c9d-0b74-a82d-1990-cbfca67de67b/mzaf_12612710004401643950.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 16,
+  "reissueTitle": false,
+  "aliasOnlyTitle": true,
+  "status": "ready"
+ },
+ "富樫雅彦, 加古隆|Valencia": {
+  "batch": "c187",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1327740585,
+  "appleTitle": "VALENCIA",
+  "appleArtist": "富樫雅彦 - 加古隆",
+  "appleYear": "2000",
+  "explicitness": "notExplicit",
+  "trackCount": 5,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/f6/ac/f7/f6acf70c-b086-e54e-d3bf-b85848e996f0/mzaf_4992418159526340741.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 20,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "富樫雅彦, Richie Beirach|津波": {
+  "batch": "c187",
+  "tried": [
+   "jp:2→2"
+  ],
+  "front": "jp",
+  "collectionId": 365421781,
+  "appleTitle": "Tsunami",
+  "appleArtist": "富樫雅彦 & リッチー・バイラーク",
+  "appleYear": "2004",
+  "explicitness": "notExplicit",
+  "trackCount": 2,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/14/fd/03/14fd03ee-2a5b-c178-104b-b2156e706693/mzaf_3165935200200036987.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 24,
+  "reissueTitle": false,
+  "aliasOnlyTitle": true,
+  "status": "ready"
+ },
+ "Casiopea|Cross Point": {
+  "batch": "c187",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1535039861,
+  "appleTitle": "CROSS POINT",
+  "appleArtist": "カシオペア",
+  "appleYear": "1981",
+  "explicitness": "notExplicit",
+  "trackCount": 9,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/aa/1e/dbaa1e29-ddff-f056-fea3-ff495969b8cb/mzaf_3977595000594517139.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Casiopea|Eyes of the Mind": {
+  "batch": "c187",
+  "tried": [
+   "jp:4→1"
+  ],
+  "front": "jp",
+  "collectionId": 1535034796,
+  "appleTitle": "EYES OF THE MIND",
+  "appleArtist": "カシオペア",
+  "appleYear": "1981",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/b5/89/83b589fe-078e-8516-990f-55f4d49284f4/mzaf_2992575020254179841.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "佐藤允彦 & Medical Sugar Bank|MSB Two": {
+  "batch": "c187",
+  "tried": [
+   "jp:0→0",
+   "us:0→0",
+   "gb:ratelimited-after-retries",
+   "gb:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "THE SQUARE|Magic": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→1"
+  ],
+  "front": "jp",
+  "collectionId": 1538795220,
+  "appleTitle": "MAGIC",
+  "appleArtist": "THE SQUARE",
+  "appleYear": "1981",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3d/bb/e7/3dbbe7b1-1939-d397-9573-c39a99c130c9/mzaf_5446325840648148994.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "大野雄二|コスモス": {
+  "batch": "c187",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1539321967,
+  "appleTitle": "コスモス",
+  "appleArtist": "大野雄二",
+  "appleYear": "1981",
+  "explicitness": "notExplicit",
+  "trackCount": 12,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/56/5a/7c565a70-4ce4-7258-a671-b5c8b2e4a9f0/mzaf_6448601325804852984.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "日野皓正|Double Rainbow": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "秋吉敏子トリオ & Flute Quartet|Tuttie Flutie": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "日野皓正|Wheel Stone - Live in Nemuro, Volume 2": {
+  "batch": "c187",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:404",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
  }
 }

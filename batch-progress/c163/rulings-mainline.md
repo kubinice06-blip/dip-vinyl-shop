@@ -6725,3 +6725,50 @@ c-183 writer-1、c-184 研究層兩封 → **全部通過**（c-184 兩封原本
 **「全域掃描」與「逐卡判斷」不能混用一份表**：
 **`pairs`（已證實寫錯 → 全域掃）與 `_to_romaji`（查不到 → 那一張寫羅馬字）是兩種不同的東西**，
 **放在同一個檔裡很方便，但只有前者可以自動化。**
+
+## 第 1980-B 條（2026-09-25）：⚠ ⚠ ⚠ **`深町純《Evening Star》` 判成合輯、撤卡**——我自己把那個決定性動作做完了
+
+**c-186 b 研究層第 6178 條把它標成 uncertain 並指出「一個動作就能定案」：取《Spiral Steps》CD 的逐軌時長。**
+**我做了，而且結論是撤卡。**
+
+| 本盤（`Kitty MKF 1037`，1978） | 逐軌 credits 逐字 | 來源碟 |
+|---|---|---|
+| A2〈It's You〉7:33 | Tony Levin／Howard King／Eric Gale／Steve Khan | **《The Sea Of Dirac》1977**（第 5990 條已核，逐秒相同） |
+| B3〈The Sea Of Dirac〉10:56 | Anthony Jackson／Steve Gadd／Barry Finnerty | **同上** |
+| ⚠ ⚠ **B1〈In The Holiday Groove〉5:42** | **`Recorded By [Media Sound Studio]` Godfrey Diamond／Michael DeLugg**、Anthony Jackson、村上秀一、Lou Marini | ⚠ ⚠ **《Spiral Steps》1976**——**2018 `UPCY-9757` 那一軌逐字 5:45**，而該碟 notes 逐字「Media Sound Studio, New York 2nd, 3rd, and 4th of August 1976」 |
+| ⚠ ⚠ **B2〈Scoto Phonobine Type-II〉6:00** | **`Recorded By [Polydor Studio]` 大野進** | ⚠ ⚠ **同上**——**2018 CD 那一軌逐字 6:00（完全相同）**，而該碟 notes 逐字「Polydor Studio, Tokyo from July to September 1976」 |
+| A1〈Sea Horse〉／A3〈Evening Star〉 | Stuff 原班（Gordon Edwards／Steve Gadd／Cornell Dupree／Eric Gale） | **本盤獨有** |
+
+**→ 既有錄音 4/6（67%）> 一半。依第 1948-B 條「既有錄音重新排列 ＝ 合輯」→ 退。**
+**卡單 25 → 24（b 組 12 → 11）、`prop-b.json` 與 `desc-tools/batches/research/c186-b.json` 同步移除。**
+**c-186 b 策展層的第 5990 條（當時算 2/6＝33% 而判收）一併翻掉。**
+
+⚠ **`B1` 的 5:42 vs CD 的 5:45 那三秒不影響結論**：**同一張 CD 的其他軌也都是這種量級的差**，
+**而 `Recorded By` 的錄音室、工程師、樂手三項在兩張碟上逐名相同**——**時長只是第四個證據，不是唯一。**
+⚠ ⚠ **這一筆與第 1976-B 條第 2 點（重錄不加比例門檻）不衝突**：
+**那一條講的是「同一首曲子重新錄一次」＝新錄音；這一筆是「同一份錄音再壓一次」＝舊錄音。**
+**分界仍然是第 1948-B 條那一句：看的是錄音，不是曲目。**
+
+### 順帶做完三件
+
+1. ⚠ ⚠ **兩筆 `previews.json` 誤命中降級成 `unavailable`**（兩組各自抓到一筆）：
+   `カリオカ《Sunny Place Carnival》1978` → Apple 的 `Samba《Carioca》2025`（漂移 **47** 年）、
+   `The Players Featuring 鈴木宏昌《Galaxy》1979` → `C-Money and the Players Inc《Players》2006`（漂移 **27** 年）。
+   **兩筆都帶 `downgradedBy: mainline-1980-B` 與逐字理由，不是靜靜刪掉。**
+2. ⚠ ⚠ **探測層補一道硬規則**：**`aliasOnlyTitle` ＋ 年份漂移 ≥ 20 年一律退**
+   ——**證人只來自 alias 衍生的題（最弱的證據）而年份差二十年以上時，那是另一張碟的機率遠高於再發。**
+   **`test-match.mjs` 33/33 仍全過。**
+3. **c-186 兩組的 25 處人名改判掃進卡單與 prop（48 處）**，並登記進 `name-corrections.json`（`pairs` 46 組）。
+   ⚠ **`白尾好久` 兩批結論不同**：**c-185 b 查不到來源而退成羅馬字、c-186 b 在 `namevariations` 查到 `白尾泰久`**
+   ——**以有來源的那一批為準**（⚠ **另一形 `白尾恭久` 已記在表裡**）。
+
+### 另外四件（c-186 兩組報的，逐件處置）
+
+- **`Sonia Rosa《Samba Amour》` 的兩筆 Apple 單曲** → **不回撈**：**單曲不是專輯**，
+  **而本卡要的是整張碟的聆聽入口**（第 174／175 條的同一個道理）。
+- **`The Players《Galaxy》` 的「第二張專輯」序數無來源**（ja 維基說是首張）→ **退成不寫**（第 1919-B 條）。
+- **ja 維基把 `Bos & Boz` 整張稱作「Boz Scaggs 翻唱專輯」** → **不改判**：**盤面 3/6 是硬證據**，
+  **而 ja 維基的 discography 年份與「ベスト・アルバム」分類本批已證實不可信兩次。**
+- ⚠ ⚠ **`逐軌 anv` 欄本身會錯**（c-186 a 立的判準）：**《New York》2013 復刻內頁至少三處不一致**
+  （`高水憲司`／`林立生`／同一人 `D.ランキン` vs `K.ランキン`）——**而那正是策展層取漢字名的來源。**
+  **→ 第 1967-B 條的硬規則要加一句：`anv` 欄也要與 `realname`／`namevariations` 交叉驗。**

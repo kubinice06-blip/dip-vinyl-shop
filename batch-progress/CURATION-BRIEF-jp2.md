@@ -153,7 +153,11 @@ jp-1 的 slice 帶著 `why`（`rg-tag`／`artist-tag`／…）當曲風線索。
    `Written-By: Folk` 與 `Traditional` 同處理；**`styles` 字面含 `Jazz` 一律算爵士成分**（`Jazz-Funk` 這種）；
    「原壓作曲欄空白」照三步工序（同廠其他壓片 → master 其他版本 → 曲題反查）。
 
-15. ⚠ ⚠ ⚠ **`why` 欄每一個漢字人名都要能指到一個來源欄位，指不到就寫羅馬字**（主線第 1967-B 條）：
+15. ⚠ ⚠ ⚠ **`why` 欄每一個漢字人名都要能指到一個來源欄位，指不到就寫羅馬字**（主線第 1967-B 條）
+   ——⚠ ⚠ **而「逐軌 `anv` 欄」本身也會錯**（主線第 1980-B 條：某張 2013 復刻內頁至少三處不一致）
+   **→ `anv` 要與 `realname`／`namevariations` 交叉驗，不能單獨當來源。**
+   ⚠ **對照表在 `batch-progress/enum/name-corrections.json`（46 組已證實寫錯）**
+   ——**主線每批會用 `fix-names.mjs` 掃卡單與 prop，但你這一層仍要逐名回打 Discogs 藝人頁。**
    **c-185 a 組自己報「我先把三個人名的漢字寫錯了」**（`上野壽夫`→`上野勉`、`伊勢正之`→`伊勢昌之`、
    `國吉星二`→`国吉静治`），**是逐名回打 `api.discogs.com/artists/<id>` 的 `realname`／`namevariations`
    （18 次、定案 13 個、退成不寫 1 個）才改對的。**

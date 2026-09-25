@@ -456,6 +456,12 @@ for (const c of cards) {
       const fragment = tw.every(t => canon(t) !== canon(gt) && canon(gt).includes(canon(t)));
       if (sameNameEntry) return { ok: false, aliasOnly, why: 'aliasOnlyTitle＋盤名掛名同名' };
       if (fragment && yd > 3) return { ok: false, aliasOnly, why: 'aliasOnlyTitle＋證人只是片段＋年份漂移' };
+      // ⚠ ⚠ 2026-09-25（主線第 1980-B 條）：**`aliasOnlyTitle` ＋ 年份漂移 ≥ 20 年一律退**。
+      // c-186 兩組各自抓到一筆誤命中，兩筆都是這個形狀而上面三道都放行：
+      //   `カリオカ《Sunny Place Carnival》1978` → Apple 的 `Samba《Carioca》2025`（漂移 47）
+      //   `The Players Featuring 鈴木宏昌《Galaxy》1979` → `C-Money and the Players Inc《Players》2006`（漂移 27）
+      // **證人只來自 alias 衍生的題（最弱的證據），而年份差二十年以上時，那是另一張碟的機率遠高於再發。**
+      if (yd >= 20) return { ok: false, aliasOnly, why: `aliasOnlyTitle＋年份漂移 ${yd} 年（≥20）` };
       return { ok: true, aliasOnly };
     };
     const dropped = [];

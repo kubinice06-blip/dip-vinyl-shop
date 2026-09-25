@@ -2091,3 +2091,967 @@ MB 建成 `Album`、`secondary-types` 空、tags 空，`titleCheck` 三欄一致
 
 **編號區間結算**：本節用到 **5966–5995（共 30 條），區間用滿、未越界（a 組 5936–5965）。**
 
+
+---
+---
+
+# a 組研究層（6146–6175）｜13 張收件全表｜2026-09-25
+
+批次 c-186｜a 組 13 張｜研究層
+輸入：`desc-tools/batches/cards/c186-cards.json` 的 `group === "a"` 13 筆（⚠ 分組欄位逐字是 `group`）
+輸出：`desc-tools/batches/research/c186-a.json`（本層只寫這一個檔）
+規則照 `desc-tools/prompts/research-base.md` 全檔（含開頭「雲端 Blue Note 線的三處例外」：產出直接寫進 repo、
+每張 8–12 條 `facts` ＋ 每條完整 https `src`、`key` 從卡單逐字複製、`status` 與 `coverage` 兩欄並存），
+簡報照 `batch-progress/CURATION-BRIEF-jp2.md` 全檔（含第三節第 15–21 點）→ `CURATION-BRIEF-jp1.md` 第〇節與附錄二，
+正文的事實以 `batch-progress/c186/rulings.md` 全檔（策展兩組 5936–5995）為準，
+另讀 `c163/rulings-mainline.md` 第 1934-B…1975-B 條與 `c178/rulings.md` 的研究層兩段。
+⚠ **引用一律寫成「c-18X 第 NNNN 條」**（主線第 1971-B 條）。
+
+## 6146　總表：**13 張，facts 合計 156 條，每張恰好 12 條；full 13、thin 0**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 0 | 深町純《On The Move》 | 12 | full | ⚠ **盤面有一筆作詞 `福沢エミ {A1, A3, B3}`——三軌有歌詞，「八軌全器樂」要改** |
+| 2 | 渡辺香津美 & The Gentle Thoughts《Mermaid Boulevard》 | 12 | full | ⚠ ⚠ **團名是 Lee Ritenour 1977 年日本ビクター 直刻盤《Gentle Thoughts》（VIDC-1-E）的盤名，而 B1 的曲題是同一條直刻線第二張的盤名（VIDC-2）** |
+| 3 | GAP《GAP》 | 12 | full | ⚠ **Discogs 目錄有兩筆（2018 年 Omega Point 撤回的雙 CD）＋ 1978-06-18 吉祥寺マイナー 那一場進了 2016 年的書附 CD** |
+| 4 | THE SQUARE《Lucky Summer Lady》 | 12 | full | ⚠ ⚠ **這是首張不是第二張；製作人 `伊藤八十八` 就是在日本フォノグラム 創辦 East Wind 的人、1978 年才轉進 CBS/Sony** |
+| 5 | THE SQUARE《Midnight Lover》 | 12 | full | ⚠ **日文維基的「ダイレクトカッティング」條目點名本盤，並註明「初回のみ」** |
+| 6 | 八人聯名《New York》 | 12 | full | ⚠ ⚠ **2013 復刻內頁那一份 anv 至少三處不一致（高水憲司／林立生／D.ランキン vs K.ランキン）** |
+| 8 | 笠井紀美子《Round And Round》 | 12 | full | ⚠ **The Automatt 是執行製作自己蓋的、原本向 Columbia 分租；B1 是作曲者本人帶 Headhunters 一族進來錄的** |
+| 9 | ミッキー吉野, 渡辺香津美《Kaleidoscope》 | 12 | full | ⚠ ⚠ **Apple jp 上有這張碟（策展層報查無）；製作人是 `青山悌三` 不是「青木悌三」** |
+| 10 | 佐藤允彦《Pavane Lachrymae》 | 12 | full | ⚠ ⚠ **2023-10-18 配信限定《涙のパヴァーヌ》COKM-44631；Dowland 1604 年那本曲集正好七首帕凡、本盤正好七軌** |
+| 11 | 富樫雅彦《Voice From Yonder》 | 12 | full | ⚠ ⚠ ⚠ **2025-12-03 配信限定 COKM-46072——「四十八年沒再發過」不成立** |
+| 12 | 渡辺香津美《Lonesome Cat》 | 12 | full | ⚠ ⚠ ⚠ **廠牌官方頁把原盤寫成 `BETTER DAYS レーベル`（不在十五家裡）；本層以同號段的 `千のナイフ` 反證 Discogs 的 `labels` 欄有分辨力** |
+| 15 | 坂田明トリオ《Peking》 | 12 | full | ⚠ **Frasco 是 山下洋輔 1975 年起自己經營的字標，而 坂田明 1972–1979 年底都在他的三重奏裡——封底照片也是他拍的** |
+| 17 | カリオカ《Sunny Place Carnival》 | 12 | full | ⚠ ⚠ **創團者是打擊手 `吉川祐二`，他在ロス・インディオス 打了八年；版本表多出 2026-09-23 的 UPJY-9571** |
+
+**每張的 `src` 相異網域數是 3 到 4**（Discogs 85 條／ja 維基 38／en 維基 19／Apple 6／columbia.jp 5／MusicBrainz 3）。
+⚠ **`status` 與 `coverage` 兩欄並存、13 張皆 `full`；thin 0。**
+
+## 6147　⚠ ⚠ 推翻策展層總表：**判斷 9 處 ＋ 人名 4 處 ＋ 店面 1 處 ＋ 版本數 3 處 ＝ 17 處**
+
+| # | 卡 | 被推翻的是什麼 | 依據 | 條號 |
+|---:|---|---|---|---|
+| 1 | 《Voice From Yonder》 | 「兩個資料庫加起來只有這一筆、四十八年沒再發過」→ **2025-12-03 有配信限定 COKM-46072** | `columbia.jp` 藝人層頁 | 6149 |
+| 2 | 《Pavane Lachrymae》 | 版本三版 → **另有 2023-10-18 的配信限定 COKM-44631** | 同上 | 6150 |
+| 3 | 《Pavane Lachrymae》 | 「本組唯一一筆連片假名等價形都沒有的盤名」→ **等價形存在（《涙のパヴァーヌ》），而且它是 Dowland 那首曲子的日文標準譯名** | `columbia.jp` ＋ ja 維基轉向 | 6150 |
+| 4 | 《Pavane Lachrymae》 | 「是他第一張純獨奏的鍵盤盤」→ **1970 年的《ホログラフィ》已是獨奏鋼琴盤** | ja 維基作品表 | 6169 |
+| 5 | 《Sunny Place Carnival》 | 版本三版 → **四版（2026-09-23 `Kitty Records UPJY-9571`）** | Discogs release | 6151 |
+| 6 | 《Kaleidoscope》 | 「Apple jp 查無本盤」→ **命中，collectionId 388051257** | Apple jp | 6152 |
+| 7 | 《On The Move》 | 「八軌逐字是他自己寫、自己編的原創**器樂曲**」→ **A1／A3／B3 三軌有 `福沢エミ` 的作詞** | Discogs 原壓 credits | 6160 |
+| 8 | 《Lucky Summer Lady》 | 「第二張專輯」→ **首張** | ja 維基兩條目 | 6156 |
+| 9 | 《Midnight Lover》 | 「第三張專輯」→ **第二張** | 同上 | 6156 |
+| 10 | 《New York》 | 「坂本龍一（**五軌**的鍵盤與合成器）」→ **四軌（第 1／2／4／6 軌）** | 2013 復刻逐軌 credits | 6168 |
+| 11 | 《New York》 | 人名 `高水憲司` → **`高水健司`** | Discogs `realname` ＋ ja 維基 | 6153 |
+| 12 | 《Kaleidoscope》 | 人名 `青木悌三` → **`青山悌三`**（與《Voice From Yonder》的 `青木和富` 是兩個人） | Discogs name 欄 ＋ profile | 6153 |
+| 13 | 《Kaleidoscope》 | 人名 `土屋昌己` → **`土屋昌巳`** | Discogs `realname` | 6153 |
+| 14 | 《Voice From Yonder》 | 「`藤川義明` 本層只有羅馬字來源」→ **別名欄有漢字形** | Discogs 藝人頁 873125 | 6153 |
+| 15 | 《GAP》 | 「GAP 的整份 Discogs 目錄只有這一張」→ **兩筆** | Discogs 藝人頁 releases | 6161 |
+| 16 | 《Sunny Place Carnival》 | 「`Antonio Ishida` 查無任何漢字形／判不出國籍」→ **別名欄逐字 `アントニオ石田`，是日本人** | Discogs 藝人頁 1023863 | 6167 |
+| 17 | 《Sunny Place Carnival》 | 「`Misty Town` 判不出國籍」→ **同組《New York》2013 復刻第三軌的合聲就是它** | Discogs release 4943554 | 6167 |
+
+**本線單批推翻數的排名**：c-178 的 27 處最高、c-184 a 的 24 處第二，**本組 17 處**與 c-178 a 的 16 處同一個量級。
+⚠ **形狀與前幾批不同的一點**：**本組 17 處裡有 5 處出自同一條新路徑——`columbia.jp` 的「藝人層」網址**（見 6170），
+**而人名那 4 處的機制與 c-184／c-185 的「從 Discogs 羅馬字逆推漢字」不同：本組是「來源欄位本身印錯」**（見 6154）。
+
+## 6148　⚠ ⚠ 再發版本數：**13 筆逐筆重跑 `masters/<id>/versions`；數字與第 5946 條逐筆相符，而內容改判 4 筆**
+
+| 卡 | master | 策展層記 | 本層重跑 | 改判 |
+|---|---:|---:|---:|---|
+| 《On The Move》 | 611854 | 10 | **10** | 0（另補兩張 2026 復刻的實際發行日 2026-04-22） |
+| 《Mermaid Boulevard》 | 423497 | 7 | **7** | 0 |
+| 《GAP》 | 4252791 | 2 | **2** | 0（⚠ **但同一支樂團另有一張碟，見 6161**） |
+| 《Lucky Summer Lady》 | 935960 | 9 | **9** | 0（MB 獨有 `VRGL-8003` SACD 已確認，聯集實體 ≥10） |
+| 《Midnight Lover》 | 1119654 | 8 | **8** | 0（MB 獨有 `VRGL-8005` SACD 已確認，聯集實體 ≥9） |
+| 《New York》 | 1035895 | 8 | **8** | 0 |
+| 《Round And Round》 | 1100922 | 5 | **5** | 0 |
+| **《Kaleidoscope》** | 541805 | 3 | **3** | ⚠ **＋1 數位版（Apple jp，見 6152）＝ 4** |
+| **《Pavane Lachrymae》** | 1498163 | 3 | **3** | ⚠ **＋1 數位版（COKM-44631，見 6150）＝ 4** |
+| **《Voice From Yonder》** | ⚠ 無 master | 1 | **1** | ⚠ ⚠ **＋1 數位版（COKM-46072，見 6149）＝ 2** |
+| 《Lonesome Cat》 | 166038 | 9 | **9** | 0 |
+| 《Peking》 | 1844720 | 2 | **2** | 0 |
+| **《Sunny Place Carnival》** | 3286942 | 3 | ⚠ ⚠ **4** | ⚠ ⚠ **實體 ＋1（見 6151）** |
+
+**→ 派工信第二節四種漏法在本組的命中分佈**：
+**(a) 只數 `mbNote` 的 MB release**——本組零次（策展層已逐筆跑完 `versions`，與 c-176 a 第 4317 條、c-177 a 第 4567 條、c-178 a 第 4777 條同向：策展層跑完之後研究層的重跑就是純覆核）；
+**(b) 漏掉 1970 年代同號再發與 2016 年後的黑膠復刻**——零次；
+⚠ ⚠ **(c) Discogs 的 `versions` 表結構上不收數位發行**——**本組 3 中（《Kaleidoscope》《Pavane Lachrymae》《Voice From Yonder》）**，
+**而三筆的來源不同：一筆是 Apple、兩筆是 `columbia.jp` 的官方頁**；
+**(d) MB 獨有而 Discogs 沒建**——本組零筆新增（策展層已抓到兩張 Village Records 的 SACD，本層逐筆確認）。
+⚠ **另有一筆是「策展層跑完之後才上架」**：《Sunny Place Carnival》的 2026-09-23 那一版（見 6151），**這是第五種形狀，與四種漏法都不同。**
+⚠ **`released` 欄為 0 的版本仍計入版本數、年份不可引用**：本組只有《On The Move》的菲律賓 `A & W Horizon AWHL-511` 一筆（與第 5946 條相同）。
+
+## 6149　⚠ ⚠ ⚠ 本組最大的一處：`富樫雅彦《Voice From Yonder》` **2025 年 12 月 3 日有配信限定，「四十八年沒再發過」不成立**
+
+**卡單的 `label` 欄逐字寫「兩個資料庫加起來只有 1978 年那一張原壓，沒有任何 CD 再發或復刻的紀錄」，`curatorRisk` 另寫「成因是這張碟四十八年來一次都沒再發過」。**
+**兩句話對「兩個資料庫」是對的，對「沒再發過」是錯的**：
+
+- **`https://columbia.jp/artist-info/togashimasahiko/discography/COKM-46072.html` 回 200，頁面逐字是**
+  **「富樫雅彦｜[ALBUM] 2025/12/03発売｜かなたからの声｜COKM-46072｜＜配信限定＞」**，曲目逐字六軌：
+  **`Voice from Yonder`／`Silence`／`Welcome`／`Travelers`／`It's Time`／`Farewell`。**
+- **同一位藝人的藝人層頁（`/artist-info/togashimasahiko/`）逐字列著 2025/12/03 發售的六張碟**
+  （`風の遺した物語`／`Guild for Human Music`／`Essence`／`Motion`／`Sketch`／`かなたからの声`，目錄號 `COKM-46066`…`46072`）
+  ——**其中《Essence》與《Motion》正是池中 c-177 的兩張卡，也就是說日本コロムビア 2025 年底把 富樫雅彦 的 Denon 目錄整批數位化了。**
+- **Apple jp 的那一筆（collectionId 1853787549，18 億號段）就是它**，**而它的 `releaseDate` 欄逐字仍是 `1978-07-25`、版權行 `℗ 1978`。**
+
+**→ 本盤已知版本 ＝ 1 個實體 ＋ 1 個數位。** `catno=YX-7519-ND` 反查 1 筆與 `master_id` 為 0 兩件本層逐筆重驗，與第 5946 條相同。
+⚠ **抓到它的路徑要寫死給後續批次**：**`columbia.jp/prod-info/<catno>/` 本組四試四敗（`COCB-53294`／`COCO-7761`／`COCB-54211`／`YX-7519-ND` 全部 404，回 12744 位元組的同一頁）**，
+**而 `columbia.jp/artist-info/<slug>/` 這個藝人層網址一打就中**——**這正是 c-178 a 第 4795 條末段給後四批那一句（「藝人層的網址要先打一次，不要只打 `discography/<catno>.html`」）在 jp-2 線的第一次實地成立。**
+
+## 6150　⚠ ⚠ `佐藤允彦《Pavane Lachrymae》`：**2023 年的配信限定，而它的題把「本組唯一沒有等價形的盤名」這句話推翻了**
+
+- **`https://columbia.jp/artist-info/satomasahiko/discography/COKM-44631.html` 回 200，逐字是**
+  **「佐藤允彦｜[ALBUM] 2023/10/18発売｜涙のパヴァーヌ｜COKM-44631｜＜配信限定＞」**，七軌的題逐字是英文原題（首字大寫、其餘小寫）。
+- **同一位藝人的藝人層頁列著 2023 年三批共十二張的配信**（2023/10/18 五張 `COKM-44629`…`44633`、2023/11/22 兩張、2023/12/06 五張），
+  **其中《ホログラフィ》《マグノリアの木》《観自在》都是池中已有的碟。**
+- ⚠ ⚠ **`涙のパヴァーヌ` 不是廠牌自己編的和文題**：**日文維基的 `涙のパヴァーヌ` 直接轉向〈流れよ、わが涙〉（Dowland 的 "Flow, my tears"）**，
+  該條目逐字說那首曲子 1596 年先以器樂曲「涙のパヴァーヌ（ラクリメ・パヴァン）」的形式寫成。
+  **→ 第 5944 條那一句「本組唯一一筆連片假名等價形都沒有的盤名」要改成「1978 年的原壓四處一致、零等價形；等價形是 2023 年廠牌自己給的，而且它是那首古曲的日文標準譯名」。**
+  ⚠ **盤名本層仍取 `Pavane Lachrymae`**（1978 原壓、MB 兩層、Discogs 三版、Apple 四處一致），**不改判。**
+- **→ 本盤已知版本 ＝ 3 個實體 ＋ 1 個數位**（Apple 的 1709903845 即該筆，`releaseDate` 逐字 `1978-10-25`、℗ 1978，與第 1907-B 條「コロムビア／NIPPONOPHONE 落在每月 25 日」相符）。
+
+## 6151　⚠ ⚠ `カリオカ《Sunny Place Carnival》`：**版本表由三版變四版，而新那一版的發行日只比策展層交件早兩天**
+
+**`/masters/3286942/versions` 本層逐筆跑完是 4 筆，第四筆逐字是**
+**`2026｜Japan｜Kitty Records｜UPJY-9571｜LP, Album, Limited Edition, Reissue, Remastered`（releases/38525121）**，
+**該筆的 `released` 欄逐字 `2026-09-23`、`formats` 的 descriptor text 逐字 `Clear Deep Blue`、`notes` 逐字「With obi」。**
+**→ 本盤已知實體版本四個（1978 市售 ＋ 同號 Promo ＋ 2013 `UPCY-6728` SHM-CD ＋ 2026 `UPJY-9571` 限定黑膠）。**
+⚠ ⚠ **這是本組的第五種漏法，與派工信第二節那四種都不同**：**不是誰漏建，是碟在兩層之間上架**（策展層 2026-09-25 交件、該筆 2026-09-23 發行）。
+**→ 給 c-187 之後的批次一句：策展層與研究層之間隔著幾小時到一天，`versions` 的筆數不是不變量；研究層重跑時多出一筆先看 `released` 是不是最近一週。**
+⚠ **`catno=MKF 1041` 反查仍是 3 筆**（master ＋ 兩筆 1978 release），**新那一筆的目錄號換了號段所以反查抓不到**——與 c-186 b 第 5970 條記的圖案膠盤同一種形狀。
+
+## 6152　⚠ ⚠ `ミッキー吉野, 渡辺香津美《Kaleidoscope》`：**Apple jp 上有這張碟，策展層的查法漏掉了它**
+
+**卡單逐字寫「Apple jp 查無本盤（以 `ミッキー吉野 カレイドスコープ` 查 `resultCount 0`）」。**
+**探測層的 `batch-progress/probe/previews.json` 這一鍵逐字是 `status: ready`、`front: jp`、`collectionId 388051257`，本層回打 `lookup` 覆核如下**：
+**掛名逐字 `渡辺香津美 & ミッキー吉野`（⚠ 兩人的順序與盤面相反）、題逐字 `Kaleidoscope`（純羅馬字）、`trackCount` 逐字 4、
+版權行逐字 `℗ 1978 Nippon Columbia Co., Ltd./NIPPONOPHONE`、`releaseDate` 逐字 `1987-01-01T08:00:00Z`。**
+
+- ⚠ **策展層查不到的成因可歸因**：**它用的是「片假名掛名 ＋ 片假名盤名」的組合，而 Apple 那一筆是「漢字掛名（順序相反）＋ 羅馬字盤名」**
+  ——**兩個欄位同時換了字系，任何一個組合都撈不到。** **→ 給探測層與後續批次一句：日本盤的 Apple 查詢至少要跑「漢字掛名 ＋ 羅馬字盤名」這一組。**
+- ⚠ ⚠ **第 1907-B 條那份廠牌分表要補一個例外**：**本組四張 Denon／日本コロムビア 裡有三張的 Apple `releaseDate` 逐字落在每月 25 日（`1978-10-25`／`1978-07-25`／`1978-06-25`），而本盤逐字是 `1987-01-01`（每年一月一日的佔位值）**
+  ——**同一家廠牌、同一個號段、同一批數位化，日期欄的語意不同。可信的是 ℗ 年（本盤逐字 1978，與原壓相符），不是 `releaseDate`。**
+- **→ 本組的 Apple 命中率是 8/13＝62%，不是第 5961 條記的 7/13＝54%。**
+
+## 6153　⚠ ⚠ 人名改判四處 ＋ 補源一處 ＋ 第三形一處，逐筆列出來源欄位
+
+| # | 卡 | 卡單逐字 | 本層定案 | 來源欄位 |
+|---:|---|---|---|---|
+| 1 | 《New York》 | `高水憲司` | **`高水健司`** | Discogs 藝人頁 143940 的 `realname` 欄逐字 `Takamizu Kenji = 高水健司（たかみず けんじ）`；日文維基另有 `高水健司` 專條 |
+| 2 | 《Kaleidoscope》 | `青木悌三` | **`青山悌三`** | Discogs 藝人頁 10225174 的 name 欄本身就是漢字 `青山悌三`、別名欄 `Teizo Aoyama`、profile 逐字「Teizō Aoyama. Japanese producer and liner notes author. Worked at Tokyo FM between 1970 and 2006.」 |
+| 3 | 《Kaleidoscope》 | `土屋昌己` | **`土屋昌巳`** | Discogs 藝人頁 58970 的 `realname` 欄逐字 `土屋昌巳`（`土屋昌己` 只在別名欄與本盤的 anv 欄） |
+| 4 | 《New York》 | `林立夫`（對的） | **`林立夫`維持** | ⚠ **但 2013 復刻的 anv 欄逐字是 `林 立生`**，正寫在藝人頁 642018 的別名欄裡（`林 立夫` 與帶綽號的形），**下游若回查那一欄會拿到錯字** |
+| 5 | 《Voice From Yonder》 | 「`藤川義明` 本層只有羅馬字來源」 | **`藤川義明` 有來源** | Discogs 藝人頁 873125 的別名欄逐字 `藤川義`／`藤川義明`，profile 逐字「Japanese saxophonist. Born in 1949 in Akita.」 |
+| 6 | 《New York》 | `矢島賢`（對的） | **`矢島賢`維持** | ⚠ ⚠ **Discogs 有兩個實體**：864515 `Masaru Yajima`（別名欄唯一的漢字形逐字 `矢島勝`，**第三個漢字形**）與 936896 `Ken Yajima`（`realname` 逐字 `矢島賢 (Yajima Ken)`）；ja 維基的 `矢島賢` 條目逐字「クレジット表記・ken yajima」 |
+
+⚠ ⚠ **兩處要特別記給主線，因為它們會跨批傳染**（主線第 1975-B 條）：
+1. **`高水健司` 這一串在本線已經有兩種寫法在跑**：**c-186 a 第 5939 條（退件《Moonlight Singing》）與本組《New York》的卡單都寫 `高水憲司`，而 c-186 b 第 5967 條逐字寫 `高水健司`**
+   ——**建議主線把對照表往後掃到最新那一批**（第 1975-B 條那個固定動作）。
+2. **`青山悌三`／`青木和富` 是兩個不同的人**（前者是《Kaleidoscope》的製作兼解說、後者是《Voice From Yonder》的解說，藝人頁 1631994 的 `realname` 逐字 `青木和富`、profile 逐字「Japanese jazz critic born 1947 in Tokyo」）
+   ——**卡單把兩個姓混成一個，而兩張碟同年同廠同號段，很容易再錯一次。**
+
+⚠ **三個名字本層查到來源欄位互相矛盾，一律不寫進 `facts`、要寫就寫羅馬字**（照第 1967-B 條／簡報第三節第 15 點）：
+**`Yoshio Mitsuo`（《Kaleidoscope》錄音，藝人頁 992798 的別名欄逐字 `三尾善夫`／`三尾喜夫` 兩形）**、
+**`Tomohiro Saito`（同卡錄音監督，639899 的別名欄唯一漢字形 `斉藤有弘` 與該頁羅馬字名讀不起來）**、
+**`Kenichi Kishi`（同卡錄音監督，2174610 的別名欄 `岸研`／`岸研ー`／`岸研一` 三形，其中一形的末字是 U+30FC）**。
+⚠ **另三個名字本層查到可靠來源、策展層沒有列**：**`岸義和`（《New York》第三軌小號，623520 的 `realname`）、`竹内雅彦`（同卡第八軌貝斯，1328151 的別名欄）、`井出隆一` 與 `大竹守`（《Sunny Place Carnival》，2675457／3465716 的別名欄）**。
+⚠ **`Yoshio Ozawa`（《Lonesome Cat》製作）與 `Koji Hatori`（《Sunny Place Carnival》小號）照策展層與該條維持羅馬字**，本層逐筆重驗矛盾仍在。
+
+## 6154　⚠ ⚠ ⚠ 立判準（建議主線採納進第 1967-B 條）：**「逐軌 anv 欄」這個來源欄位本身會錯，指到復刻內頁時要再回打藝人頁對一次**
+
+**第 1967-B 條二之 2 逐字立的規則是「`why` 欄每一個漢字人名都要能指到一個來源欄位，指不到就寫羅馬字」。**
+**本組出現了那條規則沒有涵蓋的形狀：指到了，而那個欄位印錯了。**
+
+**實例是《New York》的 2013 年復刻 `GT Music MHCL 30127`（Discogs releases/4943554）**
+——**它是 Sony Music Direct 自家的名盤復刻、十二頁內頁逐軌列出羅馬字與漢字兩種寫法，策展層（c-186 a 第 5948 條）就是拿它的 anv 欄當八位吉他手與全部側翼樂手的漢字來源，而那一份至少三處不一致**：
+
+1. **`Kenji Takamizu[高水憲司]`**——藝人頁 143940 的 `realname` 欄逐字 `高水健司`；
+2. **`Tatsuo Hayashi[林 立生]`**——藝人頁 642018 的別名欄逐字 `林 立夫`；
+3. **同一位 Casey Rankin 在第三軌的合聲欄逐字 `D.ランキン`、在同一軌的作曲欄逐字 `K.ランキン`**（他的 `realname` 欄逐字 `Casey David Rankin`）。
+
+⚠ **而那一份 anv 在別的名字上是對的**（`鈴木 茂`／`松原正樹`／`水谷公生`／`松木恒秀`／`秋山一将`／`大村憲司`／`竹田和夫`／`矢島 賢`／`濱瀬元彦`／`笹路正徳`／`宮本典子`／`春日博文` 逐名與各自的藝人頁相符）
+——**所以它不是整份不可信，是「不可單獨採信」。**
+
+**→ 建議把第 1967-B 條二之 2 補一句**：**「漢字人名指到的來源欄位若是再發盤的 anv 或內頁轉錄，要再回打該藝人的 `realname`／`namevariations` 對一次；兩處衝突時以藝人頁的 `realname` 為準，`realname` 空白而別名欄有多形時寫羅馬字。」**
+⚠ **依據與 c-178 a 第 4797 條末段同構**（該條逐字記「`nv` 欄同時收錄誤植變體，不能拿 `nv` 的任何一個當定論，要以 `realname` 為主」）
+——**本條把同一件事的射程從 `nv` 擴到「再發內頁的 anv」，而那一層在 c-184 起已經是本線取漢字名最主要的來源。**
+
+## 6155　⚠ 同名陷阱清單新增一筆：**`望月英樹` 在日文維基是東宝的照明技師**
+
+**《Peking》的貝斯手 `Hideki Mochizuki` 只有一個漢字來源（Discogs 藝人頁 768939 的別名欄逐字 `望月英樹`、`realname` 欄空白），策展層據此判「不足以定案、寫羅馬字」。**
+**本層另查到第二個理由，讓那個判斷更硬**：**日文維基的「望月英樹」條目寫的是另一個人——1937 年 6 月 4 日生的日本電影照明技師、日本映画テレビ照明協会 的會長、1956 年進東宝當照明助手、多次擔任ゴジラ 系列的照明。**
+**→ 那個條目若被當成佐證就會把人指錯。建議加進派工信第四節那份同名陷阱清單（該清單目前有 `鈴木弘`＝游泳選手、`伏見哲夫`＝男演員、`中村誠一`＝消歧義頁⋯）。**
+⚠ **本層另實測兩個轉向陷阱**：**`ja:キティ・レコード` 轉向「ユニバーサルミュージック (日本)」、`en:Kitty Records` 轉向「Kitty Films」**
+——**查 Kitty 這家廠牌的沿革時兩邊都拿不到廠牌本身的條目**（本組《Sunny Place Carnival》因此沒有寫 Kitty 的廠牌史）；
+**`ja:ベターデイズ` 轉向 2Pac 的專輯**（簡報第四節已記）、**`ja:ピットイン` 轉向「ピット (サーキット)」**、**`ja:ジョージ紫` 轉向「紫 (バンド)」**、**`ja:宮本典子` 轉向「Mimi (歌手)」**。
+
+## 6156　⚠ ⚠ `THE SQUARE` 兩張的專輯序數各往前挪一格：**《Lucky Summer Lady》是首張、《Midnight Lover》是第二張**
+
+**卡單逐字**：#4「THE SQUARE 1978 年 9 月的**第二張**專輯」、#5「THE SQUARE 1978 年 12 月的**第三張**專輯」。
+**兩處都要改，依據是兩份互相印證的日文維基**：
+
+1. **`ja:T-SQUARE` 逐字**：「1976年11月、当時明治大学の学生だった安藤正容（安藤まさひろ）によって結成。⋯**1978年アルバム『Lucky Summer Lady』を発表し本格的に活動を開始**。」
+2. **`ja:安藤正容` 逐字**：「**THE SQUAREの3枚目のアルバムである『Make Me A Star』**の収録曲、「Mr. Coco's One」は、尊敬する和田直に捧げた曲である。」
+   ——**《Make Me A Star》（1979，c-186 b 的收件）是第三張，往前推就是本組兩張各為第一、第二張。**
+3. **旁證**：`en:T-Square (band)` 逐字記 1976 年在明治大学 成軍的四人初始陣容（bassist Yuhji Nakamura、guitarist Masahiro Andoh、pianist Jun Hakamazuka、drummer Shunichi Harada）
+   ——**而本組兩張的鍵盤手是 宮城純子，也就是初始陣容之後的第一次換人。** ⚠ **Discogs 的樂團 profile 逐字說 formed in 1978，那一個與兩份維基不合，本層不採。**
+
+⚠ **這一處要登記給主線，因為它會影響 c-186 b 的《Make Me A Star》**：**那一卡若寫「第幾張」，序數是三，與本組兩張連號。**
+⚠ **並照 c-178 a 第 4782 條末段那句固定動作**（「藝人的『第幾張』一律回打 `api.discogs.com/artists/<id>/releases?role=Main&sort=year`，不要從前一批的卡單推算」）
+——**本層這一次是靠兩份維基互相印證，而 c-178 那一條講的路徑對本團同樣可用，兩者結論一致。**
+
+## 6157　⚠ ⚠ 本組把 jp-2 兩家廠牌連起來的唯一一條人脈：**`伊藤八十八` 創辦 East Wind，1978 年轉進 CBS/Sony**
+
+**卡單只寫「製作 Yasohachi Itoh」，連漢字都沒有。Discogs 藝人頁 406896 的 `realname` 欄逐字是 `伊藤八十八`，profile 逐字是**
+**「Japanese jazz producer. Born in 1946 in Gifu. Died November 19, 2014. Worked first for Nippon Phonogram, where he set up the [l=East Wind] jazz label and produced recordings by The Great Jazz Trio, Sadao Watanabe, Terumasa Hino and others. In 1978 he moved to CBS/Sony where he produced Miles Davis, Herbie Hancock, Weather Report, Kimiko Kasai and others. He later worked with J-pop artists including Seiko Matsuda and Puffy.」**
+
+**為什麼這一格對本線重要**：
+1. **`East Wind` 是本線十五家之一**（c-186 a 的退件 #14《Prism》就是那一家、c-185 a 的兩張也是），**而他就是在日本フォノグラム 把那個字標開起來的人**；
+2. **他「1978 年轉進 CBS/Sony」——而本組五張 CBS/Sony 全部是 1978 年的碟**，其中兩張（《Lucky Summer Lady》《Midnight Lover》）的製作人欄逐字就是他；
+3. **profile 另逐字說他在 CBS/Sony 製作過 `Kimiko Kasai`**——**而本組的《Round And Round》製作人是 Dale Warren 不是他**，**所以那一句指的是她別的碟**（她在 CBS/Sony 有十餘張），⚠ **下游不得把這兩件接起來。**
+
+⚠ **本層把他的生平只寫在《Lucky Summer Lady》一卡**（同組《Midnight Lover》的人物軸給了直刻工法與 鷺巣詩郎／河合誠一／操上和美），**符合反同構。**
+
+## 6158　⚠ ⚠ `Mermaid Boulevard`：**掛名的後半與盤上那首非自作曲，是同一條日本直刻盤企劃的兩個盤名**
+
+**策展層只把 `The Gentle Thoughts` 寫成「一組美國第一線 fusion 樂手」。本層查到的是它的來歷，三個來源互相對得上**：
+
+1. **Discogs 藝人頁 2037487 的 profile 逐字**：「American jazz-rock backing band, mainly active in the 1970s, formed around guitarrist [a37735]」（a37735＝Lee Ritenour）；
+2. **Discogs master 371678 逐字**：**`Gentle Thoughts — Gentle Thoughts`、1977、`JVC`／`Victor Musical Industries, Inc.`、目錄號 `VIDC-1-E`、日本**；
+   **master 204150 逐字**：**`Sugar Loaf Express Featuring Lee Ritenour — Sugar Loaf Express Featuring Lee Ritenour`、1977、同一家、目錄號 `VIDC-2`、日本**；
+3. **`ja:ダイレクトカッティング` 的製作實例逐字**：「リー・リトナー『ジェントル・ソウツ』・『シュガー・ローフ・エクスプレス』（共に1977年）日本ビクターのプロデュースによる。⋯難曲の数々を一発録りしている。本作はテイク違いで二つの音源がある」。
+
+**→ `VIDC-` 這個號段就是ビクター 的直接刻片線，而 `Gentle Thoughts` 是它的第一號、`Sugar Loaf Express` 是第二號。**
+**本盤 1978 年 2 月由アルファレコード 發（製造與發售委託ビクター音楽産業），掛名的後半用了 VIDC-1 的盤名、B1 的曲題用了 VIDC-2 的盤名，而 B1 的作曲欄逐字掛 Lee Ritenour 本人。**
+⚠ **這條線與同組《Midnight Lover》的 `Master Sound DD Direct Disk` 是同一個技術脈絡的兩端，本層刻意分開寫**：
+**本卡寫「團名與曲題的來歷」，《Midnight Lover》寫「這張碟自己就是直刻盤」——兩卡的 facts 零重疊。**
+⚠ **另記一筆給後續批次**：**Discogs master 3907993 逐字是 `Lee Ritenour - Lee Ritenour & His Gentle Thoughts TAKE-2`、1983、`VIDC-101`**
+——**就是 ja 維基說的「テイク違いの二つの音源」裡後來才發的那一個。**
+
+## 6159　⚠ `Midnight Lover`：**日文維基點名本盤是直刻盤，並補了策展層沒有的一句「初回のみ」**
+
+**`ja:ダイレクトカッティング` 的製作實例逐字列著「THE SQUARE『Midnight Lover』（1978年）初回のみダイレクトカッティング制作。」**
+**→ 只有初回壓片是直接刻片的**，這一句同時解釋了為什麼 Discogs 八個版本裡只有 1978 年那兩筆的 `series` 欄有那個字樣。
+⚠ **同一條目另給了三件本層寫進卡的背景**：**直刻的做法是跳過錄音帶、演奏與刻片都一次定生死，錯一個不能接受的音就整面重來；「ダイレクトカッティング」是和製英語；LP 時代最早的一批直刻盤是 1969 年日本コロンビア 發的一系列 45 轉 LP。**
+⚠ **並記兩筆與本線相關的名單項**：**該條目的實例列表裡有 `ハービー・ハンコック『ダイレクトステップ』『ザ・ピアノ』（1978 年錄音）`、`グレイト・ジャズ・トリオ『ダイレクト・フロム LA』`（East Wind）、`ザ・ペンタゴン『ザ・ペンタゴン』（1976 年）`**
+——**最後那一張正是 c-185 a 第 5882 條退掉的碟**；**→ 給後續批次一句：本線撞到 1976–1980 年的日本高音質企劃盤時，這個條目是一份現成的清單。**
+⚠ **`live: false` 本層同意策展層，並指出主線第 1971-B 條第 2 點（直刻盤上的 `recorded live` 指一次過錄音）在本盤連字樣都沒有出現**——本盤的 `notes` 整欄是空字串。
+
+## 6160　⚠ `On The Move`：**盤面有一筆作詞，所以「八軌全是原創器樂曲」要改**
+
+**卡單的 `curatorWhy` 逐字寫「七軌逐字是 深町純 自己寫、自己編的原創器樂曲」、`curatorRisk` 的甲乙計數寫「甲 7（七軌逐字是 深町純 自己寫、自己編的原創器樂曲）」。**
+**Discogs 原壓 releases/5035765 的 `extraartists` 裡有一筆策展層沒有列出的**：
+**`Emi Fukuzawa — Lyrics By {A1, A3, B3}`（藝人頁 1830668 的 `namevariations` 欄逐字 `福沢エミ`、`realname` 欄空白）。**
+**→ A1〈On The Move〉、A3〈Letter To N.Y.〉、B3〈Early Evening Lullaby〉三軌有歌詞**，
+**而盤上那五位 `Vocals`（Deborah McDuffie／Frank Floyd／Lani Groves／Ullanda McCullough／Zachary Sanders）不是純合聲點綴。**
+⚠ **第 5701 條的甲乙計數不受影響**（三軌仍是 深町純 為本盤寫的原創曲、乙仍是 B2 那一軌的 Beethoven 一筆＝1/8），
+**要改的是「全器樂」這個敘述**——**下游若照卡單寫「八軌全器樂」會與盤面矛盾。**
+⚠ **`福沢エミ` 只有一個來源欄位（`namevariations`），本層照第 1967-B 條寫進 facts 時保留漢字**（該欄是唯一形、無矛盾），**並在此註明來源。**
+
+## 6161　⚠ `GAP`：**目錄有兩筆不是一筆，而第二筆同時把 B 面的日期爭議結掉**
+
+**卡單逐字寫「④ 不成立（GAP 的整份 Discogs 目錄只有這一張，不是ムード系）」。**
+**`api.discogs.com/artists/1017958/releases` 回的掛名作有兩筆**：
+1. **master 4252791＝1978 年的《Gap》**（本卡）；
+2. ⚠ **master 1428304＝2018 年的《Practical Concert = プラクティカル・コンサート》，主 release 12311686、`Edition Omega Point OPA-022`、雙 CD**
+   ——**`notes` 逐字「Disc 1 recorded live on December 3rd, 1976, at Studio Ars-Nova, Asagaya, Tokyo. / Disc 2 recorded on March 15, 1978 at Komyoin Kan'non Hall, Ogikubo, Tokyo.」，末段逐字「Withdrawn from release ["Cancelled" per Omega Point].」**，
+   **內頁解說由團員 佐野清彦 與 Onnyk 執筆、英譯 Toshiyuki Kawata，演奏者三筆與 1978 年那張逐名相同。**
+
+**④ 款的判定不受影響**（兩筆都是自由即興盤），**要改的是「只有這一張」這個敘述。**
+⚠ ⚠ **而第二筆同時是 B 面日期的第三個證據**：**卡單記下「羅馬字題寫 1976.1.23、和文題寫 1976 年 12 月 3 日，Discogs 的 `notes` 另寫 12.3.76，兩票對一票」**
+——**加上 2018 那套的 `notes` 逐字「December 3rd, 1976, at Studio Ars-Nova」，三票對一票，1976-12-03 確立、羅馬字那一行是盤面誤植。**
+⚠ **`live` 本層同意策展層第 5945／5955 條判 `false`，並指出一件反向的字樣**：
+**2018 那套的 `notes` 逐字用了 `recorded live` 形容 1976-12-03 那一場，而它與本盤 B 面是同一場錄音**
+——**照主線第 1971-B 條第 2 點（`Recorded live` 後面的地點是錄音室時先假設不是實況），Studio Ars-Nova 是錄音室，這一處字樣不足以把本盤推回實況；A 面的中央大学203教室 也零觀眾字樣。** 維持 `false`。
+
+## 6162　⚠ `GAP`：**1978 年 6 月 18 日吉祥寺マイナー 那一場，2016 年進了一本書的附錄 CD**
+
+**Discogs releases/9165364 逐字是 `Various — Japanese Underground Music In The Late 70s And 80s`、2016-09-22、`Loft Books`、CD Sampler，**
+**`notes` 逐字「CD sampler that was packaged together with the book 『地下音楽への招待』by 剛田武 (Takeshi Goda), published by Loft Books.」，**
+**第七軌的掛名逐字是 `Gap (5)`、題逐字〈「阿頼耶の世界から」より〉，而 `notes` 的逐軌錄音地逐字「Track7:Recorded at 吉祥寺マイナー 1978.6.18」。**
+⚠ **同一張碟的第十軌〈「Flying Baby Festival」より〉的掛名裡也有團員 `Masaru Soga[曽我傑]`。**
+**→ 本盤發行的同一年，這支樂團在吉祥寺マイナー 留下過一段錄音。**
+⚠ **這一格與策展層第 5955 條引的池中先例（c-67／c-121 的 阿部薫 五張、`高柳昌行 / 阿部薫`⋯）是同一個場景**
+——**本層刻意不在 facts 裡敘述那一族的歷史**（那是池中既有卡的軸），**只寫本盤自己的場館與日期。**
+⚠ **`ALM Records` 的廠牌史本層另補**：**Discogs 廠牌頁 55562 的 profile 逐字「Japanese label founded by [a=Yukio Kojima] in 1974.」、母公司欄逐字 `Kojima Recordings, Inc.`，而 `Yukio Kojima` 的藝人頁 433206 的 `realname` 欄逐字 `小島幸雄`、profile 逐字說他是這家錄音室與廠牌的創辦人、同時是錄音師與製作人。**
+**→ ALM 成立於 1974 年，與 GAP 的活動期（1974–1979）同一年開始。**
+
+## 6163　⚠ ⚠ ⚠ 建議主線裁定：`渡辺香津美《Lonesome Cat》` **的原壓字標，廠牌官方頁說是 `BETTER DAYS`——而那一家不在本線十五家裡**
+
+**卡單與第 5947 條判 `house: Denon`（Discogs 原壓的 `labels` 欄逐字只有 `Denon — YX-7525-ND`）。本層查到三條指向 Better Days 的證據**：
+
+1. ⚠ ⚠ **日本コロムビア 自家的 2017 年復刻頁（`columbia.jp/artist-info/watanabekazumi/discography/COCB-54211.html`，回 200）逐字寫著**
+   **「【オリジナル】1978年6月25日・YX-7525　BETTER DAYSレーベル」**，同一頁另把 Better Days 描述成「1977年から1984年にかけてミュージック・シーンを牽引した前衛的POPレーベル」，主要藝人列著 坂本龍一・渡辺香津美・KYLYN・マライア⋯；
+2. **`ja:渡辺香津美` 逐字**：「1978年、坂本龍一のファーストアルバム『千のナイフ』のレコーディングに参加。このアルバムが日本コロムビアのベターデイズ・レーベルからリリースされたことにより、**そこから先行してリリースしていた渡辺とはレーベルメイトにもなる**」——**也就是他在那個字標上出片更早**；
+3. **本盤 1978 年的卡帶版字標逐字就是 `Better Days (2) — CTK-7009-ND`（`series` 逐字「Just Compo」）、1993 年的 CD 逐字 `Better Days (2) — COCA-11114`。**
+
+**⚠ ⚠ 本層維持 `Denon`，不自行改判，依據兩項**：
+- **主線第 1965-B 條第 2 點逐字「判定永遠是 Discogs 最早那一版的 `labels` 欄」，而那一欄逐字只有 `Denon — YX-7525-ND`**；
+- ⚠ ⚠ **本層做的一個決定性反證**：**同一個 `YX-75xx-ND` 號段裡 Discogs 確實逐筆分得開**——**`catno=YX-7501-ND` 反查回的 1976 年那筆 label 逐字 `Denon Jazz`、`catno=YX-7545-ND` 回的 1979 年那筆逐字 `Denon`／`Denon Jazz PCM In New York`，而 `坂本龍一《千のナイフ》` 的那一筆（releases/1065394）逐字是 `Better Days (2) — YX-7586-ND`、1978-10-25**。
+  **→ 這個號段是 Denon 與 Better Days 共用的，而 Discogs 的 `labels` 欄在這個號段上有分辨力。**
+- ⚠ **而 2017 那一頁是復刻企劃頁，正好落在派工信第三節第 3 點的射程裡**（`columbia.jp` 的復刻頁會把後來的字標逐字寫成【オリジナル】）。
+
+**⚠ ⚠ 請主線裁定一次**：**本組四張 `YX-75xx-ND` 的 Denon 盤（#9《Kaleidoscope》／#10《Pavane Lachrymae》／#11《Voice From Yonder》／#12《Lonesome Cat》）要不要逐張回查有沒有 Better Days 的痕跡。**
+**若主線認定官方頁那一行成立，受影響的是「原壓廠牌必須是本線十五家」那一關，而 `Better Days` 在 jp-1 線的門內**——**代價是一張卡到四張卡，不是一個欄位。**
+⚠ **本層已把兩邊的證據都寫進該卡的 facts 與 notes 裡，讓這一步便宜。**（可逆性：這一件不在研究層的裁定權內，純登記。）
+
+## 6164　⚠ `Pavane Lachrymae`：**第 5956 條交給本層的舉證做完了，兩邊各有新證據，結論維持甲 7/7**
+
+**第 5956 條逐字把舉證責任交給研究層並建議「直接去查 野口久光 那篇解說」。本層查不到那篇解說的全文（原盤內頁，網路上無轉錄），改以四條路徑逐條做完**：
+
+**支持原創（維持甲）的三項**：
+1. **1978 原壓（releases/2950203）、同號 Promo、1991 年同一家 Denon 的 `COCO-7761`（releases/24450515）三版的 credits 逐字相同**，演奏與作曲都只掛 `Masahiko Satoh` 一筆，**零個 `Traditional`、零個 `Written-By: John Dowland`、零個 `Arranged By`**；
+2. **2023 年那次配信限定（COKM-44631）的曲目頁也沒有補上任何他人的作曲欄**；
+3. **`styles` 六項裡四項是爵士成分**（`Free Jazz`／`Contemporary Jazz`／`Avant-garde Jazz`／`Free Improvisation`），領銜者是池中 22 列的爵士鋼琴手。
+
+**⚠ ⚠ 支持改編的兩項（本層新查到，登記給主線）**：
+1. **七個曲題逐句對得上〈Flow, my tears〉的歌詞**：`From the highest spire`／`No nights are dark enough`／`And tears and sighs and groans`／`my weary days`／`My fortune is thrown`／`And fear and grief and pain`／`There let me live forlorn`
+   ——⚠ **末軌〈Let Me Live For Lorn〉把 `forlorn` 斷成兩個字**；
+2. ⚠ ⚠ **`en:Flow, my tears` 逐字記 Dowland 1604 年出版的曲集《Lachrimae, or Seaven Teares》收著七首以「流淚」動機為本的 Lachrimae 帕凡舞曲——而本盤正好七軌。**
+   **「七對七」這個結構對應是策展層沒有掌握的。**
+
+**本層的判斷**：**credits 是可查的欄位、結構對應是推論**，照 c-185 b 第 5929 條的三步工序與 c-184 b 第 5767 條的處置**維持判甲、維持收**；
+**反轉條件照第 5956 條原樣保留**：**若日後取得 野口久光 那篇解說並在裡面讀到「Dowland 主題的變奏」，乙就是 7/7、依第 5701 條改判退。**
+⚠ **本層把「七對七」寫進該卡的 notes 而不寫進 facts**——**它是覆核用的線索，不是成立的事實**（照 research-base「facts 只寫查證後成立的那個版本」）。
+
+## 6165　⚠ `Peking`：**Frasco 是 山下洋輔 自己的字標，而 坂田明 1972–1979 年底都在他的三重奏裡**
+
+**策展層只把封底照片這一件寫成「三張碟之間有這條人際線」。本層把兩端都查出來，四個來源互相對得上**：
+1. **Discogs 廠牌頁 221530 的 profile 逐字**：「Japanese label run by [a137203] under Nippon Phonogram.」（a137203＝Yosuke Yamashita）；
+2. **`山下洋輔` 的藝人頁 137203 的 profile 末句逐字**：「Ran [l221530] from 1975.」；
+3. **`ja:坂田明` 逐字**：「1972年から1979年末まで山下洋輔トリオに在籍。」；
+4. **本盤的封底攝影欄逐字 `Yosuke Yamashita`、封面攝影 `Kishin Shinoyama`、封面設計 `Koga Hirano`（藝人頁 2646667 的 `realname` 逐字 `平野甲賀`，profile 逐字「Japanese book, record, and theatical designer. Born in 1938 in Seoul, Korea.」）、解說 `Tetsuo Takahira`（藝人頁 1049013 的 `realname` 逐字 `高平哲郎`，⚠ 該頁 profile 逐字提醒「哲郎」讀 Tetsuo 不讀 Tetsurō）。**
+**→ 本盤是團員在團長自己經營的廠牌上發的三重奏盤，而封底照片是團長拍的。**
+⚠ **這一格與 c-185 a 記的同一件（Discogs 的 `labels/<id>` 端點查出 Frasco 是 山下洋輔 的字標）獨立重驗一次，兩層結論相同**——**簡報三之二那一段可以把「兩次都是決定性的」改成三次。**
+⚠ **`坂田明` 本人的資料本層另補**：**1945 年 2 月 21 日生於広島県呉市広長浜、広島大学水畜産学部水産学科 出身、師事 井上敬三、大學畢業後 1969 年 4 月上京組成「細胞分裂」**（`ja:坂田明`）。
+⚠ **B1 的作曲那一格本層補了來歷**：**Discogs 逐字的 `Blue Bolivar Blues` 在 Monk 1957 年 Riverside 的《Brilliant Corners》上逐字是〈Ba-lue Bolivar Ba-lues-Are〉，1956 年 10 月 9 日與 Ernie Henry・Sonny Rollins・Oscar Pettiford・Max Roach 錄成，那個怪拼法是照 Monk 誇張唸出「Blue Bolivar Blues」的音寫的、指的是曼哈頓的 Bolivar 旅館**（`en:Brilliant Corners`）。**甲的判定不變。**
+
+## 6166　⚠ ⚠ `Sunny Place Carnival`：**這支樂團的創團者是打擊手 `吉川祐二`，他在ロス・インディオス 打了八年**
+
+**策展層把 `吉川祐二` 只寫成「打擊一整組」。兩個來源逐字把他寫成創團者**：
+1. **Discogs 藝人頁 2773130 的 profile 逐字**：「Japanese latin drummer and percussionist. Born March 3, 1946. Was a member of [a=ロス・インディオス] from 1967 to 1975, when he left to form the fusion group [a=Carioca (5)].」；
+2. **`ja:ロス・インディオス` 的元メンバー 欄逐字**：「吉川祐二（よしかわ　ゆうじ、1946年3月3日 - ）ドラム、パーカッションを担当、1967年から8年間在籍。その後長谷川きよしのバックバンドを経てフュージョンバンド『カリオカ』の結成に参加。」
+
+**→ 本盤的樂團是一位在日本最有名的拉丁／ムード歌謡 團裡待了八年的打擊手離團後組起來的**，
+**而ロス・インディオス 1962 年成軍、1968 年在ムード歌謡 全盛期推出〈コモエスタ赤坂〉與〈知りすぎたのね〉、1979 年與 シルヴィア 合唱的〈別れても好きな人〉大賣**（同條目）。
+⚠ **這一格對本線有一層附帶意義，本層只記不引申**：**jp-2 線退掉的碟裡有一整族是 ④ 款的ムード系**（簡報第二節），**而本卡收的是一位ムード歌謡 團老手自己組的 fusion 團**——**兩件事的分界在碟不在人，與第 5938 條給 柳田ヒロ 定的刻度同一個邏輯。**
+⚠ **企劃那一票本層同意策展層判「不可判定」**（整筆 credits 零 `Producer`／`Directed By`／`Executive-Producer`），**並指出創團者本人在盤上、這一票的空白是盤面沒印而不是企劃不在日本側。**
+
+## 6167　⚠ ⚠ `Sunny Place Carnival`：**演奏側的國籍計數更正為 14/15，兩處都有來源**
+
+**卡單逐字把兩筆算進「判不出國籍」那一格：「`Antonio Ishida` 查無任何漢字形」與「`Misty Town` 兩筆本層判不出國籍」。**
+
+1. **`Antonio Ishida`（藝人頁 1023863）的別名欄逐字有兩個字串：`アントニオ石田` 與 `Yuichi 「Antosio」 Ishida`**
+   ——**他是日本人、姓石田、`Antonio` 是綽號。** ⚠ **本層在 facts 裡照盤面寫羅馬字 `Antonio Ishida`**（姓的漢字有、名的漢字查不到，照第 1967-B 條不拼半個名字）。
+2. **`Misty Town`（藝人頁 6421448，別名欄逐字只有 `ミスティ・タウン`）在本組另一張碟上也出現**
+   ——**同組 #6《New York》2013 年復刻（releases/4943554）第三軌的合聲欄逐字就是 `Misty Town[ミスティ・タウン]`**，
+   **兩張都是 1978 年的東京 session**，**這支合聲團不是外國團。**
+
+**→ 第 5952 條那一格的「演奏側 13/15」改成 14/15**（仍未計 `Koji Hatori` 之外的任何外國人，而他的 profile 逐字是「Japanese jazz trumpeter. Born June 11, 1933 in Yokohama.」）。
+⚠ **第 4106 條四項與門檻完全不受影響**（企劃票仍是不可判定、可判定三票全在日本側 ＝3/3、門檻 ≥2），**收退不變。**
+⚠ **並記一筆給後續批次**：**`Misty Town` 這個字串在本組兩張不同廠牌的碟上各出現一次（Kitty 與 CBS/Sony），它是 1978 年東京的錄音室合唱團**——**與 c-178 a 第 4784 條的「フリーザー 是日本錄音室合唱團、不是外國樂手」同一種形狀，本線第二次。**
+
+## 6168　⚠ `New York`：**坂本龍一 在四軌不是五軌**
+
+**卡單逐字寫「坂本龍一（五軌的鍵盤與合成器）」。2013 復刻（releases/4943554）的逐軌 credits 逐軌數過是四軌**：
+**第 1 軌 `Electric Piano [Fender Rhodes], Clavinet [Honer Clavinet]`、第 2 軌 `Arranged By, Synthesizer [ARP Odyssey], Synthesizer [Polymoog]`、第 4 軌 `Piano, Synthesizer [ARP Odyssey]`、第 6 軌 `Electric Piano [Fender Rhodes], Piano`。**
+**→ 四軌，而且其中一軌他同時掛編曲。** 第 5701 條的甲乙與四項計數都不受影響。
+⚠ **另補三位策展層沒有列出的樂手**（見 6153）：**第三軌的小號 `岸義和`、第八軌的貝斯 `Masahiko Takeuchi`（別名欄逐字 `竹内雅彦`）、鍵盤 `江夏健二`**
+——⚠ ⚠ **後者的 Discogs `realname` 欄逐字是 `黄 永燦 (Wong Wing Tsan)`**，
+**所以本盤演奏側除 `Rob Brill` 之外還有兩位不是日本出身的樂手（另一位是 `Jake H. Concepcion`，`realname` 逐字 `Jacob Hernandez Concepcion`）。**
+**這只更正「演奏側只有一位外國人」這句敘述，第 4106 條四項（領銜／作曲／企劃／原盤發行四票仍在日本側）不變、收退不變。**
+
+## 6169　⚠ `Pavane Lachrymae` **不是 佐藤允彦 的第一張獨奏盤**
+
+**卡單逐字寫「本盤補的是他池中 1977《マグノリアの木》與 1979《All-in All-out》之間、1978 年那一格，而且是他第一張純獨奏的鍵盤盤」。**
+**`ja:佐藤允彦` 的作品表逐字列著「『ホログラフィ』 - Holography (Nippon Columbia) 1970年（ソロ・ピアノ）」**
+——**那張碟池中也有（卡單自己的 `poolRecheck` 列裡就有 seed 的《Holography》1970）。**
+**→ 「第一張純獨奏」不成立**；可以成立的敘述是**「八年前的《ホログラフィ》是獨奏鋼琴盤，而本盤是他以四種鍵盤獨奏完成的」**（本層在 facts 裡就這樣寫）。
+⚠ **照 c-178 a 第 4782 條那句固定動作處理：序數與「第一張」一律回查藝人自己的作品表，不要從卡單推算。**
+⚠ **本層另補他的三件生平寫進卡**：**1941 年 10 月 6 日生於東京・両国、慶應義塾大学経済学部 首席畢業、1966–1968 年バークリー音楽院 留學**（`ja:佐藤允彦`）；
+**五歲彈家裡那台鋼琴、十七歲在銀座的酒店替歌手與魔術師伴奏職業出道、1971 年柏林爵士節用環形調變器**（`en:Masahiko Satoh`）。
+⚠ **獎項逐項分清**：**1969《パラジウム》的《スイングジャーナル》日本爵士獎、1970《四つのジャズコンポジション》與 1972《邪馬台賦》的藝術祭優秀獎三座逐字都是「受賞」＝得獎，不是入圍。**
+
+## 6170　⚠ 來源網域實測（本工作階段逐一記錄）
+
+| 路徑 | 本組實測 | 給後續批次 |
+|---|---|---|
+| ⚠ ⚠ **`columbia.jp/artist-info/<slug>/`（藝人層）** | **試 6 個 slug 中 4 個**（`watanabekazumi` 200／`togashimasahiko` 200／`satomasahiko` 200／`mickieyoshino` 200／`satohmasahiko` 404／`masahikosatoh` 404／`yoshinomickie` 404） | ⚠ ⚠ **本組三處版本數改判全部靠它**（6149／6150）——**藝人層要先打，它會列出整份配信與復刻清單** |
+| `columbia.jp/artist-info/<slug>/discography/<catno>.html` | **8 試 8 中**（只要目錄號是從藝人層頁抄下來的就一定中） | 目錄號要從藝人層頁抄，不要自己猜 |
+| ⚠ **`columbia.jp/prod-info/<catno>/`** | ⚠ ⚠ **4 試 4 敗**（`COCB-53294`／`COCO-7761`／`COCB-54211`／`YX-7519-ND` 全部 404、回同一頁 12744 位元組） | **本組是「`prod-info` 全滅、`artist-info` 多數命中」——與 c-178 a 第 4795 條的第八種結論同形，簡報那句「六批六個不同結論，不可外推」再成立一次** |
+| ⚠ **`columbia.jp` 的 slug 拼法** | **`satomasahiko`（佐藤允彦，無 h）中、`satohmasahiko`／`masahikosatoh` 敗；`mickieyoshino` 中、`yoshinomickie` 敗** | **同一個站內同時有「姓名序」與「名姓序」兩種，而羅馬字的 h 有無也不固定——兩三種都要試** |
+| ⚠ **`sonymusic.co.jp/artist/<slug>/`** | **`kimikokasai` 200（小寫）／`KimikoKasai` 404；`T-SQUARE` 200（全大寫帶連字號）／`TSquare`／`tsquare`／`thesquare` 全 404；`MasahiroAndoh` 200（駝峰）** | **與主線第 1968-B 條的更正一致（逐藝人不同），本組再加兩種形狀：全大寫帶連字號、駝峰**；⚠ **全站 JS 渲染，只取得 `<title>` 與導覽列，討論區與曲目全拿不到** |
+| ⚠ ⚠ **`kojimarokuon.com`（ALM／コジマ録音）** | **`sitemap.xml` 200、`sitemap_products_1/2.xml?from=&to=` 200（合計 1183 筆商品網址）、`/collections/all` 200；⚠ ⚠ 而 `/search?q=` 與 `/pages/*` 一律回 **429「Verifying your connection...」**（Cloudflare）** | ⚠ ⚠ **簡報三之二那一格要補**：**這個站只有 sitemap 與 collections 可用，搜尋與 pages 會被 Cloudflare 擋**；⚠ **本組把 1183 筆商品網址逐筆掃過，`AL-3005` 零命中——ALM 的自家通販沒有在賣 1978 年那張 LP**（`alcd-`／`alm-` 兩個前綴的 CD 才在賣） |
+| `universal-music.co.jp` | **`/carioca/` 與 `/carioca/products/upjy-9571/` 皆 404（回 61575 位元組的 Page not found）；`/search/?q=` 回 200 但整頁 JS 渲染** | **2026-09-23 才發的 `UPJY-9571` 在官網上打不到，本組的版本數是從 Discogs 取的** |
+| `110107.com`（otonano） | **2 試 2 敗（404，回 74999 位元組的同一頁）** | 《On The Move》的 2026 復刻（`MHCL-31250`／`MHJL-492`）在這個站上沒有可打的網址 |
+| `jvcmusic.co.jp` | **1 試 1 敗**（`AL-3005` 404，回 5247 位元組） | ⚠ **那個號不是ビクター 的號，本層只是照簡報的清單試一次，結果是負的** |
+| **ja／en 維基** | **ja 命中 38 條事實、en 19 條** | ⚠ **本組 ja 維基的命中率是本線偏高的一批，而且兩處轉向陷阱（見 6155）都靠先讀職業欄／首段擋掉** |
+| `allmusic`／`allaboutjazz` | **零次嘗試** | 附錄二第 1 點：雲端一律 403，不要排進查證路徑 |
+
+⚠ ⚠ **本組沒有用 WebSearch**（與附錄二一致，13 張全部走 API 與官方頁）。
+⚠ **`www.discogs.com/...` 短網址對程式化 UA 一律 403（反爬），本層照既有慣例仍在 `src` 欄寫短網址**（49 個非 Discogs 網址逐一實測 HTTP 狀態、全部 200；一筆 ja 維基網址本層第一次打成 404，是百分比編碼把 `矢` 寫成 `碢`，已修正並重測 200）。
+
+## 6171　⚠ ⚠ `api.discogs.com/artists/<id>`：**本組打了 249 個藝人頁，連七批命中，而本組的產出形狀與前六批不同**
+
+**派工信第四節逐字要求「查日本樂手漢字名一律回打 `api.discogs.com/artists/<id>` 的 `namevariations` ＋ `profile`」，並註明「範圍不只樂手——製作人／A&R／工程師／解說者都要」。**
+**本層把 15 筆 Discogs release（13 張原壓 ＋《New York》2013 復刻 ＋《Pavane Lachrymae》1991 CD）裡出現過的每一個 artist id 蒐齊，共 249 個，逐一打完。結果**：
+
+- **人名改判 4 處、補源 1 處、第三形 1 處**（6153），**而其中三處的正解在 `realname` 欄、`namevariations` 欄只給了錯的或多形的**
+  ——⚠ **c-178 a 第 4797 條那句「`realname` 欄比 `namevariations` 更可信」在本組第二次成立。**
+- ⚠ ⚠ **本組最有產出的不是人名而是 `profile` 欄**：**六筆決定性的脈絡全部來自 profile**
+  ——**`伊藤八十八` 創辦 East Wind（6157）、`吉川祐二` 創立カリオカ（6166）、`The Gentle Thoughts` 是 Lee Ritenour 的樂團（6158）、`山下洋輔` 從 1975 年經營 Frasco（6165）、`小島幸雄` 1974 年創辦 ALM（6162）、`中村裕二` 後來成為檀香山的新教牧師。**
+  **→ 給後續批次一句：`profile` 欄在「這家小廠是誰開的」「這支樂團是誰組的」這兩種問題上的命中率，比 `namevariations` 在人名上的命中率高。**
+- ⚠ **`labels/<id>` 端點本組打了兩次，兩次都有用**（`Frasco` 221530 與 `ALM Records` 55562），**與 c-185 a 第 5903 條第 4 點記的同向。**
+- ⚠ **節流實測**：**Discogs 約 1 req/3.1s、249 次全部 200、零 429**；**MB 1 req/1.1s、UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`**；**Apple 1.4 秒、9 次 lookup 全部 200。**
+
+## 6172　⚠ 三種店面查法（第 254 條，只寫觀察）：**Apple jp 命中 8/13（62%）；403／429 零次**
+
+| 卡 | Apple jp | 本層的觀察 |
+|---|---|---|
+| 《On The Move》 | 命中 1542139999 | 8 軌、`℗ 1978 ALFA MUSIC,INC.`、`releaseDate` 1978-08-25；⚠ 題是片假名 |
+| 《Mermaid Boulevard》 | 查無 | 與第 5961 條相同 |
+| 《GAP》 | 查無 | 同上 |
+| 《Lucky Summer Lady》 | 命中 1538793239 | 6 軌、`releaseDate` 1978-09-21（與原壓逐日相符）；⚠ ℗ 逐字 2013（數位化年） |
+| 《Midnight Lover》 | **命中 1538793753** | ⚠ **策展層記「未另查」，而探測層已以 `manual-lookup` 救回**；6 軌、`releaseDate` 1978-12-21（逐日相符）；⚠ 題逐字 `Midnight Lover - EP`（誤標，主線第 1974-B 條已裁定） |
+| 《New York》 | 命中 1538791507 | ⚠ 掛名漏一位又寫錯一位、日期是 2013-07-24（復刻日）、℗ 2013 |
+| 《Round And Round》 | 命中 6791487075 | 8 軌、`℗ 1978 Sony Music Labels Inc.`、`releaseDate` 1978-08-21 |
+| **《Kaleidoscope》** | ⚠ ⚠ **命中 388051257（策展層報查無）** | 見 6152；⚠ `releaseDate` 逐字 1987-01-01（佔位） |
+| 《Pavane Lachrymae》 | 命中 1709903845 | 7 軌、℗ 1978、`releaseDate` 1978-10-25 |
+| 《Voice From Yonder》 | 命中 1853787549 | 6 軌、℗ 1978、`releaseDate` 1978-07-25；⚠ **這一筆就是 2025-12-03 那次配信**（6149） |
+| 《Lonesome Cat》 | 命中 388053437 | 6 軌、℗ 1978、`releaseDate` 1978-06-25（與盤面 `℗1978.6` 一致） |
+| 《Peking》 | 查無 | 與第 5961 條相同 |
+| 《Sunny Place Carnival》 | ⚠ ⚠ **探測層記 `ready` 而本層判那是誤命中** | 見 6173 |
+
+⚠ **命中率 8/13＝62%**（第 5961 條記 7/13＝54%，差在《Kaleidoscope》）。
+⚠ **按廠牌分**：**Denon／日本コロムビア 4/4（策展層記 3/4）、CBS/Sony 4/4、Alfa 1/2、ALM／Frasco／Kitty 0/3**
+——**第 5961 條末段那句「ALM／Frasco／Kitty 三家的 1978 年盤查不到是常態」成立，而 Denon 那一家是 4/4 不是 3/4。**
+⚠ **第 1907-B 條那份廠牌分表本組補兩格**：**Denon／日本コロムビア 三張逐字落在每月 25 日、⚠ 一張逐字是 1987-01-01 的佔位值（見 6152）；CBS/Sony 三張逐字落在每月 21 日而 ℗ 年是數位化年（本組 2/2 如此）。**
+⚠ **`itunes.apple.com/lookup` 在本工作階段 403／429 零次**（節流 1.4 秒），**附錄二第 2 點那句「403 是間歇性的」本組沒有踩到。**
+
+## 6173　⚠ 無串流與無封面的現況（照 `batch-progress/probe/previews.json` 與 `batch-progress/c186/caa.json`），⚠ 另有一筆 `ready` 本層判是誤命中
+
+**13 筆逐筆讀過兩個檔（⚠ **只讀不寫**，`previews.json` 的鍵不帶 `desc4:`／`desc2:` 前綴）**：
+
+| 狀態 | 筆數 | 明細 |
+|---|---:|---|
+| 串流 `ready` 且本層覆核成立 | **9** | 《On The Move》《Lucky Summer Lady》《Midnight Lover》《New York》《Round And Round》《Kaleidoscope》《Pavane Lachrymae》《Voice From Yonder》《Lonesome Cat》 |
+| 串流 `unavailable`（無來源） | **3** | 《Mermaid Boulevard》《GAP》《Peking》 |
+| ⚠ ⚠ 串流 `ready` 而本層判誤命中 | **1** | **《Sunny Place Carnival》** |
+| CAA 無圖 | **4** | 《GAP》《Kaleidoscope》《Pavane Lachrymae》《Sunny Place Carnival》 |
+
+⚠ ⚠ **《Sunny Place Carnival》那一筆要登記給主線與探測層**：**該鍵的 `status` 逐字 `ready`，而它的 `front` 逐字 `fr`、`appleTitle` 逐字 `Carioca`、`appleArtist` 逐字 `Samba`、`appleYear` 逐字 `2025`、`yearDrift` 逐字 47、`aliasOnlyTitle` 逐字 `true`、`trackCount` 逐字 8**
+——**掛名與盤名剛好對調（本盤的掛名是 カリオカ＝Carioca、盤名含 Carnival），年份差四十七年**，**那幾乎確定是 2025 年一張叫《Carioca》的桑巴碟，不是本盤。**
+⚠ **同一鍵的 `rejectedMatch` 裡已經退過一筆同形的（`Bossa Carioca`／`オス・カリオカス`／2005，退件理由逐字「aliasOnlyTitle＋證人只是片段＋年份漂移」）**
+——**第二筆的 `aliasOnlyTitle` 同樣是 `true`、`yearDrift` 更大，卻通過了。** **→ 建議探測層把「`aliasOnlyTitle` 為真且 `yearDrift` > 30」設成硬退。**
+⚠ ⚠ **本層不動 `previews.json`**（硬邊界），**只登記。**
+⚠ **《Mermaid Boulevard》與《Peking》兩張主線第 1974-B 條已逐筆裁定過、救回 0，本層不派回撈、facts 也沒有任何一句寫成「可以去聽」**；
+**《GAP》是第三張無來源（jp 與 us 各 12 筆、其餘五國 0 筆全部不中），同樣不派回撈。**
+
+## 6174　⚠ 獎項、反向禁令與同組反同構的三份分配表
+
+**一、獎項逐項分「入圍／得獎」**（research-base 的最高頻錯誤那一條）：**本組出現五座，五座逐字都是「受賞」＝得獎，零筆入圍**：
+**佐藤允彦 1969《パラジウム》的《スイングジャーナル》日本爵士獎、1970《四つのジャズコンポジション》與 1972《邪馬台賦》的藝術祭優秀獎；富樫雅彦 1975《スピリチュアル・ネイチャー》的爵士唱片大獎日本爵士獎、1978 年的藝術選獎新人獎。**
+⚠ **另有三筆不是獎、本層刻意不寫成獎**：**富樫雅彦 1970 年五月《スイングジャーナル》讀者票選鼓手部門第一名（票選名次）**、
+**加古隆 1970 年毎日音楽コンクール 作曲部門管弦樂曲第二名（名次）**、**War《The World Is a Ghetto》1973 年全美銷量第一（年終榜排名）**。
+
+**二、反向禁令的分類處理**（逐張）：
+- **可寫的一類（與作品直接綁定、且時序標明）**：**富樫雅彦 1970 年的受傷（早於本盤且直接決定他的演奏方式，照逝者克制只寫事實不寫細節與動機）**、
+  **笠井紀美子 1978 年移居洛杉磯（與本盤同年、本盤整張在美國錄，只陳述時間關係不寫因果）**、
+  **《On The Move》《Kaleidoscope》《Lonesome Cat》《Peking》《GAP》五張的錄音年早於發行年（逐張在 facts 裡講明是錄音年）。**
+- **不寫的一類（與作品無關的後續生平事件）**：**深町純 2010／川添象郎 2024／坂本龍一 2023／富樫雅彦 2007／篠山紀信 2024／土岐英史 2021／松原正樹 2016／松木恒秀 2017／矢島賢 2015／伊藤八十八 2014／Benard Ighner 2017／乾裕樹 2003 的辭世**（本層只在必要時寫生歿年當識別資訊，不敘述經過）、
+  **笠井紀美子 1990 年的婚姻與珠寶事業、坂田明 1982 年的手錶廣告與 2003 年日本プランクトン学会 的特別表彰、ミッキー吉野 1992 年的事件、THE SQUARE 1980 年代的十二座金唱片與 1989 年的改名以外的後續、渡辺香津美 2024 年的病情。**
+  ⚠ **《Midnight Lover》那一卡有一個例外**：**1989 年改名 T-SQUARE 這一件本層寫了**，理由是**它直接解釋了盤面上為什麼印 `THE SQUARE`**（與掛名欄位綁定，屬「作品本身的後世流傳」那一類）。
+- ⚠ **一處本層查到而刻意不寫進 facts 的**：**佐藤允彦 與 中山千夏 1971 年結婚、1978 年離婚**（`ja:佐藤允彦`；c-184 a 第 5722 條退掉的碟就是兩人的聯名盤）
+  ——**1978 年與本盤同年、不在反向禁令的射程內，但本層查不到任何來源把它與本盤的曲題選擇連起來，所以不寫，也在 notes 明講「不得寫成創作動機」。**
+
+**三、同組反同構的分配**（人物與軸各自只給一張卡）：
+| 人物／軸 | 出現在幾張 | 生平寫在 |
+|---|---:|---|
+| **深町純** | 2（#0 領銜、#2 合成器） | **#0**（另有 c-185 四張與 c-186 b 一張，請另取面向） |
+| **渡辺香津美** | 3（#2／#9／#12 三個不同掛名字串） | **#12**（#2 的軸是 Lee Ritenour 一族、#9 的軸是 ミッキー吉野 一族） |
+| **THE SQUARE** | 2（#3／#4） | **#3**（樂團史 ＋ 安藤正容 ＋ 伊藤八十八）；**#4** 走直刻工法 ＋ 鷺巣詩郎／河合誠一／操上和美 |
+| **野口久光** | 2（#3 解說、#10 解說） | **#3** |
+| **内藤忠行** | 2（#9 封面、#12 封面） | **#9** |
+| **高中正義** | 1（#17 吉他） | ⚠ **只寫出生名與歸化這一件**（他是 c-185 b 與 c-186 b 三張卡的領銜者，主軸留給那三卡） |
+| **坂本龍一** | 3（#6 四軌／#17 鋼琴／退件 #13） | ⚠ **三處都只寫 credit，零生平** |
+| **Lee Ritenour** | 1（#2） | **#2**（⚠ 而他也在 c-185 b 的《Concierto De Aranjuez》上，本卡的軸是 VIDC 直刻線而不是他的生平） |
+| **Herbie Hancock** | 2（#8 合成器與作曲／#9 的 A1 作曲） | **#8**（#9 只寫〈Maiden Voyage〉那首曲子的來歷） |
+
+## 6175　交件自跑、`jp-proper-names.json` 的 append、邊界自述與編號區間結算
+
+1. **`node qa-batch.mjs research c186`**：⚠ **第一次跑報 `research-a 簡體字: 国会`**
+   ——**逐字定位後是兩個日文專名被誤報：`両国`（佐藤允彦 的出生地，東京・両国）與 `日本映画テレビ照明協会`（6155 那個同名陷阱的機構名）。**
+   **照 `jp-proper-names.json` 檔內逐字的指示「遇到新的日文專名被誤報，把整個專名加進那個檔，不要去動 `SIMP`」，本層 append 兩個字串**：
+   **`両国` 與 `日本映画テレビ照明協会`**，**既有 77 個字串與順序一字未動（`git diff` 只有一行變成兩行、`+2`，縮排與原檔一致）。**
+   ⚠ **本層另實測一件供後續批次省時間**：**`パリ国立高等音楽院` 與 `日本プランクトン学会` 兩串本來就在名單上、確實被剝掉了**
+   ——**那份白名單的覆蓋率在本線已經很高，本組 13 張只差兩個。**
+   **第二次跑：`a 13 full×13`、零標記；⚠ 本層交件時 b 組已交 12 張，兩組合起來「key 與卡單完全一致 ✓、全部通過 ✓」。**
+2. **本層自己再逐張量的九項**（`node` 一次性腳本）：
+   **`facts` 條數 13 張皆 12（合計 156）；`src` 不是完整 https 網址的 0 條；`hookCandidates` 13 張皆 2 條（上限 2）；
+   `keyTracks` 1–2 條；`status` 與 `coverage` 兩欄並存且皆 `full`；簡體殘留 0；非拉丁亂碼 0；千分位逗號 0；半形逗號貼中文 0（剝除卡單字串與《》〈〉「」之後）。**
+   ⚠ **`src` 的相異網域數逐張 3–4**（最低的三張是 Discogs ＋ ja 維基 ＋ MusicBrainz 或 columbia.jp）。
+   ⚠ **49 個非 Discogs 的 `src` 逐一實測 HTTP 狀態全部 200**（Discogs 短網址對程式化 UA 一律 403，照慣例保留）。
+3. ⚠ **facts 欄只放事實這一條本層逐條掃過**：**「查無」「查不到」「本層」「標 uncertain」「推翻」「策展層」這幾個字串在 156 條 `facts` 裡零命中**，
+   **查證過程、限制、推翻與反轉條件一律寫在 `notes`**（13 張的 `notes` 合計約 1.5 萬字，最長的是《Sunny Place Carnival》）。
+4. **邊界自述**：**本層只寫了三個檔——`desc-tools/batches/research/c186-a.json`（新增）、`batch-progress/c186/rulings.md`（本節 append）、`desc-tools/jp-proper-names.json`（append 兩個字串）。**
+   **git 操作只有一次，而且只作用在本層自己的檔上、要逐字交代**：⚠ **本層第一次 append `jp-proper-names.json` 時用 `JSON.stringify(arr, null, 2)` 整檔重寫，把原檔的一格縮排改成兩格（`git diff` 出現 `-77 +79`）——雖然內容只多兩個字串，那仍然是整檔重寫，違反「只准 append」。本層立刻 `git checkout desc-tools/jp-proper-names.json` 還原成 HEAD 那一版，再改用純文字插入重做（現在的 `git diff` 逐字是一行變兩行、`+2`）。** **那一次 `git checkout` 只碰這一個檔、沒有動索引、沒有碰任何別人的檔。**
+   **其餘的 git 命令全部是唯讀**：**`git show HEAD:batch-progress/c186/rulings.md` 與 `ls batch-progress/c186/`（append 前的存在性檢查，兩者都跑了）、`git status --short`、`git diff`／`git diff --numstat`（只用於確認本層自己的改動範圍與 append 是否純新增）。**
+   ⚠ **零 `git add`／`git commit`／`git push`、零索引操作。**
+   ⚠ ⚠ **這一件本身要給後續批次一句**：**`jp-proper-names.json` 的 append 不要用 `JSON.stringify` 重寫整檔，那會改掉全檔的縮排；純文字在最後一個字串後插一行才符合「只准 append」。**
+   ⚠ ⚠ ⚠ **另一件同構而更危險的，本層也要逐字交代**：**本節先以 `cat >>` 純追加寫進本檔（+508 行、`git diff --numstat` 逐字 `508	0`），之後為了補上這一格的 git 自述，本層用「整檔讀入、字串替換、整檔寫回」改了自己那一行**
+   ——⚠ ⚠ **而那一刻另一支研究代理已經把 b 組研究層（6176–6205）append 在本節之後**：**本層那次整檔寫回若晚一步，就會把對方那 447 行整段吃掉。**
+   **本層寫回後立刻逐項驗過：前 2093 行（策展兩組）的 md5 與 `git show HEAD:batch-progress/c186/rulings.md` 逐字相同、b 組研究層 6176–6205 三十條齊全且結尾的編號區間結算完整、`git diff` 逐字 `0` 刪除。**
+   **→ 給後續批次一句（與 `CLAUDE.md` 對 `PROJECT_MEMORY.md` 的警告同構）：`rulings.md` 是多代理共用檔，任何改動一律用 `cat >>` 純追加；已經 append 出去的內容若要改，改的是「自己那一段」而不是「整個檔」——本層這一次是僥倖，不是做對了。**
+   **`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／卡單／b 組的檔／其他批次的檔一律未動**（`previews.json` 與 `caa.json` 只讀）。
+5. **續跑保護**：**本層每三張就把當時的完整陣列寫回 `desc-tools/batches/research/c186-a.json`（3 → 6 → 9 → 13），臨時檔全部放在 scratchpad 的 `c186ra/` 底下並以批次組別為前綴（`c186ra-*.mjs`）。**
+
+**編號區間結算**：本節用到 **6146–6175（共 30 條），區間用滿、未越界**（另一組用 6176–6205；本節 append 前已跑 `git show HEAD:batch-progress/c186/rulings.md`（2093 行）與 `ls batch-progress/c186/` 兩者，兩者一致、檔內零個 `61xx` 條號，策展兩組的 5936–5995 逐行未動）。
+
+---
+
+# b 組（12 張收件）｜研究層｜2026-09-25
+
+派工信：`scratchpad/c186-rb.md`。判準照 `desc-tools/prompts/research-base.md`（全檔，含開頭「雲端 Blue Note 線的三處例外」）
+→ `batch-progress/CURATION-BRIEF-jp2.md`（全檔，含第三節 1–21 點）→ `CURATION-BRIEF-jp1.md` 第〇節與「一之二」四條
+→ `CURATION-BRIEF-bluenote-post1985.md` 附錄二（雲端線實測）。
+`batch-progress/c186/rulings.md` 全檔（a 組 5936–5965 ＋ b 組 5966–5995）已讀；
+`batch-progress/c163/rulings-mainline.md` 第 1934-B…**1976-B** 條已讀（**第 1958-B／1959-B／1961-B／1962-B／1965-B／1967-B／1968-B／1969-B／1971-B／1974-B／1975-B／1976-B** 十二條逐條適用）。
+輸出：`desc-tools/batches/research/c186-b.json`。
+
+## 6176　（**總表**）：**12 張全 `full`、thin 0、合計 144 條 facts（12 張 ×12）；⚠ ⚠ 推翻策展層 24 處，其中 21 處是人名**
+
+| # | 卡 | facts | status | 本層對策展層的處置 |
+|---:|---|---:|---|---|
+| 3 | 深町純《Evening Star》 | 12 | full | ⚠ ⚠ ⚠ **抓到第二張來源碟，第 5990 條的 33% 可能是 67%**（第 6178 條）；人名退 1 |
+| 4 | 高中正義《Brasilian Skies》 | 12 | full | 版本數 10 → **11**；補 47 筆 credits 與出生名（第 6200 條） |
+| 5 | Prism《Prism III》 | 12 | full | 版本數 6 → **8**；⚠ **人名改 2 處、退 1 處**；年份改判補到第 5、6 個資料點；**12→9 軌之謎定案**（第 6183／6184 條） |
+| 6 | Prism《Second Thoughts / Second Move》 | 12 | full | 版本數 7 → **8**；人名改 1 處 |
+| 7 | 辛島文雄 Meets Elvin Jones《Moonflower》 | 12 | full | 版本數 7 → **8**；補兩條主故事線（第 6188／6189 條）；人名退 1 |
+| 8 | Richie Beirach with 富樫雅彦《Kahuna》 | 12 | full | `live: false` 補第 3、4 個佐證（第 6185 條）；人名改 2 處；〈Essence〉三方相撞（第 6187 條） |
+| 9 | Makoto Terashita《Great Harvest》 | 12 | full | 版本數 4 → **5**；⚠ **Errol Walters 是牙買加人**；人名改 1 處、退 1 處 |
+| 10 | 山口真文カルテット《Leeward》 | 12 | full | 版本數 5 → **6**；⚠ ⚠ **人名連改 3 處（四位團員裡三位）**（第 6199 條） |
+| 15 | Sonia Rosa《Samba Amour》 | 12 | full | 零樂手那一關從 5 個版本擴到 **8 個壓片**；⚠ ⚠ **抓到同年七吋單曲與它自己的再發線**（第 6191／6192 條） |
+| 16 | The Players Featuring 鈴木宏昌《Galaxy》 | 12 | full | ⚠ ⚠ **`previews.json` 假命中**（第 6193 條）；⚠ **序數「第二張」與 ja 維基衝突**（第 6194 條）；人名改 4 處、標 uncertain 3 處 |
+| 17 | THE SQUARE《Make Me A Star》 | 12 | full | MB 獨有 2 筆實體覆核成立、聯集 15 不動；⚠ ⚠ **人名改 1 處，而那一處錯得最重**（第 6181 條） |
+| 19 | 上田力 & The Power Station《Bos & Boz》 | 12 | full | 版本數 2 → **3**；⚠ **人名改 3 處**；⚠ ⚠ **姊妹盤 `SX-7033` ＋ ja 維基把本盤稱作翻唱專輯**（第 6195 條） |
+
+**每張 12 條 facts、每條一個完整 https `src`（144/144，零描述型 src）；`hookCandidates` 每張 2 條；`status` 與 `coverage` 兩欄並存同值；`key` 逐字從卡單複製（`qa-batch` 報「key 與卡單完全一致 ✓」）。**
+**獎項 0 處**（本組十二張沒有一張有獎項事實，所以「入圍／得獎」那一族在本組不觸發）。
+
+## 6177　⚠ ⚠ 版本數：**12 筆逐筆重跑整張 `versions`，Discogs 的版本數 12/12 與策展層一致；⚠ 而「數位漏法」7/12 命中（58%），已知版本總數 76 → 84**
+
+| # | 碟 | 策展層 | Discogs 重跑 | MB 獨有 | ⚠ 數位（Apple／MB Digital Media） | **本層定案** |
+|---:|---|---:|---:|---:|---|---:|
+| 3 | Evening Star | 5 | 5 ✔ | 0 | ⚠ **七國 ＋ 兩種和文查法全部 0 筆** | 5 |
+| 4 | Brasilian Skies | 10 | 10 ✔ | 0（1 筆 XW 數位） | ⚠ **Apple jp 1444076539 ＋ MB 的 2005 XW Digital Media，兩家互指** | **11** |
+| **5** | Prism III | 6 | 6 ✔ | 0 | ⚠ ⚠ **Apple jp 兩筆獨立數位版：九軌 ℗1979（1443094251）＋ 十六軌 ℗2003（1442871592）** | **8** |
+| 6 | Second Thoughts / Second Move | 7 | 7 ✔ | 0 | ⚠ Apple jp 1443211351（2003 SACD 的數位化） | **8** |
+| 7 | Moonflower | 7 | 7 ✔ | 0 | ⚠ Apple jp 1329346366（`releaseDate` 2000-03-01，不對應任何已知實體版本） | **8** |
+| 8 | Kahuna | 2 ＋ 1 孤兒 | 2 ✔ | 0 | **四種查法全 0**（兩筆命中的是《津波》，不是本盤） | 3 |
+| 9 | Great Harvest | 4 | 4 ✔ | 0 | ⚠ Apple jp 1879753808 | **5** |
+| 10 | Leeward | 5 | 5 ✔ | 0 | ⚠ Apple jp 1882012982（⚠ **℗ 年與原壓相符**） | **6** |
+| 15 | Samba Amour | 5 | 5 ✔ | 0 | **專輯層面 0**（⚠ **曲目層面有，見第 6192 條——但那是單曲、不計入本盤版本數**） | 5 |
+| 16 | Galaxy | 7 | 7 ✔ | 0 | **四種查法全 0**（⚠ **`previews.json` 那一筆是假命中，見第 6193 條**） | 7 |
+| 17 | Make Me A Star | 9 ＋ MB 獨有 2 ＋ 4 數位＝15 | 9 ✔ | **2 ✔** | MB 4 筆 Digital Media ＋ Apple jp 1538794395（對應同一族） | 15 |
+| 19 | Bos & Boz | 2 | 2 ✔ | 0 | ⚠ Apple jp 1731786907（⚠ **`releaseDate` 與 ℗ 年兩欄都與原壓相符、精確到日**） | **3** |
+
+**四種漏法逐項的結果**：
+- **(a) 只數 `mbNote` 裡的 MB release**：本層 12 筆全部走 `/masters/<id>/versions` 整張清單，**不從 `mbNote` 抄**。
+- **(b) 1970 年代同號再發與 2016 年後黑膠復刻**：**策展層 12 筆全部已收**（同號 Promo 7 筆、2016 年後黑膠復刻 5 筆——#4 兩次、#9 兩次、#10 兩次〔含 2020 法國盤〕），**本層 0 筆新增**。
+- **(c) ⚠ ⚠ Discogs `versions` 結構上不收數位發行**：**7 張命中、合計 8 筆（#3 未中、#8／#10 的 Galaxy／#15 未中）**——**7/12 ＝ 58%，與 c-185 a 的 7/13 並列本線最高。**
+- **(d) MB 獨有而 Discogs 沒建**：**只有 #17 的 2 筆（策展層已抓到，本層逐筆覆核成立）**，其餘 11 張 MB 獨有 0 筆。
+⚠ **另照主線第 1965-B 條第 1 點，12 筆全部比過「MB 轄下 JP release 數 vs Discogs 日本盤數」**：**12 筆全部少（差 1 到 5 筆），逐筆把差額的盤名與年份人工回查完——盤名改判 0、年份改判 0。**
+**→ 本線「版本數低估」這條曲線在本組仍然沒有下降，而降不下來的原因現在可以分成兩截寫**：
+**Discogs 對實體版本的收錄在本組 12/12 都是完整的（策展層數對了），低估全部出在「Discogs 結構上不收數位」這一格。**
+
+## 6178　⚠ ⚠ ⚠ **建議主線優先覆核（本層最重要的一件）**：`深町純《Evening Star》` 的既有錄音可能是 **4/6（67%）** 而不是第 5990 條算的 2/6——**因為第 5990 條只比了一張來源碟，而本層找到第二張**
+
+**第 5990 條的事實**：本盤的〈It's You〉7:33 與〈The Sea Of Dirac〉10:56 與池中 c-185 b 的 `深町純《The Sea Of Dirac》1977`（Kitty `MKF 1020`）逐秒相同、逐軌 credits 逐名相同。**本層覆核那兩軌成立。**
+
+**本層新抓到的**：⚠ ⚠ **1976 年的《Spiral Steps》（Kitty `MKF 1007`、Discogs releases/5060563）的 A1 逐字是〈In The Holiday Groove〉、B2 逐字是〈Scoto Phonobine Type-II〉**
+——**而那正是本盤的 B1（5:42）與 B2（6:00）兩個曲題，逐字相同。**
+**若那兩軌也是同一份錄音，本盤的既有錄音就是 4/6（67%）> 一半，照主線第 1948-B 條「既有錄音重新排列 → 退」要改判合輯。**
+
+**本層查不到決定性證據，標 uncertain，理由逐項**：
+1. **《Spiral Steps》的五個版本（5060563／36679351／15675470 `KTCR-1171`／17527027 `PROT-1039`／12219651 `UPCY-9757`）逐筆讀過，整欄沒有時長**，無從逐秒比；
+2. **Apple jp／us 三種查法（`Jun Fukamachi Spiral Steps`／`深町純 Spiral Steps`／`深町純 スパイラル・ステップス`）`resultCount` 全部 0**，那張碟沒有數位版。
+
+**間接證據兩條同向**：
+(a) **《Spiral Steps》的 `notes` 逐字「Recorded at Polydor Studio, Tokyo from July to September 1976, and Media Sound Studio, New York 2nd, 3rd, and 4th of August 1976.」**——**與本盤 B1 那一軌的 `Recorded By [Media Sound Studio]` 是同一個錄音室**；
+(b) ⚠ ⚠ **`ja.wikipedia` 的 深町純 條目逐字把《Evening Star》列成「ベスト・アルバム。Stuff他とセッション。」**——**一個獨立來源直接稱它是精選輯。**
+
+**反向證據三條**：
+(a) **MB 的 `secondary-types` 空陣列、Discogs 五版的 `formats.descriptions` 逐字只有 `["LP","Album","Stereo"]`**——⚠ **而同組第 5973 條退掉的《Horizon》Discogs 逐字標 `Compilation`、`notes` 逐字寫出來源 master：同一個資料庫在同一批裡報得出來，這裡沒報**；
+(b) ⚠ ⚠ **ja 維基那一節自己就錯了**：它把《Evening Star》標成 **1977 年**（五個資料點都是 1978），又把《Jun Fukamachi》標成「1977年、キティレコード、ベスト・アルバム」——**而 Discogs 上那張是 1980 年的 `Kitty MKY6003`、`formats` 逐字含 `Compilation`（releases/4718081）**，同系列另有 1980 年 `MKY 6002` 的《Masayoshi Takanaka II》也標 Compilation（「Kitty Fusion Boutique」）。**→ ja 維基很可能是把 1980 年 `MKY 600x` 這條精選系列錯記到 1977 年，並連帶污染了相鄰那一行**；
+(c) 若 4/6 成立，〈Sea Horse〉與〈Evening Star〉（Stuff 原班那兩軌）仍是本盤獨有。
+
+**→ 本層的建議（一次就能定案的動作）**：**從 2012 年 `PROT-1039` 或 2018 年 `UPCY-9757` 兩張《Spiral Steps》CD 取逐軌時長，與本盤的 5:42／6:00 對一次。**
+**若相同 → 本盤是合輯，第 5990 條與本卡一起翻（撤一張卡，不動卡池結構）；若不同 → 那兩軌是重錄，照主線第 1976-B 條第 2 點「重錄是新錄音，比例多少都還是新錄音」，第 5990 條原封不動。**
+⚠ **在定案之前，本卡的 facts 一律不寫任何一軌是「首度發表」，也不寫「全新錄音」**（已逐條檢查過）。
+（可逆性：改的是一張卡的收退與 `notes`，不動卡池結構——**本層不自行改判，因為它會撤掉一張已經進卡單的卡，超出研究層的射程**。）
+
+## 6179　⚠ ⚠ ⚠ **人名：本層改判 21 處（17 處改漢字 ＋ 4 處退成羅馬字），涵蓋 10 張卡裡的 9 張**
+
+**照主線第 1967-B 條二之 2 的硬規則「每一個漢字人名都要能指到一個來源欄位，指不到就寫羅馬字」，本層把 12 張卡的每一個漢字人名逐名回打 `api.discogs.com/artists/<id>` 的 `realname`／`namevariations`／`profile`（本次共打 101 個藝人頁）。**
+
+| # | 位置 | 卡單逐字 | **本層定案** | 來源欄位 |
+|---:|---|---|---|---|
+| 5 | 鼓 | `鈴木漸` | **`鈴木徹`** | 1286447 `realname` ＋ ja 維基 プリズム 條目 ＋ 本盤 B4 逐軌 anv |
+| 5 | 錄音 | `北川輝明` | **`北川照明`** | 780432 `realname` 逐字 `Teruaki Kitagawa = 北川照明` |
+| 5・6 | 管理 | `田中正夫` | **退成 `Masao Tanaka`** | 7092089 兩欄皆空 |
+| 6 | 薩克斯風 | `白尾好久` | **`白尾泰久`**（⚠ 另一形 `白尾恭久`） | 1286449 `namevariations` |
+| 7 | 封面設計 | `永山一治` | **退成 `Kazuharu Nagayama`** | 2933959 兩欄皆空 |
+| 8 | Coordinator | `原田和則` | **`原田和典`** | 1825807 `realname` |
+| 8 | 刻片 | `山口三雄` | **`山口光雄`** | 1390269 `namevariations` |
+| 9 | 音樂統籌 | `大貫正明` | **`小貫聡明`**（⚠ 姓名兩截都錯） | 1703545 `namevariations` |
+| 9 | 攝影 | `相見明` | **退成 `Akira Aimi`** | 2571900 兩欄皆空 |
+| 10 | 鍵盤 | `土居ー郎` | **`土井一郎`**（⚠ 姓錯 ＋ 用了 U+30FC） | 2129355 `namevariations` |
+| 10 | 貝斯 | `櫻井郁雄` | **`桜井郁雄`** | 2638606 `namevariations` |
+| 10 | 鼓 | `関根秀夫` | **`関根英雄`** | 1697733 `namevariations` |
+| 16 | 長號 | `岡田宗芳` | **`岡田澄雄`** | 556512 `realname` |
+| 16 | 錄音混音 | `鈴木吉宏` | **`鈴木良博`** | 382386 `realname` |
+| 16 | 製作 | `伊藤清` | **`伊藤潔`** | 406894 `realname` |
+| 16 | 母帶刻片 | `葛西満` | **`笠井満`** | 406486 `realname` 逐字 `Mitsuru Kasai (笠井満)` |
+| **17** | **弦樂組** | **`大野雄三グループ`** | **`多忠昭グループ`**（⚠ **姓名兩截都錯，見第 6181 條**） | 842095 `realname` ＋ ja 維基 `多忠昭` 條目 |
+| **19** | **木吉他** | **`中村サダノリ`** | **`中牟礼貞則`**（⚠ **連姓都換掉**） | 661576 `realname` ＋ ja 維基獨立條目 |
+| 19 | 電貝斯 | `杉本一家` | **`杉本和弥`**（⚠ 另一形 `杉本和称`） | 3309778 `namevariations` |
+| 19 | 打擊 | `瀬上与之助` | **`瀬上養之助`** | 1154475 `realname` |
+| 3 | Production Assistant | `安室克也` | **退成 `Katsuya Yasumuro`** | 2301475 兩欄皆空 |
+
+⚠ **另有 3 個本層寫了但標 uncertain 的**（第 6182 條）：`金坂淳一`／`三田良美`／`金井宏`（#16，三頁兩欄皆空）。
+⚠ **一組「兩形並存、不是卡單寫錯」的**：`渡辺建`（956727 的 `namevariations` 裡 `渡辺建` 與 `渡辺健` 兩形並存、本盤 B4 逐軌 anv 是 `渡辺健`，而 ja 維基的 プリズム 條目逐字是 `渡辺建`）——**取 ja 維基與卡單一致的 `渡辺建`，登記為兩形並存。**
+⚠ **另一組同形狀的**：`和田アキラ`（1286444 的 nv 裡片假名與平假名 `和田あきら` 兩形並存，本盤 B4 逐軌 anv 是平假名）——**取 ja 維基條目名的片假名形。**
+
+**→ 照主線第 1968-B 條第 1 點與第 1969-B 條二之 1 的先例，這 21 處請主線逐字串替換回 `desc-tools/batches/cards/c186-cards.json` 與 `batch-progress/c186/prop-b.json`**（研究層照硬邊界沒動卡單）；
+⚠ ⚠ **並照主線第 1975-B 條第 1 點把對照表往後掃到最新那一批**——**`中牟礼貞則`／`多忠昭` 這兩個是池中已有若干列的第一線樂手，錯字留著一定會傳染。**
+
+## 6180　⚠ ⚠ 立判準：**「羅馬字逆推漢字」的一個新變形——同一張碟上兩個同音（或同簡稱）的名字互相污染**
+
+**第 1968-B 條記的機制是「從 Discogs 的羅馬字逆推漢字時選錯同音字」。本組出現兩筆同一個機制的變形，而它們的形狀比原機制更難自查**：
+
+1. **#5《Prism III》有兩位錄音師，羅馬字名都讀作 Teruaki**：**`Teruaki Igarashi`（767094，`realname` 逐字 `Teruaki Igarashi = 五十嵐輝明`）與 `Teruaki Kitagawa`（780432，`realname` 逐字 `Teruaki Kitagawa = 北川照明`）**
+   ——**卡單把第一位的 `輝明` 套到第二位身上，寫成 `北川輝明`。第一位是對的。**
+2. **#8《Kahuna》有兩位 Harada，盤面的 anv 逐字都是 `Kaz Harada`**：**`Kazuo Harada`（851865，Executive-Producer，`namevariations` 逐字 `原田和男`）與 `Kazunori Harada`（1825807，Coordinator，`realname` 逐字 `原田和典`）**
+   ——**卡單把第一位的 `和男` 半套到第二位身上，寫成 `原田和則`。第一位是對的。**
+
+### 判準（本層立，建議主線採納進簡報第三節第 15 點）
+
+**同一張碟上出現兩個羅馬字名（或兩個 anv 簡稱）相同或高度相似時，兩個實體都要各自打一次 `artists/<id>`**
+——**不可因為第一個查到了就把漢字套給第二個。**
+⚠ **自查的方法是可程式化的**：**逐張把 `extraartists` 的羅馬字姓（或 anv 全串）做一次去重計數，count > 1 的那幾組一定要分別回查。**
+⚠ **本組兩筆都落在幕後側（錄音師、Coordinator），與第 1968-B 條記的「幕後側的命中率高於樂手側」同向。**
+
+## 6181　⚠ ⚠ ⚠ 立判準：**漢字姓有罕見讀法時，「羅馬字逆推漢字」會錯得看不出來——本組兩筆，一筆是 `多`（おおの）、一筆是 `中牟礼`（なかむれ）**
+
+1. ⚠ ⚠ ⚠ **`多忠昭`（#17 的弦樂組）**：**Discogs 藝人頁 842095 的羅馬字主名逐字 `Tadaaki Ono`、盤面 anv 逐字 `Tadaaki Ono Group`，而 `realname` 逐字是 `多忠昭`**（`namevariations` 逐字含 `多忠昭`／`多 忠昭`／`多忠明`／**`大野忠昭`**）。
+   **卡單寫成 `大野雄三グループ`——姓猜成常見的 `大野`、名猜成 `雄三`，兩截都偏。**
+   ⚠ ⚠ **而 `ja.wikipedia` 的 `多忠昭` 條目把成因完整寫出來了**：「**多 忠昭（おおの ただあき、1928年 - 1995年）は日本のヴァイオリニスト。宮内庁雅楽部出身**」，並逐字寫著「**グループ名については、LPレコードのライナーノーツなどに記載されたクレジットによって、大野グループ、多グループ、Ohno Group、多弦楽グループ、多忠昭ストリングス、多忠昭アンサンブル など、複数の異なる呼称が見られる**」
+   ——**`多` 這個姓讀作「おおの」，所以 1970–80 年代的唱片解說上本來就常寫成「大野グループ」。卡單看到 `Ono` 推成 `大野` 在讀音上是對的，錯的是姓的字形與名字。**
+   ⚠ **他是「被稱為日本最強的錄音室弦樂組」的 `多グループ` 的團長，1970–80 年代幾乎每天跑五個錄音室**——**這一族的碟在本線後面還會撞到很多次。**
+2. ⚠ ⚠ ⚠ **`中牟礼貞則`（#19 的木吉他）**：**藝人頁 661576 的羅馬字主名逐字 `Sadanori Nakamure`，`realname` 逐字 `中牟礼貞則 (Nakamure Sadanori)`**，並有 `ja.wikipedia` 的獨立條目（1933-03-15 生於鹿児島県出水市，**渡辺香津美 的老師**）。
+   **卡單寫成 `中村サダノリ`——把姓當成常見的 `中村`（Nakamura）、把名字退成片假名。**
+   ⚠ **這是本組唯一一筆「連姓都換掉」的人名錯，而那位是池中已有若干列的第一線爵士吉他手。**
+
+### 判準（本層立，建議主線採納進簡報第三節第 15 點）
+
+**羅馬字姓落在下列這一族時，不可直接取最常見的漢字姓，一律要以 `realname` 為準**：
+**`Ono`（多／大野／小野／尾野）、`Nakamure`（中牟礼，不是 Nakamura）、`Segami`（瀬上）、`Anai`（穴井）、`Hirauchi`（平内）、`Onuki`（小貫／大貫）、`Kasai`（笠井／葛西／河西）**
+——**本組七個裡有五個卡單猜錯（`多`／`中牟礼`／`小貫`／`笠井`，加上名字那一截的 `瀬上養之助`）。**
+⚠ **反過來，`realname` 空而 `namevariations` 也空時一律寫羅馬字**（第 6182 條），**不要靠讀音去猜。**
+
+## 6182　人名：**指不到來源欄位而本層退成羅馬字的 4 個 ＋ 寫了但標 uncertain 的 3 個**
+
+**退成羅馬字（facts 裡一律不寫那個漢字名）**：
+1. **`Masao Tanaka`**（#5・#6 的 Management，卡單寫 `田中正夫`）——7092089 的 `realname`／`namevariations` 兩欄都是空的；
+2. **`Kazuharu Nagayama`**（#7 的封面設計，卡單寫 `永山一治`）——2933959 兩欄皆空；
+3. **`Akira Aimi`**（#9 的攝影，卡單寫 `相見明`）——2571900 兩欄皆空；
+4. **`Katsuya Yasumuro`**（#3 的 Production Assistant，卡單寫 `安室克也`）——2301475 兩欄皆空。
+⚠ **另 `Isao Sakai`（#3 的封套設計）、`Tom Michaels`／`Adacheeno`（#9）、`Buddy House`／`Eugene Gregan`／`David Baker`（#8）本來就是外國人或沒有漢字，不涉此條。**
+
+**寫了但標 uncertain（請主線或本機決定是否退成羅馬字）**：
+**`金坂淳一`（`Junichi Kanesaka` 4027653）、`三田良美`（`Yoshimi Mita` 4027649）、`金井宏`（`Hiroshi Kanai` 256448）——三頁的 `realname` 與 `namevariations` 都是空的。**
+⚠ **本層寫了的理由**：**那三個字串是卡單已經寫進 `curatorWhy` 的、下游三層會照抄，本層若改成羅馬字會在同一張卡上造成兩種寫法。**
+⚠ **但它們不符合第 1967-B 條二之 2 的硬規則**，所以在此逐名登記。
+⚠ **`奥山民枝`（`Tamie Okuyama` 3289276，Discogs 兩欄皆空）本層判可寫**：**她有 `ja.wikipedia` 的獨立條目（畫家）、羅馬字讀法逐字相符**——**第 1967-B 條要的是「指到一個來源欄位」，維基條目算。**
+
+## 6183　⚠ ⚠ 本層定案一件策展層標成推測的事：**`Prism III` 的十二軌在 CD 與串流版上變成九軌，是哪三軌被併掉的**
+
+**第 5974／5975 條所在那一段的 `risk` 逐字寫「三個短章（0:30／1:00／0:50）很可能在 1994 年那一版被併進鄰軌」，但沒有證據。**
+**本層打 Apple jp 的逐軌欄位定案**：**九軌版（`collectionId` 1443094251、℗ 1979 USM JAPAN）的第 1 軌逐字是〈Echoes~VIRGO‐9~Promised Island〉435 秒、第 6 軌逐字是〈NIGHT PICNIC~Floating Desert〉321 秒**
+——**原壓的 A1＋A2＋A3 被併成一軌、B1＋B2 被併成一軌，12 − 3 ＝ 9。卡單的推測成立，而且可以寫出來是哪幾軌。**
+
+⚠ **順帶更正卡單一格**：**卡單把四軌 bonus 記在 2017 年 `UPCY-9691` 上，而 Apple 的十六軌版（1442871592、℗ 2003 UNIVERSAL J，＝2003 年 SACD 的數位化）就已經有同樣的四軌**
+——**逐字是〈SUNSET CRUISE (Take 2)〉311 秒、〈ケンちゃん Part 1(MEMORIES OF YOU~WHEN YOU WERE GONE / Outtake)〉409 秒、〈LOST IN THE SPACE〉393 秒、〈NIGHT PICNIC (Live at TOKYO)〉305 秒。**
+⚠ **那一版的第 9 軌 Apple 逐字拼成〈Floationg Desart〉（兩個錯字），下游不得照抄。**
+⚠ **末軌那一筆 bonus 是現場錄音，但它是再發盤的 bonus、不是原壓內容——`live` 欄不受影響**（與卡單同結論）。
+
+## 6184　`Prism III` 的年份改判：**第 5974 條的四個資料點本層覆核全部成立，並補到第五、第六個**
+
+1. **`ja.wikipedia` 的 `プリズム (バンド)` 條目 discography 逐字「PRISM（1977）／SECOND THOUGHT/SECOND MOVE（1978）／PRISM III（1979）／PRISM LIVE（1979）」**——**第三張逐字 1979**；
+2. **Apple jp 的兩筆數位版並存，而 ℗ 1979 那一筆（1443094251）與改判同向。**
+**→ 六個資料點對 MB 的一個裸年份，`year` 取 1979，穩。**
+⚠ **同一個條目另給了第三種盤名寫法**：**同團第二張逐字寫成 `SECOND THOUGHT/SECOND MOVE`——前半是單數 `THOUGHT`**，**落在主線第 1976-B 條的 `titleCheck` 第 (g) 種「單／複數之差」那一族。本層不取（Discogs 七版與 MB 三層都是複數），登記給後續批次。**
+
+## 6185　`Kahuna` 的 `live: false`：**第 5989 條與主線第 1971-B 條二之 2 本層覆核成立，並補第三、第四個獨立佐證**
+
+**第 5989 條的兩個決定性旁證是 `formats` 的 `Direct-To-Masterdisk` descriptor ＋ 2004 年併輯（`PJL MTCJ-5528`）用場館名把兩種 `recorded live` 分開。本層補的兩個**：
+3. ⚠ ⚠ **《津波 Tidal Wave》的 2001 年單獨再發（Discogs releases/21343012，`PJL MTCJ-2519`）的 `notes` 逐字只有「Recorded live at Yamaha Hall, June 21st, 1978.」一句，兩軌逐字是〈Essence〉31:27 與〈Tsunami (Tidal Wave)〉16:12**
+   ——**那是真的公演實況、與本盤是不同的兩場，相隔六天；同一個廠牌的兩張碟，一張的 `recorded live` 後面接廳堂名、一張接錄音室名。**
+4. ⚠ ⚠ **1993 年德國 `Konnex Records KCD 5043`（releases/2721354）的 `notes` 逐字「Tracks 1, 2: Recorded live at Yamaha Hall, June 21, 1978. Previously released as [r=…]」「Licensed by Art Union Corporation」**
+   ——**授權方在第三個年代的第四份文案裡仍然把兩場分得清楚。**
+**→ 四份文案、三個年代、兩家公司，`live: false` 穩。**
+⚠ **並附一件卡單記錯的小事**：**卡單寫《津波》的兩軌是「〈Essence〉31:27 與〈Tsunami〉16:12」時沒有寫出它自己的 master——那張碟有獨立的 Discogs master 848662（2001 `MTCJ-2519` ＋ 2008 `ABCJ-503` 兩版），加上 2004 年那筆 `master_id` 0 的併輯與 1993 年德國盤，共四筆。本層登記，免得後續批次把它們算進本盤的版本數。**
+
+## 6186　⚠ ⚠ `Kahuna` 的「原盤發行」那一票：**本層找到一個乾淨的對照，該票更穩**
+
+**第 5986／5983 條的「原盤發行——日」那一票的依據是「Trio Records 全世界唯一原壓、從未在他國發行」。本層逐筆查過成立，並補一個對照**：
+**同一組二重奏同一個月的另一張碟（《津波》，1978-06-21 ヤマハホール）在 1993 年由德國 Konnex Records 授權發行（`KCD 5043`），而本盤四十八年來只出過日本盤（Discogs 2 版 ＋ 1 筆日本孤兒 CD，全是日本盤）。**
+**→ 兩張同人、同月、同廠的碟，一張出了海外版、一張沒有——這比「查不到海外版」強，因為它證明那個廠牌的這批母帶確實有海外授權的通路，而本盤沒有走。**
+
+## 6187　⚠ ⚠ 曲題〈Essence〉現在是**三方相撞**，比第 5986／5993 條記的多一方
+
+| 方 | 內容 |
+|---|---|
+| 1 | **池中 `c177｜富樫雅彦｜エッセンス｜1977`**——那是一張碟的**盤名**（第 5993 條已記） |
+| 2 | **本盤 #8 的 B 面曲題〈Essence = エッセンス〉14:09**（第 5986 條已記） |
+| **3** | ⚠ ⚠ **同一組二重奏六天前那張《津波》的第一軌逐字也叫〈Essence〉，而它是 31:27**（本層新增；Discogs releases/21343012 ＋ 1993 Konnex ＋ Apple jp 的兩筆數位版逐字都是 `ESSENCE` 1891 秒） |
+
+**→ 同一位作曲者、同一個月、同一個曲題、兩個相差一倍以上的演奏，再加上池中那張 1977 年的盤名。**
+**下游引用〈Essence〉一律要帶三件：掛名、年份、以及「本盤 B 面那一軌」。**
+⚠ **`chk-prop` 五道與六道 dedup 對這三方全部不報**（曲題不進任何一道）。
+
+## 6188　`Moonflower`：**本層補到卡單整欄沒有的主故事線——這張碟有可查的後續**
+
+**`ja.wikipedia` 的 辛島文雄 條目逐字「九州大学在学中から演奏活動を始め、ジョージ大塚のグループやエルヴィン・ジョーンズ、日野元彦らと共演し評価を受けた。**1978年のエルヴィン・ジョーンズとの共演を機に、1980年から6年間にわたってエルヴィン・ジョーンズ＝ジャズマシーンに参加した**。」**
+**→ 本盤就是那一次 1978 年的合演，而它直接導致他 1980–1986 年成為 Elvin Jones 樂團的正式成員。**
+**照研究層共用規則的反向禁令第一類（「與作品直接綁定者可寫，但必須標明時序」），本層寫進 facts 並在句中標出「兩年後的 1980 年起」。**
+⚠ **卡單的 `why` 欄只寫「鋼琴手 辛島文雄 三十歲時與 Elvin Jones 的三重奏錄音」，沒有這一格。**
+⚠ **另補兩件生平**：**他父親是大分大学的音樂教授、他三歲起學古典音樂（同一個條目）；他的實兄 辛島輝治 是東京藝術大學名譽教授的古典鋼琴家（同一個條目，本層沒寫進 facts，登記在此供鉤子層取用）。**
+
+## 6189　`Moonflower`：**〈Bessie's Blues〉的來歷把盤上兩位領銜者接起來，而卡單只寫了一半**
+
+**卡單 `why` 逐字寫「〈Bessie's Blues〉John Coltrane 1964 年《Crescent》的曲子」。**
+⚠ ⚠ **本層補的那一半**：**英文維基的 `Bessie's Blues` 重導到 `Crescent` 條目，而那個條目的編制欄逐字是「Coltrane on tenor saxophone, McCoy Tyner (piano), Jimmy Garrison and **Elvin Jones** (drums)」**
+——**那張碟的鼓手就是本盤的鼓手，十四年後他在東京又打了一次同一首曲子。**
+⚠ **同軌的另一首標準曲〈My Funny Valentine〉本層也補了商業／流傳規模**：**英文維基逐字「appearing on over 1300 albums performed by over 600 artists」。**
+**→ 這是本卡 `hookCandidates` 第一條的來源。**
+
+## 6190　⚠ ⚠ 來源實測：**`api.discogs.com/labels/<id>` 這個端點在本組五家全部有產出（5/5），而策展層一次都沒打**
+
+**主線第 1975-B 條第 4 點把這個端點寫進簡報三之二（c-185 a 兩次都是決定性的）。本組五家的結果**：
+
+| 廠牌（id） | `parent_label` | `profile` 的決定性內容 |
+|---|---|---|
+| **Trio Records（42987）** | **Trio-Kenwood Corporation** | ⚠ ⚠ **逐字「established by the audio manufacturer Trio Electronics, Inc., later known Trio-Kenwood Corporation (currently known as Kenwood) in September 1969. The label ceased operations in 1984.」**——**做音響器材的公司開的廠牌，所以原壓 `companies` 那行 `Manufactured By: Trio Electronics, Inc.` 不是外包、是母公司；也解釋了它為什麼會做直刻企劃** |
+| **Union Records (3)（111610）** | **Teichiku Entertainment, Inc.** | 逐字「Japanese sublabel of Teichiku Records, primarily focused on pop music. The label was established in 1962 to distribute music from around the world. In 1967, it began producing original works domestically.」；`sublabels` 逐字含 `Union Jazz`／`Japan Jazz Essence 1500`／`Japanese Top Jazz Men Series` |
+| **Denon（65996）** | **Nippon Columbia Co., Ltd.** | 逐字「Denon and its Katakana reading デノン/デンオン is derived from 日本電氣音響株式會社⋯absorbed into Nippon Columbia in 1963⋯The Denon label was founded in 1968 as a Nippon Columbia subsidiary」；⚠ **`sublabels` 逐字含 `45 RPM Sound Laboratory` 與 `Audiophile Series`——本組那張 45 轉盤的系列出身** |
+| **Openskye（237571）** | ⚠ ⚠ **CBS/Sony** | `profile` 與 `sublabels` 兩欄都是空的——**但 `parent_label` 一欄就夠了，照主線第 1976-B 條第 1 點「子字標算母廠」，第 5978 條的 `house: CBS/Sony` 成立** |
+| **Kitty Records（19271）** | Kitty Records, Inc. | ⚠ **逐字「Japanese label founded in 1972 by producer [a863074]」——而 `a863074` 就是本組兩張 Kitty 盤的 Executive-Producer `多賀英典`**（該藝人頁 nv 逐字有 `多賀英典`）。**出錢的人與開廠的人是同一個。** |
+
+**→ 五家五個有用的結論，其中 Trio 與 Kitty 兩家直接進了 facts。這個端點在本線應該列成研究層的固定動作。**
+⚠ **另記兩家（本層打過但沒進 facts）**：`Polydor`（1610，`parent_label` Universal Music Group、1913 年成立）、`CBS/Sony`（33078，逐字「launched in 1968 by CBS/Sony Records Inc., a 50/50 joint-venture company of CBS Inc. and Sony Japan⋯renamed to Sony in 1991」；⚠ **並逐字寫著「Before 1968, CBS' licensee in Japan was Nippon Columbia Co., Ltd.」——那一句對 jp-1 線的 コロムビア 有用**）。
+
+## 6191　`Sonia Rosa《Samba Amour》`：**派工信第五節第 5 點要求的「再試一次」本層做完了，而且把範圍從 5 個版本擴到 8 個壓片——結論不變，第 1967-B 條一之 1 那條路更穩**
+
+**第 5987 條二已把五個專輯版本逐筆讀完（原壓 6044524／同號 Promo 14381269／1979 卡帶 25096273／1991 `SRCL1899` CD 12483109／2015 Blu-spec CD 14483413），逐軌 `extraartists` 五版全空。**
+**本層另把同年那張抽出來的七吋單曲與它的再發也讀完**：
+- **1979 市售 `06SH 518`（16263874）**：`extraartists` 逐字 `Composed By, Arranged By: Yuji Ohno`／`Lyrics By: Machiko Ryu (anv 逐字 竜真知子)`／`Cover [Painting]: Kazuo Hozumi`；
+- **1979 Promo（23356907）**：同上（`notes` 逐字「A promotional version.」）；
+- **2020 `Great Tracks (2) DQKL 7101`（15830707）**：逐字 `Lyrics By: Machiko Ryu`／`Music By, Arranged By: Yuji Ohno`。
+**→ 八個壓片、零個器樂樂手列名。「哪一版都查不到」這個前提現在是逐版核過八次的結論。**
+⚠ **附帶一個對第 5987 條的補強（不是推翻）**：**那張單曲的作曲欄逐字也是 大野雄二**——**這是「十二軌的作曲人只有他一個」這句話的第二個獨立資料點，而且來自另一個 release、另一個號段。**
+⚠ **並補一格盤面資訊**：**專輯的十二軌沒有任何作詞欄，而抽出來的單曲有——作詞 `竜真知子`。** 下游若要寫「這張碟的歌是誰寫的詞」，只有單曲那一面有答案。
+
+## 6192　⚠ ⚠ **`Sonia Rosa《Samba Amour》` 有一張同年的七吋單曲，而它自己長出一條再發線；⚠ ⚠ 而本盤的曲目確實在 Apple 上——請主線裁定要不要回撈**
+
+**Discogs master 1845990 ＝ `ソニア・ローザ《東京 イン・ザ・ブルー = Tokyo In The Blue》CBS/Sony 06SH 518`**，A 面 3:45／B 面〈チャーリー、マイ・ダーリン = Charlie, My Darling〉3:37
+——**與本盤 B2（3:45）與 A5（3:37）逐秒相同。** 該 master 下四筆：**1979 市售、1979 Promo、2020-08-29 `Great Tracks (2) DQKL 7101` 七吋限定復刻、2026 年 NAPS 的數位單曲（releases/37133955，Worldwide、File／FLAC）。**
+
+⚠ ⚠ **而 Apple jp 上有兩筆本盤曲目的數位發行，探測層與策展層都報 0**：
+1. **`ソニア・ローザ《Ressalva (Melancholy) - Single》`**：`collectionId` **1878353376**、`releaseDate` 逐字 `1979-09-07`、`copyright` 逐字 **`℗ 1979 CBS Japan`**、單軌 198 秒——**與本盤 B3〈Ressalva (Melancholy)〉3:18 逐秒相同**；
+   ⚠ ⚠ **Discogs 上查無這一筆 1979 年的七吋**——**這是「Apple 有而 Discogs 沒建」的第四種漏法（主線第 1971-B 條那一族）在本組的實例，而且方向是「Apple 保留了一個 Discogs 沒有的 1979 年單曲」。**
+2. **`ソニア・ローザ《Tokyo In Blue - Single》`**：`collectionId` **1885731249**、℗ 2026 NAPS、單軌 226 秒——與本盤 B2 的 3:45 差一秒（⚠ **盤題 `Tokyo In Blue` 少了 `The`**）。
+   另 **`《Singles 1970-1979》`（1881633229，2026，十軌）** 也收了同一份〈Ressalva (Melancholy)〉198 秒。
+
+**→ 三件事**：
+**(a) 專輯本身確實不在 Apple 上**（照第 254 條只寫觀察），**第 5984 條與探測層的 `unavailable` 對專輯而言是對的**；
+**(b) 版本數不變（那兩筆是單曲、不是本盤的版本），但它們一律登記為鄰居**；
+**(c) ⚠ ⚠ 請主線裁定要不要用 `batch-progress/probe/manual-recover.mjs` 把 1878353376 或 1885731249 掛上去。**
+⚠ **本層不碰 `previews.json`（硬邊界），也不在 facts 裡寫聆聽入口。**
+⚠ **裁定的難處要寫清楚**：**兩筆都是單曲、不是專輯，`artistOk` 過得了（掛名逐字 `ソニア・ローザ` 在 `queryAlias` 裡）而盤名與軌數兩關過不了**——**這不是腳本能救的，是「一張碟的一軌算不算這張碟的聆聽入口」這個政策問題。** 本層的意見是**可以掛**（照第 174／175 條的精神，那一軌逐秒就是本盤的錄音、℗ 年還是 1979），但**這超出研究層的射程**。
+
+## 6193　⚠ ⚠ **給探測層與主線：`previews.json` 對 `The Players Featuring 鈴木宏昌《Galaxy》` 有一筆假命中，而它會讓卡片掛上一個不相干的試聽入口**
+
+**`batch-progress/probe/previews.json` 的鍵 `The Players Featuring 鈴木宏昌|Galaxy` 逐字是**：
+`status: "ready"`、`front: "jp"`、`collectionId` **194414758**、`appleTitle` 逐字 **`Players`**、`appleArtist` 逐字 **`C-Money and the Players Inc`**、`appleYear` 2006、`yearDrift` **27**、`aliasOnlyTitle` **true**、`trackCount` 8。
+**→ 那是一張 2006 年的美國碟，完全不是本盤。**
+
+⚠ **而策展層是對的**：**第 5984 條逐字報「`resultCount` 10，十筆逐筆比對後 0 筆是本盤」。**
+**本層另跑四種查法覆核**：`ザ・プレイヤーズ` **0 筆**；`The Players Galaxy` **25 筆全是 Super Mario 系列與 Earth, Wind & Fire**；`鈴木宏昌 Galaxy` **10 筆全是他別的碟**（`High-Flying` 1976、`ロック・ジョイント・シタール` 1973、`By the Red Stream` 1973、`Pianic Pianism` 兩張、`Last Live at Studio F` 2010⋯）；`Openskye` 25 筆無一相關。
+**唯一與本掛名相關的仍是 2026 年才數位化的七吋單曲 `The Players & 鈴木宏昌《Space Travel / Murmur - Single》`（id 6788244212、℗ 2026 CBS/JAPAN、兩軌逐字〈Space Travel〉294 秒與〈Murmur〉310 秒——兩個曲題都不在本盤八軌裡）。**
+
+**→ 本盤在 Apple 上查無。請主線把那一格改成 `unavailable`（本層照硬邊界不碰 `previews.json`）。**
+⚠ ⚠ **這一筆的成因可以直接寫進探測層的判準**：**`aliasOnlyTitle: true` ＋ `yearDrift ≥ 20` 兩個旗標同時出現時，那一筆幾乎一定是假命中**——**本組這一筆兩個旗標都有，而 `status` 仍然是 `ready`。建議探測層把「兩旗標同時成立 → 降級為 unavailable」寫成硬規則。**
+⚠ **附記：本組另有兩筆 `yearDrift` 很大但是真命中的**（#7《Great Harvest》`yearDrift` 36、#5《Second Thoughts》`yearDrift` 25，兩筆都是再發的數位化、`aliasOnlyTitle` 都是 false）——**所以分界不是 `yearDrift` 單獨成立，是兩個旗標同時成立。**
+
+## 6194　⚠ `The Players《Galaxy》`：**卡單寫「第二張專輯」，而 `ja.wikipedia` 逐字把它列為這支團的首張——本層兩邊都不採，facts 一律不寫序數**
+
+**卡單 `why` 逐字「鍵盤手 鈴木宏昌 領軍的 fusion 樂團 The Players 的第二張專輯」。**
+⚠ **而 `ja.wikipedia` 的 鈴木宏昌 條目逐字「自らリーダー･バンドを結成し、『コルゲン・バンド』として活動を開始するが⋯その後、コルゲン・バンドはメンバー変更を行い、『ザ・プレイヤーズ』として活動を続け、**『ギャラクシー』を筆頭に7枚のアルバムを発表する**」**——**「筆頭」在這個句型裡指的是那七張裡打頭的一張。**
+**本層沒有第三個資料點可以定案**（Discogs 的 `The Players` 藝人頁 207 的 `profile` 是空的、`namevariations` 只有 `ザ・プレイヤーズ`；MB 的 disambiguation 逐字只有 `Japanese jazz, fusion band`）。
+**→ 照第 1919-B 條「任何來源都沒有這個序數就退成不寫」的做法，本層的 facts 不寫序數，只寫「ja 維基的敘述把它列為那七張的首張」這個可查的句子。**
+⚠ **建議主線在上架前把 `Openskye` 號段上這支團 1978–1979 的出片順序查清再決定要不要寫序數**（卡單的「第二張」若要留著，需要一個來源）。
+⚠ **另記本層補到的兩條人脈（卡單整欄沒有）**：
+1. **「慶應のピアノ三羽烏」＝ `鈴木宏昌`＋`佐藤允彦`＋`大野雄二`**（`ja.wikipedia` 的 鈴木宏昌 與 大野雄二 兩個條目逐字互相印證）——⚠ ⚠ **三個人在 c-186 這一批裡全部出場：`鈴木宏昌` 是本卡的領銜，`大野雄二` 是同組 #15 的作曲／編曲／製作／指揮／監修，`佐藤允彦` 是 a 組一張碟的領銜者。**
+2. **綽號「コルゲン」原本屬於 `佐藤允彦`，佐藤 赴美後接手同一個樂團位置的 鈴木 被叫成「二代目コルゲン」而後定著**——**這解釋了池中 `seed｜鈴木宏昌｜Skip Step Colgen｜1977` 那張卡的盤名裡為什麼有這個字。**
+
+## 6195　⚠ ⚠ `Bos & Boz`：**本層找到同系列前一號的姊妹盤，以及一個與第 5701 條那個 50% 裁定直接相關的外部資料點**
+
+1. ⚠ ⚠ **姊妹盤**：**`Denon SX-7033` ＝ `Chikara Ueda & The Power Station (2)《Burt Fusion》`（Discogs releases/31206754、`released` 逐字 `1979-06-25`、系列同樣是 Denon 的 45 轉線）**，
+   **六軌逐字〈Medley: I Say A Little Prayer / Do You Know The Way To San Jose / I'll Never Fall In Love Again〉〈This Guy's In Love With You〉〈I Took My Strength From You〉〈Promises Promises〉〈South American Getaway〉〈All Kinds Of People〉——六軌全部是 Burt Bacharach 的曲子**；
+   **Apple jp 也有它的數位版（`collectionId` 1731782801、`releaseDate` 逐字 `1979-06-25`、℗ 逐字 `1979 Nippon Columbia Co., Ltd./NIPPONOPHONE`）。**
+   **→ 目錄號相差一號、發行日相差三個月、同一條系列、同一支樂團。而那一張若進了本線的 slice，照第 5701 條會是乙 6/6 ＝ 100%、直接退。**
+2. ⚠ ⚠ ⚠ **與第 5701 條那個 50% 直接相關的外部資料點**：**`ja.wikipedia` 的 上田力 條目的 discography 欄逐字寫「「BURT FUSION」（1979年）／「BOS&BOZ」（1979年）　**ボズ・スキャッグスのカバーアルバム**」**
+   ——**ja 維基逐字把本盤整張稱作「Boz Scaggs 的翻唱專輯」。**
+   **本層的立場（不改判）**：**盤面的逐軌作曲欄是硬證據（A 面三軌 `Boz Scaggs`、B 面三軌 `Chikara Ueda`，3/6），release 層另有兩行並列的 `Music By`——所以第 5701 條的 50% 算法不變，第 5988 條與主線第 1971-B 條二之 4 的「維持收」不動。**
+   ⚠ **但這是本線第一次出現「外部百科把一張對半結構的碟整張描述成翻奏盤」的資料點，而它在同一個清單上與前一號那張 6/6 全翻奏的姊妹盤並排**——**那很可能是 ja 維基把系列的形狀套到本盤上。登記給主線，供第 5988 條那個門檻若要再議時一併考慮。**
+   ⚠ **facts 一律照盤面寫「A 面三軌／B 面三軌」，不寫「翻唱專輯」**（已逐條檢查過）。
+3. ⚠ **順帶補到的兩件生平**：**上田力 1925-11-05 生（本盤發行時五十三歲）、2017-10-11 卒**；**他除了作曲編曲之外是寫字的人——訪問過 Quincy Jones、Bob James、Joe Sample、Michel Camilo 等來日藝人，替唱片寫解說、在音樂雜誌寫稿，也製作過 本多俊之 與 ジョージ川口 的專輯**（同一個條目）。⚠ **卡單把他寫成「編曲家兼鍵盤手」，那只是四、五個身分裡的兩個。**
+
+## 6196　`Make Me A Star`：**第 5977 條那個「MB 的 release 數多於 Discogs」的反例，本層逐筆覆核成立，聯集 15 不動**
+
+**逐筆重跑 `/masters/1153762/versions` ＝ 9 版（與卡單一致）；MB 的 10 筆逐筆比對後，`CBS/Sony 32DH-735`（eb40ad42，1987-06-21 CD）與 `VILLAGE VRGL-8006`（8383ae65，2002-02-06 SACD）兩筆在 Discogs 的 9 版清單裡確實查無**，另 4 筆是 Sony Music Direct 的 Digital Media。
+**→ 聯集 ＝ 9 ＋ 2 ＋ 4 ＝ 15，與卡單一致；Apple jp 那一筆（1538794395）對應 MB 的數位那一族，不另計。**
+⚠ **兩個技術性失效本層也覆核成立**：
+**(a) MB 的 c3d41596（`CBS/Sony 35DH-81`）date 逐字 `1979-06-21`，而 Discogs 同一筆（17128944）逐字 1983 年——CD 在 1979 年還不存在，那一筆的年份不可引用；**
+**(b) MB 的 `VILLAGE VIRCL-2003` 與 Discogs 的 `Village Records (2) VRCL-2003` 是同一筆 2001 年 CD，目錄號差一個字母。**
+⚠ **並補一件卡單沒寫的**：**Apple jp 的 `releaseDate` 逐字 `1979-06-21` 與原壓、MB 三處逐日相符，是本組兩筆「CBS/Sony 的 Apple `releaseDate` 可信」的第一筆**（另一筆是 #19 的コロムビア）——**第 1907-B 條那份廠牌分表在本組的實測與第 5984 條一致。**
+
+## 6197　`Make Me A Star`：**THE SQUARE 的團史本層取四格，其餘讓給 a 組那兩張（同掛名跨兩組的反同構處置）**
+
+**`THE SQUARE` 在 c-186 a 組另有兩張 1978 年的碟（《Lucky Summer Lady》《Midnight Lover》），三張跨兩組。**
+**本層在本卡只取四格**（全部出自 `ja.wikipedia` 的 `T-SQUARE` 條目）：
+1. **1976 年 11 月由當時明治大學學生 安藤正容（安藤まさひろ）結成，接著在大學大樂團界已有名氣的 伊東毅（伊東たけし）加入；1978 年《Lucky Summer Lady》正式開始活動**；
+2. ⚠ **「在當時由現成的爵士樂手與錄音室樂手構成的 fusion 黎明期樂壇裡，這支團是以成員全部是完全的新人的姿態登場」**（條目逐字「メンバー全員が全くの新人として登場した」）；
+3. **團名由來（安藤 與初代鼓手 原田俊一 在地鐵上：「『マジソンスクエアバッグ』があるし、4人だし、SQUAREでいいんじゃない。」）**；
+4. **1988 年前用 THE SQUARE、1989 年起改名 T-SQUARE，原因是美國已有 `SQUARES`。**
+⚠ **其餘的團史（1980 年代的成員固定、《ADVENTURES》與サントリー廣告、1987《TRUTH》與 F1、1990 年 伊東 退團⋯）本層一律不寫，留給 a 組與未來的批次。**
+⚠ ⚠ **另記一格給 a 組與主線（本層不寫進自己的 facts）**：**`ja.wikipedia` 的 `ダイレクトカッティング` 條目逐字把 `THE SQUARE《Midnight Lover》（1978年）初回のみダイレクトカッティング制作` 列為實例**
+——**那張在 a 組，而它與同組 #8《Kahuna》的直刻工法是同一條線上的兩張碟（1978 年，一張東芝側一張 Trio 側）。這一格對 a 組那張特別有用。**
+⚠ **並補一件本層查到的字元事實**：**MB 這個實體的 sort-name 逐字 `T‐SQUARE`、別名 `T‐Square`／`T‐スクェア` 三串的連字號都是 U+2010**（`chk-prop` 會擋），**而 Discogs 把實體併到 1989 年之後的團名上（原壓 artist 欄逐字 `T-Square(anv:The Square)`）**——**掛名照池中既有的全大寫 `THE SQUARE`，兩家都不跟。**
+
+## 6198　`Great Harvest`：**本層推翻卡單一處國籍、並補到領銜者與客座的生年**
+
+1. ⚠ **卡單 `risk` 逐字寫「Bob Berg、Errol Walters、Jo Jones Jr. 是美國人」——`Errol Walters` 不是**：**Discogs 藝人頁 1994010 的 `profile` 逐字「Jazz bassist, born 11 April 1948, Kingston, Jamaica.」**
+   **→ 他是牙買加金斯敦出身。這一格不影響第 4106 條四項的任何一票（四票都在日本側、4/4），但下游行文不得把演奏側寫成「兩個日本人加三個美國人」。**
+2. ⚠ **卡單整欄沒有領銜者的生年**：**藝人頁 2579452 的 `profile` 逐字「Japanese jazz pianist, born 21 April 1951, Hakodate, Hokkaido, Japan.」**——**寺下誠 1951-04-21 生於北海道函館市，本盤錄音時二十七歲**；
+   **而吹次中音的 `Bob Berg` 逐字 1951-04-07 生於紐約布魯克林（藝人頁 181108）——兩人同年、生日差十四天。**
+   ⚠ **Bob Berg 2002-12-05 死於車禍（同一欄）——與本作無關的後續生平事件，照反向禁令第二類不寫。**
+3. ⚠ **`increase` 一格製作脈絡本層覆核成立並寫進 facts**：**製作人 増尾好秋 就是錄音地 `West End Sound` 的主人（他在紐約的自家錄音室），而池中 c-184 b 已收的 `増尾好秋《111 Sullivan Street》`（1975）就是那個門牌**；**`ja.wikipedia` 的 増尾好秋 條目逐字「ジャズ/フュージョンの分野で活動し、ソニー・ロリンズのバンドのメンバーとしても有名。ニューヨーク在住。」。**
+
+## 6199　⚠ ⚠ `Leeward`：**四位團員裡三位的漢字都要改，是本線第一次在同一張碟上連中三個；⚠ 而其中一個用了 U+30FC，`chk-prop` 掃不到它**
+
+| 位置 | 卡單逐字 | **本層定案** | 來源欄位 |
+|---|---|---|---|
+| 電鋼琴與鋼琴 | **`土居ー郎`** | **`土井一郎`** | 2129355 `namevariations` 逐字只有 `土井一郎` |
+| 貝斯 | `櫻井郁雄` | **`桜井郁雄`** | 2638606 `namevariations` 逐字只有 `桜井郁雄` |
+| 鼓 | `関根秀夫` | **`関根英雄`** | 1697733 `namevariations` 逐字只有 `関根英雄` |
+
+⚠ ⚠ ⚠ **第一筆有兩處錯，而第二處是一個字元問題**：**卡單那個字串裡的「ー」是片假名長音符 U+30FC，不是漢字的「一」**
+——**那正是 `chk-prop` 第三道（U+30FC 當破折號用）要擋的字元，只是它掃的是盤名與掛名兩欄、不掃 `curatorWhy`／`curatorRisk`，所以整批放行。**
+**→ 建議主線把 `chk-prop` 的字元四道擴到 `curatorWhy`／`curatorRisk`／`mbNote`／`label` 四欄**（那四欄是鉤子層與寫作層的輸入，第 1968-B 條已經為同一個理由裁定過人名要回修卡單）。
+⚠ **三筆的機制都是第 1968-B 條那一個（Ichiro → 一郎／ー郎、Hideo → 秀夫／英雄、Ikuo → 櫻／桜），而本卡是本線第一次在同一張碟上連中三個。**
+⚠ **第四位（領銜者 `山口真文`）卡單寫對了**，而且 **`profile` 逐字「Born September 1, 1946 in Karatsu, Saga prefecture.」把卡單 `why` 欄那句「1946 年生於佐賀県唐津市」逐字支撐起來。**
+⚠ **混音那一位 `山崎昭夫` 也對，而它是本組兩筆「Discogs 藝人主名本身就是漢字」的其中一筆**（另一筆是 #6 的封面攝影 `辻丸純一`）——**那兩筆不需要逆推，順手記給後續批次：遇到主名就是漢字的實體，直接抄。**
+
+## 6200　`Brasilian Skies`：**本層補到卡單漏掉的一整排 credits、以及領銜者的出生名**
+
+1. ⚠ **`releases/3810966` 整筆的 `extraartists` 實有 **47 筆**（`search` 摘要只回前四筆，附錄二第 3 點逐字警告過）**，卡單的 `why` 欄漏了：
+   `Coordinator [Music]: Naomi Niimura`／`Olivia Page`、`Engineer [Recording]: Ary Carvalhaes`／`Masaru Takagi`（2110610 的 nv 逐字 `高木賢`）／`Stephen Hodge`、`Engineer [Assistant]: Dave Rideau`／`Julinho`、
+   ⚠ ⚠ **`Mixed By [Remix]: Masaru Takagi ＋ 高中正義 本人`（混音是他自己與 高木賢 兩個人——這一格對卡片敘述有用，卡單整欄沒有）**、
+   `Design: Koichi Chigi`（2570754 的 nv 逐字 `千木幸一`）、巴西打擊 `Antenor Marques Filho`／`Elyeu Felico`／`Hermes Coutesini`／`Luna (11)`、巴西鍵盤 `Sergio Carualho`、三位和聲 `Maria Aparecida`／`Maria Helena Violin`／`Maria Rita Kfouri`。
+2. ⚠ ⚠ **出生名**：**Discogs 藝人頁 128537 的 `realname` 逐字 `劉 正義（りゅう まさよし）`**，而 **`ja.wikipedia` 的 高中正義 條目逐字「出生名：劉 正義（りゅう まさよし）⋯南京市出身の中国人父親と日本人母親の間に生まれる⋯小学4年生の時に正義本人も日本へ帰化して劉正義から高中正義を名乗る」**
+   ——**兩處獨立相符，姓 `高中` 是母姓。**
+3. ⚠ **一條把年份接起來的脈絡**：**同一個條目逐字寫サディスティックス 在 **1978 年**自然解散、之後他每年出一到兩張獨奏專輯**——**本盤（1978-07-21）正好落在他轉成純獨奏藝人的那一年。**
+4. ⚠ **卡單抓到的那個作曲欄錯本層以英文維基覆核成立**：**A4〈I Remember Clifford〉的作者是 Benny Golson（1957 年為悼念 Clifford Brown 所寫），Discogs 逐字寫 `Max Roach` 是錯的。下游一律不得寫成 Max Roach 作曲。**
+5. ⚠ **鄰居補一筆**：**`高中正義, 深町純, カリオカ《Horizon Dream》1981 Kitty 25MK 9001`（Discogs 逐字標 `Compilation`，另有卡帶與 1983 CD 兩版）**——**三位掛名裡兩位在 b 組、一位在 a 組**，本層不計入任何一張的版本數，登記在此。
+
+## 6201　⚠ 同名陷阱：**本組新增兩筆，登記進派工信第四節那份清單**
+
+1. ⚠ ⚠ **`ja.wikipedia` 的 `ザ・プレイヤーズ` 是一個廣播節目**：逐字「『ザ・プレイヤーズ』は、ニッポン放送で2016年10月1日から2017年3月24日まで放送されたラジオのスポーツ・トーク番組」——**不是 #16 那支 fusion 樂團**（那支團在日文維基沒有獨立條目）。
+2. ⚠ **`ja.wikipedia` 查 `森園勝敏` 會重導到 `四人囃子`（他所屬的搖滾團）**——**他本人沒有獨立條目**，引用他的生平要指團的條目。
+⚠ **另記三筆「查得到但要先確認職業欄」的**：`直居隆雄`（ja 維基 MISS，沒有條目——但 `上田力` 條目的參考文獻欄逐字寫著「（ギタリスト・直居隆雄のホームページ）」，那是第二個獨立來源）、`山口真文`（ja 維基 MISS，生年只能靠 Discogs `profile`）、`寺下誠`（ja 維基 MISS，同上）。
+⚠ **並確認派工信列的陷阱在本組沒有踩到任何一個**（`鈴木弘`／`伏見哲夫`／`中村誠一`／`ゼロ戦`／`フライング・ディスク`／`ベター・デイズ`／`Goin' Home` 七個字串本組一次都沒用到）。
+
+## 6202　⚠ 立判準／登記：**CBS/Sony「Master Sound 76」系列的碟會有一張同年抽出來的七吋單曲，號段是 `06SH`／`06SP`**
+
+**本組三張「Master Sound 76」裡有兩張各有一張同年的七吋單曲**：
+- **#15《Samba Amour》→ `CBS/Sony 06SH 518`**（master 1845990，A 面是專輯 B2、B 面是專輯 A5，兩軌逐秒相同；⚠ **本層新抓到，第 6192 條**）；
+- **#17《Make Me A Star》→ `CBS/Sony 06SP 334`**（master 2059210，A 面是專輯 A2；⚠ **`genres` 含 `Stage & Screen`、`styles` 含 `Theme`**；第 5977 條已記）。
+（第三張 #16《Galaxy》本層查過，`Openskye` 那一張沒有同年單曲，⚠ **而它有一張 2026 年才數位化的七吋 `Space Travel / Murmur`，兩個曲題都不在專輯裡。**）
+
+### 判準（本層立，建議主線採納進簡報第三節）
+
+**遇到 `house: CBS/Sony` 而系列欄是「Master Sound 76」的碟，跑完 `/versions` 之後順手查一次 `06SH`／`06SP` 號段的同年七吋**
+——**那些單曲有自己的 master、不計入專輯的版本數，但兩件事會用到它們**：
+**(a) 單曲的盤面常有專輯上沒有的 credits**（#15 的作詞 `竜真知子` 就只出現在單曲上）；
+**(b) ⚠ ⚠ 專輯查不到數位版時，單曲可能查得到**（#15 的兩筆 Apple 單曲）——**那是回撈的候選。**
+
+## 6203　`desc-tools/jp-proper-names.json`：**本批 append 1 個（`瀬上与之助`），既有的一個都沒動**
+
+**本層把 12 張卡的 `facts`／`hookCandidates`／`sound`／`keyTracks`／`notes` 五欄逐欄跑過 `qa-batch.mjs` 的 `SIMP` 字表，只剩一處會被誤報**：
+**`瀬上与之助`**——⚠ **那是第 6179 條裡 #19 打擊手那一筆卡單的錯誤寫法，本層在 `notes` 裡逐字引用它（因為主線要照第 1968-B 條做逐字串替換，字串不能改寫）。**
+**照該檔逐字的指示（「遇到新的日文專名被誤報，把整個專名加進那個檔，不要去動 SIMP」）append 進去。**
+⚠ **本層寫入時發現工作區的那個檔已經比 `git show HEAD` 多了兩筆（`両国`／`日本映画テレビ照明協会`，另一支代理未提交的 append）——本層保留那兩筆、只在最後加自己那一行，`git diff` 逐行看過是純追加（＋3 行、−1 行，那一行的減是最後一項補逗號）。**
+⚠ **本組其餘的日文專名逐字掃過都不會被誤報**（`音響ハウス`／`信濃町スタジオ`／`宮内庁雅楽部`／`多忠昭`／`中牟礼貞則`／`鷺巣詩郎`／`伊集加代子`／`桜井郁雄`／`関根英雄`／`土井一郎`／`杉本和弥`／`瀬上養之助`／`笠井満`／`伊藤潔`／`鈴木良博`／`岡田澄雄`／`北川照明`／`原田和典`／`山口光雄`／`小貫聡明`⋯）。
+⚠ **另記一件**：**本層行文用的字裡沒有日文新字體**（`楽`／`沢`／`県`／`価` 等字逐處檢查過，**全部落在日本人名、地名、團名或逐字引用的日文句子裡**，照字元條「專名一律照原文字形抄」處理）。
+
+## 6204　交件前自跑的結果
+
+- `node desc-tools/qa-batch.mjs research c186` → **`b 12 full,…`（12 張全 full）、`key 與卡單完全一致 ✓`、`全部通過 ✓`、總標記 0**
+  （⚠ **第一次跑報 2 處：`簡體字: 与` 與 `半形逗號貼中文`。前者照第 6203 條 append 專名解決；後者是 `中村裕二` 那一格逐字引用 Discogs `realname` 裡的半形逗號，本層改寫成「`realname` 欄逐字含漢字 X 與羅馬字轉寫 Y」，不影響事實。**）
+- **逐張自量**：**facts 條數 12/12/12/12/12/12/12/12/12/12/12/12（合計 144，全部落在 8–12 的上限）**、
+  **`src` 144/144 是完整可開啟的 `https://` 網址（零描述型 src）**、
+  **`hookCandidates` 每張 2 條（上限）**、**`status` 與 `coverage` 兩欄並存同值**、**`keyTracks` 每張 2 條（#8 只有兩軌所以 1 條）**、
+  **千分位逗號 0 處**、**獎項 0 處（本組無獎項事實，「入圍／得獎」那一族不觸發）**、**簡體字 0 處**、**卡單順序與 12 個 `key` 逐字一致。**
+- **`src` 的來源分佈（144 條）**：`api.discogs.com` **67**、`www.discogs.com` **26**、`ja.wikipedia.org` **28**、`musicbrainz.org` **13**、`en.wikipedia.org` **7**、`music.apple.com` **3**。
+  ⚠ **與前幾組最大的不同是 `ja.wikipedia` 這一欄**：**28/144（19%），而且 12 張卡裡有 10 張至少用到一條**——**本組的主故事線（辛島文雄 的後續、Prism 的成員異動、高中正義 的出生名、Sonia Rosa 的來日經緯、鈴木宏昌 的綽號、T-SQUARE 的團名由來、上田力 的評論家身分、多忠昭 的姓的讀法）幾乎全部只存在於日文維基。**
+- **來源實測**：**Discogs API 全程 200（共 `releases` 19 次、`masters/<id>/versions` 13 次、`artists` 101 次、`labels` 8 次、`database/search` 5 次，節流 3.1–3.2 秒，零 429）**；
+  **MusicBrainz 全程 200（`release-group` 1 次、`release?release-group=` 12 次，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，1 req/s）**；
+  **Apple `itunes.apple.com`：`lookup` 18 次、`search` 23 次，⚠ **403／429 零次**（節流 1.4 秒）**；
+  **`ja.wikipedia`／`en.wikipedia` 的 `rest_v1/page/summary` 與 `w/api.php?prop=extracts` 兩種端點全程 200（ja 46 次命中 38、en 25 次命中 22）。**
+  ⚠ **WebSearch 一次都沒用到**（照研究層共用規則開頭那一節：雲端線實務上不用它）。
+  ⚠ **原廠網域一次都沒試**（照簡報三之二：jp-2 線的十五家沒有可用的原廠頁，`kojimarokuon.com` 只覆蓋 ALM／半夏社，本組 0 張）。
+
+## 6205　⚠ ⚠ 給主線與 c-187 之後批次的清單
+
+### 建議主線優先覆核的六件（都寫在上面，此處只列索引）
+
+1. ⚠ ⚠ ⚠ **第 6178 條——`深町純《Evening Star》` 可能是 4/6 的合輯。** **一個動作就能定案：取《Spiral Steps》2012 `PROT-1039` 或 2018 `UPCY-9757` 的逐軌時長，與本盤的 5:42／6:00 對一次。**
+2. ⚠ ⚠ ⚠ **第 6179 條——21 處人名改判要回修 `c186-cards.json` 與 `prop-b.json`**（照第 1968-B 條與第 1969-B 條二之 1 的先例），**並照第 1975-B 條把對照表往後掃到最新那一批**（`中牟礼貞則`／`多忠昭` 是池中已有的第一線樂手，一定會傳染）。
+3. ⚠ ⚠ **第 6193 條——`previews.json` 對 `Galaxy` 那一格是假命中，要改成 `unavailable`**（本層不碰那個檔）。**並建議探測層加一條硬規則：`aliasOnlyTitle` ＋ `yearDrift ≥ 20` 同時成立就降級。**
+4. ⚠ ⚠ **第 6192 條——`Sonia Rosa《Samba Amour》` 的曲目在 Apple 上有兩筆單曲（℗ 1979 CBS Japan 那一筆逐秒相同），要不要回撈請主線裁定**（那兩筆是單曲、過不了探測層的原規則）。
+5. ⚠ **第 6194 條——`Galaxy` 的「第二張專輯」這個序數沒有來源，ja 維基逐字說它是首張；上架前要定，或照第 1919-B 條退成不寫。**
+6. ⚠ **第 6195 條 (2)——ja 維基把 `Bos & Boz` 整張稱作「Boz Scaggs 的翻唱專輯」。** **本層不改判（盤面逐軌作曲欄 3/6 是硬證據），但第 5988 條那個門檻若要再議，這是一個新的資料點。**
+
+### 給 c-187…c-191 的操作提醒（十條，照重要性排）
+
+1. ⚠ ⚠ **`api.discogs.com/labels/<id>` 要列成研究層的固定動作**：**本組五家 5/5 都有產出**（Trio 是做音響器材的公司開的、Union 是テイチク 1962 年的子廠牌、Denon 旗下有 `45 RPM Sound Laboratory`、`Openskye` 的 `parent_label` 逐字 `CBS/Sony`、Kitty 是 多賀英典 1972 年開的）——**第 6190 條。**
+2. ⚠ ⚠ **「數位漏法」在本組 7/12（58%）**，**而 Discogs 對實體版本的收錄 12/12 完整**——**下一批的版本數覆核可以把重心整個移到「跑完 `versions` 之後查 Apple」那一步**（第 6177 條）。
+3. ⚠ ⚠ **同一張碟上兩個同音／同簡稱的名字會互相污染**（第 6180 條）——**固定動作：把 `extraartists` 的羅馬字姓與 anv 全串做一次去重計數，count > 1 的那幾組分別回查。**
+4. ⚠ ⚠ **罕見讀法的漢字姓**（第 6181 條）：**`Ono` 要把 `多`（おおの）列進候選、`Nakamure` 是 `中牟礼` 不是 `中村`、`Onuki` 可能是 `小貫`、`Kasai` 可能是 `笠井`、`Segami` 是 `瀬上`。**
+5. ⚠ ⚠ **`chk-prop` 的字元四道建議擴到 `curatorWhy`／`curatorRisk`／`mbNote`／`label` 四欄**（第 6199 條：本組有一個 U+30FC 混在漢字人名裡整批放行）。
+6. ⚠ **CBS/Sony「Master Sound 76」的碟要順手查 `06SH`／`06SP` 號段的同年七吋**（第 6202 條）——**單曲盤面常有專輯沒有的 credits，而且是回撈的候選。**
+7. ⚠ **`ja.wikipedia` 在本線的命中率與價值都比前幾組高**（本組 28/144 條 facts、10/12 張卡至少一條）——**但它的 discography 欄的年份與「ベスト・アルバム」這種分類靠不住**（第 6178 條：它把 1978 年的碟標成 1977、把 1980 年的精選標成 1977）。**當事實用可以，當年份與性質的判準不行。**
+8. ⚠ **同名陷阱新增兩筆**（第 6201 條）：**`ザ・プレイヤーズ`（ニッポン放送 2016–17 年的體育談話節目）、`森園勝敏`（重導到 `四人囃子`）。**
+9. ⚠ **`Trio／Whynot` 的 `PAX-6xxx` 直刻企劃在本組的第二個事實已經齊了**（第 6185／6186 條）：**同一組人 1978 年 6 月的兩張碟，一張是ヤマハホール 的實況（後來有德國授權版）、一張是ビクター錄音室的直刻（只有日本盤）。後續批次撞到這個號段時，兩張都要先分清。**
+10. ⚠ **Apple 的 ℗ 年按廠牌分的那份表，本組的實測與第 5984 條一致並可再收斂一句**：**テイチク 的 ℗ 年要看那一筆是原壓還是再發的數位化（#10 的 ℗ 1978 對、#9 的 ℗ 2014 是再發）；CBS/Sony 與コロムビア／NIPPONOPHONE 的 `releaseDate` 可信（#17 逐日、#19 逐日）；Universal／USM／UNIVERSAL J 的月日是 `01-01` 佔位（#4／#5／#6）。**
+
+### 登記給主線與本機的（不在本層的射程內）
+
+1. ⚠ **`audits/foreign-artist-japan-productions.md` 的乙族**：**第 5983 條建議登記 `Trio Records PAX-6005`（#8）與 `CBS/Sony 25AH 505`（#15）兩筆**——**本層覆核兩筆的四項都成立，並補 #8 的一個新依據（第 6186 條：同人同月的另一張碟有德國授權版而本盤沒有）。本層不寫那個檔。**
+2. ⚠ **`audits/pool-artist-name-splits.md`**：**`Makoto Terashita`／`寺下誠`（#9，池中羅馬字 2 列、盤面雙語並印、Apple 是 `寺下 誠`）與 `Richie Beirach`／`Richard Beirach`（#8）兩組，照第 5979 條與第 5995 條已登記，本層覆核相符，不新寫。**
+3. ⚠ **`batch-progress/enum/jp-2.md` 的「§1 候選」可以再劃掉一格**：**第 5995 條已劃掉 Kitty 的《Brasilian Skies》與 Union 的兩張；本層補一筆新候選——`Denon SX-7033`＝`上田力 & The Power Station《Burt Fusion》1979`（第 6195 條），⚠ **但它六軌全部是 Burt Bacharach 的曲子，照第 5701 條會是乙 6/6 直接退，所以只登記不推薦。**
+4. ⚠ **本機的一件**：**#16《Galaxy》的 `金坂淳一`／`三田良美`／`金井宏` 三個漢字名指不到來源欄位（第 6182 條）**——**要留還是退成羅馬字，請本機在上架前定。**
+
+**編號區間結算**：本節用到 **6176–6205（共 30 條），區間用滿、未越界**（a 組策展 5936–5965、b 組策展 5966–5995、另一支研究代理 6146–6175）。
