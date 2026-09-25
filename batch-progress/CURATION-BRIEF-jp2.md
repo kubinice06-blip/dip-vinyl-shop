@@ -150,6 +150,25 @@ jp-1 的 slice 帶著 `why`（`rg-tag`／`artist-tag`／…）當曲風線索。
    **它的語意是「這一格沒查過，你自己去查」，不是「這一格漏了」，也不是「這是外國人」**
    ——**`country` 是 `null` 的真日本人會撞池**（c-184 a 的 `峰厚介`），**而 `country=JP` 的團名也可能真的沒有漢字形**（`Love Live Life`）。
 
+## 三之二、原廠網域在本線的實測（**jp-1 那八個網域幾乎全不適用，不要再逐個試錯**）
+
+**jp-2 的十五家不是 jp-1 的四大廠**，所以 jp-1 派工信列的八個原廠網域對本線幾乎無效
+——**c-183 a 逐字「一次都沒試成」、c-184 b 逐字「八個全滅」**（`universal-music.co.jp` 商品頁 404 ＋ 站內搜尋是 JS 渲染、
+`kingrecords.co.jp` 404、`crownrecord`／`wewantsounds` 無目錄頁、`alm-records.jp` DNS 解不出、
+`Trio／Whynot` 的 `Octave Lab` 與 `otonano` 連線失敗）。
+
+| 網域 | 本線實測 |
+|---|---|
+| ⚠ **`kojimarokuon.com`** | **目前唯一可用的新路徑**：Shopify 的 `sitemap_products_*.xml`（1182 筆）——**ALM／半夏社 在本線還很多**（c-184 b） |
+| `sonymusic.co.jp` | ⚠ ⚠ **slug 的大小寫逐藝人不同**（`SadaoWatanabe` 駝峰 200／小寫 404；`kimikokasai` 小寫 200／駝峰 404）——**兩種都要試**；JS 渲染只取得 `<title>`，⚠ 會帶 `【Blu-spec CD】` 這種再發標記 |
+| `columbia.jp` | 兩條路徑互補（`prod-info/<catno>/` 與 `artist-info/<slug>/discography/<catno>.html`），**六批六個不同結論，不可外推**；⚠ **復刻企劃頁會把後來的再發寫成「【オリジナル】」** |
+| `miqqe.jp` | 正確用法是 `?s=<關鍵詞>` ＋ `/artist/<slug>/`（**猜商品 URL 一定 404**）；**只可用於發行日／價格／系列／商品解說，不可用於編制與人名** |
+| ⚠ ⚠ **判命中一律看內容，不看長度** | `kingrecords.co.jp` 的 404 在雲端**回 0 位元組**（舊筆記寫的「15KB」不適用）、`universal-music.co.jp` 的 404 頁**62 KB** |
+
+**→ 主力永遠是 Discogs（免 token、全程 200）＋ MB ＋ ja／en 維基；原廠側是補漏，不是取代。**
+⚠ ⚠ **查日本樂手漢字名一律回打 `api.discogs.com/artists/<id>` 的 `realname`／`namevariations`／`profile`**
+（第 1890-B 條第四條路）——**c-184 兩組合計打了 278 個藝人頁、改對 25 個人名**，**這一條是本線最有產出的動作。**
+
 ## 四、交付
 
 **與 jp-1 完全相同**：`batch-progress/c1XX/prop-{a,b}.json`、
