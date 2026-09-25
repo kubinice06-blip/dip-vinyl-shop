@@ -1121,3 +1121,181 @@
    ——**那位被抹掉的吉他手是 渡辺香津美（池中 10 列以上，本線已收多張）。** **本盤退件，但這件事若被後續批次或本機的藝人軸掃到，很容易寫成「渡辺香津美 參與本盤」——盤面逐字說他的軌道被剪掉了。**
 4. **第 5701 條的甲乙計數（本筆不靠它退，仍量出來）**：**甲 8／乙 1（B2〈Day Tripper〉逐字 `Lennon-McCartney`，英美搖滾曲、未進入爵士曲目表）＝11%，第三肢其實過得了**——**退的是 ⑤ 款那一關，兩件事要分開記。**
 5. **撞池 0**：**池中 7 列 YMO 卡（seed 的《Yellow Magic Orchestra》1978／《Solid State Survivor》1979／《×∞Multiplies》1980／《BGM》1981／《Technodelic》1981／《Naughty Boys》1983／《Service》1983）逐列比過，本盤不在其中**；⚠ **但九軌裡八軌的曲題出自前兩張（`Rydeen`／`Solid State Survivor`／`Tong Poo`／`The End Of Asia`／`Cosmic Surfin\'`／`Radio Junk`／`La Femme Chinoise`），是現場再錄——不是合輯（第 1948-B 條），只是本筆退在曲風。**
+
+---
+
+## 6032　退：`五十嵐浩晃 —《ナチュラル・ロード》`（rg 3c92c0cd）——**① 款（`styles` 逐字有 `Kayōkyoku`）＋ 第 1923-B 條演奏主體是歌手 ＋ 第 1925-B 條原壓盤面零樂手列名 ＋ 第 5701 條 (4) 款乙 10/10＝100%；四肢同時成立，是本組最乾淨的一筆退件**
+
+**事實**（Discogs releases/5129213＝原壓、`CBS/Sony 27AH 1138`、**1980-11-21**、10 軌、盤面全題逐字 `Natural Road = ナチュラル・ロード`）：
+`labels` 欄逐字**兩筆**——「CBS/Sony — 27AH 1138」與「**Sound Development — 27AH 1138(SD)**」、
+`companies` 逐字「Manufactured By: CBS/Sony Inc.」「Phonographic Copyright (p): CBS/Sony Inc.」「Copyright (c): CBS/Sony Inc.」「Recorded At: CBS/Sony Roppongi Studio」「Recorded At: CBS/Sony Shinanomachi Studio」、`notes` 整欄是空字串、
+**`genres` 逐字 `Jazz`／`Rock`／`Latin`／`Funk / Soul`／`Pop`、`styles` 逐字 `Kayōkyoku`／`AOR`／`Ballad`／`Bossa Nova`／`City Pop`。**
+⚠ ⚠ **`extraartists` 整欄只有四筆——`Composed By — Hiroaki Igarashi`（整張）、`Cover — Teruhisa Tajima`、`Engineer — Tamotsu Yoshida`、`Producer — Mitsuo Takaku`。一位演奏樂手都沒有。**
+**十軌逐字是〈ペガサスの朝〉〈フォギー・ナイト〉〈小さな明日〉〈雪が降る前に〉〈ナチュラル・ロード〉〈ブリージー・ナイト〉〈流星群〉〈イノセント〉〈いつまでも〉〈幸せいろのなみだ〉——十軌全部是日語題的自作歌曲。**
+
+**裁定：退。四肢逐肢成立。**
+1. **① 款成立**：**`styles` 逐字第一項就是 `Kayōkyoku`**（依第 1857-B 條，① 成立只是「進人工判、不是自動退」，本層照規定進人工判，結論仍是退）。
+2. **第 1923-B 條演奏主體**：**五十嵐浩晃 是 1980 年出道的シンガーソングライター（出世曲〈ペガサスの朝〉就是本盤 A1），十軌全部是他自譜自唱的日語歌**；**`Composed By` 是他唯一的音樂 credit，盤面連一位伴奏樂手都沒有列。**
+3. **第 1925-B 條**：**原壓與 Promo、卡帶、1991 年 `Sony SRCL 1817` CD 四版的 `extraartists` 都只有那四筆，零樂手列名**；⚠ **主線第 1967-B 條一之 1 那條救濟不適用**——**該條逐字的前提是「領銜者本人的身分」能支撐這一肢，而本層以 `五十嵐浩晃`／`Hiroaki Igarashi`／`Igarashi, Hiroaki` 三種寫法掃過池（0 列）、MB 的藝人實體 96e7731e 零 tag、Discogs 也沒有把他歸在爵士側**——**他不是池中有卡的爵士樂手。**
+4. **第 5701 條 (4) 款：乙 10/10＝100%**——**十軌全部是他自寫的日語流行歌**（照 c-186 a 第 5939 條與 c-186 b 第 5967／5969 條的同一個算法），**甲 0，第三肢失敗。**
+
+### ⚠ ⚠ 順帶把 `titleCheck` 那一格的警語方向定案：又是一次「方向不是它猜的那一種」
+**slice 的 `titleCheck.note` 逐字有警語「⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**」**（本組唯一一筆有警語的）。
+**逐張核完，機器報得對而方向錯**：**MB 的 RG title 逐字是片假名 `ナチュラル・ロード`、MB 最早 release 的 title 逐字是羅馬字 `Natural Road`，`titlesSeen` 兩形都在**；
+**而 Discogs 原壓的 `title` 欄逐字是 `Natural Road = ナチュラル・ロード`——那是盤面自己印的等價形雙題，兩層各取了一半。**
+**→ 這不是「RG 取了再發標題」，是主線第 1963-B 條一之 2（c-184 b 第 5753 條）那個「盤面印外文＝和文雙題」的形狀。**
+⚠ **本筆是 c-185 b 第 5935 條記的「`titleCheck` 有警語的 2 筆方向都不是它猜的那一種（本線第三、四個實例）」之後的**第五個實例**——**連五批，那個警語的方向一次都沒對過。建議主線把警語的措辭從「很可能 RG 取了再發標題」改成「RG title 與最早 release 的 title 不同，五種已知成因逐一核」。**
+（本筆是退件，所以沒有盤名要定案；`album` 欄若哪天要撈回來，取羅馬字 `Natural Road`。）
+
+### ⚠ 一併記四件
+1. ⚠ ⚠ **`house: CBS/Sony` 是對的，而 `labels` 欄有第二個字標 `Sound Development`**——**那是 CBS/Sony 在 1980 年前後給高音質盤用的副字標（目錄號逐字 `27AH 1138(SD)`，`(SD)` 就是它的縮寫）**；**本筆是 c-186 b 第 5995 條第 3 點（`Openskye` 是 CBS/Sony 給 fusion 線開的 imprint、`house` 與 `label` 兩欄會不同字）之後的**第二個 CBS/Sony imprint**，建議主線把 `Sound Development` 一併記進那一格。**
+2. **主線第 1934-B 條 (2) 款不觸發**：**`styles` 五項裡 `Bossa Nova` 依 c-185 b 第 5928 條逐字是「兩個字面不含 `Jazz` 而仍然算的既有例外」之一**——**所以 (2) 款那一條路走不通，本筆退在 ① 款與另外三肢。** ⚠ **⑤ 款也不成立**（`genres` 含 Jazz、無 `Non-Music`／`Stage & Screen`）。
+3. **年份 1980 零改判**：slice、MB first-release-date、MB 原壓 release、Discogs 原壓 `released`（1980-11-21）、Discogs master `year` 五處相符。
+4. **再發版本數**：**Discogs master 2282077 的 `versions` 逐筆跑完共 4 版**（1980 `27AH 1138` LP＝原壓、同號 `(SD)` Promo、**1980 同年同廠卡帶 `27KH 937`**、1991 `Sony SRCL 1817` CD）；**MB 建 2 筆，低估 2 版（50%）。** ⚠ **`catno=27AH 1138` 反查回 3 筆、零誤命中。**
+⚠ **登記給主線的撈回候選**：**`CBS/Sony 27AH 1138`（1980）——`genres` 含 Jazz、`styles` 含 `Bossa Nova`，退的是演奏主體與曲目來源**（與 c-186 b 第 5995 條登記的 `サーカス《New Horizon》`／`朝比奈マリア《Maria》` 同族）。
+
+---
+
+## 收件與橫向的裁定（6033–6055）
+
+## 6033　⚠ ⚠ ⚠ 年份：**13 筆收件全部回查版本表，改判 1 筆（`生活向上委員会大管弦楽団《This Is Music Is This!?》` 1979 → 1980）；退件側 6 筆也逐筆量過，改判 0 筆**
+
+| # | 掛名 —《盤名》 | slice | MB first-release-date | Discogs 原壓 `released` | Discogs master `year` | Apple jp | 取 | 差 |
+|---:|---|---:|---|---|---:|---|---:|---:|
+| 3 | 松岡直也 & Wesing《Fiesta Fiesta》 | 1979 | 1979-10-25 | 1979 | 1979 | 2008-06-25（再發數位化） | **1979** | 0 |
+| 5 | 日野皓正《Wheel Stone - Live in Nemuro》 | 1979 | 1979 | 1979 | 1979 | 1979-10-25 | **1979** | 0 |
+| 6 | 山下洋輔トリオ《Hot Menu》 | 1979 | 1979 | 1979 | 1979 | 查無 | **1979** | 0 |
+| 7 | カリオカ《Little Train》 | 1979 | 1979 | 1979 | **無 master 頁** | 查無 | **1979** | 0 |
+| 8 | 佐藤博《Orient》 | 1979 | 1979 | 1979-05-21 | 1979 | 查無 | **1979** | 0 |
+| 10 | Prism《Prism Live》 | 1979 | 1979 | 1979-11-01 | 1979 | 查無 | **1979** | 0 |
+| **11** | **生活向上委員会大管弦楽団《This Is Music Is This!?》** | **1979** | **1979（裸年份）** | **1980** | **1980** | 查無 | **1980** | **＋1** |
+| 12 | Casiopea《Make Up City》 | 1980 | 1980-11-21 | 1980-11-21 | 1980 | 1980-01-01（佔位） | **1980** | 0 |
+| 13 | Casiopea《Thunder Live》 | 1980 | 1980 | 1980-04-21 | 1980 | 1992-03-20（再發日） | **1980** | 0 |
+| 14 | 深町純《Quark》 | 1980 | 1980 | 1980-03-21 | 1980 | **1980-03-21（逐日相符）** | **1980** | 0 |
+| 15 | 喜多嶋修《Masterless Samurai》 | 1980 | 1980 | 1980 | 1980 | 1980-01-01（佔位） | **1980** | 0 |
+| 17 | 北村英治 Featuring 八城一夫《The Amazing…》 | 1980 | 1980 | 1980 | 1980 | 查無 | **1980** | 0 |
+| 18 | THE SQUARE《Rockoon》 | 1980 | 1980-04-01 | 1980-04-01 | 1980 | **1980-04-01（逐日相符）** | **1980** | 0 |
+
+### ⚠ ⚠ #11 的真改判：**五個資料點對 MB 的一個裸年份**
+**MB 那一邊**：RG 的 first-release-date 逐字 `1979`、原壓 release 02fa6045 的 date 逐字 `1979`——**兩處都是裸年份、沒有月日。**
+**改判的五個資料點**：
+1. **Discogs 原壓 releases/6684462 的 `released` 逐字 `1980`、`year` 1980**；
+2. **同號 Promo releases/14151853 的 `year` 1980**；
+3. **Discogs master 1042798 的 `year` 逐字 1980**；
+4. **那個 master 的 `versions` 全表裡 1980 年之前沒有任何一版**；
+5. ⚠ ⚠ **ja 維基「梅津和時」條目的作品年表逐字寫著「This is Music is This!?（1980年）- 生活向上委員会大管弦楽団 名義」**（本盤的中音薩克斯風手，他的條目把自己參與的每一張都列了年份）。
+**→ `year` 取 1980。**
+⚠ ⚠ **抓到它的動作要記下來**：**是主線第 1965-B 條第 1 點那個固定動作——跑 `/masters/<id>/versions` 時順手比「MB 轄下的 JP release 數 vs Discogs 的日本盤數」，本筆 MB 3 對 Discogs 5，少了兩筆，於是把年份與盤名兩件都人工回查**；
+**而 slice 的 `titleCheck` 三欄一致、`note` 空白，`poolRecheck` 也沒報任何東西——機器一個字都沒說。**
+⚠ **形狀與 c-186 b 第 5974 條的 `Prism《Prism III》`（1978 → 1979，四個資料點對 MB 的一個裸年份）逐字相同**——**本線連兩批各改判一筆年份，兩筆的成因都是「MB 給裸年份而 Discogs 有月日或更晚的一致年份」。建議主線把「MB 的 date 是裸年份而 Discogs master 的 `year` 不同」列成一道快篩。**
+
+### ⚠ 三筆「錄音年早於發行年」要寫進下游（不是改判）
+1. ⚠ ⚠ **#5 `日野皓正《Wheel Stone - Live in Nemuro》`：錄音 1975-04-08（根室）、℗ 與發行 1979——差四年**，是本組差最多的一筆；**正文若提到 1975 必須逐字講明那是錄音年。**
+2. **#6 `山下洋輔トリオ《Hot Menu》`：錄音 1979-06-29（紐約 Newport Jazz Festival）、發行 1979——同年。**
+3. ⚠ **#15 `喜多嶋修《Masterless Samurai》`：錄音 1979-08-27 至 1979-10-12（Burbank 與洛杉磯）、發行 1980——差一年**；**⚠ 而 Apple jp 的 `℗` 逐字是 `℗ 1979 East Quest Records`，那個 1979 恰好與錄音年相同、很容易被誤讀成發行年。**
+⚠ **#13 `Casiopea《Thunder Live》` 的錄音（1980-02-08／09）與混音（1980-02-19 至 27）都在發行（1980-04-21）之前兩個月，同年，只記不寫。**
+
+---
+
+## 6034　⚠ 盤名：**真改判 0 筆**（等價形取邊 5 ＋ 大小寫取邊 3 ＋ 尾隨空白 trim 1 ＋ 三欄一致且查無問題 4）
+
+| # | slice 的 `album` | 本卡取 | 性質 |
+|---:|---|---|---|
+| 3 | `Fiesta Fiesta` | **`Fiesta Fiesta`** | 三欄一致——Discogs 八版與 MB 兩層逐字相同 |
+| 5 | `Wheel Stone - Live in Nemuro` | **`Wheel Stone - Live in Nemuro`** | 大小寫取邊——Discogs 六版逐字 `Live In Nemuro`（`In` 大寫）、MB 兩層 `in` 小寫，取 MB 的非全大寫形 |
+| 6 | `Hot Menu` | **`Hot Menu`** | **等價形取邊**——盤面全題逐字 `Hot Menu = ホット・メニュー`，取羅馬字（五票對兩票） |
+| 7 | `Little Train` | **`Little Train`** | 三欄一致；⚠ **本盤沒有和文題** |
+| 8 | `Orient` | **`Orient`** | 三欄一致；⚠ **逐軌題是等價形而盤名不是** |
+| 10 | `Prism Live` | **`Prism Live`** | 三欄一致 |
+| 11 | `This Is Music Is This!?` | **`This Is Music Is This!?`** | 大小寫取邊——1991 年 `TECP-18911` 那一版寫成全大寫，取原壓形 |
+| 12 | `Make Up City` | **`Make Up City`** | **等價形取邊**——1980 年兩種卡帶寫成 `Make Up City = メイク・アップ・シティ`，取羅馬字（21 票對 2 票） |
+| 13 | `Thunder Live` | **`Thunder Live`** | 大小寫取邊 ＋ **等價形取邊**——1986／1989 兩張 CD 是 `Thunder Live = サンダー・ライブ`、無日期數位版是全大寫 `THUNDER LIVE`，取原壓形 |
+| 14 | `Quark` | **`Quark`** | **等價形取邊**——盤面全題逐字 `Quark = クォーク`，取羅馬字（四票對一票） |
+| 15 | `Masterless Samurai` | **`Masterless Samurai`** | 三欄一致；⚠ **本盤沒有和文題** |
+| 17 | `The Amazing Eiji Kitamura - Eight Degrees North` | **同（已 trim 尾隨空白）** | **尾隨空白 trim** ＋ 主副題取捨，見下 |
+| 18 | `Rockoon` | **`Rockoon`** | 三欄一致 |
+
+### ⚠ ⚠ #17 的尾隨空白與短題，兩件都要交代
+**(a) 尾隨空白**：**Discogs 的 `title` 欄逐字是 `The Amazing Eiji Kitamura - Eight Degrees North `（結尾一個半形空白），市售版與 Promo 兩筆都有**；
+**MB 的 RG title 與 release title 逐字沒有尾隨空白。** **本卡取 trim 後的形**（照 c-183 a 第 5671 條 #4 對《Winds Of Barcelona》「只有 2007 SACD 那一筆多了尾隨空白」的同一個處置）。
+**(b) 短題**：**同系列的 45 轉版（`CBS/Sony 32AP 1871`）的盤面題逐字只有 `Eight Degrees North `（掉了主題），逐軌曲目與 credits 與原壓逐字相同。**
+**本卡取原壓的全題**（MB 兩層 ＋ Discogs 原壓與 Promo 三處一致，對 45 轉版一票），**短題進 `queryAlias`。**
+
+### ⚠ 等價形那五筆的共同形狀，值得記給後續批次
+**本組 13 筆收件裡有 5 筆（38%）的盤面是「羅馬字 = 和文」的等價形，而它們分佈在四家廠牌（Frasco／Alfa ×2／Kitty 的逐軌題／CBS/Sony 的退件側）**——
+⚠ **主線第 1963-B 條一之 2 逐字說「ALM『New Improvisational Music』系列幾乎每張都是雙題，Frasco／Union／Trio 也常見」，本組把 **Alfa** 加進那份名單**（`Quark = クォーク`、`Make Up City = メイク・アップ・シティ`、`Thunder Live = サンダー・ライブ`、`Public Pressure = 公的抑圧` 四張，其中三張是 1980 年）。
+⚠ ⚠ **五筆的兩半本層都拿去掃過池（主線第 1963-B 條一之 2 的第六道），十個字串全部 0 列。**
+⚠ **#8 是一個新的變形，要單獨記**：**盤名本身不是等價形（三欄逐字都是 `Orient`），而八個軌題全部是等價形（〈Kalimba Night = カリンバナイト〉這種）**，**而 2014 年同廠再發那一版的軌題只剩和文**——**曲題引用必須帶版本。**
+
+---
+
+## 6035　⚠ ⚠ `live`：**改判 0 筆；slice 標 `live` 的 5 筆（本線單組最多）逐筆核過全部屬實；⚠ ⚠ 而其中一筆是主線第 1965-B 條第 5 點那個放寬（「一個或連續數晚」）在本線第一次乾淨命中，另一筆的日期肢按舊條文會失敗、本層仍判 `true` 並寫足理由**
+
+| # | 盤 | slice | 場館肢 | live／觀眾字樣肢 | 日期肢 | 取 |
+|---:|---|---|---|---|---|---|
+| 5 | 日野皓正《Wheel Stone - Live in Nemuro》 | true | ✓ 根室市民会館／根室市公民館 | ✓ `notes` 逐字 `Recorded live` | ✓ **單一日期 `April 8, 1975`** | **true** |
+| 6 | 山下洋輔トリオ《Hot Menu》 | true | ✓ Newport Jazz Festival「Jazz at the Symphony」 | ✓ `Recorded live` ＋ **credits 逐字 `MC [Introduction] — Rigmor Newman`** | ✓ **單一日期 `June 29, 1979`** | **true** |
+| 10 | Prism《Prism Live》 | true | ⚠ **只有城市（東京與名古屋），不是場館名** | ✓ `Recorded live` ＋ 盤名帶 `Live` | ⚠ **`July and August 1979`，是兩個月的巡演** | **true**（見下） |
+| 13 | Casiopea《Thunder Live》 | true | ✓ `Recorded At: ABC Kaikan Hall, Tokyo` | ✓ `Recorded live` | ✓ ⚠ **連續兩晚 `February 8th and 9th, 1980`** | **true** |
+| 16 | Yellow Magic Orchestra《Public Pressure》（退件） | true | ✓ 三個場館（The Venue／The Greek Theatre／The Bottom Line） | ✓ 三段 `Recorded live` | ✓ 三段分軌註明 | **true** |
+
+### ⚠ ⚠ #13 是主線第 1965-B 條第 5 點在本線的第一個乾淨實例
+**該點逐字把日期那一肢改成「明確的場次日期（一個，或連續數晚的公演）」，理由是舊條文（第 1904-B 條的「單一日期」）讓 c-185 b 的 `深町純《Triangle Session》`（西武劇場連兩晚）永遠過不了關。**
+**本盤的 `notes` 逐字「Recorded live at ABC Hall, Shiba, Tokyo on February 8th and 9th, 1980.」——連續兩晚，三肢全過。**
+⚠ **反方向也照 c-186 b 第 5989 條核過**：`formats` descriptor 零 `Direct Cutting`／`Direct-To-Masterdisk`，而且盤上逐字有九天的 `Remixed At` 工序（直刻盤不可能有混音工序）。
+
+### ⚠ ⚠ #10 的日期肢按舊條文會失敗，本層仍判 `true`——理由三項寫在這裡（**建議主線覆核**）
+**該筆的 `notes` 逐字只有「Recorded live at Tokyo & Nagoya, July and August 1979.」——場館寫成城市名、日期寫成兩個月。**
+**本層判 `true`，依據三項**：
+1. **第 1904-B 條那三肢的立意是「`Recorded At: <場館>` 本身不足以判實況」**——**它要擋的是「只有場館而沒有 live 字樣」的碟；本筆是反過來，有最強的 live 字樣（`Recorded live`）而場館寫得粗。**
+2. **c-186 b 第 5989 條那個「`Recorded live` 其實是直刻工法」的反例不成立**：`formats` descriptor 零 `Direct Cutting`，而 `companies` 逐字有 `Mixed At: Polydor Studio, Tokyo`。
+3. **盤名本身逐字是 `Prism Live`、MB `secondary-types` 逐字 `["Live"]`、slice 逐字 `true`——四處一致**（第 1934-B 條 (3)「盤面明印才立」在這裡對本層有利）。
+⚠ **反轉條件**：**若主線認為三肢仍須嚴格且的關係、日期肢不得放寬到「巡演月份」，本筆的 `live` 改成 `false`（改的是卡單的一個布林值，不動卡池結構）。**
+⚠ ⚠ **建議主線在該條上補一句**：**「場館那一肢寫成城市名而 live 字樣明確時，那一肢視為成立」**——**理由是本線的兩枚組實況盤（巡演錄音）幾乎都只寫城市，本筆不會是最後一張。**
+
+### ⚠ 反方向（`live: false` 的漏標）本組零命中，而八個字串逐筆掃過
+**主線第 1958-B 條那份必掃字串（`Recorded live`／`実況`／`ライヴ`／`Recital`／末軌題帶 `Encore`／credits 有 `MC —`／盤名帶 `In Person`／`in Japan`）在本組 14 筆 `live: false` 的碟上逐筆掃過，零命中**——
+**本組因此是 c-184 a（3/19＝16%）、c-185 a（1 筆）、c-186 a（1 筆但方向相反）之後第一組兩個方向都零改判的。**
+⚠ **另記兩個「像實況而不是」的地方，都在 `false` 那一側**：
+1. **#11 的 `Photography By [Cover / At NHK Studio]` 逐字提到 NHK スタジオ——那是封面拍攝地**；**而該盤 B1 的曲題逐字是〈アケタケタ行進曲〉，「アケタ」指的是東京爵士屋「アケタの店」——那是曲題的典故**（⚠ **c-176 有一張整張錄於アケタの店、連錄六天仍不標 live，兩件事不要混**）。
+2. **#17 與 #18 的 `series` 欄逐字是 `Master Sound DR Digital Recording` 與 `Master Sound 76`——那是 CBS/Sony 的高音質錄音／刻片工法，不是場館**（與 #14 的 `Inner Wave シリーズ` 同理）。
+
+---
+
+## 6036　⚠ ⚠ 再發版本數：**13 筆收件逐筆跑完整張 `versions` 清單；12 筆有 master 頁而 12/12 全部低估，平均低估率 62%、最高 76%、最低 40%；⚠ 1 筆沒有 master 頁；⚠ ⚠ 3 筆的 MB 有 Discogs 沒有的實體，一律取聯集（主線第 1971-B 條二之 5）**
+
+| # | 盤 | Discogs `versions` | MB release | **MB 獨有** | **聯集** | MB 低估 |
+|---:|---|---:|---:|---:|---:|---:|
+| 3 | Fiesta Fiesta | 8 | 2 | 0 | **8** | 6（75%） |
+| 5 | Wheel Stone - Live in Nemuro | 6 | 2 | 0 | **6** | 4（67%） |
+| 6 | Hot Menu | 5 | 1 | 0 | **5** | 4（**80%，本組最高**） |
+| 7 | Little Train | ⚠ **無 master 頁**（資料庫裡只有這一筆） | 1 | 0 | **1** | — |
+| 8 | Orient | 13 | 4 | 0 | **13** | 9（69%） |
+| 10 | Prism Live | 5 | 2 | 0 | **5** | 3（60%） |
+| 11 | This Is Music Is This!? | 5 | 3 | 0 | **5** | 2（**40%，本組最低**） |
+| 12 | Make Up City | 23 | 7 | **2** | **25** | 18（72%） |
+| 13 | Thunder Live | 17 | 4 | **1** | **18** | 14（78%） |
+| 14 | Quark | 5 | 3 | 0 | **5** | 2（40%） |
+| 15 | Masterless Samurai | 9 | 3 | 0 | **9** | 6（67%） |
+| 17 | The Amazing Eiji Kitamura… | 3 | 1 | 0 | **3** | 2（67%） |
+| 18 | Rockoon | 8 | 8 | **3** | **11** | 3（27%） |
+
+**→ 12 筆有 master 頁的全部低估，平均 62%**——**本線第九、十組，低估率仍在 57–62% 這一帶，曲線沒有下降。** `versions` 全表仍是不可省的固定動作。
+
+### ⚠ ⚠ 本組驗到的三種漏源，兩種是既有的、一種要補
+1. ⚠ ⚠ **「同年同廠的卡帶」是本組最大的單一漏源，7 筆各漏一到兩張，MB 一張都沒建**：
+   **`DCP-1512`（#3）／`CKG 1046`（#8）／`ALC-28006` 與 `DMM-4001`（#12）／`ALR-6037` 馬來西亞卡帶與 `TJ 40106`（#13）／`ALC-1531`（#14）／`HFC-9706`（#15）／`20KH 1458`（#18）／`NCT-2005`（退件 #9）／`CTK-7037-A`（退件 #2）／`27KH 937`（退件 #19）**
+   ——**11 個卡帶號、六種前綴（`DCP-`／`CKG `／`ALC-`／`DMM-`／`TJ `／`20KH`／`NCT-`／`CTK-`／`27KH`／`HFC-`）。**
+   ⚠ **c-186 a 第 5995 條第 3 點記的是「1978 年同廠同期的卡帶」五種前綴，本組把年段延到 1980 並多出六種前綴——這一條是本線最穩定的漏源，建議寫成固定動作。**
+2. ⚠ **「東南亞授權卡帶」是本組新看到的一族**：**#12 的印尼 `Pony Canyon POC 2021／TJ 40117` 與馬來西亞 `Alfa ALR 28007`、#13 的印尼 `TJ 40106／POC 2034` 與馬來西亞 `TJ 40106`**——**`released` 欄全部是 0（計入版本數、年份不可引用）**；**Alfa 的 1980 年 fusion 目錄在馬來西亞與印尼有一整批 Pony Canyon 授權卡帶。**
+3. ⚠ ⚠ **「歐美黑膠復刻」在本組出現兩次，而且都在 2017 年之後**：**#8 的 2018／2020 法國與歐洲 `Wewantsounds WWSLP12`／`WWSCD12` 四版 ＋ 2026 年的 `PROT-7396`、#15 的 2017 德國 `Oom Dooby Dochas DOO17003LP` 與 2019 歐洲 `Everland Psych 006 CD`**——**MB 只建到其中一筆。**
+
+### ⚠ ⚠ 三筆「MB 獨有實體」，本組是主線第 1971-B 條二之 5 的第二、三、四個實例
+- **#18 `THE SQUARE《Rockoon》`：MB 獨有三筆 Sony Music Direct 的數位版（2013-12-04、2015-07-08 ×2，後兩筆各帶一個 `MHXX` 號），Discogs 一筆都沒建；反過來 Discogs 獨有三筆（同號 Promo、`35DH 82` CD、`20KH 1458` 卡帶）**——**兩家各低估 3 版（各 27%）。**
+  ⚠ ⚠ **而 c-186 b 第 5977 條那個第一個反例（`THE SQUARE《Make Me A Star》`，MB 10 對 Discogs 9）是同一個掛名、同一個成因**——**Sony Music Direct 把 THE SQUARE 的整份目錄做成數位版而只登記在 MB。建議主線把「`house` 是 CBS/Sony 而掛名是 THE SQUARE／T-SQUARE 的碟，MB 那邊一定要數」寫進簡報。**
+- **#12 `Casiopea《Make Up City》`：MB 獨有兩筆（2000-01-25 `ALFA 32XA-117` 再版、2020-10-23 的數位版）。**
+- **#13 `Casiopea《Thunder Live》`：MB 獨有一筆（無日期的 AF 數位版，title 逐字全大寫）。**
+
+### ⚠ #7 沒有 master 頁，照簡報寫法處理
+**`releases/2367190` 的 `master_id` 逐字是 0／`master` 欄 undefined**——**照簡報第四節「沒有 master 頁的，只寫『資料庫裡只有這一筆』，不要寫成『沒有再發』」**；
+**本層另以 `q=Carioca Little Train` 掃過該藝人在 Discogs 的整份目錄（回 8 筆，逐筆讀 `catno` 與 `formats`）確認資料庫裡沒有本盤的第二筆**，**並登記兩張同團合輯當鄰居**（1980 `MKY6005`《Carioca》與 1982 `25MS 0011`《Sunrise Smilin\'》，`formats` 逐字都是 `Compilation`，**不計入版本數**）。
