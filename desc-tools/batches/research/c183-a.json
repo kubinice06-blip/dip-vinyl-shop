@@ -199,5 +199,139 @@
   "status": "full",
   "coverage": "full",
   "notes": "性質：原創錄音室專輯（MB secondary-types 空、Discogs formats 只有 LP／Album／Stereo，https://musicbrainz.org/release-group/346f1404-59ec-4944-8a32-5de8d0544c8d ），四個版本同一套錄音，第 397 條不成立。\n⚠ ⚠ 推翻策展層第一處，也是本組最硬的一處：`curatorWhy` 把逐軌 Music By 照抄成「Jeanine Tesori」。**Discogs 的作曲欄在這一軌上是錯的。** Jeanine Tesori 寫的是 2000 年試演、2002 年 4 月 18 日在百老匯開演的舞台版《Thoroughly Modern Millie》；**1967 年那部同名電影的主題曲是 Jimmy Van Heusen 作曲、Sammy Cahn 作詞**（英文維基電影條目逐字「new songs by Jimmy Van Heusen and Sammy Cahn (\"Thoroughly Modern Millie\", \"The Tapioca\")」）。**一張 1969 年的唱片不可能演到 2002 年才寫出來的曲子。** → 下游引用逐軌作曲時，這一軌一律寫 Van Heusen／Cahn，不得沿用卡單。（這是派工信第四節「Discogs 的作曲欄會錯，作曲不是它的強項」的第三個實例。）\n⚠ 補上策展層漏掉的一格：**系列欄的號碼逐字是 `Vol.1`**——卡單只寫了系列名「Japanese Top Jazz Men Series」，沒有寫它是這條系列的第一張。系列頁（labels/1571555）另外把和文名記成「日本ジャズメン・シリーズ」。\n⚠ 補上第二格：**前田憲男 的「Keyboards」是什麼，2007 年的 Think! 復刻寫明了——Electric Organ [Electone]**，也就是 Yamaha 的電子管風琴。1969 年的 hard bop 盤上出現 Electone 是可寫的細節，卡單沒有。\n⚠ ⚠ 一件與策展層的掛名裁定有關、但不足以翻案的新資料：**日文維基把本盤列在 `宮沢昭` 的「リーダー作品」欄**（逐字「『ミュージカル・プレイ・イン・ジャズ』（1969年）テイチク」），也就是說有第三方把它當成宮沢昭 的領銜作、不是四方對等聯名。**但 MB（四個 Person 對等 artist-credit）與 Discogs（盤面題四人同序羅馬字並列）兩家都判成四方對等，兩票對一票**，本層**維持策展層第 5675 條的 `宮沢昭 / 前田憲男 / 原田政長 / 富樫雅彦`**，只把這個反向資料點記在這裡供主線覆核（可逆：改的是卡單 `artist` 值）。\n⚠ 富樫雅彦 1970 年 1 月那件事，兩個來源的「成因」不同：**日文維基逐字是「富樫の浮気が原因で、妻に背中をナイフで刺され脊椎を損傷」；Discogs 藝人頁 863918 逐字只寫「in an accident」**。→ facts 採克制寫法（背部受刺傷、脊椎受損、下半身癱瘓、不再能用雙腳打鼓），**不寫成因、不渲染細節**；這件事與本作直接綁定（它把 1969 年這批錄音變成他四肢打鼓時期的末段），依反向禁令屬「可寫但要標時序」那一類，facts 已標明時序。\n⚠ 日文維基的 富樫雅彦 條目逐字列出他 1969 年的六張（ヴァリエーション／パラジウム／トランスフォーメイション／デフォメイション／フォー・ユニッツ／いわな／ウィ・ナウ・クリエイト／スピード・アンド・スペイス／アイソレーション），**本盤不在那份清單裡**——他自己的維基年表漏了這條系列的 Vol.1。facts 只寫「一年連錄六張」這個可查的量，不逐張列。\n⚠ 前田憲男 的獎項有一處來源自我矛盾，本層不採用：日文維基同一句寫「1983年に第20回日本レコード大賞「最優秀編曲賞」」——**第 20 屆日本唱片大賞是 1978 年，屆次與年份對不上**，所以本層的 facts 只寫該句裡年份與獎項一致的兩項（1981 東京音楽祭、1983 南里文雄賞），並照規則標明兩項都是「得獎」不是入圍。\n⚠ 再發版本數覆核：`/masters/1727677/versions` 逐筆重跑確為 **4 版**（1969 Promo、1969 市售、1998 Baybridge TECW-20738、2007 Think! THCD-051），與卡單第 5673 條一致，**改判 0**。\n⚠ MB 層逐欄重核與卡單 `mbNote` 完全一致（RG title 逐字片假名 `ミュージカル・プレイ・イン・ジャズ`、frd 1969、四個 Person 的 artist-credit、tags 只有 `jazz(1)`、轄下 2 個 release）。**盤名取羅馬字的處置（第 5671 條）本層維持**：羅馬字那一邊四版一致，片假名那一邊 MB 與 Discogs 自己就寫成兩種。\n⚠ 未寫進 facts 的一格：同系列的 UPS-2008-J《Four Units》1969 已由策展層以撞池退件（第 5665 條），**而 Discogs 那張 2020 年的復刻（LTJC-010）把目錄號欄逐字寫成「LTJC-010, UPS-2008-J, SUP 1007」——卡單第 5665 條追問的「MB 那筆 catno `SUP 1007` 從哪來」的答案就在這裡**（https://www.discogs.com/label/1571555 ）。"
+ },
+ {
+  "key": "desc4:渡辺貞夫|Live at the Junk",
+  "artist": "渡辺貞夫",
+  "album": "Live at the Junk",
+  "facts": [
+   {
+    "f": "1969 年 12 月 26、27 兩晚錄於銀座的爵士俱樂部 Junk，1970 年由 CBS/Sony 以 SONP 50221-J 發行；盤面說明欄逐字「Dates Recorded & Location, 26, 27th december 1969 Jazz Club \"Junk\", Ginza, Tokyo」，公司欄逐字「Recorded At: Junk Club, Tokyo, Japan」，對開封套，定價印的是一千八百日圓。",
+    "src": "https://www.discogs.com/release/3842716"
+   },
+   {
+    "f": "四重奏逐名印在盤上：渡辺貞夫 吹中音薩克斯與 sopranino 薩克斯、増尾好秋 吉他、鈴木良雄 兼用木貝斯與電貝斯、渡辺文男 鼓；製作 伊藤潔、錄音 Kennichi Handa、監修 Kouji Amenomori。全編制裡沒有鋼琴。",
+    "src": "https://www.discogs.com/release/3842716"
+   },
+   {
+    "f": "打鼓的 渡辺文男 是領銜者的親弟弟——日文維基的 渡辺貞夫 條目逐字寫「弟はジャズドラマーの渡辺文男」，同一段還記著他的妹妹是爵士歌手チコ本田。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB"
+   },
+   {
+    "f": "渡辺文男 1938 年 12 月 29 日生於栃木縣宇都宮市，與 1933 年出生的哥哥同一個城市。",
+    "src": "https://www.discogs.com/artist/1086541"
+   },
+   {
+    "f": "吉他手 増尾好秋 同一年二月與五月才在同一家 CBS/Sony 錄完自己的領銜首作《Winds Of Barcelona》，十個月後在這場俱樂部實況裡坐回伴奏位置。",
+    "src": "https://www.discogs.com/release/13434683"
+   },
+   {
+    "f": "貝斯手 鈴木良雄 1946 年 3 月 21 日生於長野，唱片圈通行的綽號是 Chin。",
+    "src": "https://www.discogs.com/artist/1252185"
+   },
+   {
+    "f": "七軌的作曲欄逐軌都印了出來：A1〈Cheryl〉是 Charlie Parker、A2〈If I Said The Sky Was Fallin'〉十三分二十六秒是 渡辺貞夫 自己寫的、A3〈Georgia On My Mind〉是 Hoagy Carmichael 與 Stuart Gorrell、B1〈This Guy's In Love With You〉是 Bacharach 與 David、B2〈No More Blues〉是 Antonio Carlos Jobim、B3〈Here's That Rainy Day〉是 Jimmy Van Heusen 與 Johnny Burke、B4〈Granny's Samba - Ending Felicidade〉是 Jobim 與 Gary McFarland。",
+    "src": "https://www.discogs.com/release/3842716"
+   },
+   {
+    "f": "A3 的曲題末尾逐字加了「- Theme」，是拿來當主題曲用的段落；盤面另外印著「SX68サウンド / SX68Sound」的字樣，並附日文解說。",
+    "src": "https://www.discogs.com/release/3842716"
+   },
+   {
+    "f": "唱片的攝影出自 内藤忠行——1941 年 5 月 30 日生於東京的攝影家，以爵士照片著稱。",
+    "src": "https://www.discogs.com/artist/851933"
+   },
+   {
+    "f": "製作人 伊藤潔 1946 年生於名古屋市，是專做爵士的製作人。",
+    "src": "https://www.discogs.com/artist/406894"
+   },
+   {
+    "f": "2015 年 10 月 14 日由 Sony Records International 以「Jazz Collection 1000」的 SICJ 63 復刻，說明欄逐字「2000 DSD Mastering」，解說由 1946 年生的爵士評論家 岡崎正通 執筆。",
+    "src": "https://www.discogs.com/release/7826633"
+   },
+   {
+    "f": "Discogs 的版本表共七版：1970 年的原壓 LP、同年的四軌立體聲開盤帶 SONT 52055J、1978 年 23AP 1067、年份欄空白的 SOPM 180 與 18AH 1562、2000 年 SME Records 的 SRCS 9587、2015 年 SICJ 63。",
+    "src": "https://www.discogs.com/master/632749"
+   }
+  ],
+  "hookCandidates": [
+   "1969 年最後一週，銀座一家小俱樂部裡的四個人：吹薩克斯的和打鼓的是親兄弟，彈吉他的那年春天才剛錄完自己的第一張。",
+   "七軌裡最長的一首十三分半，是領銜者自己寫的；其餘六首全是別人的曲，而封面照片出自一位專拍爵士的攝影家。"
+  ],
+  "sound": "沒有鋼琴的四重奏，和聲整個交給吉他，所以薩克斯的線條下面是空的——句子長、轉調的地方靠吉他一個和弦頂住，中音與 sopranino 兩把號輪替時音色落差很明顯。鼓與貝斯在俱樂部的小空間裡打得緊，速度偏中快，獨奏一輪接一輪不趕著收；標準曲被拆成長段落來吹，Parker 那首開場最硬，Jobim 那兩首把重量放輕。整張是現場收音，掌聲與空間殘響都留著。",
+  "keyTracks": [
+   "Cheryl",
+   "If I Said The Sky Was Fallin'"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "性質：實況錄音專輯（MB secondary-types 逐字 `[\"Live\"]`，https://musicbrainz.org/release-group/df94c614-4280-4156-a86c-71b73a9bfc98 ），不是選輯或重發；策展層第 5672 條的 `live: true` 三項齊備，本層逐項重核，維持。\n⚠ ⚠ 本張最值錢的新事實（策展層整格沒有）：**鼓手 渡辺文男 是 渡辺貞夫 的親弟弟。** 日文維基 渡辺貞夫 條目逐字「弟はジャズドラマーの渡辺文男」，而 Discogs 藝人頁 1086541 逐字「Born December 29, 1938 in Utsunomiya, Tochigi, Japan」——**與哥哥同一個城市**（渡辺貞夫 逐字「栃木県宇都宮市出身」）。**卡單的 `curatorWhy` 只把他列成「Fumio Watanabe（Drums ＝渡辺文男）」，沒有指出這層關係**；本盤與本組《Winds Of Barcelona》兩張都是他打鼓。\n⚠ 人名漢字逐筆回打 Discogs 藝人頁定案（第 1919-B 條的機制）：**内藤忠行**（851933 的 `realname` 逐字「内藤忠行」，profile 逐字「Japanese photographer, best known for his jazz photos. Born May 30, 1941 in Tokyo.」）、**伊藤潔**（406894 的 `realname` 逐字「伊藤 潔」）、**岡崎正通**（1849553 的 `realname` 逐字「岡崎正通」，profile 逐字「Japanese jazz critic. Born in 1946.」）。\n⚠ **兩位查不到漢字，照第 1936-B 條的處置不寫漢字、只留 Discogs 的羅馬字**：錄音師 `Kennichi Handa`（藝人頁 2638762 的 `realname` 與 `namevariations` 兩欄都是空的）、監修 `Kouji Amenomori`（2905368 只有一個變體 `Koji Amenomori`，profile 逐字「Japanese jazz producer.」）。**下游若要縮字元，這兩個名字是最先該捨的兩格。**\n⚠ 一個新的同名陷阱，登記給本線：**英文維基的 `Sadao Watanabe` 是消歧義頁**——另一位同名者是版畫家 Sadao Watanabe（1913–1996），與音樂無關。查英文來源時不可直接引該頁。\n⚠ 再發版本數覆核：`/masters/632749/versions` 逐筆重跑確為 **7 版**，與卡單第 5673 條一致（MB 建 1 筆、低估 6 版 86%），**改判 0**；其中 SOPM 180 與 18AH 1562 兩筆的 `released` 欄是 0，**計入版本數但年份不可引用**。\n⚠ MB 層逐欄重核與卡單 `mbNote` 完全一致（RG title `Live at the Junk`、frd 1970、掛名單人 `Sadao Watanabe`、secondary-types `[\"Live\"]`、tags `jazz(1)`／`post-bop(1)`、轄下 1 個 release）。**改判 0。**\n⚠ 年份：錄音 1969 年 12 月、發行 1970 年，三處相符。**正文若寫到 1969 必須講清楚那是錄音年**（照卡單 `curatorRisk`）。\n⚠ 同批三張 渡辺貞夫 卡的切角互斥，本卡刻意不寫的：Berklee／Gary McFarland／bossa 的來歷與 Union 廠牌（#1）、紐約錄音與 Chick Corea 三人（#17）。**本卡只留俱樂部實況、兄弟編制與幕後三個日本人。**\n⚠ 移籍 CBS/Sony 的序位（《パストラル》1969 是移籍第一作）本層刻意放在同批《Round Trip》那張寫，本卡不重複。"
+ },
+ {
+  "key": "desc4:渡辺貞夫|Round Trip",
+  "artist": "渡辺貞夫",
+  "album": "Round Trip",
+  "facts": [
+   {
+    "f": "1970 年 7 月 15 日錄於紐約的 Allegro Sound Studio，同年由 CBS/Sony 以 SONP 50320-J 發行；盤面說明欄逐字「Dates recorded & location July. 15. 1970. Allegro Sound Studio NYC.」，公司欄逐字「Recorded At: Allegro Sound Studios」，封面照片那一行逐字是「Cover Photo: Shohnen Magazine」。",
+    "src": "https://www.discogs.com/release/1407755"
+   },
+   {
+    "f": "全碟只有四軌，而且長短極不平均：A1〈Round Trip: Going & Coming〉二十分二秒、A2〈Nostalgia〉一分三十秒、B1〈Pastoral〉十四分四十五秒、B2〈Sao Paulo〉七分三十六秒；四軌的 Written-By 全部掛在 渡辺貞夫 身上，其中 A1 是他與 増尾好秋 共作。",
+    "src": "https://www.discogs.com/release/1407755"
+   },
+   {
+    "f": "他在本盤上吹的不是中音薩克斯：1970 年日本原壓的 credits 逐字只寫 Saxophone 與 Flute，而 1974 年美國 Vanguard 版（VSD 79344，說明欄逐字「Recorded July 15, 1970 at Allegro Sound Studio NYC.」）逐字寫成 Soprano Saxophone 與 Flute。",
+    "src": "https://www.discogs.com/release/15051334"
+   },
+   {
+    "f": "日文維基把本盤的編制記成 渡辺貞夫（fl、sn）、チック・コリア（p、el-p）、ウルピオ・ミニッツィ（p）、ミロスラフ・ヴィトウス（b）、ジャック・ディジョネット（ds）——它把 Minucci 算成一位鋼琴手，而不只是監修。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB"
+   },
+   {
+    "f": "Minucci 的鋼琴確實在盤上，但只在一軌：1970 年原壓的逐軌 credits 把「Ulpio Minucci = Piano」單獨掛在 B2〈Sao Paulo〉上，專輯層他的掛牌則是 Supervised By，與 Tatsu Nozaki 並列；1974 年的 Vanguard 版則把他的 Piano 提到專輯層。",
+    "src": "https://www.discogs.com/release/1407755"
+   },
+   {
+    "f": "Ulpio Minucci 1917 年 6 月 29 日生於義大利的 Campobello di Mazara、後來成為美國作曲家；他在羅馬的 Santa Cecilia 音樂院進修、畢業於巴勒摩音樂院，並以 ABC 的《Saga of Western Man》在 1964 與 1965 年兩度入圍艾美獎（兩次都是入圍）。",
+    "src": "https://www.discogs.com/artist/827025"
+   },
+   {
+    "f": "錄音師是 Arthur Kendy 與 Mike Consi 兩位美國人；製作兼攝影是 伊藤潔，封面設計是日本平面設計師 山田充——同批的《Live at the Junk》也是他設計的。",
+    "src": "https://www.discogs.com/artist/2053935"
+   },
+   {
+    "f": "四週之前他還在歐洲：日文維基記 1970 年 6 月 18 日的《モントルー・ジャズ・フェスティバルの渡辺貞夫》是他帶著 増尾好秋、鈴木良雄、角田ヒロ 的日本四重奏在蒙特婁爵士節錄的，而紐約這一場的伴奏換成三位外國樂手。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB"
+   },
+   {
+    "f": "鋼琴的 Chick Corea 1941 年 6 月 12 日生，1960 年代末以 Miles Davis 樂團成員的身分參與了 jazz fusion 的成形，要到 1970 年代才組 Return to Forever。",
+    "src": "https://en.wikipedia.org/wiki/Chick%20Corea"
+   },
+   {
+    "f": "貝斯的 Miroslav Vitouš 就在 1970 年與 Joe Zawinul、Wayne Shorter 等人共同創立 Weather Report。",
+    "src": "https://en.wikipedia.org/wiki/Weather%20Report"
+   },
+   {
+    "f": "B1 的曲題〈Pastoral〉與他前一年的專輯同名——日文維基記《パストラル》是 1969 年 6 月 24 日與 7 月 8 日錄音、他移籍 CBS/Sony 的第一作；本軌則是 1970 年 7 月紐約那一場的十四分四十五秒版。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB"
+   },
+   {
+    "f": "Discogs 的版本表共十八版，是同批最多的一張：1970 年原壓與同號宣傳盤、1973 年巴西 CBS/Sony 137876 與荷蘭 Epic EPC 65558、1974 年日本 SOPM-153、1974 年美國 Vanguard 同號市售四筆加宣傳盤與一卷卡帶 CV 79344、1978 年 23AP 1069、1990 年 CSCL 1311、1997 年 SRCS 9359、2002 年義大利 Universe UV 046、2014 年 SICP 4233。",
+    "src": "https://www.discogs.com/master/299422"
+   }
+  ],
+  "hookCandidates": [
+   "四軌、其中一軌二十分鐘；伴奏是那年夏天紐約最忙的三個人，而四週之前他還在蒙特婁帶著自己的日本四重奏。",
+   "掛在監修欄的那位義大利裔美國作曲家其實在末軌彈了鋼琴——日本原壓只把那一行印在單軌上，四年後的美國版才把它提到封底。"
+  ],
+  "sound": "四軌、兩首長曲，寫法是一個動機慢慢長開而不是主題與獨奏輪替：高音薩克斯與長笛的線條細而直，鋼琴與電鋼琴在下面鋪塊狀和聲、不搶旋律，貝斯用弓與撥交替，鼓則是把拍子打散成點與面而不是穩定的節奏型。二十分鐘那一軌前後兩半分別叫去與回，中段整個鬆開再收回來。整體仍是 post-bop 的和聲語言，只是把時間尺度拉長，不是電化融合那種靠音牆推的聲音。",
+  "keyTracks": [
+   "Round Trip: Going & Coming",
+   "Pastoral"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "性質：原創錄音室專輯，四軌全是領銜者自己寫的曲（MB secondary-types 空，https://musicbrainz.org/release-group/dd031e02-40bd-40e0-acb2-2b58d3c046d1 ）。\n⚠ ⚠ 推翻策展層第一處：`curatorWhy` 開頭逐字寫「渡辺貞夫（中音薩克斯・長笛）」。**本盤上沒有任何來源說他吹中音**——1970 年日本原壓（releases/1407755）的 credits 逐字是「Sadao Watanabe = Saxophone, Flute」，**1974 年美國 Vanguard 版（releases/15051334）逐字是「Sadao Watanabe = Soprano Saxophone, Flute」**，日文維基逐字記「渡辺貞夫(fl,sn)」。**對照同批《Live at the Junk》那張，Discogs 明明白白寫「Alto Saxophone, Sopranino Saxophone」——同一位樂手、同一家資料庫，本盤刻意沒寫 Alto。** → 正文一律不得寫成中音薩克斯；要寫樂器就寫高音薩克斯與長笛，或只寫薩克斯與長笛。\n⚠ ⚠ 推翻策展層第二處：`curatorWhy` 把 Ulpio Minucci 只列成「監修」。**他在盤上還彈了一軌鋼琴**——1970 年原壓的 B2〈Sao Paulo〉逐軌 credits 逐字有「Ulpio Minucci = Piano」，1974 年 Vanguard 版更把 Piano 提到專輯層與 Chick Corea 並列，日文維基也把他列成編制裡的一位鋼琴手。**這一格只存在於整筆的逐軌 `extraartists` 裡**，正是 `CURATION-BRIEF-bluenote-post1985.md` 附錄二第 3 點說的那個位置。\n⚠ 補上策展層漏掉的兩格：**錄音師是 Arthur Kendy 與 Mike Consi 兩位**（卡單整格沒有），**封面照片那一行逐字是「Cover Photo: Shohnen Magazine」**。\n⚠ 人名漢字：**山田充**（Discogs 藝人頁 2053935 的 `namevariations` 逐字有「山田充」，profile 逐字「Japanese graphic designer」）、**伊藤潔**（406894 的 `realname` 逐字「伊藤 潔」）。**`Tatsu Nozaki`（2793009）的 `realname`／`namevariations` 兩欄皆空，漢字查不到，照第 1936-B 條整格不寫漢字。**\n⚠ 外國藝人那一關（策展層第 5680 條判四項 4/4 在日本側）本層的事實與它相符、不推翻：**製作與攝影是 伊藤潔、監修有 Tatsu Nozaki、設計是 山田充、原盤發行是 CBS/Sony 東京、四軌全是領銜者自己寫的（一軌與 増尾好秋 共作）**；在外國側的只有錄音地（紐約 Allegro Sound Studio）、兩位錄音師與三位伴奏。**美國 Vanguard 版要到 1974 年才出，比日本原壓晚四年**（版本表逐筆可查）。\n⚠ ⚠ 跨卡串連點，兩處都必須帶年份：(1) **B1 的曲題〈Pastoral〉與池中 `渡辺貞夫《Pastoral》1969`（seed ＋ c132 兩列，コロムビア 以外的 CBS/Sony 盤）同名**——主線第 1948-B 條第 1 點記的「曲題撞他卡盤名」，六道 dedup 抓不到；**本卡的正文不得把這一軌寫成 1969 那張碟的錄音**。(2) **A1 的共同作曲者 増尾好秋 就是同批 #4 的領銜者，而他自己 1970 年的《24》裡有一首逐字叫〈Round Trip:Coming〉**（https://www.discogs.com/master/758114 ）——兩卡引用必須帶掛名與年份。\n⚠ 再發版本數覆核：`/masters/299422/versions` 兩頁逐筆重跑確為 **18 版**，與卡單第 5673 條一致（MB 建 2 筆、低估 16 版 89%），**改判 0**；其中 18AH 1564 與美國 VMD-79344 兩筆的 `released` 欄是 0，**計入版本數但年份不可引用**。\n⚠ MB 層逐欄重核與卡單 `mbNote` 完全一致（RG title `Round Trip`、frd 1970、四方 artist-credit `Sadao Watanabe, Chick Corea, Miroslav Vitouš, Jack DeJohnette`、tags 只有 `jazz(1)`、轄下 2 個 release、2014 那筆 `status` 逐字 null）。**掛名取單人 `渡辺貞夫` 的處置（第 5675 條）本層維持——Discogs 十八個版本的盤面掛名沒有一個不是單人。**\n⚠ 三位伴奏的後續生平（獎項累計、辭世）與本作無關，照反向禁令整格不寫；Minucci 的艾美獎依規則逐項標明是入圍、不是得獎。"
  }
 ]

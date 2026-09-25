@@ -1573,3 +1573,471 @@ Rounder／Sun／Fonomusic／Estúdio Eldorado 等一整頁毫不相干的碟**�
 - **`Union Records UPS-1080-J`（`山本邦山 —《Shakuhachi And Bossa Nova Vol.2》`，1971）**與
   **`Crown GW5201`（`石川晶とカウント・バッファローズ —《ドラム八木節ドラム》`，1971）**
   ——**兩張「爵士編制翻奏日本民謡」的盤，若第 5701 條被改判就從這裡撈回來。**
+
+---
+
+# a 組研究層（5776–5805）
+
+批次 c-183｜a 組 5 張（收件全表）｜研究層｜2026-09-25
+輸入：`desc-tools/batches/cards/c183-cards.json` 的 `group === "a"` 5 筆（⚠ 本線的分組欄位逐字是 `group`，不是 jp-1 的 `g`）
+輸出：`desc-tools/batches/research/c183-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含開頭「雲端 Blue Note 線的三處例外」：產出直接寫進 repo、每張 8–12 條 `facts` ＋ 完整 https `src`、`key` 從卡單逐字複製、`status` 與 `coverage` 並存），
+判準照 `batch-progress/c183/rulings.md` 策展兩組全檔（**正文事實以 5656–5715 為準**）＋ `CURATION-BRIEF-jp1.md` 第〇節與 `CURATION-BRIEF-bluenote-post1985.md` 附錄二
+＋ 主線第 1934-B 至 1954-B 條，查證手法沿用 `c178/rulings.md` 研究層兩段（4776–4805／4806–4835）。
+
+## 5776　總表：**5 張、facts 合計 60 條（每張恰好 12 條）、full 5、thin 0；推翻策展層 6 處、補格 4 處、結掉未決 1 處**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---|---|---:|---|---|
+| 1 | 渡辺貞夫 —《Bossa Best Collection》 | 12 | full | ⚠ ⚠ **同一場 1967 年 6 月錄音的第二張 LP 在 RCA、自成一個 master 七版**（見 5778）；**推翻 Berklee 時序與編制人數兩處** |
+| 4 | 増尾好秋 —《Winds Of Barcelona》 | 12 | full | ⚠ ⚠ **年齡錯四歲（26→22）**；**結掉「増尾好秋 與 増尾元章 是不是同一人」——是兄弟**（見 5783） |
+| 9 | 宮沢昭 / 前田憲男 / 原田政長 / 富樫雅彦 —《Musical Play In Jazz》 | 12 | full | ⚠ ⚠ **Discogs 的作曲欄把末軌掛給一個 2002 年才寫那齣戲的人**（見 5786）；**系列號逐字是 Vol.1** |
+| 16 | 渡辺貞夫 —《Live at the Junk》 | 12 | full | ⚠ ⚠ **打鼓的 渡辺文男 是領銜者的親弟弟**（見 5795） |
+| 17 | 渡辺貞夫 —《Round Trip》 | 12 | full | ⚠ ⚠ **他在本盤上不吹中音薩克斯**（見 5792）；**Minucci 不只是監修，末軌有他的鋼琴**（見 5793） |
+
+**thin 0 張。** `src` 的相異網域數：三張 2 家（Discogs ＋ ja 維基）、兩張 3 家（另加 en 維基）；**五張全部至少 2 個 HTTPS 來源，manifest gate 的硬性要求逐張過。**
+⚠ **本組沒有用到 WebSearch**，全程走 `api.discogs.com`（releases／masters／versions／artists／labels／database search）、`musicbrainz.org/ws/2`、`ja.wikipedia.org` 與 `en.wikipedia.org` 的 API。
+
+---
+
+## 5777　⚠ 再發版本數：**4 筆有 master 頁的收件逐筆重跑完整 `versions`，數字 4/4 相符、改判 0；但「數字對不等於內容全」在本組應驗，而且中在最該中的那一張**
+
+| # | 盤 | master | 卡單第 5673 條記 | 本層重跑 | 差 |
+|---:|---|---:|---:|---:|---:|
+| 1 | Bossa Best Collection | **無 master 頁** | —（資料庫裡只有 2 筆） | —（`master_id` 逐字 0，確認無表可跑） | — |
+| 4 | Winds Of Barcelona | 1148794 | 5 | **5** | 0 |
+| 9 | Musical Play In Jazz | 1727677 | 4 | **4** | 0 |
+| 16 | Live at the Junk | 632749 | 7 | **7** | 0 |
+| 17 | Round Trip | 299422 | 18 | **18**（兩頁逐筆跑完） | 0 |
+
+→ **c-176 a 第 4317 條、c-177 a 第 4567 條、c-178 a 第 4777 條的結論在本批第四次成立**：策展層自己跑完版本表之後，研究層重跑就是純覆核。
+⚠ **`released` 欄為 0 的版本本層逐筆確認**：#16 兩筆（SOPM 180、18AH 1562）、#17 兩筆（18AH 1564、美國 VMD-79344）——**計入版本數，年份不可引用**，與卡單一致。
+⚠ ⚠ **但派工信第二節警告的形狀本組中了一次，見下一條。**
+
+---
+
+## 5778　⚠ ⚠ **本組最重要的發現：`渡辺貞夫《Bossa Best Collection》` 的「資料庫裡只有這兩筆」在內容上是不完整的——同一場 1967 年 6 月錄音的第二張 LP 在 RCA，自成一個 master、七版做到 2007 年**
+
+卡單 `curatorRisk` 逐字寫「**本盤 1998 年後有沒有 CD 復刻，Discogs 與 MB 兩邊都查不到，正文不要碰再發這件事**」。**查得到，只是掛在另一個盤名下。**
+
+**逐字證據**：
+- **`渡辺貞夫《The Girl From Ipanema》`（RCA `RGP-1152`，1974，releases/5288368）** 的說明欄逐字「**Recorded in June, 1967.**」，發售元逐字「ビクター音楽産業株式会社」；
+  **credits 逐名六人：Sadao Watanabe（Flute, Alto Saxophone）、Masabumi Kikuchi（Piano）、Sadanori Nakamure（Guitar）、Masanaga Harada（Bass）、Masahiko Togashi（Drums）、Hideo Miyata（Percussion）**。
+- **十軌裡八軌與本盤逐字重複**（The Girl From Ipanema／Fly Me To The Moon／Once I Loved／Coisa Mais Linda／Favela（該盤寫成 Favera）／O Morro／Maria Ninguem／Voce E Eu），
+  **剩下兩軌換掉**：本盤的〈White Waves〉〈Long Night〉→ 該盤的〈The Shadow Of Your Smile〉〈Un Homme Et Une Femme〉。
+- **Discogs master 547114 的 `versions` 逐筆跑完共 7 版**：1974 `RGP-1152`、1977 「日本のJazz 1500」`RVL-5519`、1980 `PG-1502` 兩筆（市售＋Promo）、1997 `BVCJ-7421`、2007 「日本のジャズ・ジャイアンツ」`BVCJ-37582` 兩筆（說明欄逐字「K2 24 BIT MASTERING」）。
+- **日文維基把它列在渡辺的リーダー作品 欄、標「（1967年6月録音）」而排在 1974 年**，編制逐字與本盤那一筆相同。
+
+**本層的處置**：**不寫成「本盤的再發」**（兩張有兩軌不同、Discogs 是兩個獨立 master、廠牌從テイチク 系跳到ビクター／RCA 系），
+**只在 facts 裡寫成「同一批 1967 年 6 月的錄音後來以另一個盤名進了 RCA 的目錄」，並把八軌重複與七版的事實逐項寫明。**
+⚠ ⚠ **這是本線第四次撞到「Discogs 的版本表自己不完整」，但形狀是新的**：前三次是「原廠通販有、Discogs 沒建」（c-176 b 第 4364 條、c-178 a 第 4777 條的 `COKM-44807`、派工信提到的 `miqqe.jp` 配信限定盤），
+**本次是「Discogs 建了，但建在另一個盤名的 master 下，從本卡的 master 頁（而且本卡根本沒有 master 頁）完全看不到」。**
+→ **立操作提醒：`master_id` 逐字為 0 的碟，除了照第 1879-B 條寫「資料庫裡只有這幾筆」，還要拿「錄音年月 ＋ 編制名單」去 `database/search` 掃一次同一位藝人的其他盤名。**
+（可逆性：改的是 facts 的一條與 notes，不動卡池結構。）
+
+---
+
+## 5779　⚠ ⚠ 由 5778 衍生的重複卡登記：**`渡辺貞夫《The Girl From Ipanema》` 日後若上架，與本卡八軌重複**
+
+**六道 dedup 一道也抓不到**：盤名不同、rgMbid 不同（RCA 那張在 MB 上是另一個 RG）、掛名相同但盤名詞元零交集、目錄號不同。
+**唯一能抓到的鍵是「錄音年月 ＋ 逐軌曲題交集」**，而那不是任何現有腳本的比對維度。
+→ **登記進人工清單**：`渡辺貞夫《Bossa Best Collection》1967（Union UPS-1001-J）` ←→ `渡辺貞夫《The Girl From Ipanema》1974（RCA RGP-1152）`，**兩者同場錄音、八軌重複，不得同時上架**。
+⚠ **本層不動卡池、不改卡單**，照 `REMOTE_RUNBOOK.md` 的禁碰清單（`seed_cards.json`／`apex_pool.json`）只登記。
+
+---
+
+## 5780　⚠ ⚠ 推翻策展層第一處：`《Bossa Best Collection》` 的 Berklee 時序寫反了
+
+卡單 `curatorWhy` 逐字寫本盤「**是他離開日本赴 Berklee 前後這段 Union 時期的錄音**」。
+
+**逐字來源兩處**：日文維基 渡辺貞夫 條目逐字「**1962年に、アメリカ合衆国・マサチューセッツ州ボストン市に構える名門音楽学校、バークリー音楽院に留学した**」「**1965年に帰国後、多くの内外ミュージシャンと共演し**」；
+Discogs 藝人頁 323464 的 profile 逐字「**in 1962, moved to Boston to study at Berklee College of Music**」。
+
+→ **1967 年 6 月的錄音是他回國兩年後的事，與「離開日本赴 Berklee 前後」無關。** facts 改寫成「回國後第三年的錄音」。
+⚠ **同一段另外補進 facts 的兩格（卡單沒有）**：**他在 Berklee 期間與 Chico Hamilton、Gary McFarland、Gábor Szabó 同台，並透過 Gary McFarland 認識 bossa nova**——
+**這一格在本批有交叉價值**：**同組 #16《Live at the Junk》的末軌〈Granny\'s Samba - Ending Felicidade〉的作曲欄逐字就有 Gary McFarland**（releases/3842716）。
+
+---
+
+## 5781　⚠ 推翻策展層第二處：`《Bossa Best Collection》` 的「credits 逐名五人」要改成「盤面列五人、同場另有一位打擊」
+
+卡單 `curatorWhy` 逐字「Discogs releases/4417430 的 credits 逐名五人，**全部是日本樂手**」。**Discogs 原壓確實只列五人，但這一場的第六人是 宮田英夫。**
+
+- 日文維基本盤那一筆逐字：「**渡辺貞夫(as,fl), 菊地雅章(p), 原田政長(b), 富樫雅彦(ds), 中牟礼貞則(g), 宮田英夫(cabasa)**」。
+- 同一場錄音的 RCA 盤（releases/5288368）的 credits 逐字有「**Hideo Miyata = Percussion**」。
+- **宮田英夫 的 Discogs 藝人頁 1031487 的 `realname` 逐字是「宮田英夫 (Miyata Hideo)」、profile 逐字「Japanese multi-instrumentalist. Born November 23, 1943 in Suginami, Tokyo.」。**
+
+→ **下游不得寫成「五人編制」。** ⚠ **同一位 宮田英夫 在本組 #4《Winds Of Barcelona》上吹長笛**——**跨卡串連點，見 5801。**
+
+---
+
+## 5782　⚠ ⚠ 推翻策展層第三處：`增尾好秋《Winds Of Barcelona》` 的年齡錯四歲
+
+卡單 `curatorRisk` 的行文限制逐字寫「**這是他 26 歲時的領銜首作**」。
+
+**逐字來源兩處**：日文維基逐字「**増尾 好秋（ますお よしあき、1946年10月12日 - ）**」；Discogs 藝人頁 965286 的 profile 逐字「**born 12 October 1946 in Tokyo, Japan**」。
+**盤面的兩個錄音日是 1969 年 2 月 19 日與 5 月 1 日**（releases/13434683 的 notes 逐字），**兩次他都是 22 歲**；26 歲要到 1973 年。
+
+→ **正文一律寫 22 歲。** ⚠ **這一處要記的不是錯本身，而是它在下游的殺傷力**：卡單的「26 歲的領銜首作」是可以直接被寫作層當成 hook 用的句子，**而 hook 是最不會被回頭覆核的一層**。
+
+---
+
+## 5783　⚠ ⚠ 結掉策展層留下的未決：**`増尾好秋` 與池中 `増尾元章` 是兄弟，不是同一人**
+
+卡單 `curatorRisk` 逐字寫「池中 c-179 有 `増尾元章《Natural Mind》1982`——**與本卡的 `増尾好秋` 是兩個不同的字串，本層未查證是不是同一人，不合併、不改寫**」。
+
+**日文維基 増尾好秋 條目逐字**：「**東京都中野区出身。父はジャズ・ピアニストの増尾博、弟はギタリストの増尾元章。**」
+
+→ **兩人是兄弟（好秋 是兄、元章 是弟），父親是爵士鋼琴手 増尾博。**
+**兩個字串必須並存、不得收斂**——**第 3775 條的收斂在本筆確定不成立，策展層的處置正確，只是現在有來源了**（第 964／196／197 條「人名字串可以並存」）。
+⚠ ⚠ **順帶給後面批次**：**`増尾博`（父，爵士鋼琴手）是本線可能還會撞到的第三個 増尾**，池中目前 0 列。
+
+---
+
+## 5784　⚠ 降級（不是改判）：`《Winds Of Barcelona》` 的「四軌原創」在四個版本的盤面上都查不到
+
+卡單 `curatorWhy` 逐字寫「**四軌是本盤的原創器樂曲（同名主題曲首尾兩版、向 Wes Montgomery 致意的〈One For Wes〉、〈Gary\'s Tune〉），四軌是當時最新的英美流行曲的器樂改編**」。
+
+**本層逐版點過四個版本的 `tracklist` 與整筆 `extraartists`**：1969 原壓（13434683）、1973 `SOPM-186`（16102278）、2007 SACD `SICP-10042`（12950316）、2014 CD `SICP 4291`（9963083）
+——**四筆逐軌都沒有任何 `Composed By`／`Written-By` 欄，整筆的 `extraartists` 也沒有作曲列。**
+
+→ **facts 只寫可考的那一半**：四軌是 1966–68 年英美流行曲的器樂改編（〈Scarborough Fair〉、Laura Nyro〈Stoned Soul Picnic〉、Bacharach 與 Hal David 的兩首）；
+**另外四軌一律不寫成「原創」、也不寫成「翻奏」**；**〈One For Wes〉的題意（向 Wes Montgomery 致意）同樣無來源支撐，本層整格不寫。**
+⚠ ⚠ **這一條要上呈的理由**：**第 5701 條把收退分界定在「乙（既有的非爵士曲目）＞曲目總數一半」，而本盤被算成 4 甲／4 乙、正好落在收的那一邊**
+——**可是那 4 甲是「盤面查不到作曲者」而不是「盤面寫著原創」。** 本層不動收退（曲風那一關另有 `styles` 兩項全在爵士側等獨立依據），**只請主線知道這個數字的來源強度。**
+
+---
+
+## 5785　⚠ 「領銜首作」逐項重核（照 c-178 第 4782 條「第幾張一律回打藝人頁按年排開」）：成立
+
+**Discogs 把這張碟的掛名建成一個獨立的團名實體**，所以按年排開必須跑兩個頁面：
+- **`Yoshiaki Masuo And His Group`（artist 5153967）**：`releases?role=Main&sort=year` 只回 **1 筆**，就是本盤（1969，master 1148794）。
+- **`Yoshiaki Masuo`（artist 965286）**：最早的領銜作是 **1970 年的 master 758114《24》**，其後是 1975《111 Sullivan Street》、1978《Sailing Wonder》⋯
+- **日文維基的「リーダー・アルバム」欄第一筆逐字是「『バルセロナの風』 - Winds of Barcelona（1969年）」。**
+
+→ **兩個實體合起來看，1969 年的本盤是最早的領銜作，「首作」成立。**
+⚠ ⚠ **兩家對第二張的年份不一致，本層兩邊都不寫進 facts**：**《24》Discogs 記 1970、日文維基記 1971。**
+⚠ ⚠ **另記一格給 #17**：**《24》的曲目裡有一首曲題逐字是〈Round Trip:Coming〉**（master 758114），
+**而本組 #17《Round Trip》的 A1〈Round Trip: Going & Coming〉的 `Written-By` 逐字是 Sadao Watanabe 與 Yoshiaki Masuo 兩人**。**同一個曲名在兩位樂手 1970 年的兩張碟上，見 5801。**
+
+---
+
+## 5786　⚠ ⚠ 推翻策展層第四處，本組最硬的一處：**`《Musical Play In Jazz》` 末軌的 Discogs 作曲欄是錯的**
+
+卡單 `curatorWhy` 把逐軌 `Music By` 照抄成「⋯Leonard Bernstein・**Jeanine Tesori**」。**Discogs releases/17447461 的 B5〈Thoroughly Modern Millie = モダン・ミリー〉逐字確實掛著「Jeanine Tesori=Music By」，而那是錯的。**
+
+**逐字來源兩處**：
+- 英文維基《Thoroughly Modern Millie (musical)》逐字「**a musical with music by Jeanine Tesori, lyrics by Dick Scanlan**⋯**the show opened on Broadway on April 18, 2002**⋯**won six 2002 Tony Awards, including Best Musical**」。
+- 英文維基《Thoroughly Modern Millie》（**1967 年電影**）逐字「**The soundtrack interpolates new songs by Jimmy Van Heusen and Sammy Cahn ("Thoroughly Modern Millie", "The Tapioca")**」，並記該片「**was nominated for seven Academy Awards and five Golden Globe Awards**」。
+
+→ **1969 年的唱片不可能演到 2002 年才寫出來的曲子。這一軌的作曲是 Jimmy Van Heusen、作詞 Sammy Cahn。**
+**下游引用逐軌作曲時一律改寫，不得沿用卡單。**
+⚠ **這是派工信第四節「Discogs 的作曲欄會錯，作曲不是它的強項，要交叉驗」的第三個實例**（前兩個是 c-175 的〈Something〉與〈ガソリン・アレイ〉）——
+⚠ ⚠ **而本例的形狀是新的**：前兩個是「掛給錯的人」，**本例是「掛給一個在錄音年還沒寫出這首曲子的人」，也就是時序錯置**。
+→ **立操作提醒：逐軌作曲欄裡出現的人名，只要是 1980 年以後才出道的創作者、而碟是 1970 年代以前的，一律回查該曲的原始出處。**
+
+---
+
+## 5787　⚠ 補上策展層漏掉的第一格：**`Japanese Top Jazz Men Series` 的系列號逐字是 `Vol.1`**
+
+卡單只寫了系列名（`curatorWhy` 逐字「為 Union Records「Japanese Top Jazz Men Series」錄的百老匯曲目盤」），**沒有寫它是這條系列的第一張**。
+**Discogs releases/17447461 的 `series` 欄逐字是 `{"name":"Japanese Top Jazz Men Series","catno":"Vol.1"}`。**
+
+⚠ **系列頁（labels/1571555）的 profile 逐字是「日本ジャズメン・シリーズ」，`releases` 逐筆列出的同系列成員**：
+| 目錄號 | 盤 | 年 |
+|---|---|---:|
+| **UPS-2005-J** | **《Musical Play In Jazz》＝本卡（系列 Vol.1）** | 1969 |
+| UPS-2006-J | `山本邦山《Harlem Nocturne = ハーレム・ノクターン》` | 1969 |
+| UPS-2008-J | `宮沢昭 / 佐藤允彦 / 富樫雅彦 / 荒川康男《Four Units》`（＝第 5665 條撞池退件那一張） | 1969 |
+| UPS-2010-J | `高柳昌行 と ニュー・ディレクションズ《Independence: Tread On Sure Ground》` | 1970 |
+| UPS-2015-J | `杉本喜代志 / 川崎燎 / 増尾好秋 / 高柳昌行《Guitar Workshop》`（＝**b 組的卡**） | 1970 |
+
+⚠ ⚠ **兩件要給後面批次**：
+1. **`UPS-2006-J` 在 Discogs 上是 `山本邦山《Harlem Nocturne》1969`**，**而第 5667 條引的先例逐字是「c-173 收的 `村岡実《Harlem Nocturne》1967`」**——**同題不同人不同年，兩張是兩張碟**。**引用第 5667 條的先例時不要把這兩張弄混。**
+2. **第 5665 條追問的「MB 那筆的 catno `SUP 1007` 從哪來」有答案了**：**同系列的 2020 年復刻（Discogs 目錄號欄逐字「LTJC-010, UPS-2008-J, SUP 1007」）**——**`SUP 1007` 是後來某一版帶的號，被 MB 倒掛回原壓那一筆。**
+
+---
+
+## 5788　⚠ 補上第二格：**`前田憲男` 盤上的「Keyboards」是什麼，2007 年的復刻寫明了——Electric Organ [Electone]**
+
+1969 原壓（releases/17447461）的 credits 逐字只有「Norio Maeda — Piano, Keyboards, Arranged By」。
+**2007 年 Think! Records 的復刻（releases/12979125，系列欄逐字「昭和ジャズ復刻シリーズ」與「Japanese Jazz Classics Union Records」）逐字是「Norio Maeda = Piano, Electric Organ [Electone], Arranged By」。**
+
+→ **那是 Yamaha 的電子管風琴（Electone）。1969 年的 hard bop 盤上出現 Electone 是可寫的細節，卡單整格沒有。**
+⚠ **順帶記下這條復刻系列**：**`Think! Records` 的「Japanese Jazz Classics Union Records」是專門復刻 Union 爵士目錄的系列**——**本線的 Union 批次還會反覆撞到它，而且它的 credits 比 1969 原壓細。**
+
+---
+
+## 5789　⚠ ⚠ 掛名的一個反向資料點：**日文維基把《Musical Play In Jazz》列在 `宮沢昭` 的「リーダー作品」欄；本層仍維持第 5675 條的四方聯名**
+
+**日文維基 宮沢昭 條目的「リーダー作品」欄逐字**：「『山女魚』（1962年）キング／『ナウズ・ザ・タイム』（1967年）タクト／**『ミュージカル・プレイ・イン・ジャズ』（1969年）テイチク**／『FOUR UNITS』（1969年）テイチク／『いわな』（1969年）ビクター⋯」
+
+→ **也就是說有第三方把本盤當成 宮沢昭 的領銜作，不是四方對等聯名。**
+**但 MB（四個 Person 的對等 artist-credit、country 全 JP）與 Discogs（盤面題四人同序羅馬字並列）兩家都判成四方對等，兩票對一票**，
+**本層維持策展層第 5675 條的 `宮沢昭 / 前田憲男 / 原田政長 / 富樫雅彦`**，只把這個反向資料點記在這裡供主線覆核。
+⚠ **可逆性**：改的是卡單的 `artist` 值，不動卡池結構。**若主線改判成單人，本層的反對理由與第 5675 條相同，另加一條：`原田政長` 在池中是 0 列，收斂掉他等於讓這位 1933 年生的貝斯手在整個卡池裡零出現。**
+
+---
+
+## 5790　⚠ ⚠ `富樫雅彦` 1970 年 1 月那道分界：**兩個來源的成因不同，facts 採克制寫法、只寫結果與時序**
+
+**日文維基 富樫雅彦 條目逐字**：「**1970年1月、富樫の浮気が原因で、妻に背中をナイフで刺され脊椎を損傷、下半身不随となるが、5月にはスイングジャーナル誌の読者人気投票でドラマー部門の第1位に輝く**」「**約3年半後の1973年7月7日には⋯ステージ復帰を果たす**」；
+同條目另逐字列出他 **1969 年一年之內連錄的六張**（ヴァリエーション／パラジウム／トランスフォーメイション／デフォメイション／フォー・ユニッツ／いわな／ウィ・ナウ・クリエイト／スピード・アンド・スペイス／アイソレーション），
+並逐字說 12 月的《アイソレーション》「**これは富樫が両手両足でドラムを演奏した最後のアルバムとなる**」。
+**Discogs 藝人頁 863918 的 profile 逐字只寫「In January 1970, Togashi lost the use of his legs in an accident」——把成因寫成「意外」。**
+
+→ **facts 的寫法**：「1970 年 1 月他背部被刺傷、脊椎受損導致下半身癱瘓，此後不再能用雙腳打鼓，要到 1973 年 7 月 7 日才重新登台。本盤這一批 1969 年的 Union 錄音，落在那道分界之前。」
+**不寫成因（外遇）、不渲染細節**——依 `research-base.md` 的「逝者克制＝不渲染細節、不是跳過事實」與反向禁令「與作品直接綁定者可寫，但必須標明時序」。
+⚠ **兩來源成因不同這件事本身記在 notes，不進 facts。**
+⚠ **同一位 富樫雅彦 也是本組 #1《Bossa Best Collection》（1967）的鼓手**——**本層刻意只在 #9 寫這道分界，#1 不寫**（1967 離那道分界還有兩年半，而且三張渡辺卡與本卡要反同構，見 5800）。
+
+---
+
+## 5791　⚠ `前田憲男` 的獎項有一處來源自我矛盾，本層只採用一致的兩項
+
+**日文維基 前田憲男 條目逐字**：「**1981年に東京音楽祭「最優秀編曲賞」、1983年に第20回日本レコード大賞「最優秀編曲賞」・ジャズ界の最高位に価する「南里文雄賞」、2008年にレコード大賞「功労賞」、2015年に第6回岩谷時子賞・特別賞を受賞。**」
+
+⚠ **「1983年に第20回日本レコード大賞」屆次與年份對不上**——**第 20 屆日本唱片大賞是 1978 年**。
+→ **facts 只寫該句裡年份與獎項一致的兩項**：**1981 年東京音楽祭最優秀編曲賞、1983 年南里文雄賞，並照 `research-base.md` 的獎項規則逐項標明「兩項都是得獎」。**
+**日本レコード大賞 那兩項（最優秀編曲賞、功労賞）整格不寫。**
+⚠ **本組其餘三處獎項也逐項分了入圍與得獎**：1967 年電影《Thoroughly Modern Millie》**入圍**七項奧斯卡與五項金球（未寫得獎）；2002 年舞台版**得獎**六座東尼獎含最佳音樂劇；《Sweet Charity》**入圍**九項東尼、**得獎**一項（最佳編舞）；Ulpio Minucci 1964 與 1965 兩度**入圍**艾美獎（兩次都是入圍）。
+
+---
+
+## 5792　⚠ ⚠ 推翻策展層第五處：`《Round Trip》` 的 渡辺貞夫 **不吹中音薩克斯**
+
+卡單 `curatorWhy` 開頭逐字寫「**渡辺貞夫（中音薩克斯・長笛）**」。**本盤上沒有任何來源說他吹中音。**
+
+| 來源 | 逐字 |
+|---|---|
+| 1970 日本原壓 releases/1407755 | `Sadao Watanabe = Saxophone, Flute`（**沒有 Alto**） |
+| 1974 美國 Vanguard `VSD 79344` releases/15051334 | **`Sadao Watanabe = Soprano Saxophone, Flute`** |
+| 日文維基 渡辺貞夫 條目 | **「渡辺貞夫(fl,sn)」**（sn＝sopranino） |
+| **對照組**：同批 #16《Live at the Junk》releases/3842716 | **`Sadao Watanabe = Alto Saxophone, Sopranino Saxophone`** |
+
+→ **同一位樂手、同一家資料庫、同一批工作階段查的兩張碟，一張明寫 Alto、一張刻意不寫——那不是漏填。**
+**正文一律不得寫成中音薩克斯**；要寫樂器就寫高音薩克斯與長笛，或只寫薩克斯與長笛。
+⚠ **`Soprano` 與 `sopranino` 兩個來源之間還有一級差別，本層在 facts 裡逐源標明是哪一邊說的，不自行統一。**
+
+---
+
+## 5793　⚠ ⚠ 推翻策展層第六處：**`Ulpio Minucci` 不只是監修——末軌有他的鋼琴，而那一格只存在於逐軌 credits 裡**
+
+卡單 `curatorWhy` 逐字把他列成「監修 Tatsu Nozaki 與 Ulpio Minucci」。
+
+**逐字證據三處**：
+- **1970 原壓 releases/1407755 的 B2〈Sao Paulo〉逐軌 `extraartists` 逐字有「Ulpio Minucci = Piano」**（專輯層他的掛牌是 `Supervised By`，與 `Tatsu Nozaki` 並列）。
+- **1974 美國 Vanguard releases/15051334 把他的 Piano 提到專輯層**，逐字「Ulpio Minucci = Piano」＋「Ulpio Minucci = Supervised By」兩行並存。
+- **日文維基把他直接算進編制**：逐字「渡辺貞夫(fl,sn), チック・コリア(p, el-p), **ウルピオ・ミニッツィ(p)**, ミロスラフ・ヴィトウス(b), ジャック・ディジョネット(ds)」。
+
+→ **這正是 `CURATION-BRIEF-bluenote-post1985.md` 附錄二第 3 點說的位置**：「主故事只存在於整筆的 `extraartists` 或逐軌 `written-by`」。**策展層跑了整筆，但沒有逐軌讀。**
+⚠ **他的身分本層另外查清楚了**（Discogs 藝人頁 827025）：**1917 年 6 月 29 日生於義大利 Campobello di Mazara、後來成為美國作曲家，在羅馬 Santa Cecilia 音樂院進修、畢業於巴勒摩音樂院，1964 與 1965 年兩度以 ABC 的《Saga of Western Man》入圍艾美獎。**
+⚠ **他 1985 年替《Robotech》寫主題曲與配樂那一格與本作無關，照反向禁令整格不寫。**
+
+---
+
+## 5794　⚠ 補上第三、四格：`《Round Trip》` 的兩位錄音師與封面那一行
+
+**releases/1407755 的 credits 逐字另有兩位卡單整格沒有的人**：**`Arthur Kendy`（anv 逐字 `Arther Kendy`）＝ Engineer、`Mike Consi` ＝ Engineer**——**兩位美國錄音師，與紐約 Allegro Sound Studio 相符。**
+**同一筆的 notes 逐字另有一行「Cover Photo: Shohnen Magazine」**，而 credits 裡 **`Kiyoshi Itoh` 逐字是「Producer, Photography By [Photograph]」、`Mitsuru Yamada` 是 Design**。
+
+→ **facts 補進兩位錄音師與封面那一行。**
+⚠ **外國藝人那一關（第 5680 條判四項 4/4 在日本側）本層的事實與它相符、不推翻**：
+**在日本側的是領銜（盤面單人）、作曲（四軌全掛他，一軌與 増尾好秋 共作）、企劃（製作兼攝影 伊藤潔、監修 Tatsu Nozaki、設計 山田充、原盤 CBS/Sony 東京）；在外國側的只有錄音地、兩位錄音師與三位伴奏。**
+**美國 Vanguard 版要到 1974 年才出、比日本原壓晚四年**，版本表逐筆可查。
+
+---
+
+## 5795　⚠ ⚠ 本組的新事實（策展層整格沒有）：**`《Live at the Junk》` 的鼓手 渡辺文男 是 渡辺貞夫 的親弟弟**
+
+卡單 `curatorWhy` 只把他列成「Fumio Watanabe（Drums ＝渡辺文男）」。
+
+**逐字來源兩處**：
+- **日文維基 渡辺貞夫 條目逐字**：「**ちなみに、妹はジャズシンガーのチコ本田、弟はジャズドラマーの渡辺文男、娘に絵本作家の渡辺眞子がいる。**」
+- **Discogs 藝人頁 1086541 的 `realname` 逐字「渡辺文男」、profile 逐字「Japanese jazz drummer. Born December 29, 1938 in Utsunomiya, Tochigi, Japan.」**
+  ——**而 渡辺貞夫 逐字是「栃木県宇都宮市出身」，兩人同一個城市。**
+
+→ **一張 1969 年底的小俱樂部四重奏實況，節奏組的鼓是領銜者的弟弟。** facts 逐條寫進 #16。
+⚠ ⚠ **同一位 渡辺文男 也在本組 #4《Winds Of Barcelona》打鼓**——**兩張卡的引用必須帶年份與掛名（見 5801）。**
+⚠ **他 2024 年 3 月 24 日辭世那一格與本作無關，照反向禁令整格不寫。**
+⚠ **妹妹「チコ本田」是全片假名＋漢字的混合寫法，本層照原文寫、不羅馬化（2026-08-11 東亞藝人裁定）。**
+
+---
+
+## 5796　⚠ 人名漢字逐筆回打 `api.discogs.com/artists/<id>`：**本組定案 11 個、查不到 4 個（照第 1936-B 條整格不寫）**
+
+**這是第 1919-B 條的機制在本批的第六次連續命中，而且範圍照派工信的要求擴到製作人、錄音師、攝影、設計與解說者。**
+
+| 羅馬字 | Discogs id | 定案漢字 | 依據欄 |
+|---|---:|---|---|
+| Tadayuki Naitoh | 851933 | **内藤忠行** | `realname` ＋ profile（爵士攝影家，1941-05-30 生於東京） |
+| Kiyoshi Itoh | 406894 | **伊藤潔** | `realname` 逐字「伊藤 潔」（1946 年生於名古屋市的爵士製作人） |
+| Masamichi Okazaki | 1849553 | **岡崎正通** | `realname`（爵士評論家，1946 年生） |
+| Mitsuru Yamada | 2053935 | **山田充** | `namevariations`（日本平面設計師） |
+| Hideo Miyata | 1031487 | **宮田英夫** | `realname`（1943-11-23 生於東京杉並） |
+| Kazuo Yashiro | 826077 | **八城一夫** | `realname`（1930-02-10 生、1991-07-13 卒） |
+| Sadanori Nakamure | 661576 | **中牟礼貞則** | `realname`（1933-03-15 生於鹿兒島、1952 職業出道） |
+| Yoshio Suzuki | 1252185 | **鈴木良雄** | `realname` ＋ 綽號 Chin（1946-03-21 生於長野） |
+| Fumio Watanabe | 1086541 | **渡辺文男** | `realname`（1938-12-29 生於宇都宮） |
+| Kiyoshi Sugimoto | 777627 | **杉本喜代志** | `realname`（1942-02-03 生於靜岡） |
+| Masanaga Harada | 865608 | **原田政長** | `realname`（1933-07-06 生於東京） |
+
+**查不到、整格不寫漢字的四個**：
+| 羅馬字 | id | 情況 |
+|---|---:|---|
+| `Kennichi Handa`（#16 錄音） | 2638762 | **`realname` 與 `namevariations` 兩欄皆空、profile 空** |
+| `Kouji Amenomori`（#16 監修） | 2905368 | 只有一個變體 `Koji Amenomori`，profile 逐字「Japanese jazz producer.」 |
+| `Tatsu Nozaki`（#17 監修） | 2793009 | **兩欄皆空** |
+| `Koji Ishikawa (3)`（#4 製作） | 4821390 | ⚠ **`namevariations` 逐字有兩個互斥的漢字：`石川浩二` 與 `石川浩司`**——**無法定案** |
+| `Larry Sunaga`（#4 打擊） | 621277 | ⚠ **同時有ラリー須永 與ラリー寿永 兩種寫法**——**無法定案** |
+
+→ **五位一律只在 facts 裡以樂器或角色出現、不掛漢字名**（`Koji Ishikawa` 與 `Larry Sunaga` 連羅馬字都不寫，因為東亞音樂人依規則不得羅馬化）。
+⚠ **下游若要縮字元，`Kennichi Handa` 與 `Kouji Amenomori` 這兩格是最先該捨的。**
+
+---
+
+## 5797　⚠ 新的同名陷阱，登記給 jp-2 線：**英文維基的 `Sadao Watanabe` 是消歧義頁**
+
+`https://en.wikipedia.org/wiki/Sadao_Watanabe` 的內文逐字只有兩行：「**Sadao Watanabe (artist) (1913–1996), Japanese Christian stencil artist**」與「**Sadao Watanabe (musician), Japanese jazz saxophonist**」。
+
+→ **查英文來源時不可直接引該頁**，要走 `Sadao Watanabe (musician)`。
+⚠ **這與派工信第四節列的那批陷阱（`鈴木弘`＝游泳選手、`伏見哲夫`＝男演員、`中村誠一`＝消歧義頁、`Goin\' Home`＝消歧義頁）同形，但它在 en 維基上、不在 ja 維基上**——**本線的第一個英文維基同名陷阱。**
+⚠ **本組因此五張的樂手生平全部走 ja 維基與 Discogs 藝人頁，en 維基只用在百老匯劇目與三位外國伴奏。**
+
+---
+
+## 5798　⚠ MB 層五張逐欄重核：**與卡單 `mbNote` 100% 一致，改判 0**
+
+逐張打 `release-group/<id>?inc=artist-credits+tags+genres+releases`，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、節流 1 req/s，**全程零次 503、零次 429**。
+
+| # | RG title | frd | secondary-types | tags／genres | 轄下 release |
+|---:|---|---:|---|---|---:|
+| 1 | `Bossa Best Collection` | 1967 | 空 | `bossa nova(1)`／`jazz(1)`／`post-bop(1)` | 1（1967 JP Official） |
+| 4 | `Winds Of Barcelona` | 1969 | 空 | `jazz(1)` | 2（1969 JP `status` null、2014-10-22） |
+| 9 | `ミュージカル・プレイ・イン・ジャズ` | 1969 | 空 | `jazz(1)` | 2（1969 Official、2007-06-29 Official） |
+| 16 | `Live at the Junk` | 1970 | **`["Live"]`** | `jazz(1)`／`post-bop(1)` | 1 |
+| 17 | `Round Trip` | 1970 | 空 | `jazz(1)` | 2（1970 Official、2014-09-24 `status` null） |
+
+→ **五張的 first-release-date、primary-type、secondary-types、tags／genres、轄下 release 數與 `status` 欄逐欄與卡單相符，一處改判都沒有。**
+⚠ **`primary-type` 五張全是 Album、零筆 Compilation、零筆 EP，第 397 條在五張上都不成立**（#1 的盤名帶 Best Collection、盤面說明欄逐字「Recorded Jun. 1967.」，照主線第 1948-B 條「看錄音不看曲目」成立收件）。
+
+---
+
+## 5799　年份與盤名：**五張改判 0**
+
+- **年份**：#1 1967、#4 1969、#9 1969、#16 1970、#17 1970——**MB first-release-date、Discogs 原壓 `released`、版本表最早一版三處相符**，與第 5670 條完全一致。
+  ⚠ **#16 的錄音年（1969-12-26／27）早於發行年（1970）**，facts 逐字寫明是錄音年；**#17 錄 1970-07-15、同年發行。**
+- **盤名**：#9 取羅馬字 `Musical Play In Jazz` 的處置（第 5671 條）本層維持——**羅馬字那一邊四版逐字一致，片假名那一邊 MB 作 `ミュージカル`、Discogs 作 `ミュージッカル`，自己就寫成兩種**；
+  #16 取非全大寫的 `Live at the Junk`（Discogs 七版是 `Live At The Junk`）照池中英文盤名慣例，**兩者都不是真改判。**
+- ⚠ **#1 的 Discogs notes 另有一行「Also "Sadao Watanabe Bossa Best Collection".」**——**那是 7 吋摘錄盤 `SUW-72-J` 用的加掛名前綴題，不採。**
+
+---
+
+## 5800　⚠ 三張 `渡辺貞夫` 卡的反同構分工：**切角互斥，facts 零重複條目**
+
+派工信第五節第 5 點逐字要求「三張的 `facts` 不要三份寫成同一批事實」。**本層的分工表**：
+
+| 切角 | #1 Bossa Best Collection | #16 Live at the Junk | #17 Round Trip |
+|---|---|---|---|
+| 廠牌與產業 | **Union／テイチク 1962 代理、1967 轉自製** | CBS/Sony、`SX68サウンド`、一千八百日圓定價 | CBS/Sony ＋ 1974 美國 Vanguard 授權 |
+| 生平 | **Berklee 留學與回國、Gary McFarland 與 bossa** | **弟弟 渡辺文男（兄妹三人）** | **四週前的蒙特婁、〈Pastoral〉與移籍第一作的序位** |
+| 編制 | 五重奏、盤面五人＋同場第六人 | **無鋼琴四重奏** | **三位外國伴奏 ＋ Minucci 的單軌鋼琴** |
+| 幕後 | —（本張不寫幕後） | **内藤忠行（攝影）、伊藤潔、岡崎正通（2015 解說）** | **兩位美國錄音師、山田充（設計）** |
+| 曲目 | 巴西曲目八軌 ＋ 兩首英文題 | **逐軌作曲欄七軌全列** | **四軌全原創、A1 二十分鐘** |
+| 再發 | **RCA 孿生盤七版** | 七版、含開盤帶 | **十八版、美國同號六筆** |
+
+⚠ **三張唯一共用的兩個人名是 増尾好秋 與 伊藤潔，而兩張各寫不同的面向**（#16 寫他坐回伴奏位置、#17 寫 A1 的共同作曲）。
+⚠ **富樫雅彦 只在 #1 出現（1967 的鼓手），他 1970 年 1 月那道分界刻意放在 #9 寫**——**避免 #1 與 #9 兩張的 富樫 段落同構。**
+
+---
+
+## 5801　⚠ 跨卡串連點：**五處，下游引用一律要帶年份與掛名**
+
+1. ⚠ ⚠ **`〈Pastoral〉`**：#17 的 B1 曲題（14:45、1970-07-15 紐約錄音）**撞池中 `渡辺貞夫《Pastoral》1969`（seed ＋ c132 兩列）**——**主線第 1948-B 條第 1 點記的「曲題撞他卡盤名」，六道 dedup 抓不到。#17 的正文不得把這一軌寫成 1969 那張碟的錄音。**
+2. ⚠ ⚠ **`Round Trip` 這個曲名在 1970 年出現在兩位樂手的兩張碟上**：#17 的 A1〈Round Trip: Going & Coming〉逐字是 渡辺貞夫 與 増尾好秋 共作；**増尾好秋 自己 1970 年的《24》（Discogs master 758114）曲目裡有一首逐字叫〈Round Trip:Coming〉。**
+3. **増尾好秋**：#4 是領銜者、#16 是伴奏吉他——**兩張同一家 CBS/Sony、相隔十個月。**
+4. **渡辺文男（鼓）與 鈴木良雄（貝斯）**：**#4 與 #16 是同一對節奏組。**
+5. **原田政長（貝斯）與 富樫雅彦（鼓）**：**#1 與 #9 是同一對節奏組**；**宮田英夫** 則是 #1 的打擊與 #4 的長笛；**伊藤潔** 是 #16 與 #17 的製作人；**山田充** 是 #16 與 #17 的設計。
+⚠ **跨組（b 組）的兩處只登記、本層不動 b 組的檔**：**杉本喜代志 與 増尾好秋 同時在 b 組的《Guitar Workshop》（Union `UPS-2015-J`，1970，與 #9 同系列）**；**高柳昌行 也在同系列的 `UPS-2010-J`。**
+
+---
+
+## 5802　⚠ 來源實測（本組五張，供後面批次外推前先看年段）
+
+| 路徑 | 命中 | 備註 |
+|---|---|---|
+| `api.discogs.com/releases/<id>`（整筆 credits ＋ 逐軌 extraartists） | **5/5 絕對主力** | ⚠ **本組兩處推翻只存在於逐軌那一層**（#17 的 Minucci、#9 的作曲欄） |
+| `api.discogs.com/masters/<id>/versions` | 4/5（#1 無 master 頁） | #17 要跑兩頁（per_page=100、18 版） |
+| ⚠ `api.discogs.com/artists/<id>`（`realname`／`namevariations`／`profile`） | **本組 15 次全 200，定案漢字 11 個** | **第 1919-B 條的機制連六批命中；本組有三個人名是唯一來源** |
+| `api.discogs.com/labels/<id>`（廠牌沿革與系列成員） | **2/2，兩筆都是決定性的** | **Union 的 1962／1967 沿革、`Japanese Top Jazz Men Series` 的 Vol.1 與成員清單** |
+| `api.discogs.com/artists/<id>/releases?role=Main&sort=year` | 2/2 | **「第幾張」一律走這條（c-178 第 4782 條）；本組因掛名被建成兩個實體，要跑兩個頁面** |
+| `api.discogs.com/database/search?q=` | 1 次決定性 | **就是靠它找到 5778 那張 RCA 孿生盤的** |
+| `musicbrainz.org/ws/2/release-group` | 5/5 | **改判 0**；UA 逐字合規、零 429 |
+| `ja.wikipedia.org`（API extracts） | **4/5 而且產出極高** | **渡辺貞夫 的逐張錄音日與編制、増尾好秋 的家世與學歷、宮沢昭／前田憲男／富樫雅彦 三人的生平全在這裡；⚠ `原田政長` 無條目（pageid 逐字 -1）** |
+| `en.wikipedia.org` | 2/5（只用於百老匯劇目與外國伴奏） | ⚠ **`Sadao Watanabe` 是消歧義頁（見 5797）**；`Circle (band)` 的 `exintro` 回空字串 |
+| 原廠網域 | **0 次嘗試** | **本組五張的原壓廠牌是 Union／テイチク 與 CBS/Sony，派工信列的八個原廠網域（columbia.jp／universal-music／jvcmusic／kingrecords／miqqe.jp）一個都不對應這兩家**——**不是失效，是不適用。** |
+| Apple 店面 | **未查** | **第 5681 條已記 jp 五張 0/5、十一次查詢全 200；本層沒有要覆核的事實落在店面上，不重跑。** |
+
+⚠ **節流**：Discogs 逐次 3.2 秒、MB 與維基 1.1 秒；**全程零次 403／429／503。**
+⚠ **`allmusic`／`allaboutjazz`／`junkoonishi.com` 一次都沒有嘗試**（派工信列為禁用）。
+
+---
+
+## 5803　⚠ `desc-tools/jp-proper-names.json`：**本批 append 0 個**
+
+**本組五張的 facts 與 notes 逐字掃過**，出現的日文專名是 `ビクター音楽産業株式会社`、`陸軍戸山学校軍楽隊`、`東京フィルハーモニー交響楽団`、`東京音楽祭`、`南里文雄賞`、`モカンボ・ジャム・セッション`、`山女魚`、`いわな`、`バルセロナの風`、`昭和ジャズ復刻シリーズ`、`日本ジャズメン・シリーズ`、`ハーレム・ノクターン`、`チコ本田`、`西條孝之介とウエスト・ライナーズ`、`ミュージカル・プレイ・イン・ジャズ`。
+
+**逐個對過 `qa-batch.mjs` 的 `SIMP` 字表**：
+- **`ビクター音楽産業株式会社` 含 `会`，但它已經在白名單裡**（既有第 33 筆），**照原樣不重複加。**
+- **其餘專名一個都不含 `SIMP` 字表裡的字**（`楽`／`学`／`戸`／`団`／`県` 皆不在表內），**不會誤報。**
+- **唯一含 `国` 的字串是 notes 裡 `「1965年に帰国後」` 這個 `「」` 逐字引用**——**第 1930-B 條修好的 `stripLegit` 會剝掉 `「」` 內容，實測 `node qa-batch.mjs research c183` 零簡體標記。**
+
+→ **本批 append 0 個，既有 66 個一個都沒動。**
+⚠ **登記兩個候選給後面批次（本組沒有用到、但 Union 與 CBS/Sony 批次會再出現）**：`日本ジャズメン・シリーズ`、`昭和ジャズ復刻シリーズ`。**兩者都不含 `SIMP` 字元，加不加都不影響 QA，照「本批用不到就不加」的慣例不加。**
+
+---
+
+## 5804　交件前自跑的結果
+
+- **`node qa-batch.mjs research c183`（工作目錄 `desc-tools/`）** → 逐字「**a 5 full,full,full,full,full**」、「**⚠ key 集合與卡單不一致**」、「**總標記 1**」。
+  ⚠ **那一個標記是 b 組還沒交件造成的**（卡單 13 張＝a 5 ＋ b 8，本層只交 a 的 5 張），**照派工信第七節逐字「另一組可能還沒交，會報缺檔，那不是你的問題」。**
+  **除此之外零標記**：**`src` 不是完整 https 的 0 條、`hookCandidates` 超過 2 條的 0 張、`key` 不在卡單的 0 張、簡體字 0、非拉丁亂碼 0、半形逗號貼中文 0、千分位逗號 0。**
+  ⚠ **交件前最後一次重跑（b 組已在本層查證期間交件）逐字回「a 5 full,full,full,full,full」「b 8 full,…」「key 與卡單完全一致 ✓」「全部通過 ✓」——零標記。**
+- **自己再逐張量的結果**：
+
+| # | facts | src 全 https | 相異網域 | hookCandidates | keyTracks | status／coverage |
+|---:|---:|:--:|---:|---:|---:|---|
+| 1 | 12 | ✔ | 2 | 2 | 2 | full／full |
+| 4 | 12 | ✔ | 2 | 2 | 2 | full／full |
+| 9 | 12 | ✔ | 3 | 2 | 2 | full／full |
+| 16 | 12 | ✔ | 2 | 2 | 2 | full／full |
+| 17 | 12 | ✔ | 3 | 2 | 2 | full／full |
+
+- **`key` 逐字從卡單複製、順序與卡單 `group === "a"` 的 5 筆完全相同**（程式比對 `JSON.stringify` 相等）。
+- **獎項逐項重查過入圍與得獎的分別，四處都標了**（見 5791）。
+- **`status` 與 `coverage` 兩欄並存、同值**（照 `research-base.md` 開頭例外節第三點）。
+
+---
+
+## 5805　⚠ 給 c-184 之後的批次與主線的清單
+
+**給主線覆核的（三件，都已就地定、都可逆）**：
+1. ⚠ ⚠ **`《Winds Of Barcelona》` 的「四甲四乙」數字，甲那一半是「盤面查不到作曲者」不是「盤面寫著原創」**（5784）——**第 5701 條的門檻正好壓在一半，本盤是門檻上的第三筆。** 本層不動收退。
+2. ⚠ **`《Musical Play In Jazz》` 的掛名**（5789）：**日文維基把它列在 `宮沢昭` 的リーダー作品 欄，是第一個把它當單人領銜作的第三方來源**；MB 與 Discogs 兩家仍判四方對等，**本層維持第 5675 條。**
+3. ⚠ **`《Round Trip》` 的樂器欄**（5792）：**卡單寫的「中音薩克斯」三個來源都不支持**，下游若已照卡單寫了 hook 要一起改。
+
+**給 c-184…c-191 的操作提醒（七條）**：
+1. ⚠ ⚠ **`master_id` 逐字為 0 的碟，光寫「資料庫裡只有這幾筆」不夠**——**要拿「錄音年月 ＋ 編制名單」去 `database/search` 掃一次同一位藝人的其他盤名**（5778）。**本組因此撈出一整個七版的 master。**
+2. ⚠ ⚠ **逐軌作曲欄裡的人名，只要是 1980 年以後才出道的創作者、而碟是 1970 年代以前的，一律回查該曲的原始出處**（5786）——**Discogs 的作曲錯法多了一種：時序錯置。**
+3. ⚠ ⚠ **策展層跑過整筆 credits 不等於跑過逐軌 credits**（5793）——**Minucci 的鋼琴只在 B2 那一行裡。這是附錄二第 3 點的第二種位置。**
+4. ⚠ **`artists/<id>/releases?role=Main&sort=year` 在本線要跑不只一個實體**（5785）——**Discogs 常把「某人 and His Group」建成獨立實體，本人的頁面就看不到那張碟，序數會整個算錯。**
+5. ⚠ **`labels/<id>` 的 `profile` 與 `series` 兩欄在本線是被低估的來源**（5787／Union 的 1962／1967 沿革）——**jp-2 的十五家小廠，廠牌沿革與系列號常常只在這裡。**
+6. ⚠ **en 維基的 `Sadao Watanabe` 是消歧義頁**（5797）——**本線第一個英文維基同名陷阱，日本樂手查 en 維基前一律先確認是不是消歧義頁。**
+7. ⚠ **原廠網域那八個對 Union／テイチク 與 1960 年代 CBS/Sony 完全不適用**（5802）——**不是失效，是這兩家沒有那種作品頁。後面的 Union／Trio／Frasco 批次不要把時間花在猜商品頁上。**
+
+**給本機的（不在雲端做）**：
+- ⚠ ⚠ **`渡辺貞夫《The Girl From Ipanema》1974（RCA RGP-1152）` 與本卡 `《Bossa Best Collection》1967` 是同一場 1967 年 6 月錄音、十軌裡八軌重複**（5778／5779）——**六道 dedup 一道也抓不到。上傳時人工看一眼，並且日後若有人要上那張 RCA 盤，要先看這一條。**
+
+**編號區間結算**：本節用到 **5776–5805（共 30 條），區間用滿。b 組研究層用 5806–5835。**
+
+---
