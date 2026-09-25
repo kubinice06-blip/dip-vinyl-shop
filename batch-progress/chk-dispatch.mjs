@@ -9,7 +9,8 @@
 //   2. 批次號有沒有殘留上一批的；
 //   3. 「你負責 X 組」與組別參數一致；
 //   4. 裁定條號區間有沒有與「另一組用」的區間重疊；
-//   5. ⚠ 2026-09-25（主線第 1964-B 條，派工信第十五次出錯）：**張數與 hook 舉例是不是對方那一組的**。
+//   5. ⚠ 2026-09-25（主線第 1964-B 條，派工信第十五次出錯）：**張數與 hook 舉例是不是對方那一組的**；
+//   6. ⚠ 2026-09-25（主線第 1970-B 條）：**本批的 rulings.md 在派工前就要存在**（並行覆寫過一次）。
 //      c-183 writer-2 的信裡 §二 逐字寫「本組五張的 hook 有四張是代稱開頭」並列了四個 a 組的 hook
 //      ——**我用 `.replace()` 換那一段而字串沒對上，整段靜靜留著 a 組的內容**（第三次同一種失效）。
 //      這一道用實際檔案的張數與 hook 原文回比，不靠我自己記得有沒有換到。
@@ -108,5 +109,16 @@ if (theirsRows && mine) {
     && !(!/[぀-ヿ一-鿿]/.test(q) && q.length <= 5) && !deliberate(q));
   for (const q of wrong) warn(`舉例 \`${q}\` 逐字出現在對方那組（${theirsRows.f}），自己這組沒有`);
   if (!wrong.length) console.log(`  反引號舉例 ${quoted.length} 個，沒有一個是對方那組的 ✓`);
+}
+// 6. ⚠ 2026-09-25（主線第 1970-B 條）：**本批的 rulings.md 必須在派工前就存在**
+//    ——c-185 的 b 組 30 條被並行的 a 組整份蓋掉，成因是兩組各自「建立」同一個檔。
+const rp = `batch-progress/${batch}/rulings.md`;
+if (!fs.existsSync(rp)) warn(`${rp} 還不存在——**派工前先跑 `+'`node batch-progress/new-rulings.mjs`'+`**，不要讓兩支代理各自建檔（第 1970-B 條）`);
+else {
+  const t = fs.readFileSync(rp, 'utf8');
+  const heads = (t.match(/^## \d+/gm) || []).length;
+  console.log(`  ${rp} 已存在（${heads} 條裁定）✓`);
+  if (mineRange && !new RegExp(`${mineRange[1]}[–-]${mineRange[2]}`).test(t))
+    console.log(`  （只報不擋）rulings.md 的檔頭沒有寫到本組區間 ${mineRange[1]}–${mineRange[2]}`);
 }
 console.log(bad ? `\n標記 ${bad}` : '\n全部通過 ✓');
