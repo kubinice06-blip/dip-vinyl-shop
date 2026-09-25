@@ -30,7 +30,13 @@ for (const b of process.argv.slice(2)) {
         const nv = norm(v);
         if (nv.length < 3) continue;
         if (na === nv) { how = '等值'; break; }
+        // ⚠ 2026-09-25（c-183 與 c-184 連兩批各漏掉真撞池，主線第 1955-B 條）：
+        // 這一道原本**只做單向**（池中掛名以 slice 變體為前綴），
+        // 於是反過來那一邊整個掃不到——slice 的 `坂田明トリオ`／`富樫雅彦カルテット`
+        // 對上池中的 `坂田明`／`富樫雅彦`，**其中一筆撞的是 apex 卡**。
+        // 兩個方向都比。
         if (nv.length >= 4 && hasCJK(v) && na.length > nv.length && na.startsWith(nv)) { how = how || '前綴'; }
+        if (na.length >= 4 && hasCJK(v) && nv.length > na.length && nv.startsWith(na)) { how = how || '前綴（反向）'; }
         // 第三道：本名（要有漢字、夠長）出現在池中聯名字串裡
         // ⚠ 2026-09-22（c-182 a 組抓到，主線第 1944-B 條）：這一道原本要求 `hasCJK(v)`，
         // 於是**純羅馬字的掛名整個掃不到**——池中的 `John Kaizan Neptune / 直居隆雄` 這種

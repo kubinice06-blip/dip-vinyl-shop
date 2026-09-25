@@ -85,8 +85,28 @@
    "Haruomi Hosono and The Yellow Magic Band"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
-   "artistAlbumsInPool": []
+   "status": "⚠ 確定撞池——退",
+   "hit": [
+    "seed｜細野晴臣｜はらいそ｜1978"
+   ],
+   "artistAlbumsInPool": [
+    "seed｜細野晴臣｜Hosono House｜1973",
+    "seed｜細野晴臣｜Philharmony｜1982",
+    "seed｜細野晴臣｜Tropical Dandy｜1975",
+    "seed｜細野晴臣｜泰安洋行｜1976",
+    "seed｜細野晴臣｜はらいそ｜1978",
+    "seed｜細野晴臣｜Cochin Moon｜1978",
+    "seed｜細野晴臣｜S-F-X｜1984"
+   ],
+   "matchedBy": {
+    "seed｜細野晴臣｜Hosono House｜1973": "前綴（反向）",
+    "seed｜細野晴臣｜Philharmony｜1982": "前綴（反向）",
+    "seed｜細野晴臣｜Tropical Dandy｜1975": "前綴（反向）",
+    "seed｜細野晴臣｜泰安洋行｜1976": "前綴（反向）",
+    "seed｜細野晴臣｜はらいそ｜1978": "前綴（反向）",
+    "seed｜細野晴臣｜Cochin Moon｜1978": "前綴（反向）",
+    "seed｜細野晴臣｜S-F-X｜1984": "前綴（反向）"
+   }
   },
   "titleCheck": {
    "rgTitle": "はらいそ",
@@ -129,7 +149,7 @@
    "Kazumi Watanabe and Gentle Thoughts"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -968,7 +988,7 @@
    "柳田博義"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1027,7 +1047,8 @@
     "c134｜笠井紀美子｜What's New｜1973",
     "c134｜笠井紀美子｜Thanks, Dear｜1974",
     "c134｜笠井紀美子｜This Is My Love｜1975",
-    "c134｜笠井紀美子｜TOKYO SPECIAL｜1977"
+    "c134｜笠井紀美子｜TOKYO SPECIAL｜1977",
+    "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972"
    ],
    "matchedBy": {
     "seed｜笠井紀美子｜Butterfly｜1979": "等值",
@@ -1042,7 +1063,8 @@
     "c134｜笠井紀美子｜What's New｜1973": "等值",
     "c134｜笠井紀美子｜Thanks, Dear｜1974": "等值",
     "c134｜笠井紀美子｜This Is My Love｜1975": "等值",
-    "c134｜笠井紀美子｜TOKYO SPECIAL｜1977": "等值"
+    "c134｜笠井紀美子｜TOKYO SPECIAL｜1977": "等值",
+    "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972": "前綴"
    }
   },
   "titleCheck": {
@@ -1085,7 +1107,7 @@
    "Kaleidoscope"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1255,7 +1277,8 @@
     "c180｜富樫雅彦〜高柳昌行｜パルセーション｜1983",
     "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984",
     "c181｜富樫雅彦｜Follow the Dream｜1985",
-    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988"
+    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988",
+    "c183｜宮沢昭 / 前田憲男 / 原田政長 / 富樫雅彦｜Musical Play In Jazz｜1969"
    ],
    "matchedBy": {
     "seed｜富樫雅彦｜Eternal Duo｜1983": "等值",
@@ -1290,7 +1313,8 @@
     "c180｜富樫雅彦〜高柳昌行｜パルセーション｜1983": "前綴",
     "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984": "聯名內含",
     "c181｜富樫雅彦｜Follow the Dream｜1985": "等值",
-    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988": "聯名內含"
+    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988": "聯名內含",
+    "c183｜宮沢昭 / 前田憲男 / 原田政長 / 富樫雅彦｜Musical Play In Jazz｜1969": "聯名內含"
    }
   },
   "titleCheck": {
@@ -1396,7 +1420,7 @@
    "Okamoto, Issei"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1490,7 +1514,7 @@
    "Akira Sakata Trio"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1574,7 +1598,7 @@
    "Carioca"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1620,7 +1644,7 @@
    "上田 正樹"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1662,7 +1686,7 @@
    "Hara, Kumiko"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1704,7 +1728,7 @@
    "Hara, Kumiko"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1873,7 +1897,7 @@
    "プリズム"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1915,7 +1939,7 @@
    "プリズム"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -2100,7 +2124,8 @@
     "c180｜富樫雅彦〜高柳昌行｜パルセーション｜1983",
     "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984",
     "c181｜富樫雅彦｜Follow the Dream｜1985",
-    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988"
+    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988",
+    "c183｜宮沢昭 / 前田憲男 / 原田政長 / 富樫雅彦｜Musical Play In Jazz｜1969"
    ],
    "matchedBy": {
     "seed｜Richie Beirach Trio｜What Is This Thing Called Love?｜1999": "聯名內含",
@@ -2138,7 +2163,8 @@
     "c180｜富樫雅彦〜高柳昌行｜パルセーション｜1983": "前綴",
     "c180｜山本邦山 / 富樫雅彦 / 山下洋輔｜ブレス｜1984": "聯名內含",
     "c181｜富樫雅彦｜Follow the Dream｜1985": "等值",
-    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988": "聯名內含"
+    "c182｜ゲイリー・ピーコック / 佐藤允彦 / 富樫雅彦｜Wave II｜1988": "聯名內含",
+    "c183｜宮沢昭 / 前田憲男 / 原田政長 / 富樫雅彦｜Musical Play In Jazz｜1969": "聯名內含"
    }
   },
   "titleCheck": {
@@ -2230,7 +2256,7 @@
    "Yamaguchi, Mabumi Quartet"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -2273,7 +2299,7 @@
    "ラヴ・サーカス"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -2316,7 +2342,7 @@
    "Asahina, Maria"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -2409,7 +2435,8 @@
     "c134｜笠井紀美子｜This Is My Love｜1975",
     "c134｜笠井紀美子｜TOKYO SPECIAL｜1977",
     "c139｜Herbie Hancock｜My Point of View｜1963",
-    "c142｜Herbie Hancock｜The Prisoner｜1970"
+    "c142｜Herbie Hancock｜The Prisoner｜1970",
+    "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972"
    ],
    "matchedBy": {
     "seed｜Herbie Hancock｜Maiden Voyage｜1965": "等值",
@@ -2446,7 +2473,8 @@
     "c134｜笠井紀美子｜This Is My Love｜1975": "等值",
     "c134｜笠井紀美子｜TOKYO SPECIAL｜1977": "等值",
     "c139｜Herbie Hancock｜My Point of View｜1963": "等值",
-    "c142｜Herbie Hancock｜The Prisoner｜1970": "等值"
+    "c142｜Herbie Hancock｜The Prisoner｜1970": "等值",
+    "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972": "前綴"
    }
   },
   "titleCheck": {
@@ -2488,7 +2516,7 @@
    "ショーグン"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -2532,7 +2560,7 @@
    "ソニア・ローザ"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-24、池 22264 列／130 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
