@@ -99,6 +99,7 @@
     "seed｜細野晴臣｜Tropical Dandy｜1975",
     "seed｜細野晴臣｜泰安洋行｜1976",
     "seed｜細野晴臣｜はらいそ｜1978",
+    "seed｜細野晴臣・鈴木茂・山下達郎｜Pacific｜1978",
     "seed｜細野晴臣｜Cochin Moon｜1978",
     "seed｜細野晴臣｜S-F-X｜1984"
    ],
@@ -108,6 +109,7 @@
     "seed｜細野晴臣｜Tropical Dandy｜1975": "前綴（反向）",
     "seed｜細野晴臣｜泰安洋行｜1976": "前綴（反向）",
     "seed｜細野晴臣｜はらいそ｜1978": "前綴（反向）",
+    "seed｜細野晴臣・鈴木茂・山下達郎｜Pacific｜1978": "分隔符切段",
     "seed｜細野晴臣｜Cochin Moon｜1978": "前綴（反向）",
     "seed｜細野晴臣｜S-F-X｜1984": "前綴（反向）"
    }
@@ -1537,10 +1539,12 @@
     "seed｜川崎燎｜Prism｜1976"
    ],
    "artistAlbumsInPool": [
-    "seed｜川崎燎｜Prism｜1976"
+    "seed｜川崎燎｜Prism｜1976",
+    "c183｜杉本喜代志, 川崎燎, 増尾好秋, 高柳昌行｜Guitar Workshop｜1970"
    ],
    "matchedBy": {
-    "seed｜川崎燎｜Prism｜1976": "等值"
+    "seed｜川崎燎｜Prism｜1976": "等值",
+    "c183｜杉本喜代志, 川崎燎, 増尾好秋, 高柳昌行｜Guitar Workshop｜1970": "分隔符切段"
    }
   },
   "titleCheck": {
@@ -2142,7 +2146,7 @@
    ],
    "matchedBy": {
     "seed｜Elvin Jones｜Puttin' It Together｜1968": "等值",
-    "seed｜Elvin Jones & Richard Davis｜Heavy Sounds｜1968": "聯名內含",
+    "seed｜Elvin Jones & Richard Davis｜Heavy Sounds｜1968": "分隔符切段",
     "seed｜辛島文雄トリオ｜Gathering｜1977": "前綴",
     "seed｜Elvin Jones｜Live at the Village Vanguard｜1974": "等值",
     "seed｜辛島文雄｜ピラニア｜1976": "等值",
@@ -2163,7 +2167,7 @@
     "c143｜Elvin Jones｜Mr. Jones｜1973": "等值",
     "c144｜Elvin Jones｜The Prime Element｜1976": "等值",
     "c165｜Elvin Jones｜Revival (Live at Pookie's Pub)｜2022": "等值",
-    "c177｜原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster｜Giant Steps｜1978": "聯名內含",
+    "c177｜原信夫とシャープス・アンド・フラッツ, Elvin Jones, Frank Foster｜Giant Steps｜1978": "分隔符切段",
     "c67｜辛島文雄｜ピラニア｜1976": "等值"
    }
   },

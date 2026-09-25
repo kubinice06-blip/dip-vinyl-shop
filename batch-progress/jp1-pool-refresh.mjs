@@ -5,12 +5,28 @@
 import fs from 'node:fs';
 const norm = s => String(s).toLowerCase().replace(/[&＆]/g,'and').replace(/[^\p{L}\p{N}]+/gu,'');
 const hasCJK = s => /[぀-ヿ一-鿿]/.test(s);
+const hasKanji = s => /[一-鿿]/.test(String(s));
 // ⚠ 2026-09-25（c-184 a 第 5731 條第 1 點，主線第 1960-B 條）：**編制後綴要先削掉再比**。
 // 雙向前綴那一道只在有漢字時才做（`本田竹曠トリオ` vs 池中 `本田竹曠` 靠它救到），
 // **純羅馬字的編制串整個掃不到**（`Cecil Taylor Unit`／`Kenny Barron Trio` vs 池中本名）。
 // 這一道把後綴削掉之後做等值比，羅馬字側門檻 8 字、漢字側 3 字。
 const ENSEMBLE = /(トリオ|カルテット|クヮルテット|クワルテット|クインテット|クヰンテット|セクステット|セプテット|オクテット|ユニット|アンサンブル|オーケストラ|バンド|グループ|と[^\s]*オールスターズ|[\s,]*(trio|quartet|quintet|sextet|septet|octet|unit|ensemble|orchestra|band|group|all[\s-]?stars)s?)$/i;
 const stripEns = v => { let x = String(v).trim(), n = 0; while (n < 3) { const y = x.replace(ENSEMBLE, '').trim(); if (y === x || !y) break; x = y; n++; } return n ? x : ''; };
+// ⚠ 2026-09-25（c-184 b 第 5775 條第 4 點，主線第 1963-B 條）：**「聯名內含」沒把 `・`(U+30FB) 當切點**，
+// 於是池中 `三上寛・古澤良治郎` 那兩列對上 slice 的 `三上寛` 整個漏列。
+// 改成把池中九種分隔符一併當切點，**兩邊都切**，逐段比。
+// 門檻沿用（漢字 3 字、羅馬字 8 字）——這一道只產生「要人工比」的候選，寬一點比漏掉好。
+const SEP = /\s*(?:・|／|\/|,|，|＆|&|＋|\+|〜|～|~|\sfeat\.?\s|\swith\s|\smeets\s|\sMeets\s|と(?=[一-鿿])) */gi;
+const segs = v => String(v).split(SEP).map(x => (x || '').trim()).filter(x => Array.from(x).length >= 2);
+// ⚠ 同條第 5 點：**盤面印「外文 = 和文」雙題的碟，兩半都要拿去掃池**
+// （c-184 b 第 5753 條的真撞池就是這一種：`Mort À Crédit` ↔ `なしくずしの死`，
+//  ALM「New Improvisational Music」系列幾乎每一張都是雙題，Frasco／Union／Trio 也常見）。
+const titleForms = t => {
+  const raw = String(t || '');
+  const out = new Set([raw]);
+  for (const part of raw.split(/\s*[=＝]\s*/)) if (Array.from(part.trim()).length >= 3) out.add(part.trim());
+  return [...out];
+};
 const pool = [];
 for (const r of JSON.parse(fs.readFileSync('seed_cards.json','utf8'))) pool.push({artist:r[0],album:r[1],year:r[6],src:'seed'});
 for (const f of fs.readdirSync('desc-tools/batches/cards').filter(x=>/^c\d+-cards\.json$/.test(x))) {
@@ -65,6 +81,16 @@ for (const b of process.argv.slice(2)) {
         // 漢字那一條保留 4 字門檻；羅馬字改用 8 字門檻（夠長就不會誤撞）。
         if (na.length > nv.length && na.includes(nv)
             && ((hasCJK(v) && nv.length >= 4) || (!hasCJK(v) && nv.length >= 8))) { how = how || '聯名內含'; }
+        // 第五道：九種分隔符兩邊都切，逐段比
+        // ⚠ **切出來的段必須含漢字**（或是夠長的純羅馬字）：`・` 在片假名譯名裡是詞內連字號，
+        // 不加這個條件會切出 `バンド`／`アンド`／`イエロー` 這種通用詞
+        // （實測：不限制時 c-186…c-191 多出 45 列，絕大多數是
+        //  `細野晴臣＆イエロー・マジック・バンド` 對上池中 `スカイドッグ・ブルース・バンド` 這種垃圾）。
+        for (const x of segs(v)) {
+          const nx = norm(x);
+          if (!((hasKanji(x) && nx.length >= 3) || (!hasCJK(x) && nx.length >= 8))) continue;
+          if (segs(q.artist).some(y => norm(y) === nx)) { how = how || '分隔符切段'; break; }
+        }
         // 第四道：削掉編制後綴再比（兩邊都削）
         const sv = stripEns(v), sa = stripEns(q.artist);
         for (const [x, y] of [[sv, q.artist], [v, sa], [sv, sa]]) {
@@ -80,7 +106,8 @@ for (const b of process.argv.slice(2)) {
       seen.add(line); hits.push(line); why[line] = how;
       if (how === '聯名內含') newSub++;
     }
-    const exact = hits.filter(l => norm(l.split('｜')[2]) === norm(r.album));
+    const myForms = titleForms(r.album).map(norm);
+    const exact = hits.filter(l => titleForms(l.split('｜')[2]).map(norm).some(x => myForms.includes(x)));
     const inPoolNow = exact.length > 0 || poolRg.has(r.rgMbid);
     const anyCJK = vs.some(hasCJK);
     const kn = knownHit(r);
