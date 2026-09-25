@@ -9,9 +9,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const T = JSON.parse(fs.readFileSync('batch-progress/enum/name-corrections.json', 'utf8'));
-// ⚠ `_to_romaji` 也要掃：查不到漢字時正解是寫羅馬字（主線第 1967-B／1978-B 條），
-// 卡單裡留著一個「像對的漢字」比留羅馬字糟——下游三層都會照抄。
-const pairs = [...T.pairs, ...(T._to_romaji || [])].map(([a, b]) => [a, b]);
+// ⚠ ⚠ **`_to_romaji` 絕對不掃**（主線第 1979-B 條，我自己試過一次然後全部還原）：
+// 「查不到漢字就寫羅馬字」是**那一張卡、那一層當下的判斷**，不是「這個漢字寫法全域錯誤」。
+// 實測後果：`吉澤典夫` 在 c-185 b 查不到來源，但 c-177／c-178（ビクター Invitation 的錄音師）
+// 的策展層當時是有依據的——盲掃會把已收線批次裡正確的漢字降級成羅馬字。
+// **`pairs` 才是「已證實寫錯」的對照，那個可以全域掃。**
+const pairs = T.pairs.map(([a, b]) => [a, b]);
 let batches = process.argv.slice(2);
 if (!batches.length) {
   batches = fs.readdirSync('batch-progress').filter(d => /^c\d+$/.test(d)).sort();
