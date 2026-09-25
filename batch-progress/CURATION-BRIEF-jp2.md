@@ -110,7 +110,13 @@ jp-1 的 slice 帶著 `why`（`rg-tag`／`artist-tag`／…）當曲風線索。
    **slice 的 `live` 直接抄 MB 那一欄，這個方向沒有任何警語。**
    ⚠ **掃這幾個字串就會全中**：`Recorded live`／`実況`／`ライヴ`／`Recital`／末軌題帶 `Encore`／
    credits 有 `MC —`／盤名帶 `In Person`／`in Japan`。
-   ⚠ **往下修那個方向照舊**（第 1904-B 條：`Recorded At` 是錄音室的不算；`Direct Cutting` 系列會被誤標 Live）。
+   ⚠ **往下修那個方向照舊**（第 1904-B 條：`Recorded At` 是錄音室的不算；`Direct Cutting` 系列會被誤標 Live；
+   ⚠ **直刻盤的 `Recorded live` 指「一次過錄音」不是「有觀眾」**，主線第 1971-B 條）。
+   ⚠ ⚠ **再補三個必掃的 credits 角色**（主線第 1977-B 條）：**`Lighting`／`Technician [P.A. Operation]`／
+   `Producer Of <場館>`**——**實況盤的工作人員名單會出現場館的技術職，錄音室盤不會**
+   （c-185 b 的《Triangle Session》就是靠這三個角色 ＋ 改寫後的日期那一肢才判成實況的）。
+   ⚠ **封面與試聽要兩個來源都查再判「市場沒有」**：c-185 b 實測 **CAA 缺的 3 張全部有 Apple 專頁、
+   Apple 缺的 8 張 CAA 全部有圖**，兩個來源的偏差方向相反。
 8. ⚠ ⚠ **`poolRecheck` 現在會直接報「前批策展層已裁定撞池」**（主線第 1960-B 條）：
    `batch-progress/enum/known-pool-collisions.json` 收著前幾批逐張確認過的撞池名單（目前 5 筆），
    **命中就是退，不必再查**。**反過來說，沒命中不代表沒撞**——

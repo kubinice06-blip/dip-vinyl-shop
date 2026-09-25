@@ -3,7 +3,17 @@
 // 比對邏輯留在主程式頂層時測不到。這裡不做網路請求、不讀檔案，test-match.mjs 直接 import。
 import { fold } from '../lib.mjs';
 
-export const norm = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
+// ⚠ 2026-09-25（主線第 1977-B 條）：**異體字要先摺**。
+// c-185 有兩張碟的 Apple 條目只因為異體字而配不上：
+// `古沢良治郎カルテット` vs Apple 的 `古澤良治郎カルテット`（`沢`／`澤`）——兩張都是主線人工回撈救回的。
+// 只收「同一個字的新舊字體」這一類，不做任何語意上的合併。
+const KVAR = {
+  '澤': '沢', '邊': '辺', '邉': '辺', '﨑': '崎', '齋': '斉', '齊': '斉', '濱': '浜',
+  '眞': '真', '國': '国', '學': '学', '廣': '広', '瀧': '滝', '嶋': '島', '桒': '桑',
+  '槇': '槙', '棈': '柏', '髙': '高', '圖': '図', '晉': '晋', '藪': '薮', '曉': '暁',
+};
+export const kfold = s => Array.from(String(s || '')).map(ch => KVAR[ch] || ch).join('');
+export const norm = s => kfold(fold(s)).replace(/[^\p{L}\p{N}]+/gu, '');
 
 // 標題與掛名的比對。寬鬆到能吃掉副標與掛名後綴，嚴格到不會配到同名的別張。
 // Apple 會把單曲與 EP 的條目標成「某某 - Single」「某某 - EP」。摺疊後那個後綴
@@ -164,6 +174,16 @@ export function aliasParts(alias) {
 }
 export function termsFor(c) {
   const list = [`${c.artist} ${c.album}`];
+  // ⚠ 2026-09-25（主線第 1977-B 條）：**片假名掛名的中黑要兩種都查**。
+  // c-185 的 `宮間利之とニューハード` 在 Apple 上逐字是 `ニュー・ハード`——
+  // 差的只有一個 `・`，而搜尋那一端不會自己摺掉它（比對那一端 `norm` 早就摺了）。
+  const dotVariants = x => {
+    const out = [];
+    if (x.includes('・')) out.push(x.replace(/・/g, ''));
+    return out;
+  };
+  for (const v of dotVariants(c.artist)) list.push(`${v} ${c.album}`);
+  for (const v of dotVariants(c.album)) list.push(`${c.artist} ${v}`);
   for (const a of aliasParts(c.queryAlias)) {
     list.push(`${a} ${c.album}`);   // alias 當掛名
     list.push(`${c.artist} ${a}`);  // alias 當盤名
