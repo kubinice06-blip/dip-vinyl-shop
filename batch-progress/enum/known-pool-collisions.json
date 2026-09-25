@@ -67,12 +67,12 @@
    "shape": "⚠ ⚠ **合輯型撞池**：MB 標 `Album`、`secondary-types` 空、RG tags 空、titleCheck 三欄一致，chk-prop 五道與六道 dedup 全部放行；唯一線索是 Discogs 原壓的 `formats` descriptor（`Compilation`）與 notes 寫出兩個來源 master"
   },
   {
-   "rgMbid": "18c3632b",
+   "rgMbid": "7c90b777",
    "artist": "Samba Calioca",
    "album": "Sunny Place Carnival",
    "poolRow": "（批內同碟重複 RG，收的是 `カリオカ` 那一筆）",
    "ruling": "c-186 a 第 5941 條",
-   "shape": "同一張 `Kitty MKF 1041`、Discogs 只有一個 master、`namevariations` 逐字 `[\"Samba Calioca\",\"カリオカ\"]`"
+   "shape": "同一張 `Kitty MKF 1041`、Discogs 只有一個 master、`namevariations` 逐字 `[\"Samba Calioca\",\"カリオカ\"]`。⚠ ⚠ 2026-09-25 修：這一筆原本填的是**藝人** MBID `18c3632b`（カリオカ），要擋的 RG 是 `7c90b777`——那一道本來永遠命中不到（c-187 a 第 6049 條抓到，主線第 1978-B 條）"
   }
  ],
  "_jp1_blind_spots": [

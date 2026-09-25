@@ -9,7 +9,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const T = JSON.parse(fs.readFileSync('batch-progress/enum/name-corrections.json', 'utf8'));
-const pairs = T.pairs.map(([a, b]) => [a, b]);
+// ⚠ `_to_romaji` 也要掃：查不到漢字時正解是寫羅馬字（主線第 1967-B／1978-B 條），
+// 卡單裡留著一個「像對的漢字」比留羅馬字糟——下游三層都會照抄。
+const pairs = [...T.pairs, ...(T._to_romaji || [])].map(([a, b]) => [a, b]);
 let batches = process.argv.slice(2);
 if (!batches.length) {
   batches = fs.readdirSync('batch-progress').filter(d => /^c\d+$/.test(d)).sort();
