@@ -1,0 +1,16 @@
+{
+ "_note": "策展層已逐張確認「就是池中那張碟」的撞池名單。主線第 1960-B 條（2026-09-25）：上一批把撞池寫成裁定之後，下一批的 slice 仍然把同一張切進來（c-183 第 5703 條 → c-184 #2），所以把裁定餵回切批腳本。只收『同一張碟』，不收『同藝人不同碟』。",
+ "_fields": "rgMbid 有就以它為主鍵；artist/album 為輔（norm 後比對）。poolRow 是池中那一列，ruling 是立這一筆的裁定號。",
+ "items": [
+  { "rgMbid": "1f97f933", "artist": "フォー・ユニッツ", "album": "フォー・ユニッツ", "poolRow": "宮沢昭《Four Units》1969（seed ＋ c132）", "ruling": "c-183 a 第 5665 條", "shape": "和文團名＝外文盤名，逐軌時長相同" },
+  { "rgMbid": "920dcb14", "artist": "富樫雅彦カルテット", "album": "Speed and Space", "poolRow": "富樫雅彦《Speed and Space》1969（⚠ apex:pearl）", "ruling": "c-183 a 第 5666 條", "shape": "編制後綴，盤名逐字相同" },
+  { "rgMbid": "1823a1c4", "artist": "Takehiro Honda Trio", "album": "This Is Honda", "poolRow": "本田竹曠《This Is Honda》1972（seed）", "ruling": "c-183 b 第 5703 條 (1) ＋ c-184 a 第 5717 條", "shape": "⚠ 上一批已寫成裁定，下一批仍被切進來——立本條的直接原因" },
+  { "rgMbid": "4734c89a", "artist": "Kousuke Mine", "album": "Out Of Chaos", "poolRow": "峰厚介（池中兩列）", "ruling": "c-184 a 第 5718 條", "shape": "變體全羅馬字，靠 Discogs 藝人頁 realname 查出漢字名才掃到" },
+  { "rgMbid": "279439ee", "artist": "阿部薫", "album": "なしくずしの死", "poolRow": "阿部薫《Mort À Crédit》1976", "ruling": "c-184 b 第 5753 條", "shape": "⚠ 和文＝外文等價形，盤面印著 `Mort À Crédit = なしくずしの死`，兩邊各取一半" }
+ ],
+ "_jp1_blind_spots": [
+  { "artist": "MALTA", "album": "My Hit & Run", "shape": "自我翻錄：十軌原曲全在池中（交本機處理）" },
+  { "artist": "浅川マキ", "album": "Stranger's Touch", "shape": "自我翻錄：十軌有八軌在池中（交本機處理）" },
+  { "artist": "渡辺貞夫", "album": "Bossa Best Collection", "shape": "同場次第二張 LP：與 RCA《The Girl From Ipanema》十軌共八軌（交本機處理）" }
+ ]
+}

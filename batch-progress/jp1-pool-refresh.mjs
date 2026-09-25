@@ -5,6 +5,12 @@
 import fs from 'node:fs';
 const norm = s => String(s).toLowerCase().replace(/[&＆]/g,'and').replace(/[^\p{L}\p{N}]+/gu,'');
 const hasCJK = s => /[぀-ヿ一-鿿]/.test(s);
+// ⚠ 2026-09-25（c-184 a 第 5731 條第 1 點，主線第 1960-B 條）：**編制後綴要先削掉再比**。
+// 雙向前綴那一道只在有漢字時才做（`本田竹曠トリオ` vs 池中 `本田竹曠` 靠它救到），
+// **純羅馬字的編制串整個掃不到**（`Cecil Taylor Unit`／`Kenny Barron Trio` vs 池中本名）。
+// 這一道把後綴削掉之後做等值比，羅馬字側門檻 8 字、漢字側 3 字。
+const ENSEMBLE = /(トリオ|カルテット|クヮルテット|クワルテット|クインテット|クヰンテット|セクステット|セプテット|オクテット|ユニット|アンサンブル|オーケストラ|バンド|グループ|と[^\s]*オールスターズ|[\s,]*(trio|quartet|quintet|sextet|septet|octet|unit|ensemble|orchestra|band|group|all[\s-]?stars)s?)$/i;
+const stripEns = v => { let x = String(v).trim(), n = 0; while (n < 3) { const y = x.replace(ENSEMBLE, '').trim(); if (y === x || !y) break; x = y; n++; } return n ? x : ''; };
 const pool = [];
 for (const r of JSON.parse(fs.readFileSync('seed_cards.json','utf8'))) pool.push({artist:r[0],album:r[1],year:r[6],src:'seed'});
 for (const f of fs.readdirSync('desc-tools/batches/cards').filter(x=>/^c\d+-cards\.json$/.test(x))) {
@@ -12,6 +18,21 @@ for (const f of fs.readdirSync('desc-tools/batches/cards').filter(x=>/^c\d+-card
   for (const c of (Array.isArray(a)?a:Object.values(a))) pool.push({artist:c.artist,album:c.album,year:c.year,rgMbid:c.rgMbid,src:f.replace('-cards.json','')});
 }
 const poolRg = new Set(pool.filter(p=>p.rgMbid).map(p=>p.rgMbid));
+// ── 策展層已裁定的撞池名單餵回來（主線第 1960-B 條）──
+// 上一批把「這張在池中」寫成裁定了，下一批的 slice 還是把同一張切進來
+// （c-183 第 5703 條 (1) → c-184 #2《This Is Honda》）。
+let KNOWN = { items: [] };
+try { KNOWN = JSON.parse(fs.readFileSync('batch-progress/enum/known-pool-collisions.json','utf8')); } catch {}
+const knownByRg = new Map(), knownByKey = new Map();
+for (const it of (KNOWN.items||[])) {
+  if (it.rgMbid) knownByRg.set(it.rgMbid, it);
+  knownByKey.set(norm(it.artist)+'\u0000'+norm(it.album), it);
+}
+// rgMbid 在名單裡是短碼（前八位），slice 是完整 uuid——用前綴比
+const knownHit = r => {
+  for (const [k, it] of knownByRg) if (String(r.rgMbid||'').startsWith(k)) return it;
+  return knownByKey.get(norm(r.artist)+'\u0000'+norm(r.album)) || null;
+};
 const TODAY = new Date().toISOString().slice(0, 10);
 const POOLBATCHES = new Set(pool.filter(p=>p.src!=='seed').map(p=>p.src)).size;
 console.log(`池：${pool.length} 列（含本機卡單 ${new Set(pool.filter(p=>p.src!=='seed').map(p=>p.src)).size} 批）`);
@@ -44,6 +65,14 @@ for (const b of process.argv.slice(2)) {
         // 漢字那一條保留 4 字門檻；羅馬字改用 8 字門檻（夠長就不會誤撞）。
         if (na.length > nv.length && na.includes(nv)
             && ((hasCJK(v) && nv.length >= 4) || (!hasCJK(v) && nv.length >= 8))) { how = how || '聯名內含'; }
+        // 第四道：削掉編制後綴再比（兩邊都削）
+        const sv = stripEns(v), sa = stripEns(q.artist);
+        for (const [x, y] of [[sv, q.artist], [v, sa], [sv, sa]]) {
+          if (!x || !y) continue;
+          const nx = norm(x), ny = norm(y);
+          if (nx.length < 3) continue;
+          if (nx === ny && ((hasCJK(x) && nx.length >= 3) || (!hasCJK(x) && nx.length >= 8))) { how = how || '削編制後綴'; break; }
+        }
       }
       if (!how) continue;
       const line = `${q.src}｜${q.artist}｜${q.album}｜${q.year}`;
@@ -54,7 +83,9 @@ for (const b of process.argv.slice(2)) {
     const exact = hits.filter(l => norm(l.split('｜')[2]) === norm(r.album));
     const inPoolNow = exact.length > 0 || poolRg.has(r.rgMbid);
     const anyCJK = vs.some(hasCJK);
-    if (inPoolNow) { coll++; r.poolRecheck = { status:'⚠ 確定撞池——退', hit: exact, artistAlbumsInPool: hits, matchedBy: why }; }
+    const kn = knownHit(r);
+    if (kn) { coll++; r.poolRecheck = { status: `⚠ ⚠ **前批策展層已裁定撞池——退**（${kn.ruling}）`, hit: [kn.poolRow], shape: kn.shape, artistAlbumsInPool: hits, matchedBy: why }; }
+    else if (inPoolNow) { coll++; r.poolRecheck = { status:'⚠ 確定撞池——退', hit: exact, artistAlbumsInPool: hits, matchedBy: why }; }
     else if (hits.length) { hint++; r.poolRecheck = { status:'同藝人在池中，盤名不同——**逐張人工比**', artistAlbumsInPool: hits, matchedBy: why }; }
     else if (!anyCJK) { flat++; r.poolRecheck = { status:'⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）', artistAlbumsInPool: [] }; }
     // ⚠ 2026-09-24：這一行原本把比對日與涵蓋批次寫死成 `2026-09-22、含 c-173…c-177`，

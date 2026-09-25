@@ -37,6 +37,19 @@
 **已用 `batch-progress/jp2-fix-domestic.mjs` 重算**：**只認掛名藝人的 `country`，不看 release 國家**。
 ⚠ **c-183 是重算前切的、已經交件**，所以那一批裡仍混著外國藝人（策展層當場退掉了）。
 
+### ⚠ ⚠ 再重算一次：出身地**只加註記，不判退**（主線第 1959-B 條）
+
+**MB 的 `country`／`area` 會是「居住國」而不是國籍**（c-184 a 第 5732 條：`Sonia Rosa` 的 `country`
+逐字 `JP`、`area` `Japan`，**只有 `begin-area` 是 `São Paulo`**）。**c-186 之後的 slice 多了一欄
+`domesticRecheck.bornOutside`**：`country=JP` 而 `begin-area` 解到的國碼不是 JP 的，
+**`domestic` 仍然是 `true`**，只在那一欄寫「出身地 X（國碼）不在日本，長住日本」。
+
+⚠ ⚠ **這一欄不是退件理由**：`Marlene`（馬尼拉）、`Sonia Rosa`（São Paulo）、`朝比奈マリア`（華府）
+**都是長住日本、替日本廠牌錄日本市場的盤**，與「Chet Baker 的日本壓片」是兩件事。
+**身分要照第 4106 條四項（領銜／作曲／企劃／原盤發行）人工判，門檻 ≥ 3/4**
+——c-184 a 第 5723 條退掉 `Sonia Rosa` 靠的就是四項 2/4，不是這一欄。
+⚠ **出身地用 MB 區域階層解國碼，不用地名白名單**（第一版用白名單，70 張裡約 66 張是日本市町村被誤判）。
+
 ⚠ ⚠ **剩下 17 張「MB 藝人實體無 country、別名全羅馬字」的沒有剔掉，留在 slice 裡並在 `note` 標警語**
 ——**那一格裡兩種都有**：`増尾好秋`／`峰厚介`／`辛島文雄` 是日本人（羅馬字掛名而已），
 `Steve Lacy`／`Saundra Hewitt` 是外國人。**那 17 張要逐張人工判本土。**
@@ -90,6 +103,22 @@ jp-1 的 slice 帶著 `why`（`rg-tag`／`artist-tag`／…）當曲風線索。
    ——**池中有、MB 沒有，不是漏標。撞池比對要用掛名＋盤名，不能只靠 rgMbid。**
 6. ⚠ **Denon 的 1026 筆 release 大半是古典**，`DENON JAZZ` 實體只有 18 筆
    ——**本線 Denon 那 109 張的曲風要特別小心。**
+
+7. ⚠ ⚠ **`live: false` 一樣要逐張讀 Discogs 原壓的 `notes`**（主線第 1958-B 條）：
+   c-184 a 組 19 張裡 **3 張（16%）是反向漏標**——`live: false`、`note` 空白、
+   **MB `secondary-types` 空陣列，三個機器欄位全部沉默**，而 notes 逐字寫著 `Recorded live`。
+   **slice 的 `live` 直接抄 MB 那一欄，這個方向沒有任何警語。**
+   ⚠ **掃這幾個字串就會全中**：`Recorded live`／`実況`／`ライヴ`／`Recital`／末軌題帶 `Encore`／
+   credits 有 `MC —`／盤名帶 `In Person`／`in Japan`。
+   ⚠ **往下修那個方向照舊**（第 1904-B 條：`Recorded At` 是錄音室的不算；`Direct Cutting` 系列會被誤標 Live）。
+8. ⚠ ⚠ **`poolRecheck` 現在會直接報「前批策展層已裁定撞池」**（主線第 1960-B 條）：
+   `batch-progress/enum/known-pool-collisions.json` 收著前幾批逐張確認過的撞池名單（目前 5 筆），
+   **命中就是退，不必再查**。**反過來說，沒命中不代表沒撞**——
+   c-183／c-184 連兩批各漏掉真撞池，**六道 dedup 加 `chk-prop` 全部放行**。
+   ⚠ **固定動作（c-183 第 5685 條第 3 點，c-184 一次救兩張）**：
+   **Union／Trio／East Wind／Frasco 這幾家的每一筆，以盤名為主鍵掃一次全池、兩種文字系統都試。**
+   ⚠ **變體全是羅馬字時走 Discogs 藝人頁的 `realname`／`namevariations` 查漢字名再掃**
+   （第 1890-B 條第四條路；c-184 #17 `峰厚介` 靠它救到，前三條路全落空）。
 
 ## 四、交付
 
