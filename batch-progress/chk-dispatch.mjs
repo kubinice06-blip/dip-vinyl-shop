@@ -12,7 +12,8 @@
 //   5. ⚠ 2026-09-25（主線第 1964-B 條，派工信第十五次出錯）：**張數與 hook 舉例是不是對方那一組的**；
 //   6. ⚠ 2026-09-25（主線第 1970-B 條）：**本批的 rulings.md 在派工前就要存在**（並行覆寫過一次）；
 //   7. ⚠ 2026-09-25（主線第 1971-B 條，派工信第十八次出錯）：**「本組 <廠牌> N 張」回比 slice**；
-//   8. ⚠ 2026-09-25（主線第 1976-B 條，派工信第十九次出錯）：**引到某一檔的條號要真的在那一檔裡**。
+//   8. ⚠ 2026-09-25（主線第 1976-B 條，派工信第十九次出錯）：**引到某一檔的條號要真的在那一檔裡**；
+//   9. ⚠ 2026-09-25（主線第 1988-B 條，派工信第二十二次出錯）：**「N 張<掛名>」的掛名要在本批出現**。
 //      c-183 writer-2 的信裡 §二 逐字寫「本組五張的 hook 有四張是代稱開頭」並列了四個 a 組的 hook
 //      ——**我用 `.replace()` 換那一段而字串沒對上，整段靜靜留著 a 組的內容**（第三次同一種失效）。
 //      這一道用實際檔案的張數與 hook 原文回比，不靠我自己記得有沒有換到。
@@ -170,4 +171,43 @@ for (const m of s.matchAll(/`?(?:batch-progress\/)?(c\d+)\/rulings\.md`?[^\n]{0,
     else warn(`${msg}——**條號在別的批次檔裡，不是這一檔**`);
   }
 }
+// 9. ⚠ 2026-09-25（主線第 1988-B 條，派工信第二十二次出錯）：**信裡點名的掛名必須在本批出現**。
+//    c-186 與 c-187 的鉤子派工信第八節都留著 c-185 的分軸清單
+//    （逐字「四張深町純／三張山屋清／兩張山下洋輔／兩張渡辺貞夫／兩張高中正義怎麼分軸」），
+//    兩批各只有一組成立。第五道擋不到，因為那些不是檔名也不是張數。
+//
+// ⚠ ⚠ **第一版是「抓 `N 張` 後面那一串當掛名」，那樣寫不能用**（回測印出八個假警報：
+// 「28 張，你一個人做完兩組」「28 張是本線鉤子層最大的一批」「24 張三輪收斂」⋯
+// ——`張` 後面接的是散文，不是名字，而「名字長什麼樣」沒辦法用字元類描述）。
+// 改成**反向比對既有詞彙**：全 repo 的卡單／slice 湊一份掛名詞表，
+// 只有「`N 張` 後面緊接著一個**別批出現過的真掛名**」才報。
+// 散文不會命中詞表，複製來的分軸清單一定命中——這一道因此零假警報。
+try {
+  const CJK = x => /[぀-ヿ一-鿿]/.test(x);
+  const mine = new Set(), all = new Set();
+  const addFrom = (f, into) => { const r = readRows(f); if (r) for (const x of r) if (x?.artist) into.add(String(x.artist)); };
+  for (const f of [`desc-tools/batches/cards/${batch}-cards.json`, `batch-progress/${batch}/slice.json`]) addFrom(f, mine);
+  // 詞表：全部批次的卡單（掛名的權威寫法在卡單上）
+  for (const d of ['desc-tools/batches/cards', 'batch-progress']) {
+    let es = []; try { es = fs.readdirSync(d, { withFileTypes: true }); } catch {}
+    for (const e of es) {
+      if (d === 'batch-progress') { if (e.isDirectory() && /^c\d+$/.test(e.name)) addFrom(`${d}/${e.name}/slice.json`, all); }
+      else if (/-cards\.json$/.test(e.name)) addFrom(`${d}/${e.name}`, all);
+    }
+  }
+  if (!mine.size) throw new Error('本批沒有卡單也沒有 slice，這一道跳過');
+  // 詞表裡剔掉本批有的（含「本批掛名是詞表某個名字的一部分」，例如聯名形）
+  const hay = [...mine].join('｜');
+  const vocab = [...all].filter(n => n.length >= 2 && CJK(n) && !hay.includes(n))
+    .sort((x, y) => y.length - x.length);   // 長的先比，免得 `富樫雅彦` 被 `富樫` 吃掉
+  let hits = 0, seen = new Set();
+  for (const m of s.matchAll(/[一二三四五六七八九十\d]+\s*張\s*`?/g)) {
+    const rest = s.slice(m.index + m[0].length, m.index + m[0].length + 24);
+    const n = vocab.find(v => rest.startsWith(v));
+    if (!n || seen.has(n)) continue;
+    seen.add(n); hits++;
+    warn(`信裡寫「${m[0].trim()}${n}」，而本批的卡單／slice 裡沒有 \`${n}\`\n     ——**這個掛名在別批的卡單上，八成是複製過來的分軸清單**`);
+  }
+  if (!hits) console.log(`  「N 張<掛名>」回比：詞表 ${vocab.length} 個別批掛名，一個都沒被點名 ✓`);
+} catch (e) { console.log(`  （第九道跳過：${e.message}）`); }
 console.log(bad ? `\n標記 ${bad}` : '\n全部通過 ✓');
