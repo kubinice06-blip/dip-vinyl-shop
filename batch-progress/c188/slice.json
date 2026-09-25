@@ -25,7 +25,7 @@
    "CARIOCA"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -40,6 +40,10 @@
     "Snooze"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -69,7 +73,7 @@
    "小林 泉美"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -84,6 +88,10 @@
     "Coconuts High"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -153,6 +161,10 @@
     "Alone"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -182,8 +194,27 @@
    "いまだまさる"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜今田勝トリオ｜One for Duke｜1975",
+    "seed｜今田勝トリオ｜Green Caterpillar｜1975",
+    "seed｜今田勝トリオ｜Standards｜1976",
+    "seed｜今田勝カルテット｜Now!!｜1970",
+    "seed｜今田勝トリオ｜Maki｜1970",
+    "seed｜今田勝トリオ｜Planets｜1977",
+    "c134｜今田勝トリオ｜Maki｜1970",
+    "c134｜今田勝トリオ｜Planets｜1977"
+   ],
+   "matchedBy": {
+    "seed｜今田勝トリオ｜One for Duke｜1975": "削編制後綴",
+    "seed｜今田勝トリオ｜Green Caterpillar｜1975": "削編制後綴",
+    "seed｜今田勝トリオ｜Standards｜1976": "削編制後綴",
+    "seed｜今田勝カルテット｜Now!!｜1970": "削編制後綴",
+    "seed｜今田勝トリオ｜Maki｜1970": "削編制後綴",
+    "seed｜今田勝トリオ｜Planets｜1977": "削編制後綴",
+    "c134｜今田勝トリオ｜Maki｜1970": "削編制後綴",
+    "c134｜今田勝トリオ｜Planets｜1977": "削編制後綴"
+   }
   },
   "titleCheck": {
    "rgTitle": "Carnival",
@@ -197,6 +228,10 @@
     "Carnival"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -253,6 +288,10 @@
     "GOOD NATURE"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -287,12 +326,14 @@
     "seed｜鈴木良雄｜Morning Picture｜1984",
     "c181｜鈴木良雄｜Touch of Rain｜1985",
     "c181｜鈴木良雄 & MATSURI｜Fairy Tale｜1987",
+    "c184｜鈴木良雄｜フレンズ｜1973",
     "c76｜鈴木良雄｜Morning Picture｜1984"
    ],
    "matchedBy": {
     "seed｜鈴木良雄｜Morning Picture｜1984": "等值",
     "c181｜鈴木良雄｜Touch of Rain｜1985": "等值",
     "c181｜鈴木良雄 & MATSURI｜Fairy Tale｜1987": "前綴",
+    "c184｜鈴木良雄｜フレンズ｜1973": "等值",
     "c76｜鈴木良雄｜Morning Picture｜1984": "等值"
    }
   },
@@ -309,6 +350,10 @@
     "ウイングス"
    ],
    "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -370,6 +415,10 @@
     "4 X 4 (Four By Four)"
    ],
    "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -432,6 +481,10 @@
     "アウェイクニング スペシャル・エディション"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -460,7 +513,7 @@
    "Kitajima, Osamu"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -475,6 +528,10 @@
     "Dragon King"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -534,6 +591,10 @@
     "Light'n Up"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -563,7 +624,7 @@
    "マリーン・ペーニャ・リム"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -578,6 +639,11 @@
     "My Favorite Songs"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP",
+   "bornOutside": "出身地 Manila（PH）不在日本，長住日本——**算本土，但策展層自行判斷是否算日本場景**"
   }
  },
  {
@@ -609,7 +675,7 @@
    "Seawind"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -624,6 +690,11 @@
     "Summer Nights"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP",
+   "bornOutside": "出身地 Manila（PH）不在日本，長住日本——**算本土，但策展層自行判斷是否算日本場景**"
   }
  },
  {
@@ -697,6 +768,10 @@
     "One-Way Traveller"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -725,7 +800,7 @@
    "ナニワエキスプレス"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -741,6 +816,10 @@
     "NO FUSE"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -769,7 +848,7 @@
    "ザ・プレイヤーズ"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -784,6 +863,10 @@
     "Space Travel"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -837,6 +920,10 @@
     "Kyakusenbi no yuhwaku"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -866,7 +953,7 @@
    "Igarashi Hiroaki"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -881,6 +968,10 @@
     "Wing"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -909,7 +1000,7 @@
    "Minako Ito"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -924,6 +1015,10 @@
     "Tenderly"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -978,7 +1073,8 @@
     "c176｜日野皓正｜May Dance｜1977",
     "c177｜日野皓正｜Hip Seagull｜1978",
     "c177｜日野皓正｜City Connection｜1979",
-    "c178｜日野皓正｜Daydream｜1980"
+    "c178｜日野皓正｜Daydream｜1980",
+    "c184｜日野皓正｜Speak To Loneliness｜1975"
    ],
    "matchedBy": {
     "seed｜日野皓正クインテット｜Live!｜1973": "前綴",
@@ -1003,7 +1099,8 @@
     "c176｜日野皓正｜May Dance｜1977": "等值",
     "c177｜日野皓正｜Hip Seagull｜1978": "等值",
     "c177｜日野皓正｜City Connection｜1979": "等值",
-    "c178｜日野皓正｜Daydream｜1980": "等值"
+    "c178｜日野皓正｜Daydream｜1980": "等值",
+    "c184｜日野皓正｜Speak To Loneliness｜1975": "等值"
    }
   },
   "titleCheck": {
@@ -1019,6 +1116,10 @@
     "ピラミッド"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1047,7 +1148,7 @@
    "ナニワエキスプレス"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1063,6 +1164,10 @@
     "大宇宙無限力神"
    ],
    "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1108,7 +1213,9 @@
     "c134｜笠井紀美子｜Thanks, Dear｜1974",
     "c134｜笠井紀美子｜This Is My Love｜1975",
     "c134｜笠井紀美子｜TOKYO SPECIAL｜1977",
-    "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972"
+    "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972",
+    "c184｜笠井紀美子 & Oliver Nelson｜In Person｜1974",
+    "c184｜笠井紀美子 with Cedar Walton Trio｜Kimiko Is Here｜1975"
    ],
    "matchedBy": {
     "seed｜笠井紀美子｜Butterfly｜1979": "等值",
@@ -1124,7 +1231,9 @@
     "c134｜笠井紀美子｜Thanks, Dear｜1974": "等值",
     "c134｜笠井紀美子｜This Is My Love｜1975": "等值",
     "c134｜笠井紀美子｜TOKYO SPECIAL｜1977": "等值",
-    "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972": "前綴"
+    "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972": "前綴",
+    "c184｜笠井紀美子 & Oliver Nelson｜In Person｜1974": "前綴",
+    "c184｜笠井紀美子 with Cedar Walton Trio｜Kimiko Is Here｜1975": "前綴"
    }
   },
   "titleCheck": {
@@ -1139,6 +1248,10 @@
     "Kimiko"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1202,7 +1315,8 @@
     "seed｜坂本龍一｜戦場のメリークリスマス｜1983",
     "c174｜渡辺香津美｜Infinite｜1971",
     "c175｜渡辺香津美｜Endless Way｜1975",
-    "c178｜渡辺香津美｜Talk You All Tight｜1981"
+    "c178｜渡辺香津美｜Talk You All Tight｜1981",
+    "c184｜土取利行・坂本龍一｜Disappointment-Hateruma｜1976"
    ],
    "matchedBy": {
     "seed｜坂本龍一｜async｜2017": "等值",
@@ -1222,7 +1336,8 @@
     "seed｜坂本龍一｜戦場のメリークリスマス｜1983": "等值",
     "c174｜渡辺香津美｜Infinite｜1971": "等值",
     "c175｜渡辺香津美｜Endless Way｜1975": "等值",
-    "c178｜渡辺香津美｜Talk You All Tight｜1981": "等值"
+    "c178｜渡辺香津美｜Talk You All Tight｜1981": "等值",
+    "c184｜土取利行・坂本龍一｜Disappointment-Hateruma｜1976": "聯名內含"
    }
   },
   "titleCheck": {
@@ -1239,6 +1354,10 @@
     "東京ジョー"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1293,6 +1412,10 @@
     "渡良瀬"
    ],
    "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1320,7 +1443,7 @@
    "Okamoto, Issei"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1335,6 +1458,10 @@
     "Five O’clock Shadow"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1367,7 +1494,7 @@
    "田原今日子"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1382,6 +1509,10 @@
     "Elegance"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1447,6 +1578,10 @@
     "Ganaesia"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1516,6 +1651,10 @@
     "Saudade"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1586,6 +1725,10 @@
     "Ocean Breeze"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1615,7 +1758,7 @@
    "小林 泉美"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1630,6 +1773,10 @@
     "夏・Nuts・夏"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1672,6 +1819,10 @@
     "south wind"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1702,7 +1853,7 @@
    "加藤 登紀子"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1717,6 +1868,11 @@
     "愛はすべてを赦す"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP",
+   "bornOutside": "出身地 Harbin（CN）不在日本，長住日本——**算本土，但策展層自行判斷是否算日本場景**"
   }
  },
  {
@@ -1747,7 +1903,7 @@
    "海老名泰葉"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22277 列／131 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22301 列／132 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1763,6 +1919,10 @@
     "ViVid"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1800,12 +1960,28 @@
     "seed｜中山英二｜North Plain｜1982"
    ],
    "artistAlbumsInPool": [
+    "seed｜今田勝トリオ｜One for Duke｜1975",
+    "seed｜今田勝トリオ｜Green Caterpillar｜1975",
     "seed｜中山英二｜North Plain｜1982",
-    "seed｜中山英二｜Aya's Samba｜1978"
+    "seed｜今田勝トリオ｜Standards｜1976",
+    "seed｜今田勝カルテット｜Now!!｜1970",
+    "seed｜中山英二｜Aya's Samba｜1978",
+    "seed｜今田勝トリオ｜Maki｜1970",
+    "seed｜今田勝トリオ｜Planets｜1977",
+    "c134｜今田勝トリオ｜Maki｜1970",
+    "c134｜今田勝トリオ｜Planets｜1977"
    ],
    "matchedBy": {
+    "seed｜今田勝トリオ｜One for Duke｜1975": "削編制後綴",
+    "seed｜今田勝トリオ｜Green Caterpillar｜1975": "削編制後綴",
     "seed｜中山英二｜North Plain｜1982": "等值",
-    "seed｜中山英二｜Aya's Samba｜1978": "等值"
+    "seed｜今田勝トリオ｜Standards｜1976": "削編制後綴",
+    "seed｜今田勝カルテット｜Now!!｜1970": "削編制後綴",
+    "seed｜中山英二｜Aya's Samba｜1978": "等值",
+    "seed｜今田勝トリオ｜Maki｜1970": "削編制後綴",
+    "seed｜今田勝トリオ｜Planets｜1977": "削編制後綴",
+    "c134｜今田勝トリオ｜Maki｜1970": "削編制後綴",
+    "c134｜今田勝トリオ｜Planets｜1977": "削編制後綴"
    }
   },
   "titleCheck": {
@@ -1820,6 +1996,10 @@
     "North Plain"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1862,6 +2042,10 @@
     "Elegant Evening"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": false,
+   "how": "⚠ 無 country、別名全羅馬字——**策展層務必自己查**"
   }
  },
  {
@@ -1896,6 +2080,9 @@
    "status": "同藝人在池中，盤名不同——**逐張人工比**",
    "artistAlbumsInPool": [
     "seed｜Duke Jordan｜Flight to Denmark｜1974",
+    "seed｜鈴木勲トリオ｜Black Orpheus｜1976",
+    "seed｜鈴木勲セクステット｜Ako’s Dream｜1976",
+    "seed｜鈴木勲トリオ｜Blow Up｜1973",
     "seed｜Duke Jordan｜Flight to Japan｜1978",
     "seed｜Duke Jordan｜Flight to Jordan｜1961",
     "c138｜Duke Jordan｜Flight to Jordan｜1961",
@@ -1907,6 +2094,9 @@
    ],
    "matchedBy": {
     "seed｜Duke Jordan｜Flight to Denmark｜1974": "等值",
+    "seed｜鈴木勲トリオ｜Black Orpheus｜1976": "削編制後綴",
+    "seed｜鈴木勲セクステット｜Ako’s Dream｜1976": "削編制後綴",
+    "seed｜鈴木勲トリオ｜Blow Up｜1973": "削編制後綴",
     "seed｜Duke Jordan｜Flight to Japan｜1978": "等值",
     "seed｜Duke Jordan｜Flight to Jordan｜1961": "等值",
     "c138｜Duke Jordan｜Flight to Jordan｜1961": "等值",
@@ -1929,6 +2119,10 @@
     "Scotch Blues = スコッチ ブルース"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -1986,6 +2180,10 @@
     "Esprit"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -2045,6 +2243,10 @@
     "JIVE JIVE"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  },
  {
@@ -2104,6 +2306,10 @@
     "PHOTOGRAPHS"
    ],
    "note": ""
+  },
+  "domesticRecheck": {
+   "domestic": true,
+   "how": "artist country=JP"
   }
  }
 ]
