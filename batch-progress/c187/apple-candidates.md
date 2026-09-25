@@ -35,3 +35,27 @@
 
 ## 日野皓正《Wheel Stone - Live in Nemuro, Volume 2》1981
 - `1467708946` jp｜《ライヴ・イン・ネムロ ホイール・ストーン (車石) VOL. 2》／日野皓正｜1981｜2 軌｜依據：盤名直查＋年份｜掛名也過
+
+---
+
+## 主線逐筆裁定（2026-09-25，第 1981-B 條）：**8 張裡救回 1 張，其餘 7 張維持無來源**
+
+### ✓ 救回一張
+
+- **`日野皓正《Wheel Stone - Live in Nemuro, Volume 2》1981`** → `1467708946` jp
+  《**ライヴ・イン・ネムロ ホイール・ストーン (車石) VOL. 2**》／`日野皓正`｜1981｜2 軌。
+  ⚠ ⚠ **這是本線第一筆「掛名也過、盤名沒過」的回撈**：**Apple 上是和文題、卡單是英文題**
+  ——**掛名、年份、軌數三項全同。** **`recoveredBy: manual-catalogue-lookup`、有 `previewUrl`。**
+  ⚠ **給探測層的第四條**：**盤名的和文／英文對譯不是等值形，`titleOk` 摺不掉**
+  ——**而 `recover-unavailable.mjs` 的 `artGate` 欄（`掛名也過`）正好把這一種標出來了。
+  往後看到 `掛名也過` 那三個字，優先逐筆看。**
+
+### ✗ 其餘七張維持無來源
+
+- **`山下洋輔トリオ《Hot Menu》`** → `サディスティック・ミカ・バンド《Hot! Menu》1975`，**不同團。**
+- **`佐藤博《Orient》`** → 五筆同名不同碟（含 Don Cherry 1973、Jordi Savall 2006）。
+- **`生活向上委員会大管弦楽団《This Is Music Is This!?》`** → `klark sound《This Is Music》2025`。
+- **`日野皓正《Double Rainbow》`** → **八筆同名不同碟**（Kevin Mahogany／Aya Matsuura／Nanny Assis⋯）
+  ——⚠ **`Double Rainbow` 是 Jobim 曲題〈Chovendo na Roseira〉的英文題，撞名率極高。**
+- **連候選都沒有的三張**：`北村英治 Featuring 八城一夫《The Amazing Eiji Kitamura - Eight Degrees North》`／
+  `佐藤允彦 & Medical Sugar Bank《MSB Two》`／`秋吉敏子トリオ & Flute Quartet《Tuttie Flutie》`。
