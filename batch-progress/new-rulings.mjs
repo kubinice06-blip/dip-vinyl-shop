@@ -12,6 +12,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// ⚠ 2026-09-25（c-187 a 第 6345 條後的補記，主線第 1987-B 條）：**配條號之前先取真正的全域最大值**。
+// 我替 c-187 的研究層配了 6316–6345，而那時全域最大已經是 6405（c-186 寫作層）——沒撞號是運氣。
+// 用法：node batch-progress/new-rulings.mjs --max     → 印出全域最大條號
+if (process.argv[2] === '--max') {
+  let max = 0;
+  for (const d of fs.readdirSync('batch-progress')) {
+    for (const f of ['rulings.md', 'rulings-mainline.md']) {
+      const p = path.join('batch-progress', d, f);
+      if (!fs.existsSync(p)) continue;
+      for (const m of fs.readFileSync(p, 'utf8').matchAll(/^## (\d{4})/gm)) max = Math.max(max, Number(m[1]));
+    }
+  }
+  console.log(`全域最大條號 ${max}；下一段從 ${max + 1} 開始配。`);
+  process.exit(0);
+}
+
 const [batch, title, a1, a2, b1, b2] = process.argv.slice(2);
 if (!batch || !title || !a1) {
   console.log('用法：node batch-progress/new-rulings.mjs <批次> <標題> <a起> <a訖> <b起> <b訖>');
