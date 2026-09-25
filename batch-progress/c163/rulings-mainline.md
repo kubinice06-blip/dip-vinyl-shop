@@ -6832,3 +6832,17 @@ Apple 的 **和文題**《ライヴ・イン・ネムロ ホイール・スト�
    **→ 往後 append 白名單之前，先確認那個字串是研究層定案過的寫法。**
 3. **a8《Kaleidoscope》的 hook 後半句依賴 `g4`（全批唯一一處不在 g1/g2）** → **可以**：
    **該層在第 6265 條寫明理由，而 hook 踩空自查是 0 處**——**規則是「依賴要前移」，不是「絕對不准在 g3/g4」。**
+
+## 第 1984-B 條（2026-09-25）：c-188 的骨架與派工信備好了，**但不派**——店主授權的是五批
+
+**「繼續五批次」那一句涵蓋的是 c-183…c-187**（c-183 當時在跑鉤子層，往後數五批）。
+**c-188 已經備好三件**：`batch-progress/c188/rulings.md` 的骨架（a 6406–6435／b 6436–6465）、
+`slice.json` 的六道 `poolRecheck` 與 `domesticRecheck` 都重掃過、**a 組的策展派工信**（`chk-dispatch` 已過）。
+⚠ **但不派工**——**等店主說下一段。**
+
+**c-188 的 slice 現況（供下一次派工直接用）**：
+**a 組 19 張 1981–1982，CBS/Sony 9・Alfa 4・Kitty 3・Trio／Whynot 3**
+（⚠ **CBS/Sony 占九張，是本線單組最集中的一次**）；確定撞池 1（`Hiroshi Sato feat. Wendy Matthews《Awakening》`）、
+`bornOutside` 2（兩筆都是 `Marlene`）、全羅馬字 0、live 0、titleCheck 警語 2。
+**b 組 19 張 1982–1983，九家分散**；確定撞池 1（`Eiji Nakayama With Masaru Imada《North Plain》`）、
+全羅馬字 2、`domesticRecheck` 誤判 1（`Fumio Karashima Trio` ＝ 辛島文雄，日本人）、live 1、titleCheck 警語 2。
