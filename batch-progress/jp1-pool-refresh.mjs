@@ -114,7 +114,20 @@ for (const b of process.argv.slice(2)) {
     if (kn) { coll++; r.poolRecheck = { status: `⚠ ⚠ **前批策展層已裁定撞池——退**（${kn.ruling}）`, hit: [kn.poolRow], shape: kn.shape, artistAlbumsInPool: hits, matchedBy: why }; }
     else if (inPoolNow) { coll++; r.poolRecheck = { status:'⚠ 確定撞池——退', hit: exact, artistAlbumsInPool: hits, matchedBy: why }; }
     else if (hits.length) { hint++; r.poolRecheck = { status:'同藝人在池中，盤名不同——**逐張人工比**', artistAlbumsInPool: hits, matchedBy: why }; }
-    else if (!anyCJK) { flat++; r.poolRecheck = { status:'⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）', artistAlbumsInPool: [] }; }
+    else if (!anyCJK) {
+      flat++;
+      // ⚠ 2026-09-25（c-185 a 第 5890 條，主線第 1967-B 條）：**這個警語不因 country 而不發**。
+      // c-183 b 建議「非 JP 的不發」、c-185 a 建議「null 也不發」，**兩者都會漏掉真撞池**
+      // ——c-184 a 的 `峰厚介` 逐字就是 MB `country` 為 null 的真日本人、真撞池（第 5731 條）。
+      // 改的是**語意**：把 MB 那邊查到什麼一起寫出來，讓讀的人知道這一格是「沒查過」不是「漏了」。
+      const how = (r.domesticRecheck?.how || '').replace(/\*\*/g, '') || '未重算';
+      r.poolRecheck = {
+        status: `⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜`
+              + `⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「${how}」，**日本人掛羅馬字名與外國藝人兩種都可能**，`
+              + `照第 4106 條四項自己判（第 1967-B 條）`,
+        artistAlbumsInPool: [],
+      };
+    }
     // ⚠ 2026-09-24：這一行原本把比對日與涵蓋批次寫死成 `2026-09-22、含 c-173…c-177`，
     // 於是 jp-2 線切出來的 slice 帶著一句與事實不符的說明。改成當場產生。
     else { none++; r.poolRecheck = { status:`池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 ${TODAY}、池 ${pool.length} 列／${POOLBATCHES} 批卡單）`, artistAlbumsInPool: [] }; }
