@@ -203,7 +203,10 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   //   召回率——`阿川泰子《Night Line》` 的 2016 ビクター 數位版在 jp 與 us 都有，卻先在 us 配到別張二合一。
   // 這是**日本國內盤的線**，`jp` 必須排第一。
   c173: JPN, c174: JPN, c175: JPN, c176: JPN, c177: JPN,
-  c178: JPN, c179: JPN, c180: JPN, c181: JPN, c182: JPN };
+  c178: JPN, c179: JPN, c180: JPN, c181: JPN, c182: JPN,
+  // jp-2 線（日本爵士獨立廠牌十五家）：同樣是日本國內盤，`jp` 必須排第一（第 1943-B 條）。
+  c183: JPN, c184: JPN, c185: JPN, c186: JPN, c187: JPN,
+  c188: JPN, c189: JPN, c190: JPN, c191: JPN };
 
 const cards = [];
 for (const b of BATCHES)
