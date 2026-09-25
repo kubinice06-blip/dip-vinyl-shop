@@ -8,7 +8,11 @@
 //   1. `prop-<組>.json`／`out-<組>.json`／`<批>-<組>.json` 這幾種「自己的檔」有沒有被寫成對方的；
 //   2. 批次號有沒有殘留上一批的；
 //   3. 「你負責 X 組」與組別參數一致；
-//   4. 裁定條號區間有沒有與「另一組用」的區間重疊。
+//   4. 裁定條號區間有沒有與「另一組用」的區間重疊；
+//   5. ⚠ 2026-09-25（主線第 1964-B 條，派工信第十五次出錯）：**張數與 hook 舉例是不是對方那一組的**。
+//      c-183 writer-2 的信裡 §二 逐字寫「本組五張的 hook 有四張是代稱開頭」並列了四個 a 組的 hook
+//      ——**我用 `.replace()` 換那一段而字串沒對上，整段靜靜留著 a 組的內容**（第三次同一種失效）。
+//      這一道用實際檔案的張數與 hook 原文回比，不靠我自己記得有沒有換到。
 import fs from 'node:fs';
 
 const [file, batch, group] = process.argv.slice(2);
@@ -57,5 +61,52 @@ if (mineRange && otherRange) {
   const [a1, a2] = [Number(mineRange[1]), Number(mineRange[2])], [b1, b2] = [Number(otherRange[1]), Number(otherRange[2])];
   if (a1 <= b2 && b1 <= a2) warn(`條號區間重疊：自己 ${a1}–${a2}、另一組 ${b1}–${b2}`);
   else console.log(`  條號 ${a1}–${a2}／另一組 ${b1}–${b2}，不重疊 ✓`);
+}
+// 5. 張數與 hook 舉例
+// 先找出這一批「自己這組」與「對方那組」的實際張數與 hook 原文
+const gl = { a: 'a', b: 'b', 1: 'a', 2: 'b' }[group];
+const ol = { a: 'b', b: 'a', 1: 'b', 2: 'a' }[group];
+const readRows = f => { try { const j = JSON.parse(fs.readFileSync(f, 'utf8')); return Array.isArray(j) ? j : Object.values(j); } catch { return null; } };
+const layerFiles = g => [
+  `desc-tools/batches/input/${batch}-writer-${g === 'a' ? 1 : 2}.json`,
+  `desc-tools/batches/hooks/${batch}-hooks-${g}.json`,
+  `desc-tools/batches/research/${batch}-${g}.json`,
+  `batch-progress/${batch}/prop-${g}.json`,
+];
+const rowsOf = g => { for (const f of layerFiles(g)) { const r = readRows(f); if (r) return { f, rows: r }; } return null; };
+const mine = rowsOf(gl), theirsRows = rowsOf(ol);
+if (mine) {
+  const n = mine.rows.length;
+  // 信裡宣稱的張數：「你負責 … N 張」與「本組N張」兩種寫法
+  const CN = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10, 十一: 11, 十二: 12, 十三: 13, 十四: 14, 十五: 15 };
+  const claims = [];
+  for (const m of s.matchAll(/你負責[^\n]{0,40}?(\d+) 張/g)) claims.push({ what: '你負責', n: Number(m[1]), text: m[0] });
+  for (const m of s.matchAll(/本組(\d+|[一二三四五六七八九十]{1,3})張/g)) claims.push({ what: '本組', n: Number(m[1]) || CN[m[1]] || 0, text: m[0] });
+  // ⚠ 「本組N張」也會是子集的說法（「`渡辺貞夫` 本組三張」），所以只有**等於對方那組的張數**時才硬報
+  // ——那正是「整段是對方那組的」的指紋（c-183 writer-2 逐字「本組五張」＝ a 組的 5 張）。
+  const theirN = theirsRows ? theirsRows.rows.length : -1;
+  for (const c of claims) {
+    if (!c.n || c.n === n) continue;
+    if (c.what === '你負責' || c.n === theirN) warn(`張數不符：信裡「${c.text}」，而 ${mine.f} 實際 ${n} 張${c.n === theirN ? `——⚠ 這個數字正好是對方那組的張數` : ''}`);
+    else console.log(`  （只報不擋）「${c.text}」不等於本組 ${n} 張，多半是子集的說法，自己看一眼`);
+  }
+  if (claims.length) console.log(`  張數宣稱 ${[...new Set(claims.map(c => c.n))].join('／')}｜實際 ${n}（${mine.f}）`);
+}
+// hook 舉例：信裡用反引號引的短字串，若逐字出現在對方那組的 hook 裡、而自己這組沒有，就是抄錯組
+if (theirsRows && mine) {
+  const txt = r => [r.hook, r.note, r.album, r.artist].filter(Boolean).join('　');
+  const theirText = theirsRows.rows.map(txt).join('　');
+  const myText = mine.rows.map(txt).join('　');
+  const quoted = [...new Set((s.match(/`[^`\n]{3,20}`/g) || []).map(x => x.slice(1, -1)))];
+  // ⚠ 兩種要放過：
+  //  (a) **刻意告知對方那組有什麼**（「b 組 2 張：…」「不在你這一組，不要查」「跨兩組」）——那一行會自己說明；
+  //  (b) 純 ASCII 且短的通用詞（`thin` 這種規格用語）。
+  const lines = s.split('\n');
+  const deliberate = q => lines.filter(l => l.includes('`' + q + '`'))
+    .every(l => /[ab] 組|另一組|對方|不在你|不要查|跨兩組|跨組|只准讀/.test(l));
+  const wrong = quoted.filter(q => theirText.includes(q) && !myText.includes(q)
+    && !(!/[぀-ヿ一-鿿]/.test(q) && q.length <= 5) && !deliberate(q));
+  for (const q of wrong) warn(`舉例 \`${q}\` 逐字出現在對方那組（${theirsRows.f}），自己這組沒有`);
+  if (!wrong.length) console.log(`  反引號舉例 ${quoted.length} 個，沒有一個是對方那組的 ✓`);
 }
 console.log(bad ? `\n標記 ${bad}` : '\n全部通過 ✓');
