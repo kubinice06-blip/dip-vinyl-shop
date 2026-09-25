@@ -11,7 +11,8 @@
 //   4. 裁定條號區間有沒有與「另一組用」的區間重疊；
 //   5. ⚠ 2026-09-25（主線第 1964-B 條，派工信第十五次出錯）：**張數與 hook 舉例是不是對方那一組的**；
 //   6. ⚠ 2026-09-25（主線第 1970-B 條）：**本批的 rulings.md 在派工前就要存在**（並行覆寫過一次）；
-//   7. ⚠ 2026-09-25（主線第 1971-B 條，派工信第十八次出錯）：**「本組 <廠牌> N 張」回比 slice**。
+//   7. ⚠ 2026-09-25（主線第 1971-B 條，派工信第十八次出錯）：**「本組 <廠牌> N 張」回比 slice**；
+//   8. ⚠ 2026-09-25（主線第 1976-B 條，派工信第十九次出錯）：**引到某一檔的條號要真的在那一檔裡**。
 //      c-183 writer-2 的信裡 §二 逐字寫「本組五張的 hook 有四張是代稱開頭」並列了四個 a 組的 hook
 //      ——**我用 `.replace()` 換那一段而字串沒對上，整段靜靜留著 a 組的內容**（第三次同一種失效）。
 //      這一道用實際檔案的張數與 hook 原文回比，不靠我自己記得有沒有換到。
@@ -75,7 +76,17 @@ const layerFiles = g => [
   `desc-tools/batches/research/${batch}-${g}.json`,
   `batch-progress/${batch}/prop-${g}.json`,
 ];
-const rowsOf = g => { for (const f of layerFiles(g)) { const r = readRows(f); if (r) return { f, rows: r }; } return null; };
+// ⚠ 策展層的信要比 **slice**（prop 只裝收件，張數本來就會少）——用「輸出寫 prop-<組>.json」判斷是不是策展信。
+const isCuration = new RegExp(`輸出[^\\n]{0,40}prop-[ab]\\.json`).test(s);
+const rowsOf = g => {
+  if (isCuration) {
+    const sp = `batch-progress/${batch}/slice.json`;
+    const all = readRows(sp);
+    if (all) return { f: sp + `（g === "${g}"）`, rows: all.filter(r => r.g === g) };
+  }
+  for (const f of layerFiles(g)) { const r = readRows(f); if (r) return { f, rows: r }; }
+  return null;
+};
 const mine = rowsOf(gl), theirsRows = rowsOf(ol);
 if (mine) {
   const n = mine.rows.length;
@@ -141,4 +152,19 @@ try {
     if (checked) console.log(`  廠牌張數回比 ${checked} 處 ✓`);
   }
 } catch {}
+// 8. ⚠ 2026-09-25（主線第 1976-B 條，派工信第十九次出錯）：**「c1XX/rulings.md 的 NNNN–NNNN」要真的在那一檔裡**。
+//    我在 c-187 兩封信裡把「5936–5995」寫成 c187/rulings.md，而那一檔當時零條裁定（實際在 c186）。
+for (const m of s.matchAll(/`?(?:batch-progress\/)?(c\d+)\/rulings\.md`?[^\n]{0,40}?(\d{4})[–-](\d{4})/g)) {
+  const [, bb, r1] = m;
+  const f = `batch-progress/${bb}/rulings.md`;
+  if (!fs.existsSync(f)) { warn(`信裡引 ${f} 的 ${r1}–，但那一檔不存在`); continue; }
+  const t = fs.readFileSync(f, 'utf8');
+  if (!new RegExp(`^## ${r1}`, 'm').test(t)) {
+    // 骨架檔（本批自己的）只寫區間、還沒有條文，那是正常的
+    const own = bb === batch;
+    const msg = `信裡寫「${f} 的 ${r1}–${m[3]}」，而該檔沒有 ## ${r1}`;
+    if (own) console.log(`  （只報不擋）${msg}——本批的骨架檔還沒有條文，正常`);
+    else warn(`${msg}——**條號在別的批次檔裡，不是這一檔**`);
+  }
+}
 console.log(bad ? `\n標記 ${bad}` : '\n全部通過 ✓');
