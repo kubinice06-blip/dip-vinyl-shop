@@ -959,3 +959,127 @@ B 面七軌零 credit——〈港は雨の晩〉〈素敵なあなた (Bei Mir B
 6. ⚠ **`IN MOTION`（#1，退件）若哪天從別的線撈回**：**ja 維基的訪談說觀眾拍手被刻意剪掉、節奏是實況帶而其餘是錄音室疊錄**——**正文不能寫成「未經修飾的現場」。**
 
 **編號區間結算**：本節用到 **6536–6565（共 30 條），區間用滿、未越界（b 組 6566–6595）。**
+
+---
+
+# a 組研究層（6716–6745）｜c-189 a 組 10 張（收件全表）｜研究層｜2026-09-27
+
+輸入 `desc-tools/batches/cards/c189-cards.json` 的 `group === "a"` 10 筆；輸出 `desc-tools/batches/research/c189-a.json`。
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）→ `CURATION-BRIEF-jp2.md`（全檔）→ `CURATION-BRIEF-jp1.md` 第〇節 → `CURATION-BRIEF-bluenote-post1985.md` 附錄二；
+主線第 1934-B…1993-B 條；本檔策展兩組 6536–6595 全讀；c-178 研究層兩段看過查法。同掛名前批研究稿讀過：c-186 a／b、c-187 a／b 的 THE SQUARE、カリオカ、Casiopea、日野皓正、高中正義（c-181…c-187）。⚠ 引用一律「c-18X 第 NNNN 條」。
+
+## 6716　總表：**10 張、facts 115 條（11–12 條／張），full 10、thin 0；推翻策展層 8 處（判斷 5、人名 2、年份 1），另補 20 餘格**
+
+| # | 卡 | facts | 本層最值錢的一格 |
+|---:|---|---:|---|
+| 1 | 大野方栄《Masae A La Mode》 | 12 | 唱過 800 首以上廣告歌；B1 早在發行前就是 TBS《TVジョーカーズ笑》片尾曲；A1 的來源是 The Manhattan Transfer 1978《Pastiche》版〈Four Brothers〉 |
+| 2 | NANIWA EXPRESS《Wind Up》 | 11 | ⚠ **第三張不是第二張**（6717）；1983 年一年一百六十場；內頁印著大阪北堀江的經紀地址 |
+| 3 | THE SQUARE《うち水にRainbow》 | 11 | 松任谷由実 作曲並命名 B1，兩年後才填詞成〈幻の魚たち〉給 小林麻美；前鼓手 Michael Kawai 在盤上掛 CBS/Sony 宣傳 |
+| 4 | 日野皓正《New York Times》 | 12 | 盤上唯一的日本樂手是掛名者；執行製作 Stan Vincent 是〈Ooh Child〉作者；⚠ `previews.json` 誤命中（6724） |
+| 5 | Today's Latin Project | 12 | ⚠ **見砂和照＝東京キューバン・ボーイズ 創辦人 見砂直照 的三男，三處來源**（策展層留的一格，6720）；父親的樂團 1980 解散 |
+| 6 | 真梨邑ケイ《P.S. I Love You》 | 12 | 伴奏十五人裡八人是 Wind-Breakers 團員（c-187 b 已上架那張）；discomate CD 號段第一號 CDP-1 |
+| 7 | カリオカ《Dusk》 | 11 | ⚠ 〈Never Ending〉是《装甲騎兵ボトムズ》片尾曲的器樂改編；創團五人只剩兩人、兩人都剛歸隊 |
+| 8 | 高中正義《Can I Sing?》 | 11 | 第一張大量用音序器的專輯（原廠頁逐字）；Oricon 第 2；唯一掛名主唱是 来生たかお 唱姊姊的詞 |
+| 9 | Casiopea《Down Upbeat》 | 12 | 一次錄成不疊錄；首版 CD 有一批漏掉〈The Continental Way〉第一聲小鼓 |
+| 10 | NANIWA EXPRESS《Modern Beat》 | 11 | 鼓手 credit 有一項「Gomi-can」（垃圾桶）；1984-11-24 名古屋場被錄成 Sony Beta 示範帶，五首裡四首出自本盤 |
+
+## 6717　推翻：`NANIWA EXPRESS《Wind Up》` 是 **CBS/Sony 第三張**，不是卡單寫的第二張
+
+ja 維基「ナニワエキスプレス」原創專輯表逐字：1st《NO FUSE》1982-05-21／2nd《大宇宙無限力神》1982-11-21（28AH 1504）／3rd《WIND UP》1983-06-22／4th《MODERN BEAT》1984-07-01。Discogs 藝人頁 3406984 的 releases 有 1982 年 master 1223031《Daiuchuhmugenryokushin = 大宇宙無限力神》，2007 年盒裝 MHCL 1070〜6 的 CD2 也是它。**兩源一致。** ⚠ c-188 的同掛名卡若寫序數，要照這張表。
+
+## 6718　推翻：`日野皓正《New York Times》` 的管樂編曲
+
+卡單寫 Kenny Kirkland 掛「A1／A3 的管樂編曲」——原壓 releases/1407269 逐字是 `Arranged By [Horns] — Kenny Kirkland {A1, A3}` 與 `— Terumasa Hino {A1, A3}` 兩行並列，另有 `— Phil Markowitz {B3}`（卡單漏）。卡單也沒列 `Programmed By [Synths] — Peter Cannarozzi`、`Coordinator — Susan Hino`、美術 浅葉克己／大木理人、攝影 半田也寸志。
+
+## 6719　推翻：`大野方栄《Masae A La Mode》` A1 的 vocalese 來源線
+
+卡單寫〈Four Brothers〉「正是 Lambert, Hendricks & Ross 一系替 Woody Herman 樂團那首填詞的招牌曲」——本層查不到 LH&R 那一句的來源；**可查的是**：ja 維基逐字「マンハッタン・トランスファーによるバージョンを元にしたカヴァー」、作詞欄記 Jon Hendricks，而 Discogs master 97215 證實 The Manhattan Transfer 1978《Pastiche》A1 就是〈Four Brothers〉、作曲欄並列 Jimmy Giuffre 與 Jon Hendricks、Giuffre 本人在薩克斯組。facts 寫這一條線。**收件判斷（c-189 a 第 6558 條／主線第 1992-B 條）不受影響，facts 零處把本盤寫成流行歌盤。**
+
+## 6720　解掉策展層留給研究層的一格：`見砂和照` 是 `見砂直照` 之子（三處來源）
+
+c-189 a 第 6565 條給本機第 2 點逐字「見砂和照 與 見砂直照（東京キューバンボーイズ）的關係本層沒有找到來源欄位，留給研究層」——**Discogs 藝人頁 843677 `profile` 逐字「Son of [a2334399]」、ja 維基「見砂和照」逐字「見砂直照の三男」、「東京キューバン・ボーイズ」逐字「直照の息子である見砂和照」**。另查到兩條人脈：A 面編曲 大谷和夫 與 見砂和照 同為 SHŌGUN 團員；timbales 的 納見義徳 是 東京キューバン・ボーイズ 老團員（Discogs 620175 `groups`）。⚠ 2020 CD 的 `Producer` 逐字掛 `Tadaaki Misago`（父），與原版宣傳盤的 `Kazuaki Misago`（子）不同——疑為投稿誤植，facts 不寫。
+
+## 6721　推翻：`〈Jungle Drums〉` 的 Artie Shaw 錄音年 1940 → **1939**
+
+Discogs releases/18550849（Artie Shaw & His Orchestra《Back Bay Shuffle / Jungle Drums》78 轉）逐字 1939；卡單的 1940 是再壓（21634027，`Repress`）。**c-189 a 第 6560 條（古巴曲目逐軌判，主線第 1992-B 條立為通則）的甲乙結論不變。**
+
+## 6722　推翻兩處判斷 ＋ 兩處人名：`カリオカ《Dusk》`
+
+1. **〈Voce E Bonita〉不是既有的巴西流行歌**：ja 維基《DUSK》曲目逐字「Você É Bonita（佐藤正美）」——團員原創，不計入乙（卡單照 Jorge Ben 同題曲判乙）。
+2. ⚠ ⚠ **〈Never Ending〉是動畫歌的器樂改編**：同條目註腳逐字「ロボットアニメ『装甲騎兵ボトムズ』のエンディングテーマ『いつもあなたが』の別アレンジによるインストゥルメンタル曲」；那首歌 1983 年、作曲編曲是本盤鍵盤手 乾裕樹 本人（ja 維基「装甲騎兵ボトムズ」）。**照主線第 1934-B 條 (1) 與第 1944-B 條「任何既有的非爵士曲目」保守算乙**（不是第 1978-B 條甲補那一格：前作是人聲動畫歌、不是器樂即興曲目）。**重算甲 7／乙 3（Never Ending、Magoado、Se Ela Perguntar）＝30%，第三肢照舊成立。** ⚠ 給主線：**動畫翻奏線（主線第 1934-B 條）的射程是否含「作曲者本人把自己的動畫歌改成器樂收進樂團盤」**，本層取保守、結論不受影響，建議定一句。
+3. **`Tetsuroh Uetake` → `植竹哲朗`**（ja 維基成員節逐字「植竹 哲朗（うえたけ てつろう）ベース担当。1983年カリオカに加入」）；**`Yuichi "Antonio" Ishida` → `アントニオ石田`**（ja 維基與 c-187 a 已上架的寫法）。
+
+## 6723　補正（不裁）：`真梨邑ケイ《P.S. I Love You》` 的 原田靖 樂器欄兩版打架
+
+原壓 `Trumpet — Harada Yasushi`；1986 Continental 再發 `Trombone — Harada Yasushi` 並多列 `Trumpet — Tetsuo Fushimi`；藝人頁 2533901 `profile` 只寫「Trombone Player」，Wind-Breakers 盤上他也是長號。**簡報第三節第 30 點講「再發印錯要回原壓核」，而這一筆的旁證方向相反——本層不裁，facts 不寫他的樂器、伏見哲夫 不寫。**
+
+## 6724　⚠ ⚠ 給主線：`previews.json` 的 `日野皓正|New York Times` 是誤命中（本層不改）
+
+`status: ready`，但 `appleTitle`／`appleArtist` 逐字都是 `New York Times`、`appleYear` 2007、`trackCount` 5、`yearDrift` 24——**另一個「掛名＝盤名」的實體**。主線第 1980-B 條那道硬退（`aliasOnlyTitle ＋ 漂移 ≥20`）沒擋到，因為它的證人是盤名本身、不是 alias。策展層三路查 Apple jp 都沒找到本盤；**建議降級 unavailable，並考慮在探測層加一道「Apple 那一筆掛名＝盤名、卡片掛名不是它、年份漂移 ≥20 → 退」**（第 1935-B 條第三道的條件加上漂移，現行第三道為何沒擋下請主線看一眼）。
+
+## 6725　策展層留的疑問，本層兩處確認為成立
+
+- **`THE SQUARE《うち水にRainbow》` B1〈黄昏で見えない〉**：卡單擔心「若是她既有歌曲的器樂版則乙 3/10」——ja 維基專輯條目逐字 松任谷由実「作曲とタイトル命名に携わる」，歌詞版〈幻の魚たち〉是 1985-05-22 才出（小林麻美 單曲 B 面）。**器樂版在先，甲成立，乙維持 2/10。**
+- **`高中正義《Can I Sing?》`**：可查的主唱欄仍只有 B4 客座 来生たかお 一格（Discogs 與 ja 維基逐軌表都沒列另四首的主唱）——**乙 5/10 的邊界照 c-189 a 第 6559 條不動；facts 不寫「他自己開口唱」。**
+
+## 6726　再發版本數：**10 張全部重跑 `versions` ＋ MB；數字改判 1 筆（#2 +1），另登記 5 筆「只有第三來源」的版本不計**
+
+| # | Discogs | MB（獨有） | 聯集（策展層） | 本層 | 第三來源才有的 |
+|---:|---:|---:|---:|---:|---|
+| 1 | 3 | 0 | 3 | 3 | — |
+| 2 | 2 | 1（數位） | 3 | **4** | ⚠ ja 維基：**1998-09-19 Village Records `VRFL-0003` CD**（兩家資料庫都沒建；同系列同日 VRFL-0005 MB 有建）＋ 2007 盒裝 CD3（不計） |
+| 3 | 7 | 0（＋Apple 1） | 8 | 8 | ja 維基外部連結：SACD `VRGL-8011`（Wayback 連線被重設，無法核，不計） |
+| 4 | 8 | 0 | 8 | 8 | — |
+| 5 | 6 | 1 | 7 | 7 | — |
+| 6 | 4 | 0 | 4 | 4 | — |
+| 7 | 4 | 0 | 4 | 4 | ja 維基：同期卡帶（無號，不計）；⚠ ja 維基說 2013 是首次 CD 化，與 Discogs 的無年份 `3133-6` CD 衝突，facts 兩邊都不寫 |
+| 8 | 10 | 1 | 11 | 11 | — |
+| 9 | 21 | 1 | 22 | 22 | 2009 `MHCL 20014`＝26 片盒裝《Legend Of Casiopea》第 12 片（Discogs 7909999，不計）；2016-07-27 高解析度重製數位版（不計，若另計 23） |
+| 10 | 4 | 0（＋Apple 1） | 5 | 5 | 2007 盒裝（不計） |
+**合計 聯集 75 → 76。** **判準（本層定，可逆）：第三來源給出「目錄號＋日期」且兩家資料庫都沒建的實體版本才 +1；盒裝的單片、無號的卡帶、無法核內容的連結、同一數位版的高解析度重製都只記不計。** ⚠ 四種漏法本組實測：(a) 只數 mbNote——10/10 已由策展層避開；(b) 1970 年代同號再發／2016 後黑膠——#8 的 2026 LP、#5 的 2021 LP 都在表內；(c) 數位版——4 筆（#2／#5／#8／#9 MB 有；#3／#10 只有 Apple）與策展層相同；(d) MB 獨有——0 筆新增。
+
+## 6727　年份與日期：**改判 0；補出日期 5 筆**
+
+`year` 10/10 維持。ja 維基補出 Discogs／MB 只有裸年份的五張的發行日：#2 1983-06-22、#7 1983-06-26（與同日拼盤《Horizon Dream Vol.3》一致）、#10 1984-07-01（與 Discogs 1984 CD 的 `released` 一致）、#1 1983-08-24（與 Discogs 原壓一致）、#8／#9 與資料庫一致。⚠ #8 的 `KTCR-1552` Discogs 1991 vs MB 1995-05-25 未定，facts 照 Discogs。
+
+## 6728　新立或補出的串連（給鉤子層，逐條只能用在一張卡）
+
+1. **#6 伴奏十五人裡八人是 Wind-Breakers**（4199680 `members`）——c-187 b 已上架《Wind-Breakers》；行文要講明本盤是 真梨邑ケイ 的碟。
+2. **#3 與 #10 的 1991 CD 都有 `Michael Kawai`**（#3 原壓 `Promotion [CBS/SONY Inc.]`、#10 1991 CD `Producer [Assistant]`）——**只給 #3 用**，#10 不寫。
+3. **#8 B5 與 #7 的弦樂都是 多忠昭 的錄音室弦樂團**（Discogs 2841980／3347163 兩個別名）——兩張各寫一次即可，不要寫成同一個切角。
+4. **#9 的三首是 b 組《Casiopea Live》的來源**（c-189 b 第 6588 條）——本卡 facts 不提那張。
+5. **#1 的伴奏是 Casiopea 全員、#9 是 Casiopea 的碟**——#1 的行文不得寫成 Casiopea 的碟。
+6. **#7 同日拼盤《Horizon Dream Vol.3》的併輯對象有 佐藤博（#1 的編曲者、c-189 a 退件 #17 的領銜）與 小林泉美**——只寫在 #7。
+
+## 6729　來源實測（本工作階段）
+
+- **Discogs API**：約 75 次，全 200；`labels/<id>` 2 次（discomate 71114、Take-Off）；`database/search` 8 次（`catno=` 查無 3 次＝VRFL-0003／VRGL-8011／MHCL-20014，第三個再用 `q=+catno+year` 才撈到盒裝）。
+- **MusicBrainz**：約 14 次，一次回空（重試成功），UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+- ⚠ **ja 維基 `action=raw`：18 查 17 中**；**專輯條目 3/3（《うち水にRainbow》《CAN I SING?》《DOWN UPBEAT》）**——與簡報第 29 點「專輯條目 33%」相反，這個年段的 CBS/Sony／Kitty／Alfa 主流 fusion 盤專輯條目齊全，**而且三條都給了 Discogs 沒有的欄位（Oricon 名次、單曲、廣告與電視使用、參加樂手表的漏格）**。⚠ **標題含日文時 URL 要用 `encodeURIComponent` 產生**（手工 percent-encode 的片假名標題回 404，第一次查 ナニワエキスプレス 就是這樣）。en 維基 2 查 0 中（`Four Brothers (composition)` 404、`Down Upbeat` 是轉址）。
+- ⚠ **`universal-music.co.jp/takanaka-masayoshi/products/upcy-9060/` 與 `/upcy-6722/` 兩頁 200**（簡報三之二的「名-姓小寫」slug 第四個命中藝人）；2006 頁的商品說明逐字給出「シーケンサーによる打ち込みサウンドが登場するのはこのアルバムから」，**但同一句把 鳥山雄司 寫成「鳥山雄二」**（主線第 1941-B 條：官方頁人名不可採）。
+- **CDJournal（`artist.cdjournal.com`）1 次 200**：短評給出「オーバーダブなしの一発録音」——新來源，只取評語、不取人名。
+- ⚠ **Wayback（web.archive.org）連線被重設**，Sony Music Shop 舊頁核不了。
+- **Apple**：本層沒有另打，沿用 `previews.json` 與策展層的查詢結果（6724 那一筆除外）。
+
+## 6730　`desc-tools/jp-proper-names.json`：**append 2 個（`来生えつこ`、`来生たかお`），既有 83 個一字未動**
+
+`qa-batch` 的 `SIMP` 把 `来` 攔下；兩個字串都是 Discogs 1044026／863072 `namevariations` 逐字、策展層也已用過的定案寫法（主線第 1983-B 條：先確認是定案寫法再 append）。**另一處誤報是我 notes 裡引的日文原句（`以来`），已改寫成中文，不加白名單。**
+
+## 6731　人名：**回打 Discogs 藝人頁約 90 個；改判 2（6722），退成羅馬字 7，新定漢字 12**
+
+退成羅馬字（查不到漢字或多形並存不選）：`Michio Uehara`（植原路雄／植原道雄）、`Minoru Ishiyama`（石山実／石山実穂）、`Isamu Harada`、`Katsuya Yasumuro`、`Yoshiyuki Itoh`、`Mikio Takamatsu`、`Mitsuharu Kobayashi`。
+新定漢字（逐一有欄位）：小澤夢生（realname）、奥村靫正、猪俣彰三、渡辺モリオ、河東伸夫、浅葉克己、大木理人、半田也寸志、鋤田正義、石倉ヒロユキ、五十嵐輝明、植竹哲朗（ja 維基）。⚠ **本名打架一處**：真梨邑ケイ 的 ja 維基「本名の川口今日子名義」vs Discogs `realname` `田原今日子`——facts 只寫藝名時期的 川口今日子，不寫本名。
+
+## 6732　反向禁令與已用切角（逐張）
+
+**不寫**：和泉宏隆／乾裕樹／佐藤正美／大谷和夫／納見義徳／稲垣次郎／前田憲男／佐山雅弘／Kenny Kirkland 的辭世；NANIWA EXPRESS 1986 解散與重組、東原力哉 2021 的病況；真梨邑ケイ 1994 年以後的活動；日野皓正 2017 年事件；東京キューバン・ボーイズ 2003／2005 重組。**可寫（作品綁定、標時序）**：#8〈Funk'N'Roll Train〉1985–86 的電視使用、#9 兩首的電視／電台使用、#3〈黄昏で見えない〉1985 年的歌詞版、#5 的父親樂團 1980 解散（本盤成立背景）。
+**已用切角不重寫**：THE SQUARE 團名來歷／T-SQUARE 改名／伊藤八十八 生平；日野皓正 父親與移居美國、Kirkland 1980 巡日；カリオカ 改名與 session 起源；Casiopea 團名、441Hz、Alfa 出道波折；高中正義 出生名與歸化、《SAUDADE》冠軍。
+
+## 6733　交件前自跑
+
+1. `node qa-batch.mjs research c189` → **a 10 張全 full；唯一標記「key 集合與卡單不一致」＝b 組尚未交件**（簡體 0、千分位 0）。
+2. 自量：facts 11–12 條、`src` 115/115 完整 https、`hookCandidates` 10×2、facts 內零處點名資料來源平台、獎項零筆（#1「比賽並得獎」是ユイ音楽工房 比賽的入賞，非唱片獎）、CJK 旁半形逗號 0。
+3. **同批兩組曲題表互掃（主線第 1987-B 條）**：10×10 張 master 逐軌比，**只有 #9 對 b 組《Casiopea Live》三首**（已知，c-189 b 第 6588 條），**零新撞**。
+4. **邊界**：只寫了 `desc-tools/batches/research/c189-a.json`（新增）、本檔（append）、`jp-proper-names.json`（append 2）；卡單／prop／`previews.json`／`caa.json`／`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore 零寫入；零 git 寫入操作。
+
+**編號區間結算**：本段用 **6716–6733（18 條）**，未越界（b 組 6746–6775）。
