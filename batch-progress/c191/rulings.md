@@ -826,3 +826,243 @@ MB 的 RG `secondary-types` 逐字 `["Remix"]`、artist-credit 逐字是 MB 的 
 **信第三節第 1 點的三格數字（查無 8／確定 0／人工比 7）、「變體全是羅馬字」3 筆、`bornOutside` 1 筆、非本土 1 筆、slice 標 live 2 筆、第二節 (6) 的廠牌分佈（CBS/Sony 12・Polydor JP 3・Nippon Crown 1・Alfa 1・Denon 1），與 slice 逐格相符。** ⚠ **唯一的時差**：「池中查無此藝人」8 格裡 #4／#6 兩格在今天的池裡各有別張卡（切批之後才落地），不撞（第 6701 條）。
 
 **編號區間結算**：本段用到 **6686–6715（共 30 條），區間用滿、未越界（a 組 6656–6685）。**
+
+
+---
+
+
+# c-191 a 組研究層（7036–7065）｜jp-2 第九批・1975–1989 年段｜2026-09-27
+
+批次 c-191｜a 組 11 張（收件全表）｜研究層
+輸入：`desc-tools/batches/cards/c191-cards.json` 的 `group === "a"` 11 筆｜輸出：`desc-tools/batches/research/c191-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端三處例外）→ `CURATION-BRIEF-jp2.md`（含第三節 35 點與三之二）→ `CURATION-BRIEF-jp1.md` 第〇節與附錄二 ＋ 主線第 1934-B…1999-B 條 ＋ 本檔策展兩組全文。⚠ 引用一律寫「c-18X／c-19X 第 NNNN 條」。
+
+## 7036　總表：**11 張，facts 合計 127 條（10–12 條／張）；full 11、thin 0**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | Casiopea —《Casiopea Perfect Live II》 | 12 | full | 同場先出 LD（1987-02-25）；客席 楠木勇有行 與「1986–87 帶同專屬歌手」；**製作人三源三說、整格不寫** |
+| 2 | 大村憲司 —《Kenji Shock》 | 12 | full | Jeff Porcaro／Lukather／Paich 的 Toto 首張早本盤六週；B3 的鼓是 Harvey Mason 自己 |
+| 3 | 近藤等則 —《337》 | 11 | full | **電影《郷愁》1988-01-23 才上映——唱片早了將近一年**（加強 c-191 第 6677 條） |
+| 4 | 小曽根真 —《Spring Is Here》 | 12 | full | Roy Haynes 大他三十六歲、Parker 五重奏出身；Quincy Jones 那一段 |
+| 5 | 菊池ひみこ —《Flying Beagle》 | 12 | full | ⚠ **鼓手改判 `Ikuo Okamoto` → 岡本郭男**；CD 說明欄「Dog: Boogie.」；吉他手是她丈夫 |
+| 6 | 渡辺香津美 —《The Spice of Life》 | 12 | full | Bruford／Berlin 的七〇年代樂團淵源；〈Lim-Poo〉＝「林風」（原廠頁） |
+| 7 | 富樫雅彦 / ゲイリー・ピーコック / 佐藤允彦 —《Wave》 | 10 | full | 一個多月後錄的《Wave II》把音樂總監與全部作曲對調給 Peacock |
+| 8 | 安田南 with 山本剛トリオ —《Sunny》 | 11 | full | 同一組三重奏前一年替她錄首張《South》；⚠ **探測層誤命中一筆（見第 7049 條）** |
+| 9 | ATLAS —《BREEZE》 | 12 | full | 三位編曲家兼鍵盤手；真鼓只在三軌；四軌有詞而零人掛主唱 |
+| 10 | カリオカ —《Sampo》 | 12 | full | ⚠ **作曲欄找到了（ja 維基逐軌）**；〈Bell Tree〉當時正在富士電視連續劇裡當配樂 |
+| 11 | 本田竹広 & Native Son —《Aguncha》 | 11 | full | 鼓手是團長十七歲的兒子 本田珠也；副題「仲間たち」；樂團最後一張 |
+
+**thin 0。** facts 的 `src` 全部是完整 https（`new URL()` 逐條解析零例外，相異網址 78 個）；`hookCandidates` 11 張各 2 條、`keyTracks` 各 2 首。
+
+## 7037　⚠ ⚠ 推翻／補正策展層總表：**判斷 3 ＋ 人名 8 ＋ 小補正 4 ＝ 15 處**（收件結論 11/11 不變）
+
+| # | 卡 | 被推翻／補正的 | 依據 | 性質 |
+|---:|---|---|---|---|
+| 1 | Flying Beagle | 第 1、6 軌鼓手 `Ikuo Okamoto`（岡本郁生）→ **岡本郭男** | LP 11253090 `Drums — Atsuo Okamoto`（2530069 realname `岡本郭男`）＋ タワーレコード 2023 復刻頁逐字「岡本郭男(ds)」；岡本郁生（6407601）是拉丁音樂樂評人 | 人名（推翻） |
+| 2 | Sampo | 「三版作曲欄全空 → 推定團員原創」→ **ja 維基逐軌作曲者十首齊全**，〈マリア〉另有作詞（ソニア・ローザ） | 三步工序第三步其實有結果（第 7041 條） | 判斷（補正，結論同向） |
+| 3 | Casiopea Perfect Live II | `curatorWhy` 的製作 Osamu Takagi／Ryoichi Okuda／Yoshihiro Akiya → **三源三說，不寫** | ja 維基 infobox `Shinichi Tohyama`、同條クレジット節 `宮住俊介`、官網 `Shunsuke Miyazumi` | 判斷（推翻斷言） |
+| 4 | The Spice of Life | 「1990 年的 LD《The Spice Of Life In Concert》是另一場公演」→ en 維基逐字 **1987-05-22 那場、1987 年就出過 LD、2004 年 Geneon DVD** | en 維基單一來源，facts 只寫演出日與 DVD（第 7044 條） | 判斷（對立，未定） |
+| 5 | Kenji Shock | 班底漏寫 B3 的鼓 → **Harvey Mason 自己** | 逐軌 credits | 小補正 |
+| 6 | Kenji Shock | 「Mason 兄弟」→ 本層查無親屬來源，facts 不寫「兄弟」 | — | 小補正 |
+| 7 | 337 | 第 7 軌四人合寫 → **那一軌是〈眺め〉的 Another Version，本曲〈眺め〉掛 近藤等則** | CD 2869189 逐軌 `Composed By` 範圍 | 小補正 |
+| 8 | BREEZE | 伴奏並列鼓與兩把吉他 → **鼓只在 A3／A5／B4、Eiichi Segawa 只在 A5** | LP 4793300 `tr=` 範圍 | 小補正 |
+| 9–15 | Flying Beagle ×（其餘十四名全改漢字）、Aguncha ×3（`北川照明`／`関誠一郎`／`坂下好政`）、Spring Is Here（`滝上よう子`）、Casiopea（`杉森浩二`） | 策展層「只寫羅馬字」的格子本層查到了 `realname`／`namevariations`／ja 維基可指的漢字 | Discogs 藝人頁逐一回打 | 人名（補正） |
+
+⚠ **人名類與 c-185／c-187 的形狀一致：全部出自回打 `api.discogs.com/artists/<id>`**（本組打了 60 餘個藝人頁）；**唯一真推翻是 #1，而且是「逐軌 credit 釘錯實體」那一種**（主線第 1980-B 條），建議主線看是否收進 `name-corrections.json`（本層不動那個檔）。
+
+## 7038　年份兩筆真改判的落地：**facts 照卡單，零校對痕跡**
+
+- **`大村憲司《Kenji Shock》` 1978**：facts 寫 1978-11-25、`ALR-6010`、初版紅球圓標（1978-11～1980-04 製造），**全文零個「1987」**；Apple `releaseDate` 2000-12-06 與 ja 維基「2000年12月6日CD発売 (TOCT-10718)」逐日相同——**那是 Eastworld CD 的日期**，不採。
+- **`安田南 with 山本剛トリオ《Sunny》` 1975**：facts 寫錄音 1975-09-01／02、年份 1975；「1987」只出現在版本表那一條的 Philips 再發。
+- ⚠ ⚠ **新衝突**：**ja 維基「安田南」作品表把《Sunny》寫成「1975年4月1日」發行，早於原盤 `notes` 的 9 月錄音**——兩者不能同時成立，本層沒有第三源，**facts 不寫發行月日**。
+- ⚠ **另一處 ja 維基數字對調**：「本田竹広」作品表把《Aguncha》寫成「1978年2月録音」（Discogs 兩筆逐字 1987 年 2–3 月；1978 年鼓手才八歲），facts 照 Discogs。
+
+## 7039　⚠ 再發版本數：**11 筆逐筆重跑，數字改判 0；四種漏法逐一查過，新增 0**
+
+| # | 碟 | 策展層 | 本層 | 備註 |
+|---:|---|---:|---:|---|
+| 1 | Casiopea Perfect Live II | 7 | 7 | DVD 兩筆（2000／2004）屬影像 master，不算 |
+| 2 | Kenji Shock | 11 | 11 | — |
+| 3 | 337 | 4 | 4 | — |
+| 4 | Spring Is Here | 7 | 7 | — |
+| 5 | Flying Beagle | 9（官方 8） | 9 | 2024 Tower 限定 Blu-spec CD2 已在表內 |
+| 6 | The Spice of Life | 15 | 15 | — |
+| 7 | Wave | 2 | 2 | 無 master，只寫「資料庫裡只有這一筆」 |
+| 8 | Sunny | 7 | 7 | — |
+| 9 | BREEZE | 10 | 10 | — |
+| 10 | Sampo | 3 | 3 | — |
+| 11 | Aguncha | 4 | 4 | — |
+
+**(a) 只數 MB**：11/11 都跑了整張 `versions`；**(b) 1970 年代同號再發／2016 年後復刻**：#2 的 1980／1983 再壓、#5 的 2024／2025、#9 的 2017／2018／2025、#8 的 2022 全在表內；**(c) Discogs 不收數位**：Apple 的四筆（#2／#4／#5／#9）策展層都已先比過 MB 的 `Digital Media`，本層逐一 lookup 覆核，零重複、零新增；**(d) MB 獨有**：#1 的 1989 LD、#5 的 2024 數位、#7 的 2000 `POCJ-2841` 三筆，與策展層相同。**MB 轄下 JP 數 vs Discogs 日本盤數**逐筆比過，盤名與年份回查零新改判。⚠ **本組是策展層已跑完整版本表的第二批，研究層的重跑仍然是純覆核**（與 c-178 a 第 4777 條同形）。
+
+## 7040　人名的處理細目
+
+- ⚠ **`小原哲次郎`（Discogs 1070336 realname）vs ja 維基作品表「小原哲太郎」**：照主線第 1929-B 條取 Discogs；ja 維基那一形寫作層不要用。
+- ⚠ **`杉森浩二`**：ja 維基《CASIOPEA PERFECT LIVE LIVEII》逐字「杉森浩二（Kohji Sugimori）」，照主線第 1998-B 條第 4 點接受；Discogs 2878758 只有羅馬字。
+- **Flying Beagle 十四名**：Discogs 藝人頁與タワーレコード 復刻頁的漢字十四個逐字相同，兩源同向。
+- **仍照羅馬字的**（無漢字來源）：Hideharu Ebina、Akira Yada（`namevariations` 只有一個 `矢田 朗`、無 realname，照策展層）、Kenichi Yamakawa、Toru "Rika" Suzuki、Jun Sumida、Yaichiro Wada、Ichiro Shimizu、兩位舞台監督、`Seiko Matsumoto`、`Aijiro Wakita`、`Tadayuki Naitoh`（連結 #0）、`Mieko Togashi`。
+- **釘錯實體兩筆，facts 都不寫該職位的人名**：Flying Beagle CD 的鼓（岡本郁生，見第 7037 條 #1）、Aguncha 的製作 `Makoto Shinohara`（→ 1931 年生作曲家 篠原眞）。
+
+## 7041　⚠ ⚠ `カリオカ《Sampo》` 的作曲欄：**c-185 b 第 5929 條三步工序的第三步，這一次有結果**
+
+**策展層做完前兩步（同廠 CD、MEG-CD）都空，第三步只在 Discogs／MB 反查曲題**；**ja 維基「カリオカ (フュージョンバンド)」的ディスコグラフィ 節逐字註明「曲名の後の（　）内は作曲者」，本盤十軌齊全**：佐藤正美 4（〈マリア〉作詞 ソニア・ローザ／〈森の妖精〉／〈Bell Tree〉／〈緑の樹海〉）、永田一郎 3、石田祐一（＝アントニオ石田）2、早川哲也 1。
+- **結論與策展層同向**（十首團員原創，甲 9／乙最多 1——〈マリア〉有詞、保守算乙）；**策展層「〈Maria〉〈When I Think Of You〉是通用題、指不出」那一句可以劃掉**。
+- ⚠ **同一節另給了一格**：〈Bell Tree〉被用作 1987 年富士電視連續劇《同級生は13歳》的劇中音樂（後藤久美子 首次主演，8/20–10/15 播出；唱片 9/1 上市時正播到一半）。
+- ⚠ **建議簡報第三節第 14 點補一句**：「三步工序的第三步不限 Discogs／MB——ja 維基的樂團條目常有逐軌作曲表（本線命中：c-191 a《Sampo》）」。
+
+## 7042　`近藤等則《337》`：**B 面配樂的電影晚於唱片將近一年**——c-191 第 6677 條的判斷再加一層
+
+ja 維基「郷愁 (1988年の映画)」infobox：導演 中島丈博、音樂 近藤等則、ATG 發行、**1988-01-23 上映**；本盤 1987-02-01。**策展層以「查無早於本盤的配樂盤」判配樂五軌以本盤首發，現在連電影本身都晚於本盤**——「既有曲目」那一問（主線第 1969-B 條 (i)）更站不住。facts 寫「出自電影的配樂」，**沒有寫成原聲帶**；キネマ旬報 1988 年度第 5 名寫明是電影的排名、不是音樂獎。⚠ 主題曲〈郷愁のテーマ〉（石原侑佳）不在本盤。
+
+## 7043　`Casiopea《Perfect Live II》`：三件處置
+
+1. **製作人三源三說 → 整格不寫**（第 7037 條 #3）。**官網同頁把發行日寫成「1988.11.25」**（那是《World Live '88》的日期），不採；發行日採 Discogs ＋ ja 維基 ＋ alfamusic.co.jp 發行頁三處的 1987-07-10。
+2. **「1986–1987 帶同專屬歌手」（ja 維基本團條目）與「本盤掛 Vocals 的只有 楠木勇有行」分兩條寫、不畫等號**——ja 維基那一句沒有點名。
+3. **與 b 組《World Live '88》分工**：本卡零字寫那一場；「PLATINUM 轉ポリドール」那一格本層刻意留給 b 組。⚠ 另記：**《PLATINUM》與本組 #10《Sampo》同一天（1987-09-01）、同一家ポリドール**——只記不寫。
+
+## 7044　`渡辺香津美《The Spice of Life》`：in Concert 影像的年份與策展層對立
+
+策展層 `curatorRisk` 寫「1990 年的 LD《The Spice Of Life In Concert》是另一場公演」；**en 維基本條目逐字：1987-05-22 的演出、1987 年日本出過 LD（很快絕版）、2004 年 Geneon DVD、曲目＝原盤八首＋兩段獨奏＋〈Sayonara〉〈Half Blood〉**。MB 查無該影像 RG，**只有 en 維基一源**——facts 只寫演出日與 2004 DVD，不寫 LD 年份。**交主線：若要定，需要 Discogs 影像條目或原廠頁一個動作**（本層以 `database/search` 查不到——該端點要 token）。⚠ Universal 商品頁 slug `watanabe-kazumi`（姓-名）200、`kazumi-watanabe` 404——主線第 1998-B 條「兩種順序都要試」第三次應驗；**本組三之二命中：universal 3 頁（`watanabe-kazumi`／`/p/UCCJ-4103/`／`/p/UCCJ-4189/`）**。
+
+## 7045　⚠ 本層推翻了自己查到的一格：`ATLAS《BREEZE》` 的 今泉敏郎〈天城越え〉
+
+ja 維基「今泉敏郎」主要作品表列 石川さゆり〈天城越え〉（編曲）；**ja 維基「天城越え (曲)」收錄曲節逐字「編曲：桜庭伸幸」**——同一個維基的兩條目互相矛盾。**facts 一首他的具體作品都不寫，只寫經歷**；寫作層不要寫〈天城越え〉。⚠ **教訓：人物條目的「主な楽曲」清單要回作品條目核一次**（ja 維基人物條目 93% 命中是「有條目」，不是「每一格都對」）。
+
+## 7046　`《Wave》`：主導權對調成立、第三張不寫
+
+本盤 `Directed By [Music Director], Liner Notes, Composed By — Masahiko Togashi`；《Wave II》10842009 `Music Director — Gary Peacock` ＋ notes「All compositions by Gary Peacock. / Recorded May 28 & 29 1987」——**本盤 4/5 上市、一個多月後錄第二張、兩張主導權對調**，facts 已寫。**《Wave III》（NEC Avenue N32C-1002）Discogs 零 credits**，facts 不寫「三張輪流」。本盤自己的錄音日期與地點兩源都空，不寫。⚠ 〈Spiritual Nature〉原版 22:37（MB c8d75652，1975 EW 8013）、〈Valencia〉原版 13:37（Discogs 9388456）——兩首重錄照主線第 1948-B 條是新錄音。
+
+## 7047　正文不點名資料來源平台（主線第 1982-B／1985-B 條）：**facts 敘述句零處**
+
+初稿有 13 條 facts 帶「日文維基記／Discogs 的說明欄／MusicBrainz 建檔／Universal 的復刻頁」，交件前全部改寫成直述（事實一格未少），`src` 照舊；**MB 片假名曲題的建檔錯（`プリーズ`）一條整條移進 notes**。自掃 `維基|Discogs|MusicBrainz|Apple|資料庫|建檔` 在 127 條 facts 裡 0 命中。⚠ 「唱片公司的復刻說明」「タワーレコード 限定」保留：前者不點名平台，後者是商品規格本身。
+
+## 7048　前批已用切角的迴避（**同掛名在前批有卡的 8 張，逐張讀了前批研究稿**）
+
+| 卡 | 讀過的前批研究稿 | 本卡零字的切角 |
+|---|---|---|
+| Casiopea | c-187 a／b、c-188 a／b、c-189 a／b、c-190 b（11 張） | 441Hz、團名、Alfa 與 村井邦彦、神保彰 入團、Harvey Mason、Carlos Alomar 與美國路線、John Waite、器材表、國技館、印尼 fusion |
+| 大村憲司 | c-185 b、c-186 a | 生年／神戶／Yamaha 比賽／Fillmore／赤い鳥／エントランス／バンブー／カミーノ |
+| 近藤等則 | c-121 a ×2、c-190 a | 生年／京大／改名／IMA 字義／Reck 的 no wave／中沢新一；山内テツ 只留一句身分（c-178 a 用過，可捨） |
+| 渡辺香津美 | c-178 b、c-186 a ×3、c-188 b、c-190 a | DOMO 成立、Miles Davis、17 歲出道、YMO、Power Station、Mobo |
+| 富樫雅彦 等三人 | c-182 b《Wave II》、c-175 a、c-187 b | 1970 年的傷（派工信明令）、Peacock 的日本歲月、三人前緣、日本ジャズ賞、繪畫 |
+| 安田南／山本剛 | c-67 b、c-179 a、c-182 b、c-185 a | 生年／札幌／美軍基地／中平卓馬 的關係／大木雄高／卒年各說；山本剛 的佐渡 |
+| カリオカ | c-186 a、c-187 a、c-188 a、c-189 a／b、c-190 a | 改名、長谷川きよし、創團五人、乾裕樹、多賀英典、2013 重出、石田 的ギャロップ、換廠 |
+| 本田竹広／Native Son | c-177 b ×2、c-178 a、c-179 a、c-183 b、c-189 b | 結成、Bump Crusing、本名與改名、JVC→Polydor、J-FUSION 重出、Melodiya |
+⚠ **菊池ひみこ 跨組（b《Sevilla Breeze》）的生平格分法寫在本組 #5 的 notes**：本卡取「Continental→CBS/Sony、丈夫、Flying Beagle 成為公司名、Dog: Boogie」，出生／エレクトーン／Montreux／〈Hollywood Illusion〉／電影配樂留給 b 組。⚠ `カリオカ《Sampo》`「最後一張」那一句 c-190 a 以旁註寫過，本卡是主體、照寫，notes 已提醒鉤子層換說法。
+
+## 7049　⚠ ⚠ 串流與封面現況（交件當下讀檔，**只報不改**）
+
+- **`previews.json`**：ready 4（#2／#4／#5／#9）、unavailable 7（#1／#3／#6／#7／#8／#10／#11）。
+- ⚠ ⚠ **#8 是誤命中**：「安田南 with 山本剛トリオ|Sunny」→ collectionId 997257010《Sunny》、掛名 `サニーデイ・サービス`、2014——**日本搖滾樂團 Sunny Day Service 的同名碟，漂移 39 年**；**掛名那一關大概是「Sunny」對上了團名裡的 サニー**（主線第 1997-B 條那一族的變形）。本層第一次讀檔時它仍是 `ready`，**交件前重讀已由主線第 2002-B 條降成 `unavailable`（`downgradedBy: mainline-2002-B`）**——本層獨立抓到同一筆，零動作。**a 組實際串流 4/11。**
+- **`caa.json`**：有圖 8、無圖 3（#3《337》、#4《Spring Is Here》、#11《Aguncha》）；**#4 Apple 有、CAA 無，#1／#6／#7／#10 CAA 有、Apple 無**——主線第 1977-B 條「兩個來源偏差方向相反」又一例。
+- 研究稿的 notes 已在四張 unavailable 卡寫明「寫作層不要暗示可以聽到」。
+
+## 7050　來源實測（本工作階段）
+
+| 來源 | 用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（releases／masters versions／artists／labels） | 約 95 次 | 全 200，節流 3.1 s，零 403／429；⚠ `database/search` 要 token、不可用 |
+| MusicBrainz ws/2 | 約 10 次 | 全 200，1.1 s，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)` |
+| `ja.wikipedia` `action=raw` | 約 25 條 | 命中 23；404 兩條是我猜錯的標題（`郷愁 (映画)`、`郷愁 (1987年の映画)`，正解 `(1988年の映画)`）；**人物條目的作品表兩次與作品條目或 Discogs 衝突**（第 7038／7045 條） |
+| `en.wikipedia` `action=raw` | 約 12 條 | 命中 9；`Spring Is Here (1938 song)`／`The Night Has a Thousand Eyes (1948 song)` 404、`Tangerine (song)` 是重定向 |
+| `universal-music.co.jp` | 5 次 | **3 中**（`watanabe-kazumi/products/uccj-4117/`、`/p/UCCJ-4103/`、`/p/UCCJ-4189/`）；`kazumi-watanabe`／`yasuda-minami` 兩個 slug 404 |
+| `tower.jp/article` | 1 次 | 中——**給了完整的漢字班底與逐軌編曲**（第 7037 條 #1 的第二源） |
+| `casiopea.co.jp`／`alfamusic.co.jp` | 各 1 | 皆 200（前者發行日錯植，見第 7043 條） |
+| `lddb.com` | 1 | Anubis 反爬挑戰頁，不可用 |
+| `itunes.apple.com/lookup` | 6 次 | 全 200，零 403／429 |
+**WebSearch 0 次。** 總請求約 160 次。
+
+## 7051　交件自跑與邊界
+
+- `node qa-batch.mjs research c191` → **a 組 `11 full×11`、b 組 `11 full×11`、key 與卡單完全一致、全部通過**（第一次跑時 b 組尚未交齊、標記全在 b 側；交件前重跑已零標記）。
+- 自掃：facts 10–12 條 11/11、`src` 127 條全 https、千分位逗號 0、`hookCandidates` ≤2、「入圍／得獎」0 處（#3 的キネマ旬報 是排名，已寫明）、平台名 0。`desc-tools/jp-proper-names.json` **append 0**（QA 零誤報）。
+- 跨組曲題互掃（主線第 1987-B 條）：與 b 組卡單的 `〈〉` 曲題交集只有〈Love〉（#8 對 b《Follow Me》，同名不同曲，b 組第 6711 條已記）；**b 組 `THE SQUARE《Wave》` 與 #7 同盤名**，已寫進 #7 notes。
+- 續跑保護：每 3 張整份寫回輸出檔一次（`c191ra-build.mjs` 以 `key` 合併、冪等）；暫存檔一律 `scratchpad/c191ra/c191ra-*`。
+- **邊界**：只動 `desc-tools/batches/research/c191-a.json`（新增）與本檔（append 本段；寫前 `git show HEAD:` 與工作區皆 828 行、兩組 60 條齊）。`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／卡單／b 組的檔／其他批次的檔／KV／Firestore 一律未碰；**零 git 操作。**
+
+**編號區間結算**：本段用到 **7036–7051（16 條），7052–7065 未用、保留不越界（b 組 7066–7095）。**
+
+
+---
+
+# c-191 b 組研究層（7066–7095）｜jp-2 第九批・1988–1989｜11 張｜2026-09-27
+
+批次 c-191｜b 組 11 張（收件全表）｜研究層
+輸入：`desc-tools/batches/cards/c191-cards.json` 的 `group === "b"` 11 筆；輸出：`desc-tools/batches/research/c191-b.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端三處例外）→ `CURATION-BRIEF-jp2.md` 全檔 → `CURATION-BRIEF-jp1.md` 第〇節與附錄二 → 本檔策展兩組 → 主線第 1934-B…1999-B 條。⚠ 引用一律寫「c-19X 第 NNNN 條」。
+
+## 7066　總表：**11 張、facts 126 條（10–12 條／張）、full 11、thin 0**
+
+| 卡 | facts | status | 本層最值錢的一格 |
+|---|---:|---|---|
+| THE SQUARE《Yes, No.》 | 12 | full | 伊東たけし 從本盤改用 AKAI EWI；第 3 回日本ゴールドディスク大賞 爵士・fusion 部門（得獎）；〈Dans Sa Chambre〉＝《タイム3》第一代主題曲 |
+| 三枝成章《眼》 | 11 | full | 1989 年因姓名判斷改名 成章→成彰；十三位樂手羅馬字→漢字定案 |
+| 和泉宏隆《Amoshe》 | 11 | full | 鳥山雄司／神保彰 是他學生時代的樂團夥伴（神保 當時仍在 Casiopea） |
+| 菊池ひみこ《Sevilla Breeze》 | 10 | full | 《Carmen》兩段＋同名原創〈Toreador〉；班底六人延續前作 |
+| 鳥山雄司《TRANSFUSION》 | 12 | full | CD 說明欄的整份器材清單；佐藤博 借調（courtesy of Alfa） |
+| Sidevision《Moon Light》 | 11 | full | 班底裡三人是 角松敏生 伴奏樂團的成員（成員維基三條＋角松 條目） |
+| Casiopea《World Live '88》 | 12 | full | 五城五場地；東京場七人管樂（原廠頁＋ja 維基）；第一期四人的最後一張 |
+| Ottottrio《Hot Live》 | 12 | full | 三人各帶自曲自編；〈上を向いて歩こう〉 野呂一生 編、〈We're All Alone〉 是方博邦 編 |
+| THE SQUARE《Wave》 | 12 | full | 本盤起停發黑膠；盤上印的是含 3% 消費稅的預標價（消費稅法 1989-04-01 施行，本盤 03-21 上市） |
+| 伊藤君子《Follow Me》 | 12 | full | ⚠ 標題曲＝Rodrigo〈Aranjuez〉第二樂章＋Kretzmer／Shaper 的詞（Demis Roussos 1982）；R&R 當代爵士榜第 16 名 |
+| 渡辺香津美《Kilowatt》 | 11 | full | 與 Bunny Brunel 的淵源＝1988 年《Spice of Life Too》巡演代打；原廠 UCCJ-4119 頁商品說明 |
+
+## 7067　⚠ 推翻／補正策展層：**判斷 4 處＋人名定案 23 名；收退結論 0 處改變**
+
+1. ⚠ ⚠ **《Follow Me》的〈Follow Me〉不是「指不出既有曲目」**：ja 維基伊藤君子 條目寫 2004 年單曲是「1989年発表の同名曲」的新編、原曲是 Demis Roussos 1982 年單曲（Rodrigo〈Aranjuez〉第二樂章＋Herbert Kretzmer／Hal Shaper 詞）；en 維基該曲 infobox `writer` 三人同向。**第 5701 條**：照簡報第三節第 12 點旋律本體（`Concierto De Aranjuez`）算甲；即使從嚴把填詞流行歌版算乙，乙 2/10→3/10，仍 < 一半——**收件不變，卡單 `risk` 那一句要改**（本層不動卡單）。⚠ 「本盤那一軌＝Demis Roussos 那首」只有 ja 維基單曲段落一個來源、本層沒有逐軌聽比，已在研究稿 notes 寫明保守寫法。
+2. **《TRANSFUSION》B1〈An Ecstasy〉的 `Drums — Cymbals (2)`**：CD 再壓 25629280 同一軌逐字 `Cymbal — Hideo Yamaki (6)`——LP 條目把樂器名誤掛成團名實體，判 山木秀夫 的鈸（卡單「只寫羅馬字不展開」可改）。
+3. **《Sevilla Breeze》鼓手 `Yasushi Ichikawa`**：Discogs 4071135 是 1968 年生的攝影師（credit 釘錯實體，主線第 1968-B 條那一種），漢字不可採；前作《Flying Beagle》11253090 的第二位鼓手是 `Yasushi Ichihara`（市原康），疑誤植，**不改、facts 只寫「岡本郭男 等兩位」**。
+4. **《Wave》卡單 `label` 寫「消費稅導入後的含稅價」**：本盤 1989-03-21 上市、消費稅法 1989-04-01 施行（ja 維基「消費税法」），盤上印的是**預先標好**的含稅價（2920×1.03＝3008）——時序補正，不影響任何欄位值。同日的《Follow Me》價格欄（2627／2550）是同一件事，只寫在《Wave》一張。
+5. **人名 23 名（卡單寫羅馬字、本層回打 `api.discogs.com/artists/<id>` 定案漢字）**：《眼》13（渡辺直樹、鳴瀬喜博、岡本郭男、市原康、渡嘉敷祐一、東儀兼彦、宮城純子、吉田弥生、川瀬正人、吉田潔、三島豊明、篠崎正嗣、宮田まゆみ）、《Sevilla Breeze》8（石橋敬一、岡本郭男、納見義徳、林文夫、吉田憲司、中村慶一、深田晃、瀬川昌久）、《Follow Me》1（山本剛 582748 `realname`）、《TRANSFUSION》1（山木秀夫，見第 2 點）。⚠ **退成不寫**：《眼》的 `Makoto Hirahara`（realname `平原智`、通行形 `平原まこと`，兩形判不出）與 `Hiromi Sano`、`Toshiko Tsunemori`；《Moon Light》`Makuni Fukuda`（只有一個未交叉驗的漢字形）；《眼》四個孤立漢字頁（照卡單不寫）。⚠ 鳴瀬喜博 的 `namevariations` 另有 `成瀬喜博`，取 `realname` 的 `鳴瀬`。
+
+## 7068　⚠ ⚠ 再發版本數：**10 個 master 逐筆重跑 `versions`、11 個 RG 重跑 MB release 清單——數字改判 0**
+
+Discogs：1040451＝7、1600263＝6、3381187＝2、1267034＝7、2905261＝2、753448＝15、1738884＝3、1036662＝5、493517＝8、166039＝10（《眼》無 master，資料庫裡只有這一筆），十個 `versions` 表零筆數位格式（第 1957-B 條結構性缺口）；MB：3／1／2／3／6／1／3／1／4（含 Pseudo 1）／2／3——**與策展層第 6697 條逐格相同**。
+⚠ **四種漏法逐一看過**：(a)(b) 策展層已跑整表並納入 2016 後復刻（《TRANSFUSION》2025 LP／CD、《Kilowatt》2016、《Sevilla Breeze》2024、《World Live '88》2009／2017）；(c) 數位版照第 1987-B 條先比 MB 實體（《Yes, No.》Apple 1538802085 與 MB 2015 高解析是兩個產品）；(d) MB 獨有 5 筆（策展層列的）全部重新確認存在。
+⚠ **新看到的一個小差**：MB 把《World Live '88》的 UPCY-9702 記成 `2017-12-20`，Discogs 與 ja 維基都是 `2017-06-21`——不影響版本數，facts 只寫「2017 年」。
+⚠ **「數字對不等於內容全」本組沒有抓到新版本**；補到的是版本的**內容**：《TRANSFUSION》2025-05-21 Blu-spec CD2 正好是發行 37 年同日、《World Live '88》1992 年起加兩軌（〈Halle〉〈朝焼け〉）、《Follow Me》2007 SACD 屬「昭和ジャズLegend」系列。
+
+## 7069　來源實測（本組）
+
+- **Discogs**：約 60 次，全程 200（`releases/10600386` 一次 500、5 秒後重試 200）。**MB**：約 15 次，1 req/s、UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、503 零次。**Apple lookup**：7 次，403／429 零次。
+- **ja 維基 `action=raw`**：21 查 17 中——**專輯條目 4/4**（`YES,NO.`、`WAVE (T-SQUAREのアルバム)`、`WORLD LIVE '88`、該三條連同團條目都命中；`Amoshe` 與 Ottottrio 無條目）、**人物條目 11/12**（`石川雅春` 404）、節目條目《タイム3》1/1、法律條目 1/1。⚠ 專輯條目的命中率這批是 100%（簡報「33% 不可外推」再得一反例）。
+- **原廠網域**：`universal-music.co.jp` 2/3——`casiopea/products/upcy-9702/`（`<title>` 命中）、**`watanabe-kazumi/products/uccj-4119/`（姓-名順序命中；`kazumi-watanabe` 回 404 頁）**與 `/p/UCCJ-4119/` 短路徑同頁——**再證簡報三之二「slug 逐藝人、兩種順序都要試」**。`tower.jp/item/495172`／`503390`（《TRANSFUSION》）只有商品摘要，⚠ SACD 頁把 山木秀夫 寫成「山本秀夫」（原廠／零售頁人名不可採）。
+- **其他一次命中**：`golddisc.jp/award/03/`（第 3 回日本ゴールドディスク大賞 名單）、`oricon.co.jp/prof/22418/products/20667/1/`（⚠ Shift_JIS 編碼，要先轉碼才讀得到「最高位 5位／登場回数 12週」）、`japan-academy-prize.jp/prizes/?t=12`（最優秀賞以圖片 `alt="最優秀賞"` 標示）。
+- **en 維基**：`Carmen`、`Sukiyaki (song)`、`We're All Alone`、`If I Loved You`、`New York State of Mind`、`Maiden Voyage (Herbie Hancock album)`、`Wayne Shorter`、`Follow Me (Demis Roussos song)` 八條，全中。
+
+## 7070　⚠ ⚠ 同批跨組比對：**a 組研究稿在本層做到第四張時落地（c191-a.json，8 張）——逐格比過後讓出 3 格**
+
+- **《Sevilla Breeze》讓出三格給 a 組《Flying Beagle》**：Continental→CBS/Sony 換廠、製作人 中村慶一 的 Miles Davis／Herbie Hancock 經歷、Flying Beagle Corp／flyingbeagle.jp。本卡改寫「班底六人延續前作」一格（Discogs 11253090 與 11284835 逐名比對）。⚠ **兩組的事實有一處不一致**：a 組寫她在 Continental 出了**六張**（到 1985 年《森羅万象》），ja 維基作品段只列到 1984 年的**五張**——本卡不寫這個數，交主線收件時定。
+- **《Kilowatt》與 a 組《The Spice of Life》**：a 組已寫 Akira Yada／丸茂正樹 的製作組合與 Bruford／Berlin；本卡只寫製作人名字、A&R 不展開，改寫 1988 年《Spice of Life Too》巡演 Bunny Brunel 代打那一格（兩張的接點，不重複）。
+- **《World Live '88》與 a 組《Casiopea Perfect Live II》**：a 組寫 1986-12-27 單場、樂團總譜、LD 附贈單曲；本卡寫 1988 五城五場、七人管樂、第一期最後一張——**零重疊**（派工信第五節第 2 點照辦）。
+- **《Wave》與 a 組《Wave》（富樫雅彦 三人）**：盤名撞名，兩卡內容零交集；notes 已標下游帶掛名與年份。
+- **前批已用切角**（c-186…c-190 九份 THE SQUARE、七份 Casiopea、八份 渡辺香津美、c-179《Kobe Korekata》的 是方博邦 生平）**逐份讀過研究稿**（第 1982-B／1985-B 條、c-187 a 第 6344 條）：改名經過、團名由來、團員生日、器材表、是方博邦 生平一律不再寫。
+
+## 7071　`live` 與身分：**不重判、facts 不與策展層相反**
+
+- **《Hot Live》**（派工信第五節第 3 點）：facts 只寫場館（中野サンプラザ）與另外三間錄音室，**不補任何日期**；hook 用「舞台」。
+- **《World Live '88》**：五城五個單日期照盤面 notes 寫。
+- **身分**：《Follow Me》兩位製作人並列、美國盤只寫授權字樣（不寫成美國製作盤）；《Kilowatt》只寫日美同年雙發與「Licensed From: Polydor K.K.」（不寫誰先發）；《眼》寫成作曲家的器樂企劃盤（「十二音技法」只描述他的純藝術路線，notes 禁止寫作層據此改寫成現代音樂盤）；《Wave》掛名照池中 `THE SQUARE`、facts 寫「改名 T-SQUARE 之後的第一張」，不寫成兩個團。
+
+## 7072　獎項與榜單：**入圍／得獎逐項分開**
+
+- 《Yes, No.》：第 3 回日本ゴールドディスク大賞（1989）邦楽部門ベスト・アルバム・オブ・ザ・イヤー ジャズ・フュージョン部門——**得獎**（官方名單）；Oricon 最高 5 位、在榜 12 週。
+- 《眼》：第 12 回日本アカデミー賞 最優秀音楽賞（《椿姫》《優駿》）——**得獎**，但那是同年電影配樂的獎、不是本盤的獎（notes 標可捨）。
+- 《Follow Me》：《Radio & Records》當代爵士榜第 16 名（**上榜**，不是獎）——⚠ 單一來源（ja 維基，出典為本人官方 profile）。
+
+## 7073　串流與封面（派工信第五節第 9 點）
+
+**`previews.json` 在本層交件時沒有任何 c-191 條目（探測鏈未跑到）→ 研究稿不寫串流。** `caa.json`：b 組 11 筆裡 10 筆有 CAA 圖；**《World Live '88》`probeError: 503x4`、art 空——是探測失敗，不是市場沒有**（策展層第 6704 條記 Apple 有 1442211481）。
+
+## 7074　`desc-tools/jp-proper-names.json`：**append 1 個**
+
+`ブリスベン国際レジャー博覧会`（《World Live '88》notes 裡的場館正式名，ja 維基本盤條目 infobox 逐字；`国`／`会` 被 SIMP 誤報）。既有 87 條一字未動（只在原末行補逗號）。⚠ `福田眞国` 沒有加——那是未交叉驗的形，改寫 notes 不引用。
+
+## 7075　交件前自跑與邊界
+
+- `node qa-batch.mjs research c191` → **a 11 full／b 11 full、key 與卡單完全一致、全部通過**（第一輪報「簡體字 国会」與「千分位 3,008 等」兩類，全在 notes：前者 append 白名單、後者改寫成「3008 日圓」，未改任何 facts）。
+- 自量：facts 10–12 條／張、`src` 126/126 完整 https、facts 零處點名資料來源平台、零 ASCII 逗號夾在漢字間、`hookCandidates` 11×2、`status`＝`coverage`。
+- **邊界**：只動 `desc-tools/batches/research/c191-b.json`（新增）、本檔（append 本段）、`jp-proper-names.json`（append 1）；卡單／`previews.json`／`caa.json`／`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／a 組的檔一律未碰；**零 git 寫入操作**。
+- **條號結算**：本段用 **7066–7075（10 條）**，區間 7066–7095 未越界（a 組研究層 7036–7065）。
+
