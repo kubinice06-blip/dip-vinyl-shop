@@ -390,6 +390,73 @@
   "notes": "⚠「只有這一張」的依據：Discogs 藝人頁 5894522 的 releases 只有 master 2905261、MB 團體實體 174e4996 的 release-group 只有 1 筆（兩家都查過，寫作層不要寫成「唯一作品」以外的定論）。⚠ 來源結構：本卡在 Discogs／MB 以外的資料全部來自成員的 ja 維基條目（林有三／梶原順／青木智仁）與 角松敏生 條目，團本身沒有任何維基或原廠頁；facts 11 條、status 仍判 full（每條都有可開的 https 來源）。⚠ 推翻／補正策展層：零處判斷推翻；補一格卡單沒有的班底脈絡——林有三（ja 維基：1982 年起 山本達彦 樂團與 角松敏生 樂團鍵盤、角松 那邊到 1991 年底約十年）、青木智仁（角松敏生 條目逐字「自身のバックバンドのベーシスト」）、梶原順（ja 維基：伴奏 マリーン／山本達彦／角松敏生、與 本田雅人・石川雅春 組 WITNESS）——盤上六人裡有四人彼此重疊在這條線上。⚠ 措辭：facts 分三格各自掛來源，沒有寫成「Sidevision 是 角松敏生 的伴奏樂團」這種推論句；hook 1 的「一半」指六人裡三人（林有三、青木智仁、梶原順）有 角松敏生 伴奏經歷，寫作層若嫌推論請改用「好幾位」。⚠ 各人樂器：盤面只寫 Performer；林有三＝鍵盤（ja 維基 infobox Instrument）、梶原順＝吉他、青木智仁＝貝斯、石川雅春＝鼓（Discogs 676956 profile）、本田雅人＝薩克斯風與長笛（Discogs 296777 profile）——sound 欄是照這些身分欄寫的；`Makuni Fukuda`（1022745，namevariations 只有 `福田眞国`，無 realname／profile）樂器不明、漢字照第 1967-B 條不寫。⚠ Larry Coryell 的客座沒有軌號，facts 不寫他在哪一軌、也不寫他「彈了吉他」以外的推論（只寫身分與 Guest 欄）；他 2017 年辭世屬無關後續，不寫。⚠ 青木智仁 2006 年辭世、本田雅人 1991 年加入 T-SQUARE、梶原順 2007 年首張個人專輯——都是與本作無關的後續，不寫；青木智仁《DOUBLE FACE》1989 是隔年的事，只當他身分的時序說明，寫作層可捨。⚠〈I'll Remember August〉與標準曲〈I'll Remember April〉只是題名仿擬（策展層已判，作曲掛團名）；作詞 `Susumu Kishi`、和聲兩位、`Keiichi \"Crazy\" Goto`、`Tetsuo Mori` 本層沒有回打漢字，照羅馬字。⚠ 版本：Discogs 2、MB 1、Apple jp 查無（`SIDE VISION` 是義大利同名製作人），零改判；串流與封面見報告——previews.json 尚無 c-191 條目，caa.json 本卡有圖。⚠ 曲題撞名：〈Autumn Breeze〉〈Through The Night〉〈Shadow On The Wall〉高碰撞，下游引用帶掛名與年份。"
  },
  {
+  "key": "desc2:Casiopea|World Live '88",
+  "artist": "Casiopea",
+  "album": "World Live '88",
+  "facts": [
+   {
+    "f": "1988 年 11 月 25 日同日發行黑膠 28MX 2555 與 CD H33P 20285，全長 43 分 41 秒，字標是樂團自己在 Polydor 旗下開的 Aura Records；在他們的作品序列裡是第十九張，也是第五張現場專輯。",
+    "src": "https://ja.wikipedia.org/wiki/WORLD_LIVE_%2788"
+   },
+   {
+    "f": "十一軌取自 1988 年世界巡演的五個場次：7 月 9 日巴西聖保羅、8 月 23 日澳洲布里斯本、8 月 27 日東京、9 月 10 日墨西哥城、9 月 13 日洛杉磯。",
+    "src": "https://www.discogs.com/release/7058759"
+   },
+   {
+    "f": "五個場地各不相同：聖保羅的 Projeto SP、布里斯本的 1988 年世界博覽會會場、東京讀賣樂園的露天劇場 EAST、墨西哥城的國立禮堂，以及洛杉磯的 Roxy。",
+    "src": "https://ja.wikipedia.org/wiki/WORLD_LIVE_%2788"
+   },
+   {
+    "f": "每個國家的錄音各有一位工程師：巴西 Roberto Marques、澳洲 Steve Pyle、美國 Bob Hodas、墨西哥 Tsutomu Ueda、東京 Akitsugu Doi，混音在東京的 Studio Jive 完成；製作是吉他手 野呂一生。",
+    "src": "https://ja.wikipedia.org/wiki/WORLD_LIVE_%2788"
+   },
+   {
+    "f": "東京讀賣樂園那一場另外請來七人的管樂組當客席，廠牌自己的商品說明特別點名那一場的演奏最精彩。",
+    "src": "https://www.universal-music.co.jp/casiopea/products/upcy-9702/"
+   },
+   {
+    "f": "那七人分兩組：三人是 1981 年已解散的樂團スペクトラム 重新聚起來的管樂部「Horn Spectrum」，由 新田一郎 編曲；另外四人是以 TOPS 管樂部為班底的 Tops Horns。",
+    "src": "https://ja.wikipedia.org/wiki/WORLD_LIVE_%2788"
+   },
+   {
+    "f": "曲目幾乎全是最近兩張錄音室專輯的歌：七首來自同年 4 月的《EUPHONY》，三首來自 1987 年的《PLATINUM》；其中〈Bayside Express〉與〈太陽風〉在《EUPHONY》發行當天就已經一起切成 8 公分 CD 單曲。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%B7%E3%82%AA%E3%83%9A%E3%82%A2_(%E3%83%90%E3%83%B3%E3%83%89)"
+   },
+   {
+    "f": "十一首全是團員的曲：野呂一生 七首，貝斯手 櫻井哲夫 兩首（〈Red Zone〉〈Magnetic Vibration〉），鍵盤手 向谷実 的〈Inishie〉，還有鼓手 神保彰 寫的 1 分 56 秒短曲〈Solid Swing〉。",
+    "src": "https://www.discogs.com/release/7058759"
+   },
+   {
+    "f": "1988 年以前的這支樂團一年做兩張專輯、在國內外跑一百場上下的演出，團員的個人活動與客串一向被壓到最低。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%B7%E3%82%AA%E3%83%9A%E3%82%A2_(%E3%83%90%E3%83%B3%E3%83%89)"
+   },
+   {
+    "f": "這也是 野呂一生、向谷実、櫻井哲夫、神保彰 這組四人發行的最後一張專輯：1989 年唱片約到期、樂團暫停，櫻井 與 神保 另組人聲樂團シャンバラ，與另外兩人談不攏，當年年底退團；下一張 1990 年的《The Party》已換成 鳴瀬喜博 與 日山正明。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%B7%E3%82%AA%E3%83%9A%E3%82%A2_(%E3%83%90%E3%83%B3%E3%83%89)"
+   },
+   {
+    "f": "同一趟巡演的影像另外做成雷射影碟《JOIA CASIOPEA WORLD TOUR》，1989 年 1 月 25 日發行，收了唱片沒有的〈Hacker〉與〈Sentimental Avenue〉等曲。",
+    "src": "https://ja.wikipedia.org/wiki/WORLD_LIVE_%2788"
+   },
+   {
+    "f": "已知版本十六個：1988 年日本的黑膠（市售與宣傳盤）、三種卡帶與 CD，同年歐洲、隔年巴西、1990 與 1996 年韓國的授權版，1992、2009、2017 年的日本再發（1992 年起加收東京場的〈Halle〉與〈朝焼け〉成為十三軌），以及一個十三軌的數位版。",
+    "src": "https://www.discogs.com/master/753448"
+   }
+  ],
+  "hookCandidates": [
+   "一張現場盤、五個國家、五位錄音師：聖保羅、布里斯本、東京、墨西哥城、洛杉磯各錄幾首拼成一張。",
+   "這組四人發的最後一張碟：隔年兩位團員另組樂團、談不攏，年底就退了團。"
+  ],
+  "sound": "四人 fusion 樂團的現場：野呂一生 的電吉他與 向谷実 的鍵盤合成器搶旋律，櫻井哲夫 的電貝斯拍擊與 神保彰 的鼓把節奏推得又快又緊，東京場加上七人管樂組的齊奏；十一首器樂分別錄在五個國家的舞台上，觀眾聲與場地空間各有不同。",
+  "keyTracks": [
+   "Bayside Express",
+   "Super Sonic Movement"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 派工信第五節第 2 點：本卡只寫 1988 年五城巡演這一場，不寫 a 組《Casiopea Perfect Live II》（1986-12-27 東京一場）；兩張曲目零重疊（策展層已互掃）。⚠ 推翻／補正策展層：零處判斷推翻；補三格卡單沒有的——（1）五個場地名（ja 維基本盤條目 infobox：Projeto SP／ブリスベン国際レジャー博覧会（＝World Expo 88）／読売ランド オープンシアターEAST／ナショナル・オーディトリアム／Roxy）；（2）東京場的七人管樂組：原廠 universal-music.co.jp（UPCY-9702 商品頁，`<title>` 命中）逐字「7人のホーン・セクションをゲストに迎えた読売ランドEAST公演」「通算5作目となるライヴ・アルバム」，成員名單只在 ja 維基（Horn Spectrum：新田一郎・兼崎順一・吉田俊之；Tops Horns：寺内茂・川嵜淳一・工藤隆・黒石正博），Discogs 四個版本的 credits 都沒列管樂——facts 只寫兩個管樂部的名字與 新田一郎 編曲，不逐名列七人；（3）第一期四人的最後一張（ja 維基カシオペア條目的編制年表「1980年 - 1989年『THUNDER LIVE』↓『WORLD LIVE '88』」與第 1 期結束段落）。⚠ 「最後一張」屬晚於發行、與作品直接綁定的後續（成為這組人最後合作），可寫但要標 1989 年；1990 年起的編制與 JIMSAKU 以後的事不寫。⚠ 巡演場地的中文：布里斯本那一場的會場在 ja 維基寫作「ブリスベン国際レジャー博覧会」，即 1988 年布里斯本世界博覽會（World Expo 88）；寫作層若不放心可只寫「布里斯本的博覽會會場」。⚠ 「七首來自《EUPHONY》、三首來自《PLATINUM》」照 ja 維基 LP 曲目表的「初出アルバム」欄；該表把 LP 列成十軌、漏了 B6〈Access〉（Discogs LP 7058759 與 CD 6506890 都是十一軌），〈Access〉的初出本層沒有查到，所以 facts 寫「幾乎全是」。⚠ 〈Bayside Express〉／〈太陽風〉單曲：ja 維基カシオペア 單曲表 `1988-04-25`、8cm CD `H10P-30002`，《EUPHONY》同日 `1988-04-25`。⚠ 影碟曲目取自 ja 維基本盤條目 LD 段（SM068-3290），〈Hacker〉〈Sentimental Avenue〉是唱片沒有收的兩首。⚠ 執行製作 `Katsuki Hagiwara`：ja 維基寫 `萩原克己`、Discogs 1307087 本層沒有回打，facts 不寫。錄音工程師五人照羅馬字。⚠ 前批已用切角（c-187…c-190 七份 Casiopea 研究稿）：團名由來、神保彰 入團經過、Alfa 時期的製作陣、各張的器材表、1982 年各自出國旅行、美國市場策略（《Sun Sun》）——本卡不寫；團員名只在編制與「最後一張」兩格出現。⚠ 版本：Discogs 15（含 1992 `POCH-1223` 疑似重複建檔 1 筆，保守計）＋Apple 數位 1＝16，與策展層相同，零改判。⚠ CAA：caa.json 本卡 `probeError: 503x4`、art 空——封面探測失敗，不是市場沒有；previews.json 尚無 c-191 條目。⚠ 高碰撞曲題：〈Access〉〈Red Zone〉（c-188 b `NANIWA EXPRESS《大宇宙無限力神》` 有同名另一首）、〈Princess Moon〉，下游引用帶掛名與年份。"
+ },
+ {
   "key": "desc2:THE SQUARE|Wave",
   "artist": "THE SQUARE",
   "album": "Wave",
