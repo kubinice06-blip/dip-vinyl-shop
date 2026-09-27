@@ -342,3 +342,434 @@
 4. **`enum/jp-2.md` 可以劃掉的格**：**Kitty 段「高中正義 7（⋯Saudade⋯）」的 `Saudade`（#8 收）與「小林泉美 3」的一張（#10 收）**；**Union 段「1982 Union Jazz 系列」的兩張（#16、#17 收）**；**Alfa 段「Casiopea 缺 15」的兩張（#18、#19 收）**。
 
 **編號區間結算**：本節用到 **6436–6465（共 30 條），區間用滿、未越界（a 組 6406–6435）。**
+
+
+---
+
+# a 組（19 張｜slice 的 `house` 分佈：CBS/Sony 9・Alfa 4・Kitty 3・Trio／Whynot 3；⚠ **19 筆逐筆核過原壓，`house` 與原壓不符 1 筆**）｜策展層｜2026-09-27
+
+判準照 `batch-progress/CURATION-BRIEF-jp2.md`（本線簡報，全檔）
+→ `CURATION-BRIEF-jp1.md`（**機制整份沿用，含「一之二」四條，該節優先於該檔其他任何一節**）
+→ `CURATION-BRIEF-bluenote-post1985.md`（含**附錄二：雲端線實測**）→ `CURATION-BRIEF-bluenote.md`
+→ `CURATION-BRIEF-c131.md`，**固定規格一字未改**。
+曲風判準照 **c-173 b 第 3753 條 ＋ c-173 a 第 3716 條（救濟三肢）＋ 第 1857-B 條（①② 進人工判）
+＋ 第 1871-B 條（④ 也降為人工判）＋ 第 1861-B 條第 5 款 ＋ 第 1923-B／1925-B 條
+＋ 主線第 1934-B／1936-B／1944-B／1948-B 條 ＋ c-183 b 第 5701 條（收件款第三肢的可數判準）
+＋ 主線第 1962-B／1965-B／1969-B／1978-B 條（巴西曲目、乙的限定、舉證責任、⑤ 款讀法）
+＋ c-185 b 第 5927／5928／5929 條**，命中款次逐筆寫在各條。
+已讀：`batch-progress/c163/rulings-mainline.md` 第 1934-B…**1990-B** 條；`c183/rulings.md` 的第 5677／5679／5680／5685／5701／5715 條；
+`c185`／`c186`／`c187` 三份的策展段（c-187 兩組 6026–6085 全段、c-186 與 c-185 的總表與清單條）；
+`c187/prop-a.json`／`prop-b.json` 兩檔的掛名寫法與 `risk` 密度；`batch-progress/enum/jp-2.md`（全檔，含「§1 候選」與「已知瑕疵」）；
+`batch-progress/enum/known-pool-collisions.json`（9 筆）；`batch-progress/enum/name-corrections.json`；`audits/pool-artist-name-splits.md`。
+⚠ **本層開工時 b 組的 `prop-b.json` 與本檔的 b 組段（6436–6465）都已經落檔**——**本層讀了 b 組段與 `prop-b.json` 裡跟本組有交集的三張（`浪花エキスプレス`／`小林泉美`／`高中正義`），只讀不寫；本段 append 在檔尾、b 組段一字未動。**
+
+---
+
+## 6406　（**總表**）：**19 張＝收 12 ／ 退 7**
+
+**收件率 63%**——**與 c-184 a／b、c-186 b 同級**（c-187 a 68%／c-187 b 79%／c-188 b 63%）。
+**成因單一且可歸因**：**本組的 CBS/Sony 九張裡有五張是人聲盤**（`Marlene` 兩張、`五十嵐浩晃`、`伊藤美奈子`，外加 Alfa 的 `吉田美奈子`），**七筆退件裡有五筆是「演奏主體是歌手」這個形狀**；**反過來 Kitty／Trio 六張 6 收、CBS/Sony 的器樂 fusion 四張 4 收。**
+
+| # | 掛名 —《盤名》 | 年 | `house` | 處置 | 依據（條號） |
+|---:|---|---:|---|---|---|
+| 1 | カリオカ —《Snooze》 | 1981 | Kitty | 收 | ② 款進人工判後收、甲 8／乙 0 |
+| 2 | 小林泉美 —《Coconuts High》 | 1981 | Kitty | 收（**邊界**） | 乙 4/8＝50%（保守算法）、演奏主體是鍵盤 fusion（6426） |
+| 3 | 高中正義 —《Alone》 | 1981 | Kitty | 收 | 甲 8（或 6）／乙 0（或 2） |
+| 4 | 今田勝 —《Carnival》 | 1981 | Trio／Whynot（原壓字標 `Full House`） | 收 | `parent_label` → Trio-Kenwood（6418）、甲 6／乙 0 |
+| 5 | 松風鉱一 —《Good Nature》 | 1981 | Trio／Whynot | 收 | 甲 6／乙 0 |
+| 6 | 鈴木良雄 —《Wings》 | 1981 | Trio／Whynot | 收 | 四項 4/4、甲 7／乙 0 |
+| 7 | Casiopea —《4×4》 | 1982 | Alfa | 收（**盤名取邊待覆核**） | 甲 5／乙 1、一軌重錄（6428／6430） |
+| 8 | Hiroshi Sato feat. Wendy Matthews —《Awakening》 | 1982 | Alfa | **退** | 撞池（預標覆核成立）＋ ⑤ 款前半（6407） |
+| 9 | Osamu Kitajima —《Dragon King》 | **1981**（退件年份改判） | Alfa（**錯：原壓是美國 `Arista`**） | **退** | 原壓不在十五家（6408） |
+| 10 | 吉田美奈子 —《LIGHT'N UP》 | 1982 | Alfa | **退** | 第 5701 條乙 8/8 ＋ 第 1923-B 條（6409） |
+| 11 | Marlene —《My Favorite Songs》 | 1982 | CBS/Sony | **退** | 第 4106 條四項 2/4（6410） |
+| 12 | Marlene with Seawind —《Summer Nights》 | 1982 | CBS/Sony | **退** | 四項 2/4 ＋ 乙 9/9 ＋ 第 1923-B 條（6411） |
+| 13 | 菊地雅章 —《One-Way Traveller》 | 1982 | CBS/Sony | 收 | 四項 4/4、與池中《Susto》同批錄音、曲目零重疊（6430） |
+| 14 | 浪花エキスプレス —《No Fuse》 | 1982 | CBS/Sony | 收（**掛名待覆核**） | 甲 7／乙 0（6427） |
+| 15 | The Players —《Space Travel》 | 1982 | CBS/Sony | 收（**掛名待覆核**） | 乙 0（作曲欄全空，第 1969-B 條一之 (i)）（6429） |
+| 16 | THE SQUARE —《脚線美の誘惑》 | 1982 | CBS/Sony | 收 | 甲 8／乙 1 |
+| 17 | 五十嵐浩晃 —《Wing》 | 1982 | CBS/Sony | **退** | ⑤ 款前半 ＋ ① ＋ ③ ＋ 第 1925-B 條（6412） |
+| 18 | 伊藤美奈子 —《Tenderly》 | 1982 | CBS/Sony | **退** | ⑤ 款前半 ＋ ① ＋ ③ ＋ 第 1923-B 條（6413） |
+| 19 | 日野皓正 —《Pyramid》 | 1982 | CBS/Sony | 收 | 四項可判定 3/3、甲 8（或 7） |
+
+**退件的條款分佈**（七筆，逐筆可查）：**第 1923-B 條演奏主體是歌手 4 筆**（#10／#12／#17／#18）、**⑤ 款前半 3 筆**（#8／#17／#18）、
+**第 5701 條乙 > 一半 4 筆**（#10／#12／#17／#18）、**第 4106 條四項 2/4 2 筆**（#11／#12，兩筆都是 `Marlene`）、**① 款 2 筆**（#17／#18）、**③ 款 2 筆**（#17／#18）、
+**撞池 1 筆**（#8，slice 預標覆核成立）、**原壓不在十五家 1 筆**（#9）、**第 1925-B 條盤面零樂手 1 筆**（#17）。
+
+⚠ **橫向數字**：**年份改判 0 筆（收件 12 筆）、退件側 1 筆**（#9 1982 → **1981**，第 6414 條）、**盤名真改判 0 筆**（取邊 9 筆，第 6415 條）、
+**`live` 改判 0 筆**（slice 標 live 0 筆，19 筆逐筆掃過必掃字串、反向漏標 0，第 6416 條）、
+**`house` 與原壓不符 1 筆（5%）**（#9，第 6418 條）、
+**再發版本數 12 筆收件逐筆跑完整張 `versions`（12 筆都有 master 頁、12/12 MB 低估，聯集合計 103 版）**（第 6417 條）、
+掛名 12 張 **12 個相異字串**（沿用池中整串 8 ＋ 新立 4，其中 2 串與 b 組同批落檔的字串一致），**新造分隔符 0、收斂 0、改釘 rgMbid 0、孤兒 release 0**（第 6419 條）。
+
+⚠ ⚠ **本組最重要的六件**：
+1. ⚠ ⚠ ⚠ **同一支樂團在待上架批次裡已有兩種掛名字串**（第 6427 條）：**本組與 b 組用 `浪花エキスプレス`、c-189 a 用 `NANIWA EXPRESS`**——**MB 與 Discogs 都是同一個實體，上傳前必須統一。**
+2. ⚠ ⚠ **`house: Alfa` 在 1982 年段又錯一筆，錯法是新的：原壓是美國 Arista、日本 Alfa 晚一年**（第 6408 條）——**c-187 a 那一張《Masterless Samurai》是日本先、美國後；本組這一張剛好反過來。**
+3. ⚠ ⚠ **《4×4》B1〈Galactic Funk〉是池中 c-187《Cross Point》同名曲的重錄**（第 6430 條）——**策展層以池中曲題主動掃出，先寫明、兩卡行文要對得上**（c-187 第 6350 條那一族，本層沒等研究層）。
+4. ⚠ ⚠ **《One-Way Traveller》與池中 seed《Susto》是同一批 1980–81 錄音的兩張 LP、曲目零重疊**（第 6430 條）——**不是撞池的第三種漏法，是 Volume 拆盤的形狀，兩卡要互指。**
+5. ⚠ ⚠ **`Marlene` 兩張都是四項 2/4 退**（第 6410／6411 條）——**本線她已經退了三張、零收**；**`bornOutside` 那一欄一次都沒有參與判定。**
+6. ⚠ **兩筆掛名新立在「盤面形 vs 池中形」的分界上**（第 6429 條 `The Players`、第 6419 條 `松風鉱一`）——**都可逆，建議主線與本機一起定。**
+
+---
+
+## 退件的裁定（6407–6413）
+
+## 6407　退：`Hiroshi Sato feat. Wendy Matthews —《Awakening》`（rg c9900d55，`Alfa ALR-28036`，1982-06-21）——**撞池（slice 預標「確定撞池」覆核成立）＋ ⑤ 款前半（原壓 `genres` 零 Jazz）；兩條各自獨立成立**
+
+**撞池**：**池中 seed 逐字 `佐藤博《Awakening》1982`**；**本筆 MB artist-credit 逐字 `Hiroshi Sato` ＋ ` feat. ` ＋ `Wendy Matthews`（實體本名逐字 `佐藤博`，Person、country `JP`；另一方 `Wendy Matthews` 的 disambiguation 逐字「Australian adult alternative pop singer」、country `AU`）**，
+**Discogs master 793346 的 `title` 逐字 `Awakening = アウェイクニング`、原壓 `releases/2334329` 的 `labels` 欄逐字「Alfa — ALR-28036」、`released` 逐字 `1982-06-21`**——**盤名逐字相同、年份相同、領銜方同一個人 → 就是池中那張碟。** slice 的 `poolRecheck` 逐字「⚠ 確定撞池——退」、`hit` 逐字 `seed｜佐藤博｜Awakening｜1982`，**本層覆核成立；照簡報第三節第 1 點直接退、不補別張。**
+**⑤ 款前半**：**原壓 `genres` 逐字 `Electronic`／`Funk / Soul`／`Pop`——零 Jazz；`styles` 逐字 `Soul`／`Disco`／`Synth-pop`／`City Pop`／`Contemporary R&B`／`Ballad`／`Vocal`，零爵士成分**；**第 3716 條三肢**：演奏主體（十軌的主唱是 Wendy Matthews）、曲目（十軌是為本盤寫的英語流行歌）、`styles` 三肢全敗 → **即使不撞池也退。**
+⚠ **MB RG 轄下 9 筆（含 2014 年的《アウェイクニング スペシャル・エディション》）、Discogs master 14 版**——**只記、不計（退件）。**
+⚠ **`known-pool-collisions.json` 不必加這一筆**：slice 的預標機制已經抓到它，**這是六道裡「等值」那一道的正常命中。**
+
+## 6408　⚠ ⚠ 退：`Osamu Kitajima —《Dragon King》`（rg c1b637ea）——**原壓不在十五家：美國 `Arista AL 9570`（1981）早於日本 `Alfa ALR-28035`（1982）一年；⚠ `house: Alfa` 在本線 1978 年界線之後第一次錯，而錯法是「美國先發」**
+
+**事實**：**Discogs master 442293 的 `versions` 逐筆跑完 6 版**——**1981 美國 `Arista AL 9570` LP（3648092）與 1981 美國／加拿大卡帶 `ATC-9570`（15084543）**、1982 日本 `Alfa ALR-28035` LP（2065495）與同號 Promo（8210506）、2010 美國 `East Quest Records 1901557` CD-R（4269520）、2019 歐洲 `Everland Psych 007 CD`（14223205）；**master `year` 逐字 `1981`、`main_release` 逐字 3648092（美國盤）。**
+**美國原壓 `releases/3648092`**：`labels` 欄逐字「Arista — AL 9570」、`released` 逐字 `1981`、`companies` 逐字「Phonographic Copyright (p): Arista Records, Inc.」「Copyright (c): Arista Records, Inc.」「Recorded At: Paramount Recording Studios」「Recorded At: Redwing Studios」「Manufactured By: Arista Records, Inc.」「Lacquer Cut At: JVC Cutting Center」「Pressed By: Columbia Records Pressing Plant, Terre Haute」、`notes` 逐字「Recorded in February 1981 … © & ℗ 1981 Arista Records, Inc.」。
+**日本盤 `releases/2065495`**：`labels` 欄逐字「Alfa Records, Inc — ALR-28035」、`released` 逐字 `1982`、`notes` 逐字「Recorded at Paramount Recording Studio, Hollywood, Ca. & Red Wing Studio, Tarzana, Ca. Feb. 1981 / Made in Japan / © 1982 by Alfa Records, Inc., Tokyo, Japan」。
+**MB 只建 1 筆：7dc614a4（1982 JP `ALFA ALR-28035`）**——**MB 轄下零美國盤，所以 slice 的 `house` 與 `year` 都跟著日本盤走。**
+
+**裁定：退。** **原壓是美國 `Arista`**（`labels/362`：`parent_label` 逐字 `Sony Music Entertainment`——⚠ **那是今天的母公司、而且是美國的 Sony，不是本線十五家的日本 CBS/Sony；`profile` 逐字記 1979 年起是 Bertelsmann 旗下**），**不在十五家 → 照簡報第一節 (1)「原壓廠牌這個判準本身照舊」退，並寫明原壓是哪一家。**
+⚠ **年份改判也要記（主線第 1934-B 條六：退件也要記年份改判）**：**1982 → 1981**（美國原壓 `released` 逐字 `1981`、`notes` 逐字 `© & ℗ 1981`、master `year` 1981；日本盤 `©` 逐字 1982）。
+
+### ⚠ ⚠ 為什麼這一筆要特別記
+1. **與 c-187 a 收的 `喜多嶋修《Masterless Samurai》`（1980）剛好反過來**：**那一張是日本 Alfa `ALR-6035`（1980）早於美國 `Headfirst`（1981）一年 → 日本原壓、收**；**本張是美國 Arista（1981）早於日本 Alfa（1982）一年 → 美國原壓、退。**
+   **同一位藝人、同一家日本廠牌、相隔一年、兩張都在洛杉磯錄、兩張的 `Executive-Producer` 都是 Alfa 的 村井邦彦 與 川添象郎（本盤美國原壓的 `extraartists` 逐字 `Executive-Producer — Kuni Murai`／`Sho Kawazao`）——分界只落在「哪一邊先發、℗ 掛在誰身上」。**
+2. ⚠ **第 4106 條四項本筆沒有跑**（領銜是日本人，照 c-186 a 第 5957 條不觸發）——**退的是原壓廠牌那一關，不是身分那一關。**
+3. ⚠ **曲風那一關本筆過得了**：原壓 `genres` 逐字 `Jazz`／`Funk / Soul`／`Folk, World, & Country`、`styles` 逐字 `Fusion`／`Jazz-Funk`／`Contemporary Jazz`；七軌裡兩軌（A3／A4）有 Phil Perry／Rena Scott 的主唱、B2 有 Wendy Matthews 的人聲，**乙 3/7 ≤ 一半**——**好盤，但不在門內。**
+⚠ **建議登記進 `audits/between-the-lines-candidates.md`**（本層不動那個檔）：**`Arista AL 9570`（`喜多嶋修《Dragon King》`，1981）——日本 Alfa 企劃（執行製作兩位都是 Alfa 的人）、洛杉磯錄音、美國 Arista 先發、日本 Alfa `ALR-28035` 晚一年；兩條線都以「日本原壓」為門，所以它兩邊都進不來。**
+⚠ **給後續批次**：**`house: Alfa` 的 1978 年界線照舊，但界線之後還有第二種錯法：Alfa 在 1980–82 年替 喜多嶋修 這類洛杉磯錄音的藝人做的盤，美國授權盤可能先發**——**判定仍是 `/masters/<id>/versions` 的最早一版與它的 `labels` 欄。**
+
+## 6409　退：`吉田美奈子 —《LIGHT'N UP》`（rg fe0f3acd，`Alfa ALR-28040`，1982-09-21）——**第 5701 條 (4) 款乙 8/8＝100% ＋ 第 1923-B 條演奏主體是主唱；兩肢各自獨立成立**
+
+**事實**（Discogs releases/3411463＝原壓，`labels` 欄逐字「Alfa — ALR-28040」、`released` 逐字 `1982-09-21`，⚠ **`house: Alfa` 對**）：
+**領銜者的 credit 逐字 `Lead Vocals, Backing Vocals` 與 `Producer`**；**八軌逐字〈Light'n Up〉〈頬に夜の灯〉〈Love Shower〉〈風〉〈Morning Prayer〉〈斜陽 (Reflection)〉〈時の向こう〉〈Alcoholler〉**；
+**作詞作曲在原壓上沒有逐軌欄，照第 5929 條第二步取同一張母帶的 2015 `GT Music MHC7 30019`（8899093）：`Lyrics By` 逐字 `Minako Yoshida [tr 1 to 7]` ＋ `[tr 8]`（第 8 軌另掛 `Aki (40)`）、`Music By` 逐字 `Minako Yoshida`**——**八軌全部是她自己作詞作曲的歌。**
+**裁定：退。**
+- **第 5701 條 (4) 款「自寫的流行歌不算甲」**：甲 0／乙 8＝100% > 一半 → **第三肢失敗**（與 c-187 b 第 6059 條 `ラジ《ACOUSTIC MOON》`（乙 11/11）同一個算法）。
+- **第 1923-B 條**：**演奏主體是主唱 ＋ 伴奏**——⚠ ⚠ **伴奏名單是本組最強的一份**（岡沢章・渡嘉敷祐一・佐藤博・富樫春生・松木恒秀・土方隆行・清水靖晃・渕野繁雄，紐約那一軌是 Brecker 兄弟・David Sanborn・Jon Faddis・Ronnie Cuber），**而第 1923-B 條逐字「伴奏名單很強不是收件款的任何一肢」**；**與 c-187 b 第 6058 條 `Marlene` 那一張、c-186 b 第 5967 條 `原久美子` 那一張同形。**
+- ⚠ **曲風五款按字面不成立**（原壓 `genres` 逐字 `Jazz`／`Funk / Soul`／`Pop`、`styles` 逐字 `City Pop`／`Disco`／`Funk`／`Jazz-Funk`／`Soul`——`Jazz-Funk` 照 c-185 b 第 5928 條是爵士成分，⑤ 第三形不成立）**——退的是收件款第三肢與演奏主體，不是曲風欄。**
+⚠ **池中已有她五張（seed 的《扉の冬》《Flapper》《Twilight Zone》《Let's Do It》《Monochrome》）**——**那些是廣度線的卡，與本線的收件款無關；本筆退件不回頭動它們。**
+⚠ **登記成撈回候選**（第 6435 條）：若哪天第 5701 條 (4) 款放寬，這一張第一個撈回來。
+
+## 6410　⚠ ⚠ 退：`Marlene —《My Favorite Songs》`（rg 5186efb9，`CBS/Sony 28AH 1507`，1982-12-21）——**第 4106 條四項 2/4（乙族的典型）；⚠ 曲風、收件款第三肢與演奏主體三關全過，退的純粹是身分那一關**
+
+**事實**（Discogs releases/6793339＝原壓）：`labels` 欄逐字「CBS/Sony — 28AH 1507」、`released` 逐字 `1982-12-21`、`companies` 逐字「Recorded At: CBS/Sony Shinanomachi Studio」「Mixed At: CBS/Sony Shinanomachi Studio」、`notes` 逐字「Recorded and mixed at CBS/Sony Shinanomachi Studio, Tokyo, Japan in October and November, 1982.」；
+**九軌逐字是〈Lullaby Of Birdland〉〈My Funny Valentine〉〈For Once In My (Life) ~ All The Things You Are〉〈People〉〈Satin Doll〉〈You'll Never Know〉〈The Shadow Of Your Smile〉〈Sweet Serenade〉〈Alfie〉**；
+**伴奏四人逐名印在盤上、全是美國人：Mike Wofford（Piano）、Monty Budwig（Bass）、Shelly Manne（Drums）、Harry "Sweets" Edison（Trumpet）**；**製作 伊藤八十八（藝人頁 406896）、錄音 鈴木良博。**
+
+**裁定：退。第 4106 條四項逐項（門檻 ≥ 3/4，第 5680／5685 條）**：
+| 四項 | 判定 | 逐字依據 |
+|---|---|---|
+| 領銜 | **外國側** | `Marlene`（0b71b386，MB disambiguation 逐字「Filipina jazz singer, primarily active in Japan」）——**照 c-187 b 第 6058 條的同一個判法** |
+| 作曲 | **外國側** | **九軌全是美國爵士曲目表上的既有曲（Shearing・Rodgers・Kern・Ellington／Strayhorn・Mandel・Bacharach・Warren 一系），零個日本作曲者**——**與 c-184 a 第 5723 條（`Sonia Rosa`，「九軌零個日本作曲者」）同形** |
+| 企劃 | **日本側** | `Producer` 逐字 伊藤八十八（CBS/Sony） |
+| 原盤發行 | **日本側** | CBS/Sony `28AH 1507` 東京錄音、日本先發（⚠ 版本表另有同年的菲律賓 `CBS QCL-22282` LP 與卡帶，無月日，本層以東京錄音 ＋ `(p) CBS/Sony Inc.` 判日本側） |
+**→ 2/4 < 3/4 → 退。** ⚠ **演奏側 0/4（伴奏四人全是美國人）**——**照第 5680 條「分界是四項，不是人頭比」，兩種算法同向。**
+⚠ ⚠ **`bornOutside` 那一欄（「出身地 Manila（PH）不在日本，長住日本——算本土」）一次都沒有參與判定**（主線第 1959-B 條）。
+⚠ **曲風與第三肢都過得了**：原壓 `genres` 逐字 `Jazz`／`Pop`、`styles` 逐字 `Vocal`／`Easy Listening`／`Smooth Jazz`（① 款字面成立 → 進人工判；`Smooth Jazz` 是爵士成分）、**甲 9（九首都已進入爵士曲目表）／乙 0**、**演奏主體是人聲 ＋ 爵士四重奏（1923-B 不觸發）**——**本筆是 `Marlene` 在本線三張退件裡曲風最「對」的一張。**
+⚠ **登記成撈回候選**（第 6435 條）：**若身分那一關的門檻放寬到 2/4，這一張是本組第一個撈回來的**；⚠ **版本表 11 版**（含同年 Master Sound 另號 `32AH 1603`、卡帶 `28KH 1259`、1983 年 `38DH 27` CD、香港 CD）——**只記、不計。**
+
+## 6411　⚠ ⚠ 退：`Marlene with Seawind —《Summer Nights》`（rg be1eb4c4，`CBS/Sony 28AH 1455`，1982-07-21）——**第 4106 條四項 2/4 ＋ 第 5701 條乙 9/9 ＋ 第 1923-B 條演奏主體是主唱；三肢各自獨立成立**
+
+**事實**（Discogs releases/3860148＝原壓）：`labels` 欄逐字「CBS/Sony — 28AH 1455」、`released` 逐字 `1982-07-21`、`notes` 逐字「Recorded at Ocean Way Recording Studio, Hollywood and Alpha Studios, North Hollywood, California, May, 1982 / Recorded and mixed at CBS/Sony Shinanomachi Studios, Tokyo, June, 1982」；
+**九軌逐軌 `Written-By` 逐字：J.L. Wallace／Ken Bell／Terry Skinner（A1）、Bill Mumy（A2）、Bill Mumy／Paul Gordon（A3）、David Shiels／Larry Williams（A4）、Jim Lang（A5／B1）、Andrew Kastner／Jim Lang（B2）、Leon Ware／Richard Rudolph（B3）、Kengo Kurozumi／Linda Hennrick（B4）**；
+**伴奏逐名印在盤上：Seawind 的 Bob Wilson（Drums）・Ken Wild（Bass）・Bud Nuanez（Guitar）・Larry Williams（Keyboards）・Kim Hutchcroft（Sax）・Jerry Hey（Trumpet），加上 Gary Grant・Lew McCreary、和聲 Timothy B. Schmit・Tom Kelly・George Hawkins・Tommy Funderburk**；**製作 伊藤八十八、B4 編曲 中西俊博（藝人頁 451298 的 `realname` 逐字「Nakanishi Toshihiro = 中西俊博」）。**
+**裁定：退。**
+- **第 4106 條四項**：**領銜外國側**（`Marlene` ＋ `Seawind`，後者 MB 0ce0868b、Group、country `US`）、**作曲外國側**（九軌裡八軌的作者全是美國流行歌作者；B4 一軌是 `Kengo Kurozumi` 與美國作詞者合作）、**企劃日本側**（伊藤八十八）、**原盤發行日本側**（CBS/Sony `28AH 1455`，版本表 8 版全是日本盤）＝ **2/4 → 退。**
+- **第 5701 條 (4) 款**：九軌是為本盤新寫的英語流行歌，**甲 0／乙 9＝100%**（與 c-187 b 第 6059 條「為本盤寫的流行歌」同一個算法）。
+- **第 1923-B 條**：演奏主體是主唱 ＋ 美國錄音室樂團。
+⚠ **曲風五款按字面不成立**（原壓 `genres` 逐字 `Jazz`／`Funk / Soul`／`Pop`、`styles` 逐字 `Fusion`／`Smooth Jazz`／`Soul`／`City Pop`／`Vocal`）——**退的不是曲風欄。**
+⚠ ⚠ **同批跨卡的一格**：**本組收的 #14 `浪花エキスプレス《No Fuse》` 的 `extraartists` 逐字有 `Vocals — Marlene (16)`**——**她在那一張是客席，那一張不因此受影響（第 6427 條）。**
+⚠ **`audits/foreign-artist-japan-productions.md` 乙族建議加兩筆**（本層不動那個檔）：`CBS/Sony 28AH 1507`（6410）與 `CBS/Sony 28AH 1455`（本條），**兩筆都是四項 2/4**——**連同 c-187 b 第 6058 條，`Marlene` 在本線三張退件、零收；`enum/jp-2.md` 逐字「Marlene 8」還剩五張在後面的批次（或已切出本線）。**
+
+## 6412　退：`五十嵐浩晃 —《Wing》`（rg e052aa58，`CBS/Sony 28AH 1443`，1982）——**⑤ 款前半 ＋ ① 款 ＋ ③ 款 ＋ 第 1925-B 條（盤面零樂手）＋ 第 3716 條三肢全敗；與 c-187 a 第 6032 條同一位藝人、同一個判法**
+
+**事實**（Discogs releases/9231816＝原壓，`labels` 欄逐字「CBS/Sony — 28AH 1443」、`released` 逐字 `1982`）：
+**`genres` 逐字 `Rock`／`Latin`／`Funk / Soul`／`Pop`——零 Jazz；`styles` 逐字 `Pop Rock`／`Bossa Nova`／`City Pop`／`Ballad`／`Kayōkyoku`**；
+**十軌逐字〈ハートに火をつけて〉〈Because〉〈きっとValley〉〈お嬢さんお手やわらかに〉〈Rainy Harmony〉〈言葉はいらない〉〈つばさ〉〈粉雪の降る街〉〈序曲〉〈めぐり逢い〉**；**`extraartists` 整欄空白、`notes` 空白——盤面一個樂手都沒有列。**
+**裁定：退。** **⑤ 款前半成立**（`genres` 零 Jazz）→ **第 3716 條三肢逐肢覆核：演奏主體（盤面零樂手，第 1925-B 條那一肢從盤面本身不成立）、曲目（十軌日語題的流行歌，③ 款成立）、`styles`（五項零爵士成分，① 款 `Kayōkyoku` 成立）三肢全敗。**
+⚠ **與 c-187 a 第 6032 條退掉的同一位藝人《ナチュラル・ロード》（`27AH 1138`，1980）四肢同時成立的形狀逐項相同**——**這一位在本線兩張、兩張都退。**
+⚠ **版本表 2 版（LP 與同期卡帶 `28KH 1177`）、MB 1 筆——只記、不計。**
+
+## 6413　退：`伊藤美奈子 —《Tenderly》`（rg 55e08875，`CBS/Sony 28AH 1461`，1982-10-01）——**⑤ 款前半 ＋ ① 款 ＋ ③ 款 ＋ 第 1923-B 條（自作自唱的日語歌）＋ 第 3716 條三肢全敗**
+
+**事實**（Discogs releases/11028155＝原壓，`labels` 欄逐字「CBS/Sony — 28AH 1461」、`released` 逐字 `1982-10-01`）：
+**`genres` 逐字 `Funk / Soul`／`Pop`——零 Jazz；`styles` 逐字 `Funk`／`City Pop`／`Kayōkyoku`／`Ballad`／`Vocal`**；
+**十軌逐字全是日語題**（〈グラスの中の青い海〉〈さよならの休日〉〈愛の行方〉〈きらめく季節〉〈昨日からの会釈〉〈冬の前ぶれ〉〈雨のメヌエット〉〈回転木馬の夜〉〈アムール〉〈水の中の太陽〉）；**整筆 `Written-By` 逐字只有 `伊藤美奈子` 一人**（藝人頁 4327500 的 `realname` 逐字「伊藤美奈子」；MB disambiguation 逐字「Japanese singer」）；
+**伴奏逐名印在盤上（編曲與鍵盤 松任谷正隆，藝人頁 556508 的 `realname` 逐字「松任谷正隆 (Matsutōya Masataka)」；今剛（藝人頁 165584）、Jake H. Concepcion、Tomato Strings 等二十餘位（組）——其餘人名本層未逐名回打藝人頁，不寫漢字）。**
+**裁定：退。** **⑤ 款前半成立 → 第 3716 條三肢全敗**：演奏主體是歌手（**第 1923-B 條，c-187 a 第 6030 條的分界：領銜者自作自唱的日語歌**）、曲目（十軌是她自己寫的日語流行歌，**③ 款成立、第 5701 條 (4) 款乙 10/10**）、`styles`（五項零爵士成分，**① 款 `Kayōkyoku` 成立**）。
+⚠ **第 1925-B 條那一肢本筆其實成立（二十餘位伴奏逐名印在盤面）——退的是演奏主體與曲目，不是盤面零樂手**；⚠ **「伴奏名單很強」不是收件理由（第 1923-B 條）。**
+⚠ **版本表 6 版（含同期卡帶 `28KH 1216`、2022 年 `Aldelight MHCL 30783`）、MB 3 筆——只記、不計。**
+
+---
+## 收件與橫向的裁定（6414–6435）
+
+## 6414　年份：**12 筆收件全部回查版本表，改判 0 筆；⚠ 退件側改判 1 筆（#9《Dragon King》1982 → 1981，美國先發）**
+
+- **12 筆收件逐筆五處（slice／MB first-release-date／MB 原壓 release／Discogs 原壓 `released`／Discogs master `year`）全部相符、差 0。**
+- ⚠ **錄音年早於發行年的有四筆，那不是改判**：#1《Snooze》（盤面逐字 1980 年 7–11 月）、#13《One-Way Traveller》（1980 年 11 月–1981 年 1 月）、#2 與 #19 的錄音日期盤面沒寫（不推測）、#7 只寫月日（10 月 12–29 日，年份照發行日推定 1982，卡上已要求正文不要自己補年份）。
+- ⚠ **Apple `releaseDate` 在本組的五種形狀**（照第 1907-B 條只作佐證）：**逐日相符**（#2 `1981-12-01`、#16 `1982-11-21`）、**`01-01` 佔位**（#3 Kitty／#7 Alfa／#14 CBS/Sony）、**錄音月**（#5 `1981-05-01`＝盤面逐字 5 月 9／11 日錄）、**再發日搬到數位版上**（#6 `1987-07-01`＝1987 年 CD 的日子）、**查不到對應實體的日子**（#4 `1996-04-22`）。**→ CBS/Sony 的 `releaseDate` 在本組 1 對 1 佔位；Kitty 1 對 1 佔位；c-187 b 第 6085 條說「CBS/Sony 的 `releaseDate` 可信」在本組只對了一半。**
+- ⚠ **MB 的日期錯法兩種**：**把原盤日填到再發上**（#7 a0f2f3fa：`ALCA-9203` 是 1998 年的號、日期逐字 `1982-12-16`）、**把原盤年填到數位版上**（#3 e9fd2d45：`UNIVERSAL SIGMA` 數位版日期逐字 `1981`）——**兩種都會讓「MB 最早 release」看起來比實際早，而 `titleCheck` 三欄一致、機器不報。**
+
+## 6415　盤名：**真改判 0 筆**（等價形／轉寫取邊 4 ＋ 大小寫取邊 3 ＋ 符號寫法取邊 1 ＋ 商品頁和文題不採 1 ＋ 三欄一致 3）
+
+| # | 盤名 | 取邊 | 依據 |
+|---:|---|---|---|
+| 6 | `Wings` | 片假名 `ウイングス`（MB RG／1999 CD／Apple）vs 羅馬字 `WINGS`／`Wings`（MB 原壓／Discogs 六版）→ **取羅馬字** | c-187 b 第 6077 條（羅馬字那一邊自己一致）；**slice `titleCheck` 警語的兩筆之一，實為等價形、不是再發題** |
+| 5 | `Good Nature` | 原壓 `Good Nature = グッド・ネイチャー` → **取羅馬字** | 同上 |
+| 19 | `Pyramid` | 原壓 `Pyramid = ピラミッド` → **取羅馬字** | 同上 |
+| 16 | `脚線美の誘惑` | Discogs `脚線美の誘惑 Kyakusenbi No Yuhwaku` → **取和文**（羅馬字是拼音轉寫、不是獨立外文題） | 同上的另一個方向 |
+| 3 | `Alone` | MB RG 與兩筆 release 全大寫 `ALONE` vs Discogs 十版 `Alone` | 主線第 1971-B 條二之 5（大小寫不在第 1858-B 條射程） |
+| 14 | `No Fuse` | MB RG 與數位版 `NO FUSE` vs 原壓 `No Fuse` | 同上 |
+| 2 | `Coconuts High` | MB 曲目／ja 維基大寫 vs 盤名 `Coconuts High` | 同上 |
+| 7 | `4×4` | `4×4`（MB RG 等四處、Apple）vs `4 X 4 (Four By Four)`（Discogs 十四版）vs `4x4`（MB 最早 release）→ **取 `4×4`** | **第 6428 條（建議主線覆核）**；**slice `titleCheck` 警語的另一筆** |
+| 4 | `Carnival` | Apple 兩筆逐字《哀愁のカーニヴァル》→ **不採，只進 `queryAlias`** | Discogs 九版與 MB 兩層零和文題；簡報第五節（商品頁講的是現在賣的版本） |
+| 1／13／15 | `Snooze`／`One-Way Traveller`／`Space Travel` | 三欄一致、查無問題 | — |
+
+⚠ **slice `titleCheck.note` 報警語的 2 筆（#6、#7）兩筆都不是「RG 取了再發標題」**——**c-187 a 第 6055 條建議改警語措辭，本組是第六、七個實例。**
+⚠ **原壓盤面自己的錯字一處**（`titleCheck` 第 (d) 種）：**#7 A2 曲題逐字 `Pavane - Pour Une Infunte Défunte`（`Infante` 拼成 `Infunte`）**——**曲題、不是盤名，卡上已要求下游寫正確拼法並註明。**
+
+## 6416　`live`：**改判 0 筆；slice 標 `live` 的 0 筆屬實；19 筆逐筆掃過主線第 1958-B／1977-B 條的必掃字串與 credits 角色，反向漏標 0 筆**
+
+- **必掃字串命中 1 次、判非實況**：**#14 的 2025 年 LP 復刻 `notes` 逐字「強烈なライヴ・パフォーマンスで地元関西で話題を呼びつつあった…ライブさながらの迫真のプレイ」**——**廠牌的商品解說、說的是樂團的現場名聲；原壓 `notes` 空白、零場館零日期 → 三肢零成立。**
+- **必掃角色的鄰居命中 1 次、判非實況**：**#13 的整筆 `extraartists` 逐字 `Technician [Direction On Sound System]` ＋ 四位 `Technician [Technical Crew]`**——**不是清單上的 `Technician [P.A. Operation]`；`notes` 逐字是兩間錄音室 → 判錄音室的音響技術組。**
+- **日期肢字面成立、另兩肢不成立 1 次**：**#5 `notes` 逐字「Recorded on May 9 & 11, 1981.」（連兩天）而 `companies` 是 `Hitokuchizaka Studio`、零 live 字樣**——**主線第 1965-B 條改寫後三肢仍是且的關係 → 非實況。**
+- ⚠ **給後續批次**：**本組的反向漏標率 0/19，低於 c-184 a（16%）與 c-187 b（12%）——成因是年段：1981–82 年的 CBS/Sony 與 Kitty 盤在 Discogs 上 `notes` 多半寫錄音室與月份，實況盤會寫 `Recorded Live`（b 組的《Ocean Breeze》原壓 `notes` 逐字「Recorded Live from "Power Play '80 & '81".」）。**
+
+## 6417　⚠ ⚠ 再發版本數：**12 筆收件全部有 master 頁、逐筆跑完整張 `versions`；12/12 MB 低估，平均低估率 54%、最高 82%（#4）、最低 17%（#16）；⚠ 版本數一律取 Discogs、MB、Apple 三家的聯集（主線第 1971-B 條二之 5 ＋ 第 1957-B／1987-B 條）**
+
+| # | 盤 | Discogs | MB（實體） | MB 獨有 | Apple 獨有 | **聯集** | MB 低估 |
+|---:|---|---:|---:|---:|---:|---:|---:|
+| 1 | Snooze | 3 | 1 | 0 | 0 | **3** | 67% |
+| 2 | Coconuts High | 6 | 4 | 1（數位） | 0 | **7** | 43% |
+| 3 | Alone | 10 | 6 | 1（數位） | 0 | **11** | 45% |
+| 4 | Carnival | 9 | 2 | 0 | 2 | **11** | 82% |
+| 5 | Good Nature | 5 | 4 | 2（2008 CD、數位） | 1 | **8** | 50% |
+| 6 | Wings | 6 | 3 | 0 | 1 | **7** | 57% |
+| 7 | 4×4 | 16 | 7 | 1（數位） | 0 | **17** | 59% |
+| 13 | One-Way Traveller | 5 | 2 | 0 | 0 | **5** | 60% |
+| 14 | No Fuse | 7 | 4 | 1（數位） | 0 | **8** | 50% |
+| 15 | Space Travel | 4 | 2 | 0 | 0 | **4** | 50% |
+| 16 | 脚線美の誘惑 | 9 | 10 | 3（2001 CD、SACD、數位） | 0 | **12** | 17% |
+| 19 | Pyramid | 10 | 3 | 0 | 0 | **10** | 70% |
+| | **合計** | **90** | **48** | **9** | **4** | **103** | **平均 54%** |
+
+**Discogs 版本表抓到而 MB 沒建的五種漏源（本組逐種計）**：
+1. ⚠ ⚠ **同號 Promo**：8 筆（#1／#2／#3／#6／#7／#13／#14／#15 各一、#4 另有 1984 年再發的 Promo）。
+2. ⚠ ⚠ **同年同廠的卡帶**：6 筆（#2 `28CK0028`、#3 `28CK0030`、#4 `PTC-25002`、#7 `ALC-28043`／`ALC-28045`、#14 `28KH 1127`、#16 `28KH 1277`）——**c-187 a 第 6055 條操作提醒第 1 點的十種前綴再加三種：`28CK`（Kitty 1981）、`PTC-`（Full House）、`28KH`（CBS/Sony 1982）。**
+3. ⚠ ⚠ **CBS/Sony 的同年 Master Sound 另號**：3 筆（#14 `30AH 1218 KD`、#16 `32AH 1604`、#19 `30AH 1229`）——**主線第 1986-B 條要求一起數；本組九張 CBS/Sony 裡四張收件，三張有另號。**
+4. ⚠ ⚠ **1982 年的首批 CD**：3 筆（#15 `38DH 21`、#16 `38DH 22`、#19 `35DH 17`）——**MB 對其中兩筆建了、一筆（#19）沒建；#16 的 CD 年份 MB 記 1983-01-21、Discogs 記 1982（另有 1983 Repress）。**
+5. **海外授權壓片**：2 筆（#4 的 1981 菲律賓 `A & W Horizon AWHL 520`、1992 德國 `99 Records 2114`）。
+**MB 有而 Discogs 沒有的**：**數位版 5 筆（#2／#3／#5／#7／#14，Discogs 結構上不收）、實體 3 筆（#5 的 2008 `Art Union ABCJ-498`、#16 的 2001 `VRCL-2106` 與 2002 SACD `VRGL-8010`）**；**Apple 有而兩家都沒有的數位版 4 筆（#4 兩筆、#5 一筆、#6 一筆）。**
+⚠ ⚠ **「Trio 是 MB 建得最好的一家」在本組只對了一半**：**Trio 三張的 MB 低估率 82%（#4）／50%（#5）／57%（#6）**——**與 c-187 b 第 6085 條操作提醒第 4 點「不要外推」同向。**
+
+## 6418　⚠ ⚠ 廠牌欄與「原壓廠牌必須是本線十五家」那一關：**19 筆逐筆以 Discogs `releases/<id>` 的 `labels` 欄為準核過，`house` 與原壓不符 1 筆（5%）；另 1 筆 `labels` 欄字標不在十五家、打 `labels/<id>` 讀 `parent_label` 後判定成立**
+
+| # | slice `house` | **原壓 `labels` 欄逐字** | 判定 |
+|---:|---|---|---|
+| 1／2／3 | Kitty | `Kitty Records — 28MK 0012`／`28MK 0023`／`28MK0025`（＋`FR-308` Flexi） | ✓（`Polydor K.K.` 只在 `companies` 的製造／發行格） |
+| 4 | Trio／Whynot | ⚠ **`Full House (3) — PAP-25009`** | ✓ **`labels/509748` 的 `parent_label` 逐字 `Trio-Kenwood Corporation`；原壓 `companies` 另逐字 `Record Company: Trio Records`**——**主線第 1976-B 條那一格的第二筆實例（第一筆是 c-187 b 第 6076 條）** |
+| 5／6 | Trio／Whynot | `Trio Records — PAP-25008`／`PAP-25013` | ✓ |
+| 7／10 | Alfa | `Alfa — ALR-28045`／`ALR-28040` | ✓ |
+| 8 | Alfa | `Alfa — ALR-28036` | ✓（退在撞池，第 6407 條） |
+| 9 | Alfa | ⚠ ⚠ **最早一版是美國 `Arista — AL 9570`（1981）；日本 `Alfa Records, Inc — ALR-28035` 晚一年** | ✗ **不在十五家 → 退（第 6408 條）** |
+| 11–19 | CBS/Sony | `CBS/Sony — 28AH 1507／1455／1414／1469／1505／1443／1461`、`25AH 1402／1460` | ✓ **9/9**（⚠ **本組 CBS/Sony 九張全在 `25AH`／`28AH` 號段，零 `SONP-`／`SOPM-`——派工信點名要特別當心的那兩個號段本組沒有出現**） |
+
+⚠ **本組 `Alfa` 四張 3/4 正確**：**1978 年界線之後的第一個錯例（#9），錯法是「美國先發」，不是 c-184／c-185 那種「原壓字標是 Express」**——**快篩抓不到，只有版本表抓得到。**
+⚠ **`Kitty` 三張 3/3、`Trio／Whynot` 三張 3/3（含一筆子字標）、`CBS/Sony` 九張 9/9。**
+
+## 6419　⚠ 掛名：**12 張 12 個相異字串——沿用池中整串 8 ＋ 新立 4；新造分隔符 0、收斂 0、改釘 rgMbid 0**
+
+- **沿用 8**：`カリオカ`（池 2）、`高中正義`（池 15）、`今田勝`（池 1，c-187 b 立的單人串；另兩個編制串並存）、`鈴木良雄`（池 4）、`Casiopea`（池 9）、`菊地雅章`（池 7；編制串並存）、`THE SQUARE`（池 6）、`日野皓正`（池十餘列；編制串並存）。
+- **新立 4**：
+  1. **`小林泉美`**——**與同批 b 組《夏・Nuts・夏》的卡單同一個字串**（b 組第 6449 條），兩張一致。
+  2. **`浪花エキスプレス`**——**與同批 b 組《大宇宙無限力神》同一個字串；⚠ 與 c-189 a《Wind Up》的 `NANIWA EXPRESS` 不同（第 6427 條，建議主線優先覆核）。**
+  3. **`松風鉱一`**——⚠ **池中有 `Koichi Matsukaze Trio` 3 列（羅馬字編制串）**；**本盤盤面是單人（MB Person、Discogs 原壓無 `Trio`），照第 964／196／197 條人名串與團名串並存、照 2026-08-11 裁定取漢字**；⚠ **這會留下一組「羅馬字編制串 vs 漢字人名串」的跨文字系統分裂**，**照 `CURATION-BRIEF-c131.md` 第二節第 3 點（新收用漢字、池中英文字串待本機統一）處理，建議記進 `audits/pool-artist-name-splits.md`。**
+  4. **`The Players`**——⚠ **池中有 `The Players Featuring 鈴木宏昌` 1 列（c-186 b，那一張盤面的形）**；**本盤盤面只有團名 → 盤面形並存（第 6429 條）。**
+- ⚠ **兩個 MB 實體名要小心**：**`THE SQUARE` 的 MB 實體本名與 sort-name 逐字 `T‐SQUARE`（U+2010）**、**`浪花エキスプレス` 的 MB 實體本名逐字 `Naniwa Express` 而 credit 字串一張 `NANIWA EXPRESS`、一張 `浪花エキスプレス`**——**任何以 MB 實體名為鍵的統計都會把它們算錯。**
+
+## 6420　⚠ ⚠ 曲風：**19 筆逐筆獨立覆核；`why` 欄 19/19 是空字串，19 筆的曲風依據 100% 由本層自建**
+
+- **①② 字面成立而進人工判後收 2 筆**：**#1（`Folk, World, & Country` 桶＝拉丁／巴西打擊，與 c-187 的《Little Train》同一個判法）**、**#11（① `Easy Listening`，進人工判；那一筆退在身分那一關）**。
+- **⑤ 款前半成立 3 筆，三筆都搭第 3716 條三肢全敗才退**（主線第 1978-B 條三的讀法）：#8／#17／#18。
+- **⑤ 第三形 0 筆**（本組 `styles` 有內容的 19 筆，每一筆至少一項爵士成分或 `Kayōkyoku`）。
+- ⚠ ⚠ **同一個 master 的不同 release `genres`／`styles` 不一樣，本組 3 筆**：**#2（市售帶 `Reggae`、卡帶帶 `City Pop`）、#7（Promo 多 `Funk`）、#9（美國盤 vs 日本盤：日本盤多 `Pop`／`Neo Soul`）**——**一律以市售原壓那一筆為準（主線第 1978-B 條二）。**
+- **第 5701 條的甲乙計數，12 筆收件的乙佔比**：0%（#1／#4／#5／#6／#13／#14／#15）、11%（#16）、13%（#19，若把〈Estate〉保守算乙）、17%（#7，Ravel 保守算乙）、25%（#3，兩軌人聲保守算乙）、**50%（#2，邊界，第 6426 條）**。
+- ⚠ **作曲欄全空而靠第 1969-B 條一之 (i)（舉證責任在退件方）過第三肢的 2 筆**：#14（MB work 只給一軌）、#15（零 work）——**兩筆都照第 5929 條三步工序做完、曲題反查零命中。**
+- ⚠ ⚠ **MB 的 work 關聯在本組是第四條作曲來源、而且兩次是決定性的**：**#2 的作詞者（三軌）、#19 的八軌作曲全靠它**——**Discogs 原壓與九個再發的作曲欄全空的碟，先去打 `release/<id>?inc=recordings+work-rels+work-level-rels`，比 ja 維基的曲目表穩（#2 那一格 ja 維基與 MB 在 B3 的作曲者、B4 的作詞者兩處不一致）。**
+
+## 6421　⚠ ⚠ `poolRecheck` 逐格人工覆核：**19 格全部重掃；真撞池 1 筆（機器標對了）、漏抓 0 筆；「要逐張人工比」12 格逐格比完全部不撞；「池中查無此藝人」6 格全部正確**
+
+- **確定撞池 1 格**（#8）：覆核成立（第 6407 條）。
+- **要逐張人工比 12 格**（#1／#3／#4／#5／#6／#7／#9／#10／#13／#15／#16／#19）：**盤名兩種文字系統都試、等價形兩邊都試、再逐張打 Discogs master 曲目表比錄音**——**零撞池**；⚠ **但抓到一軌重錄（#7 × 池中《Cross Point》，第 6430 條）與一組同批錄音（#13 × 池中《Susto》，第 6430 條），兩者都不是撞池。**
+- **池中查無此藝人 6 格**（#2／#11／#12／#14／#17／#18）：**全部正確**；⚠ **#14 那一格在池中確實 0 列，但待上架批次裡有兩列（同批 b 組 ＋ c-189 a）——c-187 a 第 6040 條記的「比對日早於前一批落地」那一形的並行版：同批與下一批並行時，`poolRecheck` 看不到彼此。**
+- ⚠ **`known-pool-collisions.json` 9 筆：本組零命中**（`matchedBy` 欄零筆標「前批策展層已裁定撞池」）。
+
+## 6422　catno 反查與孤兒 release：**12 筆收件逐筆做完；12/12 乾淨命中、零誤命中、差集 0、孤兒 release 0**
+
+- **反查回傳筆數**：2 筆（#4／#5）、3 筆（#1／#2／#6／#13／#14／#15／#16／#19）、4 筆（#3／#7）——**每一筆都是「master 1 ＋ 本盤 release」，零別張。**
+- ⚠ **#3 的號在 Discogs 上是無空格的 `28MK0025`、同組 #1／#2 是帶空格的 `28MK 00xx`**——**兩種寫法都試過、回傳相同**（c-183 第 5715 條記的「catno 反查三種失效」裡的空白那一種，本組零失效）。
+- ⚠ **MB 的 catno 錯字一筆**：#6 MB 逐字 `PA-25013`、原壓逐字 `PAP-25013`——**以 MB 的 catno 去 Discogs 反查會 0 筆，要用原壓的號。**
+
+## 6423　⚠ 外國藝人那一關：**本組 2 筆進關、2 筆退（四項 2/4 ×2）；另 4 筆不觸發但逐項量過（4/4 ×3、可判定 3/3 ×1）**
+
+| # | 盤 | 領銜 | 作曲 | 企劃 | 原盤發行 | **四項** | 演奏側 | 處置 |
+|---:|---|---|---|---|---|---:|---:|---|
+| 11 | Marlene《My Favorite Songs》 | 外 | 外 | 日 | 日 | **2/4** | 0/4 | **退** |
+| 12 | Marlene with Seawind《Summer Nights》 | 外 | 外 | 日 | 日 | **2/4** | 0/15 | **退** |
+| 6 | 鈴木良雄《Wings》 | 日 | 日 | 日 | 日 | 4/4 | 1/9 | 收 |
+| 13 | 菊地雅章《One-Way Traveller》 | 日 | 日 | 日 | 日 | 4/4 | 2/16 | 收 |
+| 7 | Casiopea《4×4》 | 日 | 日（過半） | 日 | 日 | 4/4 | 4/8 | 收 |
+| 19 | 日野皓正《Pyramid》 | 日 | 日（過半） | **不可判定** | 日 | **3/3** | 1/17 | 收 |
+⚠ **#19 是主線第 1971-B 條二之 3（兩方各佔一半 ＝ 不可判定）在本線第二次用在「企劃」那一票上**：`Producer` 逐字 Stan Vincent（美國人）、`Executive-Producer` 逐字 伊藤潔（日本人）——**不引入「誰的 credit 排在前面」這種新尺，照第 1965-B 條第 3 點的比例門檻（可判定 3 票 ≥2 即過）。**
+⚠ **`domesticRecheck.bornOutside` 的 2 筆（#11／#12，都是 `Marlene`）逐張量四項，兩張都 2/4**——**那一欄沒有參與判定；`domestic: true` 也沒有讓它們過關（主線第 1959-B 條、c-187 b 第 6058 條）。**
+⚠ **`domesticRecheck` 判非本土的 0 筆、「變體全是羅馬字」0 筆（派工信第二節 (4) 的兩格本組都是 0）。**
+
+## 6424　⚠ Apple 與店面（第 254 條，只寫觀察不寫結論）：**12 筆收件命中 8 筆（67%）；⚠ 命中的八筆裡五筆與 MB 的 `Digital Media` 是同一個數位版、不重複計算；403／429 本次工作階段零次**
+
+- **命中 8**：#2、#3、#4（兩筆）、#5（兩筆）、#6、#7、#14、#16。
+- **未命中 4**：#1（`カリオカ` 查回 25 筆全是 Os Cariocas 與古典盤）、#13（查回他其他的碟，含同批錄音的《ススト》）、#15（只有 2026 年的兩軌單曲，照主線第 1980-B 條「單曲不是專輯」不算）、#19（三種字串零筆）。
+- ⚠ **照主線第 1987-B 條先比對 MB 的 `Digital Media`**：**#2／#3／#7／#14／#16 五筆的 Apple 命中就是 MB 那一筆數位版（軌數與秒數相符）→ 不重複計算；#4 兩筆、#5 一筆、#6 一筆 MB 沒有對應實體 → 計入聯集。**
+- ⚠ ⚠ **Apple 的 `artistName` 在本組有三筆與池中掛名不同**：`鈴木“チン”良雄`（#6）、`NANIWA EXPRESS`（#14）、`The Players & 鈴木宏昌`（#15 的單曲）——**全部只進 `queryAlias`，不改掛名。**
+- ⚠ **Apple 的和文題一筆不採**：#4《哀愁のカーニヴァル》（第 6415 條）。
+
+## 6425　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有的一字未動**
+
+**本組十二張卡上的漢字專名全部是人名、廠牌名與錄音室名，下游寫作層若要用 `一口坂スタジオ`（#5 的錄音室）這類專名，由研究層定案寫法後再 append**（照主線第 1983-B 條二：白名單是「不要誤報」的清單，append 前要先確認是研究層定案過的寫法）。
+
+## 6426　⚠ ⚠ ⚠ 邊界收件（一）：`小林泉美 —《Coconuts High》`——**乙 4/8＝50%（保守算法）正好落在「> 一半」的收的那一邊；演奏主體判鍵盤 fusion 而不是歌手 ＋ 伴奏**（**建議主線覆核**）
+
+**逐軌量**（Discogs 四版的逐軌欄全空，作詞來源是 MB work 與 ja 維基曲目表）：
+| 軌 | 曲題 | MB work | ja 維基 | 本層算 |
+|---|---|---|---|---|
+| A1 | Palm St. | 無 | 作曲 小林泉美、無作詞 | 甲 |
+| A2 | Small Dynamite | 無 | **作詞 地恵子・シュレイダー** | **乙（保守）** |
+| A3 | Penaten | 無 | 作曲 小林泉美・田中章弘、無作詞 | 甲 |
+| A4 | Crazy Love | **作曲 小林泉美、作詞 地恵子・シュレイダー** | 同 | **乙** |
+| B1 | The 4th Dimension Butterfly | 作曲 小林泉美、無作詞 | 同 | 甲 |
+| B2 | Coconuts High | 無 | 作曲 小林泉美、無作詞 | 甲 |
+| B3 | Lazy Love | **作曲 小林泉美、作詞 地恵子・シュレイダー** | 作曲欄逐字 地恵子・シュレイダー（⚠ 兩源不一致） | **乙** |
+| B4 | Mr. Cool | **作曲 小林泉美 ＋ 一位作詞者** | 作詞者另一形（⚠ 兩源不一致，卡上不寫名） | **乙** |
+**→ 甲 4／乙 4＝50%，照第 5701 條逐字「> 一半」→ 第三肢成立**（與 c-186 b 第 5988 條 `Bos & Boz` 正好 50% 判收同一條刻度）；**只算兩源一致的三軌是 3/8＝38%。**
+**演奏主體**：**領銜者 credit 逐字 `Producer, Keyboards, Vocals`、首項是製作與鍵盤；四軌是器樂 fusion（含同名曲）；班底是 Harvey Mason・Abraham Laboriel・Tower Of Power 等美國西岸錄音室樂手加 高中正義 樂團的日本班底**——**判演奏主體是她的鍵盤 fusion 編制**；**與同批 b 組收的《夏・Nuts・夏》（b 組卡單 `risk`，乙 3/9；掛名見 b 組第 6449 條）同一把尺、同一位藝人。**
+⚠ **反轉條件**：**A1／A3／B1／B2 四軌任一軌查出人聲作詞 → 乙 5/8 > 一半 → 依第 5701 條退**；**若主線認為「有人聲的軌佔一半」本身就構成第 1923-B 條的「歌手 ＋ 伴奏」，要一起翻 b 組的《夏・Nuts・夏》。**
+
+## 6427　⚠ ⚠ ⚠ 邊界收件（二）：`浪花エキスプレス —《No Fuse》`——**同一支樂團在待上架批次裡已經有兩種掛名字串（本批兩組 `浪花エキスプレス` vs c-189 a `NANIWA EXPRESS`），上傳前必須統一**（**建議主線優先覆核**）
+
+**事實**：**三張（本組《No Fuse》1982、b 組《大宇宙無限力神》1982、c-189 a《Wind Up》1983）的 MB artist 實體同一個（c2cc5e23，實體名逐字 `Naniwa Express`、alias 逐字 `ナニワエキスプレス`）、Discogs 實體同一個（3406984，`namevariations` 逐字含 `浪花エキスプレス`）**；
+**credit 字串：本盤 MB 逐字 `NANIWA EXPRESS`、b 組那張 MB 逐字 `浪花エキスプレス`（Discogs 原壓 anv 逐字 `浪花エキスプレス`）；ja 維基逐字「CBS・ソニー契約時は浪花エキスプレスまたはNANIWA EXPRESS」。**
+**本層取 `浪花エキスプレス`，依據三條**：(a) 第 3775 vs 3766 條（同一個實體就收斂）；(b) 2026-08-11 東亞藝人名裁定（有漢字照漢字；全羅馬字化只給全假名的名字）；(c) 主線第 1968-B 條二（掛名欄以池中先例為準、正文以盤面為準）——**池中 0 列，最近的先例是同批 b 組已落檔的字串。**
+⚠ **卡上已寫明：正文若提到本盤盤面印的團名，要寫 `NANIWA EXPRESS`。**
+⚠ **反轉條件**：**若主線取 `NANIWA EXPRESS`（照 c-189 a）或 `Naniwa Express`（照全假名羅馬化 ＋ 第 3913 條 (c)），三張一起改一個卡欄值——可逆。**
+⚠ **同一個形狀的第二組，b 組第 6449 條已點名**：`真梨邑ケイ`（b 組）與 c-189 a 同名藝人的字串——**本層沒有那一位的碟，只轉記。**
+
+## 6428　⚠ ⚠ 邊界收件（三）：`Casiopea —《4×4》`——**盤名取 `4×4`（乘號 U+00D7），不照第 1858-B 條字面取最早 release 的 `4x4`**（**建議主線覆核**）
+
+**三種寫法**：`4×4`（MB RG、1987 `32XA-114`、2002 `VRCL 2228`、數位版、Apple）／`4 X 4 (Four By Four)` 或 `4 × 4 (Four By Four)`（Discogs 十六版）／`4x4`（MB 最早 release，原壓 d1bb3bca）。
+**本層的讀法**：**第 1858-B 條管的是「RG 取了再發題 vs 原盤題」（c-174 b 的 33%）；這三種寫法是同一個符號的三種鍵盤替代字（乘號／大寫 X／小寫 x），`(Four By Four)` 是讀法註記，不是另一個題**——**取出現最多次、與 MB RG 和 Apple 一致的 `4×4`，其餘全進 `queryAlias`。**
+⚠ **`chk-prop` 的正規化把 `4×4` 摺成 `44`、把 `4x4` 摺成 `4x4`——兩者在比對上是兩個鍵**；**本層兩個鍵都掃過池與待上架批次，零撞。**
+⚠ **反轉條件**：**若主線認為要照第 1858-B 條字面取 `4x4`，改一個卡欄值即可；若取 Discogs 多數的 `4 X 4 (Four By Four)`，同樣可逆。**
+
+## 6429　⚠ ⚠ 立判準（可逆）：**掛名的「盤面形 vs 池中形」——同一個團、池中的那一列是另一張盤面的形時，本盤照自己的盤面形新立，兩串並存**（`The Players`／池中 `The Players Featuring 鈴木宏昌`）
+
+**事實**：池中 c-186 b《Galaxy》1979 的掛名逐字 `The Players Featuring 鈴木宏昌`（那一張的 Discogs artist 欄逐字 `The Players Featuring Hiromasa "Colgen" Suzuki`）；**本盤 MB 與 Discogs 的 artist 欄逐字都只有 `The Players`**。
+**裁定：新立 `The Players`，兩串並存**——**照主線第 1976-B 條四（盤面明印的形並存）與第 1945-B 條四（盤面明印才立，對掛名整串同樣適用），與 c-187 b 第 6074 條 `秋吉敏子トリオ & Flute Quartet` 同一個處置。**
+⚠ ⚠ **這一串的風險比那一串大**：**`The Players` 是通用團名，藝人軸以字串為鍵時會與同名外國團摺在一起**（池中已有 `Ohio Players`／`The Overnight Players` 的子字串）——**`queryAlias` 已放進 `鈴木宏昌` 與兩種 featuring 形；建議本機上傳時確認藝人頁不與別團合併。**
+⚠ **反過來的選項**（照第 307 條沿用池中那一列的 featuring 形）**會讓本卡的掛名寫出一個本盤盤面沒有印的字——本層不取。** **可逆（改一個卡欄值）。**
+
+## 6430　⚠ ⚠ 同碟／同場錄音／重錄的固定動作：**本組主動查了四種、抓到兩件：一軌重錄（#7 × 池中《Cross Point》）與一組同批錄音的兩張 LP（#13 × 池中《Susto》）；兩件都不是撞池**
+
+1. ⚠ ⚠ ⚠ **#7《4×4》B1〈Galactic Funk〉6:04 ＝ 池中 c-187 b《Cross Point》（1981）第 6 軌〈Galactic Funk〉4:22 的同一首曲子**（兩處作曲都是 野呂一生）——**時長差 1 分 42 秒、本盤是兩組鼓與兩組貝斯的八人編制 → 新錄音。照主線第 1948-B 條與第 1976-B 條第 2 點「重錄是新錄音、不加比例門檻」收；重錄比 1/6＝17%。**
+   **⚠ 兩卡行文必須對得上：本盤不得自稱那首曲子的原版。** ⚠ **抓到它的方法**：**池中九張 Casiopea 的曲題表（seed 五張打 Discogs master、c-187 四張讀 `prop-*.json` 的 `why`）逐題比**——**c-187 a 第 6055 條操作提醒第 8 點「前一兩批的 prop 比池本身好用」再得一例。**
+2. ⚠ ⚠ ⚠ **#13《One-Way Traveller》與池中 seed《Susto》（1981，`25AH 1199`）是同一批錄音的兩張 LP**：**兩張原壓 `notes` 的錄音地點與期間逐字相同（紐約 Sound Ideas 1980 年 11 月、東京六本木 1980 年 12 月至 1981 年 1 月），曲目零重疊（各四軌、八個曲題全不同）**——**這不是 c-183 那一族「同場錄音的第二張 LP 十軌裡八軌重複」，是 Volume 拆盤的形狀 → 各算一張、`risk` 互指（本卡已寫；池中那張是 seed 卡，本機上傳時補指向）。**
+3. **池中同藝人的碟逐張比曲題表**：#3（高中正義 十五張）、#4（今田勝 七張）、#5（松風鉱一 兩張）、#6（鈴木良雄 四張）、#13（菊地雅章 七張）、#15（The Players 一張）、#16（THE SQUARE 六張）、#19（日野皓正 二十張）——**零重錄**（⚠ 打 Discogs `q=` 取 master 時有三次落到別張——《Little Train》落到同團 1980 年的合輯、《Magic》落到別團、《Unforgettable》落到他 1992 年的另一張——**那三張改讀前批 `prop-*.json` 的 `why` 曲題補比，仍零重錄**）。
+4. **同批兩組的曲題表互掃**（主線第 1987-B 條固定動作）：**b 組 19 筆裡 17 筆打到 Discogs master 曲題表**（`岡本一生` 查無 master、`south wind section` 的 `q=` 落到別團），**與本組 12 筆收件的曲題逐題比過，零重複**；⚠ **b 組第 6461 條記的「a 組 prop 在 b 組交件時尚未產出、改以 slice 層級比對」——本層用兩份 prop 的層級補做了一次，結論相同。**
+5. **批內「年份相同、軌數相同」的兩張主動比逐軌時長**（派工信第二節 (6)）：**1981 年 8 軌三張（#1／#2／#3）、1982 年 8 軌兩張（#15／#19）、1982 年 9 軌兩張（#11／#16）**——**逐軌曲題與時長全不同，零批內同碟重複 RG。**
+
+## 6431　⚠ 給登記簿的三筆（本層不動那些檔，只建議）
+
+1. **`audits/between-the-lines-candidates.md`**：**`Arista AL 9570`（`喜多嶋修《Dragon King》`，1981）**——日本 Alfa 企劃、洛杉磯錄音、美國 Arista 先發、日本 `ALR-28035` 晚一年；**兩條線都以日本原壓為門，所以兩邊都進不來**（第 6408 條）。
+2. **`audits/foreign-artist-japan-productions.md` 乙族**：**`CBS/Sony 28AH 1507`（`Marlene《My Favorite Songs》`，1982，四項 2/4，第 6410 條）與 `CBS/Sony 28AH 1455`（`Marlene with Seawind《Summer Nights》`，1982，四項 2/4，第 6411 條）**——**乙族正式退件累計四筆（`Sonia Rosa《Spiced With Brazil》` ＋ `Marlene` 三張）。**
+3. **`audits/pool-artist-name-splits.md`**：**`Koichi Matsukaze Trio`（池 3）vs `松風鉱一`（本卡）**——跨文字系統的編制串 vs 人名串（第 6419 條）；**`The Players Featuring 鈴木宏昌`（池 1）vs `The Players`（本卡）**——盤面形並存（第 6429 條）；**`浪花エキスプレス` vs `NANIWA EXPRESS`**（第 6427 條，待上架批次內）。
+
+## 6432　⚠ Discogs 與 MB／其他來源的資料錯與技術性失效，本組踩到九個（**三個是新形狀**）
+
+1. **MB catno 錯字**：#6 `PA-25013`（原壓 `PAP-25013`）。
+2. ⚠ **MB 把原盤日填到再發上**：#7 a0f2f3fa（`ALCA-9203` 標 `1982-12-16`、載體空白）——**新形狀：它會讓「MB 最早 release」出現兩筆同日、其中一筆是再發號。**
+3. ⚠ **MB 把原盤年填到數位版上**：#3 e9fd2d45（數位版日期逐字 `1981`）——**新形狀：它讓數位版排到 LP 原壓前面。**
+4. **原壓盤面的曲題錯字，Discogs 忠實轉錄**：#7 `Infunte`（`titleCheck` 第 (d) 種，曲題層）。
+5. **再發內頁的人名錯字**：#13 的 2016 CD 把 `Gus Falcon` 寫成 `Gass Farkon`（簡報第三節第 30 點那一族）。
+6. ⚠ **兩個資料庫把同一格 credit 掛在兩個不同的人身上**：#19 A4 的篠笛，Discogs 原壓逐字 `藤舎推峰 (anv Suiho Tosha)`、MB recording rel 逐字 `藤舎名生`——**新形狀：不是寫錯字，是指向兩個真實存在的不同人；卡上只寫盤面 anv 的羅馬字。**
+7. **ja 維基與 MB work 的作詞作曲不一致兩處**：#2 的 B3 作曲者、B4 作詞者（卡上不寫名）。
+8. **Discogs 的 `q=` 落到別張三次**（第 6430 條第 3 點）與 **b 組互掃時落到別團一次**（`south wind section` → `Satoko Fujii Orchestra`）——**`q=` 只取第一筆 master 的自動比對一定要人工讀 `title`。**
+9. **Apple 查不到對應實體的日期**：#4 collectionId 1329840798 的 `releaseDate` 逐字 `1996-04-22`（Discogs 與 MB 都沒有 1996 年的版本）——只作觀察、不引用。
+
+## 6433　⚠ 號段實測（給 c-189 之後的批次）：**本組四家六個號段逐段記**
+
+| 號段 | 廠牌 | 本組筆數 | 實測 |
+|---|---|---:|---|
+| `28MK 00xx` | Kitty | 3 | **3/3 日本原壓**；⚠ **1981 年 Kitty 從 `MKF 1xxx` 換到 `28MK`**（前兩位 `28` 是定價碼，與 CBS/Sony 同一套）；⚠ **b 組實測 1982 年已是 `28MS`／`25MS`**——**Kitty 在兩年內換了兩次號段**；同期卡帶 `28CK` |
+| `PAP-250xx` | Trio／Full House | 3 | **3/3 日本原壓**；⚠ **Trio 本體（`PAP-25008`／`25013`）與子字標 Full House（`25009`）交錯編號在同一個號段裡**；Full House 同期卡帶 `PTC-` |
+| `ALR-280xx` | Alfa | 4 | **3/4 是日本原壓、1 筆美國先發**（#9，`ALR-28035`）——**號段本身沒錯，錯的是「這一張不是原壓」**；同期卡帶 `ALC-280xx`（⚠ #7 的卡帶號 `ALC-28043` 與 LP 號 `ALR-28045` 尾數不對應） |
+| `28AH 1xxx` | CBS/Sony | 7 | **7/7 日本原壓**；同期卡帶 `28KH`；同年 Master Sound 另號 `30AH`／`32AH` |
+| `25AH 14xx` | CBS/Sony | 2 | **2/2 日本原壓**（前兩位 `25` ＝ `¥2,500`）；#19 有 `30AH` 另號 |
+| `35DH`／`38DH` | CBS/Sony（CD） | 3（再發） | **1982 年的 CD 首版**，MB 建檔參差（第 6417 條第 4 點） |
+⚠ **本組零 `SONP-`／`SOPM-`**——**派工信第二節 (1) 點名的那兩個號段，本線到 1982 年段已經不再出現在 CBS/Sony 的日本自製爵士盤上**（c-189 之後的批次仍照舊逐張回查）。
+
+## 6434　交件前自跑的結果與第 315 條結算
+
+- **`node batch-progress/c188/chk-prop.mjs a`** → **`prop-a.json`：12 張、12 位｜標記 0**。
+  **五道逐道**：缺欄 0、曲風越界 0、年份離譜 0、非 ASCII 連字號 0（`artist` 與 `album` 兩欄都掃）、U+30FC 當破折號 0、合輯例外欄位 0、與線上池撞卡 0、**第五道（盤名撞 apex）0 報**、跨組重複 0。
+  ⚠ **「（報告）含日文分隔符」那一行本組零出現**（十二個 `artist` 與十二個 `album` 裡沒有 `〜`／`～`／`＝`／`゠`／`＋`；#7 的 `×` 是乘號、不在那一道的字元集裡）。
+- **`node batch-progress/c188/chk-prop.mjs a b`** → 見第 6435 條末（兩組合跑）。
+- **`node batch-progress/dedup-crossbatch.mjs c188`** → **跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0**。
+  ⚠ ⚠ **共用目錄號那一道本層第一次跑出三筆誤報後改掉了**：**#1 的 `label` 欄逐字寫了前兩張カリオカ的號、#5 的 `label` 欄逐字寫了 #4 的號**——**照 c-183 第 5715 條第 7 點與 c-187 b 第 6084 條第 2 點「`label` 欄不要逐字寫別張卡的目錄號、改用代稱」，三處改成代稱後重跑 0。**
+- **第 315 條結算**：**`prop-a.json` 12 筆 ＋ 本節退表 7 筆（6407–6413）＝ 19 ＝ `slice.json` 裡 `g === "a"` 的筆數。平。**
+- **`desc-tools/jp-proper-names.json`**：**append 0 個、既有的一字未動**（第 6425 條）。
+- **邊界**：**本層只動了 `batch-progress/c188/prop-a.json` 與本檔（`rulings.md`，只 append 本段）**；**b 組的 `prop-b.json` 與 b 組段只讀不寫**；**`seed_cards.json` 只做唯讀掃描**；**`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore 一次都沒有碰；零 git 操作（`commit`／`push`／`add`／索引一律未動）。** **臨時檔全部在 `scratchpad/c188a/`。**
+
+## 6435　⚠ ⚠ 給 c-189 之後的批次與主線的清單
+
+### 建議主線優先覆核的五件（都寫在上面，此處只列索引）
+
+1. ⚠ ⚠ ⚠ **第 6427 條——`浪花エキスプレス`（本批兩組）vs `NANIWA EXPRESS`（c-189 a）**：同一個 MB／Discogs 實體、待上架批次裡兩種字串；**上傳前統一，三張一起改一個卡欄值。**
+2. ⚠ ⚠ **第 6426 條——`小林泉美《Coconuts High》` 乙 4/8＝50% 而收**：與 b 組《夏・Nuts・夏》綁在一起，要翻一起翻。
+3. ⚠ ⚠ **第 6408 條——`喜多嶋修《Dragon King》` 退在「美國 Arista 先發」**：若主線認為「日本廠牌企劃、美國授權先發」應算日本原盤，這一張第一個撈回來（年份要改 1981）；**與 c-187 a 收的《Masterless Samurai》（日本先發）互為對照。**
+4. ⚠ **第 6428 條——`Casiopea《4×4》` 盤名取乘號形 `4×4`**，不照第 1858-B 條字面取 `4x4`。
+5. ⚠ **第 6429 條——`The Players` 新立、與池中 `The Players Featuring 鈴木宏昌` 並存**；**第 6419 條——`松風鉱一` 與池中 `Koichi Matsukaze Trio` 並存。**
+
+### 本組就地立的兩條（都已可逆地定完）
+1. **第 6429 條**：**同一個團、池中那一列是另一張盤面的形時，本盤照自己的盤面形新立、兩串並存**（第 1976-B 條四的延伸）。
+2. **第 6423 條 #19**：**第 4106 條的「企劃」那一票，`Producer` 與 `Executive-Producer` 分屬兩國時 ＝ 不可判定**（主線第 1971-B 條二之 3 用在企劃票上，不引入「誰排前面」這種新尺）。
+
+### 給 c-189…c-191 的操作提醒（十條，照重要性排）
+1. ⚠ ⚠ ⚠ **池中同藝人的碟，逐張比曲題表，不只比盤名**（第 6430 條）——**本組抓到一軌重錄（《4×4》×《Cross Point》），`poolRecheck` 報「逐張人工比」、機器全盲**；**seed 卡打 Discogs master 曲目表、前一兩批的卡讀 `prop-*.json` 的 `why`。**
+2. ⚠ ⚠ ⚠ **同藝人的 seed 卡要查「是不是同一批錄音」**（第 6430 條）——**`notes` 的錄音地點與期間逐字相同而曲目零重疊 → Volume 拆盤、互指；曲目大量重疊 → 撞池第三種漏法。兩種都要讀 `notes`。**
+3. ⚠ ⚠ **待上架批次的掛名一致性要跨批看**（第 6427 條）——**c-189 與 c-188 並行，`poolRecheck` 看不到彼此；同一個 MB 實體在兩批用了兩種字串，本組抓到一組、b 組抓到另一組（`真梨邑ケイ`）。** **建議主線在 c-189 交件後用 `dedup-crossbatch` 的「同 rgMbid／同 MB 藝人實體不同掛名」補一道。**
+4. ⚠ ⚠ **`house: Alfa` 的第二種錯法：美國授權盤先發**（第 6408 條）——**1978 年界線之後仍要看 `/masters/<id>/versions` 的最早一版；洛杉磯錄音的 Alfa 盤（喜多嶋修 一族）尤其要看。**
+5. ⚠ ⚠ **作曲欄全空時，先打 MB 的 work 關聯**（第 6420 條）——**`release/<id>?inc=recordings+work-rels+work-level-rels+recording-level-rels+artist-rels`，本組兩次是決定性的；ja 維基的曲目表與它在一張碟上兩處不一致，衝突時兩邊都不寫名。**
+6. ⚠ **版本表的五種漏源本組逐種計過**（第 6417 條）：**同號 Promo（8）、同期卡帶（6，新增 `28CK`／`PTC-`／`28KH` 三種前綴）、CBS/Sony Master Sound 另號（3）、1982 年 CD 首版（3）、海外授權壓片（2）**；**MB 有而 Discogs 沒有的：數位 5、實體 3；Apple 獨有數位 4。**
+7. ⚠ **`label` 欄不要逐字寫別張卡的目錄號**（第 6434 條）——**本組第一次跑 `dedup-crossbatch` 報了三筆「共用目錄號」全是這個成因，改代稱後 0。**
+8. ⚠ **Kitty 的號段兩年換兩次**（第 6433 條）：**1979–80 `MKF 1xxx` → 1981 `28MK` → 1982 `28MS`／`25MS`**——**快篩要照年份切換。**
+9. ⚠ **Apple `releaseDate` 在本組五種形狀、CBS/Sony 一對一佔位**（第 6414 條）——**c-187 b 第 6085 條「CBS/Sony 的 `releaseDate` 可信」只對了一半，一律只作佐證。**
+10. ⚠ **`titleCheck` 警語兩筆都是等價形／符號寫法，不是再發題**（第 6415 條）——**與 c-187 a 第 6055 條的措辭建議同向，累計七個實例。**
+
+### 登記給主線與後續批次的候選（若改判就從這裡撈回來）
+- **`Arista AL 9570`／`Alfa ALR-28035`（`喜多嶋修《Dragon King》`，1981／1982）**——曲風過得了（`genres` 含 `Jazz`、`styles` 三項爵士成分、乙 3/7），**退的是原壓廠牌**（第 6408 條）。
+- **`CBS/Sony 28AH 1507`（`Marlene《My Favorite Songs》`，1982）**——**曲風、第三肢（甲 9／乙 0）、演奏主體三關全過**，退的是四項 2/4；**`Marlene` 三張退件裡最該先撈回的一張**（第 6410 條）。
+- **`Alfa ALR-28040`（`吉田美奈子《LIGHT'N UP》`，1982）**——`styles` 含 `Jazz-Funk`、伴奏是本組最強的一份，退的是第 5701 條 (4) 款乙 8/8 與演奏主體（第 6409 條）。
+- **`CBS/Sony 28AH 1455`（`Marlene with Seawind《Summer Nights》`，1982）**——三肢同時成立，撈回的順位最後（第 6411 條）。
+- ⚠ **`Alfa ALR-28036`（`佐藤博《Awakening》`）不登記——池中已有同一張碟**（第 6407 條）。
+
+### 給本機的（不在雲端做）
+1. ⚠ ⚠ **池中 seed《Susto》（菊地雅章，1981）要補一句指向本批 #13《One-Way Traveller》**——同一批 1980–81 錄音的兩張 LP（第 6430 條）。
+2. ⚠ ⚠ **本批 #7《4×4》與池中 c-187《Cross Point》兩卡的〈Galactic Funk〉行文要對得上**——本盤是重錄（第 6430 條）。
+3. ⚠ **三串掛名的藝人軸代價**：`松風鉱一`（池中 `Koichi Matsukaze Trio` 3 列掃不到本卡）、`The Players`（池中 featuring 形 1 列，且通用團名會與外國同名團摺在一起）、`浪花エキスプレス`（待上架批次裡另有 `NANIWA EXPRESS`）——**三串的其他寫法都已進 `queryAlias`，上傳時人工看一眼。**
+4. ⚠ **`THE SQUARE` 的 MB 實體本名 `T‐SQUARE`（U+2010）、`Casiopea`／`高中正義`／`日野皓正` 三串沿用池中形**——**本組零新造分裂。**
+5. ⚠ **下游客席提醒**：**#2 的 Harvey Mason・Abraham Laboriel・Tower Of Power、#6 的 David Liebman・Naná Vasconcelos・Tom Harrell、#7 的 Lee Ritenour・Harvey Mason・Nathan East・Don Grusin、#13 的 Steve Grossman・Airto Moreira、#19 的 Kenny Kirkland・David Sanborn・Don Alias**——**全部是伴奏，本批那幾張不是他們的碟。**
+6. ⚠ **`enum/jp-2.md` 可以劃掉的格**：**Kitty 段「高中正義 7（⋯Alone⋯）」的 `Alone`（#3 收）、「Carioca 5」的一張（#1 收）、「小林泉美 3」的一張（#2 收）**；**Alfa 段「Casiopea 缺 15」的一張（#7 收）、「佐藤博 8」的《Awakening》（池中已有，本批退）**；**CBS/Sony 段「THE SQUARE 12」的一張（#16 收）、「日野皓正 7」的一張（#19 收）、「Marlene 8」的兩張（#11／#12 退）**。
+7. ⚠ **`enum/jp-2.md`「§1 候選」節的「Trio：鈴木良雄《Matsuri》(1980，是否 Trio 請覆核)」不是本批 #6《Wings》**——本層沒有覆核那一格（不在本組清單內），只記兩者不得混用。
+
+**編號區間結算**：本段用到 **6406–6435（共 30 條），區間用滿、未越界（b 組 6436–6465）。**
+⚠ **兩組合跑 `node batch-progress/c188/chk-prop.mjs a b`** → **合計 24 張、19 位｜標記 0**（`prop-a.json` 12 張 12 位、`prop-b.json` 12 張 10 位；兩組重疊的掛名是 `浪花エキスプレス`／`小林泉美`／`高中正義` 三串，字串一致）；`dedup-crossbatch` 四項全 0。
