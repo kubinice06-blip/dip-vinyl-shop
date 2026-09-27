@@ -130,6 +130,136 @@
   "notes": "⚠ 邊界收件（c-191 b 第 6706 條，照 c-190 b 第 6647 條）——facts 一律寫成作曲家的器樂企劃盤，不寫成現代古典盤；「十二音技法／前衛」那一格講的是他的純藝術作品路線，寫作層不得據此把本盤寫成現代音樂盤。⚠ 推翻／補正策展層：零處判斷推翻；人名補正——卡單 `why` 只寫羅馬字的樂手，本層逐名回打 `api.discogs.com/artists/<id>` 定案漢字：渡辺直樹 487810 `realname`、鳴瀬喜博 1547087 `realname`（⚠ namevariations 另有 `成瀬喜博`，realname 是 `鳴瀬`，取 realname）、岡本郭男 2530069 `realname`、市原康 621268 `realname`、渡嘉敷祐一 623519 `realname`、東儀兼彦 1239695（namevariations 唯一形）、宮城純子 2922710 `realname`、吉田弥生 1354190（namevariations `吉田弥生`／`吉田やよい`）、川瀬正人 771827、吉田潔 784464 `realname`、三島豊明 277007、篠崎正嗣 408826 `realname`、宮田まゆみ 557310 `realname`（profile「Japanese player of the shō」）、Eve 27702（profile「Japanese chorus group consisting of 3 Okinawan sisters」）。⚠ 兩位薩克斯風：Hiromi Sano 的 namevariations 是 `佐野博美`、Makoto Hirahara 的 realname 逐字 `平原智` 而通行藝名是 `平原まこと`——兩形並存、判不出正文該用哪一形，facts 只寫「薩克斯風兩位」。⚠ `Toshiko Tsunemori`（6780911）藝人頁四欄全空，寫羅馬字；`野口卓`／`表明煥`／`雅波弘之`／`水曽重光` 四個是 Discogs 上只有本盤的孤立漢字頁（連號 11077778–11077787），照卡單 `risk` 一個都不寫（三島豊明 之外的第三位程式手就是 `野口卓`，所以 facts 寫「等三人」）。⚠ 人聲：盤面零 `Lyrics By`／`Words By`，人聲是音色（卡單 `risk` 的判定），寫作層不要寫成「他開口唱歌」。⚠ 改名那一格：ja 維基逐字「1989年、『三枝成章』だと出世しない画数だと姓名判断でいわれたことから芸名を『三枝成彰』に改める」——時序晚於本盤（1988-12），但與盤上署名直接綁定，屬可寫的一類；Discogs 藝人頁 1051383 profile 逐字「Until 1989, he worked under his real name, Shigeaki Saegusa (三枝成章)」同向。⚠ 日本アカデミー賞：官方頁第 12 回逐字把「三枝成彰『椿姫』『優駿』」標為最優秀賞、介紹文逐字「この賞を受けるのも、昨年に続いて2度目」——ja 維基另列第 11 回（1988）為「優秀音楽賞」；facts 寫「連兩屆入選音樂部門」而不寫「連兩屆得最優秀」。這一格是同年作品的獎，不是本盤的獎，寫作層可整格捨去。⚠ 出生地：ja 維基寫西宮（疏散地）、日本アカデミー賞頁寫「1942年 東京都」——兩源不一致，facts 照 ja 維基（附出典：神戸新聞 2021-05-13 隨想欄），並寫明是「疏散所在」。⚠ Apple 專輯層 `releaseDate` `1988-01-01` 是佔位、逐軌 `1988-12-14` 與原壓 12-01 不合，兩者都不引用；時長取 Apple 逐軌秒數（Discogs 零 duration）。⚠ 版本：Discogs 無 master、資料庫裡只有這一筆；加 Apple 數位 1＝已知 2，與策展層相同。⚠ 串流與封面：previews.json 尚無 c-191 條目（探測鏈未跑到），caa.json 本卡有圖。"
  },
  {
+  "key": "desc4:和泉宏隆|Amoshe",
+  "artist": "和泉宏隆",
+  "album": "Amoshe",
+  "facts": [
+   {
+    "f": "THE SQUARE 的鍵盤手 和泉宏隆 在團期間做的第一張個人專輯，1988 年 11 月 21 日由 CBS/Sony 發行，CD 32DH 5154、定價 3200 日圓，同年另有卡帶 28KH 5154；盤面說明逐字寫著「1st solo album」。",
+    "src": "https://www.discogs.com/release/10544074"
+   },
+   {
+    "f": "錄音在 1988 年 8 月，分在 Sedic Audio、CBS/Sony 信濃町與 LDK 三間錄音室。",
+    "src": "https://www.discogs.com/release/10544074"
+   },
+   {
+    "f": "他是東京人，從慶應義塾高等学校讀到慶應義塾大学法學部法律學科，大學時參加爵士社團 Light Music Society；1982 年以鍵盤手身分加入 THE SQUARE。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%92%8C%E6%B3%89%E5%AE%8F%E9%9A%86"
+   },
+   {
+    "f": "來幫忙的兩位核心樂手是他學生時代的樂團夥伴：吉他手 鳥山雄司（慶應高中起的朋友）與鼓手 神保彰；神保彰 那時仍是 Casiopea 的團員，在本盤打開場曲與第六軌。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%92%8C%E6%B3%89%E5%AE%8F%E9%9A%86"
+   },
+   {
+    "f": "九軌裡八軌由 和泉宏隆 自己作曲兼編曲，第七軌〈Blow Wind Blow〉是木管手 片岡郁雄 寫的；片岡郁雄 在全張吹長笛、中音長笛、中音薩克斯風與管樂合成器。",
+    "src": "https://www.discogs.com/release/10544074"
+   },
+   {
+    "f": "節奏組按軌分工：貝斯 高水健司 五軌、有賀啓雄 四軌；鼓除了 神保彰 兩軌，THE SQUARE 的 則竹裕之 打第三、第七兩軌，其餘由 山木秀夫 擔任；打擊 横山達治，弦樂是 中西俊博 的樂團。",
+    "src": "https://www.discogs.com/release/10544074"
+   },
+   {
+    "f": "和泉宏隆 在盤上只掛鋼琴一項，吉他 鳥山雄司 另外兼彈 MIDI 吉他，合成器由 Mayumi Tanabata 負責；執行製作是 伊藤八十八。",
+    "src": "https://www.discogs.com/release/10544074"
+   },
+   {
+    "f": "開場曲〈Double Rainbow〉6 分 20 秒，與 Jobim〈Chovendo na Roseira〉的英文題撞名，作曲欄寫的是 和泉宏隆 自己；全張最長的是第三軌〈Resolute〉6 分 36 秒，收尾是〈In The Arms Of Morpheus〉。",
+    "src": "https://www.discogs.com/release/10544074"
+   },
+   {
+    "f": "他的下一張個人專輯要隔將近九年：1997 年 7 月的《FORGOTTEN SAGA》，而且是一張鋼琴獨奏；隔年他離開了 T-SQUARE。",
+    "src": "https://ja.wikipedia.org/wiki/%E5%92%8C%E6%B3%89%E5%AE%8F%E9%9A%86"
+   },
+   {
+    "f": "同一年他所屬的樂團在 2 月發了《Yes, No.》，他在那張寫了三首；本盤則是他以個人名義把自己的曲子寫滿一整張。",
+    "src": "https://ja.wikipedia.org/wiki/YES,NO."
+   },
+   {
+    "f": "已知版本七個：1988 年的 CD 市售盤與同號宣傳盤、同年的卡帶、同年馬來西亞 CBS 授權的卡帶 MJK 5154、1991 年 CSCL 1689、2007 年 Village Music 的重製 CD VRCL-2023，以及一個九軌數位版。",
+    "src": "https://www.discogs.com/master/1600263"
+   }
+  ],
+  "hookCandidates": [
+   "樂團的鍵盤手第一次自己出碟，找來的吉他手與鼓手是他學生時代的樂團夥伴。",
+   "第一張個人專輯出來之後，他的第二張要再等將近九年，而且換成了鋼琴獨奏。"
+  ],
+  "sound": "鋼琴領銜的器樂 fusion：和泉宏隆 的原聲鋼琴主奏旋律，鳥山雄司 的吉他與 MIDI 吉他、片岡郁雄 的長笛與中音薩克斯風輪流接手，兩組貝斯與三位鼓手按軌換班，弦樂與合成器鋪底，走明亮、旋律性強的 contemporary jazz 路線，九軌全是器樂。",
+  "keyTracks": [
+   "Double Rainbow",
+   "Resolute"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 推翻／補正策展層：零處判斷推翻；人名一處補證——卡單已把盤面 anv `高水建司` 改成 `realname` 的 `高水健司`（Discogs 143940 逐字「Takamizu Kenji = 高水健司」），本層重打一次確認成立（c-191 b 第 6713 條第 8 點建議進 `name-corrections.json`）。⚠ 山木秀夫 的 credit 在 Discogs 沒有軌號限制，照 神保彰（1, 6）與 則竹裕之（3, 7）推得他打其餘五軌——facts 寫「其餘由 山木秀夫 擔任」，不寫具體軌數。⚠ 神保彰 的 Casiopea 在團期（Discogs 424418 profile「former member of Casiopea from 1980 to 1989」），與本批 #7《World Live '88》同一時期，下游行文可串但不要寫成 Casiopea 的碟。⚠ ja 維基原句「後にユニットを結成することになる鳥山雄司や神保彰らを迎えて」——2005 年結成 Pyramid 屬晚於發行的後續，facts 不寫；「學生時代的樂團夥伴」「慶應高中起的朋友」出自同條目第 48／76 行（後者在 2022 年紀念盤那一段，本層只取人際關係、不取紀念盤）。⚠ 反向禁令：和泉宏隆 2021 年辭世、2022 年紀念盤《Unforgotten Saga》都是與本作無關的後續，不寫；有賀啓雄 2023 年辭世同理。⚠「下一張隔將近九年」的依據：ja 維基作品表個人專輯第 1 張《AMOSHE》1988-11-21、第 2 張《FORGOTTEN SAGA》1997-07-21；本文「1997年には、初のピアノソロ・アルバム…翌年…退団」「1998年の退団まで16年間」。⚠ 前批已用切角：和泉宏隆 的生日（c-189 b）、加入時 安藤 的回顧（c-188 a）、〈Forgotten Saga〉成為 1997 年專輯標題曲（c-190 a）——本卡不寫生日與回顧；1997 年專輯只用來定「下一張」的時序。⚠ Apple jp 1537081551 的 `releaseDate` 2007-06-25 是 Village 再發日，不引用。⚠ 版本：Discogs 6＋Apple 數位 1＝7；MB 的殘缺 release e82f4eae 是原壓重複建檔（策展層逐軌毫秒已比過），不另計；零改判。⚠ 高碰撞曲題：〈Double Rainbow〉（主線第 1981-B 條：八筆同名不同碟）、〈River〉〈Explorer〉，下游引用帶掛名與年份。⚠ 同批牽連：#1《Yes, No.》（團）、#7《TRANSFUSION》（鳥山雄司 的個人盤，他在本盤是客席吉他）。"
+ },
+ {
+  "key": "desc4:菊池ひみこ|Sevilla Breeze",
+  "artist": "菊池ひみこ",
+  "album": "Sevilla Breeze",
+  "facts": [
+   {
+    "f": "1988 年 11 月 21 日由 CBS/Sony 發行的七軌 CD 32DH 5148，1988 年 8 月到 9 月在 CBS/Sony 信濃町錄音室以數位錄音完成；這張碟只出過 CD。",
+    "src": "https://www.discogs.com/release/11284835"
+   },
+   {
+    "f": "鋼琴手 菊池ひみこ 1980 到 1984 年在テイチク 旗下的 Continental 字標出了五張專輯，之後轉到 CBS/Sony 發了兩張：1987 年的《Flying Beagle》與這一張《Sevilla Breeze》。",
+    "src": "https://ja.wikipedia.org/wiki/%E8%8F%8A%E6%B1%A0%E3%81%B2%E3%81%BF%E3%81%93"
+   },
+   {
+    "f": "整張繞著西班牙南部轉，七個曲題依序是〈Primavela〉〈Gypsy Song〉〈Seguidilla〉〈Toreador〉〈Blue Gibraltar〉〈Siesta〉〈Sevilla Breeze〉；其中五首是她自己寫的。",
+    "src": "https://www.discogs.com/release/11284835"
+   },
+   {
+    "f": "第二、三軌取自 Bizet 的歌劇《Carmen》：〈Gypsy Song〉是第二幕在酒館裡唱的吉普賽之歌，〈Seguidilla〉是第一幕 Carmen 唱給 José 聽的塞吉第亞舞曲——而那部歌劇的舞台正是塞維亞。",
+    "src": "https://en.wikipedia.org/wiki/Carmen"
+   },
+   {
+    "f": "第四軌〈Toreador〉與《Carmen》裡那首著名的鬥牛士之歌同名，作曲欄寫的卻是 菊池ひみこ 自己，是她的原創曲。",
+    "src": "https://www.discogs.com/release/11284835"
+   },
+   {
+    "f": "她在盤上彈鋼琴、鍵盤與合成器，另外掛了一格 Voice；節奏組有吉他 松本正嗣、電貝斯 渡辺直樹、低音提琴 石橋敬一、鼓 岡本郭男 等兩位，拉丁打擊是 納見義徳。",
+    "src": "https://www.discogs.com/release/11284835"
+   },
+   {
+    "f": "管樂是三個人：林文夫 吹長笛、中音與次中音薩克斯風，當年 25 歲的 村田陽一 吹長號與低音長號，吉田憲司 吹小號。",
+    "src": "https://www.discogs.com/release/11284835"
+   },
+   {
+    "f": "製作人 中村慶一 是 CBS/Sony 的製作人，曾經經手 Miles Davis 與 Herbie Hancock 在日本的錄音；錄音工程師是 深田晃。",
+    "src": "https://www.discogs.com/artist/383525"
+   },
+   {
+    "f": "寫解說的 瀬川昌久 生於 1924 年，是兼寫爵士、電影與音樂劇的日本評論家。",
+    "src": "https://www.discogs.com/artist/1690604"
+   },
+   {
+    "f": "盤上的經紀欄寫的是 Flying Beagle Corporation——她自己的事務所，與前一年那張專輯同名，官方網站的網域也叫 flyingbeagle。",
+    "src": "https://ja.wikipedia.org/wiki/%E8%8F%8A%E6%B1%A0%E3%81%B2%E3%81%BF%E3%81%93"
+   },
+   {
+    "f": "七軌裡最長的是〈Toreador〉6 分 12 秒，《Carmen》那兩段一長一短：〈Gypsy Song〉5 分 32 秒、〈Seguidilla〉4 分 9 秒；最短的是〈Siesta〉3 分 54 秒。",
+    "src": "https://music.apple.com/jp/album/sevilla-breeze/1770720187"
+   },
+   {
+    "f": "已知版本三個：1988 年的原版 CD，2024 年 2 月 Aldelight 的限定 Blu-spec CD 重製版 MHC7 30072，以及同年 10 月的七軌數位版。",
+    "src": "https://www.discogs.com/master/3381187"
+   }
+  ],
+  "hookCandidates": [
+   "《Carmen》的故事發生在塞維亞，她從那部歌劇借了兩段，再自己寫了一首同名的〈Toreador〉。",
+   "鋼琴手把一整張碟寫成西班牙南部的旅行：從春天、午睡一路寫到直布羅陀。"
+  ],
+  "sound": "拉丁爵士編制：菊池ひみこ 的鋼琴與合成器領奏，偶爾加上無詞人聲，松本正嗣 的吉他帶出西班牙色彩，電貝斯與低音提琴、兩位鼓手與 納見義徳 的拉丁打擊撐起節奏，長笛、薩克斯風、長號與小號三支管樂對答；《Carmen》兩段改編與五首原創交錯，全張器樂。",
+  "keyTracks": [
+   "Sevilla Breeze",
+   "Seguidilla"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 生平格與同批 a 組《Flying Beagle》分開放（派工信第五節第 6 點）：本卡只用「Continental 五張→CBS/Sony 兩張」這一格與事務所名；出生地仙台、古典鋼琴訓練、12 歲エレクトーン大賽、師事 藤井貞泰、1979 年 Montreux、1980 年出道作、〈Hollywood Illusion〉當《レディス4》主題曲——一律留給 a 組，本卡不寫（a 組研究稿本層交件時尚未落地，無法逐格比對，請主線收件時對一次）。⚠ 第 5701 條：第 2、3 軌算乙（2/7，c-191 b 策展層判定），facts 照實寫出自《Carmen》；Apple 逐字標「(from Carmen)」與 Discogs 作曲欄 Georges Bizet 兩源同向。〈Gypsy Song〉＝第二幕〈Les tringles des sistres tintaient〉、〈Seguidilla〉＝第一幕〈Près des remparts de Séville〉，對應出自 en 維基 Carmen 條目的劇情與曲目段；Apple 與 Discogs 只給英文題，對應是本層依曲名判定——寫作層若要保守可只寫「第二幕／第一幕」而不寫場景細節。⚠ 推翻／補正策展層：（1）⚠ 鼓手 `Yasushi Ichikawa` 的 Discogs 藝人頁 4071135 是 1968 年生的攝影師（profile 逐字「Japanese photographer born 1968 in Tokyo」、realname `市川靖史`）——credit 被釘到同名的另一個實體（主線第 1968-B 條那一種），漢字不可採，facts 只寫「鼓 岡本郭男 等兩位」；（2）其餘七位本層逐名回打定案：石橋敬一 681655 `realname`、岡本郭男 2530069 `realname`、納見義徳 620175 `realname`（profile「Japanese latin percussionist. Born in 1940」）、林文夫 3898962（namevariations 唯一漢字形 `林 文夫`、profile「Alto Sax Player」）、吉田憲司 857272 `realname`、中村慶一 383525（namevariations 唯一漢字形）、深田晃 722837（namevariations `深田晃`）、瀬川昌久 1690604 `realname`；卡單寫羅馬字的這幾位可改寫漢字。⚠ 村田陽一 1963-07-25 生（Discogs 411124 profile），錄音期 1988 年 8–9 月 → 25 歲。⚠ 瀬川昌久 2021 年辭世、納見義徳 2019 年辭世屬與本作無關的後續，不寫。⚠ 「官方網站網域 flyingbeagle」：ja 維基 infobox 公式サイト `http://flyingbeagle.jp`，只 http——facts 的 src 掛 ja 維基條目；寫作層可捨。⚠ 時長取 Apple jp 1770720187 逐軌秒數（Discogs 零 duration）；Apple 的 `releaseDate` 1988-11-21 與原壓逐日相符，僅交叉驗證。⚠ 版本：Discogs 2＋MB 獨有數位 1（＝Apple 那一筆）＝3，零改判。⚠ 同日發行：和泉宏隆《Amoshe》同為 1988-11-21 CBS/Sony `32DH 51xx`，曲目零重疊。⚠ 盤名與曲題撞名：〈Sevilla Breeze〉與 Sidevision《Moon Light》的〈Autumn Breeze〉無關；〈Toreador〉〈Siesta〉高碰撞，下游引用帶掛名。"
+ },
+ {
   "key": "desc2:THE SQUARE|Wave",
   "artist": "THE SQUARE",
   "album": "Wave",
