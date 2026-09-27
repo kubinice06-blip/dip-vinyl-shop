@@ -171,6 +171,8 @@ jp-1 的 slice 帶著 `why`（`rg-tag`／`artist-tag`／…）當曲風線索。
     ⚠ **判準**：LP 原壓的 `labels` 欄只有コロムビア 系字標（`Interface`／`Better Days`／`Takt`／`Columbia`）→ 不在十五家、退，登記 `audits/between-the-lines-candidates.md`；
     **LP 與同月首發 CD 的 `labels` 欄有 `Denon` 字標** → 以字標為準、收（c-189 b 第 6582 條《Easy to Love》）。
 
+35. ⚠ ⚠ **`CBS/Sony 28AP 3xxx` 是美國 CBS 的授權線**（c-190 b，主線第 1996-B 條）：**原壓 ℗ 寫 `CBS Inc.` 就是美國原盤、寫 `CBS/Sony Inc.` 才是日本原盤**——`小曽根真《After》`（美國 Columbia `FC 40240`）、c-191 a 的《Now You Know》（`FC 40676`）都是這一族：**日本藝人的美國原盤，原壓不在十五家、退**，登記 `audits/between-the-lines-candidates.md` 丙族。⚠ **`Epic/Sony` 算 `CBS/Sony` 那一格**（照 `enum/jp-2.md` 的定義）。
+
 ## 三之二、原廠網域在本線的實測（**jp-1 那八個網域幾乎全不適用，不要再逐個試錯**）
 
 **jp-2 的十五家不是 jp-1 的四大廠**，所以 jp-1 派工信列的八個原廠網域對本線幾乎無效
