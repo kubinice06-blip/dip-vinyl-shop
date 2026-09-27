@@ -911,7 +911,7 @@ B 面七軌零 credit——〈港は雨の晩〉〈素敵なあなた (Bei Mir B
 
 1. **`node batch-progress/c189/chk-prop.mjs a`** → **`prop-a.json：10 張、9 位｜標記 0`**。
    ⚠ **「（報告）含日文分隔符」那一行本組 0 次**（收件零聯名）；**`chk-prop` 第五道（盤名撞 apex，只報不擋）本組 0 報。**
-2. **`node batch-progress/dedup-crossbatch.mjs c189`** → **跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0**（跑的時候 b 組的 prop 已有 5 張，合計 15 張）。
+2. **`node batch-progress/dedup-crossbatch.mjs c189`** → **跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0**（第一次跑時 b 組的 prop 有 5 張、合計 15 張；交件前最後一次跑時 b 組 10 張、合計 20 張，四項仍全 0）。
    ⚠ **`label` 欄本層沒有逐字寫別張卡的目錄號**（c-183 第 5715 條第 7 點）——**#19 提到 #5 時用「本組 #5《Wind Up》」代稱。**
 3. **第 315 條結算**：**收 10 ＋ 退 9 ＝ 19 ＝ slice 的 `g === "a"` 筆數，平。**
 4. **`desc-tools/jp-proper-names.json`**：**append 0 個、既有條目一字未動**（第 6557 條）。
