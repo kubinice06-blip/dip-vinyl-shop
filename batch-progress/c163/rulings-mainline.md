@@ -7313,3 +7313,12 @@ Apple 的 **和文題**《ライヴ・イン・ネムロ ホイール・スト�
    **`name-corrections.json` 新開 `_entity_mislinks` 一欄收這一族（`fix-names.mjs` 不讀它）。** 同形的還有《Sevilla Breeze》的 `Yasushi Ichikawa`（連到一位 1968 年生的攝影師）。
 3. **研究層推翻策展層照准**：`伊藤君子《Follow Me》` 的標題曲是 Rodrigo〈Aranjuez〉第二樂章配英文詞（旋律算甲、從嚴算乙也只 3/10，收件不變）；
    `THE SQUARE《Wave》` 的含稅價是上市前預標的 3%（上市 3/21 早於消費稅法施行 4/1）；**《World Live '88》的 CAA 是探測 503 失敗，已重跑封面探測。**
+
+---
+
+## 第 2004-B 條（2026-09-27）：**c-189 收線（20 張）**
+
+**寫作層兩組 20 張驗收**（我自己重跑）：`qa-batch out c189` 全綠、`qa-check-research` 兩組 0、`fix-spacing` 兩檔 0、
+**首句＝hook 20/20、key 同序、字數 213–240**；**跨組＋c-188 的 4-gram ≥3 張 6 條全是專名與樂器名。**
+**`c189/HANDOFF.md` 與 `memory-entries/c189-pipeline.md` 已寫。封面 18/20、串流 13/20。**
+**寫作層零件需要裁定**；a 組把另一組的 hook＋note 當成它未來的正文先掃、改在自己這一邊（四條）——**這個做法寫進下兩批的寫作信。**
