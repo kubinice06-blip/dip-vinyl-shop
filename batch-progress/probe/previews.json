@@ -66196,5 +66196,41 @@
   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/58/a6/26/58a62610-2380-a555-6c71-258e175f97b6/mzaf_13242123988626665013.plus.aac.p.m4a",
   "cleanedOnly": false,
   "status": "ready"
+ },
+ "伊藤君子|Follow Me": {
+  "batch": "c191",
+  "tried": [
+   "jp:8→1",
+   "jp:第1935-B條退1筆",
+   "us:3→0",
+   "gb:3→0",
+   "de:3→0",
+   "fr:3→0",
+   "ca:3→0",
+   "au:3→0"
+  ],
+  "rejectedMatch": [
+   {
+    "why": "aliasOnlyTitle＋年份漂移 25 年（≥20）",
+    "collectionId": 930850493,
+    "appleTitle": "KIMIKO",
+    "appleArtist": "伊藤君子",
+    "appleYear": "2014"
+   }
+  ],
+  "status": "unavailable"
+ },
+ "渡辺香津美|Kilowatt": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→0",
+   "us:0→0",
+   "gb:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
  }
 }

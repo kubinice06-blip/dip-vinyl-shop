@@ -195,6 +195,7 @@ jp-1 的 slice 帶著 `why`（`rg-tag`／`artist-tag`／…）當曲風線索。
 
 ⚠ ⚠ ⚠ **原廠網域在 jp-2 線第一次通**（c-187 a，主線第 1987-B 條）：
 ⚠ ⚠ **2026-09-27 更正（c-188 b／c-189 b 研究層，主線第 1998-B 條）：slug 是逐藝人的，兩種順序都要試**——`takanaka-masayoshi`（姓-名）4/4 中、`masayoshi-takanaka` 404；**`/p/<CATNO>/` 短路徑可直接用**；**`tower.jp/item/<id>` 商品頁的 HTML 直接有逐軌作詞作曲編曲（「発売・販売元 提供資料」），是新的可用路徑。**
+⚠ **維基：`api.php` 與 REST 端點在雲端回 429，改用 `https://ja.wikipedia.org/w/index.php?title=<條目>&action=raw`（全程 200）**（主線第 2000-B 條）。
 **`universal-music.co.jp/<名-姓小寫>/products/<catno>/`**——`yosuke-yamashita`／`prism`／`casiopea` 皆 200，
 ⚠ **姓-名順序與キティ 系 slug 全 404；判命中一律看 `<title>`，該站有兩種 404 頁。**
 **那兩頁各給一格決定性事實**（廠牌自己說《Hot Menu》是該三重奏的美國初登場；
