@@ -40,3 +40,10 @@
 
 ## 北村英治《Swingin' Street》1986
 - `1691709503` us｜《Swingin' Streets》／Magpie Jazz Trio｜2023｜10 軌｜依據：盤名直查｜**掛名沒過**
+
+## 井上鑑《TOKYO INSTALLATION》1986 — **目錄裡找不到**
+
+## カリオカ《Virgin Islands》1986
+- `495455054` us｜《U.S. Virgin Islands》／Vibrationaires｜2012｜8 軌｜依據：盤名直查｜**掛名沒過**
+- `1892604869` us｜《Virgin Islands》／YRB Kovo Daze｜2026｜10 軌｜依據：盤名直查｜**掛名沒過**
+- `1850905489` us｜《Virgin Islands Junkanoo》／Gloria Wade｜2025｜20 軌｜依據：盤名直查｜**掛名沒過**
