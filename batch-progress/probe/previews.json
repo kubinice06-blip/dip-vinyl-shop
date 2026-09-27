@@ -65873,5 +65873,173 @@
    }
   ],
   "status": "unavailable"
+ },
+ "Casiopea|Casiopea Perfect Live II": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "大村憲司|Kenji Shock": {
+  "batch": "c191",
+  "tried": [
+   "jp:6→1"
+  ],
+  "front": "jp",
+  "collectionId": 1528290379,
+  "appleTitle": "KENJI SHOCK",
+  "appleArtist": "大村憲司",
+  "appleYear": "2000",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/03/74/6e/03746e49-f250-f216-8782-9145a9a13a04/mzaf_17907787961511974934.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 22,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "近藤等則|337": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→0",
+   "us:4→0",
+   "gb:4→0",
+   "de:4→0",
+   "fr:4→0",
+   "ca:4→0",
+   "au:4→0"
+  ],
+  "status": "unavailable"
+ },
+ "小曽根真|Spring Is Here": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→2"
+  ],
+  "front": "jp",
+  "collectionId": 1373905481,
+  "appleTitle": "Spring Is Here",
+  "appleArtist": "小曽根真",
+  "appleYear": "1987",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/38/1d/a6/381da631-ac1e-1a9c-997d-07f5aecaaa78/mzaf_2139606275998857223.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "菊池ひみこ|Flying Beagle": {
+  "batch": "c191",
+  "tried": [
+   "jp:1→1"
+  ],
+  "front": "jp",
+  "collectionId": 1770715818,
+  "appleTitle": "FLYING BEAGLE",
+  "appleArtist": "菊池ひみこ",
+  "appleYear": "1987",
+  "explicitness": "notExplicit",
+  "trackCount": 8,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/45/75/5545751a-ac25-ba11-9637-057e7112fc9e/mzaf_10595001937002982573.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "渡辺香津美|The Spice of Life": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→0",
+   "us:0→0",
+   "gb:0→0",
+   "de:0→0",
+   "fr:0→0",
+   "ca:0→0",
+   "au:0→0"
+  ],
+  "status": "unavailable"
+ },
+ "富樫雅彦 / ゲイリー・ピーコック / 佐藤允彦|Wave": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→0",
+   "us:12→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→0",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "安田南 with 山本剛トリオ|Sunny": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→1"
+  ],
+  "front": "jp",
+  "collectionId": 997257010,
+  "appleTitle": "Sunny",
+  "appleArtist": "サニーデイ・サービス",
+  "appleYear": "2014",
+  "explicitness": "notExplicit",
+  "trackCount": 11,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c9/de/b5/c9deb569-2694-692a-1cfc-963c6eddb819/mzaf_4880497936557559535.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 39,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "ATLAS|BREEZE": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→1"
+  ],
+  "front": "jp",
+  "collectionId": 1872570510,
+  "appleTitle": "BREEZE",
+  "appleArtist": "ATLAS",
+  "appleYear": "1987",
+  "explicitness": "notExplicit",
+  "trackCount": 10,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/78/66/8f/78668fb0-c989-79a9-7985-38837baa779c/mzaf_10972348103073518992.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "カリオカ|Sampo": {
+  "batch": "c191",
+  "tried": [
+   "jp:12→1",
+   "jp:第1935-B條退1筆",
+   "us:11→0",
+   "gb:12→0",
+   "de:12→0",
+   "fr:12→2",
+   "fr:第1935-B條退2筆",
+   "ca:ratelimited-after-retries",
+   "ca:12→0",
+   "au:12→0"
+  ],
+  "rejectedMatch": [
+   {
+    "why": "aliasOnlyTitle＋年份漂移 38 年（≥20）",
+    "collectionId": 1844943186,
+    "appleTitle": "Carioca",
+    "appleArtist": "Samba",
+    "appleYear": "2025"
+   },
+   {
+    "why": "aliasOnlyTitle＋年份漂移 38 年（≥20）",
+    "collectionId": 6772058684,
+    "appleTitle": "Carioca",
+    "appleArtist": "Samba",
+    "appleYear": "2025"
+   }
+  ],
+  "status": "unavailable"
  }
 }
