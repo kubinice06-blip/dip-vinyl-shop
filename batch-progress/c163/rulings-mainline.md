@@ -7169,3 +7169,22 @@ Apple 的 **和文題**《ライヴ・イン・ネムロ ホイール・スト�
    **MB 只建了 1986 年 CD 再發的數位版、題取和文，而那一筆的目錄號是原壓、日期不是**
    ——**「MB release 的目錄號是原壓、日期不是」是撞池比對第四種看不見的形狀**（年份差 13 年，池比對的年份容差一定會放過它）。
 4. **同批兩組曲題互掃**：`Casiopea《World Live '88》`（b）與《Perfect Live II》（a）會大量重疊——**b 組交件後主線對一次。**
+
+---
+
+## 第 1995-B 條（2026-09-27）：c-190 a（收 11 退 8）收件——`house: Denon` 3/3 全錯；`Interface` 字標兩張處置相反而兩張都對
+
+`chk-prop a` 標記 0、`dedup-crossbatch c190` 四道 0。
+
+1. ⚠ ⚠ **`Interface` 字標的兩張，判準寫死**：c-189 b《Easy to Love》收、c-190 a《As If…》退——**差別在同月首發 CD 的 `labels` 欄有沒有 `Denon` 字標**
+   （前者 CD 第一個字標是 `Denon`；後者 LP 與同日 CD 都只有 `Interface`，`Denon` 只出現在 `Manufactured By`）。
+   **`Manufactured By` 是製造商欄，不是廠牌欄**（c-183 a 第 5668 條、c-186 b 第 5978 條 (b) 的同一把尺）。**兩張維持原判。**
+2. ⚠ ⚠ **`house: Denon` 而 MB 只建了 1983–87 年 `C38-` 系 CD 的，先去版本表找 LP 原壓**（第 6619 條，照准）——**已寫進簡報第三節第 34 點。**
+   **c-190 a 三筆全錯**；c-191 剩下那一筆 `house: Denon` 照此先查。
+3. **`Sadao & Charlie《Iberian Waltz》` 加進 `known-pool-collisions.json`（第 13 筆）**：**本線第一筆「半張合輯型撞池」**
+   ——1969 コロムビア 合輯的 1985 Denon CD，五軌裡兩軌（約 51%）＝池中 c-173 b `Takt JAZZ-7` 的 A 面。
+4. **登記**：`As If…`、`So & So`（與先前的 `TOKYO JOE`）進 `audits/between-the-lines-candidates.md` 甲族；
+   **`Marlene` 七張退件（c-187 b 一、c-188 a 二、c-189 a 二、c-189 b 一、c-190 a 一，全部四項 2/4）進 `audits/foreign-artist-japan-productions.md` 乙族表。**
+5. **四件邊界照准**：#11《緑の想い》收（④款觸發、人工判收）、#12 笠井紀美子《WATCHING YOU》退（原壓 styles 零爵士，只有同號 Promo 有 Soul-Jazz——第 6561 條的不對稱在曲風欄的同形）、
+   #13《風韻》退（主奏長唄笛、日野皓正 只在兩軌）、#14 見第 1 點。
+   **`Mobo Live` 的 `priorRulingHits`**：c-181 以 jp-1 四大廠門退它，DOMO 在本線十五家內 → 收（第 1991-B 條「只標不剔」的第一次實際用上）。

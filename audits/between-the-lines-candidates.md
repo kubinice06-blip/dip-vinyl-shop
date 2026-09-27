@@ -14,6 +14,9 @@
 |---|---|---:|---|---|---|
 | `Express ETP-72100` | `Jun Fukamachi 21st Century Band —《Rokuyu = 六喩》` | 1975 | **東芝EMI 的 `Express` 字標** | ⚠ **Alfa** | c-184 b 第 5748／5775 條 |
 | `Liberty LPC-8037` | `柳田ヒロ —《Milk Time》` | — | Liberty／**東芝音工** | ⚠ **Alfa**（Alfa 只在 1998 CD 復刻與版權行） | c-183 a 第 5668 條 |
+| `Interface`（LP／同日 CD） | `Masahiko Satoh —《As If…》` | 1985 | **日本コロムビア 的 `Interface` 字標** | ⚠ **Denon**（只在 CD 的 `Manufactured By`） | c-190 a 第 6602 條（主線第 1995-B 條） |
+| `Better Days YF-7065-BD` | `Shigeharu Mukai + Astrud Gilberto —《So & So: Mukai Meets Gilberto》` | 1983 | **`Better Days`（コロムビア）** | ⚠ **Denon**（1985 年以後的 CD） | c-190 a 第 6604 條 |
+| `Better Days YF-7058-BD` | `坂本龍一＆渡辺香津美 —《TOKYO JOE》` | 1982 | **`Better Days`** | ⚠ **Denon** | c-188 b 第 6437 條（⚠ **合輯、8/8 錄音在池中——不必補**） |
 
 ⚠ ⚠ **這兩筆是同一個機制**：**1970 年代前半アルファ・ミュージック 的自製盤掛東芝側發行**，
 **而 MB 把廠牌記成後來持有版權的 Alfa**。**`enum/jp-2.md` 說的「1970s Alfa 只 13 張」裡，

@@ -35,6 +35,13 @@
 | 目錄號 | 盤 | 年 | 廠牌 | 四項 | 依據 |
 |---|---|---:|---|---:|---|
 | `Sony YFSC-21` | `Sonia Rosa With Yuji Ohno —《Spiced With Brazil》` | 1974 | CBS/Sony | **2/4** | c-184 a 第 5723／5743 條（Discogs profile 逐字「Brazilian singer … living in Japan」） |
+| `CBS/Sony 28AH 1376` | `Marlene —《JUST LIKE FIRST LOVE》` | 1981 | CBS/Sony | **2/4** | c-187 b 第 6058 條 |
+| `CBS/Sony 28AH 1507` | `Marlene —《My Favorite Songs》` | 1982 | CBS/Sony | **2/4** | c-188 a 第 6410 條 |
+| `CBS/Sony 28AH 1455` | `Marlene with Seawind —《Summer Nights》` | 1982 | CBS/Sony | **2/4** | c-188 a 第 6411 條 |
+| `CBS/Sony 28AH 1514` | `Marlene —《Déjà Vu》` | 1983 | CBS/Sony | **2/4** | c-189 a 第 6538 條 |
+| `CBS/Sony 28AH 1577` | `Marlene —《It’s Magic》` | 1983 | CBS/Sony | **2/4** | c-189 a 第 6539 條 |
+| `CBS/Sony 28AH 1855` | `Marlene —《Be・Pop》` | 1985 | CBS/Sony | **2/4** | c-189 b 第 6574 條 |
+| `CBS/Sony 28AH 1962` | `Marlene —《SOFTLY, AS IN A MORNING SUNRISE》` | 1985 | CBS/Sony | **2/4** | c-190 a 第 6597 條 |
 
 ### 這一族已知的成員（尚未進批、或已判成本土留在 slice 裡）
 

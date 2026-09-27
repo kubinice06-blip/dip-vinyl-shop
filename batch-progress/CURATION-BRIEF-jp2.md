@@ -166,6 +166,11 @@ jp-1 的 slice 帶著 `why`（`rg-tag`／`artist-tag`／…）當曲風線索。
    **它的語意是「這一格沒查過，你自己去查」，不是「這一格漏了」，也不是「這是外國人」**
    ——**`country` 是 `null` 的真日本人會撞池**（c-184 a 的 `峰厚介`），**而 `country=JP` 的團名也可能真的沒有漢字形**（`Love Live Life`）。
 
+34. ⚠ ⚠ **`house: Denon` 而 MB 只建了 1983–87 年 `C38-` 系 CD 的，先去版本表找 LP 原壓**（c-190 a 第 6619 條，主線第 1995-B 條）：
+    **c-190 a 三筆 `house: Denon` 全錯**（原壓是 `Interface`／1969 コロムビア／`Better Days`）——`38C38-`／`32C38-` 是コロムビア 那幾年所有 CD 共用的 Denon 號段。
+    ⚠ **判準**：LP 原壓的 `labels` 欄只有コロムビア 系字標（`Interface`／`Better Days`／`Takt`／`Columbia`）→ 不在十五家、退，登記 `audits/between-the-lines-candidates.md`；
+    **LP 與同月首發 CD 的 `labels` 欄有 `Denon` 字標** → 以字標為準、收（c-189 b 第 6582 條《Easy to Love》）。
+
 ## 三之二、原廠網域在本線的實測（**jp-1 那八個網域幾乎全不適用，不要再逐個試錯**）
 
 **jp-2 的十五家不是 jp-1 的四大廠**，所以 jp-1 派工信列的八個原廠網域對本線幾乎無效
