@@ -443,3 +443,488 @@
 6. ⚠ **給 c-191**：**`house: Denon` 那一筆照第 6619 條先找 LP**；**`priorRulingHits` 的《The Spice of Life》照第 6617 條處理、另核原壓字標**；**`Marlene` 若再出現，逐張量四項（本組與 c-187 b 都是 2/4，但那是逐張的結論）。**
 7. ⚠ **給 b 組與主線的跨組一致性**：**本組 #12 `笠井紀美子《WATCHING YOU》` 退、b 組 `笠井紀美子《My One And Only Love》` 收——分界是原壓 `styles` 與曲目表（第 6600 條第二節），不是矛盾**；**本組 #5／#6 的 `THE SQUARE` 與 b 組《S·P·O·R·T·S》同一串。**
 8. ⚠ **給寫作層**：#4 的 LP 題 `Live` 不要寫成盤名；#5 與 #6 同曲五首要分開寫（現場／錄音室）；#17 的場館不寫城市、日期不寫；#3 的正文人名用盤面形 `本田竹曠`（主線第 1968-B 條二之 2 的通則）；#2 的〈Hi-land〉不寫作者。
+
+---
+
+# b 組（18 張｜slice 的 `house` 分佈：CBS/Sony 12・Alfa 2・Polydor JP 2・Denon 1・Nippon Crown 1；⚠ **18 筆逐筆核過原壓，`house` 與原壓不符 1 筆（美國 Columbia 授權壓片）**）｜策展層｜2026-09-27
+
+判準照 `batch-progress/CURATION-BRIEF-jp2.md`（本線簡報，全檔）
+→ `CURATION-BRIEF-jp1.md`（**機制整份沿用，含「一之二」四條，該節優先於該檔其他任何一節**）
+→ `CURATION-BRIEF-bluenote-post1985.md`（含**附錄二：雲端線實測**）→ `CURATION-BRIEF-bluenote.md`
+→ `CURATION-BRIEF-c131.md`，**固定規格一字未改**。
+曲風判準照 **c-173 b 第 3753 條 ＋ c-173 a 第 3716 條（收退分界與救濟三肢）＋ 第 1857-B 條（①② 進人工判）
+＋ 第 1871-B 條（④ 也降為人工判）＋ 第 1861-B 條第 5 款 ＋ 第 1923-B／1925-B 條
+＋ 主線第 1934-B／1936-B／1944-B／1948-B 條 ＋ c-183 b 第 5701 條（收件款第三肢的可數判準）
+＋ 主線第 1962-B／1965-B／1969-B／1978-B 條 ＋ c-185 b 第 5927／5928／5929 條**，命中款次逐筆寫在各條。
+`batch-progress/c163/rulings-mainline.md` 第 **1934-B…1991-B** 條、`c183`／`c184` 策展段的總表與退件條（含 5677／5679／5685／5701／5715）、
+`c185/rulings.md`（5876–5935）、`c186/rulings.md`（5936–5995）、`c187/rulings.md`（6026–6085）的策展兩段、
+`c187/prop-a.json` 與 `prop-b.json` 兩檔的掛名寫法與 `risk` 密度、`batch-progress/enum/jp-2.md`（全檔）、
+`batch-progress/enum/known-pool-collisions.json`、`audits/pool-artist-name-splits.md`、`audits/foreign-artist-japan-productions.md` 亦已讀。
+⚠ **引用裁定一律寫成「c-18X 第 NNNN 條」**（主線第 1971-B 條三）。
+
+**收 10、退 8（曲風／演奏主體 7 ＋ 原壓廠牌不在十五家 1）｜收件率 56%**
+——**成因可歸因**：本組的 1986 年段在 CBS/Sony（含 Epic/Sony）這一家集中了 12 張，**而其中 6 張是 city pop／new wave／easy listening 的人聲或器樂盤**（`佐藤博` 走 Alfa、另五張都在 CBS/Sony 與 Epic/Sony），外加 **1 張是美國 Columbia 的授權壓片**；**器樂 fusion 與爵士標準曲那一側 10 張收 10 張**。
+
+⚠ ⚠ **年份改判 0 筆**、**盤名真改判 0 筆**（大小寫取邊 3 ＋ 中點字元取邊 1 ＋ 等價形取邊 2 ＋ 單複數取邊 1 ＋ 三欄一致 3，第 6636 條）、
+**`live` 改判 0 筆**（slice 標 `live` 的 1 筆屬實；反向漏標 0/17，第 6637 條）、
+**廠牌欄 18 筆逐筆以 Discogs `releases/<id>` 的 `labels` 欄為準核過、`house` 與原壓不符 1 筆（6%）**（第 6639 條）、
+再發版本數 **10 筆收件全部有 master 頁、逐筆跑完整張 `versions`（10/10 低估、平均低估率 65%、最高 86%）**（第 6638 條）、
+掛名 10 張 **10 個相異字串**（沿用池中整串 5 ＋ 新立 5，其中 1 串是聯名），**新造分裂 0、新造分隔符 0、收斂 0、改釘 rgMbid 0、孤兒 release 0**。
+
+⚠ ⚠ **本組最重要的五件**：
+1. ⚠ ⚠ ⚠ **`CBS/Sony` 的 `28AP 3xxx` 號段是美國 CBS 的授權線**（第 6627／6650 條）：`小曽根真《After》` 的日本盤 `28AP 3192` **℗ 逐字 `CBS Inc.`**、同號段鄰號 `28AP 3191`／`3193`／`3194`／`3195` 逐字是 Boys Don't Cry／Chuck Mangione／Branford Marsalis／Neil Diamond——**原壓是美國 Columbia `FC 40240`（紐約 Clinton Recording 錄音）**。**`SONP-`／`SOPM-` 之外，CBS/Sony 要逐張回查的號段多了一個。**
+2. ⚠ ⚠ **`Epic/Sony` 三張（GONTITI 兩張、くじら）的 `labels` 欄是 `Epic`**，`labels/37615`（`Epic/Sony`）的 `parent_label` 是 `Epic/Sony Inc.`（1988 年才併入 CBS/Sony Group）——**本層依 `enum/jp-2.md` 總表把 Epic/Sony 算進 CBS/Sony 那一格而判在門內**；三張都退在曲風，**這一格這次沒有決定性，但下一批遇到收件時要先定**（第 6650 條）。
+3. ⚠ ⚠ **`Denon` 那一張的原壓字標是 `Interface`**（`L.A. Transit《De Novo》`，`YF-7119`）——**`parent_label` 是日本コロムビア、同日 CD 的 `labels` 欄另有 `Denon`，照 c-189 b 第 6582 條（主線第 1991-B 條二之 1 照准）的先例過關**；⚠ **`YF-` 號段與 `Better Days` 共用，但本盤 `labels` 欄零個 `Better Days`，與 c-187 b 第 6060 條不同形**；⚠ ⚠ **同批 a 組第 6602 條以同一個 `Interface` 字標退了《As If…》——分界是同日 CD 的 `labels` 欄有沒有 `Denon`，本盤有、那一張沒有**（第 6639 條）。
+4. ⚠ ⚠ **三筆邊界收件都已寫死反轉條件**（第 6647／6648／6649 條）：`井上鑑《TOKYO INSTALLATION》`（箏 ＋ Simmons ＋ 程式的藝術企劃盤）、`加古隆《いにしえの響き》`（⑤ 第三形成立、第 3716 條兩肢過）、`L.A. Transit《De Novo》`（Brasil '66 形式的巴西曲目企劃，乙從寬算正好 50%）。
+5. ⚠ **同組兩張卡「盤名 ＝ 曲題」互撞**（第 6651 條）：`笠井紀美子《My One And Only Love》` 的盤名是 `北村英治《Swingin' Street》` A4 的曲題——**同年、同廠、同一首曲子的兩份錄音**，`chk-prop` 與 `dedup` 都看不到。
+
+---
+
+## 6626　（**總表**）：**18 張＝收 10 ／ 退 8**
+
+| # | 掛名 —《盤名》 | slice `house` | 年 | 處置 | 判準／條號 |
+|---:|---|---|---:|---|---|
+| 1 | Casiopea —《Sun Sun》 | Alfa | 1986 | **收** | 甲 9／乙 0（兩軌人聲原創不算甲）；四項可判定 3/3（6644） |
+| **2** | **佐藤博 —《SOUND OF SCIENCE》** | **Alfa** | **1986** | ⚠ **退** | **⑤ 前半 ＋ 第 3716 條三肢全敗（6628）** |
+| 3 | 北村英治 —《Swingin' Street》 | CBS/Sony | 1986 | **收** | 甲 10／乙 0；⚠ A4 曲題撞 #14 盤名（6651） |
+| **4** | **GONTITI —《SUNDAY MARKET》** | **CBS/Sony（Epic/Sony）** | **1986** | ⚠ **退** | **① ＋ ⑤ 第三形 ＋ 三肢缺二 ＋ 第 1923-B 條演奏主體（6629）** |
+| **5** | **GONTITI —《冬の日本人》** | **CBS/Sony（Epic/Sony）** | **1986** | ⚠ **退** | **② ＋ ⑤（`Stage & Screen`）＋ 第 1923-B 條演奏主體；與 #4 同進同退（6630）** |
+| **6** | **Makoto Ozone —《After》** | **CBS/Sony** | **1986** | ⚠ ⚠ **退** | **原壓是美國 Columbia `FC 40240`（不在十五家）＋ 第 4106 條四項 2/4（6627）** |
+| 7 | Mal Waldron & 山下洋輔 —《Piano Duo Live at Pit Inn》 | CBS/Sony | 1986 | **收** | 實況（slice 標對，6637）；四項可判定 3 票 2/3（6644） |
+| **8** | **Marlene —《JUST A WOMAN》** | **CBS/Sony** | **1986** | ⚠ **退** | **⑤ 前半 ＋ 三肢全敗；`bornOutside` 未參與（6631）** |
+| 9 | THE SQUARE —《S·P·O·R·T·S》 | CBS/Sony | 1986 | **收** | 甲 9／乙 0；中點字元取邊（6636） |
+| **10** | **くじら —《Tamago》** | **CBS/Sony（Epic/Sony）** | **1986** | ⚠ **退** | **⑤ 第三形 ＋ 三肢全敗（6632）** |
+| 11 | 井上鑑 —《TOKYO INSTALLATION》 | CBS/Sony | 1986 | **收** | ⚠ ⚠ **邊界（6647）**；甲 12／乙 0；四項 4/4 |
+| 12 | 加古隆 —《いにしえの響き -パウル・クレーの絵のように-》 | CBS/Sony | 1986 | **收** | ⚠ ⚠ **邊界（6648）**：⑤ 第三形成立、三肢兩過 |
+| 13 | 安藤まさひろ —《Melody Book》 | CBS/Sony | 1986 | **收** | 甲 7（兩軌人聲不算甲）；⚠ 新立掛名（6640） |
+| 14 | 笠井紀美子 —《My One And Only Love》 | CBS/Sony | 1986 | **收** | ① 進人工判、第 3716 條「即使帶 Easy Listening 也收」；四項 3/4 |
+| 15 | L.A. Transit —《De Novo》 | Denon（實為 `Interface`） | 1986 | **收** | ⚠ ⚠ **邊界（6649）**；`labels/<id>` 驗父公司（6639） |
+| **16** | **Various Artists —《NAVIGATION TO ISLANDS》** | **Nippon Crown（`Panam`）** | **1986** | ⚠ **退** | **第 3716 條退件第 3 項（三個「Project」分軌）＋ 第 1925-B 條盤面零樂手 ＋ ①（6633）** |
+| 17 | カリオカ —《Virgin Islands》 | Polydor JP | 1986 | **收** | 甲 8／乙 0；單複數取邊（6636） |
+| **18** | **橋本一子 —《Vivant》** | **Polydor JP** | **1986** | ⚠ **退** | **⑤ 前半 ＋ 三肢全敗（6634）** |
+
+**收 10／退 8，收件率 56%。** `node batch-progress/c190/chk-prop.mjs b` **標記 0**、
+`node batch-progress/dedup-crossbatch.mjs c190` 跨批撞卡 0／同 rgMbid 不同掛名 0／同掛名盤名詞元包含 0／共用目錄號 0（見第 6654 條）、第 315 條結算 10 ＋ 8 ＝ 18 平。
+
+---
+
+## 退件的裁定（6627–6634）
+
+## 6627　⚠ ⚠ 退：`Makoto Ozone —《After》`（rg 43297c9d）——**原壓是美國 Columbia `FC 40240`，日本盤 `CBS/Sony 28AP 3192` 是授權壓片；⚠ 另外第 4106 條四項也只有 2/4，兩條理由各自獨立成立**
+
+### 一、原壓廠牌（簡報第一節 (1)）
+
+**Discogs master 333617 的 `versions` 逐筆跑完 9 版**：1986 年同年有美國 `Columbia FC 40240`（LP 2865216、卡帶 `FCT 40240`）、加拿大 `Columbia FC 40240`、英國 `CBS 26889`、日本 `CBS/Sony 28AP 3192`（LP 13302109 與 Promo）／`32DP 446`（CD）／`28KP 1375`（卡帶），2007 年日本 `Sony Music Japan International SICP 1524`。
+**決定性的三格**：
+1. **日本盤 13302109 的 `companies` 逐字「Phonographic Copyright (p): CBS Inc.」「Record Company: CBS/Sony Inc.」**——**℗ 是美國的 `CBS Inc.`，不是 `CBS/Sony Inc.`**（對照同組 #3／#9／#14 的日本原壓，℗ 逐字都是 `CBS/Sony Inc.`）；Apple jp 的數位版 ℗ 逐字 `1986 Columbia Records, a division of Sony Music Entertainment`。
+2. **英國盤 1689860 與 2007 年日本 CD 9958642 的 `companies` 逐字「Recorded At: Clinton Recording Studio」、`notes` 逐字「Recorded: September 1985」**；`extraartists` 逐字 `Producer: Gary Burton`、`Executive Producer: George Butler`（Columbia 的爵士 A&R）、`Engineer: Don Puluse`。
+3. ⚠ ⚠ **同號段鄰號全是美國 CBS 的授權盤**（`catno=` 逐號反查）：`28AP 3191` Boys Don't Cry、`28AP 3193` Chuck Mangione《Save Tonight For Me》、`28AP 3194` Branford Marsalis《Romances For Saxophone》、`28AP 3195` Neil Diamond《Headed For The Future》——**`28AP 3xxx` 是 CBS/Sony 發行美國 CBS 原盤的號段**（見第 6650 條）。
+**→ 原壓是美國 Columbia，不在十五家，退。**（**`house` 欄在本組唯一的錯**。）
+
+### 二、第 4106 條四項：2/4
+
+| 四項 | 判定 | 依據 |
+|---|---|---|
+| 領銜 | JP | `小曽根真`（MB 7693fefe Person country `JP`；Discogs 1203348 `realname` 逐字 `小曽根真`） |
+| 作曲 | JP | 七軌逐字 `Piano, Composed By: Makoto Ozone`（2007 CD 與英國盤） |
+| 企劃 | **外** | 製作 Gary Burton、執行製作 George Butler、紐約 Clinton Recording、工程 Don Puluse |
+| 原盤發行 | **外** | ℗ `CBS Inc.`，美國 Columbia 原盤 |
+
+**→ 2/4，門檻 3/4 不過**（c-183 a 第 5685 條）。⚠ **這張不是「外國藝人的日本壓片」也不是「日本企劃的外國藝人盤」，而是第三種：「日本藝人在美國廠牌的原盤、日本發授權版」**——**jp-1 與 jp-2 兩條線都以日本原壓為入口，這一類兩條線都不收**（見第 6655 條給主線）。
+⚠ **池中 `小曽根真`／`Makoto Ozone` 0 列**（「池中查無此藝人」那一格覆核成立）。
+
+---
+
+## 6628　退：`佐藤博 —《SOUND OF SCIENCE》`（rg 22534879，`Alfa ALR-28081`，1986-07-25）——**⑤ 前半（原壓 `genres` 零 Jazz）＋ 第 3716 條三肢全敗；⚠ 與 c-187 a 第 6045 條收下的《Orient》方向相反而判準同一條**
+
+**原壓 Discogs releases/3542603 的 `genres` 逐字 `Electronic`／`Funk / Soul`／`Pop`、`styles` 逐字 `Synth-pop`／`Boogie`／`City Pop`／`Ballad`／`Soul`**——**零 Jazz**；master 949014 七個版本（LP、Promo、卡帶兩號、CD `32XA-70`、1995 `ALCA-9146`、2015 `BRIDGE240`）逐個看過**全部零 Jazz**；MB RG tags 逐字 `disco`／`electronic`／`funk`／`soul`。**→ ⑤ 前半成立，照主線第 1978-B 條第 3 點回第 3716 條三肢**：
+
+| 第 3716 條的三肢 | 本盤 |
+|---|---|
+| 演奏主體是爵士編制 | ❌ **九軌裡八軌是人聲歌曲**——CD 9853484 的 `extraartists` 逐字 `Vocals: Hiroshi Sato`、兩位 `Technician [Fairlight Operator]`；逐軌欄 `Lyrics By` 八軌（Lilika Shinkawa 四軌、Cindy 兩軌、Yui Masaki 一軌、Lennon–McCartney 一軌） |
+| 曲目以爵士標準曲或原創為主 | ❌ **七首自寫的流行歌（第 5701 條 (4) 款不算甲）＋〈I Want To Hold Your Hand〉（Lennon–McCartney，英美流行曲＝乙）** |
+| `styles` 的爵士成分 | ❌ 五項全部非爵士 |
+
+**→ 三肢全敗，退。** ⚠ **c-187 a 第 6045 條收《Orient》的理由是「原壓 `genres` 含 Jazz、只有再發與 MB tags 零 Jazz → 讀原壓」**；**本盤是原壓自己就零 Jazz、而且七版一致**——**兩張同一位藝人一收一退，分界都是「原壓那一筆的曲風欄」，判準沒有動。**
+⚠ **原壓廠牌過關**（`Alfa`，`labels/37570` 在十五家內，1978 年界線之後）；**年份**：Discogs LP 逐字 `1986-07-25`、MB 的 CD 也是 `1986-07-25`（Discogs 的 CD 記 `1986-08-25`，差一個月，不影響 `year`）。**登記成撈回候選**（第 6655 條）。
+
+---
+
+## 6629　退：`GONTITI —《SUNDAY MARKET》`（rg cffee6a7，`Epic 28・3H-213`，1986-04-21）——**① ＋ ⑤ 第三形、第 3716 條三肢缺二；退在第 1923-B 條「演奏主體不是爵士編制」**
+
+**原壓 Discogs releases/4673446 的 `genres` 逐字 `Electronic`／`Jazz`／`Pop`、`styles` 逐字 `Easy Listening`／`Minimal`／`New Age`**：
+**① 成立**（`Easy Listening`，照第 1857-B 條進人工判）；**⑤ 第三形成立**（`genres` 含 Jazz 而 `styles` 有內容、三項零爵士成分）→ 第 3716 條三肢：**演奏主體 ❌**（`extraartists` 逐字只有 `Performer: Gonzalez Mikami`／`Performer: Titi Matsumura` 兩把原聲吉他，Discogs 藝人頁 863290 的 `profile` 逐字「Japanese guitar duo based in Osaka」）、**曲目 ✅**（十二軌全是兩人自寫的器樂曲）、**`styles` 的爵士成分 ❌**——**缺二**。
+⚠ ⚠ **主線第 1978-B 條第 3 點寫死的是「⑤ 款退件要搭三肢全敗」，本盤是缺二不是全敗，所以本層不靠 ⑤ 退**；**退的是第 1923-B／1925-B 條那一肢本身**：**第 3753 條收件款要求演奏主體是爵士編制，而本盤的演奏主體是一個兩把原聲吉他的「快適音楽」二重奏**——ja 維基「ゴンチチ」條目的 infobox ジャンル逐字「ラウンジ・ミュージック、民俗音楽（フォーク音楽）、ニューエイジ、フォーク・ソング、イージーリスニング」，**零個爵士**；正文逐字「純粋に快適さを追求して作品を制作するため、イージーリスニング的で、エキゾティックな雰囲気を持つインストゥルメンタル楽曲が多い」。
+⚠ **本層知道 ④ 款問的是藝人的職業身分而已降為人工判（第 1871-B 條）——這裡用 ja 維基那一句，是當第 1923-B 條「這張碟的演奏主體是什麼」的佐證，不是用 ④ 退。**
+⚠ **同年另有美國 `Portrait R 44438`（CBS 系）的授權版**，原壓是日本 Epic/Sony（門內，見第 6650 條）。**與 #5 同進同退。** 登記成撈回候選（第 6655 條）。
+
+---
+
+## 6630　退：`GONTITI —《冬の日本人》`（rg 49a71190，`Epic 28・3H-252`，1986-11-01）——**② ＋ ⑤（`genres` 含 `Stage & Screen`）；第 3716 條三肢只缺一，退在第 1923-B 條演奏主體；與 #4 同進同退**
+
+**原壓 LP Discogs releases/4107199（同日 CD 14850436 相同）的 `genres` 逐字 `Electronic`／`Jazz`／`Classical`／`Folk, World, & Country`／`Stage & Screen`、`styles` 逐字 `Contemporary Jazz`／`New Age`／`Fusion`**：
+**② 成立**（進人工判）；**⑤ 款的 `Stage & Screen` 那一肢成立**（c-186 a 第 5938 條之後本線第二次）→ 三肢：**演奏主體 ❌**（兩把原聲吉他 ＋ `Computer [Computer Performance]: Masaya Matsuura`——`notes` 逐字「Matsuura Masaya is from "PSY•S" by the courtesy of CBS/SONY」——＋ 口琴、單簧管／鍵盤、次中音薩克斯各一）、**曲目 ✅**（十二軌兩人自寫）、**`styles` ✅**（`Contemporary Jazz`／`Fusion`）——**只缺一，⑤ 不成立退件**。
+**→ 退在第 1923-B／1925-B 條那一肢**，理由與 #4 相同（同一個二重奏、同一年、同一家廠牌、同一位執行製作 Takeshi Nakai——盤面只印羅馬字，本層不寫漢字）。
+⚠ ⚠ **這一筆是本組最可能被翻的退件**：`styles` 兩項是爵士成分、MB tags 空白。**若主線認為「原聲吉他二重奏 ＋ 程式」可以算爵士編制，要一起翻 #4**（#4 還多一個 ① 的 `Easy Listening`，但 ① 只進人工判）。**可逆：改兩個收退值。**
+
+---
+
+## 6631　退：`Marlene —《JUST A WOMAN》`（rg 68bc594a，`CBS/Sony 28AH 2082`，1986-09-05）——**⑤ 前半 ＋ 第 3716 條三肢全敗；⚠ ⚠ `bornOutside` 那一欄沒有參與判定**
+
+**原壓 Discogs releases/7575804 的 `genres` 逐字 `Electronic`／`Funk / Soul`／`Pop`、`styles` 逐字 `Synth-pop`／`Boogie`／`City Pop`／`Vocal`（master 1371659 三版一致）**——**零 Jazz，⑤ 前半成立** → 三肢：**演奏主體 ❌**（領銜者是主唱；`extraartists` 逐字只有 Yuji Toriyama（Guitar、Synthesizer、Keyboards）、Ken Morimura（Keyboards、Synthesizer）、Eve（和聲）與製作 伊藤八十八）、**曲目 ❌**（〈The Look Of Love〉〈Scaborough Fair/Canticle〉〈Spinning Wheel〉〈Is It Too Late〉等英美流行曲為主）、**`styles` ❌**——**三肢全敗，退。**
+⚠ ⚠ **slice 的 `domesticRecheck.bornOutside` 逐字「出身地 Manila（PH）不在日本，長住日本——算本土」**——**照主線第 1959-B 條那一欄不是退件理由，本層一次都沒有拿它當依據**；**本筆連第 4106 條四項都不必量——曲風那一關已經退了**（與 c-187 b 第 6058 條那一張「曲風過得了、退在四項 2/4」不同形）。
+⚠ **`Marlene` 在本線的處置照舊逐張判**；池中 `Marlene`／`マリーン`／`Marlene Pena Lim` 0 列（「池中查無此藝人」覆核成立，掃到的是 `Marlene Dietrich`／`Marlene Kuntz` 子字串）。
+
+---
+
+## 6632　退：`くじら —《Tamago》`（rg 01d92774，`Epic 28・3H 247`，1986）——**⑤ 第三形 ＋ 第 3716 條三肢全敗**
+
+**原壓 Discogs releases/4051073 的 `genres` 逐字 `Jazz`／`Rock`／`Funk / Soul`／`Pop`、`styles` 逐字 `Art Rock`／`Experimental`／`New Wave`**——**⑤ 第三形成立** → 三肢：**演奏主體 ❌**（`extraartists` 逐字：杉林恭雄 `Vocals, Acoustic Guitar`、Kioto `Backing Vocals [Side Vocal], Bass`、楠均 `Backing Vocals [Side Vocal], Drums, Percussion`——**主唱領頭的歌曲樂團**；製作兼編曲 清水靖晃 與 オノ・セイゲン）、**曲目 ❌**（九軌是樂團的歌）、**`styles` ❌**——**三肢全敗，退。**
+⚠ MB RG tags 逐字 `art rock`／`experimental`／`jazz`／`new wave`／`pop`／`rock`（`jazz` 只有 1 票，照第 1850-B 條不當結論）；Discogs 藝人頁 1976040 的 `profile` 逐字「Japanese band formed in 1982」。**池中 `くじら`／`Qujila` 0 列**（「池中查無此藝人」覆核成立；盤名掃 `卵` 命中的是 `YAS-KAZ《風の卵》` 子字串，不是本盤）。
+
+---
+
+## 6633　退：`Various Artists —《NAVIGATION TO ISLANDS》`（rg dcebc7f1，`Panam GWL-1002`，1986-05-21）——**第 3716 條退件第 3 項（三個「Project」分軌）＋ 第 1925-B 條盤面零樂手 ＋ ① 款**
+
+**原壓 Discogs releases/7851208 的 `labels` 欄逐字「Panam — GWL-1002」「Crown (3) — GWL-1002」、`series` 逐字「Sound Image Collection — 1」、`genres` 逐字 `Jazz`／`Pop`、`styles` 逐字 `Fusion`／`Easy Listening`**；**九軌逐軌掛三個不同的「Project」**：`Ogura Project`（Yasuharu Ogura 作編，A1／A4／B5）、`Ogata Project`（Yasuo Ogata 作編，A2／B2（與 Yoshihiro Naruse 合作）／B4）、`Hasegawa Project`（Junya Hasegawa 作編，A3／B1／B3）；**整筆與逐軌的 `extraartists` 零個樂手**。
+1. **第 3716 條退件第 3 項成立**：「artist-credit 是兩個以上樂團分軌」——**三個企劃單位各佔三軌。**
+2. **第 1925-B 條那一肢從盤面本身不成立**：**盤面一個樂手都沒有列**（CD 版 14434021 同樣零樂手），**只有三位作編曲者的名字**。
+3. **① 款**（`Easy Listening`）與**系列名「Sound Image Collection」點明 BGM 企劃屬性**（第 3716 條退件第 4 項的「盤名／團名點明企劃屬性」）。
+**→ 三條各自成立，退。** ⚠ **slice 的 `artist` 欄是 `Various Artists`——主線第 1971-B 條一之 2 的 (a) 形狀（`Various Artists` 實為聯名）在本筆不成立，它真的是三個單位的分軌企劃盤**。⚠ **原壓廠牌過關**（`labels/93574` `Panam` 的 `parent_label` 逐字 `Nippon Crown Co., Ltd.`）。三人的漢字名本層沒有回打藝人頁，**全寫羅馬字**。
+
+---
+
+## 6634　退：`橋本一子 —《Vivant》`（rg f0d406bc，`Polydor 28MX 2530`，1986）——**⑤ 前半 ＋ 第 3716 條三肢全敗；領銜者是池外的爵士鋼琴手，退的是這張碟本身**
+
+**原壓 Discogs releases/5358519 的 `genres` 逐字 `Electronic`／`Rock`／`Pop`、`styles` 逐字 `New Wave`／`Experimental`**（同日 CD 8821548 只記 `Pop`、styles 空）——**零 Jazz，⑤ 前半成立** → 三肢：**演奏主體 ❌**（CD 的 `extraartists` 逐字 `Vocals, Piano, Synthesizer: Ichiko Hashimoto`、`Programmed By: AQ Ishii`、Atsuo Fujimoto 一人包辦吉他／電貝斯／中音薩克斯／鈴鼓／和聲、Naoya Ohtani 鼓——**自唱的 new wave 編制**）、**曲目 ❌**（十軌是她自寫的歌 ＋〈Land Of A 1000 Dances〉（Chris Kenner／Fats Domino，英美流行曲＝乙））、**`styles` ❌**——**三肢全敗，退。**
+⚠ **Discogs 藝人頁 259135 的 `profile` 逐字「Japanese jazz/fusion pianist, vocalist, composer and arranger」——照第 1871-B 條「退件要看這張碟本身，不是看這個人平常接什麼案子」**，這一句反過來也成立：**她是爵士鋼琴手，不能讓這張 new wave 歌曲盤進門。** **池中 `橋本一子`／`Ichiko Hashimoto` 0 列。** 登記成撈回候選（第 6655 條）。
+
+---
+## 收件與橫向的裁定（6635–6655）
+
+## 6635　年份：**18 筆全部回查版本表，改判 0 筆；錄音年與發行年相差一年的 1 筆（#7 實況，1985-09-17 錄、1986-03-21 發），照 `CURATION-BRIEF-c131.md` 第三節第 2 點寫進 `risk`，不是改判**
+
+**逐筆量的五個資料點**：slice 的 `year`／MB first-release-date／MB 最早 release 的 date／Discogs 原壓的 `released`／Discogs master 的 `year`——**18 筆五處全部一致**。
+⚠ **給到「日」的**：#1 `1986-09-10`、#3 `1986-11-01`、#7 `1986-03-21`、#9 `1986-03-05`、#11 `1986-06-01`、#13（CD）`1986-06-21`、#14 `1986-04-02`、#15 `1986-07-01`；#12 的 LP 只給到年、CD 是 `1986-08-01`；#17 全部只給到年。
+⚠ **Apple `releaseDate` 在本組的表現**（第 1907-B／1944-B 條：Apple 只作交叉驗證）：**與原壓逐日相符 3 筆**（#9 `1986-03-05`、#12 `1986-08-01`、#15 `1986-07-01`）、**是再發或數位化日 2 筆**（#1 `1992-03-20`＝`ALCA-285`、#13 `2007-03-26`）、⚠ **與 Discogs 衝突 1 筆**（#14 Apple `1986-02-01` vs Discogs `1986-04-02`——**照第 1944-B 條整格不寫**）。
+⚠ **退件側也量過**：#2 的 Discogs CD 記 `1986-08-25` 而 LP 與 MB 都是 `1986-07-25`（差一個月，不影響 `year`）。
+
+## 6636　盤名：**⚠ 真改判 0 筆**（大小寫取邊 3 ＋ 中點字元取邊 1 ＋ 等價形取邊 2 ＋ 單複數取邊 1 ＋ 三欄一致 3）
+
+| 取邊種類 | 筆數 | 逐筆 |
+|---|---:|---|
+| **大小寫**（主線第 1971-B 條二之 5） | **3** | #1 `Sun Sun`（MB 數位版與 Apple 全大寫）／#7 `Piano Duo Live at Pit Inn`（Discogs `At`，原壓條目另有一個尾隨空白，照 c-187 a 第 6034 條 trim）／#11 `TOKYO INSTALLATION`（MB 全大寫、Discogs 逐詞大寫——照 MB 最早 release） |
+| ⚠ **中點字元**（本線新的一種） | **1** | **#9 `S·P·O·R·T·S`**：**MB 用 U+00B7、Discogs 用 U+FF65、Apple 用 U+30FB——三家三種中點**；取 MB 最早 release（＝slice）的 U+00B7，另兩形進 `queryAlias`；⚠ **`chk-prop` 的正規化把三種都剝掉，不構成分裂；同批 a 組的《R·E·S·O·R·T》也是 U+00B7** |
+| **等價形**（jp-1 簡報第三節第 2 點 ＋ c-187 b 第 6077 條） | **2** | ⚠ **#12 取和文**（Discogs 六版五版和文領頭、MB 與 Apple 和文；羅馬字那一邊一致是 `Klee`，但第三方多數在和文）／**#14 取英文**（Discogs 三版雙題、MB 與 Apple 英文） |
+| ⚠ **單複數**（主線第 1976-B 條 `titleCheck` 第 (g) 種） | **1** | **#17 `Virgin Islands`**：原壓 LP 與 MB 複數、同年 CD 的 Discogs 條目單數 `Virgin Island`——**取原壓**；`titleCheck` 三欄全是複數、`note` 空字串 |
+| **三欄一致且查無問題** | **3** | #3 `Swingin' Street`／#13 `Melody Book`／#15 `De Novo` |
+
+⚠ **slice 的 `titleCheck.note` 本組 18 筆全部空字串**；⚠ **MB 轄下 JP release 數少於 Discogs 日本盤數的 9 筆（主線第 1965-B 條第 1 點）逐筆把盤名與年份人工回查，改判 0**（#11 兩家數目相符，不觸發）。
+
+## 6637　`live`：**改判 0 筆；slice 標 `live` 的 1 筆（#7）三肢全過屬實；反向漏標 0/17**
+
+- **#7《Piano Duo Live at Pit Inn》**：**(a) 場館** `notes` 逐字 `Pit Inn, Shinjuku, Tokyo`（1998 版 `Recorded At: Pit Inn`）／**(b) live 字樣** 逐字 `Recorded Live`、盤名 `Live at`／**(c) 單一日期** 逐字 `September 17. 1985`——**三肢全過**，MB `secondary-types` 也逐字 `["Live"]`。
+- ⚠ **下游要分開**：**本盤是新宿 Pit Inn；同批 a 組收的 `The Players《Live - At Roppongi Pit Inn》` 是六本木 Pit Inn**；c-184 的 `渡辺貞夫《At Pit Inn》` 是另一張碟。
+- **反向漏標 0/17**：17 筆 `live: false` 逐筆掃過原壓的 `notes`、`companies`、逐軌 credits，主線第 1958-B 條必掃字串（`Recorded live`／`実況`／`ライヴ`／`Recital`／末軌題帶 `Encore`／credits 有 `MC —`／盤名帶 `In Person`／`in Japan`，**另加 c-187 b 第 6063 條建議的 `Concert`**）與第 1977-B 條三個技術職（`Lighting`／`Technician [P.A. Operation]`／`Producer Of <場館>`）**零命中**。
+- ⚠ **往下修那一格要記的 1 筆**：**#12 的錄音地 `Sun Pearl Arakawa` 是荒川區的音樂廳**，但 `notes` 零 live／觀眾字樣、日期是兩天的錄音場次——**照第 1904-B 條「場館本身不足以判實況」維持 `false`**。
+- ⚠ **c-187 b 第 6061 條那一格（`notes` 的日期早於發行年兩年以上 → 必掃）本組 0 筆觸發**：唯一早於發行年的是 #7（一年，而它本來就標了 live）。
+
+## 6638　⚠ ⚠ 再發版本數：**10 筆收件全部有 master 頁、逐筆跑完整張 `versions`；10/10 低估，平均低估率 65%、最高 86%；版本數取 MB、Discogs 與 Apple 的聯集（主線第 1971-B 條二之 5 ＋ 第 1957-B 條第二點）**
+
+| # | 盤 | master | Discogs `versions` | MB（正式／Pseudo） | Apple 另加 | **聯集** | MB 低估 |
+|---:|---|---:|---:|---|---:|---:|---:|
+| 1 | Sun Sun | 462628 | **15** | 5（含 2 筆數位）／0 | 0（＝MB 數位） | **17** | 12（71%） |
+| 3 | Swingin' Street | 2772989 | 3 | 1／0 | 0 | **3** | 2（67%） |
+| 7 | Piano Duo Live at Pit Inn | 867756 | 2 | 1／0 | 0 | **2** | 1（50%） |
+| 9 | S·P·O·R·T·S | 1248921 | 8 | 4／1 | **1** | **9** | 5（56%） |
+| 11 | TOKYO INSTALLATION | 2547380 | 2 | 2／2 | **1（2022 空間音響重混）** | **3** | 1（33%） |
+| 12 | いにしえの響き | 1037740 | 6 | 1／0 | **1** | **7** | 6（**86%**） |
+| 13 | Melody Book | 1063147 | 4 | 2／1（1 筆 Discogs 沒建） | **1** | **6** | 4（67%） |
+| 14 | My One And Only Love | 1830947 | 4 | 1／0 | **1** | **5** | 4（80%） |
+| 15 | De Novo | 1216400 | 6 | 1／0 | **1** | **7** | 6（**86%**） |
+| 17 | Virgin Islands | 3070028 | 2 | 1／0 | 0 | **2** | 1（50%） |
+
+**合計：Discogs 52 版、MB 正式 19 筆（Pseudo 4 筆不計）、聯集 61 版；MB 低估 42 版、平均 65%。**
+⚠ ⚠ **本組抓到的四種漏源**：
+1. **同期卡帶**（6 筆有，MB 一筆都沒建）：`ALC-28078`／`28KH 1963`／`28KH 1828`／`28KH-1883`／`28KH 1820`／`CTK-7128`，外加 #1 的馬來西亞兩號與印尼一號。
+2. **同號 Promo**（6 筆有，MB 一筆都沒建）。
+3. ⚠ **同號 LP 的兩筆 Discogs 條目**（#12 的 LP `28AH 2075` 與 CD `32DH 495` 各兩筆、#15 的 CD `33CY-1004` 兩筆）——**本層照 Discogs 的條目數算版本（各自是獨立的 release id）**，⚠ 若主線認為那是重複建檔，#12 減 2、#15 減 1。
+4. ⚠ ⚠ **Discogs 結構上不收的數位版 6 筆**（#9／#11／#12／#13／#14／#15）——**照主線第 1987-B 條第三點先比 MB 的 `Digital Media` 實體**：#1 的 Apple 那一筆與 MB 兩筆數位版軌數相符、不另加；其餘六筆 MB 都沒建，各加一版。⚠ **#11 那一筆是 2022 年的空間音響重混版（盤名多了 `SPATIAL`），本層算一版但標明是重混，下游若掛試聽要先知道。**
+⚠ **MB 獨有而 Discogs 沒建的實體 1 筆**：#13 的 `CBS/Sony CSCL 1688`（MB 標 1986，號段是 1990 年代再發）。
+⚠ **沒有 master 頁的 0 筆**；⚠ **#3 的 `catno=` 反查回 1 筆 release 而沒有 master**（c-187 a 第 6041 條 (b)），從 `master_id` 欄取到 master。
+
+## 6639　⚠ ⚠ 廠牌欄與「原壓廠牌必須是本線十五家」那一關：**18 筆逐筆以 Discogs `releases/<id>` 的 `labels` 欄為準核過；`house` 與原壓不符 1 筆（6%）；`labels` 欄字標與 `house` 不同字 6 筆，逐筆打 `labels/<id>` 驗父公司**
+
+| # | slice `house` | **Discogs 原壓 `labels` 欄逐字** | 在十五家裡？ |
+|---:|---|---|---|
+| 1 | Alfa | `Alfa — ALR-28085` | ✅（`labels/37570` parent `Alfa Music, Inc.`） |
+| 2 | Alfa（退件） | `Alfa — ALR-28081` | ✅（退的是曲風） |
+| 3 | CBS/Sony | `CBS/Sony — 28AH 2093` | ✅ |
+| 4 | CBS/Sony（退件） | ⚠ `Epic — 28 3H-213`（companies 空；同年 CD `32 8H-61` 的字標逐字是 `Epic/Sony`） | ⚠ **判在門內**（見第 6650 條）；退的是曲風 |
+| 5 | CBS/Sony（退件） | ⚠ `Epic — 28•3H-252`（companies 逐字 `Epic/Sony`） | ⚠ 同上 |
+| **6** | **CBS/Sony（退件）** | ⚠ ⚠ `CBS/Sony — 28AP 3192`，**而 ℗ 是 `CBS Inc.`，原壓是美國 `Columbia — FC 40240`** | ❌ **不在十五家**（第 6627 條） |
+| 7 | CBS/Sony | `CBS/Sony — 32DH 360`（首發只有 CD） | ✅ |
+| 8 | CBS/Sony（退件） | `CBS/Sony — 28AH 2082` | ✅（退的是曲風） |
+| 9 | CBS/Sony | `CBS/Sony — 28AH 1996` | ✅ |
+| 10 | CBS/Sony（退件） | ⚠ `Epic — 28・3H 247`（companies 逐字 `Manufactured By: Epic/Sony Inc.`） | ⚠ 判在門內；退的是曲風 |
+| 11 | CBS/Sony | `CBS/Sony — 50DH-441～2`（首發只有 CD ＋ 畫冊） | ✅ |
+| 12 | CBS/Sony | `CBS/Sony — 28AH 2075` | ✅ |
+| 13 | CBS/Sony | `CBS/Sony — 28AH 2055` | ✅ |
+| 14 | CBS/Sony | `CBS/Sony — 28AH 1992` | ✅ |
+| **15** | **Denon** | ⚠ ⚠ **`Interface (3) — YF-7119`**（同日 CD 另有 `Denon — CY-1004`） | ✅ **`labels/108958` 與 `labels/65996` 的 `parent_label` 都是 `Nippon Columbia Co., Ltd.`，照 c-189 b 第 6582 條先例過關** |
+| 16 | Nippon Crown（退件） | ⚠ `Panam — GWL-1002` ＋ `Crown (3) — GWL-1002` | ✅（`labels/93574` parent `Nippon Crown Co., Ltd.`）；退的是曲風 |
+| 17 | Polydor JP | `Polydor — 28MX 2533` | ✅（`28MX` 是 Polydor K.K. 號段） |
+| 18 | Polydor JP（退件） | `Polydor — 28MX 2530`（CD companies 逐字 `Manufactured By: Polydor K.K.`） | ✅（退的是曲風） |
+
+**→ 不符 1 筆（#6），錯誤率 6%**（本線各組：c-183 兩組 11%、c-184 b 16%、c-185 b 5%、c-186 兩組 0%、c-187 a 0%、c-187 b 5%）。
+⚠ ⚠ **#15 的三個附帶條件（c-187 b 第 6076 條）逐一核過**：**(1) 號段**——`YF-` 是日本コロムビア 系的 LP 號段（`Better Days` 也用，c-187 b 第 6083 條），CD 的 `CY-` 是 Denon 號段，**兩者的母公司是同一家**；**(2) `Manufactured By`／`Made By` 不算**——本盤的 `Nippon Columbia` 正是在那兩格，本層沒有拿它當字標；**(3) 反方向**——同日 CD 的 `labels` 欄逐字有 `Denon`（十五家之一），**照「`labels` 欄的字標是十五家之一時以字標為準」過關**。⚠ **與 c-187 b 第 6060 條（原壓 `labels` 欄逐字 `Better Days`、`Denon` 只出現在八年後的 CD）不同形：本盤零個 `Better Days`，`Denon` 出現在同日首發的 CD 上。**
+⚠ ⚠ **與同批 a 組第 6602 條（`佐藤允彦《As If…》`，同一個 `Interface` 字標而退）的分界**：**那一張 LP 與 CD 兩版的 `labels` 欄都只有 `Interface`、`Denon` 只在 `Manufactured By`；本盤的 CD 條目 4565976 的 `labels` 欄逐字有 `Denon — CY-1004`，MB label-info 也有 `DENON CY-1004`**（⚠ 另一筆 CD 條目 18499201 的 `labels` 只有 `Interface`，但 `identifiers` 逐字 `Label Code: LC 8723`（Denon））——**分界正是 a 組那一條寫的「CD 那一版的 `labels` 欄有沒有 `Denon`」，本盤在有的那一邊，與 c-189 b 第 6582 條同一邊。** **若主線改判那個分界，a 組 #13、本組 #15、c-189 b 那一張三張一起定（一個收退值，可逆）。**
+⚠ **`Alfa` 的 1978 年界線本組 2/2 再中**（1986 年段）。
+
+## 6640　⚠ 掛名：**10 張 10 個相異字串——沿用池中整串 5 ＋ 新立 5（1 串聯名）；新造分裂 0、新造分隔符 0、收斂 0、改釘 rgMbid 0**
+
+| 掛名 | 池中列數 | 處置 | 依據 |
+|---|---:|---|---|
+| `Casiopea` | 15 | 沿用（#1） | 池中／Discogs／MB 三處一致 |
+| `北村英治` | 11（＋聯名 4） | 沿用（#3） | slice 逐字 `Eiji Kitamura`（MB credit 名）；照第 307 條與 2026-08-11 東亞藝人名裁定取漢字 |
+| `THE SQUARE` | 10 | 沿用（#9） | MB 實體名是帶 U+2010 的 `T‐SQUARE`、Discogs 是 `T-Square`；照 c-187 b 第 6066 條 |
+| `笠井紀美子` | 13（＋聯名 3） | 沿用（#14） | |
+| `カリオカ` | 5 | 沿用（#17） | slice 逐字 `Carioca`（MB credit 名）；照第 307 條取池中形 |
+| `Mal Waldron & 山下洋輔` | — | **新立聯名**（#7） | 兩方各照池中多數（`Mal Waldron` 8 列羅馬字、`山下洋輔` 26 列漢字）；分隔符 ` & ` 取盤面，池中先例 c-175 `Mal Waldron & 日野皓正` |
+| `井上鑑` | 0 | **新立**（#11） | MB 與 Discogs `realname` 兩處漢字 |
+| `加古隆` | 0（裸名） | **新立裸名串**（#12） | 池中兩串是團名／聯名（`高木元輝＝加古隆カルテット`、`富樫雅彦, 加古隆`），照第 964／196／197 條並存；**照 c-187 b 第 6085 條「給本機」第 4 點接上這個漢字串** |
+| `安藤まさひろ` | 0 | ⚠ **新立**（#13） | **MB artist-credit 逐字平假名形 `安藤まさひろ`（1986 年盤面的寫法），實體名與 Discogs `realname` 是 `安藤正容`**；照第 1934-B 條 (3)「盤面明印才立」取前者，後者進 `queryAlias`（見第 6655 條給本機） |
+| `L.A. Transit` | 0 | **新立團名串**（#15） | MB 與 CD 盤面的帶空格形；Discogs LP 的 anv `L.A.Transit` 進 `queryAlias`；**真的沒有漢字形**（第 6642 條） |
+
+⚠ **兩串團名／聯名入池的藝人軸代價**（c-187 b 第 6066 條同族）：**#7 掃不到 `Mal Waldron`（8 列）與 `山下洋輔`（26 列）的裸名；#15 掃不到 `横倉裕`（1 列）與 `吉田和雄`（0 列）。上傳時人工看一眼。**
+⚠ **`audits/pool-artist-name-splits.md` 本組零新增**（沿用的五串池中都只有一種寫法；`安藤まさひろ`／`安藤正容` 兩形池中都是 0 列，**目前不構成分裂，但下一張他的碟若照 MB 實體名掛 `安藤正容` 就會裂開**——已寫進第 6655 條）。
+
+## 6641　⚠ ⚠ 曲風：**18 筆逐筆獨立覆核；`why` 欄 18/18 是空字串，18 筆的曲風依據 100% 由本層自建**
+
+**收的 10 筆**：① 10 筆裡 1 筆成立（#14 `Easy Listening`，第 3716 條「收」那一段逐字「即使 `styles` 帶 Easy Listening 也收」）；② 0；③ 0；④ 0；⑤ 10 筆裡 1 筆第三形成立（#12，救濟三肢兩過，第 6648 條）。
+⚠ **`styles` 是空陣列的 1 筆**（#13）——照主線第 1936-B 條不在 ⑤ 款射程內。
+⚠ **`styles` 的爵士成分分佈**：`Fusion` ×4、`Jazz-Funk` ×2、`Contemporary Jazz` ×2、`Avant-garde Jazz` ×1、`Swing` ×1（c-187 a 第 6039 條）、`Latin Jazz` ×1、`Modal` ×1（#12 同號另一筆 LP 條目）；`Bossa Nova` 不在清單上（#15／#17 另有 `Latin Jazz`／`Fusion` 撐住）。
+**第 5701 條的甲乙計數（10 筆收件）**：甲合計 84 軌、**嚴格的乙 2 軌**（#15 的〈Zazueira〉〈Pretty World〉）、**自寫人聲曲 7 軌照 (4) 款不算甲**（#1 兩軌、#13 兩軌、#15 三軌）——**乙佔比最高的是 #15：嚴格 20%、從寬 50%**（第 6649 條）。
+**退的 8 筆**：**⑤ 前半 ＋ 三肢全敗 3 筆**（#2／#8／#18）、**⑤ 第三形 ＋ 三肢全敗 1 筆**（#10）、⚠ **⑤ 成立而三肢只缺一或缺二、退在第 1923-B 條演奏主體 2 筆**（#4／#5，第 6629／6630 條）、**第 3716 條退件第 3 項 ＋ 第 1925-B 條盤面零樂手 1 筆**（#16）、**原壓廠牌 1 筆**（#6，曲風其實過得了：`genres` 逐字 `Jazz`、`styles` 逐字 `Post Bop`）。
+⚠ ⚠ **主線第 1978-B 條第 3 點「⑤ 款退件要搭三肢全敗」在本組被守住**：#4 是三肢缺二、#5 是缺一，**本層都不靠 ⑤ 退，改走第 1923-B 條那一肢，理由逐條寫開**——**c-187 a 第 6031 條（YMO，缺二而退）當時沒有把這兩條分開寫，本組分開。**
+
+## 6642　⚠ ⚠ `poolRecheck` 逐格人工覆核：**18 格全部重掃；真撞池 0 筆、漏抓 0 筆；「池中查無此藝人」8/8 全對；「變體全是羅馬字」1 格——這個團真的沒有漢字形**
+
+| status | 格數 | 覆核結果 |
+|---|---:|---|
+| 「同藝人在池中，盤名不同——逐張人工比」 | **9** | **9 格全部不撞**（#1／#2／#3／#7／#9／#12／#14／#16／#17；⚠ #16 那一格列的 30 列是 `Various Artists` 字串的全池命中，逐列看過零筆相關） |
+| 「池中查無此藝人」 | **8** | **8 格全部正確**（#4／#5 `GONTITI`／`ゴンチチ`、#6 `小曽根真`／`Makoto Ozone`、#8 `Marlene` 四形、#10 `くじら`／`Qujila`、#11 `井上鑑`、#13 `安藤まさひろ`／`安藤正容`、#18 `橋本一子`——**每一格兩種文字系統都掃過、子字串誤命中逐列排除**） |
+| ⚠ **「變體全是羅馬字，等於沒查過」** | **1** | **#15 `L.A. Transit`：Discogs 藝人頁 3290784 的 `namevariations` 逐字只有 `L.A.Transit`——這個計畫團真的沒有漢字形**（主線第 1967-B 條：`country=JP` 的團名也可能真的沒有漢字形）；**改以 `members` 欄與盤面的兩位日本核心成員漢字名重掃（`横倉裕` 1 列＝c-185《Love Light》、`吉田和雄` 0 列），非撞池** |
+| 「確定撞池」 | 0 | — |
+
+⚠ **本層主動查了三種漏法**（派工信第二節 (3)）：
+1. **等價形盤名兩邊都試**：#12（`いにしえの響き`／`Klee`／`クレー`）、#14（英文／片假名）、#9（`S·P·O·R·T·S`／`SPORTS`／`スポーツ`）——全池零命中。
+2. **同場錄音的第二張 LP**：#7 是 1985-09-17 新宿 Pit Inn 一晚的單張 CD，Discogs 上兩人沒有第二張同場的碟。
+3. **合輯型撞池**（c-186 b 第 5973 條）：10 筆收件逐筆看 `formats` 與 `notes`，零個 `Compilation`、零個寫出來源 master。
+⚠ **`known-pool-collisions.json`（11 筆）本組零命中**；**`priorRulingHits` 本組 0 筆**。
+
+## 6643　catno 反查與孤兒 release：**10 筆收件逐筆做完；10/10 乾淨命中、差集 0、孤兒 release 0**
+
+| 反查的 catno | 回筆數 | 差集 |
+|---|---:|---:|
+| `ALR-28085` | 4（master ＋ 3） | 0 |
+| `28AH 2093` | 1（⚠ **只有 release、沒有 master**） | 0 |
+| `32DH 360` | 2 | 0 |
+| `28AH 1996` | 3 | 0 |
+| `50DH-441` | 2 | 0 |
+| `28AH 2075` | 4 | 0 |
+| `28AH 2055` | 3 | 0 |
+| `28AH 1992` | 3 | 0 |
+| `YF-7119` | 3 | 0 |
+| `28MX 2533` | 2 | 0 |
+
+⚠ **`Denon` 的 `CD-xxxx` 失效那一條（c-183 第 5715 條）本組不適用**——唯一一張 `house: Denon` 的原壓號是 `YF-`，反查乾淨。
+
+## 6644　⚠ 外國藝人那一關：**本組 6 筆進關——5 筆收（4/4 ×1、3/4 ×1、可判定 3/3 ×1、可判定 2/3 ×2）、1 筆退（2/4）**
+
+| # | 盤 | 觸發原因 | 領銜 | 作曲 | 企劃 | 原盤 | 結論 |
+|---:|---|---|:-:|:-:|:-:|:-:|---|
+| 1 | Sun Sun | 美國製作人 ＋ 銅管 ＋ 兩位美國主唱 | JP | JP | ⚠ 不可判定 | JP | **收（3/3）** |
+| **6** | **After** | **紐約錄音、美國 Columbia 原盤** | JP | JP | 外 | 外 | ⚠ ⚠ **退（2/4）**，第 6627 條 |
+| 7 | Piano Duo Live at Pit Inn | 美國鋼琴手對等聯名 | ⚠ 不可判定 | 外（從嚴） | JP | JP | **收（2/3）** |
+| 11 | TOKYO INSTALLATION | 倫敦錄音、四位英國樂手 | JP | JP | JP | JP | **收（4/4）** |
+| 14 | My One And Only Love | 伴奏全是美國人 | JP | 外 | JP | JP | **收（3/4）** |
+| 15 | De Novo | 洛杉磯錄音、計畫團成員一日一外 | ⚠ 不可判定 | 外 | JP | JP | **收（2/3）** |
+
+⚠ **不可判定格照主線第 1965-B 條第 3 點／第 1971-B 條二之 3：不計分、門檻按比例向下取整**；**本層不引入人頭比或時間比**（第 5680 條）。
+⚠ **`domesticRecheck` 本組兩格要交代**：**#8 `Marlene` 的 `bornOutside` 沒有參與判定**（退在曲風，第 6631 條）；**#7 的 `domesticRecheck` 逐字「artist country=JP」只反映第二方 `山下洋輔`，第一方 `Mal Waldron` 是 `US`**——**機器欄位在聯名上只看得到一方，本層照四項自判。**
+
+## 6645　⚠ Apple 與店面（第 254 條，只寫觀察不寫結論）：**10 筆收件命中 7 筆（其中 1 筆只命中 2022 年的重混版）；403／429 本次工作階段零次**
+
+| 命中／未命中 | 筆數 | 逐筆 |
+|---|---:|---|
+| **命中** | **6** | #1（1535035066，14 軌＝CD 版）／#9（1538800822）／#12（1771360784，和文與羅馬字兩種都中）／⚠ **#13（1537081100——`安藤まさひろ` 查 0、`安藤正容` 才中）**／#14（6791228263）／#15（1561577033） |
+| ⚠ **只命中重混版** | **1** | **#11：《TOKYO SPATIAL INSTALLATION (2022 version)》（1653352611），不是 1986 年的原混音** |
+| **未命中** | **3** | #3（和文 0、羅馬字回的是 `Teddy Wilson & 北村英治《Live Session》`）／#7（和文回 山下洋輔 2020 年的《A Tribute To Mal Waldron》、盤名查詢 8 筆全錯）／#17（兩種 0） |
+
+⚠ **`resultCount > 0` 不等於命中**（第 1968-B 條那一族）：#12 的和文查詢 25 筆裡 24 筆是古典合輯、#14 的和文查詢 25 筆裡 24 筆是 宇多田ヒカル 等。
+⚠ **退件側順手記**：#2／#4／#5／#6 在 Apple jp 都有（#6 的 ℗ 逐字 `1986 Columbia Records`——**第 6627 條的第四個佐證**）；#8／#10／#16／#18 查 0。
+⚠ **節流 1.5 秒、共約 26 次查詢，403／429 零次。**
+
+## 6646　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有 83 個一字未動**
+
+**本層照 c-187 b 第 6072 條的做法，把十張卡七欄（`label`／`why`／`risk`／`mbNote`／`queryAlias`／`album`／`artist`）逐字串以 `qa-batch.mjs` 第 43 行的 `SIMP` 字表、先剝白名單 83 個字串再掃**——**70 格裡命中 1 處**：**#12 `why` 的曲題〈さえずり機会〉的 `会`**。
+⚠ ⚠ **本層不 append 它**：**那一格本身可疑——Klee 原畫題 `Die Zwitscher-Maschine` 的意思是「機械」，而 Discogs 各版逐字都是「機会」**，本層沒有盤面影像可核，**照主線第 1983-B 條「白名單 append 之前，先確認那個字串是研究層定案過的寫法」**，**交給研究層回原盤核**（它在 `〈〉` 裡，`qa-batch` 的 `stripLegit` 會先剝掉，不會誤報）。
+
+## 6647　⚠ ⚠ 邊界收件（一）：`井上鑑 —《TOKYO INSTALLATION》`——**曲風欄與收件款字面全過，但這是一張「器樂 CD ＋ 畫冊」的藝術企劃盤，演奏主體是 fusion 化的混合編制**（**建議主線覆核**）
+
+**事實**：`CBS/Sony 50DH-441～2`（CD `32DH441` ＋ 畫冊 `18DH442`），十二軌分三座「庭」；**作曲 井上鑑 八軌、客座作曲 浜田省吾 兩軌、尾崎豊 兩軌**；編制 井上鑑（鍵盤）、山木秀夫（打擊）、川村昌子 與 栗林秀明（箏／十七絃箏）、Bill Bruford（Simmons）、Mark Smith（貝斯）、Alan Murphy／Nico Ramsden／今剛（吉他）、苅田雅治（大提琴）、Momo（Chorus）、QX1 程式；基本軌在倫敦 Sarm West 與 Utopia 錄。Discogs `genres` 逐字 `Jazz`／`Rock`、`styles` 逐字只有 `Fusion`。
+
+**判收的三項依據**：
+1. **收件款三肢（第 3753 條）字面全過**：`genres` 含 Jazz、`styles` 不含 Easy Listening／Kayōkyoku、十二軌全是為本盤新寫的器樂曲；**①②③④⑤ 一款都不成立**。
+2. **第 5701 條乙 0**：**客座兩人的四軌逐題查過，指不出任何一首是他們既有的歌**（兩人的 Discogs 藝人目錄 215／105 筆逐筆比過、零同名；obi 逐字稱兩人為「ゲスト・コンポーザー」；四軌零 `Lyrics By`／`Vocals`）——**照主線第 1969-B 條一之 (i) 舉證責任在退件方，不計入乙。**
+3. **與 c-187 b 第 6057 條退掉的 `大村憲司《春がいっぱい》` 不同形**：那一張是 YMO 全員 ＋ 領銜者 `Vocals` ＋ 十軌五軌英語詞 ＋ 廠牌自己收進《テクノ・ポップ大全集》；**本盤零 `Lyrics By`、零領銜者 `Vocals`、`styles` 只有 `Fusion`、MB tags 逐字 `jazz(1)`／`rock(1)`**。
+
+⚠ **反轉條件**：**若主線認為「箏 ＋ Simmons ＋ 程式的藝術企劃」不構成第 1925-B 條的爵士編制，退的是本卡**（改一個收退值，可逆），**並登記成撈回候選**。
+⚠ **給下游**：**Apple jp 只有 2022 年的空間音響重混版**（《TOKYO SPATIAL INSTALLATION (2022 version)》），**掛試聽前要先知道那不是 1986 年的混音**；**Bill Bruford 的 credit 是 `Electronic Drums [Simmons]`，下游不要寫成「鼓」。**
+
+## 6648　⚠ ⚠ 邊界收件（二）：`加古隆 —《いにしえの響き -パウル・クレーの絵のように-》`——**⑤ 第三形照原壓字面成立（`styles` 只有古典桶的 `Modern`），回第 3716 條三肢逐肢覆核後「兩肢過、不是全敗」而收**（**建議主線覆核**）
+
+**事實**：`CBS/Sony 28AH 2075`，無伴奏鋼琴獨奏十二軌、**每一軌以一幅 Paul Klee 的畫命題**（和文 ＝ 德文原畫題）；錄音 1986-04-24／25 荒川 Sun Pearl（數位）。**原壓 5144808 的 `genres` 逐字 `Jazz`／`Classical`、`styles` 逐字 `Modern`；同號另一筆 LP 條目 35915320 的 `styles` 逐字 `Modal`／`Contemporary`**；MB tags 空。
+
+| 第 3716 條的三肢 | 本盤 |
+|---|---|
+| 演奏主體是爵士編制 | ✅（從寬）鋼琴獨奏，領銜者是池中已有兩列爵士卡的自由爵士鋼琴手（c-87 `高木元輝＝加古隆カルテット`、c-187 與 富樫雅彦 的二重奏）；**與 c-176 收的 `深町純《At Steinway》` 兩張同形** |
+| 曲目以爵士標準曲或原創為主 | ✅ 十二軌全是原創 |
+| `styles` 的爵士成分 | ⚠ 原壓條目 ❌（`Modern`）／同號另一條目 ✅（`Modal`） |
+
+**→ 照主線第 1978-B 條第 3 點「前半即足，但必須搭三肢全敗」，本盤不是全敗，不成立退件。**
+⚠ **反轉條件**：**若主線把第一肢判成 ❌（「以畫作命題的現代鋼琴獨奏」不是爵士編制），本卡就變成三肢缺二**——**照 c-187 a 第 6031 條的先例退，可逆。**
+⚠ **兩個 LP 條目的 `styles` 不同（`Modern` vs `Modal`／`Contemporary`），本層讀的是 master 的 `main_release`（5144808）**——c-187 a 第 6051 (3) 條要求「引曲風欄時一律要指明是哪一筆 release id」，本卡兩筆都寫了。
+⚠ **A3 的和文題〈さえずり機会〉可疑**（見第 6646 條）——**研究層請回原盤核。**
+
+## 6649　⚠ ⚠ 邊界收件（三）：`L.A. Transit —《De Novo》`——**向 Sérgio Mendes & Brasil '66 致敬的巴西曲目企劃，第 5701 條從寬算乙正好 50%；演奏主體是洛杉磯的爵士／fusion 錄音室班底**（**建議主線覆核**）
+
+**事實**：日本企劃的錄音室計畫團（Discogs 藝人頁逐字「Studio concept with a Japanese production release in 1986, including standard classics from Brasil and new compositions」），製作 吉田和雄 與 Daihachi Kojima、編曲 横倉裕；**1990 年墨西哥授權版的盤名逐字《De Novo. Un Tributo A Sergio Mendez》**。
+
+### 一、第 5701 條的甲乙計數（主線第 1962-B 條巴西曲目兩堆，判不出來當乙）
+
+| 軌 | 曲 | 判 | 依據 |
+|---|---|---|---|
+| A1 | Mas Que Nada（Jorge Ben） | **甲** | **Dizzy Gillespie 1967 年 Impulse!《Swing Low, Sweet Cadillac》收過**（Discogs master 260681 逐字〈Mas Que Nada (Pow, Pow, Pow)〉） |
+| A2 | Wave（Jobim） | 甲 | Jobim 一系 |
+| A3 | Zazueira（Jorge Ben） | **乙** | 1968 年的 MPB；查到的翻唱是 Herb Alpert & The Tijuana Brass 與 Brasil '66 系，**判不出進沒進爵士曲目表** |
+| A4 | How Insensitive（Jobim／de Moraes） | 甲 | Jobim 一系 |
+| A5 | Muito Mais（Werneck／横倉裕） | 不算甲 | 為本盤新寫、帶詞（第 5701 條 (4) 款） |
+| B1 | Agua De Beber（Jobim／de Moraes） | 甲 | Jobim 一系 |
+| B2 | Pretty World（Adolfo／Gaspar，英詞 Bergman） | **乙** | 〈Sá Marina〉英文版；Discogs 上查到的是 Brasil '66 的單曲（`genres` `Latin`／`Pop`） |
+| B3 | Anything Can Happen（Kojima／Vester／Markowitz） | 不算甲 | 為本盤新寫、帶詞 |
+| B4 | Summer Without You（Lani Hall／横倉裕） | 不算甲 | 為本盤新寫、帶詞 |
+| B5 | Tristeza（Haroldo Lobo／Niltinho） | **甲** | **Oscar Peterson Trio 1970 年 MPS《Tristeza On Piano》的標題曲**（Discogs master 186030） |
+
+**→ 嚴格算乙 2/10＝20%；從寬把三軌自寫歌也算乙＝5/10＝50%，照第 5701 條逐字「> 一半」才退——落在收的那一邊**，**與 c-186 b 第 5988 條《Bos & Boz》（3/6＝50%）、c-183 b 第 5710／5711 條同一格，同進同退。**
+⚠ **反轉條件**：**〈Mas Que Nada〉或〈Tristeza〉任一首若被改判乙，從寬算法變 6/10 > 一半 → 退**；兩首的甲都靠一張具名的爵士前作支撐，master 號已寫明。
+
+### 二、第 1923-B／1925-B 條「演奏主體」
+
+**掛名是計畫團、不是歌手**；盤面把三位女聲與 横倉裕 的人聲記在 `Musician [Musicians], Vocals [Vocal]` 同一欄、與樂手並列，**沒有任何一位歌手領銜**；伴奏 Tom Scott／Oscar Castro-Neves／Abraham Laboriel／Alex Acuña／Paul Jackson Jr.／Paulinho da Costa；`styles` 的 `Latin Jazz` 是爵士成分——**本層判那一肢成立**，**與 `Hi‐Fi Set《1&2》`（人聲組掛名、爵士樂手是伴奏）不同形。**
+⚠ **反轉條件**：**若主線認為「Brasil '66 形式的女聲 bossa 企劃」本身就是人聲盤，退的是本卡（可逆）。**
+
+### 三、廠牌與身分
+
+**原壓字標 `Interface`、同日 CD 另有 `Denon`，照 c-189 b 第 6582 條過關**（第 6639 條）；**第 4106 條可判定 3 票 2/3**（第 6644 條）；**「變體全是羅馬字」那一格：這個團真的沒有漢字形**（第 6642 條）。
+
+## 6650　⚠ ⚠ 立判準／實測：**`CBS/Sony` 的號段表再加兩格——`28AP 3xxx` 是美國 CBS 的授權線（要逐張回查）；`Epic/Sony`（`28・3H`／`32・8H`）依列舉檔的定義算在 CBS/Sony 那一格裡**（**建議主線覆核**）
+
+### 一、`28AP 3xxx`
+
+**本組 #6 的 `28AP 3192` 與同號段鄰號四張逐號反查**（第 6627 條）：`3191` Boys Don't Cry、`3193` Chuck Mangione、`3194` Branford Marsalis、`3195` Neil Diamond——**全是美國 CBS 的原盤、日本授權發行**，而 #6 本身 ℗ 逐字 `CBS Inc.`。
+⚠ **這與 c-186 b 第 5973 條的 `日野皓正《Horizon》`（`25AP 1731`，日本原盤）同樣是 `AP` 字母**——**所以 `AP` 這兩個字母不是判準，要看號段與 ℗**；**主線第 1986-B 條「前兩位是定價碼」只解釋了 `25`／`28`，後面的字母與號段範圍另有分工。**
+**→ 建議簡報第一節 (1) 的 CBS/Sony 號段表改寫成**：**`SOPL-`／`SOPN-`／`SOCM-`／`25AH`／`25AP 17xx`／`27AH`／`28AH`／`30AH`／`32DH`（CD）查過都是日本原壓；`SONP-`／`SOPM-`／⚠ `28AP 3xxx` 要逐張回查——判定看 ℗ 是 `CBS/Sony Inc.` 還是 `CBS Inc.`。**
+⚠ **判定捷徑（零成本）**：**原壓 `companies` 欄的 `Phonographic Copyright (p)` 是 `CBS Inc.` 時，那一張幾乎一定是美國原盤**（本組 10 張 CBS/Sony 日本原壓的 ℗ 全是 `CBS/Sony Inc.`，#6 是唯一的 `CBS Inc.`）。
+
+### 二、`Epic/Sony`
+
+**本組三張（#4／#5 GONTITI、#10 くじら）的 `labels` 欄逐字是 `Epic`（Discogs `labels/1005`，美國 Epic 的通用字標、`parent_label` 逐字 `Sony Music Entertainment`），`companies` 與同年 CD 的字標逐字是 `Epic/Sony`**（`labels/37615`，`profile` 逐字「Brand used by Epic/Sony Inc. between August 1978 and March 1988」、`parent_label` 逐字 `Epic/Sony Inc.`；`labels/321438` 的 `profile` 逐字「Japanese record company founded in August 1978. In March 1988 it was merged into CBS/Sony Group Inc.」）。
+**→ 嚴格照 c-187 b 第 6076 條（`parent_label` 要是十五家之一）讀，`Epic/Sony Inc.` 本身不是 `CBS/Sony`**；**但 `enum/jp-2.md` 的總表把 CBS/Sony 那一格逐字定義成「CBS/Sony 3225、Epic/Sony 547、Inc. 3、SP 6」——本線的入口本來就把 Epic/Sony 算進來**，**本層照列舉檔的定義判在門內。**
+⚠ **本組三張都退在曲風，這一格沒有決定性**；**但本線後面若有 Epic/Sony 的爵士收件，這一格要先定**——**可逆（改的是門的定義一句話，不是卡池結構）**。
+
+## 6651　⚠ ⚠ 同碟／同場／曲題比對的固定動作：**同組 18 張全是 1986 年，同軌數的組合逐組比過零同碟；⚠ 抓到 1 組「盤名 ＝ 同組另一張卡的曲題」**
+
+1. ⚠ ⚠ **`笠井紀美子《My One And Only Love》`（#14）的盤名 ＝ `北村英治《Swingin' Street》`（#3）A4 的曲題**——**同一年、同一家廠牌（CBS/Sony `28AH 1992` 與 `28AH 2093`）、同一首曲子的兩份不同錄音**（#14 A1 是人聲 ＋ 美國班底、#3 A4 是器樂 ＋ 日本班底）；**兩張卡的 `risk` 已互相指向**；**`chk-prop` 的複合鍵、第五道（盤名撞 apex）與 `dedup` 都看不到這個形狀。**
+2. **同軌數組合逐組比過曲題**（派工信第二節 (6)）：**9 軌四張**（#2 CD／#9／#13／#14）、**10 軌四張**（#3／#8／#15／#18）、**12 軌四張**（#4／#5／#11／#12）——**曲題逐軌零重疊，不是同碟**。⚠ **#9 與 #13 是同一位吉他手（安藤まさひろ）同年同廠的團體盤與個人盤，九軌零重疊，#13 不是 THE SQUARE 舊曲的重錄。**
+3. **同批跨組曲題互掃**（主線第 1987-B 條固定動作）：**a 組 slice 的 `THE SQUARE《R·E·S·O·R·T》`（九軌與另一版八軌）、`《The Square Live》`（四軌）、`笠井紀美子《WATCHING YOU》`（九軌）、`カリオカ《Kartik》`（九軌）逐軌對過 b 組收件的曲題，零重疊**；⚠ **a 組 `prop-a.json` 本層只讀了掛名與盤名兩欄（11 張），沒有讀它的 `why`／`risk`。**
+4. **池中曲題撞盤名**：**#15 A2〈Wave〉＝ 池中 seed `Antônio Carlos Jobim《Wave》1967`**；**#3 B5〈Body And Soul〉＝ 池中六張《Body and Soul》（含 c-87 `Takashi Furuya` 1983）**——**下游引用都要帶掛名與年份。**
+5. ⚠ **「同一張碟兩個沒折疊的 RG 分到前後兩批」（派工信一之二）**：**本組 10 張收件在 c-188／c-189 的卡單與 prop 裡掛名＋盤名零撞**（`chk-prop` 串跑的全批 `dedup-crossbatch`：154 批、5771 張，跨批撞卡 0，同一結論）；**本組沒有一張的錄音早於 1985 年，不像會與前一年段重疊。**
+
+## 6652　⚠ Discogs 與 MB 的技術性失效，本組踩到六個
+
+1. ⚠ **和文 `q=` 查詢回大量雜訊**：`q=安藤まさひろ` 回 **344 筆**（Marlene／THE SQUARE／郷ひろみ／浜田省吾⋯），**改用羅馬字 `q=Masahiro Andoh Melody Book` 一次 5 筆全中**（c-183 第 5715 條第 4 點的再確認）。
+2. ⚠ **和文曲題的 `track=` 反查在 Discogs 上完全失效**：#11 的四個和文曲題各回同三筆 Unicode 測試碟（`ちゅううううううう!!!!!! - Unicode` 等）；**英文題 `track=Station Only For Myself` 則只回本盤三版**——**曲題反查要用英文題。**
+3. **`catno=` 回 release 而沒有 master**（#3 `28AH 2093`，c-187 a 第 6041 條 (b)）——從 `master_id` 取。
+4. **同一個 catno 兩筆 Discogs 條目而 `styles` 不同**（#12 `28AH 2075`：`Modern` vs `Modal`／`Contemporary`）——引用時寫明 release id。
+5. **MB 的日期欄錯**：#13 的 `CSCL 1688` 標 1986（號段是 1990 年代），同組 #9 同號段的再發 MB 自己標 1991-03-21。
+6. **MB 只建 CD、沒建 LP 原壓 4 筆**（#9／#12／#13／#15）——**MB 最早的 release 是同日或同年 CD，盤名與年份不受影響，但原壓 catno 要從 Discogs 取。**
+⚠ **Discogs 全程 200、免 token；MB 守 1 req/s、UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，503 零次；Apple 節流 1.5 秒、403／429 零次；ja 維基 `action=raw` 通（GONTITI 條目）。**
+
+## 6653　號段實測（給 c-191 與後續補遺）：**本組五家八個號段**
+
+| 號段 | 廠牌 | 本組筆數 | 實測 |
+|---|---|---:|---|
+| `ALR-28xxx` | Alfa | 2 | 2/2 日本原壓（`Alfa` 1978 年界線之後） |
+| `28AH 1xxx`／`28AH 2xxx` | CBS/Sony | 6 | 6/6 日本原壓、℗ 全是 `CBS/Sony Inc.` |
+| `32DH`／`50DH` | CBS/Sony | 2 | **首發只有 CD 的兩張**（#7 `32DH 360`、#11 `50DH-441～2`＝CD `32DH441` ＋ 畫冊 `18DH442`），日本原壓 |
+| ⚠ ⚠ `28AP 3xxx` | **CBS/Sony（美國 CBS 授權線）** | 1 | ❌ **美國 Columbia 原盤的日本版**（第 6650 條） |
+| `28・3H`／`32・8H` | Epic/Sony | 3 | 日本原壓；**門的定義見第 6650 條** |
+| `YF-7xxx` | `Interface`（日本コロムビア） | 1 | 日本原壓；**`YF-` 與 `Better Days` 共用，判定看 `labels` 欄的字標**（第 6639 條） |
+| `GWL-1xxx`／`ZL-` | `Panam`（Nippon Crown） | 1 | 日本原壓；`series` 逐字「Sound Image Collection」（BGM 企劃線） |
+| `28MX 25xx` | Polydor K.K. | 2 | 日本原壓（⚠ 主線第 1934-B 條五的 `DOMO 28MX 2504` 也在這個號段） |
+
+## 6654　交件前自跑的結果與第 315 條結算
+
+1. **`node batch-progress/c190/chk-prop.mjs b`** → **`prop-b.json：10 張、10 位｜標記 0`**。
+   ⚠ **「（報告）含日文分隔符」那一行本組 0 次**（唯一的聯名用 ` & `）。**第五道（盤名撞 apex）本組 0 報**——**而本層人工掃出 3 處要帶掛名與年份的曲題／盤名**（第 6651 條第 1、4 點）。
+   ⚠ ⚠ **第一次跑報了 1 筆「共用目錄號（只報不擋）」**：#13 的 `label` 欄為了說明 MB 日期錯而逐字寫了 #9 的再發號——**照 c-183 第 5715 條第 7 點「`label` 欄不要逐字寫別張卡的目錄號」改成代稱，重跑後 0。**
+2. **`node batch-progress/dedup-crossbatch.mjs c190`** → **跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0**（該次讀到 a 組 11 張 ＋ b 組 10 張）；`chk-prop` 串跑的全批版本 154 批、5771 張，同樣四項 0（只報不擋的三筆是本機已知的舊條目）。
+3. **第 315 條結算**：**收 10 ＋ 退 8 ＝ 18 ＝ slice 的 `g === "b"` 筆數，平。**
+4. **`desc-tools/jp-proper-names.json`**：**append 0 個、既有 83 個一字未動**（第 6646 條）。
+5. **邊界**：**本層只動了 `batch-progress/c190/prop-b.json` 與本檔（`rulings.md`，以 append 寫入）**；**`prop-a.json` 只讀了掛名與盤名兩欄做跨組互掃，沒有寫**；**`seed_cards.json` 只做唯讀掃描**（23,530 列＝seed 17,248 ＋ 各批卡單）；**`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore 一次都沒有碰；零 git 操作。**
+6. ⚠ **append 前後自驗**：寫入前 `ls` 與 `git show HEAD:` 兩者都看過（骨架 11 行、a 組尚未 append）；**只在檔尾加本段**，寫入後以 `grep -c '^## 66[2-5][0-9]'` 驗本段條數、並確認骨架與（若已存在的）a 組標題都還在。
+
+## 6655　⚠ ⚠ 給主線與後續批次的清單
+
+### 建議主線優先覆核的六件（此處只列索引）
+
+1. ⚠ ⚠ ⚠ **第 6650 條——`CBS/Sony 28AP 3xxx` 是美國 CBS 授權線，建議加進簡報第一節 (1) 的 CBS/Sony 號段表；判定捷徑是原壓 ℗ 是 `CBS Inc.` 還是 `CBS/Sony Inc.`。**
+2. ⚠ ⚠ **第 6650 條——`Epic/Sony` 算不算 CBS/Sony 那一格**（本層照 `enum/jp-2.md` 的定義判在門內；本組三張都退在曲風，沒有決定性）。
+3. ⚠ ⚠ **第 6639 條——`Interface` 字標三張一起定**：**本組 #15（CD `labels` 欄有 `Denon`，收）、同批 a 組第 6602 條《As If…》（`labels` 欄沒有 `Denon`，退）、c-189 b 第 6582 條《Easy to Love》（有，收）——分界是「同日 CD 的 `labels` 欄有沒有 `Denon`」，三張同一把尺。**
+4. ⚠ ⚠ **第 6647／6648／6649 條——三筆邊界收件**（`井上鑑《TOKYO INSTALLATION》`／`加古隆《いにしえの響き》`／`L.A. Transit《De Novo》`），反轉條件逐條寫死、都可逆。
+5. ⚠ **第 6629／6630 條——GONTITI 兩張退在第 1923-B 條演奏主體（⑤ 只缺一／缺二，不靠 ⑤ 退）**；**#5《冬の日本人》是本組最可能被翻的退件，要翻就兩張一起翻。**
+6. ⚠ **第 6627 條——「日本藝人在美國廠牌的原盤、日本發授權版」（`小曽根真《After》`）是 jp-1、jp-2 兩條線都不收的第三種形狀**；**小曽根真 1984 年的 Columbia 首作（Apple jp 的 ℗ 逐字 `1984 Columbia Records`）也是同一種，要不要另立補遺請主線定。**
+
+### 給 c-191 與後續補遺的操作提醒（八條）
+
+1. ⚠ ⚠ ⚠ **CBS/Sony 的碟先看原壓 `companies` 的 ℗**：`CBS/Sony Inc.`＝日本原盤、`CBS Inc.`＝美國原盤授權（第 6650 條）——**比號段快，而且號段的字母（`AP`）兩種都有。**
+2. ⚠ ⚠ **⑤ 款成立而三肢只缺一或缺二時，不要靠 ⑤ 退**（主線第 1978-B 條第 3 點寫死要全敗）——**要退就走第 1923-B／1925-B 條那一肢，把理由分開寫**（第 6629／6630 條的寫法）。
+3. ⚠ **`Denon` 的原壓字標是 `Interface` 時，打 `labels/108958`（parent 日本コロムビア）並看同日首發的 CD 有沒有 `Denon`**——有就照 c-189 b 第 6582 條過關；**`YF-` 號段與 `Better Days` 共用，判定看 `labels` 欄的字標，不看號段**（第 6639 條）。
+4. ⚠ ⚠ **中點字元三家三種**（MB `·` U+00B7、Discogs `･` U+FF65、Apple `・` U+30FB）——**盤名取 MB 最早 release 的那一種，另兩種進 `queryAlias`；THE SQUARE 1985–86 年的《R·E·S·O·R·T》《S·P·O·R·T·S》是一組**（第 6636 條）。
+5. ⚠ **Discogs 的和文 `track=` 反查全滅、和文 `q=` 雜訊極大**——**曲題與掛名一律先用羅馬字／英文題查**（第 6652 條）。
+6. ⚠ **首發只有 CD 的碟在 1986 年段開始出現**（#7、#11）——**版本表的第一筆就是 CD，`label` 欄要寫明「首發只有 CD」，不要去找不存在的 LP。**
+7. ⚠ **掛名的 MB credit 形與實體名不同時（`安藤まさひろ` vs `安藤正容`），取 credit 形並把實體名放進 `queryAlias`**；**下游同一個人的下一張碟要照同一個形接上**（見「給本機」第 1 點）。
+8. ⚠ **`versions` 全表的四種漏源本組再中**：同期卡帶 6、同號 Promo 6、同號兩筆條目 2、Discogs 不收的數位版 6（第 6638 條）；**平均低估率 65%，本線以來仍未下降。**
+
+### 登記給主線與後續批次的候選（若改判就從這裡撈回來）
+
+- **`Epic/Sony 32・8H-89`／LP `28・3H-252`**（`GONTITI《冬の日本人》`，1986-11-01）——**`styles` 兩項爵士成分、第 3716 條三肢只缺演奏主體那一肢**；**若主線把「原聲吉他二重奏 ＋ 程式」算成爵士編制，這一張第一個撈回來，並一起撈 `28 3H-213`《SUNDAY MARKET》**（第 6629／6630 條）。
+- **`Alfa ALR-28081`**（`佐藤博《SOUND OF SCIENCE》`，1986）——**原壓廠牌在十五家內，退的是 ⑤ 前半 ＋ 三肢全敗**；**與 c-187 a 收的《Orient》同一位藝人、同一條判準的兩面**（第 6628 條）。
+- **`Polydor 28MX 2530`**（`橋本一子《Vivant》`，1986）——**領銜者是爵士鋼琴手、原壓廠牌在門內，退的是這張 new wave 歌曲盤本身**（第 6634 條）。
+- ⚠ **`CBS/Sony 28AP 3192`／`Columbia FC 40240`**（`小曽根真《After》`，1986）——**不登記成 jp-2 的撈回候選**（原壓不在十五家）；**若主線另立「日本藝人的美國原盤」補遺，這一張與 小曽根真 1984 年的 Columbia 首作一起進**。
+- **`CBS/Sony 28AH 2082`**（`Marlene《JUST A WOMAN》`）與 **`Epic 28・3H 247`**（`くじら《Tamago》`）、**`Panam GWL-1002`**（`Various《NAVIGATION TO ISLANDS》`）——**三肢全敗或多條退件理由同時成立，不建議撈回。**
+
+### 給本機的（不在雲端做）
+
+1. ⚠ ⚠ **`安藤まさひろ`（本卡掛名，1986 年盤面的 credit 形）與 `安藤正容`（MB 實體名、Discogs `realname`、Apple 現行掛名）是同一個人的兩個時期的寫法**——**c-189 b 的 `THE SQUARE《Adventures》` 在正文裡寫的是 `安藤正容`**；**建議記進 `audits/pool-artist-name-splits.md`（與 `本田竹曠`／`本田竹広` 同族），下一張他的碟照哪一形掛要一起定。**
+2. ⚠ **兩串團名／聯名入池的藝人軸代價**（第 6640 條）：`Mal Waldron & 山下洋輔`（掃不到 `Mal Waldron` 8 列、`山下洋輔` 26 列）、`L.A. Transit`（掃不到 `横倉裕` 1 列）。
+3. ⚠ **`加古隆` 裸名串本卡新立**——**接上 c-187 的 `富樫雅彦, 加古隆` 與 c-87 的 `高木元輝＝加古隆カルテット`**（三串並存，不收斂）；⚠ **Discogs 上同廠相鄰的《Poésie》`28AH 2110`（1986）與《Scrawl》`28AH 2220`（1987）是他的下一批碟**，本批 slice 沒有這兩張（c-191 的 slice 本層沒有讀），若要補從這裡撈。
+4. ⚠ **`井上鑑` 本卡新立**；⚠ **他的 Discogs `namevariations` 混著別人的名字（`佐藤準`／`Hiroshi Inoue`），只能採 `realname`。**
+5. ⚠ **`苅田雅治`（大提琴）的 Discogs 實體名被建成 `Masaharu Kanda`（讀音錯），`realname` 是 `苅田雅治`、`namevariations` 有 `Masaharu Karita`**——**任何以 Discogs 實體名為鍵的羅馬字比對都會把他當成「神田」**；建議記進 `name-corrections.json` 的觀察名單（本層不動那個檔）。
+6. ⚠ **`enum/jp-2.md` 可劃掉或更正的格**：**CBS/Sony 那一段逐字「THE SQUARE 12」的一張（#9 收）、「笠井紀美子 11」的一張（#14 收）、「Marlene 8」的一張（#8 退，曲風）**；**Polydor 那一段逐字列的「Carioca」一張（#17 收）**；**Alfa 那一段「Casiopea 缺 15」的一張（#1 收）、「佐藤博 8」的一張（#2 退）**。
+7. ⚠ **`audits/foreign-artist-japan-productions.md` 本組零新增**（#8 `Marlene` 退在曲風，不是四項；#6 是日本藝人，不屬那一支）。
+8. ⚠ **`audits/between-the-lines-candidates.md` 建議加一格「丙族之二」**：**`小曽根真《After》`——日本藝人、美國廠牌、美國原壓，MB 把它掛在 `CBS/Sony` 實體上才進了 jp-2 的 slice**（與 c-181 `Frank Potenza《Soft & Warm》`「不是日本盤」同一族，但藝人是日本人）。
+
+**編號區間結算**：本節用到 **6626–6655（共 30 條），區間用滿、未越界（a 組 6596–6625）。**
