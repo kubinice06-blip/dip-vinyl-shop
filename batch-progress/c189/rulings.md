@@ -8,6 +8,8 @@
 > ⚠ **append 之後自己驗一次**：`grep -c '^## '` 兩組的條數都在，而且對方的標題還在。
 
 > **預留（2026-09-27）：研究 a 6716–6745、b 6746–6775。**
+> **預留（2026-09-27）：鉤子 6896–6935。**
+> **預留（2026-09-27）：寫作 a 6936–6950、b 6951–6965。**
 ---
 
 
@@ -1083,3 +1085,161 @@ Discogs releases/18550849（Artie Shaw & His Orchestra《Back Bay Shuffle / Jung
 4. **邊界**：只寫了 `desc-tools/batches/research/c189-a.json`（新增）、本檔（append）、`jp-proper-names.json`（append 2）；卡單／prop／`previews.json`／`caa.json`／`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore 零寫入；零 git 寫入操作。
 
 **編號區間結算**：本段用 **6716–6733（18 條）**，未越界（b 組 6746–6775）。
+
+---
+
+# b 組研究層（6746–6775）｜c-189 b 組 10 張（收件全表）｜研究層｜2026-09-27
+
+輸入 `desc-tools/batches/cards/c189-cards.json` 的 `group === "b"` 10 筆；輸出 `desc-tools/batches/research/c189-b.json`。
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）→ `CURATION-BRIEF-jp2.md`（全檔）→ `CURATION-BRIEF-jp1.md` 第〇節 → `CURATION-BRIEF-bluenote-post1985.md` 附錄二；主線第 1934-B…1994-B 條；本檔策展兩組（6536–6595）與 a 組研究層（6716–6733）全讀；c-178 研究層兩段看過查法。同掛名前批研究稿讀過：c-185 b／c-186 a b／c-187 a b／c-189 a 的 THE SQUARE、高中正義、カリオカ、Casiopea，c-177 b 的 井上敬三，c-177 b／c-178 a／c-179 a／c-183 b 的 Native Son／本田竹広。⚠ 引用一律「c-18X 第 NNNN 條」。
+
+## 6746　總表：**10 張、facts 118 條（10–12 條／張），full 10、thin 0；推翻策展層 14 處（判斷 6、人名 5、版本數 2、盤內曲題 1），另定案 1 處（#3 發行月）**
+
+| # | 卡 | facts | 本層最值錢的一格 |
+|---:|---|---:|---|
+| 1 | THE SQUARE《Adventures》 | 12 | 近藤浩治 2001 年受訪說《超級瑪利歐兄弟》地上關卡配樂「可能受 T-SQUARE 影響」（沒點名曲子）；〈Night Dreamer〉因 伊東 遲到改成鋼琴曲；サントリーホワイト 廣告 |
+| 2 | THE SQUARE《Stars and the Moon》 | 12 | 刻意做給秋冬的一張；⚠ 開場曲的作者 久米大作 已離團（6748）；〈遠雷〉的曲名借自 Andrew Wyeth 的畫 |
+| 3 | 伊東たけし《Dear Hearts》 | 12 | ⚠ 〈Say It Again〉是既有 R&B 曲，三年後的暢銷版由本盤開場曲的共同作曲者 Aaron Zigman 製作（6750）；讀了 渡辺貞夫 的自傳才改吹中音薩克斯風 |
+| 4 | 大野えり with GJT《Easy to Love》 | 12 | 前六張在 Better Days、本盤轉 Interface（原廠頁）；名古屋御園座演員投宿的旅館長女；解說 野口久光（6752） |
+| 5 | 井上敬三《Boys, Be Ambitious!》 | 12 | 錄音是兩段、在 CBS/Sony Studio（6753）；1984 年 DOMO 的 LP 裡唯一別人掛名的一張；盤名的出處 |
+| 6 | 高中正義《夏・全・開》 | 12 | 上市時名義是「高中正義 and 楽園ガールズ」；為本盤買了還沒 MIDI 的 Oberheim 與鼓機；唯一真人樂隊的是他伴奏團裡的人組的 Orquesta Del Sol |
+| 7 | カリオカ《Pale Moon》 | 12 | 封套攝影 加納典明、另出影像版（6755）；日文副題「子供の頃」「絃」「落葉樹」「雨」 |
+| 8 | Native Son《Gumbo》 | 12 | ⚠ 〈Lazy Dream〉〈Calypso Street〉是 本田竹広 的舊曲重錄，兩張前作都在池中（6756） |
+| 9 | Casiopea《Casiopea Live》 | 10 | 新國技館 1985-01-09 才啟用；⚠ 〈Galactic Funk〉的初出是池中《Cross Point》（6757） |
+| 10 | Casiopea《Halle》 | 12 | 初版 LP 附一副十三張專輯封面的撲克牌；⚠ CD 第 6 軌〈Matsuri-Bayashi〉作曲 野呂一生（6758） |
+
+**facts 零處點名資料來源平台**（主線第 1982-B／1985-B 條；`src` 照寫）；**facts 零處寫「首演／首錄」**（#9／#10 的〈Marine Blue〉見 6759）。
+
+## 6747　推翻：`THE SQUARE《Adventures》` 版本數 **15 → 13**（策展層自註的那一格，本層定案）
+
+MB 兩筆 2015-07-08 Digital Media 與 Discogs 兩筆 File 是**同兩份數位檔**：(1) MB disambiguation 逐字 `24bit/96kHz`／`DSD(DSF) 1bit/2.8MHz` 對 Discogs `formats.text` 逐字 `96,0 kHz/24 Bit`／`2.8 MHz/1 Bit`；(2) Discogs 兩筆 notes 逐字「2013 Remaster done for the 30th anniversary」「2013 DSF Remaster done for the 30th anniversary」（2023 只是 mora 上架日）；(3) Apple jp 1538797579 封面檔名逐字 `jacket_MHXX00874B00Z`＝MB 那一筆的號、℗ 2013。→ 聯集 13。ja 維基外部連結另有 SACD 商品碼 `VRGL000008012`（無日期）——照 a 組第 6726 條不計。
+
+## 6748　推翻兩處：`THE SQUARE《Stars and the Moon》`
+
+1. 卡單「八軌**全部是團員的曲**」——〈いとしのうなじ〉作者 久米大作 **已離團**（ja 維基「久米大作」逐字 1981 年離團；本盤條目寫 1982——兩條目互相矛盾，facts 取本人條目並掛在那個來源上）。曲子是他在團時的現場曲、到本盤才收錄，他本人沒參加演奏。甲乙不變。
+2. 卡單寫和文題「愛しのうなじ」——**無任何來源**：ja 維基與 Apple jp 逐軌 trackName 都是平假名「いとしのうなじ」；B4 同理取「遠雷」（Discogs 只有羅馬字）。
+另：版本數 10 → **11**（ja 維基逐字「2002年11月7日に、スーパーオーディオCD仕様でも発売された」＋商品碼 VRGL-8013，符合 a 組第 6726 條「目錄號＋日期」）。
+
+## 6749　定案：`伊東たけし《Dear Hearts》` 發行日 **1984-09-21**（MB 的 06-21 不成立）
+
+策展層第 6575 條交來的月份衝突：Discogs LP 與同日 CD 逐字 `1984-09-21`；Apple jp 逐軌 track releaseDate 九軌全是 `1984-09-21`（collection 是 `01-01` 佔位）；**決定性的是 2013 CD notes 逐字「Recorded at One on One Studios ... in July 1984. Mixed at CBS/SONY Shinanomachi Studios, Tokyo in July 1984.」——MB 的 6 月早於錄音**。Master Sound 盤 `30AH 1632` 逐字 1984-10-21。`year` 不變。
+
+## 6750　推翻兩處：`伊東たけし《Dear Hearts》`
+
+1. 卡單「〈Say It Again〉本層指不出它是哪一首既有曲目」——**指得出**：en 維基「Say It Again (Jermaine Stewart song)」逐字 Bunny Sigler／Carol Davis 作、1983 年 Shawn Christopher 首錄單曲、1984 Lou Rawls 版；MB work 48442877 同向。第 1969-B 條 (i) 成立、(ii) 找不到爵士前作 → **乙 1/9**（策展層已寫「就算算乙也只有 1/9」，**結論不變**）。⚠ 1987 年 Jermaine Stewart 版的製作人之一是本盤〈Godzilla〉的共同作曲者 Aaron Zigman（en 維基 infobox）——**英國榜第 7 名是 1988 年 1 月**，下游勿寫成 1987。
+2. `Akira Yada` 卡單寫「零漢字變體」——Discogs 2061580 namevariations 現有 `矢田 朗`（讀音對得上），facts 寫「Akira Yada（矢田朗）」。
+⚠ ja 維基個人作表記「2007年にリマスター盤で再發」——兩家資料庫都沒有 2007 版，無法指認，不計。
+
+## 6751　`大野えり with The Great Jazz Trio《Easy to Love》`：廠牌寫法照卡單，facts 零處寫成コロムビア 盤
+
+主線第 1991-B 條維持收；facts 只寫盤面字標（LP `Interface`、CD `Denon`＋`Interface`）。⚠ `columbia.jp/artist-info/ohnoeri/discography/COCB-54203.html` 200：商品解說逐字「BETTER DAYSレーベルからリリースされた6枚のアルバム…"Interface"レーベルより」、「【オリジナル】1984/01/21発売・YF-7082」——**這一次原廠頁與原壓相符**（不是派工信第三節那種）；本層只用它支撐商品解說那一句。同頁把 Haruo Mita 寫成「三田晴夫」，**Discogs 4339926 零漢字，照第 1941-B 條不採**，facts 維持羅馬字。
+
+## 6752　推翻兩處人名：`《Easy to Love》`
+
+1. 解說 `Hisamitsu Noguchi` 卡單「未查到漢字→寫羅馬字」——**Discogs 1798939 realname 逐字 `野口久光`**（1909–1994，爵士／電影／音樂劇評論家）。⚠ c-186 a《Lucky Summer Lady》已用過他的生平，本卡只寫一句身分與年齡。
+2. 封套設計 `Tztom Toda` ——Discogs 2796748 realname 逐字 `戸田ツトム`（1951–2020 平面設計師）。
+
+## 6753　補正：`井上敬三《Boys, Be Ambitious!》` 的錄音地
+
+卡單照 LP notes 寫「1983 年 10 月到 1984 年 1 月錄於東京」；**1984 CD（3612652）與 2003 CD notes 逐字「Recorded in Oct 1983 and Jan 1984 at CBS/Sony Studio in Tokyo. Mixed in January 1984 at Sedic Studio.」**——兩段錄音、錄音室是 CBS/Sony。⚠ DOMO 字標頁（labels/28290）1983 年已有 `Tibetan Blue Air Liquid Band《空中浮遊》`，**「DOMO 第一張外人的碟」不成立**，facts 只寫「1984 年的 LP 裡別人掛名的只有這一張」。⚠ c-177《Intimate》已用掉年齡對比與 坂田明 師徒，本卡不寫年齡。
+
+## 6754　補正與來源衝突：`高中正義《夏・全・開》`
+
+1. ja 維基逐字「発売当初は『高中正義 and 楽園ガールズ』名義で発売された」——卡單與兩家資料庫都沒有；單一來源照寫、掛名欄不動。
+2. ja 維基逐字本盤為錄音買了 MIDI 化以前的 Oberheim 合成器、鼓機與音序器；〈Cuban Heels〉的 Orquesta Del Sol 團員含他伴奏團的 高橋ゲタ夫／木村誠／ペッカー／森村献。
+3. ⚠ **B2〈Summertime Blues〉作詞衝突**：Discogs 原壓逐字 `Lyrics By — Chris Mosdell`（卡單照此寫「六軌全是 Mosdell」）、ja 維基收錄曲表逐字「レオナ新里」——facts 寫「詞作者主要是 Chris Mosdell」，不點名 B2。
+4. 本盤是他在 Kitty 的最後一張（隔年轉 東芝EMI 的 EASTWORLD）。
+⚠ `universal-music.co.jp` slug 本卡是**姓-名** `takanaka-masayoshi`（UPCY-6723／UPJY-9539 兩頁 200），名-姓 `masayoshi-takanaka` 兩頁「Page not found」——見 6762。
+
+## 6755　推翻兩處人名、補兩格：`カリオカ《Pale Moon》`
+
+1. `Uetake Tetsuroh` → **植竹哲朗**（ja 維基團員欄逐字「植竹 哲朗（うえたけ　てつろう）」；a 組第 6722 條同判）。
+2. `Takashi Katoh Strings` → **加藤高志 的弦樂組**（Discogs 1632710 namevariations 逐字 `加藤高志ストリングス`、ja 維基逐字「加藤高志アンサンブル」）。
+3. 補：封套攝影 **加納典明**（Promo credits `Photography By — Tenmei Kanoh`；Discogs 2251969 realname）、美術 **井上嗣也**；ja 維基註腳逐字另出了與 加納典明 合作的雷射影碟與錄影帶（影像版不計入本盤版本）；發行日 1984-09-01（ja 維基，單一來源）；本盤是 Kitty 期最後一張原創專輯（同年 12 月《GALLERY》是精選）。
+4. 補：2001 年首次 CD 化（ja 維基；Apple ℗ 2001 佐證）——**無目錄號，照 a 組第 6726 條只記不計，版本數維持 4**。
+⚠ 〈Chuva〉：MB work fcf1bf3c 有 Walter Wanderley 1966《Rain Forest》的〈Rain〉——一筆具名爵士廠牌前作，**不足以說已進爵士曲目表**，照第 1962-B 條仍判不出來 → 乙 1/8，結論不變。
+
+## 6756　⚠ ⚠ 推翻：`Native Son《Gumbo》` 的「六軌全是團員原創」——**兩首是 本田竹広 的舊曲重錄，而且兩張前作都在池中**
+
+Universal 商品頁（`universal-music.co.jp/p/UPCY-9696/`）逐字「「レイジー・ドリーム」「カリプソ・ストリート」など、本田竹広が過去に残したジャズ作品もフュージョン・タッチに再録」；MB 釘出前作：〈Lazy Dream〉＝《Jōdo／浄土》1970（recording 07aec97f，8:04）→ **seed 的 `本田竹広《Jōdo》1970`**；〈Calypso Street〉＝《Another Departure》1977（recording e088ddd0，4:49）→ **c-132 的 `本田竹広《Another Departure》1977`**。第 1978-B 條甲補那一格（本盤演奏者自己的既有曲、有前作可證）→ 甲 6 不變。**下游：本卡不得把兩首寫成首演；那兩張池中卡若日後重寫，也要知道本盤有重錄版。**
+⚠ 卡單交研究層核的「第六張」：ja 維基團頁專輯表連實況算第七、只算錄音室第五——**序數不寫**。前作《Resort》（Polydor 28MX 2066、1983-04 錄音）成立。
+⚠ 兩位美國樂手都長住日本（Gregg Lee「Based in Japan」、Cecil Monroe「A longtime (since 1978) resident of Japan」）——與身分判定無關，只作編制脈絡。
+
+## 6757　⚠ 推翻：`Casiopea《Casiopea Live》` 的〈Galactic Funk〉來源盤
+
+卡單寫「〈Galactic Funk〉＝《4×4》1982（c-188 a）」——**ja 維基「CASIOPEA LIVE」初出欄逐字掛《Cross Point》**，主線第 1993-B 條也記《4×4》那一版是《Cross Point》同名曲的重錄 → **初出是池中 c-187 b《Cross Point》1981，《4×4》第二次、本盤第三次**。同理〈Eyes Of The Mind〉初出是池中 c-187 a《Make Up City》（〈Eyes Of Mind〉），本盤是第三次。
+⚠ 版本數維持 8：ja 維基另列 2009 盒裝分片 `MHCL-20016` 與 2016 高解析度兩種——照 a 組第 6726 條只記不計（全計則 11）。⚠ ja 維基 CD 發行表寫 1985-12-25、同條 infobox 寫 12-21，取兩家資料庫一致的 12-21。
+
+## 6758　推翻：`Casiopea《Halle》` CD 第 6 軌〈Matsuri-Bayashi〉的作曲
+
+卡單「三個 CD 版本作曲欄都空白、指不出」——**ja 維基「HALLE」收錄曲表逐字「マツリ・バヤシ - 野呂一生」**，並逐字「初期のアナログLPには収録されていない」→ 團員原創，**CD 十一軌甲 11、乙 0**（策展層「最多 1/11」那一格歸零）。單一來源。
+⚠ 版本數維持 19：2009 盒裝分片 `MHCL-20015` 與 2016 高解析度只記不計（全計則 21）。⚠ 初版 LP 的撲克牌插頁取自 Discogs 3103529 notes 逐字，與 ja 維基「13枚目」互相對得上；金唱片認證（ja 維基 infobox，無註腳）單一來源。
+
+## 6759　⚠ ⚠ #9／#10〈Marine Blue〉時序寫死（c-189 b 第 6588 條的落地）
+
+國技館演出 **1985-04-27** → 《Halle》錄音 **05-18～06-12** → 《Halle》發行 **09-10** → 國技館影像 LD **09-25**、VHS **10-21** → 本場 CD **12-21**。
+**#10 是最早『發行』的版本，#9 是最早的『演出錄音』**；兩卡 facts 都不用「首演／首錄／首發」：#9 寫「演出時還沒有錄音室版、初出是《Halle》」，#10 寫「錄音室版誕生前就已上過台、那份現場錄音收進 12 月的《Casiopea Live》」。**鉤子層與寫作層請照這個順序，不要讓任何一張自稱首錄。**
+
+## 6760　再發版本數：**10 張全部重跑 `versions` ＋ MB；數字改判 2 筆（#1 −2、#2 +1），聯集 89 → 88**
+
+| # | 策展層聯集 | 本層 | 只記不計的第三來源 |
+|---:|---:|---:|---|
+| 1 | 15 | **13** | SACD 商品碼 VRGL-8012（無日期） |
+| 2 | 10 | **11** | — |
+| 3 | 9 | 9 | ja 維基「2007 年リマスター」（無法指認） |
+| 4 | 4 | 4 | — |
+| 5 | 4 | 4 | — |
+| 6 | 10 | 10 | — |
+| 7 | 4 | 4 | 2001 首次 CD（無號） |
+| 8 | 6 | 6 | — |
+| 9 | 8 | 8 | 2009 盒裝分片、2016 高解析度兩種 |
+| 10 | 19 | 19 | 2009 盒裝分片、2016 高解析度兩種 |
+**判準與 a 組第 6726 條一致**（第三來源有「目錄號＋日期」且兩家都沒建才 +1；盒裝單片、高解析度重製、無號者只記不計），**兩組同批同尺**。四種漏法：(a) 10/10 策展層已避開；(b) #6 的 2026 黑膠 UPJY-9539 在表內；(c) 數位：#1 本層併掉兩筆重複、其餘與策展層同；(d) MB 獨有：0 新增。
+
+## 6761　同掛名跨批反同構（逐張已用切角，本層一條不重用）
+
+THE SQUARE：團名由來、明治大學新人、T-SQUARE 改名、伊藤八十八、松任谷由実、Michael Kawai 轉宣傳、定價碼機制——**#1／#2 都沒用；序數不寫**。⚠ サントリーホワイト 廣告是 伊東たけし 的生平格也是 #1 的曲子，**歸 #1、#3 不寫**。
+高中正義：出生名與歸化、SG2000、Kitty 創立、Kitty 待到 1985、鳥山雄司 寫程式、来生 姊弟、〈Jumping Take Off〉廣告——**#6 都沒用**；⚠ 唯一近鄰：#6〈Summertime Blues〉也是マツダ Familia 廣告歌（c-189 a 是〈Jumping Take Off〉），同車款不同曲，句型要分開。
+カリオカ：改名、session 起源、五人生平、Villa-Lobos、ボトムズ、1983 歸隊（含西班牙）、2013 整批再發——**#7 只寫「同一組四人連錄三張」**。
+Casiopea：441Hz、團名、Alfa 簽約、印尼熱潮、Harvey Mason、《Thunder Live》封面、神保 入團、Secret Sound、《Zoom》、CD 瑕疵——**#9／#10 都沒用**。
+Native Son／本田竹広：成軍、兩位核心生平、Bump Crusing、Super Safari、MCA、Melodiya、ビクター 最終作——**#8 都沒用**。
+井上敬三：生卒年、坂田明 師徒、年齡對比——**#5 都沒用**。
+
+## 6762　來源實測（本工作階段，約 170 次請求）
+
+- **Discogs API**：約 90 次全 200；⚠ **`database/search` 無 token 一律回空**（`catno=VRGL-8012` 等 4 次 `items: 0`）——本工作階段沒有 token，查 catno 只能走 master／artist／label 的 releases 清單。
+- **MusicBrainz**：約 25 次全 200，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；**work 端點（`work?query=` ＋ `inc=recording-rels`）第一次用在甲乙判定上，兩次決定性**（#3〈Say It Again〉的原唱、#8 兩首舊曲的前作）。
+- **ja 維基 `action=raw`：27 查 21 中**；專輯條目 **5/7**（ADVENTURES、Stars and the Moon、夏・全・開、CASIOPEA LIVE、HALLE 中，DEAR HEARTS、PALE MOON 404；另 TRAVELERS 單曲條目中）——**與 a 組第 6729 條同向：這一年段的主流 fusion 盤專輯條目齊全，且給了 Discogs 沒有的欄位**；⚠ 同名陷阱兩則：`ネイティブ・サン`＝1986 年美國電影（樂團要打 `ネイティブ・サン_(バンド)`）、`カリオカ`＝消歧義頁（要打 `カリオカ_(フュージョンバンド)`）；`井上敬三` 404。
+- **原廠網域**：`columbia.jp/artist-info/ohnoeri/discography/COCB-54203.html` 200（`prod-info/COCB-54203/` 只回首頁 title，兩條路徑互補再一例）；⚠ **`universal-music.co.jp` 的 slug 順序是逐藝人的**：`takanaka-masayoshi`（姓-名）200、`masayoshi-takanaka` 404——**與簡報三之二「名-姓、姓-名全 404」相反**（a 組第 6729 條也打中同一個 slug）；`carioca/products/upcy-6734/` 404；**`/p/<CATNO>/` 短路徑 200**（UPCY-9696），不必知道 slug。`tsquare.jp` 503（系統維護）。
+- **en 維基**：3 查 3 中（Say It Again、William S. Clark、Ryōgoku Kokugikan）。**gamesradar.com** 1 次 200（近藤浩治 訪談英譯）。
+- **Apple lookup**：6 次全 200、403／429 零次；⚠ **Apple 的 collection 日期是佔位時，逐軌 track releaseDate 可能是真日期**（#3 九軌全 `1984-09-21`）——這是本線第一次用 track 層日期定案。
+
+## 6763　`desc-tools/jp-proper-names.json`：**append 0 個，既有條目一字未動**
+
+`qa-batch` 第一輪攔兩處（notes 裡的 `来生姊弟`、引 ja 維基的 `国技館`），都改寫行文（前者寫全名、後者改成「」引文），不加白名單。
+
+## 6764　人名：**回打 Discogs 藝人頁約 40 個；新定漢字 13（其中推翻卡單 5，見 6746），照 ja 維基定漢字 2（有條件），不寫 3**
+
+新定（逐一有欄位）：矢田朗、野口久光、戸田ツトム、植竹哲朗、加藤高志、加納典明、井上嗣也、五野洋、山本晃、兼崎順一、三田治美、越智英一郎（notes）、稲越功一。
+**有條件**：`頭山慎一`（#9 製作）、`杉森浩二`（#10 錄音）只有 ja 維基 credit 欄給漢字、Discogs 零變體——**facts 已照 ja 維基寫；若主線要求 Discogs 交叉驗才准漢字，兩處退回 `Shinichi Tohyama`／`Kohji Sugimori`**（可逆，只動兩個字串）。
+不寫：`Haruo Mita`（原廠頁「三田晴夫」無交叉驗）、`Akio Itoh`（Discogs profile 寫攝影師，疑掛錯）、`Mitsuharu Kobayashi`（三種漢字互相矛盾）。
+
+## 6765　反向禁令（逐張）
+
+**不寫**：Cecil Monroe（2011）、稲越功一（2009）、川端民生（2000）、戸田ツトム（2020）的辭世（facts 只寫生年）；T-SQUARE 後來的成員變動只寫到 1985／1986 兩人離團（本盤陣容的收尾）。**可寫（作品綁定、標時序）**：#3〈Say It Again〉1987–88 的暢銷版、#1 近藤浩治 2001 年的話與 2021 年短片、#1 的五首 1985 年組曲版、#6 的 2026 黑膠復刻、#8 的 2017 復刻企劃。
+
+## 6766　⚠ 給主線的四件
+
+1. ⚠ ⚠ **#8《Gumbo》撞到兩張池中卡的曲目**（6756）——本機上架時看一眼 seed《Jōdo》與 c-132《Another Departure》的正文有沒有寫「唯一錄音」之類。
+2. ⚠ ⚠ **〈Galactic Funk〉三卡同曲**（池中 c-187 b《Cross Point》初出／c-188 a《4×4》重錄／本組 #9 實況）——**c-188 a 研究稿（交件前本層唯讀看過）已寫成「《Cross Point》同名曲的重錄」，三卡對得上**；只有本組卡單 `curatorRisk` 的來源盤寫錯（6757）。
+3. ⚠ **`頭山慎一`／`杉森浩二` 的漢字依據只有 ja 維基**（6764）——要不要接受「ja 維基 credit 欄」當漢字來源，請定一句（a 組第 6731 條的 植竹哲朗 也是 ja 維基單源）。
+4. ⚠ **簡報三之二的 `universal-music.co.jp` slug 那一句要改成「逐藝人、兩種順序都試；或直接走 `/p/<CATNO>/`」**（6762）。
+
+## 6767　交件前自跑
+
+1. `node qa-batch.mjs research c189` → **a 10／b 10 全 full、key 與卡單完全一致、全部通過**（第一輪 2 處簡體同形字已改寫，6763）。
+2. 自量：facts 10–12 條、`src` 118/118 完整 https、`hookCandidates` 10×2、facts 與 hook 零處點名資料來源平台、獎項只有 #10 的金唱片認證（認證不是入圍／得獎，照寫）、千分位 0、CJK 旁半形逗號 0。
+3. **同批兩組曲題表互掃**：a 組 10 張 × b 組 10 張——只有 a #9《Down Upbeat》三首對 b #9（已知），**零新撞**；**另掃出 b #8 對池中兩張、b #9 對池中 c-187 兩張的來源層**（6756／6757）。
+4. **邊界**：只寫了 `desc-tools/batches/research/c189-b.json`（新增）與本檔（append）；`jp-proper-names.json`、卡單、prop、a 組研究稿、`previews.json`、`caa.json`、`seed_cards.json`（唯讀掃描）、`apex_pool.json`、`PROJECT_MEMORY.md`、KV、Firestore 零寫入；零 git 寫入操作。
+
+**編號區間結算**：本段用 **6746–6767（22 條）**，未越界（a 組研究 6716–6745）。

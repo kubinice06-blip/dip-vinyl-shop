@@ -774,3 +774,229 @@
 
 **編號區間結算**：本段用到 **6406–6435（共 30 條），區間用滿、未越界（b 組 6436–6465）。**
 ⚠ **兩組合跑 `node batch-progress/c188/chk-prop.mjs a b`** → **合計 24 張、19 位｜標記 0**（`prop-a.json` 12 張 12 位、`prop-b.json` 12 張 10 位；兩組重疊的掛名是 `浪花エキスプレス`／`小林泉美`／`高中正義` 三串，字串一致）；`dedup-crossbatch` 四項全 0。
+
+
+---
+
+# c-188 a 組研究層（6776–6805）｜12 張｜2026-09-27
+
+輸入 `desc-tools/batches/cards/c188-cards.json` 的 `group === "a"` 12 筆；輸出 `desc-tools/batches/research/c188-a.json`。
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）、`CURATION-BRIEF-jp2.md`（全檔，含三之二）、`CURATION-BRIEF-jp1.md` 第〇節與 `bluenote-post1985` 附錄二、本檔策展兩段、`c163/rulings-mainline.md` 第 1934-B…1993-B 條、`c178/rulings.md` 研究層兩段；同掛名前批研究稿（c-181／c-184／c-185／c-186／c-187 的 高中正義・日野皓正・THE SQUARE・Casiopea・カリオカ・今田勝・鈴木良雄・菊地雅章・The Players）逐張讀過再動筆。
+
+## 6776　總表：**12 張，facts 144 條（每張 12）、全 full、thin 0；推翻策展層 8 處、補正 5 處；人名改判 0（另解一處「兩源兩人」為同一人）；版本數改判 0**
+
+| # | 卡 | facts | 本層最值錢的一格 |
+|---:|---|---:|---|
+| 1 | カリオカ《Snooze》 | 12 | ⚠ A1 是 1977 年就錄過的曲（6777） |
+| 2 | 小林泉美《Coconuts High》 | 12 | 兩軌編曲與 Tower Of Power 的 Greg Adams 並列 |
+| 3 | 高中正義《Alone》 | 12 | ⚠ B4 有作詞者與聲碼器（6778）；Oricon 第 5；Grimes 2015 取樣 |
+| 4 | 今田勝《Carnival》 | 12 | Brecker 兄弟各兩軌、1984 再發改掛名「Featuring The Brecker Brothers」（6779） |
+| 5 | 松風鉱一《Good Nature》 | 12 | 節奏組是 森山威男カルテット 原班；四人三個 1948 年生 |
+| 6 | 鈴木良雄《Wings》 | 12 | ⚠ 宣傳盤逐軌欄推翻兩格（6780） |
+| 7 | Casiopea《4×4》 | 12 | 無排練、九小時錄完；錄音年有來源了（6781） |
+| 8 | 菊地雅章《One-Way Traveller》 | 12 | 與《Susto》同批錄音有英文維基明文；末軌二重奏 |
+| 9 | NANIWA EXPRESS《No Fuse》 | 12 | 鼓手欄同時掛創團與新加入兩位 |
+| 10 | The Players《Space Travel》 | 12 | ⚠ 原廠頁推翻人聲軌次、補兩位樂手、給發行日（6782） |
+| 11 | THE SQUARE《脚線美の誘惑》 | 12 | ⚠ 換人與序數其實有來源（6783） |
+| 12 | 日野皓正《Pyramid》 | 12 | ⚠ 篠笛「兩源兩人」是同一人（6784）；製作人寫過〈O-o-h Child〉 |
+
+## 6777　⚠ 推翻：`カリオカ《Snooze》` 不是「八軌全為本盤新寫」
+
+A1〈Caribbean Super Green〉：Discogs releases/13780184（CBS/Sony `YESC-71`《Sony Sound Adventure Act III》，`released` 1977-11-21、`notes` 逐字「Recorded on August 16, 1977 at Nagoya Shimin Kaikan.」）A2b 的 `Composed By` 逐字 `Hiroki Inui`；日文維基「乾裕樹」作品表也寫「（カリオカの『Snooze』にも収録）」。那一版的班底與本盤零重疊 → **舊曲新錄**，甲乙不變（演奏者自作、有前作可證，照第 1978-B 條第 1 點仍算甲），合輯關不變（第 1948-B 條看錄音）。**facts 寫「本盤是樂團的重錄」。**
+
+## 6778　⚠ 推翻：`高中正義《Alone》` 的人聲不只兩軌
+
+卡單寫「人聲只有兩軌兩格、零 `Lyrics By`」。日文維基專輯條目曲目表逐字 `lyrics4 = すずきしゅう`、解說逐字「（PENGUIN DANCER）レコーディングにヴォコーダーが使用されている」；英文維基 personnel 逐字「Lyricist: Choux Suzuki (tracks: B4)」、《Art Angels》條目逐字 Penguin Dancer「co-written by Masayoshi Takanaka and Shu Suzuki」。→ 乙最多 3/8＝38%，**收件結論不變**。作詞者三源三形，全假名名字寫羅馬字，**本層不認定 `Choux Suzuki`＝`Shu Suzuki`**。
+
+## 6779　補正：`今田勝《Carnival》` 的 Brecker 兄弟分軌
+
+原壓整筆欄不帶 `tracks`；**2017 年同家同母帶 CD（releases/13871040）逐字 `Flugelhorn — Randy Brecker` tracks 1, 3／`Tenor Saxophone — Michael Brecker` tracks 5, 6** → 兩人各兩軌、零同軌。另 1984 年 Polydor 再發（releases/6706380）`artists` 欄逐字 `Masaru Imada Featuring The Brecker Brothers`。
+
+## 6780　⚠ 推翻兩格：`鈴木良雄《Wings》` 以同號宣傳盤的逐軌欄為準
+
+同號同年宣傳盤 releases/8882957（同家同母帶，照第 5766 條算盤面）逐軌列出：**Tom Harrell 在 A3／B1／B4、Bob Berg 在 A3／B1**（卡單照市售盤整筆欄寫「A3」）；**領銜者另掛電貝斯（A1／A3／B1）、Oberheim（A1）、原聲鋼琴（A3／B2）**，B2〈Bluebell Song〉是他的鋼琴與 Liebman 中音長笛二重奏。
+⚠ **給主線（`enum/jp-2.md`「§1 候選」）**：日文維基「鈴木良雄」領銜作清單逐字「MATSURI / CBSソニー（1974年）」——那一格寫的「《Matsuri》(1980，是否 Trio)」不是 Trio、也不是 1980（本層只轉記一源）。
+
+## 6781　補正：`Casiopea《4×4》` 錄音年有來源
+
+卡單要求「正文不要自己補年份」。日文維基「FOUR BY FOUR」infobox 逐字「1982年10月12日」、解說逐字「リハーサルなし、僅か9時間で演奏を終了」——**年份 1982 可寫；盤面的 10 月 12–29 日是錄音＋混音期間、九小時是演奏本身，兩者不矛盾**，facts 兩格各掛各的來源。同條目逐字〈Galactic Funk〉是「『CROSS POINT』収録曲のリメイク」，與 c-187《Cross Point》時序對上（第 1993-B 條）。
+
+## 6782　⚠ 推翻／補正：`The Players《Space Travel》`——原廠 Sony 的 otonano 頁（`110107.com/s/oto/news/detail/TP00204`）
+
+- **人聲軌次**：原廠逐字「岡沢章のソウルフルなヴォーカルが聴ける「CAN YOU BELIEVE IN A LOVE?」「MELODYS BIRTH」」——**A4 與 B1**，卡單猜的 B2 不是；乙 2/8 不變。
+- **班底**：原廠另列 穴井忠臣（perc）與 EVE（bg vocals），Discogs 三版都沒有；薩克斯風「このアルバムから山口真文からボブ斎藤にメンバー・チェンジ」。
+- **發行日**：原廠逐字「オリジナル発売日：1982年10月21日」；日文維基寫 7 月 21 日而引的正是這一頁——**維基轉錄錯**；號段佐證（`28AH 1461`＝1982-10-01、`28AH 1455`＝1982-07-21、本盤 `28AH 1469`）。
+- ⚠ 原廠頁自己寫錯兩個人名：`ボブ斎藤`（Discogs `ボブ斉藤`）、`数原 普`（Discogs `realname` `数原晋`）——**第 1920-B／1941-B 條再得一例**；facts 人名照 Discogs、原廠頁只取發行日與商品說明，穴井忠臣／EVE 兩格寫明是「唱片公司的班底表」。
+
+## 6783　⚠ 推翻兩格：`THE SQUARE《脚線美の誘惑》`
+
+卡單說「加入／退團需要另一個來源」「序數任何來源都沒有」。日文維基「脚線美の誘惑」條目兩者都有：逐字「久米大作…清水永二が退団。後任としてキーボードに和泉宏隆、ドラムに長谷部徹が、それぞれ加入した」「THE SQUARE6作目のアルバム」。**換人照寫；序數照派工信第五節第 8 點（序數軸已用滿）不寫進 facts。** 同條目另給：〈The Rest Of A Romance〉是編制期最後一首附歌詞的曲、〈ハワイへ行きたい〉是 FM東京《ソニーデジタルサウンド》主題曲、〈Change Your Mind〉是日立マクセル XL 廣告曲、32AH 1604 腰封的數位錄音機一說（安藤 本人說是類比）。
+
+## 6784　⚠ ⚠ 推翻：`日野皓正《Pyramid》` 的篠笛不是「兩源兩人」
+
+卡單：Discogs `藤舎推峰 (anv Suiho Tosha)` vs MB `藤舎名生`，「指向兩個不同的人」→ 只寫羅馬字。**實為同一人**：Discogs 6652258 profile 逐字「In 1989, he changed his stage name to Meisho Tosha」、1840249（`realname` 藤舎名生）逐字「Formerly known as Tōsha Suihō I」、日文維基「藤舎名生」逐字「襲名前は藤舎推峰として活動していた」「1989年、二代目藤舎名生を襲名」。**MB 用襲名後的名字，兩源一致** → 照第 1968-B 條二（正文人名照盤面）寫 `藤舎推峰`。⚠ 建議登記：`name-corrections.json` 不必加（不是錯字，是襲名）；**若主線要記，放 `_romaji_collisions` 的反面——「兩個漢字形同一人」**。
+
+## 6785　補正（無判斷翻轉）：`NANIWA EXPRESS《No Fuse》` 鼓手欄兩位
+
+原壓整筆 `Drums — Kiyoshi Kamada`（藝人頁 420738：創團成員、1977–1986 在團）與 `Drums — Rikiya Higashihara`（1981 加入，日文維基）並列；MB 唯一帶樂器 rel 的 A1 只掛 東原力哉。facts 只寫「兩個名字並列」、不猜各軌。**掛名照卡單 `NANIWA EXPRESS`，facts 不寫 `浪花エキスプレス`**（卡單 `curatorWhy` 前半的舊說法不引）。
+
+## 6786　再發版本數：**12 張逐筆重跑整張 `versions`，改判 0**（聯集合計 103，與策展層第 6417 條逐格相同）
+
+四種漏法逐一查：(a)(b) 已由策展層做完；(c) 數位——Apple 命中逐筆比對 MB `Digital Media`，結論同策展層；(d) MB 獨有——同策展層。**日文維基的發行一覽另列《4×4》2016 年高解析重製，本層不另加一版**（避免與 MB 69bd0883 重複計）。⚠ 本批策展層兩組都跑完整版本表，**研究層這一格是純覆核**（與 c-176／c-177／c-178 同形）。
+
+## 6787　facts 不點名平台（第 1982-B／1985-B 條）的做法
+
+144 條 `f` 零處出現 Discogs／MusicBrainz／Apple／維基／資料庫；來源一律只在 `src`。需要表達「出處」時寫成「盤面」「盤上」「唱片公司」「宣傳盤的逐軌欄」。
+
+## 6788　來源實測
+
+- **Discogs API**：約 190 次、全 200（`database/search` 不帶 token 也回結果）。**新用法兩條**：`labels/<id>` 的 profile 會給**錄音室／場館的漢字形**（`Hitokuchizaka Studio`→「一口坂スタジオ」、`Nagoya Shimin Kaikan`→「名古屋市民会館」）；藝人頁 profile 會寫**襲名／改藝名**（6784）。
+- **MB**：work／recording rel 在 #2、#9、#12 三張是作曲與逐軌樂器的主源（#12 八軌作曲與十七人逐軌全靠它）。
+- **ja.wikipedia**：`action=raw` 21 查 17 中；落空四次＝兩個猜錯的條目名（`カリオカ (バンド)`、`ALONE (高中正義の曲)`）與兩個不存在的條目（`松風鉱一`、`生活向上委員会`）。專輯條目 3 中（`alone`／`FOUR BY FOUR`／`脚線美の誘惑`），**三張都給了決定性的一格**。並行時偶發 429，退避即過。
+- **en.wikipedia**：8 查 7 中（`Alone (Masayoshi Takanaka album)`／`Art Angels`／`Susto (album)`／`Bruno Martino`／`Stan Vincent`／`Masayoshi Takanaka`；`One-Way Traveller` 無條目）。
+- ⚠ **原廠 Sony 的 `110107.com`（otonano）新聞頁：1/1 中，而且給了三格決定性事實（6782）**——**2016 年 Sony 復刻發售稿逐張列「オリジナル発売日」與班底**，CBS/Sony 系的卡值得先查這一路（日文維基的 ref 常指到它）。
+- `universal-music.co.jp/carioca/products/upcy-6731/`：404（キティ 系 slug 照簡報三之二全 404）。Apple lookup／search 4 次、403／429 零次。
+
+## 6789　人名
+
+- **逐名回打 Discogs 藝人頁約 90 個**；**改判 0**（策展層本批人名全對），**新寫入的漢字名全部能指到 `realname`／`namevariations`／日文維基成員欄其中之一**。
+- 兩源衝突、facts 不寫：`Mr. Cool` 作詞（佐藤ナオコ／佐藤奈々子）、`Lazy Love` 作曲欄、森山威男 出生地（Katsunuma／品川）、刻片 野見山静夫／静雄、`Michio Maruoka`（Discogs 無漢字；日文維基「丸岡道夫」只一源）。
+- 原廠頁人名錯字兩處（6782）不採。
+
+## 6790　`desc-tools/jp-proper-names.json`：**append 2 個**——`名古屋市民会館`、`平山国次`（既有 85 條一字未動；`生活向上委員会` 已在清單上）
+
+兩者來源：前者 Discogs `labels/1627552` profile 逐字「In Japanese, 名古屋市民会館」；後者 Discogs 藝人頁 4644819 `namevariations` 只有 `平山国次`。
+
+## 6791　反向禁令與跨卡切角（摘要）
+
+- 不寫的後續生平：乾裕樹／中谷望／佐藤正美／今田勝／松風鉱一／菊地雅章／Steve Grossman／Chuck Loeb／鈴木宏昌／松木恒秀／数原晋／和泉宏隆／伊藤八十八 的歿年，藤舎推峰 的襲名與人間国宝認定。
+- **可寫並已標時序**：Grimes 2015 取樣〈Penguin Dancer〉、〈Believin〉1986 年 12 吋單曲、2009 年東京 JAZZ〈Mid-Manhattan〉session、安藤 事後回顧（內容是本盤換人的結果）。
+- **跨卡重疊已在各卡 notes 分配**：杉本喜代志 生平只給 #2（#4 改寫 岡沢章）；渡嘉敷祐一／宮崎全弘／乾裕樹／大野進／Harvey Mason／Richie Morales 在本組多張出現，notes 逐張寫「不是同一場錄音」。**給 b 組／c-189 的：`NANIWA EXPRESS` 的「DUKE」與「四人同年生」、小林泉美 的 EastWest'76 本組已用。**
+
+## 6792　交件自跑
+
+- `node qa-batch.mjs research c188` → **a 12 張全 full、a 組標記 0**（剩的一條「key 集合與卡單不一致」是 b 組尚未交齊）。
+- 自量：facts 12×12、`src` 144/144 完整 https、簡體字 0（兩個被誤報的專名已 append 白名單）、千分位 0、`hookCandidates` 每張 2、獎項 0 條（榜位只寫名次）。
+- **邊界**：只動 `desc-tools/batches/research/c188-a.json`（新增）、本檔（append）、`jp-proper-names.json`（append 2）；卡單、另一組的檔、`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／KV／Firestore 零接觸；零 git 操作。
+
+**編號區間結算**：本段用到 **6776–6792（17 條）**，6793–6805 未用；未越界（b 組 6806–6835）。
+
+---
+
+# c-188 b 組研究層（6806–6835）｜12 張｜2026-09-27
+
+輸入：`desc-tools/batches/cards/c188-cards.json` 的 `group === "b"` 12 筆；輸出：`desc-tools/batches/research/c188-b.json`。
+規則照 `desc-tools/prompts/research-base.md`（含雲端三處例外）＋ `CURATION-BRIEF-jp2.md` 全檔 ＋ 主線第 1934-B…1993-B 條 ＋ 本檔策展兩段。
+⚠ 動筆前讀過 c-177…c-189 同掛名的研究稿（`高中正義` 十一張、`Casiopea` 五張、`NANIWA EXPRESS` 兩張、`真梨邑ケイ`、`鈴木勲` 六張、`辛島文雄` 三張、`池田芳夫` 兩張、`渡辺香津美《Talk You All Tight》`、`Duke Jordan《Flight to Jordan》`），**以及交件途中出現的 c-188 a 研究稿**（第 6776–6792 條）。
+
+## 6806　總表：**12 張，facts 141 條；full 11、thin 1；推翻策展層 12 處（其中 1 處動到收件判準）；版本數改判 0**
+
+| # | 卡 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | NANIWA EXPRESS《大宇宙無限力神》 | 12 | full | 第七軌副題也在 1991 CD 上；1991 CD 補出錄音地與製作 |
+| 2 | 真梨邑ケイ《Elegance》 | 12 | full | 荒川康男 一人彈十二軌裡十軌；B4 是意第緒語歌 |
+| 3 | 渡辺香津美《Ganaesia》 | 12 | full | ⚠ **DOMO 是他自己的字標，本盤刻痕 `DOMO-1`** |
+| 4 | 高中正義《Saudade》 | 12 | full | 日本第一張 Oricon 冠軍的 fusion 系專輯；他本人有和聲 credit |
+| 5 | 高中正義《Ocean Breeze》 | 12 | full | Medley 十五首的內容查得到；貝斯定案 `田中章弘` |
+| 6 | 小林泉美《夏・Nuts・夏》 | 12 | full | ⚠ ⚠ **五軌有詞 → 乙 5/9＝56%**（第 6809 條） |
+| 7 | South Wind Section《South Wind》 | 10 | **thin** | 全部 facts 只能出自盤面 |
+| 8 | 辛島文雄トリオ《Elegant Evening》 | 12 | full | 再發三版都有逐軌作曲欄與錄音日 |
+| 9 | 鈴木勲 Meets Duke Jordan《Scotch Blues》 | 11 | full | 盤名曲 1954 年就錄過；鼓手是 Jordan 當時的巡演鼓手 |
+| 10 | 池田芳夫 & 高瀬アキ《Esprit》 | 12 | full | ⚠ `previews.json` 誤命中《AKI》（第 6814 條） |
+| 11 | Casiopea《Jive Jive》 | 12 | full | 助理錄音師兼作詞；Gary Osborne／Kiki Dee |
+| 12 | Casiopea《Photographs》 | 12 | full | 不是全器樂；〈Out Drive〉作曲整格不寫 |
+
+## 6807　⚠ 推翻策展層總表（12 處）
+
+| # | 卡 | 卡單說 | 本層查到 | 來源 |
+|---:|---|---|---|---|
+| 1 | #1 | 第七軌副題「只在 Apple 上出現」 | **1991 年 SRCL 1974（同廠同母帶）逐軌題也帶 `(Live At Goppongi Pit Outt)`** | releases/10702144 |
+| 2 | #1 | 和聲在 A4 | 原壓 `[A4]`、1991 CD `[8]`，兩處不一致 → facts 只寫「一軌」 | 6988321／10702144 |
+| 3 | #1 | 原壓查不到製作與錄音 | 1991 CD 補出信濃町スタジオ、鈴木良博、伊藤八十八 | 10702144 |
+| 4 | #4 | 「九軌零 `Vocals` credit 給他」 | 原壓 `Chorus, Backing Vocals` 掛 高中正義；MB 把七位和聲掛在 B1 | 4246582／MB 3352f582 |
+| 5 | #5 | Medley 內容盤面未展開 | **十五首逐首可查（13 首自作＋〈Mambo No. 5〉〈Aquarela do Brasil〉）**；第三肢結論不變 | ja「OCEAN BREEZE」＋原廠 UPJY-9527 頁 |
+| 6 | #5 | 貝斯寫羅馬字 Akihiro Tanaka | **`田中章弘`**：ja 維基樂手欄連到同一人條目 ＋ 原廠 UPJY-9527 頁樂手欄逐字 ＋ Discogs 別名同形 | 第 6812 條 |
+| 7 | #6 | 有詞三軌、乙 3/9 | ⚠ ⚠ **有詞五軌、乙 5/9**（第 6809 條） | ja「小林泉美 (歌手)」＋ Tower 2021 逐軌 credits |
+| 8 | #6 | Discogs 2013 題 `Nuts・Nuts・Nuts` 是建檔錯字 | 那是盤名讀法（「夏」讀 Nuts）：ja 維基「夏・Nuts・夏 (Nuts,Nuts,Nuts)」、Tower 2013 商品題《Nuts, Nuts, Nuts》 | tower.jp/item/3252117 |
+| 9 | #6 | Ohno Group 漢字形查不到 | `namevariations` 含 `多忠昭グループ`、首席 842095 `realname` 多忠昭 | artists/2841980 |
+| 10 | #7 | A3 寫手 `Kazu Kaneto` | `namevariations` 逐字 `金藤カズ` | artists/9295747 |
+| 11 | #8 | 四軌「原壓與各版都沒有作曲 credit」 | **1984 Polydor、2006、2026 三版都有逐軌 `Written-By`**（辛島文雄／日野元彦／Bobby Thomas／Wayne Shorter）＋錄音日 1982-07-01/02/05 | 19071571／9552283／36753691 |
+| 12 | #12 | 「十軌全器樂」「零 `Vocals`」 | ja 維基樂手欄：野呂一生 ボーカル (A2, B2)、櫻井哲夫 ボーカル (B2) | ja「PHOTOGRAPHS」 |
+
+**除 #7 外，11 處都不翻收件結論**（第 5701 條的乙在各卡仍 ≤ 一半）；**#7 見下條**。
+
+## 6808　⚠ 補強（不算推翻）的五格
+
+1. **#3 DOMO 是 渡辺香津美 自己的字標**：ja 維基逐字「1982年に日本コロムビアからポリドールに移籍、併せて自らのレーベル「domo」を立ち上げる」＋ Discogs `labels/28290` profile 逐字「Japanese label founded by Kazumi Watanabe」；本盤刻痕 `DOMO - 1 - A`、廠牌頁按年排第一。⚠ ja 維基作品表寫本盤「Polydor」，原壓 `companies` 是 Trio-Kenwood 經銷——facts 照盤面。
+2. **#9 盤名曲是舊曲、鼓手是巡演鼓手**：jazzdisco 目錄記〈Scotch Blues〉1954-01-28 NYC、Kenny Burrell《Blue Lights Vol. 1》1958；en 維基《Live in Japan (Duke Jordan album)》1976-09-20 也收；**1982-06-14 名古屋 So Nice 的《So Nice Duke》（Three Blind Mice PAP-25028，Jesper Lundgaard／Aage Tanggaard）晚本盤兩天**。
+3. **#4 作曲 B3**：ja 維基寫 高中正義，Discogs 原壓、1995 CD、MB work 三源都是 Walden → 取三源（卡單值成立）。
+4. **#2 荒川康男 十二軌裡十軌**（逐軌 `tracks` 欄）。
+5. **#11 Steve Travell 同時掛助理錄音師與作詞**（同一實體 44754）。
+
+## 6809　⚠ ⚠ ⚠ 請主線裁定：`小林泉美《夏・Nuts・夏》` 的第 5701 條乙是 5/9＝56%，不是 3/9
+
+- **卡單的 3/9 只建立在 MB 的 work rel 上**，而 MB 只對 A2–B1 四軌建了 work，**B2–B4 三軌零 work**。
+- **兩個獨立來源一致給出五軌有詞**：(a) ja 維基「小林泉美 (歌手)」唱片表逐軌 lyrics：FEELING FREE／LOVE GAME／ROLLING STONE／QUIET EXPLOSION 掛 地恵子・シュ（ナ）イダー、COFFEE RUMBA 掛 中沢清二；(b) Tower 上 2021 年 UPCY-7734 的逐軌 credits（「発売・販売元 提供資料」）逐字同五軌有作詞者，**而且五軌標「その他：小林泉美」、器樂四軌標「演奏者：小林泉美」**。
+- **照卡單自己採用的保守算法（第 5701 條 (4) 款「自寫的流行歌不算甲」）→ 乙 5/9 > 一半 → 第三肢不成立 → 依條文應退。**
+- ⚠ **這正是 c-188 第 6426 條給 a 組《Coconuts High》寫的反轉條件形狀**（「任一軌查出人聲作詞 → 乙過半 → 退」），**主線第 1993-B 條第 2 點把兩張綁成同進同退**；a 組研究層第 6776 條以後沒有動《Coconuts High》的 4/8（它的四軌器樂在 ja 維基與 MB 兩源都零作詞者）——**所以兩張現在分岔：一張 50% 收、一張 56% 該退**。
+- **本層不改卡單、不改收退**（研究層邊界），12 條 facts 照做完，主線維持收件可以直接用。**反轉條件（維持收的唯一出路）**：若主線把「英文填詞的自作 fusion 歌曲」從 (4) 款拿出來（例如照主線第 1992-B 條一之 1 的「有詞**而且旋律本來是流行歌**才算乙」讀），乙回到 1/9（只剩〈Coffee Rumba〉），兩張都收；那一讀法要連 c-188 a／c-189 的同形卡一起看。
+
+## 6810　`Casiopea《Photographs》` A5〈Out Drive〉的作曲欄：**查不實，整格不寫**（照派工信第五節第 6 點）
+
+- **支持 `渡辺貞夫` 的**：Discogs 原壓與同號宣傳盤 `Written-By: Sadao Watanabe`（323464）；ja 維基曲目表「渡辺貞夫」（該條目無獨立出處，判為可能轉抄，不算第二源）。
+- **查無的**：MB 原壓零 work rel；MB work／recording 搜尋查無 渡辺貞夫 掛名的〈Out Drive〉；1989／2002 CD 逐軌欄空白。
+- **旁證**（寫成獨立 fact、不與 A5 連結）：ja 維基「渡辺貞夫」記 1983 年 Coca-Cola「Yes Coke Yes」廣告用了他與 Casiopea 的共演曲〈Brown Coke〉。
+- **下一步只剩一個動作**：查 JASRAC 作品資料庫（雲端未試）——**交本機**。
+
+## 6811　版本數：**12 張逐筆重跑 `versions`，改判 0**；另記兩個「兩家都沒建」的候選
+
+- 12 張的 Discogs 版本數與卡單逐格相同；數位版本層逐筆 `lookup` 過 Apple（#1／#4／#5／#6／#8／#11／#12），MB `Digital Media` 對應與卡單相同。
+- ⚠ **新一族候選（第 (e) 種？）：ja 維基發行表有、Discogs 與 MB 都沒有**：#11《Jive Jive》2009-05-27 `MHCL-20012`、#12《Photographs》2009-05-27 `MHCL-20011`（Sony Music Direct，DSD／Blu-spec CD／紙套）。c-189 a 研究稿記同系列 `MHCL 20014` 是三十週年盒裝《Legend Of Casiopea》的第十二片——**這兩號很可能是盒內片，是否單售查不到 → 只記候選、不加版本數**。若主線要算：#11 聯集 18、#12 聯集 20。
+- #6 的 2024 黑膠日期：Tower 商品頁逐字 2024-09-25（Discogs 2024、MB 2025-03-24）→ 取 Tower；以版本計仍一個。
+
+## 6812　人名
+
+- **定案漢字 3**：`田中章弘`（#5；ja 維基 ＋ 原廠頁 ＋ Discogs `namevariations`，profile 生年地逐項相符）、`多忠昭グループ`（#6；Discogs `namevariations` ＋ 首席 `realname`）、`金藤カズ`（#7；Discogs `namevariations`，只此一源而讀音對得上）。
+- **照 `realname` 取舊字形 1**：`稲葉國光`（#6；卡單的新字形 `稲葉国光` 也是 `namevariations` 之一，本層取 `realname` 並避開 SIMP 對「国」的誤報，不必加白名單）。
+- **維持羅馬字**：#1 兩位和聲者、#2 Shigeo Suzuki／Takeru Shiraiso／Ikuo Ikezawa、#7 核心六人與兩位客席吉他、#11/#12 英方人員。
+- **作詞者寫法**：#6 `地恵子・シュレイダー`（MB ＋ Tower 資料）vs ja 維基 `シュナイダー` → 取兩源。
+- ⚠ **身分鏈 1 條**（#6）：Tower 資料的編曲者 `渡辺モリオ` ＝ ja 維基「マライア」逐字「小林泉美&フライングミミバンドのメンバーだったベース・渡辺モリオ」＝ ja 維基「BOØWY」逐字《MORAL》「プロデューサーはマライアの渡辺モリオ」——三處同形，facts 已用；而同盤吉他手是 布袋寅泰（《MORAL》1982-03-21，本盤 1982-06-25）。
+- `name-corrections.json` 的對照：本組零命中。
+
+## 6813　來源實測
+
+| 來源 | 用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（releases／masters versions／artists／labels／labels releases） | 約 110 次 | 全 200，3.1 s 節流，零 403／429 |
+| `musicbrainz.org/ws/2`（RG／release＋work-rels／work 與 recording 搜尋） | 約 20 次 | 全 200，UA 逐字照規定 |
+| `ja.wikipedia.org`（`action=raw`） | 21 條 | 18 中；**專輯條目 4/4 中**（SAUDADE／OCEAN BREEZE／JIVE JIVE／PHOTOGRAPHS）；404 的三條是 `伊藤八十八`／`渡辺モリオ`／`火魔神`（人物條目不存在，改走 Discogs 藝人頁與「マライア」「BOØWY」條目） |
+| `en.wikipedia.org`（`action=raw`） | 17 條 | 15 中（`Media Sound`／`Duke's Delight (album)` 404；前者改用 Discogs `labels/138798`）；⚠ `Nefertiti (album)` 是消歧義重定向，要打 `Nefertiti (Miles Davis album)` |
+| ⚠ **`universal-music.co.jp/takanaka-masayoshi/products/<catno>/`** | 5 次 | **4/4 中（姓-名順序！）**；`masayoshi-takanaka` 404；小林泉美 四種 slug 全 404 |
+| ⚠ **`tower.jp/item/<id>`**（站內搜尋 `search/item/<詞>` 可取 item 號） | 12 次 | **全 200、伺服端渲染，逐軌作詞作曲編曲與「発売・販売元 提供資料」都在 HTML 裡**——本組 #6 的決定性來源 |
+| `www.jazzdisco.org/<藝人>/catalog/` | 1 次 | 200，逐場錄音日期與曲目 |
+| `itunes.apple.com/lookup` | 9 次 | 全 200，零 403／429 |
+
+⚠ ⚠ **給簡報三之二的兩條更正**：(1) `universal-music.co.jp` 的 slug **不是一律「名-姓」**——高中正義 是 `takanaka-masayoshi`（姓-名）、c-187 a 的 `yosuke-yamashita` 是名-姓，**兩種都要試**（與 `sonymusic.co.jp` 的大小寫同一種「逐藝人不同」）；(2) **`tower.jp` 的商品頁是新的一條可用路徑**：它轉載廠牌提供的逐軌 credits（作詞／作曲／編曲、器樂與人聲軌的標記），**對「MB 沒建 work、Discogs 逐軌欄空白」的 Kitty／Universal 再發特別有用**；⚠ 但它是廠牌資料的二次轉錄，照主線第 1941-B 條只作交叉、人名仍回 Discogs 核。
+
+## 6814　⚠ 探測層：`previews.json` 一筆誤命中、兩筆可回撈（本層不動該檔，只報）
+
+1. ⚠ ⚠ **#10《Esprit》誤命中**：`status: ready`、`collectionId 1782228513`、`appleTitle` 逐字 `AKI`、`appleArtist` 逐字 `高瀬アキトリオ`、`appleYear 1978`、`aliasOnlyTitle: true`、`yearDrift 4`——**那是 高瀬アキ 1978 年 King 的三重奏首作《AKI》**（`lookup` 逐軌：〈はじめまして〉〈謝肉祭〉〈こもりうた〉⋯，℗ 1978 King Record），**不是本盤**。漂移 4 年低於第 1980-B 條 ≥20 年硬退門檻，所以四道防呆都沒擋——**`aliasOnlyTitle` ＋ 掛名是聯名串的一半（`高瀬アキ`）＋ 盤名證人只來自 alias 的形狀**，建議主線降級並考慮補一道「聯名卡只命中其中一方的領銜作 → 退」。
+2. **#6《夏・Nuts・夏》`unavailable` → Apple jp 1594121404《Natsu Nuts Natsu +2》前九軌逐字是本盤**（2021 加軌版）。
+3. **#8《Elegant Evening》`unavailable` → Apple jp 1327651694《Elegant Evening - EP》五軌逐字是本盤**（第 1974-B 條一之 3 的 `- EP` 形狀）。
+- 其餘 `unavailable` 四筆（#2／#3／#7／#9）策展層已記 Apple 查無，本層未再查；`caa.json` 12 筆裡 11 筆有圖、**#10 `art: null`**。
+
+## 6815　反同構與反向禁令（摘要）
+
+- **跨批已用掉、本組一律不寫**：高中正義 的出生名 劉正義／歸化／赤羽／ミカ・バンド／多賀英典 創 Kitty／SG2000；Casiopea 的 441Hz／團名／Alfa 來歷／神保彰 入團／Harvey Mason；真梨邑ケイ 的宝塚／川口今日子／「大型新人」／discomate＝TBS 子公司（只當版本線背景一句）；鈴木勲 的立教／Milt Hinton／Art Blakey；辛島文雄 的大分／父親／Elvin Jones 六年；池田芳夫 的側錄史與 高瀬アキ 的柏林；渡辺香津美 的 Power Station／17 歲出道／YMO 巡演。
+- **與同批 a 組研究稿的碰撞**：c-188 a《NO FUSE》已用 伊藤八十八 的「岐阜生、創 East Wind、1978 轉 CBS/Sony」→ **本組 #1 改寫成他在 CBS/Sony 的製作名單**；團史與團員生年本組不寫。
+- **マツダ ファミリア 廣告**：#4 的兩首是新格，但 c-187《T-Wave》、c-188 a《Alone》、c-189《Can I Sing?》都各有一次——**寫作層排句型時要避開**。
+- **反向禁令（與作品無關的後續生平，全部未寫）**：真梨邑ケイ 2009 年後的影像作品、小林泉美 旅英與事業、生田朗／田中章弘／大野進／Duke Jordan／鈴木勲／辛島文雄／日野元彦 的歿年、Patrick Cowley 1982-11 辭世（晚於 #4 發行、無直接綁定）、高瀬アキ 的柏林時期。
+
+## 6816　交件自跑與邊界
+
+- `node qa-batch.mjs research c188` → **a 12 full、b 11 full ＋ 1 thin、key 與卡單完全一致 ✓、全部通過 ✓**。
+- 自量：facts 12×10 張 ＋ 11 ＋ 10 ＝ 141 條；`src` 141/141 完整 https；簡體字 0；千分位 0；`hookCandidates` 每張 2；獎項 1 格（#12「'83アルバムベスト10」寫「獲選」、非大賞），入圍／得獎零混用；facts 敘述句零處點名資料平台（第 1982-B／1985-B 條）。
+- **續跑保護**：每張卡的資料分四個模組檔（`scratchpad/c188rb/c188rb-data{1..4}.mjs`，每檔 3 張），`c188rb-build.mjs` 以卡單順序合併、按 `key` 覆寫，每完成一檔就整份寫回輸出檔（3／6／9／12 張四次落檔）；抓取結果全部快取在 `scratchpad/c188rb/cache/`，重啟後重跑零網路成本。
+- **邊界**：只動 `desc-tools/batches/research/c188-b.json`（新增）與本檔（append 本段）；`jp-proper-names.json` append 0 個；卡單、`c188-a.json`、`prop-*.json`、`previews.json`、`caa.json`、`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore 零接觸；零 git 操作。
+
+**編號區間結算**：本段用到 **6806–6816（11 條）**，6817–6835 未用；未越界（a 組 6776–6805）。

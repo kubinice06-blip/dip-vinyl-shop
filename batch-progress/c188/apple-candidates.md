@@ -19,3 +19,20 @@
 - `1682913369` us｜《Elegance》／COSM｜2023｜9 軌｜依據：盤名直查｜**掛名沒過**
 - `314042500` us｜《Elegance》／Rosemary Siemens & Victoria Gomon｜2007｜11 軌｜依據：盤名直查｜**掛名沒過**
 - `1440938568` us｜《The Art of Elegance》／Kristin Chenoweth｜2016｜13 軌｜依據：盤名直查｜**掛名沒過**
+
+## 渡辺香津美《Ganaesia》1982 — **目錄裡找不到**
+
+## 小林泉美《夏・Nuts・夏》1982
+- `1721641385` us｜《Mimi》／Corridor｜2024｜8 軌｜依據：盤名直查｜**掛名沒過**
+
+## South Wind Section《South Wind》1982
+- `313809049` us｜《South Wind》／Uchu｜2008｜8 軌｜依據：盤名直查｜**掛名沒過**
+- `1664606852` us｜《South Wind》／Chhom Chorpom｜2023｜8 軌｜依據：盤名直查｜**掛名沒過**
+- `254310696` us｜《South Wind》／Satoko Fujii Orchestra｜2004｜8 軌｜依據：盤名直查｜**掛名沒過**
+
+## 辛島文雄トリオ《Elegant Evening》1982
+- `1072208407` us｜《Elegant Evening》／Alexander Zonjic｜1985｜8 軌｜依據：盤名直查｜**掛名沒過**
+- `1443426924` us｜《An Elegant Evening》／George Shearing & Mel Tormé｜1986｜10 軌｜依據：盤名直查｜**掛名沒過**
+
+## 鈴木勲 Meets Duke Jordan《Scotch Blues》1982
+- `1345785690` us｜《Scotch & Blues》／The Gin Socks｜2018｜10 軌｜依據：盤名直查｜**掛名沒過**
