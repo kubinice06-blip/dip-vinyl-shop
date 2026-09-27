@@ -41,3 +41,19 @@
 - `300621708` us｜《Native Son》／The Rogue River Band｜2008｜10 軌｜依據：盤名直查｜**掛名沒過**
 - `1554390629` us｜《Native Son》／G. Illish｜2021｜10 軌｜依據：盤名直查｜**掛名沒過**
 - `1524843855` us｜《Native Son》／Gavin Lurssen｜2020｜11 軌｜依據：盤名直查｜**掛名沒過**
+
+## Sidevision《Moon Light》1988
+- `1441483147` us｜《Moon Light》／Jason Stephenson｜2018｜1 軌｜依據：盤名直查｜**掛名沒過**
+- `1683061592` us｜《moon light (Remastered Edition)》／Hirotaka Izumi｜2023｜17 軌｜依據：盤名直查｜**掛名沒過**
+
+## Ottottrio《Super Guitar Session: Hot Live》1988 — **目錄裡找不到**
+
+## 伊藤君子《Follow Me》1989
+- `1862384929` us｜《Follow Me (Deluxe Hawai'i Edition)》／Anuhea｜2018｜16 軌｜依據：盤名直查｜**掛名沒過**
+- `1840994730` us｜《Follow Me》／Julian Vaughn｜2025｜10 軌｜依據：盤名直查｜**掛名沒過**
+
+## 渡辺香津美《Kilowatt》1989
+- `1710178785` us｜《Kilowatt (Expanded Version)》／The Kay-Gees｜1978｜12 軌｜依據：盤名直查｜**掛名沒過**
+- `277507080` us｜《Kilowatt》／OlivierDaySoul｜2008｜13 軌｜依據：盤名直查｜**掛名沒過**
+- `1617066912` us｜《Kilowatt》／Buddha Tribe｜2022｜10 軌｜依據：盤名直查｜**掛名沒過**
+- `1697690905` us｜《Kilowatt》／Various Artists｜2018｜8 軌｜依據：盤名直查｜**掛名沒過**
