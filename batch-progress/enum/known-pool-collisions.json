@@ -73,6 +73,22 @@
    "poolRow": "（批內同碟重複 RG，收的是 `カリオカ` 那一筆）",
    "ruling": "c-186 a 第 5941 條",
    "shape": "同一張 `Kitty MKF 1041`、Discogs 只有一個 master、`namevariations` 逐字 `[\"Samba Calioca\",\"カリオカ\"]`。⚠ ⚠ 2026-09-25 修：這一筆原本填的是**藝人** MBID `18c3632b`（カリオカ），要擋的 RG 是 `7c90b777`——那一道本來永遠命中不到（c-187 a 第 6049 條抓到，主線第 1978-B 條）"
+  },
+  {
+   "rgMbid": "2db00398",
+   "artist": "坂本龍一＆渡辺香津美",
+   "album": "TOKYO JOE",
+   "poolRow": "坂本龍一《Thousand Knives》1978 ＋ 渡辺香津美《KYLYN》1979（seed）的錄音",
+   "ruling": "c-188 b 第 6437 條",
+   "shape": "⚠ 合輯型撞池（8/8 既有錄音）＋ house 錯（原壓 Better Days 屬 jp-1 門內）"
+  },
+  {
+   "rgMbid": "d4c0c0ca",
+   "artist": "板橋文夫",
+   "album": "渡良瀬",
+   "poolRow": "板橋文夫《Watarase》1982（seed，⚠ apex:pearl）",
+   "ruling": "c-188 b 第 6438 條",
+   "shape": "⚠ 和文＝羅馬字等價形，slice 的 album 只拿到和文一半；另一半在 titleCheck.titlesSeen"
   }
  ],
  "_jp1_blind_spots": [

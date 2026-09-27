@@ -106,7 +106,11 @@ for (const b of process.argv.slice(2)) {
       seen.add(line); hits.push(line); why[line] = how;
       if (how === '聯名內含') newSub++;
     }
-    const myForms = titleForms(r.album).map(norm);
+    // ⚠ 2026-09-27（c-188 b 第 6438／6460 條，主線第 1991-B 條）：**`titleCheck.titlesSeen` 也要比**。
+    // `板橋文夫《渡良瀬》` 的 `album` 欄只有和文一半，而池中那張 apex:pearl 是《Watarase》
+    // ——另一半就在同一筆 slice 的 `titlesSeen` 裡，第 1963-B 條那道只拆 `album` 欄所以漏掉。
+    const seenTitles = [r.album, ...(r.titleCheck?.titlesSeen || []), r.titleCheck?.earliestRelease?.title, r.titleCheck?.rgTitle].filter(Boolean);
+    const myForms = [...new Set(seenTitles.flatMap(titleForms).map(norm))].filter(x => x.length >= 2);
     const exact = hits.filter(l => titleForms(l.split('｜')[2]).map(norm).some(x => myForms.includes(x)));
     const inPoolNow = exact.length > 0 || poolRg.has(r.rgMbid);
     const anyCJK = vs.some(hasCJK);
