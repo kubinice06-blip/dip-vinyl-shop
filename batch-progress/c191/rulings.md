@@ -1053,7 +1053,7 @@ Discogs：1040451＝7、1600263＝6、3381187＝2、1267034＝7、2905261＝2、
 
 ## 7073　串流與封面（派工信第五節第 9 點）
 
-**`previews.json` 在本層交件時沒有任何 c-191 條目（探測鏈未跑到）→ 研究稿不寫串流。** `caa.json`：b 組 11 筆裡 10 筆有 CAA 圖；**《World Live '88》`probeError: 503x4`、art 空——是探測失敗，不是市場沒有**（策展層第 6704 條記 Apple 有 1442211481）。
+**`previews.json` 在本層寫稿期間落地（主線 9422374 那一輪）：b 組 ready 7／unavailable 4（`Moon Light`／`Hot Live`／`Follow Me`／`Kilowatt`——四筆與策展層第 6704 條的 Apple 查無逐筆一致）；研究稿 facts 不寫串流，notes 已照交件時狀態更新。** `caa.json`：b 組 11 筆裡 10 筆有 CAA 圖；**《World Live '88》`probeError: 503x4`、art 空——是探測失敗，不是市場沒有**（它的試聽是 ready）。
 
 ## 7074　`desc-tools/jp-proper-names.json`：**append 1 個**
 
