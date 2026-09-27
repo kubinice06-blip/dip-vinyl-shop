@@ -10,18 +10,41 @@
 //
 // 用法：node batch-progress/new-rulings.mjs c187 "日本爵士獨立廠牌線 jp-2・**第五批**；1979 年段" 5996 6025 6026 6055
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 
 // ⚠ 2026-09-25（c-187 a 第 6345 條後的補記，主線第 1987-B 條）：**配條號之前先取真正的全域最大值**。
 // 我替 c-187 的研究層配了 6316–6345，而那時全域最大已經是 6405（c-186 寫作層）——沒撞號是運氣。
 // 用法：node batch-progress/new-rulings.mjs --max     → 印出全域最大條號
+// 用法：node batch-progress/new-rulings.mjs --reserve c188 研究 30 30   → 從全域最大值往後配兩段，寫進該批檔頭並印出
+if (process.argv[2] === '--reserve') {
+  const [, , , b, layer, ...ns] = process.argv;
+  const p = path.join('batch-progress', b, 'rulings.md');
+  if (!fs.existsSync(p)) { console.log(`${p} 不存在——先建骨架`); process.exit(1); }
+  const out = execFileSync(process.execPath, [process.argv[1], '--max'], { encoding: 'utf8' });
+  let next = Number(out.match(/從 (\d+)/)[1]);
+  const ranges = ns.map(n => { const r = [next, next + Number(n) - 1]; next += Number(n); return r; });
+  const label = ranges.map((r, i) => `${ranges.length > 1 ? 'ab12'[i] + ' ' : ''}${r[0]}–${r[1]}`).join('、');
+  const t = fs.readFileSync(p, 'utf8').split('\n');
+  const at = t.findIndex(l => /^---\s*$/.test(l));
+  t.splice(at < 0 ? 1 : at, 0, `> **預留（${new Date().toISOString().slice(0, 10)}）：${layer} ${label}。**`);
+  fs.writeFileSync(p, t.join('\n'));
+  console.log(`${b} ${layer}：${label}`);
+  process.exit(0);
+}
 if (process.argv[2] === '--max') {
   let max = 0;
   for (const d of fs.readdirSync('batch-progress')) {
     for (const f of ['rulings.md', 'rulings-mainline.md']) {
       const p = path.join('batch-progress', d, f);
       if (!fs.existsSync(p)) continue;
-      for (const m of fs.readFileSync(p, 'utf8').matchAll(/^## (\d{4})/gm)) max = Math.max(max, Number(m[1]));
+      const t = fs.readFileSync(p, 'utf8');
+      for (const m of t.matchAll(/^## (\d{4})/gm)) max = Math.max(max, Number(m[1]));
+      // ⚠ 2026-09-27（主線第 1990-B 條）：**已預留、還沒寫條文的區間也要算**。
+      // 剩下四批要跨批並行（c-189 策展與 c-188 研究同時跑），只數 `## NNNN` 會把
+      // 已經寫進骨架檔頭、代理還沒動筆的那一段再配給別人。骨架檔頭與 `--reserve` 寫的行都含「編號區間」或「預留」。
+      for (const line of t.split('\n')) if (/編號區間|預留/.test(line))
+        for (const m of line.matchAll(/(\d{4})[–-](\d{4})/g)) max = Math.max(max, Number(m[2]));
     }
   }
   console.log(`全域最大條號 ${max}；下一段從 ${max + 1} 開始配。`);

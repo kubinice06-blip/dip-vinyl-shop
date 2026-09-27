@@ -25,8 +25,15 @@
    "CARIOCA"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c186｜カリオカ｜Sunny Place Carnival｜1978",
+    "c187｜カリオカ｜Little Train｜1979"
+   ],
+   "matchedBy": {
+    "c186｜カリオカ｜Sunny Place Carnival｜1978": "等值",
+    "c187｜カリオカ｜Little Train｜1979": "等值"
+   }
   },
   "titleCheck": {
    "rgTitle": "Snooze",
@@ -73,7 +80,7 @@
    "小林 泉美"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -135,7 +142,10 @@
     "c182｜高中正義｜Hot Pepper｜1988",
     "c182｜高中正義｜Gaps!｜1989",
     "c185｜高中正義｜An Insatiable High｜1977",
-    "c185｜高中正義｜Takanaka｜1977"
+    "c185｜高中正義｜Takanaka｜1977",
+    "c186｜高中正義｜Brasilian Skies｜1978",
+    "c187｜高中正義｜Super Takanaka Live!｜1980",
+    "c187｜高中正義｜T-Wave｜1980"
    ],
    "matchedBy": {
     "seed｜高中正義｜Seychelles｜1976": "等值",
@@ -149,7 +159,10 @@
     "c182｜高中正義｜Hot Pepper｜1988": "等值",
     "c182｜高中正義｜Gaps!｜1989": "等值",
     "c185｜高中正義｜An Insatiable High｜1977": "等值",
-    "c185｜高中正義｜Takanaka｜1977": "等值"
+    "c185｜高中正義｜Takanaka｜1977": "等值",
+    "c186｜高中正義｜Brasilian Skies｜1978": "等值",
+    "c187｜高中正義｜Super Takanaka Live!｜1980": "等值",
+    "c187｜高中正義｜T-Wave｜1980": "等值"
    }
   },
   "titleCheck": {
@@ -207,7 +220,8 @@
     "seed｜今田勝トリオ｜Maki｜1970",
     "seed｜今田勝トリオ｜Planets｜1977",
     "c134｜今田勝トリオ｜Maki｜1970",
-    "c134｜今田勝トリオ｜Planets｜1977"
+    "c134｜今田勝トリオ｜Planets｜1977",
+    "c187｜今田勝｜Andalusian Breeze｜1980"
    ],
    "matchedBy": {
     "seed｜今田勝トリオ｜One for Duke｜1975": "削編制後綴",
@@ -217,7 +231,8 @@
     "seed｜今田勝トリオ｜Maki｜1970": "削編制後綴",
     "seed｜今田勝トリオ｜Planets｜1977": "削編制後綴",
     "c134｜今田勝トリオ｜Maki｜1970": "削編制後綴",
-    "c134｜今田勝トリオ｜Planets｜1977": "削編制後綴"
+    "c134｜今田勝トリオ｜Planets｜1977": "削編制後綴",
+    "c187｜今田勝｜Andalusian Breeze｜1980": "等值"
    }
   },
   "titleCheck": {
@@ -394,14 +409,22 @@
     "seed｜Casiopea｜Mint Jams｜1982",
     "seed｜Casiopea｜The Party｜1990",
     "seed｜Casiopea｜Dramatic｜1993",
-    "seed｜Casiopea｜Super Flight｜1979"
+    "seed｜Casiopea｜Super Flight｜1979",
+    "c187｜Casiopea｜Make Up City｜1980",
+    "c187｜Casiopea｜Thunder Live｜1980",
+    "c187｜Casiopea｜Cross Point｜1981",
+    "c187｜Casiopea｜Eyes of the Mind｜1981"
    ],
    "matchedBy": {
     "seed｜Casiopea｜Casiopea｜1979": "等值",
     "seed｜Casiopea｜Mint Jams｜1982": "等值",
     "seed｜Casiopea｜The Party｜1990": "等值",
     "seed｜Casiopea｜Dramatic｜1993": "等值",
-    "seed｜Casiopea｜Super Flight｜1979": "等值"
+    "seed｜Casiopea｜Super Flight｜1979": "等值",
+    "c187｜Casiopea｜Make Up City｜1980": "等值",
+    "c187｜Casiopea｜Thunder Live｜1980": "等值",
+    "c187｜Casiopea｜Cross Point｜1981": "等值",
+    "c187｜Casiopea｜Eyes of the Mind｜1981": "等值"
    }
   },
   "titleCheck": {
@@ -464,12 +487,14 @@
    "artistAlbumsInPool": [
     "seed｜佐藤博｜Awakening｜1982",
     "c176｜佐藤博｜Super Market｜1976",
-    "c176｜佐藤博｜Time｜1977"
+    "c176｜佐藤博｜Time｜1977",
+    "c187｜佐藤博｜Orient｜1979"
    ],
    "matchedBy": {
     "seed｜佐藤博｜Awakening｜1982": "等值",
     "c176｜佐藤博｜Super Market｜1976": "等值",
-    "c176｜佐藤博｜Time｜1977": "等值"
+    "c176｜佐藤博｜Time｜1977": "等值",
+    "c187｜佐藤博｜Orient｜1979": "等值"
    }
   },
   "titleCheck": {
@@ -517,8 +542,13 @@
    "Kitajima, Osamu"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c187｜喜多嶋修｜Masterless Samurai｜1980"
+   ],
+   "matchedBy": {
+    "c187｜喜多嶋修｜Masterless Samurai｜1980": "等值"
+   }
   },
   "titleCheck": {
    "rgTitle": "Dragon King",
@@ -628,7 +658,7 @@
    "マリーン・ペーニャ・リム"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -679,7 +709,7 @@
    "Seawind"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -804,7 +834,7 @@
    "ナニワエキスプレス"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -852,8 +882,13 @@
    "ザ・プレイヤーズ"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
-   "artistAlbumsInPool": []
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "c186｜The Players Featuring 鈴木宏昌｜Galaxy｜1979"
+   ],
+   "matchedBy": {
+    "c186｜The Players Featuring 鈴木宏昌｜Galaxy｜1979": "聯名內含"
+   }
   },
   "titleCheck": {
    "rgTitle": "Space Travel",
@@ -905,10 +940,20 @@
   "poolRecheck": {
    "status": "同藝人在池中，盤名不同——**逐張人工比**",
    "artistAlbumsInPool": [
-    "seed｜THE SQUARE｜TRUTH｜1987"
+    "seed｜THE SQUARE｜TRUTH｜1987",
+    "c186｜THE SQUARE｜Lucky Summer Lady｜1978",
+    "c186｜THE SQUARE｜Midnight Lover｜1978",
+    "c186｜THE SQUARE｜Make Me A Star｜1979",
+    "c187｜THE SQUARE｜Rockoon｜1980",
+    "c187｜THE SQUARE｜Magic｜1981"
    ],
    "matchedBy": {
-    "seed｜THE SQUARE｜TRUTH｜1987": "等值"
+    "seed｜THE SQUARE｜TRUTH｜1987": "等值",
+    "c186｜THE SQUARE｜Lucky Summer Lady｜1978": "等值",
+    "c186｜THE SQUARE｜Midnight Lover｜1978": "等值",
+    "c186｜THE SQUARE｜Make Me A Star｜1979": "等值",
+    "c187｜THE SQUARE｜Rockoon｜1980": "等值",
+    "c187｜THE SQUARE｜Magic｜1981": "等值"
    }
   },
   "titleCheck": {
@@ -957,7 +1002,7 @@
    "Igarashi Hiroaki"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1004,7 +1049,7 @@
    "Minako Ito"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1079,7 +1124,10 @@
     "c177｜日野皓正｜City Connection｜1979",
     "c178｜日野皓正｜Daydream｜1980",
     "c184｜日野皓正｜Speak To Loneliness｜1975",
-    "c185｜日野皓正｜Hogiuta｜1976"
+    "c185｜日野皓正｜Hogiuta｜1976",
+    "c187｜日野皓正｜Wheel Stone - Live in Nemuro｜1979",
+    "c187｜日野皓正｜Double Rainbow｜1981",
+    "c187｜日野皓正｜Wheel Stone - Live in Nemuro, Volume 2｜1981"
    ],
    "matchedBy": {
     "seed｜日野皓正クインテット｜Live!｜1973": "前綴",
@@ -1106,7 +1154,10 @@
     "c177｜日野皓正｜City Connection｜1979": "等值",
     "c178｜日野皓正｜Daydream｜1980": "等值",
     "c184｜日野皓正｜Speak To Loneliness｜1975": "等值",
-    "c185｜日野皓正｜Hogiuta｜1976": "等值"
+    "c185｜日野皓正｜Hogiuta｜1976": "等值",
+    "c187｜日野皓正｜Wheel Stone - Live in Nemuro｜1979": "等值",
+    "c187｜日野皓正｜Double Rainbow｜1981": "等值",
+    "c187｜日野皓正｜Wheel Stone - Live in Nemuro, Volume 2｜1981": "等值"
    }
   },
   "titleCheck": {
@@ -1154,7 +1205,7 @@
    "ナニワエキスプレス"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1222,7 +1273,8 @@
     "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972",
     "c184｜笠井紀美子 & Oliver Nelson｜In Person｜1974",
     "c184｜笠井紀美子 with Cedar Walton Trio｜Kimiko Is Here｜1975",
-    "c185｜笠井紀美子｜We Can Fall In Love｜1976"
+    "c185｜笠井紀美子｜We Can Fall In Love｜1976",
+    "c186｜笠井紀美子｜Round And Round｜1978"
    ],
    "matchedBy": {
     "seed｜笠井紀美子｜Butterfly｜1979": "等值",
@@ -1241,7 +1293,8 @@
     "c183｜笠井紀美子 with Gil Evans Orchestra｜Satin Doll｜1972": "前綴",
     "c184｜笠井紀美子 & Oliver Nelson｜In Person｜1974": "前綴",
     "c184｜笠井紀美子 with Cedar Walton Trio｜Kimiko Is Here｜1975": "前綴",
-    "c185｜笠井紀美子｜We Can Fall In Love｜1976": "等值"
+    "c185｜笠井紀美子｜We Can Fall In Love｜1976": "等值",
+    "c186｜笠井紀美子｜Round And Round｜1978": "等值"
    }
   },
   "titleCheck": {
@@ -1326,7 +1379,10 @@
     "c178｜渡辺香津美｜Talk You All Tight｜1981",
     "c184｜土取利行・坂本龍一｜Disappointment-Hateruma｜1976",
     "c185｜渡辺香津美カルテット｜Milky Shade｜1976",
-    "c185｜大村憲司, 渡辺香津美, Lee Ritenour｜Concierto De Aranjuez｜1978"
+    "c185｜大村憲司, 渡辺香津美, Lee Ritenour｜Concierto De Aranjuez｜1978",
+    "c186｜渡辺香津美 & The Gentle Thoughts｜Mermaid Boulevard｜1978",
+    "c186｜ミッキー吉野, 渡辺香津美｜Kaleidoscope｜1978",
+    "c186｜渡辺香津美｜Lonesome Cat｜1978"
    ],
    "matchedBy": {
     "seed｜坂本龍一｜async｜2017": "等值",
@@ -1349,7 +1405,10 @@
     "c178｜渡辺香津美｜Talk You All Tight｜1981": "等值",
     "c184｜土取利行・坂本龍一｜Disappointment-Hateruma｜1976": "分隔符切段",
     "c185｜渡辺香津美カルテット｜Milky Shade｜1976": "前綴",
-    "c185｜大村憲司, 渡辺香津美, Lee Ritenour｜Concierto De Aranjuez｜1978": "分隔符切段"
+    "c185｜大村憲司, 渡辺香津美, Lee Ritenour｜Concierto De Aranjuez｜1978": "分隔符切段",
+    "c186｜渡辺香津美 & The Gentle Thoughts｜Mermaid Boulevard｜1978": "分隔符切段",
+    "c186｜ミッキー吉野, 渡辺香津美｜Kaleidoscope｜1978": "分隔符切段",
+    "c186｜渡辺香津美｜Lonesome Cat｜1978": "等值"
    }
   },
   "titleCheck": {
@@ -1455,7 +1514,7 @@
    "Okamoto, Issei"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1506,7 +1565,7 @@
    "田原今日子"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1567,7 +1626,10 @@
     "c175｜渡辺香津美｜Endless Way｜1975",
     "c178｜渡辺香津美｜Talk You All Tight｜1981",
     "c185｜渡辺香津美カルテット｜Milky Shade｜1976",
-    "c185｜大村憲司, 渡辺香津美, Lee Ritenour｜Concierto De Aranjuez｜1978"
+    "c185｜大村憲司, 渡辺香津美, Lee Ritenour｜Concierto De Aranjuez｜1978",
+    "c186｜渡辺香津美 & The Gentle Thoughts｜Mermaid Boulevard｜1978",
+    "c186｜ミッキー吉野, 渡辺香津美｜Kaleidoscope｜1978",
+    "c186｜渡辺香津美｜Lonesome Cat｜1978"
    ],
    "matchedBy": {
     "seed｜渡辺香津美｜To Chi Ka｜1980": "等值",
@@ -1579,7 +1641,10 @@
     "c175｜渡辺香津美｜Endless Way｜1975": "等值",
     "c178｜渡辺香津美｜Talk You All Tight｜1981": "等值",
     "c185｜渡辺香津美カルテット｜Milky Shade｜1976": "前綴",
-    "c185｜大村憲司, 渡辺香津美, Lee Ritenour｜Concierto De Aranjuez｜1978": "聯名內含"
+    "c185｜大村憲司, 渡辺香津美, Lee Ritenour｜Concierto De Aranjuez｜1978": "聯名內含",
+    "c186｜渡辺香津美 & The Gentle Thoughts｜Mermaid Boulevard｜1978": "前綴",
+    "c186｜ミッキー吉野, 渡辺香津美｜Kaleidoscope｜1978": "聯名內含",
+    "c186｜渡辺香津美｜Lonesome Cat｜1978": "等值"
    }
   },
   "titleCheck": {
@@ -1641,7 +1706,10 @@
     "c182｜高中正義｜Hot Pepper｜1988",
     "c182｜高中正義｜Gaps!｜1989",
     "c185｜高中正義｜An Insatiable High｜1977",
-    "c185｜高中正義｜Takanaka｜1977"
+    "c185｜高中正義｜Takanaka｜1977",
+    "c186｜高中正義｜Brasilian Skies｜1978",
+    "c187｜高中正義｜Super Takanaka Live!｜1980",
+    "c187｜高中正義｜T-Wave｜1980"
    ],
    "matchedBy": {
     "seed｜高中正義｜Seychelles｜1976": "等值",
@@ -1655,7 +1723,10 @@
     "c182｜高中正義｜Hot Pepper｜1988": "等值",
     "c182｜高中正義｜Gaps!｜1989": "等值",
     "c185｜高中正義｜An Insatiable High｜1977": "等值",
-    "c185｜高中正義｜Takanaka｜1977": "等值"
+    "c185｜高中正義｜Takanaka｜1977": "等值",
+    "c186｜高中正義｜Brasilian Skies｜1978": "等值",
+    "c187｜高中正義｜Super Takanaka Live!｜1980": "等值",
+    "c187｜高中正義｜T-Wave｜1980": "等值"
    }
   },
   "titleCheck": {
@@ -1719,7 +1790,10 @@
     "c182｜高中正義｜Hot Pepper｜1988",
     "c182｜高中正義｜Gaps!｜1989",
     "c185｜高中正義｜An Insatiable High｜1977",
-    "c185｜高中正義｜Takanaka｜1977"
+    "c185｜高中正義｜Takanaka｜1977",
+    "c186｜高中正義｜Brasilian Skies｜1978",
+    "c187｜高中正義｜Super Takanaka Live!｜1980",
+    "c187｜高中正義｜T-Wave｜1980"
    ],
    "matchedBy": {
     "seed｜高中正義｜Seychelles｜1976": "等值",
@@ -1733,7 +1807,10 @@
     "c182｜高中正義｜Hot Pepper｜1988": "等值",
     "c182｜高中正義｜Gaps!｜1989": "等值",
     "c185｜高中正義｜An Insatiable High｜1977": "等值",
-    "c185｜高中正義｜Takanaka｜1977": "等值"
+    "c185｜高中正義｜Takanaka｜1977": "等值",
+    "c186｜高中正義｜Brasilian Skies｜1978": "等值",
+    "c187｜高中正義｜Super Takanaka Live!｜1980": "等值",
+    "c187｜高中正義｜T-Wave｜1980": "等值"
    }
   },
   "titleCheck": {
@@ -1782,7 +1859,7 @@
    "小林 泉美"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1877,7 +1954,7 @@
    "加藤 登紀子"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1927,7 +2004,7 @@
    "海老名泰葉"
   ],
   "poolRecheck": {
-   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-25、池 22330 列／133 批卡單）",
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-27、池 22382 列／135 批卡單）",
    "artistAlbumsInPool": []
   },
   "titleCheck": {
@@ -1993,7 +2070,8 @@
     "seed｜今田勝トリオ｜Maki｜1970",
     "seed｜今田勝トリオ｜Planets｜1977",
     "c134｜今田勝トリオ｜Maki｜1970",
-    "c134｜今田勝トリオ｜Planets｜1977"
+    "c134｜今田勝トリオ｜Planets｜1977",
+    "c187｜今田勝｜Andalusian Breeze｜1980"
    ],
    "matchedBy": {
     "seed｜今田勝トリオ｜One for Duke｜1975": "削編制後綴",
@@ -2005,7 +2083,8 @@
     "seed｜今田勝トリオ｜Maki｜1970": "削編制後綴",
     "seed｜今田勝トリオ｜Planets｜1977": "削編制後綴",
     "c134｜今田勝トリオ｜Maki｜1970": "削編制後綴",
-    "c134｜今田勝トリオ｜Planets｜1977": "削編制後綴"
+    "c134｜今田勝トリオ｜Planets｜1977": "削編制後綴",
+    "c187｜今田勝｜Andalusian Breeze｜1980": "等值"
    }
   },
   "titleCheck": {
@@ -2248,14 +2327,22 @@
     "seed｜Casiopea｜Mint Jams｜1982",
     "seed｜Casiopea｜The Party｜1990",
     "seed｜Casiopea｜Dramatic｜1993",
-    "seed｜Casiopea｜Super Flight｜1979"
+    "seed｜Casiopea｜Super Flight｜1979",
+    "c187｜Casiopea｜Make Up City｜1980",
+    "c187｜Casiopea｜Thunder Live｜1980",
+    "c187｜Casiopea｜Cross Point｜1981",
+    "c187｜Casiopea｜Eyes of the Mind｜1981"
    ],
    "matchedBy": {
     "seed｜Casiopea｜Casiopea｜1979": "等值",
     "seed｜Casiopea｜Mint Jams｜1982": "等值",
     "seed｜Casiopea｜The Party｜1990": "等值",
     "seed｜Casiopea｜Dramatic｜1993": "等值",
-    "seed｜Casiopea｜Super Flight｜1979": "等值"
+    "seed｜Casiopea｜Super Flight｜1979": "等值",
+    "c187｜Casiopea｜Make Up City｜1980": "等值",
+    "c187｜Casiopea｜Thunder Live｜1980": "等值",
+    "c187｜Casiopea｜Cross Point｜1981": "等值",
+    "c187｜Casiopea｜Eyes of the Mind｜1981": "等值"
    }
   },
   "titleCheck": {
@@ -2311,14 +2398,22 @@
     "seed｜Casiopea｜Mint Jams｜1982",
     "seed｜Casiopea｜The Party｜1990",
     "seed｜Casiopea｜Dramatic｜1993",
-    "seed｜Casiopea｜Super Flight｜1979"
+    "seed｜Casiopea｜Super Flight｜1979",
+    "c187｜Casiopea｜Make Up City｜1980",
+    "c187｜Casiopea｜Thunder Live｜1980",
+    "c187｜Casiopea｜Cross Point｜1981",
+    "c187｜Casiopea｜Eyes of the Mind｜1981"
    ],
    "matchedBy": {
     "seed｜Casiopea｜Casiopea｜1979": "等值",
     "seed｜Casiopea｜Mint Jams｜1982": "等值",
     "seed｜Casiopea｜The Party｜1990": "等值",
     "seed｜Casiopea｜Dramatic｜1993": "等值",
-    "seed｜Casiopea｜Super Flight｜1979": "等值"
+    "seed｜Casiopea｜Super Flight｜1979": "等值",
+    "c187｜Casiopea｜Make Up City｜1980": "等值",
+    "c187｜Casiopea｜Thunder Live｜1980": "等值",
+    "c187｜Casiopea｜Cross Point｜1981": "等值",
+    "c187｜Casiopea｜Eyes of the Mind｜1981": "等值"
    }
   },
   "titleCheck": {
