@@ -450,8 +450,17 @@ for (const c of cards) {
       const tw = albumCands.filter(a => titleOk(a, gt, !!c.selfTitled));
       if (looseTitleOk(c.album, gt, !!c.selfTitled)) tw.push(c.album);
       const aliasOnly = tw.length > 0 && tw.every(t => !coreTitles.has(canon(t)));
-      if (!aliasOnly) return { ok: true, aliasOnly };
       const sameNameEntry = canon(gt) === canon(ga) && canon(c.artist) !== canon(ga);
+      // ⚠ ⚠ 2026-09-27（c-189 a 研究層抓到，主線第 1997-B 條）：**「盤名＝掛名」的同名條目，本卡又不是同名盤 → 一律退，不只 aliasOnly 那一支**。
+      // `日野皓正《New York Times》1983` → Apple 的 `New York Times《New York Times》2007`（5 軌、漂移 24）：
+      // 盤名逐字是核心題（不是 alias 衍生），所以舊寫法在上一行就放行了；而掛名那一關是靠 `queryAlias`
+      // 裡的盤名字串過的——**一個藝人名剛好等於我們的盤名，他的同名專輯就會兩關全過。**
+      // ⚠ 但**要搭年份漂移 ≥10**：回測全池 ready 八筆同形，`Clifford Jordan《Cliff Jordan》1957`、
+      // `New Directions《New Directions》1999` 那幾筆是真的（Apple 把聯名／化名團當掛名），漂移都是 0；
+      // 誤命中的三筆（New York Times 24／Pyramid 44／Kyo 20+）漂移都 ≥20。
+      const ydS = c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0;
+      if (sameNameEntry && !c.selfTitled && ydS >= 10) return { ok: false, aliasOnly, why: `盤名掛名同名條目（本卡不是同名盤）＋年份漂移 ${ydS} 年` };
+      if (!aliasOnly) return { ok: true, aliasOnly };
       const yd = c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0;
       const fragment = tw.every(t => canon(t) !== canon(gt) && canon(gt).includes(canon(t)));
       if (sameNameEntry) return { ok: false, aliasOnly, why: 'aliasOnlyTitle＋盤名掛名同名' };
