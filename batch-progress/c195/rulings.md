@@ -312,3 +312,285 @@
 4. ⚠ **MB 只建 CD 的那一形本組中三筆（#6／#10／#16），而 `titleCheck` 三欄都一致**——**`house` 是 `toshiba`／`columbia` 而 MB 只有一筆 CD 的，先去版本表找 LP 原壓的題與年份。**
 
 **編號區間結算**：本節用到 **7416–7442（共 27 條），未越界（b 組 7446–7475）**；7443–7445 留空。
+
+
+---
+
+# b 組（17 張｜第 4 堆：外國藝人的日本原盤 1983–1985；slice 的 `house` 分佈：victor 6・toshiba 4・king 3・denon 2・King 1・CBS/Sony 1；⚠ **17 筆逐筆以 Discogs 最早那一版的 `labels` 欄 ＋ `versions` 全表 ＋ ℗ 行核過原盤國別，「日本是原盤」不成立 4 筆**）｜策展層｜2026-09-28
+
+批次 c-195｜b 組 17 張｜輸入 `batch-progress/c195/slice.json` 的 `g === "b"`｜輸出 `batch-progress/c195/prop-b.json`（每筆帶 `pile: 4`）
+判準照 `CURATION-BRIEF-hoyi.md` 第〇節第 4 堆 → `CURATION-BRIEF-jp2.md` 全檔 → `CURATION-BRIEF-jp1.md` 全檔 → `CURATION-BRIEF-bluenote-post1985.md`（含附錄二）→ `CURATION-BRIEF-bluenote.md` → `CURATION-BRIEF-c131.md`，
+＋ 主線第 1934-B…2008-B 條 ＋ c-188…c-194 的策展段。⚠ **引用裁定一律寫成「c-18X 第 NNNN 條」**。
+**本組編號區間 7446–7475（本段用到 7446–7473）。**
+
+---
+
+## 7446　（**總表**）：**17 張＝收 9 ／ 退 8**（全部第 4 堆：收 9 退 8）
+
+**收件率 53%。退件八筆分兩種形狀**：**(a) 日本不是原盤 4 筆**（法國 Delphine ×2、英國 Towerbell、美國 Concord Jazz 的日本版）；**(b) 日本唯一原盤成立、退在盤面／曲目 4 筆**（Fruitcake 兩張的盤面零樂手、Salena Jones 與 Marlene 的流行人聲盤）。**撞池 0**（slice 唯一一格「確定撞池」是假陽性，7449）。
+
+| # | 掛名 —《盤名》（slice） | 年 | `house` | 處置 | 依據（條號） |
+|---:|---|---:|---|---|---|
+| 1 | Rosemary Clooney with Les Brown & His Band of Renown —《Aurex Jazz Festival 83》 | 1983 | toshiba | 收（**邊界**） | 日本唯一；⑤ 第三形（`styles` 只有 `Vocal`）→ 第 3716 條救濟成立；`live: true` 靠姊妹盤補場館日期（7459／7465） |
+| 2 | The Jazztet —《Voices All》 | 1983 | toshiba | 收 | 東京錄音、三版全日本；池中《Moment to Moment》1983 是米蘭的另一場（7467） |
+| 3 | Warne Marsh, Gary Foster —《Warne Marsh Meets Gary Foster》 | 1983 | toshiba | 收 | 秋吉敏子 製作、資料庫裡只有這一筆；**掛名改 `Warne Marsh & Gary Foster`**（7462） |
+| 4 | Fruitcake —《Fruitcake》 | 1983 | victor | **退** | 只在日本發行成立；**第 1925-B 條：四版盤面零樂手、池中零列，主線第 1967-B 條一之 1 的例外不適用**（7447） |
+| 5 | Richard Clayderman —《Couleur tendresse》 | 1983 | victor | **退** | 原盤法國 Delphine（℗ Delphine、巴黎錄音；12 軌裡 7 軌＝1982 法國原盤）；⑤ 前半 ＋ ① ＋ 第 3716 條三肢全敗（7448） |
+| 6 | French Toast —《French Toast》 | 1984 | King | 收 | **c-180 第 4870 條唯一理由作廢**；西德同號是 King 授權 Bellaphon（7455） |
+| 7 | The Great Jazz Trio —《N.Y.Sophisticate: A Tribute to Duke Ellington》 | 1984 | denon | 收 | 原壓 `Interface YF-7084`（日本コロムビア）；**盤名空格照 Discogs**（7458） |
+| 8 | The Great Jazz Trio —《Monk's Moods》 | 1984 | denon | 收 | 原壓 `Interface YF-7095`；日野皓正 客席兩軌 |
+| 9 | Mal Waldron —《You And The Night And The Music (Mal '84)》 | 1984 | king | 收 | King 自錄；西德／美國版都是授權出去的 |
+| 10 | Shirley Bassey with the London Symphony Orchestra conducted by Carl Davis —《I Am What I Am》 | 1984 | king | **退** | 原盤英國 `Towerbell TOWLP 7`；⑤ 前半；**poolRecheck「確定撞池」是假陽性**（7449） |
+| 11 | The Dirty Dozen Brass Band —《My Feet Can't Fail Me Now》 | 1984 | king | **退** | 原盤美國 `Concord Jazz GW-3005`（℗ Concord Jazz, Inc.）（7450） |
+| 12 | Chris Connor, Ernestine Anderson, Carol Sloane —《Three Pearls》 | 1984 | toshiba | 收（**邊界**） | 日本唯一；⑤ 第三形 → 第 3716 條救濟成立（7465） |
+| 13 | Fruitcake —《Fruitcake 2》 | 1984 | victor | **退** | 原壓 `genres` 零 Jazz（⑤ 前半）＋ 第 1925-B 條（盤面零樂手）＋ 救濟三肢全敗（7451） |
+| 14 | Richard Clayderman —《Couleur Tendresse》 | 1984 | victor | **退** | **與 #5 同一個 Discogs master 的 1984 CD（MB 重複 RG）**；理由同 #5（7452） |
+| 15 | Salena Jones —《Feelings Change》 | 1984 | victor | **退** | 日本原盤成立；**第 5701 條乙 6/10 ＋ 第 1923-B 條**（7453） |
+| 16 | Shakatak —《Live in Japan》 | 1984 | victor | 收（**邊界**） | 1984 年只在日本發行；**原壓零樂手 → 主線第 1967-B 條一之 1（seed 已有本團）**；`live: true`（7466） |
+| 17 | Marlene —《Be・Pop》 | 1985 | CBS/Sony | **退** | **c-189 第 6574 條的四項作廢**；第 1923-B 條 ＋ 第 5701 條甲 0 照舊成立（7454） |
+
+**退件的條款分佈**（八筆，一筆可多款）：**「日本是原盤」不成立 4 筆**（#5／#10／#11／#14）、**⑤ 款前半 4 筆**（#5／#10／#13／#14）、**① 款 2 筆**（#5／#14，`Easy Listening`）、**第 3716 條救濟三肢全敗 4 筆**（#5／#10／#13／#14）、**第 1925-B 條盤面零樂手 2 筆**（#4／#13）、**第 5701 條第三肢不成立 2 筆**（#15 乙 6/10、#17 甲 0）、**第 1923-B 條演奏主體 2 筆**（#15／#17）、**第 397 條（既有錄音重排）1 筆**（#5／#14 同一張碟）、**撞池 0、第 4106 條四項 0（本堆取消）**。
+
+⚠ **橫向數字**：**年份改判 0 筆**；**盤名真改判 0 筆**（#7 取 Discogs 的空格形，`k()` 同鍵）；**slice 的 `artist` 欄改判 1 筆**（#3 分隔符）；**`live` 收件 `true` 2 筆**（#1 邊界、#16 三肢全過）、#2 的「Recorded live on two tracks」判 `false`；**再發數 9 筆收件逐筆跑完 `versions`（8 筆有 master 頁、#3 資料庫裡只有一筆），MB 平均低估 72%**；**改釘 rgMbid 0、§1 人工身分 0、孤兒 release 1（#1，已計入）、撞池 0**。
+
+⚠ ⚠ **本組最重要的四件**：
+1. ⚠ ⚠ **slice `source` 欄的「甲」本組錯 2/13（15%），錯的是同一張碟**（7456）：**MB 對 `Richard Clayderman《Couleur Tendresse》` 只建了日本ビクター 版、而且建成兩個 RG**（1983 LP ＋ 1984 CD），**Discogs 版本表一打就是 1982 法國 Delphine 原盤**——**這是 c-193 a 記的「MB 只建日本版」第四個廠牌（MPS／Freedom／GMP 之後的 Delphine）**。「不明」2 筆全是授權版（與 c-193 b、c-195 a 同形）；前批裁定 2 筆原盤全在日本。
+2. ⚠ ⚠ **`priorRulingHits` 兩筆：一收一退**（7455）：`French Toast` 在 c-180 **只退在外國藝人那一關**（本線取消）→ 收；`Marlene《Be・Pop》` 在 c-189 **另有第 1923-B 條與曲目兩條** → 維持退，理由改寫。
+3. ⚠ ⚠ **三張邊界收件，兩種形狀**（7465／7466）：**人聲＋爵士編制、曲目是標準曲、`styles` 只有 `Vocal`**（#1／#12，走第 3716 條救濟）；**原壓盤面零樂手、但本團已在池中**（#16，走主線第 1967-B 條一之 1）——**與本組退掉的 `Fruitcake` 兩張（池中零列）分界在「池中有沒有這一團」**。
+4. ⚠ **`house` 快篩在本組錯 5/17**（7461）：`denon` ×2（原壓是 `Interface`）、`victor` ×3（Shakatak 原壓是日本ポリドール、Clayderman 是法國 Delphine 的日本版）——**第 4 堆不看廠牌門，都不影響收退，但 `label` 欄全部照原壓改寫。**
+
+---
+
+## 退件的裁定（7447–7454）
+
+## 7447　⚠ 退：`Fruitcake —《Fruitcake》`（rg 6e4c9b95）——**第 1925-B 條：四版盤面零樂手，池中零列，主線第 1967-B 條一之 1 的例外不適用；「日本是原盤」成立（只在日本發行）**
+
+**事實**：**Discogs master 825201 的 `versions` 4 版全是日本ビクター**（1983 `VIJ-6401` LP＝6191909、1983 卡帶 `VCJ-1562`、1984 `VDP-16` CD、2010 `NCS-746` CD）；原壓 `companies` 逐字「Manufactured By: Victor Musical Industries, Inc.」「**Licensed From: Dureco Benelux B.V.**」，2010 CD 逐字「Phonographic Copyright (p): Strengholt Music Productions B.V.」「Recorded At: Dureco Studio／Bandstand／Wisseloord Studios」（荷蘭）；MB 另有一筆無日期的 `High Fashion Music` 數位版（annotation 逐字「℗ 1983 High Fashion Music B.V. - Hilversum - The Netherlands」）。Discogs 藝人頁 142508 profile 逐字「Dutch disco and fusion group … In the mid-1980s, Fruitcake released three albums exclusively in Japan」。
+**`genres` 逐字 `Jazz`／`Funk / Soul`、`styles` 逐字 `Jazz-Funk`／`Fusion`**（曲風那一關過得了）；**四版的 `extraartists` 只有 `Producer`（Benny Baan／Rob Taekema）、`Engineer` 與解說，逐軌 credits 也是空的（主線第 1987-B 條兩層都看了）——一位樂手都沒列**。十二軌是團員自寫曲 ＋ Booker T. Jones〈Melting Pot〉；MB work 顯示 A2〈A Little Place In My Heart〉有 `lyricist`、另有〈I Like The Way (The instrumental Way)〉的器樂版單獨存在——**本盤至少有一部分是人聲歌**。
+
+**裁定：退。**
+1. **「日本是原盤」那一道過**：簡報第〇節「或只在日本發行」——**全世界只有日本版**；℗ 在荷蘭公司、由 Dureco 授權給ビクター，**照 c-193 a 第 7315 條（主線第 2008-B 條照准）「先發地優先」、c-193 b 第 7327 條（`Eric`：℗ 美國、只在日本發行）同形**，不是退件理由。
+2. ⚠ ⚠ **第 1925-B 條（演奏主體必須從盤面成立）**：**四版盤面零樂手**；**主線第 1967-B 條一之 1 的例外（「哪一版都查不到時，領銜者自己的身分可以獨立成立那一肢」）前提是「身分不是靠這一張建立的」**（c-185 a 第 5895 條：`笠井紀美子` 池中 14 列）——**`Fruitcake` 池中 0 列**，照 c-194 a 第 7357 條（`Salena Jones《Stairway to the Stars》`）不適用；**團名 `Fruitcake` 本身也不指出任何爵士編制**（與 c-185 a 第 5896 條的「山屋清とコンテンポラリー・サウント・オーケストラ」不同形）。
+⚠ **反轉條件**：查到同廠同母帶的任何一版逐名列出爵士編制，或主線放寬第 1925-B 條，才翻（可逆，收退名單）。⚠ **池中 `Fruitcake`／`フルーツケーキ`／`フールツケーキ` 0 列。** **再發數**（退件只記）：Discogs 4、MB 4（含數位 1）。
+
+## 7448　退：`Richard Clayderman —《Couleur tendresse》`（rg 4c7f4767，`Victor VIP-28068`，1983）——**「日本是原盤」不成立：法國 Delphine 錄音的日本改編版（12 軌裡 7 軌＝1982 法國原盤 `DEL 2 700061`）；另 ⑤ 前半 ＋ ① ＋ 第 3716 條三肢全敗**
+
+**事實**：**Discogs 把日本版建成獨立的 master 834530**（6 版：1983 `VIP-28068` LP、1983 卡帶 `VCW-10067`、1983 菲律賓 `April Records ALP-3420`、1984 `VDP-1` CD、2009 `VICP-70045` CD、沙烏地非官方卡帶）；**法國原盤是另一個 master 524667**（1982 `Delphine DEL 2 700061`，`notes` 逐字「Enregistrement effectué au Studio DELPHINE Made in France」，同年即有斯堪地那維亞 CBS、委內瑞拉、巴西等十餘國版本）。
+**日本版十二軌裡 7 軌逐字是法國原盤的曲**（〈Couleur Tendresse〉〈Les Larmes De Joie〉〈Pour Avoir Trop Rêvé〉〈L'Amour Exilé〉〈Ma Solitude〉〈Ne Dis Rien Je T'Aime〉〈L'Illusion Perdue〉），另 5 軌（〈Eden Is A Magic World〉〈Près Du Coeur〉〈Le Coeur En Fête〉〈Concerto Des Etoiles〉〈Concerto 'La Madrague'〉）換掉了法國版的另五首；**菲律賓版（35625457）`companies` 逐字「Phonographic Copyright (p): Delphine」「Recorded At: Delphine Studio, Paris」「Licensed From: Delphine」「Licensed From: Victor Musical Industries, Inc.」**——**錄音是 Delphine 的，ビクター 拿到的是日本市場的編排權。**
+**曲風**：日本原壓 `genres` 逐字 `Rock`／`Pop`、`styles` 逐字 `Easy Listening`／`Pop Rock`；1984 CD `genres` `Jazz`／`Pop`、`styles` `Easy Listening`；MB RG tags `easy listening(1)`／`jazz(1)`／`pop(1)`。
+
+**裁定：退。**
+1. ⚠ ⚠ **「日本是原盤」不成立**：簡報第〇節第 4 堆「全世界最早那一版必須是日本廠牌的」——**這張日本版用的是法國 Delphine 在巴黎錄的母帶（℗ Delphine），過半曲目在 1982 年法國原盤上已經發行**；**卡的身分歸法國原盤**。**同時也是第 397 條的形狀**（主線第 1948-B 條：既有錄音重新排列 → 合輯）。
+2. **⑤ 款前半**（原壓 `genres` 零 Jazz，主線第 1978-B 條「曲風以原壓為準」）＋ **① 款**（`Easy Listening`）→ **第 3716 條救濟三肢全敗**：**(1) 演奏主體 ✘**（獨奏鋼琴＋管弦樂團的輕音樂；盤面零樂手，只有解說 水野さちこ）；**(2) 曲目 ✘**（全是 Paul de Senneville／Olivier Toussaint 一系為 Clayderman 寫的輕音樂曲，零爵士標準曲）；**(3) `genres` 首位 Jazz ✘／`styles` 爵士成分 ✘**。
+⚠ **slice `source` 的「甲（最早 1983 JP）」錯了**：**MB 只建了日本版**（c-193 a 第 7297 條記的 `Horst Jankowski` 那一形，本線第四個例子）。⚠ **池中 `Clayderman`／`クレイダーマン` 0 列**；若哪天法國線撈 1982 原盤，不撞池。
+
+## 7449　退：`Shirley Bassey with the London Symphony Orchestra conducted by Carl Davis —《I Am What I Am》`（rg 761328fd）——**「日本是原盤」不成立：原盤是英國 `Towerbell Records TOWLP 7`（1984，℗ Towerbell），日本 `Seven Seas K32Y 2006` 是授權壓片；⚠ slice 的「確定撞池」是假陽性**
+
+**事實**：**Discogs master 163693**，英國原壓 3560162 `companies` 逐字「Phonographic Copyright (p): Towerbell Records」「Recorded At: Olympic Studios」、`notes` 逐字「The recording sessions took place at Olympic Studios, Barnes, London, in July & August 1984」；同年即有西德 Ariola、法國 Vogue、葡萄牙、澳洲、希臘、斯堪地那維亞版；**日本 `K32Y 2006`（8607265）的 `labels` 欄逐字「Seven Seas」「Towerbell Records」並列**。原壓 `genres` 逐字只有 `Pop`、`styles` `Ballad`／`Vocal`。MB 18 筆，最早的 FR／DE／JP／GB 都只填到 `1984`——**slice 的「不明（同日）」又是年份精度的假同日**。
+**裁定：退。** 簡報第〇節第 4 堆：授權壓片一律退，卡的身分歸英國原盤；**另 ⑤ 款前半（原壓 `genres` 零 Jazz）、第 3716 條三肢全敗**（主唱＋交響樂團、十五首是她自己的暢銷曲重錄與百老匯歌曲、`styles` 零爵士）。
+⚠ ⚠ **`poolRecheck`「確定撞池——退」（hit：seed `Shirley Bassey《Something》1970`）是假陽性**：seed 那張是 1970 年 United Artists 的錄音室盤；**本 RG 底下混了一筆 2007 年葡萄牙 `Intermusic` 的合輯 CD，題逐字 `Something`**（`titlesSeen` 因此帶進 `Something`），**而本盤 A2〈Something〉是 1984 年與倫敦交響樂團的重錄**——**同曲不同錄音，不是撞池**（第 1948-B 條看錄音）。**退件理由不依賴撞池**；**建議主線不要把這一對寫進 `known-pool-collisions.json`**（7472）。
+
+## 7450　退：`The Dirty Dozen Brass Band —《My Feet Can't Fail Me Now》`（rg bebf035d）——**「日本是原盤」不成立：原盤是美國 `Concord Jazz GW-3005`（1984-08，℗ Concord Jazz, Inc.），日本 King `K26P 6374`／`K32Y 6041`（1985）是授權壓片**
+
+**事實**：**Discogs master 337114 的 `versions` 14 版**，最早是 1984-08 美國 `Concord Jazz GW-3005`（2049658，The George Wein Collection 系列；`companies` 逐字「Recorded At: Studio In The Country」「Phonographic Copyright (p): Concord Jazz, Inc.」、`notes` 逐字「Recorded and mixed at Studio In The Country, Bogalousa, Louisiana.」），同年美國 CD／卡帶、西德、加拿大版；**日本 LP `K26P 6374` 與 CD `K32Y 6041` 都在 1985 年**。MB 2 筆：1984 `XE`（歐洲 CD `CCD 43005`）、1985 JP（label-info 逐字「Concord Jazz CCD 43005; KING K32Y 6041」）——**slice 的「不明（國別 XE）」是 MB 沒建美國原壓**。
+**裁定：退。** 原盤美國、錄音在路易斯安那，日本 King 是授權版——簡報第〇節第 4 堆。⚠ **旁記**：曲風本身過得了（原壓 `genres` `Jazz`、`styles` `Brass Band`／`Dixieland`）；**池中 `Dirty Dozen`／`ダーティ・ダズン` 0 列**——若美國 Concord 線撈它，不撞池。
+
+## 7451　退：`Fruitcake —《Fruitcake 2》`（rg 4613b16c）——**⑤ 款前半（原壓 `genres` 零 Jazz）＋ 第 1925-B 條（盤面零樂手）＋ 第 3716 條救濟三肢全敗；「日本是原盤」成立（只在日本發行）**
+
+**事實**：**Discogs master 825218 的 `versions` 5 版全是日本ビクター**（1984-04-21 `VIJ-6412` LP＝8520943 與同號 Promo、1984 卡帶 `VCJ-1564`、1984-06-21 `VDP-30` CD、2010 `NCS-747` CD）；**原壓與 Promo、1984 CD 的 `genres` 逐字 `Funk / Soul`／`Pop`、`styles` 空陣列**（只有 2010 CD 與卡帶加了 `Jazz`／`Jazz-Funk`）；原壓 `extraartists` 整筆空白，**只有 2010 CD 與 1984 宣傳 12 吋記 `Producer, Arranged By`（Benny Baan／Harry van Hoof／Rob Taekema）**，一位樂手都沒列；2010 CD ℗ 逐字 `1984 Strengholt Music Productions B.V.`、`Recorded At: Dureco Studio`。
+**裁定：退。**
+1. **⑤ 款前半**：**主線第 1978-B 條「曲風以原壓為準」——原壓 `genres` 零 Jazz，後來再發加上的 `Jazz` 不算**；照第 1978-B 條回第 3716 條三肢：**(1) 演奏主體 ✘**（盤面零樂手，同 7447 不適用例外）、**(2) 曲目 △**（十三軌全是團員新寫的曲，器樂或人聲本層查不實）、**(3) `styles` 爵士成分 ✘／`genres` 首位 Jazz ✘** → 至少兩敗 → 退。
+2. **第 1925-B 條**獨立成立（同 7447）。
+⚠ **年份**：slice／MB `1984-06-21` 是 CD 首發日，**Discogs LP 原壓 `released` 逐字 `1984-04-21`**——同年，`year` 不變（退件也記）。**池中 0 列。**
+
+## 7452　退：`Richard Clayderman —《Couleur Tendresse》`（rg e978d4eb，`Victor VDP-1`，1984）——**與 #5 同一張日本改編版的 1984 CD（MB 把同一張碟建成兩個 RG）；理由同 7448**
+
+**事實**：MB 本 RG 只有一筆 `Victor VDP-1` CD（1984 JP，12 軌）；**Discogs 把它收在 #5 的同一個 master 834530 底下**（6968653，`formats` 逐字 `Album, Reissue`，十二軌逐軌同 `VIP-28068`、只多了日文副題 `= 虹色の心`）——**是 #5 的 CD 再發，不是另一張碟**。
+**裁定：退，理由逐字同 7448**（法國 Delphine 母帶的日本改編版、⑤ 前半、①、第 3716 條三肢全敗）。
+⚠ **建議主線登記 MB 重複 RG**（4c7f4767 ＝ e978d4eb，同一張 `VIP-28068`／`VDP-1`），**往後切批時兩個 RG 要併成一筆**（7472）。
+
+## 7453　⚠ 退：`Salena Jones —《Feelings Change》`（rg aa131883）——**第 5701 條第三肢不成立（乙 6/10）＋ 第 1923-B 條（演奏主體是主唱 ＋ Session Grand Prix 錄音室班底）；「日本是原盤」成立**
+
+**事實**：**Discogs master 1117458 的 `versions` 5 版**：1984 日本 `JVC VIJ-28038` LP（原壓 9312512）、1984 `VDP-40` CD（加一軌〈Something In Return〉）、1987 `VDP-5119` CD、1989 印尼兩筆卡帶（`companies` 帶 `Victor Musical Industries`，授權出去的）——**全世界最早的是日本ビクター**；製作 Tadao Tokoro（c-194 b 的《Melodies of Love》同一人）。
+`genres` 逐字 `Jazz`、`styles` 逐字 `Soul-Jazz`；**盤面 credits**：Keyboards Keiichi Oku／Lucky Kawasaki、Guitar June Yamagishi、Drums Hiro Tsunoda、Saxophone Toshiyuki Honda、Percussion Pecker、`Performer — Session Grand Prix`（anv 皆為日文藝名；本層不寫進任何卡）。
+**十軌逐軌 `Written-By`**：〈Stuck On You〉（Lionel Richie 1984）、〈My Guy (My Girl)〉（Smokey Robinson／Ronald White）、〈Stand By Me〉（Ben E. King）、〈Even The Nights Are Better〉（Air Supply 1982）、〈You Decorated My Life〉（Kenny Rogers 1979）、〈Up Where We Belong〉（1982 電影主題曲）——**6 首既有的英美流行／靈魂曲＝乙**；另〈Just A Gentle Rain〉（Masahiro Kawasaki／Salena Jones）、〈You Are Always On My Mind (Mary Jane)〉（Christopher Lin／Hiro Tsunoda）、〈Make The Most Of Love Tonight〉（Les Reed）、〈Feelings Change〉（D. W. Morgan／R. Fleming）是新寫的流行歌（第 (4) 款，不算甲）。**甲 0、乙 6/10＝60% > 一半。**
+**裁定：退。** **第 5701 條 (1)**（乙過半，依第 1934-B 條可獨立退件）＋ **第 1923-B 條**（主唱領銜、伴奏是フュージョン／流行錄音室班底；「伴奏名單很強」不是收件款的任何一肢）。
+⚠ ⚠ **與同一位歌手的其他處置分得開**：c-194 b 收的《Melodies of Love》（乙 4/10、鈴木宏昌 的爵士管樂團＋Kenny Burrell）、c-195 a 收的《Salena Fascinates》（甲 10、Richie Cole 五重奏）；**與 c-194 b 退的《Stormy With Luv》《Love Is in the Air》、c-195 a 退的《My Love》《Shifting Sands of Time》同形**——**分界是可數的曲目欄與盤面編制，不是歌手**。**池中 `Salena Jones`／`サリナ・ジョーンズ` 0 列**（本批 a 組兩張、c-194 b 一張待上架）。
+
+## 7454　⚠ 退：`Marlene —《Be・Pop》`（rg 432a1955，`CBS/Sony 28AH 1855`，1985-04-21）——**c-189 第 6574 條的四項作廢；第 1923-B 條與第 5701 條第三肢（甲 0）兩條照舊成立；「日本是原盤」成立**
+
+**事實**（照 c-189 第 6574 條已記，本層重打）：**Discogs master 1195885 的 `versions` 5 版全是日本 CBS/Sony**（1985 `28AH 1855` LP＝7613038、`32AH 1639`（Master Sound DR）LP、`32DH 198` CD、卡帶 `28KH 1666`、1991 `SRCL 1971`）——**全世界只有日本發行**。原壓 `genres` 逐字 `Electronic`／`Jazz`／`Funk / Soul`／`Pop`、`styles` 逐字 `Boogie`／`Soul`／`City Pop`／`Fusion`。十軌：A1–A4〈Hide & Seek〉〈I Can't Say Goodbye〉〈What Are We Waiting For?〉〈The Push Is On〉作曲欄空白（新寫的流行歌）；A5〈A Song For You〉（Leon Russell）、B1〈Private Joy〉（Prince）、B2〈I Just Wanna Stop〉（Ross Vannelli）、B3〈Amazon Queen〉（Hennrick／笹路正徳）、B4〈Aquarius 〜 Let The Sunshine In〉、B5〈Superstar〉（Bramlett／Russell）。
+**裁定：退。**
+1. **c-189 第 6574 條第 1 點（四項 2/4）在本線作廢**（主線第 2007-B 條）。
+2. ⚠ **第 2 點（演奏主體是主唱，領銜者零樂器 credit、原壓二十九筆全是伴奏）照舊成立**——第 1923-B 條。
+3. ⚠ ⚠ **第 3 點該條寫「乙最多 5/10＝50%，不是曲風退」——本層補量甲**：**十軌裡零首爵士標準曲、零首器樂原創**（A1–A4 是新寫的人聲流行歌、第 (4) 款不算甲；B 面五首是 1970–80 年代英美流行／靈魂曲）→ **甲 0/10，收件款第三肢「曲目是爵士標準曲或原創曲」不成立**（c-193 b 第 7329 條 `Saundra` 的同一讀法）。
+⚠ **與 c-195 a 撈回的 `Marlene《My Favorite Songs》`（甲 9、爵士四重奏逐名印在盤上）分得開**；**與 c-195 a 第 7422／7423 條（《Déjà Vu》《It's Magic》）同形**。**`audits/foreign-artist-japan-productions.md` 乙族那一行建議改註「c-195 b 維持退，理由改寫」**（7472）。⚠ **池中 `Marlene`／`マリーン` 0 列**（本批 a 組撈回一張待上架）。
+
+---
+
+## 收件與橫向的裁定（7455–7473）
+
+## 7455　⚠ ⚠ `priorRulingHits` 兩筆逐筆重讀：**一收一退——唯一理由是外國藝人那一關的撈回；另有獨立理由的維持退**
+
+| # | 前批條號 | 前批退件理由（逐字摘要） | 本線還成不成立 | 本層處置 |
+|---:|---|---|---|---|
+| 6 | c-180 第 4870 條 | 「外國藝人那一關」：演奏側 0/8、作曲全外國、紐約 Skyline 錄音；**該條逐字「曲風那一關同樣過得了⋯五款一款都不成立」** | **作廢**（那一關就是第 4106 條四項那一族，主線第 2007-B 條取消）；本層重核曲風、第 1925-B 條（八人逐名）、第 5701 條（甲 6）全過 | **收** |
+| 17 | c-189 第 6574 條 | 四項 2/4 ＋ 演奏主體是主唱 | **四項作廢；演奏主體照舊**；本層另補量甲 0 | **退**（7454） |
+
+⚠ **`French Toast` 的「日本是原盤」那一道要特別寫**：MB 最早 release 是西德（`titleCheck.earliestRelease.country` 逐字 `DE`），**但西德壓片自己的 `notes` 逐字「© & ℗ King Record Co. Ltd. Japan / Manufactured by Bellaphon, West-Germany」**——是 King 授權出去的；日本原壓 1984-08-12、master 的 `main_release`。**c-180 第 4870 條末段早已記過 MB 這個失效**。
+⚠ **`audits/foreign-artist-japan-productions.md` 建議加一行**：`Electric Bird K28P-6302`（French Toast，1984）→ **c-195 b 收**（甲族第三種形：日本企劃、外國錄音，與 `Everything Is Everything` 同形）（7472）。
+
+## 7456　⚠ ⚠ 第 4 堆的硬門：**「日本是原盤」17 筆逐筆以 Discogs 最早那一版的 `labels` 欄 ＋ `versions` 全表 ＋ ℗ 行判定——成立 13、不成立 4；slice `source` 欄的「甲」錯 2/13**
+
+| # | slice `source` | Discogs 最早那一版 | 判定 |
+|---:|---|---|---|
+| 1 | 甲（1983 JP） | Eastworld `EWJ 80268`，`notes`「Japanese only release」 | ✔ 日本唯一 |
+| 2 | 甲 | Eastworld `EWJ 90016`（℗ Toshiba-EMI） | ✔ 三版全日本 |
+| 3 | 甲 | Eastworld `EWJ-90024`（℗ Toshiba EMI） | ✔ 唯一一版 |
+| 4 | 甲 | ビクター `VIJ-6401`（Licensed From: Dureco Benelux） | ✔ **只在日本發行**（℗ 荷蘭，先發地優先；退在 7447） |
+| 5 | 甲 | ⚠ **法國 Delphine `DEL 2 700061`（1982）** | **✘ 日本版是改編授權版**（7448） |
+| 6 | 前批裁定 | Electric Bird `K28P-6302`（℗ King）；西德同號是授權 | ✔ |
+| 7 | 甲 | Interface `YF-7084`（Nippon Columbia） | ✔ 七版全日本 |
+| 8 | 甲 | Interface `YF-7095`（℗ Nippon Columbia） | ✔ |
+| 9 | 甲 | Paddle Wheel `K28P-6272`（℗ King）；西德／美國是授權 | ✔ |
+| 10 | 不明（同日 FR/DE/JP/GB） | **英國 Towerbell `TOWLP 7`** | **✘ 授權**（7449） |
+| 11 | 不明（XE） | **美國 Concord Jazz `GW-3005`** | **✘ 授權**（7450） |
+| 12 | 甲 | Eastworld `EWJ-90028`（℗ Toshiba EMI） | ✔ 六版全日本 |
+| 13 | 甲 | ビクター `VIJ-6412` | ✔ 只在日本發行（退在 7451） |
+| 14 | 甲 | ⚠ **同 #5（法國 Delphine）** | **✘**（7452） |
+| 15 | 甲 | JVC `VIJ-28038` | ✔（退在 7453） |
+| 16 | 甲 | 日本ポリドール `38MM 0344/5`（1984 只在日本） | ✔（℗ 樂團自有，先發地優先；7466） |
+| 17 | 前批裁定 | CBS/Sony `28AH 1855` | ✔（退在 7454） |
+
+⚠ **「甲」錯的兩筆是同一張碟、同一個失效**：**MB 只建了日本版**——c-193 a 第 7297 條（`Horst Jankowski`）、c-193 a 記的 MPS／Freedom／GMP 之後，**法國 Delphine 是這個形狀的第四家**；**信裡的兩個必查特徵（`house: columbia` 配 MPS 系、日本盤 `labels` 印外國目錄號）這兩筆都沒有**——**抓到它的是 Discogs 版本表裡「同名、另一個 master、早一年」**。**建議往後的派工信補第三個特徵：`q=<藝人> <盤名>` 回來兩個 master、日本那個晚一年，先假設是改編授權版。**
+⚠ **「只在日本發行、℗ 在外國公司」本組 3 筆**（#4／#13 荷蘭 Strengholt／Dureco、#16 樂團自有）——**全部照 c-193 a 第 7315 條（主線第 2008-B 條照准）「先發地優先」判過門**；#4／#13 另因盤面與曲風退，**真正靠這一條收的只有 #16**。
+
+## 7457　年份：**17 筆全部回查版本表，改判 0 筆**
+
+- **收件 9 筆**：slice 年份與 Discogs 原壓、MB 全部一致；錄音年與首發年不同的 6 筆（#2 1982→1983、#3 1982→1983、#7 1983→1984、#9 1983→1984、#12 1983→1984、#16 1983-12→1984）**`year` 一律取首發**，錄音日寫在 `why`。
+- **退件**：#13 的 slice／MB `1984-06-21` 是 CD 首發日，LP 原壓 `1984-04-21`（同年，不改）；其餘一致。
+
+## 7458　盤名與 `artist` 欄：**盤名真改判 0；取邊 1（#7 空格）；`artist` 欄改判 1（#3 分隔符）**
+
+1. **#7**：slice／MB `N.Y.Sophisticate: A Tribute to Duke Ellington`（`N.Y.` 後無空格）→ **`N.Y. Sophisticate: A Tribute to Duke Ellington`**：Discogs 七版中六版逐字有空格（另一版 13626317 無冒號）；**大小寫照 slice**（第 1858-B 條不含大小寫）；`k()` 兩形同鍵，MB 形進 `queryAlias`。可逆。
+2. **#3**：`Warne Marsh, Gary Foster` → **`Warne Marsh & Gary Foster`**（見 7462）。
+3. **大小寫取 slice 形 2 筆**：#16 `Live in Japan`（Discogs `Live In Japan`）、#1 `Aurex Jazz Festival 83`（1983 CD 盤面加撇號 `'83`，原壓無）。
+4. **#9** 原壓題帶 `(Mal '84)`、1984 CD 起的再發都拿掉——**取原壓全題**，短題進 `queryAlias`。
+5. **#8** 盤名複數 `Monk's Moods`、末軌單數〈Monk's Mood〉——不照曲題改（主線第 1976-B 條 (g)）。
+
+## 7459　`live`：**收件 `true` 2 筆（#1 邊界、#16 三肢全過）；「Recorded live on two tracks」1 筆判 `false`（#2）；反向漏標 0**
+
+- **#16**：場館（`notes` 逐字 `Nakano Sun Plaza Hall,Tokyo`）＋ live 字樣（盤名 `Live In Japan`、主線第 1958-B 條必掃字串 `in Japan`；獨立成軌的 Piano／Bass Solo）＋ 單一日期 1983-12-15 → 三肢全過；MB `Live` 屬實。
+- ⚠ ⚠ **#1（邊界）**：本盤 `notes` 只寫「recorded at the Aurex jazz festival in Japan 1983」——**live 字樣肢成立、場館與日期兩肢只寫到國名與年份**；**本層以同系列同廠同批（`EWJ-80267`～`80270`）的姊妹盤 `EWJ-80269`（Discogs 3867704，`notes` 逐字「Recorded live … at Budokan, Tokyo September 2, 1983 … Osaka Stadium … Yokohama Stadium … September 4, 1983」）補「同一屆音樂節的巡演期間」**（主線第 1978-B 條）。**與 c-195 a 第 7427 條對 #18（Les Brown 那一張，同一屆音樂節）的處置一致**；反轉條件同該條（改 `false` 只動一個欄位）。**下游不得寫本盤哪一軌在哪一場。**
+- **#2**：「Recorded live on two tracks using SONY 1610」＋ 錄音室 → **一次錄成雙軌的工法**（主線第 1971-B 條），`false`；**與 c-195 a #8／#10 的「Recorded LIVE to two tracks」同一讀法**。
+- **其餘 6 筆收件逐筆掃過主線第 1958-B 條必掃字串與第 1977-B 條三個技術職，零命中。**
+
+## 7460　⚠ ⚠ 再發版本數：**9 筆收件逐筆跑完整張 `versions`；8 筆有 master 頁、1 筆無（#3）；一律取 MB、Discogs 與 Apple 的聯集；MB 平均低估 72%**
+
+| # | 盤 | Discogs `versions` | MB | Apple（MB 無 `Digital Media`） | 聯集 | MB 低估 |
+|---:|---|---:|---:|---|---:|---:|
+| 1 | Aurex Jazz Festival 83 | 2 ＋ 孤兒 Promo 1 | 1 | 0（查無） | **3** | 67% |
+| 2 | Voices All | 3 | 2 | 0（查無） | **3** | 33% |
+| 3 | Warne Marsh Meets Gary Foster | **資料庫裡只有這一筆** | 1 | 0（查無） | **1** | — |
+| 6 | French Toast | 5（不含非官方 CDr） | 2 | **+1**（1649755030） | **6** | 67% |
+| 7 | N.Y. Sophisticate | 7 | 1 | 0（查無） | **7** | 86% |
+| 8 | Monk's Moods | 3（不含泰國非官方卡帶） | 1 | 0（查無） | **3** | 67% |
+| 9 | You And The Night And The Music | 9 | 1 | **+1**（1807521305） | **10** | 90% |
+| 12 | Three Pearls | 6 | 1 | **+1**（1668258956，2023 數位） | **7** | 86% |
+| 16 | Live in Japan | 8 | 2 | **+1**（1406358654） | **9** | 78% |
+
+⚠ **有 master 頁的 8 筆 MB 全部低估**（33%–90%，平均 72%）。**MB 只建 CD、沒建 LP 原壓的 6 筆**（#1／#2／#6（建了西德壓片）／#7／#8／#12）——**主線第 1965-B 條「MB 轄下 JP release 數少於 Discogs 日本盤數」本組 6/9 命中，盤名與年份都已人工回查、全部一致**。
+
+## 7461　廠牌欄：**`label` 9 筆全部以 Discogs 原壓 `labels` 欄逐字；`house` 快篩與原壓字標的差異 5 筆（收件 3、退件 2），都不影響收退**
+
+- **#7／#8 `denon` → 原壓 `Interface`**（日本コロムビア 的爵士字標；`38C38-` 是コロムビア 共用的 Denon CD 號段，jp-2 簡報第三節第 34 點）。
+- **#16 `victor` → 原壓日本ポリドール `38MM 0344/5`**（ビクター 是 2014 年復刻）。
+- **#5／#14 `victor`**：日本版確是ビクター，但母帶是法國 Delphine（7448）。
+- ⚠ **第 4 堆不看廠牌門**（簡報第〇節），這 5 筆只影響 `label` 欄的寫法。
+
+## 7462　⚠ 掛名：**9 張 8 個相異字串——沿用池中整串 3（`The Great Jazz Trio` ×2／`Mal Waldron`／`The Jazztet`／`Shakatak`，佔 5 張）＋ 新立 4；`artist` 欄改判 1；新造分裂 0、新造分隔符 0、收斂 0**
+
+| 掛名 | 張 | 來源 | 處置 |
+|---|---:|---|---|
+| `The Great Jazz Trio` | 2 | 池中 seed ＋ c-192／c-193／c-194 | **沿用**（第 307 條）；#7 的 `With The Strings Quartet` 印次形、#8 客席 日野皓正 都只進 `queryAlias` |
+| `Mal Waldron` | 1 | 池中 seed 7 列 ＋ c-193／c-194 | **沿用**；1984 CD 起的三人串進 `queryAlias` |
+| `The Jazztet` | 1 | 池中 seed《Moment to Moment》 | **沿用**；`Art Farmer` 個人串依第 964 條並存 |
+| `Shakatak` | 1 | 池中 seed《Night Birds》 | **沿用** |
+| `Rosemary Clooney with Les Brown & His Band of Renown` | 1 | Clooney 池中個人串 1 列 | **新立聯名**：「`with` 照盤面」、取池中多數的小寫（c-193 a 第 7309 條第 3 點）；**樂團部分與 c-195 a #18 逐字相同**（c-195 a 第 7437 條第 1 點已對過） |
+| `Warne Marsh & Gary Foster` | 1 | Marsh 池中個人串 1 列 | **新立聯名、`artist` 欄改判**：slice／MB／Discogs 的 `, ` 是資料庫 joinphrase、盤面把兩人寫在盤名的 `Meets` 裡——**照 c-194 a 第 7368 條（`John Lewis & Hank Jones`）取池中最常見的 `&`**（主線第 1934-B 條 (3)）；MB 原串進 `queryAlias` |
+| `Chris Connor, Ernestine Anderson, Carol Sloane` | 1 | Connor 池中個人串 2 列 | **新立，照 slice／MB 的逗號**（三人以上並列照 c-194 b `Harry "Sweets" Edison, …` 先例）；原壓 anv 的 `Chris Conner` 拼法不取、進 `queryAlias` |
+| `French Toast` | 1 | 池中 0 | **新立**（Discogs `French Toast (3)`；高碰撞通用詞，`queryAlias` 放四位核心團員） |
+
+## 7463　⚠ 人名：**收件卡寫出的漢字人名 8 個，全部逐名回打 Discogs 藝人頁（`realname`／`namevariations`）或原壓 anv 交叉驗過；其餘幕後一律照寫羅馬字；`name-corrections.json` 的 `pairs` 命中 1 個（取正寫）**
+
+- **定案**：秋吉敏子（503241 `realname` 逐字「秋吉敏子 or 穐吉敏子」）、佐藤秀樹（546126 `realname`，且原壓 anv 逐字）、佐藤允彦（596931 `realname`）、伊藤潔（406894 `realname` 逐字 `伊藤 潔`；**`pairs` 有 `伊藤清`→`伊藤潔`，本卡取正寫**）、渡辺かおる（1054718 `namevariations`）、斉藤有弘（639899 `namevariations`）、日野皓正（303402 `realname`）、宇野勝昭（599754 `realname` 逐字 `宇野 勝昭`）。
+- **照寫羅馬字**：`Nobuo Ohtani`／`Shogo Takeuchi`（主線第 1940-B 條：前者零漢字變體、後者 `namevariations` 被污染）、`Hiroshi Goto`（藝人頁 `namevariations` 有 `後藤博` 但 `realname` 空，只在括號裡引、不當正文人名）、#2／#6／#9／#12 的製作與錄音班底（未回打，照原壓 credit 寫羅馬字）。
+- **`node batch-progress/fix-names.mjs` 回「全部乾淨，0 處要改」。**
+- ⚠ **#15 Salena Jones 盤面 credits 的日文藝名（`つのだ☆ひろ`／`山岸潤史`／`奥慶一`／`ラッキー川崎`／`本多俊之`）只出現在本條的事實欄，退件不入卡**，本層沒有回打。
+
+## 7464　⚠ 曲風：**17 筆逐筆獨立覆核；收件 9 筆的原壓 `genres` 全含 `Jazz`；`styles` 有爵士成分 5 筆、空陣列 2 筆（#7／#8，人工判收）、只有 `Vocal` 2 筆（#1／#12，⑤ 第三形 → 救濟成立）**
+
+- **爵士成分**：#2 `Hard Bop`、#3 `Cool Jazz`、#6 `Contemporary Jazz`、#9 `Bop`／`Post Bop`、#16 `Jazz-Funk`。
+- **空陣列（主線第 1936-B 條不套 ⑤ 第三形 → 第 3762 條人工判）**：#7（三重奏＋弦樂四重奏、十首艾靈頓曲）、#8（三重奏、九首孟克曲）→ 收。
+- **⑤ 第三形**：#1／#12 → 7465。
+- **退件**：⑤ 前半 4 筆（#5／#14 `Rock`／`Pop`、#10 `Pop`、#13 `Funk / Soul`／`Pop`）；① 2 筆（#5／#14）；**曲風過得了而退在別處的 4 筆**（#4 `Jazz-Funk`／`Fusion`、#11 `Brass Band`／`Dixieland`、#15 `Soul-Jazz`、#17 含 `Fusion`）。
+- **第 5701 條甲乙（收件）**：#1 甲 6／乙 3、#2 甲 7／乙 0、#3 甲 6／乙 0、#6 甲 6／乙 0、#7 甲 10、#8 甲 9、#9 甲 7、#12 甲 10、#16 乙 0（保守把七首自寫人聲歌算進乙也只 7/15＝47%）——**全部 ≤ 一半**。
+
+## 7465　⚠ ⚠ 邊界收件（一）：**#1 Rosemary Clooney 與 #12 Three Pearls——主唱＋爵士編制、曲目是標準曲、原壓 `styles` 只有 `Vocal`：⑤ 款第三形 → 第 3716 條救濟成立**（**建議主線覆核**）
+
+**問題**：兩張的原壓 `genres` 都含 `Jazz`、**`styles` 有內容（只有 `Vocal`）而零爵士成分** → ⑤ 款第三形字面成立（主線第 1934-B 條），收件款不成立，照第 1978-B 條回第 3716 條三肢。
+**三肢逐肢**：
+| 肢 | #1 Clooney（Aurex '83） | #12 Three Pearls |
+|---|---|---|
+| (1) 演奏主體是爵士編制 | ✔ 主唱＋**盤面掛名印出的 Les Brown 大樂團**（主線第 1967-B 條一之 3） | ✔ 三位爵士歌手＋**盤面逐名列出的 Norman Simmons／George Mraz／Tim Horner 三重奏** |
+| (2) 曲目以爵士標準曲為主 | ✔ 甲 6／乙 3 | ✔ 甲 10／乙 0 |
+| (3) 第三肢 | 照第 3716 條原文「`genres` 首位 Jazz」✔；照 c-180 第 4838 條表格的讀法「`styles` 爵士成分」✘ | 同左 |
+**裁定：兩張都收。** **兩種讀法下都是至少兩肢過**——主線第 1934-B 條「三肢皆不過才退」、c-193 b 第 7327 條「至少兩敗 → 退」都不觸發。
+⚠ ⚠ **這一族在本線已有四個同形收件**：c-193 a 第 7316 條（`Sonia Rosa with 大野雄二`）、c-194 b《Melodies of Love》、c-195 a《Salena Fascinates》（逐字同一路：⑤ 第三形 → 救濟兩肢過）、c-195 a《My Favorite Songs》；**分界（與退件的 `Marlene` 多張、本組 #15／#17）是可數的兩欄：曲目甲乙、盤面編制**，不是「主唱」本身。
+⚠ **反轉條件**：主線若判「主唱領銜、爵士編制伴奏」的演奏主體一律不成立（第 1923-B 條擴大讀），**本組 #1／#12 與上述四張一起改判退**；若判第 1925-B 條不接受「掛名裡的大樂團名」，**只翻 #1**。可逆（收退名單）。
+
+## 7466　⚠ ⚠ 邊界收件（二）：**#16 `Shakatak《Live in Japan》`——原壓盤面零樂手，靠主線第 1967-B 條一之 1（本團已在池中）成立第 1925-B 條那一肢；「日本是原盤」走「只在日本發行」**（**建議主線覆核**）
+
+1. **第 1925-B 條**：1984 原壓、同號 Promo、日本卡帶、2014 ビクター CD、2014 英國 LP **五版零樂手**；**唯一列出編制的是 2014 年英國 Secret Records 的 CD**——**別家廠牌、三十年後，照主線第 1963-B 條三之 1 不算盤面**。**照主線第 1967-B 條一之 1**：「哪一版（同廠同母帶）都查不到時，領銜者自己的身分可以獨立成立那一肢」，**前提「身分不是靠這一張建立的」成立：seed 已有 `Shakatak《Night Birds》1982`（`genres` `jazz`／`soul`）**；另依一之 3，掛名裡的團名就是盤面證據（c-183 b 第 5710 條「有無之別」）。
+   ⚠ **與本組 #4／#13 `Fruitcake` 的分界就在這一格**：同樣是原壓零樂手、同樣只在日本發行，**Fruitcake 池中 0 列**（c-194 a 第 7357 條同形）→ 退。
+2. **「日本是原盤」**：1984 年只有日本ポリドール 的雙 LP 與卡帶（2014 英國復刻的貼紙逐字「rare Vinyl-only Japanese release from 1984」）；**反面**：混音在英國、製作人英國、Apple ℗ 逐字 `(C) 1984 SHAKATAK`——**照 c-193 a 第 7315 條「先發地優先」過門**。⚠ **1985 年英國《Live!》（Polydor `POLH 21`）八軌裡五軌取自同一場**——是另一張碟、池中沒有；**若英國線撈它，要比那五軌**。
+3. **第 5701 條**：十五軌全是團員自己的曲、零翻唱；保守把七首帶人聲的算進乙也只 7/15。
+⚠ **反轉條件**：主線若要求第 1925-B 條必須逐名列出樂手（不接受池中身分），或改採「母帶權利人所在國」判原盤，本卡改判退。可逆。
+
+## 7467　⚠ `poolRecheck` 逐格人工覆核：**17 格全部重掃（每一種掛名寫法 ＋ 片假名形 ＋ 成員名 ＋ 盤名兩種文字系統 ＋ 軌名）；真撞池 0；「確定撞池」1 格是假陽性、「逐張人工比」8 格、「查無此藝人」3 格、「變體全是羅馬字」5 格**
+
+- **確定撞池（#10）**：假陽性，見 7449（RG 裡混了一筆題為 `Something` 的合輯，同曲不同錄音）。
+- **逐張人工比 8 格全部不是撞池**：#1（seed《Blue Rose》1956）、⚠ **#2（seed `The Jazztet《Moment to Moment》1983`——同團同年，但那張是 1983-05 米蘭 Barigozzi Studio 的 Soul Note、貝斯與鋼琴不同、六軌與本盤零重疊）**、#3（seed《Warne Marsh》1958）、#7／#8（池中 GJT 12 串逐列比過）、#9（池中 Waldron 13 列）、#12（seed Chris Connor 兩張 1956）、#16（seed《Night Birds》1982；1985 英國《Live!》不在池中）。
+- **查無此藝人 3 格**（#5／#14 Clayderman、#17 Marlene）：**自己再掃片假名與本名**（`クレイダーマン`／`マリーン`／`Marlene Pena Lim`），池中 0 列（Marlene 只有本批 a 組撈回的一張待上架）。
+- **變體全是羅馬字 5 格**（#4／#13 Fruitcake、#6 French Toast、#11 Dirty Dozen、#15 Salena Jones）：**五位全是真外國藝人／外國樂團**（c-180 第 4870 條「變體全是羅馬字」的第二種成因：「這根本不是日本藝人」）；本層改掃片假名形（`フルーツケーキ`／`フールツケーキ`／`フレンチ・トースト`／`ダーティ・ダズン`／`サリナ・ジョーンズ`）與成員名（`Camilo`／`Soloff`／`Dodgion`／`Weckl`），**池中只掃到 seed `Michel Camilo & Tomatito《Spain》2000`（不是本盤）**。
+
+## 7468　catno 反查與孤兒 release：**9 筆收件逐筆以原壓目錄號打 `catno=`（兩種寫法）；孤兒 release 1 筆（#1 的 Promo 38517243，已計入）；差集 0**
+
+## 7469　⚠ ⚠ 同批互掃（主線第 1987-B 條固定動作）：**兩組 20 張收件的 Discogs 原壓曲題表全部對過——跨組同題 10 組、同組 2 組，全部是不同錄音；同一錄音 0**
+
+- **跨組**：〈I Can't Get Started〉（b #1 ↔ a #18 Les Brown，**同一屆 Aurex、同一支樂團，但一張是 Clooney 的人聲、一張是大樂團器樂＋客席，兩個 master**）、〈You'll Never Know〉（b #1 ↔ a Marlene《My Favorite Songs》）、〈But Not For Me〉（b #1 ↔ a Nancy Wilson）、〈Satin Doll〉〈In A Sentimental Mood〉（b #7 ↔ a 多張）、〈Georgia On My Mind〉（b #9 ↔ a 兩張）、〈What's New〉〈Someday My Prince Will Come〉〈All Of Me〉（b #12 ↔ a 多張）、〈Ruby, My Dear〉（b #8 ↔ a Art Farmer《Maiden Voyage》）。
+- **同組**：〈Solitude〉（#7 ↔ #12）、〈'Round Midnight〉（#8〈Round About Midnight〉↔ #9）。
+- ⚠ ⚠ **曲題撞他卡盤名**：**b #12 B3〈What's New〉↔ a 組卡《What's New》（Nancy Wilson with The Great Jazz Trio，1982）**——**兩卡引用必須帶掛名與年份**（主線第 1948-B 條「三件記著」第 1 點）。
+- **GJT 同批四張（a #8／#10、b #7／#8）是四場不同錄音**（a 兩張 1982 紐約、b 兩張 1983／84 東京），**下游不得把 GJT 寫成固定三人**。
+
+## 7470　Apple 與店面（第 254 條，只寫觀察不寫結論）：**9 筆收件命中 4 筆（#6／#9／#12／#16，全在 jp 店面）；403／429 本次工作階段零次**
+
+## 7471　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有條目一個都沒動**
+
+## 7472　⚠ 給主線的五件登記建議（本層照邊界不動那些檔）
+
+1. **`audits/foreign-artist-japan-productions.md` 補遺線表**加兩行：`French Toast《French Toast》`（c-180 第 4870 條退 → **c-195 b 收**）、`Marlene《Be・Pop》`（c-189 第 6574 條退 → **c-195 b 維持退，理由改寫**：第 1923-B 條 ＋ 甲 0）。
+2. **MB 重複 RG**：`Richard Clayderman《Couleur Tendresse》` 的 4c7f4767（1983 LP）與 e978d4eb（1984 CD）是同一張 `VIP-28068`／`VDP-1`（Discogs master 834530）——**往後切批時併成一筆**。
+3. ⚠ **不要把 #10 寫進 `known-pool-collisions.json`**：slice 的「確定撞池」是 `titlesSeen` 被 RG 裡的合輯題污染的假陽性（7449）。**給 `jp1-pool-refresh.mjs` 的建議**：`titlesSeen` 來自 `Compilation`／他題 release 的，不要拿去當撞池鍵。
+4. **派工信補一個「甲」的必查特徵**（7456）：**`q=<藝人> <盤名>` 回來兩個 master、日本那個晚一年 → 先假設是改編授權版**（本組 #5／#14）。
+5. **三張邊界收件（#1／#12／#16）的覆核點已寫成可逆的反轉條件**（7465／7466）；**#1 的 `live` 與 c-195 a #18 綁在一起**（7459）。
+
+## 7473　交件前自跑的結果與第 315 條結算
+
+- **`node batch-progress/c195/chk-prop.mjs b`**：**9 張、8 位｜標記 0**。
+- **`node batch-progress/dedup-crossbatch.mjs`（不帶批號，全池 158 批）**：**跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 1**（那一筆是 c-195 a 的 `AJF '82 All Star Jam` ↔ c-179 `John Kaizan Neptune / 直居隆雄`，不在本組，只報不擋）。
+- **`node batch-progress/fix-names.mjs`**：全部乾淨。
+- **第 315 條結算**：**收 9 ＋ 退 8 ＝ 17**；**逐堆：第 4 堆 收 9 退 8 ＝ 17**（本組沒有第 1／2／3 堆）。
+- **§1 人工身分 0 張；年份改判 0、盤名真改判 0（取邊 1）、`artist` 欄改判 1、`live` 收件 `true` 2（其中邊界 1）、再發數 9 筆全跑 `versions`（MB 平均低估 72%）。**
+
+**編號區間結算**：本節用到 **7446–7473（共 28 條），未越界（a 組 7416–7445）**；7474–7475 留空。
