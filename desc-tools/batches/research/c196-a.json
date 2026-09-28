@@ -199,5 +199,206 @@
   "status": "full",
   "coverage": "full",
   "notes": "⚠ ⚠ 邊界收件（c-196 a 第 7547 條；派工信第五節第 1 點）：母帶是美國 1979 年錄音、向遺孀的公司授權，**專輯全世界最早的版本是日本ビクター 1985 年那一版**——facts 照這個時序寫：第 1 條寫錄音地是加州、第 2 條寫「專輯第一次問世在日本」，**零處寫「日本錄音」**。版本表裡沒有比日本版更早的外國版本（Discogs 最早的外國版 2023；Apple 擴充版 ℗ 2019；RSD 盒裝 2021-11-26）——**收件前提成立，不必停下**。⚠ 同一場錄音的另一批 take 是美國 Galaxy 1984 年那張（c-196 a 第 7538 條退件）——**facts 零字點名那張**；facts 第 11 條的盒裝全題不含那張的盤名，但盒裝四張裡有它——寫作層寫盒裝時只寫「四張 LP 的盒裝」，**不要列出盒裝裡另外三張的盤名**。⚠ ⚠ 推翻／補正策展層兩處：(1) **「美國第一次出版是 2021／2023」→ 應為 2019 年的數位擴充版**（Apple us 1707025925 `℗ 2019 Widow's Taste Music`，bonus 軌的 releaseDate 逐字 2019-09-13）；**日本仍是最早，硬門檻判定不受影響**。(2) Apple 那一筆 `trackCount` 逐字 11，但 `lookup?entity=song` 只回 10 軌（可能有一軌不在 us 店面），facts 寫 11 軌照 trackCount。⚠ **Apple 擴充版的四軌主體不全是日本盤那四個 take**：Apple 與 2023 Omnivore 盤把首軌標成 `My Friend John (Alternate A)` 7:49，日本 CD 逐字 7:23——差 26 秒，**本層判不出是另一個 take、還是日本盤剪短**（〈Tin Tin Deo〉11:05 vs 11:06、〈Stardust〉8:42 vs 8:44、〈In A Mellotone〉8:37 vs 8:37 都對得上）。寫作層不要寫「數位版與原盤完全相同」。**`previews.json` 指到 us 1707025925（ready）是對的碟**（同一張專輯的擴充版），但試聽若剛好抽到首軌，可能不是 1985 年那個 take——交主線知悉。⚠ 版本聯集 6（Discogs 5 ＋ Apple 1）；RSD 盒裝 21133789 是另一個 master（`Compilation, Box Set`），不計入本盤版本數，只在 facts 第 11 條當史實寫。MB 1 筆在表內、MB 獨有 0。⚠ So in Love：en 維基逐字 `recorded … at Kendun Recorders, Burbank, CA on May 26, 1979 (tracks 2, 3 & 5)`、〈Stardust〉10:35——同一組 Cables／Haden／Higgins；**《So in Love》不在池中**（`art pepper` 全池 14 列逐列看過），可點名。本盤 B1 逐字 `Stardust (Alternate Take)`。⚠ 「生前沒有發行過」：CD notes ℗ 1984、日本 1985 首發，Pepper 1982 過世——**屬與作品直接綁定的時序事實（遺作出版）**，照反向禁令第一類可寫、只寫時序；死因（中風）en 維基逐字 `died of a stroke`，只寫一句不渲染。其餘生平（毒癮、入獄、Kenton／Buddy Rich 時期）一律未寫。⚠ 自傳《Straight Life》是書，**池中有同名專輯 seed `Art Pepper《Straight Life》1979`**——facts 第 9 條寫的是書名；寫作層若用這一格要寫明「自傳」，否則與池中那張唱片撞名。⚠ 〈Tin Tin Deo〉作曲：本盤只掛 Chano Pozo（一般也記 Gil Fuller 與 Dizzy Gillespie 合作），本層沒有第二個來源核，facts 照盤面只寫 Chano Pozo。⚠ 「豎笛是他最早學的樂器」en 維基逐字 `clarinet (his first instrument)`。⚠ Charlie Haden 也是 Ornette Coleman 早期四重奏成員，但本層只打了 Higgins 的條目，facts 第 10 條只寫 Higgins。⚠ 人名：大和明（2384348 realname，評論家、1936 年生於東京）；日文解說只見於日本盤。⚠ 同批串連：**〈In A Mellotone〉＝本組 `Marlene` 的〈In A Mellow Tone〉**（不同錄音、不同拼法，各照各的盤面）；《So in Love》那年 2 月 23 日另一場在紐約 Sound Ideas Studios、班底是 Hank Jones／Ron Carter／Al Foster——與本組 `Jackie McLean with The Great Jazz Trio` 1978 年 Sound Ideas 那場是同一間錄音室、同兩位樂手，但**不是本盤的錄音**，本卡 facts 未寫，留給寫作層不要混。⚠ 池中迴避：盤名 `Stardust` 撞 seed `Willie Nelson《Stardust》1978`、c-158 `Bill Charlap`、c-171 `Ron Carter` 等——引用帶掛名與年份。⚠ 封面：`caa.json` 本卡 `probeError: 503x4`（探測失敗、不是沒有圖），交主線重跑。⚠ 正文不點名資料來源平台。"
+ },
+ {
+  "key": "desc2:Richie Beirach|Ballads",
+  "artist": "Richie Beirach",
+  "album": "Ballads",
+  "facts": [
+   {
+    "f": "1986 年 3 月 16、17 日在東京的 CBS/Sony 信濃町錄音室以數位錄音錄成、3 月 21 日在同一處剪輯，整張是 Richie Beirach 一個人的鋼琴獨奏。",
+    "src": "https://www.discogs.com/release/7773226"
+   },
+   {
+    "f": "CD（32DP 300）1986 年 5 月 21 日上市、十二軌，℗ 屬 CBS/Sony；同期的 LP（28AP 3165）只收九軌，〈Blood Count〉〈Naima〉〈Small World〉三首只在 CD 上。",
+    "src": "https://www.discogs.com/release/9314062"
+   },
+   {
+    "f": "製作掛兩人：CBS/Sony 的 中村慶一 與 Beirach 自己；專輯的構想欄另掛鋼琴手 LeeAnn Ledgerwood 與 Beirach 兩人。",
+    "src": "https://www.discogs.com/release/11284326"
+   },
+   {
+    "f": "中村慶一 是 CBS/Sony 的製作人，Miles Davis 與 Herbie Hancock 在日本的錄音都由他督導。",
+    "src": "https://www.discogs.com/artist/383525-Keiichi-Nakamura"
+   },
+   {
+    "f": "錄音師 深田晃、助理 鈴木浩二 與 Yoshinori Sakuma，母帶 富田哲郎；美術與設計 加藤靖隆，攝影 細川晃。",
+    "src": "https://www.discogs.com/release/9314062"
+   },
+   {
+    "f": "十二軌裡四首是他自己的曲子：〈Elm〉〈Nightlake〉〈Leaving〉〈Sunday Song〉；其餘是〈My Foolish Heart〉、Wayne Shorter 的〈Infant Eyes〉、Billy Strayhorn 的〈Blood Count〉、〈On Green Dolphin Street〉、John Coltrane 的〈Naima〉、Jule Styne 與 Stephen Sondheim 的〈Small World〉、〈Over The Rainbow〉與〈You Don't Know What Love Is〉。最長的〈Elm〉6 分 29 秒，最短的〈Over The Rainbow〉2 分 57 秒。",
+    "src": "https://www.discogs.com/release/9314062"
+   },
+   {
+    "f": "〈Elm〉原是他 1979 年 5 月在西德 Ludwigsburg 替 ECM 錄的同名三重奏專輯的末軌，那一次的貝斯與鼓是 George Mraz 與 Jack DeJohnette。",
+    "src": "https://en.wikipedia.org/wiki/Elm_(album)"
+   },
+   {
+    "f": "〈Leaving〉與〈Sunday Song〉兩首，他 1977 年 6 月在 Ludwigsburg 錄的 ECM 獨奏盤《Hubris》裡都收過——九年後在東京，他又一個人把這兩首重彈了一次。",
+    "src": "https://en.wikipedia.org/wiki/Hubris_(Richard_Beirach_album)"
+   },
+   {
+    "f": "〈Leaving〉更早是他 1976 年 8 月在紐約與長笛手 Jeremy Steig 合錄的二重奏盤的末軌。",
+    "src": "https://en.wikipedia.org/wiki/Leaving_(album)"
+   },
+   {
+    "f": "〈Blood Count〉是 Billy Strayhorn 1967 年住院時寫完的曲子，原本題作〈Blue Cloud〉；同年 5 月 31 日他過世，這首成了他最後一首完成的作品。",
+    "src": "https://en.wikipedia.org/wiki/Blood_Count"
+   },
+   {
+    "f": "隔年（1987 年）他又替日本的 Sony 錄了一張鋼琴獨奏，題名就叫《Ballads 2》。",
+    "src": "https://en.wikipedia.org/wiki/Richie_Beirach"
+   },
+   {
+    "f": "已知版本五個，全在日本：1986 年的市售 LP、同號宣傳盤與 CD，2000 年 11 月 1 日的 SACD（SRGL-615），以及 2015 年 11 月 11 日的 CD 再發（SICJ 97）。",
+    "src": "https://www.discogs.com/master/1086156"
+   }
+  ],
+  "hookCandidates": [
+   "東京錄音室裡只有他一個人和一台鋼琴，兩天錄完十二首，其中兩首是他九年前在西德一個人彈過的自作曲。",
+   "CD 比黑膠多三首，其中一首是 Billy Strayhorn 臨終前在病房裡寫完的最後一首曲子。"
+  ],
+  "sound": "鋼琴獨奏的抒情曲集：四首自作曲夾著 Shorter、Strayhorn、Coltrane 與百老匯、電影標準曲，速度慢、留白多，數位錄音（原壓曲風欄只有 Jazz，風格標 Contemporary Jazz）。",
+  "keyTracks": [
+   "Elm",
+   "Blood Count"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ ⚠ 盤名撞池中 apex:hall `John Coltrane《Ballads》`（派工信第五節第 5 點、c-196 a 第 7556 條）——**facts 零字點名那張**；facts 第 6 條寫到 Coltrane 是〈Naima〉的作曲者（藝人名，不是盤名）；寫作層引用本盤一律帶掛名與年份，**不得寫任何把兩張《Ballads》並列比較的句子**。⚠ ⚠ **試聽誤命中，請主線處理（本層照邊界不動 `previews.json`）**：`previews.json` 的 `Richie Beirach|Ballads` 是 `ready us 1090656136`，**那是 `Dave Liebman & Richie Beirach《Balladscapes》2016`（13 軌）——別張碟**（盤名字串包含、年份漂移 30 年）。本層以 `Richie Beirach Ballads` 與片假名 `リッチー・バイラーク` 查 Apple jp／us：藝人頁 17 張都不含本盤——**本盤市場上沒有數位版，試聽應改為 unavailable**。這是探測層第四種誤命中「短盤名落在長盤名裡」的盤名版本（主線第 2011-B 條三講的是掛名）。⚠ 策展層事實覆核：原壓 LP 11284326、CD 9314062、2015 CD 7773226 逐筆讀過；master 1086156 versions 4 版＋ MB 獨有 1（58cc50b3 SACD）＝ **聯集 5**，與卡單一致；MB 2 筆。錄音地「東京」取 2015 CD notes 逐字「at CBS/SONY Shinanomachi Studio, Tokyo」（原壓只寫錄音室名）。⚠ 作曲欄錯：Discogs 把〈Infant Eyes〉掛成 Jean Carn 與 Wayne Shorter——Jean Carn 是後來填詞演唱的人，器樂曲作曲者是 Shorter；facts 只寫 Shorter（派工信第四節「作曲不是它的強項」）。〈Small World〉的作曲欄 Styne／Sondheim 是《Gypsy》的詞曲，照盤面。⚠ 反同構與前批已用格（第 1985-B 條，本層讀了 c-186 b、c-187 b、c-193 b、c-194 a 四份研究稿）：Beirach 的生年出生地、Tristano／Berklee／Manhattan School 學歷、Stan Getz、Chet Baker、Lookout Farm、Liebman 二重奏、Trio 廠牌那一串盤名、《Eon》班底——**全部已用過，本卡零字**；本卡的軸是「獨奏重彈自作曲」與「CBS/Sony 的東京數位錄音」。⚠ 〈Leaving〉的 1976 年二重奏盤（Trio）c-187 b 只列過盤名，本卡寫的是「那張的末軌」與錄音時地，不重寫盤名清單。⚠ 池中迴避（第 1787-B 條）：`beirach` 全池 8 列，《Elm》《Hubris》《Ballads 2》與 Jeremy Steig 二重奏盤都不在池中，可點名；〈Infant Eyes〉〈Naima〉出處的那兩張不點名。⚠ 反向禁令：Strayhorn 1967 年過世是曲子本身的來歷（曲目史），可寫；Beirach 2026 年 1 月過世（Discogs 307081 profile、en 維基）屬與作品無關的後續生平，**未寫**。《Ballads 2》是 1987 年的續作、與本盤直接綁定，照第一類寫、標明時序。⚠ 人名：中村慶一（383525 nv；`pairs` 的 `中村建一→中村慶一`）、深田晃（722837 nv）、鈴木浩二（652272 realname）、富田哲郎（256444 nv）、加藤靖隆（2024890 realname）、細川晃（2296964 realname `細川 晃`；nv 另有 `細川衡`，取 realname）；**`Yoshinori Sakuma` 的 nv 有 `佐久間義則`／`佐久間義徳` 兩形互相矛盾 → 照第 1967-B 條寫羅馬字**。LeeAnn Ledgerwood（1087261，美國鋼琴手、1959 年生）。⚠ 價格：`28AP`／`32DP` 前兩位是定價碼（主線第 1986-B 條），本層未寫價格。⚠ 同批互指：〈My Foolish Heart〉（本組 `Chet Baker Quartet`）、〈On Green Dolphin Street〉（本組 `Ronnie Cuber`、池中 seed `宮沢昭《On Green Dolphin Street》1982`）、〈Naima〉（本組 `Bobby Lyle Trio`）——全是不同錄音。⚠ 正文不點名資料來源平台。"
+ },
+ {
+  "key": "desc2:Jackie McLean with The Great Jazz Trio|New Wine in Old Bottles",
+  "artist": "Jackie McLean with The Great Jazz Trio",
+  "album": "New Wine in Old Bottles",
+  "facts": [
+   {
+    "f": "1978 年 4 月 6、7 日在紐約的 Sound Ideas Studios 錄音，同年由日本的 East Wind 字標以 EW 8057 發行，六軌 LP，定價 2500 日圓；盤上逐字寫著「Presented by Ai Music Co., Ltd. Tokyo」，製造與發行是日本フォノグラム。",
+    "src": "https://www.discogs.com/release/6634576"
+   },
+   {
+    "f": "編制是四重奏：Jackie McLean 中音薩克斯風（credit 特別註明是 Yamaha 的中音），Hank Jones 鋼琴、Ron Carter 貝斯、Tony Williams 鼓——鼓手在名單上掛的是本名 Anthony Williams。",
+    "src": "https://www.discogs.com/release/6634576"
+   },
+   {
+    "f": "六軌裡兩首是 McLean 把自己的老曲重錄、題目後面都加了「Again」：〈Appointment In Ghana Again〉與〈Little Melonae Again〉；另四首是 Rodgers 與 Hart 的〈It Never Entered My Mind〉、Monk 的〈'Round About Midnight〉、Joe Raposo 的〈Bein' Green〉與 Charlie Parker 的〈Confirmation〉。最長的〈'Round About Midnight〉9 分 05 秒。",
+    "src": "https://www.discogs.com/release/6634576"
+   },
+   {
+    "f": "〈Bein' Green〉是 Joe Raposo 1970 年寫的歌，原唱是《Sesame Street》裡由 Jim Henson 操偶配音的青蛙 Kermit，後來 Frank Sinatra 與 Ray Charles 都翻唱過。",
+    "src": "https://en.wikipedia.org/wiki/Bein%27_Green"
+   },
+   {
+    "f": "製作 伊藤潔、協同製作 守崎幸夫、執行製作 鯉沼利成；紐約的錄音師是 David Baker，日本這頭的再混音 鈴木良博，封面攝影 操上和美。",
+    "src": "https://www.discogs.com/release/6634576"
+   },
+   {
+    "f": "執行製作 鯉沼利成 是日本的音樂推廣人，他的署名有一種寫法逐字是「AI Music-Toshinari Koinuma」——也就是盤上那家 Ai Music。",
+    "src": "https://www.discogs.com/artist/1020059-Toshinari-Koinuma"
+   },
+   {
+    "f": "前一天（1978 年 4 月 5 日），同樣這三位節奏組在同一間 Sound Ideas、同一位錄音師 David Baker 手下，先錄了一張他們自己的三重奏盤。",
+    "src": "https://www.discogs.com/release/2095296"
+   },
+   {
+    "f": "美國版同年由 Inner City Records 以 IC 6029 發行，公司欄逐字寫著向日本フォノグラム 與 East Wind Music 取得授權；漆盤在紐約的 Masterdisk 由 Joe Gastwirt 刻，刻片刻字的日期是 1978 年 9 月 11 日。",
+    "src": "https://www.discogs.com/release/3136130"
+   },
+   {
+    "f": "樂評人 Robert Christgau 給這張 A−，稱它是「十多年來最好的 McLean 專輯」，說它勝過他在歐洲 SteepleChase 錄的那幾張，因為 Hank Jones、Ron Carter、Tony Williams 的節奏組逼得他「能吹多快就想多快」。",
+    "src": "https://en.wikipedia.org/wiki/New_Wine_in_Old_Bottles"
+   },
+   {
+    "f": "《DownBeat》1979 年 5 月 17 日那一期的唱片評介給了五顆星。",
+    "src": "https://en.wikipedia.org/wiki/New_Wine_in_Old_Bottles"
+   },
+   {
+    "f": "鋼琴手 Hank Jones 1918 年生於密西西比州 Vicksburg，他的兩個弟弟是小號手 Thad Jones 與鼓手 Elvin Jones。",
+    "src": "https://www.discogs.com/artist/265629-Hank-Jones"
+   },
+   {
+    "f": "已知版本十一個：1978 年日本原壓與兩張日本平價再發（20PJ-22、18PJ-1002）、1978 年美國 Inner City 版、1986 年 4 月 21 日首次 CD 化（32JD-109）、2000、2002、2015 年三張日本 CD、2007 與 2009 年美國 Test Of Time 的 CD，以及一個 ℗ 1978 Universal 的六軌數位版。",
+    "src": "https://www.discogs.com/master/329214"
+   }
+  ],
+  "hookCandidates": [
+   "兩首舊作重錄，題目後面都老實加了一個「Again」；另一首是《Sesame Street》裡青蛙 Kermit 唱的歌。",
+   "美國樂評人說這是 McLean 十多年來最好的一張——而它是日本廠牌在紐約錄的。"
+  ],
+  "sound": "中音薩克斯風搭鋼琴三重奏的 hard bop 四重奏：McLean 尖銳急促的中音壓在 Hank Jones、Ron Carter、Tony Williams 的節奏組上，自作曲兩首、標準曲與 bop 名曲四首（原壓曲風欄只有 Jazz，1986 CD 標 Post Bop）。",
+  "keyTracks": [
+   "Appointment In Ghana Again",
+   "Confirmation"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 年份（c-196 a 第 7548 條改判 1986 → 1978）覆核成立：原壓 6634576 notes 逐字 `Recorded April 6 & 7, 1978`、`Ⓟ 1978`；美國 Inner City 刻片刻字 `9-11-78`；en 維基 released 1978；Apple jp `℗ 1978`。MB 只建 1986 CD 與無日期美國 CD（jp-1 簡報 (a) 那一形），本層逐筆比過「MB 轄下 JP release 1 筆 vs Discogs 日本盤 6 筆」，漏的正是原壓與兩張 1978 年平價再發（主線第 1965-B 條）。⚠ 版本：master 329214 versions 10 版＋ Apple jp 1468866372（MB 零 Digital Media）＝ **聯集 11**，與卡單一致；MB 獨有 0。⚠ 20PJ-22、18PJ-1002 兩張 Discogs 都記 1978，但號段是平價再發（c-192 a 同系列的 18PJ-1003 記 1980）——facts 寫「平價再發」不寫年份。⚠ ⚠ **GJT 班底（派工信第五節第 3 點）**：本盤是 Hank Jones／Ron Carter／Tony Williams（1978），與 b 組《Great Standards Vol.1》（Hank Jones／Mads Vinding／Billy Hart，1988）**不是同一組三人**；**GJT 團史零字**（歸 c-193）——facts 第 7 條只寫「同三人前一天在同一間錄音室錄了自己的三重奏盤」，**不點名那張**（c-192 a 已收的 `The Great Jazz Trio《Milestones》`，池中卡；主線第 1787-B 條），也不寫 GJT 怎麼組成、誰取的名。⚠ ⚠ 製作人衝突：en 維基 infobox 逐字「Kiyoshi Itoh and Yasohachi Itoh」，**原壓與美國版的 credits 都只掛 `Producer — Kiyoshi Itoh`（406894）**——facts 照盤面只寫 伊藤潔；**寫作層不得寫 伊藤八十八**（兩人不同：伊藤潔 1946 年生於名古屋，406894；伊藤八十八 是本組 `Marlene` 的製作人，406896）。⚠ facts 第 6 條是「署名變體」的事實陳述；「Ai Music 是 鯉沼利成 的公司」這一步本層只有這個變體當依據，寫作層寫成「盤上那家 Ai Music 就是他的名字掛著的那一家」這種保守語氣即可，不要寫「他創辦」。⚠ 「Yamaha 的中音」取原壓 credit 逐字 `Alto Saxophone [Yamaha Alto Saxophone]`。⚠ 〈Appointment In Ghana〉與〈Little Melonae〉的原版：前者是池中 c-131 `Jackie McLean《Jackie's Bag》` 那張的曲子——**facts 不點名原版盤、不寫原版年份**，只寫「老曲重錄、加了 Again」；〈Little Melonae〉c-171 a《Hat Trick》研究稿已寫過一次重錄，本卡不寫那張。⚠ 反同構（第 1985-B 條，本層讀了 c-193 b《Like Old Times》與 c-171 a《Hat Trick》研究稿）：McLean 的 Hartt School 教職、出生地、Monk／Powell／Parker 鄰居、Blue Note 解約、「本盤前後是哪幾張」的作品年表——**全部已用過，本卡零字**。Christgau 那句提到 SteepleChase 是評論原文的一部分，照引、不展開。⚠ Christgau 等級 A−、DownBeat 五星、AllMusic 4.5 星都是評分，不是獎項；facts 未寫 AllMusic（它的原文重點是 Hank Jones 的彈法，留給篇幅）。⚠ 反向禁令：Tony Williams 1997、Hank Jones 2010、McLean 2006 年過世——與作品無關，未寫。Hank Jones 的兄弟是出身背景，不是後續事件。⚠ 人名：伊藤潔（406894 realname；`pairs` 的 `伊藤清→伊藤潔`）、守崎幸夫（1142677 nv）、鯉沼利成（1020059 realname）、鈴木良博（382386 realname）、操上和美（2265672 realname）；設計 Heyqlow Kobayashi 與兩位助理錄音師（Camdace Munson、Lucy Laurie）未寫。⚠ 同批串連：錄音師 David Baker 也是本組 `Marlene` 1983 年 Media Sound 那場的錄音師（兩卡擇一寫）；本組 `Art Pepper《Stardust》` 的 notes 記了 1979 年 2 月 Hank Jones／Ron Carter 在同一間 Sound Ideas 替 Pepper 錄音——**那不是本盤的錄音**，本卡未寫。⚠ 曲題撞他卡：〈'Round About Midnight〉與本組 `Chet Baker Quartet` 的〈'Round Midnight〉不同錄音、不同題形；〈Confirmation〉〈It Never Entered My Mind〉是池中常見曲題，引用帶掛名與年份。⚠ 封面：`caa.json` 本卡 `probeError: 503x4`（探測失敗），交主線重跑；試聽 ready jp 1468866372 正確（本層 lookup 六軌逐軌對得上）。⚠ 正文不點名資料來源平台：facts 第 9、10 條點名的是評論者與雜誌，不是資料庫。"
+ },
+ {
+  "key": "desc2:Ronnie Cuber|Pin Point",
+  "artist": "Ronnie Cuber",
+  "album": "Pin Point",
+  "facts": [
+   {
+    "f": "1985 年 11 月 21 日與 12 月 9 日在紐約的 Soundtrack Studios 錄音，錄音師 Tom Jung；1986 年由 King 的爵士字標 Electric Bird 發行，卡帶（K28W-450）4 月 21 日、CD（K32Y 6073）5 月 5 日上市，另有 LP（K28P 6415），℗ 屬 King。",
+    "src": "https://www.discogs.com/release/35993242"
+   },
+   {
+    "f": "Ronnie Cuber 吹上低音薩克斯風，同陣還有中音薩克斯風 David Sanborn、吉他 Georg Wadenius、鍵盤 Rob Mounsey、貝斯 Will Lee、鼓 Steve Gadd 與打擊 Steve Thornton。",
+    "src": "https://www.discogs.com/release/9464373"
+   },
+   {
+    "f": "製作兼編曲是 David Matthews，執行製作 川島重行，母帶 牧野晃；封面照片出自義大利攝影師 Franco Fontana 與 David Tan。",
+    "src": "https://www.discogs.com/release/9464373"
+   },
+   {
+    "f": "七軌裡四首是 Cuber 自己寫的：〈Move It〉〈Snotty〉、標題曲〈Pin Point〉與拿自己姓氏做文章的〈Afro Cuber〉；Matthews 寫了〈Two Brothers〉與〈Heavy Hang〉，另加標準曲〈On Green Dolphin Street〉。最長的〈Heavy Hang〉7 分 57 秒，最短的〈Afro Cuber〉3 分 37 秒。",
+    "src": "https://www.discogs.com/release/9464373"
+   },
+   {
+    "f": "美國版 CD（Electric Bird CDJ 623）把盤名改成首軌的《Two Brothers》，標籤上印「Ronnie Cuber With David Sanborn」，版權行逐字「P 1986 King Records / C 1986 Intersound, Inc.」。",
+    "src": "https://www.discogs.com/release/5306915"
+   },
+   {
+    "f": "David Matthews 1942 年生於肯塔基州，1970 年代初替 James Brown 編曲，之後長年與 Creed Taylor 的 CTI 合作；他領的 Manhattan Jazz Orchestra 與 Manhattan Jazz Quintet 兩支樂團在日本都很受歡迎。",
+    "src": "https://www.discogs.com/artist/386834-Dave-Matthews-3"
+   },
+   {
+    "f": "執行製作 川島重行 是日本的唱片製作人，主要替 Electric Bird 與 Sweet Basil 兩個字標做唱片。",
+    "src": "https://www.discogs.com/artist/525096-Shigeyuki-Kawashima"
+   },
+   {
+    "f": "錄音師 Tom Jung 是數位錄音的先驅，1982 年創辦了自己的廠牌 DMP。",
+    "src": "https://www.discogs.com/artist/341954-Tom-Jung"
+   },
+   {
+    "f": "Cuber 1941 年生於紐約，1959 年在 Marshall Brown 的 Newport Youth Band 裡從次中音改吹上低音；1966 到 1967 年待過 George Benson 的樂團。",
+    "src": "https://en.wikipedia.org/wiki/Ronnie_Cuber"
+   },
+   {
+    "f": "吉他手 Georg Wadenius 是瑞典人，1972 年受聘加入 Blood, Sweat & Tears 而搬到美國，1979 到 1985 年是《Saturday Night Live》的樂團團員，1980 年代是紐約的熱門錄音室吉他手。",
+    "src": "https://www.discogs.com/artist/270610-Georg-Wadenius"
+   },
+   {
+    "f": "西德的 Bellaphon 同年替 King 代工壓了 LP 與 CD，沿用日本的目錄號，版權行仍寫 King Record Co.；2014 年日本出了重新母帶的 CD 再發（KICJ-2397）。",
+    "src": "https://www.discogs.com/master/1100817"
+   },
+   {
+    "f": "已知版本九個：日本 1986 年的 LP、卡帶與 CD，西德代工的 LP 與 CD，美國改題的 CD 與卡帶，2014 年日本 CD 再發，以及一個標 1986 年 4 月 21 日、℗ King 的七軌數位版。",
+    "src": "https://music.apple.com/jp/album/pin-point/1651763445"
+   }
+  ],
+  "hookCandidates": [
+   "同一張碟在美國換了名字：日本叫《Pin Point》，美國版改用首軌的《Two Brothers》，還在標籤上加印了 David Sanborn。",
+   "四首自作曲裡有一首叫〈Afro Cuber〉——吹上低音薩克斯風的領班，拿自己的姓玩了一個雙關。"
+  ],
+  "sound": "上低音薩克斯風領銜的紐約錄音室 fusion：Sanborn 的中音與 Cuber 的上低音雙管，Gadd、Will Lee 的節奏組加鍵盤與吉他，Matthews 編曲（原壓曲風欄標 Fusion／Smooth Jazz），中間夾一首標準曲〈On Green Dolphin Street〉。",
+  "keyTracks": [
+   "Pin Point",
+   "Two Brothers"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "⚠ 盤名改判（c-196 a 第 7549 條第 1 點：`Two Brothers` → `Pin Point`）覆核成立：日本卡帶、CD、LP 與 Apple jp 逐字 `Pin Point`；美國 CD 5306915 與孤兒卡帶 20341693 逐字《Two Brothers》。⚠ ⚠ 硬門檻覆核（「日本是原盤」）：美國 CD 自己逐字 `P 1986 King Records`；西德兩版逐字 ℗ King 並沿用日本目錄號——**版本表裡沒有比日本版更早、而且不掛 King ℗ 的外國版本，收件前提成立**。⚠ **en 維基 Ronnie Cuber 條目的 discography 把「1985: Two Brothers (AMG)」與「1986: Pin Point (Electric Bird/PID)」列成兩張——那是錯的**：錄音日 1985-11-21／12-09，1985 年內不可能發行；美國 CD 七軌與日本盤逐軌同題同秒。facts 不引那一行；若主線要更硬，可以在 rulings 記一句（本層記了）。⚠ 卡帶 35993242 的 `companies` 逐字「Manufactured By: Bellaphon International」而國別標 Japan——與 LP 5487680 同樣的疑點（c-196 a 第 7552 條末段）；facts 第 1 條只寫上市日與目錄號，不寫壓片地。⚠ 版本聯集 9（Discogs 7 ＋ 孤兒 1 ＋ Apple 1），與卡單一致；MB 2 筆在表內、MB 獨有 0；MB 轄下 JP 1 筆 vs Discogs 日本 4 筆，差的是卡帶、CD 與 2014 再發，盤名年份已由策展層改判。⚠ facts 第 12 條的 src 是 Apple 店面頁（數位版那一格的唯一來源）；**寫作層照「正文不點名資料來源平台」寫「數位版」即可，不寫店名**。⚠ ⚠ 池中迴避（第 1787-B 條）：Cuber 的前一張 King 盤《Passion Fruit》（1985）**已在 c-197 卡單裡**——facts 零字點名，也不寫「第二張」這種會逼寫作層補名字的序數；`Manhattan Jazz Quintet`（c-197 八張）只以藝人名出現在 David Matthews 的生平格，**不點名任何一張盤名**。⚠ 〈On Green Dolphin Street〉＝ seed `宮沢昭《On Green Dolphin Street》1982` 的盤名，也與本組 `Richie Beirach《Ballads》` 同題——引用帶掛名與年份。⚠ 反向禁令：Cuber 2022、Sanborn 2024、Wadenius 2026 年過世，Cuber 1990 年代起的 Mingus Big Band——與作品無關，未寫；Wadenius 的 SNL 樂團 1979–85 是錄音當時他的職務，照寫。Steve Gadd 與 Cuber 1986 年之後的 The Gadd Gang 屬後續，未寫。⚠ 人名：川島重行（525096 nv）、牧野晃（474621 nv）；Franco Fontana 是義大利攝影師（2106536 profile，以抽象色彩風景聞名、作品常用在 ECM 封面——facts 只寫國籍與職業，ECM 那一格留著不用）。⚠ 「拿自己姓氏做文章」是題名 `Afro Cuber` 與掛名 `Cuber` 的字面重疊，本層沒有作者自述的來源——hook 第二條用「玩了一個雙關」是從題名直接看得到的，寫作層不要加「他說」。⚠ 試聽 ready jp 1651763445 正確（掛名 `ロニー・キューバー & デヴィッド・サンボーン`、七軌、1986-04-21、℗ King）；CAA 有圖。⚠ 同批串連：製作人 川島重行 也是本組 `Bobby Lyle Trio《Night Breeze》` 的執行製作（同一字標 Electric Bird）——兩卡擇一寫他的經歷（本卡已寫，Night Breeze 那張只掛名字）。⚠ 正文不點名資料來源平台。"
  }
 ]
