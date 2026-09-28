@@ -147,7 +147,7 @@
     "src": "https://columbia.jp/artist-info/watanabesadao/discography/COCB-54254.html"
    },
    {
-    "f": "這場音樂會是 慶応義塾大学 的軽音楽鑑賞会 主辦的。",
+    "f": "這場音樂會是 慶応義塾大学軽音楽鑑賞会 主辦的。",
     "src": "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB"
    },
    {
@@ -529,6 +529,207 @@
   ],
   "status": "full",
   "notes": "⚠ ⚠ **補正策展層一處：1979 年 Express 版不是原盤的單純再發，是換了內容的版本**。卡單 `curatorRisk` 說「Apple 是 7 軌（1979 年 Express `ETJ-85019` 起的擴充曲序，多了〈Left-Handed Woman〉等），原壓 5 軌」——方向對，但 **ETJ-85019 本身是六軌**（A1〈Left-Handed Woman〉／A2〈Typhoon〉／A3〈Here's That Rainy Day〉／B1〈Boston Flight〉／B2〈Rhythm Road〉／B3〈Better Make It Through Today〉，Discogs releases/2536672），**Apple 的七軌是 2012 年 CD 的曲序**（五首原曲＋〈Boston Flight (LF-91042 version)〉＋〈Left-Handed Woman〉；2012 CD 的 credits 引用了第 7 軌、tracklist 只登了五軌）。**所以「原壓的〈Boston Flight〉」與數位版主軌的〈Boston Flight〉是兩個混音**（8:03 vs 8:18）——封面同一張、軌數與混音不同，下游不要說數位版就是原壓原樣。⚠ ⚠ **跨批同曲（池中已上架）**：c-191 a 的 `大村憲司《Kenji Shock》`（1978-11-25 Alfa，洛杉磯錄音）與本盤共有〈Boston Flight〉〈Better Make It Through Today〉〈Rhythm Road〉三首（加上 1979 版的〈Left-Handed Woman〉是四首）——**是重錄、不是同一份錄音**（編制與時長全異：Boston Flight 4:56 vs 8:18、Rhythm Road 5:46 vs 9:09、Better Make 4:43 vs 5:33；那張是 Porcaro 兄弟與 Lukather），照第 1948-B 條不影響兩卡成立。⚠ **但那張卡已上架的 hook 是「整張唯一有人唱的一首是 Eric Clapton 三年前的歌，而站在麥克風前的是吉他手自己」——同一件事本盤早四個月就做過**；兩卡並陳時要對得上：**本卡寫「第一次」這一端時，不要寫成「他後來的唱片再沒唱過」**，也請主線看一眼那張卡的正文要不要補一句（本層不動 c-191 的檔）。facts 第 8 條照派工信只寫「另一家廠牌的下一張個人專輯」、不點名盤名。⚠ 第 3 條〈Typhoon〉的作曲欄逐字 `Toshiaki Hayashi`（Discogs 沒有這個人的漢字變體、也不是鼓手 林立夫＝Tatsuo Hayashi），照規矩寫羅馬字；Kumito Osuyara、Ray Ohara 同樣零漢字變體、寫羅馬字。第 4 條 河田為雄（857271 nv）、高橋英昭（1243149 nv）、加藤しげき（1767574 nv，只有假名形「加藤しげき」「加藤 しげき」，照 nv 寫）；井川恭一 照 2023 版 credits 的逐字漢字。⚠ 第 10 條「是原壓那一版的混音」出自 Apple 的軌名逐字「(LF-91042 version)」＋時長差，**本層沒有取得原壓的逐軌時長**（原壓 Discogs 條目零時長），寫作層若用只寫「數位版另收一軌標明原壓版本的 Boston Flight」。⚠ ⚠ **已用掉的格**：大村憲司 的生年、神戸、甲南、1969 年 Yamaha 比賽、Fillmore West、上智、赤い鳥、エントランス／バンブー／カミーノ、YMO 巡演支援（c-185 b、c-186 a、c-191 a）——本卡零字；坂本龍一／林立夫／村上秀一 的生平也不寫（本卡只寫他們在盤上的位置）。⚠ 第 5 條「東芝EMI 把它改掛 Express 字標」：原壓字標 `Toshiba Records`、再發字標 `Express`，兩版 `companies` 都是 `Manufactured By: Toshiba EMI Ltd`——同一家公司的兩個字標。⚠ 年份照卡單 1978（原壓 `released` 1978-07-05、Apple `releaseDate` 同日，東芝盤的 Apple 日期只作佐證）。⚠ 身分照卡單 §1 人工（MB 查無），facts 的 `src` 零 MB。⚠ 版本：master 545684 八版逐筆跑完＋Apple jp 720313988＝9，與策展層相同、零改判。⚠ 串流：`previews.json` ready（jp 720313988，與卡單 `coverSourceHint` 同一個 id）；`caa.json` `art: null`。推翻策展層 0 處（數字）；補正 1 處（Express 版與數位版的內容）。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc4:中村照夫|Rising Sun",
+  "artist": "中村照夫",
+  "album": "Rising Sun",
+  "facts": [
+   {
+    "f": "1976 年 4 月 1、13、26 日在紐約的 A&R Studio 錄成，同年由 Kitty Records 以 MKF 1004 發行；製作是 中村照夫 自己，公司欄逐字「Produced For: Kitty Music Corp.」，製造與發行是 Polydor K.K.。",
+    "src": "https://www.discogs.com/release/16104365"
+   },
+   {
+    "f": "日本原壓是對開封套，附腰帶與一本彩色照片冊，封面的盤名與封底的藝人名用的是反光的箔押字。",
+    "src": "https://www.discogs.com/release/16104365"
+   },
+   {
+    "f": "六軌的作曲欄全是團裡的人：〈Rising Sun〉是 Steve Grossman 與 中村照夫 合寫，〈Cat〉〈Precious One〉出自吉他手 森士郎，〈Morning Mist〉是 中村照夫、接在後面的〈Steppin With Lord〉是電鋼琴手 Harry Whitaker，〈Red Shoes〉是 中村照夫，〈Sweet Pea & Collard Greens〉由 森士郎 與 中村照夫 合寫。",
+    "src": "https://www.discogs.com/release/16104365"
+   },
+   {
+    "f": "陣容是紐約的美日混編：Steve Grossman 的次中音與高音薩克斯風、John Mosley 的小號、Carter Jefferson 的高音薩克斯風，電鋼琴輪流由 Bob Neloms、Harry Whitaker、Onaje Allan Gumbs 彈，Lonnie Smith 彈 Korg 合成器，森士郎 彈吉他與合成器，鼓是 Art Gore，末軌換成 岸田恵士。",
+    "src": "https://www.discogs.com/release/16104365"
+   },
+   {
+    "f": "盤上連器材牌子都逐一印了出來：鼓組是 Yamaha、中村照夫 的電貝斯是 Yamaha，合成器有 Korg、Arp 與 Univox Stringman，吉他接 Mutron 效果器。",
+    "src": "https://www.discogs.com/release/16104365"
+   },
+   {
+    "f": "A3〈Morning Mist〉那一段，中村照夫 自己搖的是高尾山的鈴與淺草的土鈴，另有人負責非洲鈴、印度吟誦鈴與印度牛鈴，牛鈴由 岸田恵士 搖、他還出了聲音。",
+    "src": "https://www.discogs.com/release/16104365"
+   },
+   {
+    "f": "〈Cat〉與〈Precious One〉兩首有人聲，唱的是 Priscilla Baskerville 與 Sandy Hewitt；其餘四軌是器樂。",
+    "src": "https://www.discogs.com/release/16104365"
+   },
+   {
+    "f": "同一年美國 Polydor 以 PD-1-6097 發行，說明欄逐字「Produced by Teruo Nakamura for Kitty Music Corp.」，母帶在紐約的 Masterdisk 做，Lonnie Smith 註明是向 Groove Merchant Records 商借。",
+    "src": "https://www.discogs.com/release/885139"
+   },
+   {
+    "f": "日美兩版不完全一樣：日本版 A 面的曲序不同，A3〈Morning Mist〜Steppin With Lord〉9 分 30 秒前面多了一小段前奏，美國版那一軌是 8 分 11 秒、排在 A1。",
+    "src": "https://www.discogs.com/release/16104365"
+   },
+   {
+    "f": "次中音薩克斯風手 Steve Grossman 1951 年生於紐約布魯克林，從 jazz fusion 起步、以 hard bop 知名，跟 Miles Davis 與 Elvin Jones 都錄過音，1974 年出了第一張自己的唱片。",
+    "src": "https://www.discogs.com/artist/256167"
+   },
+   {
+    "f": "錄音與混音是加拿大出身的工程師 Don Hahn，他日後在 A&M Studios 與 Ocean Way 工作。",
+    "src": "https://www.discogs.com/artist/133247"
+   },
+   {
+    "f": "已知版本十一個：1976 年日本 Kitty 的市售盤與宣傳盤，同年美國 Polydor 的黑膠四筆（含宣傳盤與加印歐洲編號的一筆）、卡帶與 8 軌帶，以及 1992 年與 2009 年兩張日本 CD。",
+    "src": "https://www.discogs.com/master/336283"
+   }
+  ],
+  "hookCandidates": [
+   "紐約錄音室裡的日本貝斯手，在一首曲子的開頭搖起了高尾山的鈴和淺草的土鈴。",
+   "同一年東京與紐約各發一版，日本版多了一段前奏、封面的字是反光箔押的——美國版的說明欄寫得清楚：這是替東京那家公司做的母帶。"
+  ],
+  "sound": "1976 年紐約的 jazz fusion／funk：Steve Grossman 的薩克斯風與 John Mosley 的小號在前線，三位電鋼琴手輪替、Lonnie Smith 的 Korg 合成器與 森士郎 的吉他效果鋪底，中村照夫 的電貝斯推著律動；兩首有女聲，其餘器樂，A3 有一整段鈴聲與打擊的前奏。",
+  "keyTracks": [
+   "Rising Sun",
+   "Morning Mist ~ Steppin With Lord"
+  ],
+  "status": "full",
+  "notes": "⚠ 盤名、年份（1976）照卡單；身分照卡單（MB 只建美國 Polydor 版，照 c-185 b 第 5923 條先例原盤歸日本 Kitty）——第 1、8 條「Produced For: Kitty Music Corp.」「Produced by … for Kitty Music Corp.」與之同向，facts 不寫任何原盤在美國的句子。⚠ ⚠ **已用掉的格（c-181 a《Super Friends》、c-185 b《Song Of The Birds》兩份研究稿逐條讀過）**：1942 年生於東京、1964 年赴紐約、Reggie Workman、Roy Haynes 的 Hip Ensemble、與 Grossman／Lenny White 組三重奏、《Unicorn》的 rare groove 與取樣、Stanley Turrentine、1976 年離團自組 Rising Sun、1980 年代轉製作與廣播節目 Hip Pocket、岸田恵士 是唯二日本樂手那一格、森士郎 一人掛多角——**本卡一律不寫**；第 10 條 Grossman 的生平是新格（前批只寫他 1969 年與 中村照夫 組三重奏），寫作層不要再把那段三重奏帶回來。⚠ ⚠ **美國爵士榜那一格不寫**：c-181 a 與 c-185 b 的研究稿都寫「1976 年的《Rising Sun》進過美國爵士榜前十」——**本層以 repo 的 `billboard-bn-1975q4-1976-ocr.txt` 掃 `Nakamura`／`Rising Sun` 零命中本盤**（該 OCR 每期只收部分版面，查無不等於沒上榜）；1977–1979 那一檔掃到的是《Manhattan Special》（美國題）在某期爵士專輯榜第 24 名，不是本盤。**名次與榜名都無法定案，本卡不寫**。⚠ 第 3 條的作曲欄：卡單 `curatorWhy` 寫「作者欄逐字全是團員自己（中村照夫、森士郎、Steve Grossman、Harry Whitaker）」——與逐軌 credits 相符；森士郎 照 `name-corrections.json` 與 Discogs 726644 `namevariations`「森士郎」。⚠ 第 6 條的樂器名照逐軌 credits 逐字翻：`Bells [Mountain Takao's]`→高尾山的鈴、`Bells [Asakusa's Clay]`→淺草的土鈴、`Bells [Indian Cow]`＋`Voice`→岸田恵士。⚠ Discogs 藝人頁 354641 的 `realname` 逐字「中村輝夫」（與 `namevariations` 的「中村照夫」不同字）——**本層判不出哪一個是本名，正文一律用掛名的 中村照夫，不寫本名**。⚠ 反向禁令：Grossman 2020 年、Lonnie Smith 2021 年辭世，不寫。⚠ 收藏登記：美國版想要 1105／持有 742、日本原壓想要 507／持有 50（本層沒寫進 facts）。⚠ 版本：master 336283 十一版逐筆跑完，MB 2 筆（都是美國 PD-1-6097，在表內），Apple jp／us 查無 → 11，與策展層相同、零改判；日本盤 4 vs MB 轄下 JP 0，盤名與年份已回查。⚠ ⚠ **CAA 提醒（請主線上架前看一眼）**：`caa.json` 本筆 `art` 指到 RG f72e2ebb——**那個 RG 只建了美國 Polydor 版，而美國版的封面攝影掛的是 Kenneth McGowan（front），日本原壓只掛 Shingo Sato 的攝影、封面字是反光箔押**——兩版封面很可能不同，CAA 那張多半是美國版的封面。本層不動該檔。⚠ 串流：`previews.json` unavailable（六個店面 0 筆）。推翻策展層 0 處；補三格（日美兩版的差異、A3 的鈴、器材牌子）。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc2:The Great Jazz Trio|Kindness, Joy, Love & Happiness",
+  "artist": "The Great Jazz Trio",
+  "album": "Kindness, Joy, Love & Happiness",
+  "facts": [
+   {
+    "f": "1977 年 10 月 3、4 日在加州的 Warner Bros. Recording Studios 錄成，同年由 East Wind 以 EW-8056 發行，七軌立體聲黑膠，製造與發行是日本フォノグラム。",
+    "src": "https://www.discogs.com/release/4773501"
+   },
+   {
+    "f": "錄音師是 Warner 的 Lee Herschberg，助理是 Loyd Clifft 與 鈴木良博（後者也負責再混音）；製作 伊藤潔 與 伊藤八十八、執行製作 鯉沼利成，解說 佐藤秀樹，封面攝影 操上和美、內袋照片 Brad Elterman。",
+    "src": "https://www.discogs.com/release/4773501"
+   },
+   {
+    "f": "Lee Herschberg 在 1960 年代替 Frank Sinatra 錄了不少暢銷曲，1967 年 3 月 2 日的第九屆葛萊美獎上，他與 Eddie Brackett 以〈Strangers in the Night〉拿下最佳工程錄音（非古典類）。",
+    "src": "https://en.wikipedia.org/wiki/9th_Annual_Grammy_Awards"
+   },
+   {
+    "f": "七軌是 Eddie Harris 的〈Freedom Jazz Dance〉、Ron Carter 的〈Doom〉、〈Old Folks〉、Hank Jones 的〈Ah, Oui〉、Coltrane 的〈Mr. P.C.〉、Miles Davis 的〈All Blues〉與 Thad Jones 的〈A Child Is Born〉；最長的是 8 分 07 秒的〈All Blues〉，最短的〈Old Folks〉3 分 58 秒。",
+    "src": "https://www.discogs.com/release/5564437"
+   },
+   {
+    "f": "廠牌的復刻商品頁說，這是接在著名的 Village Vanguard 現場盤之後的錄音室錄音，並把〈Freedom Jazz Dance〉列為必聽：Tony Williams 壓倒性的大鼓推著 Hank Jones 的有力獨奏。",
+    "src": "https://www.universal-music.co.jp/the-great-jazz-trio/products/uccj-9185/"
+   },
+   {
+    "f": "那一頁與 2015 年那張 CD 都把盤名縮成「KJLH」四個字母。",
+    "src": "https://www.universal-music.co.jp/the-great-jazz-trio/products/uccj-9185/"
+   },
+   {
+    "f": "美國版 1978 年由 Inner City Records 以 IC 6023 發行，公司欄逐字寫著向日本フォノグラム 與 East Wind Music 取得授權；封底印著母帶與壓片由日本ビクター 負責、刻片是日本的 小鉄徹，但唱片內圈的刻字顯示實際在美國的 Presswell 壓片、Masterdisk 刻片。",
+    "src": "https://www.discogs.com/release/5564437"
+   },
+   {
+    "f": "1990 年 6 月 5 日的 CD（EJD-3055）在七軌後面接上另外四軌——〈A Night In Tunisia〉〈Round About Midnight〉〈Satin Doll〉〈My Funny Valentine〉——那是同一週在同一間錄音室錄的另一場，說明欄的錄音日因此寫成「October 3,4,6 1977」。",
+    "src": "https://www.discogs.com/release/10078504"
+   },
+   {
+    "f": "解說者 佐藤秀樹 1933 年生於東京，是日本的爵士評論家。",
+    "src": "https://www.discogs.com/artist/546126"
+   },
+   {
+    "f": "刻美國版漆盤的 Gilbert Kong 是紐約 Masterdisk 的母帶工程師，1926 年生於中國寧波。",
+    "src": "https://www.discogs.com/artist/347240"
+   },
+   {
+    "f": "日本這邊另有年份不明的 18PJ-1001 與 20PJ-13 兩張平價再發黑膠，1986 年首次 CD 化（32JD-108），2000、2002、2015 年又各出一次 CD。",
+    "src": "https://www.discogs.com/master/769608"
+   },
+   {
+    "f": "已知版本十一個：1977 年原壓、1978 年美國 Inner City 兩筆、兩張年份不明的日本再發黑膠、1986、1990、2000、2002、2015 年五張日本 CD，以及一個七軌的數位版。",
+    "src": "https://www.discogs.com/master/769608"
+   }
+  ],
+  "hookCandidates": [
+   "東京的廠牌把三個人送進洛杉磯的 Warner 錄音室，替他們收音的，是十年前替 Sinatra 錄〈Strangers in the Night〉拿下葛萊美的那位。",
+   "美國版的封底說它是在日本刻片壓片的，唱片內圈的刻字卻說不是。"
+  ],
+  "sound": "鋼琴三重奏的錄音室盤：Eddie Harris、Coltrane、Miles 的爵士名曲與團員的原創各半，〈Freedom Jazz Dance〉由 Tony Williams 的大鼓推著快速前進，〈All Blues〉與〈A Child Is Born〉是七八分鐘的長版本；Hank Jones 的鋼琴、Ron Carter 的貝斯，全張零人聲。",
+  "keyTracks": [
+   "Freedom Jazz Dance",
+   "All Blues"
+  ],
+  "status": "full",
+  "notes": "⚠ ⚠ **推翻策展層一處：〈Old Folks〉不能當成 Tony Williams 的原創**。卡單 `curatorWhy` 寫「作者欄逐字 Eddie Harris、Ron Carter、Tony Williams、Hank Jones⋯——成員原創三首加四首爵士標準曲」，Discogs 七個版本的 A3 作曲欄確實都逐字 `Anthony Williams`——**但〈Old Folks〉是 1938 年 Willard Robison 與 Dedette Lee Hill 的同名標準曲**，而 Discogs 的作曲欄本線已知會錯（派工信第四節、c-175 兩例）、這七筆明顯是同一份資料往下抄；原廠 2024 年頁寫「メンバーのオリジナル1曲ずつ」與 Discogs 一致，也可能是照同一份資料寫的。**本層判不出這一軌是 Tony Williams 的同名新曲還是那首標準曲（3:58 的長度兩種都可能）**——facts 第 4 條只寫曲名、不寫作者；**寫作層不要寫「三位團員各帶一首」，也不要寫「Tony Williams 寫的〈Old Folks〉」**；第 5／6 條的商品頁那一句「メンバーのオリジナル1曲ずつ」本層刻意沒翻進 facts。（第 5701 條甲乙不受影響：兩種讀法都是甲。）⚠ ⚠ **A4 曲題**：原壓條目與美國 Inner City 版逐字〈Ah Qui〉（Inner City 標 6:57），**1986 年起的日本 CD 全部逐字〈Ah, Oui〉6:07，數位版「アー、ウィー」6:06**——原壓那一筆顯然是把 O 誤作 Q、6:57 也是 6:07 的誤植；facts 照 CD 與數位版寫〈Ah, Oui〉。卡單 `curatorWhy` 寫的是〈Ah Qui〉，**請主線決定卡單要不要跟著改（可逆）**。第 4 條的時長取美國 Inner City 版（原壓條目零時長），〈Ah, Oui〉不寫時長。⚠ 第 3 條獎項：**第九屆（1967-03-02 舉行、表揚 1966 年作品）、類別 Best Engineered Recording – Non-Classical、得獎**；Discogs 藝人頁寫「1966 年的 Best Engineered Recording」是年度寫法，facts 照 en 維基的屆次寫。⚠ 第 8 條的「同一週同一間錄音室的另一場」就是 c-193 b 的收件卡《The Great Jazz Trio Direct From L.A.》（1977-10-06 直刻）——**c-193 b 研究稿已寫「10 月 3、4 日剛錄完 KJLH、隔兩天回到原地直刻」那一格，本卡不重寫那個時序**，只寫 1990 年 CD 把兩場併在一起這件事；照派工信不點名那張的盤名。**那張卡的 facts 也寫了「封面攝影與設計兩格和 KJLH 是同一組人」——本卡第 2 條只列名字，不再寫「同一組人」**。⚠ 原廠 2024 年頁另有一句「名高いヴィレッジ・ヴァンガードのライヴ盤に続く」（第 5 條）；而 Universal 的《Direct From L.A.》頁把本盤稱作「GJT初のスタジオ・アルバム」——c-193 b 已判那個序數與《Love for Sale》頁矛盾、三張都不採，本卡同樣不寫「第一張錄音室盤」。⚠ ⚠ 同團同線分工：團的來歷只給 c-193 b《Love for Sale》；本卡擁有 Lee Herschberg／Sinatra 那一格與美國版的壓片謎。⚠ Thad Jones 是 Hank Jones 的弟弟——那一格前批用過多次（c-159、c-160、c-163、c-185 a），本卡不寫。⚠ 反向禁令：佐藤秀樹 2021 年、Gilbert Kong 2012 年辭世不寫。⚠ ⚠ **`previews.json` 誤退（請主線回撈，本層不動該檔）**：本鍵現況 `unavailable`，`rejectedMatch` 是 Apple jp 1443515718（`appleTitle` 逐字「Kjlh」、`appleYear` 2002、理由「aliasOnlyTitle＋年份漂移 25 年」）——**那一筆就是本盤**：本層 `lookup?entity=song` 核過七軌逐軌對得上（Freedom Jazz Dance／Doom／Old Folks／Ah, Oui／Mr. P.C.／All Blues／A Child Is Born，時長與 CD 相差一秒內）、`copyright` 逐字「℗ 1977 Universal Classics & Jazz」；2002-12-23 是 CD 再發日。建議 `manual-recover.mjs` 以 1443515718（jp）救回。⚠ 版本：master 769608 十版逐筆跑完（無數位條目）＋Apple 1443515718＝11，與策展層相同、零改判；MB 1 筆（1978 US IC 6023，在表內）；2024-05-29 以同號 UCCJ-9185 再壓，照本層裁定不另計。⚠ CAA：`caa.json` 本筆 RG 6ccf6329 `art: null`（RG 只建了美國 Inner City 版）。推翻策展層 1 處（〈Old Folks〉的作者歸屬）＋補正 1 處（〈Ah, Oui〉曲題）。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc4:山下洋輔トリオ|砂山",
+  "artist": "山下洋輔トリオ",
+  "album": "砂山",
+  "facts": [
+   {
+    "f": "1978 年 6 月 21、22 日在東京的 Victor Studio 錄成，同年由 Frasco 以 FS-7025 發行，三軌立體聲黑膠，附藍色的 Frasco 腰帶；製造與發行是日本フォノグラム。",
+    "src": "https://www.discogs.com/release/13052486"
+   },
+   {
+    "f": "A 面一整面只有〈砂山〉一首，18 分 58 秒，北原白秋 作詞、中山晋平 作曲；B 面是〈うさぎのダンス〉15 分 06 秒（副題逐字「Dedicated To Pepi」）與〈あの町この町〉5 分 01 秒，兩首都是 野口雨情 作詞、中山晋平 作曲。",
+    "src": "https://www.discogs.com/release/13052486"
+   },
+   {
+    "f": "三重奏是 山下洋輔 的鋼琴、坂田明 的中音薩克斯風、小山彰太 的鼓，另加四支管樂——清水靖晃 的次中音薩克斯風、向井滋春 的長號、岡野等 與 中沢健次 的小號；〈うさぎのダンス〉再加 杉本喜代志 的吉他。",
+    "src": "https://www.discogs.com/release/13052486"
+   },
+   {
+    "f": "山下洋輔 的官方作品表這樣介紹本盤：它挑戰的是「山下にとって永遠のテーマ」——中山晋平 的童謡世界；同一頁記 坂田明 在盤上除了中音薩克斯風也吹中音單簧管。",
+    "src": "https://www.jamrice.co.jp/yosuke/cd/cd70.html"
+   },
+   {
+    "f": "官方作品表上，這三首最早的錄音就是本盤；一年後的 1979 年 6 月 29 日，三重奏在紐約的 Symphony Space 現場又演了〈うさぎのダンス〉與〈砂山〉。",
+    "src": "https://www.jamrice.co.jp/yosuke/cd/cd70.html"
+   },
+   {
+    "f": "1990 年 5 月他在紐約的 Clinton Recording Studios 替 Verve 錄了一張日本歌曲集《Sakura》，〈Ano Machi〉〈Sunayama〉〈Usagi No Dance〉三首全部又錄了一次，〈Sunayama〉那一版 9 分 17 秒。",
+    "src": "https://www.discogs.com/master/1332840"
+   },
+   {
+    "f": "〈あの町この町〉最早刊在兒童雜誌《コドモノクニ》1924 年 1 月號，詞與譜同時發表；2007 年它被選進「日本の歌百選」，還有一說作曲的 中山晋平 是哼著這首歌過世的。",
+    "src": "https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%AE%E7%94%BA%E3%81%93%E3%81%AE%E7%94%BA"
+   },
+   {
+    "f": "封面插畫掛的是 Kiichi Tsutaya，封套設計 平野甲賀，封面上還印著 北原白秋 的歌詞；解說出自 油井正一。",
+    "src": "https://www.discogs.com/release/13052486"
+   },
+   {
+    "f": "設計封套的 平野甲賀 1938 年生於首爾，是替書籍、唱片與劇場做設計的日本設計師。",
+    "src": "https://www.discogs.com/artist/2646667"
+   },
+   {
+    "f": "製作是 岩神六平，錄音師是替 East Wind 在紐約錄過許多唱片的 David Baker——這一次他在東京收音，助理是 Tsuyoshi Miyasaka 與 鈴木良博。",
+    "src": "https://www.discogs.com/release/13052486"
+   },
+   {
+    "f": "1998 年 Frasco 出了十八片裝的全集，本盤被收成第十片，排在《Wave Song》之後、1979 年的現場盤之前。",
+    "src": "https://www.discogs.com/master/4057537"
+   },
+   {
+    "f": "已知版本三個，全部在日本：1978 年原壓、1984 年的限量再發黑膠 18PJ-1021，以及 2009 年的 CD UCCJ-9112。",
+    "src": "https://www.discogs.com/master/769981"
+   }
+  ],
+  "hookCandidates": [
+   "一整面十九分鐘只演一首大正年間的童謡——官方作品表說，中山晋平 的童謡是這位鋼琴手「永遠的主題」。",
+   "三首童謡在這張碟上第一次被他錄下；十二年後他在紐約替另一家廠牌錄日本歌曲集，三首一首不漏又錄了一遍。"
+  ],
+  "sound": "以中山晋平 三首童謡為素材的自由爵士：A 面十九分鐘的〈砂山〉從旋律出發一路展開成集體即興，B 面〈うさぎのダンス〉加進吉他、長達十五分鐘，最後〈あの町この町〉五分鐘收尾；鋼琴三重奏加兩支小號、長號與次中音薩克斯風，曲風欄 Free Jazz，全張器樂。",
+  "keyTracks": [
+   "砂山",
+   "うさぎのダンス"
+  ],
+  "status": "full",
+  "notes": "⚠ ⚠ **派工信第五節第 4 點要求把「前作錄音」那一格查實——本層做完了，結論是：在本盤之前，查不到這三首的任何錄音**。查法：(1) 山下洋輔 官方作品表 `jamrice.co.jp/yosuke/cd/cd70.html`（1970–1979 逐張列曲目）逐張讀過，1978 年 6 月之前唯一的童謡是 1977 年雙 LP《嵐》裡的〈月の砂漠〉（佐々木すぐる 作曲、非 中山晋平），這三首一次都沒有出現；(2) Discogs 以 `Sunayama`／`Usagi`／`Ano Machi`／「砂山 山下洋輔」四種查法全掃，回的只有本盤、1979 年現場盤、1990《Sakura》與 1998 年 Frasco 全集；(3) Frasco 十八片全集（master 4057537，逐片曲目按年代排）裡本盤是這三首最早的一片；(4) 非 Frasco 的 Enja《Banslikana》(1976 solo)、《Inner Space》(1977)、Crown 兩張、MPS《Chiasma》的曲目也逐張核過。**→ 主線第 1978-B 條的「有前作錄音可證」對本盤不成立；能證的是「之後持續發展」**：一年後 Newport 現場（池中 c-187《Hot Menu》）演了其中兩首、1990 年《Sakura》三首全錄，官方頁還把 中山晋平 的童謡稱作他「永遠的主題」。**第 1978-B 條逐字點名《砂山》留在門內，本層照先例不改收件**；但要記下：那一格的「前作」對本盤是「後作」——**若主線要把第 1978-B 條收緊成「本盤之前要有前作」，本卡乙 3/3 → 退**（反轉條件，可逆）。已寫進本層裁定。⚠ facts 第 5 條寫的是正面版本「這三首最早的錄音就是本盤」（照官方作品表）；池中 c-187《Hot Menu》不點名，只寫「一年後 Symphony Space 的現場」。《嵐》也在池中（c-121），本卡 facts 不點名。《Sakura》不在池中（1990 年、池中無此卡），可以點名。⚠ ⚠ **已用掉的格**：〈砂山〉的由來（1922 年替新潟寫、寄居浜、《小学女生》、十五萬張）與〈兎のダンス〉的由來（1924《コドモノクニ》5 月號、野口雨情 看烤麻糬）**c-187 a《Hot Menu》已寫進 facts**——本卡只寫〈あの町この町〉的由來（第 7 條，前批沒用過）；Frasco 是 山下洋輔 自己的字標（c-185 a、c-187 a 已寫兩次）、坂田明／小山彰太 的生年（c-185 a）、Horst Weber／Enja 那條人脈——本卡零字。⚠ 第 7 條「中山晋平 哼著這首歌過世」ja 維基原句是「逝去したと伝えられている」（傳聞），facts 已寫成「還有一說」；寫作層若用，保留「據說」。⚠ ⚠ 封面插畫的 `Kiichi Tsutaya`：Discogs 藝人頁 6919586 零 profile、零漢字變體；卡單寫「蔦谷喜一」。ja 維基的 蔦谷喜一（つたや きいち，1914–2005）是「きいちのぬりえ」的塗り絵畫家，1978 年正好在資生堂 ザ・ギンザ 辦展、掀起第二次きいち熱——**讀音完全對得上、年份也吻合，但沒有任何來源直接說本盤封面是他畫的**；照主線第 1967-B 條「指不到來源就寫羅馬字」，**facts 寫羅馬字，寫作層不要自己寫成「きいちのぬりえ的作者」**（若主線願意採讀音對應，可改一個欄位值）。⚠ 第 10 條 Tsutomu／Tsuyoshi Miyasaka 藝人頁（1122656）本層未回打漢字，寫羅馬字；岩神六平（2045192 nv）、鈴木良博（前批已定）。David Baker「替 East Wind 在紐約錄過許多唱片」取本批 #4／#5／#6／#7 的 credits 事實，本卡 facts 的 src 是本盤 credits——**寫作層若要寫「紐約的錄音師」請只寫「替 East Wind 錄過多張」，不要寫他的國籍與生平**。⚠ ja 維基 山下洋輔 條目把本盤年份寫成 1976 年、並稱〈砂山〉為「代表曲」——年份錯（原壓 notes 1978 錄音），本層不採那一行；「代表曲」單一來源，也不寫。⚠ B1 副題「Dedicated To Pepi」的 Pepi 是誰查不到，只照錄。⚠ 年份照卡單 1978；身分照卡單 §1 人工，facts 的 `src` 零 MB。⚠ 版本：master 769981 三版逐筆跑完，MB 0 筆、Apple jp／us 查無 → 3，與策展層相同、零改判；1998 年全集是十八片的盒裝合輯，照慣例不算本盤版本。⚠ 串流：`previews.json` unavailable；`caa.json` `art: null`（`coverSourceHint: manual-scan`）。推翻策展層 0 處；補正 1 處（卡單 `curatorRisk`「前作錄音那半句只能以〈月の砂漠〉間接成立」→ 查實為「之前零錄音、之後有兩次」）。",
   "coverage": "full"
  }
 ]

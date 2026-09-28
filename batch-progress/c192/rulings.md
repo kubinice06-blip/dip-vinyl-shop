@@ -674,3 +674,119 @@
 - **卡單改動**（只動 `prop-a.json` 這一筆）：`identitySource: "manual"`；`mbNote` 零 MBID；`mbAbsenceProof` 5 條查詢，寫明 c428c830 只有 1989 合輯 CD。另外：`渡辺貞夫` 名下 88 個 RG 與 `Sadao Watanabe Quintet` 名下 4 個 RG 都沒有 1967 原盤，其中《Bossa Nova '67》是 Victor `SJV-274` 錄音室盤（第 122 條形狀，已排除）；原壓 `JAZZ-9` 與三個 13 軌再發的目錄號也都查無。`manualEvidenceUrls` 3 個（Discogs release 14873328、master 949793、Apple）；`manualRuling` 引主線第 2008-B 條；**`coverSourceHint: "apple-verified-collection"`，精確 collectionId 1868591470**（13 軌、℗ 1967 Nippon Columbia，軌序與 LP 逐軌相同）。年份、廠牌、`live`、曲風、版本數 8 都不變。
 - **修正後的橫向數字**：**§1 人工身分 5 → 6 張**（封面 Apple 精確 collectionId 4、`manual-scan` 2），**釘 rgMbid 6 → 5 張**；第 7236 條總表 #6 那一列的「釘 c428c830」、第 7244 條「MB 有 RG → 釘 6」、第 7264 條「建議主線覆核」第 1 點，都以本附記為準。收 11 ／ 退 7 不變。
 - `node batch-progress/c192/chk-prop.mjs a b` → 合計 23 張、20 位｜**標記 0**；零 git 操作。
+
+
+---
+
+# a 組研究層（7596–7625）｜c-192 a 組 11 張（全數第 1 堆）｜2026-09-28
+
+輸入 `desc-tools/batches/cards/c192-cards.json` 的 `group === "a"` 11 筆｜輸出 `desc-tools/batches/research/c192-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端三處例外）＋ `CURATION-BRIEF-hoyi.md`／`jp2`／`jp1` ＋ 主線第 1934-B…2008-B 條 ＋ 本檔策展兩組全段。⚠ 引用一律寫「c-18X 第 NNNN 條」。**本段編號 7596–7625，只 append、未動任何既有一行。**
+
+## 7596　總表：**11 張、facts 131 條（10 張 12 條、1 張 11 條）；full 11、thin 0**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | 鈴木良雄 —《Matsuri》 | 12 | full | 本人訪談：同名曲是他「出發點」、渡美後第一張；**c-188 已上架正文的「1974 年《MATSURI》」是錯的**（7599） |
+| 2 | 板橋文夫 —《Nature》 | 12 | full | 2010 CD 的逐軌分工：A 面三重奏、B 面才加管樂鐵琴與第二組節奏；Better Days 的海外俱樂部行情與 2018 歐洲限量復刻 |
+| 3 | 渡辺貞夫 —《Bossa Nova Concert》 | 12 | full | **池中 c-174《Music Break》是同一場音樂會的另一張 LP**；1989 十八軌 CD 是兩張的合併版（7600） |
+| 4 | Ronnie Mathews —《Trip to the Orient》 | 12 | full | 隔十二年的領銜作、〈Ichiban〉1963 年前作；〈K's Waltz〉是 鈴木良雄 1973 年自錄過的曲 |
+| 5 | Hank Jones —《Hanky Panky》 | 12 | full | Sara Cassey（1929–1966，不上台的作曲者）兩首；CBS 駐台鋼琴手十六年的最後一年 |
+| 6 | The Great Jazz Trio —《Milestones》 | 11 | full | 〈Eighty-One〉初錄於 1965《E.S.P.》；**版本數 11→10**（7601） |
+| 7 | The Great Jazz Trio —《At the Village Vanguard Vol. 2》 | 12 | full | 兩集曲目對照、Hank Jones 自掛協同製作、〈Wind Flower〉前作 |
+| 8 | 大村憲司 —《First Step》 | 12 | full | **1979 Express 版換了內容**；與池中《Kenji Shock》共有三首（重錄）（7603） |
+| 9 | 中村照夫 —《Rising Sun》 | 12 | full | 高尾山的鈴與淺草土鈴；日美兩版差異；器材牌子逐一印在盤上 |
+| 10 | The Great Jazz Trio —《Kindness, Joy, Love & Happiness》 | 12 | full | 錄音師 Lee Herschberg（第九屆葛萊美得獎）；**〈Old Folks〉的作者歸屬推翻**（7602） |
+| 11 | 山下洋輔トリオ —《砂山》 | 12 | full | **「前作錄音」查實為零；能證的是之後兩次**（7598） |
+
+`qa-batch research c192` → a 組 11 full、簡體 0、**唯一標記是「key 集合與卡單不一致」＝ b 組尚未交件**；自量：facts 8–12 條 11/11、`src` 全為完整 https 131/131、千分位 0、`hookCandidates` ≤2 11/11、「入圍」0（唯一獎項是 #10 的得獎，寫明屆次與類別）。
+
+## 7597　推翻／補正策展層：**推翻 3 處、補正 4 處**；另有**跨批（已上架或池中）要回頭看的 6 件**（7604）
+
+| # | 卡 | 性質 | 內容 | 條號 |
+|---:|---|---|---|---|
+| 1 | Milestones | **推翻（版本數）** | 11 → 10：Discogs 表內本來就有 2007 FLAC 數位版，Apple 不另加 | 7601 |
+| 2 | KJLH | **推翻（作者）** | 〈Old Folks〉不能當 Tony Williams 原創（同名標準曲 1938），facts 不寫作者 | 7602 |
+| 3 | Bossa Nova Concert | **推翻（池比對敘述）** | `curatorWhy` 說池中最近兩張「四項都不同」，漏了同場的 c-174《Music Break》 | 7600 |
+| 4 | 砂山 | 補正 | 「前作錄音只能以〈月の砂漠〉間接成立」→ 查實：本盤之前零錄音 | 7598 |
+| 5 | First Step | 補正 | Apple 七軌不是「1979 Express 起的曲序」：Express 版六軌、七軌是 2012 CD；主軌〈Boston Flight〉與原壓不同混音 | 7603 |
+| 6 | KJLH | 補正 | 曲題〈Ah Qui〉是原壓條目誤植，CD 與數位版一律〈Ah, Oui〉（卡單要不要改，可逆） | 7602 |
+| 7 | Matsuri | 補正 | `curatorRisk` 說 ja 維基的 1974 是「單點不合」——它已被 c-188 a 寫進上架正文 | 7599 |
+
+⚠ **年份、廠牌、身分路線、`live`、曲風五款、第 5701 條甲乙：11 張全部照卡單、零改判**（facts 零校對痕跡）。
+
+## 7598　⚠ ⚠ `山下洋輔トリオ《砂山》` 的「前作錄音」：**做完那個動作（主線第 1980-B 條），結論是本盤之前查不到這三首的任何錄音**
+
+- **查法四路**：(1) 官方作品表 `jamrice.co.jp/yosuke/cd/cd70.html`（1970–79 逐張曲目）——1978 年 6 月以前唯一的童謡是 1977《嵐》的〈月の砂漠〉（佐々木すぐる 曲）；(2) Discogs 以 `Sunayama`／`Usagi`／`Ano Machi`／「砂山 山下洋輔」全掃；(3) Frasco 十八片全集（master 4057537）按年代排，本盤是這三首最早的一片；(4) 非 Frasco 的 Enja／Crown／MPS 各張曲目逐張核過。
+- **能證的是「之後」**：1979-06-29 Newport（池中 c-187《Hot Menu》）演了〈うさぎのダンス〉〈砂山〉、1990《Sakura》（Verve）三首全錄；官方頁逐字「山下にとって永遠のテーマである、中山晋平の童謡の世界」。
+- **裁定（照先例，可逆）**：主線第 1978-B 條逐字點名《砂山》留在門內 → **收件不改**；但記下「前作」對本盤實為「後作」——**若主線把該格收緊成「本盤之前要有前作」，本卡乙 3/3 → 退**。
+
+## 7599　⚠ ⚠ **跨批已上架正文的一處事實錯誤**：c-188 a《Wings》正文「上一張領銜作是 1974 年的《MATSURI》，中間隔了七年」
+
+- 本批查實《Matsuri》是 **1979 年紐約錄音**（Discogs 原壓 `released` 1979＋notes「Recorded at R.P.M. studio NY in 1979.」、ARBAN 2021 訪談編注「渡米後に録音した最初のアルバム…79年 ニューヨークで録音」、`25AP` 是 1976 年起的定價號段）——**「1974」與「隔了七年」都錯，實為隔兩年**。錯源是 ja 維基作品表「MATSURI / CBSソニー（1974年）」，c-188 a 研究稿照抄進 facts、一路流到 `output/c188-out-1.json`。
+- **交主線／本機改 c-188 那一句**（本層照邊界不動）。⚠ 這是第 1975-B 條「錯字沿先例傳染」的年份版：**同一格錯在前批上架、下一批才被本卡的原壓推翻。**
+
+## 7600　⚠ ⚠ `渡辺貞夫《Bossa Nova Concert》` 與池中 c-174 a《Music Break》：**同一場 1967-07-04 音樂會的兩張 LP（撞池第三種漏法）**
+
+- 證據三源：《Music Break》Discogs notes「Recorded Live at Tokyo, July 4, 1967」、コロムビア 商品頁 COCB-54258 逐字「ボサ・ノヴァ・コンサートの未収録曲集」、ja 維基作品表兩張同列 1967-07-04「慶応義塾大学軽音楽鑑賞会主催」。
+- **曲目只共用開場〈Felicidade (Opening)〉這個曲題**（是否同一份錄音判不出來）→ 照第 1948-B 條與 c-187 第 6080 條分卷先例**各自成卡、`risk` 互指、不撞池**；**c-174 那一邊的指回句交主線／本機**。
+- ⚠ **MB 那個 RG c428c830 的 1989 年 18 軌 CD 就是兩張 LP 的合併版**（8 軌出自本盤、10 軌出自《Music Break》，說明欄「with String Orchestra」）——主線第 2008-B 條改走 §1 的理由因此更硬。1996 年 Denon COCY-80420 也是同一個十八軌。
+- ⚠ 弦樂（「高珠恵ストリングス」）只在原廠頁與兩張十八軌 CD 的說明裡、**沒有一源說在哪幾軌**——寫作層只能寫「編制欄另列一組弦樂」。
+
+## 7601　`The Great Jazz Trio《Milestones》` 版本數：**11 → 10（推翻，可逆）**
+
+Discogs master 301512 的十版裡有一筆 2007-06-09 `File` 七軌 FLAC（releases/36070918，℗ 1978 Universal Classics & Jazz），逐軌時長與 Apple 1443514283 相差一秒內——**照主線第 1987-B 條與 c-192 b 第 7276 條 #16 的處置，Apple 不另加**。卡單 `label` 欄「→ +1＝11」請主線改 10。
+
+## 7602　`《Kindness, Joy, Love & Happiness》` 的兩處曲目欄
+
+1. **〈Old Folks〉**：七個版本作曲欄都逐字 `Anthony Williams`、原廠 2024 頁也寫「メンバーのオリジナル1曲ずつ」——但〈Old Folks〉是 1938 年 Willard Robison／Dedette Lee Hill 的同名標準曲，Discogs 作曲欄本線已知會錯。**判不出來 → facts 只寫曲名、不寫作者；寫作層不寫「三位團員各帶一首」**。第 5701 條不受影響（兩種讀法都是甲）。
+2. **〈Ah Qui〉→〈Ah, Oui〉**：原壓條目與 Inner City 版（6:57）逐字〈Ah Qui〉，1986 年起的 CD 全部〈Ah, Oui〉6:07、數位版「アー、ウィー」6:06 → 原壓條目誤植。facts 寫〈Ah, Oui〉；**卡單 `curatorWhy` 的〈Ah Qui〉請主線決定改不改（可逆）**。
+
+## 7603　`大村憲司《First Step》`：1979 Express 版換了內容；與池中 c-191《Kenji Shock》共有三首
+
+- ETJ-85019（1979）六軌、曲序重排、A1 新加〈Left-Handed Woman〉（鼓 Martin Willweber＝〈Boston Flight〉的作曲者）；數位版七軌＝2012 CD 曲序，另收一軌標明「LF-91042 version」的〈Boston Flight〉8:03（主軌 8:18）。
+- **《Kenji Shock》（1978-11-25、洛杉磯）重錄了〈Boston Flight〉〈Better Make It Through Today〉〈Rhythm Road〉，另收〈Left-Handed Woman〉**——重錄、不是同一份錄音（編制與時長全異），兩卡照第 1948-B 條都成立。⚠ **那張已上架的 hook「整張唯一有人唱的一首是 Clapton 的歌、吉他手自己唱」——本盤早四個月做過同一件事**；請主線看一眼要不要補句（本層不動 c-191 的檔）。
+
+## 7604　⚠ 給主線（本機）的跨批六件（本層照邊界一律不動那些檔）
+
+1. **c-188 a《Wings》上架正文的「1974／隔七年」**（7599）。
+2. **c-174 a《Music Break》的 `risk` 補一句指回本批 #3**（7600）。
+3. **池中 seed《At the Village Vanguard》（GJT Vol.1）的年份可能要 1978 → 1977**：Discogs master 383972 有一筆 `EW-8053` 1977 Japan（releases/32515812），而號段在後的本批 #7（`EW 8055`）與 #10（`EW-8056`）都是 1977。
+4. **c-191 a《Kenji Shock》的 hook 與本批 #8 的「第一次」對照**（7603）。
+5. ⚠ ⚠ **`previews.json` 誤命中 1 筆、誤退 1 筆**：`渡辺貞夫|Bossa Nova Concert` 現況 ready 但 `collectionId` 1770441305 是 1961 年的《SADAO WATANABE》（`aliasOnlyTitle`，與第 1935-B 條《Hunt Up Wind》同一筆 Apple 條目）→ **應降級，正解 1868591470**；`The Great Jazz Trio|Kindness, Joy, Love & Happiness` 現況 unavailable，`rejectedMatch` 的 1443515718（「Kjlh」2002）**就是本盤**（七軌逐軌核過、℗ 1977）→ **建議 `manual-recover` 救回**。
+6. ⚠ **CAA 兩筆封面可能不是原盤封套**：#5《Hanky Panky》的 RG 6a43dfac 只建了 2005 美國 CD、#9《Rising Sun》的 RG f72e2ebb 只建了美國 Polydor 版（美國版封面攝影另掛 Kenneth McGowan）——上架前看一眼。
+
+## 7605　立判準（本批 East Wind 五張一律適用，可逆）：**2024-05-29 的「イースト・ウィンド・レーベル創立50周年記念アンコールプレス」不另計版本**
+
+五張（#4／#5／#6／#7／#10）的原廠頁都是 2024-05-29「アンコールプレス」，**目錄號與系列名（EAST WIND MASTERS COLLECTION 1000）與 2015 年那一筆完全相同**，兩家資料庫都沒有另建 → 判為同一版的再壓、不另計；facts 可寫「2024 年以同號再壓」（#4 已寫）。**與 c-193 b 的 GJT 三張處置一致**（那一組引了同系列頁、也沒另計）。⚠ 反轉條件：若主線要照 c-189 a 第 1997-B 條第 4 點（第三來源給出目錄號＋日期即加一版）計，五張各 +1。
+
+## 7606　同團同線的分工（The Great Jazz Trio 跨 c-192 a 三張、c-193 b 三張）
+
+- **團的來歷只給 c-193 b《Love for Sale》**；本批三張零字（包含 Miles 第二五重奏節奏組、East Wind A&R 命名、ja 維基的 1975 年春說）。
+- **本批三張各自擁有**：#6 ＝〈Eighty-One〉的 E.S.P. 前作與 Inner City 的授權字樣；#7 ＝兩集曲目對照、Hank Jones 自掛協同製作；#10 ＝ Lee Herschberg 與 Sinatra、美國版的壓片謎、1990 年 CD 把隔兩天的直刻場併進來。
+- ⚠ **〈Wind Flower〉的接點 #5 與 #7 兩端都有**（Sara Cassey 1966 年歿；1975 錄音室 5:28 → 1977 俱樂部 8:16）——**鉤子層兩卡擇一當主軸**。
+- ⚠ c-193 b 已用：Iverson「Rolls-Royce」、操上和美／小林平九郎「同一組人」、KJLH 與直刻場的時序、Live Under The Sky、Tony Williams 生平——本批不寫。
+
+## 7607　前批研究稿讀過、本批不再寫的格（第 1982-B／1985-B 條、c-187 a 第 6344 條）
+
+`鈴木良雄`（c-76 b／c-181 b／c-184 a／c-188 a：製琴世家、早稲田、Getz／Blakey、MATSURI 團、Liebman 同年生、私下學作曲、「貝斯手坐到鋼琴前」）、`板橋文夫`（c-178 b：生年、国立音大、本田竹広、〈ワタラセ〉）、`渡辺貞夫`（c-173 b／c-174 a／c-183 a／c-185 b：Berklee 與 bossa nova 來歷、菊地／中牟礼／富樫 生平、Takt 沿革、2018 年九張復刻）、`Hank Jones`（c-185 a／c-177 b／c-189 b：生卒、兩位弟弟、Monroe、NEA、六十張）、`大村憲司`（c-185 b／c-186 a／c-191 a）、`中村照夫`（c-181 a／c-185 b）、`山下洋輔トリオ`（c-185 a／c-187 a：Frasco 是他的字標、〈砂山〉〈兎のダンス〉的由來）、`伊藤八十八` 與 East Wind 沿革（五份以上）。**每卡 notes 已逐條寫明。**
+
+## 7608　人名：**逐名回打 Discogs 藝人頁 34 個；新定漢字 4、保留羅馬字 7**
+
+- 新定（`namevariations`／`realname` 可指）：河田為雄（857271）、高橋英昭（1243149）、加藤しげき（1767574，只有假名形，照 nv）、平野甲賀（2646667）。
+- 保留羅馬字：Toshiaki Hayashi（〈Typhoon〉作曲，非 林立夫）、Kumito Osuyara、Ray Ohara、Johsuke Kubo、Tsuyoshi Miyasaka、Ryonosuke Honmura、**Kiichi Tsutaya**（#11 封面插畫；讀音與 ja 維基的塗り絵畫家 蔦谷喜一 對得上、1978 年又正逢他第二次熱潮，**但沒有來源直接說是他畫的** → 照第 1967-B 條寫羅馬字，可逆）。
+- ⚠ `中村照夫` 的 Discogs `realname` 逐字「中村輝夫」（與 nv 不同字）——正文一律用掛名，不寫本名。
+
+## 7609　來源實測
+
+- **Discogs API 約 127 次**（release／master versions／artists／labels／database search）全程 200；**MB 6 次**（五個釘選 RG ＋ c428c830 的 release 數覆核）全 200、UA 逐字；**Apple lookup 7 次**全 200、403／429 零次；**`universal-music.co.jp` 8 次**：`/p/<CATNO>/` 短路徑 2/2 中、`/the-great-jazz-trio/products/<catno>/` 4/4 中、`/ronnie-mathews/`／`/hank-jones/` 姓-名 slug 2/2 404（判命中看 `<title>`）；**`columbia.jp`** `artist-info/watanabesadao/…/COCB-54254.html` 1/1 中、`prod-info/COCB-53625`／`HMJY-227`／`artist-info/itabashi` 0/3；**`jamrice.co.jp`（山下洋輔 官方）** `cd/cd70.html` 中——**本線第一次用到的原廠側，#11 的決定性來源**；**ARBAN**（`arban-mag.com/article/9094/<頁>`）4 頁全中——**#1／#4 的主源**；ja 維基 `action=raw` 7 次全 200（`鈴木良雄`／`板橋文夫`／`渡辺貞夫`／`グレイト・ジャズ・トリオ`／`山下洋輔`／`あの町この町`／`蔦谷喜一`）；en 維基 3 次（`Ronnie_Mathews`／`Hank_Jones`／`9th_Annual_Grammy_Awards`）。
+- repo 的 Billboard OCR（`billboard-bn-1975q4-1976`）掃 `Nakamura`／`Rising Sun` 零命中本盤——c-181 a／c-185 b 寫的「《Rising Sun》進美國爵士榜前十」本層無法定案，#9 不寫。
+- ⚠ **2024 年 East Wind アンコールプレス 頁的文案給了三格決定性事實**：Mathews「12年ぶりのリーダー作」與〈イチバン〉是 1963 年作的快板重演、Hank Jones「GJT結成直前…9年ぶり」、KJLH「ヴィレッジ・ヴァンガードのライヴ盤に続く」。
+
+## 7610　`desc-tools/jp-proper-names.json`：**append 1 個**（`慶応義塾大学軽音楽鑑賞会`，#3 第 3 條的主辦單位全名；`qa-batch` 原本把其中的「会」報成簡體），既有條目一字未動（88 → 89）。
+
+## 7611　編號結算與邊界
+
+- **本段用到 7596–7611（16 條），7612–7625 留空不用**；未碰 b 組的 7626–7655。
+- 只動了 `desc-tools/batches/research/c192-a.json`（新增）、本檔（append 本段）、`desc-tools/jp-proper-names.json`（append 1）；`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／卡單／b 組的檔／其他批次的檔／KV／Firestore 一律未碰；**零 git 寫入操作**（只讀 `git show HEAD:`）。
+- 續跑保護：每 3 張寫回一次（3／6／8／10／11 張五次 checkpoint）。
