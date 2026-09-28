@@ -139,9 +139,15 @@ export const looseTitleOk = (want, got, selfTitled = false) => {
   if (volToken(want) !== volToken(got)) return false;  // 卷號殘餘：兩道都要擋，否則 T() 那一關會漏
   return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
 };
+// ⚠ 2026-09-28（c-192 b 研究第 7637 條，主線第 2011-B 條）：`Jack DeJohnette《Have You Heard?》` 被配到 `CCK《Have You Heard (Live)》`——
+// `canon('CCK')` 摺疊重字母後只剩 `ck`，落在 `jackdejohnete` 裡面，子字串包含成立。
+// 與 `artistOk` 的 AKA 那一條同一家族：**短的那一邊（canon 後 ≤4 字）只接受完全相等。**
 export const looseArtistOk = (want, got) => {
   const a = canon(want), b = canon(got);
-  return !!a && !!b && (a === b || a.includes(b) || b.includes(a));
+  if (!a || !b) return false;
+  if (a === b) return true;
+  if (Math.min(a.length, b.length) <= 4) return false;
+  return a.includes(b) || b.includes(a);
 };
 
 // 一張卡要試的查詢字串，依序：原文 → 別名＋原盤名 → 全轉寫。重複的去掉。

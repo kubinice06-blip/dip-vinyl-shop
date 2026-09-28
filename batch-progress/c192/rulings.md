@@ -8,6 +8,8 @@
 > ⚠ **append 之後自己驗一次**：`grep -c '^## '` 兩組的條數都在，而且對方的標題還在。
 
 > **預留（2026-09-28）：研究 a 7596–7625、b 7626–7655。**
+> **預留（2026-09-28）：鉤子 7906–7945。**
+> **預留（2026-09-28）：寫作 a 7946–7960、b 7961–7975。**
 ---
 
 
@@ -790,3 +792,120 @@ Discogs master 301512 的十版裡有一筆 2007-06-09 `File` 七軌 FLAC（rele
 - **本段用到 7596–7611（16 條），7612–7625 留空不用**；未碰 b 組的 7626–7655。
 - 只動了 `desc-tools/batches/research/c192-a.json`（新增）、本檔（append 本段）、`desc-tools/jp-proper-names.json`（append 1）；`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／卡單／b 組的檔／其他批次的檔／KV／Firestore 一律未碰；**零 git 寫入操作**（只讀 `git show HEAD:`）。
 - 續跑保護：每 3 張寫回一次（3／6／8／10／11 張五次 checkpoint）。
+
+
+---
+
+
+# b 組研究層（7626–7655）｜c-192 b 組 12 張（四堆混合）｜2026-09-28
+
+輸入 `desc-tools/batches/cards/c192-cards.json` 的 `group === "b"` 12 筆｜輸出 `desc-tools/batches/research/c192-b.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md`（含三之二）→ `CURATION-BRIEF-jp1.md` 第〇節與 `bluenote-post1985` 附錄二 → 本檔策展兩組全段 → 主線第 1934-B…2009-B 條 → c-178 研究層兩段。⚠ 引用裁定一律寫「c-18X 第 NNNN 條」。
+
+## 7626　總表：**12 張、facts 139 條（12 條 7 張、11 條 5 張）；full 12、thin 0**
+
+| # | 堆 | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---:|---|---:|---|---|
+| 1 | 1 | 松本英彦 / The Great Jazz Trio —《The Session / …》 | 11 | full | 鼓手 Al Foster 是 Miles 1975–81 隱退期少數還聯絡得上的人；1980 年 GJT 搭檔已換成 Gomez／Foster |
+| 2 | 1 | Ottottrio —《Super Guitar Session: Red Live》 | 11 | full | ⚠ **推翻**「三人各編兩軌」→ 野呂 3／是方 2／安藤 1；〈Conga〉是 1986 年東京音樂祭大賞曲 |
+| 3 | 2 | 柳田ヒロ —《Milk Time》 | 12 | full | アルファ「未完の大器」企劃；鼓與貝斯＝同年 Food Brain《新宿マッド》配樂那一組 |
+| 4 | 2 | 深町純 & 21st Century Band —《Rokuyu (六喩)》 | 11 | full | ⚠ **補正**：封面攝影是 Magnum 的 Dennis Stock；「六喩」對上《金剛般若經》六喻 |
+| 5 | 2 | 佐藤允彦 Featuring Eddie Gomez & Steve Gadd —《As If…》 | 12 | full | 五首標準曲全是 Bill Evans 保留曲 ＋ Gomez 在 Evans 三重奏十一年；兩人同是 Manhattan Jazz Quintet 節奏組 |
+| 6 | 2 | 向井滋春 + Astrud Gilberto —《So & So》 | 12 | full | Astrud「在日本特別受歡迎」；弦樂領奏 Harry Lookofsky；兩首 Nascimento 同出《Native Dancer》 |
+| 7 | 3 | 喜多嶋修 —《Dragon King》 | 12 | full | 共同製作 Richard Evans（Cadet／Ramsey Lewis）；封面 田中一光（無印良品視覺）；⚠ 補正 2010 版是 CD-R |
+| 8 | 3 | 小曽根真 —《After》 | 11 | full | 前一年 Burton 四重奏《Real Life Hits》鋼琴就是他；Campbell／Pierce 同在 Burton 的 Berklee All-Stars |
+| 9 | 3 | 小曽根真 —《Now You Know》 | 11 | full | 封底攝影 Art Kane（A Great Day in Harlem）；Johnson／Erskine＝《Bass Desires》搭檔 |
+| 10 | 4 | Eddie Daniels —《This Is New》 | 12 | full | 同四位日本樂手 18／26 天後錄《Hino=Kikuchi Quintet》；⚠ 補正「在東京」無來源 |
+| 11 | 4 | Miles Davis —《Miles in Tokyo》 | 12 | full | 第 1 回世界ジャズ・フェスティヴァル、原為廣播錄音、Oricon LP 51 位；同日同音樂節有 松本英彦 |
+| 12 | 4 | Jack DeJohnette —《Have You Heard?》 | 12 | full | 錄音前八天《Bitches Brew》上市，鼓與低音單簧管是同兩人；⚠ `previews.json` 誤命中 |
+
+`node qa-batch.mjs research c192` → **全部通過**（a 11／b 12 全 full、key 與卡單完全一致）。第一輪報 3 標記（`初来日` 的「来」、`¥2,500`／`¥1,800` 千分位、日文引文裡的半形逗號），**全在 notes 的逐字引文裡**，已改寫引文、不動正文事實。自量：facts 8–12 條 12/12、`src` 全部完整 https（非 Discogs 的 34 個網址逐一實測 200）、`hookCandidates` ≤2、facts 零平台點名、獎項 4 處全是「得獎」且逐處寫明屆次與類別（〈Conga〉東京音樂祭大賞、〈Saving All My Love For You〉第 28 屆葛萊美、MJQ 1984 Swing Journal Gold Disk、Daniels 1968 DownBeat 單簧管新星獎），零入圍。
+
+## 7627　推翻／補正策展層：**推翻 1、補正 5、登記衝突 3**
+
+1. ⚠ ⚠ **推翻（#2）**：卡單 `curatorWhy` 逐字「三位吉他手各自編兩軌」——LP 宣傳盤 16002362 逐軌 `Arranged By` 是 **野呂一生 3（〈Conga〉〈Special Happening〉〈Saving All My Love For You〉）、是方博邦 2、安藤まさひろ 1**；卡單括號裡的逐軌列舉本身正確，錯的是總結句。**facts 與 hook 以逐軌為準**（hook 2 就是用這個不平均）。
+2. **補正（#4）**：原壓整筆 `extraartists` 有 `Photography By [Cover Photo] — Dennis Stock`（Magnum）、`Advisor [Sound Advicer] — Hiroo Miyazawa`、`Design [Cover Design] — Toshinao Tsukui`、`Management [Band Manager] — Teruya Mae`，卡單都沒列；**Dennis Stock 成了本卡 hook 2**。
+3. **補正（#4）錄音地字面矛盾**：原壓 `notes`「Studio "A", Shibuya」vs `companies`「Studio A, Shibaura」——facts 取芝浦（`companies` ＋ 2009 CD 同），ja 維基 アルファレコード「港区に所有していた自社スタジオ「Studio A」を閉鎖」（1995）佐證；**開設年無來源，不寫**。
+4. **補正（#7）**：2010 年 East Quest 版 Discogs 4269520 的 format 是 **CD-R**（卡單寫 CD）；另補 `Management — Bill Traut`、`Lacquer Cut By — Joe Gastwirt`。
+5. **補正（#10）**：卡單寫「1968 年 8 月 4 日在東京」——**原壓 notes 只有日期，五個版本與 ja 維基 日野皓正／菊地雅章 條目都沒有地點**；facts 不寫城市。
+6. **補正（#6）兩版衝突兩處**：〈Hold Me〉原壓 `Composed By — Shigeharu Mukai`／`Lyrics By — Astrud Gilberto`，1985 CD `Written-By — Astrud Gilberto, Susan Minsky`；弦樂原壓掛 `Leader, Arranged By — Harry Lookofsky`，1985 CD 掛 `Arranged By [Strings], Conductor — Jeremy Wall`——facts 照原壓作者，**弦樂編曲者兩格都不寫**（jp-2 簡報第三節第 30 點）。
+7. **登記衝突（#3）生年**：Discogs 611660「born May 7, 1947」（卡單所引）vs ja 維基（注出 1970《ガッツ》）與 c-184 a 研究稿「1949 年 5 月 7 日」——本卡零生平，facts 不寫；下游若寫年齡一律不寫。
+8. **登記（#12）en 維基 infobox 三格駁回**：`type = live`、`released = July 4, 1970`、`label = Milestone`——原壓零觀眾／零 MC／零場館技術職、美國 Milestone 版 1971、首發是 CBS/Sony；**`live: false` 與策展層判斷維持**（c-192 b 第 7275 條）。
+9. **登記（#7）**：en 維基 Osamu Kitajima 作品表把本盤記成 1979，錯，不採；卡單 1981 維持。
+**零處推翻收件結論**；第 5701 條的甲乙本層零改動（#2〈Special Happening〉〈Triple Fighting〉作曲仍查不到；#6〈Velas〉的前作仍只有《The Dude》的非爵士桶；#10〈Why Did I Choose You〉只查到作者寫過 1965 年《The Yearling》音樂劇、查不到那首歌出自那齣戲——三格都維持策展層原判）。
+
+## 7628　⚠ ⚠ 給主線：**`previews.json` 誤命中 1 筆（#12），本層照硬邊界不動**
+
+`Jack DeJohnette|Have You Heard?` 現況 `ready`、collectionId **1798514104**，`appleTitle`「Have You Heard (Live)」、`appleArtist`「**CCK**」、`appleYear` 2009、12 軌——**是別的藝人 2009 年的現場盤**（本盤 1970、四軌）。策展層 Apple jp／us 兩店 `Jack DeJohnette Have You Heard` 查 0 筆，本層重查同為 0（us `DeJohnette Have You Heard` 亦 0）→ **應降級為 unavailable**。形狀：盤名是常見英文句，Apple 另有同題曲名的現場盤；`aliasOnlyTitle` 未標，探測層是以 `gb:12→1` 命中的——**第 1997-B 條那一道（盤名＝掛名的同名條目）擋不到這一種（盤名＝別人的專輯題、掛名完全不同）**，建議探測層補「掛名零字元重疊即退」。
+其餘 11 筆交件時現況：ready 8（#3／#4／#5／#7／#8／#9／#10／#11，collectionId 逐筆與卡單相符；#8 指的是 ℗ 空白那一筆 1450142999、#11 帶 `aliasOnlyTitle` 但核過是本盤）、unavailable 3（#1／#2／#6，本層 Apple search 重查仍無）。**CAA 無圖 3 筆（#5／#6／#10）**——**#6 封面與串流兩邊都沒有**，判「市場沒有」前要兩個來源再查一次。
+
+## 7629　再發版本數：**12 筆逐筆重跑整張 `/masters/<id>/versions`，數字改判 0**；四種漏法逐一查過
+
+| # | master | Discogs | MB（在表內） | 數位（MB 無實體） | 合計 | 備註 |
+|---:|---:|---:|---:|---:|---:|---|
+| 1 | 902635 | 3 | 1 | 0（Apple 以 `松本英彦 Session` 查 6 筆無本盤） | 3 | |
+| 2 | 1565469 | 4 | 1 | 0（`Ottottrio` 查 10 筆全是無關單曲） | 4 | |
+| 3 | 550136 | 4 | 2 | 1 | 5 | ja 維基 2005 同號再壓不另計（從寬 6） |
+| 4 | 1149900 | 3 | 3（含 MB 獨有數位 c7c51fed） | 0（Apple＝MB 那筆） | 4 | |
+| 5 | 672194 | 2 | 1 | 1 | 3 | |
+| 6 | 643046 | 6 | 2 | 0（兩種查法 0） | 6 | |
+| 7 | 442293 | 6 | 1 | 1 | 7 | 2010 East Quest 是 CD-R |
+| 8 | 333617 | 9 | 2 | 1（Apple 兩個 id 保守算 1） | 10 | 從寬 11 |
+| 9 | 967786 | 9 | 1 | 1 | 10 | 含智利 CBS 卡帶 |
+| 10 | 931745 | 5 | 2 | 1 | 6 | |
+| 11 | 203649 | 45 | 9（Cancelled 1 不計） | 0（Apple＝Discogs 的 MP3） | 45 | 含非官方 1 |
+| 12 | 476359 | 9 | 2 | 0（jp／us 三種查法 0） | 9 | |
+
+⚠ **(c) 數位版**：版本表不收的數位版逐筆以 Apple 補查（#1／#2／#6／#12 本層重跑 search 仍 0）；**(d) MB 獨有**：只有 #4 的 2009 XW 數位一筆（策展層已計）；**MB JP release 數 vs Discogs 日本盤數**：12 筆都比過，少的那幾筆（#1 1 vs 3、#2 1 vs 4、#6 2 vs 6、#7 零美國盤、#9 零美國盤）的盤名與年份策展層已人工回查，本層重核零改判。**「數字對不等於內容全」那一面**：#7 補出 CD-R 形制、#11 補出 1969-09 開盤帶 `SONT 52028` 進 facts、#10 補出試壓盤手寫編制進 facts。
+
+## 7630　反同構：**前批研究稿讀過、本批不再寫的格**（第 1982-B／1985-B 條、c-187 a 第 6344 條）
+
+`松本英彦`（c-132 b 三張、c-173 b：外號由來、岡山、ビッグ・フォア、Montreux、受獎）、`児山紀芳`（c-174 b／c-193 b：Swing Journal 編輯年份 → 本卡改用外號 Box Man）、`Ottottrio`（c-191 b：組團經過、七人名單、場館與三錄音室逐一列舉、三人本團同年出碟）、`安藤まさひろ《Melody Book》`（c-190 b：頭尾同曲——本卡只借那一格當〈Eyes of the Dragon〉的出處）、`柳田ヒロ`（c-184 a：本名、樂團史、四張換四家）、`深町純`（c-175…c-187 全套生平、〈波照間〉兩張串連、アルファ 創立、直刻）、`佐藤允彦`（c-121…c-186 全套生平）、`Steve Gadd`（c-178 a）、`後藤博`「Superman」（c-189 b）、`向井滋春`（c-176／178／179／180 全套生平、1979 紐約一年）、`中原仁`（c-180 b）、`喜多嶋修`（c-187 a 全套生平、Feldman／Hales／Hirsch／村井／川添）、`小曽根真`（c-191 a 全套生平、Don Puluse）、`菊地雅章`（多張：1968 年 Rollins 巡日與 Berklee）、`油井正一`／`瀬川昌久`、`Gary Peacock` 的日本歲月（c-175 a／c-182 b）。**每卡 notes 已逐條寫明。**
+
+## 7631　同一位樂手／幕後跨本組多張的分配（**每一格只給一張**）
+
+1. **Eddie Gomez 三張**（#1／#5／#8）：**Bill Evans 三重奏十一年只給 #5**（該卡五首標準曲全是 Evans 保留曲，那一格才有意義）；#1、#8 只列樂器。
+2. **Bill Evans 那一族再讓一次**：#9 的 Marc Johnson 是 Evans 最後一支三重奏的貝斯手（en 維基）——**#9 不寫**，改用《Bass Desires》（Johnson／Erskine 搭檔）。
+3. **Gary Burton 兩張**（#8／#9）：Burton 與小曽根真 的另一層關係（《Real Life Hits》）給 #8；George Butler 的經歷給 #8；#9 只列職務。
+4. ⚠ **`伊藤潔` 三處**（#5 1985 Nippon Columbia、#12 1970 CBS/Sony 的 Discogs 406894；#11 en 維基的 `Recording Producer - Kiyoshi Itoh`）——**是否同一人沒有第二來源，而 406894 的 profile 記「born 1946」，1964 年錄音時才十八歲**；三卡一律不串成「同一位製作人」，#11 只寫「唱片的製作」。
+5. **Tony Williams／Ron Carter／Herbie Hancock**（#11）：GJT 相關團史全給 c-193 b，#11 只寫 Rivers 那一格。
+
+## 7632　跨卡串連（**只放在一張卡上**，鉤子層當稀缺資源）
+
+1. ⚠ ⚠ **#11 ↔ #1**：ja 維基 松本英彦 條目「7月14日、東京で開催された世界ジャズ・フェスティバルに参加」——**與《Miles in Tokyo》同一天同一個音樂節**；條目沒寫同場館同台 → facts 只寫「同一天在東京登上這個音樂節」，**只放 #11**。
+2. **#1 ↔ 池中 c-178《Pleasure》**：同一年（1980）同一間 Sound Ideas Studios（Discogs 3652426 `Recorded At`）——facts 不點名盤名。
+3. **#6 ↔ 池中 c-178《Pleasure》兩格**：Jorge Dalto／Jeff Mironov 三年前同在；兩首 Nascimento（〈Miracle Of The Fishes〉／〈From The Lonely Afternoon(s)〉）同出《Native Dancer》（master 140430）——**寫作層擇一**。
+4. **#7 ↔ 池中 c-187《Masterless Samurai》**：經紀 Bill Traut 是 Headfirst 前執行長，而那張的美國版發在 Headfirst——facts 不點名。
+5. **#2 ↔ 池中 c-190《Melody Book》**：〈Eyes of the Dragon〉的出處（本卡是它的舞台版）。
+6. **#12**：《Bitches Brew》只當時間座標（那是 Miles 的碟，第 1787-B 條管的是同一位藝人池中的碟）。
+
+## 7633　同批兩組曲題互掃（主線第 1987-B 條）
+
+`c192-a.json`（11 張）與本組 12 張的 `〈〉` 曲題逐一正規化比對：**命中 2 條，都是高碰撞標準曲、不是同一份錄音**——〈Nardis〉（#5 ↔ a 組 GJT《At the Village Vanguard Vol. 2》）、〈My Funny Valentine〉（#11 ↔ a 組 GJT 一張）。**下游引用帶掛名與年份即可，零撞錄音。**
+
+## 7634　人名：**逐名回打 Discogs 藝人頁約 45 個；新定漢字 0、沿用池中漢字 14、寫羅馬字 13**
+
+- 沿用（realname／namevariations 可指）：福井末憲、小鉄徹、児山紀芳、石川恵樹、水谷公生、玉木宏樹、中谷望、下河辺晴三、宮住俊介、渡辺康蔵、操上和美、清水美樹夫、中平穂積、市川秀男。
+- ⚠ **照字元規則寫羅馬字（全假名藝名）**：`Hiro Tsunoda`（つのだひろ，realname 角田博民）、`Teruo Isono`（いソノてルヲ，realname 磯野晃雄）。
+- 寫羅馬字（零漢字變體或來源矛盾）：Hiroo Miyazawa、Toshinao Tsukui、Takeo Takahashi、**Masayuki Suzuki（疑似實體誤連 鈴木雅之，#7 facts 不寫這位）**、Norikazu Yoshimura、Daisuke Yamaguchi、Kaoru Watanabe、Hiroshi Kanai、Kennichi Handa、Takayuki Ogawa、Ichiro Masuda（#1 未寫）。
+- `松居和`：Discogs nv 同時有 `松居和`／`松井 和`，照 c-187 a 與 ja 維基 喜多嶋修 條目的 `[[松居和]]`（第 1998-B 條第 4 點）。`村岡建`：nv 兩形並存，照池中研究稿多數（99:20）。`浜口茂外也`／`吉沢典夫`：`pairs` 已列。`name-corrections.json` 的 `pairs` 本組零新命中。
+
+## 7635　來源實測
+
+- **Discogs API 約 110 次**（releases／masters versions／artists／labels 與 `labels/<id>/releases`、`artists/<id>/releases`）全程 200，節流 2.5 s；`database/search` 需 token，本層沒用。
+- **MB 1 次**（#2 release 9745e457）200、UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+- **Apple search 6 次**全 200、403／429 零次。
+- **ja 維基 `index.php?action=raw` 10 次命中**：`松本英彦`／`MILK TIME`／`柳田ヒロ`／`アルファレコード`／`金剛般若経`／`喜多嶋修`／`エディ・ダニエルズ`／`日野皓正`／`菊地雅章`／`マイルス・イン・トーキョー` 中；`六喩`／`松居和`／`村岡建`／`村岡健`／`世界ジャズ・フェスティバル` 404。
+- **en 維基 `action=raw` 約 35 次**全 200（含重導向頁）；`So & So: Mukai Meets Gilberto`、`This Is New (Eddie Daniels album)`、`The Yearling (1965 musical)` 404。
+- **`columbia.jp/prod-info/`** `COCB-31027`／`COCY-80504`／`YF-7100` 0/3（404 頁 13.8 KB，判命中看 `<title>`）；`riad.pk.edu.pl`（DeJohnette 作品表）503。
+- ⚠ **本組的決定性來源不在廠牌側**：Discogs 藝人頁 profile（Al Foster 的隱退期、Richard Evans、Bill Traut、松居和、Harry Lookofsky、渡辺康蔵）＋ en 維基的周邊條目（Hank Jones、Real Life Hits、Bass Desires、Manhattan Jazz Quintet、A Great Day in Harlem、Dennis Stock）。
+
+## 7636　`desc-tools/jp-proper-names.json`：**append 0 個，既有條目一字未動**
+
+`qa-batch` 第一輪的「来」出在 notes 的日文逐字引文（`初来日`），**改寫引文而非加白名單**（那不是專名）；行文用字自掃一次日文新字體：`静岡` 兩處改為 `靜岡`（池中研究稿 11:6），`東芝音楽工業`／`東京厚生年金会館`／`中野サンプラザ`／`都市センターホール` 是專名照原文。
+
+## 7637　編號結算與邊界
+
+- **本段用到 7626–7637（12 條），7638–7655 留空不用**；未碰 a 組的 7596–7625。
+- 只動了 `desc-tools/batches/research/c192-b.json`（新增）與本檔（append 本段）；`jp-proper-names.json` append 0；`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／卡單／a 組的檔／其他批次的檔／KV／Firestore 一律未碰；**零 git 寫入操作**（只讀 `git show HEAD:`）。
+- 續跑保護：每 3 張寫回一次（3／6／8／9／11／12 張六次 checkpoint）；暫存檔全在 scratchpad `c192rb/`、檔名帶 `c192b-` 前綴。
