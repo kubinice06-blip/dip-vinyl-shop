@@ -273,3 +273,298 @@ MB 8 筆，最早的 US／DE／JP 三筆都只填 `1976`——**slice 的「不�
 - `node batch-progress/dedup-crossbatch.mjs`（全池 156 批、5804 張）：**跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0**（共用目錄號 2 筆都是 c-192 的，與本組無關）。
 - **§1 人工身分 0 張**（17 筆全部有 `rgMbid`、全部照 slice 釘，改釘 0）。
 - **年份改判 0／盤名真改判 1／`artist` 欄改判 1／`live` 改判 0／再發數 11 筆全跑。**
+
+
+---
+
+# a 組（18 張｜第 4 堆：外國藝人的日本原盤 1970–1975；slice 的 `house` 分佈：victor 6・columbia 5・CBS/Sony 3・toshiba 1・Trio／Whynot 1・trio 1・king 1；⚠ **18 筆逐筆以 Discogs 最早那一版的 `labels` 欄 ＋ `versions` 全表 ＋ ℗ 行核過原盤國別，「日本是原盤」不成立 6 筆**）｜策展層｜2026-09-28
+
+批次 c-193｜a 組 18 張｜輸入 `batch-progress/c193/slice.json` 的 `g === "a"`｜輸出 `batch-progress/c193/prop-a.json`（每筆帶 `pile: 4`）
+判準照 `CURATION-BRIEF-hoyi.md` 第〇節第 4 堆 → `CURATION-BRIEF-jp2.md` 全檔 → `CURATION-BRIEF-jp1.md` 全檔 → `CURATION-BRIEF-c67plus.md` 附錄（本組未用到）→ `CURATION-BRIEF-bluenote-post1985.md`（含附錄二）→ `CURATION-BRIEF-bluenote.md` → `CURATION-BRIEF-c131.md`，
+＋ 主線第 1934-B…2007-B 條 ＋ c-188…c-191 的策展段 ＋ `audits/foreign-artist-japan-productions.md`／`audits/between-the-lines-candidates.md`／`audits/pool-artist-name-splits.md`／`enum/name-corrections.json`。⚠ **引用裁定一律寫成「c-18X 第 NNNN 條」**。
+⚠ **本層開工時 b 組段（7326–7349）與 `prop-b.json` 已落檔**——**只讀不寫；本段 append 在檔尾，b 組段一字未動。**
+**本組編號區間 7296–7325（本段用滿 7296–7325）。**
+
+---
+
+## 7296　（**總表**）：**18 張＝收 11 ／ 退 7**（全部第 4 堆：收 11 退 7）
+
+**收件率 61%。成因單一而可歸因**：**退件七筆裡六筆是「日本不是原盤」**（德國 MPS ×2、德國 WEA／Atlantic、美國 CTI、英國 Freedom、美國 Glenn Miller Productions 的授權壓片）、**一筆是第 5701 條乙過半**。⚠ ⚠ **與 b 組（7334「甲 10/10」）不同：本組 slice `source` 標「甲」的 12 筆只有 8 筆原盤真在日本（67%）**——**MB 把德國／英國／美國原盤的日本版建成 RG 裡唯一或最早的一筆，初篩就被騙了**（見 7308）。
+
+| # | 掛名 —《盤名》（slice） | 年 | `house` | 處置 | 依據（條號） |
+|---:|---|---:|---|---|---|
+| 1 | Miroslav Vitouš —《Purple》 | 1970 | CBS/Sony | 收 | 日本唯一原盤（法國 Epic 晚一年）；**掛名照池中 → `Miroslav Vitous`**（7309）；c-183 第 5663 條理由作廢（7313） |
+| 2 | Mal Waldron —《Tokyo Reverie》 | 1970 | victor | 收 | ビクター 東京獨奏、全世界只有兩版（同號市售＋Promo） |
+| 3 | Circle —《Circle 2: Gathering》 | 1971 | CBS/Sony | 收 | 日本唯一原盤；c-183 第 5691 條理由作廢（7313）；登記簿甲族第一筆入池 |
+| 4 | Horst Jankowski —《A Walk in the Black Forest》 | 1971 | columbia | **退** | **原盤德國 MPS《Jankowskyline》`CRA 864`，日本盤是改題授權版**（7297） |
+| 5 | Chick Corea —《The Sun》 | 1971 | toshiba | 收 | 東芝音工 `Express` 自製（製作 中村照夫），版本表全日本 |
+| 6 | Eugen Cicero —《My Lyrics》 | 1972 | columbia | **退** | 日本原盤成立；**第 5701 條乙 5/9＝56%**（7298） |
+| 7 | Mal Waldron-Steve Lacy —《Journey Without End》 | 1972 | victor | 收 | 巴黎錄音、ビクター 唯一發行；**掛名取池中既有 `Mal Waldron & Steve Lacy`**（7317） |
+| 8 | McCoy Tyner —《Echoes of a Friend》 | 1972 | victor | 收（**邊界**） | 日本首發早美國 Milestone 兩年、錄音與製作全在ビクター（7315） |
+| 9 | Cecil Taylor Unit —《Akisakila: Cecil Taylor Unit in Japan》 | 1973 | Trio／Whynot | 收 | c-184 第 5721 條理由作廢（7313）；`live: true`；**盤名取盤面羅馬字 `Akisakila - Cecil Taylor Unit In Japan`**（7318） |
+| 10 | Anthony Braxton —《Four Compositions (1973)》 | 1973 | columbia | 收 | 東京錄音、`℗ Nippon Columbia`；⚠ **MB 在本 RG 誤掛一筆 Delmark 的他碟數位版**（7314） |
+| 11 | Rolf Kühn Group Featuring Phil Woods —《The Day After》 | 1973 | columbia | **退** | **原盤德國 `MPS 21 21604-7`（1972 科隆）**，日本 `YZ-36-MP` 授權；年份 1973→1972（7299） |
+| 12 | Glenn Miller Orchestra —《A String of Pearls Vol. 1》 | 1973 | victor | **退** | **`Licensed From: Glenn Miller Productions Inc.`**，五軌人聲錄音 1972 年已在美國 Columbia House 發行（7300） |
+| 13 | Passport —《Looking Thru》 | 1973 | victor | **退** | **原盤德國 `Atlantic ATL 50 024`（℗© 1973 WEA Musik GmbH）**，日本 `P-8443A` 授權（7301） |
+| 14 | Sonny Rollins —《Sonny Rollins in Japan》 | 1973 | victor | 收 | ビクター 東京實況、`Ⓟ 1973 Victor Musical Industries`；`live: true` |
+| 15 | Sonia Rosa & Yuji Ohno —《Spiced With Brazil》 | 1974 | CBS/Sony | 收（**邊界**） | c-184 第 5723 條理由作廢（7313）；**掛名 → `Sonia Rosa with 大野雄二`**；演奏主體照 c-186 b 第 5987 條同藝人先例（7316） |
+| 16 | Freddie Hubbard / Stanley Turrentine —《In Concert, Volume One》 | 1974 | king | **退** | **原盤美國 `CTI 6044`**，日本 King `SR 3364` 授權（7302） |
+| 17 | Mal Waldron —《A Little Bit Of Miles》 | 1974 | trio | **退** | **「A Freedom Recording」**（英國 Freedom、製作 Alan Bates、1972 萊頓實況），Trio 盤帶 Freedom 號 `FLP 40116`（7303） |
+| 18 | Steve Lacy —《Stalks》 | 1975 | columbia | 收 | コロムビア 東京錄音、全世界只有兩版（同號市售＋Promo） |
+
+**退件的條款分佈**（七筆，逐筆可查）：**「日本是原盤」硬門不成立 6 筆**（#4／#11／#12／#13／#16／#17，全部是授權壓片或授權選輯）、**第 5701 條第三肢不成立 1 筆**（#6）；**#4 另有 ① 款 ＋ ⑤ 款第三形 ＋ 第 3716 條第一肢敗（輕音樂管弦樂團）作為第二條獨立理由**；**#12 另有「跨場次選輯」的合輯形狀**（第 397 條，未單獨定案）。**撞池 0、第 4106 條四項 0（本堆取消）、演奏主體 0。**
+
+⚠ **橫向數字**：**年份改判：收件 0 筆；退件 1 筆**（#11 1973→**1972**，第 7304 條）；**盤名：收件真改判 0、盤面取邊 1 筆**（#9，第 7305 條）；**`artist` 欄改判 3 筆**（#1／#7／#15，第 7309 條）；**`live` 改判 0 筆**（slice 無 `live` 欄；MB 標 `Live` 的三筆 #9／#14 收、#16 退，三肢逐筆核過，第 7306 條）；**再發數 11 筆收件逐筆跑完 `versions`，11/11 被 MB 低估、平均 63%**（第 7307 條）；**改釘 rgMbid 0、孤兒 release 0、撞池 0**。
+
+⚠ ⚠ **本組最重要的五件**：
+1. ⚠ ⚠ ⚠ **「甲」不是結論，本組 12 筆甲錯 4 筆（33%）**（7308）：**MB 對德國 MPS／英國 Freedom／美國 Glenn Miller Productions 的原盤只建了日本版**，所以「最早那一筆在 JP」——**Discogs master 一打就看到 1971 `MPS CRA 864`、1972 `MPS 21 21604-7`、`A Freedom Recording`、1972 Columbia House。** **簡報第〇節點名的 `Horst Jankowski` 查實是「改題授權」不是「同名重錄」**（7297）。
+2. ⚠ ⚠ **登記簿 `audits/foreign-artist-japan-productions.md` 的甲族兩筆（`Circle 2: Gathering`、`Akisakila`）與乙族一筆（`Spiced With Brazil`）全部收進卡池**（7313／7323）——**店主「全開」要收回的正是這一族。**
+3. ⚠ ⚠ **MB 在 `Anthony Braxton《Four Compositions (1973)》` 的 RG 裡誤掛了另一張碟**（7314）：Delmark 2003 年的《Four Compositions (GTM) 2000》數位版，**曲號 242–245、時長每軌差一倍**——**不計進版本數、建議本機處理。**
+4. ⚠ ⚠ **兩筆邊界收件都寫足反面與反轉條件**：`Echoes of a Friend` 的原盤歸屬（7315，Apple `℗ 1972 Fantasy` 與 en 維基 producer 欄是反面）、`Spiced With Brazil` 的演奏主體（7316，與 `Marlene` 七張的分界）。
+5. ⚠ **三筆掛名改判全照池中先例或盤面**（7309）：`Vitous`（池中無 `š`）、`Mal Waldron & Steve Lacy`（池中既有聯名串）、`Sonia Rosa with 大野雄二`（盤面 `With`、日本方取漢字）——**新造分裂 0。**
+
+---
+
+## 退件的裁定（7297–7303）
+
+## 7297　⚠ ⚠ 退：`Horst Jankowski —《A Walk in the Black Forest》`（rg dea9897d）——**「日本是原盤」不成立：日本コロムビア `YS-2470-AX`（1971）是德國 MPS《Jankowskyline》`CRA 864`（1971）的改題授權版；另 ① ＋ ⑤ 第三形 ＋ 第 3716 條第一肢敗**
+
+**事實**：**Discogs 把日本盤（13112357，`labels` 逐字「Columbia — YS-2470-AX」、`companies` 只有「Made By: Nippon Columbia Co., Ltd.」）歸在 master 1517229，而那個 master 的逐字標題是《Jankowskyline》、`main_release` 是德國 `MPS Records CRA 864`（2210803）**——`versions` 逐筆跑完 **16 版**：1971 德國 MPS `CRA 864`（`companies` 逐字「Record Company: MPS Records GmbH」「Distributed By: BASF」，runout 逐字「Ⓟ 1971」）、1971 英國 `Rediffusion 03 080`／`ZS 80`《Return To The Black Forest》、1971 澳洲 `Astor GGS-1273`、紐西蘭 `AIR ARBS 115`、荷蘭 `Global 991005 BZT`、美加 `Beverly Hills`《Jerusalem》、1973 南非 BASF、1973／74 西班牙 MPS、**1974 日本 `MPS RP-7020-MP`《Jankowskyline》**、1975 英歐 `Music For Pleasure MFP 3579`，以及本盤。**十二軌逐字與德國 MPS 盤同序同題**（〈A Walk In The Black Forest〉〈The Windmills Of Your Mind〉〈Eleanor Rigby〉〈A Shadow Of Lotus〉〈Gentle On My Mind〉〈Blue Spring〉〈Jerusalem〉〈A Bright Day's Hideaway〉〈El Condor Pasa〉〈Princess Doll〉〈Little Lady Butterfly〉〈A Song Of Joy〉），**MPS 盤逐名列出 Horst Jankowski（piano、指揮）、Götz Wendlandt、Branislav Kovačev、Siegfried Schwab 等德國樂手與三位弦樂指揮。**
+**MB** 的 RG 只建了日本那一筆（dd5b952f）——**這正是 `hoyi-foreign-origin.json` 把它判成「甲（最早 1971 JP）」的原因。**
+
+**裁定：退。** ⚠ ⚠ **簡報第〇節第 4 堆逐字點名這一筆「要分清是同名重錄還是授權版」——查實是授權版**：**日本盤的母帶就是 MPS 1971 年的《Jankowskyline》，只是用 1965 年那首暢銷曲改了盤名**（標題曲本身是 1971 年為 MPS 重錄的版本，不是 1965 年 Mercury 的原版，**但這張日本盤不是日本做的重錄**）。**卡的身分歸德國 MPS 原盤，它屬於德國的線，不在這裡。**
+**第二條獨立理由**：原壓（MPS）與日本盤的 `genres` 逐字 `Jazz`／`Funk / Soul`（日本盤 `Jazz`／`Pop`）、**`styles` 逐字只有 `Easy Listening`** → **① 款進人工判、⑤ 款第三形（`styles` 有內容而零爵士）不成立收件** → 第 3716 條三肢：**(1) 演奏主體 ✘（鋼琴 ＋ 輕音樂管弦樂團 ＋ 三組弦樂）**、(2) 曲目——七軌 Jankowski 系原創、五軌既有流行曲（Legrand／Lennon–McCartney／John Hartford／Herb Alpert／〈El Condor Pasa〉），乙不過半、(3) `styles` ✘——**一過兩敗，同樣退。**
+⚠ **退件也記盤名**（主線第 1934-B 條六）：**原盤題《Jankowskyline》、德國 MPS `CRA 864`、1971**。⚠ **池中 `Jankowski`／`Black Forest`／`Jankowskyline` 0 列。**
+
+## 7298　⚠ 退：`Eugen Cicero —《My Lyrics》`（rg be9af335）——**第 5701 條第三肢不成立：乙 5/9＝56% > 一半；「日本是原盤」成立**
+
+**事實**（Discogs releases/4967340＝原壓、`Columbia NCP-8503-N`、1972-11、9 軌；master 1585731 共 5 版全日本：1972 三筆（含 Promo）、1977 `Denon Jazz YX-7510-ND`、2010 `Production Dessinée PDCD-041`）：`notes` 逐字「Recording Date & Location: July 23, 1972, 1st Studio, Nippon Columbia, Tokyo.」、另一筆逐字「PCM Recording」；`genres` 逐字 `Jazz`、**`styles` 空陣列**；**演奏者 Eugen Cicero（`Baby Grand Piano`）、Johann Anton Rettenbacher（bass）、Dai Bowen（drums）**、解說 森川卓夫。
+**九軌逐軌 `Composed By`**：〈Piano Sonata A Major K.331〉Mozart、〈Hamabe No Uta〉`T. Narita`、〈Impression Of A Hungarian Land Scape〉Traditional、〈Chorus Of Victory (From "Aida")〉Verdi、〈Hana〉`R. Taki`、〈And If You Find That You'd Call Her Kyoko〉Rettenbacher、〈Barcarolle (From "Tales Of Hoffmann")〉Offenbach、〈Beautiful Tokyo〉Cicero、〈My Lyrics〉Cicero（兩位日本作曲者 Discogs 只給羅馬字，本層不寫漢字）。
+
+**裁定：退。** **「日本是原盤」這一道成立**（東京錄音、日本コロムビア 唯一發行——**本筆的退件不在硬門**）。**第 5701 條逐軌量**（第 1962-B／1965-B／1969-B 條）：
+- **甲 3**：Rettenbacher 1、Cicero 2（為本盤寫的原創）。
+- **乙 5**：**K.331（Mozart）、〈Aida〉凱旋合唱（Verdi）、〈Barcarolle〉（Offenbach）三首歐洲古典名曲**，**〈浜辺の歌〉〈花〉兩首日本唱歌**——**五首都是既有曲目（第 1969-B 條第 (i) 問，指得出原曲）**，**第 (ii) 問「進不進爵士曲目表」本層判不出來 → 當乙**（第 1962-B 條）。
+- **不計**：〈Hungarian Landscape〉`Traditional`——**指不出具體原曲，照第 1969-B 條第 (i) 問不計入乙。**
+→ **乙 5/9＝56% > 一半，收件款第三肢失敗。**
+⚠ ⚠ **本層查過主線第 1978-B 條那一格甲（「由本盤的演奏者自己持續發展成器樂即興曲目的既有曲，且有前作錄音可證」）**：**Cicero 1970 年的《Marching The Classics》（Discogs master 618019，德國 `Metronome MLP 15 362`）有〈Aida March〉與〈Turkish Marsh〉兩軌**——**但那一版零作曲欄**：〈Turkish Marsh〉是 Mozart K.331 終樂章還是 Beethoven〈土耳其進行曲〉查不實、〈Aida March〉（凱旋進行曲）與本盤的〈Chorus Of Victory〉是不是同一段旋律也查不實 → **「有前作錄音可證」不成立，那一格不適用。**
+⚠ ⚠ **反轉條件**：**若研究層查實那兩軌就是本盤的 K.331 與〈Aida〉同一段，乙降為 3/9＝33%，本卡撈回**（曲風那一關：`genres` 含 Jazz、`styles` 空陣列走人工判，演奏主體是鋼琴三重奏）。⚠ **這張是企劃盤的典型形狀**（外國爵士鋼琴手 ＋ 古典名曲 ＋ 兩首日本唱歌，第 1978-B 條逐字「企劃盤的特徵正是同一批曲目沒有任何前作的爵士錄音」）。⚠ **池中 `Cicero`／`キケロ`／`My Lyrics` 0 列。** ⚠ **撈回候選登記**：`Columbia NCP-8503-N`（1972）——**日本 PCM 數位錄音最早期的爵士盤之一**（`notes` 逐字 `PCM Recording`），原盤在門內，退的純粹是曲目。
+
+## 7299　退：`Rolf Kühn Group Featuring Phil Woods —《The Day After》`（rg e59a4f6e）——**「日本是原盤」不成立：原盤是德國 `MPS 21 21604-7`（1972），日本 `YZ-36-MP`（1973）是授權壓片；年份 1973 → 1972**
+
+**事實**：**Discogs master 306899 的 `versions` 8 版**——**1972 德國 `MPS 21 21604-7` 市售（2230361）與測試壓片（9933667）、1972 美國 `MPS G21604`**、1973 日本 `YZ-36-MP` 兩筆（含 Promo，`labels` 逐字 `MPS Records`、系列 `MPS Jazz Series`、製造 Nippon Columbia）、1979 德國 `Crystal 066 CRY 45 293`、年份欄 0 的日本 `ULX-49-P`、2026 日本 `Solid CDSOL-3612`。**德國原壓 `notes` 逐字「Recorded July 1972, Cornet Studio, Cologne」「Produced by MPS, July 1972.」**、`companies` 逐字「Distributed By: BASF」「Recorded At: Cornet Studio」；班底 Rolf Kühn（cl）、Phil Woods（as）、Joachim Kühn（p）、Peter Warren（b）、Oliver Johnson（ds）、Naná Vasconcelos（perc）——**零日本側 credit。**
+**MB** 只建了日本那一筆（24375da7，status 逐字 `Promotion`）——**「甲（最早 1973 JP）」就是這樣來的。**
+
+**裁定：退。** 德國 MPS 自製、自錄、1972 年首發，日本盤是隔年的 MPS 授權壓片（`MPS Jazz Series`）→ **卡的身分歸德國原盤。** ⚠ **退件也記年份改判**：**1973 → 1972**（德國 MPS 原壓）。⚠ **池中 `Rolf Kühn`／`Kuhn`（Steve Kuhn 那幾列是別人）0 列；`Phil Woods` 3 列（seed《Musique du Bois》1974／《Chasin' The Bird》1998、c-155《The Rev and I》），皆非本盤。**
+
+## 7300　⚠ ⚠ 退：`Glenn Miller Orchestra —《A String of Pearls Vol. 1》`（rg 46307efc）——**「日本是原盤」不成立：盤面逐字「Licensed From: Glenn Miller Productions Inc.」，而其中五軌人聲錄音 1972 年已在美國 Columbia House《The Voices Of Glenn Miller》發行**
+
+**事實**：**Discogs master 1053089 的 `versions` 5 版全在 1973 年亞洲**（日本 JVC `CD4W-7023E`／Victor `CD4W-7023` 四聲道盤、`SWX-7002` 立體聲盤、雙片 `CD4W-7051~52`《Glenn Miller In CD-4》、菲律賓 `Vicor VI-2038`），**`notes` 逐字「Japan-only QuadraDisc CD-4 Discrete quadraphonic LP release.」**；⚠ ⚠ **但五版的 `companies` 欄逐字都是「Phonographic Copyright (p): Victor Musical Industries, Inc.」「Licensed From: Glenn Miller Productions Inc.」**。
+**credits 逐名列出四十餘位**：`Directed By — Buddy DeFranco`、人聲 Ray Eberle／Johnny Desmond／Dorothy Claire／Ray McKinley 與 The Moonlight Serenaders、cornet 獨奏 Bobby Hackett、Al Klink、Peanuts Hucko⋯（**Glenn Miller 1940 年代的舊部與 1970 年代官方樂團的混編**）。
+⚠ ⚠ **Discogs release 6373941：1972 年美國與加拿大 `Columbia House DS 922`《The Voices Of Glenn Miller》**——`Directed By — Buddy DeFranco`、`Producer — Bob Morgan (2)`，**十軌裡〈Chattanooga Choo Choo〉（McKinley）〈Serenade In Blue〉（Eberle）〈At Last〉（Eberle）〈Perfidia〉（Dorothy Claire）〈I've Got A Gal In Kalamazoo〉（McKinley）五軌與本盤同曲、同歌手、同指揮**；**器樂軌（〈In The Mood〉〈A String Of Pearls〉〈Little Brown Jug〉〈Adios〉⋯）與 Bobby Hackett／Al Klink 的獨奏 credit 也出現在美國 `Kory Records KK 3002`《The Best Of The Glenn Miller Orchestra》（1976、`formats` 逐字 `Compilation, Reissue`）。**
+
+**裁定：退。** **照簡報第三節第 35 點「看 ℗ 行與授權字樣」**：℗ 雖掛 Victor，**但盤面自己寫明母帶是向美國 Glenn Miller Productions 授權來的，而同一批錄音早一年已在美國發行**——**這是美國製作的錄音在日本做成四聲道選輯，不是日本原盤**（第 4 堆的硬門：授權壓片一律退，卡的身分歸原盤）。
+⚠ **第二個形狀記下但不單獨定案**：本盤是把人聲場次與器樂場次重新排成一張（第 397 條的「既有錄音重新排列」，與第 1948-B 條同一把尺）——**若查實全部十二軌都早於 1973 年發行過，這一條也獨立成立。**
+⚠ **池中 `Glenn Miller《The Complete Glenn Miller 1938-1942》1991`（seed）是 1938–42 年的 RCA 原版，與本盤不同錄音；`Glenn Miller Orchestra` 精確字串 0 列。**
+
+## 7301　退：`Passport —《Looking Thru》`（rg 0a26f92e）——**「日本是原盤」不成立：原盤是德國 `Atlantic ATL 50 024`（℗© 1973 WEA Musik GmbH），日本 `Atlantic P-8443A` 是授權壓片**
+
+**事實**：**Discogs master 62504（`main_release` 逐字 887104＝德國 `ATL 50 024` 首壓）的 `versions` 28 版**——德國 `ATL 50 024` 首壓 `notes` 逐字「First pressing.」「**Recorded In October 1973 At Studio Dierks**」「An Atlantic recording distributed by WEA Musik GmbH. MADE IN GERMANY」「**℗© 1973 WEA Musik GmbH**」；1973 日本 `P-8443A` 兩筆、1973 澳洲、1974 美國 ATCO／南斯拉夫／德國俱樂部版、1979 巴西、1988 德國 CD、2001 美國 Wounded Bird、2006 日本 `VICW-60024`（**slice 的 `house: victor` 是從這一筆來的**）、2015 日本 `WPCR-16885`。
+**MB** 15 筆裡 1973 年有 JP／AU／DE 四筆，**日期都只填到年**——**`hoyi-foreign-origin` 判「不明（最早 1973 同日有 AU/DE/JP）」的「同日」其實只是「同一年」**（與 b 組 7334 看到的同一種假象）。
+
+**裁定：退。** Klaus Doldinger 的 Passport 在德國錄音、德國 WEA 持有 ℗ → **卡的身分歸德國原盤。** ⚠ **池中 `Passport`／`Doldinger` 0 列。**
+
+## 7302　退：`Freddie Hubbard / Stanley Turrentine —《In Concert, Volume One》`（rg 4ef75092）——**「日本是原盤」不成立：原盤是美國 `CTI 6044`，日本 King `SR 3364` 是授權壓片**
+
+**事實**：**Discogs master 220970（`main_release` 逐字 670567＝美國 `CTI 6044`）的 `versions` 23 版**，1974 年美國 CTI 七筆（LP／卡帶 `CTC 6044`／8 軌 `CT8 6044`）、德國 CTI、加拿大 CTI，**日本 King `SR 3364` 的 `labels` 欄同時逐字印著 `CTI 6044`**；MB 的日本 release（f1dd0374）label-info 也逐字 `CTI CTI 6044; KING SR 3364`。
+**與 b 組 7328（`Stanley Turrentine《The Sugar Man》` 美國 `CTI 6052`／日本 King `GP 3007`）同一族：King 是 CTI 在日本的授權方。**
+
+**裁定：退。** ⚠ **`live: true` 屬實**（MB `secondary-types` 逐字 `["Live"]`），退件不入卡。⚠ **池中 `Freddie Hubbard` 系與 `Stanley Turrentine` 系合計 60 餘列逐列比過，沒有本盤**（也沒有它的《Volume Two》）。
+
+## 7303　退：`Mal Waldron —《A Little Bit Of Miles》`（rg 7d99a66b）——**「日本是原盤」不成立：盤面逐字「A Freedom Recording」（英國 Freedom、製作 Alan Bates），日本 Trio `PA-7085` 與德國 Black Lion 同為 1974 年的授權版**
+
+**事實**：**Discogs master 377193 的 `versions` 5 版**——**1974 日本 `Trio PA-7085`（2388264，`labels` 欄逐字「Trio Records — PA-7085」「Freedom — FLP 40116」、`series` 逐字 `Trio Jazz Mania`、`notes` 逐字「Recorded live at the Jazzzolder Hot House, Leiden, Holland, 9th February, 1972」「A Freedom Recording」）**、**1974 德國 `Black Lion 28 466-1 U`（`companies` 逐字「Phonographic Copyright (p): Black Lion Records」「Copyright (c): Black Lion Records」、`labels` 同樣帶 `FLP 40116`）**、年份欄 0 的意大利 `Freedom FLP 40116`、1985 日本 `K18P-9392`、1988 日本 `32JDF-177`（`companies` 含 `Black Lion Productions Ltd.`）；**`Producer — Alan Bates`（Freedom／Black Lion 的老闆）、錄音 Luc Ludolph、演奏 Henk Haverhoek／Pierre Courbois（荷蘭樂手）。**
+
+**裁定：退。** **照簡報第三節第 35 點「看 ℗ 行與授權字樣，不看哪一版先上市」**：日本盤與德國盤同年，**但錄音、製作與 ℗ 都在英國 Freedom／Black Lion 側，Trio 盤自己印著 Freedom 的目錄號** → **授權壓片，卡的身分歸 Freedom 原盤。**
+⚠ **`live` 退件不入卡，但記下**：萊頓 Jazzzolder Hot House、單一日期 1972-02-09、`Recorded live` 字樣——三肢全過。⚠ **本盤是 slice `source`「甲（最早 1974 JP）」的誤判之一**（MB 只建了日本 Trio 那一筆，label-info 逐字 `Freedom FLP 40116; Trio PA-7085`——**MB 自己就把 Freedom 號寫在第一位**）。⚠ **池中 Mal Waldron 5 列＋四串聯名，沒有本盤。**
+
+---
+
+## 收件與橫向的裁定（7304–7325）
+
+## 7304　年份：**18 筆全部回查版本表；收件 11 筆改判 0 筆；退件改判 1 筆**
+
+| # | 碟 | slice | 判定 | 依據 |
+|---:|---|---:|---:|---|
+| 11（退） | `Rolf Kühn Group…《The Day After》` | 1973 | **1972** | 德國 MPS `21 21604-7` 原壓與測試壓片、美國 MPS `G21604` 皆 1972；`notes` 逐字「Recorded July 1972」「Produced by MPS, July 1972」 |
+| 12（退） | `Glenn Miller Orchestra《A String of Pearls Vol. 1》` | 1973 | 1973（本盤）／**1972（五軌錄音的美國首發）** | 見第 7300 條 |
+| 17（退） | `Mal Waldron《A Little Bit Of Miles》` | 1974 | 1974（錄音 1972-02-09） | 發行年兩國同為 1974 |
+
+⚠ **收件 11 筆全部是「MB first-release-date ＝ Discogs 原壓 `released` ＝ master `year`」三處一致**；#18 `1975-09` 與 #10 `1973-06`（Discogs 原壓 `released` 逐字 `1973-06-00`）有月份、#15 有逐日 `1974-12-21`。⚠ **#15 的首發是非賣品宣傳盤、市售版晚 27 年，`year` 仍取 1974**（c-184 第 5723 條旁枝 1 的形狀）。
+
+## 7305　盤名：**收件真改判 0 筆；盤面取邊 1 筆（#9）；等價形取羅馬字 4 筆（#7／#8／#10／#18，與 slice 同）；大小寫取 MB 1 筆（#14）；三欄一致 5 筆**
+
+- ⚠ **#9 `Akisakila: Cecil Taylor Unit in Japan` → `Akisakila - Cecil Taylor Unit In Japan`**：**盤面全題逐字 `Akisakila - Cecil Taylor Unit In Japan = アキサキラ - セシル・テイラー・ユニット・イン・ジャパン`，十三版裡九版的羅馬字半邊逐字一致（含六次日本再發）、Apple 也是這一形**；**MB 的冒號與小寫 `in` 是資料庫寫法**——照 jp-1 簡報第三節第 5 點「`album` 欄用盤面原題」與主線第 1976-B 條。**兩形都進 `queryAlias`。**
+- **等價形四筆**（盤面 `X = 和文`，取羅馬字）：`Journey Without End = 果てしなき旅`、`Echoes Of A Friend = エコーズ・オブ・ア・フレンド`、`Four Compositions (1973) = 捧げものとしての4つの作品`、`Stalks = ストークス「茎」`——**羅馬字那一邊在再發與 MB 上都有一致的寫法**（主線第 1976-B 條的分界）。
+- **#14 大小寫**：MB 最早 release 逐字 `Sonny Rollins in Japan`、Discogs `Sonny Rollins In Japan`、MB 1998／2003 CD 逐字只有 `In Japan`——**取 MB 最早 release 的形**（第 1858-B 條；大小寫不在射程內）。
+- ⚠ **退件記盤名**：**#4 的原盤題是《Jankowskyline》**（第 7297 條）。
+⚠ **`titleCheck` 本組 18 筆 `note` 全部空白、機器零報**；**MB 轄下 JP release 數 vs Discogs 日本盤數（主線第 1965-B 條第 1 點）逐筆比過**：收件 11 筆少的全是 Promo、再壓或再發，**盤名與年份回查沒有一筆因此改判**。
+
+## 7306　`live`：**改判 0 筆；MB 標 `Live` 的三筆（#9／#14 收、#16 退）三肢逐筆核過全部屬實；其餘 15 筆逐筆掃過，反向漏標 0**
+
+- **#9《Akisakila》**：場館 `Recorded At: Koseinenkin Kaikan`、單一日期 1973-05-22、盤名 `In Japan` ＋ credits `MC — Masahiko Yuh`。
+- **#14《Sonny Rollins in Japan》**：場館 `Recorded At: Nakano Sun Plaza`、單一日期 1973-09-30、盤名 `in Japan`；2008 完整版 `notes` 逐字「Recorded in performance」。
+- **#16（退）**：MB `secondary-types` `Live`、CTI 盤面場館與日期齊備。
+- **反向漏標掃描**（簡報第三節第 7 點的字串 ＋ 第 1977-B 條三個 credits 角色）：**#17（退）`notes` 逐字「Recorded live at the Jazzzolder Hot House」——MB `secondary-types` 空陣列，是反向漏標，但退件不入卡**；**收件 9 筆（#1／#2／#3／#5／#7／#8／#10／#15／#18）零命中**，全是錄音室盤（`Recorded At` 逐筆是錄音室名）。
+⚠ **slice 本組沒有 `live` 欄**；收件卡的 `live` 判定寫在各筆 `risk`。
+
+## 7307　⚠ ⚠ 再發版本數：**11 筆收件逐筆跑完整張 `versions`（11 筆都有 master 頁）；一律取 MB、Discogs 與 Apple 數位版的聯集；11/11 被 MB 低估，平均低估率 63%、最高 79%、最低 33%**
+
+| # | 碟 | MB | Discogs `versions` | Apple 另計 | 聯集 | MB 低估 |
+|---:|---|---:|---:|---:|---:|---:|
+| 1 | Purple | 2 | 7（含 2017 非官方盤） | 0 | **7** | 71% |
+| 2 | Tokyo Reverie | 1 | 2 | 0 | **2** | 50% |
+| 3 | Circle 2: Gathering | 2 | 4 | 1（us 1444190276） | **5** | 60% |
+| 5 | The Sun | 1 | 4 | 0 | **4** | 75% |
+| 7 | Journey Without End | 1 | 2 | 0 | **2** | 50% |
+| 8 | Echoes of a Friend | 6 | 27（含 2006 Fantasy MP3） | 0（1442898651 視為同一數位發行） | **27** | 78% |
+| 9 | Akisakila | 3 | 13 | 1（1327648951） | **14** | 79% |
+| 10 | Four Compositions (1973) | 1（⚠ 另一筆是他碟，不計） | 4 | 0 | **4** | 75% |
+| 14 | Sonny Rollins in Japan | 4 | 16（含意大利非官方盤） | 1（1000595580 完整版數位） | **17** | 76% |
+| 15 | Spiced With Brazil | 2 | 3 | 0 | **3** | 33% |
+| 18 | Stalks | 1 | 2 | 0 | **2** | 50% |
+
+⚠ **MB 獨有 0 筆**（MB 的每一筆都對得上版本表的一筆）；**Apple 另計的三筆都先比過 MB 有無 `Digital Media` 實體**（主線第 1987-B 條），**三筆都沒有、不會重複計**。⚠ **四張（#2／#7／#18 與 #5 的原版）全世界只有「同號市售 ＋ Promo」或一次日本再發**——**「資料庫裡只有這一筆」這句話本組沒有用到：11 筆都有 master 頁。**
+
+## 7308　⚠ ⚠ ⚠ 第 4 堆的硬門：**「日本是原盤」18 筆逐筆以 Discogs 最早那一版的 `labels` 欄 ＋ `versions` 全表 ＋ ℗ 行判定——成立 12、不成立 6；slice `source` 欄的初篩「甲」12 筆錯 4 筆（33%）、「不明」2 筆全錯、前批裁定 4 筆全對**
+
+| slice `source` | 筆數 | 原盤真在日本 | 不在日本（授權） | 誤判的形狀 |
+|---|---:|---:|---:|---|
+| 前批裁定（c-183 5663／5691、c-184 5721／5723） | 4 | **4**（#1／#3／#9／#15） | 0 | — |
+| `hoyi-foreign-origin：甲` | 12 | **8**（#2／#5／#6／#7／#8／#10／#14／#18） | **4**（#4 MPS／#11 MPS／#12 GMP／#17 Freedom） | ⚠ ⚠ **MB 整個 RG 只建了日本那一筆**（#4／#11／#17），或只建了日本的選輯（#12） |
+| `hoyi-foreign-origin：不明` | 2 | 0 | **2**（#13 WEA／#16 CTI） | MB 的「同日」只填到年 |
+
+⚠ ⚠ **本組的「甲」錯率 33%，而 b 組 7334 的甲 10/10 全對**——**差別在年段與廠牌**：本組 1970–74 年的 `columbia` 五筆裡兩筆是日本コロムビア 代理的德國 MPS（#4／#11），`victor` 六筆裡兩筆是授權（#12 GMP、#13 WEA 的 2006 再發被記成 `house`），`trio` 一筆是 Freedom。**→ 給 c-194…c-196：「甲」只能當「要查」，不能當「大概是」；`house: columbia` 而藝人是 MPS 系歐洲樂手的，先假設是 MPS 授權版。**
+⚠ **判定的三種證據，本組都用上了**：(1) **Discogs master 的 `main_release` 與版本表最早那一版的國別**（#4／#11／#13／#16）；(2) **盤面的授權字樣與 ℗ 行**（#12 `Licensed From: Glenn Miller Productions`、#13 `℗© WEA Musik GmbH`、#17 `A Freedom Recording`／`℗ Black Lion`）；(3) **日本盤自己印著外國目錄號**（#16 `CTI 6044`、#17 `FLP 40116`）。
+⚠ ⚠ **反方向（日本先發、外國後發）五筆都判日本原盤**：#1（法國 Epic 晚一年）、#8（美國 Milestone 晚兩年，見 7315）、#9（德國 Konnex 晚十九年）、#14（英國／巴西晚出、意大利非官方）、#3（美國至今只有 Apple 數位版）。
+
+## 7309　⚠ 掛名：**11 張 11 個相異字串——沿用池中整串 7（`Mal Waldron`／`Mal Waldron & Steve Lacy`／`Chick Corea`／`McCoy Tyner`／`Anthony Braxton`／`Sonny Rollins`／`Steve Lacy`）＋ 新立 4（`Miroslav Vitous`／`Circle`／`Cecil Taylor Unit`／`Sonia Rosa with 大野雄二`）；`artist` 欄改判 3；新造分裂 0、新造分隔符 0、收斂 0、改釘 rgMbid 0**
+
+1. **#1 `Miroslav Vitouš` → `Miroslav Vitous`**：池中唯一一列（seed 三人聯名）逐字 `Vitous`、Discogs 本盤與法國版的 `artists` 欄逐字 `Miroslav Vitous`；**`chk-prop` 的 `k()` 保留 `š`，取 MB 形會新造分裂**（c-183 第 5663 條末段逐字把這一對留給後面批次，本層照池中定）。
+2. **#7 `Mal Waldron-Steve Lacy` → `Mal Waldron & Steve Lacy`**：見第 7317 條。
+3. **#15 `Sonia Rosa & Yuji Ohno` → `Sonia Rosa with 大野雄二`**：Discogs 盤面 join 逐字 `With`（「`with` 照盤面」）；日本方照 2026-08-11 東亞藝人名裁定與池中 13 列取漢字；**`with` 取池中多數的小寫**（池中 ` with ` 27 串對 ` With ` 18 串；同形先例 `安田南 with 山本剛トリオ`、`福村博 with 渡辺貞夫`）。
+4. **#3 `Circle`**：MB Group 實體逐字、盤面團名；**池中第一個精確字串，高碰撞字**（Discogs 本團是 `Circle (5)`），`queryAlias` 放四位成員。
+5. **#9 `Cecil Taylor Unit`**：見第 7318 條。
+⚠ ⚠ **`Steve Lacy`（#18）照池中沿用，但 `audits/pool-artist-name-splits.md` 已記「池中這一個字串握著兩個不同的人」**（seed 的《Gemini Rights》《Apollo XXI》是美國 R&B 歌手）——**本層不新造拆分用的字串，那是本機的事**；MB 本組兩張的 Lacy 都是 ca9766a0（薩克斯手）。
+
+## 7310　⚠ ⚠ 曲風：**18 筆逐筆獨立覆核；收件 11 筆的原壓 `genres` 全含 `Jazz`，10 筆 `styles` 有爵士成分（`Fusion`／`Free Jazz`／`Avant-garde Jazz`／`Contemporary Jazz`／`Modal`／`Bop`／`Latin Jazz`）、1 筆空陣列（#10，人工判收）；①②③④⑤ 在收件裡零命中**
+
+- **退件側**：**#4 ① 款（`Easy Listening`）＋ ⑤ 款第三形 ＋ 三肢第一肢敗**（第 7297 條第二條理由）；#6 原壓 `styles` 空陣列、`genres` 含 Jazz——**曲風那一關過得了，退在第 5701 條**；#11 `Free Jazz`、#12 `Big Band`、#13 `Fusion`／`Jazz-Rock`、#16／#17 爵士——**五筆都是曲風乾淨而退在硬門。**
+- **第 5701 條甲乙計數（收件 11 筆）**：**10 筆乙 0**；**#15 乙 4/9＝44%（保守量）**（第 7316 條）。
+- ⚠ **`why` 欄**：slice 本組沒有 `why` 欄，**18 筆的曲風依據 100% 由本層自建**（逐筆寫在各卡 `risk`）。
+
+## 7311　⚠ `poolRecheck` 逐格人工覆核：**18 格全部重掃（每一種掛名寫法 ＋ 盤名兩種文字系統 ＋ 等價形兩半）；真撞池 0；「確定撞池」0 格、「逐張人工比」15 格、「變體全是羅馬字」3 格（#4／#6／#13，三位都是真外國藝人、池中 0 列）——全部不是撞池**
+
+⚠ **最靠近撞池的五組，逐一比過錄音不同**：
+- **#3 Circle ↔ seed／c-144 `Chick Corea《Circulus》1978`**（1970-08 的 Circle 班底錄音室場次）與 seed／c-143《The Song of Singing》（1970-04）——**本盤是 1971-05-17 的另一場。**
+- **#9 ↔ seed `Cecil Taylor《Solo》1973`**：同一次訪日、**七天後**（Discogs master 690133 原壓 `notes` 逐字「Recorded on May 29, 1973 at Iino Hall」）的獨奏——**另一場。**
+- **#8 ↔ seed `McCoy Tyner《Remembering John》1991`／c-151《Soliloquy》1992**：另一張 Coltrane 題獻盤／另一張獨奏盤。
+- **#10 ↔ seed `Anthony Braxton《Four Compositions (Quartet) 1983》`**：盤名只差括號裡的字，**1983 米蘭 Black Saint 的另一張。**
+- **#18 ↔ c-176 `Steve Lacy, 高橋悠治, 小杉武久《Distant Voices》`**：同一次訪日、同一間錄音室、同一位製作 上野勉，**錄音日 1975-06-24 對本盤 06-07、班底不同。**
+⚠ **盤名高碰撞（下游引用必須帶掛名與年份）**：`Purple`（池中 Stone Temple Pilots／Baroness）、`The Sun`（Cat Power《Sun》）、`Gathering`（`辛島文雄トリオ《Gathering》1977`）、`Four Compositions`（池中與 Apple 共五張）、`Circle`（團名）。**`chk-prop` 第五道（盤名撞 apex）本組 0 報。**
+
+## 7312　catno 反查與孤兒 release：**11 筆收件逐筆以原壓目錄號打 `catno=`；差集 0、孤兒 release 0；外國同形號誤命中 3 筆**
+
+**`SOPC 57101-J`／`SMJX-10103`／`SMJX-10134`／`ETP-9016`／`NCP-8504`／`SMJ-6009`／`SMJ-6030`／`YQ-7507`／`YFSC-21`／`SOPL-20`／`PA-3004`** 逐一反查，**回來的本盤 release 全在各自 master 的版本表內**；⚠ **誤命中三組**：`SOPL-20` 前綴撞 1973 年 CBS/Sony 的 `SOPL 200`–`209`（Santana／Clifford Brown／Andy Williams⋯）、`ETP-9016` 撞 1982 年 Express 的五位號 `ETP-90160`／`90167`／`90168`、`PA-3004` 撞荷蘭 Pathé／哥倫比亞 Discos Fuentes 等——**全部是別人的碟，不影響版本數。**
+
+## 7313　⚠ ⚠ ⚠ `priorRulingHits` 四筆逐筆重讀：**四筆全收——四條舊裁定的退件理由都「只有」第 4106 條四項，而那一條在本線取消；其餘各關的判斷逐條沿用、本層重核仍成立**
+
+| # | 舊裁定 | 舊理由 | 同一條裡的其他判斷 | 本線 |
+|---:|---|---|---|---|
+| 1 | c-183 第 5663 條 | 四項 1/4 | 逐字「曲風那一關過得乾淨……退的純粹是身分」 | **收** |
+| 3 | c-183 第 5691 條 | 外國藝人那一關、演奏側 0/4 | 逐字「本筆的原壓確實是日本盤，退的純粹是身分」 | **收** |
+| 9 | c-184 第 5721 條 | 四項 2/4、演奏側 0/3 | 逐字「退件依據只有一項，但它是硬的」；曲風、原壓、年份、盤名、`live` 全核過 | **收** |
+| 15 | c-184 第 5723 條 | 四項 2/4 | 逐字「退件單押第 4106 條四項」；曲目與演奏主體兩肢逐字判「不構成退件理由」 | **收（邊界，第 7316 條）** |
+
+⚠ ⚠ **與 b 組 7333 的分寸一致**：b 組 `Saundra` 那一張舊理由也只寫四項，**但 b 組重判曲目與演奏主體後仍退**——**本組四張都逐條重判過，沒有一張是「理由作廢就自動撈回」。**⚠ **四張的年份、盤名、原盤判斷都沿用舊條（本層重跑版本表逐筆相符），`#9` 的盤名依第 7305 條取盤面羅馬字形。**
+
+## 7314　⚠ ⚠ MB 的 RG 誤掛他碟：**`Anthony Braxton《Four Compositions (1973)》`（rg 57948efa）轄下的 release a387b66a-6e48-48de-924f-af9596f82732 是另一張碟**
+
+**MB 那一筆逐字：2003-03-20、XW、Official、Digital Media 4 軌、label `Delmark Records`、barcode 193483652306；四軌逐字〈Composition 242〉20:29／〈Composition 243〉13:45／〈Composition 244〉18:47／〈Composition 245〉16:26。**
+**本盤（Discogs 7948416）四軌逐字〈Composition No. 1〉11:35／〈No. 2〉8:25／〈No. 3〉9:55／〈No. 4〉10:30。**
+**那一筆是 Delmark 的《Four Compositions (GTM) 2000》**（Discogs master 1693388、`DG-544`，2003；**Apple collectionId 1458858547《Four Compositions》`℗ 2003 Delmark`、2003-03-20、4 軌 就是它**）。
+**處置**：**本卡的版本數不算它（第 7307 條）；`mbNote` 與 `risk` 都寫明**；⚠ **建議本機或 MB 把那一筆移到 Delmark 那張的 RG**（雲端不動 MB）。⚠ **形狀記下**：**同一位作曲家用「N Compositions」當慣用盤名，MB 靠盤名合併時就會吃錯**——**Braxton 在往後三批若還有 `Compositions` 系列，逐軌比曲號與時長。**
+
+## 7315　⚠ ⚠ 邊界收件（一）：`McCoy Tyner —《Echoes of a Friend》`——**日本ビクター 首發早美國 Milestone 兩年、錄音室／錄音師／製作人全在ビクター 側，判日本原盤而收**（**建議主線覆核**）
+
+**支持日本原盤的五件**：1972 日本 `SMJ-6009` 首發（美國 `M-9055` 是 1974）；`Recorded At: Victor Studio`（兩國版本都逐字這樣寫）；錄音 別宮環（ビクター 錄音師）；**製作人一欄日美兩版都是同一位 Tetsuya Shimoda**；**master 的 `main_release` 是日本盤**。
+**反面的三件**：⚠ Apple 條目 `℗ 1972 Fantasy, Inc.`（現權利人把 ℗ 年記在 1972）；⚠ en 維基 infobox 的 `producer` 欄寫 Orrin Keepnews（**與兩國盤面都不符**）；⚠ Tyner 1972 年正與 Milestone 簽約（seed《Sahara》即 Milestone）。
+**裁定：收。** **照簡報第三節第 35 點「看 ℗ 行與授權字樣」**：**日本原壓零 ℗ 行、美國盤只寫 `℗ Milestone Records`，兩邊都沒有授權字樣**——**這一票兩方都指不出方向，落回盤面的製作與錄音歸屬（全在ビクター）與先後。**
+⚠ **反轉條件**：**查到「Milestone 錄製、授權ビクター 首發」的明文（例如美國盤或 OJC 內頁寫 `Recorded for Milestone`），改判授權壓片、退**——只動收退名單，可逆。⚠ **同一位 Tetsuya Shimoda ＋ 別宮環 的組合也是 #14 `Sonny Rollins in Japan` 的製作班底**（那一張有 `Ⓟ 1973 Victor Musical Industries`，原盤歸屬沒有爭議）。
+
+## 7316　⚠ ⚠ 邊界收件（二）：`Sonia Rosa with 大野雄二 —《Spiced With Brazil》`——**四項門檻取消後重判演奏主體與曲目兩肢：照同藝人 c-186 b 第 5987 條先例判演奏主體成立、第 5701 條保守量乙 4/9 仍過而收**（**建議主線覆核**）
+
+**第 5701 條兩種量法**：c-184 第 5723 條量成甲 6／乙 3；**本層照主線第 1962-B 條「判不出來當乙」保守重量成甲 5／乙 4（44%）**——多算的一首是〈Chove La Fora〉（Tito Madi 1957），**本層查不到它 1974 年前被爵士側錄過**；**兩種量法都 ≤ 一半。**
+**演奏主體（第 1923-B／1925-B 條）三條依據**：(a) **同一位歌手與同一位編曲家的 c-186 b 第 5987 條《Samba Amour》已收**（該條逐字「與三張退件的分界在曲目與曲風欄，不在 credits 的多寡」）；(b) **c-184 第 5723 條第 (2) 點逐字「本層判這一肢不成立退件」**（鋼琴 山本剛、三位拉丁打擊、盤面節奏組全是爵士樂手；與 c-183 第 5703 條收下的 `笠井紀美子 with Gil Evans Orchestra` 同形）；(c) **她自己在盤面有樂器 credit**（B4 `Acoustic Guitar, Soloist`）。
+⚠ ⚠ **與 `Marlene` 七張退件的分界**（c-187 b 第 6058 條等）：**那七張的退件理由是四項 2/4 ＋ 演奏主體（領銜者零樂器 credit、曲目是 1970–80 年代的美國流行／靈魂曲、`styles` 有 `City Pop`／`Soul`）**；**本盤 `styles` 只有 `Bossanova`／`Latin Jazz`、九軌過半是爵士與巴薩諾瓦標準曲。**
+⚠ **反轉條件**：**若主線認定「主唱領銜、編曲家指揮的伴奏」一律判演奏主體不成立，本卡與 c-186 b《Samba Amour》一起改判退。**
+
+## 7317　⚠ 掛名：`Mal Waldron-Steve Lacy` → **池中既有的 `Mal Waldron & Steve Lacy`**（#7）
+
+**依據三件**：(1) **池中 seed 已有 `Mal Waldron & Steve Lacy《Sempre amore》1987`**——兩人順序相同、只差分隔符；(2) **c-191 a 的同形先例**（`本田竹広 And NATIVE SON` 盤面 `And`，取池中既有的 `&`）；(3) **Apple jp 上兩人的聯名條目 12 筆裡 11 筆用 `&`（另一筆是 `With`）**。
+⚠ **與 c-187 b 那兩串並存（`富樫雅彦, Richie Beirach` 對 `Richie Beirach with 富樫雅彦`）不同形**：那是盤面的**領銜順序**不同，本盤順序與池中相同。**主線第 1934-B 條 (3)「盤面明印才立」的反面：本盤的 `-` 另立一串就是與 seed 那一列的新分裂。** 盤面形與和文形 `マル・ウォルドロンとスティーブ・レイシー` 進 `queryAlias`。可逆。
+
+## 7318　⚠ 掛名與盤名：`Cecil Taylor Unit —《Akisakila - Cecil Taylor Unit In Japan》`（#9）
+
+**掛名**：MB Group 實體逐字 `Cecil Taylor Unit`、Discogs 盤面逐字 `The Cecil Taylor Unit`（anv `Cecil Taylor Unit`）——**取無冠詞形**；**池中 `Cecil Taylor` 12 張全是他個人名義的碟，本盤盤面掛的是團名 → 照第 964／196／197 條立團名串、與個人串並存**（池中同形：`Steve Lacy Trio`、`Dave Holland Quartet`）。**不塞進個人串、不收斂。**
+**盤名**：見第 7305 條。⚠ **盤名本身含團名，下游正文不要重複唸兩次。**
+
+## 7319　⚠ 人名：**收件卡寫出的幕後與樂手漢字人名 31 個（不含引用池中掛名字串），全部逐名回打 Discogs 藝人頁（`realname`／`namevariations`）或 anv 與藝人頁交叉驗過；退成不寫 3 個；`name-corrections.json` 的 `pairs` 命中 3 個（都取正寫）**
+
+- **`pairs` 命中、取正寫**：**`田中保積`**（#10，不是 `田中穂積`）、**`田中三一`**（#15 錄音，不是 `田中光和`）、**`上野勉`**（#18 製作，不是 `上野壽夫`）——**三個都是 c-184／c-185 已證實寫錯過的名字，本層在寫之前先查表。**
+- ⚠ **兩處 Discogs 藝人頁的 `realname` 與 `namevariations` 不一致，本層的處置**：`Teruo Nakamura`（#5 製作）`realname` 逐字 `中村輝夫`、`namevariations` 有 `中村照夫` → **取 `中村照夫`（與池中 3 列掛名一致）**；`Kazuyoshi Okayama`（#15 鼓手）`realname` 逐字 `岡山保義`、`namevariations` 有 `岡山和義` → **兩形讀音不同，退成羅馬字不寫。**
+- **退成不寫**：`Tetsuya Shimoda`（#8／#14 製作，藝人頁零漢字）、`Yuzoh Satoh`（#1 攝影）、`Kazuyoshi Okayama`（見上）。
+- ⚠ **`清水俊彦`（#18 解說）是主線第 1940-B 條記的同名陷阱：Discogs 851967 profile 逐字「Japanese poet and jazz critic」，不是 ja 維基那位聲優。**
+- ⚠ **b 組 7341 指出 c-185 第 5909 條把 `上野勉`／`間章` 寫錯——本組 #18 的製作與協調正是這兩位，Discogs 藝人頁 875006／651713 逐字 `上野勉`／`間章`，與 b 組的更正一致。**
+
+## 7320　⚠ ⚠ 同批互掃（主線第 1987-B 條固定動作）：**同組 1 組、跨組 3 組同曲題，全部是不同錄音；同一錄音 0**
+
+- ⚠ **同組**：**〈Bone〉（Steve Lacy 作）同時在 #7《Journey Without End》B2（1971 巴黎、6:50）與 #18《Stalks》B3（1975 東京、4:47）**——**兩場錄音，各算一張；兩卡的 `risk` 已互相寫明，下游不要寫成同一段。**
+- **跨組（b 組 `prop-b.json`）**：〈Naima〉（本組 #8 A1 ↔ b 組 `'Hannibal' Marvin Peterson《Naima》` 1978 的標題曲）、〈Secret Love〉（本組 #15 ↔ b 組 `The Great Jazz Trio《Love for Sale》`）、〈Corcovado〉（本組 #15 ↔ b 組一張）——**都是標準曲的不同錄音。** ⚠ **〈Naima〉那一組是「曲題撞他卡盤名」**（主線第 1948-B 條三件之 1）——**兩卡引用必須帶年份。**
+- **本組三張 Mal Waldron（#2 收、#7 收、#17 退）與 b 組 `Mal Waldron & Jackie McLean《Like Old Times》` 1976**：四張四場錄音，零重疊。
+
+## 7321　Apple 與店面（第 254 條，只寫觀察不寫結論）：**11 筆收件命中 4 筆（#3／#8／#9／#14）；403／429 本次工作階段零次**
+
+**#3** us 1444190276（`℗ 2016 Stretch Records`，1 軌）；**#8** jp／us 1442898651（`℗ 1972 Fantasy, Inc.`，`releaseDate` `1972-01-01` 是年份佔位）；**#9** jp／us 1327648951（`℗ TRIO RECORDS`，2006-08-23）；**#14** jp 1000595580（完整版 7 軌、`℗ Victor Entertainment`，2008-04-23；**原 4 軌版的數位條目兩邊都沒有**）。**其餘 7 筆以羅馬字與片假名藝人名兩種寫法各掃一次、零命中**（#1／#2／#5／#7／#10／#15／#18）。⚠ **#10 那一筆 Apple 同名條目（1458858547）是 Delmark 的他碟（第 7314 條）。**
+
+## 7322　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有條目一個都沒動**
+
+## 7323　⚠ 給主線的三件登記建議（本層照邊界不動那些檔）
+
+1. ⚠ ⚠ **`audits/foreign-artist-japan-productions.md`**：**甲族 `CBS/Sony SOPL-20-XJ`（Circle）與 `Trio Records PA-3004〜5`（Akisakila）、乙族 `Sony YFSC-21`（Spiced With Brazil）三筆，本線已收**——**建議在表上加一欄「c-193 a 收」**；**另建議甲族新增四筆本組收件**：`CBS/Sony SOPC 57101-J`（Purple，紐約錄音）、`Victor World Group SMJX-10134`（Journey Without End，巴黎錄音）、`Express ETP-9016`（The Sun，紐約錄音、日本製作人）、`Columbia NCP-8504-N`（Four Compositions (1973)，東京錄音、日本樂手 3/4）。
+2. ⚠ **MB 誤掛**：`Four Compositions (1973)` RG 下的 a387b66a（第 7314 條）——**給本機或 MB 編輯。**
+3. ⚠ **`enum/hoyi-foreign-origin.json` 的初篩品質**：**本組甲 12 錯 4、不明 2 錯 2**（第 7308 條）——**建議 c-194…c-196 的派工信把「`house: columbia` ＋ 歐洲 MPS 系樂手」與「日本盤 `labels` 欄同時印著外國目錄號」列成兩個必查的指紋。**
+
+## 7324　交件前自跑的結果與第 315 條結算
+
+- `node batch-progress/c193/chk-prop.mjs a` → **11 張、11 位、標記 0**（「同掛名盤名詞元包含」報 3 處，全是 `Sonny Rollins` 這個掛名同時出現在盤名裡造成的假警報，只報不擋）。
+- `node batch-progress/dedup-crossbatch.mjs`（不帶批號、全池）→ **156 批、5811 張，跨批撞卡 0、同 rgMbid 不同掛名 0**；只報不擋的兩處共用目錄號與一處詞元包含都是 c-192／c-190／c-191 的，與本組無關。
+- **第 315 條：收 11 ＋ 退 7 ＝ 18**；**逐堆：第 4 堆 收 11 退 7 ＝ 18**（本組沒有第 1／2／3 堆）。
+
+## 7325　⚠ ⚠ 給主線與 c-194…c-196 的清單
+
+### 建議主線覆核的兩筆邊界收件（索引）
+1. **第 7315 條 `Echoes of a Friend`**——日本首發、美國權利人現持 ℗；反轉條件寫在該條。
+2. **第 7316 條 `Spiced With Brazil`**——演奏主體照同藝人先例；與 c-186 b《Samba Amour》綁在一起。
+
+### 撈回候選（若改判就從這裡撈）
+- **`Columbia NCP-8503-N`（`Eugen Cicero《My Lyrics》`，1972）**——原盤在門內、曲風乾淨，退的純粹是第 5701 條乙 5/9；**反轉條件：研究層查實 Cicero 1970 年《Marching The Classics》的〈Turkish Marsh〉〈Aida March〉就是本盤的 K.331 與〈Aida〉同一段 → 乙 3/9，收。**
+- ⚠ **六筆授權壓片不登記撈回**——撈回來就是別國原盤的日本版，身分不歸這裡；**它們的原盤資訊（德國 MPS ×2、德國 WEA、美國 CTI、英國 Freedom、美國 GMP）已寫在各條，若哪天開那幾國的線可以直接用。**
+
+### 給 c-194…c-196 的操作提醒（五條）
+1. ⚠ ⚠ ⚠ **「甲」要自己打 Discogs master 的 `main_release`**——本組四筆誤判全是「MB 只建了日本那一筆」，**MB 那邊看起來就是「最早 JP」**。
+2. ⚠ ⚠ **日本盤的 `labels` 欄若同時印著外國目錄號（`CTI 6044`、`FLP 40116`、`MPS`）＝授權**；**`companies` 欄的 `Licensed From:` 一出現就查授權方有沒有更早的版本**（#12）。
+3. ⚠ **`house` 欄在本堆只反映 MB 掛的那一個廠牌實體，常常是後來的再發**（#13 的 `victor` 是 2006 年的 CD）。
+4. ⚠ **MB 的「同日」只填到年**（#13、b 組四筆）——**「不明」一律回 Discogs 看原壓 `notes` 與 ℗ 行。**
+5. ⚠ **Braxton 的 `Compositions` 系盤名會讓 MB 合併錯 RG**（第 7314 條），**逐軌比曲號與時長。**
+
+**編號區間結算**：本節用到 **7296–7325（共 30 條），區間用滿、未越界（b 組 7326–7355）。**
