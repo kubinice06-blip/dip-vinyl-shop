@@ -8,6 +8,8 @@
 > ⚠ **append 之後自己驗一次**：`grep -c '^## '` 兩組的條數都在，而且對方的標題還在。
 
 > **預留（2026-09-28）：研究 a 8296–8325、b 8326–8355。**
+> **預留（2026-09-28）：鉤子 8496–8535。**
+> **預留（2026-09-28）：寫作 a 8536–8550、b 8551–8565。**
 ---
 
 
@@ -519,3 +521,127 @@
 4. 同名陷阱：en 維基 `Bobby_Watson` → 消歧義頁 `Robert Watson`。
 
 **編號區間結算**：本節用到 **8296–8310（共 15 條）**，未越界（b 組研究 8326–8355）；8311–8325 留空。
+
+# c-198 b 組研究層（8326–8355）｜2026-09-28
+
+批次 c-198｜b 組 7 張（JVC／Victor 6・Better Days 1）｜研究層
+輸入：`desc-tools/batches/cards/c198-cards.json` 的 `group === "b"` 7 筆｜輸出：`desc-tools/batches/research/c198-b.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端三處例外）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節與附錄二 → 本檔策展兩段（c-198 第 7976–7993、8006–8024 條）與 a 組研究段（c-198 第 8296–8310 條）→ 主線第 1934-B…2011-B 條 → c-178 研究層兩段。⚠ **引用一律寫「c-1XX 第 NNNN 條」。**
+⚠ **本段 append 在檔尾，主線骨架、兩組策展段、a 組研究段一字未動**（寫前 `git show HEAD:` 與 `ls` 兩者都看過：皆 521 行）。
+
+## 8326　總表：**7 張、facts 84 條（每張 12）、full 7／thin 0**；推翻策展層 2 處、補正 3 處
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---|---|---:|---|---|
+| 1 | Steps —《Smokin' In The Pit》 | 12 | full | ⚠ **原始兩吋母帶遺失，1999 年加收的五軌取自 Mainieri 與 Brecker 手上的未混音卡帶粗混**；〈Young And Fine〉原錄音的鼓手就是 Gadd |
+| 2 | Gary Burton —《Gary Burton and the Berklee All-Stars》 | 12 | full | 〈Crystal Silence〉是 Burton 無伴奏獨奏；解說者 Malta 曾是 Berklee 講師；⚠ 推翻「Hopkins、Pease 是 Berklee 教師」 |
+| 3 | Carmen McRae —《As Time Goes By …》 | 12 | full | ⚠ **〈The Last Time For Love〉是她自己寫的**；〈Supper Time〉是 Berlin 1933 年的私刑哀歌；她本是鋼琴手出身 |
+| 4 | Oscar Castro-Neves —《Brazilian Scandals》 | 12 | full | 三胞胎之一、十六歲走紅；本盤是他 JVC 五張的第一張；作詞人 Aldir Blanc 本行是精神科醫師 |
+| 5 | Ernie Watts Quartet —《Ernie Watts Quartet》 | 12 | full | Tonight Show 樂團二十年的錄音室名手「1980 年代中決定重新專心吹爵士」；貝斯手與他同待過 Buddy Rich 與 Tonight Show 兩團 |
+| 6 | Jeff Baxter, Buzzy Feiten, James Harrah, Teddy Castellucci —《Guitar Workshop in L.A.》 | 12 | full | ⚠ **ビクター「Guitar Workshop」系列 1977 年由 大村憲司 等四位日本吉他手開頭，本盤是系列第一次移師海外**；〈Blues For Ronnie〉四段獨奏照聲道由右到左排 |
+| 7 | タイガー大越 —《Face to Face》 | 12 | full | ⚠ **ビクター 的日文曲目把〈A Man With 20 Faces〉寫成〈怪人二十面相〉**；節奏組是 NANIWA EXPRESS 的 清水興／東原力哉 |
+
+**推翻 2**：#3 曲目性質與第 5701 條計數（8329）、#2 作曲者身分（8330）。**補正 3**：#6 `Yoshinobu Kojima`＝小島良喜（8331）、#2 電吉他的實體誤連（8330）、#1 錄音日期的兩說（8332）。**收件結論 7/7 不變。**
+
+## 8327　⚠ 再發版本數：**7 筆逐筆重跑 `masters/<id>/versions`（per_page=100），改判 0 筆**；四種漏法逐一查
+
+| # | master | Discogs | MB 獨有 | Apple | 聯集 | 卡單 |
+|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 433865 | 8 | 1（b8e56978＝Apple us） | 1（jp 1694358444） | **10** | 10 |
+| 2 | 473729 | 8 | 0 | 0 | **8** | 8 |
+| 3 | 561773 | 13 | 2（c17cbf02／2f95885c 殘缺） | 0 | **15** | 15 |
+| 4 | 382820 | 8 | 0 | 0 | **8** | 8 |
+| 5 | 767892 | 5 | 0 | 0 | **5** | 5 |
+| 6 | 929858 | 3 | 0 | 0 | **3** | 3 |
+| 7 | 933038 | 5（扣重複 1） | 0 | 1（jp 1455815506） | **5** | 5 |
+
+- (a) 只數 mbNote：七個 RG 的 MB release 共 11 筆逐筆重打 `release?release-group=<id>&inc=labels+media`，全在表內或已計入。
+- (b) 1970 年代同號再發／2016 後黑膠：#3 是唯一 1970 年代盤，1974 原壓兩種標籤（`Victor`／`JVC`）已在表內；七張零 2016 年後黑膠復刻（#1 的 2018 是 UHQCD）。
+- (c) 數位：Apple jp／us 以盤名、掛名＋盤名、團名重查（search 端點本工作階段零 403）：#1 兩筆、#7 一筆已計入，其餘五張零命中——與策展層一致。
+- (d) MB 獨有：#1 一筆（數位版）、#3 兩筆（殘缺），已計入。
+- **MB 轄下 JP vs Discogs 日本盤**（主線第 1965-B 條）：#1 1 vs 5、#2 0 vs 4、#3 1 vs 6、#4 0 vs 2、#5 0 vs 1、#6 0 vs 2、#7 0 vs 1（兩條目同一版）——**七筆全少**，年份與盤名回查策展層已做（c-198 b 第 8009／8010 條），本層逐筆覆核成立、零改判（#3 1974 成立）。
+- ⚠ **`search` 摘要沒有拿來當版本表**：七筆全部逐筆打 `releases/<id>`（共 44 筆）。
+
+## 8328　⚠ ⚠ 第 4 堆硬門覆核：**7/7 版本表裡沒有比日本版更早的外國版本**
+
+#1 最早外國版 1999 US（NYC）、#2 1986 US LP `JLP-3301`（JVC 自家出口號，與日本 CD 1986-01-21 同年；美國 CD 1991 逐字 `Licensed Through: GRP`）、#3 1976 US Catalyst（`Licensed From: JJ Records`）、#4／#5／#6 同年美國 JVC `JD-` 版（℗ VMI；#6 逐字「Licensed by Victor Musical Industries, Inc. Japan to GRP」）、#7 同年美國 `JD-3318`（`Licensed From: Victor`）。**facts 只寫盤上的 ℗ 與授權字樣，不寫「日本原盤」這種判定句**（與 c-198 a 第 8298 條同一處理）。#7 是日本藝人（c-198 b 第 8007 條第 3 點），facts 照本土漢字規則。
+
+## 8329　⚠ ⚠ 推翻策展層：#3 **〈The Last Time For Love〉是 Carmen McRae 自己寫的；第 5701 條改為甲 10／乙 0**
+
+卡單 `curatorWhy` 寫「十軌全是美國歌曲集的標準曲」「甲 8／乙 2（〈I Can't Escape From You〉〈The Last Time For Love〉保守算乙）」。
+1. **〈The Last Time For Love〉**：Catalyst 1918313 逐軌 `Written-By=Carmen McRae [Carmen McRae Spearman]`、1984 再版 11668805 逐軌 `Written-By=Carmen McRae`——兩個獨立轉錄一致 → **本盤演奏者的原創，甲**。
+2. **〈I Can't Escape From You〉**：en 維基該曲條目（1936 電影《Rhythm on the Range》、Whiting／Robin）列 1936 Jimmie Lunceford、Bunny Berigan、1944 Benny Carter 樂團、1947 Erroll Garner 等爵士錄音，**她自己 1957 年也錄過**（池中 seed《After Glow》，不點名）→ 照主線第 1965-B 條「有沒有進入爵士曲目表」→ **甲**。
+3. 作曲者全表取 1984 再版的逐軌 credits（原壓整筆零作曲欄）；〈I Could Have Told You So〉該版誤印「J. Oliver」，正解 Sigman／Van Heusen。
+**收件結論不變**（原本就不過半）；**只動研究稿，卡單的 `curatorWhy` 那一句建議主線改成「九首既有曲＋一首她自己的歌」**（可逆，字串替換）。
+
+## 8330　⚠ 推翻策展層：#2 **「Hopkins、Pease 是 Berklee 教師群的原創」查無來源**；電吉他 Jim Kelly 實體誤連
+
+1. Discogs 473420（Greg Hopkins）profile 只寫「US trumpet player」、3461619（Ted Pease）整頁空白；本層沒有找到任何來源支持兩人當時是 Berklee 教師。**facts 改寫成可查證的版本**：Hopkins 自己帶十六人大樂團，Stout／Pierce／Monroe／Gertz 四人的 `groups` 都有 `The Greg Hopkins 16 Piece`。Pease 只寫作曲。
+2. ⚠ **日本 CD 與 1995 美國版把電吉他 Jim Kelly 連到 Discogs 513471（澳洲吉他手，`groups` 零 Berklee）**，1989 日本再版則連到 17350720 `Jim Kelly (37)`（`groups` 逐字 `The Berklee All-Stars`）——**同名兩人**。facts 只寫名字。**建議主線登記 `name-corrections.json` 的 `_entity_mislinks`**（本層照邊界不動）。
+3. **卡單的 LP 目錄號寫 `VIJ-28066` 是對的**（Discogs 10725411 逐字 `VIJ-28066, JLP-3301`）。
+
+## 8331　#6 補正：**`Yoshinobu Kojima`＝小島良喜**；ビクター「Guitar Workshop」系列的位置
+
+1. 策展層第 8015 條把 `Yoshinobu Kojima` 列為「未回打 → 不寫漢字」。**本層回打 Discogs 1325153：`realname` 逐字 `小島良喜`、profile「Japanese pianist born 22 November 1957 in Hyogo」、`groups` 含 `Kuwata Band`** → facts 照漢字寫。該頁 `namevariations` 另有 `小島吉喜`／`小島良嘉`（誤寫）與 `平井夏美`（筆名）——**正文只用 小島良喜**。
+2. **系列頁 `labels/2095090`（`parent_label` Victor Musical Industries）15 筆**：FLD-10008（1977，大村憲司／渡辺香津美／森園勝敏／山岸潤史）、FLD-10011（1978 Vol. 2 Live）、VIH-6062（1980 Vol. 3 Direct Disk）、本盤（1988）、Tokyo／Hawaii（1989）、Jamaica（1990）、Rio（1991）——**本盤是這份清單裡第一張離開日本的**。⚠ **與池中 c-183 的 Union《Guitar Workshop》1970 不是同一系列**，facts 只寫ビクター 系列。
+3. 〈Blues For Ronnie〉四段獨奏順序與聲道（R／RC／LC／L）日美兩版逐字一致；Ronnie 是誰查無來源，寫作層不得猜。
+
+## 8332　#1 補正：**錄音日期兩說——一律原壓 1980-12-14～16**；母帶遺失與卡帶加收
+
+- 原壓 2318274 與 1988 CD 6064319 notes 逐字「Recorded Live December 14~16, 1980」；**1999 NYC 3586525 notes 逐字「12/15 & 12/16 1979」**，en 維基 Steps Ahead 條目 discography 也寫「recorded in 1979」——同一個錯的兩處。facts 照原壓；**寫作層不得出現 1979**（策展層第 8024 條同）。
+- 1999 版 18805441 notes 逐字轉錄 Mainieri 的解說：「The original 2 inch masters had somehow vanished … Michael Brecker and I managed to have the complete "rough mixes" of all four sets performed on the 15th & 16th」——facts 第 10 條寫的是這一句的範圍（15、16 兩晚四個 set），不是整個錄音期。
+- ⚠ 反同構：c-195 a《Paradox》與 c-196 b《Step By Step》的研究稿已讀，本卡避開 Seventh Avenue South、改名、「四天後／現場先出」、Dorfsman／生田朗 生平、借將聲明等已用格；切角是母帶遺失、〈Young And Fine〉與 Gadd（Weather Report 1978 原錄音的鼓手）、〈Soul Eyes〉的來歷。
+
+## 8333　#7：**〈怪人二十面相〉只寫字面，不寫動機**；1990 年那張的盤名兩個維基不一致
+
+- 日文曲名取ビクター 提供給 Apple jp 的曲目中繼資料（track 1455815510 逐字「怪人二十面相」）——**原盤 CD 側標是否也印這個題本層沒看到**，facts 寫「ビクター 的日文曲目」；江戶川亂步 的怪盜另列一條 facts（ja 維基）。**寫作層可以並列兩件事實，不得寫「受亂步啟發」「概念專輯」**；盤名《Face to Face》與〈A Man With 20 Faces〉的呼應也只是字面。
+- en 維基 discography 的 1990 年 JVC 盤是《That Was Then, This Is Now》（與本盤同四人），ja 維基寫《Children of Gravity》（VICJ-37）——facts 不點名、只寫「下一張沿用同班底」。《Times Square》（1978 ECM）en 維基列在 sideman、ja 維基列成連名領銜——facts 取兩邊都成立的「Burton 的錄音裡有他」。
+- **ja 維基的現職與 2014 年外務大臣表彰屬與作品無關的後續**，不寫。c-196 a《Angelica》已用的生平格（Tiger's Baku、George Russell、替 Burton／Grusin 錄音）本卡改寫成 1974 Carnegie Hall、Buddy Rich 巡演、關西學院→1972 Berklee 首席。
+
+## 8334　#4／#5 的三處「寫作層不要替它補」
+
+1. #4〈Pensando〉〈Carioca Rap〉與作詞人 Aldir Blanc 合寫，**盤面零主唱 credit、只有五人 `Backing Vocals`**——不要寫成歌唱專輯、不要說誰唱；Pedro Paulo Castro-Neves 與 Oscar 的親屬關係查無來源（Discogs 296479 列的兄弟是 Mario／Iko／Pepe）。c-190 b／c-194 b 已用的 Castro-Neves 生平格（奠基者、1962 卡內基、Getz／Mendes、Brasil '77／'88）本卡避開。
+2. #5 錄音室名兩寫（`Sunset Studios` vs `Sunset Sound`），facts 寫「好萊塢的 Sunset 錄音室」；en 維基記成「(JVC, 1987 [1991])」，卡單 1988 不改。**Quartet West 的加入年 en 維基沒給**，寫作層不要寫成錄本盤時已是成員。
+3. #5 鼓手 Leatherbarrow 的 `groups` 有 `The Bill Holman Band`，但 c-196 b Holman 卡的鼓手是 Jeff Hamilton——不寫成同班底。
+
+## 8335　人名：**facts 裡的漢字人名 20 個，全部指到一個來源欄位；新增改判 1（小島良喜）、`pairs` 新增 0**
+
+渡辺香津美（119483 `realname`）、熊谷美広（columbia.jp 同頁「解説：熊谷美広」；c-196 b 已定案）、田口晃（915559 `realname` `田口 晃`）、高田英男（506042）、中平英治（1292850 nv 逐字）、別宮環（1029373 `realname`）、内藤忠行（851933 `realname`）、悠雅彦（840377 nv）、瀧口博達（389143 `realname`）、松下佳男（1746955，盤面 anv 逐字）、星加哲（2743562 nv）、樋口和光（4019723 `realname`）、小島良喜（1325153 `realname`）、大村憲司／森園勝敏／山岸潤史（系列頁盤面逐字漢字）、土方隆行（296238）、清水興（3207998）、東原力哉（3505246）、タイガー大越／大越徹（306609 `realname`；ja 維基 `Birth_name`）。**照寫羅馬字**：Takashi Misu、Shusaku Minami、Tetsuya Shimoda、Malta（盤面形）、Tommy Ueno（未寫進 facts）。`name-corrections.json` 四欄以上列名字掃過：零命中。
+
+## 8336　跨卡串連（**每一條只給一張卡**，鉤子層分配）
+
+- **Berklee**：#2（整張）、#5 Watts（DownBeat 獎學金）、#7 大越（首席畢業）、#2 解說者 Malta（講師）——建議只在 #2 當主軸。
+- **Gary Burton × タイガー大越**：#2 ↔ #7（1970 年代合作、1978 ECM）——只一張寫。
+- **Malta**：#2 解說、#4 中音薩克斯風；**Ernie Watts**：#4 中音、#5 領銜；**田口晃／高田英男／Takashi Misu**：#2／#4／#5／#6／#7 ＋ c-196 b Holman。
+- **渡辺香津美**：#1 客串、#6 系列首張成員——兩卡句型要錯開。
+- **NANIWA EXPRESS**（#7 節奏組）在池中 c-188…c-190 五張、**Mariah**（#7 土方隆行）在池中兩張——只寫團名。
+
+## 8337　來源實測（本工作階段）
+
+- **Discogs API**：releases 44、masters 7、artists 約 40、labels 1（`labels/2095090`），**全 200**（節流 3.1 秒）。
+- **MusicBrainz**：7 個 RG 的 release 端點，全 200（UA 照規定）。
+- **en 維基 `action=raw`**：14 頁，13 中（`Mister_Gone` 是漫畫角色，改打 `Mr._Gone_(album)`）；**ja 維基**：3 頁 3 中（MALTA、タイガー大越、怪人二十面相）——⚠ **ja 維基 `MALTA` 條目的職業欄已確認是薩克斯風手**。
+- **原廠網域**：`columbia.jp/prod-info/COCB-54244-5/` **中**（`COCB-54244/` 只回 343 位元組的空殼——⚠ 雙碟號要帶 `-5`）；`jvcmusic.co.jp/-/Discography/-/VDJ-1198.html` 未中、`/-/Artist/A001814.html` 200 但只列 2016／2019 的再發與配信，沒有本盤。
+- **Apple**：`lookup` 與 `search` 本工作階段零 403／429。
+- ⚠ **同名陷阱一則**：en 維基 `Mister_Gone` 是漫畫《The Maxx》的反派，Weather Report 那張要打 `Mr._Gone_(album)`。
+
+## 8338　`desc-tools/jp-proper-names.json`：**append 0 個**（`qa-batch research` b 組零字元標記）
+
+## 8339　兩組互掃（主線第 1987-B 條）
+
+a 組研究稿已落地（5 張）。**人名交集只有 Steve Gadd**：a 組 #3 用 Stuff、MJQ、《Modern Drummer》名人堂；本組 #1 只用他在 Weather Report〈Young And Fine〉原錄音打鼓——不同錄音、不同切角。本組 #2 的 Billy Pierce 待過 Jazz Messengers，與 a 組 #4《Dr. Jeckyle》（1985 班底）不同時期、facts 不串寫。零同曲題、零同錄音。
+
+## 8340　交件前自跑
+
+- `node qa-batch.mjs research c198` → a 5／b 7 全 full、key 與卡單完全一致、**全部通過**（初跑 1 個「半形逗號貼中文」：#6 notes 引 c-183 的掛名全字串，改以 `「」` 逐字引用，內容未改）。
+- 自量：84 條 facts 全部完整 https `src`；`hookCandidates` 每張 2 條；零千分位逗號；零獎項字樣；facts 敘述句零資料庫平台名（`src` 照寫）。
+
+## 8341　給主線的事項（本層照邊界不動那些檔）
+
+1. **卡單 #3 `curatorWhy` 的「十軌全是美國歌曲集的標準曲」「甲 8／乙 2」**建議改成「九首既有曲＋一首她自己寫的〈The Last Time For Love〉」「甲 10／乙 0」（8329）。
+2. **卡單 #2 `curatorWhy` 的「Hopkins、Pease 是 Berklee 教師群的原創」**建議刪（8330）。
+3. **卡單 #6 `curatorWhy` 的 `Yoshinobu Kojima`** 可改 `小島良喜`（8331）；`queryAlias` 不必動。
+4. **`name-corrections.json` `_entity_mislinks`** 建議登記 `Jim Kelly`（513471 澳洲 ↔ 17350720 Berklee）（8330）。
+5. 需要主線裁定的：**無**。
+
+**編號區間結算**：本段用到 **8326–8341（共 16 條），未越界（a 組研究 8296–8325）**；8342–8355 留空。
