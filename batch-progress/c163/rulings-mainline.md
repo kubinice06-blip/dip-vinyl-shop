@@ -7509,9 +7509,10 @@ c-196 a 第 7561 條指出 `hoyi-foreign-origin.json` 裡 `jp-king` 判「乙」
 5. **寫作層的留字照准**：樂評人名不進正文（`writer-base`）、美術署名的「畫封面」算署名不算封面字串（c-191《Wave》先例）、盤上 credit 職稱（「執行製作」）當專名。
 6. **研究層可以改分組**：c-197 把 Sweet Basil 系列 11 張與 MJQ／George Young 10 張分給兩位研究代理（改卡單 `group` 欄）。
 
-### 二、試聽：本線修正 16 筆全部寫入
+### 二、試聽：本線修正 14 筆全部寫入
 
-降級 11（`Have You Heard?`、c-159 `I'm All for You`、`As Time Goes By`、`Piano Play House`、`Mistral`、`Ballads`、`Farewell`、`Dr. Jeckyle`、`Berklee All-Stars`，加上 c-192 的兩筆改指裡原配錯的一筆）、改指／回撈 4（`Bossa Nova Concert`、`KJLH`、`Three Pearls`，及 c-193 的兩筆）。
+降級 9（`Have You Heard?`、c-159 `I'm All for You`、`As Time Goes By`、`Piano Play House`、`Mistral`、`Ballads`、`Farewell`、`Dr. Jeckyle`、`Berklee All-Stars`）；
+改指／回撈 5（`Bossa Nova Concert`、`KJLH`、`Three Pearls`，及 c-193 的 `Sonny Rollins in Japan`、`Circle 2`）。
 **七個修正腳本排成等待佇列、四條探測鏈依序跑——`previews.json` 零並寫。** 收批回掃 c-197／c-198 又抓到兩筆同藝人別張，**這一形仍無擋板**。
 
 ### 三、帶去本機的
