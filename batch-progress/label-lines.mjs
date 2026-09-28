@@ -182,6 +182,12 @@ export const LINES = {
   c189: { lineType: '深掘', scene: '日本爵士獨立廠牌 1983–1985' },
   c190: { lineType: '深掘', scene: '日本爵士獨立廠牌 1985–1986' },
   c191: { lineType: '深掘', scene: '日本爵士獨立廠牌 1986–1989' },
+  // 補遺線 hoyi（2026-09-28 起，店主「全開」）：§1 人工身分／兩線之間漏掉的／日本藝人的美國原盤／外國藝人的日本原盤
+  c192: { lineType: '深掘', scene: '日本爵士補遺（§1／跨線／美國原盤）' },
+  c193: { lineType: '深掘', scene: '日本製作的外國爵士 1970–1978' },
+  c194: { lineType: '深掘', scene: '日本製作的外國爵士 1978–1981' },
+  c195: { lineType: '深掘', scene: '日本製作的外國爵士 1981–1985' },
+  c196: { lineType: '深掘', scene: '日本製作的外國爵士 1985–1989' },
   // CBS/Sony・Polydor JP・Alfa・East Wind・Trio／Whynot・Denon・Nippon Crown・Kitty・Union・Frasco
   // ＋ DOMO・ALM・discomate・URC・KENWOOD（後五家 2026-09-24 才列舉）
 };
