@@ -146,5 +146,198 @@
   "why": "Hank Jones（鋼琴，Discogs 藝人頁 265629）替日本 East Wind 錄的三重奏盤，**同一家廠牌、同一位錄音師（David Baker）、同一個紐約 Vanguard Studio、比本批 #9 Ronnie Mathews 那張晚一週**：1975 年 7 月 14、15 日（原壓 `notes` 逐字），貝斯 Ron Carter、鼓 Grady Tate；製作 伊藤潔（藝人頁 406894 `realname`）與 伊藤八十八（406896 `realname`）、總製作 鯉沼利成（1020059 `realname`），封面設計 石岡瑛子（credits 逐字 `Eiko Ishioka`）。九軌逐字〈Nothin' Beats An Evil Woman〉〈Warm Blue Steam〉〈Confidence〉〈Wind Flower〉〈Minor Contention〉〈Favors〉〈As Long As I Live〉〈Oh, What A Beautiful Morning〉〈Hanky Panky〉，作曲欄逐字是 Ray Rivera、Sara Cassey（兩首）、Pete Vuolo、Hank Jones、Claus Ogerman、Harold Arlen／Ted Koehler、Rodgers／Hammerstein、Gary McFarland。**兩年後 Hank Jones、Ron Carter、Tony Williams 在同一家廠牌以 The Great Jazz Trio 之名出盤**（池中 seed 的《At the Village Vanguard》與本批 #13／#14／#17）——本盤是那條線之前、他在 East Wind 的領銜作。實掃卡池：`Hank Jones`／`ハンク・ジョーンズ`／`Hanky Panky`／`ハンキー` 逐一掃過，**池中 `Hank Jones` 只有 c-160《Kids: Live at Dizzy's Club Coca-Cola》2007（與 Joe Lovano 聯名），不是本盤；盤名 0 列**。",
   "risk": "⚠ ⚠ **身分照第 4 堆的規則**（hint 逐字「美國藝人——身分照第 4 堆的規則」）：第 4106 條四項門檻不適用；**「日本是原盤」由原壓 ℗ `East Wind Music` 與美國版晚四年兩件事成立**。⚠ ⚠ **MB 只建了 2005 年美國 CD（hint 逐字「MB 只有 2005 再發」）**：RG `first-release-date` 逐字 2005-09-13——**整個 RG 只建了再發（jp-1 簡報第一節 (a) 形），年份取 Discogs 原壓 1975**；MB 轄下 JP release 0 筆 vs Discogs 日本盤 7 筆（主線第 1965-B 條第 1 點），盤名與年份已人工回查。⚠ **盤名**：三處逐字 `Hanky Panky`——零改判；⚠ **同名撞名**：Apple 上同名的有 Tommy James & The Shondells（1966）與 The The（1995），下游引用一律帶掛名。⚠ **`live`**：錄音室，非實況。⚠ **曲風**：Discogs `genres` 逐字 `Jazz`、**`styles` 空陣列（主線第 1936-B 條：沒有資訊，不是沒有爵士）→ 回第 3762 條人工判**：演奏主體是鋼琴三重奏（Hank Jones／Ron Carter／Grady Tate，盤面逐名）、九軌是爵士樂手與編曲家的器樂曲加兩首標準曲、`genres` 為 Jazz——c-173 a 第 3716 條三肢全過，收。⚠ **第 5701 條**：〈Oh, What A Beautiful Morning〉（Rodgers／Hammerstein 音樂劇曲）在 1957 年已有 Sonny Rollins 的爵士錄音，算甲；其餘作者欄逐字都是爵士側的作曲者或編曲家，照主線第 1969-B 條 (i) 指不出「既有的非爵士曲目」就不計入乙——**乙 0/9**。⚠ **掛名**：MB 實體名 `Hank Jones`（80d610fe，Person）與 Discogs 同形；池中 c-160 的聯名串 `Joe Lovano & Hank Jones` 是另一個串（第 964 條並存）——**取 `Hank Jones`，新造分裂 0**。店面（第 254 條，只寫觀察）：Apple jp 1443917150《Hanky Panky》9 軌、℗ 1975 Universal Classics & Jazz（`releaseDate` 逐字 1978-01-01 是佔位，不採）；us 店以 `Hank Jones Hanky Panky` 查不到本盤。",
   "mbNote": "釘 release-group 6a43dfac-0fe5-43a8-a650-475e53b6c6a1（`enum/jp-2.md`「MB 有 RG 但沒掛在本廠牌實體」那一格點名的；`release-group?query=releasegroup:\"Hanky Panky\" AND artist:\"Hank Jones\"` 回的唯一一筆）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Hanky Panky」、first-release-date 2005-09-13、primary-type Album、secondary-types 空、artist-credit 單一方 `Hank Jones`（80d610fe）、tags 逐字 `jazz(1)`（count 1，照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels` 回 1 筆：2005-09-13 US Official CD 9 軌 `Test of Time Records TOT-9`（dbb92265）——**1975 年 East Wind 原壓與 1979 年 Inner City 美國版 MB 都沒有建**。Discogs：`q=Hank Jones Hanky Panky` 回 master 794209，讀 `type` 後走 `/masters/794209/versions`（9 版），原壓 credits 打 `releases/6718173`。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "pile": 1,
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "artist": "The Great Jazz Trio",
+  "album": "Milestones",
+  "year": 1978,
+  "queryAlias": "Milestones；マイルストーンズ；The Great Jazz Trio；Great Jazz Trio；ザ・グレイト・ジャズ・トリオ；Hank Jones Ron Carter Tony Williams",
+  "label": "East Wind EW-8062（JP・1978、12 吋 LP Album Stereo、7 軌——原壓；Discogs releases/2095296（master 301512 的 main_release）`labels` 欄逐字只有一筆「East Wind — EW-8062」、`companies` 逐字「Record Company: Ai Music Co., Ltd.」「Manufactured By: Nippon Phonogram Co., Ltd.」「Recorded At: Sound Ideas Studios」、`notes` 逐字「Recorded April 5, 1978 at Sound Ideas Studios, NYC」「Presented by Ai Music Co., Ltd. Tokyo」「Made in Japan」）。East Wind 在十五家之內。⚠ ⚠ **「日本是原盤」這道硬門成立**：美國版 `Inner City Records IC 6030` 晚一年（1979、`Reissue` 字樣）。⚠ **再發與版本數 11（MB、Discogs、Apple 聯集）**：master 301512 `versions` 逐筆跑完 10 版——1978 `EW-8062` LP 市售與同號 Promo、1979 US `IC 6030` LP、1980 `18PJ-1003` LP、年份空白的 `20PJ-14` LP、1986 `32JD-113` CD、2000 `UCCJ-4007` CD、2002 `UCCJ-9064` CD、2007 Worldwide Universal FLAC 檔案版、2015 `UCCJ-9189` CD；MB 0 筆；Apple jp 1443514283 不在表內 → +1＝**11**。",
+  "why": "Hank Jones（鋼琴，Discogs 藝人頁 265629）、Ron Carter（貝斯，95088）、Tony Williams（鼓，261295，credits 逐字 `Anthony Williams`）這組 The Great Jazz Trio 替日本 East Wind 錄的錄音室盤：1978 年 4 月 5 日紐約 Sound Ideas Studios（原壓 `notes` 逐字），錄音師 David Baker，製作 伊藤潔（406894 `realname`）、協同製作 守崎幸夫（1142677）、總製作 鯉沼利成（1020059 `realname`）。七軌逐字〈Milestones〉〈Lush Life〉〈Wave〉〈Eighty-One〉〈I Remember Clifford〉〈Hormone〉〈Mr. Biko〉，作曲欄逐字 Miles Davis、Billy Strayhorn、Antonio Carlos Jobim、Ron Carter、Benny Golson、Hank Jones、Tony Williams——**三位成員各帶一首、四首爵士標準曲**。實掃卡池：`The Great Jazz Trio`／`Great Jazz Trio`／`グレイト・ジャズ`／`Milestones` 逐一掃過，**池中本組合有 seed《At the Village Vanguard》（Vol.1）與 c-193 b 三張（《Love for Sale》《The Great Jazz Trio Direct From L.A.》《The Great Tokyo Meeting》）、另有 c-177／c-185／c-189 三張掛主唱或渡辺貞夫的聯名盤——都不是本盤**；盤名 `Milestones` 在池中只有 Miles Davis 1958 與 c-160 義大利聯名盤，掛名不同、錄音不同，不撞。",
+  "risk": "⚠ ⚠ **身分照第 4 堆的規則**：三位成員都是美國人，第 4106 條四項門檻不適用（主線第 2007-B 條）；**「日本是原盤」由美國 Inner City 版晚一年且標 `Reissue` 成立**。⚠ **身分走 §1 人工**：MB 查無（見 `mbAbsenceProof`），`rgMbid` 留空。⚠ **封面：走 `apple-verified-collection`，精確 collectionId 1443514283**（https://music.apple.com/jp/album/milestones/1443514283）——該條目 `artistName` 逐字「ザ・グレイト・ジャズ・トリオ」、`collectionName` 逐字「Milestones」、7 軌、`releaseDate` 1978-04-05、`copyright` 逐字「℗ 1978 Universal Classics & Jazz, a division of UNIVERSAL MUSIC LLC」，軌數與原壓相符、已人工核對；試聽預估可取得。⚠ **同名撞名**：盤名與 Miles Davis 1958《Milestones》同字，**本卡掛名不同、下游引用一律帶掛名**。⚠ **年份**：Discogs 原壓 1978、錄音 1978-04-05、Apple 1978-04-05——零改判。⚠ **盤名**：三處逐字 `Milestones`——零改判。⚠ **`live`**：錄音室，非實況。⚠ **曲風**：Discogs `genres` 逐字 `Jazz`、**`styles` 空陣列（主線第 1936-B 條：沒有資訊）→ 第 3762 條人工判**：鋼琴三重奏、七軌是爵士標準曲與成員原創、`genres` 為 Jazz——c-173 a 第 3716 條三肢全過，收。**第 5701 條甲 7／乙 0**（〈Wave〉照主線第 1962-B 條 Jobim 一系算甲）。⚠ **掛名**：照池中 seed 與 c-193 b 先例取 `The Great Jazz Trio`（MB 實體 dd6af85b 同形），新造分裂 0。",
+  "mbNote": "（§1 人工身分，本欄刻意不放任何 MBID。）MB 查無本盤：組合實體 `The Great Jazz Trio`（Group、US）名下 34 個 RG，有《At the Village Vanguard》1978、《At the Village Vanguard, Volume 2》2005、《At the Village Vanguard Again》2005、《Kindness, Joy, Love & Happiness》1978 等，**沒有《Milestones》**；鋼琴手 `Hank Jones`（Person、US）名下 106 個 RG（分兩頁 browse）也沒有。盤名＋掛名兩路、原壓與再發目錄號三路全部 count=0。Discogs：`q=Great Jazz Trio Milestones` 回 master 301512，讀 `type` 後走 `/masters/301512/versions`（10 版），原壓 credits 打 `releases/2095296`。",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=The Great Jazz Trio&limit=5 → score 100「The Great Jazz Trio」dd6af85b-f886-43ff-aab0-65a24cff7c14（Group、US）；次名 score 51 是 The Kingston Trio（不相干）",
+    "release-group?artist=dd6af85b-f886-43ff-aab0-65a24cff7c14&limit=100&offset=0 → release-group-count=34，逐筆看過無《Milestones》（有 At the Village Vanguard 1978、Volume 2 2005、Again 2005、Kindness, Joy, Love & Happiness 1978 等）",
+    "release-group?artist=80d610fe-7771-4226-aa9b-950944791698&limit=100&offset=0 與 offset=100 → release-group-count=106（Hank Jones，Person、US），兩頁都無《Milestones》",
+    "release-group?query=releasegroup:\"Milestones\" AND artist:\"Great Jazz Trio\" → count=0；release-group?query=releasegroup:\"Milestones\" AND artist:\"Hank Jones\" → count=0",
+    "release?query=catno:\"EW-8062\" → count=0；catno:\"18PJ-1003\" → count=0；catno:\"IC 6030\" → count=0（對照組：catno:\"TOT-9\" 回 2 筆、catno:\"COCB-53625\" 回 1 筆，證明欄位有效）"
+   ],
+   "checkedAt": "2026-09-28T04:40:00Z",
+   "conclusion": "MB 有 The Great Jazz Trio 與 Hank Jones 兩個實體，名下合計 140 個 RG 都沒有這張 1978 年 East Wind 錄音室盤；盤名＋掛名兩路與原壓、日本再發、美國版三個目錄號全部 count=0，並以已知存在的目錄號做過欄位對照。全部 HTTP 200（503 已退避重試），browse 走 limit=100 分頁、106 筆那一個跑滿兩頁，四種假形狀都已排除。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/2095296",
+   "https://www.discogs.com/master/301512",
+   "https://music.apple.com/jp/album/milestones/1443514283"
+  ],
+  "manualRuling": "店主 2026-09-28「全開」核可補遺線 hoyi 第 1 堆（§1 人工身分）；依主線第 2007-B 條、CURATION-BRIEF-hoyi.md 第〇節與 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉逐條填（c-192 a 策展層 2026-09-28）。外國藝人的身分照第 4 堆規則（日本原盤即可，第 4106 條四項門檻不適用）。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "pile": 1,
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "artist": "The Great Jazz Trio",
+  "album": "At the Village Vanguard Vol. 2",
+  "year": 1977,
+  "queryAlias": "At the Village Vanguard Vol. 2；At The Village Vanguard Vol.2；At the Village Vanguard, Volume 2；ヴィレッジ・ヴァンガード Vol.2；The Great Jazz Trio；ザ・グレイト・ジャズ・トリオ",
+  "label": "East Wind EW 8055（JP・1977、12 吋 LP Album、4 軌——原壓；Discogs releases/7155044（master 794173 的 main_release）`labels` 欄逐字只有一筆「East Wind — EW 8055」、`companies` 逐字「Manufactured By: Nippon Phonogram Co., Ltd.」「Recorded At: Village Vanguard」、`notes` 逐字「Recorded February 19th and 20th 1977 at The Village Vanguard, NYC」）。East Wind 在十五家之內。⚠ ⚠ **「日本是原盤」這道硬門成立**：法國 `East Wind 9126 026` 晚一年（1978）、美國 `Test Of Time TOT-6` CD 是 2005。⚠ **再發與版本數 13（MB、Discogs、Apple 聯集）**：master 794173 `versions` 逐筆跑完 12 版——1977 `EW 8055` LP 市售與同號 Promo、1978 France `9126 026` LP 與其年份空白的 Repress、1979 `15PJ-1016` LP、1980 `20PJ-10` LP、1986 `32JD-107` CD、2000 `UCCJ-4004` CD、2002 `UCCJ-9042` CD、2005 US `TOT-6` CD、2015 `UCCJ-9184` CD、2023 `UCCU-6342` CD；MB 1 筆（2005 `TOT-6`，557500c9，在表內）；Apple jp 1468068409 不在表內 → +1＝**13**。",
+  "why": "The Great Jazz Trio（Hank Jones 鋼琴、Ron Carter 貝斯、Tony Williams 鼓，credits 逐字）1977 年 2 月 19、20 日在紐約 Village Vanguard 的實況**第二集**，東京 East Wind 出品：製作 伊藤潔（406894 `realname`）、伊藤八十八（406896 `realname`），總製作 鯉沼利成（1020059 `realname`），錄音師兼協同製作 David Baker，解說 油井正一（1588219，credits `anv` 逐字「油井正一」）。四軌逐字〈Confirmation〉〈Wind Flower〉〈Nardis〉〈Lawra〉，作者欄逐字 Charlie Parker、Sara Cassey、Miles Davis、Tony Williams——**一場爵士俱樂部的長版實況（四軌都在 8–11 分鐘）**。⚠ ⚠ **池中 seed 已有同一場的第一集《At the Village Vanguard》1978（MB RG 83090b4d）**：照 c-187 第 6080 條（日野皓正《Wheel Stone》兩集各自成卡、互指）的分卷先例，**同一場演出分開發行的各集各自成卡**（錄音日相同但曲目不重疊：第一集 Discogs releases/3220131（`EW-8053`）逐字是〈Moose The Mooch〉〈Naima〉〈Favors〉〈12+12〉，本集四軌一首不重複），兩卡互指；⚠ **另有 1981 年 Eastworld《Re-Visited - The Great Jazz Trio At The Village Vanguard Volume 2》（master 3676572）是 1980 年 10 月另一次檔期的錄音（成員已換成 Eddie Gomez／Al Foster），盤名相近但不是本盤**；其餘池中本組合的卡（c-193 b 三張、c-177／c-185／c-189 聯名三張）都不是本盤。",
+  "risk": "⚠ ⚠ **與 seed《At the Village Vanguard》（Vol.1）互指**：同一檔期（1977-02-19／20）、同一廠牌、分兩張發行；**第 1948-B 條看的是錄音——本集的四軌錄音在 Vol.1 裡一首都沒有**，不是同錄音兩版，照 c-187 第 6080 條分卷先例各自成卡；下游引用兩卡一律帶 `Vol. 2` 字樣。⚠ **身分照第 4 堆的規則**：三位成員都是美國人，第 4106 條四項門檻不適用；「日本是原盤」由法國版晚一年、美國版晚 28 年成立。⚠ ⚠ **年份改判 1978 → 1977**：slice 寫 1978；Discogs 原壓 `released` 1977、錄音 1977-02、Apple ℗ 1977（`releaseDate` 1978-01-01 是佔位，不採）——**取 1977**。MB RG `first-release-date` 逐字 2005-06-21，**整個 RG 只建了 2005 年美國 CD（jp-1 簡報第一節 (a) 形），年份不採 MB**。⚠ **盤名**：Discogs 逐字 `At The Village Vanguard Vol.2`、Apple 逐字 `At The Village Vanguard Vol.2`、MB 逐字 `At the Village Vanguard, Volume 2`、slice 逐字 `At the Village Vanguard Vol. 2`——**只是大小寫與空格差，照 slice 取 `At the Village Vanguard Vol. 2`，不算盤名改判**。⚠ **`live`：實況，三肢齊備**——場地（`companies` 逐字「Recorded At: Village Vanguard」）、實況字樣（MB `secondary-types` 逐字 `Live`、盤名本身）、明確演出日（1977 年 2 月 19、20 日）。⚠ **曲風**：Discogs `genres` 逐字 `Jazz`、**`styles` 空陣列 → 第 3762 條人工判**：鋼琴三重奏、四軌是 Parker／Miles 標準曲加兩首爵士樂手原創——c-173 a 第 3716 條三肢全過，收；第 5701 條乙 0/4。⚠ **封面**：釘 RG 的一般路線；店面觀察（第 254 條）：Apple jp 1468068409《At The Village Vanguard Vol.2》4 軌、℗ 1977 Universal Classics & Jazz。⚠ **掛名**：照池中 seed 與 c-193 b 先例取 `The Great Jazz Trio`，新造分裂 0。",
+  "mbNote": "釘 release-group 5bc7ee05-ada4-43df-a81d-b77653a9f72f（`release-group?artist=dd6af85b-f886-43ff-aab0-65a24cff7c14&limit=100` 逐筆看過的 34 個 RG 裡唯一的 Volume 2）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「At the Village Vanguard, Volume 2」、first-release-date 2005-06-21、primary-type Album、secondary-types 逐字 `Live`、artist-credit 單一方 `The Great Jazz Trio`（dd6af85b）、tags 逐字 `jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels` 回 1 筆：2005-06-21 US Official CD 4 軌 `Test of Time Records TOT-6`（557500c9）——**1977 年 East Wind 原壓與 1978 年法國版 MB 都沒有建**。Vol.1 在 MB 是另一個 RG（83090b4d，1978、Live），池中 seed 已收。Discogs：master 794173 讀 `type` 後走 `/masters/794173/versions`（12 版），原壓 credits 打 `releases/7155044`。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "pile": 1,
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "artist": "大村憲司",
+  "album": "First Step",
+  "year": 1978,
+  "queryAlias": "First Step；ファースト・ステップ；大村憲司；Kenji Omura；Kenji Ohmura",
+  "label": "Toshiba Records LF-91042（JP・1978-07-05、12 吋 LP Album Stereo、5 軌——原壓；Discogs releases/4482764（master 545684 的 main_release）`labels` 欄逐字只有一筆「Toshiba Records — LF-91042」、`companies` 逐字「Manufactured By: Toshiba EMI Ltd」）。⚠ ⚠ **slice 的 `house: Alfa?` 不成立**：原壓字標是東芝 EMI 的 Toshiba Records——**東芝 EMI 屬四大廠**，照 jp-1 的四大廠門檻收。⚠ **再發與版本數 9（MB、Discogs、Apple 聯集）**：master 545684 `versions` 逐筆跑完 8 版——1978 `LF-91042` LP 原壓、1979 Express `ETJ-85019` LP 市售與同號 Promo、1979 Express `ZH25-1040`（卡帶）、1990 `TOCT-5810` CD、2003 `TOCT-10925` CD、2012 Express `QIAG-70051` CD、2023 HMV Japan `UPJY 9329` LP；**全部日本版、零海外版**；MB 0 筆；Apple jp 720313988 不在表內 → +1＝**9**。",
+  "why": "吉他手 大村憲司（Discogs 藝人頁 143934）的第一張領銜作，東芝 EMI 1978 年 7 月 5 日發行（Discogs `released` 逐字 1978-07-05）。製作與編曲 深町純（863075，也彈鍵盤），A 面三軌的節奏組是 坂本龍一（鍵盤，5087）、林立夫（鼓，642018）、浜口茂外也（打擊，119482）與 Kumito Osuyara（電貝斯，7195994——Discogs 無 `realname`／`namevariations`，照規矩保留羅馬字），B2 由 村上秀一（鼓，529935，credits `anv` 逐字「Ponta Murakami」）與 高水健司（電貝斯，143940）擔綱。五軌逐字〈Boston Flight〉〈Typhoon〉〈Better Make It Through Today〉〈Here's That Rainy Day〉〈Rhythm Road〉，作者欄逐字 Martin Willweber、Toshiaki Hayashi、Eric Clapton、Jimmy Van Heusen／Johnny Burke、Hirokuni Korekata——**〈Better Make It Through Today〉是 Clapton 1975 年的歌、由大村自己唱**，其餘四軌是器樂。實掃卡池：`大村憲司`／`Kenji Omura`／`Kenji Ohmura`／`First Step` 逐一掃過，**池中 大村憲司 有 c-191 a《Kenji Shock》與兩張多人聯名（c-185 b《Concierto De Aranjuez》、c-186 a《New York》）——都不是本盤**；盤名 0 列。",
+  "risk": "⚠ **身分走 §1 人工**：MB 查無（見 `mbAbsenceProof`），`rgMbid` 留空。⚠ **封面：走 `apple-verified-collection`，精確 collectionId 720313988**（https://music.apple.com/jp/album/first-step/720313988）——該條目 `artistName` 逐字「大村憲司」、`collectionName` 逐字「First Step」、`releaseDate` 1978-07-05、`copyright` 逐字「℗ 1978 EMI Music Japan Inc.」；**Apple 是 7 軌（1979 年 Express `ETJ-85019` 起的擴充曲序，多了〈Left-Handed Woman〉等），原壓 5 軌**——封面與原壓同一張、已人工核對，軌數差照第 254 條只寫觀察；試聽預估可取得。⚠ **年份**：Discogs 原壓 1978-07-05、Apple 1978-07-05——零改判。⚠ **盤名**：三處逐字 `First Step`——零改判。⚠ **`live`**：錄音室，非實況。⚠ **曲風**：Discogs `genres` 逐字 `Jazz`、`Rock`，`styles` 逐字 `Fusion`、`Classic Rock`——`genres` 含 Jazz、`styles` 含 Fusion（爵士成分），⑤ 兩種形狀都不成立；演奏主體是器樂融合編制（吉他＋鍵盤＋節奏組），**第 5701 條甲 4／乙 1**（乙是 Clapton 那首唱的；〈Here's That Rainy Day〉是爵士標準曲），乙未過半，收。⚠ **掛名**：照池中 c-191 a 先例取 `大村憲司`（MB 實體 b0d7d374 同形、alias `Kenji Omura`），新造分裂 0。",
+  "mbNote": "（§1 人工身分，本欄刻意不放任何 MBID。）MB 查無本盤：藝人實體 `大村憲司`（Person、JP，alias Kenji Omura／Kenji Ohmura）名下 7 個 RG（1977《Guitar Work Shop》、1978《Guitar Work Shop Vol. 2 Live》、1978《Concierto De Aranjuez》、1981《春がいっぱい》、1983《外人天国》、1987《Kenji Shock》、日期空白的《Spring is Nearly Here》），**沒有《First Step》**。盤名＋掛名兩路、原壓與 Express 再發兩個目錄號全部 count=0。Discogs：`q=Kenji Omura First Step` 回 master 545684，讀 `type` 後走 `/masters/545684/versions`（8 版），原壓 credits 打 `releases/4482764`。",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=Kenji Omura&limit=5 → score 100「大村憲司」b0d7d374-a9a6-4350-8f3c-d61c258e2035（Person、JP，alias Kenji Omura|Kenji Ohmura）；次名 score 53 是 Kenji Fujiwara（不相干）",
+    "release-group?artist=b0d7d374-a9a6-4350-8f3c-d61c258e2035&limit=100&offset=0 → release-group-count=7（Guitar Work Shop 1977、Guitar Work Shop Vol. 2 Live 1978、Concierto De Aranjuez 1978、春がいっぱい 1981、外人天国 1983、Kenji Shock 1987、Spring is Nearly Here），無本盤",
+    "release-group?query=releasegroup:\"First Step\" AND artist:\"Omura\" → count=0；release-group?query=releasegroup:\"First Step\" AND artist:\"大村憲司\" → count=0",
+    "release?query=catno:\"LF-91042\" → count=0；catno:\"ETJ-85019\" → count=0（對照組：catno:\"TOT-9\" 回 2 筆、catno:\"COCB-53625\" 回 1 筆，證明欄位有效）"
+   ],
+   "checkedAt": "2026-09-28T04:42:00Z",
+   "conclusion": "MB 有 大村憲司 的藝人實體，但名下 7 個 RG 沒有這張 1978 年東芝 EMI 首作；盤名以羅馬字與漢字掛名兩路查、原壓與 1979 年 Express 再發兩個目錄號查，全部 count=0，並以已知存在的目錄號做過欄位對照。全部 HTTP 200（503 已退避重試），browse 走 limit=100 分頁端點，四種假形狀都已排除。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/4482764",
+   "https://www.discogs.com/master/545684",
+   "https://music.apple.com/jp/album/first-step/720313988"
+  ],
+  "manualRuling": "店主 2026-09-28「全開」核可補遺線 hoyi 第 1 堆（§1 人工身分）；依主線第 2007-B 條、CURATION-BRIEF-hoyi.md 第〇節與 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉逐條填（c-192 a 策展層 2026-09-28）。廠牌由 slice 的 Alfa? 查實為東芝 EMI（Toshiba Records），屬四大廠。",
+  "coverSourceHint": "apple-verified-collection"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "pile": 1,
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "artist": "中村照夫",
+  "album": "Rising Sun",
+  "year": 1976,
+  "queryAlias": "Rising Sun；ライジング・サン；中村照夫；Teruo Nakamura；Teruo Nakamura Rising Sun Band",
+  "label": "Kitty Records MKF 1004（JP・1976、12 吋 LP Album、6 軌——原壓；Discogs releases/16104365（master 336283 的 main_release）`labels` 欄逐字只有一筆「Kitty Records — MKF 1004」、`companies` 逐字「Manufactured By: Polydor K.K.」「Recorded At: A&R Studios」「Produced For: Kitty Music Corp.」、`notes` 逐字「Recorded at A & R Studio New York City April 1, 13, 26, 1976」）。Kitty 在十五家之內。⚠ ⚠ **「日本是原盤」這道硬門成立**：同年的美國 `Polydor PD-1-6097` 版 `companies` 逐字也寫「Produced For: Kitty Music Corp.」、`notes` 逐字「Produced by Teruo Nakamura for Kitty Music Corp.」（releases/885139）——**美國版是替日本 Kitty 製作的母帶授權發行**，照 c-185 b 第 5923 條（同一人《Song Of The Birds》）先例原盤在日本。⚠ **再發與版本數 11（MB、Discogs 聯集）**：master 336283 `versions` 逐筆跑完 11 版——1976 Kitty `MKF 1004` LP 市售與 Promo、1976 US Polydor `PD-1-6097` LP 四筆（含 Promo 與歐洲 `2480 391` 並號）、US 卡帶 `CT-1-6097` 與 8 軌帶 `8T-1-6097`、1992 `KTCR-1169` CD、2009 `UCCJ-4092` CD；MB 2 筆（兩筆都是 US `PD-1-6097`，在表內）；Apple 查無專輯級條目 → **11**。",
+  "why": "紐約的日本貝斯手 中村照夫（Discogs 藝人頁 354641）替日本 Kitty 在紐約 A&R Studio 錄的第三張領銜作（1976 年 4 月 1、13、26 日，原壓 `notes` 逐字），他自己製作。陣容是美日混編：吉他與合成器 森士郎（credits 逐字 `Shiro Mori`，漢字照 `name-corrections.json`）、次中音薩克斯 Steve Grossman、小號 John Mosley、電鋼琴 Bob Neloms／Harry Whitaker／Onaje Allan Gumbs、合成器 Lonnie Smith、鼓 Art Gore 與 Keiji Kishida、高音薩克斯 Carter Jefferson。六軌逐字〈Rising Sun〉〈Cat〉〈Morning Mist ~ Steppin With Lord〉〈Red Shoes〉〈Precious One〉〈Sweet Pea & Collard Greens〉——**作者欄逐字全是團員自己（中村照夫、森士郎、Steve Grossman、Harry Whitaker）**；〈Cat〉〈Precious One〉兩軌有 Priscilla Baskerville 與 Sandy Hewitt 的人聲。日本版與美國版 A 面曲序略異、A3 多一段前奏（原壓 `notes` 逐字）。實掃卡池：`中村照夫`／`Teruo Nakamura`／`Rising Sun` 逐一掃過，**池中 中村照夫 有 seed《Unicorn》1973、c-181 a《Super Friends》1985、c-185 b《Song Of The Birds》1977——都不是本盤**；盤名 `Rising Sun` 只有 Idris Muhammad《House of the Rising Sun》（seed），不撞。",
+  "risk": "⚠ ⚠ **MB 只建了美國 Polydor 版**：RG 兩筆 release 都是 US `PD-1-6097`（1976），**日本 Kitty 原壓 MB 沒有建**；照 c-185 b 第 5923 條先例，美國版 `Produced For: Kitty Music Corp.` 使原盤歸日本，**不因 MB 只見美國版而改判為美國原盤**。⚠ ⚠ **年份改判 1978 → 1976**：slice 寫 1978；Discogs 原壓 1976、錄音 1976-04、MB RG `first-release-date` 逐字 1976——**取 1976**。⚠ **盤名**：三處逐字 `Rising Sun`——零改判。⚠ **`live`**：錄音室，非實況。⚠ **曲風**：Discogs `genres` 逐字 `Jazz`、`Funk / Soul`，`styles` 逐字 `Fusion`（爵士成分）——⑤ 兩種形狀都不成立；演奏主體是以薩克斯、小號、電鋼琴為前線的融合樂團，**第 5701 條乙 0/6**（六軌全是團員原創；兩軌人聲屬原創曲，不是「既有的非爵士曲目」）。⚠ **掛名**：照池中 seed／c-181／c-185 先例取 `中村照夫`（MB 實體 05d7c76c 同形），新造分裂 0。⚠ **封面**：釘 RG 的一般路線；Apple jp／us 查無本盤專輯級條目（第 254 條，只寫觀察）。",
+  "mbNote": "釘 release-group f72e2ebb-7f85-4b02-a5cc-78d52ccf29e1（藝人實體 `中村照夫`（05d7c76c）名下逐筆 browse 找到的那一筆）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Rising Sun」、first-release-date 1976、primary-type Album、secondary-types 空、artist-credit 單一方 `中村照夫`（05d7c76c）、tags 逐字 `electronic(1)`、`jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels` 回 2 筆：1976 US Promotion Vinyl 6 軌 `Polydor PD-1-6097`（245752fb）與 1976 US Official 12\" Vinyl 6 軌 `Polydor PD-1-6097`（81a3ac79）——**日本 Kitty 原壓 MB 沒有建**。Discogs：master 336283 讀 `type` 後走 `/masters/336283/versions`（11 版），原壓 credits 打 `releases/16104365`，美國版授權字樣打 `releases/885139`。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "pile": 1,
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "artist": "The Great Jazz Trio",
+  "album": "Kindness, Joy, Love & Happiness",
+  "year": 1977,
+  "queryAlias": "Kindness, Joy, Love & Happiness；Kindness Joy Love and Happiness；KJLH；Kjlh；The Great Jazz Trio；ザ・グレイト・ジャズ・トリオ",
+  "label": "East Wind EW-8056（JP・1977、12 吋 LP Album Stereo、7 軌——原壓；Discogs releases/4773501（master 769608 的 main_release）`labels` 欄逐字只有一筆「East Wind — EW-8056」、`companies` 逐字「Manufactured By: Nippon Phonogram Co., Ltd.」「Recorded At: Warner Bros. Recording Studios」、`notes` 逐字「Recorded October 3, 4, 1977 at Warner Brothers Recording Studios, CA.」）。East Wind 在十五家之內。⚠ ⚠ **「日本是原盤」這道硬門成立**：美國 `Inner City Records IC 6023` 晚一年（1978）。⚠ **再發與版本數 11（MB、Discogs、Apple 聯集）**：master 769608 `versions` 逐筆跑完 10 版——1977 `EW-8056` LP 原壓、1978 US `IC 6023` LP 兩筆、年份空白的 `18PJ-1001` 與 `20PJ-13` LP、1986 `32JD-108` CD、1990 `EJD-3055` CD、2000 `UCCJ-4005` CD、2002 `UCCJ-9062` CD、2015 `UCCJ-9185` CD；MB 1 筆（1978 US `IC 6023`，0a358c6f，在表內）；Apple jp 1443515718 不在表內 → +1＝**11**。",
+  "why": "The Great Jazz Trio（Hank Jones 鋼琴、Ron Carter 貝斯、Tony Williams 鼓，credits 逐字）替東京 East Wind 在加州錄的錄音室盤：1977 年 10 月 3、4 日 Warner Bros. Recording Studios（原壓 `notes` 逐字），錄音 Lee Herschberg，製作 伊藤潔（406894 `realname`）、伊藤八十八（406896 `realname`），總製作 鯉沼利成（1020059 `realname`），解說 佐藤秀樹（546126，credits `anv` 逐字「佐藤秀樹」）。七軌逐字〈Freedom Jazz Dance〉〈Doom〉〈Old Folks〉〈Ah Qui〉〈Mr. P.C.〉〈All Blues〉〈A Child Is Born〉，作者欄逐字 Eddie Harris、Ron Carter、Tony Williams、Hank Jones、John Coltrane、Miles Davis、Thad Jones——**成員原創三首加四首爵士標準曲**。實掃卡池：`The Great Jazz Trio`／`グレイト・ジャズ`／`Kindness`／`KJLH` 逐一掃過，池中本組合的 seed《At the Village Vanguard》、c-193 b 三張與三張聯名盤都不是本盤；盤名只撞到 Caribou《The Milk of Human Kindness》（詞元不同），不撞。",
+  "risk": "⚠ **身分照第 4 堆的規則**：三位成員都是美國人，第 4106 條四項門檻不適用；「日本是原盤」由美國版晚一年成立。⚠ ⚠ **MB 只建了美國 Inner City 版**（hint 逐字「MB 有 RG 但沒掛在 East Wind 實體——直接釘 rgMbid」）：RG 唯一 release 是 1978 US `IC 6023`；**年份不採 MB 的 1978**。⚠ ⚠ **年份改判 1978 → 1977**：slice 寫 1978；Discogs 原壓 `released` 1977、錄音 1977-10、Apple ℗ 1977——**取 1977**（錄音在 10 月、同年發行；Apple `releaseDate` 2002-12-23 是 CD 再發日，不採）。⚠ **盤名**：Discogs 與 MB 逐字 `Kindness, Joy, Love & Happiness`；**Apple 的 `collectionName` 逐字是縮寫「Kjlh」**（第 254 條，只寫觀察）——盤名照原壓，零改判。⚠ **`live`**：錄音室，非實況。⚠ **曲風**：Discogs `genres` 逐字 `Jazz`、`styles` 逐字 `Bop`——①②③④⑤ 全不成立；第 5701 條甲 7／乙 0。⚠ **封面**：釘 RG 的一般路線；Apple jp 1443515718 7 軌、℗ 1977 Universal Classics & Jazz。⚠ **掛名**：照池中 seed 與 c-193 b 先例取 `The Great Jazz Trio`，新造分裂 0。",
+  "mbNote": "釘 release-group 6ccf6329-383a-49e5-ac1b-cb2d9269baae（`enum/jp-2.md`「MB 有 RG 但沒掛在 East Wind 實體」那一格點名的；也在 `release-group?artist=dd6af85b-f886-43ff-aab0-65a24cff7c14&limit=100` 的 34 筆裡）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Kindness, Joy, Love & Happiness」、first-release-date 1978、primary-type Album、secondary-types 空、artist-credit 單一方 `The Great Jazz Trio`（dd6af85b）、tags 空。`release?release-group=<id>&inc=media+labels` 回 1 筆：1978 US Official 12\" Vinyl 7 軌 `Inner City Records IC 6023`（0a358c6f）——**1977 年 East Wind 原壓 MB 沒有建**。Discogs：master 769608 讀 `type` 後走 `/masters/769608/versions`（10 版），原壓 credits 打 `releases/4773501`。"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "reissuedBy": "",
+  "g": "a",
+  "pile": 1,
+  "selfTitled": false,
+  "genres": [
+   "jazz"
+  ],
+  "artist": "山下洋輔トリオ",
+  "album": "砂山",
+  "year": 1978,
+  "queryAlias": "砂山；Sunayama；すなやま；山下洋輔トリオ；山下洋輔；Yosuke Yamashita Trio；Yosuke Yamashita",
+  "label": "Frasco FS-7025（JP・1978、12 吋 LP Album Stereo、3 軌——原壓；Discogs releases/13052486（master 769981 的 main_release）`labels` 欄逐字只有一筆「Frasco — FS-7025」、`companies` 逐字「Manufactured By: Nippon Phonogram Co., Ltd.」「Recorded At: Victor Studio」、`notes` 逐字「Recorded June 21, 22. 1978」「Blue Frasco Obi.」）。Frasco 在十五家之內。⚠ **再發與版本數 3（MB、Discogs 聯集）**：master 769981 `versions` 逐筆跑完 3 版——1978 `FS-7025` LP 原壓、1984 `18PJ-1021` LP、2009 `UCCJ-9112` CD，全部日本版；MB 0 筆；Apple jp／us 查無數位版——**聯集 3**。",
+  "why": "山下洋輔トリオ（Discogs 藝人頁 712132，`anv` 逐字「山下洋輔トリオ」）1978 年 6 月 21、22 日在 Victor Studio 錄的 Frasco 盤（原壓 `notes` 逐字），**整張拿 中山晋平 的三首童謡當即興素材**：A 面一整面的〈砂山〉（北原白秋詞）、B 面〈うさぎのダンス〉（副題逐字「Dedicated To Pepi」）與〈あの町この町〉（兩首 野口雨情詞）。三重奏是 山下洋輔（鋼琴，137203）、坂田明（中音薩克斯，211593）、小山彰太（鼓，873991，credits `anv` 逐字「Shohta Koyama」），外加 清水靖晃（次中音薩克斯）、向井滋春（長號）、岡野等（小號）、中沢健次（小號）與 B1 的 杉本喜代志（吉他）；製作 岩神六平（2045192），錄音 David Baker，解說 油井正一。實掃卡池：`山下洋輔`／`山下洋輔トリオ`／`Yosuke Yamashita`／`砂山`／`Sunayama` 逐一掃過，**池中 山下洋輔トリオ 有 seed 五張（Clay、Frozen Days、Chiasma、Arashi、Umbrella Dance）與 c-59／c-184／c-185／c-187 各一張——都不是本盤**；盤名 0 列。",
+  "risk": "⚠ ⚠ **曲風與第 5701 條——本卡站在主線第 1978-B 條上**：三首都是既有的非爵士曲目（大正至昭和初的童謡），**照字面乙 3/3、過半**；**但主線第 1978-B 條第 1 點替第 5701 條的甲補了一格「由本盤的演奏者自己持續發展成器樂即興曲目的既有曲，且有前作錄音可證」，並逐字寫「§1 候選的《砂山》1978 因此都留在門內」**——照先例收。⚠ **邊界照實寫**：本組實查只找到 山下洋輔トリオ 在 1977 年《Arashi》錄過〈月の砂漠〉（同一種童謡素材的前例），**沒有找到這三首在 1978 年以前的逐曲錄音**；**本盤本身就是那三首的首錄——「前作錄音可證」那半句對本盤只能以同系列前例（〈月の砂漠〉1977）間接成立**；本卡收件的依據是第 1978-B 條的逐字點名，不是自己的逐曲舉證（**建議主線覆核，可逆**）。Discogs `genres` 逐字 `Jazz`、`styles` 逐字 `Free Jazz`——⑤ 兩種形狀都不成立；演奏主體是爵士編制（鋼琴三重奏＋管樂），c-173 a 第 3716 條前兩肢也成立。⚠ **身分走 §1 人工**：MB 查無（見 `mbAbsenceProof`），`rgMbid` 留空。⚠ **封面：Apple jp／us 查無本盤 → `manual-scan`**（c-87 先例）；原壓封面逐字是 蔦谷喜一 的插畫（credits `Illustration [Cover]: Kiichi Tsutaya`）與北原白秋的詞。⚠ ⚠ **年份改判 1979 → 1978**：slice 寫 1979；Discogs 原壓 `released` 1978、錄音 1978-06——**取 1978**（c-187 第 6490 條提到的「1978 年那張前作」即本盤；同年的《Umbrella Dance》是另一張、池中已有）。⚠ **盤名**：Discogs 逐字 `Sunayama = 砂山`（羅馬字＝漢字的並列形），slice 逐字 `砂山`——**取盤面漢字 `砂山`，羅馬字進 `queryAlias`，不算改判**。⚠ **`live`**：錄音室，非實況。⚠ **掛名**：Discogs 主藝人逐字 `Yosuke Yamashita Trio`（`anv` 山下洋輔トリオ），照池中 seed／c-121／c-187 先例取 `山下洋輔トリオ`，新造分裂 0。",
+  "mbNote": "（§1 人工身分，本欄刻意不放任何 MBID。）MB 查無本盤：組合實體 `山下洋輔トリオ`（Group，alias Yosuke Yamashita Trio）名下 17 個 RG，1978 年只有《Umbrella Dance》、1979 年只有《Hot Menu》（Live），**沒有《砂山》**；個人實體 `山下洋輔`（Person、JP）名下 41 個 RG 也沒有。盤名漢字與羅馬字兩路、原壓與 2009 年 CD 兩個目錄號全部 count=0。Discogs：`q=Yamashita Sunayama` 回 master 769981，讀 `type` 後走 `/masters/769981/versions`（3 版），原壓 credits 打 `releases/13052486`。",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist?query=Yosuke Yamashita Trio&limit=5 → score 100「山下洋輔トリオ」404e6f08-fc84-4b89-86c6-64a72d57d018（Group，alias Yosuke Yamashita Trio）；score 51「山下洋輔」55a95705-8d03-4478-b57c-de976206f3cf（Person、JP，jazz pianist）",
+    "release-group?artist=404e6f08-fc84-4b89-86c6-64a72d57d018&limit=100&offset=0 → release-group-count=17，1978 年只有 Umbrella Dance、1979 年只有 Hot Menu（Live），無本盤",
+    "release-group?artist=55a95705-8d03-4478-b57c-de976206f3cf&limit=100&offset=0 → release-group-count=41，無本盤",
+    "release-group?query=releasegroup:\"砂山\" → count=0；release-group?query=releasegroup:\"Sunayama\" → count=0",
+    "release?query=catno:\"FS-7025\" → count=0；catno:\"UCCJ-9112\" → count=0（對照組：catno:\"TOT-9\" 回 2 筆、catno:\"COCB-53625\" 回 1 筆，證明欄位有效）"
+   ],
+   "checkedAt": "2026-09-28T04:44:00Z",
+   "conclusion": "MB 有 山下洋輔トリオ 與 山下洋輔 兩個實體，名下合計 58 個 RG 都沒有這張 1978 年 Frasco 盤；盤名以漢字與羅馬字兩路查、原壓與 2009 年 CD 兩個目錄號查，全部 count=0，並以已知存在的目錄號做過欄位對照。全部 HTTP 200（503 已退避重試），browse 走 limit=100 分頁端點，四種假形狀都已排除。",
+   "checkedFalseShapes": [
+    "503",
+    "403",
+    "browse 25 筆上限",
+    "回了不相干的實體"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/release/13052486",
+   "https://www.discogs.com/master/769981"
+  ],
+  "manualRuling": "店主 2026-09-28「全開」核可補遺線 hoyi 第 1 堆（§1 人工身分）；依主線第 2007-B 條、CURATION-BRIEF-hoyi.md 第〇節與 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉逐條填（c-192 a 策展層 2026-09-28）。曲目資格依主線第 1978-B 條對《砂山》的點名收件（邊界寫在 risk）。",
+  "coverSourceHint": "manual-scan"
  }
 ]

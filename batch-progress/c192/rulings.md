@@ -370,3 +370,299 @@
 - **修正後的結算**：**收 12 ＋ 退 5 ＝ 17**；**逐堆：第 1 堆 收 2 退 0｜第 2 堆 收 4 退 0｜第 3 堆 收 3 退 0｜第 4 堆 收 3 退 5**；退件條款分佈改為：授權壓片 4、③ 款 1（第 7266 條表中 #1 那一列與「原壓不在門內 1 筆」作廢）。
 - **登記簿**：第 7295 條「登記給主線的候選」裡 `Next Wave 25PJ-1004` 那一格作廢（已收）；**建議主線列舉一次 `Next Wave` 的目錄（`labels/262306/releases` 28 筆）給後續批次。**
 - `node batch-progress/c192/chk-prop.mjs b` 重跑結果見交件回報；**零 git 操作。**
+
+
+---
+
+
+# a 組（18 張｜全數第 1 堆（§1 候選）；1954–1988 年段）｜策展層｜2026-09-28
+
+批次 c-192｜a 組 18 張｜輸入 `batch-progress/c192/slice.json` 的 `g === "a"`｜輸出 `batch-progress/c192/prop-a.json`（每筆帶 `pile: 1`）
+判準照 `CURATION-BRIEF-hoyi.md` 全檔 → `CURATION-BRIEF-jp2.md` 全檔 → `CURATION-BRIEF-jp1.md` 全檔 → `CURATION-BRIEF-c67plus.md` 附錄（§1 人工身分舉證要件）→ 固定規格鏈，
+＋ 主線第 1934-B…2007-B 條 ＋ c-188…c-191 的策展段 ＋ c-173 a 第 3716 條 ＋ `c87/prop` 的 §1 人工與 `manual-scan` 先例 ＋ `c191/prop-a.json` 的欄位密度。⚠ **引用裁定一律寫成「c-18X 第 NNNN 條」**。
+**本組編號區間 7236–7265。** ⚠ 本段接在 b 組段落（7266–7295 與其附記）之後 append，b 組段落一字未動。
+
+---
+
+## 7236　（**總表**）：**18 張＝收 11 ／ 退 7**；逐堆：**第 1 堆 收 11 退 7**（本組只有第 1 堆）
+
+| # | 掛名 —《盤名》（slice） | 年（slice → 卡） | 處置 | 身分 | 依據（條號） |
+|---:|---|---|---|---|---|
+| 1 | 岡野等 —《Double Image》 | — | **退** | — | **撞池**：seed ＋ c-87 `Hitoshi Okano《Double Image》1982`（7237） |
+| 2 | 鈴木良雄 —《Matsuri》 | 空白 → **1979** | 收 | §1 人工（`manual-scan`） | 原壓 CBS/Sony `25AP 1611`；`house: Trio?` 錯；ja 維基 1974 不採（7257） |
+| 3 | 鈴木宏昌 —《Rock Joint Biwa》 | — | **退** | — | **撞池**：seed ＋ c-131 `鈴木宏昌トリオ《ロック・ジョイント琵琶〜組曲 ふることふみ》1972`（rg 09b2e416）（7238） |
+| 4 | 猪俣猛 —《Sounds of Sound L.T.D.》 | — | **退** | — | **撞池**：seed ＋ c-131 `猪俣猛とサウンド・リミテッド《サウンド・オブ・サウンド・リミテッド》1970`（rg 73fa7c14）（7239） |
+| 5 | 板橋文夫 —《Nature》 | 空白 → **1979** | 收 | 釘 2e161629 | 原壓 `Better Days YX-7593-ND`（コロムビア）；`house: Denon` 錯 |
+| 6 | 渡辺貞夫 —《Bossa Nova Concert》 | 1969 → **1967** | 收（**邊界：RG**） | 釘 c428c830 | 原壓 `Takt JAZZ-9`（四大廠コロムビア 格）；`house: CBS/Sony?` 錯；`live`（7254） |
+| 7 | 日野皓正 —《Journey to Air》 | — | **退** | — | **原壓不在門內**：`Love Records`（`parent_label` Canyon Records）（7240） |
+| 8 | 日野皓正 —《Taro's Mood》 | — | **退** | — | **原盤在外國**：德國 `Enja 2028`（1973），日本 Victor 是授權（7241） |
+| 9 | Ronnie Mathews —《Trip to the Orient》 | 1975 | 收 | §1 人工（Apple） | East Wind `EW-8018`；版本表 5/5 全日本（7250） |
+| 10 | Hank Jones —《Hanky Panky》 | 1975 | 收 | 釘 6a43dfac | East Wind `EW-8021`；℗ East Wind Music、美國版晚四年（7250） |
+| 11 | 山下洋輔 —《Banslikana》 | — | **退** | — | **撞池**（seed ＋ c-121《バンスリカーナ》rg 17ac6c25）＋ **原盤在外國**（德國 `Enja 2080`）（7242） |
+| 12 | 山下洋輔 —《Inner Space》 | — | **退** | — | **原盤在外國**：德國 `Enja 3001`（1977）（7243） |
+| 13 | The Great Jazz Trio —《Milestones》 | 1978 | 收 | §1 人工（Apple） | East Wind `EW-8062`；美國版晚一年 |
+| 14 | The Great Jazz Trio —《At the Village Vanguard Vol. 2》 | 1978 → **1977** | 收 | 釘 5bc7ee05 | East Wind `EW 8055`；`live`；與 seed Vol.1 分卷互指（7256） |
+| 15 | 大村憲司 —《First Step》 | 1978 | 收 | §1 人工（Apple） | 原壓 `Toshiba Records LF-91042`（東芝 EMI，四大廠）；`house: Alfa?` 錯 |
+| 16 | 中村照夫 —《Rising Sun》 | 1978 → **1976** | 收 | 釘 f72e2ebb | Kitty `MKF 1004`；美國 Polydor 版 `Produced For: Kitty Music Corp.`（7250） |
+| 17 | The Great Jazz Trio —《Kindness, Joy, Love & Happiness》 | 1978 → **1977** | 收 | 釘 6ccf6329 | East Wind `EW-8056`；MB 只建美國 Inner City 版 |
+| 18 | 山下洋輔トリオ —《砂山》 | 1979 → **1978** | 收（**邊界：曲目**） | §1 人工（`manual-scan`） | Frasco `FS-7025`；三首 中山晋平 童謡，站在主線第 1978-B 條上（7255） |
+
+**退件的條款分佈**（七筆；#11 兩條並列）：**撞池 4 筆**（#1／#3／#4／#11）、**原盤在外國（日本版是授權）3 筆**（#8／#11／#12，三筆全是德國 Enja）、**原壓不在四大廠與十五家 1 筆**（#7）；曲風 0、合輯 0、第 5701 條乙過半 0、演奏主體 0。
+
+⚠ **橫向數字**：**§1 人工身分 5 張**（#2／#9／#13／#15／#18；封面 Apple 精確 collectionId 3、`manual-scan` 2），**釘 rgMbid 6 張**（#5／#6／#10／#14／#16／#17）；**年份改判 5 筆**（#6 1969→1967、#14／#17 1978→1977、#16 1978→1976、#18 1979→1978）＋ **slice 空白補填 2 筆**（#2、#5 皆 1979）；**盤名真改判 0 筆**（#14 只是大小寫與空格、#18 取盤面漢字）；**`live` 標 `true` 2 筆**（#6、#14，三肢逐肢成立；slice 無 `live` 欄，漏標反向 0）；**`house` 與原壓不符 10 筆：收件 4 筆（#2 Trio?→CBS/Sony、#5 Denon→Better Days、#6 CBS/Sony?→Takt、#15 Alfa?→Toshiba）、退件 6 筆（#3／#4 Nippon Crown?→RCA／Takt、#7 Polydor→Love／Canyon、#8 CBS/Sony?→Enja（日本授權版是 Victor）、#11／#12 Frasco→Enja）**——詳 7249。
+
+⚠ ⚠ **本組最重要的四件**：
+1. ⚠ ⚠ **`enum/jp-2.md` §1 候選清單的「MB 完全查無 RG」18 筆裡只有 5 筆屬實**（7244）：其餘 13 筆 MB 其實有 RG（6 筆釘了收、4 筆撞池、3 筆原盤在外國）。**「§1 候選」這個標籤不能當身分結論。**
+2. ⚠ ⚠ **`poolRecheck` 漏了 #1**（7253）：slice 寫「池中查無此藝人」，但池中 seed 與 c-87 都有 `Hitoshi Okano《Double Image》`——**只試了漢字形 `岡野等`**。
+3. ⚠ ⚠ **`hint` 的廠牌 18 筆錯 10 筆**（7249）：錯得最危險的是把德國 Enja 原盤寫成 Frasco／CBS/Sony（#8／#11／#12）——照 hint 收就會收進授權壓片。
+4. ⚠ **兩張邊界收件請主線覆核**：#6 釘的 MB RG 其實是 18 軌 `Compilation` CD（7254）；#18 的曲目資格靠主線第 1978-B 條的逐字點名（7255）。
+
+---
+
+## 退件的裁定（7237–7243）
+
+## 7237　⚠ ⚠ 退：`岡野等 —《Double Image》`（第 1 堆；slice 無 rgMbid）——**撞池：池中 seed 與 c-87 已有 `Hitoshi Okano《Double Image》`（1982、Union Jazz `ULP-5502`、Discogs master 1550797）**
+
+- **同一張碟**：池中那張就是 c-87 以 §1 人工身分收的同一個 Union 原壓（c-87 prop 的 `manual-scan` 先例正是這一張）；掛名差別只在羅馬字 vs 漢字。
+- ⚠ **slice 的 `poolRecheck` 逐字「池中查無此藝人」是錯的**——六道只拿 `岡野等` 去比，池中那一列掛的是 `Hitoshi Okano`（7253）。
+- **不收、不改掛名**：池中既有的 `Hitoshi Okano` 是否要收斂成 `岡野等`，是本機的事（照主線第 2003-B 條不可在雲端全域改）。
+- 派工信第二節「同批其他 Union Jazz 盤一併看」：本組其他 17 筆無 Union 盤；b 組 slice 也沒有。
+
+## 7238　退：`鈴木宏昌 —《Rock Joint Biwa》`（第 1 堆）——**撞池：seed ＋ c-131 `鈴木宏昌トリオ《ロック・ジョイント琵琶〜組曲 ふることふみ》1972`（rg 09b2e416，RCA）**
+
+- **slice 標「MB 完全查無 RG」不成立**：MB 有 rg 09b2e416，池中 c-131 已釘、seed 以和文題上架。
+- 盤名羅馬字形 `Rock Joint Biwa` 與池中和文題一字不重疊，所以六道沒亮；**掛名 `鈴木宏昌` vs 池中 `鈴木宏昌トリオ`** 又差一層。
+- slice `house: Nippon Crown?` 也不成立（原壓 RCA）——不影響退件。
+- ⚠ 同一人池中另有 seed ＋ c-133《Rock Joint Cither - Silk Road》1973（rg 9198e151），**是另一張碟**，不要把它當成本筆的撞池對象。
+
+## 7239　退：`猪俣猛 —《Sounds of Sound L.T.D.》`（第 1 堆）——**撞池：seed ＋ c-131 `猪俣猛とサウンド・リミテッド《サウンド・オブ・サウンド・リミテッド》1970`（rg 73fa7c14，Takt `HS-7001-CT`）**
+
+- **slice 標「MB 完全查無 RG」不成立**：MB 的 RG 掛在團名實體（397912f7）下、不在 `猪俣猛` 個人實體下——**以個人名 browse 當然查不到**（假形狀「回了不相干的實體」的反面：該查的實體沒查）。
+- slice `house: Nippon Crown?` 不成立（原壓 Takt）——不影響退件。
+
+## 7240　⚠ 退：`日野皓正 —《Journey to Air》`（第 1 堆；MB rg 9780ab16）——**原壓不在四大廠、不在十五家：`Love Records`，`labels/909162` 的 `parent_label` 是 Canyon Records**
+
+- **slice 的 `Polydor（Love）?` 不成立**：Discogs 原壓（1970）`labels` 欄是 Love Records，母廠 Canyon Records（フジサンケイ 系，今 ポニーキャニオン），**不是 Polydor、也不是十五家任何一家的姊妹字標**。
+- **「MB 完全查無 RG」也不成立**：rg 9780ab16。
+- ⚠ **與主線第 2008-B 條（`Next Wave` 算門內）不同形**：Next Wave 與 East Wind／Frasco 同屬日本フォノグラム；**Love／Canyon 與十五家無同母關係**，照簡報字面退。
+- **登記給主線**：若日後放寬到 Canyon 系，從這裡撈回（7265）。
+
+## 7241　⚠ ⚠ 退：`日野皓正 —《Taro's Mood》`（第 1 堆；MB rg 32eeb2fb）——**原盤在外國：德國 `Enja 2028`（1973、慕尼黑 Domicile 實況），日本 `Victor SMJ-6032`（1974）是授權壓片**
+
+- **slice 的 `CBS/Sony?` 不成立**；日本版是 Victor（四大廠）但**晚一年、是授權**——照第 4 堆「看最早那一版」的同一條硬門（領銜是日本人，但原盤發行方是德國廠牌），退。
+- Discogs master 364656；MB 只有 2006 年再發（slice 所言屬實），但那不改變原盤國別。
+
+## 7242　⚠ ⚠ 退：`山下洋輔 —《Banslikana》`（第 1 堆）——**撞池（seed ＋ c-121《バンスリカーナ》，rg 17ac6c25）＋ 原盤在外國（德國 `Enja 2080`，1976）**
+
+- **這一格 c-185 第 5900 條早已劃掉**（主線記錄逐字「不是 MB 查無、池中已有、原盤是德國 enja、不是 Frasco」），`enum/jp-2.md` §1 候選清單卻仍列著——**本層照舊退**。
+- slice `house: Frasco` 不成立。
+
+## 7243　⚠ ⚠ 退：`山下洋輔 —《Inner Space》`（第 1 堆）——**原盤在外國：德國 `Enja 3001`（1977），與 Adelhard Roidinger 的二重奏**
+
+- Discogs master 484940；**slice 的 `Frasco` 不成立**（與 #11 同一條 Enja 人脈，c-185 第 5900 條已點出製作人 Horst Weber）。
+- **「MB 完全查無 RG」不成立**：MB 有兩個 RG——e049da66（掛在 `山下洋輔トリオ` 實體下，掛名本身就錯）與 4c40cd77（1992 年 CD）。
+- 池中 0 列；**不撞池，退在原盤國別**。
+
+---
+
+## 收件與橫向的裁定（7244–7265）
+
+## 7244　⚠ ⚠ §1 身分：**18 筆「MB 完全查無 RG」／「MB 只有再發」逐筆重查——真查無 5 筆（走 §1 人工）、MB 有 RG 13 筆**
+
+| 分類 | 筆數 | 哪幾筆 |
+|---|---:|---|
+| 真查無 → §1 人工收 | 5 | #2 Matsuri、#9 Trip to the Orient、#13 Milestones、#15 First Step、#18 砂山 |
+| MB 有 RG → 釘 rgMbid 收 | 6 | #5（2010 CD）、#6（1989 CD）、#10（2005 CD）、#14（2005 CD）、#16（美國版）、#17（美國版） |
+| MB 有 RG → 撞池退 | 4 | #1（c-87 無 MBID，但池中有）、#3、#4、#11 |
+| MB 有 RG → 原盤在外國／門外退 | 3 | #7、#8、#12 |
+
+- **§1 人工 5 筆全套照 `CURATION-BRIEF-c67plus.md` 附錄**：`identitySource: "manual"`、`rgMbid` 不填、`mbNote` 零 MBID、`mbAbsenceProof` 每筆 4–5 條實際查詢（藝人搜尋 → 逐實體 `limit=100` 分頁 browse → 盤名＋掛名 → 原壓目錄號）＋ `checkedFalseShapes` 四形、`manualEvidenceUrls` 每筆 2–3 個 HTTPS（Discogs release＋master［#2 無 master］＋Apple）、`manualRuling`、`coverSourceHint`。
+- ⚠ **目錄號欄位的對照組**：MB `catno:` 搜尋先以已知存在的 `COCB-53625`（#5 的 2010 CD，回 1 筆）與 `TOT-9`（#10 的 2005 CD，回 2 筆）做正控制，**證明 count=0 是真的零，不是欄位無效**。
+- ⚠ **釘 6 筆的 `mbNote` 第一個 UUID 就是 RG**（`make-cards-generic.mjs` 取第一個 MBID）；6/6 以程式抽驗過。
+
+## 7245　年份：**收件 11 筆逐筆回查原壓，改判 5 筆、空白補填 2 筆**；退件 7 筆不改
+
+| # | slice | 卡 | 依據 |
+|---:|---|---|---|
+| 2 | 空白（enum 寫 1980、ja 維基 1974） | **1979** | 原壓 `released` 1979 ＋ `notes` 錄音 1979（7257） |
+| 5 | 空白 | **1979** | 原壓 1979 ＋ ℗「Ⓟ 1979. 6」＋ Apple 1979-06-25；MB 2010 是再發 |
+| 6 | 1969 | **1967** | 原壓 1967 ＋ 錄音 1967-07-04 ＋ Apple ℗ 1967 |
+| 14 | 1978 | **1977** | 原壓 1977 ＋ 錄音 1977-02 ＋ Apple ℗ 1977；MB 2005 是再發 |
+| 16 | 1978 | **1976** | 原壓 1976 ＋ 錄音 1976-04 ＋ MB 1976 |
+| 17 | 1978 | **1977** | 原壓 1977 ＋ 錄音 1977-10 ＋ Apple ℗ 1977；MB 1978 是美國版 |
+| 18 | 1979 | **1978** | 原壓 1978 ＋ 錄音 1978-06（c-187 第 6490 條提過的「1978 年那張」即本盤） |
+
+- 零改判 4 筆：#9／#10 1975、#13／#15 1978。
+- ⚠ **slice 的年份欄 1978 集中出現 5 次，其中 3 次錯**（#14／#16／#17 都是美國版或再發的年份）——**§1 候選清單的年份多半取自 MB 或 Inner City／Polydor 美國版。**
+
+## 7246　盤名：**真改判 0 筆**；等價形取邊 2
+
+- #14：Discogs／Apple `At The Village Vanguard Vol.2`、MB `At the Village Vanguard, Volume 2`、slice `At the Village Vanguard Vol. 2`——大小寫與空格差，**照 slice**。
+- #18：Discogs `Sunayama = 砂山`（羅馬字＝漢字並列），**取盤面漢字 `砂山`**，羅馬字進 `queryAlias`。
+- #17：Apple `collectionName` 逐字是縮寫 `Kjlh`——只寫觀察，盤名照原壓全題。
+- #2：`Matsuri` vs ja 維基 `MATSURI`——大小寫不在第 1858-B 條射程。
+
+## 7247　`live`：**2 筆 `true`（#6、#14），三肢逐肢成立；其餘 9 筆錄音室**
+
+- #6：場館 `Recorded At: Koseinenkin Kaikan`／字樣 `Recorded live`＋盤名 `Concert`／日期 1967-07-04。
+- #14：場館 `Recorded At: Village Vanguard`／字樣 MB `secondary-types` `Live`＋盤名／日期 1977-02-19、20。
+- slice 本組無 `live` 欄；反向漏標 0（其餘 9 筆的 `notes` 都寫錄音室）。
+
+## 7248　⚠ 再發版本數：**收件 11 筆逐筆跑完 `versions`；10 筆有 master、1 筆（#2）只寫「資料庫裡只有這一筆」；取 MB、Discogs 與 Apple 的聯集**
+
+| # | master | Discogs | MB（在表內／表外） | Apple | 聯集 |
+|---:|---:|---:|---|---|---:|
+| 2 | —（`master_id` 0） | 1 | 0 | 無 | **1** |
+| 5 | 700427 | 4 | 1／0（另 1 筆 Pseudo-Release 不計） | +1 | **5** |
+| 6 | 949793 | 7 | 1／0 | +1 | **8** |
+| 9 | 794206 | 5 | 0 | +1 | **6** |
+| 10 | 794209 | 9 | 1／0 | +1 | **10** |
+| 13 | 301512 | 10 | 0 | +1 | **11** |
+| 14 | 794173 | 12 | 1／0 | +1 | **13** |
+| 15 | 545684 | 8 | 0 | +1 | **9** |
+| 16 | 336283 | 11 | 2／0 | 無 | **11** |
+| 17 | 769608 | 10 | 1／0 | +1 | **11** |
+| 18 | 769981 | 3 | 0 | 無 | **3** |
+
+- **MB 在 11 筆裡 5 筆是 0、6 筆各 1–2 筆**——合計 7 筆 vs 聯集 88 筆（8%）；**日本原壓 MB 一筆都沒建**（11/11）。
+- #6 另有同場 7 吋 `Takt TS-504`（`master_id` 0）是另一張碟，不計入版本。
+
+## 7249　⚠ ⚠ 廠牌欄與第 1 堆的門：**18 筆逐筆以 Discogs 最早那一版的 `labels` 欄＋`labels/<id>` 的 `parent_label` 核過；`hint` 錯 10 筆**
+
+| # | hint | 原壓實際 | 門 |
+|---:|---|---|---|
+| 2 | Trio? | CBS/Sony `25AP 1611` | 十五家 |
+| 3 | Nippon Crown? | RCA（池中已有） | —（撞池） |
+| 4 | Nippon Crown? | Takt `HS-7001-CT`（池中已有） | —（撞池） |
+| 5 | Denon | Better Days（`parent_label` Nippon Columbia） | 四大廠 |
+| 6 | CBS/Sony? | Takt `JAZZ-9` | 四大廠（コロムビア 格） |
+| 7 | Polydor（Love）? | Love Records（Canyon） | **門外** |
+| 8 | CBS/Sony? | Enja 2028（德國；日本 Victor 授權） | **原盤在外國** |
+| 11 | Frasco | Enja 2080（德國） | **原盤在外國** |
+| 12 | Frasco | Enja 3001（德國） | **原盤在外國** |
+| 15 | Alfa? | Toshiba Records（東芝 EMI） | 四大廠 |
+
+- 屬實 8 筆：#1 Union、#9／#10／#13／#14／#17 East Wind、#16 Kitty、#18 Frasco。
+- ⚠ **`28AP 3xxx` 那條 CBS 授權線不適用 #2**：`25AP 1611` 是日本本地企劃、只有日本一版（jp-2 簡報第三節第 35 點）。
+
+## 7250　⚠ ⚠ 外國藝人（照第 4 堆規則「日本原盤即可」）：**6 筆逐筆判「日本是原盤」，6/6 成立**
+
+| # | 卡 | 「日本是原盤」的依據 |
+|---:|---|---|
+| 9 | Ronnie Mathews《Trip to the Orient》 | 版本表 5/5 全日本 East Wind，海外零版 |
+| 10 | Hank Jones《Hanky Panky》 | 原壓 ℗ `East Wind Music`；美國 Inner City 晚四年（1979） |
+| 13 | GJT《Milestones》 | 美國 Inner City `IC 6030` 晚一年、標 `Reissue` |
+| 14 | GJT《Vanguard Vol. 2》 | 法國版晚一年、美國 CD 2005 |
+| 16 | 中村照夫《Rising Sun》 | 同年美國 Polydor 版逐字 `Produced For: Kitty Music Corp.`（c-185 b 第 5923 條同一人同形先例） |
+| 17 | GJT《Kindness, Joy, Love & Happiness》 | 美國 Inner City 晚一年 |
+
+- 第 4106 條四項門檻本線不適用（主線第 2007-B 條）。#16 領銜是日本人，但錄音在紐約、美國版同年，所以同樣逐項判過。
+- ⚠ **#16 MB 只建了美國 Polydor 版**：不因 MB 只見美國版而判成美國原盤。
+
+## 7251　掛名：**11 張 9 個相異字串——沿用池中整串 7 串（佔 9 張）＋ 新立 2 串；新造分隔符 0、收斂 0**
+
+- 沿用：`鈴木良雄`（池中 6 列）、`板橋文夫`（apex）、`渡辺貞夫`、`The Great Jazz Trio`（seed ＋ c-193 b，3 張）、`大村憲司`（c-191 a）、`中村照夫`（seed／c-181／c-185）、`山下洋輔トリオ`（seed ＋ c-121／c-187）。
+- 新立：`Ronnie Mathews`、`Hank Jones`（池中只有 c-160 聯名串 `Joe Lovano & Hank Jones`，第 964 條並存）——**外國藝人照 MB 實體名**（主線第 2007-B 條）。
+
+## 7252　⚠ 曲風：**收件 11 筆逐筆獨立覆核；`styles` 空陣列 3 筆走第 3762 條人工判、⑤ 款後半從嚴 1 筆走救濟**
+
+- **`styles` 空陣列（主線第 1936-B 條：沒有資訊）**：#10、#13、#14——三筆都是鋼琴三重奏、曲目是爵士標準曲與成員原創、`genres` 為 Jazz，**c-173 a 第 3716 條三肢全過**。
+- **#6 `styles` 只有 `Bossa Nova`**：從嚴當成 ⑤ 款後半成立，救濟三肢全過；乙 2/13。
+- **#15 `genres` Jazz／Rock、`styles` Fusion／Classic Rock**：含 Jazz 與 Fusion，⑤ 不成立；乙 1/5（Clapton〈Better Make It Through Today〉，大村自唱）。
+- **#16 `Jazz`／`Funk / Soul`＋`Fusion`**：乙 0/6（兩軌人聲都是團員原創，不是既有非爵士曲）。
+- **#18 字面乙 3/3**：靠主線第 1978-B 條（7255）。
+- 第 5701 條巴西曲照主線第 1962-B 條：#6 的 Jobim／Edu Lobo、#9 的 Bonfá、#13 的〈Wave〉算甲。
+
+## 7253　⚠ ⚠ `poolRecheck` 逐格人工覆核：**18 格全部重掃，每種掛名寫法都試；真撞池 4 筆，slice 標對 0 筆**
+
+- slice 的摘要是「確定撞池 0、要逐張人工比 16、池中查無此藝人 1、變體全是羅馬字 1」——**實際撞池 4 筆，全都不在「確定撞池」那一格**：
+  - #1：slice 標「池中查無此藝人」，池中其實是羅馬字 `Hitoshi Okano`（六道只試漢字形）。
+  - #3／#4：池中是和文題＋團名串（`鈴木宏昌トリオ`／`猪俣猛とサウンド・リミテッド`），slice 是羅馬字盤名＋個人名。
+  - #11：池中和文題《バンスリカーナ》vs slice 羅馬字《Banslikana》。
+- ⚠ **四筆的共同形狀：slice 的盤名是羅馬字、池中是和文題**——**建議六道加一道「盤名羅馬字 ↔ 片假名」的轉寫比對**（7264）。
+- 收件 11 筆的撞池掃描：掛名的漢字、羅馬字、片假名與盤名各形逐一掃過，**真撞 0**；#14 與 seed Vol.1 是分卷不是撞池（7256）。
+
+## 7254　⚠ ⚠ 邊界收件（一）：`渡辺貞夫 —《Bossa Nova Concert》`——**釘的 MB RG c428c830 只有一筆 1989 年 18 軌 `Compilation` CD**（**建議主線覆核，可逆**）
+
+- MB 那筆 CD（Denon `DC-8556`）與 13 軌 LP 只重疊 8 軌；但 Discogs 逐字記它是「Live at Tokyo Koseinenkin Kaikan, July 4, 1967」、歸在同一個 master 949793——**同一場的另一個選曲版本**，2000／2018 的 CD 又回到 13 軌。
+- **本層照 Discogs 的 master 歸屬釘這個 RG，`releaseType` 仍是 `Album`**。
+- ⚠ **反轉條件**：若主線認為 18 軌 CD 應是另一個 RG，改走 §1 人工身分（13 軌 LP 在 MB 零筆；舉證資料已齊，改動只在卡單欄位）。
+
+## 7255　⚠ ⚠ 邊界收件（二）：`山下洋輔トリオ —《砂山》`——**三首都是 中山晋平 的童謡，字面乙 3/3；收件靠主線第 1978-B 條第 1 點的逐字點名**（**建議主線覆核，可逆**）
+
+- 主線第 1978-B 條替甲補的那一格逐字是「由本盤的演奏者自己持續發展成器樂即興曲目的既有曲，**且有前作錄音可證**」，並寫「§1 候選的《砂山》1978 因此都留在門內」。
+- ⚠ **邊界照實寫**：本盤本身就是這三首的首錄；本層只找到同系列的前例（1977《Arashi》的〈月の砂漠〉），**沒有找到這三首在 1978 年以前的逐曲錄音**——「前作錄音可證」那半句對本盤只能間接成立。
+- Discogs `styles` 逐字 `Free Jazz`、編制是鋼琴三重奏＋管樂——c-173 a 第 3716 條前兩肢成立。
+- **若主線收緊成「本盤曲目要逐首有前作」，本卡退**（第 5701 條乙過半）。
+
+## 7256　同場分卷：`The Great Jazz Trio《At the Village Vanguard Vol. 2》` 與 seed《At the Village Vanguard》——**照 c-187 第 6080 條（《Wheel Stone》兩集）各自成卡、互指**
+
+- 同一檔期（1977-02-19／20）、同一廠牌分兩張；**Vol.1（`EW-8053`）四軌〈Moose The Mooch〉〈Naima〉〈Favors〉〈12+12〉與本集四軌〈Confirmation〉〈Wind Flower〉〈Nardis〉〈Lawra〉零重疊**——第 1948-B 條看錄音，不是同錄音兩版。
+- `dedup-crossbatch.mjs` 對這一對報「同掛名盤名詞元包含」（只報不擋），已逐筆看過。
+- ⚠ **另有 1981 年 Eastworld《Re-Visited - … At The Village Vanguard Volume 2》（master 3676572）是 1980 年 10 月另一次檔期（Eddie Gomez／Al Foster）**，盤名相近，後續批次別混。
+- **給本機**：seed Vol.1 那張的 `risk` 指回句由本機補（本層不碰 seed）。
+
+## 7257　`鈴木良雄《Matsuri》` 的年份：**取 1979，不採 ja 維基的 1974**
+
+- Discogs 原壓 `released` 1979 ＋ `notes` 逐字「Recorded at R.P.M. studio NY in 1979.」＋ `25AP` 定價號段（1976 年以後）。
+- 1974 年他剛進 Stan Getz 樂團；credits 上的 Liebman／Harrell／LaVerne 是 ja 維基自己寫的「1976–1980 年」那支自組樂團——**ja 維基那一行是單點錯誤**，不寫進任何斷言。
+- ⚠ **封面不可拿 Apple 上《Fairy Tale》（`鈴木良雄 & MATSURI`，1987，collectionId 1453373184）當本盤**——那是同名樂團的另一張；本卡 `manual-scan`。
+
+## 7258　catno 反查與孤兒 release：**收件 11 筆逐筆以原壓目錄號反查 Discogs；孤兒 0**
+
+- 唯一在版本表外的是 #6 的 7 吋 `Takt TS-504`（另一張碟，不計）。
+- MB 側的 `catno:` 反查另作 §1 舉證（7244）。
+
+## 7259　⚠ Apple 與封面（第 254 條，只寫觀察）：**收件 11 筆命中專輯級條目 8 筆**
+
+- §1 人工 5 筆：`apple-verified-collection` 3（#9 1443864171、#13 1443514283、#15 720313988——精確 collectionId，軌數、日期、℗ 已人工核對）、`manual-scan` 2（#2、#18，Apple jp／us 都查無）。
+- 釘 RG 6 筆（封面走一般路線）：#5 1523585334、#6 1868591470、#10 1443917150、#14 1468068409、#17 1443515718 命中；#16 查無。
+- ⚠ #15 Apple 是 7 軌（1979 年 Express 擴充曲序），原壓 5 軌——封面同一張，軌數差只寫觀察。
+- ⚠ East Wind 系 Apple `releaseDate` 多是佔位（1978-01-01）或 CD 再發日（2002-12-23），**年份一律不採 Apple 日期、只採 ℗ 行**。
+
+## 7260　⚠ Discogs 與 MB 的技術性失效，本組踩到三個
+
+1. **MB 503**：多次，全部退避重試到 200；`mbAbsenceProof` 的每條查詢都是 200 的結果。
+2. **本層工具自己的截斷**：抓取腳本在 stdout 還沒寫完就 `process.exit`，超過 64 KB 的回應被截斷（`versions` 大表會中招）——已改成寫完再退出並重跑；**新代理若自寫抓取腳本要注意這一形**。
+3. **MB 實體錯掛**：#12 的 RG e049da66 掛在 `山下洋輔トリオ`（實為二重奏）；#4 的 RG 只掛團名實體——**只 browse 個人實體會誤判「查無」**。
+
+## 7261　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有條目一字未動**
+
+## 7262　人名漢字：**卡單寫到的漢字人名逐名以 Discogs 藝人頁 `realname`／`namevariations` 或 `name-corrections.json` 回打；查不到的寫羅馬字**
+
+- 保留羅馬字：#15 的 `Kumito Osuyara`（7195994，無 `realname`／`namevariations`）。
+- `森士郎`（#16 `Shiro Mori`）照 `name-corrections.json`；`浜口茂外也`（#15）照 `pairs` 的正字。
+- 製作群 伊藤八十八／伊藤潔／鯉沼利成／守崎幸夫（East Wind 五張共用）逐一回打過。
+
+## 7263　交件前自跑的結果與第 315 條結算
+
+- `node batch-progress/c192/chk-prop.mjs a` → **`prop-a.json`：11 張、9 位｜標記 0**（第一次 5 筆 checkpoint 時也跑過，標記 0）。
+- `node batch-progress/dedup-crossbatch.mjs`（**不帶批號、全池**）→ **156 批｜卡數 5826｜跨批撞卡 0｜同 rgMbid 不同掛名 0**；「同掛名盤名詞元包含」涉及本組 1 處（#14 vs seed Vol.1，7256）；「共用目錄號」2 處都是 b 組的，與本組無關。
+- ⚠ **第 315 條結算：收 11 ＋ 退 7（第 7237–7243 條，逐筆一條）＝ 18 ＝ slice `g === "a"` 的 18 筆。**
+  **逐堆：第 1 堆 收 11 退 7（＝18）。**
+- **`prop-a.json` 每一筆帶 `pile: 1`、原樣照抄 slice**；§1 人工 5 筆 `mbNote` 零 MBID；釘 6 筆 `mbNote` 第一個 UUID 是 RG。
+- **與 b 組比過**：b 組 #1 `松本英彦 / The Great Jazz Trio《The Session》` 是另一張碟，不撞；兩組沒有同一張。
+- **邊界**：只動了 `batch-progress/c192/prop-a.json` 與本檔（append 本段）；`desc-tools/jp-proper-names.json` append 0；`seed_cards.json` 唯讀掃描；`apex_pool.json`／`PROJECT_MEMORY.md`／其他批次的檔／b 組的檔／KV／Firestore 一律未碰；**零 git 操作。**
+- ⚠ **append 前後自驗**：寫入前 `git show HEAD:` 與工作區都已有 b 組段落（372 行）；本段只接在檔尾。
+
+## 7264　⚠ ⚠ 給主線與後續批次的清單
+
+### 建議主線覆核的兩件
+1. ⚠ ⚠ **7254——#6 釘的 RG 只有 18 軌 Compilation CD**；反轉就改走 §1 人工。
+2. ⚠ ⚠ **7255——#18 靠主線第 1978-B 條的逐字點名收件**；「前作錄音可證」對本盤只能間接成立。
+
+### 給工具與簡報的三件
+1. ⚠ ⚠ **`enum/jp-2.md` §1 候選清單的「MB 完全查無 RG」18 筆只有 5 筆屬實、廠牌欄錯 10 筆**（7244／7249）——**建議全節標「未查實」**；#11 那一格 c-185 第 5900 條早已劃掉卻還在清單上。
+2. ⚠ ⚠ **`poolRecheck` 六道要加「盤名羅馬字 ↔ 和文題」與「掛名羅馬字 ↔ 漢字」的轉寫比對**（7253）——本組 4 筆撞池全是這一形，slice 一筆都沒標出來。
+3. ⚠ **只 browse 個人實體會把掛在團名實體下的 RG 誤判成查無**（7260 第 3 點）——§1 舉證要把團名實體也 browse。
+
+### 給本機的（不在雲端做）
+1. ⚠ **seed《At the Village Vanguard》（GJT Vol.1）的 `risk` 補一句指回 #14**（7256）。
+2. **池中 `Hitoshi Okano`（seed ＋ c-87）與本組派工的 `岡野等` 是同一人**——要不要收斂由本機決定（7237）。
+3. **#9 與 #2 的貝斯手都是 鈴木良雄；#10／#13／#14／#17 是同一條 East Wind 線**——行文若互相提及，講清楚是哪一張。
+
+## 7265　登記給主線與後續批次的候選（若放寬就從這裡撈回）、編號結算
+
+- **`Love Records TP-103`（`日野皓正《Journey to Air》`，1970；MB rg 9780ab16）**——Canyon 系、不在門內；**若日後把 Canyon／ポニーキャニオン 系收進門內，從這裡撈回**。
+- **德國 Enja 原盤、日本有授權版的三張**（`Enja 2028`《Taro's Mood》、`Enja 2080`《Banslikana》、`Enja 3001`《Inner Space》）——**原盤國別的門不放寬就不會撈回**；建議記進 `audits/foreign-artist-japan-productions.md` 的反方向（日本藝人的外國原盤）一節（本層不動那個檔）。
+- **編號區間結算**：本段用到 **7236–7265（共 30 條），區間用滿、未越界（b 組 7266–7295）。**
