@@ -14,4 +14,4 @@
 - **每封產完一律跑 `node batch-progress/chk-dispatch.mjs <信> <批> <組>`**；剩下的標記逐條看，模板的通用舉例（`Marlene`／`country`／`Hi‐Fi Set`）撞到對方那組是已知假警報。
 - **條號先預留再產信**：`node batch-progress/new-rulings.mjs --reserve <批> 研究 30 30`（鉤子 40、寫作 15 15）——產生器從骨架檔頭讀區間。
 - **`{{RISKS}}`／`{{SECOND}}`／`{{VERSIONS}}` 是每批手寫的**（讀完上一層的裁定與代理報告後寫），其餘全部由檔案算出。
-- **非 jp-2 的批次**（例如補遺線）：用環境變數 `ORD=十` 之類覆寫「第幾批」，其餘照舊。
+- **非 jp-2 的批次**（例如補遺線）：`ORD=二 LINE="日本爵士補遺線 hoyi" python3 …`——`ORD` 覆寫「第幾批」、`LINE` 覆寫線名。補遺線的策展信另用 `mk-cur-hoyi.py`。

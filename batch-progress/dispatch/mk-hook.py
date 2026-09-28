@@ -38,5 +38,6 @@ maxb=re.findall(r'^## 第 (\d{4}-B) 條',io.open(f'{ROOT}/batch-progress/c163/ru
 rep=dict(BD=f'c-{n}',ORD=ORD,SPAN=f'{min(y)}–{max(y)}',N=str(len(ra)+len(rb)),NA=str(len(ra)),NB=str(len(rb)),B=B,CURR=CURR,RESR=RESR,
   PREVHOOK=PREVHOOK,MAXB=maxb,REFD=f'c-{REF[1:]}',BACKMEASURE='\n'.join(bm),RISKS=io.open(RF,encoding='utf-8').read().strip(),RH=RH,AXES=AXES)
 for k,v in rep.items(): t=t.replace('{{'+k+'}}',v)
+if os.environ.get('LINE'): t=t.replace('日本爵士獨立廠牌線 jp-2',os.environ['LINE']).replace('jp-2 線',os.environ['LINE'])
 assert not re.findall(r'\{\{\w+\}\}',t), re.findall(r'\{\{\w+\}\}',t)
 io.open(OUT,'w',encoding='utf-8').write(t); print(OUT,'ok',len(ra),len(rb),RH,'|',AXES)

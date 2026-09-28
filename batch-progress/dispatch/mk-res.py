@@ -21,5 +21,6 @@ maxb=re.findall(r'^## 第 (\d{4}-B) 條',io.open(f'{ROOT}/batch-progress/c163/ru
 rep=dict(BD=f'c-{n}',ORD=ORD,SPAN=f'{min(y)}–{max(y)}',G=G,N=str(len(mine)),B=B,MAXB=maxb,CURR=CURR,
   VERSIONS=io.open(VF,encoding='utf-8').read().strip(),RISKS=io.open(RF,encoding='utf-8').read().strip(),R1=R1,R2=R2)
 for k,v in rep.items(): t=t.replace('{{'+k+'}}',v)
+if os.environ.get('LINE'): t=t.replace('日本爵士獨立廠牌線 jp-2',os.environ['LINE']).replace('jp-2 線',os.environ['LINE'])
 assert not re.findall(r'\{\{\w+\}\}',t)
 io.open(OUT,'w',encoding='utf-8').write(t); print(OUT,'ok',G,len(mine),R1)
