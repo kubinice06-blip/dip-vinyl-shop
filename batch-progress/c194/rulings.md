@@ -8,6 +8,8 @@
 > ⚠ **append 之後自己驗一次**：`grep -c '^## '` 兩組的條數都在，而且對方的標題還在。
 
 > **預留（2026-09-28）：研究 a 7786–7815、b 7816–7845。**
+> **預留（2026-09-28）：鉤子 8036–8075。**
+> **預留（2026-09-28）：寫作 a 8076–8090、b 8091–8105。**
 ---
 
 
@@ -682,3 +684,101 @@ Salena Jones：MB Person 2340f89c、country `US`；Discogs 622704 profile 逐字
 - `desc-tools/jp-proper-names.json`：**append 0**（零誤報）。
 - **只動了** `desc-tools/batches/research/c194-a.json`（新增）與本檔（append 7786–7793）；**未動** 卡單、previews.json、caa.json、prop、seed、git。
 - **需要主線裁定／登記的**：(a) 7789 兩筆 previews 誤命中；(b) 7788 簡報第 33 點補「Apple 另加前逐軌比曲名」；(c) 7791 第 1 點同名陷阱；(d) #3 的生平格與 b 組分配（7790 第 6 點）。
+
+---
+
+# c-194 b 組研究層（7816–7845）｜12 張｜2026-09-28
+
+批次 c-194｜b 組 12 張（卡單 `group === "b"`）｜研究層
+輸入 `desc-tools/batches/cards/c194-cards.json` 的 `group === "b"`｜輸出 `desc-tools/batches/research/c194-b.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節 ＋ 主線第 1934-B…2010-B 條 ＋ 本檔 7356–7409、7379、7786–7793。⚠ **引用一律寫「c-19X 第 NNNN 條」。** ⚠ 本段 append 在檔尾，a 組三段（策展 7356–7379、研究 7786–7793）與 b 組策展段一字未動。
+**本段用到 7816–7823（共 8 條），未越界（a 組 7786–7815）。**
+
+## 7816　（**總表**）：**12 張、facts 131 條（10–12 條／張）、full 12／thin 0；推翻策展層 3 處（版本數 2、人名 1）、補正 9 處；收件結論全部不變**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | Elvin Jones —《Very R.A.R.E.》 | 12 | full | **A2 是鋼琴三重奏、B2〈Pitter Pat〉只剩貝斯與鼓**（原壓 notes 推得，三源一致）；Konnex 德國版自寫「最初由日本 Trio 發行」 |
+| 2 | Irakere —《Chekeré son》 | 11 | full | ⚠ **版本數 9→8**（MB 那筆 CU Areito 是混淆，7817）；標題曲 1976 年已錄過 |
+| 3 | Lee Ritenour —《Lee Ritenour In Rio》 | 11 | full | **盤名「在里約」，七首只有 A1／B3 在里約錄**；1982 美版《Rio》Billboard 爵士榜第 11 名 |
+| 4 | Ron Carter —《1 + 3》 | 11 | full | 解說 **野口久光**（策展層寫羅馬字未回打）；**隔晚 7/30 同一組 Fantasy 團隊錄的兩張在美國 Galaxy 出** |
+| 5 | Dave Grusin & The GRP All-Stars with special guest 渡辺貞夫 —《Live in Japan》 | 10 | full | 美版 1981 **掛名拿掉 渡辺貞夫**、加樂手介紹軌；1981 年 渡辺 的紐約盤沿用本場節奏組 |
+| 6 | Harry "Sweets" Edison, … —《Aurex Jazz Festival '80 - Gentlemen of Swing》 | 12 | full | 武道館／横浜逐軌分配；**盒裝四片的交叉班底**（Teddy Wilson 也在 Goodman 那片）；John Koenig＝Contemporary 創辦人之子 |
+| 7 | Irakere —《Cuba libre》 | 11 | full | ⚠ **版本數 5→6**（gb 店 Far Out 數位版，7817）；**Paquito D'Rivera 已出走、中音薩克斯風換成 Germán Velazco** |
+| 8 | Elvin Jones —《Heart to Heart》 | 10 | full | **盤名由來**（1978 年日本主持人「heart to heart」，原廠頁）；原發行 1981 年 5 月 |
+| 9 | The Great Jazz Trio —《Moreover》 | 11 | full | Hank Jones 兼彈**電鋼琴**；與《Chapter II》同期錄、新班底第二張；2024 同號再壓 |
+| 10 | New York Liner —《New York Liner》 | 10 | full | Discogs 藝人頁 members 只有 David Matthews 一人、Main 只有本盤 |
+| 11 | Freddie Hubbard —《Mistral》 | 11 | full | **六人向五家美國公司借將**；錄音師 Allen Sides；⚠ previews 誤命中（7818） |
+| 12 | Salena Jones —《Melodies of Love》 | 11 | full | 鈴木宏昌／松木恒秀／渡嘉敷祐一 同屬 The Players；〈Bridges〉＝〈Travessia〉1967 FIC 第二名 |
+
+**thin 0 張。** 每張 `src` 相異網域 2–5 個（Discogs、en／ja 維基、jazzdisco、`columbia.jp`、`universal-music.co.jp`）。
+
+## 7817　⚠ ⚠ 版本數：**12 張逐筆重跑 `versions`，改判 2 張（#2 9→8、#7 5→6）；兩張方向相反——一張是 MB 多建、一張是 Discogs 結構上不收數位**
+
+| # | 策展層 | 本層 | 差 | 漏法 |
+|---:|---:|---:|---:|---|
+| 2 | 9 | **8** | −1 | ⚠ **(d) 的反面**：MB 5e8adadf「1979 CU Areito」無目錄號、無條碼、逐軌毫秒與 JVC 原壓逐軌同長；**en 維基 Irakere 目錄把「1979: Chekere-son. LD-3660」列成 Areito 盤，而 Discogs Areito LD-3660（master 169766）其實是 1976 年《Grupo Irakere》**（A1〈Chekere-Son〉）——MB 那筆最可能是照這個混淆建的，查無任何古巴實體 → 不計（主線第 1980-B 條：策展層標存疑並指出一個動作，本層把動作做完）。可逆。 |
+| 7 | 5 | **6** | +1 | ⚠ **(c)**：策展層只查 Apple jp／us；本層以藝人目錄 lookup（14226038）比 gb／us／jp 三店，**gb 有 1040914031《Cuba Libre》6 軌、℗ 2010 Far Out Recordings**，逐軌曲名全同；MB 零 Digital Media → +1。`previews.json` 的 ready 就是這一筆。 |
+| 其餘 10 張 | — | — | 0 | #1 9、#3 56、#4 6、#5 19、#6 4、#8 4、#9 6、#10 6、#11 10、#12 5 與策展層逐格相同 |
+
+⚠ **(b) 漏法本組查到兩筆疑似、都不加**：#8 jazzdisco 記「Nippon Columbia (J) CORR-11260 in 2017」——Discogs `catno=` 0 筆、HMV 品番搜尋「見つかりませんでした」、`columbia.jp` 兩條路徑都 404，疑為數位配信品番；#9 `UCCJ-9200` 2024-05-29「創立50周年記念アンコールプレス」同號限量再壓（原廠頁），Discogs 未建——同一品番，寫成 2015 年版的再壓，不另計（**若主線要把同號再壓算一版，#9 為 7**）。
+⚠ **(a) MB 轄下 JP 數 vs Discogs 日本盤數**：12 張全部 MB 較少，盤名與年份逐筆回查，零改判（#3 的盤名改判策展層已做，本層以 en 維基第三源確認）。
+⚠ **沒有外國版的五張**（#4／#6／#8／#10／#12）facts 都寫「已知版本 N 個，全部在日本」，不寫「沒有再發」。
+
+## 7818　⚠ ⚠ 給主線：**previews.json 一筆 `ready` 是誤命中**（本層照邊界不動）
+
+- **#11 `Freddie Hubbard|Mistral`** → Apple 1838100485《Nati Mistral》（藝人 ナティ・ミストラル、12 軌、℗ 2015 Divucsa Music）——**西班牙歌手 Nati Mistral 的碟，藝人名剛好等於本卡盤名**，主線第 1997-B 條的第二種誤命中。**本盤 Apple jp／us／gb／fr 四店查無**，建議降為無來源。
+- 其餘 ready 七筆逐一比過：#3 571593054、#4 1567326800、#7 1040914031（gb）、#8 311728072（`aliasOnlyTitle`、和文題，五軌逐軌同）、#9 1443504392、#10 1649751405（`Newyork Liner`）、#12 1527734890——**都是本盤**。#1／#2／#5／#6 unavailable 與本層查證一致（#1 Apple jp 其實有兩筆 `- EP`，探測層沒配上，不影響）。
+
+## 7819　推翻／補正策展層（收件結論全部不變）
+
+| # | 卡 | 類 | 策展層 → 本層 | 依據 |
+|---:|---|---|---|---|
+| 1 | #4 | **推翻（人名）** | 解說 `Hisamitsu Noguchi`「未回打、照寫羅馬字」→ **野口久光** | Discogs 1798939 realname／nv 逐字；c-193 b 研究稿同一藝人頁已定案 |
+| 2 | #2 | **推翻（版本）** | 9 → 8 | 7817 |
+| 3 | #7 | **推翻（版本）** | 5 → 6 | 7817 |
+| 4 | #1 | 補正 | （卡單無）→ **A2 三重奏、B2 貝斯鼓二重奏** | 原壓 notes「not on Side A-2 and Side B-2」＋ en 維基 personnel ＋ jazzdisco 分軌 |
+| 5 | #4 | 補正 | VIJ-6462 另有 `Engineer [Mixing] — Wally Buck`（Fantasy Studios）；隔晚 7/30 的 Galaxy 兩張（GXY-95001 1979、GXY-5144 1983） | releases/2520707、7385298；en 維基《Carnaval》 |
+| 6 | #5 | 補正 | 攝影 米田泰久（2633816 realname）；美版 1981 掛名拿掉 渡辺貞夫、加〈Band Introduction〉——**不是 1991 CD 才拿掉** | releases/4688690、1509931 |
+| 7 | #6 | 補正 | 盒裝 8678273 四片分組與交叉班底；標誌設計 **浅葉克己**（1887133 nv） | releases/8678273、7436439 |
+| 8 | #7 | 補正 | 中音薩克斯風是 **Germán Velazco**（1528061，1957 年生），**D'Rivera 1980 年初在西班牙出走**（en 維基；ja 維基寫 1981，衝突，取 en） | releases/1873383；en 維基 Paquito D'Rivera |
+| 9 | #8 | 補正 | 盤名由來、原發行月 1981-05；⚠ **錄音月份兩說**（HQCD notes／jazzdisco 1980-08 vs 同品番原廠頁「1981年1月」），**facts 不寫錄音月份** | `columbia.jp/prod-info/COCB-53802/` |
+| 10 | #9 | 補正 | Hank Jones 兼 **el-p**；與《Chapter II》同日／同期（兩頁措辭不同）；⚠ 錄音日兩說（CD notes「June 5 & 7」vs 原廠頁「6月2、3、5日」），facts 只寫「1980 年 6 月」 | `universal-music.co.jp/the-great-jazz-trio/products/uccj-9200/`、`uccj-9068/` |
+| 11 | #11 | 補正 | 錄音師 Allen Sides（原壓；美版改記 Mark Ettel）；2012 HQCD 24bit／192kHz 重新母帶日 | releases/3892511、9495462 |
+
+⚠ **本層標 uncertain、不寫進 facts 的**（都在各卡 `notes`）：#1〈Tin Tin Deo〉作曲一人（Discogs）vs 三人（en 維基，facts 取三人）；#2 標題曲作曲三說（D'Rivera／Chucho Valdés／Estobal＋Valdés，facts 只寫「1976 年古巴原版記在 D'Rivera 名下」）；#2 1976 古巴版與 1977 芬蘭版是否同一場錄音（notes 錄音地不同、〈38 1/2〉時長差一分鐘）；#12 溫布頓錄的是 B3（notes）還是 B5（credits）——**facts 兩處都不指軌**；#12 Alan Broadbent 盤面逐字 `Bass`（他是鋼琴手），facts 不寫他的樂器。
+
+## 7820　⚠ 硬門覆核（派工信第五節第 1、3 點）：**三張「外國版 ℗ 掛日本公司」與一張邊界收件，facts 都照日本製作寫；零張收錯**
+
+1. **#2**：美國 Milestone ℗/© Victor Musical Industries、Remixed At Victor Studio；1979 委內瑞拉 Integra 版掛同一組日本製作。**MB 那筆 CU Areito 已剔除（7817），版本表裡沒有比日本早的外國版。**
+2. **#11**：⚠ **美國 Liberty 的 MB 日期 1981-08-10、日本原壓只到年，全網查不到日本發行月**——兩國先後不可判，照 c-194 第 7393 條以 ℗ 行判：日本原壓 ℗ 只有 Toshiba EMI、母帶在東京；美版 ℗ 並列 Toshiba EMI 與 Liberty，另一筆美版圓標逐字「Eastworld — LT-1110」。**不標 uncertain。** ⚠ `universal-music.co.jp` 的 TOCJ-90076 頁把「発売国」標「海外」——那是現行洋楽目錄分類（派工信第三節：官方講的是它現在在賣的那一版），不採。
+3. **#3**：原壓 ℗1979 Victor、製作 Toshi Endo；en 維基「released in 1979 in Japan on JVC, then in 1982 in the U.S.」第三源。
+4. **#4（邊界，c-194 第 7408 條）**：本層補到一件與「反面」同向的旁證——**隔晚 7/30 同一組 Ed Michel／Jim Stern 錄的兩張都在美國由 Fantasy 系（Galaxy）發行**，Fantasy 團隊錄下整個音樂節、7/29 這一晚只給日本ビクター 出。**硬門字面（只在日本發行）仍成立，收件不動**；facts 只寫發行事實，不寫「日本製作」也不寫「美國授權」。
+5. **#12（邊界，第 7409 條）**：facts 把十首照實分兩堆寫、不寫甲乙數字；另補 en 維基〈Travessia〉條目（1967 FIC 第二名、1969 Gene Lees 英詞、英文版錄音表），支持〈Bridges〉已進曲目表的讀法。
+⚠ **身分**：12 張零處與策展層判定相反；#7 的 上田力、#5 的 白石健二／Shoo Kaneko 照 c-194 第 7399／7400 條。
+
+## 7821　同批與前批的切角分配（鉤子層當稀缺資源）
+
+1. **同組兩對**：**#1／#8 Elvin Jones × Richard Davis × Van Gelder**——#1 用「B2 二重奏」與「外國第一版要等 1992」，#8 用「盤名由來」與「1966 滯日」；**Van Gelder 的句型兩卡要分開**。**#2／#7 Irakere × 同一組ビクター 班底**——#2 用「哈瓦那錄、東京混、美國授權」與「標題曲舊錄」，#7 用「上田力 全包」與「D'Rivera 出走」；#7 F10 只寫「前一年那張在哈瓦那錄」，不點 #2 盤名。
+2. **John Koenig 的 Contemporary 身分只放 #6**；#11 F3 只寫 Cables／Erskine「來自 Contemporary」。
+3. **跨組**：a 組《Friendship》與 #3 同為 Toshi Endo／Grusin 兄弟班底；a 組《Third Plane》與 #4 同一位 Ron Carter；a 組《Hello, Hank Jones》《Piano Play House》與 #4 A 面、#9 同一位 Hank Jones；**Salena Jones 生平格 a 組已用完（首訪日本、Keith Mansfield、Joan Shaw、藝名由來），#12 的 facts 對她的生平零字**。a 組研究稿留給本組判斷的「1994 年與 Jobim 合錄」屬後續生平，不寫。
+4. **前批同掛名研究稿讀過**（c-187 a 第 6344 條）：Elvin Jones（c-165 b、c-177 a、c-186 b）、Irakere（c-108 b、c-155 b）、Ritenour（c-185 b、c-186 a、c-193 b、同批 a）、Ron Carter（c-150…c-171 十四份）、GJT（c-177 b、c-185 a、c-189 b、c-192 a／b、c-193 b）、Hubbard（c-138…c-161 八份）——已用的生平格（生卒、Coltrane 年代、Grammy、Captain Fingers、JVC 直刻年表、GJT 命名與 Miles 節奏組當 GJT 故事、East Wind／伊藤八十八 沿革）**本組零重複**；#4 的「Miles 第二五重奏」只取「B 面三人」角度。
+5. **曲名＝池中盤名**（第 1787-B 條，只寫曲名）：〈Wave〉（seed Jobim 1967 同名曲）、〈Bridges〉（c-156 Dianne Reeves）、〈St. Louis Blues〉（seed Aki Takase）、〈Misty〉（seed 山本剛トリオ／Harold Mabern）、〈I Love You〉（本田竹広）、〈Moon River〉；**facts 點名的他碟盤名只有《Very Rare》《El Coco》《Chapter II》《Rio》《City: New York》《Jazz In The Cafes》**，全部池中 0 列或同字他碟（《Rio》＝Duran Duran、《Chapter II》＝Ashanti，各卡 notes 已標）。
+6. **跨組曲題互掃**（主線第 1987-B 條）：本組收件的每一首曲題掃過 `c194-a.json` 全文，**零重疊**（〈St. Louis Blues〉只出現在 a 組 #12 的 Apple 誤配曲目裡，不是 a 組的曲目）。
+
+## 7822　來源實測（本工作階段）
+
+- **Discogs API** 約 120 次、全 200（`releases`／`masters/versions`／`artists`／`labels`／`database/search`）；`artists/<id>` 回打 40 餘個，定案漢字 野口久光、浅葉克己、米田泰久、小山さち子，其餘照策展層。
+- **MB** 約 6 次、全 200；**en 維基** `action=raw` 約 45 次、全 200（`Very_R.A.R.E.`／`1_+_3`／`Rio_(Lee_Ritenour_album)`／`Mistral_(album)`／`Carnaval_(Ron_Carter_album)` 五個專輯條目都有；`GRP Records` 條目把本組 #5 寫成「fall of 1980」，錯）；**ja 維基** 8 次（`イラケレ`／`上田力`／`鈴木宏昌`／`渡辺貞夫`／`The_Players`／`Aurex`／`キングレコード`／`中村とうよう` 中，`オーレックス・ジャズ・フェスティバル` 404）。
+- **jazzdisco** 4 次、全 200（Elvin Jones 1978–1981 日本廠牌錄音序、Hubbard）。
+- ⚠ **原廠網域**：`columbia.jp/prod-info/COCB-53802/` **200，給出 #8 的盤名由來與原發行月**（`prod-info/CORR-11260/` 與 `artist-info/elvinjones/discography/CORR-11260.html` 404）；`universal-music.co.jp/the-great-jazz-trio/products/uccj-9200/`、`uccj-9068/`、`freddie-hubbard/products/tocj-90076/` **三頁 200**（`hubbard-freddie` 姓-名序 404，與簡報三之二一致）。**命中一律看 `<title>` 與內文。**
+- **Apple** lookup／search 約 30 次；search gb／us 間歇 403 三次（退避後部分恢復，未恢復的以藝人目錄 lookup 代替）。
+- `allmusic`／`allaboutjazz` 未試（禁用）；評論只取 en 維基轉引的指南星等（Penguin Guide、Rolling Stone Jazz Record Guide）。
+
+## 7823　交件自跑與邊界結算
+
+- `node qa-batch.mjs research c194`：**a 12、b 12 全 full，key 與卡單完全一致，全部通過**。
+- 自量：facts 131 條（12／11／11／11／10／12／11／10／11／10／11／11）、`src` 131/131 完整 https、`hookCandidates` 皆 2 條、`status`＝`coverage`、facts 零處「入圍／得獎」、零處千分位（定價寫「2500 日圓」「2800 日圓」）、facts 敘述句零處點名資料來源平台（唯一命中是曲名〈Scrapple From The Apple〉）。
+- `desc-tools/jp-proper-names.json`：**append 0**（QA 零誤報），既有條目未動。
+- **只動了** `desc-tools/batches/research/c194-b.json`（新增）與本檔（append 7816–7823）；**未動** 卡單、`previews.json`、`caa.json`、prop、seed、a 組檔、git。
+- **需要主線裁定／登記的**：(a) 7818 #11 previews 誤命中（建議降級）；(b) 7817 #9 同號再壓算不算一版（本層不算）；(c) 7819 第 1 點 `Hisamitsu Noguchi`→`野口久光` 是羅馬字改漢字、不是錯字，不進 `pairs`；(d) 簡報三之二可補一句「`columbia.jp/prod-info/` 對 Denon HQCD 品番（COCB-5380x）命中，商品解說含原發行月與錄音資訊——而錄音月份可能與 CD notes 打架」。
