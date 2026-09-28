@@ -767,3 +767,296 @@ facts 零字點名：Gil Evans 1974 Hendrix 曲集（#1／#8）、Waldron 1959�
 5. 提醒：**`previews.json` 的 ready 條目可當策展層的版本來源**（8237 末段）——本批兩筆「Apple 零命中」都是探測層早已配到的。
 
 **編號區間結算**：本段用 **8236–8249（14 條）**，未越界（另一組 8266–8295）；8250–8265 留空。
+
+
+
+# c-197 鉤子層（21 張＝a 組 11 ＋ b 組 10，一支代理做完兩組）的裁定（8426–8465）｜2026-09-28
+
+輸入：`desc-tools/batches/research/c197-{a,b}.json` ＋ 本檔策展兩段（7726–7777）與研究兩段（8236–8277）＋ c-195 第 8106–8123 條 ＋ 主線第 1934-B…2011-B 條 ＋ `hook-base.md` 全檔 ＋ `CURATION-BRIEF-hoyi.md`。**本層的 a／b 照卡單 `group` 欄**（a＝Sweet Basil 系列 9・Cuber 1・GJT 1；b＝George Young 3・Manhattan Jazz Quintet 7），與策展層分組不同。
+輸出：`desc-tools/batches/hooks/c197-hooks-a.json`（11）、`c197-hooks-b.json`（10）。暫存檔一律 `scratchpad/c197h/c197h-*`（`drafts` 草稿、`emit` 以研究稿 key 冪等重組、`sub` 逐字替換且命中數≠1 即中止不寫檔、`scan` 自掃、`budget` 從成品 JSON 獨立量預算）。⚠ 引用一律寫「c-19X 第 NNNN 條」。
+
+## 8426　開工兩件：自己數研究稿、倒回去量 c-195
+
+- **研究稿 `c197-a.json` 11 筆、`c197-b.json` 10 筆，與派工信相符**；`key` 由 emit 逐筆從研究稿取、以 `album` 逐筆核順序（不符即拋錯），21/21 全中；欄位只有 `key`／`hook`／`note`。
+- **`c195-hooks-a.json`＝228／192／230／220／197／216／230／216／227／222／229；`c195-hooks-b.json`＝218／215／228／201／228／228／229／227／200——與派工信兩串逐格相同，公式讀對了。**
+- 公式逐字（全部 `Array.from().length`）：`預算 = len(hook) + len(note) − 4×「主故事：」 − 「→」個數 − 9×「正文只寫上列各項。」 − 11×「這條骨架全批只走本張。」`；上限 230；hook 加權另算（`/[\x00-\x7F]/ ? 0.5 : 1`，上限 50）；note 原始上限 350；研究層 21 張全 full，thin 170 上限不觸發。
+- 輸出檔存在與否只用 `ls` 判斷，零 git 操作；開工時兩個輸出檔都不存在，從頭做；**初稿一成形就整份落檔，之後每一輪修改都由 emit 整份重寫**（續跑保護）。
+
+## 8427　⚠ ⚠ 逐筆預算與 hook 加權（21 筆全表；**兩支 QA 腳本都驗不到這一欄**）
+
+| 組 | # | 掛名 —《盤名》 | hook 原始 | hook 加權 | note 原始 | 各格 | **預算** |
+|---|---:|---|---:|---:|---:|---|---:|
+| a | 1 | Gil Evans —《Live at Sweet Basil》 | 26 | 26 | 226 | 60/63/40/36 | **225** |
+| a | 2 | Ronnie Cuber —《Passion Fruit》 | 24 | 20.5 | 208 | 50/52/46/33 | **205** |
+| a | 3 | Art Blakey and the Jazz Messengers —《Hard Champion》 | 30 | 24 | 226 | 75/29/50/45 | **229** |
+| a | 4 | Mal Waldron & Jackie McLean —《Left Alone '86》 | 29 | 26.5 | 212 | 94/37/55（三格） | **215** |
+| a | 5 | The Great Jazz Trio —《Great Standards Vol. 2》 | 25 | 25 | 228 | 65/53/54/29 | **226** |
+| a | 6 | 五人串 —《… Remembered Live at Sweet Basil Vol. II》 | 27 | 23 | 221 | 65/63/37/29 | **221** |
+| a | 7 | Gil Evans —《Live at Sweet Basil Vol.2》 | 28 | 24 | 226 | 59/59/82（三格） | **228** |
+| a | 8 | Gil Evans —《Bud and Bird (Live at Sweet Basil)》 | 24 | 24 | 226 | 75/77/48（三格） | **224** |
+| a | 9 | Gil Evans —《Farewell - Live at Sweet Basil》 | 27 | 23.5 | 221 | 64/85/27/18 | **221** |
+| a | 10 | Art Blakey and the Jazz Messengers —《Live at Sweet Basil》 | 29 | 29 | 210 | 70/56/23/34 | **212** |
+| a | 11 | 五人串 —《… Remembered Live at Sweet Basil》 | 29 | 25.5 | 226 | 78/42/55/24 | **228** |
+| b | 1 | George Young —《Chant》 | 21 | 21 | 229 | 46/82/24/50 | **223** |
+| b | 2 | George Young —《Burgundy》 | 25 | 24 | 221 | 58/60/77（三格） | **220** |
+| b | 3 | George Young —《Oleo》 | 29 | 21.5 | 217 | 46/57/52/35 | **219** |
+| b | 4 | Manhattan Jazz Quintet —《Manhattan Jazz Quintet》 | 30 | 27 | 209 | 50/86/47（三格） | **213** |
+| b | 5 | Manhattan Jazz Quintet —《Autumn Leaves》 | 21 | 21 | 216 | 24/78/48/39 | **210** |
+| b | 6 | Manhattan Jazz Quintet —《My Funny Valentine》 | 27 | 21.5 | 220 | 23/58/38/74 | **220** |
+| b | 7 | Manhattan Jazz Quintet —《Live at Pit Inn》 | 26 | 21.5 | 202 | 41/36/65/33 | **201** |
+| b | 8 | Manhattan Jazz Quintet —《My Favorite Things - Live in Tokyo》 | 23 | 21.5 | 201 | 73/37/48/16 | **197** |
+| b | 9 | Manhattan Jazz Quintet —《The Sidewinder》 | 25 | 25 | 211 | 65/41/43/35 | **209** |
+| b | 10 | Manhattan Jazz Quintet —《Caravan》 | 28 | 25 | 225 | 77/71/51（三格） | **227** |
+
+**a 組定稿：225／205／229／215／226／221／228／224／221／212／228**
+**b 組定稿：223／220／219／213／210／220／201／197／209／227**
+**21 筆全部 ≤230；min 197（b8）、max 229（a3）。hook 原始 21–30（「壓到 30 字以內」0 例外，a3／b4 正好 30）、加權 20.5–29；note 原始 201–229。** `c197h-budget.mjs` 從成品 JSON 重量一次，逐格相同。
+⚠ **原始與加權落差最大的是 a2（24 vs 20.5）、b3（29 vs 21.5）、b6（27 vs 21.5）**——`chk-hook-crossgroup` 報的 20.5–29 看不出這層（第 1911-B 條）。
+⚠ **初稿 21 張有 16 張超標（239–323；a6 323、b5 313、b3 283、a3 282、a1 281 最重——拉丁專名與逐名名單吃預算）**，全靠整格捨去與逐格縮寫壓下，**0 筆留給寫作層砍**。整格捨去的代表：a1〈Prince Of Darkness〉作者欄矛盾與 Gramavision 刪曲、a3 Kenny Garrett 與 Shorter 的音樂總監、a4 Herbie Lewis／Eddie Moore 名單與 CD 多兩首、a5 三重奏另兩人與〈Black Orpheus〉、a6 1961 年三人名單與〈Fire Waltz〉的 1961 出版、a7 同一班十四人、a10 GNP 封底字樣、a11 Richard Davis 與 Erich 錯字、b1 1962 Columbia 領銜、b3 Bernhardt 留任、b4 首張的錄音與發行日、b5 兩款封面與〈Mood Piece〉入原聲帶、b7 團員介紹與 Highlights、b8 影碟《Big Apple Jam》、b9 樋口可南子、b10 西德 Interpress。
+
+## 8428　⚠ ⚠ 壓完預算之後回頭核 hook 有沒有踩空、hook 自己的事實：**本批抓到 6 處，交件前改掉**
+
+1. **a1**：hook 與 g1 初稿都寫「回國後」——**Evans 是從日本巡演回紐約，「回國」對一位多倫多出生、紐約為家的人不精確**；改「巡演回來後」。
+2. **a4**：g2 初稿寫「演出」——**本卡 `live: false`（c-197 a 第 7738 條），研究層要求零「現場／實況／觀眾」**；改「錄音」。
+3. **a8**：g3 初稿「川崎燎 1974 年就錄過他的樂團」讀起來像「他錄了 Evans 樂團」——F5 原意是「參與過 Evans 樂團的錄音」；照改。
+4. **b4**：hook 初稿「點子是日本一本爵士雜誌出的」——**F2 寫的是《Swing Journal》與 King 共同發想**，hook 只給了一半；改「是日本一本爵士雜誌與 King 的主意」。
+5. **b5**：g1 初稿寫「錄音師從 Michael Farrow 換成 Tom Jung」——**`qa-batch` 報 `互指?`：Farrow 只在 b4 的 facts，本卡 facts 只寫「換成 Tom Jung」**（Farrow 那半句來自研究層第 8268 條的說明，不是本卡 facts）；刪 Farrow。
+6. **a11**：hook 初稿「獨佔整個 A 面」與 c-194 a《Hello, Hank Jones》的 hook「A 面整面只放一首」同骨架；改「在盤上奏得最長」，g1 同步補「21 分 41 秒是三首裡最長」（F2：21:41／13:11／11:44）。
+⚠ **21 張 hook 依賴的那一項全部在 g1 或 g2**（主線第 1970-B 條）；b7 的「六本木 Pit Inn」由 hook 自己帶出，g1 接「1986 年 4 月錄下這一晚」與「錄在東京」。
+
+## 8429　⚠ ⚠ hook 與 note 逐字重複（主線第 1988-B 條第 2 點）：**初稿非專名 9 處（掃描命中 7、動筆時預先避開 2），定稿 0**
+
+命中並改掉：a1 `日本巡演挑人`、a9 `的樂團吹小號`、a10 `在曲間隨手彈的`、b1 `薩克斯風，另`、b2 `日本宣傳盤封面`、b3 `只收在 CD`／` bossa nova，`、b6 `直接錄進兩軌`、b9 `，King `、b10 ` Corea 的節奏組，`。**定稿殘留的 6 字以上重複全是專名**（`Benson`／`Little`／〈Gone〉／` Evans `／`Dolphy`／` King `／`Billy Joel 的`／`Corea 的`）。
+
+## 8430　⚠ ⚠ 本批的三欄配表（日期＋動詞／「日」後那一個字／廠牌引入法）：**開工就配死，並避開 c-190…c-196 已用的字**
+
+| 卡 | 日期＋動詞／語序 | 「日」後那一字 |
+|---|---|---|
+| a4 | `1986 年 9 月 1 日四重奏在東京…錄音` | 四 |
+| a5 | `1988 年 10 月 25 日同一天…推出` | 同 |
+| a6 | `1986 年 10 月 3、4 日連兩晚`／`1961 年 10 月 5 日辭世` | 辭（「連」在並列形，不在尺內） |
+| a7 | `1984 年 8 月 27 日週一` | 週 |
+| a8 | `12 月 1、22 日在 Sweet Basil 錄`／`2 月 9、10 日回東京`（並列，不在尺內） | — |
+| a9 | `Evans 1988 年 3 月 20 日過世` | 過 |
+| a10 | `1985 年 3 月 24 日格林威治村` | 格 |
+| a11 | `1961 年 7 月 16 日五重奏在 Five Spot` | 五 |
+| b2 | `1986 年 10 月 8 日就錄完` | 就 |
+| b4 | `1984 年 7 月 11 日赴紐約` | 赴 |
+| b8 | `1987 年 4 月 14 日與 19 日` | 與 |
+| b9 | `1987 年 3 月 21 日，本盤與…` | ，（全批唯一） |
+| b10 | `4 月 21 日的日本 CD` | 的 |
+| 其餘 8 張 | 只到年或月（a1「1983 年 4 月」與「8 月 20、27 兩個週一」、a2「2 月底、3 月初」、a3「1985 年 3 月」「1987 年 3 月」「1987 年 11 月」、b3「1988 年 2 月」、b5「1985 年 3 月」、b6「1985 年 11 月」、b7「1986 年 4 月」） | — |
+
+**「日」後那一字 12 處 12 種全異**（尺照主線第 1988-B 條 `/[年月]\s*\d{1,2}\s*日(.)/`）；**對 c-190…c-196 鉤子稿（c-196 讀 08:29 那一版）零重疊**——開工前先把前批已用的 99 個字列成表再配（本批 12 個字前批都沒用過；a8 的並列形另配 `在`／`回`、a6 並列形配 `連`，也都不在那 99 個裡）。
+**目錄號：全批 21 張零號**（第 4 堆的主軸是「為什麼是日本做的」，號碼不承載那條軸；b9 的「緊鄰目錄號」只寫「相鄰的目錄號」不寫號碼）；**廠牌名與目錄號連寫 0 處**；`qa-batch` 的目錄號互指 0 行。
+⚠ **廠牌引入法逐張配開**（King 一家 19 張，本線最集中）：a1「King 的爵士字標 Electric Bird 錄下」／a2「出版方是 King 的 Electric Bird」／a3「King 的 Paddle Wheel 把新舊四首合成 CD 發行」／a4「經 Warner-Pioneer 轉授權給 King」／a5「アルファ 的 Alfa Jazz 推出」／a6「美國版寫明是 King Records 1987 年的製作」／a7「由 King 的 Electric Bird 出成雙 LP」／a8「回東京 King 錄音室混音，漆盤在日本ビクター 刻」／a9「兩個月後 King 的 Electric Bird 推出」／a10「回東京在 King 的関口台錄音室重混」／a11「在東京混音，1987 年 Paddle Wheel 出黑膠」／b1「King 的 Electric Bird 發行」＋「King 自家的雙 LP 選輯」＋「沿用日本的 K 字頭目錄號」／b2「King 的 Paddle Wheel 出版，日本宣傳盤印著 JASRAC」／b3「由 Paddle Wheel 在日本出版；黑膠交西德 Bellaphon 代工」／b4「《Swing Journal》和 King 一起發想」＋「簽在 King 的 Electric Bird」／b5「由 King 的 Paddle Wheel 上市」＋「在日本由日本コロムビア 壓製」／b6「剪輯與母帶交東京的 King Studios」／b7「King 自家錄音師包辦」／b8「King 的 高浪初郎 收音」＋「在日本同時出了黑膠與 CD」／b9「由 King 以相鄰的目錄號同時推出」／b10「King 的 Paddle Wheel 出黑膠，4 月 21 日的日本 CD 是第一版 CD」。
+
+## 8431　⚠ ⚠ 跨張 n-gram 自查：**混合字種（漢字＋平片假名，主線第 1952-B 條）四輪收斂，定稿 ≥3 張 0 條**
+
+腳本 `c197h-scan.mjs`（沿用 c-195 的 `c195h-scan.mjs`，只換批號與前批清單）：21 張 `hook + note` 串起來，剝掉 `主故事：`／`→`／兩句樣板／`正文寫成…`，分漢字、片假名、混合三輪。
+**第一輪（初稿）混合 ≥3 張 4 條**：`紐約錄音`（a2／b1／b4／b5／b6／b9／b10，**七張**）、`推出黑膠`（a5／b5／b8）、`在紐約錄`（b2／b6／b9）、`高浪初郎`（a1／b7／b8）；**2 張 23 條**（`爵士字標`、`發行年月日`（跨格黏合，a4／b2）、`的詞出自`、`在年月日`、`吹次中音`、`年的發行`、`紐約樂手`、`西德代工`、`在日本出`、`這支五重奏`、`日本市場`、`年月紐約錄`、`年月在紐約` 等）。
+處置：錄音地逐張換句型（a2「錄於紐約」／b1「在紐約的 Clinton 錄音室錄成」／b4「赴紐約…開錄」／b5「於紐約完成錄音」／b6「的 Sound Track Studio 場次」／b9「錄音在 1986 年 10 月」／b10「錄音完成於 1988 年 12 月」）；兩處跨格黏合（a4 g1 句尾「發行」黏上 g2 的日期、b2 同形）改 a4 句尾「出版」、b2 調換格序；b7 拿掉 `高浪初郎`（改「King 自家錄音師」）。
+**定稿逐字**：
+```
+=== han：≥3 張 0 條 ===
+  2 張：高浪初郎(a1,b8) 音薩克斯(a2,b1) 薩克斯風(a2,b1) 油井正一(a9,b8)
+=== kata：≥3 張 0 條／2 張 0 條 ===
+=== mix：≥3 張 0 條 ===
+  2 張：同上四條（人名兩條、樂器名兩條）
+```
+⚠ **連 2 張的非專名殘片清到 0。**
+
+## 8432　⚠ ⚠ 跨批比對（主線第 1985-B 條）：c-190…c-196 的鉤子稿與 c-170…c-195 已落地的正文都掃過
+
+`c197h-scan.mjs` 第 9 道四項：(1) 本批 hook 對 c-190…c-196 鉤子檔 hook、(2) 本批 hook 對 `output/` 全部正文、(3) 本批 `hook＋g1` 對那些正文前兩句、(4) 本批 `hook＋note` 對前批 `hook＋note`。**c-196 鉤子層與本層同時在跑，掃描器讀的是它落地的最新檔（交件前最後一次是 08:29 那一版，a 9／b 6 筆）。**
+**逐條處置，代表性的**：
+- ⚠ ⚠ **a4 的 hook 初稿「這場四重奏先拍成雷射影碟，唱片是轉了兩手授權才出的」與 c-191《Casiopea Perfect Live II》的 hook「⋯先發成雷射影碟，唱片到那年夏天才出」同骨架**（4-gram 撞四條）→ hook 改走授權鏈「東京錄下的這場四重奏，出唱片的授權轉了兩手才到 King」，影碟只留在 g1。
+- ⚠ ⚠ **a10 研究層 hookCandidate 2「四首裡兩首是 1958 年那一班團員寫的老曲」與 c-196 b《New Year's Eve at Sweet Basil》的 hook「四首裡有兩首的作者，錄音時早已離開這支樂團」同骨架** → 不用，改走〈Moanin'〉八小節。
+- **b1 研究層 hookCandidate 1「上一次領銜是 1962 年，二十三年後替他開口的是日本唱片公司」與 c-192 a《Trip to the Orient》的 hook「隔了十二年才再掛名錄音，出版方遠在東京」同骨架** → 不用，1962 那一格整格捨去。
+- **b9 開頭前四字 `同一天、` 撞 c-190《Swingin' Street》** → 改「同日上市、」。
+- a1 `日本巡演`（c-193《Akisakila》hook）、`了俱樂部`（c-193《Live at Sweet Basil》hook）→「為日本行挑人的排練」「變成俱樂部」；a4 `重奏唱片`（c-192《This Is New》hook）→「四重奏，出唱片的」；b5 `了錄音師`（c-192《At the Village Vanguard Vol. 2》hook）→「控制台後面卻換了人」；b7 `一張現場`（c-190《Mobo Live》hook）、`的俱樂部`（c-195《Paradox》hook），並預先避開 `的一整晚`（c-195《Live in Japan》hook）→「那一夜，成了樂團首張實況盤」；b10 `的節奏組`（c-191《The Spice of Life》hook）→「兩位班底來接手節奏組」。
+- hook 對已上架正文逐條換掉的：a3 `只有鼓手`、a9 `是樂團的`、b2 `手的名字`／`一個字母`、b4 `紐約樂手`／`日本爵士`／`出自日本`、b6 `其中一首`、b8 `兩場公演`／`錄下的實況`、b9 `這張碟的`／`的目錄號`／`的那張碟`／`的另一張`、b10 `貝斯與鼓`／`年就離團`／`兩人隔年`／`節奏組隔`、a11 `那首曲子`／`十一分鐘`／`曲在這裡`。
+**定稿殘留**：(1) hook 對前批 hook **只剩樂器名 `薩克斯風` 一條**（b1 對 c-195《Warne Marsh Meets Gary Foster》）；(2) hook 對已上架正文只剩四條單張命中：`十五週年`（a6，數字詞）、`十多年前`（a9，數字詞）、`曲在盤上`（a11）與樂器名 `薩克斯風`（b1）——照 c-193 第 7664 條、c-195 第 8112 條的分寸不再改。**開頭前四字撞前批 0；「日」後一字撞前批 0。**
+⚠ **已上架／在途的同掛名卡頭兩句逐張比過**（c-196 b《New Year's Eve at Sweet Basil》、c-196 a《Pin Point》（Cuber）、c-196 b《Great Standards Vol.1》、c-193／c-195 的 Waldron 各張、c-196 b Super Quartet《Live at Sweet Basil》）：**頭兩句同形 0 處**。
+
+## 8433　⚠ ⚠ hook 與 hook 之間（主線第 1964-B 條）：**門檻 2 張，動筆前、動筆後與交件前各跑一次**
+
+動筆前先避開兩條：a5 與 a10 本來都想用「壓軸那首」（a10 改「壓軸曲的開頭八小節」、a5 改「壓軸的俄國浪漫曲」，兩者 4-gram 不重疊）；b4 與 b5 開頭都是「五」（`五位紐約`／`五個人與`，前四字不同）。
+**定稿逐字**：
+```
+=== hook×hook（混合字種）≥2：0 ===
+開頭前四字重複：0
+```
+**兩端都是 hook 原文的殘片：0 條。** hook 對「未來的正文」那一縫靠挑字：定稿 hook 避開 `第一張`（b7 用「首張實況盤」）、`唯一一`、`一天錄完`（b2 的一天錄完只在 note 裡寫成「就錄完全部曲目」）、`只在日本`、`同一張碟`、`的音樂節`、`錄音室裡` 這類本線常見四字串。
+
+## 8434　骨架歸屬表（21 張全表；**「這條骨架全批只走本張」逐張都有，讓出的卡不點名對方**）
+
+| 骨架 | 歸屬 | 讓出的卡改寫什麼 |
+|---|---|---|
+| 週一駐演起於赴日巡演的挑人排練 ＋ Electric Bird 錄兩個週一、東京混音 ＋ 兒子 Miles Evans 在小號聲部 ＋ Gramavision 授權 | **a1** | **a9 只寫「將近五年」、不寫 1983 年 4 月的起源**；a7／a8／a9 零字寫 Miles Evans 是兒子 |
+| Benson 與 Cuber 主客對調（1966 年 Benson 的四重奏專輯）＋ Matthews 寫四首 | **a2** | Matthews 生平零字（c-196 a《Pin Point》已用） |
+| 兩班 Messengers 一張碟、只有鼓手沒換 ＋ Javon Jackson 當年入團 ＋ Shorter 的〈Witch Hunt〉 | **a3** | **a10 零字寫 1987 年班底**；a3 零字寫「同晚另一張」（那一格歸 a10） |
+| **影碟 → Warner-Pioneer → King 的授權鏈** ＋ 東京音樂廳 ＋ Holiday 在班機上寫詞 | **a4** | **「影碟」骨架全批只走 a4**：b8 的雷射影碟《Big Apple Jam》整格捨去 |
+| 曲目各自的來歷（〈Dark Eyes〉〈Softly…〉）＋ 最早的版本是 Alfa Jazz 同日的黑膠與 CD | **a5** | Vol.3–5、Limetree 改題、團史零字（c-196 b 已用） |
+| Little 逝世二十五週年前的最後兩晚 ＋ 1961 年節奏組原班重聚 ＋〈Number Eight〉1965 年才發表 ＋ 美國版寫明 King 製作 | **a6** | **a11 零字寫「原班」與 Little 的逝世日** |
+| 〈Gone〉1958 年 3 分 37 秒 → 16 分 ＋ Anita／Hendrix 與〈Snowflake Bop〉作者欄 ＋ 六首全出自同一晚 | **a7** | a1 的 Hendrix 只寫首數 |
+| **葛萊美（第 31 屆、得獎、追贈）** ＋ 東京混音、日本ビクター 刻片 ＋ 川崎燎〈Cosmos〉 | **a8** | **葛萊美全批只走 a8**；a9 不寫獎 |
+| Johnny Coles 是 1958–64 年的老團員 ＋ Evans 辭世兩個月後上市 ＋ 駐演將近五年 ＋ 油井正一 | **a9** | a8 零字寫辭世日期；**不寫「告別作」**（c-197 b 第 7777 條第 4 點） |
+| 〈Moanin'〉開頭八小節 ＋ 関口台錄音室重混 ＋ 同晚另三首兩年後才出 ＋〈Blues March〉 | **a10** | a3 零字寫同晚 |
+| 〈The Prophet〉題獻封面畫家、三首裡最長 ＋ 1961 年 7 月 16 日同一晚的曲目 ＋ 東京混音 ＋ Gitler 英文解說 | **a11** | — |
+| 一人四種薩克斯風兩種長笛 ＋ 十一人三位打擊 ＋ King 自家雙 LP 選輯 ＋ 西德沿用 K 字頭 | **b1** | 1962 Columbia 領銜整格捨去（8432）；George Young 生平零字 |
+| **「名字印錯」** ＋ 日本宣傳盤的 JASRAC 與條碼 ＋ 一天錄完的四重奏 | **b2** | **「印錯」骨架全批只走 b2**：a1〈Prince Of Darkness〉作者欄矛盾、a3 原壓〈Senic Route〉、a11 美國版 `Erich Dolphy` 全部整格捨去 |
+| **「載體曲數差」**（CD 八軌、黑膠六軌）＋〈The Gentle Rain〉＋ 日本 CD／西德黑膠 ＋ Holland／DeJohnette | **b3** | **這條骨架全批只走 b3**：a1 Gramavision 刪曲、a4 CD 多兩首、a6 CD 加收〈Bee Vamp〉與副題、a7 日本 CD 刪〈Gone〉、a8 CD 刪〈Cosmos〉、a9 黑膠無〈Little Wing〉、b7 CD 少〈Recado〉、b8 黑膠少〈Recado〉**全部整格捨去** |
+| **團的來歷（《Swing Journal》＋ King）** ＋ Matthews 1978 年簽 Electric Bird ＋ 美國版晚兩年 | **b4** | **團的來歷只在 b4**；「累計 20 萬張」單源，整格捨去 |
+| 五人不變、換錄音師 ＋ Original Digital Recording 貼紙 ＋ 美國 CD 有一款由日本コロムビア 壓 | **b5** | **〈Mood Piece〉進電影原聲帶那格捨去**（電影骨架只走 b9） |
+| **「直錄兩軌」工法** ＋ Billy Joel ＋ Gomez 從本張起 ＋ King Studios 剪輯母帶 | **b6** | **這條骨架全批只走 b6**：b9 的同一句工法捨去；N.Y. 1st Call Series 零字 |
+| 首張實況、錄在東京 ＋ King 自家錄音師包辦 ＋ Young 自作〈Misticized〉 | **b7** | 團員介紹段、Highlights 黑膠捨去 |
+| 東京收音、紐約混音（與其餘各張「紐約錄、東京混」相反）＋ 中野兩場 ＋ 油井正一 | **b8** | 影碟讓給 a4 的骨架（見上） |
+| **日本電影原聲帶同日、相鄰目錄號** ＋〈Love For Sale〉同長 | **b9** | b5 零字寫原聲帶 |
+| Patitucci／Weckl 一年就走 ＋ 日本 CD 是第一版 CD ＋ Ellington 首尾 | **b10** | 不寫「第一張」、不點名《Plays Blue Note》 |
+| **「黑膠單面結構」**（一面一首、B 面兩首長曲） | **全批 0 張** | a6「一面一首」、a11「A 面整面」、b5「B 面只有兩首」全部捨去——**c-194 a《Hello, Hank Jones》、c-196 a《Imo Live》、c-192 b《Rokuyu》三張已上架／在途 hook 都是這一形** |
+
+⚠ **「為什麼是日本做的」這一格 21 張都有，逐張配成不同句型**（見 8430 廠牌引入法）；**寫作層照各卡的句型寫，不要統一成「日本唱片公司在紐約⋯」。**
+⚠ **21 張 note 互相零點名對方的盤名、零點名池中同藝人盤名**（第 1787-B 條）：Benson《It's Uptown》、Shorter 的 Blue Note 專輯、Blakey 1958 的那張、Miles Davis 的 Gershwin 選曲、Dolphy 1961 年 Five Spot 的唱片、Gil Evans 1974 的 Hendrix 曲集、Waldron 1959《Left Alone》、Cuber《Pin Point》、MJQ《Plays Blue Note》、King 的雙 LP 選輯名全部零字（a10 寫「另一張 King 的 CD」、b1 寫「King 自家的雙 LP 選輯」）。`qa-batch` 的 `互指?` 定稿 0 行（初稿 1 行，見 8428 第 5 點）。
+
+## 8435　⚠ ⚠ ⚠ 同掛名多張怎麼分軸
+
+**Manhattan Jazz Quintet 七張**（團的來歷只在 b4）：
+| | b4 首張 | b5《Autumn Leaves》 | b6《My Funny Valentine》 | b7《Live at Pit Inn》 | b8《MFT - Live in Tokyo》 | b9《The Sidewinder》 | b10《Caravan》 |
+|---|---|---|---|---|---|---|---|
+| 軸 | 團的來歷＋Matthews 與 Electric Bird | **錄音師的變動**（班底不變） | **工法**＋**班底變動**（Gomez 入） | **東京現場**（首張實況） | **東京錄、紐約混** | **曲目 × 電影** | **班底變動**（Patitucci／Weckl） |
+| 陣容寫法 | 「領班 David Matthews…；同陣有 Soloff、Young、Moffett、Gadd」 | 「五人與首張逐名相同」 | 「貝斯從本張起換成…Eddie Gomez」 | 「Eddie Gomez、Steve Gadd 撐節奏，與前一張同一組五人」 | 零名單 | 零名單 | 「Patitucci 與 Weckl…接替 Gomez 與 Gadd」 |
+| 日本那一格 | 雜誌＋King 發想 | 美國 CD 在日本壓 | 東京剪輯母帶 | 錄在東京、King 錄音師 | King 收音、日本同時出 | King 相鄰目錄號 | 日本 CD 是第一版 CD |
+⚠ **七張零字寫 `MJQ` 縮寫**；**團員個人生平零字**；**同團同曲（〈Autumn Leaves〉〈Recado Bossa Nova〉〈Rosario〉…）零字互指。**
+
+**Gil Evans 四張**（Liepolt、N.Y. 1st Call Series、Sweet Basil 沿革零字）：a1＝**起源**（赴日巡演的挑人排練）＋父子；a7＝**一首曲子的前身**（〈Gone〉1958）＋Anita；a8＝**獎**（葛萊美追贈）＋日本ビクター 刻片；a9＝**舊部與時序**（Coles、辭世兩個月後上市、將近五年）。**四張各只寫自己那兩個週一或那一晚的日期，a8／a9 同兩晚（1986-12-01／22）只在 a8 寫日；a9 只寫「1986 年 12 月」。**
+
+**George Young 三張**：b1＝**樂器**（四種薩克斯風兩種長笛、十一人）；b2＝**客席與宣傳盤**（Thielemans 印錯、四重奏）；b3＝**載體**（CD／黑膠差兩首）＋新節奏組。**「第二張／第三張」序數三張都不寫**（研究層原分配 b2「第二張」、b3「第三張」——預算不夠，整格捨去；寫作層不要自補）。
+
+**Art Blakey and the Jazz Messengers 兩張**（a3／a10，同一晚 1985-03-24 的不同曲目；c-196 b《New Year's Eve》是第三場）：a3＝**兩班人**（1985／1987、Javon Jackson、Shorter）；a10＝**曲子的來歷**（〈Moanin'〉〈Blues March〉）＋関口台重混＋「同晚另三首兩年後才出」。**a3 不寫日、a10 寫 3 月 24 日**；a3 不指名哪一首是 1987 年錄的（研究層第 8244 條）。
+
+**Mal Waldron, Richard Davis, Eddie Blackwell, Donald Harrison, Terence Blanchard 兩張**（同兩晚 1986-10-03／04）：a6（Vol. II）＝**時間**（Little 忌日前兩晚、1965 年才發表）＋「原班」＋美國版寫明 King 製作；a11（Vol. I）＝**題獻**（〈The Prophet〉與封面畫家）＋1961 年 7 月 16 日同一晚＋Gitler。**a6 寫 3、4 日，a11 只寫「1986 年 10 月」；a6 寫「原班重聚」、a11 零名單**（研究層第 8242 條「兩集班底句要不同句型」——a11 乾脆不寫班底）。
+
+## 8436　⚠ ⚠ 「他／她」的引入法配表（給寫作層）（主線第 1973-B 條；**材料逐字都在該卡 note 裡**；⚠ **本線「生平零字」，年齡／生年與出生地兩種不可用**）
+
+**跨三張以上的人**：
+| 人 | 卡 | **引入法** | note 裡可用的逐字材料 |
+|---|---|---|---|
+| **Gil Evans**（4 張） | a1 | **名字直接領句** | 「1983 年 4 月 Evans 為 5 月的日本巡演開工作坊」 |
+| | a7 | **親屬**（太太的建議） | 「太太 Anita 當年勸他聽 Hendrix」 |
+| | a8 | **掛名欄**（葛萊美得主欄） | 「得主 Gil Evans 與 Monday Night Orchestra」 |
+| | a9 | **樂團主人**（經舊部之口帶出） | 「1958 到 1964 年他就在 Gil Evans 的樂團裡」 |
+| **David Matthews**（6 張） | a2 | **作曲編曲欄** | 「其餘四首出自 David Matthews，製作、編曲與指揮也是他」 |
+| | b1 | **製作欄** | 「David Matthews 製作」 |
+| | b4 | **廠牌關係＋領班** | 「領班 David Matthews 1978 年離開 CTI 後就簽在 King 的 Electric Bird」 |
+| | b5 | **名單並列**（只作一個作曲者名） | 「Matthews 的〈Mood Piece〉」 |
+| | b8 | **新曲作者** | 「Matthews 三首新曲」 |
+| | b6／b7／b9／b10 | **零領句**（名字不進 note） | — |
+| **George Young**（5 張） | b1 | **樂器** | 「輪流吹次中音、中音、高音與超高音薩克斯風」 |
+| | b2 | **編制欄**（四重奏裡只拿一種樂器） | 「Young 只拿次中音」 |
+| | b3 | **旁人**（陪他的節奏組；名字不進 note） | 「Dave Holland 彈貝斯、Jack DeJohnette 打鼓」 |
+| | b4 | 名單並列 | 「同陣有 Soloff、Young…」 |
+| | b7 | **作曲欄** | 「George Young 也寫了一首〈Misticized〉」 |
+| **King（機構）**（19 張） | 見 8430 | 逐張不同介詞與動詞 | — |
+
+**跨兩張的人**：
+| 人 | 出現在 | 寫法 |
+|---|---|---|
+| **Eddie Gomez／Steve Gadd** | b6、b7、b10（b4 只 Gadd） | b6「**身分**：曾在 Bill Evans 三重奏」；b7「**職務**：撐節奏」；b10「**前任**：接替 Gomez 與 Gadd」；b4 名單並列 |
+| **Blanchard／Harrison** | a6 | 「小號與中音由 Blanchard、Harrison 接手」（**位置補位**）；a3／a10／a11 名字不進 note |
+| **Mal Waldron** | a4 | 「據 Waldron 回憶」（**外人之口**的反面：本人之口）；a6／a11 只在掛名 |
+| **Benny Golson** | a10 | g1「Benny Golson 勸他補上過門」（**同台者**）、g4「Golson 受紐奧良行進樂隊啟發」（**作曲欄**） |
+| **油井正一** | a9、b8 | a9「解說由 油井正一 執筆」；b8「附 油井正一 的解說」——**職務兩種句型，生平零字** |
+| **高浪初郎** | a1、b8 | a1「帶回東京由 高浪初郎 混音」；b8「King 的 高浪初郎 收音」 |
+| **Benson／Cuber** | a2 | 「吉他 George Benson 只彈…」（**樂器**）、Cuber 以**作曲欄**（兩首都出自 Cuber 之手） |
+| **Toots Thielemans** | b2 | **器物＋名字直接領句**（口琴、封面上的名字） |
+| **Johnny Coles** | a9 | **名字直接領句**（第二句主語） |
+
+## 8437　⚠ ⚠ 第二句的句型配表（給寫作層）（主線第 1985-B 條）
+
+**本批 21 張的 hook 有 12 張本身就具名或以物件領句**（a2 `Benson`、a3 `Messengers`、a6 `Little`、a7〈Gone〉、a9 `Evans`、a11 `Dolphy`、b2 口琴手的姓、b4 `King`、b6 `Billy Joel`、b7 `Pit Inn`、b10 `Corea`、a4 `King`）——**c-187 第 6473 條「具名或物件領句」的解，照辦**。
+| 卡 | hook 的代稱／懸念 | **第二句該做的事（句型）** |
+|---|---|---|
+| a1 | 「日本行挑人的排練」 | **年份補位**：「1983 年 4 月」起頭，Evans 在這一句具名 |
+| a2 | 「主客正好相反」 | **曲目補位**：標題曲與〈Love Notes〉，`George Benson` 全名在此句 |
+| a3 | 「兩班」「同一人」 | **場次對照**：「三首錄自 1985 年 3 月…一首 1987 年 3 月」，Blakey 在句尾具名 |
+| a4 | 「授權轉了兩手」 | **載體補位**：「影碟 1986 年先問世」，接授權鏈 |
+| a5 | 「俄國浪漫曲」 | **曲名補位**：〈Dark Eyes〉起頭，接 1843 年的詩 |
+| a6 | 「紀念場」「最後兩晚」 | **日期對照**：1986 年 10 月 3、4 日對 1961 年 10 月 5 日 |
+| a7 | 「三分半鐘的小品」 | **前身補位**：1958 年與 Miles Davis 的 Gershwin 選曲（不寫盤名） |
+| a8 | 「拿下葛萊美」「離世」 | **獎項補位**：「1989 年第 31 屆」起頭，類別名照 note |
+| a9 | 「客席的老將」 | **名字補位**：`Johnny Coles` 當主語（**不要用「那位老將是」**） |
+| a10 | 「團裡鋼琴手」 | **人名＋年份補位**：`Bobby Timmons` 與 1958 年同句（**不要用「那位鋼琴手是」**） |
+| a11 | 「封面畫家」「題獻曲」 | **題獻對象補位**：〈The Prophet〉與 Richard "Prophet" Jennings |
+| b1 | 「一個人」「四種」 | **樂器清單補位**：次中音、中音、高音、超高音逐一列，`George Young` 在此句具名 |
+| b2 | 「口琴手的姓」 | **曲目補位**：〈My Foolish Heart〉起頭，`Toots Thielemans` 接在後面 |
+| b3 | 「只收在 CD 上」 | **載體對照**：「CD 八軌、黑膠六軌」 |
+| b4 | 「一本爵士雜誌」 | **刊物補位**：《Swing Journal》當主語 |
+| b5 | 「控制台後面」 | **職務補位**：直接寫「錄音師換成 Tom Jung」，五人名單放第三句以後 |
+| b6 | 「直接錄進兩軌」 | **盤面補位**：「盤上寫明」起頭 |
+| b7 | 「那一夜」 | **日期補位**：1986 年 4 月 |
+| b8 | 「東京兩場」「紐約」 | **日期＋場館補位**：4 月 14 日與 19 日、中野サンプラザ |
+| b9 | 「日本電影的原聲帶」 | **片名補位**：《ベッドタイムアイズ》當主語（日期放後） |
+| b10 | 「兩位班底」 | **名字補位**：`Patitucci 與 Weckl` 當主語 |
+⚠ **這一欄與 8436 分開配**：引入法管「這位藝人第一次出場靠什麼」，第二句句型管「hook 的懸念怎麼落地」。
+
+## 8438　⚠ ⚠ 卡單與研究稿有出入時一律以研究稿為準——逐筆落地
+
+- **b5《Autumn Leaves》**：卡單「班底換了一角」→ **note 寫「五人與首張逐名相同，錄音師換成 Tom Jung」**（研究層第 8268 條第 2 點；hook 也據此）。
+- **b10《Caravan》**：卡單「本盤起是 Patitucci／Weckl」→ **note 零字寫「第一張」、零字點名《Plays Blue Note》**（第 8268 條第 1 點；該盤在 c-198）。
+- **a5 GJT Vol. 2**：卡單「Vol.1、Vol.3、Vol.4 同場」→ **note 零字寫 Vol.3–5**；「最早的版本」照派工信寫 1988 年 10 月 25 日的 Alfa Jazz，不寫「日本原盤」斷言、不寫 Timeless（第 8240 條）。
+- **a8《Bud and Bird》**：低音長號名字兩說 → **零字**（第 8238 條第 4 點）。
+- **a11 Remembered Vol. I**：美國版那行 Paddle Wheel 字樣 → **零字**（第 8238 條第 5 點）。
+- **a6 Vol. II**：盤名、年份照卡單（1987、無副題）；CD 加收〈Bee Vamp〉與副題那一格整格捨去（載體骨架歸 b3）。
+
+## 8439　⚠ ⚠ `uncertain` 與「查不到」的格子：**一律整格捨去，21 張零處否定句**
+
+整格捨去逐條：b9 原聲帶兩軌是否同一份錄音（只寫「同長」，不寫「同一份」「為電影新錄」）、b4「累計 20 萬張」（單源）與 Gold Disk（單源）、a10 1986 年葛萊美提名（無類別）、a3 哪一首是 1987 年錄的（不指名）、a7〈Snowflake Bop〉作者身分（只並列「太太 Anita」與「作者欄寫 Anita Evans」）、a11〈Booker's Waltz〉作者、a9 題名與辭世的關係（只寫時序）、a6「刻意選在忌日前」（只寫「落在」）、a8 低音長號手、b3〈Butterfingers〉作者、b7 團員介紹段（只出現在分售 CD 的曲目表）。
+**自查**：`不是／沒有／並不／未曾／從未／並非／而非／查無` 在 21 張 `hook＋note` **0 處**；`不[一-龥]` **0 處**（初稿 a8 hook「領班已經不在」一處，改「已經離世」）；**hook 零處「不是／卻不是／並非」**。b6 的工法寫成「省去混音與疊錄」、b3 寫「多出〈The Gentle Rain〉與〈Butterfingers〉」，都是正面表述。
+
+## 8440　本線四條硬邊界的落地
+
+1. **生平零字**：出生年地、早年經歷、與本作無關的獎項全部不進 note（Gil Evans 生年與 72 歲、Richard Davis、Ira Gitler 的七百篇與「sheets of sound」、Kenny Garrett、Billy Hart 前資歷、George Young 生年地與 NARAS、油井正一 生年地、Richard Tee、Jean Toussaint 全部捨去）。**留下的人物資歷都是與本張直接綁定的關係**：a2 Cuber 在 Benson 1966 年的四重奏裡、a3 Shorter 在這個樂團待四年與 Javon Jackson 當年入團、a8 川崎燎 1974 年參與過 Evans 樂團的錄音、a9 Coles 1958–64 在 Evans 樂團、b4 Matthews 1978 年簽 Electric Bird、b6 Gomez 曾在 Bill Evans 三重奏、b10 Patitucci／Weckl 是 Corea 的節奏組——**寫作層不要往外延伸成生平**。
+2. **池中他張盤名零字**（見 8434 末段）。
+3. **King 的 Sweet Basil 計畫零字**：`Liepolt`／`N.Y. 1st Call Series`／Sweet Basil 沿革 21 張零處（a1／a3／a6／a7／a8／a9／a10／a11 研究稿的製作欄都有 Liepolt，一律只取「東京混音」那半）。
+4. **葛萊美只在 a8**；**a9 零字寫「告別作」「最後的錄音」**；**b9 只寫「同長」**。
+
+## 8441　兩支腳本逐字結果（工作目錄 `desc-tools/`，交件前最後一次）
+
+```
+$ node qa-batch.mjs hooks c197
+（略過 qa-check-hooks.mjs：本 repo 無此檔。字數／禁語／開頭雷同／分數星等
+  請改跑 node chk-hook-crossgroup.mjs c197，本階段只做事實對照與字元掃描。）
+全部通過 ✓
+
+$ node chk-hook-crossgroup.mjs c197
+c197｜2 組｜21 張
+
+hook 加權 20.5–29｜note 201–229
+
+✓ 全部通過
+```
+（倒數第二輪 `qa-batch` 報 `互指?` 1 處：b5 的 `Michael Farrow`，見 8428 第 5 點，已改。）
+**本層另外自量的七項**（兩支腳本都驗不到）：預算 21/21 ≤230（8427）；hook 原始 ≤30 21/21；「日」後一字 12 種全異、對前批零重疊（8430）；目錄號 0 張；hook×hook 2 張門檻 0 條（8433）；跨張 4-gram ≥3 張 0 條、非專名 2 張 0 條（8431）；hook 與 note 非專名 6 字以上重複 0 處（8429）。**中英數間距**：程式掃過 0 處；**每張最後一格都以漢字收尾**（避免與樣板「這條骨架…」黏成拉丁字＋漢字）。
+
+## 8442　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有條目一字未動**（`qa-batch` 零假名誤報）
+
+## 8443　⚠ 給寫作層的六件（鉤子層自己點出來的）
+
+1. **b3 是全批唯一寫載體曲數差的卡**；其餘八張的 CD／黑膠差異都已整格捨去，**不要從 facts 撈回**。
+2. **a4 是全批唯一寫雷射影碟的卡**；b8 的《Big Apple Jam》不寫。
+3. **a3 不指名哪一首是 1987 年錄的**；**a6 的「落在忌日前的最後兩晚」不要寫成刻意安排**；**a9 不寫「告別作」**。
+4. **a7 不要寫成「他太太寫的曲子」**——照 note 並列兩件事。
+5. **b5 不寫 Michael Farrow**（本卡 facts 沒有）；**b10 不寫「第一張 Patitucci／Weckl 盤」**。
+6. **Manhattan Jazz Quintet 七張零字 `MJQ`**；b6 的工法句、b7／b8 的現場句不要互抄（b6「一次錄成兩軌」、b7「現場錄音與混音都由 King 自家錄音師包辦」、b8「King 的 高浪初郎 收音，CD 在紐約…混音」）。
+
+## 8444　⚠ 給上層（一件，非阻擋）
+
+- **c-196 b《The Super Quartet of Mal Waldron Featuring Steve Lacy《Live at Sweet Basil》》的鉤子稿 note 第四格寫了「兩人製作的 Gil Evans 大樂團現場，得了 1989 年第 31 屆葛萊美」**（08:29 版）——與本批派工信「葛萊美只寫在《Bud and Bird》一張」在跨批層面重疊。**本層照派工信把葛萊美留在 a8，不改本批**；c-196 那一格是否保留由主線決定（該層仍在跑）。
+
+## 8445　交件前自驗與邊界 ＋ 編號區間結算
+
+- **續跑保護**：初稿 21 筆一成形就 `emit write` 整份落檔，之後每一輪修改都由 `c197h-emit.mjs` 以研究稿 `key` 冪等整份重寫；容器重啟後重跑 emit 即可接上（草稿在 `scratchpad/c197h/c197h-drafts.mjs`）。
+- **邊界**：只動了 `desc-tools/batches/hooks/c197-hooks-a.json`、`c197-hooks-b.json`（新增）與本檔（append 本段）；`jp-proper-names.json` append 0；`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／卡單／研究稿／其他批次的檔／KV／Firestore 一律未碰；**零 git 操作**（未 add／commit／push、未動索引）。
+- **append 前後自驗**：寫入前 `git show HEAD:` 與工作區皆 769 行、`^## ` 78 條；本段只接在檔尾，寫入後前 769 行逐字比對不變。
+- **編號區間結算**：本段用 **8426–8445（20 條）**，**8446–8465 未用、保留不越界**（寫作層 a 8466–8480、b 8481–8495）。
