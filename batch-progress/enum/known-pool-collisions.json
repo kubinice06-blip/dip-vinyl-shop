@@ -1,167 +1,183 @@
 {
- "_note": "策展層已逐張確認「就是池中那張碟」的撞池名單。主線第 1960-B 條（2026-09-25）：上一批把撞池寫成裁定之後，下一批的 slice 仍然把同一張切進來（c-183 第 5703 條 → c-184 #2），所以把裁定餵回切批腳本。只收『同一張碟』，不收『同藝人不同碟』。",
- "_fields": "rgMbid 有就以它為主鍵；artist/album 為輔（norm 後比對）。poolRow 是池中那一列，ruling 是立這一筆的裁定號。",
- "items": [
-  {
-   "rgMbid": "1f97f933",
-   "artist": "フォー・ユニッツ",
-   "album": "フォー・ユニッツ",
-   "poolRow": "宮沢昭《Four Units》1969（seed ＋ c132）",
-   "ruling": "c-183 a 第 5665 條",
-   "shape": "和文團名＝外文盤名，逐軌時長相同"
-  },
-  {
-   "rgMbid": "920dcb14",
-   "artist": "富樫雅彦カルテット",
-   "album": "Speed and Space",
-   "poolRow": "富樫雅彦《Speed and Space》1969（⚠ apex:pearl）",
-   "ruling": "c-183 a 第 5666 條",
-   "shape": "編制後綴，盤名逐字相同"
-  },
-  {
-   "rgMbid": "1823a1c4",
-   "artist": "Takehiro Honda Trio",
-   "album": "This Is Honda",
-   "poolRow": "本田竹曠《This Is Honda》1972（seed）",
-   "ruling": "c-183 b 第 5703 條 (1) ＋ c-184 a 第 5717 條",
-   "shape": "⚠ 上一批已寫成裁定，下一批仍被切進來——立本條的直接原因"
-  },
-  {
-   "rgMbid": "4734c89a",
-   "artist": "Kousuke Mine",
-   "album": "Out Of Chaos",
-   "poolRow": "峰厚介（池中兩列）",
-   "ruling": "c-184 a 第 5718 條",
-   "shape": "變體全羅馬字，靠 Discogs 藝人頁 realname 查出漢字名才掃到"
-  },
-  {
-   "rgMbid": "279439ee",
-   "artist": "阿部薫",
-   "album": "なしくずしの死",
-   "poolRow": "阿部薫《Mort À Crédit》1976",
-   "ruling": "c-184 b 第 5753 條",
-   "shape": "⚠ 和文＝外文等價形，盤面印著 `Mort À Crédit = なしくずしの死`，兩邊各取一半"
-  },
-  {
-   "rgMbid": "52b52733",
-   "artist": "細野晴臣＆イエロー・マジック・バンド",
-   "album": "はらいそ",
-   "poolRow": "細野晴臣（池中已有；slice 預標覆核成立）",
-   "ruling": "c-186 a 第 5937 條",
-   "shape": "slice 預標「確定撞池」，策展層覆核成立"
-  },
-  {
-   "rgMbid": "2a7b75b3",
-   "artist": "Ryo Kawasaki",
-   "album": "Prism",
-   "poolRow": "川崎燎（池中已有）",
-   "ruling": "c-186 a 第 5939 條",
-   "shape": "⚠ 同時要注意 MB 上另一筆同名 `Prism` 是同名異團（加拿大團），退的理由要寫對"
-  },
-  {
-   "rgMbid": "3a00953a",
-   "artist": "日野皓正",
-   "album": "Horizon",
-   "poolRow": "《Journey Into My Mind》1973 與《Into Eternity》1974 的錄音（六軌全部，兩軌時長逐秒相同）",
-   "ruling": "c-186 b 第 5973／5991 條",
-   "shape": "⚠ ⚠ **合輯型撞池**：MB 標 `Album`、`secondary-types` 空、RG tags 空、titleCheck 三欄一致，chk-prop 五道與六道 dedup 全部放行；唯一線索是 Discogs 原壓的 `formats` descriptor（`Compilation`）與 notes 寫出兩個來源 master"
-  },
-  {
-   "rgMbid": "7c90b777",
-   "artist": "Samba Calioca",
-   "album": "Sunny Place Carnival",
-   "poolRow": "（批內同碟重複 RG，收的是 `カリオカ` 那一筆）",
-   "ruling": "c-186 a 第 5941 條",
-   "shape": "同一張 `Kitty MKF 1041`、Discogs 只有一個 master、`namevariations` 逐字 `[\"Samba Calioca\",\"カリオカ\"]`。⚠ ⚠ 2026-09-25 修：這一筆原本填的是**藝人** MBID `18c3632b`（カリオカ），要擋的 RG 是 `7c90b777`——那一道本來永遠命中不到（c-187 a 第 6049 條抓到，主線第 1978-B 條）"
-  },
-  {
-   "rgMbid": "2db00398",
-   "artist": "坂本龍一＆渡辺香津美",
-   "album": "TOKYO JOE",
-   "poolRow": "坂本龍一《Thousand Knives》1978 ＋ 渡辺香津美《KYLYN》1979（seed）的錄音",
-   "ruling": "c-188 b 第 6437 條",
-   "shape": "⚠ 合輯型撞池（8/8 既有錄音）＋ house 錯（原壓 Better Days 屬 jp-1 門內）"
-  },
-  {
-   "rgMbid": "d4c0c0ca",
-   "artist": "板橋文夫",
-   "album": "渡良瀬",
-   "poolRow": "板橋文夫《Watarase》1982（seed，⚠ apex:pearl）",
-   "ruling": "c-188 b 第 6438 條",
-   "shape": "⚠ 和文＝羅馬字等價形，slice 的 album 只拿到和文一半；另一半在 titleCheck.titlesSeen"
-  },
-  {
-   "rgMbid": "70f376a1",
-   "artist": "北村英治",
-   "album": "ハッピー・クッキング",
-   "poolRow": "北村英治《Happy Cooking Vol. II》1973（seed ＋ c134）",
-   "ruling": "c-191 a 第 6657 條",
-   "shape": "MB 只建 1986 CD 再發的數位版、題取和文；barcode 與 Apollon BY30-5152 逐字相同——MB release 的目錄號是原壓、日期不是"
-  },
-  {
-   "rgMbid": "7c093adc",
-   "artist": "Sadao & Charlie",
-   "album": "Iberian Waltz",
-   "poolRow": "渡辺貞夫 & チャーリー・マリアーノ《Iberian Waltz》1967（c-173 b）",
-   "ruling": "c-190 a 第 6603 條",
-   "shape": "半張合輯型撞池：1969 コロムビア 合輯的 1985 Denon CD，五軌裡兩軌＝池中 Takt JAZZ-7 的 A 面"
-  },
-  {
-   "rgMbid": "",
-   "artist": "岡野等",
-   "album": "Double Image",
-   "poolRow": "Hitoshi Okano《Double Image》1982（seed ＋ c-87）",
-   "ruling": "c-192 a 第 7237 條",
-   "shape": "⚠ 羅馬字掛名 vs 池中漢字掛名（§1 候選清單的撞池比對沒做轉寫）"
-  },
-  {
-   "rgMbid": "",
-   "artist": "鈴木宏昌",
-   "album": "Rock Joint Biwa",
-   "poolRow": "鈴木宏昌トリオ《ロック・ジョイント琵琶〜組曲 ふることふみ》1972（seed ＋ c-131）",
-   "ruling": "c-192 a 第 7238 條",
-   "shape": "⚠ 羅馬字盤名 vs 池中和文題（§1 候選清單的撞池比對沒做轉寫）"
-  },
-  {
-   "rgMbid": "",
-   "artist": "猪俣猛",
-   "album": "Sounds of Sound L.T.D.",
-   "poolRow": "猪俣猛とサウンド・リミテッド《サウンド・オブ・サウンド・リミテッド》（seed ＋ c-131）",
-   "ruling": "c-192 a 第 7239 條",
-   "shape": "⚠ 羅馬字盤名 vs 池中片假名題（§1 候選清單的撞池比對沒做轉寫）"
-  },
-  {
-   "rgMbid": "17ac6c25",
-   "artist": "山下洋輔",
-   "album": "Banslikana",
-   "poolRow": "山下洋輔《バンスリカーナ》（seed ＋ c-121）",
-   "ruling": "c-192 a 第 7242 條",
-   "shape": "⚠ 羅馬字盤名 vs 池中片假名題；原盤德國 Enja（§1 候選清單的撞池比對沒做轉寫）"
-  },
-  {
-   "rgMbid": "260a7106",
-   "artist": "Red Garland Trio",
-   "album": "Crossings",
-   "poolRow": "Red Garland / Ron Carter / Philly Joe Jones《Crossings》（seed）",
-   "ruling": "c-194 a 第 7366 條附近",
-   "shape": "⚠ 編制後綴（Trio）vs 池中三人聯名串——削後綴後沒有再切分隔符比"
-  }
- ],
- "_jp1_blind_spots": [
-  {
-   "artist": "MALTA",
-   "album": "My Hit & Run",
-   "shape": "自我翻錄：十軌原曲全在池中（交本機處理）"
-  },
-  {
-   "artist": "浅川マキ",
-   "album": "Stranger's Touch",
-   "shape": "自我翻錄：十軌有八軌在池中（交本機處理）"
-  },
-  {
-   "artist": "渡辺貞夫",
-   "album": "Bossa Best Collection",
-   "shape": "同場次第二張 LP：與 RCA《The Girl From Ipanema》十軌共八軌（交本機處理）"
-  }
- ]
+  "_note": "策展層已逐張確認「就是池中那張碟」的撞池名單。主線第 1960-B 條（2026-09-25）：上一批把撞池寫成裁定之後，下一批的 slice 仍然把同一張切進來（c-183 第 5703 條 → c-184 #2），所以把裁定餵回切批腳本。只收『同一張碟』，不收『同藝人不同碟』。",
+  "_fields": "rgMbid 有就以它為主鍵；artist/album 為輔（norm 後比對）。poolRow 是池中那一列，ruling 是立這一筆的裁定號。",
+  "items": [
+    {
+      "rgMbid": "1f97f933",
+      "artist": "フォー・ユニッツ",
+      "album": "フォー・ユニッツ",
+      "poolRow": "宮沢昭《Four Units》1969（seed ＋ c132）",
+      "ruling": "c-183 a 第 5665 條",
+      "shape": "和文團名＝外文盤名，逐軌時長相同"
+    },
+    {
+      "rgMbid": "920dcb14",
+      "artist": "富樫雅彦カルテット",
+      "album": "Speed and Space",
+      "poolRow": "富樫雅彦《Speed and Space》1969（⚠ apex:pearl）",
+      "ruling": "c-183 a 第 5666 條",
+      "shape": "編制後綴，盤名逐字相同"
+    },
+    {
+      "rgMbid": "1823a1c4",
+      "artist": "Takehiro Honda Trio",
+      "album": "This Is Honda",
+      "poolRow": "本田竹曠《This Is Honda》1972（seed）",
+      "ruling": "c-183 b 第 5703 條 (1) ＋ c-184 a 第 5717 條",
+      "shape": "⚠ 上一批已寫成裁定，下一批仍被切進來——立本條的直接原因"
+    },
+    {
+      "rgMbid": "4734c89a",
+      "artist": "Kousuke Mine",
+      "album": "Out Of Chaos",
+      "poolRow": "峰厚介（池中兩列）",
+      "ruling": "c-184 a 第 5718 條",
+      "shape": "變體全羅馬字，靠 Discogs 藝人頁 realname 查出漢字名才掃到"
+    },
+    {
+      "rgMbid": "279439ee",
+      "artist": "阿部薫",
+      "album": "なしくずしの死",
+      "poolRow": "阿部薫《Mort À Crédit》1976",
+      "ruling": "c-184 b 第 5753 條",
+      "shape": "⚠ 和文＝外文等價形，盤面印著 `Mort À Crédit = なしくずしの死`，兩邊各取一半"
+    },
+    {
+      "rgMbid": "52b52733",
+      "artist": "細野晴臣＆イエロー・マジック・バンド",
+      "album": "はらいそ",
+      "poolRow": "細野晴臣（池中已有；slice 預標覆核成立）",
+      "ruling": "c-186 a 第 5937 條",
+      "shape": "slice 預標「確定撞池」，策展層覆核成立"
+    },
+    {
+      "rgMbid": "2a7b75b3",
+      "artist": "Ryo Kawasaki",
+      "album": "Prism",
+      "poolRow": "川崎燎（池中已有）",
+      "ruling": "c-186 a 第 5939 條",
+      "shape": "⚠ 同時要注意 MB 上另一筆同名 `Prism` 是同名異團（加拿大團），退的理由要寫對"
+    },
+    {
+      "rgMbid": "3a00953a",
+      "artist": "日野皓正",
+      "album": "Horizon",
+      "poolRow": "《Journey Into My Mind》1973 與《Into Eternity》1974 的錄音（六軌全部，兩軌時長逐秒相同）",
+      "ruling": "c-186 b 第 5973／5991 條",
+      "shape": "⚠ ⚠ **合輯型撞池**：MB 標 `Album`、`secondary-types` 空、RG tags 空、titleCheck 三欄一致，chk-prop 五道與六道 dedup 全部放行；唯一線索是 Discogs 原壓的 `formats` descriptor（`Compilation`）與 notes 寫出兩個來源 master"
+    },
+    {
+      "rgMbid": "7c90b777",
+      "artist": "Samba Calioca",
+      "album": "Sunny Place Carnival",
+      "poolRow": "（批內同碟重複 RG，收的是 `カリオカ` 那一筆）",
+      "ruling": "c-186 a 第 5941 條",
+      "shape": "同一張 `Kitty MKF 1041`、Discogs 只有一個 master、`namevariations` 逐字 `[\"Samba Calioca\",\"カリオカ\"]`。⚠ ⚠ 2026-09-25 修：這一筆原本填的是**藝人** MBID `18c3632b`（カリオカ），要擋的 RG 是 `7c90b777`——那一道本來永遠命中不到（c-187 a 第 6049 條抓到，主線第 1978-B 條）"
+    },
+    {
+      "rgMbid": "2db00398",
+      "artist": "坂本龍一＆渡辺香津美",
+      "album": "TOKYO JOE",
+      "poolRow": "坂本龍一《Thousand Knives》1978 ＋ 渡辺香津美《KYLYN》1979（seed）的錄音",
+      "ruling": "c-188 b 第 6437 條",
+      "shape": "⚠ 合輯型撞池（8/8 既有錄音）＋ house 錯（原壓 Better Days 屬 jp-1 門內）"
+    },
+    {
+      "rgMbid": "d4c0c0ca",
+      "artist": "板橋文夫",
+      "album": "渡良瀬",
+      "poolRow": "板橋文夫《Watarase》1982（seed，⚠ apex:pearl）",
+      "ruling": "c-188 b 第 6438 條",
+      "shape": "⚠ 和文＝羅馬字等價形，slice 的 album 只拿到和文一半；另一半在 titleCheck.titlesSeen"
+    },
+    {
+      "rgMbid": "70f376a1",
+      "artist": "北村英治",
+      "album": "ハッピー・クッキング",
+      "poolRow": "北村英治《Happy Cooking Vol. II》1973（seed ＋ c134）",
+      "ruling": "c-191 a 第 6657 條",
+      "shape": "MB 只建 1986 CD 再發的數位版、題取和文；barcode 與 Apollon BY30-5152 逐字相同——MB release 的目錄號是原壓、日期不是"
+    },
+    {
+      "rgMbid": "7c093adc",
+      "artist": "Sadao & Charlie",
+      "album": "Iberian Waltz",
+      "poolRow": "渡辺貞夫 & チャーリー・マリアーノ《Iberian Waltz》1967（c-173 b）",
+      "ruling": "c-190 a 第 6603 條",
+      "shape": "半張合輯型撞池：1969 コロムビア 合輯的 1985 Denon CD，五軌裡兩軌＝池中 Takt JAZZ-7 的 A 面"
+    },
+    {
+      "rgMbid": "",
+      "artist": "岡野等",
+      "album": "Double Image",
+      "poolRow": "Hitoshi Okano《Double Image》1982（seed ＋ c-87）",
+      "ruling": "c-192 a 第 7237 條",
+      "shape": "⚠ 羅馬字掛名 vs 池中漢字掛名（§1 候選清單的撞池比對沒做轉寫）"
+    },
+    {
+      "rgMbid": "",
+      "artist": "鈴木宏昌",
+      "album": "Rock Joint Biwa",
+      "poolRow": "鈴木宏昌トリオ《ロック・ジョイント琵琶〜組曲 ふることふみ》1972（seed ＋ c-131）",
+      "ruling": "c-192 a 第 7238 條",
+      "shape": "⚠ 羅馬字盤名 vs 池中和文題（§1 候選清單的撞池比對沒做轉寫）"
+    },
+    {
+      "rgMbid": "",
+      "artist": "猪俣猛",
+      "album": "Sounds of Sound L.T.D.",
+      "poolRow": "猪俣猛とサウンド・リミテッド《サウンド・オブ・サウンド・リミテッド》（seed ＋ c-131）",
+      "ruling": "c-192 a 第 7239 條",
+      "shape": "⚠ 羅馬字盤名 vs 池中片假名題（§1 候選清單的撞池比對沒做轉寫）"
+    },
+    {
+      "rgMbid": "17ac6c25",
+      "artist": "山下洋輔",
+      "album": "Banslikana",
+      "poolRow": "山下洋輔《バンスリカーナ》（seed ＋ c-121）",
+      "ruling": "c-192 a 第 7242 條",
+      "shape": "⚠ 羅馬字盤名 vs 池中片假名題；原盤德國 Enja（§1 候選清單的撞池比對沒做轉寫）"
+    },
+    {
+      "rgMbid": "260a7106",
+      "artist": "Red Garland Trio",
+      "album": "Crossings",
+      "poolRow": "Red Garland / Ron Carter / Philly Joe Jones《Crossings》（seed）",
+      "ruling": "c-194 a 第 7366 條附近",
+      "shape": "⚠ 編制後綴（Trio）vs 池中三人聯名串——削後綴後沒有再切分隔符比"
+    },
+    {
+      "rgMbid": "",
+      "artist": "Chet Baker",
+      "album": "Memories",
+      "poolRow": "Chet Baker《Chet Baker Live in Tokyo》2000（seed；雙 CD 合輯，disc 1 即本碟、disc 2 即《Four》1989）",
+      "ruling": "c-196 b 第 7566 條總表",
+      "shape": "⚠ 池中是合輯、slice 是原盤——與 TOKYO JOE 方向相反；《Four》同樣算撞池"
+    },
+    {
+      "rgMbid": "",
+      "artist": "Chet Baker",
+      "album": "Four",
+      "poolRow": "Chet Baker《Chet Baker Live in Tokyo》2000（seed；disc 2）",
+      "ruling": "c-196 b 第 7566 條總表",
+      "shape": "同上"
+    }
+  ],
+  "_jp1_blind_spots": [
+    {
+      "artist": "MALTA",
+      "album": "My Hit & Run",
+      "shape": "自我翻錄：十軌原曲全在池中（交本機處理）"
+    },
+    {
+      "artist": "浅川マキ",
+      "album": "Stranger's Touch",
+      "shape": "自我翻錄：十軌有八軌在池中（交本機處理）"
+    },
+    {
+      "artist": "渡辺貞夫",
+      "album": "Bossa Best Collection",
+      "shape": "同場次第二張 LP：與 RCA《The Girl From Ipanema》十軌共八軌（交本機處理）"
+    }
+  ]
 }

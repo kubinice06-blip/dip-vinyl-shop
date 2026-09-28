@@ -8,6 +8,8 @@
 > ⚠ **append 之後自己驗一次**：`grep -c '^## '` 兩組的條數都在，而且對方的標題還在。
 
 > **預留（2026-09-28）：研究 a 7476–7505、b 7506–7535。**
+> **預留（2026-09-28）：鉤子 7656–7695。**
+> **預留（2026-09-28）：寫作 a 7696–7710、b 7711–7725。**
 ---
 
 
@@ -663,3 +665,94 @@ MB 8 筆，最早的 US／DE／JP 三筆都只填 `1976`——**slice 的「不�
 - `node qa-batch.mjs research c193` → **a 11 張全 full**；唯一標記「key 集合與卡單不一致」是 b 組研究稿尚未落檔（本組 11 個 key 與卡單 `group === "a"` 逐字同序）。
 - 自量：facts 條數 10–12、`src` 127/127 完整 https、千分位逗號 0（notes 裡一處 `¥2,200` 已改）、hookCandidates 每張 2 條、獎項字樣 0、facts 敘述句點名資料來源平台 0。
 - **編號區間結算**：本段用 **7476–7485（10 條）**，7486–7505 未用；未越界（b 組研究 7506–7535）。
+
+
+---
+
+# c-193 b 組研究層（7506–7535）｜11 張｜2026-09-28
+
+批次 c-193｜b 組 11 張（收件全表）｜研究層
+輸入 `desc-tools/batches/cards/c193-cards.json` 的 `group === "b"`｜輸出 `desc-tools/batches/research/c193-b.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端三處例外）＋ `CURATION-BRIEF-hoyi.md` → `jp2` → `jp1` ＋ 主線第 1934-B…2008-B 條。⚠ 本段 append 在檔尾，a 組兩段（策展 7296–7325、研究 7476–7485）與 b 組策展段一字未動。
+
+## 7506　總表：**11 張、facts 130 條（11–12 條／張）、全 full、thin 0；判斷推翻 0、事實更正 2、人名羅馬字改漢字 3；版本數 11 格全對**
+
+| # | 掛名 —《盤名》 | facts | status | 本層補到的一格 |
+|---:|---|---:|---|---|
+| 1 | Richie Beirach —《Methuselah》 | 12 | full | 一週後同批人（加 Liebman）在東京替 Badal Roy 錄《Ashirbad》；製作 原田和男／稲岡邦弥（1994 Venus CD） |
+| 2 | The Pentagon —《The Pentagon》 | 11 | full | ⚠ Ray Mantilla 只在三軌（Inner City 版 `tr=A1, A3, B3`）；EW-10000 號段是 3500 日圓直刻系列、本盤第二號 |
+| 3 | 鈴木弘 —《Cat》 | 12 | full | ⚠ 原廠頁：1971 年移居美國、約四年後首次短暫回國、找回 The Freedom Unity 原班；原發行日 1976-02-25 |
+| 4 | The Great Jazz Trio —《Love for Sale》 | 11 | full | ⚠ GJT 三重奏的第一次錄音、唯一一張 Buster Williams（en 維基＋原廠頁兩源）；與 渡辺貞夫 那張只差一天 |
+| 5 | Mal Waldron & Jackie McLean —《Like Old Times》 | 12 | full | Waldron 進 Prestige 是 McLean 介紹的；〈Left Alone〉1959 首錄只有標題曲有 McLean |
+| 6 | Steve Lacy Sextet —《The Wire》 | 12 | full | ⚠ 〈The Owl〉只有 Lacy 與 富樫雅彦 兩人（分軌欄推得）；1975 年 6 月五場日本錄音裡編制最大的一場 |
+| 7 | Junior Mance —《Live at Sweet Basil》 | 12 | full | Flying Disk VIJ-6000 號段前幾號唯一外國藝人；Mance 當年替 Parker 伴奏、Parker 勸他去紐約 |
+| 8 | Sugar Loaf Express Featuring Lee Ritenour —《Sugar Loaf Express》 | 12 | full | 錄音日 1977-08-31／09-01；同步 Soundstream 數位版 VIJ-4009；VIDC-2E 限量 3 萬張 |
+| 9 | The Great Jazz Trio —《… Direct From L.A.》 | 12 | full | ⚠ 同一間 Warner 錄音室：10/3–4 錄另一張、10/6 本盤直刻；一週前同室錄 L.A.4 的 EW-10004 |
+| 10 | The Great Jazz Trio —《The Great Tokyo Meeting》 | 12 | full | ⚠ Live Under The Sky 1978（7/27–30）閉幕隔天錄；原廠頁稱原始編制最後一張 |
+| 11 | 'Hannibal' Marvin Peterson —《Naima》 | 12 | full | 東芝EMI「Soundphile Series Direct Disk」六號之一；1983 西班牙 CFE 授權再發 |
+
+## 7507　事實更正兩處（收件結論不變）
+
+1. **#5 A2 的盤面曲題**：卡單寫原曲名〈I Loves You, Porgy〉，**原壓逐字 `I Love You, Porgy`**——facts 寫「盤上印作〈I Love You, Porgy〉」，寫作層照盤面。
+2. **#7〈Jumpin' The Blues〉作曲欄是三人**：VIJ-6005 逐字 Charlie Parker／Jay McShann／Walter Brown（卡單只寫前兩人）。
+
+## 7508　人名：羅馬字改漢字 3 處、維持羅馬字 9 處；`name-corrections.json` 命中 0
+
+- **改漢字**（都有 Discogs 藝人頁欄位可指）：解說 `Masahiko Yuh` → **悠雅彦**（840377 nv）；錄音 `Tamaki Beck` → **別宮環**（1029373 realname）；母帶 `Kazuhiro Tokieda` → **時枝一博**（639896 nv，原壓只給羅馬字）。
+- **維持羅馬字**：Tsutomu Tanikawa、Tetsuya Shimoda、Toshi Endo、Yoshio Ozawa（兩變體矛盾）、Satoshi Saitoh（兩變體矛盾）、Yoshikane Okada、Harutoshi Kada、Junshi Nakamichi、Nobu Urushiyama（皆零變體）。**解說者 Teruo Isono**：realname 磯野晃雄、筆名全假名，照全假名規則寫羅馬字。
+- ⚠ ⚠ **`村岡健` 與 `村岡建`**：#3 原壓 anv 逐字 `村岡健`；Discogs 552922 nv 兩形並存；c-174 b 研究稿與 columbia.jp 2025 頁寫 `村岡建`。**本卡照本盤盤面寫 `村岡健`（主線第 1968-B 條），不是錯字，不進 `pairs`**——兩形同指 Takeru Muraoka（1941 年生）。⚠ Discogs 1700573（鈴木弘）的 nv 混進 `村岡建`，屬藝人頁污染。
+- 其餘漢字人名逐名回打過（峰厚介 1145518 realname、児山紀芳 548364、出原真澄 4292994、小林平九郎 965995、大西重成 1987046、野口久光 1798939、稲岡邦弥 851867、原田和男 851865 等），全部有欄位。
+
+## 7509　⚠ ⚠ 池中盤名迴避（主線第 1787-B 條）：facts 內點名過又撤掉的 6 個盤名
+
+交件前把 facts 裡出現的每個盤名對全池（seed 逐列 ＋ 全部卡單 `album`）掃過一次，**撤掉 6 個**：Clifford Jordan《Glass Bead Games》（seed）、Cedar Walton《Eastern Rebellion》（seed）、The Freedom Unity《Down By The Naked City》（c-174）、渡辺貞夫 with GJT《I'm Old Fashioned》（c-185）、GJT《Kindness, Joy, Love & Happiness》（c-192）、Clifford Jordan《Hello, Hank Jones》（卡單）；**另四個是「曲名＝池中盤名」或「曲所在的專輯在池中」，只寫曲名**：〈Left Alone〉（seed Mal Waldron 1959）、〈The Owl〉（seed Steve Lacy 1979）、〈That's The Way Of The World〉（seed EW&F）與〈Tomorrow〉所在的 The Brothers Johnson 首張（seed）。**facts 裡保留的盤名都查過不在池中**（《Eon》《Ashirbad》《The Three》《Going Home》《74 Miles Away》《Left Alone Live 1》《Gentle Thoughts》《Friendship》《The Light》《Live in Lausanne》《Tribute》；池中 `Friendship` 是 Junipher Greene 的同名碟）。
+⚠ **給主線**：這一道目前沒有機器在擋（`qa-batch` 不查）；**研究層的 facts 會把相關盤名帶進來，建議鉤子層或 `chk-hook-crossgroup` 加一道「facts／note 盤名 × 全池」只報不擋。**
+
+## 7510　同團同批三張 GJT 的分工（＋ c-192 a 三張）
+
+- **團的來歷只放 #4**（團名由 East Wind 的 A&R 在 1976 年取、Jones 與 Carter／Williams 先在 Village Vanguard 共演、兩人是 Miles Davis 第二五重奏節奏組）；#9 寫同一間錄音室的三天與 Iverson 評語；#10 寫 Live Under The Sky 與「原始編制最後一張」。
+- ⚠ **團名年份兩說**：en 維基「A&R 在 1976 年命名」vs ja 維基「1975 年春已以此名出演 Village Vanguard」——facts 只取 en 的「A&R 命名」一句、不寫年份。
+- ⚠ **「第一張」三處說法打架**：Universal 原廠頁把《Love for Sale》寫成「ファースト・アルバム」，同站《Direct From L.A.》頁又把《KJLH》寫成「GJT初のスタジオ・アルバム」；c-185 a 研究稿把《I'm Old Fashioned》寫成「以 GJT 名義的第一張錄音室專輯（加 渡辺貞夫）」。**本卡的「第一張」限定為「三重奏自己掛名的第一張」，下游兩卡並陳時要各自限定。**
+- **給 c-192 a 研究層與鉤子層**：那三張若也寫團史，只留一張；《KJLH》那張要與 #9 的「隔兩天」對得上（10/3–4 vs 10/6）。
+
+## 7511　同批跨組切角迴避：`Steve Lacy《Stalks》`（c-193 a）已用掉的格，#6 一律不寫
+
+a 組研究稿已寫：間章 1974 赴法／1975 半夏舎招聘 Lacy、吉沢元治 經歷、富樫雅彦 的意外與自製打擊組、清水俊彦 解說、「十七天後同室再錄 高橋悠治／小杉武久」。**#6 改用**：〈The Owl〉二重奏、五場日本錄音裡編制最大、兩把貝斯＋大提琴、翠川敬基 最年輕、間章 生平改取 Discogs 藝人頁（出生日與推廣對象，與 a 組的 ja 維基不同格）。⚠ en 維基 Lacy 年表把 6 月 24 日那張的合作者寫成 高柳昌行，與 a 組（高橋悠治）不同——facts 只寫「另一種編制」。
+
+## 7512　前批同掛名研究稿讀過、切角已用掉的一律不寫（c-187 a 第 6344 條）
+
+- **Beirach**（c-186 b、c-187 b）：生年、ECM、Tristano／Berklee／Manhattan School、Trio 目錄清單、《Father Time》班底。
+- **Hank Jones**（c-185 a、c-177 b）：生卒、兩位弟弟、Marilyn Monroe、NEA／國家藝術勳章、六十張個人專輯。
+- **East Wind／伊藤八十八**（c-184 a、c-185 a、c-186 a、c-187 a）：廠牌設立沿革、伊藤八十八 生平。
+- **鈴木弘**（c-174 a）：大樂團經歷與 Buddy Rich、「最高のトロンボーン奏者」評語。
+- **Ritenour**（c-186 a）：1952 年生、Captain Fingers、VIDC 直刻線第二張、「除鼓以外電聲、一次過」——#8 第 5 條只許用後半（兩種 take 的音源、現行 CD 用磁帶母帶）。
+- **Hannibal**（c-183 b）：生日與現用名 Hannibal Lokumbe——#11 改寫出生地與學經歷。
+- **Mal Waldron**（c-193 a《Tokyo Reverie》）：1970 年 2 月首次訪日細節——#5 只留一句時間背景。
+
+## 7513　版本數：11 格重跑，改判 0；四種漏法逐一查過
+
+- 全部 `/masters/<id>/versions` 重跑（#6 無 master），數字與策展層 7338 條逐格相同。
+- (a)／(b) 無新增；(c) Apple 數位版 #1／#2 已計、#3 與 MB 同一筆、#8 保守不加（照策展層）；(d) MB 獨有 #8 一筆（2014 高解析）已計。
+- ⚠ **沒有 master 頁的 #6 寫「資料庫裡只有這一筆」**；#5／#7 寫「只有這兩筆／兩個號」。
+- MB 轄下 JP 數 vs Discogs 日本盤數：11 格全部 MB 較少，盤名年份回查 0 改判。
+
+## 7514　來源實測（本組）
+
+- **Discogs API 144 次全 200**（`database/search` 免 token 可用，本層靠它逐號掃出 EW-10001～10005 與 EWLF-98001～98006 兩個直刻系列）；**MB 11 次**；**en 維基 24 次**、**ja 維基 5 次**（`action=raw` 全 200，`村岡建` 條目 404）。
+- ⚠ ⚠ **`universal-music.co.jp/the-great-jazz-trio/products/uccj-9176/`（及 9191／9197）三頁全 200**——**slug 是團名全形 `the-great-jazz-trio`，`great-jazz-trio` 404**；三頁各給一格決定性的一句（第一張／KJLH 數日後／Live Under The Sky 與原始編制最後一張）。
+- **`columbia.jp/prod-info/` 2/4**（COCB-54118、COJY-9555 中；COCB-53633、HMJY-105 404）——**中的兩頁給了 #3 最關鍵的渡美背景與原發行日**。
+- Apple lookup 1 次（#1 逐軌秒數，與 Venus CD 對不上，未採）。
+- ⚠ en 維基《Sugar Loaf Express》條目 `Unreferenced`，只作交叉核對、不當 src。
+
+## 7515　給主線的三件
+
+1. **#6 的〈The Owl〉二重奏是由分軌欄推得、無第二來源**（本盤無再發、無數位版）——寫作層可寫「只剩兩人」，不要加描述。
+2. **#9 與 c-192 a《KJLH》的錄音日要對得上**；**#4 與 c-185 a《I'm Old Fashioned》的「第一張」限定語要對得上**（7510）。
+3. **〈Naima〉**：#11 的盤名＝c-193 a《Echoes of a Friend》A1 曲題（不同錄音），兩卡引用帶年份與掛名。
+
+## 7516　交件前自跑與結算
+
+- `node qa-batch.mjs research c193` → **a 11、b 11 全 full，key 與卡單完全一致，全部通過**（中途一處 notes 內的 `¥3,500` 千分位已改）。
+- 自量：facts 130 條、`src` 130/130 完整 https、簡體 0、千分位 0、hookCandidates 每張 2 條、獎項字樣 0、facts 敘述句點名資料來源平台 0、`status`＝`coverage`。
+- `desc-tools/jp-proper-names.json`：**append 0 個**（QA 零誤報），既有條目未動。
+- **編號區間結算**：本段用 **7506–7516（11 條）**，7517–7535 未用；未越界。

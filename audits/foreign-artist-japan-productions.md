@@ -64,3 +64,5 @@
 | `The Pentagon —《The Pentagon》` | c-185 第 5882 條（四項 2/4） | **c-193 b 收**（唯一的退件理由是四項） |
 | `Steve Lacy Sextet —《The Wire》` | c-185 第 5909 條（四項 2/4） | **c-193 b 收** |
 | `Saundra Hewitt —《Saundra》` | c-185 第 5880 條（四項 1/4） | **c-193 b 維持退，理由改寫**：第 5701 條甲 0/6 ＋ 第 1923-B 條（演奏主體是主唱） |
+| `Buster Williams Trio —《Tokudo》` | （slice 預標「不明」） | **c-196 b 收**（日本 Denon 原盤 1978） |
+| `Chet Baker —《Memories》`／`《Four》` | — | **c-196 b 退：撞池**（池中 seed《Chet Baker Live in Tokyo》2000 是這兩張的雙 CD 合輯；是否把池中那張改成原盤身分交本機） |
