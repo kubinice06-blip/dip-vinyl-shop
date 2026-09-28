@@ -13,3 +13,4 @@
 2. ⚠ **`Steps《Step By Step》` 原壓是 1981 `Better Days YF-7020-N`**（slice 的 1988 是第一次 CD 化）；c-195 另有同團《Paradox》——**各寫各的**；掛名 `Steps`。
 3. ⚠ **`The Bill Holman Band` 美國 JVC 版 ℗ 掛 Victor Musical Industries**（`Licensed by Victor … to GRP`）、自我同名——**facts 要能分辨團名與盤名**；好萊塢 Capitol Studios 錄音、東京 JVC Studios 母帶。
 4. ⚠ **`Buster Williams Trio《Tokudo》` 1978 Denon PCM 原壓**（slice 的 1989 是 CD）；**`The Great Jazz Trio《Great Standards Vol.1》` 1988 Alfa Jazz 原壓，班底 Hank Jones／Mads Vinding／Billy Hart**——與 a 組 McLean 那張的 GJT 不是同一組三人；c-197 還有 Vol. 2（同一次錄音）。
+5. ⚠ ⚠ **`Art Blakey《New Year's Eve at Sweet Basil》` 與 c-198 a《Dr. Jeckyle》是同兩晚（1985-12-30／31）錄的兩張**（c-198 a 第 7976–7993 條），曲目零重疊——**facts 可寫「同兩晚錄了兩張」但不點名那張**；`live` 兩張綁定（都判 `false`，反轉一起翻）。

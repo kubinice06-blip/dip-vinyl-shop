@@ -39,6 +39,7 @@
    **日本盤印著 `Licensed by`／`Licensed Through`**（授權版）；**同名廠牌陷阱**（美國 King 被 MB 連到日本キング）；
    **Discogs 同一張有兩個 master、日本那個晚一年**（改編授權，例：Clayderman）。
    ⚠ **西德 Bellaphon 版先看它沿用誰的目錄號**（c-197 a 第 7734 條）：K 字號是 King、`GW-`／`CJ-` 是 Concord、`MCD` 是 Limetree——**Bellaphon 替好幾家代工，看到它不能就當成 King。**
+   ⚠ **日本原壓早好幾年、外國版 ℗ 寫外國公司卻沒有 Licensed 字樣時**（c-198 a 第 7979 條，`David Matthews《Super Funky Sax》`）：**先發地優先**，外國版上印著日本方的製作人／母帶師就是旁證；反轉條件寫明。
    ⚠ **日本先發而 Apple 寫外國公司的 ℗**（`℗ 1972 Fantasy`）時：**先發地優先，但 `risk` 寫明反轉條件**（c-193 a 第 7315 條）。
 
 ## 四、⚠ 再發版本數、官方不等於原盤、其餘（全部照 jp-1／jp-2）
