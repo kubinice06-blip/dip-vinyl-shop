@@ -66235,5 +66235,164 @@
    "au:0→0"
   ],
   "status": "unavailable"
+ },
+ "Miroslav Vitous|Purple": {
+  "batch": "c193",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "tw:12→0",
+   "de:12→0",
+   "fr:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Mal Waldron|Tokyo Reverie": {
+  "batch": "c193",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "tw:12→0",
+   "de:12→0",
+   "fr:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Circle|Circle 2: Gathering": {
+  "batch": "c193",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "tw:12→0",
+   "de:12→1",
+   "de:第1935-B條退1筆",
+   "fr:12→0"
+  ],
+  "rejectedMatch": [
+   {
+    "why": "盤名掛名同名條目（本卡不是同名盤）＋年份漂移 20 年",
+    "collectionId": 259128097,
+    "appleTitle": "Chick Corea",
+    "appleArtist": "Chick Corea",
+    "appleYear": "1991"
+   }
+  ],
+  "status": "unavailable"
+ },
+ "Chick Corea|The Sun": {
+  "batch": "c193",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "tw:12→0",
+   "de:12→0",
+   "fr:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Mal Waldron & Steve Lacy|Journey Without End": {
+  "batch": "c193",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "tw:12→0",
+   "de:12→0",
+   "fr:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "McCoy Tyner|Echoes of a Friend": {
+  "batch": "c193",
+  "tried": [
+   "us:1→1"
+  ],
+  "front": "us",
+  "collectionId": 1442898651,
+  "appleTitle": "Echoes of a Friend",
+  "appleArtist": "McCoy Tyner",
+  "appleYear": "1972",
+  "explicitness": "notExplicit",
+  "trackCount": 5,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/81/e5/74/81e57461-0d57-55b6-0bc4-245c61239670/mzaf_469553151226802554.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Cecil Taylor Unit|Akisakila - Cecil Taylor Unit In Japan": {
+  "batch": "c193",
+  "tried": [
+   "us:2→2"
+  ],
+  "front": "us",
+  "collectionId": 1327648951,
+  "appleTitle": "Akisakila - Cecil Taylor Unit In Japan -",
+  "appleArtist": "Cecil Taylor Unit",
+  "appleYear": "2006",
+  "explicitness": "notExplicit",
+  "trackCount": 2,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b7/dc/59/b7dc5985-dc8a-3176-3265-e91e32c6fd39/mzaf_8697009937087127298.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "yearDrift": 33,
+  "reissueTitle": false,
+  "status": "ready"
+ },
+ "Anthony Braxton|Four Compositions (1973)": {
+  "batch": "c193",
+  "tried": [
+   "us:12→1",
+   "us:第1935-B條退1筆",
+   "gb:12→1",
+   "gb:第1935-B條退1筆",
+   "jp:12→1",
+   "jp:第1935-B條退1筆",
+   "tw:12→1",
+   "tw:第1935-B條退1筆",
+   "de:12→1",
+   "de:第1935-B條退1筆",
+   "fr:12→1",
+   "fr:第1935-B條退1筆"
+  ],
+  "rejectedMatch": [
+   {
+    "why": "aliasOnlyTitle＋年份漂移 30 年（≥20）",
+    "collectionId": 1458858547,
+    "appleTitle": "Four Compositions",
+    "appleArtist": "Anthony Braxton",
+    "appleYear": "2003"
+   }
+  ],
+  "status": "unavailable"
+ },
+ "Sonny Rollins|Sonny Rollins in Japan": {
+  "batch": "c193",
+  "tried": [
+   "us:12→2"
+  ],
+  "front": "us",
+  "collectionId": 1442846329,
+  "appleTitle": "Sonny Rollins",
+  "appleArtist": "Sonny Rollins",
+  "appleYear": "1972",
+  "explicitness": "notExplicit",
+  "trackCount": 13,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/bb/2a/20bb2ac5-fe56-710f-fe30-8fb0476d2834/mzaf_8973527245250501411.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "Sonia Rosa with 大野雄二|Spiced With Brazil": {
+  "batch": "c193",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "tw:12→0",
+   "de:12→0",
+   "fr:12→0"
+  ],
+  "status": "unavailable"
  }
 }
