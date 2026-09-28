@@ -399,3 +399,123 @@
 3. ⚠ **JVC × 田口晃 線五張**（本組 #2／#4／#5／#7 ＋ c-196 b Holman）——Ernie Watts、Takashi Misu、Don Murray 跨張出現，錄音各自不同（第 8019 條第 1 點）；**#6 與 c-183《Guitar Workshop》同名不同碟**，引用帶掛名與 `in L.A.`。
 
 **編號區間結算**：本節用到 **8006–8024（共 19 條），未越界（a 組 7976–8005）**；8025–8035 留空。
+
+---
+
+# c-198 a 組研究層（8296–8325）｜2026-09-28
+
+批次 c-198｜a 組 5 張（King：Electric Bird 3・Paddle Wheel 2）｜研究層
+輸入：`desc-tools/batches/cards/c198-cards.json` 的 `group === "a"` 5 筆｜輸出：`desc-tools/batches/research/c198-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端三處例外）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節與附錄二 → 本檔策展兩段（c-198 第 7976–7993、8006–8024 條）→ 主線第 1934-B…2011-B 條 → c-178 研究層兩段。⚠ **引用一律寫「c-1XX 第 NNNN 條」。**
+⚠ **本段 append 在檔尾，主線骨架、a 組策展段、b 組策展段一字未動**（寫前 `git show HEAD:` 與 `ls` 兩者都看過：皆 401 行、`## ` 標題 41 個）。
+
+## 8296　總表：**5 張、facts 60 條（每張 12）、full 5／thin 0**；推翻策展層 1 處、補正 4 處
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---|---|---:|---|---|
+| 1 | Lew Soloff —《Hanalei Bay》 | 12 | full | 他個人名義的第一張；**Gil Evans（他口中的「音樂上的教父」）只彈電鋼琴**；⚠ 推翻「獻給父親」 |
+| 2 | David Matthews —《Super Funky Sax》 | 12 | full | ⚠ **キングレコード 自家商品頁給出「1980年5月 Electric Lady」**——年份 1980 多一個原廠來源 |
+| 3 | Steve Gadd —《Gaddabout》 | 12 | full | 他的第一張個人領銜作；⚠ **〈Montauk Moon〉是全盤唯一掛作詞者的一首，作詞是 Gadd 本人** |
+| 4 | Art Blakey and the Jazz Messengers —《Dr. Jeckyle》 | 12 | full | ⚠ **標題曲三種拼法**（Jekyll／Jackle／Jeckyle）；⚠ 〈81〉的作曲欄兩處不一致 |
+| 5 | Manhattan Jazz Quintet —《Plays Blue Note》 | 12 | full | 致敬聲明＋**寫解說的 Michael Cuscuna 就是 1975 年起翻 Blue Note 片庫的人** |
+
+**推翻 1**：#1「〈My Buddy〉是獻給父親的那一軌」（8299）。**補正 4**：#2 錄音年月的原廠來源（8300）、#3〈Montauk Moon〉的作詞（8301）、#4〈81〉的作曲欄（8302）、#5 致敬聲明所在的版本（8303）。**收件結論 5/5 不變。**
+
+## 8297　⚠ 再發版本數：**5 筆逐筆重跑 `masters/<id>/versions`（per_page=100），改判 0 筆**；四種漏法逐一查
+
+| # | master | Discogs | 孤兒 | MB 獨有 | Apple | 聯集 | 卡單 |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 808500 | 8（列 9，剔除誤掛《Little Wing》） | 0 | 0 | 1 | **9** | 9 |
+| 2 | 531914 | 5 | 1（18638278） | 1（ee7704d5） | 1 | **8** | 8 |
+| 3 | 224701 | 14 | 0 | 0 | 1 | **15** | 15 |
+| 4 | 685620 | 9 | 0 | 0 | 1 | **10** | 10 |
+| 5 | 654410 | 9 | 0 | 0 | 1 | **10** | 10 |
+
+- (a) 只數 mbNote：五筆 MB release 共 10 筆逐筆重打 `release?release-group=`，全在表內或已計入。
+- (b) 1970 年代同號再發／2016 後黑膠：五張都是 1980 年代盤，版本表裡 2016 年後只有 CD（#4 2015、#5 2015），零黑膠復刻。
+- (c) 數位：五張各 1 個 Apple jp 條目，MB 五個 RG 皆零 `Digital Media`（主線第 1987-B 條）——已計入；Apple 以外的店面本層未另查。
+- (d) MB 獨有：只有 #2 的 ee7704d5（1989 US 無廠牌無載體）。#3 的 7d2ea710（1984 US 無廠牌）逐軌毫秒與 13e60576 相同，不另計（c-198 a 第 7982 條同判）。
+- **MB 轄下 JP vs Discogs 日本盤**（主線第 1965-B 條）：#1 0 vs 3、#2 1 vs 3、#3 1（實為美國號）vs 9、#4 0 vs 3、#5 1 vs 7——**五筆全少**，年份與盤名回查已由策展層做完（c-198 a 第 7978／7980 條），本層逐筆覆核成立、零改判。
+
+## 8298　⚠ ⚠ 第 4 堆硬門覆核：**5/5 版本表裡沒有比日本版更早的外國版本**——facts 一律不寫「日本原盤」斷言
+
+五張逐筆讀了最早的日本版與全部外國版的 `labels`／`companies`／`notes`。**最早的外國版**：#1 西德 1985（℗ King、沿用 K 字號）／美國 1986；#2 美國 GNP 1984（日本 1980）；#3 西德 1984（℗ King）／北歐 Polarvox 1985／美國 1986；#4 西德 1987（K 字號）／美國 ProJazz 1987；#5 西德 1988（℗ King）、**零美國版**。**派工信第五節「遇到比日本版更早的外國版本就停」——0 筆觸發。**
+⚠ facts 只寫發行事實（誰、何年、哪個號、版權行寫誰）；#2 照派工信第五節第 2 點只寫「美國版晚四年、美國版印著 King 的執行製作與母帶師」兩件事（8300）。
+
+## 8299　⚠ ⚠ 推翻策展層：#1 **「〈My Buddy〉是獻給父親的那一軌」無來源——facts 只並列獻詞與曲目**
+
+卡單 `curatorWhy` 逐字「`notes` 逐字「This album is dedicated to Benjamin Harold "Buddy" Soloff.」——**〈My Buddy〉是獻給父親的那一軌**」。**盤上只有獻詞，沒有寫 Benjamin Harold Soloff 與 Lew Soloff 的關係**；LA Times 訃聞（出生、成長、學歷、Gil Evans）與 en 維基都沒有這個名字。
+**處置**：facts 第 9 條寫「盤上寫明獻給 Benjamin Harold "Buddy" Soloff——而 A 面第二首就是〈My Buddy〉」，**不寫「父親」、不寫「獻給某人的那一軌」**；notes 已告知寫作層不得補關係。**可逆**：查到來源寫明父子關係 → 只補一個詞。
+
+## 8300　#2《Super Funky Sax》：**年份 1980 多一個原廠來源；邊界收件照派工信只寫兩個事實**
+
+1. **`kingrecords.co.jp/cs/g/gKICJ-2379/` 逐字「録音: 1980年5月 Electric Lady Studio N.Y.C（オリジナル発売: 1980年）」**——策展層沒有引這一頁。它是 2014 再發（現在在賣的那一版）的商品頁（派工信第三節），**本層只取錄音年月與原發年**，與 Discogs 原壓 1980、美國版與 2014 CD 的 `Recorded At: Electric Lady Studios` 三處一致；人名不取商品頁。
+2. **c-198 a 第 7979 條的邊界不動**：GNP 版 ℗ GNP Crescendo、ASCAP、零 `Licensed`——本層沒有找到反轉條件（1980 年前 GNP 或 Matthews 委製的證據），也沒有找到更硬的正面證據。facts 第 9 條照派工信只寫「美國版 1984、印著 川島重行 與 酒巻昇吾」，第 10 條寫 酒巻昇吾 是 King 的母帶與刻片工程師（Discogs 1760397 profile）。
+3. ⚠ **反同構給鉤子層**：「Matthews 在盤上沒有列任何樂器」這一格在 c-181 b《Keeping Count》已用過（「一件樂器都沒有碰」）——本卡保留為 facts，**hook 候選不用它**。
+
+## 8301　#3《Gaddabout》：**〈Montauk Moon〉掛作詞者（Gadd）；King 商品頁的作曲欄有轉錄錯字，不取**
+
+- `kingrecords.co.jp/cs/g/gKICJ-2376/` 逐軌欄：六軌裡**只有 3.〈MONTAUK MOON〉有「作詞：Ｓｔｅｖｅ　Ｇａｄｄ」**；原壓 1597660 只有整筆 `Drums, Vocals`（未標軌別）。**策展層寫「全盤是器樂 fusion，第 1923-B 條不觸發」——結論不變**（有詞 1/6，演奏主體仍是管樂領奏的器樂），但「有一首是歌」這件事卡單沒有。
+- ⚠ 同一頁的作曲欄把 Gadd 打成 `Steave Gadd` 並重複一次（「Ｓｔｅａｖｅ　Ｇａｄｄ, Ｄａｖｉｄ　Ｍａｔｔｈｅｗｓ, Ｓｔｅｖｅ　Ｇａｄｄ」）——**原廠頁轉錄錯字的又一例**（第 1920-B／1941-B 條），作曲一律照原壓 `Written-By`（Matthews 五軌、Tee 一軌、Gadd 全盤共同作者）。
+- **首作**：en 維基 Steve Gadd「As leader/co-leader」第一筆即本盤；facts 寫「第一張個人領銜作」。
+- ⚠ 策展層 risk 寫北歐 Polarvox 為「芬蘭」（`℗ Polarvox Oy`）；Discogs 國別欄逐字 `Scandinavia`——facts 寫「北歐」，不影響任何判定。
+
+## 8302　#4《Dr. Jeckyle》：**〈81〉作曲欄兩處不一致；避開 c-196 b 用掉的全部格；`live: false` 綁定照舊**
+
+1. ⚠ **〈81〉＝ Miles Davis《E.S.P.》（1965）的〈Eighty-One〉**：en 維基逐字「co-wrote two pieces with Carter ("Eighty-One" and "Mood")」；**本盤原壓、日本 CD、Evidence 逐軌只寫 `Music By=Ron Carter`**——facts 兩邊並陳，不判誰對（第 5701 條甲的判定不受影響：兩人都是爵士樂手）。
+2. **標題曲三種拼法**：en 維基《Milestones》逐字「"Dr. Jekyll" (titled "Dr. Jackle" on later LP and CD releases) (Jackie McLean)」＋本盤〈Dr. Jeckyle〉——本層的第一條 hook。
+3. ⚠ ⚠ **反同構**：c-196 b 研究稿（同兩晚那張）已用掉 Blanchard 入團、Miller 入團、Plaxico 十二張、兩位前團員作者、Liepolt 生平；**本盤四首裡三首的作者也當過爵士信使（Watson、McLean、Shorter）——與 c-196 b 的 hook 同一個骨架，已在 notes 標明「不要拿來當 hook」**。本卡改寫作者與曲目來歷、高浪初郎 的經歷（Discogs 873378：1953 入行 KRC、1964 轉 King、1997 退休）。
+4. **〈One By One〉的前錄是池中 seed《Ugetsu》1963**——第 1787-B 條，facts 只寫「1963 年 6 月在 Birdland 的現場就錄過、當時 Shorter 在團」，不點名。〈Fuller Love〉前錄《Keystone 3》（1982，池中沒有）facts 也只寫場地與年月。
+5. **`live: false`** 覆核：本層讀的四版 `notes` 皆無 live 字樣，唯一的在 1992 Evidence（c-198 a 第 7981 條）；facts 只寫「錄於 Sweet Basil」。**同兩晚那張 facts 不點名**，src 用它的黑膠 8498699。
+
+## 8303　#5《Plays Blue Note》：**致敬聲明在日本 CD 的 notes（不在 LP 條目）；〈Wolff Pack〉〈For Alfred〉只准並列、不准寫「獻給」**
+
+1. 補正：卡單寫「原壓 `notes` 逐字 This recording is a tribute to…」——**那段文字在日本 CD 5403025（master `main_release`）的 notes**，日本 LP 13679843 的條目沒有轉錄；facts 第 3 條 src 用 CD。同日同廠，結論不變。
+2. ⚠ ⚠ **兩首 Matthews 新曲的題名與 Blue Note 兩位創辦人（Alfred Lion、Francis Wolff，en 維基 Blue Note Records）同名——沒有任何來源說是題獻**。facts 第 7 條（曲名，盤面）與第 8 條（創辦人，維基）各自成立；**寫作層與鉤子層最多並列，不得寫「獻給」「紀念」**（notes 已寫死）。Lion 1987 年辭世與題名的關係同樣無來源，未寫。
+3. **團的來歷零字**（派工信第五節第 4 點）；MJQ 其他盤零點名；節奏組換班只寫「本盤已是 Patitucci／Weckl」的事實，不寫團史。
+4. Cuscuna 的葛萊美：profile 只寫「won Grammy Awards for box-sets … as well as for writing the notes」，**屆次與類別未查清 → 未寫**（research-base 獎項規則）。
+
+## 8304　反同構：**跨批已用的生平格，本組一律只掛名字**
+
+| 格 | 已用在 | 本組處置 |
+|---|---|---|
+| David Matthews 生年、出生地、James Brown／CTI | c-194 b、c-196 a | #2 改寫「1978 年離開 CTI、與 Electric Bird 簽約」（ja 維基），James Brown 帶一句；#1／#3／#5 零生平 |
+| 川島重行「Electric Bird 與 Sweet Basil 的製作人」 | c-180 a／b、c-181 b、c-194 b、c-195 b、c-196 a | 五張只掛名字 |
+| Tom Jung 創 DMP | c-196 a | #1／#5 只掛名字 |
+| Horst Liepolt 生平、N.Y. 1st Call Series、Sweet Basil 沿革 | c-196 b、c-193 b | #4 只掛名字 |
+| Gadd 生年與出生地、Stuff 五人名單 | c-196 b、c-195 a | #3 只寫 Gadd 與 Tee 同屬 Stuff |
+| MJQ 成團經過 | c-192 b | #3 只寫 Gadd 在團年份；#5 零字 |
+
+## 8305　人名：**facts 裡的漢字人名 13 個，全部回打 Discogs 藝人頁定案；新增改判 0、`pairs` 新增 0**
+
+川島重行（525096 nv）、酒巻昇吾（1760397 nv）、牧野晃（474621 nv）、高浪初郎（873378 nv）、杉山和紀（272583 nv）、山口至剛（1864624 nv）、佐々木悟郎（3406030 realname）、若林良実（7349870 nv）、田中達彦（2365369 nv）、中山康樹（4312302 nv）、熊谷美広（1677483 realname）；notes 另提 小川隆夫（1308444 realname）。**照寫羅馬字**：Shinji Aizawa（1068453，nv 只有 `S. Aizawa`）、Keiko Ogasawara、Takuya Watanabe——三人都沒寫進 facts。Akira Aimi（`_to_romaji`）未寫。Carol Gadd／Mattie Matthews 只寫掛名、身分未推（notes 明令寫作層不補）。
+
+## 8306　來源實測
+
+- **Discogs API** 約 45 次（releases 28、masters 5、artists 17、labels 1），**全部 200**；短網址照慣例寫進 `src`。
+- **MB** 5 次（五個 RG 的 `release?release-group=`），全 200，與策展層逐筆一致。
+- **Apple** `lookup?entity=song&country=jp` 5 次，**全 200、零 403**。
+- **en 維基** `index.php?action=raw` 約 35 次，全 200（`Bobby_Watson_(saxophonist)` 404——正確條目是 `Bobby_Watson_(American_musician)`；`Bobby_Watson` 轉到消歧義頁 `Robert Watson`，**同名陷阱清單可加一筆**）；**ja 維基** 1 次 200。
+- ⚠ **`kingrecords.co.jp/cs/g/g<catno>/` 5 試 3 中**：KICJ-2379（Super Funky Sax）、KICJ-2376（Gaddabout）、KICJ-2427（Plays Blue Note，只有標題無曲目欄）200；**KICJ-2399（Hanalei Bay）、KICJ-2449（Dr. Jeckyle）404，404 頁回 15 KB、`<title>` 為空**——三之二寫的「0 位元組」本批不成立，**判命中照舊看 `<title>`**。中的兩頁都屬「エレクトリック・バード ベスト・セレクション 1000」系列（2014-12-10），**逐軌作詞作曲欄與錄音年月是可用的新格**。
+- `tower.jp/item/3848394`（Plays Blue Note 2015）200，只有系列說明與演奏者，無逐軌 credits。
+- LA Times 訃聞（Soloff）200。allmusic／allaboutjazz 未試（禁用）。
+
+## 8307　`desc-tools/jp-proper-names.json`：**append 0 個**（`qa-batch research` a 組零字元標記）
+
+## 8308　兩組互掃（主線第 1987-B 條）
+
+以本組五張的 32 個曲題對 b 組 7 張卡單全文掃過：**零命中**（「81」只撞到年份數字）。b 組研究稿交件時 4/7，未落地的三張之後由 b 組從它那一側再掃一次。
+
+## 8309　交件前自跑
+
+- `node qa-batch.mjs research c198` → **a 5 張 full×5、字元三掃描零標記**；唯一標記是「key 集合與卡單不一致」——**b 組研究稿尚未交齊（4/7）**，不是本組的問題。
+- 自量：facts 每張 12、`src` 全部完整 https（60/60）、`hookCandidates` 每張 2、千分位 0、簡體 0、`key` 與卡單逐字同序；facts 零處點名資料來源平台；獎項只有「1984 年入選 Modern Drummer 名人堂」一處（入選，非競賽獎，無入圍／得獎之分）。
+
+## 8310　給主線的事項（本層照邊界不動那些檔）
+
+1. **#3〈Montauk Moon〉有詞**——卡單 `curatorRisk` 的「全盤器樂」一句可改成「一首有 Gadd 自己的詞」；第 1923-B 條結論不變。
+2. **#1 卡單 `curatorWhy` 的「獻給父親」**建議刪去「父親」兩字（8299）；寫作層以 facts 為準，不影響本批產出。
+3. **簡報三之二**：`kingrecords.co.jp` 的 404 在本批回 15 KB（不是 0 位元組）；「ベスト・セレクション 1000」系列頁有逐軌作詞作曲與錄音年月。
+4. 同名陷阱：en 維基 `Bobby_Watson` → 消歧義頁 `Robert Watson`。
+
+**編號區間結算**：本節用到 **8296–8310（共 15 條）**，未越界（b 組研究 8326–8355）；8311–8325 留空。

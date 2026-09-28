@@ -8,6 +8,8 @@
 > ⚠ **append 之後自己驗一次**：`grep -c '^## '` 兩組的條數都在，而且對方的標題還在。
 
 > **預留（2026-09-28）：研究 a 8236–8265、b 8266–8295。**
+> **預留（2026-09-28）：鉤子 8426–8465。**
+> **預留（2026-09-28）：寫作 a 8466–8480、b 8481–8495。**
 ---
 
 
@@ -635,3 +637,133 @@
 3. **推翻策展層兩處**（8268）都是敘述句，不動卡池結構；卡單的 `curatorRisk`／`curatorWhy` 若要回改由主線決定。
 
 **編號區間結算**：本段用 **8266–8277（12 條）**，未越界（另一組 8236–8265）；8278–8295 留空。
+
+
+
+# c-197 a 組研究層（8236–8265）｜卡單 `group === "a"` 11 張（Sweet Basil 系列 9・Ronnie Cuber 1・The Great Jazz Trio 1）｜2026-09-28
+
+批次 c-197｜a 組 11 張｜輸入 `desc-tools/batches/cards/c197-cards.json` 的 `group === "a"`｜輸出 `desc-tools/batches/research/c197-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端三處例外）＋ `CURATION-BRIEF-hoyi.md`／`jp2.md`／`jp1.md` ＋ 主線第 1934-B…2011-B 條 ＋ 本檔策展兩段（7726–7751、7756–7777）＋ 主線補充（c-196 b 研究第 8206–8217 條三點）。⚠ **引用裁定一律寫成「c-1XX 第 NNNN 條」**。
+⚠ **本段 append 在檔尾，主線骨架、兩組策展段與 b 組研究段（8266–8277）一字未動。**
+
+## 8236　總表：**11 張，facts 合計 127 條（11–12 條／張）；full 11、thin 0；`src` 127/127 完整 https**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | Gil Evans —《Live at Sweet Basil》 | 12 | full | 週一駐演起於 1983-04 替日本巡演挑人排練的工作坊（en 維基引 中山康樹 書）；Miles Evans 是 Gil 的兒子 |
+| 2 | Ronnie Cuber —《Passion Fruit》 | 11 | full | Benson 只彈兩首、兩首都是 Cuber 自作；1966 年《It's Uptown》裡吹上低音的就是 Cuber |
+| 3 | Art Blakey and the Jazz Messengers —《Hard Champion》 | 12 | full | 兩代班底相隔兩年；〈Witch Hunt〉是 Shorter 1964-12-24 的 Blue Note 開場曲 |
+| 4 | Mal Waldron & Jackie McLean —《Left Alone '86》 | 12 | full | 最早是 1986 年雷射影碟；Holiday 在班機上想好〈Left Alone〉的詞、自己從未錄過 |
+| 5 | The Great Jazz Trio —《Great Standards Vol. 2》 | 12 | full | ⚠ **數位版 ℗ 1988 Timeless Records**（卡單說零）；十首曲子各自的來歷 |
+| 6 | 五人串 —《… Remembered Live at Sweet Basil Vol. II》 | 11 | full | 演出兩晚正是 Booker Little 逝世二十五週年（10-05）前的最後兩晚；三首 1961 年的出版時序 |
+| 7 | Gil Evans —《Live at Sweet Basil Vol.2》 | 11 | full | Anita 勸他聽 Hendrix／〈Snowflake Bop〉作者欄 Anita Evans；〈Gone〉原是 1958 年 3:37 的小品 |
+| 8 | Gil Evans —《Bud and Bird (Live at Sweet Basil)》 | 12 | full | ⚠ **第 31 屆葛萊美得獎（追贈）**；⚠ **數位版存在**（卡單說零）；川崎燎 的〈Cosmos〉CD 版被刪 |
+| 9 | Gil Evans —《Farewell - Live at Sweet Basil》 | 11 | full | 上市時 Evans 已過世兩個月；客席 Johnny Coles 1958–64 就在他樂團；⚠ **試聽誤命中** |
+| 10 | Art Blakey and the Jazz Messengers —《Live at Sweet Basil》（§1） | 12 | full | 〈Moanin'〉原本只有 Timmons 在曲間隨手彈的八小節，Golson 勸他補過門 |
+| 11 | 五人串 —《… Remembered Live at Sweet Basil》 | 11 | full | 〈The Prophet〉題獻給替 Dolphy 畫封面的畫家；解說 Ira Gitler 首創「sheets of sound」 |
+
+**thin 0 張。** 每張 `src` 相異網域 2–4 個（Discogs 全部、en 維基 10 張、ja 維基 1 張、Apple 1 張）。
+
+## 8237　⚠ 再發版本數：**11 張逐筆重跑 `masters/<id>/versions`（`per_page=100`）＋ MB release 端點 ＋ Apple jp／us；數字改判 2 張（#5 8→9、#8 11→12），兩筆都是「Discogs 結構上不收數位」那一漏法**
+
+| # | master | 卡單 | 本層 | 差 | 差在哪 |
+|---:|---:|---:|---:|---:|---|
+| 1 | 349173 | 18 | 18 | 0 | Discogs 15＋孤兒 2＋Apple jp 1649750964 |
+| 2 | 380417 | 8 | 8 | 0 | Discogs 7＋Apple jp 1651758963 |
+| 3 | 473077 | 9 | 9 | 0 | Discogs 8＋Apple jp 1807521425 |
+| 4 | 894245 | 8 | 8 | 0 | Discogs 8；LaserDisc master 1063814 三版不併計；Apple 零 |
+| 5 | 1157471 | 8 | **9** | **+1** | ⚠ **Apple us 300626804《Standard Collection, Vol. 2》（Hank Jones, Mads Vinding & Billy Hart、十軌同序、℗ 1988 Timeless Records）**；MB 零 Digital Media |
+| 6 | 1011331 | 8 | 8 | 0 | Apple 零 |
+| 7 | 349260 | 14 | 14 | 0 | Discogs 11＋西德分售孤兒 2（12094769／12095005）＋數位 1（MB ac12e49d＝Apple jp 1649757790） |
+| 8 | 409163 | 11 | **12** | **+1** | ⚠ **Apple jp 1649757215《Bud And Bird》（五軌、℗ 1987 King）**；MB RG f30f5d47 只有兩筆 Evidence（其一 MB 獨有）、零 Digital Media |
+| 9 | 349274 | 9 | 9 | 0 | Apple jp 的 Gil Evans 目錄（artistId 52802）76 筆逐筆看過零本盤 |
+| 10 | 567545 | 14 | 14 | 0 | Discogs 13＋Apple jp 1807509751 |
+| 11 | 585700 | 12 | 12 | 0 | Discogs 11＋Apple jp 1807509524 |
+
+→ **合計 121 → 123 版**。⚠ **「數字對不等於內容全」本批的形狀**：兩筆都是探測層早已 ready、`previews.json` 裡明明有的 collectionId，而策展層的 Apple 查法（片假名／英文 `search`）沒查到——**`previews.json` 的 ready 條目本身就是一個版本來源，下一批策展層跑 Apple 前可先讀它**。
+
+## 8238　⚠ ⚠ **推翻策展層總表：5 處（判斷 1、版本 2、人名 1、敘述 1）**——收件、年份、盤名、掛名零改判
+
+| # | 卡 | 被推翻的是什麼 | 依據 |
+|---:|---|---|---|
+| 1 | GJT Vol. 2 | `curatorRisk`「同一次 1988-04 錄音另出了 Vol.1、Vol.3、Vol.4」→ **只有 Vol.1 同場**；Vol.3／4 是 1989-05 哥本哈根、Vol.5 是 1990-03 紐約 | c-196 b 研究第 8206–8217 條（Vol.3 LP 12217095、Vol.4 CD 15050045 notes） |
+| 2 | GJT Vol. 2 | 「Apple jp／us 零命中」→ **Apple us 300626804 存在** | 見 8237 |
+| 3 | Bud and Bird | 「Apple 零命中」→ **Apple jp 1649757215 存在** | 見 8237 |
+| 4 | Bud and Bird | `curatorWhy` 低音長號「Dave Tucker」→ **很可能是 Dave Taylor，本層判不死、facts 不寫名字** | 日本 LP 10476319 與美國 CD 3733353 的盤面確實印 `Dave Tucker`（逐軌 soloist 也印 `D. Tucker`），但 Discogs 連到的 403445 profile 逐字「Trumpeter」；同兩晚的 Farewell（12110849／8346315）印 `David Taylor [Dave Taylor]`（274975），en 維基本盤與 Farewell 條目都寫 Dave Taylor（bass trombone） |
+| 5 | Remembered Vol. I | `label` 說美國 ProJazz 6738355 的 notes 有「A Paddle Wheel Production ℗ 1986 King Records © 1987 Intersound, Inc.」→ **本層讀到的 6738355 notes 只有「Mistyping on front booklet: Erich Dolphy」一句** | 可能是 Discogs 條目改過；facts 不寫那一行 |
+
+⚠ **其餘策展層事實逐格覆核成立**（年份、盤名、`live`、`label`、原盤判定、§1 身分），包括：#6 年份 1987 與拿掉副題、#8／#9 取原壓全題、#1 的〈Prince Of Darkness〉作者取 Wayne Shorter（美國 LP notes 逐字「composer credit is Herbie Hancock on cover and Wayne Shorter on label」）。
+
+## 8239　⚠ ⚠ **試聽誤命中（給主線，本層照邊界不動 `previews.json`）：`desc2:Gil Evans|Farewell - Live at Sweet Basil` → collectionId 1649750964＝本組 #1《Live at Sweet Basil》（1984 Vol.1）**
+
+- `previews.json` 現況：本卡 `status: ready`、`collectionId: 1649750964`、`appleTitle: "Live At Sweet Basil"`——**與 #1 那張的條目是同一個 collectionId**。
+- 那一筆是七軌、〈パラボラ〉起頭、1984-08 兩晚的錄音，與 Farewell 四首（〈Let The Juice Loose〉〈Your Number〉〈Waltz〉〈Little Wing〉）零重疊。
+- Apple jp／us 以 `Gil Evans Farewell` 查皆 0；jp 藝人頁 52802 的 76 筆 album 逐筆看過沒有 Farewell——**市場沒有數位版，本卡應降為 unavailable**。
+- ⚠ 形狀：同一掛名、同一系列盤名（`Live at Sweet Basil` 是 Farewell 全題的一段），**盤名證人只是 Apple 盤名與本卡全題共有的那一段**——第 1935-B 條第四道要的是「片段＋年份漂移」，本筆漂移只有 4 年所以沒擋；`dup-collection.mjs` 應會報 1649750964 被兩張卡引用。
+- 其餘 10 張的試聽逐筆核過：#2／#3／#7／#8／#10／#11 在 jp 配對正確；#5 在 us 配到 Timeless 的數位版（正確，見 8237）；#4／#6 unavailable 屬實（兩張 Apple 皆零）。
+
+## 8240　⚠ GJT Vol. 2 的「日本是原盤」：**維持成立**，但記一條新的反向線索與一條新的正向證據
+
+- **反向線索**：數位版（Apple us）與 2015 CDSOL-6401、2018 UVJZ-10004 的 ℗ 都掛 `Timeless Records`；Limetree 是 Timeless 子字標（labels/154025 profile 逐字「Sublabel of Dutch Jazz label Timeless Records」）；錄音室 Studio 44 屬 Timeless 系——**母帶權利後來歸荷蘭側**（c-196 b Vol.1 研究 notes 同判）。
+- ⚠ ⚠ **正向證據（本層新挖）：Limetree 的目錄號序列**——labels/154025 的 release 列表 `MCD 0030`＝1989、`MCD 0031`（Vol.1）＝1990，**`MCD 0032`（本集）排在兩者之後**；Discogs 給它的「1988」只到年、無 ℗，應是母帶年而非上市年。另 Limetree 版的製作欄仍是 Alfa 的 木全信，荷蘭方只掛執行製作（Rob Reineke、Tom Molkenboer）。
+- **結論**：照 c-196 a 第 7547 條（分界是專輯最早那一版在哪一國，不是母帶權利人），1988-10-25 日本 Alfa 的 LP／CD 仍是最早；**facts 不寫「日本原盤」斷言、也不寫「Timeless 製作」這種推論**，只寫日本版日期與 Limetree 版存在（主線補充第 1 點）。⚠ **反轉條件不變**（查到 Timeless 製作、授權給 Alfa 的明文 → 與 c-196 b Vol.1 一起退）。
+
+## 8241　葛萊美只寫在 #8（主線補充第 3 點）
+
+- en 維基《31st Annual Grammy Awards》逐字「Best Jazz Instrumental Performance, Big Band — Gil Evans for Bud and Bird performed by Gil Evans & the Monday Night Orchestra」——**第 31 屆（1989）、得獎**；本盤條目的「Best Large Jazz Ensemble Album」是今名，facts 照當年類別名；**追贈**取本盤條目「posthumously」。與 c-196 b《The Bill Holman Band》的「同屆入圍落敗」屆次、類別一致；本卡不寫 Holman。
+- ⚠ **Art Blakey《Live at Sweet Basil》（#10）的「1986 年葛萊美提名」不寫**：只有 en 維基 Horst Liepolt 條目一句、沒有類別、條目掛 citations needed；第 28 屆得獎表只列得主。照獎項規則（查不到類別與入圍名單就不寫）。
+
+## 8242　Sweet Basil 系列九張的切角分配與跨批反同構
+
+- **跨批已用、本組零字**（主線補充第 2 點＋讀了 c-196 b 三張、c-193 b／c-193 a／c-194 a／c-195 b／c-190 b 的 Waldron 研究稿與 c-192…c-196 七張 GJT、c-196 a《Pin Point》）：Liepolt 生平與 N.Y. 1st Call Series、Sweet Basil 沿革、Blanchard／Miller／Plaxico 入團經過、Vinding／Bolleman／木全信 生平、Great Standards 五集三國、Ed Blackwell／Reggie Workman／Eddie Moore 生平、〈Left Alone〉1959 首錄只請 McLean 一首、Waldron 1957–59 替 Holiday 伴奏、Cuber 1966–67 待過 Benson 樂團、David Matthews／Tom Jung／Wadenius 生平、川島重行／高浪初郎 profile。
+- **本組內分配**：Gil Evans 四張——#1 工作坊起源＋Miles Evans＋72 歲＋〈Prince Of Darkness〉作者矛盾；#7 Anita／Hendrix＋〈Gone〉＋SNL 代班；#8 葛萊美＋川崎燎＋Bluiett；#9 辭世時序＋「將近五年」＋Johnny Coles＋油井正一。Art Blakey 兩張——#3 1987 班底（Javon Jackson、Kenny Garrett）＋Shorter；#10 四首的來歷（Timmons／Golson／Walter Davis Jr.）＋Toussaint 的 Berklee。Remembered 兩集——#6 出版時序＋Little 逝世日＋1961 樂器分工＋「原班」句；#11〈The Prophet〉題獻＋Richard Davis＋Ira Gitler＋Erich 錯字。
+- ⚠ **兩集 Remembered 的班底句要寫成不同句型**（#6 用「原班重聚」、#11 只列五人）；Gil Evans #1／#7 同一班十四人，**#7 寫作層不要逐名重抄**。
+
+## 8243　作曲欄的衝突（Discogs 作曲欄要交叉驗，派工信第四節）
+
+1. **〈Prince Of Darkness〉**（#1）：日本 CD、美國 CD、en 維基皆寫 Herbie Hancock；美國 LP 圓標與 notes 寫 Wayne Shorter → 取 Shorter（策展層同）；facts 第 8 條寫盤面矛盾本身。
+2. ⚠ **〈Booker's Waltz〉**（#11）：Discogs 各版 Eric Dolphy vs en 維基《At the Five Spot》Little → **兩源衝突，facts 不寫作者**。
+3. **〈Your Number〉**（#9）：日本 CD 與美國 Evidence 兩版皆 John Clark；en 維基「All compositions by Gil Evans except where noted」而未標註 → 取 John Clark（兩個版本互驗）。
+4. **〈Super Okra Blues〉**（#4）：日本 CD 空白；美國 Evidence 與 en 維基皆 Jackie McLean → 取 McLean。
+5. **〈Jodi〉**（#10）：Discogs `Walter Davis`；en 維基 Walter Davis Jr.「with Art Blakey & the Jazz Messengers in 1959」→ 寫 Walter Davis Jr.
+6. **〈Snowflake Bop〉**（#7）作者欄 Anita Evans：本層沒有來源直接寫明她就是 Gil 的妻子——facts 只並列「妻子 Anita 勸他聽 Hendrix」與「作者欄寫 Anita Evans」兩件事，**寫作層不要寫成「他太太寫的曲子」**。
+
+## 8244　`live: false` 兩張的寫法
+
+- **#3《Hard Champion》、#4《Left Alone '86》**：facts 只寫錄音地與日期，零「現場」「實況」「觀眾」；#4 的 sound 寫「在音樂廳錄下」、facts 第 8 條的 1803 席是場館事實，寫作層不得延伸成「滿座」。
+- **#3 哪一首是 1987 年錄的各版矛盾**：日本 CD 說第 4 軌〈Witch Hunt〉、西德 LP 與西德 CD 都說〈Theme Of Hard Champion〉——facts 第 2／3 條不指名，第 10 條如實寫西德版的標示。
+
+## 8245　人名（逐名回打 Discogs 藝人頁；新立漢字 0；改判 0）
+
+- **漢字（皆有來源欄位）**：川島重行（525096 nv）、高浪初郎（873378 nv）、牧野晃（474621 nv）、瀬川昌久（1690604 realname）、中山康樹（4312302 nv）、大野俊三（432166 realname）、白木佳雄（1986875 nv）、山口弘滋（5355819）、内山繁（2267918 realname）、藤本直樹（2218382 nv）、杉山和紀（272583 nv）、土倉明（4575946 nv）、熊田好容（933555 nv）、武田光昭（1996594 nv）、明田川荘之（864278 nv）、木全信（310111 realname）、油井正一（1588219 realname）；川崎燎（en 維基 Nihongo 模板）。
+- **羅馬字維持**：Yoshihiro Madachi（兩個漢字形互斥）、Shigo Yamaguchi（未寫進 facts）、Kazuyoshi Miyoshi（nv 只有羅馬字，未寫）、Gisen Katahira／Tsuyoshi Fukuda（未寫）。
+- **非音樂人**：畫家 Richard "Prophet" Jennings、電影導演、詩人——沒有台灣慣用譯名來源，前者照原文、後兩者不寫名字。
+- `name-corrections.json` 的 `pairs`／`_entity_mislinks` 零命中。
+
+## 8246　池中迴避（第 1787-B 條）
+
+facts 零字點名：Gil Evans 1974 Hendrix 曲集（#1／#8）、Waldron 1959《Left Alone》與 c-193 b《Like Old Times》（#4）、Dolphy《At the Five Spot》（#6／#11）、Blakey 1958《Moanin'》（#10）、Miles Davis《Porgy and Bess》（#7）、Shorter《Speak No Evil》（#3）、Coltrane《Soultrane》（#11）、c-196 a《Pin Point》（#2）、c-196 b《New Year's Eve at Sweet Basil》／c-198 a《Dr. Jeckyle》（#3／#10）、同批互指（#3↔#10、#6↔#11、#8↔#9）一律寫「另一張 King 的 CD」「第二集」。
+
+## 8247　來源實測（本工作階段）
+
+- **Discogs API**：約 90 次、全 200（masters/versions 11、releases 約 55、artists 21、labels 2＋labels/<id>/releases 1），節流 3 秒。
+- **MusicBrainz**：20 次、全 200（10 個 RG 的 RG＋release 端點）。
+- **維基 `index.php?action=raw`**：en 約 55 次（命中約 47；404 的有 `Gil_Evans_discography`、`Hard_Champion`、Art Blakey 本盤條目、`Passion_Fruit_(album)`、Remembered 條目、`At_the_Five_Spot,_Volume_1/2`、`Eric_Dolphy_Memorial_Album`、`Friday_the_13th_(composition)`、`Moanin'_(Art_Blakey_album)`）；ja 1 次（ゆうぽうと，200）。⚠ **en 維基本組四個 Gil Evans 條目與 Left Alone '86 條目都存在**，而 en 維基《Live at Sweet Basil (Gil Evans album)》兩處錯（「originally released in the US on Gramavision」、第五軌寫成 Charlie Parker 組曲）——條目級來源仍要逐格交叉。
+- **Apple**：`lookup`／`search` 18 次，全 200，403／429 零次。
+- **原廠網域未試**：本組全是 1984–89 年 King（Electric Bird／Paddle Wheel）與 Alfa，簡報三之二已記 `kingrecords.co.jp` 在雲端 404 回 0 位元組。
+
+## 8248　交件自跑
+
+- `node qa-batch.mjs research c197` → **全部通過 ✓**（a 11 全 full、b 10 全 full、key 與卡單完全一致）。第一輪報「research-a 千分位逗號」4 處（notes 逐字引 Discogs 的 `¥6,000`／`¥3,200`／`¥3,800`／`¥2,800`），已改成無逗號寫法。
+- 自己逐張量：facts 11–12 條；`src` 127/127 完整 https；`hookCandidates` 各 2 條；獎項一項（第 31 屆葛萊美，寫「得獎」「追贈」，無「入圍／得獎」混用）；簡體字 0；假名只出現在專名（`ゆうぽうと`、`アケタの店`、`アルファ`、`日本ビクター`、`関口台`）。
+- `desc-tools/jp-proper-names.json`：**append 0**。
+
+## 8249　給上層的事（兩件要處理、三件提醒）
+
+1. ⚠ ⚠ **要處理：Farewell 試聽誤命中**（8239）——`previews.json` 應把 `desc2:Gil Evans|Farewell - Live at Sweet Basil` 降為 unavailable（它指到 #1 的 1649750964）。
+2. **要處理（可選）：卡單版本數兩格**（#5 9、#8 12）——下游讀研究稿，卡單不改也不影響正文；GJT Vol.3／4 那句錯的 `curatorRisk` 若要回改由主線決定（c-196 b 研究已報同一件）。
+3. 提醒：**Bud and Bird 的低音長號名字判不死**（8238 第 4 點），兩卡 facts 各照自己盤面、Bud and Bird 不寫名字。
+4. 提醒：**GJT 的 Timeless 線索與 Limetree 目錄號證據**（8240），硬門維持；與 c-196 b Vol.1 綁定。
+5. 提醒：**`previews.json` 的 ready 條目可當策展層的版本來源**（8237 末段）——本批兩筆「Apple 零命中」都是探測層早已配到的。
+
+**編號區間結算**：本段用 **8236–8249（14 條）**，未越界（另一組 8266–8295）；8250–8265 留空。
