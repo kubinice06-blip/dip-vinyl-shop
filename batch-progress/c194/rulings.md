@@ -287,3 +287,280 @@ Salena Jones：MB Person 2340f89c、country `US`；Discogs 622704 profile 逐字
 3. **`batch-progress/enum/hoyi-foreign-origin.json`**：#17 `Aki Takase` 標「日本藝人、列舉層誤判」（7371）。
 4. **`audits/foreign-artist-japan-productions.md`**：若有 `Denon YX-7545-ND`（Frank Foster）那一行，標「c-194 已收」（7364）。
 5. **#3 Salena Jones 的撈回條件綁 b 組的三張 Salena Jones**（7357）。
+
+
+---
+
+# b 組（17 張｜第 4 堆：外國藝人的日本原盤 1979–1981；slice 的 `house` 分佈：victor 7・Victor 1・king 2・toshiba 2・columbia 1・trio 1・denon 1・east-wind 1・CBS/Sony 1；⚠ **17 筆逐筆以 Discogs 最早那一版的 `labels` 欄 ＋ `versions` 全表 ＋ ℗ 行核過原盤國別，「日本是原盤」不成立 1 筆**）｜策展層｜2026-09-28
+
+批次 c-194｜b 組 17 張｜輸入 `batch-progress/c194/slice.json` 的 `g === "b"`｜輸出 `batch-progress/c194/prop-b.json`（每筆帶 `pile: 4`）
+判準照 `CURATION-BRIEF-hoyi.md` 第〇節第 4 堆 → `CURATION-BRIEF-jp2.md` 全檔 → `CURATION-BRIEF-jp1.md` 全檔 → `CURATION-BRIEF-c67plus.md` 附錄（本組未用到）→ `CURATION-BRIEF-bluenote-post1985.md`（含附錄二）→ `CURATION-BRIEF-bluenote.md` → `CURATION-BRIEF-c131.md`，
+＋ 主線第 1934-B…2007-B 條 ＋ c-188…c-193 的策展段 ＋ `audits/foreign-artist-japan-productions.md`／`audits/between-the-lines-candidates.md`／`audits/pool-artist-name-splits.md`／`enum/name-corrections.json`。⚠ **引用裁定一律寫成「c-18X 第 NNNN 條」**。
+⚠ **本層開工時 a 組段（7356–7378）已落檔**——**只讀不寫；本段 append 在檔尾，a 組段一字未動。**
+**本組編號區間 7386–7415（本段用到 7386–7409）。**
+
+---
+
+## 7386　（**總表**）：**17 張＝收 12 ／ 退 5**（全部第 4 堆：收 12 退 5）
+
+**收件率 71%。** **退件五筆只有一筆是「日本不是原盤」**（#7，美國 Muse 的授權壓片）；**另四筆原盤都在日本，退在曲目與演奏主體**（兩張 Salena Jones 的流行曲翻唱、24th Street Band 的自作人聲流行曲、Marlene 的舊裁定第二條理由）。**與 c-193 兩組相反，本組 slice `source` 的初篩幾乎全對：甲 14 筆錯 1、不明 1 筆反而是日本原盤**（7393）。
+
+| # | 掛名 —《盤名》（slice） | 年 | `house` | 處置 | 依據（條號） |
+|---:|---|---:|---|---|---|
+| 1 | Elvin Jones —《Very R.A.R.E.》 | 1979 | trio | 收 | Trio 原壓、外國版全是授權／再發；甲 6／乙 0 |
+| 2 | Irakere —《Chekeré son》 | 1979 | victor | 收（**「不明」而日本原盤**） | ビクター 製作；**美國 Milestone 版 ℗ 掛 Victor**（7393） |
+| 3 | Lee Ritenour —《Rio》→《Lee Ritenour In Rio》 | 1979 | victor | 收 | `℗1979 Victor`、製作 Toshi Endo；**盤名真改判**（7395） |
+| 4 | Ron Carter —《1 + 3》 | 1979 | victor | 收（**邊界**） | **只在日本發行**；製作人是美國 Fantasy 系（7408） |
+| 5 | Dave Grusin & The GRP All-Stars with special guest Sadao Watanabe —《Live in Japan》 | 1980 | Victor | 收 | **c-178 第 4437 條唯一理由作廢**（7392）；掛名日本方取漢字（7399） |
+| 6 | 24th Street Band —《Share Your Dreams》 | 1980 | columbia | **退** | 日本原盤成立；**第 5701 條乙 8/9（自作人聲流行曲）**（7387） |
+| 7 | Richie Cole With Phil Woods —《Side by Side》 | 1980 | king | **退** | **原盤美國 Muse `MR 5237`**，日本 `Seven Seas K26P-6055` 是授權壓片（7388） |
+| 8 | Harry “Sweets” Edison, Benny Carter, Teddy Wilson. Milt Hinton, Shelly Manne —《Aurex Jazz Festival '80 - Gentlemen of Swing》 | 1980 | toshiba | 收 | 東芝EMI 自錄自發；`live: true`；**掛名標點兩處改判**（7399） |
+| 9 | Irakere —《Cuba libre》 | 1980 | victor | 收 | 東京錄音、上田力 作曲編曲製作；甲 6／乙 0 |
+| 10 | Salena Jones —《Stormy With Luv》 | 1980 | victor | **退** | 日本原盤成立；**⑤ 款第三形 ＋ 第 3716 條三肢兩敗 ＋ 第 5701 條乙過半**（7389） |
+| 11 | Salena Jones —《Love Is in the Air》 | 1980 | victor | **退** | 日本原盤成立；**第 5701 條甲 0 ＋ 第 1925-B 條（四版盤面零樂手）**（7390） |
+| 12 | Marlene —《JUST LIKE FIRST LOVE》 | 1981 | CBS/Sony | **退** | **c-187 第 6058 條四項理由作廢，第三節（第 1923-B 條演奏主體）仍成立**（7391／7392） |
+| 13 | Elvin Jones —《Heart to Heart》 | 1981 | denon | 收 | Denon 原壓；`styles` 空陣列人工判收 |
+| 14 | The Great Jazz Trio —《Moreover》 | 1981 | east-wind | 收 | East Wind 原壓；編制取同廠同母帶的 2015 年版（第 5766 條） |
+| 15 | New York Liner —《New York Liner》 | 1981 | king | 收 | King Electric Bird 企劃、`℗ 1981 King`；自我同名 |
+| 16 | Freddie Hubbard —《Mistral》 | 1981 | toshiba | 收 | **美國 Liberty 版 ℗ 掛 Toshiba EMI**（7393） |
+| 17 | Salena Jones —《Melodies of Love》 | 1981 | victor | 收（**邊界**） | 甲 6／乙 4；鈴木宏昌 爵士管樂團逐名在盤面（7409） |
+
+**退件的條款分佈**（五筆，逐筆可查）：**「日本是原盤」硬門不成立 1 筆**（#7）、**第 5701 條第三肢不成立 3 筆**（#6 乙 8/9、#10 乙 ≥7/10、#11 甲 0）、**⑤ 款第三形 ＋ 第 3716 條三肢兩敗 1 筆**（#10）、**第 1925-B 條盤面零樂手 1 筆**（#11）、**第 1923-B 條演奏主體是主唱 2 筆**（#11 輔、#12 主）；**撞池 0、合輯 0、第 4106 條四項 0（本堆取消）**。
+
+⚠ **橫向數字**：**年份改判 0 筆**；**盤名真改判 1 筆**（#3 `Rio`→`Lee Ritenour In Rio`，7395）；**`artist` 欄改判 2 筆**（#5 日本方取漢字、#8 標點，7399）；**`live` 改判 0 筆**（slice 無 `live` 欄；收件 `true` 3 筆 #4／#5／#8，7396）；**再發數 12 筆收件逐筆跑完 `versions`，MB 平均低估 71%**（7397）；**改釘 rgMbid 0、孤兒 release 2（都已計入）、撞池 0、§1 人工身分 0**。
+
+⚠ ⚠ **本組最重要的五件**：
+1. ⚠ ⚠ **「不明」不能直接當授權壓片退**（7393）：本組唯一一筆「不明」（#2 Irakere《Chekeré son》）**是日本原盤**——**美國 Milestone 版 ℗ 與 © 逐字都是 `Victor Musical Industries, Inc.`**；**c-193 b 第 7334 條「不明 0/4」的比例在本組反轉。**
+2. ⚠ ⚠ **本組三筆的原盤判定靠「外國版 ℗ 掛日本公司」**（#2、#16，以及 #3 的原壓 ℗）——**簡報 jp-2 第三節第 35 點反方向（c-191 b 第 6710 條）在第 4 堆第一次成批用上**；**#7 則是正方向：美國版 ℗ Muse、製作全在美國，日本版早出也是授權**。
+3. ⚠ ⚠ **`priorRulingHits` 兩筆一收一退**（7392）：c-178 第 4437 條（GRP）**唯一理由是外國藝人那一關 → 收**；c-187 第 6058 條（Marlene）**另有第 1923-B 條那一節 → 維持退**。
+4. ⚠ ⚠ **本組收 #17 會觸發 a 組第 7357 條的反轉條件 (a)**（7404）：a 組以「盤面零樂手 ＋ 她在本線沒有已收的卡」退了 `Salena Jones《Stairway to the Stars》`；**本組 #17 盤面逐名列出樂手、收件**——**照主線第 1967-B 條一之 1，a 組 #3 可以撈回**（交主線定）。
+5. ⚠ **c-178 第 4437 條兩個人名與 Discogs 不符**（7400）：打擊 `金子健二` → **`白石健二`**、監製 `金子秀` → **`Shoo Kaneko`（零漢字變體）**。
+
+---
+
+## 退件的裁定（7387–7391）
+
+## 7387　⚠ 退：`24th Street Band —《Share Your Dreams》`（rg 7a96dd26）——**第 5701 條第三肢不成立：九軌裡八軌是團員自作的人聲流行曲（乙 (4) 款），乙 8/9；「日本是原盤」成立**
+
+**事實**：**Discogs master 947283 的 `versions` 7 版全是日本**——1980 `Better Days YX-7268-ND` 市售（原壓 7097123，`companies` 逐字「Manufactured By: Nippon Columbia Co., Ltd.」、`notes` 逐字「Include a gate fold 4-page B&W picture insert with lyrics, credits and thanks.」）、同號 Promo、卡帶 `CTK-7010-ND`、1995 `COCA-12800`、2005 `Jroom Jazz COCB-53304`、2018 `COCB-54249` 與其 Promo；MB 3 筆同形。
+**原壓 `genres` 逐字 `Jazz`／`Rock`／`Funk / Soul`／`Pop`、`styles` 逐字 `Jazz-Funk`／`Vocal`**；編制 Hiram Bullock（g）、Will Lee（b）、Clifford Carter（kb）、Steve Jordan（ds）＋ Sammy Figueroa（perc，三軌）；**七版逐軌作曲欄全部空白、MB 三筆 recording 零 work 關係**。
+⚠ ⚠ **原廠 `columbia.jp/prod-info/COCB-54249/`（2018 年復刻的商品解說）逐字**：「曲は各メンバーのオリジナルで、「ブラック・ホール・ストラット」8曲にヴォーカル・ナンバーを網羅」「ハイラム・ブロック(g,vo)、クリフォード・カーター(key,vo) ウィル・リー(b,vo)、スティーヴ・ジョーダン(ds,vo)」「ロック・フュージョン・サウンドにほぼ全編ボーカルが収録されているPOPミュージック」。
+
+**裁定：退。** **「日本是原盤」這一道成立**（日本コロムビア 的 `Better Days` 字標、全世界只有日本版——**本筆的退件不在硬門**）。**第 5701 條逐軌量**：
+- **乙 8**：原廠解說逐字「各メンバーのオリジナル」「8曲にヴォーカル・ナンバー」、原壓附歌詞頁、`styles` 逐字 `Vocal`——**團員自作、附歌詞的人聲流行曲**；⚠ **主線第 1998-B 條逐字「自作歌曲本來就在 (4) 款的射程內」**（`小林泉美《夏・Nuts・夏》` 的英文填詞自作 fusion 歌曲就是這樣算的），**與 c-189 a 第 6558 條 vocalese（替既有爵士曲填詞）不同形**。
+- **甲 1**：〈The Black Hole Strut〉0:42 的器樂短曲。
+→ **乙 8/9＝89% > 一半，收件款第三肢失敗。** ⚠ **保守側也過不了**：就算〈The New York City Strut〉是器樂曲，乙仍是 7/9＝78%。
+⚠ **官方頁的使用範圍**：主線第 1941-B 條——官方頁可單獨支撐「商品解說」；本條引的是它對曲目性質的解說（原創／人聲），**編制與人名一律取 Discogs**。
+⚠ **反轉條件**：查到過半軌是器樂曲（例如原壓歌詞頁只有三、四首），改判收；只動收退名單，可逆。⚠ **池中 `24th`／`24丁目`／`Hiram Bullock`／`Share Your Dreams` 0 列。** ⚠ **撈回候選登記**：`Better Days YX-7268-ND`（1980），日本原盤、曲風欄含 Jazz，退的純粹是第 5701 條。
+
+## 7388　退：`Richie Cole With Phil Woods —《Side by Side》`（rg 2051cb85）——**「日本是原盤」不成立：原盤是美國 `Muse MR 5237`（℗ Muse Records），日本 King `Seven Seas K26P-6055` 是授權壓片**
+
+**事實**：**Discogs master 573637（`main_release` 逐字 3245065＝美國 `Muse MR 5237`）**——美國原壓 `companies` 逐字「Recorded By: The Last Recording Studio」「Recorded At: Paramount Theatre, Denver」「Mastered At: Master Cutting Room」「Phonographic Copyright (p): Muse Records」「Copyright (c): Muse Records」、`notes` 逐字「Clyde's Pure Jazz ©℗ 1981, Muse Records, a Division of Blanchris, Inc. Recorded live at The Historic Paramount Theatre - Denver, Colorado on July 25 & July 26, 1980」、`Producer — Mitch Farber`、`Recorded By [Remote recording by] — The Last Recording Studio, Boulder, Colorado`；
+**日本盤 7140369 的 `labels` 欄逐字「Seven Seas — K26P-6055」、`companies` 逐字只有「Recorded At: Paramount Theatre, Denver」「Mastered At: Master Cutting Room」「Manufactured By: King Record Co. Ltd」**——**連刻片都是美國那一家（Joe Brescio／Master Cutting Room），零日本側製作 credit**。MB 6 筆：1980 JP 一筆、1981 AU／US（含 Promo）三筆、1991 US 卡帶與 CD。
+
+**裁定：退。** **照簡報 jp-2 第三節第 35 點「看 ℗ 行與授權字樣，不看哪一版先上市」**：**日本版的年份（1980）早於美國 Muse 版（℗ 1981），但錄音、製作、混音、刻片、℗ 全在美國 Muse 側**，日本盤沿用美國的刻片母帶——**這是美國原盤在日本先上市的授權壓片**（與 c-191 b 第 6710 條《Kilowatt》恰好相反：那張是美國版早上市而 ℗ 掛日本公司）。⚠ **`Seven Seas` 是 King 發行外國授權盤的字標**（c-193 b 第 7327 條那張 Lorimar 配樂同一個字標）。**「甲（最早 1980 JP）」是本組唯一一筆甲錯**（7393）。
+⚠ **反轉條件**：查到 Muse 版盤面寫「licensed from King」或日本側的製作 credit，改判日本原盤；只動收退名單。⚠ **旁記**：`live` 三肢全過（Paramount Theatre、`Recorded live`、連兩晚）；池中 `Richie Cole` 0 列、`Phil Woods` 3 列（seed《Musique du Bois》1974／《Chasin' The Bird》1998、c-155《The Rev and I》），**若美國 Muse 線撈它，不撞池**；盤名 `Side by Side` 池中有 `八城一夫《Side By Side》1974`（c-134）與 `Side by Side《You're Only Young Once...》`（團名）兩形同字他碟。
+
+## 7389　退：`Salena Jones —《Stormy With Luv》`（rg 31a1f7ab）——**⑤ 款第三形（`styles` 逐字只有 `Vocal`）＋ 第 3716 條救濟三肢至少兩敗；第 5701 條乙 ≥7/10；「日本是原盤」成立**
+
+**事實**（Discogs releases/5884565＝原壓、`JVC VIJ 6304`、1980、10 軌；master 1414667 兩版：原壓 ＋ 1987 `VDP-5114` CD）：`companies` 逐字「Phonographic Copyright (p): Victor Musical Industries, Inc.」「Recorded At: Sound Inn Studio」；製作 Salena Jones／Tadao Tokoro／飯田則子（Noriko Iida，621293 `realname` 逐字 `飯田則子`）、編曲 Barry Forgie 與 John Bell、伴奏是東京錄音室樂手（貝斯 岡沢章／江藤勲／高水健司、吉他 松木恒秀、鼓 渡嘉敷祐一 等）；**`genres` 逐字 `Jazz`／`Pop`、`styles` 逐字只有 `Vocal`**。
+**十軌逐軌 `Written-By`**：〈Just The Way You Are〉Billy Joel、〈All In Love Is Fair〉Stevie Wonder、〈Send In The Clowns〉Sondheim、〈What I Did For Love〉Hamlisch、〈You've Got A Friend〉Carole King、〈Nobody Does It Better〉Hamlisch／Sager、〈If〉David Gates、〈Everything Must Change〉Bernard Ighner、〈Yesterday When I Was Young〉Aznavour、〈A Song For You〉Leon Russell。
+
+**裁定：退。**
+1. **⑤ 款第三形成立**（`genres` 含 Jazz、`styles` 有內容而零爵士成分——`Vocal` 不是爵士成分）→ 照主線第 1978-B 條回第 3716 條三肢：**(1) 演奏主體 ✘**——主唱領銜、錄音室樂手伴奏的流行曲翻唱（第 1923-B 條）；**(2) 曲目 ✘**（見 2）；**(3) `styles` ✘**。**三肢至少兩敗 → 退。**
+2. **第 5701 條**（第 1962-B／1965-B／1969-B 條）：十首全是既有曲目（第 (i) 問指得出原曲）；**第 (ii) 問「進不進爵士曲目表」，本層最寬只能給〈Send In The Clowns〉〈Everything Must Change〉〈All In Love Is Fair〉三首算甲**（前兩首本盤之前有爵士側錄音，第三首從寬），**其餘七首是 1970 年代英美流行曲 → 乙 ≥7/10＝70% > 一半**。
+⚠ **與本組 #17《Melodies of Love》的分界落在可數的欄位上**（7409）。⚠ **池中 `Salena`／`サリナ` 0 列。** ⚠ **可逆**（收退名單）。
+
+## 7390　退：`Salena Jones —《Love Is in the Air》`（rg e1d208f0）——**第 5701 條甲 0：十二軌全是 1970 年代流行／靈魂／迪斯可曲的翻唱；第 1925-B 條：四版盤面零樂手；「日本是原盤」成立**
+
+**事實**：**Discogs master 1227448 的 `versions` 6 版全是亞洲**（1980 `JVC VIJ-28004` 市售與 Promo、卡帶 `VCJ-10004`、菲律賓 `VMC VI-2561`、1986 `VDP-5015`、1999 `VICJ-60364`）；**整筆 `extraartists` 四版都只有製作（Pat Rogers／Salena Jones／Tadao Tokoro）與解說 青木啓（2574421 `realname` 逐字 `青木 啓`），零樂手 credit**；原壓 `genres` 逐字 `Jazz`／`Funk / Soul`／`Pop`、`styles` 逐字 `Smooth Jazz`／`Soul`／`Funk`／`Disco`／`Ballad`／`Vocal`（**同號 Promo 與兩版 CD 的 `genres` 零 Jazz**）。
+**A 面六軌 `Written-By`**：Ashford & Simpson〈It's My House〉、Sager／Allen〈I'd Rather Leave While I'm In Love〉、Rupert Holmes〈Escape〉、Rainey／Stanley Myers〈He Was Beautiful〉（電影《The Deer Hunter》的〈Cavatina〉填詞）、Sedaka／Greenfield〈You Never Done It Like That〉、Lionel Richie〈Still〉；**B 面作曲欄空白**，曲題是〈Love Is In The Air〉（John Paul Young 1977）、〈Evergreen〉（Streisand 1976）、〈Let It Be Me〉、〈Through The Eyes Of Love〉（1978 電影主題曲）、〈You〉、〈September Morn〉（Neil Diamond 1979）。
+
+**裁定：退。**
+1. **第 5701 條**：**甲 0**；**乙：A 面六首 ＋ B 面可指認的四首（〈Love Is In The Air〉〈Evergreen〉〈Through The Eyes Of Love〉〈September Morn〉）＝ 10**；〈Let It Be Me〉〈You〉兩首照第 1969-B 條 (i)「指不出」不計——**乙 10/12 > 一半，第三肢不成立**（可獨立退件，第 1934-B 條）。
+2. **第 1925-B 條**：四版盤面零樂手。⚠ **主線第 1967-B 條一之 1 的例外（盤面哪一版都沒列樂手時，領銜者身分可以獨立成立那一肢）在本組 #17 收件後前提成立**——**但本盤另有第 5701 條的獨立退件理由，結論不受影響**。
+3. **第 1923-B 條**：主唱領銜的流行曲翻唱（原壓 `styles` 有 `Disco`／`Soul`／`Ballad`），與 `Marlene` 那一族同形。
+⚠ **池中 0 列。** ⚠ **可逆**（收退名單）。
+
+## 7391　⚠ ⚠ 退：`Marlene —《JUST LIKE FIRST LOVE》`（rg 23002002）——**c-187 第 6058 條的第一節（第 4106 條四項 2/4）在本線作廢，但第三節（第 1923-B／1925-B 條：演奏主體是主唱）獨立成立，退件結論不變；「日本是原盤」成立**
+
+**事實**（照 c-187 第 6058 條已記，本層重打 Discogs releases/5990622 ＋ MB）：`CBS/Sony 28AH 1376`、℗ 與 © 逐字 `CBS/Sony Inc.`，MB 兩筆（1981-10-21 `28AH 1376`、1981-11-21 `30AH 1216`）全是日本盤——**「日本是原盤」成立**。
+原壓 `genres` 逐字 `Jazz`／`Funk / Soul`／`Pop`、`styles` 逐字 `Soul`／`Fusion`／`Smooth Jazz`／`City Pop`／`Vocal`；**十六筆 credits 裡領銜者零樂器 credit**，伴奏是 笹路正徳 編曲指揮的錄音室班底；九軌可指認的是〈Feel Like Makin' Love〉〈Lovin' You〉〈You've Got A Friend〉〈This Masquerade〉〈Isn't She Lovely〉等七〇年代美國靈魂流行曲。
+
+**裁定：退。** **簡報第〇節第 4 堆逐字點名的那一形**：「`Marlene` 那幾張退件多半**同時**是『演奏主體是主唱』『乙過半』——取消四項門檻不會讓那幾條理由消失，逐張重判」。
+1. **第 6058 條第一節（四項 2/4）作廢**（主線第 2007-B 條）。
+2. ⚠ ⚠ **第 6058 條第三節獨立成立**：「演奏主體是爵士編制」那一肢不成立——領銜者是主唱、零樂器 credit；**「伴奏名單很強」不是收件款的任何一肢**（第 1923-B 條、第 1934-B 條）；**與 c-193 a 第 7316 條把 `Sonia Rosa with 大野雄二《Spiced With Brazil》` 收下時劃的分界一致**（該條逐字：`Marlene` 七張「領銜者零樂器 credit、曲目是 1970–80 年代的美國流行／靈魂曲、`styles` 有 `City Pop`／`Soul`」）。
+3. **第 6058 條第四節（曲風過得了、第 5701 條乙 1/9）本層沿用**——**本筆不是曲目退，是演奏主體退**。
+⚠ **反轉條件**：若主線把「主唱領銜、編曲家指揮的錄音室伴奏」從第 1923-B 條拿出來，本卡與 `Marlene` 七張（`audits/foreign-artist-japan-productions.md` 乙族）一起撈回。**池中 `Marlene`／`マリーン` 0 列**（`Marlene Dietrich`／`Marlene Kuntz` 是別人）。
+
+---
+
+## 收件與橫向的裁定（7392–7409）
+
+## 7392　⚠ ⚠ `priorRulingHits` 兩筆逐筆重讀：**一收一退——「外國藝人那一關」是唯一理由的撈回，另有獨立理由的維持退**
+
+| # | 前批條號 | 前批退件理由（逐字摘要） | 本線還成不成立 | 本層處置 |
+|---:|---|---|---|---|
+| 5 | c-178 第 4437 條 | 「外國藝人那一關，本線第五個實例」：領銜與演奏主體在外國側、日本人是 `special guest` | **作廢**（第 4106 條那一族，主線第 2007-B 條）；**同一條自己寫明「曲風那一關過得了」「日本盤比美國 Arista GRP 盤早一年，JVC 這一版就是原盤」「`live` 三肢最標準」——本層重核全部成立** | **收** |
+| 12 | c-187 第 6058 條 | 四項 2/4 ＋ 演奏主體是主唱 | **四項作廢；演奏主體那一節成立** | **退**（7391） |
+
+⚠ **與 c-193 兩組（第 7313／7333 條）的分寸一致**：**舊理由只有四項的撈回、另有獨立理由的維持退，每一張都逐條重判過。**
+⚠ **第 4437 條還建議把 `VIJ-6338` 登記進「外國藝人在日本錄的本土企劃盤」清單**——`audits/foreign-artist-japan-productions.md` 甲族表目前沒有這一行，**建議主線補一行並標「c-194 b 收」**（7407）。
+
+## 7393　⚠ ⚠ ⚠ 第 4 堆的硬門：**「日本是原盤」17 筆逐筆以 Discogs 最早那一版的 `labels` 欄 ＋ `versions` 全表 ＋ ℗ 行判定——成立 16、不成立 1；slice `source` 的「甲」14 筆錯 1、「不明」1 筆是日本原盤、前批裁定 2 筆全對**
+
+| slice `source` | 筆數 | 原盤真在日本 | 不在日本（授權） | 判定依據 |
+|---|---:|---:|---:|---|
+| `hoyi-foreign-origin：甲` | 14 | **13**（#1／#3／#4／#6／#8／#9／#10／#11／#13／#14／#15／#16／#17） | **1**（#7 美國 Muse） | 見下 |
+| `hoyi-foreign-origin：不明` | 1 | **1**（#2） | 0 | 美國版 ℗ 掛 Victor |
+| 前批裁定（c-178 4437、c-187 6058） | 2 | **2**（#5／#12） | 0 | — |
+
+1. ⚠ ⚠ **三種證據的分佈**：(a) **原壓 ℗ 掛日本公司**：#3（`℗1979 Victor`）、#8（`Toshiba EMI`）、#13（2009 年版 `℗ 1981 Columbia`）、#15（2014 年版 `℗ 1981 King`）、#16（`Toshiba EMI`）；(b) ⚠ ⚠ **外國版的 ℗ 掛日本公司**（簡報 jp-2 第三節第 35 點反方向）：**#2 美國 Milestone `℗/© Victor Musical Industries`、#16 美國 Liberty `℗ Toshiba EMI` 並列 `℗ Liberty`、另一筆美國盤字標逐字 `Eastworld`**；(c) **只在日本發行**：#4、#6、#9（外國版晚二十五年）、#10、#11、#12、#14（同年法國版字標同為 East Wind）、#15、#17。
+2. ⚠ ⚠ **唯一的甲錯（#7）是反向的形狀**：**日本版的年份早於美國版，而 ℗、製作、錄音、刻片全在美國**——**「最早那一版是日本」不等於「日本是原盤」，簡報第 35 點「不看哪一版先上市」在這一形上是退件方向。**
+3. ⚠ **「不明」反轉**：c-193 b 第 7334 條「不明 0/4」、c-193 a 第 7308 條「不明 0/2」，**本組 1/1 是日本原盤**——**「不明」只能當「要查」，不能當「大概是授權」**（MB 那一筆 1979 CU Areito 無目錄號、Discogs 全庫查無，反轉條件寫在卡上）。
+4. ⚠ **兩條必查特徵本組零命中**：`house: columbia` 配 MPS 系歐洲樂手（#6 的 `columbia` 是 Better Days、美國樂手）；日本盤 `labels` 欄同時印外國目錄號（零筆）。
+5. **判定動作**：17 筆全部打了 `releases/<id>` 讀原壓 `labels`／`companies`／`notes`，並逐筆跑 `/masters/<id>/versions`（17 筆都有 master 頁）；有外國版的四筆（#2、#3、#5、#16）另打外國版的 `releases/<id>` 讀 ℗ 行。
+
+## 7394　年份：**17 筆全部回查版本表，改判 0 筆**
+
+- **收件 12 筆**：slice `year`、MB first-release-date、Discogs 原壓 `released`／master `year` 三處一致。
+- ⚠ **錄音年與首發年不同的四筆，`year` 取首發**：#4（錄音 1978-07-29／首發 1979）、#13（錄音 1980-08／首發 1981）、#14（錄音 1980-06／首發 1981）、#16（錄音 1980-09／首發 1981）——錄音年寫在 `risk` 或 `why`。
+- ⚠ **#16 MB 的 first-release-date `1981-08-10` 取自美國 Liberty 那一筆**（日本原壓只填到年）——年份一致，原盤判定照 ℗ 行（7393）。
+- ⚠ **#15 Apple 的 ℗ 逐字 `1980`，與原壓錄音日 1981-05-06 矛盾**——Apple 那一格整格不採。
+- **退件**：#12 MB 兩筆日期差一個月（1981-10-21／11-21，兩個號），年份一致。
+
+## 7395　盤名：**收件真改判 1 筆（#3）；大小寫取 slice 形 4 筆（#2／#8／#9／#17）；其餘 7 筆三欄一致**
+
+1. ⚠ ⚠ **#3 `Rio` → `Lee Ritenour In Rio`**（slice `titleCheck.note` 的警語那一筆）：**MB 最早 release（2b9be171，1979 JP）、Discogs 原壓與全部日本版、Apple jp 三方逐字 `Lee Ritenour In Rio`**；RG title `Rio` 取自 1982 年起 Elektra Musician／GRP 的外國再發改題（美英德版 `formats` 逐字 `Reissue`）——**照第 1858-B 條以最早 release 的 title 為準**，`Rio` 進 `queryAlias`；**`selfTitled: false`**（盤名含掛名但不是自我同名盤）。可逆。
+2. **大小寫四筆取 slice 形**（第 1858-B 條不含大小寫，主線第 1971-B 條；c-193 b 第 7336 條先例）：#2 `Chekeré son`（Discogs `Son`）、#8 `Gentlemen of Swing`（Discogs `Of`）、#9 `Cuba libre`（Discogs `Libre`）、#17 `Melodies of Love`（Discogs `Of`）——另一形都進 `queryAlias`。
+3. **#15《New York Liner》自我同名**（`selfTitled: true`）；Apple 盤名 `Newyork Liner` 進 `queryAlias`。
+⚠ **`titleCheck` 的看不見形狀（jp-1 簡報 (a)–(g)）逐筆看過**：MB 轄下 JP release 數 vs Discogs 日本盤數（主線第 1965-B 條第 1 點），收件 12 筆 MB 全部少於 Discogs，**逐筆回查盤名與年份，除 #3 外不改判**。
+
+## 7396　`live`：**收件 `true` 3 筆（#4／#5／#8，三肢全過）；反向漏標 0；往下修 0**
+
+- **#4《1 + 3》**：`Denen Colosseum` ＋ `Recorded in performance`／音樂節名 ＋ 1978-07-29（MB `secondary-types` `Live` 屬實）。
+- **#5《Live in Japan》**：`Festival Hall, Osaka` ＋ `recorded` ＋ 1980-03-16（c-178 第 4437 條已記，屬實）。
+- **#8《Aurex '80》**：`Budokan`／`Yokohama Stadium` ＋ `Recorded live` ＋ 1980-09-03／09-07（**同一個音樂節的兩個場次，照主線第 1978-B 條「一段巡演期間也算明確的場次日期」**）。
+- **其餘 9 筆收件逐筆掃過主線第 1958-B 條必掃字串與第 1977-B 條三個技術職，零命中**；#15 原壓 `notes` 的單一日期是 A&R Studio 錄音室日期（主線第 1904-B 條：`Recorded At` 錄音室不算）。
+- **退件**：#7 三肢全過（Denver Paramount Theatre、連兩晚），退件不入卡。
+
+## 7397　⚠ ⚠ 再發版本數：**12 筆收件逐筆跑完整張 `versions`（12 筆都有 master 頁）；一律取 MB、Discogs 與 Apple 數位版的聯集；MB 平均低估 71%**
+
+| # | 碟 | Discogs `versions` | MB | MB 獨有 | 孤兒／Apple 另計 | 聯集 | MB 低估 |
+|---:|---|---:|---:|---:|---|---:|---:|
+| 1 | Very R.A.R.E. | 6 | 2 | 0 | 孤兒 +1（1992 Konnex 二合一）、Apple +2 | **9** | 78% |
+| 2 | Chekeré son | 8 | 3 | **1**（1979 CU Areito，存疑） | 0 | **9** | 67% |
+| 3 | Lee Ritenour In Rio | 55 | 9 | **1**（2014 JP Digital Media） | 0（Apple 與 MB 數位版判不出異同，保守不加） | **56** | 84% |
+| 4 | 1 + 3 | 5 | 2 | 0 | Apple +1（℗ 2021 JVC） | **6** | 67% |
+| 5 | Live in Japan | 19 | 2 | 0 | 0 | **19** | 89% |
+| 8 | Aurex '80 - Gentlemen of Swing | 3 | 1 | 0 | 孤兒 +1（1980 四片裝盒） | **4** | 75% |
+| 9 | Cuba libre | 5 | 1 | 0 | 0 | **5** | 80% |
+| 13 | Heart to Heart | 3 | 1 | 0 | Apple +1（℗ 1981 Columbia） | **4** | 75% |
+| 14 | Moreover | 5 | 2 | 0 | Apple +1（℗ 1981 Universal） | **6** | 67% |
+| 15 | New York Liner | 5 | 2 | 0 | Apple +1（℗ 1980 King） | **6** | 67% |
+| 16 | Mistral | 10 | 5 | 0 | 0 | **10** | 50% |
+| 17 | Melodies of Love | 4 | 2 | 0 | Apple +1（℗ 1999 JVCKENWOOD） | **5** | 60% |
+
+⚠ **Apple 另計的七筆都先比過 MB 有無 `Digital Media` 實體**（主線第 1987-B 條）：六筆 MB 零數位版 → +1；#3 的 Apple 與 MB 2014 數位版判不出是否同一筆 → 保守不加。⚠ **兩筆孤兒 release 都是 `q=` 掃到、`master_id` 0**（第 1923-B 條）：#1 的 Konnex 二合一（`Compilation, Reissue`，收兩張 Trio 盤）與 #8 的四片裝盒（收同一個音樂節的四張）——**都含本盤的完整錄音，照聯集計入並在卡上寫明形狀**；**若主線認為「二合一／盒裝」不算本盤的版本，#1 減 1、#8 減 1**。⚠ **#2 的 MB 獨有那一筆存疑**（無目錄號、Discogs 全庫查無），**若查實不存在，#2 減 1**。
+
+## 7398　廠牌欄：**`label` 12 筆全部以 Discogs 原壓 `labels` 欄逐字；`house` 快篩與原壓字標的差異都是子字標，不影響收退**
+
+- **子字標算母廠**（c-187 b 第 6076 條）：#3／#4／#5／#17 `victor`→`JVC`、#8／#16 `toshiba`→`Eastworld`、#15 `king`→`Electric Bird`、#6（退）`columbia`→`Better Days (2)`、#7（退）`king`→`Seven Seas`（King 的外國授權字標）。
+- **#13 `house: denon` 照簡報 jp-2 第三節第 34 點查了**：本盤原壓就是 1981 年 LP `Denon YF-7017-ND`（Discogs 65996），沒有「MB 只建 C38- CD」的問題；**第 4 堆不看十五家／四大廠，只看原盤在不在日本。**
+- ⚠ **#4 原壓兩個號**：Discogs master 的 `main_release` 是 `VIJ-6317`，MB 那一筆記的是同年的 `VIJ-6462`（Discogs 2520707，`labels` 另帶 `JVC-6306`）——**兩號刻片號同為 `JVC 6306`，同一張母帶**；`label` 欄寫 `VIJ-6317` 並註明另一號。
+- ⚠ **兩筆 MB 欄位錯，不改釘 rgMbid**：#1 的 1993 Evidence CD 國別記成 JP（實為美國）；#17 的原壓載體記成 `12" Shellac`。
+
+## 7399　⚠ 掛名：**12 張 10 個相異字串——沿用池中 5 串（佔 7 張）＋ 新立 5 串；`artist` 欄改判 2；新造分裂 0、新造分隔符 0、收斂 0**
+
+| 掛名 | 張 | 來源 | 處置 |
+|---|---:|---|---|
+| `Elvin Jones` | 2 | 池中 seed ＋ c-142…c-165 共 20 列 | **沿用**（第 307 條）；#1 的 1994 Venus 復刻改掛 `Elvin Jones, Art Pepper`，不取 |
+| `Irakere` | 2 | 池中 seed ＋ c-108 ＋ c-155 共 7 列 | **沿用** |
+| `Freddie Hubbard` | 1 | 池中 25 列 | **沿用** |
+| `The Great Jazz Trio` | 1 | 池中 seed ＋ c-192 ＋ c-193 共 7 張 | **沿用** |
+| `Ron Carter` | 1 | 池中 c-150…c-171 個人串 | **沿用**；**與 a 組《Third Plane》同形**（a 組第 7368 條的建議） |
+| `Lee Ritenour` | 1 | 池中只在兩個聯名串裡 | **新立個人串，與 a 組《Friendship》同形** |
+| `Salena Jones` | 1 | 池中 0 | **新立**（MB 與盤面一致），與 a 組 slice 同形 |
+| `New York Liner` | 1 | 池中 0 | **新立團名串**、自我同名 |
+| `Dave Grusin & The GRP All-Stars with special guest 渡辺貞夫` | 1 | 池中 `Grusin` 0 列 | **新立聯名；`artist` 欄改判**（見 1） |
+| `Harry "Sweets" Edison, Benny Carter, Teddy Wilson, Milt Hinton, Shelly Manne` | 1 | 五位池中各自只有個人串或 0 | **新立聯名；`artist` 欄改判**（見 2） |
+
+1. ⚠ **#5 `…with special guest Sadao Watanabe` → `…with special guest 渡辺貞夫`**：**「`with` 照盤面」**（簡報第一節第 2 點）保留盤面的 `with special guest` 聯名；**日本方照 2026-08-11 東亞藝人名裁定與池中先例取漢字**（`渡辺貞夫 with The Great Jazz Trio`、`福村博 with 渡辺貞夫`；c-193 a 第 7309 條 `Sonia Rosa with 大野雄二` 同一處置）；**` with ` 取池中多數的小寫**（MB release 層也是小寫）。**MB RG 層的 `Dave Grusin and The GRP All-Stars` 與盤面羅馬字全串進 `queryAlias`。** 可逆。
+2. ⚠ **#8 兩處標點**：**MB joinphrase 的 `Teddy Wilson.` 句點改逗號**（五個名字之間其餘都是逗號）；**彎引號 `“Sweets”` 改 ASCII 直引號**（池中綽號串 `Clarence "Gatemouth" Brown`／`Bobby "Blue" Bland`／`Lee "Scratch" Perry` 皆此形；c-193 b `'Hannibal' Marvin Peterson` 同一處置）；**Discogs 掛 `Various` 不取**（盤面是五位固定班底的聯合團、十軌全是同一團的新錄音，不是合輯）。MB 原串進 `queryAlias`。可逆。
+⚠ **本組沒有新立分隔符**。**與 a 組跨組對過**：`Lee Ritenour`／`Ron Carter`／`Salena Jones` 三串兩組同形。
+
+## 7400　⚠ 人名：**收件卡寫出的漢字人名 27 個，全部回打 Discogs 藝人頁（`realname`／`namevariations`）或 anv 與藝人頁交叉驗過；零漢字變體照寫羅馬字 8 個；c-178 第 4437 條兩處人名與 Discogs 不符**
+
+1. **逐名定案的來源**：油井正一（1588219 `realname`）、山田充（2053935 nv）、中村とうよう（879642 nv；`realname` 是 `中村東洋`，盤面 anv 用筆名，取 anv）、関根栄（1086500 nv；⚠ 字形自查見 3）、小鉄徹（409230 `realname`）、近藤良一（1855967 nv）、内藤忠行（851933 `realname`）、田口晃（915559 `realname` `田口 晃`）、白石健二（668219 nv）、湯浅博（446451 nv）、渡辺かおる（1054718 nv）、渡辺貞夫（323464）、上田力（1527934 `realname`）、川島重行（525096 nv）、酒巻昇吾（1760397 nv）、岩浪洋三（1825852 `realname`）、鈴木宏昌（596933 `realname`）、松木恒秀（623505）、長岡道夫（623518）、渡嘉敷祐一（623519）、斉藤清（623514 nv）、旭孝（269003）、数原晋（488318）、岸義和（623520）、新井英治（623522）、岡田澄雄（556512；`name-corrections.json` 的 `pairs` 已有 `岡田宗芳→岡田澄雄`，取正寫）、平内保夫（556502）、高田英男（506042）、青木啓（2574421）、飯田則子（621293）、岡沢章／江藤勲／高水健司（退件 #10 的 `rulings` 內文）。
+2. **零漢字變體、照寫羅馬字**（第 1967-B 條）：`Tadao Tokoro`（339188，#2／#9／#17 的製作）、`Shoo Kaneko`（2724465）、`Toshi Endo`（269424）、`Nobuo Ohtani`（1676044，主線第 1940-B 條同一人）、`Takeo Suzuki`（397256）、`Haruo Mita`（4339926）、`Keiko Jones`（634056，profile 說她生於日本，但藝人頁零漢字變體）、`Hisamitsu Noguchi`（未回打）。`Yoshihisa Watanabe`／`Yutaka Tomioka`／`Mitsuharu Kobayashi`／`Yoichiro Kikuchi`／`Freddie K. Yamazaki` 未回打、照寫羅馬字。
+3. ⚠ **字形一處自查**：#2／#9 的卡上把 `関根栄` 寫成 `關根栄`（舊字體「關」）——**Discogs `namevariations` 逐字是新字體 `関根栄`**；**已在交件前改回 `関根栄`**（見 7406）。
+4. ⚠ ⚠ **c-178 第 4437 條兩處人名與 Discogs 本盤不符**（本卡 #5 照 Discogs 寫）：**打擊 `金子健二` → Discogs 逐字 `Percussion — Kenji Shiraishi`（668219 `namevariations` 逐字 `白石健二`）**；**監製 `金子秀` → Discogs 逐字 `Executive-Producer — Shoo Kaneko`（零漢字變體）**——**建議主線把 `金子健二→白石健二` 加進 `pairs`**（第 4437 條是退件，卡單與 `out` 裡沒有這個字形，本層照邊界不動那個檔）；`金子秀` 不是「已證實寫錯成另一個漢字」，而是「查不到漢字」，**不進 `pairs`**（主線第 1979-B 條的分界）。
+
+## 7401　⚠ 曲風：**17 筆逐筆獨立覆核；收件 12 筆的原壓 `genres` 全含 `Jazz`，10 筆 `styles` 有爵士成分、2 筆空陣列（#13／#17，人工判收）；①②③④ 在收件裡零命中**
+
+- **收件 `styles`**：`Post Bop`（#1）、`Afro-Cuban Jazz`／`Fusion`（#2，另有 `Cha-Cha`／`Son`）、`Fusion`／`Jazz-Funk`／`Latin Jazz`（#3）、`Contemporary Jazz`（#4）、`Smooth Jazz`／`Jazz-Funk`（#5、#15）、`Swing`（#8，主線第 1978-B 條算爵士成分）、`Afro-Cuban Jazz`／`Jazz-Funk`（#9）、`Contemporary Jazz`／`Bop`（#14）、`Contemporary Jazz`／`Jazz-Funk`／`Fusion`／`Modal`（#16）。
+- ⚠ ⚠ **#13、#17 原壓 `styles` 空陣列**——**主線第 1936-B 條：空陣列是「沒有資訊」，不套 ⑤ 款第三形**，回第 3762 條人工判；兩張 `genres` 都只有 `Jazz`。
+- **第 5701 條甲乙（收件 12 筆）**：**10 筆乙 0**；**#2 乙 1/6**（〈La Comparsa〉保守算乙，照 c-189 a 第 6560 條古巴曲目的判法）、**#14 乙 1/8**（〈My Cherie Amour〉保守算乙）、**#17 乙 4/10**（7409）。
+- **第 1925-B 條**：收件 11 筆由原壓盤面逐名成立；**#14 原壓整筆與逐軌 credits 兩層都空，由同廠同母帶的 2015 年 `East Wind UCCJ-9200` 成立**（c-184 b 第 5766 條延伸、主線第 1963-B 條三之 1；**別家字標的 2009 年 Test Of Time 版沒有拿來當證據**，c-189 a 第 6561 條的不對稱）。
+- **退件的曲風路徑**見 7387（第三肢）、7389（⑤ 第三形 ＋ 三肢）、7390（第三肢 ＋ 第 1925-B 條）、7391（演奏主體）。
+
+## 7402　⚠ `poolRecheck` 逐格人工覆核：**17 格全部重掃（每一種掛名寫法 ＋ 盤名兩種文字系統 ＋ 軌名 ＋ 成員名）；真撞池 0；「逐張人工比」10 格、「變體全是羅馬字」6 格、「查無此藝人」1 格——全部不是撞池**
+
+- **「逐張人工比」10 格**（#1／#2／#3／#4／#7／#8／#9／#13／#14／#16）：逐列比過（每張卡的 `why` 列了數字與代表列），**零撞池**。⚠ ⚠ **第 4 堆特有的「同一場錄音在美國也有一版」這一形（簡報第一節第 1 點）本組逐筆查過**：**#3（美國 Elektra《Rio》）、#5（美國 Arista GRP）、#16（美國 Liberty）、#2（美國 Milestone）四張都有美國版，而那四個美國版都不在池中**；**最靠近的是 #2 ↔ 池中 `Irakere《Irakere II》1980`——本層打了 Discogs master 945694：美國 Columbia `JC 36107`、紐約 CBS 錄音、八軌零重疊，另一場。**
+- **「變體全是羅馬字」6 格**（#5／#6／#10／#11／#15／#17）：**六筆都是外國藝人或外國企劃團，沒有漢字名可查**——**本層改掃片假名形與成員名**（`グルーシン`、`24丁目`＋`Hiram Bullock`、`サリナ`、`ニューヨーク・ライナー`＋`David Matthews`＋三位吉他手），**全部不是撞池**；#5 另掃了 `渡辺貞夫` 池中四十餘列裡 1978–1981 年的五張。**這一格在第 4 堆的語意與 c-193 b 第 7343 條、a 組第 7374 條相同：「外國人，改掃片假名與成員」。**
+- **「池中查無此藝人」1 格**（#12 Marlene）：本層以 `Marlene`／`マリーン`／`Marlene Pena Lim` 重掃——**只掃到 `Marlene Dietrich`／`Marlene Kuntz`（別人），確實 0 列**。
+- **盤名為主鍵全池掃**（兩種文字系統）：`Very R.A.R.E.`／`Chekeré`／`In Rio`／`1 + 3`／`Live in Japan`／`Share Your Dreams`／`Side by Side`（撞 八城一夫 與團名 `Side by Side` 兩形同字他碟）／`Aurex`／`Gentlemen of Swing`／`Cuba Libre`／`Stormy`／`Love Is in the Air`／`First Love`／`Heart to Heart`（撞 seed `Rajie《Heart to Heart》1977`，別人）／`Moreover`／`New York Liner`／`Mistral`（撞 Renaud《Mistral gagnant》）／`Melodies of Love`——**同字列全是別的藝人。**
+
+## 7403　catno 反查與孤兒 release：**12 筆收件逐筆以原壓目錄號打 `catno=`；差集 0；孤兒 release 2 筆（`q=` 掃到、已計入版本數）**
+
+**`PAP-9173`／`VIP-6691`／`VIJ-6312`／`VIJ-6462`／`VIJ-6338`／`EWJ-80188`／`VIJ-28005`／`YF-7017-ND`／`27PJ-1003`／`K28P-6100`／`EWJ-80194`／`VIJ-28007`** 逐一反查，**回來的本盤 release 全在各自 master 的版本表內**；孤兒兩筆是 #1 的 1992 Konnex 二合一（3525396）與 #8 的四片裝盒（8678273），都在 `q=` 結果裡出現、`master_id` 0（7397）。⚠ **Discogs 的 `q=` 混了大量同名他碟**（`New York Liner` 回 93394 筆、`Elvin Jones Heart to Heart` 回 269 筆），**逐筆讀 `title` 與 `type` 排除**（第 1839-B 條）。
+
+## 7404　⚠ ⚠ 同批互掃（主線第 1987-B 條固定動作）與同組內的串連點
+
+1. ⚠ ⚠ **跨組：本組 #17 收件 → a 組第 7357 條反轉條件 (a) 成立**：a 組以第 1925-B 條（兩版盤面零樂手）＋「主線第 1967-B 條一之 1 的例外不適用：她在本線沒有已收的卡」退了 `Salena Jones《Stairway to the Stars》1978`；**本組 #17 盤面逐名列出十餘位樂手、收件**——**她的身分在本線由本卡建立，照主線第 1967-B 條一之 1，a 組 #3 可以撈回**。⚠ **但本組同一位的 #10／#11 兩張退件，主線若撈 a 組 #3，要同時確認它不落在第 5701 條**（a 組那張十二軌以標準曲為主，本層只讀了 Discogs 的曲題，沒有量）。**交主線定。**
+2. **跨組曲題**：本層交件時 `prop-a.json` 已有 11 張，**以本組收件的每一首標準曲曲題掃過 a 組 prop 全文，零重疊**；a 組第 7378 條列的標準曲（〈Love For Sale〉〈On Green Dolphin Street〉〈Stella By Starlight〉〈All The Things You Are〉〈Summertime〉）**本組收件一首都沒有**。
+3. **跨組同藝人**：`Lee Ritenour`（a《Friendship》1978／b #3 1979）、`Ron Carter`（a《Third Plane》1978／b #4 1979）、`Hank Jones`（a《Hello, Hank Jones》《Piano Play House》／b #4 A 面 ＋ #14 GJT）、`Herbie Hancock`（a《Directstep》《The Piano》／b #4 B 面）、`Al Foster`（a slice《Mr. Foster》／b #14 鼓手）——**全部是不同錄音**，兩卡引用帶盤名與年份。
+4. **同組內**：**#1／#13 Elvin Jones × Richard Davis 兩張**（Trio 1979-06／Denon 1980-08，鋼琴手不同）、**#2／#9 Irakere 兩張**（1979 哈瓦那／1980 東京，製作與錄音師同一組ビクター 班底）、**Art Pepper 在 #1 與 #16**、**Nobuo Ohtani／John Koenig 是 #8 與 #16 的同一製作班底**——**各卡的 `risk` 都已互指。**
+
+## 7405　Apple 與店面（第 254 條，只寫觀察不寫結論）：**12 筆收件命中 7 筆（#1／#3／#4／#13／#14／#15／#17）；403 本工作階段 2 次（退避後 200）**
+
+- 命中：#1 1327650774 ＋ 1495620032（兩筆都是 `- EP` 誤標）、#3 571593054、#4 1567326800、#13 311728072（**只有片假名查法命中**）、#14 1443504392、#15 1649751405（盤名 `Newyork Liner`）、#17 1527734890。
+- 未命中 5 筆：#2、#5、#8、#9、#16——**日本盤的店面覆蓋率低是常態，不是退件理由**。
+- ⚠ **#13 再一次證實 c-193 b 第 7346 條的教訓**：羅馬字 `Elvin Jones Heart to Heart` 查 0，片假名 `エルヴィン・ジョーンズ ハート・トゥ・ハート` 查中——**第 4 堆的店面查法一定要加片假名形。**
+
+## 7406　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有條目一個都沒動**；交件前自查一處字形
+
+**收件卡寫出的漢字專名都以反引號或括號標出來源**，沒有需要白名單的簡繁混用字。⚠ **自查**：#2／#9 的草稿一度把 `関根栄` 寫成舊字體 `關根栄`——**Discogs `namevariations` 逐字新字體，交件版已全部改成 `関根栄`**（`grep -c 關根 prop-b.json` → 0）。
+
+## 7407　⚠ 給主線的四件登記建議（本層照邊界不動那些檔）
+
+1. **`audits/foreign-artist-japan-productions.md`**：**甲族表補一行 `JVC VIJ-6338`（GRP《Live in Japan》1980，c-178 第 4437 條原本就要求登記）並標「c-194 b 收」**；**乙族表 `CBS/Sony 28AH 1376`（Marlene《JUST LIKE FIRST LOVE》）標「c-194 b 維持退，理由改為第 1923-B 條（第 6058 條第三節）」**。
+2. **`batch-progress/enum/name-corrections.json` 的 `pairs`**：`金子健二→白石健二`（7400 第 4 點；`金子秀` 不進 `pairs`）。
+3. **`batch-progress/enum/hoyi-foreign-origin.json`**：#7 `Side by Side` 標「甲錯：美國 Muse 原盤、日本版早出的授權壓片」；#2 `Chekeré son` 標「不明 → 日本原盤（美國版 ℗ 掛 Victor）」。
+4. **a 組 #3《Stairway to the Stars》的撈回條件已由本組 #17 觸發**（7404 第 1 點）。
+
+## 7408　⚠ ⚠ 邊界收件（一）：`Ron Carter —《1 + 3》`——**「只在日本發行」過硬門，而錄音可能是美國 Milestone 側製作**（**建議主線覆核**）
+
+**支持收件的三件**：全世界五個實體版本 ＋ Apple 一筆**全部是日本發行**（簡報第〇節「或只在日本發行」）；錄音地是東京田園コロシアム 的「Live Under the Sky」；**原壓 ℗ 行只寫「Manufactured and Distributed by Victor Musical Industries」**。
+**反面的兩件**：⚠ **製作人 Ed Michel 是 Fantasy／Milestone 系的製作人、刻片在柏克萊 Fantasy Studios**；⚠ **1992 年日本 CD `VICJ-23048` 的字標逐字是 `Milestone`**（Discogs 1598688，parent `Concord Music Group`）。
+**裁定：收。** **硬門的字面是「全世界最早那一版必須是日本廠牌的（或只在日本發行）」**——**本盤兩個條件都成立**；**與 c-193 b 第 7327 條（℗ 掛美國製作公司 Lorimar、由日本廠牌獨家發行，「原盤國別不是退件理由」）同一形。**
+⚠ **反轉條件**：查到本盤在 1979 年前後有美國 Milestone／Fantasy 的發行，改判授權壓片、退——只動收退名單，可逆。⚠ **a 組收了同一位的《Third Plane》1978（Milestone），兩張不同錄音。**
+
+## 7409　⚠ ⚠ 邊界收件（二）：`Salena Jones —《Melodies of Love》`——**第 5701 條乙 4/10 ＋ 演奏主體照「主唱 ＋ 盤面逐名的爵士伴奏」那一族判成立**（**建議主線覆核**）
+
+**第 5701 條逐軌**（照卡上）：**甲 6**——〈For All We Know〉×2、〈Wave〉（Jobim，第 1962-B 條甲那一堆）、〈Melodies Of Love〉（Joe Sample 1979 年器樂曲填詞，照 c-189 a 第 6558 條 vocalese 那一讀法）、⚠ **〈Bridges〉（〈Travessia〉；MB 查得本盤之前五筆爵士錄音：Milton Banana Trio 1968、Paulo Moura Hepteto 1968、Luiz Eça 1970、Grady Tate 1970、Pete & Sheila Escovedo 1978）**、⚠ **〈Antonio's Song〉（Michael Franks 1977；MB 查得本盤之前兩筆：Crossfire 1980、Anli Sugano 1980）**；**乙 4**——〈Jesse〉〈Mr. Bojangles〉〈We're All Alone〉〈Without You〉（〈Mr. Bojangles〉有 Nina Simone 1971 的錄音，本層保守不採，仍算乙）。**→ 乙 4/10＝40%。**
+**演奏主體**：**盤面逐名列出 鈴木宏昌 編曲的爵士管樂團**（数原晋／岸義和 兩小號、新井英治／岡田澄雄／平内保夫／Haruo Mita 四長號、Jake H. Concepcion／斉藤清 兩薩克斯、旭孝 長笛）**＋ Kenny Burrell 與 松木恒秀 兩把吉他 ＋ 長岡道夫／渡嘉敷祐一 節奏組**；`genres` 只有 `Jazz`、`styles` 空陣列。
+**裁定：收。** **與 c-193 a 第 7316 條（`Sonia Rosa with 大野雄二`）、池中 `笠井紀美子`／`阿川泰子` 同一族；與 `Marlene` 那一族（`styles` 有 `City Pop`／`Soul`、曲目是七〇年代美國靈魂流行曲，第 7391 條）與本組 #10／#11（乙過半）分得開——分界全落在可數的欄位上。**
+⚠ **反轉條件**：(a) **若主線判〈Bridges〉〈Antonio's Song〉「判不出進沒進爵士曲目表」→ 乙 6/10，改判退**；(b) **若主線判「主唱領銜、編曲家指揮的伴奏」一律演奏主體不成立**，本卡與 c-193 a《Spiced With Brazil》、c-186 b《Samba Amour》一起改判退。**兩個方向都只動收退名單，可逆。**
+
+---
+
+### 交件前自跑的結果與第 315 條結算
+
+- `node batch-progress/c194/chk-prop.mjs b` → **12 張、10 位、標記 0**。
+- `node batch-progress/dedup-crossbatch.mjs`（不帶批號、全池）→ **157 批、5849 張，跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0**。
+- **第 315 條：收 12 ＋ 退 5 ＝ 17**；**逐堆：第 4 堆 收 12 退 5 ＝ 17**（本組沒有第 1／2／3 堆）。
+- **§1 人工身分 0 張**（17 筆全部有 `rgMbid`、全部照 slice 釘，改釘 0）。
+- **年份改判 0／盤名真改判 1／`artist` 欄改判 2／`live` 改判 0／再發數 12 筆全跑。**
+
+**編號區間結算**：本節用到 **7386–7409（共 24 條），未越界（a 組 7356–7385）。**
