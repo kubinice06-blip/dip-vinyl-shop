@@ -569,3 +569,97 @@ MB 8 筆，最早的 US／DE／JP 三筆都只填 `1976`——**slice 的「不�
 5. ⚠ **Braxton 的 `Compositions` 系盤名會讓 MB 合併錯 RG**（第 7314 條），**逐軌比曲號與時長。**
 
 **編號區間結算**：本節用到 **7296–7325（共 30 條），區間用滿、未越界（b 組 7326–7355）。**
+
+---
+
+# a 組研究層（11 張｜c-193 研究 a，編號 7476–7505）｜研究層｜2026-09-28
+
+批次 c-193｜a 組 11 張（卡單 `group === "a"`）｜研究層｜輸出 `desc-tools/batches/research/c193-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含「雲端 Blue Note 線的三處例外」）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節與附錄二 → 主線第 1934-B…2008-B 條 → 本檔策展兩組全部條目。⚠ **引用裁定一律寫成「c-19X 第 NNNN 條」。**
+⚠ **本段 append 在檔尾；a／b 策展段一字未動。** 本段用 7476–7485，7486–7505 留空（b 組研究 7506–7535）。
+
+## 7476　總表：**11 張，facts 合計 127 條（每張 10–12），full 11、thin 0；推翻策展層 4 處、補正 6 處；版本聯集零改判**
+
+| # | 卡 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | Miroslav Vitous《Purple》 | 12 | full | ⚠ **是第二張領銜作，不是首張**（《Infinite Search》1969）；1966 維也納比賽的評審席上坐著 Zawinul |
+| 2 | Mal Waldron《Tokyo Reverie》 | 10 | full | 初訪是私人旅行、只留兩張錄音室盤；**與《Tokyo Bound》同一天開錄**；〈Blood And Guts〉三個月後巴黎重錄 |
+| 3 | Circle《Circle 2: Gathering》 | 12 | full | ⚠ **1996 年 CD 盤上寫明原始母帶已遺失、直接從黑膠翻錄**；最後一次進錄音室 |
+| 4 | Chick Corea《The Sun》 | 11 | full | 五人裡四人三個月前同在 Miles Davis 的 Fillmore East 台上；Grossman 十九歲；製作人 中村照夫 與 Grossman 1969 年的三重奏 |
+| 5 | Mal Waldron & Steve Lacy《Journey Without End》 | 11 | full | ⚠ **兩人 1958 年已在 Lacy 的《Reflections》同錄，不是第一次合作**；標題曲 27 天前已先錄過一次 |
+| 6 | McCoy Tyner《Echoes of a Friend》 | 12 | full | 三首 Coltrane 曲裡兩首的原版是 Tyner 彈的；反轉條件查核見 7479 |
+| 7 | Cecil Taylor Unit《Akisakila》 | 12 | full | ⚠ **山下洋輔 那一晚坐在觀眾席**；Taylor 初訪日；德國首版 1992 年經 Art Union 授權 |
+| 8 | Anthony Braxton《Four Compositions (1973)》 | 12 | full | ⚠ **鼓手只在 B2，前三首是無鼓三重奏**；日本コロムビア PCM 系統問世一年內的錄音 |
+| 9 | Sonny Rollins《Sonny Rollins in Japan》 | 12 | full | 場館開幕才四個月；台上就是《Horn Culture》的班底；⚠ **探測層誤命中**（7480） |
+| 10 | Sonia Rosa with 大野雄二《Spiced With Brazil》 | 12 | full | 非賣品→27 年後才市售；原盤致謝欄印著「飯糰」「三明治和茶」 |
+| 11 | Steve Lacy《Stalks》 | 11 | full | ⚠ **Lacy 1975 年訪日是 間章 招聘的**（半夏舎） |
+
+**thin 0。** 每張 `src` 相異網域 2–4 個（Discogs 為主，en／ja 維基、jazzdisco.org、Apple lookup 補）。
+
+## 7477　推翻與補正策展層（**推翻 4 ＋ 補正 6 ＝ 10 處；收件結論全部不變**）
+
+| # | 卡 | 策展層寫的 | 本層 | 依據 |
+|---:|---|---|---|---|
+| 推 1 | Purple | 「**首張**個人領銜盤」 | **第二張**（首張是 1969-10-08 錄、1970 Embryo 的《Infinite Search》） | en 維基《Infinite Search》逐字「the debut album」；en 維基 Vitouš 條目 Discography 節同序 |
+| 推 2 | Journey Without End | 「兩人**第一次合作灌錄**的專輯」（引 en 維基原句） | **1958-10-17 Lacy 的《Reflections》鋼琴就是 Waldron** | en 維基《Reflections (Steve Lacy album)》personnel ＋ jazzdisco Waldron 目錄逐字——**推翻的是 en 維基《Journey Without End》條目的原句** |
+| 推 3 | Four Compositions (1973) | 「與三位日本樂手錄的**四重奏盤**」 | **四人同場只有 B2**，A1／A2／B1 是無鼓三重奏 | 原壓 7948416 與 1977 再發 1035190 的 `Percussion, Drums — Hozumi Tanaka` 都逐字 tracks `B2` |
+| 推 4 | Echoes of a Friend | 版本表「**日本 11 版**」 | **日本 9 版**（美國 10、意 4、法 1、歐 2、德 1；總數 27 不變） | master 225531 逐筆數 |
+| 補 1 | Tokyo Reverie | 《Tokyo Bound》是「同一年」另一張 | **同一趟、同一天（2/7）開錄** | jazzdisco 逐字兩張的日期；en 維基《Tokyo Bound》infobox |
+| 補 2 | Stalks | 間章＝「藝人協調」（profile 沒點名 Lacy） | **Lacy 的 1975 訪日就是 間章 招聘的**（1974 赴法對談、1975 設半夏舎） | ja 維基 間章 年譜逐字 |
+| 補 3 | The Sun | Steve Jackson `Instruments [Miscellaneous]` | 原壓如此，**宣傳盤與 1978 再發都記 `Percussion`**；⚠ 1978 再發另把嗩吶記給 David Liebman、鈴記給 中村照夫——**照原壓、facts 不寫再發那兩行**（簡報第三節第 30 點） | 12526644／6098960／3922172 |
+| 補 4 | Circle 2 | 錄音寫成藝人實體名的形 | 盤面 anv `Tomas V. DiPietro`（實體 `Thomas Di Pietro`）——facts 照盤面 | 3111247 |
+| 補 5 | Sonny Rollins in Japan | 編制只有次中音 | 原 LP 如此；**2008 完整版 credit 多 `Soprano Saxophone`**（未標軌號） | 8377621 |
+| 補 6 | Spiced With Brazil | 大野雄二 只掛編曲與指揮 | **2001 CD 與 2002 LP 補上 大野雄二 的原聲鋼琴／電鋼琴／ARP Odyssey 與弦樂 `Ohno Group`**；錄音地 Mouri Studio＋CBS/Sony 錄音室只見於 2002 版 | 8034267／1611812（同家母帶的最新復刻，簡報第三節第 30 點那條路） |
+
+## 7478　⚠ 再發版本數：**11 張逐筆重跑 `versions`，聯集數字零改判；四種漏法逐一查過**
+
+**(a) 只數 MB**：MB 6 個 RG 重打（#1–#6），其餘 5 個照策展層記錄比對——MB 獨有 0。**(b) 1970 年代同號再壓與 2016 後黑膠**：#6 的 1974 兩次重壓、#9 的 1973 卡帶與 1974 CD-4、#10 的 2002 黑膠都在表內。**(c) 數位版（Discogs 結構上不收）**：#3 Apple us 1444190276（1 軌 41:47）、#7 1327648951、#9 jp 1000595580 三筆另計；#6 1442898651 視為與 2006 Fantasy MP3 同一數位發行；其餘 7 張 Apple jp／us 搜尋零筆。**(d) MB 獨有而 Discogs 沒建**：0。
+⚠ **#8 MB RG 誤掛的 Delmark 他碟 a387b66a（c-193 第 7314 條）不算、facts 不寫**；Apple 1458858547 同為那張他碟。
+⚠ **「數字對不等於內容全」本組中 1 次**：#6 的日本／外國分佈（7477 推 4）。
+
+## 7479　⚠ ⚠ c-193 第 7315 條（`Echoes of a Friend` 邊界收件）的反轉條件查核：**不觸發，但補一件反面**
+
+查了三處：(a) 美國原壓 2138488 的 notes／companies——**零授權字樣、零「Recorded for Milestone」**，只有 `℗ Milestone Records`、`Distributed By: Fantasy Records`、`Recorded At: Victor Studio`、製作與錄音欄與日本盤同兩人；(b) en 維基《Echoes of a Friend》逐字「released on the JVC label, and later on the Milestone label」——時序與日本先發一致；(c) ⚠ **en 維基 McCoy Tyner 條目逐字「Tyner recorded 19 albums for the label before moving to Columbia, including a solo piano tribute to Coltrane titled Echoes of a Friend (1972)」——把本盤算進他在 Milestone 的十九張。**
+**判斷**：(c) 是計數式敘述、不是授權明文，**不觸發 7315 的反轉條件**；**建議主線把 (c) 加進 7315 的「反面」清單**。facts 照派工信只寫日本首發、美國晚兩年、同一組製作與錄音、錄音地 Victor Studio 與美國盤的 ℗ 行，不寫「日本原盤」的斷言。
+
+## 7480　⚠ ⚠ 探測層兩筆（**交主線；本層照硬邊界不動 `previews.json`**）
+
+1. ⚠ ⚠ **誤命中**：`Sonny Rollins|Sonny Rollins in Japan` 現況 `ready`、`collectionId 1442846329`、`appleTitle "Sonny Rollins"`——lookup 逐軌是 13 首 1950 年代 Prestige 錄音（〈Tenor Madness (feat. John Coltrane)〉〈Valse Hot (feat. Clifford Brown…)〉…）、`℗ 2007 Concord`，**是 Prestige 選輯，不是本盤**（主線第 1997-B 條那一族：藝人名等於 Apple 盤名）。**正確候選：Apple jp 1000595580《Complete Sonny Rollins In Japan (Live)》**（7 軌、前四軌與原 LP 同序、`℗ Victor Entertainment`）。**建議降級並以 1000595580 走 `manual-recover`。**
+2. **漏抓**：`Circle|Circle 2: Gathering` 現況 `unavailable`，**Apple us 1444190276 存在**（掛名 `Circle`、題帶 `(feat. …)` 後綴、1 軌）——建議回撈。
+⚠ 其餘：#6（1442898651）、#7（1327648951）ready 屬實；#1／#2／#4／#5／#8／#10／#11 unavailable，本層搜尋同樣零筆（#10 Apple 上 2026 年的 Sonia Rosa〈Secret Love〉單曲 3:01 與本盤 A4 4:35 時長不同，不是本盤）。CAA：#1 探測 503×4、#3／#5 無圖——本層未動 `caa.json`。
+
+## 7481　來源實測
+
+- **Discogs API** 約 100 次（releases／masters versions／artists／labels）全 200；**`labels/<id>` 兩次決定性**（Express 沿革、Trio Records 1969-09 設立／1984 停業）。
+- **MB** 12 次（6 個 RG × release／RG）全 200，1 req/s、UA 照規定。
+- **en／ja 維基 `index.php?action=raw`** 約 45 次全 200；⚠ `Purple (Miroslav Vitouš album)`、`The Sun (Chick Corea album)`、`Circle 1: Live in German Concert`（正題是 `…Germany Concert`）三個條目 404。**ja 維基本組三次是決定性的**（Waldron 初訪性質、Taylor 初訪與 山下洋輔 在場、間章 招聘 Lacy）——**藝人條目命中率高，與簡報第三節第 29 點一致**。
+- ⚠ **`jazzdisco.org` 目錄頁在雲端 200，是本組新用上的路徑**：Waldron 的逐場錄音日（《Tokyo Bound》2/7、2/12、〈Blood And Guts〉巴黎重錄、《Skippin'》11/3、1972 Quintet、1981 Le Dreher）全靠它。
+- **Apple** search／lookup 15 次，403／429 零次。
+- ⚠ **AERA dot（ja 維基 Waldron 初訪那一句的原引註）雲端只取得付費牆外的殼，原文打不開**——那一格掛 ja 維基。
+- **原廠網域**本組沒有用上（十一張的原廠頁都是再發商品頁，簡報第三節「官方不等於原盤」）。
+
+## 7482　人名與同名
+
+- **`name-corrections.json` 的 `pairs` 命中 3 個、都取正寫**：`田中保積`（#8）、`田中三一`（#10）、`上野勉`（#11）。
+- ⚠ **`飯田馨`（#11 錄音）**：Discogs 490857 `namevariations` 逐字 `飯田馨`／`飯田 馨`；**c-176 a 研究稿《Distant Voices》寫作「飯田薫」**——同一人兩批寫法不同，**建議主線對一次**（本層照藝人頁）。
+- **退成不寫**：#6 插畫 Johsuke Kubo（`久保㐮介`／`久保襄介` 兩形）、#11 封面設計 Hisao Taki（`realname` 西谷尚雄 vs `namevariations` 多木比佐夫）、#10 鼓手 Kazuyoshi Okayama（`岡山保義`／`岡山和義`，照策展層）、#1 攝影 Yuzoh Satoh、#6／#9 製作 Tetsuya Shimoda（零漢字）。
+- ⚠ **#7 `荒井邦夫`**：`namevariations` 有 `荒井邦夫`／`荒井邦男` 兩形，取前者（與策展層同）；**若要保守可退成 Kunio Arai**。
+- ⚠ 同名陷阱沿用：#11 `清水俊彦`＝詩人兼樂評人（主線第 1940-B 條）；池中 `Steve Lacy` 字串兩人共用（#5／#11 的 Lacy 是 MB ca9766a0）。
+
+## 7483　同掛名跨批反同構（主線第 1982-B／1985-B 條、c-187 a 第 6344 條）
+
+**逐張讀了前批研究稿**（c-175 b、c-190 b、c-176 a、c-186 b，以及 c-177／c-183／c-184 的 増尾好秋 條目）：
+- **Mal Waldron**（#2／#5）：紐約出道、Holiday 伴奏、1963 崩潰、移居歐洲、Swing Journal 邀請初訪、每年兩個月給日本、二重奏觀——**一格不用**；#2 的初訪性質改用 ja 維基「私人旅行」那一句，與 c-190 b 的「受邀」不互斥、兩句都不擴寫（寫在 #2 notes）。
+- **Steve Lacy**（#5／#11）：本名、迪西蘭、Monk、移居巴黎、「1975 訪日留下五張」——**一格不用**；#5 只用《Reflections》的「鋼琴是 Waldron」那一格。
+- **Sonia Rosa／大野雄二**（#10）：兩人生平與相識經過——**一格不用**。
+- **山下洋輔**（#7）：只用「1973-05-22 坐在台下」。**増尾好秋／Bob Cranshaw**（#9）：只寫樂器。
+- ⚠ **富樫雅彦 1970 年意外**（#11 facts 第 7 條、hook 第二條）已上架多次（c-185《C・P・U》hook）——notes 已提醒鉤子層依第 1985-B 條避開已上架句型。
+- **池中同藝人的其他碟一律不點名盤名**（第 1787-B 條）：#6／#7／#8／#9／#11 的 facts 與 sound 都已照做（例：#9 只寫「他早年就錄過」〈St. Thomas〉〈Moritat〉〈Alfie〉）。
+
+## 7484　`desc-tools/jp-proper-names.json`：**本組 append 0 個**（QA 零誤報），既有條目一個都沒動
+
+## 7485　交件前自跑與結算
+
+- `node qa-batch.mjs research c193` → **a 11 張全 full**；唯一標記「key 集合與卡單不一致」是 b 組研究稿尚未落檔（本組 11 個 key 與卡單 `group === "a"` 逐字同序）。
+- 自量：facts 條數 10–12、`src` 127/127 完整 https、千分位逗號 0（notes 裡一處 `¥2,200` 已改）、hookCandidates 每張 2 條、獎項字樣 0、facts 敘述句點名資料來源平台 0。
+- **編號區間結算**：本段用 **7476–7485（10 條）**，7486–7505 未用；未越界（b 組研究 7506–7535）。

@@ -43,3 +43,34 @@
 - `1529526744` us｜《Trio and Duet》／Anthony Braxton｜1974｜6 軌｜依據：年份｜走藝人目錄
 - `1452855576` us｜《Saxophone Improvisations, Séries F》／Anthony Braxton｜1972｜9 軌｜依據：年份｜走藝人目錄
 - `1511700030` us｜《タウン・ホール1972》／アンソニー・ブラクストン｜1972｜3 軌｜依據：年份｜走藝人目錄
+
+## Sonia Rosa with 大野雄二《Spiced With Brazil》1974 — **目錄裡找不到**
+
+## Steve Lacy《Stalks》1975
+- `333813064` jp｜《Hard Talk》／マル・ウォルドロン, Manfred Schoof & スティーヴ・レイシー｜1974｜4 軌｜依據：年份｜走藝人目錄
+- `318255892` jp｜《Trickles》／スティーヴ・レイシー & ラズウェル・ラッド｜1976｜5 軌｜依據：年份｜走藝人目錄
+
+## Mal Waldron & Jackie McLean《Like Old Times》1976
+- `1561232419` us｜《Like Old Times》／Lee Mason｜2021｜11 軌｜依據：盤名直查｜**掛名沒過**
+- `1633742702` us｜《Like Old Times》／윌｜1996｜10 軌｜依據：盤名直查｜**掛名沒過**
+- `1796610387` us｜《Like Old Times》／JUICE｜2025｜8 軌｜依據：盤名直查｜**掛名沒過**
+- `1785867667` us｜《Like Old Times》／Dj LYGER｜2025｜8 軌｜依據：盤名直查｜**掛名沒過**
+
+## Steve Lacy Sextet《The Wire》1977
+- `938325036` us｜《The Wire》／Nolan Neal｜2013｜12 軌｜依據：盤名直查｜**掛名沒過**
+- `1632528163` us｜《The Wire》／Brightshine｜2022｜10 軌｜依據：盤名直查｜**掛名沒過**
+
+## Junior Mance《Live at Sweet Basil》1977
+- `1444104861` jp｜《Holy Mama》／ジュニア・マンス｜1976｜7 軌｜依據：年份｜走藝人目錄
+
+## The Great Jazz Trio《The Great Jazz Trio Direct From L.A.》1978
+- `1443484896` jp｜《At the Village Vanguard》／ザ・グレイト・ジャズ・トリオ｜1977｜4 軌｜依據：年份｜走藝人目錄
+- `1468068409` jp｜《At The Village Vanguard Vol.2》／ザ・グレイト・ジャズ・トリオ｜1978｜4 軌｜依據：年份｜走藝人目錄
+- `1443514283` jp｜《Milestones》／ザ・グレイト・ジャズ・トリオ｜1978｜7 軌｜依據：年份｜走藝人目錄
+- `1443458571` jp｜《The Great Tokyo Meeting》／ザ・グレイト・ジャズ・トリオ｜1978｜7 軌｜依據：年份｜走藝人目錄
+
+## 'Hannibal' Marvin Peterson《Naima》1978
+- `1384498373` us｜《Naima》／John Coltrane｜2018｜25 軌｜依據：盤名直查｜**掛名沒過**
+- `375346414` us｜《Naima》／Meg Okura｜2010｜9 軌｜依據：盤名直查｜**掛名沒過**
+- `310548937` us｜《Naima》／Hans Appelqvist｜2006｜21 軌｜依據：盤名直查｜**掛名沒過**
+- `1609884074` us｜《Naima》／Naima Shamborguer｜2022｜7 軌｜依據：盤名直查｜**掛名沒過**

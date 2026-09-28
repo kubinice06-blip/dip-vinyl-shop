@@ -66269,7 +66269,8 @@
    "tw:12→0",
    "de:12→1",
    "de:第1935-B條退1筆",
-   "fr:12→0"
+   "fr:12→0",
+   "manual-lookup:1444190276"
   ],
   "rejectedMatch": [
    {
@@ -66280,7 +66281,18 @@
     "appleYear": "1991"
    }
   ],
-  "status": "unavailable"
+  "status": "ready",
+  "front": "us",
+  "collectionId": 1444190276,
+  "appleTitle": "Circle 2: Gathering (feat. Chick Corea, Anthony Braxton, Barry Altschul & Dave Holland)",
+  "appleArtist": "Circle",
+  "appleYear": "1971",
+  "explicitness": "notExplicit",
+  "trackCount": 1,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/b4/26/20/b42620f6-aeac-4c78-1c3d-1107eb3f8626/mzaf_6891084930702632601.plus.aac.p.m4a",
+  "previewTrack": "Gathering",
+  "recoveredBy": "manual-catalogue-lookup",
+  "recoverNote": "主線第 2009-B 條：探測層漏抓（c-193 a 研究層抓到）；Apple《Circle 2: Gathering》——同一首組曲接成一軌 41:47，℗ 2016 Stretch（1996 年 Stretch CD 的再發），原壓是 CBS/Sony SOPL-20-XJ 兩面拆開的同一錄音"
  },
  "Chick Corea|The Sun": {
   "batch": "c193",
@@ -66370,18 +66382,22 @@
  "Sonny Rollins|Sonny Rollins in Japan": {
   "batch": "c193",
   "tried": [
-   "us:12→2"
+   "us:12→2",
+   "manual-lookup:1000595580"
   ],
-  "front": "us",
-  "collectionId": 1442846329,
-  "appleTitle": "Sonny Rollins",
-  "appleArtist": "Sonny Rollins",
-  "appleYear": "1972",
+  "front": "jp",
+  "collectionId": 1000595580,
+  "appleTitle": "Complete Sonny Rollins In Japan (Live)",
+  "appleArtist": "ソニー・ロリンズ",
+  "appleYear": "2008",
   "explicitness": "notExplicit",
-  "trackCount": 13,
-  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/bb/2a/20bb2ac5-fe56-710f-fe30-8fb0476d2834/mzaf_8973527245250501411.plus.aac.p.m4a",
+  "trackCount": 7,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/8a/36/fc8a3674-cb68-5f12-ef5f-354999afd8ea/mzaf_16000371547445693420.plus.aac.p.m4a",
   "cleanedOnly": false,
-  "status": "ready"
+  "status": "ready",
+  "previewTrack": "POWAII (LIVE)",
+  "recoveredBy": "manual-catalogue-lookup",
+  "recoverNote": "主線第 2009-B 條：探測層原配的 1442846329 是 1950 年代 Prestige 選輯（誤命中，c-193 a 研究層抓到）；改配 Apple 日本站《Complete Sonny Rollins In Japan (Live)》——℗ Victor Entertainment、同一場東京實況的完整版（原壓 4 軌是其子集）"
  },
  "Sonia Rosa with 大野雄二|Spiced With Brazil": {
   "batch": "c193",
