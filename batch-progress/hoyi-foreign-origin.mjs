@@ -6,7 +6,7 @@
 //   甲＝最早的 release 在 JP（且沒有同日期的非 JP release）→ 日本原盤；
 //   乙＝最早的 release 不在 JP → 授權壓片，卡的身分歸原盤，不收；
 //   不明＝MB release 都沒有日期／國別 → 策展層逐筆查 Discogs。
-// 用法：node batch-progress/hoyi-foreign-origin.mjs   （有快取，中斷後重跑會接續）
+// 用法：node batch-progress/hoyi-foreign-origin.mjs [--recheck-yi]   （有快取，中斷後重跑會接續）
 import fs from 'node:fs';
 const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -35,8 +35,9 @@ for (const f of fs.readdirSync(d).filter(x => /^jp-[a-z-]+\.json$/.test(x) && x 
   }
 }
 let n = 0;
+const RECHECK = process.argv.includes('--recheck-yi');   // 只重跑判乙的（修正上面那一形之後用）
 for (const r of cands) {
-  if (cache[r.rgMbid]) continue;
+  if (cache[r.rgMbid] && !(RECHECK && cache[r.rgMbid].verdict === '乙')) continue;
   n++;
   let rel = [];
   try {
@@ -50,6 +51,9 @@ for (const r of cands) {
     const firstCs = [...new Set(dated.filter(x => x.date === first).map(x => x.country || '?'))];
     if (firstCs.length === 1 && firstCs[0] === 'JP') { verdict = '甲'; why = `最早 ${first} JP`; }
     else if (firstCs.includes('JP')) { verdict = '不明'; why = `最早 ${first} 同日有 ${firstCs.join('/')}`; }
+    // c-196 a 第 7561 條：日期只填到年（或月）的外國版會排在同年有完整日期的日本版前面——
+    // King 的西德 Bellaphon 代工版、Alfa 的荷蘭 Limetree 版都是這一形，其實是日本原盤的授權版。同年（同月）有 JP 就判不明。
+    else if (first.length < 10 && dated.some(x => x.country === 'JP' && x.date.startsWith(first))) { verdict = '不明'; why = `最早 ${first} ${firstCs.join('/')}（只到${first.length === 4 ? '年' : '月'}），同${first.length === 4 ? '年' : '月'}有 JP`; }
     else if (firstCs.every(c => c === '?' || c === 'XW' || c === 'XE')) { verdict = '不明'; why = `最早 ${first} 國別 ${firstCs.join('/')}`; }
     else { verdict = '乙'; why = `最早 ${first} ${firstCs.join('/')}`; }
   }

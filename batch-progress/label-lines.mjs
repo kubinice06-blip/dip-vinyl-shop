@@ -188,6 +188,7 @@ export const LINES = {
   c194: { lineType: '深掘', scene: '日本製作的外國爵士 1978–1981' },
   c195: { lineType: '深掘', scene: '日本製作的外國爵士 1981–1985' },
   c196: { lineType: '深掘', scene: '日本製作的外國爵士 1985–1989' },
+  c197: { lineType: '深掘', scene: '日本製作的外國爵士・重篩（King／Paddle Wheel 紐約製作）' },
   // CBS/Sony・Polydor JP・Alfa・East Wind・Trio／Whynot・Denon・Nippon Crown・Kitty・Union・Frasco
   // ＋ DOMO・ALM・discomate・URC・KENWOOD（後五家 2026-09-24 才列舉）
 };

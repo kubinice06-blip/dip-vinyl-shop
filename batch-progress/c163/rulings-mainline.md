@@ -7436,3 +7436,33 @@ Apple 的 **和文題**《ライヴ・イン・ネムロ ホイール・スト�
 1. ⚠ ⚠ **「MB 只建日本版」第四個廠牌：法國 Delphine**（c-195 b 第 7456 條）——`Richard Clayderman《Couleur Tendresse》` MB 只建日本ビクター 版且建成兩個 RG（`4c7f4767` 1983 LP ＋ `e978d4eb` 1984 CD），
    Discogs 一打就是 1982 法國原盤。**特徵：Discogs 同一張有兩個 master、日本那個晚一年＝改編授權。** 已補進 `cur-hoyi-template.md`。
 2. **`house` 快篩在第 4 堆常錯**（c-195 b 錯 5/17：`denon` 原壓其實是 `Interface`、`victor` 其實是日本ポリドール／法國 Delphine）——**不影響收退，但 `label` 欄一律照原壓改寫。**
+
+---
+
+## 第 2010-B 條（2026-09-28）：c-196（15 張）策展收件；**初篩腳本的日期精度錯，開重篩批 c-197（24 張）**
+
+**c-196：a 17 收 9 退 8／b 16 收 6 退 10。** 全是第 4 堆；`chk-prop` 15 張 15 位標記 0、全池 `dedup-crossbatch` 四道 0；`fix-names` 0 處；卡單 15 張釘住 15。
+
+### 一、裁定
+
+1. **池中合輯、slice 原盤**（c-196 b 第 7566 條）：`Chet Baker《Memories》`（1988）與《Four》（1989）是池中 seed《Chet Baker Live in Tokyo》2000（雙 CD 合輯）的兩半原盤——
+   **本線退（撞池），兩張都進 `known-pool-collisions.json`**（第 19、20 筆；與 TOKYO JOE 方向相反）。**池中那張要不要換成原盤身分交本機**。
+2. **邊界照准**：c-196 a 第 7547 條 `Art Pepper《Stardust》` 收（母帶向美國授權，但專輯最早且 38 年來唯一的版本在日本）、第 7544 條 `Fruitcake` 退（第 1925-B 條）；
+   c-196 b 第 7581 條 `Art Blakey《New Year's Eve at Sweet Basil》` `live: false`（有場館日期、盤面無 live 字樣）、第 7573 條 `George Young` 那張退（第 5701 條）。
+3. **人名**：c-182 第 5171 條「高波初郎」應為「高浪初郎」（Discogs 873378）→ `pairs` 50 組；`fix-names` 全池改 c177／c182 卡單與 prop 各 1 處，c177 研究檔手改 1 處。
+   ⚠ **c177／c182 的 `input/*-writer-1.json` 與 c182 研究檔仍是舊字**——那兩批已寫完，正文若有這個名字，交本機上傳前覆核。
+
+### 二、⚠ ⚠ 初篩腳本的錯：**MB 日期精度不一，只到年的外國版排在日本版前面**
+
+c-196 a 第 7561 條指出 `hoyi-foreign-origin.json` 裡 `jp-king` 判「乙」的一串（Manhattan Jazz Quintet 八張、George Young 三張……）多半是 King 的日本原盤：
+**西德 Bellaphon 代工版的 MB 日期只填到 `1985`，字串排序排在 `1985-06-21` 的日本版前面**，腳本就把最早那一版判成西德。
+- **修 `hoyi-foreign-origin.mjs`**：最早那筆日期不足十碼、而同年（同月）有 JP 版 → 判「不明」；加 `--recheck-yi` 只重跑判乙的。**重跑翻回 9 筆。**
+- **另有一形 MB 看不出來**：日本原壓根本沒建、或建晚一年，只剩外國版。`jp-king` 判乙且最早是 `DE`（或 `DE/US`）的全部拉回。
+- **`slice-hoyi-recheck.mjs` 切成 c-197：24 張**（a 13：其餘；b 11：MJQ 八張 ＋ George Young 三張），`Chet Baker《Four》` 被撞池登記簿擋下。
+  已 `jp1-slice-enrich`＋`jp1-pool-refresh`＋`mark-prior-rulings`；`label-lines` 已登記；策展信加一段重篩說明（`c197/dispatch/cur-extra.md`）。
+- **通則：比日期先比精度。** 任何「誰最早」的判斷，精度不同的日期不能直接字串排序。
+
+### 三、策展信模板再補三個必查特徵（c-196 b）
+
+`source` 欄「甲」13 筆錯 3、「不明」2 筆反而都是日本原盤——只能當提示。另加：日本盤印 `Licensed by`／`Licensed Through`；
+同名廠牌陷阱（美國 King 被 MB 連到日本キング）；Discogs 同一張兩個 master、日本那個晚一年（Clayderman）。
