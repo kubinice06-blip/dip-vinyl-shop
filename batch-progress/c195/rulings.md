@@ -595,3 +595,141 @@
 - **§1 人工身分 0 張；年份改判 0、盤名真改判 0（取邊 1）、`artist` 欄改判 1、`live` 收件 `true` 2（其中邊界 1）、再發數 9 筆全跑 `versions`（MB 平均低估 72%）。**
 
 **編號區間結算**：本節用到 **7446–7473（共 28 條），未越界（a 組 7416–7445）**；7474–7475 留空。
+
+---
+
+# c-195 a 組研究層（7846–7875）｜研究層｜2026-09-28
+
+批次 c-195｜a 組 11 張（收件全表）｜輸入 `desc-tools/batches/cards/c195-cards.json` 的 `group === "a"`｜輸出 `desc-tools/batches/research/c195-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節與附錄二 → 主線第 1934-B…2010-B 條 → 本檔策展兩組（7416–7475）→ c-178 研究層兩段。⚠ 引用裁定一律寫「c-1XX 第 NNNN 條」。
+**本段編號區間 7846–7875（b 組研究層用 7876–7905）。**
+
+## 7846　總表：**11 張、facts 131 條（12×10＋11×1）；full 11、thin 0**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| a1 | AJF '82 All Star Jam —《Aurex Jazz Festival (1982): All Star Jam》 | 12 | full | 〈Minor Mishap〉1957 年首錄那一場 Flanagan 與 Burrell 都在；〈Listen To The Dawn〉的 Burrell 錄音室版 1983 年才上市；Jay and Kai 1980 年代初在日本音樂節同台 |
+| a2 | Marlene —《My Favorite Songs》 | 12 | full | 她在 CBS/Sony 的第三張；Budwig 與 Manne 1959 年就同團；Wofford 1980 年代隨 Manne／Sweets Edison 巡日 |
+| a3 | Steps —《Paradox - Live At Seventh Avenue South》 | 12 | full | 俱樂部是 Brecker 兄弟開的；前兩張鼓手 Steve Gadd→本盤 Erskine；2010 NYC Records 數位版多一段 19 分鐘的〈The Aleph〉別版 |
+| a4 | Hubert Laws … & Eloise Laws —《Aurex Jazz Festival '81: Fusion Super Jam》 | 12 | full | **系列背景寫在這一張**；Laws 兄妹；〈Family〉另壓 7 吋單曲；Tee 與 Gale 是 Stuff 原班 |
+| a5 | Nancy Wilson with The Great Jazz Trio —《What's New》 | 12 | full | 第八次來日的「來日記念盤」、12 月公演同樣由 GJT 伴奏、原壓套紅白巡演腰帶；她 1980 年代替日本廠牌錄了五張 |
+| a6 | The Dave Brubeck Quartet —《Aurex Jazz Festival '82》 | 11 | full | 〈Take Five〉12 分 10 秒 vs 1959 原版 5 分 28 秒；兒子 Chris Brubeck 彈電貝斯兼低音長號 |
+| a7 | The Great Jazz Trio —《Threesome》 | 12 | full | 原壓把〈Send In The Clowns〉印成〈Send In The Crowns〉；那一軌有未列名小提琴 Lewis Eley；一週後同班底錄 a5 |
+| a8 | Salena Jones —《Salena Fascinates》 | 12 | full | 人物格全給 Richie Cole 五重奏與幕後（高田英男、沢渡朔）；**她本人的生平一格都不寫**（c-194 a 已用盡） |
+| a9 | Art Farmer —《Maiden Voyage》 | 12 | full | 3M 32 軌數位機、十五人弦樂（首席 David Nadien）、佐藤允彦 的 Berklee 背景；同年秋又替 Interface 錄了與 GJT 合作的一張 |
+| a10 | Bill Evans (saxophonist), Hank Jones, Red Mitchell —《Moods Unlimited》 | 12 | full | 薩克斯風手 Bill Evans 是 Liebman 的學生（a4 串連）；Red Mitchell 的五度定弦 |
+| a11 | Les Brown & His Band of Renown … —《Aurex Jazz Festival '83》 | 12 | full | 主題曲〈Leap Frog〉開場；Jo Ann Greer 在團三十年、替 Rita Hayworth 代唱；**更正策展層人數**（7849） |
+
+**`src` 131/131 是完整 https 網址**；每張相異網域 2–4 個（Discogs 為主，en／ja 維基、MB、Apple 店面頁為輔）。
+
+## 7847　⚠ 再發版本數：**11 張逐筆重跑 `masters/<id>/versions`（無 master 的 a4 跑 `catno=`），數字改判 0；「數字對不等於內容全」的四種漏法逐張查過**
+
+| # | Discogs | MB | (a) MB 只數 mbNote | (b) 1970s 同號／2016 後黑膠 | (c) 數位（表外） | (d) MB 獨有 | 聯集（＝卡單） |
+|---:|---:|---:|---|---|---|---|---:|
+| a1 | 3 | 1 | — | 0 | 0 | 0 | 3 |
+| a2 | 11 | 1 | — | 0 | 0 | 0 | 11 |
+| a3 | 8 | 1 | — | 0 | **+2**（jp ℗2018 6 軌／us ℗2010 7 軌） | 0 | 10 |
+| a4 | 1＋孤兒盒裝 1 | 1 | — | 0 | 0 | 0 | 2 |
+| a5 | 6 | 3 | — | 0（2023 UCCU 已在表內） | 0 | 0 | 6 |
+| a6 | 3 | 1 | — | 0 | 0 | 0 | 3 |
+| a7 | 4 | 1 | — | 0 | 0 | 0 | 4 |
+| a8 | 5 | 1 | — | 0 | **+1**（℗1999 JVCKENWOOD） | 0 | 6 |
+| a9 | 10 | 5 | — | 0 | 0 | 0（1 判不出、1 不計） | 10 |
+| a10 | 6（含非官方 1） | 2 | — | 0 | 0 | 0 | 6 |
+| a11 | 3＋孤兒宣傳盤 1 | 1 | — | 0 | 0 | 0 | 4 |
+
+→ **策展層的聯集 11/11 全對**（與 c-178 研究層「策展層跑完版本表後研究層是純覆核」同形）。**本層補的是內容**：a3 us 數位版第 7 軌逐字〈The Aleph (Alternate Take)〉1147 秒（策展層只記「多一軌」）；a8 數位版 releaseDate 1999-02-24。⚠ **a4 的 7 吋單曲〈Family〉（EWS-17189，1981）是單曲、不是本盤的版本**，不計。⚠ a11 的《The Les Brown Story》（ECJ-80258，1983 日本 Capitol）Discogs 列在 Aurex 系列頁，但原盤是 1959 年美國 Capitol ST-1174 的舊錄音——**不是本盤的版本**，不計。
+
+## 7848　⚠ 推翻／補正策展層：**判斷推翻 1 處（a11 人數）、補正 6 處；收退結論 0 處變動**
+
+| # | 卡 | 策展層原文 | 本層 | 依據 |
+|---:|---|---|---|---|
+| 1 | a11 | 「演奏者二十餘人逐名印在盤上（…五支薩克斯…）」 | **逐名只有 17 人（指揮＋小號 4＋長號 4＋薩克斯風 4＋鋼琴／電貝斯／鼓＋歌手）＋客席 2＝19**；薩克斯風是 4 支（Fallman、Utal、Ciotti、Stone） | 原壓 6323992 extraartists 逐行（7849） |
+| 2 | a3 | us 數位版「多一軌」 | 第 7 軌是 19 分 07 秒的〈The Aleph (Alternate Take)〉 | Apple lookup 410352877 |
+| 3 | a5 | （卡單無） | 1982 年 12 月第八次來日、GJT 同任日本公演伴奏、本盤是「來日記念盤」；原壓有一批套紅白巡演腰帶 | ja 維基本盤條目引《読売新聞》1982-11-15 夕刊；Discogs 5181734 notes |
+| 4 | a9 | 錄音月只寫到「1983 年 4 月」 | 補錄音機：3M 32 軌數位錄音機 | MB 58d06ba6 annotation |
+| 5 | a7／a9 | Lewis Eley 只記在 a7 | **同一人也在 a9 的十把小提琴裡**（同製作 伊藤潔、同錄音 Jim McCurdy） | 兩張原壓 extraartists |
+| 6 | a10 | 反轉條件「若查到 Mitchell 自己的製作公司先發或 Paddle Wheel 盤面寫明 Licensed from，改判退」 | **查過不觸發**：原壓與 1991 KICJ 65 都無該行；Evidence 1993 反而逐字 `Licensed From: King Record Co. Ltd` | Discogs 7782508／7888401／10365901 |
+| 7 | a1 | 宣傳盤 notes | 宣傳盤把 B4 同時列在武道館與橫濱兩行（筆誤），a4 原壓把 A3 同時列在武道館與大阪兩行（筆誤）——兩卡 facts 都不寫逐軌場次 | Discogs 21407215／2083780 |
+
+## 7849　⚠ 推翻：a11 `Les Brown…《Aurex Jazz Festival '83》` **的樂團人數**
+
+原壓 6323992（與 1983 CD 7151812、1998 CD 20980195、孤兒宣傳盤 38517267 四筆逐字相同）的 extraartists：Conductor Les Brown；Trumpet Daryl Campbell／Don Smith／Fred Koyen／William Mattison；Trombone Bill Yeager／Clyde Brown／David Higgins／Jack Redmond；Alto Sax（兼 Clarinet, Flute）Howard Fallman、Tenor Sax Matt Utal、Tenor Sax（兼 Bass Clarinet）Louis Ciotti、Baritone Sax（兼 Vocals）Butch Stone；Piano John Raczka、Electric Bass Roger Spencer、Drums Jack Sperling、Vocals Jo Ann Greer；客席 Georgie Auld（Tenor Sax）、Buddy DeFranco（Clarinet）。
+**裁定**：facts 第 2 條照 credits 寫「四把小號、四支長號、四支薩克斯風」，**不寫總人數**（搖擺大樂團常見五支薩克斯風，盤面 credits 可能不全）；卡單 `curatorWhy` 的「二十餘人」「五支薩克斯」寫作層不得照抄。**可逆**（只影響一條 facts 的寫法）。
+
+## 7850　⚠ ⚠ Aurex 四張（a1／a4／a6／a11）：**系列背景只在 a4 寫詳；三張盤面的日期互相打架，四卡一律不寫「哪一天在哪一館」**
+
+1. **分配**（派工信第五節第 1 點）：a4 facts 第 6 條（系列年段）與第 7 條（1981 屆四張分組）；a1／a6／a11 各一句帶自己那一屆（a1、a6 帶 1982 屆另兩張，a11 帶 1983 屆四張）。**c-194 b《Gentlemen of Swing》已用掉 Aurex 品牌的命名由來與 1980 屆盒裝分組，本批不碰。**
+2. ⚠ ⚠ **「1980 到 1983」是 Discogs 系列頁 profile 的錄音系列年段**（逐字「Series of live recordings from the japanese Aurex Jazz Festival 1980 to 1983」），**不是音樂節的創辦／停辦年**——Aurex Jazz Festival 本身沒有 ja／en 維基條目（c-194 b 已記；本層再試 ja「オーレックス」只回一頁 463 位元組的消歧義，無此音樂節）。寫作層不得寫「音樂節辦了四屆」。
+3. ⚠ ⚠ **1982 屆三份盤面三種日期**：a1 三筆（原壓／宣傳盤／1998 CD）武道館 9/1、大阪 9/2、橫濱 9/5；a6 的 1998 CD 武道館 9/2、大阪 9/1、橫濱 9/5；Jaco Pastorius《Twins I》原壓（1026687）武道館 9/1、大阪 9/4、橫濱 9/5。→ **a1／a6 的 facts 只寫三個場館與三個日期（或「9 月」），不配對**，與策展層 risk、c-195 第 7427 條一致。
+4. **1983 屆**：a11 盤面完全沒有場館與日期；同屆 Shorty Rogers 那張（3867704）寫武道館 9/2、大阪 Stadium 9/3、橫濱 9/4——**那是別張盤的場次，a11 facts 不套用**（b1 Clooney 同，c-195 第 7459 條）。
+5. **1981 屆的單曲**：〈Family〉7 吋（Eloise Laws, Hubert Laws 掛名，B 面〈All I Do〉）與 2021 重發（PRKZ-7901）寫進 a4 facts 第 5 條；B 面是否出自音樂節現場，本層查不到。
+
+## 7851　⚠ a5 Nancy Wilson：**ja 維基本盤條目兩處錯、兩處可用；「每面一口氣錄完」是維基編者對「Recorded LIVE to two tracks」的詮釋**
+
+- **錯（不取）**：ja 維基 GJT 條目作品表把本盤寫成「1983年9月録音」；本盤條目的軌長表把 B3～B5 三首都寫成 9:06。
+- **可用**：本盤條目引《読売新聞》1982-11-15 夕刊（第八次來日、12 月日本公演由 GJT 伴奏、本盤 11/21 發行以記念來日）→ facts 第 5 條；「LP 片面 5 曲分をライブに準じて一挙に録音」→ facts 第 2 條（**它引的是 Discogs 原壓那一句，屬詮釋；寫作層若要保守改寫成「一次錄成雙軌」**）。
+- ⚠ ja 維基說當時她「離開 Capitol、尚未移籍 Columbia、沒有專屬合約」，en 維基逐字「In that same year she … signed with CBS Records」——facts 只寫「同一年簽下 CBS」。
+- ⚠ en 維基的「Tokyo Song Festival 優勝」沒有年份與類別，照獎項規則標 uncertain，未寫。
+
+## 7852　⚠ ⚠ GJT 同掛名反同構（a5／a7；b7／b8 在另一組）與跨卡串連點分配
+
+1. **前批已用掉的 GJT 格**（逐張讀 c-192 a 三張、c-192 b《The Session》、c-193 b 三張、c-194 b《Moreover》的研究稿，第 1985-B 條／c-187 a 第 6344 條）：團名由 East Wind 的 A&R 取、Tony Williams／Ron Carter／Buster Williams 班底、Eddie Gomez 的 Bill Evans 十一年、Al Foster 的 Miles 年代、「1982 年鼓手換成 Jimmy Cobb」、佐藤秀樹 的生年、岩浪洋三／児山紀芳 的生平。**本組兩張一格都沒重用。**
+2. **本組新用的人物格**：a7 = Jimmy Cobb 1958 年經 Adderley 推薦入 Miles 樂團、1963 年 Tony Williams 進來時離團（en 維基；**Tony Williams 就是 GJT 第一期的鼓手——寫作層可點出連結，但不要重述 GJT 成軍經過**）、伊藤潔 1946 年生於名古屋（Discogs 406894）；a5 = Nancy Wilson 本人（Adderley 勸她北上、1980 年代五張日本廠牌錄音）與封面攝影 Harry Langdon Jr.。
+3. **跨卡串連點（每一條只給一張用，鉤子層分配）**：
+   - a7 facts 第 9 條「一週後同班底錄 a5」——**歸 a7**，a5 facts 不寫。
+   - Lewis Eley（a7 未列名小提琴 ↔ a9 弦樂組）——**歸 a7**（a9 notes 記）。
+   - Dave Liebman 是 a10 Bill Evans 的老師（a4 台上的 Liebman）——**歸 a10**。
+   - 1981 屆 GJT & Friends with Nancy Wilson——a4 facts 第 7 條（系列角度）與 a5 facts 第 7 條（她本人的角度）各寫一次，**鉤子層只給一張用「前一年已合作」這一格**。
+   - Budwig／Manne 同團（a2）；Harry Edison 的「Sweets」綽號 c-194 b 已用，a2 不寫。
+   - Eddie Gomez 在 a3／a5／a7 三張都有：a3 只寫出生地，a5／a7 不寫他的生平。
+
+## 7853　⚠ a3 Steps：**en 維基自相矛盾的「第一張」、以原壓 notes 定錄音與發行先後**
+
+- en 維基 `Steps_Ahead` 正文把《Smokin' In The Pit》列為首張（1980），discography 節又把錄音室盤排前、並把《Smokin'》寫成「recorded in 1979」。
+- 兩張原壓 notes：錄音室盤（1220101）「Recorded on December 8th & 10th」、1981-06 發行；《Smokin' In The Pit》（2318274）「Recorded Live December 14~16, 1980 at the Pit-Inn Tokyo」、1981-02 發行。→ **先錄的是錄音室盤、先發行的是 Pit Inn 現場**；facts 第 7／8 條照此寫，第二張（c-196 `Steps《Step By Step》`，已在池中）**不點名盤名**（第 1787-B 條）。
+- Peter Erskine 在 Weather Report 的離團年本層未查實，facts 只寫 1978 年加入；Le Mobile 1981 年時的屬地未寫（en 維基：1973 年源於蒙特婁、1984 年起才以加州為基地）。
+
+## 7854　⚠ ⚠ a10：**薩克斯風手 Bill Evans 與鋼琴家零混入；生日兩源差一天**
+
+- facts 第 6／7 條全是薩克斯風手（Discogs 503619、en 維基 `Bill_Evans_(saxophonist)`），第 7 條只為切開兩人而提鋼琴家（en 維基逐字「unrelated to pianist Bill Evans (1929–1980)」）。
+- 生日：Discogs 1958-02-08、en 維基 1958-02-09 → facts 寫「1958 年 2 月」；錄音 1982-10-28 時 24 歲（兩說都成立），hookCandidates 用了「24 歲」。
+- Miles 復出期他參與的專輯有兩張是池中 seed（《The Man with the Horn》《We Want Miles》）——facts 不點名。
+
+## 7855　人名：**寫進 facts 的漢字人名 21 個，全部指到來源欄位；退成羅馬字 5 個；`name-corrections.json` 命中 0（伊藤潔 取正寫）；新改判 0**
+
+- **定案來源**：菊地洋一郎（997286 nv）、渡部喜久（879990 realname）、富岡豊（397254 nv）、浅葉克己（1887133 nv）、阿部克自（2406839 realname）、伊藤八十八（406896 realname）、鈴木良博（382386 realname）、筒美京平（ja 維基 `マリーン` 單曲表原文）、渡辺香津美（119483 realname）、伊藤潔（406894 realname）、青木啓（2574421 realname）、佐藤秀樹（546126 realname）、市川幸雄（2280705 nv）、高田英男（506042 realname）、沢渡朔（2777367 nv；另有 `澤渡朔`，取新字體形）、佐藤允彦（596931 realname）、渡辺かおる（1054718 nv）、操上和美（2265672 realname）、中尾陽一（1068456 nv）、高和元彦（873379 nv）——（野口久光 1798939 realname 只在 a2 facts 第 4 條署名）。
+- **照寫羅馬字**：Nobuo Ohtani（1676044 零變體）、Tadao Tokoro（339188 零變體）、Shusaku Minami（4595778 零變體）、Masako Yanagita（437304 零漢字變體）、Heyqlow Kobayashi（未回打）；Dai-Ichi Advertising（a4 製作協調，漢字形無來源）。
+- **全假名人名一律羅馬字**：a2 的舊藝名 マリリン → `Marilyn`（2158174 nv）、つのだ☆ひろ → `Hiro Tsunoda`。
+- ⚠ **旁記給主線（不動他批檔）**：c-194 b《Gentlemen of Swing》研究稿 notes 寫「`Yoshihisa Watanabe`／`Yutaka Tomioka` … 皆無可指的漢字欄位」——**實際 879990 `realname` 逐字 `渡部喜久`、397254 `namevariations` 逐字 `富岡豊`**（c-195 第 7431 條）。該卡照寫羅馬字無害，若要升級成漢字可照本組；該稿的 `Yoichiro Kikushi` 是 Discogs 另建的誤拼實體 4594218（1981 屆宣傳盒裝逐字 `Producer — Yoichiro Kikushi`），與 997286 `Yoichiro Kikuchi`（菊地洋一郎）疑為同一人，本層未改判、只記。
+
+## 7856　來源實測（本工作階段）
+
+| 網域 | 用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（releases／masters／versions／artists／labels） | 約 130 次 | 全數 200，節流 3.1 s，0 次 403／429 |
+| `en.wikipedia.org/w/index.php?action=raw` | 48 條 | 47 中（`Tommy Flanagan` 導向消歧義頁 `Thomas Flanagan`——⚠ **同名陷阱新增一則**：en 維基 `Tommy_Flanagan` 不是樂手條目，要用 `Tommy_Flanagan_(musician)`） |
+| `ja.wikipedia.org/w/index.php?action=raw` | 8 條 | 7 中（`マリーン (歌手)` 404、`マリーン` 200；`オーレックス` 只是消歧義殘頁） |
+| `musicbrainz.org/ws/2` | 5 次 | 全數 200（UA 照規） |
+| `itunes.apple.com/lookup` | 6 次 | 全數 200，403／429 零次 |
+
+⚠ **原廠網域本組未試**：十一張裡東芝EMI 系七張（Eastworld 在 Universal 旗下，原廠頁多為 2023 年 UCCU 再發的商品頁——派工信第三節「官方頁講的是它現在在賣的版本」）、コロムビア 兩張、ビクター 一張、キング 一張；策展層與本層在 Discogs／維基已取到足夠內容，**facts 無一條依賴原廠頁**。WebSearch 0 次。
+
+## 7857　池中迴避（第 1787-B 條）：**facts 零處點名同藝人的池中盤名**
+
+逐條避開：a1〈Minor Mishap〉首錄的 seed `Kenny Burrell《The Cats》1959`、〈Eclypso〉首錄的 seed `Tommy Flanagan《Overseas》1958`（兩者都只寫錄音日與地點）；a2 Budwig／Manne 的 seed《Shelly Manne & His Men at the Black Hawk, Vol. 1》（只寫「舊金山俱樂部連錄三天、四張 LP」）；a3 第二張（c-196）；a6〈Take Five〉首錄的 apex:hall《Time Out》；a8 她在 c-194 的兩張；a9 seed `Herbie Hancock《Maiden Voyage》1965`（只寫曲名）；a10 Miles 的兩張 seed。**盤名／曲題撞他卡**（〈Eclypso〉、〈Take Five〉、《Maiden Voyage》、《What's New》）的引用規則照 c-195 第 7435／7437 條，各卡 notes 已寫。
+
+## 7858　反向禁令的分類（逐項）
+
+- **與作品直接綁定、可寫（只寫時序）**：a1 Kai Winding 1983-05-06 過世（J.J. Johnson 條目把 1980 年代初的日本音樂節同台寫到他過世前不久；**本盤不是「最後一次同台」，寫作層不得那樣寫**）；a6 Paul Desmond 1977 年過世（〈Take Five〉的作者與原版薩克斯風手已不在，facts 一句、不渲染）。
+- **與作品無關、不寫**：其餘各卡成員的過世、離婚、後來的獎項（Nancy Wilson 1964 葛萊美、Red Mitchell 瑞典葛萊美、Chancler 的〈Billie Jean〉、Farmer 的 flumpet、中尾陽一 1985 年後的 CTI 再發工作、Marlene 2000 年結婚）。
+
+## 7859　交件自跑的結果、續跑保護與邊界自述
+
+- `node desc-tools/qa-batch.mjs research c195` → **a 11 張 `full×11`、字元掃描零警告**；總標記 1 是「key 集合與卡單不一致」——**b 組研究稿交件時只落 6/9 張，不是本組的問題**。
+- **自己逐張量**：facts 條數 12×10＋11×1；`src` 131/131 完整 https（逐條 regex 驗）；簡體 0、千分位逗號 0、半形逗號貼中文 0；`hookCandidates` 11 張各 2 條；`keyTracks` 各 2 首；獎項「入圍／得獎」字樣 0 處（本組 facts 沒有寫任何獎項）；日文新字體只出現在專名（渡辺香津美／沢渡朔／渡辺かおる）。
+- `desc-tools/jp-proper-names.json`：**append 0 個**（QA 零誤報）。
+- **續跑保護**：每 3 張寫回一次（3→6→9→11 四次落檔），寫法是「讀既有檔 → 以 `key` 合併 → 照卡單順序整份寫回」；臨時檔全在 `scratchpad/c195ra/` 並帶 `c195ra-` 前綴。
+- **邊界**：只動 `desc-tools/batches/research/c195-a.json`（新增）與本檔（append 7846–7859，寫前 `git show HEAD:` 與工作區逐行一致、597 行、b 組研究段未落）。沒碰卡單、`prop-*.json`、`c195-b.json`、`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、KV、Firestore；未 `git add`／`commit`／`push`。
+
+**編號區間結算**：本段用到 **7846–7859（14 條）**，7860–7875 留空；未越界（b 組研究層 7876–7905）。

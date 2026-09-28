@@ -8,5 +8,5 @@
 2. ⚠ ⚠ **研究層推翻（照研究稿）**：`Aki Takase《As Time Goes By》` 編制是三重奏 7、二重奏 1、獨奏 6；`John Lewis & Hank Jones《Piano Play House》` 版本數 2、盤名原是 1976 年兩人在東京一場音樂會的名字；
    `Mal Waldron《Meditations》` 年份 1972、`live: true`；`岡田則男` 是監督錄音的工程師不是「監修」；`小林光晴` 漢字三說——不寫；`Irakere《Chekeré son》` 版本 8、《Cuba libre》版本 6；`Ron Carter《1 + 3》` 解說 `野口久光`。
 3. ⚠ **錄音日兩說不寫月份**：b《Heart to Heart》、b《Moreover》（原廠頁與 CD notes 打架）。**同名陷阱**：`Lee Ritenour《Friendship》` vs 1979 樂團 Friendship 的同名盤；`Frank Foster and The Loud Minority《Shiny Stockings》` 的 Loud Minority 另有 Denon《Manhattan Fever》，與池中 c-141 1968 Blue Note 同名盤是不同的碟——**零字點名**。
-4. ⚠ **人名**：`白石健二`（不是 金子健二，`_entity_mislinks`）、監製 `Shoo Kaneko`（零漢字）；`Dave Grusin & The GRP All-Stars … 渡辺貞夫《Live in Japan》` 美版 1981 年掛名已拿掉 渡辺貞夫；`Aki Takase` 是日本人，漢字規則照本土。
+4. ⚠ **人名**：`白石健二`（不是 金子健二，`_entity_mislinks`）、監製 `Shoo Kaneko`（零漢字）；`Dave Grusin & The GRP All-Stars … 渡辺貞夫《Live in Japan》` 美版 1981 年掛名已拿掉 渡辺貞夫；`Aki Takase` 是日本人，漢字規則照本土；⚠ **`Aurex Jazz Festival '80 - Gentlemen of Swing` 研究稿寫錄音師 `Yoshihisa Watanabe`／`Yutaka Tomioka`「沒有漢字來源」是錯的——Discogs 分別是 `渡部喜久`、`富岡豊`（c-195 a 研究第 7855 條）；要寫就用漢字，`Yoichiro Kikushi` 疑為 菊地洋一郎、沒有確證——整格不寫。**
 5. **串流與封面**：這一層不寫聆聽入口；`As Time Goes By`／`Piano Play House`／`Mistral` 三筆誤命中已排程降級（主線第 2011-B／2012-B 條）。
