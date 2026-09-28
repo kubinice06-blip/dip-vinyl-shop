@@ -396,5 +396,139 @@
   "status": "full",
   "notes": "⚠ ⚠ **推翻策展層一處：版本數 11 → 10**。卡單寫「master 301512 `versions` 10 版＋Apple jp 1443514283 不在表內 → +1＝11」——**但那 10 版裡本來就有一筆數位版**：releases/36070918（2007-06-09、`File` 七軌 FLAC、Universal Music LLC、℗ 1978 Universal Classics & Jazz），**逐軌時長與 Apple 那一筆對得上**（Discogs 5:15／6:03／7:00／5:08／4:55／3:43／6:31 vs Apple 5:16／6:03／7:01／5:09／4:55／3:44／6:33）——照主線第 1987-B 條「Apple 命中要先比對有沒有對應的數位實體」與 c-192 b 第 7276 條 #16 的處置（Apple 對應 Discogs 那筆 `MP3`、不重複計），**Apple 不另加**。卡單 `label` 欄的「→ +1＝11」請主線改 10（可逆）。⚠ 第 4 條〈Eighty-One〉的 E.S.P. 接點碰到「Carter 與 Williams 是 Miles 第二五重奏節奏組」那一格——**那一格的團史歸 c-193 b《Love for Sale》擁有**；本卡只寫「這首曲子 1965 年初錄、當時的貝斯與鼓就是這兩人」，**寫作層不要擴寫成「兩人是 Miles 第二五重奏的節奏組」這種團史句**。⚠ 第 3 條：〈Mr. Biko〉的曲題看起來指向南非的 Steve Biko（1977 年 9 月死於拘留），**但盤面與任何來源都沒有這樣說，本層不寫**；寫作層不要自己補。⚠ `Hormone` 的日文題在數位版逐字「ハモーン」，只記觀察。⚠ 第 5 條是原廠 2024 年アンコールプレス 頁的商品文案（單一原廠來源），facts 以「廠牌的復刻商品頁說」框住。⚠ ⚠ 同團同線分工：**團的來歷只給 c-193 b《Love for Sale》**；c-193 b 已用：Iverson 的「Rolls-Royce」評語（《Direct From L.A.》）、操上和美／小林平九郎「同一組人」那一格（《Direct From L.A.》）、Live Under The Sky 與原班最後一張（《The Great Tokyo Meeting》）、Tony Williams 生年與 Lifetime／V.S.O.P.（同上）——本卡不寫這些；第 6 條的幕後名單只列名字、不寫「同一組人」。⚠ ja 維基 GJT 條目說 1975 年春三人已以 GJT 之名在 Village Vanguard 登台——與 en 維基「1976 年由 A&R 命名」衝突，c-193 b 已裁定不寫 1975 年說，本卡同樣不寫。⚠ 身分照第 4 堆（日本是原盤）：第 8 條 Inner City 逐字「Licensed From: Nippon Phonogram Co., Ltd.」「Licensed From: East Wind」，與原盤在日本同向。⚠ 版本：MB 0 筆；日本盤 8 vs MB 轄下 JP 0，盤名與年份已回查；2024-05-29 以同號 UCCJ-9189 再壓，照本層裁定不另計。⚠ 串流：`previews.json` ready（jp 1443514283，與卡單 `coverSourceHint` 同一個 id）；`caa.json` `art: null`（§1 人工），封面照卡單走 Apple 精確 collectionId。推翻策展層 1 處（版本數）。",
   "coverage": "full"
+ },
+ {
+  "key": "desc2:The Great Jazz Trio|At the Village Vanguard Vol. 2",
+  "artist": "The Great Jazz Trio",
+  "album": "At the Village Vanguard Vol. 2",
+  "facts": [
+   {
+    "f": "1977 年 2 月 19、20 日在紐約 Village Vanguard 的現場錄音，同年由東京的 East Wind 以 EW 8055 發行，四軌黑膠，製造與發行是日本フォノグラム。",
+    "src": "https://www.discogs.com/release/7155044"
+   },
+   {
+    "f": "四軌都是長版本：Charlie Parker 的〈Confirmation〉9 分 49 秒、Sara Cassey 的〈Wind Flower〉8 分 16 秒、Miles Davis 的〈Nardis〉11 分 03 秒，收尾是鼓手 Tony Williams 自己寫的〈Lawra〉8 分 51 秒。",
+    "src": "https://www.discogs.com/release/7155044"
+   },
+   {
+    "f": "同一個檔期的第一集《At the Village Vanguard》（EW-8053）收的是另外四首——〈Moose The Mooch〉〈Naima〉〈Favors〉與 Ron Carter 的〈12+12〉，兩集一首都不重複。",
+    "src": "https://www.discogs.com/release/3220131"
+   },
+   {
+    "f": "廠牌 2023 年首次把本盤做成 SHM-CD 時的商品頁說，第二集和第一集一樣以 Parker 的曲子開場，並點名〈Nardis〉裡抒情與戲劇性的調和。",
+    "src": "https://www.universal-music.co.jp/the-great-jazz-trio/products/uccu-6342/"
+   },
+   {
+    "f": "那張 2023 年的 SHM-CD 收在「ジャズ百貨店」系列新開的鋼琴篇裡：這個系列 2016 年起累計出貨超過 80 萬張，鋼琴篇從廠牌目錄跨字標挑了 50 張爵士鋼琴盤。",
+    "src": "https://www.universal-music.co.jp/the-great-jazz-trio/products/uccu-6342/"
+   },
+   {
+    "f": "〈Wind Flower〉是 Hank Jones 兩年前在自己的 East Wind 領銜盤裡就錄過的曲子，那時只有 5 分 28 秒，貝斯同樣是 Ron Carter、鼓換成 Grady Tate。",
+    "src": "https://www.discogs.com/release/6718173"
+   },
+   {
+    "f": "盤上的協同製作掛了兩個人：鋼琴手 Hank Jones 本人，以及同時負責現場錄音的 David Baker；製作是 伊藤潔 與 伊藤八十八，執行製作 鯉沼利成。",
+    "src": "https://www.discogs.com/release/7155044"
+   },
+   {
+    "f": "母帶在日本完成：混音 鈴木良博、刻片 小鉄徹；紐約那一頭的助理錄音是 John Kilgore；封套攝影 内藤忠行、設計 小林平九郎。",
+    "src": "https://www.discogs.com/release/7155044"
+   },
+   {
+    "f": "解說出自 油井正一——1918 年生於橫濱的爵士評論家、作家兼廣播主持人。",
+    "src": "https://www.discogs.com/artist/1588219"
+   },
+   {
+    "f": "海外版晚了一年：1978 年法國出了 East Wind 字標的 9126 026，美國要到 2005 年才由 Test Of Time 以 TOT-6 出 CD。",
+    "src": "https://www.discogs.com/master/794173"
+   },
+   {
+    "f": "日本這邊 1979 年出了 15PJ-1016、1980 年又以 20PJ-10 重壓，1986 年首次 CD 化（32JD-107）。",
+    "src": "https://www.discogs.com/master/794173"
+   },
+   {
+    "f": "已知版本十三個：1977 年的市售盤與宣傳盤、1978 年法國盤與一筆年份不明的法國重壓、1979 與 1980 年兩張日本再發黑膠、1986、2000、2002、2015、2023 年五張日本 CD、2005 年美國 CD，以及一個四軌的數位版。",
+    "src": "https://www.discogs.com/master/794173"
+   }
+  ],
+  "hookCandidates": [
+   "同一個週末在 Village Vanguard 錄下的八首，被拆成兩張唱片——這是第二張，四首沒有一首和第一張重複。",
+   "第二首是一位過世十一年、從不上台的作曲者寫的曲子；兩年前錄音室裡五分半的版本，到了俱樂部拉長成八分多鐘。"
+  ],
+  "sound": "紐約爵士俱樂部的鋼琴三重奏實況：四首都在八到十一分鐘，Parker 的 bebop 快曲開場，〈Wind Flower〉與〈Nardis〉是抒情的長版本，Tony Williams 的原創曲收尾；Hank Jones 的鋼琴、Ron Carter 的貝斯與 Tony Williams 的鼓，全張零人聲。",
+  "keyTracks": [
+   "Nardis",
+   "Confirmation"
+  ],
+  "status": "full",
+  "notes": "⚠ 分卷照卡單（c-187 第 6080 條先例、互指）：派工信第五節第 3 點要求「寫成同一檔期的另一集、不點名 Vol.1 以外的池中碟」——第 3 條點名的就是 Vol.1，其餘池中 GJT 與 Hank Jones 碟一律不點名；**第 6 條接的是本批 #5《Hanky Panky》（同批收件卡、不是池中卡），盤名也沒寫，只寫「自己的 East Wind 領銜盤」**。⚠ ⚠ **〈Wind Flower〉的接點本批兩張都有**（#5 那張寫「兩年前」的一端、本卡寫「兩年後」的一端）——**鉤子層兩卡只取一邊當主軸**；hook 第 2 條依賴本卡第 6 條與 #5 第 4 條的 Sara Cassey 生平（1966 年歿→本場 1977，十一年），若 #5 拿走 Sara Cassey 那一格，這條 hook 要換。⚠ 第 4 條「和第一集一樣以 Parker 的曲子開場」出自原廠 2023 年頁，本層以第 3 條（Vol.1 A1〈Moose The Mooch〉作曲欄 Charlie Parker）自己核過。⚠ 原廠 2024 年頁的文案另寫「元マイルス・デイヴィス・グループの2人を従えて」——那是團史那一格（歸 c-193 b《Love for Sale》），本卡不寫。⚠ ⚠ **給主線（本機）一件：池中 seed Vol.1 的年份可能要從 1978 改 1977**——Discogs master 383972 有一筆 `EW-8053` 1977 Japan（releases/32515812），而號段在後的本盤（`EW 8055`）與 #10《KJLH》（`EW-8056`）都是 1977；卡單把本盤從 1978 改判 1977 的依據與此一致。⚠ Vol.1 的 notes 另有「Ron Carter appears through the courtesy of Milestone Records／Tony Williams appears through the courtesy of CBS Records」與對 Max Gordon 的致謝——那是 Vol.1 的封套字，本層沒有寫進本卡。⚠ 第 9 條 油井正一 只寫生年與職業；1998 年辭世不寫。⚠ 身分照第 4 堆（日本是原盤：法國晚一年、美國晚 28 年），第 10 條不與之相反。⚠ `live: true` 照卡單；facts 第 1 條的「現場錄音」與 Discogs notes「Recorded February 19th and 20th 1977 at The Village Vanguard」、原廠頁「ライヴ録音」一致。⚠ 版本：master 794173 十二版逐筆跑完（無數位條目）＋Apple jp 1468068409（4 軌；`releaseDate` 1978-01-01 佔位、不採）＝13，與策展層相同、零改判；MB 1 筆（2005 TOT-6，在表內）；2024-05-29 以同號 UCCJ-9184 再壓，照本層裁定不另計。⚠ CAA：`caa.json` 本筆 RG 5bc7ee05 `art: null`；串流 `previews.json` ready（jp 1468068409）。推翻策展層 0 處；補三格（第 3 條兩集曲目對照、第 6 條〈Wind Flower〉前作、第 7 條 Hank Jones 自己掛協同製作）。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc4:大村憲司|First Step",
+  "artist": "大村憲司",
+  "album": "First Step",
+  "facts": [
+   {
+    "f": "1978 年 7 月 5 日由東芝EMI 的 Toshiba Records 以 LF-91042 發行，五軌立體聲黑膠；製作兼編曲是 深町純，他同時彈鍵盤，大村憲司 自己也掛編曲與電吉他。",
+    "src": "https://www.discogs.com/release/4482764"
+   },
+   {
+    "f": "A 面三軌的節奏組是 坂本龍一 的鍵盤、林立夫 的鼓、浜口茂外也 的打擊與 Kumito Osuyara 的電貝斯；B 面末軌〈Rhythm Road〉換成 村上秀一 打鼓、高水健司 彈電貝斯。",
+    "src": "https://www.discogs.com/release/4482764"
+   },
+   {
+    "f": "五軌的作曲欄：〈Boston Flight〉是 Martin Willweber、〈Typhoon〉是 Toshiaki Hayashi、〈Better Make It Through Today〉是 Eric Clapton、〈Here's That Rainy Day〉是 Jimmy Van Heusen 與 Johnny Burke，〈Rhythm Road〉出自 是方博邦；唯一有人唱的 Clapton 那首，掛主唱的是 大村憲司 本人。",
+    "src": "https://www.discogs.com/release/4482764"
+   },
+   {
+    "f": "錄音工程兼再混音是 河田為雄，執行製作是在 1970–80 年代替東芝做了大量爵士盤的 高橋英昭，解說出自 加藤しげき。",
+    "src": "https://www.discogs.com/release/4482764"
+   },
+   {
+    "f": "1979 年東芝EMI 把它改掛 Express 字標以 ETJ-85019 再發時，內容換了：曲序重排，還在 A 面第一軌加進他自己寫的〈Left-Handed Woman〉，那一軌的鼓是 Martin Willweber 與 村上秀一、貝斯是 Ray Ohara。",
+    "src": "https://www.discogs.com/release/2536672"
+   },
+   {
+    "f": "那張 1979 年版的說明欄交代了錄音經過：1978 年 3 月到 5 月在東京錄音，錄音室有東芝EMI、Freedom 與 Media 三處，5 月 8 日在東芝EMI 的 Track Down Room 7 再混音。",
+    "src": "https://www.discogs.com/release/2536672"
+   },
+   {
+    "f": "寫〈Boston Flight〉的 Martin Willweber 在 1979 年版的〈Left-Handed Woman〉裡坐上了鼓椅——作曲欄與鼓手欄是同一個人。",
+    "src": "https://www.discogs.com/release/2536672"
+   },
+   {
+    "f": "四個月後他在洛杉磯替另一家廠牌錄的下一張個人專輯，把〈Boston Flight〉〈Better Make It Through Today〉〈Rhythm Road〉三首又錄了一次，另收〈Left-Handed Woman〉；那一次的〈Boston Flight〉只有 4 分 56 秒。",
+    "src": "https://www.discogs.com/release/2527946"
+   },
+   {
+    "f": "這幾首在東京錄的都是長版本：2012 年 CD 標的時長，〈Boston Flight〉8 分 18 秒、〈Rhythm Road〉9 分 09 秒、〈Typhoon〉7 分 21 秒。",
+    "src": "https://www.discogs.com/release/27435771"
+   },
+   {
+    "f": "數位版有七軌：原本五首之外，另收〈Left-Handed Woman〉，以及一軌標明「LF-91042 version」的〈Boston Flight〉8 分 03 秒，比主軌的 8 分 18 秒短了 15 秒。",
+    "src": "https://music.apple.com/jp/album/720313988"
+   },
+   {
+    "f": "2023 年 11 月 14 日 HMV 以 UPJY 9329 出了復刻黑膠，解說換成 井川恭一 執筆。",
+    "src": "https://www.discogs.com/release/29251180"
+   },
+   {
+    "f": "已知版本九個，全部在日本：1978 年原壓、1979 年 Express 版的黑膠、宣傳盤與卡帶、1990、2003、2012 年三張 CD、2023 年復刻黑膠，加上一個七軌的數位版。",
+    "src": "https://www.discogs.com/master/545684"
+   }
+  ],
+  "hookCandidates": [
+   "吉他手的第一張個人專輯，唯一一首有人唱的是 Eric Clapton 的歌，站在麥克風前的是他自己；四個月後他在洛杉磯把它和另外兩首又錄了一次。",
+   "這張碟隔年再版時換了內容：多了一首他自己寫的歌，鼓手是 A 面第一首的作曲者。"
+  ],
+  "sound": "1978 年東京錄音室的吉他融合樂：大村憲司 的電吉他領奏，深町純 與 坂本龍一 的鍵盤、林立夫 或 村上秀一 的鼓墊底，〈Boston Flight〉〈Rhythm Road〉拉到八九分鐘的長版本，一首標準曲〈Here's That Rainy Day〉，唯一的人聲是他自唱的 Clapton 歌；曲風欄 Jazz／Rock、樣式欄 Fusion／Classic Rock。",
+  "keyTracks": [
+   "Boston Flight",
+   "Rhythm Road"
+  ],
+  "status": "full",
+  "notes": "⚠ ⚠ **補正策展層一處：1979 年 Express 版不是原盤的單純再發，是換了內容的版本**。卡單 `curatorRisk` 說「Apple 是 7 軌（1979 年 Express `ETJ-85019` 起的擴充曲序，多了〈Left-Handed Woman〉等），原壓 5 軌」——方向對，但 **ETJ-85019 本身是六軌**（A1〈Left-Handed Woman〉／A2〈Typhoon〉／A3〈Here's That Rainy Day〉／B1〈Boston Flight〉／B2〈Rhythm Road〉／B3〈Better Make It Through Today〉，Discogs releases/2536672），**Apple 的七軌是 2012 年 CD 的曲序**（五首原曲＋〈Boston Flight (LF-91042 version)〉＋〈Left-Handed Woman〉；2012 CD 的 credits 引用了第 7 軌、tracklist 只登了五軌）。**所以「原壓的〈Boston Flight〉」與數位版主軌的〈Boston Flight〉是兩個混音**（8:03 vs 8:18）——封面同一張、軌數與混音不同，下游不要說數位版就是原壓原樣。⚠ ⚠ **跨批同曲（池中已上架）**：c-191 a 的 `大村憲司《Kenji Shock》`（1978-11-25 Alfa，洛杉磯錄音）與本盤共有〈Boston Flight〉〈Better Make It Through Today〉〈Rhythm Road〉三首（加上 1979 版的〈Left-Handed Woman〉是四首）——**是重錄、不是同一份錄音**（編制與時長全異：Boston Flight 4:56 vs 8:18、Rhythm Road 5:46 vs 9:09、Better Make 4:43 vs 5:33；那張是 Porcaro 兄弟與 Lukather），照第 1948-B 條不影響兩卡成立。⚠ **但那張卡已上架的 hook 是「整張唯一有人唱的一首是 Eric Clapton 三年前的歌，而站在麥克風前的是吉他手自己」——同一件事本盤早四個月就做過**；兩卡並陳時要對得上：**本卡寫「第一次」這一端時，不要寫成「他後來的唱片再沒唱過」**，也請主線看一眼那張卡的正文要不要補一句（本層不動 c-191 的檔）。facts 第 8 條照派工信只寫「另一家廠牌的下一張個人專輯」、不點名盤名。⚠ 第 3 條〈Typhoon〉的作曲欄逐字 `Toshiaki Hayashi`（Discogs 沒有這個人的漢字變體、也不是鼓手 林立夫＝Tatsuo Hayashi），照規矩寫羅馬字；Kumito Osuyara、Ray Ohara 同樣零漢字變體、寫羅馬字。第 4 條 河田為雄（857271 nv）、高橋英昭（1243149 nv）、加藤しげき（1767574 nv，只有假名形「加藤しげき」「加藤 しげき」，照 nv 寫）；井川恭一 照 2023 版 credits 的逐字漢字。⚠ 第 10 條「是原壓那一版的混音」出自 Apple 的軌名逐字「(LF-91042 version)」＋時長差，**本層沒有取得原壓的逐軌時長**（原壓 Discogs 條目零時長），寫作層若用只寫「數位版另收一軌標明原壓版本的 Boston Flight」。⚠ ⚠ **已用掉的格**：大村憲司 的生年、神戸、甲南、1969 年 Yamaha 比賽、Fillmore West、上智、赤い鳥、エントランス／バンブー／カミーノ、YMO 巡演支援（c-185 b、c-186 a、c-191 a）——本卡零字；坂本龍一／林立夫／村上秀一 的生平也不寫（本卡只寫他們在盤上的位置）。⚠ 第 5 條「東芝EMI 把它改掛 Express 字標」：原壓字標 `Toshiba Records`、再發字標 `Express`，兩版 `companies` 都是 `Manufactured By: Toshiba EMI Ltd`——同一家公司的兩個字標。⚠ 年份照卡單 1978（原壓 `released` 1978-07-05、Apple `releaseDate` 同日，東芝盤的 Apple 日期只作佐證）。⚠ 身分照卡單 §1 人工（MB 查無），facts 的 `src` 零 MB。⚠ 版本：master 545684 八版逐筆跑完＋Apple jp 720313988＝9，與策展層相同、零改判。⚠ 串流：`previews.json` ready（jp 720313988，與卡單 `coverSourceHint` 同一個 id）；`caa.json` `art: null`。推翻策展層 0 處（數字）；補正 1 處（Express 版與數位版的內容）。",
+  "coverage": "full"
  }
 ]
