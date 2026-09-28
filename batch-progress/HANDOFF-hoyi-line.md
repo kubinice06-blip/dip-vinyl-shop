@@ -16,4 +16,9 @@
 8. **c-194 研究：`Ron Carter《1 + 3》` 解說者 `野口久光`**（羅馬字改漢字，不進 `pairs`）；**c-194 b《Gentlemen of Swing》錄音師漢字 `渡部喜久`／`富岡豊`**（c-195 a 第 7855 條）。
 9. **上傳 c-192…c-198 全部**（照 `REMOTE_RUNBOOK.md`）。
 
+## 二之一、未收的撈回候選（留給下一次補遺；℗ 未逐筆驗）
+
+- c-198 b 第 8022 條：JJ Records 目錄裡兩張外國藝人的 Victor 日本原盤形——`Art Blakey《Jazz Messengers '70》`、`Helen Merrill With Teddy Wilson《Helen Sings, Teddy Swings!》`。
+  **為什麼這一輪不收**：只有兩張、℗ 沒驗，為兩張開一批要把五層全走一遍——等下一次補遺掃描一起收。
+
 ## 三、教訓（收線時補）

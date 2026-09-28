@@ -19,8 +19,11 @@
 | c188 | `池田芳夫 & 高瀬アキ《Esprit》` | 高瀬アキトリオ《AKI》1978 | mainline-1998-B |
 | c189 | `日野皓正《New York Times》` | New York Times《New York Times》2007 | mainline-1997-B |
 | c191 | `安田南 with 山本剛トリオ《Sunny》` | サニーデイ・サービス《Sunny》2014 | mainline-2002-B |
-| c159 | `Joe Lovano《I'm All for You》` | AAA《ALL》2007 | mainline-2011-B（排程中，探測鏈跑完才寫） |
-| c192 | `Jack DeJohnette《Have You Heard?》` | CCK《Have You Heard (Live)》2009 | mainline-2011-B（同上） |
+| c159 | `Joe Lovano《I'm All for You》` | AAA《ALL》2007 | mainline-2011-B（已寫入） |
+| c192 | `Jack DeJohnette《Have You Heard?》` | CCK《Have You Heard (Live)》2009 | mainline-2011-B（已寫入） |
 | c192 | `渡辺貞夫《Bossa Nova Concert》` | 渡辺貞夫《SADAO WATANABE》1961 → **改指 1868591470**（manual-recover） | c-192 a 第 7604 條 |
 
 ⚠ **第四種形狀（主線第 2011-B 條）：短掛名摺疊後成為長掛名的子字串**（`CCK`→`ck` ⊂ `jackdejohnete`）——`looseArtistOk` 已補「canon 後 ≤4 字只接受完全相等」，全檔回掃只這兩筆。
+| c194 | `Aki Takase《As Time Goes By》` | 高瀬アキトリオ《AKI》1978 | mainline-2011-B（排程中） |
+| c194 | `John Lewis & Hank Jones《Piano Play House》` | 同名 11 軌合輯 | mainline-2011-B（排程中） |
+| c194 | `Freddie Hubbard《Mistral》` | ナティ・ミストラル（西班牙歌手 Nati Mistral） | mainline-2012-B（排程中） |
