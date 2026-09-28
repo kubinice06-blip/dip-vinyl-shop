@@ -24,6 +24,8 @@
 | c192 | `渡辺貞夫《Bossa Nova Concert》` | 渡辺貞夫《SADAO WATANABE》1961 → **改指 1868591470**（manual-recover） | c-192 a 第 7604 條 |
 
 ⚠ **第四種形狀（主線第 2011-B 條）：短掛名摺疊後成為長掛名的子字串**（`CCK`→`ck` ⊂ `jackdejohnete`）——`looseArtistOk` 已補「canon 後 ≤4 字只接受完全相等」，全檔回掃只這兩筆。
-| c194 | `Aki Takase《As Time Goes By》` | 高瀬アキトリオ《AKI》1978 | mainline-2011-B（排程中） |
-| c194 | `John Lewis & Hank Jones《Piano Play House》` | 同名 11 軌合輯 | mainline-2011-B（排程中） |
-| c194 | `Freddie Hubbard《Mistral》` | ナティ・ミストラル（西班牙歌手 Nati Mistral） | mainline-2012-B（排程中） |
+| c194 | `Aki Takase《As Time Goes By》` | 高瀬アキトリオ《AKI》1978 | mainline-2011-B（已寫入） |
+| c194 | `John Lewis & Hank Jones《Piano Play House》` | 同名 11 軌合輯 | mainline-2011-B（已寫入） |
+| c194 | `Freddie Hubbard《Mistral》` | ナティ・ミストラル（西班牙歌手 Nati Mistral） | mainline-2012-B（已寫入） |
+| c196 | `Richie Beirach《Ballads》` | Dave Liebman & Richie Beirach《Balladscapes》2016 | mainline-2012-B（已寫入） |
+| c197 | `Gil Evans《Farewell - Live at Sweet Basil》` | 同系列第 1 張《Live At Sweet Basil》1984 數位版 | mainline-2012-B（已寫入） |
