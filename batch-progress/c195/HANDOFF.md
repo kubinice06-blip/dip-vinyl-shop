@@ -1,6 +1,6 @@
 # c-195 交接（2026-09-28）：**日本爵士補遺線 hoyi 第四批**，第 4 堆（外國藝人的日本原盤）1981–1984，20 張
 
-**這批可以接本機上傳了**（`Three Pearls` 試聽回撈排程中）。雲端能做的全部做完，剩下的是雲端依 `REMOTE_RUNBOOK.md` **不能做**的。
+**這批可以接本機上傳了**。雲端能做的全部做完，剩下的是雲端依 `REMOTE_RUNBOOK.md` **不能做**的。
 
 ## 一、35 張提案收 20 退 15（57%）
 
@@ -15,7 +15,7 @@
 | 三軸與頂點資格 | 卡單已帶；本批 apex 0 張 |
 | 固定簡介（desc） | **20/20 全 full**，字數 **204–239** |
 | 封面 | **CAA 12/20**（缺 AJF '82、`My Favorite Songs`、`Threesome`、`Warne Marsh Meets Gary Foster`、`French Toast`、`N.Y. Sophisticate`、`Monk's Moods`、`Mal '84`——CAA 真的無圖） |
-| 固定試聽／無來源狀態 | **5/20 ready → 排程回撈 `Three Pearls` 後 6/20**；其餘走固定無來源狀態 |
+| 固定試聽／無來源狀態 | **6/20 ready**（`Three Pearls` 已回撈 jp 1668258956）；其餘走固定無來源狀態 |
 | §5.5／§5.6 例外欄位 | 例外欄全空 |
 | published gate | 本機端 |
 

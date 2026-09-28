@@ -1,6 +1,6 @@
 ### 2026-09-28｜dip-vinyl-shop｜c-196（日本爵士補遺線 hoyi 第五批）五層管線走完，15 張
 
-**改動摘要**：第 4 堆 1978–1988，**33 張收 15 退 18（45%）**；身分 **15/15 pinned**、簡介 **15/15 全 full（212–239）**、**封面 14/15、串流定案 5/15**（一筆降級排程中）。apex 0、例外欄全空。
+**改動摘要**：第 4 堆 1978–1988，**33 張收 15 退 18（45%）**；身分 **15/15 pinned**、簡介 **15/15 全 full（212–239）**、**封面 14/15、串流 6/15**（一筆誤命中已降級）。apex 0、例外欄全空。
 
 **主要檔案**：`batch-progress/c196/{slice,prop-a,prop-b,caa,apple-candidates,rulings,HANDOFF,preview-fixes.sh}`、`batch-progress/c196/dispatch/*`、
 `desc-tools/batches/{cards,research,hooks,input,output}/c196-*.json`、`batch-progress/hoyi-foreign-origin.mjs`（日期精度修正）、`batch-progress/enum/known-pool-collisions.json`。

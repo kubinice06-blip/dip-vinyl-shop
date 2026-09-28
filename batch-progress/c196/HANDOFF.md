@@ -1,6 +1,6 @@
 # c-196 交接（2026-09-28）：**日本爵士補遺線 hoyi 第五批**，第 4 堆（外國藝人的日本原盤）1978–1988，15 張
 
-**這批可以接本機上傳了**（`Ballads` 試聽降級排程中）。雲端能做的全部做完，剩下的是雲端依 `REMOTE_RUNBOOK.md` **不能做**的。
+**這批可以接本機上傳了**。雲端能做的全部做完，剩下的是雲端依 `REMOTE_RUNBOOK.md` **不能做**的。
 
 ## 一、33 張提案收 15 退 18（45%）
 
@@ -16,7 +16,7 @@
 | 三軸與頂點資格 | 卡單已帶；本批 apex 0 張 |
 | 固定簡介（desc） | **15/15 全 full**，字數 **212–239** |
 | 封面 | **CAA 14/15**（缺 `Marlene《SOFTLY, AS IN A MORNING SUNRISE》`；`Stardust` 重探後補上） |
-| 固定試聽／無來源狀態 | **現況 6 ready → 排程降級 `Richie Beirach《Ballads》`（配到《Balladscapes》）後 5/15** |
+| 固定試聽／無來源狀態 | ****6/15 ready**（`Richie Beirach《Ballads》` 誤配《Balladscapes》已降級）** |
 | §5.5／§5.6 例外欄位 | 例外欄全空 |
 | published gate | 本機端 |
 

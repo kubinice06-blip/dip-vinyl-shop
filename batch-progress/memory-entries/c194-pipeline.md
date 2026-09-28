@@ -1,6 +1,6 @@
 ### 2026-09-28｜dip-vinyl-shop｜c-194（日本爵士補遺線 hoyi 第三批）五層管線走完，24 張
 
-**改動摘要**：第 4 堆 1972–1981，**35 張收 24 退 11（69%）**；身分 **24/24 pinned**、簡介 **24/24 全 full（216–240）**、**封面 18/24、串流定案 12/24**（三筆降級排程中）。apex 0、例外欄全空。
+**改動摘要**：第 4 堆 1972–1981，**35 張收 24 退 11（69%）**；身分 **24/24 pinned**、簡介 **24/24 全 full（216–240）**、**封面 18/24、串流 12/24**（三筆誤命中已降級）。apex 0、例外欄全空。
 
 **主要檔案**：`batch-progress/c194/{slice,prop-a,prop-b,caa,apple-candidates,rulings,HANDOFF,preview-fixes*.sh}`、`batch-progress/c194/dispatch/*`、
 `desc-tools/batches/{cards,research,hooks,input,output}/c194-*.json`、`batch-progress/enum/name-corrections.json`（`_entity_mislinks`）。

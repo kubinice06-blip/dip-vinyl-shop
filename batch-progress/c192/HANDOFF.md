@@ -1,6 +1,6 @@
 # c-192 交接（2026-09-28）：**日本爵士補遺線 hoyi 第一批**，四堆混編（§1／跨線／美國原盤／外國藝人日本原盤）1967–1988，23 張
 
-**這批可以接本機上傳了**（試聽的三筆修正排程中，見第二節）。雲端能做的全部做完，剩下的是雲端依 `REMOTE_RUNBOOK.md` **不能做**的。
+**這批可以接本機上傳了**。雲端能做的全部做完，剩下的是雲端依 `REMOTE_RUNBOOK.md` **不能做**的。
 
 ## 一、35 張提案收 23 退 12（66%）
 
@@ -15,7 +15,7 @@
 | 三軸與頂點資格 | 卡單已帶；本批 apex 0 張 |
 | 固定簡介（desc） | **23/23 全 full**，字數 **212–240** |
 | 封面 | **CAA 12/23**；§1 六張走 `apple-verified-collection`（4 張有精確 collectionId）或 `manual-scan`（`Matsuri`／`砂山`）；另缺 `At the Village Vanguard Vol. 2`／`KJLH`／`As If…`／`So & So`／`This Is New` |
-| 固定試聽／無來源狀態 | **現況 16 ready**；**排程中**：`Bossa Nova Concert` 改指 1868591470、`KJLH` 回撈 1443515718、`Have You Heard?` 降級（主線第 2011-B 條）→ **定案 16/23** |
+| 固定試聽／無來源狀態 | **16/23 ready**（已寫入：`Bossa Nova Concert` 改指 1868591470、`KJLH` 回撈 1443515718、`Have You Heard?` 降級，主線第 2011-B 條） |
 | §5.5／§5.6 例外欄位 | 例外欄全空 |
 | published gate | 本機端 |
 

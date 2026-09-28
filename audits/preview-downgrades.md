@@ -29,3 +29,5 @@
 | c194 | `Freddie Hubbard《Mistral》` | ナティ・ミストラル（西班牙歌手 Nati Mistral） | mainline-2012-B（已寫入） |
 | c196 | `Richie Beirach《Ballads》` | Dave Liebman & Richie Beirach《Balladscapes》2016 | mainline-2012-B（已寫入） |
 | c197 | `Gil Evans《Farewell - Live at Sweet Basil》` | 同系列第 1 張《Live At Sweet Basil》1984 數位版 | mainline-2012-B（已寫入） |
+| c198 | `Art Blakey and the Jazz Messengers《Dr. Jeckyle》` | 同樂團《One by One》1979 | mainline-2012-B（已寫入） |
+| c198 | `Gary Burton《Gary Burton and the Berklee All-Stars》` | Gary Burton & Chick Corea《Crystal Silence》1973 | mainline-2012-B（已寫入） |

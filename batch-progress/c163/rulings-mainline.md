@@ -7493,3 +7493,27 @@ c-196 a 第 7561 條指出 `hoyi-foreign-origin.json` 裡 `jp-king` 判「乙」
 
 ### 四、c-193 收批（22 張）：五層走完、自己重跑三階段 QA 全過，鉤子 206–230、desc 209–239；`HANDOFF.md` 與 memory entry 已寫。
 **c-192 研究層發現的本機事項**（c-188《Wings》正文年份錯、seed GJT 年份、兩張 CAA 封套、兩處互指句）**收進 `HANDOFF-hoyi-line.md` 第二節**。
+
+---
+
+## 第 2012-B 條（2026-09-28）：**補遺線 hoyi 收線：七批 214 張提案，定案 137 張（64%）**
+
+**c-192…c-198 五層全部走完**（逐批 HANDOFF 與 memory entry 齊）；線交接 `batch-progress/HANDOFF-hoyi-line.md`。
+
+### 一、收線前的裁定（照下放權自定，全部可逆）
+
+1. **c-198 a／b 全收 12 張**；`Super Funky Sax` 邊界照「先發地優先」（c-198 a 第 7979 條），模板已補一句。
+2. **JJ Records 兩張撈回候選不開新批**（c-198 b 第 8022 條：`Art Blakey《Jazz Messengers '70》`、`Helen Merrill With Teddy Wilson《Helen Sings, Teddy Swings!》`）——兩張、℗ 未驗，為兩張走五層不划算，記在線交接第二之一節，等下一次補遺。
+3. **GJT《Great Standards》Vol.1／Vol.2 維持收**（最早版本在日本、母帶權利後歸 Timeless）——兩張綁定；與 `Art Pepper《Stardust》` 同一條分界「專輯最早那一版在哪一國」。
+4. **葛萊美跨批重疊保留**：c-196 b Waldron／Lacy 那張 note 提到 Gil Evans 大樂團得獎、c-197《Bud and Bird》是得獎本盤——角度不同（前者寫製作方、後者寫得主），不改已定稿的 c-196。
+5. **寫作層的留字照准**：樂評人名不進正文（`writer-base`）、美術署名的「畫封面」算署名不算封面字串（c-191《Wave》先例）、盤上 credit 職稱（「執行製作」）當專名。
+6. **研究層可以改分組**：c-197 把 Sweet Basil 系列 11 張與 MJQ／George Young 10 張分給兩位研究代理（改卡單 `group` 欄）。
+
+### 二、試聽：本線修正 16 筆全部寫入
+
+降級 11（`Have You Heard?`、c-159 `I'm All for You`、`As Time Goes By`、`Piano Play House`、`Mistral`、`Ballads`、`Farewell`、`Dr. Jeckyle`、`Berklee All-Stars`，加上 c-192 的兩筆改指裡原配錯的一筆）、改指／回撈 4（`Bossa Nova Concert`、`KJLH`、`Three Pearls`，及 c-193 的兩筆）。
+**七個修正腳本排成等待佇列、四條探測鏈依序跑——`previews.json` 零並寫。** 收批回掃 c-197／c-198 又抓到兩筆同藝人別張，**這一形仍無擋板**。
+
+### 三、帶去本機的
+
+見 `HANDOFF-hoyi-line.md` 第二節（11 項：c-188《Wings》正文年份、seed GJT 年份、兩張 CAA 封套、兩處互指句、池中《Chet Baker Live in Tokyo》合輯身分、幾處卡單策展欄過時、上傳 c-192…c-198）。

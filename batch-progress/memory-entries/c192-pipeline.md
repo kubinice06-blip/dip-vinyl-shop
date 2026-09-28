@@ -1,7 +1,7 @@
 ### 2026-09-28｜dip-vinyl-shop｜c-192（日本爵士補遺線 hoyi 第一批）五層管線走完，23 張
 
 **改動摘要**：四堆混編 1967–1988，**35 張收 23 退 12（66%）**；身分 **17 pinned ＋ 6 §1 人工**、簡介 **23/23 全 full（212–240）**、
-**封面 CAA 12/23（§1 六張走 Apple 精確 collectionId／manual-scan）、串流定案 16/23**（三筆修正排程中）。apex 0、例外欄全空。
+**封面 CAA 12/23（§1 六張走 Apple 精確 collectionId／manual-scan）、串流 16/23**。apex 0、例外欄全空。
 
 **主要檔案**：`batch-progress/c192/{slice,prop-a,prop-b,caa,apple-candidates,rulings,HANDOFF,preview-fixes*.sh}`、`batch-progress/c192/dispatch/*`、
 `desc-tools/batches/{cards,research,hooks,input,output}/c192-*.json`、`batch-progress/probe/{match-lib,downgrade}.mjs`。

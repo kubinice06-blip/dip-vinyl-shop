@@ -1,6 +1,6 @@
 # c-194 交接（2026-09-28）：**日本爵士補遺線 hoyi 第三批**，第 4 堆（外國藝人的日本原盤）1972–1981，24 張
 
-**這批可以接本機上傳了**（三筆試聽降級排程中）。雲端能做的全部做完，剩下的是雲端依 `REMOTE_RUNBOOK.md` **不能做**的。
+**這批可以接本機上傳了**。雲端能做的全部做完，剩下的是雲端依 `REMOTE_RUNBOOK.md` **不能做**的。
 
 ## 一、35 張提案收 24 退 11（69%）
 
@@ -15,7 +15,7 @@
 | 三軸與頂點資格 | 卡單已帶；本批 apex 0 張 |
 | 固定簡介（desc） | **24/24 全 full**，字數 **216–240** |
 | 封面 | **CAA 18/24**（缺 `Friendship`／`Meditations`／`Very R.A.R.E.`／`1 + 3`／`Heart to Heart`／`Moreover`） |
-| 固定試聽／無來源狀態 | **現況 15 ready → 排程降級 3 筆（`As Time Goes By`→《AKI》、`Piano Play House`→同名合輯、`Mistral`→Nati Mistral）後 12/24** |
+| 固定試聽／無來源狀態 | **12/24 ready**（已降級 3 筆：`As Time Goes By`→《AKI》、`Piano Play House`→同名合輯、`Mistral`→Nati Mistral） |
 | §5.5／§5.6 例外欄位 | 例外欄全空 |
 | published gate | 本機端 |
 

@@ -1,6 +1,6 @@
 ### 2026-09-28｜dip-vinyl-shop｜c-195（日本爵士補遺線 hoyi 第四批）五層管線走完，20 張
 
-**改動摘要**：第 4 堆 1981–1984，**35 張收 20 退 15（57%）**；身分 **20/20 pinned**、簡介 **20/20 全 full（204–239）**、**封面 12/20、串流 6/20**（含排程回撈 1）。apex 0、例外欄全空。
+**改動摘要**：第 4 堆 1981–1984，**35 張收 20 退 15（57%）**；身分 **20/20 pinned**、簡介 **20/20 全 full（204–239）**、**封面 12/20、串流 6/20**（含人工回撈 1）。apex 0、例外欄全空。
 
 **主要檔案**：`batch-progress/c195/{slice,prop-a,prop-b,caa,apple-candidates,rulings,HANDOFF,preview-fixes.sh}`、`batch-progress/c195/dispatch/*`、
 `desc-tools/batches/{cards,research,hooks,input,output}/c195-*.json`、`audits/foreign-artist-japan-productions.md`。
