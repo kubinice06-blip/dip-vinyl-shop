@@ -8,6 +8,8 @@
 > ⚠ **append 之後自己驗一次**：`grep -c '^## '` 兩組的條數都在，而且對方的標題還在。
 
 > **預留（2026-09-28）：研究 a 7846–7875、b 7876–7905。**
+> **預留（2026-09-28）：鉤子 8106–8145。**
+> **預留（2026-09-28）：寫作 a 8146–8160、b 8161–8175。**
 ---
 
 
@@ -733,3 +735,141 @@
 - **邊界**：只動 `desc-tools/batches/research/c195-a.json`（新增）與本檔（append 7846–7859，寫前 `git show HEAD:` 與工作區逐行一致、597 行、b 組研究段未落）。沒碰卡單、`prop-*.json`、`c195-b.json`、`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、KV、Firestore；未 `git add`／`commit`／`push`。
 
 **編號區間結算**：本段用到 **7846–7859（14 條）**，7860–7875 留空；未越界（b 組研究層 7876–7905）。
+
+---
+
+# c-195 b 組研究層（7876–7905）｜研究層｜2026-09-28
+
+批次 c-195｜b 組 9 張（收件全表）｜輸入 `desc-tools/batches/cards/c195-cards.json` 的 `group === "b"`｜輸出 `desc-tools/batches/research/c195-b.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節（→ `CURATION-BRIEF-bluenote-post1985.md` 附錄二）→ 主線第 1934-B…2010-B 條 → 本檔策展兩組（7416–7475）與 a 組研究層（7846–7859）→ c-178 研究層。⚠ 引用裁定一律寫「c-1XX 第 NNNN 條」。
+**本段編號區間 7876–7905。**
+
+## 7876　總表：**9 張、facts 107 條（12×8＋11×1）；full 9、thin 0**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| b1 | Rosemary Clooney with Les Brown & His Band of Renown —《Aurex Jazz Festival 83》 | 12 | full | 〈Come On-a My House〉她自己不喜歡；她與 Les Brown 1950 年代末已合錄過（另一批錄音、零重疊）；同年 Concord 的《My Buddy》也是大樂團 |
+| b2 | The Jazztet —《Voices All》 | 12 | full | ⚠ **七首裡四首是 1960 年出道盤《Meet the Jazztet》的曲目重錄**（卡單只算三首）；團名來歷兩說 |
+| b3 | Warne Marsh & Gary Foster —《Warne Marsh Meets Gary Foster》 | 12 | full | ⚠ **Gary Foster 與鼓手 Peter Donald 都是 秋吉敏子—Tabackin 大樂團成員**（製作人是 秋吉敏子）；兩人 1969、1972 已合錄 |
+| b4 | French Toast —《French Toast》 | 12 | full | Camilo 隔年替同字標錄領銜首作、標題曲同為〈Why Not?〉；⚠ **「日本企劃團」框架標 uncertain**（7881） |
+| b5 | The Great Jazz Trio —《N.Y. Sophisticate: A Tribute to Duke Ellington》 | 12 | full | 三菱 X-800 三十二軌數位機；**弦樂四人是同月同錄音室 Art Farmer《Ambrosia》弦樂組的子集** |
+| b6 | The Great Jazz Trio —《Monk's Moods》 | 11 | full | ⚠ **末軌〈Monk's Mood〉是 Hank Jones 鋼琴獨奏**（貝斯與鼓只到 B4）；1984 CD 記他另用 Yamaha DX-7 |
+| b7 | Mal Waldron —《You And The Night And The Music (Mal '84)》 | 12 | full | ⚠ ⚠ **錄音日 1983-12-09，不是卡單的「1983 年 9 月」**（7878）；前一天同一組三人剛錄完 Satie 曲集 |
+| b8 | Chris Connor, Ernestine Anderson, Carol Sloane —《Three Pearls》 | 12 | full | 三人逐軌分唱；CP38-3140（1984-06-21）通篇把 Connor 印成 Conner；Sloane 是被日本「重新發現」的 |
+| b9 | Shakatak —《Live in Japan》 | 12 | full | ⚠ **版本 9→10（Apple 有兩個 ℗ 不同的數位版）**；作曲不全是 Sharpe／Odell；2014 英國再版才列出編制、客席 沢井原兒 |
+
+**`src` 107/107 是完整 https 網址**；每張相異網域 2–4 個（Discogs 為主，en／ja 維基、jazzdisco、Apple 店面頁為輔）。
+
+## 7877　⚠ ⚠ 推翻／補正策展層：**推翻 3 處（時序 1、版本數 1、作曲歸屬 1）、補正 6 處、標 uncertain 1 處；收退結論 0 處變動**
+
+| # | 卡 | 策展層原文 | 本層 | 依據 |
+|---:|---|---|---|---|
+| 1 | b7 | 「1983 年 9 月在東京 King Record 第二錄音室錄」「錄音 1983-09」 | **1983 年 12 月 9 日** | 7878 |
+| 2 | b9 | 「再發與同期版本共 9 個……Apple jp +1」 | **10 個**：Apple 另有 us／gb 804143327（℗ 2014 Secret Records），與 jp 1406358654（℗ (C) 1984 SHAKATAK）℗ 行、店面都不同 | Apple lookup 兩筆；MB 零 Digital Media |
+| 3 | b9 | 「十五軌全是團員 Bill Sharpe 與 Roger Odell 的作品（MB work 逐筆）」 | 〈Introduction〉〈Don't Say That Again〉〈Sanur〉只掛 Sharpe、〈Bass Solo〉掛 George Anderson；「全出自團員」成立 | 2014 Secret CD 5943874 逐軌 credits；第 5701 條不受影響 |
+| 4 | b2 | 「〈Whisper Not〉〈Killer Joe〉〈I Remember Clifford〉是 Golson 標準曲，其餘是團員原創器樂曲」 | **〈Mox Nix〉〈Park Avenue Petite〉也在 1960 年《Meet the Jazztet》上錄過**——七首裡四首是出道盤曲目 | en 維基《Meet the Jazztet》曲目表 |
+| 5 | b3 | 只寫「製作人是秋吉敏子」 | Gary Foster 1973–1982 是 秋吉敏子—Tabackin 大樂團成員、Peter Donald 的 groups 欄也列該大樂團 | en 維基 Gary Foster；Discogs 621805 |
+| 6 | b6 | 「Eddie Gomez（Bass，A1–B4）、Jimmy Cobb（Drums，A1–B4）」未下結論 | **B5〈Monk's Mood〉是鋼琴獨奏** | 原壓 8383271 與 1984 CD 11261666 兩版 `tracks` 欄一致 |
+| 7 | b5 | 「1990 `Denon DC-8575` CD」 | 該版帶 UPC `0 81757 85752 9`（Denon 美國前綴）與 LC 8723——出口規格；facts 只寫兩個欄位、不斷言國別 | Discogs 6936074 |
+| 8 | b8 | CD 只記 `CP38-3140` | 發行日 1984-06-21，解說冊到碟面全印 `Conner` | Discogs 15573730 |
+| 9 | b5 | （卡單無） | 同月同錄音室 Art Farmer《Ambrosia》（Interface 38C38-7091）也由 佐藤允彦 編弦樂，本盤弦樂四人有三人在那張的弦樂組 | Discogs 6442051 |
+| 10 | b4 | 「全明星企劃團 French Toast 唯一一張碟」 | **uncertain**（7881） | Discogs 32746200（非官方） |
+
+## 7878　⚠ ⚠ b7 Mal Waldron 的錄音日：**1983-12-09**（四源一致）
+
+- 原壓 2507105 notes 逐字「Recorded 9, 1983 at King Studio #2, Japan」——**月份字樣脫落**，策展層讀成 9 月。
+- **同一家公司同年的 CD K38Y 6004（8497446）、1989 年 240E 6837（35125187）、2015 年 KICJ 2465（8062039）三版 notes 逐字「Recorded at King Studio #2, Tokyo, Dec. 9, 1983」**；jazzdisco 的 Waldron 年表同記「Tokyo, Japan, December 9, 1983」，並排在同一組三人 12 月 8 日替 Baybridge 錄 Satie 曲集之後。
+- **處置**：facts 寫 12 月 9 日；`year` 1984 不受影響（首發年）。⚠ **卡單 `curatorWhy`「1983 年 9 月在東京 King Record 第二錄音室錄的鋼琴三重奏盤」與 `curatorRisk`「錄音 1983-09」兩處請主線改**（研究層照邊界不動卡單）；**鉤子層與寫作層一律照研究稿**。可逆（一個欄位的時序字樣）。
+
+## 7879　⚠ ⚠ Aurex '83（b1）與 a 組研究層的對齊：**場館只寫三地不配日期；系列結構歸 a11；品牌由來 c-194 b 已用**
+
+1. **場館日期**：派工信第五節第 1 點要「場館日期靠姊妹盤補（寫明出處）」，而 c-195 第 7850 條（a 組研究層）查到 1982 屆三張盤面的日期三種寫法互相打架、決定「四卡一律不寫哪一天在哪一館」並記「b1 Clooney 同」。**本層取兩者的交集**：b1 facts 第 5 條只寫「1983 年這一屆 9 月初巡迴東京日本武道館、大阪球場、橫濱球場三地（見於同系列 Shorty Rogers 那一張的盤面）；本盤九軌錄於哪一場，盤上沒有寫」——**有三個場館與「9 月初」，沒有逐日配對**；姊妹盤 3867704 的 9/2・9/3・9/4 與「1993」錯字只留在 notes。**與 c-195 第 7459 條（`live: true` 靠姊妹盤補場館與巡演期間）一致，也不違反第 7850 條「不寫哪一天在哪一館」。**
+2. **系列結構**（EWJ-80267～80270 四張）：a11 facts 已寫，本卡原本那一條撤下，改寫〈Tenderly〉。
+3. **Aurex 品牌命名由來**（audio＋rex）：c-194 b《Gentlemen of Swing》研究稿已用、c-195 第 7850 條點名不碰——本卡原本那一條撤下。
+4. **本卡新用的格**：她與 Les Brown 1950 年代末的合作錄音（Discogs master 885554：1983 英國《Sweetest Sounds》、1986 德國再版封底逐字「This album from the late 1950's teams up…」，十五軌與本盤零重疊、不是本盤的版本、不影響「日本是原盤」）；同年 Concord 的《My Buddy》與 Woody Herman 大樂團合作（en 維基 Clooney 目錄）。
+
+## 7880　⚠ GJT 兩張（b5／b6）的反同構：**前批已用格與 a 組研究層新用格全數避開**
+
+- **撤下兩條原稿**：b5 原寫「East Wind、最初節奏組 Carter／Williams、1980／1982 換人」（c-192…c-194 已用、c-195 第 7852 條列為已用格）→ 改寫 Hank Jones 的 JATP 與 Ella Fitzgerald 伴奏年代；b5 原寫「Cobb 1958 進 Miles 樂團、1963 由 Tony Williams 接替」——**a7《Threesome》研究稿逐句已寫**（c-195 第 7852 條第 2 點）→ 改寫《Ambrosia》弦樂子集。
+- **Cobb 生平分配**：a7 = Miles 樂團進出；b6 = 1950 年起的 Earl Bostic、Dinah Washington 到離開 Miles 後的 Kelly／Chambers 三重奏；b5 不寫 Cobb。
+- **Lewis Eley** 依第 7852 條歸 a7：b5 提到《The Club New Yorker》時不寫他的名字。
+- **《Ambrosia》**：a9《Maiden Voyage》facts 第 11 條也點名（Farmer 的角度），b5 是弦樂編制的角度；**鉤子層兩卡只給一張用「同一個秋天」的串連**。
+- **新切角**：b5 = 三菱 X-800 三十二軌、弦樂子集、1990 CD 的出口條碼與〈Duke's Place〉錯掛作詞；b6 = 末軌鋼琴獨奏、DX-7、Hank Jones 年輕時聽 Monk 而改學 bebop、〈'Round Midnight〉三人署名的由來、同年與 清水靖晃 的聯名盤。
+
+## 7881　⚠ b4 French Toast：**「日本企劃團／唯一一張碟」降為 uncertain，facts 不寫這兩種說法**
+
+- Discogs 同一藝人實體 French Toast (3)（1578840）下另有加拿大 `Rockin Concerts` 的 2CDr **非官方**實況 32746200，題名逐字「1984-03-16」，credits 列 Camilo／Anthony Jackson／Dave Weckl／Peter Gordon／Gordon Gottlieb／Jerry Dodgion 與 Paquito D'Rivera 等，曲目含〈Ion You〉16:23、〈Why Not〉9:39。
+- **若日期與編制屬實**：這支團在 King 錄音（1984-04-07～09）前一個月已以同名在北美公開演出本盤曲目——c-180 第 4870 條與卡單的「Electric Bird 在紐約做成的全明星企劃團」「日本企劃、外國錄音」要退成「日本廠牌替一支紐約樂團錄的唯一錄音室盤」。
+- **本層不採非官方盤為 facts**；facts 一律避開「企劃團」「唯一一張」，只寫「日本唱片公司在紐約錄的碟」。**收件結論不動**：官方版本最早仍是 King 原壓（西德版盤上寫明版權屬 King），「日本是原盤」硬門不受影響。
+- ⚠ **建議主線**：`audits/foreign-artist-japan-productions.md` 若照 c-195 第 7455 條把本盤登記成「甲族第三種形：日本企劃、外國錄音」，請加註本條的保留（可逆，一行文字）。
+
+## 7882　⚠ ⚠ 再發版本數：**9 張逐筆重跑 `masters/<id>/versions`（無 master 的 b3 跑 `q=`／整張 artist 查詢），數字改判 1（b9）；四種漏法逐張查過**
+
+| # | Discogs | MB | (a) 只數 mbNote | (b) 1970s 同號／2016 後黑膠 | (c) 數位（表外） | (d) MB 獨有 | 聯集 | 卡單 |
+|---:|---:|---:|---|---|---|---|---:|---:|
+| b1 | 2＋孤兒 Promo 1 | 1 | — | 0 | 0（Apple 兩店兩查法 0） | 0 | 3 | 3 |
+| b2 | 3 | 2 | — | 0 | 0 | 0 | 3 | 3 |
+| b3 | 1（無 master） | 1 | — | 0 | 0 | 0 | 1 | 1 |
+| b4 | 5（不含非官方 CDr） | 2 | — | 0 | **+1** jp 1649755030 | 0 | 6 | 6 |
+| b5 | 7 | 1 | — | 0 | 0 | 0 | 7 | 7 |
+| b6 | 3（不含泰國非官方卡帶） | 1 | — | 0 | 0 | 0 | 3 | 3 |
+| b7 | 9 | 1 | — | 0 | **+1** jp 1807521305 | 0 | 10 | 10 |
+| b8 | 6 | 1 | — | 0（2023 CDSOL 已在表內） | **+1** jp 1668258956 | 0 | 7 | 7 |
+| b9 | 8 | 2 | — | 0（2014 兩筆已在表內） | **+2** jp 1406358654／us 804143327 | 0 | **10** | 9 |
+
+→ **卡單 8/9 格全對、1 格少算一個數位版**（b9 策展層只看了 jp 店面）。⚠ **(d) 方向 9 張全 0**。⚠ **MB 轄下 JP release 數 vs Discogs 日本盤數**（主線第 1965-B 條）：9 張全部 MB 少——**逐張回查盤名與年份，改判 0**（b7 的時序改判來自 notes，不是這一道）。⚠ 合輯收錄不計：b4 的〈Why Not?〉收進 2011 日本 Rambling Records 合輯《Urban Sound Cruise Main Stream》；b1 的 1950 年代末 Les Brown 合作盤（master 885554）是另一批錄音。
+
+## 7883　⚠ 試聽與封面現況（照派工信「交件時以 `previews.json` 與 `caa.json` 現況為準」，只報不改）
+
+| # | `previews.json` | `caa.json` | 本層觀察 |
+|---:|---|---|---|
+| b1／b2／b3／b5／b6 | unavailable | b1／b2 有 CAA；b3／b5／b6 art null | Apple 兩店、羅馬字與片假名兩種查法本層再試過（b1／b2 各兩查、b3 三查），零命中 |
+| b4 | ready 1649755030 | null | 與策展層同一筆，逐軌 6 首、℗ 1984 King |
+| b7 | ready 1807521305 | null | 同上，7 首、℗ 1984 King |
+| b8 | ⚠ **unavailable** | 有 CAA | ⚠ **策展層已找到 Apple jp 1668258956（2023 Remastered、10 軌、藝人欄三人順序與盤面不同）——請主線交回撈層** |
+| b9 | ready ⚠ **804143327** | 有 CAA | ⚠ **探測層指的是 us／gb 的 ℗ 2014 Secret Records 數位版**，策展層記的是 jp 1406358654（℗ 1984 SHAKATAK）；兩者同一場錄音、都可用，**若主線要求 jp 店面優先請改指** |
+
+⚠ **b3／b5／b6 三張封面與試聽雙缺**（CAA null、Apple 零命中）——與 c-195 第 7438／7470 條「日本盤店面覆蓋率低是常態」同形，不是研究層能補的。
+
+## 7884　人名：**寫進 facts 的漢字人名 25 個，全部指到來源欄位；刻意寫羅馬字約 18 個；`name-corrections.json` 命中 2 個（皆取正寫）；新改判 0**
+
+- **定案來源**：鈴木良博（382386 realname）、菊地洋一郎（997286 nv）、阿部克自（2406839 realname）、秋吉敏子（503241 realname）、佐藤秀樹（546126 realname）、川島重行（525096 nv；2014 CD anv 同）、中山康樹（4312302 nv）、牧野晃（474621 nv）、熊谷美広（2014 CD anv、2006 CD 系列名）、佐藤允彦（596931 realname）、伊藤潔（406894 realname；`pairs` 伊藤清→伊藤潔）、斉藤有弘（639899 nv）、渡辺かおる（1054718 nv）、操上和美（2265672 realname）、宇野勝昭（599754 realname）、日野皓正（303402 realname）、内藤忠行（851933 realname）、高和元彦（873379 nv）、高浪初郎（873378 nv；`pairs` 高波初郎→高浪初郎，主線第 2010-B 條）、宇根秀訓（1986876 realname）、石塚貴夫（322167 nv）、渡部喜久（879990 realname，c-195 第 7431 條）、大里正毅（668230 realname）、大熊康夫（4580058 realname）、沢井原兒（259137 realname）。
+- **刻意寫羅馬字**：`Kiyoshi Hitoh`（1962628 零變體，**與 伊藤潔 406894 是不同實體，不推成 伊藤潔**）、Nobuo Ohtani、Shogo Takeuchi（主線第 1940-B 條）、`Hiroshi Goto`（nv 有 後藤博、realname 空，照 c-195 第 7463 條）、Hochi Fujishiro、Yoshio Shiraki／Michio Mikami（各只有單一 nv）、Hiroaki Itoh (3)、弦樂四人（Takashi Kato／Tetsuo Yamada／Hiroshi Watanabe／Hiroto Kawamura）、Joe Shimada、`Sumiko Yoseyama`（查無漢字來源）、b3 三位協調。
+- ⚠ **`Potter Smith`（b3 貝斯，4596685 只有「US Bass Player」）疑為 `Putter Smith` 的誤植**（Peter Donald 的 groups 欄有「Putter Smith Quintet」），無來源可證，facts 照原壓寫。
+
+## 7885　來源實測（本工作階段）
+
+| 網域 | 用量 | 結果 |
+|---|---:|---|
+| `api.discogs.com`（releases／masters／versions／artists／labels／search） | 約 125 次 | 全數 200，節流 3 s，0 次 403／429 |
+| `en.wikipedia.org/w/index.php?action=raw` | 約 45 條 | 全中；⚠ **同名陷阱新增**：`Norman_Simmons` 是消歧義頁（要用 `Norman_Simmons_(musician)`）；`Warne_Marsh_Meets_Gary_Foster`、`French_Toast_(album)`、`Ne_Plus_Ultra_(album)` 404（前兩者是紅連結，後者條目名是 `Ne_Plus_Ultra`） |
+| `ja.wikipedia.org/w/index.php?action=raw` | 5 條 | 3 中（`Aurex`、`日野皓正`、`中野サンプラザ`）；`オーレックス・ジャズ・フェスティバル`／`Aurex_Jazz_Festival` 404（與 c-195 第 7850 條一致：這個音樂節沒有維基條目） |
+| `musicbrainz.org/ws/2` | 4 次 | 全數 200（UA 照規） |
+| `itunes.apple.com`（search／lookup） | 16 次 | 全數 200，403／429 零次；`search` 一次回不相干的 Jessica Simpson 聖誕盤（`resultCount > 0` 不等於命中） |
+| `www.jazzdisco.org` | 1 次 | 200（b7 時序的決定性第四源） |
+| `concord.com` | 1 次 | 403（egress policy），不再試 |
+
+⚠ **原廠網域本組未試**：東芝EMI 系四張（再發商品頁講的是現在在賣的版本）、コロムビア 兩張、キング 兩張、ポリドール 一張；**facts 無一條依賴原廠頁**。WebSearch 0 次。
+
+## 7886　池中迴避（第 1787-B 條）與反向禁令
+
+- **facts 零處點名同藝人的池中盤名**：b1 `Blue Rose`；b2 `Moment to Moment`、Farmer 的《Modern Art》（〈Mox Nix〉也在那張，facts 只點名不在池中的《Meet the Jazztet》）；b3 seed《Warne Marsh》、`Alan Broadbent《'Round Midnight》`、秋吉敏子—Tabackin 大樂團的《Long Yellow Road》（只寫團名）；b4 `Michel Camilo & Tomatito《Spain》`；b5／b6 Miles 1959 那張、日野皓正 1983／1985 兩張、GJT 池中各張；b7 seed 五張與《Sempre amore》；b8 Connor 兩張 1956、`北村英治《Sophisticated Lady》`同名（Sloane 1977 那張只寫「艾靈頓曲集」）；b9 seed《Night Birds》（〈Night Birds〉只作曲名）。
+- **與作品無關、不寫**：九張所有成員與幕後的辭世（Clooney、Golson、Heath、Marsh、Foster、Soloff、Dodgion、中山康樹、Cobb、Hank Jones、Blackwell、Connor、Anderson、Simmons、Mraz、Sloane）、George Clooney、Marsh 1996 年紀念盤、中野サンプラザ 2023 閉館、〈Hey There〉1999 年進 Grammy 名人堂。**與作品綁定、可寫**：無（本組沒有一張是遺作或最後合作）。
+- ⚠ **保留給 c-197**：Waldron 與 Ed Blackwell 1961 年同在 Dolphy／Little 的 Five Spot 五重奏——c-197 卡單有 1987 年那場紀念演出兩張，b7 刻意不寫。
+
+## 7887　交件自跑的結果、續跑保護與邊界自述
+
+- `node desc-tools/qa-batch.mjs research c195` → **a 11 張、b 9 張全 full；key 與卡單完全一致；全部通過（標記 0）**。
+- **自己逐張量**：facts 12×8＋11×1＝107；`src` 107/107 完整 https（逐條 regex）；簡體 0、千分位逗號 0；`hookCandidates` 9 張各 2 條；`keyTracks` 各 2 首；**獎項字樣 0 處**（本組 facts 沒有寫任何獎項）；日文新字體只出現在專名（渡辺かおる／熊谷美広／沢井原兒）；假名只出現在專名（日本コロムビア／日本ポリドール／日本ビクター／中野サンプラザ／渡辺かおる）。
+- `desc-tools/jp-proper-names.json`：**append 0 個**（QA 零誤報）。
+- **續跑保護**：每 3 張寫回一次（3→6→9 三次落檔），寫法是「分段 `c195rb-p{1,2,3}.mjs` → 以 `key` 對卡單順序整份寫回」；臨時檔全在 `scratchpad/c195rb/` 並帶 `c195rb-` 前綴。交件前與 a 組研究稿（c195-a.json）逐張比過，撤下重複格 4 條（7879／7880）。
+- **邊界**：只動 `desc-tools/batches/research/c195-b.json`（新增）與本檔（append 7876–7887，寫前 `git show HEAD:` 與工作區同為 735 行、a 組研究段已落、b 組研究段未落）。沒碰卡單、`prop-*.json`、`c195-a.json`、`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`previews.json`、`caa.json`、KV、Firestore；未 `git add`／`commit`／`push`。
+
+## 7888　⚠ 給主線的四件（本層照邊界不動那些檔）
+
+1. ⚠ ⚠ **改卡單 b7 的時序兩處**：`curatorWhy`「1983 年 9 月」→「1983 年 12 月 9 日」、`curatorRisk`「錄音 1983-09」→「錄音 1983-12-09」（7878）；`prop-b.json` 同一格一併改，免得被下一批當先例抄走（主線第 1975-B 條的傳染路徑）。
+2. ⚠ **試聽**：b8 交回撈層（Apple jp 1668258956）；b9 視店面政策決定是否由 us 804143327 改指 jp 1406358654（7883）。
+3. **登記簿**：`audits/foreign-artist-japan-productions.md` 的 French Toast 那一行加註 7881 的保留。
+4. **卡單 b9 的 `label` 欄版本數 9 → 10**（7882），可逆。
+
+**編號區間結算**：本段用到 **7876–7888（13 條）**，7889–7905 留空；未越界（a 組研究層 7846–7875）。

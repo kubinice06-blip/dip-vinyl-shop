@@ -67,3 +67,4 @@
 | `Buster Williams Trio —《Tokudo》` | （slice 預標「不明」） | **c-196 b 收**（日本 Denon 原盤 1978） |
 | `Chet Baker —《Memories》`／`《Four》` | — | **c-196 b 退：撞池**（池中 seed《Chet Baker Live in Tokyo》2000 是這兩張的雙 CD 合輯；是否把池中那張改成原盤身分交本機） |
 | `Gil Evans《Live at Sweet Basil》`（Electric Bird `K23P 6355~56`）、`Ronnie Cuber《Passion Fruit》`（`K28P 6347`）、`Art Blakey《Hard Champion》`（Paddle Wheel `K32Y 6209`）、`Mal Waldron & Jackie McLean《Left Alone '86》`（`K32Y6167`）、`The Great Jazz Trio《Great Standards Vol. 2》`（Alfa Jazz `28R1-12`）、`《Eric Dolphy & Booker Little Remembered Live at Sweet Basil Vol. II》`（`K28P 6476`，1987） | 開線初篩判「乙」剔除（MB 日期精度錯，主線第 2010-B 條） | **c-197 a 收**（重篩批） |
+| `French Toast —《French Toast》`（King 1984） | c-180 第 4870 條（四項） | **c-195 b 收**；⚠ 研究層第 7881 條：同一藝人實體下有一筆 1984-03-16 的非官方實況，早於 King 錄音——「King 企劃團／唯一一張碟」降為 uncertain，「日本是原盤」不受影響 |
