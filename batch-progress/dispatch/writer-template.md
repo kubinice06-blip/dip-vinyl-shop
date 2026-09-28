@@ -65,7 +65,7 @@
 它若還沒交就只掃自己的並在報告說明）。
 ⚠ ⚠ **先交件的那一組要把 2 張殘片當 3 張處理**（第 1940-B 條）——**你看不到對方還沒寫出來的卡。**
 ⚠ ⚠ **另一組的稿還不存在時，把它的 hook＋note（`desc-tools/batches/input/{{B}}-writer-{{WO}}.json`）當成它未來的正文先掃一次**，會撞的改在自己這一邊（c-189 a 組的做法，主線第 2004-B 條）。
-**專名與樂器名不算同構。掃描腳本可沿用 scratchpad `c174w1/c174w1-ngram.mjs`。**
+**專名與樂器名不算同構。掃描腳本可複製 `batch-progress/dispatch/writer-scan-example.mjs` 到 scratchpad 改批號再用。**
 
 ## 五、本組的特殊風險（逐筆對過本組實際的 note）
 
