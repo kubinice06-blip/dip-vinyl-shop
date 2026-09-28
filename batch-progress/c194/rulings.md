@@ -573,3 +573,112 @@ Salena Jones：MB Person 2340f89c、country `US`；Discogs 622704 profile 逐字
 3. **已寫進 `prop-a.json`**（第 12 張，`pile: 4`，完整欄位；**`live: true`、反向漏標**寫在 `risk`）；**掛名 `Salena Jones` 與 b 組同一串**。
 4. ⚠ **綁定**：**b 組那張若被撤或改判退，本盤跟著回退**（前提消失）；**下游不得寫出任何伴奏樂手名字**（盤面零 credit，第三方名單不算盤面）。
 5. **結算更新**：a 組 **收 12 ／ 退 6 ＝ 18**（第 4 堆：收 12 退 6）；退件分佈改為「日本不是原盤」5、第 5701 條 1（#15）、第 1925-B 條 0。**可逆**（收退名單）。
+
+
+---
+
+# c-194 a 組研究層（7786–7815）｜12 張｜2026-09-28
+
+批次 c-194｜a 組 12 張（策展 11 ＋ 撈回 1）｜研究層
+輸入 `desc-tools/batches/cards/c194-cards.json` 的 `group === "a"`｜輸出 `desc-tools/batches/research/c194-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節與附錄二 ＋ 主線第 1934-B…2010-B 條 ＋ 本檔 7356–7409 ＋ c-178 研究層兩段。⚠ **引用一律寫「c-19X 第 NNNN 條」。**
+**本段用到 7786–7793（共 8 條），未越界（b 組 7816–7845）。**
+
+## 7786　（**總表**）：**12 張、facts 144 條（每張恰好 12）、full 12／thin 0；推翻策展層 4 處、補正 7 處；版本數改判 1 張（#12 4→2）**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | Clifford Jordan —《Hello, Hank Jones》 | 12 | full | **錄音日 1978-07-25**（卡單沒有）；錄音當天 Hank Jones 差六天滿 60；英文解說 Bill Hasson（卡單漏） |
+| 2 | Paul Jackson —《Black Octopus》 | 12 | full | **Hancock 只在 A1 同名組曲**；他的首張個人作、下一張隔 27 年 |
+| 3 | Salena Jones —《Stairway to the Stars》 | 12 | full | **1978 是她第一次到日本**；〈The Moment Of Truth〉是她 1969 年專輯的同名曲 |
+| 4 | Richie Beirach & David Liebman —《Omerta》 | 12 | full | **錄音是 6/9–10 兩天**；兩人 1967 相識、第二張二重奏；Beirach 那個東京六月的第一場 |
+| 5 | Lee Ritenour —《Friendship》 | 12 | full | **ビクター 洛杉磯辦事處製作**；美國版標籤印 Made in Japan；隔年同名樂團（另一張碟） |
+| 6 | Mal Waldron —《Meditations (Mal Waldron Live At Dug)》 | 12 | full | 1972 年第三張鋼琴獨奏；B 面兩首日本題（龍安寺石庭）；DUG 主人 中平穂積 |
+| 7 | Ron Carter —《Third Plane》 | 12 | full | ⚠ ⚠ **同一天另五首以《Herbie Hancock Trio》交 CBS/Sony 先發**；Automatt 是 Rubinson 的錄音室 |
+| 8 | Frank Foster and The Loud Minority —《Shiny Stockings》 | 12 | full | ⚠ ⚠ **PCM 數位錄音**；樂團 1977 年就是 Denon 紐約數位錄音第一批；發行日 1979-04-25 |
+| 9 | Herbie Hancock —《Directstep》 | 12 | full | 請 Webster Lewis 當第二鍵盤手的理由；盤上列四位「Hancock 隨行工作人員」 |
+| 10 | Herbie Hancock —《The Piano》 | 12 | full | 伊藤八十八 轉 CBS/Sony 那一年的案子；2004 年海外首發加四個備用 take |
+| 11 | Aki Takase —《As Time Goes By》 | 12 | full | ⚠ **編制是 7 三重奏／1 二重奏／6 獨奏**（卡單寫 9／5）；師事 山下洋輔 |
+| 12 | John Lewis & Hank Jones —《Piano Play House》 | 12 | full | ⚠ ⚠ **錄音當天是 John Lewis 59 歲生日**；盤名是 1976 年東京那場音樂會的名字；**Apple 那兩筆不是本盤** |
+
+**thin 0 張。** 每張 `src` 相異網域 3–5 個（Discogs、MusicBrainz、en／ja 維基、jazzdisco、Apple 專頁）。`qa-batch research c194`：a 組 12 張全 full、字元三掃描零標記；唯一的標記是「key 集合與卡單不一致」——**b 組研究稿交件時只有 6 張（對方在跑），不是本組的問題**。
+
+## 7787　推翻／補正策展層：**推翻 4、補正 7，收件結論全部不變**
+
+| # | 卡 | 類 | 策展層原文 → 本層 | 依據 |
+|---:|---|---|---|---|
+| 1 | #11 | **推翻** | 「九軌三重奏、五軌獨奏」→ **三重奏 7（A1/A2/A4/A7/B2/B3/B6）、〈The Third Man Theme〉鋼琴＋貝斯二重奏 1、獨奏 6** | 原壓逐軌 `Bass {A1, A2, A4, A7, B2 to B4, B6}`（8）對 `Drums {…B2, B3, B6}`（7） |
+| 2 | #12 | **推翻** | Apple 兩筆 +2 → **不是本盤**（見 7788），聯集 4 → **2** | Apple lookup 逐軌 |
+| 3 | #8 | **推翻** | 岡田則男「監修」→ **監督錄音的工程師**（`Engineer [Supervisor]`） | Discogs 470957 profile「sound engineer … Nippon Columbia Studio」 |
+| 4 | #2 | **推翻（人名）** | 刻片 `小林光晴`（取 nv）→ **不寫**：507335 的 nv 同時有 `小林光博`／`小林光春`／`小林光晴` | c-193 b 第 7341 條「變體互相矛盾退成不寫」同形 |
+| 5 | #1 | 補正 | 無錄音日 → **1978-07-25**；漏英文解說 → **Bill Hasson**（兩張獨立解說單） | jazzdisco ＋ en 維基 infobox；原壓 extraartists |
+| 6 | #2 | 補正 | Hancock 的 credit 轉錄漏 {A1} → **他只在 A1 兩段組曲** | 原壓兩行皆 `{A1}`；MB 逐軌 |
+| 7 | #4 | 補正 | 錄音 6/9 → **6/9–10 兩天** | jazzdisco ＋ en 維基；Discogs notes 只寫 6/9 |
+| 8 | #5 | 補正 | 「日本ビクター 製作」→ **ビクター音楽産業 洛杉磯辦事處製作** | 1991 CD `VICJ-23030` notes 逐字 |
+| 9 | #7 | 補正 | （卡單無）→ **同一天另五首 ＝《Herbie Hancock Trio》CBS/Sony 25AP-650，1977-09-21 先發** | en 維基兩條目互指 |
+| 10 | #8 | 補正 | （卡單只寫系列名）→ **PCM 數位錄音；樂團首張 Denon 盤 1977-11-29／30 同一錄音室** | Discogs series 1053347、releases/4183407；en 維基《Digital recording》 |
+| 11 | #12 | 補正 | 「1978 Trio《Live In Tokyo》東京郵便貯金ホール 實況」→ **錄音 1976-01-27、那場音樂會就叫「Piano Play House」、1978 發行** | Discogs releases/8389434 notes 逐字 |
+
+⚠ **另有三處本層標 uncertain、不寫進 facts**（都寫在各卡 `notes`）：#4 en 維基說末軌 Beirach 缺席（其他三來源無此限定）；#5 en 維基的發行日 1978-12-13 與「四張直刻的第三張」（單一來源）；#9 兩軌作曲欄 Discogs 與 en 維基打架（facts 不寫作曲者）。
+
+## 7788　⚠ ⚠ 再發版本數：**12 張逐筆重跑 `versions`，數字改判 1 張（#12 4→2）；而那一張的錯正是「數字對不等於內容全」的反面——多算了一張別的碟**
+
+| # | 策展層 | 本層 | 差 | 說明 |
+|---:|---:|---:|---:|---|
+| 1 | 2 | 2 | 0 | 市售＋同號 Promo |
+| 2 | 10 | 10 | 0 | |
+| 3 | 2 | 2 | 0 | |
+| 4 | 6 | 6 | 0 | Apple ℗ TRIO RECORDS |
+| 5 | 14 | 14 | 0 | MB 獨有 2014 96kHz/24bit 數位 |
+| 6 | 5 | 5 | 0 | |
+| 7 | 30 | 30 | 0 | |
+| 8 | 5 | 5 | 0 | Apple 兩筆皆五軌、逐軌同名 |
+| 9 | 13 | 13 | 0 | |
+| 10 | 20 | 20 | 0 | |
+| 11 | 2 | 2 | 0 | |
+| 12 | 4 | **2** | **−2** | ⚠ ⚠ 見下 |
+
+⚠ ⚠ **#12 的 Apple 1513067083《Piano Playhouse》與 1656858062（2022 Remastered）都是 11 軌，逐軌曲名是〈Mirjana〉〈Django〉〈Natural Affection〉〈P.O.V.〉〈Sacha's March〉〈St. Louis Blues〉〈Odds Against Tomorrow〉〈Willow Weep for Me〉〈Confirmation〉〈I'll Remember April〉〈La Rondo〉**——與本盤六軌同名的只有兩首，〈Oh Look At Me Now〉〈Marchin'〉〈All The Things You Are〉根本不在裡面；其餘曲名撞 1976《Live In Tokyo》、1978《Mirjana》、1979《An Evening With Two Grand Pianos》的曲目而時長都對不上。**是 ℗ All Art Promotion 借用同名的來源不明合輯，不是本盤的數位版。**
+⚠ **這是本線第一次「Apple 另加」方向的錯**：主線第 1987-B 條要求先比 MB 的 `Digital Media` 再加，**本例 MB 零數位版所以通過了那一道——還要再加一道「逐軌比對曲名」**。建議寫進簡報第三節第 33 點。
+⚠ **其餘四種漏法本組零命中**：MB 獨有 1 筆（#5，策展層已計）、數位漏收已全計、1970 年代同號再發與 2016 年後復刻都在表內、`MB 轄下 JP 數 < Discogs 日本盤數` 這一道策展層逐筆比過（#6 的年份改判就是它抓到的），本層回查盤名與年份零改判。
+
+## 7789　⚠ ⚠ 給主線：**previews.json 兩筆 `ready` 是誤命中**（本層照邊界不動）
+
+1. **#12 `John Lewis & Hank Jones|Piano Play House`** → 1513067083，**`previewUrl` 逐字對上該專輯第 1 軌〈Mirjana〉——不在本盤**（7788）。建議降級或改指（1656858062 同病，不能當替代）。
+2. **#11 `Aki Takase|As Time Goes By`** → jp 1782228513《AKI》（`高瀬アキトリオ`、7 軌、1978）——**她 1978 年キング 的首作，另一張碟**；`aliasOnlyTitle: true`。**主線第 1998-B 條已記 `池田芳夫 & 高瀬アキ《Esprit》` 被配到同一個 collectionId——同一條目第二次誤配**，建議把 1782228513 加進探測層的黑名單或對 `高瀬アキ` 名下要求盤名證人。本盤在 Apple 查不到，建議降為無來源。
+⚠ 其餘五筆 ready（#4／#7／#8／#9／#10）逐一比過曲目：**都是本盤或本盤的擴充版**（#7 的 Concord 版多一軌、#10 的 Columbia 版多四個 take，前段軌序與原 LP 同）。
+
+## 7790　⚠ 生平格分配與跨卡串連點（**每一格只給一張卡**，鉤子層分配時當稀缺資源）
+
+1. **「生日」格兩張都有**：#12 錄音當天是 John Lewis 59 歲生日、#1 錄音日 Hank Jones 差六天滿 60——**建議 #12 用、#1 改用「A 面整面一曲」那條 hook**。
+2. **東芝「Soundphile Series Direct Disk」同系列三張**（#1、#2、#12）：「同系列」只給一張用（本層把系列表放在 #1 的 facts）。
+3. **Yoshio Ozawa**（同一個 Discogs 409226）1978 年在紐約替東芝（#1，7 月）與日本コロムビア（#8，11 月）兩家各製作一張——只寫在兩張的 `notes`，facts 各自只寫「日本方面的製作人」。
+4. **Hancock 巡日班底**：#9 的 `Crew [For Herbie Hancock]` 四人裡 Bryan Bell 與 Bill Watts 一星期後出現在 #2 的錄音欄（Pat Quinn 在 #2 的致謝）——寫在 #9 的 facts；#2 的 facts 另寫「同月同班底替 Hancock 錄了另一張直刻盤」。**兩張各用一面，不要兩張都寫成 hook。**
+5. **派工信第五節第 6 點（Hancock 兩張各寫各的場次）**：#9 1978-10-17／18、#10 10-25／26——兩卡 facts 零處寫成同一趟；「一星期前」只在 #10。⚠ **#2 錄於 10-25／27，與 #10 的 10-25 重疊一天**——**本層查不到 Hancock 25 日是否在 #2 的場次上（#2 credits 不分日期）**，沒有寫成 facts，鉤子層不要寫「同一天兩場」。
+6. **Salena Jones 與 b 組《Melodies of Love》**：本卡的生平格用了「1978 首訪日本」「Keith Mansfield（綁〈The Moment Of Truth〉）」「本名 Joan Shaw、1949 首張唱片」「改名與藝名由來、1966 Ronnie Scott's」——**後兩格若 b 組也寫了，鉤子層二選一；前兩格只有本卡能用。**
+7. **避讓池中前批已用的生平格**（讀了前批研究稿，不只 prop，c-187 a 第 6344 條）：Mal Waldron 五張、Beirach 三張、Ron Carter 十四張、Clifford Jordan 兩張、Frank Foster 兩張、Hank Jones 兩張、Ritenour 兩張、高瀬アキ 兩張——**本組 12 張的生平格與它們零重複**（各卡 `notes` 逐條列出避開了哪幾格）。
+8. **第 1787-B 條**：facts 零處點名池中的他張盤名（《Sunlight》《Thrust》《Maiden Voyage》《Sugar Loaf Express》《Naima》《Dark Magus》等全部改寫成年份描述）；同批卡也不點名。
+
+## 7791　同名陷阱新增一則，並記兩處維基的錯
+
+1. ⚠ **`Frank Foster And The Loud Minority《Manhattan Fever》`（Denon YX-7521-ND，1977-11 紐約 PCM 錄音）≠ 池中 c-141 `Frank Foster《Manhattan Fever》1968`（Blue Note）**——同一位、同名、兩張不同的碟；#8 的 1989 年 CD 還把前者三軌混進去。**建議主線登記**；#8 的 facts 刻意不點這個盤名。
+2. **en 維基的三處錯**（facts 一律照 Discogs）：《Third Plane》寫成「Milestone 1977」（實為ビクター 1978 首發、Milestone 1982 再發）；《Directstep》「released exclusively in Japan」（1979 年有美國 Columbia IC 36535，℗ CBS/Sony）；《The Piano》「first and only (until 2014) of Hancock's Japanese releases available internationally」（同上被反證）。另 en 維基 Frank Foster 條目把 #8 記成 1977、《Hello, Hank Jones》正文把錄音記成 1977（自己的 infobox 是 1978-07-25）。
+3. **同名陷阱（本線累計清單補一則）**：en 維基 `Frank_Foster` 是消歧義頁（正確條目 `Frank_Foster_(jazz_musician)`）。
+
+## 7792　來源實測（本工作階段）
+
+- **Discogs API**：約 95 次、全 200（`releases`／`masters/versions`／`artists`／`labels/<id>/releases`——**series 頁的 `labels/<id>/releases` 是本組三張卡的系列脈絡來源**：Soundphile 3320970、Love Touch Piano 766515、Denon Jazz PCM In New York 1053347）。
+- **MB**：約 10 次、全 200（逐軌 work／recording 關係：#2 的 Hancock 只在 A1、#3 的作曲者）。
+- **en 維基** `action=raw` 約 40 次、全 200；**ja 維基** 8 次（`高瀬アキ`／`中平穂積`／`PARCO劇場`／`音響ハウス` 中，`サリナ・ジョーンズ`／`DUG` 兩條 404）。
+- **jazzdisco** 3 次、全 200（**#1 與 #4 的錄音日、#6 的 1972 年獨奏時序都只在這裡有**）。
+- **Apple**：lookup 約 10 次全 200；`search` us 一次 403（未重試）。
+- ⚠ **DUG 官方網站 history 頁只有 http（https 連線失敗）**：該頁逐字「1967年 DUGオープン」——照規則不當 `src`，只寫進 #6 的 `notes`。
+- `allmusic`／`allaboutjazz` 未試（照派工信禁用）；評論引文一律取 en 維基轉引、facts 意譯。
+
+## 7793　交件自跑與邊界結算
+
+- `node qa-batch.mjs research c194`：a 組 12 張全 full、字元三掃描（簡體／非拉丁／千分位）零標記；總標記 1＝key 集合不一致（b 組交件時 6 張，對方在跑）。
+- 自量：facts 12×12＝144 條、`src` 全部完整 https（Discogs 短網址照慣例）、`hookCandidates` 皆 2 條、facts 零處「入圍／得獎」、零處千分位、零處半形逗號夾漢字；日文新字體只出現在專名（`ビクター音楽産業`）。**facts 敘述句零處寫資料庫或平台名**（AllMusic 兩處已改成只寫樂評人名；「資料庫裡只有這兩筆」照第 1879-B 條的慣用說法保留）。
+- `desc-tools/jp-proper-names.json`：**append 0**（零誤報）。
+- **只動了** `desc-tools/batches/research/c194-a.json`（新增）與本檔（append 7786–7793）；**未動** 卡單、previews.json、caa.json、prop、seed、git。
+- **需要主線裁定／登記的**：(a) 7789 兩筆 previews 誤命中；(b) 7788 簡報第 33 點補「Apple 另加前逐軌比曲名」；(c) 7791 第 1 點同名陷阱；(d) #3 的生平格與 b 組分配（7790 第 6 點）。

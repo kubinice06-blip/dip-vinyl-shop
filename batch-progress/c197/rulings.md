@@ -255,3 +255,255 @@
 3. ⚠ **#12 的曲目是 1961 年 Dolphy／Little 五重奏在 Five Spot 的曲**，池中 seed《At the Five Spot, Volume 1》有原錄——**寫曲目時分清 1961 原錄與 1986 重演**；#10〈Left Alone〉同理（seed 1959 原錄）。
 
 **編號區間結算**：本節用到 **7726–7751（共 26 條），未越界（b 組 7756–7785）**；7752–7755 留空。
+
+
+
+# b 組（16 張｜第 4 堆重篩：外國藝人的日本原盤 1984–1989；slice 的 `house` 全部 king（16）；⚠ **16 筆逐筆以 Discogs 最早那一版的 `labels`／`companies`／`notes`（℗ 行、`Licensed From`、`Manufactured By`）＋ `versions` 全表核過原盤國別，「日本是原盤」16/16 成立**）｜策展層｜2026-09-28
+
+批次 c-197｜b 組 16 張｜輸入 `batch-progress/c197/slice.json` 的 `g === "b"`｜輸出 `batch-progress/c197/prop-b.json`（每筆帶 `pile: 4`）
+判準照 `CURATION-BRIEF-hoyi.md` 第〇節第 4 堆 → `CURATION-BRIEF-jp2.md` 全檔 → `CURATION-BRIEF-jp1.md` 全檔 → `CURATION-BRIEF-bluenote-post1985.md`（含附錄二）→ `CURATION-BRIEF-bluenote.md` → `CURATION-BRIEF-c131.md`、`CURATION-BRIEF-c67plus.md` 附錄（§1），
+＋ 主線第 1934-B…2010-B 條（重篩依據：第 2010-B 條）＋ c-196 兩組策展段（第 7536–7593 條）＋ **本批 a 組已落地的第 7726–7751 條與 `prop-a.json`（只讀）**＋ `audits/foreign-artist-japan-productions.md`／`audits/between-the-lines-candidates.md`／`audits/pool-artist-name-splits.md`／`enum/name-corrections.json`。⚠ **引用裁定一律寫成「c-1XX 第 NNNN 條」**。
+⚠ **本段 append 在 a 組段之後，主線骨架與 a 組段一字未動。**
+**本組編號區間 7756–7785（本段用到 7756–7777）。**
+
+---
+
+## 7756　（**總表**）：**16 張＝收 15 ／ 退 1**（全部第 4 堆：收 15 退 1）
+
+**收件率 94%。** 本組是 King（Paddle Wheel／Electric Bird）一家的紐約製作線：George Young 三張、Manhattan Jazz Quintet 八張（slice）＋ c-197 a 第 7749 條撈回的 Sweet Basil 系列五張。**「日本是原盤」硬門 16/16 成立**；唯一的退件是身分形狀的問題（首發是 3 軌 mini CD、Deluxe 版一半是既有錄音），不是原盤國別。
+
+| # | 掛名 —《盤名》（slice → 判） | 年 | 處置 | 依據（條號） |
+|---:|---|---:|---|---|
+| 1 | George Young —《Chant》 | 1985 | 收 | ℗ King、Electric Bird `K28P 6366`；西德版沿用 K 字號；甲 6 |
+| 2 | George Young —《Burgundy》 | 1987 | 收 | ℗ King、Paddle Wheel `K28P 6449`；美國 ProJazz ℗ King；甲 8 |
+| 3 | George Young —《Oleo》 | 1988 | 收 | ℗ King、`K32Y 6221`（1988-02-21）；甲 8 |
+| 4 | Manhattan Jazz Quintet —《Manhattan Jazz Quintet》 | 1984 | 收 | ℗ King、`K35Y 6014`／`K28P 6313`（1984-10-21）；美國版「A Paddle Wheel Production」；甲 6 |
+| 5 | Manhattan Jazz Quintet —《Autumn Leaves》 | 1985 | 收 | ℗ King、`K28P 6350`／`K32Y 6020`（1985-07-21）；甲 5 |
+| 6 | Manhattan Jazz Quintet —《My Funny Valentine》 | 1986 | 收 | ℗ King、`K32Y 6070`（1986-03-21）；甲 5／乙 1；「live to two tracks」是工法 |
+| 7 | Manhattan Jazz Quintet —《Live at Pit Inn》 | 1986 | 收 | ℗ King、`K32Y-6101`（1986-07-21）、東京錄音；**`live: true`** |
+| 8 | Manhattan Jazz Quintet —《My Favorite Things: Live In Tokyo》→《My Favorite Things - Live in Tokyo》 | 1987 | 收 | ℗ King、`K28P 6465`（1987-08-21）；**盤名標點改判**（7761）；**`live: true`** |
+| 9 | Manhattan Jazz Quintet —《The Sidewinder》 | 1987 | 收 | ℗ King、`K32Y 6170`（1987-03-21）；slice「不明」→ 日本原盤 |
+| 10 | Manhattan Jazz Quintet —《Caravan》 | 1989 | 收 | ℗ King、`292E 6002`（1989-04-21）；甲 7 |
+| 11 | Manhattan Jazz Quintet —《Face to Face (Edition Deluxe)》 | 1989 | **退**（邊界） | 首發是 3 軌 mini CD《Mind Medicine Jazz Project: Face To Face》；Deluxe 一半是既有錄音、另一半來歷不明（7757） |
+| 12 | Gil Evans & The Monday Night Orchestra →`Gil Evans` —《Live at Sweet Basil Vol.2》 | 1986 | 收 | ℗ © 1986 King、`K19P 6421~2`；Gramavision `Licensed From: King`；**`live: true`**；撈回 |
+| 13 | 同上 →`Gil Evans` —《Bud and Bird》→《Bud and Bird (Live at Sweet Basil)》 | 1987 | 收 | ℗&© 1987 King、`K19P 6455-6`（1987-06-21）；**盤名取原壓全題**（7761）；**`live: true`**；撈回 |
+| 14 | 同上 →`Gil Evans` —《Farewell》→《Farewell - Live at Sweet Basil》 | 1988 | 收 | ℗ King、`K32Y 6250`（1988-05-21）；**盤名取原壓全題**；**`live: true`**；撈回 |
+| 15 | Art Blakey & The Jazz Messengers →`Art Blakey and the Jazz Messengers` —《Live at Sweet Basil》 | 1985 | 收 | King 自製 `K28P 6357`／`K32Y 6024`（1985-06-21）；**§1 人工身分**（7770）；**`live: true`**；撈回 |
+| 16 | Mal Waldron, Richard Davis, Eddie Blackwell, Donald Harrison, Terence Blanchard —《Eric Dolphy & Booker Little Remembered Live at Sweet Basil》 | 1987 | 收 | ℗ 1987 King、`K28P 6450`；Vol. II 在 c-197 a；**`live: true`**；撈回 |
+
+**退件的條款分佈**（一筆）：**身分形狀（EP 首發 ＋ 第 397 條／主線第 1948-B 條「一半是既有錄音」）1 筆**（#11）。**「日本是原盤」硬門不成立 0、撞池 0、第 4106 條四項 0（本堆取消）、第 5701 條 0、第 1925-B 條 0、曲風 0、年份上限 0。**
+
+⚠ **橫向數字**：**年份改判 0**（slice 16 筆年份全對；但 MB RG 的 first-release-date 錯 5 筆、Discogs master 年錯 1 筆，見 7760）；**盤名改判 3**（#8 標點、#13／#14 取原壓全題）；**`artist` 欄改判 4**（#12–#14 → `Gil Evans`、#15 → `and the`，全是沿用池中既有串）；**`live`**：`true` 7（#7／#8／#12–#16）、`false` 8（其中 #6／#9 的「live to two tracks」判工法）；**再發數 15 筆收件逐筆跑完 `versions`，MB 平均低估 77%**；**孤兒 release 4 筆（#7 兩筆、#12 兩筆，已計入）**；**改釘 rgMbid 0；撈回五筆自釘 4、§1 人工 1**。
+
+⚠ ⚠ **本組最重要的四件**：
+1. ⚠ ⚠ **重篩命中率 11/11**（7758）：slice `hint`「jp-king 西德形」10 筆與「不明」1 筆（#9）**全部是 King 的日本原盤**；指紋三個照 c-197 a 第 7734 條——**西德版沿用日本 K 字號／`240 E`／`292E` 號、西德版逐字 ℗ King、美國 ProJazz／Gramavision／GNP 版逐字 `Licensed From: King`、℗ King 或「A Paddle Wheel Production」**。**本組沒有一張是 Concord 那一形**（a 組 #4）。
+2. ⚠ ⚠ **MB 在這一條線的系統性錯日期有三種**（7760）：**混音日當發行日**（#4 `1984-07-13`，Apple 同錯）、**錄音日／錄音月當發行日**（Apple #5／#6／#10）、**Vol.1 的發行日被抄到 Vol.2**（#12 `1985-06-21`）、**RG 只建了美國 Evidence 再發**（#13 1992、#14 1993）——**`titleCheck`／first-release-date 全部不可直接用，一律以 Discogs 日本原壓的 `released` 與 obi 日期碼為準。**
+3. ⚠ **#11 是新形狀：「Edition Deluxe」＝ EP ＋ 來歷不明的三軌**（7757）——MB 只建了西德那一版、`secondary-types` 空，**機器全盲**；唯一線索是 Discogs 同一個 master 裡那筆 3 軌的《Mind Medicine Jazz Project: Face To Face》`180E 6030`（1989-06-05，`notes` 逐字「Original (first) CD release in Japan」）。
+4. ⚠ **撈回的五張全部成立**（7771）：四張 MB 有 RG（但只建了再發或數位版），**照一般路線釘**；`Art Blakey《Live at Sweet Basil》` MB 兩個藝人實體 263 個 RG 都沒有 → **§1**。
+
+---
+
+## 退件的裁定（7757）
+
+## 7757　⚠ ⚠ 退（**邊界**）：`Manhattan Jazz Quintet —《Face to Face (Edition Deluxe)》`（rg d6c0f98d）——**首發是 3 軌 mini CD《Mind Medicine Jazz Project: Face To Face》（`Paddle Wheel 180E 6030`，1989-06-05）；Deluxe 版 `292E-6032` 是那三軌 ＋ 三首沒有任何錄音日期／場地的長軌——一半是既有錄音、另一半來歷不明，不能證明是一張新錄音的專輯；「日本是原盤」成立**
+
+**事實**：**Discogs master 961680 的 `versions` 逐筆跑完 3 版**——
+- **180E 6030（6756021，`released` 逐字 `1989-06-05`，Japan）**：題逐字「Mind Medicine Jazz Project: Face To Face」、**3 軌**（〈Face To Face〉作曲逐字 `Malta (3)`、〈Take Five〉〈Work Song〉）、`companies` 逐字「Distributed By: King Record Co. Ltd」「Recorded At: Edison Studios」、`notes` 逐字「Original (first) CD release in Japan Recorded at The Edison Studio, NY, March 27, 1989」、執行製作 川島重行（525096）、母帶 高浪初郎（873378）。
+- **292E-6032（6939296，Japan，只到年）**：題逐字「Face To Face, Edition De Luxe」、**6 軌**＝上面三軌 ＋〈Summertime〉15:25〈Moanin'〉17:26〈Rosario〉6:12；`companies` 逐字「Record Company: King Record Co. Ltd」「Phonographic Copyright (p): King Records」、barcode `4988003065591`；**錄音師逐字分兩組：`Gary Chester [1, 2, 3]`、`Hatsuro Takanami [4, 5, 6]`**——後三軌沒有任何一版寫錄音日期或場地；`data_quality` 逐字 `Needs Vote`。
+- **西德 292E-6032（15362488）**：`notes` 逐字「℗ 1989 King Record Co. Ltd.」——**原盤是 King**。
+- MB 1 筆（b981ad46，1989 DE，6 軌）；**六條 recording 逐條 `inc=releases` 都只掛在這一筆**。Apple jp 的 MJQ 目錄（25 筆）沒有這一張。
+
+**裁定：退（可逆，只動收退名單）。**
+1. **首發是 mini CD、不是專輯**：Discogs 同一個 master 裡最早有日期的一筆是 3 軌（約 26 分鐘）、題名是「Mind Medicine Jazz Project」企劃名的那一版——共通條款 **EP 不收**。
+2. **Deluxe 版的身分站不住**：它的前三軌就是那張 mini CD 的錄音（同曲、同錄音師 Gary Chester、同一場 1989-03-27 Edison Studio）——**主線第 1948-B 條「看的是錄音」：一半是既有錄音的重新收錄**；**另一半三軌沒有任何一版交代錄音日期與場地**（錄音師是 King 在東京做實況的 高浪初郎，長度 15–17 分鐘，**像是日本實況，但盤面沒寫**），**不能證明它們是為這張做的新錄音**——c-197 a #9《Hard Champion》能收，是因為那三軌有明確的「同晚另一張未收錄」出處；本盤沒有。
+3. **不以曲風退**：`genres` 逐字 `Jazz`、`styles` `Post Bop`，第 5701 條甲 6（〈Face To Face〉是日本薩克斯手 MALTA 的曲，算原創委作）。
+⚠ **反轉條件**：**查到〈Summertime〉〈Moanin'〉〈Rosario〉三軌的錄音出處（日期／場地）且確認是本盤首次發行 → 改判收**：原盤、曲風、掛名、年份都已核過，撈回直接用 `Paddle Wheel 292E-6032`、1989、`Manhattan Jazz Quintet`、盤名 `Face to Face (Edition Deluxe)`（MB 形），`risk` 寫明前三軌先以 mini CD 發行。⚠ **池中 0 列**。退件只記：再發數 Discogs 3、MB 1。
+
+---
+
+## 收件與橫向的裁定（7758–7777）
+
+## 7758　⚠ ⚠ 第 4 堆的硬門：**「日本是原盤」16 筆逐筆以 Discogs 最早那一版的 `labels`／`companies`／`notes` ＋ `versions` 全表判定——16/16 成立**
+
+| slice `hint` | `source` | 筆數 | 日本是原盤 | 決定性的那一行（逐字） |
+|---|---|---:|---:|---|
+| jp-king 西德形（Bellaphon 代工？）——看 ℗ 行 | 乙（最早 DE 或 DE/US） | 10（#1–#8、#10、#11） | **10** | 西德版沿用 K／`240 E`／`292E` 號 ＋「Phonographic Copyright (p): King Record Co. Ltd」；美國 ProJazz「Phonographic Copyright (p): King Records」或「A Paddle Wheel Production」 |
+| 重篩翻成不明 | 不明（#9） | 1 | **1** | MB 自己就有 1987-03-21 JP；西德與美國版 ℗ King |
+| c-197 a 第 7749 條撈回 | — | 5（#12–#16） | **5** | Gramavision／ProJazz／Evidence「Licensed From: King Record Co. Ltd」；GNP「An Original ELECTRIC BIRD Production」 |
+
+1. **主線第 2010-B 條的重篩方向在本組 11/11 對**：MB 最早那一版全是西德 Bellaphon 代工（只填到年）或美國 ProJazz CD——**日本原壓一張都沒建**（#9 除外）。
+2. **c-197 a 第 7734 條第 2 點照做**：每一張西德 Bellaphon 版都先看它印的目錄號——**16 張全是 King 的 K 字號或 `240 E`／`292E`／`256R` 號**，沒有一張沿用外國廠牌的號（a 組 #4 Concord 那一形在本組 0 筆）。
+3. **錄音地不影響判定**（c-193 b 第 7334 條第 3 點）：紐約 12 張（Clinton／A&R／Sound Track／Edison 錄音室、Sweet Basil 俱樂部）、東京 2 張（#7 六本木 Pit Inn、#8 中野サンプラザ）。
+4. **判定動作**：16 筆全部打了 `releases/<id>` 讀原壓與外國版的 `labels`／`companies`／`notes`，逐筆跑 `/masters/<id>/versions`（16 筆都有 master 頁）。
+
+## 7759　`priorRulingHits`：**本組 0 筆**（slice 11 格全空，撈回 5 筆無此欄）——⚠ **本層另以 16 個 RG／盤名掃過 c-173…c-197 的 `rulings.md`：零舊退件**
+
+- `George Young` 只命中 c-196 b 第 7573 條（《Yesterday and Today》，**別張**、退在第 5701 條乙 4/7）——**本組三張的曲目表逐張算過：乙 0**，那條理由不外溢。
+- `Manhattan Jazz Quintet` 與 Sweet Basil 五張只命中 c-196 a 第 7561 條「建議重篩」名單與 c-197 a 第 7746／7749 條（撈回建議），**不是舊退件**。
+
+## 7760　年份：**16 筆全部回查版本表；改判 0**——⚠ **但機器欄位錯 6 處，全靠版本表與 obi 日期碼抓出**
+
+| # | 機器欄位寫 | 實際 | 錯法 |
+|---:|---|---|---|
+| 4 | MB RG／5d786b0a／Apple：`1984-07-13` | 日本 CD／LP `1984-10-21` | **混音日**（原壓 `notes` 逐字「Mixed … July 13, 1984」） |
+| 5／6／7／9／10 | Apple：1985-03-03／1985-11-01／1986-04-01／1986-01-01／1988-12-01 | 1985-07-21／1986-03-21／1986-07-21／1987-03-21／1989-04-21 | **錄音日、錄音月或雜值**——**2004 年上架的 MJQ 七筆 Apple 日期 7/7 不是發行日**（#8 那筆直接寫 2004-09-23）；主線第 1945-B 條「King 盤 Apple 日期只作強佐證」再得實例 |
+| 9 | Discogs master 年 `1986` | 1987-03-21 | 西德 LP 封底印錯 ℗ 年（同一張標籤是 ℗ 1987；錄音 1986-10） |
+| 12 | MB RG／Apple：`1985-06-21` | 1986 | **Vol.1 LP 的發行日被抄到 Vol.2** |
+| 13／14 | MB RG：1992／1993 | 1987-06-21／1988-05-21 | **RG 只建了美國 Evidence 再發**（jp-1 簡報第三節 (a) 形） |
+
+⚠ **slice 的 `year` 16/16 對**（切批腳本用的是 Discogs／列舉層的年，不是 MB RG 的日期）——**本組年份沒有改判，但下游若直接讀 MB 或 Apple 的日期會錯五張。**
+
+## 7761　盤名與 `artist` 欄：**盤名改判 3（#8／#13／#14）；`artist` 欄改判 4（#12–#15，全是沿用池中既有串）**
+
+1. **#8 `My Favorite Things: Live In Tokyo` → `My Favorite Things - Live in Tokyo`**：冒號形是 MB RG 與 2004 復刻題；**MB 最早那筆 release（00024722）與 Discogs 日本原壓都是連字號形**——照第 1858-B 條取最早那一版，大小寫照 MB 最早 release（不在該條射程）。ASCII 連字號，`chk-prop` 不擋。
+2. ⚠ ⚠ **#13 `Bud and Bird` → `Bud and Bird (Live at Sweet Basil)`、#14 `Farewell` → `Farewell - Live at Sweet Basil`**：短題是 MB RG 題——**而那兩個 RG 只建了 1992／1993 的美國 Evidence 再發**；**Discogs 的日本原壓與全部 1987／1988 年版本逐字都是全題**。照第 1858-B 條取原壓；大小寫照 MB 的 `Bud and Bird` 與 c-197 a Vol.1 的 `Live at`。⚠ **反轉條件（兩張綁在一起）**：查到原壓封面／側標的 `Live at Sweet Basil` 段是系列字樣而非題名 → 兩張都改回短題，**只動 `album` 一欄**。⚠ **#14 的全題與 Art Blakey 1990 年的《Farewell - Live At Sweet Basil》逐字同題**（超出上限、不在池中），卡上已寫。
+3. **#12／#13／#14 `Gil Evans & The Monday Night Orchestra` → `Gil Evans`**：照 c-197 a 第 7737 條第 5 點與池中 seed 7 列（第 307 條）——**同一個駐演四張的掛名必須一致**；盤面團名進 `queryAlias`。
+4. **#15 `Art Blakey & The Jazz Messengers` → `Art Blakey and the Jazz Messengers`**：照池中多數（seed 19 vs 5），與 c-196 b 第 7580 條、c-197 a 第 7737 條同判。
+5. **#16 照 slice**：與 c-197 a Vol. II 新立的五人串同一串（原壓順序）；**MB 本 RG 的 artist-credit 順序不同（Blanchard 在前），不另立第二串**。盤名取原壓全題（原壓無 `Vol. I`）。
+6. **其餘**：George Young 三張、MJQ 七張的盤名與 Discogs 原壓、MB 逐字一致；#12 取原壓與 MB 的 `Vol.2`（無空格）形，CD 題 `- Vol. 2` 與 Apple 的 `, Vol.2` 進 `queryAlias`。**`titleCheck` 11 格 note 全空，屬實**（#8 是標點，機器沒報）。
+
+## 7762　`live`：**`true` 7 筆（#7／#8／#12–#16，三肢全過）；`false` 8 筆；「live to two tracks」判工法 2 筆（#6／#9）；反向漏標 0**
+
+- **#7**：場館（`Pit Inn, Roppongi`）＋「Recorded live at」＋ 1986-04-21；西德分售 CD 另逐字列 `Introducing The Members`。
+- **#8**：場館（`Nakano Sun Plaza`）＋「Recorded live at」＋ 1987-04-14／19——**兩場不連續，照主線第 1978-B 條 (b)「一段巡演期間」與 c-197 a #6（同一駐演的兩個週一）先例判成立**（建議主線覆核的邊界之一）。
+- **#12–#14**：場館 ＋「Recorded Live at」＋ 1984-08-27（#12）／1986-12-01・22（#13／#14，同一駐演兩個週一，照 c-197 a #6）。
+- **#15**：場館 ＋ 盤名 `Live at Sweet Basil` ＋ 1985-03-24——**與 c-197 a #9《Hard Champion》（同一晚三軌）判 `false` 不衝突**：那張盤面零 live 字樣，本盤盤名就是 live 字樣。
+- **#16**：場館 ＋「Recorded Live at」＋ 1986-10-03／04 連兩晚（與 c-197 a Vol. II 一致）。
+- ⚠ **#6／#9 `false`**：日本盤逐字「digitally recorded live to two tracks with no mixing or overdubbing」——**一次過錄音的工法**（主線第 1971-B 條直刻盤同理），錄音室、零觀眾字樣。
+- **其餘 6 筆錄音室**：主線第 1958-B 條必掃字串與第 1977-B 條三個技術職逐筆掃過零命中。
+
+## 7763　⚠ ⚠ 再發版本數：**15 筆收件逐筆跑完整張 `versions`；15 筆都有 master 頁；一律取 MB、Discogs、孤兒 release 與 Apple 的聯集；MB 平均低估 77%**
+
+| # | Discogs | MB（本盤） | MB 獨有 | 孤兒 | Apple 另加 | 合計 | MB 低估 |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 6 | 2 | 0 | 0 | +1 | 7 | 71% |
+| 2 | 5 | 3 | 0 | 0 | 0 | 5 | 40% |
+| 3 | 3 | 1 | 0 | 0 | 0 | 3 | 67% |
+| 4 | 15 | 3（5d786b0a 無法另釘） | 0 | 0 | +1 | 16 | 81% |
+| 5 | 15 | 3 | 0 | 0 | +1 | 16 | 81% |
+| 6 | 10 | 2 | 0 | 0 | +1 | 11 | 82% |
+| 7 | 11 | 1 | 0 | **+2**（西德分售 CD Vol. 1／Vol.2） | +1 | 14 | 93% |
+| 8 | 8 | 3 | 0 | 0 | +1 | 9 | 67% |
+| 9 | 7 | 2 | 0 | 0 | +1 | 8 | 75% |
+| 10 | 6 | 1 | 0 | 0 | +1 | 7 | 86% |
+| 12 | 11 | 1（另 2 筆誤掛 Vol.1 RG＝孤兒） | 0 | **+2**（西德分售 CD Part 1／Part 2） | 0（＝MB 數位版） | 14 | 93% |
+| 13 | 10 | 2 | **+1**（第二筆 Evidence） | 0 | 0 | 11 | 82% |
+| 14 | 9 | 1 | 0 | 0 | 0 | 9 | 89% |
+| 15 | 13 | 0（§1） | 0 | 0 | +1 | 14 | — |
+| 16 | 11 | 2 | 0 | 0 | +1 | 12 | 83% |
+
+⚠ **Apple 另加的 11 筆都先比過 MB 有沒有對應的 `Digital Media`**（主線第 1987-B 條）：只有 #12 的 RG 有（ac12e49d ＝ Apple 1649757790）→ 不另計。⚠ **影像不併計**：#8 同一檔公演的 LaserDisc《Big Apple Jam》（master 816259）。**#12 的 1989 年八 CD 套裝 `K25Y 9531-38` 是合輯，不併計。**
+
+## 7764　廠牌欄：**`label` 15 筆全部以 Discogs 原壓 `labels` 欄逐字；`house: king` → 原壓字標 `Paddle Wheel` 11、`Electric Bird` 4（兩者 `parent_label` 皆 King，照主線第 1976-B 條算母廠，不影響收退）**
+
+- ⚠ ⚠ **1984–89 年 King 的 LP 大量由西德 Bellaphon 代工，Discogs 常把西德壓的標成 Japan**（#5 master 的 `main_release`、#7 的 2LP 都是）——**判原盤與選 `label` 時看 `companies`，不看國別欄**（c-197 a 第 7740 條同形）。
+- **`label` 的取法**：有 King 自製 LP 的取 LP（#2 取日本 Promo，JASRAC＋`T4988…` 條碼證明是日本壓；#5／#8／#15／#16）；日本 LP 只有西德代工版的取同期日本 CD 並寫明 LP（#3／#7，照 c-197 a #9）；日本 CD 與 LP 同日的取 master 的 `main_release`（#4／#6／#9／#10）；#12／#13 取 King 自製的 2LP；#14 取日本 CD（LP 少一軌）。
+
+## 7765　⚠ 掛名：**15 張 5 個相異字串——沿用池中整串 2（`Gil Evans`、`Art Blakey and the Jazz Messengers`）＋ 沿用 c-197 a 在途 1（五人串）＋ 新立 2（`George Young`、`Manhattan Jazz Quintet`）；新造分裂 0、新造分隔符 0、收斂 0、改釘 rgMbid 0**
+
+| 掛名 | 池中 | 處置 |
+|---|---|---|
+| `George Young` | 0 | **新立**（MB 2d88d5ed Person US／Discogs `George Young (2)`，`realname` `George Ernest Opalisky Jr.`）；`ジョージ・ヤング`（Discogs `namevariations`）進 `queryAlias` |
+| `Manhattan Jazz Quintet` | 0（`Manhattan Jazz Orchestra` seed 1 列是 1989 年另組的大樂團，**不同團**） | **新立**（MB 4042743d Group US／Discogs 1651295）；⚠ **縮寫 `MJQ` 撞 Modern Jazz Quartet，卡上已寫下游不得用縮寫** |
+| `Gil Evans` | seed 7 列 ＋ c-197 a 在途 1 | **沿用**（三張） |
+| `Art Blakey and the Jazz Messengers` | seed 19 列（`&` 形 5） | **沿用多數** |
+| `Mal Waldron, Richard Davis, Eddie Blackwell, Donald Harrison, Terence Blanchard` | c-197 a 在途 1 | **沿用**（同一檔公演兩集同串） |
+
+## 7766　⚠ 人名：**收件卡寫出的漢字人名 9 個，全部有 Discogs 藝人頁欄位可指；照寫羅馬字的日本人 4 個**
+
+1. **可指來源**：川島重行（525096 `namevariations`；15 張全在）、高浪初郎（873378 `namevariations`，c-196 a 第 7554 條更正後的正寫）、牧野晃（474621）、白木佳雄（1986875）、瀬川昌久（1690604 `realname`）、大野俊三（432166 `realname`）、杉山和紀（272583 `namevariations`）、内山繁（2267918 `realname`）——以上八個沿用 c-197 a 第 7742 條逐名定案；**油井正一（1588219 `realname` 逐字「油井正一」，本層回打，職業欄逐字「Japanese jazz critic」，#8／#10／#14）**。
+2. **照寫羅馬字**：`Hochi Fujishiro`（#1）、`Yoshihiro Madachi`（#3，兩個漢字形互斥）、`Gisen Katahira`／`Tsuyoshi Fukuda`（#12）——照 c-197 a 第 7742 條第 2 點。
+3. **`name-corrections.json`**：`pairs` 命中 0（`高浪初郎` 直接用正寫）；`_to_romaji`／`_romaji_collisions`／`_entity_mislinks` 零命中。
+
+## 7767　⚠ 曲風與第 5701 條：**15 筆收件的原壓 `genres` 全含 `Jazz`；原壓 `styles` 有爵士成分 12 筆、空陣列 3 筆（#12／#14／#16，同 master 他版 `Big Band`／`Post Bop`／`Hard Bop`，人工判收）；乙 > 0 只有 #6（1／6）**
+
+- **甲乙計數**：George Young 三張甲 6／8／8；MJQ 七張甲 6／5／5+乙 1（#6〈New York State Of Mind〉，1976 年的流行曲保守算乙）／8／6／6／7；Gil Evans 三張甲 6／6／4（**Hendrix 的〈Stone Free〉〈Little Wing〉照主線第 1978-B 條甲補格**——Gil Evans 1974 年的 Hendrix 編曲盤在池中 seed，與 c-197 a Vol.1 同判）；#15 甲 4；#16 甲 3。
+- **巴西曲**：〈Recado Bossa Nova〉（#5／#7／#8）與〈The Gentle Rain〉（#3，Bonfá）照主線第 1962-B 條算甲。
+- **第 1925-B 條**：15 筆全部由原壓（或同期同廠載體）盤面逐名 credits 成立。
+- **合輯指紋**：15 筆 `formats` 零 `Compilation`；#7 的 1987 年 Highlights LP 是同一場的精選（已計入版本），不影響本盤。
+
+## 7768　⚠ `poolRecheck` 逐格人工覆核：**16 格全部重掃（每一種掛名寫法 ＋ 片假名形 ＋ 成員名 ＋ 盤名兩種文字系統 ＋ 主要曲名）；真撞池 0**
+
+- **「逐張人工比」8 格**（MJQ 八張）：提示欄唯一的一列 `Manhattan Jazz Orchestra《Moanin'》1989` 是 David Matthews 另組的大樂團——**不同團、不同錄音**；成員名（Soloff／Young／Matthews／Gomez／Gadd／Moffett／Patitucci／Weckl）逐一掃過，**零張 MJQ 錄音**；`Dave Matthews` 命中的 3 列全是 Dave Matthews Band。
+- **「變體全是羅馬字」3 格**（George Young 三張）：照第 1890-B 條第四條路回打 Discogs 264569，`namevariations` 逐字有 `ジョージ・ヤング` → 全池 0 列；**真外國人，無漢字形**。
+- **撈回 5 格（無 `poolRecheck`）**：`Gil Evans` 7 列、`Art Blakey` 三串 31 列、Waldron 個人 8 列＋聯名 7 列、Blanchard 7 列、Dolphy 13 列、Booker Little 5 列逐列比過——**零張同錄音**；同曲不同錄音：#15〈Moanin'〉〈Blues March〉↔ seed《Moanin'》1958、#16〈The Prophet〉↔ seed《At the Five Spot, Volume 1》1961。
+- **盤名同題不同碟（下游引用必帶掛名）**：`Chant`（seed 聖歌）、`Oleo`（Grant Green 1980）、`My Funny Valentine`（Miles Davis 1965、c-176 弘田三枝子）、`My Favorite Things`（Coltrane 1961）、`The Sidewinder`（Lee Morgan 1964）、`Caravan`（Art Blakey 1963、英國 Caravan 1969）、`Farewell`（Cicada 2016）、`Live at Sweet Basil`（c-193 Junior Mance、c-196 Mal Waldron Super Quartet、c-197 a Gil Evans）、`Pit Inn`（c-184／c-190 三張）。**`chk-prop` 第五道（盤名撞 apex）0 處。**
+- `known-pool-collisions.json`（20 筆）以 16 筆的掛名、盤名、RG 前綴掃過：零命中。
+
+## 7769　catno 反查與孤兒 release：**15 筆收件逐筆以日本原壓、西德版與美國版目錄號打 `catno=`（48 次，含退件 #11 兩次）；孤兒 release 4 筆（#7 兩筆、#12 兩筆，已計入版本數）；其餘命中全在各自 master 內**
+
+- **#7**：`catno=K32Y-6101` 回西德 Bellaphon 分售 CD《Live At Pit Inn Vol. 1》`K32Y-6101-1`（11922252）與《Vol.2》`K32Y 6101-2`（14607882）——`master_id` 0，合起來是 2LP 全本。
+- **#12**：`catno=K32Y 6076` 回《Live At Sweet Basil VOL. 2 Part 1／Part 2》（12094769／12095005，`master_id` 0）＝ MB 誤掛在 Vol.1 RG 的 158f81e0／3873ce22。
+- 美國 ProJazz 的 `CDJ 6xx` 號與西德 `240 E` 號回來的外部命中全是不相干的同號別廠（逐筆看過），不計。
+
+## 7770　⚠ ⚠ §1 人工身分 1 張：**`Art Blakey and the Jazz Messengers —《Live at Sweet Basil》`（1985，Paddle Wheel `K28P 6357`）——MB 兩個藝人實體合計 263 個 RG 都沒有這一張**
+
+- **查詢**（逐筆寫進 `mbAbsenceProof`）：`releasegroup:"Live at Sweet Basil" AND artist:"Art Blakey"` → 1 筆（1990《Farewell》別張）；`releasegroup:"Sweet Basil" AND artist:"Blakey"`／`"Jazz Messengers"` → 各 2 筆（1989／1990 別場）；`release-group?artist=209ddf15…`（Group）limit=100 兩頁 167 筆、`release-group?artist=601e7466…`（Person）96 筆逐筆看過；盤名單查 32 筆兩頁逐筆看過；`catno:"K28P 6357"`／`"K32Y 6024"`／`"GNPS-2182"`／條碼 → 0（對照組 `catno:"K32Y 6040"` 回 1 筆，證明欄位有效）。**四種假形狀全排除**（全部 HTTP 200、browse 走 limit=100、沒有回不相干的實體）。
+- **`manualEvidenceUrls`**：Discogs master 567545、日本 CD release 10407534、Apple jp 1807509751。**封面 `apple-verified-collection`，精確 `collectionId` 1807509751**（`℗ 1985 King Record Co.,Ltd`、1985-06-21、4 軌，與日本 CD 逐日相符）。
+- **`rgMbid` 留空、`mbNote` 不放任何 MBID**（c-67plus 附錄硬性禁止）。
+
+## 7771　撈回五張的 RG 自釘：**4 張照一般路線釘（MB 有 RG、只是只建了再發或數位版），1 張 §1**
+
+| # | 釘的 RG | 為什麼是它 | MB 那邊缺什麼 |
+|---:|---|---|---|
+| 12 | `eae2a44d-44fa-4d09-a4a8-3f1146b7aff7` | 盤名＋藝人查詢 score 100、Album＋Live、唯一 release 是 5 軌數位版（逐軌對得上本盤 CD） | 日本原壓全缺；RG 日期錯（1985-06-21）；本盤的兩筆西德分售 CD 被掛進 Vol.1 RG |
+| 13 | `f30f5d47-3292-358d-bf84-f14d8580706c` | 查詢 count=1、score 100、Album＋Live | 只有 1992／1993 Evidence |
+| 14 | `24f8af2f-bdf4-3e07-b8f6-ea49020dad02` | 查詢 count=1、score 100、Album＋Live | 只有 1993 Evidence |
+| 16 | `c1be4427-3a73-4469-bbc0-499a098a0e77` | 查詢 score 100（另一筆 f40cf356 是 c-197 a 的 Vol. II） | 只有美國 ProJazz 與 Evidence |
+| 15 | （§1，留空） | 見 7770 | 整張沒有 |
+
+⚠ **簡報 hoyi 第〇節第 1 堆「MB 有 RG 就照一般路線釘」**——#13／#14 的 RG 只建了美國再發，**但它們是同一個 Discogs master 的同一張碟**，釘上去身分不會指錯（與 c-192 a 第 7254 條《Bossa Nova Concert》那種「RG 裡只有一張合輯」不同形）。
+
+## 7772　⚠ ⚠ 同場錄音、同線串連與兩組互掃
+
+1. ⚠ ⚠ **Sweet Basil × King 製作線到本批共九張，九場錄音**（c-197 a 第 7746 條五張 ＋ 本組四張）：
+   - Gil Evans 駐演：c-197 a《Live at Sweet Basil》1984-08-20／27 → **本組《Vol.2》1984-08-27** → **本組《Bud and Bird》與《Farewell》1986-12-01／22（同兩晚、曲目零重疊）**；
+   - Art Blakey：**本組《Live at Sweet Basil》1985-03-24** ＝ c-197 a《Hard Champion》那三軌的同一晚（曲目零重疊，a 組卡上已寫）→ c-196 b《New Year's Eve》1985-12-30／31；
+   - Dolphy／Little 紀念：**本組 Vol. I** 與 c-197 a Vol. II 同為 1986-10-03／04（曲目零重疊：Vol. I〈The Prophet〉〈Aggression〉〈Booker's Waltz〉、Vol. II〈Fire Waltz〉等）；
+   - c-196 b Mal Waldron Super Quartet 1987-08。
+   **下游寫這一族時場次日期要對得上：同晚／同檔的兩張不得寫成同一張，三張 Art Blakey 是三場。**
+2. ⚠ **Manhattan Jazz Quintet 同團同曲不同錄音**：〈Autumn Leaves〉〈Recado Bossa Nova〉〈Rosario〉〈'Round Midnight〉〈S.U. Blues〉〈My Favorite Things〉〈You'd Be So Nice To Come Home To〉在錄音室盤與兩張實況盤各出現一次以上——**全部是不同錄音**，卡上逐張寫明。
+3. **兩組互掃（主線第 1987-B 條固定動作）**：以本組 15 張收件的曲題表對 a 組 `prop-a.json` 六張掃過——**零同錄音、零撞卡**；同題不同錄音：〈Autumn Leaves〉〈Angel Eyes〉（a 組 GJT Vol. 2 ↔ 本組 #5／#7）、〈Moanin'〉（a 組無）、〈The Prophet〉（a 組 Vol. II 的 `why` 只以 Five Spot 原錄引用，Vol. II 不收這首）。**Dave Matthews 是 a 組 #7《Passion Fruit》的製作／編曲，也是本組 MJQ 的領班、George Young 三張的製作**——不同錄音。
+4. **George Young ↔ MJQ**：同一位次中音、同一位製作人、同一個 King 執行製作——**三張個人盤與七張團盤是十場不同錄音**。
+
+## 7773　Apple 與店面（第 254 條，只寫觀察）：**15 筆收件命中 11 筆（全在 jp）；403／429 本次工作階段零次**
+
+- **命中**：#1 1651759915、#4 153628920、#5 153629916（題逐字 `Autumn Leavs`）、#6 153631656、#7 153632265、#8 153830732、#9 153633071、#10 153834332、#12 1649757790、#15 1807509751、#16 1807509524。**日期可信度按上架批次分裂**：`1807…` 那兩筆（#15／#16）與日本原壓逐日或逐月相符、`1651…`（#1，1985-09-21）與原壓同年（原壓只到年，無從逐日比）；**2004 年那一批 MJQ 七筆與 Gil Evans 的 1649757790（寫 1985-06-21）全是錯值**。
+- **未命中 4 筆**：#2／#3（George Young 藝人目錄 11 筆逐筆看過）、#13／#14（Gil Evans 兩種查法、片假名形）——**日本盤的店面覆蓋率低是常態，不是退件理由**。us 全零。
+- ⚠ **Apple jp 另有一筆 `Moanin'`（153825485，2004，7 軌）是 MJQ 的選輯**（〈Caravan〉〈Summertime〉〈Big Apple Jam〉…）——**不是任何一張本組卡的數位版**，下游不得配給 #11 或別張。
+
+## 7774　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有條目一個都沒動**
+
+## 7775　⚠ 給主線的登記建議（本層照邊界不動那些檔）
+
+1. ⚠ **撈回候選一張（不在任何 slice、池中 0 列）**：**`Manhattan Jazz Quintet《Plays Blue Note》`（Paddle Wheel `K32Y 6230`，1988-04-05，Discogs master 654410、9 版）**——`hoyi-foreign-origin.json` 判「乙（最早 1988 US）」，**沒被主線第 2010-B 條的「DE」條件拉回**；本層打了 `main_release` 5403025：`companies` 逐字「Record Company: King Record Co. Ltd」「Phonographic Copyright (p): King Record Co. Ltd」「Recorded At: Clinton Recording Studio」、`notes` 逐字「℗ 1988 King Record Co. Ltd Made in Japan」——**King 的日本原盤形**（未逐筆驗全表與曲風）。⚠ **初篩「乙（最早 US）」的 `jp-king` 其他筆可能也是同一形**，建議把 `--recheck-yi` 的條件從 `DE` 放寬到 `DE` 或 `US`。
+2. **`audits/foreign-artist-japan-productions.md` 補遺線處置表**補登十五筆「c-197 b 收」（目錄號見 7756 表），`Face to Face (Edition Deluxe)` 記「c-197 b 退（身分形狀，7757）」。
+3. **MB 的資料錯（給本機或 MB 編輯）**：Vol.1 RG d1021bfc 掛的 158f81e0／3873ce22 是 Vol.2 的西德分售 CD → 應移到 eae2a44d；無型別 RG 83d6ea0d（《… Live at Sweet Basil 2》）逐軌是 Vol.1 → 應併入 d1021bfc；eae2a44d 的 1985-06-21 是 Vol.1 的日期；130c1586（MJQ 首張）的 1984-07-13 是混音日；f30f5d47／24f8af2f／c1be4427 都缺日本原壓；**MJQ 本組八個 RG 無一建了日本原壓**（#9 除外）。
+4. **撞池登記簿**：本組無新增。
+
+## 7776　交件前自跑的結果與第 315 條結算
+
+- `node batch-progress/c197/chk-prop.mjs b` → **15 張、5 位、標記 0**（報告：`dedup-crossbatch` 的「同掛名盤名詞元包含」——Gil Evans 四張 Sweet Basil 互含、Dolphy／Little Vol. I ↔ Vol. II、Art Blakey《Live at Sweet Basil》↔ c-196《New Year's Eve at Sweet Basil》、GJT Vol.1 ↔ Vol. 2（a 組），**全是同一條製作線的不同錄音，只報不擋**；盤名撞 apex 0 處）。
+- `node batch-progress/dedup-crossbatch.mjs`（不帶批號、全池 160 批）→ **跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 14（同上）、共用目錄號 0**。
+- **第 315 條：收 15 ＋ 退 1 ＝ 16**；**逐堆：第 4 堆 收 15 退 1 ＝ 16**（本組沒有第 1／2／3 堆）。
+- **§1 人工身分 1 張**（#15）；撈回自釘 RG 4 張；slice 11 筆照釘、改釘 0。
+- **年份改判 0／盤名改判 3（收 3）／`artist` 欄改判 4（皆沿用池中串）／`live` 改判：slice 無 `live` 欄，本層判 `true` 7／再發數 15 筆全跑。**
+
+## 7777　⚠ ⚠ 給主線與後續批次的清單
+
+### 建議主線覆核的四筆邊界（索引）
+1. **#11 退**（第 7757 條）——EP 首發 ＋ Deluxe 一半既有錄音；反轉條件：後三軌出處查實。
+2. **#13／#14 盤名取原壓全題**（第 7761 條第 2 點）——兩張綁在一起、只動 `album`。
+3. **#8 `live: true`**（第 7762 條）——兩場不連續的公演，照「一段巡演期間」與 c-197 a #6。
+4. **#15 走 §1**（第 7770 條）——MB 兩個藝人實體 263 個 RG 查無。
+
+### 建議主線處理的一件（不是裁定，是腳本）
+- ⚠ **第 7775 條第 1 點**：`hoyi-foreign-origin` 重篩條件加 `US`（`Plays Blue Note` 是實例）。
+
+### 給下游（研究層、鉤子層、本機）的四件
+1. ⚠ **Sweet Basil 線九張九場**（第 7772 條第 1 點）——同晚／同檔兩張不得混寫；三張 Art Blakey 三場；Gil Evans 四張、場次日期逐張不同。
+2. ⚠ **MB 與 Apple 的日期在本組錯六處**（第 7760 條）——一律寫 Discogs 日本原壓的發行日。
+3. ⚠ **`Manhattan Jazz Quintet` 不得縮寫成 `MJQ`**（Modern Jazz Quartet）；**#10 起的節奏組是 Patitucci／Weckl**，前六張是 Moffett 或 Gomez ＋ Gadd。
+4. ⚠ **#14《Farewell - Live at Sweet Basil》的題名與 Gil Evans 1988-03-20 辭世同年，盤面與原廠說明沒寫兩者關係**——不得寫成「告別作」；與 Art Blakey 1990 年同題盤是兩張碟。
+
+**編號區間結算**：本節用到 **7756–7777（共 22 條），未越界（a 組 7726–7755）**；7778–7785 留空。

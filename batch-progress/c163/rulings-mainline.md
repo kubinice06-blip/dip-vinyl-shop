@@ -7466,3 +7466,30 @@ c-196 a 第 7561 條指出 `hoyi-foreign-origin.json` 裡 `jp-king` 判「乙」
 
 `source` 欄「甲」13 筆錯 3、「不明」2 筆反而都是日本原盤——只能當提示。另加：日本盤印 `Licensed by`／`Licensed Through`；
 同名廠牌陷阱（美國 King 被 MB 連到日本キング）；Discogs 同一張兩個 master、日本那個晚一年（Clayderman）。
+
+---
+
+## 第 2011-B 條（2026-09-28）：c-197 策展收件（21 張）；**重篩第二輪開 c-198（12 張）**；探測層第四種誤命中與擋板；c-193 收批
+
+### 一、c-197：**a 13 收 6 退 7／b 16 收 15 退 1**（b 含 a 組第 7749 條撈回的 Sweet Basil 系列 5 張）
+- a 組退件 7 筆全是「日本不是原盤」（MPS／Atlantic／Columbia／Concord／Enigma 系）——**重篩翻回的「不明」多半真是授權版**；**西德形 King 碟 16/16 是日本原盤**（b 組逐筆看 ℗ 行）。
+- **§1 人工 1 張**（`Art Blakey《Live at Sweet Basil》`，MB 兩個藝人實體 263 個 RG 都沒有它）；b 退 1：`Manhattan Jazz Quintet《Face to Face (Edition Deluxe)》`（最早是 3 軌 mini CD，後 3 軌查不到錄音；反轉條件在 c-197 第 7757 條）。
+- **照准的邊界**：Remembered Vol. II 年份 1987、盤名拿掉副題（原壓 2 軌 LP）；`Hard Champion`／`Left Alone '86` `live: false`（盤面無 live 字樣，照 c-196 b 第 7581 條）；
+  `Bud and Bird (Live at Sweet Basil)`／`Farewell - Live at Sweet Basil` 取原壓全題（兩張綁定）；#8 兩場不連續公演判 `live: true`；GJT Vol. 2 照 Vol.1 先例收。
+- **卡單 21 張（釘住 20、人工 1）**；全池 `dedup-crossbatch`（160 批）四道 0。**探測鏈排在試聽修正之後**（`previews.json` 不能兩條並寫）。
+- **新形狀**：**Bellaphon 替好幾家代工**——西德版先看沿用誰的目錄號（策展信模板已補）；`The Day After` MB 兩個 RG（e59a4f6e／f19adcc3）是同一張碟。
+
+### 二、重篩第二輪：**「最早那一版在美國」也會是日本原盤**（c-197 b 第 7775 條）
+`hoyi-us-labels.mjs` 逐筆抓判乙且最早在美國的 King／Victor／Columbia 碟（79 筆）的 MB `label-info`：
+**最早那一版掛日本系美國字標（`Paddle Wheel`／`ProJazz`／`Electric Bird`／`JVC JD-`）或無廠牌而日本版是本廠自己的，共 12 張 → c-198**（a 5：King；b 7：JVC／Columbia）。
+其餘 67 筆最早那一版是 Prestige／Riverside／CTI／Pablo／Atlantic 等美國原廠——**確定是授權壓片，不再看**。
+
+### 三、⚠ 探測層第四種誤命中：**短掛名摺疊後落在長掛名裡**（c-192 b 研究第 7637 條）
+`Jack DeJohnette《Have You Heard?》`→ `CCK《Have You Heard (Live)》`：`canon('CCK')` 摺疊重字母剩 `ck`，落在 `jackdejohnete` 裡。
+**`looseArtistOk` 補「canon 後 ≤4 字只接受完全相等」**，`test-match` 33/33 過；**全檔回掃另抓到 c-159 `Joe Lovano《I'm All for You》`→ `AAA《ALL》`**。
+另 c-194 a 研究抓到兩筆第三形（同藝人別張／同名合輯）：`Aki Takase《As Time Goes By》`→《AKI》、`John Lewis & Hank Jones《Piano Play House》`→ 同名 11 軌合輯。
+**四筆降級＋ c-192 兩筆改指（`Bossa Nova Concert`→1868591470、`KJLH` 回撈 1443515718）全部排程**：新增 `probe/downgrade.mjs`；
+三支 `preview-fixes*.sh` 依序等探測鏈跑完才寫 `previews.json`（c196 鏈 → c192 修正 → c192 降級 → c197 鏈 → c194 降級）。
+
+### 四、c-193 收批（22 張）：五層走完、自己重跑三階段 QA 全過，鉤子 206–230、desc 209–239；`HANDOFF.md` 與 memory entry 已寫。
+**c-192 研究層發現的本機事項**（c-188《Wings》正文年份錯、seed GJT 年份、兩張 CAA 封套、兩處互指句）**收進 `HANDOFF-hoyi-line.md` 第二節**。
