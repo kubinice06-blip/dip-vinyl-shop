@@ -8,7 +8,33 @@
   "house": "CBS/Sony",
   "source": "c-190 第 6597 條",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Marlene",
+   "Marlene Pena Lim",
+   "マリーン",
+   "マリーン・ペーニャ・リム"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-28、池 22468 列／139 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "SOFTLY, AS IN A MORNING SUNRISE",
+   "firstReleaseDate": "1985-12-01",
+   "earliestRelease": {
+    "date": "1985-12-01",
+    "title": "SOFTLY, AS IN A MORNING SUNRISE",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "SOFTLY, AS IN A MORNING SUNRISE"
+   ],
+   "note": ""
+  },
+  "priorRulingHits": [
+   "c190：## 6597　⚠ ⚠ 退：`Marlene —《SOFTLY, AS IN A MORNING SUNRISE》`（rg ca2f1e8d，`CBS/Sony 28AH 1962`，1985-12-01）——**第 4106 條四項 2/4（乙族），與 c-187 b 第 60"
+  ]
  },
  {
   "pile": 4,
@@ -19,7 +45,48 @@
   "house": "columbia",
   "source": "hoyi-foreign-origin：甲（最早 1985 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Gerry Mulligan",
+   "Mulligan, Gerry",
+   "Garry Mulligan",
+   "Gerald Joseph Mulligan",
+   "Gerry Mullingan"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Gerry Mulligan｜Night Lights｜1963",
+    "seed｜Gerry Mulligan｜Jeru｜1963",
+    "seed｜Gerry Mulligan｜Blues Roots｜1969",
+    "seed｜Astor Piazzolla & Gerry Mulligan｜Summit (Reunión Cumbre)｜1974",
+    "seed｜Gerry Mulligan｜What Is There to Say?｜1959",
+    "seed｜Gerry Mulligan & Ben Webster｜Gerry Mulligan Meets Ben Webster｜1959",
+    "seed｜Gerry Mulligan｜The Age of Steam｜1972"
+   ],
+   "matchedBy": {
+    "seed｜Gerry Mulligan｜Night Lights｜1963": "等值",
+    "seed｜Gerry Mulligan｜Jeru｜1963": "等值",
+    "seed｜Gerry Mulligan｜Blues Roots｜1969": "等值",
+    "seed｜Astor Piazzolla & Gerry Mulligan｜Summit (Reunión Cumbre)｜1974": "聯名內含",
+    "seed｜Gerry Mulligan｜What Is There to Say?｜1959": "等值",
+    "seed｜Gerry Mulligan & Ben Webster｜Gerry Mulligan Meets Ben Webster｜1959": "聯名內含",
+    "seed｜Gerry Mulligan｜The Age of Steam｜1972": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Mulligan",
+   "firstReleaseDate": "1985",
+   "earliestRelease": {
+    "date": "1985",
+    "title": "Mulligan",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Mulligan"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -30,7 +97,33 @@
   "house": "toshiba",
   "source": "hoyi-foreign-origin：甲（最早 1985-03-21 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Lew Tabackin",
+   "Tabackin, Lew"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Toshiko Akiyoshi-Lew Tabackin Big Band｜Long Yellow Road｜1975"
+   ],
+   "matchedBy": {
+    "seed｜Toshiko Akiyoshi-Lew Tabackin Big Band｜Long Yellow Road｜1975": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Angelica",
+   "firstReleaseDate": "1985-03-21",
+   "earliestRelease": {
+    "date": "1985-03-21",
+    "title": "Angelica",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Angelica"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -41,7 +134,57 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1985-03-21 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Art Pepper",
+   "Pepper, Art"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Art Pepper｜Art Pepper Meets the Rhythm Section｜1957",
+    "seed｜Art Pepper｜Art Pepper + Eleven｜1959",
+    "seed｜Art Pepper｜Winter Moon｜1981",
+    "seed｜Art Pepper｜Gettin' Together!｜1960",
+    "seed｜Art Pepper｜Modern Art｜1957",
+    "seed｜Art Pepper｜Smack Up｜1961",
+    "seed｜Art Pepper｜Intensity｜1963",
+    "seed｜Art Pepper｜Living Legend｜1975",
+    "seed｜Art Pepper｜Straight Life｜1979",
+    "seed｜Chet Baker & Art Pepper｜Playboys｜1958",
+    "seed｜Art Pepper｜The Return of Art Pepper｜1957",
+    "c131｜Chet Baker & Art Pepper｜Playboys｜1958",
+    "c137｜Art Pepper｜The Return of Art Pepper｜1957"
+   ],
+   "matchedBy": {
+    "seed｜Art Pepper｜Art Pepper Meets the Rhythm Section｜1957": "等值",
+    "seed｜Art Pepper｜Art Pepper + Eleven｜1959": "等值",
+    "seed｜Art Pepper｜Winter Moon｜1981": "等值",
+    "seed｜Art Pepper｜Gettin' Together!｜1960": "等值",
+    "seed｜Art Pepper｜Modern Art｜1957": "等值",
+    "seed｜Art Pepper｜Smack Up｜1961": "等值",
+    "seed｜Art Pepper｜Intensity｜1963": "等值",
+    "seed｜Art Pepper｜Living Legend｜1975": "等值",
+    "seed｜Art Pepper｜Straight Life｜1979": "等值",
+    "seed｜Chet Baker & Art Pepper｜Playboys｜1958": "聯名內含",
+    "seed｜Art Pepper｜The Return of Art Pepper｜1957": "等值",
+    "c131｜Chet Baker & Art Pepper｜Playboys｜1958": "聯名內含",
+    "c137｜Art Pepper｜The Return of Art Pepper｜1957": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Artworks",
+   "firstReleaseDate": "1985-03-21",
+   "earliestRelease": {
+    "date": "1985-03-21",
+    "title": "Artworks",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Artworks"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -52,7 +195,57 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1985 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Art Pepper",
+   "Pepper, Art"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Art Pepper｜Art Pepper Meets the Rhythm Section｜1957",
+    "seed｜Art Pepper｜Art Pepper + Eleven｜1959",
+    "seed｜Art Pepper｜Winter Moon｜1981",
+    "seed｜Art Pepper｜Gettin' Together!｜1960",
+    "seed｜Art Pepper｜Modern Art｜1957",
+    "seed｜Art Pepper｜Smack Up｜1961",
+    "seed｜Art Pepper｜Intensity｜1963",
+    "seed｜Art Pepper｜Living Legend｜1975",
+    "seed｜Art Pepper｜Straight Life｜1979",
+    "seed｜Chet Baker & Art Pepper｜Playboys｜1958",
+    "seed｜Art Pepper｜The Return of Art Pepper｜1957",
+    "c131｜Chet Baker & Art Pepper｜Playboys｜1958",
+    "c137｜Art Pepper｜The Return of Art Pepper｜1957"
+   ],
+   "matchedBy": {
+    "seed｜Art Pepper｜Art Pepper Meets the Rhythm Section｜1957": "等值",
+    "seed｜Art Pepper｜Art Pepper + Eleven｜1959": "等值",
+    "seed｜Art Pepper｜Winter Moon｜1981": "等值",
+    "seed｜Art Pepper｜Gettin' Together!｜1960": "等值",
+    "seed｜Art Pepper｜Modern Art｜1957": "等值",
+    "seed｜Art Pepper｜Smack Up｜1961": "等值",
+    "seed｜Art Pepper｜Intensity｜1963": "等值",
+    "seed｜Art Pepper｜Living Legend｜1975": "等值",
+    "seed｜Art Pepper｜Straight Life｜1979": "等值",
+    "seed｜Chet Baker & Art Pepper｜Playboys｜1958": "聯名內含",
+    "seed｜Art Pepper｜The Return of Art Pepper｜1957": "等值",
+    "c131｜Chet Baker & Art Pepper｜Playboys｜1958": "聯名內含",
+    "c137｜Art Pepper｜The Return of Art Pepper｜1957": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Stardust",
+   "firstReleaseDate": "1985",
+   "earliestRelease": {
+    "date": "1985",
+    "title": "Stardust",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Stardust"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -63,7 +256,29 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1985 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Hagood Hardy",
+   "Hardy, Hagood",
+   "Hugh Hagood Hardy"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Mystic Morning",
+   "firstReleaseDate": "1985",
+   "earliestRelease": {
+    "date": "1985",
+    "title": "Mystic Morning",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Mystic Morning"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -74,7 +289,44 @@
   "house": "cbs-sony",
   "source": "hoyi-foreign-origin：甲（最早 1986-05-21 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Richie Beirach",
+   "Beirach, Richie",
+   "R. Beirach",
+   "Richard Beirach",
+   "リッチー・バイラーク"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Richie Beirach Trio｜What Is This Thing Called Love?｜1999",
+    "seed｜Richie Beirach｜Jazz Adagio｜2015",
+    "seed｜Richie Beirach Trio｜Summer Night｜2008",
+    "c186｜Richie Beirach with 富樫雅彦｜Kahuna｜1978",
+    "c187｜富樫雅彦, Richie Beirach｜津波｜1980"
+   ],
+   "matchedBy": {
+    "seed｜Richie Beirach Trio｜What Is This Thing Called Love?｜1999": "聯名內含",
+    "seed｜Richie Beirach｜Jazz Adagio｜2015": "等值",
+    "seed｜Richie Beirach Trio｜Summer Night｜2008": "聯名內含",
+    "c186｜Richie Beirach with 富樫雅彦｜Kahuna｜1978": "聯名內含",
+    "c187｜富樫雅彦, Richie Beirach｜津波｜1980": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Ballads",
+   "firstReleaseDate": "1986-05-21",
+   "earliestRelease": {
+    "date": "1986-05-21",
+    "title": "Ballads",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Ballads"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -85,7 +337,126 @@
   "house": "east-wind",
   "source": "hoyi-foreign-origin：甲（最早 1986-04-21 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Jackie McLean with The Great Jazz Trio",
+   "Jackie McLean",
+   "McLean, Jackie",
+   "The Great Jazz Trio",
+   "Great Jazz Trio, The"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Jackie McLean｜Destination... Out!｜1964",
+    "seed｜Jackie McLean｜Let Freedom Ring｜1963",
+    "seed｜Jackie McLean｜Demon's Dance｜1970",
+    "seed｜Jackie McLean & Dexter Gordon｜Montmartre Summit 1973｜1991",
+    "seed｜The Great Jazz Trio｜At the Village Vanguard｜1978",
+    "seed｜Jackie McLean｜Bluesnik｜1962",
+    "seed｜Jackie McLean｜Swing, Swang, Swingin'｜1960",
+    "seed｜Jackie McLean｜New Soil｜1959",
+    "seed｜Jackie McLean｜A Fickle Sonance｜1961",
+    "seed｜Jackie McLean｜One Step Beyond｜1963",
+    "seed｜Jackie McLean｜Action｜1967",
+    "seed｜Jackie McLean｜Jackie's Bag｜1961",
+    "seed｜Jackie McLean｜Right Now!｜1966",
+    "seed｜Jackie McLean｜Capuchin Swing｜1960",
+    "seed｜Kenny Dorham & Jackie McLean｜Inta Somethin'｜1962",
+    "seed｜Jackie McLean｜It's Time!｜1965",
+    "seed｜Jackie McLean｜New and Old Gospel｜1968",
+    "seed｜Jackie McLean｜'Bout Soul｜1968",
+    "seed｜Jackie McLean｜Jacknife｜1975",
+    "seed｜Jackie McLean｜The Jackie McLean Quintet｜1977",
+    "seed｜Jackie McLean｜Hipnosis｜1978",
+    "seed｜Jackie McLean｜Tippin' the Scales｜1979",
+    "seed｜Jackie McLean｜Consequence｜1979",
+    "seed｜Jackie McLean & Tina Brooks｜Street Singer｜1980",
+    "seed｜Jackie McLean｜Vertigo｜1980",
+    "c131｜Jackie McLean｜Jackie's Bag｜1961",
+    "c131｜Jackie McLean｜Right Now!｜1966",
+    "c138｜Jackie McLean｜Capuchin Swing｜1960",
+    "c139｜Kenny Dorham & Jackie McLean｜Inta Somethin'｜1962",
+    "c140｜Jackie McLean｜It's Time!｜1965",
+    "c141｜Jackie McLean｜New and Old Gospel｜1968",
+    "c141｜Jackie McLean｜'Bout Soul｜1968",
+    "c144｜Jackie McLean｜Jacknife｜1975",
+    "c144｜Jackie McLean｜The Jackie McLean Quintet｜1977",
+    "c144｜Jackie McLean｜Hipnosis｜1978",
+    "c145｜Jackie McLean｜Tippin' the Scales｜1979",
+    "c145｜Jackie McLean｜Consequence｜1979",
+    "c145｜Jackie McLean & Tina Brooks｜Street Singer｜1980",
+    "c145｜Jackie McLean｜Vertigo｜1980",
+    "c148｜McCoy Tyner & Jackie McLean｜It's About Time｜1985",
+    "c154｜Jackie McLean｜Fire & Love｜1997",
+    "c156｜Jackie McLean｜Nature Boy｜1999",
+    "c171｜Jackie McLean Meets Junko Onishi｜Hat Trick｜1996",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979",
+    "c185｜渡辺貞夫 with The Great Jazz Trio｜I'm Old Fashioned｜1976",
+    "c189｜大野えり with The Great Jazz Trio｜Easy to Love｜1984"
+   ],
+   "matchedBy": {
+    "seed｜Jackie McLean｜Destination... Out!｜1964": "等值",
+    "seed｜Jackie McLean｜Let Freedom Ring｜1963": "等值",
+    "seed｜Jackie McLean｜Demon's Dance｜1970": "等值",
+    "seed｜Jackie McLean & Dexter Gordon｜Montmartre Summit 1973｜1991": "分隔符切段",
+    "seed｜The Great Jazz Trio｜At the Village Vanguard｜1978": "等值",
+    "seed｜Jackie McLean｜Bluesnik｜1962": "等值",
+    "seed｜Jackie McLean｜Swing, Swang, Swingin'｜1960": "等值",
+    "seed｜Jackie McLean｜New Soil｜1959": "等值",
+    "seed｜Jackie McLean｜A Fickle Sonance｜1961": "等值",
+    "seed｜Jackie McLean｜One Step Beyond｜1963": "等值",
+    "seed｜Jackie McLean｜Action｜1967": "等值",
+    "seed｜Jackie McLean｜Jackie's Bag｜1961": "等值",
+    "seed｜Jackie McLean｜Right Now!｜1966": "等值",
+    "seed｜Jackie McLean｜Capuchin Swing｜1960": "等值",
+    "seed｜Kenny Dorham & Jackie McLean｜Inta Somethin'｜1962": "分隔符切段",
+    "seed｜Jackie McLean｜It's Time!｜1965": "等值",
+    "seed｜Jackie McLean｜New and Old Gospel｜1968": "等值",
+    "seed｜Jackie McLean｜'Bout Soul｜1968": "等值",
+    "seed｜Jackie McLean｜Jacknife｜1975": "等值",
+    "seed｜Jackie McLean｜The Jackie McLean Quintet｜1977": "等值",
+    "seed｜Jackie McLean｜Hipnosis｜1978": "等值",
+    "seed｜Jackie McLean｜Tippin' the Scales｜1979": "等值",
+    "seed｜Jackie McLean｜Consequence｜1979": "等值",
+    "seed｜Jackie McLean & Tina Brooks｜Street Singer｜1980": "分隔符切段",
+    "seed｜Jackie McLean｜Vertigo｜1980": "等值",
+    "c131｜Jackie McLean｜Jackie's Bag｜1961": "等值",
+    "c131｜Jackie McLean｜Right Now!｜1966": "等值",
+    "c138｜Jackie McLean｜Capuchin Swing｜1960": "等值",
+    "c139｜Kenny Dorham & Jackie McLean｜Inta Somethin'｜1962": "分隔符切段",
+    "c140｜Jackie McLean｜It's Time!｜1965": "等值",
+    "c141｜Jackie McLean｜New and Old Gospel｜1968": "等值",
+    "c141｜Jackie McLean｜'Bout Soul｜1968": "等值",
+    "c144｜Jackie McLean｜Jacknife｜1975": "等值",
+    "c144｜Jackie McLean｜The Jackie McLean Quintet｜1977": "等值",
+    "c144｜Jackie McLean｜Hipnosis｜1978": "等值",
+    "c145｜Jackie McLean｜Tippin' the Scales｜1979": "等值",
+    "c145｜Jackie McLean｜Consequence｜1979": "等值",
+    "c145｜Jackie McLean & Tina Brooks｜Street Singer｜1980": "分隔符切段",
+    "c145｜Jackie McLean｜Vertigo｜1980": "等值",
+    "c148｜McCoy Tyner & Jackie McLean｜It's About Time｜1985": "分隔符切段",
+    "c154｜Jackie McLean｜Fire & Love｜1997": "等值",
+    "c156｜Jackie McLean｜Nature Boy｜1999": "等值",
+    "c171｜Jackie McLean Meets Junko Onishi｜Hat Trick｜1996": "分隔符切段",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979": "分隔符切段",
+    "c185｜渡辺貞夫 with The Great Jazz Trio｜I'm Old Fashioned｜1976": "分隔符切段",
+    "c189｜大野えり with The Great Jazz Trio｜Easy to Love｜1984": "分隔符切段"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "New Wine in Old Bottles",
+   "firstReleaseDate": "1986-04-21",
+   "earliestRelease": {
+    "date": "1986-04-21",
+    "title": "New Wine in Old Bottles",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "New Wine in Old Bottles"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -96,7 +467,31 @@
   "house": "king",
   "source": "hoyi-foreign-origin：不明（最早 1986 同日有 CA/XE/FR/JP/US）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Allan Holdsworth",
+   "Holdsworth, Allan",
+   "Alan Holdsworth",
+   "アラン・ホールズワース"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-28、池 22468 列／139 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Atavachron",
+   "firstReleaseDate": "1986",
+   "earliestRelease": {
+    "date": "1986",
+    "title": "Atavachron",
+    "country": "CA"
+   },
+   "titlesSeen": [
+    "Atavachron",
+    "Atavachron (remastered)"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -107,7 +502,40 @@
   "house": "king",
   "source": "hoyi-foreign-origin：甲（最早 1986 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Benny Carter",
+   "Carter, Benny",
+   "B. Carter",
+   "Bennett Lester Carter",
+   "Benny Carter 4",
+   "Benny Cater",
+   "Carter"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Benny Carter｜Jazz Giant｜1958",
+    "c95｜Benny Carter｜Jazz Giant｜1958"
+   ],
+   "matchedBy": {
+    "seed｜Benny Carter｜Jazz Giant｜1958": "等值",
+    "c95｜Benny Carter｜Jazz Giant｜1958": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "A Gentleman and His Music",
+   "firstReleaseDate": "1986",
+   "earliestRelease": {
+    "date": "1986",
+    "title": "A Gentleman and His Music",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "A Gentleman and His Music"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -118,7 +546,39 @@
   "house": "king",
   "source": "hoyi-foreign-origin：甲（最早 1986 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Phineas Newborn, Jr.",
+   "Newborn, Phineas, Jr."
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Phineas Newborn Jr.｜A World of Piano!｜1962",
+    "seed｜Phineas Newborn Jr.｜Here Is Phineas｜1956",
+    "seed｜Phineas Newborn Jr.｜Please Send Me Someone to Love｜1969",
+    "seed｜Phineas Newborn Jr.｜Harlem Blues｜1975"
+   ],
+   "matchedBy": {
+    "seed｜Phineas Newborn Jr.｜A World of Piano!｜1962": "等值",
+    "seed｜Phineas Newborn Jr.｜Here Is Phineas｜1956": "等值",
+    "seed｜Phineas Newborn Jr.｜Please Send Me Someone to Love｜1969": "等值",
+    "seed｜Phineas Newborn Jr.｜Harlem Blues｜1975": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "C Jam Blues",
+   "firstReleaseDate": "1986",
+   "earliestRelease": {
+    "date": "1986",
+    "title": "C Jam Blues",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "C Jam Blues"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -129,7 +589,30 @@
   "house": "king",
   "source": "hoyi-foreign-origin：不明（最早 1986 同日有 JP/US）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Ronnie Cuber",
+   "Cuber, Ronnie",
+   "Ronald Edward Cuber"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Two Brothers",
+   "firstReleaseDate": "1986",
+   "earliestRelease": {
+    "date": "1986",
+    "title": "Pin Point",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Pin Point",
+    "Two Brothers"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "pile": 4,
@@ -140,7 +623,31 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1986-11-01 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Billy Vaughn",
+   "Vaughn, Billy",
+   "Biilly Vaughn",
+   "Billy Vaughan",
+   "William Richard Vaughn"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "White Christmas",
+   "firstReleaseDate": "1986-11-01",
+   "earliestRelease": {
+    "date": "1986-11-01",
+    "title": "White Christmas",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "White Christmas"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -151,7 +658,27 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1986-06-21 JP）",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Fruitcake"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Summer Reminiscence",
+   "firstReleaseDate": "1986-06-21",
+   "earliestRelease": {
+    "date": "1986-06-21",
+    "title": "Summer Reminiscence",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Summer Reminiscence"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -162,7 +689,31 @@
   "house": "King",
   "source": "c-182 第 5171 條",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Bobby Lyle Trio",
+   "Lyle, Bobby, Trio"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Night Breeze",
+   "firstReleaseDate": "1987",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "Night Breeze",
+    "country": "DE"
+   },
+   "titlesSeen": [
+    "Night Breeze"
+   ],
+   "note": ""
+  },
+  "priorRulingHits": [
+   "c182：## 5171　⚠ ⚠ 退：`Bobby Lyle Trio —《Night Breeze》`（rg 77729d00）——**外國藝人那一關，演奏側 0/4；`Bobby Lyle Trio` 是 Group 型實體沒設 area，列舉層的 `foreignArtist` 因此"
+  ]
  },
  {
   "pile": 4,
@@ -173,7 +724,72 @@
   "house": "Polydor JP",
   "source": "c-191 第 6662 條",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Chet Baker Quartet",
+   "Baker, Chet, Quartet"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Chet Baker｜Chet Baker Sings｜1954",
+    "seed｜Chet Baker｜Chet｜1959",
+    "seed｜Chet Baker｜The Trumpet Artistry of Chet Baker｜1955",
+    "seed｜Chet Baker｜Quartet: Russ Freeman Chet Baker｜1957",
+    "seed｜Chet Baker｜Gerry Mulligan Quartet｜1955",
+    "seed｜Chet Baker｜The Touch of Your Lips｜1980",
+    "seed｜Chet Baker Trio｜Daybreak｜1980",
+    "seed｜Chet Baker Quartet｜When Sunny Gets Blue｜1986",
+    "seed｜Chet Baker｜Chet Baker Live in Tokyo｜2000",
+    "seed｜Chet Baker｜Strollin'｜1986",
+    "seed｜Chet Baker｜Peace｜1982",
+    "seed｜Chet Baker｜The Legacy, Volume 1｜1995",
+    "seed｜Chet Baker｜Chet Baker Sings It Could Happen to You｜1958",
+    "seed｜Chet Baker｜Chet Baker in New York｜1959",
+    "seed｜Chet Baker｜She Was Too Good to Me｜1974",
+    "seed｜Chet Baker｜Chet Baker Sings and Plays｜1955",
+    "c131｜Chet Baker｜She Was Too Good to Me｜1974",
+    "c136｜Chet Baker｜Chet Baker Sings and Plays｜1955",
+    "c152｜Chet Baker｜Embraceable You｜1995"
+   ],
+   "matchedBy": {
+    "seed｜Chet Baker｜Chet Baker Sings｜1954": "削編制後綴",
+    "seed｜Chet Baker｜Chet｜1959": "削編制後綴",
+    "seed｜Chet Baker｜The Trumpet Artistry of Chet Baker｜1955": "削編制後綴",
+    "seed｜Chet Baker｜Quartet: Russ Freeman Chet Baker｜1957": "削編制後綴",
+    "seed｜Chet Baker｜Gerry Mulligan Quartet｜1955": "削編制後綴",
+    "seed｜Chet Baker｜The Touch of Your Lips｜1980": "削編制後綴",
+    "seed｜Chet Baker Trio｜Daybreak｜1980": "削編制後綴",
+    "seed｜Chet Baker Quartet｜When Sunny Gets Blue｜1986": "等值",
+    "seed｜Chet Baker｜Chet Baker Live in Tokyo｜2000": "削編制後綴",
+    "seed｜Chet Baker｜Strollin'｜1986": "削編制後綴",
+    "seed｜Chet Baker｜Peace｜1982": "削編制後綴",
+    "seed｜Chet Baker｜The Legacy, Volume 1｜1995": "削編制後綴",
+    "seed｜Chet Baker｜Chet Baker Sings It Could Happen to You｜1958": "削編制後綴",
+    "seed｜Chet Baker｜Chet Baker in New York｜1959": "削編制後綴",
+    "seed｜Chet Baker｜She Was Too Good to Me｜1974": "削編制後綴",
+    "seed｜Chet Baker｜Chet Baker Sings and Plays｜1955": "削編制後綴",
+    "c131｜Chet Baker｜She Was Too Good to Me｜1974": "削編制後綴",
+    "c136｜Chet Baker｜Chet Baker Sings and Plays｜1955": "削編制後綴",
+    "c152｜Chet Baker｜Embraceable You｜1995": "削編制後綴"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Singin' in the Midnight",
+   "firstReleaseDate": "1987",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "Singin' in the Midnight",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Singin' in the Midnight"
+   ],
+   "note": ""
+  },
+  "priorRulingHits": [
+   "c191：## 6662　⚠ ⚠ 退：`Chet Baker Quartet —《Singin' in the Midnight》`（rg d36614ce）——**外國藝人那一關：可判定 3 票只有 1 票在日本側（企劃那一票兩方各半、不可判定）**"
+  ]
  },
  {
   "pile": 4,
@@ -184,7 +800,40 @@
   "house": "Trio／Whynot",
   "source": "c-191 第 6663 條",
   "hint": "",
-  "g": "a"
+  "g": "a",
+  "artistVariants": [
+   "Kenny Barron Trio",
+   "Barron, Kenny, Trio"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Kenny Barron｜What If?｜1986",
+    "seed｜Kenny Barron｜Scratch｜1985",
+    "c169｜Kenny Barron Quintet｜Concentric Circles｜2018"
+   ],
+   "matchedBy": {
+    "seed｜Kenny Barron｜What If?｜1986": "削編制後綴",
+    "seed｜Kenny Barron｜Scratch｜1985": "削編制後綴",
+    "c169｜Kenny Barron Quintet｜Concentric Circles｜2018": "削編制後綴"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Live",
+   "firstReleaseDate": "1987",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "Live",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Live"
+   ],
+   "note": ""
+  },
+  "priorRulingHits": [
+   "c191：## 6663　⚠ ⚠ 退：`Kenny Barron Trio —《Live》`（rg 61a9a757）——**外國藝人那一關四項 2/4；⚠ 而本盤是 1983 年 Whynot《Imo Live》的 1987 年再發：年份 1987 → 1983、盤名 `Live` → "
+  ]
  },
  {
   "pile": 4,
@@ -195,7 +844,73 @@
   "house": "king",
   "source": "hoyi-foreign-origin：甲（最早 1987 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "The Super Quartet of Mal Waldron feat. Steve Lacy",
+   "Mal Waldron Quartet",
+   "Steve Lacy",
+   "Lacy, Steve",
+   "Steven Norman Lackritz",
+   "スティーブ・レイシー"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Steve Lacy｜The Straight Horn of Steve Lacy｜1960",
+    "seed｜Steve Lacy｜Evidence｜1962",
+    "seed｜Mal Waldron｜The Quest｜1962",
+    "seed｜Mal Waldron｜Free at Last｜1969",
+    "seed｜Steve Lacy｜Gemini Rights｜2022",
+    "seed｜Steve Lacy｜Apollo XXI｜2019",
+    "seed｜Steve Lacy Trio｜The Window｜1988",
+    "seed｜Mal Waldron & Steve Lacy｜Sempre amore｜1987",
+    "seed｜Steve Lacy｜Dreams｜1975",
+    "seed｜Steve Lacy｜Lapis｜1971",
+    "seed｜Steve Lacy｜The Owl｜1979",
+    "seed｜Mal Waldron｜Left Alone｜1959",
+    "seed｜Mal Waldron｜Mal/2｜1957",
+    "seed｜Mal Waldron｜Impressions｜1959",
+    "seed｜Steve Lacy & Michael Smith｜Sidelines｜1977",
+    "seed｜Steve Lacy｜Oh yeah?｜2026",
+    "c112｜Steve Lacy｜Oh yeah?｜2026",
+    "c176｜Steve Lacy, 高橋悠治, 小杉武久｜Distant Voices｜1976",
+    "c86｜Steve Lacy & Michael Smith｜Sidelines｜1977"
+   ],
+   "matchedBy": {
+    "seed｜Steve Lacy｜The Straight Horn of Steve Lacy｜1960": "等值",
+    "seed｜Steve Lacy｜Evidence｜1962": "等值",
+    "seed｜Mal Waldron｜The Quest｜1962": "削編制後綴",
+    "seed｜Mal Waldron｜Free at Last｜1969": "削編制後綴",
+    "seed｜Steve Lacy｜Gemini Rights｜2022": "等值",
+    "seed｜Steve Lacy｜Apollo XXI｜2019": "等值",
+    "seed｜Steve Lacy Trio｜The Window｜1988": "聯名內含",
+    "seed｜Mal Waldron & Steve Lacy｜Sempre amore｜1987": "分隔符切段",
+    "seed｜Steve Lacy｜Dreams｜1975": "等值",
+    "seed｜Steve Lacy｜Lapis｜1971": "等值",
+    "seed｜Steve Lacy｜The Owl｜1979": "等值",
+    "seed｜Mal Waldron｜Left Alone｜1959": "削編制後綴",
+    "seed｜Mal Waldron｜Mal/2｜1957": "削編制後綴",
+    "seed｜Mal Waldron｜Impressions｜1959": "削編制後綴",
+    "seed｜Steve Lacy & Michael Smith｜Sidelines｜1977": "分隔符切段",
+    "seed｜Steve Lacy｜Oh yeah?｜2026": "等值",
+    "c112｜Steve Lacy｜Oh yeah?｜2026": "等值",
+    "c176｜Steve Lacy, 高橋悠治, 小杉武久｜Distant Voices｜1976": "分隔符切段",
+    "c86｜Steve Lacy & Michael Smith｜Sidelines｜1977": "分隔符切段"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Live at Sweet Basil",
+   "firstReleaseDate": "1987",
+   "earliestRelease": {
+    "date": "1987",
+    "title": "Live at Sweet Basil",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Live at Sweet Basil"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -206,7 +921,30 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1987-10-21 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Salena Jones",
+   "Jones, Salena",
+   "Joan Elizabeth Shaw",
+   "Selena Jones"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "The Song of Life",
+   "firstReleaseDate": "1987-10-21",
+   "earliestRelease": {
+    "date": "1987-10-21",
+    "title": "The Song of Life",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "The Song of Life"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -217,7 +955,30 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1987-10-21 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Salena Jones",
+   "Jones, Salena",
+   "Joan Elizabeth Shaw",
+   "Selena Jones"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Ballad With Luv",
+   "firstReleaseDate": "1987-10-21",
+   "earliestRelease": {
+    "date": "1987-10-21",
+    "title": "Ballad With Luv",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Ballad With Luv"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -228,7 +989,28 @@
   "house": "columbia",
   "source": "hoyi-foreign-origin：甲（最早 1988-10 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Steps",
+   "Steps Ahead"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "A Collection: Step by Step",
+   "firstReleaseDate": "1988-10",
+   "earliestRelease": {
+    "date": "1988-10",
+    "title": "Step By Step",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Step By Step"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  },
  {
   "pile": 4,
@@ -239,7 +1021,78 @@
   "house": "king",
   "source": "hoyi-foreign-origin：不明（最早 1988 同日有 XE/JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Chet Baker",
+   "Baker, Chet",
+   "Baker Chet",
+   "Chet",
+   "Chey Baker"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Chet Baker｜Chet Baker Sings｜1954",
+    "seed｜Chet Baker｜Chet｜1959",
+    "seed｜Chet Baker｜The Trumpet Artistry of Chet Baker｜1955",
+    "seed｜Chet Baker｜Quartet: Russ Freeman Chet Baker｜1957",
+    "seed｜Chet Baker｜Gerry Mulligan Quartet｜1955",
+    "seed｜Chet Baker｜The Touch of Your Lips｜1980",
+    "seed｜Chet Baker & Paul Bley｜Diane｜1985",
+    "seed｜Chet Baker Trio｜Daybreak｜1980",
+    "seed｜Chet Baker Quartet｜When Sunny Gets Blue｜1986",
+    "seed｜Chet Baker｜Chet Baker Live in Tokyo｜2000",
+    "seed｜Chet Baker｜Strollin'｜1986",
+    "seed｜Chet Baker｜Peace｜1982",
+    "seed｜Chet Baker｜The Legacy, Volume 1｜1995",
+    "seed｜Chet Baker｜Chet Baker Sings It Could Happen to You｜1958",
+    "seed｜Chet Baker｜Chet Baker in New York｜1959",
+    "seed｜Chet Baker & Art Pepper｜Playboys｜1958",
+    "seed｜Chet Baker｜She Was Too Good to Me｜1974",
+    "seed｜Chet Baker｜Chet Baker Sings and Plays｜1955",
+    "c131｜Chet Baker & Art Pepper｜Playboys｜1958",
+    "c131｜Chet Baker｜She Was Too Good to Me｜1974",
+    "c136｜Chet Baker｜Chet Baker Sings and Plays｜1955",
+    "c152｜Chet Baker｜Embraceable You｜1995"
+   ],
+   "matchedBy": {
+    "seed｜Chet Baker｜Chet Baker Sings｜1954": "等值",
+    "seed｜Chet Baker｜Chet｜1959": "等值",
+    "seed｜Chet Baker｜The Trumpet Artistry of Chet Baker｜1955": "等值",
+    "seed｜Chet Baker｜Quartet: Russ Freeman Chet Baker｜1957": "等值",
+    "seed｜Chet Baker｜Gerry Mulligan Quartet｜1955": "等值",
+    "seed｜Chet Baker｜The Touch of Your Lips｜1980": "等值",
+    "seed｜Chet Baker & Paul Bley｜Diane｜1985": "聯名內含",
+    "seed｜Chet Baker Trio｜Daybreak｜1980": "聯名內含",
+    "seed｜Chet Baker Quartet｜When Sunny Gets Blue｜1986": "聯名內含",
+    "seed｜Chet Baker｜Chet Baker Live in Tokyo｜2000": "等值",
+    "seed｜Chet Baker｜Strollin'｜1986": "等值",
+    "seed｜Chet Baker｜Peace｜1982": "等值",
+    "seed｜Chet Baker｜The Legacy, Volume 1｜1995": "等值",
+    "seed｜Chet Baker｜Chet Baker Sings It Could Happen to You｜1958": "等值",
+    "seed｜Chet Baker｜Chet Baker in New York｜1959": "等值",
+    "seed｜Chet Baker & Art Pepper｜Playboys｜1958": "聯名內含",
+    "seed｜Chet Baker｜She Was Too Good to Me｜1974": "等值",
+    "seed｜Chet Baker｜Chet Baker Sings and Plays｜1955": "等值",
+    "c131｜Chet Baker & Art Pepper｜Playboys｜1958": "聯名內含",
+    "c131｜Chet Baker｜She Was Too Good to Me｜1974": "等值",
+    "c136｜Chet Baker｜Chet Baker Sings and Plays｜1955": "等值",
+    "c152｜Chet Baker｜Embraceable You｜1995": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Memories: Chet Baker in Tokyo",
+   "firstReleaseDate": "1988-09-21",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "Memories: Chet Baker in Tokyo",
+    "country": "XE"
+   },
+   "titlesSeen": [
+    "Memories: Chet Baker in Tokyo"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -250,7 +1103,30 @@
   "house": "king",
   "source": "hoyi-foreign-origin：甲（最早 1988 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Lorez Alexandria",
+   "Alexandria, Lorez",
+   "Lorez Alexander",
+   "Lorez Alexendria"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Singing Songs Everyone Knows",
+   "firstReleaseDate": "1988",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "Singing Songs Everyone Knows",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Singing Songs Everyone Knows"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -261,7 +1137,39 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1988 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Richard Clayderman",
+   "Clayderman, Richard",
+   "Philippe Pagès",
+   "Philippe Robert Louis Pagès",
+   "Richard Clauderman",
+   "Richard Claydermann",
+   "Richard Cleyderman",
+   "Richard Clyderman",
+   "リチャード・グレイダーマン",
+   "理查",
+   "理查.克莱德门",
+   "理查德·克莱得曼",
+   "理查德·克莱德曼"
+  ],
+  "poolRecheck": {
+   "status": "池中查無此藝人（等值＋前綴＋聯名內含三道，比對日 2026-09-28、池 22468 列／139 批卡單）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Eléana",
+   "firstReleaseDate": "1988",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "Eléana",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Eléana"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -272,7 +1180,30 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：不明（最早 1988 同日有 JP/US）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "The Bill Holman Band",
+   "Bill Holman",
+   "Holman, Bill",
+   "Willis Leonard Holman"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Bill Holman Band",
+   "firstReleaseDate": "1988",
+   "earliestRelease": {
+    "date": "1988",
+    "title": "Bill Holman Band",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Bill Holman Band"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -283,7 +1214,30 @@
   "house": "Denon",
   "source": "c-191 第 6693 條",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Buster Williams Trio"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Tokudo",
+   "firstReleaseDate": "1989",
+   "earliestRelease": {
+    "date": "1989",
+    "title": "Tokudo",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Tokudo"
+   ],
+   "note": ""
+  },
+  "priorRulingHits": [
+   "c191：## 6693　⚠ ⚠ 退：`Buster Williams Trio —《Tokudo》`（rg 9eac7445）——**外國藝人那一關四項 2/4；⚠ 年份 1989 → 1978（slice 與 MB 是 1989 年的 CD 再發）**"
+  ]
  },
  {
   "pile": 4,
@@ -294,7 +1248,40 @@
   "house": "alfa",
   "source": "hoyi-foreign-origin：甲（最早 1989-09-10 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Great Jazz Trio",
+   "The Great Jazz Trio",
+   "Great Jazz Trio, The"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜The Great Jazz Trio｜At the Village Vanguard｜1978",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979",
+    "c185｜渡辺貞夫 with The Great Jazz Trio｜I'm Old Fashioned｜1976",
+    "c189｜大野えり with The Great Jazz Trio｜Easy to Love｜1984"
+   ],
+   "matchedBy": {
+    "seed｜The Great Jazz Trio｜At the Village Vanguard｜1978": "等值",
+    "c177｜渡辺貞夫 with The Great Jazz Trio｜Bird of Paradise｜1979": "聯名內含",
+    "c185｜渡辺貞夫 with The Great Jazz Trio｜I'm Old Fashioned｜1976": "聯名內含",
+    "c189｜大野えり with The Great Jazz Trio｜Easy to Love｜1984": "聯名內含"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Great Standards, Vol.1",
+   "firstReleaseDate": "1989-09-10",
+   "earliestRelease": {
+    "date": "1989-09-10",
+    "title": "Great Standards, Vol.1",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Great Standards, Vol.1"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -305,7 +1292,27 @@
   "house": "columbia",
   "source": "hoyi-foreign-origin：甲（最早 1989-05-01 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "L.A. Workshop"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Norwegian Wood II",
+   "firstReleaseDate": "1989-05-01",
+   "earliestRelease": {
+    "date": "1989-05-01",
+    "title": "Norwegian Wood II",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Norwegian Wood II"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -316,7 +1323,155 @@
   "house": "king",
   "source": "hoyi-foreign-origin：甲（最早 1989-05-10 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Art Blakey & The Jazz Messengers",
+   "Blakey, Art & The Jazz Messengers",
+   "Art Blakely And The Jazz Messengers",
+   "Art Blakely and His Jazz Messengers",
+   "Art Blakey & The Jazz Messenge",
+   "Art Blakey & The Messengers",
+   "Art Blakey And His Jazz Messengers",
+   "Art Blakey And The Jazz Messengers",
+   "Art Blakey and The Jazz Messen",
+   "Art Blakey and the Messangers",
+   "Art Blakey and the Messengers",
+   "Art Blakey's Jazz Messengers",
+   "Art Blakey's Messengers",
+   "Art Blankey's Jazz Messengers",
+   "Jazz Messengers",
+   "The Jazz Messengers"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Art Blakey and the Jazz Messengers｜Moanin'｜1958",
+    "seed｜Art Blakey and the Jazz Messengers｜A Night at Birdland, Vol. 1｜1954",
+    "seed｜Art Blakey and the Jazz Messengers｜Free for All｜1964",
+    "seed｜Art Blakey｜Child's Dance｜1972",
+    "seed｜Art Blakey & The Jazz Messengers｜Not Yet｜1988",
+    "seed｜Art Blakey & The Jazz Messengers｜I Get A Kick Out Of Bu｜1988",
+    "seed｜Art Blakey and the Jazz Messengers｜A Night in Tunisia｜1961",
+    "seed｜Art Blakey and the Jazz Messengers｜Caravan｜1963",
+    "seed｜Art Blakey and the Jazz Messengers｜Ugetsu｜1963",
+    "seed｜Art Blakey & The Jazz Messengers｜The Big Beat｜1960",
+    "seed｜Art Blakey & The Jazz Messengers｜Buhaina's Delight｜1963",
+    "seed｜Art Blakey & The Jazz Messengers｜Indestructible｜1966",
+    "seed｜Horace Silver And The Jazz Messengers｜Horace Silver And The Jazz Messengers｜1955",
+    "seed｜Art Blakey and the Jazz Messengers｜The Jazz Messengers at the Cafe Bohemia, Volume 2｜1956",
+    "seed｜Art Blakey and the Jazz Messengers｜The Jazz Messengers at the Cafe Bohemia, Volume 1｜1956",
+    "seed｜Art Blakey and the Jazz Messengers｜A Night at Birdland, Volume 2｜1956",
+    "seed｜Art Blakey｜Orgy in Rhythm, Volume Two｜1957",
+    "seed｜Art Blakey｜Orgy in Rhythm, Volume One｜1957",
+    "seed｜Art Blakey｜Holiday for Skins, Volume 1｜1959",
+    "seed｜Art Blakey｜Holiday for Skins, Volume 2｜1959",
+    "seed｜Art Blakey and the Jazz Messengers｜At the Jazz Corner of the World｜1959",
+    "seed｜Art Blakey and the Jazz Messengers｜Mosaic｜1962",
+    "seed｜Art Blakey and the Jazz Messengers｜Meet You at the Jazz Corner of the World, Volume 1｜1961",
+    "seed｜Art Blakey and the Jazz Messengers｜Meet You at the Jazz Corner of the World, Volume 2｜1962",
+    "seed｜Art Blakey｜The African Beat｜1962",
+    "seed｜Art Blakey and the Jazz Messengers｜Three Blind Mice｜1962",
+    "seed｜Art Blakey and the Jazz Messengers｜The Freedom Rider｜1964",
+    "seed｜Art Blakey and the Jazz Messengers｜Like Someone in Love｜1967",
+    "seed｜Art Blakey and the Jazz Messengers｜The Witch Doctor｜1967",
+    "seed｜Art Blakey and the Jazz Messengers｜Roots & Herbs｜1970",
+    "seed｜Art Blakey｜Live Messengers｜1978",
+    "seed｜Art Blakey and the Jazz Messengers｜Africaine｜1981",
+    "c136｜Art Blakey and the Jazz Messengers｜The Jazz Messengers at the Cafe Bohemia, Volume 2｜1956",
+    "c136｜Art Blakey and the Jazz Messengers｜The Jazz Messengers at the Cafe Bohemia, Volume 1｜1956",
+    "c136｜Art Blakey and the Jazz Messengers｜A Night at Birdland, Volume 2｜1956",
+    "c136｜Art Blakey｜Orgy in Rhythm, Volume Two｜1957",
+    "c137｜Art Blakey｜Orgy in Rhythm, Volume One｜1957",
+    "c137｜Art Blakey｜Holiday for Skins, Volume 1｜1959",
+    "c137｜Art Blakey｜Holiday for Skins, Volume 2｜1959",
+    "c137｜Art Blakey and the Jazz Messengers｜At the Jazz Corner of the World｜1959",
+    "c138｜Art Blakey and the Jazz Messengers｜Mosaic｜1962",
+    "c138｜Art Blakey and the Jazz Messengers｜Meet You at the Jazz Corner of the World, Volume 1｜1961",
+    "c139｜Art Blakey and the Jazz Messengers｜Meet You at the Jazz Corner of the World, Volume 2｜1962",
+    "c139｜Art Blakey｜The African Beat｜1962",
+    "c139｜Art Blakey and the Jazz Messengers｜Three Blind Mice｜1962",
+    "c140｜Art Blakey and the Jazz Messengers｜The Freedom Rider｜1964",
+    "c140｜Art Blakey and the Jazz Messengers｜Like Someone in Love｜1967",
+    "c141｜Art Blakey and the Jazz Messengers｜The Witch Doctor｜1967",
+    "c142｜Art Blakey and the Jazz Messengers｜Roots & Herbs｜1970",
+    "c144｜Art Blakey｜Live Messengers｜1978",
+    "c145｜Art Blakey and the Jazz Messengers｜Africaine｜1981",
+    "c149｜Art Blakey and the Jazz Messengers｜Three Blind Mice, Volume 2｜1990",
+    "c156｜Art Blakey｜Drums Around the Corner｜1999",
+    "c164｜Art Blakey & The Jazz Messengers｜Just Coolin'｜2020",
+    "c165｜Art Blakey & The Jazz Messengers｜First Flight to Tokyo: The Lost 1961 Recordings｜2021"
+   ],
+   "matchedBy": {
+    "seed｜Art Blakey and the Jazz Messengers｜Moanin'｜1958": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜A Night at Birdland, Vol. 1｜1954": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜Free for All｜1964": "等值",
+    "seed｜Art Blakey｜Child's Dance｜1972": "分隔符切段",
+    "seed｜Art Blakey & The Jazz Messengers｜Not Yet｜1988": "等值",
+    "seed｜Art Blakey & The Jazz Messengers｜I Get A Kick Out Of Bu｜1988": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜A Night in Tunisia｜1961": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜Caravan｜1963": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜Ugetsu｜1963": "等值",
+    "seed｜Art Blakey & The Jazz Messengers｜The Big Beat｜1960": "等值",
+    "seed｜Art Blakey & The Jazz Messengers｜Buhaina's Delight｜1963": "等值",
+    "seed｜Art Blakey & The Jazz Messengers｜Indestructible｜1966": "等值",
+    "seed｜Horace Silver And The Jazz Messengers｜Horace Silver And The Jazz Messengers｜1955": "聯名內含",
+    "seed｜Art Blakey and the Jazz Messengers｜The Jazz Messengers at the Cafe Bohemia, Volume 2｜1956": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜The Jazz Messengers at the Cafe Bohemia, Volume 1｜1956": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜A Night at Birdland, Volume 2｜1956": "等值",
+    "seed｜Art Blakey｜Orgy in Rhythm, Volume Two｜1957": "分隔符切段",
+    "seed｜Art Blakey｜Orgy in Rhythm, Volume One｜1957": "分隔符切段",
+    "seed｜Art Blakey｜Holiday for Skins, Volume 1｜1959": "分隔符切段",
+    "seed｜Art Blakey｜Holiday for Skins, Volume 2｜1959": "分隔符切段",
+    "seed｜Art Blakey and the Jazz Messengers｜At the Jazz Corner of the World｜1959": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜Mosaic｜1962": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜Meet You at the Jazz Corner of the World, Volume 1｜1961": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜Meet You at the Jazz Corner of the World, Volume 2｜1962": "等值",
+    "seed｜Art Blakey｜The African Beat｜1962": "分隔符切段",
+    "seed｜Art Blakey and the Jazz Messengers｜Three Blind Mice｜1962": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜The Freedom Rider｜1964": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜Like Someone in Love｜1967": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜The Witch Doctor｜1967": "等值",
+    "seed｜Art Blakey and the Jazz Messengers｜Roots & Herbs｜1970": "等值",
+    "seed｜Art Blakey｜Live Messengers｜1978": "分隔符切段",
+    "seed｜Art Blakey and the Jazz Messengers｜Africaine｜1981": "等值",
+    "c136｜Art Blakey and the Jazz Messengers｜The Jazz Messengers at the Cafe Bohemia, Volume 2｜1956": "等值",
+    "c136｜Art Blakey and the Jazz Messengers｜The Jazz Messengers at the Cafe Bohemia, Volume 1｜1956": "等值",
+    "c136｜Art Blakey and the Jazz Messengers｜A Night at Birdland, Volume 2｜1956": "等值",
+    "c136｜Art Blakey｜Orgy in Rhythm, Volume Two｜1957": "分隔符切段",
+    "c137｜Art Blakey｜Orgy in Rhythm, Volume One｜1957": "分隔符切段",
+    "c137｜Art Blakey｜Holiday for Skins, Volume 1｜1959": "分隔符切段",
+    "c137｜Art Blakey｜Holiday for Skins, Volume 2｜1959": "分隔符切段",
+    "c137｜Art Blakey and the Jazz Messengers｜At the Jazz Corner of the World｜1959": "等值",
+    "c138｜Art Blakey and the Jazz Messengers｜Mosaic｜1962": "等值",
+    "c138｜Art Blakey and the Jazz Messengers｜Meet You at the Jazz Corner of the World, Volume 1｜1961": "等值",
+    "c139｜Art Blakey and the Jazz Messengers｜Meet You at the Jazz Corner of the World, Volume 2｜1962": "等值",
+    "c139｜Art Blakey｜The African Beat｜1962": "分隔符切段",
+    "c139｜Art Blakey and the Jazz Messengers｜Three Blind Mice｜1962": "等值",
+    "c140｜Art Blakey and the Jazz Messengers｜The Freedom Rider｜1964": "等值",
+    "c140｜Art Blakey and the Jazz Messengers｜Like Someone in Love｜1967": "等值",
+    "c141｜Art Blakey and the Jazz Messengers｜The Witch Doctor｜1967": "等值",
+    "c142｜Art Blakey and the Jazz Messengers｜Roots & Herbs｜1970": "等值",
+    "c144｜Art Blakey｜Live Messengers｜1978": "分隔符切段",
+    "c145｜Art Blakey and the Jazz Messengers｜Africaine｜1981": "等值",
+    "c149｜Art Blakey and the Jazz Messengers｜Three Blind Mice, Volume 2｜1990": "等值",
+    "c156｜Art Blakey｜Drums Around the Corner｜1999": "分隔符切段",
+    "c164｜Art Blakey & The Jazz Messengers｜Just Coolin'｜2020": "等值",
+    "c165｜Art Blakey & The Jazz Messengers｜First Flight to Tokyo: The Lost 1961 Recordings｜2021": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "New Year's Eve at Sweet Basil",
+   "firstReleaseDate": "1989-05-10",
+   "earliestRelease": {
+    "date": "1989-05-10",
+    "title": "New Year's Eve at Sweet Basil",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "New Year's Eve at Sweet Basil"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -327,7 +1482,30 @@
   "house": "king",
   "source": "hoyi-foreign-origin：甲（最早 1989 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "George Young",
+   "Young, George",
+   "George Ernest Opalisky",
+   "George Opalisky"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Yesterday and Today",
+   "firstReleaseDate": "1989",
+   "earliestRelease": {
+    "date": "1989",
+    "title": "Yesterday and Today",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Yesterday and Today"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -338,7 +1516,29 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1989 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Phil Upchurch",
+   "Upchurch, Phil",
+   "Phillip Upchurch"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Tribute To Otis Redding",
+   "firstReleaseDate": "1989",
+   "earliestRelease": {
+    "date": "1989",
+    "title": "Tribute To Otis Redding",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Tribute To Otis Redding"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -349,7 +1549,30 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1989 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Salena Jones",
+   "Jones, Salena",
+   "Joan Elizabeth Shaw",
+   "Selena Jones"
+  ],
+  "poolRecheck": {
+   "status": "⚠ ⚠ **變體全是羅馬字，等於沒查過**——務必自己查出漢字名再掃一次池（第 1868-B 條）｜⚠ 這一格不是「漏了」也不是「外國人」：MB 那邊是「未重算」，**日本人掛羅馬字名與外國藝人兩種都可能**，照第 4106 條四項自己判（第 1967-B 條）",
+   "artistAlbumsInPool": []
+  },
+  "titleCheck": {
+   "rgTitle": "Let It Be",
+   "firstReleaseDate": "1989",
+   "earliestRelease": {
+    "date": "1989",
+    "title": "Let It Be",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Let It Be"
+   ],
+   "note": ""
+  }
  },
  {
   "pile": 4,
@@ -360,6 +1583,50 @@
   "house": "victor",
   "source": "hoyi-foreign-origin：甲（最早 1989 JP）",
   "hint": "",
-  "g": "b"
+  "g": "b",
+  "artistVariants": [
+   "Sergei Kuryokhin",
+   "Сергей Курёхин",
+   "Kuryokhin, Sergey",
+   "Kuriokhin",
+   "Sergei Kurehin",
+   "Sergei Kuriokhin",
+   "Sergej Kurehin",
+   "Sergey Anatolyevich Kuryokhin",
+   "Sergey Kurehin",
+   "Sergey Kuryokhin",
+   "The Captain",
+   "Сергей Анатольевич Курёхин",
+   "谢尔盖·古廖金"
+  ],
+  "poolRecheck": {
+   "status": "同藝人在池中，盤名不同——**逐張人工比**",
+   "artistAlbumsInPool": [
+    "seed｜Сергей Курёхин｜The Ways of Freedom｜1981",
+    "seed｜Сергей Курёхин｜Introduction In Pop Mechanics｜1987",
+    "c53｜Сергей Курёхин｜The Ways of Freedom｜1981",
+    "c53｜Сергей Курёхин｜Introduction In Pop Mechanics｜1987"
+   ],
+   "matchedBy": {
+    "seed｜Сергей Курёхин｜The Ways of Freedom｜1981": "等值",
+    "seed｜Сергей Курёхин｜Introduction In Pop Mechanics｜1987": "等值",
+    "c53｜Сергей Курёхин｜The Ways of Freedom｜1981": "等值",
+    "c53｜Сергей Курёхин｜Introduction In Pop Mechanics｜1987": "等值"
+   }
+  },
+  "titleCheck": {
+   "rgTitle": "Полинезия",
+   "firstReleaseDate": "1989",
+   "earliestRelease": {
+    "date": "1989",
+    "title": "Polynesia, Introduction to the History",
+    "country": "JP"
+   },
+   "titlesSeen": [
+    "Polynesia, Introduction to the History",
+    "Полинезия"
+   ],
+   "note": "⚠ **RG title 與最早 release 的 title 不同——很可能 RG 取了再發標題，逐張核**"
+  }
  }
 ]
