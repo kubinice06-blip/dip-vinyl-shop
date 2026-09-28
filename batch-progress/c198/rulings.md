@@ -194,3 +194,207 @@
 3. **#3 盤名 `Gaddabout`／#4 盤名 `Dr. Jeckyle`**（第 7980 條）——兩張方向相反、判準同一條。
 
 **編號區間結算**：本節用到 **7976–7993（共 18 條），未越界（b 組 8006–8035）**；7994–8005 留空。
+
+
+
+# b 組（7 張｜第 4 堆重篩第二輪：外國藝人的日本原盤 1981–1989；slice 的 `house`：victor 6・columbia 1；⚠ **7 筆逐筆以 Discogs 最早那一版的 `labels`／`companies`／`notes`（℗ 行、`Licensed From`／`Licensed To`／`Licensed Through`、`Recorded At`、JASRAC）＋ `versions` 全表核過原盤國別，「日本是原盤」7/7 成立**）｜策展層｜2026-09-28
+
+批次 c-198｜b 組 7 張｜輸入 `batch-progress/c198/slice.json` 的 `g === "b"`｜輸出 `batch-progress/c198/prop-b.json`（每筆帶 `pile: 4`，原樣照抄 slice）
+判準照 `CURATION-BRIEF-hoyi.md` 第〇節第 4 堆（含重篩第二輪那一段）→ `CURATION-BRIEF-jp2.md` 全檔 → `CURATION-BRIEF-jp1.md` 全檔 → `CURATION-BRIEF-bluenote-post1985.md`（含附錄二）→ `CURATION-BRIEF-bluenote.md` → `CURATION-BRIEF-c131.md`、`CURATION-BRIEF-c67plus.md` 附錄（§1，本組未用），
+＋ 主線第 1934-B…2011-B 條（重篩第二輪依據：第 2011-B 條第二節）＋ c-196／c-197 兩組策展段（先例：c-196 b 第 7580 條《The Bill Holman Band》、第 7581 條、c-195 a 第 7426 條、c-183 b 第 5703 條）＋ **本批 a 組已落地的第 7976–7993 條與 `prop-a.json`（只讀）**＋ `audits/foreign-artist-japan-productions.md`／`audits/between-the-lines-candidates.md`／`audits/pool-artist-name-splits.md`／`enum/name-corrections.json`。⚠ **引用裁定一律寫成「c-1XX 第 NNNN 條」**。
+⚠ **本段 append 在 a 組段之後，主線骨架與 a 組段一字未動**（寫前 `git show HEAD:` 與 `ls` 兩者都看過：兩者皆 196 行、a 組 20 個 `## ` 標題俱在）。
+**本組編號區間 8006–8035（本段用到 8006–8024）。**
+
+---
+
+## 8006　（**總表**）：**7 張＝收 7 ／ 退 0**（全部第 4 堆：收 7 退 0）
+
+**收件率 100%。** 本組是 **JVC（Victor）的 `JD-` 美國出口線六張 ＋ 日本コロムビア Better Days 一張**：MB 只建了美國版（或把十八年後的重製數位版填成原盤年），初篩因此判「乙」；**Discogs 一打，七張的美國／歐洲版 ℗ 全寫日本公司，四張逐字寫「Licensed … Victor Musical Industries, Inc. Japan to GRP」或 `Licensed From: Victor`／`JJ Records`**。
+
+| # | 掛名 —《盤名》（slice → 判） | 年 | `house` → 原壓字標 | 處置 | 依據（條號） |
+|---:|---|---:|---|---|---|
+| 1 | Steps Ahead →`Steps` —《Smokin' in the Pit》→《Smokin' In The Pit》 | 1981 | columbia → `Better Days YB-7010~11-ND` | 收 | ℗ Nippon Columbia、東京 Pit Inn 實況；美國版是 1999 年 NYC 重製；**`live: true`**；掛名照盤面（8010） |
+| 2 | Gary Burton —《Gary Burton and the Berklee All-Stars》 | 1986 | victor → `JVC VDJ-1024` | 收 | 東京 JVC 青山錄音、℗ VMI、1986-01-21；美國 CD `Licensed Through: GRP` |
+| 3 | Carmen McRae —《As Time Goes By: Carmen McRae Alone Live at the Dug》 | 1987→**1974** | victor → `Victor SMJ-6034` | 收 | **年份改判**（MB 沒建 1974 日本原壓，8009）；美國 Catalyst `Licensed From: JJ Records`、瑞典 Amigo「Licensed … by Victor Co., Japan」；**`live: true`** |
+| 4 | Oscar Castro-Neves —《Brazilian Scandals》 | 1987 | victor → `JVC VDP-1204` | 收 | 「℗ 1987 Victor Music Industries INC. TOKYO, JAPAN」；美國版 ℗ Victor；② 款字面成立→人工判收（8016） |
+| 5 | Ernie Watts Quartet —《Ernie Watts Quartet》 | 1988 | victor → `JVC VDJ-1145` | 收 | 五版 ℗ 全是 Victor Musical Industries；歐洲版 GRP 發行 |
+| 6 | Jeff Baxter, Teddy Castellucci, James Harrah & Buzz Feiten →`Jeff Baxter, Buzzy Feiten, James Harrah, Teddy Castellucci` —《Guitar Workshop in L.A.》 | 1988 | victor → `Invitation VDR-1521` | 收 | 美國版逐字「Licensed by Victor Musical Industries, Inc. Japan to GRP Records」；**`artist` 欄改判**（MB RG 是 `Various Artists`，8010） |
+| 7 | タイガー大越 —《Face to Face》 | 1989 | victor → `JVC VDJ-1198` | 收 | **日本藝人、日本 Victor 版在前且是原盤**（1989-04-21）；美國版 `Licensed From: Victor`——照本土判準收（8007 第 3 點） |
+
+**退件的條款分佈**：**0 筆**（撞池 0、原盤在外國 0、第 5701 條 0、第 1925-B 條 0、合輯 0、年份上限 0、曲風 0）。
+
+⚠ **橫向數字**：**年份改判 1 筆**（#3 1987→1974）；**盤名真改判 0**（#1 只是大小寫，第 1858-B 條不含大小寫）；**`artist` 欄改判 2 筆**（#1 照 c-195／c-196 同串、#6 照日本原盤盤面）；**`live`**：`true` 2 筆（#1／#3，三肢全過）、`false` 5 筆（其中 #2／#5／#6 的「直錄雙軌」判工法）；**再發數 7 筆逐筆跑完 `versions`，MB 平均低估 79%**；**改釘 rgMbid 0、孤兒 release 0、撞池 0、§1 人工身分 0**。
+
+⚠ ⚠ **本組最重要的三件**：
+1. ⚠ ⚠ **主線第 2011-B 條第二節的「日本系美國字標」形 7/7 命中**：JVC `JD-33xx` 五張（#2／#4／#5／#6／#7）的美國版 ℗ 全寫 Victor Musical Industries，三張逐字寫授權方向（#2 `Licensed Through: GRP`、#6 「Licensed by Victor … Japan to GRP」、#7 `Licensed From: Victor`）——**與 c-196 b 第 7580 條《The Bill Holman Band》（`JD-3308`）同一條線、同一位製作人 田口晃**（#2／#4／#5／#7）（8007）。
+2. ⚠ ⚠ **#3 是「MB 整個 RG 沒建原壓、最早一筆是殘缺 release」**：MB 三筆裡兩筆無廠牌、無載體、只有國別與年份（1987 US、2003 US），**`titleCheck` 三欄一致、note 空白**；Discogs 一打就是 1974 年日本ビクター `SMJ-6034`、1973-11-21 DUG 實況——**年份差 13 年，機器完全沒報**（jp-1 簡報第三節 (a) 形）（8009）。
+3. ⚠ **#1 的「最早 1981 US」是 MB 把 1999 年 NYC 重製數位版的日期填成原盤年**（Digital Media、題帶 `(Remastered)`、13 軌）——**「最早那一版」的判斷要先看那一筆是什麼載體、題有沒有再發標記**，不是只比日期（8007 第 2 點）。
+
+---
+
+## 退件的裁定
+
+**本組 0 筆。**
+
+---
+
+## 收件與橫向的裁定（8007–8024）
+
+## 8007　⚠ ⚠ 第 4 堆的硬門：**「日本是原盤」7 筆逐筆以 Discogs 最早那一版的 `labels`／`companies`／`notes` ＋ `versions` 全表判定——7/7 成立**
+
+| # | 外國版的 ℗ 與授權字樣（逐字） | 日本原盤的指紋 |
+|---:|---|---|
+| 1 | 1999 美國 NYC `NYC 6027-2`：「Phonographic Copyright (p): NYC Music Productions, Inc.」＋加收五軌「have not been issued before」 | 1981-02 `YB-7010~11-ND`：`Record Company`／`Manufactured By`／`Produced For`／℗ 全是 Nippon Columbia、`Recorded At: Pit Inn, Roppongi` |
+| 2 | 1991 美國 `JD-3301`：「Licensed Through: GRP Records, Inc.」 | 1986-01-21 `VDJ-1024`：「Recorded at JVC Aoyama Studios, Tokyo」、℗ VMI、JASRAC |
+| 3 | 1976 美國 Catalyst `CAT-7904`：「Licensed From: JJ Records (6)」（`labels/904360` profile：「the American licensee to release and distribute music owned by Victor Musical Industries」）；瑞典 Amigo：「Licensed to Amigo by Victor Co., Japan」 | 1974 `SMJ-6034`：Victor 製造發行、「Record live at the Jazz club DUG. Tokyo November 21, 1973.」 |
+| 4 | 1987 美國 `JD-3302`：「℗+©1987 Victor Music Industries」；西德／瑞士 `JLP-3302`：「Distributed By: GRP Records Ltd.」 | 1987-06-01 `VDP-1204`：「℗ 1987 Victor Music Industries INC. TOKYO, JAPAN」 |
+| 5 | 1988 美國 `JD-3309`／歐洲 `JLP-3309`：「Phonographic Copyright (p): Victor Musical Industries, Inc.」 | `VDJ-1145`：℗© VMI、東京 JVC Studios 剪輯、JASRAC |
+| 6 | 1988 美國 `JD-3314`：「Licensed by Victor Musical Industries, Inc. Japan to GRP Records, Inc.」 | `VDR-1521`（Invitation）：℗© VMI、JASRAC |
+| 7 | 1989 美國 `JD-3318`／`JC-3318`：「Licensed From: Victor Musical Industries, Inc.」「Licensed To: GRP Records, Inc.」 | 1989-04-21 `VDJ-1198`：℗© VMI、JASRAC |
+
+1. ⚠ ⚠ **重篩第二輪的命中率 7/7**——**JVC `JD-` 系列在 Discogs 上是 Victor 的美國出口號段**（本層順手打 `catno=JD-3300…3320`：`JD-3303`／`3310`／`3315` Malta、`JD-3305` Masahiro Sayama、`JD-3304`／`3311` Masami Nakagawa、`JD-3313` 益田幹夫《Smokin' Night》（＝池中 c-182 卡的美國版）——**整個號段幾乎都是日本藝人或 JVC 自製盤**）。**往後看到「最早那一版是 `JVC JD-33xx`」，預設是 Victor 原盤**，仍要看 ℗ 行。
+2. ⚠ **#1 的形狀不同**：`hint` 寫「最早 1981 US」，**那一筆是 MB 的 Digital Media、題帶 `(Remastered)`、13 軌**——就是 1999 年加收五軌的 NYC 重製版的數位版，日期被填成原盤年。**美國實體版最早 1999 年**。
+3. ⚠ ⚠ **#7 是日本藝人**（派工信點名）：日本 Victor 版 1989-04-21 在前、而且美國版逐字向 Victor 取得授權 → **不是第 3 堆（日本藝人的美國原盤），照本土判準**：原盤字標 JVC（Victor）在 jp-1 四大廠門內、1989 在上限內、曲風與第 5701 條照舊 → 收。**`pile` 欄照 slice 原樣抄 `4`**（派工信「原樣照抄」），**身分判準用本土那一套、已寫在卡的 `risk`**（簡報第〇節第 4 堆末段：誤判成外國藝人的日本人照本土判準）。
+4. **錄音地不影響判定**（c-193 b 第 7334 條第 3 點）：東京 3 張（#1／#2／#3）、好萊塢 3 張（#5／#6，#4 另有里約）、#7 盤面未載。
+5. **判定動作**：7 筆全部打了 `releases/<id>` 讀原盤與外國版的 `labels`／`companies`／`notes`，並逐筆跑 `/masters/<id>/versions`（7 筆都有 master 頁）。
+
+## 8008　`priorRulingHits`：**本組 0 筆**（slice 7 格全空）——⚠ **本層另以 7 個盤名與掛名掃過 c-1XX 全部 `rulings*.md` 與 `audits/`：零舊退件**
+
+- 命中只有兩處旁引：c-195 研究段（`Smokin' In The Pit` 的原壓日期，用來排《Step By Step》的先後）、c-192 研究段（`Berklee All-Stars` 當作 Campbell／Pierce 的串連背景）、c-196 人名定案表（`タイガー大越` 306609 `realname`）——**都不是退件**。
+- `batch-progress/enum/known-pool-collisions.json` 以 7 筆的掛名與盤名掃過：零命中。
+
+## 8009　年份：**7 筆全部回查版本表；改判 1 筆（#3）**
+
+| # | 碟 | slice | 改判 | 依據 | 機器有沒有報 |
+|---:|---|---:|---:|---|---|
+| 3 | Carmen McRae《As Time Goes By …》 | 1987 | **1974** | Discogs 原壓 4617075 `released` 1974、錄音 1973-11-21；1976 美國、1977 瑞典都是授權版；**MB 最早那筆「1987 US」無廠牌、無載體** | **沒有**：`titleCheck` 三欄一致、note 空白（jp-1 簡報第三節 (a) 形） |
+
+- **反轉條件（#3）**：若查到 `SMJ-6034` 其實是 1973 年底發行 → 改 1973（只動一欄）。**本批是 1981–1989 年段，#3 改判後落在 1974——補遺線上限是 1989（含）以前，不出界。**
+- **其餘 6 筆**：slice、MB、Discogs 原壓三處一致。#1 原壓 label 逐字 `℗ 1981·2`；#2 日本 CD `notes` 自帶發行日碼 `H·1·21`＝1986-01-21；#4 1987-06-01；#7 1989-04-21（Apple jp 寫 1989-01-01，Victor 盤 Apple 常填錯日，第 1907-B 條，不採）；#5／#6 只到年（#6 錄音 1988-10，**反轉條件：日本原盤若是 1989 年發行，改 1989**）。
+
+## 8010　盤名與 `artist` 欄：**盤名真改判 0；`artist` 欄改判 2（#1／#6）**
+
+1. **#1 `Steps Ahead` → `Steps`**：原壓逐字 `Steps (3)`（當時團名）；**照 c-195 a 第 7426 條與 c-196 b《Step By Step》同一串**（派工信點名：掛名照盤面）。盤名取原壓的 `Smokin' In The Pit`：`titleCheck` 報的最早 release 題 `Smokin’ In the Pit (Remastered)` 是 1999 重製數位版，不採；MB RG 題 `Smokin' in the Pit` 只差大小寫，進 `queryAlias`；撇號用 ASCII。
+2. ⚠ ⚠ **#6 `Jeff Baxter, Teddy Castellucci, James Harrah & Buzz Feiten` → `Jeff Baxter, Buzzy Feiten, James Harrah, Teddy Castellucci`**：**MB RG 的 artist-credit 逐字 `Various Artists`**（主線第 1971-B 條第 17 點 (a) 形：`Various Artists` 實為聯名），slice 抄的是 MB release 層的寫法、**順序跟美國 GRP 版**；**Discogs 日本 CD 與日本 LP 兩筆的 `artists` 欄逐字同序 `Jeff Baxter, Buzzy Feiten, James Harrah, Teddy Castellucci`**、逐軌 credit（日美兩版與 MB 逐軌層）也都是 `Buzzy Feiten`——**卡的身分是日本原盤，照原盤盤面的順序與寫法**；**分隔符全用逗號，照 c-183 b 第 5703 條四方對等聯名先例**（同是四吉他手企劃《Guitar Workshop》）。MB 的 `&` 形與美國版順序進 `queryAlias`。**可逆**（只動一欄；四人池中皆 0 列，不涉分裂）。
+3. **#3 盤名取 MB 的冒號形**：Discogs 各版逐字 `As Time Goes By / Carmen McRae Alone / Live At The Dug`（Discogs 以 `/` 分隔封面三行字），**兩形在撞池鍵上摺成同一個字串**；斜線形與三段各自進 `queryAlias`。
+4. **#5 盤名取 `Ernie Watts Quartet`**：MB release、美國 CD、歐洲 LP、1991 再版、master 題五處一致；**只有 Discogs 日本 CD 條目題作 `The Ernie Watts Quartet`**——與 c-196 b《The Bill Holman Band》不同（那張日本與西德兩版都帶 `The`），本筆取多數形；**反轉條件**：日本原盤封面／側標印 `The` → 盤名改帶 `The`（掛名不動）。
+5. **其餘**：#2 `Gary Burton`（MB credit；池中只有 `Gary Burton & Chick Corea` 聯名串，個人串新立，第 964 條人名與聯名可並存）、#4 `Oscar Castro-Neves`（**MB 實體名是 U+2010 `Castro‐Neves`，照抄會被 `chk-prop` 擋，取 ASCII**；Discogs 296479 同）、#7 `タイガー大越`（MB credit 與 Discogs `realname` 同，照第 0.5 條）。**盤名**：#2／#4／#6／#7 與 MB 逐字一致（#2／#7 與 Discogs 只差大小寫）。
+
+## 8011　`live`：**`true` 2 筆（#1／#3，三肢全過）；`false` 5 筆；「直錄雙軌」判工法 3 筆（#2／#5／#6）；反向漏標 0**
+
+- **#1 `true`**：場館（`Recorded At: Pit Inn, Roppongi`）＋ live 字樣（`notes` 逐字「Recorded Live」）＋ 日期（1980-12-14～16 連三晚）；**credits 另中主線第 1977-B 條的場館技術職**（`Lighting [Stage Lighting]`、`Mixed By [Live Sound Mixer]`、`Mixed By [Monitor Mixer - Hibino Sound]`）；MB `Live` 屬實。⚠ **1999 美國 CD `notes` 把日期寫成「12/15 & 12/16 1979」**——與原壓衝突，下游寫原壓的 1980 年 12 月。
+- **#3 `true`**：場館（`Recorded At: Dug, Tokyo`）＋ live 字樣（「Record live at the Jazz club DUG」、盤名 `Live At The Dug`）＋ 日期（1973-11-21 單一場次）；MB `Live` 屬實。
+- **#2／#5／#6 `false`**：`directly recorded to two-track`（#2／#5）、`Recorded live to two track at Oceanway Recording`（#6）——**錄音工法，不是有觀眾**（主線第 1971-B 條）；三張都是錄音室名 ＋ 錄音日期、零觀眾字樣。
+- **#4／#7 `false`**：錄音室（#4 SIGLA／Capitol）或盤面未載（#7），零 live 字樣。
+- **7 筆逐筆掃過主線第 1958-B 條必掃字串與第 1977-B 條三個技術職**：只有 #1 命中（已判 `true`）。
+
+## 8012　⚠ ⚠ 再發版本數：**7 筆逐筆跑完整張 `versions`；7 筆都有 master 頁；一律取 MB、Discogs、孤兒 release 與 Apple 的聯集；MB 平均低估 79%**
+
+| # | Discogs | MB（本盤） | MB 獨有 | 孤兒 | Apple 另加 | 合計 | MB 低估 |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 8 | 3 | **+1**（b8e56978 Digital Media＝Apple us 161607469） | 0 | **+1**（jp 1694358444，℗ 2018 Nippon Columbia） | **10** | 70% |
+| 2 | 8 | 1 | 0 | 0 | 0 | **8** | 88% |
+| 3 | 13 | 3 | **+2**（c17cbf02「1987 US」、2f95885c「2003 US」，皆無廠牌無載體） | 0 | 0 | **15** | 80% |
+| 4 | 8 | 1 | 0 | 0 | 0 | **8** | 88% |
+| 5 | 5 | 1 | 0 | 0 | 0 | **5** | 80% |
+| 6 | 3 | 1 | 0 | 0 | 0 | **3** | 67% |
+| 7 | 5（**扣重複 1**） | 1 | 0 | 0 | **+1**（jp 1455815506，℗ Victor Entertainment） | **5** | 80% |
+
+- ⚠ **#3 的兩筆 MB 獨有是殘缺 release**（`release/<id>?inc=labels+recordings+annotation+url-rels` 打過：無 barcode、無 annotation、無外部連結，軌序與時長同原壓），**Discogs 沒有 1987 或 2003 年的美國版**——照聯集原則計入，但卡上寫明「只有國別與年份」。**反轉條件**：若日後能把兩筆釘到 Discogs 某一版，合計減 1–2。
+- ⚠ **#7 Discogs 的 `VJD-1198`（14001308）與 `VDJ-1198`（15003272）條碼逐字相同 `4988002178339`**，`VJD` 是 `VDJ` 的誤植 → 同一版重複建檔，扣 1。
+- ⚠ **Apple 另加的兩筆都先比過 MB 有沒有對應的 `Digital Media`**（主線第 1987-B 條）：#1 MB 的數位版對上的是 Apple us（不重算），Apple jp 另加；#7 MB 零數位版 → 加。
+- **七筆的 MB 都沒有建日本原盤**——**這正是初篩判成「乙」的原因**（主線第 1965-B 條第 1 點：MB 轄下 JP release 數全部少於 Discogs 日本盤數，逐筆回查的結果就是 #3 的年份改判）。
+
+## 8013　廠牌欄：**`label` 7 筆全部以 Discogs 原盤 `labels` 欄逐字；`house` 快篩與原盤字標的差異 2 筆，都不影響收退**
+
+- **#1 `house: columbia` → `Better Days`**（`labels/73854`，日本コロムビア 字標，與 c-196 b《Step By Step》同）；**slice `hint` 的 1988 `45CY-2865->66` 是第一次 CD 化，不是原壓**。
+- **#6 `house: victor` → `Invitation`**（`labels/48629`，`parent_label` 逐字 `Victor Entertainment, Inc.`，profile 逐字「Japanese sublabel of Victor/JVC mainly for pop/rock founded in 1977」——照主線第 1976-B 條算母廠）。
+- **#2／#4／#5／#7 → `JVC`**（`labels/28272`）、**#3 → `Victor`**（`labels/61808`）。
+- ⚠ **#2 的日本 LP `VIJ-28066` 的 `labels` 欄同印 `JLP-3301`**——派工信「日本盤 `labels` 同時印外國目錄號 → 先假設授權版」的指紋**在 JVC 線上是自家的國際號**（`JLP-`／`JD-`／`JC-` 是 Victor 的出口系列），℗ 與授權方向都指向日本；**這條指紋遇到 JVC 要先看號段是不是 Victor 自己的**（第 8022 條第 2 點）。
+- **`label` 取法**：#1／#3 取 LP 原壓（CD 化晚 7／12 年）；#2 取 CD `VDJ-1024` 並寫明同日 LP；#4 取 CD `VDP-1204` 並寫明同年 LP；#5／#7 只有 CD；#6 取 CD `VDR-1521`（master 的 `main_release`）並寫明同年 LP。
+
+## 8014　⚠ 掛名：**7 張 7 個相異字串——沿用池中整串 2（`Steps`、`Carmen McRae`）＋ 新立 5；新造分裂 0、新造分隔符 0、收斂 0、改釘 rgMbid 0**
+
+| 掛名 | 池中 | 處置 |
+|---|---|---|
+| `Steps` | c-195 ＋ c-196 共 2 列 | **沿用**；MB credit `Steps Ahead` 進 `queryAlias` |
+| `Gary Burton` | 個人串 0；聯名 `Gary Burton & Chick Corea` seed 3 列 | **新立個人串**（第 964 條：人名與聯名可並存） |
+| `Carmen McRae` | seed 6 張（c-144 兩列同碟） | **沿用** |
+| `Oscar Castro-Neves` | 0 | **新立**（ASCII 連字號；U+2010 形進 `queryAlias`） |
+| `Ernie Watts Quartet` | 0（個人串 `Ernie Watts` 也是 0） | **新立**團名串，`selfTitled: true` |
+| `Jeff Baxter, Buzzy Feiten, James Harrah, Teddy Castellucci` | 0（四人各自 0） | **新立**；逗號是池中既有分隔符 |
+| `タイガー大越` | 0 | **新立**（第 0.5 條和文形；羅馬字各形進 `queryAlias`） |
+
+## 8015　⚠ 人名：**收件卡寫出的漢字人名 11 個，全部逐名回打 Discogs 藝人頁（`realname`／`namevariations`）定案；照寫羅馬字的日本人 4 個**
+
+1. **逐名定案的來源**：渡辺香津美（119483 `realname`；#1）、生田朗（288783 `realname`；#1，與 c-196 b 同一人）、田口晃（915559 `realname` `田口 晃`；#2／#4／#5／#7）、高田英男（506042 `realname`；#2／#4／#5）、松下佳男（1746955 `realname`；#4）、星加哲（2743562 `namevariations`；#6）、樋口和光（4019723 `realname`；#6）、土方隆行（296238 `realname`；#7）、清水興（3207998 `realname`；#7）、東原力哉（3505246 `realname`；#7）、タイガー大越（306609 `realname`；#7 掛名）。
+2. **照寫羅馬字 4 個**（未寫漢字）：`Malta`（1543351 `realname` 丸田良昭，但盤面與藝名都是羅馬字 → 照盤面；#2／#4）、`Tommy Ueno`（#1，未回打）、`Takashi Misu`（#4／#5／#6，零漢字變體）、`Yoshinobu Kojima`（#6，未回打 → 不寫漢字）。**卡上沒寫到的**（#2 `Age Nakahira`／`Kotaro Suzuki`、#6 `Norio Shibuya`〔`namevariations` 有 `渋谷則夫`〕／`Daisuke "Richard" Nakano` 等）一律不寫。
+3. **`name-corrections.json`**：`pairs`／`_to_romaji`／`_romaji_collisions`／`_entity_mislinks` 四欄以上列 15 個名字掃過——**零命中**（`渡辺香津美` 只出現在別一對更正的註記文字裡，不是更正對）。
+
+## 8016　⚠ 曲風與第 5701 條：**7 筆收件的原盤 `genres` 全含 `Jazz`；原盤 `styles` 有爵士成分 6 筆、空陣列 1 筆（#3）；乙 > 0 兩筆（#3 2／10、#4 2／11），都不過半**
+
+- **原盤 `styles`**：#1 `Contemporary Jazz`／`Fusion`；#2 `Contemporary Jazz`／`Fusion`／`Bop`（CD；LP 空陣列）；#4 `Bossa Nova`／`Smooth Jazz`／`Latin Jazz`；#5 `Contemporary Jazz`；#6 `Fusion`；#7 `Contemporary Jazz`；**#3 空陣列**（主線第 1936-B 條不套 ⑤ 款第三形；同 master 他版 `Vocal`／`Bop`／`Contemporary Jazz`）→ 人工判收。
+- ⚠ ⚠ **#4 ② 款字面成立**（`genres` 含 `Folk, World, & Country`）→ 進人工判，不是自動退（jp-1 簡報第二節第 5 點）：①③④⑤ 不成立、演奏主體是洛杉磯爵士錄音室樂手 ＋ 巴西節奏組（逐名印在盤面，第 1925-B 條）→ **收**；**`genres` 標 `jazz`／`world`**（照 c-192 b `向井滋春 + Astrud Gilberto` 的波薩先例）。
+- ⚠ **#3 第 1925-B 條**：演奏者只有 Carmen McRae 一人、自彈自唱——不是「爵士樂手替歌手伴奏」那一形，是爵士歌手兼鋼琴手的獨奏會；池中她六張全是爵士卡 → 照 c-194 a 撈回 `Salena Jones` 時「領銜者身分在本線已建立」的判準收。
+- ⚠ **#6 ④ 款**：Jeff Baxter／Buzzy Feiten 的目錄多在搖滾——照 jp-1 簡報第二節第 5 點「看碟本身」：器樂融合樂、原盤 `genres` 只有 `Jazz` → 收。
+- **第 5701 條甲乙計數**：#1 甲 8；#2 甲 9；**#3 甲 8／乙 2**（〈I Can't Escape From You〉〈The Last Time For Love〉沒查到本盤之前的具名爵士錄音，保守算乙）；**#4 甲 9／乙 2**（Aldir Blanc 合寫兩首照主線第 1962-B 條當季 MPB 算乙）；#5 甲 8／未核 3（CD 才有的三軌作曲欄各版皆空；全算乙也只 27%）；#6 甲 10；#7 甲 12（〈One Note Samba〉照第 1962-B 條 Jobim 一系算甲）。
+- **合輯指紋**：7 筆的 `versions` 全表 `formats` 零 `Compilation`；**#6 MB 的 `Various Artists` 是四人並列的建檔形狀**，十軌是同一批 1988-10 新錄音（第 1948-B 條看錄音）→ 不是合輯。
+
+## 8017　⚠ `poolRecheck` 逐格人工覆核：**7 格全部重掃（每一種掛名寫法 ＋ 片假名形 ＋ 成員名 ＋ 盤名兩種文字系統 ＋ 主要曲名）；真撞池 0；「逐張人工比」4 格、「變體全是羅馬字」2 格、「查無此藝人」1 格——全部不是撞池**
+
+- **「逐張人工比」4 格**：#1（`Steps` 2 列：c-195《Paradox》1981-03 紐約、c-196《Step By Step》1980-12-08／10 東京錄音室——**本盤是一週後的 Pit Inn 實況，三張三場不同錄音**）、#2（seed `Gary Burton & Chick Corea` 3 列，〈Crystal Silence〉同曲不同錄音）、#3（Carmen McRae 6 張，全是別的錄音）、#6（slice 的 `artistAlbumsInPool` 是 MB `Various Artists` 的全池 VA 卡 200 多列——**本層改以四人各自的寫法掃：0 列**）。
+- **「變體全是羅馬字」2 格**（#4 `Oscar Castro-Neves`、#5 `Ernie Watts Quartet`）：**兩位都是真外國藝人**（巴西、美國），照 c-193 b 第 7343 條改掃片假名形 `オスカー・カストロ・ネヴィス`／`カストロ`／`アーニー・ワッツ` → 0 列。
+- **「池中查無此藝人」1 格**（#7 `タイガー大越`）：**屬實**——`大越`／`Okoshi`／`Ohkoshi`／`OOKOSHI` 與三位日本團員的漢字與羅馬字 → 0 列。
+- **盤名為主鍵全池掃**：`Smokin'`（seed Humble Pie／Wes Montgomery、c-182 益田幹夫，別碟）、`As Time Goes By`（c-194 `Aki Takase`，別碟）、`Guitar Workshop`（c-183 日本 Union 四吉他手盤，別碟）、`Face to Face`（seed `Baby Face Willette` 1961 Blue Note、`The Kinks`、`Car Seat Headrest`，別碟）、`Berklee`／`Dug`／`Brazilian Scandals`／`Language Of The Heart` 0 列；**`chk-prop` 第五道（盤名撞 apex）0 處**。
+- ⚠ **第 4 堆特有的「同一場錄音在美國也有一版」**：七張的美國版（NYC／JVC `JD-`／Catalyst／Jazzz）全是日本原盤的授權發行或再發，**池中一張都沒有**。
+
+## 8018　catno 反查與孤兒 release：**7 筆逐筆以原盤、同期載體與美國／歐洲版目錄號打 `catno=`（24 次）；孤兒 release 0；差集 0**
+
+- #1 `YB-7010`／`45CY-2865`／`NYC 6027-2`／`COCA-12797`；#2 `VDJ-1024`／`VIJ-28066`／`JLP-3301`／`JD-3301`；#3 `SMJ-6034`／`VDJ-1570`／`CAT-7904`；#4 `VDP-1204`／`VIP-28163`／`JD-3302`／`JLP-3302`；#5 `VDJ-1145`／`JD-3309`／`JLP-3309`；#6 `VDR-1521`／`VIH-28334`／`JD-3314`；#7 `VDJ-1198`／`VJD-1198`／`JD-3318`——**本盤命中全在各自 master 內**；另回同號段別碟（`JLP 3301` 義大利、`HJLP-3302` 美國等）無關。
+- 另打 `JD-3300…3320` 探 JVC 美國號段（第 8007 條第 1 點）。
+
+## 8019　⚠ ⚠ 同線串連與兩組互掃
+
+1. ⚠ **JVC × 田口晃 製作線**：#2（1985-07 東京）、#4（1987 里約／好萊塢）、#5（1987-12 好萊塢）、#7（1989）＋ c-196 b《The Bill Holman Band》（1987-11／12 好萊塢，`JD-3308`）——**五張五次不同錄音**；Takashi Misu（JVC 洛杉磯）同時出現在 #4／#5／#6 與 Holman 那張；**Ernie Watts 同時是 #4 的中音薩克斯與 #5 的領銜**；錄音師 Don Murray 是 #5 與 Holman 那張的同一人——下游不得混寫。
+2. ⚠ **Steps 的 1980 年 12 月日本行兩張**：c-196 b《Step By Step》（12-08／10 日本コロムビア 錄音室）與本組 #1（12-14～16 Pit Inn）——**同一次巡演、兩次不同錄音**；c-195 a《Paradox》是 1981-03 紐約。下游引用帶年份與場地。
+3. **Gary Burton 串連**：#7 タイガー大越 曾在 Burton 樂團錄音（Discogs profile「playing on Gary Burton's Times Square」）；#2 的 Tommy Campbell／Billy Pierce 在 c-192 研究段被當作 `小曽根真《After》` 的串連背景——**全部不同錄音**。
+4. **與 a 組互掃（主線第 1987-B 條固定動作）**：a 組 `prop-a.json` 已落地（5 張：`Lew Soloff《Hanalei Bay》`、`David Matthews《Super Funky Sax》`、`Steve Gadd《Gaddabout》`、`Art Blakey and the Jazz Messengers《Dr. Jeckyle》`、`Manhattan Jazz Quintet《Plays Blue Note》`）——本層以 b 組七張的曲題與人名對 a 組五張的 `why`／`label`／`risk` 雙向掃過：**零同題曲、零同錄音、零同盤名**；**人名交集只有 Steve Gadd**（#1 的鼓手 ↔ a 組 #3 領銜，1980 vs 1984，不同錄音）。a 組第 7988 條第 4 點請 b 組落檔後回掃——**已回掃，結論相同**。
+5. **本組內同曲不同錄音**：〈Body And Soul〉（#5）、〈Summertime〉〈Over The Rainbow〉（#7）、〈Soul Eyes〉〈Lover Man〉（#1）與池中他卡同題——全部是不同錄音。
+
+## 8020　Apple 與店面（第 254 條，只寫觀察）：**7 筆收件命中 2 筆（#1 jp＋us、#7 jp＋us）；jp／us 403 間歇約 6 次、退避重試後 200**
+
+- 命中：#1 jp 1694358444（`STEPS`、8 軌、`℗ 2018 Nippon Columbia`）與 us 161607469（`Steps Ahead《… (Remastered)》`、13 軌、`℗ 1999 NYC Records`）；#7 jp／us 1455815506（`タイガー大越`／`TIGER OKOSHI`、12 軌、`℗ Victor Entertainment`）。
+- 未命中 5 筆：#2（英文與片假名兩種查法）、#3（jp 藝人頁 50 筆逐張看過）、#4（jp 17 筆全是 1962《Big Band Bossa Nova》系）、#5（Apple 上的 `Ernie Watts Quartet` 五張全是 2004 年以後自製盤）、#6（盤名、掛名＋盤名、片假名）——**JVC 的 1980 年代美國出口線在 Apple 上覆蓋很低，不是退件理由。**
+
+## 8021　`desc-tools/jp-proper-names.json`：**本批 append 0 個，既有條目一個都沒動**
+
+## 8022　⚠ 給主線的登記建議（本層照邊界不動那些檔）
+
+1. **`audits/foreign-artist-japan-productions.md` 補遺線處置表**補登七筆「c-198 b 收」：`Better Days YB-7010~11-ND`（#1）、`JVC VDJ-1024`（#2，東京錄音）、`Victor SMJ-6034`（#3，**年份 1974**）、`JVC VDP-1204`（#4）、`JVC VDJ-1145`（#5）、`Invitation VDR-1521`（#6）、`JVC VDJ-1198`（#7，**日本藝人、本土判準**）。
+2. ⚠ **派工信模板的必查特徵補一句**（第 8013 條）：「日本盤 `labels` 同印外國目錄號」這條指紋，**遇到 JVC 先看那個號是不是 Victor 自己的出口號段（`JLP-`／`JD-`／`JC-`）**——是的話不構成授權版的推定。
+3. ⚠ **撈回候選（不在任何 slice、池中 0 列、舊裁定 0 筆；本層未逐筆驗 ℗）**——`labels/904360`（JJ Records，Victor 的美國授權方）的目錄裡另有兩張外國藝人的 Victor 日本原盤形：**`Art Blakey and the Jazz Messengers《Jazz Messengers '70》`**（美國 Catalyst `CAT-7902`，1976）、**`Helen Merrill With Teddy Wilson《Helen Sings, Teddy Swings!》`**（Catalyst `CAT-7903`，1976）——**建議主線照第 4 堆判準撈回查驗**（日本原壓的目錄號與年份本層未查）。
+4. **資料庫的錯（給本機或 MB／Discogs 編輯）**：MB rg b89a9776（#3）缺 1974 日本原壓、兩筆殘缺 release（c17cbf02／2f95885c）無廠牌無載體；MB rg 26d29e91（#1）的 b8e56978 Digital Media 日期 `1981` 應為 1999 重製；MB rg a869a4ac（#2）的 61876e7f 日期 1986 與 barcode 對上的 Discogs 美國 CD 是 1991-10-25；MB rg c264fa08（#6）的 RG artist-credit 是 `Various Artists`、應為四人聯名；Discogs 14001308 的目錄號 `VJD-1198` 應為 `VDJ-1198`（與 15003272 重複）。
+5. **撞池登記簿**：本組無新增。
+
+## 8023　交件前自跑的結果與第 315 條結算
+
+- `node batch-progress/c198/chk-prop.mjs b` → **7 張、7 位、標記 0**（`dedup-crossbatch` 全池 161 批：跨批撞卡 0、同 rgMbid 不同掛名 0、同掛名盤名詞元包含 0、共用目錄號 0；盤名撞 apex 0 處）。
+- `node batch-progress/dedup-crossbatch.mjs`（不帶批號、全池）→ **161 批、跨批撞卡 0、三項只報不擋皆 0**。
+- **第 315 條：收 7 ＋ 退 0 ＝ 7**；**逐堆：第 4 堆 收 7 退 0 ＝ 7**（本組沒有第 1／2／3 堆）。
+- **§1 人工身分 0 張**（7 筆全部有 `rgMbid`、全部照 slice 釘，改釘 0）。
+- **年份改判 1（#3）／盤名真改判 0／`artist` 欄改判 2（#1 沿用池中串、#6 照日本原盤盤面）／`live` 改判 0（`true` 2、`false` 5）／再發數 7 筆全跑。**
+
+## 8024　⚠ ⚠ 給主線與後續批次的清單
+
+### 建議主線覆核的四筆邊界（索引）
+1. **#3 年份 1987→1974**（第 8009 條）——MB 整個 RG 沒建原壓；反轉條件：`SMJ-6034` 若是 1973 年底發行改 1973。
+2. **#6 `artist` 欄改判**（第 8010 條第 2 點）——取日本原盤 Discogs 兩筆的順序與 `Buzzy` 形、全逗號；可逆。
+3. **#7 日本藝人、`pile: 4` 照抄而身分判準用本土**（第 8007 條第 3 點）——若主線要把 `pile` 改成別的值，只動一欄。
+4. **#4 `genres: ["jazz","world"]`**（第 8016 條）——② 款字面成立、人工判收；若主線要單標 `jazz`，只動一欄。
+
+### 給下游（研究層、鉤子層、本機）的三件
+1. ⚠ **#1 錄音日期**：原壓 1980-12-14～16，1999 美國 CD 寫「12/15 & 12/16 1979」——一律寫原壓；**1999 版加收的五軌不在原壓**；與 c-196《Step By Step》是同一次日本行的兩次錄音（第 8019 條第 2 點）。
+2. ⚠ **#3 是 1973 年的現場、1974 年的日本盤**——MB 與 slice 的 1987 是錯年份；**寫作層不得出現「1987 年」**。
+3. ⚠ **JVC × 田口晃 線五張**（本組 #2／#4／#5／#7 ＋ c-196 b Holman）——Ernie Watts、Takashi Misu、Don Murray 跨張出現，錄音各自不同（第 8019 條第 1 點）；**#6 與 c-183《Guitar Workshop》同名不同碟**，引用帶掛名與 `in L.A.`。
+
+**編號區間結算**：本節用到 **8006–8024（共 19 條），未越界（a 組 7976–8005）**；8025–8035 留空。
