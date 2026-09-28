@@ -39,3 +39,9 @@
 
 ## The Bill Holman Band《The Bill Holman Band》1988
 - `1511116252` jp｜《Bill Holman》／ビル・ホルマン｜1954｜6 軌｜依據：盤名直查｜**掛名沒過**
+
+## Buster Williams Trio《Tokudo》1978 — **目錄裡找不到**
+
+## The Great Jazz Trio《Great Standards Vol.1》1988
+- `1776052406` us｜《Standards, Vol.1》／Armel Dupas Trio｜2025｜18 軌｜依據：盤名直查｜**掛名沒過**
+- `1440839750` us｜《Standards, Vol. 1》／Keith Jarrett, Gary Peacock & Jack DeJohnette｜1983｜6 軌｜依據：盤名直查｜**掛名沒過**
