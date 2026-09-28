@@ -67885,5 +67885,91 @@
    }
   ],
   "status": "unavailable"
+ },
+ "Steps|Step By Step": {
+  "batch": "c196",
+  "tried": [
+   "us:12→1"
+  ],
+  "front": "us",
+  "collectionId": 410337668,
+  "appleTitle": "Step By Step",
+  "appleArtist": "Steps",
+  "appleYear": "1980",
+  "explicitness": "notExplicit",
+  "trackCount": 5,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/db/db/00/dbdb0052-3688-3de9-f1b6-369f4f30c92f/mzaf_13062922981935590199.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
+ },
+ "The Bill Holman Band|The Bill Holman Band": {
+  "batch": "c196",
+  "tried": [
+   "us:12→0",
+   "gb:12→1",
+   "gb:第1935-B條退1筆",
+   "jp:12→1",
+   "jp:第1935-B條退1筆",
+   "tw:12→1",
+   "tw:第1935-B條退1筆",
+   "de:12→1",
+   "de:第1935-B條退1筆",
+   "fr:12→1",
+   "fr:第1935-B條退1筆"
+  ],
+  "rejectedMatch": [
+   {
+    "why": "aliasOnlyTitle＋盤名掛名同名",
+    "collectionId": 1511116252,
+    "appleTitle": "Bill Holman",
+    "appleArtist": "Bill Holman",
+    "appleYear": "1954"
+   }
+  ],
+  "status": "unavailable"
+ },
+ "Buster Williams Trio|Tokudo": {
+  "batch": "c196",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "tw:12→0",
+   "de:12→0",
+   "fr:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "The Great Jazz Trio|Great Standards Vol.1": {
+  "batch": "c196",
+  "tried": [
+   "us:12→0",
+   "gb:12→0",
+   "jp:12→0",
+   "tw:12→0",
+   "de:12→0",
+   "fr:12→0"
+  ],
+  "status": "unavailable"
+ },
+ "Art Blakey and the Jazz Messengers|New Year's Eve at Sweet Basil": {
+  "batch": "c196",
+  "tried": [
+   "us:12→0",
+   "us:artistPage→1",
+   "gb:12→0",
+   "gb:artistPage→1",
+   "jp:3→1"
+  ],
+  "front": "jp",
+  "collectionId": 1807510075,
+  "appleTitle": "NEW YEAR'S EVE AT SWEET BASIL",
+  "appleArtist": "アート・ブレイキー&ザ・ジャズ・メッセンジャーズ",
+  "appleYear": "1986",
+  "explicitness": "notExplicit",
+  "trackCount": 4,
+  "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/69/54/17/6954175f-7770-5d57-877f-e60e12a0924a/mzaf_4628677595108397975.plus.aac.p.m4a",
+  "cleanedOnly": false,
+  "status": "ready"
  }
 }
