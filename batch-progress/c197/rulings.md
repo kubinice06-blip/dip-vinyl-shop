@@ -508,3 +508,130 @@
 4. ⚠ **#14《Farewell - Live at Sweet Basil》的題名與 Gil Evans 1988-03-20 辭世同年，盤面與原廠說明沒寫兩者關係**——不得寫成「告別作」；與 Art Blakey 1990 年同題盤是兩張碟。
 
 **編號區間結算**：本節用到 **7756–7777（共 22 條），未越界（a 組 7726–7755）**；7778–7785 留空。
+
+
+
+# c-197 b 組研究層（8266–8295）｜卡單 `group === "b"` 10 張（George Young 3・Manhattan Jazz Quintet 7）｜2026-09-28
+
+批次 c-197｜研究層 b 組 10 張｜輸入 `desc-tools/batches/cards/c197-cards.json` 的 `group === "b"`｜輸出 `desc-tools/batches/research/c197-b.json`
+⚠ **本層的 a／b 以卡單 `group` 欄為準，與策展層 prop-a／prop-b 不同**：本組 10 張的策展裁定在 c-197 b 第 7756–7777 條（策展層 b 段）。
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）、`CURATION-BRIEF-hoyi.md`、`CURATION-BRIEF-jp2.md`、`CURATION-BRIEF-jp1.md` 第〇節與 bluenote-post1985 附錄二、主線第 1934-B…2011-B 條、c-178 研究層兩段。
+**本段用 8266–8277；8278–8295 留空。另一組研究層用 8236–8265。**
+
+---
+
+## 8266　總表：**10 張，facts 合計 112 條（10–12 條／張）；full 10、thin 0；`src` 112/112 完整 https**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | George Young —《Chant》 | 12 | full | 他上一張領銜專輯要回溯到 1962 年 Columbia；1985 年 King 的雙 LP 選輯《New York First Call》收了標題曲 |
+| 2 | George Young —《Burgundy》 | 11 | full | 1986-10-08 一天錄完的四重奏（Carter／Foster）；封面把 Thielemans 印掉一個 e |
+| 3 | George Young —《Oleo》 | 11 | full | 黑膠 6 軌、CD 8 軌——CD 多出的〈The Gentle Rain〉是 Bonfá 1966 年電影原聲帶的曲 |
+| 4 | Manhattan Jazz Quintet —《Manhattan Jazz Quintet》 | 12 | full | **團的來歷只在這一張**：《Swing Journal》＋ King 的企劃（ja／en 維基兩源）；Matthews 1978 年起就簽在 King 的 Electric Bird |
+| 5 | Manhattan Jazz Quintet —《Autumn Leaves》 | 11 | full | B 面只有兩首長曲；〈Mood Piece〉兩年後進了電影原聲帶；美國 CD 之一由日本コロムビア 代工 |
+| 6 | Manhattan Jazz Quintet —《My Funny Valentine》 | 11 | full | Gomez 換入第一張（ja 維基「元ビル・エヴァンス・トリオ」）；日本黑膠是「N.Y. 1st Call Series」第 2 號 |
+| 7 | Manhattan Jazz Quintet —《Live at Pit Inn》 | 12 | full | 第一張現場；CD 少一軌；西德分售 CD 留著團員介紹段 |
+| 8 | Manhattan Jazz Quintet —《My Favorite Things - Live in Tokyo》 | 11 | full | **同檔公演的雷射影碟《Big Apple Jam》收 11 首，唱片只挑 6 首**；解說 油井正一（生平只在這張寫） |
+| 9 | Manhattan Jazz Quintet —《The Sidewinder》 | 11 | full | ⚠ ⚠ **本層新挖到：同日、緊鄰目錄號 K32Y-6169 的電影《ベッドタイムアイズ》原聲帶**（見 8269） |
+| 10 | Manhattan Jazz Quintet —《Caravan》 | 10 | full | Patitucci／Weckl 是 Chick Corea 的節奏組、只待一年（ja 維基）；**推翻策展層一處**（見 8268） |
+
+**thin 0。** 十張全部有 Discogs 原壓（或同號西德代工）的整筆 credits 與錄音日期（《Chant》除外，見 8271），MJQ 七張另有 ja／en 維基條目可用。
+
+---
+
+## 8267　⚠ 再發版本數：**10 張逐筆重跑 `masters/<id>/versions` 並逐筆打 `releases/<id>`（約 90 筆）；數字改判 0，與策展層第 7763 條逐格相同**
+
+| 卡 | master | Discogs | 孤兒 | Apple 數位 | 聯集 | MB | MB JP vs Discogs JP |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Chant | 436697 | 6 | 0 | +1 | 7 | 2 | 0 vs 1 |
+| Burgundy | 440044 | 5 | 0 | 0 | 5 | 3 | 0 vs 2 |
+| Oleo | 1302968 | 3 | 0 | 0 | 3 | 1 | 0 vs 1 |
+| Manhattan Jazz Quintet | 398434 | 15 | 0 | +1 | 16 | 3 | 0 vs 10 |
+| Autumn Leaves | 592058 | 15 | 0 | +1 | 16 | 3 | 0 vs 9 |
+| My Funny Valentine | 835290 | 10 | 0 | +1 | 11 | 2 | 1（2004）vs 6 |
+| Live at Pit Inn | 655451 | 11 | +2 | +1 | 14 | 1 | 0 vs 8 |
+| My Favorite Things - Live in Tokyo | 834563 | 8 | 0 | +1 | 9 | 3 | 1（2004）vs 4 |
+| The Sidewinder | 655450 | 7 | 0 | +1 | 8 | 2 | 1 vs 4 |
+| Caravan | 1266059 | 6 | 0 | +1 | 7 | 1 | 0 vs 5 |
+
+- **四種漏法逐一查過**：(a) 不只數 `mbNote`；(b) 1970 年代同號再發不適用（本組 1984–89），2016 年後的復刻已在表內（2015 KICJ-24xx 七張全在）；(c) 數位版：Apple jp 八筆逐筆 `lookup`（`℗ 2004 King` 七筆、《Chant》`℗ 1985 King`），八個 RG 都零 `Digital Media` → 各 +1（主線第 1987-B 條）；Apple 藝人頁 20379831 逐筆看過，《Burgundy》《Oleo》零數位版；(d) MB 獨有 0（十個 RG 的 release 全部對得到 Discogs 某一版，《Manhattan Jazz Quintet》的 5d786b0a 標混音日、無法另釘，不計）。
+- **MB JP 少於 Discogs 日本盤，十張全中**（主線第 1965-B 條）→ 十張的盤名與年份逐一人工回查，**改判 0**（MFT 的連字號題照 c-197 b 第 7761 條）。
+- **影像與關聯碟不併計**：中野公演的雷射影碟《Big Apple Jam》（master 816259，2 版）、電影原聲帶 K32Y-6169（master 866198）、1985 年雙 LP 選輯《New York First Call》（master 3260203）。
+
+## 8268　⚠ **推翻策展層兩處**（皆為敘述，收件、年份、盤名、掛名、版本數零改判）
+
+1. ⚠ **《Caravan》卡單 `curatorRisk`「本盤起貝斯／鼓是 Patitucci／Weckl」、c-197 b 第 7777 條「#10 起的節奏組是 Patitucci／Weckl」**：**不在任何卡單的《Plays Blue Note》（K32Y 6230，1988-04-05，Discogs 5403025 credits 逐字 Bass John Patitucci／Drums Dave Weckl）已經是這組節奏**。本盤是本批七張裡唯一的 Patitucci／Weckl 盤，但不是這組節奏的第一張。facts 第 5 條據此寫；「下游不得把 Gadd 寫進本盤」的指示照舊成立。
+2. **《Autumn Leaves》卡單 `curatorWhy`「班底換了一角——貝斯仍是 Charnett Moffett，其餘…」**：它列出的五人與首張逐名相同（日本黑膠 6701478、西德 2771124 credits 同），**班底一角都沒換，換的是錄音師**（首張 Michael Farrow → 本盤 Tom Jung）。facts 第 3 條寫「班底與首張完全相同、錄音師換成 Tom Jung」。
+
+## 8269　⚠ ⚠ **本層新挖到的一格：電影《ベッドタイムアイズ》與《The Sidewinder》同日、緊鄰目錄號**
+
+- **ja 維基《ベッドタイムアイズ》**（原作小說與電影同一條目）逐字：「1987年に神代辰巳監督により映画化」「公開 1987年4月25日」「音楽 = マンハッタン・ジャズ・クインテット」「サウンド・トラック「ベッドタイムアイズ」（キングレコード、K32Y-6169）」；**ja 維基 MJQ 條目**另逐字「この頃、日本映画『ベッドタイムアイズ』の音楽を担当した」。
+- **原聲帶 Discogs 7178722**：`released` 逐字 `1987-03-21`（**與本盤 K32Y 6170 同日**）、formats 標 `Compilation`、`Supervised By: Hideshi Miyajima`、`Producer: 川島重行`、Engineer Tom Jung／高浪初郎／Ed Rak；master 866198 逐軌藝人欄：〈Theme From Bed Time Eyes〉5:43 MJQ、〈Love For Sale〉3:41 樋口可南子、〈Love For Sale〉7:44 MJQ、〈Mood Piece〉9:16 MJQ 等八軌。
+- **本盤**〈Bed Time Eyes〉5:40、〈Love For Sale〉7:44；日本黑膠 8753658 特別感謝逐字「Mattie Matthews, Yamaha & Hideshi Miyajima」。
+- ⚠ ⚠ **本層不判定原聲帶的 MJQ 兩軌是否就是本盤的錄音**：〈Love For Sale〉逐秒同長、〈Bed Time Eyes〉差 3 秒、同一錄音師——很可能是同一份，**但沒有任何一版逐字寫明**。定案的動作是取原聲帶的錄音日期欄，**Discogs 7178722 無 notes、MB 無此 RG，本層查不到**（主線第 1980-B 條：已做到可做的那一步）。facts 只寫「同長」；**下游不得寫成「原聲帶收的就是本盤錄音」，也不得寫成「為電影新錄」**。
+- **`Hideshi Miyajima` 照羅馬字**：Discogs 4480560 零 namevariations；電影條目「製作」欄的 宮島秀司 與它無來源欄位相連 → 不寫漢字、不寫「電影製作人」。
+- ⚠ **《Autumn Leaves》的〈Mood Piece〉也在原聲帶上**（9:16 vs 本盤 12:14，長度不同）——該卡只寫「同樣由這支五重奏演奏」。電影背景只在《The Sidewinder》卡寫，兩卡不重述。
+
+## 8270　團的來歷與生平的分配（派工信第五節第 1、3 點）
+
+- **團的來歷只在首張《Manhattan Jazz Quintet》寫**：《Swing Journal》＋ King 發起（ja 維基「元々は『スイングジャーナル』誌とキングレコードの発案によるプロジェクト」＋ en 維基「formed in 1983 at the suggestion of … Swing Journal and the King record label」兩源）。**組成年兩說**（en 維基 1983、MB begin 1983、ja 維基「1984年にデビュー」）→ facts 不寫組成年。
+- ⚠ **en 維基「won the Gold Disk Award of Swing in 1984」單一來源、無引註**，ja 維基與 Discogs 皆無 → 依獎項規則整格不寫。
+- ⚠ **「累計 20 萬張」只有 ja 維基一源**（無引註、無截止年）→ facts 照寫、notes 標單源；hook 2 用到它，**鉤子層若選它請知悉單源**。
+- **David Matthews**：出生地、James Brown、CTI 那一段 c-196 a《Pin Point》研究稿已用 → 本批不重用；只在首張寫「1978 年離開 CTI 後簽 King 的 Electric Bird」（ja 維基年表，新角度）。
+- **George Young**：生年與城市、1960 年代起紐約錄音室樂手、White Elephant Orchestra、1982 NARAS 紐約分會 MVP、1962 年 Columbia 領銜——**全部只在《Chant》寫**；《Burgundy》寫「第二張」、《Oleo》寫「第三張」與「三張都由 Matthews 製作」。
+- **油井正一** 生平（1918 年生於橫濱，Discogs 1588219 profile）只在中野實況卡寫；《Caravan》只寫職稱。
+- **不寫**：川島重行 profile、高浪初郎 生平（1937／KRC／1964 入 King）、Tom Jung 的 DMP——c-177…c-196 多批已用；MJQ 團員個人生平零字。
+- ⚠ **反向禁令**：en 維基載 George Young 2026-04-23 辭世；Discogs 載他 1991–96 年在 Saturday Night Live Band——**皆與作品無關、不寫**。油井正一 1998 年辭世同理。
+
+## 8271　日期、錄音地與再發內頁的錯
+
+1. **《Chant》六版零一版寫錄音日期**（只有錄音室 Clinton）→ facts 不寫錄音日。
+2. **《Oleo》錄音日兩版不一**（黑膠 3350757「November 16, 1987」、日本 CD 11296602「November 18, 1987」）→ 只寫「1987 年 11 月」（與策展層同判）。
+3. ⚠ **《My Funny Valentine》2000 年 KICJ 8344（35861068）與 2004 年 KICJ 2093（11684910）的 notes 都寫「1986 年 11 月 20 日錄音」——晚於 1986-03-21 首發**；西德 LP 2771230 與歐洲 CD 11246212 逐字 1985-11-20 → 取 1985（jp-2 簡報第三節第 30 點「再發內頁印錯」那一族）。
+4. **《The Sidewinder》西德 LP 封底 ℗© 1985、標籤 ℗ 1987**（2771332 notes 逐字）——master 年 1986 由此來，年份 1987 不改判（c-197 b 第 7760 條）。
+5. **芬蘭 Polarvox 版（4691416）把 1984-07-13 混音日寫成錄音日**——facts 不採。
+6. **Apple 日期八筆**：2004 年上架那批七筆全是錄音日、錄音月、混音日或上架日（策展層第 7760 條已記），facts 一律寫 Discogs 日本原壓的發行日。
+
+## 8272　`live` 與工法
+
+- **`true` 2 張**（Pit Inn、中野）照 c-197 b 第 7762 條三肢全過，本層覆核成立。
+- **`false`：《My Funny Valentine》《The Sidewinder》的「digitally recorded live to two tracks with no mixing or overdubbing」**——facts 一律寫成「直接以數位方式錄進兩軌，不混音、也不疊錄」的工法句，**不出現「現場」「實況」字樣**（主線第 1971-B 條）。
+- ⚠ **Pit Inn 的「團員介紹」**：西德分售 CD《Vol.2》（14607882）tracklist 在第 3、4 軌之間有一個無編號標題列逐字 `Introducing The Members`——本層讀成分售 CD 上的一段台上介紹，facts 寫「〈Rosario〉之前還留著一段台上的團員介紹」；**它只出現在這一張分售 CD 的曲目表上**，日本 CD、2LP、美國 CD 都沒有這一列。
+
+## 8273　同名、同曲、同線（下游引用時必帶掛名與年份）
+
+- **盤名撞池**：`Chant`（seed 聖歌 1994）、`Oleo`（Grant Green 1980）、`My Funny Valentine`（Miles Davis 1965、c-176 弘田三枝子）、`My Favorite Things`（Coltrane 1961）、`The Sidewinder`（Lee Morgan 1964）、`Caravan`（Art Blakey 1963、英國 Caravan 1969）、`Pit Inn`（c-184／c-190 三張）——facts 不點名池中那些碟的盤名（第 1787-B 條），只在 notes 記。
+- **同團同曲不同錄音**：〈Autumn Leaves〉〈Recado Bossa Nova〉〈Rosario〉〈'Round Midnight〉〈S.U. Blues〉〈My Favorite Things〉〈You'd Be So Nice To Come Home To〉——各卡 notes 逐張寫明；〈Recado Bossa Nova〉三張（1985 錄音室、1986 Pit Inn、1987 中野）。
+- **〈Big Apple Jam〉**同時是《The Sidewinder》首軌與中野雷射影碟的片名——只在中野卡寫影碟，《The Sidewinder》卡不寫。
+- **不寫 `MJQ` 縮寫**：ja 維基「バンドの略称はモダン・ジャズ・カルテットと同じMJQ」那一句不放進 facts；《The Sidewinder》的〈Django〉作者 John Lewis（Modern Jazz Quartet 鋼琴手）那層也不寫。
+- **`Face to Face` 已退件，十張 facts 零字。** c-196 b 退的 George Young《Yesterday and Today》零字。
+- **兩組互掃**：本組 10 張的曲題與 a 組 11 張（Sweet Basil 系列等）卡單 `queryAlias` 對掃，同錄音 0；策展層第 7772 條已做全表互掃，本層不重列。
+
+## 8274　人名（逐名可指來源；新立漢字 0，照寫羅馬字維持）
+
+- **漢字**：川島重行（525096 nv）、牧野晃（474621 nv）、高浪初郎（873378 nv；`pairs` 已有 高波→高浪）、白木佳雄（1986875 nv）、内山繁（2267918 realname）、油井正一（1588219 realname）、小山さち子（日本 CD 3325116 的 credit anv 逐字）；電影側 山田詠美、神代辰巳、樋口可南子（ja 維基，非音樂人照原文漢字）。
+- **羅馬字**：Yoshihiro Madachi（兩個漢字形互斥）、Hideshi Miyajima（見 8269）、Koichi Inakoshi、Shigo Yamaguchi、Seiji Kaneko、Naoki Baba、Michio Mikami、David Tan。
+- **David Matthews** 照 MB 實體名（bf0ba0da，MJQ 的 member of band）與 c-196 a 研究稿先例；Discogs 規範名 `Dave Matthews (3)`，《Oleo》日本 CD 另誤連到 `David Matthews (6)`。
+- `name-corrections.json` 的 `pairs`／`_entity_mislinks` 零命中。
+
+## 8275　來源實測（本工作階段）
+
+- **Discogs API**：約 110 次、全 200（masters/versions 10、releases 約 90、artists 9、labels 1、database/search 1），節流 3 秒。
+- **MusicBrainz**：20 次、全 200（十個 RG 的 RG＋release 端點），另 1 次 artist-rels。
+- **維基 `index.php?action=raw`**：en 5（Manhattan_Jazz_Quintet、George_Young_(saxophonist)、David_Matthews_(keyboardist)、The_Gentle_Rain、Oleo_(composition)）全 200；ja 5 中 4（マンハッタン・ジャズ・クインテット、デイヴィッド・マシューズ_(ピアニスト)、ベッドタイムアイズ、スイングジャーナル 200——後者查金唱片獎零命中；**ジョージ・ヤング_(サックス奏者) 404——ja 維基 MJQ 條目有紅連結但條目不存在**）。
+- **Apple**：`lookup` 9 次、`search` 2 次，全 200，403／429 零次。
+- **原廠網域未試**：King 本組全是 1984–89 年 Paddle Wheel／Electric Bird，`kingrecords.co.jp` 在雲端 404 回 0 位元組（簡報三之二），本組以 Discogs 與維基即足。
+
+## 8276　交件自跑
+
+- `node qa-batch.mjs research c197` → **b：10 張、全 full、字元三掃描零標記、src 全 https、hookCandidates ≤2**；報告的兩個標記都在 a 組那一側（a 組交件中：`research-a 千分位逗號` 與 key 集合未齊），不是本組。
+- 自己逐張量：facts 10–12 條；簡體字 0、千分位逗號 0（價格寫 2800／3200）；獎項只有 NARAS 紐約分會 MVP 一項，寫「獲選」；假名只出現在專名（`中野サンプラザ`、`日本コロムビア`、`ベッドタイムアイズ`、`セレクト24Kゴールド`、`小山さち子`）。
+- `desc-tools/jp-proper-names.json`：**append 0**。
+
+## 8277　給上層的事（無需裁定，三件提醒）
+
+1. **《The Sidewinder》× 電影原聲帶**（8269）：同一份錄音與否 uncertain，facts 只寫「同日、緊鄰目錄號、〈Love For Sale〉同長」；鉤子層若要用，照 hookCandidates 的寫法不越線。
+2. **「累計 20 萬張」單源**（8270）。
+3. **推翻策展層兩處**（8268）都是敘述句，不動卡池結構；卡單的 `curatorRisk`／`curatorWhy` 若要回改由主線決定。
+
+**編號區間結算**：本段用 **8266–8277（12 條）**，未越界（另一組 8236–8265）；8278–8295 留空。
