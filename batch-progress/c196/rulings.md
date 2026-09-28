@@ -8,6 +8,8 @@
 > ⚠ **append 之後自己驗一次**：`grep -c '^## '` 兩組的條數都在，而且對方的標題還在。
 
 > **預留（2026-09-28）：研究 a 8176–8205、b 8206–8235。**
+> **預留（2026-09-28）：鉤子 8356–8395。**
+> **預留（2026-09-28）：寫作 a 8396–8410、b 8411–8425。**
 ---
 
 
@@ -731,3 +733,110 @@ Discogs 另有 1985 年美國／加拿大卡帶 `Lester Radio Corporation MC-768
 4. **#7 卡單的「混音工程 高浪初郎」與「原音鋼琴三重奏」**——若主線要讓卡單與研究稿一致，改成「錄音師」「三重奏加打擊」（逐字串替換）；人名字形本身無誤。
 
 **編號區間結算**：本段用到 **8176–8190（共 15 條），未越界（b 組研究層 8206–8235）**；8191–8205 留空。
+
+---
+
+# c-196 b 組研究層（8206–8235）｜2026-09-28
+
+批次 c-196｜b 組 6 張（收件全表，全部第 4 堆）｜研究層
+輸入：`desc-tools/batches/cards/c196-cards.json` 的 `group === "b"` 6 筆
+輸出：`desc-tools/batches/research/c196-b.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節 ＋ `CURATION-BRIEF-bluenote-post1985.md` 附錄二，＋ 主線第 1934-B…2011-B 條 ＋ 本檔策展兩組與 a 組研究層全部條目 ＋ c-178 研究層。⚠ **引用裁定一律寫成「c-1XX 第 NNNN 條」**。
+**本組編號區間 8206–8235（本段用到 8206–8217）；a 組研究層 8176–8205。**
+
+## 8206　總表：**6 張，facts 合計 72 條，每張恰好 12 條；full 6、thin 0；推翻／補正策展層 4 處（判斷 2、事實補正 2），收退結論 0 處受影響**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | The Super Quartet of Mal Waldron Featuring Steve Lacy —《Live at Sweet Basil》 | 12 | full | 四首裡三首的題目都是別張唱片的盤名（Waldron 1981 Enja 四重奏標題曲；Lacy／Waldron 1981 巴黎二重奏的兩張 hat Hut 盤名）；**系列背景（Horst Liepolt、N.Y. 1st Call Series）只寫在本卡** |
+| 2 | Steps —《Step By Step》 | 12 | full | 封底兩行借將聲明（Brecker／Arista、Mainieri／Warner Bros.）；原廠頁「原班 Steps 唯一的錄音室盤」；錄音先於 Pit Inn、出版晚於它 |
+| 3 | The Bill Holman Band —《The Bill Holman Band》 | 12 | full | ⚠ **1989 年第 31 屆葛萊美「最佳爵士器樂演奏－大樂團」入圍**（卡單沒有），同屆得獎的正是 #1 系列裡那張 Gil Evans；Holman 1952 年進 Kenton 頂的就是本盤的 Bob Cooper |
+| 4 | Buster Williams Trio —《Tokudo》 | 12 | full | 五週前 Williams 在 Denon 紐約 PCM 場次當伴奏（Walter Davis Jr.，1977-11／12）；目錄號是 Denon Jazz PCM 號段第一號 |
+| 5 | The Great Jazz Trio —《Great Standards Vol.1》 | 12 | full | ⚠ **「Great Standards」五集是三場錄音、三個國家**（卡單說 Vol.1–4 同場，錯）；後來的授權方是荷蘭 Timeless |
+| 6 | Art Blakey and the Jazz Messengers —《New Year's Eve at Sweet Basil》 | 12 | full | ⚠ **作曲欄查得到**（卡單說查不到）：一首現任鋼琴手 Miller、兩首**前任**團員 Fambrough 與 Donald Brown |
+
+**thin 0。** 每張 `src` 相異網域 2–3 家（Discogs 為主，en 維基補人物與獎項，#2 另有 columbia.jp）。
+
+## 8207　⚠ ⚠ 推翻策展層兩處判斷（都不影響收退）
+
+1. **#5 `The Great Jazz Trio《Great Standards Vol.1》` 的 `curatorRisk`**：逐字「同一次 1988-04 錄音另出了 Vol.2（`28R1-12`）、Vol.3（`25R1-55`，1989）、Vol.4（`25R1-56`，1989）」——**只有 Vol.2 成立**。
+   - Vol.2 CD 10055157 notes 逐字「Recorded at Studio 44, Monster, Holland, April 18, 19 & 20, 1988」（1988-10-25 發行）。
+   - **Vol.3 LP 12217095／Vol.4 CD 15050045 notes 逐字「Recorded at May, 8,9,10, 1989」、`Recorded At: Easy Sound Studio`**（labels/329660：哥本哈根）、錄音混音 Henrik Lund。
+   - **另有 Vol.5**（`ALCR-61`，1990-08-25，15556294）notes「Recorded at A & R Studio, New York City on March 04 &05, 1990」、錄音 Jim Anderson——策展層沒提。
+   - **處置**：「四卡互指、各算一張」改成「**Vol.1／2 同場；Vol.3／4 另一場；Vol.5 第三場**」；五集班底都是 Jones／Vinding／Hart。**c-197 已收的 Vol.2（`Alfa Jazz 28R1-12`）研究時要與本卡對得上**；若日後撈 Vol.3–5，不是本卡的同場錄音。只動 `risk` 敘述，可逆。
+2. **#6 `Art Blakey…《New Year's Eve at Sweet Basil》` 的 `curatorWhy`**：逐字「前三首是團員的原創：Discogs 各版作曲欄空白、照 c-185 b 第 5929 條三步工序只查到曲題」——**不成立**。
+   - **美國 ProJazz 1986（15150951）與 1993 Evidence（2062309）逐軌 `Written-By` 兩版一致**：〈Hide And Seek〉Mulgrew Miller、〈Little Man〉Charles Fambrough、〈New York〉Donald Brown、〈I Want To Talk About You〉Billy Eckstine；空的只是日本原盤那一側（主線第 1987-B 條「整筆 vs 逐軌」同族，這次是「日本版 vs 美國授權版」）。
+   - **而且 Fambrough 與 Brown 在 1985 年底都已離團**（en 維基：Brown 1981–82、Fambrough 1982 年前後隨 Wynton Marsalis 離團）——「團員的原創」改成「**一首現任團員、兩首前任團員**」。甲乙計數不變（甲 4）。
+   - Discogs 作曲欄會錯（派工信第四節），本層以「兩個不同廠牌的版本一致＋兩位作者確為爵士信使前團員」交叉驗。
+
+## 8208　補正策展層兩處事實（不是判斷）
+
+1. **#3〈Goodbye Pork Pie Hat〉的作者欄**：原盤逐字 `Charles Mingus; Joni Mitchell`（卡單只寫 Mingus）——Mitchell 是 1979 年的填詞者（en 維基），本盤是器樂版。**附帶的甲乙計數**：〈The Moon Of Manakoora〉在 en 維基翻唱表裡有 Benny Carter、Eddie 'Lockjaw' Davis、Benny Goodman、Harry James、Gene Krupa 等爵士錄音，照主線第 1965-B 條可改算甲 → **甲 8／乙 1＝11%**（策展層從嚴算 22%）；收件結論不變，只記。
+2. **#5〈Danny Boy〉**：2015 `CDSOL-6400`（16293794）作曲欄逐字 `Jim Weatherly`——**錯**（那是美國鄉村歌手；這首是愛爾蘭傳統旋律配 Frederic Weatherly 的詞）。策展層保守算乙的處置維持；facts 不寫作曲者。
+
+## 8209　⚠ 第 4 堆硬門：6 張逐張重核成立；**#5 記一筆「母帶權利後歸荷蘭 Timeless」的觀察，交主線覆核**
+
+- **#5**：2015 `CDSOL-6400` 公司欄逐字 `Licensed From: Timeless Records (3)`、`Phonographic Copyright (p): Timeless Records (3)`；1990 Limetree `MCD 0031`（labels/154025 profile：**Timeless 的子字標**）與 2015 版都掛執行製作 Ton Molkenboer／Rob Reineke；錄音室 Studio 44 是 Max Bolleman 自己的（367116 profile）。**錄音很可能是荷蘭 Timeless 側替 Alfa 做的製作**。
+  但**全世界最早的版本是 1988 年日本 Alfa 四版（℗© 1988 Alfa Records），最早外國版晚兩年**——照 **c-196 a 第 7547 條**（分界是「這張專輯最早那一版在哪一國」，不是母帶權利人；主線第 2010-B 條照准）**硬門成立，維持收**。**反轉條件與 c-196 a 第 7547 條綁定**：主線若把硬門讀成「母帶權利人／製作方在哪一國」，本卡連同 c-197 的 Vol.2 一起重判。facts 只寫盤面可證的授權行與執行製作名，不寫「Timeless 製作」。
+- **#1**：最早外國版是同號西德代工（Bellaphon `K28P 6471`），美國 Evidence 1992 逐字 `Licensed From: King Records`；**#3**：美國版 ℗ Victor Musical Industries、`Licensed … to GRP`；**#6**：美國 ProJazz ℗ King Records、`Licensed Through: King Records`；**#2／#4**：實體版全日本。
+
+## 8210　版本數：**6 張逐筆重跑 `versions`，數字改判 0；四種漏法逐一查過**
+
+| # | master | Discogs | MB（獨有） | Apple 另加 | 聯集 | 卡單 |
+|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 555500 | 7 | 2（0） | 0（jp 以 `Mal Waldron` 查 200 筆逐筆看過） | **7** | 7 |
+| 2 | 464839 | 7 | 1（0） | +2（jp 1694344104 ℗2018、us 410337668 ℗2010） | **9** | 9 |
+| 3 | 512134 | 4 | 2（0） | 0 | **4** | 4 |
+| 4 | 467188 | 3 | 1（0） | 0 | **3** | 3 |
+| 5 | 1157492 | 9 | 1（0） | 0 | **9** | 9 |
+| 6 | 264957 | 14 | 2（0） | +1（jp 1807510075 ℗1986 King） | **15** | 15 |
+
+⚠ **(b) 漏法**：#2 columbia.jp 頁寫「★2023/7/4配信」——那是 jp 數位版（℗2018）的上架日，已在 Apple 那一格，不另計。⚠ **#5** 的 2018 `UVJZ-10003`／2020 `UVJZ-20027` 都在 versions 表內。**策展層的版本表本批六格全對**（c-178 a 第 4777 條的結論再次成立）。
+
+## 8211　`live`：**#1 `true` 覆核成立；#6 `false` 照 c-196 b 第 7581 條，facts 零「現場／實況」字樣**
+
+#6 本層讀的五版 notes 都只有「Recorded December 30 & 31, 1985 at Sweet Basil」——facts 寫「錄於 Sweet Basil」，**寫作層不得加「觀眾」「現場氣氛」**。與 c-198 a《Dr. Jeckyle》綁定（那張 5836312 notes「Mixed May 8, 1987 at King Studio」），本卡 facts 第 9 條只寫「同兩晚另外四首 1987 年另外出了一張」、不點名。
+
+## 8212　人名：**facts 寫出的漢字人名 14 個，全部逐名回打 Discogs 藝人頁定案；照寫羅馬字 6 個；新改判 0**
+
+- **照漢字**：川島重行（525096 nv，#1／#6）、高浪初郎（873378 nv，#1／#6）、牧野晃（474621 nv）、生田朗（288783 `realname`）、池上比沙之（7285984 名稱欄）、熊谷美広（1677483 anv＋columbia.jp）、田口晃（915559 `realname`）、高田英男（506042 `realname`）、上野勉（875006 nv）、飯田馨（490857 nv）、山本薫（2231519 nv 兩筆一致）、木全信（310111 `realname`）、杉山和紀（272583 nv）、佐藤允彦（#4 系列名單，596931 `realname`，c-195 b 已定案）。
+- **照寫羅馬字**：`Tommy Ueno`（1328668 nv `上野 勉`，與 875006 是否同一人無第二來源，照 c-196 b 第 7585 條）、`Yoshio Ozawa`（兩變體互斥）、`Teruo Isono`（`realname` 與藝名兩系）、`Takashi Misu`、`Tsukasa Aoyama`、`Ryonosuke Hommura`（盤面 anv）。
+- **`name-corrections.json`**：`pairs` 命中 1（`高波→高浪`，取正寫）；`_to_romaji` 的 `相見明 → Akira Aimi` 本組未寫進 facts。
+
+## 8213　反向禁令（逐張）與獎項
+
+- **與作品無關、未寫**：Waldron 2002／Lacy 2004／Liepolt 2019／Holman 2024／Cooper 1993／Blakey 1990／Miller 2013／Fambrough 2011／Brecker 2007／Grolnick 1996 年辭世；生田朗 的配偶與 1988 年辭世；Isono 卒年；Neil Dorfsman 後來的 Dire Straits／Sting 葛萊美；木全信 卒年。
+- **與作品綁定、已標時序而寫**：#4「此後直到 1998 年只再出過一張領銜作」（本盤在他目錄裡的位置）。
+- **獎項**：#3 **入圍**（1989 第 31 屆「最佳爵士器樂演奏－大樂團」，en 維基逐年表引 grammy.com）；#1 那張 Gil Evans **得獎**（同屆同類，en 維基《Bud and Bird》引 NYT 1989-02-23）——兩卡寫法分工：**#1 寫製作人與得獎、#3 寫入圍落敗**。**未寫**：Liepolt 條目的「Blakey《Live at Sweet Basil》1986 nominated」（無類別、條目掛 citations needed）、木全信 的「兩次葛萊美提名」（無年份類別）、Buster Williams 的 GJT 提名（前批 GJT 班底格已用）。
+
+## 8214　⚠ 池中迴避（第 1787-B 條）與同批串連點（**每一條只用在一張卡上**）
+
+1. **King × Liepolt 製作線背景**：只在 #1（派工信第五節第 1 點）；#6 只掛製作人名。**c-197 那幾張（Gil Evans、Blakey《Hard Champion》《Live at Sweet Basil》、Remembered）研究時不要再寫 Liepolt 生平與 N.Y. 1st Call Series**；#1 facts 提到的 Gil Evans 得獎盤與 1986 年 Dolphy／Little 紀念演出都是 c-197 在途卡，**不點名盤名**。
+2. **#1 ↔ #3（同一屆葛萊美）**：分工見 8213。
+3. **#4 ↔ a 組《Imo Live》同三人、同有〈Someday My Prince Will Come〉**：a 組用了 Sphere、Barron 生平、Riley 的 Monk 年代；**本卡一格都沒用**，Barron／Riley 只寫樂器；兩卡不要都拿這首當鉤子。
+4. **#6 ↔ c-197《Hard Champion》《Live at Sweet Basil》同一期班底**：本卡已用 Blanchard 入團（Marsalis 推薦、音樂總監）、Miller 入團（Blanchard／Harrison 推薦）、Plaxico 十二張——**c-197 研究時避開這三格**。
+5. **#5 ↔ c-197 Vol.2**：同場錄音（8207 第 1 點）；本卡已用 Vinding 與 Bolleman 的生平、五集三國——**Vol.2 研究時避開**。
+6. **不點名的池中／在途盤**：`Mingus Ah Um`（seed）、Joni Mitchell 那張、Walter Davis Jr. 的 Denon 盤（c-137 有他別張）、Archie Shepp／Dollar Brand 的 Denon PCM 盤、Pit Inn 那張（c-195 a 已點名，本卡避開同句型）、`Wanderlust`（池中 0，但年份兩說，只寫「同一時期」）。
+7. **跨組曲題互掃**（主線第 1987-B 條固定動作）：本組 6 張的曲題對 a 組 9 張研究稿 facts 逐一比——**只有〈Someday My Prince Will Come〉（#4 ↔ a #9）一個交集**，不同錄音。
+
+## 8215　來源實測（本工作階段）
+
+- **Discogs API**：releases 約 40、masters／versions 8、artists 約 30、labels 6、artist-releases 與 search 約 12——**429 兩次（退避後 200），其餘全 200**。
+- **MB**：2 次，200。**en 維基 `action=raw`**：約 20 次；404 四次（`Eddie_Moore_(musician)`／`(drummer)`、`Greenwich_Village_Jazz_Festival`；`Bill_Holman` 與 `Eddie_Moore` 是消歧義／重定向頁——⚠ **同名陷阱**：Holman 正確條目是 `Bill_Holman_(musician)`）。**ja 維基**：1 次 200。
+- **columbia.jp**：`prod-info/COCB-54246/` **200、內容命中**（UHQCD 商品頁：定位句、【オリジナル】1981-06-25、解說 熊谷美広）；`prod-info/COCB-53844/` 與 `artist-info/steps/discography/COCB-54246.html` 404（判命中看內容）。
+- **Apple**：search 3 次、lookup 3 次，**403／429 零次**。
+
+## 8216　交件前自跑
+
+- `node qa-batch.mjs research c196` → **a 9 張、b 6 張全 full；key 與卡單完全一致；全部通過**（初跑一次是 b 組還沒交齊的 key 缺集）。
+- 自量：6 張 facts 各 12 條、`src` 72/72 完整 https、`hookCandidates` 每張 2 條、千分位 0、獎項兩項都寫明屆次、類別與「入圍／得獎」。
+- `desc-tools/jp-proper-names.json`：**本批 append 0 個**（SIMP 零誤報），既有條目一個都沒動。
+
+## 8217　⚠ 給主線的四件（本層照邊界不動那些檔）
+
+1. **#5 卡單 `curatorRisk` 的「Vol.1–4 同場」改成「Vol.1／2 同場、Vol.3／4 1989-05 哥本哈根、Vol.5 1990-03 紐約」**（8207 第 1 點）；c-197 Vol.2 那張的 `risk` 若有同句也一併改。
+2. **#6 卡單 `curatorWhy` 的「前三首是團員的原創、作曲欄空白」改成「作曲欄見美國 ProJazz／Evidence：Miller（現任）、Fambrough 與 Donald Brown（前任）」**（8207 第 2 點）。
+3. **#5 的硬門觀察**（8209）：母帶權利後歸 Timeless——與 c-196 a 第 7547 條同一條分界，**建議主線覆核時兩件一起看**。
+4. **#3 甲乙計數可放寬為 8／1**（8208 第 1 點）——結論不變，只在主線要統一計數時用。
+
+**編號區間結算**：本段用到 **8206–8217（共 12 條），未越界（a 組研究層 8176–8205）**；8218–8235 留空。
