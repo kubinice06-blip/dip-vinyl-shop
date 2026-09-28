@@ -666,3 +666,10 @@
 - **`Love Records TP-103`（`日野皓正《Journey to Air》`，1970；MB rg 9780ab16）**——Canyon 系、不在門內；**若日後把 Canyon／ポニーキャニオン 系收進門內，從這裡撈回**。
 - **德國 Enja 原盤、日本有授權版的三張**（`Enja 2028`《Taro's Mood》、`Enja 2080`《Banslikana》、`Enja 3001`《Inner Space》）——**原盤國別的門不放寬就不會撈回**；建議記進 `audits/foreign-artist-japan-productions.md` 的反方向（日本藝人的外國原盤）一節（本層不動那個檔）。
 - **編號區間結算**：本段用到 **7236–7265（共 30 條），區間用滿、未越界（b 組 7266–7295）。**
+
+### 7265 附記（2026-09-28，主線第 2008-B 條）：**`渡辺貞夫《Bossa Nova Concert》` 從「釘 c428c830」改走 §1 人工身分；第 7254 條的釘選作廢**
+
+- **主線裁定理由**：MB 的 RG c428c830 只有一筆 1989 年 Denon `DC-8556` 18 軌 `Compilation` CD；釘上去等於把卡的身分、CAA 封面與版本數都指到一張合輯 CD——**「Discogs 歸在同一個 master」不足以讓那個 RG 代表 1967 年 13 軌原盤**。（主線訊息寫「1969 年原盤」；卡上年份維持第 7245 條查實的 **1967**，slice 的 1969 早已改判。）
+- **卡單改動**（只動 `prop-a.json` 這一筆）：`identitySource: "manual"`；`mbNote` 零 MBID；`mbAbsenceProof` 5 條查詢，寫明 c428c830 只有 1989 合輯 CD。另外：`渡辺貞夫` 名下 88 個 RG 與 `Sadao Watanabe Quintet` 名下 4 個 RG 都沒有 1967 原盤，其中《Bossa Nova '67》是 Victor `SJV-274` 錄音室盤（第 122 條形狀，已排除）；原壓 `JAZZ-9` 與三個 13 軌再發的目錄號也都查無。`manualEvidenceUrls` 3 個（Discogs release 14873328、master 949793、Apple）；`manualRuling` 引主線第 2008-B 條；**`coverSourceHint: "apple-verified-collection"`，精確 collectionId 1868591470**（13 軌、℗ 1967 Nippon Columbia，軌序與 LP 逐軌相同）。年份、廠牌、`live`、曲風、版本數 8 都不變。
+- **修正後的橫向數字**：**§1 人工身分 5 → 6 張**（封面 Apple 精確 collectionId 4、`manual-scan` 2），**釘 rgMbid 6 → 5 張**；第 7236 條總表 #6 那一列的「釘 c428c830」、第 7244 條「MB 有 RG → 釘 6」、第 7264 條「建議主線覆核」第 1 點，都以本附記為準。收 11 ／ 退 7 不變。
+- `node batch-progress/c192/chk-prop.mjs a b` → 合計 23 張、20 位｜**標記 0**；零 git 操作。
