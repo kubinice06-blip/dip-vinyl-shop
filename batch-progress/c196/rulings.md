@@ -590,3 +590,144 @@ Discogs 另有 1985 年美國／加拿大卡帶 `Lester Radio Corporation MC-768
 3. ⚠ **兩組曲題表互掃已雙向做過**（c-196 b 第 7589 條、本組第 7558 條），**唯一的跨組串連是 #17 ↔ b 組《Tokudo》同三人**。
 
 **編號區間結算**：本節用到 **7536–7564（共 29 條），未越界（b 組 7566–7595）**；7565 留空。
+
+
+---
+
+# c-196 a 組研究層（8176–8205）｜2026-09-28
+
+批次 c-196｜a 組 9 張（收件全表，全部第 4 堆）｜研究層
+輸入：`desc-tools/batches/cards/c196-cards.json` 的 `group === "a"` 9 筆
+輸出：`desc-tools/batches/research/c196-a.json`
+規則照 `desc-tools/prompts/research-base.md`（含雲端線三處例外：產出直接寫進 repo、每張 8–12 條 `facts`＋完整 https `src`、`key` 逐字複製、`status` 與 `coverage` 並存）→ `CURATION-BRIEF-hoyi.md` → `CURATION-BRIEF-jp2.md` → `CURATION-BRIEF-jp1.md` 第〇節 ＋ `CURATION-BRIEF-bluenote-post1985.md` 附錄二，＋ 主線第 1934-B…2011-B 條 ＋ 本檔策展兩組全部條目 ＋ c-178 研究層兩段。⚠ **引用裁定一律寫成「c-1XX 第 NNNN 條」**。
+**本組編號區間 8176–8205（本段用到 8176–8190）；b 組研究層 8206–8235。**
+
+## 8176　總表：**9 張，facts 合計 108 條，每張恰好 12 條；full 9、thin 0；推翻／補正策展層 6 處；另抓到探測層誤命中 1 筆（交主線）**
+
+| # | 掛名 —《盤名》 | facts | status | 本層最值錢的一格 |
+|---:|---|---:|---|---|
+| 1 | Marlene —《SOFTLY, AS IN A MORNING SUNRISE》 | 12 | full | ⚠ **版本 3 → 4**（1990-10-15 `CSCL-1309`，兩家資料庫都沒建）；1983-09 錄、1985-12 才出 |
+| 2 | Lew Tabackin —《Angelica》 | 12 | full | 兩位小號一人一面；〈Epistrophy〉作曲是 Monk **與 Kenny Clarke** |
+| 3 | Art Pepper —《Stardust》 | 12 | full | 標題曲是另一個 take（正式 take 在 1980《So in Love》）；⚠ **日本以外第一版是 2019 數位、不是 2021／2023** |
+| 4 | Richie Beirach —《Ballads》 | 12 | full | ⚠ ⚠ **試聽誤命中：指到 `Balladscapes`（2016）**；〈Leaving〉〈Sunday Song〉九年前在 ECM 獨奏盤彈過 |
+| 5 | Jackie McLean with The Great Jazz Trio —《New Wine in Old Bottles》 | 12 | full | Christgau A−「十多年來最好的 McLean」、DownBeat 五星；前一天同三人同錄音室同錄音師 |
+| 6 | Ronnie Cuber —《Pin Point》 | 12 | full | 美國版改題《Two Brothers》並加印 Sanborn；製作編曲 David Matthews |
+| 7 | Bobby Lyle Trio —《Night Breeze》 | 12 | full | Stanley Clarke 是〈Spain〉1972 年首錄的貝斯手；⚠ **高浪初郎 的 credit 是 `Engineer`、不是混音** |
+| 8 | Chet Baker Quartet —《Singin' in the Midnight》 | 12 | full | ⚠ **同場錄音的 Timeless 兩張最早是 1989／1990（en 維基寫 1987，兩家資料庫都否定）** |
+| 9 | Kenny Barron Trio —《Imo Live》 | 12 | full | 三人＝ Sphere 的節奏組；Sphere 首張錄於 Monk 過世那天，四個月後本盤又彈 Monk |
+
+**thin 0 張。** `src` 網域：Discogs 9/9、en 維基 9/9（其中 Art Pepper／So in Love／Spain／Light as a Feather／Sphere／Blood Count 等作品條目）、ja 維基 1、Apple 店面 2（兩條都是「數位版」那一格的唯一來源）。
+
+---
+
+## 8177　⚠ ⚠ 硬門檻「日本是原盤」逐張複核：**9/9 成立；版本表裡沒有一張出現比日本版更早、而且不掛日本公司 ℗ 的外國版本 → 本層零張停下**
+
+- **#3 `Art Pepper《Stardust》`（邊界，c-196 a 第 7547 條）**：日本以外的最早版本本層改判為 **2019 年 Apple us 的 11 軌擴充數位版**（`℗ 2019 Widow's Taste Music`，bonus 軌 releaseDate 逐字 2019-09-13）——**仍晚於日本 1985-03-21 三十四年，硬門檻不受影響**。facts 照「美國錄音、專輯最早在日本」的時序寫，零處寫「日本錄音」；同場的 Galaxy 那張零字點名。
+- **#6／#7**：西德 Bellaphon 版沿用日本目錄號、逐字 ℗ King；#7 的 MB 最早 `1987 DE` 只到年——**主線第 2010-B 條的日期精度陷阱在研究層再現一次**，判定照 ℗ 行。
+- **#6 美國 CD `CDJ 623`** 逐字 `P 1986 King Records`；⚠ **en 維基 Ronnie Cuber 條目把「1985: Two Brothers (AMG)」列成另一張——錯**（錄音日 1985-11-21／12-09，1985 年內不可能發行，美國 CD 七軌與日本盤逐軌同題同秒）。
+- **#8** 見第 8181 條（同場錄音的外國版時序）。
+- **#9** 外國版最早 2010 英國 Candid；2001 PJL 逐字 `Phonographic Copyright (p): Candid`、2023 Octave Lab 逐字 `Licensed From: Candid Records, LLC`——**Whynot 目錄權利後來歸 Candid，是版權轉手，不是更早的外國原盤**。
+
+## 8178　⚠ ⚠ 再發版本數（派工信第二節四種漏法逐張跑）：**9 張逐筆重跑 `masters/<id>/versions`，數字改判 1 筆（#1 3 → 4）；內容補正 1 筆（#3 日本以外最早一版的年份）**
+
+| # | 策展層聯集 | 本層 | 差 | 哪一種漏法 |
+|---:|---:|---:|---:|---|
+| 1 | 3 | **4** | **+1** | **(b) 再發沒進版本表**：ja 維基 マリーン 條目 discography 逐字列 `1990年10月15日 CSCL-1309`；Discogs 3 版、MB 1 筆都沒有 |
+| 2 | 3 | 3 | 0 | 四種全零（ja 維基 ルー・タバキン 只列一行、無再發） |
+| 3 | 6 | 6 | 0 | 內容補正：Apple 那一版不是「2021／2023 之後」，是 2019（第 8177 條）；RSD 2021 盒裝《Promise Kept》是另一個 master（`Compilation, Box Set`），不計入 |
+| 4 | 5 | 5 | 0 | (d) MB 獨有 1（SACD `SRGL-615`）已在策展層計入；(c) Apple 零（見第 8179 條） |
+| 5 | 11 | 11 | 0 | (c) Apple jp 1 已計入；MB 轄下 JP 1 vs Discogs 日本 6，漏的正是原壓與兩張平價再發 |
+| 6 | 9 | 9 | 0 | 孤兒卡帶 1、Apple 1 已計入 |
+| 7 | 7 | 7 | 0 | Apple 1（七軌、多〈Poinciana〉）已計入 |
+| 8 | 4 | 4 | 0 | 四種全零 |
+| 9 | 6 | 6 | 0 | Apple 兩種查法零命中 |
+
+→ **MB 平均低估從策展層的 71% 變成 72%**（#1 改成 3/4）。⚠ **本組唯一的漏是 (b) 形、而且只有維基有**——與主線第 1948-B 條「1987–89 年段 ja 維基反而是最有產出的來源」同一個方向；c-178 研究層 `COKM-44807`（原廠頁有、Discogs 沒建）是同形。
+
+## 8179　⚠ ⚠ ⚠ **探測層誤命中：`Richie Beirach|Ballads` → Apple us 1090656136 `Dave Liebman & Richie Beirach《Balladscapes》2016`（13 軌）——請主線降級**（本層照邊界不動 `previews.json`）
+
+- **形狀**：**本卡的短盤名 `Ballads` 是 Apple 盤名 `Balladscapes` 的前綴、掛名 `Richie Beirach` 是聯名的一半**，年份漂移 30。與主線第 2011-B 條三（短掛名摺疊後落在長掛名裡）是**同一個機制的盤名版本**。
+- **查實本盤市場上沒有數位版**：Apple jp／us 以 `Richie Beirach Ballads`、片假名 `リッチー・バイラーク` 兩種查法，藝人頁 17 張（ECM、Trio、Storyville、A&M 各張）都不含本盤。**應改為 unavailable**。
+- ⚠ 建議探測層的「短名 ≤N 字只接受完全相等」（`looseArtistOk` 那一道）**對盤名也做一次**。
+
+## 8180　⚠ `Art Pepper《Stardust》` 的試聽：**指到的是對的專輯，但首軌可能不是 1985 年那個 take**
+
+`previews.json` 的 `ready us 1707025925` 是本盤的 2019 擴充版（正確的專輯）；**但 Apple 與 2023 Omnivore 盤把首軌標成 `My Friend John (Alternate A)` 7:49，日本 1985 CD 逐字 7:23**——差 26 秒，本層判不出是另一個 take 還是日本盤剪短（其餘三軌秒數都對得上）。另 Apple `trackCount` 11、`lookup` 只回 10 軌。**不建議降級**；若試聽抽到首軌，交本機知悉。
+
+## 8181　⚠ ⚠ `Chet Baker Quartet《Singin' in the Midnight》`：**en 維基把同場的 Timeless《As Time Goes By》寫成 1987 年發行——若屬實，本盤一半曲目會變成既有錄音；本層把那個動作做完了，不成立**
+
+主線第 1980-B 條「一個動作就能定案」：本層打了 **Discogs master 420314（12 版，最早三筆全是 1990：歐洲 CD 2359001／20378725、荷蘭 LP 3330659）** 與 **MB rg fc33e1ab（最早 1990 US）**——**兩家一致是 1990**；Cool Cat master 456234 最早 1989 荷蘭 LP。**本盤 1987 先出（CD 1987-04-25），不是合輯**，與 c-196 a 第 7558 條第 1 點一致。en 維基 infobox 的 1987 查無佐證、不採。
+⚠ **Cool Cat 的〈'Round Midnight〉10:30 是另一個 take；As Time Goes By 的 7:33 對本盤 7:35 很可能同 take**——facts 只寫前者。
+⚠ **錄音日**：本盤三版逐字 17／18／19 三天，兩張 Timeless 逐字 17／18——facts 照本盤。
+
+## 8182　推翻／補正策展層（卡單 `curatorWhy`／`curatorRisk`）：**6 處，收件結論全部不變**
+
+1. **#1 版本數 3 → 4**（第 8178 條）。
+2. **#3「美國要到 2021／2023 年 Omnivore 才出」→ 日本以外第一版是 2019 年數位擴充版**（策展層自己的版本表已列 Apple 2019，敘述句沒跟上）。
+3. ⚠ **#7「混音工程 高浪初郎」→ 盤面 credit 逐字只寫 `Engineer`**（與 Mad Hatter 的 Gerry E. Brown 並列），**三版都沒有 `Mixed By`**——facts 寫「錄音師」。人名字形 `高浪初郎`（873378 nv）確認無誤（派工信第五節第 7 點）；**派工信那一句的「混音工程」同樣照盤面改**。
+4. **#7「原音鋼琴三重奏盤」→ Stanley Clarke 逐字 `Acoustic Bass, Electric Bass`、另有打擊 Lenny Castro**——facts 寫「三重奏加打擊、原聲與電貝斯換著用」。
+5. **#2「逐軌作曲 Thelonious Monk ×3」→〈Epistrophy〉是 Monk 與 Kenny Clarke 合寫**（en 維基 Monk 作品表逐字 `co-written with Kenny Clarke`、1941-06-02 登記版權）——Discogs 作曲欄錯（派工信第四節）。
+6. **#2 B2 曲題**：兩筆 LP 逐字 `Unrequested Love`、CD 逐字 `Unrequited Love`——卡單取 LP 形；facts 取 CD 形（英文慣用語、且 CD 有逐軌樂器與時長），**寫作層照 facts**。
+
+⚠ 另兩處是 Discogs 自己的錯、策展層沒寫到：**#4〈Infant Eyes〉作曲欄多掛了 Jean Carn**（她是後來填詞演唱的人）；**#5 製作人**：en 維基 infobox 寫「Kiyoshi Itoh and Yasohachi Itoh」，**原壓與美國版 credits 都只掛 伊藤潔（406894）**——facts 照盤面，**寫作層不得寫 伊藤八十八**（他是 #1 的製作人，406896，兩人不同）。
+
+## 8183　⚠ 人名：**facts 寫出的漢字人名 29 個，全部逐名回打 Discogs 藝人頁（`realname`／`namevariations`）定案；照寫羅馬字 9 個；本層新改判 0、確認前批改判 1（`高浪初郎`）**
+
+1. **定案來源**：伊藤八十八（406896 rn）、鈴木良博（382386 rn）、野口久光（1798939 rn）、保泉ヒロ（995079 nv）、佐藤秀春（3736206 nv）、秋吉敏子（503241 rn）、タイガー大越（306609 rn）、大熊康夫（4580058 rn）、大和明（2384348 rn）、中村慶一（383525 nv）、深田晃（722837 nv）、鈴木浩二（652272 rn）、富田哲郎（256444 nv）、加藤靖隆（2024890 rn）、細川晃（2296964 rn）、伊藤潔（406894 rn）、守崎幸夫（1142677 nv）、鯉沼利成（1020059 rn）、操上和美（2265672 rn）、川島重行（525096 nv）、牧野晃（474621 nv）、高浪初郎（873378 nv）、立川直樹（386060 rn）、山内康廣（2256181 nv）、悠雅彦（840377 nv）、及川公生（446863 rn）、稲岡邦弥（851867 rn）、丸茂正樹（389467 rn）、田中丈晴（4293542 nv）。
+2. **照寫羅馬字 9 個**：`Nobuo Ohtani`（零變體）、`Yoshinori Sakuma`（nv `佐久間義則`／`佐久間義徳` 兩形矛盾，第 1967-B 條）、`Masato "Paul" Morita`、`Yoshihiko Nozawa`、`Kazuhiro Koike`、`Mamoru Kamikawa`、`Makoto Kimata`（Timeless 盤面 credit；c-196 b 第 7585 條已定案 木全信，寫作層若寫漢字照那一條）、`Heyqlow Kobayashi`（照 c-195 a 同一人的寫法）、`Popping Murakami`。
+3. ⚠ **同人疑似、不合併**：`Petea Huyts`（5904297）≈ Timeless 的 `Peter Huijts`（367117）、`Mamoru Kamikawa`（13682242）≈ `Mamoru Kamekawa`（2452707）——**不同資料庫實體、沒有第二個來源證同人**，facts 各照盤面寫。**不建議進 `pairs`**（那一欄是「已證實寫錯」）。
+4. **`name-corrections.json` 命中**：`伊藤清→伊藤潔`、`中村建一→中村慶一`、`高波初郎→高浪初郎` 三組都取正寫；`_romaji_collisions`／`_entity_mislinks` 零命中。
+5. ⚠ **本層自己抓到並改掉兩處「編出來的假名專名」**（初稿寫了 `KRC 國際ラジオセンター`——Discogs 原文只有羅馬字 `KRC Kokusai Radio Centre`；以及 `日本ポリドール`——盤面只有 `Polydor K.K.`）→ 都改成盤面原文。**「查不到就寫羅馬字」也適用於公司名。**
+
+## 8184　反向禁令（逐張）：**與作品直接綁定而寫進 facts 的 3 項；與作品無關而未寫的 17 項**
+
+- **寫**：#3 Art Pepper 1982-06-15 過世（本盤是遺作出版，只寫時序與一句死因）；#4 Strayhorn 1967 年過世（〈Blood Count〉曲子本身的來歷）；#4《Ballads 2》1987（直接續作）。
+- **未寫**：Foster 1986 接掌 Basie 樂團與兩座葛萊美、Bridgewater 接手 Loud Minority、Persip／Heath／Newman／Dannie Richmond／Tony Williams／Hank Jones／McLean／Cuber／Sanborn／Wadenius／Ben Riley／悠雅彦／Beirach（2026-01）的歿年、Lyle 1987 簽 Atlantic 與之後的榜單、Chet Baker 1988 過世、Sphere 1988 解散與重組、Cuber 的 Mingus Big Band 時期。
+- ⚠ **Marlene 生平零字、她的他張盤名零字**（派工信第五節第 6 點）。
+
+## 8185　獎項與評分（第 1 節規則：入圍／得獎逐項分開）
+
+- **#7〈The Shadow Of Your Smile〉**：**第 38 屆奧斯卡最佳原創歌曲——得獎**；**第 8 屆葛萊美年度歌曲——得獎**（Mandel 與 Webster）；同屆 Tony Bennett 的兩項是入圍，未寫。**都是那首歌的獎，不是本盤的**——寫作層不得寫成本盤得獎。
+- **#5**：Christgau A−、DownBeat 五星（1979-05-17）是評分，不是獎項；AllMusic 4.5 星未寫。
+- 其餘 7 張零獎項。
+
+## 8186　池中迴避（第 1787-B 條）與曲題撞他卡盤名
+
+- **盤名撞**：#4《Ballads》↔ apex:hall `John Coltrane《Ballads》`（facts 零字，〈Naima〉只寫作曲者名）；#3《Stardust》↔ seed Willie Nelson 等。
+- **曲題撞池中盤名**：〈Monk's Dream〉〈Groovin' High〉（#2）、〈On Green Dolphin Street〉（#4／#6 ↔ seed `宮沢昭`）、〈Spain〉首錄那張（#7 ↔ seed `Light as a Feather`，**facts 只寫年月與「Corea 領軍」**）、〈Angelica〉出處（#2 ↔ seed《Duke Ellington & John Coltrane》）、#3 自傳書名《Straight Life》↔ seed 同名專輯（notes 已警告）。
+- ⚠ **#6 Cuber 的前一張 King 盤《Passion Fruit》已在 c-197 卡單**——facts 零字、也不寫「第二張」序數；**Manhattan Jazz Quintet（c-197 八張）只以藝人名出現**。
+- ⚠ **#9 的 `Sphere`**：池中另有一支同名團（seed《Inside Ourselves》1974）——facts 每次都帶「1977 年組成、以 Monk 中間名命名」的限定語。
+
+## 8187　⚠ ⚠ 同批串連點（**每一條只能用在一張卡上**，給鉤子層當稀缺資源）
+
+1. **錄音師 David Baker**：#1（1983 Media Sound）與 #5（1978 Sound Ideas）——**#5 寫、#1 只掛名字**。
+2. **執行製作 川島重行**：#6 與 #7——**#6 寫經歷、#7 只掛名字**。
+3. **鼓手 Ben Riley**：#8、#9 與 b 組《Tokudo》——**#8 用「Monk 四重奏 1964–67 ↔〈'Round Midnight〉」、#9 用 Sphere**，b 組那張請另找軸。
+4. **#9 ↔ b 組《Tokudo》同三人**（c-196 a 第 7558 條第 4 點）：兩張都有〈Someday My Prince Will Come〉、不同錄音；facts 未寫那張，**兩卡不得都寫「三人組合」的同一句**。
+5. **Artists House（John Snyder）**：#3 的製作廠牌、#8 Danko 1977 年那張 Chet 錄音也是它——**#3 寫**。
+6. **Sound Ideas Studios**：#5 的錄音地；#3 的 notes 記了 1979-02 Hank Jones／Ron Carter 在同一間替 Pepper 錄《So in Love》的另一半——**不是 #3 的錄音，寫作層不要混**。
+7. **同題不同錄音**：〈In A Mellow Tone〉(#1)＝〈In A Mellotone〉(#3)、〈My Foolish Heart〉(#4／#8)、〈Naima〉(#4／#7)、〈'Round About Midnight〉(#5)／〈'Round Midnight〉(#8)、〈On Green Dolphin Street〉(#4／#6)、〈The Shadow Of Your Smile〉(#7 ↔ c-195 a 兩張)。
+
+## 8188　來源實測（本工作階段）
+
+- **Discogs API**：releases 約 35、masters 9＋4（Timeless 兩張、《Promise Kept》、Milestones 對照）、artists 約 70、labels 1、artist-releases 12 頁——**全部 200**。
+- **MB**：9 個 RG ＋ 2 次搜尋（Timeless 兩張），全部 200。
+- **en 維基 `action=raw`**：約 30 次，404 四次（`Frank_Foster_(saxophonist)`、`Small_World_(Gypsy_song)`、`Mad_Hatter_Studios`、`A_Child_Is_Born_(song)`——條目不存在或名稱不對，不是封鎖）；⚠ **同名陷阱**：`Frank_Foster` 是消歧義頁（正確條目 `Frank_Foster_(jazz_musician)`）、`Epistrophy` 是消歧義頁、`Ask_Me_Now` 導向 Monk 作品表。
+- **ja 維基 `action=raw`**：2 次全 200（マリーン 的 discography 表給出本組唯一一筆版本補正）。
+- **Apple**：search 7 次、lookup 5 次，**403／429 零次**。
+- ⚠ **本組沒有試原廠網域**：九張的原壓分屬 CBS/Sony、東芝 Eastworld、ビクター、East Wind、King Electric Bird、Polydor、Whynot——前兩批實測這一族的原廠頁對外國藝人盤零產出，而本組每張的 12 條都已由 Discogs／維基補滿。
+
+## 8189　交件前自跑
+
+- `node qa-batch.mjs research c196` → **a 組 9 張 full、字元三掃描 0**（初跑 1 筆千分位：#9 notes 引封底原文 `¥2,500`，已改寫成「定價（2500 日圓）」）；**`key 集合與卡單不一致` 1 筆是 b 組研究稿尚未交齊（b 目前 1 張）**，不是本組的問題。
+- 自量：9 張 facts 各 12 條、`src` 108/108 完整 https、`hookCandidates` 每張 2 條、千分位 0、獎項兩項都寫明屆次類別與「得獎」。
+- `desc-tools/jp-proper-names.json`：**本批 append 0 個**（SIMP 零誤報），既有條目一個都沒動。
+
+## 8190　⚠ 給主線的四件（本層照邊界不動那些檔）
+
+1. ⚠ ⚠ **`previews.json`：`Richie Beirach|Ballads` 降級為 unavailable**（第 8179 條）；建議探測層把「短名只接受完全相等」擴到盤名。
+2. **`caa.json`：#3《Stardust》與 #5《New Wine in Old Bottles》兩筆 `probeError: 503x4`**——是探測失敗、不是沒有圖，請重跑封面探測。
+3. **#1 版本數 3 → 4**（`CSCL-1309`，1990-10-15，ja 維基單一來源；可逆）；**#3 的「美國第一版 2021／2023」敘述改 2019**——兩處都只在研究稿生效，卡單不必改。
+4. **#7 卡單的「混音工程 高浪初郎」與「原音鋼琴三重奏」**——若主線要讓卡單與研究稿一致，改成「錄音師」「三重奏加打擊」（逐字串替換）；人名字形本身無誤。
+
+**編號區間結算**：本段用到 **8176–8190（共 15 條），未越界（b 組研究層 8206–8235）**；8191–8205 留空。
