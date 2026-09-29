@@ -26,6 +26,9 @@ const OUT_SRC = 'desc-tools/batches/artist/output'
 const OUT_DIR = 'data/artist-intros'
 
 const norm = s => String(s || '').normalize('NFC').trim().toLowerCase()
+// 產線備註外洩防線（2026-09-29 店主要求「字數・第幾輪」這類備註絕不能出現在正式版）：
+// 字數標註、批次名、試做輪次、產線用語。qa-artist.mjs out 用同一條。
+export const META_LEAK = /\d{2,3}\s*字(?![一-鿿])|第[一二三四五六七八九十\d]+輪|\bar-[a-z0-9-]+|試做|補洞|審稿|寫作層|研究稿|事實庫|\b(?:status|full|thin)\b\s*[:：]/
 export function shardOf(key) {
   let h = 0x811c9dc5
   for (let i = 0; i < key.length; i++) {
@@ -53,7 +56,10 @@ for (const f of files) {
     if (!intro) errors.push(`${f}：${e.name} 沒有正文`)
     if (n > 250) errors.push(`${f}：${e.name} ${n} 字，超過 250`)
     if (key === 'various artists') errors.push(`${f}：Various Artists 不寫介紹`)
-    entries.set(key, { name: e.name, intro, rev })
+    const leak = intro.match(META_LEAK)
+    if (leak) errors.push(`${f}：${e.name} 正文混入產線備註「${leak[0]}」`)
+    // 分片只放前端要顯示的兩欄。批次名、字數、狀態等產線資訊留在 output 檔，不進上線資料。
+    entries.set(key, { name: e.name, intro })
   }
 }
 

@@ -124,6 +124,8 @@ if (stage === 'out') {
     const b = stripped.match(BANNED)
     if (b) warn(r.name, '禁語：', b[0])
     if (/(至今仍|目前仍|現在仍)/.test(t)) warn(r.name, '會過期的現在式')
+    // 產線備註外洩（字數標註、批次名、輪次、產線用語）——與 scripts/build-artist-intros.mjs 的 META_LEAK 同一條
+    { const m = t.match(/\d{2,3}\s*字(?![一-鿿])|第[一二三四五六七八九十\d]+輪|\bar-[a-z0-9-]+|試做|補洞|審稿|寫作層|研究稿|事實庫|\b(?:status|full|thin)\b\s*[:：]/); if (m) warn(r.name, '正文混入產線備註：', m[0]) }
     if (/(AllMusic|Rolling Stone|滾石|DownBeat|Pitchfork|Billboard 雜誌)/.test(t)) warn(r.name, '樂評媒體名進正文')
     const albums = (t.match(/《[^》]+》/g) || [])
     if (new Set(albums).size > 1) warn(r.name, `點了 ${new Set(albums).size} 張專輯名，上限 1`)
