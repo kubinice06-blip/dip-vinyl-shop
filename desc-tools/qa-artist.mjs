@@ -19,6 +19,7 @@ const bankByKey = new Map(bank.map(x => [x.key, x]))
 let flags = 0
 const warn = (...a) => { flags++; console.log('⚠', ...a) }
 const len = s => Array.from(String(s || '')).length
+const norm = s => String(s || '').normalize('NFC').trim().toLowerCase()
 const isUrl = s => /^https:\/\/[^\s]+\.[^\s]+/.test(String(s || ''))
 // AI 生成百科站不得當來源（research-base 方法論）
 const BAD_SRC = /grokipedia|everybodywiki|wikiwand\.com\/.*ai|chatgpt|perplexity/i
@@ -138,9 +139,12 @@ if (stage === 'out') {
       for (let i = 1; i < sents.length; i++) if (/^(1[89]|20)\d\d\s*年(?!代)/.test(sents[i]) && /^(1[89]|20)\d\d\s*年(?!代)/.test(sents[i - 1])) { warn(r.name, '連續兩句以年份開頭（流水帳）'); break } }
     // 產線備註外洩（字數標註、批次名、輪次、產線用語）——與 scripts/build-artist-intros.mjs 的 META_LEAK 同一條
     { const m = t.match(/\d{2,3}\s*字(?![一-鿿])|第[一二三四五六七八九十\d]+輪|\bar-[a-z0-9-]+|試做|補洞|審稿|寫作層|研究稿|事實庫|\b(?:status|full|thin)\b\s*[:：]/); if (m) warn(r.name, '正文混入產線備註：', m[0]) }
-    if (/(AllMusic|Rolling Stone|滾石|DownBeat|Pitchfork|Billboard 雜誌)/.test(t)) warn(r.name, '樂評媒體名進正文')
-    const albums = (t.match(/《[^》]+》/g) || [])
-    if (new Set(albums).size > 1) warn(r.name, `點了 ${new Set(albums).size} 張專輯名，上限 1`)
+    // 樂團 The Rolling Stones、台灣的滾石唱片不是樂評媒體（2026-09-29 v2 寫作層回報誤擋）
+    if (/(AllMusic|Rolling Stone(?!s)|《滾石》|滾石雜誌|DownBeat|Pitchfork|Billboard 雜誌)/.test(t)) warn(r.name, '樂評媒體名進正文')
+    // 專輯名上限只算「本卡藝人在卡池裡的專輯」；電影、書、節目名不算（2026-09-29 v2 回報：林強的電影名被誤算）
+    const poolAlbums = new Set((e.poolAlbums || []).map(p => norm(p.album)))
+    const albums = new Set((t.match(/《([^》]+)》/g) || []).map(x => norm(x.slice(1, -1))).filter(x => poolAlbums.has(x)))
+    if (albums.size > 1) warn(r.name, `點了 ${albums.size} 張卡池專輯名，上限 1`)
     const src = [...new Set(r.src || [])]
     if (src.length < 2) warn(r.name, `來源 ${src.length} 條，至少 2`)
     for (const s of src) { if (!isUrl(s)) warn(r.name, `來源不是完整 https：${s}`); else if (BAD_SRC.test(s)) warn(r.name, `AI 生成站：${s}`) }
