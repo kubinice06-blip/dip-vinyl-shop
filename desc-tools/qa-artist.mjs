@@ -72,7 +72,9 @@ if (stage === 'gap') {
   for (const r of rows) {
     const e = bankByKey.get(r.key) || { name: r.name, poolAlbums: [] }
     const slots = r.slots || {}
-    for (const s of ['identity', 'era', 'position']) {
+    // 2026-09-29 起新格式 origin／sound／legacy（＋輔助 era）；試做三輪是舊格式 identity／era／position
+    const SLOTS = slots.legacy ? ['origin', 'sound', 'legacy'] : ['identity', 'era', 'position']
+    for (const s of SLOTS) {
       const st = slots[s]?.status
       if (!['bank', 'gap', 'none'].includes(st)) { warn(r.name, `${s} 狀態不合法：${st}`); continue }
       tally[st]++
@@ -82,7 +84,7 @@ if (stage === 'gap') {
       // 記成提示、改用實際來源重算，不當錯誤擋（試做批 ar-trial-jazz 四位都是這個形狀）。
       if (st === 'bank' && fs_.some(x => x.from === 'new')) { notes.push(`${r.name}／${s}：標 bank 但含補查事實，統計改計 gap`); tally.bank--; tally.gap++ }
     }
-    const all = [...['identity', 'era', 'position'].flatMap(s => slots[s]?.facts || []), ...(r.milestones || [])]
+    const all = [...[...new Set([...SLOTS, 'era'])].flatMap(s => slots[s]?.facts || []), ...(r.milestones || [])]
     for (const x of all) {
       if (!isUrl(x.src)) warn(r.name, `來源不是完整 https：${String(x.src).slice(0, 60)}`)
       else if (BAD_SRC.test(x.src)) warn(r.name, `AI 生成站當來源：${x.src}`)
@@ -91,12 +93,13 @@ if (stage === 'gap') {
       { const t = stripLegit(x.f, e); if (SIMP.test(t)) warn(`${r.name}／事實`, '簡體字:', [...new Set(t.match(new RegExp(SIMP, 'g')))].join('')) }
       if (/(查無|查不到|uncertain|推翻|主線|【)/.test(x.f)) warn(r.name, 'f 欄混入查證過程：', x.f.slice(0, 40))
     }
-    const allBank = ['identity', 'era', 'position'].every(s => slots[s]?.status === 'bank')
+    const allBank = SLOTS.every(s => slots[s]?.status === 'bank')
     if (allBank && r.searches > 0) warn(r.name, `三格皆 bank 卻用了 ${r.searches} 次搜尋`)
     if (r.searches > 4) warn(r.name, `搜尋 ${r.searches} 次，超過上限 4`)
     if (!['full', 'thin'].includes(r.status)) warn(r.name, `status 不合法：${r.status}`)
     searches += Number(r.searches) || 0
-    const line = ['identity', 'era', 'position'].map(s => `${{ identity: '身分', era: '年代', position: '位置' }[s]}:${slots[s]?.status}`).join(' ')
+    const LABEL = { identity: '身分', era: '年代', position: '位置', origin: '身世', sound: '貢獻', legacy: '地位' }
+    const line = SLOTS.map(s => `${LABEL[s]}:${slots[s]?.status}`).join(' ')
     console.log(`  ${r.name.padEnd(36)} ${line}｜搜尋 ${r.searches}｜${r.status}｜衝突 ${(r.conflicts || []).length}`)
   }
   for (const n of notes) console.log('ℹ', n)
@@ -124,6 +127,11 @@ if (stage === 'out') {
     const b = stripped.match(BANNED)
     if (b) warn(r.name, '禁語：', b[0])
     if (/(至今仍|目前仍|現在仍)/.test(t)) warn(r.name, '會過期的現在式')
+    // 反流水帳（2026-09-29 店主改定方向）：四位數年份至多 4 個、不得連兩句以年份開頭
+    { const years = t.match(/(?<!\d)(1[89]\d\d|20\d\d)(?!\d)/g) || []
+      if (years.length > 4) warn(r.name, `年份 ${years.length} 個，上限 4（流水帳）`)
+      const sents = t.split(/[。；]/).map(x => x.trim()).filter(Boolean)
+      for (let i = 1; i < sents.length; i++) if (/^(1[89]|20)\d\d\s*年(?!代)/.test(sents[i]) && /^(1[89]|20)\d\d\s*年(?!代)/.test(sents[i - 1])) { warn(r.name, '連續兩句以年份開頭（流水帳）'); break } }
     // 產線備註外洩（字數標註、批次名、輪次、產線用語）——與 scripts/build-artist-intros.mjs 的 META_LEAK 同一條
     { const m = t.match(/\d{2,3}\s*字(?![一-鿿])|第[一二三四五六七八九十\d]+輪|\bar-[a-z0-9-]+|試做|補洞|審稿|寫作層|研究稿|事實庫|\b(?:status|full|thin)\b\s*[:：]/); if (m) warn(r.name, '正文混入產線備註：', m[0]) }
     if (/(AllMusic|Rolling Stone|滾石|DownBeat|Pitchfork|Billboard 雜誌)/.test(t)) warn(r.name, '樂評媒體名進正文')
