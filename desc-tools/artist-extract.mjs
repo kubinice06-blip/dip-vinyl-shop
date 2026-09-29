@@ -21,9 +21,14 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const [batch, ...rest] = process.argv.slice(2)
+// --lean（2026-09-29 第二輪試做起）：每張專輯只留命中三格線索的事實、每張至多 4 條，研究 notes 不帶。
+// 起因：第一輪 A 級的事實庫整包交給補洞代理（Lee Morgan 96 條＋22 篇上線簡介），光讀就吃掉大半 token，
+// 而專輯研究稿多半是曲目秒數、錄音日期這類寫藝人介紹用不到的東西。上線簡介照樣全帶——衝突比對要靠它。
+const argv = process.argv.slice(2)
+const LEAN = argv.includes('--lean')
+const [batch, ...rest] = argv.filter(a => a !== '--lean')
 if (!batch || !rest.length) {
-  console.error('用法: node artist-extract.mjs <批名> <藝人鍵...> | --file keys.txt')
+  console.error('用法: node artist-extract.mjs [--lean] <批名> <藝人鍵...> | --file keys.txt')
   process.exit(1)
 }
 const norm = s => String(s || '').normalize('NFC').trim().toLowerCase()
@@ -87,9 +92,15 @@ const SLOT = {
   era: /(\d{4}\s*年代|\d{4}\s*年(?:起|至|到)|生涯|出道|首張|最後一張|逝世|去世|過世|辭世|解散|died|\d{4}\s*[–-]\s*\d{4})/,
   position: /(簽約|簽下|加入|離開|旗下|廠牌|樂團成員|師承|影響|hard[- ]?bop|bebop|bop|cool|free|modal|soul[- ]jazz|fusion|場景|流派|運動|先驅|開創)/i,
 }
+const ANY_SLOT = new RegExp(Object.values(SLOT).map(r => r.source).join('|'), 'i')
+const LEAN_PER_ALBUM = 4
 const out = keys.map(k => {
   const e = roster.get(k)
-  const rs = research.get(k)
+  const rsFull = research.get(k)
+  const rs = LEAN
+    ? rsFull.map(r => ({ batch: r.batch, album: r.album, facts: r.facts.filter(x => ANY_SLOT.test(x.f)).slice(0, LEAN_PER_ALBUM), notes: '' }))
+        .filter(r => r.facts.length)
+    : rsFull
   const pub = [...published.get(k).values()]
   const text = [...rs.flatMap(r => r.facts.map(x => x.f)), ...rs.map(r => r.notes), ...pub.map(p => p.desc)].join('\n')
   const slotsHint = Object.fromEntries(Object.entries(SLOT).map(([s, re]) => [s, re.test(text)]))
@@ -105,10 +116,12 @@ const out = keys.map(k => {
     classicalPerformer: e.classicalPerformer,
     poolAlbums: pool.get(k),
     stats: {
+      lean: LEAN,
+      factsBeforeLean: rsFull.reduce((n, r) => n + r.facts.length, 0),
       researchRecords: rs.length,
       facts: rs.reduce((n, r) => n + r.facts.length, 0),
       publishedDescs: pub.length,
-      albumsWithoutMaterial: pool.get(k).filter(p => !rs.some(r => norm(r.album) === norm(p.album)) && !published.get(k).has(norm(p.album))).length,
+      albumsWithoutMaterial: pool.get(k).filter(p => !rsFull.some(r => norm(r.album) === norm(p.album)) && !published.get(k).has(norm(p.album))).length,
     },
     slotsHint,
     research: rs,
