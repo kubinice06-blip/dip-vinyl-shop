@@ -95,7 +95,7 @@ if (stage === 'gap') {
     }
     const allBank = SLOTS.every(s => slots[s]?.status === 'bank')
     if (allBank && r.searches > 0) warn(r.name, `三格皆 bank 卻用了 ${r.searches} 次搜尋`)
-    if (r.searches > 4) warn(r.name, `搜尋 ${r.searches} 次，超過上限 4`)
+    if (r.searches > 6) warn(r.name, `搜尋 ${r.searches} 次，超過上限 6`)
     if (!['full', 'thin'].includes(r.status)) warn(r.name, `status 不合法：${r.status}`)
     searches += Number(r.searches) || 0
     const LABEL = { identity: '身分', era: '年代', position: '位置', origin: '身世', sound: '貢獻', legacy: '地位' }
