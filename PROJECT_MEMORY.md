@@ -19,6 +19,8 @@ battle.html、roguelike.html 的 Apple 按鈕都加上 data 屬性；`dip-player
 本機 http.server ＋ Chromium：index／battle 注入按鈕，命中卡改成專輯直連、未命中維持搜尋；
 battle／roguelike 模板以特殊字元（`" & ' <`）測過跳脫；`node --check dip-player.js` 通過，頁面無 pageerror。
 
+**09-29 補強**：索引還沒載完就被點到時按鈕仍是搜尋連結 → 加 capture 點擊攔截，等索引最多 2.5 秒後同分頁導向專輯頁（`?v=42`）。iPhone 13 模擬＋延遲索引 1.5 秒實測，導向 `music.apple.com/tw/album/1048475674`。
+
 **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`
 
 ### 2026-09-17｜dip-vinyl-shop｜Pages 部署根治：改用 build command，產線目錄不再進部署

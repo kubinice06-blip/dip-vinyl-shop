@@ -817,6 +817,20 @@
     else upgradeAppleLinks(document);
   } catch (_) {}
 
+  // 索引（2.7MB）還沒載完就被點到時，按鈕仍是搜尋連結；這時攔下點擊，等索引最多 2.5 秒，
+  // 查得到專輯就以同分頁導向（Universal Link 照樣會叫起 App，也不會被彈窗攔截擋掉）。
+  document.addEventListener('click', event => {
+    const link = event.target?.closest?.('a[data-apple-artist]');
+    if (!link || appleAudioMap || event.defaultPrevented || event.button > 0 || event.metaKey || event.ctrlKey || event.shiftKey) return;
+    event.preventDefault();
+    const fallback = link.href;
+    withTimeout(loadAppleAudioMap(), 2500).then(() => {
+      const url = appleAlbumUrl(link.dataset.appleArtist, link.dataset.appleAlbum);
+      if (url) link.setAttribute('href', url);
+      window.location.href = url || fallback;
+    }, () => { window.location.href = fallback; });
+  }, true);
+
   async function mappedItunesPreview(artist, album) {
     // 索引尚在背景載入時只等短時間；離線或首次快取失敗仍可走既有搜尋備援。
     const map = await withTimeout(loadAppleAudioMap(), 1200);
