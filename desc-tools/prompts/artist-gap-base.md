@@ -43,6 +43,7 @@
 - 優先來源：英文或該國語言維基、MusicBrainz、Discogs、AllMusic 藝人頁、官方網站、訃聞（NYT、Guardian 等主流媒體）、
   日本藝人可用日文維基與 CDJournal。
 - **`f` 欄只放事實**，查證過程、推翻紀錄、限制說明一律寫進 `notes`。
+- **notes 裡記了「來源不一致」的值，facts 就不得帶那個值**（試做批 Uno Naissoo 的 Swing Club 年份：notes 寫了兩源不一致，facts 仍放進其中一個年份，寫作層照寫，靠主線審稿才拿掉）。
 
 ## 輸出格式
 
