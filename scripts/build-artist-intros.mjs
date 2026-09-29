@@ -7,7 +7,7 @@
 //
 // 產出：
 //   data/artist-intros/manifest.json   {v, shards, count, updatedAt}
-//   data/artist-intros/<00–63>.json    {v, entries: {<藝人鍵>: {name, intro, rev}}}，只寫有內容的分片
+//   data/artist-intros/<00–63>.json    {v, entries: {<藝人鍵>: {name, intro}}}，只寫有內容的分片
 //
 // 藝人鍵 = 卡池藝人欄 NFC → trim → 小寫（與名冊、/album-desc 的 KV 鍵同一套）。
 // 分片號 = FNV-1a 32 位元（逐個 UTF-16 碼元）mod 64。**前端 dip-artist-intro.js 用同一個函式**，
@@ -41,11 +41,11 @@ export function shardOf(key) {
 const rosterFile = fs.readdirSync('batch-progress/artist-intro').filter(f => /^roster-\d+\.json$/.test(f)).sort().pop()
 const roster = new Map(JSON.parse(fs.readFileSync(path.join('batch-progress/artist-intro', rosterFile), 'utf8')).entries.map(e => [e.key, e]))
 
-const files = fs.readdirSync(OUT_SRC).filter(f => /-out\.json$/.test(f)).sort()
+// 寫作層分組時會是 <批名>-out-1.json、-out-2.json，一併收（2026-09-29 v3 起）
+const files = fs.readdirSync(OUT_SRC).filter(f => /-out(?:-\d+)?\.json$/.test(f)).sort()
 const errors = []
 const entries = new Map()
 for (const f of files) {
-  const rev = f.replace(/-out\.json$/, '')
   for (const r of JSON.parse(fs.readFileSync(path.join(OUT_SRC, f), 'utf8'))) {
     const key = norm(r.key)
     const e = roster.get(key)
