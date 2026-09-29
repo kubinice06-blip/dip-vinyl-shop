@@ -72,3 +72,9 @@ Swanee Quintet 的三人和聲（CrossRhythms 點名三位和聲成員）、Kara
    代表那些被裁掉的專輯事實，本來就撐不起藝人介紹的三格。
 2. **事實庫真正有用的是「上線簡介」那一半**：兩輪共抓出六筆已上線簡介的問題，全靠並排比對。
 3. **下一步可以再砍**：萃取只帶上線簡介、完全不帶研究稿事實，看單價能否再降、抓錯能力是否不變。
+
+## 附：第三輪挑人時發現的卡池問題（交本機）
+
+- **Ray Charles 有三張卡主類型標成 hiphop**：《Genius + Soul = Jazz》《Ray Charles》
+  《Modern Sounds in Country and Western Music, Volume Two》都是 `["hiphop","jazz"]`。
+  名冊因此把他算成嘻哈 A 級。雲端不碰 `seed_cards.json`，本機修主類型後重跑 `build-seed-genres`／`build-genre-tree`。
