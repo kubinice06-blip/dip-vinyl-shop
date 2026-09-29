@@ -1001,6 +1001,7 @@
 <script src="dip-player.js?v=42"></script>
 <script src="dip-draw-anim.js?v=2"></script>
 <script src="dip-genre-tree.js?v=1"></script>
+<script src="dip-artist-intro.js?v=1"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, limit, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1774,7 +1775,7 @@
       <button class="cd-close" data-cd-close>✕</button>
       <div class="cd-rarity rarity-${tier}">${c.rarity?.label || '？'}${c.count > 1 ? `　×${c.count}` : ''}</div>
       ${c.coverUrl ? `<img class="cd-cover" src="${c.coverUrl}" alt="">` : ''}
-      <div class="cd-artist">${c.artist || ''}</div>
+      <div class="cd-artist" data-artist-intro="${escapeCollectionHtml(c.artist || '')}">${c.artist || ''}</div>
       <div class="cd-album">${c.album || ''}</div>
       <div class="cd-composer">${composerOf(c.artist, c.album) || ''}</div>
       <div class="cd-year">${releaseYearOf(c.artist, c.album) || ''}</div>
@@ -2564,7 +2565,7 @@
       <button class="cd-close" data-cd-close>✕</button>
       ${tier ? `<div class="cd-rarity rarity-${tier}">${escapeCollectionHtml(c.rarity?.label || '')}</div>` : ''}
       ${c.coverUrl ? `<img class="cd-cover" src="${escapeCollectionHtml(c.coverUrl)}" alt="">` : ''}
-      <div class="cd-artist">${escapeCollectionHtml(c.artist)}</div>
+      <div class="cd-artist" data-artist-intro="${escapeCollectionHtml(c.artist)}">${escapeCollectionHtml(c.artist)}</div>
       <div class="cd-album">${escapeCollectionHtml(c.album)}</div>
       <div class="cd-stars" id="cdStars">${c.ratings ? albumRatingsHtml(c.ratings, SPECIAL_TIERS[tier] ? tier : false) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
@@ -3953,7 +3954,7 @@ ${seenList}
       <div class="quiz-result">
         <div class="quiz-result-label">為你推薦</div>
         ${coverHtml}
-        <div class="quiz-result-artist">${result.artist || ''}</div>
+        <div class="quiz-result-artist" data-artist-intro="${escapeCollectionHtml(result.artist || '')}">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
         <div class="quiz-result-year">${releaseYearOf(qzDataArtist, qzDataAlbum) || ''}</div>
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
@@ -4013,7 +4014,9 @@ ${seenList}
   async function openAlbumIntro(artist, album) {
     const ov = document.getElementById('albumIntroOverlay');
     if (!ov || !artist || !album) return;
-    document.getElementById('aintroArtist').textContent = artist;
+    const _aiEl = document.getElementById('aintroArtist');
+    _aiEl.textContent = artist;
+    _aiEl.setAttribute('data-artist-intro', artist);   // 藝人介紹：dip-artist-intro.js 會把名字換成按鈕
     document.getElementById('aintroAlbum').textContent = album;
     document.getElementById('aintroYear').textContent = releaseYearOf(artist, album) || '';
     const descEl = document.getElementById('aintroDesc');
@@ -5627,7 +5630,7 @@ ${seenList}
       <div class="quiz-result">
         <div class="quiz-result-label">為你挖出的那張</div>
         ${coverHtml}
-        <div class="quiz-result-artist">${result.artist || ''}</div>
+        <div class="quiz-result-artist" data-artist-intro="${escapeCollectionHtml(result.artist || '')}">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
         <div class="quiz-result-year">${releaseYearOf(gpDataArtist, gpDataAlbum) || ''}</div>
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>

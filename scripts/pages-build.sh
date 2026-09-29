@@ -43,8 +43,8 @@ fi
 
 # 守門二：網站的必要檔案一個都不能少。少了任何一個就是排除清單寫錯了，當場擋下來。
 MUST="index.html find.html battle.html pvp.html roguelike.html music-map.html admin.html
-seed_cards.json card-preview-status.js dip-player.js
-data/apple-audio-runtime-v1.json"
+seed_cards.json card-preview-status.js dip-player.js dip-artist-intro.js
+data/apple-audio-runtime-v1.json data/artist-intros/manifest.json"
 for f in $MUST; do
   if [ ! -f "$OUT/$f" ]; then
     echo "✘ dist 缺少必要檔案：$f —— 排除清單寫得太寬了"

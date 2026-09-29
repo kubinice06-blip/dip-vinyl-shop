@@ -113,7 +113,7 @@ index／battle／roguelike 只要載腳本，不必各自加標記。
 
 ### 3.2 分片規格
 
-- 路徑 `data/artist-intros/<00–63>.json`，分片號＝`md5(鍵) mod 64`（名冊裡已算好 `shard` 欄）。
+- 路徑 `data/artist-intros/<00–63>.json`，分片號＝`FNV-1a 32 位元(鍵) mod 64`（2026-09-29 實作時由 md5 改：瀏覽器的 SubtleCrypto 沒有 md5；名冊的 `shard` 欄是舊的 md5 值，不再使用）。
   每片 102–149 位、寫滿時約 100KB 原始／40KB gzip，手機點一次只拉一片。
 - 每片格式 `{"v":1,"entries":{"<鍵>":{"name":"Miles Davis","intro":"…","src":["https://…","https://…"],"rev":"a-003"}}}`。
   `src` 是研究層留下的兩個可追溯網址（與專輯簡介同標準），`rev` 是產出批號，方便日後回頭改稿。
