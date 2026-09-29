@@ -119,14 +119,18 @@ if (stage === 'out') {
     const n = len(t)
     lens.push(n)
     if (r.name !== e.name) warn(r.key, `名字與名冊不一致：「${r.name}」≠「${e.name}」`)
-    const [lo, hi] = r.status === 'thin' ? [100, 160] : [180, 250]
+    const [lo, hi] = r.status === 'thin' ? [100, 160] : [180, 280]
     if (n < lo || n > hi) warn(r.name, `字數 ${n} 不在 ${r.status} 區間 ${lo}–${hi}`)
-    if (n > 250) warn(r.name, `超過硬上限 250`)
+    if (n > 250 && n <= 280 && r.status !== 'thin') console.log(`ℹ ${r.name} ${n} 字，用到 251–280 的放寬額度，審稿時確認是否真的必要`)
     if (BAD_OPEN.test(t) || t.startsWith(`${e.name} 是`) || t.startsWith(`${e.name}是`)) warn(r.name, '開頭違規：', t.slice(0, 16))
     const stripped = stripLegit(t, e)
     const b = stripped.match(BANNED)
     if (b) warn(r.name, '禁語：', b[0])
     if (/(至今仍|目前仍|現在仍)/.test(t)) warn(r.name, '會過期的現在式')
+    // 用語房規（2026-09-29 店主裁定）：「中國」不加「大陸」、不以「大陸」代稱中國；蔣中正寫蔣介石。
+    // 用剝除《》〈〉與本卡專名後的文字掃，官方原題裡的字不誤報。
+    if (/大陸/.test(stripped)) warn(r.name, '用語：出現「大陸」，稱中國一律寫「中國」')
+    if (/蔣中正/.test(stripped)) warn(r.name, '用語：「蔣中正」一律寫「蔣介石」')
     // 反流水帳（2026-09-29 店主改定方向）：四位數年份至多 4 個、不得連兩句以年份開頭
     { const years = t.match(/(?<!\d)(1[89]\d\d|20\d\d)(?!\d)/g) || []
       if (years.length > 4) warn(r.name, `年份 ${years.length} 個，上限 4（流水帳）`)

@@ -54,7 +54,7 @@ for (const f of files) {
     if (!e) { errors.push(`${f}：名冊沒有 ${key}`); continue }
     if (r.name !== e.name) errors.push(`${f}：${key} 名字「${r.name}」≠ 名冊「${e.name}」`)
     if (!intro) errors.push(`${f}：${e.name} 沒有正文`)
-    if (n > 250) errors.push(`${f}：${e.name} ${n} 字，超過 250`)
+    if (n > 280) errors.push(`${f}：${e.name} ${n} 字，超過 280（2026-09-29 店主准放寬至 280）`)
     if (key === 'various artists') errors.push(`${f}：Various Artists 不寫介紹`)
     const leak = intro.match(META_LEAK)
     if (leak) errors.push(`${f}：${e.name} 正文混入產線備註「${leak[0]}」`)
