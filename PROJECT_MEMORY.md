@@ -1,5 +1,28 @@
 # dip vinyl 專案備忘錄
 
+### 2026-09-28｜dip-vinyl-shop｜串流按鈕 Apple Music 改連專輯頁（原本只會打開 App）
+
+**症狀**：專輯卡四平台按鈕的 Apple Music，手機點下去只打開 Apple Music App 首頁、沒有到專輯。
+
+**根因**：所有 Apple 按鈕都是搜尋連結 `music.apple.com/(tw/)search?term=…`。手機上被 App 以
+Universal Link 接走，App 不吃搜尋詞 → 只剩首頁。不是資料或 API 壞掉。
+
+**修法**：試聽索引 `data/apple-audio-runtime-v1.json` 本來就有人工覆核過的 storefront＋collectionId
+（13,012／17,248 張命中），`dip-player.js` 新增 `appleAlbumUrl()`＋`upgradeAppleLinks()`，
+以 MutationObserver 把帶 `data-apple-artist`／`data-apple-album` 的 Apple 按鈕換成
+`music.apple.com/<sf>/album/<collectionId>`；索引沒收的卡維持搜尋連結（手機上仍只會開 App，
+要根治得補索引）。index.html 三處（卡片詳情 streamingBtnsHtml、商品 modal、抽卡紀錄）、
+battle.html、roguelike.html 的 Apple 按鈕都加上 data 屬性；`dip-player.js?v=41`。
+順手把 `APPLE_AUDIO_MAP_URL` 改成絕對路徑 `/data/…`，避免日後從子目錄頁載入時解析錯。
+
+**驗證**：iTunes lookup 抽 6 個 collectionId，5 個正確對到專輯、1 個已下架（連結會顯示無法取得）。
+本機 http.server ＋ Chromium：index／battle 注入按鈕，命中卡改成專輯直連、未命中維持搜尋；
+battle／roguelike 模板以特殊字元（`" & ' <`）測過跳脫；`node --check dip-player.js` 通過，頁面無 pageerror。
+
+**09-29 補強**：索引還沒載完就被點到時按鈕仍是搜尋連結 → 加 capture 點擊攔截，等索引最多 2.5 秒後同分頁導向專輯頁（`?v=42`）。iPhone 13 模擬＋延遲索引 1.5 秒實測，導向 `music.apple.com/tw/album/1048475674`。
+
+**主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`
+
 ### 2026-09-17｜dip-vinyl-shop｜Pages 部署根治：改用 build command，產線目錄不再進部署
 
 同日第二筆。c-126～c-147 那 798 張的資料早就寫進 Firestore 與 KV，
