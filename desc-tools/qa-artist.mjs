@@ -67,6 +67,7 @@ if (stage === 'gap') {
   console.log(`補洞稿 ${rows.length} 位`)
   checkKeys(rows)
   const tally = { bank: 0, gap: 0, none: 0 }
+  const notes = []
   let searches = 0
   for (const r of rows) {
     const e = bankByKey.get(r.key) || { name: r.name, poolAlbums: [] }
@@ -77,14 +78,17 @@ if (stage === 'gap') {
       tally[st]++
       const fs_ = slots[s].facts || []
       if (st !== 'none' && !fs_.length) warn(r.name, `${s} 標 ${st} 但沒有事實`)
-      if (st === 'bank' && fs_.some(x => x.from === 'new')) warn(r.name, `${s} 標 bank 卻含補查事實`)
+      // 某格以事實庫為主、另補一兩條新查的事實時，代理常標 bank。內容沒錯，只是狀態該寫 gap；
+      // 記成提示、改用實際來源重算，不當錯誤擋（試做批 ar-trial-jazz 四位都是這個形狀）。
+      if (st === 'bank' && fs_.some(x => x.from === 'new')) { notes.push(`${r.name}／${s}：標 bank 但含補查事實，統計改計 gap`); tally.bank--; tally.gap++ }
     }
     const all = [...['identity', 'era', 'position'].flatMap(s => slots[s]?.facts || []), ...(r.milestones || [])]
     for (const x of all) {
       if (!isUrl(x.src)) warn(r.name, `來源不是完整 https：${String(x.src).slice(0, 60)}`)
       else if (BAD_SRC.test(x.src)) warn(r.name, `AI 生成站當來源：${x.src}`)
       if (!['bank', 'new'].includes(x.from)) warn(r.name, `from 不合法：${x.from}`)
-      charScan(`${r.name}／事實`, x.f, e)
+      // 事實欄照原文保留專名（Мелодия、ソ連盤的原題），只掃簡體；非拉丁污染在成品那一道才擋。
+      { const t = stripLegit(x.f, e); if (SIMP.test(t)) warn(`${r.name}／事實`, '簡體字:', [...new Set(t.match(new RegExp(SIMP, 'g')))].join('')) }
       if (/(查無|查不到|uncertain|推翻|主線|【)/.test(x.f)) warn(r.name, 'f 欄混入查證過程：', x.f.slice(0, 40))
     }
     const allBank = ['identity', 'era', 'position'].every(s => slots[s]?.status === 'bank')
@@ -95,7 +99,8 @@ if (stage === 'gap') {
     const line = ['identity', 'era', 'position'].map(s => `${{ identity: '身分', era: '年代', position: '位置' }[s]}:${slots[s]?.status}`).join(' ')
     console.log(`  ${r.name.padEnd(36)} ${line}｜搜尋 ${r.searches}｜${r.status}｜衝突 ${(r.conflicts || []).length}`)
   }
-  console.log(`三格合計 bank ${tally.bank}／gap ${tally.gap}／none ${tally.none}；搜尋合計 ${searches} 次`)
+  for (const n of notes) console.log('ℹ', n)
+  console.log(`三格合計 bank ${tally.bank}／gap ${tally.gap}／none ${tally.none}（依實際來源計）；搜尋合計 ${searches} 次`)
 }
 
 if (stage === 'out') {
