@@ -28,11 +28,17 @@
 
   let manifestP = null;
   const shardP = new Map();
+  // 網路失敗不能快取：失敗就把快取清掉，下一次（下一張卡、下一次點擊）再試。
+  // 否則手機網路抖一下，這一整個工作階段所有藝人名都不會再變成按鈕。
+  // 「分片存在但沒這位」是正常結果，照常快取；只有請求本身失敗才清。
   function loadManifest() {
     if (!manifestP) {
       manifestP = fetch(BASE + 'manifest.json', { cache: 'no-cache' })
-        .then(r => (r.ok && /json/.test(r.headers.get('content-type') || '')) ? r.json() : null)
-        .catch(() => null);
+        .then(r => {
+          if (!r.ok) throw new Error('manifest ' + r.status);
+          return /json/.test(r.headers.get('content-type') || '') ? r.json() : null;
+        })
+        .catch(() => { manifestP = null; return null; });
     }
     return manifestP;
   }
@@ -44,9 +50,13 @@
       const url = `${BASE}${String(s).padStart(2, '0')}.json?v=${encodeURIComponent(m.updatedAt || '')}`;
       // 沒內容的分片不存在：Pages 對不存在的路徑回 200＋index.html，所以要看 content-type，不能只看 ok
       shardP.set(s, fetch(url)
-        .then(r => (r.ok && /json/.test(r.headers.get('content-type') || '')) ? r.json() : null)
-        .then(j => (j && j.entries) || {})
-        .catch(() => ({})));
+        .then(r => {
+          // 不存在的分片：Pages 回 200＋index.html（text/html）→ 當成空分片快取，這是正常結果
+          if (r.ok && !/json/.test(r.headers.get('content-type') || '')) return {};
+          if (!r.ok) throw new Error('shard ' + r.status);
+          return r.json().then(j => (j && j.entries) || {});
+        })
+        .catch(() => { shardP.delete(s); return {}; }));
     }
     return (await shardP.get(s))[key] || null;
   }

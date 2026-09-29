@@ -26,9 +26,13 @@ import path from 'node:path'
 // 而專輯研究稿多半是曲目秒數、錄音日期這類寫藝人介紹用不到的東西。上線簡介照樣全帶——衝突比對要靠它。
 const argv = process.argv.slice(2)
 const LEAN = argv.includes('--lean')
-const [batch, ...rest] = argv.filter(a => a !== '--lean')
+// --published-only（2026-09-29 第三輪試做）：完全不帶研究稿事實，只帶上線簡介與卡池專輯清單。
+// 第二輪 --lean 之後已是 0／30 格純靠研究稿事實，兩輪抓到的上線簡介錯誤全靠並排的上線簡介——
+// 試試看研究稿整份拿掉，單價能否再降、抓錯能力是否不變。
+const PUB_ONLY = argv.includes('--published-only')
+const [batch, ...rest] = argv.filter(a => a !== '--lean' && a !== '--published-only')
 if (!batch || !rest.length) {
-  console.error('用法: node artist-extract.mjs [--lean] <批名> <藝人鍵...> | --file keys.txt')
+  console.error('用法: node artist-extract.mjs [--lean|--published-only] <批名> <藝人鍵...> | --file keys.txt')
   process.exit(1)
 }
 const norm = s => String(s || '').normalize('NFC').trim().toLowerCase()
@@ -97,7 +101,7 @@ const LEAN_PER_ALBUM = 4
 const out = keys.map(k => {
   const e = roster.get(k)
   const rsFull = research.get(k)
-  const rs = LEAN
+  const rs = PUB_ONLY ? [] : LEAN
     ? rsFull.map(r => ({ batch: r.batch, album: r.album, facts: r.facts.filter(x => ANY_SLOT.test(x.f)).slice(0, LEAN_PER_ALBUM), notes: '' }))
         .filter(r => r.facts.length)
     : rsFull
@@ -117,6 +121,7 @@ const out = keys.map(k => {
     poolAlbums: pool.get(k),
     stats: {
       lean: LEAN,
+      publishedOnly: PUB_ONLY,
       factsBeforeLean: rsFull.reduce((n, r) => n + r.facts.length, 0),
       researchRecords: rs.length,
       facts: rs.reduce((n, r) => n + r.facts.length, 0),
