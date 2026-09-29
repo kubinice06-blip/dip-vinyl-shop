@@ -1,0 +1,68 @@
+# ar-trial-pub 第三輪試做紀錄（2026-09-29）
+
+店主核可「只帶上線簡介、完全不帶研究稿事實」再試一輪（`artist-extract.mjs --published-only`），
+量單價能否再降、抓錯能力是否不變。寫作規格照最初版不變。
+
+## 名單
+
+| 藝人 | 分級 | 主類型 | 上線簡介篇數 |
+|---|---|---|---:|
+| 林強 | A | electronic | 8 |
+| Public Enemy | A | hiphop | 1（卡池 6 張） |
+| 108 | B | rock | 4 |
+| Ali Akbar Khan | B | world | 4 |
+| Brother Joe May | C | soul | 2 |
+| くるり | C | rock（日文名） | 2 |
+| Adriano Correia de Oliveira | D | folk | 1 |
+| Academy of St Martin in the Fields Chamber Ensemble | D | classical | 1 |
+| 델리스파이스 | B | rock（諺文名） | 3 |
+| Willie Dixon | B | blues | 4 |
+
+原本挑到的嘻哈 A 級是 Ray Charles——他有三張卡主類型錯標成 hiphop（見 ar-trial-mix-rulings.md 附錄），改挑 Public Enemy。
+
+## 結果
+
+- 十位成品：九位 full（216–246 字）、一位 thin（Academy of St Martin in the Fields Chamber Ensemble 143 字）。機器 QA 0 處。
+- **主線審稿修兩處**：
+  1. **林強**「第 38 屆得獎…第 55 屆再度得獎」：兩座金馬都是與人共同得獎（黃凱宇、許志遠），原句讀起來像獨得。改「兩度與人共同得獎」。
+  2. **108**「1993 年起由 Rob Fish 擔任主唱」：年份只有 MusicBrainz 單一來源，屬成員異動年份。拿掉年份。
+- 研究稿裡另有一條親屬關係錯誤：Ali Akbar Khan 的 facts 寫「Ravi Shankar 推薦身為姊夫的 Khan」，
+  實際是 Shankar 娶了 Khan 的妹妹 Annapurna Devi。寫作層發現後沒寫進正文。
+
+## 三輪比較
+
+| | 第一輪 jazz（整包事實庫） | 第二輪 mix（`--lean`） | 第三輪 pub（`--published-only`） |
+|---|---:|---:|---:|
+| 補洞兩組 token | 約 34.9 萬 | **約 23.9 萬** | 約 26.5 萬 |
+| 寫作 token | 約 11.5 萬 | 約 11.1 萬 | 約 10.8 萬 |
+| **每位合計** | 約 4.6 萬 | **約 3.5 萬** | 約 3.7 萬 |
+| 搜尋次數 | 36 | **33** | 54 |
+| 搜尋超過每位上限 4 次 | 0 位 | 1 位 | 5 位 |
+| 抓到已上線簡介的問題 | 3 | 3 | 約 13 |
+| 主線審稿修正 | 2 | 2 | 2 |
+
+**結論：量產採第二輪的 `--lean`。**
+
+- 研究稿事實整份拿掉，搜尋多了六成、補洞 token 反而多一成：生卒年、成軍年這類要兩個來源的事實，
+  研究稿裡常已有一個，拿掉就得從零湊兩個。
+- 抓錯能力沒變差（第三輪抓到最多，主因是這批藝人的上線簡介本來就問題多），
+  而且 `--lean` 同樣帶著全部上線簡介，抓錯能力不會輸。
+
+## 已上線簡介的問題（第三輪新增，交本機）
+
+| 卡 | 上線簡介寫法 | 問題 |
+|---|---|---|
+| Ali Akbar Khan《Music of India: Morning and Evening Ragas》 | 「史上第一張印度古典音樂 LP」 | 英文維基藝人條只寫「在西方發行的第一張」，應收斂 |
+| 108《Curse of Instinct》 | 「名下兩張 EP」 | 維基列三張、MusicBrainz 兩張，口徑不一，建議不寫張數 |
+| Brother Joe May《The Master's On Our Side》 | A5、A6「他最擅長的敘事型唱段」 | 找不到來源 |
+| 林強《春風少年兄》 | 發行 Pony Canyon Taiwan | 中文維基寫波麗佳音，未能判定是否同一公司 |
+| Academy of St Martin in the Fields Chamber Ensemble《Mendelssohn: Octet…》 | 「當初成立就是為了演這一首八重奏」 | 只有搜尋摘要單一來源 |
+| 同上 | 「母團 1958 年由 Neville Marriner 創立」 | 英文維基記 1959 年、與 John Churchill 共同創立，兩源不一 |
+| 同上 | 母團「不設指揮、由第一小提琴帶領」 | Marriner 1970 年秋天起已改站指揮台，只能算早期做法 |
+| Willie Dixon《Hidden Charms》 | 「唯一一座葛萊美」 | 未能證實 |
+| Willie Dixon《Hidden Charms》vs《Catalyst》 | 「1948 年起長駐 Chess」vs「1951 年起專職員工」 | 兩張互相矛盾，英文維基為 1948 簽約、1951 年已是專職員工 |
+| Willie Dixon《I Am the Blues》 | 「1986 年入選藍調名人堂」 | 1986 年入選的是這張專輯，他本人是 1980 年首屆；主詞有歧義 |
+| Willie Dixon《Willie's Blues》 | 「首張個人專輯」 | 單一來源 |
+| くるり《儚くも美しき12の変奏》 | 「現行編制兩人」 | 2023 年森信行回歸錄音，已過時 |
+
+三輪累計約 19 筆，全部待本機改 KV。
