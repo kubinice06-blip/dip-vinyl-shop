@@ -722,5 +722,685 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，三格全靠補查。補查 6 次：英文維基、搖滾名人堂官網、Britannica、WebSearch（Beatles、Hendrix、葛萊美）、葛萊美官網終身成就獎頁、Guitar Player 專訪。同名混卡：卡池 21 張專輯 1959 至 2001 年，都是這個家族樂團，無混卡。未收：維基『唯一一組在連續數個十年都上榜的團』屬『唯一』宣稱，只見維基與搜尋摘要，且未逐一核對反例；Kelly（O'Kelly Jr.）1986 年 3 月辭世、Rudolph 1989 年轉入牧職只有維基單一來源，屬成員異動年份不收；Prince、Rolling Stone 榜位等在所讀頁面都沒有寫；Variety 2026 年星光大道報導與 Ernie Isley 談 Hendrix 的訪談只見搜尋標題，未讀內文。名人堂官網頁面未寫他們的出身。"
+ },
+ {
+  "key": "stevie wonder",
+  "name": "Stevie Wonder",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Stevie Wonder 本名 Stevland Hardaway Judkins，1950 年 5 月 13 日生於密西根州 Saginaw。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 同樣記他 1950 年 5 月 13 日生於密西根州 Saginaw。",
+      "src": "https://www.britannica.com/biography/Stevie-Wonder",
+      "from": "new"
+     },
+     {
+      "f": "他早產 6 週，加上保溫箱裡氧氣過多，造成早產兒視網膜病變而失明。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "他 4 歲時母親 Lula Mae Hardaway 帶他搬到底特律；Britannica 寫他在底特律市區長大，8 歲已是熟練的樂手，很早就玩鋼琴、口琴與鼓。",
+      "src": "https://www.britannica.com/biography/Stevie-Wonder",
+      "from": "new"
+     },
+     {
+      "f": "他少年時向 Miracles 的 Ronnie White 唱了〈Lonely Boy〉，White 把他帶進 Motown，Berry Gordy 讓他簽約旗下 Tamla 廠牌，製作人 Clarence Paul 替他取了「Little Stevie Wonder」這個名字。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 也寫是 Miracles 的 Ronnie White 把他介紹給 Berry Gordy Jr.，他以孩童之姿簽進 Motown。",
+      "src": "https://www.britannica.com/biography/Stevie-Wonder",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1971 年 5 月 13 日他讓 Motown 合約到期，重新談判取得更高的版稅率與更大的創作自主。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "他找來 Robert Margouleff 與 Malcolm Cecil 當製作人；兩人與他合作了四張他的「經典期」專輯：《Music of My Mind》《Talking Book》《Innervisions》《Fulfillingness' First Finale》，以合成器與鍵盤取代傳統弦樂。",
+      "src": "https://en.wikipedia.org/wiki/Talking_Book",
+      "from": "new"
+     },
+     {
+      "f": "他們使用的 TONTO 是量身打造的模組合成器，由 ARP 2600、Oberheim SEM 與 Moog 組件組成。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "〈Superstition〉裡的 Clavinet Model C 被普遍認為是這種樂器最具代表性的曲目之一；該曲登上 Billboard Hot 100 與 Hot Soul Singles 兩榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Talking_Book",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 稱他對新一代電子鍵盤樂器的掌握，使他成為先驅並啟發了搖滾樂手；《Talking Book》（1972）、《Innervisions》（1973）、《Fulfillingness' First Finale》（1974）與《Songs in the Key of Life》（1976）都被視為最高水準之作。",
+      "src": "https://www.britannica.com/biography/Stevie-Wonder",
+      "from": "new"
+     },
+     {
+      "f": "搖滾名人堂稱他的嗓音、鋼琴技巧、詞曲創作與「從不鬆懈的良知」是其藝術核心；Paul Simon 形容他是「旋律寫作如此輕鬆自如的人」。",
+      "src": "https://www.rockhall.com/inductees/stevie-wonder",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Britannica 稱他是「20 世紀後期最有創造力的音樂人之一」，並說他的作品是 1950、60 年代經典 R&B 與靈魂樂表演者，和其後較不受商業拘束的後繼者之間的重要連結。",
+      "src": "https://www.britannica.com/biography/Stevie-Wonder",
+      "from": "new"
+     },
+     {
+      "f": "他的《Innervisions》《Fulfillingness' First Finale》《Songs in the Key of Life》三張專輯連續獲得葛萊美年度專輯。",
+      "src": "https://www.britannica.com/biography/Stevie-Wonder",
+      "from": "new"
+     },
+     {
+      "f": "英文維基寫他贏得 25 座葛萊美（男性個人藝人中最多）、1985 年以〈I Just Called to Say I Love You〉拿下奧斯卡，並全球銷量超過 1 億張。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "他 1989 年入選搖滾名人堂，1999 年獲甘迺迪中心榮譽。",
+      "src": "https://www.britannica.com/biography/Stevie-Wonder",
+      "from": "new"
+     },
+     {
+      "f": "2014 年他獲頒美國總統自由勳章，2009 年被聯合國任命為和平使者。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "他 1980 年錄下〈Happy Birthday〉，歌詞直接呼籲把 Martin Luther King Jr. 的生日訂為國定假日；1981 年 1 月 15 日有逾 1.5 萬人從國會山莊遊行到華盛頓紀念碑，由他登台演出，他又在 1982 與 1983 年支持了兩場集會。",
+      "src": "https://time.com/7346323/mlk-day-stevie-wonder-happy-birthday/",
+      "from": "new"
+     },
+     {
+      "f": "1983 年 11 月 2 日 Ronald Reagan 簽署法案，訂 1 月第三個星期一為 Martin Luther King Jr. 紀念日；假日要到 1986 年 1 月 20 日才第一次實施。",
+      "src": "https://time.com/7346323/mlk-day-stevie-wonder-happy-birthday/",
+      "from": "new"
+     },
+     {
+      "f": "他在 1985 年奧斯卡典禮上以 Nelson Mandela 的名義領獎，之後在南非所有電台被禁播。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "Kanye West 2005 年說：「我真的是想和《Innervisions》與《Songs in the Key of Life》一較高下。」",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "《Talking Book》在《Rolling Stone》2020 年版 500 大專輯榜排第 59 名。",
+      "src": "https://en.wikipedia.org/wiki/Talking_Book",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1971 年 5 月 13 日他讓 Motown 合約到期，重新談判。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     },
+     {
+      "f": "1972 至 1976 年他推出《Talking Book》《Innervisions》《Fulfillingness' First Finale》《Songs in the Key of Life》等一連串專輯。",
+      "src": "https://www.britannica.com/biography/Stevie-Wonder",
+      "from": "new"
+     },
+     {
+      "f": "1981 年 1 月 15 日他在華盛頓的 Martin Luther King Jr. 假日集會上演出。",
+      "src": "https://time.com/7346323/mlk-day-stevie-wonder-happy-birthday/",
+      "from": "new"
+     },
+     {
+      "f": "1985 年他以〈I Just Called to Say I Love You〉拿下奧斯卡，並在領獎時獻給 Nelson Mandela。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1971 年 5 月 13 日讓 Motown 合約到期並重新談判，取得更大的創作自主。",
+    "src": "https://en.wikipedia.org/wiki/Stevie_Wonder",
+    "from": "new"
+   },
+   {
+    "f": "《Innervisions》《Fulfillingness' First Finale》《Songs in the Key of Life》連續三張專輯獲葛萊美年度專輯。",
+    "src": "https://www.britannica.com/biography/Stevie-Wonder",
+    "from": "new"
+   },
+   {
+    "f": "1983 年 11 月 2 日 Reagan 簽署 Martin Luther King Jr. 紀念日法案；他從 1980 年起以歌曲與集會推動這個假日。",
+    "src": "https://time.com/7346323/mlk-day-stevie-wonder-happy-birthday/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "簽約年齡：英文維基寫 11 歲（1961 年）、Britannica 與搖滾名人堂寫 12 歲；facts 不寫簽約年齡與年份。",
+   "上線簡介《Where I'm Coming From》寫『合約載明二十一歲可作廢、趕在成年前夕逼 Motown 照單全收』；英文維基寫 1971 年 5 月 13 日（21 歲生日）他讓合約到期並重談，專輯 1971 年 4 月發行；兩者不衝突，facts 只寫合約到期與重談。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全靠補查。補查 6 次：英文維基 Stevie Wonder、Britannica、搖滾名人堂官網、WebSearch（King 紀念日）、Time 報導、英文維基 Talking Book。同名混卡：無，卡池 18 張都是他本人（1963 至 1985 年）。生年、生地有維基與 Britannica 兩源；MLK 假日的簽署日與集會有 Time 與搜尋摘要（Motown 官網與 Live for Live Music 等）互證。未收：『Fingertips 讓他成為登上 Hot 100 冠軍的最年輕個人藝人』『第一位拿下年度專輯的黑人音樂人』『唯一連三張專輯拿年度專輯』都屬首次／唯一宣稱，只見英文維基單一來源，且未逐一核對反例；25 座葛萊美與『男性個人藝人最多』只有維基；1971 年版稅率 14% 只有維基；他 2024 年獲迦納公民身分、聯合國和平使者屬非音樂面，只收和平使者一筆。Britannica 標 Kennedy Center Honors 為 1999、維基未寫。《Talking Book》維基未寫 21 歲合約與傑夫貝克故事，本層未收。"
+ },
+ {
+  "key": "kool & the gang",
+  "name": "Kool & the Gang",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Kool & the Gang 1964 年在紐澤西州 Jersey City 以「Jazziacs」之名成軍，成員有貝斯手 Robert「Kool」Bell、他的哥哥鍵盤手 Ronald Bell、薩克斯風手 Dennis「Dee Tee」Thomas、小號手 Robert「Spike」Mickens、吉他手 Claydes Charles Smith、鼓手 George Brown 與鍵盤手 Ricky Westfield。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "他們一開始決定以器樂爵士與靈魂團的形式一起演出，並曾與 McCoy Tyner、Pharoah Sanders 等爵士樂手同台。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "搖滾名人堂寫他們來自 Jersey City，1969 年以爵士放克器樂登場；NBC 的訃聞寫樂團「從 1960 年代的爵士根源長出來」，由 Ronald Bell 與弟弟 Robert「Kool」Bell 和鄰居朋友一起創辦。",
+      "src": "https://rockhall.com/inductees/kool-and-the-gang/",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 把 Kool & the Gang 定位為來自 Jersey City、1970 年代最早成功的自給自足黑人樂團之一。",
+      "src": "https://www.britannica.com/topic/Kool-and-the-Gang",
+      "from": "new"
+     },
+     {
+      "f": "共同創辦人 Ronald「Khalis」Bell 2020 年 9 月辭世。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "Ronald「Khalis」Bell 在美屬維京群島的家中辭世，享年 68 歲；他寫了〈Celebration〉〈Cherish〉〈Jungle Boogie〉〈Summer Madness〉等樂團的代表歌曲。",
+      "src": "https://www.nbcnews.com/pop-culture/music/kool-gang-co-founder-ronald-khalis-bell-dies-68-n1239715",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們 1969 年的首張專輯《Kool and the Gang》全是器樂；搖滾名人堂寫他們起步時靠「複雜的律動與即興獨奏」。",
+      "src": "https://rockhall.com/inductees/kool-and-the-gang/",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 稱他們的音樂是爵士、非洲節奏與街頭放克的創新融合，1977 年後重心轉向流行與 disco，1979 年已是更乾淨、以流行為導向的聲音。",
+      "src": "https://www.britannica.com/topic/Kool-and-the-Gang",
+      "from": "new"
+     },
+     {
+      "f": "1973 年《Wild and Peaceful》帶出〈Jungle Boogie〉與〈Hollywood Swinging〉，維基稱這張讓他們打進白人聽眾；Britannica 也把這張列為商業突破。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "J.T. Taylor 加入成為專職主唱，巴西製作人 Eumir Deodato 協助他們轉向主流流行與舞曲；《Ladies' Night》（1979）與《Celebrate!》（1980）稱霸榜單。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "搖滾名人堂寫他們把獨特的律動帶進主流，靠「管樂堆疊的放克與流暢的和聲」推動歌曲，進入 1980 年代取得全球成功，並涉足精緻的 R&B 抒情。",
+      "src": "https://rockhall.com/inductees/kool-and-the-gang/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們 2024 年入選搖滾名人堂；名人堂稱他們是嘻哈圈被取樣最多的團體之一，影響到 Prince、Mary J. Blige、Bruno Mars、Public Enemy、The Roots、Fugees、Justin Timberlake 與 De La Soul 等人。",
+      "src": "https://rockhall.com/inductees/kool-and-the-gang/",
+      "from": "new"
+     },
+     {
+      "f": "Mark Ronson 談他們的影響力：衡量它就像問 Beatles 對流行音樂的影響，「根本無法拆開來看」。",
+      "src": "https://rockhall.com/inductees/kool-and-the-gang/",
+      "from": "new"
+     },
+     {
+      "f": "維基與 Britannica 都記他們 2024 年入選搖滾名人堂；維基另記他們的全球專輯銷量超過 7000 萬張。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "〈Celebration〉被用在 1980 年世界大賽、1981 年超級盃、1981 年 NBA 總決賽，以及 1981 年伊朗人質返國的場合。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "〈Summer Madness〉出現在電影《Rocky》（1976）與《Baby Boy》，2006 年也用於 LeBron James 的 Nike 廣告；〈Jungle Boogie〉出現在《Pulp Fiction》（1994）。",
+      "src": "https://www.nbcnews.com/pop-culture/music/kool-gang-co-founder-ronald-khalis-bell-dies-68-n1239715",
+      "from": "new"
+     },
+     {
+      "f": "他們 2014 年獲 BET Soul Train 終身成就獎，2018 年入選 Songwriters Hall of Fame。",
+      "src": "https://www.nbcnews.com/pop-culture/music/kool-gang-co-founder-ronald-khalis-bell-dies-68-n1239715",
+      "from": "new"
+     },
+     {
+      "f": "維基另記他們 2015 年獲星光大道星章與入選紐澤西名人堂。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1964 年在 Jersey City 以 Jazziacs 之名成軍。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "1969 年首張專輯《Kool and the Gang》全是器樂。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     },
+     {
+      "f": "1973 年《Wild and Peaceful》帶出〈Jungle Boogie〉與〈Hollywood Swinging〉。",
+      "src": "https://www.britannica.com/topic/Kool-and-the-Gang",
+      "from": "new"
+     },
+     {
+      "f": "1979 年 J.T. Taylor 與製作人 Eumir Deodato 帶他們轉向流行與舞曲。",
+      "src": "https://en.wikipedia.org/wiki/Kool_%26_the_Gang",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1973 年《Wild and Peaceful》成為商業突破。",
+    "src": "https://www.britannica.com/topic/Kool-and-the-Gang",
+    "from": "new"
+   },
+   {
+    "f": "1980 年〈Celebration〉登上 Billboard Hot 100 冠軍。",
+    "src": "https://www.britannica.com/topic/Kool-and-the-Gang",
+    "from": "new"
+   },
+   {
+    "f": "2024 年入選搖滾名人堂。",
+    "src": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "定名年份：英文維基寫 1967 年定名 Kool & the Gang，搜尋摘要（訃聞轉述）寫 1969 年才定名；兩處不一致，facts 只寫成軍年 1964 年與首張專輯年份，不寫定名年份。",
+   "Ronald Bell 卒年 2020 有維基與 NBC 兩源，卒日 9 月 9 日只見搜尋摘要，facts 只寫 2020 年 9 月。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全靠補查。補查 6 次：英文維基、Britannica、WebSearch（名人堂與取樣）、搖滾名人堂官網（第二次用對網址）、WebSearch（Ronald Bell 訃聞）、NBC News 訃聞；失敗 2 次：rockhall.com/inductees/kool-gang（404，網址錯）與 NPR 訃聞（503）。葛萊美：維基寫兩座、NBC 寫 1978 年因《Saturday Night Fever》原聲帶得獎，但未見年份與類別的明確對應，依規則不收獎項。未收：Britannica『1980 年代冠全美流行榜單曲數最多』屬最高級宣稱，只見單一來源；George Brown 2023 年辭世與 Claydes Smith 2006 年辭世只有維基單一來源，屬成員異動不收；〈Jungle Boogie〉被 Public Enemy 取樣的細節只見搜尋摘要，未逐頁核對；維基寫〈Celebration〉是樂團唯一登上 Hot 100 冠軍的單曲，屬『唯一』宣稱，本層只寫『登上冠軍』。上線簡介《Live at the Sex Machine》寫〈Funky Man〉被 The Prodigy 取樣、《Love & Understanding》與《The Force》的錄音室專輯序數，本層未涉及，未驗證。"
+ },
+ {
+  "key": "al green",
+  "name": "Al Green",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Al Green 本名 Albert Leornes Greene，1946 年 4 月 13 日生於阿肯色州 Forrest City，是十個孩子中的第六個；1950 年代後期全家搬到密西根州 Grand Rapids。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 同樣記他 1946 年 4 月 13 日生於阿肯色州 Forrest City。",
+      "src": "https://www.britannica.com/biography/Al-Green",
+      "from": "new"
+     },
+     {
+      "f": "他 10 歲時就在名為 Greene Brothers 的家族團體裡演唱；虔誠的父親撞見他聽 Jackie Wilson，把他趕出家門。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "高中時他組了 Al Greene & the Creations，後改名 Al Greene & the Soul Mates；1966 年錄下〈Back Up Train〉，在 Cashbox Top 100 最高第 46 名。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "他在德州演出時結識 Memphis 製作人 Willie Mitchell；Britannica 寫 Mitchell 是前樂團領班，也是 Memphis 的 Hi Records 首席製作人兼副總裁，這次相遇是他的分水嶺。",
+      "src": "https://www.britannica.com/biography/Al-Green",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Willie Mitchell 成為他的聲樂導師，指導他找到自己的嗓音；兩人與 Hi Rhythm Section 合作出〈Let's Stay Together〉（1972），登上 Billboard Hot 100 與 R&B 榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "搖滾名人堂寫他「重塑了靈魂樂的聲音」，以親密、不加修飾的嗓音唱出難忘的旋律；他與 Willie Mitchell 在 Hi Records 開創了以管樂、迷人律動與福音管風琴構成的簡樸製作風格。",
+      "src": "https://www.rockhall.com/inductees/al-green",
+      "from": "new"
+     },
+     {
+      "f": "名人堂形容他的嗓音充滿靈性的渴望與肉慾，聲音同時有克制與奔放、福音的熱切與流行的機敏。",
+      "src": "https://www.rockhall.com/inductees/al-green",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 寫他把福音的強度，以輕鬆上到最高的假聲，或沉到沙啞、裹著低語式性感的低吼。",
+      "src": "https://www.britannica.com/biography/Al-Green",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Britannica 稱他是「1970 年代最受歡迎的靈魂樂表演者」，並說他把神聖與世俗混在一起的色情氛圍持續產生影響，連 1980 年代芝加哥 house 都看得到。",
+      "src": "https://www.britannica.com/biography/Al-Green",
+      "from": "new"
+     },
+     {
+      "f": "搖滾名人堂列出受他影響的藝人包括 Prince、D'Angelo、Maxwell、Amy Winehouse 與 Alicia Keys；他 1995 年入選，由 Natalie Cole 頒獎。",
+      "src": "https://www.rockhall.com/inductees/al-green",
+      "from": "new"
+     },
+     {
+      "f": "他 1995 年入選搖滾名人堂，2002 年獲葛萊美終身成就獎，2014 年獲甘迺迪中心榮譽。",
+      "src": "https://www.britannica.com/biography/Al-Green",
+      "from": "new"
+     },
+     {
+      "f": "他拿過 11 座葛萊美，並在《Rolling Stone》2008 年百大藝人榜排第 65 名。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "1974 年 10 月 18 日清晨，他的前女友 Mary Woodson 趁他洗澡時，把一鍋滾燙的玉米粥（grits）潑在他背上，隨後躲進臥室，用他的槍自盡。",
+      "src": "https://www.history.com/this-day-in-history/october-18/soul-singer-al-green-is-attacked-in-his-own-bathtub",
+      "from": "new"
+     },
+     {
+      "f": "英文維基同樣記 1974 年 10 月 18 日 Mary Woodson 以滾燙的玉米粥襲擊他，之後用他的 .38 手槍自盡。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "History.com 寫他事發一年前已成為重生的基督徒；襲擊後他慢慢走向放棄流行巨星的身分，兩年後（1976 年）買下 Memphis 的一間教會、成為正式受任的牧師。",
+      "src": "https://www.history.com/this-day-in-history/october-18/soul-singer-al-green-is-attacked-in-his-own-bathtub",
+      "from": "new"
+     },
+     {
+      "f": "英文維基寫他 1976 年在 Memphis 創辦 Full Gospel Tabernacle 教會；1979 年他在辛辛那提演出時從舞台跌落受傷，把這視為上帝給他的訊息。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 寫他 1970 年代中期成為牧師、建立自己的教會，到 1980 年已全心投入牧職與福音音樂。",
+      "src": "https://www.britannica.com/biography/Al-Green",
+      "from": "new"
+     },
+     {
+      "f": "傳記作者 Davin Seay 說這起事件「讓他確定需要往前走，關掉人生的一部分、開啟另一部分」，不過 Green 本人把自己的皈依與這些事件切開來談。",
+      "src": "https://www.history.com/this-day-in-history/october-18/soul-singer-al-green-is-attacked-in-his-own-bathtub",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1966 年 Al Greene & the Soul Mates 錄下〈Back Up Train〉。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "1972 年〈Let's Stay Together〉登上 Hot 100 與 R&B 榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Al_Green",
+      "from": "new"
+     },
+     {
+      "f": "1974 年 10 月 18 日他遭前女友襲擊，她隨後自盡。",
+      "src": "https://www.history.com/this-day-in-history/october-18/soul-singer-al-green-is-attacked-in-his-own-bathtub",
+      "from": "new"
+     },
+     {
+      "f": "1976 年他買下 Memphis 的教會，成為正式受任的牧師。",
+      "src": "https://www.history.com/this-day-in-history/october-18/soul-singer-al-green-is-attacked-in-his-own-bathtub",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1972 年〈Let's Stay Together〉登上 Hot 100 與 R&B 榜冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Al_Green",
+    "from": "new"
+   },
+   {
+    "f": "1976 年買下 Memphis 的教會，成為正式受任的牧師。",
+    "src": "https://www.history.com/this-day-in-history/october-18/soul-singer-al-green-is-attacked-in-his-own-bathtub",
+    "from": "new"
+   },
+   {
+    "f": "1995 年入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/al-green",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "結識 Willie Mitchell 的年份：英文維基寫 1969 年被 Mitchell 雇去德州演出，Britannica 寫 1968 年在德州相遇；facts 只寫『在德州結識』，不寫年份。",
+   "1974 年燙傷程度：英文維基寫二度燙傷，搜尋摘要另一處寫三度，History.com 未寫；facts 不寫燙傷程度。",
+   "上線簡介《Lay It Down》寫『暌違世俗靈魂樂多年』，見 pubIssues；其餘上線簡介與本層事實無衝突。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Lay It Down",
+    "claim": "暌違世俗靈魂樂多年後的 2008 年作品",
+    "problem": "英文維基《Lay It Down》條目列出前作是 2005 年的《Everything’s OK》，卡池另有 2003 年《I Can’t Stop》，兩張都是世俗靈魂作品，與其間相隔僅約三年不合，『暌違多年』的說法建議刪或改為『回到 Hi 時期樂隊聲響』；兩座葛萊美（第 51 屆：〈Stay with Me (By the Sea)〉得最佳 R&B 雙人或團體演唱、〈You've Got the Love I Need〉得最佳傳統 R&B 演唱）依維基專輯頁屬實。",
+    "src": "https://en.wikipedia.org/wiki/Lay_It_Down_(Al_Green_album)"
+   }
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全靠補查。補查 6 次：英文維基、搖滾名人堂官網、Britannica、WebSearch（1974 事件與牧職）、History.com、英文維基《Lay It Down》（為驗證上線簡介的葛萊美說法）。人生故事的兩源：1974 事件（維基與 History.com）、1976 起轉任牧師（History.com 與 Britannica、維基）；1979 年辛辛那提跌落舞台只有維基單一來源，作為輔助細節收入，請主線留意。同名混卡：無。未收：Robert Christgau 與 Whoopi Goldberg 的評語屬單一評論者的形容詞；Full Gospel Tabernacle 創立日 1976 年 12 月 19 日與 Obama 唱〈Let's Stay Together〉只見搜尋摘要；〈Take Me to the River〉被 Talking Heads 翻唱的來龍去脈上線簡介已寫。『暌違世俗靈魂樂』一條：Everything's OK 屬世俗靈魂作品是本層依卡池與常識判斷，維基專輯頁只提前作年份，主線審稿請確認。"
+ },
+ {
+  "key": "the staple singers",
+  "name": "The Staple Singers",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團長 Roebuck「Pops」Staples 出身密西西比州 Winona，帶著三角洲藍調的根，1936 年前後舉家遷往芝加哥；Britannica 寫他受 Charley Patton 等藍調樂手影響，1930 年代中期搬到芝加哥。",
+      "src": "https://en.wikipedia.org/wiki/The_Staple_Singers",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 寫 The Staple Singers 由 Pops Staples 領軍，1950 年代初期成形；到 1950 年代中期，他簡練的主奏吉他與全家「不似人間」的和聲，已使他們成為一個領銜的福音團體。",
+      "src": "https://www.britannica.com/topic/The-Staple-Singers",
+      "from": "new"
+     },
+     {
+      "f": "這個家族從 1948 年起在芝加哥一帶的教堂演唱，核心是 Pops、Cleotha、Pervis 與 Mavis；Yvonne 在 Pervis 被徵召入伍後接替他。",
+      "src": "https://en.wikipedia.org/wiki/The_Staple_Singers",
+      "from": "new"
+     },
+     {
+      "f": "1952 年他們簽下第一份正式合約，在 Vee-Jay 錄下〈Uncloudy Day〉與〈Will the Circle Be Unbroken?〉，兩首都成為暢銷曲。",
+      "src": "https://en.wikipedia.org/wiki/The_Staple_Singers",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Pops Staples 彈帶顫音（tremolo）的吉他，承襲三角洲藍調的傳統。",
+      "src": "https://en.wikipedia.org/wiki/The_Staple_Singers",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 稱，Aretha Franklin 沒有拆掉的神聖與肉慾之間的藩籬，被 Mavis Staples 與她令人震撼的女低音吹垮了。",
+      "src": "https://www.britannica.com/topic/The-Staple-Singers",
+      "from": "new"
+     },
+     {
+      "f": "Bob Dylan 2015 年談 Mavis：「她的歌聲把我震住了……Mavis 是很棒的歌手，深沉而神祕。」",
+      "src": "https://en.wikipedia.org/wiki/The_Staple_Singers",
+      "from": "new"
+     },
+     {
+      "f": "Stax 官方介紹寫，1963 年他們在阿拉巴馬州蒙哥馬利的一場演出有 Martin Luther King 出席，促使他們轉向民權訊息；之後有《Freedom Highway》（1965）、《Why》（1966）與《Soul Folk in Action》（1968）。",
+      "src": "https://staxrecords.com/spotlight/the-staple-singers/",
+      "from": "new"
+     },
+     {
+      "f": "《Freedom Highway》錄於 1965 年 4 月 9 日芝加哥的 New Nazareth Church，是現場演出；標題曲受 Selma 到 Montgomery 大遊行啟發，為這場演出新寫。",
+      "src": "https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/",
+      "from": "new"
+     },
+     {
+      "f": "1968 年簽給 Stax 後，製作人 Al Bell 帶他們到 Muscle Shoals Sound Studio 錄音，路線轉向放克與靈魂；〈I'll Take You There〉由 Muscle Shoals 節奏組伴奏。",
+      "src": "https://en.wikipedia.org/wiki/The_Staple_Singers",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們 1999 年入選搖滾名人堂；名人堂寫他們「傳遞帶著訊息的音樂」，音樂是社會行動、正向改變與愛的載體，Lauryn Hill 稱它是「解放靈魂、啟發靈魂、賦權靈魂的音樂」。",
+      "src": "https://www.rockhall.com/inductees/staple-singers",
+      "from": "new"
+     },
+     {
+      "f": "維基與 Britannica 都記他們 1999 年入選搖滾名人堂、2005 年獲葛萊美終身成就獎；維基另記 2018 年入選 Gospel Music Hall of Fame。",
+      "src": "https://en.wikipedia.org/wiki/The_Staple_Singers",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 記〈I'll Take You There〉（1972）在流行榜與 R&B 榜都是冠軍單曲。",
+      "src": "https://www.britannica.com/topic/The-Staple-Singers",
+      "from": "new"
+     },
+     {
+      "f": "〈Respect Yourself〉（1971）登上 Billboard Hot 100 第 12 名、R&B 榜第 2 名；他們 1968 至 1975 年在 Stax 發行六張專輯。",
+      "src": "https://staxrecords.com/spotlight/the-staple-singers/",
+      "from": "new"
+     },
+     {
+      "f": "Mavis Staples 稱《Freedom Highway》那場演出是她生涯中最重要的時刻之一；發行方 Legacy 的 2015 年《Freedom Highway Complete》補回原版唱片被剪掉的 30 多分鐘內容。",
+      "src": "https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1952 年簽下第一份正式合約，錄音於 Vee-Jay。",
+      "src": "https://en.wikipedia.org/wiki/The_Staple_Singers",
+      "from": "new"
+     },
+     {
+      "f": "1963 年蒙哥馬利的一場演出有 Martin Luther King 出席，成為他們轉向民權訊息的起點。",
+      "src": "https://staxrecords.com/spotlight/the-staple-singers/",
+      "from": "new"
+     },
+     {
+      "f": "1965 年 4 月 9 日在芝加哥 New Nazareth Church 錄下《Freedom Highway》。",
+      "src": "https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/",
+      "from": "new"
+     },
+     {
+      "f": "1968 年簽給 Stax，1972 年〈I'll Take You There〉登上流行榜與 R&B 榜冠軍。",
+      "src": "https://www.britannica.com/topic/The-Staple-Singers",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1965 年 4 月 9 日在芝加哥 New Nazareth Church 錄下《Freedom Highway》現場專輯。",
+    "src": "https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/",
+    "from": "new"
+   },
+   {
+    "f": "1972 年〈I'll Take You There〉登上流行榜與 R&B 榜冠軍。",
+    "src": "https://www.britannica.com/topic/The-Staple-Singers",
+    "from": "new"
+   },
+   {
+    "f": "1999 年入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/staple-singers",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "團體成形年份：英文維基寫 1948 年起在教堂演出、1952 年簽約，Britannica 寫 1950 年代初期成形；facts 分別照各源寫，不把 1948 寫成正式成軍年。",
+   "上線簡介《Freedom Highway》寫 Sony 2015 年《Freedom Highway Complete》『擴成十八軌』；Legacy Recordings 官方新聞稿寫 17 首，見 pubIssues。",
+   "《Respect Yourself》（1971）Hot 100 第 12 名見維基與 Stax 兩處一致，但 R&B 榜名次只有 Stax 一源，本層寫入 legacy 時取 Stax 版本。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Freedom Highway",
+    "claim": "Sony 於 2015 年以《Freedom Highway Complete》重發，補回引言與祝禱、擴成十八軌",
+    "problem": "Legacy Recordings（Sony 旗下）2014 年 12 月的官方新聞稿寫 Complete 版共 17 首、補回 30 多分鐘內容；上線簡介寫 18 軌，建議依 Discogs 或實體曲目表核對軌數。",
+    "src": "https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/"
+   },
+   {
+    "album": "Freedom Highway",
+    "claim": "同名曲……歌詞點名艾默特·提爾在 Tallahatchie 河邊遇害一事",
+    "problem": "本層讀到的 Legacy Recordings 官方新聞稿與維基都未提到歌詞點名 Emmett Till，只寫標題曲受 Selma 到 Montgomery 遊行啟發；無法證實，建議回查歌詞或出處，查不到就刪。",
+    "src": "https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/"
+   }
+  ],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全靠補查。補查 6 次：英文維基、搖滾名人堂官網、Britannica、WebSearch（King 與民權歌曲）、Stax 官方藝人介紹、Legacy Recordings 新聞稿；失敗 1 次：NPR 訪談頁（503）。同名混卡：無。Pops Staples 的生卒日期只有維基單一來源（逝世年屬高風險），不收；Pervis 2021 年過世同樣不收。未收：搜尋摘要提到 Pops 1963 年在蒙哥馬利聽 King 講道後說的『他能講，我們就能唱』與『隨 King 巡演募款』，只見搜尋摘要，未逐頁核對（Stax 官方頁只確認 1963 年蒙哥馬利演出、King 在場）；Greg Kot 稱《Freedom Highway》是『史上最佳現場專輯之一』屬單一評論者評價，不收；Bob Dylan 2015 年那句話只有維基一源，上線簡介《Uncloudy Day》也引用；維基未提 Dylan 說《Uncloudy Day》是『最神祕的東西』，上線簡介該句本層未能驗證。"
  }
 ]
