@@ -96,3 +96,4 @@
 - ar-b-009 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 2 條（Love《Love》「Elektra 第一張搖滾唱片」說法脆弱；發行月份 3 月／4 月不一）。Koes Plus 的 Rolling Stone Indonesia 名次屬媒體榜單，不寫。
 - ar-b-009 寫作第 2 組（20 位）審畢，修 1 處：Jason Isbell 在世且 2024 年又同屆包辦兩獎，「兩度」→「曾多次」。Guns N' Roses 補洞 thin、寫作層依名人堂官方語寫成 full，照准。
 - ar-b-009 上架：40 位（搖滾），審稿修 1 處。
+- ar-b-010 補洞第 3 組：SBB 失敗請求 5 次，照實記，放行。pubIssue 1 條（SBB《Pamięć》「Niemen 伴奏到 1973 年底」，低信心）。Ryan Adams 2019 年只寫「《紐約時報》刊出報導」的中性事實；FBI 結案說法為匿名消息單源，不寫。

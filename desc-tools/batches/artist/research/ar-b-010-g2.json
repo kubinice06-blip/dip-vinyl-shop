@@ -574,5 +574,90 @@
     "failedFetches": 2,
     "status": "full",
     "notes": "事實庫 research 只有 1 條《Sehnsucht》專輯層級（德文維基），published 一張《Sehnsucht》；三格皆補查。池內 4 張（《Sehnsucht》1997、《Mutter》2001、《Liebe ist für alle da》2009、《[Rammstein]》2019）皆是柏林這團，無混卡。上線簡介《Sehnsucht》與本輪所查無衝突，未發現需改處。搜尋 8 次：維基 Rammstein（開頁）、Britannica（503 未取得，不計）、WebSearch（origin）、Loaded Radio（開頁）、維基 Herzeleid（開頁）、WebSearch（2023 調查）、bluewin（開頁）、CelebrityAccess（開頁）、德文維基 Rammstein（開頁）；共 8 次有效（Britannica 與 rammstein.de 404 除外）。失敗 2 次：Britannica 503、rammstein.de 官網 404；Guardian 頁被工具直接拒抓（未發出請求，不計）。兩源非獨立處：origin 第 2 條的兩源皆為維基（德文與英文《Herzeleid》條），實質同站，非獨立；origin 第 1、sound 兩條與 legacy 第 1 條的一源為英文維基、一源為 Loaded Radio 的品牌歷史文，彼此獨立性尚可，但 Loaded Radio 的『arguably the most successful…』是該站評語、維基寫 considered。2023 年一條依本批特注只寫中性事實：CelebrityAccess 與 bluewin 都寫柏林檢察署終止調查、未起訴；CelebrityAccess 開頁載明 2023 年 8 月 29 日與檢方聲明（現有證據，包含指涉匿名爆料者的媒體報導與補充詢問證人，沒有得出跡象），bluewin 稱檢方理由是『lack of sufficient suspicion』，且原告多為第三方；寫作層只寫年月與『檢方終止調查、未起訴』，不寫調查的具體內容、不點指控人。單源未收：維基稱 1999 年葛萊美最佳金屬演出提名、2019 年專輯在 14 國登榜首、〈Deutschland〉2019 年為第二首德國榜首、2022 年《Zeit》、2024 年 7 月體育場巡演在蓋爾森基興收尾、自 2001 年與舞台設計師 Roy Bennett 合作（皆僅維基）；Kruspe 出身施威林、曾在東德團 Das elegante Chaos（僅德文維基）；德文維基引 Süddeutsche Zeitung 稱樂團是德國『最偉大的文化輸出之一』、體育場巡演是德語團體『全球最成功的舞台活動』（僅德文維基）；Kruspe 1989 年逃往西柏林、Landers 生於東柏林（搜尋摘要，未開頁）；1994 年贏得柏林比賽而錄製四首歌 demo（搜尋摘要）；首作《Herzeleid》1995 年在斯德哥爾摩錄製、德國榜第 2 名（僅維基專輯條）；Loaded Radio 稱 Lindemann 是持照煙火師（僅 Loaded Radio 單源，已自 facts 撤出）。"
+  },
+  {
+    "key": "rancid",
+    "name": "Rancid",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Rancid 1991 年在加州柏克萊成軍，創辦人是 Tim Armstrong 與 Matt Freeman；兩人是從小的朋友，先前一起在 ska punk 樂團 Operation Ivy（1987 至 1989 年）。",
+            "src": "https://en.wikipedia.org/wiki/Rancid_(band)",
+            "src2": "https://www.pressure-magazine.de/bandprofil/rancid-5634/",
+            "from": "new"
+          },
+          {
+            "f": "Operation Ivy 在舊金山灣區東灣（East Bay）以 Gilman Street 俱樂部為中心的樂團場景裡舉足輕重，Armstrong 與 Freeman 出身於這個場景。",
+            "src": "https://larrylivermore.com/journey-to-the-end-tim-armstrong-matt-freeman-and-lars-frederiksen-talk-to-larry-livermore-about-operation-ivy-rancid-and-that-whole-east-bay-thing/",
+            "src2": "https://www.pressure-magazine.de/bandprofil/rancid-5634/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Rancid 的聲音把 punk rock 與 ska、reggae 的影響揉在一起；1995 年的《...And Out Come the Wolves》ska 味很重，常被拿來和 Armstrong 與 Freeman 先前的 Operation Ivy 相比。",
+            "src": "https://en.wikipedia.org/wiki/...And_Out_Come_the_Wolves",
+            "src2": "https://www.pressure-magazine.de/bandprofil/rancid-5634/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Rancid 常被與 Green Day、The Offspring 並列，視為 1990 年代中期讓美國主流重新關注 punk rock 的那一波樂團；《...And Out Come the Wolves》被認為與 Green Day 的《Dookie》、The Offspring 的《Smash》一起推動了這股復興。",
+            "src": "https://en.wikipedia.org/wiki/Rancid_(band)",
+            "src2": "https://en.wikipedia.org/wiki/...And_Out_Come_the_Wolves",
+            "from": "new"
+          },
+          {
+            "f": "《...And Out Come the Wolves》（1995）在 Billboard 200 最高第 45 名，1996 年 1 月拿到金唱片，2004 年白金，美國銷量逾 100 萬張。",
+            "src": "https://en.wikipedia.org/wiki/...And_Out_Come_the_Wolves",
+            "src2": "https://en.wikipedia.org/wiki/Rancid_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年 Lars Frederiksen 加入擔任吉他手。",
+            "src": "https://en.wikipedia.org/wiki/Rancid_(band)",
+            "src2": "https://www.pressure-magazine.de/bandprofil/rancid-5634/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1991 年在柏克萊成軍。",
+        "src": "https://en.wikipedia.org/wiki/Rancid_(band)",
+        "src2": "https://www.pressure-magazine.de/bandprofil/rancid-5634/",
+        "from": "new"
+      },
+      {
+        "f": "1995 年發行《...And Out Come the Wolves》。",
+        "src": "https://en.wikipedia.org/wiki/...And_Out_Come_the_Wolves",
+        "src2": "https://en.wikipedia.org/wiki/Rancid_(band)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "《...And Out Come the Wolves》白金與金唱片：維基樂團條寫『美國銷量逾 100 萬張』，專輯條寫 1996 年 1 月金、2004 年白金；兩者一致，未見衝突。",
+      "樂團 2006 年後陣容：pressure-magazine 寫『2006 年起陣容未變』，維基寫 2006 年 Branden Steineckert 取代 Brett Reed；並不矛盾，但 facts 不寫陣容穩定性。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 5,
+    "status": "full",
+    "notes": "事實庫完全空白（research 與 published 皆無），從零查。池內 4 張（《Rancid》1993、《...And Out Come the Wolves》1995、《…Honor Is All We Know》2014、《Trouble Maker》2017）皆為加州東灣這團，無混卡。搜尋 8 次：維基 Rancid（開頁）、WebSearch（起源）、Larry Livermore 訪談（開頁）、維基專輯《...Wolves》（開頁）、WebSearch（RS 與 Revolver 榜單）、WebSearch（Hellcat 與影響）、Punktastic（開頁，只證實 Hellcat 是 Armstrong 的廠牌，內容單薄，未用）、pressure-magazine.de（開頁）。失敗 5 次，超出上限 4 次 1 次（皆為取不到內容的請求：Britannica 404、Treble 403、Rolling Stone 讀者票選頁導向 tollbit 付費牆、Rolling Stone Australia 503、Alt Press 403），照實記錄。兩源非獨立：legacy 兩條的兩源皆為英文維基（樂團條與專輯條），非獨立；origin 第 1 條、sound、era 是維基或 Livermore 搭配德國 pressure-magazine（獨立）。Livermore 訪談是 Larry Livermore（Lookout! Records 創辦人）對三位成員的訪談，第一手，但 Gilman Street 最受歡迎那句寫的是 Operation Ivy，Albany 描述是 Freeman 自述。origin 第 2 條兩源（Livermore、pressure）都確認 Operation Ivy 在 Gilman Street 場景的地位；Freeman 形容成長的 Albany 是水電工、警察聚居的工人階級社區只見 Livermore（單源，未進 facts）。單源未收：Livermore 稱 Armstrong 在 Operation Ivy 解散後酗酒、1991 至 1992 年戒酒後兩人重新合作、Billie Joe Armstrong 曾被找去試音但因另有承諾而由 Frederiksen 加入（僅 Livermore）；pressure-magazine 稱 Rancid 在 1994 年後拒絕『七位數』的大廠邀約、留在獨立廠牌 Epitaph 保有創作自主（僅 pressure；搜尋摘要 Rolling Stone 亦稱他們選擇留在 Epitaph，未開頁）；維基稱三張專輯之外累計逾 400 萬張、後來也在 Warner Bros. 發行（僅維基）；《...Wolves》單曲〈Time Bomb〉Modern Rock 第 8 名、〈Ruby Soho〉第 13 名、〈Roots Radicals〉第 27 名（僅維基專輯條）；Rolling Stone 讀者票選最佳龐克專輯第 9 名（2016）、Revolver 第 8 名（2018）、Entertainment Weekly 給 A+（僅維基專輯條）；〈Time Bomb〉協助帶起 third wave ska、搜尋摘要稱 Rancid 是對 Green Day 太流行的孩子們的英雄（僅 Rolling Stone 搜尋摘要，頁面被擋）；Hellcat Records 1997 年由 Armstrong 與 Brett Gurewitz 創立、Dropkick Murphys 早期簽於該廠（搜尋摘要，未開頁；Punktastic 只證實廠牌與 Dropkick Murphys 在其名下）。legacy 沒有兩源獨立支撐的『後輩點名受其影響』。"
   }
 ]
