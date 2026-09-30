@@ -115,3 +115,12 @@
 - 補洞第 4 組交件，補洞交齊（40 位）。灰野敬二 2026 年威尼斯雙年展音樂節終身成就金獅獎：主線 WebSearch 核實已宣布、頒獎典禮 2026-10-12（labiennale.org、ANSA）→ 寫「獲宣布授予」。pubIssue 4 條（不失者《Double Live》「2026 年 3 月獲頒金獅獎」時序錯、「百餘種錄音」過時；ザ・スターリン《trash》錄音室名 Mod／Mad；夾子電動大樂隊「小應是濁水溪公社前鼓手」無據）。不失者成軍採 1978（推翻事實庫 1979）。告五人、拍謝少年金曲獎主詞分別是歌曲與專輯包裝。
 - 寫作第 2 組（20 位）審畢，修 1 處：甜梅號「2014 年改名微光群島、隔年解散」不在 facts（補洞稿列為單源 notes）→ 刪。日文歌名〈アンジェリーナ〉、計畫名「プロジェクトFUKUSHIMA!」無通行中譯，依專有名詞保留原文（本段裁定）。
 - ar-b-011 上架：40 位（搖滾、日本／台灣獨立），審稿修 3 處。**依店主指示，第二段在 ar-b-011 停止；ar-b-012～022 未開始。**
+
+## 第二段收尾（2026-09-30）
+
+完成 21 批（ar-a-011～020、ar-b-001～011）、825 位藝人，審稿共修 58 處；data/artist-intros 累計 1275 位。ar-b-012～022 未開始（店主指示停）。
+預覽：https://claude.ai/artifact/Rb75cuHfY2q3LHnN1hvEAk（產生腳本在雲端 scratchpad 的 mkpreview32.js，以舊預覽為版型）。
+
+### PROJECT_MEMORY.md 待補條目（雲端不可寫，交本機貼上）
+
+- 2026-09-30｜dip-vinyl-shop｜藝人介紹第二段：上架 ar-a-011～020、ar-b-001～011 共 21 批 825 位（累計 1275 位），審稿修 58 處；ar-b-012 起依店主指示暫停。新增 B 級裁定檔 batch-progress/artist-intro/ar-b-rulings.md；qa-artist.mjs 放行「超級盃／超級巨星」；writer-base 加「樂評人當故事角色可具名」「日文材料在地化」。待本機處理：audits/ARTIST-PUB-ISSUES.md 135 條（優先：Lou Rawls《Lou Rawls Live!》上線簡介是退件說明、Bukka White《Big Daddy》含管線文字）、卡片拆分（John Williams 吉他手盤、Mother Earth 舊金山團）、卡池年份疑點、約 40 則專輯簡介正文寫「維基記…」是否清理。驗證：每批 qa-artist gap／out 0 處、build-artist-intros 通過。分支 claude/artist-intro-interactive-plan-ycws4h。
