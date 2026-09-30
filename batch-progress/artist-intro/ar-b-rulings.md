@@ -52,3 +52,4 @@
 ### ar-b-006
 
 - 補洞第 1 組：9m88 搜尋 9 次，第 9 次內容已撤，放行（先例）。pubIssue 1 條（S.O.S. Band《On the Rise》「製作權交給 Jam 與 Lewis」言過其實）。Supreme Angels 葛萊美入圍作採 grammy.com 的《Together As One》。Roger Troutman 逝世年僅維基兩條目，不寫。
+- 補洞第 4 組交件，補洞交齊（40 位）。Solomon Burke 失敗請求 9 次、Brooklyn Allstars 5 次（付費牆與 503），照實記，放行。pubIssue 2 條（Sylvester《Step II》「Fantasy 第四張」、《Stars》「第五張」，依 1977 同名作為 Fantasy 首張推算應為第二、三張）。
