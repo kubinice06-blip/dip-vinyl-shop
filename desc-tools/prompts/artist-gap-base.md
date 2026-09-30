@@ -47,6 +47,8 @@
 - 優先來源：英文或該國語言維基、MusicBrainz、Discogs、AllMusic 藝人頁、官方網站、訃聞（NYT、Guardian 等主流媒體）、
   日本藝人可用日文維基與 CDJournal。
 - **`f` 欄只放事實**，查證過程、推翻紀錄、限制說明一律寫進 `notes`。
+- **新查的事實（`from: "new"`）一律帶 `src` 與 `src2` 兩個網址（2026-09-30 起，ar-a-008 生效）**：第二源要實際開頁讀到；只看到搜尋摘要的在 notes 註明。
+  湊不到第二源的那條移進 notes 並寫「單源」。`qa-artist.mjs gap` 會擋缺 `src2` 的條目。搖滾名人堂官網介紹與引介人致詞例外，可單源進 notes，開頭寫「名人堂官方（可具名單源）」。
 - **notes 裡記了「來源不一致」的值，facts 就不得帶那個值**（試做批 Uno Naissoo 的 Swing Club 年份：notes 寫了兩源不一致，facts 仍放進其中一個年份，寫作層照寫，靠主線審稿才拿掉）。
 
 ## 輸出格式
@@ -59,7 +61,7 @@
   "name": "Lee Morgan",
   "slots": {
     "origin": { "status": "bank", "facts": [ { "f": "…", "src": "https://…", "from": "bank" } ] },
-    "sound":  { "status": "gap",  "facts": [ { "f": "…", "src": "https://…", "from": "new" } ] },
+    "sound":  { "status": "gap",  "facts": [ { "f": "…", "src": "https://…", "src2": "https://…", "from": "new" } ] },
     "legacy": { "status": "gap",  "facts": [ … ] },
     "era":    { "status": "bank", "facts": [ … ] }
   },

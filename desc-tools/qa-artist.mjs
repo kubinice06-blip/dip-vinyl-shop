@@ -94,6 +94,10 @@ if (stage === 'gap') {
       { const t = stripLegit(x.f, e); if (SIMP.test(t)) warn(`${r.name}／事實`, '簡體字:', [...new Set(t.match(new RegExp(SIMP, 'g')))].join('')) }
       if (/(查無|查不到|uncertain|推翻|主線|【)/.test(x.f)) warn(r.name, 'f 欄混入查證過程：', x.f.slice(0, 40))
     }
+    // f 欄只放兩源都支持的內容（2026-09-30 起）：新查的格內事實缺 src2 就擋（事實庫帶來的 bank 條目不在此限）
+    { const no2 = SLOTS.flatMap(s => slots[s]?.facts || []).filter(x => x.from === 'new' && !isUrl(x.src2)).length
+      // ar-a-001～007 產出時格式還沒有 src2 欄，只列提示；ar-a-008 起硬擋
+      if (no2) { if (/^ar-a-00[1-7]$/.test(batch)) notes.push(`${r.name}：${no2} 條新查事實沒記 src2（舊格式）`); else warn(r.name, `${no2} 條新查事實缺 src2（單源應移進 notes）`) } }
     const allBank = SLOTS.every(s => slots[s]?.status === 'bank')
     if (allBank && r.searches > 0) warn(r.name, `三格皆 bank 卻用了 ${r.searches} 次搜尋`)
     if (r.searches > 6) warn(r.name, `搜尋 ${r.searches} 次，超過上限 6`)
