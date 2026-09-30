@@ -977,5 +977,145 @@
     "notes": "本位補查 8 次：WebFetch 英文維基、Britannica、西班牙文維基、grammy.com 新聞、Karol G 訪談（hola.com）、Billboard 榜單轉載（colombiaone）各 1，WebSearch 2；失敗請求 1 次（latingrammy.com 403）。事實庫 research 為空，僅有兩張上線簡介。poolAlbums 五張皆為哥倫比亞歌手 Shakira，無混卡。\n數字一律不收（會過期或無法對齊）：葛萊美與拉丁葛萊美座數（英文維基寫四座與十五座、Britannica 寫『超過 300 個獎』、grammy.com 2011 年寫兩座與七座，各時間點不同）、專輯銷量與串流數、Super Bowl 觀眾數、Waka Waka 銷量。\n未收（單源）：(1) 英文維基：〈Waka Waka (This Time for Africa)〉為 2010 年 FIFA 世界盃官方歌曲、2012 年獲法國藝術與文學勳章 Chevalier、19 歲被哥倫比亞總統任命為國家文化大使、2026 年入圍搖滾名人堂（提名，尚未有結果，屬會變動的資訊）、4 歲寫詩〈La Rosa de Cristal〉、母校為天主教學校；(2) 西班牙文維基：4 歲在餐廳聽見 derbake（阿拉伯鼓）而著迷、1988 年『Buscando artista infantil』連續三年獲勝、1993 年 Viña del Mar 音樂節第三名、『la artista latina más exitosa e influyente de todos los tiempos』與『被許多歌手點名為啟發者』（單源，且維基本身未列出名字）；(3) Britannica：童年學肚皮舞、10 歲已寫歌並參加才藝比賽、她自己寫了《Laundry Service》全部歌詞、《She Wolf》（2009）的 electro-pop 聲響、現場表演含 mapalé 與 champeta；(4) hola.com（單源訪談）：Karol G 稱 Shakira 是她欽佩的拉丁女歌手，『因為她能跨界（crossover），英語西語都能唱』；後輩點名尚缺第二源（搜尋摘要另稱 Karol G 在 Billboard 訪談亦談到 Shakira，未開頁）；(5) colombiaone 轉載：Billboard 2025 年『50 位最具影響力的拉丁流行女歌手』名單將 Shakira 列第 1（Karol G 第 5）——Billboard 原頁未開，只有轉載，屬二手；(6) grammy.com 新聞：2011 年時她是七座拉丁葛萊美與兩座葛萊美得主、2008 年獲 People en Español 年度人道主義者、擔任 UNICEF 親善大使（單源）；(7) 搜尋摘要稱 Laundry Service 讓她首度進入英語榜前十（Whenever, Wherever，來源摘要，未開頁）。\n非獨立提醒：英文維基與西班牙文維基屬同一百科的不同語言版；grammy.com 是 Recording Academy 自家新聞稿，是主辦方說法。上線簡介（¿Dónde Están los Ladrones?）寫『2000 年首屆拉丁葛萊美最佳流行女歌手獎』，本位未查，非本組補查範圍。",
     "failedFetches": 1,
     "pubIssues": []
+  },
+  {
+    "key": "u-roy",
+    "name": "U-Roy",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "U-Roy 本名 Ewart Beckford，1942 年 9 月 21 日生於牙買加金斯敦的 Jones Town。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://jamaicans.com/tribute-to-ewart-u-roy-beckford-od-september-21-1942-february-17-2021/",
+            "from": "new"
+          },
+          {
+            "f": "他的母親是當地基督復臨安息日會唱詩班的風琴手；他自陳受 Louis Jordan 的咬字分句影響最深。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://jamaicans.com/tribute-to-ewart-u-roy-beckford-od-september-21-1942-february-17-2021/",
+            "from": "new"
+          },
+          {
+            "f": "1961 年他在 Dickie Wong 的聲響系統開始 deejay 生涯，起因是受 Count Machuki 啟發。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://www.reggaeville.com/artist-details/u-roy/about/",
+            "from": "new"
+          },
+          {
+            "f": "他後來輾轉待過幾個聲響系統，最後到 King Tubby 的 Hometown Hi-Fi 擔任主力 deejay。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://jamaicans.com/tribute-to-ewart-u-roy-beckford-od-september-21-1942-february-17-2021/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1970 年 John Holt 聽到他在既有伴奏上即興 toasting，把他引薦給 Duke Reid，促成他的第一批錄音。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://jamaicans.com/tribute-to-ewart-u-roy-beckford-od-september-21-1942-february-17-2021/",
+            "from": "new"
+          },
+          {
+            "f": "他把 toasting 帶進錄音，讓這種原本屬於聲響系統現場的唱法成為廣為流傳的新表演形式。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://www.reggaeville.com/artist-details/u-roy/about/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1970 年他的〈Wake the Town〉〈Rule the Nation〉〈Wear You to the Ball〉三首單曲同時佔住牙買加排行榜的前三名，維持了約一個半月。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://jamaicans.com/tribute-to-ewart-u-roy-beckford-od-september-21-1942-february-17-2021/",
+            "from": "new"
+          },
+          {
+            "f": "他被認為啟發了嘻哈的發展。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://mixmag.net/read/jamaican-reggae-dancehall-pioneer-u-roy-died-toasting-news",
+            "from": "new"
+          },
+          {
+            "f": "Shabba Ranks、Ranking Joe、Josey Wales 等後輩 toaster 都受他影響。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://mixmag.net/read/jamaican-reggae-dancehall-pioneer-u-roy-died-toasting-news",
+            "from": "new"
+          },
+          {
+            "f": "2007 年他獲牙買加卓越勳章（Order of Distinction）。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://mixmag.net/read/jamaican-reggae-dancehall-pioneer-u-roy-died-toasting-news",
+            "from": "new"
+          },
+          {
+            "f": "他 2021 年 2 月 17 日在金斯敦過世，享年 78 歲。",
+            "src": "https://www.udiscovermusic.com/news/jamaican-star-u-roy-dies/",
+            "src2": "https://mixmag.net/read/jamaican-reggae-dancehall-pioneer-u-roy-died-toasting-news",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1961 年他在 Dickie Wong 的聲響系統開始 deejay 生涯。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://www.reggaeville.com/artist-details/u-roy/about/",
+            "from": "new"
+          },
+          {
+            "f": "1969 年底他加入 King Tubby 的 Hometown Hi-Fi。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://jamaicans.com/tribute-to-ewart-u-roy-beckford-od-september-21-1942-february-17-2021/",
+            "from": "new"
+          },
+          {
+            "f": "1975 年《Dread in a Babylon》由 Virgin 發行，在英國相當成功。",
+            "src": "https://www.udiscovermusic.com/news/jamaican-star-u-roy-dies/",
+            "src2": "https://www.reggaeville.com/artist-details/u-roy/about/",
+            "from": "new"
+          },
+          {
+            "f": "1978 年他成立自己的聲響系統 Stur Gav，取自兩個兒子的名字。",
+            "src": "https://en.wikipedia.org/wiki/U-Roy",
+            "src2": "https://www.reggaeville.com/artist-details/u-roy/about/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1970 年三首單曲同時佔住牙買加排行榜前三名。",
+        "src": "https://en.wikipedia.org/wiki/U-Roy",
+        "src2": "https://jamaicans.com/tribute-to-ewart-u-roy-beckford-od-september-21-1942-february-17-2021/",
+        "from": "new"
+      },
+      {
+        "f": "2007 年獲牙買加卓越勳章。",
+        "src": "https://en.wikipedia.org/wiki/U-Roy",
+        "src2": "https://mixmag.net/read/jamaican-reggae-dancehall-pioneer-u-roy-died-toasting-news",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "『第一位』宣稱：Mixmag 稱他『不是第一位 toaster、卻是第一位錄下這種唱法的人』並冠他『The Originator』，Reggaeville 稱他受 Count Matchuki 與 King Stitt 影響，都表示他之前已有 toaster；另外可能有更早錄音的人（未核實），故 facts 只寫『把 toasting 做成商品』，不寫『第一位錄音』或『開山』。（上線簡介 Dread in a Babylon 寫『toasting 的開山者』，屬同類的高風險宣稱，寫作層宜與 pubIssues 對照。）",
+      "Stur Gav 培養的新人：英文維基寫 Ranking Joe、Jah Screw、Charlie Chaplin、Josey Wales，Reggaeville 寫 Super Cat 與 Josey Wales；名單不一致，facts 不寫 Stur Gav 培養了誰（era 只寫成立年與名稱由來）；legacy 只用英文維基與 Mixmag 都列出的 Shabba Ranks、Ranking Joe、Josey Wales。",
+      "上線簡介與事實庫在本位相關事實上無衝突。"
+    ],
+    "searches": 7,
+    "status": "full",
+    "notes": "本位補查 7 次：WebFetch 英文維基、udiscovermusic、Mixmag、Reggaeville、jamaicans.com 各 1，WebSearch 2；失敗請求 4 次（Britannica 404、NPR 503、Rolling Stone 307 轉址、DJ Mag 403），已達上限，未再試。poolAlbums 五張皆為牙買加 deejay U-Roy，無混卡。事實庫 research 已有 Jones Town 出身、母親風琴手、Louis Jordan、Stur Gav、1970 年三曲霸榜（bank），本位補足第二源後改以 new 收。\n未收（單源）：(1) 英文維基：『a melodic style of toasting applied with a highly developed sense of timing』（單源，評語）、影響 Sean Paul 與 Shabba Ranks、與 Toots and the Maytals《True Love》（2004）合作、2012 年《Pray Fi Di People》；(2) Mixmag：Shabba Ranks 2019 年稱他『di Picasso of our music』、他自述『我只是談團結，暴力很醜、愛很美』、開設 Mego-Ann 廠牌；(3) udiscovermusic：Shaggy 稱他『one of our hero's』、David Rodigan 稱他『the paradigm of Jamaican music』（搜尋摘要）與『ironic toaster』、1972 年首次赴英與 Roy Shirley、Max Romeo 同台；(4) Reggaeville：他被預定頒發 JaRIA Icon Award 卻在頒獎前過世、他 1978 年 Stur Gav 培養 Super Cat（單源）；(5) 搜尋摘要稱 Kool Herc 常把 U-Roy 視為主要啟發（來源摘要，未開頁）；legacy 的嘻哈條目只寫『被認為啟發』，Kool Herc 的具名說法只見英文維基（單源）而未收進 facts；(6) 搜尋摘要稱他 1970 年起與 Bunny Lee、Lee Perry、Rupie Edwards 等合作（udiscovermusic 有列）。\n非獨立提醒：Reggaeville 與 jamaicans.com 的生平段落（Louis Jordan、母親風琴手、Count Machuki）措辭與英文維基雷同，很可能同出一源，故 origin 第二與第三條的獨立性有限。",
+    "failedFetches": 4,
+    "pubIssues": []
   }
 ]

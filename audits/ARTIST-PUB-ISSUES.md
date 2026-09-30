@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 68 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 76 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -72,3 +72,11 @@
 | ar-a-014 | 周杰倫 | Jay | 2000年11月由台灣博德曼發行 | 待核：中文維基寫首張專輯由阿爾發音樂發行，文化部（bamid）金曲名單亦把《范特西》發行公司列為阿爾發音樂事業有限公司；「博德曼」可能是發行商而非廠牌，建議店主核對後決定是否改成「阿爾發音樂發行」。 | https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124208 |
 | ar-a-014 | Madonna | Madonna | 她先靠 Danceteria 駐場 DJ Mark Kamins 播出 demo〈Everybody〉打開門路，才換來整張專輯的錄製許可。 | 維基寫 1982 年 Kamins 對她的 demo 感興趣、引介 Sire 的 Seymour Stein，簽下的是兩單曲合約（〈Everybody〉1982 年 10 月、〈Burning Up〉／〈Physical Attraction〉1983 年 3 月），專輯是其後才做；『整張專輯的錄製許可』與『播出 demo』的因果都不見於該段。單源（維基），建議店主本機核對後再改。 | https://en.wikipedia.org/wiki/Madonna |
 | ar-a-014 | 林憶蓮 | Love, Sandy | 並獲新加坡金曲獎最佳專輯 | 中文維基寫她在 1995 年與 2001 年的新加坡金曲獎獲頒『最佳演繹女歌手獎』，未見『最佳專輯』；疑為獎項名稱混淆，待店主本機再查原始獎項名單確認。 | https://zh.wikipedia.org/wiki/%E6%9E%97%E6%86%B6%E8%93%AE |
+| ar-a-014 | Fela Kuti | Sorrow Tears and Blood | 母親、女權運動者 Funmilayo Ransome-Kuti 被從二樓拋下，昏迷約八週後過世 | 維基 Funmilayo 條目與 felakuti.com 官方年表都寫她 1978 年 4 月 13 日因傷過世，距 1977 年 2 月 18 日的突襲逾一年，『約八週』沒有來源支持。 | https://felakuti.com/story/1978 |
+| ar-a-014 | Fela Kuti | Coffin for Head of State | 他 78 歲的母親 Funmilayo Ransome-Kuti 被從二樓拋下，傷重不治；Fela 隨後率眾把母親的空棺抬到 Dodan Barracks | felakuti.com 官方年表寫突襲時她 77 歲，維基寫她 1978 年過世時 77 歲，『78 歲』兩源都對不上；維基兩條目寫棺木送到 Dodan Barracks 發生在她過世之後的 1978 年 4 月，且都沒說是空棺；『隨後』與『空棺』兩處需改。 | https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti |
+| ar-a-015 | Umm Kulthum | Enta Omri | 採 maqam Sikah Balady | 上線 Amal Hayaty 簡介引阿拉伯文維基作品表，說〈Inta Omri〉與〈Amal Hayaty〉「詞、曲、調式與曲式四欄填的是同一組」，而事實庫記〈Amal Hayaty〉的調式為 Kurd；兩張上線簡介對〈Inta Omri〉的調式一寫 Sikah Balady、一寫（間接）Kurd，內部不一致。本層未能開到作品表原頁核對，請店主本機查證後統一。 | https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D8%A6%D9%85%D8%A9_%D8%A3%D8%B9%D9%85%D8%A7%D9%84_%D8%A3%D9%85_%D9%83%D9%84%D8%AB%D9%88%D9%85 |
+| ar-a-015 | R.D. Burman | Amar Prem | 英文維基記被退回的是〈Bada Natkhat Hai Yeh〉 | 事實庫研究稿（c99-b）對同一頁的原句是〈Bada Natkhat Hai Re Krishna Kanhaiyya〉，上線簡介的曲名比研究稿短且措辭不同；本層未能重新開到該頁核對，請店主本機比對曲名是否寫錯。 | https://en.wikipedia.org/wiki/Amar_Prem_(1972_film) |
+| ar-a-015 | Ali Farka Touré | Niafunké | 他2004年還當上該鎮鎮長，並把音樂收入投進當地灌溉工程 | 英文維基寫他當鎮長後自費整修道路、開挖下水道渠與供給發電機燃料，沒有灌溉；本層開到的 Al Jazeera 與 CBS 也沒寫灌溉。灌溉一說本層無來源，建議店主查證或改寫成道路、渠道與電力。 | https://en.wikipedia.org/wiki/Ali_Farka_Tour%C3%A9 |
+| ar-a-015 | Big Youth | Screaming Target | 1972年由當時才十幾歲的製作人Gussie Clarke操刀,在Kingston三間錄音室錄下這張首作 | 英文維基、Encyclopedia.com、Furious、Contemporary Musicians 四處都寫這張首作 1973 年發行；1972 年是〈S-90 Skank〉（Keith Hudson 製作）的年份。簡介的『1972 年錄下』只有事實庫可對，其餘來源不支持，建議查證改為 1973 年發行；卡池年份 1972 也需複核。 | https://www.furious.com/perfect/bigyouth.html |
+| ar-a-015 | Big Youth | Natty Cultural Dread | 他的第一首牙買加大熱門〈The Killer〉用的是 Horace Andy〈Skylarking〉的底軌 | 英文維基（研究稿）、Encyclopedia.com、Furious、Contemporary Musicians 都以 1972 年〈S-90 Skank〉為成名曲／首張金唱片，英文維基另說它是他第一首牙買加冠軍曲。『第一首大熱門是〈The Killer〉』與此衝突，建議刪『第一首』的序位或改寫。 | https://en.wikipedia.org/wiki/Big_Youth |
+| ar-a-015 | Orchestra Baobab | Pirates Choice | 多明尼哥吉他手 Barthélémy Attisso 的琶音樂句 | 我開的來源（英文維基、fRoots、Encyclopedia.com）都沒有把 Attisso 寫成多明尼哥人；fRoots 寫 Baobab 成員來自多哥、幾內亞比索、馬利與塞內加爾各族群，英文維基事實庫寫多哥的旋律進入他們的音樂。『多明尼哥』疑為『多哥』的筆誤，我未能開到 Attisso 個人的條目（英文維基 404），請店主複核。 | https://frootsmag.com/looking-back-with-baobab |
