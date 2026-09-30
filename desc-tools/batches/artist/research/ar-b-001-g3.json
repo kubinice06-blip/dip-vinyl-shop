@@ -208,5 +208,432 @@
     "failedFetches": 3,
     "status": "thin",
     "notes": "事實庫 research 為空（只有四張上線簡介），三格從零查。補查 7 次：維基 Johnny Griffin、WebSearch（訃聞）、Boston Globe 訃聞、DownBeat 訃聞、WebSearch（遺產與榮譽）、Britannica、Encyclopedia.com；另一次帶網域限制的 WebSearch 因網域不可用被拒，未計入。失敗請求 3 次（NPR 503、All About Jazz 403、網域限制搜尋 400），未超過上限。同名確認：poolAlbums 四張（Blue Note 兩張、Riverside 一張、Blue Note《The Congregation》）皆為芝加哥次中音手 Johnny Griffin，無混卡。兩源說明：維基、Boston Globe（AP 式訃聞）、DownBeat、Britannica、Encyclopedia.com 為各自獨立頁面且皆實際開讀；Encyclopedia.com 條目為參考書轉載。legacy 判 thin：查到的是移居歐洲的經過與速度名號，沒有找到兩源的後輩點名或國家級榮譽。未收（單源）：Down Beat 樂評人 Ralph J. Gleason 寫 Griffin 吹次中音的速度比任何在世者都快（Encyclopedia.com 單源）；1995 年 Berklee 榮譽音樂博士（維基單源）；DownBeat 說他入鏡〈Great Day in Harlem〉照片（單源）；Boston Globe 說他 12 歲看 Gene Ammons 演出決定吹薩克斯風、受 Charlie Parker 與 Dizzy Gillespie 影響、Billy Eckstine 樂團（單源）；15 歲隨 T-Bone Walker 樂團演出（維基單源）；Dyett 說他太矮不能吹次中音要他吹中音（搜尋摘要轉述華盛頓郵報，未開頁）；『one of the most talented musicians of his generation』（搜尋摘要轉述訃聞，未開頁）；Britannica 稱他 noted for his fluency in the hard-bop idiom、風格融合搖擺與咆勃（單源，只用作 hard bop 佐證）；搜尋摘要稱他結合 Hawkins 的技術、Webster 的音色與 Young 的線條（未開頁）。已上線簡介中《Introducing Johnny Griffin》稱他『全爵士圈數一數二的手速』與本位查得的速度名號一致，其餘唱片細節（編號、錄音日、班底）本位未查，不判斷。"
+  },
+  {
+    "key": "julie london",
+    "name": "Julie London",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Julie London 1926 年 9 月 26 日生於加州聖塔羅莎，父母是走 vaudeville 路線的歌舞搭檔。",
+            "src": "https://en.wikipedia.org/wiki/Julie_London",
+            "src2": "https://jesswaid.com/2017/12/04/julie-london/",
+            "from": "new"
+          },
+          {
+            "f": "她原本先走演員路線：在好萊塢大道一家服飾店當電梯操作員時被星探 Sue Carol 發掘，才進了電影圈。",
+            "src": "https://en.wikipedia.org/wiki/Julie_London",
+            "src2": "https://jesswaid.com/2017/12/04/julie-london/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "London 自稱只有「一小杯」分量的嗓音，得貼近麥克風唱；成名錄音走的就是這種耳語般的近麥克風唱法，與同期熱門歌曲的唱法形成對比。",
+            "src": "https://jesswaid.com/2017/12/04/julie-london/",
+            "src2": "https://jazzprofiles.blogspot.com/2016/07/julie-london-and-cry-me-river-essay-by.html",
+            "from": "new"
+          },
+          {
+            "f": "《Julie Is Her Name》只有 Barney Kessel 的吉他和 Ray Leatherwood 的貝斯伴奏，1955 年 8 月在好萊塢的 Western Recorders 錄成。",
+            "src": "https://en.wikipedia.org/wiki/Julie_Is_Her_Name",
+            "src2": "https://jazzprofiles.blogspot.com/2016/07/julie-london-and-cry-me-river-essay-by.html",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Cry Me a River〉是她最大的成功，1955 年底成為百萬銷量單曲；作曲的 Arthur Hamilton 是她的高中同學。",
+            "src": "https://en.wikipedia.org/wiki/Julie_London",
+            "src2": "https://jesswaid.com/2017/12/04/julie-london/",
+            "from": "new"
+          },
+          {
+            "f": "這首歌的 London 版本入選美國國會圖書館的國家錄音登記簿（National Recording Registry），後來有 Joe Cocker 等人翻唱。",
+            "src": "https://jazzprofiles.blogspot.com/2016/07/julie-london-and-cry-me-river-essay-by.html",
+            "src2": "https://en.wikipedia.org/wiki/Cry_Me_a_River_(1953_song)",
+            "from": "new"
+          },
+          {
+            "f": "首張專輯《Julie Is Her Name》1955 年 12 月由 Liberty 發行，登上 Cash Box 流行專輯榜第 1 名，Billboard 專輯榜第 2 名。",
+            "src": "https://en.wikipedia.org/wiki/Julie_Is_Her_Name",
+            "src2": "https://jazzprofiles.blogspot.com/2016/07/julie-london-and-cry-me-river-essay-by.html",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Julie Is Her Name》由 Bobby Troup 製作，兩人 1959 年結婚。",
+            "src": "https://en.wikipedia.org/wiki/Julie_Is_Her_Name",
+            "src2": "https://en.wikipedia.org/wiki/Julie_London",
+            "from": "new"
+          },
+          {
+            "f": "London 2000 年 10 月 18 日過世，享年 74 歲。",
+            "src": "https://en.wikipedia.org/wiki/Julie_London",
+            "src2": "https://jesswaid.com/2017/12/04/julie-london/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1955 年〈Cry Me a River〉成為百萬銷量單曲。",
+        "src": "https://en.wikipedia.org/wiki/Julie_Is_Her_Name",
+        "src2": "https://jesswaid.com/2017/12/04/julie-london/",
+        "from": "new"
+      },
+      {
+        "f": "1955 年 12 月首張專輯《Julie Is Her Name》登上 Cash Box 榜首。",
+        "src": "https://en.wikipedia.org/wiki/Julie_Is_Her_Name",
+        "src2": "https://jazzprofiles.blogspot.com/2016/07/julie-london-and-cry-me-river-essay-by.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "國家錄音登記簿入選年：維基 Julie London 與 Cry Me a River 條目寫 2016 年，Michael Owen 的登記簿文章（JazzProfiles 轉載）寫 2015 年（2015 年度名單於 2016 年公布，推測為此差異）；f 欄不寫年份。過世地：維基寫洛杉磯、死因心臟驟停，Jess Waid 寫 Encino、1995 年中風後；f 欄不寫地點與死因。〈Cry Me a River〉單曲發行月：維基《Julie Is Her Name》寫 1955 年 10 月，Jess Waid 與其他來源寫 1955 年 12 月；facts 與 milestones 都不寫單曲發行月。"
+    ],
+    "pubIssues": [
+      {
+        "album": "About the Blues",
+        "claim": "收錄丈夫 Bobby Troup 所寫的兩首歌",
+        "problem": "《About the Blues》發行於 1957 年，London 與 Troup 1959 年才結婚（維基 Julie London 條目與 Jess Waid 傳記皆寫 1959 年結婚，1954 年前的丈夫是 Jack Webb）；1957 年 Troup 還不是丈夫，宜改寫成『後來成為她丈夫的 Bobby Troup』或直接寫 Bobby Troup。",
+        "src": "https://en.wikipedia.org/wiki/Julie_London"
+      }
+    ],
+    "searches": 7,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫 research 為空，三格從零查。補查 7 次：維基 Julie London、WebSearch（Cry Me a River 與影響）、維基 Julie Is Her Name、維基 Cry Me a River、Jess Waid 傳記頁、WebSearch（國家錄音登記簿）、JazzProfiles 轉載的 Michael Owen 登記簿文章。失敗請求 3 次（Britannica 404、LOC 官方 PDF 為掃描檔無法讀出文字、LOC 登記簿頁 403），未超過上限。同名確認：poolAlbums 四張（Julie Is Her Name、London by Night、Around Midnight、About the Blues）皆為歌手兼演員 Julie London，無混卡。兩源說明：維基三個條目屬同站，我把它們當作不同頁面但非獨立來源，凡 src 與 src2 皆為維基處都已避開（每條至少一個站外源）；Jess Waid 傳記頁的出生、父母、電梯操作員與維基高度重疊，可能承襲維基，屬『可能非獨立』，出生與父母那兩條因此可靠度較低；JazzProfiles 轉載的是 Library of Congress 錄音登記簿的 Michael Owen 文章，與維基獨立。legacy 的『Grammy Hall of Fame 2001』只見維基 Julie London 與 Cry Me a River 兩條目（同站），不收。未收（單源）：Grammy Hall of Fame 2001 年入選（維基同站）；NPR『50 Greatest Jazz Vocals』第 48 名（維基單源，未開 NPR 頁）；《Emergency!》1972–1979 飾 Dixie McCall、1974 金球獎提名（維基單源）；1947 至 1954 與 Jack Webb 的婚姻（維基與 Jess Waid 同說但 Jess Waid 疑承襲維基，屬非獨立，僅用於 1959 年 Troup 婚期）；Scott Yanow 評《Julie Is Her Name》『one of the best in Julie London's career』（維基單源）；Kessel 與 Leatherwood 首次看到譜、臨時排成 head arrangement，工程師 John Neal 把她放近 Telefunken 麥克風（JazzProfiles 單源）；Cry Me a River 錄音版本逾 700 種（維基單源，引 SecondHandSongs）；搜尋摘要稱 Diana Krall 柔焦式情慾風格的先驅是 Peggy Lee 與 Julie London（來自搜尋結果的樂評摘要，未開頁，不收）；搜尋摘要稱 Anne Burnell 受 London 影響（未開頁，不收）。後輩點名受她影響一項本次未找到可開的兩源。已上線《About the Blues》簡介所述 Liberty、1957 年與 Russell Garcia 未查，不判斷；『丈夫』一詞見 pubIssues。"
+  },
+  {
+    "key": "lalo schifrin",
+    "name": "Lalo Schifrin",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Lalo Schifrin 1932 年生於阿根廷布宜諾斯艾利斯，父親是布宜諾斯艾利斯愛樂的小提琴手；他 6 歲開始學鋼琴。",
+            "src": "https://en.wikipedia.org/wiki/Lalo_Schifrin",
+            "src2": "https://www.classicfm.com/music-news/mission-impossible-composer-lalo-schifrin-dies/",
+            "from": "new"
+          },
+          {
+            "f": "他到巴黎音樂院求學，跟 Olivier Messiaen 學和聲與作曲；古典與爵士都是他在法國一併受的訓練。",
+            "src": "https://en.wikipedia.org/wiki/Lalo_Schifrin",
+            "src2": "https://dailyastorian.com/2018/11/15/composer-lalo-schifrin-says-oscar-is-an-amazing-honor/",
+            "from": "new"
+          },
+          {
+            "f": "他先以爵士樂手的身分受到 Dizzy Gillespie 賞識，之後轉往洛杉磯寫電影配樂。",
+            "src": "https://dailyastorian.com/2018/11/15/composer-lalo-schifrin-says-oscar-is-an-amazing-honor/",
+            "src2": "https://en.wikipedia.org/wiki/Lalo_Schifrin",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Mission: Impossible〉主題曲用少見的 5/4 拍寫成，是他最具辨識度的作品。",
+            "src": "https://en.wikipedia.org/wiki/Lalo_Schifrin",
+            "src2": "https://www.classicfm.com/music-news/mission-impossible-composer-lalo-schifrin-dies/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Schifrin 為超過 100 部電影與電視作品配樂，包括《Bullitt》與《Dirty Harry》。",
+            "src": "https://www.oscars.org/news/academy-honor-kathleen-kennedy-marvin-levy-frank-marshall-lalo-schifrin-and-cicely-tyson-2018",
+            "src2": "https://www.classicfm.com/music-news/mission-impossible-composer-lalo-schifrin-dies/",
+            "from": "new"
+          },
+          {
+            "f": "他六度入圍奧斯卡，2018 年在 Governors Awards 獲頒奧斯卡榮譽獎。",
+            "src": "https://www.oscars.org/news/academy-honor-kathleen-kennedy-marvin-levy-frank-marshall-lalo-schifrin-and-cicely-tyson-2018",
+            "src2": "https://dailyastorian.com/2018/11/15/composer-lalo-schifrin-says-oscar-is-an-amazing-honor/",
+            "from": "new"
+          },
+          {
+            "f": "他 2025 年 6 月過世，享年 93 歲。",
+            "src": "https://en.wikipedia.org/wiki/Lalo_Schifrin",
+            "src2": "https://www.classicfm.com/music-news/mission-impossible-composer-lalo-schifrin-dies/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Schifrin 約 20 歲時（1952 年）獲獎學金進入巴黎音樂院。",
+            "src": "https://en.wikipedia.org/wiki/Lalo_Schifrin",
+            "src2": "https://www.classicfm.com/music-news/mission-impossible-composer-lalo-schifrin-dies/",
+            "from": "new"
+          },
+          {
+            "f": "〈Mission: Impossible〉主題曲隨影集 1966 年首播。",
+            "src": "https://www.classicfm.com/music-news/mission-impossible-composer-lalo-schifrin-dies/",
+            "src2": "https://www.britannica.com/biography/Lalo-Schifrin",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1966 年〈Mission: Impossible〉主題曲隨同名影集問世。",
+        "src": "https://www.classicfm.com/music-news/mission-impossible-composer-lalo-schifrin-dies/",
+        "src2": "https://www.britannica.com/biography/Lalo-Schifrin",
+        "from": "new"
+      },
+      {
+        "f": "2018 年獲頒奧斯卡榮譽獎。",
+        "src": "https://www.oscars.org/news/academy-honor-kathleen-kennedy-marvin-levy-frank-marshall-lalo-schifrin-and-cicely-tyson-2018",
+        "src2": "https://dailyastorian.com/2018/11/15/composer-lalo-schifrin-says-oscar-is-an-amazing-honor/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "過世日：維基寫 2025 年 6 月 26 日，Classic FM 寫 6 月 27 日，f 欄只寫 2025 年 6 月。葛萊美座數：維基寫五座，Classic FM 寫四座加一座拉丁葛萊美，f 欄不寫座數。父親職稱：維基寫第二小提琴組首席，Classic FM 與搜尋摘要寫愛樂的 concertmaster（第一小提琴首席），f 欄只寫小提琴手。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "事實庫 research 為空，三格從零查。補查 7 次：維基 Lalo Schifrin、WebSearch（生平與奧斯卡）、Classic FM 訃聞、Britannica（只讀到標頭，內容極少，僅佐證 1966 年影集與 Dirty Harry）、WebSearch（Governors Awards）、oscars.org 新聞稿、Daily Astorian 的 2018 訪談稿。失敗請求 2 次（Variety 轉址後 402 付費牆），未超過上限。同名確認：poolAlbums 四張（Bullitt、Black Widow、Music From Mission: Impossible、Enter the Dragon）皆為阿根廷作曲家鋼琴家 Lalo Schifrin，無混卡。兩源說明：維基、Classic FM、oscars.org、Daily Astorian 各為獨立頁面且皆實際開讀；Britannica 只讀到頁首。未收（單源）：維基稱他 1956 年遇 Dizzy Gillespie、1960 年在紐約成為 Gillespie 的鋼琴手與編曲（維基單源）；維基稱 1955 年曾與 Ástor Piazzolla 合作、代表阿根廷參加巴黎國際爵士音樂節（單源）；維基稱他被大量取樣於嘻哈與 trip-hop，Portishead 與 Heltah Skeltah 為例（單源，屬影響格的可用線索，可再補一源）；維基引用奧斯卡榮譽獎頒獎詞『unique musical style, compositional integrity and influential contributions to the art of film scoring』（由 Clint Eastwood 頒發，維基單源，oscars.org 新聞稿頁未載該句）；『成為史上第三位獲榮譽奧斯卡的作曲家』與『替 Clint Eastwood 寫過八部配樂』（搜尋摘要轉述，未開頁）；Classic FM 引述他說製作人要求主題曲『像 logo、以引信開場』（單源）；Daily Astorian 稱他隨 Enrique Barenboim 與 Juan Carlos Paz 學鋼琴（單源）；Schifrin 說『電影沒有配樂規則，電影決定音樂』（Astorian 單源）；維基稱他父母為猶太與天主教背景（單源）；5/4 拍與摩斯電碼有關的說法為未證實傳聞（搜尋摘要，不收）。地位格依國家級榮譽與作品規模成立；後輩點名受他影響一項本次未找到兩源。已上線《Music From Mission: Impossible》《Enter the Dragon》簡介與本位補查無衝突，其餘細節（錄音日期、曲目、榜位）本位未查，不判斷。"
+  },
+  {
+    "key": "lee konitz",
+    "name": "Lee Konitz",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Lee Konitz 1927 年 10 月 13 日生於芝加哥，父母是猶太移民。",
+            "src": "https://en.wikipedia.org/wiki/Lee_Konitz",
+            "src2": "https://www.wbgo.org/music/2020-04-15/lee-konitz-alto-saxophonist-who-exemplified-jazzs-imperative-to-make-it-new-is-dead-at-92",
+            "from": "new"
+          },
+          {
+            "f": "他 11 歲聽了 Benny Goodman 後開始學單簧管，後來轉向薩克斯風，最後定在中音薩克斯風。",
+            "src": "https://en.wikipedia.org/wiki/Lee_Konitz",
+            "src2": "https://www.wbgo.org/music/2020-04-15/lee-konitz-alto-saxophonist-who-exemplified-jazzs-imperative-to-make-it-new-is-dead-at-92",
+            "from": "new"
+          },
+          {
+            "f": "他長年受盲人鋼琴家 Lennie Tristano 指導。",
+            "src": "https://www.wbgo.org/music/2020-04-15/lee-konitz-alto-saxophonist-who-exemplified-jazzs-imperative-to-make-it-new-is-dead-at-92",
+            "src2": "https://www.arts.gov/honors/jazz/lee-konitz",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Konitz 是少數不模仿 Charlie Parker 的中音薩克斯風手，走出自己的個人風格。",
+            "src": "https://en.wikipedia.org/wiki/Lee_Konitz",
+            "src2": "https://www.arts.gov/honors/jazz/lee-konitz",
+            "from": "new"
+          },
+          {
+            "f": "他的樂句長而連貫，重音與音群的分組不照常規，不落在兩拍、四拍或八拍的整齊單位裡。",
+            "src": "https://en.wikipedia.org/wiki/Lee_Konitz",
+            "src2": "https://www.wbgo.org/music/2020-04-15/lee-konitz-alto-saxophonist-who-exemplified-jazzs-imperative-to-make-it-new-is-dead-at-92",
+            "from": "new"
+          },
+          {
+            "f": "他參與了 Miles Davis 九重奏的錄音，那批錄音被視為 cool jazz 的開端。",
+            "src": "https://www.arts.gov/honors/jazz/lee-konitz",
+            "src2": "https://en.wikipedia.org/wiki/Lee_Konitz",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Konitz 2009 年獲選為 NEA Jazz Master（美國國家藝術基金會的爵士大師榮譽）。",
+            "src": "https://www.arts.gov/honors/jazz/lee-konitz",
+            "src2": "https://www.wbgo.org/music/2020-04-15/lee-konitz-alto-saxophonist-who-exemplified-jazzs-imperative-to-make-it-new-is-dead-at-92",
+            "from": "new"
+          },
+          {
+            "f": "他被視為在 Charlie Parker 之外，很早就走出另一條路的中音薩克斯風手。",
+            "src": "https://www.arts.gov/honors/jazz/lee-konitz",
+            "src2": "https://dantepfer.com/blog/?p=1245",
+            "from": "new"
+          },
+          {
+            "f": "他晚年最常合作的是鋼琴手 Dan Tepfer，Tepfer 說他把當下的自發性看得比什麼都重要。",
+            "src": "https://www.wbgo.org/music/2020-04-15/lee-konitz-alto-saxophonist-who-exemplified-jazzs-imperative-to-make-it-new-is-dead-at-92",
+            "src2": "https://dantepfer.com/blog/?p=1245",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Konitz 2020 年 4 月 15 日因新冠肺炎併發肺炎在紐約過世，享年 92 歲。",
+            "src": "https://en.wikipedia.org/wiki/Lee_Konitz",
+            "src2": "https://www.wbgo.org/music/2020-04-15/lee-konitz-alto-saxophonist-who-exemplified-jazzs-imperative-to-make-it-new-is-dead-at-92",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "參與 Miles Davis 九重奏的錄音，開啟 cool jazz。",
+        "src": "https://www.arts.gov/honors/jazz/lee-konitz",
+        "src2": "https://en.wikipedia.org/wiki/Lee_Konitz",
+        "from": "new"
+      },
+      {
+        "f": "2009 年獲選 NEA Jazz Master。",
+        "src": "https://www.arts.gov/honors/jazz/lee-konitz",
+        "src2": "https://www.wbgo.org/music/2020-04-15/lee-konitz-alto-saxophonist-who-exemplified-jazzs-imperative-to-make-it-new-is-dead-at-92",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "九重奏錄音年份：維基與 WBGO 寫 1949 年，NEA 寫 1948 至 1950 年，維基另寫 1949 至 1950 年；f 欄不寫年份。與 Tristano 的相識：維基寫 1946 年相遇，WBGO 寫 1943 至 1964 年隨 Tristano 學習；f 欄不寫起始年。父母來歷：WBGO 寫母親來自俄羅斯，NEA 寫父母為奧地利與俄羅斯人，維基寫猶太移民；f 欄只寫猶太移民。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫 research 為空（只有專輯上線簡介），三格從零查。補查 6 次：維基 Lee Konitz、WebSearch（訃聞）、WBGO 訃聞、NEA 頁面、WebSearch（影響與 Tepfer）、Dan Tepfer 追悼文。失敗請求 3 次（JazzTimes 403、NPR 503、Deadline 轉址至付費牆），未超過上限。同名確認：poolAlbums 四張（Subconscious-Lee、Very Cool、Motion、與 Gerry Mulligan Quartet 的合輯）皆為芝加哥中音薩克斯風手 Lee Konitz，無混卡。兩源說明：維基、WBGO、arts.gov、Dan Tepfer 個人部落格為各自獨立頁面且皆實際開讀；WBGO 文章疑為 NPR 訃聞的轉載（兩者同稿），未開 NPR 故不另計。legacy 第二條『在 Parker 之外走出另一條路』：NEA 原文為 one of few alto saxophonists who didn't directly imitate Parker，Tepfer 原文為 influenced the direction of jazz, establishing early on an alternative to Charlie Parker's brilliant path，後者語氣更強，f 欄取兩者交集。未收（單源）：維基稱他影響了 Paul Desmond 與 Art Pepper（維基單源）；DownBeat 爵士名人堂入選（維基單源，年份未查）；法國藝術與文學騎士勳章（Tepfer 單源）；1947 年加入 Claude Thornhill 樂團、1945 年職業首演（維基單源）；WBGO 稱他從 Lester Young、Johnny Hodges、Roy Eldridge 汲取靈感，維基只提 Lester Young（後者單源）；Mark Turner 稱他有『jarring rhythmic sense』（WBGO 單源，引文已用於聲音格的分組描述，f 欄語意有維基的 odd accents 與 odd note groupings 佐證）；Dan Tepfer 稱他為『Zen master』（WBGO 單源，2012 年訪談）；Konitz 自述與 Tristano 是『lucky accidental meeting』、『chamber music situation』（NEA 單源）；1927 年父親經營洗衣店（WBGO 單源）；死於 Lenox Hill 醫院（維基與搜尋摘要）。已上線《Motion》《與 Mulligan 四重奏合輯》簡介與本位補查無衝突（版本細節未查，不判斷）。"
+  },
+  {
+    "key": "lester young",
+    "name": "Lester Young",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Lester Young 1909 年 8 月 27 日生於密西西比州伍德維爾，在紐奧良附近長大。",
+            "src": "https://en.wikipedia.org/wiki/Lester_Young",
+            "src2": "https://www.britannica.com/biography/Lester-Young",
+            "from": "new"
+          },
+          {
+            "f": "他跟著父親帶的家庭樂團在中西部巡演，起初打鼓，後來轉向薩克斯風。",
+            "src": "https://www.ebsco.com/research-starters/history/lester-young",
+            "src2": "https://jazzfuel.com/lester-young-jazz-saxophone/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Young 的次中音薩克斯風音色輕淡、顫音慢，與當時偏厚重的主流音色相反，樂句流暢而精省。",
+            "src": "https://www.britannica.com/biography/Lester-Young",
+            "src2": "https://www.ebsco.com/research-starters/history/lester-young",
+            "from": "new"
+          },
+          {
+            "f": "Billie Holiday 替他取了「Pres」（Prez）的綽號，意思是次中音薩克斯風手的「總統」。",
+            "src": "https://en.wikipedia.org/wiki/Lester_Young",
+            "src2": "https://www.britannica.com/biography/Lester-Young",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Charlie Parker、Stan Getz 都把 Young 當成影響來源，西岸 cool 風格也被認為直接來自他的路線。",
+            "src": "https://en.wikipedia.org/wiki/Lester_Young",
+            "src2": "https://jazzfuel.com/lester-young-jazz-saxophone/",
+            "from": "new"
+          },
+          {
+            "f": "他的節奏彈性與輕盈音色影響了 cool jazz 的形成。",
+            "src": "https://www.britannica.com/biography/Lester-Young",
+            "src2": "https://www.ebsco.com/research-starters/history/lester-young",
+            "from": "new"
+          },
+          {
+            "f": "1944 年 Young 被徵召入伍，因在置物櫃被查出大麻與酒而遭軍事法庭處置，關進軍事拘留所，最後不名譽退伍；他用這段經歷寫成〈D.B. Blues〉。",
+            "src": "https://jazzfuel.com/lester-young-jazz-saxophone/",
+            "src2": "https://www.ebsco.com/research-starters/history/lester-young",
+            "from": "new"
+          },
+          {
+            "f": "入伍之後他的健康與演奏都大幅走下坡，1959 年 3 月 15 日在紐約過世，享年 49 歲。",
+            "src": "https://en.wikipedia.org/wiki/Lester_Young",
+            "src2": "https://www.ebsco.com/research-starters/history/lester-young",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Young 1930 年代中期在堪薩斯城以 Count Basie 樂團一員嶄露頭角。",
+            "src": "https://www.britannica.com/biography/Lester-Young",
+            "src2": "https://www.ebsco.com/research-starters/history/lester-young",
+            "from": "new"
+          },
+          {
+            "f": "Young 1944 年被徵召入伍，此後因軍中經歷身心受創，健康與演奏都走下坡。",
+            "src": "https://en.wikipedia.org/wiki/Lester_Young",
+            "src2": "https://www.ebsco.com/research-starters/history/lester-young",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1930 年代中期隨 Count Basie 樂團在堪薩斯城成名。",
+        "src": "https://www.britannica.com/biography/Lester-Young",
+        "src2": "https://www.ebsco.com/research-starters/history/lester-young",
+        "from": "new"
+      },
+      {
+        "f": "1944 年入伍與軍中拘留，之後健康與演奏走下坡。",
+        "src": "https://jazzfuel.com/lester-young-jazz-saxophone/",
+        "src2": "https://www.ebsco.com/research-starters/history/lester-young",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Young 的父親：EBSCO 稱父親是 minstrel-show 音樂人，Jazzfuel 稱父親帶巡迴樂團；f 欄只寫『父親帶的家庭樂團』。入伍年：Jazzfuel 的小標寫 1940 年但內文寫 35 歲被徵召（即 1944 年），維基與 EBSCO 為 1944 年，採 1944。"
+    ],
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫 research 為空（只有三張上線簡介），三格從零查。補查 5 次：維基 Lester Young、WebSearch（影響與綽號）、Britannica、EBSCO Research Starters、Jazzfuel『10 Defining Moments』。無失敗請求。同名確認：poolAlbums 四張（與 Oscar Peterson Trio 合輯 1997 再版、Pres and Teddy、The Jazz Giants '56、The \"Kansas City\" Sessions）皆為次中音薩克斯風手 Lester Young，無混卡；卡池標 1997 的兩張為再版年，非原錄音年，寫作層不要當成 1997 年作品。兩源說明：維基、Britannica、EBSCO、Jazzfuel 各為獨立頁面且皆實際開讀；EBSCO 為參考書性質。未收（單源）：EBSCO 稱他入伍前贏得 Down Beat 票選最佳次中音（EBSCO 單源）；維基稱他發明或推廣許多嬉皮用語，包括 cool 與 bread（維基單源）；維基稱 Paul Quinichette 被稱為『Vice Prez』、影響 John Coltrane（維基單源）；Jazzfuel 稱他的偶像是 C melody 薩克斯風手 Frankie Trumbauer、『I tried to get the sound of a C melody on tenor』（單源）；Jazzfuel 稱 1936 年 Basie 小組錄音〈Lady Be Good〉〈Shoe Shine Boy〉宣告他登場（單源）；Jazzfuel 稱與 Holiday 關係為 platonic 且他稱她 Lady Day、1957 年 CBS 電視特輯與 Holiday 同台（單源）；Jazzfuel 稱他巴黎巡演後過世、EBSCO 稱死於 Hotel Alvin（兩說各一源，不收地點細節）；維基稱 1956 年有部分復出（單源）；Jazzfuel 稱他入伍時被拒絕使用薩克斯風、不像白人樂手分配到軍樂隊（單源）；搜尋摘要稱他影響 Al Cohn、Zoot Sims、Lee Konitz、Warne Marsh（搜尋摘要與 Jazzfuel，Jazzfuel 已開頁，但其他名單無第二源，f 欄只收 Parker 與 Getz 兩位有維基佐證者）。後輩點名一項已達兩源（Parker、Getz）。已上線《Pres and Teddy》《The Jazz Giants '56》《The Kansas City Sessions》簡介與本位補查無衝突，錄音日期與班底本位未查，不判斷。"
   }
 ]
