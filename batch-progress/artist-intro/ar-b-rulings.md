@@ -14,3 +14,5 @@
 
 - 補洞第 1 組：菊地雅章失敗請求 5 次，照實記，放行。World Saxophone Quartet 成軍年三源不一，代理「調和」成 1976 年底／1977 年初——調和值不算兩源一致，寫作層只寫「1970 年代後期」。菊地雅章租約判例（僅維基連到本人）不收。
 - 補洞第 2 組：pubIssue 2 條（Anouar Brahem 赴巴黎起年兩說；Art Tatum「各位女士先生」前綴查無來源）。Bobby Timmons 生卒年只有維基與鏡像站，不寫。Ben Webster 過世地兩說，採阿姆斯特丹（維基＋Britannica）。
+- 寫作第 2 組（20 位）審畢，修 2 處：Pino Daniele「平民表決廣場」→「公民投票廣場」（Piazza del Plebiscito 通行譯名）；Randy Weston「巴薩諾瓦」統一寫 bossa nova。Mulatu Astatke「柏克利第一位非洲學生」兩源一致、為通行說法，照寫。Mahalia Jackson 272、Quincy Jones 272 照准。
+- ar-b-001 上架：40 位（爵士），審稿修 5 處。

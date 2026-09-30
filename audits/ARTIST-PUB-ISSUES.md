@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 84 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 90 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -88,3 +88,9 @@
 | ar-a-017 | Enya | Watermark | 全球估計售出八百萬張 | 2025 年 RTÉ 公告寫該專輯全球估計約 1000 萬張；銷量本來是估計值、各家不同，僅供參考，不一定要改。 | https://about.rte.ie/2025/02/20/the-rte-choice-music-prize-classic-irish-album-2025-is/ |
 | ar-a-020 | Nino Rota | Casanova | 生前最後一部 Fellini 長片 | Rota 生前還為 Fellini 1978 年的《Prova d'orchestra》（Orchestra Rehearsal）配樂，那才是兩人最後一次合作；《Casanova》（1976）不是最後一部。主線依補洞稿 notes 與既有影史常識列入，請本機核對後改寫。 | https://en.wikipedia.org/wiki/Orchestra_Rehearsal |
 | ar-b-001 | Benny Goodman | The Complete RCA Victor Small Group Recordings | 被視為美國第一個在售票場合公開演出的種族混合編制 | 『第一個』宣稱只有維基單源，且較早已有黑白混合的錄音與現場班底（如 1920 年代 Jelly Roll Morton 與 New Orleans Rhythm Kings 的混合錄音），建議改寫成『較早的一支種族混合小編制之一』或刪『第一』；本層 Britannica 只寫『Goodman 是種族混合樂團的先驅』，未提第一。 | https://www.britannica.com/biography/Benny-Goodman |
+| ar-b-001 | Jimmy Witherspoon | At the Monterey Jazz Festival | Jimmy Witherspoon 1945 年隨 Jay McShann 樂團出道 | Encyclopedia.com 與 Encyclopedia of Arkansas 都寫 McShann 1944 年就把他招入樂團（1944–48）；維基與 Blues Roadhouse 的 1945 年指的是首次錄音。『出道』一詞與『1945 年』對不上，建議改成『1945 年起隨 Jay McShann 樂團錄音』。另外他在 1944 年前已在加爾各答與 Teddy Weatherford 樂團同台，不算首次登台。此條屬待核，因來源本身對年份不一致。 | https://encyclopediaofarkansas.net/entries/jimmy-spoon-witherspoon-4834/ |
+| ar-b-001 | Julie London | About the Blues | 收錄丈夫 Bobby Troup 所寫的兩首歌 | 《About the Blues》發行於 1957 年，London 與 Troup 1959 年才結婚（維基 Julie London 條目與 Jess Waid 傳記皆寫 1959 年結婚，1954 年前的丈夫是 Jack Webb）；1957 年 Troup 還不是丈夫，宜改寫成『後來成為她丈夫的 Bobby Troup』或直接寫 Bobby Troup。 | https://en.wikipedia.org/wiki/Julie_London |
+| ar-b-001 | Pino Daniele | Nero a metà | 標題借自一本講義大利南方黑人的小說《Nero di Puglia》，Daniele 把它連向 James Senese | 義大利文維基《Nero a metà》條目只寫標題是 Daniele 自述的『兩種現實、兩種語言的合流』，專輯獻給 Showmen 主唱 Mario Musella，並註明沒有記錄顯示直接的靈感來源；小說之說只見未開頁的搜尋摘要。建議複核《Nero di Puglia》一說出處，並考慮補寫獻給 Mario Musella 這個較確定的事實。 | https://it.wikipedia.org/wiki/Nero_a_met%C3%A0 |
+| ar-b-001 | Pino Daniele | Pino Daniele | 接在 1977 年首張《Terra mia》之後——那張當年只賣出約 6000 張 | 本次查證未找到『約 6000 張』的來源，需複核。 | https://it.wikipedia.org/wiki/Pino_Daniele |
+| ar-b-002 | Anouar Brahem | Barzakh | 1981 年赴巴黎四年 | 維基寫 1981 年赴巴黎；Brahem 官網寫 1982–1986，起年不一致（維基同條另寫 four years）。建議改寫成「赴巴黎約四年」或查第三源後定年。 | https://anouarbrahem.com/en/full-biography |
+| ar-b-002 | Art Tatum | God Is in the House | 那句話的原文是「各位女士先生，我彈鋼琴，但今晚上帝在場」 | 本層讀到的來源（NWE 與搜尋摘要）只有「I only play the piano, but tonight God is in the house」；「各位女士先生」前綴未在任何讀到的頁面出現，且此屬軼事、版本不一。建議刪去前綴或改標為傳說。 | https://www.newworldencyclopedia.org/entry/Art_Tatum |
