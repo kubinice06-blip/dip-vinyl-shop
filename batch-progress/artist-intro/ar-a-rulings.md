@@ -107,3 +107,9 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 主線親驗：Patrice Rushen 為 2026 年 NEA Jazz Master（arts.gov、Billboard）。
 - Bar-Kays「抓住座椅坐墊生還」：補洞層放進 facts 又在回報說單源，寫作層照派工詞沒寫。補洞派工詞自 ar-a-007 起加「facts 只放兩源都支持的內容，單源一律進 notes」。
 - 上架：40 位（靈魂、放克），審稿修 2 處。
+
+### ar-a-006（審稿中）
+
+- 寫作第 1 組（20 位）審畢，修 2 處：
+  1. Michael Jackson「Prince、Beyoncé 都受他影響」：Prince 是同代競爭者，維基把他列進受影響名單並不可靠 → 只留 Beyoncé 等後輩（字數從 284 壓回 269）。
+  2. Luther Vandross「中風昏迷近兩個月後完成的《Dance with My Father》」：中風在 2003 年 4 月、專輯 6 月發行，錄音多半在中風前完成，「之後完成」是推論 → 改成照 facts 的「同年發行」。
