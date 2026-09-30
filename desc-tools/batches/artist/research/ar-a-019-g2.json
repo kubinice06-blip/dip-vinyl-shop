@@ -1,0 +1,444 @@
+[
+ {
+  "key": "ice cube",
+  "name": "Ice Cube",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ice Cube 本名 O'Shea Jackson，1969 年 6 月 15 日生於洛杉磯；母親是醫院職員，父親在加州大學洛杉磯分校（UCLA）擔任園丁，藝名出自他的哥哥。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Cube",
+      "src2": "https://www.britannica.com/biography/Ice-Cube",
+      "from": "new"
+     },
+     {
+      "f": "他十幾歲就與朋友組了饒舌團體 C.I.A.，還在念高中時把第一首歌賣給 Eazy-E 與他的 Ruthless Records，這首歌成為 N.W.A 成軍的起點。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Cube",
+      "src2": "https://www.britannica.com/biography/Ice-Cube",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ice Cube 是 N.W.A 首張正式專輯《Straight Outta Compton》的主要詞作者之一；該專輯 13 首原始曲目中，有 9 首掛有他的部分或全部作詞名義。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Cube",
+      "src2": "https://www.britannica.com/biography/Ice-Cube",
+      "from": "new"
+     },
+     {
+      "f": "他 1990 年的個人首作《AmeriKKKa's Most Wanted》主要由 Public Enemy 的製作團隊 Bomb Squad 製作，把西岸的幫派饒舌帶給紐約的聽眾。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Cube",
+      "src2": "https://www.britannica.com/topic/AmeriKKKas-Most-Wanted",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ice Cube 2016 年以 N.W.A 成員身分入選搖滾名人堂。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Cube",
+      "src2": "https://rockhall.com/inductees/nwa/",
+      "from": "new"
+     },
+     {
+      "f": "N.W.A 的《Straight Outta Compton》被葛萊美官網形容為史上最具影響力的嘻哈唱片之一，並入選葛萊美名人堂與美國國會圖書館的國家錄音登記簿（National Recording Registry）。",
+      "src": "https://www.grammy.com/news/nwa-are-straight-outta-compton-record/",
+      "src2": "https://en.wikipedia.org/wiki/Straight_Outta_Compton_(album)",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 稱他是史上最具影響力的饒舌歌手之一。",
+      "src": "https://www.britannica.com/biography/Ice-Cube",
+      "src2": "https://en.wikipedia.org/wiki/Ice_Cube",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他因版稅與經紀管理的糾紛，在 1989 年 12 月離開 N.W.A，後來訴訟以庭外和解收場。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Cube",
+      "src2": "https://www.britannica.com/biography/Ice-Cube",
+      "from": "new"
+     },
+     {
+      "f": "1992 年的《The Predator》是他商業上最成功的專輯。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Cube",
+      "src2": "https://www.britannica.com/biography/Ice-Cube",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1989 年 12 月離開 N.W.A，展開個人生涯。",
+    "src": "https://en.wikipedia.org/wiki/Ice_Cube",
+    "from": "new"
+   },
+   {
+    "f": "2016 年以 N.W.A 成員身分入選搖滾名人堂。",
+    "src": "https://rockhall.com/inductees/nwa/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際請求 8 次：英文維基 Ice Cube、Britannica 人物頁（WebFetch，摘要）、搖滾名人堂 N.W.A 頁、WebSearch 兩次（AmeriKKKa 製作／後輩影響）、Britannica《AmeriKKKa's Most Wanted》頁（WebFetch 摘要）、葛萊美官網文章（WebFetch 摘要）、英文維基《Straight Outta Compton》專輯頁。失敗：Britannica 人物頁 curl 403（改用 WebFetch 成功）、國會圖書館 PDF 讀不出文字。請求後面的 Britannica 與葛萊美內容是 WebFetch 的小模型摘要，非全文。名人堂官方（可具名單源）：搖滾名人堂 N.W.A 頁寫「N.W.A solidified the disparate elements of gangsta rap into a groundbreaking genre」，2016 年入選、引介人 Kendrick Lamar；https://rockhall.com/inductees/nwa/ 。時序不一致故 facts 不寫年份：葛萊美文章寫專輯 2015 年入選葛萊美名人堂與國家錄音登記簿，維基寫 2016 年葛萊美名人堂、2017 年國家錄音登記簿，國會圖書館 PDF 標題寫 2016（僅見搜尋結果標題）。Straight Outta Compton 首發年也是 1988（Britannica、葛萊美）或 1989（Ice Cube 維基條目寫 1989 年 1 月，專輯條目為 1988 年 8 月）的差異，facts 不寫。出生地 Britannica 寫 Baldwin Hills，維基寫洛杉磯，facts 只寫洛杉磯。『Britannica 稱…最具影響力之一』一句來自摘要引述，寫作層宜寫『被視為』。單源未收：Kill at Will 為首張白金 EP、The Predator 為首張同時空降 R&B／嘻哈榜與流行榜冠軍（第一位類，只維基單源）、1995 年 Friday 與影視轉型、2017 好萊塢星光大道、Nation of Islam 信仰、Boyz-n-the-Hood 為其作詞（維基單源）。同名確認：卡池 5 張為 Ice Cube 本人（含 2024《Man Down》、2025《Man Up》）。Rock Hall 與維基、葛萊美與維基專輯條目為不同機構，但維基與其他來源內容不完全獨立。"
+ },
+ {
+  "key": "lil wayne",
+  "name": "Lil Wayne",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Lil Wayne 本名 Dwayne Michael Carter Jr.，1982 年 9 月 27 日生於路易斯安那州紐奧良，在貧困的第 17 區長大。",
+      "src": "https://en.wikipedia.org/wiki/Lil_Wayne",
+      "src2": "https://www.britannica.com/biography/Lil-Wayne",
+      "from": "new"
+     },
+     {
+      "f": "他在紐奧良長大時，就被當地 Cash Money Records 的創辦人 Bryan Williams（即 Birdman）注意到；他後來與 Juvenile、B.G.、Turk 組成廠牌旗下的 Hot Boys。",
+      "src": "https://en.wikipedia.org/wiki/Lil_Wayne",
+      "src2": "https://www.britannica.com/biography/Lil-Wayne",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的辨識度來自密集的文字遊戲，包括雙關語與同音異義的punchline，後來又加入經過 Auto-Tune 處理的唱腔，被視為一整個世代的範本。",
+      "src": "https://en.wikipedia.org/wiki/Lil_Wayne",
+      "src2": "https://www.complex.com/music/a/andre-gee/lil-wayne-generation-essay",
+      "from": "new"
+     },
+     {
+      "f": "正式專輯之外，他在 2000 年代靠大量 mixtape 累積聲勢，mixtape 成為他建立名聲的重要管道。",
+      "src": "https://en.wikipedia.org/wiki/Lil_Wayne",
+      "src2": "https://www.britannica.com/biography/Lil-Wayne",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Young Thug 稱他是自己的偶像，Kendrick Lamar 也稱他是最偉大的；維基列出的受他影響的後輩還包括 Nicki Minaj、Drake 與 Future。",
+      "src": "https://en.wikipedia.org/wiki/Lil_Wayne",
+      "src2": "https://www.complex.com/music/a/andre-gee/lil-wayne-generation-essay",
+      "from": "new"
+     },
+     {
+      "f": "他創辦的 Young Money Entertainment 是 Cash Money 旗下的廠牌，推出 Drake 與 Nicki Minaj 的職涯，兩人都有專輯登上冠軍。",
+      "src": "https://www.grammy.com/artists/lil-wayne",
+      "src2": "https://www.britannica.com/biography/Lil-Wayne",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Tha Carter III》（2008）首週在美國賣出逾 100 萬張，並在第 51 屆葛萊美獎拿下最佳饒舌專輯（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Lil_Wayne",
+      "src2": "https://www.grammy.com/artists/lil-wayne",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2008 年《Tha Carter III》首週銷量逾 100 萬張。",
+    "src": "https://www.britannica.com/biography/Lil-Wayne",
+    "from": "new"
+   },
+   {
+    "f": "第 51 屆葛萊美獎（2009 年頒發）以《Tha Carter III》拿下最佳饒舌專輯（得獎）。",
+    "src": "https://www.grammy.com/artists/lil-wayne",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 6 次：英文維基 Lil Wayne（curl 取全文）、Britannica 人物頁（WebFetch 摘要）、WebSearch 兩次（mixtape 與後輩影響；限 Rolling Stone／NPR／Complex／Billboard 網域）、葛萊美官網藝人頁（curl 讀全文）、Complex 專文（WebFetch 摘要）。失敗請求 4 次：葛萊美舊網址 404、NPR 藝人頁 404、AllMusic 403、Rolling Stone 訪談頁被導向付費代理未取得；另有 1 次 WebSearch 因網域限制被拒（API 400）。Britannica 與 Complex 都是小模型摘要、非全文。Young Money 成立年不一致：維基寫 2005、Britannica 摘要寫 2003，facts 不寫年份。Britannica 寫 2009 年拿四座葛萊美、維基寫累計五座；葛萊美官網寫第 51 屆（2008 年度）一次拿四座含最佳饒舌專輯與最佳饒舌歌曲〈Lollipop〉；累計數字會長大，不收。Young Thug 稱偶像、Kendrick Lamar 稱最偉大兩句來自 Complex 摘要的轉述，寫作層宜寫『被視為受他影響』而非直接引述；Kendrick Lamar 在維基是單純列名，Complex 才有『the greatest』說法。單源未收：維基首段『被視為同世代最具影響力嘻哈藝人之一、史上最偉大饒舌歌手之一』（維基單源，且為維基自述的 often regarded）、Auto-Tune 影響 trap 的成形（維基單源）、2012 年打破 Elvis Presley 的 Hot 100 上榜曲數紀錄、2024 年紐奧良城市鑰匙與 Lil Wayne Day、首張專輯《Tha Block Is Hot》、少年時的槍傷事件、Missy Elliott 與 Goodie Mob 為其影響來源。時序：卡池《500 Degreez》標 2002，維基文字寫成 2003，與本層無關，不動。同名確認：卡池 5 張皆為新奧爾良的 Lil Wayne 本人，無同名混卡。Complex 與 Britannica 為獨立機構；葛萊美官網與維基非同站。 單源未收：Dedication 2 與 Da Drought 3 是媒體討論最多的兩張 mixtape（維基單源）；他 11 歲簽入 Cash Money（維基單源，Britannica 摘要未載年齡）。"
+ },
+ {
+  "key": "mac miller",
+  "name": "Mac Miller",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mac Miller 本名 Malcolm James McCormick，1992 年 1 月 19 日生於賓州匹茲堡，成長在 Point Breeze 一帶。",
+      "src": "https://en.wikipedia.org/wiki/Mac_Miller",
+      "src2": "https://www.britannica.com/biography/Mac-Miller",
+      "from": "new"
+     },
+     {
+      "f": "他六歲前後已自學多種樂器，十四歲開始寫饒舌，十五歲發行第一張 mixtape。",
+      "src": "https://en.wikipedia.org/wiki/Mac_Miller",
+      "src2": "https://www.britannica.com/biography/Mac-Miller",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他早期以派對與生活為題材的饒舌起家，後來逐步轉向內省的歌詞，並加入爵士等風格的編曲。",
+      "src": "https://en.wikipedia.org/wiki/Mac_Miller",
+      "src2": "https://www.britannica.com/biography/Mac-Miller",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 2018 年過世後設立了 Mac Miller Fund，支持弱勢社區青少年的藝術計畫，以及青年的成癮復原服務。",
+      "src": "https://pittsburghfoundation.org/macmiller",
+      "src2": "https://www.britannica.com/biography/Mac-Miller",
+      "from": "new"
+     },
+     {
+      "f": "他過世後，粉絲在匹茲堡的 Blue Slide Park（他首張專輯的命名來源）舉行公開悼念，到場的多是青少年與年輕人。",
+      "src": "https://en.wikipedia.org/wiki/Mac_Miller",
+      "src2": "https://www.wesanews.org/arts-sports-culture/2018-09-11/at-blue-slide-park-fans-remember-pittsburgh-rapper-mac-miller",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2011 年的《Blue Slide Park》是自 1995 年以來，第一張以獨立發行登上 Billboard 200 冠軍的首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Mac_Miller",
+      "src2": "https://www.britannica.com/biography/Mac-Miller",
+      "from": "new"
+     },
+     {
+      "f": "2018 年的《Swimming》入圍第 61 屆葛萊美獎最佳饒舌專輯（入圍，未得獎）；他過世後於 2020 年發行遺作《Circles》。",
+      "src": "https://en.wikipedia.org/wiki/Mac_Miller",
+      "src2": "https://www.britannica.com/biography/Mac-Miller",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2011 年《Blue Slide Park》為獨立發行首張專輯登上 Billboard 200 冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Mac_Miller",
+    "from": "new"
+   },
+   {
+    "f": "2018 年《Swimming》入圍第 61 屆葛萊美獎最佳饒舌專輯（入圍）。",
+    "src": "https://www.britannica.com/biography/Mac-Miller",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 6 次：英文維基 Mac Miller（WebFetch 摘要）、Britannica Mac Miller（WebFetch 摘要）、WebSearch（Circles Fund 與後續紀念）、匹茲堡基金會 Mac Miller Fund 頁、WebSearch（悼念活動）、WESA 悼念報導。失敗 1 次：wesa.fm 網址被導向 wesanews.org（301），改開新網址。頁面內容皆為 WebFetch 小模型摘要、非全文。生卒年：出生 1992 年 1 月 19 日維基與 Britannica 一致；過世 2018 年 9 月 7 日、享年 26 兩源一致，但 facts 依店主指示只放與作品直接相關的中性事實，未收死因細節（兩源皆寫意外過世，維基摘要另有用藥細節），寫作層若寫死亡只寫『2018 年過世、享年 26』。悼念人數不一致：維基摘要寫數千人、WESA 摘要寫數百人、搜尋摘要寫兩千人左右，facts 不寫人數。Blue Slide Park 的『自 1995 年以來第一張獨立發行首張專輯登冠』：維基與 Britannica 都是這個限定寫法，屬『第一』類宣稱，寫作層須保留『自 1995 年以來』；未反查 1995 之後是否有反例，但兩源用同一限定，可保留。Larry Fisherman 製作化名、Rostrum Records 2010 年簽約、起初藝名 Easy Mac（Britannica）、家人設 Circles Fund 的細節（基金設立日期匹茲堡基金會摘要寫 2018 年 10 月 1 日，維基與 Britannica 只寫過世後）皆單源或不完全一致，未收。Circles 為『最暢銷作品』只見 Britannica 摘要，facts 未收。Mac Miller Fund 由家人設立見 Britannica 與搜尋摘要，匹茲堡基金會頁摘要未提家人，facts 只寫『過世後設立』。同名確認：卡池 5 張為匹茲堡的 Mac Miller 本人（2013–2020），無同名混卡。Mac Miller 2018 年過世屬與作品直接相關（《Circles》成為遺作），可寫但須標明時序。"
+ },
+ {
+  "key": "mobb deep",
+  "name": "Mobb Deep",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mobb Deep 由 Prodigy（Albert Johnson）與 Havoc（Kejuan Muchita）組成，1990 年代初期在紐約皇后區成軍，Queensbridge 一帶是他們的根據地。",
+      "src": "https://en.wikipedia.org/wiki/Mobb_Deep",
+      "src2": "https://qns.com/2017/07/beloved-rapper-prodigy-honored-mural-near-queensbridge-houses-long-island-city/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的招牌是陰暗、以取樣為基礎的極簡製作；《The Infamous》的大部分節拍出自 Havoc 之手，並以 1970 年代唱片取樣堆出陰森的氣氛。",
+      "src": "https://en.wikipedia.org/wiki/The_Infamous_(album)",
+      "src2": "https://au.rollingstone.com/music/music-lists/best-albums-of-all-time-32520/mobb-deep-the-infamous-2-32652/",
+      "from": "new"
+     },
+     {
+      "f": "Q-Tip 以製作人身分參與了《The Infamous》。",
+      "src": "https://en.wikipedia.org/wiki/The_Infamous_(album)",
+      "src2": "https://au.rollingstone.com/music/music-lists/best-albums-of-all-time-32520/mobb-deep-the-infamous-2-32652/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《The Infamous》在《滾石》重新排定的「史上 500 大專輯」榜單中名列第 369 名。",
+      "src": "https://en.wikipedia.org/wiki/The_Infamous_(album)",
+      "src2": "https://au.rollingstone.com/music/music-lists/best-albums-of-all-time-32520/mobb-deep-the-infamous-2-32652/",
+      "from": "new"
+     },
+     {
+      "f": "Mobb Deep 被視為 1990 年代最具影響力的東岸嘻哈團體之一，《The Infamous》讓他們在硬派饒舌中站穩腳跟。",
+      "src": "https://en.wikipedia.org/wiki/Mobb_Deep",
+      "src2": "https://amsterdamnews.com/news/2017/06/21/prodigy-mobb-deep-dies-42/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2017 年 6 月，Prodigy 因鐮刀型貧血的併發症過世。",
+      "src": "https://en.wikipedia.org/wiki/Mobb_Deep",
+      "src2": "https://amsterdamnews.com/news/2017/06/21/prodigy-mobb-deep-dies-42/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2017 年 6 月 Prodigy 過世。",
+    "src": "https://qns.com/2017/07/beloved-rapper-prodigy-honored-mural-near-queensbridge-houses-long-island-city/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 8 次：英文維基 Mobb Deep（WebFetch 摘要）、WebSearch（成軍與 The Infamous）、QNS 壁畫報導、Amsterdam News 訃聞、英文維基《The Infamous》專輯條目、WebSearch（Rolling Stone 500 榜）、Rolling Stone Australia《The Infamous》榜單頁、WebSearch（Prodigy 訃聞與後輩悼念，限 NPR／Billboard／Complex／Rolling Stone）。失敗 4 次：Britannica Mobb Deep 條目 404、Variety 訃聞被導向付費代理、維基《The Infamous (Mobb Deep album)》錯誤標題 404（改用 (album)）、NPR 訃聞 503。所有頁面內容皆為 WebFetch 小模型摘要、非全文；最後一次搜尋只看到摘要，未開頁，摘要內容一律不收進 facts。Prodigy 逝世日期不一致：維基摘要 2017 年 6 月 20 日、Amsterdam News 文章日期 6 月 21 日、搜尋摘要另寫在拉斯維加斯醫院過世；facts 只寫 2017 年 6 月與死因『鐮刀型貧血的併發症』，不寫日、不寫其他死因細節、不寫享年（享年 42 只見兩家標題與搜尋摘要，未逐頁核對，寫作層若要用需再核）。名單上的《滾石》榜單：維基寫 2020 年更新版、Rolling Stone Australia 頁標『2021 remake』，兩者名次都是 369；facts 不寫年份。單源未收：Prodigy 與 Havoc 在曼哈頓 High School of Art and Design 相識（維基摘要與搜尋摘要，未開第二頁）、團名由 Poetical Prophets 改為 Mobb Deep 的年份、《The Infamous》樣本取自 Prodigy 祖父的爵士收藏與在 Havoc 的 Queensbridge 公寓製作（RS Australia 與維基各講一半，各單源）、2017 年 Queensbridge 附近的紀念壁畫（QNS 單源）、Ice Cube 稱 Prodigy 與 Mobb Deep 代表紐約重新奪回街頭（Billboard，只見搜尋摘要）、Nas 同為 Queensbridge 出身並多次合作、AllMusic 稱《The Infamous》是傑作、Pitchfork 榜單名次、2013 年重組與 2025 年《Infinite》（與 The Alchemist）。累計銷量『超過 300 萬張』維基與 QNS 都有，但屬會長大的累計數字，不收。Prodigy 2017 年過世是與作品無關的後續事件，寫作層依店主指示只寫中性事實。同名確認：卡池 5 張為皇后區的 Mobb Deep（1995–2025）。 『Queensbridge 是根據地』一句：QNS 寫 Prodigy 長期在 Queensbridge 一帶活動，維基摘要寫 Queens 成軍；Havoc 為 Queensbridge 人只見搜尋摘要。Q-Tip 的角色維基寫混音工程師、RS Australia 寫 executive producer，facts 只寫『以製作人身分參與』；混音與調整鼓點的細節單源不收。"
+ },
+ {
+  "key": "outkast",
+  "name": "OutKast",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "OutKast 由 André 3000（André Benjamin）與 Big Boi（Antwan Patton）組成，兩人在亞特蘭大念高中時成為搭檔，團體也在亞特蘭大成軍。",
+      "src": "https://www.britannica.com/topic/OutKast",
+      "src2": "https://en.wikipedia.org/wiki/Outkast",
+      "from": "new"
+     },
+     {
+      "f": "兩人都迷 Parliament-Funkadelic 與 Prince 等人的放克與靈魂樂；名人堂的介紹把 Parliament-Funkadelic 與 Prince 列為他們的影響來源。",
+      "src": "https://www.britannica.com/topic/OutKast",
+      "src2": "https://rockhall.com/inductees/outkast/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把放克、靈魂、爵士、搖滾與迷幻等元素混進南方饒舌，加上敘事與外星未來感的想像，讓「Dirty South」的聲音遠比原本寬廣。",
+      "src": "https://rockhall.com/inductees/outkast/",
+      "src2": "https://en.wikipedia.org/wiki/Outkast",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 稱他們在 1990 年代把亞特蘭大放上嘻哈地圖；2000 年的《Stankonia》是他們大舉進入主流市場的跨界成功之作。",
+      "src": "https://www.britannica.com/topic/OutKast",
+      "src2": "https://rockhall.com/inductees/outkast/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1995 年 The Source Awards 上，OutKast 以最佳新饒舌團體上台領獎，在以紐約聽眾為主的會場被噓；André 3000 回應「南方有話要說」，這一刻被視為南方嘻哈站上檯面的轉折點。",
+      "src": "https://slate.com/culture/2021/02/outkast-source-awards-1995-southern-hip-hop.html",
+      "src2": "https://en.wikipedia.org/wiki/Outkast",
+      "from": "new"
+     },
+     {
+      "f": "OutKast 2025 年入選搖滾名人堂，由 Donald Glover 擔任引介人；名人堂稱他們是少數拿下葛萊美年度專輯的嘻哈團體。",
+      "src": "https://rockhall.com/inductees/outkast/",
+      "src2": "https://www.britannica.com/topic/OutKast",
+      "from": "new"
+     },
+     {
+      "f": "Kendrick Lamar、Janelle Monáe 與 Future 等後輩的作品被認為承接了 OutKast 的路線；名人堂官網與 Complex 的專文都點名了這幾位。",
+      "src": "https://rockhall.com/inductees/outkast/",
+      "src2": "https://www.complex.com/music/a/craig-jenkins/outkast-influence-on-hip-hop",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2003 年的雙專輯《Speakerboxxx/The Love Below》讓兩人各自展現個人風格，並在 2004 年的葛萊美獎拿下年度專輯（得獎）。",
+      "src": "https://www.britannica.com/topic/OutKast",
+      "src2": "https://en.wikipedia.org/wiki/Outkast",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1995 年 The Source Awards 拿下最佳新饒舌團體，並在台上喊出南方有話要說。",
+    "src": "https://slate.com/culture/2021/02/outkast-source-awards-1995-southern-hip-hop.html",
+    "from": "new"
+   },
+   {
+    "f": "2004 年葛萊美獎以《Speakerboxxx/The Love Below》獲年度專輯（得獎）。",
+    "src": "https://www.britannica.com/topic/OutKast",
+    "from": "new"
+   },
+   {
+    "f": "2025 年入選搖滾名人堂。",
+    "src": "https://rockhall.com/inductees/outkast/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 7 次：Britannica OutKast 條目（WebFetch 摘要）、英文維基 OutKast（WebFetch 摘要；curl 取全文被維基 API 限流，記為失敗）、搖滾名人堂 OutKast 頁（curl 讀全文）、WebSearch 兩次（1995 Source Awards；後輩影響，限 Rolling Stone／NPR／Complex 等網域）、Slate 文章（WebFetch 摘要）、Complex Craig Jenkins 專文（WebFetch 摘要）。失敗請求：維基 API 限流（curl 數次）、Rolling Stone 名人堂報導被導向付費代理未取得、一次網域限制被拒；記 3。維基與 Britannica、Slate、Complex 內容皆為小模型摘要。名人堂官方（可具名單源）：搖滾名人堂稱「In bringing their vision of the Dirty South to hip-hop, OutKast significantly broadened the genre's palette」「Their cultural influence is incalculable」，並列出 OutKast Influenced：Janelle Monáe、Kendrick Lamar、Tyler, the Creator、Ludacris、T.I.、Future、Que、Dutch Rebelle；https://rockhall.com/inductees/outkast/ 。Tyler, the Creator、Ludacris、T.I. 僅名人堂單源，facts 沒有放。兩人如何相識不一致：Britannica 寫在亞特蘭大的表演藝術高中結識，維基摘要寫在 Lenox Square 商場相識、就讀 Tri-Cities High School；facts 只寫『在亞特蘭大念高中時成為搭檔』，不寫地點與年份。成軍年：維基摘要 1992、名人堂頁寫 '92 出道，facts 未收年份。Big Boi 出生地 Savannah、André 出生地 Atlanta 只 Britannica 單源。Speakerboxxx/The Love Below 的 Grammy 屆次（46 屆）與年份（2004）維基與 Britannica 一致；維基摘要另寫〈Ms. Jackson〉2001 年得最佳饒舌二人組／團體，屆次疑為 44 屆（2002 年頒發），單源且屆次矛盾，不收。累計銷量（13 倍白金、鑽石認證）會被更新、不收。1995 年 Source Awards 的『噓聲』細節：Slate 摘要與維基摘要都寫到；引述話語是 André 3000 的原話，寫作層宜意譯。『第一個／唯一』類：名人堂稱『少數』拿下年度專輯的嘻哈團體，用 few 不用 only。同名確認：卡池 5 張為亞特蘭大的 OutKast 本人（1994–2003），無同名混卡。Slate、Complex、Rock Hall、Britannica 為獨立來源。"
+ }
+]
