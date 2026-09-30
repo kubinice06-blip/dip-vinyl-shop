@@ -968,5 +968,235 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，全靠補查。補查 8 次：維基 Michael Kiwanuka、維基 2020 Mercury Prize、維基 Love & Hate、WebSearch（背景與影響，一次呼叫內含三個子查詢）、Far Out Magazine（他談影響他的專輯）、uDiscover Mercury 得獎報導、Matooke Republic 側寫、維基 Home Again。失敗請求 2 次（不計入）：Britannica（404）、mercuryprize.com 官方新聞（404）。非獨立：維基四條目同站；uDiscover 與 Matooke Republic 各自撰稿但簡單，Matooke 內容與維基高度重合（生日、父母姓名、Sound of 2012、入圍獎項），可視為維基衍生。單源不收 facts：曾當錄音室吉他手後才單飛（維基單源）；《Kiwanuka》英國專輯榜第 2 名並獲金唱片（維基單源）；Brit Awards 入圍細節：2020 British Male Solo Artist、2017 與 2020 British Album of the Year，以及 2021 年葛萊美最佳搖滾專輯入圍（維基單源，Matooke 只說多次入圍，故 facts 未寫類別）；2020 年是他第三次入圍 Mercury（uDiscover 單源，搜尋摘要稱三張專輯都入圍過）；Nirvana《From the Muddy Banks of the Wishkah》影響他學吉他（Far Out 單源）；《Love & Hate》開場曲〈Cold Little Heart〉近 10 分鐘、成為 HBO《Big Little Lies》片頭曲（維基專輯單源）；Metacritic 86 與 Telegraph、Guardian 評語（維基單源）；《Home Again》荷蘭榜第 1 名、英國破 10 萬張認證（維基單源）；Obama 2021 與 2023 夏季歌單（Matooke 單源）；虔誠基督徒與 Tottenham 球迷（維基與 Matooke 有寫但與地位無關，不收）。2012 年 Sound of 2012 說明：Matooke 只寫『earned BBC Sound of 2012 designation』，是否為冠軍以維基『won on January 6, 2012』為準（單源）；facts 已寫『贏得』，寫作層若要保守可寫『獲選 Sound of 2012』。卡池四張專輯確認為同一人（2012–2024）。 【修正】facts 只寫『獲選』Sound of 2012（冠軍與 1 月 6 日日期為維基單源）；2020 年 9 月 24 日公布得獎與專輯取名致意烏干達出身（uDiscover 單源）已自 facts 撤下。"
+ },
+ {
+  "key": "miguel",
+  "name": "Miguel",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Miguel（本名 Miguel Jontel Pimentel）1985 年 10 月 23 日出生，在加州 San Pedro 長大；母親是非裔美國人，父親是墨西哥裔美國人。",
+      "src": "https://en.wikipedia.org/wiki/Miguel_(singer)",
+      "src2": "https://www.biography.com/musicians/miguel",
+      "from": "new"
+     },
+     {
+      "f": "他小時候聽的音樂來自父母兩邊：母親帶他聽經典 R&B，父親則帶來嘻哈、爵士與經典搖滾，塑造了他混合曲風的底子。",
+      "src": "https://www.grammy.com/news/miguel-black-sounds-beautiful-rnb-winning-background-biography/",
+      "src2": "https://www.biography.com/musicians/miguel",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Miguel 把 R&B、funk、嘻哈、搖滾與電子揉在一起；《Kaleidoscope Dream》（2012）被評論歸為 alternative R&B，混入迷幻搖滾、funk、靈魂與電子元素。",
+      "src": "https://en.wikipedia.org/wiki/Kaleidoscope_Dream",
+      "src2": "https://en.wikipedia.org/wiki/Miguel_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "〈Adorn〉是他的招牌曲；Biography.com 說它「sensual tone and easy pace」（感官的語氣與從容的步調），維基形容為 electro soul，以假聲與簡約鍵盤鋪成。",
+      "src": "https://en.wikipedia.org/wiki/Adorn_(song)",
+      "src2": "https://www.biography.com/musicians/miguel",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2013 年第 55 屆葛萊美，〈Adorn〉得最佳 R&B 歌曲（得獎）；同屆〈Adorn〉入圍年度歌曲與最佳 R&B 演出（入圍），《Kaleidoscope Dream》入圍最佳城市當代專輯（入圍）。這是他至今唯一的葛萊美得獎。",
+      "src": "https://www.grammy.com/artists/miguel/4571/",
+      "src2": "https://en.wikipedia.org/wiki/Adorn_(song)",
+      "from": "new"
+     },
+     {
+      "f": "〈Sure Thing〉2010 年發行，登上 Hot R&B/Hip-Hop Songs 冠軍；2023 年因 TikTok 爆紅而重返 Billboard Hot 100，創下新高第 11 名。",
+      "src": "https://en.wikipedia.org/wiki/Sure_Thing_(Miguel_song)",
+      "src2": "https://en.wikipedia.org/wiki/Miguel_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "首張主流專輯《All I Want Is You》（2010）起初反應平平，靠〈Sure Thing〉等單曲延燒才成為 sleeper hit（後勁型熱賣專輯）。",
+      "src": "https://www.grammy.com/news/miguel-black-sounds-beautiful-rnb-winning-background-biography/",
+      "src2": "https://www.biography.com/musicians/miguel",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2012 年《Kaleidoscope Dream》首週登上 Billboard 200 第 3 名。",
+      "src": "https://en.wikipedia.org/wiki/Kaleidoscope_Dream",
+      "src2": "https://www.biography.com/musicians/miguel",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2013 年第 55 屆葛萊美，〈Adorn〉得最佳 R&B 歌曲。",
+    "src": "https://www.grammy.com/artists/miguel/4571/",
+    "src2": "https://en.wikipedia.org/wiki/Adorn_(song)",
+    "from": "new"
+   },
+   {
+    "f": "2012 年《Kaleidoscope Dream》登上 Billboard 200 第 3 名。",
+    "src": "https://en.wikipedia.org/wiki/Kaleidoscope_Dream",
+    "src2": "https://www.biography.com/musicians/miguel",
+    "from": "new"
+   },
+   {
+    "f": "2023 年〈Sure Thing〉因 TikTok 重返 Hot 100，新高第 11 名。",
+    "src": "https://en.wikipedia.org/wiki/Sure_Thing_(Miguel_song)",
+    "src2": "https://en.wikipedia.org/wiki/Miguel_(singer)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "出生地：維基 Miguel 條目寫生於加州 Lynwood、在 San Pedro 長大；Biography.com 與搜尋摘要寫生於 San Pedro。facts 只寫『在 San Pedro 長大』。",
+   "Grammy 提名數：Grammy 新聞稿寫 12 次、Grammy.com 藝人頁列 1 勝 13 提名（後者含 2023 年提名）；facts 只寫 2013 年那一屆與『唯一得獎』。",
+   "2013 年〈Adorn〉入圍類別名稱：維基寫 Best R&B Performance，Grammy.com 現行名稱為 Best R&B Solo Performance（同一獎項後來更名）；facts 寫當年名稱。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，全靠補查。補查 8 次：維基 Miguel (singer)、WebSearch（Adorn、身世與影響）、Grammy.com 專文、Grammy.com 藝人頁、Biography.com、維基 Kaleidoscope Dream、維基 Adorn (song)、維基 Sure Thing。無失敗請求。非獨立：維基四條目同站；Biography.com 與 Grammy 專文各自撰稿。單源不收 facts：Charlamagne tha God 稱他『the greatest R&B singer of the past decade』（維基單源）；自述影響 Prince、David Bowie、Jimi Hendrix、Marvin Gaye 與 Usher（維基單源，搜尋摘要更指出來源頁沒有 Prince 的說法）；『the genre became a stereotype, and I've never been one for stereotypes』與混血身分讓他一生『being in the middle』（Grammy 專文單源）；2004 年與 Black Ice Records 簽約、2006 年首張《Young & Free》不順、8 歲父母離異（Biography.com 單源）；2007 年 11 月簽 Jive Records、Mark Pitts 聽到〈Sure Thing〉（維基單源）；2013 Billboard Music Awards 跳台意外的『Miguel Leg Drop』梗（維基單源）；《Kaleidoscope Dream》Metacritic 86、寫或共寫每首歌、以吉他作為主要創作工具、累積銷量與 2017 年白金（維基單源）；〈Adorn〉Hot 100 第 17 名、Hot R&B/Hip-Hop Airplay 連 20 週以上冠軍紀錄、Christgau 稱『one of 2012's signature pop moments』、Rolling Stone 年度歌曲第 33 名、Pazz & Jop 第 2 名、三白金（維基單源）；《Wildheart》Billboard 200 第 2 名（維基單源）、Grammy.com 記 2016 年《Wildheart》與 2019 年《War & Leisure》各入圍最佳城市當代專輯（Grammy.com 單源）；《War & Leisure》的〈Sky Walker〉與 Travis Scott（維基單源）；2025 年《Caos》。第 2 源說明：sound 第二條『electro soul』出自維基〈Adorn〉條目，Biography.com 只有『sensual tone and easy pace』與經典靈魂比較，兩源支持不同層面，寫作層宜只引後者的原話並分開寫。卡池四張專輯確認為同一人（2010–2017）。 【修正】評論拿 Prince 的聲音路線與他相比（維基 Kaleidoscope Dream 單源）已自 facts 撤下。"
+ },
+ {
+  "key": "minnie riperton",
+  "name": "Minnie Riperton",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Minnie Riperton 1947 年 11 月 8 日生於芝加哥，年輕時受過歌劇式的古典聲樂訓練，之後才轉向靈魂與 R&B。",
+      "src": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+      "src2": "https://www.azarianmagazine.com/p/minni-riperton",
+      "from": "new"
+     },
+     {
+      "f": "她先在芝加哥的迷幻靈魂樂團 Rotary Connection 擔任主唱成名，再出個人專輯。",
+      "src": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+      "src2": "https://www.azarianmagazine.com/p/minni-riperton",
+      "from": "new"
+     },
+     {
+      "f": "她的第一張個人專輯《Come to My Garden》（1970）由 Rotary Connection 的團員 Charles Stepney 製作與編寫管弦。",
+      "src": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+      "src2": "https://en.wikipedia.org/wiki/Come_to_My_Garden",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Riperton 以約 5 個八度的音域與哨音（whistle register）著稱；她不只把高音當炫技，還能在這個音區咬字、瞬間換聲區、拉長音。",
+      "src": "https://www.azarianmagazine.com/p/minni-riperton",
+      "src2": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+      "from": "new"
+     },
+     {
+      "f": "《Come to My Garden》以華麗的管弦編寫為主，比她在 Rotary Connection 時期的搖滾成分更輕柔，靈感來自 Dionne Warwick 與 Burt Bacharach 的合作路線。",
+      "src": "https://en.wikipedia.org/wiki/Come_to_My_Garden",
+      "src2": "https://www.azarianmagazine.com/p/minni-riperton",
+      "from": "new"
+     },
+     {
+      "f": "1975 年的《Adventures in Paradise》走鬆軟的 soul-jazz 路線，跟 Epic 原先期待的更放克的續作不同。",
+      "src": "https://en.wikipedia.org/wiki/Adventures_in_Paradise_(Minnie_Riperton_album)",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Lovin' You〉是她為女兒 Maya（日後成為演員 Maya Rudolph）寫的搖籃曲，與丈夫 Richard Rudolph 合寫；1975 年登上 Billboard Hot 100 冠軍。",
+      "src": "https://www.britannica.com/biography/Minnie-Riperton",
+      "src2": "https://en.wikipedia.org/wiki/Perfect_Angel",
+      "from": "new"
+     },
+     {
+      "f": "Mariah Carey 在 2017 年 Fuse 訪談說：「I wouldn't be who I was if there was no Minnie Riperton」；維基也記 Carey 等歌手把她視為重要的影響來源。",
+      "src": "https://bradkyle.substack.com/p/rarified-heir-mariah-carey-and-her",
+      "src2": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+      "from": "new"
+     },
+     {
+      "f": "她確診乳癌後擔任美國癌症協會的全國發言人，把自己的病情公開出來，替女性健康議題發聲。",
+      "src": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+      "src2": "https://www.azarianmagazine.com/p/minni-riperton",
+      "from": "new"
+     },
+     {
+      "f": "她 1979 年 7 月 12 日因乳癌過世，享年 31 歲。",
+      "src": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+      "src2": "https://www.azarianmagazine.com/p/minni-riperton",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1975 年 4 月〈Lovin' You〉在慢慢爬升約三個月後登上 Hot 100 冠軍，收在 1974 年的專輯《Perfect Angel》。",
+      "src": "https://en.wikipedia.org/wiki/Perfect_Angel",
+      "src2": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+      "from": "new"
+     },
+     {
+      "f": "1975 年 5 月的《Adventures in Paradise》由 Epic 發行，Leon Ware 與 Joe Sample 供曲；〈Inside My Love〉1975 年夏天登上 R&B 榜第 26 名，因歌詞內容讓不少流行電台不願播放；專輯登上 Billboard 200 第 18 名與 Top Soul Albums 第 5 名。",
+      "src": "https://en.wikipedia.org/wiki/Adventures_in_Paradise_(Minnie_Riperton_album)",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1975 年〈Lovin' You〉登上 Billboard Hot 100 冠軍。",
+    "src": "https://www.britannica.com/biography/Minnie-Riperton",
+    "src2": "https://en.wikipedia.org/wiki/Perfect_Angel",
+    "from": "new"
+   },
+   {
+    "f": "1979 年 7 月 12 日因乳癌過世，享年 31 歲。",
+    "src": "https://en.wikipedia.org/wiki/Minnie_Riperton",
+    "src2": "https://www.azarianmagazine.com/p/minni-riperton",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "上線簡介《Adventures in Paradise》寫 Larry Carlton『掛編曲』；維基專輯條目寫他負責吉他編曲（guitar arrangements）。其餘簡介細節（Stewart Levine 共同製作、Joe Sample 與 Leon Ware 供曲、〈Inside My Love〉R&B 榜第 26 名並遭部分電台拒播、Billboard 200 第 18 名、靈魂專輯榜第 5 名）與維基一致。",
+   "維基專輯條目寫製作人為 Riperton、Richard Rudolph 與 Stewart Levine；上線簡介只寫 Levine 接手共同製作，並未錯，但省略了 Riperton 與 Rudolph。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Adventures in Paradise",
+    "claim": "Larry Carlton 掛編曲",
+    "problem": "維基專輯條目寫 Carlton 負責吉他編曲（handling guitar arrangements），非整張編曲；單一來源，建議店主改成『Larry Carlton 負責吉他編曲』或刪除該句，待其他來源（唱片內頁 credits）確認。",
+    "src": "https://en.wikipedia.org/wiki/Adventures_in_Paradise_(Minnie_Riperton_album)"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫只有《Adventures in Paradise》一則上線簡介，無研究稿，三格靠補查。補查 8 次：維基 Minnie Riperton、Britannica（內容很少，僅證〈Lovin' You〉Hot 100 冠軍與為女兒而作）、維基 Perfect Angel、WebSearch（哨音、Mariah Carey、癌症）、Brad Kyle Substack（Mariah Carey 專文，個人部落格）、Azarian Magazine 專文、維基 Come to My Garden、維基 Adventures in Paradise。失敗請求 1 次（不計入）：Face2Face Africa（403）。非獨立：維基四條目同站；Azarian Magazine 與 Substack 均為個人或小型專欄，偏評論文，只當佐證；Britannica 只讀到很短的節錄。單源不收 facts：出生於芝加哥 Bronzeville、在 Abraham Lincoln Center 師事 Marion Jeffery、少女時期在 The Gems 唱歌、替 Etta James 與 Chuck Berry 和聲（維基單源；搜尋摘要另說替 Bo Diddley、Muddy Waters 和聲，來源頁未開）；Rotary Connection 1967 至 1971 年（維基單源）；《Perfect Angel》Stevie Wonder 以『El Toro Negro』化名製作、錄於洛杉磯 Record Plant、Billboard 200 第 4 名與 R&B 專輯榜第 1 名、金唱片，Pitchfork、AllMusic 與 BBC 評語（維基專輯單源）；〈Lovin' You〉R&B 榜第 3 名（維基專輯單源）；1976 年 1 月確診乳癌、4 月乳房切除、1978 年由 Jimmy Carter 頒給美國癌症協會 Courage Award（維基單源）；『最早公開談論病情的名人之一』（Azarian 單源）；Ariana Grande 也把她視為主要靈感與『Queen of the Whistle Register』稱號（Azarian 與搜尋摘要，皆為小型媒體，未有一手來源）；《Come to My Garden》商業失利、後被視為傑作或 cult 專輯、1974 年 Billboard 200 第 160 名、〈Les Fleurs〉2020 年英國榜第 34 名、被嘻哈大量取樣（維基單源）；Maurice White 打鼓與 Ramsey Lewis 彈琴（維基單源）。Stevie Wonder 的製作參與屬單源，已自 facts 撤下。上線簡介（我方資料）未寫她與 Rotary Connection 的關係；卡池四張專輯確認為同一人（1970–1979）。"
  }
 ]

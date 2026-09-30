@@ -196,7 +196,7 @@
     "status": "gap",
     "facts": [
      {
-      "f": "《In the Lonely Hour》2014 年發行，首週登上英國專輯榜冠軍。",
+      "f": "《In the Lonely Hour》2014 年發行，登上英國專輯榜冠軍。",
       "src": "https://en.wikipedia.org/wiki/In_the_Lonely_Hour",
       "src2": "https://en.wikipedia.org/wiki/Sam_Smith_(singer)",
       "from": "new"
@@ -232,5 +232,114 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，從零查。本位用 8 次：維基 Sam Smith、Britannica、WebSearch（Hazel Eyes）、維基 In the Lonely Hour、WebSearch（影響力）、Grammy 官網、WebSearch（Unholy 與 Bond 首位）、維基 Writing's on the Wall。失敗請求 1 次不計入：Billboard 文章（重導 tollbit 未取到）。卡池四張專輯（In the Lonely Hour、Love Goes、The Thrill of It All、Hazel Eyes）確認為同一人。非獨立：Bond 主題曲『首支登頂英國單曲榜』與奧斯卡／金球獎兩條，來源之一是維基歌曲條目、之二為維基藝人條目（同站不同條目），奧斯卡另有 Britannica 佐證（Britannica 寫 2016 年得獎，維基寫第 88 屆）；『首支』宣稱的另一佐證只見 Billboard／Femalefirst 搜尋摘要，未開頁，Billboard 頁被重導擋下。『第一位公開非二元 Hot 100 冠軍』維基與 Britannica 措辭一致，Britannica 寫 first openly nonbinary artist to reach #1，維基還加上葛萊美得獎條件，facts 取較窄的 Hot 100 版本；反例檢查：〈Unholy〉2022 年 10 月登頂前未見其他公開非二元藝人的 Hot 100 冠軍。單源不收 facts：聲樂老師 Joanna Eden、Youth Music Theatre 2007 演出、Lily Allen 為三代表親、2013 年 Naughty Boy〈La La La〉英國冠軍、Smith 談專輯靈感是愛上不愛自己的人（維基 In the Lonely Hour 單源）、Metacritic 62 分／樂評對詞曲深度的保留（單源）、〈Stay with Me〉署名 Tom Petty 與 Jeff Lynne 的補署（維基單源，僅寫『署名承認早期影響』）、2023 年〈Unholy〉葛萊美最佳流行雙人／團體演出（搜尋摘要）、與設計師 Christian Cowan 訂婚。Hazel Eyes：Britannica 稱 2026 年專輯、靈感與 Christian Cowan 的關係；搜尋摘要（維基、Variety、NPR 網址，未開頁）稱 2026 年 8 月 21 日 Capitol 發行、第五張錄音室專輯、為紐約而寫，兩說靈感不同，故 facts 不收《Hazel Eyes》任何細節。Grammy 官網對〈Stay with Me〉的『gospel-tinged ballad』與 Britannica 的『falsetto ballad』合併成一句，兩源皆有支持各自那一半。 另：《In the Lonely Hour》2014 年為英國第 2 暢銷、美國第 3 暢銷專輯，只見維基專輯條目單源，未進 facts。"
+ },
+ {
+  "key": "smokey robinson",
+  "name": "Smokey Robinson",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Smokey Robinson（本名 William Robinson Jr.）1940 年 2 月 19 日生於密西根州底特律。",
+      "src": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+      "src2": "https://www.britannica.com/biography/Smokey-Robinson",
+      "from": "new"
+     },
+     {
+      "f": "他中學時期與同學組成人聲團 Five Chimes，團名幾經更換後成為 The Miracles，是他日後出道與 Motown 崛起的起點。",
+      "src": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+      "src2": "https://www.britannica.com/biography/Smokey-Robinson",
+      "from": "new"
+     },
+     {
+      "f": "Berry Gordy 被他的嗓音與寫歌才華打動，日後成為他的經理、導師與製作人。",
+      "src": "https://www.britannica.com/biography/Smokey-Robinson",
+      "src2": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1975 年專輯《A Quiet Storm》的同名曲是 quiet storm 廣播格式的命名來源；這類格式播放平滑、浪漫、帶爵士色彩的慢節奏 R&B。",
+      "src": "https://en.wikipedia.org/wiki/Quiet_storm",
+      "src2": "https://classic.motown.com/story/smokey-robinson-quiet-storm/",
+      "from": "new"
+     },
+     {
+      "f": "《A Quiet Storm》收錄的〈Baby That's Backatcha〉登上 R&B 榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+      "src2": "https://classic.motown.com/story/smokey-robinson-quiet-storm/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "quiet storm 廣播格式 1976 年由 Melvin Lindsey 在華盛頓 WHUR-FM 開出，取名自 Robinson 的同名歌，之後在全美黑人聽眾為主的電台快速被仿效。",
+      "src": "https://en.wikipedia.org/wiki/Quiet_storm",
+      "src2": "https://classic.motown.com/story/smokey-robinson-quiet-storm/",
+      "from": "new"
+     },
+     {
+      "f": "Robinson 1987 年以個人身分入選搖滾名人堂，當時 The Miracles 沒有一起入選，團體要到 2012 年才入選。",
+      "src": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+      "src2": "https://www.britannica.com/biography/Smokey-Robinson",
+      "from": "new"
+     },
+     {
+      "f": "他 2006 年獲甘迺迪中心榮譽獎，2016 年獲美國國會圖書館 Gershwin 流行歌曲獎。",
+      "src": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+      "src2": "https://www.britannica.com/biography/Smokey-Robinson",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Robinson 1972 年離開 The Miracles 展開個人生涯，1975 年推出《A Quiet Storm》。",
+      "src": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+      "src2": "https://www.britannica.com/biography/Smokey-Robinson",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1987 年以個人身分入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/smokey-robinson",
+    "src2": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+    "from": "new"
+   },
+   {
+    "f": "2006 年獲甘迺迪中心榮譽獎。",
+    "src": "https://en.wikipedia.org/wiki/Smokey_Robinson",
+    "src2": "https://www.britannica.com/biography/Smokey-Robinson",
+    "from": "new"
+   },
+   {
+    "f": "2016 年獲美國國會圖書館 Gershwin 流行歌曲獎。",
+    "src": "https://www.kpbs.org/news/2017/feb/10/smokey-robinson-library-congress-gershwin-prize-po/",
+    "src2": "https://www.britannica.com/biography/Smokey-Robinson",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Bob Dylan 稱 Robinson 是『美國最偉大的在世詩人』：Britannica 照登，但搜尋結果顯示 Robinson 本人曾出面處理這是否為謠傳，且有文章直指其為以訛傳訛；facts 不收，寫作層不得寫。",
+   "National Medal of Arts 年份：維基摘要寫 1993 年，Britannica 寫 2002 年，兩源不一致，facts 不收。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空，只有《Smokey》（1973）上線簡介。本位用 8 次：維基 Smokey Robinson、搖滾名人堂官網、Britannica、WebSearch（Kennedy Center／Dylan 傳言／Quiet Storm）、維基 Quiet storm、classic.motown.com、WebSearch（Gershwin 獎）、KPBS。失敗請求 3 次不計入：LOC 兩個網址（403）、Kennedy Center（403）。卡池四張專輯（A Quiet Storm、Where There's Smoke...、Deep in My Soul、Smokey）確認為 1973–1979 年個人專輯，屬同一人；Miracles 時期另有獨立卡（key『smokey robinson & the miracles』）。名人堂官方（可具名單源）：rockhall.com 稱他在 Motown 地位僅次於 Berry Gordy Jr.，以『gorgeous, passionate ballads』讓公司站上版圖，並稱他的作品是『synonymous with love』、『Smokey Robinson's name will forever be linked with the sound of young America』。單源不收 facts：1957 年 8 月在 Brunswick 試唱失敗現場被 Gordy 聽到、帶著寫了 100 首歌的筆記本（維基）；1960–1970 年 26 首 Top 40（維基）；〈Shop Around〉是 Motown 第一支百萬銷量單曲（維基單源，屬『第一』類，未反查）；1990 名人堂（Songwriters Hall of Fame）、1999 Grammy Lifetime Achievement（維基）；Beatles 翻唱〈You Really Gotta Hold on Me〉（維基）；深受 Sarah Vaughan 影響、為 Temptations 與 Mary Wells 寫歌（Britannica）；LOC 館長 Carla Hayden『music expresses the very best in songwriting』與 Gershwin 典禮表演者名單（KPBS 單源）；Robinson 自述專輯構想『take the business by storm』（Motown 頁單源）；與姊姊 Rose Ella Jones 合寫同名曲（Motown 頁單源）；1975 專輯讓他離團後事業重振（搜尋摘要）。單源不收 facts（續）：Gershwin 獎頒獎稿稱他為『poet laureate of soul』、『velvet falsetto and incomparable mastery of lyrical verse』，並稱他在 Motown 任副總裁近三十年、寫過超過 4000 首歌（KPBS 轉述 LOC 新聞稿，LOC 頁被 403 擋下，單源；寫作層若要用請寫成『Gershwin 獎頒獎稿稱』，且 Britannica 不支持副總裁與 4000 首）；Britannica 稱 Robinson 與 Miracles 的合作是 Gordy 創辦 Motown 的靈感（單源）。『A Quiet Storm』一節兩源來自維基 Quiet storm 條目與 Motown 官方經典專輯頁，措辭一致，未見衝突；維基與 Britannica 對 Gordy 一條僅取兩源共同的『打動、成為經理導師製作人』。"
  }
 ]
