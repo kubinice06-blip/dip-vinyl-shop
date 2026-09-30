@@ -1117,5 +1117,84 @@
     "notes": "本位補查 7 次：WebFetch 英文維基、udiscovermusic、Mixmag、Reggaeville、jamaicans.com 各 1，WebSearch 2；失敗請求 4 次（Britannica 404、NPR 503、Rolling Stone 307 轉址、DJ Mag 403），已達上限，未再試。poolAlbums 五張皆為牙買加 deejay U-Roy，無混卡。事實庫 research 已有 Jones Town 出身、母親風琴手、Louis Jordan、Stur Gav、1970 年三曲霸榜（bank），本位補足第二源後改以 new 收。\n未收（單源）：(1) 英文維基：『a melodic style of toasting applied with a highly developed sense of timing』（單源，評語）、影響 Sean Paul 與 Shabba Ranks、與 Toots and the Maytals《True Love》（2004）合作、2012 年《Pray Fi Di People》；(2) Mixmag：Shabba Ranks 2019 年稱他『di Picasso of our music』、他自述『我只是談團結，暴力很醜、愛很美』、開設 Mego-Ann 廠牌；(3) udiscovermusic：Shaggy 稱他『one of our hero's』、David Rodigan 稱他『the paradigm of Jamaican music』（搜尋摘要）與『ironic toaster』、1972 年首次赴英與 Roy Shirley、Max Romeo 同台；(4) Reggaeville：他被預定頒發 JaRIA Icon Award 卻在頒獎前過世、他 1978 年 Stur Gav 培養 Super Cat（單源）；(5) 搜尋摘要稱 Kool Herc 常把 U-Roy 視為主要啟發（來源摘要，未開頁）；legacy 的嘻哈條目只寫『被認為啟發』，Kool Herc 的具名說法只見英文維基（單源）而未收進 facts；(6) 搜尋摘要稱他 1970 年起與 Bunny Lee、Lee Perry、Rupie Edwards 等合作（udiscovermusic 有列）。\n非獨立提醒：Reggaeville 與 jamaicans.com 的生平段落（Louis Jordan、母親風琴手、Count Machuki）措辭與英文維基雷同，很可能同出一源，故 origin 第二與第三條的獨立性有限。",
     "failedFetches": 4,
     "pubIssues": []
+  },
+  {
+    "key": "venetian snares",
+    "name": "Venetian Snares",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Venetian Snares 是加拿大電子音樂人 Aaron Funk 的名義，他來自曼尼托巴省的溫尼伯，長年在當地創作。",
+            "src": "https://en.wikipedia.org/wiki/Venetian_Snares",
+            "src2": "https://planet.mu/artists/venetian-snares/",
+            "from": "new"
+          },
+          {
+            "f": "他在 1990 年代初就開始做音樂，早年是在 Amiga 電腦上用 tracker 軟體學會編曲。",
+            "src": "https://daily.bandcamp.com/lists/venetian-snares-guide",
+            "src2": "https://www.factmag.com/2015/08/13/interview-venetian-snares-hates-the-music-industry/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的招牌是複雜的鼓組與少見的拍號，尤其是 7/4，常見的速度可達每分鐘 180 拍。",
+            "src": "https://en.wikipedia.org/wiki/Venetian_Snares",
+            "src2": "https://daily.bandcamp.com/lists/venetian-snares-guide",
+            "from": "new"
+          },
+          {
+            "f": "2005 年的《Rossz Csillag Alatt Született》把快速的 breakbeat 與古典音樂結合，主題與匈牙利、布達佩斯有關。",
+            "src": "https://en.wikipedia.org/wiki/Venetian_Snares",
+            "src2": "https://daily.bandcamp.com/lists/venetian-snares-guide",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "英文維基稱他開創了 breakcore；他所屬的廠牌 Planet Mu 稱他因革新並推廣 breakcore 而聞名，是這個曲風的代表人物。",
+            "src": "https://en.wikipedia.org/wiki/Venetian_Snares",
+            "src2": "https://planet.mu/artists/venetian-snares/",
+            "from": "new"
+          },
+          {
+            "f": "《Rossz Csillag Alatt Született》被評論界視為他最重要的作品之一。",
+            "src": "https://en.wikipedia.org/wiki/Venetian_Snares",
+            "src2": "https://daily.bandcamp.com/lists/venetian-snares-guide",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2005 年發行《Rossz Csillag Alatt Született》。",
+        "src": "https://en.wikipedia.org/wiki/Venetian_Snares",
+        "src2": "https://daily.bandcamp.com/lists/venetian-snares-guide",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "開始做音樂的時間：Planet Mu 寫『自 1990 年代中期』，Bandcamp Daily 寫『1990 年代初已在累積作品』，Fact 訪談寫約 1991 年用 Amiga 500，搜尋摘要另稱英文維基寫 1992 年買 Amiga 500；facts 只寫『1990 年代初』與『用 Amiga 上的 tracker 學做音樂』，不寫具體年份。",
+      "『breakcore』標籤：英文維基與 Planet Mu 稱他開創或革新 breakcore；他在 2015 年 Fact 訪談中說自己『不是 breakcore 藝人』，也不是 IDM 或 techno，只是表達自己。facts 已把前者寫成『英文維基稱…』『Planet Mu 稱…』，寫作層不得把 breakcore 寫成他自己認同的身分。",
+      "卡池 poolAlbums 無上線簡介，故無與上線簡介的衝突。"
+    ],
+    "searches": 8,
+    "status": "thin",
+    "notes": "本位補查 8 次：WebFetch 英文維基、Bandcamp Daily、Planet Mu、Attack Magazine、Fact 各 1，WebSearch 3；失敗請求 1 次（英文維基《Rossz Csillag Alatt Született》404）。事實庫 research 與 published 皆空，三格從零查。poolAlbums 17 張皆為加拿大電子音樂人 Aaron Funk（含別名專輯、Timesig 與 Planet Mu 目錄），無同名混卡。\n狀態記 thin：origin 只湊到『來自溫尼伯』與『1990 年代初開始』兩條、缺家庭、養成與師承；legacy 沒有後輩點名，也沒有名人堂、獎項或權威票選之類的機構級共識，只有評論界對單張專輯的看法。Planet Mu 是他所屬的廠牌，其自述非獨立來源，已在 legacy 第一條寫成『Planet Mu 稱』。\n未收（單源）：(1) 英文維基：1975 年 1 月 11 日生於溫尼伯（搜尋摘要也寫此日期，未開頁；Fact 稱 2015 年他 40 歲、Attack 稱他 41 歲，年齡推算一致，但生日只有英文維基開頁讀到）、藝名由來（一段『速度極快的 snare roll，像拿棍子刮過格柵或拿鉛筆滑過百葉窗』的曲子）、廠牌 Planet Mu／Hymen／Sublight／自己的 Timesig、別名 Last Step 與 Snares Man!、2025 年參與 Rosalía〈Reliquia〉（搜尋摘要另稱他在 Rosalía《Lux》專輯負責鼓編程，來源是 Planet Mu 的 X 貼文，未開頁）；(2) Bandcamp Daily：『沒有其他人能像他那樣，用駭人的速度與眩目的拍號炸出好戰的節奏，帶著荒謬的幽默與殘酷的情感深度』（引述評語，單源）、Rossz Csillag 以『鴿子從布達佩斯皇宮俯瞰』為概念、改編 Bartók 與 Stravinsky、並重混 Billie Holiday 的〈Gloomy Sunday〉（單源）、1999 年 EP《Greg Hates Car Culture》引起 Mike Paradinas 注意而簽約（搜尋摘要另有，英文維基未開頁）；(3) Planet Mu：與 Daniel Lanois、John Frusciante 合作（單源）；(4) Fact 訪談：他說 4/4 對他不自然、拍號變化他看是自然的（單源）；(5) 搜尋摘要稱他影響 UndaCova、Xanopticon、Enduser、Datach'i 等後輩（來源摘要，未開頁）；(6) Bandcamp 的相近藝人名單（Ruby My Dear、Kid606、Igorrr）僅為評論者聯想，不算影響關係。\n『Traditional Synthesizer Music』（2016）、『Filth』（2009）、『Detrimentalist』（2008）等卡池專輯本位未查，屬專輯層級，非本層範圍。",
+    "failedFetches": 1,
+    "pubIssues": []
   }
 ]
