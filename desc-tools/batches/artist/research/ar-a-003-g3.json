@@ -131,7 +131,7 @@
     "name": "石川晶とカウント・バッファローズ",
     "slots": {
       "origin": {
-        "status": "bank",
+        "status": "gap",
         "facts": [
           {
             "f": "團長石川晶 1934 年 11 月 10 日生於神奈川縣橫須賀市。",
@@ -242,7 +242,7 @@
     "name": "秋吉敏子",
     "slots": {
       "origin": {
-        "status": "bank",
+        "status": "gap",
         "facts": [
           {
             "f": "秋吉敏子（日文姓氏另有「穐吉」寫法）1929 年 12 月 12 日生於滿洲遼陽，父母是日本人。",
@@ -402,7 +402,7 @@
     "name": "高柳昌行",
     "slots": {
       "origin": {
-        "status": "bank",
+        "status": "gap",
         "facts": [
           {
             "f": "高柳昌行 1932 年 12 月 22 日生於東京，1991 年 6 月 23 日辭世，享年 58 歲。",
@@ -534,7 +534,7 @@
     "name": "高橋達也と東京ユニオン",
     "slots": {
       "origin": {
-        "status": "bank",
+        "status": "gap",
         "facts": [
           {
             "f": "東京ユニオン 1964 年成立，是日本存在最久的爵士大樂團之一；1966 年由次中音薩克斯風手高橋達也接任第四代團長，此後以「高橋達也と東京ユニオン」名義活動。",
@@ -1081,7 +1081,7 @@
             "from": "new"
           },
           {
-            "f": "團名後半的「of Chicago」是一位法國promoter替他們加上、之後沿用；打擊樂手 Don Moye 在巴黎期間成為固定鼓手，補齊經典陣容。",
+            "f": "團名後半的「of Chicago」是一位法國 promoter替他們加上、之後沿用；打擊樂手 Don Moye 在巴黎期間成為固定鼓手，補齊經典陣容。",
             "src": "https://lushliferecords.com.au/blogs/lush-life-blog/great-black-music-the-art-ensemble-of-chicago-and-the-aacm",
             "from": "new"
           }
@@ -1141,7 +1141,7 @@
             "from": "new"
           },
           {
-            "f": "Roscoe Mitchell 與 Don Moye 持續演出，2019 年為五十週年發行《We Are on the Edge》，2023 年發行《The Sixth Decade: From Paris to Paris》。",
+            "f": "Roscoe Mitchell 與 Don Moye 持續演出，2019 年發行《We Are on the Edge》，2023 年發行《The Sixth Decade: From Paris to Paris》。",
             "src": "https://en.wikipedia.org/wiki/Art_Ensemble_of_Chicago",
             "from": "new"
           },
@@ -1182,7 +1182,7 @@
     ],
     "conflicts": [
       "成軍與赴巴黎年份：英文維基摘要寫 1968 年到巴黎；Britannica 與 Vinyl Factory 為 1969–71，Lush Life 記 1969 年 5 月出航；採 1969，成軍年不寫（各源分別作 1965、1966、1969，說法不一）。",
-      "50 週年：Britannica 說 2017 年慶祝，英文維基說 2019 年《We Are on the Edge》為 50 週年，facts 只引英文維基那條的『2019 年發行』，不寫『50 週年是哪年』以外的解釋。",
+      "50 週年的年份：Britannica 說 2017 年慶祝，英文維基把 2019 年《We Are on the Edge》稱為 50 週年紀念，兩者不一致，facts 只寫『2019 年發行』，不寫是第幾週年。",
       "Don Moye 加入年份：英文維基 1970、Britannica『1969–71 年間』，facts 不寫年份。"
     ],
     "pubIssues": [],
@@ -1190,5 +1190,155 @@
     "failedFetches": 1,
     "status": "full",
     "notes": "介紹的是樂團本身。事實庫 research 與 published 皆為空，從零查。補查 6 次：英文維基、Britannica、WebSearch（含 Paris、Les Stances、Comme à la radio 等）、Lush Life 部落格、Vinyl Factory、WebSearch（榮譽）；NPR 2017 五十週年報導 503 取不到（failedFetches）。《Les Stances à Sophie》錄音日與 Fontella Bass 主唱只見搜尋摘要（摘要對應英文維基該專輯頁，未另行開啟核對，寫作層請當作待證）。搜尋摘要另提：對 Henry Threadgill、Matthew Shipp、William Hooker 的影響（來源頁未確認，未收）、「船運超過兩噸樂器」（單源未收）。榮譽（葛萊美、名人堂）未查到，搜尋無結果。事實庫沒有樂團身世與評價，三格全靠補查。"
+  },
+  {
+    "key": "baden powell",
+    "name": "Baden Powell",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Baden Powell de Aquino 1937 年 8 月 6 日生於巴西里約熱內盧州的 Varre-Sai；父親是童軍運動的愛好者，用英國童軍創辦人 Robert Baden-Powell 的名字替他取名。",
+            "src": "https://en.wikipedia.org/wiki/Baden_Powell_(guitarist)",
+            "from": "new"
+          },
+          {
+            "f": "他出生三個月就搬到里約，住在 Vila Isabel 與 São Cristóvão 一帶；父親 Lilo de Aquino 是鞋匠與業餘樂手，姊姊叫 Vera。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          },
+          {
+            "f": "他 8 歲起向 Jayme Florence（人稱 Meira）學吉他，Meira 是 1940 年代知名的 choro 吉他手；透過 Meira，他認識了 Pixinguinha 與 Donga 等 samba 與 choro 前輩。",
+            "src": "https://pt.wikipedia.org/wiki/Baden_Powell_(m%C3%BAsico)",
+            "from": "new"
+          },
+          {
+            "f": "少年時他上 Rádio Nacional 的《Papel Carbono》才藝節目，彈 Dilermando Reis 的曲子，拿到「最佳吉他獨奏」；十五歲已在職業演出。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          },
+          {
+            "f": "他天生是左撇子，卻用右手彈吉他；12 歲進入里約的國立音樂學校，後來又向 Moacir Santos 學作曲，Moacir 教他的希臘調式練習啟發了日後的 afro-sambas。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他把古典技法與流行和聲、搖擺感結合，跨在 bossa nova、samba 與巴西爵士之間。",
+            "src": "https://en.wikipedia.org/wiki/Baden_Powell_(guitarist)",
+            "from": "new"
+          },
+          {
+            "f": "Cravo Albin 辭典稱他把爵士和聲與巴西節奏傳統合成一種精緻的器樂語彙。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          },
+          {
+            "f": "1959 年他說服歌手 Billy Blanco 替他的一首曲子填詞，成了大受歡迎的〈Samba Triste〉。",
+            "src": "https://en.wikipedia.org/wiki/Baden_Powell_(guitarist)",
+            "from": "new"
+          },
+          {
+            "f": "與詩人兼外交官 Vinicius de Moraes 合作的《Os Afro-Sambas》1966 年 1 月 3 日錄音、同年由 Forma 發行；兩人都去過巴伊亞，接觸 samba de roda 與 candomblé，用 atabaque、afoxé 等 candomblé 與 umbanda 的打擊樂器，加上 agogô、長笛與 pandeiro。",
+            "src": "https://en.wikipedia.org/wiki/Os_Afro-sambas",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "英文維基稱他「被廣泛視為史上最偉大的巴西吉他手之一」。",
+            "src": "https://en.wikipedia.org/wiki/Baden_Powell_(guitarist)",
+            "from": "new"
+          },
+          {
+            "f": "他 1960 年代密集巡演歐洲，在巴黎 Olympia 與柏林爵士節登台，為法國廠牌 Barclay 錄了多張專輯，其中一張在巴黎拿到金唱片；1967 年柏林爵士節上與 Jim Hall、Barney Kessel 同台。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          },
+          {
+            "f": "他 1968 年移居巴黎，後來搬到德國，1990 年代回到巴西。",
+            "src": "https://en.wikipedia.org/wiki/Baden_Powell_(guitarist)",
+            "from": "new"
+          },
+          {
+            "f": "他 1986 年受訪時說：「我身為藝術家的義務，就是把巴西音樂帶到國外。」",
+            "src": "https://pt.wikipedia.org/wiki/Baden_Powell_(m%C3%BAsico)",
+            "from": "new"
+          },
+          {
+            "f": "他 1995 年獲第 15 屆 Prêmio Shell 巴西音樂獎（終身成就），創作超過 400 首，許多與 Vinicius de Moraes 及 Paulo César Pinheiro 合寫。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          },
+          {
+            "f": "他晚年皈依福音派基督教，並說這讓他戒除了物質依賴；演唱〈Samba da bênção〉時，把招牌喊聲「saravá」改成「bênção」。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          },
+          {
+            "f": "他 2000 年 9 月 26 日在里約辭世，享年 63 歲，死因是嚴重細菌性肺炎與隨後的感染；靈柩停放在里約市議會，葬於 São João Batista 墓園。",
+            "src": "https://pt.wikipedia.org/wiki/Baden_Powell_(m%C3%BAsico)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1959 年〈Samba Triste〉走紅；他與 Vinicius de Moraes 的合作在 1960 年代初成形，1962 年兩人在 Vinicius 的公寓關了近三個月，寫出 25 首歌。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          },
+          {
+            "f": "1966 年《Os Afro-Sambas》問世；1968 年他移居巴黎。",
+            "src": "https://en.wikipedia.org/wiki/Baden_Powell_(guitarist)",
+            "from": "new"
+          },
+          {
+            "f": "1990 年他與 Quarteto em Cy 重錄《Os Afro-Sambas》，Vinícius 已於 1980 年過世，主唱改由他自己擔任。",
+            "src": "https://en.wikipedia.org/wiki/Os_Afro-sambas",
+            "from": "new"
+          },
+          {
+            "f": "他最後一張錄音是 2000 年的《Lembranças》，收四首新寫的 choro；同年 9 月辭世。",
+            "src": "https://dicionariompb.com.br/artista/baden-powell/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1966 年與 Vinicius de Moraes 錄下《Os Afro-Sambas》。",
+        "src": "https://en.wikipedia.org/wiki/Os_Afro-sambas",
+        "from": "new"
+      },
+      {
+        "f": "1995 年獲第 15 屆 Prêmio Shell 巴西音樂獎（終身成就）。",
+        "src": "https://dicionariompb.com.br/artista/baden-powell/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "首次登台年齡：葡文維基寫 10 歲上《Papel Carbono》，Cravo Albin 寫 9 歲；兩源不一致，facts 不寫年齡。",
+      "與 Vinicius 初識的年份：Cravo Albin 約 1959（Arpège 夜總會）、葡文維基 1960、搜尋摘要 1962；三說不一，facts 只寫 1962 年那次關起門來合寫（Cravo Albin 明載）。",
+      "住院日：Cravo Albin 8 月 24 日、搜尋摘要另一頁 8 月 22 日；facts 不寫住院日。",
+      "英文維基摘要稱他 15 歲已職業演出；葡文與 Cravo Albin 記 9–10 歲上電台節目，兩者不衝突（電台才藝 vs 職業），採『少年時上節目、十五歲職業演出』。",
+      "《Os Afro-Sambas》維基條目所稱『開場曲排 Rolling Stone Brasil 百大歌曲第 9』與『現場版排百大專輯第 29』，對應哪一首、哪一張不明，不收。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "確認為巴西吉他手（非童軍創辦人本人；名字由來就是那位童軍創辦人），poolAlbums 五張（Os Afro-Sambas 1991、Tristeza on Guitar、Images on Guitar、Estudos、Canto on Guitar）與該人相符，無同名混卡。事實庫 research 與 published 皆為空，從零查。補查 6 次：英文維基、葡文維基、WebSearch（Afro-Sambas）、英文維基 Os Afro-sambas、WebSearch（葡文，逝世與追悼）、Cravo Albin 辭典；Britannica 404、Itaú Cultural 403 未計，共 2 次 failedFetches。池中《Os Afro-Sambas》（1991）很可能是 1990 年與 Quarteto em Cy 的重錄版（英文維基 Os Afro-sambas 條目：1990 年重錄），不是 1966 年與 Vinícius 的原版；寫作層要小心，未查專輯本身。搜尋摘要另提：葬禮約 100 人、Paulinho da Viola、Turíbio Santos 到場、小兒子 Louis Marcel Powell 彈〈Lapinha〉，2001 年『Sempre Baden』致敬企劃，來源頁未逐頁核對，未收。legacy 缺具名後輩點名影響，只收有出處的榮譽與地位描述。"
   }
 ]
