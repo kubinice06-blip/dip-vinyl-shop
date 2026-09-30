@@ -623,5 +623,280 @@
     "failedFetches": 1,
     "status": "full",
     "notes": "事實庫無研究稿也無上線簡介，三格全靠補查。7 次：維基、WebSearch（起源與影響）、Louder、NME、Retropop（Ivor Novello）、Vice、classicrockartists；失敗 1 次（Britannica 404）。兩源皆實際開頁讀到。Retropop 頁只確認獎項與類別，不含巴斯或專輯資料。第三條 Janov 團名：維基與 NME 兩源、Vice 亦提及。未收（單源）：維基寫 1986 年 Brit 獎頒給〈Everybody Wants to Rule the World〉（維基單源，類別是否為 British Single 未核）；Songs from the Big Chair 在美國五白金（維基單源）；Gary Jules 翻唱〈Mad World〉2003 年登英國榜冠軍（維基單源，NME 只說 Gary Jules 翻唱過）；《The Seeds of Love》（1989）混入爵士與藍調（維基單源）；Smith 說『我們都來自破碎家庭，都由母親帶大』（Vice 單源）；《The Tipping Point》（2022）是 33 年來首張英國冠軍專輯（classicrockartists 單源）；Curt Smith 說『在團裡待得夠久，總會再流行起來』（Louder 單源）；Smith 抱怨 Kanye West 取樣的版稅爭議（NME 單源）；Weezer、Disturbed、Adam Lambert 翻唱（搜尋摘要）。Ivor Novello 獎的官方引文『era-defining』在搜尋摘要出現，未開原頁，不收。Louder 點名 Disturbed、Kanye West、The 1975、David Guetta、Nas、New Found Glory、Foals、Dizzee Rascal、Lorde、The Killers、Arcade Fire、Weezer 為受影響者（Louder 單源，NME 只覆蓋 Kanye West、Nas、The Weeknd、Lorde、Gary Jules 的取樣或翻唱），facts 只寫兩源交集的 Kanye West、Nas、Lorde。維基三來源、classicrockartists 為粉絲類站台，來源等級中等，該站僅用於 1991 分手與 2000 重組（與維基一致）與 Billboard 冠軍。同名混卡檢查：poolAlbums 五張皆為 Tears for Fears；《Elemental》與《Raoul and the Kings of Spain》是 Smith 離團後 Orzabal 以團名發行，已在 era 註明。"
+  },
+  {
+    "key": "twice",
+    "name": "TWICE",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "TWICE 是 JYP Entertainment 透過 2015 年 Mnet 生存節目《Sixteen》選出的九人女團，成員 Nayeon、Jeongyeon、Momo、Sana、Jihyo、Mina、Dahyun、Chaeyoung、Tzuyu 來自韓國、日本與台灣。",
+            "src": "https://en.wikipedia.org/wiki/Twice_(group)",
+            "src2": "https://en.wikipedia.org/wiki/Sixteen_(TV_program)",
+            "from": "new"
+          },
+          {
+            "f": "她們 2015 年出道。",
+            "src": "https://en.wikipedia.org/wiki/Twice_(group)",
+            "src2": "https://typesetbrooklyn.com/articles/twice-10-year-anniversary-biggest-moments",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "早期走明亮、青春的 bubblegum pop 概念；2019 年前後轉向較成熟的形象與聲音。",
+            "src": "https://en.wikipedia.org/wiki/Twice_(group)",
+            "src2": "https://typesetbrooklyn.com/articles/twice-10-year-anniversary-biggest-moments",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2016 年單曲〈Cheer Up〉是她們的突破曲，登上南韓榜首，並在 Melon Music Awards 與 Mnet Asian Music Awards 兩個典禮都拿下年度歌曲（得獎）。",
+            "src": "https://www.britannica.com/topic/TWICE",
+            "src2": "https://en.wikipedia.org/wiki/Twice_(group)",
+            "from": "new"
+          },
+          {
+            "f": "2025 年十週年專輯《Ten: The Story Goes On》空降 Billboard 200 第 11 名，是她們第 10 次上榜，也是第一組在該榜有 10 張專輯的 K-pop 女團。",
+            "src": "https://www.koreaherald.com/article/10598686",
+            "src2": "https://en.koreaportal.com/articles/53999/20251026/twice-billboard-200-record-k-pop-girl-group-charts-10th.htm",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2016 年〈Cheer Up〉拿下 Melon Music Awards 與 Mnet Asian Music Awards 的年度歌曲。",
+        "src": "https://www.britannica.com/topic/TWICE",
+        "src2": "https://en.wikipedia.org/wiki/Twice_(group)",
+        "from": "new"
+      },
+      {
+        "f": "2025 年成為第一組在 Billboard 200 有 10 張專輯的 K-pop 女團。",
+        "src": "https://www.koreaherald.com/article/10598686",
+        "src2": "https://en.koreaportal.com/articles/53999/20251026/twice-billboard-200-record-k-pop-girl-group-charts-10th.htm",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "英文維基摘要（fetch 工具回覆）寫『2024 年登上 Billboard 200 冠軍』；Korea Herald 與 koreaportal 寫 2025 年《This Is For》首週第 6 名、《Ten: The Story Goes On》第 11 名、第 10 次上榜，沒有冠軍；該冠軍說法未收。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫只有 twicetagram 的一條與兩張上線簡介（專輯層級），三格靠補查。8 次：維基 Twice (group)、Britannica TWICE、WebSearch（Sixteen 與出道）、維基 Sixteen (TV program)、WebSearch（十週年）、Korea Herald、Type.Set.Brooklyn、koreaportal。兩源皆實際開頁讀到；維基兩條目同站、非獨立。第一條 origin 的成員國籍：維基寫韓國、日本、台灣三地。未收（單源）：2015 年 10 月 20 日以迷你專輯《The Story Begins》與〈Like Ooh-Ahh〉出道（維基單源與搜尋摘要）；《Sixteen》2015 年 5 月 5 日至 7 月 7 日共 10 集，原先預定七人、朴軫永改為九人，Tzuyu 出自觀眾意見、Momo 出自朴軫永個人意見（Sixteen 維基單源）；〈TT〉連續四週登 Gaon 數位榜首、點舞成為亞洲的舞蹈熱潮（維基單源）；2017 年在 Billboard World Albums 與 World Digital Song Sales 同時登頂的首組 K-pop 女團、2019 年首組韓國女團進日本巨蛋巡演（維基單源，屬首次類，Korea Herald 與 koreaportal 未提）；維基 lead 稱她們是『one of the best-selling girl groups of all time』（維基單源）；Britannica 稱她們與 Blackpink 讓女團成為全球音樂產業的主力（單源）；2015 年 MAMA 最佳新人女子團體、被稱『國民女團』接續少女時代（Type.Set.Brooklyn 單源）；2022 年九人全員續約、跨過七年魔咒（Type.Set.Brooklyn 單源）；2021 年首支原創英語單曲、2025 年 Lollapalooza 壓軸（Type.Set.Brooklyn 與搜尋摘要）；〈The Feels〉為第九支破 5 億 YouTube 觀看的 MV（Korea Herald 與 koreaportal 兩源，但屬數字類，未收進 f）。第一條 origin 之外的成員暱稱一律照拉丁藝名。第二條 origin 寫『MAMA 頒獎』一詞其實只有 Type.Set.Brooklyn 一源提到 2015 年 MAMA，寫作層只需寫『2015 年出道』。同名混卡檢查：poolAlbums 五張皆為 TWICE（含日本專輯《&TWICE》），無混卡。"
+  },
+  {
+    "key": "吉田美奈子",
+    "name": "吉田美奈子",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "吉田美奈子 1953 年 4 月 7 日生於埼玉縣大宮市（現在的さいたま市）。",
+            "src": "https://ja.wikipedia.org/wiki/吉田美奈子",
+            "src2": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+            "from": "new"
+          },
+          {
+            "f": "她高中時期結識はっぴいえんど的細野晴臣與松本隆，在他們的牽線與鼓勵下走上職業歌手之路。",
+            "src": "https://ja.wikipedia.org/wiki/吉田美奈子",
+            "src2": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+            "from": "new"
+          },
+          {
+            "f": "她 1973 年發行首張個人專輯《扉の冬》。",
+            "src": "https://ja.wikipedia.org/wiki/吉田美奈子",
+            "src2": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她是橫跨 R&B、靈魂樂、放克與 city pop 的創作歌手，自己作詞作曲，也替別人寫詞。",
+            "src": "https://ja.wikipedia.org/wiki/吉田美奈子",
+            "src2": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+            "from": "new"
+          },
+          {
+            "f": "她替山下達郎的多張專輯寫詞、唱和聲：維基列出《CIRCUS TOWN》（1976）、《SPACY》（1977）與《FOR YOU》（1982）的作詞，〈BOMBER〉則是她作詞並唱和聲。",
+            "src": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+            "src2": "https://otonanoweb.jp/s/magazine/diary/detail/8567?ima=0000&link=ROBO004&cd=feature",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈夢で逢えたら〉是大瀧詠一寫的歌；吉田美奈子 1976 年收在《Flapper》的版本，與 Celia Paul 的版本一起，被視為後世許多歌手翻唱的源頭，這首歌如今已是日本歌謠的標準曲。",
+            "src": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+            "src2": "https://kayokyokuplus.blogspot.com/2012/07/minako-yoshidarats-star-yume-de-aetara.html",
+            "from": "new"
+          },
+          {
+            "f": "1985 年她參與音樂的三得利廣告獲第 33 屆坎城國際廣告影片節銀獎（得獎）。",
+            "src": "https://ja.wikipedia.org/wiki/吉田美奈子",
+            "src2": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1974 年她在荒井由実（《MISSLIM》）的錄音現場與山下達郎初次合作唱和聲，兩人此後成為「ソウルフレンド」，長期互相寫詞、唱和聲。",
+            "src": "https://otonanoweb.jp/s/magazine/diary/detail/8567?ima=0000&link=ROBO004&cd=feature",
+            "src2": "https://bunshun.jp/articles/-/58452",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1973 年發行首張個人專輯《扉の冬》。",
+        "src": "https://ja.wikipedia.org/wiki/吉田美奈子",
+        "src2": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+        "from": "new"
+      },
+      {
+        "f": "1985 年三得利廣告的音樂工作獲坎城國際廣告影片節銀獎。",
+        "src": "https://ja.wikipedia.org/wiki/吉田美奈子",
+        "src2": "https://en.wikipedia.org/wiki/Minako_Yoshida",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "日文維基寫吉田是〈夢で逢えたら〉的『創唱者』；Kayo Kyoku Plus 寫大瀧詠一原本為 Ann Lewis 寫這首歌、不合而作罷，吉田與 Celia Paul 的版本被視為後世翻唱的源頭。兩源對『誰先唱』說法不一，facts 不寫『創唱』，只寫兩版皆是後世翻唱的源頭。",
+      "otonano 把荒井由実誤寫成『荒井由美』；facts 依專輯署名寫荒井由実，網頁字形不採。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "事實庫沒有研究稿，只有《Twilight Zone》《Let's Do It》兩張上線簡介（專輯層級，本層未能獨立核對其中的品番與製作人名，不動）。三格全靠補查。8 次：日文維基、英文維基、WebSearch（日文，評價與再評價）、otonano、文春オンライン、WebSearch（英文）、英文維基〈Yume de Aetara (song)〉（實際開到的是 Dragon Ash 的同名單曲條目，無用）、Kayo Kyoku Plus；另失敗 2 次未取得（everplay.jp 無內容、hacllab0.com 網域解析失敗）。兩源皆實際開頁讀到：日文維基、英文維基、otonano、文春オンライン、Kayo Kyoku Plus；日文與英文維基同站不同語言條目，非獨立。日文維基與 fetch 工具回覆為摘要。人名照原文：吉田美奈子、大瀧詠一、細野晴臣、松本隆、山下達郎、荒井由実（QA 若把『国』等字誤判簡體，保留原名）。三格中的 legacy 不含『後輩點名受她影響』：查到的只有標準曲地位與坎城獎，寫作層不要寫成『影響某某』。未收（單源）：日文維基寫她 1972 年在大瀧詠一專輯以長笛獨奏出道、細野晴臣製作首張《扉の冬》（日文維基單源，另有搜尋摘要）；她曾為西城秀樹、中森明菜、松田聖子提供歌曲（日文維基單源，此為日文維基摘要）；『日本的 Laura Nyro』『放克女王』綽號（英文維基單源）；她以 Laura Nyro 與 Carole King 式的創作歌手為志向（日文維基單源）；2010 年代 city pop 熱潮後重新走紅、2024 年 10 月 Universal Music 再發行六張重製盤（英文維基與搜尋摘要，重製盤未開原頁）；山下達郎在〈Sparkle〉的和聲由她負責（搜尋摘要）；山下自翻《Flapper》歌曲於次年《CIRCUS TOWN》（otonano 單源）；『抜群の声量』『ソウルフルな声質』的評語（otonano 單源）；山下說『あのコーラスは誰？』的軼事與大貫妙子邀請吉田到 Sugar Babe 演出（文春單源）。坎城獎：日文維基寫她的三得利 CM 獲第 33 屆坎城國際廣告影片節銀獎，英文維基只寫 1985 年 Cannes Lions 獎肯定她的商業作品，吉田在該 CM 的確切角色（作曲或演唱）兩源都沒寫清，f 只寫『音樂工作』。同名混卡檢查：poolAlbums 五張皆為吉田美奈子（1973–1980），無混卡。"
+  },
+  {
+    "key": "鄭宜農",
+    "name": "鄭宜農",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "鄭宜農生於宜蘭，父親是台灣導演鄭文堂。",
+            "src": "https://zh.wikipedia.org/wiki/鄭宜農",
+            "src2": "https://persona-media.com/gma-34th-singer-enno-cheng/",
+            "from": "new"
+          },
+          {
+            "f": "2007 年她在父親鄭文堂執導的電影《夏天的尾巴》演出，同時參與編劇與歌曲創作，並以這部片入圍第 44 屆金馬獎最佳新演員（入圍）。",
+            "src": "https://zh.wikipedia.org/wiki/鄭宜農",
+            "src2": "https://taiwancinema.bamid.gov.tw/Staff/StaffContent/?ContentUrl=54799",
+            "from": "new"
+          },
+          {
+            "f": "她 2011 年發行首張個人創作專輯《海王星》，由此走上音樂創作的路；2017 年的第二張個人專輯《Pluto》距首張六年，她自己包辦製作、作詞、作曲與編曲。",
+            "src": "https://zh.wikipedia.org/wiki/鄭宜農",
+            "src2": "https://blow.streetvoice.com/33293/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2022 年的《水逆》是她第一張全台語創作專輯。",
+            "src": "https://zh.wikipedia.org/wiki/鄭宜農",
+            "src2": "https://www.cna.com.tw/news/amov/202307010206.aspx",
+            "from": "new"
+          },
+          {
+            "f": "她說自己原本台語說得不流利，是出於好奇，想用一直在身邊卻不熟悉的語言做些很酷的歌，才開始台語創作。",
+            "src": "https://unbiggie.com/people/artist/2023/07/19/chengenno/",
+            "src2": "https://persona-media.com/gma-34th-singer-enno-cheng/",
+            "from": "new"
+          },
+          {
+            "f": "2025 年的《圓缺》是她第五張專輯、第二張全台語創作專輯；延續她以天文星象貫穿專輯的做法，這回處理月亮的週期，用「圓缺」談生命裡的缺憾與圓滿、聚合與離散。",
+            "src": "https://zh.wikipedia.org/wiki/%E5%9C%93%E7%BC%BA",
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "第 34 屆金曲獎（2023 年），鄭宜農以第一張台語專輯《水逆》拿下最佳台語女歌手與最佳台語專輯兩項（得獎），這是她第一次入圍這兩個獎項就獲獎。",
+            "src": "https://www.cna.com.tw/news/amov/202307010206.aspx",
+            "src2": "https://persona-media.com/gma-34th-singer-enno-cheng/",
+            "from": "new"
+          },
+          {
+            "f": "《圓缺》在 2026 年第 37 屆金曲獎入圍年度專輯、最佳台語專輯與最佳台語女歌手三項（入圍）。",
+            "src": "https://zh.wikipedia.org/wiki/%E5%9C%93%E7%BC%BA",
+            "from": "bank"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年《Pluto》裡的〈Our Pop Song〉是她生涯的第一首對唱歌曲，對唱者是盧凱彤。",
+            "src": "https://blow.streetvoice.com/33293/",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2007 年以《夏天的尾巴》入圍第 44 屆金馬獎最佳新演員（入圍）。",
+        "src": "https://zh.wikipedia.org/wiki/鄭宜農",
+        "src2": "https://taiwancinema.bamid.gov.tw/Staff/StaffContent/?ContentUrl=54799",
+        "from": "new"
+      },
+      {
+        "f": "2023 年第 34 屆金曲獎，《水逆》拿下最佳台語女歌手與最佳台語專輯（得獎）。",
+        "src": "https://www.cna.com.tw/news/amov/202307010206.aspx",
+        "src2": "https://persona-media.com/gma-34th-singer-enno-cheng/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "金馬獎類別名稱：中文維基與部分報導寫『最佳新人獎』，台灣電影網（官方影視資料庫）寫第 44 屆『最佳新演員』；採官方資料庫的『最佳新演員』。",
+      "中文維基寫她 2007 年擔任《夏天的尾巴》女主角；台灣電影網寫『參與演出』、並擔任編劇與歌曲創作；facts 只寫『演出』，不寫『女主角』。",
+      "上線簡介（圓缺）寫入圍第 37 屆金曲獎的年度專輯與最佳台語專輯；事實庫維基條目另有最佳台語女歌手，共三項；簡介沒寫錯、只是少一項，不列 pubIssues。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫有《圓缺》《Pluto》兩份研究稿與五張上線簡介（專輯層級），本層補的是人的層面。8 次：中文維基鄭宜農、WebSearch（第 34 屆金曲）、中央社、小人物 UNBIGGIE、人物誌 PERSONA、WebSearch（夏天的尾巴與金馬）、台灣電影網人物頁、WebSearch（第 37 屆入圍）；另失敗 1 次（Bella.tw 403）。兩源皆實際開頁讀到：中文維基、中央社、UNBIGGIE、人物誌、台灣電影網；中文維基為 fetch 工具摘要。第 37 屆入圍一條與《圓缺》一條的來源只有事實庫的中文維基《圓缺》條目（bank），搜尋摘要另顯示該屆最佳台語女歌手由吳蓓雅獲得、鄭宜農在第三輪評審僅以些微差距落選（政府新聞稿與 Yahoo 頁未開，不收）。未收（單源）：中文維基寫她 1987 年 3 月 19 日生（台灣電影網只寫 1987 年，日期單源，f 不寫）；2013 年組猛虎巧克力樂團擔任主唱（中文維基單源）；2019 年第 30 屆金曲獎入圍最佳作曲人（中文維基單源）；2009 年第 46 屆金馬獎以〈眼淚〉入圍最佳電影原創歌曲（台灣電影網單源）；2016 年 1 月公開談論性傾向、成為樂壇 LGBTQ+ 代表人物（中文維基單源，屬個人生活，未收）；母親是駐唱歌手與名字由來（人物誌單源）；19 歲受加拿大樂團 Stars 啟發、借吉他給 Stars 女主唱、在西門町電影公園首次表演（UNBIGGIE 單源）；她在大學讀中文系（UNBIGGIE 單源）；《水逆》第 34 屆入圍 6 項（最佳台語女歌手、最佳作詞、最佳作曲、年度專輯、年度歌曲、最佳台語專輯，人物誌單源，其餘為搜尋摘要）；得獎感言致敬 MeToo 勇者（中央社單源，另有風傳媒與關鍵評論網搜尋摘要）；人物誌稱歌詞是『文學性的台語』、含蓄隱喻（單源）。《圓缺》的『第五張專輯』『第二張全台語』出自事實庫維基條目，與中文維基本頁的『2025 年推出第五張個人專輯《圓缺》，再次採用全台語創作』一致，故 sound 格的 bank 條目實際得到本次開頁的部分印證，但仍以 bank 標示。人名照原文。同名混卡檢查：poolAlbums 五張皆為台灣音樂人鄭宜農（2011–2025），無混卡。"
   }
 ]
