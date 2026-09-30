@@ -575,5 +575,489 @@
     "failedFetches": 0,
     "status": "full",
     "notes": "補查 7 次：維基 Derek Bailey (guitarist)、WebSearch（訃聞）、The Wire 追思、PleaseKillMe、WebSearch（衛報／獨立報，未找到）、David Toop 訃聞（samadhisound 轉載）、BOMB 編輯悼文。失敗請求 0。身分確認：poolAlbums 為《Aida》1980、《Solo Guitar Volume 1》1971、《Ballads》2002，皆為吉他手 Derek Bailey，無同名混卡。Incus 一條 from bank：事實庫 src 為維基 Incus Records（創辦人四人、1970 年），第二源 Bomb 只支持『英國第一家樂手自營獨立廠牌』與『與 Tony Oxley 共創』。單源、未收 facts：生日 1930 年 1 月 29 日與逝世地倫敦（維基單源；PleaseKillMe 只有年份）；他是三代音樂家、隨叔叔 George Wing 與 C. H. C. Biltcliffe 學琴（維基單源，搜尋摘要另有 George Wing 與 John Duarte，兩者不一致）；1950 至 60 年代初在倫敦做錄音室與夜總會、管弦樂演出、曾參與女王御前演出（PleaseKillMe 單源）；1960 年代中期研究 Webern，稱自己的做法為 instant composition，稱自由即興『offers more playing per cubic second than any other type of music making』（PleaseKillMe 單源）；Toop 稱他也受 Webern、Satie 與 Bill Evans、Lennie Tristano 影響（Toop 單源）；Marc Ribot 稱他是自由即興的創始者之一，或依人而異是『the』創始者（Bomb 單源、具名引述），並稱他是後輩心中『gold standard of musical integrity』、自由即興技術後來成為音樂學院課程（Bomb 單源）；George Lewis 稱其著作證明實驗音樂也能吸引廣大讀者、Alan Licht 談其『低調的決心』（The Wire 單源）；Henry Kaiser 與 Thurston Moore 也承認受影響（PleaseKillMe 單源）；Company 1976 至 1994 年、Music Improvisation Company 1968 至 1971 年、Spontaneous Music Ensemble 1966 年、Iskra 1903（維基單源）；著作 1992 年被改編成電視系列（維基單源）；晚年腕隧道症候群與運動神經元疾病並調整演奏方式（維基單源）。origin 第 2 條『替電視節目與綜藝樂團伴奏』：Wire 寫電視 showband 與 Morecambe & Wise、Toop 寫 Opportunity Knocks，兩源指涉不同節目但都屬電視商業伴奏，寫作層寫到『電視節目與綜藝伴奏』即可。Toop 訃聞轉載於 samadhisound.com，原刊物待查（標題與作者為 David Toop、2006 年 1 月 2 日），Wire 與 Toop 為兩份獨立文字。"
+  },
+  {
+    "key": "diana krall",
+    "name": "Diana Krall",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Diana Krall 1964 年 11 月 16 日生於加拿大卑詩省 Nanaimo。",
+            "src": "https://en.wikipedia.org/wiki/Diana_Krall",
+            "src2": "https://www.canadaswalkoffame.com/inductees/diana-krall/",
+            "from": "new"
+          },
+          {
+            "f": "她 4 歲開始學鋼琴，15 歲就在餐廳職業演出。",
+            "src": "https://en.wikipedia.org/wiki/Diana_Krall",
+            "src2": "https://www.canadaswalkoffame.com/inductees/diana-krall/",
+            "from": "new"
+          },
+          {
+            "f": "她的父親在家彈鋼琴，她也從父親的唱片裡學會 Fats Waller 的曲子。",
+            "src": "https://en.wikipedia.org/wiki/Diana_Krall",
+            "src2": "https://www.britannica.com/biography/Diana-Krall",
+            "from": "new"
+          },
+          {
+            "f": "她 1981 至 1983 年在波士頓 Berklee College of Music 就讀，之後到洛杉磯向 Jimmy Rowles 等人私下學習。",
+            "src": "https://www.thecanadianencyclopedia.ca/en/article/diana-krall-emc",
+            "src2": "https://www.britannica.com/biography/Diana-Krall",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Krall 演出時鋼琴與歌唱並重。",
+            "src": "https://www.thecanadianencyclopedia.ca/en/article/diana-krall-emc",
+            "src2": "https://www.britannica.com/biography/Diana-Krall",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她 2004 年入選 Canada's Walk of Fame；官方介紹稱她讓世人看到爵士樂手可以擁有大眾吸引力，又不放棄爵士的根基。",
+            "src": "https://www.canadaswalkoffame.com/inductees/diana-krall/",
+            "src2": "https://en.wikipedia.org/wiki/Diana_Krall",
+            "from": "new"
+          },
+          {
+            "f": "她獲頒加拿大勳章（Order of Canada）。",
+            "src": "https://en.wikipedia.org/wiki/Diana_Krall",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/diana-krall-emc",
+            "from": "new"
+          },
+          {
+            "f": "她也是卑詩勳章（Order of British Columbia）的獲頒者。",
+            "src": "https://www.canadaswalkoffame.com/inductees/diana-krall/",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/diana-krall-emc",
+            "from": "new"
+          },
+          {
+            "f": "她憑《When I Look in Your Eyes》在 1999 年得葛萊美獎，2002 年又以《Live in Paris》得葛萊美最佳爵士人聲專輯。",
+            "src": "https://www.thecanadianencyclopedia.ca/en/article/diana-krall-emc",
+            "src2": "https://www.britannica.com/biography/Diana-Krall",
+            "from": "new"
+          },
+          {
+            "f": "2002 年的 Juno Awards 上她一次拿下三個獎，包括年度藝人與年度專輯。",
+            "src": "https://www.thecanadianencyclopedia.ca/en/article/diana-krall-emc",
+            "src2": "https://www.canadaswalkoffame.com/inductees/diana-krall/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年她發行首張專輯《Stepping Out》。",
+            "src": "https://www.britannica.com/biography/Diana-Krall",
+            "src2": "https://www.canadaswalkoffame.com/inductees/diana-krall/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年發行首張專輯《Stepping Out》。",
+        "src": "https://www.britannica.com/biography/Diana-Krall",
+        "src2": "https://www.canadaswalkoffame.com/inductees/diana-krall/",
+        "from": "new"
+      },
+      {
+        "f": "2004 年入選 Canada's Walk of Fame。",
+        "src": "https://www.canadaswalkoffame.com/inductees/diana-krall/",
+        "src2": "https://en.wikipedia.org/wiki/Diana_Krall",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫對 Diana Krall 無研究稿也無上線簡介，無衝突。",
+      "葛萊美座數：維基寫共兩座、搜尋摘要另有來源寫三座，Walk of Fame 寫《When I Look in Your Eyes》拿兩座葛萊美；facts 不寫座數。",
+      "結婚年：維基與 Britannica 寫 2003 年（維基 12 月 6 日）、Canadian Encyclopedia 寫 2004 年，兩源不一致，不收。"
+    ],
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "補查 5 次：維基 Diana Krall、Britannica、WebSearch（獎項與勳章）、Canadian Encyclopedia、Canada's Walk of Fame。失敗請求 0。身分確認：poolAlbums 為《The Look of Love》2001、《Stepping Out》1993、《From This Moment On》2006，皆為加拿大爵士歌手兼鋼琴手 Diana Krall，無同名混卡。三處出處的性質：Canada's Walk of Fame 為官方機構自述、Canadian Encyclopedia 為加拿大歷史協會出版，兩者與維基、Britannica 彼此獨立。單源，未收 facts：Ray Brown 1980 年代初賞識並提攜她（維基單源，搜尋摘要另有未開頁的來源）；父親是會計師、母親是小學老師並在社區合唱團唱歌（維基單源）；Krall 是『唯一有八張專輯首週登上 Billboard 爵士專輯榜冠軍的爵士歌手』、全球賣出逾 1500 萬張、八座 Juno（維基單源；Juno 八座另有搜尋摘要提及，未開頁）；Britannica 稱她『sultry, unforced contralto voice』與優雅的鋼琴、借鏡冷爵士、伴奏簡約；1996 年《All for You》向 Nat King Cole 三重奏致敬並帶來突破（Britannica 單源）；《When I Look in Your Eyes》（1998 年發行）被 Canadian Encyclopedia 稱為當時最暢銷的爵士錄音之一（單源），Walk of Fame 稱它在 Billboard 爵士榜第 1 名 52 週（單源）；《The Look of Love》（2001）首週在美國賣 9.5 萬張、Billboard 200 第 9 名、加拿大四白金（Walk of Fame 單源）；Order of British Columbia 2000 年（Walk of Fame 單源）；Order of Canada 官階與年份（維基寫 Officer、2005，搜尋摘要同；Canadian Encyclopedia 只寫 holds the Order of Canada，故 facts 只寫獲頒者、不寫年份與官階）；1988 至 1990 年在多倫多向 Don Thompson 學習、1990 年遷紐約（Canadian Encyclopedia 單源；『1990 年遷紐約』已進 sound，該條 Britannica 支持的只有『鋼琴與歌唱並重』，遷紐約年份為 Canadian Encyclopedia 單源，寫作層寫『並重』即可，不寫 1990）；與 Ray Charles 2004 年合唱〈You Don't Know Me〉（Walk of Fame 單源）。"
+  },
+  {
+    "key": "dizzy reece",
+    "name": "Dizzy Reece",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Dizzy Reece（Alphonso Son Reece）1931 年 1 月 5 日生於牙買加 Kingston。",
+            "src": "https://en.wikipedia.org/wiki/Dizzy_Reece",
+            "src2": "https://www.bluenote.com/artist/dizzy-reece/",
+            "from": "new"
+          },
+          {
+            "f": "他就讀牙買加以音樂著稱的 Alpha Boys School，同校有薩克斯風手 Joe Harriott；他 14 歲改吹小號。",
+            "src": "https://en.wikipedia.org/wiki/Dizzy_Reece",
+            "src2": "https://bandonthewall.org/2018/11/dizzy-reece-history-part-one/",
+            "from": "new"
+          },
+          {
+            "f": "1948 年他搭 Empire Windrush 前往英國，屬於 Windrush 世代；是母親促成他出國。",
+            "src": "https://bandonthewall.org/2018/11/dizzy-reece-history-part-one/",
+            "src2": "http://dizzyreece.blogspot.com/",
+            "from": "new"
+          },
+          {
+            "f": "1950 年代他在英國與歐陸各地演出，在巴黎待了相當長的時間，與旅歐美國樂手 Don Byas 等人合作。",
+            "src": "https://en.wikipedia.org/wiki/Dizzy_Reece",
+            "src2": "https://www.bluenote.com/artist/dizzy-reece/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1959 年 6 月 15 日《Billboard》評《Blues in Trinity》，稱 Reece 是英國來的小號手，是很久以來從倫敦出來最好的樂手之一，有品味、有音色，吹的每一句都有意思。",
+            "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1959/Billboard%201959-06-15.pdf",
+            "from": "bank"
+          },
+          {
+            "f": "1970 年他錄了偏實驗取向的《From In to Out》。",
+            "src": "https://en.wikipedia.org/wiki/Dizzy_Reece",
+            "src2": "https://bandonthewall.org/2018/12/dizzy-reece-history-part-two/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Miles Davis 與 Sonny Rollins 都賞識 Reece。",
+            "src": "https://en.wikipedia.org/wiki/Dizzy_Reece",
+            "src2": "https://www.bluenote.com/artist/dizzy-reece/",
+            "from": "new"
+          },
+          {
+            "f": "他 1959 年底移居紐約後，跨種族的婚姻在當時的紐約遭到敵意與歧視。",
+            "src": "https://bandonthewall.org/2018/11/dizzy-reece-history-part-one/",
+            "src2": "http://dizzyreece.blogspot.com/",
+            "from": "new"
+          },
+          {
+            "f": "1980 年代之後 Reece 多半在檯面下（below the radar）工作，很少公開錄音。",
+            "src": "https://bandonthewall.org/2018/12/dizzy-reece-history-part-two/",
+            "src2": "http://dizzyreece.blogspot.com/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Blues in Trinity》1958 年 8 月 24 日錄於倫敦的 Decca Studios，1959 年 6 月上市；Blue Note 自 1953 年起幾乎只在 Rudy Van Gelder 的 Hackensack 錄音室錄音，這張是反常的例外。",
+            "src": "https://en.wikipedia.org/wiki/Blues_in_Trinity",
+            "from": "bank"
+          },
+          {
+            "f": "1959 年他從英國移居紐約。",
+            "src": "https://www.bluenote.com/artist/dizzy-reece/",
+            "src2": "https://bandonthewall.org/2018/11/dizzy-reece-history-part-one/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1948 年搭 Empire Windrush 抵英，後在歐洲活動約十年。",
+        "src": "https://en.wikipedia.org/wiki/Dizzy_Reece",
+        "src2": "https://bandonthewall.org/2018/11/dizzy-reece-history-part-one/",
+        "from": "new"
+      },
+      {
+        "f": "1958 年在倫敦錄下 Blue Note 首作《Blues in Trinity》，1959 年上市並移居紐約。",
+        "src": "https://www.bluenote.com/artist/dizzy-reece/",
+        "src2": "https://en.wikipedia.org/wiki/Dizzy_Reece",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫 Blues in Trinity 研究稿（維基：1958 年 8 月 24 日 Decca Studios 錄音）與上線簡介一致，本位第二源 Blue Note 藝人頁寫 1958 年在倫敦錄音、1959 年上市，相符，採用。",
+      "1962 年後的空窗：Band on the Wall 寫 1962 年 Blue Note 合約到期、直到 1967–68 年才再回到舞台；維基列《From In to Out》為 1970 年。兩源對空窗長短不一致，facts 不寫空窗年數；『vanished for 20 years』的說法只見搜尋摘要（All About Jazz），未開頁，不收。",
+      "《Possession, Exorcism, Peace》：維基寫 1977 年，Band on the Wall 寫『1975 年前』；不一致，不收。",
+      "Alpha Boys School 就讀與離校：Band on the Wall 寫約 1943 年入學、blog 寫 1945 年離校，維基只寫就讀；facts 不寫年份。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "補查 8 次：維基 Dizzy Reece、WebSearch（生平）、Band on the Wall 第一篇、Blue Note 藝人頁、WebSearch（1960 年代空窗）、Band on the Wall 第二篇（第一個 URL 404 未計）、dizzyreece.blogspot.com、WebSearch（2023 年 FONT 獎項，只回摘要）。失敗請求 1 次（Band on the Wall 第二篇的錯誤 URL 404）。身分確認：poolAlbums 為《Blues in Trinity》1959、《Star Bright》1960、《Soundin\\' Off》1960，皆為牙買加出身的小號手 Dizzy Reece，無同名混卡。仍在世（維基寫 95 歲），origin 不用逝世資訊。dizzyreece.blogspot.com 為個人部落格式傳記，性質偏粉絲／半官方，可信度低於維基與 Blue Note，作第二源者已在 notes 標明；與 Band on the Wall 各自獨立寫成。單源、未收 facts：他 1943 年前後入 Alpha Boys School、1947 年 16 歲隨 Jack Brown's Swing Stars 成為全職樂手（Band on the Wall 與 blog 各寫一部分、年份不一致）；1949 年見到巴黎首屆爵士節，有 Charlie Parker 與 Miles Davis（Band on the Wall 單源）；1954 年秋進 Tony Crombie 樂團、1955 年 5 月《A New Star》為首張領銜錄音、1957 年《Progress Report》（維基與 Band on the Wall 各有一部分，日期未核）；Miles Davis 對 Nat Hentoff 說『there\\'s a great trumpeter over in England: a guy who\\'s got soul and originality』（Band on the Wall 單源，標記為 allegedly）；Tony Hall 說他人格與演奏一樣真誠、他被稱為『英國爵士的頑童』、1959 年是第一位被美國唱片公司獨家簽下的英國爵士明星（blog 單源，『第一位』類宣稱不收）；吹法受印度與阿拉伯音樂研究影響、用四分音與八分音（blog 單源）；紐約時期婚姻破裂、妻子帶孩子回英國（blog 單源）；1960 年代中期改寫爵士鼓教材《Contemporary Jazz Drum Suite》（1966）、拍 30 分鐘短片《The Pressure Cooker By Night》（1967）（Band on the Wall 單源）；1968 年隨 Dizzy Gillespie Reunion Big Band 巡演歐洲、1969 年與 Dexter Gordon、Slide Hampton 在哥本哈根演出、Hank Mobley《The Flip》（Band on the Wall 與搜尋摘要）；1979 年 10 月他籌辦首屆免費紐約爵士節（Band on the Wall 單源）；『I wasn\\'t particularly interested in the prostitution』（blog 單源，不轉述）；2023 年獲 Festival of New Trumpet Music 的 Award of Recognition（維基單源，搜尋摘要另有 FONT 官網與維基節慶條目未開頁）；維基稱他『often identified as one of jazz\\'s great trumpet players』（單源）。legacy 格的人物故事（空窗、少錄音）兩源只湊到概略；若寫作層要寫足細節，建議主線再補一輪針對 1962 至 1970 年的查證（Jazzwise 專文 https://www.jazzwise.com/features/article/dizzy-reece-s-legacy-from-windrush-to-new-york 出現在搜尋結果、未開頁）。"
+  },
+  {
+    "key": "django reinhardt",
+    "name": "Django Reinhardt",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Django Reinhardt 1910 年 1 月 23 日生於比利時 Liberchies，是 Manouche 羅姆（Romani）家庭出身，在巴黎近郊的營地長大。",
+            "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "src2": "https://www.newworldencyclopedia.org/entry/Django_Reinhardt",
+            "from": "new"
+          },
+          {
+            "f": "他小時候學小提琴與班鳩吉他。",
+            "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "src2": "https://www.newworldencyclopedia.org/entry/Django_Reinhardt",
+            "from": "new"
+          },
+          {
+            "f": "他最早的錄音是彈班鳩吉他替手風琴手與歌手伴奏。",
+            "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "from": "bank"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1928 年一場篷車火災燒傷他，左手受損，醫生說他無法再彈吉他；他改以食指與中指為主，發展出自己的一套指法。",
+            "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "src2": "https://www.newworldencyclopedia.org/entry/Django_Reinhardt",
+            "from": "new"
+          },
+          {
+            "f": "他與小提琴家 Stéphane Grappelli 1934 年在巴黎組成 Quintette du Hot Club de France，那是最早以吉他為主奏樂器演奏爵士的樂團之一。",
+            "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "from": "bank"
+          },
+          {
+            "f": "他生涯的最後一批錄音，與一群更年輕、更現代的法國樂手一起，以 bebop 語彙彈放大音量的吉他。",
+            "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "B.B. King、Carlos Santana、Chet Atkins 等後輩音樂人都被記載為受 Django 啟發。",
+            "src": "https://press.umich.edu/Blog/2010/01/He-inspired-B.B.-King-and-Carlos-Santana-celebrate-100-years-of-Django-Reinhardt",
+            "src2": "https://www.newworldencyclopedia.org/entry/Django_Reinhardt",
+            "from": "new"
+          },
+          {
+            "f": "他最流行的作品成了吉普賽爵士的標準曲，包括〈Minor Swing〉〈Daphne〉〈Belleville〉〈Djangology〉〈Swing '42〉與〈Nuages〉；吉他手 Frank Vignola 說世界上幾乎每一位重要的流行音樂吉他手都受過他的影響。",
+            "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "from": "bank"
+          },
+          {
+            "f": "二戰期間他留在被德軍占領的法國；當時他是巴黎最有名的爵士樂手。",
+            "src": "https://www.wearethemighty.com/music/django-reindhardt-wwii-gypsy-jazz/",
+            "src2": "https://thesocietypages.org/socimages/2012/03/12/how-django-reinhardt-survived-world-war-ii/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1946 年他隨 Duke Ellington 的樂團巡演美國，這是他唯一一次赴美。",
+            "src": "https://www.britannica.com/biography/Django-Reinhardt",
+            "src2": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "from": "new"
+          },
+          {
+            "f": "1953 年 5 月 16 日他因腦溢血過世，得年 43 歲。",
+            "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+            "src2": "https://www.newworldencyclopedia.org/entry/Django_Reinhardt",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1928 年篷車火災後改以食指與中指發展出新指法。",
+        "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+        "src2": "https://www.newworldencyclopedia.org/entry/Django_Reinhardt",
+        "from": "new"
+      },
+      {
+        "f": "1934 年與 Stéphane Grappelli 組成 Quintette du Hot Club de France。",
+        "src": "https://en.wikipedia.org/wiki/Django_Reinhardt",
+        "src2": "https://www.britannica.com/biography/Django-Reinhardt",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫研究稿（維基）與上線簡介（1928 至 1953 年錄過九百多面、1910 年生於比利時、1934 年與 Grappelli 組 Hot Club、1953 年 5 月 16 日腦溢血）與本位查證一致，無衝突。",
+      "與 Grappelli 的相識：維基寫 1931 年相識、New World Encyclopedia 寫 1934 年由貝斯手 Louis Vola 引介，兩源不一致，facts 只寫 1934 年組團，不寫相識時間。",
+      "火災傷勢：維基寫左手第四與第五指嚴重受損、Britannica 寫『兩根手指』失去功能；facts 只寫『左手受損』，不寫指位。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "補查 8 次：維基 Django Reinhardt、Britannica、WebSearch（後輩影響與二戰）、密西根大學出版社部落格、Guitar World（只回導覽、取不到內文，仍計入）、New World Encyclopedia、Sociological Images、We Are The Mighty。失敗請求 0。身分確認：poolAlbums 為《Djangology》1961、《Django Reinhardt on Vogue – Complete Edition (1934–1951)》1951、《The Great Artistry of Django Reinhardt》1953，皆為吉他手 Django Reinhardt，無同名混卡。bank 三條（最早錄音、Hot Club 最早以吉他為主奏、最後錄音用放大音量電吉他、標準曲與 Vignola 的話）為事實庫維基原句，逝世日條第二源 New World Encyclopedia 寫 1953 年 5 月 16 日腦溢血於 Fontainebleau 自宅外，一致。單源、未收 facts：14 歲起在巴黎舞廳替手風琴手 Guerino 伴奏、火災發生於 18 歲、為深夜返家時打翻蠟燭、燒傷面積半身、兄弟 Joseph 送他新吉他（New World Encyclopedia 單源）；火災日期 1928 年 11 月 2 日、左手第四與第五指（維基單源）；Britannica 稱他開創以旋律即興為底的獨奏（當時吉他手多用和弦伴奏）、風格融合 Roma 與爵士（Britannica 單源）；Jeff Beck 稱他是『the most astonishing guitar player ever』（維基單源，搜尋摘要另有 Acoustic Guitar 等頁未開）；Chet Atkins 稱 Django 是他的主要影響（維基單源；Atkins 開車到芝加哥看 Django 與 Ellington 演出並索取簽名，只見搜尋摘要）；Rex Stewart 稱『Django was to the guitar what Louis Armstrong was to the trumpet or Art Tatum to the piano』並稱他啟發全世界成百上千名吉他手（密西根大學出版社單源）；Wes Montgomery、John McLaughlin、Vernon Reid 也被列為受影響者，戰後 Charlie Byrd、Les Paul、Barney Kessel 曾去找他（密西根大學單源）；Jimi Hendrix 的 Band of Gypsys 名稱取自 Django、多位音樂人以 Django 為子取名、Django 網頁框架（New World Encyclopedia 單源，並列名單中 Hendrix 是否受其影響屬泛稱，建議寫作層不寫）；Luftwaffe 軍官『Doktor Jazz』（Dietrich Schulz-Köhn）的庇護（New World Encyclopedia 提到 Doktor Jazz、We Are The Mighty 只有未具名軍官的照片說明、Sociological Images 留言只說『some individuals』，皆未兩源支持完整說法，不收；且『倖存的原因』各文說法不同）；1943 年娶 Sophie Ziegler 生子 Babik（NWE 單源）；每年 Django 音樂節（維基與搜尋摘要提及 Samois-sur-Seine 自 1968 年起，未開頁）。二戰『巴黎最有名的爵士樂手』一條兩源都引用同一位傳記作者 Michael Dregni 的話，屬非獨立。人物故事細節（火災、指法重建、戰時）多半單源，寫作層若要寫足，建議只寫兩源共同支持的骨架：火災傷及左手、以食指與中指重建指法、1934 年 Hot Club、留在占領下的法國、1946 年赴美、1953 年腦溢血過世。"
+  },
+  {
+    "key": "dollar brand",
+    "name": "Dollar Brand",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Dollar Brand（後來的 Abdullah Ibrahim）本名 Adolph Johannes Brand，1934 年 10 月 9 日生於南非開普敦，在混居的 District Six 街區長大；該街區後來在種族隔離下被拆毀。",
+            "src": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+            "src2": "https://theconversation.com/pianist-abdullah-ibrahim-crafted-a-magnificent-new-culture-for-south-africa-155059",
+            "from": "new"
+          },
+          {
+            "f": "他的母親與祖母是教會裡的鋼琴手與歌手；他 7 歲開始學鋼琴。",
+            "src": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+            "src2": "https://www.arts.gov/honors/jazz/abdullah-ibrahim",
+            "from": "new"
+          },
+          {
+            "f": "他 15 歲成為職業樂手。",
+            "src": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+            "src2": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他被視為 Cape jazz（開普爵士）的代表人物，把美國 bebop 與爵士，和南非的 marabi、mbaqanga 等本地音樂揉在一起。",
+            "src": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+            "src2": "https://theconversation.com/pianist-abdullah-ibrahim-crafted-a-magnificent-new-culture-for-south-africa-155059",
+            "from": "new"
+          },
+          {
+            "f": "〈Mannenberg〉1974 年錄成。",
+            "src": "https://en.wikipedia.org/wiki/Mannenberg",
+            "src2": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Mannenberg〉成為南非反種族隔離運動的『非官方國歌』。",
+            "src": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+            "src2": "https://www.arts.gov/honors/jazz/abdullah-ibrahim",
+            "from": "new"
+          },
+          {
+            "f": "據稱曼德拉稱他為『our Mozart』（我們的莫札特）。",
+            "src": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+            "src2": "https://www.democracynow.org/2026/6/16/headlines/south_african_pianist_abdullah_ibrahim_who_wrote_anti_apartheid_anthem_dies_at_91",
+            "from": "new"
+          },
+          {
+            "f": "1994 年曼德拉就任南非首位黑人總統時，他在就職典禮上演出。",
+            "src": "https://www.democracynow.org/2026/6/16/headlines/south_african_pianist_abdullah_ibrahim_who_wrote_anti_apartheid_anthem_dies_at_91",
+            "src2": "https://theconversation.com/pianist-abdullah-ibrahim-crafted-a-magnificent-new-culture-for-south-africa-155059",
+            "from": "new"
+          },
+          {
+            "f": "他獲選美國國家藝術基金會的 NEA Jazz Master。",
+            "src": "https://www.arts.gov/honors/jazz/abdullah-ibrahim",
+            "src2": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1959 年他加入 Jazz Epistles，成員有 Hugh Masekela、Jonas Gwangwa 與 Kippie Moeketsi。",
+            "src": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+            "src2": "https://theconversation.com/pianist-abdullah-ibrahim-crafted-a-magnificent-new-culture-for-south-africa-155059",
+            "from": "new"
+          },
+          {
+            "f": "Jazz Epistles 錄下的《Jazz Epistle, Verse 1》被視為南非黑人樂手的第一張爵士專輯。",
+            "src": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+            "src2": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+            "from": "new"
+          },
+          {
+            "f": "1962 年他離開南非、落腳瑞士蘇黎世，Duke Ellington 在那裡賞識他，並為他製作專輯。",
+            "src": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+            "src2": "https://www.arts.gov/honors/jazz/abdullah-ibrahim",
+            "from": "new"
+          },
+          {
+            "f": "1968 年他改信伊斯蘭教，從 Dollar Brand 改名為 Abdullah Ibrahim。",
+            "src": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+            "src2": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+            "from": "new"
+          },
+          {
+            "f": "他 2026 年 6 月過世，享年 91 歲。",
+            "src": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+            "src2": "https://www.democracynow.org/2026/6/16/headlines/south_african_pianist_abdullah_ibrahim_who_wrote_anti_apartheid_anthem_dies_at_91",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1962 年離開南非，在蘇黎世受 Duke Ellington 賞識。",
+        "src": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+        "src2": "https://www.arts.gov/honors/jazz/abdullah-ibrahim",
+        "from": "new"
+      },
+      {
+        "f": "1974 年錄下〈Mannenberg〉，成為反種族隔離運動的非官方國歌。",
+        "src": "https://en.wikipedia.org/wiki/Mannenberg",
+        "src2": "https://www.arts.gov/honors/jazz/abdullah-ibrahim",
+        "from": "new"
+      },
+      {
+        "f": "1968 年改信伊斯蘭教並改名 Abdullah Ibrahim。",
+        "src": "https://en.wikipedia.org/wiki/Abdullah_Ibrahim",
+        "src2": "https://www.britannica.com/biography/Abdullah-Ibrahim",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫無研究稿。上線簡介（Jazz Epistles『1959 年錄下』）：Britannica 寫 1960 年錄製《Jazz Epistle Verse 1》，維基寫 Jazz Epistles 1959–1960 年活動並錄下第一張黑人南非爵士 LP，兩源對錄音年不一致；本位 facts 只寫『1959 年加入樂團』，不寫錄音年。簡介的『公認第一張黑人樂團專輯』與兩源『第一張南非黑人爵士專輯』一致。",
+      "NEA Jazz Master 年份：NEA 官網與 Britannica 寫 2019、維基寫 2018，兩源不一致，facts 不寫年份。",
+      "Ellington 相識時間：維基寫 1963 年 2 月於蘇黎世、NEA 寫 1962 年於瑞士發現他，facts 不寫相識時間，只寫 1962 年他離開南非、落腳蘇黎世。",
+      "1968 年後的行蹤：維基與 Britannica 對返回南非與再赴紐約的年份說法不同（NEA：1968 年返非洲、索韋托事件後 1976 年回紐約），不收。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "補查 8 次：維基 Abdullah Ibrahim、Britannica、WebSearch（訃聞）、Democracy Now、維基 Mannenberg、WebSearch（生平）、arts.gov NEA、The Conversation。失敗請求 1 次（NPR 訃聞 503）。身分確認：poolAlbums 為《African Piano》1970、《African Space Program》1974、《Dollar Brand Plays Sphere Jazz / Jazz Epistle – Verse 1》2015，皆為南非鋼琴手 Dollar Brand（Abdullah Ibrahim），無同名混卡。⚠ 逝世時間：維基寫 2026 年 6 月 15 日於德國 Prien am Chiemsee 過世、享年 91；Democracy Now 頁面寫享年 91 但未載日期與地點（網址日期 2026/6/16）；搜尋摘要另顯示 NPR 與 Legacy.com 訃聞標題日期 2026 年 6 月 15 日，NPR 頁面 503 未開。因此死亡日期與地點只有維基完整；facts 只寫『2026 年 6 月、享年 91 歲』，請主線在本機核對後再決定寫作層是否採用（今天為 2026 年 9 月 30 日，新聞離現在約三個半月）。單源、未收 facts：他的『Dollar』綽號來自二戰期間駐開普敦的美軍（搜尋摘要單源）；祖父母撫養、父親為 Sotho 人並在他四歲時遇害（Britannica 單源）；除鋼琴外學過長笛、薩克斯風與大提琴（Britannica 單源）；1958 年組 Dollar Brand Trio（Britannica、搜尋摘要）；受 Thelonious Monk 與 Duke Ellington 影響（維基單源）；他成長中吸收 marabi、mbaqanga、AME 教會福音、拉格與美國爵士（維基單源）；1964 年《Duke Ellington Presents the Dollar Brand Trio》（Britannica 單源）；〈Mannenberg〉1974 年 6 月在開普敦錄音室由 Rashid Vally 製作、一次錄成（維基 Mannenberg 單源，搜尋摘要另提『14 分鐘一次錄成』）、賣出約 4.3 萬張、Basil Coetzee 與 Robbie Jansen 等參與、以 Manenberg 社區命名以紀念 District Six 的強制遷離、依 Ibrahim 回憶 1980 年唱片被偷渡進羅本島並被曼德拉聽到後說『Liberation is near』（維基 Mannenberg 單源，且屬 Ibrahim 自述）；Democracy Now 稱 Mannenberg 據傳在曼德拉獄中給予啟發、他錄過逾 70 張唱片、1994 年在曼德拉就職典禮演出（就職典禮已放 facts，兩源）；The Conversation 稱 Mannenberg 是南非爵士史上最具代表性的作品、1990 年見曼德拉受其鼓勵回國、1999 年在開普敦成立音樂學院（單源）；Order of Ikhamanga（銀級，2009 年）與 Witwatersrand 榮譽博士（維基單源）；Britannica 提到 1976 年索韋托事件後他又回紐約、1990 年代初種族隔離結束後返國（單源）。『曼德拉稱他 our Mozart』兩源皆用『據稱』語氣，寫作層須寫成『據稱』。『非官方國歌』：維基寫給整個南非，NEA 寫給南非黑人，facts 用維基的『反種族隔離運動的非官方國歌』表述較保守。"
   }
 ]
