@@ -755,5 +755,437 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "本位補查 8 次：日文維基角松敏生、英文維基 Toshiki Kadomatsu、現代ビジネス報導（gendai.media，與竹内まりや共用，本位也開頁讀過）、WebSearch（Night Tempo 與角松敏生）、英文維基 Night Tempo、JASRAC『作家で聴く音楽 角松敏生』inner1／inner3／index 三頁（Shift_JIS 編碼，第一次抓取亂碼，另以 cp932 重新解碼各再抓一次；同一批頁面的重複請求，未取得新頁面資訊）。實際重複請求 3 次，未計入上限但如實記於此。上限 8 次以 8 頁計。兩源說明：日英文維基同站不同語言版本，非獨立；Night Tempo 英文維基與現代ビジネス報導很可能同源於同一則訪談，非獨立；JASRAC 頁面是本人訪談（一手）與官方簡介。JASRAC 與日文維基的『簡介』文字相近，可能同源，寫作層以『JASRAC 訪談中他說』引用。單源放 notes：1988 年〈You're My Only Shinin' Star〉獲第 30 回日本唱片大賞金賞，得獎者是中山美穂（日文維基）；1985 年《GOLD DIGGER》轉向紐約風格舞曲；V6 同一時期也翻唱〈WAになっておどろう〉（日文維基）；JASRAC 訪談：他小時候氣喘體弱被欺負，彈吉他讓同學刮目相看後霸凌消失、氣喘也不再發作；最初憧れ Beatles，後來被『はっぴいえんど是日本的 Beatles』這句話吸引而聽はっぴいえんど，受到衝擊，中三起自己寫日文原創曲；他在大學社團當某歌手的伴奏，製作人要他錄 demo 投稿比賽落選，另一位製作人從落選帶中發現他的曲子直接打電話問要不要出片；首張專輯錄音有村上ポンタ秀一、後藤次利等偶像級樂手，自覺歌唱力不足而有『vocal 情結』；前兩張專輯銷量不佳，之後轉換事務所，第三張《ON THE CITY SHORE》第一次由他自己總製作並自己做 vocal directing，是他第一次進入 Oricon 榜（第 21 名）；AGHARTA 起初是『若角松敏生與錄音室高手隱名出道會不會成話題』的嘗試，事前身分洩漏、初回一萬張很快賣完；經 NHK《みんなのうた》走紅，也成為長野冬季奧運的形象曲並在閉幕式演出（他堅持現場演奏）；『長万部太郎』取自由利徹的『おしゃ、まんべ』梗；他從 1988 年《Before The Daylight》起用電腦編曲，因此改用鍵盤寫曲；他不喜歡被『城市流行』一概而論（日文維基單源，2008 年 ODAKYU SOUND EXPRESS 發言；日文維基註釋）；日文維基單源：1984 年決別過去所有影響、長期滯留紐約，1985 年《GOLD DIGGER》取入 scratch 與 rap；1987 年首次做電視劇主題曲時被報導為『完全不上電視的謎樣創作歌手』；他與中山美穂的製作關係（中山是杏里的粉絲，看上他為杏里做的專輯而請他寫歌）；1986 年《SUMMER BREEZE》提供 3 首；1987 年〈CATCH ME〉為中山首支 Oricon 冠軍。英文維基單源：他是 city pop 先驅之一；製作的杏里《Timely!!》與中山美穂《Catch the Nite》登上 Oricon 週榜第 1；每 5 年舉辦週年演唱會。『先驅』為英文維基自述，未直接收進 facts。人名照原文；QA 若把『内』『来』『国』『楽』誤判為簡體，皆為日文人名／曲名原字。"
+ },
+ {
+  "key": "譚詠麟",
+  "name": "譚詠麟",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1950 年 8 月 23 日生於香港北角，父親譚江柏是足球員。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     },
+     {
+      "f": "他中學時期就玩樂團，後來成為溫拿樂隊兩位主唱之一。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     },
+     {
+      "f": "1979 年他推出個人專輯《反斗星》，開始以個人身分發展；同年起他的唱片公司是寶麗金，一直待到 1999 年轉到環球唱片。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈愛在深秋〉1984 年首唱，是他的早期成功之作；他 1984 年在頒獎禮上憑〈愛的根源〉與〈愛在深秋〉囊括金曲金獎與最佳作曲、作詞、編曲等獎項。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的外號是「譚校長」。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     },
+     {
+      "f": "1984 至 1987 年，他連續四年獲勁歌金曲的最受歡迎男歌星獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     },
+     {
+      "f": "1988 年他在獲得十大中文金曲「金曲十年大獎」、連續四年蟬聯 IFPI 大獎之後，宣布不再出席領獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     },
+     {
+      "f": "1996 年他獲頒十大中文金曲的金針獎，這是香港樂壇的最高榮譽。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     },
+     {
+      "f": "1980 年代中期，譚詠麟與張國榮並列為香港樂壇的雙雄，兩人的歌迷之間常有競爭。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%9C%8B%E6%A6%AE",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1973 年起他是溫拿樂隊的主唱之一，1979 年起以個人身分推出專輯。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     },
+     {
+      "f": "1988 年宣布不再領獎，1996 年獲金針獎，1999 年由寶麗金轉到環球唱片。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1996 年獲十大中文金曲的金針獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+    "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+    "from": "new"
+   },
+   {
+    "f": "1984 至 1987 年連續四年獲勁歌金曲最受歡迎男歌星獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E8%AD%9A%E8%A9%A0%E9%BA%9F",
+    "src2": "https://en.wikipedia.org/wiki/Alan_Tam",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "上線簡介與中文維基在專輯層級一致：〈愛的根源〉〈愛在深秋〉1984 年的獎項、《愛情陷阱》1985-86 年度最暢銷唱片獎、1984 年首度在紅館連開 6 場，皆與中文維基相符，無衝突。",
+   "首張個人專輯：英文維基寫 1979 年《反斗星》為首張個人專輯；事實庫的 MusicBrainz 排序另有 1979 年《愛到你發狂》在前，故 facts 不寫『首張』。",
+   "十大中文金曲名人堂：中文維基寫 2014 年首設並由譚詠麟成為首位；搜尋結果說法為 2015 年得獎；年份不一致且屬首位類宣稱，facts 不收。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "本位補查 4 次：中文維基譚詠麟、英文維基 Alan Tam、WebSearch（名人堂，結果只有維基與電台網站列表，未再開頁）、WebSearch（RTHK 名人堂英文；同上）。另在 legacy 一條與張國榮的競爭引用了本位已讀的中文維基張國榮條目（同一站不同條目，非獨立）。兩源說明：中英文維基為同站不同語言版本，非獨立；本位無第三個獨立媒體來源，所有條目以中英文維基雙源。sound 格只有 1 條，偏薄：事實庫的專輯研究稿另有多條專輯層級的日本改編資料（〈忘不了您〉改編自五輪真弓〈恋人よ〉並引發港樂壇改編日本歌潮、芹澤廣明為《暴風女神 Lorelei》寫六首等），但該些只有中文維基專輯條目單源，且本位重新開頁只在中文維基譚詠麟條目的派台歌曲表看到『OT：五輪真弓〜恋人よ』『OT：因幡晃』『OT：高橋真梨子』『OT：H2O』等原曲標記，未見『開啟改編潮』的說法，故不收進 sound。單源放 notes（中文維基）：1984 年愛情三部曲（《霧之戀》《愛的根源》《愛情陷阱》）總銷量逾百萬張、每張各有 5 首入選十大勁歌季選的紀錄，1999 年三張同入選寶麗金 20 世紀 20 張最佳專輯；1984 年首次在紅館連開 6 場、打破歌手首次開唱場數紀錄，門票一公開即售罄；1985 年暑期 20 場『超白金演唱會』入場 26 萬人次（打破當時世界個人演唱會最多觀眾的吉尼斯紀錄，未經第二源核實）；1985 年與日本谷村新司、韓國趙容弼組成『PAX MUSICA』（亞洲和平音樂會）；1989 年以首位華人男歌星身分入選日本 NHK 紅白歌合戰（首位類，單源）；1989 年以最高票入選上海電台『當代中國十大歌手』；2000 年馬來西亞《南洋商報》『二十世紀華語樂壇十大男歌星』第 2 名；2014 年 RTHK 十大中文金曲首設名人堂（年份有異說，見 conflicts）；他曾說『退下火線後不再領獎，什麼類型的音樂都能試』（引自 2010 年世華媒體專訪，中文維基註腳）；1999 年張國榮與另 17 位歌手參與向譚詠麟致敬的專輯《誰可改變15週年紀念集》（英文維基單源）；英文維基稱他 1983 至 1987 年連續四年獲最受歡迎男歌星（與中文維基 1984–1987 差一年，facts 採中文維基）並自述為 1980 年代『最有名的超級巨星』（標『according to whom?』，未收）；英文維基稱『校長』外號源於他自 1980 年代末起提攜樂壇後輩（單源）。『出身』：中文維基記他 1981 年與楊潔薇在美國結婚一事及私生活，敏感，未收。譚詠麟的上線簡介個別專輯序數（第七、八、九、十一張粵語專輯）未在本位查到來源，非衝突。"
+ },
+ {
+  "key": "culture club",
+  "name": "Culture Club",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "主唱 Boy George 本名 George Alan O'Dowd，是愛爾蘭裔；1980 年代初他常在倫敦的 Blitz 俱樂部出入，屬於當時的新浪漫（New Romantic）場景。",
+      "src": "https://stereogum.com/2093902/the-number-ones-culture-clubs-karma-chameleon/columns/the-number-ones",
+      "src2": "https://en.wikipedia.org/wiki/Culture_Club",
+      "from": "new"
+     },
+     {
+      "f": "Boy George 在 Blitz 被 Malcolm McLaren 看上，邀他去唱 Bow Wow Wow，他待不久就離開，另外組了自己的樂團。",
+      "src": "https://stereogum.com/2093902/the-number-ones-culture-clubs-karma-chameleon/columns/the-number-ones",
+      "src2": "https://en.wikipedia.org/wiki/Culture_Club",
+      "from": "new"
+     },
+     {
+      "f": "Culture Club 1981 年在倫敦成軍，成員是 Boy George、Roy Hay、Mikey Craig 與 Jon Moss；團名在確定前曾用過 Sex Gang Children。",
+      "src": "https://en.wikipedia.org/wiki/Culture_Club",
+      "src2": "https://stereogum.com/2093902/the-number-ones-culture-clubs-karma-chameleon/columns/the-number-ones",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Do You Really Want to Hurt Me〉是他們的第一支大熱單曲，曲風是輕柔的雷鬼式流行（reggae）。",
+      "src": "https://stereogum.com/2093902/the-number-ones-culture-clubs-karma-chameleon/columns/the-number-ones",
+      "src2": "https://en.wikipedia.org/wiki/Culture_Club",
+      "from": "new"
+     },
+     {
+      "f": "他們常被歸為新浪潮（new wave）一路，出身於新浪漫場景。",
+      "src": "https://en.wikipedia.org/wiki/Culture_Club",
+      "src2": "https://www.britannica.com/biography/Boy-George",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Boy George 中性化、色彩鮮豔的打扮在 1980 年代初保守的環境裡走紅；Britannica 稱他是 1980 年代音樂與時尚的先驅象徵。",
+      "src": "https://www.britannica.com/biography/Boy-George",
+      "src2": "https://en.wikipedia.org/wiki/Culture_Club",
+      "from": "new"
+     },
+     {
+      "f": "〈Do You Really Want to Hurt Me〉1982 年拿下英國冠軍、美國第 2 名；〈Karma Chameleon〉是英國 1983 年最暢銷的單曲，也登上美國冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Culture_Club",
+      "src2": "https://stereogum.com/2093902/the-number-ones-culture-clubs-karma-chameleon/columns/the-number-ones",
+      "from": "new"
+     },
+     {
+      "f": "1984 年，他們拿下葛萊美獎的最佳新人獎（Best New Artist）。",
+      "src": "https://en.wikipedia.org/wiki/Culture_Club",
+      "src2": "https://stereogum.com/2093902/the-number-ones-culture-clubs-karma-chameleon/columns/the-number-ones",
+      "from": "new"
+     },
+     {
+      "f": "1986 年 7 月，Boy George 因持有海洛因被英國警方逮捕，樂團同年解散。",
+      "src": "https://en.wikipedia.org/wiki/Culture_Club",
+      "src2": "https://www.britannica.com/biography/Boy-George",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1981 年成軍，1982 年靠〈Do You Really Want to Hurt Me〉打開局面，1983 年〈Karma Chameleon〉登上美國冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Culture_Club",
+      "src2": "https://stereogum.com/2093902/the-number-ones-culture-clubs-karma-chameleon/columns/the-number-ones",
+      "from": "new"
+     },
+     {
+      "f": "1986 年解散。",
+      "src": "https://en.wikipedia.org/wiki/Culture_Club",
+      "src2": "https://www.britannica.com/biography/Boy-George",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1984 年獲葛萊美獎最佳新人獎（得獎）。",
+    "src": "https://en.wikipedia.org/wiki/Culture_Club",
+    "src2": "https://stereogum.com/2093902/the-number-ones-culture-clubs-karma-chameleon/columns/the-number-ones",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫無研究稿；上線簡介只涵蓋首張《Kissing to Be Clever》，與本位所查的〈Do You Really Want to Hurt Me〉（英國冠軍、美國第 2）一致，無衝突。",
+   "樂團解散年：英文維基與 Britannica 都寫 1986 年；《Kissing to Be Clever》上線簡介未涉及。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "本位補查 5 次：英文維基 Culture Club、Britannica Culture Club 主題頁（WebFetch 只給出片段，內容有限）、Britannica Boy George 頁（WebFetch 摘要，非逐字全文）、WebSearch（1984 年獎項）、Stereogum《The Number Ones》Karma Chameleon 專欄（獨立媒體，Tom Breihan）。兩源說明：Britannica 兩頁為 WebFetch 小模型摘要，第二源『實際開頁』靠工具讀頁，未逐字核對；Stereogum 為獨立來源。單源放 notes：團名由來——英文維基稱團名是因為成員有牙買加、愛爾蘭與猶太等不同文化背景（單源，來源腳註 [13]）；〈Karma Chameleon〉英國最暢銷單曲 1983 年（英文維基與 Stereogum 兩源，已入 facts）；英文維基稱 1984 年 Brit Awards 拿下最佳英國樂團與最佳英國單曲（〈Karma Chameleon〉）——WebSearch 摘要重述同一說法，未開第二頁，單源；《Colour by Numbers》全球賣逾 1000 萬張、名列 Rolling Stone 1980 年代百大專輯與《1001 Albums You Must Hear Before You Die》（英文維基單源，銷量屬累計不收）；〈Time (Clock of the Heart)〉入選 1999 年搖滾名人堂『塑造搖滾的 500 首歌』（英文維基單源）；1986 年 George 與 Moss 分手、關係緊張與海洛因成癮在英文維基有詳細記載，Britannica 只寫『成癮曝光與被捕』，facts 僅寫兩源共有的部分；1998 年重組巡演大獲成功（英文維基單源）；英文維基稱他們與 MTV 帶動的『第二次英倫入侵』相關（Britannica 頁面將 Culture Club 與 Duran Duran、Wham!、Eurythmics 並列為 British Invasion，兩源略合，但 Britannica 為主題頁片段，未收進 facts）；Stereogum 記〈Do You Really Want to Hurt Me〉在 9 個國家登頂、〈Time〉也是美國第 2、Boy George 領葛萊美時說『美國，你們有品味，也認得一位好的變裝皇后』（單源）；英文維基寫該曲在 23 個國家登頂，與 Stereogum 的 9 個國家不一致，facts 只寫英國冠軍、美國第 2。Boy George 家庭背景（父親施暴、成長於敵視同志的環境）為 Stereogum 單源，未收。藝名寫法：英文維基 Lieutenant Lush，Stereogum 寫 Lieutenant Lash，兩源不一致，未收。"
+ },
+ {
+  "key": "eurythmics",
+  "name": "Eurythmics",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Annie Lennox 是蘇格蘭人，Dave Stewart 是英格蘭人；兩人 1975 年左右在倫敦一家餐廳認識，當時 Lennox 在那裡工作。",
+      "src": "https://en.wikipedia.org/wiki/Eurythmics",
+      "src2": "https://www.britannica.com/biography/Annie-Lennox",
+      "from": "new"
+     },
+     {
+      "f": "兩人先在樂團 the Tourists 合作，樂團 1980 年解散後，他們組成雙人組 Eurythmics。",
+      "src": "https://en.wikipedia.org/wiki/Eurythmics",
+      "src2": "https://www.britannica.com/biography/Annie-Lennox",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Eurythmics 的聲音以合成器與當時新式的錄音製作手法為主。",
+      "src": "https://www.rockhall.com/inductees/eurythmics",
+      "src2": "https://www.britannica.com/biography/Annie-Lennox",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1983 年的〈Sweet Dreams (Are Made of This)〉是他們的成名曲，登上英國排行榜第 2 名，並在美國 Billboard Hot 100 拿下第 1 名。",
+      "src": "https://en.wikipedia.org/wiki/Eurythmics",
+      "src2": "https://www.britannica.com/biography/Annie-Lennox",
+      "from": "new"
+     },
+     {
+      "f": "Annie Lennox 穿男式西裝、剪短髮的中性形象，是這組雙人組的招牌。",
+      "src": "https://www.rockhall.com/inductees/eurythmics",
+      "src2": "https://www.britannica.com/biography/Annie-Lennox",
+      "from": "new"
+     },
+     {
+      "f": "Eurythmics 於 2022 年入選搖滾名人堂，由 U2 的 The Edge 擔任引介人。",
+      "src": "https://en.wikipedia.org/wiki/Eurythmics",
+      "src2": "https://www.rockhall.com/inductees/eurythmics",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Eurythmics 1980 年成軍，1983 年的專輯《Sweet Dreams (Are Made of This)》讓他們揚名國際。",
+      "src": "https://en.wikipedia.org/wiki/Eurythmics",
+      "src2": "https://www.britannica.com/biography/Annie-Lennox",
+      "from": "new"
+     },
+     {
+      "f": "他們 1990 年分手。",
+      "src": "https://en.wikipedia.org/wiki/Eurythmics",
+      "src2": "https://www.britannica.com/biography/Annie-Lennox",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1983 年〈Sweet Dreams (Are Made of This)〉登上美國 Billboard Hot 100 第 1 名。",
+    "src": "https://en.wikipedia.org/wiki/Eurythmics",
+    "src2": "https://www.britannica.com/biography/Annie-Lennox",
+    "from": "new"
+   },
+   {
+    "f": "2022 年入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Eurythmics",
+    "src2": "https://www.rockhall.com/inductees/eurythmics",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫無研究稿；上線簡介只有《Be Yourself Tonight》（1985）的一段，內容（Stevie Wonder 吹口琴、Aretha Franklin 對唱〈Sisters Are Doin' It for Themselves〉、〈There Must Be an Angel〉是唯一的英國冠軍單曲）與英文維基一致，無衝突。",
+   "Britannica 稱 Lennox 與 Stewart 以『在澳洲旅館房間試玩合成器』組成新雙人組；英文維基記兩人在倫敦 Chalk Farm 自建八軌錄音室；兩者不衝突，facts 不採。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "本位補查 4 次：英文維基 Eurythmics、搖滾名人堂官網 Eurythmics 頁（WebFetch 摘要）、Britannica『eurythmics』頁（抓到的是 Dalcroze 音樂教育法的條目，與樂團無關，未採用）、Britannica Annie Lennox 頁（WebFetch 摘要，非逐字全文）。兩源說明：搖滾名人堂官網對入選者的介紹（名人堂官方（可具名單源），寫作層寫成『搖滾名人堂稱…』）：引介人 The Edge、2022 年入選；介紹寫他們把『Krautrock 的機械放克、福音的粗獷與迷幻的古怪』混成創新流行公式，並稱『開場曲改變了人們對 1980 年代流行搖滾的看法』（原文所指之曲名未在 WebFetch 摘要中，不寫）、Lennox 的中性舞台形象『presaged the third wave of feminism and a more mainstream deconstruction of sexuality and gender』、『Dave Stewart 與 Annie Lennox 的超現代聲響在電台、MTV 與舞廳無所不在』；該頁摘要來自 WebFetch 小模型，引文請以原頁為準。Britannica 頁同為 WebFetch 摘要。單源放 notes（英文維基）：1981 年首張《In the Garden》銷量不佳（英文維基單源）；1999 年為專輯《Peace》重聚；Eurythmics 曾入選 UK Music Hall of Fame（2005）、Songwriters Hall of Fame（2020）、1999 年 Brit Award 傑出貢獻獎、1984 年 MTV VMA 最佳新人、1987 年葛萊美最佳搖滾雙人／團體演唱；估計全球賣出約 7500 萬張（累計數字不收）；首張《In the Garden》（1981）在科隆由 Conny Plank 製作，混合迷幻、Krautrock 與電子流行，有 Can 的 Holger Czukay 與 Jaki Liebezeit、Blondie 的 Clem Burke 等人參與；1982 年兩人以銀行貸款在 Chalk Farm 一家相框工廠樓上自建八軌錄音室；第五張《Be Yourself Tonight》1985 年一週內在巴黎錄成，改用真鼓與吉他、帶 R&B 影響，與 Aretha Franklin、Elvis Costello、Stevie Wonder 合作，〈There Must Be an Angel〉是唯一英國冠軍單曲；2005 年為精選輯《Ultimate Collection》重聚推出〈I've Got a Life〉。『英國冠軍唯一』屬『唯一』宣稱，英文維基為單源。Lennox 生於 1954 年亞伯丁（Britannica 單源）。"
+ },
+ {
+  "key": "falco",
+  "name": "Falco",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Falco 本名 Johann（Hans）Hölzel，1957 年 2 月 19 日生於維也納 Margareten 區的工人家庭；父親在他小時候離開，他由母親等人撫養長大。",
+      "src": "https://de.wikipedia.org/wiki/Falco",
+      "src2": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "他很早就顯露音樂天分：四歲生日收到一台小型演奏鋼琴，一年後收到唱機，常聽 Elvis Presley、Cliff Richard 與披頭四。",
+      "src": "https://de.wikipedia.org/wiki/Falco",
+      "src2": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "1970 年代後期，他在維也納的地下樂團擔任貝斯手，其中包括 Hallucination Company。",
+      "src": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "src2": "https://de.wikipedia.org/wiki/Falco",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Der Kommissar〉是一首談毒品的德語歌，把 rap 式的敘述段落與唱出來的副歌放在一起；德文維基說他在這首歌裡發展出自己的 rap 風格，是歐洲德語圈的嘻哈先驅之一。",
+      "src": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "src2": "https://de.wikipedia.org/wiki/Falco",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Rock Me Amadeus〉1986 年登上美國 Billboard 排行榜第 1 名，是至今唯一登頂的德語歌曲。",
+      "src": "https://de.wikipedia.org/wiki/Falco",
+      "src2": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "在美國，他的音樂被歸類為饒舌，常被稱為「第一位白人饒舌歌手」；德文維基另指出，他在國際嘻哈場景裡的先驅地位頗有爭議。",
+      "src": "https://de.wikipedia.org/wiki/Falco",
+      "src2": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "1998 年 2 月 6 日，他在多明尼加共和國 Puerto Plata 附近的車禍中過世，差幾天滿 41 歲；他的越野車與一輛巴士相撞。",
+      "src": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "src2": "https://www.rollingstone.com/music/music-news/rock-me-amadeus-singer-dies-in-car-crash-249896/",
+      "from": "new"
+     },
+     {
+      "f": "他過世時剛完成一張新專輯，該專輯在 1998 年身後發行。",
+      "src": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "src2": "https://www.rollingstone.com/music/music-news/rock-me-amadeus-singer-dies-in-car-crash-249896/",
+      "from": "new"
+     },
+     {
+      "f": "他葬在維也納中央墓園，逝世多年後墓地仍是歌迷朝聖之處；奧地利也立有他的雕像，例如 Gars am Kamp 的雕像。",
+      "src": "https://de.wikipedia.org/wiki/Falco",
+      "src2": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1981 年的〈Der Kommissar〉讓他以德語 rap 式歌曲出名，1986 年的〈Rock Me Amadeus〉登上美國冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "src2": "https://de.wikipedia.org/wiki/Falco",
+      "from": "new"
+     },
+     {
+      "f": "1998 年 2 月 6 日過世。",
+      "src": "https://en.wikipedia.org/wiki/Falco_(musician)",
+      "src2": "https://www.rollingstone.com/music/music-news/rock-me-amadeus-singer-dies-in-car-crash-249896/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1986 年〈Rock Me Amadeus〉登上美國 Billboard 第 1 名，是至今唯一登頂的德語歌曲。",
+    "src": "https://de.wikipedia.org/wiki/Falco",
+    "src2": "https://en.wikipedia.org/wiki/Falco_(musician)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫研究稿（Junge Roemer）與上線簡介（Einzelhaft、Junge Roemer）在專輯層級與本位所查一致：Junge Roemer 樂評稱讚但市場不佳（德文維基引 Falco：『經濟上是徹底的失敗』）；無衝突。",
+   "逝世地點：Rolling Stone 寫 Santo Domingo 並又寫 Puerto Plata 附近，英文維基與德文維基寫 Villa Montellano 與 Puerto Plata 之間；facts 採維基與 Rolling Stone 一致的 Puerto Plata 附近。",
+   "逝世時年齡：英文維基寫 40 歲、Rolling Stone 寫兩週後滿 41 歲（生日 2 月 19 日，過世 2 月 6 日）；facts 寫『差幾天滿 41 歲』，不寫『40 歲』與『兩週』。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "本位補查 4 次：德文維基 Falco、英文維基 Falco (musician)、WebSearch（1998 年訃聞）、Rolling Stone 1998-02-09 短訊。失敗請求 2 次（德文維基條目名試錯，兩次 404，不計入）。兩源說明：德英文維基為同站不同語言版本，非獨立；Rolling Stone 是獨立媒體，用於逝世一條與新專輯一條。『唯一登頂的德語歌曲』：德文維基寫『bis heute einziges deutschsprachiges Lied』、英文維基寫『only artist in history to score a number-one hit with a German-language song』，並註明 Bert Kaempfert 1961 年以器樂曲〈Wonderland by Night〉亦登頂（非德語歌）；已查有無反例——Nena 的〈99 Luftballons〉德語版最高第 2 名，未登頂；但〈Rock Me Amadeus〉美國版的歌詞含大量英文（屬第一位／唯一類宣稱，寫作層請寫『兩份維基都寫…是唯一登頂的德語歌曲』，『至今』要帶時間）。Rolling Stone 寫他『兩週後滿 41 歲』。單源放 notes：德文維基——葬禮有 4000 多人出席、葬於榮譽墓地，由 1985 年〈Rock Me Amadeus〉MV 中演出的維也納摩托車騎士團 Outsider Austria 成員抬棺；驗屍發現血液酒精 1.5 promille 與大量可卡因、少量大麻（敏感，未收）；事後有他自殺的傳聞（未收）；Falco 被稱為『Manhattan-Schönbrunner-Deutsch』的發明者（維也納方言、標準德語與英語混用），歌詞承襲維也納團體（H. C. Artmann、Gerhard Rühm、Ernst Jandl）的多語與文字遊戲傳統（單源）；1982 年他去紐約，〈Der Kommissar〉常被 Afrika Bambaataa 在紐約俱樂部放（單源）；他是『Echo Pop 獎』與『Amadeus 獎』得主、獲維也納市金質功勞章（維基分類欄，年份與細節未查）。英文維基單源：〈Der Kommissar〉在德國、法國、義大利、西班牙與日本登頂，在英美沒有打進；Falco 3 專輯在 Billboard 專輯榜最高第 3 名，〈Rock Me Amadeus〉在 Top R&B 單曲榜第 6 名；他的遺作《Out of the Dark (Into the Light)》在奧地利榜首 21 週；他的遺產方自稱賣出 2000 萬張專輯與 4000 萬張單曲、是奧地利銷量最高的歌手（遺產方自述、累計數字，未收）；他自 1977 至 1979 年初是 Hallucination Company 的貝斯手，藝名 Falco 取自 Falko Weißpflog（英文維基；德文維基未確認，未收）。Rolling Stone 稱他是『classical music wunderkind-turned-two-hit wonder』（單源，形容詞，未收）。"
  }
 ]

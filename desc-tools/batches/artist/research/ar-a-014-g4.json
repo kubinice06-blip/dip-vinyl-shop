@@ -298,5 +298,330 @@
     "failedFetches": 4,
     "status": "full",
     "notes": "事實庫只有 Tilt 一條研究稿（三部曲），且已進上線簡介。8 次：維基 Scott Walker (singer)、WebSearch（訃聞）、NBC News、WebSearch（Scott 4 與 Tilt）、Irish Times 訃聞、The Quietus 訃聞、WebSearch（肉打擊音效）、Sound On Sound；失敗 4 次未取得（Britannica 404、NPR 兩頁 503、Variety 307 轉 tollbit），失敗達上限，不再續查。兩源都實際開頁讀到：維基、NBC、Irish Times、Quietus、Sound On Sound。未收（單源或未開頁）：死因為癌症（維基與 AP 搜尋摘要，AP 頁未開）；維基寫 BBC 稱他『one of the most enigmatic and influential figures in rock history』、Guardian 比喻『imagine Andy Williams reinventing himself as Stockhausen』、4AD 稱他『a unique and challenging titan at the forefront of British music』、2003 Q 獎與 2006 MOJO Icon Award（皆維基單源）；Jacques Brel 對他 1960 年代作品的影響（維基單源，Britannica 404）；Bowie 翻唱〈Nite Flights〉只有維基一源，f 欄未收；《Scott 4》被視為傑作（Quietus 單源）；他 1966 年一度躲進修道院、同年自殺未遂（Irish Times 與維基各一段，細節不一，未收，逝者克制）；他曾做過畫家與裝修工人（Irish Times 單源）；《Bish Bosch》錄音用磨大砍刀、彈珠丟垃圾桶蓋、羊角（Sound On Sound 與搜尋摘要，未有第二個開頁來源）；2014 年與 Sunn O))) 合作《Soused》（維基單源）；Brady Corbet 2024 年《The Brutalist》獻給 Walker（維基單源）；1970 年入英國籍（維基單源）；Ian Curtis 受啟發（Quietus 單源）。維基與 Sound On Sound 的肉打擊：維基寫 punching raw meat（未指明曲名），Sound On Sound 寫 Alasdair Molloy 敲打一整片豬肉、用在〈Clara〉，facts 寫兩源共同的『整塊肉』。同名混卡檢查：poolAlbums 五張皆為他本人個人專輯，無混卡。Walker Brothers 為群體名，Scott Walker 為藝名，Noel Scott Engel 是本名。"
+  },
+  {
+    "key": "shinee",
+    "name": "SHINee",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "SHINee 由 SM Entertainment 在 2008 年推出，定位是 contemporary R&B 男團，目標是在音樂、時尚與舞蹈上都當潮流引領者；出道陣容五人：Onew、Jonghyun、Key、Minho、Taemin。",
+            "src": "https://en.wikipedia.org/wiki/Shinee",
+            "src2": "https://ko.wikipedia.org/wiki/SHINee",
+            "from": "new"
+          },
+          {
+            "f": "出道迷你專輯《Replay》2008 年 5 月 22 日發行，5 月 25 日在 SBS《人氣歌謠》（Inkigayo）首度登台。",
+            "src": "https://en.wikipedia.org/wiki/Shinee",
+            "src2": "https://en.wikipedia.org/wiki/Key_(entertainer)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "音樂以 contemporary R&B 起家，後來擴及 funk rock、hip hop 與電子，從 R&B 一路實驗到 electro。",
+            "src": "https://en.wikipedia.org/wiki/Shinee",
+            "src2": "https://www.dazeddigital.com/music/article/52025/1/shinee-dont-call-me-k-pop-2021-interview",
+            "from": "new"
+          },
+          {
+            "f": "他們以整齊精緻的編舞與現場表現見稱。",
+            "src": "https://en.wikipedia.org/wiki/Shinee",
+            "src2": "https://ko.wikipedia.org/wiki/SHINee",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "後輩團體 BTS、EXO、SEVENTEEN 都公開肯定 SHINee 開路者的地位；Rolling Stone UK 寫到 BTS、SEVENTEEN、TWICE、EXO、Red Velvet、TXT、NCT 的成員都在訪談中提過 Taemin，說他是自己想當偶像的原因。",
+            "src": "https://www.dazeddigital.com/music/article/52025/1/shinee-dont-call-me-k-pop-2021-interview",
+            "src2": "https://www.rollingstone.co.uk/music/taemin-shinee-k-pop-coachella-interview-photos-59407/",
+            "from": "new"
+          },
+          {
+            "f": "SHINee 被稱為「K-pop 的王子」（Princes of K-pop），Dazed 說他們在一個十年間稱霸。",
+            "src": "https://en.wikipedia.org/wiki/Shinee",
+            "src2": "https://www.dazeddigital.com/music/article/52025/1/shinee-dont-call-me-k-pop-2021-interview",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年 12 月 18 日，成員 Jonghyun 過世，團體此後以四人活動。",
+            "src": "https://en.wikipedia.org/wiki/Shinee",
+            "src2": "https://ko.wikipedia.org/wiki/SHINee",
+            "from": "new"
+          },
+          {
+            "f": "2018 至 2023 年間，成員陸續完成兵役；團體在 2021 年以《Don't Call Me》回歸。",
+            "src": "https://en.wikipedia.org/wiki/Shinee",
+            "src2": "https://ko.wikipedia.org/wiki/SHINee",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2008 年 5 月 22 日以迷你專輯《Replay》出道。",
+        "src": "https://en.wikipedia.org/wiki/Shinee",
+        "src2": "https://en.wikipedia.org/wiki/Key_(entertainer)",
+        "from": "new"
+      },
+      {
+        "f": "2017 年 12 月 18 日 Jonghyun 過世，團體此後四人活動。",
+        "src": "https://en.wikipedia.org/wiki/Shinee",
+        "src2": "https://ko.wikipedia.org/wiki/SHINee",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出道日：韓文維基寫 2008 年 5 月 25 日出道；英文維基與 Key 條目寫 EP《Replay》5 月 22 日發行、5 月 25 日《人氣歌謠》首度登台（與事實庫 c105-a 的 5 月 22 日一致）。facts 兩個日期都寫明性質，不寫成單一『出道日』。",
+      "上線簡介 Replay 寫『五軌裡有兩軌是同一首歌』：事實庫 Apple 與維基皆說 EP 共五軌，與簡介一致，無衝突。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫有 Replay 與 LUCIFER 兩張專輯研究稿與簡介（專輯層級），三格 origin／sound／legacy 都靠補查。8 次：英文維基 Shinee（兩次，第二次專問成軍前）、韓文維基、WebSearch（影響）、Rolling Stone UK、Dazed、WebSearch（練習生背景）、Key 維基；兩源皆實際開頁讀到。韓文維基取得的是摘要（fetch 工具用英文回覆）。Jonghyun 過世：facts 只寫日期與『此後四人活動』，兩源中性；韓文維基寫享年 27 歲、2017 年 12 月 21 日出殯，Dazed 提到他是自殺過世（單源開頁，維基兩版未提死因），未收死因。人名：Jonghyun 韓文為 종현（鐘鉉），facts 沿用事實庫慣用拉丁藝名。未收（單源）：Key 出身大邱、2005 年瞞著父母去 SM 試鏡、每週搭兩小時車往返首爾（Key 維基單源）；Taemin 2005 年 11 歲通過公開試鏡、14 歲出道，Minho 街頭被搜羅，Jonghyun 是樂團貝斯手，Onew 受 BoA 影響（搜尋摘要，未開頁）；團名 Shinee 是 shine 加 ee 的新造字（維基單源）；『SHINee Trend』時尚風潮（英文維基，事實庫 Replay 條目同為維基）與韓文維基的『샤이니 신드롬』說法不同，未合併；三度獲 Mnet Asian Music Awards 最佳舞蹈表演（英文維基單源）；日文出道單曲〈Replay〉2011 年創韓國團體首週 10 萬張紀錄（英文維基單源，與事實庫寫的首週逾 91000 張並存不一致，事實庫可能取不同統計，未收）；韓文維基寫『首組連續三張作品進入 Oricon 前三名的海外藝人』（單源，且屬首次類宣稱）；2008 年 Golden Disc 與 Seoul Music Awards 新人獎（韓文維基單源）；〈Lucifer〉編舞是男團強力舞蹈的起點與首組公開練習室影片（搜尋摘要，且屬首次類，未開頁）；Rolling Stone UK 稱 Taemin 是 Korean media 口中的『idol's idol』（單源，僅 Taemin 個人）；Jonghyun 過世後兩個月 Tokyo Dome 演唱會與 Key 的『We did it for Jonghyun』（Dazed 單源）；〈Our Page〉獻給 Jonghyun（Dazed 單源）。Rolling Stone UK 與 Dazed 為兩個獨立媒體；英文與韓文維基、Key 維基屬同站不同條目，非獨立。同名混卡檢查：poolAlbums 五張皆為 SHINee，無混卡。"
+  },
+  {
+    "key": "tame impala",
+    "name": "Tame Impala",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Tame Impala 是 Kevin Parker 的計畫：他 1986 年生於雪梨，父母分別來自辛巴威與南非，父母在他三歲時分居，他隨母親搬到西澳的珀斯長大。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Parker_(musician)",
+            "src2": "https://cosmicmagazine.com.au/features/tame-impala-the-story-so-far/",
+            "from": "new"
+          },
+          {
+            "f": "他父親會彈吉他、玩翻唱樂團；Parker 11 歲開始打鼓，十二三歲就拿家裡的錄音機自學多軌疊錄，這是他日後一人錄音的起點。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Parker_(musician)",
+            "src2": "https://cosmicmagazine.com.au/features/tame-impala-the-story-so-far/",
+            "from": "new"
+          },
+          {
+            "f": "2005 年他在珀斯與朋友 Dominic Simper 組了 The Dee Dee Dums，2007 年起以 Tame Impala 之名在家裡錄音，這個計畫是從珀斯的小圈子長出來的。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Parker_(musician)",
+            "src2": "https://mixdownmag.com.au/features/the-history-of-tame-impala-and-kevin-parker/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "錄音室裡，Parker 一個人寫歌、錄音、演奏與製作；他說自己喜歡那種「一個人建造出一座了不起的聲音交響樂」的音樂。",
+            "src": "https://en.wikipedia.org/wiki/Tame_Impala",
+            "src2": "https://en.wikipedia.org/wiki/Kevin_Parker_(musician)",
+            "from": "new"
+          },
+          {
+            "f": "他的底子是 1960 至 1970 年代的迷幻搖滾與 My Bloody Valentine 那類 shoegaze 質地的聲音。",
+            "src": "https://en.wikipedia.org/wiki/Tame_Impala",
+            "src2": "https://mixdownmag.com.au/features/the-history-of-tame-impala-and-kevin-parker/",
+            "from": "new"
+          },
+          {
+            "f": "2015 年《Currents》轉向電子與合成器，Parker 說 Fleetwood Mac 那種純淨與乾淨的聲音，讓他想做更流線的風格。",
+            "src": "https://en.wikipedia.org/wiki/Tame_Impala",
+            "src2": "https://mixdownmag.com.au/features/the-history-of-tame-impala-and-kevin-parker/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Currents》是 Tame Impala 最暢銷的專輯，全球賣出逾 130 萬張。",
+            "src": "https://en.wikipedia.org/wiki/Tame_Impala",
+            "src2": "https://mixdownmag.com.au/features/the-history-of-tame-impala-and-kevin-parker/",
+            "from": "new"
+          },
+          {
+            "f": "《Currents》在 2015 年第 29 屆 ARIA 音樂獎拿下年度專輯與最佳搖滾專輯（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Tame_Impala",
+            "src2": "https://en.wikipedia.org/wiki/2015_ARIA_Music_Awards",
+            "from": "new"
+          },
+          {
+            "f": "Rihanna 在 2016 年《Anti》的第 9 軌〈Same Ol' Mistakes〉翻唱了 Parker 寫的〈New Person, Same Old Mistakes〉（原曲收在《Currents》）。",
+            "src": "https://musicfeeds.com.au/news/rihanna-covers-tame-impala-new-album/",
+            "src2": "https://cosmicmagazine.com.au/features/tame-impala-the-story-so-far/",
+            "from": "new"
+          },
+          {
+            "f": "《Currents》之後，Lady Gaga、Mark Ronson 等主流藝人找上 Parker 合作；他後來也與 Dua Lipa 合寫並製作她的 2024 年專輯《Radical Optimism》。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Parker_(musician)",
+            "src2": "https://cosmicmagazine.com.au/features/tame-impala-the-story-so-far/",
+            "from": "new"
+          },
+          {
+            "f": "《Lonerism》（2012）入圍 2014 年葛萊美最佳另類音樂專輯，是入圍，沒有得獎。",
+            "src": "https://en.wikipedia.org/wiki/Tame_Impala",
+            "src2": "https://mixdownmag.com.au/features/the-history-of-tame-impala-and-kevin-parker/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Lonerism》（2012）大半是 Parker 獨自在珀斯的家與法國的住處寫成；他在 InnerSpeaker 之後曾在巴黎住了一年。",
+            "src": "https://mixdownmag.com.au/features/the-history-of-tame-impala-and-kevin-parker/",
+            "src2": "https://cosmicmagazine.com.au/features/tame-impala-the-story-so-far/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2015 年《Currents》拿下第 29 屆 ARIA 年度專輯與最佳搖滾專輯。",
+        "src": "https://en.wikipedia.org/wiki/Tame_Impala",
+        "src2": "https://en.wikipedia.org/wiki/2015_ARIA_Music_Awards",
+        "from": "new"
+      },
+      {
+        "f": "2016 年 Rihanna 在《Anti》翻唱〈New Person, Same Old Mistakes〉。",
+        "src": "https://musicfeeds.com.au/news/rihanna-covers-tame-impala-new-album/",
+        "src2": "https://cosmicmagazine.com.au/features/tame-impala-the-story-so-far/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "葛萊美：Cosmic Magazine 寫《Lonerism》『won Grammy』；維基與 Mixdown 寫 2014 年最佳另類音樂專輯入圍。採入圍，Cosmic 該句是錯的。維基 Kevin Parker 條目另寫他個人『2 座葛萊美、5 次入圍』，未查原始獎項頁，未收。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫無研究稿也無上線簡介，三格全靠補查。8 次：維基 Tame Impala、維基 Kevin Parker、WebSearch（一人樂團與 Rihanna）、Mixdown、Cosmic Magazine、WebSearch（ARIA 與 Rihanna 翻唱）、Music Feeds、維基 2015 ARIA Music Awards；失敗 1 次（Britannica 404）。兩源皆實際開頁讀到。維基三個條目同站不同條目、非獨立；Mixdown、Cosmic、Music Feeds 為獨立澳洲媒體。ARIA：2015 年 11 月 26 日第 29 屆，Tame Impala 6 項入圍、得 5 項（年度專輯、最佳團體、最佳搖滾專輯，Parker 個人的工程師與製作人）；facts 只寫兩源交集的年度專輯與最佳搖滾專輯。The Slow Rush（2020）維基寫 ARIA 五項含年度專輯，未另開頁核對，未收。未收（單源）：Innerspeaker 獲 Pitchfork Best New Music（Mixdown 單源）；Coachella 壓軸（Mixdown 一句，維基未見）；13 座 ARIA、1 座 Brit（維基 Kevin Parker 單源）；Parker 12 歲前後受 Michael Jackson 啟發寫歌、父親 Jerry 任礦業公司財務長、母親 Rosalind、在 Kalgoorlie 住過（Cosmic 單源；維基只說搬到西澳）；Tame Impala 名字的來由（Cosmic 單源）；2007 年把歌貼上 MySpace（Mixdown 單源）；Modular 簽約與轉頭放棄天文學考試的軼事（維基單源）；2024 年 Sony Music Publishing 買下他整批版權（維基單源）；〈Dracula〉2026 年首度進 Billboard Hot 100 前十（維基單源，屬近事）；Kanye West、Travis Scott、Kali Uchis、Zhu、The Weeknd、Gorillaz、Justice 的合作（Cosmic 或維基單源）。Parker 出生日 1986 年 1 月 20 日只有維基給，單源，f 欄只寫年份。ARIA 一條的兩源都是維基（同站不同條目，非獨立）；Lonerism 葛萊美入圍的類別與年份出自維基，Mixdown 只寫有葛萊美入圍。同名混卡檢查：poolAlbums 五張皆為 Tame Impala，無混卡。"
+  },
+  {
+    "key": "tears for fears",
+    "name": "Tears for Fears",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Roland Orzabal 與 Curt Smith 少年時在英格蘭巴斯（Bath）認識，Vice 記他們約 13 歲就開始一起玩音樂；Tears for Fears 1981 年在巴斯成軍。",
+            "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+            "src2": "https://www.vice.com/en/article/6vma38/youneedtohearthis-tears-for-fears-the-hurting",
+            "from": "new"
+          },
+          {
+            "f": "成軍前，兩人在 mod 復興風格的樂團 Graduate；Graduate 1980 年的單曲在英國沒起色，卻在西班牙走紅。",
+            "src": "https://www.nme.com/features/music-interviews/tears-for-fears-drake-kanye-west-the-tipping-point-3132719",
+            "src2": "https://www.vice.com/en/article/6vma38/youneedtohearthis-tears-for-fears-the-hurting",
+            "from": "new"
+          },
+          {
+            "f": "團名取自美國心理治療師 Arthur Janov 提倡的原始治療（primal therapy）；兩人早期都是這套理論的追隨者，Orzabal 早期的詞就出自這個脈絡。",
+            "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+            "src2": "https://www.nme.com/features/music-interviews/tears-for-fears-drake-kanye-west-the-tipping-point-3132719",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們從 mod 復興轉向合成器與鼓機，Peter Gabriel 與 Talking Heads 是影響來源。",
+            "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+            "src2": "https://www.vice.com/en/article/6vma38/youneedtohearthis-tears-for-fears-the-hurting",
+            "from": "new"
+          },
+          {
+            "f": "他們的歌是歌詞陰暗內省、旋律卻明亮的流行歌：疊層、推進的律動，加上線性的吉他線與閃爍的合成器 hook。",
+            "src": "https://www.loudersound.com/features/why-tears-for-fears-made-two-of-the-most-influential-albums-ever",
+            "src2": "https://www.vice.com/en/article/6vma38/youneedtohearthis-tears-for-fears-the-hurting",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "後輩以取樣或翻唱向他們致意：Kanye West 在 2008 年〈Coldest Winter〉取樣〈Ideas as Opiates〉，Nas 在 2011 年〈Rule〉取樣〈Everybody Wants to Rule the World〉，Lorde 翻唱過他們的歌。",
+            "src": "https://www.nme.com/features/music-interviews/tears-for-fears-drake-kanye-west-the-tipping-point-3132719",
+            "src2": "https://www.loudersound.com/features/why-tears-for-fears-made-two-of-the-most-influential-albums-ever",
+            "from": "new"
+          },
+          {
+            "f": "Orzabal 與 Smith 在 2021 年 Ivor Novello 獎獲頒 Outstanding Song Collection（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+            "src2": "https://retropopmagazine.com/tears-for-fears-2021-ivor-novello-awards/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Songs from the Big Chair》（1985）登上美國 Billboard 200 冠軍，是他們商業上的高峰。",
+            "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+            "src2": "https://classicrockartists.com/tears-for-fears-members/",
+            "from": "new"
+          },
+          {
+            "f": "1991 年 Smith 在《The Seeds of Love》之後離團，兩人說那次分手很不愉快；Orzabal 保留團名，1990 年代獨自以 Tears for Fears 名義發行《Elemental》（1993）與《Raoul and the Kings of Spain》（1995）；2000 年兩人和解重組。",
+            "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+            "src2": "https://classicrockartists.com/tears-for-fears-members/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1985 年《Songs from the Big Chair》登上美國 Billboard 200 冠軍。",
+        "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+        "src2": "https://classicrockartists.com/tears-for-fears-members/",
+        "from": "new"
+      },
+      {
+        "f": "1991 年 Smith 離團、Orzabal 沿用團名，2000 年兩人和解重組。",
+        "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+        "src2": "https://classicrockartists.com/tears-for-fears-members/",
+        "from": "new"
+      },
+      {
+        "f": "2021 年獲 Ivor Novello 獎 Outstanding Song Collection。",
+        "src": "https://en.wikipedia.org/wiki/Tears_for_Fears",
+        "src2": "https://retropopmagazine.com/tears-for-fears-2021-ivor-novello-awards/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基把 Janov 與 Lennon 1970 年接受治療並列；NME 與 Vice 只說兩人是 Janov 追隨者，facts 不寫 Lennon 那段。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫無研究稿也無上線簡介，三格全靠補查。7 次：維基、WebSearch（起源與影響）、Louder、NME、Retropop（Ivor Novello）、Vice、classicrockartists；失敗 1 次（Britannica 404）。兩源皆實際開頁讀到。Retropop 頁只確認獎項與類別，不含巴斯或專輯資料。第三條 Janov 團名：維基與 NME 兩源、Vice 亦提及。未收（單源）：維基寫 1986 年 Brit 獎頒給〈Everybody Wants to Rule the World〉（維基單源，類別是否為 British Single 未核）；Songs from the Big Chair 在美國五白金（維基單源）；Gary Jules 翻唱〈Mad World〉2003 年登英國榜冠軍（維基單源，NME 只說 Gary Jules 翻唱過）；《The Seeds of Love》（1989）混入爵士與藍調（維基單源）；Smith 說『我們都來自破碎家庭，都由母親帶大』（Vice 單源）；《The Tipping Point》（2022）是 33 年來首張英國冠軍專輯（classicrockartists 單源）；Curt Smith 說『在團裡待得夠久，總會再流行起來』（Louder 單源）；Smith 抱怨 Kanye West 取樣的版稅爭議（NME 單源）；Weezer、Disturbed、Adam Lambert 翻唱（搜尋摘要）。Ivor Novello 獎的官方引文『era-defining』在搜尋摘要出現，未開原頁，不收。Louder 點名 Disturbed、Kanye West、The 1975、David Guetta、Nas、New Found Glory、Foals、Dizzee Rascal、Lorde、The Killers、Arcade Fire、Weezer 為受影響者（Louder 單源，NME 只覆蓋 Kanye West、Nas、The Weeknd、Lorde、Gary Jules 的取樣或翻唱），facts 只寫兩源交集的 Kanye West、Nas、Lorde。維基三來源、classicrockartists 為粉絲類站台，來源等級中等，該站僅用於 1991 分手與 2000 重組（與維基一致）與 Billboard 冠軍。同名混卡檢查：poolAlbums 五張皆為 Tears for Fears；《Elemental》與《Raoul and the Kings of Spain》是 Smith 離團後 Orzabal 以團名發行，已在 era 註明。"
   }
 ]
