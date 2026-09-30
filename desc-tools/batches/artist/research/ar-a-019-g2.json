@@ -184,6 +184,152 @@
   "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 6 次：英文維基 Lil Wayne（curl 取全文）、Britannica 人物頁（WebFetch 摘要）、WebSearch 兩次（mixtape 與後輩影響；限 Rolling Stone／NPR／Complex／Billboard 網域）、葛萊美官網藝人頁（curl 讀全文）、Complex 專文（WebFetch 摘要）。失敗請求 4 次：葛萊美舊網址 404、NPR 藝人頁 404、AllMusic 403、Rolling Stone 訪談頁被導向付費代理未取得；另有 1 次 WebSearch 因網域限制被拒（API 400）。Britannica 與 Complex 都是小模型摘要、非全文。Young Money 成立年不一致：維基寫 2005、Britannica 摘要寫 2003，facts 不寫年份。Britannica 寫 2009 年拿四座葛萊美、維基寫累計五座；葛萊美官網寫第 51 屆（2008 年度）一次拿四座含最佳饒舌專輯與最佳饒舌歌曲〈Lollipop〉；累計數字會長大，不收。Young Thug 稱偶像、Kendrick Lamar 稱最偉大兩句來自 Complex 摘要的轉述，寫作層宜寫『被視為受他影響』而非直接引述；Kendrick Lamar 在維基是單純列名，Complex 才有『the greatest』說法。單源未收：維基首段『被視為同世代最具影響力嘻哈藝人之一、史上最偉大饒舌歌手之一』（維基單源，且為維基自述的 often regarded）、Auto-Tune 影響 trap 的成形（維基單源）、2012 年打破 Elvis Presley 的 Hot 100 上榜曲數紀錄、2024 年紐奧良城市鑰匙與 Lil Wayne Day、首張專輯《Tha Block Is Hot》、少年時的槍傷事件、Missy Elliott 與 Goodie Mob 為其影響來源。時序：卡池《500 Degreez》標 2002，維基文字寫成 2003，與本層無關，不動。同名確認：卡池 5 張皆為新奧爾良的 Lil Wayne 本人，無同名混卡。Complex 與 Britannica 為獨立機構；葛萊美官網與維基非同站。 單源未收：Dedication 2 與 Da Drought 3 是媒體討論最多的兩張 mixtape（維基單源）；他 11 歲簽入 Cash Money（維基單源，Britannica 摘要未載年齡）。"
  },
  {
+  "key": "little simz",
+  "name": "Little Simz",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Little Simz 本名 Simbiatu Ajikawo，生長在倫敦北部的 Islington，父母是奈及利亞人。",
+      "src": "https://en.wikipedia.org/wiki/Little_Simz",
+      "src2": "https://www.nme.com/big-reads/little-simz-cover-interview-2021-sometimes-i-might-be-introvert-3035532",
+      "from": "new"
+     },
+     {
+      "f": "她用自己的獨立廠牌 Age 101 Music 發行作品。",
+      "src": "https://en.wikipedia.org/wiki/Little_Simz",
+      "src2": "https://www.nme.com/big-reads/little-simz-cover-interview-2021-sometimes-i-might-be-introvert-3035532",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的聲音以英國的 grime 為底，混入 R&B 等多種風格。",
+      "src": "https://en.wikipedia.org/wiki/Little_Simz",
+      "src2": "https://au.rollingstone.com/music/music-lists/-49231/little-simz-3-49235/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Kendrick Lamar 在她職涯初期就公開稱讚她的實力。",
+      "src": "https://en.wikipedia.org/wiki/Little_Simz",
+      "src2": "https://www.nme.com/big-reads/little-simz-cover-interview-2021-sometimes-i-might-be-introvert-3035532",
+      "from": "new"
+     },
+     {
+      "f": "她 2019 年的《Grey Area》入圍水星獎（入圍，未得獎），2022 年以《Sometimes I Might Be Introvert》拿下水星獎（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Little_Simz",
+      "src2": "https://www.nme.com/news/music/little-simz-wins-the-2022-mercury-prize-for-sometimes-i-might-be-introvert-3331258",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2022 年以《Sometimes I Might Be Introvert》拿下水星獎（得獎）。",
+    "src": "https://www.nme.com/news/music/little-simz-wins-the-2022-mercury-prize-for-sometimes-i-might-be-introvert-3331258",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 9,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 7 次：英文維基 Little Simz（WebFetch 摘要）、WebSearch（水星獎與其他獎項）、NME 水星獎後各界反應、NME 水星獎得獎報導、WebSearch（背景與後輩／前輩評價）、NME 2021 封面專訪、Rolling Stone Australia 新人介紹頁。失敗請求 9 次，超過 4 次上限（照實記錄）：Britannica 403、水星獎官網三個猜測網址 404、BRITs 官網兩個網址 403、Billboard 得獎報導被導向付費代理、NPR 訪談 503、Rolling Stone 訪談被導向付費代理；另有一次 WebSearch 因網域限制被拒；這些都沒有取得任何事實，超額的失敗請求沒有產生任何 facts，故無需撤事實。所有頁面內容皆為 WebFetch 小模型摘要、非全文。水星獎：NME 報導寫 2022 年 10 月 18 日頒獎；facts 只寫年份。水星獎的頒發範圍未在摘要中載明，facts 不寫。「自己形容為饒舌與實驗」（維基單源）與 Age 101 經營細節（維基寫經 AWAL 獨家發行，NME 寫獨立發行前四張 mixtape、五張 EP 與首張專輯）皆未收。Grey Area 2019 入圍水星獎維基與 Rolling Stone Australia 一致。《Sometimes I Might Be Introvert》發行年：維基寫 2021、Rolling Stone 摘要寫 2022 年拿獎，兩者不衝突，卡池 2021。單源未收：出生日期 1994 年 2 月 23 日與 Highbury Fields School 等學經歷、2022 年 Brit Award 最佳新人（維基單源，搜尋摘要寫 best new act，未開第二頁）、Ivor Novello 與 NME 獎（維基單源）、Lauryn Hill 為其影響來源（維基單源）、《Grey Area》的 Ivor Novello 得獎、Forbes 30 Under 30 首位獨立藝人（NME 單源，且屬『第一位』類）、2010 年參加 Roundhouse 新人比賽（NME 單源）、九歲開始饒舌與 2010 年 mixtape《Stratosphere》（搜尋摘要）、與 Gorillaz 及 Lauryn Hill 同台、演出 Top Boy 與 Venom 電影。同名確認：卡池 5 張為倫敦的 Little Simz 本人（2015–2025）。"
+ },
+ {
+  "key": "ll cool j",
+  "name": "LL Cool J",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "LL Cool J 本名 James Todd Smith，1968 年 1 月 14 日生於紐約長島的 Bay Shore，後來在皇后區長大，是皇后區出身的饒舌歌手。",
+      "src": "https://en.wikipedia.org/wiki/LL_Cool_J",
+      "src2": "https://www.britannica.com/biography/LL-Cool-J",
+      "from": "new"
+     },
+     {
+      "f": "藝名取自「Ladies Love Cool James」；他十幾歲就在 1984 年簽下 Def Jam，1985 年以《Radio》出道。",
+      "src": "https://en.wikipedia.org/wiki/LL_Cool_J",
+      "src2": "https://www.britannica.com/biography/LL-Cool-J",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以強悍、凌厲的 battle rhyme 與自信滿滿的口氣起家，1980 年代後期又被視為開創饒舌情歌（rap ballad）的人，代表作是〈I Need Love〉。",
+      "src": "https://www.britannica.com/biography/LL-Cool-J",
+      "src2": "https://rockhall.com/inductees/ll-cool-j/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2017 年，LL Cool J 成為第一位獲頒甘迺迪中心榮譽獎（Kennedy Center Honors）的饒舌歌手。",
+      "src": "https://en.wikipedia.org/wiki/LL_Cool_J",
+      "src2": "https://www.cbsnews.com/newyork/news/40th-annual-kennedy-center-honors/",
+      "from": "new"
+     },
+     {
+      "f": "他 2021 年以音樂卓越獎（Musical Excellence）類別入選搖滾名人堂，由 Dr. Dre 擔任引介人。",
+      "src": "https://rockhall.com/inductees/ll-cool-j/",
+      "src2": "https://en.wikipedia.org/wiki/LL_Cool_J",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1984 年簽入 Def Jam，1985 年發行首張專輯《Radio》。",
+    "src": "https://www.britannica.com/biography/LL-Cool-J",
+    "from": "new"
+   },
+   {
+    "f": "2017 年成為第一位獲甘迺迪中心榮譽獎的饒舌歌手。",
+    "src": "https://www.cbsnews.com/newyork/news/40th-annual-kennedy-center-honors/",
+    "from": "new"
+   },
+   {
+    "f": "2021 年以音樂卓越獎入選搖滾名人堂。",
+    "src": "https://rockhall.com/inductees/ll-cool-j/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 5 次：英文維基 LL Cool J（WebFetch 摘要）、Britannica LL Cool J（WebFetch 摘要）、搖滾名人堂 LL Cool J 頁（curl 讀全文）、WebSearch（甘迺迪中心榮譽獎）、CBS New York 報導（WebFetch 摘要）。失敗 2 次：甘迺迪中心官網 403、NPR 報導 503。名人堂官方（可具名單源）：搖滾名人堂稱「As one of rap's first breakouts, LL COOL J created the template for the hip-hop superstar」「pioneering the rap ballad」「His crossover success as a film and TV actor helped bring hip-hop culture to a global audience」，Dr. Dre 的名人堂文章稱『LL's longevity is unparalleled in hip-hop』；2021 年入選、Dr. Dre 引介、Eminem 表演串場；https://rockhall.com/inductees/ll-cool-j/ 。『第一位』類宣稱：甘迺迪中心榮譽獎『第一位饒舌歌手』，維基與 CBS 摘要一致，搜尋結果標題另有 Billboard、NPR、華盛頓郵報、Rolling Stone 同樣以『first rapper／first hip-hop honoree』為題，無明顯反例；CBS 寫法為『first artist billed as a rapper』，寫作層宜保留『第一位饒舌歌手』。『開創饒舌情歌』：Britannica 寫『introducing rap's first romantic ballad in 1987』、名人堂寫『pioneering the rap ballad』、維基摘要寫〈I Need Love〉是重大風格擴張，屬『第一』類，未反查更早的饒舌情歌，facts 已降為『被視為開創』，年份不寫。〈I Need Love〉為代表作見名人堂與維基摘要。簽約與出道年：Def Jam 1984 簽約、《Radio》1985 維基與 Britannica 一致，名人堂頁寫『17 歲的 Def Jam 神童、85 年成名』；名人堂頁把《Walking With a Panther》標為 1988、《Mama Said Knock You Out》標為 1991（單曲年），與卡池 1989、1990 不同，卡池為準，不動。單源未收：十歲開始寫饒舌、祖父為其買設備做 demo（維基單源）、《Radio》開創 rap rock 的說法、1992 與 1997 葛萊美勝出細節與屆次（維基單源；Britannica 只寫『葛萊美最佳饒舌獨唱』無年份與作品）、2010 年 VH1 百大藝人、2016 好萊塢星光大道、2022 紐約市鑰匙、演員生涯（NCIS: Los Angeles 等，只放不寫）、Grammy 主持 2012–2016。同名確認：卡池 5 張為皇后區的 LL Cool J（1985–2024，含 2024《The FORCE》），無同名混卡。Britannica、CBS、名人堂為獨立來源。 單源未收（era 格改 none）：1990 年《Mama Said Knock You Out》與製作人 Marley Marl 合作、作為重新站穩之作（Britannica 單源，維基摘要未載）；Britannica 摘要另稱他協助建立 Def Jam 這間新廠牌的信譽（單源）。"
+ },
+ {
   "key": "mac miller",
   "name": "Mac Miller",
   "slots": {
@@ -343,6 +489,103 @@
   "failedFetches": 4,
   "status": "full",
   "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 8 次：英文維基 Mobb Deep（WebFetch 摘要）、WebSearch（成軍與 The Infamous）、QNS 壁畫報導、Amsterdam News 訃聞、英文維基《The Infamous》專輯條目、WebSearch（Rolling Stone 500 榜）、Rolling Stone Australia《The Infamous》榜單頁、WebSearch（Prodigy 訃聞與後輩悼念，限 NPR／Billboard／Complex／Rolling Stone）。失敗 4 次：Britannica Mobb Deep 條目 404、Variety 訃聞被導向付費代理、維基《The Infamous (Mobb Deep album)》錯誤標題 404（改用 (album)）、NPR 訃聞 503。所有頁面內容皆為 WebFetch 小模型摘要、非全文；最後一次搜尋只看到摘要，未開頁，摘要內容一律不收進 facts。Prodigy 逝世日期不一致：維基摘要 2017 年 6 月 20 日、Amsterdam News 文章日期 6 月 21 日、搜尋摘要另寫在拉斯維加斯醫院過世；facts 只寫 2017 年 6 月與死因『鐮刀型貧血的併發症』，不寫日、不寫其他死因細節、不寫享年（享年 42 只見兩家標題與搜尋摘要，未逐頁核對，寫作層若要用需再核）。名單上的《滾石》榜單：維基寫 2020 年更新版、Rolling Stone Australia 頁標『2021 remake』，兩者名次都是 369；facts 不寫年份。單源未收：Prodigy 與 Havoc 在曼哈頓 High School of Art and Design 相識（維基摘要與搜尋摘要，未開第二頁）、團名由 Poetical Prophets 改為 Mobb Deep 的年份、《The Infamous》樣本取自 Prodigy 祖父的爵士收藏與在 Havoc 的 Queensbridge 公寓製作（RS Australia 與維基各講一半，各單源）、2017 年 Queensbridge 附近的紀念壁畫（QNS 單源）、Ice Cube 稱 Prodigy 與 Mobb Deep 代表紐約重新奪回街頭（Billboard，只見搜尋摘要）、Nas 同為 Queensbridge 出身並多次合作、AllMusic 稱《The Infamous》是傑作、Pitchfork 榜單名次、2013 年重組與 2025 年《Infinite》（與 The Alchemist）。累計銷量『超過 300 萬張』維基與 QNS 都有，但屬會長大的累計數字，不收。Prodigy 2017 年過世是與作品無關的後續事件，寫作層依店主指示只寫中性事實。同名確認：卡池 5 張為皇后區的 Mobb Deep（1995–2025）。 『Queensbridge 是根據地』一句：QNS 寫 Prodigy 長期在 Queensbridge 一帶活動，維基摘要寫 Queens 成軍；Havoc 為 Queensbridge 人只見搜尋摘要。Q-Tip 的角色維基寫混音工程師、RS Australia 寫 executive producer，facts 只寫『以製作人身分參與』；混音與調整鼓點的細節單源不收。"
+ },
+ {
+  "key": "ne-yo",
+  "name": "Ne-Yo",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ne-Yo 本名 Shaffer Smith，1979 年 10 月 18 日生於阿肯色州 Camden，在拉斯維加斯長大。",
+      "src": "https://www.songhall.org/profiles/schaffer-smith-p-k-a-ne-yo",
+      "src2": "https://www.grammy.com/artists/ne-yo/5109/",
+      "from": "new"
+     },
+     {
+      "f": "他先以團體 Envy 出道未成，簽約 Columbia 的個人首張專輯也沒有發行，之後轉往寫歌，靠替別人寫歌打進主流。",
+      "src": "https://www.songhall.org/profiles/schaffer-smith-p-k-a-ne-yo",
+      "src2": "https://en.wikipedia.org/wiki/Ne-Yo",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂是講究旋律的流行取向 R&B，他自己點名 Michael Jackson 與 Babyface 等人為影響來源，並與挪威製作二人組 Stargate 長期合作。",
+      "src": "https://www.songhall.org/profiles/schaffer-smith-p-k-a-ne-yo",
+      "src2": "https://en.wikipedia.org/wiki/Ne-Yo",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以共同寫作 Mario 的〈Let Me Love You〉（2004）進入主流，這首歌登上美國流行榜冠軍；他也參與寫作 Beyoncé 的〈Irreplaceable〉與 Rihanna 的〈Unfaithful〉。",
+      "src": "https://www.songhall.org/profiles/schaffer-smith-p-k-a-ne-yo",
+      "src2": "https://en.wikipedia.org/wiki/Ne-Yo",
+      "from": "new"
+     },
+     {
+      "f": "2012 年，詞曲作家名人堂（Songwriters Hall of Fame）頒給他 Hal David Starlight Award。",
+      "src": "https://www.songhall.org/profiles/schaffer-smith-p-k-a-ne-yo",
+      "src2": "https://en.wikipedia.org/wiki/Ne-Yo",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2006 年首張專輯《In My Own Words》登上 Billboard 200 冠軍，主打歌〈So Sick〉也拿下美國流行榜冠軍。",
+      "src": "https://www.grammy.com/artists/ne-yo/5109/",
+      "src2": "https://www.songhall.org/profiles/schaffer-smith-p-k-a-ne-yo",
+      "from": "new"
+     },
+     {
+      "f": "2007 年的《Because of You》拿下葛萊美最佳當代 R&B 專輯（得獎），是他的第一座葛萊美。",
+      "src": "https://www.grammy.com/artists/ne-yo/5109/",
+      "src2": "https://www.songhall.org/profiles/schaffer-smith-p-k-a-ne-yo",
+      "from": "new"
+     },
+     {
+      "f": "第 51 屆葛萊美獎（2009）以〈Miss Independent〉拿下最佳男 R&B 演唱（得獎）與最佳 R&B 歌曲（得獎，與 Mikkel Eriksen、Tor Hermansen 共同掛名）。",
+      "src": "https://www.grammy.com/artists/ne-yo/5109/",
+      "src2": "https://en.wikipedia.org/wiki/Ne-Yo",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2006 年首張專輯《In My Own Words》登上 Billboard 200 冠軍。",
+    "src": "https://www.grammy.com/artists/ne-yo/5109/",
+    "from": "new"
+   },
+   {
+    "f": "《Because of You》拿下葛萊美最佳當代 R&B 專輯（得獎）。",
+    "src": "https://www.grammy.com/artists/ne-yo/5109/",
+    "from": "new"
+   },
+   {
+    "f": "2012 年獲詞曲作家名人堂 Hal David Starlight Award。",
+    "src": "https://www.songhall.org/profiles/schaffer-smith-p-k-a-ne-yo",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 4 次：英文維基 Ne-Yo（WebFetch 摘要）、葛萊美官網藝人頁（curl 讀全文）、WebSearch（他為別人寫的歌與詞曲作家名人堂）、詞曲作家名人堂 Ne-Yo 頁（curl 讀全文）。失敗 1 次：Britannica Ne-Yo 條目 404。詞曲作家名人堂頁是官方機構的個人頁，屬名人堂官方性質、與維基為獨立來源。『得獎』屆次：葛萊美官網寫『2007 年度、獲頒最佳當代 R&B 專輯（Because of You）』，實際頒獎在 2008 年初（第 50 屆），維基摘要標 2008 年；facts 寫『2007 年的《Because of You》』指專輯年份、不寫屆次與頒獎年，寫作層需避免把 2007 寫成頒獎年。〈Miss Independent〉：葛萊美官網與維基摘要都寫第 51 屆最佳男 R&B 演唱與最佳 R&B 歌曲兩項得獎（官網列為 Winner），詞曲作家名人堂頁也稱該曲為 GRAMMY-winning；最佳 R&B 歌曲是詞曲獎，得主為三位詞曲作者。專輯《Year of the Gentleman》在同屆只入圍年度專輯與最佳當代 R&B 專輯、未得獎。累計得獎座數與 RIAA 認證銷量（2,900 萬）會變動，不收。Mario 那首歌在詞曲作家名人堂頁寫『co-writer』、維基摘要寫『his composition』，facts 寫『替 Mario 寫的』、不寫獨寫。『〈Irreplaceable〉為 Beyoncé 寫』：詞曲作家名人堂頁與搜尋摘要都寫『a hand in writing』，維基摘要寫『wrote or co-wrote』，寫作層宜寫『參與寫作』而非獨寫，facts 已寫『參與寫作』。單源未收：藝名由製作人 Big D Evans 取、Envy 曾上《Showtime at the Apollo》、簽入 Def Jam 由 Jay-Z 主導、Billboard 稱〈Let Me Love You〉是十年榜第八名（名人堂頁單源）、2010 年代在 Motown 擔任主管。同名確認：卡池 5 張為 Ne-Yo 本人（2005–2022），無同名混卡。"
  },
  {
   "key": "outkast",
