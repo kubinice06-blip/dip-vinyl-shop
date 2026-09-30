@@ -647,5 +647,82 @@
     "failedFetches": 1,
     "status": "full",
     "notes": "事實庫 research 為空、published 三張在；卡池四張（The Hawk Flies High、Encounters Ben Webster、At Ease with Coleman Hawkins、Body and Soul）皆為 Coleman Hawkins 本人，無同名混卡。搜尋 5 次：維基 Hawkins、Britannica、維基〈Body and Soul (1930 song)〉、WebSearch（國家錄音登錄）、Open Culture；失敗 1 次：LoC 國家錄音登錄 PDF（只回傳二進位，讀不出文字）。『Hawkins 影響後輩』：維基寫 Lester Young、Ben Webster 與 Monk、Gillespie 等 bebop 先驅，Britannica 寫搖擺時代樂手與 Coltrane、Rollins，兩源寫的具體人名不重疊，facts 只寫兩源一致的概括，不點名；Britannica 點名 Coltrane、Rollins 與維基點名 Young、Webster、Monk、Gillespie 皆單源。〈Body and Soul〉條：維基〈Body and Soul〉與 Open Culture 都提到 2004 國家錄音登錄與『旋律只點到』，但 Open Culture 內容與維基相近，可能非獨立；『early tremors of bebop』維基 Hawkins 與 Open Culture 措辭一致，疑同一出處。單源、不收進 facts：Leonard Feather 稱它是他最大的暢銷曲、讓他成為全國知名（維基〈Body and Soul〉單源）；『首張商業成功的純爵士錄音』（Open Culture 單源）；Hawkins 說他錄完沒回頭聽、事後覺得變成經典很有趣（Open Culture 單源）；1921 年加入 Mamie Smith's Jazz Hounds、1934 至 1939 年在巴黎與 Django Reinhardt、Benny Carter 合作、在 Topeka 就讀 Washburn College 學和聲（維基單源）；1944 年參與最早的 bebop 錄音（Britannica 單源）；Joachim-Ernst Berendt 說他之前次中音不是被承認的爵士樂器（維基轉引，單源，f 欄只取兩源皆有的概括）；死因肝病（維基單源）。上線簡介 Body and Soul 那張的卡單問題（MB 配到 2001 年法國合輯而非 1986 Bluebird 結集）是配對問題，不是事實錯誤，本層不列 pubIssues。"
+  },
+  {
+    "key": "david murray octet",
+    "name": "David Murray Octet",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "領隊 David Murray 1955 年 2 月 19 日生於美國加州灣區，後來就讀洛杉磯附近的 Pomona College。",
+            "src": "https://en.wikipedia.org/wiki/David_Murray_(saxophonist)",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/murray-dave",
+            "from": "new"
+          },
+          {
+            "f": "Murray 的早期啟發包括 Albert Ayler 等自由爵士樂手。",
+            "src": "https://en.wikipedia.org/wiki/David_Murray_(saxophonist)",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/murray-dave",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "八重奏 1980 年成立，首張專輯《Ming》1980 年 7 月在紐約錄音，由義大利 Black Saint 廠牌發行；陣容有 Murray（次中音薩克斯風與低音單簧管）、Henry Threadgill、Olu Dara、Butch Morris、George E. Lewis、Anthony Davis、Wilber Morris 與 Steve McCall。",
+            "src": "https://en.wikipedia.org/wiki/Ming_(album)",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/murray-dave",
+            "from": "new"
+          },
+          {
+            "f": "樂評常拿 Charles Mingus 來比這支八重奏：既有寫好的多聲部編排，也有各人的獨奏與集體即興。",
+            "src": "https://en.wikipedia.org/wiki/Ming_(album)",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/murray-dave",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Murray 是世界薩克斯風四重奏（World Saxophone Quartet）的成員，該團與 Oliver Lake、Julius Hemphill、Hamiet Bluiett 同組，持續了二十多年。",
+            "src": "https://en.wikipedia.org/wiki/David_Murray_(saxophonist)",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/murray-dave",
+            "from": "new"
+          },
+          {
+            "f": "Murray 1991 年獲丹麥 Jazzpar 獎；該獎 1990 至 2004 年由國際評審選出，得主含 Muhal Richard Abrams、Lee Konitz、Tommy Flanagan。",
+            "src": "https://en.wikipedia.org/wiki/David_Murray_(saxophonist)",
+            "src2": "https://en.wikipedia.org/wiki/Jazzpar_Prize",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1980 年 7 月錄下八重奏首張專輯《Ming》。",
+        "src": "https://en.wikipedia.org/wiki/Ming_(album)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基寫 Murray 生於 Oakland，Encyclopedia.com 寫 Berkeley（搜尋摘要另說生於 Oakland、在 Berkeley 長大）；facts 只寫『加州灣區』。",
+      "維基 Murray 條目列 Home 為 1981、New Life 為 1985、Hope Scope 為 1987，而卡池列 Home 1982、New Life 1987、Hope Scope 1991；維基《Home》專頁寫 1981 年 10 至 11 月錄音、1982 年發行，卡池年份可能是發行年或再版年，New Life 與 Hope Scope 的發行年本層未逐張查，寫作層不要拿卡池年份寫成錄音年。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 5,
+    "status": "thin",
+    "notes": "事實庫 research 與 published 皆空，全格從零查；⚠ 名冊 David Murray Octet 對應的是 David Murray 的八重奏（卡池 Ming、Home、New Life、Hope Scope 皆為八重奏專輯），身分為同一人／同一團，無同名混卡。搜尋 7 次：維基 David Murray、維基《Ming》、WebSearch（Ming 與生平）、維基《Home》、WebSearch（生平）、Encyclopedia.com、維基 Jazzpar Prize。失敗請求 5 次（超過上限 4 一次，照實記）：Britannica 網址（404）、All About Jazz（403）、Berkeleyside（429）、davidmurraymusic.com（523）、Guggenheim 基金會頁（404）。origin 只兩條，legacy 兩條也偏薄；第二源多為 Encyclopedia.com（其文本為傳記詞條，舊資料，範圍到 1990 年代）；sound 第一條的陣容取自維基《Ming》，Encyclopedia.com 只證實 Morris、McCall、Threadgill 與 1980 年成立，其餘成員名單為維基《Ming》單源（搜尋摘要另列相同名單，來源為維基，非獨立），寫作層請把完整名單視為維基單源；同理 sound 第二條 Mingus 比較：維基《Ming》（Tom Hull）、維基《Home》（Robert Palmer 另提 Ellington 與 Mingus）與 Encyclopedia.com（1990 年代被視為『Mingus 之後最厲害的綜合者』），facts 只取 Mingus。Jazzpar 條兩源皆維基（同站非獨立）。單源、不收進 facts：《Ming》被 Penguin Guide 稱『對許多樂迷而言，1980 年代的爵士專輯在這個年代尚未開始前就已錄成』、AllMusic 五星、Christgau 與 Tom Hull 給 A（維基《Ming》單源，搜尋摘要另有 Penguin『三代即興音樂壓縮成 40 分鐘』說法，來源未開頁）；《Home》1981 年錄音、1982 年發行，Penguin 核心收藏、Rolling Stone Jazz Record Guide 五星（維基《Home》單源）；Murray 母親在教會彈琴（Encyclopedia.com 寫 pianist，搜尋摘要寫母親 Catherine Murray 是 organist 且他 1965 年在 Berkeley 教會首次吹薩克斯風，未開頁；維基明說未提，單源且兩說不一）；他 9 歲吹中音薩克斯風、後來在靈魂樂團改吹次中音、跟 Stanley Crouch 學習、與 Butch Morris 及 John Carter 合作、1975 年移居紐約（Encyclopedia.com 單源；維基未給日期）；1989 年葛萊美（《Blues for Coltrane》，維基單源）、1989 年 Guggenheim（維基單源，Guggenheim 頁 404）；1976 年成立 World Saxophone Quartet（搜尋摘要）；Encyclopedia.com 稱他到 1990 年代被許多人視為『Mingus 之後最強的綜合者』（單源）。legacy 格偏薄，status 記 thin。"
   }
 ]
