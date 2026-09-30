@@ -606,5 +606,252 @@
   "status": "full",
   "pubIssues": [],
   "notes": "事實庫為空，從零查。七次：維基樂團條目、WebSearch（起源與傳承）、Flood 專訪、Nashville Scene Denison 專文、Arts Fuse Denison 專訪、WebSearch（後輩影響）、In The Loop 專文；Guitar World 只回傳被截斷的頁面，無內文，不計入（failedFetches 1）。Nashville Scene 寫早期三張專輯是『noise-rock 的支柱、常被模仿卻難以複製』（單源）；該文與搜尋摘要文字重複，視為同源。單源未進 facts：維基寫 Albini 說他們是『the best band of the 90s, hands down』；In The Loop 寫影響對象『from Nirvana to recent acts like Idles and Viagra Boys』（搜尋摘要同句，出處疑為同文）、Sims 是『偉大貝斯手』評語、Yow 被比作 Iggy Pop（形容，未收）；Nashville Scene 與搜尋摘要寫 Denison 混合 jazz、blues、post-punk、art rock 與 flamenco 吉他，兩者疑為同文；Arts Fuse 寫 Denison 在 Eastern Michigan University 學古典吉他，Nashville Scene 寫他是密西根人；Flood 寫 1995 年與 Capitol 簽約引來 Albini 批評（搜尋摘要同）、Lollapalooza 1995 演出；《Rack》2024 年 9 月 13 日由 Ipecac 發行、約兩週錄成（Arts Fuse 單源）。poolAlbums 四張皆為此團（《Goat》《Liar》《Blue》《Rack》），無同名混卡。origin 的第一條中『樂團遷往芝加哥』維基（1989 年）與 Flood、In The Loop 皆一致，年份不寫。"
+ },
+ {
+  "key": "the libertines",
+  "name": "The Libertines",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Libertines 由 Carl Barât 與 Pete Doherty 兩位主唱在倫敦創立，1990 年代末成軍。",
+      "src": "https://en.wikipedia.org/wiki/The_Libertines",
+      "src2": "https://en.wikipedia.org/wiki/Pete_Doherty",
+      "from": "new"
+     },
+     {
+      "f": "兩人共住的公寓被他們叫作「Albion Rooms」，成為樂團神話的一部分；Doherty 把 Albion 想像成一艘駛向烏托邦「Arcadia」的船，那是沒有規則與權威的地方，這個意象反覆出現在樂團的創作裡。",
+      "src": "https://en.wikipedia.org/wiki/Pete_Doherty",
+      "src2": "https://stereogum.com/2202538/libertines-up-the-bracket-turns-20/reviews/the-anniversary",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "聲音把 Beatles 式的 skiffle 節奏、The Clash 的朋克態度與英倫搖滾傳統混在一起，屬於 2000 年代初的 garage rock revival，被形容是英國對 The Strokes 的回答。",
+      "src": "https://faroutmagazine.co.uk/the-libertines-up-the-bracket-review/",
+      "src2": "https://stereogum.com/2202538/libertines-up-the-bracket-turns-20/reviews/the-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "首張《Up the Bracket》（2002 年 10 月）由 The Clash 的 Mick Jones 製作。",
+      "src": "https://en.wikipedia.org/wiki/The_Libertines",
+      "src2": "https://en.wikipedia.org/wiki/Up_the_Bracket",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Up the Bracket》被視為英國 2000 年代初 post-punk revival 發展中不可或缺的一張。",
+      "src": "https://en.wikipedia.org/wiki/Up_the_Bracket",
+      "src2": "https://stereogum.com/2202538/libertines-up-the-bracket-turns-20/reviews/the-anniversary",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Doherty 2004 年被逐出樂團，樂團隨之解散；2010 年 8 月四位成員重聚登台。",
+      "src": "https://en.wikipedia.org/wiki/Pete_Doherty",
+      "src2": "https://en.wikipedia.org/wiki/The_Libertines",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2002 年 10 月發行首張《Up the Bracket》，Mick Jones 製作。",
+    "src": "https://en.wikipedia.org/wiki/The_Libertines",
+    "src2": "https://en.wikipedia.org/wiki/Up_the_Bracket",
+    "from": "new"
+   },
+   {
+    "f": "2010 年樂團重聚。",
+    "src": "https://en.wikipedia.org/wiki/Pete_Doherty",
+    "src2": "https://en.wikipedia.org/wiki/The_Libertines",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Albion Rooms 位置：Pete Doherty 維基寫 Bethnal Green 的 Teesdale Street，Stereogum 寫 Camden Road；兩源不一致，facts 不寫地址。",
+   "樂團成軍年：維基樂團條目寫 1997；Doherty 條目只寫『1990 年代末』；facts 寫『1990 年代末』。"
+  ],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫為空，從零查。七次：維基樂團條目、WebSearch（《Up the Bracket》）、Far Out 樂評、維基 Pete Doherty、維基《Up the Bracket》、WebSearch（後輩影響）、Stereogum 二十週年專文；Britannica 404、Norman Records 403、Golden Plec 403 未取得，不計入（failedFetches 3）。維基樂團條目、Pete Doherty、《Up the Bracket》三條同站不同條目，非獨立；Far Out 與 Stereogum 為獨立佐證。單源未進 facts：維基《Up the Bracket》寫英國專輯榜最高第 35 名、英國白金（30 萬張）、Pitchfork 2000 年代 200 大第 138 名、NME 英國最佳專輯第 10 名與 500 大第 70 名、Rolling Stone 百大首張專輯第 61 名、Uncut 榜單、Zane Lowe 2008 年選為『Masterpiece』；Stereogum 寫他們直接影響 Arctic Monkeys、Razorlight、Klaxons 等 2000 年代英國獨立樂團、『給 Britpop 之後的英國帶來自豪』；搜尋摘要（未開頁，來自其他站）另寫 Kooks、Catfish and the Bottlemen、The Vaccines 也自陳受其影響；維基樂團條目寫 2004 年第二張同名專輯登上英國冠軍、2024 年《All Quiet on the Eastern Esplanade》登上英國冠軍、NME Awards；Doherty 條目寫他在 Brunel 大學的姊姊 Amy-Jo 介紹兩人認識的經過；Far Out 寫『our answer to The Strokes』（引述樂評用語，已改寫）。Doherty 被逐出的經過與物質濫用細節不寫。poolAlbums 四張皆為此團，無同名混卡。"
+ },
+ {
+  "key": "the microphones",
+  "name": "The Microphones",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Microphones 是 Phil Elverum 的個人計畫，他出身華盛頓州 Anacortes；到 Olympia 的 Evergreen State College 就讀後，與 K Records 老闆 Calvin Johnson 結識。",
+      "src": "https://en.wikipedia.org/wiki/The_Microphones",
+      "src2": "https://exclaim.ca/music/article/microphones_mount_eerie_and_melancholy_the_career_of_phil_elverum",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Elverum 一直用類比磁帶錄音，偏好家用與簡陋的 lo-fi 設備；聲音把 lo-fi 搖滾、民謠與噪音，和自然的環境聲、厚重的錄音室層次疊在一起。",
+      "src": "https://exclaim.ca/music/article/microphones_mount_eerie_and_melancholy_the_career_of_phil_elverum",
+      "src2": "https://en.wikipedia.org/wiki/The_Microphones",
+      "from": "new"
+     },
+     {
+      "f": "代表作《The Glow Pt. 2》2000 年 5 月至 2001 年 3 月在 Olympia 的 Dub Narcotic Studio 以 16 軌類比磁帶錄成，Elverum 大多獨自在清晨錄音。",
+      "src": "https://en.wikipedia.org/wiki/The_Glow_Pt._2",
+      "src2": "https://exclaim.ca/music/article/microphones_mount_eerie_and_melancholy_the_career_of_phil_elverum",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《The Glow Pt. 2》（2001）獲 Pitchfork 選為 2001 年度最佳專輯第 1 名，也在該站 2000 年代百大專輯榜上排第 73 名。",
+      "src": "https://exclaim.ca/music/article/microphones_mount_eerie_and_melancholy_the_career_of_phil_elverum",
+      "src2": "https://en.wikipedia.org/wiki/The_Microphones",
+      "from": "new"
+     },
+     {
+      "f": "他的作品被認為深深影響了 indie 與 lo-fi 圈，太平洋西北地區的音樂人與新一代 lo-fi 饒舌歌手都是受影響者。",
+      "src": "https://en.wikipedia.org/wiki/The_Microphones",
+      "src2": "https://exclaim.ca/music/article/microphones_mount_eerie_and_melancholy_the_career_of_phil_elverum",
+      "from": "new"
+     },
+     {
+      "f": "Elverum 2003 年在《Mount Eerie》之後停用 The Microphones 名義，改以 Mount Eerie 之名發表作品。",
+      "src": "https://en.wikipedia.org/wiki/The_Microphones",
+      "src2": "https://exclaim.ca/music/article/microphones_mount_eerie_and_melancholy_the_career_of_phil_elverum",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年《The Glow Pt. 2》登上 Pitchfork 年度榜首。",
+    "src": "https://exclaim.ca/music/article/microphones_mount_eerie_and_melancholy_the_career_of_phil_elverum",
+    "src2": "https://en.wikipedia.org/wiki/The_Microphones",
+    "from": "new"
+   },
+   {
+    "f": "2003 年停用 The Microphones 名義，改用 Mount Eerie。",
+    "src": "https://en.wikipedia.org/wiki/The_Microphones",
+    "src2": "https://exclaim.ca/music/article/microphones_mount_eerie_and_melancholy_the_career_of_phil_elverum",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Elverum 搬到 Olympia 的年份：維基樂團條目寫 1996 年 The Microphones 於 Olympia 成立，Exclaim 寫他 1997 年搬去 Olympia；兩源不一致，facts 不寫年份。",
+   "上線簡介《Mount Eerie》寫 2003 年 1 月 21 日 K Records 發行、之後把名義從 The Microphones 改成 Mount Eerie，與維基和 Exclaim 的 2003 年停用名義一致，無衝突。"
+  ],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫只有《Don't Wake Me Up》的評分摘錄，加三張上線簡介（無生平與後輩評價）。四次：維基樂團條目、WebSearch（Elverum 與 K Records）、Exclaim 生涯專文、維基《The Glow Pt. 2》。維基樂團條目與《The Glow Pt. 2》同站不同條目，非獨立；Exclaim 為獨立佐證。origin 第一條 Calvin Johnson 為導師、讓他使用 Dub Narcotic 錄音室是 Exclaim 單源；f 只寫兩源皆有的『結識 Calvin Johnson』。單源未進 facts：Exclaim 寫 Elverum 1978 年 5 月 23 日生（維基《The Glow Pt. 2》的『2000 年 5 月 23 日』巧合同日，未混用）；維基《The Glow Pt. 2》寫 Guardian 2019 年 21 世紀百大專輯、Paste 2024 年 300 大專輯第 189 名、Lil Peep 取樣、Kevin Morby《Singing Saw》、Sylvan Esso〈The Glow〉、Jack Tatum 受其啟發；維基樂團條目寫 2020 年《Microphones in 2020》（44 分鐘的單首作品）與 2007 單曲、2019 一場演出的重聚；搜尋摘要（AllMusic／Lasso 等，未開頁）寫『新一代 lo-fi MC 把他的音樂列為最愛』。事實庫的 Don't Wake Me Up 條目（Nitsuh Abebe 的評語、AllMusic 與 Pitchfork 分數）為專輯層級，未用。poolAlbums 四張皆為此計畫（《The Glow Pt. 2》《Mount Eerie》《It Was Hot, We Stayed in the Water》《Don't Wake Me Up》），無同名混卡。"
+ },
+ {
+  "key": "the offspring",
+  "name": "The Offspring",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Offspring 來自加州橘郡（Orange County），主唱是 Dexter Holland。",
+      "src": "https://en.wikipedia.org/wiki/The_Offspring",
+      "src2": "https://www.loudersound.com/features/the-story-behind-the-offspring-smash-self-esteem",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "聲音是 skate punk 與 pop-punk，另混入 melodic hardcore 與另類搖滾的成分。",
+      "src": "https://en.wikipedia.org/wiki/The_Offspring",
+      "src2": "https://en.wikipedia.org/wiki/Smash_(The_Offspring_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1994 年的《Smash》由獨立廠牌 Epitaph 發行，全球銷量約 1100 萬張，是史上銷量最高的獨立廠牌專輯之一。",
+      "src": "https://en.wikipedia.org/wiki/The_Offspring",
+      "src2": "https://albumism.com/features/the-offspring-smash-album-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "《Smash》在美國 Billboard 200 最高第 4 名，主打歌〈Come Out and Play〉〈Self Esteem〉〈Gotta Get Away〉都在 MTV 與電台大量播放。",
+      "src": "https://albumism.com/features/the-offspring-smash-album-anniversary",
+      "src2": "https://en.wikipedia.org/wiki/Smash_(The_Offspring_album)",
+      "from": "new"
+     },
+     {
+      "f": "《Smash》與同期 Green Day 的《Dookie》一起把美國朋克推向主流，是 1990 年代中期朋克復興的關鍵作品。",
+      "src": "https://www.loudersound.com/features/the-story-behind-the-offspring-smash-self-esteem",
+      "src2": "https://en.wikipedia.org/wiki/Smash_(The_Offspring_album)",
+      "from": "new"
+     },
+     {
+      "f": "《Smash》預算只有約 2 萬美元上下，製作人是 Thom Wilson。",
+      "src": "https://www.loudersound.com/features/the-story-behind-the-offspring-smash-self-esteem",
+      "src2": "https://en.wikipedia.org/wiki/Smash_(The_Offspring_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1994 年 4 月 8 日《Smash》由 Epitaph 發行，銷量逾千萬張。",
+    "src": "https://en.wikipedia.org/wiki/Smash_(The_Offspring_album)",
+    "src2": "https://albumism.com/features/the-offspring-smash-album-anniversary",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Smash 錄音預算：Louder 寫約 2 至 3 萬美元，維基《Smash》條目寫 2 萬美元；facts 寫『約 2 萬美元上下』。",
+   "銷量：維基樂團條目與 Louder、Albumism 寫逾 1100 萬張；搜尋摘要（Fandom）寫 1200 至 1600 萬張；採三個獨立頁面一致的約 1100 萬。"
+  ],
+  "searches": 5,
+  "failedFetches": 3,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫為空，從零查。五次：維基樂團條目、WebSearch（《Smash》）、Louder《Smash》專文、Albumism 專文、維基《Smash》；Britannica 404、Rolling Stone《Smash》專文（307 轉址付費牆）、Kerrang 403 未取得，不計入（failedFetches 3）。維基樂團條目與《Smash》同站不同條目，非獨立；Louder 與 Albumism 為獨立佐證。origin 的第二源 Louder 只證實 Orange County，維基寫 1984 年在 Garden Grove 以 Manic Subsidal 之名成軍、Noodles 為核心成員（單源，未進 facts）。單源未進 facts：維基寫 Greg K. 為創團貝斯手、《Americana》（1998）Billboard 200 最高第 2 名與美國逾 500 萬張、與 Green Day、NOFX、Bad Religion、Rancid 並列復興主流朋克、影響 Avril Lavigne 與 Simple Plan；維基《Smash》寫 20 天在 North Hollywood 的 Track Record Studios 錄成、美國 6 倍白金、〈Come Out and Play〉用中東音階、〈What Happened to You?〉的牙買加 ska；Louder 寫 Noodles 當時在迪士尼附近的 Earl Warren 國中當工友、Greg K. 在印刷廠上班、Holland 就讀 USC、Epitaph 老闆 Brett Gurewitz 的『Everything's changed』一句、獨立朋克團原本銷量天花板約 10 萬張、樂團刻意限縮曝光；Albumism 寫專輯在 Kurt Cobain 過世三天後發行、部分人認為 Offspring 比 Green Day 更『authentically punk』。沒有查到後輩明確點名受其影響的雙源。poolAlbums 四張皆為此團，無同名混卡。"
  }
 ]
