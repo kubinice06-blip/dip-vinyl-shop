@@ -297,5 +297,259 @@
   "failedFetches": 3,
   "status": "thin",
   "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 Snoh Aalegra、WebSearch（生平）、Vogue Scandinavia、Capital XTRA、WebSearch（Prince 與葛萊美）、Grammy 官網、WBSS Media。失敗請求 3 次（Billboard 307 轉址、tollbit 轉址 402、AllMusic 403）。⚠ 非獨立：WBSS Media 的簡介文字與維基幾乎逐句相同（疑抄自維基），故 Prince 導師與 cinematic soul 兩條的 src2 等同單源，寫作層應保守（可寫「據維基」不必說多方證實）；Prince 導師事件另見搜尋摘要，未開頁。legacy 格只有這兩條，其餘影響力與共識評價（後輩點名、榜單票選）查不到有出處的說法，故整體 thin。單源未收：本名 Shahrzad Fooladi、1987 年 9 月 13 日生（維基與 Capital XTRA 寫法一致，但 Capital XTRA 為八卦向資料頁；生日不放 facts）；9 歲開始寫歌、13 歲與 Sony Music Sweden 簽約、以 Sheri 之名發行（2009–2010）、2013 年簽 No I.D. 的 ARTium、2020 年簽 Roc Nation（維基與 WBSS，非獨立）；Vogue 稱她 13 歲起音樂生涯，維基寫 13 歲簽約但未發行，說法不完全相同；「我用瑞典語數數、用英語寫作與做夢、用波斯語感受」（Vogue 單源）；Drake 在 2017 年《More Life》取樣〈Time〉、《Ugh, Those Feels Again》Billboard R&B 專輯銷量榜第 3、〈I Want You Around〉Adult R&B Songs 榜冠軍（維基單源）；2023 年〈Do 4 Love〉入圍最佳傳統 R&B 演出（Grammy 官網單源）。"
+ },
+ {
+  "key": "snooks eaglin",
+  "name": "Snooks Eaglin",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Snooks Eaglin（本名 Fird Eaglin Jr.）生於紐奧良，一歲多就失明。",
+      "src": "https://en.wikipedia.org/wiki/Snooks_Eaglin",
+      "src2": "https://musicrising.tulane.edu/discover/people/snooks-eaglin/",
+      "from": "new"
+     },
+     {
+      "f": "他 5 歲時父親給了他一把吉他，他聽著收音機與唱片自學。",
+      "src": "https://en.wikipedia.org/wiki/Snooks_Eaglin",
+      "src2": "https://musicrising.tulane.edu/discover/people/snooks-eaglin/",
+      "from": "new"
+     },
+     {
+      "f": "「Snooks」的綽號取自廣播劇角色 Baby Snooks，因為他小時候老愛惹事。",
+      "src": "https://en.wikipedia.org/wiki/Snooks_Eaglin",
+      "src2": "https://musicrising.tulane.edu/discover/people/snooks-eaglin/",
+      "from": "new"
+     },
+     {
+      "f": "他 2009 年 2 月 18 日因心臟病發過世。",
+      "src": "https://en.wikipedia.org/wiki/Snooks_Eaglin",
+      "src2": "https://musicrising.tulane.edu/discover/people/snooks-eaglin/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他有「Human Jukebox」（人肉點唱機）之稱：曲目橫跨藍調、節奏藍調、爵士、搖滾與鄉村，能接受現場點歌，常在同一場演出裡切換風格。",
+      "src": "https://en.wikipedia.org/wiki/Snooks_Eaglin",
+      "src2": "https://musicrising.tulane.edu/discover/people/snooks-eaglin/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "民俗學者 Harry Oster 在紐奧良街頭發現他並替他錄音，錄音由 Folkways 發行。",
+      "src": "https://en.wikipedia.org/wiki/Snooks_Eaglin",
+      "src2": "https://en.wikipedia.org/wiki/Harry_Oster",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "出生年：維基 Snooks Eaglin 寫 1936 或 1937 年 1 月 21 日，Tulane 寫 1936 年 1 月 21 日，搜尋摘要寫 1937；facts 不寫出生年與享年。",
+   "失明原因與時間：維基寫一歲生日後不久因青光眼，Tulane 寫 19 個月大、腦瘤手術與青光眼；facts 只寫「一歲多失明」。",
+   "Oster 的錄音年份：維基 Eaglin 條目寫 1958 至 1960 年 7 次錄音，維基 Oster 條目只寫 1959 年賣給 Folkways；上線簡介寫 1958 年起、1959 年由 Folkways 以《New Orleans Street Singer》發行；facts 不寫年份，上線簡介的年份本層無第二源可反驗。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 8,
+  "status": "thin",
+  "notes": "事實庫 research 空、有 3 篇上線簡介（皆無來源網址），三格靠補查。搜尋 5 次：維基 Snooks Eaglin、WebSearch（訃聞與 Human Jukebox）、Tulane Music Rising、WebSearch（影響力與紀念）、維基 Harry Oster；另有一次帶網域限制的 WebSearch 被 API 拒絕（未取得任何內容）。失敗請求 8 次（WWOZ 403、NPR 503、Folkways 403、Verite News 403、All About Jazz 403、Rubber City Review 503、Jazzapedia 403，加上 API 拒絕的搜尋），遠超上限 4 次，照實記錄；主流報紙（NYT、Guardian、Telegraph 等）網域對本工具封鎖，取不到訃聞第二源。法定上限外沒有多取事實。legacy 格查無兩源支持的有出處共識評價，標 none；下列只有單源或搜尋摘要，故不放 facts：Tulane 稱他與 Professor Longhair、Wild Magnolias 錄音、彈奏〈Iko Iko〉，Mid City Rock 'N' Bowl T 恤「There ain't nothing more New Orleans than Snooks Eaglin playing at the Mid City Rock 'N' Bowl」（Tulane 單源）；搜尋摘要稱他影響 Eric Clapton 與 Bonnie Raitt、追思禮有二線遊行、Fair Grounds 立像、2009 年 Jazz Fest 官方刊物封面、與 Allen Toussaint 和 Deacon John 同台（來源為 NPR、WWOZ、All About Jazz 頁，皆未能開頁）。其他單源：11 歲以〈Twelfth Street Rag〉贏得地方電台比賽（Tulane）；自稱曲庫約 2500 首、唱腔近 Ray Charles、1950 年代曾自稱 Little Ray Charles、1960 至 1963 年 Imperial 錄 26 首 R&B、1980 年代起 Black Top 是最多產期、2008 年診斷出攝護腺癌（維基）。上線簡介的 Imperial 年份與 Black Top 首作說法本層未反驗，不列 pubIssues。Harry Oster 那條的兩源是同站不同條目，非獨立；grokipedia 不採。"
+ },
+ {
+  "key": "swv",
+  "name": "SWV",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "SWV（Sisters With Voices）是來自紐約的三人女團，成員是 Cheryl \"Coko\" Gamble、Tamara \"Taj\" Johnson 與 Leanne \"Lelee\" Lyons。",
+      "src": "https://en.wikipedia.org/wiki/SWV",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/swv",
+      "from": "new"
+     },
+     {
+      "f": "她們最初是以福音合唱起步。",
+      "src": "https://en.wikipedia.org/wiki/SWV",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/swv",
+      "from": "new"
+     },
+     {
+      "f": "三人來自紐約的 Bronx 與 Brooklyn，在高中相識。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/swv",
+      "src2": "https://www.nolazine.com/post/swv-sisters-with-voices-from-gospel-beginnings-to-r-b-legends",
+      "from": "new"
+     },
+     {
+      "f": "經理 Maureen Singleton 為她們談成 RCA 合約。",
+      "src": "https://en.wikipedia.org/wiki/SWV",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/swv",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Coko 是主唱，嗓音高亢有力，是團的聲音招牌。",
+      "src": "https://en.wikipedia.org/wiki/SWV",
+      "src2": "https://www.nolazine.com/post/swv-sisters-with-voices-from-gospel-beginnings-to-r-b-legends",
+      "from": "new"
+     },
+     {
+      "f": "〈Right Here〉的 Human Nature 混音由 Teddy Riley 製作，取樣 Michael Jackson 的〈Human Nature〉。",
+      "src": "https://en.wikipedia.org/wiki/Right_Here_(SWV_song)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/swv",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《It's About Time》（1992）達多白金銷量。",
+      "src": "https://en.wikipedia.org/wiki/SWV",
+      "src2": "https://www.bronxwalkoffame.com/inductees/singer-with-voices-swv",
+      "from": "new"
+     },
+     {
+      "f": "〈Weak〉登上 Billboard Hot 100 冠軍。",
+      "src": "https://en.wikipedia.org/wiki/SWV",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/swv",
+      "from": "new"
+     },
+     {
+      "f": "她們被形容是女性 R&B 團體的先驅，影響了一整代藝人。",
+      "src": "https://www.bronxwalkoffame.com/inductees/singer-with-voices-swv",
+      "src2": "https://www.nolazine.com/post/swv-sisters-with-voices-from-gospel-beginnings-to-r-b-legends",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "SWV 2005 年重新聚首。",
+      "src": "https://en.wikipedia.org/wiki/SWV",
+      "src2": "https://www.nolazine.com/post/swv-sisters-with-voices-from-gospel-beginnings-to-r-b-legends",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈Weak〉登上 Billboard Hot 100 冠軍。",
+    "src": "https://en.wikipedia.org/wiki/SWV",
+    "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/swv",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：維基與 Nolazine 寫 1988 年以福音團體起步，Bronx Walk of Fame 寫 1990 年成軍，Encyclopedia.com 寫 1990 年取名；不寫成軍年。",
+   "RCA 合約年：維基與 Nolazine 寫 1991，Encyclopedia.com 寫 1992；不寫年份。停團年：維基與 Nolazine 寫 1998，Encyclopedia.com 寫 1999，Bronx Walk of Fame 寫 1998 年休團；不寫停團年，era 只寫 2005 重聚。",
+   "成員音域：維基寫 Lelee 為 soprano，Nolazine 寫 alto；不寫音域分工。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 SWV、WebSearch、Bronx Walk of Fame、Encyclopedia.com、The Root（頁面內容空白，未取得）、Nolazine、維基〈Right Here〉；失敗請求 1 次（Ebony 403）。⚠ 非獨立：Nolazine 的文字與維基高度相同（同一份 Perrier 送 demo 帶、1988、1991、1998 等細節），視為抄自維基，凡以 Nolazine 當 src2 的條目（Coko 主唱、2005 重聚、先驅評價）實質接近單源，寫作層宜保守；Bronx Walk of Fame 頁面文字與 Oreate 等站雷同，「先驅」評價屬介紹文字而非權威票選，寫作層不宜寫成公認定論。〈Right Here〉那條的兩源：維基（同站另一條目）與 Encyclopedia.com 都寫 Riley 混音取樣 Michael Jackson。單源未收：Female Edition 舊團名與崇拜 New Edition（Encyclopedia.com 單源，搜尋摘要另提）；Perrier 送 demo 帶（維基與 Nolazine，非獨立）；It's About Time 賣 500 萬張（Encyclopedia.com 單源）；〈Right Here〉Hot 100 最高第 2 名（與〈Downtown〉雙 A 面）、R&B 榜冠軍 7 週、RIAA 白金、Billboard 2017「百大女子團體歌曲」第 17 名、被 2Pac、Chris Brown、Nas 取樣（維基〈Right Here〉單源）；Bronx Walk of Fame 2023 年入選（單源）；Soul Train 2017 年 Lady of Soul 獎、累計專輯銷量逾 540 萬（維基單源）；搜尋摘要稱 Michael Jackson 允許她們免費取樣（未開頁）；Encyclopedia.com 引述評語「street-level imaging and aggressive, swing-style harmonies」與「a real New York vibe」（單源，可作寫作層參考但不得當事實）。"
+ },
+ {
+  "key": "teena marie",
+  "name": "Teena Marie",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Teena Marie 是白人靈魂樂歌手，卻被黑人聽眾徹底接納。",
+      "src": "https://en.wikipedia.org/wiki/Teena_Marie",
+      "src2": "https://gulfnews.com/lifestyle/teena-marie-ivory-queen-of-soul-dies-at-54-1.736524",
+      "from": "new"
+     },
+     {
+      "f": "她 1976 年與 Motown 簽下獨家合約。",
+      "src": "https://en.wikipedia.org/wiki/Teena_Marie",
+      "src2": "https://www.studicata.com/case-briefs/case/motown-record-corp-v-brockert",
+      "from": "new"
+     },
+     {
+      "f": "Rick James 是她的導師與長期合作對象，兩人的關係起伏卻在音樂上很有火花。",
+      "src": "https://en.wikipedia.org/wiki/Teena_Marie",
+      "src2": "https://gulfnews.com/lifestyle/teena-marie-ivory-queen-of-soul-dies-at-54-1.736524",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的嗓音是柔滑而有靈魂味的女高音，能唱深情的情歌，也能唱 funk 曲目。",
+      "src": "https://en.wikipedia.org/wiki/Teena_Marie",
+      "src2": "https://gulfnews.com/lifestyle/teena-marie-ivory-queen-of-soul-dies-at-54-1.736524",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她以「Ivory Queen of Soul」（象牙色靈魂女王）之稱著稱，黑人聽眾把她當自己人。",
+      "src": "https://en.wikipedia.org/wiki/Teena_Marie",
+      "src2": "https://gulfnews.com/lifestyle/teena-marie-ivory-queen-of-soul-dies-at-54-1.736524",
+      "from": "new"
+     },
+     {
+      "f": "她 1982 年為擺脫 Motown 對簿公堂，Motown Record Corp. v. Brockert 一案留下保護藝人合約的判例。",
+      "src": "https://en.wikipedia.org/wiki/Teena_Marie",
+      "src2": "https://www.studicata.com/case-briefs/case/motown-record-corp-v-brockert",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1982 年與 Motown 的訴訟（Motown Record Corp. v. Brockert）留下保護藝人合約的判例。",
+    "src": "https://en.wikipedia.org/wiki/Teena_Marie",
+    "src2": "https://www.studicata.com/case-briefs/case/motown-record-corp-v-brockert",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "簽約年：維基與 Studicata 案例摘要寫 1976 年簽約，Gulf News（AP 稿）寫 1979 年、19 歲簽約，與出生年（1956）也對不上，疑為誤指首張專輯年份；採 1976。",
+   "訴訟結果：維基寫和解並稱「Brockert Initiative」，Studicata 寫 1984 年上訴法院判決（保證最低報酬，選擇權不足以申請禁制令）；facts 只寫「留下保護藝人合約的判例」，不寫和解或判決細節。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 8,
+  "status": "full",
+  "notes": "事實庫 research 空、3 篇上線簡介無來源網址。搜尋 6 次：維基 Teena Marie、WebSearch（訃聞）、Gulf News（AP 訃聞）、WebSearch（Brockert 訴訟）、CourtListener（內容空白，未取得）、Studicata 案例摘要。失敗請求 8 次（Britannica 404、KING5 403、NPR 503、CBC 403、Bay State Banner 403、Justia 403、Rolling Stone 轉址、Lawlink 403），超過上限 4 次 4 次（共 8 次），照實記錄。單源未收：本名 Mary Christine Brockert、1956 年 3 月 5 日生於 Santa Monica、多國血統（維基單源）；2010 年 12 月 26 日於 Pasadena 過世（維基；Gulf News 只寫享年 54，搜尋摘要與 NPR 標題頁另有記載但未開頁），死亡年因兩源要求暫不入 facts；1979 年上《Soul Train》成為該節目首位白人女性來賓、Rick James 替她取「Lady T」暱稱與製作《Wild and Peaceful》（維基單源）；首張專輯封面無照片，Motown 被指擔心白人身分引來反彈（Gulf News 單源，搜尋摘要 KING5 亦同但未開頁；上線簡介同）；〈Lovergirl〉1985 年 3 月 Hot 100 最高第 4 名、《Starchild》最暢銷、《La Doña》Billboard 200 第 6 名（維基單源）；Fugees 1996 年〈Fu-Gee-La〉引用她的〈Ooo La La La〉、Lenny Kravitz 感謝她早期支持、她是 Maya Rudolph 與 Nona Gaye 的教母（維基單源）；2011 年追思禮 Stevie Wonder、Smokey Robinson、Berry Gordy 出席（維基單源）；她談官司「It wasn't something I set out to do…幫到 Luther Vandross 與 Mary Jane Girls」（維基引 2004 年洛杉磯時報，搜尋摘要另有，皆單源）；AP 訃聞稱她「arguably among the most gifted and respected」白人靈魂歌手（Gulf News 單源）；1984 年判決細節：選擇權年薪 6000 美元不足以滿足申請禁制令所需的保證最低報酬（Studicata 單源，Justia 與 CourtListener 未取得）。⚠ 維基稱 2023 年她以〈Cuff It〉共同作者身分身後獲葛萊美最佳 R&B 歌曲，此說我未能驗證且出處存疑，完全不收。同名混卡：三張專輯（1979、1980、1981）皆 Motown 的 Teena Marie，無混卡。"
  }
 ]
