@@ -257,5 +257,181 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "事實庫 research 只有《Pretty on the Inside》一份專輯稿；origin 的徵人啟事一條取自事實庫（並補第二源維基 Hole）。8 次：維基 Hole、維基 Live Through This、WebSearch（後世影響）、Salon、Diffuser、WebSearch（葛萊美）、grammy.com、WebSearch（年度榜單）；失敗：Britannica 404、Rolling Stone 榜單頁（307 轉向第三方 tollbit，未跟進）。維基 Hole 與維基 Live Through This 同站不同條目（非獨立），Spin 年度專輯那條兩源皆維基，屬非獨立，且只有維基摘要層級。單源未收：Rolling Stone 稱《Live Through This》為『the most potent blast of female insurgency ever committed to tape』（僅維基 Hole）；維基 Live Through This：Rolling Stone、Spin、洛杉磯時報與 Village Voice Pazz & Jop 皆選為 1994 年度第一、Pitchfork 10/10、Rolling Stone 2020 年 500 大專輯第 106 名、NME 500 大第 84 名、美國專輯榜最高第 52 名、1995 年 4 月白金（搜尋摘要另見 Pazz & Jop 冠軍與 Rolling Stone 第 106 名，未開頁）；維基 Hole：影響 Lana Del Rey、Sky Ferreira 與 Tegan and Sara、美國賣出逾 300 萬張、2002 年解散、2009 至 2012 年重組（成員異動年份，單源不收）、Melissa Auf der Maur 接替 Pfaff；Diffuser：《Live Through This》受 Breeders、Pixies、Joy Division 影響，『radical stop-start dynamics and pop-infused punk』（單源）；Salon：Love 本人不同意 riot grrrl 的歸類、詩選《Gurlesque》編者 Arielle Greenberg 稱 Love 是靈感來源（單源）。上線簡介《Pretty on the Inside》與本次所讀來源無衝突；簡介『Love 1991 年 1 月邀 Kim Gordon、Don Fleming 共同製作』、『單曲英國獨立榜冠軍』、『賣超過 20 萬張』本次未再查。"
+ },
+ {
+  "key": "idles",
+  "name": "IDLES",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "IDLES 2009 年在英國布里斯托成軍，長年在地下打拼，直到 2017 年才發行首張專輯《Brutalism》。",
+      "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+      "src2": "https://www.nme.com/features/music-interviews/idles-brutalism-five-year-anniversary-joe-talbot-interview-mark-bowen-3356833",
+      "from": "new"
+     },
+     {
+      "f": "主唱 Joe Talbot 是威爾斯 Newport 人；他母親的病與過世，深深影響了首張專輯《Brutalism》的創作。",
+      "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+      "src2": "https://crackmagazine.net/article/long-reads/idles-brutal-honest-truth/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "聲音常被歸為後龐克（post-punk），混合龐克、後硬核與藝術搖滾的元素。",
+      "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+      "src2": "https://www.nme.com/features/music-interviews/idles-brutalism-five-year-anniversary-joe-talbot-interview-mark-bowen-3356833",
+      "from": "new"
+     },
+     {
+      "f": "歌詞直面階級等社會議題，帶著諷刺的幽默。",
+      "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+      "src2": "https://crackmagazine.net/article/long-reads/idles-brutal-honest-truth/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2020 年《Ultra Mono》首度登上英國專輯榜第 1 名，是 IDLES 的第一張英國冠軍專輯。",
+      "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+      "src2": "https://www.officialcharts.com/chart-news/idles-land-their-first-number-1-album-and-fastest-selling-vinyl-release-of-the-year-with-ultra-mono__31138/",
+      "from": "new"
+     },
+     {
+      "f": "2019 年 Ivor Novello 獎，《Joy as an Act of Resistance》獲最佳專輯獎（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+      "src2": "https://crackmagazine.net/2019/05/idles-win-best-album-at-2019-ivor-novellos/",
+      "from": "new"
+     },
+     {
+      "f": "《Joy as an Act of Resistance》入圍 2019 年 Mercury Prize（入圍未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+      "src2": "https://www.officialcharts.com/chart-news/idles-land-their-first-number-1-album-and-fastest-selling-vinyl-release-of-the-year-with-ultra-mono__31138/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2019 年《Joy as an Act of Resistance》獲 Ivor Novello 最佳專輯獎，並入圍 Mercury Prize（未得獎）。",
+    "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+    "src2": "https://crackmagazine.net/2019/05/idles-win-best-album-at-2019-ivor-novellos/",
+    "from": "new"
+   },
+   {
+    "f": "2020 年《Ultra Mono》登上英國專輯榜冠軍，是樂團第一張冠軍專輯。",
+    "src": "https://en.wikipedia.org/wiki/Idles_(band)",
+    "src2": "https://www.officialcharts.com/chart-news/idles-land-their-first-number-1-album-and-fastest-selling-vinyl-release-of-the-year-with-ultra-mono__31138/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍後到首張專輯的年數：維基寫八年、NME 寫七年，facts 只寫 2009 年成軍與 2017 年首張。",
+   "Talbot 母親過世年份：Crack 寫 2015 年，維基只寫『創作 Brutalism 期間』；facts 不寫年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫沒有任何 IDLES 事實與上線簡介，從零查。8 次：維基 IDLES、WebSearch（Talbot 與母親）、Crack 長文、WebSearch（Ultra Mono 冠軍）、Official Charts、WebSearch（Ivor Novello）、Crack Ivor Novello 報導、NME Brutalism 五週年訪談；失敗：Britannica 404、Rolling Stone 專訪（307 轉向第三方 tollbit，未跟進）。第二源皆實際開頁讀過。維基摘要層級的單源事項放 notes：Talbot 與 Devonshire 在 Exeter 的預備學院認識（僅維基）；維基另列 2018 Q Awards 最佳新銳、2019 Kerrang! 最佳英國新銳、2019 Brit Awards 入圍英國新銳（未得）、2021 Libera Awards 最佳龐克唱片（Ultra Mono）與 2022 最佳搖滾唱片（Crawler）、2023 與 2025 葛萊美多項入圍（未得，2023 年含《Crawler》最佳搖滾專輯）、《Tangk》（2024）英國專輯榜冠軍、2025 年為《Caught Stealing》配樂；Talbot 不接受『post-punk』標籤（僅維基）；NME：2011 年同名 EP 與 2012 年《Welcome》走 2000 年代獨立搖滾路線、2016 年《Meat》EP 是轉捩點、Brutalism 與製作人 Space 在倫敦錄一週、最初無廠牌願意發行而由 Balley Records 自發、被 Foo Fighters 的 O2 Arena 演出邀請、Kiernan 2015 年取代 Andy Stewart（皆僅 NME 單源）；Crack：Brutalism 每首最多錄三次求原始（單源）、〈Mother〉一曲寫母親（另見搜尋摘要）。IDLES 對後輩的影響：本次沒有找到有出處的後輩點名，legacy 以獎項與榜單為主，寫作層不要寫『影響了誰』。維基與 Ivor Novello 部分兩源同時開頁讀過；Official Charts 另註明《Joy》英國專輯榜最高第 5 名（單源）。 Official Charts 另載《Ultra Mono》為 2020 年 10 月 2 日當週榜首、首週 2.7 萬張、黑膠 1.54 萬張，為當年最快賣出的黑膠專輯（超越 Liam Gallagher）（單源）。"
+ },
+ {
+  "key": "inxs",
+  "name": "INXS",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "INXS 是澳洲六人團，1977 年成軍，核心是 Farriss 三兄弟（Andrew、Tim、Jon），加上主唱 Michael Hutchence、貝斯手 Garry Gary Beers 與 Kirk Pengilly。",
+      "src": "https://en.wikipedia.org/wiki/INXS",
+      "src2": "https://albumism.com/features/inxs-kick-turns-35-album-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "團名 INXS 的靈感部分來自英國樂團 XTC 與澳洲的 IXL 品牌。",
+      "src": "https://en.wikipedia.org/wiki/INXS",
+      "src2": "https://albumism.com/features/inxs-kick-turns-35-album-anniversary",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "從新浪潮出發，逐步走向放克與舞曲搖滾；《Kick》把新浪潮和放克、迪斯可、R&B 的元素混成一種流行搖滾的混血。",
+      "src": "https://en.wikipedia.org/wiki/INXS",
+      "src2": "https://albumism.com/features/inxs-kick-turns-35-album-anniversary",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2001 年入選澳洲 ARIA 名人堂（Hall of Fame），距主唱 Hutchence 過世四年。",
+      "src": "https://en.wikipedia.org/wiki/INXS",
+      "src2": "https://themusicnetwork.com/petition-induct-inxs-us-rock-hall/",
+      "from": "new"
+     },
+     {
+      "f": "1987 年《Kick》在美國 Billboard 200 最高第 3 名、在澳洲登頂，產出四支美國前十單曲，其中〈Need You Tonight〉是樂團唯一的美國冠軍單曲。",
+      "src": "https://en.wikipedia.org/wiki/INXS",
+      "src2": "https://www.udiscovermusic.com/stories/kick-inxs-album/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "主唱 Michael Hutchence 與樂團合作約 20 年，1997 年過世。",
+      "src": "https://en.wikipedia.org/wiki/INXS",
+      "src2": "https://albumism.com/features/inxs-kick-turns-35-album-anniversary",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1987 年《Kick》在美國 Billboard 200 最高第 3 名，〈Need You Tonight〉成為唯一的美國冠軍單曲。",
+    "src": "https://en.wikipedia.org/wiki/INXS",
+    "src2": "https://www.udiscovermusic.com/stories/kick-inxs-album/",
+    "from": "new"
+   },
+   {
+    "f": "2001 年入選澳洲 ARIA 名人堂。",
+    "src": "https://en.wikipedia.org/wiki/INXS",
+    "src2": "https://themusicnetwork.com/petition-induct-inxs-us-rock-hall/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍地：維基寫 1977 年在雪梨成軍（後短暫遷 Perth）；The Music Network 與 Rolling Stone Australia 都寫 1977 年在 Perth 成軍，兩說不一致，facts 只寫 1977 年、不寫地點。",
+   "全球銷量：維基寫逾 5000 萬張、The Music Network 寫逾 6000 萬張，不一致，facts 不寫銷量。",
+   "《Kick》單曲：維基與 UDiscover 寫四支美國前十，Albumism 寫『四首前五名』；採前十。在榜週數維基摘要 81 週、UDiscover 79 週，不寫週數。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫沒有任何 INXS 事實與上線簡介，從零查。8 次：維基 INXS、Britannica（只回導覽頁、無內文，仍計一次）、WebSearch（ARIA 名人堂）、The Music Network、Rolling Stone Australia、WebSearch（Kick 聲音）、Albumism、UDiscover；失敗：ARIA 官網（301 導向總覽頁，未跟進）、Billboard（307 導向第三方 tollbit，未跟進）。單源未收（維基除非另註）：Farriss Brothers 為最初團名、1979 年改名 INXS、1978 年短暫遷 Perth；ARIA 獎六座含最佳團體 1987、1989、1992（搜尋摘要另見同數字，皆維基來源）；MTV VMA 1988 五座、葛萊美三項入圍未得；銷量逾 5000 萬、為美國市場第三大澳洲團（僅維基）；1991 年 7 月 13 日 Wembley 演出 7.4 萬人、2012 年 11 月 11 日在 Perth 的最後一場演出、後輩點名 The 1975、Maroon 5、Savage Garden（皆僅維基）；Hutchence 過世日期 1997 年 11 月 22 日與判為自殺（僅維基 INXS，搜尋摘要另見維基 Hutchence，未開頁）、享年 37（僅 Albumism，搜尋摘要另見）；1991 年 BRIT Award 最佳國際團體（僅 Rolling Stone Australia）；《Listen Like Thieves》（1985）澳洲冠軍、美國第 11 名，『為 Kick 鋪路』（僅 Rolling Stone Australia）；Atlantic 唱片起初『非常討厭』《Kick》、據說曾提議付一百萬美元換他們另做一張（僅 Albumism；搜尋摘要另見維基 Kick：先在美國大學電台走紅後廠牌才回心轉意）；《Kick》在美國逾 400 萬張（僅 UDiscover）、RIAA 六倍白金（僅搜尋摘要）；UDiscover 稱《Kick》融合『Rolling Stones raunch、Gang Of Four-esque angularity 與舞池聲響』（單源）；Albumism：樂團從 Farriss 家車庫起步、在澳洲酒吧圈打拼並為 Queen 與 XTC 暖場（單源）。維基摘要另寫 INXS 2026 年獲搖滾名人堂提名未入選，本次未核對，不收。INXS 對後輩影響本次沒有取得兩源，legacy 以名人堂式榮譽與《Kick》成績為主。"
  }
 ]

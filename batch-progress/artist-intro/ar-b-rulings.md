@@ -86,3 +86,4 @@
 ### ar-b-009
 
 - 補洞第 1 組：Crosby, Stills & Nash 失敗請求 5 次，照實記，放行。deca joins 金曲獎第 30 屆 MV 入圍署名是空氣腦唱片，不寫成樂團入圍。Dezerter 兩條 src2 為維基衍生頁，視同單源。
+- 補洞第 2 組：Flower Travellin' Band 地位格 none；日本團員名照上線簡介原文，查不到漢字者以拉丁拼音。Fall Out Boy 銷量兩說不寫。
