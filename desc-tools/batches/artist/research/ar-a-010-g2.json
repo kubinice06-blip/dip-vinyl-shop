@@ -600,5 +600,267 @@
   "failedFetches": 1,
   "status": "thin",
   "notes": "身分確認：poolAlbums 六張（1978 至 2012）皆為 Eddie Van Halen 的加州 Van Halen，含 Roth、Hagar、Cherone 各時期，無同名混卡。成功開頁：樂團維基、rockhall.com、Eddie Van Halen 維基、Britannica Eddie Van Halen、theprp、vhnd、Fair Warning 維基；一次 WebSearch（僅摘要，不採）。失敗請求 1 次（Medium 403）。名人堂官方（可具名單源）：Velvet Revolver 擔任 2007 年引介人；介紹稱 Eddie『perfected the art of shredding, unleashing two-handed finger tapping, dramatic whammy-bar moves, and other astonishing never-before-seen techniques』，以『blistering speed, control, and melodic feel』與偶像 Les Paul 相提並論；樂團『gave rise to a steady stream of shredders and trailblazers ever since』；引介文寫『would steal your girlfriend and your tequila』。單源不進 facts：樂團維基：全球專輯銷量逾 8000 萬張（美國 5600 萬張）、〈Jump〉是唯一美國冠軍單曲、『party-ready pop metal sound』與 Roth 誇張唱腔、團名沿革 Broken Combs／Trojan Rubber Co／Genesis／Mammoth、Eddie 靠耳朵學鋼琴；Eddie 維基：父親 Jan 是荷蘭爵士鋼琴與單簧管手、家人因混血婚姻在荷蘭受歧視而移民、Eddie 不識譜、Frankenstrat 自製吉他、Guitar World 讀者票選第一、影響來源 Eric Clapton 與 Jimmy Page；Britannica 單源：首張專輯在美國賣逾 1000 萬張；vhnd 單源：Mike McCready 談初聽〈Eruption〉『It sounded like it came from another planet』、Eddie 說 Clapton 是唯一影響他的吉他手；搜尋摘要（未開頁）：Joe Satriani『Eddie put the smile back in rock guitar…』，不採。legacy 影響證據多為名人堂官方與單源，故 thin。"
+ },
+ {
+  "key": "大象體操 elephant gym",
+  "name": "大象體操 Elephant Gym",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "大象體操 2012 年 2 月成立於台灣高雄。",
+      "src": "https://zh.wikipedia.org/wiki/大象體操",
+      "src2": "https://en.wikipedia.org/wiki/Elephant_Gym",
+      "from": "new"
+     },
+     {
+      "f": "樂團由三人組成：貝斯手張凱婷、吉他手張凱翔與鼓手涂嘉欽。",
+      "src": "https://zh.wikipedia.org/wiki/大象體操",
+      "src2": "https://stars.udn.com/star/story/10092/8353334",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "大象體操演奏數學搖滾（math rock）；團名的『大象』指以 BASS 帶領旋律，『體操』指曲中靈活、不規則的節奏。",
+      "src": "https://zh.wikipedia.org/wiki/大象體操",
+      "src2": "https://en.wikipedia.org/wiki/Elephant_Gym",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "第 35 屆金曲獎（2024 年 6 月 29 日，台北小巨蛋）：大象體操以專輯《世界 World》獲評審團獎。",
+      "src": "https://zh.wikipedia.org/wiki/第35屆金曲獎",
+      "src2": "https://www.cna.com.tw/news/amov/202406290257.aspx",
+      "from": "new"
+     },
+     {
+      "f": "第 10 屆金音創作獎（2019 年）：大象體操獲最佳樂團獎（得獎）。",
+      "src": "https://zh.wikipedia.org/wiki/大象體操",
+      "src2": "https://en.wikipedia.org/wiki/Elephant_Gym",
+      "from": "new"
+     },
+     {
+      "f": "第 5 屆金音創作獎（2014 年）：大象體操獲最佳風格類型專輯獎（得獎）。",
+      "src": "https://zh.wikipedia.org/wiki/大象體操",
+      "src2": "https://en.wikipedia.org/wiki/Elephant_Gym",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2024 年第 35 屆金曲獎以《世界 World》獲評審團獎。",
+    "src": "https://zh.wikipedia.org/wiki/第35屆金曲獎",
+    "src2": "https://www.cna.com.tw/news/amov/202406290257.aspx",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "第 35 屆金曲獎入圍項目：中文維基第 35 屆條目（經抽讀）列《世界》入圍年度專輯獎、最佳華語專輯獎與最佳樂團獎三項；搜尋摘要（未開頁）稱只有最佳樂團獎與年度專輯獎，且《世界》沒有報名語言類；兩說打架，facts 只收確定的評審團獎，不寫入圍項目。",
+   "《水底》年份：中文維基樂團條目寫 2019，事實庫（MusicBrainz）first-release 為 2018-11-14；facts 不寫該專輯年份。"
+  ],
+  "pubIssues": [
+   {
+    "album": "世界",
+    "claim": "隔年它拿下第 15 屆金音創作獎最佳樂團獎，同屆另有四項入圍",
+    "problem": "中文維基第 15 屆金音創作獎條目（抽讀）確認最佳樂團獎得獎，但同屆除最佳樂團外只讀到最佳專輯、最佳樂手兩項入圍；簡介『另有四項入圍』本次無法核對，請店主到金音創作獎官方名單確認項數。",
+    "src": "https://zh.wikipedia.org/wiki/第15屆金音創作獎"
+   }
+  ],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "身分確認：poolAlbums 六張（2014 至 2026）皆為高雄的大象體操，無同名混卡。事實庫 research 為發行盤面資料，未含身世與地位，全從零查。實際開頁：中文維基大象體操、英文維基 Elephant Gym、中文維基第 15 屆金音創作獎、中文維基第 35 屆金曲獎、中央社金曲 35 評審團獎、udn 星聞休團報導；一次 WebSearch（僅摘要，不採其內容）。單源不進 facts：英文維基：由 KT Chang 與 Tell Chang 兩姊弟（sibling）和鼓手涂嘉欽組成，涂嘉欽高中時在音樂 club 認識、KT 與 Tell 童年由母親教古典音樂、涂嘉欽學古典打擊、風格含 jazz fusion、簽 Topshelf Records、演出 SXSW／ArcTanGent／Summer Sonic；中文維基：四張專輯年份 2014／2019／2022／2023（《水底》與 MB 的 2018 不合，不採）；中文維基第 15 屆金音創作獎（2024 年 11 月 2 日）：大象體操獲最佳樂團獎、入圍作品《世界》，另有最佳專輯（《世界》）與最佳樂手（張凱婷）入圍——單源，僅能核對上線簡介，簡介寫『第 15 屆金音創作獎最佳樂團獎，同屆另有四項入圍』：我只讀到最佳樂團得獎與另兩項入圍（最佳專輯、最佳樂手），與簡介『四項』不能對上，可能是摘要不完整，列入 pubIssues 請店主核對；udn 單源：吉他手凱翔在台北旗艦場演唱會透露明年起將休團很長一段時間，貝斯手凱婷坦言巡演時常在家大哭，休團屬既定規劃。中央社頁面只確認評審團獎與日期、地點。搜尋摘要（未開頁）：大象體操出演 Fuji Rock 與 SXSW，不採。八次搜尋額度用了 7 次。 udn 單源：金曲評審團獎之後《世界》巡演累計近 60 場、足跡橫跨亞洲、美洲與歐洲。"
+ },
+ {
+  "key": "崔健",
+  "name": "崔健",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "崔健 1961 年 8 月 2 日生於北京，屬朝鮮族；父親崔雄濟是小號演奏家，母親張順化是中央民族歌舞團的成員。",
+      "src": "https://zh.wikipedia.org/wiki/崔健",
+      "src2": "https://en.wikipedia.org/wiki/Cui_Jian",
+      "from": "new"
+     },
+     {
+      "f": "崔健 14 歲起跟隨父親學小號，1981 年考進北京交響樂團，擔任小號手。",
+      "src": "https://zh.wikipedia.org/wiki/崔健",
+      "src2": "https://en.wikipedia.org/wiki/Cui_Jian",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈一無所有〉把搖滾與陝北信天遊式的民間曲調揉在一起；英文維基稱它是中國最早一批流行起來的本土（而非進口）搖滾之一，也標誌著中國搖滾的起點。",
+      "src": "https://en.wikipedia.org/wiki/Cui_Jian",
+      "src2": "https://en.wikipedia.org/wiki/Nothing_to_My_Name",
+      "from": "new"
+     },
+     {
+      "f": "〈一無所有〉的編曲把嗩吶接進搖滾，由劉元吹奏的嗩吶獨奏取代了通常留給電吉他的位置；崔健自己認為那就是純粹的搖滾樂。",
+      "src": "https://en.wikipedia.org/wiki/Nothing_to_My_Name",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "崔健被稱為「中國搖滾之父」（Father of Chinese Rock），中文維基、英文維基與 The Wire China 都用這個稱號。",
+      "src": "https://zh.wikipedia.org/wiki/崔健",
+      "src2": "https://en.wikipedia.org/wiki/Cui_Jian",
+      "from": "new"
+     },
+     {
+      "f": "1986 年 5 月 9 日，崔健在電視轉播的音樂比賽上首度演唱〈一無所有〉；曲子當場引發轟動，讓他成為城市青年的偶像。",
+      "src": "https://en.wikipedia.org/wiki/Nothing_to_My_Name",
+      "src2": "https://en.wikipedia.org/wiki/Cui_Jian",
+      "from": "new"
+     },
+     {
+      "f": "1989 年春天，崔健到天安門廣場為絕食學生演出並唱了〈一無所有〉，這首歌成為學生抗議者的代表歌曲。",
+      "src": "https://en.wikipedia.org/wiki/Cui_Jian",
+      "src2": "https://en.wikipedia.org/wiki/Nothing_to_My_Name",
+      "from": "new"
+     },
+     {
+      "f": "天安門事件之後，崔健在 1990 年代多年遭到官方的阻撓，在北京無法正常演出。",
+      "src": "https://zh.wikipedia.org/wiki/崔健",
+      "src2": "https://en.wikipedia.org/wiki/Cui_Jian",
+      "from": "new"
+     },
+     {
+      "f": "1989 年專輯《新長征路上的搖滾》被普遍稱為中國第一張搖滾專輯。",
+      "src": "https://en.wikipedia.org/wiki/Cui_Jian",
+      "src2": "https://en.wikipedia.org/wiki/Chinese_rock",
+      "from": "new"
+     },
+     {
+      "f": "第 33 屆金曲獎（2022 年 7 月 2 日）：崔健以專輯《飛狗》獲最佳華語男歌手獎（得獎）。",
+      "src": "https://zh.wikipedia.org/wiki/第33屆金曲獎",
+      "src2": "https://zh.wikipedia.org/wiki/崔健",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1986 年 5 月 9 日首度演唱〈一無所有〉。",
+    "src": "https://en.wikipedia.org/wiki/Nothing_to_My_Name",
+    "src2": "https://en.wikipedia.org/wiki/Cui_Jian",
+    "from": "new"
+   },
+   {
+    "f": "2022 年第 33 屆金曲獎以《飛狗》獲最佳華語男歌手獎。",
+    "src": "https://zh.wikipedia.org/wiki/第33屆金曲獎",
+    "src2": "https://zh.wikipedia.org/wiki/崔健",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "〈一無所有〉首唱年份：英文維基 Chinese rock 條目寫『first performed in 1984』；英文維基 Nothing to My Name、Cui Jian 條目與中文維基皆為 1986 年（5 月 9 日）；採 1986 年，且與上線簡介《新长征路上的摇滾》一致。",
+   "首唱場合三種描述：Nothing to My Name 條目寫電視轉播的音樂比賽（樂隊 ADO），Cui Jian 條目寫 benefit concert，中文維基寫『世界和平年演唱會』；facts 用『電視轉播的音樂比賽』（與上線簡介一致），場合名稱不寫。",
+   "中文維基〈崔健〉原文把中國搖滾寫成『中国大陆摇滚乐』；本組一律改寫『中國』。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "身分確認：poolAlbums 六張（1986 至 2005）皆為北京的崔健，無同名混卡（事實庫研究稿提到 iTunes 上另有同名藝人條目 1583845384 名下只有《戒愛》，不是同一人，不收）。事實庫的專輯研究稿多為盤面規格，只沿用《新長征路上的摇滾》〈一無所有〉嗩吶那條（from bank）。實際開頁：中文維基崔健、英文維基 Cui Jian、Nothing to My Name 維基、The Wire China、Chinese rock 維基、中文維基第 33 屆金曲獎；一次 WebSearch（僅摘要，不採）。失敗請求 2 次（Britannica 404、CBC 403）。第二源限制：多數 legacy 條目的兩源都是維基不同條目，缺獨立主流媒體，寫作層可以寫但建議語氣保守；金曲獎那條兩源都是中文維基不同條目（第 33 屆條目與崔健條目），未取得官方或新聞第二源。The Wire China 只開到付費牆前的預覽：稱他『the Father of Chinese Rock』、影響力『comparable to that of Bob Dylan in the United States』（單源，可寫『The Wire China 形容…』時再斟酌）。單源不進 facts：英文維基 Cui Jian：Billboard 估計他賣出 1 億張專輯、多為盜版；首唱時穿傳統大褂；一位觀察者寫聽眾『reduced to stunned silence』；Nothing to My Name 維基：被稱為『the biggest hit in Chinese history』；Chinese rock 維基：2003 年與 Rolling Stones 同台『opened the genre to the rest of the world for the first time』、六四後官方對搖滾樂的禁演與禁傳播、西北風（Northwest Wind）結合陝北民歌與西式快節奏；中文維基崔健：1975 年學小號、1980 年買第一把吉他半個月技術就超過老師、1989 年 5 月 19 日與樂隊到天安門廣場慰問絕食學生、2022 年《飛狗》；中文維基第 33 屆：《飛狗》另入圍年度專輯、最佳華語專輯、最佳演唱錄音專輯，評審團主席阿弟仔談崔健『具有時代代表性』『30 年來秉持熱忱和創作能量』（單源）。上線簡介《新长征路上的摇滾》『1986 年 5 月 9 日…電視轉播的音樂比賽』與 Nothing to My Name 條目一致；簡介其餘（出版社、2005 年才回北京演出等）此次未查。"
+ },
+ {
+  "key": "椅子樂團",
+  "name": "椅子樂團",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "椅子樂團是台灣的三人樂團，三位成員都出身台中一中民謠吉他社；成員為主唱兼吉他手裘詠靖、主唱兼吉他手陳仲穎與貝斯手孫伯元。",
+      "src": "https://zh.wikipedia.org/wiki/椅子樂團",
+      "src2": "https://www.popdaily.com.tw/life/1655605?amp=1",
+      "from": "new"
+     },
+     {
+      "f": "椅子樂團 2016 年發行首張專輯《Cheers!Land》；曾一度休團，之後重新集結。",
+      "src": "https://zh.wikipedia.org/wiki/椅子樂團",
+      "src2": "https://star.ettoday.net/news/1478420",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "椅子樂團的歌以浪漫口吻寫日常生活，聲音回望 1960 年代起的搖滾、民謠與迷幻流行，整體聽感仍然現代。",
+      "src": "https://www.popdaily.com.tw/life/1655605?amp=1",
+      "src2": "https://hackazine-tw.com/the-chairs/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "第 30 屆金曲獎（2019 年 6 月 29 日，台北小巨蛋）：椅子樂團以《LOVELY SUNDAY 樂芙莉聖代》獲最佳演唱組合獎（得獎）；同組入圍者有 Vast & Hazy、歐開合唱團、害喜喜與頑童 MJ116。",
+      "src": "https://zh.wikipedia.org/wiki/第30屆金曲獎",
+      "src2": "https://star.ettoday.net/news/1478420",
+      "from": "new"
+     },
+     {
+      "f": "第 37 屆金曲獎（2026 年）：椅子樂團以《愛的對白》入圍最佳演唱組合獎。",
+      "src": "https://zh.wikipedia.org/wiki/第37屆金曲獎",
+      "src2": "https://www.popdaily.com.tw/life/1655605?amp=1",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2019 年第 30 屆金曲獎以《LOVELY SUNDAY 樂芙莉聖代》獲最佳演唱組合獎。",
+    "src": "https://zh.wikipedia.org/wiki/第30屆金曲獎",
+    "src2": "https://star.ettoday.net/news/1478420",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "身分確認：poolAlbums 六張（2016 至 2025）皆為台中一中民謠吉他社出身的台灣三人樂團椅子樂團（含 2025《Love Dialogue》），與事實庫研究稿的 Sound of Tomorrow 目錄一致，無同名混卡。實際開頁：中文維基椅子樂團、第 30 屆金曲獎、第 37 屆金曲獎、第 10 屆金音創作獎、Hackazine、ETtoday 星光雲、PopDaily；一次 WebSearch（僅摘要，不採）。單源不進 facts：中文維基椅子樂團：2017 年發行單曲後宣布休團、2018 年重組並發行第二張《Lovely Sunday》、金曲獎評審團評語『椅子樂團將小品製作的流暢且趣味性十足……聽得見他們在未來流行音樂的開展性和可能』；第 37 屆金曲獎條目：最佳演唱組合得主是 GENBLUE 幻藍小熊《MIRROR》（典禮 2026 年 6 月 27 日於台北小巨蛋，評審團主席黃韻玲說明該獎在決選第二輪以四票勝出頑童 MJ116），椅子樂團僅此一項入圍、未得獎；第 30 屆金曲獎條目：頒獎嘉賓為 S.H.E、椅子當屆僅入圍該一獎；Hackazine 單源：椅子樂團是『台灣第三個』登上芝加哥獨立音樂節目 Audiotree 的樂團（前有落日飛車、大象體操）；PopDaily 單源：評價『很輕盈的日常美學……60、70 年代搖滾、民謠、迷幻流行的影子，可是整體仍很現代』。上線簡介核對：《LOVELY SUNDAY》簡介的『第 30 屆金曲獎最佳演唱組合』與第 10 屆金音創作獎『專輯演唱會入圍最佳現場演出獎、未得獎（2019 年 11 月 16 日）』皆與維基一致；《Cheers!Land》簡介的第 7 屆金音創作獎入圍、《LOVELY SUNDAY》簡介的第 9 屆金音創作獎入圍此次未查。影響他人或跨地域現象查不到雙源，legacy 僅有獎項，標 thin。"
  }
 ]

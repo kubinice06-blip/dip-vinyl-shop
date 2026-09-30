@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 50 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 53 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -54,3 +54,6 @@
 | ar-a-008 | 新寶島康樂隊 | 第樹輯 | 第 8 屆金曲獎最佳演唱組獎由這個團以《新寶島康樂隊第樹輯》得獎 | 文化部官方第八屆（1997 年 5 月 3 日）得獎名單，最佳演唱組獎得主是高向鵬、方怡萍《福氣啦》（豪記影視唱片），新寶島康樂隊不在得獎名單；中文維基只記該團 2012 年（第 23 屆）與 2022 年（第 33 屆）兩次得獎。搜尋摘要稱《第樹輯》是該屆入圍（入圍名單頁未開，未核對），應改寫成入圍。同段「最佳作曲人得主李正帆《舊夢》」與官方名單一致。 | https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124197 |
 | ar-a-008 | Emerson, Lake & Palmer | Emerson, Lake & Palmer | 發行後樂團登上 1970 年懷特島音樂節，聲名自此打開 | 時序顛倒：專輯 1970 年 11 月 20 日才在英國發行（維基專輯頁），樂團的懷特島音樂節演出在同年 8 月底、專輯發行前（維基樂團頁：8 月 23 日普利茅斯首演後數週；維基專輯頁：樂團在音樂節上演奏專輯歌曲，令其成名）。建議改成「發行前，樂團先在 1970 年懷特島音樂節打開名聲」。第二獨立來源僅見搜尋摘要（Emerson 訃聞稱他們在懷特島音樂節上的突破表演之後才獲唱片合約），未開頁。 | https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer_(album) |
 | ar-a-008 | Santana | Supernatural | 在第 42 屆葛萊美獎拿下九座得獎，含年度專輯與最佳搖滾專輯 | Santana 該屆得 8 座（年度專輯、年度唱片、最佳搖滾專輯、最佳搖滾樂團演出、最佳搖滾器樂演出、最佳流行合作、最佳流行二重唱／團體演出、最佳流行器樂演出），是追平 Michael Jackson 單一典禮紀錄的數字；『九座』無來源支持，建議改『八座』。年度歌曲〈Smooth〉頒給詞曲作者 Itaal Shur 與 Rob Thomas，不算 Santana 的獎。 | https://www.billboard.com/music/awards/santana-2000-grammys-record-michael-jackson-9340850/ |
+| ar-a-010 | Van Halen | Fair Warning | 他凌晨四點溜回錄音室重錄了全部獨奏，事後說根本沒有人發現 | 英文維基《Fair Warning》條目（本次抽讀）查不到凌晨四點重錄獨奏的說法；未證實為錯，僅為『本次未能在維基驗證』，請店主本機核對簡介原始來源。其餘（1981 年 4 月 29 日 Warner Bros.、Billboard 200 最高第 5 名、Roth 時期銷售最慢、製作人 Ted Templeman）皆與維基一致。 | https://en.wikipedia.org/wiki/Fair_Warning_(Van_Halen_album) |
+| ar-a-010 | 大象體操 Elephant Gym | 世界 | 隔年它拿下第 15 屆金音創作獎最佳樂團獎，同屆另有四項入圍 | 中文維基第 15 屆金音創作獎條目（抽讀）確認最佳樂團獎得獎，但同屆除最佳樂團外只讀到最佳專輯、最佳樂手兩項入圍；簡介『另有四項入圍』本次無法核對，請店主到金音創作獎官方名單確認項數。 | https://zh.wikipedia.org/wiki/第15屆金音創作獎 |
+| ar-a-010 | Bon Jovi | New Jersey | 它經蘇聯國營廠牌 Melodiya 發行，是首張在蘇聯正式上架的美國專輯 | 我讀到的來源只有 1989 年 10 月 7 日 Deseret News（Scripps Howard 通訊社）的預告：『Bon Jovi 將成為第一個在官方蘇聯廠牌 Melodiya 發行專輯的美國團體』，未指名是哪張專輯、也無發行日期，且是『美國團體』而非『美國專輯』；莫斯科音樂和平音樂祭的英文維基沒有提到 Melodiya 專輯。簡介把它寫成『首張在蘇聯正式上架的美國專輯』超出來源，且屬『第一』類宣稱（我印象中 Billy Joel 的現場專輯 1987 年也由 Melodiya 發行，未查證，可作反例風險）。建議改成『據 1989 年報導，Bon Jovi 是第一個在 Melodiya 發片的美國團體』或刪除；另需確認 Melodiya 發行的是不是《New Jersey》。 | https://www.deseret.com/1989/10/7/18827151/bon-jovi-to-cut-a-soviet-album/ |
