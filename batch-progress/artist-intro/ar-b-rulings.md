@@ -9,3 +9,7 @@
 - 補洞第 3 組：pubIssue 1 條（Julie London《About the Blues》1957 年稱 Bobby Troup「丈夫」，兩人 1959 年才結婚）。Lonnie Smith 確認為風琴手 Dr. Lonnie Smith。卡池年份提醒（代理單方說法，未複核）：Max Roach《We Insist!》1960 錄音、1961 年 1 月發行；Lester Young 兩張 1997 為再版年。
 - 寫作第 1 組（20 位）審畢，修 3 處：Gregory Porter 在世，「兩度拿下葛萊美」加固定年份（2014、2017）；Jaco Pastorius 受傷的是美式足球不是橄欖球；Hailu Mergia「最早赴美的現代衣索比亞樂團」加「之一」。Franco 以「Franco」指人、樂團名寫全名一次，照准。Jaco 用滿 280（人生故事），Hailu 268，照准。
 - 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 2 條（Pino Daniele《Nero a metà》書名典故、《Pino Daniele》銷量數字皆查無來源）。Mulatu Astatke《Sketches of Ethiopia》「首張國際發行」存疑，未列 pubIssue。
+
+### ar-b-002
+
+- 補洞第 1 組：菊地雅章失敗請求 5 次，照實記，放行。World Saxophone Quartet 成軍年三源不一，代理「調和」成 1976 年底／1977 年初——調和值不算兩源一致，寫作層只寫「1970 年代後期」。菊地雅章租約判例（僅維基連到本人）不收。

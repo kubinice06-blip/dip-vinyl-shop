@@ -83,5 +83,199 @@
     "failedFetches": 6,
     "status": "full",
     "notes": "補查 8 次：維基 Cedar Walton、Britannica（頁面只有導覽、取不到內文，仍計入）、arts.gov NEA、WebSearch（訃聞）、DownBeat 訃聞、WebSearch（後輩影響，只回搜尋摘要）、維基 Bolivia (Walton song)、bluenote.com 藝人頁。失敗請求 6 次（NPR 503、Washington Post 403、JazzTimes 403、artsjournal 404、Kennedy Center 403、AllMusic 403），超出 failedFetches 上限 2 次，照實記錄。維基與 NEA 官網生平段落內容高度重疊、非嚴格獨立文本。出生日期、母親 Ruth、Dillard 與丹佛學歷有維基與 NEA 兩源。逝世：維基寫 2013 年 8 月 19 日於布魯克林，DownBeat 頁面只寫 2013 年 8 月，未把死亡日放 facts（搜尋摘要另顯示多家訃聞寫 8 月 19 日享年 79，未開頁核對）。單源，未收進 facts：Nat King Cole／Bud Powell／Monk／Tatum 四位影響（維基單源）；丹佛作曲主修與編曲訓練（維基單源）；1955 年赴紐約、駐德美軍與 Leo Wright 等同台（維基單源）；Sam Jones 的 The Magic Triangle 演變為 Eastern Rebellion、持續到 1994 年（維基單源）；1958 年 Kenny Dorham《This Is the Moment!》首錄與 Jazztet 1958–61（維基單源）；Etta James《Mystery Lady》1994 年葛萊美（維基單源）；Blue Note 藝人頁（AllMusic 文字，非獨立）稱他觸鍵帶 funky 味、旋律感清楚、是硬 bop 最受重用的伴奏者之一、「one of the music's more underrated composers」、1959 年 4 月與 Coltrane 錄音的首位鋼琴手（單源，且 DownBeat 寫 Giant Steps 初期錄音由其他鋼琴手擔任，宣稱有爭議，不收）。〈Bolivia〉首錄年維基 Bolivia 條目寫 1976、卡池專輯為 1975，未收。legacy 格沒有找到後輩點名受他影響的可靠來源（多篇訃聞被 403／503 擋下），只有 NEA 大師榮譽與標準曲地位，寫作層勿編造後輩評價。era 格因單源全數移出而為 none。"
+  },
+  {
+    "key": "chico buarque",
+    "name": "Chico Buarque",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chico Buarque（Chico Buarque de Hollanda）1944 年 6 月 19 日生於里約熱內盧；父親 Sérgio Buarque de Holanda 是歷史學者，母親 Maria Amélia Cesário Alvim 會彈鋼琴。",
+            "src": "https://en.wikipedia.org/wiki/Chico_Buarque",
+            "src2": "https://www.museudatv.com.br/biografia/chico-buarque/",
+            "from": "new"
+          },
+          {
+            "f": "他童年住過里約、聖保羅與羅馬；羅馬那段是因為父親在羅馬大學任教。",
+            "src": "https://en.wikipedia.org/wiki/Chico_Buarque",
+            "src2": "https://www.museudatv.com.br/biografia/chico-buarque/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1970 年從義大利回國後，Chico Buarque 繼續寫政治抗議歌曲，同時面對更嚴的審查。",
+            "src": "https://en.wikipedia.org/wiki/Chico_Buarque",
+            "src2": "https://www.museudatv.com.br/biografia/chico-buarque/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chico Buarque 2019 年獲葡語文學最高榮譽之一的卡蒙斯獎（Prêmio Camões），頒獎典禮延到 2023 年 4 月在葡萄牙舉行。",
+            "src": "https://en.wikipedia.org/wiki/Chico_Buarque",
+            "src2": "https://www.yahoo.com/news/brazilian-legend-buarque-receives-prestigious-182659424.html",
+            "from": "new"
+          },
+          {
+            "f": "他也寫小說，曾以小說獲巴西的 Prêmio Jabuti 文學獎。",
+            "src": "https://en.wikipedia.org/wiki/Chico_Buarque",
+            "src2": "https://www.museudatv.com.br/biografia/chico-buarque/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1966 年他的〈A Banda〉由 Nara Leão 演唱，在唱片公司 Record 主辦的音樂節奪冠，讓他成為全國知名的創作者。",
+            "src": "https://www.museudatv.com.br/biografia/chico-buarque/",
+            "src2": "https://en.wikipedia.org/wiki/Chico_Buarque",
+            "from": "new"
+          },
+          {
+            "f": "1969 年他因不滿政治與審查離開巴西前往義大利，1970 年回國。",
+            "src": "https://en.wikipedia.org/wiki/Chico_Buarque",
+            "src2": "https://www.museudatv.com.br/biografia/chico-buarque/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1966 年〈A Banda〉在 Record 音樂節奪冠。",
+        "src": "https://www.museudatv.com.br/biografia/chico-buarque/",
+        "src2": "https://en.wikipedia.org/wiki/Chico_Buarque",
+        "from": "new"
+      },
+      {
+        "f": "2019 年獲卡蒙斯獎，2023 年 4 月補行頒獎。",
+        "src": "https://en.wikipedia.org/wiki/Chico_Buarque",
+        "src2": "https://www.yahoo.com/news/brazilian-legend-buarque-receives-prestigious-182659424.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫對 Chico Buarque 無研究稿、無上線簡介，無衝突。",
+      "Jabuti 獎的得獎作品：英文維基寫《Budapeste》，MBRTV 寫 1991 年《Estorvo》；兩源不一致，facts 只寫『曾以小說獲 Prêmio Jabuti』，不寫書名與年份。",
+      "童年赴義大利時的年齡：MBRTV 寫 9 歲、InfoEscola 搜尋摘要寫 6 歲，不收年齡。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "補查 8 次：維基 Chico Buarque、Britannica（只回導覽、取不到內文，仍計入，日後別再開）、WebSearch（卡蒙斯獎）、維基 Construção（第一個 URL 帶括號的專輯條目 404 未計，第二個 URL 取得）、Yahoo（法新社文章，重導後取得）、WebSearch（葡文生平）、MBRTV 生平頁、WebSearch（Rolling Stone Brasil 名單，只回搜尋摘要）。失敗請求 2 次（BusinessWorld 403、維基 Construção_(album) 404）。同池確認：poolAlbums 為《Construção》1971、《Chico Buarque en español》1982、《Chico Buarque》1978，與查證對象一致，無同名混卡。Yahoo 那篇為法新社稿，BusinessWorld 是同稿轉載（未開，非獨立）。單源，未收進 facts：受 bossa nova（Tom Jobim、João Gilberto）啟蒙（維基單源）；早期作品以帶機巧文字遊戲與懷舊悲情的桑巴見長、融合 MPB／samba／bossa nova／choro，歌詞常反映巴西社會經濟與文化（維基單源）；1974 年審查與化名（單源，不在 facts）；「最出名的是反軍政府政治歌曲」只有法新社稿明說，已移出 facts；〈Apesar de Você〉被稱為民主運動的重要頌歌（維基單源）；1968 年一齣戲劇作品遭軍政府不悅、他短暫入獄（維基單源）；卡蒙斯獎頒獎時 Bolsonaro 拒簽證書而延宕四年、頒獎日為 2023 年 4 月 24 日在 Queluz（Yahoo／法新社單源，搜尋摘要另有 BusinessWorld 等轉載同稿）；AFP 稱他在巴西被尊為國民英雄、以反軍政府政治歌曲聞名（單源）；他在 2023 年頒獎典禮說『四年災難性的政府感覺像永遠』（單源）；《Construção》1971 年 Philips 發行、寫於義大利流亡與回國之後、內含對軍政府審查的批評、編曲 Rogério Duprat 與 Magro、製作 Roberto Menescal、Rolling Stone 巴西版百大巴西專輯第 3、西班牙文 Spex 二十世紀百大第 54、Los 600 de Latinoamérica 第 5、標題曲 2009 年被 Rolling Stone 選為巴西最偉大歌曲（全部維基專輯條目單源，兩源未湊到：Rolling Stone Brasil 名單頁只在搜尋摘要看到、未開頁，且已達 8 次上限）；維基寫他有 11 座 Brazilian Music Awards（單源）。sound 格因兩源限制偏薄，最有力的 legacy 材料（Construção 榜位、Apesar de Você）皆單源，建議主線若要用可再補一次查證。"
+  },
+  {
+    "key": "clifford brown & max roach",
+    "name": "Clifford Brown & Max Roach",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "小號手 Clifford Brown 1930 年 10 月 30 日生於德拉瓦州 Wilmington，曾就讀 Delaware State 與 Maryland State College；1953 年進入職業樂團前先在費城一帶演出。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "src2": "https://www.britannica.com/biography/Clifford-Brown",
+            "from": "new"
+          },
+          {
+            "f": "鼓手 Max Roach 1924 年 1 月 10 日生於北卡羅來納州，母親是福音歌手；他十歲左右就在福音樂團打鼓。",
+            "src": "https://en.wikipedia.org/wiki/Max_Roach",
+            "src2": "https://www.arts.gov/honors/jazz/max-roach",
+            "from": "new"
+          },
+          {
+            "f": "Brown 與 Roach 1954 年合組五重奏。",
+            "src": "https://en.wikipedia.org/wiki/Max_Roach",
+            "src2": "https://www.arts.gov/honors/jazz/max-roach",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Roach 是 bebop 鼓法的開創者之一，與 Kenny Clarke 並列；他把固定的拍子脈動從大鼓移到 ride 鈸上。",
+            "src": "https://en.wikipedia.org/wiki/Max_Roach",
+            "src2": "https://www.arts.gov/honors/jazz/max-roach",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Clifford Brown 1956 年 6 月 26 日在賓州高速公路（Pennsylvania Turnpike）的車禍中過世，得年 25 歲；同車的鋼琴手 Richie Powell 也罹難，五重奏隨之終結。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "src2": "https://www.britannica.com/biography/Clifford-Brown",
+            "from": "new"
+          },
+          {
+            "f": "Freddie Hubbard 與 Lee Morgan 都是 Brown 影響下的後輩小號手；Morgan 直接跟 Brown 上過課。",
+            "src": "https://www.britannica.com/biography/Clifford-Brown",
+            "src2": "https://www.udiscovermusic.com/stories/clifford-brown-legacy-feature/",
+            "from": "new"
+          },
+          {
+            "f": "Max Roach 1984 年獲選 NEA Jazz Master。",
+            "src": "https://en.wikipedia.org/wiki/Max_Roach",
+            "src2": "https://www.arts.gov/honors/jazz/max-roach",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "五重奏 1954 年成軍，1956 年 6 月 Brown 與 Powell 過世而告終。",
+            "src": "https://www.britannica.com/biography/Clifford-Brown",
+            "src2": "https://en.wikipedia.org/wiki/Max_Roach",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1954 年 Clifford Brown 與 Max Roach 組成五重奏。",
+        "src": "https://en.wikipedia.org/wiki/Max_Roach",
+        "src2": "https://www.arts.gov/honors/jazz/max-roach",
+        "from": "new"
+      },
+      {
+        "f": "1956 年 6 月 26 日 Brown 與 Powell 車禍過世，五重奏終止。",
+        "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+        "src2": "https://www.britannica.com/biography/Clifford-Brown",
+        "from": "new"
+      },
+      {
+        "f": "Max Roach 1984 年獲選 NEA Jazz Master。",
+        "src": "https://en.wikipedia.org/wiki/Max_Roach",
+        "src2": "https://www.arts.gov/honors/jazz/max-roach",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫對本組無研究稿；上線簡介（Study in Brown、At Basin Street）與本位查到的事實無衝突：At Basin Street 維基寫 1956 年 1 月 4 日與 2 月 16–17 日錄音、『the last album the quintet officially recorded』，與上線簡介『最後一張官方錄音』一致。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "補查 8 次：維基 Clifford Brown、維基 Max Roach、WebSearch（後輩影響）、arts.gov Max Roach、維基專輯 Clifford Brown & Max Roach、維基 At Basin Street、udiscovermusic 傳記、Britannica Clifford Brown（此位 Britannica 取得完整內文）。失敗請求 0 次。身分確認：poolAlbums 為 1954 同名專輯、《Study in Brown》1955、《At Basin Street》1956，皆為 Brown–Roach 五重奏，查證對象一致；此卡為五重奏名義，所以生平以 Brown 與 Roach 兩人分別收。單源，未收進 facts：Brown 生於音樂家庭、父親把四個兒子組成合唱四重奏、十歲左右學小號、老師 Robert Boysie Lowery（維基單源）；Brown 1954 年 DownBeat 評論家票選 New Star of the Year、1972 年入選 DownBeat 爵士名人堂（維基單源）；〈Sandu〉〈Joy Spring〉〈Daahoud〉成為標準曲（維基 Clifford Brown 與維基專輯頁皆有，但同站不同條目、非獨立，且專輯頁引 Rough Guide to Jazz，只有〈Daahoud〉與〈Joy Spring〉兩首）；Britannica 稱他是『the most influential trumpeter of his generation』、風格為高音明亮、節奏細緻、裝飾音多且旋律成長句（Britannica 單源，未放 facts；Britannica 另稱影響 Booker Little、Donald Byrd）；Quincy Jones 稱 Brown 是『one of the most important musicians of all time』、Donald Byrd 稱『Clifford created a vocabulary that I and everyone since then has adopted』、Herbie Mann 與 Sonny Rollins 的話（udiscovermusic 單源）；紐約時報稱五重奏『perhaps the definitive bop group until Mr. Brown\\'s fatal automobile accident in 1956』（只見維基專輯頁引述，未開 NYT 原文，單源）；專輯《Clifford Brown & Max Roach》1954 年 8 月 2–3、6 日於 Hollywood Capitol Studios 錄音、1954 年 12 月初 EmArcy 發行、1999 年入選葛萊美名人堂、Gary Giddins 選〈Delilah〉為 1954 年最佳爵士曲目（維基專輯頁單源）；Roach 1988 年 MacArthur、1980 年 DownBeat 名人堂、1992 年 Modern Drummer 名人堂、2008 年葛萊美終身成就獎（維基單源）；Brown Festival 在 Wilmington 每年舉行（udiscovermusic 單源）；Brown 從費城往芝加哥途中出車禍（udiscovermusic 與 Britannica 都寫賓州高速公路，維基寫 Bedford, Pennsylvania）。另單源未收：五重奏長期陣容 Harold Land、Richie Powell、George Morrow（維基專輯頁單源）；《At Basin Street》為五重奏正式錄製的最後一張專輯、陣中薩克斯風手為 Sonny Rollins（維基 At Basin Street 單源，與上線簡介一致）；Brown 的吹法（Britannica 單源）。sound 格只有 Roach 的鼓法兩源，Brown 的吹法請寫作層謹慎，勿當兩源事實。"
   }
 ]
