@@ -98,6 +98,75 @@
   "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際請求 8 次：英文維基 Ice Cube、Britannica 人物頁（WebFetch，摘要）、搖滾名人堂 N.W.A 頁、WebSearch 兩次（AmeriKKKa 製作／後輩影響）、Britannica《AmeriKKKa's Most Wanted》頁（WebFetch 摘要）、葛萊美官網文章（WebFetch 摘要）、英文維基《Straight Outta Compton》專輯頁。失敗：Britannica 人物頁 curl 403（改用 WebFetch 成功）、國會圖書館 PDF 讀不出文字。請求後面的 Britannica 與葛萊美內容是 WebFetch 的小模型摘要，非全文。名人堂官方（可具名單源）：搖滾名人堂 N.W.A 頁寫「N.W.A solidified the disparate elements of gangsta rap into a groundbreaking genre」，2016 年入選、引介人 Kendrick Lamar；https://rockhall.com/inductees/nwa/ 。時序不一致故 facts 不寫年份：葛萊美文章寫專輯 2015 年入選葛萊美名人堂與國家錄音登記簿，維基寫 2016 年葛萊美名人堂、2017 年國家錄音登記簿，國會圖書館 PDF 標題寫 2016（僅見搜尋結果標題）。Straight Outta Compton 首發年也是 1988（Britannica、葛萊美）或 1989（Ice Cube 維基條目寫 1989 年 1 月，專輯條目為 1988 年 8 月）的差異，facts 不寫。出生地 Britannica 寫 Baldwin Hills，維基寫洛杉磯，facts 只寫洛杉磯。『Britannica 稱…最具影響力之一』一句來自摘要引述，寫作層宜寫『被視為』。單源未收：Kill at Will 為首張白金 EP、The Predator 為首張同時空降 R&B／嘻哈榜與流行榜冠軍（第一位類，只維基單源）、1995 年 Friday 與影視轉型、2017 好萊塢星光大道、Nation of Islam 信仰、Boyz-n-the-Hood 為其作詞（維基單源）。同名確認：卡池 5 張為 Ice Cube 本人（含 2024《Man Down》、2025《Man Up》）。Rock Hall 與維基、葛萊美與維基專輯條目為不同機構，但維基與其他來源內容不完全獨立。"
  },
  {
+  "key": "jedi mind tricks",
+  "name": "Jedi Mind Tricks",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Jedi Mind Tricks 是費城的地下嘻哈團體，1996 年由高中時期的朋友——饒舌歌手 Vinnie Paz 與製作人 Stoupe the Enemy of Mankind——成軍。",
+      "src": "https://en.wikipedia.org/wiki/Jedi_Mind_Tricks",
+      "src2": "https://first-avenue.com/performer/jedi-mind-tricks/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團體的核心是 Stoupe 的製作搭配 Vinnie Paz 的饒舌，聲音強硬、氣氛陰暗，並常請多位 MC 客串。",
+      "src": "https://hiphopgoldenage.com/artists/jedi-mind-tricks/",
+      "src2": "https://www.xxlmag.com/jedi-mind-tricks-violence-begets-violence/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們在地下嘻哈圈以長年穩定的產出與死忠聽眾聞名，早期作品就累積出一批「cult following」。",
+      "src": "https://first-avenue.com/performer/jedi-mind-tricks/",
+      "src2": "https://www.xxlmag.com/jedi-mind-tricks-violence-begets-violence/",
+      "from": "new"
+     },
+     {
+      "f": "他們的專輯全以獨立方式發行，在地下圈累積出可觀的銷量。",
+      "src": "https://en.wikipedia.org/wiki/Jedi_Mind_Tricks",
+      "src2": "https://hiphopgoldenage.com/artists/jedi-mind-tricks/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "第二張專輯《Violent by Design》有饒舌歌手 Jus Allah（別名 Megatron）加入。",
+      "src": "https://en.wikipedia.org/wiki/Jedi_Mind_Tricks",
+      "src2": "https://first-avenue.com/performer/jedi-mind-tricks/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1996 年在費城成軍。",
+    "src": "https://first-avenue.com/performer/jedi-mind-tricks/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。此團的可靠來源很少，legacy 只有『地下圈長青與死忠』與『全獨立發行』兩條偏弱的共識，沒有後輩點名、沒有獎項與名人堂，故標 thin。實際 8 次：英文維基 Jedi Mind Tricks（WebFetch 摘要）、WebSearch（團史）、First Avenue 表演者簡介、Hip Hop Golden Age 簡介、WebSearch（Stoupe 製作風格，限 AllMusic／HipHopDX 等）、HipHopDX 評論存檔頁（內容無關）、WebSearch（Paz 與 Stoupe 訪談）、XXL《Violence Begets Violence》評論。失敗請求 3 次：HipHopDX 評論 404、AllMusic 403、HipHopDX Producer's Corner 404；另有一次網域限制被拒。所有頁面內容皆為小模型摘要、非全文。成軍年：維基與 First Avenue 寫 1996；AllMusic 搜尋摘要寫『早期 90 年代』，兩者不一致，facts 採 1996（維基與 First Avenue 兩源一致）。Jus Allah 加入年份：維基摘要寫 1999 年為第二張專輯加入，Hip Hop Golden Age 寫 1999–2001 與 2008–2013 在團，First Avenue 寫 2000 年《Violent by Design》加入；facts 不寫年份。銷量『25 萬張美國、45 萬張全球』維基與 Hip Hop Golden Age 皆有，屬會增長的累計數字，不收。單源未收：Vinnie Paz 本名 Vincenzo Luvineri、Stoupe 本名 Kevin Baldwin（維基摘要與搜尋摘要）、管弦樂取樣與拉丁色彩、軍事與政治題材（維基單源，題材宜概括）、Superegular／Babygrande／Enemy Soil（2010）廠牌沿革、《Servants in Heaven, Kings in Hell》被評為廣受好評（維基單源）、Vinnie Paz 1998 年創立 Army of the Pharaohs、Paz 化名由 Ikon the Verbal Hologram 改名。XXL 評論那張《Violence Begets Violence》Stoupe 缺席，來源摘要對 Stoupe 只有『長年的製作搭檔』；聲音那句已改為概括寫法。同名確認：卡池 5 張為費城的 Jedi Mind Tricks（1997–2006），無同名混卡。"
+ },
+ {
   "key": "lil wayne",
   "name": "Lil Wayne",
   "slots": {
@@ -414,6 +483,75 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。實際 6 次：英文維基 Mac Miller（WebFetch 摘要）、Britannica Mac Miller（WebFetch 摘要）、WebSearch（Circles Fund 與後續紀念）、匹茲堡基金會 Mac Miller Fund 頁、WebSearch（悼念活動）、WESA 悼念報導。失敗 1 次：wesa.fm 網址被導向 wesanews.org（301），改開新網址。頁面內容皆為 WebFetch 小模型摘要、非全文。生卒年：出生 1992 年 1 月 19 日維基與 Britannica 一致；過世 2018 年 9 月 7 日、享年 26 兩源一致，但 facts 依店主指示只放與作品直接相關的中性事實，未收死因細節（兩源皆寫意外過世，維基摘要另有用藥細節），寫作層若寫死亡只寫『2018 年過世、享年 26』。悼念人數不一致：維基摘要寫數千人、WESA 摘要寫數百人、搜尋摘要寫兩千人左右，facts 不寫人數。Blue Slide Park 的『自 1995 年以來第一張獨立發行首張專輯登冠』：維基與 Britannica 都是這個限定寫法，屬『第一』類宣稱，寫作層須保留『自 1995 年以來』；未反查 1995 之後是否有反例，但兩源用同一限定，可保留。Larry Fisherman 製作化名、Rostrum Records 2010 年簽約、起初藝名 Easy Mac（Britannica）、家人設 Circles Fund 的細節（基金設立日期匹茲堡基金會摘要寫 2018 年 10 月 1 日，維基與 Britannica 只寫過世後）皆單源或不完全一致，未收。Circles 為『最暢銷作品』只見 Britannica 摘要，facts 未收。Mac Miller Fund 由家人設立見 Britannica 與搜尋摘要，匹茲堡基金會頁摘要未提家人，facts 只寫『過世後設立』。同名確認：卡池 5 張為匹茲堡的 Mac Miller 本人（2013–2020），無同名混卡。Mac Miller 2018 年過世屬與作品直接相關（《Circles》成為遺作），可寫但須標明時序。"
+ },
+ {
+  "key": "mike",
+  "name": "MIKE",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "MIKE 是活躍於紐約的饒舌歌手，早期先把作品放在 Bandcamp 上，靠這個管道累積聽眾。",
+      "src": "https://en.wikipedia.org/wiki/Mike_(musician)",
+      "src2": "https://www.wkms.org/npr-news/2026-04-09/earl-sweatshirt-and-mike-put-a-ring-on-indie-raps-favorite-friendship",
+      "from": "new"
+     },
+     {
+      "f": "Earl Sweatshirt 在 Bandcamp 買了 MIKE 的早期 mixtape，MIKE 傳訊道謝後兩人成為朋友，這段友誼也成了他的饒舌學徒期。",
+      "src": "https://en.wikipedia.org/wiki/Mike_(musician)",
+      "src2": "https://www.wkms.org/npr-news/2026-04-09/earl-sweatshirt-and-mike-put-a-ring-on-indie-raps-favorite-friendship",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "MIKE 的聲音朦朧而暈眩，取樣經過放慢處理，唸唱緩慢低沉、帶著低傳真質感。",
+      "src": "https://en.wikipedia.org/wiki/Mike_(musician)",
+      "src2": "https://daily.bandcamp.com/album-of-the-day/mike-weight-of-the-world-review",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為當代嘻哈的重要人物之一；NPR 形容他是饒舌界最敏銳、最挑戰既有框架的頭腦之一。",
+      "src": "https://en.wikipedia.org/wiki/Mike_(musician)",
+      "src2": "https://www.wkms.org/npr-news/2026-04-09/earl-sweatshirt-and-mike-put-a-ring-on-indie-raps-favorite-friendship",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2017 年的《May God Bless Your Hustle》是他的成名之作。",
+      "src": "https://en.wikipedia.org/wiki/Mike_(musician)",
+      "src2": "https://daily.bandcamp.com/album-of-the-day/mike-weight-of-the-world-review",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2017 年以《May God Bless Your Hustle》成名。",
+    "src": "https://en.wikipedia.org/wiki/Mike_(musician)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查；來源以維基、NPR 與 Bandcamp Daily 為主，其餘（Pitchfork、Rolling Stone、Stereogum、Fader）被擋或摘要無內容，legacy 只有一條偏軟的評價、沒有後輩點名，故標 thin。實際 7 次：英文維基 MIKE（WebFetch 摘要；頁面標題為 Mike (musician)）、WebSearch（Earl Sweatshirt 與 10k）、NPR 電台聯播網 Earl Sweatshirt 與 MIKE 專文（WKMS 轉載，WebFetch 摘要）、WebSearch（專輯評論）、Bandcamp Daily《weight of the world》評論、WebSearch（出身背景）、Stereogum 評論頁（摘要無內容，等於白花）。失敗 3 次：Rolling Stone 訪談被導向付費代理（307 與 402）、一次網域限制被拒；Stereogum 頁面無內文另記入搜尋、不列失敗。內容皆為小模型摘要、非全文。同名確認：卡池 5 張（2017–2023）為紐約的 MIKE，與維基摘要、NPR、Bandcamp 的 New York rapper 相符；維基與搜尋摘要稱本名 Michael Bonema、1998 年生，卡池專輯 2017《MAY GOD BLESS YOUR HUSTLE》、2019《Tears of Joy》、2020《weight of the world》、2022《Beware of the Monkey》、2023《Burning Desire》與維基摘要列出的專輯一致（維基摘要拼 Weight of the World，卡池為小寫 weight of the world）。單源未收：出生於新澤西 Livingston、童年在倫敦（5–10 歲）、費城與紐約流轉、16 歲搬到 Bronx 再到 Brooklyn（維基單源，搜尋摘要有近似說法但未開頁）、2019 年母親過世（維基單源，且應克制，《Tears of Joy》與此有關，寫作層若寫需另查兩源）、2015 年在 Bandcamp 起步、與同儕組成 sLUms 集團、自營廠牌 10k（維基單源，NPR 摘要與 Bandcamp Daily 摘要皆未提 10k）、製作化名 DJ Blackpower、Earl Sweatshirt 2017 年對 Pitchfork 說他是最愛的饒舌歌手（NPR 單源）、NPR 稱他屬於近十年影響獨立饒舌走向的紐約圈子（NPR 單源）、維基寫 Pitchfork／The Fader／The New Yorker 稱他是當代嘻哈最重要人物之一（維基彙整，未開原文）。facts 的『被視為當代嘻哈重要人物之一』只有維基彙整一源加 NPR 的強評語，寫作層宜用『被視為』並保守。『朦朧、放慢取樣』來自 Bandcamp Daily 針對《weight of the world》的評論，『低傳真、緩慢唸唱』來自維基摘要的樂評引述，兩者各講一半，寫作層宜概括。兩源皆非同一出版集團。"
  },
  {
   "key": "mobb deep",
