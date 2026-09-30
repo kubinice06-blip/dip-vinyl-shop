@@ -241,3 +241,5 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - ar-a-012 寫作第 2 組（20 位）審畢，修 2 處：Tool「最近一座在 2020 年」、Yeah Yeah Yeahs「最近一次在 2023 年」皆為會過期的相對說法 → 改成固定時點。
   寫作層指出 Wire origin 的「左翼樂團傳統」疑為 left-field 誤譯，正文已只寫「藝術學院樂團傳統」。
 - ar-a-012 上架：40 位（搖滾、台灣樂團、竇唯），審稿修 3 處。
+- 補洞第 2 組：Alan Stivell「第一位以布列塔尼語演唱的職業歌手」有反例（Glenmor 1959 年起登台）→ 移出 facts；《Renaissance de la harpe celtique》上線簡介「Bruce Elder」應為 Bruce Eder → pubIssues。
+- 補洞第 4 組：Kacey Musgraves 失敗請求 5 次，照實記，放行。
