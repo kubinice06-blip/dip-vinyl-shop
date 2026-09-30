@@ -808,5 +808,89 @@
     "status": "full",
     "pubIssues": [],
     "notes": "補查 8 次（維基×2 含 Carnegie Hall 專輯條目、Britannica 人物、WebSearch、Britannica 專輯、grammy.com 藝人頁、AFI、Biography.com），失敗請求 3 次（LOC 錄音登錄頁 403、grammy.com 舊藝人網址 404、另一次 LOC）。poolAlbums 三張（Judy at Carnegie Hall、Judy、Alone）皆此 Judy Garland，無同名混卡。獎項主詞：專輯的工程獎與封面獎屬於錄音工程師與美術指導（WebSearch 摘要：工程 Robert Arnold、封面 Jim Silke），Garland 本人的兩項才寫她；上線簡介的『這張四項全數得獎』主詞是專輯，可以保留但寫作層別寫成 Garland 拿了四座。非獨立處：Britannica 人物與專輯條目同站；Biography.com 與維基在生平上互相印證但非獨立資料。『第一位女性』：維基專輯條目、Biography.com 皆明寫，WebSearch 摘要另說專輯是第一張拿年度專輯的現場專輯（單源摘要，未入 facts）；反例未見。單源未入 facts：Britannica 稱葬禮吸引 22000 名哀悼者、1940 年代替 MGM 拍了 21 部以上電影並帶來逾 1 億美元收入、1959 年醫生警告過勞會結束她的生涯後才有卡內基音樂廳的復出、〈A Star Is Born〉1954 以些微差距輸給 Grace Kelly；維基稱 1997 年身後獲葛萊美終身成就獎、1961 年獲金球獎 Cecil B. DeMille 獎（首位女性得主）、A Star Is Born（1954）與 Judgment at Nuremberg（1961）兩度獲奧斯卡提名、Stonewall 事件發生在她過世後不久且與同志圈的連結（單源）；Biography.com 稱 MGM 1950 年終止合約、1951 年百老匯演出、1947 年精神崩潰與後續的藥物依賴（生平細節，單源，寫作層需克制）；Biography.com 稱她 1934 年改姓 Garland、女兒 Liza Minnelli 等三名子女、Judy Garland Museum 1975 年於大急流城開館。事實庫 bank 沒有本位人物層事實，只有《Judy》《Alone》兩張專輯的 Nelson Riddle、Gordon Jenkins 編曲資料，屬專輯層，未入本位。上線簡介核對：Carnegie Hall 篇（1961 年 4 月 23 日、7 月 10 日發行、73 週榜、13 週冠軍、金唱片）與維基專輯條目一致，未列 pubIssues。"
+  },
+  {
+    "key": "kamasi washington",
+    "name": "Kamasi Washington",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Kamasi Washington 1981 年 2 月 18 日生於洛杉磯，父親 Rickey Washington 是木管樂手，也是音樂老師。",
+            "src": "https://en.wikipedia.org/wiki/Kamasi_Washington",
+            "src2": "https://www.thecurrent.org/feature/2017/11/20/theft-of-the-dial-kamasi-washington",
+            "from": "new"
+          },
+          {
+            "f": "他從小就把 John Coltrane 當成核心影響之一；他形容自己是「第二代音樂人」，家裡一直放著 Coltrane。",
+            "src": "https://www.thecurrent.org/feature/2017/11/20/theft-of-the-dial-kamasi-washington",
+            "src2": "https://www.kamasiwashington.com/about",
+            "from": "new"
+          },
+          {
+            "f": "他的童年玩伴 Stephen \"Thundercat\" Bruner 與 Ronald Bruner Jr. 日後成為他的樂團 West Coast Get Down 的班底。",
+            "src": "https://en.wikipedia.org/wiki/Kamasi_Washington",
+            "src2": "https://www.thecurrent.org/feature/2017/11/20/theft-of-the-dial-kamasi-washington",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《The Epic》2015 年 5 月由 Brainfeeder 發行，是三碟、近三小時的專輯，由十人核心樂團加上 32 人管弦樂團與 20 人合唱團演出。",
+            "src": "https://en.wikipedia.org/wiki/The_Epic_(album)",
+            "src2": "https://www.freejazzblog.org/2015/06/kamasi-washington-epic-brainfeeder-2015.html",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他在 Kendrick Lamar 2015 年的《To Pimp a Butterfly》裡吹薩克斯風，也與 Flying Lotus 的 Brainfeeder 廠牌關係密切；這些與嘻哈圈的合作讓他的爵士被更廣的聽眾聽見。",
+            "src": "https://en.wikipedia.org/wiki/Kamasi_Washington",
+            "src2": "https://www.freejazzblog.org/2015/06/kamasi-washington-epic-brainfeeder-2015.html",
+            "from": "new"
+          },
+          {
+            "f": "《The Epic》發行後獲得評論界廣泛好評（Metacritic 評為 universal acclaim）。",
+            "src": "https://en.wikipedia.org/wiki/The_Epic_(album)",
+            "src2": "https://www.freejazzblog.org/2015/06/kamasi-washington-epic-brainfeeder-2015.html",
+            "from": "new"
+          },
+          {
+            "f": "他為 Michelle Obama 紀錄片《Becoming》寫的配樂獲葛萊美獎提名（入圍）。",
+            "src": "https://en.wikipedia.org/wiki/Kamasi_Washington",
+            "src2": "https://www.kamasiwashington.com/about",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2015 年 5 月發行首張由廠牌發行的專輯《The Epic》。",
+            "src": "https://en.wikipedia.org/wiki/The_Epic_(album)",
+            "src2": "https://www.freejazzblog.org/2015/06/kamasi-washington-epic-brainfeeder-2015.html",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "成長地：Vice 寫在 Inglewood 長大、官網寫在 Leimert Park 長大，維基只寫生於洛杉磯；facts 只寫『生於洛杉磯』。",
+      "《The Epic》長度：維基 173 分 36 秒、Free Jazz Collective 174 分鐘、搜尋摘要 170 分鐘；facts 寫『近三小時』。"
+    ],
+    "searches": 8,
+    "failedFetches": 5,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 8 次（維基×2 含 The Epic 條目、WebSearch×2、Vice、The Current、Free Jazz Collective、官網），失敗請求 5 次，超出上限 4 次（Britannica 404、《The Epic》條目舊網址 404、Under the Radar 403、Treble 403；另有 Pitchfork 被擋一次），照實記錄。poolAlbums 三張（The Epic、Heaven and Earth、Fearless Movement）皆 Kamasi Washington 本人，無同名混卡；事實庫無研究稿也無上線簡介，全靠補查。非獨立處：Free Jazz Collective 是單一樂評人的評論（嚴格說 sound 與 legacy 的第二源是評論，不是傳記），官網 about 頁是他自己的說法；The Current 與 Vice 都以父親為核心，非獨立。origin 第二條 f：『第二代音樂人』『一出生就有 Coltrane 在放』出自 The Current 的訪談，官網只證 Coltrane 為他的重要參照，嚴格說『家裡一直放著 Coltrane』偏單源，寫作層可只寫『Coltrane 是他從小的核心影響』。單源未入 facts：維基稱他畢業於 Alexander Hamilton High School 音樂學院（Beverlywood）、進 UCLA 民族音樂學系，在 UCLA 期間與 Kenny Burrell、Gerald Wilson、Billy Higgins 等教師演奏，並與 Cameron Graves 與 Bruner 兄弟發行 2004 年《Young Jazz Giants》；維基稱他也與 Snoop Dogg、Herbie Hancock、Wayne Shorter 合作；維基 2026 年以〈TV Off〉獲葛萊美最佳饒舌歌曲（與 Kendrick Lamar 等人，得獎）、與 Bonobo 及 Floating Points 為 2025 動畫《Lazarus》配樂並獲 2026 Music Awards Japan 動畫類最佳原創配樂（維基單源）；維基《The Epic》條目稱 2011 年 12 月在洛杉磯 Kingsize Soundlabs 租場錄了一個月，約 190 首、8 個計畫、45 首 Washington 作品，其中 17 首成為《The Epic》，Flying Lotus 提供 Brainfeeder 的機會（Free Jazz 與搜尋摘要亦提到 2011 年 12 月與 190 首，但未開頁的摘要），該專輯 Metacritic 83（7 篇評論）、AllMusic 稱『二十一世紀的爵士，既平易近人又技藝高超』、Guardian 年度榜第 8、Pitchfork 年度榜第 10、德國白金；Vice 稱父親 Rickey 曾為 Diana Ross、Temptations 錄音、為了不缺席兒子而放棄巡演成為 Inglewood 音樂老師、1990 年代 Inglewood 凶殺率高（Kamasi 說 11 歲時目標是當幫派份子）、父親在家蓋錄音室；The Current 稱他 7 歲前後學鼓、鋼琴與豎笛、自學薩克斯風的 Wayne Shorter 曲，父親的朋友 Art Blakey 也影響他；官網稱他成長於 Leimert Park、為 Becoming 配樂獲葛萊美與艾美獎提名（2020）、加入超級組合 Dinner Party。Free Jazz Collective 的評論是負面偏中性（評樂評人 Martin Schray 認為專輯被炒作過頭、編曲過度），不入 facts，但提醒寫作層：『廣泛好評』並非一致，評論界也有質疑聲。搜尋摘要另稱 Brainfeeder 帶動『爵士復興』（Treble，403 未開），未入 facts。"
   }
 ]

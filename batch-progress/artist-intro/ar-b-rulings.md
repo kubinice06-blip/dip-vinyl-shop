@@ -25,3 +25,4 @@
 - 補洞第 1 組：Jack Wilson 只採爵士鋼琴手，英國樂團領班同名者排除。GoGo Penguin 早期低音提琴手兩說，不具名。Hermeto Pascoal「Miles Davis 稱他…」兩源皆寫 allegedly，只能寫「據傳」。Hermeto 2025 年 9 月 13 日過世兩源一致。
 - 寫作第 2 組（20 位）審畢，修 4 處：Chico Buarque〈A Banda〉音樂節主辦是 TV Record 電視台；David Murray 寫 WSQ「1977 年」與本批 WSQ 成軍年裁定衝突 →「1970 年代後期」；Diana Krall《Live in Paris》葛萊美屬 2003 年典禮，拿掉「2002 年」、Juno 補年份；Esperanza Spalding 在世且 2022 年又得同獎，「兩度」→「2013 與 2020 年也都拿下」。Dollar Brand 273（反隔離、曼德拉、改名、過世）照准。
 - ar-b-002 上架：40 位（爵士），審稿修 6 處。
+- 補洞第 3 組：Machito 出生年三說不寫；Kenny Wheeler 加拿大勳章採官方授勳稿年份；Mahavishnu《Inner Worlds》為第三期陣容，不套原班故事。Laufey 在世，葛萊美只能寫固定年份。
