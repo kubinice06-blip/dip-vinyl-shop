@@ -517,5 +517,82 @@
   "status": "thin",
   "pubIssues": [],
   "notes": "事實庫有《Made in Japan》研究稿與 4 則上線簡介，皆專輯層級；origin、sound 補查，legacy 補查後只剩單源，標 none。日本藝人，人名照原文漢字收：ジョー山中、石間秀機、Jun Kobayashi（英文維基作 Jun Kobayashi，搜尋摘要另拼作 Jun Kozuki，兩源不一致，facts 採維基拼法；日文漢字未能核對，故貝斯手與鼓手都寫拉丁拼音）、Joji \"George\" Wada（英文維基）；日文維基兩次 404（含百分比編碼）、AllMusic 與 Progarchives 403，無日文來源可核對漢字。搜尋 8 次：維基樂團條目、WebSearch（日文關鍵詞）、維基 Satori、WebSearch（英美媒體）、rockadrome 商品頁、維基內田裕也、WebSearch（Cope 排名）、Louder Cope 專欄（只讀到前言、無 Flower Travellin' Band 內容）。失敗請求 3 次（日文維基 404 兩次、Progarchives 403），failedFetches 記 3。⚠ 非獨立：origin 第二、三條與 sound 條的兩源為維基不同條目；origin 第一條的 rockadrome 是唱片行商品頁，只佐證『1960 年代末由內田裕也起頭』與『傳奇日本搖滾樂團』，陣容名單來自維基單源。legacy 格：（一）Julian Cope《Japrocksampler》（2007）日本搖滾五十大：《Satori》第 1、《Made in Japan》第 18、《Anywhere》第 28，Cope 稱《Satori》是『史上最偉大的 hard-rock rages 之一』（維基 Satori 條目讀到第 1 與引語；第 18、第 28 來自搜尋摘要；上線簡介亦寫第 1 與第 18，但第二個網頁來源沒讀到，Louder 的 Cope 專欄只抓到前言）。（二）Rolling Stone Japan 2007 年 9 月百大日本搖滾專輯，《Satori》第 71（維基單源）。（三）Sputnikmusic 評論人 Hernan M. Campbell：Yamanaka 與 Ishima 在 Kuni Kawachi《Kirikyogen》（1970）與《Satori》磨出『後來成為 doom metal 本質的聲音』（維基轉引，單源）。（四）維基樂團條目：唱片『至今在業界仍受高度評價』（單源）。（五）搜尋摘要：『幫 Japanoise 與 stoner metal 開路』的說法與『被視為日本迷幻搖滾高峰』的說法出處未開頁。（六）維基樂團條目：1973 年解散、2007 年 11 月 25 日重組並於 2008 年發行《We Are Here》、Joe Yamanaka 2011 年 8 月 7 日肺癌逝世（享年 64）、內田裕也 2019 年 3 月 17 日逝世（皆維基單源；逝世年屬高風險，兩源不足不收）。（七）維基 Satori：專輯匆忙錄製當作赴北美的名片、Yamanaka 刻意減少歌詞以留出即興空間（單源，且與上線簡介一致）。（八）維基內田裕也：他在 1966 年披頭四訪日時擔任開場、與 John Lennon 成為朋友；『沒有內田裕也，日本搖滾不會是今天的樣子』（音樂史家語，單源）。"
+ },
+ {
+  "key": "fontaines d.c.",
+  "name": "Fontaines D.C.",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fontaines D.C. 是 Dublin 的樂團，成員在該市的音樂學院 BIMM Dublin 認識，因共同愛詩而走在一起；陣容為主唱 Grian Chatten、吉他手 Carlos O'Connell 與 Conor Curley、貝斯手 Conor Deegan III、鼓手 Tom Coll。",
+      "src": "https://www.thebeat.ie/fontaines-dc-irish-post-punk-band-history-and-music-guide.php",
+      "src2": "https://en.wikipedia.org/wiki/Fontaines_D.C.",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "聲音是 post-punk 的急迫感加上 indie 旋律與車庫搖滾質地，歌詞帶著文學味，寫的是身分、歸屬與現代愛爾蘭；維基引述評論把它形容為 post-punk、garage rock 與帶有粗糲都會節奏與敘事感的綜合。",
+      "src": "https://www.thebeat.ie/fontaines-dc-irish-post-punk-band-history-and-music-guide.php",
+      "src2": "https://en.wikipedia.org/wiki/Fontaines_D.C.",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2019 年首張《Dogrel》同時入圍 Mercury Prize 與 Choice Music Prize（皆為入圍）。",
+      "src": "https://en.wikipedia.org/wiki/Fontaines_D.C.",
+      "src2": "https://en.wikipedia.org/wiki/Dogrel",
+      "from": "new"
+     },
+     {
+      "f": "第 63 屆葛萊美（2021 年），《A Hero's Death》入圍最佳搖滾專輯，得獎的是 The Strokes 的《The New Abnormal》；這是樂團的首次葛萊美入圍。",
+      "src": "https://www.rte.ie/entertainment/2021/0314/1203991-fontaines-d-c-miss-out-on-grammy-win/",
+      "src2": "https://www.nme.com/news/music/fontaines-d-c-first-ever-grammys-nomination-interview-2825052",
+      "from": "new"
+     },
+     {
+      "f": "《Skinty Fia》（2022）是樂團第一張同時登上愛爾蘭與英國專輯榜冠軍的專輯，並讓他們拿下 2023 年 Brit Awards 的國際團體獎（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Skinty_Fia",
+      "src2": "https://en.wikipedia.org/wiki/Fontaines_D.C.",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2021 年（第 63 屆）葛萊美最佳搖滾專輯入圍，為首次葛萊美入圍。",
+    "src": "https://www.rte.ie/entertainment/2021/0314/1203991-fontaines-d-c-miss-out-on-grammy-win/",
+    "src2": "https://www.nme.com/news/music/fontaines-d-c-first-ever-grammys-nomination-interview-2825052",
+    "from": "new"
+   },
+   {
+    "f": "2023 年 Brit Awards 國際團體獎（得獎）。",
+    "src": "https://en.wikipedia.org/wiki/Skinty_Fia",
+    "src2": "https://en.wikipedia.org/wiki/Fontaines_D.C.",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年份：維基與 The Beat 寫成員 2014 年在 BIMM Dublin 認識，搜尋摘要寫 2017 年成軍，RTE 2021 年報導寫『四年前』（約 2017）；兩說不一致，facts 不寫年份。"
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫 research 與上線簡介皆為空，從零查；卡池 4 張皆 Fontaines D.C. 本團，無同名混卡。搜尋 8 次：維基樂團條目、WebSearch（源流與獎項）、The Beat 樂團史、WebSearch（葛萊美入圍）、RTE 葛萊美報導、NME 葛萊美專訪、維基 Dogrel、維基 Skinty Fia。失敗請求 3 次（Variety 文章先 307 轉到 tollbit 再 402、BRITs 官網 403），failedFetches 記 3。⚠ 非獨立：legacy 第一、三條與 milestones 第二條的兩源為維基不同條目，Brit Awards 官網 403 未能取得獨立第二源；RTE 與 NME 兩條葛萊美為獨立來源。單源未收：（一）RTE：成員來自 Monaghan、Dublin、Mayo 與西班牙。（二）維基：Chatten 半英半愛爾蘭、在 Dublin 北邊 Skerries 長大；成員合出詩集《Vroom》與《Winding》；團名取自《教父》角色，D.C. 指 Dublin City；首張的歌詞『Dublin in the rain is mine, a pregnant city with a Catholic mind』；《Dogrel》在 Rough Trade 網站與 BBC Radio 6 Music 主持人票選中為年度專輯（搜尋摘要亦有，來源皆維基系）；2025 年 Grammy 最佳搖滾專輯與 2025 年 Brit 國際團體（維基單源，具體屆次與得獎與否未核對，不收）；《Romance》2024 年首週英國榜第 2、Mercury Prize 入圍與兩項葛萊美入圍（維基與搜尋摘要，未逐項核對，不收）。（三）The Beat：受 The Clash、Joy Division、The Fall 與 The Strokes 影響；『Few Irish bands have made as big an impact on modern alternative music』（單源）；在 Dublin 獨立場景累積數年口碑（單源）。（四）NME：Chatten 說在他們之前只有約 6 組愛爾蘭藝人得過葛萊美提名（團員自述，單源）。（五）維基 Skinty Fia：專輯名取自愛爾蘭古語『鹿的詛咒』（指已滅絕的愛爾蘭麋鹿），主題涉及身分與旅居倫敦的愛爾蘭音樂人；2022 年 Choice Music Prize 年度專輯入圍；NME 2022 年度專輯第 4、Guardian 第 9（皆單源）。（六）維基 Dogrel：Metacritic 86、製作人 Dan Carey；Guardian 稱其詞曲水準『bands can take years to reach』；Pitchfork 說他們不像 IDLES 或 Shame，而是哀悼被現代性威脅的社群（皆維基轉引，單源）。"
  }
 ]
