@@ -1,0 +1,226 @@
+[
+ {
+  "key": "the strokes",
+  "name": "The Strokes",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1998 年在紐約成軍，其中三名成員是曼哈頓的同校同學，從青少年時期就一起玩音樂。",
+      "src": "https://en.wikipedia.org/wiki/The_Strokes",
+      "src2": "https://www.britannica.com/topic/the-Strokes",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們被視為 2000 年代初車庫搖滾復興的領頭樂團之一，首張專輯《Is This It》的風格也常被歸入後龐克復興。",
+      "src": "https://en.wikipedia.org/wiki/The_Strokes",
+      "src2": "https://www.britannica.com/topic/the-Strokes",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Is This It》在 2009 年 11 月被 NME 選為「十年百大專輯」第 1 名，由音樂人、製作人、記者與唱片公司主管組成的評審團票選。",
+      "src": "https://www.nme.com/news/music/the-strokes-174-1308681",
+      "src2": "https://en.wikipedia.org/wiki/Is_This_It",
+      "from": "new"
+     },
+     {
+      "f": "他們在 2000 年代初帶動一波新的吉他樂團，Arctic Monkeys 是受其影響的後輩之一。",
+      "src": "https://www.nme.com/features/the-strokes-is-this-it-at-20-years-anniversary-3006402",
+      "src2": "https://en.wikipedia.org/wiki/The_Strokes",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Is This It》2009 年在 NME 的十年百大專輯榜名列第 1。",
+    "src": "https://www.nme.com/news/music/the-strokes-174-1308681",
+    "src2": "https://en.wikipedia.org/wiki/Is_This_It",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 7 次：英文維基 The Strokes、Britannica The Strokes、英文維基 Is This It、WebSearch（NME 2009 榜單）、NME 榜單新聞頁、WebSearch（後輩影響，限定域名）、NME《Is This It》20 週年專文。失敗請求：grammy.com 藝人頁 404（未取得）；另有一次 WebSearch 因 allowed_domains 含被封網域而在 API 層被拒（未取得結果，不計）。卡池 5 張專輯（Is This It、Room on Fire、First Impressions of Earth、Angles、The New Abnormal）都對得上同一支紐約樂團，無同名混卡。單源未收（留給寫作層時勿當事實）：(1) 維基：三人就讀 Dwight School、Fraiture 隨後加入、Hammond Jr. 當年底加入；(2) 維基：Casablancas 談 Velvet Underground 影響；Lizzy Goodman 稱其對自己時代的影響堪比 Velvet Underground 之於他們的時代；Killers、Arctic Monkeys、Franz Ferdinand 點名受其影響；(3) 維基：《The New Abnormal》獲第 63 屆葛萊美最佳搖滾專輯（樂團得獎），第二源未開頁；(4) 維基 Is This It：2009 年 Rolling Stone 十年榜第 2（次於 Kid A）、Pitchfork 十年榜第 7、Rolling Stone 500 大專輯 2003 年第 367、2012 年第 199、2020 年第 114，皆同站不同條目、非獨立且未逐條核對，不收；(5) 維基引 Guardian：《Is This It》把時代精神從 nu-metal 拉開、是 Arctic Monkeys 的主要催化劑（轉述單源）；(6) Britannica：「lean hooks, laconic vocals, spartan production」、成員多為紐約菁英家庭出身、首張專輯發行前已有追隨者（單源）；(7) 維基 Is This It：鼓組只用三支麥克風、人聲透過小型練習音箱錄製（單源；上線簡介已寫兩把吉他左右聲道與人聲像從擴音器擠出）。「維基兩個條目」若作為兩源一律非獨立：legacy 第 1 條的 src2（維基 Is This It）與 NME 為獨立，sound 與 origin 兩條的 Britannica 為獨立第二源。Britannica 與維基對成軍年份都寫 1998（維基寫成軍於 1998，Britannica 寫三人 1998 年開始一起玩）。"
+ },
+ {
+  "key": "the velvet underground",
+  "name": "The Velvet Underground",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Lou Reed 與 John Cale 1964 年在紐約的前衛音樂圈相識，之後合組樂團。",
+      "src": "https://en.wikipedia.org/wiki/The_Velvet_Underground",
+      "src2": "https://www.anothermag.com/design-living/8526/ten-things-you-might-not-know-about-the-velvet-underground",
+      "from": "new"
+     },
+     {
+      "f": "普普藝術家 Andy Warhol 把他們帶進自己的多媒體巡演 Exploding Plastic Inevitable，並協助他們與 MGM 旗下的 Verve 簽約。",
+      "src": "https://en.wikipedia.org/wiki/The_Velvet_Underground",
+      "src2": "https://www.anothermag.com/design-living/8526/ten-things-you-might-not-know-about-the-velvet-underground",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把前衛音樂與自由爵士的持續音、失真和回饋噪音用在搖滾吉他上。",
+      "src": "https://www.britannica.com/topic/the-Velvet-Underground",
+      "src2": "https://en.wikipedia.org/wiki/The_Velvet_Underground",
+      "from": "new"
+     },
+     {
+      "f": "歌詞直接寫吸毒等城市生活的實況。",
+      "src": "https://www.britannica.com/topic/the-Velvet-Underground",
+      "src2": "https://www.rockhall.com/inductees/velvet-underground",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Brian Eno 1982 年說：買了那 30000 張首作的人，每個都組了團。",
+      "src": "https://en.wikipedia.org/wiki/The_Velvet_Underground",
+      "src2": "https://quoteinvestigator.com/2016/03/01/velvet/",
+      "from": "new"
+     },
+     {
+      "f": "他們 1996 年入選搖滾名人堂。",
+      "src": "https://en.wikipedia.org/wiki/The_Velvet_Underground",
+      "src2": "https://www.rockhall.com/inductees/velvet-underground",
+      "from": "new"
+     },
+     {
+      "f": "他們被視為前衛、實驗與另類搖滾場景中影響深遠的樂團，Britannica 進一步說其原始的吉他聲與都市黑色電影式的歌詞啟發了 1970 至 1980 年代的龐克與另類搖滾。",
+      "src": "https://www.britannica.com/topic/the-Velvet-Underground",
+      "src2": "https://en.wikipedia.org/wiki/The_Velvet_Underground",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1996 年入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/The_Velvet_Underground",
+    "src2": "https://www.britannica.com/topic/the-Velvet-Underground",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：維基寫 Reed 與 Cale 1964 年相識、樂團於 1964 年在紐約成形；Britannica 寫 1965 年成軍；不採其中一個成軍年，facts 只寫「1964 年相識」（維基與 AnOther 一致）。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 6 次：英文維基、Britannica、搖滾名人堂官網、WebSearch（Eno 引言與 Warhol）、Quote Investigator、AnOther 雜誌專文。卡池 5 張（Squeeze、The Velvet Underground & Nico、White Light/White Heat、The Velvet Underground、Loaded）為同一支紐約樂團；其中 Squeeze（1973）實為 Doug Yule 主導、Reed 等原班已離團的作品，卡池把它掛在樂團名下，寫作層不要把它當成原班之作。「Eno 引言」的 30000 張銷量是 Eno 轉述 Reed 的說法，維基另引 2021 年調查指首作 1971 年前可能已賣 20 萬張，故 f 欄只寫 Eno 說了什麼，不寫實際銷量。名人堂官方（可具名單源）：搖滾名人堂官網介紹寫「Not everyone bought their album, but everyone who did started a band」「literary but down to earth, schooled in both highbrow culture and the streets」，引介人 Patti Smith 稱他們是「a band of opposites shooting freely from pole to pole」，https://www.rockhall.com/inductees/velvet-underground 。入選年 1996 年有維基、Britannica 與名人堂官網三處；引介人 Patti Smith 只見名人堂官網頁面（單源），不放 f 欄。單源未收：維基：Cale 以 Leonard Bernstein 獎學金學古典、受 Cage 與 La Monte Young 影響，Reed 用另類調弦造出持續音效果；AllMusic 稱他們是「the first proto-punk group」（經維基轉引）；Christgau 稱他們是 60 年代「number three band」（維基）；Rolling Stone 2003 年名單《The Velvet Underground & Nico》第 13；2017 年葛萊美終身成就獎（維基單源，屬「Trustees／終身成就」類，得獎）；Britannica：成員 Sterling Morrison、Angus MacLise、Maureen Tucker 與樂團名取自一本講異常性行為的平裝書、首演在高中舞會（單源）；Britannica：Reed 與 Cale 單飛後與 Iggy and the Stooges、Eno、Patti Smith 合作（單源）；搜尋摘要：Warhol 製作首張（未開頁，不收）。"
+ },
+ {
+  "key": "tim buckley",
+  "name": "Tim Buckley",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1947 年 2 月 14 日生於華盛頓特區，童年搬到南加州。",
+      "src": "https://en.wikipedia.org/wiki/Tim_Buckley",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/buckley-tim",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的嗓音音域極寬，從高處的尖嘯到深沉的男中音都能唱。",
+      "src": "https://en.wikipedia.org/wiki/Tim_Buckley",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/buckley-tim",
+      "from": "new"
+     },
+     {
+      "f": "他從民謠出發，逐步加入爵士與實驗手法，《Starsailor》是他最冒險的作品之一。",
+      "src": "https://en.wikipedia.org/wiki/Tim_Buckley",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/buckley-tim",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1975 年因藥物與酒精過量過世，享年 28 歲。",
+      "src": "https://en.wikipedia.org/wiki/Tim_Buckley",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/buckley-tim",
+      "from": "new"
+     },
+     {
+      "f": "兒子 Jeff Buckley 後來也成為知名歌手。",
+      "src": "https://en.wikipedia.org/wiki/Tim_Buckley",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/buckley-tim",
+      "from": "new"
+     },
+     {
+      "f": "他過世後，作品在 1980 年代末到 1990 年代重新受到注意，新一代樂迷回頭聽他的目錄。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/buckley-tim",
+      "src2": "https://en.wikipedia.org/wiki/Starsailor_(album)",
+      "from": "new"
+     },
+     {
+      "f": "〈Song to the Siren〉出自《Starsailor》，This Mortal Coil 1984 年翻唱，後來又有 John Frusciante 等人翻唱，帶動了對他的重新關注。",
+      "src": "https://en.wikipedia.org/wiki/Starsailor_(album)",
+      "src2": "https://en.wikipedia.org/wiki/Tim_Buckley",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "過世日期：維基寫 1975 年 6 月 29 日，Encyclopedia.com 寫 6 月 28 日；兩源一致的只有 1975 年與享年 28 歲，facts 不寫日期。",
+   "搬家年齡：維基寫 5 歲搬到加州 Bell Gardens，Encyclopedia.com 寫 12 歲搬到南加州；不一致，facts 只寫「童年搬到南加州」，不寫年齡。",
+   "上線簡介寫《Happy Sad》錄於 1968 年 12 月、1969 年 4 月發行；本位未查該專輯，不推翻。"
+  ],
+  "searches": 5,
+  "failedFetches": 3,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 5 次：英文維基 Tim Buckley、WebSearch（生平與遺產）、Encyclopedia.com、WebSearch（Song to the Siren 與影響，限定域名）、英文維基 Starsailor。失敗請求：Britannica 條目只回傳殘缺頁（無傳記內文，視為未取得）、AllMusic 藝人頁 403、Uncut《Starsailor》專文 403；另有一次 WebSearch 因 allowed_domains 含被封網域在 API 層被拒。卡池 5 張（Goodbye and Hello、Starsailor、Sefronia、Blue Afternoon、Happy Sad）皆對得上 Tim Buckley，無同名混卡；兒子 Jeff Buckley 是另一人，卡池無他的專輯。Legacy 這格很薄：兩源都支持的只有「過世後重獲注意」與「兒子成為歌手」；最後一條 src 與 src2 同為維基（不同條目，非獨立），〈Song to the Siren〉翻唱者名單只見維基。單源未收：維基：華盛頓特區出生於義大利裔母親與愛爾蘭裔父親家庭、13 歲自學班卓琴、足球傷斷兩根手指致無法按大橫按和弦、1966 年經 Mothers of Invention 鼓手推薦給經紀人 Herb Cohen、在 Bowery 認識吉他手 Lee Underwood、19 歲獲 Elektra 的 Jac Holzman 簽約；維基：受 Cathy Berberian 與 Luciano Berio 影響；維基：〈Song to the Siren〉被 Robert Plant、Bryan Ferry、Sinéad O'Connor 等翻唱，葬禮約 200 人、過世時負債；維基 Starsailor：發行時疏遠部分樂迷、Christgau C-、DownBeat 5 星、Pitchfork 2004 年 1970 年代專輯榜第 50、英國樂團 Starsailor 取名自此專輯；Encyclopedia.com：音域 5 至 5.5 個八度、1971 年 Down Beat 評「far too few (if any) pop artists exhibit such expressive control」、Rolling Stone 稱其作品是「how far one songwriter was willing to go in search of a greater, purer form of musical expression」（單源）；Encyclopedia.com 與維基對死因描述略異（維基：acute heroin/morphine and ethanol intoxication；Encyclopedia.com：以為是古柯鹼、實為海洛因與嗎啡混合），f 欄只寫「藥物與酒精過量」。「把人聲當樂器」只見搜尋摘要（未開頁），未收。"
+ }
+]

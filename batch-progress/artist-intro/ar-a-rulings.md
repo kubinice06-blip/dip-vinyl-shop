@@ -224,3 +224,8 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 寫作第 2 組（20 位）審畢，修 2 處：Marilyn Manson 拿掉指控者姓名（與 Brand New 一致，不點名指控者）；主線親驗 2025-01-24 洛杉磯郡地檢署宣布不起訴（Variety、Deadline、Bloomberg Law）。
   Pearl Jam「Vedder 獨自到歐洲哀悼」——Roskilde 本在歐洲，照原話改「樂團一度考慮解散，Vedder 獨自在歐洲待了一陣子哀悼」。
 - 上架：40 位（搖滾），審稿修 3 處。
+
+### ar-a-012
+
+- 補洞第 2 組：Allman Brothers《Brothers and Sisters》上線簡介「Duane 走後不到一年 Oakley 也死於機車事故」實隔約 13 個月（1971-10-29／1972-11-11）→ pubIssues。
+  The Flaming Lips 失敗請求 7 次（多家 403／404），照實記，放行。Replacements 的單源敏感內容不收，同意。
