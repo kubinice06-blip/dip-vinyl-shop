@@ -37,3 +37,4 @@
 - 寫作第 2 組（20 位）審畢，修 2 處：Laufey「2026 年蟬聯」——主線 WebSearch 核實 2026-02-01 以《A Matter of Time》再得最佳傳統流行人聲專輯（Iceland Review、IMDb News），但 2025 年未得，非「蟬聯」→「二度獲得」；Lambert, Hendricks & Ross「三重唱 1964 年結束」——Ross 1962 年已離團（其後為 LH&B）→ 改寫 Ross 離團與 Lambert 1966 年車禍。
 - ar-b-003 上架：40 位（爵士），審稿修 4 處。
 - 補洞第 3 組：The Skatalites 失敗請求 5 次，照實記，放行。pubIssue 1 條（Contemporary Jazz Quintet《Multidirection》稱五人卻列四名）。William Parker 不寫 Vision Festival 創辦人（維基與本人訪談：創辦人是 Patricia Nicholson Parker）。Tigran Hamasyan 獎項年份不一，不寫年份。卡片待核交本機：Tom Misch《Happy Music》（2023）疑為化名 Supershy 的專輯。
+- 寫作第 1 組（20 位）審畢，修 2 處：Samara Joy 刪「截至 2026 年第 68 屆 7 提名 6 座、三座人聲專輯」（在世者會長大的累計數，且未核）；Ramsey Lewis 只有「享年 87 歲」缺卒年 → 補 2022 年。放寬額度 5 位（Tharpe、Sharrock、Grappelli、Sun Ra、Thad Jones）皆人物故事或份量素材，照准。
