@@ -222,5 +222,111 @@
   "status": "full",
   "pubIssues": [],
   "notes": "補查 5 次：英文維基 Tim Buckley、WebSearch（生平與遺產）、Encyclopedia.com、WebSearch（Song to the Siren 與影響，限定域名）、英文維基 Starsailor。失敗請求：Britannica 條目只回傳殘缺頁（無傳記內文，視為未取得）、AllMusic 藝人頁 403、Uncut《Starsailor》專文 403；另有一次 WebSearch 因 allowed_domains 含被封網域在 API 層被拒。卡池 5 張（Goodbye and Hello、Starsailor、Sefronia、Blue Afternoon、Happy Sad）皆對得上 Tim Buckley，無同名混卡；兒子 Jeff Buckley 是另一人，卡池無他的專輯。Legacy 這格很薄：兩源都支持的只有「過世後重獲注意」與「兒子成為歌手」；最後一條 src 與 src2 同為維基（不同條目，非獨立），〈Song to the Siren〉翻唱者名單只見維基。單源未收：維基：華盛頓特區出生於義大利裔母親與愛爾蘭裔父親家庭、13 歲自學班卓琴、足球傷斷兩根手指致無法按大橫按和弦、1966 年經 Mothers of Invention 鼓手推薦給經紀人 Herb Cohen、在 Bowery 認識吉他手 Lee Underwood、19 歲獲 Elektra 的 Jac Holzman 簽約；維基：受 Cathy Berberian 與 Luciano Berio 影響；維基：〈Song to the Siren〉被 Robert Plant、Bryan Ferry、Sinéad O'Connor 等翻唱，葬禮約 200 人、過世時負債；維基 Starsailor：發行時疏遠部分樂迷、Christgau C-、DownBeat 5 星、Pitchfork 2004 年 1970 年代專輯榜第 50、英國樂團 Starsailor 取名自此專輯；Encyclopedia.com：音域 5 至 5.5 個八度、1971 年 Down Beat 評「far too few (if any) pop artists exhibit such expressive control」、Rolling Stone 稱其作品是「how far one songwriter was willing to go in search of a greater, purer form of musical expression」（單源）；Encyclopedia.com 與維基對死因描述略異（維基：acute heroin/morphine and ethanol intoxication；Encyclopedia.com：以為是古柯鹼、實為海洛因與嗎啡混合），f 欄只寫「藥物與酒精過量」。「把人聲當樂器」只見搜尋摘要（未開頁），未收。"
+ },
+ {
+  "key": "tizzy bac",
+  "name": "Tizzy Bac",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tizzy Bac 1999 年底成軍，成員是主唱兼鍵盤手陳惠婷、貝斯手許哲毓與鼓手林前源。",
+      "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "src2": "https://www.livenation.com.tw/artist-tizzy-bac-1322752",
+      "from": "new"
+     },
+     {
+      "f": "團名 Tizzy 是英文「神經緊張」之意，由貝斯手許哲毓翻字典得來；Bac 原意是法文 bec（鳥嘴），拼錯後有人指正，團員覺得無傷大雅而沒有修正。",
+      "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "編制裡沒有吉他手，以鍵盤（主要音色是鋼琴）作為旋律主軸，塑造出「鋼琴搖滾」樂風，被譽為「台灣 Ben Folds Five」。",
+      "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "src2": "https://www.livenation.com.tw/artist-tizzy-bac-1322752",
+      "from": "bank"
+     },
+     {
+      "f": "作品中類似吉他破音的音色，是貝斯透過效果器做出來的，並非吉他彈奏。",
+      "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "from": "bank"
+     },
+     {
+      "f": "詞曲創作主要由陳惠婷負責，歌詞以探討現代人的生活與愛情困境為主，團員自稱「牢騷系」樂團。",
+      "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "金曲獎最佳樂團獎方面，第 15 屆（2004 年）與第 18 屆（2007 年）入圍未得獎；第 18 屆他們與林揮斌、許哲珮共同獲得最佳專輯製作人獎（得獎）。",
+      "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "src2": "https://www.cna.com.tw/news/firstnews/201801235010.aspx",
+      "from": "new"
+     },
+     {
+      "f": "第 23 屆金曲獎最佳樂團獎《告密的心》入圍未得獎，得獎者是五月天《第二人生》；第 25 屆最佳樂團獎《易碎物》入圍未得獎，得獎者是麋先生《馬戲團運動》。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC25%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+      "src2": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2013 年結束《易碎物》宣傳後，樂團宣布休團一年：鼓手前源赴美進修錄音工程，主唱陳惠婷加入 Sony 音樂推出個人專輯。",
+      "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "from": "bank"
+     },
+     {
+      "f": "2016 年 3 月，就在樂團約好重新練團的前一週，貝斯手許哲毓確診罹癌，隨即展開治療。",
+      "src": "https://www.cna.com.tw/news/firstnews/201801235010.aspx",
+      "src2": "https://star.ettoday.net/news/1098847",
+      "from": "new"
+     },
+     {
+      "f": "2017 年 12 月 14 日樂團公開他的病情；他說治療仍在持續，「我們至今還是沒能好好地練一次團」，並承諾要用新歌回來見大家。",
+      "src": "https://star.ettoday.net/news/1098847",
+      "src2": "https://www.cna.com.tw/news/firstnews/201801235010.aspx",
+      "from": "new"
+     },
+     {
+      "f": "許哲毓 2018 年 1 月 23 日因癌症過世。",
+      "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+      "src2": "https://star.ettoday.net/news/1098847",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "第 18 屆金曲獎（2007 年）獲最佳專輯製作人獎，與林揮斌、許哲珮共同得獎。",
+    "src": "https://zh.wikipedia.org/wiki/Tizzy_Bac",
+    "src2": "https://www.cna.com.tw/news/firstnews/201801235010.aspx",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫研究稿與上線簡介在本位事實上一致（第 23 屆入圍、第 25 屆入圍、成員、團名來歷、貝斯過效果器）；沿用，無衝突。",
+   "搜尋摘要（英文）稱「樂團獲得第 15 屆金曲最佳樂團獎」，與中文維基、CNA 的「入圍」不符；以維基與 CNA 為準：第 15 屆是入圍未得獎。",
+   "ETtoday 稱樂團 2014 年因團員爭吵冷戰而休團，中文維基寫休團原因是前源赴美進修、惠婷加入 Sony 出個人專輯；兩源不一致，facts 只寫維基版事實（休團一年與兩人各自動向），不寫休團原因是爭吵。"
+  ],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 7 次：中文維基 Tizzy Bac、WebSearch（許哲毓病逝）、CNA 中央社訃聞、小日子刊載馬世芳專文、ETtoday 訃聞、WebSearch（樂風與評價）、Live Nation 台灣藝人介紹。失敗請求：KKBOX 藝人頁 403（未取得）。卡池 5 張（我想你會變成這樣都是我害的、如果看見地獄我就不怕魔鬼、什麼事都叫我分心、告密的心、易碎物）皆為同一支台灣樂團，無同名混卡。獎項主詞：以上獎項都是樂團得的，最佳專輯製作人獎是樂團與林揮斌、許哲珮共同獲得。第 18 屆金曲獎（2007 年）的最佳樂團獎為入圍，得獎者本位未查。Live Nation 介紹文字與中文維基高度重疊，很可能同源，非獨立；origin 第 1 條、sound 第 1 條的 src2 都是這樣，只能算弱第二源，成軍年份「1999 年底」與成員名單三處（維基、Live Nation、CNA 成員與成軍年 1999）一致。許哲毓故事細節單源未收：馬世芳專文（小日子）：抗癌期間錄製第八張專輯《知人》，惠婷把寫好的歌傳給大家、再到哲毓家討論編曲，他錄完八首歌中的四首；病逝前第三天錄完〈失速人生〉的貝斯，鼓手前源在旁協助，「每錄二、三十分鐘就得休息二十分鐘」，錄完後心情很好、吃了和牛排餐，隨後陷入昏迷；文中形容那段貝斯「轟響如奔雷，絕不似垂死之人」；時年 39 歲。CNA：2017 年 12 月他發表新單曲〈The River〉（單源）。ETtoday：官方粉專寫「在音樂的天堂裡，哲毓，永遠年輕」、他當天中午過世（單源；「中午」與維基不衝突但只此一源）。中文維基單源未收：許哲毓與主唱在中央大學熱音社結識（另寫成員畢業於中央大學英文系、實踐大學時尚與媒體研究所肄業）、第 3 屆貢寮國際海洋音樂祭首獎「海洋大賞」、金音創作獎最佳搖滾樂團（Live Nation 寫「金音獎最佳樂團獎」，名稱與屆次不一致，未收）、鄭凱同為早期鼓手、林前源 2003 年加入。上線簡介「中華音樂人交流協會年度十大專輯」本位未查證。CNA 將第 18 屆最佳專輯製作人獎年份寫成 2006 年（應為第 18 屆典禮 2007 年舉行、頒給 2006 年作品），f 欄採維基的 2007 年典禮年。"
  }
 ]
