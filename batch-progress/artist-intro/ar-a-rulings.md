@@ -293,3 +293,7 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - ar-a-016 寫作第 2 組（20 位）審畢，0 處。主線親驗：Boards of Canada《Inferno》2026-05-29 由 Warp 發行（Consequence、RA、維基）。
 - ar-a-016 上架：40 位（電子），審稿 0 處。
 - 補洞交齊。Robyn 失敗請求 5 次，照實記，放行。Enya 兩則上線簡介年份與銷量待核 → pubIssues。
+
+### ar-a-018
+
+- 補洞第 1 組：Death Grips 與 Bowie《Blackstar》只能寫「McCaslin 說錄製期間聊過他們」，不寫成因果。Gang Starr 的 Guru 享年兩源不一致，不寫享年；「臨終信」須寫「據稱」。

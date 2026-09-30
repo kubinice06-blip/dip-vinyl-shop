@@ -515,5 +515,173 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "卡池與事實庫無材料，從零查；補查 7 次：維基、Britannica、WebSearch（星光大道）、星光大道官網、CBS、WebSearch（葛萊美）、Grammy.com；失敗 1 次未計：AllMusic（403）。單源未收：維基『one of the first Dirty South rappers to achieve mainstream success in the early 2000s』（『之一』類宣稱，只維基單源；Britannica 只說他是 Dirty South 派代表）；藝名取自 ludicrous 與本名（Britannica）；電台藝名 Chris Lova Lova 與 Hot 97.5 的實習／DJ 經歷、Banneker High School 1995 畢業（維基）；Britannica 說他當電台 DJ 時認識 Timbaland，1998 年以〈Fat Rabbit〉首度亮相；『Money Maker』（feat. Pharrell Williams）同晚獲 Best Rap Song（Grammy.com 與搜尋摘要，第二源未開頁）；2005 年〈Yeah!〉（Usher feat. Lil Jon & Ludacris）的 Best Rap/Sung Collaboration 只見搜尋摘要，未開頁；累計『三座葛萊美』（維基）、『銷量逾 2400 萬張』（星光大道官網）屬累計數字，不收；Ludacris Foundation 與《Karma's World》。CBS 頁稱 LL Cool J『是啟發他當饒舌歌手的人』的摘要含義矛盾（可能是子模型轉述錯誤），不收。維基與 Britannica 提及的 Georgia State University 就讀經歷，僅 Britannica。 單源（CBS）：星光大道儀式上由 LL Cool J、Vin Diesel 與女兒 Karma 致詞。"
+ },
+ {
+  "key": "three 6 mafia",
+  "name": "Three 6 Mafia",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Three 6 Mafia 出自田納西州 Memphis 的地下饒舌圈，核心創始成員是 DJ Paul、Juicy J 與 Lord Infamous。",
+      "src": "https://en.wikipedia.org/wiki/Three_6_Mafia",
+      "src2": "https://memphismusichalloffame.com/inductee/threesixmafia/",
+      "from": "new"
+     },
+     {
+      "f": "團體後來加入 Koopsta Knicca、Crunchy Black 與 Gangsta Boo。",
+      "src": "https://en.wikipedia.org/wiki/Three_6_Mafia",
+      "src2": "https://memphismusichalloffame.com/inductee/threesixmafia/",
+      "from": "new"
+     },
+     {
+      "f": "他們在改名 Three 6 Mafia 之前，先叫 Backyard Posse。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/three-6-mafia",
+      "src2": "https://memphismusichalloffame.com/inductee/threesixmafia/",
+      "from": "new"
+     },
+     {
+      "f": "DJ Paul 與 Juicy J 從 1990 年代初起就活躍在 Memphis 的地下饒舌圈。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/three-6-mafia",
+      "src2": "https://memphismusichalloffame.com/inductee/threesixmafia/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們從陰暗、以恐怖為題的 horrorcore 風格起家，在 Memphis 地下圈打出辨識度。",
+      "src": "https://en.wikipedia.org/wiki/Three_6_Mafia",
+      "src2": "https://memphismusichalloffame.com/inductee/threesixmafia/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2006 年 3 月 5 日的第 78 屆奧斯卡，他們以電影《Hustle & Flow》的〈It's Hard Out Here for a Pimp〉拿下最佳原創歌曲（得獎），是第一個拿下該獎的嘻哈團體，也是第一個在奧斯卡現場演出的嘻哈團體。",
+      "src": "https://en.wikipedia.org/wiki/Three_6_Mafia",
+      "src2": "https://www.xxlmag.com/today-in-hip-hop-three-6-mafia-win-oscar-for-its-hard-out-here-for-a-pimp-at-2006-academy-awards/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2006 年第 78 屆奧斯卡，〈It's Hard Out Here for a Pimp〉獲最佳原創歌曲。",
+    "src": "https://en.wikipedia.org/wiki/Three_6_Mafia",
+    "src2": "https://www.xxlmag.com/today-in-hip-hop-three-6-mafia-win-oscar-for-its-hard-out-here-for-a-pimp-at-2006-academy-awards/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年份：維基寫 1991 年，Encyclopedia.com 寫 1995 年（另稱 DJ Paul 與 Juicy J 自 1990 年代初就活躍），Memphis Music Hall of Fame 寫 1990 年代初；兩源不一致，facts 不寫成軍年份，只寫『1990 年代初起』的活動。",
+   "『第一』宣稱的範圍：Memphis Music Hall of Fame 寫『第一個拿奧斯卡的饒舌團體、第一個拿奧斯卡的非裔饒舌團體』，Encyclopedia.com 寫『第一批饒舌表演者、是歷史上第二個拿奧斯卡的饒舌藝人（前有 Eminem 2003）』；facts 採較窄的『第一個拿最佳原創歌曲的嘻哈團體』，Eminem 2003 年以個人身分得同獎，故不寫『第一個嘻哈藝人』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "卡池與事實庫無材料，從零查；補查 8 次：維基、WebSearch（奧斯卡）、XXL、WebSearch（影響力，先兩次因 allowed_domains 含被封網域而回 400，未計）、Encyclopedia.com、WebSearch（名人堂）、Memphis Music Hall of Fame、PBS Wisconsin；失敗 1 次未計：Britannica（404），Variety 改道到付費牆未取得。單源未收：維基：團體 1991 年成立、Koopsta Knicca（1994）、Crunchy Black 與 Gangsta Boo（1995）加入年份；1999 年《CrazyNDaLazDayz》讓他們成為 crunk 運動核心；Lord Infamous 2013 年 12 月 20 日、Koopsta Knicca 2015 年 10 月 9 日、Gangsta Boo 2023 年 1 月 1 日過世（生卒／逝世年須兩源，未收）；DJ Paul、Juicy J、Crunchy Black 2019 年起重組演出。單源（Encyclopedia.com）：1995 年首張《Mystic Stylez》獨立發行『在 Memphis 引起話題』；後來走向『緩慢的 dirty South 風格』、lo-fi 節拍。單源（Memphis Music Hall of Fame 官方頁）：他們入選 Memphis 音樂名人堂（未見年份，另一源僅搜尋摘要）；頁面引學者 Ali Coleen Neff 稱其為『Memphissippi』聲音，連結密西西比 Hill Country 藍調傳統；『第一個非裔饒舌團體拿奧斯卡』。單源（PBS Wisconsin 節目簡介）：稱他們『打下了 trap 聲音的基石』；Lord Infamous 被視為 Migos 式三連音 flow 的原創者；巨大低音、合成器旋律、小調、滾動的 808；集體吟唱 hook 被 Travis Scott 等人沿用。搜尋摘要（未開頁）：Travis Scott 2018 年〈No Bystanders〉因使用〈Tear Da Club Up〉的吟唱被 DJ Paul 提告；Juicy J 稱 DJ Spanish Fly 與 Sonny D 是 Memphis 的前輩。單源（XXL）：Juicy J 回憶『我們沒準備得獎感言，因為沒想過會贏』。legacy 格影響評價只有奧斯卡一條兩源，趨勢類影響（trap 基石）皆單源。維基與 Encyclopedia.com 為不同出版者；維基與 XXL 為獨立。"
+ },
+ {
+  "key": "usher",
+  "name": "Usher",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Usher 1978 年 10 月 14 日生於德州達拉斯，主要在田納西州 Chattanooga 長大，童年在教會合唱團唱歌，後來全家搬到喬治亞州亞特蘭大。",
+      "src": "https://en.wikipedia.org/wiki/Usher_(musician)",
+      "src2": "https://www.britannica.com/biography/Usher",
+      "from": "new"
+     },
+     {
+      "f": "他少年時期簽進 LaFace Records，1994 年發行首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Usher_(musician)",
+      "src2": "https://www.britannica.com/biography/Usher",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的辨識度是滑順的嗓音與性感的 R&B 情歌，加上舞蹈功力；後期也走向 EDM 與舞曲流行。",
+      "src": "https://www.britannica.com/biography/Usher",
+      "src2": "https://www.grammy.com/news/usher-songs-super-bowl-halftime-show-new-album-tour/",
+      "from": "new"
+     },
+     {
+      "f": "2004 年的《Confessions》以私人感情的坦白為題，像日記般寫出脆弱與失誤，同時也有派對歌。",
+      "src": "https://en.wikipedia.org/wiki/Confessions_(Usher_album)",
+      "src2": "https://www.grammy.com/news/usher-songs-super-bowl-halftime-show-new-album-tour/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為 R&B 巨星，作品塑造了 1990 年代末到 2000 年代初的流行樂；Grammy.com 稱他為後來的 R&B 歌手鋪路。",
+      "src": "https://www.britannica.com/biography/Usher",
+      "src2": "https://www.grammy.com/news/usher-songs-super-bowl-halftime-show-new-album-tour/",
+      "from": "new"
+     },
+     {
+      "f": "他在亞特蘭大見到年輕的 Justin Bieber，協助他簽下唱片合約。",
+      "src": "https://en.wikipedia.org/wiki/Usher_(musician)",
+      "src2": "https://www.britannica.com/biography/Justin-Bieber",
+      "from": "new"
+     },
+     {
+      "f": "2024 年 2 月 11 日，他在拉斯維加斯 Allegiant Stadium 擔任第 58 屆超級盃（Super Bowl LVIII）中場秀的主秀。",
+      "src": "https://en.wikipedia.org/wiki/Usher_(musician)",
+      "src2": "https://www.nfl.com/news/usher-to-perform-during-apple-music-super-bowl-lviii-halftime-show",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Confessions》一輯拿下三座葛萊美獎，含〈Yeah!〉的合作獎項。",
+    "src": "https://en.wikipedia.org/wiki/Confessions_(Usher_album)",
+    "src2": "https://www.britannica.com/biography/Usher",
+    "from": "new"
+   },
+   {
+    "f": "2024 年 2 月 11 日擔任 Super Bowl LVIII 中場秀主秀。",
+    "src": "https://en.wikipedia.org/wiki/Usher_(musician)",
+    "src2": "https://www.nfl.com/news/usher-to-perform-during-apple-music-super-bowl-lviii-halftime-show",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "簽約 LaFace 的年齡：維基寫 13 歲，Britannica 寫 14 歲；兩源不一致，facts 不寫年齡。",
+   "他搬到亞特蘭大的年齡：Britannica 寫 12 歲，維基摘要未寫年齡；facts 不寫年齡。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "卡池與事實庫無材料，從零查；補查 7 次：維基 Usher、Britannica（首個網址 404 未計；換 /biography/Usher 成功）、維基《Confessions》、WebSearch（Super Bowl）、NFL.com、Grammy.com、Britannica Justin Bieber。失敗 1 次未計。單源未收：維基：L.A. Reid 聽他唱 Boyz II Men〈End of the Road〉後簽約；1994 年春在紐約由 Sean Combs 指導（維基）；《My Way》（1997）帶來首支冠軍單曲〈Nice & Slow〉、《8701》（2001）連兩支冠軍；Usher's New Look 基金會 1999 年成立；與 Scooter Braun 共同創立 RBMG（維基）；BET 終身成就獎（2024）；8 座葛萊美、逾 1 億張、Super Bowl 收視 1.23 億（累計或數字，不收）。單源（維基《Confessions》）：Jermaine Dupri 2006 年說專輯背後的故事是 Usher 劈腿並和另一名女子有了孩子；〈Burn〉與他和 TLC 的 Chilli 的分手有關；《Rolling Stone》2020 年 500 大專輯第 432；『是新世紀黑人藝人銷量最高的專輯』屬會變動的累計（維基 Usher 條目）。單源（Grammy.com）：稱他確立了『The King of R&B』這個非官方頭銜，並替 Chris Brown、Trey Songz、Ne-Yo 與 Justin Bieber 鋪路；Confessions 期間他 2004 年在 Hot 100 榜首待了 28 週（累計數字，不收）。單源（NFL.com，官方宣傳稿）：稱他『one of the most influential artists of a generation』（宣傳語，非第三方評價，不收）。Britannica 稱 Confessions 在美國賣逾 1000 萬張，並記 Grammy 從 2001 年到 2012 年（累計，不收）。維基與 Britannica Bieber 條目對 Usher 角色的說法：維基寫『發掘』並共同管理，Britannica 寫 Scooter Braun 先發現影片、Usher 在亞特蘭大聽過試唱後協助簽約；facts 採後者較窄說法。維基兩條目非獨立。 單源（維基《Confessions》）：三座葛萊美是 2005 年第 47 屆，類別為 Best Contemporary R&B Album、Best R&B Performance by a Duo or Group with Vocal（〈My Boo〉）與 Best Rap/Sung Collaboration（〈Yeah!〉）；Britannica 只寫三座、含〈Yeah!〉，故 f 不寫屆次與類別細目。"
  }
 ]
