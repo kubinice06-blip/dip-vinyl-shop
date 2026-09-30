@@ -124,3 +124,11 @@
 ### PROJECT_MEMORY.md 待補條目（雲端不可寫，交本機貼上）
 
 - 2026-09-30｜dip-vinyl-shop｜藝人介紹第二段：上架 ar-a-011～020、ar-b-001～011 共 21 批 825 位（累計 1275 位），審稿修 58 處；ar-b-012 起依店主指示暫停。新增 B 級裁定檔 batch-progress/artist-intro/ar-b-rulings.md；qa-artist.mjs 放行「超級盃／超級巨星」；writer-base 加「樂評人當故事角色可具名」「日文材料在地化」。待本機處理：audits/ARTIST-PUB-ISSUES.md 135 條（優先：Lou Rawls《Lou Rawls Live!》上線簡介是退件說明、Bukka White《Big Daddy》含管線文字）、卡片拆分（John Williams 吉他手盤、Mother Earth 舊金山團）、卡池年份疑點、約 40 則專輯簡介正文寫「維基記…」是否清理。驗證：每批 qa-artist gap／out 0 處、build-artist-intros 通過。分支 claude/artist-intro-interactive-plan-ycws4h。
+
+## 店主指示（2026-09-30）：「需要我決定的事情都不用我決定，你直接做」
+
+- 已上線簡介 135 條問題＋164 則正文寫出處 → 全部定案成 audits/pub-fix/APPLY-desc.json（274 則），本機寫 KV 即可。
+- 卡片拆分 16 張、年份 12 張 → audits/pub-fix/card-fixes.json，本機改 seed_cards.json。
+- Lou Rawls《Lou Rawls Live!》定為 1966 Capitol 版並重寫。Tom Misch《Happy Music》改掛 Supershy。
+- PR #16 轉 ready 並合併進 main（藝人介紹前端與 1,275 位上線）。
+- ar-b-012～022 維持停止（店主先前指示）；PROJECT_MEMORY.md 依 REMOTE_RUNBOOK 仍由本機貼上（條目見上方）。
