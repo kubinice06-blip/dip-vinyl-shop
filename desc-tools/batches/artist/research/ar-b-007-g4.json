@@ -670,5 +670,441 @@
   "failedFetches": 4,
   "status": "full",
   "notes": "事實庫 research 為空，從零查。搜尋工具一次呼叫內部若跑兩輪照兩次計。失敗請求 4 次已達上限：Washington Post 訃聞 403、NPR 503、All About Jazz 403、Mississippi Writers and Musicians 空白頁。Britannica 頁只抓到一句「與 Delta 傳統有風格關聯」，算一次搜尋、無可用事實。來源不一致（facts 不帶）：《Deep Blues》紀錄片年份 Wikipedia 1990、Vintage Guitar 1991、Mississippi Blues Trail 與搜尋摘要 1992；移居芝加哥年份 1940 年代中／末／1950 年代各說不一；家人遇害的人數 Wikipedia 說父親、兩兄弟、兩位叔伯，Music Rising 說父親、兩兄弟、一位叔伯，facts 只取父親與兩兄弟；逝世日期 Music Rising 寫 9 月 5 日，其餘 9 月 1 日；名字 Wikipedia 說 Rural、Robert Lee 或 Ruel 皆有。單源細節（不進 facts）：(1) 單源 Wikipedia：2014 年入選 Blues Hall of Fame；The Black Keys 受他影響；Fat Possum 1991 年簽約；(2) 單源 Vintage Guitar：Robert Palmer 在《Deep Blues》重新發現他並製作《Too Bad Jim》（1994）；Tom Rothrock 製作的《Come On In》（1998）帶進 hip-hop 手法；1967 年 Arhoolie 首度錄音；1999 年心臟病發、四重繞道手術後巡演減少（與上線簡介一致）；他自稱學琴靠坐著看聽 McDowell；1950 年代在芝加哥看過 Muddy Waters；(3) 單源 Music Rising：曾因刑案入獄 Parchman Farm、後被雇主保出；音樂「帶回被對傳奇人物的懷舊掩蓋的 outlaw 態度」；(4) 單源 Mississippi Blues Trail：在芝加哥做過鑄造與玻璃廠工，在那裡認識 Muddy Waters；受吉他手 Ranie Burnette 影響；(5) 單源 Washington Post 訃聞（搜尋摘要，403 未開頁）：第一次錄音在 40 多歲、60 多歲才全職。Wikipedia 稱 1995 年與 Jon Spencer 合作、Music Rising 稱專輯為 1996 年，facts 不寫年份。Black Keys 具名只有 Wikipedia 單源。"
+ },
+ {
+  "key": "sonny boy williamson ii",
+  "name": "Sonny Boy Williamson II",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sonny Boy Williamson II 生於密西西比州，出生年份沒有定論，各家記載落在 1890 年代到 1912 年之間；他 1965 年 5 月在阿肯色州 Helena 過世。",
+      "src": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
+      "src2": "https://www.udiscovermusic.com/stories/mystery-sonny-boy-williamson/",
+      "from": "new"
+     },
+     {
+      "f": "1941 年他與吉他手 Robert Lockwood Jr. 受雇於阿肯色州 Helena 的 KFFA 電台，在 King Biscuit Time 節目演出。",
+      "src": "https://www.udiscovermusic.com/stories/mystery-sonny-boy-williamson/",
+      "src2": "https://bobcorritore.com/photos/sonny-boy-williamson-ii/sonny-boy-williamson-ii-bio/",
+      "from": "new"
+     },
+     {
+      "f": "King Biscuit Time 讓他在南方黑人聽眾間成名，贊助商還把他印上麵粉與玉米粉的包裝。",
+      "src": "https://www.celticguitarmusic.com/Harmsb2.htm",
+      "src2": "https://www.udiscovermusic.com/stories/mystery-sonny-boy-williamson/",
+      "from": "new"
+     },
+     {
+      "f": "他沿用的 Sonny Boy Williamson 這個名字，原本屬於芝加哥的口琴手 John Lee Williamson；因為同名，後人才分稱一世與二世。",
+      "src": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
+      "src2": "https://www.britannica.com/biography/Sonny-Boy-Williamson",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Nine Below Zero〉是他在 Chess 旗下 Checker 廠牌時期的代表作之一。",
+      "src": "https://www.celticguitarmusic.com/Harmsb2.htm",
+      "src2": "https://www.udiscovermusic.com/stories/mystery-sonny-boy-williamson/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他一直堅稱自己才是原本的 Sonny Boy Williamson。",
+      "src": "https://www.britannica.com/biography/Sonny-Boy-Williamson",
+      "src2": "https://www.celticguitarmusic.com/Harmsb2.htm",
+      "from": "new"
+     },
+     {
+      "f": "1948 年，原版 Sonny Boy（John Lee Williamson）在芝加哥遇害。",
+      "src": "https://www.britannica.com/biography/Sonny-Boy-Williamson",
+      "src2": "https://www.udiscovermusic.com/stories/mystery-sonny-boy-williamson/",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代初他赴歐洲巡演，並與 Yardbirds、Animals 等英國樂團合作錄音。",
+      "src": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
+      "src2": "https://www.celticguitarmusic.com/Harmsb2.htm",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1951 年他首度錄音，唱片公司是 Trumpet Records，之後轉到 Chess 旗下的 Checker。",
+      "src": "https://en.wikipedia.org/wiki/Sonny_Boy_Williamson_II",
+      "src2": "https://bobcorritore.com/photos/sonny-boy-williamson-ii/sonny-boy-williamson-ii-bio/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [
+   {
+    "album": "Down and Out Blues",
+    "claim": "Miller 借用了已故 John Lee「Sonny Boy」Williamson 的名字",
+    "problem": "Miller 1941 年開始用這個名字時，John Lee Williamson 還活著（1948 年才在芝加哥遇害），1942 年還曾到阿肯色找 Miller 理論；「已故」放在借名當下不對，建議刪去「已故」或改成「借用了芝加哥口琴手 John Lee「Sonny Boy」Williamson 的名字」",
+    "src": "https://www.britannica.com/biography/Sonny-Boy-Williamson"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，從零查。搜尋工具一次呼叫內部跑了兩輪查詢，照兩次計，合計 8 次。Britannica 該頁是 John Lee Williamson（一世）與 Miller 的合條，本層只取其中談 Miller 與名字、入名人堂的句子，並確認風格描述（首位重要口琴大師、交替人聲與口琴句）屬一世，不採。來源不一致（facts 不帶）：逝世日 Wikipedia 與 uDiscover 說 5 月 24 日，Bob Corritore 與 Weiser（celticguitarmusic）說 5 月 25 日，facts 只寫 5 月；出生地 Wikipedia 說 Money 或 Greenwood，uDiscover、Corritore、Weiser 說 Glendora；本名 Wikipedia、Britannica 等說 Alex（Aleck）Miller，uDiscover 說 Aleck Ford；誰起意沿用名字說法不一：Corritore 說 King Biscuit 老闆 Max Moore 於 1941 年刻意給他這個名字、Weiser 說他為躲法律麻煩（「escaped convict」）而用並由 Moore 推廣、Britannica 說他堅稱是自己發明、uDiscover 稱是「算計過的模仿」，故 facts 只寫「沿用」。三個站台的出生年區間也不同（Wikipedia 1897–1912、uDiscover 1894–1912），facts 只寫「1890 年代到 1912 年」。單源細節（不進 facts）：(1) 單源 uDiscover：1942 年原版 Sonny Boy 到阿肯色找他理論，被 Miller 趕走（Lockwood 的回憶）；〈Eyesight to the Blind〉〈Cross My Heart〉；B.B. King 稱他「the king of the harmonica」；Van Morrison、Eric Clapton、Rolling Stones 推崇他；Robert Plant 傳聞；(2) 單源 Britannica：兩人 1980 年同時入選 Blues Hall of Fame；1965 年專輯《King Biscuit Time》2017 年入選國會圖書館 National Recording Registry；Miller 在歐洲「可說比一世更有名」；(3) 單源 Wikipedia：他被稱為「an early and influential blues harp stylist」，會用手不碰口琴的把戲；〈Help Me〉成為藍調標準曲、被眾多藍調與搖滾藝人翻唱；1955–1964 年在 Checker 約錄七十首；(4) 單源 Weiser：他偏愛原音與顫音、多以舌塞技法演奏；被稱為「南方第一位黑人媒體明星」，電台涵蓋約 10% 的美國黑人人口；1963–64 與 Clapton、Yardbirds、Animals 錄音、在美國媒體間較被忽視；死時堅稱「the original, the only one」；(5) 單源 The Hound NYC：口琴風格打擊感強、辨識度高，會同時用嘴與鼻吹兩支口琴；〈Don't Start Me Talkin'〉被 Bob Dylan 與 New York Dolls 翻唱；他對英國年輕人的評語「These English kids want to play the blues so bad…」；Magic Dick（J. Geils Band）受他啟發；與 Clapton 的不合；(6) 單源 Corritore：1965 年 4 月 29 日離開英國、5 月 25 日過世（上線簡介《Don't Send Me No Flowers》寫 5 月返美，時序略有出入，但未列 pubIssues）。sound 格兩源皆到的只有〈Nine Below Zero〉一句，風格細節皆單源。「1941 年起用這個名字」的年份 Wikipedia 說『around 1941』。"
+ },
+ {
+  "key": "stevie ray vaughan",
+  "name": "Stevie Ray Vaughan",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Stevie Ray Vaughan 1954 年 10 月 3 日生於德州達拉斯的 Oak Cliff；1990 年 8 月底因直升機墜毀過世，得年 35 歲。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.thestoryoftexas.com/artifact-stories/stevie-ray-vaughan/",
+      "from": "new"
+     },
+     {
+      "f": "他受哥哥 Jimmie 啟發，約七歲開始彈吉他。",
+      "src": "https://www.britannica.com/biography/Stevie-Ray-Vaughan",
+      "src2": "https://www.thestoryoftexas.com/artifact-stories/stevie-ray-vaughan/",
+      "from": "new"
+     },
+     {
+      "f": "他的吉他影響來自 Albert King、Jimi Hendrix 與爵士吉他手 Kenny Burrell 等人。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.britannica.com/biography/Stevie-Ray-Vaughan",
+      "from": "new"
+     },
+     {
+      "f": "他十七歲前後離開學校，搬到德州奧斯汀專心玩音樂。",
+      "src": "https://www.britannica.com/biography/Stevie-Ray-Vaughan",
+      "src2": "https://www.thestoryoftexas.com/artifact-stories/stevie-ray-vaughan/",
+      "from": "new"
+     },
+     {
+      "f": "他的樂團 Double Trouble 是與貝斯手 Tommy Shannon、鼓手 Chris Layton 組成的三重奏，1970 年代末成軍。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/vaughan-stevie-ray-1954-1990",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的風格把 Albert King 等藍調前輩，與 Jimi Hendrix、Lonnie Mack 等搖滾吉他手的手法結合在一起。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.thestoryoftexas.com/artifact-stories/stevie-ray-vaughan/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被廣泛視為史上最偉大、最具影響力的電吉他手與藍調樂手之一。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.thestoryoftexas.com/artifact-stories/stevie-ray-vaughan/",
+      "from": "new"
+     },
+     {
+      "f": "他的出現與首張專輯《Texas Flood》被認為點燃了 1980 年代的藍調復興。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.thestoryoftexas.com/artifact-stories/stevie-ray-vaughan/",
+      "from": "new"
+     },
+     {
+      "f": "1986 年他因藥物與酒精成癮進入戒治，戒斷後重回舞台。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/vaughan-stevie-ray-1954-1990",
+      "from": "new"
+     },
+     {
+      "f": "1990 年 8 月底他在威斯康辛州 Alpine Valley 演出後搭直升機離開，機上共 5 人，全數罹難，調查歸因於駕駛失誤。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/vaughan-stevie-ray-1954-1990",
+      "from": "new"
+     },
+     {
+      "f": "他 2015 年身後入選搖滾名人堂。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.britannica.com/biography/Stevie-Ray-Vaughan",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1982 年他在 Montreux Jazz Festival 的演出讓 David Bowie 注意到他，並邀他在《Let's Dance》（1983）彈吉他。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.britannica.com/biography/Stevie-Ray-Vaughan",
+      "from": "new"
+     },
+     {
+      "f": "他 1983 年夏天發行首張專輯《Texas Flood》。",
+      "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+      "src2": "https://www.thestoryoftexas.com/artifact-stories/stevie-ray-vaughan/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "他 2015 年身後入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Stevie_Ray_Vaughan",
+    "src2": "https://www.britannica.com/biography/Stevie-Ray-Vaughan",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空，四張專輯只有上線簡介（Texas Flood 卡雖在池內，簡介未列），全部從零查。失敗請求 2 次：Rock Hall 頁 404（網址猜錯）、Handbook of Texas 404。來源不一致（facts 不帶）：逝世日 Wikipedia 與 Britannica、Encyclopedia.com 說 8 月 27 日，Bullock 博物館與搜尋摘要說 8 月 26 日（墜機發生在深夜至凌晨）；Double Trouble 成軍年 Wikipedia 與 Britannica 說 1978、Encyclopedia.com 與 Bullock 說 1979；搬到奧斯汀 Wikipedia 與 Encyclopedia.com 說 1972、Bullock 說 1975；開始彈吉他年紀 Wikipedia、Britannica、Bullock 說 7 歲、Encyclopedia.com 說 8 歲前已在彈哥哥的舊琴；同機另有他共 5 人，Encyclopedia.com 說同機三人是 Eric Clapton 的工作人員、Bullock 說『他與另外四人』，一致。名人堂官方（可具名單源）：Rock Hall 官網頁 404 未開到，2015 年入選出自 Wikipedia 與 Britannica。單源細節（不進 facts）：(1) 單源 Britannica：以 Fender Stratocaster 接老式音箱、音色大膽過載；Rolling Stone 排他為史上第 12 位吉他手；《In Step》（1989）拿下葛萊美最佳當代藍調專輯；John Hammond 簽他到 Epic；(2) 單源 Encyclopedia.com：製作人 Jerry Wexler 促成 1982 年 Montreux 演出；他婉拒與 Bowie 巡演；John Hammond 說「他把一種已死的風格帶回來，而且時機剛好」；《Texas Flood》最高第 38 名並達金唱片；《Couldn't Stand the Weather》賣破 100 萬；團名取自 Otis Rush 的曲名；結合 Albert King 的力道與 Hendrix 的炫技；死後專輯《The Sky Is Crying》（1991）拿下兩座葛萊美；(3) 單源 Wikipedia：1986 年 9 月在德國因嚴重脫水險些喪命後入院戒治、同年 11 月清醒復出；《In Step》（1989）是他最暢銷的專輯；美國專輯銷量超過 1500 萬張；Chantones 為他的第一個樂團；(4) 單源 Bullock：第一個藍調樂團 Blackbird（1970）；他「made an enormous impact on the history and widespread popularity of Texas blues」。Wikipedia 與 Bullock 兩站對『最具影響力』的措辭不同（wiki: greatest guitarists and most influential blues musicians；Bullock: most influential electric guitarists），facts 取兩者交集。"
+ },
+ {
+  "key": "t-bone walker",
+  "name": "T-Bone Walker",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "T-Bone Walker 本名 Aaron Thibeaux Walker，1910 年 5 月 28 日生於德州 Linden，1975 年 3 月 16 日在洛杉磯過世。",
+      "src": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+      "src2": "https://www.britannica.com/biography/T-Bone-Walker",
+      "from": "new"
+     },
+     {
+      "f": "他的母親與繼父 Marco Washington 都是樂手，母親後來帶他搬到達拉斯。",
+      "src": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+      "src2": "https://www.tshaonline.org/handbook/entries/walker-aaron-thibeaux-t-bone",
+      "from": "new"
+     },
+     {
+      "f": "他小時候在達拉斯替家族友人 Blind Lemon Jefferson 領路。",
+      "src": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+      "src2": "https://www.britannica.com/biography/T-Bone-Walker",
+      "from": "new"
+     },
+     {
+      "f": "1929 年他以 Oak Cliff T-Bone 的名義首度錄音。",
+      "src": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+      "src2": "https://www.britannica.com/biography/T-Bone-Walker",
+      "from": "new"
+     },
+     {
+      "f": "1930 年代中期他移居洛杉磯，在 Little Harlem 等夜店演出。",
+      "src": "https://www.tshaonline.org/handbook/entries/walker-aaron-thibeaux-t-bone",
+      "src2": "https://www.ebsco.com/research-starters/biography/t-bone-walker",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為藍調電吉他獨奏的開創者，1940 年前後開始用電吉他。",
+      "src": "https://www.britannica.com/biography/T-Bone-Walker",
+      "src2": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+      "from": "new"
+     },
+     {
+      "f": "他的電吉他以流暢、帶搖擺感的單音樂句為主，語彙近似銅管樂器的頓挫。",
+      "src": "https://www.britannica.com/biography/T-Bone-Walker",
+      "src2": "https://www.ebsco.com/research-starters/biography/t-bone-walker",
+      "from": "new"
+     },
+     {
+      "f": "他把鄉村藍調與 swing 結合，讓吉他藍調往更都會、更接近銅管編制的 R&B 延伸。",
+      "src": "https://www.tshaonline.org/handbook/entries/walker-aaron-thibeaux-t-bone",
+      "src2": "https://www.ebsco.com/research-starters/biography/t-bone-walker",
+      "from": "new"
+     },
+     {
+      "f": "〈Call It Stormy Monday〉（1947）成為最持久的現代藍調標準曲之一。",
+      "src": "https://www.britannica.com/biography/T-Bone-Walker",
+      "src2": "https://www.ebsco.com/research-starters/biography/t-bone-walker",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "B.B. King 說過，是 T-Bone Walker 的唱片讓他想彈藍調、彈電吉他。",
+      "src": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+      "src2": "https://www.ebsco.com/research-starters/biography/t-bone-walker",
+      "from": "new"
+     },
+     {
+      "f": "B.B. King 與 Eric Clapton 等後輩都受他影響。",
+      "src": "https://www.tshaonline.org/handbook/entries/walker-aaron-thibeaux-t-bone",
+      "src2": "https://rockhall.com/inductees/t-bone-walker/",
+      "from": "new"
+     },
+     {
+      "f": "他 1980 年入選 Blues Hall of Fame，1987 年入選搖滾名人堂。",
+      "src": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+      "src2": "https://www.britannica.com/biography/T-Bone-Walker",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1947 年〈Call It Stormy Monday〉發行，是他最有名的錄音。",
+      "src": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+      "src2": "https://www.britannica.com/biography/T-Bone-Walker",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "他 1980 年入選 Blues Hall of Fame，1987 年入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/T-Bone_Walker",
+    "src2": "https://www.britannica.com/biography/T-Bone-Walker",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，從零查。來源不一致（facts 不帶）：移居洛杉磯 Britannica 說 1934、Handbook of Texas 說 1935、EBSCO 說約 1936，facts 只寫「1930 年代中期」；〈Stormy Monday〉Handbook of Texas 說 1940 年錄成，Wikipedia、Britannica、EBSCO 皆說 1947 年，facts 採 1947（與上線簡介一致），Handbook 那句疑為誤植；開始用電吉他 Wikipedia 說約 1940、Britannica 說 1939–40 年在 Les Hite 樂團，facts 寫「1940 年前後」；葛萊美年份 Wikipedia 說 1970 年、Britannica 只說「1969 年的專輯」，類別只有 Wikipedia 單源（Best Ethnic or Traditional Folk Recording），依規則不收，與上線簡介〈Good Feelin'〉的敘述方向一致。「第一位」宣稱處理：Britannica 寫「first important electric guitar soloist in the blues」、Wikipedia 寫「first artist to make the electric guitar a solo instrument」、Handbook of Texas 寫「first blues guitarist to play the electric guitar」，但爵士側早有 Charlie Christian 等人（1939 年前後）、藍調側也有更早的電吉他使用者，措辭不一，因此 facts 只寫「開創者」，不寫「第一位」。名人堂官方（可具名單源）：Rock Hall 官網 1987 年入選（影響者類別），由 Seymour Stein 引介，稱他開創在藍調中使用電吉他，讓吉他發出哭喊般的表現力，並點名影響 B.B. King、Stevie Ray Vaughan 與 Eric Clapton，引 B.B. King 的話「really started me to want to play the blues」，https://rockhall.com/inductees/t-bone-walker/。單源細節（不進 facts）：(1) 單源 Wikipedia：Chuck Berry 點名 T-Bone Walker 與 Louis Jordan 為主要影響；Jimi Hendrix 學他用牙齒彈吉他；Steve Miller 1952 年向他學習；B.B. King 引語「T-Bone's blues filled my insides with joy and good feeling」；25 歲前後在洛杉磯 Central Avenue 演出；(2) 單源 Handbook of Texas：被稱為「Daddy of the Blues」；影響 Pee Wee Crayton、Albert Collins、Johnny Winter；1975 年葬禮有千人以上到場；1930 年代與 Ida Cox、Cab Calloway、Ma Rainey 同台；1940–1945 隨 Les Hite 樂團當主唱；(3) 單源 Britannica：1939–40 年在 Les Hite 樂團開始電吉他；1974 年中風；(4) 單源 EBSCO：他「invented the vocabulary for that instrument in blues」，雙弦滑音模仿銅管的頓挫；是花俏的表演者；(5) 單源搜尋摘要：B.B. King 讚嘆他把琴身向外拿的姿勢（未開頁）。"
+ },
+ {
+  "key": "the robert cray band",
+  "name": "The Robert Cray Band",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Robert Cray 1953 年 8 月 1 日生於喬治亞州 Columbus，父親是軍人，全家因此常搬家，後來落腳華盛頓州 Tacoma 一帶。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Cray",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/robert-cray",
+      "from": "new"
+     },
+     {
+      "f": "他小時候學古典鋼琴，並從父親的唱片收藏接觸到藍調與靈魂樂。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/robert-cray",
+      "src2": "https://tacomatales.org/2023/06/17/the-rise-of-robert-cray-and-his-influence-on-the-blues/",
+      "from": "new"
+     },
+     {
+      "f": "他說服同學在高中畢業派對上請來偶像 Albert Collins 演出。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/robert-cray",
+      "src2": "https://tacomamusichistory.org/2022/01/04/robert-cray-a-tacoma-blues-legend/",
+      "from": "new"
+     },
+     {
+      "f": "1974 年他與貝斯手 Richard Cousins 成立 Robert Cray Band。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/robert-cray",
+      "src2": "https://tacomamusichistory.org/2022/01/04/robert-cray-a-tacoma-blues-legend/",
+      "from": "new"
+     },
+     {
+      "f": "他起初有嚴重的舞台恐懼，唱歌時會閉上眼睛。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/robert-cray",
+      "src2": "https://tacomamusichistory.org/2022/01/04/robert-cray-a-tacoma-blues-legend/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以乾淨的 Fender Stratocaster 音色配上靈魂樂式的唱腔，把 R&B、搖滾與傳統藍調揉在一起。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Cray",
+      "src2": "https://tacomatales.org/2023/06/17/the-rise-of-robert-cray-and-his-influence-on-the-blues/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Strong Persuader》（1986）是他的突破作，單曲〈Smoking Gun〉讓他的知名度大開。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Cray",
+      "src2": "https://tacomatales.org/2023/06/17/the-rise-of-robert-cray-and-his-influence-on-the-blues/",
+      "from": "new"
+     },
+     {
+      "f": "《Strong Persuader》被評論者稱為多年來最好的藍調唱片，也被視為振興藍調曲式的一次重要嘗試。",
+      "src": "https://en.wikipedia.org/wiki/Strong_Persuader",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/robert-cray",
+      "from": "new"
+     },
+     {
+      "f": "他一生共獲 5 座葛萊美，皆為藍調類別。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Cray",
+      "src2": "https://tacomamusichistory.org/2022/01/04/robert-cray-a-tacoma-blues-legend/",
+      "from": "new"
+     },
+     {
+      "f": "他 2011 年入選 Blues Hall of Fame。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Cray",
+      "src2": "https://tacomamusichistory.org/2022/01/04/robert-cray-a-tacoma-blues-legend/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1985 年他與 Albert Collins、Johnny Copeland 合錄《Showdown!》。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Cray",
+      "src2": "https://tacomamusichistory.org/2022/01/04/robert-cray-a-tacoma-blues-legend/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "他 2011 年入選 Blues Hall of Fame。",
+    "src": "https://en.wikipedia.org/wiki/Robert_Cray",
+    "src2": "https://tacomamusichistory.org/2022/01/04/robert-cray-a-tacoma-blues-legend/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空，從零查。名冊名「The Robert Cray Band」，卡池專輯（Bad Influence、False Accusations、Strong Persuader、Don't Be Afraid of the Dark）確為 Robert Cray 本人與其樂團，查的是同一人。失敗請求 2 次：Blues Foundation 頁 404、Britannica 猜的網址 404。來源不一致（facts 不帶）：全家搬到 Tacoma 的年份 Tacoma Tales 說 1964、Tacoma Music History 與搜尋摘要說 1968；開始彈吉他的年紀、第一把琴的來源不一致；樂團成軍地 Encyclopedia.com 說 Oregon 的 Eugene、其餘未提；Albert Collins 在畢業派對上的角色兩站說法不同（Encyclopedia.com：他說服同學請來 Collins；Tacoma Music History：1971 年畢業派對上 Collins 鼓勵他繼續彈），facts 只取『請來 Collins 演出』；Tacoma Music History 稱 1971 年畢業派對、Wikipedia 稱二十歲前看過 Collins、Freddie King、Muddy Waters 後組團。單源細節（不進 facts）：(1) 單源 Wikipedia：2005 年入選好萊塢 RockWalk；2017 年獲 Americana Music Lifetime Achievement Award for Performance；1990 年代替 John Lee Hooker、B.B. King 的專輯客串；(2) 單源 Wikipedia《Strong Persuader》頁（與 Robert Cray 條目同站，非獨立）：1986 年 11 月 17 日發行、Billboard 200 最高第 13 名、1995 年前累計銷量超過 200 萬張（RIAA 雙白金）、榮獲葛萊美最佳當代藍調專輯（Best Contemporary Blues Album，屆次頁面未載明，依規則不收）、Rolling Stone 八〇年代百大專輯第 42 名、〈Smoking Gun〉最高第 22 名、Robert Christgau 稱它是「the best blues record in many, many years」、Pazz & Jop 1986 年第 3 名——皆與上線簡介一致；(3) 單源 Encyclopedia.com：《Strong Persuader》達白金、是自 B.B. King 1970 年代初以來最暢銷的藍調錄音（『多年來最好』一句與 Christgau 語措辭近似，可能出自同一評論，故 facts 用「評論者稱」）；藍調衛道者有批評，Cray 回應「All the blues greats took chances…」；(4) 單源 Tacoma Tales：曾獲 Smokin' Gun（1986）與 Don't Be Afraid of the Dark（1988）的葛萊美；他的當代路線「helped introduce a new generation to the genre」；(5) 單源 Tacoma Music History：早期樂團 Steakface；第一把吉他購於 Lakewood 的 Bandstand Music。名單上沒有找到具名後輩的雙源說法，legacy 以獎項與評價為主。"
  }
 ]
