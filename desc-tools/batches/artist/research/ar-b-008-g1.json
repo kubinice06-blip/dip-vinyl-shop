@@ -435,5 +435,127 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫 research 為空，從零查。搜尋次數 5：維基 Brown、WebSearch（只讀摘要）、TSHA Handbook、維基 Grammy Best Traditional Blues Album 條目（用來查首度頒發與 Standing My Ground 提名）；外加 Britannica 頁 404（failedFetches 1）。poolAlbums 三張（1981／1983／1989）與此人一致，無同名混卡。單源（放 notes 不放 facts）：維基稱他是『one of the most influential exponents of the blues fiddle』（維基與搜尋摘要，未開第二頁）；Frank Zappa 在自傳中稱他為重要影響（維基）；影響 Jimi Hendrix、Buddy Guy、Stevie Ray Vaughan（TSHA）；1997 年 Rhythm and Blues Foundation Pioneer Award、2012 年德州歷史標誌（TSHA）；1949 年 Peacock Records 為捧他而設、首支 Peacock 單曲〈Mary Is Fine〉登 R&B 榜第 8（TSHA，維基只寫 1949 年設廠）；Hurricane Katrina 後離開紐奧良、在弟弟家過世（TSHA）。上線簡介核對：《Standing My Ground》入圍葛萊美最佳傳統藍調錄音，維基類別條目列為 1991 年（第 33 屆）提名者，單源，未見衝突；《Alright Again!》類別首度頒發成立。『晚年一年兩三百場巡演』『移居紐奧良多年』兩處未核對。"
+ },
+ {
+  "key": "diamanda galás",
+  "name": "Diamanda Galás",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Diamanda Galás 生於加州 San Diego，父母是希臘東正教家庭，在那個文化裡女性被勸阻開口唱歌。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://daily.redbullmusicacademy.com/2017/03/diamanda-galas-interview/",
+      "from": "new"
+     },
+     {
+      "f": "父親在她三歲時教她彈鋼琴，並讓她接觸古典與爵士；她父親不鼓勵她當歌手。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://daily.redbullmusicacademy.com/2017/03/diamanda-galas-interview/",
+      "from": "new"
+     },
+     {
+      "f": "她少年時即以鋼琴神童的身分與 San Diego Symphony 同台演出。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://daily.redbullmusicacademy.com/2016/05/anatomy-of-a-voice-diamanda-galas/",
+      "from": "new"
+     },
+     {
+      "f": "她的弟弟、劇作家 Philip-Dimitri Galás 在《Masque of the Red Death》三部曲完成前死於愛滋，這件事直接推動她的愛滋主題創作與 ACT UP 行動。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://www.dazeddigital.com/music/article/20199/1/diamanda-galas-devil-woman",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她以遠超一般範圍的音域與非典型的人聲技法著稱，從乾裂的嘶啞到歌劇式的旋律都唱得出來。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://www.dazeddigital.com/music/article/20199/1/diamanda-galas-devil-woman",
+      "from": "new"
+     },
+     {
+      "f": "她的作品處理瘟疫、疾病與社會不公等主題，《Masque of the Red Death》三部曲即是針對愛滋苦難的作品。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://daily.redbullmusicacademy.com/2017/03/diamanda-galas-interview/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1989 年 12 月 10 日她在紐約聖派翠克大教堂的「Stop the Church」抗議中被捕，抗議對象是紅衣主教 O'Connor 的愛滋政策。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://www.dazeddigital.com/music/article/20199/1/diamanda-galas-devil-woman",
+      "from": "new"
+     },
+     {
+      "f": "《Plague Mass》1990 年在紐約 Cathedral of St. John the Divine 演出並錄音，是《Masque of the Red Death》三部曲之後、針對教會對愛滋病人漠視的大型作品。",
+      "src": "https://en.wikipedia.org/wiki/Plague_Mass",
+      "src2": "https://daily.redbullmusicacademy.com/2016/05/anatomy-of-a-voice-diamanda-galas/",
+      "from": "new"
+     },
+     {
+      "f": "她獲義大利的 Demetrio Stratos 獎（國際生涯獎）。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://diamandagalas.com/about/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1982 年的《The Litanies of Satan》是她的個人首作。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://daily.redbullmusicacademy.com/2016/05/anatomy-of-a-voice-diamanda-galas/",
+      "from": "new"
+     },
+     {
+      "f": "《Masque of the Red Death》三部曲完成於 1986 至 1988 年，《Plague Mass》在 1990 年為其收束。",
+      "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+      "src2": "https://en.wikipedia.org/wiki/Plague_Mass",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1982 年發行個人首作《The Litanies of Satan》。",
+    "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+    "src2": "https://daily.redbullmusicacademy.com/2016/05/anatomy-of-a-voice-diamanda-galas/",
+    "from": "new"
+   },
+   {
+    "f": "1989 年在「Stop the Church」抗議中被捕。",
+    "src": "https://en.wikipedia.org/wiki/Diamanda_Gal%C3%A1s",
+    "src2": "https://www.dazeddigital.com/music/article/20199/1/diamanda-galas-devil-woman",
+    "from": "new"
+   },
+   {
+    "f": "1990 年在 Cathedral of St. John the Divine 演出並錄下《Plague Mass》。",
+    "src": "https://en.wikipedia.org/wiki/Plague_Mass",
+    "src2": "https://daily.redbullmusicacademy.com/2016/05/anatomy-of-a-voice-diamanda-galas/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "音域：Dazed 寫三個半八度、RBMA 2016 寫約八個八度、維基寫 soprano sfogato，說法不一；facts 不寫具體八度數。",
+   "父親身分：維基寫他是福音合唱團指揮，Dazed 寫爵士鋼琴手，RBMA 只說帶合唱團；facts 不寫父親職業。",
+   "Plague Mass：維基寫 1990 年 10 月 12 至 13 日錄音、1991 年 4 月 1 日由 Mute 發行；上線簡介寫「1990 年《Plague Mass》」，兩者可並存（演出／錄音年 vs 發行年），facts 只寫 1990 年演出與錄音。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 只有兩張專輯稿（無 facts 欄位可用），三格靠補查。搜尋次數 8（恰好用滿）：維基 Galás、WebSearch（綜合）、維基 Plague Mass、RBMA 2017 訪談、Dazed 專訪、diamandagalas.com/about、WebSearch（影響力）、RBMA 2016 Anatomy of a Voice。失敗請求 3 次：Britannica（404）、AllMusic（403）、Treble（403）。⚠ 非獨立說明：官網（Demetrio Stratos）屬自述，與維基不獨立；RBMA 兩篇同站不同文章，非獨立。單源未收（notes）：生年月日 1955 年 8 月 29 日（維基；搜尋摘要一致但未開頁）；她列舉的影響來源 Maria Callas、John Lee Hooker、Johnny Cash、Jimi Hendrix 等（維基）；影響 Anohni、PJ Harvey、Zola Jesus（RBMA 2016 單頁，搜尋摘要另有同說法但未開頁）；Antony Hegarty 稱她「the Maria Callas of our day」（Dazed 單源）；樂評 Mark N. Grant 2007 稱她「aesthetic revolutionary」（官網與維基，單人形容詞，不算共識）；《Plague Mass》被 Terrorizer 列入「100 Most Important Albums of the Nineties」、義大利官員公開批評其「褻瀆」（維基 Plague Mass 單源）；《Plague Mass》發行日 1991 年 4 月 1 日、錄音 1990 年 10 月 12 至 13 日（維基單源）；弟弟死於 1986 年（維基單源，與上線簡介一致，故 facts 不寫年份）；Stop the Church 時 53 人被捕（維基）；2005 年 Demetrio Stratos 獎年份（維基）。facts 中「Demetrio Stratos 獎」的『國際生涯獎』名稱只見維基，官網寫『nation's prize for musical innovation、first recipient』。poolAlbums 三張（1982／1986／1992）與此人一致，無同名混卡。legacy 偏薄：可用的『共識評價』多為單源，未取得名人堂或權威票選類來源。 另：RBMA 2017 訪談稱她的作品也處理二十世紀初亞美尼亞、Pontic 希臘與亞述人的種族屠殺（RBMA 單源）；《The Litanies of Satan》以法文演唱 Baudelaire 詩作（僅搜尋摘要，單源未收）。"
  }
 ]
