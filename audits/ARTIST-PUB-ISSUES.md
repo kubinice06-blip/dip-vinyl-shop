@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 59 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 68 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -63,3 +63,12 @@
 | ar-a-012 | 宇宙人 | 理想狀態 | 讓樂團在第 34 屆金曲獎拿下最佳樂團獎，是他們第二度進入這個名單之後的第一座 | 依中文維基最佳樂團獎表，宇宙人共入圍該獎 2 次（第 27 屆 2016 年《一萬小時》未得獎、第 34 屆 2023 年《理想狀態》得獎）；CNA 0227 寫 2023 年是首度獲獎。『第二度進入之後的第一座』易讀成先入圍兩次才得獎，實際是第二次入圍即得獎，建議改寫成『繼 2016 年第 27 屆入圍之後，第二度入圍即得獎，是成軍 19 年的第一座』。（最佳樂團獎表與 CNA 0227 皆確認 2016 年入圍、2023 年首度得獎） | https://www.cna.com.tw/news/amov/202307010227.aspx |
 | ar-a-013 | Alan Stivell | Renaissance de la harpe celtique | 樂評 Bruce Elder 稱聽過的人再也回不去 | 英文維基引的評論者拼作 Bruce Eder（AllMusic 樂評人），上線簡介寫 Bruce Elder，拼法需核對；維基引文為「introduced the Celtic harp to many thousands of listeners around the world」，簡介「聽過的人再也回不去」的句意本次查不到出處，需對照原評再決定是否保留。 | https://en.wikipedia.org/wiki/Alan_Stivell |
 | ar-a-013 | Alan Stivell | À l'Olympia | 賣出超過一百五十萬張 | 非錯誤但出處分歧：英文維基與 Steve Winick 記約 150 萬張，法文維基記逾 200 萬張。若要保守可寫「約 150 萬張（英文維基）」。 | https://fr.wikipedia.org/wiki/Alan_Stivell |
+| ar-a-013 | Emmylou Harris | Wrecking Ball | 把老歌本擺進氛圍製作裡的這套做法，日後成了 americana 一路人反覆借用的模板 | 查到的依據只有維基引《洛杉磯時報》：該專輯的製作『被視為對 Americana 類型的成形有影響』；『成為後輩反覆借用的模板』沒有出處，建議改成保守寫法或標明出處。 | https://en.wikipedia.org/wiki/Wrecking_Ball_(Emmylou_Harris_album) |
+| ar-a-013 | Emmylou Harris | Roses in the Snow | Emmylou Harris 1980 年的第七張錄音室專輯 | 英文維基專輯條目寫 seventh studio album，但維基藝人條目的個人錄音室專輯清單（含 1969《Gliding Bird》與 1979 聖誕專輯《Light of the Stable》）數起來是第八張；同一口徑下《Wrecking Ball》為第十八張，與簡介另一張一致。計數口徑不同，建議改寫成不帶序數。 | https://en.wikipedia.org/wiki/Emmylou_Harris |
+| ar-a-013 | Gillian Welch | Revival | Christgau 認為她撐不起這種模擬，AllMusic 與 Entertainment Weekly 則給高分 | 維基只查到 AllMusic（Mark Deming）與 No Depression 對《Revival》的正面評語；Entertainment Weekly（Will Hermes）的『never sounded deeper, realer, or sexier』是評《Soul Journey》（2003）。《Revival》的 EW 評價待核，建議改成 AllMusic 與 No Depression，或另找 EW 原評。 | https://en.wikipedia.org/wiki/Gillian_Welch |
+| ar-a-013 | John Martyn | Bless the Weather | 〈Glistening Glyndebourne〉則是他第一首真正的 Echoplex 迴圈實驗 | 英文維基與 NPR 皆說 Martyn 的 Echoplex 聲音早在 1970 年 2 月的《Stormbringer!》就出現，早於 1971 年的《Bless the Weather》；『第一首真正的迴圈實驗』無出處佐證，建議改成不帶『第一』的寫法或標明出處。 | https://en.wikipedia.org/wiki/John_Martyn |
+| ar-a-014 | 林生祥 | 種樹 | 當場拒領並將獎金捐給美濃種樹團隊 | 不算錯但不完整：獎金約 25 萬元，分給美濃種樹團隊、社區雜誌《月光山》、農業雜誌《青芽兒》與楊儒門等（自由時報稿列出四個對象）；建議改成「捐給美濃種樹團隊等團體」。 | https://ent.ltn.com.tw/news/paper/136087 |
+| ar-a-014 | 周杰倫 | 八度空間 | 中國大陸版把〈分裂〉改名為〈離開〉 | 用語：依房規稱中國一律寫「中國」，不寫「中國大陸」；建議改成「中國版」。（本層未查〈分裂〉改名一事本身） | https://zh.wikipedia.org/wiki/%E5%85%AB%E5%BA%A6%E7%A9%BA%E9%96%93 |
+| ar-a-014 | 周杰倫 | Jay | 2000年11月由台灣博德曼發行 | 待核：中文維基寫首張專輯由阿爾發音樂發行，文化部（bamid）金曲名單亦把《范特西》發行公司列為阿爾發音樂事業有限公司；「博德曼」可能是發行商而非廠牌，建議店主核對後決定是否改成「阿爾發音樂發行」。 | https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124208 |
+| ar-a-014 | Madonna | Madonna | 她先靠 Danceteria 駐場 DJ Mark Kamins 播出 demo〈Everybody〉打開門路，才換來整張專輯的錄製許可。 | 維基寫 1982 年 Kamins 對她的 demo 感興趣、引介 Sire 的 Seymour Stein，簽下的是兩單曲合約（〈Everybody〉1982 年 10 月、〈Burning Up〉／〈Physical Attraction〉1983 年 3 月），專輯是其後才做；『整張專輯的錄製許可』與『播出 demo』的因果都不見於該段。單源（維基），建議店主本機核對後再改。 | https://en.wikipedia.org/wiki/Madonna |
+| ar-a-014 | 林憶蓮 | Love, Sandy | 並獲新加坡金曲獎最佳專輯 | 中文維基寫她在 1995 年與 2001 年的新加坡金曲獎獲頒『最佳演繹女歌手獎』，未見『最佳專輯』；疑為獎項名稱混淆，待店主本機再查原始獎項名單確認。 | https://zh.wikipedia.org/wiki/%E6%9E%97%E6%86%B6%E8%93%AE |
