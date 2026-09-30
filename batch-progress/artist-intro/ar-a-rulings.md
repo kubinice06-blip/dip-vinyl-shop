@@ -183,3 +183,6 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   卡單年份疑誤：Built to Spill《Perfect from Now On》卡 1996（實 1997）、《Keep It Like a Secret》卡 1998（實 1999）。
 - 補洞第 4 組：Caravan 卡池混了泰國樂團 คาราวาน 的《คนกับควาย》（1975），只寫英國坎特伯里那團；該卡待本機拆出（同 Placebo、Steve Lacy 案）。
   Devo《Q: Are We Not Men?》上線簡介「改請 David Bowie 重混」三源皆無 → pubIssues，交本機。
+- 寫作第 1 組（20 位）審畢，0 處。寫作層自行擋下：崔健〈一無所有〉嗩吶與 RHCP 三條 bank 單源、Slayer《Reign in Blood》同站兩頁、The Jam mod 復興改「被稱為」。
+  Van Halen 由 thin 升 full（名人堂官方素材），同意；Spoon 的 Metacritic 十年最佳藝人屬評分彙整、非單一樂評，照 writer-base 例外具名，同意。
+  主線親驗：大象體操第 35 屆金曲評審團獎（中央社 2024-06-29）。
