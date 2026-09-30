@@ -611,5 +611,371 @@
     "notes": "事實庫 research 為空，從零查。本位開頁 8 次：英文維基、WebSearch（生平）、Asthmatic Kitty 藝人頁、WebSearch（Illinois 評價）、維基 Carrie & Lowell、WebSearch（C&L 評論）、NPR Illinois 轉載的 C&L 評論、維基 Illinois。失敗請求 4 次（Britannica 無 Sufjan 本傳只回導覽列、Metacritic 403、Pitchfork 拒絕、NPR 503），達上限。非獨立：legacy 第 1 條的兩源都是英文維基（不同條目），寫作層寫『Metacritic 列為 2005 年評價最高』時要標為來自維基彙整，不宜寫成獨立共識；同樣地，維基 Sufjan 與維基 Illinois 兩條是同站。origin 因沒有獨立於維基的傳記來源，僅收兩條；status 標 thin。單源未進 f：維基寫 1975 年 7 月 1 日生於底特律、9 歲搬到 Alanson、立陶宛與希臘裔、Hope College 畢業（Phi Beta Kappa）、The New School 創意寫作 MFA、2000 年首張專輯《A Sun Came》、自述州系列是「宣傳噱頭」、精通 banjo/雙簧管/英國管、2023 年 8 月確診 Guillain-Barré 症候群與《Javelin》獻給已故伴侶 Evans Richardson；維基 C&L 寫母親在他嬰兒時離家、有憂鬱、思覺失調與藥物濫用（搜尋摘要一致，出處未開頁）、專輯 Metacritic 90 分（40 篇）為 2015 年第二高、Pitchfork 給 Best New Music 並在 2025 年改評 10 分；維基 Illinois 寫 Pitchfork 2000 年代專輯榜第 16、2005 年度第 1，NPR「十年最重要的 50 張錄音」，Paste 十年榜第 1，Billboard 200 第 121 名（皆維基單站）；奧斯卡入圍的類別維基摘要未寫明（本位不寫類別）。",
     "failedFetches": 4,
     "pubIssues": []
+  },
+  {
+    "key": "townes van zandt",
+    "name": "Townes Van Zandt",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Townes Van Zandt 本名 John Townes Van Zandt，1944 年 3 月 7 日生於德州沃思堡，家世富裕，家族是當地的開拓世家。",
+            "src": "https://en.wikipedia.org/wiki/Townes_Van_Zandt",
+            "src2": "https://www.tshaonline.org/handbook/entries/van-zandt-john-townes",
+            "from": "new"
+          },
+          {
+            "f": "他年輕時因精神狀態被診斷並接受胰島素休克療法，據說這抹去了他許多早年的記憶。",
+            "src": "https://en.wikipedia.org/wiki/Townes_Van_Zandt",
+            "src2": "https://www.tshaonline.org/handbook/entries/van-zandt-john-townes",
+            "from": "new"
+          },
+          {
+            "f": "1965 年前後他在休士頓的 Jester Lounge 固定駐唱；後來經 Mickey Newbury 引介，搬到納許維爾，並結識製作人 Jack Clement，Clement 成為他長期的合作者。",
+            "src": "https://en.wikipedia.org/wiki/Townes_Van_Zandt",
+            "src2": "https://www.tshaonline.org/handbook/entries/van-zandt-john-townes",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Steve Earle 說過：「Townes Van Zandt 是全世界最好的詞曲作者，我可以穿著牛仔靴站在 Bob Dylan 的咖啡桌上這樣說。」",
+            "src": "https://en.wikipedia.org/wiki/Townes_Van_Zandt",
+            "src2": "https://theboot.com/steve-earle-pays-tribute-to-townes-van-zandt/",
+            "from": "new"
+          },
+          {
+            "f": "〈Pancho and Lefty〉1983 年由 Willie Nelson 與 Merle Haggard 合唱，登上 Billboard 鄉村榜第 1 名；〈If I Needed You〉1981 年由 Emmylou Harris 與 Don Williams 對唱，最高第 3 名。",
+            "src": "https://www.tshaonline.org/handbook/entries/van-zandt-john-townes",
+            "src2": "https://theboot.com/steve-earle-pays-tribute-to-townes-van-zandt/",
+            "from": "new"
+          },
+          {
+            "f": "他 2012 年入選 Texas Heritage Songwriters' Association 名人堂，2015 年身後入選 Austin City Limits 名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Townes_Van_Zandt",
+            "src2": "https://www.tshaonline.org/handbook/entries/van-zandt-john-townes",
+            "from": "new"
+          },
+          {
+            "f": "Austin City Limits 名人堂官方介紹稱他是「為一整代德州吟遊詞人立下標準」的詞曲傳奇，至今仍啟發後來的創作者。",
+            "src": "https://www.pbs.org/video/austin-city-limits-austin-city-limits-hall-fame-2015-townes-van-zandt/",
+            "src2": "https://en.wikipedia.org/wiki/Townes_Van_Zandt",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1997 年 1 月 1 日過世，享年 52 歲。",
+            "src": "https://www.tshaonline.org/handbook/entries/van-zandt-john-townes",
+            "src2": "https://theboot.com/steve-earle-pays-tribute-to-townes-van-zandt/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2012 年入選 Texas Heritage Songwriters' Association 名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Townes_Van_Zandt",
+        "from": "new"
+      },
+      {
+        "f": "2015 年身後入選 Austin City Limits 名人堂。",
+        "src": "https://www.pbs.org/video/austin-city-limits-austin-city-limits-hall-fame-2015-townes-van-zandt/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "精神狀態診斷：維基寫躁鬱（bipolar），TSHA 寫「schizophrenic–reactionary manic depressive」，兩源不一致，facts 只寫『被診斷』，不寫病名。",
+      "上線簡介（Delta Momma Blues、High, Low and In Between、The Late Great、Live at the Old Quarter）與本位事實無衝突。"
+    ],
+    "searches": 7,
+    "status": "thin",
+    "notes": "事實庫 research 為空，從零查。本位開頁 7 次：英文維基、WebSearch（Steve Earle）、The Boot、TSHA Handbook of Texas、WebSearch（名人堂）、WebSearch（風格）、PBS Austin City Limits 頁。失敗請求 1 次（Bluegrass Situation 403）。sound 格 none：搜尋摘要稱他「以告白式敘事寫在民謠與藍調和弦進行上、催生 Progressive Country 運動、間接影響 outlaw country」與『憂鬱、詩意』，來源只是搜尋摘要（疑轉引維基），沒有兩個開頁的獨立來源，不收；上線簡介有寫到聲音層面，寫作層可用上線簡介。單源未進 f：Steve Earle 事後澄清他不是說 Townes 勝過 Dylan，而是『值得與 Dylan 相提並論』（The Boot）；Earle 視他為朋友與導師、把兒子取名 Justin Townes Earle（The Boot，搜尋摘要一致）、2009 年 5 月 12 日 New West 發行全 Townes 曲目的《Townes》；Dylan 據稱有他全部唱片並視為重要影響（維基『reportedly』）；維基寫 Lightnin' Hopkins 啟發他、他母親稱電療是『一生最大的遺憾』；TSHA 寫他從四樓陽台跳下後家人送他做精神評估、Lyle Lovett、Nanci Griffith、Kris Kristofferson 受他影響、死亡日正好是 Hank Williams 逝世 44 年後（TSHA 單源）；維基寫死因為長年藥物濫用導致的心律不整、他是 Isaac Van Zandt 的玄孫輩後代。年份採維基（Jester Lounge 1965、搬納許維爾 1968）與 TSHA（『mid-1960s』），f 的『1965 年前後』取兩源交集。PBS 頁是公共電視轉播節目說明，維基與 TSHA 各自獨立。 過世地點田納西州 Smyrna 的住家只見 TSHA，未進 f。",
+    "failedFetches": 1,
+    "pubIssues": []
+  },
+  {
+    "key": "devendra banhart",
+    "name": "Devendra Banhart",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Devendra Banhart 1981 年 5 月 30 日生於美國德州休士頓，母親是委內瑞拉人；他在委內瑞拉首都卡拉卡斯度過童年與少年，之後搬到南加州。",
+            "src": "https://en.wikipedia.org/wiki/Devendra_Banhart",
+            "src2": "https://www.hollywoodbowl.com/musicdb/artists/490/devendra-banhart",
+            "from": "new"
+          },
+          {
+            "f": "他拿獎學金進舊金山藝術學院，後來輟學，轉向音樂。",
+            "src": "https://en.wikipedia.org/wiki/Devendra_Banhart",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/banhart-devendra",
+            "from": "new"
+          },
+          {
+            "f": "廠牌 Young God 的 Michael Gira 是經身邊的 Siobhan Duffy 在洛杉磯聽到他、拿到他的 CD-R 才知道他，Gira 簽下了他。",
+            "src": "https://younggodrecords.com/pages/devendra-banhart",
+            "src2": "https://en.wikipedia.org/wiki/Devendra_Banhart",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "媒體把他歸入「freak folk」與「New Weird America」，同場景的名字有 Joanna Newsom、CocoRosie 與 Vetiver。",
+            "src": "https://en.wikipedia.org/wiki/Devendra_Banhart",
+            "src2": "https://www.hollywoodbowl.com/musicdb/artists/490/devendra-banhart",
+            "from": "new"
+          },
+          {
+            "f": "樂評常拿他和 Marc Bolan 相比（維基指 Marc Bolan 的 Tyrannosaurus Rex 時期）。",
+            "src": "https://en.wikipedia.org/wiki/Devendra_Banhart",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/banhart-devendra",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他把 Vashti Bunyan 列為主要影響；她的《Just Another Diamond Day》2000 年 CD 重發後，啟發了他與 Joanna Newsom 等人。",
+            "src": "https://en.wikipedia.org/wiki/Devendra_Banhart",
+            "src2": "https://americansongwriter.com/how-this-underrated-folk-singer-songwriter-from-the-1970s-got-the-comeback-she-deserved-35-years-later/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "搬家時間：維基寫 14 歲搬到洛杉磯，Hollywood Bowl 只寫青少年期，Encyclopedia.com 寫母親再婚後，不寫具體年齡。",
+      "上線簡介（Oh Me Oh My...、Niño Rojo、Smokey Rolls Down Thunder Canyon）與本位事實無衝突。"
+    ],
+    "searches": 7,
+    "status": "thin",
+    "notes": "事實庫 research 為空，從零查。本位開頁 7 次：英文維基、WebSearch（生平）、Encyclopedia.com、Young God 官網、WebSearch（Vashti Bunyan）、American Songwriter、Hollywood Bowl 藝人頁。失敗請求 0 次。legacy 只有一條：沒有查到獨立於維基的共識評價，標 thin。單源未進 f：Hollywood Bowl 稱他把 Vashti Bunyan 的迷幻民謠帶回大眾視野、Michael Gira 2002 年替 Young God 把他旅行途中累積的自製錄音編成首張 CD（Hollywood Bowl 單源）；Encyclopedia.com 寫他首張專輯被《紐約時報》選為 2002 年第二佳 alternative 專輯、《Rolling Stone》形容他『像走在瘋狂邊緣』；Gira 官網自述說他早期錄音『聽起來像 70 年前錄的』、稱他是『我認識過最真誠、最不世故算計的藝人』（Young God 官網單源，屬廠牌方自述）；維基寫他的名字由來（Indra 與 Obi-Wan Kenobi）、1983 年父母離婚、14 歲搬 LA、1998 年入 SFAI、2000 年輟學；維基寫他自稱直到自己開始創作後才知道 Tyrannosaurus Rex；搜尋摘要稱他 2001 年寫信給 Vashti Bunyan 討教創作、2005 年她的新專輯《Lookaftering》有他參與演出（出處是維基，American Songwriter 該篇未提），不收；搜尋摘要稱 AllMusic 式的『2000 年代初 freak folk 運動的關鍵人物』，未開頁，不收。維基與 Hollywood Bowl 為獨立來源；Encyclopedia.com 為轉載型資料庫。",
+    "failedFetches": 0,
+    "pubIssues": []
+  },
+  {
+    "key": "leonard cohen",
+    "name": "Leonard Cohen",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Leonard Cohen 1934 年 9 月 21 日生於加拿大蒙特婁。",
+            "src": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+            "src2": "https://www.britannica.com/biography/Leonard-Cohen",
+            "from": "new"
+          },
+          {
+            "f": "他先以詩人與小說家出道，第一本詩集《Let Us Compare Mythologies》在 1956 年出版。",
+            "src": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+            "src2": "https://www.britannica.com/biography/Leonard-Cohen",
+            "from": "new"
+          },
+          {
+            "f": "他 33 歲才轉向音樂，1967 年發行首張專輯《Songs of Leonard Cohen》。",
+            "src": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+            "src2": "https://www.britannica.com/biography/Leonard-Cohen",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的歌編制簡省，歌詞把靈性與情慾放在一起。",
+            "src": "https://www.britannica.com/biography/Leonard-Cohen",
+            "src2": "https://spectrumlocalnews.com/nc/triad/news/2016/11/11/leonard-cohen-dead-age-82-singer-songwriter-obituary",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Hallelujah〉1984 年收進《Various Positions》，初期反應有限，後來靠 John Cale 與 Jeff Buckley 等人的翻唱流傳開來，成為他最廣為人知的歌。",
+            "src": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+            "src2": "https://www.britannica.com/biography/Leonard-Cohen",
+            "from": "new"
+          },
+          {
+            "f": "Bob Dylan 2016 年對《The New Yorker》說：「人們談到 Leonard 時，都沒提到他的旋律，對我來說，旋律與歌詞同樣是他最大的天才。」",
+            "src": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+            "src2": "https://spectrumlocalnews.com/nc/triad/news/2016/11/11/leonard-cohen-dead-age-82-singer-songwriter-obituary",
+            "from": "new"
+          },
+          {
+            "f": "2008 年入選搖滾名人堂，2010 年獲葛萊美終身成就獎。",
+            "src": "https://www.britannica.com/biography/Leonard-Cohen",
+            "src2": "https://www.aljazeera.com/features/2016/11/11/legendary-singer-leonard-cohen-dies-at-82",
+            "from": "new"
+          },
+          {
+            "f": "2011 年獲 Prince of Asturias 文學獎（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+            "src2": "https://www.fpa.es/en/princess-of-asturias-awards/laureates/2011-leonard-cohen.html",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1992 年《The Future》之後，他退居洛杉磯近郊的佛寺，1999 年回到錄音。",
+            "src": "https://www.britannica.com/biography/Leonard-Cohen",
+            "src2": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+            "from": "new"
+          },
+          {
+            "f": "2016 年 11 月 7 日在洛杉磯過世，享年 82 歲。",
+            "src": "https://en.wikipedia.org/wiki/Leonard_Cohen",
+            "src2": "https://www.britannica.com/biography/Leonard-Cohen",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2008 年入選搖滾名人堂。",
+        "src": "https://www.rockhall.com/inductees/leonard-cohen",
+        "from": "new"
+      },
+      {
+        "f": "2011 年獲 Prince of Asturias 文學獎（得獎）。",
+        "src": "https://www.fpa.es/en/princess-of-asturias-awards/laureates/2011-leonard-cohen.html",
+        "from": "new"
+      },
+      {
+        "f": "2010 年獲葛萊美終身成就獎。",
+        "src": "https://www.britannica.com/biography/Leonard-Cohen",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "逝世日：維基與 Britannica 寫 2016 年 11 月 7 日；Al Jazeera 一文寫『11 月 11 日』（實為對外宣布日），採 11 月 7 日。",
+      "第一本詩集年份：維基與 Britannica 寫 1956 年；Prince of Asturias 基金會頁寫 1954 年，不一致，採 1956。",
+      "加拿大勳章：維基寫 2003 年 Companion，Spectrum 新聞寫 1991 年 companion，不一致，f 不收勳章。"
+    ],
+    "searches": 7,
+    "status": "full",
+    "notes": "事實庫 research 為空，從零查。本位開頁 7 次：英文維基、搖滾名人堂、Britannica、Prince of Asturias 基金會頁、WebSearch（訃聞與 Dylan）、Al Jazeera 訃聞、Spectrum News 訃聞。失敗請求 0 次。名人堂官方（可具名單源）：2008 年入選，引介人 Lou Reed 說『我們何其幸運，與 Leonard Cohen 活在同一個時代』；官網稱他六十年來以詩與歌『把靈魂展示給世界』、『深沉而永恆的人性觸動我們的核心』。單源未進 f：維基寫他來自正統猶太教家庭、祖父 Lyon Cohen 是加拿大猶太人大會創辦會長、父親在他九歲時過世、住在希臘 Hydra 島寫作、1967 年首張專輯在美國評價冷淡、在英國賣得好、1994 年進 Mount Baldy 禪修五年並於 1996 年受戒為臨濟宗僧人、2005 年發現經紀人 Kelley Lynch 挪用逾 500 萬美元退休金（後獲 900 萬美元民事判決但難以追回）、2008 年起世界巡迴演出、〈Hallelujah〉被近 200 位歌手翻唱、Kurt Cobain 在〈Pennyroyal Tea〉寫『a Leonard Cohen afterworld』、2011 年 Glenn Gould 獎、2018 年身後葛萊美最佳搖滾表演（〈You Want It Darker〉）；Al Jazeera 引 Recording Academy 主席 Neil Portnow：『他的非凡才華對無數歌手與詞曲創作者影響深遠』，並稱他『被視為史上最佳詞曲作者之一』（Al Jazeera 單源）；Justin Trudeau 悼詞（Spectrum 單源）。〈Hallelujah〉那條的兩源分工：維基寫 John Cale 1991 年翻唱使其走紅、Britannica 寫 Jeff Buckley 1994 年翻唱，兩者說法互補，f 只寫『後來靠翻唱流傳』與兩位翻唱者；『初期反應有限』出自維基，Spectrum 也稱它由 cult hit 變成文化標準。era 第一條：維基寫 1994 年入 Mount Baldy，Britannica 只寫在《The Future》後退居佛寺並於 1999 年回到錄音，f 取兩源交集。 單源：Britannica 稱他的歌『簡省、帶存在主義的刺』寫黑暗、情慾與靈性；Spectrum 稱編制極簡、常帶黑色幽默與辛辣的社會評論；Al Jazeera 稱寫失落的愛、痛苦與對靈性的追尋。Mount Baldy Zen Center 地名只見維基。",
+    "failedFetches": 0,
+    "pubIssues": []
+  },
+  {
+    "key": "ry cooder",
+    "name": "Ry Cooder",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Ry Cooder 本名 Ryland Peter Cooder，1947 年 3 月 15 日生於洛杉磯，很小就開始學吉他，少年時已在當地藍調圈演出。",
+            "src": "https://en.wikipedia.org/wiki/Ry_Cooder",
+            "src2": "https://www.britannica.com/biography/Ry-Cooder",
+            "from": "new"
+          },
+          {
+            "f": "他年輕時與 Taj Mahal 組過 Rising Sons，後來加入 Captain Beefheart 的樂團，參與 1967 年的《Safe as Milk》。",
+            "src": "https://en.wikipedia.org/wiki/Ry_Cooder",
+            "src2": "https://www.britannica.com/biography/Ry-Cooder",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他最為人知的是 slide guitar 演奏、對傳統音樂的興趣，以及與各國傳統音樂人的合作。",
+            "src": "https://en.wikipedia.org/wiki/Ry_Cooder",
+            "src2": "https://www.britannica.com/biography/Ry-Cooder",
+            "from": "new"
+          },
+          {
+            "f": "他早期偏重重新詮釋老歌而非寫原創，涵蓋鄉村、福音、藍調、爵士、R&B、Tex-Mex 與夏威夷；他說要先學會老風格的「語言」，才夠道地。",
+            "src": "https://www.britannica.com/biography/Ry-Cooder",
+            "src2": "https://americansongwriter.com/ry-cooder-reverence-in-real-time/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1997 年他與古巴資深樂手錄製《Buena Vista Social Club》，專輯拿下葛萊美獎，也讓古巴傳統音樂重新被世界聽見。",
+            "src": "https://en.wikipedia.org/wiki/Ry_Cooder",
+            "src2": "https://www.britannica.com/biography/Ry-Cooder",
+            "from": "new"
+          },
+          {
+            "f": "1999 年 Wim Wenders 執導的紀錄片《Buena Vista Social Club》追蹤這批古巴老樂手從被遺忘到世界聞名，入圍奧斯卡最佳紀錄片（入圍）；Cooder 陪 Wenders 到哈瓦那，並在片中出現。",
+            "src": "https://cinema.cornell.edu/buena-vista-social-club",
+            "src2": "https://en.wikipedia.org/wiki/Ry_Cooder",
+            "from": "new"
+          },
+          {
+            "f": "1960 年代末他受邀參與 The Rolling Stones 的錄音：在 Let It Bleed 的〈Love in Vain〉彈曼陀林，在 Sticky Fingers 的〈Sister Morphine〉彈 slide guitar。",
+            "src": "https://guitarsexchange.com/en/psych-out/453/ry-cooder-as-a-session-player-top-10-moments/",
+            "src2": "https://en.wikipedia.org/wiki/Ry_Cooder",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1997 年錄製《Buena Vista Social Club》，專輯獲葛萊美獎。",
+        "src": "https://en.wikipedia.org/wiki/Ry_Cooder",
+        "from": "new"
+      },
+      {
+        "f": "為 Wim Wenders 的《Paris, Texas》（1984）配樂。",
+        "src": "https://cinema.cornell.edu/buena-vista-social-club",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "學吉他年紀：維基寫 3 歲開始，Britannica 寫 3 歲起接受指導、8 歲已相當熟練，American Songwriter 引述本人說『大概 4、5 歲時有人給我第一把吉他』，不一致，f 只寫『很小就開始』。",
+      "《Buena Vista Social Club》葛萊美年份：維基寫 1997（專輯發行年），搜尋摘要寫 1998 年葛萊美，f 不寫年份與類別。"
+    ],
+    "searches": 7,
+    "status": "full",
+    "notes": "事實庫僅有兩條專輯層級研究稿（編制與 Bop Till You Drop 的數位錄音），origin、sound、legacy 都靠補查。本位開頁 7 次：英文維基、Britannica、WebSearch（影響與 Buena Vista）、American Songwriter、Premier Guitar、Guitars Exchange、Cornell Cinema 頁。失敗請求 5 次（NPR 兩篇 503、Uncut 403、New York Theatre Guide 403、rollingstone.com 導向 tollbit），超過 4 次上限 1 次，最後一次只是 307 導向，未取得任何內容。事實庫的 Bop Till You Drop 條目（『流行音樂裡第一張以數位方式錄製的主流廠牌專輯』、3M 32 軌機 115000 美元）本位未補到第二源也未做反例檢查，屬『第一張』宣稱，不進 facts，只保留在 notes；寫作層若要用，請先另行查證。單源未進 f：維基寫 4 歲時左眼被刀刺傷、戴義眼；維基寫 2003 年《Rolling Stone》百大吉他手第 8 名（維基單源，未取得 Rolling Stone 頁）；維基寫他共獲四座葛萊美；Britannica 稱他『影響遠大於有限的商業成績』、是根源音樂復興與世界音樂探索的關鍵人物，並提到《Chicken Skin Music》把手風琴手 Flaco Jiménez 介紹給國際聽眾、與 V.M. Bhatt、Ali Farka Touré 合作；American Songwriter 寫他在聖塔莫尼卡長大、Woody Guthrie 與 Lead Belly 的唱片塑造他、稱 Keith Richards 從他那裡學到 open-G 調弦（該篇單源，搜尋摘要另稱 Richards 與 Jagger 都這樣說，未開頁）；Guitars Exchange 稱他是『史上最重要的 session 樂手之一』並轉述他認為 Keith Richards 偷了〈Honky Tonk Women〉的 riff、因此沒被選為 Stones 團員（該篇單源，屬傳聞，不收）；搜尋摘要有『他比任何當代音樂人都更把各地方音樂帶進流行主流』（NPR，未開頁）。Premier Guitar 只支持 Sister Morphine 一條，Love in Vain 曼陀林由 Guitars Exchange 與維基（Let It Bleed 參與）支持。",
+    "failedFetches": 5,
+    "pubIssues": []
   }
 ]
