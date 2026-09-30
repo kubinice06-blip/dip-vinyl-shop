@@ -187,5 +187,344 @@
   "pubIssues": [],
   "status": "thin",
   "notes": "事實庫 research 為空，從零查。搜尋 8 次（維基、WebSearch 生平、jazzprofiles、tomharrisonsax、WebSearch 低估評價、Dylan Cramer 維基、WebSearch 巴黎年份、jazzdisco）；失敗 2 次（allaboutjazz 403、AllMusic 403，不計入）。實際開頁的來源：維基、jazzprofiles、tomharrisonsax、jazzdisco、Dylan Cramer 維基。jazzprofiles 與 tomharrisonsax 兩頁的『被忽略』論述可能互相援引，兩者為部落格／個人站，非獨立且非權威，legacy『被低估』一條兩源強度有限；查不到名人堂、國家榮譽或後輩點名的有來源共識，legacy 偏薄。未收（單源）：(1) 維基 Dylan Cramer 條：加拿大中音手 Dylan Cramer 1975 年聽到 Criss 的錄音，1977 年專程從加拿大到洛杉磯跟他學習，相處約八個月至 Criss 過世，單源（該條目自述）；(2) jazzprofiles：Bob Porter 說『He comes immediately after Bird as an alto saxophonist』，單源；Cecil McNeely 談他是開路者所以難獲承認，單源；(3) jazzprofiles 引 Barry Kernfeld：音色溫暖豐厚、顫音明顯是 Parker 所沒有的，單源；Cook & Morton 的快速跑句描述，單源；(4) 搜尋摘要（AllMusic 之 Scott Yanow）：『underrated altoist who was instantly recognizable within three notes』，未開到 AllMusic 頁（403），單源；(5) tomharrisonsax：Johnny Hodges 的抒情處理影響他的慢板，單源；(6) 維基：Howard McGhee 樂團同團有 Parker、後與 Johnny Otis 與 Billy Eckstine 合作，僅維基與搜尋摘要；(7) 維基：1956 年簽 Imperial、1965 年簽 Prestige，屬簽約履歷不收；(8) 維基稱他 1977 年準備赴日本巡演時確診，單源；(9) jazzprofiles：1973–74 年歐洲巡演在法國尤其受歡迎，單源；留在洛杉磯導致東岸無名的說法出自 jazzprofiles 與搜尋摘要，未取得獨立第二頁，不收。卡池專輯的 genres 標籤（classical、hiphop）為卡池資料雜訊，四張專輯皆為 Prestige 時期 Sonny Criss，身分無疑。無同名混卡。"
+ },
+ {
+  "key": "world saxophone quartet",
+  "name": "World Saxophone Quartet",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "World Saxophone Quartet 的四位創始成員是 Hamiet Bluiett（上低音薩克斯風）、Julius Hemphill（中音薩克斯風）、Oliver Lake（中音薩克斯風）與 David Murray（次中音薩克斯風）；其中 Bluiett、Hemphill、Lake 三人出身聖路易的 Black Artists' Group。",
+      "src": "https://en.wikipedia.org/wiki/World_Saxophone_Quartet",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/world-saxophone-quartet",
+      "from": "new"
+     },
+     {
+      "f": "四人 1976 年底在紐奧良合作演出，這場原本被當成一次性的演出成了起點，樂團 1977 年初成軍。",
+      "src": "https://downbeat.com/news/detail/hamiet-bluiett-dies-at-78",
+      "src2": "https://en.wikipedia.org/wiki/World_Saxophone_Quartet",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "編制是四支薩克斯風、沒有節奏組（兩把中音、一把次中音、一把上低音），形式上常被拿來與古典室內樂的弦樂四重奏相比。",
+      "src": "https://en.wikipedia.org/wiki/World_Saxophone_Quartet",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/world-saxophone-quartet",
+      "from": "new"
+     },
+     {
+      "f": "他們的音樂融合自由爵士、R&B 與放克等元素。",
+      "src": "https://en.wikipedia.org/wiki/World_Saxophone_Quartet",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/world-saxophone-quartet",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Hemphill 離團後由 Arthur Blythe 接任，之後陸續有其他薩克斯風手補上他的位置；Hemphill 1995 年過世。",
+      "src": "https://en.wikipedia.org/wiki/World_Saxophone_Quartet",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/world-saxophone-quartet",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1977 年初成軍，前身是 1976 年底在紐奧良的一場演出。",
+    "src": "https://downbeat.com/news/detail/hamiet-bluiett-dies-at-78",
+    "src2": "https://en.wikipedia.org/wiki/World_Saxophone_Quartet",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：維基寫 1977、encyclopedia.com 寫 1976（Southern University 講座）、DownBeat 寫『1976 年底紐奧良一場原本只此一次的演出、1977 年初成軍』；三說以 DownBeat 的兩階段版本調和，facts 寫『1976 年底演出、1977 年初成軍』。",
+   "Hemphill 離團年：encyclopedia.com 寫 1990，維基寫 1991；兩源不一致，facts 不寫離團年。"
+  ],
+  "searches": 8,
+  "failedFetches": 4,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 8 次（維基、WebSearch 成軍、WebSearch 影響力、encyclopedia.com、DownBeat Bluiett 訃聞、WebSearch 榜單獎項、維基 Plays Duke Ellington、WebSearch 訃聞）；失敗 4 次（Chicago Reader 429、Britannica 404、JazzSkool fandom 402、AllAboutJazz 403，已達失敗上限）。實際開頁：維基、encyclopedia.com、DownBeat、維基 Plays Duke Ellington。legacy 格：查不到兩源都實際讀到的共識評價，標 none。以下單源（僅開過一頁）皆不入 facts：(1) encyclopedia.com：1987 年 Playboy 讀者票選『Best Jazz Group』、Down Beat 年度評論家票選穩居前五名、紐約時報把 1986 年《Plays Duke Ellington》列入該年最佳專輯；搜尋摘要另有同文，但與 encyclopedia.com 同源、非獨立，第二頁未開到，故不收；寫作層如要用需另查。(2) 搜尋摘要（來源頁未開）：《紐約時報》稱 WSQ 是『自 Miles Davis、Ornette Coleman、Coltrane 之後最原創、最重要的團體』，以及『WSQ 可能是 1975 年後大量出現的全薩克斯風團體中的第一個』，後者是『第一』類宣稱，未查反例，不收。(3) encyclopedia.com：四人各自的聲音——Murray 深沉的次中音顫音、Lake 帶 R&B 的中音、Bluiett 根植 bebop 的上低音、Hemphill 粗厲宏大的中音。(4) 搜尋摘要（多站）：起源是 Southern University 音樂系主任 Ed Jordan 邀請四人辦講座與演出，觀眾偏愛沒有節奏組的版本，促成這個編制；encyclopedia.com 有同述，搜尋摘要另有兩站，但第二頁未實際開頁。(5) DownBeat：Bluiett 把上低音薩克斯風從配角推到獨奏位置，他 1967 年在聖路易共同創立 Black Artists' Group；Bluiett 2018 年 10 月 4 日過世（僅搜尋摘要）。(6) 維基：招牌曲〈Hattie Wall〉（Bluiett 作）；1986 年《Plays Duke Ellington》是首次演奏標準曲、之前六張全是成員自作；維基樂團條目稱樂團 2016 年已解散，未查證，不收。(7) 維基 Ellington 專輯條：Washington Post 的 Mike Joyce 稱該作是『crowning glory』，屬單一評論家形容，不收。無 published 簡介可對照。卡池四張皆為 WSQ 名下，無同名混卡。 (8) encyclopedia.com 稱樂團是 Ornette Coleman、Albert Ayler 所代表的後咆勃與自由爵士傳統的繼承者，搜尋摘要有同述但第二頁未開，單源，不入 facts。"
+ },
+ {
+  "key": "tina brooks",
+  "name": "Tina Brooks",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tina Brooks 生於北卡羅來納州 Fayetteville，「Tina」是他兒時因身形嬌小而得的暱稱（由 Teeny 轉來）。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.udiscovermusic.com/stories/true-blue-tina-brooks/",
+      "from": "new"
+     },
+     {
+      "f": "他少年時隨家人從北卡搬到紐約。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.udiscovermusic.com/stories/true-blue-tina-brooks/",
+      "from": "new"
+     },
+     {
+      "f": "他從 R&B 樂團起步，1950 年代中期與 Lionel Hampton 合作過。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.everythingjazz.com/story/tina-brooks-true-blue/",
+      "from": "new"
+     },
+     {
+      "f": "小號手 Little Benny Harris 是他的提攜者，1958 年向 Blue Note 的 Alfred Lion 推薦他。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.udiscovermusic.com/stories/true-blue-tina-brooks/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Brooks 是 hard bop 次中音薩克斯風手，也是作曲者；他偏愛小調與開放式的和聲，作品帶著陰鬱的氣質。",
+      "src": "https://www.bluenote.com/artist/tina-brooks/",
+      "src2": "https://www.everythingjazz.com/story/tina-brooks-true-blue/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1958 至 1961 年他為 Blue Note 領銜錄了四場 session，生前只有 1960 年 6 月 25 日錄音的《True Blue》發行；其餘領銜錄音全被擱置到他過世之後。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.udiscovermusic.com/stories/true-blue-tina-brooks/",
+      "from": "new"
+     },
+     {
+      "f": "1961 年之後他就沒再錄音，海洛因成癮拖垮了健康，他從紐約爵士圈消失。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.udiscovermusic.com/stories/tina-brooks-minor-move-blue-note-album/",
+      "from": "new"
+     },
+     {
+      "f": "Brooks 1974 年 8 月在紐約因肝衰竭過世，42 歲。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.udiscovermusic.com/stories/true-blue-tina-brooks/",
+      "from": "new"
+     },
+     {
+      "f": "身後才被人發現：Blue Note 的爵士研究者 Michael Cuscuna 1970 年代中後期翻查該廠片庫，找出他多場未發行的母帶。",
+      "src": "https://www.everythingjazz.com/story/tina-brooks-true-blue/",
+      "src2": "https://www.udiscovermusic.com/stories/tina-brooks-minor-move-blue-note-album/",
+      "from": "new"
+     },
+     {
+      "f": "這批錄音 1980 年起才在日本首度出土；《Minor Move》就是由日本 King Records 首度發行。",
+      "src": "https://www.udiscovermusic.com/stories/tina-brooks-minor-move-blue-note-album/",
+      "src2": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "from": "new"
+     },
+     {
+      "f": "他的生涯短暫，卻留下『差一步就成為次中音巨人』的印象，評論界普遍稱他是 hard bop 時期被低估的次中音手。",
+      "src": "https://www.bluenote.com/artist/tina-brooks/",
+      "src2": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1958 年 3 月 16 日在 Van Gelder 錄音室錄下第一場領銜 session，班底是 Lee Morgan、Sonny Clark、Doug Watkins 與 Art Blakey，成果是當時未發行的《Minor Move》。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.udiscovermusic.com/stories/tina-brooks-minor-move-blue-note-album/",
+      "from": "new"
+     },
+     {
+      "f": "1960 年 6 月 25 日錄下《True Blue》，這是他生前唯一發行的領銜專輯。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.udiscovermusic.com/stories/true-blue-tina-brooks/",
+      "from": "new"
+     },
+     {
+      "f": "1958 至 1961 年他在 Blue Note 同時是領銜者與樂手，與 Kenny Burrell、Freddie Hubbard、Jackie McLean、Freddie Redd、Jimmy Smith 同錄。",
+      "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+      "src2": "https://www.bluenote.com/artist/tina-brooks/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1960 年 6 月錄下《True Blue》，是他生前唯一發行的領銜專輯。",
+    "src": "https://en.wikipedia.org/wiki/Tina_Brooks",
+    "src2": "https://www.udiscovermusic.com/stories/true-blue-tina-brooks/",
+    "from": "new"
+   },
+   {
+    "f": "1970 年代中後期 Michael Cuscuna 從 Blue Note 片庫找出他的未發行母帶，1980 年起首度在日本出土。",
+    "src": "https://www.everythingjazz.com/story/tina-brooks-true-blue/",
+    "src2": "https://www.udiscovermusic.com/stories/tina-brooks-minor-move-blue-note-album/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Minor Move 首場 session：維基與 uDiscover（Minor Move 專文）寫 1958 年 3 月 16 日，uDiscover（True Blue 專文）寫 1959；採前者，與上線簡介一致。",
+   "過世日：維基與 uDiscover（True Blue 專文）寫 1974 年 8 月 13 日，uDiscover（Minor Move 專文）寫 8 月 14 日；facts 只寫 1974 年 8 月。uDiscover True Blue 專文另有『1942 年生』的顯然筆誤，不採。",
+   "本名中間名：維基寫 Floyd，搜尋摘要寫 Lloyd；facts 不寫本名。遷居紐約時的年紀：維基寫 1944 年（推算 12 歲），uDiscover 寫 13 歲；facts 不寫年紀年份。",
+   "上線簡介（Minor Move、Back to the Tracks、The Waiting Game）與所收事實無衝突。"
+  ],
+  "searches": 7,
+  "failedFetches": 2,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "事實庫 research 為空（僅 published 三篇），origin、sound、legacy 三格皆從補查而來。搜尋 7 次（維基、WebSearch 生平、uDiscover True Blue、Everything Jazz、Blue Note 官網、WebSearch 重見天日、uDiscover Minor Move）；失敗 2 次（attictoys 回傳空內容、Toronto chambers 頁被資安驗證擋下，不計入）。實際開頁：維基、兩篇 uDiscover（同站兩篇，視為非獨立，故每條 fact 都與另一站配對）、Everything Jazz、Blue Note 官網（廠牌官網，屬商業來源，評價句只用來搭配維基）。未收（單源）：(1) 維基：出道 1951 年與 R&B 鋼琴手 Sonny Thompson，1955 年與 Hampton；uDiscover 則寫 Charles Brown、Amos Milburn 的 R&B 樂團，兩者未對上，故只寫『R&B 樂團起步』；(2) 維基與搜尋摘要：1985 年 Mosaic 4 LP 套裝（MR4-106）、2000 年 CD Connoisseur 系列，單源或未開第二頁；(3) uDiscover：Lester Young 是他欣賞的樂手，單源；C melody 薩克斯風入門、哥哥 David Bubba Brooks 指點，uDiscover 與搜尋摘要，單源；(4) Blue Note 官網：小調與開放式和聲是同儕羨慕的招牌；《The Connection》配樂中他與 McLean 把 hard bop 藍調帶成激烈深沉的呼喊；Brooks 是 McLean 在該劇的替身（搜尋摘要）；Blue Note 稱他生前最後 12 年沒有錄音（與 1961 至 1974 年對不上，不收）；(5) Everything Jazz：評論者 David Rosenthal 稱他『at once melancholy and muscular』、〈Theme For Doris〉達到『偉大爵士說書人』的水準，單一樂評人形容，不收；Cuscuna 1975 年進片庫『三張未發行專輯』，與 uDiscover『1970 年代晚期』有落差，故 facts 寫『1970 年代中後期』；(6) uDiscover：Freddie Hubbard 的 Blue Note 首作有他寫的曲，單源；『one-album wonder』標籤單源；(7) 未查到 Freddie Hubbard、Jackie McLean 等後輩明確點名他為影響的有來源說法，legacy 的共識評價偏弱（低估／差一步成巨人），但人物故事細節已逐條兩源。未發行原因：uDiscover 寫『原因不明』，不寫因果。無同名混卡。"
+ },
+ {
+  "key": "佐藤允彦",
+  "name": "佐藤允彦",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "佐藤允彦 1941 年 10 月 6 日生於東京兩國（現墨田區），慶應義塾大學經濟學部畢業。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+      "src2": "https://en.wikipedia.org/wiki/Masahiko_Satoh",
+      "from": "new"
+     },
+     {
+      "f": "他十幾歲就在東京銀座一帶的俱樂部與夜總會當職業鋼琴手，靠聽唱片自學爵士。",
+      "src": "https://en.wikipedia.org/wiki/Masahiko_Satoh",
+      "src2": "https://www.jjazz.net/jjazznet_blog/2024/11/my-first-jazz-vol80-.php",
+      "from": "new"
+     },
+     {
+      "f": "他 1966 至 1968 年在美國波士頓的 Berklee 音樂學院修作曲與編曲。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+      "src2": "https://note.com/longtime_jp/n/n7df469986957",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1960 年代末到 1970 年代初的演奏走自由、帶打擊性的路線；1971 年他的三重奏受邀上柏林爵士節，並用了當時罕見的環形調變器（ring modulator）改變鋼琴聲。",
+      "src": "https://en.wikipedia.org/wiki/Masahiko_Satoh",
+      "src2": "https://www.cafeoto.co.uk/artists/masahiko-satoh/",
+      "from": "new"
+     },
+     {
+      "f": "他自我定位是即興演奏者（improviser）而不只是爵士鋼琴手，至今仍在教學活動中推廣自由、直覺的即興演奏。",
+      "src": "https://note.com/longtime_jp/n/n7df469986957",
+      "src2": "https://sayegusa-e.org/persons/satomasahiko/",
+      "from": "new"
+     },
+     {
+      "f": "除了爵士，他長期為電影、電視劇與動畫配樂。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+      "src2": "https://en.wikipedia.org/wiki/Masahiko_Satoh",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 年他的首張個人專輯《Palladium》獲爵士雜誌《Swing Journal》的「日本ジャズ賞」。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+      "src2": "https://www.jjazz.net/jjazznet_blog/2024/11/my-first-jazz-vol80-.php",
+      "from": "new"
+     },
+     {
+      "f": "他 1970 年與 1972 年以大編制作品兩度獲藝術祭優秀賞。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+      "src2": "https://www.jjazz.net/jjazznet_blog/2024/11/my-first-jazz-vol80-.php",
+      "from": "new"
+     },
+     {
+      "f": "他曾受邀在柏林、Donaueschingen、Moers、Montreux 等歐洲重要音樂節演出。",
+      "src": "https://sayegusa-e.org/persons/satomasahiko/",
+      "src2": "https://www.jjazz.net/jjazznet_blog/2024/11/my-first-jazz-vol80-.php",
+      "from": "new"
+     },
+     {
+      "f": "2019 年 12 月獲文化庁長官表彰。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+      "from": "bank"
+     },
+     {
+      "f": "他 1997 年創設自己的廠牌 BAJ Records；1981 至 2020 年任音樂學校 Mesar House 的主幹講師，教樂理、作編曲與鋼琴。",
+      "src": "https://note.com/longtime_jp/n/n7df469986957",
+      "src2": "https://sayegusa-e.org/persons/satomasahiko/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1966 至 1968 年留學 Berklee，1969 年回日本發表首張個人專輯《Palladium》。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+      "src2": "https://www.jjazz.net/jjazznet_blog/2024/11/my-first-jazz-vol80-.php",
+      "from": "new"
+     },
+     {
+      "f": "1971 年上柏林爵士節，同年前後與 Albert Mangelsdorff 等歐洲樂手錄音。",
+      "src": "https://en.wikipedia.org/wiki/Masahiko_Satoh",
+      "src2": "https://www.cafeoto.co.uk/artists/masahiko-satoh/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1969 年首張個人專輯《Palladium》獲《Swing Journal》日本ジャズ賞。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+    "src2": "https://www.jjazz.net/jjazznet_blog/2024/11/my-first-jazz-vol80-.php",
+    "from": "new"
+   },
+   {
+    "f": "1970 年與 1972 年兩度獲藝術祭優秀賞。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+    "src2": "https://www.jjazz.net/jjazznet_blog/2024/11/my-first-jazz-vol80-.php",
+    "from": "new"
+   },
+   {
+    "f": "2019 年 12 月獲文化庁長官表彰。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "事實庫說 1970 與 1972 年兩度獲『藝術祭優秀賞』，日文維基、jjazz.net 與搜尋摘要一致；上線簡介未涉及。",
+   "上線簡介四則（Trinity、Holography、マグノリアの木、All-in All-out）與所收事實無衝突；Holography 簡介稱 1970 年 6 月在銀座、《Palladium》為前一年的三重奏，與『1969 年首張個人專輯 Palladium』一致。",
+   "開始職業演奏的年紀：英文維基寫 17 歲（銀座夜總會），jjazz.net 寫 16 歲高一時已在俱樂部彈琴並聽 Sonny Rollins；facts 不寫年紀。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "事實庫 research 有日文維基（生年、Berklee、首張、藝術祭、2019 表彰）與 Columbia、organicmusic 的專輯資料，legacy 與 sound 兩格靠補查。搜尋 8 次（日文維基、英文維基、WebSearch 日文、LTR 訪談 note.com、jjazz.net、sayegusa、WebSearch 英文、Cafe OTO），無失敗請求。⚠ Cafe OTO 頁的『free, percussive style』『1971 Berlin ring modulator』『Zoller、Berger、Mangelsdorff』文字與英文維基幾乎逐字相同，非獨立來源；sound 第一條與 era 第二條的 src2 因此強度有限，寫作層引用時措辭要收斂（『據資料所載』）。sayegusa 是他自己參與的教學企劃頁，屬自述，非獨立。未收（單源）：(1) 英文維基：1959 年已在 Georgie Kawaguchi 樂團與 Sadao Watanabe、Akira Miyazawa 同台；1973 年動畫電影《哀しみのベラドンナ》配樂；1990 年組 Rantooga（融合世界民俗音樂的大團）；為 Helen Merrill、Nancy Wilson、Art Farmer 編曲；1,000 名僧侶合唱團作品（1990 年代初）；(2) 日文維基：『パンダコパンダ』『火曜サスペンス劇場』配樂、慶應首席畢業（bank 與搜尋摘要有，僅開過一頁日文維基）、元妻為作家中山千夏（不收）；(3) jjazz.net：1958 年 1 月 16 歲在東京站前唱片喫茶「ママ」聽 Sonny Rollins《Saxophone Colossus》、一個月內把整張背下來；與 Steve Gadd、Eddie Gomez 的三重奏《Amorphism》在美國發行；2024 年 11 月《Palladium Explosive》。(4) 未查到後輩點名受他影響、或『日本自由爵士先驅』一類有來源的共識說法，legacy 以獎項、歐洲音樂節與教學為主，寫作層不宜寫成『先驅』。日本人名照原文漢字收。無同名混卡（卡池專輯皆為日本鋼琴家佐藤允彦名下）。"
  }
 ]

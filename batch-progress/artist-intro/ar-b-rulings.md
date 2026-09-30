@@ -6,3 +6,4 @@
 ### ar-b-001
 - 補洞第 1 組：Barry Harris、David Murray Octet 失敗請求各 5 次，照實記，放行。Caetano Veloso 被捕日期兩說，採多數 1968 年 12 月。Franco 全國哀悼天數兩說，不寫天數。pubIssue 1 條（Benny Goodman 小編制「第一個」宣稱，反例為代理憑記憶，交本機核）。
 - 補洞第 2 組：Gregory Porter 搜尋 9 次，第 9 次內容已撤，放行（先例）；George Benson 失敗請求 5 次，照實記。pubIssue 1 條（Jimmy Witherspoon 隨 McShann 出道年份）。Jamie Cullum 的 BRIT「得獎」實為入圍，不採。Jaco Pastorius 遇襲日期兩說，只寫 9 月中旬。
+- 補洞第 3 組：pubIssue 1 條（Julie London《About the Blues》1957 年稱 Bobby Troup「丈夫」，兩人 1959 年才結婚）。Lonnie Smith 確認為風琴手 Dr. Lonnie Smith。卡池年份提醒（代理單方說法，未複核）：Max Roach《We Insist!》1960 錄音、1961 年 1 月發行；Lester Young 兩張 1997 為再版年。
