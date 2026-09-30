@@ -848,5 +848,125 @@
   "failedFetches": 3,
   "status": "full",
   "notes": "事實庫只有《Now》一則上線簡介，無研究稿，三格全靠補查。補查 8 次：維基 Maxwell (musician)、維基 Maxwell's Urban Hang Suite、WebSearch（背景與葛萊美，一次呼叫內含三個子查詢）、Okayplayer 專文、Grammy.com 藝人頁、維基 BLACKsummers'night、維基 Now、WPXI 訪談報導。失敗請求 3 次（不計入）：Britannica（404）、BET 25 週年文（回傳的是首頁內容而非文章）、Rolling Stone 訪談（402 付費牆，經 tollbit）。Grammy.com 為一手來源，證實 2010 年（第 52 屆）兩項得獎與 2017 年（第 59 屆）一項得獎，以及另外 10 項入圍，其中 1997 年《Maxwell's Urban Hang Suite》與 1999 年《Embrya》入圍最佳 R&B 專輯；三座得獎與維基『won three Grammy Awards』一致。非獨立：維基四條目同站；WPXI 稿為地方電視台整理，內容與維基多處雷同。單源不收 facts：Vibe 稱他 the next Prince、《華盛頓郵報》稱他 the Marvin Gaye of the '90s（維基單源）；17 歲拿到 Casio 鍵盤開始作曲（維基單源）；專輯風格細節 falsetto、wah wah guitar、Rhodes（維基專輯條目單源）；AllMusic 評《Urban Hang Suite》『destined to become a classic contemporary R&B disc』與 Christgau 給 dud（維基單源）；《Urban Hang Suite》在 Billboard 200 最高第 36 名、R&B 第 8 名（維基 Maxwell 單源）、1997 年白金與 2002 年雙白金（維基專輯單源）；1997 年 6 月 15 日 MTV Unplugged 錄製（維基單源）；Now 條目的 Kate Bush 翻唱與上線簡介相符（維基單源）；〈Ascension〉R&B 第 8 名（Okayplayer 單源）；2019 年國會黑人連線基金會終身成就獎、6 座 Soul Train、2 座 NAACP Image（搜尋摘要，來源為 TikTok 轉貼維基文字，不採）；Embrya 首發不受好評、後被重新評價為開創之作（維基單源）；紐約時報選《BLACKsummers'night》為 2009 年最佳專輯（維基專輯條目單源）。第 2 源說明：origin 第一條『父親空難』第二源 Okayplayer；沒有一源明說『1973 年』以外的月日，出生日 5 月 23 日單源（維基）；sound 第二條的 Leon Ware 共同創作〈Sumthin' Sumthin'〉，第二源為維基 Leon Ware 條目（本組另一位藝人，已於本組讀過），Okayplayer 只寫『Leon Ware 提供精神與音樂方向』，寫作層請寫『參與創作』。卡池四張專輯確認為同一人（1996–2009）。"
+ },
+ {
+  "key": "michael kiwanuka",
+  "name": "Michael Kiwanuka",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Michael Kiwanuka 1987 年 5 月 3 日生於倫敦的 Muswell Hill，父母是逃離 Idi Amin 政權、移民英國的烏干達人。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+      "src2": "https://www.matookerepublic.com/entertainment/20230722/meet-michael-kiwanuka-the-british-singer-with-ugandan-roots-who-has-featured-twice-on-barack-obamas-summer-playlist/",
+      "from": "new"
+     },
+     {
+      "f": "他說自己年輕時聽 The Jimi Hendrix Experience 的《Are You Experienced》（1967）是「big moment for me」，讓他確定想做音樂。",
+      "src": "https://faroutmagazine.co.uk/albums-that-inspired-michael-kiwanuka/",
+      "src2": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Kiwanuka 的音樂結合靈魂、搖滾與民謠：他自己提過的影響包括 Bill Withers、Otis Redding 與 Bob Dylan，評論也常拿他和 Bill Withers、Otis Redding 相比。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+      "src2": "https://en.wikipedia.org/wiki/Home_Again_(Michael_Kiwanuka_album)",
+      "from": "new"
+     },
+     {
+      "f": "他談到 Kendrick Lamar《To Pimp a Butterfly》對《Love & Hate》的啟發：那張唱片讓他想起自己最愛的 Funkadelic 與 Isley Brothers，但「這是現在可以做的方式」。",
+      "src": "https://faroutmagazine.co.uk/albums-that-inspired-michael-kiwanuka/",
+      "src2": "https://en.wikipedia.org/wiki/Love_%26_Hate_(Michael_Kiwanuka_album)",
+      "from": "new"
+     },
+     {
+      "f": "2016 年的《Love & Hate》由 Danger Mouse、Inflo 與 Paul Butler 製作；2019 年的《Kiwanuka》他也感謝 Inflo 與 Danger Mouse 拓寬了他的視野。",
+      "src": "https://en.wikipedia.org/wiki/Love_%26_Hate_(Michael_Kiwanuka_album)",
+      "src2": "https://www.udiscovermusic.com/news/michael-kiwanuka-mercury-prize-winner/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Kiwanuka》（2019）拿下 2020 年 Mercury Prize（得獎），十二張入圍專輯中的對手包括 Dua Lipa 與 Charli XCX。",
+      "src": "https://en.wikipedia.org/wiki/2020_Mercury_Prize",
+      "src2": "https://www.udiscovermusic.com/news/michael-kiwanuka-mercury-prize-winner/",
+      "from": "new"
+     },
+     {
+      "f": "2012 年他獲選 BBC Sound of 2012。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+      "src2": "https://www.matookerepublic.com/entertainment/20230722/meet-michael-kiwanuka-the-british-singer-with-ugandan-roots-who-has-featured-twice-on-barack-obamas-summer-playlist/",
+      "from": "new"
+     },
+     {
+      "f": "他多次入圍全英音樂獎（Brit Awards）與葛萊美等獎項（皆為入圍）。",
+      "src": "https://www.matookerepublic.com/entertainment/20230722/meet-michael-kiwanuka-the-british-singer-with-ugandan-roots-who-has-featured-twice-on-barack-obamas-summer-playlist/",
+      "src2": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2012 年 3 月 12 日首張專輯《Home Again》發行，由 The Bees 的 Paul Butler 在懷特島 Ventnor 的 The Steam Rooms 錄音室製作，登上英國專輯榜第 4 名。",
+      "src": "https://en.wikipedia.org/wiki/Home_Again_(Michael_Kiwanuka_album)",
+      "src2": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+      "from": "new"
+     },
+     {
+      "f": "2016 年 7 月 15 日《Love & Hate》發行，登上英國專輯榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Love_%26_Hate_(Michael_Kiwanuka_album)",
+      "src2": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+      "from": "new"
+     },
+     {
+      "f": "2019 年 10 月發行第三張專輯《Kiwanuka》，隔年贏得 Mercury Prize。",
+      "src": "https://www.udiscovermusic.com/news/michael-kiwanuka-mercury-prize-winner/",
+      "src2": "https://en.wikipedia.org/wiki/2020_Mercury_Prize",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2012 年獲選 BBC Sound of 2012。",
+    "src": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+    "src2": "https://www.matookerepublic.com/entertainment/20230722/meet-michael-kiwanuka-the-british-singer-with-ugandan-roots-who-has-featured-twice-on-barack-obamas-summer-playlist/",
+    "from": "new"
+   },
+   {
+    "f": "2016 年《Love & Hate》登上英國專輯榜冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Love_%26_Hate_(Michael_Kiwanuka_album)",
+    "src2": "https://en.wikipedia.org/wiki/Michael_Kiwanuka",
+    "from": "new"
+   },
+   {
+    "f": "2020 年憑《Kiwanuka》贏得 Mercury Prize。",
+    "src": "https://en.wikipedia.org/wiki/2020_Mercury_Prize",
+    "src2": "https://www.udiscovermusic.com/news/michael-kiwanuka-mercury-prize-winner/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基 2020 Mercury Prize 條目的對手名單提到 Stormzy，uDiscover 列的是 Charli XCX、Sports Team、Laura Marling 與 Dua Lipa；facts 只寫兩源共同的 Dua Lipa 與 Charli XCX。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，全靠補查。補查 8 次：維基 Michael Kiwanuka、維基 2020 Mercury Prize、維基 Love & Hate、WebSearch（背景與影響，一次呼叫內含三個子查詢）、Far Out Magazine（他談影響他的專輯）、uDiscover Mercury 得獎報導、Matooke Republic 側寫、維基 Home Again。失敗請求 2 次（不計入）：Britannica（404）、mercuryprize.com 官方新聞（404）。非獨立：維基四條目同站；uDiscover 與 Matooke Republic 各自撰稿但簡單，Matooke 內容與維基高度重合（生日、父母姓名、Sound of 2012、入圍獎項），可視為維基衍生。單源不收 facts：曾當錄音室吉他手後才單飛（維基單源）；《Kiwanuka》英國專輯榜第 2 名並獲金唱片（維基單源）；Brit Awards 入圍細節：2020 British Male Solo Artist、2017 與 2020 British Album of the Year，以及 2021 年葛萊美最佳搖滾專輯入圍（維基單源，Matooke 只說多次入圍，故 facts 未寫類別）；2020 年是他第三次入圍 Mercury（uDiscover 單源，搜尋摘要稱三張專輯都入圍過）；Nirvana《From the Muddy Banks of the Wishkah》影響他學吉他（Far Out 單源）；《Love & Hate》開場曲〈Cold Little Heart〉近 10 分鐘、成為 HBO《Big Little Lies》片頭曲（維基專輯單源）；Metacritic 86 與 Telegraph、Guardian 評語（維基單源）；《Home Again》荷蘭榜第 1 名、英國破 10 萬張認證（維基單源）；Obama 2021 與 2023 夏季歌單（Matooke 單源）；虔誠基督徒與 Tottenham 球迷（維基與 Matooke 有寫但與地位無關，不收）。2012 年 Sound of 2012 說明：Matooke 只寫『earned BBC Sound of 2012 designation』，是否為冠軍以維基『won on January 6, 2012』為準（單源）；facts 已寫『贏得』，寫作層若要保守可寫『獲選 Sound of 2012』。卡池四張專輯確認為同一人（2012–2024）。 【修正】facts 只寫『獲選』Sound of 2012（冠軍與 1 月 6 日日期為維基單源）；2020 年 9 月 24 日公布得獎與專輯取名致意烏干達出身（uDiscover 單源）已自 facts 撤下。"
  }
 ]

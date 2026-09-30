@@ -45,3 +45,4 @@
 ### ar-b-005
 
 - 補洞第 1 組：Adele 失敗請求 6 次、Barry White 5 次、Betty Davis 5 次（付費牆轉址），照實記，放行。pubIssue 2 條（菅野《COWBOY BEBOP》簡介「本多雅人」應為本田雅人、樂器待核；鈴木宏昌コルゲン盤名與樂團名先後）。Boney M. 對嘴說法各源不一，不寫。菅野「国民祭典」為日文專名，QA 誤判保留。
+- 補洞第 2 組：Christina Aguilera 搜尋 9 次，第 9 次內容已撤，放行（先例）。pubIssue 2 條（Fatback《Fatback XII》簡介稱〈King Tim III〉為「史上第一張商業嘻哈唱片」、發行月份不一）。Bruno Mars 冠軍單曲數兩說，不寫。
