@@ -355,5 +355,170 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "補查 8 次：維基、Britannica、WebSearch（名人堂）、搖滾名人堂官網、WebSearch（國會圖書館與 Fortunate Son）、Encyclopedia.com、（國會圖書館 PDF 為亂碼、工具讀不出內文，記失敗但仍佔一次）、WebSearch（Rolling Stone 排名）。失敗：loc.gov 新聞稿（403）、loc.gov 評論 PDF（讀不出文字）。名人堂官方（可具名單源）：Bruce Springsteen 引介致詞『I stand here tonight still envious of that music's power and its simplicity』；名人堂稱其 roots rock 在 prog 主導的舊金山是『offbeat standout』；名人堂長文以『The origin of America's greatest authentic rock & roll band begins in 1959』開頭（全文未讀到）。單源未進 facts：他們來自加州卻以路易斯安那沼澤（bayou）意象寫南方（維基，轉述名人堂與 AllMusic）；John Fogerty 1993 年拒絕與 Cook、Clifford 同台，Cook 與 Clifford 在 Fogerty 與 Springsteen、Robbie Robertson 等人合演時離場（單源維基，搜尋摘要 Ultimate Classic Rock／Rolling Stone 有同說，未開頁）；『首度入圍即當選』與『首次在西岸舉辦的名人堂典禮』（搜尋摘要，單源）；Grammy 名人堂收〈Fortunate Son〉、〈Proud Mary〉與《Cosmo's Factory》、國會圖書館 2013 年把〈Fortunate Son〉收入國家錄音登記（維基與搜尋摘要，單源）；Rolling Stone 2011 年百大藝人第 82、《Green River》五百大專輯第 95、《Cosmo's Factory》第 265、〈Fortunate Son〉2004 年五百大歌曲第 99（2021 年改版降至 227，單源維基與搜尋摘要）；五首亞軍單曲從未有冠軍（維基單源）；《Chronicle: The 20 Greatest Hits》12 倍白金（單源維基）；John Fogerty 2023 年 1 月宣布取回全球版權（單源維基）；Fogerty 是陸軍服役經驗、〈Fortunate Son〉出於憤怒（搜尋摘要，單源）。同名混卡：無。"
+ },
+ {
+  "key": "death",
+  "name": "Death",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Death 的前身 Mantas 由 Chuck Schuldiner 在佛羅里達成立，時間是 1983 年，他當時 16 歲；共同創團的有吉他手 Rick Rozz 與鼓手 Kam Lee，樂團後來改名 Death。",
+      "src": "https://loudwire.com/death-chuck-schuldiner-dies-anniversary/",
+      "src2": "https://www.metalforcesmagazine.com/site/news-death-frontman-chuck-schuldiner-dies-aged-34/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Loudwire 寫 Schuldiner 在精煉與發展佛羅里達死亡金屬（death metal）的聲音上扮演重要角色，同時說明『death metal』一詞是誰創的至今沒有定論；維基則稱 Death 是開創性的死亡金屬樂團。",
+      "src": "https://loudwire.com/death-chuck-schuldiner-dies-anniversary/",
+      "src2": "https://en.wikipedia.org/wiki/Death_(metal_band)",
+      "from": "new"
+     },
+     {
+      "f": "Schuldiner 自己說 Venom 才是最早有那種凶狠人聲的樂團，不肯把死亡金屬的功勞攬在身上。",
+      "src": "https://loudwire.com/death-chuck-schuldiner-dies-anniversary/",
+      "src2": "https://en.wikipedia.org/wiki/Chuck_Schuldiner",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Schuldiner 在 Guitar World 2004 年的〈100 Greatest Metal Guitarists〉榜單排名第 20。",
+      "src": "https://blabbermouth.net/news/guitar-world-s-100-greatest-heavy-metal-guitarists-of-all-time",
+      "src2": "https://en.wikipedia.org/wiki/Chuck_Schuldiner",
+      "from": "new"
+     },
+     {
+      "f": "Schuldiner 2001 年 12 月 13 日過世，得年 34 歲，死因是腦幹膠質瘤（pontine glioma）。",
+      "src": "https://www.metalforcesmagazine.com/site/news-death-frontman-chuck-schuldiner-dies-aged-34/",
+      "src2": "https://loudwire.com/death-chuck-schuldiner-dies-anniversary/",
+      "from": "new"
+     },
+     {
+      "f": "他 1999 年確診腦幹膠質瘤，2000 年動手術，到 2001 年腫瘤已無法開刀，最後合併肺炎而過世。",
+      "src": "https://loudwire.com/death-chuck-schuldiner-dies-anniversary/",
+      "src2": "https://www.metalforcesmagazine.com/site/news-death-frontman-chuck-schuldiner-dies-aged-34/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "Schuldiner 2001 年 12 月 13 日因腦幹膠質瘤過世，得年 34 歲。",
+    "src": "https://www.metalforcesmagazine.com/site/news-death-frontman-chuck-schuldiner-dies-aged-34/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫只有 Scream Bloody Gore 與 Individual Thought Patterns 兩張上線簡介，研究稿為空；簡介內容（Chris Reifert 只參與一張、錄音兩次、Rivadavia 評語等）本組沒有補查到來源可對照，未發現衝突。",
+   "成軍年：維基首段寫 1983、同頁另有一說 1984（改名 Death 為 1984）；Loudwire 與 Metal Forces 兩源一致寫 1983，facts 採 1983。",
+   "Guitar World 榜單日期不合：維基寫 2004 年 3 月，Blabbermouth 寫 2004 年 1 月；facts 只寫 2004 年。",
+   "Death 成軍地點：維基寫 Altamonte Springs，Loudwire 與 Metal Forces 只寫佛羅里達；facts 只寫佛羅里達。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "thin",
+  "notes": "⚠ 同名不同人：卡池 Death 六張（Scream Bloody Gore、Leprosy、Human、Individual Thought Patterns、Symbolic、The Sound of Perseverance）全是 Chuck Schuldiner 的佛羅里達死亡金屬 Death；底特律 Hackney 兄弟的原型龐克 Death（《For the Whole World to See》）不在卡池，無混卡，其資料一條未收。補查 7 次：維基 Death、維基 Chuck Schuldiner、WebSearch（教父與逝世）、Loudwire、Metal Forces、WebSearch（Guitar World 與影響）、Blabbermouth。失敗未計入：NPR 悼念專文（503）、Revolver 專文（403）、metal.fandom（402）。第二源實際開頁：Loudwire、Metal Forces、Blabbermouth；維基兩頁為主源。單源未進 facts：Schuldiner 1967 年 5 月 13 日生於紐約長島、後在佛羅里達長大（單源維基）；父 Mal 母 Jane、兄 Frank 早逝（車禍或槍傷，說法不一），Schuldiner 據稱以改團名 Death 把兄長之死轉成正面之物（單源維基，兩處寫法）；9 歲學吉他、受 NWOBHM 與 Watchtower、Queensrÿche 影響（單源維基）；1986 年 1 月短暫加入加拿大團 Slaughter（單源維基）；歌詞由血腥暴力轉向現實中的恐怖（單源維基）；維基稱《Scream Bloody Gore》被視為最早的死亡金屬專輯之一，與 Possessed、Necrophagia 並列，Death 在 1990 年代走向複雜、技術性與前衛（單源維基）；『Godfather of death metal』稱號與 Forbes『沒有他死亡金屬這個次類型不會存在』、Kerrang! 訃聞『one of the most significant figures in the history of metal』（維基與搜尋摘要，單源）；Joel McIver 2009 年著作排第 10（單源維基）；Loudwire 稱其死後超過 1000 位藝人致意（單源）；Dave Grohl、Napalm Death、Korn、Red Hot Chili Peppers 等為醫療費募款、葬禮有 Mike Patton、Jason Newsted、Max Cavalera、King Diamond 到場（單源維基）；Death to All 悼念巡演由曾在團內的成員（Masvidal、Hamm、Koelble、Di Giorgio、Clendenin、Hoglan、Reinert）加人巡演（搜尋摘要，單源）；Human 影響 Gojira 與 Opeth、The Sound of Perseverance 影響 Gojira、Blood Incantation 等（搜尋摘要 Revolver 文，未開頁）；2025 年 11 月授權傳記《Born Human》出版（單源維基）。legacy 格只有一條榜單名次兩源成立，共識評價（教父、Forbes、Kerrang!）皆單源，故 status 標 thin；寫作層可用『被稱為死亡金屬先驅』的維基單源概括時須自行降級語氣。"
+ },
+ {
+  "key": "death cab for cutie",
+  "name": "Death Cab for Cutie",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Death Cab for Cutie 起於華盛頓州的 Bellingham，主唱 Ben Gibbard 在 Western Washington University 就學時開始寫歌，成軍後的核心成員還有 Chris Walla 與 Nick Harmer。",
+      "src": "https://en.wikipedia.org/wiki/Death_Cab_for_Cutie",
+      "src2": "https://www.britannica.com/topic/Death-Cab-for-Cutie",
+      "from": "new"
+     },
+     {
+      "f": "團名取自 Bonzo Dog Doo-Dah Band 的一首歌〈Death Cab for Cutie〉。",
+      "src": "https://en.wikipedia.org/wiki/Death_Cab_for_Cutie",
+      "src2": "https://www.britannica.com/topic/Death-Cab-for-Cutie",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的歌以敏感、內省的詞曲見長，旋律帶憂鬱感，歸在 indie rock、indie pop 與 alternative rock 之間；Britannica 稱他們協助定義了 2000 年代初的 emo。",
+      "src": "https://en.wikipedia.org/wiki/Death_Cab_for_Cutie",
+      "src2": "https://www.britannica.com/topic/Death-Cab-for-Cutie",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 Death Cab for Cutie 是 2000 與 2010 年代 definitive 的獨立樂團之一；Britannica 稱他們透過商業上成功的專輯深刻影響了獨立與另類搖滾。",
+      "src": "https://en.wikipedia.org/wiki/Death_Cab_for_Cutie",
+      "src2": "https://www.britannica.com/topic/Death-Cab-for-Cutie",
+      "from": "new"
+     },
+     {
+      "f": "影集《The O.C.》大量使用他們的歌，劇中角色 Seth Cohen 反覆被設定為他們的歌迷；《Transatlanticism》（2003）藉此曝光。",
+      "src": "https://en.wikipedia.org/wiki/Death_Cab_for_Cutie",
+      "src2": "https://www.britannica.com/topic/Death-Cab-for-Cutie",
+      "from": "new"
+     },
+     {
+      "f": "《Plans》（2005）是他們的大廠牌 Atlantic 首作，登上告示牌 200 大第 4 名，2008 年拿到 RIAA 白金認證，並獲葛萊美最佳另類音樂專輯（Best Alternative Music Album）提名（入圍，未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Death_Cab_for_Cutie",
+      "src2": "https://en.wikipedia.org/wiki/Plans_(album)",
+      "from": "new"
+     },
+     {
+      "f": "《Narrow Stairs》（2008）是他們第一張登上告示牌 200 大冠軍的專輯。",
+      "src": "https://en.wikipedia.org/wiki/Death_Cab_for_Cutie",
+      "src2": "https://www.britannica.com/topic/Death-Cab-for-Cutie",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Narrow Stairs》（2008）是他們第一張告示牌 200 大冠軍專輯。",
+    "src": "https://en.wikipedia.org/wiki/Death_Cab_for_Cutie",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫只有《We Have the Facts and We're Voting Yes》的三條錄音與銷量事實（來源維基，皆與上線簡介一致），屬單張專輯層級，不歸入 origin／sound／legacy，未沿用。",
+   "成軍年份不合：維基寫 1997，Britannica 寫 1990 年代中期，搜尋摘要亦寫 1997；facts 不寫成軍年。",
+   "Gibbard 與 Walla 的相識：Britannica 寫兩人在 Western Washington University 認識並在宿舍互相協助寫錄音，維基寫 Gibbard 在 WWU 認識 Harmer、Walla 是在演唱會上認識；兩者矛盾，facts 只寫 Gibbard 就讀 WWU。",
+   "《Plans》發行日：維基 DCFC 寫 2005 年 9 月，維基 Plans 條目寫 2005 年 8 月 30 日；facts 只寫 2005 年。",
+   "《Plans》一條兩個來源都是維基（藝人條目與專輯條目），不算獨立來源；Britannica 只寫『Grammy 提名』與 Atlantic 大廠牌首作，未寫名次與白金認證。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "補查 7 次：維基 Death Cab for Cutie、Britannica、WebSearch（Bellingham 與影響）、Stereogum《Transatlanticism》20 週年文、WebSearch（Plans 榜位與葛萊美）、WXPN 藝人頁（僅演唱會評論，無傳記，未收）、維基 Plans。失敗未計入：Seattle Times 專文（回空白內容）、Billboard Plans 20 週年（307 轉址）、其轉址頁 tollbit（402）。單源未進 facts：Gibbard 曾在龐克樂團 Pinwheel、把不適合的歌拿來寫成 Death Cab（單源維基）；Barsuk『握手協議』、2004 年 11 月簽 Atlantic（單源維基）；Postal Service《Give Up》（2003）意外白金（單源維基）；Chris Walla 2014 年離團、Dave Depper 與 Zac Rae 2015 年加入（單源維基）；《Transatlanticism》在 Stereogum 被稱為『quintessential 2000s rock record』與『the best Death Cab for Cutie album』，2002 年分數次五天錄音、團員關係緊張、《Give Up》賣超過 50 萬張使樂團前途不明（單源 Stereogum，且是評論者語氣，未收）；《Transatlanticism》告示牌 200 第 97 名與白金認證、是概念專輯（搜尋摘要，單源）；《Narrow Stairs》登冠軍的首週；Plans 首週 9 萬張、上榜 50 週、2015 年累計 120 萬張（單源維基 Plans）；〈I Will Follow You into the Dark〉入圍葛萊美最佳流行二重唱／團體演唱（單源維基 Plans）；Transatlanticism 發行日 Stereogum 寫 10 月 5 日，搜尋摘要寫 10 月 7 日，不一致，不收。事實庫三條 WHTF 研究稿事實與上線簡介一致，未再驗證。origin 格因兩源對相識經過矛盾，只收到最保守版本，寫作層寫成『在 Bellingham 起家、取自 Bonzo Dog 的歌名』即可。同名混卡：無。 另：Britannica 寫 1998 年首張專輯《Something About Airplanes》由 Barsuk 發行（單源，且屬出道作類宣稱，不收）。"
  }
 ]
