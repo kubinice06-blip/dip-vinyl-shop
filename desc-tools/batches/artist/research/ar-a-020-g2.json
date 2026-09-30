@@ -309,5 +309,555 @@
     "status": "full",
     "pubIssues": [],
     "notes": "補查 8 次：英文維基、Britannica、WebSearch（1965 復出）、WebSearch（1986 莫斯科）、Greenberg 文章、interlude.hk、WebSearch（獎項）、Encyclopedia.com；失敗 1 次：sonyclassical.com（403）。事實庫為空，全從零查。單源：1965 年復出音樂會兩小時內售完、有人在門外排隊過夜甚至數日（interlude.hk，同段文字也見 Apple Music／Amazon 頁摘要，非獨立）；唱片經過剪接、以排練錄音補綴（interlude.hk 與搜尋摘要）；1986 年 4 月 20 日只有 400 張公開票、1800 席大廳多為官員與外交人員（Greenberg 單源）；維基載 Olin Downes 稱 1928 年首演是『來自草原的龍捲風』、1932 年 Liszt B 小調奏鳴曲錄音被視為定本、Grammy 終身成就獎 1990、Wolf 獎 1982，皆單源；1953 年退出舞台的原因（憂鬱與怯場）不下判斷、不收。『20 世紀最偉大鋼琴家之一』這類共識搜尋摘要有，但維基首段與 Britannica 我未讀到明確原句，故 legacy 用可查的復出與 1986 事件，未寫共識形容詞；建議寫作層不加。維基與 Encyclopedia.com、Britannica 為獨立百科。卡池 6 張（含 1965 Carnegie、Horowitz at the Met、Moscow 1986）皆為這位 Horowitz，無同名混卡。"
+  },
+  {
+    "key": "梶浦由記",
+    "name": "梶浦由記",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "梶浦由記 1965 年 8 月 6 日生於東京；父親是歌劇歌手，她因為替父親伴奏而學鋼琴，小學時隨家人搬到德國住過一段時間。",
+            "src": "https://www.jasrac.or.jp/magazine/interview/25/250328.html",
+            "src2": "https://en.wikipedia.org/wiki/Yuki_Kajiura",
+            "from": "new"
+          },
+          {
+            "f": "她畢業於津田塾大學英文系，之後在 NTT 擔任技術人員，同時做業餘樂團；1993 年 7 月與石川智晶組成雙人組合 See-Saw，以此正式出道。",
+            "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+            "src2": "https://www.jasrac.or.jp/magazine/interview/25/250328.html",
+            "from": "new"
+          },
+          {
+            "f": "See-Saw 在 1995 年停止活動，她此後轉向以作詞作曲為主的個人工作；1997 年的動畫版《EAT-MAN》與 1998 年的遊戲《ダブルキャスト》是她轉向動畫與遊戲音樂的轉折。",
+            "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+            "from": "bank"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她以主導動機（leitmotif）的反覆運用，以及把當代古典與電子音樂融在一起的手法見稱。",
+            "src": "https://en.wikipedia.org/wiki/Yuki_Kajiura",
+            "from": "bank"
+          },
+          {
+            "f": "她的音樂大量使用弦樂與合唱編排，並常在歌詞裡使用沒有實際語意的自造語，日本樂迷稱為「梶浦語」。",
+            "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+            "src2": "https://www.jasrac.or.jp/magazine/interview/25/250328.html",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "梶浦由記為《劇場版「鬼滅の刃」無限列車編》與椎名豪共同獲得第 44 回日本アカデミー賞最優秀音楽賞。",
+            "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+            "src2": "https://www.japan-academy-prize.jp/sp/prizes/44.html",
+            "from": "new"
+          },
+          {
+            "f": "她作曲並共同作詞的〈炎〉（LiSA 演唱，《鬼滅の刃》劇場版主題曲）獲第 62 回日本レコード大賞。",
+            "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+            "src2": "https://120lives.tsuda.ac.jp/y_kajiura.html",
+            "from": "new"
+          },
+          {
+            "f": "她 2008 年起製作女聲團體 Kalafina，2018 年離開製作，團體 2019 年 3 月解散；2009 年起另有成員不固定的個人計畫 FictionJunction。",
+            "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+            "src2": "https://en.wikipedia.org/wiki/Yuki_Kajiura",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年 See-Saw 出道；2001 年因動畫《ノワール》再度活動；2008 年 Kalafina 出道；2009 年 FictionJunction 起步。",
+            "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+            "src2": "https://en.wikipedia.org/wiki/Yuki_Kajiura",
+            "from": "new"
+          },
+          {
+            "f": "2001 年因電視動畫《ノワール》的曲子〈Indio〉找了石川智晶來唱，See-Saw 才重新開始活動。",
+            "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年 7 月以 See-Saw 出道。",
+        "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+        "src2": "https://en.wikipedia.org/wiki/Yuki_Kajiura",
+        "from": "new"
+      },
+      {
+        "f": "2008 年製作 Kalafina 出道。",
+        "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+        "src2": "https://en.wikipedia.org/wiki/Yuki_Kajiura",
+        "from": "new"
+      },
+      {
+        "f": "第 44 回日本アカデミー賞最優秀音楽賞（與椎名豪共同，《鬼滅の刃》劇場版）。",
+        "src": "https://ja.wikipedia.org/wiki/梶浦由記",
+        "src2": "https://www.japan-academy-prize.jp/sp/prizes/44.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "日文維基寫 1988 年進 NTT（事實庫），津田塾大學校友頁寫英文系 1989 年畢業，兩者不一致，facts 不寫進 NTT 的年份也不寫畢業年；en 維基寫『成為專職音樂人在 1992 年』，與 See-Saw 1993 年正式出道並存，不收 1992；事實庫未收年份的 NewType 動畫大獎（2011、2012）維持在 notes"
+    ],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 7 次：日文維基、英文維基、WebSearch（獎項）、津田塾校友頁、日本アカデミー賞官網第 44 回、WebSearch（梶浦語）、JASRAC 訪談。origin 的父親與德國經歷由 JASRAC 訪談與英文維基（父親伴奏、德國）互證；『父親是歌劇歌手』只見 JASRAC，英文維基只說替父親伴奏，故該句歌劇歌手屬單源，寫作層若寫請保守；JASRAC 稱她小學二年級搬到德國，英文維基稱童年隨家人遷居西德，facts 只寫『小學時』並不寫年級與年數。單源：梶浦語的來源是父親用義大利語、法語唱歌劇、她不解其意地聽寫模仿（JASRAC，本人所述）；〈炎〉第 40 回 JASRAC 賞銀賞（JASRAC 單源）；Crunchyroll Anime Award 最佳配樂 2021、2025（英文維基單源）；NewType 動畫大獎 2011（まどか）與 2012（Fate/Zero）（日文維基單源）；ufotable 相關；她在《.hack//SIGN》認識 Emily Bindiger（事實庫，英文維基單源）。『〈炎〉獲第 62 回日本レコード大賞』的主詞是歌曲（LiSA 演唱），梶浦是作曲與共同作詞者，寫作層不可寫成梶浦個人得獎；日本アカデミー賞是與椎名豪共同得獎。津田塾校友頁與日文維基為獨立來源。日文人名『梶浦由記』『椎名豪』『石川智晶』照原文漢字。卡池 6 張皆為這位梶浦由記（NOIR、.hack//SIGN、MADLAX、空の境界、まどか☆マギカ、Fate/Zero），無同名混卡。"
+  },
+  {
+    "key": "wilhelm furtwängler",
+    "name": "Wilhelm Furtwängler",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Wilhelm Furtwängler 1886 年 1 月 25 日生於柏林，父親 Adolf Furtwängler 是考古學家；他在慕尼黑長大並受音樂教育，1954 年 11 月 30 日在巴登巴登附近過世。",
+            "src": "https://en.wikipedia.org/wiki/Wilhelm_Furtw%C3%A4ngler",
+            "src2": "https://www.britannica.com/biography/Wilhelm-Furtwangler",
+            "from": "new"
+          },
+          {
+            "f": "1922 年他接替 Arthur Nikisch，出任柏林愛樂的首席指揮，當時 36 歲。",
+            "src": "https://www.berliner-philharmoniker.de/en/about-us/orchestra/history/wilhelm-furtwaengler/",
+            "src2": "https://www.britannica.com/biography/Wilhelm-Furtwangler",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他把樂譜視為一種想像構思的符號，而不是固定不變的文本，重視主觀的實現與有機的詮釋，勝過機械式的精準；Britannica 形容他的風格熱情而浪漫。",
+            "src": "https://en.wikipedia.org/wiki/Wilhelm_Furtw%C3%A4ngler",
+            "src2": "https://www.britannica.com/biography/Wilhelm-Furtwangler",
+            "from": "new"
+          },
+          {
+            "f": "他的核心曲目以 Beethoven 為首；他的指揮技術不合常規，要求樂手具備高度的個人責任與敏感度。",
+            "src": "https://www.britannica.com/biography/Wilhelm-Furtwangler",
+            "src2": "https://www.berliner-philharmoniker.de/en/about-us/orchestra/history/wilhelm-furtwaengler/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1949 年芝加哥交響樂團的任命案，因對他納粹時期留在德國的疑慮與音樂界人士的反對而作罷。",
+            "src": "https://www.britannica.com/biography/Wilhelm-Furtwangler",
+            "src2": "https://musicrestored.org/the_furtw228ngler_case/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1933 年 1 月納粹上台後他仍留在德國；1934 年因納粹政府禁止 Hindemith《畫家馬蒂斯》首演而辭去柏林愛樂首席職位，仍持續指揮音樂會；1945 年 1 月他離開德國前往瑞士。",
+            "src": "https://www.berliner-philharmoniker.de/en/about-us/orchestra/history/wilhelm-furtwaengler/",
+            "src2": "https://musicrestored.org/the_furtw228ngler_case/",
+            "from": "new"
+          },
+          {
+            "f": "他 1946 年 12 月接受去納粹化審理，結果是被免除指控；1947 年 5 月重新指揮柏林愛樂，1952 年正式復任首席指揮，直到 1954 年過世。",
+            "src": "https://en.wikipedia.org/wiki/Wilhelm_Furtw%C3%A4ngler",
+            "src2": "https://www.berliner-philharmoniker.de/en/about-us/orchestra/history/wilhelm-furtwaengler/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1922 年接任柏林愛樂首席指揮。",
+        "src": "https://www.berliner-philharmoniker.de/en/about-us/orchestra/history/wilhelm-furtwaengler/",
+        "src2": "https://www.britannica.com/biography/Wilhelm-Furtwangler",
+        "from": "new"
+      },
+      {
+        "f": "1946 年 12 月的去納粹化審理結果為免除指控。",
+        "src": "https://en.wikipedia.org/wiki/Wilhelm_Furtw%C3%A4ngler",
+        "src2": "https://musicrestored.org/the_furtw228ngler_case/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "去納粹化結案時間：維基與 musicrestored 寫 1946 年 12 月受審並獲判無罪，Berliner Philharmoniker 官網寫『cleared in 1947』（搜尋摘要另稱 1947 年 4 月被美方歸為 Mitläufer 第 IV 類，未開頁）；facts 只寫『1946 年 12 月受審、結果免除指控』與『1947 年 5 月重新指揮』，不寫『1947 年獲免責』；維基寫出生地 Schöneberg、Britannica 寫柏林，facts 寫柏林"
+    ],
+    "searches": 8,
+    "failedFetches": 5,
+    "status": "thin",
+    "pubIssues": [],
+    "notes": "補查 8 次：英文維基、Britannica、WebSearch（去納粹化與後世影響）、Berliner Philharmoniker 官網、musicrestored.org（原 orelfoundation 轉址）、英文維基 Daniel Barenboim、WebSearch（Barenboim 1954）、Mahler Foundation（其文字與柏林愛樂官網相同，非獨立，未採）。失敗 5 次（超出 4 次上限 1 次，照實記）：danielbarenboim.com 三頁（526）、npr.org 逐字稿（503）、patangel.free.fr NYT 頁（503）。legacy 只湊到一條雙源事實，屬 thin：後輩影響有可用說法但只有單源——維基 Daniel Barenboim 條記 1954 年夏 Salzburg，Furtwängler 稱年輕的 Barenboim 是『phenomenon』並邀他與柏林愛樂演 Beethoven 第一號鋼琴協奏曲，被其父以『戰後不久、猶太男孩去德國太早』婉拒，並稱 Furtwängler 至今是 Barenboim 的中心影響與理想（單源，搜尋回傳的段落與維基同文，非獨立）；『Furtwängler 影響 Abbado、Mehta 與 Barenboim』出自 danielbarenboim.com 的搜尋摘要，開頁失敗，不收；『20 世紀最偉大指揮之一』的共識形容詞只見二手搜尋摘要，不收；維基載 1933 年 4 月致 Goebbels 公開信、1934 年 11 月為 Hindemith 辯護、拒行納粹禮、保護猶太樂手等，全為單源，且屬評價性敘述，依本批特注不收（只收留下、受審、結果、年份）。musicrestored 稱他戰時作為『使支持者與批評者分成兩派』，單源不收。Britannica 載 1907–09 年為 Felix Mottl 助理、1930 年任維也納愛樂指揮，維基載 Mannheim 1915–1920 等，單源或年份不一，不收。維基與 Britannica 為獨立百科；柏林愛樂官網與 Mahler Foundation 同文。曲目：Britannica 寫擅長 Beethoven 與 Wagner，柏林愛樂官網寫 Beethoven、Brahms、Bruckner 並提倡 Hindemith、Stravinsky，facts 只取兩源重疊的 Beethoven；Wagner 僅 Britannica 單源。卡池 6 張（Beethoven 9 Bayreuth 1951、Beethoven 5 1943、Schubert 9、Tristan 1952、Bruckner 8 1944、Ring RAI 1953）皆為這位 Furtwängler，無同名混卡；事實庫無研究稿也無上線簡介。"
+  },
+  {
+    "key": "andré previn",
+    "name": "André Previn",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "André Previn 生於柏林的猶太家庭，幼年進柏林的音樂學校就讀；1938 年前後因納粹迫害，全家離開德國，之後落腳洛杉磯。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.thejc.com/news/obituaries/obituary-sir-andre-previn-xe4ks0ec",
+            "from": "new"
+          },
+          {
+            "f": "他十幾歲就進 MGM 的音樂部門，從配器與編曲做起，同時是被看好的爵士鋼琴手。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.thejc.com/news/obituaries/obituary-sir-andre-previn-xe4ks0ec",
+            "from": "new"
+          },
+          {
+            "f": "1951 年前後他在美國陸軍服役、駐紮舊金山期間，向 Pierre Monteux 學習指揮。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.britannica.com/biography/Andre-Previn",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他是活躍的爵士鋼琴手，曾與 Ella Fitzgerald 等人廣泛錄音，1950 至 60 年代並與鼓手 Shelly Manne 合作多張專輯。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.thejc.com/news/obituaries/obituary-sir-andre-previn-xe4ks0ec",
+            "from": "new"
+          },
+          {
+            "f": "他 1968 至 1979 年擔任倫敦交響樂團首席指揮，並先後擔任 Houston、Pittsburgh、Los Angeles 樂團的指揮或音樂總監。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.thejc.com/news/obituaries/obituary-sir-andre-previn-xe4ks0ec",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Previn 憑 Gigi、Porgy and Bess、Irma la Douce 與 My Fair Lady 四部音樂片的配樂工作，四度獲奧斯卡獎。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.britannica.com/biography/Andre-Previn",
+            "from": "new"
+          },
+          {
+            "f": "BBC 節目《André Previn's Music Night》讓 Previn 成為明星，也讓倫敦交響樂團在英國家喻戶曉；1971 年他還上了 Morecambe and Wise 的聖誕特別節目。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.thejc.com/news/obituaries/obituary-sir-andre-previn-xe4ks0ec",
+            "from": "new"
+          },
+          {
+            "f": "他 1996 年獲頒英國榮譽爵級司令勳章（KBE），1998 年獲甘迺迪中心榮譽。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.britannica.com/biography/Andre-Previn",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "André Previn 1968 年至 1979 年任倫敦交響樂團首席指揮。",
+            "src": "https://www.classical-music.com/features/artists/andre-previn",
+            "from": "bank"
+          },
+          {
+            "f": "BBC 電視節目《André Previn's Music Night》1971 年至 1979 年共 33 集，他與倫敦交響一起在鏡頭前演出。",
+            "src": "https://www.imdb.com/title/tt9174650/",
+            "from": "bank"
+          },
+          {
+            "f": "2019 年 2 月 28 日他在紐約曼哈頓過世，享年約 89 歲。",
+            "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+            "src2": "https://www.britannica.com/biography/Andre-Previn",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1968 年起擔任倫敦交響樂團首席指揮，任期到 1979 年。",
+        "src": "https://www.classical-music.com/features/artists/andre-previn",
+        "from": "bank"
+      },
+      {
+        "f": "以四部音樂片配樂四度獲奧斯卡獎。",
+        "src": "https://en.wikipedia.org/wiki/Andr%C3%A9_Previn",
+        "src2": "https://www.britannica.com/biography/Andre-Previn",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生年：維基與 Britannica 寫 1929 年，The Jewish Chronicle 訃聞寫 1929 或 1930 年、稱出生證明遺失而年齡有爭議，facts 不寫出生年與享年確數（只寫『約 89 歲』）；離開德國路線：維基寫先到巴黎再於 1938 年 11 月 26 日抵洛杉磯，JC 寫 1938 年 10 月 20 日抵紐約、未提巴黎，Britannica 寫 1939 年到洛杉磯，facts 只寫『1938 年前後離開德國、落腳洛杉磯』；上線簡介與事實庫的 LSO 1968–1979、Music Night 1971–1979 一致"
+    ],
+    "searches": 4,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 4 次：英文維基、Britannica、WebSearch（訃聞與 Music Night）、The Jewish Chronicle 訃聞；失敗 1 次：jazzjournal.co.uk（503）。單源：維基載 1946 年於高中時進 MGM、1960 年成為首位同年三項奧斯卡入圍者、10 座葛萊美與 2010 年葛萊美終身成就獎、Glenn Gould Prize 2005、Gramophone 終身成就獎 2008、Morecambe and Wise 橋段與 Grieg 鋼琴協奏曲有關、著有回憶錄《No Minor Chords》1991；Britannica 載 1963 年在聖路易交響樂團指揮首演；搜尋摘要載 Marlon Brando 稱他與 Oscar Peterson 1974 年的節目『我看過最棒的電視一小時之一』（來源為搜尋摘要，未開頁，不收）。婚姻與子女不收。JC 稱 1971 年那集聖誕特別節目有 2500 萬名以上觀眾（單源，不收）。事實庫的 Prokofiev《灰姑娘》背景（維基）與作品有關、不歸三格。『四度獲奧斯卡』的主詞是配樂作品，類別為改編或原創配樂而非個人獨力創作，寫作層寫『為四部音樂片的配樂獲奧斯卡』即可。維基與 Britannica 為獨立百科。卡池 5 張（天鵝湖、Turangalîla、Walton 第一號、睡美人、灰姑娘）皆為指揮 Previn，無同名混卡（同一人兼爵士鋼琴手與電影作曲家）。"
+  },
+  {
+    "key": "bruno walter",
+    "name": "Bruno Walter",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bruno Walter 本姓 Schlesinger，1876 年 9 月 15 日生於柏林；他先以鋼琴起步，1894 年在科隆歌劇院首次指揮，同年在漢堡歌劇院認識 Gustav Mahler。",
+            "src": "https://en.wikipedia.org/wiki/Bruno_Walter",
+            "src2": "https://www.britannica.com/biography/Bruno-Walter",
+            "from": "new"
+          },
+          {
+            "f": "1901 年他成為 Mahler 在維也納宮廷歌劇院的助手，是 Mahler 邀請他去的。",
+            "src": "https://mahlerfoundation.org/mahler/contemporaries/bruno-walter/",
+            "src2": "https://www.britannica.com/biography/Bruno-Walter",
+            "from": "new"
+          },
+          {
+            "f": "Walter 1962 年 2 月 17 日在加州比佛利山過世，享年 85 歲。",
+            "src": "https://en.wikipedia.org/wiki/Bruno_Walter",
+            "src2": "https://www.britannica.com/biography/Bruno-Walter",
+            "from": "bank"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的風格常被拿來與 Toscanini 相比：Toscanini 講求精準，Walter 的做法被形容為更富變化、更浪漫，帶著溫暖而開闊的特質；Britannica 把他放在 Toscanini 與 Furtwängler 兩個極端之間，說他的詮釋屬維也納樂派傳統。",
+            "src": "https://www.britannica.com/biography/Bruno-Walter",
+            "src2": "https://mahlerfoundation.org/mahler/contemporaries/bruno-walter/",
+            "from": "new"
+          },
+          {
+            "f": "他最受稱道的是 Mahler 與 Mozart 的詮釋。",
+            "src": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/bruno-walter",
+            "src2": "https://www.britannica.com/biography/Bruno-Walter",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Mahler 過世後，Walter 指揮了他兩部最後作品的世界首演：1911 年 11 月 20 日在慕尼黑的《大地之歌》，與 1912 年 6 月 26 日由維也納愛樂演出的第九號交響曲。",
+            "src": "https://mahlerfoundation.org/mahler/contemporaries/bruno-walter/",
+            "src2": "https://en.wikipedia.org/wiki/Bruno_Walter",
+            "from": "new"
+          },
+          {
+            "f": "紐約愛樂稱他是「公認最具權威的 Mahler 詮釋者之一」，從 1932 年到 1960 年最後一場演出，他一直在紐約推廣 Mahler 的作品。",
+            "src": "https://www.nyphil.org/about-us/artists/bruno-walter",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/bruno-walter",
+            "from": "new"
+          },
+          {
+            "f": "1938 年他因納粹政權被迫離開奧地利，1939 年移居美國，定居比佛利山。",
+            "src": "https://en.wikipedia.org/wiki/Bruno_Walter",
+            "src2": "https://www.britannica.com/biography/Bruno-Walter",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1929 年至 1933 年擔任萊比錫 Gewandhaus 管弦樂團的指揮。",
+            "src": "https://en.wikipedia.org/wiki/Bruno_Walter",
+            "src2": "https://www.britannica.com/biography/Bruno-Walter",
+            "from": "new"
+          },
+          {
+            "f": "1947 年至 1949 年任紐約愛樂的音樂顧問。",
+            "src": "https://www.nyphil.org/about-us/artists/bruno-walter",
+            "src2": "https://en.wikipedia.org/wiki/Bruno_Walter",
+            "from": "new"
+          },
+          {
+            "f": "Walter 最後一次公開演出是 1960 年 12 月 4 日與 Los Angeles Philharmonic 和鋼琴家 Van Cliburn 合作；最後一次錄音是 1961 年 3 月底與 Columbia Symphony Orchestra 錄的一組 Mozart 序曲。",
+            "src": "https://en.wikipedia.org/wiki/Bruno_Walter",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1911 年指揮 Mahler《大地之歌》世界首演。",
+        "src": "https://mahlerfoundation.org/mahler/contemporaries/bruno-walter/",
+        "src2": "https://en.wikipedia.org/wiki/Bruno_Walter",
+        "from": "new"
+      },
+      {
+        "f": "1912 年指揮 Mahler 第九號交響曲世界首演。",
+        "src": "https://mahlerfoundation.org/mahler/contemporaries/bruno-walter/",
+        "src2": "https://en.wikipedia.org/wiki/Bruno_Walter",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "慕尼黑任期：維基 1913–1922、Britannica 1914–1922、Encyclopedia.com 1917–1922，三源不一致，facts 不寫；本姓全名：維基寫 Bruno Schlesinger、Britannica 與 Encyclopedia.com 寫 Bruno Walter Schlesinger，facts 只寫『本姓 Schlesinger』；上線簡介與事實庫無衝突"
+    ],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 7 次：英文維基、Britannica、WebSearch（風格與錄音）、Mahler Foundation 頁、WebSearch（訃聞與定位）、Encyclopedia.com、紐約愛樂官網人物頁。單源：維基載 1936 與 1938 年與維也納愛樂的 Mahler 錄音為歷史名版、1933 年 3 月被逐出萊比錫與柏林、1896 年改姓 Walter、9 歲首次公開彈琴、8 歲進 Stern 音樂院；紐約愛樂頁載 1945 年指揮紐約愛樂首次 Mahler 第九號、1947 年與該團錄下 Mahler 第五號（稱『世界首演錄音』，只此一源，不收）、1960 年 4 月 15 日最後一場為《大地之歌》；Encyclopedia.com 載改姓取自 Wagner 英雄（單源）；Stereophile 搜尋摘要稱 Columbia 立體聲 Mahler 第一號是他最好的一版（未開頁，不收）。『公認最具權威的 Mahler 詮釋者之一』紐約愛樂官網與搜尋摘要的另一站都這樣寫，Encyclopedia.com 只寫『Mahler 的堅定捍衛者、擅長 Mahler 與 Mozart』，facts 主詞以紐約愛樂為準並具名。Mahler Foundation 對 Toscanini 的比較寫『more varied and more romantic』；Britannica 寫『介於 Toscanini 與 Furtwängler 兩極之間』、Encyclopedia.com 寫『warm, expansive approach』，三者互證但措辭不同。維基、Britannica、Encyclopedia.com 為獨立百科；Mahler Foundation 與紐約愛樂為機構頁。卡池 5 張（貝多芬田園、布拉姆斯 2 與 4、Mahler《大地之歌》1936、Mahler 第九號 1938 維也納）皆為這位 Bruno Walter，無同名混卡。"
+  },
+  {
+    "key": "georg solti",
+    "name": "Georg Solti",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Georg Solti 1912 年 10 月 21 日生於布達佩斯，本名 György Stern；他在李斯特音樂院受教，鋼琴師從 Béla Bartók。",
+            "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+            "src2": "https://www.britannica.com/biography/Georg-Solti",
+            "from": "new"
+          },
+          {
+            "f": "1937 年 Toscanini 選他擔任薩爾茲堡音樂節的助手。",
+            "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+            "src2": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/08-sir-georg-solti/",
+            "from": "new"
+          },
+          {
+            "f": "Solti 1938 年在布達佩斯歌劇院首次指揮，1942 年獲日內瓦國際鋼琴大賽首獎。",
+            "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+            "src2": "https://www.britannica.com/biography/Georg-Solti",
+            "from": "new"
+          },
+          {
+            "f": "1946 年他出任慕尼黑巴伐利亞國家歌劇院的音樂總監。",
+            "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+            "src2": "https://www.britannica.com/biography/Georg-Solti",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Solti 成長於奧德音樂傳統，以 Mozart、Beethoven、Wagner、Mahler 等作品的有力詮釋著稱。",
+            "src": "https://www.britannica.com/biography/Georg-Solti",
+            "src2": "https://www.udiscovermusic.com/classical-features/georg-solti-wagner-ring/",
+            "from": "new"
+          },
+          {
+            "f": "他 1958 至 1965 年與製作人 John Culshaw 在維也納錄下 Wagner《尼伯龍根的指環》，是第一套為商業發行而製作的完整錄音室《指環》。",
+            "src": "https://en.wikipedia.org/wiki/Der_Ring_des_Nibelungen_(Georg_Solti_recording)",
+            "src2": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/08-sir-georg-solti/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "這套 Decca《指環》1999 年被 Gramophone 雜誌票選為史上最偉大的錄音，BBC Music Magazine 的票選也給出同樣的稱號。",
+            "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+            "src2": "https://www.udiscovermusic.com/classical-features/georg-solti-wagner-ring/",
+            "from": "new"
+          },
+          {
+            "f": "Solti 一生獲 31 座葛萊美獎，在 2023 年被 Beyoncé 超越之前，是葛萊美得獎最多的人。",
+            "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+            "src2": "https://www.britannica.com/biography/Georg-Solti",
+            "from": "new"
+          },
+          {
+            "f": "1969 至 1991 年他擔任芝加哥交響樂團音樂總監 22 年，大幅提升了這支樂團的國際聲譽。",
+            "src": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/08-sir-georg-solti/",
+            "src2": "https://www.britannica.com/biography/Georg-Solti",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1961 至 1971 年擔任倫敦皇家歌劇院（Covent Garden）的音樂總監。",
+            "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+            "src2": "https://www.britannica.com/biography/Georg-Solti",
+            "from": "new"
+          },
+          {
+            "f": "1997 年 9 月 5 日在法國昂蒂布過世。",
+            "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+            "src2": "https://www.britannica.com/biography/Georg-Solti",
+            "from": "new"
+          },
+          {
+            "f": "1974 年 6 月 23 日至 7 月 12 日在倫敦 Kingsway Hall 錄下柴可夫斯基《Eugene Onegin》全劇。",
+            "src": "https://www.discogs.com/release/27598446-Tchaikovsky-Weikl-Kubiak-Burrows-Hamari-Ghiaurov-Senechal-John-Alldis-Choir-Orchestra-Of-The-Royal-O",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1958 至 1965 年錄下第一套商業發行的完整錄音室《尼伯龍根的指環》。",
+        "src": "https://en.wikipedia.org/wiki/Der_Ring_des_Nibelungen_(Georg_Solti_recording)",
+        "src2": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/08-sir-georg-solti/",
+        "from": "new"
+      },
+      {
+        "f": "1969 至 1991 年任芝加哥交響樂團音樂總監。",
+        "src": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/08-sir-georg-solti/",
+        "src2": "https://www.britannica.com/biography/Georg-Solti",
+        "from": "new"
+      },
+      {
+        "f": "累計獲 31 座葛萊美獎。",
+        "src": "https://en.wikipedia.org/wiki/Georg_Solti",
+        "src2": "https://www.britannica.com/biography/Georg-Solti",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "BBC Music Magazine 票選年份：維基 Solti 條與搜尋摘要寫 2011、維基 Ring 錄音條寫 2012，facts 不寫該年份；Gramophone 寫 1999 三處一致；封爵：維基寫 1971 年榮譽爵士、1972 年入英籍後正式受封，Britannica 與芝加哥交響樂團官網寫 1972，facts 不收；法蘭克福任期年份 1952–1960 或 1961 不一致，不收"
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 8 次：英文維基 Georg Solti、Britannica、WebSearch（Ring 票選）、維基 Ring 錄音條、Tracking Angle、udiscovermusic、WebSearch（風格）、芝加哥交響樂團官網（轉址後開）。udiscovermusic 是 Decca／Universal 旗下站，屬廠牌側來源，非獨立；維基 Solti 與維基 Ring 條同站，也非獨立；Gramophone 1999 那句有 Tracking Angle 只稱『從未絕版』而未提票選年份，故未採。『BBC Music Magazine 給同樣稱號』只以 udiscovermusic 與維基為據，寫作層寫時不要加年份。單源：維基載 Solti 1938 年 3 月 11 日以《費加洛婚禮》首次指揮、1930 年畢業、Dohnányi 教作曲、家族改姓 Solti、Frankfurt 歌劇院任期與 33 齣歌劇、Covent Garden 1968 年獲『皇家歌劇院』名號、芝加哥 999 場音樂會、骨灰葬於布達佩斯 Farkasréti 公墓與 Bartók 相鄰；CSO 官網載 1971 年首次歐洲巡演、1987 年芝加哥市 Medal of Merit、1993 年甘迺迪中心榮譽、1996 年 NARAS 終身成就獎，皆單源；搜尋摘要載 Toscanini 助手（CSO 與維基兩源已入 facts）與 Time 稱他『Fastest Baton in the West』（未開頁，不收）；Ring 首張 Rheingold 進入 Billboard 暢銷榜與《企鵝指南》評語（維基 Ring 條單源）。『獲 31 座葛萊美』主詞為 Solti 本人（錄音多為與芝加哥交響樂團與合唱團）。芝加哥的前任是 Jean Martinon（CSO 單源）；維基載他 1942 年是在瑞士流亡期間獲日內瓦鋼琴大賽（流亡說法單源，facts 不寫）。1938 年離開匈牙利的原因（納粹壓力與反猶法）只見維基，facts 不寫離開匈牙利的說法與原因。卡池 5 張（Ring、Mahler 8、Salome、Elektra、Onegin）皆為指揮 Solti，無同名混卡；事實庫僅一條 Onegin 錄音資料。"
   }
 ]
