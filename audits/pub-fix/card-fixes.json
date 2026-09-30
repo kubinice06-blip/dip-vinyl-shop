@@ -165,9 +165,9 @@
   "action": "keep",
   "evidence": [
    "https://musicbrainz.org/release-group/9cd0a88f-80d3-3e7c-b91d-55d7547bfe6e",
-   "https://www.discogs.com/release/6258860-Lester-Young-The-Kansas-City-Sessions"
+   "https://musicbrainz.org/ws/2/release?release-group=9cd0a88f-80d3-3e7c-b91d-55d7547bfe6e&fmt=json"
   ],
-  "reason": "這張本身就是 1997 Commodore CD 合輯（MB、Discogs 皆 1997），錄音 1938／1944 原為 78 轉單曲，無原始專輯首發可循；維持 1997（簡介宜以「1997 年合輯／1938 與 1944 年錄音」表述）。"
+  "reason": "這張本身就是 1997 Commodore CD 合輯（MB release-group 與唯一 release 皆 1997），錄音 1938／1944 原為 78 轉單曲，無原始專輯首發可循；維持 1997（簡介宜以「1997 年合輯／1938 與 1944 年錄音」表述）。"
  },
  {
   "type": "year",
@@ -217,8 +217,7 @@
   "action": "keep",
   "evidence": [
    "https://musicbrainz.org/release-group/501e1446-2fb6-469e-9e8a-6261ef8c719e",
-   "https://music.apple.com/ca/album/新寶島康樂隊-八-腳開開/544648922",
-   "https://music.douban.com/subject/6430984/"
+   "https://music.apple.com/ca/album/新寶島康樂隊-八-腳開開/544648922"
   ],
   "reason": "官方全名《新寶島康樂隊(八)腳開開》、豆瓣作「第八輯 腳開開」——「八」是第八輯序號，專輯名為「腳開開」（MB 同），無「八腳開開」寫法；維持。年份 2011-06 MB／Apple 一致，不動。"
  },
@@ -234,5 +233,227 @@
    "https://music.apple.com/ca/album/新寶島康樂隊-八-腳開開/544648922"
   ],
   "reason": "MB 2011-06（滾石）、搜尋結果與 Apple 皆 2011-06-03，一致。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Steve Lacy|Gemini Rights",
+  "field": "artist",
+  "from": "Steve Lacy",
+  "to": "Steve Lacy (The Internet)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/ab1c1fd8-f769-4d78-90bc-4677f8ad8c22",
+   "https://musicbrainz.org/artist/b29020d6-5dbf-4c99-b16f-c009f8a712ff"
+  ],
+  "reason": "MB 三張皆掛 Steve Lacy（b29020d6，The Internet 吉他手、1998 生），非爵士薩克斯風手 ca9766a0（1934–2004）；卡池其餘 Steve Lacy 卡（Dreams、Lapis、The Owl、Evidence、The Straight Horn 等）保留原名。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Steve Lacy|Apollo XXI",
+  "field": "artist",
+  "from": "Steve Lacy",
+  "to": "Steve Lacy (The Internet)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/c1be618a-18a0-4c40-8f85-0a9e0637a355",
+   "https://musicbrainz.org/artist/b29020d6-5dbf-4c99-b16f-c009f8a712ff"
+  ],
+  "reason": "MB 三張皆掛 Steve Lacy（b29020d6，The Internet 吉他手、1998 生），非爵士薩克斯風手 ca9766a0（1934–2004）；卡池其餘 Steve Lacy 卡（Dreams、Lapis、The Owl、Evidence、The Straight Horn 等）保留原名。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Steve Lacy|Oh yeah?",
+  "field": "artist",
+  "from": "Steve Lacy",
+  "to": "Steve Lacy (The Internet)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/40a8bbb9-667a-4878-beb7-05b4fdffa92d",
+   "https://musicbrainz.org/artist/b29020d6-5dbf-4c99-b16f-c009f8a712ff"
+  ],
+  "reason": "MB 三張皆掛 Steve Lacy（b29020d6，The Internet 吉他手、1998 生），非爵士薩克斯風手 ca9766a0（1934–2004）；卡池其餘 Steve Lacy 卡（Dreams、Lapis、The Owl、Evidence、The Straight Horn 等）保留原名。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Placebo|Ball of Eyes",
+  "field": "artist",
+  "from": "Placebo",
+  "to": "Placebo (Belgium)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/3a20dd2e-1ade-3d53-ad9f-8e33dbc658ed",
+   "https://musicbrainz.org/artist/81b9963b-7ff7-47f7-9afb-fe454d8db43c"
+  ],
+  "reason": "MB 兩張皆掛比利時 Placebo（81b9963b，Marc Moulin 領軍的 70 年代爵士／放克團）；英國 Placebo（847e8284）的卡保留原名。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Placebo|1973",
+  "field": "artist",
+  "from": "Placebo",
+  "to": "Placebo (Belgium)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/6c919ec4-189a-4800-bd35-af4f998a6736",
+   "https://musicbrainz.org/artist/81b9963b-7ff7-47f7-9afb-fe454d8db43c"
+  ],
+  "reason": "MB 兩張皆掛比利時 Placebo（81b9963b，Marc Moulin 領軍的 70 年代爵士／放克團）；英國 Placebo（847e8284）的卡保留原名。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Caravan|คนกับควาย",
+  "field": "artist",
+  "from": "Caravan",
+  "to": "Caravan (Thailand)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/ec550864-ef68-4207-a807-e20c7e14cd2e",
+   "https://musicbrainz.org/artist/f77ee6f1-9b57-499e-a926-5decd2661f67"
+  ],
+  "reason": "MB 掛泰國民謠搖滾團 คาราวาน（f77ee6f1，1973 起）；英國坎特伯雷 Caravan（82dd3f5d）的卡保留原名。原名 คาราวาน 寫在 reason，卡名依慣例用英文。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Ghost|Opus Eponymous",
+  "field": "artist",
+  "from": "Ghost",
+  "to": "Ghost (Sweden)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/929528f5-dc81-4e1a-bfdd-aae2842c52d2",
+   "https://musicbrainz.org/artist/2bcf2e02-5bc3-4c76-bf76-41126cb11444"
+  ],
+  "reason": "MB 兩張皆掛瑞典 Ghost（2bcf2e02，Tobias Forge）；日本 Ghost（97ea6a8e，Batoh）的三張（Ghost 1990、Second Time Around、Lama Rabi Rabi）保留原名，不動。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Ghost|Meliora",
+  "field": "artist",
+  "from": "Ghost",
+  "to": "Ghost (Sweden)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/02be3272-739c-46a4-9668-1d7dab9cc17e",
+   "https://musicbrainz.org/artist/2bcf2e02-5bc3-4c76-bf76-41126cb11444"
+  ],
+  "reason": "MB 兩張皆掛瑞典 Ghost（2bcf2e02，Tobias Forge）；日本 Ghost（97ea6a8e，Batoh）的三張（Ghost 1990、Second Time Around、Lama Rabi Rabi）保留原名，不動。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Wings|Belenggu Irama",
+  "field": "artist",
+  "from": "Wings",
+  "to": "Wings (Malaysia)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/94613b3c-0fdf-40ca-9bca-f556d64f5fe5",
+   "https://musicbrainz.org/artist/212ce99e-bfdc-4bd2-a3d9-d44de2ec2679"
+  ],
+  "reason": "MB 掛馬來西亞搖滾團 Wings（212ce99e，1987）；Paul McCartney 的 Wings（Venus and Mars、Band on the Run 等）保留原名。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Air|Air Song",
+  "field": "artist",
+  "from": "Air",
+  "to": "Air (US jazz trio)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/592a7c73-1319-47e5-bfe4-c9b857225fb5",
+   "https://musicbrainz.org/artist/14b22b4b-06d5-4b82-8284-29d29b58945f"
+  ],
+  "reason": "MB 四張皆掛美國爵士三重奏 Air（14b22b4b，Henry Threadgill／Fred Hopkins／Steve McCall）；法國 Air（cb67438a）的卡保留原名。括號寫 US jazz trio 以別於另一個 US jazz rock band Air（ae0cf167）。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Air|Air Time",
+  "field": "artist",
+  "from": "Air",
+  "to": "Air (US jazz trio)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/e8b7dc42-3b53-4a06-b262-429e5081c309",
+   "https://musicbrainz.org/artist/14b22b4b-06d5-4b82-8284-29d29b58945f"
+  ],
+  "reason": "MB 四張皆掛美國爵士三重奏 Air（14b22b4b，Henry Threadgill／Fred Hopkins／Steve McCall）；法國 Air（cb67438a）的卡保留原名。括號寫 US jazz trio 以別於另一個 US jazz rock band Air（ae0cf167）。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Air|Air Lore",
+  "field": "artist",
+  "from": "Air",
+  "to": "Air (US jazz trio)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/154e6ea1-1769-3d53-a62e-3a4be8b172e3",
+   "https://musicbrainz.org/artist/14b22b4b-06d5-4b82-8284-29d29b58945f"
+  ],
+  "reason": "MB 四張皆掛美國爵士三重奏 Air（14b22b4b，Henry Threadgill／Fred Hopkins／Steve McCall）；法國 Air（cb67438a）的卡保留原名。括號寫 US jazz trio 以別於另一個 US jazz rock band Air（ae0cf167）。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Air|Air Mail",
+  "field": "artist",
+  "from": "Air",
+  "to": "Air (US jazz trio)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/f84b20bf-ddf4-43e8-8080-f9de57724e47",
+   "https://musicbrainz.org/artist/14b22b4b-06d5-4b82-8284-29d29b58945f"
+  ],
+  "reason": "MB 四張皆掛美國爵士三重奏 Air（14b22b4b，Henry Threadgill／Fred Hopkins／Steve McCall）；法國 Air（cb67438a）的卡保留原名。括號寫 US jazz trio 以別於另一個 US jazz rock band Air（ae0cf167）。"
+ },
+ {
+  "type": "split",
+  "cardRef": "John Williams|Rodrigo: Concierto de Aranjuez",
+  "field": "artist",
+  "from": "John Williams",
+  "to": "John Williams (guitarist)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/19742ad7-19a5-447b-90dd-c529af6a990c",
+   "https://musicbrainz.org/artist/8b8a38a9-a290-4560-84f6-3d4466e8d791"
+  ],
+  "reason": "MB 該曲目的 John Williams 是古典吉他手（8b8a38a9，1941 生），非電影配樂家 53b106e7；池內其餘 John Williams 卡皆為配樂家，保留原名。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Mother Earth|Living with the Animals",
+  "field": "artist",
+  "from": "Mother Earth",
+  "to": "Mother Earth (Tracy Nelson)",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/ff1cae09-070a-38fd-95c6-1f0f977e566d",
+   "https://musicbrainz.org/artist/7cf69eb5-1857-421d-9a1d-de85fdf732c0"
+  ],
+  "reason": "MB 掛美國藍調搖滾團 Mother Earth（7cf69eb5，1967–1977，Tracy Nelson 主唱）；池內另兩張（Stoned Woman 1992、The People Tree 1993）是英國酸爵士 Mother Earth，保留原名。"
+ },
+ {
+  "type": "split",
+  "cardRef": "Tom Misch|Happy Music",
+  "field": "artist",
+  "from": "Tom Misch",
+  "to": "Supershy",
+  "action": "change",
+  "evidence": [
+   "https://musicbrainz.org/release-group/d2b7f792-7f97-44db-97d2-f22a9876a332",
+   "https://musicbrainz.org/artist/2a93d137-2e87-45b8-bf07-2183d2ef1183"
+  ],
+  "reason": "《Happy Music》是 Tom Misch 化名 Supershy 的浩室／迪斯可專輯：MB 主署名 Supershy（2a93d137）並列 Tom Misch、Apple 專輯頁藝人為 Supershy；維基稱其為 Tom Misch 與化名 Supershy 的作品。依「掛唱片實際署名」慣例改掛 Supershy（同人，可逆）；建議曲風標籤由 jazz 改 electronic。"
+ },
+ {
+  "type": "desc",
+  "cardRef": "Tangerine Dream|Sorcerer",
+  "field": "desc",
+  "from": "用 Moog、ARP、Oberheim、PPG 合成器與吉他做出十二軌",
+  "to": "用 Moog、ARP、Oberheim、PPG 合成器與吉他做出十二軌",
+  "action": "keep",
+  "evidence": [
+   "https://en.wikipedia.org/wiki/Sorcerer_(soundtrack)",
+   "https://www.soundonsound.com/people/tangerine-dream-changing-use-technology-part-1-1967-1977",
+   "https://en.wikipedia.org/wiki/Palm_Products_GmbH"
+  ],
+  "reason": "簡介寫的是泛稱「PPG 合成器」，不是 PPG Wave：維基專輯條目列 Froese 用「PPG Synthesizer」（錄音 1976-04～10），Sound On Sound 記 1977 美國巡演 Froese 用「PPG synth」，PPG 1975 起就小量為 Tangerine Dream 做模組合成器；Wave（1981）才是年代不合者，原文未寫 Wave，不必改。若店主仍想更精確，可選改：find「PPG 合成器」replace「早期 PPG 合成器」（無需，兩源均未說明型號）。"
  }
 ]

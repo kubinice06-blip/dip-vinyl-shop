@@ -659,5 +659,229 @@
   "sources": [
    "https://en.wikipedia.org/wiki/Fully_Exposed"
   ]
+ },
+ {
+  "id": 119,
+  "artist": "Bombino",
+  "album": "Deran",
+  "action": "edit",
+  "find": "錄音地點是卡薩布蘭卡的 Studio HIBA",
+  "replace": "部分錄於卡薩布蘭卡的 Studio HIBA",
+  "newDesc": "",
+  "reason": "錄音分散在卡薩布蘭卡、波士頓與布魯塞爾多處，Studio HIBA 並非唯一地點。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Deran_(album)"
+  ]
+ },
+ {
+  "id": 120,
+  "artist": "Bukka White",
+  "album": "Big Daddy",
+  "action": "rewrite",
+  "find": "",
+  "replace": "",
+  "newDesc": "Bukka White 生前最後一張專輯，1974 年由 Biograph 發行，距他 1977 年辭世只剩三年。整張只有他一個人：一把 National 共鳴吉他、瓶頸滑音與粗啞的嗓子，十二首從〈Black Cat Bone Blues〉一路唱到收尾的〈Aberdeen Mississippi Blues〉，中間夾著〈Hot Springs Arkansas〉這類地名藍調。這張入圍了葛萊美最佳民族或傳統錄音獎，2004 年由 Shout! Factory 重新發行。",
+  "reason": "原文混入資料稀少的管線註記且與事實不符（本作有獨立條目、入圍葛萊美、2004 年重發），整段重寫。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Big_Daddy_(Bukka_White_album)",
+   "https://en.wikipedia.org/wiki/17th_Annual_Grammy_Awards"
+  ]
+ },
+ {
+  "id": 121,
+  "artist": "Luther Allison",
+  "album": "Luther's Blues",
+  "action": "edit",
+  "find": "Allison 1977 年後長住法國",
+  "replace": "Allison 1970 年代末起密集赴歐巡演、後來定居法國",
+  "newDesc": "",
+  "reason": "定居法國的起點各源不一（1977／1980 年代初／1984），改成不帶確切年份的寫法。",
+  "sources": [
+   "https://encyclopediaofarkansas.net/entries/luther-allison-2769/"
+  ]
+ },
+ {
+  "id": 122,
+  "artist": "Professor Longhair",
+  "album": "Rock 'n' Roll Gumbo",
+  "action": "edit",
+  "find": "1960 年代一度靠掃地維生",
+  "replace": "1960 年代靠賭牌與零工維生",
+  "newDesc": "",
+  "reason": "兩源（64 Parishes、Tulane）皆寫 1960 年代靠賭牌與零工，唱片行掃地是 1970 年被找到時的狀態。",
+  "sources": [
+   "https://64parishes.org/entry/professor-longhair"
+  ]
+ },
+ {
+  "id": 123,
+  "artist": "Sonny Boy Williamson II",
+  "album": "Down and Out Blues",
+  "action": "edit",
+  "find": "借用了已故 John Lee",
+  "replace": "借用了芝加哥口琴手 John Lee",
+  "newDesc": "",
+  "reason": "Miller 1941 年起用此名時 John Lee Williamson 仍在世（1948 年遇害），「已故」不成立。",
+  "sources": [
+   "https://www.britannica.com/biography/Sonny-Boy-Williamson"
+  ]
+ },
+ {
+  "id": 124,
+  "artist": "Champion Jack Dupree",
+  "album": "Natural & Soulful Blues",
+  "action": "edit",
+  "find": "在紐奧良孤兒院自學鋼琴",
+  "replace": "在紐奧良孤兒院開始學鋼琴",
+  "newDesc": "",
+  "reason": "一源寫自學、一源寫向神父與 barrelhouse 樂手學藝，刪去「自學」。",
+  "sources": [
+   "https://64parishes.org/entry/champion-jack-dupree"
+  ]
+ },
+ {
+  "id": 125,
+  "artist": "Robert Johnson",
+  "album": "The Complete Recordings",
+  "action": "edit",
+  "find": "四十一軌裡有十三個",
+  "replace": "四十一軌裡有十二個",
+  "newDesc": "",
+  "reason": "全集 41 軌、29 首曲子，另一次 take 應為 12 個。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Robert_Johnson:_The_Complete_Recordings"
+  ]
+ },
+ {
+  "id": 126,
+  "artist": "Songhoy Blues",
+  "album": "Résistance",
+  "action": "edit",
+  "find": "廷巴克圖出身的三人",
+  "replace": "來自北馬利的三名團員",
+  "newDesc": "",
+  "reason": "成員家鄉分屬 Diré、Gao、廷巴克圖等地，「廷巴克圖出身」過於肯定。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Songhoy_Blues"
+  ]
+ },
+ {
+  "id": 127,
+  "artist": "Blind Guardian",
+  "album": "Imaginations from the Other Side",
+  "action": "edit",
+  "find": "前兩張的 Kalle Trapp",
+  "replace": "前四張的 Kalle Trapp",
+  "newDesc": "",
+  "reason": "Kalle Trapp 製作了前四張錄音室專輯（1988–1992），不只兩張。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Somewhere_Far_Beyond",
+   "https://en.wikipedia.org/wiki/Tales_from_the_Twilight_World"
+  ]
+ },
+ {
+  "id": 128,
+  "artist": "Love",
+  "album": "Love",
+  "action": "edit",
+  "find": "——這家民謠大廠的第一張搖滾唱片",
+  "replace": "——當時這家廠牌仍以民謠為主力",
+  "newDesc": "",
+  "reason": "Butterfield Blues Band 1965 年已在 Elektra 出片，LOC 只稱 Love 為首個簽約的搖滾團，「第一張搖滾唱片」站不住，刪去序位。",
+  "sources": [
+   "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Love-Forever-Changes.pdf"
+  ]
+ },
+ {
+  "id": 129,
+  "artist": "Love",
+  "album": "Love",
+  "action": "edit",
+  "find": "十首，3 月由 Elektra",
+  "replace": "十首，同年春天由 Elektra",
+  "newDesc": "",
+  "reason": "發行月份兩源不一（3 月／4 月），改成涵蓋兩說的「同年春天」。",
+  "sources": [
+   "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Love-Forever-Changes.pdf"
+  ]
+ },
+ {
+  "id": 130,
+  "artist": "SBB",
+  "album": "Pamięć",
+  "action": "edit",
+  "find": "那段伴奏生涯到 1973 年底結束",
+  "replace": "那段伴奏生涯在 1973 年結束",
+  "newDesc": "",
+  "reason": "合作結束月份各源不一（8 月或僅記 1973 年），刪去「年底」。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/SBB_(band)"
+  ]
+ },
+ {
+  "id": 131,
+  "artist": "Warzone",
+  "album": "Don't Forget the Struggle, Don't Forget the Streets",
+  "action": "edit",
+  "find": "1987 年的這張 12 吋全長 25 分 32 秒，A 面從〈Intro Bust〉2:11 起，B 面以同名的〈Don't Forget the Struggle, Don't Forget the Streets〉2:35 開頭，收在〈Fighting for Our Country〉3:03——整張的曲長被壓在一個很窄的區間裡。1988 年的美國再壓曲目一軌未動，只是封底多掛了另一家廠牌的編號。",
+  "replace": "這張 12 吋全長約 25 分半，A 面從〈Intro Bust〉2:11 起，B 面以同名的〈Don't Forget the Struggle, Don't Forget the Streets〉2:35 開頭，收在〈Fighting for Our Country〉3:03——整張的曲長被壓在一個很窄的區間裡。首發由 Fist Records 推出，同年授權給 Caroline 發行，曲目一軌未動。",
+  "newDesc": "",
+  "reason": "首發年份與總長各源衝突（MusicBrainz 1987／條目 1988、25:32／25:38），刪去年份、總長改概數；廠牌先後改依條目的 Fist 首發、Caroline 授權。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Don%27t_Forget_the_Struggle,_Don%27t_Forget_the_Streets"
+  ]
+ },
+ {
+  "id": 132,
+  "artist": "ザ・スターリン",
+  "album": "trash",
+  "action": "edit",
+  "find": "A 面十首錄於 Mod Studio，B 面取自 1981 年 10 月 31 日法政大學與 11 月 7 日京都磔磔的兩場演出，日文維基記法政大學那場來了 800 人。碟由樂團自營的 Political Records 發行，遠藤ミチロウ（Michiro Endo）主唱，Tam 彈吉他。壓片數兩說並存：Discogs 記首刷 1000 張、二刷 2000 張，日文維基則記限量 2000 張即完售。",
+  "replace": "A 面收十首，B 面取自 1981 年 10 月 31 日法政大學與 11 月 7 日京都磔磔的兩場演出，法政大學那場來了 800 人。碟由樂團自營的 Political Records 發行，遠藤ミチロウ（Michiro Endo）主唱，Tam 彈吉他。壓片數說法不一：一說首刷 1000 張、二刷 2000 張，一說原訂 1000 張、因預購暴增改壓 2000 張即告售罄。",
+  "newDesc": "",
+  "reason": "錄音室名兩源拼法衝突（日文條目マッドスタジオ／他處 Mod-Studio），刪去；同時刪掉正文三處來源平台字樣，壓片數兩說保留。",
+  "sources": [
+   "https://ja.wikipedia.org/wiki/Trash_(%E3%82%B6%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%AA%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+  ]
+ },
+ {
+  "id": 133,
+  "artist": "不失者",
+  "album": "不失者 (Double Live)",
+  "action": "edit",
+  "find": "2026 年 3 月他獲頒威尼斯雙年展音樂部門的終身成就金獅獎",
+  "replace": "他獲選為 2026 年威尼斯雙年展音樂部門終身成就金獅獎得主",
+  "newDesc": "",
+  "reason": "金獅獎 2026 年 10 月 12 日才頒發，目前只是已宣布，宣布月份也未查到；改為「獲選為得主」。",
+  "sources": [
+   "https://www.labiennale.org/en/news/2026-lion-awards-music"
+  ]
+ },
+ {
+  "id": 134,
+  "artist": "不失者",
+  "album": "不失者 (Double Live)",
+  "action": "edit",
+  "find": "百餘種錄音",
+  "replace": "兩百餘張錄音",
+  "newDesc": "",
+  "reason": "威尼斯雙年展與 FCA 皆寫 50 年來錄音逾 200 張，「百餘種」已過時。",
+  "sources": [
+   "https://www.labiennale.org/en/news/2026-lion-awards-music",
+   "https://www.foundationforcontemporaryarts.org/recipients/keiji-haino/"
+  ]
+ },
+ {
+  "id": 135,
+  "artist": "夾子電動大樂隊",
+  "album": "夾子電動大樂隊",
+  "action": "edit",
+  "find": "是濁水溪公社前鼓手",
+  "replace": "參與過濁水溪公社",
+  "newDesc": "",
+  "reason": "專訪與人物條目只寫他參與過濁水溪公社與霹靂鳥，查無擔任鼓手的來源。",
+  "sources": [
+   "https://roxyrocker.com/2015/06/17/%E3%80%90%E6%90%96%E6%BB%BE%E5%AE%A2-%E5%B0%81%E9%9D%A2%E4%BA%BA%E7%89%A9%E3%80%91%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A-%E5%B0%8F%E6%87%89%EF%BC%88%E6%87%89/"
+  ]
  }
 ]
