@@ -21,6 +21,10 @@
 背景：店主要的是「這個人從哪裡來、音樂上做了什麼、為什麼重要」，不要履歷。**legacy 格最重要**：後輩點名受他影響、
 跨地域或社會現象、有出處的共識評價（維基首段 widely regarded as…、名人堂、國家級榮譽、權威票選、紀念規模）。只收有來源的共識。
 若這個人最有名的是一段人生故事（消失、轉行、早逝的經過、拒絕回歸、身後才被發現），把故事細節逐條收齊，每條兩源。
+「第一位／最早／唯一」類宣稱：兩源之外，還要想一下有沒有明顯反例；拿不準就放 notes 不放 facts。
+**獎項的主詞要寫對**：樂團得的獎不要寫成主唱得的，反之亦然。
+**facts 的 f 欄只放兩源都支持的內容**；單源細節一律放 notes 並寫明「單源」。
+日本、東亞人名照原文漢字收，QA 若把人名裡的「国」等字誤判成簡體，保留原名、在 notes 註明。
 
 事實庫：batches/artist/facts/{{批名}}-facts.json（檔案大，用 node 依 key 取單人，不要整檔讀）。
 讀法例：node -e "const a=require('./batches/artist/facts/{{批名}}-facts.json');const x=a.find(x=>x.key==='{{首位鍵}}');console.log(JSON.stringify({...x,published:x.published.map(p=>({album:p.album,desc:p.desc}))},null,1))"
