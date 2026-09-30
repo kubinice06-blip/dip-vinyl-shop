@@ -17,3 +17,4 @@
 - 寫作第 2 組（20 位）審畢，修 2 處：Pino Daniele「平民表決廣場」→「公民投票廣場」（Piazza del Plebiscito 通行譯名）；Randy Weston「巴薩諾瓦」統一寫 bossa nova。Mulatu Astatke「柏克利第一位非洲學生」兩源一致、為通行說法，照寫。Mahalia Jackson 272、Quincy Jones 272 照准。
 - ar-b-001 上架：40 位（爵士），審稿修 5 處。
 - 寫作第 1 組（20 位）審畢，修 2 處：佐藤允彦「主幹講師」（日文職稱）→「主任講師」；Alfa Mist「hip-hop」統一寫「嘻哈」（大類曲風中文）。Tina Brooks 275（人生故事）照准。Sonny Criss「被低估」來源弱，已用「被稱為」，保留。
+- 補洞第 3 組：Cedar Walton 失敗請求 6 次，照實記，放行。Dollar Brand（Abdullah Ibrahim）過世主線以 WebSearch 核實：2026 年 6 月 15 日在德國過世，享年 91 歲（NPR、News24、IOL），寫作層可寫到日期。交本機待核：David Murray《Flowers for Albert》上線簡介稱「首張唱片」，1976 年另有 Adelphi《Low Class Conspiracy》（代理未核實）。
