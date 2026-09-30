@@ -1,0 +1,133 @@
+[
+ {
+  "id": 1,
+  "artist": "Jimmy Smith",
+  "album": "I'm Movin' On",
+  "action": "edit",
+  "find": "他 1963 年就轉投 Verve",
+  "replace": "他 1962 年就已轉投 Verve",
+  "newDesc": "",
+  "reason": "Smith 1962 年簽 Verve（首張 Verve《Bashin'》1962），與同池《Bashin'》簡介一致；1963 年初的 Blue Note 場次是舊約收尾。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Jimmy_Smith_(musician)"
+  ]
+ },
+ {
+  "id": 2,
+  "artist": "Donald Byrd",
+  "album": "Chant",
+  "action": "edit",
+  "find": "鋼琴椅上坐著二十歲的 Herbie Hancock",
+  "replace": "鋼琴椅上坐著二十一歲的 Herbie Hancock",
+  "newDesc": "",
+  "reason": "Hancock 1940 年 4 月 12 日生，1961 年 4 月 17 日錄音時已滿 21 歲。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Herbie_Hancock"
+  ]
+ },
+ {
+  "id": 3,
+  "artist": "Grant Green",
+  "album": "Here 'Tis",
+  "action": "need-local",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "事實庫無全文。建議把「東聖路易」改成「St. Louis（聖路易）」，並把「拉到紐約的正是這張碟的領班」改成「1959 年在 St. Louis 發掘他、引他到紐約的正是這張碟的領班」之類，避免讀成這張碟促成他北上。",
+  "sources": [
+   "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/grant-green"
+  ]
+ },
+ {
+  "id": 4,
+  "artist": "Thelonious Monk",
+  "album": "Genius of Modern Music, Volume 2",
+  "action": "edit",
+  "find": "〈Humph〉出自他生涯第一場錄音",
+  "replace": "〈Humph〉出自他第一次以領班身分的錄音",
+  "newDesc": "",
+  "reason": "Monk 1944 年已隨 Coleman Hawkins 錄音；1947 年 10 月 15 日是他首次以領班身分為 Blue Note 錄音。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Thelonious_Monk"
+  ]
+ },
+ {
+  "id": 5,
+  "artist": "Herbie Hancock",
+  "album": "Man-Child",
+  "action": "edit",
+  "find": "，也是與 Headhunters 班底合作的最後一張錄音室專輯",
+  "replace": "，仍延續與 Headhunters 班底的合作",
+  "newDesc": "",
+  "reason": "「最後一張」無據，且下一張《Secrets》仍有 Paul Jackson、Bennie Maupin 等班底；改成不帶序數的保守寫法。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Head_Hunters_(album)"
+  ]
+ },
+ {
+  "id": 6,
+  "artist": "Sonny Rollins",
+  "album": "East Broadway Run Down",
+  "action": "edit",
+  "find": "此後他退隱六年",
+  "replace": "此後他中斷錄音多年",
+  "newDesc": "",
+  "reason": "Rollins 第二次離開舞台是 1969 至 1971 年，並非六年；1966 年後到 1972 年才再錄領銜專輯，改成不帶數字的說法。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sonny_Rollins"
+  ]
+ },
+ {
+  "id": 7,
+  "artist": "Andrew Hill",
+  "album": "Smoke Stack",
+  "action": "edit",
+  "find": "發行的第二張領導作",
+  "replace": "發行的領銜作，是他在該廠牌錄下的第二場",
+  "newDesc": "",
+  "reason": "Hill 1956 年已有領銜錄音，且發行序晚於《Black Fire》等；《Smoke Stack》是他 Blue Note 第二場領銜錄音（1963 年 12 月，前一場為 11 月的《Black Fire》）。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Andrew_Hill_(jazz_musician)"
+  ]
+ },
+ {
+  "id": 8,
+  "artist": "Horace Parlan",
+  "album": "Us Three",
+  "action": "edit",
+  "find": "出生同年罹患小兒麻痺",
+  "replace": "幼年罹患小兒麻痺",
+  "newDesc": "",
+  "reason": "得病年紀三源不一（出生那年／嬰兒時期／五歲），改成三源皆相容的「幼年」。",
+  "sources": [
+   "https://www.bangordailynews.com/2017/02/26/obituaries/horace-parlan-jazz-pianist-who-overcame-disability-dies-at-86/"
+  ]
+ },
+ {
+  "id": 9,
+  "artist": "Archie Shepp",
+  "album": "The Magic of Ju-Ju",
+  "action": "edit",
+  "find": "Impulse! 同年發行四軌",
+  "replace": "Impulse! 隔年 5 月發行四軌",
+  "newDesc": "",
+  "reason": "錄音 1967 年 4 月 26 日，Impulse! 1968 年 5 月才發行（維基引 1968 年 6 月 1 日《Billboard》，Discogs 首版亦列 1968）。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/The_Magic_of_Ju-Ju",
+   "https://www.discogs.com/master/128821-Archie-Shepp-The-Magic-Of-Ju-Ju"
+  ]
+ },
+ {
+  "id": 10,
+  "artist": "Bud Powell",
+  "album": "The Amazing Bud Powell, Volume One",
+  "action": "edit",
+  "find": "才十九歲的 Sonny Rollins",
+  "replace": "才十八歲的 Sonny Rollins",
+  "newDesc": "",
+  "reason": "Rollins 1930 年 9 月 7 日生，1949 年 8 月 8 日錄音時 18 歲。",
+  "sources": [
+   "https://www.britannica.com/biography/Sonny-Rollins"
+  ]
+ }
+]

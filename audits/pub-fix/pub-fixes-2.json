@@ -131,5 +131,136 @@
   "sources": [
    "https://en.wikipedia.org/wiki/A_Guy_Called_Gerald"
   ]
+ },
+ {
+  "id": 79,
+  "artist": "Burial",
+  "album": "South London Boroughs",
+  "action": "edit",
+  "find": "英文維基記他 2005 年成為 Kode9 的 Hyperdub 簽下的第一位藝人，這張 EP 收的是他先前數年陸續錄下的曲目。那年 5 月 16 日的英國盤編號 HDB001、12 吋，四軌，曲長 4:18 到 5:05，開場的是同名曲。同一條目寫他聽",
+  "replace": "他 2005 年簽入 Kode9 主理的 Hyperdub，這張 EP 收的是他先前數年陸續錄下的曲目。那年 5 月 16 日的英國盤編號 HDB001、12 吋，四軌，曲長 4:18 到 5:05，開場的是同名曲。他聽",
+  "newDesc": "",
+  "reason": "HDB001 經廠牌官網與 Discogs 確認無誤（〈Sine of the Dub〉不在 HDB 編號序列）；「第一位簽下的藝人」僅單源，改成中性的簽入說法，並刪去正文兩處來源平台字樣。",
+  "sources": [
+   "https://hyperdub.net/products/burial-south-london-boroughs-hdb001",
+   "https://www.discogs.com/release/443267-Burial-South-London-Boroughs"
+  ]
+ },
+ {
+  "id": 80,
+  "artist": "Coldcut",
+  "album": "Let Us Play",
+  "action": "edit",
+  "find": "也是他們首度在自營的 Ninja Tune 發片",
+  "replace": "也是他們在自營的 Ninja Tune 發行的第一張專輯",
+  "newDesc": "",
+  "reason": "他們在 Ninja Tune 的首發是 1997 年 2 月的單曲，本作是首張專輯；改為「第一張專輯」即無誤。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Coldcut"
+  ]
+ },
+ {
+  "id": 81,
+  "artist": "Enya",
+  "album": "The Celts",
+  "action": "edit",
+  "find": "英文維基記這張收的是 BBC 同名紀錄片系列的配樂選曲——1985 年 Tony McAuley 邀她寫一首，導演 David Richardson 聽了改為委託整套。1986 年的英國盤",
+  "replace": "這張收的是 BBC 同名紀錄片系列的配樂選曲——1985 年 Tony McAuley 邀她寫一首，導演 David Richardson 聽了改為委託整套。1987 年的英國盤",
+  "newDesc": "",
+  "reason": "BBC Records REB 605 為 1987 年發行（Discogs、專輯條目一致），1986 是配樂寫作與播出年；另刪正文來源平台字樣。",
+  "sources": [
+   "https://www.discogs.com/release/753825-Enya-Enya",
+   "https://en.wikipedia.org/wiki/Enya_(album)"
+  ]
+ },
+ {
+  "id": 82,
+  "artist": "Enya",
+  "album": "Watermark",
+  "action": "edit",
+  "find": "全球估計售出八百萬張",
+  "replace": "全球估計售出逾八百萬張",
+  "newDesc": "",
+  "reason": "銷量各家估計不一（RTÉ 2025 年寫約 1000 萬張），加「逾」讓原數字成為下限，不另寫新數字。",
+  "sources": [
+   "https://about.rte.ie/2025/02/20/the-rte-choice-music-prize-classic-irish-album-2025-is/"
+  ]
+ },
+ {
+  "id": 83,
+  "artist": "Nino Rota",
+  "album": "Casanova",
+  "action": "need-local",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "事實庫無上線全文。建議把「生前最後一部 Fellini 長片」改成不帶序位的說法（例：「與 Fellini 晚期的合作」），或直接刪去；兩人最後一次合作是 1978 年的《Prova d'orchestra》。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Orchestra_Rehearsal"
+  ]
+ },
+ {
+  "id": 84,
+  "artist": "Benny Goodman",
+  "album": "The Complete RCA Victor Small Group Recordings",
+  "action": "edit",
+  "find": "被視為美國第一個在售票場合公開演出的種族混合編制",
+  "replace": "在種族隔離仍是常態的年代公開同台演出",
+  "newDesc": "",
+  "reason": "「第一個」只有單源，且更早已有種族混合錄音與班底；改成不帶序數、Britannica「種族混合樂團先驅」可支持的說法。",
+  "sources": [
+   "https://www.britannica.com/biography/Benny-Goodman"
+  ]
+ },
+ {
+  "id": 85,
+  "artist": "Jimmy Witherspoon",
+  "album": "At the Monterey Jazz Festival",
+  "action": "edit",
+  "find": "1945 年隨 Jay McShann 樂團出道",
+  "replace": "1945 年起隨 Jay McShann 樂團錄音",
+  "newDesc": "",
+  "reason": "他 1944 年已入團、更早已在加爾各答登台，1945 年是首次錄音；改「出道」為「錄音」，年份即與來源相符。",
+  "sources": [
+   "https://encyclopediaofarkansas.net/entries/jimmy-spoon-witherspoon-4834/"
+  ]
+ },
+ {
+  "id": 86,
+  "artist": "Julie London",
+  "album": "About the Blues",
+  "action": "edit",
+  "find": "收錄丈夫 Bobby Troup 所寫的兩首歌",
+  "replace": "收錄後來成為她丈夫的 Bobby Troup 所寫的兩首歌",
+  "newDesc": "",
+  "reason": "專輯 1957 年發行，兩人 1959 年才結婚（兩源一致），當時 Troup 還不是丈夫。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Julie_London"
+  ]
+ },
+ {
+  "id": 87,
+  "artist": "Pino Daniele",
+  "album": "Nero a metà",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "Pino Daniele 官網明記標題受 1970 年代小說《Nero di Puglia》啟發、並連到 James Senese 的身世，原句有可靠出處；義大利文條目未提不構成反證。",
+  "sources": [
+   "https://www.pinodaniele.com/music/nero-a-meta-1980/",
+   "https://it.wikipedia.org/wiki/Nero_a_met%C3%A0"
+  ]
+ },
+ {
+  "id": 88,
+  "artist": "Pino Daniele",
+  "album": "Pino Daniele",
+  "action": "edit",
+  "find": "那張當年只賣出約 6000 張",
+  "replace": "那張當年只賣出數千張",
+  "newDesc": "",
+  "reason": "查到的來源一寫 6000、一寫 3000，無法定值，改為不帶具體數字的「數千張」。",
+  "sources": []
  }
 ]
