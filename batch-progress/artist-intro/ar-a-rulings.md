@@ -286,3 +286,7 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 寫作第 1 組（20 位）審畢，0 處。Pan Sonic「被視為電子樂的前衛指標」由 NPR、Fact 兩家訃聞各自措辭支撐，視為共識保留。
 - 補洞第 3 組：Jan Jelinek 德文維基寫 2012 年得 Karl-Sczuka 獎，nmz 證實為新人獎（Förderpreis）→ facts 照 nmz。Gas 卡池 Zauberberg／Königsforst 皆記 1998，來源為 1997／1999，交本機核對。Moroder〈I Feel Love〉「全電子」有反例，不寫。
 - 補洞第 4 組：pubIssues 2 條（The Orb《Orblivion》「團史最高名次」易誤讀、A Guy Called Gerald《28 Gun Bad Boy》「史上第一張 jungle 專輯」無兩源）。Gerald 卡池年份 1993 vs 維基 1992，交本機。
+
+### ar-a-017
+
+- 補洞第 1 組：pubIssues 2 條（Burial《South London Boroughs》「Hyperdub 第一位簽下的藝人／HDB001」與維基 Hyperdub 條目矛盾；Coldcut《Let Us Play》「首度在 Ninja Tune 發片」視指專輯或單曲而定）。Daft Punk 解散不寫原因。
