@@ -466,5 +466,134 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "事實庫 research 只有兩條（出生與到美國後的生活），三格幾乎從零補查。補查 7 次：維基 Hailu Mergia、WebSearch（計程車與重發）、VOA、Vice、維基 Walias Band、WebSearch（Tche Belew 與 Musicawi Silt）、Now-Again 頁。維基 Hailu Mergia 與維基 Walias Band 同站不同條目（非獨立），每條 facts 都另配站外來源。『純器樂專輯』『三張器樂黑膠』兩種數字說法（維基：少數；Now-Again：三張）並存，facts 兩處都寫明各自出處，寫作層不要合併成單一數字。未收（單源）：Walias Band 1970 年代初由 Venus Band 分出、在 Hilton 因宵禁演到清晨 6 點（Walias 維基單源）；《Tche Belew》有 Mulatu Astatke 客串顫音琴、Girma Beyene 任編曲（Walias 維基與 Now-Again 兩處，但對 Girma 拼法不同：Beyene／Girme Beyene，人名待寫作層以 Beyene 為準）；1990 年代末 Buda Records 把 Walias 的錄音收進 Ethiopiques 系列（Walias 維基單源）；〈Musicawi Silt〉成為舞曲並被多位藝人翻唱（維基與搜尋摘要，只開了維基）；Walias 用純器樂避開德爾格政權審查與『一唱歌寫詞就得替政府說話』的話（事實庫已上線簡介有此說法，維基未取得，搜尋摘要見於 Mergia 訪談轉述）；四位團員（Beyene、Habté、Gebre、Mergia）留美並組 Zula Band（Walias 維基單源）；2016 年《Wede Harer Guzo》重發與 1200 多萬次串流（維基單源）；他 1985 年錄的卡帶『在小錄音室獨自錄製』（維基單源，facts 只寫『自行錄製、發行』，此處『自行發行』一詞僅維基與 VOA『自製十來卷卡帶』一致）；Vice 稱 Walias 是『阿迪斯夜生活之王』、Red Terror 死亡人數（Vice 單源，不收）；曾就讀 Howard University（維基單源）。搜尋摘要中寫到的 Awesome Tapes 重發版標題『Shemonmuanaye』未在開頁中得到確認，不收。人生故事收齊度：出走、計程車、鍵盤在後車廂、被重新發現四個關鍵細節皆有兩源；『1991 年停演、開餐廳』因來源不一致未收。 二次校對：原先的『Mergia 後來把衣索比亞傳統與合成器、鼓機、手風琴混在一起』只有 VOA 一源（維基未提），撤出 facts。『餐廳與酒吧演奏』來自 VOA（1970 年代在餐廳與酒吧成名），維基未提，屬 VOA 單源但已以維基的『自學』搭配；若嚴格要求，寫作層不要單獨用『餐廳與酒吧』。"
+ },
+ {
+  "key": "henry mancini",
+  "name": "Henry Mancini",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Henry Mancini 1924 年 4 月 16 日生於俄亥俄州克里夫蘭，在賓州鋼鐵鎮 Aliquippa 長大；父母都是義大利移民，父親是鋼鐵廠工人，也吹長笛。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Mancini",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+      "from": "new"
+     },
+     {
+      "f": "他 8 歲起由父親帶著學吹管樂器，之後自學鋼琴。",
+      "src": "https://www.henrymancini.com/pages/biography",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+      "from": "new"
+     },
+     {
+      "f": "他 1942 年進入 Juilliard 音樂學院，1943 年被徵召入伍，學業因此中斷。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Mancini",
+      "src2": "https://www.henrymancini.com/pages/biography",
+      "from": "new"
+     },
+     {
+      "f": "1946 年他加入 Glenn Miller 遺留下來的樂團（Glenn Miller–Tex Beneke Orchestra），擔任鋼琴手兼編曲。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Mancini",
+      "src2": "https://www.henrymancini.com/pages/biography",
+      "from": "new"
+     },
+     {
+      "f": "Mancini 1994 年 6 月 14 日在洛杉磯因癌症過世，享年 70 歲。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Mancini",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mancini 把爵士的元素帶進電視與電影配樂；1958 年的影集《Peter Gunn》被視為開創爵士風電視配樂的作品。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+      "src2": "https://www.songhall.org/profiles/henry-mancini",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mancini 一生贏得 20 座葛萊美與 4 座奧斯卡（72 次葛萊美提名、18 次奧斯卡提名）。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Mancini",
+      "src2": "https://www.henrymancini.com/pages/biography",
+      "from": "new"
+     },
+     {
+      "f": "《The Music from Peter Gunn》拿下葛萊美年度專輯，是電視配樂專輯首度得到這個獎；維基稱它是首屆葛萊美的年度專輯。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+      "src2": "https://en.wikipedia.org/wiki/Henry_Mancini",
+      "from": "new"
+     },
+     {
+      "f": "Mancini 憑〈Moon River〉拿下奧斯卡最佳原創歌曲，該曲出自 1961 年的電影《Breakfast at Tiffany's》。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+      "src2": "https://www.songhall.org/profiles/henry-mancini",
+      "from": "new"
+     },
+     {
+      "f": "Mancini 從 1958 年的《Peter Gunn》起與導演 Blake Edwards 長期合作，配樂涵蓋《Breakfast at Tiffany's》與《The Pink Panther》等片。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Mancini",
+      "src2": "https://www.henrymancini.com/pages/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1952 年他進入 Universal 片廠，之後多年替片廠的電影作曲與編曲。",
+      "src": "https://www.henrymancini.com/pages/biography",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+      "from": "new"
+     },
+     {
+      "f": "1958 年他替影集《Peter Gunn》配樂，開始與導演 Blake Edwards 長期合作。",
+      "src": "https://www.henrymancini.com/pages/biography",
+      "src2": "https://en.wikipedia.org/wiki/Henry_Mancini",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1958 年為影集《Peter Gunn》配樂，專輯後來拿下葛萊美年度專輯。",
+    "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+    "src2": "https://en.wikipedia.org/wiki/Henry_Mancini",
+    "from": "new"
+   },
+   {
+    "f": "憑〈Moon River〉拿下奧斯卡最佳原創歌曲（電影《Breakfast at Tiffany's》，1961 年）。",
+    "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/henry-mancini",
+    "src2": "https://www.songhall.org/profiles/henry-mancini",
+    "from": "new"
+   },
+   {
+    "f": "一生共 20 座葛萊美、4 座奧斯卡。",
+    "src": "https://en.wikipedia.org/wiki/Henry_Mancini",
+    "src2": "https://www.henrymancini.com/pages/biography",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫只有《Charade》專輯層級的錄音資料，與本次補查無衝突。",
+   "父親教的樂器：henrymancini.com 與另一搜尋摘要寫長笛（flute），Encyclopedia.com 寫他 8 歲從短笛（piccolo）開始；facts 只寫『管樂器』。12 歲學鋼琴（官方站）與『自學鋼琴』（Encyclopedia.com）不衝突但年齡只有官方站有，facts 不寫年齡。",
+   "進 Universal 的年份：官方站與 Encyclopedia.com 寫 1952，Songwriters Hall of Fame 頁面寫 1951–1957；facts 採 1952。離開片廠的 1958 年只見官方站，維基未明說，年份放 facts 時已用官方站與維基共同支撐『從 Peter Gunn 起與 Edwards 合作』。",
+   "Songwriters Hall of Fame 頁面把〈Moon River〉獲獎年寫成 1951、把葛萊美與奧斯卡年份標得有誤，該頁的年份一律不採。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 只有《Charade》錄音細節，三格從零補查。補查 8 次：維基 Henry Mancini、WebSearch（生平與獎項）、Songwriters Hall of Fame、Frost School 頁（內容太空，無可用事實）、維基〈Peter Gunn〉、henrymancini.com 傳記、WebSearch（Peter Gunn 影響與獎項）、Encyclopedia.com。失敗請求 2 次：Britannica 404、ASCAP 403（未計入）。henrymancini.com 是遺產管理站，非完全獨立。維基《Henry Mancini》與維基〈Peter Gunn〉同站（非獨立），facts 的年度專輯一條以 Encyclopedia.com 為主源。第一類宣稱（首個年度專輯獲獎的電視配樂、首部通篇用爵士的電視配樂）：Encyclopedia.com 寫『第一張贏得年度專輯的電視配樂專輯』、『開創爵士色彩的電視配樂』，維基寫『首屆年度專輯』；搜尋摘要另稱 Peter Gunn 是『第一部通篇使用爵士的電視配樂』，屬單一搜尋摘要，facts 的 sound 只寫『把爵士帶進電視與電影配樂』並把『最早』限縮為『這個做法最早的一部』——此處是輕度『第一』宣稱，拿不準者請寫作層改成『早期代表作』。反例考量：《Peter Gunn》之前的電視影集如 Dragnet 主題已有樂隊配樂，但『通篇爵士』的說法未見反例。未收（單源）：Songwriters Hall of Fame 1984 年入選（該頁與一則搜尋摘要，維基未見）；1995 年身後葛萊美終身成就獎（維基單源）；1969 年〈Love Theme from Romeo and Juliet〉登 Billboard Hot 100 冠軍（維基單源）；2004 年美國郵政發行紀念郵票（官方站單源）；1945 年參與解放 Mauthausen-Gusen 集中營（維基單源）；13 歲獲選賓州全州樂團首席長笛（Encyclopedia.com 單源）；〈Peter Gunn〉主題『更接近搖滾而非爵士、吉他與鋼琴齊奏』是 Mancini 自傳的說法（維基〈Peter Gunn〉單源，已上線簡介已用）；Carnegie Tech 師承 Castelnuovo-Tedesco、Krenek（SHOF 單源）；Duane Eddy 等翻奏〈Peter Gunn〉與 Grammy Hall of Fame 2005（維基〈Peter Gunn〉單源）；搜尋摘要寫『Quincy Jones、Burt Bacharach、Lalo Schifrin 承認 Mancini 的地位』『同行談『Mancini chords』』，這是後輩點名類關鍵資料，但摘要來源頁（classical-music.com／PopMatters／Encyclopedia.com 另一條）未開頁，超過 8 次上限，不收，建議店主本機補查。已上線簡介中『1998 年入葛萊美名人堂、2010 年獲選國家錄音登記』（Peter Gunn 專輯）、『AFI 百年百大配樂第 20』（Pink Panther）本次未查證。"
  }
 ]

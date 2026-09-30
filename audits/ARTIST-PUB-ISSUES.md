@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 82 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 84 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -86,3 +86,5 @@
 | ar-a-017 | Coldcut | Let Us Play | 上線簡介寫「也是他們首度在自營的 Ninja Tune 發片」 | 維基 Coldcut 條目寫他們在 Ninja Tune 的第一支正式發行是 1997 年 2 月的單曲〈Atomic Moog 2000 / Boot the System〉，專輯《Let Us Play!》是同年 9 月；若簡介說的是『首度發專輯』則無誤，若說『首度發片』則有落差。單源（維基），建議店主確認後決定是否改成『首張在 Ninja Tune 發行的專輯』。 | https://en.wikipedia.org/wiki/Coldcut |
 | ar-a-017 | Enya | The Celts | 1986 年的英國盤由 BBC Records 發行、編號 REB 605 | 英文維基〈Enya (album)〉寫該專輯 1987 年 3 月發行（1992 年再版才改名 The Celts）；1986 年是紀錄片配樂寫作與播出年，盤的年份與上線簡介不一致，待店主用 MusicBrainz 核對。 | https://en.wikipedia.org/wiki/Enya_(album) |
 | ar-a-017 | Enya | Watermark | 全球估計售出八百萬張 | 2025 年 RTÉ 公告寫該專輯全球估計約 1000 萬張；銷量本來是估計值、各家不同，僅供參考，不一定要改。 | https://about.rte.ie/2025/02/20/the-rte-choice-music-prize-classic-irish-album-2025-is/ |
+| ar-a-020 | Nino Rota | Casanova | 生前最後一部 Fellini 長片 | Rota 生前還為 Fellini 1978 年的《Prova d'orchestra》（Orchestra Rehearsal）配樂，那才是兩人最後一次合作；《Casanova》（1976）不是最後一部。主線依補洞稿 notes 與既有影史常識列入，請本機核對後改寫。 | https://en.wikipedia.org/wiki/Orchestra_Rehearsal |
+| ar-b-001 | Benny Goodman | The Complete RCA Victor Small Group Recordings | 被視為美國第一個在售票場合公開演出的種族混合編制 | 『第一個』宣稱只有維基單源，且較早已有黑白混合的錄音與現場班底（如 1920 年代 Jelly Roll Morton 與 New Orleans Rhythm Kings 的混合錄音），建議改寫成『較早的一支種族混合小編制之一』或刪『第一』；本層 Britannica 只寫『Goodman 是種族混合樂團的先驅』，未提第一。 | https://www.britannica.com/biography/Benny-Goodman |
