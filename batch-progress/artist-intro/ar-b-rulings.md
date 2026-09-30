@@ -26,3 +26,4 @@
 - 寫作第 2 組（20 位）審畢，修 4 處：Chico Buarque〈A Banda〉音樂節主辦是 TV Record 電視台；David Murray 寫 WSQ「1977 年」與本批 WSQ 成軍年裁定衝突 →「1970 年代後期」；Diana Krall《Live in Paris》葛萊美屬 2003 年典禮，拿掉「2002 年」、Juno 補年份；Esperanza Spalding 在世且 2022 年又得同獎，「兩度」→「2013 與 2020 年也都拿下」。Dollar Brand 273（反隔離、曼德拉、改名、過世）照准。
 - ar-b-002 上架：40 位（爵士），審稿修 6 處。
 - 補洞第 3 組：Machito 出生年三說不寫；Kenny Wheeler 加拿大勳章採官方授勳稿年份；Mahavishnu《Inner Worlds》為第三期陣容，不套原班故事。Laufey 在世，葛萊美只能寫固定年份。
+- 補洞第 2 組：Jimmy Giuffre 失敗請求 9 次、Kamasi Washington 5 次，超限後未收新事實，照實記，放行。Jim Hall「第一位獲 NEA 的現代爵士吉他手」未查反例，不寫序數。

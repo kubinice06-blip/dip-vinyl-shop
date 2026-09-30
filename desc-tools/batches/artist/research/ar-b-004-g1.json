@@ -1,0 +1,86 @@
+[
+  {
+    "key": "piero umiliani",
+    "name": "Piero Umiliani",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Piero Umiliani 1926 年 7 月 17 日生於義大利佛羅倫斯，2001 年 2 月 14 日在羅馬過世，享年 74 歲。",
+            "src": "https://en.wikipedia.org/wiki/Piero_Umiliani",
+            "src2": "https://it.wikipedia.org/wiki/Piero_Umiliani",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的作品從 funk 與爵士一路寫到純實驗，常把電影與電視的委託當成實驗場地；有人形容他的專長是「基本上全部的類型」。",
+            "src": "https://www.soundohm.com/article/piero-umiliani-library-mu",
+            "src2": "https://insheepsclothinghifi.com/the-incredibly-strange-electronic-music-of-piero-umiliani/",
+            "from": "new"
+          },
+          {
+            "f": "1973 年的雙 LP《To-Day’s Sound》由羅馬爵士圈的樂手組成 Sound Workshoppers 演奏，Umiliani 自己彈 Moog、Rhodes 與馬林巴。",
+            "src": "https://www.soundohm.com/product/today-s-sound-umiliani",
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他為 1968 年的紀錄片《Svezia, inferno e paradiso》寫的〈Mah Nà Mah Nà〉，1969 年 11 月先後上了《Sesame Street》與《The Ed Sullivan Show》，1976 年成為《The Muppet Show》首播的開場橋段；1977 年 5 月在英國單曲榜最高第 8 名，1969 年在 Billboard Hot 100 最高第 55 名。",
+            "src": "https://en.wikipedia.org/wiki/Mah_N%C3%A0_Mah_N%C3%A0",
+            "src2": "https://en.wikipedia.org/wiki/Piero_Umiliani",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Umiliani 1964 年在羅馬自己創辦配樂與圖書館音樂廠牌 Omicron。",
+            "src": "https://www.discogs.com/label/79332-Omicron",
+            "from": "bank"
+          },
+          {
+            "f": "他從 1971 年起大量錄製 library music（Synthi Time 是其中一張），1971 至 1983 年是他產量與變化最大的階段。",
+            "src": "https://en.wikipedia.org/wiki/Piero_Umiliani",
+            "src2": "https://www.soundohm.com/article/piero-umiliani-library-mu",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "〈Mah Nà Mah Nà〉1977 年 5 月在英國單曲榜最高第 8 名。",
+        "src": "https://en.wikipedia.org/wiki/Mah_N%C3%A0_Mah_N%C3%A0",
+        "src2": "https://en.wikipedia.org/wiki/Piero_Umiliani",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "上線簡介（Synthi Time）寫〈Mah Nà Mah Nà〉『1977 年進《The Muppet Show》』；英文維基 Mah Nà Mah Nà 條目寫該曲是《The Muppet Show》1976 年首播的開場橋段、英國榜 1977 年（Muppet Show 走紅後）第 8 名；本層 facts 採維基版本並分開寫。",
+      "電影《I soliti ignoti》年份：義大利維基寫 1958 年受 Monicelli 委託，搜尋摘要寫 1959 年（可能指上映或曲目發行）；兩者不一致，facts 不收年份與『首度把爵士用在義大利喜劇』的說法。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Synthi Time",
+        "claim": "他的〈Mah Nà Mah Nà〉1969 年上《Sesame Street》、1977 年進《The Muppet Show》",
+        "problem": "英文維基寫該曲是《The Muppet Show》1976 年首播的開場橋段，1977 年是英國單曲榜第 8 名的年份；『1977 年進 Muppet Show』易被讀成 1977 年才上該節目。建議改成『1976 年成為 The Muppet Show 開場橋段、1977 年英國榜第 8 名』或直接刪。",
+        "src": "https://en.wikipedia.org/wiki/Mah_N%C3%A0_Mah_N%C3%A0"
+      }
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "搜尋 8 次（WebFetch 6：en 維基 Piero Umiliani、it 維基、The Vinyl Factory、In Sheeps Clothing、Soundohm 文章、en 維基 Mah Nà Mah Nà；WebSearch 2）；失敗 2 次（Retrofuturista 回空、AllMusic 403）。名冊 3 張卡（Continente Nero、To-Day's Sound、Synthi Time）都是同一位義大利作曲家，無同名混卡。origin 只有生卒與出生地兩源；佛羅倫斯音樂學院 1952 年畢業（對位與賦格文憑）、1942 年在地方報紙投書為爵士辯護、戰後組 Quintetto Stella 在美軍常去的場子彈琴——皆只見義大利維基，單源。以下也是單源（義大利維基）不收：1958 年 Monicelli 邀約《I soliti ignoti』15 天完成、1968 年設立 Sound Work-Shop 錄音室、超過 150 部配樂、1990 年代末 lounge 風潮把他的音樂重新推上、2021 年 9 月 15 日逝世 20 週年在佛羅倫斯故居掛紀念牌、2022 年 Torino 影展紀錄片《Il tocco di Piero》（後兩者搜尋摘要另見 Lungarno、MYmovies 等，未開頁）。搜尋摘要說 AllMusic 與 Soundohm 稱他『是義大利最早試用 Moog 等電子鍵盤的人之一』『1990 年代 lounge 復興中被重新發現』：只看到摘要、未開頁，不收。The Vinyl Factory 那頁只說他與 Morricone、Ortolani 同輩、是 1960–70 年代歐洲爵士風電影聲響的塑造者之一，單源。In Sheeps Clothing 文中稱 Moog、ARP、VCS3 出現在他的 library 錄音，並列 Four Flies、Schema、Dagored 三廠牌重發，單源。Benny Hill Show 1971 年起用〈Mah Nà Mah Nà〉配追逐橋段：只見英文維基 Mah Nà 條目，單源。Soundohm 文章與 In Sheeps Clothing 的敘述部分出自同一份廠牌文案，非獨立（Soundohm 與 In Sheeps Clothing 的形容近乎同稿）；sound 格第一條因此在 notes 註明兩源非嚴格獨立。en 維基兩頁同站不同條目，非獨立，但 it 維基與 en 維基兩條互相獨立撰寫，生卒年與出生地兩源成立；legacy 那條是 en 維基兩條目（Mah Nà Mah Nà 與 Piero Umiliani），非獨立，年份細節（1969 年 11 月、1976 年開場）只見 Mah Nà 條目。era 的 1971 年：en 維基寫 library 系列從 1971 年起，Soundohm 寫盒裝收 1971–1983 年、是他最多產的階段。已上線 To-Day's Sound 簡介的 Sound Work-Shop、Ampex 八軌與 Minimoog／ARP 2600／EMS VCS3 細節本層未查證。"
+  }
+]
