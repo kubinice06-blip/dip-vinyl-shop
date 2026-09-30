@@ -276,3 +276,7 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 補洞第 3 組：**Air 卡池混了美國自由爵士三重奏 Air（Threadgill、Hopkins、McCall）的 4 張**（Air Song／Air Time／Air Lore／Air Mail）→ 只寫法國二人組，爵士四張待本機拆卡另立「Air (jazz trio)」。
   **Cicada《ある男》配樂**：flau 官網稱獲日本電影學院獎「最優秀音樂獎」有誤；主線查證（Oricon、松竹官網）實為「優秀音樂獎」（入圍層級），最優秀由《すずめの戸締まり》獲得 → 以正確說法補進 legacy。
 - 寫作第 1 組（20 位）審畢，0 處。主線親驗：Willie Colón 2026-02-21 過世，享年 75（NBC、NPR、Deadline）。
+
+### ar-a-016
+
+- 補洞第 1 組：Fennesz 搜尋 9 次，第 9 次取得的內容已撤，放行。Tangerine Dream《Sorcerer》上線簡介列 PPG 合成器疑與 1976–77 年時序不合（PPG Wave 1981 年才問世），交本機核對。
