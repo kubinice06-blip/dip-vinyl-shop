@@ -311,5 +311,313 @@
     "status": "full",
     "pubIssues": [],
     "notes": "補查 8 次：維基 Gloria Gaynor（WebFetch）、WebSearch（生平與紀錄）、國會圖書館 I Will Survive 短文 PDF（WebFetch，本機解開 PDF 讀全文）、維基 I Will Survive、紐澤西名人堂、維基《Never Can Say Goodbye》專輯條目、Encyclopedia.com、Yahoo 葛萊美專文；BlackPast 403（失敗，不計入）。事實庫 research 為空（factsBeforeLean 7 但無可用條目），三格從零查。以下皆單源或來源不一致，未進 facts：（1）『第一』類：專輯 A 面組曲為 Tom Moulton 首創（維基專輯條目稱 'a famous first devised by Tom Moulton (not credited on the record itself)'，LoC 短文稱 'first of its kind'，上線簡介同；兩源皆可查但屬『第一』宣稱，寫作層寫成『被稱為首創』較穩）；『Never Can Say Goodbye 是第一首登上 Billboard 舞曲榜冠軍的歌』只見維基，且維基自身無出處，搜尋摘要另一站同句未開頁，不收。（2）LoC 短文單源：Clout 版〈Substitute〉在歐洲已是 disco 熱門、Polydor 新任總裁想要美國版；Earl Young 的 hi-hat 與 Harold Wheeler 編曲（維基專輯條目寫鼓手是 Allan Schwartzberg，與 Young 不一致，不收）；〈Honey Bee〉1974 年主要在同志舞廳先紅；Johnny Nash 建議她改名 Gloria Gaynor；只用一位主唱、不用和聲的編排被視為自立的象徵。（3）維基 I Will Survive 單源：錄音只有 3 小時、留給 B 面 35 分鐘；1978 年 10 月 23 日發行；英國與愛爾蘭榜冠軍；Gaynor 的丈夫把唱片帶給 Kaczor（LoC 說是 Gaynor 交給他）；Encyclopedia.com 單源：VH1 選為史上最佳舞曲，1982 年成為重生基督徒後轉唱福音，並於 2020 年以福音專輯《Testimony》拿下第二座葛萊美（該獎只見搜尋摘要與 NJ 名人堂）；維基 Gloria Gaynor 單源：2025 年甘迺迪中心榮譽（Kennedy Center Honors）。（4）Encyclopedia.com 說 Johnny Nash 是在 Wagon Wheel Club 發現她，與 LoC 說她先當巡迴樂手不同，不收。（5）維基與 NJ 名人堂的兄弟人數不一致（五位／三位），不寫。兩源皆為維基者（I Will Survive 與 Gloria Gaynor 兩個條目）算同站不同條目、非獨立，本位 facts 已避免只靠這種配對：I Will Survive 一條的第二源分別配 LoC、Yahoo。維基與 Yahoo 亦屬各自獨立的媒體。"
+  },
+  {
+    "key": "heatwave",
+    "name": "Heatwave",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Heatwave 的創辦人 Johnnie Wilder Jr. 是駐西德的美軍，在德國時就開始籌組這個團；他和弟弟 Keith Wilder 都來自俄亥俄州 Dayton。",
+            "src": "https://en.wikipedia.org/wiki/Heatwave_(band)",
+            "src2": "https://5mag.net/features/foundations/heatwave/",
+            "from": "new"
+          },
+          {
+            "f": "英國鍵盤手 Rod Temperton 是看到 Wilder 登在音樂刊物上的徵人廣告而加入，之後成為樂團的主要作曲人。",
+            "src": "https://en.wikipedia.org/wiki/Rod_Temperton",
+            "src2": "https://5mag.net/features/foundations/heatwave/",
+            "from": "new"
+          },
+          {
+            "f": "團員來自多國：美國人 Johnnie 與 Keith Wilder、英國人 Rod Temperton 與 Roy Carter、瑞士人 Mario Mantese、捷克斯洛伐克人 Ernest Berger，以及牙買加人 Eric Johns。",
+            "src": "https://en.wikipedia.org/wiki/Heatwave_(band)",
+            "src2": "https://www.yahoo.com/entertainment/music/articles/heatwaves-always-forever-remains-timeless-105200131.html",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "出道專輯《Too Hot to Handle》的原創曲全由 Rod Temperton 寫成，他同時彈鍵盤與合成器。",
+            "src": "https://en.wikipedia.org/wiki/Too_Hot_to_Handle_(Heatwave_album)",
+            "src2": "https://en.wikipedia.org/wiki/Rod_Temperton",
+            "from": "new"
+          },
+          {
+            "f": "Temperton 為樂團寫下〈Boogie Nights〉〈Always and Forever〉與〈The Groove Line〉，這三首單曲各自站上榜單：〈Boogie Nights〉美英雙榜第 2 名，〈Always and Forever〉Hot 100 第 18 名，〈The Groove Line〉Hot 100 第 7 名。",
+            "src": "https://en.wikipedia.org/wiki/Heatwave_(band)",
+            "src2": "https://www.yahoo.com/entertainment/music/articles/heatwaves-always-forever-remains-timeless-105200131.html",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Temperton 後來為 Michael Jackson 寫下《Off the Wall》與《Thriller》的多首歌，包括兩張專輯的同名曲。",
+            "src": "https://en.wikipedia.org/wiki/Heatwave_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Rod_Temperton",
+            "from": "new"
+          },
+          {
+            "f": "〈Always and Forever〉成為高中舞會與婚禮上的慢舞常客；Luther Vandross 在 1994 年翻唱，收在專輯《Songs》。",
+            "src": "https://en.wikipedia.org/wiki/Always_and_Forever_(Heatwave_song)",
+            "src2": "https://www.yahoo.com/entertainment/music/articles/heatwaves-always-forever-remains-timeless-105200131.html",
+            "from": "new"
+          },
+          {
+            "f": "1979 年冬天，Johnnie Wilder Jr. 回 Dayton 探親時出車禍，頸部以下癱瘓；他此後不再登台，仍留在錄音室裡繼續為樂團演唱。",
+            "src": "https://en.wikipedia.org/wiki/Heatwave_(band)",
+            "src2": "https://5mag.net/features/foundations/heatwave/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1976 年，樂團在英國 GTO 發行首張專輯《Too Hot to Handle》，在倫敦 Audio International 錄音，製作人是 Barry Blue。",
+            "src": "https://en.wikipedia.org/wiki/Too_Hot_to_Handle_(Heatwave_album)",
+            "src2": "https://5mag.net/features/foundations/heatwave/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "〈Boogie Nights〉英國榜與美國 Hot 100 都到第 2 名。",
+        "src": "https://en.wikipedia.org/wiki/Heatwave_(band)",
+        "src2": "https://en.wikipedia.org/wiki/Too_Hot_to_Handle_(Heatwave_album)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年份與地點：維基樂團條目寫『1975 年成軍於倫敦』，Rod Temperton 條目與搜尋摘要寫 1974 年 Temperton 應徵廣告，兩源不一致，facts 不寫成軍年。",
+      "Temperton 離團年份：5mag 寫 1978 年，Quincy Jones 招募 Temperton 為 1979 年（維基），兩者不一致，facts 不寫離團年份。",
+      "Temperton 逝世日期：樂團條目寫 2016 年 10 月，Temperton 條目寫 2016 年 9 月 25 日，facts 不寫逝世時間。",
+      "Wilder 的癱瘓程度：維基樂團條目與搜尋摘要寫頸部以下癱瘓，5mag 寫 paraplegic；facts 取『頸部以下癱瘓』（維基與搜尋摘要），5mag 只當作他不再登台的支持。"
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 8 次：維基樂團條目（WebFetch）、WebSearch（起源與 Temperton）、5mag 專文（WebFetch）、維基 Rod Temperton（WebFetch）、WebSearch（Always and Forever 與 Temperton 名人堂）、維基 Always and Forever（WebFetch）、Yahoo 專文（WebFetch）、維基《Too Hot to Handle》（WebFetch）。事實庫 research 與 published 皆空，三格從零查。每條 src2 皆為實際開頁讀到。⚠ 維基樂團、Temperton、歌曲、專輯四個條目都是維基不同條目，配對時已盡量搭配非維基第二源（5mag、Yahoo），但『Temperton 為 Jackson 寫同名曲』『原創曲全由 Temperton 寫』兩條的雙源皆為維基不同條目，非獨立。單源未進 facts：（1）5mag：Jesse Whitten（芝加哥吉他手）的名字啟發了團名，他在首張專輯錄製前被刺死；搜尋摘要另有 Whitten 1977 年在芝加哥街頭被刺死一說，年份與『首張專輯前』不一致（首張 1976 年），不收；Mario Mantese 1978 年被女友刺傷、昏迷後失明失語癱瘓，後來復原並成為靈性導師（單源）；CBS 在美國版唱片上不放樂團照片，理由是『sociological factors』可能影響銷量，歐洲則無此限（單源，屬社會現象但只有一站）；『multi-racial and multi-ethnic during a time when most groups of a similar ilk were not』（單一評論，不收）。（2）維基：Essence 雜誌 2009 年『25 Best Slow Jams of All Time』收入〈Always and Forever〉；Brian Chin 評語『R&B、青少年戀曲與歐美流行的混合』；Whistle 1990 年翻唱（R&B 第 9 名、Hot 100 第 35 名）；Luther Vandross 版 1995 年葛萊美最佳男性 R&B 人聲演唱入圍（單源）。（3）Temperton 條目單源：由 Bruce Swedien 聽了 Heatwave 專輯後，Quincy Jones 於 1979 年招募 Temperton；1991 年以〈Birdland〉拿葛萊美最佳編曲；〈Miss Celie's Blues (Sister)〉奧斯卡入圍；BBC 主持人 Gilles Peterson 評：『除了 Lennon 與 McCartney，英國沒有人寫過更多金曲』（單一評論，不收）。搜尋摘要：Temperton 2016 年入圍詞曲作者名人堂，未及入選即過世（songhall.org 頁面只見搜尋標題，未開頁；不收）。（4）搜尋摘要（Fandom）：Temperton 的作品被 Rufus、James Ingram、Aretha Franklin、Donna Summer 等錄過（未開頁，不收）。（5）維基專輯條目：〈Boogie Nights〉美英雙榜第 2 名，專輯 Billboard 200 第 11 名、Top Soul LPs 第 5 名；美國版 1977 年 5 月由 Epic 發行；2015 年 Big Break 再版（單源）。（6）Yahoo：〈Always and Forever〉入選 TODAY 網站 2023 年『50 Best Wedding Songs』，Marcus Miller 稱讚 Vandross『his voice was made for this song』（單源，非獨立於本篇）。名冊只有三張卡（1976、1978、1982），不同名混卡。"
+  },
+  {
+    "key": "jodeci",
+    "name": "Jodeci",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Jodeci 由兩對兄弟組成：DeGrate 家的 DeVante Swing 與 Mr. Dalvin，Hailey 家的 K-Ci 與 JoJo，都出身北卡羅來納州 Charlotte 的虔誠教會家庭。",
+            "src": "https://en.wikipedia.org/wiki/Jodeci",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/jodeci",
+            "from": "new"
+          },
+          {
+            "f": "四人都有福音音樂的底子：K-Ci 與 JoJo 唱過家族的福音團，DeVante 與 Dalvin 也待過福音團。",
+            "src": "https://en.wikipedia.org/wiki/Jodeci",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/jodeci",
+            "from": "new"
+          },
+          {
+            "f": "他們由 Uptown Records 簽下，Sean \"Puffy\" Combs 參與塑造他們穿 Timberland 靴與棒球帽的街頭形象，和同期 New Edition、Boyz II Men 較整齊的 R&B 形象不同。",
+            "src": "https://en.wikipedia.org/wiki/Jodeci",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/jodeci",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們把福音出身的柔軟人聲與嘻哈製作、New Jack Swing 的節奏接在一起，被稱為 R&B 的「壞男孩」（Bad Boys of R&B）。",
+            "src": "https://en.wikipedia.org/wiki/Jodeci",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/jodeci",
+            "from": "new"
+          },
+          {
+            "f": "DeVante Swing 是團裡的領導者，也是主要詞曲作者與製作人；首張專輯《Forever My Lady》由他帶頭製作，並與 Al B. Sure! 合作。",
+            "src": "https://en.wikipedia.org/wiki/DeVante_Swing",
+            "src2": "https://en.wikipedia.org/wiki/Forever_My_Lady",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《Forever My Lady》（1991 年）有三首單曲登上 R&B 榜第 1 名，專輯在美國累計三白金。",
+            "src": "https://en.wikipedia.org/wiki/Jodeci",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/jodeci",
+            "from": "new"
+          },
+          {
+            "f": "DeVante Swing 1991 年建立 Swing Mob 創作集團，孕育出 Missy Elliott、Timbaland、Ginuwine、Tweet 與 Stevie J 等後來的名字，成員在他家地下錄音室排練錄音。",
+            "src": "https://en.wikipedia.org/wiki/DeVante_Swing",
+            "src2": "https://en.wikipedia.org/wiki/Swing_Mob",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1991 年 5 月，首張專輯《Forever My Lady》由 Uptown 與 MCA 發行，登上 Billboard Top R&B Albums 榜首。",
+            "src": "https://en.wikipedia.org/wiki/Forever_My_Lady",
+            "src2": "https://en.wikipedia.org/wiki/Jodeci",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1991 年首張專輯《Forever My Lady》三首單曲登上 R&B 榜第 1 名，專輯累計三白金。",
+        "src": "https://en.wikipedia.org/wiki/Jodeci",
+        "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/jodeci",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年份：維基寫 1988 年成軍於 Charlotte，Encyclopedia.com 寫 1989 至 1990 年，兩源不一致，facts 不寫成軍年。",
+      "Swing Mob 所在地：維基 Swing Mob 條目寫『以維吉尼亞為基地』並提到 Rochester 的地下室錄音室，DeVante Swing 條目寫他生於維吉尼亞 Hampton、現居 Charlotte；facts 只寫『他家地下錄音室』，不寫地點。",
+      "維基 Forever My Lady 條目寫 35 週年版於 2026 年 7 月發行（此為讀取時的維基文字），不採，facts 不涉。"
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 8 次：維基樂團條目（WebFetch）、WebSearch（影響與福音出身）、Encyclopedia.com（WebFetch）、The Root（WebFetch，頁面回空白，實質無內容，仍計入搜尋）、WebSearch（後輩點名）、維基《Forever My Lady》（WebFetch）、維基 DeVante Swing（WebFetch）、維基 Swing Mob（WebFetch）。事實庫 research 與 published 皆空，三格從零查。⚠ legacy 格：沒有查到有兩源的共識評價（名人堂、票選、後輩點名）；下列皆單源未進 facts：（1）維基樂團條目：Complex 2014 年『1990s Male R&B Group Pyramid of Excellence』排第 1；2012 年入選北卡羅來納音樂名人堂；全球銷量逾 2000 萬張；《Diary of a Mad Band》雙白金、《The Show, the After Party, the Hotel》白金（單源，且『Complex 排名』屬單一媒體）。（2）Encyclopedia.com：『struck a balance between vulnerability and toughness that set the template for 1990s hip-hop soul』（單一評論）；稱《Forever My Lady》影響了 Boyz II Men、H-Town、Shai、Silk 等一代男子 R&B 團（Boyz II Men 與 Jodeci 同期，此說法不穩，不收）；1992 至 1993 年的性不當指控（與作品無直接關係，且寫作層不用）。（3）搜尋摘要（未開頁）：Drake〈How Bout Now〉（2014 年）採樣 Jodeci、Chris Brown 與 Wizkid 曲子採樣 Jodeci、『影響從 Usher 到 Chris Brown』；來源為 TikTok 與雜牌部落格，不收。（4）維基專輯條目單源：專輯 Billboard 200 最高第 18 名、〈Come and Talk to Me〉Hot 100 前 15 名；美國逾 300 萬張、全球 800 萬張（至 1995 年 8 月）；Entertainment Weekly Arion Berger 評『sophisticated beyond the band members' years』，AllMusic 五星（單源）。（5）維基樂團條目：K-Ci 與 JoJo 早年名為『Little Cedric & the Hailey Singers』、DeVante 與 Dalvin 屬『Degrate Delegation』福音團；29 首歌的 demo 帶到 Uptown 給 Andre Harrell，1990 年簽約（單源）。（6）DeVante Swing 條目單源：16 歲赴 Minneapolis Paisley Park 求職被拒（可考慮寫作層用，但只有單源）；生於 1969 年 9 月 29 日於 Hampton 維吉尼亞。（7）兩源『非獨立』提示：facts 中『DeVante 為領導者與主要製作人』的兩源（DeVante Swing 條目與《Forever My Lady》條目）、Swing Mob 一條的兩源（DeVante Swing 條目與 Swing Mob 條目）、『首張專輯 5 月由 Uptown 與 MCA 發行』的兩源（專輯與樂團條目）都是維基不同條目，非獨立；已在 origin 與其他條目盡量配上 Encyclopedia.com。年代（era）與地位兩格若要更硬，建議主線在本機補一個獨立來源（例如 Rolling Stone 或 Billboard 的 hip-hop soul 專文）。名冊三張卡都是同一團，無同名混卡。"
+  },
+  {
+    "key": "joe bataan",
+    "name": "Joe Bataan",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Joe Bataan 1942 年生於紐約市，父親是菲律賓人、母親是非裔美國人，在東哈林區 103 街與列星頓大道一帶長大。",
+            "src": "https://en.wikipedia.org/wiki/Joe_Bataan",
+            "src2": "https://www.newyorklatinculture.com/joe-bataan-in-new-york-city/",
+            "from": "new"
+          },
+          {
+            "f": "他少年時帶過街頭幫派，因偷車被關進感化機構，出來後才把心思放到音樂上。",
+            "src": "https://faroutmagazine.co.uk/joe-bataan-latin-soul-sensation/",
+            "src2": "https://www.newyorklatinculture.com/joe-bataan-in-new-york-city/",
+            "from": "new"
+          },
+          {
+            "f": "他長大的街區以西語裔居民為主，他一度帶領當地的波多黎各幫派 Dragons；出獄後組成第一支樂團 Joe Bataan and the Latin Swingers。",
+            "src": "https://faroutmagazine.co.uk/joe-bataan-latin-soul-sensation/",
+            "src2": "https://www.laphil.com/musicdb/artists/9963/joe-bataan",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的音樂建立在拉丁 boogaloo 與非裔美國人 doo-wop 兩種語彙上。",
+            "src": "https://en.wikipedia.org/wiki/Joe_Bataan",
+            "src2": "https://faroutmagazine.co.uk/joe-bataan-latin-soul-sensation/",
+            "from": "bank"
+          },
+          {
+            "f": "他的專輯常把西班牙語唱的拉丁舞曲，和英語唱的慢板靈魂歌排在一起。",
+            "src": "https://en.wikipedia.org/wiki/Joe_Bataan",
+            "src2": "https://faroutmagazine.co.uk/joe-bataan-latin-soul-sensation/",
+            "from": "new"
+          },
+          {
+            "f": "1967 年他在 Fania 以〈Gypsy Woman〉（翻自 The Impressions 的歌）打出名號，把拉丁節奏、R&B 與 doo-wop 揉成拉丁靈魂樂（Latin soul）。",
+            "src": "https://www.newyorklatinculture.com/joe-bataan-in-new-york-city/",
+            "src2": "https://www.laphil.com/musicdb/artists/9963/joe-bataan",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他被稱為「King of Latin Soul」（拉丁靈魂樂之王）。",
+            "src": "https://www.newyorklatinculture.com/joe-bataan-in-new-york-city/",
+            "src2": "https://www.laphil.com/musicdb/artists/9963/joe-bataan",
+            "from": "new"
+          },
+          {
+            "f": "他協助創出「salsoul」一詞，拿來替自己離開 Fania 後的第一張專輯命名；這個詞後來成了 Salsoul Records 的廠名。",
+            "src": "https://en.wikipedia.org/wiki/Joe_Bataan",
+            "src2": "https://www.laphil.com/musicdb/artists/9963/joe-bataan",
+            "from": "new"
+          },
+          {
+            "f": "〈Rap-O Clap-O〉是最早的一批饒舌錄音之一，被視為饒舌進入歐洲市場的開端。",
+            "src": "https://daily.redbullmusicacademy.com/2013/02/key-tracks-joe-bataan-on-rap-o-clap-o/",
+            "src2": "https://www.laphil.com/musicdb/artists/9963/joe-bataan",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他替 Fania 錄了八張原創專輯，其中《Riot!》拿到金唱片。",
+            "src": "https://en.wikipedia.org/wiki/Joe_Bataan",
+            "from": "bank"
+          },
+          {
+            "f": "停筆多年後，他 2005 年以專輯《Call My Name》回到樂壇。",
+            "src": "https://en.wikipedia.org/wiki/Joe_Bataan",
+            "src2": "https://www.newyorklatinculture.com/joe-bataan-in-new-york-city/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "他替 Fania 錄了八張原創專輯，其中《Riot!》拿到金唱片。",
+        "src": "https://en.wikipedia.org/wiki/Joe_Bataan",
+        "from": "bank"
+      }
+    ],
+    "conflicts": [
+      "本名與生日：事實庫與維基寫 Bataan Nitollano、1942 年 11 月 5 日（本次維基讀取寫 11 月 15 日），LA Phil 寫 Peter Nitollano，三處不一致，facts 只寫 1942 年、不寫本名與日期。",
+      "〈Rap-O Clap-O〉年份：事實庫寫 1979 年，本次維基讀取寫 1980 年，Discogs 搜尋標題與 RBMA 訪談皆指 1978 至 1979 年錄製與 Salsoul 發行；facts 不寫年份。",
+      "第一支樂團成立年：維基寫 1966 年（與 Fania 簽約同年），Far Out 與 LA Phil 寫 1965 年出獄後組團，兩派不一致，facts 不寫年份。",
+      "退休年份：維基寫 1981 年、New York Latin Culture 寫 1982 年，facts 不寫。",
+      "上線簡介與事實庫：《Riot!》簡介寫的『本名 Bataan Nitollano』見上，其餘（1942 年、父母背景、八張 Fania 專輯、金唱片）與補查一致。"
+    ],
+    "searches": 7,
+    "failedFetches": 3,
+    "status": "full",
+    "pubIssues": [
+      {
+        "album": "Riot!",
+        "claim": "Joe Bataan 本名 Bataan Nitollano",
+        "problem": "本名各源不一致：維基寫 Bataan Nitollano，LA Phil 藝人頁寫 Peter Nitollano；建議店主本機再核對（AllMusic 或官方網站），核不出來就從簡介拿掉本名",
+        "src": "https://www.laphil.com/musicdb/artists/9963/joe-bataan"
+      }
+    ],
+    "notes": "補查 7 次：維基（WebFetch）、WebSearch（生平與遺產）、Far Out 專文（WebFetch）、New York Latin Culture（WebFetch）、WebSearch（Rap-O Clap-O 與稱號）、Red Bull Music Academy 專訪（WebFetch）、LA Phil 藝人頁（WebFetch）；失敗 3 次不計入（Smithsonian 新聞稿 si.edu 與 latino.si.edu 各 403、Afropunk 403）。事實庫有一筆研究稿（c58-a《Riot!》三條，皆單源維基），已歸入 sound 與 era 兩條 bank，並補第二源；生年 1942 已由維基與 New York Latin Culture 兩源確認。以下單源未進 facts：（1）LA Phil：他『originated the New York Latin Soul style』（單一評論）；2012 年 10 月列入 Smithsonian『American Treasures』名單、稱號『King of Latin-Soul』（搜尋摘要有 Smithsonian 新聞稿標題『Joe Bataan: The Afro-Filipino King of Latin Soul』，頁面 403 未開，故只作稱號的旁證）；兩次入 Coxsackie 監獄、出獄後 1965 年組團（與維基 1966 不一致）；『Rap-O Clap-O』被稱為西班牙語饒舌最早的例子之一（搜尋摘要）。（2）維基與搜尋摘要：2013 年 Filipino American National Historical Society 紐約分會頒終身成就獎（維基單源；搜尋摘要同句、未另開頁）。（3）RBMA 單源（本人口述，可具名單源但屬自述）：〈Rap-O Clap-O〉起於 Harlem 110 街社區中心『Hell's Kitchen』，Bataan 原想找 Dr. Jeckyll & Mr. Hyde 錄，對方沒現身，他自己饒舌，『39 歲的饒舌歌手，躲在廁所裡』；Jocelyn Brown 參與；經 Paradise Garage 打歌賣了約 2 萬張；比利時第 1、荷蘭與法國前 3 名（搜尋摘要說歐洲多國前 10，不完全一致，不寫名次）；Salsoul 由 Kenny Cayre 發行。（4）Far Out：因與 Fania 有財務糾紛，他自設 Ghetto Records（有黑幫資金），後來又出於 Salsoul；2005 年《Call My Name》發行於 Vampisoul。⚠ New York Latin Culture 寫『他自己成立 Salsoul 廠牌』、搜尋摘要寫『共同創辦 Salsoul Records』，與維基『協助創出 salsoul 一詞並以之命名專輯』不合，Salsoul Records 是 Cayre 家族的廠牌，故 facts 只寫命名與廠名沿用，並不寫他創辦廠牌。（5）維基單源：Fania 時期與 Ralfi Pagan 並駕齊驅；2005 年復出。第 2 點『第一支樂團』的『第一』不涉及 facts。名冊三張卡皆為同一人，無同名混卡。"
   }
 ]

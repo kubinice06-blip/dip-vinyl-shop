@@ -54,3 +54,4 @@
 - 補洞第 1 組：9m88 搜尋 9 次，第 9 次內容已撤，放行（先例）。pubIssue 1 條（S.O.S. Band《On the Rise》「製作權交給 Jam 與 Lewis」言過其實）。Supreme Angels 葛萊美入圍作採 grammy.com 的《Together As One》。Roger Troutman 逝世年僅維基兩條目，不寫。
 - 補洞第 4 組交件，補洞交齊（40 位）。Solomon Burke 失敗請求 9 次、Brooklyn Allstars 5 次（付費牆與 503），照實記，放行。pubIssue 2 條（Sylvester《Step II》「Fantasy 第四張」、《Stars》「第五張」，依 1977 同名作為 Fantasy 首張推算應為第二、三張）。
 - 補洞第 2 組：Allen Toussaint 失敗請求 8 次、Billy Paul 6 次，照實記，放行。pubIssue 5 條（Bee Gees《Spirits Having Flown》連冠時長；Billy Paul《War of the Gods》靈魂榜名次；Chuck Brown 三條：國民隊全壘打歌現況、〈We the People〉與 go-go 先後、《Bustin' Loose》年份）。Clarence Carter〈Patches〉葛萊美主詞為詞曲作者。
+- 補洞第 3 組：D'Angelo 失敗請求 8 次、Ebo Taylor 5 次，照實記，放行。Ebo Taylor 2026-02-07 過世，主線 WebSearch 核實（DJ Mag、NPR、World Music Central）。D'Angelo 2025-10-14 過世兩源一致。pubIssue 1 條（Ebo Taylor《Appia Kwa Bridge》「錄製時已 77 歲」與生年不合）。Denise LaSalle、Eddie Floyd 生年兩說不寫。Eddie Kendricks 的名人堂稱讚主詞是 The Temptations。
