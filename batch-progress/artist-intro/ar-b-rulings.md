@@ -112,3 +112,4 @@
 - 補洞第 1、2 組交件。Stereophonics 貢獻格 none（thin）。Steven Wilson「最成功卻沒人聽過」屬單一報紙語，不寫。
 - 寫作第 1 組（20 位）審畢，修 2 處：Sublime 刪「RIAA 鑽石認證」（未核、屬會變動的認證數）；Supertramp 補 Rick Davies 2025-09-06 過世（主線 WebSearch 核實：CNN、NPR、Billboard）。
 - 補洞第 3 組：Underoath 失敗請求 5 次，照實記，放行；身世格 none。pubIssue 1 條（Warzone《Don't Forget the Struggle…》首發年與片長，1987／1988 兩說）。Voivod 金屬名人堂官網單源不收（不適用名人堂例外）。
+- 補洞第 4 組交件，補洞交齊（40 位）。灰野敬二 2026 年威尼斯雙年展音樂節終身成就金獅獎：主線 WebSearch 核實已宣布、頒獎典禮 2026-10-12（labiennale.org、ANSA）→ 寫「獲宣布授予」。pubIssue 4 條（不失者《Double Live》「2026 年 3 月獲頒金獅獎」時序錯、「百餘種錄音」過時；ザ・スターリン《trash》錄音室名 Mod／Mad；夾子電動大樂隊「小應是濁水溪公社前鼓手」無據）。不失者成軍採 1978（推翻事實庫 1979）。告五人、拍謝少年金曲獎主詞分別是歌曲與專輯包裝。
