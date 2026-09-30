@@ -276,5 +276,214 @@
     "status": "full",
     "pubIssues": [],
     "notes": "事實庫的研究稿為空，僅有一則上線簡介。八次：維基 Sting、Britannica、維基 Brit Awards 1988、維基 The Dream of the Blue Turtles、維基 The Police、Polar Music Prize 官網頁、WebSearch（早年與藝名）、sting.com 官方傳記頁；搖滾名人堂官網 404、甘迺迪中心頁 403（未計入，failedFetches 2）。維基 Sting、Dream of the Blue Turtles、The Police 三條同站不同條目，非獨立；facts 中『2003 年入選名人堂』的年份只有維基兩條目（Britannica 只寫入選、未寫年份），屬同站佐證。Polar 頁內容是網頁摘要，寫作層對『2017』請與維基交叉。單源未進 facts：1988 年 BRIT British Album of the Year 得主為《...Nothing Like the Sun》（維基 Brit Awards 1988 單源，與上線簡介一致）；1985 與 2002 年 BRIT Outstanding Contribution（sting.com 單源）；Stewart Copeland 在 Newcastle 看了 Last Exit 演出後找他（sting.com 單源）；The Police 2007–08 重聚巡演票房 3.58 億美元、榜列史上第三（維基 Police 單源）；Police 專輯銷量逾 7500 萬張、五張錄音室專輯中四張進 Rolling Stone 500 大專輯（維基單源）；被視為 Second British Invasion 與新浪潮先鋒（維基單源）；〈Every Breath You Take〉2019 年獲 BMI 表彰演出次數紀錄（維基單源）；CBE 2003（維基單源）；曲目與專輯榜位置（Dream of the Blue Turtles 英國第 3、美國第 2，單源）；全球唱片累計逾一億張（維基單源）。poolAlbums 四張皆為 Sting 個人名義（Dream of the Blue Turtles、...Nothing Like the Sun、Brand New Day、Symphonicities），無同名混卡。"
+  },
+  {
+    "key": "stone temple pilots",
+    "name": "Stone Temple Pilots",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Stone Temple Pilots 來自加州聖地牙哥，班底是主唱 Scott Weiland、鼓手 Eric Kretz 與 DeLeo 兄弟（吉他 Dean、貝斯 Robert）；是 Robert 邀請當時做承包工作的哥哥 Dean 加入。",
+            "src": "https://en.wikipedia.org/wiki/Stone_Temple_Pilots",
+            "src2": "https://ultimateclassicrock.com/stone-temple-pilots-core/",
+            "from": "new"
+          },
+          {
+            "f": "樂團崛起時人在聖地牙哥而不是西雅圖，這個「不在對的城市」的身分成為早期被批評的一部分。",
+            "src": "https://collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge/",
+            "src2": "https://ultimateclassicrock.com/stone-temple-pilots-core/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的聲音來源不只 grunge，還取自 glam rock、迷幻搖滾與七〇年代硬搖滾；1996 年的《Tiny Music...Songs from the Vatican Gift Shop》把 glam 與迷幻流行的一面推得最明顯。",
+            "src": "https://en.wikipedia.org/wiki/Stone_Temple_Pilots",
+            "src2": "https://collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge/",
+            "from": "new"
+          },
+          {
+            "f": "1994 年的《Purple》在 grunge 之外揉進迷幻搖滾、藍調搖滾、鄉村與民謠等元素，製作人 Brendan O'Brien 以現場錄音、少量疊錄捕捉演奏。",
+            "src": "https://en.wikipedia.org/wiki/Purple_(Stone_Temple_Pilots_album)",
+            "src2": "https://en.wikipedia.org/wiki/Stone_Temple_Pilots",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1992 年首張《Core》推出後，評論界把他們當成 Pearl Jam 等西雅圖 grunge 樂團的模仿者；1994 年《Rolling Stone》的評論家票選把他們選為「最差新樂團」，同一期的讀者票選卻選他們為「最佳新樂團」。",
+            "src": "https://ultimateclassicrock.com/stone-temple-pilots-core/",
+            "src2": "https://collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge/",
+            "from": "new"
+          },
+          {
+            "f": "《Core》在美國專輯榜最高第 3 名，賣出數百萬張，儘管評論界不領情。",
+            "src": "https://ultimateclassicrock.com/stone-temple-pilots-core/",
+            "src2": "https://collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge/",
+            "from": "new"
+          },
+          {
+            "f": "1994 年的《Purple》首週就登上 Billboard 200 冠軍。",
+            "src": "https://collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge/",
+            "src2": "https://en.wikipedia.org/wiki/Purple_(Stone_Temple_Pilots_album)",
+            "from": "new"
+          },
+          {
+            "f": "1994 年 3 月 1 日的第 36 屆葛萊美獎，Stone Temple Pilots 以〈Plush〉拿下最佳硬式搖滾演出（得獎），同組入圍者包括 AC/DC、Living Colour、Robert Plant 與 Smashing Pumpkins。",
+            "src": "https://en.wikipedia.org/wiki/36th_Annual_Grammy_Awards",
+            "src2": "https://en.wikipedia.org/wiki/Stone_Temple_Pilots",
+            "from": "new"
+          },
+          {
+            "f": "Scott Weiland 於 2015 年 12 月過世。",
+            "src": "https://en.wikipedia.org/wiki/Stone_Temple_Pilots",
+            "src2": "https://www.cbsnews.com/amp/newyork/news/scott-weiland-dead",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1994 年 3 月，〈Plush〉獲第 36 屆葛萊美獎最佳硬式搖滾演出。",
+        "src": "https://en.wikipedia.org/wiki/36th_Annual_Grammy_Awards",
+        "src2": "https://en.wikipedia.org/wiki/Stone_Temple_Pilots",
+        "from": "new"
+      },
+      {
+        "f": "1994 年《Purple》首週登上 Billboard 200 冠軍。",
+        "src": "https://collider.com/stone-temple-pilots-how-grunge-band-went-from-hated-to-huge/",
+        "src2": "https://en.wikipedia.org/wiki/Purple_(Stone_Temple_Pilots_album)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Scott Weiland 過世日：維基樂團條目寫 2015 年 12 月 3 日，CBS 寫 12 月 4 日（睡夢中，巡演停靠地）；facts 只寫兩源一致的 2015 年 12 月。《Core》美國銷量：UCR 寫逾 800 萬張，維基寫 1990 年代美國累計 1750 萬張（全團），不同口徑，未進 facts。Grammy 年：維基樂團條目寫 1994，第 36 屆典禮 1994 年 3 月 1 日，採後者。"
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫為空，從零查。八次：維基樂團條目、WebSearch（樂團歷史與評價）、Ultimate Classic Rock《Core》文章、維基《Purple》、Collider 專文、WebSearch（Weiland 訃聞）、維基 第 36 屆葛萊美獎、CBS 新聞訃聞；Grammy 官網 404、CNN 451、Billboard 轉址（tollbit 付費牆）未開（皆未計入，failedFetches 3）。維基樂團／Purple／第 36 屆葛萊美三條同站不同條目，非獨立，得獎事實另有 CBS 稱『Grammy Award-winning band』佐證。單源未進 facts：1989 年成軍於聖地牙哥、早期團名 Swing 與 Mighty Joe Young（維基單源，搜尋摘要『late 80s Southern California』未開頁）；全球約 4000 萬張、90 年代美國 1750 萬張、16 支主流搖滾榜前十單曲（維基單源）；VH1『100 Greatest Artists of Hard Rock』第 40 名（維基單源）；Chester Bennington 2013–2015 年任主唱、2017 年過世（維基單源）；《Purple》告示牌冠軍三週、RIAA 六白金（維基單源）；Rolling Stone 2019 年『50 Greatest Grunge Albums』第 24 名、Pitchfork 2022 年『25 Best Grunge Albums of the '90s』（維基《Purple》單源）；《Purple》『now widely regarded as one of the best albums of the era』之類重新評價語句只見搜尋摘要（未開頁）；Core 1992 年 9 月 29 日發行、〈Plush〉登 Mainstream Rock Airplay 冠軍（搜尋摘要）；Weiland 死因（逝者克制，寫作層可略）。UCR 與 Collider 都轉述『Rolling Stone 1994 最差新樂團』，同為二手轉述，未查到 Rolling Stone 原文，寫作層可寫成『據報導』風格以外的平述，但別加細節。poolAlbums 四張皆為此團（Core、Purple、Stone Temple Pilots 2010、Perdida 2020），無同名混卡。 樂團 2003 年解散、2008 年重聚、2013 年再分手只見 CBS 單源，未進 facts。"
+  },
+  {
+    "key": "sublime",
+    "name": "Sublime",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Sublime 1988 年成軍於加州長灘（Long Beach），班底是主唱兼吉他手 Bradley Nowell、貝斯手 Eric Wilson 與鼓手 Bud Gaugh。",
+            "src": "https://en.wikipedia.org/wiki/Sublime_(band)",
+            "src2": "https://ultimateclassicrock.com/sublime-bradley-nowell-death/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Sublime 把老雷鬼的取樣與龐克的樂器演奏接在一起，混合 ska、雷鬼與龐克（維基另列衝浪搖滾與嘻哈）。",
+            "src": "https://topshelfmusicmag.com/news/a-brief-reggae-rock-history/",
+            "src2": "https://en.wikipedia.org/wiki/Sublime_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1996 年 5 月 25 日，Bradley Nowell 在舊金山的汽車旅館房間因海洛因過量過世，享年 28 歲；發現他的是鼓手 Bud Gaugh。",
+            "src": "https://ultimateclassicrock.com/sublime-bradley-nowell-death/",
+            "src2": "https://diffuser.fm/sublime-bradley-nowell-rip/",
+            "from": "new"
+          },
+          {
+            "f": "Nowell 過世前一週的 1996 年 5 月 18 日才結婚，妻子是 Troy，兒子 Jakob 當時約一歲。",
+            "src": "https://ultimateclassicrock.com/sublime-bradley-nowell-death/",
+            "src2": "https://diffuser.fm/sublime-bradley-nowell-rip/",
+            "from": "new"
+          },
+          {
+            "f": "Sublime 與 Nowell 的最後一場演出在 1996 年 5 月 24 日，也就是他過世的前一天。",
+            "src": "https://en.wikipedia.org/wiki/Sublime_(band)",
+            "src2": "https://diffuser.fm/sublime-bradley-nowell-rip/",
+            "from": "new"
+          },
+          {
+            "f": "自題專輯《Sublime》在 1996 年 7 月 30 日發行，距離 Nowell 過世約兩個月；樂團因此無法巡演，專輯最高升到 Billboard 200 第 13 名。",
+            "src": "https://en.wikipedia.org/wiki/Sublime_(album)",
+            "src2": "https://en.wikipedia.org/wiki/Sublime_(band)",
+            "from": "new"
+          },
+          {
+            "f": "〈What I Got〉與〈Santeria〉都登上 Modern Rock Tracks 冠軍；《Sublime》後來獲 RIAA 鑽石認證（1000 萬張）。",
+            "src": "https://en.wikipedia.org/wiki/Sublime_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Sublime_(album)",
+            "from": "new"
+          },
+          {
+            "f": "Nowell 的骨灰撒在加州 Surfside 他最愛的衝浪點。",
+            "src": "https://en.wikipedia.org/wiki/Bradley_Nowell",
+            "src2": "https://diffuser.fm/sublime-bradley-nowell-rip/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2009 年 Wilson 與 Gaugh 找 Rome Ramirez 組新陣容，洛杉磯法官禁止他們使用 Sublime 之名，需經 Nowell 遺產方同意，因而改名 Sublime with Rome。",
+            "src": "https://en.wikipedia.org/wiki/Sublime_(band)",
+            "src2": "https://diffuser.fm/sublime-bradley-nowell-rip/",
+            "from": "new"
+          },
+          {
+            "f": "2023 年 12 月，Wilson、Gaugh 與 Nowell 的兒子 Jakob Nowell 重組，Jakob 擔任主唱兼吉他手。",
+            "src": "https://en.wikipedia.org/wiki/Sublime_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Bradley_Nowell",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1988 年 Sublime 在長灘成軍。",
+        "src": "https://en.wikipedia.org/wiki/Sublime_(band)",
+        "src2": "https://ultimateclassicrock.com/sublime-bradley-nowell-death/",
+        "from": "new"
+      },
+      {
+        "f": "1996 年 7 月 30 日《Sublime》在 Nowell 過世約兩個月後發行，日後獲 RIAA 鑽石認證。",
+        "src": "https://en.wikipedia.org/wiki/Sublime_(album)",
+        "src2": "https://en.wikipedia.org/wiki/Sublime_(band)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "自題專輯美國銷量各處口徑不一（UCR 寫逾 600 萬張、維基專輯條目寫 2024 年 4 月約 700 萬張、鑽石認證 1000 萬），facts 只寫鑽石認證。最後一場演出地：diffuser 寫前一晚在 Petaluma 的 Phoenix Theater（單源），維基樂團條目只寫 5 月 24 日最後一場；facts 只寫日期。"
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫為空，從零查。八次：維基 Sublime（樂團）、WebSearch（Nowell 之死與專輯）、Ultimate Classic Rock 訃聞文章、Diffuser 二十週年文章、維基 Sublime（專輯）、維基 Bradley Nowell、WebSearch（後輩影響）、Top Shelf 雷鬼搖滾史；無失敗請求。三條維基同站不同條目，非獨立。雷鬼搖滾影響這條只有 Top Shelf 單源（另有搜尋摘要 tribes.org 等，未開頁）：稱 Sublime 把 sample 過的老雷鬼與龐克樂器結合、在 1990 年代初的長灘開創雷鬼搖滾，Nowell 找 Miles Doughty 與 Kyle McDonald 等人現場演出、後來成為 Slightly Stoopid，之後有 Dirty Heads、Rebelution 等，故本層 legacy 沒有雙源的後輩點名，寫作層以故事細節為主。poolAlbums 四張皆為此團（40oz. to Freedom、Robbin' the Hood、Sublime、Until the Sun Explodes），無同名混卡。"
   }
 ]
