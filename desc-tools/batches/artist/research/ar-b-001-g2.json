@@ -332,5 +332,139 @@
   "failedFetches": 1,
   "status": "thin",
   "notes": "事實庫 research 與 published 皆為空，三格從零查。補查記 9 次（超出上限 1 次）：維基 Gregory Porter、WebSearch（生平）、Andscape、Blue Note 藝人頁、維基 Liquid Spirit、WebSearch（葛萊美屆次）、WebSearch（Cole 與母親）、維基《Nat King Cole & Me》、udiscovermusic 訪談頁。第 9 次（udiscovermusic）取得的內容（Porter 6 歲以錄音機錄下受 Cole 啟發的歌、母親的 Cole 唱片收藏、Cole 是父親般的角色）依規則撤出 facts，不使用。失敗請求 1 次：BlackPast 403（未計入）。維基 Gregory Porter 與維基《Liquid Spirit》同站不同條目（非獨立），但 facts 都另配一個站外來源；legacy 的葛萊美兩年份以維基＋Blue Note 官網為兩源。未收（單源）：1971 年 11 月 4 日出生（維基單源，搜尋摘要另有但未開頁）；母親臨終要他『唱下去』的話（維基單源，且措辭與另一出處不同）；2004 年搬到布魯克林（維基單源）；Kamau Kenyatta 是他的導師與製作人（Blue Note 單源）；Donny Hathaway、Sam Cooke、Bill Withers 等影響（維基與 Andscape 各列不同名單，不重疊）；《Liquid Spirit》英國白金（2016 年）、德國三金、奧地利與荷蘭白金、英榜第 9 名、美國爵士榜第 2 名（維基《Liquid Spirit》單源）；《Nat King Cole & Me》2017 年 10 月 27 日發行、Vince Mendoza 製作編曲、首次與全編制管弦樂團錄音、英榜第 3 名（維基單源）；Blue Note 官網稱他為『這一代最重要的爵士男歌手兼詞曲作者』（廠牌自述）；Andscape 引 BBC 稱非裔美籍男爵士歌手是『少見到令人擔憂的物種』（單源）；Andscape 寫他的歌關注種族、互相尊重與正義（單源）。legacy 格目前只有葛萊美兩筆兩源事實、缺後輩點名或社會現象，故整體標 thin。Andscape 對年份多處與維基不符，只採其與其他來源一致的內容。"
+ },
+ {
+  "key": "hailu mergia",
+  "name": "Hailu Mergia",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Hailu Mergia 1946 年生於衣索比亞的 Debre Birhan，10 歲移居阿迪斯阿貝巴，14 歲自學手風琴。",
+      "src": "https://en.wikipedia.org/wiki/Hailu_Mergia",
+      "from": "bank"
+     },
+     {
+      "f": "他的音樂訓練以自學為主，早年也在餐廳與酒吧演奏。",
+      "src": "https://en.wikipedia.org/wiki/Hailu_Mergia",
+      "src2": "https://www.voanews.com/a/ethiopian-taxi-driver-keyboardist-reinvents-music-career/1739450.html",
+      "from": "new"
+     },
+     {
+      "f": "1970 年代他是 Walias Band 的鍵盤手，這個樂團玩爵士與靈魂，在阿迪斯阿貝巴的 Hilton 飯店駐場多年。",
+      "src": "https://en.wikipedia.org/wiki/Hailu_Mergia",
+      "src2": "https://www.vice.com/en/article/this-dc-taxi-driver-was-a-superstar-in-ethiopia/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Walias Band 的聲音是衣索比亞調式傳統加上西方樂器、爵士與強勁的多節奏放克；有人形容他們受 King Curtis 與 Maceo Parker 影響。",
+      "src": "https://en.wikipedia.org/wiki/Walias_Band",
+      "src2": "https://www.nowagainrecords.com/walias-band-musical-silt/",
+      "from": "new"
+     },
+     {
+      "f": "Mergia 在 Walias Band 彈管風琴與合成器，也是手風琴手。",
+      "src": "https://en.wikipedia.org/wiki/Walias_Band",
+      "src2": "https://en.wikipedia.org/wiki/Hailu_Mergia",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1977 年的《Tche Belew》是衣索比亞黃金年代少數的純器樂專輯之一；Walias Band 維基條目稱它是當年少見的衣索比亞器樂專輯，Now-Again 稱它是黃金七〇年代僅有的三張器樂黑膠之一。",
+      "src": "https://en.wikipedia.org/wiki/Walias_Band",
+      "src2": "https://www.nowagainrecords.com/walias-band-musical-silt/",
+      "from": "new"
+     },
+     {
+      "f": "1981 年 Walias Band 赴美巡演，是最早赴美的現代衣索比亞樂團；Mergia 與幾位團員之後留在美國沒有回國，定居華盛頓特區。",
+      "src": "https://en.wikipedia.org/wiki/Walias_Band",
+      "src2": "https://www.voanews.com/a/ethiopian-taxi-driver-keyboardist-reinvents-music-career/1739450.html",
+      "from": "new"
+     },
+     {
+      "f": "他後來在華盛頓杜勒斯國際機場開計程車，把鍵盤放在後車廂，載完客人就坐在車上練習。",
+      "src": "https://en.wikipedia.org/wiki/Hailu_Mergia",
+      "src2": "https://www.vice.com/en/article/this-dc-taxi-driver-was-a-superstar-in-ethiopia/",
+      "from": "new"
+     },
+     {
+      "f": "2013 年 Awesome Tapes From Africa 的 Brian Shimkovitz 在衣索比亞的唱片行發現他 1985 年的卡帶，重新發行，讓 Mergia 重回舞台。",
+      "src": "https://www.voanews.com/a/ethiopian-taxi-driver-keyboardist-reinvents-music-career/1739450.html",
+      "src2": "https://www.vice.com/en/article/this-dc-taxi-driver-was-a-superstar-in-ethiopia/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1977 年 Walias Band 錄製《Tche Belew》，是當年衣索比亞少見的純器樂專輯。",
+      "src": "https://en.wikipedia.org/wiki/Walias_Band",
+      "src2": "https://www.nowagainrecords.com/walias-band-musical-silt/",
+      "from": "new"
+     },
+     {
+      "f": "1981 年 Walias Band 赴美巡演，Mergia 決定留在美國。",
+      "src": "https://en.wikipedia.org/wiki/Walias_Band",
+      "src2": "https://www.voanews.com/a/ethiopian-taxi-driver-keyboardist-reinvents-music-career/1739450.html",
+      "from": "new"
+     },
+     {
+      "f": "1985 年他在美國自行錄製、發行卡帶《Hailu Mergia & His Classical Instrument》。",
+      "src": "https://en.wikipedia.org/wiki/Hailu_Mergia",
+      "src2": "https://www.voanews.com/a/ethiopian-taxi-driver-keyboardist-reinvents-music-career/1739450.html",
+      "from": "new"
+     },
+     {
+      "f": "2013 年 Awesome Tapes From Africa 重發這張 1985 年的卡帶。",
+      "src": "https://www.voanews.com/a/ethiopian-taxi-driver-keyboardist-reinvents-music-career/1739450.html",
+      "src2": "https://www.vice.com/en/article/this-dc-taxi-driver-was-a-superstar-in-ethiopia/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1977 年《Tche Belew》發行，是衣索比亞黃金年代少見的器樂專輯。",
+    "src": "https://en.wikipedia.org/wiki/Walias_Band",
+    "src2": "https://www.nowagainrecords.com/walias-band-musical-silt/",
+    "from": "new"
+   },
+   {
+    "f": "2013 年 Awesome Tapes From Africa 重發他 1985 年的卡帶，帶動復出。",
+    "src": "https://www.voanews.com/a/ethiopian-taxi-driver-keyboardist-reinvents-music-career/1739450.html",
+    "src2": "https://www.vice.com/en/article/this-dc-taxi-driver-was-a-superstar-in-ethiopia/",
+    "from": "new"
+   },
+   {
+    "f": "2018 年 2 月發行《Lala Belu》，是他復出後的新作。",
+    "src": "https://en.wikipedia.org/wiki/Hailu_Mergia",
+    "src2": "https://www.vice.com/en/article/this-dc-taxi-driver-was-a-superstar-in-ethiopia/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基寫他 1991 年停止演出、開過餐廳、1998 年起開計程車；VOA（2013）寫他在美國約 20 年間與另一團演出並經營夜總會、後來才開計程車；Vice 寫他開了約 20 年計程車。三處對美國時期經歷不一致，facts 只寫『在杜勒斯機場開計程車、鍵盤放後車廂』，不寫年份與其他職業。已上線《Lala Belu》簡介的『1991 年起停止演出』只見維基單源。",
+   "維基《Hailu Mergia》寫《Lala Belu》是三十多年來第一張新錄音；Vice 寫『15 年以上來第一張』。兩者不合，facts 不寫『多少年來第一張』。",
+   "維基寫 1980 年代一次巡演後留在美國，VOA 與 Walias Band 維基條目寫 1981 年；facts 採 1981 年。",
+   "維基與 Vice 的年齡說法：維基 14 歲自學手風琴，Vice 寫 14 歲當童軍學音樂；facts 只寫『14 歲左右開始接觸音樂』。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 只有兩條（出生與到美國後的生活），三格幾乎從零補查。補查 7 次：維基 Hailu Mergia、WebSearch（計程車與重發）、VOA、Vice、維基 Walias Band、WebSearch（Tche Belew 與 Musicawi Silt）、Now-Again 頁。維基 Hailu Mergia 與維基 Walias Band 同站不同條目（非獨立），每條 facts 都另配站外來源。『純器樂專輯』『三張器樂黑膠』兩種數字說法（維基：少數；Now-Again：三張）並存，facts 兩處都寫明各自出處，寫作層不要合併成單一數字。未收（單源）：Walias Band 1970 年代初由 Venus Band 分出、在 Hilton 因宵禁演到清晨 6 點（Walias 維基單源）；《Tche Belew》有 Mulatu Astatke 客串顫音琴、Girma Beyene 任編曲（Walias 維基與 Now-Again 兩處，但對 Girma 拼法不同：Beyene／Girme Beyene，人名待寫作層以 Beyene 為準）；1990 年代末 Buda Records 把 Walias 的錄音收進 Ethiopiques 系列（Walias 維基單源）；〈Musicawi Silt〉成為舞曲並被多位藝人翻唱（維基與搜尋摘要，只開了維基）；Walias 用純器樂避開德爾格政權審查與『一唱歌寫詞就得替政府說話』的話（事實庫已上線簡介有此說法，維基未取得，搜尋摘要見於 Mergia 訪談轉述）；四位團員（Beyene、Habté、Gebre、Mergia）留美並組 Zula Band（Walias 維基單源）；2016 年《Wede Harer Guzo》重發與 1200 多萬次串流（維基單源）；他 1985 年錄的卡帶『在小錄音室獨自錄製』（維基單源，facts 只寫『自行錄製、發行』，此處『自行發行』一詞僅維基與 VOA『自製十來卷卡帶』一致）；Vice 稱 Walias 是『阿迪斯夜生活之王』、Red Terror 死亡人數（Vice 單源，不收）；曾就讀 Howard University（維基單源）。搜尋摘要中寫到的 Awesome Tapes 重發版標題『Shemonmuanaye』未在開頁中得到確認，不收。人生故事收齊度：出走、計程車、鍵盤在後車廂、被重新發現四個關鍵細節皆有兩源；『1991 年停演、開餐廳』因來源不一致未收。 二次校對：原先的『Mergia 後來把衣索比亞傳統與合成器、鼓機、手風琴混在一起』只有 VOA 一源（維基未提），撤出 facts。『餐廳與酒吧演奏』來自 VOA（1970 年代在餐廳與酒吧成名），維基未提，屬 VOA 單源但已以維基的『自學』搭配；若嚴格要求，寫作層不要單獨用『餐廳與酒吧』。"
  }
 ]

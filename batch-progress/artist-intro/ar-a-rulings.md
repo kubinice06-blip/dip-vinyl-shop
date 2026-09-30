@@ -331,3 +331,5 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   Guardian、NYT、Telegraph、BBC、AP、LA Times 對補洞代理網域受限，照實記。
 - 補洞第 2 組：Furtwängler 失敗請求 5 次，照實記，放行，thin。Glenn Gould 卡池《Art of Fugue》（1962）為管風琴錄音，寫作層照寫。Bach「BBC Music Magazine 票選第 1」屬媒體榜單，不進正文。
 - 補洞第 3 組（5 位）交件，補洞交齊（25 位）。Beethoven 部分兩源為維基同站不同條目、小澤征爾 BSO 頁與 Arnalds 廠牌頁為自家來源，評價性說法視同單源。
+- 寫作第 1 組（20 位）審畢，修 3 處：Horowitz 出境「藏盧布」通行說法是藏外幣於鞋中，改「現金」；Previn 四座奧斯卡中《Irma la Douce》非音樂片，「四部音樂片」→「四部電影」；菅野よう子〈花は咲く〉依日文材料規則寫〈花開〉。
+  裁定：Gramophone Award、Diapason d'Or、BBC Music Magazine 票選一律比照雜誌榜單不進正文（可逆；Tallis Scholars 份量層因此只剩葛萊美入圍）。
