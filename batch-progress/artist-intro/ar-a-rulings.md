@@ -266,3 +266,7 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   4. Pet Shop Boys 半形空格。
   主線親驗：Taylor Swift 2026 年入選 Songwriters Hall of Fame、最年輕女性入選者（CBS、PBS）。
 - 補洞第 4 組：Fela Kuti 兩則上線簡介錯誤 → pubIssues（母親 1978-04-13 過世，距突襲逾一年，非「昏迷約八週」；「78 歲」「空棺」兩源皆不支持）。SHINee 鐘鉉死因單源不收。
+
+### ar-a-015
+
+- 補洞第 1 組：pubIssues 3 條（Umm Kulthum 兩張簡介的調式互相矛盾、R.D. Burman《Amar Prem》曲名、Ali Farka Touré《Niafunké》「灌溉工程」查無出處）。Umm Kulthum 葬禮人數兩源口徑不一（約 400 萬／200–400 萬），寫作層寫「數百萬」。

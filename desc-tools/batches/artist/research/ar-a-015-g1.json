@@ -700,5 +700,523 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "事實庫已有日文維基與官網小傳，origin 與 sound 多數 bank 可用；legacy 全靠補查。搜尋 8 次：日文維基「りんけんバンド」（摘要很薄）、WebSearch、官網 biography 年表、Borderink 的 note 文章（只有目次，幾乎無內容，仍計 1 次）、Billboard JAPAN OKINAWAN ROCK 專題、地域芸能インタビュー（照屋林賢）、日文維基「照屋林賢」、日文維基「沖縄音楽」；失敗 2 次：KKBOX 403、日文維基「沖縄ポップ」404。單源留 notes：1985 年替 Orion 啤酒廣告演唱的〈ありがとう〉在沖繩走紅、1987 年由マルテルレコード以卡帶發行同名首張專輯（官網單源，era 因此為 none）；1990 年主要發行時，唱片公司要求把歌詞改成標準語，照屋林賢拒絕；他說「言葉を変えられるのは、舌を抜かれるのと一緒」（地域芸能訪談單源；寫作層若用需具名為訪談）；他們用電三線チェレン與 sequencer 開展新表現（同訪談單源）；Billboard JAPAN 說他們把民謠節奏換成八拍、發展出「沖繩搖滾」，且在喜納昌吉之後是『名實皆最成功』的樂團（Billboard 單源，屬「最」類宣稱未查反例，不入 facts）；官網記 1991 年到倫敦與法國演出、1992 年電影《パイナップルツアーズ》、1993 年楽曲用於 NHK 大河劇並入教科書、1995 年後到香港、夏威夷、菲律賓、印度、南美、非洲巡演（官網單源）；日文維基（照屋林賢）記 1994 年電影《ティンク・ティンク》監督與音樂（單源）；搜尋摘要稱 1990 年代沖繩音樂被廣泛熟悉的契機之一是りんけんバンド的主流出道，且 1992 年前後與ネーネーズ一起掀起全國熱潮（來源未開頁，不採）。沖繩音樂在日文維基『沖縄音楽』只是藝人列表，並無敘述性評價，故 legacy 第三條只證明『被列為代表』。日文維基兩個條目（りんけんバンド、照屋林賢、沖縄音楽）與官網屬不同出版者；日文維基彼此為同站不同條目，非獨立。名字裡的『国』等字在此組無誤判疑慮。本位未見同名混卡。"
+ },
+ {
+  "key": "a.r. rahman",
+  "name": "A.R. Rahman",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "A.R. Rahman 1967 年 1 月 6 日生於馬德拉斯（今欽奈），出生名 A.S. Dileep Kumar；父親 R.K. Shekhar 是電影作曲家。",
+      "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "src2": "https://www.britannica.com/biography/A-R-Rahman",
+      "from": "new"
+     },
+     {
+      "f": "他四歲開始學鋼琴，後來取得倫敦 Trinity College 的西方古典音樂資歷。",
+      "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "src2": "https://www.britannica.com/biography/A-R-Rahman",
+      "from": "new"
+     },
+     {
+      "f": "他二十出頭時改信伊斯蘭並改用現在的名字。",
+      "src": "https://www.britannica.com/biography/A-R-Rahman",
+      "src2": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "from": "new"
+     },
+     {
+      "f": "他先做廣告配樂，導演 Mani Ratnam 在一場頒獎典禮上聽到他的廣告作品後找上他，讓他為坦米爾語電影《Roja》（1992）作曲。",
+      "src": "https://en.wikipedia.org/wiki/Roja_(soundtrack)",
+      "src2": "https://www.britannica.com/biography/A-R-Rahman",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把傳統樂器與新的電子聲響和科技融合；《時代》2009 年的介紹文寫，他的本事是把許多種音樂綁在一起，做出既熟悉又新鮮的聲音。",
+      "src": "https://time.com/collections/the-2009-time-100/7374475/a-r-rahman/",
+      "src2": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "from": "new"
+     },
+     {
+      "f": "同一條目的〈Development〉段寫：Rahman 說他想做的是「把現代印度與舊印度混在一起」，但這部片與原聲帶「不是關於印度或印度文化，故事可以發生在任何地方」。Boyle「討厭濫情」，跟 Rahman 說「不准在我的片子裡放大提琴」，要的是有脈搏感（pulsey）、edgy、不壓過其他聲音的音樂。Rahman 說：「片子裡沒有很多提示段落。一般大片有 130 個，這部只有十七、十八個。」",
+      "src": "https://en.wikipedia.org/wiki/Slumdog_Millionaire_(soundtrack)",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Slumdog Millionaire》為他帶來第 81 屆奧斯卡最佳原創配樂與最佳原創歌曲〈Jai Ho〉兩座獎（得獎），另有金球獎最佳原創配樂與 BAFTA 最佳電影音樂（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "src2": "https://www.britannica.com/biography/A-R-Rahman",
+      "from": "new"
+     },
+     {
+      "f": "2009 年他入選《時代》雜誌全球百大影響力人物。",
+      "src": "https://time.com/collections/the-2009-time-100/7374475/a-r-rahman/",
+      "src2": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "from": "new"
+     },
+     {
+      "f": "《Roja》原聲帶被《時代》雜誌列入影史十大原聲帶名單。",
+      "src": "https://en.wikipedia.org/wiki/Roja_(soundtrack)",
+      "src2": "https://www.dnaindia.com/entertainment/report-roja-on-time-magazine-s-10-best-ost-list-1131976",
+      "from": "new"
+     },
+     {
+      "f": "他 2000 年獲 Padma Shri、2010 年獲 Padma Bhushan（印度第三高平民榮譽）。",
+      "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "src2": "https://www.britannica.com/biography/A-R-Rahman",
+      "from": "new"
+     },
+     {
+      "f": "他被稱為「Mozart of Madras」。",
+      "src": "https://time.com/collections/the-2009-time-100/7374475/a-r-rahman/",
+      "src2": "https://www.britannica.com/biography/A-R-Rahman",
+      "from": "new"
+     },
+     {
+      "f": "他憑出道作《Roja》拿下印度國家電影獎最佳音樂導演。",
+      "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "src2": "https://www.britannica.com/biography/A-R-Rahman",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1992 年他為 Mani Ratnam 的《Roja》作曲，是他的電影出道作。",
+      "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+      "src2": "https://www.britannica.com/biography/A-R-Rahman",
+      "from": "new"
+     },
+     {
+      "f": "英文維基〈Dil Se..〉開頭寫：1998 年 Mani Ratnam 編劇並執導的印地語愛情驚悚片；這部片被認為是 Ratnam 三部曲的最後一部，前兩部是《Roja》(1992) 與《Bombay》(1995)；A.R. Rahman 作曲的原聲帶在印度賣出六百萬張。",
+      "src": "https://en.wikipedia.org/wiki/Dil_Se..",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1992 年《Roja》出道，並拿下印度國家電影獎最佳音樂導演。",
+    "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+    "src2": "https://www.britannica.com/biography/A-R-Rahman",
+    "from": "new"
+   },
+   {
+    "f": "《Slumdog Millionaire》拿下兩座奧斯卡、金球獎與 BAFTA。",
+    "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+    "src2": "https://www.britannica.com/biography/A-R-Rahman",
+    "from": "new"
+   },
+   {
+    "f": "2010 年獲 Padma Bhushan。",
+    "src": "https://en.wikipedia.org/wiki/A._R._Rahman",
+    "src2": "https://www.britannica.com/biography/A-R-Rahman",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "改信伊斯蘭的年齡：維基寫 23 歲（1989 年），但他 1967 年 1 月出生、1989 年應為 22 或 23 歲，Britannica 只寫二十出頭；facts 只寫『二十出頭』。",
+   "本層開頁確認：上線 Roja 簡介寫『首位以出道作獲獎者』與『《時代》2005 年列入十大原聲帶』，維基 Roja 原聲帶條目支持（『首位』屬單源，見 notes）；『放棄去 Berklee 唸書』未在本層來源出現，未驗證。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 只有專輯層級的三條（維基），origin 與 legacy 全靠補查，sound 一條新查＋一條 bank，era 用一條新查＋一條 bank（Dil Se）。搜尋 8 次：維基 A. R. Rahman（2 次不同 prompt）、Britannica、WebSearch（Roja 與 Time）、維基 Roja 原聲帶、DNA India、WebSearch（影響與 Time 100）、Time 2009 百大專文。無失敗請求。單源留 notes：父親在他九歲時過世、家裡靠出租父親的樂器維生，他曾在 Ilaiyaraaja 的樂團彈鋼琴、參與數百部電影（維基單源）；Sufi 影響起於 1984 年妹妹重病（維基單源）；Panchathan Record Inn 是他自家後院的錄音室、『印度最先進』之說（維基單源；維基摘要兩處措辭不同）；累計銷量估 1.5 億張（維基單源）；《Roja》是國家獎史上第一位以出道作得獎的最佳音樂導演（維基 Roja 原聲帶單源，『第一』類宣稱，搜尋摘要另稱『唯一』，皆未查反例，不入 facts）；《Roja》坦米爾語與印地語版合計在印度賣逾 300 萬張、印地語版 280 萬張（維基單源）；Mani Ratnam 聽到〈Tamizha Tamizha〉的雛形（Kaveri 河水爭議）而當場簽下他（維基單源）；《時代》介紹文（Padma Lakshmi 執筆）寫他『為整整一代人提供了配樂』『影響了 Baz Luhrmann 等導演』（Time 單源）；2005 年 Richard Corliss 對《Roja》的評語『把外來影響煉化到完全是坦米爾、完全是 Rahman』（維基 Roja 單源）；Britannica 寫 2010 年葛萊美肯定了 Slumdog 原聲帶與〈Jai Ho〉但未寫得獎或入圍區分，故不入 facts；搜尋摘要稱他打破 Ilaiyaraaja 的管弦樂式做法、以電子音、極簡與電腦輔助剪接改變坦米爾電影（來源未開頁，只採維基『融合傳統樂器與電子聲響』一句）；bank 的 Vande Mataram 與 Nusrat 對唱『被稱為印巴之間第一次這種形式的合作』屬『第一』類、單源，未收。維基與 Time 專文互相獨立；維基三個條目（A. R. Rahman、Roja 原聲帶、Slumdog 原聲帶）為同站不同條目，非獨立，凡兩源皆維基者已避免，僅『Roja 十大原聲帶』用 DNA India 補獨立源。本位未見同名混卡。"
+ },
+ {
+  "key": "paco de lucía",
+  "name": "Paco de Lucía",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Paco de Lucía 1947 年 12 月 21 日生於西班牙安達魯西亞的 Algeciras，本名 Francisco Gustavo Sánchez Gómez；藝名取自葡萄牙裔的母親 Lucía Gomes。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "from": "new"
+     },
+     {
+      "f": "父親 Antonio 是吉他手，兩位哥哥 Ramón（Ramón de Algeciras）與 Pepe（Pepe de Lucía）也走上音樂這條路。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "from": "new"
+     },
+     {
+      "f": "他沒有受過學院式的音樂訓練，幼年主要由吉他手父親督促練琴。",
+      "src": "https://www.infobae.com/cultura/2024/02/25/a-diez-anos-de-la-muerte-de-paco-de-lucia-su-estrella-y-legado-musical-siguen-brillando/",
+      "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "from": "new"
+     },
+     {
+      "f": "2014 年 2 月，他在墨西哥度假時心臟病發過世，享年 66 歲。",
+      "src": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "src2": "https://es.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為「nuevo flamenco」（新佛朗明哥）的代表，把爵士和聲、bossa nova、古典與 salsa 等元素帶進佛朗明哥，也常用非傳統編制。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "from": "new"
+     },
+     {
+      "f": "1973 年《Fuente y caudal》裡的〈Entre dos aguas〉是加入邦哥鼓與電貝斯的 rumba flamenca，成為他的招牌曲，也讓佛朗明哥打進主流市場。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "from": "new"
+     },
+     {
+      "f": "他把秘魯的 cajón（木箱鼓）帶進佛朗明哥，這件打擊樂器後來成為當代佛朗明哥的固定成員。",
+      "src": "https://es.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.infobae.com/cultura/2024/02/25/a-diez-anos-de-la-muerte-de-paco-de-lucia-su-estrella-y-legado-musical-siguen-brillando/",
+      "from": "new"
+     },
+     {
+      "f": "這是 Paco de Lucía Sexteto 錄的第一張唱片。六重奏在 1981 年成軍，成員包括他的兩位兄長——歌手 Pepe de Lucía 與第二吉他 Ramón de Algeciras——以及貝斯手 Carles Benavent、吹長笛與薩克斯風的 Jorge Pardo、打擊手 Rubem Dantas。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被普遍視為史上最偉大的佛朗明哥吉他手：西班牙文維基稱他是「史上最佳佛朗明哥吉他手」，美聯社訃聞的標題稱他是世界最偉大的佛朗明哥吉他手。",
+      "src": "https://es.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "from": "new"
+     },
+     {
+      "f": "2004 年他獲西班牙 Prince of Asturias Award（藝術類）。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "from": "new"
+     },
+     {
+      "f": "1992 年獲西班牙美術功勳金質獎章（Medalla de Oro al Mérito en las Bellas Artes）。",
+      "src": "https://es.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "from": "new"
+     },
+     {
+      "f": "他與佛朗明哥歌手 Camarón de la Isla 是長年搭檔，Camarón 1992 年過世。",
+      "src": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+      "src2": "https://www.libertaddigital.com/cultura/musica/2019-02-24/5-anos-de-la-inesperada-muerte-de-paco-de-lucia-1276633612/",
+      "from": "new"
+     },
+     {
+      "f": "他過世後，故鄉 Algeciras 以雕像與規劃中的紀念中心紀念他。",
+      "src": "https://www.libertaddigital.com/cultura/musica/2019-02-24/5-anos-de-la-inesperada-muerte-de-paco-de-lucia-1276633612/",
+      "src2": "https://www.infobae.com/cultura/2024/02/25/a-diez-anos-de-la-muerte-de-paco-de-lucia-su-estrella-y-legado-musical-siguen-brillando/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1981 年是他極密集的一年：同年他與 John McLaughlin、Al Di Meola 的吉他三重奏發行現場專輯《Friday Night in San Francisco》，銷量破百萬並在美國與歐洲激起對佛朗明哥的興趣；1980 年 12 月在東京錄的《Castro Marín》也在同年問世。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1973 年〈Entre dos aguas〉成為招牌曲。",
+    "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+    "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+    "from": "new"
+   },
+   {
+    "f": "2004 年獲 Prince of Asturias Award（藝術類）。",
+    "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+    "src2": "https://www.csmonitor.com/Arts-Culture/Latest-News-Wires/2014/0226/Paco-de-Lucia-world-s-greatest-flamenco-guitarist-dies",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "死亡日與地點：英文維基、西班牙文維基與 Infobae 寫 2014 年 2 月 25 日、Playa del Carmen；CSMonitor（美聯社稿）與 Libertad Digital 寫 26 日（後者寫 Cancún）；facts 只寫『2014 年 2 月、墨西哥』。",
+   "父親啟蒙的年齡：英文維基寫 5 歲起每日最長 12 小時，西班牙文維基寫約 6 歲開始正式訓練，Infobae 寫 8 歲時父親給他吉他；facts 不寫年齡。CSMonitor 與 Infobae 皆稱他沒有正規音樂訓練，與維基『父親嚴格訓練』指的是不同層面，facts 寫成『沒有學院式訓練、由父親督促』。",
+   "首張專輯年齡：CSMonitor 寫 14 歲與 Pepe 錄首張，搜尋摘要寫 15 歲；facts 不寫。",
+   "上線 Sólo quiero caminar 簡介寫 1977 年利馬之行帶回 cajón；Infobae 說是看了 Chabuca Granda 的演出而採用；與上線簡介不矛盾（不同細節），不改。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫只有 Sólo quiero caminar 的三條（維基，全是 1981 年前後的樂團與專輯脈絡），origin 與 legacy 全靠補查；sound 有三條新查＋一條 bank，era 用 bank。搜尋 7 次：英文維基、WebSearch（訃聞）、CSMonitor（美聯社稿）、西班牙文維基、WebSearch（西語，luto 與 cajón）、Infobae 十週年專文、Libertad Digital 五週年專文；失敗 4 次：Britannica 404、NPR 503、Sunday Times（pressreader）403、NPR 逐字稿 503（達失敗上限，未再嘗試）。單源留 notes：〈Entre dos aguas〉是第一首登上西班牙銷售榜第一的佛朗明哥作品（Infobae 單源，屬『第一』類宣稱，未查反例）；1975 年 Madrid Teatro Real 演出時盤腿而坐的姿勢引起震驚（Infobae 單源）；『Most flamenco fans can trace the music's history to either Before Paco or After Paco』（維基引用的某來源，維基單源）；1962 年 Jerez 國際佛朗明哥藝術比賽特別獎（西班牙文維基單源）；兩座拉丁葛萊美與 Berklee 榮譽博士（CSMonitor 與西班牙文維基皆寫兩座拉丁葛萊美，Berklee 只有 CSMonitor）；2015 年身後入 Latin Songwriters Hall of Fame（維基單源）；與 Camarón 錄了 10 張唱片（CSMonitor 單源，搜尋摘要同）；CSMonitor 記他說『沒有技術就失去創作的自由』（單源）；Madrid 有地鐵站以他命名、Algeciras 公墓立像（Libertad Digital 單源）；Algeciras 造價 120 萬歐元的詮釋中心、Carnegie Hall 的『Paco de Lucía Legacy』音樂節（Infobae 單源）；CSMonitor 記美聯社稱『傑出的音樂家中他的音樂受到純粹派批評』（單源）。CSMonitor 與搜尋摘要中的 Fox News 同為美聯社稿，非獨立；英文與西班牙文維基為同站不同語言版本，非獨立；origin 第二條（父兄）與 sound 第三條（cajón 的維基＋Infobae）中兩源不全獨立，已在來源欄以 Infobae 或 CSMonitor 補獨立源，origin 第二條（父親與兄長）已改用英文維基＋CSMonitor，西班牙文維基亦一致。本位未見同名混卡。"
+ },
+ {
+  "key": "ray barretto",
+  "name": "Ray Barretto",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ray Barretto 1929 年 4 月 29 日生於紐約布魯克林，父母來自波多黎各，他在哈林與布朗克斯長大，聽的是波多黎各音樂與美國搖擺樂。",
+      "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+      "src2": "https://en.wikipedia.org/wiki/Ray_Barretto",
+      "from": "new"
+     },
+     {
+      "f": "他少年時入伍，駐在德國期間聽到 Dizzy Gillespie 有古巴打擊手 Chano Pozo 的錄音，決定走上專業 conga 手這條路。",
+      "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ray-barretto",
+      "from": "new"
+     },
+     {
+      "f": "他退伍後自學打 conga，1949 年前後回到哈林，在夜店與 jam session 裡磨練。",
+      "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ray-barretto",
+      "from": "new"
+     },
+     {
+      "f": "Barretto 2006 年 2 月 17 日於紐澤西 Hackensack 過世，享年 76 歲。",
+      "src": "https://en.wikipedia.org/wiki/Ray_Barretto",
+      "src2": "https://www.today.com/popculture/latin-jazz-figure-ray-barretto-dies-wbna11405273",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把 conga 帶進爵士與流行樂的核心；美聯社訃聞稱他把這件樂器整合進爵士，NEA 稱他是爵士界錄音最多的 conguero。",
+      "src": "https://www.today.com/popculture/latin-jazz-figure-ray-barretto-dies-wbna11405273",
+      "src2": "https://www.arts.gov/honors/jazz/ray-barretto",
+      "from": "new"
+     },
+     {
+      "f": "他的〈El Watusi〉走紅，打進 Billboard 前 20 名，是拉丁樂曲打進美國主流榜的少見例子。",
+      "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ray-barretto",
+      "from": "new"
+     },
+     {
+      "f": "他在 Fania 的《Acid》把 Latin、爵士與節奏藍調混在一起，Craft Recordings 形容它融合 salsa、boogaloo、Latin jazz 與一點迷幻；維基稱它是最具影響力的 boogaloo 專輯之一。",
+      "src": "https://craftrecordings.com/blogs/permanent-record/ray-barretto-acid-deepdive",
+      "src2": "https://en.wikipedia.org/wiki/Ray_Barretto",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2006 年獲選 NEA Jazz Master，他在受獎前不久過世。",
+      "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+      "src2": "https://en.wikipedia.org/wiki/Ray_Barretto",
+      "from": "new"
+     },
+     {
+      "f": "他與 Celia Cruz 合作的《Ritmo en el Corazón》為他拿下葛萊美獎（得獎），維基稱這是他唯一的一座葛萊美。",
+      "src": "https://en.wikipedia.org/wiki/Ray_Barretto",
+      "src2": "https://www.today.com/popculture/latin-jazz-figure-ray-barretto-dies-wbna11405273",
+      "from": "new"
+     },
+     {
+      "f": "1999 年入選 International Latin Music Hall of Fame。",
+      "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ray-barretto",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1957 年他加入 Tito Puente 的樂團，是他在拉丁樂壇冒出頭的起點。",
+      "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ray-barretto",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1957 年加入 Tito Puente 的樂團。",
+    "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+    "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ray-barretto",
+    "from": "new"
+   },
+   {
+    "f": "1999 年入選 International Latin Music Hall of Fame。",
+    "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+    "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ray-barretto",
+    "from": "new"
+   },
+   {
+    "f": "2006 年獲選 NEA Jazz Master。",
+    "src": "https://www.arts.gov/honors/jazz/ray-barretto",
+    "src2": "https://en.wikipedia.org/wiki/Ray_Barretto",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Acid》年份：維基與 Craft Recordings 寫 1968 年，Encyclopedia.com 寫 1967 年；卡池標 1968；facts 不寫年份。",
+   "NEA Jazz Master 年份：NEA 官網與維基寫 2006，美聯社訃聞（Today.com）寫 2005；採 NEA 官網 2006。",
+   "葛萊美年份：維基與 NEA 官網寫 1990，美聯社寫 1989（ceremony 為 1990 年、對應 1989 年作品，屬頒獎年與作品年之分）；facts 不寫年份。",
+   "〈El Watusi〉年份：維基寫 1962 年錄，NEA 寫 1962 年走紅、1963 年金唱片，Encyclopedia.com 寫 1963 年進前 20；facts 不寫年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫只有 MusicBrainz 兩條（生卒年單源、專輯清單），未採為事實，origin 與 legacy 全靠補查。搜尋 8 次：維基、WebSearch（訃聞）、Today.com（美聯社稿）、NEA 官網、WebSearch（Acid）、Craft Recordings 專文、WebSearch（起步經歷）、Encyclopedia.com 傳記；失敗 4 次：NMAAHC 403、All About Jazz 403、NPR 503、TigerBill's 404；NYT 連結工具無法抓取（未計）。單源留 notes：維基稱他是第一位把 conga 帶入爵士的美國出生打擊手（維基單源，『第一』類宣稱且未查反例，不入 facts）；〈El Watusi〉是第一首打進 Billboard 前 20 的拉丁樂曲（NEA 單源，『第一』類，不入 facts）；他是 Tito Puente 樂團裡接替 Mongo Santamaría 的人（Encyclopedia.com 單源）；1949 年回哈林後先在 Eddie Bonnemere 的 Latin Jazz Combo 拿到第一份固定工作、隨後跟 José Curbelo 四年（NEA 單源）；17 歲入伍、有氣喘與幽閉恐懼（Encyclopedia.com 單源）；Ritmo en el Corazón 的葛萊美類別為 Best Tropical Latin Performance（美聯社單源）；1992 年因不滿 salsa 商業化而組 New World Spirit、專注純爵士（Encyclopedia.com 單源）；最後一張專輯《Time Was — Time Is》得葛萊美提名（美聯社單源）；波多黎各總督的致哀談話（美聯社單源）；搜尋摘要稱他被稱為『King of the Hard Hands』（來源未開頁，不採）。維基與 NEA 官網、Encyclopedia.com、美聯社互相獨立；Today.com 為美聯社稿。legacy 格只有榮譽，缺後輩點名，屬地位偏弱。本位未見同名混卡。"
+ },
+ {
+  "key": "ali farka touré",
+  "name": "Ali Farka Touré",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ali Farka Touré 1939 年生於馬利北部尼日河畔，靠近 Timbuktu 一帶。",
+      "src": "https://en.wikipedia.org/wiki/Ali_Farka_Tour%C3%A9",
+      "src2": "https://www.cbsnews.com/news/african-musician-ali-farka-toure-dies/",
+      "from": "new"
+     },
+     {
+      "f": "他先學的是單弦樂器（gurkel／njarka），之後才轉彈吉他。",
+      "src": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+      "src2": "https://www.lehigh.edu/~amsp/2006/03/ali-farka-tour.html",
+      "from": "new"
+     },
+     {
+      "f": "2006 年 3 月，他在馬利首都 Bamako 的家中因骨癌過世。",
+      "src": "https://en.wikipedia.org/wiki/Ali_Farka_Tour%C3%A9",
+      "src2": "https://www.cbsnews.com/news/african-musician-ali-farka-toure-dies/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把馬利的傳統弦樂器與人聲，和美國藍調吉他融在一起，並認為藍調的根在西非——多數北美奴隸就是從那一帶被運走的。",
+      "src": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+      "src2": "https://www.cbsnews.com/news/african-musician-ali-farka-toure-dies/",
+      "from": "new"
+     },
+     {
+      "f": "他的聲音被稱為 Mali Blues 或 desert blues；他自己提到的西方啟發包括 Ray Charles、Otis Redding 與 John Lee Hooker。",
+      "src": "https://www.cbsnews.com/news/african-musician-ali-farka-toure-dies/",
+      "src2": "https://en.wikipedia.org/wiki/Ali_Farka_Tour%C3%A9",
+      "from": "new"
+     },
+     {
+      "f": "他用多種馬利語言演唱，維基記他在 1960 年代的全國才藝比賽中學會七種語言，平常唱 Songhay、Fulfulde、Tamasheq 或 Bambara；另一篇紀念文寫他唱 Peul 與 Tamasheck。",
+      "src": "https://en.wikipedia.org/wiki/Ali_Farka_Tour%C3%A9",
+      "src2": "https://www.lehigh.edu/~amsp/2006/03/ali-farka-tour.html",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1994 年他與美國吉他手 Ry Cooder 合作《Talking Timbuktu》，拿下他的第一座葛萊美（得獎），也是他打進國際的關鍵。",
+      "src": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+      "src2": "https://www.cbsnews.com/news/african-musician-ali-farka-toure-dies/",
+      "from": "new"
+     },
+     {
+      "f": "他與馬利同鄉 Toumani Diabaté 合作的《In the Heart of the Moon》也拿下葛萊美（得獎）。",
+      "src": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+      "src2": "https://www.cbsnews.com/news/african-musician-ali-farka-toure-dies/",
+      "from": "new"
+     },
+     {
+      "f": "2004 年他當上家鄉 Niafunké 的鎮長，該鎮後來成為愛好非洲音樂的人與觀光客的朝聖地。",
+      "src": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+      "src2": "https://www.cbsnews.com/news/african-musician-ali-farka-toure-dies/",
+      "from": "new"
+     },
+     {
+      "f": "他過世時馬利各地電台停播例行節目，改播他的歌。",
+      "src": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+      "src2": "https://www.voanews.com/a/a-13-2006-03-07-voa31/330288.html",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2004 年他當選 Niafunké 鎮長，並自掏腰包整修道路、開挖下水道渠、供給發電機的燃料，讓這個貧窮小鎮有電可用。",
+      "src": "https://en.wikipedia.org/wiki/Ali_Farka_Tour%C3%A9",
+      "src2": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1994 年與 Ry Cooder 合作《Talking Timbuktu》，拿下第一座葛萊美。",
+    "src": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+    "src2": "https://www.cbsnews.com/news/african-musician-ali-farka-toure-dies/",
+    "from": "new"
+   },
+   {
+    "f": "2004 年當上 Niafunké 鎮長。",
+    "src": "https://en.wikipedia.org/wiki/Ali_Farka_Tour%C3%A9",
+    "src2": "https://www.aljazeera.com/news/2006/3/7/ali-farka-toure-dies-in-mali",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "死亡日：維基與 CBS（美聯社稿）寫 2006 年 3 月 6 日，Al Jazeera 寫 3 月 7 日；facts 只寫 2006 年 3 月。年齡維基與 CBS 寫 66 或 67 歲，Al Jazeera 寫『六十多歲後段』，facts 不寫。",
+   "出生地：維基寫 Kanau（尼日河畔），Al Jazeera 與 CBS 寫 Timbuktu；facts 寫『馬利北部尼日河畔、靠近 Timbuktu 一帶』，不寫 Kanau。維基寫出生日 1939 年 10 月 31 日，只見單源，不入 facts。",
+   "葛萊美座數與年份：維基列出得獎 1994、2005、2010 年三次（含 2010 年 Ali & Toumani 的 Best Traditional World Music Album），美聯社與 Al Jazeera 寫『兩座』（第二座年份分別寫 2006、2009 等，互相不一致）；facts 只寫兩座已被多源確認的，不寫座數與第二座的年份。CBS 稿寫第二座『身後』，與 2006 年 2 月頒獎在他 3 月過世之前不合，不採。",
+   "VOA 頁面的摘要出現『2009 年 11 月過世』與『2009 年第二座葛萊美』兩處明顯錯誤（與其他所有來源不合），該頁只用於『電台停播節目』一句，其餘不採；請寫作層對這一句保守。",
+   "灌溉：上線 Niafunké 簡介寫『把音樂收入投進當地灌溉工程』；維基寫他自費整修道路、開挖下水道渠、供給發電機燃料，沒有灌溉。見 pubIssues。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Niafunké",
+    "claim": "他2004年還當上該鎮鎮長，並把音樂收入投進當地灌溉工程",
+    "problem": "英文維基寫他當鎮長後自費整修道路、開挖下水道渠與供給發電機燃料，沒有灌溉；本層開到的 Al Jazeera 與 CBS 也沒寫灌溉。灌溉一說本層無來源，建議店主查證或改寫成道路、渠道與電力。",
+    "src": "https://en.wikipedia.org/wiki/Ali_Farka_Tour%C3%A9"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全靠補查。搜尋 8 次：英文維基（2 次不同 prompt）、WebSearch 兩次（訃聞、影響）、Al Jazeera 訃聞、VOA、Lehigh 校內部落格、CBS News；失敗 3 次：Britannica 404、NPR 503、Washington Post 403。單源留 notes：家族屬桑海（Songhai）人（維基單源）；他是第一位在非洲大陸廣受歡迎的非洲藍調樂手，常被稱為『the African John Lee Hooker』（維基單源；搜尋摘要另載同句，來源未開頁）；他說第一次聽到 John Lee Hooker 時『不懂他們怎麼想出這種文化』（維基單源）；Rolling Stone『100 大吉他手』第 76 名、Spin『100 大吉他手』第 37 名（維基單源）；Farka 在母語意為驢子、象徵頑強，他是母親十個孩子中唯一存活者（維基單源）；他出身『貴族』階層、依習俗不得玩樂器（維基單源）；用一個罐頭做出第一把單弦樂器、1956 年看到幾內亞國家芭蕾舞團演出而決心學吉他（維基單源）；他的姪子 Afel Bocoum 自 1968 年起受他指導、兒子 Vieux Farka Touré 也是樂手（維基單源，且維基並無 Tinariwen、Bassekou Kouyaté 等人的影響記載）；馬利文化部稱『馬利失去最偉大的大使之一』、他依家人心願葬在 Timbuktu 附近（Al Jazeera 單源）；他的唱片公司稱他為『true original』，『單槍匹馬把 desert blues 帶到國際聽眾面前』（CBS 單源）；搜尋摘要稱他在 1990 年代北馬利圖阿雷格叛亂期間，以區域內各種語言歌唱協助平息衝突（來源未開頁，維基本人條目亦查無此事，不採）；學者 Manthia Diawara 把他的實驗精神連到 1960 年代巴馬科青年文化（Lehigh 單源）；『Ry Cooder 的製作帶來更高的融合度與光鮮質感』（Lehigh 單源，屬評論者意見）。CBS 與搜尋摘要中的 JazzTimes 為同一通訊稿系；Al Jazeera 與 CBS 獨立；維基與 Lehigh 獨立。name 中的『é』屬拉丁字母，無誤判疑慮。本位未見同名混卡。"
  }
 ]
