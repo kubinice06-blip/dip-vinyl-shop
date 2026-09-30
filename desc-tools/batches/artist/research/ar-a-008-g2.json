@@ -300,5 +300,142 @@
   "failedFetches": 3,
   "status": "full",
   "notes": "事實庫 research 為空。搜尋 8 次（超出上限 2 次，為補開第二源）：維基樂團頁、名人堂官網、WebSearch 成軍、WebSearch 獎項與銷量、維基《Their Greatest Hits》、WebSearch 國家錄音登錄、Britannica、bestclassicbands；取不到內容 3 次不計：Britannica 舊網址 404、Kennedy Center 官網 403、RIAA 頁（開得到但無認證內容）。已實際開頁：維基樂團頁、維基專輯頁、名人堂、Britannica the-Eagles、bestclassicbands。成軍年：維基寫 1971（9 月簽 Asylum），Britannica 寫「約 1971–1972」，兩源不完全一致，facts 不寫年份。名人堂官方（可具名單源）：Jimmy Buffett 引介辭稱『They put their thumb on the pulse of popular music』『soared above the rapidly changing landscape of America in the Seventies』，網址 https://www.rockhall.com/inductees/eagles ，寫作層可寫成『搖滾名人堂稱…』。單源未收（維基樂團頁）：Frey 來自密西根、曾與 J.D. Souther 組 Longbranch Pennywhistle，Henley 從德州帶著 Shiloh 來，兩人在 Troubadour 認識；Ronstadt 經理 John Boylan 找 Frey 與 Henley 組伴奏、後來 Meisner 與 Leadon 加入，Frey 與 Henley 在 Ronstadt 巡演途中決定自組樂團；1975 年 Leadon 離團後聲響轉向更硬的搖滾；累計銷量超過 2 億張（含美國 1 億張）、五首冠軍單曲與六張冠軍專輯、六座葛萊美、《Rolling Stone》2010 年百大藝人第 75 名、《Hotel California》美國銷量逾 2800 萬張、命名傳說；維基專輯頁單源：《Greatest Hits》1999 年 11 月 10 日成為 20 世紀美國最暢銷專輯（26 倍白金），2009 年後被《Thriller》超越，2018 年 8 月在新認證算法下重回第一、現為四倍鑽石（4000 萬份）。單源（Britannica）：Eagles 把 country rock 從『1960 年代末洛杉磯的地方另類』變成 1970 年代美國青年的主流聲音；Kennedy Center 頁面 403 未取得。僅見搜尋摘要：RIAA 稱 Eagles 同時握有史上認證銷量第一與第三的專輯（Billboard、RIAA、Grammy 標題同說，RIAA 頁開不到內容）。"
+ },
+ {
+  "key": "electric light orchestra",
+  "name": "Electric Light Orchestra",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Electric Light Orchestra 1970 年由 The Move 的 Roy Wood、Jeff Lynne 與鼓手 Bev Bevan 成立。",
+      "src": "https://en.wikipedia.org/wiki/Electric_Light_Orchestra",
+      "src2": "https://bestclassicbands.com/elo-rock-hall-induction-2017-4-8-17/",
+      "from": "new"
+     },
+     {
+      "f": "起點是接續 The Beatles 的路線，把交響樂器帶進搖滾：維基稱創團構想是讓搖滾『接著 The Beatles 停下的地方走』，搖滾名人堂官網也說 ELO 建立在 The Beatles 的基礎上。",
+      "src": "https://en.wikipedia.org/wiki/Electric_Light_Orchestra",
+      "src2": "https://www.rockhall.com/inductees/elo",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "ELO 把流行搖滾歌曲與弦樂等交響樂器結合；搖滾名人堂官網形容為『悅耳、搖擺的流行歌與交響樂器的結合』。",
+      "src": "https://www.rockhall.com/inductees/elo",
+      "src2": "https://en.wikipedia.org/wiki/Electric_Light_Orchestra",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2017 年 ELO 入選搖滾名人堂，名單為 Jeff Lynne、Roy Wood、Bev Bevan 與 Richard Tandy 四人，引介人是 George Harrison 的兒子 Dhani Harrison；4 月 7 日在紐約 Barclays Center 的典禮上，Lynne 與 Wood 出席，Bevan 與 Tandy 缺席。",
+      "src": "https://www.rockhall.com/inductees/elo",
+      "src2": "https://ultimateclassicrock.com/electric-light-orchestra-rock-and-roll-hall-of-fame/",
+      "from": "new"
+     },
+     {
+      "f": "Jeff Lynne 是 Traveling Wilburys 的成員，也與 George Harrison 有共同製作的合作；Dhani Harrison 在引介時特別提到父親與 Lynne 的這段搭檔。",
+      "src": "https://www.britannica.com/biography/Jeff-Lynne",
+      "src2": "https://ultimateclassicrock.com/electric-light-orchestra-rock-and-roll-hall-of-fame/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2017 年入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/elo",
+    "src2": "https://en.wikipedia.org/wiki/Electric_Light_Orchestra",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "搜尋摘要（來源不明的名人堂報導）寫樂團 1972 年成立；維基與 bestclassicbands 皆為 1970 年（1972 年是 Roy Wood 離團的年份），採 1970。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫 research 為空。搜尋 6 次：維基、Britannica topic 頁、WebSearch 名人堂、Ultimate Classic Rock、Best Classic Bands、名人堂官網 /inductees/elo；取不到內容 4 次不計：名人堂官網兩個猜錯的網址 404、Britannica Jeff Lynne 頁（只有導覽列，無傳記內容，但頁面確有『Traveling Wilburys 成員、製作 Tom Petty《Full Moon Fever》』字樣，故 Traveling Wilburys 一條用它當第一源）。已實際開頁：維基、Britannica ELO 頁（只確認分類與名人堂年份）、名人堂官網、UCR、bestclassicbands。名人堂官方（可具名單源）：官網稱 ELO 的作品是『a marriage of tuneful, rocking pop songs with instruments from the symphonic realm』，還混入『disco rhythms and electronic studio wizardry』；Dhani Harrison 稱『joyous hybrid rock classical harmonies, those killer songs』；網址 https://www.rockhall.com/inductees/elo 。單源未收：維基稱 Roy Wood 是創團構想者；1970–1986 年間賣出超過 5000 萬張、27 首英國 Top 40 與 15 首美國 Top 20、Billboard Hot 100 Top 40 最多首（20 首）而沒有冠軍的紀錄；Britannica 把 ELO 歸入 art rock、與 ELP 等同類（單源）；bestclassicbands：Dhani 童年看過 ELO 演唱會，形容『21 世紀、外星太空人帶著怪異樂器』，典禮開場 Lynne 帶領演唱 Chuck Berry〈Roll Over Beethoven〉悼念剛過世的 Berry，接著〈Evil Woman〉〈Mr. Blue Sky〉（單源）；UCR：Lynne 致詞稱這是『a long road』。維基寫伯明罕成軍（單源，未收）。"
+ },
+ {
+  "key": "emerson, lake & palmer",
+  "name": "Emerson, Lake & Palmer",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Emerson, Lake & Palmer 1970 年在倫敦成軍，三人各有來歷：鍵盤手 Keith Emerson 領導過 The Nice（1967–70），Greg Lake 是 King Crimson 的貝斯手兼主唱（1968–69），鼓手 Carl Palmer 是 Atomic Rooster 的共同創團者（1969–70）。",
+      "src": "https://www.britannica.com/topic/Emerson-Lake-and-Palmer",
+      "src2": "https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "ELP 把古典作品與搖滾結合，聲音的中心是合成器與鍵盤而不是吉他；Britannica 形容他們的風格混合古典、爵士、藍調、電子音樂與 Tin Pan Alley。",
+      "src": "https://www.britannica.com/topic/Emerson-Lake-and-Palmer",
+      "src2": "https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "ELP 是 1970 年代前衛搖滾（art rock）的代表團體之一，Britannica 稱他們在 art rock 的發展中佔有角色。",
+      "src": "https://www.britannica.com/topic/Emerson-Lake-and-Palmer",
+      "src2": "https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Keith Emerson 2016 年過世，享年 71 歲。",
+      "src": "https://bestclassicbands.com/keith-emerson-obituary-3-11-166666/",
+      "src2": "https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "維基專輯頁寫首張錄於 1970 年 7 月（Advision Studios），上線簡介寫 7 至 9 月；本層不採任一，未寫進 facts。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Emerson, Lake & Palmer",
+    "claim": "發行後樂團登上 1970 年懷特島音樂節，聲名自此打開",
+    "problem": "時序顛倒：專輯 1970 年 11 月 20 日才在英國發行（維基專輯頁），樂團的懷特島音樂節演出在同年 8 月底、專輯發行前（維基樂團頁：8 月 23 日普利茅斯首演後數週；維基專輯頁：樂團在音樂節上演奏專輯歌曲，令其成名）。建議改成「發行前，樂團先在 1970 年懷特島音樂節打開名聲」。第二獨立來源僅見搜尋摘要（Emerson 訃聞稱他們在懷特島音樂節上的突破表演之後才獲唱片合約），未開頁。",
+    "src": "https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer_(album)"
+   }
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "事實庫 research 為空。搜尋 6 次：維基樂團頁、Britannica、WebSearch（Emerson 訃聞）、bestclassicbands Emerson 訃聞、維基首張專輯頁（兩次不同提問）。已實際開頁：維基樂團頁、維基專輯頁、Britannica、bestclassicbands。legacy 一格偏薄：可得的共識評價只有 Britannica 與維基的 art rock／前衛搖滾定位。單源未收（維基樂團頁）：1970 年 8 月 23 日在 Plymouth Guildhall 首演，數週後的懷特島音樂節演出使其成名；估計全球銷量約 4800 萬張、美國九張金唱片；1970 年代流行的挖苦話『How do you spell pretentious? E-L-P.』；1979 年解散、1990 年代短暫重聚、2010 年 40 週年最後一場；Lake 2016 年 12 月過世，Palmer 成為唯一在世的創團成員。單源（bestclassicbands）：Emerson 2016 年 3 月 10 日在加州聖塔莫尼卡家中過世，報導稱他因神經損傷影響演奏而情緒低落，死因為自傷槍擊；稱他『became synonymous with his use of the Moog synthesizer, which he helped popularize』，並『developed rock arrangements from many classical compositions』；Lake 稱他有『remarkable talent as a musician and composer and his gift and passion to entertain』，Palmer 稱『Keith was a gentle soul…』。單源（Britannica）：長篇原創曲〈Tarkus〉與 29 分鐘的多軌作品〈Karn Evil 9〉、改編穆索斯基《Pictures at an Exhibition》；後期錄音『neither recaptured the passion of their earlier work』。單源（維基專輯頁）：首張〈The Barbarian〉是巴爾托克 1911 年《Allegro barbaro》的改編，巴爾托克遺孀在發行後不久來函要求更正署名（與上線簡介一致）；〈Lucky Man〉Lake 十二歲以木吉他寫成、尾段 Moog 獨奏是 Emerson 即興（與上線簡介一致）；首張英國第 4、美國第 18。僅見搜尋摘要：Emerson 被稱為搖滾鍵盤史上最偉大的鍵盤手之一。"
  }
 ]
