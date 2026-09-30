@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 90 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 91 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -94,3 +94,4 @@
 | ar-b-001 | Pino Daniele | Pino Daniele | 接在 1977 年首張《Terra mia》之後——那張當年只賣出約 6000 張 | 本次查證未找到『約 6000 張』的來源，需複核。 | https://it.wikipedia.org/wiki/Pino_Daniele |
 | ar-b-002 | Anouar Brahem | Barzakh | 1981 年赴巴黎四年 | 維基寫 1981 年赴巴黎；Brahem 官網寫 1982–1986，起年不一致（維基同條另寫 four years）。建議改寫成「赴巴黎約四年」或查第三源後定年。 | https://anouarbrahem.com/en/full-biography |
 | ar-b-002 | Art Tatum | God Is in the House | 那句話的原文是「各位女士先生，我彈鋼琴，但今晚上帝在場」 | 本層讀到的來源（NWE 與搜尋摘要）只有「I only play the piano, but tonight God is in the house」；「各位女士先生」前綴未在任何讀到的頁面出現，且此屬軼事、版本不一。建議刪去前綴或改標為傳說。 | https://www.newworldencyclopedia.org/entry/Art_Tatum |
+| ar-b-002 | Fats Navarro | The Fabulous Fats Navarro, Volume 1 | 他在 1950 年以 26 歲過世，生前只發過 78 轉與一張 10 吋。 | 池中《Fats Navarro Memorial Album》（BLP 5004，10 吋）是他 1950 年辭世後、1951 年才發行的紀念盤（事實庫 c135-a 與該卡簡介皆如此寫），所以「生前發過一張 10 吋」與同池另一張簡介不一致；本層未查到他生前另有 10 吋專輯，建議主線核對後改為「生前只發過 78 轉單曲」或刪去該句。 | https://www.jazzdisco.org/blue-note-records/catalog-5000-series/ |

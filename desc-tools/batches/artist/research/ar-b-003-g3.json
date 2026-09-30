@@ -445,6 +445,395 @@
     "searches": 8,
     "failedFetches": 1,
     "status": "full",
-    "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：poolAlbums 三張（Everything I Know About Love 2022、Bewitched 2023、A Matter of Time 2025）都是冰島籍歌手 Laufey，無同名混卡。搜尋 8 次：維基 Laufey (singer)、WebSearch（葛萊美）、grammy.com 藝人頁、Grapevine、Rolling Stone Canada（由 qc 轉址到 ca 子網域，同刊）、WebSearch（身世）、Classic FM、Berklee；失敗 1 次（NPR 503）。第二源說明：Grapevine 只證實 Bewitched 得獎與第一座葛萊美；Berklee 頁與 Classic FM 頁分別是校方與媒體介紹。獎項主詞：得獎的是專輯《Bewitched》與《A Matter of Time》（葛萊美網站頁列 2 勝 2 提名，兩次提名皆得獎），不是藝人個人獎。單源未收進 facts：(1) 4 月 23 日生日（維基與搜尋摘要）；她也在華盛頓特區長過一段時間（Berklee 單源）、上過 Iceland Got Talent（Berklee 單源）；(2) Berklee 稱《Bewitched》創下 Spotify 史上最大爵士專輯首週紀錄、累積逾 10 億次串流（Berklee 單源，搜尋摘要另有『史上最大爵士專輯 Spotify 首發』同說，未開頁）；(3) 冰島文化部長稱得獎是『冰島文化生活的勝利』、Grapevine 音樂獎年度藝人（Grapevine 單源）；(4) 維基載 2025 年入選 Time 年度女性、2026 年 1 月獲冰島獵鷹勳章騎士十字（維基單源）；(5) 引述她談 Taylor Swift 與 Carole King 是啟發她的女性詞曲作者（Rolling Stone Canada 單源）；(6) 她在 Berklee 前就讀 Reykjavík College of Music 2018 年畢業（Classic FM 單源）。第 5 條 sound 的引述為間接敘述，其中 『老派風格』為轉述。legacy 格沒有後輩點名，因為她仍在活躍期，共識評價只有兩次葛萊美與 Spotify 紀錄（單源）。"
+    "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：poolAlbums 三張（Everything I Know About Love 2022、Bewitched 2023、A Matter of Time 2025）都是冰島籍歌手 Laufey，無同名混卡。搜尋 8 次：維基 Laufey (singer)、WebSearch（葛萊美）、grammy.com 藝人頁、Grapevine、Rolling Stone Canada（由 qc 轉址到 ca 子網域，同刊）、WebSearch（身世）、Classic FM、Berklee；失敗 1 次（NPR 503）。第二源說明：Grapevine 只證實 Bewitched 得獎與第一座葛萊美；Berklee 頁與 Classic FM 頁分別是校方與媒體介紹。獎項主詞：得獎的是專輯《Bewitched》與《A Matter of Time》（葛萊美網站頁列 2 勝 2 提名，兩次提名皆得獎），不是藝人個人獎。單源未收進 facts：(1) 4 月 23 日生日（維基與搜尋摘要）；她也在華盛頓特區長過一段時間（Berklee 單源）、上過 Iceland Got Talent（Berklee 單源）；(2) Berklee 稱《Bewitched》創下 Spotify 史上最大爵士專輯首週紀錄、累積逾 10 億次串流（Berklee 單源，搜尋摘要另有『史上最大爵士專輯 Spotify 首發』同說，未開頁）；(3) 冰島文化部長稱得獎是『冰島文化生活的勝利』、Grapevine 音樂獎年度藝人（Grapevine 單源）；(4) 維基載 2025 年入選 Time 年度女性、2026 年 1 月獲冰島獵鷹勳章騎士十字（維基單源）；(5) 引述她談 Taylor Swift 與 Carole King 是啟發她的女性詞曲作者（Rolling Stone Canada 單源）；(6) 她在 Berklee 前就讀 Reykjavík College of Music 2018 年畢業（Classic FM 單源）。sound 第二條為轉述（原話大意：把老派風格的音樂帶給新聽眾）。legacy 格沒有後輩點名，因為她仍在活躍期，共識評價只有兩次葛萊美與 Spotify 紀錄（單源）。"
+  },
+  {
+    "key": "lennie tristano",
+    "name": "Lennie Tristano",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Lennie Tristano 1919 年 3 月 19 日生於芝加哥，1978 年 11 月 18 日在紐約過世，享年 59 歲。",
+            "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+            "src2": "https://www.britannica.com/biography/Lennie-Tristano",
+            "from": "new"
+          },
+          {
+            "f": "他幼年就全盲，仍在芝加哥的 American Conservatory of Music 讀完，1943 年取得音樂學士學位。",
+            "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+            "src2": "https://www.britannica.com/biography/Lennie-Tristano",
+            "from": "new"
+          },
+          {
+            "f": "1946 年他因為對爵士的興趣搬到紐約。",
+            "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+            "src2": "https://www.britannica.com/biography/Lennie-Tristano",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1949 年他的五重奏與六重奏錄下〈Intuition〉與〈Digression〉，是最早的集體自由即興錄音之一：進場順序事先排定，時間、調性與旋律都不預設；這比 Ornette Coleman 的自由爵士早了將近十年。",
+            "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+            "src2": "https://www.lennietristano.com/?page_id=97",
+            "from": "new"
+          },
+          {
+            "f": "他的即興以綿長的線條、對位與複雜的和聲見稱，是對 bebop 語彙的擴充；Britannica 稱他是 cool jazz 的重要人物。",
+            "src": "https://www.lennietristano.com/?page_id=97",
+            "src2": "https://www.britannica.com/biography/Lennie-Tristano",
+            "from": "new"
+          },
+          {
+            "f": "他 1955 年的 Atlantic 專輯用了疊錄與變速，當時在部分樂評與樂手之間引發爭議；1962 年的《The New Tristano》封面因此特別聲明沒有使用多軌、疊錄或變速。",
+            "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+            "src2": "https://en.wikipedia.org/wiki/The_New_Tristano",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1951 年在紐約開辦爵士學校，1956 年結束後改在家教學；重要學生包括薩克斯風手 Lee Konitz 與 Warne Marsh，以及吉他手 Billy Bauer。",
+            "src": "https://www.britannica.com/biography/Lennie-Tristano",
+            "src2": "https://www.lennietristano.com/?page_id=97",
+            "from": "new"
+          },
+          {
+            "f": "他 1979 年由樂評人票選入選 DownBeat 爵士名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+            "src2": "https://downbeat.com/archives/detail/downbeat-hall-of-fame",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1946 年搬到紐約，1949 年錄下自由即興的〈Intuition〉與〈Digression〉，1951 年開辦爵士學校。",
+            "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+            "src2": "https://www.britannica.com/biography/Lennie-Tristano",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1949 年錄下〈Intuition〉與〈Digression〉，最早的集體自由即興錄音之一。",
+        "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+        "src2": "https://www.lennietristano.com/?page_id=97",
+        "from": "new"
+      },
+      {
+        "f": "1951 年在紐約開辦爵士學校。",
+        "src": "https://www.britannica.com/biography/Lennie-Tristano",
+        "src2": "https://www.lennietristano.com/?page_id=97",
+        "from": "new"
+      },
+      {
+        "f": "1979 年入選 DownBeat 爵士名人堂（樂評人票選）。",
+        "src": "https://en.wikipedia.org/wiki/Lennie_Tristano",
+        "src2": "https://downbeat.com/archives/detail/downbeat-hall-of-fame",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "失明時間：維基寫 9 至 10 歲前後全盲，Britannica 寫『幼年』，lennietristano.com 寫『自嬰兒期起』；三者不一致，facts 只寫『幼年全盲』。",
+      "The New Tristano：Britannica 稱該專輯展現『多軌技法』，與維基引用的封面聲明（全片不用多軌、疊錄或變速）相反；採封面聲明與上線簡介，Britannica 該句視為錯誤或誤指前作，不收。錄音年：維基與上線簡介 1961，Britannica 寫 1960–62，採 1961。",
+      "『第一』類宣稱（第一個爵士學校、第一批自由即興錄音）：維基僅說『最早的集體自由即興』，Britannica 只說『早了將近十年』，lennietristano.com 稱『紐約第一所爵士學校』；為避免反例，facts 寫成『最早的……之一』，不寫『第一所』。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 三張（Lennie Tristano 1956、The New Tristano 1962、Descent Into the Maelstrom 1978）都是芝加哥鋼琴家 Lennie Tristano，無同名混卡。注意事實庫年份：卡池《Lennie Tristano》記 1956，維基把該專輯稱為 1955 年 Atlantic 專輯（1955 年錄音、1956 年發行；facts 只寫『1955 年的 Atlantic 專輯』時以維基為準，寫作層若寫年份需與卡池一致）。搜尋 7 次：維基 Lennie Tristano、WebSearch（自由即興與學生）、Britannica、lennietristano.com 傳記、WebSearch（Mose Allison／Bill Evans／名人堂）、維基 The New Tristano、DownBeat 名人堂列表頁；Billboard 名人堂報導轉址到 tollbit 第三方網域，未跟進（不算失敗請求）。非獨立提醒：維基 Lennie Tristano 與維基 The New Tristano 是同站不同條目；lennietristano.com 是紀念性質的專門網站。上線簡介 The New Tristano 與本層查到的事實一致（1961 年錄音、1962 年 2 月 Atlantic、封面聲明、七首中六首原創、Alan Broadbent 稱其為『獨奏爵士鋼琴專輯中無出其右』），Broadbent 引語與『多把標準曲和聲改寫為新線條』的描述僅見維基單源／無來源，非錯誤但列為單源。單源未收進 facts：(1) 母親是鋼琴家兼歌劇歌手、12 歲起在酒館彈琴（lennietristano.com／Britannica 單源）；1928 年進伊利諾盲人學校；(2) 維基載 Mose Allison 稱 Tristano 與 Bud Powell 是『現代鋼琴演奏的奠基者，因為幾乎人人都受兩人之一影響』（維基單源，搜尋摘要重述）；(3) 維基載他影響 Miles Davis《Birth of the Cool》、Gerry Mulligan、Dave Brubeck，並寫『批評者對其歷史地位看法分歧：影響力多限於自己圈內的樂手，或說他是 1940 年代現代爵士轉向更自由風格的關鍵』（維基單源）；(4) 維基載 1947 年 Metronome 年度樂手、2013 年《Crosscurrents》入葛萊美名人堂、2015 年 Ertegun 名人堂（維基單源，Billboard 名人堂報導因轉址未讀）；(5) Bill Evans 受 Tristano 長線條影響（僅搜尋摘要）；(6) 維基稱『被視為最早以結構化方式教爵士即興者之一』（單源，且屬『第一類』宣稱，放 notes 不放 facts）；(7) 維基引 Peter Ind 稱 1951–52 年為『爵士第一批即興疊錄錄音』（單源，且屬『第一』類宣稱）。輔助學生名單 Sal Mosca、Phil Woods、Charles Mingus、Connie Crothers 等僅 lennietristano.com 單源。"
+  },
+  {
+    "key": "lonnie liston smith",
+    "name": "Lonnie Liston Smith",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Lonnie Liston Smith 生於維吉尼亞州里奇蒙（Richmond），出身音樂世家；父親是福音團體 The Harmonizing Four 的成員。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://postgenre.org/peace-sound-lonnie-liston-smith-i/",
+            "from": "new"
+          },
+          {
+            "f": "弟弟 Donald Smith 有一副與父親相似的男高音，會彈鋼琴、吹長笛，後來在 Cosmic Echoes 擔任人聲與長笛。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://postgenre.org/peace-sound-lonnie-liston-smith-i/",
+            "from": "new"
+          },
+          {
+            "f": "他在巴爾的摩的 Morgan State University 讀音樂。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://www.styleweekly.com/a-cosmic-journey/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的招牌是以電鋼琴為核心、帶靈性主題的大氣爵士放克：既能跳舞、又有空間感，常配上向內的人聲。",
+            "src": "https://www.styleweekly.com/a-cosmic-journey/",
+            "src2": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "from": "new"
+          },
+          {
+            "f": "他在 Pharoah Sanders 的樂團彈鋼琴，參與過《Thembi》的錄音。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://postgenre.org/peace-sound-lonnie-liston-smith-i/",
+            "from": "new"
+          },
+          {
+            "f": "他也參與了 Miles Davis《On the Corner》的錄音。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://www.styleweekly.com/a-cosmic-journey/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "嘻哈藝人大量採樣他的作品；Jay-Z 就採樣過他的〈A Garden of Peace〉。",
+            "src": "https://www.styleweekly.com/a-cosmic-journey/",
+            "src2": "https://postgenre.org/peace-sound-lonnie-liston-smith-i/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1973 年他成立 Lonnie Liston Smith and the Cosmic Echoes，並在 Flying Dutchman 廠牌錄音；首張錄音室專輯《Astral Traveling》1973 年由 Bob Thiele 製作。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://en.wikipedia.org/wiki/Astral_Traveling",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "在 Art Blakey 的 Jazz Messengers 待多久：維基寫 1965 年底至 1966 年 4 月，Smith 自己在 PostGenre 訪談說約三天；兩說不一致，facts 不寫這段。",
+      "上線簡介 Cosmic Funk（1974、Flying Dutchman、Jason Heller《Strange Stars》舉〈Cosmic Funk〉為 sci-fi funk 例子、收 Footprints 與 Naima）與維基 Cosmic Funk 條目一致；Renaissance 簡介引『英文維基藝人條目把本作與 Loveland、Exotic Mysteries 並列』本次未逐句核對，也未見衝突。"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "searches": 7,
+    "failedFetches": 3,
+    "notes": "事實庫 research 為空（兩鍵都從零查），Lonnie Liston Smith 與 Lonnie Liston Smith & The Cosmic Echoes 是同一位鍵盤手與他的團名，兩個鍵的卡池專輯（Expansions 1975、Astral Traveling 1973、Renaissance 1976／Cosmic Funk 1974、Visions of a New World 1975、Reflections of a Golden Dream 1976）都是他，無同名混卡；兩筆共用同一批查證，寫作層可一併參考。搜尋 7 次：維基 Lonnie Liston Smith、WebSearch、Style Weekly、PostGenre 訪談、維基 Expansions、維基 Astral Traveling、維基 Cosmic Funk；失敗 3 次（Red Bull 頁內容為空、Jazzapedia 403、WhoSampled 403）。非獨立提醒：維基藝人條目與維基專輯條目為同站不同條目（origin 第 1、2 條之外的 era 條、legacy 兩源以 Style Weekly 與 PostGenre 為獨立來源）；PostGenre 是對本人的訪談，Style Weekly 是地方週報（里奇蒙）。單源未收進 facts：(1) 生日 1940 年 12 月 28 日、Morgan State 1961 音樂教育學士（維基單源）；(2) 維基載 1965 Roland Kirk、1968–1971 Pharoah Sanders、1971–1973 Gato Barbieri、1972–1973 Miles Davis 的年份；(3) 他自述『我想擴展人類的意識』（維基單源）、『十二小節的二十一世紀宇宙藍調』形容〈Astral Traveling〉並說是在《Thembi》錄音時偶然發現 Fender Rhodes 當場寫成（PostGenre 單源）；(4) Style Weekly 稱他 1970 年代出 11 張專輯、採樣過他作品的藝人超過 100 位（搜尋摘要另有同說，來源不明）、共同製作人 Michael Millions 稱他『從不追逐潮流，在自己的唱片上定調並留空間給別人發光』、2026 年 9 月里奇蒙兩場致敬音樂會（Style Weekly 單源）；(5) PostGenre 載 Jay-Z、Mary J. Blige、Rick Ross 採樣〈A Garden of Peace〉；facts 只寫兩源共同的 Jay-Z；(6) 維基載 Guru《Jazzmatazz, Vol. 1》（1993）邀他合作，〈Expansions〉出現在《Grand Theft Auto: Vice City》與《Driver: Parallel Lines》（維基單源）；(7) 維基 Expansions 條目引 AllMusic 五星評，稱它影響了 smooth jazz 與電子採樣圈（單源）；(8) 弟弟 Ray Smith 組 Jarmels（PostGenre 單源）。legacy 格偏薄：有出處的共識評價（名人堂、票選）沒有查到，僅有採樣現象一條兩源。"
+  },
+  {
+    "key": "lonnie liston smith & the cosmic echoes",
+    "name": "Lonnie Liston Smith & The Cosmic Echoes",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Lonnie Liston Smith 生於維吉尼亞州里奇蒙（Richmond），出身音樂世家；父親是福音團體 The Harmonizing Four 的成員。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://postgenre.org/peace-sound-lonnie-liston-smith-i/",
+            "from": "new"
+          },
+          {
+            "f": "弟弟 Donald Smith 有一副與父親相似的男高音，會彈鋼琴、吹長笛，後來在 Cosmic Echoes 擔任人聲與長笛。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://postgenre.org/peace-sound-lonnie-liston-smith-i/",
+            "from": "new"
+          },
+          {
+            "f": "他在巴爾的摩的 Morgan State University 讀音樂。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://www.styleweekly.com/a-cosmic-journey/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的招牌是以電鋼琴為核心、帶靈性主題的大氣爵士放克：既能跳舞、又有空間感，常配上向內的人聲。",
+            "src": "https://www.styleweekly.com/a-cosmic-journey/",
+            "src2": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "from": "new"
+          },
+          {
+            "f": "他在 Pharoah Sanders 的樂團彈鋼琴，參與過《Thembi》的錄音。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://postgenre.org/peace-sound-lonnie-liston-smith-i/",
+            "from": "new"
+          },
+          {
+            "f": "他也參與了 Miles Davis《On the Corner》的錄音。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://www.styleweekly.com/a-cosmic-journey/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "嘻哈藝人大量採樣他的作品；Jay-Z 就採樣過他的〈A Garden of Peace〉。",
+            "src": "https://www.styleweekly.com/a-cosmic-journey/",
+            "src2": "https://postgenre.org/peace-sound-lonnie-liston-smith-i/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1973 年他成立 Lonnie Liston Smith and the Cosmic Echoes，並在 Flying Dutchman 廠牌錄音；首張錄音室專輯《Astral Traveling》1973 年由 Bob Thiele 製作。",
+            "src": "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+            "src2": "https://en.wikipedia.org/wiki/Astral_Traveling",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "在 Art Blakey 的 Jazz Messengers 待多久：維基寫 1965 年底至 1966 年 4 月，Smith 自己在 PostGenre 訪談說約三天；兩說不一致，facts 不寫這段。",
+      "上線簡介 Cosmic Funk（1974、Flying Dutchman、Jason Heller《Strange Stars》舉〈Cosmic Funk〉為 sci-fi funk 例子、收 Footprints 與 Naima）與維基 Cosmic Funk 條目一致；Renaissance 簡介引『英文維基藝人條目把本作與 Loveland、Exotic Mysteries 並列』本次未逐句核對，也未見衝突。"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "searches": 0,
+    "failedFetches": 0,
+    "notes": "共用 key「lonnie liston smith」的查證，本鍵未另搜尋（0 次；實際 7 次搜尋與 3 次失敗請求記在 lonnie liston smith 那一筆，不分攤）。事實庫 research 為空（兩鍵都從零查），Lonnie Liston Smith 與 Lonnie Liston Smith & The Cosmic Echoes 是同一位鍵盤手與他的團名，兩個鍵的卡池專輯（Expansions 1975、Astral Traveling 1973、Renaissance 1976／Cosmic Funk 1974、Visions of a New World 1975、Reflections of a Golden Dream 1976）都是他，無同名混卡；兩筆共用同一批查證，寫作層可一併參考。搜尋 7 次：維基 Lonnie Liston Smith、WebSearch、Style Weekly、PostGenre 訪談、維基 Expansions、維基 Astral Traveling、維基 Cosmic Funk；失敗 3 次（Red Bull 頁內容為空、Jazzapedia 403、WhoSampled 403）。非獨立提醒：維基藝人條目與維基專輯條目為同站不同條目（origin 第 1、2 條之外的 era 條、legacy 兩源以 Style Weekly 與 PostGenre 為獨立來源）；PostGenre 是對本人的訪談，Style Weekly 是地方週報（里奇蒙）。單源未收進 facts：(1) 生日 1940 年 12 月 28 日、Morgan State 1961 音樂教育學士（維基單源）；(2) 維基載 1965 Roland Kirk、1968–1971 Pharoah Sanders、1971–1973 Gato Barbieri、1972–1973 Miles Davis 的年份；(3) 他自述『我想擴展人類的意識』（維基單源）、『十二小節的二十一世紀宇宙藍調』形容〈Astral Traveling〉並說是在《Thembi》錄音時偶然發現 Fender Rhodes 當場寫成（PostGenre 單源）；(4) Style Weekly 稱他 1970 年代出 11 張專輯、採樣過他作品的藝人超過 100 位（搜尋摘要另有同說，來源不明）、共同製作人 Michael Millions 稱他『從不追逐潮流，在自己的唱片上定調並留空間給別人發光』、2026 年 9 月里奇蒙兩場致敬音樂會（Style Weekly 單源）；(5) PostGenre 載 Jay-Z、Mary J. Blige、Rick Ross 採樣〈A Garden of Peace〉；facts 只寫兩源共同的 Jay-Z；(6) 維基載 Guru《Jazzmatazz, Vol. 1》（1993）邀他合作，〈Expansions〉出現在《Grand Theft Auto: Vice City》與《Driver: Parallel Lines》（維基單源）；(7) 維基 Expansions 條目引 AllMusic 五星評，稱它影響了 smooth jazz 與電子採樣圈（單源）；(8) 弟弟 Ray Smith 組 Jarmels（PostGenre 單源）。legacy 格偏薄：有出處的共識評價（名人堂、票選）沒有查到，僅有採樣現象一條兩源。"
+  },
+  {
+    "key": "machito",
+    "name": "Machito",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Machito（本名 Francisco Raúl Gutiérrez Grillo）在古巴哈瓦那長大，姊妹 Graciela 是歌手，兩人長期合作。",
+            "src": "https://en.wikipedia.org/wiki/Machito",
+            "src2": "https://fania.com/artist/machito/",
+            "from": "new"
+          },
+          {
+            "f": "他 1937 年移居紐約。",
+            "src": "https://en.wikipedia.org/wiki/Machito",
+            "src2": "https://www.newyorklatinculture.com/machito-and-his-afro-cubans/",
+            "from": "new"
+          },
+          {
+            "f": "Afro-Cubans 1940 年在紐約成立，由 Machito 領軍，他的姐夫、古巴小號手 Mario Bauzá 擔任音樂總監。",
+            "src": "https://en.wikipedia.org/wiki/Afro-Cubans_(band)",
+            "src2": "https://fania.com/artist/machito/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Afro-Cubans 把古巴節奏與爵士即興、大樂團編曲放進同一個團裡，當時的拉丁樂與搖擺樂大樂團原本各走各的。",
+            "src": "https://en.wikipedia.org/wiki/Machito",
+            "src2": "https://en.wikipedia.org/wiki/Afro-Cubans_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Bauzá 寫的〈Tanga〉是樂團的主題曲，被稱為第一首以 clave（古巴節奏型）寫成的原創美國爵士曲。",
+            "src": "https://www.newyorklatinculture.com/machito-and-his-afro-cubans/",
+            "src2": "https://www.knkx.org/jazz/infusing-african-rhythms-by-way-of-cuba-afro-cuban-jazz-flourished-in-the-us",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Machito 與 Afro-Cubans 被視為 Afro-Cuban jazz（Cubop，今日稱 Latin jazz）的開創者之一。",
+            "src": "https://en.wikipedia.org/wiki/Machito",
+            "src2": "https://www.newyorklatinculture.com/machito-and-his-afro-cubans/",
+            "from": "new"
+          },
+          {
+            "f": "1950 年代曼波熱潮中，樂團固定在紐約的 Palladium 舞廳演出，是當時最受歡迎的樂團之一。",
+            "src": "https://www.newyorklatinculture.com/machito-and-his-afro-cubans/",
+            "src2": "https://en.wikipedia.org/wiki/Afro-Cubans_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Dizzy Gillespie 曾到 Afro-Cubans 同台演出；Charlie Parker 也與 Machito 的樂團錄過 Chico O'Farrill 的 Afro-Cuban 組曲（1950 年）。",
+            "src": "https://www.newyorklatinculture.com/machito-and-his-afro-cubans/",
+            "src2": "https://en.wikipedia.org/wiki/Chico_O%27Farrill",
+            "from": "new"
+          },
+          {
+            "f": "Machito 以《Machito & His Salsa Big Band '82》拿下 1983 年第 25 屆葛萊美獎最佳拉丁錄音（Best Latin Recording，得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Machito",
+            "src2": "https://en.wikipedia.org/wiki/25th_Annual_Grammy_Awards",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1937 年他移居紐約，1940 年成立 Afro-Cubans，1950 年代在 Palladium 舞廳走紅，1983 年拿下葛萊美。",
+            "src": "https://en.wikipedia.org/wiki/Machito",
+            "src2": "https://www.newyorklatinculture.com/machito-and-his-afro-cubans/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1940 年在紐約成立 Afro-Cubans。",
+        "src": "https://en.wikipedia.org/wiki/Afro-Cubans_(band)",
+        "src2": "https://fania.com/artist/machito/",
+        "from": "new"
+      },
+      {
+        "f": "1983 年以《Machito & His Salsa Big Band '82》獲葛萊美最佳拉丁錄音（第 25 屆，得獎）。",
+        "src": "https://en.wikipedia.org/wiki/Machito",
+        "src2": "https://en.wikipedia.org/wiki/25th_Annual_Grammy_Awards",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生年與出生地：維基寫 1909 年 12 月 3 日（出生地有哈瓦那與佛羅里達州坦帕兩說），New York Latin Culture 寫 1907 年哈瓦那，Fania 寫 1908 年；三個年份對不上，事實庫 bank 沿用維基 1909。facts 只寫『在哈瓦那長大』，不寫生年與出生地。",
+      "Mario Bauzá 何時擔任音樂總監：事實庫 bank 與 Afro-Cubans 維基條目寫 1940 年成軍時即為音樂總監，Machito 維基條目與 New York Latin Culture 寫 1941 年初才加入；KNKX 則寫是 Bauzá 組了樂團、請姐夫 Machito 出面領軍。facts 不寫 Bauzá 加入年份與『誰先組團』，只寫 1940 年成軍與 Bauzá 是音樂總監；上線簡介『自 1940 年代起』不受影響。",
+      "〈Tanga〉年份：New York Latin Culture 搜尋摘要寫 1942、KNKX 頁寫 1943；facts 不寫年份。",
+      "上線簡介三篇與本層開頁所得無衝突（Machito 1940 年在紐約組成 Afro-Cubans、Mario Bauzá 為音樂總監、Herbie Mann 客座與 Bauzá 指揮等）。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 三張（Kenya 1957、With Flute to Boot 1959、Afro-Cuban Jazz: The Music of Chico O'Farrill 1956）都是古巴裔樂團領袖 Machito 與他的樂團，無同名混卡。注意《Afro-Cuban Jazz: The Music of Chico O'Farrill》是 Chico O'Farrill 作曲、Machito 樂團演奏的專輯，上線簡介已寫。搜尋 8 次：維基 Machito、WebSearch、New York Latin Culture、維基 Afro-Cubans (band)、WebSearch（Tanga／Gillespie）、KNKX、Fania 藝人頁、維基 25th Annual Grammy Awards；失敗 1 次（grammy.com 藝人頁 404）。非獨立提醒：維基 Machito／Afro-Cubans (band)／Chico O'Farrill／25th Annual Grammy Awards 為同站不同條目；Fania 是他晚年所屬廠牌目錄的藝人簡介（商業性質）；New York Latin Culture 是非官方文化網站。『第一首 clave 爵士曲』屬『第一』類宣稱，兩源（New York Latin Culture 與 KNKX）皆為同一說法且用『被稱為』，未查到明顯反例，但寫作層必須寫成『被稱為』。單源未收進 facts：(1) 維基載他 1937 年以歌手身分隨 Las Estrellas Habaneras 到紐約（New York Latin Culture 則說一開始在 Xavier Cugat 的樂團演奏）；(2) 維基載 1948 年錄〈Cubop City〉，Machito 以此為這種風格命名；1940 年 1 月 17 日結婚並把綽號由 Macho 改成 Machito；1984 年 4 月 15 日在倫敦 Ronnie Scott's 中風後於大學學院醫院過世；1985 年東哈林區路口命名 Machito Square（維基與 New York Latin Culture 都載 Machito Square 1985，Koch 市長——兩源，但屬身後紀念，facts 未收，寫作層可用：維基與 NYLC 皆支持）；(3) Fania 頁引 Tito Puente 稱他『el maestro』、稱他『被嚴重低估』、『少數同一首曲子裡既唱 coro 又唱 inspiraciones 的 Afro-Cuban 歌手』（Fania 單源）；(4) KNKX 引 Dizzy Gillespie 稱『古巴音樂對爵士影響最大』（KNKX 單源）；樂團名 the Afro-Cubans『是首次承認所謂拉丁節奏源於非洲』（KNKX 與搜尋摘要，同源）；(5) NYLC 稱 Machito 1943 年服役期間由 Graciela 帶團、是 Palladium『三大』樂團之一（與 Tito Puente、Tito Rodríguez；facts 只寫『最受歡迎的樂團之一』兩源版）；(6) 維基 Afro-Cubans 條目載 Bauzá 1976 年離團、後期錄音在 Pablo 與 Timeless；(7) 維基 Machito 條目列 George Shearing、Dizzy Gillespie、Charlie Parker、Cab Calloway、Stan Kenton 把 Machito 列為影響來源（維基單源，事實庫 bank 已有；第二源只支持 Gillespie／Parker／Kenton 合作，未支持『列為影響來源』，故 facts 改寫成合作事實）。修正：Machito Square 一項兩源（維基、NYLC）皆有，可作 legacy 補充。"
   }
 ]
