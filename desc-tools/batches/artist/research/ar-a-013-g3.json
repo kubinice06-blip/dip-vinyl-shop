@@ -376,5 +376,268 @@
   "status": "full",
   "pubIssues": [],
   "notes": "補查 7 次：(1) 英文維基 Cat Stevens；(2) Britannica Yusuf-Islam（WebFetch 讀到摘要式內容）；(3) 搖滾名人堂官網 Cat Stevens 頁；(4) WebSearch（Songwriters Hall of Fame 與後輩影響，只看摘要）；(5) ASCAP 2019 Songwriters Hall of Fame 報導；(6) Billboard 2019 訪談（Cathy Applefeld Olson）；(7) 英文維基 Tea for the Tillerman（WebFetch 讀取摘要）。失敗請求 3 次（未計入）：Britannica 直接 curl 403、AllMusic 藝人頁 403、catstevens.com 名人堂頁空內容。第二源皆為實際開頁讀到。事實庫此位只有 Catch Bull at Four 的上線簡介，research 為空。poolAlbums 五張皆 1970–1973 年 Cat Stevens 專輯，無同名混卡。\n名人堂官方（可具名單源）：搖滾名人堂官網稱『A true Seventies singer-songwriter—Cat Stevens gave hushed, mesmerizing performances. Stevens' body of work is one of sophistication, truth-seeking and creativity informed by spirituality. His music was both what he was looking for and his way of looking.』（https://www.rockhall.com/inductees/cat-stevens/，引介人 Art Garfunkel）；寫作層可寫成『搖滾名人堂稱⋯』。\n非獨立與限制：origin 第 1、legacy 第 3、era 各條的 Britannica 是獨立於維基的第二源；Billboard 為 Yusuf 本人受訪（自述）。sound 第 2 條 Billboard 與 ASCAP 兩篇對〈Wild World〉等代表作列舉的文字幾乎相同，是同一份新聞稿改寫（ASCAP 是 SHOF 新聞稿），標『非獨立』。sound 兩條：第 1 條靠他本人受訪與維基（自述性質），第 2 條 Tea for the Tillerman 維基條目與 Cat Stevens 維基條目同站，標『非獨立』；legacy 第 3 條同（《滾石》#206 與 Definitive 200 只見維基，Definitive 200 一句只見 Tea 條目）。\n單源未入 facts：《Mona Bone Jakon》1970 年的 madrigal 式聲音與 djembe、貝斯，〈Lady D'Arbanville〉英國第 8 名，Alun Davies 吉他搭檔（僅維基）；《Tea for the Tillerman》2003《滾石》500 大專輯第 206 名、RIAA 三白金（僅維基）；維基列出『稱他為音樂影響』者包括 Paul McCartney、Dolly Parton、Ian Anderson、Lindsey Buckingham、John Frusciante、Peter Gabriel、Nile Rodgers、Carly Simon、Bonnie 'Prince' Billy、Ville Valo 等（僅維基單源，且無各人原話出處，未入 facts）；〈The First Cut Is the Deepest〉Billboard 訪談稱原想寫給 Otis Redding 的靈魂樂風歌、維基稱此曲 2005、2006 年為他贏得 ASCAP 詞曲獎且被四位藝人翻紅（皆單源）；2004 年被美國拒絕入境事件、1989 年 Rushdie 爭議（僅維基，屬爭議，未收）；〈Peace Train〉創作起於越戰年代與火車節奏（僅 Billboard 自述）；曲名〈Father and Son〉以男中音與男高音一人分飾父子（僅維基）；電影《Harold and Maude》（1971）用了他兩首歌（僅維基）。\n人物故事層：肺結核（維基、Britannica、Billboard 三源，Billboard 說他 19 歲）、差點溺水與哥哥送《古蘭經》（維基、Britannica）、1977 年 12 月 23 日在倫敦 Regent's Park Mosque 皈依（僅維基有日期；facts 只寫 1977 年）、1978 改名（維基、Britannica、Billboard）、1979 賣吉他（維基、Britannica）、2006 復出（維基、Britannica）。維基另說他 1979 年 9 月 7 日結婚、之後曾買回至少一把吉他（單源）。\n改動（自查）：移進 notes 的單源或不獨立細節：1965 年以 Steve Adams 之名在漢默史密斯藝術學院期間演出、後改藝名 Cat Stevens（僅維基）；Billboard 與 ASCAP 對〈Wild World〉〈Father and Son〉等代表作的『evocative acoustic sound』描述（只在 Billboard 頁面實際讀到，ASCAP 頁面沒有該句，故不算雙源）；Dave Matthews 引介時說『His music remains a testament to the growth and revolution he has committed to』（僅 ASCAP）；1978《Back to Earth》為之後數十年最後一張商業發行（Billboard 導言與維基間接支持，Britannica 未點名專輯）；2006 年是睽違 28 年的新流行專輯（僅維基）。"
+ },
+ {
+  "key": "dolly parton",
+  "name": "Dolly Parton",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dolly Parton 1946 年 1 月 19 日生於田納西州東部 Sevier 郡（Pittman Center），是十二個孩子中的老四；父親是佃農，母親 Avie Lee 持家。",
+      "src": "https://en.wikipedia.org/wiki/Dolly_Parton",
+      "src2": "https://www.britannica.com/biography/Dolly-Parton",
+      "from": "new"
+     },
+     {
+      "f": "她在大煙山區（Smoky Mountains）的鄉下小村長大，家裡窮但有音樂；她的母親家族很有音樂細胞，母親常用山區民間故事與從英倫諸島傳到阿帕拉契的古老民謠哄孩子。",
+      "src": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "src2": "https://en.wikipedia.org/wiki/Dolly_Parton",
+      "from": "new"
+     },
+     {
+      "f": "她小時候就寫歌、上地方電台與電視唱歌；1964 年高中畢業後立刻前往納許維爾，想當歌手，也想以詞曲創作者立足。",
+      "src": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "src2": "https://www.britannica.com/biography/Dolly-Parton",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代後期她受 Grand Ole Opry 明星 Porter Wagoner 提攜，加入他的全國聯播電視節目，成為他的二重唱搭檔，1974 年轉向個人事業。",
+      "src": "https://www.britannica.com/biography/Dolly-Parton",
+      "src2": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的嗓音又高又甜，NPR 形容為「high and honeyed lilt」，能托住單一長音、帶輕柔的顫音；維基記錄她早期簽下的 Monument 廠牌甚至認為她異常高的女高音不適合唱鄉村。",
+      "src": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "src2": "https://en.wikipedia.org/wiki/Dolly_Parton",
+      "from": "new"
+     },
+     {
+      "f": "她的招牌是自己寫的歌：以樸實口語的語言寫山區童年、貧窮與夢想，帶著濃厚的民謠色彩與基督教家庭背景；〈Joshua〉〈Coat of Many Colors〉〈My Tennessee Mountain Home〉〈Jolene〉都是她自己寫的代表作。",
+      "src": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "src2": "https://en.wikipedia.org/wiki/Dolly_Parton",
+      "from": "new"
+     },
+     {
+      "f": "1970 年代中期她刻意把音樂帶向主流：1977 年〈Here You Come Again〉成為橫跨鄉村與流行的暢銷曲，隔年還嘗試迪斯可式的製作，同時堅稱自己沒有離開鄉村。",
+      "src": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "src2": "https://en.wikipedia.org/wiki/Dolly_Parton",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2026 年 8 月 25 日 Dolly Parton 在納許維爾逝世，享年 80 歲，公開的死因是短暫對抗癌症；訃告與追思遍及全美。",
+      "src": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "src2": "https://www.britannica.com/biography/Dolly-Parton",
+      "from": "new"
+     },
+     {
+      "f": "她 1999 年入選鄉村音樂名人堂（Country Music Hall of Fame），2006 年獲甘迺迪中心榮譽獎（Kennedy Center Honors），2005 年獲美國國家藝術勳章（National Medal of Arts），2022 年入選搖滾名人堂（Rock & Roll Hall of Fame）。",
+      "src": "https://www.britannica.com/biography/Dolly-Parton",
+      "src2": "https://en.wikipedia.org/wiki/Dolly_Parton",
+      "from": "new"
+     },
+     {
+      "f": "NPR 說她的歌 1990 年代之後仍不斷被各世代、各風格的歌手取樣、回應與重新詮釋；〈I Will Always Love You〉經 Whitney Houston 1992 年在電影《The Bodyguard》的版本成為美國經典。",
+      "src": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "src2": "https://en.wikipedia.org/wiki/Dolly_Parton",
+      "from": "new"
+     },
+     {
+      "f": "Dolly Parton 是少數同時被鄉村保守派與變裝皇后所愛的藝人：她誇張的造型與自嘲式幽默讓變裝圈把她當榜樣（Trixie Mattel 說她「每天穿上一件 Dolly 的戲服」），〈Jolene〉等歌成為對嘴表演的經典曲目，她也公開支持 LGBTQ 議題，卻一貫避談黨派政治。",
+      "src": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "src2": "https://www.sfchronicle.com/entertainment/music/article/dolly-parton-lgbtq-legacy-22403147.php",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1974 年她離開 Porter Wagoner 的節目，為緩和分手而寫下告別民謠〈I Will Always Love You〉，同年登上鄉村榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Dolly_Parton",
+      "src2": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1999 年入選鄉村音樂名人堂。",
+    "src": "https://www.britannica.com/biography/Dolly-Parton",
+    "src2": "https://en.wikipedia.org/wiki/Dolly_Parton",
+    "from": "new"
+   },
+   {
+    "f": "2022 年入選搖滾名人堂。",
+    "src": "https://www.britannica.com/biography/Dolly-Parton",
+    "src2": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基導言寫國家藝術勳章 2004 年，內文寫 2005 年；Britannica 寫 2005 年，採 2005。",
+   "英文維基導言寫『25 首 Billboard 鄉村榜冠軍』、榮譽節寫『26 首』且『44／42 張前十專輯』數字不一；facts 不寫冠軍首數與前十專輯數。",
+   "英文維基寫 Hollywood Walk of Fame 星星等許多獎項；未入 facts。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 6 次：(1) 英文維基 Dolly Parton；(2) WebSearch（逝世新聞，只看摘要）；(3) NPR 2026-08-25 訃聞（Ann Powers 一類的長文，實際開頁）；(4) Britannica Dolly Parton（WebFetch 讀到摘要）；(5) WebSearch（跨陣營受歡迎，只看摘要）；(6) 舊金山紀事報 2026-08-26 專欄 Tony Bravo〈Drag queens and good ole boys loved Dolly Parton〉（實際開頁）。poolAlbums 五張皆 Dolly Parton 個人 1970–1974 年專輯（其中《Once More》是與 Porter Wagoner 合作專輯，名冊仍是 Dolly），無同名混卡。事實庫此位 research 與 published 皆空，全部從零補查。\n⚠ 逝世：英文維基、NPR 與 Britannica 三源一致：Dolly Parton 2026 年 8 月 25 日在納許維爾逝世、享年 80 歲，NPR 引 AP 稱死因為『a brief battle with cancer』（維基寫 8 月 21 日入住 Vanderbilt-Ingram Cancer Center）；寫作層須用過去式。維基另記 8 月 28 日家人小型私人葬禮、葬於 Woodlawn Memorial Park，Nashville 機場將改名，加州 9 月 25 日 Dolly Parton Day，等等（僅維基單源，未入 facts）。\n已刪：era『1987 年《Trio》與 Emmylou Harris、Linda Ronstadt 合作、鄉村榜五週冠軍』只有維基單源，移進 notes。非獨立：多數 origin／sound／milestone 的『維基』是第二源（維基本身引 NPR／Britannica 之外的書目），與 NPR、Britannica 屬不同機構，視為獨立；legacy 第 4 條 NPR 與舊金山紀事報獨立（Trixie Mattel 引語只在 NPR，『公開支持 LGBTQ 議題、避談黨派政治』在紀事報，NPR 說她『cannily avoided divisive issues』）。sound 第 2 條 NPR 只支持『自己寫的歌、樸實家鄉語言』，維基支持『民謠元素與基督教家庭背景』，兩源各支持一半、合起來成立。origin 第 2 條 NPR 說她的母親家族很有音樂細胞與家裡有音樂，『英倫諸島民謠』的細節來自維基。\n單源未入 facts：Time 100 2021、Hollywood Walk of Fame 1984 與 2018 與 Ronstadt、Harris 同星、一億張唱片銷量、11 座葛萊美、Kentucky Colonel、小行星 Dollyparton、地衣以她命名、Dollywood 1986 與 Imagination Library 1995（Britannica 有 Imagination Library 1995、Dollywood 1986 但維基另有敘述；兩源大致一致，可由主線決定是否補進 legacy）；Beyoncé 2024《Cowboy Carter》重新詮釋〈Jolene〉；Elvis 想錄〈I Will Always Love You〉但 Colonel Parker 要求出版權對半、她拒絕；〈Joshua〉1971 年 2 月鄉村榜首個冠軍（維基寫 1971 年 2 月、NPR 寫『1970's Joshua』，年份不一致，不收）；〈Jolene〉1973 年底發行、1974 年 2 月登頂（維基；Britannica 寫 1973）。\n名人堂類：搖滾名人堂官網未另開，2022 入選由維基與 NPR 兩源佐證。"
+ },
+ {
+  "key": "emmylou harris",
+  "name": "Emmylou Harris",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Emmylou Harris 1947 年 4 月 2 日生於阿拉巴馬州 Birmingham；父親是海軍陸戰隊軍官，全家隨調動先住北卡羅來納，最後定居維吉尼亞。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     },
+     {
+      "f": "她少女時代迷上 1960 年代的美國民謠復興，崇拜都會民謠歌手，1969 年錄下民謠專輯《Gliding Bird》，並在華盛頓特區一帶的小型民謠俱樂部累積口碑。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     },
+     {
+      "f": "她是透過 Gram Parsons 才接觸古典鄉村音樂：Parsons 找她唱和聲並加入他的樂團巡演，她日後把他視為自己找到藝術方向的關鍵；1973 年 Parsons 過世後，她把他的鄉村搖滾構想化為自己的路。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     },
+     {
+      "f": "1975 年她以《Pieces of the Sky》在 Reprise 展開正式的個人錄音生涯。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她以鄉村搖滾把鄉村與搖滾兩邊的聽眾帶進同一個現場，讓數以百萬計的年輕聽眾走進鄉村音樂。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     },
+     {
+      "f": "她的樂團 Hot Band 出過日後成名的 Rodney Crowell 與 Ricky Skaggs；她一向重用頂尖樂手，後來的 Angel Band、Nash Ramblers、Spyboy 也一樣。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     },
+     {
+      "f": "1995 年《Wrecking Ball》由 Daniel Lanois 製作、Mark Howard 錄音，離開她原本的傳統原音路線，走向氛圍濃厚的另類搖滾式音場；Neil Young、Steve Earle、Lucinda Williams、Kate & Anna McGarrigle 與 Larry Mullen Jr. 參與。",
+      "src": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "src2": "https://en.wikipedia.org/wiki/Wrecking_Ball_(Emmylou_Harris_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1980 與 1990 年代崛起的女性鄉村歌手，多數把她列為主要影響；名單包括 Mary Chapin Carpenter、Patty Loveless 與 Trisha Yearwood。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     },
+     {
+      "f": "鄉村音樂名人堂稱她的影響力超出主流鄉村：Iris DeMent、Patty Griffin、Nanci Griffith、Lucinda Williams 等人也常把她當成藝術上的指路人。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     },
+     {
+      "f": "她 2008 年入選鄉村音樂名人堂（Country Music Hall of Fame）；一生有 27 首單曲進入鄉村榜前十。",
+      "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     },
+     {
+      "f": "評論界把 1995 年的《Wrecking Ball》視為她風格的轉折點，並認為她是 Americana 的先驅；維基引《洛杉磯時報》稱該專輯的製作被視為對 Americana 這個類型成形有影響。",
+      "src": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "src2": "https://en.wikipedia.org/wiki/Wrecking_Ball_(Emmylou_Harris_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1973 年 Gram Parsons 過世後，她決定延續他留下的鄉村搖滾遺產，自組樂隊，在馬里蘭 Bethesda 的 Red Fox Inn 駐唱，後由 Parsons 舊日在 Warner 的 A&R 幫她牽線簽約。",
+      "src": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "src2": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+      "from": "new"
+     },
+     {
+      "f": "1995 年《Wrecking Ball》是職涯轉折：她當時覺得被鄉村電台排擠，Asylum 給她創作自由，專輯雖被鄉村電台忽視，卻拿下葛萊美最佳當代民謠專輯，也讓她的路線帶向更硬朗的邊緣。",
+      "src": "https://en.wikipedia.org/wiki/Wrecking_Ball_(Emmylou_Harris_album)",
+      "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1975 年以《Pieces of the Sky》展開個人錄音生涯。",
+    "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+    "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+    "from": "new"
+   },
+   {
+    "f": "2008 年入選鄉村音樂名人堂。",
+    "src": "https://countrymusichalloffame.org/artist/emmylou-harris/",
+    "src2": "https://en.wikipedia.org/wiki/Emmylou_Harris",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基 Emmylou Harris 導言寫『2022 年』被《滾石》列入 200 大歌手，內文寫『2023 年』排第 79 名；兩處不一致，facts 不收該榜。",
+   "《Roses in the Snow》上線簡介寫『第七張錄音室專輯』，與英文維基 Roses in the Snow 條目導言一致；但同站 Emmylou Harris 條目的個人錄音室專輯清單（含 1969《Gliding Bird》與 1979《Light of the Stable》）數起來是第八張，且清單中《Wrecking Ball》為第十八（與上線簡介寫的『第十八張』一致）。兩條各自成立、彼此不一致，屬計數口徑問題。",
+   "上線簡介《Wrecking Ball》寫『日後成了 americana 一路人反覆借用的模板』，來源只有維基引《洛杉磯時報》的『製作被視為對 Americana 成形有影響』；採來源較保守的說法，寫進 pubIssues。"
+  ],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Wrecking Ball",
+    "claim": "把老歌本擺進氛圍製作裡的這套做法，日後成了 americana 一路人反覆借用的模板",
+    "problem": "查到的依據只有維基引《洛杉磯時報》：該專輯的製作『被視為對 Americana 類型的成形有影響』；『成為後輩反覆借用的模板』沒有出處，建議改成保守寫法或標明出處。",
+    "src": "https://en.wikipedia.org/wiki/Wrecking_Ball_(Emmylou_Harris_album)"
+   },
+   {
+    "album": "Roses in the Snow",
+    "claim": "Emmylou Harris 1980 年的第七張錄音室專輯",
+    "problem": "英文維基專輯條目寫 seventh studio album，但維基藝人條目的個人錄音室專輯清單（含 1969《Gliding Bird》與 1979 聖誕專輯《Light of the Stable》）數起來是第八張；同一口徑下《Wrecking Ball》為第十八張，與簡介另一張一致。計數口徑不同，建議改寫成不帶序數。",
+    "src": "https://en.wikipedia.org/wiki/Emmylou_Harris"
+   }
+  ],
+  "notes": "補查 4 次：(1) 英文維基 Emmylou Harris；(2) 英文維基 Roses in the Snow（查上線簡介：客席含 Johnny Cash 與 Dolly Parton 背景人聲、Tony Rice、Linda Ronstadt、Ricky Skaggs、選曲來自 Flatt and Scruggs、Carter Family、Paul Simon 皆與維基條目一致）；(3) 鄉村音樂名人堂官網 Emmylou Harris 頁（2008 年入選；引述傳記）；(4) 英文維基 Wrecking Ball（查上線簡介：2019？無，1995 年 9 月 26 日、Elektra、Lanois、Mark Howard、客席名單皆與維基條目一致）。失敗 0 次。第二源皆實際開頁。事實庫此位 research 為空、上線簡介 2 張，origin、sound、legacy 三格全靠補查。名冊 Emmylou Harris 無同名混卡，poolAlbums 五張皆其個人專輯。\n非獨立：sound 第 4 條與 legacy 第 4 條、era 第 2 條的雙源是英文維基藝人條目與英文維基專輯條目（同站，標『非獨立』）；其餘 origin、sound 第 1 至 3 條、legacy 第 1 至 3 條、milestones 的第一源是鄉村音樂名人堂官網（獨立機構）、第二源維基藝人條目。維基藝人條目本身引用 CMHOF 傳記為來源之一（見維基引用第 165 條），因此 CMHOF 與維基在生平敘述上未必完全獨立，寫作層以 CMHOF 用語為準。\n單源未入 facts：《滾石》2023 年列為 200 大歌手第 79 名並稱『arguably the greatest American harmony vocalist of the past half-century』（僅維基；導言寫 2022、內文寫 2023，年份不一致）；《滾石》稱她『Godmother of Americana』（僅維基）；Bufwack 與 Oermann 說她『made country music hip』、AllMusic 稱她繼承 Parsons 的『cosmic American music』（僅維基轉述）；2015 年 Polar Music Prize、2012 年 First Aid Kit 為她寫〈Emmylou〉致敬（僅維基）；1999 年 Billboard Century Award；2003 年 Alabama Music Hall of Fame；2009 年 Berklee 榮譽博士；1987《Trio》與 Dolly Parton、Linda Ronstadt 合作、鄉村榜五週冠軍、白金銷量（維基有，Parton 條目亦述，但屬 Emmylou 條目單源）；1979 年唱片公司要她轉向鄉村流行、她卻連錄兩張傳統取向的《Blue Kentucky Girl》與《Roses in the Snow》（僅維基）；13 座葛萊美、1500 萬張銷量（僅維基）；Parsons 讓她接觸 Louvin Brothers、Bill Monroe、George Jones（僅維基）；父親曾在韓戰被俘（僅維基）；CMHOF 稱『七首冠軍』而維基稱『1980 年前五首冠軍』，數字未併用。\n改動（自查）：sound『以新的敬意翻新傳統鄉村、替新一代詞曲作者錄下定版；早期翻唱 Louvin Brothers、Buck Owens、Patsy Cline、Loretta Lynn、Kitty Wells，並把 Rodney Crowell、Delbert McClinton、Susanna Clark、Jesse Winchester 介紹給鄉村聽眾』只在 CMHOF 頁面（維基未逐項寫），依規則移進 notes；CMHOF 傳記用語『Harris would update traditional country music with fresh reverence while elevating up-and-coming songwriters by recording definitive versions of contemporary, cutting-edge songs』，可寫成『鄉村音樂名人堂稱…』（機構官方介紹，但非搖滾名人堂那類例外，寫作層宜謹慎）。"
  }
 ]
