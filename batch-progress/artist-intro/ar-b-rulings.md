@@ -33,3 +33,4 @@
 ### ar-b-004
 
 - 補洞第 2 組：pubIssue 1 條（Tal Farlow「二十二歲才開始學吉他」三源不一，建議「二十出頭」）。Sun Ra Arkestra 卡池三張皆 Sun Ra 領導時期，以 Sun Ra 生平為主。Sharrock、Rypdal 後輩點名單源，不寫「眾多後輩公認」。
+- 補洞第 1 組：Ramsey Lewis 失敗請求 6 次，照實記，放行。pubIssue 3 條（Umiliani〈Mah Nà Mah Nà〉上 The Muppet Show 年份；Ray Bryant「聽牧師母親彈琴」單源；Sister Rosetta Tharpe「首位真正暢銷的福音歌手」無來源支持）。Simone 確認為奧地利 Simone Kopmajer。
