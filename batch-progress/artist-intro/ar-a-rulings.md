@@ -42,3 +42,10 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - **同名混卡**：ar-a-002 Steve Lacy 的 8 張卡裡 3 張（Gemini Rights、Apollo XXI、Oh yeah?）是 1998 年生的 The Internet 吉他手，另一個人。
   介紹只寫爵士高音薩克斯風手；這 3 張卡的藝人欄要在本機改寫（例如「Steve Lacy (The Internet)」之類可區分的寫法），否則按鈕會跳出錯的人。記入待本機處理。
 - 上架：`build-artist-intros.mjs` 通過；上線簡介問題彙整在 `audits/ARTIST-PUB-ISSUES.md`。
+
+### ar-a-002
+
+- 補洞四組交齊（g2 起失敗請求不計入上限）；笠井紀美子搜尋 7 次，照實記、不擋。pubIssues 本批 12 條左右，彙整在 `audits/ARTIST-PUB-ISSUES.md`。
+- 主線親驗：Jack DeJohnette 2025-10-26 逝世（NPR、DownBeat、Hudson Valley One）。
+- 審稿教訓回寫：`artist-writer-base.md` 新增「評價的出處層級」一節（單一樂評人的形容詞不寫、樂手評語具名、conflicts 裡的事件細節只寫兩源一致、會過期的統計不寫），自 ar-a-002 寫作層起的派工詞也帶上。
+- 補洞 g2 代理曾誤讀別組暫存資料夾、一度把 ar-a-001 的 10 位混進輸出，已自行重寫；主線核對 ar-a-001 各檔未被改動（git diff 空）。派工詞自 ar-a-003 g2 起加「暫存檔只放 <批名>-g<組號>/ 資料夾」。
