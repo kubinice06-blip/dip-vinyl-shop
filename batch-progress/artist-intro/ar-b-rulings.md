@@ -97,3 +97,4 @@
 - ar-b-009 寫作第 2 組（20 位）審畢，修 1 處：Jason Isbell 在世且 2024 年又同屆包辦兩獎，「兩度」→「曾多次」。Guns N' Roses 補洞 thin、寫作層依名人堂官方語寫成 full，照准。
 - ar-b-009 上架：40 位（搖滾），審稿修 1 處。
 - ar-b-010 補洞第 3 組：SBB 失敗請求 5 次，照實記，放行。pubIssue 1 條（SBB《Pamięć》「Niemen 伴奏到 1973 年底」，低信心）。Ryan Adams 2019 年只寫「《紐約時報》刊出報導」的中性事實；FBI 結案說法為匿名消息單源，不寫。
+- ar-b-010 補洞第 2 組：Rancid 失敗請求 5 次，照實記，放行。Pantera、Rammstein 特注照辦（Rammstein 只寫 2023 年 8 月柏林檢察署終止調查）。
