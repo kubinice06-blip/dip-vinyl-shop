@@ -595,5 +595,245 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "事實庫 research 只有《Charade》錄音細節，三格從零補查。補查 8 次：維基 Henry Mancini、WebSearch（生平與獎項）、Songwriters Hall of Fame、Frost School 頁（內容太空，無可用事實）、維基〈Peter Gunn〉、henrymancini.com 傳記、WebSearch（Peter Gunn 影響與獎項）、Encyclopedia.com。失敗請求 2 次：Britannica 404、ASCAP 403（未計入）。henrymancini.com 是遺產管理站，非完全獨立。維基《Henry Mancini》與維基〈Peter Gunn〉同站（非獨立），facts 的年度專輯一條以 Encyclopedia.com 為主源。第一類宣稱（首個年度專輯獲獎的電視配樂、首部通篇用爵士的電視配樂）：Encyclopedia.com 寫『第一張贏得年度專輯的電視配樂專輯』、『開創爵士色彩的電視配樂』，維基寫『首屆年度專輯』；搜尋摘要另稱 Peter Gunn 是『第一部通篇使用爵士的電視配樂』，屬單一搜尋摘要，facts 的 sound 只寫『把爵士帶進電視與電影配樂』並把『最早』限縮為『這個做法最早的一部』——此處是輕度『第一』宣稱，拿不準者請寫作層改成『早期代表作』。反例考量：《Peter Gunn》之前的電視影集如 Dragnet 主題已有樂隊配樂，但『通篇爵士』的說法未見反例。未收（單源）：Songwriters Hall of Fame 1984 年入選（該頁與一則搜尋摘要，維基未見）；1995 年身後葛萊美終身成就獎（維基單源）；1969 年〈Love Theme from Romeo and Juliet〉登 Billboard Hot 100 冠軍（維基單源）；2004 年美國郵政發行紀念郵票（官方站單源）；1945 年參與解放 Mauthausen-Gusen 集中營（維基單源）；13 歲獲選賓州全州樂團首席長笛（Encyclopedia.com 單源）；〈Peter Gunn〉主題『更接近搖滾而非爵士、吉他與鋼琴齊奏』是 Mancini 自傳的說法（維基〈Peter Gunn〉單源，已上線簡介已用）；Carnegie Tech 師承 Castelnuovo-Tedesco、Krenek（SHOF 單源）；Duane Eddy 等翻奏〈Peter Gunn〉與 Grammy Hall of Fame 2005（維基〈Peter Gunn〉單源）；搜尋摘要寫『Quincy Jones、Burt Bacharach、Lalo Schifrin 承認 Mancini 的地位』『同行談『Mancini chords』』，這是後輩點名類關鍵資料，但摘要來源頁（classical-music.com／PopMatters／Encyclopedia.com 另一條）未開頁，超過 8 次上限，不收，建議店主本機補查。已上線簡介中『1998 年入葛萊美名人堂、2010 年獲選國家錄音登記』（Peter Gunn 專輯）、『AFI 百年百大配樂第 20』（Pink Panther）本次未查證。"
+ },
+ {
+  "key": "idris muhammad",
+  "name": "Idris Muhammad",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Idris Muhammad 本名 Leo Morris，1939 年 11 月 13 日生於紐奧良，在第 13 區長大。",
+      "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "src2": "https://www.moderndrummer.com/2014/07/idris-muhammad-dies-age-74/",
+      "from": "new"
+     },
+     {
+      "f": "他小時候在紐奧良的 Mardi Gras 遊行裡打擊樂器，打法的底子是 second line 街頭節奏。",
+      "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "src2": "https://www.moderndrummer.com/2014/07/idris-muhammad-dies-age-74/",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代他改用穆斯林名字 Idris Muhammad，改名發生在他隨 Lou Donaldson 演出的 1965 至 1967 年之間。",
+      "src": "https://pas.org/idris-muhammad/",
+      "src2": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "from": "new"
+     },
+     {
+      "f": "他早年在芝加哥為 Sam Cooke、Jerry Butler 與 Curtis Mayfield 這類靈魂與 R&B 歌手打鼓，之後才轉進紐約爵士圈。",
+      "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "src2": "https://pas.org/idris-muhammad/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的打法根植於紐奧良的 second line 街頭節奏與 Mardi Gras Indians 的鈴鼓傳統，以有律動、放克感著稱。",
+      "src": "https://www.moderndrummer.com/2014/07/idris-muhammad-dies-age-74/",
+      "src2": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "from": "new"
+     },
+     {
+      "f": "他的鼓以放克的律動與靈魂感見稱。",
+      "src": "https://www.moderndrummer.com/2014/07/idris-muhammad-dies-age-74/",
+      "src2": "https://www.okayplayer.com/legendary-funk-jazz-drummer-idris-muhammad-dead-at-74/353319",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 70 年代的放克作品，包括《Power of Soul》《House of the Rising Sun》《Turn This Mutha Out》，被嘻哈製作人大量取樣；他的鼓點也成為嘻哈製作人的常備素材。",
+      "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "src2": "https://www.okayplayer.com/legendary-funk-jazz-drummer-idris-muhammad-dead-at-74/353319",
+      "from": "new"
+     },
+     {
+      "f": "他的錄音橫跨靈魂、R&B、放克、流行與爵士，與 Sam Cooke、Curtis Mayfield、Lou Donaldson、Ahmad Jamal、Pharoah Sanders 等人合作過。",
+      "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "src2": "https://www.moderndrummer.com/2014/07/idris-muhammad-dies-age-74/",
+      "from": "new"
+     },
+     {
+      "f": "他 2011 年回到紐奧良退休，2014 年 7 月 29 日過世，享年 74 歲。",
+      "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "src2": "https://pas.org/idris-muhammad/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1960 年代初他在芝加哥為 Sam Cooke、Jerry Butler 與 Impressions 打鼓。",
+      "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "src2": "https://pas.org/idris-muhammad/",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代後半他到紐約，隨 Lou Donaldson 演出，也在音樂劇《Hair》的樂團打鼓。",
+      "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+      "src2": "https://pas.org/idris-muhammad/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1965 至 1967 年隨 Lou Donaldson 演出，期間改名 Idris Muhammad。",
+    "src": "https://pas.org/idris-muhammad/",
+    "src2": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+    "from": "new"
+   },
+   {
+    "f": "1970 年前後錄下《Black Rhythm Revolution!》。",
+    "src": "https://www.moderndrummer.com/2014/07/idris-muhammad-dies-age-74/",
+    "src2": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+    "from": "new"
+   },
+   {
+    "f": "2014 年 7 月 29 日過世，享年 74 歲。",
+    "src": "https://en.wikipedia.org/wiki/Idris_Muhammad",
+    "src2": "https://pas.org/idris-muhammad/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基與 Modern Drummer 寫他 1956 年在 Fats Domino 的〈Blueberry Hill〉打鼓（維基寫 1956、16 歲；Okayplayer 也說 16 歲）；但搜尋結果顯示這個說法有爭議，另有資料指 Earl Palmer 是 Domino 錄音的鼓手，而且他自己的傳記也沒提〈Blueberry Hill〉。此說不進 facts，放 notes。",
+   "《Hair》期間：維基寫 1967 至 1971 年，PAS 寫 1969 至 1973 年；facts 不寫年份。Modern Drummer 寫 1970 年發行《Black Rhythm Revolution!》，已上線簡介寫錄於 1970、1971 年發行；facts 寫『1970 年前後』。",
+   "入行年紀：維基寫 9 歲開始打擊樂器，PAS 與搜尋摘要寫 12 歲開始職業演出，維基寫 14 歲（1953）與 The Hawketts 錄〈Mardi Gras Mambo〉；facts 不寫年紀。",
+   "事實庫無研究稿事實；已上線簡介三張（《Black Rhythm Revolution!》《House of the Rising Sun》《Turn This Mutha Out》）與本次補查無衝突。簡介《Black Rhythm Revolution!》寫『以團長身分發表的第一張』，Modern Drummer 稱其為 debut album，兩者一致（單源）。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格皆從零補查。補查 6 次：維基 Idris Muhammad、WebSearch（訃聞與取樣）、Percussive Arts Society、Modern Drummer 訃聞、Okayplayer 訃聞、WebSearch（〈Blueberry Hill〉鼓手爭議）。失敗請求 2 次：WhoSampled 403、JazzTimes 403（未計入）。Modern Drummer 與 Okayplayer 都是 2014 年訃聞，Okayplayer 與 WhoSampled 資料常互相轉載，互相不算完全獨立。『第一／唯一』類：〈Blueberry Hill〉鼓手一事屬爭議，不進 facts。未收（單源）：他在 Fats Domino〈Blueberry Hill〉打鼓（有爭議，寫作層不要寫）；14 歲與 The Hawketts 錄〈Mardi Gras Mambo〉（維基單源）；小時候住家附近乾洗店蒸汽壓燙機聲影響他的 hi-hat 技法（維基單源）；1978 年後專注爵士、80 年代旅居歐洲（PAS 與維基各有零碎，年份對不上）；2012 年回憶錄《Inside the Music: The Life of Idris Muhammad》（Okayplayer 單源）；WWOZ 的 George Ingmire 稱他是紐奧良最傑出的鼓手之一（Okayplayer 單源）；他談取樣的話『這不真的屬於我，我只是創作者……造物主給我的天賦，我不能自私』（Okayplayer 單源）；他戴墨鏡閉眼演奏、自稱『我在音樂裡面』（Modern Drummer 單源）；被取樣曲目 Bob James〈Nautilus〉（取樣超過 230 次）、Lou Donaldson〈Ode to Billie Joe〉（超過 130 次）為搜尋摘要（WhoSampled 系），頁面未開成，且兩曲鼓手是他但非他名下作品，不收；〈Could Heaven Ever Be Like This〉被 Jamie xx〈Loud Places〉大量取樣同為摘要，不收。facts 裡『被嘻哈製作人大量取樣』一句的主詞是他 70 年代放克專輯（維基）與他的鼓點（Okayplayer），兩源用詞不同，寫作層請保留概括說法、不要寫具體被誰取樣。 二次校對撤出 facts 的單源項目：『早期專輯把紐奧良節奏混進爵士、後來轉向放克與 disco』（維基單源）；Horace Silver、Kenny Dorham 同台（維基單源）。"
+ },
+ {
+  "key": "ill considered",
+  "name": "Ill Considered",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ill Considered 是倫敦的爵士樂團，核心成員是薩克斯風手 Idris Rahman、貝斯手 Leon Brichard 與鼓手兼製作人 Emre Ramazanoglu。",
+      "src": "https://worldtreasuresmusic.com/2020/11/21/ill-considered-live-tonight-the-london-based-jazz-quartet-championed-by-eno-and-david-holmes-9pm-gmt-for-band-re-selects-performance-via-new-soil-youtube-channel/",
+      "src2": "https://www.jazzrevelations.com/post/ill-considered-interview",
+      "from": "new"
+     },
+     {
+      "f": "Rahman 與 Brichard 都在 Wildflower 樂團演奏，Rahman 也是 Soothsayers 的成員；Ramazanoglu 是製作人與混音，合作對象包括 David Holmes 與 Noel Gallagher。",
+      "src": "https://worldtreasuresmusic.com/2020/11/21/ill-considered-live-tonight-the-london-based-jazz-quartet-championed-by-eno-and-david-holmes-9pm-gmt-for-band-re-selects-performance-via-new-soil-youtube-channel/",
+      "src2": "https://www.jazzrevelations.com/post/ill-considered-interview",
+      "from": "new"
+     },
+     {
+      "f": "樂團 2017 年推出第一張專輯，此後接連發行編號專輯。",
+      "src": "https://xlr8r.com/news/london-jazz-experimentalists-ill-considered-drop-new-album/",
+      "src2": "https://www.jazzrevelations.com/post/ill-considered-interview",
+      "from": "new"
+     },
+     {
+      "f": "打擊樂手 Satin Singh 曾是樂團常客，視覺藝術家 Vincent de Boer 設計專輯封面，被列為團員之一。",
+      "src": "https://xlr8r.com/news/london-jazz-experimentalists-ill-considered-drop-new-album/",
+      "src2": "https://www.thejazzmann.com/reviews/review/ill-considered-liminal-space",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們演出前不事先討論，現場即興；自稱是以重複 hook 與 groove 為底的即興，而不是自由爵士。",
+      "src": "https://www.jazzrevelations.com/post/ill-considered-interview",
+      "src2": "https://worldtreasuresmusic.com/2020/11/21/ill-considered-live-tonight-the-london-based-jazz-quartet-championed-by-eno-and-david-holmes-9pm-gmt-for-band-re-selects-performance-via-new-soil-youtube-channel/",
+      "from": "new"
+     },
+     {
+      "f": "樂團的專輯多半錄自完全即興的現場演出，例如 2018 年秋季巡演的現場錄音。",
+      "src": "https://www.thejazzmann.com/reviews/review/ill-considered-liminal-space",
+      "src2": "https://xlr8r.com/news/london-jazz-experimentalists-ill-considered-drop-new-album/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Brian Eno、David Holmes 與 Sun Ra Arkestra 的 Juni Booth 都公開力挺這個樂團。",
+      "src": "https://worldtreasuresmusic.com/2020/11/21/ill-considered-live-tonight-the-london-based-jazz-quartet-championed-by-eno-and-david-holmes-9pm-gmt-for-band-re-selects-performance-via-new-soil-youtube-channel/",
+      "src2": "https://www.jazzrevelations.com/post/ill-considered-interview",
+      "from": "new"
+     },
+     {
+      "f": "他們的黑膠版本常在數月內賣光，例如《Ill Considered 8》（2019）的限量彩膠。",
+      "src": "https://xlr8r.com/news/london-jazz-experimentalists-ill-considered-drop-new-album/",
+      "src2": "https://www.thejazzmann.com/reviews/review/ill-considered-liminal-space",
+      "from": "new"
+     },
+     {
+      "f": "樂團先發行了 8 張只出黑膠的專輯，才在 2020 年與 New Soil 合作推出數位版。",
+      "src": "https://www.jazzrevelations.com/post/ill-considered-interview",
+      "src2": "https://worldtreasuresmusic.com/2020/11/21/ill-considered-live-tonight-the-london-based-jazz-quartet-championed-by-eno-and-david-holmes-9pm-gmt-for-band-re-selects-performance-via-new-soil-youtube-channel/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2017 年 9 月起發行第一張專輯，兩年多內累積約 10 張編號專輯。",
+      "src": "https://xlr8r.com/news/london-jazz-experimentalists-ill-considered-drop-new-album/",
+      "src2": "https://www.jazzrevelations.com/post/ill-considered-interview",
+      "from": "new"
+     },
+     {
+      "f": "2020 年 11 月樂團與 New Soil 合作，首度推出數位發行。",
+      "src": "https://www.jazzrevelations.com/post/ill-considered-interview",
+      "src2": "https://worldtreasuresmusic.com/2020/11/21/ill-considered-live-tonight-the-london-based-jazz-quartet-championed-by-eno-and-david-holmes-9pm-gmt-for-band-re-selects-performance-via-new-soil-youtube-channel/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2017 年推出第一張專輯。",
+    "src": "https://xlr8r.com/news/london-jazz-experimentalists-ill-considered-drop-new-album/",
+    "src2": "https://www.jazzrevelations.com/post/ill-considered-interview",
+    "from": "new"
+   },
+   {
+    "f": "2020 年 11 月與 New Soil 合作，首度推出數位發行。",
+    "src": "https://www.jazzrevelations.com/post/ill-considered-interview",
+    "src2": "https://worldtreasuresmusic.com/2020/11/21/ill-considered-live-tonight-the-london-based-jazz-quartet-championed-by-eno-and-david-holmes-9pm-gmt-for-band-re-selects-performance-via-new-soil-youtube-channel/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍經過兩源不一致：Jazz Mann 寫樂團由 Rahman 與 Ramazanoglu 創立、原貝斯手是 Brichard；Jazz Revelations 訪談寫是 Emre 與 Leon 先在 Emre 的錄音室即興、之後邀 Rahman 與打擊樂手 Yahael Camara-Onono 加入。facts 只寫核心成員，不寫誰創立。",
+   "貝斯手：Jazz Mann 寫核心三人是 Rahman、Liran Donin 與 Ramazanoglu（推測為近期陣容），其他來源寫 Brichard；facts 採 Brichard 並註明『核心成員』，不寫哪一年換人。",
+   "《Liminal Space》年份：卡單 2021，Jazz Mann 評論頁標 2022；本次 facts 不引用該專輯年份。",
+   "專輯數量：XLR8R（2019）寫 2017 年 9 月起共 10 張；Jazz Mann 寫 2018 年起 11 張數位專輯；Jazz Revelations 寫先出 8 張黑膠再上數位。三處口徑不同，facts 只寫『約 10 張』與『8 張黑膠先於數位』。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫無任何研究稿與上線簡介，三格從零補查。補查 6 次：WebSearch（成員與錄音）、World Treasures Music、XLR8R、Jazz Mann《Liminal Space》評論、WebSearch（Eno、Holmes 與 Total Refreshment Centre）、Jazz Revelations 訪談。失敗請求 3 次：維基 404、All About Jazz 403、Soul Jazz 商品頁 403（未計入）。World Treasures Music 與 XLR8R 皆是新聞稿性質的轉載，Eno、Holmes 說法在搜尋摘要與 World Treasures、Jazz Revelations 之間互相呼應，可能源自樂團官方文案（非獨立）。無同名混卡疑慮：卡池 4 張皆為此倫敦樂團。未收（單源）：Rahman 的話『我們試著即時用重複的 hook、力度堆疊、失控與高潮塑造音樂，好像事先排練過一樣』（World Treasures 與搜尋摘要為同一文案，實為單源）；影響與比較：Don Cherry、Pharoah Sanders 的精神爵士、Gnawa、衣索比亞爵士、Afrobeat、Sun Ra Arkestra，被拿來和 Led Bib、Sons of Kemet、Melt Yourself Down 相比（Jazz Mann 單源，屬評論者形容詞）；《Liminal Space》是第一張完整製作的錄音室專輯、New Soil 發行（Jazz Mann 單源）；Live at Total Refreshment Centre 錄於 2018 年 3 月 9 日（搜尋摘要，Jazzman/Soul Jazz 商品頁未開成）；《Ill Considered》2017 首張專輯的細節與 Brichard 未事先討論就把錄音發行（Jazz Revelations 單源）；Vincent de Boer 的動畫與 12 吋計畫（World Treasures 單源）；King's Place 倫敦爵士節演出（World Treasures 單源）。origin 格缺成軍年份（只能寫『2017 年推出第一張專輯』），若寫作層需要成軍細節請不要自行補。legacy 格沒有後輩點名，只有 Eno、Holmes 等同行支持與黑膠銷售，已如實標示。"
  }
 ]

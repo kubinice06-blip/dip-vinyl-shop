@@ -13,7 +13,7 @@
             "from": "new"
           },
           {
-            "f": "他 9 歲時父親買給他一把 Harmony 吉他，並要他每天認真練習；他後來的爵士句法主要不是模仿吉他手，而是向管樂手學習。",
+            "f": "他 9 歲時父親買給他一把 Harmony 吉他，並要他每天認真練習。",
             "src": "https://www.jerryjazzmusician.com/remembering-joe-pass-versatile-jazz-guitar-virtuoso-by-kenneth-parsons/",
             "src2": "https://en.wikipedia.org/wiki/Joe_Pass",
             "from": "new"
@@ -105,6 +105,108 @@
     "searches": 7,
     "failedFetches": 4,
     "status": "full",
-    "notes": "三格全從零查（事實庫 research 只有專輯細節）。補查 7 次：維基 Joe Pass、WebSearch（生平）、維基 Virtuoso、Jerry Jazz Musician、WebSearch（影響）、維基 Martin Taylor、WebSearch（訃聞）。失敗請求 4 次（legacy.com 403、Britannica 404、Washington Post 403、Tampa Bay Times 頁面無內文），未超過失敗上限。同名確認：poolAlbums 四張（Virtuoso、Intercontinental、For Django、Joy Spring）皆為爵士吉他手 Joe Pass，無混卡。兩源說明：維基與 Jerry Jazz Musician（Kenneth Parsons 悼念文）各自獨立、兩頁皆實際開讀；維基 Joe Pass 與 Virtuoso 兩條目同站，src 用 Virtuoso 條目時 src2 是外站。legacy 的『Pass 是 20 世紀重要爵士吉他手之一』：維基原文 one of the most notable jazz guitarists of the 20th century，Jerry Jazz 原文為 proclaimed by many as the best jazz guitarist since Wes Montgomery，後者語氣更強，f 欄取兩者交集。未收（單源）：維基 Virtuoso『widely considered ... one of the best jazz guitar albums of all time』與 Penguin Guide 核心收藏、Guardian 讚語（Virtuoso 條目單源）；《Virtuoso》榜上 Billboard Jazz Albums 第 16 名（單源）；1947 年從軍後在紐奧良染上海洛因、1950 年代大半時間因毒品罪入獄（維基單源）；14 歲已在舞會與婚禮領酬演出（維基單源，搜尋摘要 legacy.com 同說但該頁 403 未開）；受 Gene Autry 電影啟發學吉他（維基單源）；聽 Charlie Parker 深受震撼（Jerry Jazz 單源）；1975 年隨 Oscar Peterson 三重奏得葛萊美（維基單源，屆次類別未查）；Jerry Jazz 稱 1960 年進 Synanon、與 Ella Fitzgerald 錄六張專輯（單源）；Martin Taylor 維基條目列 Joe Pass 為影響來源之一（單源、且僅一句列舉）；Sounds of Synanon 1962 Pacific Jazz（搜尋摘要，未開頁）。後輩點名受他影響一項本次未找到兩源，legacy 靠共識評價與《Virtuoso》地位支撐。已上線的《For Django》《Joy Spring》簡介與本位補查無衝突，pubIssues 為空。"
+    "notes": "三格全從零查（事實庫 research 只有專輯細節）。補查 7 次：維基 Joe Pass、WebSearch（生平）、維基 Virtuoso、Jerry Jazz Musician、WebSearch（影響）、維基 Martin Taylor、WebSearch（訃聞）。失敗請求 4 次（legacy.com 403、Britannica 404、Washington Post 403、Tampa Bay Times 頁面無內文），未超過失敗上限。同名確認：poolAlbums 四張（Virtuoso、Intercontinental、For Django、Joy Spring）皆為爵士吉他手 Joe Pass，無混卡。兩源說明：維基與 Jerry Jazz Musician（Kenneth Parsons 悼念文）各自獨立、兩頁皆實際開讀；維基 Joe Pass 與 Virtuoso 兩條目同站，src 用 Virtuoso 條目時 src2 是外站。legacy 的『Pass 是 20 世紀重要爵士吉他手之一』：維基原文 one of the most notable jazz guitarists of the 20th century，Jerry Jazz 原文為 proclaimed by many as the best jazz guitarist since Wes Montgomery，後者語氣更強，f 欄取兩者交集。未收（單源）：Jerry Jazz 稱他的句法模仿管樂手而非吉他手（單源，維基只寫單音線條被拿來與薩克斯風、小號相比，兩者不同事）；維基 Virtuoso『widely considered ... one of the best jazz guitar albums of all time』與 Penguin Guide 核心收藏、Guardian 讚語（Virtuoso 條目單源）；《Virtuoso》榜上 Billboard Jazz Albums 第 16 名（單源）；1947 年從軍後在紐奧良染上海洛因、1950 年代大半時間因毒品罪入獄（維基單源）；14 歲已在舞會與婚禮領酬演出（維基單源，搜尋摘要 legacy.com 同說但該頁 403 未開）；受 Gene Autry 電影啟發學吉他（維基單源）；聽 Charlie Parker 深受震撼（Jerry Jazz 單源）；1975 年隨 Oscar Peterson 三重奏得葛萊美（維基單源，屆次類別未查）；Jerry Jazz 稱 1960 年進 Synanon、與 Ella Fitzgerald 錄六張專輯（單源）；Martin Taylor 維基條目列 Joe Pass 為影響來源之一（單源、且僅一句列舉）；Sounds of Synanon 1962 Pacific Jazz（搜尋摘要，未開頁）。後輩點名受他影響一項本次未找到兩源，legacy 靠共識評價與《Virtuoso》地位支撐。已上線的《For Django》《Joy Spring》簡介與本位補查無衝突，pubIssues 為空。"
+  },
+  {
+    "key": "johnny griffin",
+    "name": "Johnny Griffin",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Johnny Griffin 1928 年 4 月 24 日生於芝加哥南區，就讀 DuSable 高中，跟著樂隊指導 Walter Dyett 學音樂。",
+            "src": "https://en.wikipedia.org/wiki/Johnny_Griffin",
+            "src2": "http://archive.boston.com/bostonglobe/obituaries/articles/2008/07/27/johnny_griffin_80_chicago_jazz_saxophonist_lived_in_europe/?page=1",
+            "from": "new"
+          },
+          {
+            "f": "他高中畢業後不久就加入 Lionel Hampton 的大樂團，原本吹中音薩克斯風，在團裡改吹次中音。",
+            "src": "https://en.wikipedia.org/wiki/Johnny_Griffin",
+            "src2": "https://downbeat.com/news/detail/johnny-griffin-dies-in-france",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Griffin 個子矮，得到「Little Giant」的綽號；他的演奏以咆勃語彙為底，帶著硬咆勃（hard bop）的衝勁與藍調味。",
+            "src": "https://en.wikipedia.org/wiki/Johnny_Griffin",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/griffin-johnny",
+            "from": "new"
+          },
+          {
+            "f": "他因即興速度極快，被稱為「西部最快的槍」，也被稱為世界最快的薩克斯風手。",
+            "src": "http://archive.boston.com/bostonglobe/obituaries/articles/2008/07/27/johnny_griffin_80_chicago_jazz_saxophonist_lived_in_europe/?page=1",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/griffin-johnny",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1963 年 Griffin 離開美國移居巴黎，原因包括對自由爵士在美國樂評界受到接納感到不滿、認為美國市場容不下他，另有稅務與婚姻問題。",
+            "src": "http://archive.boston.com/bostonglobe/obituaries/articles/2008/07/27/johnny_griffin_80_chicago_jazz_saxophonist_lived_in_europe/?page=1",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/griffin-johnny",
+            "from": "new"
+          },
+          {
+            "f": "他此後大半生在歐洲度過：1960 年代後期是 Kenny Clarke–Francy Boland 大樂團的獨奏手，演出與錄音一直持續到 2008 年過世。",
+            "src": "https://downbeat.com/news/detail/johnny-griffin-dies-in-france",
+            "src2": "https://www.britannica.com/biography/Johnny-Griffin",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1957 年 Griffin 加入 Art Blakey 的 Jazz Messengers，1958 年接替 John Coltrane 進入 Thelonious Monk 的樂團。",
+            "src": "https://downbeat.com/news/detail/johnny-griffin-dies-in-france",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/griffin-johnny",
+            "from": "new"
+          },
+          {
+            "f": "1960 至 1962 年他與 Eddie \"Lockjaw\" Davis 合組「Tough Tenors」。",
+            "src": "https://downbeat.com/news/detail/johnny-griffin-dies-in-france",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/griffin-johnny",
+            "from": "new"
+          },
+          {
+            "f": "Griffin 2008 年 7 月 25 日在法國家中過世，享年 80 歲。",
+            "src": "http://archive.boston.com/bostonglobe/obituaries/articles/2008/07/27/johnny_griffin_80_chicago_jazz_saxophonist_lived_in_europe/?page=1",
+            "src2": "https://downbeat.com/news/detail/johnny-griffin-dies-in-france",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1958 年接替 John Coltrane 進入 Thelonious Monk 的樂團。",
+        "src": "https://downbeat.com/news/detail/johnny-griffin-dies-in-france",
+        "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/griffin-johnny",
+        "from": "new"
+      },
+      {
+        "f": "1963 年離開美國移居巴黎，此後定居歐洲直到過世。",
+        "src": "http://archive.boston.com/bostonglobe/obituaries/articles/2008/07/27/johnny_griffin_80_chicago_jazz_saxophonist_lived_in_europe/?page=1",
+        "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/griffin-johnny",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Hampton 大樂團年份：DownBeat 與 Encyclopedia.com 寫 1945 年，Boston Globe 寫 18 歲、維基寫高中畢業三天後；f 欄不寫年份。歐洲落腳處：維基寫 1978 年遷荷蘭，Boston Globe 寫 1973 年，兩者不一致，f 欄不寫荷蘭年份。過世地：維基與 Boston Globe 寫 Availles-Limouzine，DownBeat 寫 Mauprevoir，f 欄只寫法國。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 3,
+    "status": "thin",
+    "notes": "事實庫 research 為空（只有四張上線簡介），三格從零查。補查 7 次：維基 Johnny Griffin、WebSearch（訃聞）、Boston Globe 訃聞、DownBeat 訃聞、WebSearch（遺產與榮譽）、Britannica、Encyclopedia.com；另一次帶網域限制的 WebSearch 因網域不可用被拒，未計入。失敗請求 3 次（NPR 503、All About Jazz 403、網域限制搜尋 400），未超過上限。同名確認：poolAlbums 四張（Blue Note 兩張、Riverside 一張、Blue Note《The Congregation》）皆為芝加哥次中音手 Johnny Griffin，無混卡。兩源說明：維基、Boston Globe（AP 式訃聞）、DownBeat、Britannica、Encyclopedia.com 為各自獨立頁面且皆實際開讀；Encyclopedia.com 條目為參考書轉載。legacy 判 thin：查到的是移居歐洲的經過與速度名號，沒有找到兩源的後輩點名或國家級榮譽。未收（單源）：Down Beat 樂評人 Ralph J. Gleason 寫 Griffin 吹次中音的速度比任何在世者都快（Encyclopedia.com 單源）；1995 年 Berklee 榮譽音樂博士（維基單源）；DownBeat 說他入鏡〈Great Day in Harlem〉照片（單源）；Boston Globe 說他 12 歲看 Gene Ammons 演出決定吹薩克斯風、受 Charlie Parker 與 Dizzy Gillespie 影響、Billy Eckstine 樂團（單源）；15 歲隨 T-Bone Walker 樂團演出（維基單源）；Dyett 說他太矮不能吹次中音要他吹中音（搜尋摘要轉述華盛頓郵報，未開頁）；『one of the most talented musicians of his generation』（搜尋摘要轉述訃聞，未開頁）；Britannica 稱他 noted for his fluency in the hard-bop idiom、風格融合搖擺與咆勃（單源，只用作 hard bop 佐證）；搜尋摘要稱他結合 Hawkins 的技術、Webster 的音色與 Young 的線條（未開頁）。已上線簡介中《Introducing Johnny Griffin》稱他『全爵士圈數一數二的手速』與本位查得的速度名號一致，其餘唱片細節（編號、錄音日、班底）本位未查，不判斷。"
   }
 ]
