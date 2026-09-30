@@ -554,5 +554,98 @@
     "failedFetches": 1,
     "status": "full",
     "notes": "事實庫 research 與 published 皆空，全格從零查；卡池四張（Transa、Caetano Veloso 1968、Qualquer coisa、Domingo）皆為 Veloso 本人（Domingo 為與 Gal Costa 的合作專輯，掛名仍屬他），無同名混卡。搜尋 8 次：維基、Britannica、WebSearch（逮捕流亡）、維基 Transa、Far Out、布朗大學專頁（首次為 301 導向，未計，第二次取得）、WebSearch（年度人物與後輩）、grammy.com。失敗 1 次：布朗大學舊網址（301 導向，未取得內容）。『被視為運動宣言』一條：維基 Caetano Veloso 與 Far Out 兩源，Britannica 亦稱其為 manifesto。逮捕與流亡條的『約兩個月』來自 Britannica 與布朗大學專頁（57 天），『倫敦』與『1972 年返國』來自維基與 Britannica，布朗大學頁未提倫敦與返國；1969 年 7 月出發流亡（Britannica 與搜尋摘要）只見單源，f 欄只寫年。單源、不收進 facts：Rolling Stone 2023 年《200 Greatest Singers》第 108 名（維基單源）；維基稱他被比作 Bob Dylan、Bob Marley、Lennon/McCartney（維基單源）；《Transa》錄於倫敦流亡期間、1972 年 1 月由 Philips 發行、中英文交錯，Rolling Stone 巴西版與 Discoteca Básica 播客把它列入巴西史上前 10 名專輯，Pitchfork 2016 年 1970 年代百大單曲把首曲列第 73（維基《Transa》頁單源）；Britannica 稱他『達到國民英雄地位』（單源）；Latin Recording Academy 會長 Gabriel Abaroa Jr. 稱他為『巴西音樂與文化的首席大使』、grammy.com 稱他為『20 世紀最偉大的詞曲作者之一』與『60 年代以來巴西最具影響力的人物之一』（grammy.com 為頒獎方自家稿，單源）；Far Out 稱 Emicida 等後輩延續他混合曲風與政治表態的路線（單源）；Far Out 說被捕原因罪名是『desvirilizante』、獄中被強制剪長髮（單源，且日期與其他來源不合）；搜尋摘要稱 Tropicália 影響 David Byrne 與 Paul Simon（來源不明，未開頁）；回憶錄 Tropical Truth 2002 年出版（維基單源）。legacy 格有流亡事件與年度人物，共識評價多為單源，故偏薄。 單源補充：1980 年代國際知名度靠大量巡演與跟 David Byrne 合作提升（Britannica 單源）。 Britannica 另列返國後專輯用到雷鬼、迪斯可與嘉年華音樂（單源）。"
+  },
+  {
+    "key": "coleman hawkins",
+    "name": "Coleman Hawkins",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Coleman Hawkins 1904 年 11 月 21 日生於密蘇里州聖約瑟夫（St. Joseph），1969 年 5 月 19 日在紐約市過世。",
+            "src": "https://en.wikipedia.org/wiki/Coleman_Hawkins",
+            "src2": "https://www.britannica.com/biography/Coleman-Hawkins",
+            "from": "new"
+          },
+          {
+            "f": "他 4 歲學鋼琴、7 歲學大提琴、9 歲開始吹薩克斯風。",
+            "src": "https://en.wikipedia.org/wiki/Coleman_Hawkins",
+            "src2": "https://www.britannica.com/biography/Coleman-Hawkins",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Hawkins 被公認是爵士史上第一位重要的次中音薩克斯風手；在他之前這件樂器還不被當成爵士樂器，他把它從新奇玩意變成受尊重的獨奏樂器。",
+            "src": "https://en.wikipedia.org/wiki/Coleman_Hawkins",
+            "src2": "https://www.britannica.com/biography/Coleman-Hawkins",
+            "from": "new"
+          },
+          {
+            "f": "1939 年 10 月 11 日他在紐約為 RCA 旗下的 Bluebird 錄下〈Body and Soul〉，旋律只在開頭點到，幾乎整首都是兩段在和弦進行上的即興。",
+            "src": "https://en.wikipedia.org/wiki/Body_and_Soul_(1930_song)",
+            "src2": "https://www.openculture.com/2014/10/coleman-hawkins-landmark-recording-of-body-and-soul-turns-75-today.html",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1939 年版〈Body and Soul〉2004 年被美國國會圖書館選入國家錄音登錄（National Recording Registry）。",
+            "src": "https://en.wikipedia.org/wiki/Body_and_Soul_(1930_song)",
+            "src2": "https://www.openculture.com/2014/10/coleman-hawkins-landmark-recording-of-body-and-soul-turns-75-today.html",
+            "from": "new"
+          },
+          {
+            "f": "那段偏離旋律的即興被爵士史家稱為 bebop 的早期先兆之一（one of the early tremors of bebop）。",
+            "src": "https://en.wikipedia.org/wiki/Coleman_Hawkins",
+            "src2": "https://www.openculture.com/2014/10/coleman-hawkins-landmark-recording-of-body-and-soul-turns-75-today.html",
+            "from": "new"
+          },
+          {
+            "f": "他的影響從搖擺時代的次中音手一路延伸到現代爵士的後輩。",
+            "src": "https://en.wikipedia.org/wiki/Coleman_Hawkins",
+            "src2": "https://www.britannica.com/biography/Coleman-Hawkins",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1923 至 1934 年他在 Fletcher Henderson 的樂團擔任獨奏明星，前後 11 年。",
+            "src": "https://en.wikipedia.org/wiki/Coleman_Hawkins",
+            "src2": "https://www.britannica.com/biography/Coleman-Hawkins",
+            "from": "new"
+          },
+          {
+            "f": "1934 至 1939 年他旅居歐洲演出約五年，1939 年返美後錄下〈Body and Soul〉。",
+            "src": "https://en.wikipedia.org/wiki/Coleman_Hawkins",
+            "src2": "https://www.britannica.com/biography/Coleman-Hawkins",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1939 年 10 月 11 日錄下〈Body and Soul〉，2004 年入選國家錄音登錄。",
+        "src": "https://www.openculture.com/2014/10/coleman-hawkins-landmark-recording-of-body-and-soul-turns-75-today.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫 research 為空、published 三張在；卡池四張（The Hawk Flies High、Encounters Ben Webster、At Ease with Coleman Hawkins、Body and Soul）皆為 Coleman Hawkins 本人，無同名混卡。搜尋 5 次：維基 Hawkins、Britannica、維基〈Body and Soul (1930 song)〉、WebSearch（國家錄音登錄）、Open Culture；失敗 1 次：LoC 國家錄音登錄 PDF（只回傳二進位，讀不出文字）。『Hawkins 影響後輩』：維基寫 Lester Young、Ben Webster 與 Monk、Gillespie 等 bebop 先驅，Britannica 寫搖擺時代樂手與 Coltrane、Rollins，兩源寫的具體人名不重疊，facts 只寫兩源一致的概括，不點名；Britannica 點名 Coltrane、Rollins 與維基點名 Young、Webster、Monk、Gillespie 皆單源。〈Body and Soul〉條：維基〈Body and Soul〉與 Open Culture 都提到 2004 國家錄音登錄與『旋律只點到』，但 Open Culture 內容與維基相近，可能非獨立；『early tremors of bebop』維基 Hawkins 與 Open Culture 措辭一致，疑同一出處。單源、不收進 facts：Leonard Feather 稱它是他最大的暢銷曲、讓他成為全國知名（維基〈Body and Soul〉單源）；『首張商業成功的純爵士錄音』（Open Culture 單源）；Hawkins 說他錄完沒回頭聽、事後覺得變成經典很有趣（Open Culture 單源）；1921 年加入 Mamie Smith's Jazz Hounds、1934 至 1939 年在巴黎與 Django Reinhardt、Benny Carter 合作、在 Topeka 就讀 Washburn College 學和聲（維基單源）；1944 年參與最早的 bebop 錄音（Britannica 單源）；Joachim-Ernst Berendt 說他之前次中音不是被承認的爵士樂器（維基轉引，單源，f 欄只取兩源皆有的概括）；死因肝病（維基單源）。上線簡介 Body and Soul 那張的卡單問題（MB 配到 2001 年法國合輯而非 1986 Bluebird 結集）是配對問題，不是事實錯誤，本層不列 pubIssues。"
   }
 ]
