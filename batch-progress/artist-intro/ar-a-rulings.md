@@ -88,3 +88,6 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   5. （寫作層自己已擋 Reuben Wilson「協助開創 soul jazz」：1968 年才錄 Blue Note，soul jazz 早就有了——反查規則見效。）
 - 主線親驗：Oliver Nelson《The Blues and the Abstract Truth》2026-05-14 入選國家錄音登錄（loc.gov、CBS News）；Pat Metheny《Bright Size Life》2020 年度入選（loc.gov PDF）。
 - 補洞範本這批起加「獎項主詞要寫對」（ar-a-005 g2 起）。
+- 補洞四組交齊。主線親驗：大野雄二 2026-05-04 辭世、享年 84（Mikiki、ORICON；事務所 5/13 發布），寫作層用過去式。
+- QA 的簡體字表含「国」，會誤擋日本人名（今田勝トリオ的貝斯手稲葉国光被補洞層改寫成「一位貝斯手」）。
+  寫作層派工詞改為：日本人名照原文保留、若被誤判就回報，主線個案放行，不為此改寫人名。
