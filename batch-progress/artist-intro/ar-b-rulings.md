@@ -74,3 +74,4 @@
 
 - 補洞第 1 組：James Cotton 失敗請求 9 次，照實記，放行。pubIssue 1 條（Champion Jack Dupree《Natural & Soulful Blues》「自學鋼琴」兩源不一）。Big Mama Thornton 2024 年搖滾名人堂（Musical Influence）、Jimmy Reed 1991 年（ZZ Top 引介）可具名單源。
 - 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 3 條（Luther Allison 移居法國年份；Professor Longhair「1960 年代靠掃地維生」時序錯置；Sonny Boy Williamson II 借名時 John Lee Williamson 尚在世，「已故」不對）。
+- 補洞第 3 組：pubIssue 1 條（Blind Guardian《Imaginations from the Other Side》「前兩張的 Kalle Trapp」，Trapp 也製作了第三張，待核）。Bauhaus「第一張哥德搖滾」、Bathory／Blind Guardian「維京金屬」起源屬「第一」類，不寫成定論。Bonnie Raitt 在世，葛萊美座數不寫。
