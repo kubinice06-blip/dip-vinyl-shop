@@ -166,3 +166,4 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 寫作第 1 組（20 位）審畢，修 2 處：Deep Purple「Frank Zappa 的演出引發賭場大火」主詞錯置（起火的是觀眾的信號槍）→「Zappa 演出時賭場失火」；
   Dinosaur Jr.「被視為 1980 年代最有影響力的另類樂團之一」只有 Louder 一篇的標題撐 → 刪，留影響 Cobain 與 grunge 那句。
   寫作層把 Deep Purple 由 thin 升 full（三巨頭並稱、名人堂、〈Smoke on the Water〉由來），同意。
+- 補洞第 4 組：Pixies 搜尋 9 次超上限，代理已撤掉第 9 次取得的事實（一條刪、一條 src2 改用第 8 次的來源），放行。
