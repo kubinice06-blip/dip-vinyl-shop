@@ -411,5 +411,192 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫有 4 筆研究稿與 5 篇上線簡介，但生平與地位不足，origin／sound／legacy 補查。實際 8 次：維基 Art of Noise、維基 The Art of Noise（確認為同一條目、屬多餘請求）、WebSearch、MusicRadar 專文、官方歷史站 theartofnoiseonline.com、Super Deluxe 訪談 Jeczalik、維基《Who's Afraid of the Art of Noise?》、維基 Moments in Love；失敗 1 次不計入（維基 Beat_Box_(Diversion_One) 404）。poolAlbums 五張皆為 The Art of Noise 本團，無同名混卡。非獨立：legacy 第二條與 era 的第二源為維基不同條目；legacy 第一條與 sound 第二條等的 MusicRadar、官方歷史站、Super Deluxe 為不同媒體，但官方歷史站是團隊粉絲站，非權威第三方。單源未收：官方歷史站記 1984 年團體因匿名被美國頒『Best Black Act of 1984』、1988 年〈Kiss〉（Tom Jones）英國榜第 5、1990 年中解散、2017 年三人以 Dudley Jeczalik Langan 名義重聚（單源）；維基記〈Beat Box〉（1983）深受 body-popper 喜愛、〈Close (to the Edit)〉1984 年 10 月英國榜第 8（該站與上線簡介一致，但只是維基單源）、〈Kiss〉是最大商業成功、1998 至 2000 年重聚（單源）；維基《Who's Afraid...》條目引評論稱它「像 Kraftwerk《Trans-Europe Express》一樣潛移默化地影響深遠」、Pitchfork 8.6、AllMusic 5 星、英國專輯榜最高第 27（單源）；維基《Moments in Love》記取樣者含 J Dilla、Charli XCX、Lil Wayne、Krayzie Bone、Play-N-Skillz、LL Cool J、Drake，Trevor Horn 說 Rakim 稱它是最愛的 Horn 作品，1985 年 Madonna 與 Sean Penn 婚禮播放此曲，Pitchfork 稱它是團體的『masterwork』（皆維基單源，legacy 第二條 facts 因此只寫概括說法，未列人名）；Super Deluxe 記 Morley 聽了 Moments in Love 的卡帶後建議取這個曲名（單源）。第 29 屆葛萊美〈Peter Gunn〉：事實庫該條來自維基第 29 屆葛萊美條目，官方歷史站同樣寫 Best Rock Instrumental Performance、1987 年 2 月 24 日，兩源一致；獲獎主體為 Art of Noise 與 Duane Eddy 合錄的該曲，此處不寫成團員個人獎項。"
+ },
+ {
+  "key": "the knife",
+  "name": "The Knife",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Knife 是瑞典的兄妹二人組 Karin Dreijer 與 Olof Dreijer，1999 年在哥特堡（Gothenburg）成軍。",
+      "src": "https://en.wikipedia.org/wiki/The_Knife",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/knife",
+      "from": "new"
+     },
+     {
+      "f": "兩人自己經營廠牌 Rabid Records，作品由自己的廠牌發行。",
+      "src": "https://en.wikipedia.org/wiki/The_Knife",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/knife",
+      "from": "new"
+     },
+     {
+      "f": "他們的宣傳照裡多半戴著鳥嘴面具，很少公開露面。",
+      "src": "https://en.wikipedia.org/wiki/The_Knife",
+      "src2": "https://www.thefader.com/2016/02/12/the-knife-silent-shout-anniversary-interview",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Silent Shout》（2006）的招牌是被大量變調處理的人聲，聽起來詭異、難以歸類。",
+      "src": "https://www.thefader.com/2016/02/12/the-knife-silent-shout-anniversary-interview",
+      "src2": "https://en.wikipedia.org/wiki/Silent_Shout",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Pitchfork 把 2006 年的《Silent Shout》選為當年度最佳專輯。",
+      "src": "https://en.wikipedia.org/wiki/The_Knife",
+      "src2": "https://en.wikipedia.org/wiki/Silent_Shout",
+      "from": "new"
+     },
+     {
+      "f": "Crack 與 FADER 兩家媒體都認為《Silent Shout》對後來的流行與電子音樂有影響：把電子樂裡陰暗的音色與變調人聲帶進了主流。",
+      "src": "https://crackmagazine.net/article/long-reads/the-knife-silent-shout/",
+      "src2": "https://www.thefader.com/2016/02/12/the-knife-silent-shout-anniversary-interview",
+      "from": "new"
+     },
+     {
+      "f": "2003 年他們拿到瑞典的 Grammis 獎卻拒絕出席，派兩位戴大猩猩面具、T 恤印著「50」的朋友代領，以此向 Guerrilla Girls 致意，抗議唱片業的性別失衡。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/knife",
+      "src2": "https://en.wikipedia.org/wiki/The_Knife",
+      "from": "new"
+     },
+     {
+      "f": "2007 年的 Grammis 頒獎典禮上，他們入圍的六個獎項全數得獎（年度作曲、音樂 DVD、製作人、流行團體、年度專輯與年度藝人），但依舊沒有出席。",
+      "src": "https://en.wikipedia.org/wiki/The_Knife",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/knife",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "2003 年 Grammis：維基《The Knife》寫得的是年度流行團體（Pop Group of the Year）並派 Guerrilla Girls 代表領獎；Encyclopedia.com 與搜尋摘要寫得的是年度專輯（Best Album，《Deep Cuts》），代領者是兩位戴大猩猩面具的朋友。獎項類別不一致，facts 只寫『拿到 Grammis』，不寫類別。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "事實庫無研究稿也無上線簡介，三格從零查。實際 8 次：維基 The Knife、WebSearch（人物概述）、Crack 專文、FADER 訪談、維基 Silent Shout、維基 Heartbeats、WebSearch（Grammis）、Encyclopedia.com 條目；無失敗請求。poolAlbums 五張皆為 The Knife 本團，無同名混卡。sound 格只有一條雙源事實，其餘聲音資訊是單源，故整位標 thin（origin 與 legacy 有料）。非獨立：origin 第一至三條、legacy 第一與第三、四條各含一個維基來源，維基的兩個條目（The Knife、Silent Shout）互為同站不同條目。單源未收：Encyclopedia.com 記 Karin 曾在龐克樂團 Honey Is Cool，由她邀請小她六歲的弟弟 Olof 幫忙錄下自己寫的歌，Olof 說『我們絕不可能與任何對音樂有意見的人合作』（單源）；FADER 記兄妹在城外一個同質、宗教氛圍濃的環境長大，Karin 回憶學校在文學與性議題上的狹隘，面具的由來是 Olof『不喜歡被認出來』，Karin 說想扮演一個『無法歸位的角色』，以及《Silent Shout》改用類比合成器與鼓機、不再用《Deep Cuts》的免費軟體（單源）；Crack 記《Silent Shout》2006 年 2 月 17 日由 Rabid 發行，標題來自『想尖叫卻發不出聲』的受壓抑感，並點名 Lykke Li、Niki and the Dove、Tove Lo、MØ 在它之後出現、把北歐流行推向『北歐黑色』（單源，故 legacy 第二條只寫概括結論）；維基記《Silent Shout》錄於 2004 年 3 月至 2005 年 11 月的斯德哥爾摩、評論比為『Siouxsie Sioux 加 Aphex Twin』、視覺靈感來自 Oskar Fischinger 與 Charles Burns《Black Hole》、Pitchfork 2000 年代 200 大專輯第 15、Pitchfork 2000 年代 500 首歌第 74（標題曲）、Resident Advisor 2000 年代專輯榜第 9 與 2006 年度第 2、Slant 第 95、Clash 2009 年第 5、Pitchfork 網友票選第 83（皆維基單源）；維基《Heartbeats》記〈Heartbeats〉2002 年 12 月 27 日發行、Pitchfork 2000 年代 500 首第 15、Rolling Stone 2000 年代 100 首第 87、NME 2011 年 150 首第 95，José González 的翻唱 2006 年 1 月單曲化、經 Sony Bravia 廣告（2005 年 11 月）走紅、英國榜第 9（皆單源）；維基記 Karin 2009 年的個人專輯《Fever Ray》、2014 年 11 月解散（單源）。未使用『Karin 的性別代名詞』，facts 直呼名字。"
+ },
+ {
+  "key": "эдуард артемьев",
+  "name": "Эдуард Артемьев",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Эдуард Артемьев（Eduard Artemyev）1937 年 11 月 30 日生於蘇聯的新西伯利亞。",
+      "src": "https://ru.wikipedia.org/wiki/Артемьев,_Эдуард_Николаевич",
+      "src2": "https://warheroes.ru/hero/hero.asp?Hero_id=33064",
+      "from": "new"
+     },
+     {
+      "f": "他先讀莫斯科合唱學校，再進莫斯科音樂院學作曲，師從 Yuri Shaporin，1960 年畢業。",
+      "src": "https://ru.wikipedia.org/wiki/Артемьев,_Эдуард_Николаевич",
+      "src2": "https://warheroes.ru/hero/hero.asp?Hero_id=33064",
+      "from": "new"
+     },
+     {
+      "f": "他畢業後與 ANS 合成器的發明者、工程師 Yevgeny Murzin 合作。",
+      "src": "https://ru.wikipedia.org/wiki/Артемьев,_Эдуард_Николаевич",
+      "src2": "https://warheroes.ru/hero/hero.asp?Hero_id=33064",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "ANS 是光電式合成器：作曲者在玻璃片的塗層上刮出圖形，光線穿過刮痕、由光電管讀成聲音；Artemyev 是使用它的作曲家之一，用它為電影寫了大量配樂。",
+      "src": "https://en.wikipedia.org/wiki/ANS_synthesizer",
+      "src2": "https://en.wikipedia.org/wiki/Eduard_Artemyev",
+      "from": "new"
+     },
+     {
+      "f": "他為 Andrei Tarkovsky 的三部電影配樂：《Solaris》（1972）、《Mirror》與《Stalker》（1979）。",
+      "src": "https://en.wikipedia.org/wiki/Eduard_Artemyev",
+      "src2": "https://warheroes.ru/hero/hero.asp?Hero_id=33064",
+      "from": "new"
+     },
+     {
+      "f": "除了 Tarkovsky，他也長年替 Nikita Mikhalkov 與 Andrei Konchalovsky 的電影配樂。",
+      "src": "https://en.wikipedia.org/wiki/Eduard_Artemyev",
+      "src2": "https://meduza.io/en/news/2022/12/29/composer-eduard-artemyev-has-died",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2014 年 2 月索契冬季奧運的開幕式用了他為電影《Siberiade》寫的主題音樂。",
+      "src": "https://ru.wikipedia.org/wiki/Артемьев,_Эдуард_Николаевич",
+      "src2": "https://en.wikipedia.org/wiki/Eduard_Artemyev",
+      "from": "bank"
+     },
+     {
+      "f": "1980 年莫斯科奧運會他寫了清唱劇〈Ода доброму вестнику〉（〈Ode to the Good Messenger〉）；莫斯科與索契兩屆在俄羅斯舉行的奧運，典禮上都響起他的音樂。",
+      "src": "https://ru.wikipedia.org/wiki/Артемьев,_Эдуард_Николаевич",
+      "src2": "https://warheroes.ru/hero/hero.asp?Hero_id=33064",
+      "from": "new"
+     },
+     {
+      "f": "1999 年他獲頒俄羅斯人民藝術家稱號，並在 1993、1995、1999、2017 年四度獲俄羅斯聯邦國家獎。",
+      "src": "https://ru.wikipedia.org/wiki/Артемьев,_Эдуард_Николаевич",
+      "src2": "https://warheroes.ru/hero/hero.asp?Hero_id=33064",
+      "from": "new"
+     },
+     {
+      "f": "2022 年 11 月 14 日，俄羅斯總統令授予他俄羅斯聯邦勞動英雄稱號；六個星期後的 12 月 29 日，他在莫斯科逝世，享年 85 歲，葬於莫斯科的 Vagankovo 公墓。",
+      "src": "https://ru.wikipedia.org/wiki/Артемьев,_Эдуард_Николаевич",
+      "src2": "https://warheroes.ru/hero/hero.asp?Hero_id=33064",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1972 至 1979 年間，他與 Andrei Tarkovsky 合作完成《Solaris》《Mirror》《Stalker》三部片的配樂。",
+      "src": "https://en.wikipedia.org/wiki/Eduard_Artemyev",
+      "src2": "https://warheroes.ru/hero/hero.asp?Hero_id=33064",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "《Mirror》年份：英文維基與 Hero 官方網站寫 1975，俄文維基寫 1974；facts 不寫這一部的年份。",
+   "電影數量：俄文維基寫逾 200 部，Meduza、Film Music Reporter、Hero 官方網站寫 150 部以上；facts 不寫片數。",
+   "Nika 獎次數：俄文維基寫四次，英文維基寫三次，Hero 官方網站列 1995、2004、2008、2017 四屆；不一致，facts 不寫。",
+   "逝世時年齡：Meduza 寫 86 歲，其餘（俄英維基、Film Music Reporter）與出生日算式皆為 85 歲，採 85。",
+   "ANS 年代：英文維基《ANS synthesizer》寫發明期為 1937 至 1957 年，且措辭模糊；facts 不寫 ANS 的發明年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫有 2 筆研究稿與 5 篇上線簡介（多為專輯層級的曲目與盤面資訊），生平與地位須補；origin／sound／legacy 補查。實際 8 次：俄文維基、英文維基、WebSearch（訃聞）、Meduza、Film Music Reporter、英文維基 ANS synthesizer、WebSearch（勞動英雄，俄文）、warheroes.ru（俄羅斯英雄網）；失敗 2 次不計入（克里姆林宮弔唁頁 en.kremlin.ru 與 kremlin.ru 皆 503）。poolAlbums 五張皆為 Эдуард Артемьев 本人，無同名混卡。非獨立：origin 與 legacy 多數條目的第一源為俄文維基、第二源 warheroes.ru 為官方英雄名錄網站（其內容與維基大致同源於官方履歷，屬相近而非獨立）；legacy 第一條（索契）的兩源為俄文與英文維基，同站不同語言版；sound 第一條的兩源為維基不同條目。人名 Артемьев 依店主特注 Eduard Artemyev，facts 第一條並列俄文原名與拉丁拼寫，其後行文用拉丁拼寫 Artemyev（QA 若誤判西里爾字，保留專名原文：藝人欄與奧運清唱劇〈Ода доброму вестнику〉為專名）。單源未收：俄文維基記 1960 年與 Murzin 相識、1968 年佛羅倫斯國際電子音樂大會展示 ANS 成果（單源）；英文維基記 1967 年用 ANS 寫成第一首作品（英文維基單源，其他兩處搜尋摘要來源不明，未列入 facts）；俄文維基記妻子 Izolda（1936–2019）與兒子 Artemy（1966 年生，作曲家兼製作人）、追思儀式 2022 年 12 月 31 日在莫斯科大升天教堂舉行、金面具獎 2017 年、金鷹獎五次、2013 年功勳勳章四級、2018 年亞歷山大·涅夫斯基勳章（各單源或屬履歷）；Hero 官方網站記他 1990 年創立俄羅斯電聲音樂協會（單源）；Meduza 記死因為新冠住院後併發細菌性肺炎、心臟慢性病使病情複雜，俄文維基寫肺炎併發症（兩處一致但屬逝者細節，未進 facts）；Film Music Reporter 記他為 Mikhalkov 的《Burnt by the Sun》《The Barber of Siberia》《12》配樂（單源）。已依店主特注：蘇聯／俄羅斯作曲家、2022 年過世。1980 年莫斯科奧運：俄文維基與 Hero 官方網站兩處都記此清唱劇與 1980 年奧運有關（Hero 網站原文『Ode to the Good Messenger』），上線簡介寫其器樂段用於點燃聖火、人聲配合閉幕式熄火，該細節是否準確本層沒有第二源驗證，不列 pubIssue。"
  }
 ]
