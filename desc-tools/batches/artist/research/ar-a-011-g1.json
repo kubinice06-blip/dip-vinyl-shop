@@ -657,5 +657,193 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "補查 8 次（維基 Faust、WebSearch 兩次、faust.com、維基 The Faust Tapes、Bandcamp Daily 訪談、Far Out 的 Stereolab 專文、維基 Krautrock）；失敗 1 次（Britannica 404，未計入）。事實庫零研究稿，僅有 Faust 首張的上線簡介，與補查無衝突。同名檢查：卡池五張（Faust、So Far、Faust IV、The Faust Tapes、You Know Faust）皆是漢堡的 krautrock 樂團 Faust，無混卡。faust.com 是樂團相關網站，作第二源。\n單源未收：Meifert 首張後被換掉（維基單源）；Nettelbeck 要做『德國的披頭四』（搜尋摘要，簡介已用，維基 Faust (album) 未開頁）；Nettelbeck 生卒 1940–2007（搜尋摘要）；1998 年《The Wire》把 The Faust Tapes 列入影響力唱片、稱其為『sonic collage at its best』（維基 The Faust Tapes 單源）；Irmler 說『很多美國樂團跟我說沒有你們就沒有他們』（Bandcamp 單源）；Tim Gane 1980 年在《Sounds》讀到 Faust、2014 年談論（Far Out 摘要單源，未見 Electronic Sound 原文）；『impossible to imagine an aesthetic thread … without Faust getting there first』（僅搜尋摘要，來自 Bandcamp 以外的文章）；New Statesman 稱『alien noise collages』、團員形容 krautrock 復興『makes me think everything we did was for nothing』（維基 Krautrock 單源）；1994 年首度赴美巡演、Sonic Youth 開場（維基單源，搜尋摘要）；2026 年四位共同創辦人各自發行以 Faust 為名的個人專輯（Bandcamp 單源）；Faust IV 與 Virgin 的關係（搜尋摘要）。第二源多為 WebFetch 摘要。"
+ },
+ {
+  "key": "fiona apple",
+  "name": "Fiona Apple",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fiona Apple 1977 年 9 月 13 日生於紐約市，父親是演員 Brandon Maggart，母親是歌手 Diane McAfee。",
+      "src": "https://en.wikipedia.org/wiki/Fiona_Apple",
+      "src2": "https://www.britannica.com/biography/Fiona-Apple",
+      "from": "new"
+     },
+     {
+      "f": "她十二歲時遭到性侵，之後把這段經歷寫進自己的歌裡。",
+      "src": "https://en.wikipedia.org/wiki/Fiona_Apple",
+      "src2": "https://www.britannica.com/biography/Fiona-Apple",
+      "from": "new"
+     },
+     {
+      "f": "一卷試聽帶傳到製作人 Andrew Slater 手上，他替她談成 Work Group（Sony 旗下）的唱片合約；首張《Tidal》1996 年 7 月發行。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/fiona-apple",
+      "src2": "https://en.wikipedia.org/wiki/Tidal_(album)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期作品是帶爵士影響的藍調流行，嗓音與歌詞都直白地攤開情緒。",
+      "src": "https://www.britannica.com/biography/Fiona-Apple",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/fiona-apple",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1996 年首張《Tidal》在美國拿到三白金認證，〈Criminal〉獲 1998 年葛萊美最佳女搖滾主唱演出（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Tidal_(album)",
+      "src2": "https://www.britannica.com/biography/Fiona-Apple",
+      "from": "new"
+     },
+     {
+      "f": "2021 年第 63 屆葛萊美，《Fetch the Bolt Cutters》獲最佳另類音樂專輯（得獎），其中〈Shameika〉獲最佳搖滾表演（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Fetch_the_Bolt_Cutters",
+      "src2": "https://www.britannica.com/biography/Fiona-Apple",
+      "from": "new"
+     },
+     {
+      "f": "2020 年《Fetch the Bolt Cutters》在《Rolling Stone》年度最佳專輯榜排第 2。",
+      "src": "https://en.wikipedia.org/wiki/Fetch_the_Bolt_Cutters",
+      "src2": "https://au.rollingstone.com/music/music-lists/-20441/fiona-apple-fetch-the-bolt-cutters-2-20491",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1996 年首張《Tidal》發行，美國三白金。",
+    "src": "https://en.wikipedia.org/wiki/Tidal_(album)",
+    "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/fiona-apple",
+    "from": "new"
+   },
+   {
+    "f": "2021 年《Fetch the Bolt Cutters》獲葛萊美最佳另類音樂專輯。",
+    "src": "https://en.wikipedia.org/wiki/Fetch_the_Bolt_Cutters",
+    "src2": "https://www.britannica.com/biography/Fiona-Apple",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Tidal》美國銷量：維基 Fiona Apple 寫 270 萬張，維基 Tidal 寫 290 萬張；facts 只寫『三白金』，不寫張數。",
+   "性侵地點：維基 Fiona Apple 寫住處（哈林區）公寓外，Encyclopedia.com 與搜尋摘要寫公寓大樓走廊；facts 不寫地點。",
+   "Slater 簽約年：維基 Tidal 寫 1995 年，維基 Fiona Apple 寫 1994 年 demo 送到 Slater 手上；facts 不寫年份。",
+   "發行《Tidal》時的年齡：Encyclopedia.com 寫十九歲，搜尋摘要寫十八歲（生日 9 月 13 日、專輯 7 月 23 日，實為十八歲）；facts 不寫年齡。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "補查 8 次（維基 Fiona Apple、Britannica、WebSearch 兩次、Encyclopedia.com、維基 Fetch the Bolt Cutters、維基 Tidal、Rolling Stone 澳洲站 2020 年度榜）；失敗 4 次（NPR 503、Fourteen East 頁面空白、Metacritic 403、GoldDerby 被導向 tollbit 未跟進，未計入，已達上限）。事實庫零研究稿零簡介，三格全靠補查；卡池五張皆為 Fiona Apple 本人，無混卡。\n性侵事件寫作層要克制：f 欄只寫『十二歲時遭到性侵、之後把這段經歷寫進歌裡』，〈Sullen Girl〉源於此的說法只有 Encyclopedia.com 明說（維基與 Britannica 只說創傷入歌）、發生的地點與日期兩源不一致，故不收。\n單源未收：1994 年 demo 送到 Sony 主管 Andy Slater 手上（維基 Fiona Apple）；她在紐約母親與洛杉磯父親家間輪流長大、1997 年 MTV VMA 上說『This world is bullshit』、累計逾 1500 萬張、三張專輯入 Rolling Stone 500 大專輯、2021 年起當法庭觀察員（維基 Fiona Apple 單源）；外祖母 Millicent Green 與外祖父 Johnny McAfee 是歌舞雜耍與大樂團出身、妹妹 Maude Maggart 是歌廳歌手、八歲學鋼琴、十六歲輟學到洛杉磯（Britannica 或 Encyclopedia.com 單源）；後期作品趨於實驗與精簡編制（Britannica 單源）；《Fetch the Bolt Cutters》Metacritic 98／100、為 Metacritic 史上第二高分、Pitchfork 給 10 分且為 Kanye West《My Beautiful Dark Twisted Fantasy》之後首張滿分新專輯、2020 年 Guardian／紐約時報／Entertainment Weekly／Pitchfork／Consequence 皆列年度第一、Billboard 第 7、首週 Billboard 200 第 4 與 4.4 萬單位、她因 Dr. Luke 入圍而抵制典禮、主要在威尼斯住家以 GarageBand 錄成、狗吠入歌（維基 FTBC 單源）；《Tidal》Pitchfork 2017 年 9.0、Rolling Stone 1990 年代專輯第 83 名與 100 張最佳首張第 25 名、Slant 第 74 名（維基 Tidal 單源）；Rolling Stone 年度榜評語 Kory Grow 的『potential fulfilled』（RS 澳洲站單源）。第二源多為 WebFetch 摘要。 「寫進歌裡」由 Britannica（channeled into songwriting）與 Encyclopedia.com 支持；「性侵」由維基與 Encyclopedia.com 支持。"
+ },
+ {
+  "key": "florence + the machine",
+  "name": "Florence + the Machine",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Florence Welch 1986 年 8 月 28 日生於倫敦，父親做廣告、母親是美國籍的學者。",
+      "src": "https://en.wikipedia.org/wiki/Florence_Welch",
+      "src2": "https://www.britannica.com/biography/Florence-Welch",
+      "from": "new"
+     },
+     {
+      "f": "Welch 在倫敦的 Camberwell College of Arts 念書，樂團 2007 年在倫敦由她與藝術學院友人 Isabella Summers 組成。",
+      "src": "https://en.wikipedia.org/wiki/Florence_and_the_Machine",
+      "src2": "https://www.britannica.com/biography/Florence-Welch",
+      "from": "new"
+     },
+     {
+      "f": "團名 Florence + the Machine 起初是 Welch 與 Summers 之間的私人玩笑，後來越開越大。",
+      "src": "https://en.wikipedia.org/wiki/Florence_and_the_Machine",
+      "src2": "https://en.wikipedia.org/wiki/Florence_Welch",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "音樂融合獨立搖滾、巴洛克流行與藝術搖滾，戲劇化的製作加上 Welch 高亢有力的嗓音是招牌。",
+      "src": "https://en.wikipedia.org/wiki/Florence_and_the_Machine",
+      "src2": "https://www.britannica.com/biography/Florence-Welch",
+      "from": "new"
+     },
+     {
+      "f": "Welch 的唱腔與創作被拿來與 Kate Bush 相比。",
+      "src": "https://www.britannica.com/biography/Florence-Welch",
+      "src2": "https://en.wikipedia.org/wiki/Lungs_(album)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2009 年拿下 Brit Awards 的評論家選擇獎（Critics' Choice Award）。",
+      "src": "https://en.wikipedia.org/wiki/Florence_and_the_Machine",
+      "src2": "https://www.britannica.com/biography/Florence-Welch",
+      "from": "new"
+     },
+     {
+      "f": "首張《Lungs》2009 年 7 月發行，在榜第 28 週後才於 2010 年 1 月登上英國專輯榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Florence_and_the_Machine",
+      "src2": "https://en.wikipedia.org/wiki/Lungs_(album)",
+      "from": "new"
+     },
+     {
+      "f": "2015 年 Glastonbury 音樂節星期五晚壓軸，是臨時接替受傷退出的 Foo Fighters（Dave Grohl 受傷）。",
+      "src": "https://www.nme.com/blogs/festivals-blog/florence-the-machine-headline-glastonbury-2015-five-talking-points-767619",
+      "src2": "https://en.wikipedia.org/wiki/Florence_and_the_Machine",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2009 年拿下 Brit Awards 評論家選擇獎。",
+    "src": "https://en.wikipedia.org/wiki/Florence_and_the_Machine",
+    "src2": "https://www.britannica.com/biography/Florence-Welch",
+    "from": "new"
+   },
+   {
+    "f": "2015 年 Glastonbury 星期五壓軸。",
+    "src": "https://www.nme.com/blogs/festivals-blog/florence-the-machine-headline-glastonbury-2015-five-talking-points-767619",
+    "src2": "https://en.wikipedia.org/wiki/Florence_and_the_Machine",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基 Florence Welch 寫 2006 年起在倫敦小場地做正式演出，維基樂團條目與 Britannica 寫 2007 年成軍；facts 只寫『2007 年組成』，不寫 2006。",
+   "Welch 出生地：維基寫 Camberwell（倫敦），Britannica 寫倫敦；facts 只寫倫敦。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "補查 6 次（維基 Florence and the Machine、Britannica Florence Welch、WebSearch 一次、NME Glastonbury 2015、維基 Lungs、維基 Florence Welch）；失敗 1 次（維基 Lungs 錯誤網址 404，未計入）。事實庫零研究稿零簡介，三格全靠補查；卡池五張皆為 Florence Welch 的樂團，無混卡。\n單源未收：『Glastonbury 2015 使 Welch 成為 21 世紀首位英國女性壓軸』（維基樂團條目與搜尋摘要，NME 明說未談此宣稱，且『首位』類宣稱難排除反例，不收）；《Lungs》連續五週英國第 2（維基樂團條目單源）；《Ceremonials》（2011）英國冠軍、《How Big, How Blue, How Beautiful》（2015）首張美國 Billboard 200 冠軍、六次葛萊美提名（維基樂團條目單源）；2011 年葛萊美最佳新人提名（Britannica 單源）；《Lungs》2010 年 Brit Awards 英國專輯獎、2009 年 Mercury 提名、Metacritic 79、UK 六白金與 181 萬張、全球逾 300 萬張、Guardian 2009 年度第 6／Q 第 2／Spin 第 8（維基 Lungs 單源）；時裝界視她為繆思：Gucci 2011 系列、Chanel 2012 大秀（Britannica 單源）；Vogue 稱她『queen of Bohemian style』、Rolling Stone 2023 百大歌手第 128（維基 Welch 單源）；Welch 自述影響來源 Patti Smith、Stevie Nicks、Grace Slick 等，〈Patricia〉寫給 Patti Smith（維基 Welch 單源）；Britannica 寫她曾在 Toxic Cockroaches 與 Ashok 樂團（單源）；母親專攻文藝復興研究（Britannica 單源）；Welch 與 Summers 的『Florence Robot／Isa Machine』源自青少年時期合作（維基樂團條目單源）。第二源多為 WebFetch 摘要。"
  }
 ]

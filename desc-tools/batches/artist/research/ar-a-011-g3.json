@@ -801,5 +801,112 @@
     "failedFetches": 4,
     "status": "full",
     "notes": "卡池五張皆此團專輯，無同名混卡。補查 8 次：維基樂團頁、Britannica、維基 Antichrist Superstar、WebSearch（Columbine）、Louder 專文、WebSearch（2021 指控與 2025 決定）、Loudwire label 報導、維基 Marilyn Manson 個人頁；失敗 4 次已達上限（Kerrang 403；Variety、Rolling Stone、Deadline 三頁都被導向 tollbit.* 第三方網域，未跟隨、未取得內容），因此 2025 年刑事決定只有單源。網頁皆以 WebFetch 讀摘要層級。**指控相關的寫作限制**：facts 那條只寫指控與他否認；維基個人頁寫洛杉磯郡 2025 年 1 月結束長達四年的刑事調查，因追訴時效已過與證據不足而不起訴（單源，且維基寫成 Sheriff's Department；搜尋摘要顯示為 LA 郡檢察官 Nathan Hochman 宣布：家暴指控超過追訴時效、性侵指控無法證明到超越合理懷疑，皆只看到摘要）；若寫作層要提指控，必須同時寫明『2025 年 1 月洛杉磯郡刑事調查未起訴』，否則就整段不提；此結果需兩源才可入 facts，本位未湊齊。另：Loudwire（單源）寫 2021 年 2 月 1 日 Loma Vista Recordings 宣布停止推廣其新專輯、CAA 經紀公司終止合作、兩部電視劇角色被取消；維基與 Britannica 未載 label 與經紀之事；Esmé Bianco 訴訟 2023 年和解（僅搜尋摘要）；維基個人頁另寫一名原告撤訴並稱受 Wood 施壓（單源，寫作層不用）。單源未收：Heritage Christian School 就學與 1987 年畢業（維基個人頁單源）、1992 年團名縮短為 Marilyn Manson（Britannica 單源）、幼年遭霸凌與受性騷擾（Britannica 單源，性質敏感，不收）、樂團 1993 年簽 Nothing Records（維基樂團頁單源）、1990 年代初以劇場式現場獲地方樂迷、槍手其實聽 Rammstein 與 KMFDM 這一說法出自 Manson 本人事後的說明（Louder 單源）、樂團因 Columbine 取消最後幾場巡演（維基單源；搜尋摘要另說歐洲與日本場次於 8 月 8 日結束後樂團退出公眾視野）、2002 年紀錄片《Bowling for Columbine》訪問（維基單源）、Manson 寫給 Rolling Stone 的 Columbine 文章（僅搜尋摘要）、Antichrist Superstar 1996 年 10 月 8 日發行、新奧爾良 Nothing Studios 錄製、Daisy Berkowitz 在錄音期間被開除、概念專輯（超自然煽動家的故事、尼采超人概念、批判基督教右派）、告示牌第 3 名首週 13.2 萬張、1996 年 12 月白金、1997 年 11 月國會聽證會審視其暴力內容、Rolling Stone 的 Lorraine Ali 稱它終結了『龐克寫實主義的統治』、Rolling Stone 90 年代百大專輯第 84 名（皆維基 Antichrist Superstar 單源）、樂團全球銷量逾 5000 萬張與四次葛萊美提名、《Mechanical Animals》首週登冠（維基樂團頁單源）。"
+  },
+  {
+    "key": "mike oldfield",
+    "name": "Mike Oldfield",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Mike Oldfield 1960 年代與姊姊 Sally 組成民謠二人組 The Sallyangie，發行過專輯《Children of the Sun》。",
+            "src": "https://en.wikipedia.org/wiki/Mike_Oldfield",
+            "src2": "https://en.wikipedia.org/wiki/The_Sallyangie",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Tubular Bells》由 19 歲的 Oldfield 在 Oxfordshire 的 Manor 錄音室錄成，他親自演奏其中大多數樂器。",
+            "src": "https://en.wikipedia.org/wiki/Tubular_Bells",
+            "src2": "https://www.udiscovermusic.com/stories/mike-oldfield-tubular-bells-launch/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Tubular Bells》1973 年 5 月 25 日成為 Virgin Records 的第一張發行作品，由 Richard Branson 出資支持。",
+            "src": "https://www.udiscovermusic.com/stories/mike-oldfield-tubular-bells-launch/",
+            "src2": "https://en.wikipedia.org/wiki/Mike_Oldfield",
+            "from": "new"
+          },
+          {
+            "f": "William Friedkin 1973 年的電影《The Exorcist》使用了《Tubular Bells》第一部分的開頭段落，專輯因此廣為人知。",
+            "src": "https://theconversation.com/50-years-since-mike-oldfield-began-writing-tubular-bells-the-pioneering-album-that-changed-the-sound-of-music-162254",
+            "src2": "https://en.wikipedia.org/wiki/Tubular_Bells",
+            "from": "new"
+          },
+          {
+            "f": "《Tubular Bells》發行約一年半後才登上英國專輯榜第 1 名，並在榜上累積近 290 週。",
+            "src": "https://en.wikipedia.org/wiki/Tubular_Bells",
+            "src2": "https://www.udiscovermusic.com/stories/mike-oldfield-tubular-bells-launch/",
+            "from": "new"
+          },
+          {
+            "f": "Oldfield 1975 年以《Tubular Bells》獲葛萊美最佳器樂作曲（Best Instrumental Composition）獎（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Tubular_Bells",
+            "src2": "https://en.wikipedia.org/wiki/Mike_Oldfield",
+            "from": "new"
+          },
+          {
+            "f": "《Tubular Bells》被視為新世紀音樂（new age）運動的先驅之作；The Conversation 稱它是錄音室音樂創新的關鍵範本（a critical template for innovation in studio-based music）。",
+            "src": "https://en.wikipedia.org/wiki/Mike_Oldfield",
+            "src2": "https://theconversation.com/50-years-since-mike-oldfield-began-writing-tubular-bells-the-pioneering-album-that-changed-the-sound-of-music-162254",
+            "from": "new"
+          },
+          {
+            "f": "2012 年倫敦奧運開幕式上，Oldfield 在向國民保健署（NHS）致敬的段落演出〈Tubular Bells〉與〈In Dulci Jubilo〉。",
+            "src": "https://www.foxsports.com/stories/olympics/tubular-bells-oldfield-proud-of-olympic-opener",
+            "src2": "https://en.wikipedia.org/wiki/Mike_Oldfield",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "bank",
+        "facts": [
+          {
+            "f": "錄製《Ommadawn》開始不久，他的母親過世，他後來說當時投入這批音樂是他唯一的慰藉。",
+            "src": "https://en.wikipedia.org/wiki/Ommadawn",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1973 年 5 月 25 日，《Tubular Bells》成為 Virgin Records 的第一張發行作品。",
+        "src": "https://www.udiscovermusic.com/stories/mike-oldfield-tubular-bells-launch/",
+        "src2": "https://en.wikipedia.org/wiki/Mike_Oldfield",
+        "from": "new"
+      },
+      {
+        "f": "1975 年，以《Tubular Bells》獲葛萊美最佳器樂作曲獎。",
+        "src": "https://en.wikipedia.org/wiki/Tubular_Bells",
+        "src2": "https://en.wikipedia.org/wiki/Mike_Oldfield",
+        "from": "new"
+      },
+      {
+        "f": "2012 年，在倫敦奧運開幕式演出。",
+        "src": "https://www.foxsports.com/stories/olympics/tubular-bells-oldfield-proud-of-olympic-opener",
+        "src2": "https://en.wikipedia.org/wiki/Mike_Oldfield",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "The Sallyangie 專輯《Children of the Sun》年份：維基 The Sallyangie 頁寫 1968 年發行，搜尋摘要（維基專輯頁）寫錄於 1968、1969 年發行；來源不一致，facts 不寫年份。Tubular Bells 樂器數量：維基 Oldfield 寫超過 20 種，uDiscover 寫約 20 種，The Conversation 寫約 10 種（並說疊錄的流行印象與實況有落差）；facts 不寫數量。榜上週數：維基 Tubular Bells 288 週、uDiscover 287 週（截至 2023 年 5 月），冠軍時間 16 與 17 個月，facts 只寫『約一年半』『近 290 週』。上線簡介（Ommadawn）與事實庫研究稿在本位新收事實上無衝突。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "卡池五張皆此人專輯（含 Tubular Bells、Hergest Ridge、Ommadawn、Platinum、Amarok），無同名混卡。事實庫有一則 Ommadawn 研究稿（母親過世、參與樂手）與一則上線簡介；era 格採用研究稿的母親過世一條（from: bank），樂手名單未採用。補查 8 次：維基 Mike Oldfield、維基 Tubular Bells、WebSearch（Virgin、Exorcist）、uDiscover、The Conversation、WebSearch（奧運與 Hall of Fame）、Fox Sports、維基 The Sallyangie；失敗 2 次（Britannica 404、grammy.com 五個事實頁 404）。網頁皆以 WebFetch 讀摘要層級。origin 與 sound 偏薄：出身細節多為維基單源。單源未收：1953 年 5 月 15 日生於 Berkshire 的 Reading（維基單源；生年屬高風險項，Fox Sports 稱 2012 年 59 歲只能旁證）、母親 Maureen 是來自愛爾蘭 Cork 郡的護士並有精神問題與巴比妥類成癮、兄姊 Sally 與 Terry、幼弟 David（維基單源，性質敏感不收）、十歲學吉他、十五歲每場演出賺 4 英鎊、1968 年因拒絕剪長髮離校（維基單源）、1970 至 1971 年在 Kevin Ayers 的 The Whole World 擔任貝斯手並在 Abbey Road 錄音（維基單源）、Sallyangie 團名來自 Sally 與 Davey Graham 的吉他曲 Angie（維基 Sallyangie 單源）、Sallyangie 1969 年底巡演後解散（維基 Sallyangie 單源）、父親是 NHS 醫生與母親是二戰護士（Fox Sports 單源）、Tubular Bells 1971 至 1973 年錄音與 1972 年 11 月至 1973 年 4 月在 Manor 錄音的兩說（維基 Oldfield 與維基 Tubular Bells 不一致，且皆單源）、製作人 Tom Newman 與 Simon Heyworth、EMI／CBS／Pye 拒絕、Exorcist 效應始於 1973 年 12 月、在美國告示牌專輯榜第 3 名、Atlantic 未經授權的單曲剪輯進 Hot 100 第 7 名、全球約 1500 萬張『史上最暢銷器樂專輯』、2018 年入選 Grammy Hall of Fame、Branson『Virgin 上太空』的話（皆維基 Tubular Bells 單源）、英國銷量 276 萬張（維基 Oldfield 單源）、電吉他半速錄音的效果（The Conversation 單源）、奧運後專輯在 HMV 銷量增 757%（Fox 單源）、2017 年最後專輯《Return to Ommadawn》（維基單源）。Tubular Bells 是否為 Virgin『第一張』：維基 Oldfield 頁、維基 Tubular Bells 頁與 uDiscover 三處一致寫 Virgin 的首張發行，未見反例（Virgin 自 1973 年 5 月起發行），已寫入 legacy；2018 年名人堂（Grammy Hall of Fame）與 1975 年得獎的名稱『Best Instrumental Composition』有兩個維基頁（同源）確認。"
   }
 ]
