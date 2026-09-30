@@ -36,3 +36,4 @@
 - 補洞第 1 組：Ramsey Lewis 失敗請求 6 次，照實記，放行。pubIssue 3 條（Umiliani〈Mah Nà Mah Nà〉上 The Muppet Show 年份；Ray Bryant「聽牧師母親彈琴」單源；Sister Rosetta Tharpe「首位真正暢銷的福音歌手」無來源支持）。Simone 確認為奧地利 Simone Kopmajer。
 - 寫作第 2 組（20 位）審畢，修 2 處：Laufey「2026 年蟬聯」——主線 WebSearch 核實 2026-02-01 以《A Matter of Time》再得最佳傳統流行人聲專輯（Iceland Review、IMDb News），但 2025 年未得，非「蟬聯」→「二度獲得」；Lambert, Hendricks & Ross「三重唱 1964 年結束」——Ross 1962 年已離團（其後為 LH&B）→ 改寫 Ross 離團與 Lambert 1966 年車禍。
 - ar-b-003 上架：40 位（爵士），審稿修 4 處。
+- 補洞第 3 組：The Skatalites 失敗請求 5 次，照實記，放行。pubIssue 1 條（Contemporary Jazz Quintet《Multidirection》稱五人卻列四名）。William Parker 不寫 Vision Festival 創辦人（維基與本人訪談：創辦人是 Patricia Nicholson Parker）。Tigran Hamasyan 獎項年份不一，不寫年份。卡片待核交本機：Tom Misch《Happy Music》（2023）疑為化名 Supershy 的專輯。
