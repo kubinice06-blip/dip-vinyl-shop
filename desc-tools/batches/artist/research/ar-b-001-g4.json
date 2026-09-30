@@ -963,5 +963,96 @@
     "status": "full",
     "notes": "事實庫 research 為空，三格從零查。搜尋 8 次：維基 Randy Weston、WebSearch（訃聞與家庭）、Afropop、DownBeat 訃聞（頁面只回標頭、無內文，仍算一次）、London Jazz News、Britannica、NEA 爵士大師頁、維基 DownBeat 爵士名人堂；失敗 3 次（NPR 2018 訃聞 503、華盛頓郵報 403、NPR 2026 百歲冥誕專文 503）。單源未收進 facts：(1) 維基寫父親 Frank Weston 是牙買加與巴拿馬裔、開餐廳的加維派（Garveyite），搜尋摘要另稱父親常對他說「You're an African, born in America」，來源頁未開成功（華盛頓郵報 403、NPR 503），不收，但這是他身世最關鍵的一條，建議主線人工補來源；(2) 維基寫 2011 年獲 Guggenheim Fellowship、其檔案由哈佛 Hutchins Center 收藏；(3) 維基與搜尋摘要稱他為『America's African Musical Ambassador』；(4) Afropop 寫他把鋼琴視為『African instrument』，一半豎琴、一半鼓；(5) London Jazz News 引 Stanley Crouch 說 Weston 是自 Ellington 與 Monk 以來聲音最大的爵士鋼琴手，並引小號手 Byron Wallen 稱他為『a prophet』；(6) Britannica 寫 1974 年蒙特勒爵士節獨奏讓他穩定走紅；(7) NEA 寫 1961 年隨 Lionel Hampton 等 29 位藝人前往非洲、巡演 14 個非洲國家、2010 年出版自傳《African Rhythms》、〈Hi-Fly〉與〈Berkshire Blues〉成為爵士標準曲；(8) London Jazz News 寫 1977 年奈及利亞藝術節接觸 60 種文化的音樂；(9) 維基寫 1950 年代在 Lenox 的 Music Inn 接觸 Langston Hughes 與 Babatunde Olatunji。DownBeat 名人堂一條的兩源同屬維基，非獨立。無同名混卡。",
     "pubIssues": []
+  },
+  {
+    "key": "richard \"groove\" holmes",
+    "name": "Richard \"Groove\" Holmes",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Richard Arnold Holmes 1931 年 5 月 2 日生於紐澤西州 Camden，1991 年 6 月 29 日在密蘇里州聖路易過世，得年 60 歲。",
+            "src": "https://en.wikipedia.org/wiki/Richard_Holmes_(organist)",
+            "src2": "https://fromthevaults-boppinbob.blogspot.com/2022/05/richard-groove-holmes-born-2-may-1931.html",
+            "from": "new"
+          },
+          {
+            "f": "他在費城與南紐澤西一帶的俱樂部圈已有名氣，後來經鋼琴手 Les McCann 引薦，1961 年在 Pacific Jazz 錄下出道專輯《Groove》，Ben Webster 客串。",
+            "src": "https://en.wikipedia.org/wiki/Groove_(Richard_%22Groove%22_Holmes_album)",
+            "src2": "https://www.bluenote.com/artist/richard-groove-holmes/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他彈的是 Hammond B-3 風琴，走 hard bop 與 soul jazz 路線。",
+            "src": "https://en.wikipedia.org/wiki/Richard_Holmes_(organist)",
+            "src2": "https://www.bluenote.com/artist/richard-groove-holmes/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他最有名的是 1965 年錄的〈Misty〉，收在《Soul Message》裡，成了他的招牌曲，也是他最大的商業成功。",
+            "src": "https://en.wikipedia.org/wiki/Richard_Holmes_(organist)",
+            "src2": "https://www.bluenote.com/artist/richard-groove-holmes/",
+            "from": "new"
+          },
+          {
+            "f": "1970 年代初他與風琴手 Jimmy McGriff 有過幾場被稱為「organ battle」的對打。",
+            "src": "https://fromthevaults-boppinbob.blogspot.com/2022/05/richard-groove-holmes-born-2-may-1931.html",
+            "src2": "https://www.bluenote.com/artist/richard-groove-holmes/",
+            "from": "new"
+          },
+          {
+            "f": "他晚年因攝護腺癌仍持續演出，最後的幾場演出是坐在輪椅上完成；1991 年 6 月 29 日因心臟病發過世。",
+            "src": "https://en.wikipedia.org/wiki/Richard_Holmes_(organist)",
+            "src2": "https://www.bluenote.com/artist/richard-groove-holmes/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1961 年他在 Pacific Jazz 錄下出道專輯《Groove》，1965 年在 Prestige 錄下《Soul Message》。",
+            "src": "https://en.wikipedia.org/wiki/Groove_(Richard_%22Groove%22_Holmes_album)",
+            "src2": "https://en.wikipedia.org/wiki/Soul_Message",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1961 年在 Pacific Jazz 錄下出道專輯《Groove》。",
+        "src": "https://en.wikipedia.org/wiki/Groove_(Richard_%22Groove%22_Holmes_album)",
+        "src2": "https://en.wikipedia.org/wiki/Richard_Holmes_(organist)",
+        "from": "new"
+      },
+      {
+        "f": "1965 年錄下最有名的〈Misty〉。",
+        "src": "https://en.wikipedia.org/wiki/Richard_Holmes_(organist)",
+        "src2": "https://www.bluenote.com/artist/richard-groove-holmes/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "上線簡介與事實庫（MusicBrainz、Discogs 目錄號）在本位相關事實上無衝突；簡介寫《Soul Message》1965 年 8 月 3 日錄音、PR 7435，與英文維基一致（維基寫 1966 年 1 月發行）。",
+      "事實庫的上線簡介《Groove》寫『Les McCann Presents』、Ben Webster、Tricky Lofton，與英文維基《Groove》條目一致。"
+    ],
+    "searches": 8,
+    "failedFetches": 4,
+    "status": "thin",
+    "notes": "事實庫 research 只有《After Hours》與《Comin' On Home》的目錄與榜位資料，人物三格皆補查。搜尋 8 次：維基 Richard Holmes (organist)、WebSearch（生平）、fromthevaults 部落格、維基《Soul Message》、維基《Groove》、WebSearch（限定媒體，另有一次因網域限制報錯未計）、Blue Note 藝人頁、Blue Note McGriff 藝人頁；失敗 4 次（WKCR 403、JazzTimes 兩篇各 403、一次限定網域的搜尋請求報錯）。地位格判 thin：查到的『共識』僅有〈Misty〉走紅與 organ battle，未查到名人堂、權威票選或後輩點名的雙源證據。fromthevaults 部落格與 Blue Note 藝人頁的傳記文字疑轉載或改寫自 AllMusic 傳記，兩源可能非獨立，寫作層用語宜保守。單源未收進 facts：(0) fromthevaults 寫 1960 年 Les McCann 在匹茲堡與紐澤西小俱樂部發現他（單源，facts 只寫『經 McCann 引薦』）；(1) fromthevaults 與搜尋摘要寫他原本是貝斯手，改彈 Hammond 風琴、沒受過正式鋼琴訓練；(2) fromthevaults 與搜尋摘要引 AllMusic 式文字：他的低音線是所有爵士風琴手裡『最快、最有頓點、最有脈動』的，靠腳踏板控制，兩處是同一段文字，不算兩源；(3) Blue Note 稱他是『unapologetically swinging Jimmy Smith admirer』，能從最粗礪的藍調轉到最抒情的敘事曲；(4) fromthevaults 引風琴手 Johnny Hammond Smith 認為他的技巧與音樂性被低估；(5) Blue Note 的 Jimmy McGriff 藝人頁寫 McGriff 在 Camden 的俱樂部看過 Holmes 表演後受啟發彈風琴，後來向 Holmes 學琴，Holmes 是他的『mentor and longtime friend』（該頁也沒有寫 organ battle）——這條影響最有價值，但只有單一頁面，建議主線再找第二源；(6) 維基寫 1991 年 Chicago Blues Festival 與 Jimmy Witherspoon 同台是最後演出之一（維基與部落格皆寫，但與本人定位無關，未收）；(7) 維基《Soul Message》引 AllMusic 4.5 星『混合 boogaloo 節奏與情感豐富的獨奏』；(8) 上線簡介《Soul Message》寫『左手踏出低音線』，查到的來源說是腳踏板，簡介可能混用了左手與踏板，本次未逐條核對，未列入 pubIssues。無同名混卡（維基 Richard Holmes 消歧義頁的其他人與本人無關，卡池四張皆為此人）。",
+    "pubIssues": []
   }
 ]
