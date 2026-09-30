@@ -78,3 +78,4 @@
 - 補洞第 2 組：Agnostic Front 失敗請求 5 次，照實記，放行。pubIssue 2 條（Robert Johnson《The Complete Recordings》另 take 數應為 12 非 13；Songhoy Blues《Résistance》「廷巴克圖出身的三人」過肯定）。Robert Johnson 死因只寫流傳說法。
 - 寫作第 2 組（20 位）審畢，0 處。放寬額度 4 位（Bombino、Bukka White、Professor Longhair、Stevie Ray Vaughan）皆人物故事或份量素材，照准。Robert Cray「5 座葛萊美」已改「多次拿下」，照准。
 - ar-b-007 上架：40 位（靈魂、藍調），審稿修 0 處。
+- 補洞第 4 組交件，補洞交齊（40 位）。Cornelius 2021 年東京奧運風波兩源描述矛盾、與音樂無關，不寫（依敏感事件只收兩源中性事實的規則，此處兩源不一致，整段不收）。Boredoms 上線簡介已寫 Pitchfork 名次，屬媒體榜單，交本機決定是否刪。
