@@ -109,5 +109,207 @@
     "status": "full",
     "pubIssues": [],
     "notes": "補查 8 次：維基（WebFetch）、WebSearch（生平）、TSHA（WebFetch）、WebSearch（Home Is Where the Hatred Is 與 Aretha）、Encyclopedia.com（WebFetch）、WebSearch（影響與地位）、WBUR（WebFetch）、維基第二次（WebFetch，專問 McCartney 引言與榮譽）；SoulTracks 403（失敗，不計入，failedFetches 1）。事實庫 research 為空，三格全靠補查。每條 src2 皆為實際開頁讀到（維基、TSHA、Encyclopedia.com、WBUR）。TSHA 與 Encyclopedia.com 兩篇文章在 Aretha 轉贈獎座一事上互相獨立，但 McCartney 一條的 src 與 src2 中，WBUR 只說她翻唱的披頭四歌曲成為 McCartney 最愛的翻唱，維基才有原話，兩者相容。以下為單源、未進 facts：（1）『youngest R&B artist ever to reach Number 1』只見 TSHA（搜尋摘要有另一站同句但未開頁；屬「最年輕」宣稱，拿不準）；（2）葛萊美共四度入圍（1970、1972、1973、1975 皆為最佳女性 R&B 人聲演唱）且無得獎，只見維基；（3）藍調名人堂 2023 年入選、搖滾名人堂 1986 與 1987 年兩度入圍未入選，只見維基；（4）Michael Hall 於 WBUR 訪談說她是『史上最偉大的爵士與鄉村歌手之一』，單一評論者，不收；（5）與 Dinah Washington、Nina Simone 的比較只見 Encyclopedia.com，搜尋摘要另有一站說她自認 Dinah Washington 為主要啟蒙，未開頁；（6）Synanon 戒毒計畫至 1969 年、Lexington 戒治所各只見單一來源。備註：Franklin 得獎作品為《Young, Gifted and Black》（Encyclopedia.com）。上線簡介三張均未發現錯誤；『Hot 100 第 20 名』『1975 年 11 月 Saturday Night』等未在本層查證，不列 pubIssues。"
+  },
+  {
+    "key": "first choice",
+    "name": "First Choice",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "First Choice 是來自費城的女子人聲三人組，主唱是 Rochelle Fleming，唱靈魂樂、R&B 與 disco。",
+            "src": "https://en.wikipedia.org/wiki/First_Choice_(band)",
+            "src2": "https://www.jahsonic.com/FirstChoice.html",
+            "from": "new"
+          },
+          {
+            "f": "她們的主要製作人是費城的 Norman Harris，唱片先後出在 Philly Groove、Gold Mind、Warner Bros. 與 Salsoul 等廠牌。",
+            "src": "https://en.wikipedia.org/wiki/First_Choice_(band)",
+            "src2": "https://www.jahsonic.com/FirstChoice.html",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她們走的是費城女聲團的靈魂樂底子，配上 Norman Harris 那套 Gold Mind 與 Salsoul 的舞曲編制，從 soul 一路走進 disco。",
+            "src": "https://en.wikipedia.org/wiki/First_Choice_(band)",
+            "src2": "https://www.jahsonic.com/FirstChoice.html",
+            "from": "new"
+          },
+          {
+            "f": "Norman Harris 為她們寫下並製作〈Armed and Extremely Dangerous〉（1973 年）與〈Doctor Love〉（1977 年）。",
+            "src": "https://en.wikipedia.org/wiki/Norman_Harris_(musician)",
+            "src2": "https://en.wikipedia.org/wiki/Delusions_(First_Choice_album)",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她們的〈Let No Man Put Asunder〉有 Shep Pettibone 的混音版，在舞池廣受歡迎；《Delusions》2012 年再版時，也收進包括 Pettibone 與 Frankie Knuckles 在內的 DJ 混音版本。",
+            "src": "https://www.jahsonic.com/FirstChoice.html",
+            "src2": "https://en.wikipedia.org/wiki/Delusions_(First_Choice_album)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "上線簡介《Armed and Extremely Dangerous》寫她們『日後轉入 Salsoul 旗下以〈Doctor Love〉等曲成為舞曲名團』；維基《Delusions》條目寫〈Doctor Love〉出自 1977 年 Gold Mind 廠牌的《Delusions》。本層 facts 只寫『先後在 Philly Groove、Gold Mind、Warner Bros.、Salsoul』，不把 Doctor Love 歸給 Salsoul。",
+      "解散與活動年份：維基寫 2014 年重組；jahsonic 標活躍期 1973 至 1984；搜尋摘要另寫 1980 年解散，三者不一致，facts 不寫年份。"
+    ],
+    "searches": 8,
+    "failedFetches": 4,
+    "status": "thin",
+    "pubIssues": [
+      {
+        "album": "Armed and Extremely Dangerous",
+        "claim": "樂團日後轉入 Salsoul 旗下以〈Doctor Love〉等曲成為舞曲名團",
+        "problem": "〈Doctor Love〉是 1977 年出在 Gold Mind 廠牌《Delusions》的單曲（Hot 100 第 41 名、Hot Soul Singles 第 23 名），不是 Salsoul 時期；Salsoul 是 1983 年重發〈Let No Man Put Asunder〉那條線。建議把『Salsoul 旗下以 Doctor Love 成名』改成『Gold Mind 時期以 Doctor Love 成為舞曲名團』",
+        "src": "https://en.wikipedia.org/wiki/Delusions_(First_Choice_album)"
+      }
+    ],
+    "notes": "補查 8 次：維基（WebFetch）、WebSearch（Let No Man Put Asunder 與 Levan）、jahsonic（WebFetch）、WebSearch（Debonettes 與 Harris）、維基 Let No Man Put Asunder（WebFetch，抓到 FlashForward 影集頁，無用）、維基 Delusions（WebFetch）、WebSearch（Todd Terry 與 Jungle Brothers 採樣）、維基 Norman Harris（WebFetch）；失敗 4 次不計入（soulwalking 503 兩次、AllMusic 403、WhoSampled 403，已達失敗上限）。事實庫 research 為空，三格從零查。origin、legacy 湊兩源困難：⚠ 單源未進 facts 的重要細節如下。（1）來歷：高中時期以 Debonettes 為名，Rochelle Fleming、Annette Guest、Wardell Piper 是費城 Overbrook High School 同學，經 WDAS 電台 DJ Georgie Woods 介紹給 Norman Harris 與 Allan Felder，第一支單曲〈This Is the House Where Love Died〉由 Harris 製作（單源，維基；搜尋摘要為同一段文字，非獨立；後期成員 Ursula Herring、Debbie Martin 見上線簡介）。（2）〈Armed and Extremely Dangerous〉1973 年登上 R&B 榜第 11 名、英國前 20 名，〈Smarty Pants〉是她們在英國最高的一首（第 9 名），〈The Player〉R&B 榜第 7 名（單源，維基）。（3）〈Let No Man Put Asunder〉1977 年《Delusions》收錄，1983 年 Salsoul 重發後登上 Billboard 舞曲榜第 13 名，成為招牌曲、house 場景長青曲目（維基首頁與搜尋摘要，同源文字，單源）。（4）Todd Terry 與 Jungle Brothers 等人大量採樣此曲，成為早期 house 與 techno 的素材（維基單源，WhoSampled 只見搜尋結果標題，未開頁；Todd Terry〈Jazz Anthem〉採樣了 Shep Pettibone 混音版，只見搜尋標題）。（5）Mary J. Blige 翻唱〈Let No Man Put Asunder〉、J. Cole 採樣〈Wake Up to Me〉（單源，維基）。（6）Larry Levan 混音〈Double Cross〉（Gold Mind，1979）（jahsonic 與搜尋摘要，同源）。（7）jahsonic 引述的評語『the sound that they get is the stuff that laid the foundation for a whole club generation』（單一評論，不收）。（8）《Delusions》1977 年 Gold Mind、Sigma Sound 錄音，為第四張錄音室專輯，〈Doctor Love〉Hot 100 第 41 名、Hot Soul Singles 第 23 名，專輯 Billboard 200 第 103 名，AllMusic 四星（單源，維基 Delusions）。第 4 點若寫作層要寫，請主線在本機補一個獨立來源（例如 Discogs 或 Billboard 舞曲榜）。era 格無料。本團 legacy 缺共識性宣稱（名人堂、票選、後輩點名），只有採樣與混音事實，故標 thin。"
+  },
+  {
+    "key": "gloria gaynor",
+    "name": "Gloria Gaynor",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Gloria Gaynor 本姓 Fowles，生於紐澤西州 Newark，家裡一向有音樂，父親是唱歌的人。",
+            "src": "https://njhalloffame.org/2017-inductees/gloria-gaynor/",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/gloria-gaynor",
+            "from": "new"
+          },
+          {
+            "f": "她高中畢業後，在夜總會與巡迴場子裡唱了近十年，其中加入過紐澤西的 Soul Satisfiers 樂團。",
+            "src": "https://njhalloffame.org/2017-inductees/gloria-gaynor/",
+            "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "from": "new"
+          },
+          {
+            "f": "她 1965 年錄下第一支單曲〈She'll Be Sorry〉，出在 Johnny Nash 的 Jocida 廠牌。",
+            "src": "https://en.wikipedia.org/wiki/Gloria_Gaynor",
+            "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "專輯《Never Can Say Goodbye》的 A 面，把〈Honey Bee〉〈Never Can Say Goodbye〉與〈Reach Out, I'll Be There〉接成一段不間斷的舞曲組曲，由 Tom Moulton 混音。",
+            "src": "https://en.wikipedia.org/wiki/Never_Can_Say_Goodbye_(Gloria_Gaynor_album)",
+            "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈I Will Survive〉原本是 1978 年 Polydor 主打單曲〈Substitute〉的 B 面，由 Dino Fekaris 與 Freddie Perren 寫成。",
+            "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "src2": "https://en.wikipedia.org/wiki/I_Will_Survive",
+            "from": "new"
+          },
+          {
+            "f": "她在演出中受傷、動過脊椎手術，穿著背架錄下〈I Will Survive〉的人聲。",
+            "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "src2": "https://en.wikipedia.org/wiki/I_Will_Survive",
+            "from": "new"
+          },
+          {
+            "f": "唱片公司不願意主推這首 B 面，Gaynor 把唱片交到 Studio 54 的 DJ Richie Kaczor 手上，現場舞客立刻叫好，電台跟著播放，唱片公司才把它當成獨立單曲發行。",
+            "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "src2": "https://en.wikipedia.org/wiki/I_Will_Survive",
+            "from": "new"
+          },
+          {
+            "f": "〈I Will Survive〉1979 年 3 月登上 Billboard Hot 100 冠軍，並在第 22 屆葛萊美獲得最佳迪斯可錄音（Best Disco Recording，得獎）；這個獎項只頒過這一年。",
+            "src": "https://en.wikipedia.org/wiki/I_Will_Survive",
+            "src2": "https://www.yahoo.com/entertainment/music/articles/46-years-ago-gloria-gaynors-025200767.html",
+            "from": "new"
+          },
+          {
+            "f": "這首歌成為女性與同志社群的自立與韌性之歌，也被乳癌、家暴與愛滋的倖存者引為自己的歌。",
+            "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "src2": "https://njhalloffame.org/2017-inductees/gloria-gaynor/",
+            "from": "new"
+          },
+          {
+            "f": "〈I Will Survive〉2012 年入選葛萊美名人堂，也被美國國會圖書館列入國家錄音登記簿。",
+            "src": "https://en.wikipedia.org/wiki/I_Will_Survive",
+            "src2": "https://www.yahoo.com/entertainment/music/articles/46-years-ago-gloria-gaynors-025200767.html",
+            "from": "new"
+          },
+          {
+            "f": "全國迪斯可舞廳 DJ 協會加冕她為「Queen of the Discos」。",
+            "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "src2": "https://njhalloffame.org/2017-inductees/gloria-gaynor/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1975 年，她錄下首張專輯《Never Can Say Goodbye》，靠這首翻唱與 A 面舞曲組曲打開舞廳市場。",
+            "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "src2": "https://njhalloffame.org/2017-inductees/gloria-gaynor/",
+            "from": "new"
+          },
+          {
+            "f": "1979 年 3 月，〈I Will Survive〉登上 Hot 100 冠軍。",
+            "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GloriaGaynor.pdf",
+            "src2": "https://njhalloffame.org/2017-inductees/gloria-gaynor/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "〈I Will Survive〉1979 年 3 月登上 Billboard Hot 100 冠軍。",
+        "src": "https://en.wikipedia.org/wiki/I_Will_Survive",
+        "src2": "https://njhalloffame.org/2017-inductees/gloria-gaynor/",
+        "from": "new"
+      },
+      {
+        "f": "第 22 屆葛萊美最佳迪斯可錄音得主，該獎項只頒過一屆。",
+        "src": "https://en.wikipedia.org/wiki/I_Will_Survive",
+        "src2": "https://www.yahoo.com/entertainment/music/articles/46-years-ago-gloria-gaynors-025200767.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生年：維基與紐澤西名人堂寫 1943 年 9 月 7 日，國會圖書館錄音登記簿短文與 Encyclopedia.com 寫 1949 年，兩派不一致，facts 不寫出生年。",
+      "〈I Will Survive〉入選國家錄音登記簿的年份：維基與紐澤西名人堂寫 2016，國會圖書館短文標題寫 2015，facts 只寫入選、不寫年。",
+      "「Queen of the Discos」加冕年份：LoC 與紐澤西名人堂寫 1975 年 3 月，Encyclopedia.com 寫 1976 年 3 月，facts 不寫年份。",
+      "銷量：維基與 Yahoo 寫超過 1500 萬張，Encyclopedia.com 寫 1400 萬張，facts 不寫銷量。Rolling Stone 名次：維基寫 492、Yahoo 文章寫 2024 年榜單第 251，facts 不寫名次。",
+      "上線簡介《Love Tracks》所寫〈Substitute〉B 面、Hot 100 冠軍、第 22 屆葛萊美，與本層來源一致。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 8 次：維基 Gloria Gaynor（WebFetch）、WebSearch（生平與紀錄）、國會圖書館 I Will Survive 短文 PDF（WebFetch，本機解開 PDF 讀全文）、維基 I Will Survive、紐澤西名人堂、維基《Never Can Say Goodbye》專輯條目、Encyclopedia.com、Yahoo 葛萊美專文；BlackPast 403（失敗，不計入）。事實庫 research 為空（factsBeforeLean 7 但無可用條目），三格從零查。以下皆單源或來源不一致，未進 facts：（1）『第一』類：專輯 A 面組曲為 Tom Moulton 首創（維基專輯條目稱 'a famous first devised by Tom Moulton (not credited on the record itself)'，LoC 短文稱 'first of its kind'，上線簡介同；兩源皆可查但屬『第一』宣稱，寫作層寫成『被稱為首創』較穩）；『Never Can Say Goodbye 是第一首登上 Billboard 舞曲榜冠軍的歌』只見維基，且維基自身無出處，搜尋摘要另一站同句未開頁，不收。（2）LoC 短文單源：Clout 版〈Substitute〉在歐洲已是 disco 熱門、Polydor 新任總裁想要美國版；Earl Young 的 hi-hat 與 Harold Wheeler 編曲（維基專輯條目寫鼓手是 Allan Schwartzberg，與 Young 不一致，不收）；〈Honey Bee〉1974 年主要在同志舞廳先紅；Johnny Nash 建議她改名 Gloria Gaynor；只用一位主唱、不用和聲的編排被視為自立的象徵。（3）維基 I Will Survive 單源：錄音只有 3 小時、留給 B 面 35 分鐘；1978 年 10 月 23 日發行；英國與愛爾蘭榜冠軍；Gaynor 的丈夫把唱片帶給 Kaczor（LoC 說是 Gaynor 交給他）；Encyclopedia.com 單源：VH1 選為史上最佳舞曲，1982 年成為重生基督徒後轉唱福音，並於 2020 年以福音專輯《Testimony》拿下第二座葛萊美（該獎只見搜尋摘要與 NJ 名人堂）；維基 Gloria Gaynor 單源：2025 年甘迺迪中心榮譽（Kennedy Center Honors）。（4）Encyclopedia.com 說 Johnny Nash 是在 Wagon Wheel Club 發現她，與 LoC 說她先當巡迴樂手不同，不收。（5）維基與 NJ 名人堂的兄弟人數不一致（五位／三位），不寫。兩源皆為維基者（I Will Survive 與 Gloria Gaynor 兩個條目）算同站不同條目、非獨立，本位 facts 已避免只靠這種配對：I Will Survive 一條的第二源分別配 LoC、Yahoo。維基與 Yahoo 亦屬各自獨立的媒體。"
   }
 ]
