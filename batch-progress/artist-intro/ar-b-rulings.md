@@ -91,3 +91,4 @@
 ### ar-b-010
 
 - 補洞第 1 組：Noir Désir 2003 年案件只收年份、法院、罪名與刑期，不寫案情與受害者姓名。Nirvana Cobain 過世只寫 1994 年（遺體發現日 4 月 8 日與推定死亡日 4 月 5 日並存，兩源各取其一）。Neurosis Scott Kelly 2019 年採「離團」。
+- ar-b-009 補洞第 3 組：Kasabian 失敗請求 5 次，照實記，放行。Joy Division（與 New Order）2026 年搖滾名人堂典禮 11 月未舉行 → 照 ar-a-018 Wu-Tang 先例寫「獲選」。INXS 成軍地與銷量兩說不寫。
