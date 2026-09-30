@@ -13,3 +13,4 @@
 ### ar-b-002
 
 - 補洞第 1 組：菊地雅章失敗請求 5 次，照實記，放行。World Saxophone Quartet 成軍年三源不一，代理「調和」成 1976 年底／1977 年初——調和值不算兩源一致，寫作層只寫「1970 年代後期」。菊地雅章租約判例（僅維基連到本人）不收。
+- 補洞第 2 組：pubIssue 2 條（Anouar Brahem 赴巴黎起年兩說；Art Tatum「各位女士先生」前綴查無來源）。Bobby Timmons 生卒年只有維基與鏡像站，不寫。Ben Webster 過世地兩說，採阿姆斯特丹（維基＋Britannica）。

@@ -511,5 +511,358 @@
   "status": "full",
   "notes": "補查 4 次：維基 Betty Carter（1）、Britannica（2）、WebSearch（3，看 Jazz Ahead 與校友）、NEA Jazz Masters 頁（4）；失敗 1 次。事實庫 research 為空、published 兩張（The Modern Sound of Betty Carter、Look What I Got!），卡池三張皆為她本人，無同名混卡。兩源皆實際開頁。「Betty Bebop」綽號：維基與 NEA 都提是 Hampton 取，Betty 本人不喜歡（維基單源）。「葛萊美」一條：維基與 Britannica 只寫 Grammy Award (1988) for Look What I Got!，上線簡介寫第 31 屆最佳女爵士演唱，兩源未寫獎項類別，故 f 欄只寫獲獎。單源、未進 facts：Carmen McRae 說「There's really only one jazz singer—only one: Betty Carter」（維基單源，可惜但屬名人稱許，可另查）；NEA 稱校友有 Geri Allen、Stephen Scott、Don Braden、Christian McBride，與她同為年輕樂手導師的地位堪比 Art Blakey（NEA 單源；搜尋摘要另有 Cyrus Chestnut、Jason Moran 等 Jazz Ahead 校友，未逐頁核對）；被 Lionel Hampton 樂團開除七次、因堅持即興（Britannica 單源）；1960–63 年與 Ray Charles 巡演（Britannica 單源）；Goddard College 1972 年起的校園演出（維基單源）；1980 年《The Audience with Betty Carter》（維基單源，屬發片）；「Look What I Got! 是首張獲葛萊美的獨立製作爵士專輯」（搜尋摘要，屬『第一』類，未開頁不收）。 另：NEA 稱她的唱法有 saxophone-like vocal techniques、Britannica 稱受 bebop 與 Billie Holiday、Sarah Vaughan 影響——皆單源，不進 facts；sound 格只有一條兩源事實。",
   "pubIssues": []
+ },
+ {
+  "key": "bobby timmons",
+  "name": "Bobby Timmons",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bobby Timmons 生於賓州費城，享年 38 歲，死因是肝硬化。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Timmons",
+      "src2": "https://www.bluenote.com/artist/bobby-timmons/",
+      "from": "new"
+     },
+     {
+      "f": "他出身宗教家庭，家族多人彈鋼琴，最早在祖父的教會演奏，後來的福音色彩由此而來。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Timmons",
+      "src2": "https://wbssmedia.com/artists/detail/3187",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以福音色彩與藍調驅動的彈法見稱，常被貼上「funky 鋼琴手」的標籤，儘管他的根底是 bebop。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Timmons",
+      "src2": "https://www.bluenote.com/artist/bobby-timmons/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他為 Art Blakey 寫的〈Moanin'〉、為 Cannonball Adderley 五重奏寫的〈This Here〉與〈Dat Dere〉，被認為助長了福音色彩的 soul jazz 風格。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Timmons",
+      "src2": "https://en.wikipedia.org/wiki/Moanin%27",
+      "from": "new"
+     },
+     {
+      "f": "Les McCann、Ramsey Lewis 與 Benny Green 被記載受他影響。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Timmons",
+      "src2": "https://www.bluenote.com/artist/bobby-timmons/",
+      "from": "new"
+     },
+     {
+      "f": "評論者認為他被「funky 鋼琴手」的標籤蓋過，貢獻長期被低估。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Timmons",
+      "src2": "https://www.bluenote.com/artist/bobby-timmons/",
+      "from": "new"
+     },
+     {
+      "f": "〈Moanin'〉所在的 Blakey 專輯入選葛萊美名人堂（Grammy Hall of Fame）。",
+      "src": "https://en.wikipedia.org/wiki/Moanin%27_(song)",
+      "src2": "https://en.wikipedia.org/wiki/Moanin%27",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1958 至 1959 年他在 Blakey 的 Jazz Messengers，〈Moanin'〉寫於此期；1959 年轉入 Cannonball Adderley 五重奏，〈This Here〉與〈Dat Dere〉隨即成為大眾熟悉的曲子。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Timmons",
+      "src2": "https://www.bluenote.com/artist/bobby-timmons/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Jazz Messengers 第二次在團的時間：維基與其鏡像站寫 1961 年 2 至 6 月，鏡像站寫 1960 年 2 月，兩處不一致；facts 只寫第一次在團（1958–59 年）。"
+  ],
+  "searches": 6,
+  "failedFetches": [
+   "britannica.com Bobby Timmons（404）",
+   "jazz.fm 專文（403）",
+   "allmusic.com 藝人頁（403）"
+  ],
+  "status": "full",
+  "notes": "補查 6 次：維基 Bobby Timmons（1）、WebSearch（2）、Blue Note 藝人頁（3）、維基〈Moanin' (song)〉（4）、維基 Moanin' 專輯條目（5）；另試 wbssmedia.com 鏡像頁（6，此站文字與維基幾乎逐字相同，是維基鏡像）。失敗 3 次。事實庫 research 為空、published 三張（This Here Is Bobby Timmons、Soul Time、In Person），卡池三張皆為他本人，無同名混卡。獨立性警告：origin 第二條、legacy 第一條與第四條的第二源是同站不同條目或維基鏡像（wbssmedia.com 與維基逐字相同），全部「非獨立」；只有 Blue Note 頁是獨立來源。逝世年（1974 年 3 月 1 日）與生年（1935 年 12 月 19 日）只有維基與其鏡像可查，Blue Note 只寫享年 38 歲與肝硬化，兩個獨立來源湊不到，依生卒年規則不進 facts，寫作層若要寫年份請自行再查。單源、未進 facts：〈Moanin'〉的成形——Timmons 手上只有開頭八小節，Benny Golson 建議他補一段橋段（維基〈Moanin'〉單源）；1958 年 10 月 30 日錄音、1959 年 1 月 Blue Note 發行、單曲 1998 與專輯 2001 年入選葛萊美名人堂（維基單源）；Gary Giddins 稱〈Moanin'〉set the music world on its ear（維基單源）；曾被 Benny Golson 拉進 Blakey 樂團、師承叔叔 Robert Habershaw（也教過 McCoy Tyner）、早年隨 Philadelphia Musical Academy 獎學金、1954 年遷紐約、1958 年底起染海洛因、1960 年代後期轉玩顫音琴、〈Dat Dere〉由 Oscar Brown Jr. 填詞而走紅（維基或 Blue Note 單源）。",
+  "pubIssues": []
+ },
+ {
+  "key": "booker little",
+  "name": "Booker Little",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Booker Little 1938 年 4 月 2 日生於田納西州孟菲斯，1961 年 10 月 5 日在紐約因尿毒症過世，年僅 23 歲。",
+      "src": "https://en.wikipedia.org/wiki/Booker_Little",
+      "src2": "https://jazzprofiles.blogspot.com/2013/09/booker-little-1938-1961.html",
+      "from": "new"
+     },
+     {
+      "f": "他出身音樂家庭，父親吹長號，母親是教會樂手。",
+      "src": "https://en.wikipedia.org/wiki/Booker_Little",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/little-booker",
+      "from": "new"
+     },
+     {
+      "f": "他 1954 年起在芝加哥音樂院學小號，1958 年取得音樂學士學位。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/little-booker",
+      "src2": "https://jazzprofiles.blogspot.com/2013/09/booker-little-1938-1961.html",
+      "from": "new"
+     },
+     {
+      "f": "他在芝加哥與 Sonny Rollins 相識，Rollins 勸他不要模仿別人，要找出自己的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Booker_Little",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/little-booker",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他早年受 Clifford Brown 與 Sonny Rollins 影響，後來走出自己的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Booker_Little",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/little-booker",
+      "from": "new"
+     },
+     {
+      "f": "他在 hard bop 的清晰線條裡加入不協和音與微分音程，作品帶著憂鬱氣質。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/little-booker",
+      "src2": "https://jazzprofiles.blogspot.com/2013/09/booker-little-1938-1961.html",
+      "from": "new"
+     },
+     {
+      "f": "1961 年 6 月他與 Eric Dolphy 在紐約 Five Spot 駐演，留下現場錄音。",
+      "src": "https://en.wikipedia.org/wiki/Booker_Little",
+      "src2": "https://jazzprofiles.blogspot.com/2013/09/booker-little-1938-1961.html",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他只活了 23 年，領銜錄音不過四張，評論界仍認為他留下持久價值，尤其是與 Max Roach 和 Eric Dolphy 的錄音。",
+      "src": "https://jazzprofiles.blogspot.com/2013/09/booker-little-1938-1961.html",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/little-booker",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": [
+   "britannica.com Booker Little（404）"
+  ],
+  "status": "full",
+  "notes": "補查 5 次：維基 Booker Little（1）、WebSearch（2）、encyclopedia.com（3）、JazzProfiles（4）、bookerlittle.com 官方站（5）；失敗 1 次。事實庫 research 為空、published 兩張，卡池三張（Out Front、Booker Little、Booker Little and Friend）皆為他本人，無同名混卡。兩源皆實際開頁。已知微差：母親職業維基寫教會管風琴手、encyclopedia.com 寫教會鋼琴手，f 欄只寫「教會樂手」；父親維基寫 Pullman 搬運工兼長號手、encyclopedia.com 寫教會樂團長號，f 欄只寫吹長號；改學小號年齡（JazzProfiles 12 歲）單源。「他約三年職業生涯」為維基與 JazzProfiles 都可推得（1958 年首次錄音至 1961 年）。兩張專輯簡介稱「四次領銜錄音」與 encyclopedia.com、JazzProfiles 的四張一致。「持久價值」原文出自 JazzProfiles 的 distinctive legacy of lasting value；官方站也稱 influence remains significant；此類皆為傳記站的概括評價，非權威票選或榮譽——legacy 偏薄，寫作層應保守。單源、未進 facts：Max Roach 在 Clifford Brown 1956 年過世後深受打擊、Little 是接續的重要搭檔（JazzProfiles 單源）；評論界稱他 already an exceptional trumpet player, improviser, and composer（encyclopedia.com 開頁單源，搜尋摘要同句來源未開）；影響後來的前衛取向、自由爵士的先驅（JazzProfiles 單源）；嗓音描述 open gentle tone、breathy attack、subtle vibrato（JazzProfiles 單源）；Little 與 Freddie Hubbard、Lee Morgan 並列的年輕小號手（搜尋摘要未開頁）；14 張與 Roach 的專輯（維基單源，數字可疑）。",
+  "pubIssues": []
+ },
+ {
+  "key": "brad mehldau",
+  "name": "Brad Mehldau",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Brad Mehldau 1970 年 8 月 23 日生於佛羅里達州傑克遜維爾。",
+      "src": "https://en.wikipedia.org/wiki/Brad_Mehldau",
+      "src2": "https://www.britannica.com/biography/Brad-Mehldau",
+      "from": "new"
+     },
+     {
+      "f": "他在紐約的 New School 師從 Fred Hersch 等鋼琴家，成為專業爵士樂手。",
+      "src": "https://en.wikipedia.org/wiki/Brad_Mehldau",
+      "src2": "https://www.britannica.com/biography/Brad-Mehldau",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把布拉姆斯、舒曼等德國浪漫派的影響，和 Radiohead 等流行搖滾曲目一起帶進爵士鋼琴三重奏。",
+      "src": "https://en.wikipedia.org/wiki/Brad_Mehldau",
+      "src2": "https://www.britannica.com/biography/Brad-Mehldau",
+      "from": "new"
+     },
+     {
+      "f": "他的左右手各走獨立的旋律線，以對位與彈性的時間感處理標準曲與流行曲。",
+      "src": "https://en.wikipedia.org/wiki/Brad_Mehldau",
+      "src2": "https://jazzpianists.org/people/Mehldau-Brad.html",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為同世代最具影響力的爵士樂手之一；樂評 Nate Chinen 2013 年稱他是過去 20 年最具影響力的爵士鋼琴家。",
+      "src": "https://en.wikipedia.org/wiki/Brad_Mehldau",
+      "src2": "https://www.britannica.com/biography/Brad-Mehldau",
+      "from": "new"
+     },
+     {
+      "f": "他被認為是把 Radiohead 等搖滾曲目帶進爵士圈的重要推手。",
+      "src": "https://nextbop.com/radiohead-jazz-covers",
+      "src2": "https://jazzpianists.org/people/Mehldau-Brad.html",
+      "from": "new"
+     },
+     {
+      "f": "Mehldau 2020 年以《Finding Gabriel》獲葛萊美最佳爵士器樂專輯（Best Jazz Instrumental Album）。",
+      "src": "https://en.wikipedia.org/wiki/Brad_Mehldau",
+      "src2": "https://www.nonesuch.com/journal/brad-mehldau-attacca-quartet-kronos-quartet-win-grammy-awards-2020-01-26",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1990 年代他的核心三重奏是 Larry Grenadier（貝斯）與 Jorge Rossy（鼓），2005 年起由 Jeff Ballard 接替 Rossy。",
+      "src": "https://en.wikipedia.org/wiki/Brad_Mehldau",
+      "src2": "https://www.britannica.com/biography/Brad-Mehldau",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2020 年《Finding Gabriel》獲葛萊美最佳爵士器樂專輯。",
+    "src": "https://en.wikipedia.org/wiki/Brad_Mehldau",
+    "src2": "https://www.nonesuch.com/journal/brad-mehldau-attacca-quartet-kronos-quartet-win-grammy-awards-2020-01-26",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "New School 師承：維基與 Britannica 寫 Junior Mance、Fred Hersch、Kenny Werner；jazzpianists.org 寫 Hersch 與 Jim McNeely。facts 只寫兩源共有的 Fred Hersch。"
+  ],
+  "searches": 6,
+  "failedFetches": [
+   "jazztimes.com 專題（403）"
+  ],
+  "status": "full",
+  "notes": "補查 6 次：維基 Brad Mehldau（1）、Britannica（2）、WebSearch（3）、Nonesuch 葛萊美新聞（4）、Nextbop Radiohead 爵士翻唱（5）、jazzpianists.org（6）；失敗 1 次。事實庫 research 與 published 皆空，卡池三張（Largo、After Bach、Love Songs）皆為這位鋼琴家本人，無同名混卡。兩源皆實際開頁讀到。措辭注意：Nextbop 原句是 probably most responsible for bringing Radiohead covers into the jazz idiom，帶「可能」，f 欄寫「被認為」；jazzpianists.org 稱他 elevated pop/rock songs into the jazz canon。第一條 legacy 兩源用詞不同（維基引 Nate Chinen 2013 年說法：最具影響力的爵士鋼琴家；Britannica：one of the most influential jazz artists of his generation），f 欄合寫，寫作層宜寫成「被視為…之一」而不要寫成最具影響力。Nonesuch 是他的廠牌（Warner 旗下），非中立，但獎項事實可由維基交叉。單源、未進 facts：Guardian 的 John Fordham 於 1990 年代中期稱他 the next great keyboard star of jazz（維基單源）；jazzpianists.org 點名受他影響的後輩 Aaron Parks、Taylor Eigsti、Sullivan Fortner、Christian Sands（單源，搜尋摘要另有 Ethan Iverson 稱他是同輩最大影響，未逐頁核對）；Nonesuch 稱這是他首個葛萊美（單源，搜尋摘要稱 10 次入圍後首度獲獎）；出身背景（領養、家人搬遷、6 歲學古典鋼琴）與 New School 1993 年畢業（單源）；90 年代加入 Joshua Redman 四重奏（jazzpianists.org 單源）；1995 年首張《Introducing Brad Mehldau》與 1997 至 2001 年《The Art of the Trio》系列（Britannica 單源，屬履歷）；Wynton Kelly、Bill Evans、Keith Jarrett、Ahmad Jamal 等他的影響（jazzpianists.org 單源）。左右手獨立旋律線一條的來源：維基寫 left-hand independence and improvised counterpoint、jazzpianists.org 寫 contrapuntal、independent melodic lines in both hands。",
+  "pubIssues": []
+ },
+ {
+  "key": "cécile mclorin salvant",
+  "name": "Cécile McLorin Salvant",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她從小學古典鋼琴與聲樂，受的是古典訓練，之後才進入爵士。",
+      "src": "https://en.wikipedia.org/wiki/C%C3%A9cile_McLorin_Salvant",
+      "src2": "https://www.nonesuch.com/artists/cecile-mclorin-salvant",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的曲目跨越爵士、藍調、民謠與劇場音樂，除了標準曲也唱自己的創作。",
+      "src": "https://en.wikipedia.org/wiki/C%C3%A9cile_McLorin_Salvant",
+      "src2": "https://www.nyphil.org/about-us/artists/cecile-mclorin-salvant/",
+      "from": "new"
+     },
+     {
+      "f": "她以挖掘少有人錄過的老歌見稱，把 vaudeville、藍調、劇場與爵士連在一起，講究歌裡的敘事與轉折。",
+      "src": "https://www.nyphil.org/about-us/artists/cecile-mclorin-salvant/",
+      "src2": "https://www.bso.org/profiles/c%C3%A9cile-mclorin-salvant",
+      "from": "new"
+     },
+     {
+      "f": "2023 年的《Mélusine》以法語、奧克語（Occitan）、英語與海地克里奧語演唱。",
+      "src": "https://en.wikipedia.org/wiki/C%C3%A9cile_McLorin_Salvant",
+      "src2": "https://wexarts.org/performing-arts/cecile-mclorin-salvant",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她 2010 年拿下 Thelonious Monk 國際爵士大賽的聲樂冠軍。",
+      "src": "https://en.wikipedia.org/wiki/C%C3%A9cile_McLorin_Salvant",
+      "src2": "https://www.nyphil.org/about-us/artists/cecile-mclorin-salvant/",
+      "from": "new"
+     },
+     {
+      "f": "她以《For One to Love》、《Dreams and Daggers》與《The Window》連續三張專輯獲葛萊美最佳爵士人聲專輯（Best Jazz Vocal Album）。",
+      "src": "https://en.wikipedia.org/wiki/C%C3%A9cile_McLorin_Salvant",
+      "src2": "https://www.nyphil.org/about-us/artists/cecile-mclorin-salvant/",
+      "from": "new"
+     },
+     {
+      "f": "她 2020 年獲麥克阿瑟獎助（MacArthur Fellowship）。",
+      "src": "https://en.wikipedia.org/wiki/C%C3%A9cile_McLorin_Salvant",
+      "src2": "https://www.bso.org/profiles/c%C3%A9cile-mclorin-salvant",
+      "from": "new"
+     },
+     {
+      "f": "已故聲樂家 Jessye Norman 稱她擁有獨特的嗓音，並以智性與完整的音樂性照亮每個音。",
+      "src": "https://www.nyphil.org/about-us/artists/cecile-mclorin-salvant/",
+      "src2": "https://wexarts.org/performing-arts/cecile-mclorin-salvant",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2010 年獲 Thelonious Monk 國際爵士大賽聲樂冠軍；2020 年獲麥克阿瑟獎助。",
+    "src": "https://en.wikipedia.org/wiki/C%C3%A9cile_McLorin_Salvant",
+    "src2": "https://www.nyphil.org/about-us/artists/cecile-mclorin-salvant/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 8,
+  "failedFetches": [
+   "britannica.com（404）",
+   "macfound.org 2020 年得主頁（404）",
+   "news.vt.edu（403）",
+   "juilliard.edu（403）"
+  ],
+  "status": "full",
+  "notes": "補查 8 次：維基（1）、WebSearch（2）、NY Phil 藝人頁（3）、Wexner Center（4）、The Soraya（5）、Nonesuch 藝人頁（6）、WebSearch 傳記（7）、BSO 藝人頁（8）；失敗 4 次（達上限）。事實庫 research 與 published 皆空，卡池三張（Ghost Song、Dreams and Daggers、Mélusine）皆為她本人，無同名混卡。origin 只有一條：出生地（邁阿密、法籍母親與海地籍父親）、2007 年赴法國 Aix-en-Provence 攻讀法律與巴洛克聲樂、師承 Jean-François Bonnel 學即興等，在維基與搜尋摘要（未開頁）出現，開頁的第二源（NY Phil、Wexner、Soraya、Nonesuch、BSO）皆不含出生與求學，故只保留兩源都支持的「古典鋼琴與聲樂訓練」一條；出生年 1989 年 8 月 28 日、古典鋼琴 5 歲起、8 歲入 Miami Choral Society、隨 Edward Walker 學聲樂、2007 年赴 Aix-en-Provence（Darius Milhaud 音樂院）均為維基單源，未收。非獨立警告：sound 第二條、legacy 第二至第四條與第四條的第二源，NY Phil、Wexner、BSO、Soraya 的藝人介紹是同一份宣傳簡介的轉載（措辭逐字相同），彼此非獨立；Jessye Norman 一條兩源即為該簡介的兩份轉載，寫作層若要寫，宜寫成「Jessye Norman 稱…」並不當成獨立共識。單源、未進 facts：葛萊美三次獲獎年份（維基寫 2016、2018、2019，其他頁面只寫三張連續專輯）；Wynton Marsalis 稱 You get a singer like this once in a generation or two（維基單源）；Sarah Vaughan、Billie Holiday、Bessie Smith、Betty Carter 為主要影響（維基單源）；Doris Duke Artist Award 2020（NY Phil、Wexner、BSO 同一份簡介，非獨立）；Ghost Song 與 Mélusine 各獲葛萊美提名（BSO、NY Phil 同簡介）；NPR Fresh Air 稱她 a unique vocal style and curatorial skills that make each new recording an event（Nonesuch 官網轉述，屬廠牌宣傳）；2025 年《Oh Snap》入選多家年度最佳（Nonesuch 單源，晚於卡池專輯）。legacy 全是獎項與簡介，沒有找到後輩點名受她影響的來源。",
+  "pubIssues": []
  }
 ]
