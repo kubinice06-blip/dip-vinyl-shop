@@ -504,5 +504,418 @@
   "status": "full",
   "pubIssues": [],
   "notes": "補查 8 次成功請求：en.wikipedia Adele、Britannica（第二次用對網址）、WebSearch×3、Official Charts、grammy.com、TheWrap。失敗請求 6 次不計，超出上限 4 次（Britannica 首次網址 404、Billboard 與 Rolling Stone 各一次 307 轉向到付費牆 tollbit（Billboard 轉向後 402）、CBC 403、NPR 503），照實記錄。事實庫 research 為空，完全靠補查。生日、家庭、Etta James、XL 簽約年以 en.wikipedia 與 Britannica 兩頁實讀。單源、不收進 facts：Spice Girls 是她音樂熱情的起點、14 歲發現 Etta James 與 Ella Fitzgerald、Amy Winehouse《Frank》促使她學吉他、Lauryn Hill 專輯是最愛、『we're a gender, not a genre』引語、次女高音（mezzo-soprano）（皆英文維基單源）；Nielsen 338 萬張的數字只有 TheWrap 實讀，第二源英文維基只寫『首張單週破 300 萬張』，而 Billboard 與 Rolling Stone 因付費牆未能開頁；奧斯卡 1 座（〈Skyfall〉）與 Golden Globe、Emmy、Brit Awards 12 座（英文維基單源）；〈Hello〉88 天破 10 億 YouTube 觀看（英文維基單源）；1.2 億張唱片銷量（英文維基單源）。《21》『2011 年 12 月 4 日成為英國 21 世紀銷量最高』來自 Official Charts 頁（截至當時 340 萬張、勝過 Back To Black 330 萬），『全球最暢銷 21 世紀專輯』是英文維基寫法，寫作層兩者分開寫。Grammy 六座：grammy.com 頁寫六座、含年度專輯、年度唱片、年度歌曲、最佳流行專輯與最佳流行獨唱；Britannica 寫《21》拿六座含三大獎；『六項提名全數得獎』出自搜尋摘要（新聞稿）而非實讀頁，寫作層寫『六座』即可。榮譽的主詞：年度專輯屬《21》，年度唱片與歌曲屬〈Rolling in the Deep〉。無同名混卡：卡池 19、21、25、30 皆為 Adele。"
+ },
+ {
+  "key": "b.t. express",
+  "name": "B.T. Express",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "B.T. Express 起於紐約布魯克林，前身是 King Davis House Rockers，中間用過 Madison Street Express、Brooklyn Transit Express 的名稱，最後定名為 B.T. Express；改名是 Scepter 廠牌的建議。",
+      "src": "https://en.wikipedia.org/wiki/B._T._Express",
+      "src2": "https://musicrepublicmagazine.com/2017/03/give-funk-b-t-express-anthology-1974-1982-big-break-records-7th-april-2017/",
+      "from": "new"
+     },
+     {
+      "f": "團裡的吉他手 Richard Thompson、次中音薩克斯風手 Bill Risbrook 與薩克斯風手 Carlos Ward 原本都來自 King Davis House Rockers。",
+      "src": "https://en.wikipedia.org/wiki/B._T._Express",
+      "src2": "https://musicrepublicmagazine.com/2017/03/give-funk-b-t-express-anthology-1974-1982-big-break-records-7th-april-2017/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "B.T. Express 屬於 1970 年代初的「Brooklyn Sound」，把放克與剛冒頭的迪斯可揉在一起。",
+      "src": "https://en.wikipedia.org/wiki/B._T._Express",
+      "src2": "https://musicrepublicmagazine.com/2017/03/give-funk-b-t-express-anthology-1974-1982-big-break-records-7th-april-2017/",
+      "from": "new"
+     },
+     {
+      "f": "他們的聲音把經典 R&B、悅耳的旋律鉤子與舞池 riff 揉在一起，橫跨放克、靈魂與迪斯可。",
+      "src": "https://theseconddisc.com/2017/05/11/til-youre-satisfied-big-break-collects-the-best-of-b-t-express-on-new-2-cd-set/",
+      "src2": "https://magazine.waxpoetics.com/article/bt-express-bridged-the-gap-between-funk-and-disco/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1974 年的〈Do It ('Til You're Satisfied)〉登上 R&B 單曲榜第 1 名與 Billboard Hot 100 第 2 名。",
+      "src": "https://en.wikipedia.org/wiki/Do_It_(%27Til_You%27re_Satisfied)",
+      "src2": "https://theseconddisc.com/2017/05/11/til-youre-satisfied-big-break-collects-the-best-of-b-t-express-on-new-2-cd-set/",
+      "from": "new"
+     },
+     {
+      "f": "接著的〈Express〉同樣登上 R&B 榜第 1 名。",
+      "src": "https://theseconddisc.com/2017/05/11/til-youre-satisfied-big-break-collects-the-best-of-b-t-express-on-new-2-cd-set/",
+      "src2": "https://magazine.waxpoetics.com/article/bt-express-bridged-the-gap-between-funk-and-disco/",
+      "from": "new"
+     },
+     {
+      "f": "樂團一生共有 10 首 R&B 榜上榜單曲，其中兩首拿下冠軍。",
+      "src": "https://theseconddisc.com/2017/05/11/til-youre-satisfied-big-break-collects-the-best-of-b-t-express-on-new-2-cd-set/",
+      "src2": "https://musicrepublicmagazine.com/2017/03/give-funk-b-t-express-anthology-1974-1982-big-break-records-7th-april-2017/",
+      "from": "new"
+     },
+     {
+      "f": "曾在團裡彈鍵盤的 Kashif（本名 Michael Jones）日後成為 1980 年代的 R&B 製作人與歌手。",
+      "src": "https://en.wikipedia.org/wiki/B._T._Express",
+      "src2": "https://magazine.waxpoetics.com/article/bt-express-bridged-the-gap-between-funk-and-disco/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首支單曲〈Do It ('Til You're Satisfied)〉1974 年 8 月由 Scepter 發行，製作人 Jeff Lane。",
+      "src": "https://en.wikipedia.org/wiki/Do_It_(%27Til_You%27re_Satisfied)",
+      "src2": "https://musicrepublicmagazine.com/2017/03/give-funk-b-t-express-anthology-1974-1982-big-break-records-7th-april-2017/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1974 年〈Do It ('Til You're Satisfied)〉登上 R&B 榜第 1 名、Hot 100 第 2 名。",
+    "src": "https://en.wikipedia.org/wiki/Do_It_(%27Til_You%27re_Satisfied)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Kashif 加入年：Wax Poetics 寫 1975、The Second Disc 寫 1976；兩源不一致，facts 不寫年份。",
+   "解散／活動期：英文維基寫 1974–1987 年活動，The Second Disc 寫 1982 年專輯後解散；兩源不一致，facts 不寫解散年。",
+   "Carlos Ward 的樂器：英文維基寫木管、Second Disc 寫中音薩克斯風、搜尋摘要寫高音；facts 只寫『薩克斯風手』。"
+  ],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 8 次：en.wikipedia B.T. Express、WebSearch×3、The Second Disc、Music Republic、en.wikipedia〈Do It〉單曲頁、Wax Poetics；失敗 1 次不計（SoulTracks 403）。事實庫 research 與 published 皆空，完全靠補查。無同名混卡（卡池四張皆為 Brooklyn 的 B.T. Express）。⚠ Carlos Ward 的樂器各源不一（次中音／中音／木管），origin 第二條只寫『薩克斯風手』，請寫作層不要寫具體樂器。單源、不進 facts：Wax Poetics 稱樂團 1977 年成為『第一支到白宮演出的放克樂團』（為 Carter 的員工野餐）、同年布魯克林宣布 7 月 7 日為『B.T. Express Day』（搜尋摘要僅回同一 Wax Poetics 頁與未開頁的 AllMusic／Iconoclassic 摘要，且屬『第一支』類宣稱、無法排除反例）；Wax Poetics 稱樂團前身 King Davis House Rockers 約 1967 年成形、Carlos Ward 曾與 Coltrane 及 Don Cherry 合作、由強硬的銅管節奏團走向更滑順的合成器聲響、Jamal Risbrook 說嘻哈取樣讓年輕聽眾認識他們（另外搜尋摘要也稱其為嘻哈與浩室的取樣來源）；英文維基單曲頁稱〈Do It〉在 Truth Hurts 2002 年〈Addictive〉被取樣、GTA V 電台曲目、國際榜位（加拿大第 7 名等）；〈Express〉1974 年登 R&B 第 1 名與 Pop 第 4 名（The Second Disc 與搜尋摘要，Wax Poetics 只寫 R&B 榜首，故只收 R&B）。Second Disc 與 Music Republic 同屬部落格性質的重發評介，Music Republic 與 Wikipedia 的樂團段落內容高度重疊，兩源不完全獨立，已在 origin 兩條盡量配 en.wikipedia 與另一站。〈Do It〉RIAA 金唱片與發行日 8 月 27 日、Billy Nichols 作曲只見英文維基單曲頁；『兩首冠軍』係〈Do It〉與〈Express〉；『早期迪斯可熱門曲』的說法已移出 facts（樂團頁與單曲頁同站、非獨立），金唱片已移出 facts，寫作層不要寫。"
+ },
+ {
+  "key": "barry white",
+  "name": "Barry White",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Barry White 本名 Barry Carter，1944 年 9 月 12 日生於德州加爾維斯頓，2003 年 7 月 4 日在洛杉磯過世，享年 58 歲。",
+      "src": "https://en.wikipedia.org/wiki/Barry_White",
+      "src2": "https://bestclassicbands.com/barry-white-love-unlimited-career-7-4-19/",
+      "from": "new"
+     },
+     {
+      "f": "1972 年他發掘並製作了女子三人組 Love Unlimited，成為他走紅的開端。",
+      "src": "https://en.wikipedia.org/wiki/Barry_White",
+      "src2": "https://bestclassicbands.com/barry-white-love-unlimited-career-7-4-19/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Barry White 以低沉的男低音嗓音與浪漫形象聞名。",
+      "src": "https://en.wikipedia.org/wiki/Barry_White",
+      "src2": "https://bestclassicbands.com/barry-white-love-unlimited-career-7-4-19/",
+      "from": "new"
+     },
+     {
+      "f": "他成立並親自指揮 40 人編制的 Love Unlimited Orchestra。",
+      "src": "https://bestclassicbands.com/barry-white-love-unlimited-career-7-4-19/",
+      "src2": "https://www.udiscovermusic.com/stories/love-unlimited-orchestra-loves-theme-song/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Love Unlimited Orchestra 的器樂曲〈Love's Theme〉1974 年 2 月 9 日登上美國 Hot 100 榜首，取代了 Barbra Streisand 的〈The Way We Were〉。",
+      "src": "https://www.udiscovermusic.com/stories/love-unlimited-orchestra-loves-theme-song/",
+      "src2": "https://en.wikipedia.org/wiki/Barry_White",
+      "from": "new"
+     },
+     {
+      "f": "〈Can't Get Enough of Your Love, Babe〉是他的第一首美國冠軍單曲，同名專輯《Can't Get Enough》1974 年 8 月發行後登上 Billboard 200 與 R&B 專輯榜第 1 名。",
+      "src": "https://en.wikipedia.org/wiki/Can%27t_Get_Enough_(Barry_White_album)",
+      "src2": "https://en.wikipedia.org/wiki/Barry_White",
+      "from": "new"
+     },
+     {
+      "f": "他的唱片與單曲合計全球銷量超過 1 億張。",
+      "src": "https://walkoffame.com/barry-white/",
+      "src2": "https://en.wikipedia.org/wiki/Barry_White",
+      "from": "new"
+     },
+     {
+      "f": "2013 年 9 月 12 日、也就是他 69 歲冥誕當天，好萊塢星光大道追贈他一顆唱片類的星。",
+      "src": "https://walkoffame.com/barry-white/",
+      "src2": "https://en.wikipedia.org/wiki/Barry_White",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1972 年他發掘 Love Unlimited，並組成 Love Unlimited Orchestra。",
+      "src": "https://bestclassicbands.com/barry-white-love-unlimited-career-7-4-19/",
+      "src2": "https://walkoffame.com/barry-white/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1974 年〈Love's Theme〉登上美國 Hot 100 榜首。",
+    "src": "https://www.udiscovermusic.com/stories/love-unlimited-orchestra-loves-theme-song/",
+    "from": "new"
+   },
+   {
+    "f": "2013 年好萊塢星光大道追贈星星。",
+    "src": "https://walkoffame.com/barry-white/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "本名中間名：英文維基寫 Barry Eugene Carter，Best Classic Bands 只寫 Barry Carter；facts 只寫 Barry Carter。",
+   "死因：英文維基與搜尋摘要寫腎衰竭（高血壓多年、洗腎、前年 9 月中風），Walk of Fame 頁寫心臟與腎衰竭；facts 不寫死因。"
+  ],
+  "searches": 8,
+  "failedFetches": 5,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 8 次成功請求：en.wikipedia Barry White、WebSearch×3（訃聞、Love Unlimited、星光大道）、Best Classic Bands、uDiscover、walkoffame.com、en.wikipedia《Can't Get Enough》專輯頁。失敗 5 次不計，超出上限 4 次（Britannica 404、Washington Post 403、Variety 307 轉付費牆、NPR 503、biography.com 404），照實記錄。事實庫 research 與 published 皆空。無同名混卡（卡池四張皆為 Barry White 本人；Barry & Glodean 為與 Glodean White 合作專輯，她是他的妻子與 Love Unlimited 成員）。⚠ 非獨立：〈Can't Get Enough of Your Love, Babe〉那條兩源皆為英文維基（專輯頁與人物頁）；『1 億張』與星星兩條的 en.wikipedia 為同站不同條目，walkoffame.com 是獨立第二源；Best Classic Bands 部分內容與維基相似。單源、不進 facts：在洛杉磯 Watts 長大、聽母親的古典唱片並自學鋼琴（英文維基；搜尋摘要稱南中洛杉磯與單親媽媽，來源未開）、14 歲聲音突然變低（Best Classic Bands）、青少年時因偷輪胎入獄、在獄中聽到 Elvis Presley 立志從事音樂（Best Classic Bands）、1975 年娶 Love Unlimited 成員 Glodean James 並於 1976 年創立 Unlimited Gold Records（Best Classic Bands）、他一生兩座葛萊美都在 2000 年以〈Staying Power〉拿下（英文維基與訃聞搜尋摘要，訃聞頁 Washington Post 403、Variety 轉向付費牆未能開；walkoffame 只寫兩度得獎）、2004 年身後入選 Dance Music Hall of Fame（英文維基）、『1974 年同時擁有一首冠軍器樂與兩首冠軍人聲單曲的唯一藝人』（walkoffame 單源、屬『唯一』類宣稱）、作品被 Jay-Z、Beyoncé、Mary J. Blige 等取樣（walkoffame 與搜尋摘要）、〈You're the First, the Last, My Everything〉英國榜首（英文維基專輯頁）、Rolling Stone 2003 年 500 大專輯名次（《Can't Get Enough》第 281 名，2012 年改第 283 名；英文維基單源）。『首張美國冠軍』與『專輯登 Billboard 200 第 1』請保守寫成『英文維基記載』。"
+ },
+ {
+  "key": "betty davis",
+  "name": "Betty Davis",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Betty Davis 本名 Betty Mabry，生於北卡羅來納州 Durham。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://www.euronews.com/culture/2022/02/10/betty-davis-hard-funk-pioneer-who-inspired-husband-miles-davis-dead-at-77",
+      "from": "new"
+     },
+     {
+      "f": "她十歲起在賓州 Homestead 長大。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://rockcellarmagazine.com/betty-davis-dies-funk-soul-singer-rest-in-peace/",
+      "from": "new"
+     },
+     {
+      "f": "她十幾歲搬到紐約，就讀 Fashion Institute of Technology，並替《Seventeen》《Glamour》等雜誌當模特兒。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://www.euronews.com/culture/2022/02/10/betty-davis-hard-funk-pioneer-who-inspired-husband-miles-davis-dead-at-77",
+      "from": "new"
+     },
+     {
+      "f": "她替 The Chambers Brothers 寫了〈Uptown (to Harlem)〉，之後才專心做自己的音樂。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://rockcellarmagazine.com/betty-davis-dies-funk-soul-singer-rest-in-peace/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1973 至 1975 年她發行《Betty Davis》《They Say I'm Different》《Nasty Gal》三張專輯，把放克、搖滾與靈魂樂混在一起。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://www.hhv-mag.com/feature/betty-davis-war-weit-mehr-als-eine-phaenomenale-funk-saengerin/?lang=en",
+      "from": "new"
+     },
+     {
+      "f": "1968 年她嫁給 Miles Davis，把他帶去聽 Jimi Hendrix 與 Sly Stone，影響了他走向搖滾與放克；兩人婚姻約一年就結束。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://www.hhv-mag.com/feature/betty-davis-war-weit-mehr-als-eine-phaenomenale-funk-saengerin/?lang=en",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "第四張專輯《Is It Love or Desire》錄成後被擱置，直到 2009 年才由 Light in the Attic 發行。",
+      "src": "https://www.hhv-mag.com/feature/betty-davis-war-weit-mehr-als-eine-phaenomenale-funk-saengerin/?lang=en",
+      "src2": "https://bookandfilmglobe.com/film/documentary/movie-review-betty-davis-they-say-im-different/",
+      "from": "new"
+     },
+     {
+      "f": "她 1979 年後停止錄音，後來退居賓州 Homestead，此後數十年沒有發行新音樂。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://rockcellarmagazine.com/betty-davis-dies-funk-soul-singer-rest-in-peace/",
+      "from": "new"
+     },
+     {
+      "f": "2019 年她發行單曲〈A Little Bit Hot Tonight〉，是隔了數十年的復出之作。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://www.euronews.com/culture/2022/02/10/betty-davis-hard-funk-pioneer-who-inspired-husband-miles-davis-dead-at-77",
+      "from": "new"
+     },
+     {
+      "f": "唱片公司要她照主流改造形象，這種遷就的壓力是她離開音樂界的原因之一。",
+      "src": "https://www.hhv-mag.com/feature/betty-davis-war-weit-mehr-als-eine-phaenomenale-funk-saengerin/?lang=en",
+      "src2": "https://bookandfilmglobe.com/film/documentary/movie-review-betty-davis-they-say-im-different/",
+      "from": "new"
+     },
+     {
+      "f": "Light in the Attic 從 2000 年代後期起重發她的專輯，2017 年的紀錄片《Betty: They Say I'm Different》讓她重新被注意。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://bookandfilmglobe.com/film/documentary/movie-review-betty-davis-they-say-im-different/",
+      "from": "new"
+     },
+     {
+      "f": "Erykah Badu 等後輩公開點名她的影響。",
+      "src": "https://rockcellarmagazine.com/betty-davis-dies-funk-soul-singer-rest-in-peace/",
+      "src2": "https://www.hhv-mag.com/feature/betty-davis-war-weit-mehr-als-eine-phaenomenale-funk-saengerin/?lang=en",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2022 年 2 月 9 日她在賓州 Homestead 過世，享年 77 歲。",
+      "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+      "src2": "https://rockcellarmagazine.com/betty-davis-dies-funk-soul-singer-rest-in-peace/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1968 年與 Miles Davis 結婚，影響了他的《Bitches Brew》。",
+    "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+    "from": "new"
+   },
+   {
+    "f": "2017 年紀錄片《Betty: They Say I'm Different》上映。",
+    "src": "https://en.wikipedia.org/wiki/Betty_Davis",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "出生地與年份：英文維基與 Rock Cellar 寫 1944 年生於北卡羅來納 Durham，HHV 寫 1945 年生於北加州；不一致，facts 只寫 Durham、不寫年份。",
+   "離開音樂的時間：Rock Cellar 與搜尋摘要寫 1979 年停止錄音，英文維基寫 1980 年父親過世後退居、Book and Film Globe 寫 1980 年代初；facts 寫 1979 年後停止錄音、父親過世後退居，不寫父親過世年。",
+   "Light in the Attic 重發起點：Book and Film Globe 寫 2007 年起，HHV 與英文維基指第四張 2009 年；facts 寫『2000 年代後期起』。"
+  ],
+  "searches": 7,
+  "failedFetches": 5,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 7 次：en.wikipedia Betty Davis、WebSearch×2、Rock Cellar、Euronews、HHV Mag、Book and Film Globe；失敗 5 次不計，超出上限 4 次（Scotsman 403、Deadline 與 Rolling Stone 各 307 轉付費牆、NPR 503、AOL 404）。事實庫 research 與 published 皆空，完全靠補查。無同名混卡（卡池四張皆為 Betty Davis，她是 Miles Davis 的第二任妻子）。⚠ 過濾提醒：其歌詞與舞台形象以性意味著稱，寫作層寫『大膽』即可、不必複述細節。單源、不進 facts：英文維基稱她的性意味鮮明的歌詞與舞台形象招致抵制與電台禁播（單源）；她曾拒絕 Motown 的作詞合約與 Eric Clapton 擔任製作人、據稱是最早自寫自編自製的黑人女歌手之一（Rock Cellar，且屬『最早』類宣稱）；她於 1978 或 1979 年赴日本一年與僧侶相處後離開音樂界、2018 年在《紐約時報》難得受訪時說『有人告訴我結束了，我就接受了，也沒有別人來敲門』、1979 年錄音被做成 1995 年《Crashin' from Passion》與 1996 年《Hangin' Out in Hollywood》兩張盜版（皆來自搜尋摘要，來源頁未開）；HHV 稱 Ice Cube、Talib Kweli、Ludacris 取樣她的作品、Prince 受其啟發（單源）；Euronews 稱她被稱為『Madonna before Madonna』、製作人 Greg Errico 形容其風格為『down and dirty funk』（單源）；Miles Davis 的話『她對我的個人與音樂生活影響很大』出自 HHV 引述，Rock Cellar 只寫『影響他的音樂方向』，兩源部分重疊、寫作層寫成『Miles 自己承認』時請保守。Miles 婚姻年 1968 三源一致、婚期約一年（英文維基與 HHV）。事實庫無《Is It Love or Desire》錄音年，HHV 寫擱置 33 年（推算 1976 年），未收年份。"
+ },
+ {
+  "key": "boney m.",
+  "name": "Boney M.",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Boney M. 是德國製作人 Frank Farian 在西德創立的 Euro-Caribbean 人聲團體。",
+      "src": "https://en.wikipedia.org/wiki/Boney_M.",
+      "src2": "https://www.officialcharts.com/artist/15971/boney-m/",
+      "from": "new"
+     },
+     {
+      "f": "四位正式成員是來自牙買加的 Liz Mitchell 與 Marcia Barrett、來自蒙特塞拉特的 Maizie Williams，以及來自阿魯巴的 Bobby Farrell。",
+      "src": "https://en.wikipedia.org/wiki/Boney_M.",
+      "src2": "https://www.officialcharts.com/artist/15971/boney-m/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "錄音室裡唱歌的只有 Liz Mitchell 與 Marcia Barrett，男聲由 Farian 本人錄製。",
+      "src": "https://en.wikipedia.org/wiki/Boney_M.",
+      "src2": "https://www.classicpopmag.com/news/milli-vanilli-creator-frank-farian-dies-aged-82/",
+      "from": "new"
+     },
+     {
+      "f": "他們被稱為 Euro-Caribbean 人聲團體，是 Farian 打造的歐洲迪斯可團體。",
+      "src": "https://www.officialcharts.com/artist/15971/boney-m/",
+      "src2": "https://www.classicpopmag.com/news/milli-vanilli-creator-frank-farian-dies-aged-82/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年的雙 A 面單曲〈Rivers of Babylon〉／〈Brown Girl in the Ring〉在英國榜首停留 5 週，共上榜 40 週。",
+      "src": "https://www.officialcharts.com/songs/boney-m-rivers-of-babylonbrown-girl-in-the-ring/",
+      "src2": "https://en.wikipedia.org/wiki/Rivers_of_Babylon",
+      "from": "new"
+     },
+     {
+      "f": "同年 12 月的〈Mary's Boy Child〉拿下英國聖誕榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Boney_M.",
+      "src2": "https://www.officialcharts.com/artist/15971/boney-m/",
+      "from": "new"
+     },
+     {
+      "f": "他們的唱片銷量超過 1 億張，在英國有 2 首冠軍單曲、3 張冠軍專輯。",
+      "src": "https://en.wikipedia.org/wiki/Boney_M.",
+      "src2": "https://www.officialcharts.com/artist/15971/boney-m/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1978 年〈Rivers of Babylon〉／〈Brown Girl in the Ring〉在英國榜首 5 週。",
+    "src": "https://www.officialcharts.com/songs/boney-m-rivers-of-babylonbrown-girl-in-the-ring/",
+    "from": "new"
+   },
+   {
+    "f": "1978 年〈Mary's Boy Child〉拿下英國聖誕榜冠軍。",
+    "src": "https://www.officialcharts.com/artist/15971/boney-m/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：英文維基寫 1974 年在西德成立，Official Charts 寫 1976 年經德國電視亮相而突破、Classic Pop 寫 Farian 於 1976 年創造此團；三源不一致，facts 不寫成軍年份。",
+   "〈Rivers of Babylon〉英國銷量：英文維基單曲頁寫認證銷量 2032656 張、另一搜尋摘要寫估計 1985000 張；不一致，facts 不寫張數，也不寫『破 200 萬』。",
+   "Bobby Farrell 的角色：英文維基樂團頁寫他與 Williams 主要是舞者、在演唱會上唱現場人聲；Classic Pop 寫 Farian 錄人聲、Farrell 上台演出，搜尋摘要多家（Billboard、Gold Radio 等，未開頁）寫他對嘴；兩類說法不一致，facts 只寫錄音室誰唱，不寫 Farrell 是否對嘴。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 8 次：en.wikipedia Boney M.、WebSearch×3（樂團史、Official Charts、Farian 訃聞）、en.wikipedia〈Rivers of Babylon〉、Official Charts 藝人頁與單曲頁、Classic Pop；失敗 2 次不計（Rolling Stone 307 轉付費牆、Medium 403）。事實庫 research 為空，published 有 3 條（Take the Heat off Me、Love for Sale、Oceans of Fantasy），與本次查到的內容無衝突：上線《Oceans of Fantasy》簡介『第二張英國冠軍專輯』與 Official Charts『3 張英國冠軍專輯』相容，但本層未能逐張核對。無同名混卡（卡池四張皆為 Frank Farian 製作的 Boney M.）。⚠ Classic Pop 頁被抓取工具摘要成 Farian 於 2025 年 3 月 27 日過世，與其餘來源（2024 年 1 月）矛盾，判定為抓取錯誤，該頁只採 Boney M. 相關兩句，Farian 死期一律不用。單源、不進 facts：成軍 1974 年與團名取自澳洲偵探影集《Boney》的由來（Farian 引語，英文維基單源）、八首德國冠軍單曲、〈Rivers of Babylon〉為 1978 年英國年度最暢銷單曲且是英國僅七首破 200 萬張的單曲之一（英文維基單曲頁）、原曲出自牙買加 The Melodians 1970 年、取材詩篇 137 篇（英文維基單曲頁）、1978 年 12 月赴蘇聯演出（英文維基稱『少數到過蘇聯的西方藝人』，搜尋摘要稱『第一個西方流行樂團』與 10 場 6 天，屬『第一個』類宣稱、來源頁未開）與〈Rasputin〉在莫斯科演唱會被禁唱（英文維基單源）、Farrell 1981 年離團、1986 年解散（英文維基單源）、起初純為替〈Baby Do You Wanna Bump〉對嘴上電視的臨時組合（搜尋摘要）、Official Charts 稱『始於 Farian 的個人錄音室計畫、歐洲成功後才成為表演團體』（單源）。origin 兩條與 sound 第一條的第二源分別是 Official Charts 與 Classic Pop，其餘皆與英文維基重疊，Official Charts 的藝人簡介與維基措辭相近，兩源可能非完全獨立。era 格沒有兩源支持的轉折，標 none；legacy 沒有找到後輩點名或名人堂類共識，status 為 thin。"
  }
 ]

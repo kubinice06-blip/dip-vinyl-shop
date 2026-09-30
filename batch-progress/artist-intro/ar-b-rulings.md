@@ -39,3 +39,5 @@
 - 補洞第 3 組：The Skatalites 失敗請求 5 次，照實記，放行。pubIssue 1 條（Contemporary Jazz Quintet《Multidirection》稱五人卻列四名）。William Parker 不寫 Vision Festival 創辦人（維基與本人訪談：創辦人是 Patricia Nicholson Parker）。Tigran Hamasyan 獎項年份不一，不寫年份。卡片待核交本機：Tom Misch《Happy Music》（2023）疑為化名 Supershy 的專輯。
 - 寫作第 1 組（20 位）審畢，修 2 處：Samara Joy 刪「截至 2026 年第 68 屆 7 提名 6 座、三座人聲專輯」（在世者會長大的累計數，且未核）；Ramsey Lewis 只有「享年 87 歲」缺卒年 → 補 2022 年。放寬額度 5 位（Tharpe、Sharrock、Grappelli、Sun Ra、Thad Jones）皆人物故事或份量素材，照准。
 - 補洞第 4 組交件，補洞交齊（40 位）。Zbigniew Seifert 失敗請求 5 次，照實記，放行。pubIssue 3 條（Ziad Rahbani〈Saalouni El Nass〉創作年紀；日野皓正隨白木秀雄五重奏赴柏林年份；杉本喜代志《One More》錄音年）。日野皓正紫綬褒章採 2004（日文維基＋ARBAN），不採英文維基 2014。
+- 寫作第 2 組（20 位）審畢，修 3 處：The Skatalites「因同居女友死亡被捕」語意含糊 → 主線 WebSearch（Jamaica Observer、維基）核實為殺害同居女友、陪審團裁定「有罪但精神失常」，照中性事實改寫；明田川荘之刪「一開就是 50 年以上」（會長大的數字）；Tony Bennett「最年長的冠軍歌手」加「當時」。Арсенал 創辦人 Aleksei Kozlov 2026 年 9 月過世，主線 WebSearch 核實 2026-09-25 於莫斯科過世、享年 90（Meduza、Fontanka、Vedomosti）。Tom Zé 273、Tony Bennett 275 照准。
+- ar-b-004 上架：40 位（爵士），審稿修 5 處。

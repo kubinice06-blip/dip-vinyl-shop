@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 96 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 103 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -100,3 +100,10 @@
 | ar-b-004 | Sister Rosetta Tharpe | Sister on Tour | 自 1930 年代起就把電吉他帶進福音音樂，是首位真正暢銷的福音歌手 | 本層讀到的來源只支持『電吉他先驅』與『跨界福音歌手』；『首位真正暢銷的福音歌手』是『第一』類宣稱，維基只稱〈Strange Things Happening Every Day〉是第一張跨界的福音唱片（單源），未見這句。建議改成『電吉他的早期先驅』或刪除『首位』。 | https://en.wikipedia.org/wiki/Sister_Rosetta_Tharpe |
 | ar-b-004 | Tal Farlow | Tal Farlow Quartet | 他二十二歲才開始學吉他、自學出身 | 各源年齡不一致：維基 22 歲、Blue Note 官方簡介 21 歲、Premier Guitar 稱 1941 年改彈吉他；建議改成『二十出頭才開始學吉他』或刪去年齡 | https://www.bluenote.com/artist/tal-farlow/ |
 | ar-b-004 | The Contemporary Jazz Quintet | Multidirection | 五重奏是 Charles Moore、Leon Henderson、Kenny Cox 與 Danny Spencer，五人都是底特律人 | 句中稱五重奏、稱五人，只列四個名字，漏了樂團固定成員貝斯手 Ron Brooks；Blue Note 與底特律社區口述史都列 Brooks 是五重奏成員。是否錄於這張未逐頁核對錄音人員，請對錄音人員名單後補上或改口。 | https://www.bluenote.com/artist/kenny-cox/ |
+| ar-b-004 | Ziad Rahbani | Houdou Nisbi | 十七歲便替母親寫下〈Saalouni El Nass〉而受注目 | 英文維基同說（1973 年），但 Al Jazeera 訃聞寫他十七歲的成名作是 1974 年舞台劇《Nazl el-Sourour》；兩源不一致，第二源未找到，建議店主在本機確認或改成不特指「十七歲」的寫法。 | https://www.aljazeera.com/news/2025/7/26/ziad-rahbani-pioneering-lebanese-musician-and-composer-dies-at-69 |
+| ar-b-004 | 日野皓正クインテット | Hino at Berlin Jazz Festival '71 | 1964 年他是隨別人的團去柏林的小號手 | 年份與英文維基不一致：日文維基寫 1964 年加入白木秀雄五重奏並赴柏林，英文維基與搜尋摘要寫 1965 至 1969 年在該團；本層兩源不一致、未能裁定，建議店主在本機確認或把年份寫得模糊。 | https://en.wikipedia.org/wiki/Terumasa_Hino |
+| ar-b-004 | 杉本喜代志 | One More | 1981 年進棚時電貝斯交給 Marcus Miller、鼓交給 Omar Hakim | CDJournal 藝人頁寫 Marcus Miller 等人參與的《One More》是 1980 年錄音；上線簡介寫 1981 年進棚。卡池年份 1981 可能是發行年，簡介把發行年當錄音年；本層只見單一來源，建議店主在本機核對盤面。 | https://artist.cdjournal.com/a/sugimoto-kiyoshi/115538 |
+| ar-b-005 | 菅野よう子、シートベルツ | COWBOY BEBOP | 本多雅人吹中音薩克斯風（〈Tank!〉） | 事實庫舊研究稿（引英文維基〈Music of Cowboy Bebop〉）寫的是『本田雅人』吹『長中音薩克斯風』；上線簡介的姓字（本多）與樂器（中音）與之不一致。本層未再開原頁核對，僅提示主線在本機確認人名字形與樂器。 | https://en.wikipedia.org/wiki/Music_of_Cowboy_Bebop |
+| ar-b-005 | 鈴木宏昌 | Skip Step Colgen | 1977 年它先成了盤名，後來成了樂團的名字（コルゲン・バンド 再發展成 The Players） | Kotobank 與日文維基摘要記コルゲン・バンド 1976 年成立、1979 年改名 The Players，樂團名早於 1977 年的盤名；『先成盤名、後成團名』的先後對不上。 | https://kotobank.jp/word/%E9%88%B4%E6%9C%A8%20%E5%AE%8F%E6%98%8C-1647546 |
+| ar-b-005 | Fatback | Fatback XII | 該曲一般被視為史上第一張商業發行的嘻哈唱片，比〈Rapper's Delight〉早約一週上市 | 維基〈King Tim III〉條目寫『常被視為錄音嘻哈的開端，但〈Rapper's Delight〉才被廣泛認定為第一首商業發行的嘻哈歌曲』；樂團條目說『一般視為最早的商業發行嘻哈單曲』，說法互相牴觸。建議改為『常被視為最早的商業嘻哈單曲之一，與〈Rapper's Delight〉爭第一，兩首在靈魂榜上榜只差一週』。 | https://en.wikipedia.org/wiki/King_Tim_III_(Personality_Jock) |
+| ar-b-005 | Fatback | Fatback XII | Fatback 一九七九年八月在 Spring Records 發行的作品 | DJ Rob 部落格寫《Fatback XII》1979 年 3 月發行，維基單曲條目寫〈King Tim III〉1979 年 7 月 25 日發行；專輯發行月份與上線簡介的『八月』不一致，建議本機再對 Discogs 或 Billboard 核對專輯發行日。 | https://djrobblog.com/archives/9177 |
