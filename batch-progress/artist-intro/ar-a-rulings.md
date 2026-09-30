@@ -163,3 +163,6 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 ### ar-a-009
 
 - 補洞第 1 組：Death 卡池六張全是 Chuck Schuldiner 的佛州死亡金屬團，底特律原型龐克 Death 不在池內。Cocteau Twins 失敗請求 5 次（超 4），放行（失敗請求不造成事實錯誤）。
+- 寫作第 1 組（20 位）審畢，修 2 處：Deep Purple「Frank Zappa 的演出引發賭場大火」主詞錯置（起火的是觀眾的信號槍）→「Zappa 演出時賭場失火」；
+  Dinosaur Jr.「被視為 1980 年代最有影響力的另類樂團之一」只有 Louder 一篇的標題撐 → 刪，留影響 Cobain 與 grunge 那句。
+  寫作層把 Deep Purple 由 thin 升 full（三巨頭並稱、名人堂、〈Smoke on the Water〉由來），同意。
