@@ -436,5 +436,89 @@
     "status": "full",
     "pubIssues": [],
     "notes": "補查 4 次（維基、NEA 頁、WebSearch、CBS 訃聞），失敗請求 3 次（Britannica 404、Variety 與 Billboard 訃聞皆 307 轉往 tollbit 未取得）。poolAlbums 三張皆 Jim Hall 本人（爵士吉他手），無同名混卡。CBS 訃聞與 Variety、Billboard 的訃聞文字相同（同一通訊社稿），只算一源；本位 legacy 第一條的 src 與 src2 為 CBS 稿與 NEA 頁，NEA 頁也寫 Metheny 與 Frisell，互相獨立。『第一位獲 NEA Jazz Masters 的現代爵士吉他手』：NEA 頁與訃聞兩源皆有，但『第一』沒有查證 NEA 早年得主名單，寫作層請寫成『據 NEA 與訃聞稱』；維基只列 2004 年得獎。era 第二條為事實庫 bank（英文維基《Jazz Guitar》條目，單源，但來自研究稿）。單源未入 facts：維基 Jazzpar Prize 1998、法國藝術與文學騎士勳章 2006、1975《Concierto》成為樂評與商業上的成功、與 Bill Evans 共五張專輯（1962–66）、與 Ella Fitzgerald、Paul Desmond 合作、Hall 談演奏『先聽見再彈出來，而不是彈指下順手的東西』；NEA 頁稱克里夫蘭音樂學院『不教爵士也不教吉他』、Hall 在加州轉全職爵士、與 Ron Carter、Charlie Haden 的吉他與貝斯二重奏、13 歲聽到 Charlie Christian 後的引言；CBS 稿引 Metheny『Jim was one of the most important improvising guitarists in jazz history』與訃聞『在睡夢中辭世於格林威治村寓所』；單源引言不入 facts。上線簡介 Jazz Guitar 篇的核對：首張專輯、1957 年 1 月洛杉磯錄音與維基一致，未列 pubIssues。"
+  },
+  {
+    "key": "jimmy giuffre",
+    "name": "Jimmy Giuffre",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Jimmy Giuffre 1921 年 4 月 26 日生於德州達拉斯，2008 年 4 月 24 日在麻薩諸塞州皮茨菲爾德（Pittsfield）辭世，享年 86 歲，死前受帕金森氏症所苦。",
+            "src": "https://en.wikipedia.org/wiki/Jimmy_Giuffre",
+            "src2": "https://www.spokesman.com/stories/2008/apr/27/in-passing-giuffre-big-band-musician-composer/",
+            "from": "new"
+          },
+          {
+            "f": "他九歲開始吹單簧管，1942 年畢業於北德州州立師範學院（North Texas State Teachers College，今北德州大學音樂學院）。",
+            "src": "https://www.tshaonline.org/handbook/entries/giuffre-james-peter-jimmy",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/giuffre-jimmy",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1947 年他替 Woody Herman 的大樂團寫下〈Four Brothers〉，靠薩克斯風聲部的寫法一舉成名，是他早年最大的名氣來源。",
+            "src": "https://www.tshaonline.org/handbook/entries/giuffre-james-peter-jimmy",
+            "src2": "https://www.spokesman.com/stories/2008/apr/27/in-passing-giuffre-big-band-musician-composer/",
+            "from": "new"
+          },
+          {
+            "f": "1950 年代後期他組了一系列沒有鼓的三重奏（最早由 Giuffre、吉他手 Jim Hall 與貝斯手 Ralph Peña 組成），走他稱為 blues-based folk jazz 的安靜路線：柔和但仍擺盪。",
+            "src": "https://en.wikipedia.org/wiki/Jimmy_Giuffre",
+            "src2": "https://www.spokesman.com/stories/2008/apr/27/in-passing-giuffre-big-band-musician-composer/",
+            "from": "new"
+          },
+          {
+            "f": "1959 年他在 Lenox School of Jazz 遇到 Ornette Coleman，之後轉向自由爵士，與鋼琴手 Paul Bley、貝斯手 Steve Swallow 組成三重奏，走安靜近似室內樂的路線，而不是激烈的風格。",
+            "src": "https://en.wikipedia.org/wiki/Jimmy_Giuffre",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/giuffre-jimmy",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他後來任教於紐約大學與新英格蘭音樂學院（NEC），把教學帶到晚年。",
+            "src": "https://en.wikipedia.org/wiki/Jimmy_Giuffre",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/giuffre-jimmy",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1947 年寫下〈Four Brothers〉。",
+            "src": "https://en.wikipedia.org/wiki/Jimmy_Giuffre",
+            "src2": "https://www.tshaonline.org/handbook/entries/giuffre-james-peter-jimmy",
+            "from": "new"
+          },
+          {
+            "f": "1961 年他與 Paul Bley、Steve Swallow 組成新的三重奏，同年錄下《Fusion》與《Thesis》。",
+            "src": "https://en.wikipedia.org/wiki/Jimmy_Giuffre",
+            "src2": "https://www.tshaonline.org/handbook/entries/giuffre-james-peter-jimmy",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "死亡日期：TSHA 寫 2008 年 4 月 4 日，維基、Spokesman、Encyclopedia.com 皆為 4 月 24 日（享年 86、差兩天滿 87 歲），採 4 月 24 日。",
+      "《Free Fall》年份：卡池寫 1963，Encyclopedia.com 寫 1962（多半是錄音年 1962、發行 1963）；facts 不寫。"
+    ],
+    "searches": 8,
+    "failedFetches": 9,
+    "status": "thin",
+    "pubIssues": [],
+    "notes": "補查 8 次（維基、WebSearch×4、TSHA、Encyclopedia.com、Spokesman），失敗請求 9 次，超出上限 4 次（Britannica 404、AllAboutJazz 403、JazzTimes 403、NPR 503、Cisco Houston 503、Guardian 被擋、Encyclopedia.com 舊址 301、AllMusic 403、TIDAL 403；另有兩次 WebSearch 因網域限制回 400），照實記錄。poolAlbums 三張皆 Giuffre 本人，無同名混卡；事實庫無研究稿也無上線簡介，全靠補查。本位 legacy 只湊到教學一條，其餘皆單源或只見搜尋摘要，故整體判 thin，法定的 legacy 空缺待主線或下批補。非獨立處：維基與 TSHA、Encyclopedia.com 的生平資料可能互相引用；Spokesman 是通訊社訃告。單源未入 facts：Encyclopedia.com 引 Ted Gioia『他的影響比多數人以為的更大，年輕樂手聽到他的錄音會深受感動』；Encyclopedia.com 稱他 1984 年入選 NARAS Hall of Fame（單源，名稱存疑）；Spokesman 引 Bob Brookmeyer『Jimmy 追隨自己的天使…是我遇過最勇敢、最專注的人之一，他不在乎賺不賺錢』；Encyclopedia.com 稱三重奏靈感來自 Debussy 的編制；Encyclopedia.com 引評論『Four Brothers 是聲部寫作的迷你傑作』；TSHA 稱他 1957–1960 年在 Lenox School of Jazz 任教、1978 年起在 NEC 任教到 1990 年代中、《Fusion》與《Thesis》是他『最前衛的作品』、三重奏是『革命性的取向』；維基稱 1951 年加入 Howard Rumsey 的 Lighthouse All-Stars；維基稱 The Train and the River 在 1957 電視特輯 The Sound of Jazz。WebSearch 摘要（未開頁，不入 facts）：Bley-Swallow 三重奏活躍時少人注意，後來被部分樂評與樂手列為爵士史上最重要的樂團之一（疑似維基原句）；ECM 創辦人 Manfred Eicher 承認 Giuffre 1961 年與 Bley、Swallow 的 Verve 錄音直接啟發 ECM 的成立與室內樂式的聲音；他預示了後來 Bill Frisell、Charlie Haden 一路的 Americana 式爵士。以上 ECM 與 Frisell 說法若日後開頁找到兩源，將是這位最重要的 legacy 資料，建議下批補查，來源候選：jazzdesk.wordpress.com/2021/04/26/jimmy-giuffre-the-cool-side-of-free-jazz/、martinfreres.net、ECM 官網。〈Four Brothers〉『三支次中音加一支上低音』：TSHA 明寫，其餘來源只說薩克斯風聲部，故 f 只寫『薩克斯風聲部』。"
   }
 ]
