@@ -606,5 +606,99 @@
   "failedFetches": 3,
   "status": "full",
   "notes": "事實庫 research 只有專輯與電影層級（維基），三格的生平與影響全靠補查；bank 用了兩條（Amar Prem 的父子交手、1942 的遺作）。搜尋 7 次：英文維基（2 次不同 prompt）、WebSearch 兩次（生平；影響與獎項）、musicmaster.in、thebetterindia.com、JioSaavn 傳記；失敗 3 次：Britannica 404、downmelodylane.com 503、famouscomposers.net 404。獨立性：JioSaavn 傳記的三座 Filmfare 與年份文字與維基極接近，疑為改寫維基，視為『非獨立』；musicmaster 為部落格型內容，僅用於生日、小名與 Chhote Nawab 首作年這類與維基一致的基本項。單源留 notes：十七歲寫出第一首歌〈Aye Meri Topi Palat Ke Aa〉，父親用在 1956 年《Funtoosh》（維基單源）；維基首段稱他是『Hindi film music 最偉大也最成功的音樂導演之一』（維基單源；搜尋摘要同句）；33 年生涯為 331 部電影作曲、其中 292 部印地語（維基與 JioSaavn 同文，非獨立）；1995 年 Filmfare 設立 Filmfare RD Burman Award for New Music Talent 紀念他（維基單源）；1988 年心臟病發、六年心血管病史、死因心臟病發（維基單源）；1970 年代末業績下滑、1980 年代初以《Sanam Teri Kasam》《Masoom》回升（維基單源）；與 Shiv Kumar Sharma、Hariprasad Chaurasia 合作（JioSaavn 單源）；Louis Armstrong 啟發他形成自己的聲音、爵士式 scat 唱法（The Better India 單源）；Vishal–Shekhar 以外，搜尋摘要稱 Amit Trivedi、Vishal Bhardwaj、Shankar–Ehsaan–Loy、Ilaiyaraaja 受影響（來源未開頁，不採）；追悼作品 Pancham Unmixed（2010 紀錄片）等（維基單源）。legacy 第二條是兩源各證一半（Vishal–Shekhar 與 A.R. Rahman），不是同一名字的雙源，建議寫作層只寫成『後輩作曲家受他啟發』，不要點名任何一位。本位未見同名混卡。"
+ },
+ {
+  "key": "りんけんバンド",
+  "name": "りんけんバンド",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團長照屋林賢 1949 年 10 月 5 日生，祖父照屋林山與父親照屋林助都是沖繩的音樂家，老家是三線店兼唱片行；他高中畢業後的 1967 年為了學西洋音樂理論上京。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E8%B3%A2",
+      "src2": "https://www.rinken.gr.jp/artist/rinkenband/",
+      "from": "new"
+     },
+     {
+      "f": "照屋林助 1929 年 4 月 4 日生、2005 年 3 月 10 日過世，1957 年與前川守康共組「ワタブーショー」，是引領戰後沖繩娛樂與演藝的人物；照屋林賢自己也稱他父親是開創戰後沖繩芸能流向的人。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E5%8A%A9",
+      "src2": "https://www.chiikigeinou.com/event/teruya_rinken_part_2/",
+      "from": "bank"
+     },
+     {
+      "f": "主唱上原知子 1958 年 6 月 29 日生於糸滿市，六歲就在民謡的世界出道，1988 年加入りんけんバンド，樂團的服裝全部由她親手做。",
+      "src": "https://www.rinken.gr.jp/artist/rinkenband/",
+      "from": "bank"
+     },
+     {
+      "f": "りんけんバンド 1977 年結成、1987 年出道。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%82%8A%E3%82%93%E3%81%91%E3%82%93%E3%83%90%E3%83%B3%E3%83%89",
+      "src2": "https://www.rinken.gr.jp/artist/rinkenband/biography.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團官方網站的簡介寫：りんけんバンド 由隊長照屋林賢 1977 年組成，把三線、島太鼓等沖繩傳統樂器與鼓、鍵盤、貝斯等現代樂器結合，追求被稱作「沖繩流行」的新樣式；全部原創曲由林賢作曲編曲，歌詞全部以被稱為ウチナーグチ的沖繩方言演唱。",
+      "src": "https://www.rinken.gr.jp/artist/rinkenband/",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1990 年《ありがとう》以 CD 形式在全國發行，照屋林賢的日文維基也把它記為全國出道之作；同年樂團代表日本出賽東京音樂祭亞洲大會。",
+      "src": "https://www.rinken.gr.jp/artist/rinkenband/biography.html",
+      "src2": "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E8%B3%A2",
+      "from": "new"
+     },
+     {
+      "f": "1993 年獲日本レコード大賞特別賞。",
+      "src": "https://www.rinken.gr.jp/artist/rinkenband/biography.html",
+      "src2": "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E8%B3%A2",
+      "from": "new"
+     },
+     {
+      "f": "日文維基「沖縄音楽」條把りんけんバンド列為現代沖繩音樂的代表藝人之一；Billboard JAPAN 稱他們是沖繩流行樂團中的象徵性存在。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E9%9F%B3%E6%A5%BD",
+      "src2": "https://www.billboard-japan.com/special/detail/1940",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1990 年《ありがとう》CD 化，樂團走向全國。",
+    "src": "https://www.rinken.gr.jp/artist/rinkenband/biography.html",
+    "src2": "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E8%B3%A2",
+    "from": "new"
+   },
+   {
+    "f": "1993 年獲日本レコード大賞特別賞。",
+    "src": "https://www.rinken.gr.jp/artist/rinkenband/biography.html",
+    "src2": "https://ja.wikipedia.org/wiki/%E7%85%A7%E5%B1%8B%E6%9E%97%E8%B3%A2",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《ありがとう》的年份：官網年表寫 1987 年卡帶、1990 年 5 月 CD 化；事實庫的日文維基年表記 1987 年 5 月 25 日；卡池標 1990；三者不衝突（卡帶與 CD 版本不同），facts 只寫 1990 年 CD 化。",
+   "官網寫 1990 年 5 月《ありがとう》CD 化與參加東京音樂祭，日文維基（照屋林賢）寫 1990 年《ありがとう》全國出道，一致。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫已有日文維基與官網小傳，origin 與 sound 多數 bank 可用；legacy 全靠補查。搜尋 8 次：日文維基「りんけんバンド」（摘要很薄）、WebSearch、官網 biography 年表、Borderink 的 note 文章（只有目次，幾乎無內容，仍計 1 次）、Billboard JAPAN OKINAWAN ROCK 專題、地域芸能インタビュー（照屋林賢）、日文維基「照屋林賢」、日文維基「沖縄音楽」；失敗 2 次：KKBOX 403、日文維基「沖縄ポップ」404。單源留 notes：1985 年替 Orion 啤酒廣告演唱的〈ありがとう〉在沖繩走紅、1987 年由マルテルレコード以卡帶發行同名首張專輯（官網單源，era 因此為 none）；1990 年主要發行時，唱片公司要求把歌詞改成標準語，照屋林賢拒絕；他說「言葉を変えられるのは、舌を抜かれるのと一緒」（地域芸能訪談單源；寫作層若用需具名為訪談）；他們用電三線チェレン與 sequencer 開展新表現（同訪談單源）；Billboard JAPAN 說他們把民謠節奏換成八拍、發展出「沖繩搖滾」，且在喜納昌吉之後是『名實皆最成功』的樂團（Billboard 單源，屬「最」類宣稱未查反例，不入 facts）；官網記 1991 年到倫敦與法國演出、1992 年電影《パイナップルツアーズ》、1993 年楽曲用於 NHK 大河劇並入教科書、1995 年後到香港、夏威夷、菲律賓、印度、南美、非洲巡演（官網單源）；日文維基（照屋林賢）記 1994 年電影《ティンク・ティンク》監督與音樂（單源）；搜尋摘要稱 1990 年代沖繩音樂被廣泛熟悉的契機之一是りんけんバンド的主流出道，且 1992 年前後與ネーネーズ一起掀起全國熱潮（來源未開頁，不採）。沖繩音樂在日文維基『沖縄音楽』只是藝人列表，並無敘述性評價，故 legacy 第三條只證明『被列為代表』。日文維基兩個條目（りんけんバンド、照屋林賢、沖縄音楽）與官網屬不同出版者；日文維基彼此為同站不同條目，非獨立。名字裡的『国』等字在此組無誤判疑慮。本位未見同名混卡。"
  }
 ]
