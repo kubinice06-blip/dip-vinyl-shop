@@ -899,5 +899,536 @@
   "status": "full",
   "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。共 6 次：英文維基、搖滾名人堂官網、WebSearch（傳記與 Britannica 網址）、Britannica（第三個網址才開得到）、MNopedia、WebSearch（葛萊美終身成就獎與影響）；失敗 2 次：Britannica 兩個猜錯的網址（404，2 次）。名人堂官網 Prince 頁另有「與 Michael Jackson 並列主宰八〇年代電波」一句，未收。Grammy 終身成就獎：兩個來源（Star Tribune、MusicRadar）與「被許多人認為是史上最偉大藝人」皆來自搜尋結果摘要、未逐頁開啟，年份未確認（摘要顯示與 The Clash、Frankie Valli 同批頒發，屬近年新增），facts 不寫年份，寫作層不寫年份。Britannica 說 Prince 拿 7 座葛萊美、MNopedia 同，維基另列 Grammy President's Merit Award 等，未收。《1999》銷量 400 萬張只見維基；《Purple Rain》24 週冠軍只見維基。首創宣稱「第一位同時擁有冠軍電影、專輯與單曲的歌手」與「27 種樂器」只見維基，後者已標「據維基所載」。Prince 死因寫作層請克制。",
   "pubIssues": []
+ },
+ {
+  "key": "bobby womack",
+  "name": "Bobby Womack",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bobby Womack 1944 年 3 月 4 日生於俄亥俄州 Cleveland，2014 年 6 月 27 日在加州 Tarzana 過世，享年 70 歲。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Womack",
+      "from": "new",
+      "src2": "https://www.britannica.com/biography/Bobby-Womack"
+     },
+     {
+      "f": "他是五兄弟之一，父親是鋼鐵工人兼業餘歌手，把兄弟們組成福音團體 Womack Brothers。",
+      "src": "https://www.britannica.com/biography/Bobby-Womack",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Bobby_Womack"
+     },
+     {
+      "f": "Womack Brothers 為 Soul Stirrers 開場時，讓團員 Sam Cooke 留下印象；Cooke 轉唱世俗歌曲後說服他們跟進，1961 年把他們簽進自己的 SAR 廠牌並改名 Valentinos，Bobby 擔任主唱。",
+      "src": "https://www.britannica.com/biography/Bobby-Womack",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Bobby_Womack"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Womack 是身兼三職的全才：他當過錄音室吉他手（為 Aretha Franklin、Wilson Pickett 等人彈奏）、替別人寫歌（特別是 Wilson Pickett），也是獨唱歌手。",
+      "src": "https://www.britannica.com/biography/Bobby-Womack",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Bobby_Womack"
+     },
+     {
+      "f": "名人堂官網稱他是靈魂樂裡「偉大的三棲全才」之一，貢獻「驚人卻常被低估」；Britannica 說他也參與過 Janis Joplin 與 Sly and the Family Stone 的專輯。",
+      "src": "https://www.rockhall.com/inductees/bobby-womack",
+      "from": "new",
+      "src2": "https://www.britannica.com/biography/Bobby-Womack"
+     },
+     {
+      "f": "Candi Staton 談他的風格：「沒有別人能夠複製。」",
+      "src": "https://www.aljazeera.com/amp/features/2014/6/28/us-soul-star-bobby-womack-dies-at-70",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Valentinos 1964 年的〈It's All Over Now〉由 Womack 家族創作，Rolling Stones 翻唱後成為他們的第一首英國冠軍單曲。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Womack",
+      "from": "new",
+      "src2": "https://www.aljazeera.com/amp/features/2014/6/28/us-soul-star-bobby-womack-dies-at-70"
+     },
+     {
+      "f": "Womack 2009 年入選搖滾名人堂，由 Ronnie Wood 引介入堂；Wood 寫道：「他的歌聲裡有一股生命的精神。」",
+      "src": "https://www.rockhall.com/inductees/bobby-womack",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Bobby_Womack"
+     },
+     {
+      "f": "Britannica 稱他是「20 世紀晚期最受推崇的節奏藍調表演者之一」。",
+      "src": "https://www.britannica.com/biography/Bobby-Womack",
+      "from": "new"
+     },
+     {
+      "f": "Rolling Stones 與 Blur 的 Damon Albarn 都被說是受他影響的人；Albarn 與 XL Recordings 的 Richard Russell 協助他在 2012 年推出復出專輯《The Bravest Man in the Universe》。",
+      "src": "https://www.aljazeera.com/amp/features/2014/6/28/us-soul-star-bobby-womack-dies-at-70",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Bobby_Womack"
+     },
+     {
+      "f": "Cooke 過世約三個月後，Womack 與 Cooke 的遺孀 Barbara 結婚，被許多人視為背叛；電台 DJ 丟掉他的唱片，他一度成為圈內的棄兒，兩人 1971 年離婚。",
+      "src": "https://atlantablackstar.com/2024/01/22/story-marry-bobby-womack-sam-cooke-widow-after-death/",
+      "from": "new",
+      "src2": "https://www.theroot.com/why-bobby-womack-isnt-the-super-villain-yall-think-he-i-2000063609"
+     },
+     {
+      "f": "他與毒癮和攝護腺癌奮戰，過世前兩年被診斷出阿茲海默症。",
+      "src": "https://www.aljazeera.com/amp/features/2014/6/28/us-soul-star-bobby-womack-dies-at-70",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1972 年他寫的〈Across 110th Street〉同名電影主題曲，後來用在電影《Jackie Brown》裡。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Womack",
+      "from": "new",
+      "src2": "https://www.britannica.com/biography/Bobby-Womack"
+     },
+     {
+      "f": "2012 年《The Bravest Man in the Universe》由 Damon Albarn 與 Richard Russell 製作；他也曾參與 Gorillaz 的《Plastic Beach》。",
+      "src": "https://en.wikipedia.org/wiki/Bobby_Womack",
+      "from": "new",
+      "src2": "https://www.aljazeera.com/amp/features/2014/6/28/us-soul-star-bobby-womack-dies-at-70"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1964 年 Valentinos 的〈It's All Over Now〉發行。",
+    "src": "https://en.wikipedia.org/wiki/Bobby_Womack",
+    "from": "new",
+    "src2": "https://www.britannica.com/biography/Bobby-Womack"
+   },
+   {
+    "f": "2009 年入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/bobby-womack",
+    "from": "new",
+    "src2": "https://en.wikipedia.org/wiki/Bobby_Womack"
+   },
+   {
+    "f": "2012 年推出復出專輯《The Bravest Man in the Universe》。",
+    "src": "https://en.wikipedia.org/wiki/Bobby_Womack",
+    "from": "new",
+    "src2": "https://www.aljazeera.com/amp/features/2014/6/28/us-soul-star-bobby-womack-dies-at-70"
+   }
+  ],
+  "conflicts": [
+   "死亡日期：維基與 Britannica 寫 2014 年 6 月 27 日，Al Jazeera 報導寫 6 月 28 日（應為報導日）；採 27 日。",
+   "Womack Brothers 為 Soul Stirrers 開場的年份：Britannica 寫 1953 年，維基寫 1950 年代中期，兩源不一致，facts 不寫年份。",
+   "〈Lookin' for a Love〉：Britannica 寫 1962 年（Valentinos 原版），維基寫他的個人版 1974 年，兩者是不同錄音，facts 不採。"
+  ],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空，上線簡介只有《Facts of Life》一篇，與本層事實無衝突。共 6 次：英文維基、搖滾名人堂官網、Britannica、WebSearch（訃聞與影響）、Al Jazeera 訃聞、WebSearch（與 Cooke 遺孀結婚的風波）；失敗 2 次：Rolling Stone 訃聞被導向 tollbit 付費轉址、Guardian 訃聞無法取得。Cooke 遺孀婚姻風波一條的兩個來源（Atlanta Black Star、The Root）皆來自搜尋結果摘要、未逐頁開啟，且事件屬敏感私事；寫作層若寫請只寫到「引起外界反彈、電台不再播他的歌」，不寫遺孀與其女兒之類細節，也不寫具體結婚日期（摘要有 1965 年 3 月 5 日，未核對）。Damon Albarn 的兩段引述（「近乎奇蹟」「被上帝碰過的聲音」）只見搜尋摘要，未收。Cooke 與 Womack 兄弟的簽約年 1961 只見維基單源（Britannica 未寫年份）。名人堂官網另稱他「詩人與博學者」，Ronnie Wood 引介，未收。",
+  "pubIssues": []
+ },
+ {
+  "key": "bootsy collins",
+  "name": "Bootsy Collins",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bootsy Collins 本名 William Earl Collins，1951 年 10 月 26 日生於俄亥俄州 Cincinnati；母親替他取了 Bootsy 這個暱稱，因為「你看起來就像個 Bootsy」。",
+      "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+      "from": "new",
+      "src2": "https://georgeclinton.com/family/william-bootsy-collins/"
+     },
+     {
+      "f": "他與哥哥 Phelps「Catfish」Collins 1968 年在 Cincinnati 組團；1970 年 3 月 James Brown 的樂團成員因薪資糾紛集體離開，這支團被找去當 Brown 的伴奏班底，成為 J.B.'s。",
+      "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+      "from": "new",
+      "src2": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/bootsy-collins-13613/"
+     },
+     {
+      "f": "他們只替 Brown 工作約 11 個月，卻在〈Get Up (I Feel Like Being a) Sex Machine〉與〈Super Bad〉等放克名曲上演奏；Bootsy 與 Brown 用來管教年輕樂手的嚴格制度多次衝突。",
+      "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+      "from": "new",
+      "src2": "https://georgeclinton.com/family/william-bootsy-collins/"
+     },
+     {
+      "f": "離開 Brown 後他回到 Cincinnati 組 House Guests，經 Mallia Franklin 引薦認識 George Clinton，兄弟倆隨後加入 Funkadelic，再成為 Parliament-Funkadelic 陣營的一員。",
+      "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+      "from": "new",
+      "src2": "https://georgeclinton.com/family/william-bootsy-collins/"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Britannica 說他在 James Brown 身邊「參與創造了放克音樂的核心詞彙與文法」。",
+      "src": "https://www.britannica.com/biography/Bootsy-Collins",
+      "from": "new"
+     },
+     {
+      "f": "《滾石》說他 1970 年代用星形貝斯與 wah 效果革新了靈魂與放克貝斯，招牌是把力道全押在每小節第一拍「the One」，再用放克裝飾填滿其餘空間；George Clinton 說：「Bootsy 來了，他只加了對 one 的強調，這樣加在〈The ABC's〉上，兩秒鐘就變放克。」",
+      "src": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/bootsy-collins-13613/",
+      "from": "new"
+     },
+     {
+      "f": "他的「多汁」音色來自 envelope filter，加上高度切分的 16 分音符與 slap 手法，貝斯線在混音裡總是往前推。",
+      "src": "https://georgeclinton.com/family/william-bootsy-collins/",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Bootsy_Collins"
+     },
+     {
+      "f": "1976 年他成立 Bootsy's Rubber Band，作為 Clinton 的 P-Funk 旗下團體，創造 Casper the Funky Ghost、Bootzilla 等分身角色，發展出戴星形墨鏡的「space bass」形象。",
+      "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+      "from": "new",
+      "src2": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/bootsy-collins-13613/"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《滾石》2020 年 7 月的「50 大貝斯手」榜把 Bootsy Collins 排在第 4 名。",
+      "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+      "from": "new",
+      "src2": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/bootsy-collins-13613/"
+     },
+     {
+      "f": "Bootsy Collins 1997 年隨另外 15 位 Parliament-Funkadelic 成員一同入選搖滾名人堂，由 Prince 引介入堂；Prince 說：「放克就是把屋頂掀掉的力量。」",
+      "src": "https://www.rockhall.com/inductees/parliament-funkadelic",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Bootsy_Collins"
+     },
+     {
+      "f": "《滾石》說他的影響貫穿 Red Hot Chili Peppers 的 Flea、Dr. Dre 的 G-Funk 製作風格與眾多取樣他作品的嘻哈製作人；維基也說他影響了 Flea 與 Primus 的 Les Claypool。",
+      "src": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/bootsy-collins-13613/",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Bootsy_Collins"
+     },
+     {
+      "f": "他與 Deee-Lite 合作〈Groove Is in the Heart〉，與 Fatboy Slim 合作〈Weapon of Choice〉。",
+      "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年 Rubber Band 的《Bootsy? Player of the Year》登上 R&B 專輯榜冠軍，單曲〈Bootzilla〉是 R&B 冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1970 年 3 月 起隨 James Brown 的 J.B.'s 錄音。",
+    "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+    "from": "new",
+    "src2": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/bootsy-collins-13613/"
+   },
+   {
+    "f": "1976 年成立 Bootsy's Rubber Band。",
+    "src": "https://en.wikipedia.org/wiki/Bootsy_Collins",
+    "from": "new"
+   },
+   {
+    "f": "1997 年入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/parliament-funkadelic",
+    "from": "new",
+    "src2": "https://en.wikipedia.org/wiki/Bootsy_Collins"
+   }
+  ],
+  "conflicts": [
+   "Bootsy 與哥哥 1968 年組的團名：維基摘要寫 Pacemakers，搜尋摘要與 georgeclinton.com 寫 Pacesetters，兩者不一致，facts 只寫「組團」不寫團名。",
+   "1972 年加入 Funkadelic 只見維基與其轉載頁（georgeclinton.com 文字與維基相同，不算獨立），成員異動年份屬高風險，facts 不寫該年份；1970 年進 J.B.'s 有維基與《滾石》兩源。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，上線簡介兩篇（Ultra Wave、The One Giveth）與本層事實無衝突，但這兩篇的「首張只掛個人名義」「第一張獨力製作」屬首創宣稱，本層未查。共 6 次：英文維基、Britannica（頁面內容很少）、WebSearch（傳記與影響）、搖滾名人堂 Parliament-Funkadelic 頁、《滾石》2020 年 50 大貝斯手榜（Australia 站）Bootsy 條、georgeclinton.com 官方頁。georgeclinton.com 傳記內容與維基相同，不算獨立來源，本檔凡兩源皆為「維基＋該頁」者，實質為單一來源，包含 1951 年生日、暱稱由來、11 個月、離開 Brown 後經過。生日 1951-10-26 另有搜尋摘要（Last.fm 等）重複，未開頁核對。Rubber Band 1976 年成立、Casper／Bootzilla 分身只見維基。《Bootsy? Player of the Year》1978 冠軍、Deee-Lite、Fatboy Slim 合作只見維基。Britannica 頁面只有 P-Funk 13 首前十名 R&B 單曲（1967 至 1983）團體層級資訊，未收。Flea 的影響：《滾石》與維基兩源，Les Claypool 只見維基與搜尋摘要，寫作層寫 Flea 即可。George Clinton 引述來自《滾石》榜單頁的節錄，寫作層若引用請保守。",
+  "pubIssues": []
+ },
+ {
+  "key": "commodores",
+  "name": "Commodores",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Commodores 1968 年在阿拉巴馬州的 Tuskegee Institute（今 Tuskegee University）成軍，由校園樂團 The Mystics 與 The Jays 的成員合併而成。",
+      "src": "https://encyclopediaofalabama.org/article/the-commodores/",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Commodores"
+     },
+     {
+      "f": "原始成員是 Lionel Richie（薩克斯風、主唱、鍵盤）、Thomas McClary（吉他）、Walter \"Clyde\" Orange（鼓、主唱）、Ronald LaPread（貝斯）、Milan Williams（鍵盤）與 William King（小號）。",
+      "src": "https://encyclopediaofalabama.org/article/the-commodores/",
+      "from": "new",
+      "src2": "https://www.alamhof.org/commodore"
+     },
+     {
+      "f": "團名是隨手翻字典挑出來的；William King 開玩笑說他們差點叫成 The Commodes。",
+      "src": "https://en.wikipedia.org/wiki/Commodores",
+      "from": "new",
+      "src2": "https://www.alamhof.org/commodore"
+     },
+     {
+      "f": "他們早期是阿拉巴馬中部一帶有名的派對樂團，替 Jackson 5 巡迴開場後簽進 Motown。",
+      "src": "https://encyclopediaofalabama.org/article/the-commodores/",
+      "from": "new",
+      "src2": "https://www.alamhof.org/commodore"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《Machine Gun》1974 年發行，賣出 50 萬張以上，是他們第一張金唱片；同名的器樂曲是在 Muscle Shoals 錄的。",
+      "src": "https://encyclopediaofalabama.org/article/the-commodores/",
+      "from": "new",
+      "src2": "https://www.alamhof.org/commodore"
+     },
+     {
+      "f": "團體最擅長兩件事：〈Machine Gun〉〈Brick House〉這類放克舞曲，與〈Easy〉〈Three Times a Lady〉〈Still〉這類抒情曲；EoA 說 1970 年代中期起在 Richie 影響下轉向抒情路線。",
+      "src": "https://encyclopediaofalabama.org/article/the-commodores/",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Commodores"
+     },
+     {
+      "f": "〈Three Times a Lady〉1978 年登上美國單曲榜冠軍，是他們的第一首冠軍單曲。",
+      "src": "https://en.wikipedia.org/wiki/Commodores",
+      "from": "new",
+      "src2": "https://encyclopediaofalabama.org/article/the-commodores/"
+     },
+     {
+      "f": "阿拉巴馬音樂名人堂說他們把放克、靈魂與 R&B 混上南方放克元素與生動的演唱，既有高能量舞曲，也有深情慢歌。",
+      "src": "https://www.alamhof.org/commodore",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Commodores 1995 年入選阿拉巴馬音樂名人堂，2003 年入選 Vocal Group Hall of Fame。",
+      "src": "https://en.wikipedia.org/wiki/Commodores",
+      "from": "new",
+      "src2": "https://encyclopediaofalabama.org/article/the-commodores/"
+     },
+     {
+      "f": "阿拉巴馬音樂名人堂說他們是 Motown 時期全球最頂尖的樂團之一，共發行 50 張專輯與 7 首冠軍單曲，後來還成立了獨立廠牌。",
+      "src": "https://www.alamhof.org/commodore",
+      "from": "new"
+     },
+     {
+      "f": "他們拿過 1 座葛萊美（共 9 次入圍），得獎作品是向 Marvin Gaye 與 Jackie Wilson 致敬的〈Nightshift〉。",
+      "src": "https://en.wikipedia.org/wiki/Commodores",
+      "from": "new",
+      "src2": "https://www.alamhof.org/commodore"
+     },
+     {
+      "f": "維基記載他們在全球賣出超過 7000 萬張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Commodores",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Lionel Richie 1982 年在推出個人單曲〈Truly〉後離團單飛，同時期他們的經紀人 Benny Ashburn 過世。",
+      "src": "https://www.britannica.com/topic/the-Commodores",
+      "from": "new",
+      "src2": "https://encyclopediaofalabama.org/article/the-commodores/"
+     },
+     {
+      "f": "1985 年的《Nightshift》是他們最後一張金唱片。",
+      "src": "https://encyclopediaofalabama.org/article/the-commodores/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1968 年在 Tuskegee Institute 成軍。",
+    "src": "https://encyclopediaofalabama.org/article/the-commodores/",
+    "from": "new",
+    "src2": "https://en.wikipedia.org/wiki/Commodores"
+   },
+   {
+    "f": "1978 年〈Three Times a Lady〉成為他們的第一首冠軍單曲。",
+    "src": "https://en.wikipedia.org/wiki/Commodores",
+    "from": "new",
+    "src2": "https://encyclopediaofalabama.org/article/the-commodores/"
+   },
+   {
+    "f": "1982 年 Lionel Richie 離團單飛。",
+    "src": "https://www.britannica.com/topic/the-Commodores",
+    "from": "new",
+    "src2": "https://encyclopediaofalabama.org/article/the-commodores/"
+   }
+  ],
+  "conflicts": [
+   "簽約 Motown 年份：EoA 與搜尋結果寫 1972 年、Britannica 寫 1974 年、阿拉巴馬音樂名人堂寫 1971 年開始，三源不一致，facts 不寫年份；為 Jackson 5 開場的年份也不一致（EoA 1970、搜尋摘要 1971），不寫。",
+   "Richie 離團年：Britannica 與 EoA 寫 1982 年（Britannica：1982 年推出個人專輯，EoA：推出〈Truly〉後），搜尋摘要寫 1981 年底離團；採兩源的 1982 年。",
+   "葛萊美：維基寫 1986 年得獎（作品為〈Nightshift〉單曲），EoA 寫「1985 年專輯《Nightshift》得葛萊美」，得獎年份與作品類型不一致，facts 只寫得獎與歌名，不寫年份，也不寫成專輯。"
+  ],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。共 5 次：英文維基、WebSearch（歷史與影響）、Britannica（第一個網址 404 未計，第二個 the-Commodores 為簡短摘要頁，Britannica 網址為 https://www.britannica.com/topic/the-Commodores）、Encyclopedia of Alabama、阿拉巴馬音樂名人堂；失敗 2 次：Britannica 舊網址 404、BlackPast 403。註：Britannica 相關 src 請用 https://www.britannica.com/topic/the-Commodores。「7 首冠軍單曲」出自阿拉巴馬音樂名人堂單源（搜尋摘要稱 R&B 榜 7 次冠軍，來源頁不明），未指定榜別，寫作層請寫成「7 首冠軍單曲」不指名榜。7000 萬張專輯只見維基。J.D. Nicholas 接替 Richie 的年份未查，成員異動未收。與 Lionel Richie 個人相關（Truly、Endless Love）只點到為止。Britannica 頁面 Richie 離團一句：「Richie released his solo album in 1982」。",
+  "pubIssues": []
+ },
+ {
+  "key": "diana ross",
+  "name": "Diana Ross",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Diana Ross 1944 年 3 月 26 日生於密西根州底特律，父母是 Ernestine Earle 與 Fred Ross，她在六個孩子裡排行第二，在 Brewster-Douglass 公共住宅區長大，就讀 Cass Technical High School。",
+      "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+      "from": "new",
+      "src2": "https://www.ebsco.com/research-starters/music/diana-ross"
+     },
+     {
+      "f": "她 1959 年與 Mary Wilson、Florence Ballard 一起加入 Primettes，這個團後來成為 Supremes。",
+      "src": "https://www.britannica.com/biography/Diana-Ross",
+      "from": "new",
+      "src2": "https://www.ebsco.com/research-starters/music/diana-ross"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1970 年她離開 Supremes 後推出首張個人專輯《Diana Ross》，翻唱的〈Ain't No Mountain High Enough〉成為她第一首個人冠軍單曲，也替她帶來第一個葛萊美入圍。",
+      "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+      "from": "new",
+      "src2": "https://www.grammy.com/artists/diana-ross/"
+     },
+     {
+      "f": "她的個人冠軍單曲包括 1980 年的〈Upside Down〉與 1981 年和 Lionel Richie 合唱的〈Endless Love〉；Britannica 另列 1976 年的〈Love Hangover〉。",
+      "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+      "from": "new",
+      "src2": "https://www.britannica.com/biography/Diana-Ross"
+     },
+     {
+      "f": "《國家報》說她把靈魂樂從「靠團體」的結構擴展到接納一位女性個人巨星，並「讓靈魂歌手成為超級巨星」。",
+      "src": "https://www.thenationalnews.com/arts-culture/music-stage/2026/01/06/how-soul-music-star-diana-ross-laid-the-blueprint-for-beyonce-and-rihanna/",
+      "from": "new"
+     },
+     {
+      "f": "1972 年電影《Lady Sings the Blues》她飾演 Billie Holiday，獲奧斯卡最佳女主角提名；葛萊美官網記載她因此獲得金球獎最佳新人女演員。",
+      "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+      "from": "new",
+      "src2": "https://www.grammy.com/artists/diana-ross/"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1993 年金氏世界紀錄宣布她是史上最成功的女性音樂人，共有 18 首美國冠軍單曲：Supremes 時期 12 首、個人 6 首。",
+      "src": "https://www.ebsco.com/research-starters/music/diana-ross",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Diana_Ross"
+     },
+     {
+      "f": "她 2012 年獲葛萊美終身成就獎；2023 年再以 Supremes 成員身分獲頒，成為第一位兩度獲得此獎的女性。葛萊美官網記載她個人 13 次入圍、零座獎。",
+      "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+      "from": "new",
+      "src2": "https://www.grammy.com/artists/diana-ross/"
+     },
+     {
+      "f": "她 2007 年獲甘迺迪中心榮譽，2016 年獲總統自由勳章。",
+      "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+      "from": "new",
+      "src2": "https://variety.com/2016/biz/news/presidential-medal-of-freedom-tom-hanks-diana-ross-1201919751/"
+     },
+     {
+      "f": "Britannica 稱她是「她那個時代最傑出的音樂表演者之一」。",
+      "src": "https://www.britannica.com/biography/Diana-Ross",
+      "from": "new"
+     },
+     {
+      "f": "《國家報》說，從 Janet Jackson 到 Beyoncé 與 Rihanna，「如今被視為理所當然的巨星野心與企圖」，是循著 Ross 開的路走的；這是評論的說法，並非這些歌手本人所述。",
+      "src": "https://www.thenationalnews.com/arts-culture/music-stage/2026/01/06/how-soul-music-star-diana-ross-laid-the-blueprint-for-beyonce-and-rihanna/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ross 1970 年 1 月 14 日在拉斯維加斯 Frontier Hotel 完成她在 Supremes 的最後一場演出。",
+      "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+      "from": "new",
+      "src2": "https://www.ebsco.com/research-starters/music/diana-ross"
+     },
+     {
+      "f": "1970 年離團單飛，1972 年主演電影，1980 至 1981 年間有〈Upside Down〉與〈Endless Love〉兩首冠軍單曲。",
+      "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+      "from": "new",
+      "src2": "https://www.britannica.com/biography/Diana-Ross"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1970 年 1 月 14 日離開 Supremes 單飛。",
+    "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+    "from": "new",
+    "src2": "https://www.ebsco.com/research-starters/music/diana-ross"
+   },
+   {
+    "f": "1972 年《Lady Sings the Blues》獲奧斯卡最佳女主角提名。",
+    "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+    "from": "new",
+    "src2": "https://www.ebsco.com/research-starters/music/diana-ross"
+   },
+   {
+    "f": "2016 年獲總統自由勳章。",
+    "src": "https://en.wikipedia.org/wiki/Diana_Ross",
+    "from": "new",
+    "src2": "https://www.britannica.com/biography/Diana-Ross"
+   }
+  ],
+  "conflicts": [
+   "Supremes 簽約 Motown 年份：Britannica 寫 1960、EBSCO 寫約 1960、名人堂與維基（Supremes 條）寫 1961，本條 facts 不寫簽約年。",
+   "EBSCO 寫 1964 至 1965 年 Supremes 六首冠軍，Britannica 寫 12 首（全期），Supremes 條採 12 首，本條 facts 只在金氏紀錄處引 12 首。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，三格全靠補查。共 6 次：英文維基、Britannica、WebSearch（獎項與影響）、葛萊美官網藝人頁、EBSCO Research Starters、The National 影響力文章。金氏紀錄 1993 年 18 首冠軍：EBSCO 一源，src2 維基為搜尋結果摘要（頁面內容我開啟時未出現該句），視為單一來源；甘迺迪中心榮譽 2007 年：維基一源，src2 Variety 只證明 2016 年勳章，該條 2007 年單源；總統自由勳章 2016 三源一致。「第一位獲奧斯卡提名的非裔首次演出女演員」為序數宣稱，只見維基，未收。「第一位兩度獲葛萊美終身成就獎的女性」只見維基與搜尋摘要，屬序數宣稱，保守起見寫作層可省略。Beyoncé 稱讚 Ross 的引述（「一個全方位的藝人」）只見搜尋摘要，未收。Rock Hall 1988 是隨 Supremes 入選（Britannica 措辭易誤讀為個人），寫入 Supremes 條不寫入本條。2021 年專輯《Thank You》只見維基，未收。與 Supremes 條分工：本條寫個人生涯與電影。",
+  "pubIssues": []
  }
 ]

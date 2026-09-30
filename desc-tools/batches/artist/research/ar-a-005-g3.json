@@ -127,5 +127,365 @@
     "failedFetches": 0,
     "status": "full",
     "notes": "事實庫對 Parliament 完全空白（無研究稿、無上線簡介），三格全靠補查。補查 6 次：維基 Parliament (band)、Britannica Parliament-Funkadelic、維基 Mothership Connection、搖滾名人堂官網、WebSearch（葛萊美終身成就獎）、維基 Parliament-Funkadelic。名人堂入選人數不一致：官網寫 15 人（列簽名者）、維基寫 16 人，facts 不收人數。Britannica 把 Mothership Connection 記為 1976 年，維基與卡池為 1975 年 12 月 15 日發行，採 1975。成軍地點：維基 Parliament (band) 寫 Plainfield 理髮店，Parliament-Funkadelic 條目另有 1956 年 Newark 起頭的寫法，facts 只寫 Plainfield 理髮店與 1950 年代後期。Rock Hall 官網摘要無法確認 Plainfield 與取樣內容，那兩點以維基與 Britannica 為源。特注已遵守：Funkadelic 的專輯與吉他線內容不重述，只在對照聲音差異時提到。Dr. Dre 取樣《Mothership Connection》只見維基單一來源（消費者可讀性高、低風險，寫作層可用可不用）；Rolling Stone 排名亦只見維基（引其註腳）。"
+  },
+  {
+    "key": "roberta flack",
+    "name": "Roberta Flack",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Roberta Flack 1937 年 2 月 10 日生於北卡羅來納州 Black Mountain，父親 Laron 是爵士鋼琴手，母親 Irene 是教會管風琴手與詩班指導；她 5 歲時舉家遷到維吉尼亞州 Arlington。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          },
+          {
+            "f": "她 1952 年 15 歲時以全額音樂獎學金進入 Howard University，在那裡認識日後的搭檔 Donny Hathaway。",
+            "src": "https://www.britannica.com/biography/Roberta-Flack",
+            "from": "new"
+          },
+          {
+            "f": "出道前她先當老師，在北卡羅來納州與華盛頓特區教音樂與英文；1968 年 Les McCann 在一場義演聽見她，引薦她去 Atlantic 試唱，她在三小時內唱了 42 首歌給製作人 Joel Dorn 聽。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          },
+          {
+            "f": "Les McCann 形容她的歌聲「碰觸、敲擊、困住並踢動了我所知的每一種情感」。",
+            "src": "https://www.britannica.com/biography/Roberta-Flack",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她的養成橫跨爵士、福音、靈魂、民謠與古典，專長是壓低音量、貼近敘事的抒情慢歌。",
+            "src": "https://www.britannica.com/biography/Roberta-Flack",
+            "from": "new"
+          },
+          {
+            "f": "維基稱她以融合 R&B、爵士、民謠與流行的抒情曲著稱。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          },
+          {
+            "f": "首張專輯《First Take》1968 年 11 月錄音，用了不到 10 小時。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她是第一位連續兩年拿下葛萊美年度唱片的藝人：1973 年〈The First Time Ever I Saw Your Face〉、1974 年〈Killing Me Softly with His Song〉。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          },
+          {
+            "f": "這兩年年度唱片的紀錄同樣寫在 Britannica 的生平中，她另在 2020 年獲葛萊美終身成就獎。",
+            "src": "https://www.britannica.com/biography/Roberta-Flack",
+            "from": "new"
+          },
+          {
+            "f": "〈The First Time Ever I Saw Your Face〉、〈Killing Me Softly with His Song〉與〈Feel Like Makin' Love〉先後登上 Billboard Hot 100 冠軍，〈The First Time Ever I Saw Your Face〉連坐 6 週。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          },
+          {
+            "f": "《First Take》中的〈The First Time Ever I Saw Your Face〉被 Clint Eastwood 用進 1971 年電影《Play Misty for Me》。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          },
+          {
+            "f": "她被認為促成了 quiet storm 這種主打柔和、性感慢歌的電台形式；Britannica 稱她的抒情慢歌是 Quiet Storm 類型的根基。",
+            "src": "https://www.britannica.com/biography/Roberta-Flack",
+            "from": "new"
+          },
+          {
+            "f": "Fugees 1996 年重新演繹〈Killing Me Softly〉，做成嘻哈混音版並成為大熱門；她 2025 年 2 月過世後，Lauryn Hill、Wyclef Jean、Stevie Wonder 與 Alicia Keys 出席紐約哈林區的追思會致意。",
+            "src": "https://www.billboard.com/music/rb-hip-hop/roberta-flack-funeral-lauryn-hill-stevie-wonder-wyclef-1235919443/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《First Take》1969 年在 Atlantic 發行，Joel Dorn 製作。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          },
+          {
+            "f": "她與 Donny Hathaway 在 1972 年錄下〈Where Is the Love〉、1978 年錄下〈The Closer I Get to You〉，1979 年 Hathaway 過世後合作結束。",
+            "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1973、1974 年連續兩屆葛萊美年度唱片，是史上第一位連兩年得獎者。",
+        "src": "https://en.wikipedia.org/wiki/Roberta_Flack",
+        "from": "new"
+      },
+      {
+        "f": "2020 年獲葛萊美終身成就獎。",
+        "src": "https://www.britannica.com/biography/Roberta-Flack",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫無研究稿，只有《Quiet Fire》與《Feel Like Makin' Love》兩則上線簡介；維基寫她「生在 Black Mountain、5 歲遷 Arlington」，維基另有『先住 Richmond』的說法，Britannica 只寫 raised in Arlington，facts 只寫 5 歲遷 Arlington。"
+    ],
+    "pubIssues": [],
+    "searches": 3,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "補查 3 次：維基、Britannica、WebSearch（訃聞與後輩致敬）。origin、sound、legacy 三格都是從零補查。生年月日、1968 年被 McCann 發掘（維基）均為維基與 Britannica 交叉。〈Killing Me Softly〉的 Fugees 版與追思會人名來自 Billboard 報導標題與搜尋摘要，未逐頁讀原文，寫作層不要展開細節。上線簡介兩則（Quiet Fire 第三張錄音室作、Feel Like Makin' Love 為第三支 Hot 100 冠軍）與維基一致，無衝突。逝世日期 2025-02-24 維基與 Britannica 一致，但不屬於三格需要的內容，未放 facts（若寫作層需要可用）。「first artist to win ROTY in consecutive years」維基與 Britannica 兩源一致，反例查無（U2 2001、2002 屬其後）。"
+  },
+  {
+    "key": "slave",
+    "name": "Slave",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Slave 是俄亥俄州 Dayton 的放克樂團，由小號手 Steve Washington 與長號手 Floyd Miller 在 1970 年代中期（1975 年底至 1976 年春）組成，最初是九人編制，有 Tom Lockett Jr.（薩克斯風）、Mark Adams（貝斯）、Danny Webster（吉他與主唱）與 Tim Dozier（鼓）等人。",
+            "src": "https://en.wikipedia.org/wiki/Slave_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Steve Washington 原籍新澤西，與 Ohio Players 的小號手 Ralph \"Pee Wee\" Middlebrooks 有親戚關係。",
+            "src": "https://www.buckeyebeat.com/slave.html",
+            "from": "new"
+          },
+          {
+            "f": "樂團成軍後很快就與 Cotillion 簽約。",
+            "src": "https://www.buckeyebeat.com/slave.html",
+            "from": "new"
+          },
+          {
+            "f": "鼓手兼主唱 Steve Arrington 是 Dayton 本地人（1956 年生），1976 年前後搬到舊金山學打擊樂，1978 年加入 Slave。",
+            "src": "https://en.wikipedia.org/wiki/Steve_Arrington",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "早期 Slave 是以管樂為骨幹的大編制放克團；1978 年 Steve Arrington 加入後，他逐漸取代 Miller 與 Webster 成為主唱，樂團重心從器樂轉向人聲。",
+            "src": "https://en.wikipedia.org/wiki/Slave_(band)",
+            "from": "new"
+          },
+          {
+            "f": "〈Slide〉（1977 年）由 Jeff Dixon 製作，錄於新澤西州 Sayreville 的 Century Sound Studios，九名團員共同掛名作曲，包括 Steve Washington 與 Mark Adams。",
+            "src": "https://en.wikipedia.org/wiki/Slide_(Slave_song)",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Slide〉1977 年登上 R&B 單曲榜冠軍、Billboard Hot 100 第 32 名，也是當年 R&B 單曲年終榜第 10 名。",
+            "src": "https://en.wikipedia.org/wiki/Slide_(Slave_song)",
+            "from": "new"
+          },
+          {
+            "f": "A Tribe Called Quest 在首張專輯的〈Go Ahead in the Rain〉取樣 Slave；Travis Scott 在 2015 年《Rodeo》的〈Flying High〉引用〈Slide〉；Steve Arrington 唱的〈Watching You〉後來被 Snoop Dogg 取樣。",
+            "src": "https://en.wikipedia.org/wiki/Slide_(Slave_song)",
+            "from": "new"
+          },
+          {
+            "f": "Slave 與 Ohio Players、Lakeside、Zapp、Sun 等團一起，讓 Dayton 有了「放克之地」（Land of Funk）與放克首都的名聲。",
+            "src": "https://www.daytondailynews.com/local/8-legendary-performers-that-make-dayton-the-land-of-funk/6TO4QRSCVNEELOYZCEQVLJWUQE/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團 1975 年前後成軍、活動到 1996 年，先後在 Cotillion、Atlantic 與 Ichiban 出片。",
+            "src": "https://en.wikipedia.org/wiki/Slave_(band)",
+            "from": "new"
+          },
+          {
+            "f": "首張同名專輯《Slave》（1977 年）拿到金唱片；1980 年的《Stone Jam》也是金唱片。",
+            "src": "https://en.wikipedia.org/wiki/Slave_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Steve Arrington 1982 年離團，另組 Steve Arrington's Hall of Fame。",
+            "src": "https://en.wikipedia.org/wiki/Steve_Arrington",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1977 年〈Slide〉登上 R&B 單曲榜冠軍，首張同名專輯拿到金唱片。",
+        "src": "https://en.wikipedia.org/wiki/Slide_(Slave_song)",
+        "from": "new"
+      },
+      {
+        "f": "1978 年 Steve Arrington 加入，日後成為主唱。",
+        "src": "https://en.wikipedia.org/wiki/Steve_Arrington",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年：維基 Slave (band) 寫 1975 年（Miller 與 Washington 在 1975 年底至 1976 年春組團），Buckeye Beat 寫 1976 年；兩源不一致，facts 只寫『1970 年代中期（1975 年底至 1976 年春）』。上線簡介《The Hardness of the World》寫『1975 年在 Dayton 組起』，與維基一致、與 Buckeye Beat 相差一年。"
+    ],
+    "pubIssues": [
+      {
+        "album": "The Hardness of the World",
+        "claim": "Slave 是 1975 年在 Dayton 由小號手 Steve Washington 與 Floyd Miller 組起",
+        "problem": "成軍年各源不一（維基 1975 年底至 1976 年春；Buckeye Beat 1976），建議改成『1970 年代中期』；Floyd Miller 是長號手，簡介只點名 Washington 為小號手，未寫錯。",
+        "src": "https://www.buckeyebeat.com/slave.html"
+      }
+    ],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫無研究稿，只有四則上線簡介。補查 6 次：維基 Slave (band)、WebSearch（樂團史與取樣）、Buckeye Beat、維基 Slide (Slave song)、維基 Steve Arrington、WebSearch（Dayton 放克史）；另有 AllMusic 藝人頁 403（未取得）。確認為俄亥俄 Dayton 的放克樂團，與卡池專輯相符。未收：樂團名稱由來（Floyd Miller 穿『Slave／Master』T 恤、Washington 家族與廢奴運動的淵源、『Fungk』拼法），只見搜尋摘要（疑似 fandom 站），未逐頁核對；Washington 是 Pee Wee Middlebrooks 外甥之說，Buckeye Beat 只寫『related』、Dayton Daily News 搜尋摘要寫 nephew，facts 只寫『親戚』。Cameo〈Slyde〉取樣〈Slide〉只見搜尋摘要（WhoSampled 標題），未收。〈Watching You〉被 Snoop Dogg 取樣出自維基 Steve Arrington 條目單一來源。事實庫上線簡介其餘（第二張、第三張、Stone Jam 金唱片、Show Time 為 Arrington 最後一張）與維基一致。"
+  },
+  {
+    "key": "sly & the family stone",
+    "name": "Sly & the Family Stone",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "主腦 Sly Stone 本名 Sylvester Stewart，1943 年 3 月 15 日生於德州 Denton，1950 年舉家搬到加州 Vallejo；父母 K.C. 與 Alpha 都是 Church of God in Christ 的虔誠教友。",
+            "src": "https://en.wikipedia.org/wiki/Sly_Stone",
+            "from": "new"
+          },
+          {
+            "f": "他與手足 Freddie、Rose、Loretta 從小組成教會福音團 the Stewart Four，1956 年 8 月自行發行過一張 78 轉單曲〈On the Battlefield〉。",
+            "src": "https://en.wikipedia.org/wiki/Sly_Stone",
+            "from": "new"
+          },
+          {
+            "f": "1960 年代中期，Sly 在舊金山灣區電台 KSOL 當 DJ，也是 Autumn Records 的特約製作人，製作過 The Beau Brummels 與 Grace Slick 當時的團 The Great Society。",
+            "src": "https://en.wikipedia.org/wiki/Sly_Stone",
+            "from": "new"
+          },
+          {
+            "f": "1966 年，他把自己的樂團 Sly and the Stoners（含 Cynthia Robinson）與哥哥 Freddie 的樂團合併，成為 Sly and the Family Stone；成員裡有 Freddie、Rose、Cynthia Robinson、Larry Graham、Jerry Martini 與 Greg Errico。",
+            "src": "https://en.wikipedia.org/wiki/Sly_and_the_Family_Stone",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基稱他們是第一個種族融合、男女混編陣容的主要美國搖滾團。",
+            "src": "https://en.wikipedia.org/wiki/Sly_and_the_Family_Stone",
+            "from": "new"
+          },
+          {
+            "f": "他們把放克、靈魂、迷幻搖滾與福音揉在一起，被稱為 psychedelic soul；AllMusic 說：「James Brown 也許發明了放克，但 Sly Stone 把它推到完美。」",
+            "src": "https://en.wikipedia.org/wiki/Sly_Stone",
+            "from": "new"
+          },
+          {
+            "f": "貝斯手 Larry Graham 被認為發明了成為放克標誌的貝斯「slapping」奏法。",
+            "src": "https://en.wikipedia.org/wiki/Sly_and_the_Family_Stone",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂評人 Joel Selvin 說過：「黑人音樂有兩種：Sly Stone 之前的黑人音樂，與 Sly Stone 之後的黑人音樂。」",
+            "src": "https://en.wikipedia.org/wiki/Sly_and_the_Family_Stone",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 稱 Sly Stone 影響了 Prince、George Clinton、Miles Davis、Michael Jackson、Public Enemy、Red Hot Chili Peppers 與 OutKast。",
+            "src": "https://www.britannica.com/biography/Sly-Stone",
+            "from": "new"
+          },
+          {
+            "f": "1993 年入選搖滾名人堂，由 George Clinton 頒獎並致詞，他形容 Sly 是「我這輩子聽過最狠的傢伙」。",
+            "src": "https://www.rockhall.com/inductees/sly-and-family-stone",
+            "from": "new"
+          },
+          {
+            "f": "Sly Stone 本人在 2017 年葛萊美頒獎典禮獲頒終身成就獎。",
+            "src": "https://www.rollingstone.com/music/music-news/velvet-underground-sly-stone-to-receive-grammy-lifetime-achievement-award-192917/",
+            "from": "new"
+          },
+          {
+            "f": "1969 年 8 月 17 日凌晨他們在 Woodstock 演出，被稱為整個音樂節「最純粹令人亢奮的一場」，也是紀錄片中最歡樂的段落之一。",
+            "src": "https://www.woodstockstory.com/performers/sly-and-the-family-stone",
+            "from": "new"
+          },
+          {
+            "f": "1969 年的《Stand!》最終銷量超過 300 萬張。",
+            "src": "https://en.wikipedia.org/wiki/Sly_and_the_Family_Stone",
+            "from": "new"
+          },
+          {
+            "f": "《Stand!》入選美國國會圖書館國家錄音登記簿，被認定具有文化、歷史或美學上的重要性。",
+            "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SlyAndTheFamilyStone.pdf",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1968 年〈Dance to the Music〉排 Billboard 第 8 名、〈Everyday People〉登上第 1 名；1969 年〈Hot Fun in the Summertime〉第 2 名；1971 年〈Family Affair〉再登第 1 名。",
+            "src": "https://en.wikipedia.org/wiki/Sly_and_the_Family_Stone",
+            "from": "new"
+          },
+          {
+            "f": "1970 年代中期，古柯鹼與 PCP 濫用與缺席演出使樂團實質瓦解，1975 年前後解散；Sly Stone 2025 年 6 月 9 日於洛杉磯 Granada Hills 過世，享年 82 歲。",
+            "src": "https://en.wikipedia.org/wiki/Sly_Stone",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年 Sly and the Family Stone 入選搖滾名人堂。",
+        "src": "https://www.rockhall.com/inductees/sly-and-family-stone",
+        "from": "new"
+      },
+      {
+        "f": "2017 年 Sly Stone 獲葛萊美終身成就獎。",
+        "src": "https://www.rollingstone.com/music/music-news/velvet-underground-sly-stone-to-receive-grammy-lifetime-achievement-award-192917/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "《Stand!》入選國會圖書館國家錄音登記簿的年份：LOC 官方 PDF 檔名標『2014』，搜尋摘要寫 2015（名單 2015 年 3 月公布）；兩源不一致，facts 不寫年份。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫完全空白，三格全靠補查。補查 6 次：維基樂團條、搖滾名人堂官網、Britannica Sly Stone（頁面內容不完整，只取到影響對象一句）、維基 Sly Stone、WebSearch（葛萊美終身成就獎、國家錄音登記簿、Woodstock）、woodstockstory.com。「第一個種族融合、男女混編的主要美國搖滾團」與 Larry Graham 發明 slap 貝斯皆為『第一／發明』類宣稱，只見維基單一來源，且有反例爭議（融合陣容更早有 Booker T. & the MG's 的種族混編、Graham 的 slap 常被拿來與 Louis Johnson 等後起者比較），facts 已改寫成『維基稱』『被認為』，寫作層若用必須保留歸屬語氣，拿不準可整條不用。Selvin 引言與 AllMusic 引言只見維基單一來源。Rolling Stone 史上百大藝人榜第 43 名只見維基（版本未查），未收。Woodstock『最純粹令人亢奮』出自 woodstockstory.com 單一來源，未收其他細節。Sly 受葛萊美終身成就獎是本人（搜尋標題為 Sly Stone），不是全團。Stand! 銷量 300 萬張與 NRR 入選出自維基樂團條，NRR 另有 LOC PDF 標題佐證。"
   }
 ]
