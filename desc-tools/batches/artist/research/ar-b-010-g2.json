@@ -86,5 +86,87 @@
     "failedFetches": 2,
     "status": "full",
     "notes": "事實庫 research 與 published 皆空，三格從零查；池內 4 張為 Os Mutantes（1968）《Mutantes》（1969）《Tecnicolor》（1999）《Zzyzx》（2020），與巴西這團一致，無混卡。搜尋 6 次：維基 Os Mutantes（開頁）、WebSearch（影響）、Salt Lake Tribune（開頁）、Britannica（開頁）、WebSearch（1968 專輯與 Rita Lee）、uDiscover（開頁）；失敗 2 次（NPR from-brazil-with-love 503、NPR Rita Lee 訃聞 503）。Britannica 該頁自稱沒有完整條目，只有摘要，內容單薄，只用於成軍年與聲音描述。sltrib 是 2006 年重組前後的巡演預告，屬新聞稿性質，未說明成員名單。單源未收（放 notes）：Cobain 1993 年寫信給 Arnaldo Baptista 請求重組巡演（僅維基）；David Byrne 以 Luaka Bop 廠牌推廣他們（維基，搜尋摘要另有引述、未開頁）；Kevin Barnes（Of Montreal）與 Flea 稱其影響（僅維基）；1967 年 TV Record 音樂節替 Gilberto Gil 伴奏而成名、參與 1968 年《Tropicália: ou Panis et Circencis》合輯（uDiscover，搜尋摘要另見他站，未開頁）；uDiscover 稱 1968 年首作『arguably the apogee of all things Tropicália』；2010 年 Beck 邀 Sérgio Dias 演出 INXS《Kick》（僅 uDiscover）；1972 年 Rita Lee 離團、1970 年代轉向前衛搖滾、1978 年後停團（皆僅搜尋摘要或維基單源）；團名由 Ronnie Von 建議、原名 Six Sided Rockers（僅維基）。『先驅』『widely regarded』類共識評價本輪沒有兩源可收。Britannica 兩處與維基一致的是成軍年，其餘為概述。"
+  },
+  {
+    "key": "panic! at the disco",
+    "name": "Panic! at the Disco",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Panic! at the Disco 2004 年由一群高中年紀的朋友在拉斯維加斯組成：吉他兼主唱 Ryan Ross、鼓手 Spencer Smith、貝斯 Brent Wilson 與主唱兼吉他 Brendon Urie。",
+            "src": "https://en.wikipedia.org/wiki/Panic!_at_the_Disco",
+            "src2": "https://spectrumlocalnews.com/us/snplus/news/2023/01/25/panic-at-the-disco-breaks-up",
+            "from": "new"
+          },
+          {
+            "f": "樂團把試聽帶放上網路後，Fall Out Boy 的貝斯手 Pete Wentz 注意到他們，親自趕去拉斯維加斯見面，並在這四人還沒公開演出過時就簽下他們，收進自己的廠牌 Decaydance。",
+            "src": "https://en.wikipedia.org/wiki/Panic!_at_the_Disco",
+            "src2": "https://www.polyvinylrecords.com/products/panic-at-the-disco-a-fever-you-cant-sweat-out",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團的風格橫跨 pop rock、baroque pop、electropop、alternative rock、pop-punk 與 emo，各張專輯的路線持續變動。",
+            "src": "https://en.wikipedia.org/wiki/Panic!_at_the_Disco",
+            "src2": "https://en.wikipedia.org/wiki/A_Fever_You_Can%27t_Sweat_Out",
+            "from": "new"
+          },
+          {
+            "f": "2005 年首作《A Fever You Can't Sweat Out》前半段以合成器與鼓機為主，後半段轉向帶有歌舞雜耍（vaudeville）味道的鋼琴、弦樂與手風琴；歌詞全由 Ryan Ross 寫。",
+            "src": "https://en.wikipedia.org/wiki/A_Fever_You_Can%27t_Sweat_Out",
+            "src2": "https://en.wikipedia.org/wiki/Panic!_at_the_Disco",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首作《A Fever You Can't Sweat Out》（2005）最終達四白金，美國銷量逾 400 萬張。",
+            "src": "https://en.wikipedia.org/wiki/A_Fever_You_Can%27t_Sweat_Out",
+            "src2": "https://en.wikipedia.org/wiki/Panic!_at_the_Disco",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2015 年之後，Panic! at the Disco 實質上是 Brendon Urie 一人的計畫；2023 年 1 月 Urie 宣布樂團在同年 3 月的 Viva Las Vengeance 巡演結束後終止，理由是想把重心放在家庭。",
+            "src": "https://en.wikipedia.org/wiki/Panic!_at_the_Disco",
+            "src2": "https://spectrumlocalnews.com/us/snplus/news/2023/01/25/panic-at-the-disco-breaks-up",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2005 年首作《A Fever You Can't Sweat Out》最終達四白金。",
+        "src": "https://en.wikipedia.org/wiki/A_Fever_You_Can%27t_Sweat_Out",
+        "src2": "https://en.wikipedia.org/wiki/Panic!_at_the_Disco",
+        "from": "new"
+      },
+      {
+        "f": "2023 年 1 月宣布終止樂團。",
+        "src": "https://en.wikipedia.org/wiki/Panic!_at_the_Disco",
+        "src2": "https://spectrumlocalnews.com/us/snplus/news/2023/01/25/panic-at-the-disco-breaks-up",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 2,
+    "status": "thin",
+    "notes": "事實庫 research 與 published 皆空，從零查；池內 4 張（《A Fever You Can't Sweat Out》《Vices & Virtues》《Pretty. Odd.》《Pray for the Wicked》）皆是拉斯維加斯這團，無混卡。搜尋 7 次：維基 Panic!（開頁）、WebSearch（成軍）、維基《A Fever…》（開頁）、WebSearch（解散與地位）、Spectrum News（開頁）、WebSearch（Wentz 發掘）、Polyvinyl 商品頁（開頁）。失敗與未取得：Billboard 10 週年口述史（402，並被導向 tollbit）、Variety 與 Rolling Stone（皆導向 tollbit 付費牆，未取得）、NPR 解散報導（503）；失敗 2 次（402、503），另 2 次為導向付費牆而未取得。兩源非獨立處：origin 第 2 條的 Polyvinyl 商品頁文字與維基《A Fever…》條目近乎逐字相同，實質轉載維基；sound 兩條與 legacy 的兩源皆為英文維基（樂團條與專輯條），非獨立；origin 第 1 條的『拉斯維加斯』見於維基，Spectrum 只證實 2004 年、青少年朋友、四位原始成員。legacy 只有商業成績，沒有『後輩點名受其影響』或權威共識評價，本輪 7 次內未查到（上限 8 次，未用滿；Billboard、Rolling Stone 被付費牆擋下），故 status 為 thin。單源未收：Summerlin、兩人就讀 Bishop Gorman 高中、Wilson 與 Urie 來自 Palo Verde 高中（僅維基與搜尋摘要）；〈I Write Sins Not Tragedies〉達鑽石認證與 2006 年 MTV VMA 年度影片獎（僅維基）；〈High Hopes〉2018 年登 Hot 100 第 4 名為樂團最高排名（僅維基）；2016 年 Rolling Stone 把首作列入『40 Greatest Emo Albums of All Time』（僅維基，RS 頁面被 tollbit 擋）；2016 年翻唱 Queen〈Bohemian Rhapsody〉收入《Suicide Squad》原聲帶（僅維基）；單源未收：15 首 Hot 100、兩首前十名（〈I Write Sins Not Tragedies〉第 7 名見維基專輯條、〈High Hopes〉第 4 名見維基樂團條）、兩張告示牌 200 大榜首（《Death of a Bachelor》2016 與《Pray for the Wicked》2018）、《Death of a Bachelor》葛萊美最佳搖滾專輯入圍（Spectrum 開頁，搜尋摘要另見 WaPo、Today 類報導，未開頁）。"
   }
 ]
