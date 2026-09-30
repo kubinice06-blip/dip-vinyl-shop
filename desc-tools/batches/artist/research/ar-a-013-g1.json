@@ -530,5 +530,86 @@
     "notes": "事實庫 research 為空，從零查。本位開頁 7 次：英文維基、Britannica、搖滾名人堂、WebSearch（調弦與影響）、Far Out、Fortune、Time。失敗請求 3 次（rollingstone.com 兩個網址 307 導向 tollbit 且付費 402，未取得內容）。名人堂官方（可具名單源）：1997 年入選，引介人 Shawn Colvin，官網稱她是「才華洋溢的音樂人與創意遊牧者」，說她「無與倫比的影響力」值得肯定，入選是「終於推翻一些關於這位不循常規藝術家的傳統看法」的機會。單源未進 f：維基寫她九歲得小兒麻痺、後來搬到 Saskatoon（自認家鄉）、2015 年 3 月動脈瘤破裂後長期復健、2022 年 7 月在 Newport Folk Festival 突襲復出、2023 年 6 月 Gorge 圓形劇場壓軸演出；維基寫 Blue 在 Rolling Stone 2003 年五百大專輯排第 30、2020 年升到第 3（單源，本位未取得 Rolling Stone 頁）；維基引 AllMusic 稱她『可能是二十世紀後期最重要也最有影響力的女性錄音藝人』；維基寫她 11 座葛萊美；Britannica 寫她與 Bob Dylan 相較是『Dylan 的陽、比肩其意象豐富』（Britannica 引句，未寫出處）、2004 年獲加拿大勳章、1967 年首張專輯由 David Crosby 製作；Time 稱她是『你最愛的音樂人的最愛音樂人』；Fortune 稱 Neil Young 說她是世代最好的藝人之一、Leonard Cohen 稱她『某種音樂怪物』（Fortune 單源）；Charles Mingus 邀她參與他最後錄音（維基與搜尋摘要，未有第二個開頁來源）。Time 與 Fortune 屬不同媒體。legacy 第 4 條的 Rolling Stone 2002 語句只見維基轉引（未取得 Rolling Stone 原頁），寫作層寫『被視為史上最偉大的詞曲創作者之一』即可。維基另提她學過古典鋼琴，Britannica 寫商業美術，f 只寫兩源共通的『美術』。",
     "failedFetches": 3,
     "pubIssues": []
+  },
+  {
+    "key": "sufjan stevens",
+    "name": "Sufjan Stevens",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Sufjan Stevens 與繼父 Lowell Brams 共同創辦獨立廠牌 Asthmatic Kitty Records。",
+            "src": "https://en.wikipedia.org/wiki/Sufjan_Stevens",
+            "src2": "https://asthmatickitty.com/artists/sufjan-stevens/",
+            "from": "new"
+          },
+          {
+            "f": "他的母親 Carrie 2012 年底過世；專輯《Carrie & Lowell》的標題就取自母親與繼父 Lowell，內容是他面對這件事的作品。",
+            "src": "https://en.wikipedia.org/wiki/Carrie_%26_Lowell",
+            "src2": "https://www.nprillinois.org/the-x/2015-03-22/review-sufjan-stevens-carrie-lowell",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Michigan》（2003）與《Illinois》（2005）是他以美國各州為題的系列中完成的兩張；Asthmatic Kitty 官方簡介稱他「迷戀宏大的概念」。",
+            "src": "https://en.wikipedia.org/wiki/Sufjan_Stevens",
+            "src2": "https://asthmatickitty.com/artists/sufjan-stevens/",
+            "from": "new"
+          },
+          {
+            "f": "《Carrie & Lowell》以素簡的民謠編制，離開他前作的電子路線；NPR 說它褪去他在聖誕唱片與側企劃裡常見的輕快一面。",
+            "src": "https://en.wikipedia.org/wiki/Carrie_%26_Lowell",
+            "src2": "https://www.nprillinois.org/the-x/2015-03-22/review-sufjan-stevens-carrie-lowell",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Illinois》被 Metacritic 列為 2005 年評價最高的專輯，並拿下 2005 年 Shortlist Music Prize（New Pantheon 獎）。",
+            "src": "https://en.wikipedia.org/wiki/Illinois_(Sufjan_Stevens_album)",
+            "src2": "https://en.wikipedia.org/wiki/Sufjan_Stevens",
+            "from": "new"
+          },
+          {
+            "f": "他為電影《Call Me by Your Name》寫的〈Mystery of Love〉入圍奧斯卡（入圍）與葛萊美最佳視覺媒體歌曲（入圍）。",
+            "src": "https://en.wikipedia.org/wiki/Sufjan_Stevens",
+            "src2": "https://asthmatickitty.com/artists/sufjan-stevens/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2005 年《Illinois》成為 Metacritic 該年評價最高的專輯。",
+        "src": "https://en.wikipedia.org/wiki/Illinois_(Sufjan_Stevens_album)",
+        "from": "new"
+      },
+      {
+        "f": "2018 年以〈Mystery of Love〉入圍奧斯卡（入圍）。",
+        "src": "https://en.wikipedia.org/wiki/Sufjan_Stevens",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成長地：維基寫 9 歲搬到 Alanson，搜尋摘要寫在 Petoskey 長大，兩者不一致，origin 不寫成長地。"
+    ],
+    "searches": 8,
+    "status": "thin",
+    "notes": "事實庫 research 為空，從零查。本位開頁 8 次：英文維基、WebSearch（生平）、Asthmatic Kitty 藝人頁、WebSearch（Illinois 評價）、維基 Carrie & Lowell、WebSearch（C&L 評論）、NPR Illinois 轉載的 C&L 評論、維基 Illinois。失敗請求 4 次（Britannica 無 Sufjan 本傳只回導覽列、Metacritic 403、Pitchfork 拒絕、NPR 503），達上限。非獨立：legacy 第 1 條的兩源都是英文維基（不同條目），寫作層寫『Metacritic 列為 2005 年評價最高』時要標為來自維基彙整，不宜寫成獨立共識；同樣地，維基 Sufjan 與維基 Illinois 兩條是同站。origin 因沒有獨立於維基的傳記來源，僅收兩條；status 標 thin。單源未進 f：維基寫 1975 年 7 月 1 日生於底特律、9 歲搬到 Alanson、立陶宛與希臘裔、Hope College 畢業（Phi Beta Kappa）、The New School 創意寫作 MFA、2000 年首張專輯《A Sun Came》、自述州系列是「宣傳噱頭」、精通 banjo/雙簧管/英國管、2023 年 8 月確診 Guillain-Barré 症候群與《Javelin》獻給已故伴侶 Evans Richardson；維基 C&L 寫母親在他嬰兒時離家、有憂鬱、思覺失調與藥物濫用（搜尋摘要一致，出處未開頁）、專輯 Metacritic 90 分（40 篇）為 2015 年第二高、Pitchfork 給 Best New Music 並在 2025 年改評 10 分；維基 Illinois 寫 Pitchfork 2000 年代專輯榜第 16、2005 年度第 1，NPR「十年最重要的 50 張錄音」，Paste 十年榜第 1，Billboard 200 第 121 名（皆維基單站）；奧斯卡入圍的類別維基摘要未寫明（本位不寫類別）。",
+    "failedFetches": 4,
+    "pubIssues": []
   }
 ]
