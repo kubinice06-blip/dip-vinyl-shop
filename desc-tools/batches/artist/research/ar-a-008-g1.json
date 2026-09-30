@@ -153,5 +153,122 @@
     "failedFetches": 2,
     "status": "full",
     "notes": "事實庫 research 只有兩條專輯層級事實（首作發行日、Love Gun 四人主唱），三格全靠補查。上線簡介（KISS、Rock and Roll Over、Love Gun）與本層事實無衝突，簡介內細節本層未另查，不列 pubIssues。來源：英文維基 Kiss (band)、Gene Simmons，搖滾名人堂頁，Britannica 兩個網址（一個 404、一個是「親吻」條，等於未取得；已計入搜尋），WebSearch 兩次（Kennedy Center Honors、影響）。Kennedy Center 官網 403（失敗）。Kennedy Center Honors 一條只依搜尋結果摘要（Billboard、NPR 條目標題與摘要），未逐頁開啟核對；寫作層若用需留意。單源、未收進 facts：Simmons 原名 Chaim Witz、1949 年 8 月 25 日生於以色列 Haifa、母親是大屠殺倖存者、8 歲隨母移居紐約皇后區改名 Gene Klein（維基 Simmons）；四個角色 Starchild（Stanley）、Demon（Simmons）、Spaceman（Frehley）、Catman（Criss）（維基 KISS，Simmons 條只證 Demon）；維基稱 KISS 拿過 30 張金唱片、為美國樂團之最；《Alive!》（1975）拿金唱片、產出第一首前四十單曲，「可以說救了瀕臨破產的 Casablanca」（維基）；2023 年 12 月在紐約辦最後一場演出（維基，未取得場地日期）；搜尋摘要稱 Tool、Pearl Jam、Foo Fighters、Slipknot、Pantera 等團成員受 KISS 影響、Mötley Crüe 的 Nikki Sixx 說 KISS 給了他們第一批巡演機會、Tom Morello 12 歲首次看 KISS 演出並稱 Frehley 是他的第一位吉他英雄、把 KISS Army 稱為第五位成員（皆為搜尋摘要，未核對原頁）；Ace Frehley 於 2025 年 10 月過世（搜尋摘要，Kennedy Center 頒獎在其身後不到兩個月）。era 格未補。"
+  },
+  {
+    "key": "led zeppelin",
+    "name": "Led Zeppelin",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Led Zeppelin 1968 年在倫敦成軍，是 Jimmy Page 在 Yardbirds 解散後召集的新陣容：主唱 Robert Plant、貝斯與鍵盤 John Paul Jones、鼓手 John Bonham。",
+            "src": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+            "src2": "https://www.britannica.com/topic/Led-Zeppelin",
+            "from": "new"
+          },
+          {
+            "f": "新團最初以 New Yardbirds 的名義為履行斯堪地那維亞的演出合約而組，之後才改名 Led Zeppelin。",
+            "src": "https://en.wikipedia.org/wiki/Jimmy_Page",
+            "src2": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+            "from": "new"
+          },
+          {
+            "f": "Jimmy Page 1944 年 1 月 9 日生於英格蘭 Middlesex 的 Heston，曾是 Yardbirds 的主音吉他手。",
+            "src": "https://en.wikipedia.org/wiki/Jimmy_Page",
+            "src2": "https://www.britannica.com/topic/Led-Zeppelin",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "搖滾名人堂稱，Led Zeppelin 把藍調、凱爾特民謠、靈魂樂與調式 riff 混在一起，擴大了搖滾的樣板；維基則描述他們的聲音是藍調與民謠底子加上硬搖滾。",
+            "src": "https://www.rockhall.com/inductees/led-zeppelin",
+            "src2": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+            "from": "new"
+          },
+          {
+            "f": "搖滾名人堂稱，Jimmy Page 立下了把專輯擺在單曲之前的錄音室標準，樂團的現場演出難以預料、技術高超，又始終帶著神祕感。",
+            "src": "https://www.rockhall.com/inductees/led-zeppelin",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Led Zeppelin 被視為硬搖滾與重金屬的鼻祖之一；Britannica 稱他們影響的樂團從 Black Sabbath 到 Nirvana，搖滾名人堂則稱他們為重金屬、前衛搖滾與「體育場式的戲劇化演唱會」鋪路。",
+            "src": "https://www.britannica.com/topic/Led-Zeppelin",
+            "src2": "https://www.rockhall.com/inductees/led-zeppelin",
+            "from": "new"
+          },
+          {
+            "f": "1995 年入選搖滾名人堂，由 Aerosmith 的 Steven Tyler 與 Joe Perry 引介。",
+            "src": "https://www.rockhall.com/inductees/led-zeppelin",
+            "src2": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+            "from": "new"
+          },
+          {
+            "f": "2006 年 5 月 22 日獲 Polar Music Prize，頒獎機構稱他們是搖滾的偉大先驅之一。",
+            "src": "https://www.polarmusicprize.org/laureates/led-zeppelin/",
+            "src2": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Led_Zeppelin",
+            "from": "new"
+          },
+          {
+            "f": "2012 年 Jimmy Page、Robert Plant 與 John Paul Jones 獲 Kennedy Center Honors。",
+            "src": "https://www.britannica.com/topic/Led-Zeppelin",
+            "src2": "https://www.rollingstone.com/culture/culture-news/led-zeppelin-buddy-guy-david-letterman-to-receive-kennedy-center-awards-234118",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1980 年 9 月 25 日鼓手 John Bonham 過世，其餘三人同年 12 月宣布樂團無法繼續、正式解散。",
+            "src": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+            "src2": "https://www.britannica.com/topic/Led-Zeppelin",
+            "from": "new"
+          },
+          {
+            "f": "2007 年樂團為 Ahmet Ertegun 紀念演唱會在倫敦 O2 Arena 重聚演出。",
+            "src": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+            "src2": "https://www.britannica.com/topic/Led-Zeppelin",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1995 年入選搖滾名人堂，由 Aerosmith 的 Steven Tyler 與 Joe Perry 引介。",
+        "src": "https://www.rockhall.com/inductees/led-zeppelin",
+        "src2": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+        "from": "new"
+      },
+      {
+        "f": "2006 年獲 Polar Music Prize，5 月 22 日在斯德哥爾摩頒獎。",
+        "src": "https://www.polarmusicprize.org/laureates/led-zeppelin/",
+        "src2": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Led_Zeppelin",
+        "from": "new"
+      },
+      {
+        "f": "2012 年獲 Kennedy Center Honors。",
+        "src": "https://www.britannica.com/topic/Led-Zeppelin",
+        "src2": "https://www.rollingstone.com/culture/culture-news/led-zeppelin-buddy-guy-david-letterman-to-receive-kennedy-center-awards-234118",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫 research 為空，只有 Presence 一篇上線簡介，三格全從零查；簡介與本層事實無衝突，簡介內細節（車禍時間、錄音天數）本層未另查，不列 pubIssues。來源：英文維基 Led Zeppelin、Jimmy Page，搖滾名人堂頁，Britannica，Polar Music Prize 官網，WebSearch 一次（獎項）。Grammy 終身成就獎（2005）一項依搜尋結果摘要有記載，但未逐頁核對，不收進 facts。單源、未收：團名典故（維基：Page 與 Jeff Beck 的超級團「會像鉛氣球一樣砸掉」，經理 Peter Grant 去掉 lead 的 a、以 zeppelin 取代 balloon）；估計賣出 2 億到 3 億張、《Led Zeppelin IV》賣 3700 萬張（維基）；Plant 1948 年 8 月 20 日生於 West Bromwich、Bonham 1948 年 5 月 31 日生於 Redditch、Jones 1946 年 1 月 3 日生於 Sidcup 且是資深錄音室樂手（Britannica）；Page 父親管理塑膠塗料廠、1952 年舉家遷 Epsom、約 12 歲在家中發現一把西班牙吉他、13 歲上 BBC 演出 skiffle、1960 年代中期是倫敦最忙的錄音室吉他手（維基 Page）；Rolling Stone 2015 年吉他手榜 Page 第 3 名（維基 Page）；Polar 頒獎詞稱他們是搖滾的偉大先驅、音樂有神祕與原始能量兩條主軸，並點名影響 Deep Purple、Black Sabbath、Nirvana、Pearl Jam（Polar 官網）；2007 年 O2 演唱會創下 2000 萬線上申請的門票需求紀錄（維基）；Britannica 稱 2014 年因 2012 年現場專輯獲葛萊美（未核對獎項名稱）。"
   }
 ]
