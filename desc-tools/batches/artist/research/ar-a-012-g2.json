@@ -597,5 +597,209 @@
   "failedFetches": 7,
   "status": "full",
   "notes": "事實庫 research 為三張專輯的專輯層級事實（Zaireeka 等），無出身、地位；本位三格靠補查。開頁讀到：維基 The Flaming Lips、TravelOK 音樂步道專頁、奧克拉荷馬州參議院新聞稿、維基 The Soft Bulletin、維基 Wayne Coyne，另一次 WebSearch（單次呼叫含三組子搜尋，只看摘要）共 7 次。失敗 7 次（超過上限 4 次，照實記錄）：Britannica 樂團頁只回導覽列（無內文）、Grammy.com 藝人頁 404、Under the Radar 403、Stereophile 403、Metacritic 403、Pitchfork 被工具封鎖、AlbumOfTheYear 403；已停止再試。非獨立：維基 The Flaming Lips 與維基 Soft Bulletin／Wayne Coyne 同站；現場演出那條、Soft Bulletin 評價那條與 era 那條的兩源皆為維基不同條目，Soft Bulletin 評價缺獨立第二源（Stereophile、Metacritic 等 403），寫作層可寫但要保守。單源未收進 facts：Wayne Coyne 1961 年 1 月 13 日生於匹茲堡、當年搬到奧克拉荷馬、家中六個孩子排行第五、1977 年起在 Long John Silver's 打工遇搶（維基 Coyne 單源）；團名來自 Coyne 的說法（維基單源）；首場演出在 Blue Note Lounge（TravelOK 與搜尋摘要）；〈Do You Realize??〉2011 年被撤銷州搖滾歌地位（維基單源，Billboard、Under the Radar 標題見於搜尋結果但頁面 403 或轉址未開），因此州搖滾歌那條寫『曾』；葛萊美第三座『最佳工程專輯（非古典）』2007 年《At War with the Mystics》：維基列在樂團名下，但該獎頒給工程師，得獎主體未核，不收；官方與參議院稿寫『三座葛萊美』，TravelOK 與參議院稿都未逐項列出；Q 雜誌 2002 年『50 Bands to See Before You Die』（維基單源）；Glastonbury 演出與 BRIT Awards 最佳國際團體提名（TravelOK 單源）；Pitchfork 1990 年代百大專輯第 3 名、AllMusic Ankeny『可能是整個十年最好的唱片』（維基 Soft Bulletin 單源）；《Soft Bulletin》拿 NME 年度專輯（維基 The Flaming Lips 單源，維基 Soft Bulletin 只寫 9/10）；Coyne 引語『if someone was to ask me what instrument do I play, I would say the recording studio』（維基單源）；Coyne 稱若不是奧克拉荷馬人不知道會不會被這樣看待（州參議院稿單源）；《Soft Bulletin》偵測失準疊 MIDI 鍵盤的做法（維基 Soft Bulletin 單源，上線簡介同向）。"
+ },
+ {
+  "key": "the police",
+  "name": "The Police",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Police 1977 年在倫敦成軍：Sting 1 月加入美國鼓手 Stewart Copeland 與 Henry Padovani，Padovani 不久被吉他手 Andy Summers 取代。",
+      "src": "https://en.wikipedia.org/wiki/Sting_(musician)",
+      "src2": "https://www.ebsco.com/research-starters/music/police-music-group/",
+      "from": "new"
+     },
+     {
+      "f": "三人都是有資歷的樂手——Sting 在紐卡索玩爵士小樂隊、Copeland 曾在前衛搖滾團 Curved Air、Summers 是英國節奏藍調與搖滾樂團的老手——在龐克當道的年代，這反而讓他們處於劣勢。",
+      "src": "https://www.britannica.com/topic/the-Police",
+      "src2": "https://www.ebsco.com/research-starters/music/police-music-group/",
+      "from": "new"
+     },
+     {
+      "f": "Sting 成軍前是紐卡索一帶的爵士樂手，也當過老師。",
+      "src": "https://en.wikipedia.org/wiki/Sting_(musician)",
+      "src2": "https://www.ebsco.com/research-starters/music/police-music-group/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "把雷鬼、爵士與龐克、新浪潮混成有鉤子的流行搖滾，以吉他、貝斯、鼓的三人編制演出。",
+      "src": "https://www.britannica.com/topic/the-Police",
+      "src2": "https://www.rockhall.com/inductees/police",
+      "from": "new"
+     },
+     {
+      "f": "早期編制精簡、走極簡路線，後來逐步走向層次較多的編曲。",
+      "src": "https://www.britannica.com/topic/the-Police",
+      "src2": "https://www.ebsco.com/research-starters/music/police-music-group/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2003 年入選搖滾名人堂。",
+      "src": "https://www.rockhall.com/inductees/police",
+      "src2": "https://www.britannica.com/topic/the-Police",
+      "from": "new"
+     },
+     {
+      "f": "全球累計賣出逾 7500 萬張唱片，共拿下六座葛萊美。",
+      "src": "https://en.wikipedia.org/wiki/The_Police",
+      "src2": "https://collider.com/the-police-groundbreaking-approach-set-them-apart-from-other-rock-bands/",
+      "from": "new"
+     },
+     {
+      "f": "1983 年的《Synchronicity》是樂團商業與評論的高峰；單曲〈Every Breath You Take〉在美國 Billboard Hot 100 蟬聯八週冠軍。",
+      "src": "https://www.britannica.com/topic/the-Police",
+      "src2": "https://www.ebsco.com/research-starters/music/police-music-group/",
+      "from": "new"
+     },
+     {
+      "f": "2007 年重聚後的 2007–08 世界巡演票房驚人：維基記為 2007 年全球票房最高的巡演（3.58 億美元），EBSCO 記為超過 3.5 億美元。",
+      "src": "https://en.wikipedia.org/wiki/The_Police",
+      "src2": "https://www.ebsco.com/research-starters/music/police-music-group/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2007 年樂團重聚，先在葛萊美獎典禮演出，接著展開 2007–08 世界巡演。",
+      "src": "https://www.britannica.com/topic/the-Police",
+      "src2": "https://www.ebsco.com/research-starters/music/police-music-group/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2003 年入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/police",
+    "src2": "https://www.britannica.com/topic/the-Police",
+    "from": "new"
+   },
+   {
+    "f": "1983 年《Synchronicity》與〈Every Breath You Take〉登上高峰，單曲在 Hot 100 蟬聯八週冠軍。",
+    "src": "https://www.britannica.com/topic/the-Police",
+    "src2": "https://www.ebsco.com/research-starters/music/police-music-group/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "樂團解散年：Britannica 寫 1984 年在巔峰解散、1986 年短暫重聚；EBSCO 寫 1986 年解散（來源不一致）；facts 不寫解散年。",
+   "Sting 與 Copeland 相識年：EBSCO 寫 1976 年，維基 Sting 條目寫 1977 年 1 月組團；facts 只寫 1977 年成軍（維基 The Police、Britannica、維基 Sting 三處一致），不寫相識年。",
+   "上線簡介《Zenyatta Mondatta》寫 1982 年葛萊美（最佳搖滾器樂演出、最佳團體搖滾演唱）；本位未核葛萊美年份與類別，見 notes。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫只有《Zenyatta Mondatta》專輯層級事實，出身與地位由補查而來。開頁讀到：維基 The Police、搖滾名人堂官網、Britannica、維基 Sting、EBSCO 研究入門、classical-music.com、Collider，另一次 WebSearch 只看摘要，共 8 次（WebSearch 1＋WebFetch 7）。無失敗請求。非獨立：兩源含維基者多為維基加一個獨立來源；EBSCO 為教育資料庫條目。維基 The Police 的六座葛萊美含『Best Rock Instrumental Performance』與『Best Pop Performance by a Duo or Group with Vocal』等類別，但逐項屆次未核，facts 只寫總數；Collider 亦寫六座。上線簡介《Zenyatta Mondatta》的葛萊美說法（最佳搖滾器樂演出、最佳團體搖滾演唱）本位未再查，維基 The Police 摘要另列 Best Pop Performance by a Duo or Group with Vocal，類別名稱不同但可能屬不同屆（請店主在本機覆核，不列 pubIssues）。單源未收進 facts：Sting 生於 1951-10-02 Wallsend、父母職業、St Cuthbert's Grammar School、1973 年取得教師資格並任教兩年、綽號 Sting 來自 Phoenix Jazzmen 團長（維基 Sting 單源；EBSCO 只說黑黃條紋毛衣像蜜蜂，與維基『像黃蜂』不一致）；Copeland 出生於維吉尼亞州 Alexandria、曾在 Curved Air（Britannica 單源）、父親為 CIA 外勤官與母親為考古學家、在國外長大（EBSCO 單源，搜尋摘要另有『外交官之子』說法，與 CIA 不一致）；Summers 比另兩人年長近十年（EBSCO 單源）；Rolling Stone 百大藝人第 70、VH1 第 40（維基單源）；《Synchronicity》美國賣逾八百萬張（維基單源）；《Synchronicity》1984 年拿三座葛萊美（EBSCO 單源）；《Synchronicity》2023 年入選國家錄音登記（Britannica 單源）；『Second British Invasion』領軍者、影響 No Doubt 與 Sublime（Collider 單源）；〈Roxanne〉英國第 12、美國第 32（EBSCO 單源）；classical-music.com 稱 1980–81 年『ascent to global hegemony』、Synchronicity 為定稿之作（單源、屬樂評形容詞不收）。名人堂官方（可具名單源）：官網介紹寫他們『put a reggae-infused twist on New Wave』、憑『musical mastery』立身、有別於其他後龐克樂團之處在於不怕成熟與突破界限，網址 https://www.rockhall.com/inductees/police。legacy 格缺後輩具名影響（僅 Collider 單源的 No Doubt、Sublime），已以成績與名人堂支撐。"
+ },
+ {
+  "key": "the replacements",
+  "name": "The Replacements",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "the Replacements 1979 年在明尼蘇達州明尼阿波里斯成軍：Bob Stinson 教年幼的弟弟 Tommy 彈貝斯，再找來鄰居 Chris Mars 打鼓，樂團最初叫 Dogbreath。",
+      "src": "https://en.wikipedia.org/wiki/The_Replacements_(band)",
+      "src2": "https://www.mnhs.org/mnopedia/search/index/group/replacements-band",
+      "from": "new"
+     },
+     {
+      "f": "Paul Westerberg 當時是清潔工，下班路上在地下室窗外聽見他們排練，後來成為主唱。",
+      "src": "https://www.mnhs.org/mnopedia/search/index/group/replacements-band",
+      "src2": "https://en.wikipedia.org/wiki/Paul_Westerberg",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "以龐克的強度為底，加進旋律鉤子、鄉村與藍調色彩和坦率的歌詞。",
+      "src": "https://www.britannica.com/topic/the-Replacements",
+      "src2": "https://www.mnhs.org/mnopedia/search/index/group/replacements-band",
+      "from": "new"
+     },
+     {
+      "f": "現場演出以混亂、失控出名：團員常帶著醉意上台，有時不唱自己的歌而改翻唱別人的歌。",
+      "src": "https://www.mnhs.org/mnopedia/search/index/group/replacements-band",
+      "src2": "https://en.wikipedia.org/wiki/The_Replacements_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "被視為從 1970 年代晚期龐克通往 1980 年代晚期另類搖滾的重要橋樑；維基稱他們憑《Let It Be》與《Tim》成為另類搖滾的主要開路者之一，MNopedia 稱他們是 1980 年代晚期至 1990 年代另類搖滾的奠基者。",
+      "src": "https://www.britannica.com/topic/the-Replacements",
+      "src2": "https://www.mnhs.org/mnopedia/search/index/group/replacements-band",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1991 年樂團解散。",
+      "src": "https://www.mnhs.org/mnopedia/search/index/group/replacements-band",
+      "src2": "https://en.wikipedia.org/wiki/The_Replacements_(band)",
+      "from": "new"
+     },
+     {
+      "f": "創團吉他手 Bob Stinson 1995 年過世。",
+      "src": "https://en.wikipedia.org/wiki/The_Replacements_(band)",
+      "src2": "https://www.britannica.com/topic/the-Replacements",
+      "from": "new"
+     },
+     {
+      "f": "2013 年由 Westerberg 與 Tommy Stinson 領軍的陣容重聚演出，是樂團 22 年來首場演出。",
+      "src": "https://en.wikipedia.org/wiki/The_Replacements_(band)",
+      "src2": "https://www.britannica.com/topic/the-Replacements",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1984 年《Let It Be》讓樂團被主流唱片公司注意到，並促成簽約 Sire Records。",
+    "src": "https://www.mnhs.org/mnopedia/search/index/group/replacements-band",
+    "src2": "https://en.wikipedia.org/wiki/Paul_Westerberg",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Westerberg 生年：Britannica 寫 1960-12-31，維基 Paul Westerberg 寫 1959-12-31（來源不一致）；facts 不寫生年。",
+   "解散年：Britannica 寫『after 1990』，維基與 MNopedia 與維基 Westerberg 寫 1991；採 1991（三處一致）。",
+   "Bob 與 Tommy Stinson 關係：維基寫兄弟、MNopedia 與 St. Louis Magazine 寫同母異父（half-brother）；facts 寫『弟弟』，寫作層可只寫兄弟。",
+   "重聚年份：維基 Westerberg 寫 2012–2014，維基 The Replacements 寫 2013 年 Riot Fest 首場、Britannica 寫 2013–15 年多場演出；facts 只寫 2013 年重聚演出。",
+   "簽約 Sire 年份：維基 Westerberg 寫 1985；本位 facts 未寫簽約年。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research、published 皆空，全靠補查。開頁讀到：維基 The Replacements（誤入消歧義頁，等於白花 1 次）、Britannica、維基 The Replacements (band)、MNopedia（明尼蘇達歷史學會）、維基 Paul Westerberg、St. Louis Magazine，另一次 WebSearch 只看摘要，共 7 次（含消歧義頁 1 次）。失敗 3 次：搖滾名人堂 replacements 頁 404、MinnPost 429 兩次。非獨立：維基 The Replacements (band) 與維基 Paul Westerberg 同站。單源未收進 facts：Goo Goo Dolls 的 Johnny Rzeznik 稱 Westerberg 是『an obvious influence』、Gaslight Anthem 的 Brian Fallon 說『without the Replacements, there would be no Gaslight Anthem』（維基單源，可在寫作層作為 notes 素材，但需第二源才能寫）；MNopedia 稱他們啟發了灣區龐克、西雅圖 grunge 與 alt-country 樂團（單源，搜尋摘要另有相近說法但來源不明）；與 R.E.M.、SST 旗下樂團一起開出獨立搖滾巡迴路線（St. Louis Magazine 單源、搜尋摘要同）；2014 年獲搖滾名人堂提名（維基單源，名人堂頁 404）；Christgau 給《Let It Be》A+（維基單源）；Rolling Stone 2023 年『200 大歌手』Westerberg 第 196（維基 Westerberg 單源）；Westerberg 也在明尼阿波里斯 First Avenue 外牆有兩顆星（維基單源）；經理人 Peter Jesperson 1980 年簽進 Twin/Tone（MNopedia 單源）；樂團另名 Impediments（維基 Westerberg 單源）；Bob Stinson 死因與生前遭遇（St. Louis Magazine 單源，涉及未成年受虐等敏感內容，不收，寫作層不宜使用）；Westerberg 生於明尼阿波里斯、當過參議員 David Durenberger 的清潔工（維基 Westerberg 單源）；Bob Stinson 1959–1995、Chris Mars、Tommy Stinson 1966 年生（Britannica 單源）。Bob Stinson 得年 35 歲只見維基（Britannica 只給 1959–1995），facts 只寫 1995 年過世。"
  }
 ]

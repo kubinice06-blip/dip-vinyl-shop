@@ -552,5 +552,112 @@
   "pubIssues": [],
   "status": "full",
   "notes": "事實庫為空（卡池 5 張、上線簡介 0 篇），三格全靠補查。本位 7 次：維基樂團條目、維基 Slipknot 專輯條目、WebSearch（一次呼叫內含三輪查詢：歷史／葛萊美／影響）、Britannica、Louder 葛萊美專文、維基 Iowa、PopMatters 專文；另有 8 次上限剩 1 次未用。失敗 3 次：Britannica 第一個網址（topic/Slipknot 是 slipknot 繩結條目）、Kerrang 403、Revolver 403。非獨立：facts 裡的維基三個條目為同站不同條目；Iowa 的名次與排名另有 Britannica 為第三源。單源未收：第 48 屆葛萊美（搜尋摘要）、Jordison 是否為創團成員（兩源不一致）、《The End, So Far》獻給 Jordison（Britannica）、Gray 過世結束 1999 年起的九人陣容（維基）；全球銷量 3000 萬張、美國逾 1200 萬張（維基）；九人陣容 1999 至 2010、面具與編號 0 至 8、面具自 2000 年起由 Screaming Mad George 訂製（維基）；Crahan 戴上小丑面具後不肯脫，才有面具傳統（Britannica）；Paul Gray 2010 年 5 月 24 日死因為嗎啡與 fentanyl 意外過量、Joey Jordison 2013 年 12 月 12 日遭解職、2021 年 7 月 26 日過世享年 46、Craig Jones 與 Jay Weinberg 2023 年離團（維基）；《Iowa》2001 年 8 月 28 日發行、Ross Robinson 製作、Metal Hammer 21 世紀百大專輯第 1 名、Kerrang 21 世紀 50 大專輯第 3 名、Loudwire 第 6 名、兩支單曲〈Left Behind〉（2002）與〈My Plague〉（2003）入圍葛萊美最佳金屬表演（維基）；Rolling Stone 評 Iowa『the sound of hell boiling over』（維基轉引）；PopMatters 引用的匿名樂手說法（『blueprint for every modern heavy and metal band』、『gateway to more traditional extreme metal styles』，單源、屬評論引述）；首張專輯 1999 年 6 月 29 日 Roadrunner、Ross Robinson 製作、Billboard 200 第 51 名、美國三白金（專輯條目單源）；《All Hope Is Gone》（2008）Billboard 專輯榜冠軍（維基）。葛萊美入圍次數：Louder 寫至少 5 次未得獎（2001 至 2005），搜尋摘要寫連續第 6 年入圍，兩者出入，facts 只寫『多次入圍』。卡池 5 張皆屬這支美國樂團，無同名混卡。"
+ },
+ {
+  "key": "soundgarden",
+  "name": "Soundgarden",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Soundgarden 1984 年在美國華盛頓州西雅圖成軍，創始成員是主唱兼鼓手 Chris Cornell、吉他手 Kim Thayil 與貝斯手 Hiro Yamamoto。",
+      "src": "https://en.wikipedia.org/wiki/Soundgarden",
+      "src2": "https://www.kiro7.com/news/local/chris-cornell-and-soundgarden-7-things-to-know/524148344/",
+      "from": "new"
+     },
+     {
+      "f": "團名取自西雅圖 Magnuson Park 附近的一件風管雕塑，作品名叫「A Sound Garden」。",
+      "src": "https://en.wikipedia.org/wiki/Soundgarden",
+      "src2": "https://www.kiro7.com/news/local/chris-cornell-and-soundgarden-7-things-to-know/524148344/",
+      "from": "new"
+     },
+     {
+      "f": "Chris Cornell 1964 年生於西雅圖，Soundgarden 成軍時他是鼓手兼主唱，與 Thayil、Yamamoto 是室友。",
+      "src": "https://en.wikipedia.org/wiki/Chris_Cornell",
+      "src2": "https://www.kiro7.com/news/local/chris-cornell-and-soundgarden-7-things-to-know/524148344/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Soundgarden 融合朋克、金屬與實驗的成分，靠降調吉他與不尋常的拍號建立聲音，並受 1970 年代重金屬影響。",
+      "src": "https://en.wikipedia.org/wiki/Soundgarden",
+      "src2": "https://www.rockhall.com/inductees/soundgarden",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Soundgarden 2025 年以表演者類別入選搖滾名人堂。",
+      "src": "https://en.wikipedia.org/wiki/Soundgarden",
+      "src2": "https://www.rockhall.com/inductees/soundgarden",
+      "from": "new"
+     },
+     {
+      "f": "樂團 1988 年簽給 A&M 唱片，被稱為第一支簽下主要大廠牌的 grunge 樂團。",
+      "src": "https://en.wikipedia.org/wiki/Soundgarden",
+      "src2": "https://www.britannica.com/topic/Soundgarden",
+      "from": "new"
+     },
+     {
+      "f": "Soundgarden 以〈Black Hole Sun〉與〈Spoonman〉兩首歌拿下葛萊美獎（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Soundgarden",
+      "src2": "https://www.britannica.com/topic/Soundgarden",
+      "from": "new"
+     },
+     {
+      "f": "Chris Cornell 2017 年在 Soundgarden 巡演期間過世。",
+      "src": "https://en.wikipedia.org/wiki/Soundgarden",
+      "src2": "https://www.britannica.com/topic/Soundgarden",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1996 年 Lollapalooza 巡演後團內矛盾激化，1997 年 2 月 9 日檀香山的最後一場演出上，貝斯手 Ben Shepherd 把貝斯摔了走下舞台；樂團在 1997 年 4 月 9 日宣布解散，Kim Thayil 說「從過去半年大家的態度就看得很明顯，有些不滿存在」。這是 Soundgarden 直到 2012 年重組作《King Animal》之前的最後一張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Down_on_the_Upside",
+      "from": "bank"
+     },
+     {
+      "f": "樂團 2010 年重組，2012 年發行《King Animal》。",
+      "src": "https://en.wikipedia.org/wiki/Soundgarden",
+      "src2": "https://www.britannica.com/topic/Soundgarden",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1988 年簽給 A&M 唱片，被稱為第一支簽下主要大廠牌的 grunge 樂團。",
+    "src": "https://en.wikipedia.org/wiki/Soundgarden",
+    "src2": "https://www.britannica.com/topic/Soundgarden",
+    "from": "new"
+   },
+   {
+    "f": "2025 年以表演者類別入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Soundgarden",
+    "src2": "https://www.rockhall.com/inductees/soundgarden",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫研究稿（c50b-d Down on the Upside）與上線簡介在 1997 年解散、〈Never the Machine Forever〉等處一致，無衝突；上線簡介寫『1997 年 4 月宣布解散』與研究稿『1997 年 4 月 9 日』相符。"
+  ],
+  "searches": 7,
+  "failedFetches": 3,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "事實庫只有 Down on the Upside 一篇研究稿與一篇上線簡介，無生平與地位，故三格補查、era 沿用一條事實庫。本位 7 次：維基 Soundgarden、rockhall 官網、Britannica Soundgarden、維基 Chris Cornell、Britannica Chris Cornell、WebSearch（Cornell 童年）、KIRO 7；失敗 3 次（NPR 503 兩次、Seattle Times 內容空白）；剩 1 次未用。名人堂官方（可具名單源）：搖滾名人堂官網 2025 年入選、表演者類別，官方介紹稱其『pioneering fusion of punk, metal and experimental edge』『kicked off the Seattle-based grunge movement』『breaking ground for Nirvana and Pearl Jam』『first of the genre's bands on a major label』；該頁抓取結果顯示頒獎人為 Jim Carrey、並引 Tom Morello 致詞『Soundgarden redeemed hard rock music』（引語被截斷、頒獎人與引語人是否同一場合待核，寫作層若用請只寫『搖滾名人堂稱…』，不用致詞）（https://www.rockhall.com/inductees/soundgarden）。『第一支簽主要廠牌的 grunge 樂團』：維基、Britannica（『the first of the major Seattle grunge acts』）、名人堂官方三處一致，未見明顯反例，但屬『第一』類宣稱，寫作層用『被稱為』。非獨立：維基 Soundgarden、Chris Cornell 與 Down on the Upside 為同站不同條目。單源未收：Fell on Black Days 為 6/4 拍、Limo Wreck 為 15/8 拍、Thayil 稱其聲音為『Sabbath-influenced punk』、1994 年《Superunknown》首週登上 Billboard 200 冠軍、全美賣出逾 1400 萬張與全球約 3000 萬張（2019）、葛萊美是 1995 年的最佳硬式搖滾表演（Black Hole Sun）與最佳金屬表演（Spoonman）（類別與年份只有維基，Britannica 只列歌名）；Cornell 本名 Christopher John Boyle、7 月 20 日生、父母離異後子女改用母姓 Cornell、12 歲接觸酒精與大麻、14 歲起因藥物經驗出現恐慌症與懼曠症、少年時期兩年幾乎不出門、母親買給他一面小鼓、9 至 11 歲迷上披頭四、成軍前在翻唱樂團 The Shemps、音域近四個八度、Rolling Stone 歌手榜第 9 名、2017 年 5 月 18 日在底特律過世死因為自縊（維基單源；搜尋摘要另見青少年吸毒與兩年懼曠的類似說法，未開頁）；Kim Thayil 為華盛頓大學畢業、Yamamoto 為西華盛頓大學校友、先簽 Sub Pop 再於 1988 年轉 A&M、首張 EP《Screaming Life》橘色黑膠、Eddie Vedder 說 Cornell 是他樂團之外最早認識的人之一並影響他的音樂與友誼觀（KIRO 單源）；Britannica 引 New York Times 形容 Cornell 嗓音『從靈魂嘶吼瞬間轉為粗礪低吼』（單源）。卡池 5 張皆為這支西雅圖樂團，無同名混卡。"
  }
 ]
