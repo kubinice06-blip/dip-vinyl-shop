@@ -339,5 +339,279 @@
   "failedFetches": 4,
   "status": "full",
   "notes": "事實庫 research 為空，三格全從零查。計次：維基（curl 純文字）、Rock Hall 名人堂頁（curl）、WebSearch（生平）、bluesguitarinsider.com（WebFetch 摘要，內容大量與維基重疊）、WebSearch（限 rollingstone 等站，查名次）共 5 次；失敗請求 4 次（Britannica 404、TSHA 驗證頁、encyclopedia.com 轉 404、Rolling Stone 頁轉 tollbit 付費牆）。第二來源偏弱：bluesguitarinsider 與維基重疊度高，origin 格的獨立第二來源（Britannica、TSHA）都取不到，主線審稿可視需要補。生日 9 月 3 日與 Gilmer 出生地的第二來源為搜尋結果摘要，bluesguitarinsider 只寫 1934 年 9 月，故 facts 的日期與地名主要依維基。單源、未收進 facts：母親與叔舅輩教琴中的叔舅實為維基所寫 uncle（家人關係未細分，已寫成叔舅輩）；青少年偷溜進南區夜總會聽 Muddy Waters、Howlin' Wolf、T-Bone Walker（維基）；Chess 多次試音被拒、理由是唱得太像 B.B. King（維基）；1960 年簽 Federal、1959 年結識 Sonny Thompson（維基）；他是最早組多種族伴奏樂團的藍調樂手之一（維基）；Clapton 說 1961 年〈I Love the Woman〉是他第一次聽到推弦電吉他主奏、Jerry Garcia 稱 Warlocks 時期的點子多半來自他的專輯（維基引語）；Cub Koda 點名影響 Clapton、Mick Taylor、Lonnie Mack、Stevie Ray Vaughan（維基）；1993 年 9 月 3 日德州州長 Ann Richards 宣布 Freddie King Day（維基）；1982 Blues Hall of Fame（維基）；〈Hide Away〉入選 Rock Hall 500 Songs That Shaped Rock（維基）；1960 年代英國藍調復興樂手中最大的吉他英雄（維基引 Michael Corcoran）。 另：〈Hide Away〉曲名指芝加哥西區俱樂部 Mel's Hide Away Lounge（維基，單源）。"
+ },
+ {
+  "key": "howlin' wolf",
+  "name": "Howlin' Wolf",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Chester Arthur Burnett，1910 年 6 月 10 日生於密西西比州 West Point 附近的 White Station，父母是 Leon「Dock」Burnett 與 Gertrude Jones，在他 1 歲時分居。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     },
+     {
+      "f": "「Wolf」這個綽號源自他童年欺負祖母養的小雞一事。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     },
+     {
+      "f": "他小時候與母親同在浸信會教會唱詩班，日後說自己的音樂天分得自母親；母親後來把他趕出家門，他投靠叔祖父，在農場做粗活長大，沒有受過正式教育。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     },
+     {
+      "f": "他 17 歲（1928 年）買下第一把吉他，1930 年前後認識三角洲最紅的藍調樂手 Charley Patton，由 Patton 教他吉他。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     },
+     {
+      "f": "他想模仿鄉村歌手 Jimmie Rodgers 的 yodel，卻唱成了低吼：「我學不來 yodel，就改成嚎叫（howlin'）。」",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     },
+     {
+      "f": "二戰服役後他落腳阿肯色州 West Memphis，1951 年被錄音室主人 Sam Phillips 注意，錄下〈Moanin' at Midnight〉後拿到 Chess 唱片合約，1950 年代初移居芝加哥。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     },
+     {
+      "f": "他 1976 年 1 月 10 日在伊利諾州 Hines 的退伍軍人醫院過世，得年 65 歲；晚年因腎病長期洗腎。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他站在把原音三角洲藍調轉成電氣芝加哥藍調的最前線，與 Muddy Waters 並稱這條轉變的推手。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     },
+     {
+      "f": "他以低沉沙啞、近乎咆哮的嗓音和魁梧的身形（身高 6 呎 3 吋）聞名，Rock Hall 稱他的歌聲無拘無束、舞台存在感大於真人；AllMusic 形容那是常被模仿的砂紙般低吼。",
+      "src": "https://www.rockhall.com/inductees/howlin-wolf",
+      "src2": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1991 年以「音樂影響力」類別入選 Rock and Roll Hall of Fame，由 Jon Landau 與 Robert Cray 頒授；名人堂稱他是受 Rolling Stones 與 Eric Clapton 崇敬的芝加哥藍調代表人物。",
+      "src": "https://www.rockhall.com/inductees/howlin-wolf",
+      "src2": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "from": "new"
+     },
+     {
+      "f": "1965 年 Rolling Stones 上美國電視節目《Shindig!》時，堅持要 Howlin' Wolf 同台；Wolf 演唱〈How Many More Years〉，Stones 坐在他腳邊，這是他第一次上全國電視。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.openculture.com/2024/07/the-rolling-stones-introduce-bluesman-howlin-wolf-on-us-tv-1965.html",
+      "from": "new"
+     },
+     {
+      "f": "他 1980 年入選 Blues Foundation 名人堂。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1951 年〈Moanin' at Midnight〉是他的第一張唱片，為他帶來 Chess 的合約。",
+      "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+      "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1980 年入選 Blues Foundation 名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+    "src2": "https://www.britannica.com/biography/Howlin-Wolf",
+    "from": "new"
+   },
+   {
+    "f": "1991 年入選 Rock and Roll Hall of Fame。",
+    "src": "https://www.rockhall.com/inductees/howlin-wolf",
+    "src2": "https://en.wikipedia.org/wiki/Howlin%27_Wolf",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "移居芝加哥的年份：維基寫 1952 年底，Britannica 摘要寫約 1953 年，facts 只寫「1950 年代初」。",
+   "死因：維基寫他因腎臟手術住院、三天前才發現腦部腫瘤，死於腫瘤、心臟衰竭與腎病併發；Britannica 摘要寫在腦瘤手術中過世。兩源不一致，facts 只寫日期、地點、年齡與洗腎。",
+   "生前最後一張錄音室專輯與上線簡介一致：The Back Door Wolf 為 1973 年，簡介寫「三年後過世」，與 1976 年相符。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全從零查。計次：維基（curl 純文字）、Rock Hall 名人堂頁（curl）、Britannica（WebFetch 摘要）、WebSearch（Shindig! 事件，Open Culture 為第二來源，內容取自搜尋摘要）共 4 次。單源、未收進 facts：Hubert Sumlin 加入後聲音由 Willie Johnson 時期的粗糲失真轉為較收斂的稜角式吉他，並採用芝加哥藍調的反拍（維基）；Sam Phillips 稱他「唱得像用靈魂在唱」（維基）；Wolf 準時付樂手薪水、連失業保險與社安都付（維基）；他因與 Muddy Waters 的長年對手關係，Willie Dixon 的歌常被用心理戰術交給他（維基）；1964 年隨 American Folk Blues Festival 赴歐、Rolling Stones 翻唱〈Little Red Rooster〉登英國單曲榜冠軍（維基）；1975 年 11 月最後一場演出與 B.B. King 同台（維基）；Britannica 列出受影響者包括 Rolling Stones、Clapton、Hendrix、Tom Waits、Captain Beefheart、Led Zeppelin、the Doors（Britannica 單源）；〈Smokestack Lightning〉入選 Grammy Hall of Fame（1999，維基）與國家錄音登記表（2009，Britannica），兩源各說一項；Rolling Stone 2011 百大藝人第 54 名、2023 二百大歌手第 59 名（維基）；Rock Hall 500 Songs That Shaped Rock and Roll 列入四首（維基）；生前曾因法律問題入獄與否有爭議（維基寫 either fled or jail）。"
+ },
+ {
+  "key": "tinariwen",
+  "name": "Tinariwen",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tinariwen 是圖瓦雷克人（Tuareg，撒哈拉的游牧民族）組成的樂手集體，許多成員在叛亂與流亡中長大；創辦者 Ibrahim Ag Alhabib 4 歲時，父親在 1963 年馬利的圖瓦雷克叛亂中被殺，全家往北流亡。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "Ag Alhabib 童年在阿爾及利亞一帶流亡，靠現成的材料自學並自製吉他。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "樂團在 1979 年前後成形於阿爾及利亞南部的 Tamanrasset，成員是流亡的年輕圖瓦雷克人。",
+      "src": "https://www.britannica.com/topic/Tinariwen",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "1980 年代初，利比亞的格達費招募年輕的圖瓦雷克人接受軍事訓練，成員入營，在營裡認識更多圖瓦雷克樂手，寫下關於圖瓦雷克人處境與流離的歌。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.britannica.com/topic/Tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "他們錄的自製卡帶在撒哈拉一帶廣泛流傳；當時塔馬謝克語的出版與廣播受到禁止，走私流通的 Tinariwen 卡帶成為圖瓦雷克人之間傳遞訊息的重要媒介。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/tinariwen",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的音樂以吉他為主導，圖瓦雷克語稱這種風格為 assouf（情感上近似藍調），常被外界稱為「沙漠藍調」（desert blues）。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "他們把圖瓦雷克民謠傳統與 Ali Farka Touré 的馬利吉他、以及 Jimi Hendrix、Santana 等西方搖滾揉合在一起，用電吉他與原音吉他打造出自己的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.britannica.com/topic/Tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "曲子以催眠般的吉他與反覆節奏承載抗議、愛情與希望的歌詞。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/tinariwen",
+      "src2": "https://www.abc.net.au/news/2026-06-14/tinariwen-interview-tuareg-hoggar-west-africa-war-desert-blues/106782708",
+      "from": "new"
+     },
+     {
+      "f": "他們早年在撒哈拉的聚會與婚禮上演出，後來成為整個撒哈拉婚禮與慶典的常客。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.abc.net.au/news/2026-06-14/tinariwen-interview-tuareg-hoggar-west-africa-war-desert-blues/106782708",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1998 年他們與法國世界音樂團體 Lo'Jo 結識，2001 年在馬利首屆 Festival au Désert 演出，由此開始被撒哈拉以外的聽眾注意。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.britannica.com/topic/Tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "2011 年的《Tassili》獲得第 54 屆葛萊美獎最佳世界音樂專輯獎（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.britannica.com/topic/Tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "Robert Plant 等搖滾樂手公開讚賞他們的音樂。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "後來的圖瓦雷克樂手把他們視為奠基者，Mdou Moctar、Bombino 等塔馬謝克語樂手如今在世界各地知名。",
+      "src": "https://www.abc.net.au/news/2026-06-14/tinariwen-interview-tuareg-hoggar-west-africa-war-desert-blues/106782708",
+      "src2": "https://en.wikipedia.org/wiki/Tinariwen",
+      "from": "new"
+     },
+     {
+      "f": "2012 年伊斯蘭武裝團體 Ansar Dine 占領馬利北部期間，世俗音樂遭到全面禁止，Tinariwen 的家鄉因此無法演出；此後成員多次被迫離開家鄉。",
+      "src": "https://www.abc.net.au/news/2026-06-14/tinariwen-interview-tuareg-hoggar-west-africa-war-desert-blues/106782708",
+      "src2": "https://en.wikipedia.org/wiki/Tinariwen",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《The Radio Tisdas Sessions》是他們第一張在北非以外發行的錄音，錄於馬利基達爾當地唯一的塔馬謝克語電台 Radio Tisdas。",
+      "src": "https://en.wikipedia.org/wiki/Tinariwen",
+      "src2": "https://www.britannica.com/topic/Tinariwen",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1979 年前後樂團在流亡的圖瓦雷克青年中成形。",
+    "src": "https://www.britannica.com/topic/Tinariwen",
+    "src2": "https://www.abc.net.au/news/2026-06-14/tinariwen-interview-tuareg-hoggar-west-africa-war-desert-blues/106782708",
+    "from": "new"
+   },
+   {
+    "f": "《Tassili》獲第 54 屆葛萊美獎最佳世界音樂專輯獎。",
+    "src": "https://en.wikipedia.org/wiki/Tinariwen",
+    "src2": "https://www.britannica.com/topic/Tinariwen",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《The Radio Tisdas Sessions》的年份：維基寫 2001，Britannica 摘要寫 2002，encyclopedia.com 摘要寫 2000；三源不一致，facts 不寫年份。上線簡介與卡池皆寫 2001，與維基一致。",
+   "利比亞軍訓時間：維基寫 1980 年格達費下令、9 個月訓練，Britannica 摘要寫 1980 年代初，facts 採「1980 年代初」。encyclopedia.com 摘要另把軍營與 1990 年代的第二次叛亂連在一起，與維基、Britannica 的時序不合，未採。"
+  ],
+  "pubIssues": [
+   {
+    "album": "The Radio Tisdas Sessions",
+    "claim": "2001 年由 Justin Adams 與 Lo'Jo 帶著器材進駐馬利基達爾的 Radio Tisdas 電台錄音",
+    "problem": "維基寫該片由 Justin Adams 與 Jean-Paul Romann 錄製；Lo'Jo 是 1998 年起與樂團結識、促成後續合作的法國團體，維基未寫 Lo'Jo 參與錄音。建議改為 Justin Adams 與 Jean-Paul Romann。另外發行年各源不同（見 conflicts），維基為 2001。",
+    "src": "https://en.wikipedia.org/wiki/Tinariwen"
+   }
+  ],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全從零查。介紹的是樂團本身。計次：維基（curl 純文字）、Britannica（WebFetch 摘要）、WebSearch（樂團史）、encyclopedia.com（WebFetch 摘要）、WebSearch（2012 音樂禁令與後輩）、ABC News 2026 訪談（WebFetch 摘要）共 6 次；失敗請求 1 次（tinariwen.com/about 403）。Britannica、encyclopedia.com、ABC 皆為模型摘要，措辭已依此保守寫。單源、未收進 facts：Ag Alhabib 4 歲親眼目睹父親被處決（維基，encyclopedia.com 只寫父親被殺）；1989 年離開利比亞、1990 年起義部分成員以叛軍參戰（含 Iyad Ag Ghaly）、1991 年 Tamanrasset 協議後全職音樂、1991 年在阿比讓錄卡帶《Kel Tinariwen》（維基）；1993 年 Manny Ansar 任經理（維基）；成員稱直到 2000 年代初出國前從未聽過美式藍調（維基）；Dire Straits、Led Zeppelin、Dylan 等盜錄卡帶流入撒哈拉（維基）；2005 BBC World Music 獎、2008 Praetorius 音樂獎（維基）；Tamikrest、Kel Assouf、Imarhan 等點名受其影響（維基，搜尋摘要另稱 Tamikrest 受其啟發，來源為 Tamikrest 維基頁）；2013 年 Abdallah Ag Lamida 被武裝分子劫持後獲釋、部分成員暫居美國西南部錄製《Emmaar》（維基，ABC 未提）；NPR 稱他們是「music's true rebels」（維基轉引）。ABC 訪談稱成員如今因馬利軍隊威脅逃到阿爾及利亞南部，屬現況，未收。 另：童年看西部片後用油桶、木棍與腳踏車煞車線自製吉他（維基）；團名 Kel Tinariwen 是旁人對他們的稱呼、意為「沙漠的人」，Tinariwen 是 ténéré（沙漠）的複數（維基）。"
  }
 ]
