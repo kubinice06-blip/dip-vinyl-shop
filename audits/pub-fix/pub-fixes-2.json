@@ -262,5 +262,402 @@
   "newDesc": "",
   "reason": "查到的來源一寫 6000、一寫 3000，無法定值，改為不帶具體數字的「數千張」。",
   "sources": []
+ },
+ {
+  "id": 89,
+  "artist": "Anouar Brahem",
+  "album": "Barzakh",
+  "action": "edit",
+  "find": "1981 年赴巴黎四年",
+  "replace": "赴巴黎約四年",
+  "newDesc": "",
+  "reason": "赴巴黎起年兩源不一（1981／1982），期間四年一致，刪去起年。",
+  "sources": [
+   "https://anouarbrahem.com/en/full-biography"
+  ]
+ },
+ {
+  "id": 90,
+  "artist": "Art Tatum",
+  "album": "God Is in the House",
+  "action": "edit",
+  "find": "「各位女士先生，我彈鋼琴，但今晚上帝在場」",
+  "replace": "「我只是彈鋼琴，但今晚上帝在場」",
+  "newDesc": "",
+  "reason": "讀到的版本只有「I only play the piano, but tonight God is in the house」，「各位女士先生」前綴無出處，刪去並補回「只是」。",
+  "sources": [
+   "https://www.newworldencyclopedia.org/entry/Art_Tatum"
+  ]
+ },
+ {
+  "id": 91,
+  "artist": "Fats Navarro",
+  "album": "The Fabulous Fats Navarro, Volume 1",
+  "action": "edit",
+  "find": "生前只發過 78 轉與一張 10 吋",
+  "replace": "生前的錄音只以 78 轉單曲發行",
+  "newDesc": "",
+  "reason": "同池的 10 吋《Fats Navarro Memorial Album》是他死後 1951 年才出，未查到生前另有 10 吋，刪去「一張 10 吋」。",
+  "sources": [
+   "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+  ]
+ },
+ {
+  "id": 92,
+  "artist": "Piero Umiliani",
+  "album": "Synthi Time",
+  "action": "edit",
+  "find": "1977 年進《The Muppet Show》",
+  "replace": "1976 年成為《The Muppet Show》的開場橋段",
+  "newDesc": "",
+  "reason": "該曲是《The Muppet Show》1976 年首播即用的開場橋段，1977 年是英國單曲榜年份，原句易誤讀。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Mah_N%C3%A0_Mah_N%C3%A0"
+  ]
+ },
+ {
+  "id": 93,
+  "artist": "Ray Bryant",
+  "album": "Alone with the Blues",
+  "action": "edit",
+  "find": "自幼在教會裡聽當牧師的母親彈琴",
+  "replace": "母親是牧師，他自幼在教會音樂裡長大",
+  "newDesc": "",
+  "reason": "來源只寫母親是牧師、他受教會音樂影響，沒有「聽母親彈琴」；改成來源支持的說法。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ray_Bryant"
+  ]
+ },
+ {
+  "id": 94,
+  "artist": "Sister Rosetta Tharpe",
+  "album": "Sister on Tour",
+  "action": "edit",
+  "find": "是首位真正暢銷的福音歌手",
+  "replace": "唱片也打進過世俗的 R&B 榜",
+  "newDesc": "",
+  "reason": "「首位真正暢銷」缺出處；改寫成來源支持、且不帶序數的跨界事實（〈Strange Things Happening Every Day〉進 R&B 榜）。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sister_Rosetta_Tharpe"
+  ]
+ },
+ {
+  "id": 95,
+  "artist": "Tal Farlow",
+  "album": "Tal Farlow Quartet",
+  "action": "edit",
+  "find": "他二十二歲才開始學吉他",
+  "replace": "他二十出頭才開始學吉他",
+  "newDesc": "",
+  "reason": "各源年齡不一（21／22 歲），改成不帶具體數字的「二十出頭」。",
+  "sources": [
+   "https://www.bluenote.com/artist/tal-farlow/"
+  ]
+ },
+ {
+  "id": 96,
+  "artist": "The Contemporary Jazz Quintet",
+  "album": "Multidirection",
+  "action": "edit",
+  "find": "Kenny Cox 與 Danny Spencer",
+  "replace": "Kenny Cox、Ron Brooks 與 Danny Spencer",
+  "newDesc": "",
+  "reason": "本作錄音陣容含貝斯手 Ron Brooks（Discogs、Third Man 與專輯條目一致），原句稱五人卻只列四人。",
+  "sources": [
+   "https://www.discogs.com/release/5049578-Kenny-Cox-And-The-Contemporary-Jazz-Quintet-Multidirection",
+   "https://thirdmanrecords.com/products/multidirection"
+  ]
+ },
+ {
+  "id": 97,
+  "artist": "Ziad Rahbani",
+  "album": "Houdou Nisbi",
+  "action": "edit",
+  "find": "十七歲便替母親寫下",
+  "replace": "十幾歲便替母親寫下",
+  "newDesc": "",
+  "reason": "兩源對他十七歲的成名作說法不一（〈Saalouni El Nass〉或舞台劇），保留曲目、改成不帶確切年齡。",
+  "sources": [
+   "https://www.aljazeera.com/news/2025/7/26/ziad-rahbani-pioneering-lebanese-musician-and-composer-dies-at-69"
+  ]
+ },
+ {
+  "id": 98,
+  "artist": "日野皓正クインテット",
+  "album": "Hino at Berlin Jazz Festival '71",
+  "action": "edit",
+  "find": "1964 年他是隨別人的團去柏林的小號手；七年後",
+  "replace": "1965 年他是隨別人的團去柏林的小號手；六年後",
+  "newDesc": "",
+  "reason": "白木秀雄五重奏（日野任小號）登柏林爵士節是 1965 年 11 月，MPS、Discogs 與多方一致；「七年後」隨之改為六年後。",
+  "sources": [
+   "https://www.mps-music.com/releases/sakura-sakura/",
+   "https://www.discogs.com/release/984922-Hideo-Shiraki-Quintet-3-Koto-Girls-Sakura-Sakura",
+   "https://en.wikipedia.org/wiki/Hideo_Shiraki"
+  ]
+ },
+ {
+  "id": 99,
+  "artist": "杉本喜代志",
+  "album": "One More",
+  "action": "edit",
+  "find": "1981 年進棚時",
+  "replace": "1980 年進棚時",
+  "newDesc": "",
+  "reason": "日本コロムビア官方與 CDJournal 皆記 1980 年 7 至 11 月錄音，1981 年 1 月才發行。",
+  "sources": [
+   "https://artist.cdjournal.com/a/sugimoto-kiyoshi/115538",
+   "https://columbia.jp/artist-info/sugimotokiyoshi/discography/COCB-54064.html"
+  ]
+ },
+ {
+  "id": 100,
+  "artist": "菅野よう子、シートベルツ",
+  "album": "COWBOY BEBOP",
+  "action": "edit",
+  "find": "本多雅人吹中音薩克斯風",
+  "replace": "本田雅人吹中音薩克斯風",
+  "newDesc": "",
+  "reason": "〈Tank!〉的中音薩克斯風獨奏是本田雅人（Masato Honda），姓字「本多」為誤植；樂器中音無誤。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Music_of_Cowboy_Bebop"
+  ]
+ },
+ {
+  "id": 101,
+  "artist": "鈴木宏昌",
+  "album": "Skip Step Colgen",
+  "action": "edit",
+  "find": "1977 年它先成了盤名，後來成了樂團的名字。",
+  "replace": "它先成了樂團的名字，1977 年又成了盤名。",
+  "newDesc": "",
+  "reason": "コルゲン・バンド 1976 年成立、1979 年改名 The Players，團名早於 1977 年的盤名，先後對調。",
+  "sources": [
+   "https://kotobank.jp/word/%E9%88%B4%E6%9C%A8%20%E5%AE%8F%E6%98%8C-1647546"
+  ]
+ },
+ {
+  "id": 102,
+  "artist": "Fatback",
+  "album": "Fatback XII",
+  "action": "edit",
+  "find": "該曲一般被視為史上第一張商業發行的嘻哈唱片，比〈Rapper's Delight〉早約一週上市",
+  "replace": "該曲常被視為最早商業發行的嘻哈唱片之一，發行時間略早於〈Rapper's Delight〉",
+  "newDesc": "",
+  "reason": "「史上第一」與〈Rapper's Delight〉說法互相牴觸，發行先後差距各源不一；改為「最早之一」與「略早於」。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/King_Tim_III_(Personality_Jock)"
+  ]
+ },
+ {
+  "id": 103,
+  "artist": "Fatback",
+  "album": "Fatback XII",
+  "action": "edit",
+  "find": "Fatback 一九七九年八月在 Spring Records",
+  "replace": "Fatback 1979 年在 Spring Records",
+  "newDesc": "",
+  "reason": "專輯發行月份各源不一（3 月／單曲 7 月），刪去月份只留年份，並依規則改阿拉伯數字。",
+  "sources": [
+   "https://djrobblog.com/archives/9177"
+  ]
+ },
+ {
+  "id": 104,
+  "artist": "Minnie Riperton",
+  "album": "Adventures in Paradise",
+  "action": "edit",
+  "find": "Larry Carlton 掛編曲",
+  "replace": "Larry Carlton 負責吉他",
+  "newDesc": "",
+  "reason": "Carlton 只負責吉他（與吉他編曲），非整張編曲；改成不誇大的說法。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Adventures_in_Paradise_(Minnie_Riperton_album)"
+  ]
+ },
+ {
+  "id": 105,
+  "artist": "Sylvester",
+  "album": "Step II",
+  "action": "edit",
+  "find": "在 Fantasy 的第四張",
+  "replace": "在 Fantasy 的第二張",
+  "newDesc": "",
+  "reason": "Fantasy 時期依序為《Sylvester》（1977）、《Step II》（1978），前兩張 Hot Band 專輯是 Blue Thumb 發行；第四張是全生涯算法。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sylvester_(singer)"
+  ]
+ },
+ {
+  "id": 106,
+  "artist": "Sylvester",
+  "album": "Stars",
+  "action": "edit",
+  "find": "在 Fantasy 的第五張",
+  "replace": "在 Fantasy 的第三張",
+  "newDesc": "",
+  "reason": "同上算法，《Stars》是 Fantasy 第三張。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Sylvester_(singer)"
+  ]
+ },
+ {
+  "id": 107,
+  "artist": "The S.O.S. Band",
+  "album": "On the Rise",
+  "action": "edit",
+  "find": "把製作權交給明尼阿波利斯來的 Jimmy Jam 與 Terry Lewis",
+  "replace": "把部分曲目交給明尼阿波利斯來的 Jimmy Jam 與 Terry Lewis 製作",
+  "newDesc": "",
+  "reason": "兩人只製作約一半曲目，其餘由 Gene Dozier 與樂團製作。",
+  "sources": [
+   "https://albumism.com/features/the-sos-band-sands-of-time-album-anniversary"
+  ]
+ },
+ {
+  "id": 108,
+  "artist": "Bee Gees",
+  "album": "Spirits Having Flown",
+  "action": "edit",
+  "find": "在一年內累積六首連續冠軍",
+  "replace": "在約一年半內累積六首連續冠軍",
+  "newDesc": "",
+  "reason": "六首連冠跨 1977 年底至 1979 年中約 18 個月；追平 Crosby、Presley 與 Beatles 的說法有出處，保留。",
+  "sources": [
+   "https://stereogum.com/2072599/the-number-ones-bee-gees-love-you-inside-out/columns/the-number-ones",
+   "https://www.beegees.com/making-history-consecutive-chart-topping-singles/",
+   "https://en.wikipedia.org/wiki/Bee_Gees"
+  ]
+ },
+ {
+  "id": 109,
+  "artist": "Billy Paul",
+  "album": "War of the Gods",
+  "action": "edit",
+  "find": ",專輯登上靈魂榜第 12 名",
+  "replace": "",
+  "newDesc": "",
+  "reason": "專輯靈魂榜第 12 名查無來源（條目只載單曲名次），刪去該細節。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/War_of_the_Gods_(album)"
+  ]
+ },
+ {
+  "id": 110,
+  "artist": "Chuck Brown & the Soul Searchers",
+  "album": "Bustin' Loose",
+  "action": "edit",
+  "find": "華盛頓國民隊則拿它當全壘打進場曲",
+  "replace": "華盛頓國民隊也曾拿它當官方全壘打歌",
+  "newDesc": "",
+  "reason": "國民隊 2015 年已把官方全壘打歌換掉，現在式不妥，改為「曾」。",
+  "sources": [
+   "https://wjla.com/sports/content/nationals-ditch-chuck-brown-s-bustin-loose-as-official-post-homerun-song-113363"
+  ]
+ },
+ {
+  "id": 111,
+  "artist": "Chuck Brown & the Soul Searchers",
+  "album": "We the People",
+  "action": "edit",
+  "find": "本盤錄於那之前，仍靠近同期的靈魂樂與放克。",
+  "replace": "本盤錄於那之前，不過以打擊為重心的做法已在這裡露出雛形。",
+  "newDesc": "",
+  "reason": "NEA 視 1971 年的〈We the People〉為 go-go 起點，與「go-go 之前、仍屬靈魂放克」的定位相反；改成兩說都相容的中性寫法。",
+  "sources": [
+   "https://www.arts.gov/honors/heritage/chuck-brown"
+  ]
+ },
+ {
+  "id": 112,
+  "artist": "Chuck Brown & the Soul Searchers",
+  "album": "Bustin' Loose",
+  "action": "edit",
+  "find": "1979 年 Source Records 發行的這張專輯",
+  "replace": "Source Records 發行的這張專輯",
+  "newDesc": "",
+  "reason": "專輯年份各源不一（NEA 與 Discogs 部分版本 1978、他處 1979），刪去年份。",
+  "sources": [
+   "https://www.discogs.com/master/180793-Chuck-Brown-And-The-Soul-Searchers-Bustin-Loose"
+  ]
+ },
+ {
+  "id": 113,
+  "artist": "Ebo Taylor",
+  "album": "Appia Kwa Bridge",
+  "action": "edit",
+  "find": "錄製時他已 77 歲",
+  "replace": "發行時他已 76 歲",
+  "newDesc": "",
+  "reason": "他生於 1936 年 1 月 6 日，2012 年發行時 76 歲，錄製時更不可能已 77 歲。",
+  "sources": [
+   "https://www.okayafrica.com/ebo-taylor-ghanaian-highlife-legend-dies-at-90/1422853"
+  ]
+ },
+ {
+  "id": 114,
+  "artist": "First Choice",
+  "album": "Armed and Extremely Dangerous",
+  "action": "edit",
+  "find": "樂團日後轉入 Salsoul 旗下以〈Doctor Love〉等曲成為舞曲名團",
+  "replace": "樂團日後在 Gold Mind 廠牌以〈Doctor Love〉等曲成為舞曲名團",
+  "newDesc": "",
+  "reason": "〈Doctor Love〉出自 1977 年 Gold Mind 的《Delusions》，不是 Salsoul 時期。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Delusions_(First_Choice_album)"
+  ]
+ },
+ {
+  "id": 115,
+  "artist": "Joe Bataan",
+  "album": "Riot!",
+  "action": "edit",
+  "find": "Joe Bataan 本名 Bataan Nitollano，1942 年",
+  "replace": "Joe Bataan 1942 年",
+  "newDesc": "",
+  "reason": "本名各源不一（Bataan／Peter Nitollano），核不出定論，刪去本名。",
+  "sources": [
+   "https://www.laphil.com/musicdb/artists/9963/joe-bataan"
+  ]
+ },
+ {
+  "id": 116,
+  "artist": "Lou Rawls",
+  "album": "Lou Rawls Live!",
+  "action": "rewrite",
+  "find": "",
+  "replace": "",
+  "newDesc": "Lou Rawls 1976 年轉投 Gamble 與 Huff 的費城國際，隨即以〈You'll Never Find Another Love Like Mine〉翻紅。這套雙 LP 是那段時期的舞台紀錄：1977 年 11 月在紐約 Mark Hellinger Theatre 錄下，帶回費城的 Sigma Sound 混音，1978 年由費城國際發行。那首招牌曲在台上接著〈A Lovely Way to Spend an Evening〉唱成一段組曲。",
+  "reason": "原文是配對退件說明而非簡介；依卡池年份 1978 與所繫結的 MusicBrainz 條目改寫為費城國際版雙 LP 現場盤。卡名帶驚嘆號的《Lou Rawls Live!》屬 1966 年 Capitol 版，本機宜順手核對卡名與封面。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lou_Rawls",
+   "https://www.discogs.com/release/1976149-Lou-Rawls-Live"
+  ]
+ },
+ {
+  "id": 117,
+  "artist": "The Clark Sisters",
+  "album": "Unworthy",
+  "action": "edit",
+  "find": "依英文維基，1973 年 Clark 夫婦離婚之後，母親才把幾個女兒正式組成一個團。",
+  "replace": "這個姊妹團 1960 年代就開始登台，1973 年才正式成團並發行首張專輯。",
+  "newDesc": "",
+  "reason": "成軍時間兩源口徑不一（1960 年代中期／1973 年正式成立），改成兩說相容的寫法，刪去離婚因果與正文來源平台字樣。",
+  "sources": [
+   "https://www.gospel900.com/2024/01/12/the-clark-sisters-have-been-honored-with-a-lifetime-achievement-award-for-the-grammys/"
+  ]
+ },
+ {
+  "id": 118,
+  "artist": "Willie Hutch",
+  "album": "Fully Exposed",
+  "action": "edit",
+  "find": "全片幾乎自寫自編自彈",
+  "replace": "他自己掌編曲、彈吉他",
+  "newDesc": "",
+  "reason": "鋼琴、鼓、康加另有樂手且收有翻唱，「自寫自編自彈」過度，「全片」也是禁用語；改成條目所載的編曲與吉他。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fully_Exposed"
+  ]
  }
 ]
