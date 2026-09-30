@@ -830,5 +830,196 @@
     "status": "full",
     "pubIssues": [],
     "notes": "補查 8 次：維基樂團條目（WebFetch）、WebSearch（生平與名人堂）、維基 Shotgun 單曲條目、Michigan Rock and Roll Legends 頁、uDiscoverMusic、WebSearch（Shotgun 錄音故事與 Dave Marsh）、Motown Junkies、Motown Museum；皆成功、無失敗請求。事實庫 research 為空，但有三張專輯簡介，三格從零查。以下單源未進 facts：（0）早期樂團 Jumping Jacks（Michigan 頁與搜尋摘要，後者未開頁，搜尋摘要另寫 16 歲組團、與 Michigan 頁『高中後』不一致，故不進 facts）。（1）維基：Walker 的風格承襲 Louis Jordan、Earl Bostic、Illinois Jacquet 等 jump blues 與早期 R&B 樂手；1981 年與 Foreigner 合作專輯《4》；三度葛萊美提名；1995 年入選 Rhythm and Blues Foundation；1961 年 Johnny Bristol 向 Harvey Fuqua 推薦樂團。（2）維基單曲條目：全曲停在單一和弦（上線簡介同，單源）；Jimi Hendrix 1965 年 7 月首次電視演出時唱奏此曲；錄音 1964 年在 Hitsville U.S.A.（Studio A）、1965 年 2 月 13 日發行；加拿大第 26 名。（3）uDiscover 單源：槍聲其實是 Funk Brothers 吉他手 Eddie Willis 不小心踢到擴大機、被大量回音壓縮的聲音，原專輯沒有，四年後《Greatest Hits》才蓋上真槍聲效（此說法只見一站，未收）；〈Shotgun〉入圍葛萊美最佳 R&B 錄音、輸給 James Brown〈Papa's Got a Brand New Bag〉；Vanilla Fudge 1969 年翻唱登上 Hot 100 第 68 名；（4）Motown Junkies 單源：Gordy 歡迎 Walker 進 Hitsville，看重他能替廠牌補強 R&B 底氣；Walker 1995 年過世後墓碑刻著『JUNIOR (SHOT GUN) WALKER』；James Jamerson 的貝斯、Benny Benjamin 可能是鼓手、Vic Thomas 風琴。（5）Michigan 頁單源：Walker 在 El Grotto 站在吧台上、躺著或跪著吹薩克斯風、走鴨步；樂團成員 Willie Woods（吉他）、Victor Thomas（風琴）、Tony Washington（鼓）；藉由跟著爵士與 R&B 唱片練習練出招牌高音 G；『inspiration to legions of sax players』『尚未入選搖滾名人堂』（頁面文字，搜尋摘要同句）；一生 26 首 R&B 熱門、21 首進 Hot 100。（6）Motown Museum 單源：Walker 1979 年單飛、1983 年重組；〈Road Runner〉R&B 榜第 4、流行榜前 20（上線簡介同意流行前二十）；Walker 自述 Gordy 原本說之後找人重錄，他就『hollered the song』。（7）上線簡介《Road Runner》引用 Dave Marsh 稱 Walker 為『Motown 天堂裡唯一的 gutbucket 明星』，並把〈(I'm a) Road Runner〉選入其千大單曲書；本層搜尋一次找不到（搜尋詞未命中），未能查證，不列 pubIssues，請主線在本機用 Dave Marsh 《The Heart of Rock & Soul》確認。名冊三張卡皆為同一團，無同名混卡。"
+  },
+  {
+    "key": "kleeer",
+    "name": "Kleeer",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Kleeer 是紐約的 funk 樂團，1970 年代初以替別的團與歌手伴奏的班底起家，之後幾度改名，才成為 Kleeer。",
+            "src": "https://en.wikipedia.org/wiki/Kleeer",
+            "src2": "https://equipboard.com/band/kleer",
+            "from": "new"
+          },
+          {
+            "f": "核心成員是 Woody Cunningham（鼓、主唱，樂團的創辦人與編曲）、Paul Crutchfield（打擊樂）、Norman Durham（貝斯）與 Richard Lee（吉他）。",
+            "src": "https://en.wikipedia.org/wiki/Kleeer",
+            "src2": "https://equipboard.com/band/kleer",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的樂風以 funk 為底，混合 disco 與靈魂樂。",
+            "src": "https://equipboard.com/band/kleer",
+            "src2": "https://en.wikipedia.org/wiki/Winners_(Kleeer_album)",
+            "from": "new"
+          },
+          {
+            "f": "後期樂風以 vocoder 與合成器為主；1984 年的《Intimate Connection》就有 vocoder 出現。",
+            "src": "https://en.wikipedia.org/wiki/Kleeer",
+            "src2": "https://en.wikipedia.org/wiki/Intimate_Connection",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1979 年，他們在 Atlantic 發行專輯，當年就出了《I Love to Dance》與《Winners》兩張。",
+            "src": "https://equipboard.com/band/kleer",
+            "src2": "https://en.wikipedia.org/wiki/Winners_(Kleeer_album)",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "改名為 Kleeer 的年份：維基樂團條目寫 1978 年，Equipboard 寫 1979 年，兩源不一致，facts 不寫年份。",
+      "專輯張數：維基條目寫 1979 至 1985 年七張，Equipboard 寫八張，facts 不寫張數。",
+      "維基《Winners》寫《Winners》為 1979 年第二張錄音室專輯，維基《Taste the Music》寫該張為 1982 年第五張、《Intimate Connection》為第六張；名冊卡池的《Get Ready》標 1982 年，本層未能查證該專輯，也不確定它與《Taste the Music》的關係。"
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "thin",
+    "pubIssues": [],
+    "notes": "補查 8 次：維基樂團條目（WebFetch）、WebSearch（樂團概況與採樣）、維基《Intimate Connection》、Equipboard、維基《Taste the Music》、WebSearch（Keep Your Body Workin' 採樣）、維基《Keep Your Body Working》、維基《Winners》；失敗 3 次不計入（SoulTracks 403、WhoSampled 403、AllMusic 403）。事實庫 research 與 published 皆空，三格從零查。legacy 格查不到兩源支持的共識評價，標 none；下列皆單源未進 facts：（1）維基單曲條目《Keep Your Body Working》：〈Keeep Your Body Workin'〉是團員 Norman Durham 寫的，1979 年 Club Play 榜第 54 名；2007 年 Tony Moran 與 Martha Wash 重製版 2007 年 12 月 22 日登上 Billboard Dance Club Songs 榜首、蟬聯兩週、2008 年度榜第 22 名，兩版共用副歌（此條可作 legacy 依據，但只有維基單源；WhoSampled 的搜尋結果標題另顯示 Tony Moran、Mike 303、Johnny D & Nicky P、Eddie Matos 等曾採樣此曲，頁面 403 未開，未收）。（2）搜尋摘要（Kleeer 維基風格文字，未再開頁）：『被 2Pac、Snoop Dogg、Lil Jon 採樣』、1979 年〈Keeep Your Body Workin'〉收進 Atlantic 選輯後，DJ 反應熱烈才換得合約、1976 年以 Universal Robot Band 之名與地下 disco 製作人 Patrick Adams 和 Greg Carmichael 合作；維基樂團條目確有 Universal Robot Band 與 Patrick Adams、Greg Carmichael、Leroy Burgess，但未提 DJ 反應與 Atlantic 簽約經過，故『DJ 反應換來合約』只見搜尋摘要，不收。（3）維基樂團條目單源：1972 年以 The Jam Band 成軍、1975 年 Pipeline、1976 至 1978 年 Universal Robot Band 的年份序列；The System 的 Mic Murphy 曾當他們的巡演經理；『after 1978, the band decided to make all their music themselves』；《License to Dream》1981、《Taste the Music》1983（與《Taste the Music》條目寫 1982 不一致）、《Intimate Connection》1984。（4）《Winners》條目單源：《Winners》1979 年 Power Station 錄音，Billboard 200 第 140 名、Top Soul Albums 第 24 名；單曲〈Winners〉R&B 榜第 23 名、舞曲榜第 37 名。（5）《Taste the Music》條目單源：Billboard Top Soul Albums 第 31 名；單曲〈Taste the Music〉R&B 榜第 55 名、舞曲榜第 31 名；Luther Vandross 與 Jon Faddis 客席。（6）《Intimate Connection》條目單源：1984 年 4 月 14 日 Atlantic 發行，Eumir Deodato 製作並彈鍵盤與 vocoder，Billboard Soul Albums 第 49 名。（7）Equipboard 單源：風格描述『funk、disco 與 quiet storm』。名冊三張卡（I Love to Dance 1979、Get Ready 1982、Intimate Connection 1984）；『Get Ready』與維基專輯序列對不上（1982 年那張是《Taste the Music》？），請主線核對是否卡池標題有誤，本層未查證，不視為同名混卡。"
+  },
+  {
+    "key": "lionel richie",
+    "name": "Lionel Richie",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Lionel Richie 1949 年 6 月 20 日生於阿拉巴馬州 Tuskegee，在 Tuskegee 校園一帶長大。",
+            "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+            "src2": "https://encyclopediaofalabama.org/article/lionel-richie/",
+            "from": "new"
+          },
+          {
+            "f": "他的祖母彈鋼琴，是他最早的音樂啟蒙，也督促他練琴、參加校園音樂活動。",
+            "src": "https://www.britannica.com/biography/Lionel-Richie",
+            "src2": "https://encyclopediaofalabama.org/article/lionel-richie/",
+            "from": "new"
+          },
+          {
+            "f": "他的第一支薩克斯風是叔叔送的，這位叔叔是爵士圈的人。",
+            "src": "https://www.britannica.com/biography/Lionel-Richie",
+            "src2": "https://encyclopediaofalabama.org/article/lionel-richie/",
+            "from": "new"
+          },
+          {
+            "f": "他在 Tuskegee Institute 就讀時加入校園樂團 Mystics，這個團後來併成 Commodores，時間是 1968 年。",
+            "src": "https://www.britannica.com/biography/Lionel-Richie",
+            "src2": "https://encyclopediaofalabama.org/article/lionel-richie/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Commodores 從〈Brick House〉那類 funk 熱門，一路轉向他主筆的抒情情歌，例如〈Easy〉〈Three Times a Lady〉與〈Still〉。",
+            "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+            "src2": "https://encyclopediaofalabama.org/article/lionel-richie/",
+            "from": "new"
+          },
+          {
+            "f": "1980 年他為 Kenny Rogers 寫的〈Lady〉登上榜首，顯示他的情歌能跨進鄉村樂。",
+            "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+            "src2": "https://encyclopediaofalabama.org/article/lionel-richie/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他與 Michael Jackson 合寫〈We Are the World〉，替衣索比亞饑荒募款。",
+            "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+            "src2": "https://www.britannica.com/biography/Lionel-Richie",
+            "from": "new"
+          },
+          {
+            "f": "專輯《Can't Slow Down》（1983 年）拿下葛萊美年度專輯。",
+            "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+            "src2": "https://www.britannica.com/biography/Lionel-Richie",
+            "from": "new"
+          },
+          {
+            "f": "他以〈Say You, Say Me〉拿下奧斯卡最佳原創歌曲（1986 年）。",
+            "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+            "src2": "https://encyclopediaofalabama.org/article/lionel-richie/",
+            "from": "new"
+          },
+          {
+            "f": "他 2016 年獲詞曲作者名人堂的 Johnny Mercer Award，2017 年獲甘迺迪中心榮譽，2022 年獲國會圖書館 Gershwin 流行歌曲獎，並在同年入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+            "src2": "https://www.britannica.com/biography/Lionel-Richie",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1982 年，他推出首張個人專輯《Lionel Richie》，開啟離開 Commodores 後的個人生涯。",
+            "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+            "src2": "https://www.britannica.com/biography/Lionel-Richie",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "專輯《Can't Slow Down》拿下葛萊美年度專輯。",
+        "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+        "src2": "https://www.britannica.com/biography/Lionel-Richie",
+        "from": "new"
+      },
+      {
+        "f": "以〈Say You, Say Me〉拿下奧斯卡最佳原創歌曲（1986 年）。",
+        "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+        "src2": "https://encyclopediaofalabama.org/article/lionel-richie/",
+        "from": "new"
+      },
+      {
+        "f": "2022 年獲國會圖書館 Gershwin 流行歌曲獎，並入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Lionel_Richie",
+        "src2": "https://www.britannica.com/biography/Lionel-Richie",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "〈We Are the World〉年份：維基、Britannica 與詞曲作者名人堂寫 1985 年，Encyclopedia of Alabama 寫 1986 年，facts 不寫年份。",
+      "唱片銷量：維基寫全球逾 9000 萬張，詞曲作者名人堂與搜尋摘要寫逾 1 億張，兩說不一致，facts 不寫銷量。",
+      "個人生涯起點：詞曲作者名人堂寫 1981 年、搜尋摘要寫 1980 年，facts 只寫首張個人專輯 1982 年。",
+      "叔叔的身分：Britannica 寫爵士樂手、Encyclopedia of Alabama 寫替 Duke Ellington 編曲的人，facts 只寫『爵士圈的人』。",
+      "祖母的身分：維基寫鋼琴手 Adelaide Mary Brown，Britannica 寫古典鋼琴手，Encyclopedia of Alabama 寫大學合唱團指揮，facts 只寫她彈鋼琴、督促他練琴。",
+      "上線簡介三張與補查一致：〈Truly〉Hot 100 冠軍、《Can't Slow Down》葛萊美年度專輯、《Dancing on the Ceiling》1986 年 8 月發行並登上 Billboard 200 冠軍、四白金（維基專輯條目）、〈Say You, Say Me〉1985 年 10 月單曲、Eric Clapton 與 Alabama 客席。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 8 次：維基（WebFetch）、WebSearch（榮譽與跨界）、詞曲作者名人堂（WebFetch）、Britannica（WebFetch）、Encyclopedia of Alabama（WebFetch）、WebSearch（Gershwin Prize）、維基《Dancing on the Ceiling》（WebFetch）、維基《Can't Slow Down》（WebFetch，抓到消歧頁，無內容，仍計入）；LoC 新聞稿 403（失敗，不計入）。事實庫 research 為空，三格從零查。本位『上線簡介』中的下列數字本層未能查證，不列 pubIssues：《Can't Slow Down》『五支單曲全數打進 Hot 100 前十』『1984 年連續 59 週停留榜上前十』『美國銷量破千萬張取得鑽石認證』；《Lionel Richie》『Billboard 200 第三、R&B 專輯榜冠軍、四白金』『〈You Are〉第四、〈My Love〉第五』；請主線在本機以 Billboard／RIAA 核對。單源未進 facts：（1）詞曲作者名人堂單源：1994 年入選詞曲作者名人堂；2016 年 MusiCares 年度人物；『one of only two songwriters in history to achieve the honor of having #1 records for nine consecutive years』（名人堂官方介紹，可具名單源：寫作層可寫成『詞曲作者名人堂稱…』）；1971 年簽 Motown。（2）維基單源：〈Endless Love〉與 Diana Ross 對唱『among the top 20 bestselling singles of all time』；〈We Are the World〉『sold over 20 million copies』；《Can't Slow Down》全球逾 2000 萬張；1997 年阿拉巴馬音樂名人堂入選（搜尋摘要與 alamhof 頁標題，未開頁）。（3）Britannica 單源：〈Three Times a Lady〉為 Commodores 首支 Hot 100 冠軍，『混合鄉村樂的器樂聲與 R&B 旋律』；〈We Are the World〉募得約 5000 萬美元；經濟學學位 1974 年（Britannica 與 Encyclopedia of Alabama 相同，可用但屬履歷，不收）。（4）Encyclopedia of Alabama 單源：〈Lady〉蟬聯榜首六週；父親是退役陸軍上尉、母親是小學老師。（5）維基《Dancing on the Ceiling》單源：專輯 Billboard 200 第 1 名、R&B 榜第 3 名（上線簡介只寫 Billboard 200 冠軍，一致）。（6）Gershwin Prize 頒獎典禮 2022 年 3 月 9 日、宣布於 1 月 13 日（LoC 頁面只見搜尋摘要，LoC 官方頁 403）。名冊三張卡皆為 Lionel Richie，無同名混卡。"
   }
 ]

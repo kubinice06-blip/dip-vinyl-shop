@@ -58,3 +58,4 @@
 - 寫作第 2 組（20 位）審畢，0 處。Smokey Robinson「Motown 副總裁」f 欄無兩源，寫作層改用名人堂官方語，照准。Sam Smith 全篇以姓名代稱、不用性別代名詞，照准。
 - ar-b-005 上架：40 位（爵士、靈魂），審稿修 1 處。
 - 寫作第 1 組（20 位）審畢，0 處。主線 WebSearch 核實三條近期事實：Clarence Carter 2026-05-13 於亞特蘭大過世、享年 90（Billboard、WSFA）；Chaka Khan 獲 2026 年葛萊美終身成就獎（grammy.com）；9m88 為 2025 金馬影展開幕片《大濛》主演之一（金馬影展官網、風傳媒）。Charles Bradley 補洞稿標 thin、寫作層依人生故事寫成 full 276，照准。交本機待核：The Jacksons 補洞稿稱〈Shake Your Body〉作者為 Mick Jackson，實為〈Blame It on the Boogie〉（正文未寫）。
+- 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 2 條（First Choice〈Doctor Love〉為 Gold Mind 時期而非 Salsoul；Joe Bataan 本名兩說）。交本機待核：Jr. Walker《Road Runner》Dave Marsh 評語、Lionel Richie《Can't Slow Down》週數與認證、Kleeer《Get Ready》卡池年份。
