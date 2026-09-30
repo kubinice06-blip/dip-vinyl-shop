@@ -163,5 +163,363 @@
     "pubIssues": [],
     "status": "thin",
     "notes": "本位實際讀頁 8 次，超出上限 2 次（英文維基 Motörhead、WebSearch×2、NPR 逐字稿、維基 Lemmy、Loudwire Lemmy 傳記、grammy.com 藝人頁、Loudwire 十週年忌日文）；超出原因是前四次失敗請求後才改用 curl，且 legacy 格要找共識評價的第二源仍未湊齊。失敗請求 5 次（超出 failedFetches 上限 1 次，同一 NPR 頁算兩次）。\n⚠ legacy 格偏薄：最有價值的共識評價全是單源，不進 facts——（1）維基 Motörhead 首段：常被視為新浪潮英國重金屬（NWOBHM）的先驅，並被認為影響了眾多音樂場景、尤其是 thrash metal 與 speed metal；Loudwire 的搜尋摘要有相近說法（『forefathers of all varieties of speed metal』『perhaps no band influenced [thrash] to the extent Motörhead did』），但該文未開頁；（2）NPR 逐字稿：Motörhead 以融合朋克與金屬著稱，『inspired Metallica』，與 Slayer 交好，Lemmy 曾出現在 Sex Pistols 的舊 MV 裡——單源；（3）維基 Lemmy：追悼會 2016 年 1 月 9 日在 Forest Lawn Memorial Park 舉行；Rob Halford、Dave Grohl、Ozzy Osbourne、Alice Cooper、Metallica、Scott Ian、Tony Iommi 致意；2016 年 2 月葛萊美典禮由 Hollywood Vampires 獻唱致敬；2016 年 6 月 11 日 Download Festival 把主舞台改名『Lemmy Stage』——單源；（4）維基 Motörhead：1995 年 Lemmy 五十歲生日派對在洛杉磯 Whisky a Go Go，Metallica 以『the Lemmy's』之名登台——單源；（5）維基 Motörhead：〈Ace of Spades〉單曲 1980 年 10 月 27 日發行、英國單曲榜第 15 名，專輯第 4 名；被稱為樂團的代表曲——單源；（6）維基 Lemmy：一度想取名 Bastard，經紀人說 Bastard 這名字上不了 Top of the Pops 才改名 Motörhead——單源；（7）NPR：樂團有 22 張錄音室專輯；Lemmy 死於癌症，樂團官方聲明說他坐在最愛的 Rainbow Bar and Grill 電玩機前過世——單源；（8）維基 Lemmy 死因細目為前列腺癌、心律不整與充血性心臟衰竭（facts 只寫兩源一致的『過世』與年月日）；（9）維基 Motörhead：Lemmy 的原班三人組 Lemmy、Eddie Clarke、Phil Taylor 皆已於 2018 年前過世——單源。\n葛萊美：維基寫第 47 屆（2005 年）、grammy.com 寫『2004』年度（典禮年與頒獎年度之別），指同一次；grammy.com 另寫該類別還有三次提名（未逐項核對，1992 年《1916》入圍一事與上線簡介一致，不列問題）。\n『Lemmy 堅持是 rock and roll band』一句取自 WebFetch 摘要轉述維基 Motörhead 條目（原文未在 curl 原文中逐字核到），寫作層若要引用請降為間接敘述。\nera 格：無兩源事實，標 none；事實庫兩條單源事實見 conflicts。"
+  },
+  {
+    "key": "opeth",
+    "name": "Opeth",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Opeth 1990 年在斯德哥爾摩由主唱 David Isberg 組成，起初是一支死亡金屬（death metal）樂團。",
+            "src": "https://en.wikipedia.org/wiki/Opeth",
+            "src2": "https://www.loudersound.com/features/opeth-band-history-interview-2012",
+            "from": "new"
+          },
+          {
+            "f": "Mikael Åkerfeldt 原本是本地樂團 Eruption 的成員，後來受 Isberg 邀請加入 Opeth。",
+            "src": "https://en.wikipedia.org/wiki/Opeth",
+            "src2": "https://www.loudersound.com/features/opeth-band-history-interview-2012",
+            "from": "new"
+          },
+          {
+            "f": "Åkerfeldt 一邊受斯德哥爾摩死亡金屬場景影響，一邊迷上 1970 年代的前衛搖滾，Yes、Genesis、Camel 都在他的愛好名單裡。",
+            "src": "https://www.loudersound.com/features/opeth-band-history-interview-2012",
+            "src2": "https://en.wikipedia.org/wiki/Opeth",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Opeth 把死亡金屬的低吼與重型段落，搭配原聲吉他、乾淨人聲與大幅度的動態起伏，寫成篇幅很長的曲子。",
+            "src": "https://en.wikipedia.org/wiki/Opeth",
+            "src2": "https://www.loudersound.com/features/opeth-band-history-interview-2012",
+            "from": "new"
+          },
+          {
+            "f": "《Damnation》放下厚重的 riff 與死亡低吼，改走以原聲樂器為主的柔和路線。",
+            "src": "https://www.loudersound.com/features/opeth-band-history-interview-2012",
+            "src2": "https://en.wikipedia.org/wiki/Opeth",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Opeth 早年在斯德哥爾摩被視為古怪的死亡金屬新人，首場演出以災難收場；2001 年《Blackwater Park》與共同製作人 Steven Wilson 合作後，樂團被推到現代前衛音樂的上層，與 Tool、Dream Theater 並列。",
+            "src": "https://www.loudersound.com/features/opeth-mikael-akerfeldt-2026-interview-blackwater-park",
+            "src2": "https://www.loudersound.com/features/opeth-band-history-interview-2012",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《Orchid》1994 年春由 Dan Swano 主理錄音，1995 年發行。",
+            "src": "https://www.loudersound.com/features/opeth-band-history-interview-2012",
+            "src2": "https://en.wikipedia.org/wiki/Opeth",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 5,
+    "failedFetches": [
+      "Britannica topic/Opeth 404",
+      "Guitar World Blackwater Park 專訪（只回會員牆，無正文）",
+      "allmusic.com 藝人頁 403"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "事實庫 research 為空、卡池七張皆無上線簡介，全部從零查。實際讀頁 5 次：英文維基 Opeth（WebFetch 並以 curl 核原文）、WebSearch×2、Louder 2026 Blackwater Park 專訪、Louder 2012 樂團史。\n⚠ Louder 兩篇同屬 Future 出版集團（Metal Hammer／Louder），legacy 的兩源不算完全獨立；名人堂或國家級榮譽這類外部共識不存在（Opeth 沒有），只找到媒體側的評價。\n單源細節（不進 facts）：（1）維基：1990 年 4 月成軍；團名取自 Wilbur Smith 小說《The Sunbird》裡虛構的城市 Opet；1992 年 Isberg 以『創作歧見』離團後由 Åkerfeldt 接手主唱；（2）維基：Åkerfeldt 的影響列有 King Crimson、Yes、Rush、Genesis、Van der Graaf Generator、Camel、Jethro Tull 與 Iron Maiden、Slayer、Death、Black Sabbath、Deep Purple、Celtic Frost、Morbid Angel、Voivod，以及 Mahavishnu Orchestra、Billy Cobham、Herbie Hancock 等爵士融合；（3）維基：2003 年以《Damnation》獲瑞典 Grammis 最佳硬搖滾演出；2016 年獲 Progressive Music Awards 國際最佳樂團；2016 年 Loudwire 排名史上第 12 佳金屬樂團；2024 年《The Last Will and Testament》獲 Grammis 最佳硬搖滾／金屬（2003 年與 2024 年得獎皆為維基單源，未開 Grammis 官網核對）；（4）維基：2011 年《Heritage》放棄死亡金屬聲音，《Damnation》《Heritage》《Pale Communion》《Sorceress》《In Cauda Venenum》只有乾淨人聲；（5）維基：截至 2009 年 11 月全球賣出逾 150 萬張，其中《Blackwater Park》《Damnation》《Deliverance》在美國合計約 30 萬張 SoundScan；（6）維基：Gorguts、Leprous、Caligula's Horse、Jinjer 受其影響；John Petrucci、Mike Portnoy、Steven Wilson 表示欣賞——皆單源；（7）Louder 2026：Åkerfeldt 早期團被他自嘲為『糟糕版 Napalm Death』；首場演出觀眾朝主唱 Isberg 丟 snus（瑞典含片菸包）、偷走麥克風架；『The Last Will And Testament』讓低吼回歸——皆單源；（8）Louder 2012：Åkerfeldt 受斯德哥爾摩場景影響最深的是 Nihilist、Entombed、Therion；Opeth 被說是『widely recognised and lauded as standard bearers for progressive heavy music』；2001 年後轉入 Music For Nations 與美國正式發行；《Deliverance》《Damnation》雙專輯讓他們被前衛搖滾社群接納——單源；（9）Louder 2012：Åkerfeldt 加入時 16 歲——單源。\nfacts 中 Åkerfeldt 加入『受 Isberg 邀請』：維基寫 Isberg 邀請前 Eruption 吉他手加入擔任貝斯手；Louder 2012 寫 16 歲的 Åkerfeldt 是前 Eruption 成員，兩源對『前 Eruption 成員、加入 Opeth』一致。\n人名皆拉丁原文，Åkerfeldt 的 Å 為合法拉丁變體。"
+  },
+  {
+    "key": "placebo",
+    "name": "Placebo",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Placebo 1994 年在倫敦由主唱兼吉他手 Brian Molko 與貝斯手 Stefan Olsdal 組成，兩人是全團唯一不變的成員。",
+            "src": "https://en.wikipedia.org/wiki/Placebo_(band)",
+            "src2": "https://www.udiscovermusic.com/artist/placebo/",
+            "from": "new"
+          },
+          {
+            "f": "Molko 與 Olsdal 都念過盧森堡的 American International School of Luxembourg，當時並不熟；1994 年兩人在倫敦 South Kensington 地鐵站外偶遇，才開始合作。",
+            "src": "https://en.wikipedia.org/wiki/Placebo_(band)",
+            "src2": "https://www.udiscovermusic.com/artist/placebo/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1990 年代中期 Britpop 盛行時，Placebo 以中性的外表與直言性、心理健康和藥物的歌詞站在主流之外；Molko 說他們是在反抗 Britpop 的大男人氣、足球場合唱與民族主義。",
+            "src": "https://en.wikipedia.org/wiki/Placebo_(band)",
+            "src2": "https://www.loudersound.com/bands-artists/interviews/placebo-nancy-boy",
+            "from": "new"
+          },
+          {
+            "f": "樂團受 David Bowie 影響，被形容成把華麗搖滾（glam）帶進後 grunge 年代；Molko 帶有雌雄莫辨色彩的嗓音是辨識度最高的標誌。",
+            "src": "https://www.loudersound.com/bands-artists/interviews/placebo-nancy-boy",
+            "src2": "https://www.udiscovermusic.com/artist/placebo/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "David Bowie 在 Placebo 發行首張專輯之前就力挺他們：邀請他們巡演、1998 年在〈Without You I'm Nothing〉合唱，1999 年 BRIT Awards 上一起演出〈20th Century Boy〉。",
+            "src": "https://www.nme.com/features/music-interviews/placebo-never-let-me-go-david-bowie-brian-molko-stefan-olsdal-intervew-3181905",
+            "src2": "https://en.wikipedia.org/wiki/Placebo_(band)",
+            "from": "new"
+          },
+          {
+            "f": "1997 年 Bowie 邀請 Placebo 在他於紐約 Madison Square Garden 舉行的 50 歲生日演唱會登台。",
+            "src": "https://en.wikipedia.org/wiki/Placebo_(band)",
+            "src2": "https://www.udiscovermusic.com/artist/placebo/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1996 年首張同名專輯登上英國專輯榜第 5 名，時值 Britpop 高峰。",
+            "src": "https://en.wikipedia.org/wiki/Placebo_(band)",
+            "src2": "https://www.udiscovermusic.com/artist/placebo/",
+            "from": "new"
+          },
+          {
+            "f": "1997 年的〈Nancy Boy〉登上英國單曲榜第 4 名，是樂團的成名作。",
+            "src": "https://en.wikipedia.org/wiki/Placebo_(band)",
+            "src2": "https://www.loudersound.com/bands-artists/interviews/placebo-nancy-boy",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "全球銷量：維基寫約 1400 萬張、uDiscover 寫逾 1100 萬張，兩源不一致，facts 不寫銷量。"
+    ],
+    "searches": 6,
+    "failedFetches": [
+      "第一次 WebSearch 因 allowed_domains 含被禁網域而 API 400（未取得結果，不計入）"
+    ],
+    "pubIssues": [],
+    "status": "thin",
+    "notes": "⚠ 同名混卡：卡池 Placebo 底下七張混了兩個不同的人／團——《Placebo》(1996)、《Without You I'm Nothing》(1998)、《Black Market Music》(2000)、《Battle for the Sun》(2009)、《Never Let Me Go》(2022) 五張是英國另類搖滾樂團 Placebo（Brian Molko、Stefan Olsdal）；《Ball of Eyes》(1971) 與《1973》(1973) 兩張是比利時爵士放克樂團 Placebo（Marc Moulin、Philip Catherine），上線簡介已標明與英國同名樂團無關。本稿只寫專輯數多的英國樂團；比利時那兩張的簡介與本次查證無衝突，未另查。\n事實庫 research 為空、英國那五張無上線簡介，全部從零查。實際讀頁 6 次：英文維基 Placebo (band)（curl 原文）、WebSearch、uDiscover 樂團頁、Louder〈Nancy Boy〉專文、維基 Brian Molko、NME 專訪。\nlegacy 偏薄：查不到名人堂、國家級榮譽或後輩點名，只有 Bowie 力挺一條有兩源；status 標 thin。\n單源細節（不進 facts）：（1）維基 Brian Molko：1972 年 12 月 10 日生於布魯塞爾，父親是美國人（法義裔）、母親是蘇格蘭人；童年因父親的銀行業工作搬過蘇格蘭 Dundee、賴比瑞亞、黎巴嫩與比利時，最後定居盧森堡 Sandweiler；父親希望他當銀行家，他以中性造型與龐克反抗；先讀 European School of Luxembourg 因被霸凌轉學，後入倫敦 Goldsmiths College 讀戲劇；Louder 稱他是『openly bisexual American frontman』、Olsdal 為瑞典人，與維基『British-American』寫法不同，故不寫國籍；（2）維基：初名 Ashtray Heart（取自 Captain Beefheart 同名歌），Molko 2009 年否認這是最初團名；團名 Placebo 是對 1990 年代『團名要取藥名』陳腔濫調的回應；（3）維基：首張專輯由 Brad Wood 製作，Molko 說受 Sonic Youth 與 Depeche Mode 影響；Schultzberg 1996 年 9 月美國巡演期間離團，Steve Hewitt 接任；（4）維基：〈Nancy Boy〉引起 Bowie 注意，1996 年初邀請樂團開他的演唱會；Molko 後來稱對這首歌『very ambivalent』；（5）維基：八張錄音室專輯皆進英國前 20、15 支英國前 40 單曲；曾與 Bowie、Justin Warfield、Michael Stipe、Alison Mosshart 合作；（6）Louder：Molko 說〈Nancy Boy〉是 1994 年寫的、回應 Suede 當紅的時期；1997 年世界巡演後他那句『left a trail of blood and spunk across three continents』；（7）uDiscover：《Without You I'm Nothing》與《Black Market Music》各賣破百萬；Molko 稱樂團是『a band for outsiders, by outsiders』——皆單源。\n上線簡介（比利時 Placebo 兩張）核對：Marc Moulin 生卒 1942–2008、Aksak Maboul 與 Telex 等說法本次未查，不列 pubIssues。"
+  },
+  {
+    "key": "roxy music",
+    "name": "Roxy Music",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Roxy Music 1970 年由 Bryan Ferry 成軍；Ferry 登廣告找鍵盤手，Andy Mackay 應徵，Mackay 又把大學時代認識的 Brian Eno 拉進來。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.udiscovermusic.com/artist/roxy-music/",
+            "from": "new"
+          },
+          {
+            "f": "團員 Ferry、Mackay 與 Eno 有美術學院背景，樂團被形容為藝術學院與華麗搖滾（glam rock）前衛派碰撞出的產物。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.udiscovermusic.com/artist/roxy-music/",
+            "from": "new"
+          },
+          {
+            "f": "Ferry 就讀 Newcastle University 時組過樂團 Gas Board，是 Roxy Music 的雛形。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.udiscovermusic.com/artist/roxy-music/",
+            "from": "new"
+          },
+          {
+            "f": "團名取自 Ferry 與 Mackay 列出的老戲院名單，Ferry 挑中 Roxy，是看上戲院那種褪色的華麗感。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.udiscovermusic.com/artist/roxy-music/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Roxy Music 被稱為把華麗搖滾注入 1970 年代搖滾、開創藝術搖滾（art rock）的樂團，把華麗搖滾更精緻的一面推到前面，並強調時髦的服裝與視覺造型。",
+            "src": "https://www.grammy.com/news/roxy-music-phil-manzanera-interview-art-rock-pioneers-50th-anniversay-reissue-2022-tour-living-legends",
+            "src2": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "from": "new"
+          },
+          {
+            "f": "Brian Eno 擔任前兩張專輯的合成器手，之後離團。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.grammy.com/news/roxy-music-phil-manzanera-interview-art-rock-pioneers-50th-anniversay-reissue-2022-tour-living-legends",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Roxy Music 被視為許多新浪潮（new wave）樂團的範本，影響及於實驗前衛搖滾、華麗搖滾、新浪潮與電子流行。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.grammy.com/news/roxy-music-phil-manzanera-interview-art-rock-pioneers-50th-anniversay-reissue-2022-tour-living-legends",
+            "from": "new"
+          },
+          {
+            "f": "2019 年入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.grammy.com/news/roxy-music-phil-manzanera-interview-art-rock-pioneers-50th-anniversay-reissue-2022-tour-living-legends",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1972 年首張同名專輯發行；Eno 在第二張《For Your Pleasure》之後離團，Bryan Ferry 成為無異議的團長。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.udiscovermusic.com/artist/roxy-music/",
+            "from": "new"
+          },
+          {
+            "f": "樂團 1970 年成軍，最後一張錄音室專輯是 1982 年的《Avalon》。",
+            "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+            "src2": "https://www.grammy.com/news/roxy-music-phil-manzanera-interview-art-rock-pioneers-50th-anniversay-reissue-2022-tour-living-legends",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2019 年入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Roxy_Music",
+        "src2": "https://www.grammy.com/news/roxy-music-phil-manzanera-interview-art-rock-pioneers-50th-anniversay-reissue-2022-tour-living-legends",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "searches": 5,
+    "failedFetches": [
+      "Britannica topic/Roxy-Music 403",
+      "第一次 WebSearch 因 allowed_domains 含被禁網域而 API 400（未取得結果，不計入）"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "事實庫 research 為空、卡池七張皆無上線簡介，全部從零查。實際讀頁 5 次：英文維基 Roxy Music（curl 原文）、搖滾名人堂官網 Roxy Music 頁、WebSearch、uDiscover 樂團頁、GRAMMY.com 對 Phil Manzanera 的專訪文。\n名人堂官方（可具名單源）：rockhall.com 頁面標示 Roxy Music 由 Duran Duran 的 John Taylor 與 Simon Le Bon 擔任引介人，頁面文案稱『They began with a sound fired by cacophonous outbursts and wild affectations, only to evolve into one of the most finely controlled and heartfelt bands of all time』；搜尋摘要另稱 Taylor 致詞說沒有 Roxy 就沒有 Duran（該篇 Billboard／NPR／Rolling Stone 報導只見搜尋摘要，未開頁）；頒獎典禮日期搜尋摘要為 2019 年 3 月 29 日，Brooklyn Barclays Center（單源摘要）。網址 https://rockhall.com/inductees/roxy-music/ 。\n單源細節（不進 facts）：（1）維基首段：『pioneered more musically sophisticated elements of glam rock, significantly influencing early English punk music, and provided a model for many new wave acts while innovating elements of electronic composition』——前半（早期英國龐克）只見維基；（2）維基：Ferry 因在女校教陶藝時辦聽唱片會被解雇，1970 年 11 月登廣告；1970 年底或 1971 年初曾試唱 King Crimson 主唱被拒，Robert Fripp 與 Peter Sinfield 幫忙介紹 E.G. 廠牌合約；美國另有一團叫 Roxy，才改為 Roxy Music（rock music 的雙關）；Eno 自稱非樂手、但會操作合成器與開盤式錄音機，Mackay 說服他以技術顧問身分加入；（3）維基：廣播人 John Peel 與 Melody Maker 記者 Richard Williams 早期支持，1971 年 8 月 7 日 Melody Maker 有首篇重要報導；Phil Manzanera 1972 年 2 月 14 日加入；（4）維基：1976 年解散、1978 年重組、1983 年再解散；Avalon 在美國拿白金認證，樂團在美國前十年只是中等成功的 cult 團；Ferry 與 Eno 都有影響深遠的個人生涯，Eno 成為 20 世紀晚期最重要的英國製作人之一；（5）GRAMMY.com：Manzanera 說『By complete happenstance, Bowie and us came to the fore in 1972』；（6）uDiscover：《Stranded》登英國榜冠軍（維基未核）；『massively influential on music for decades』『the ideal of Art School meets glam』。\nfacts 中『Ferry 與 Mackay 列老戲院名單、Ferry 挑 Roxy 因 faded glamour』：維基原文為 Ferry 與 Mackay 列名單、Roxy 因有『resonance』與『faded glamour』；uDiscover 只寫『名字是向裝飾藝術風電影華麗致敬』，兩源對『取自電影院的華麗感』一致，名單細節單源。\n『2019 年入選』：維基與 GRAMMY.com（『the 2019 Rock & Roll Hall of Fame inductees』）兩源一致；名人堂官網頁面未列年份文字。"
+  },
+  {
+    "key": "santana",
+    "name": "Santana",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Santana 由墨西哥出生的吉他手 Carlos Santana 1966 年在舊金山成軍，初名 Santana Blues Band。",
+            "src": "https://en.wikipedia.org/wiki/Santana_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Carlos_Santana",
+            "from": "new"
+          },
+          {
+            "f": "Carlos Santana 1947 年 7 月 20 日生於墨西哥 Jalisco 州的 Autlán de Navarro，父親是 mariachi 樂手，他 5 歲學小提琴、8 歲學吉他；後來全家搬到與美國接壤的 Tijuana，再遷往舊金山。",
+            "src": "https://en.wikipedia.org/wiki/Carlos_Santana",
+            "src2": "https://en.wikipedia.org/wiki/Santana_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Santana 的特色是把搖滾、爵士與拉丁節奏融在一起：以藍調底子的旋律吉他線條，對上 timbales、conga 等搖滾樂少用的打擊樂器。",
+            "src": "https://rockhall.com/inductees/santana/",
+            "src2": "https://en.wikipedia.org/wiki/Carlos_Santana",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Santana 原班陣容（Carlos Santana、Gregg Rolie、Mike Carabello、Michael Shrieve、David Brown、José Areas）1998 年入選搖滾名人堂，由 Clive Davis 與 John Popper 擔任引介人。",
+            "src": "https://rockhall.com/inductees/santana/",
+            "src2": "https://en.wikipedia.org/wiki/Santana_(band)",
+            "from": "new"
+          },
+          {
+            "f": "第 42 屆葛萊美獎（2000 年），Santana 憑《Supernatural》拿下 8 座，追平 Michael Jackson 1984 年創下的單一典禮最多得獎紀錄，包括年度專輯、年度唱片與最佳搖滾專輯。",
+            "src": "https://www.billboard.com/music/awards/santana-2000-grammys-record-michael-jackson-9340850/",
+            "src2": "https://en.wikipedia.org/wiki/Santana_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1969 年 Santana 在 Woodstock 音樂節演出，電影與原聲帶讓樂團一舉打開國際知名度。",
+            "src": "https://en.wikipedia.org/wiki/Carlos_Santana",
+            "src2": "https://en.wikipedia.org/wiki/Santana_(band)",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1998 年原班陣容入選搖滾名人堂。",
+        "src": "https://rockhall.com/inductees/santana/",
+        "src2": "https://en.wikipedia.org/wiki/Santana_(band)",
+        "from": "new"
+      },
+      {
+        "f": "2000 年第 42 屆葛萊美獎憑《Supernatural》拿下 8 座。",
+        "src": "https://www.billboard.com/music/awards/santana-2000-grammys-record-michael-jackson-9340850/",
+        "src2": "https://en.wikipedia.org/wiki/Santana_(band)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "上線簡介《Supernatural》寫『第 42 屆葛萊美獎拿下九座』；維基、Billboard 與 GRAMMY.com 皆寫 Santana 拿下 8 座（追平 Michael Jackson 紀錄）；facts 採 8 座。"
+    ],
+    "searches": 6,
+    "failedFetches": [],
+    "pubIssues": [
+      {
+        "album": "Supernatural",
+        "claim": "在第 42 屆葛萊美獎拿下九座得獎，含年度專輯與最佳搖滾專輯",
+        "problem": "Santana 該屆得 8 座（年度專輯、年度唱片、最佳搖滾專輯、最佳搖滾樂團演出、最佳搖滾器樂演出、最佳流行合作、最佳流行二重唱／團體演出、最佳流行器樂演出），是追平 Michael Jackson 單一典禮紀錄的數字；『九座』無來源支持，建議改『八座』。年度歌曲〈Smooth〉頒給詞曲作者 Itaal Shur 與 Rob Thomas，不算 Santana 的獎。",
+        "src": "https://www.billboard.com/music/awards/santana-2000-grammys-record-michael-jackson-9340850/"
+      }
+    ],
+    "status": "full",
+    "notes": "事實庫 research 只有 1 筆（Santana III 兩條單源）；其餘從零查。實際讀頁 6 次：英文維基 Santana (band)（curl）、搖滾名人堂官網 Santana 頁、WebSearch（葛萊美）、Billboard 2000 葛萊美專文、grammy.com Santana 藝人頁、維基 Carlos Santana。\n⚠ origin 兩條的第二源是同站（維基）不同條目（樂團條目與 Carlos 個人條目），未找到獨立第二源；寫作層用時視為單源等級，語氣保守。sound 的搖滾名人堂官方單源加維基。\n名人堂官方（可具名單源）：rockhall.com Santana 頁稱『Santana's fusion of jazz, rock and Latin influences built them a hugely successful and lasting reign in the world of rock』並列 Clive Davis 與 John Popper 為引介人；網址 https://rockhall.com/inductees/santana/ 。\n單源細節（不進 facts）：（1）維基樂團條目：全球估計賣出 1 億張、美國認證逾 4700 萬張，是史上最暢銷的團體之一；1967 年 1 月在 Bill Graham 的 Fillmore Auditorium 試演，同年 6 月因成員遲到被 Graham 解雇；1972 年陣容與方向改變後在《Caravanserai》《Welcome》《Borboletta》嘗試爵士融合；〈Smooth〉與〈Maria Maria〉都是 Hot 100 冠軍，《Supernatural》登十一國榜首、美國賣 1200 萬張；（2）維基 Carlos：Tijuana 時期看 Javier Bátiz 的 Los TJ's 啟蒙，接觸 T-Bone Walker、Muddy Waters、B.B. King 的藍調；Gábor Szabó 的爵士吉他影響他，〈Black Magic Woman〉接的〈Gypsy Queen〉出自 Szabó；Michael Bloomfield 是他自認的直接導師；2015 年 Rolling Stone 排他第 20 名、2023 年排第 11 名；共得 10 座葛萊美與 3 座拉丁葛萊美；Bill Graham 安排樂團在首張專輯發行前登上 Woodstock；《Abraxas》1970 年 9 月發行、上榜 88 週；（3）Billboard：Clive Davis 以《Supernatural》14 位製作人之一的身分拿下生平首兩座葛萊美（年度專輯、最佳搖滾專輯）；此前 Carlos 個人只得過 1 座（1988 年〈Blues for Salvador〉最佳搖滾器樂演出）；Billboard 圖說日期寫 2000 年 2 月 5 日、搜尋摘要寫 2 月 23 日，兩者不一致，facts 不寫日期；（4）事實庫 c50b-c：《Santana III》為伍茲塔克陣容最後一張、Neal Schon 17 歲加入的說法皆單源（維基專輯與 Neal Schon 條目），本次未複核，上線簡介已用。\nGRAMMY.com 藝人頁只列提名與得獎類別，未含獎項年份，故葛萊美事實以 Billboard 與維基為兩源。\n上線簡介 Supernatural：〈Smooth〉Hot 100 蟬聯 12 週、專輯不連續 12 週登冠，本次未複核；唯一發現問題為得獎座數，見 pubIssues。\n單源補充：維基 Carlos——Woodstock 演出日期為 1969 年 8 月 16 日，且是在首張專輯發行前由 Bill Graham 安排。"
   }
 ]

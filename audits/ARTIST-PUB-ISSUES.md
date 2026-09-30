@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 46 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 50 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -50,3 +50,7 @@
 | ar-a-007 | Tinariwen | The Radio Tisdas Sessions | 2001 年由 Justin Adams 與 Lo'Jo 帶著器材進駐馬利基達爾的 Radio Tisdas 電台錄音 | 維基寫該片由 Justin Adams 與 Jean-Paul Romann 錄製；Lo'Jo 是 1998 年起與樂團結識、促成後續合作的法國團體，維基未寫 Lo'Jo 參與錄音。建議改為 Justin Adams 與 Jean-Paul Romann。另外發行年各源不同（見 conflicts），維基為 2001。 | https://en.wikipedia.org/wiki/Tinariwen |
 | ar-a-007 | Otis Rush | Mourning in the Morning | Otis Rush 自 1955 年起錄單曲 | 維基、Mississippi Blues Trail 與 EBSCO 都寫他 1956 年以 Cobra 的〈I Can't Quit You Baby〉出道，1955 年這個起點三源皆無；建議改為 1956 年。 | https://en.wikipedia.org/wiki/Otis_Rush |
 | ar-a-007 | Chicago | Chicago X | 〈If You Leave Me Now〉拿下最佳流行團體演唱與最佳人聲伴奏編曲兩座葛萊美；並奪下葛萊美最佳專輯包裝獎 | 輕微：兩項葛萊美皆成立，但最佳人聲伴奏編曲（Best Arrangement Accompanying Vocalists）頒給編曲人 James William Guercio 與 Jimmie Haskell，最佳專輯包裝頒給美術總監 John Berg；樂團本身只有最佳流行團體演唱一座，維基 Chicago 條目稱其為「唯一的葛萊美」。若改成「單曲拿下兩座」並註明編曲與包裝的得主，較不易誤讀。 | https://en.wikipedia.org/wiki/Chicago_X |
+| ar-a-007 | Beyond | 再見理想 | 當時陣容還有第五名成員陳時安 | 中文維基 Beyond 條目寫陳時安是較早加入的成員，而 1986 年『劉志遠加入成為第五名隊員』；再見理想時期（1986 年 3 月）的第五名成員可能是劉志遠而非陳時安，建議核對該專輯的陣容再決定是否改。（未達兩源，僅供店主查核） | https://zh.wikipedia.org/wiki/Beyond |
+| ar-a-008 | 新寶島康樂隊 | 第樹輯 | 第 8 屆金曲獎最佳演唱組獎由這個團以《新寶島康樂隊第樹輯》得獎 | 文化部官方第八屆（1997 年 5 月 3 日）得獎名單，最佳演唱組獎得主是高向鵬、方怡萍《福氣啦》（豪記影視唱片），新寶島康樂隊不在得獎名單；中文維基只記該團 2012 年（第 23 屆）與 2022 年（第 33 屆）兩次得獎。搜尋摘要稱《第樹輯》是該屆入圍（入圍名單頁未開，未核對），應改寫成入圍。同段「最佳作曲人得主李正帆《舊夢》」與官方名單一致。 | https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124197 |
+| ar-a-008 | Emerson, Lake & Palmer | Emerson, Lake & Palmer | 發行後樂團登上 1970 年懷特島音樂節，聲名自此打開 | 時序顛倒：專輯 1970 年 11 月 20 日才在英國發行（維基專輯頁），樂團的懷特島音樂節演出在同年 8 月底、專輯發行前（維基樂團頁：8 月 23 日普利茅斯首演後數週；維基專輯頁：樂團在音樂節上演奏專輯歌曲，令其成名）。建議改成「發行前，樂團先在 1970 年懷特島音樂節打開名聲」。第二獨立來源僅見搜尋摘要（Emerson 訃聞稱他們在懷特島音樂節上的突破表演之後才獲唱片合約），未開頁。 | https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer_(album) |
+| ar-a-008 | Santana | Supernatural | 在第 42 屆葛萊美獎拿下九座得獎，含年度專輯與最佳搖滾專輯 | Santana 該屆得 8 座（年度專輯、年度唱片、最佳搖滾專輯、最佳搖滾樂團演出、最佳搖滾器樂演出、最佳流行合作、最佳流行二重唱／團體演出、最佳流行器樂演出），是追平 Michael Jackson 單一典禮紀錄的數字；『九座』無來源支持，建議改『八座』。年度歌曲〈Smooth〉頒給詞曲作者 Itaal Shur 與 Rob Thomas，不算 Santana 的獎。 | https://www.billboard.com/music/awards/santana-2000-grammys-record-michael-jackson-9340850/ |
