@@ -485,5 +485,88 @@
     "status": "full",
     "pubIssues": [],
     "notes": "事實庫為空，從零查。八次：維基 Sublime（樂團）、WebSearch（Nowell 之死與專輯）、Ultimate Classic Rock 訃聞文章、Diffuser 二十週年文章、維基 Sublime（專輯）、維基 Bradley Nowell、WebSearch（後輩影響）、Top Shelf 雷鬼搖滾史；無失敗請求。三條維基同站不同條目，非獨立。雷鬼搖滾影響這條只有 Top Shelf 單源（另有搜尋摘要 tribes.org 等，未開頁）：稱 Sublime 把 sample 過的老雷鬼與龐克樂器結合、在 1990 年代初的長灘開創雷鬼搖滾，Nowell 找 Miles Doughty 與 Kyle McDonald 等人現場演出、後來成為 Slightly Stoopid，之後有 Dirty Heads、Rebelution 等，故本層 legacy 沒有雙源的後輩點名，寫作層以故事細節為主。poolAlbums 四張皆為此團（40oz. to Freedom、Robbin' the Hood、Sublime、Until the Sun Explodes），無同名混卡。"
+  },
+  {
+    "key": "sum 41",
+    "name": "Sum 41",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Sum 41 是 1996 年成軍於加拿大安大略省 Ajax 的樂團，主唱兼創團者是 Deryck Whibley。",
+            "src": "https://en.wikipedia.org/wiki/Sum_41",
+            "src2": "https://www.ctvnews.ca/toronto/article/amid-flames-mosh-pits-and-fury-sum-41-blazes-through-farewell-concert/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Sum 41 以 pop punk 起家，被歸在加拿大的 pop punk 老牌樂團之列。",
+            "src": "https://en.wikipedia.org/wiki/Sum_41",
+            "src2": "https://consequence.net/2025/04/sum-41-last-performance-juno-awards-2025/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2004 年 5 月，Sum 41 與 War Child Canada 前往剛果民主共和國，拍攝第二次剛果戰爭對平民影響的紀錄片；他們在東部城市 Bukavu 拍了六天，第六天旅館周圍爆發槍戰，有機槍、迫擊砲與火箭榴彈。",
+            "src": "https://americansongwriter.com/on-this-day-in-2004-sum-41-is-rescued-from-war-torn-congo-while-filming-a-documentary/",
+            "src2": "https://www.vice.com/en/article/remembering-sum-41s-congo-war-documentary-which-ended-with-an-emergency-evacuation-on-this-day-in-2004/",
+            "from": "new"
+          },
+          {
+            "f": "樂團與劇組被困約兩天，由加拿大籍聯合國維和軍人 Chuck Pelletier 調來裝甲運兵車協調撤離；同年他們把新專輯取名《Chuck》紀念這位救命的人，紀錄片則是《Rocked: Sum 41 in the Congo》。",
+            "src": "https://americansongwriter.com/on-this-day-in-2004-sum-41-is-rescued-from-war-torn-congo-while-filming-a-documentary/",
+            "src2": "https://www.vice.com/en/article/remembering-sum-41s-congo-war-documentary-which-ended-with-an-emergency-evacuation-on-this-day-in-2004/",
+            "from": "new"
+          },
+          {
+            "f": "2025 年 3 月 30 日，Sum 41 在溫哥華的 Juno Awards 入選加拿大音樂名人堂（Canadian Music Hall of Fame），由 Good Charlotte 的 Joel 與 Benji Madden 頒授，並在典禮上做最後一次現場演出。",
+            "src": "https://consequence.net/2025/04/sum-41-last-performance-juno-awards-2025/",
+            "src2": "https://en.wikipedia.org/wiki/Sum_41",
+            "from": "new"
+          },
+          {
+            "f": "告別巡演最後一場於 2025 年 1 月 30 日在多倫多 Scotiabank Arena 舉行，樂團前後約三十年的歷程就此結束。",
+            "src": "https://www.ctvnews.ca/toronto/article/amid-flames-mosh-pits-and-fury-sum-41-blazes-through-farewell-concert/",
+            "src2": "https://en.wikipedia.org/wiki/Sum_41",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2004 年 5 月剛果 Bukavu 遇襲撤離，同年專輯《Chuck》以救援的維和軍人命名。",
+        "src": "https://americansongwriter.com/on-this-day-in-2004-sum-41-is-rescued-from-war-torn-congo-while-filming-a-documentary/",
+        "src2": "https://www.vice.com/en/article/remembering-sum-41s-congo-war-documentary-which-ended-with-an-emergency-evacuation-on-this-day-in-2004/",
+        "from": "new"
+      },
+      {
+        "f": "2025 年 1 月 30 日告別巡演在多倫多收尾，3 月 30 日入選加拿大音樂名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Sum_41",
+        "src2": "https://consequence.net/2025/04/sum-41-last-performance-juno-awards-2025/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "困守時間：American Songwriter 寫在旅館又躲了兩天、Vice 寫救援花兩天才到；facts 寫成『被困約兩天』。事件日期：Vice 寫 2004 年 5 月 26 日衝突爆發，其他來源只寫 5 月，facts 只寫 5 月。"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫為空，從零查。八次：維基 Sum 41、WebSearch（告別演出）、CTV 新聞、WebSearch（剛果事件）、American Songwriter、Vice、WebSearch（名人堂）、Consequence；CBC Music 與 Punknews 皆 403（未計入，failedFetches 2）。sound 格只有標籤層級（pop punk，維基與 Consequence 的措辭），沒有雙源的手法或影響描述——維基單源另寫早期 pop punk／skate punk、《Does This Look Infected?》（2002）轉向較重的金屬元素；搜尋摘要另稱他們在 nu metal 年代出道卻橫跨多種曲風（未開頁），寫作層不可據此寫聲音貢獻。單源未進 facts：名字源自從暑假開始數到 Warped Tour 演出的第 41 天（維基單源，搜尋摘要另有同說法但未開頁）；1999 年簽 Island Records、2000 年 EP《Half Hour of Power》、2001 年《All Killer No Filler》〈Fat Lip〉登 Modern Rock Tracks 冠軍且美英白金（維基單源）；Juno 獎兩座（2003 年 Group of the Year、2005 年《Chuck》Rock Album of the Year，共入圍七次，維基單源，未核對主詞為樂團）；2011 年葛萊美提名 Best Hard Rock/Metal Performance〈Blood in My Eyes〉（維基單源，入圍未得獎）；2014 年 5 月 Whibley 公開肝腎衰竭（維基單源）；2023 年 5 月 8 日宣布解散、最後專輯《Heaven :x: Hell》2024 年 3 月 29 日（維基單源）；5 Seconds of Summer、Waterparks 等人點名啟發（維基單源）；1996–2016 年加拿大本土銷量排名第 31（維基單源）；Whibley 入選演說感謝原鼓手 Steve Jocz（Consequence 單源）。維基 Sum 41 條目稱其為 Canada 最具影響力搖滾樂團之一，只此一源，未進 facts。poolAlbums 四張皆為此團（All Killer No Filler、Does This Look Infected?、Chuck、13 Voices），無同名混卡。"
   }
 ]
