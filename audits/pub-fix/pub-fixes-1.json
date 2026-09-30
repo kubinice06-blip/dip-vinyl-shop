@@ -129,5 +129,775 @@
   "sources": [
    "https://www.britannica.com/biography/Sonny-Rollins"
   ]
+ },
+ {
+  "id": 11,
+  "artist": "Bud Powell",
+  "album": "Bouncing with Bud",
+  "action": "edit",
+  "find": "年僅 16 歲的 Niels-Henning Ørsted Pedersen",
+  "replace": "年僅 15 歲的 Niels-Henning Ørsted Pedersen",
+  "newDesc": "",
+  "reason": "Pedersen 1946 年 5 月 27 日生，1962 年 4 月 26 日錄音時 15 歲。",
+  "sources": [
+   "https://www.jazz.com/encyclopedia/rsted-pedersen-niels-henning"
+  ]
+ },
+ {
+  "id": 12,
+  "artist": "Gil Evans",
+  "album": "The Gil Evans Orchestra Plays the Music of Jimi Hendrix",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "原盤各軌錄於 1974 年 6 月 11–13 日 RCA Studio B；1975 年 4 月那梯次只有 1988 年 CD 補進的〈Little Wing〉，簡介已另句交代，原句無誤。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/The_Gil_Evans_Orchestra_Plays_the_Music_of_Jimi_Hendrix"
+  ]
+ },
+ {
+  "id": 13,
+  "artist": "笠井紀美子",
+  "album": "Butterfly",
+  "action": "edit",
+  "find": "1979 年為 CBS/Sony 合作的錄音",
+  "replace": "合作、1979 年由 CBS/Sony 發行的錄音",
+  "newDesc": "",
+  "reason": "錄音年兩源衝突（1978／1979 年 10 月），發行年 1979 兩源一致，改成只寫發行年。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Butterfly_(Kimiko_Kasai_album)"
+  ]
+ },
+ {
+  "id": 14,
+  "artist": "Bobbi Humphrey",
+  "album": "Satin Doll",
+  "action": "edit",
+  "find": "的第四張 Blue Note 專輯",
+  "replace": "的第四張 Blue Note 錄音室專輯",
+  "newDesc": "",
+  "reason": "依維基是第四張錄音室專輯；Blue Note 官方六張含現場盤《Live at Montreux》，算進去則序數不同，限定為錄音室專輯即兩源相容。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Satin_Doll_(Bobbi_Humphrey_album)",
+   "https://www.bluenote.com/artist/bobbi-humphrey/"
+  ]
+ },
+ {
+  "id": 15,
+  "artist": "Bobbi Humphrey",
+  "album": "Fancy Dancer",
+  "action": "edit",
+  "find": "的第五張 Blue Note 專輯",
+  "replace": "的第五張 Blue Note 錄音室專輯",
+  "newDesc": "",
+  "reason": "同上：第五張錄音室專輯；含《Live at Montreux》則是第六張 Blue Note 專輯，限定錄音室專輯即不衝突。",
+  "sources": [
+   "https://www.bluenote.com/artist/bobbi-humphrey/"
+  ]
+ },
+ {
+  "id": 16,
+  "artist": "Booker Ervin",
+  "album": "The In Between",
+  "action": "edit",
+  "find": "這是他在 Blue Note 唯一發行的領銜盤",
+  "replace": "這是他生前在 Blue Note 唯一發行的領銜盤",
+  "newDesc": "",
+  "reason": "1968 年 6 月的《Tex Book Tenor》場次在他 1970 年過世後才由 Blue Note 發行，補「生前」。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Tex_Book_Tenor"
+  ]
+ },
+ {
+  "id": 17,
+  "artist": "Carmen McRae",
+  "album": "I Am Music",
+  "action": "edit",
+  "find": "是她在 Blue Note 的唯一一張",
+  "replace": "是她在 Blue Note 的第一張",
+  "newDesc": "",
+  "reason": "1976 年《Can't Hide Love》同樣是 Blue Note（BN-LA635-G），MusicBrainz 與 Discogs 皆同。",
+  "sources": [
+   "https://api.discogs.com/releases/16483368"
+  ]
+ },
+ {
+  "id": 18,
+  "artist": "Kenny Drew",
+  "album": "New Faces - New Sounds, Introducing the Kenny Drew Trio",
+  "action": "edit",
+  "find": "他二十五歲掛頭牌的第一張",
+  "replace": "他二十四歲掛頭牌的第一張",
+  "newDesc": "",
+  "reason": "Drew 1928 年 8 月 28 日生，1953 年 4 月 16 日錄音時 24 歲。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kenny_Drew"
+  ]
+ },
+ {
+  "id": 19,
+  "artist": "Kenny Drew",
+  "album": "Undercurrent",
+  "action": "edit",
+  "find": "，也是他移居哥本哈根前在美國的最後錄音",
+  "replace": "，錄完隔年他便移居歐洲",
+  "newDesc": "",
+  "reason": "他 1961 年先到巴黎、1964 年才定居哥本哈根，「移居哥本哈根前在美國的最後錄音」無據；改寫成可證的遷居時序。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Kenny_Drew",
+   "https://tedpanken.wordpress.com/2017/08/28/for-the-89th-birthday-anniversary-of-pianist-kenny-drew-1928-1993-my-liner-note-for-the-reissue-of-the-xanadu-album-home-is-where-the-soul-is/"
+  ]
+ },
+ {
+  "id": 20,
+  "artist": "原信夫とシャープス・アンド・フラッツ",
+  "album": "Operation Glenn Miller",
+  "action": "edit",
+  "find": "樂團 1950 年在橫濱的舞廳起家",
+  "replace": "原信夫 1950 年先加入橫濱舞廳的一支樂團",
+  "newDesc": "",
+  "reason": "1950 年是原信夫加入橫濱舞廳樂團「ムーンライト」之年，移到東京品川後改名，1951 年 9 月以シャープス・アンド・フラッツ成軍；改寫後與《Sharps & Flats In Newport》簡介的 1951 年不再矛盾。",
+  "sources": [
+   "https://ja.wikipedia.org/wiki/%E5%8E%9F%E4%BF%A1%E5%A4%AB",
+   "https://columbia.jp/artist-info/haranobuo/prof.html"
+  ]
+ },
+ {
+  "id": 21,
+  "artist": "日野皓正",
+  "album": "Alone, Alone and Alone",
+  "action": "edit",
+  "find": "同年他也與菊地雅章錄下 Hino-Kikuchi Quintet",
+  "replace": "前一年他也與菊地雅章錄下 Hino-Kikuchi Quintet",
+  "newDesc": "",
+  "reason": "英日文維基皆記 Hino-Kikuchi Quintet 為 1968 年作品，句中「同年」指 1969 年有誤。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Terumasa_Hino"
+  ]
+ },
+ {
+  "id": 22,
+  "artist": "日野皓正",
+  "album": "Feelin' Good",
+  "action": "edit",
+  "find": "1964 年他加入白木秀雄的五重奏當團員",
+  "replace": "他先在白木秀雄的五重奏當團員",
+  "newDesc": "",
+  "reason": "加入年份英日維基不一（1964／1965），刪去年份。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Terumasa_Hino"
+  ]
+ },
+ {
+  "id": 23,
+  "artist": "秋吉敏子",
+  "album": "Her Trio Her Quartet",
+  "action": "edit",
+  "find": "曲目全挑標準曲與 bop 名曲，〈Kelo〉出自 J.J. Johnson，整張沒有她自己的作品。",
+  "replace": "曲目多是標準曲與 bop 名曲，〈Kelo〉出自 J.J. Johnson，另收她自寫的〈Salute to Shorty〉與〈Pea, Bee and Lee〉。",
+  "newDesc": "",
+  "reason": "節奏組分配與簡介一致（維基寫反，不改）；但維基與 Discogs 曲目都列〈Salute to Shorty〉〈Pea, Bee and Lee〉為她自作，改掉「整張沒有她自己的作品」（主線定案）。",
+  "sources": [
+   "https://api.discogs.com/releases/5700992",
+   "https://en.wikipedia.org/wiki/Toshiko_%E2%80%93_Her_Trio,_Her_Quartet"
+  ]
+ },
+ {
+  "id": 24,
+  "artist": "高橋達也と東京ユニオン",
+  "album": "Black Pearl",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "日文維基（高橋達也）記東京ユニオン 1978、1980 兩度出演 Montreux；英文維基寫 1980 年赴加州、登 Monterey 後在舊金山錄《Black Pearl》，並稱 Montreux「首次在 1978」，兩源不衝突，原句可留。",
+  "sources": [
+   "https://ja.wikipedia.org/wiki/高橋達也と東京ユニオン",
+   "https://en.wikipedia.org/wiki/Tokyo_Union"
+  ]
+ },
+ {
+  "id": 25,
+  "artist": "Harold Land",
+  "album": "Harold in the Land of Jazz",
+  "action": "edit",
+  "find": "Harold Land 的首張領銜專輯",
+  "replace": "Harold Land 首張以個人名義發行的 LP",
+  "newDesc": "",
+  "reason": "他 1949 年已為 Savoy 領銜錄音（78 轉），本作是首張個人名義 LP；限定為 LP 避免讀成首次領銜。",
+  "sources": [
+   "https://aaregistry.org/story/harold-land-born/"
+  ]
+ },
+ {
+  "id": 26,
+  "artist": "Michel Legrand",
+  "album": "Legrand Jazz",
+  "action": "edit",
+  "find": "二十四歲的巴黎編曲家",
+  "replace": "二十六歲的巴黎編曲家",
+  "newDesc": "",
+  "reason": "Legrand 1932 年 2 月 24 日生，1958 年 6 月錄音時 26 歲。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Michel_Legrand"
+  ]
+ },
+ {
+  "id": 27,
+  "artist": "Milt Jackson",
+  "album": "Milt Jackson With John Lewis, Percy Heath, Kenny Clarke, Lou Donaldson and the Thelonious Monk Quintet",
+  "action": "edit",
+  "find": "24 歲的 Jackson 是側手",
+  "replace": "25 歲的 Jackson 是側手",
+  "newDesc": "",
+  "reason": "Jackson 1923 年 1 月 1 日生，1948 年 7 月已 25 歲。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Milt_Jackson"
+  ]
+ },
+ {
+  "id": 28,
+  "artist": "The Modern Jazz Quartet",
+  "album": "Music from Odds Against Tomorrow",
+  "action": "edit",
+  "find": "Lewis 說這是他第一次順著劇情線寫音樂",
+  "replace": "Lewis 說這次他是順著劇情線寫音樂",
+  "newDesc": "",
+  "reason": "Lewis 1957 年已為《Sait-On Jamais》配樂，「第一次」無出處，拿掉序數保留說法本身。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/John_Lewis_(pianist)"
+  ]
+ },
+ {
+  "id": 29,
+  "artist": "本田竹広",
+  "album": "Jōdo",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "日文維基年表：首作《T. Honda Meets Rhythm Section Featuring S. Watanabe》（1969 年 12 月錄、1970 年 Trio 發行）、《The Trio》（1970 年 3 月）、《浄土》（1970 年 12 月），浄土正是 Trio 第三張領銜作；補洞層漏算了首作。",
+  "sources": [
+   "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83"
+  ]
+ },
+ {
+  "id": 30,
+  "artist": "Al Green",
+  "album": "Lay It Down",
+  "action": "edit",
+  "find": "暌違世俗靈魂樂多年後的 2008 年作品",
+  "replace": "Al Green 2008 年的作品",
+  "newDesc": "",
+  "reason": "前作 2005 年《Everything's OK》與 2003 年《I Can't Stop》同為世俗靈魂作品，「暌違多年」不成立，刪去。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lay_It_Down_(Al_Green_album)"
+  ]
+ },
+ {
+  "id": 31,
+  "artist": "The Staple Singers",
+  "album": "Freedom Highway",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "Discogs 的 2015 年 CD 曲目表共 18 軌（Pops Outro 與 Benediction 分列），與簡介一致；Legacy 新聞稿的 17 首是把收尾併計。",
+  "sources": [
+   "https://api.discogs.com/releases/6725887",
+   "https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/"
+  ]
+ },
+ {
+  "id": 32,
+  "artist": "The Staple Singers",
+  "album": "Freedom Highway",
+  "action": "edit",
+  "find": "歌詞點名艾默特·提爾在 Tallahatchie 河邊遇害一事",
+  "replace": "歌詞唱到 Tallahatchie 河裡尋獲的屍體，指的是艾默特·提爾一案",
+  "newDesc": "",
+  "reason": "歌詞確有「Tallahatchie river」一句，兩源都指向 Emmett Till 案，但歌詞沒有點名他，他也不是在河邊遇害（遺體被棄河中），改成歌詞實際的寫法。",
+  "sources": [
+   "https://www.antiwarsongs.org/canzone.php?lang=en&id=42694",
+   "https://williamrauscher.substack.com/p/freedom-highway"
+  ]
+ },
+ {
+  "id": 33,
+  "artist": "The Impressions",
+  "album": "Finally Got Myself Together",
+  "action": "edit",
+  "find": "Curtis Mayfield 離團三年後，The Impressions 靠這張 1974 年的第十五張錄音室專輯",
+  "replace": "Curtis Mayfield 離團四年後，The Impressions 靠這張 1974 年的錄音室專輯",
+  "newDesc": "",
+  "reason": "維基與 Britannica 皆記 Mayfield 1970 年離團，到 1974 年是四年；「第十五張」未能查證，一併拿掉序數。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/The_Impressions"
+  ]
+ },
+ {
+  "id": 34,
+  "artist": "Slave",
+  "album": "The Hardness of the World",
+  "action": "edit",
+  "find": "Slave 是 1975 年在 Dayton",
+  "replace": "Slave 是 1970 年代中期在 Dayton",
+  "newDesc": "",
+  "reason": "成軍年各源不一（1975 年底至 1976 年春／1976），改成各源相容的「1970 年代中期」。",
+  "sources": [
+   "https://www.buckeyebeat.com/slave.html"
+  ]
+ },
+ {
+  "id": 35,
+  "artist": "Johnnie Taylor",
+  "album": "Raw Blues",
+  "action": "edit",
+  "find": "他少年時在 Highway Q.C.'s 唱福音、與 Sam Cooke 同團",
+  "replace": "他少年時在 Sam Cooke 待過的 Highway Q.C.'s 唱福音",
+  "newDesc": "",
+  "reason": "Cooke 是 Highway Q.C.'s 較早的成員，兩人並未同時在團（Taylor 1957 年才接替 Cooke 進 Soul Stirrers）；原文已 280 字，改寫成不增字的正確說法。",
+  "sources": [
+   "https://encyclopediaofarkansas.net/entries/johnnie-harrison-taylor-637/"
+  ]
+ },
+ {
+  "id": 36,
+  "artist": "Chic",
+  "album": "C'est Chic",
+  "action": "edit",
+  "find": "〈Le Freak〉在 1978 年 10 月同時攻上",
+  "replace": "〈Le Freak〉先後攻上",
+  "newDesc": "",
+  "reason": "Hot 100 冠軍首週是 1978 年 12 月 9 日，不是 10 月，三榜也非同時登頂；拿掉月份與「同時」。",
+  "sources": [
+   "https://stereogum.com/2069711/the-number-ones-chics-le-freak/columns/the-number-ones"
+  ]
+ },
+ {
+  "id": 37,
+  "artist": "Syl Johnson",
+  "album": "Back for a Taste of Your Love",
+  "action": "edit",
+  "find": "1970 年〈Is It Because I'm Black〉",
+  "replace": "1969 年〈Is It Because I'm Black〉",
+  "newDesc": "",
+  "reason": "單曲 1969 年 9 月由 Twinight 發行，1970 年是同名專輯。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Is_It_Because_I%27m_Black"
+  ]
+ },
+ {
+  "id": 38,
+  "artist": "Labelle",
+  "album": "Nightbirds",
+  "action": "edit",
+  "find": "2021 年入選美國國家錄音登錄庫",
+  "replace": "後來入選美國國家錄音登錄庫",
+  "newDesc": "",
+  "reason": "國會圖書館標示為 2020 年度名單（2021 年 3 月公布），拿掉年份以免與官方年度不符。",
+  "sources": [
+   "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Lady-Marmalade_Bertei.pdf"
+  ]
+ },
+ {
+  "id": 39,
+  "artist": "The Emotions",
+  "album": "Untouched",
+  "action": "edit",
+  "find": "母帶其後隨 Stax 財務動盪而塵封多年,直到 2014 年才有正式數位重發。",
+  "replace": "她們在 Stax 錄的下一張則在廠牌末期被擱置，直到 2004 年才發行。",
+  "newDesc": "",
+  "reason": "被擱置的是 1973 年錄的第三張《Songs of Innocence and Experience》（2004 年由 Stax 發行），《Untouched》本身當年正常發行；2014 重發無據。",
+  "sources": [
+   "https://staxrecords.com/spotlight/the-emotions/"
+  ]
+ },
+ {
+  "id": 40,
+  "artist": "The Emotions",
+  "album": "Untouched",
+  "action": "edit",
+  "find": "1972 年發行",
+  "replace": "1971 年發行",
+  "newDesc": "",
+  "reason": "Stax 官方頁與維基專輯資訊欄皆記 1971 年（單曲〈Show Me How〉1971 年 9 月）；MusicBrainz 與維基底部模板作 1972，依兩源改 1971。",
+  "sources": [
+   "https://staxrecords.com/spotlight/the-emotions/",
+   "https://en.wikipedia.org/wiki/Untouched_(The_Emotions_album)"
+  ]
+ },
+ {
+  "id": 41,
+  "artist": "The Emotions",
+  "album": "Flowers",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "維基專輯條目的人員表把 Al McKay 列為吉他手（與 Joe Hutchinson Jr.），並與 Maurice White 合寫標題曲，原句無誤。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Flowers_(The_Emotions_album)"
+  ]
+ },
+ {
+  "id": 42,
+  "artist": "The Stylistics",
+  "album": "Rockin' Roll Baby",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "下一張《Let's Put It All Together》（1974 年 5 月）已改由 Hugo & Luigi 製作，《Rockin' Roll Baby》確是 Bell 製作的最後一張專輯；以專輯論「畫下句點」成立。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Let%27s_Put_It_All_Together",
+   "https://www.udiscovermusic.com/stories/stylistics-lets-put-it-all-together-song/"
+  ]
+ },
+ {
+  "id": 43,
+  "artist": "John Lee Hooker",
+  "album": "The Healer",
+  "action": "edit",
+  "find": "七十三歲的 John Lee Hooker",
+  "replace": "年逾七十的 John Lee Hooker",
+  "newDesc": "",
+  "reason": "Hooker 出生年有爭議，依通行的 1917 年算 1989 年是 72 歲，改成不帶確數的說法。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/John_Lee_Hooker"
+  ]
+ },
+ {
+  "id": 44,
+  "artist": "Tinariwen",
+  "album": "The Radio Tisdas Sessions",
+  "action": "edit",
+  "find": "2001 年由 Justin Adams 與 Lo'Jo 帶著器材進駐",
+  "replace": "Justin Adams 與 Lo'Jo 帶著器材進駐",
+  "newDesc": "",
+  "reason": "維基專輯條目正是把 Justin Adams 與 Lo'Jo 列為製作者，人名可留；但該條目記錄音在 2000 年 1 月、2001 年 8 月才發行，「2001 年錄下」有誤，刪去年份。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/The_Radio_Tisdas_Sessions",
+   "https://en.wikipedia.org/wiki/Tinariwen"
+  ]
+ },
+ {
+  "id": 45,
+  "artist": "Otis Rush",
+  "album": "Mourning in the Morning",
+  "action": "edit",
+  "find": "Otis Rush 自 1955 年起錄單曲",
+  "replace": "Otis Rush 自 1956 年起錄單曲",
+  "newDesc": "",
+  "reason": "維基、Mississippi Blues Trail、EBSCO 皆記他 1956 年以 Cobra 的〈I Can't Quit You Baby〉出道。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Otis_Rush"
+  ]
+ },
+ {
+  "id": 46,
+  "artist": "Chicago",
+  "album": "Chicago X",
+  "action": "edit",
+  "find": "拿下最佳流行團體演唱與最佳人聲伴奏編曲兩座葛萊美",
+  "replace": "為樂團拿下最佳流行團體演唱葛萊美，編曲另得一座",
+  "newDesc": "",
+  "reason": "最佳人聲伴奏編曲獎頒給編曲者 Guercio 與 Jimmie Haskell，樂團本身只得流行團體演唱一座；區分得主避免誤讀。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chicago_X"
+  ]
+ },
+ {
+  "id": 47,
+  "artist": "Beyond",
+  "album": "再見理想",
+  "action": "edit",
+  "find": "當時陣容還有第五名成員陳時安",
+  "replace": "當時陣容還有第五名成員劉志遠",
+  "newDesc": "",
+  "reason": "中文維基記陳時安在黃貫中加入前已離隊，劉志遠 1986 年加入並參與《再見理想》錄音；兩源一致。",
+  "sources": [
+   "https://zh.wikipedia.org/wiki/Beyond",
+   "https://zh.wikipedia.org/zh-tw/%E5%86%8D%E8%A6%8B%E7%90%86%E6%83%B3"
+  ]
+ },
+ {
+  "id": 48,
+  "artist": "新寶島康樂隊",
+  "album": "第樹輯",
+  "action": "edit",
+  "find": "第 8 屆金曲獎最佳演唱組獎由這個團以《新寶島康樂隊第樹輯》得獎",
+  "replace": "這個團以《新寶島康樂隊第樹輯》入圍第 8 屆金曲獎最佳演唱組獎",
+  "newDesc": "",
+  "reason": "文化部第八屆得獎名單的最佳演唱組是高向鵬、方怡萍《福氣啦》；同部會入圍名單列新寶島康樂隊《第樹輯》（報名單位台灣滾石），是入圍不是得獎。",
+  "sources": [
+   "https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124197",
+   "https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124196"
+  ]
+ },
+ {
+  "id": 49,
+  "artist": "Emerson, Lake & Palmer",
+  "album": "Emerson, Lake & Palmer",
+  "action": "edit",
+  "find": "發行後樂團登上 1970 年懷特島音樂節，聲名自此打開",
+  "replace": "發行前三個月，樂團已在 1970 年懷特島音樂節打開名聲",
+  "newDesc": "",
+  "reason": "懷特島演出在 1970 年 8 月底，專輯 11 月 20 日才發行，原句時序顛倒。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer_(album)",
+   "https://en.wikipedia.org/wiki/Emerson,_Lake_%26_Palmer"
+  ]
+ },
+ {
+  "id": 50,
+  "artist": "Santana",
+  "album": "Supernatural",
+  "action": "edit",
+  "find": "拿下九座得獎",
+  "replace": "拿下八座獎項",
+  "newDesc": "",
+  "reason": "Santana 在第 42 屆葛萊美得 8 座，追平 Michael Jackson 單屆紀錄；年度歌曲〈Smooth〉歸詞曲作者。",
+  "sources": [
+   "https://www.billboard.com/music/awards/santana-2000-grammys-record-michael-jackson-9340850/"
+  ]
+ },
+ {
+  "id": 51,
+  "artist": "Van Halen",
+  "album": "Fair Warning",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "VHND 與 Ultimate Classic Rock 皆記他與 Donn Landee 凌晨四點溜回錄音室重錄全部獨奏與疊錄、沒人發現；Templeman 事後說他其實知情，但「Eddie 說沒人發現」的轉述本身成立。",
+  "sources": [
+   "https://www.vhnd.com/fair-warning/",
+   "https://ultimateclassicrock.com/van-halen-fair-warning-album/"
+  ]
+ },
+ {
+  "id": 52,
+  "artist": "大象體操 Elephant Gym",
+  "album": "世界",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "文化部入圍名單與媒體報導皆記《世界》第 15 屆共入圍 5 項（與阿跨面、布萊梅並列），得最佳樂團獎，「另有四項入圍」正確。",
+  "sources": [
+   "https://tw.news.yahoo.com/%E7%AC%AC15%E5%B1%86%E9%87%91%E9%9F%B3%E5%89%B5%E4%BD%9C%E7%8D%8E%E5%AE%8C%E6%95%B4%E5%85%A5%E5%9C%8D%E5%90%8D%E5%96%AE%E6%9B%9D%E5%85%89%EF%BC%81-%E5%A4%A7%E8%B1%A1%E9%AB%94%E6%93%8D%E3%80%81%E9%98%BF%E8%B7%A8%E9%9D%A2%E3%80%81%E5%B8%83%E8%90%8A%E6%A2%85%E7%9A%86%E6%8F%90%E5%90%8D5%E9%A0%85%E5%85%B1%E4%BA%AB%E5%A4%A7%E8%B4%8F%E5%AE%B6-054410442.html",
+   "https://www.chinatimes.com/realtimenews/20240919003835-260404"
+  ]
+ },
+ {
+  "id": 53,
+  "artist": "Bon Jovi",
+  "album": "New Jersey",
+  "action": "edit",
+  "find": "是首張在蘇聯正式上架的美國專輯",
+  "replace": "在蘇聯正式上架",
+  "newDesc": "",
+  "reason": "Melodiya 發行《New Jersey》有兩源，但「首張美國專輯」只見部落格轉述，1989 年報導原文說的是「第一個在 Melodiya 發片的美國團體」，且此前已有美國藝人經 Melodiya 發行，拿掉「首張」。",
+  "sources": [
+   "https://www.deseret.com/1989/10/7/18827151/bon-jovi-to-cut-a-soviet-album/",
+   "https://riffology.co/posts/bon-jovi-new-jersey/"
+  ]
+ },
+ {
+  "id": 54,
+  "artist": "Devo",
+  "album": "Q: Are We Not Men? A: We Are Devo!",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "英文維基專輯條目原句：「After conflicts arose between the group and Eno, Bowie was brought in to remix the album」，並記 Bowie 週末協助 Eno；補洞層讀的是樂團條目，漏看專輯條目。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Q._Are_We_Not_Men%3F_A:_We_Are_Devo!"
+  ]
+ },
+ {
+  "id": 55,
+  "artist": "MONO",
+  "album": "Snowdrop",
+  "action": "edit",
+  "find": "東京 1999 年成立的四人器樂團",
+  "replace": "東京成軍的四人器樂團",
+  "newDesc": "",
+  "reason": "成軍年各源不一（1999 年起意、2000 年首演／2000 年成軍），刪去年份。",
+  "sources": [
+   "https://www.generasia.com/wiki/MONO"
+  ]
+ },
+ {
+  "id": 56,
+  "artist": "The Allman Brothers Band",
+  "album": "Brothers and Sisters",
+  "action": "edit",
+  "find": "Duane Allman 走後不到一年",
+  "replace": "Duane Allman 走後約一年",
+  "newDesc": "",
+  "reason": "Duane 1971 年 10 月 29 日、Oakley 1972 年 11 月 11 日過世，相隔一年多。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Berry_Oakley"
+  ]
+ },
+ {
+  "id": 57,
+  "artist": "宇宙人",
+  "album": "理想狀態",
+  "action": "edit",
+  "find": "，是他們第二度進入這個名單之後的第一座",
+  "replace": "，是他們第二度入圍、也是第一次得獎",
+  "newDesc": "",
+  "reason": "宇宙人 2016 年第 27 屆首度入圍未得獎，2023 年第 34 屆第二度入圍即首度得獎，原句易讀成入圍兩次後才得。",
+  "sources": [
+   "https://www.cna.com.tw/news/amov/202307010227.aspx"
+  ]
+ },
+ {
+  "id": 58,
+  "artist": "Alan Stivell",
+  "album": "Renaissance de la harpe celtique",
+  "action": "edit",
+  "find": "樂評 Bruce Elder 稱聽過的人再也回不去,凱爾特豎琴自此重新進入世界音樂的視野",
+  "replace": "後世樂評說它把凱爾特豎琴帶給了世界各地成千上萬的聽眾",
+  "newDesc": "",
+  "reason": "樂評人名應為 Bruce Eder 且依規則不進正文；「再也回不去」查無出處，改用維基所引評語的實際內容。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Alan_Stivell"
+  ]
+ },
+ {
+  "id": 59,
+  "artist": "Alan Stivell",
+  "album": "À l'Olympia",
+  "action": "keep",
+  "find": "",
+  "replace": "",
+  "newDesc": "",
+  "reason": "英文維基與 Steve Winick 記約 150 萬張、法文維基記逾 200 萬張，「超過一百五十萬張」與各源都相容。",
+  "sources": [
+   "https://fr.wikipedia.org/wiki/Alan_Stivell"
+  ]
+ },
+ {
+  "id": 60,
+  "artist": "Emmylou Harris",
+  "album": "Wrecking Ball",
+  "action": "edit",
+  "find": "日後成了 americana 一路人反覆借用的模板",
+  "replace": "日後被視為影響了 americana 這個類型的成形",
+  "newDesc": "",
+  "reason": "出處只支持「被視為對 Americana 類型成形有影響」（洛杉磯時報），「後輩反覆借用的模板」無據。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wrecking_Ball_(Emmylou_Harris_album)"
+  ]
+ },
+ {
+  "id": 61,
+  "artist": "Emmylou Harris",
+  "album": "Roses in the Snow",
+  "action": "edit",
+  "find": "1980 年的第七張錄音室專輯",
+  "replace": "1980 年的錄音室專輯",
+  "newDesc": "",
+  "reason": "專輯條目寫第七張、藝人條目清單數來是第八張（計數口徑不同），拿掉序數。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Emmylou_Harris"
+  ]
+ },
+ {
+  "id": 62,
+  "artist": "Gillian Welch",
+  "album": "Revival",
+  "action": "edit",
+  "find": "AllMusic 與 Entertainment Weekly 則給高分",
+  "replace": "AllMusic 與 No Depression 則大力稱讚",
+  "newDesc": "",
+  "reason": "維基所引 EW（Will Hermes）好評是針對 2003 年《Soul Journey》；《Revival》可查的正面評論是 AllMusic 與 No Depression。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Gillian_Welch"
+  ]
+ },
+ {
+  "id": 63,
+  "artist": "John Martyn",
+  "album": "Bless the Weather",
+  "action": "edit",
+  "find": "則是他第一首真正的 Echoplex 迴圈實驗",
+  "replace": "則是一段以 Echoplex 迴圈撐起的器樂實驗",
+  "newDesc": "",
+  "reason": "維基與 NPR 皆記他 1970 年《Stormbringer!》已用 Echoplex，「第一首」不成立，拿掉序數。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/John_Martyn"
+  ]
+ },
+ {
+  "id": 64,
+  "artist": "林生祥",
+  "album": "種樹",
+  "action": "edit",
+  "find": "將獎金捐給美濃種樹團隊",
+  "replace": "將獎金捐給美濃種樹團隊等團體",
+  "newDesc": "",
+  "reason": "獎金分給美濃種樹團隊、《月光山》、《青芽兒》與楊儒門等四個對象，補「等團體」。",
+  "sources": [
+   "https://ent.ltn.com.tw/news/paper/136087"
+  ]
+ },
+ {
+  "id": 65,
+  "artist": "周杰倫",
+  "album": "八度空間",
+  "action": "edit",
+  "find": "中國大陸版把〈分裂〉改名為〈離開〉",
+  "replace": "中國版把〈分裂〉改名為〈離開〉",
+  "newDesc": "",
+  "reason": "用語規則：中國一律寫「中國」，不寫「中國大陸」。",
+  "sources": [
+   "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%BA%A6%E7%A9%BA%E9%96%93"
+  ]
+ },
+ {
+  "id": 66,
+  "artist": "周杰倫",
+  "album": "Jay",
+  "action": "edit",
+  "find": "由台灣博德曼發行",
+  "replace": "由阿爾發音樂發行",
+  "newDesc": "",
+  "reason": "中文維基與文化部金曲名單皆記發行公司為阿爾發音樂，博德曼（BMG）是經銷商。",
+  "sources": [
+   "https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124208"
+  ]
+ },
+ {
+  "id": 67,
+  "artist": "Madonna",
+  "album": "Madonna",
+  "action": "edit",
+  "find": "打開門路，才換來整張專輯的錄製許可",
+  "replace": "打開門路，先簽下的只是單曲約",
+  "newDesc": "",
+  "reason": "Kamins 引介 Sire 的 Seymour Stein 後簽的是單曲合約（〈Everybody〉1982 年 10 月），專輯在單曲之後才做；原文已 278 字，改寫不增字。",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Madonna"
+  ]
+ },
+ {
+  "id": 68,
+  "artist": "林憶蓮",
+  "album": "Love, Sandy",
+  "action": "edit",
+  "find": "的一張，並獲新加坡金曲獎最佳專輯。",
+  "replace": "的一張。",
+  "newDesc": "",
+  "reason": "中文維基只記她在新加坡金曲獎得最佳演繹女歌手，查無「最佳專輯」，刪去此細節。",
+  "sources": [
+   "https://zh.wikipedia.org/wiki/%E6%9E%97%E6%86%B6%E8%93%AE"
+  ]
  }
 ]
