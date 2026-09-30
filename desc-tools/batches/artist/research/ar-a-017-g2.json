@@ -600,5 +600,95 @@
   "failedFetches": 4,
   "status": "full",
   "notes": "同名確認：卡池五張（Autobahn、The Man-Machine、Computer World、Radio-Activity、Trans-Europe Express）皆為這個德國樂團，無混卡。事實庫 research 為空，從零查。依派工特注，材料極多只收共識與身世。補查 7 次：維基 Kraftwerk（開頁）、WebSearch Schneider 訃聞、Britannica Kraftwerk（開頁）、搖滾名人堂官網（開頁）、維基 Florian Schneider（開頁）、WebSearch 葛萊美終身成就、Grammy.com Schneider 訃聞（開頁）。失敗（不計）：CNN（451）、NPR（503）、EDM.com（403）、另有 Rolling Stone 未再試。名人堂官方（可具名單源）：Rock Hall 官網介紹寫 Kraftwerk 為『the blueprint for modern electronic music』，入選類別 Musical Influence，由 Pharrell Williams 引介，Pharrell 致詞：『Today electronic music is everywhere, but what Kraftwerk did was groundbreaking and revolutionary』；官網說明文並稱他們是戰後流行樂史上與披頭四並列的兩個最有影響力的樂團（此句為官網介紹，網址 https://www.rockhall.com/inductees/kraftwerk）；寫作層可寫成『搖滾名人堂稱…』。第二源說明：origin 第一、二條與 legacy 第三條的 src2 Grammy.com 開頁；維基兩個條目（Kraftwerk 與 Florian Schneider）彼此同站，非獨立；Britannica 開頁。Schneider 過世日期只有維基兩條目（同站）給出 4 月 21 日，Grammy.com 給 5 月 7 日與之衝突，寫作層若引日期請寫『2020 年 4 月』並留意。單源不收：Autobahn 全美榜第 5（榜位）、《Man-Machine》封面攝影 Gunther Fröhling（維基單源）、Britannica 稱他們是『godfathers of electronic pop』（單源）、krautrock 歸類與 Can、Neu! 並列（Britannica 單源）、Schneider 的 Robovox 語音合成器與電子長笛（維基 Florian Schneider 單源）、Bowie 在《Heroes》寫〈V-2 Schneider〉致意（維基單源）、Schneider 2006 年 11 月最後演出與 2009 年 1 月確認離團（維基單源）、六次名人堂提名（Grammy.com 單源）、Schneider 1947 年 4 月 7 日生於 Öhningen（維基與搜尋摘要）、Hütter 1946 年生（Britannica 單源）。 已撤出 f 的細節：團名意思『發電廠』與團員穿統一服裝『人偶』說法（Britannica 單源）、第 56 屆前夕的特別功績獎典禮（搜尋摘要）、名人堂入選類別 Musical Influence（Rock Hall 官網單源，見名人堂官方那句）。"
+ },
+ {
+  "key": "lady gaga",
+  "name": "Lady Gaga",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Lady Gaga 本名 Stefani Joanne Angelina Germanotta，1986 年 3 月 28 日生於紐約。",
+      "src": "https://en.wikipedia.org/wiki/Lady_Gaga",
+      "src2": "https://www.britannica.com/biography/Lady-Gaga",
+      "from": "new"
+     },
+     {
+      "f": "她進紐約大學 Tisch 藝術學院念音樂，念到一半（2005 年）輟學，專心闖音樂。",
+      "src": "https://en.wikipedia.org/wiki/Lady_Gaga",
+      "src2": "https://www.britannica.com/biography/Lady-Gaga",
+      "from": "new"
+     },
+     {
+      "f": "出名前她在紐約的小型俱樂部演出（維基記為下東城的新式艷舞秀場），藝名取自 Queen 的歌〈Radio Ga Ga〉。",
+      "src": "https://en.wikipedia.org/wiki/Lady_Gaga",
+      "src2": "https://www.britannica.com/biography/Lady-Gaga",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的路線從舞曲流行一路走到爵士：2014 年與 Tony Bennett 合作標準曲專輯《Cheek to Cheek》，2021 年再合作《Love for Sale》。",
+      "src": "https://en.wikipedia.org/wiki/Lady_Gaga",
+      "src2": "https://www.britannica.com/biography/Lady-Gaga",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Born This Way〉是她公開講明的「自己是誰」宣言曲，主題是自我接納與 LGBTQ 權益；2011 年發行時同性婚姻在美國全國還不合法，這首歌讓主流流行樂第一次這麼直接地談這件事。",
+      "src": "https://en.wikipedia.org/wiki/Born_This_Way_(Lady_Gaga_song)",
+      "src2": "https://www.udiscovermusic.com/stories/story-behind-lady-gaga-born-this-way/",
+      "from": "new"
+     },
+     {
+      "f": "Lady Gaga 2012 年成立 Born This Way Foundation，關注青少年的身心健康、反霸凌與心理健康污名。",
+      "src": "https://en.wikipedia.org/wiki/Born_This_Way_Foundation",
+      "src2": "https://en.wikipedia.org/wiki/Lady_Gaga",
+      "from": "new"
+     },
+     {
+      "f": "她替電影《A Star Is Born》共同寫作的〈Shallow〉獲奧斯卡最佳原創歌曲（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Lady_Gaga",
+      "src2": "https://www.britannica.com/biography/Lady-Gaga",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈Shallow〉獲奧斯卡最佳原創歌曲（得獎）。",
+    "src": "https://en.wikipedia.org/wiki/Lady_Gaga",
+    "src2": "https://www.britannica.com/biography/Lady-Gaga",
+    "from": "new"
+   },
+   {
+    "f": "2012 年成立 Born This Way Foundation。",
+    "src": "https://en.wikipedia.org/wiki/Born_This_Way_Foundation",
+    "src2": "https://en.wikipedia.org/wiki/Lady_Gaga",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "藝名由來：維基寫 Rob Fusari 聲稱是他取的（Radio Ga Ga 被自動修正成 Lady Gaga）；Britannica 寫藝名源自 Queen 的〈Radio Ga Ga〉；facts 只寫『取自〈Radio Ga Ga〉』，不寫是誰取的。",
+   "〈Born This Way〉發行日：歌曲維基寫 2011 年 2 月 11 日；uDiscover 寫 5 月 23 日（那是專輯發行日）；facts 不寫日期，只寫 2011 年。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "同名確認：卡池五張（The Fame Monster、Born This Way、ARTPOP、Joanne、Cheek to Cheek）皆為 Lady Gaga 本人，無混卡。事實庫 research 為空，從零查。依派工特注，銷量、串流與冠軍累計數字（16 座葛萊美、〈Born This Way〉為第 1000 首冠軍單曲、The Fame 四首冠軍單曲等）一律不收。補查 8 次：維基 Lady Gaga（開頁）、Britannica Lady Gaga（開頁）、WebSearch 基金會、維基〈Born This Way〉歌曲（開頁）、維基 Born This Way Foundation（開頁）、WebSearch Rolling Stone 榜單、uDiscover〈Born This Way〉（開頁）、WebSearch 後輩影響。失敗（不計）：Inside Philanthropy（開頁後無內容）、Rolling Stone 榜單（307 轉 tollbit，付費牆未取得）。第二源說明：legacy 第二條的兩源皆維基（Foundation 條目與 Lady Gaga 條目，同站，非獨立）；基金會 2012 年 2 月 29 日正式啟動（維基）、與母親 Cynthia Germanotta 共同創立（維基與搜尋摘要）單源不進 f。Sound 只有一條，因為兩源皆未描述聲音風格；維基寫她的影響來源有 David Bowie 與 Queen（單源）。後輩影響：搜尋只找到她提攜 Chappell Roan、Charli XCX 等的報導（Billboard、American Songwriter 摘要，未開頁），沒有後輩點名受她影響的可用兩源，legacy 仍缺『後輩點名』這一類。單源不收：維基首段『An influential figure in popular music, known for her image reinventions, flamboyant fashion, and versatility across the entertainment industry』（維基單源，可寫『維基稱』）、Rolling Stone 2023 年把〈Born This Way〉評為『最激勵人心的 LGBTQ 歌曲』第 1 名（維基與搜尋摘要，頁面沒開成）、2017 年 Super Bowl LI 中場演出（維基單源）、Convent of the Sacred Heart 就讀（維基單源）、Lady Starlight 合作（維基單源）、Joanne 以已逝姑姑命名（維基單源）、Britannica 稱 The Fame 讓她成為 Billboard Pop Songs 榜 17 年史上第一位首張專輯拿四首冠軍的人（榜史紀錄，單源）。"
  }
 ]
