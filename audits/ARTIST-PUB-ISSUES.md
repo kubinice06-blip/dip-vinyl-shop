@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 56 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 59 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -60,3 +60,6 @@
 | ar-a-010 | Devo | Q: Are We Not Men? A: We Are Devo! | Eno 與樂團衝突後，改請 David Bowie 進來重混 | 本層開頁讀到的維基、Britannica、Ultimate Classic Rock 只寫 Eno 製作、Bowie 協助簽約或曾宣布要製作，沒有任何一源寫 Bowie 重混首張；待店主以其他來源核對，查無依據前建議刪去這一句。 | https://en.wikipedia.org/wiki/Devo |
 | ar-a-011 | MONO | Snowdrop | 東京 1999 年成立的四人器樂團 | 成軍年各源不一致：維基寫 1999 年 1 月起意、2000 年 1 月首演，generasia 寫 2000 年成軍；建議改成不帶年份，或改寫「1999 年起意組團」並確認。 | https://www.generasia.com/wiki/MONO |
 | ar-a-012 | The Allman Brothers Band | Brothers and Sisters | Duane Allman 走後不到一年，貝斯手 Berry Oakley 也死於機車事故 | Duane 1971-10-29 過世、Oakley 1972-11-11 過世，相隔約 12 個月又 13 天，超過一年；建議改『約一年後』或『隔年』。另 Oakley 最後參與的錄音是本專輯之說本層未查。 | https://en.wikipedia.org/wiki/Berry_Oakley |
+| ar-a-012 | 宇宙人 | 理想狀態 | 讓樂團在第 34 屆金曲獎拿下最佳樂團獎，是他們第二度進入這個名單之後的第一座 | 依中文維基最佳樂團獎表，宇宙人共入圍該獎 2 次（第 27 屆 2016 年《一萬小時》未得獎、第 34 屆 2023 年《理想狀態》得獎）；CNA 0227 寫 2023 年是首度獲獎。『第二度進入之後的第一座』易讀成先入圍兩次才得獎，實際是第二次入圍即得獎，建議改寫成『繼 2016 年第 27 屆入圍之後，第二度入圍即得獎，是成軍 19 年的第一座』。（最佳樂團獎表與 CNA 0227 皆確認 2016 年入圍、2023 年首度得獎） | https://www.cna.com.tw/news/amov/202307010227.aspx |
+| ar-a-013 | Alan Stivell | Renaissance de la harpe celtique | 樂評 Bruce Elder 稱聽過的人再也回不去 | 英文維基引的評論者拼作 Bruce Eder（AllMusic 樂評人），上線簡介寫 Bruce Elder，拼法需核對；維基引文為「introduced the Celtic harp to many thousands of listeners around the world」，簡介「聽過的人再也回不去」的句意本次查不到出處，需對照原評再決定是否保留。 | https://en.wikipedia.org/wiki/Alan_Stivell |
+| ar-a-013 | Alan Stivell | À l'Olympia | 賣出超過一百五十萬張 | 非錯誤但出處分歧：英文維基與 Steve Winick 記約 150 萬張，法文維基記逾 200 萬張。若要保守可寫「約 150 萬張（英文維基）」。 | https://fr.wikipedia.org/wiki/Alan_Stivell |
