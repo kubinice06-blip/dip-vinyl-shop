@@ -482,6 +482,316 @@
     "notes": "事實庫四張皆為專輯欄位與版權資料，origin／sound／legacy 全靠補查。八次：中文維基〈四分衛樂團〉、WebSearch（樂團地位與獎項）、UDN 報時光專題、樂手巢 25 週年專訪、WebSearch（金馬獎）、中文維基〈金馬獎最佳原創電影歌曲〉、WebSearch（金音獎）、中文百科（newton.com.tw）。失敗 2 次（未計入）：台灣流行音樂維基館（503）、臺灣流行音樂資料庫金馬頁（404）。poolAlbums 四張（Deep Blue、Rock Team、世界、愛曾經讓我們在一起）皆為四分衛，無同名混卡。 非獨立：中文維基兩個條目同站；中文百科的獲獎表與中文維基來源相近，故金曲與金音各條標明非獨立；UDN 報時光與樂手巢為獨立報導。 主詞：金曲獎第 11、13、15 屆是樂團入圍（作品分別是《起來》《Deep Blue》《Rock Team》）；金音獎最佳樂團獎頒給樂團，最佳搖滾單曲獎頒給歌曲〈一首搖滾上月球〉，中文百科寫最佳樂團獎作品為《愛可以讓我們在一起》；金馬獎最佳原創電影歌曲頒給歌曲〈I Love You〉，中文維基〈金馬獎最佳原創電影歌曲〉頁的演唱者欄摘要不清，歌詞作者為陳如山（搜尋摘要與該頁摘要），故 facts 寫「四分衛的〈I Love You〉」而不寫演唱者細節；電影名《一首搖滾上月球》只見搜尋摘要與該頁的英文摘要，未進 facts。 未進 facts（單源）：2012 年復出演出在 Legacy Taipei（中文維基摘要單源）；主唱阿山早期白天在廣告公司上班、晚上趕錄音，成員成立初期都有正職（UDN 單源）；四分衛出道早於五月天、「合輯之王」（UDN 單源）；「台灣原創音樂的代表」「台灣不敗搖滾樂團」是樂手巢專訪的稱呼，單源，且屬訪談報導的形容，不收；虎神說樂器越簡單越能表達，成員推崇 Prince 等人（樂手巢單源）；已發行 9 張專輯（維基與搜尋摘要）與 7 張專輯 4 張 EP（樂手巢）數字不一致，不收；2002 年 1 月 Channel V 華語榜中榜特別推薦新浪潮樂團，上線簡介與中文百科（第 8 屆 2002）有年份說法，未另開獨立來源，不收。"
   },
   {
+    "key": "回聲樂團",
+    "name": "回聲樂團",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "回聲樂團出身新竹的國立清華大學，前身是清大迴聲社；1998 年暑假為了在新竹酒吧駐唱臨時組團，老闆問團名時順口用了社團的英文名 Echo。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+            "from": "bank"
+          },
+          {
+            "f": "主唱吳柏蒼在清華大學電機系時組了自己的第一個樂團。",
+            "src": "https://ysolife.com/echo-your-oasis-soul/",
+            "src2": "https://www.nthu.edu.tw/hotNews/content/201",
+            "from": "new"
+          },
+          {
+            "f": "吳柏蒼、慕春佑、邱文彥三位成員都是清華校友，出身校內搖滾社團迴聲社。",
+            "src": "https://www.nthu.edu.tw/hotNews/content/201",
+            "src2": "https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "風格屬獨立搖滾與英式搖滾，受 1990 年代英搖影響，歌詞帶詩意。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+            "src2": "https://www.verse.com.tw/article/echo-amazon-2023",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2011 年第 22 屆金曲獎，回聲樂團的《處女空氣》入圍最佳樂團獎。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+            "src2": "https://www.nthu.edu.tw/hotNews/content/201",
+            "from": "new"
+          },
+          {
+            "f": "清華大學官方新聞稿稱回聲是台灣當代最具代表性的獨立樂團之一；VERSE 的回顧文章也稱他們是台灣獨立音樂界的核心人物之一。",
+            "src": "https://www.nthu.edu.tw/hotNews/content/201",
+            "src2": "https://www.verse.com.tw/article/echo-amazon-2023",
+            "from": "new"
+          },
+          {
+            "f": "2009 年回聲與國際環保組織綠色和平合作辦「處女空氣」演唱會，另有「心電回聲」科技藝術展演：以心電圖機記錄樂手與觀眾的心跳，後來在台北聽障奧運的「聽障嘉年華」展出。",
+            "src": "https://zh.wikipedia.org/wiki/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+            "from": "bank"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2002 年首張專輯《感官駕馭》由水晶唱片發行，成為水晶當年最賣座的出版品。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+            "from": "bank"
+          },
+          {
+            "f": "鍵盤手吳新逸 2008 年離團、2025 年回歸；樂團 2026 年推出新專輯《靈魂的回聲》。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2002 年發行首張專輯《感官駕馭》。",
+        "src": "https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+        "from": "bank"
+      },
+      {
+        "f": "2011 年第 22 屆金曲獎最佳樂團獎入圍（《處女空氣》）。",
+        "src": "https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%81%B2%E6%A8%82%E5%9C%98",
+        "src2": "https://www.nthu.edu.tw/hotNews/content/201",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫 c112-b 與上線簡介（靈魂的回聲）寫鍵盤手 2008 年離團、2025 年回歸，與中文維基摘要一致，無衝突。",
+      "成軍年：中文維基 infobox 寫 1999 年起活動，酒吧駐唱組團寫 1998 年暑假；facts 只寫「1998 年暑假臨時組團」。"
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫的研究稿是專輯與 MusicBrainz 層級，三格靠補查。八次：中文維基〈回聲樂團〉、WebSearch（樂團地位與金曲）、清華大學官網新聞（2014）、樂手巢吳柏蒼專訪、WebSearch（金曲 22 入圍）、WebSearch（感官駕馭與水晶唱片）、VERSE 回顧文章、WebSearch（巴士底之日與免費下載）。失敗 3 次（未計入）：回聲官網返校部落格（404）、電視台金曲 22 入圍頁（頁面編碼損毀無法讀）、回聲官網「感官駕馭 十年」（404）。poolAlbums 四張（巴士底之日、感官駕馭、處女空氣、靈魂的回聲）皆為此團，無同名混卡。 金曲獎主詞：入圍的是專輯《處女空氣》（樂團署名參選最佳樂團獎），第 22 屆該獎得主為 MATZKA《MATZKA》，同組入圍的另有 io、MONKEY PILOT、草莓救星與董事長樂團（搜尋摘要，另一個開頁的入圍名單來源讀不到，故 facts 不寫得主與同組名單）；facts 的「入圍」有中文維基與清大新聞稿兩處開頁支持，屆次與專輯名來自搜尋摘要與上線簡介（處女空氣：第 22 屆最佳樂團獎入圍未得獎）。 非獨立：清華大學官網新聞稿是校方對校友的自我推介，「最具代表性」是校方措辭，故 facts 寫成「稱」；VERSE 的說法是文章筆調。bank 各條取自事實庫與中文維基摘要，來源同站。 未進 facts（單源或只見搜尋摘要）：三位成員分別當過迴聲社社長與各自科系（清大新聞稿單源）；吳柏蒼自述深受 Oasis 影響、大學第一個樂團翻唱的第一首歌是〈Live Forever〉、崇拜 Damon Albarn 與 Noel Gallagher（樂手巢單源）；羅尹均畢業於交通大學（清大新聞稿單源）；迴聲社錄音室與 300 張合輯 CD（清大新聞稿單源）；2000 年〈感官駕馭〉在滾石可樂網站成為年度點播前三名、吳柏蒼為回台發片放棄紐約大學學業、2002 年 1 月 11 日在地下社會辦發行演唱、2002 年獲華語媒體音樂大獎最佳新人（搜尋摘要，來源疑同出維基，未開頁）；2007 年《巴士底之日》發行前開放十首歌免費下載、實為 24 首雙專輯、首批 CD 30 分鐘賣完、樂團首次全面自主製作與行銷（搜尋摘要，另 VERSE 單源寫免費下載早於 Radiohead 的做法）；吳柏蒼 2008 年創辦 iNDIEVOX（樂手巢單源）；2015 年起休團八年、2023 年 10 月以〈Amazon〉回歸（VERSE 單源，且與維基列出的 2014 年與 2026 年專輯的時間線需再核）；在「網路溫度計」排第 8 名的獨立樂團（維基摘要，來源不明，不收）；QQ 音樂 600 萬次播放（維基單源）。 「第一位／最早」類宣稱（免費下載早於 Radiohead）一律不收。"
+  },
+  {
+    "key": "夾子電動大樂隊",
+    "name": "夾子電動大樂隊",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "主唱應蔚民（小應）1970 年 10 月 24 日生於台北，成長於眷村，不會說閩南語。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E6%87%89%E8%94%9A%E6%B0%91",
+            "src2": "https://time.udn.com/udntime/story/122834/9650775",
+            "from": "new"
+          },
+          {
+            "f": "小應畢業於中原大學醫學工程系。",
+            "src": "https://time.udn.com/udntime/story/122834/9650775",
+            "src2": "https://zh.wikipedia.org/zh-tw/%E6%87%89%E8%94%9A%E6%B0%91",
+            "from": "new"
+          },
+          {
+            "f": "小應早年受古典鋼琴訓練，先後參與濁水溪公社與霹靂鳥，之後才組成夾子電動大樂隊。",
+            "src": "https://roxyrocker.com/2015/06/17/%E3%80%90%E6%90%96%E6%BB%BE%E5%AE%A2-%E5%B0%81%E9%9D%A2%E4%BA%BA%E7%89%A9%E3%80%91%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A-%E5%B0%8F%E6%87%89%EF%BC%88%E6%87%89/",
+            "from": "bank"
+          },
+          {
+            "f": "樂團前身是搖滾樂隊「夾子」，加入兩名舞者「粒粒」與「辣辣」後更名為夾子電動大樂隊。",
+            "src": "https://zh.wikipedia.org/wiki/%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A",
+            "src2": "https://time.udn.com/udntime/story/122834/9650775",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "音樂路線是「台客搖滾」，把電子花車與那卡西的元素放進搖滾樂團編制，台上配兩名舞者。",
+            "src": "https://zh.wikipedia.org/wiki/%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A",
+            "src2": "https://time.udn.com/udntime/story/122834/9650775",
+            "from": "new"
+          },
+          {
+            "f": "演出結合戲劇與口白，形式接近搖滾綜藝歌舞秀。",
+            "src": "https://time.udn.com/udntime/story/122834/9650775",
+            "src2": "https://www.xinmedia.com/article/13143",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈轉吧！七彩霓虹燈〉創作於 1998 年、2000 年發行，幾乎沒有宣傳，數年後靠點播與口耳相傳流行到校園社團與 KTV。",
+            "src": "https://time.udn.com/udntime/story/122834/9650775",
+            "src2": "https://www.xinmedia.com/article/13143",
+            "from": "new"
+          },
+          {
+            "f": "2017 年 11 月饒舌歌手顏冠希 JY 取樣〈轉吧！七彩霓虹燈〉重做成嘻哈版，讓這首歌再度受到注目。",
+            "src": "https://zh.wikipedia.org/wiki/%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A",
+            "from": "bank"
+          },
+          {
+            "f": "小應 2008 年在電影《海角七號》飾演「水蛙」，讓他被更多人認識。",
+            "src": "https://time.udn.com/udntime/story/122834/9650775",
+            "src2": "https://zh.wikipedia.org/zh-tw/%E6%87%89%E8%94%9A%E6%B0%91",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團一度因內部意見不合解散，小應轉往劇場與電子音樂，2014 年以《情慾教室》讓樂團重新聚合。",
+            "src": "https://roxyrocker.com/2015/06/17/%E3%80%90%E6%90%96%E6%BB%BE%E5%AE%A2-%E5%B0%81%E9%9D%A2%E4%BA%BA%E7%89%A9%E3%80%91%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A-%E5%B0%8F%E6%87%89%EF%BC%88%E6%87%89/",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2000 年發行〈轉吧！七彩霓虹燈〉。",
+        "src": "https://time.udn.com/udntime/story/122834/9650775",
+        "src2": "https://www.xinmedia.com/article/13143",
+        "from": "new"
+      },
+      {
+        "f": "2014 年以《情慾教室》讓樂團重新聚合。",
+        "src": "https://roxyrocker.com/2015/06/17/%E3%80%90%E6%90%96%E6%BB%BE%E5%AE%A2-%E5%B0%81%E9%9D%A2%E4%BA%BA%E7%89%A9%E3%80%91%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A-%E5%B0%8F%E6%87%89%EF%BC%88%E6%87%89/",
+        "from": "bank"
+      }
+    ],
+    "conflicts": [
+      "中文維基〈夾子電動大樂隊〉寫 2000 至 2014 年共七張專輯、曾以「夾子樂團」「夾子太硬啦」等名義發片；上線簡介卡片名為《夾子電動大樂隊》（2000）；搜尋摘要（疑源自維基）稱 2000 年首張專輯是《搖滾綜藝秀》或《轉吧！七彩霓虹燈》，專輯正名未能開頁核實，facts 不寫專輯名。",
+      "應蔚民開始活動的年份：中文維基〈應蔚民〉寫 1999 年起在夾子；不寫入 facts。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [
+      {
+        "album": "夾子電動大樂隊",
+        "claim": "主唱應蔚民（小應）是濁水溪公社前鼓手",
+        "problem": "本層開頁的搖滾客專訪與中文維基〈應蔚民〉只寫他「先後參與濁水溪公社與霹靂鳥」，沒有寫擔任鼓手；搜尋摘要另說霹靂鳥四號由蔡海恩、張明章與應蔚民組成，也沒有樂器資料。鼓手之說本層查不到來源，宜改成「參與過濁水溪公社」。",
+        "src": "https://roxyrocker.com/2015/06/17/%E3%80%90%E6%90%96%E6%BB%BE%E5%AE%A2-%E5%B0%81%E9%9D%A2%E4%BA%BA%E7%89%A9%E3%80%91%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A-%E5%B0%8F%E6%87%89%EF%BC%88%E6%87%89/"
+      }
+    ],
+    "notes": "事實庫兩則研究稿只有搖滾客專訪一個來源，三格靠補查。八次：中文維基〈夾子電動大樂隊〉、WebSearch（樂團與濁水溪公社，內含兩個子查詢）、UDN 報時光專題、搖滾客專訪（bank 來源再開）、欣傳媒、WebSearch（海角七號）、WebSearch（Fountain 與春天吶喊）、中文維基〈應蔚民〉。失敗 1 次（未計入）：The News Lens 文章（403）。poolAlbums 四張（夾子電動大樂隊、不會說台語、地下人、情慾教室）皆為此團，無同名混卡。 非獨立：中文維基〈夾子電動大樂隊〉與〈應蔚民〉同站（維基頁首標記缺出處，只當輔助）；UDN 報時光與欣傳媒為獨立報導；搖滾客為 bank 舊來源。 未進 facts（單源或只見搜尋摘要）：小應曾任醫療器材工程師、為音樂夢想辭職（UDN 單源）；搜尋摘要稱 2000 年首張專輯入選英文刊物 Fountain「近百年台灣最有影響力的 50 張專輯」（疑源自維基，未開到原文）；夾子在春天吶喊演出 15 年、2010 年獲春天吶喊觀眾票選最受支持前五名樂團（搜尋摘要）；〈不會說台語〉以外省第二代視角自嘲、獲跨政治陣營共鳴、樂團常受邀尾牙婚禮與選舉活動（UDN 單源）；小應在北投精神病院維修設備、財務困頓時期（UDN 與中文維基各單源，寫作層若用要標為個人經歷）；貝斯手櫻木（欣傳媒單源）；小應 2024 年宣布退出演藝圈轉任工程師、2025 年起任房仲（中文維基與多篇搜尋摘要，屬近況履歷不收）；〈轉吧！七彩霓虹燈〉「在 1998 年初開始嘗試本土搖滾」的創作過程（搜尋摘要）；小應說過的「音樂與歌詞無關」等創作觀（搖滾客單源）。 顏冠希 JY 取樣一條標 bank：來源是中文維基與上線簡介，維基頁沒有出處，屬單源，供寫作層斟酌。"
+  },
+  {
+    "key": "拍謝少年 sorry youth",
+    "name": "拍謝少年 Sorry Youth",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "拍謝少年 2005 年春天吶喊過後開始組團，團名 Sorry Youth 是對美國搖滾樂團 Sonic Youth 的致敬；創團初期以樂器演奏為主，後來改以台語創作，才把團名以台語翻譯為「拍謝少年」。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+            "from": "bank"
+          },
+          {
+            "f": "現在的成員是吉他手維尼（張勝為）、貝斯手薑薑（梁宏彰）與鼓手宗翰（謝宗翰）。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+            "src2": "https://taiwan.md/music/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "拍謝少年走台語搖滾路線。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+            "src2": "https://taiwan.md/music/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "拍謝少年 2018、2021、2024 年三度獲金音創作獎最佳搖滾專輯獎，作品依序是《兄弟沒夢不應該》《歹勢好勢》《噪音公寓》（第 9、12、15 屆）。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+            "src2": "https://taiwan.md/music/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4/",
+            "from": "new"
+          },
+          {
+            "f": "2018 年第 29 屆金曲獎最佳專輯裝幀設計獎由《兄弟沒夢不應該》的包裝設計獲得；這個獎項頒給專輯包裝，不是樂團本身。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+            "src2": "https://taiwan.md/music/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4/",
+            "from": "new"
+          },
+          {
+            "f": "《歹勢好勢》（2021）在 flyingV 募得 311 萬元以上，創下專輯類型的募資紀錄。",
+            "src": "https://taiwan.md/music/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4/",
+            "src2": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+            "from": "new"
+          },
+          {
+            "f": "《噪音公寓》（2024）在 flyingV 募得約 662 萬元，共 4888 人贊助，達成率 661.65%。",
+            "src": "https://www.flyingv.cc/projects/35047/",
+            "from": "bank"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2012 年發行首張專輯《海口味》。",
+            "src": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+            "src2": "https://taiwan.md/music/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2018 年第 9 屆金音創作獎最佳搖滾專輯獎（《兄弟沒夢不應該》）。",
+        "src": "https://www.bamid.gov.tw/News_Content.aspx?n=3548&s=124330",
+        "src2": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+        "from": "new"
+      },
+      {
+        "f": "2021 年第 12 屆金音創作獎最佳搖滾專輯獎（《歹勢好勢》）。",
+        "src": "https://www.bamid.gov.tw/News_Content.aspx?n=3548&s=124337",
+        "src2": "https://taiwan.md/music/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4/",
+        "from": "new"
+      },
+      {
+        "f": "2024 年第 15 屆金音創作獎最佳搖滾專輯獎（《噪音公寓》）。",
+        "src": "https://zh.wikipedia.org/zh-tw/%E6%8B%8D%E8%AC%9D%E5%B0%91%E5%B9%B4",
+        "from": "bank"
+      }
+    ],
+    "conflicts": [
+      "成軍地：Taiwan.md 寫 2005 年在台南組團，中文維基寫 2005 年春天吶喊後開始組團、未寫地點；地點單源，不進 facts。",
+      "《歹勢好勢》募資額：中文維基摘要寫 300 萬元，Taiwan.md 與搜尋摘要寫 311 萬餘或 310 萬餘；facts 採 Taiwan.md 的 311 萬元以上，該數字與搜尋摘要一致；中文維基的 300 萬是概數。"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫只有一條維基取的團名由來，三格靠補查。八次：中文維基〈拍謝少年〉、WebSearch（樂團與金曲獎）、樂團官網首頁（只有近況與商品，無傳記）、WebSearch（第 29 屆金曲裝幀設計獎）、WebSearch（噪音公寓與募資、金音獎，含多個子查詢）、Taiwan.md 樂團專文、文化部影視及流行音樂產業局第 12 屆金音獎得獎名單、同局第 9 屆金音獎得獎名單。失敗 2 次（未計入）：OKAPI 文章（403）、The News Lens 2024 金音獎名單（403）。poolAlbums 四張（海口味、兄弟沒夢不應該、歹勢好勢、噪音公寓）皆為拍謝少年，無同名混卡。 主詞：金音創作獎最佳搖滾專輯獎頒給專輯（第 9 屆《兄弟沒夢不應該》、第 12 屆《歹勢好勢》經文化部得獎名單頁確認；第 15 屆《噪音公寓》來自中文維基、Taiwan.md 與搜尋摘要，上線簡介同）；金曲獎最佳專輯裝幀設計獎是頒給專輯包裝，設計者為「小子」（OKAPI 專訪標題與搜尋摘要，403 未開頁，故未寫進 facts）。 非獨立：中文維基摘要與 Taiwan.md 成績表內容相近，來源可能互相引用；文化部得獎名單頁為獨立的官方來源。 未進 facts（單源或只見搜尋摘要）：風格含獨立搖滾、後搖滾與 dream-pop、創作題材含青年生活與轉型正義（中文維基摘要單源）；三人是南部出身、2005 年在台南組團、長期上班族樂團模式，維尼教吉他並寫樂評、薑薑做食品業行銷、宗翰策劃音樂活動，2010 年代中期才轉全職（Taiwan.md 單源）；三人中只有薑薑從小說台語、其他成員要學（Taiwan.md 單源）；樂團目標是寫出「阿公阿媽點頭稱讚的台語金曲」（Taiwan.md 單源）；2019 年在加拿大演出遇到黨外運動的流亡前輩，啟發〈時代看顧正義的人〉，與濁水溪公社主唱柯董合作（Taiwan.md 與搜尋摘要各單源）；2026 年與日本龐克樂團 PEDRO 合作國際巡演（Taiwan.md 單源）；演出足跡含日本、韓國、加拿大、香港與泰國（中文維基與廠商頁摘要，第二源未開）；「被視為當代台語搖滾重要創作旗手」（廠商頁搜尋摘要，屬宣傳語）；《歹勢好勢》嘗試 dream-pop、低傳真吉他與電子搖滾（搜尋摘要）；《海口味》以全台語歌詞奠定新台語搖滾路線（搜尋摘要）。"
+  },
+  {
     "key": "灰野敬二",
     "name": "灰野敬二",
     "slots": {

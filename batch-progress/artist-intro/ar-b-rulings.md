@@ -111,3 +111,4 @@
 
 - 補洞第 1、2 組交件。Stereophonics 貢獻格 none（thin）。Steven Wilson「最成功卻沒人聽過」屬單一報紙語，不寫。
 - 寫作第 1 組（20 位）審畢，修 2 處：Sublime 刪「RIAA 鑽石認證」（未核、屬會變動的認證數）；Supertramp 補 Rick Davies 2025-09-06 過世（主線 WebSearch 核實：CNN、NPR、Billboard）。
+- 補洞第 3 組：Underoath 失敗請求 5 次，照實記，放行；身世格 none。pubIssue 1 條（Warzone《Don't Forget the Struggle…》首發年與片長，1987／1988 兩說）。Voivod 金屬名人堂官網單源不收（不適用名人堂例外）。
