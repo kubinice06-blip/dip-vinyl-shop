@@ -1,0 +1,25 @@
+{
+  "artist": "Lou Rawls",
+  "album": "Lou Rawls Live!",
+  "version": "1966 Capitol",
+  "newDesc": "專輯名掛著「Live!」，這張唱片其實沒有離開錄音室。1966 年 1 月 31 日與 2 月 1 日，Lou Rawls 站上洛杉磯 Capitol 錄音室裡的舞台，對著一群受邀觀眾演唱，伴奏只有鋼琴、吉他、貝斯與鼓四個人。他在歌與歌之間穿插獨白，唱〈Tobacco Road〉之前先講起芝加哥南區的日子。專輯同年發行，在 Billboard R&B 專輯榜登上第 1 名、共 12 週，並拿下金唱片認證；到了同年稍晚的《Soulin'》，他才迎來第一首 R&B 冠軍單曲。",
+  "chars": 238,
+  "sources": [
+    "https://api.discogs.com/releases/16127142",
+    "https://en.wikipedia.org/wiki/The_Shadow_of_Your_Smile",
+    "https://musicbrainz.org/ws/2/release/cfbcc7fd-9ff7-41c4-a183-c31330da5b48?inc=artist-rels",
+    "https://musicbrainz.org/release-group/4b403c87-a9e7-32ac-9b8c-9b2f06396559",
+    "https://www.freshsoundrecords.com/lou-rawls-albums/53359-live-vinyl.html",
+    "https://en.wikipedia.org/wiki/Lou_Rawls",
+    "https://www.bluenote.com/artist/lou-rawls/",
+    "https://www.billboard.com/artist/lou-rawls/chart-history/blp/",
+    "https://en.wikipedia.org/wiki/List_of_Billboard_number-one_R%26B_albums_of_the_1960s",
+    "https://en.wikipedia.org/wiki/Love_Is_a_Hurtin%27_Thing",
+    "https://www.listeningsessions.ca/p/the-season-of-lou-rawls"
+  ],
+  "cardFix": {
+    "field": "year／release group",
+    "to": "1966；MusicBrainz release-group 4b403c87-a9e7-32ac-9b8c-9b2f06396559（Live!，Capitol ST 2459）",
+    "reason": "卡名帶驚嘆號的《Lou Rawls Live!》是 1966 年 Capitol 版；卡池目前年份 1978 並繫結 1978 年費城國際雙 LP《Live》的 release-group 42d3f88d-903b-416c-b4b2-479844204b8d，兩者不同張，需把年份改為 1966 並改繫 1966 版 release-group，封面亦應核對是否為 1966 Capitol 版。"
+  }
+}
