@@ -998,5 +998,223 @@
   "pubIssues": [],
   "status": "full",
   "notes": "卡池 8 張皆為坂本龍一作品，無同名混卡；事實庫沒有研究稿，三格全補查。開頁：日文維基、英文維基、CNN.co.jp 訃聞；另 1 次 WebSearch（日經、夕刊三重等頁只看到搜尋摘要，未開）。人名『龍』『一』皆為日文漢字照抄；QA 若把『坂』『龍』誤判請保留原名。單源未收：（1）日文維基『日本人首次獲奧斯卡作曲賞』（單源；且是否為『首位日本人獲配樂類奧斯卡』有反例疑慮未查，放 notes 不放 facts；搜尋摘要有相近說法未開頁）；（2）日文維基『教授』暱稱由高橋幸宏命名（單源，搜尋摘要另見『The Professor』）；（3）日文維基：2007 年『おやすみなさい、柏崎刈羽原発』、2012 年起 NO NUKES 音樂節、東北ユースオーケストラ、こどもの音楽再生基金、more trees（單源；反核 f 僅寫兩源共通的『長期參與反核運動』）；（4）日文維基：2022 年 12 月最後一次公開演出（線上鋼琴音樂會）、2023 年第 65 回日本唱片大賞特別功勞賞、2024 年 1 月第 47 回日本電影學院賞會長特別賞與優秀音樂賞、2025 年 2 月葛萊美最佳新世紀專輯提名《Opus》（皆單源，提名／得獎需逐項分辨）；（5）日文維基：BAFTA 作曲賞（1984）——與英文維基『BAFTA 提名指的是《The Last Emperor》』說法可能指不同年份，未區分，不收；（6）管理公司引他的座右銘『Ars longa, vita brevis（芸術は長く、人生は短し）』（CNN 單源）；（7）英文維基：〈Behind the Mask〉是最早使用 gated reverb 的曲子之一（單源）、母親設計女帽（單源）、2009 年藝術與文學勳章為 Ordre des Arts et des Lettres（日文維基寫 Officier 級，英維未寫級別，f 不寫級別）。奧斯卡年份：CNN 寫 1987（電影年份，典禮實為隔年），facts 只寫作品，不寫典禮年；era 格寫『1987 年』指作品年，寫作層請寫成『1987 年的電影《The Last Emperor》』。YMO 影響一條：英維寫 pioneered electropop 等，CNN 寫『電子音樂で大きな影響』，兩源說法程度不同，寫作層照原句克制。 另單源未收：日文維基稱他的作品是跨越古典、電子、民族音樂與流行的『前衛卻具親民性』；1978 年 10 月首張個人專輯《千のナイフ》（日文維基單源，卡池有此張）。"
+ },
+ {
+  "key": "fritz reiner",
+  "name": "Fritz Reiner",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fritz Reiner 1888 年 12 月 19 日生於布達佩斯（當時屬奧匈帝國），1963 年 11 月 15 日在紐約過世。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "src2": "https://www.britannica.com/biography/Fritz-Reiner",
+      "from": "new"
+     },
+     {
+      "f": "他在布達佩斯的音樂學院求學，鋼琴老師是 Béla Bartók。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "src2": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/06-fritz-reiner/",
+      "from": "new"
+     },
+     {
+      "f": "他早年在布達佩斯與德勒斯登的歌劇院指揮，之後前往美國。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "src2": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/06-fritz-reiner/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Reiner 的指揮以精準與節制著稱：Britannica 說他以技術上的精準與掌控見稱，無論交響樂或歌劇皆然；英文維基說他的指揮技術以精確與經濟見稱。",
+      "src": "https://www.britannica.com/biography/Fritz-Reiner",
+      "src2": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "from": "new"
+     },
+     {
+      "f": "他對樂團要求嚴厲：Britannica 稱他對樂團採專制作風，英文維基提到樂手記下他的獨裁式做法；Britannica 也說他仍因音樂性與指揮功力而受到尊敬。",
+      "src": "https://www.britannica.com/biography/Fritz-Reiner",
+      "src2": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1953 年起，Reiner 出任芝加哥交響樂團音樂總監；芝加哥交響樂團自己的檔案頁說，樂團在他領導下成為重要的錄音樂團，為 RCA 錄下 Bartók、Ravel、Strauss、Wagner，以及 Beethoven、Brahms 與 Mahler 的交響曲。",
+      "src": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/06-fritz-reiner/",
+      "src2": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "from": "new"
+     },
+     {
+      "f": "1960 年後 Reiner 的健康明顯惡化；他 1962 年卸下音樂總監職務，1963 年 11 月 15 日在準備大都會歌劇院的《Götterdämmerung》時因肺炎過世。",
+      "src": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/06-fritz-reiner/",
+      "src2": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1922 至 1931 年，Reiner 任辛辛那提交響樂團的指揮。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "src2": "https://www.britannica.com/biography/Fritz-Reiner",
+      "from": "new"
+     },
+     {
+      "f": "1931 年起，Reiner 在費城的 Curtis 音樂院任教。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+      "src2": "https://www.britannica.com/biography/Fritz-Reiner",
+      "from": "new"
+     },
+     {
+      "f": "1953 年，Reiner 出任芝加哥交響樂團音樂總監。",
+      "src": "https://www.britannica.com/biography/Fritz-Reiner",
+      "src2": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/06-fritz-reiner/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1922 至 1931 年任辛辛那提交響樂團指揮。",
+    "src": "https://en.wikipedia.org/wiki/Fritz_Reiner",
+    "src2": "https://www.britannica.com/biography/Fritz-Reiner",
+    "from": "new"
+   },
+   {
+    "f": "1953 年出任芝加哥交響樂團音樂總監。",
+    "src": "https://www.britannica.com/biography/Fritz-Reiner",
+    "src2": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/06-fritz-reiner/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "芝加哥任期終年：英文維基寫 1953–1963，Britannica 與芝加哥交響樂團檔案頁寫 1953–1962（1962 至 1963 為榮譽的音樂顧問），facts 只寫 1953 年起與 1962 年卸任。",
+   "大都會歌劇院任期：Britannica 1948–1953、芝加哥交響樂團檔案頁 1949–1953，facts 不寫。"
+  ],
+  "searches": 4,
+  "failedFetches": 1,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "卡池 7 張皆為 Fritz Reiner 指揮錄音（1954–1960），無同名混卡；事實庫只有 Bartók《Concerto for Orchestra》兩條與兩份上線簡介，三格補查。開頁：英文維基、Britannica、芝加哥交響樂團官網檔案頁（因 301 轉址一次，轉址為失敗請求 1 次）；另 1 次 WebSearch（Living Stereo 錄音與個性，摘要層級）。單源未收：（1）英文維基：Igor Stravinsky 稱芝加哥交響樂團在 Reiner 手下是『世界上最精確而靈活的樂團』（維基單源，且是私人評語）；（2）英文維基：教過 Leonard Bernstein（Curtis）（維基單源，未找到第二源）；（3）英文維基：出身猶太家庭、與 Richard Strauss 在德勒斯登共事、1951 年在大都會指揮 Stravinsky《The Rake's Progress》美國首演、1960 年 10 月心臟病發（維基單源）；（4）芝加哥交響樂團頁：1957 年邀 Margaret Hillis 創立芝加哥交響合唱團，『美國第一個與大型交響樂團附設的常設合唱團』（官網單源，屬自我宣稱；『第一』需查反例，未查）；（5）芝加哥交響樂團頁：Bartók《Music for Strings, Percussion, and Celesta》錄音獲葛萊美最佳古典演奏管弦樂類（1961，官網單源；得獎年與屆次未核）；（6）芝加哥交響樂團頁：Reiner 逝世後同月芝加哥追思音樂會，與 Kennedy 總統追思並列（單源）；（7）Britannica：對 Brahms 與 Strauss 特別出色（單源）；（8）搜尋摘要：樂手多半不喜歡他但他總逼出職涯最佳演出、聲音透明無渾濁（摘要層級未開頁，來源為某 Living Stereo 介紹）。Britannica 的『專制』與維基的『獨裁』『autocratic』是同一說法的不同譯詞，寫作層請克制、勿渲染。Reiner 在布達佩斯學校：維基寫 Franz Liszt Academy，Britannica 寫 Budapest Royal Academy of Music，芝加哥交響樂團寫 Royal Academy of Music，f 只寫『布達佩斯的音樂學院』。Bartók 是『鋼琴老師』（維基與芝加哥交響樂團皆寫）。"
+ },
+ {
+  "key": "max richter",
+  "name": "Max Richter",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Max Richter 1966 年 3 月 22 日生於德國漢默爾恩（Hamelin）；童年隨家人搬到英格蘭的貝德福德（Bedford）。",
+      "src": "https://en.wikipedia.org/wiki/Max_Richter",
+      "src2": "https://de.wikipedia.org/wiki/Max_Richter_(Komponist)",
+      "from": "new"
+     },
+     {
+      "f": "他在愛丁堡大學與皇家音樂學院學作曲與鋼琴，之後在佛羅倫斯隨 Luciano Berio 學習。",
+      "src": "https://en.wikipedia.org/wiki/Max_Richter",
+      "src2": "https://de.wikipedia.org/wiki/Max_Richter_(Komponist)",
+      "from": "new"
+     },
+     {
+      "f": "畢業後他共同創立當代音樂團體 Piano Circus。",
+      "src": "https://en.wikipedia.org/wiki/Max_Richter",
+      "src2": "https://de.wikipedia.org/wiki/Max_Richter_(Komponist)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Richter 曾與電子樂團 Future Sound of London 合作（1996 年的《Dead Cities》），也與製作人 Roni Size 合作。",
+      "src": "https://en.wikipedia.org/wiki/Max_Richter",
+      "src2": "https://de.wikipedia.org/wiki/Max_Richter_(Komponist)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2015 年 9 月發行的《Sleep》長約 8 個半小時，Richter 在製作期間與神經科學家 David Eagleman 討論；英文維基稱它是第一張串流超過 20 億次的古典專輯。",
+      "src": "https://en.wikipedia.org/wiki/Sleep_(album)",
+      "src2": "https://time.com/4022816/max-richter-sleep/",
+      "from": "new"
+     },
+     {
+      "f": "他為 2008 年的電影《Waltz with Bashir》配樂，獲歐洲電影獎的最佳配樂。",
+      "src": "https://en.wikipedia.org/wiki/Max_Richter",
+      "src2": "https://de.wikipedia.org/wiki/Max_Richter_(Komponist)",
+      "from": "new"
+     },
+     {
+      "f": "他的音樂出現在《Arrival》與《The Last of Us》等影視作品中。",
+      "src": "https://en.wikipedia.org/wiki/Max_Richter",
+      "src2": "https://www.abc.net.au/news/2025-02-12/who-is-max-richter-most-popular-classical-artist/104919440",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2002 年，Richter 發行個人首張專輯《Memoryhouse》。",
+      "src": "https://en.wikipedia.org/wiki/Max_Richter",
+      "src2": "https://de.wikipedia.org/wiki/Max_Richter_(Komponist)",
+      "from": "new"
+     },
+     {
+      "f": "2004 年，Richter 發行《The Blue Notebooks》。",
+      "src": "https://en.wikipedia.org/wiki/Max_Richter",
+      "src2": "https://de.wikipedia.org/wiki/Max_Richter_(Komponist)",
+      "from": "new"
+     },
+     {
+      "f": "2015 年，Richter 發行《Sleep》。",
+      "src": "https://en.wikipedia.org/wiki/Sleep_(album)",
+      "src2": "https://www.deutschegrammophon.com/en/artists/max-richter/biography",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2002 年發行個人首張專輯《Memoryhouse》。",
+    "src": "https://en.wikipedia.org/wiki/Max_Richter",
+    "src2": "https://de.wikipedia.org/wiki/Max_Richter_(Komponist)",
+    "from": "new"
+   },
+   {
+    "f": "2015 年發行《Sleep》。",
+    "src": "https://en.wikipedia.org/wiki/Sleep_(album)",
+    "src2": "https://www.deutschegrammophon.com/en/artists/max-richter/biography",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "ABC 報導摘要把《Sleep》寫成 2004 年發行，與維基（2015 年 9 月 4 日）、DG、德文維基（2015）不符；採 2015，並視為摘要誤讀。",
+   "搬到英格蘭的年齡：德文維基寫 3 歲，英文維基只寫童年，f 不寫年齡。"
+  ],
+  "searches": 8,
+  "failedFetches": 1,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "卡池 7 張皆為 Max Richter 作品，無同名混卡；事實庫沒有任何資料（factsBeforeLean 0），三格全補查，sound 格偏薄。開頁：英文維基、德文維基（先開到同名消歧頁再開〈Max Richter (Komponist)〉，兩次合計）、DG 藝人頁、ABC News 2025-02-12、TIME 2015 專文、英文維基〈Sleep (album)〉；另 1 次 WebSearch。共 8 次，正好在上限。失敗請求 1 次（Britannica 404）。英文維基〈Max Richter〉與〈Sleep (album)〉同站不同條目，『第一張串流超過 20 億次的古典專輯』一句只見英文維基（單源），f 已註明是英文維基的說法；Sleep 的長度：〈Sleep (album)〉寫 8 小時 24 分（504:21），DG 與德維寫約 8.5 小時，f 寫『約 8 個半小時』。單源未收：（1）英文維基：《Memoryhouse》被稱『a landmark work of contemporary classical music』、《The Blue Notebooks》被 Guardian 2019 年列為本世紀最佳古典作品之一、《Sleep》是『the most streamed classical record of all time』（皆維基單源，Guardian 原文未取得）；（2）前 BBC Radio 3 主管 Alan Davey 稱他『transcending genres』、被歸為後極簡與當代古典（維基單源）；（3）〈On the Nature of Daylight〉被《Arrival》《Shutter Island》《The Last of Us》採用（維基；ABC 只提 Arrival 與 The Last of Us 但未指名曲目，f 只寫作品名）；（4）DG 自述『one of the most influential and acclaimed composers of his generation』與『magnum opus』（唱片廠牌宣傳語，非獨立評價）；DG 稱其作品串流累計 30 億次、Sleep 累計 20 億次（搜尋摘要與維基一致，但廠牌與維基皆屬宣傳／衍生，不收）；（5）ABC：Richter 在 Spotify 的收聽人數超過 Bach 與 Beethoven（4.1 百萬月聽眾），ABC 單源；（6）德文維基：2025 年 12 月獲 CBE、〈Waltz with Bashir〉德維稱 European Film Prize，英維稱 European Film Award Best Composer；（7）英文維基：2026 年以《Hamnet》配樂獲奧斯卡提名、Golden Globe 與 BAFTA 提名（維基單源，需逐項區分提名與得獎，且屬近期事件）；（8）ABC：《The Blue Notebooks》是針對伊拉克戰爭的抗議專輯，同時含他童年的個人回憶（ABC 單源）；（9）ABC：《Recomposed》至今仍常被樂團演出（ABC 單源）；（10）Sleep 首演：〈Sleep (album)〉稱首演於倫敦 Wellcome Collection（2015），TIME 預告首演在柏林（fall 2015，midnight to 8 a.m.），兩源在首演地點上不一致，f 不寫；Sleep 2018 年洛杉磯 Grand Park 560 張床等（維基單源）；（11）Time：他說『Sleeping has always been one of my favorite activities』『a big pause button』（單源）。歐洲電影獎的年份：兩維基皆只寫電影 2008，f 不寫頒獎年。"
  }
 ]
