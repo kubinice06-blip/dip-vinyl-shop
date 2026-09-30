@@ -284,3 +284,4 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - ar-a-015 上架：40 位（世界音樂、電子），審稿 0 處（主線補查 Cicada 獎項、Willie Colón 逝世）。
 - 補洞第 2 組：Autechre 搜尋 9 次，第 9 次內容已撤，放行。
 - 寫作第 1 組（20 位）審畢，0 處。Pan Sonic「被視為電子樂的前衛指標」由 NPR、Fact 兩家訃聞各自措辭支撐，視為共識保留。
+- 補洞第 3 組：Jan Jelinek 德文維基寫 2012 年得 Karl-Sczuka 獎，nmz 證實為新人獎（Förderpreis）→ facts 照 nmz。Gas 卡池 Zauberberg／Königsforst 皆記 1998，來源為 1997／1999，交本機核對。Moroder〈I Feel Love〉「全電子」有反例，不寫。
