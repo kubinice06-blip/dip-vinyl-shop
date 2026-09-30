@@ -206,3 +206,10 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 主要檔案：desc-tools/batches/artist/*、data/artist-intros/*、batch-progress/artist-intro/ar-a-rulings.md、audits/ARTIST-PUB-ISSUES.md。
 驗證：每批 qa-artist gap／out 皆 0 處、主線逐位審稿共修 52 處；死訊與 2025–26 榮譽由主線 WebSearch 親驗。
 
+
+## 第二段：32 批（2026-09-30 店主「繼續跑32批」）
+
+- **範圍裁定**：前段收尾報告把 A 級寫成「400 位做完」，漏說 A 級共 20 批、只跑了一半。店主回「繼續跑32批」針對的是 B 級 32 批，
+  但照分級順序 A 級剩 10 批應先跑。取 32 批＝ar-a-011～020（10 批）＋ar-b-001～022（22 批）；B 級剩 10 批留待下一次授權。可逆：只是先後順序。
+- 32 批的 cut 清單與事實庫一次抽好（artist-extract --lean）。
+- B 級裁定另開 ar-b-rulings.md。
