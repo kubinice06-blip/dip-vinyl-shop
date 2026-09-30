@@ -107,5 +107,140 @@
   "failedFetches": 3,
   "status": "full",
   "notes": "補查共 9 次（3 次 WebSearch、6 次頁面），超出上限 8 次 1 次：第 9 次是 RouteNote 的〈The Dilla Swing〉，其取得的事實已依規則撤掉，未進 facts。失敗請求 3 次未計入：Britannica J-Dilla（404）、si.edu 官方新聞稿（403）、Rolling Stone〈Dilla Time〉節選（改道後 402）。原本只有維基單源、因此移出 facts 的內容：(0) 單源（史密森尼雜誌）：他住院時 MPC 被寄到醫院、做拍子做到最後；孩提時在學步前就隨 James Brown 起舞、三歲迷上 Michael Jackson。(1) 單源（維基）：他關掉 MPC3000 的量化（quantize）做出偏離拍點的 off-kilter 節奏，維基引 The Guardian 稱他「把長而旋律性的取樣循環與斷拍、人聲取樣交織，帶嘻哈走進更複雜的器樂領域」；RouteNote 頁面另稱具體做法仍有爭議（偏 53% 至 56% 的 swing 加手打不量化），該頁因超額請求撤掉。(2) 單源（維基）：Questlove 稱他「發明了我們稱為 neo-soul 的聲音」（維基引自 Matt Brennan《Kick It》）；並稱他是「世界最偉大的鼓手」。(3) 單源（維基）：1995 年與 MC Phat Kat 組 1st Down，維基寫是「第一個與大廠牌簽約的底特律嘻哈團體」，屬「第一個」宣稱，未收。(4) 單源（維基）：2004 年搬到洛杉磯，2005 年歐洲巡演因病坐輪椅演出；J Dilla Foundation 2006 年 5 月成立以對抗狼瘡；2007 年 2 月追贈 PLUG Awards 年度藝人與年度製作人；《Dave Chappelle's Block Party》片尾獻辭；法國蒙彼利埃有街道以他命名（2012）；母親與遺產執行人的爭議。(5) 單源（Donuts 維基條目，非獨立）：31 軌用了 34 個取樣；《Pitchfork》2000 年代百大專輯第 66、2006 年度第 38；《Rolling Stone》2020 年 500 大專輯第 386；維基稱它是「his magnum opus…one of the most influential hip-hop albums of all time」。(6) 單源（MusicRadar）：Madlib 說「every producer bows down to Dilla, whether they like it or not」（頁面摘要為子模型轉述，未見原句語境，未收）；該文另提 Kendrick Lamar 受其啟發，只單源。(7) 搜尋摘要（未開頁）：Kanye West、Flying Lotus、Madlib 自稱受 Dilla 影響、Madlib 稱兩人是「musical cousins」，未收。Smithsonian 捐贈時間：維基寫 2014 年；史密森尼雜誌頁的摘要只確認進館收藏與 MPC 被視為他的象徵，捐贈細節以維基為準，故 f 不寫年份；捐贈者為母親出自搜尋摘要（Okayplayer、Fader，未開頁），f 因此不寫捐贈者。史密森尼雜誌『他去世時 32 歲、住院時 MPC 被寄到醫院』與維基『病因為 TTP 與狼瘡導致心臟驟停』一致；musicorigins 寫心臟驟停於洛杉磯自宅，與維基「LA」同，未寫死亡地點細節。維基與 Donuts 維基為同一出版集團，非獨立。"
+ },
+ {
+  "key": "jay-z",
+  "name": "JAY-Z",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "JAY-Z（本名 Shawn Corey Carter）1969 年 12 月 4 日生於紐約布魯克林，在布魯克林的 Marcy 國宅（Marcy Houses）長大。",
+      "src": "https://en.wikipedia.org/wiki/Jay-Z",
+      "src2": "https://www.britannica.com/biography/Jay-Z",
+      "from": "new"
+     },
+     {
+      "f": "他少年時期涉足街頭毒品交易，同時開始寫饒舌詞；他在歌詞裡自述賣過古柯鹼。",
+      "src": "https://en.wikipedia.org/wiki/Jay-Z",
+      "src2": "https://www.britannica.com/biography/Jay-Z",
+      "from": "new"
+     },
+     {
+      "f": "他的啟蒙包括 Run-DMC 這類老派嘻哈團體與電影；他的藝名被認為可能取自住家附近的 J 線與 Z 線地鐵。",
+      "src": "https://www.britannica.com/biography/Jay-Z",
+      "src2": "https://en.wikipedia.org/wiki/Jay-Z",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "標題曲〈Hard Knock Life (Ghetto Anthem)〉取樣音樂劇《Annie》；同張專輯有 Swizz Beatz 做的三軌，比前作 Bad Boy 式的光滑製作更粗糙。",
+      "src": "https://en.wikipedia.org/wiki/Vol._2..._Hard_Knock_Life",
+      "from": "bank"
+     },
+     {
+      "f": "《The Blueprint》以靈魂樂取樣為主，製作主力是當時還沒沒無聞的 Kanye West、Just Blaze 與 Bink，另有 Timbaland 與 Trackmasters 等人參與。",
+      "src": "https://en.wikipedia.org/wiki/The_Blueprint_(album)",
+      "src2": "http://albumism.com/features/jay-z-the-blueprint-album-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "《American Gangster》建立在七〇年代 soul 與 funk 上，由樂手實際演奏銅管、弦樂與鼓，也有用瓶子敲出的打擊聲。",
+      "src": "https://en.wikipedia.org/wiki/American_Gangster_(album)",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《The Blueprint》成功之後，大唱片公司重新願意花錢處理取樣授權；Kanye West 與 Just Blaze 也因此成為超級製作人。",
+      "src": "https://en.wikipedia.org/wiki/The_Blueprint_(album)",
+      "src2": "http://albumism.com/features/jay-z-the-blueprint-album-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "2017 年，他成為第一位入選美國詞曲作者名人堂（Songwriters Hall of Fame）的饒舌歌手。",
+      "src": "https://en.wikipedia.org/wiki/Jay-Z",
+      "src2": "https://www.britannica.com/biography/Jay-Z",
+      "from": "new"
+     },
+     {
+      "f": "2021 年入選搖滾名人堂（表演者類）。",
+      "src": "https://en.wikipedia.org/wiki/Jay-Z",
+      "src2": "https://www.britannica.com/biography/Jay-Z",
+      "from": "new"
+     },
+     {
+      "f": "2019 年 3 月，《The Blueprint》被選入美國國會圖書館的國家錄音登錄（National Recording Registry）。",
+      "src": "https://en.wikipedia.org/wiki/Jay-Z",
+      "src2": "https://www.cbsnews.com/news/national-recording-registry-jay-z-cyndi-lauper-schoolhouse-rock-hair-minnie-the-moocher/",
+      "from": "new"
+     },
+     {
+      "f": "名人堂官方（可具名單源）：搖滾名人堂稱他「為成熟的嘻哈大亨立下了範本」，並說他從技藝高超的饒舌歌手一路成為商業巨頭；典禮上由 Dave Chappelle 引介，稱他是「受壓力而生的鑽石」。",
+      "src": "https://www.rockhall.com/inductees/jay-z",
+      "from": "new"
+     },
+     {
+      "f": "《Vol. 2... Hard Knock Life》在第 41 屆葛萊美獎拿下 Best Rap Album，但他抵制頒獎典禮，理由是太多重要的饒舌歌手持續被忽略。",
+      "src": "https://en.wikipedia.org/wiki/Vol._2..._Hard_Knock_Life",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《In My Lifetime, Vol. 1》是他在布魯克林出身的合作者 The Notorious B.I.G. 1997 年 3 月驟逝之後推出的第一張專輯。",
+      "src": "https://en.wikipedia.org/wiki/In_My_Lifetime,_Vol._1",
+      "from": "bank"
+     },
+     {
+      "f": "《The Blueprint》2001 年 9 月 11 日發行，登上 Billboard 200 冠軍；他同時在與 Nas 等人的爭執中，寫下〈Takeover〉。",
+      "src": "https://en.wikipedia.org/wiki/The_Blueprint_(album)",
+      "src2": "http://albumism.com/features/jay-z-the-blueprint-album-anniversary",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2017 年成為第一位入選詞曲作者名人堂的饒舌歌手。",
+    "src": "https://en.wikipedia.org/wiki/Jay-Z",
+    "src2": "https://www.britannica.com/biography/Jay-Z",
+    "from": "new"
+   },
+   {
+    "f": "2021 年入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Jay-Z",
+    "src2": "https://www.britannica.com/biography/Jay-Z",
+    "from": "new"
+   },
+   {
+    "f": "2019 年 3 月，《The Blueprint》入選美國國會圖書館國家錄音登錄。",
+    "src": "https://en.wikipedia.org/wiki/Jay-Z",
+    "src2": "https://www.cbsnews.com/news/national-recording-registry-jay-z-cyndi-lauper-schoolhouse-rock-hair-minnie-the-moocher/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Roc-A-Fella 成立年：維基寫 1995 年與 Dame Dash、Biggs Burke 共同創立，Britannica 寫 1996 年；兩源不一致，facts 不寫成立年，也不寫成員名字。",
+   "《The Blueprint》入選國會圖書館：維基 Jay-Z 條目寫 2019 年，Blueprint 條目寫 2018 年度名單；CBS 記公布日為 2019 年 3 月 20 日。採「2019 年 3 月公布」。",
+   "上線簡介與本層事實無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "補查 8 次：維基 Jay-Z、Britannica、Blueprint 維基、WebSearch（國會圖書館）、CBS 頁、WebSearch（Blueprint 製作）、Albumism 頁（先遇 301 改道，改道請求未計）、搖滾名人堂官網；失敗 1 次未計：songhall.org（404，詞曲作者名人堂官網沒讀到）。「第一位入選詞曲作者名人堂的饒舌歌手」維基與 Britannica 一致，但未讀到名人堂官網；『第一位』類宣稱，寫作層寫時建議加『據維基與 Britannica』或弱化。Albumism 與 Blueprint 維基的 Blueprint 影響段幾乎同句，恐非獨立，寫作層可用但不宜加重。單源（維基）未收：1996 年《Reasonable Doubt》透過 Priority 發行、公排第 23 名；父親在他 11 歲離家；導師 Jaz-O；高中輟學；創立 Roc-A-Fella 時沒有大廠牌願簽；2013 年《Time》百大影響力人物；2023 年 Billboard／Vibe 稱他為史上最佳饒舌歌手；2019 年 Forbes 稱他為嘻哈首位億萬富翁（「首位」且屬會變動的財富數字，不收）；Blueprint 在《Rolling Stone》500 大專輯名次 2003 年第 464、2012 年第 252、2020 年第 50。單源（Britannica）：母親 Gloria Carter 打多份工撫養他；Britannica 稱他是「最具影響力的嘻哈人物之一」與「典型的白手起家音樂大亨」。銷量、葛萊美座數、冠軍數屬會增長的累計數字，一律不收。「當年 Blueprint 是 21 世紀第一張入選國會圖書館的專輯」出自維基 Blueprint 條目，另一份搜尋摘要稱它是該年度名單中最新的作品，未覆核，未收。兩個維基條目為同一出版集團，非獨立。事實庫 bank 條目（Hard Knock Life、American Gangster、In My Lifetime）保留，與上線簡介無衝突。"
  }
 ]
