@@ -985,7 +985,14 @@
       "《教父 II》奧斯卡的年份：classical-music.com 寫 1974（片年）、Britannica 寫 1975（頒獎年），facts 不寫年份。",
       "上線簡介事實庫『Rota 與 Fellini 自 1952 年《白酋長》起合作，直到 1979 年他過世』與本次核對相符。"
     ],
-    "pubIssues": [],
+    "pubIssues": [
+      {
+        "album": "Casanova",
+        "claim": "生前最後一部 Fellini 長片",
+        "problem": "Rota 生前還為 Fellini 1978 年的《Prova d'orchestra》（Orchestra Rehearsal）配樂，那才是兩人最後一次合作；《Casanova》（1976）不是最後一部。主線依補洞稿 notes 與既有影史常識列入，請本機核對後改寫。",
+        "src": "https://en.wikipedia.org/wiki/Orchestra_Rehearsal"
+      }
+    ],
     "searches": 9,
     "failedFetches": 0,
     "status": "full",

@@ -324,3 +324,9 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 寫作第 2 組（20 位）審畢，修 4 處：Rihanna 刪「前一位得主是 Garfield Sobers」（1998 年十位國家英雄同時宣布，無所謂前一位）；John Williams 刪「得過 5 座奧斯卡」（在世、會長大的累計數）；Wu-Tang「社會住宅區」→「公共住宅區」與 Ghostface 一致；坂本龍一「影響很大」→「影響深遠」。Fritz Reiner 句首順稿（不計）。
   Toni Braxton「百老匯第一位黑人 Belle」寫作層依「第一位」規則未寫，維持。
 - ar-a-019 上架：40 位（嘻哈、古典／配樂），審稿修 4 處。
+
+### ar-a-020
+
+- 補洞第 1 組：Nino Rota 搜尋 9 次，第 9 次內容已撤，放行（同 J Dilla、Ka 先例）。主線補一條 pubIssue：Rota《Casanova》上線簡介稱「生前最後一部 Fellini 長片」，實際最後合作是 1978 年《Prova d'orchestra》。Glass《Mishima》「第一次替劇情片作曲」未核，不列。
+  Guardian、NYT、Telegraph、BBC、AP、LA Times 對補洞代理網域受限，照實記。
+- 補洞第 2 組：Furtwängler 失敗請求 5 次，照實記，放行，thin。Glenn Gould 卡池《Art of Fugue》（1962）為管風琴錄音，寫作層照寫。Bach「BBC Music Magazine 票選第 1」屬媒體榜單，不進正文。
