@@ -315,3 +315,4 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 
 - 補洞第 1 組：Epik High「第一組登上 Coachella 的韓國藝人」經 NBC 更正為第二組 → 採第二組。Ghostface Killah 的名人堂入選主詞是 Wu-Tang Clan（2026 年班），不寫成他個人入選。
   卡池年份疑點：CunninLynguists《A Piece of Strange》卡 2005／實 2006；Dälek《Absence》卡 2004／Bandcamp 2005，交本機。
+- 補洞第 3 組：Raekwon 失敗請求 7 次（4 次為維基 API 429 限流）、T.I. 失敗 5 次，均未用於 facts，照實記，放行。Wu-Tang Clan 名人堂典禮預定 2026-11-14 → 寫作層寫「獲選」，不寫「入選」。T.I.「trap 一詞」、Talib Kweli「歷史站在它這邊」為轉述本人說法，須寫「他說」。

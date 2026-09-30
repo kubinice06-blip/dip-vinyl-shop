@@ -75,11 +75,11 @@
    }
   ],
   "conflicts": [],
-  "searches": 7,
+  "searches": 8,
   "failedFetches": 7,
   "status": "full",
   "pubIssues": [],
-  "notes": "同名檢查：卡池五張（Only Built 4 Cuban Linx...、Immobilarity、Only Built 4 Cuban Linx... Pt. II、The Babygrande Recordings、The Wild）全是 Staten Island 的 Raekwon，無混卡。事實庫 research 只有 Immobilarity 與 Pt. II 兩張專輯的曲目與銷量細節，無身世與地位，三格全靠補查；上線簡介兩篇與本稿無衝突。\n請求（成功 7 次）：en 維基 Raekwon（API 版一次，因被 429 限流後改抓網頁版再一次，同一頁算兩次）、en 維基《Only Built 4 Cuban Linx...》、WebSearch（mafioso rap 影響）、The Quietus 30 年回顧（WebFetch，實際開頁）、Britannica Wu-Tang Clan（實際開頁，與 Raekwon 共用，記在本位）、WebSearch（Salon 訪談，只看摘要，無新增內容）、WebSearch（Rolling Stone 名次，只看摘要）。\n失敗請求 7 次（超出上限 4 次，其中 4 次是 en 維基 API 被 429 限流、屬工具面失敗；Britannica Raekwon 頁 curl 403 與 WebFetch 404 各一、Rolling Stone 榜單頁 307 轉 tollbit 一）。超出上限的失敗請求未取得任何內容，未用於 facts。\n單源未進 facts：(1) 出生年月日 1970 年 1 月 12 日、生於 Brownsville Brooklyn、母親帶他搬到 Staten Island、Park Hill、與 Ghostface 同讀國中、New Dorp High School、被捲入槍戰中槍四次才認真寫詞、Raekwon 之名取自 Five-Percent Nation（皆 en 維基 Raekwon 單源，其引用的 Salon、HipHopDX 訪談未逐頁開）；(2)《Only Built 4 Cuban Linx...》Rolling Stone 500 大專輯榜 2012 年第 480 名、2020 年改版第 219 名（en 維基單源，Rolling Stone 頁面被 tollbit 擋住）；(3) 該專輯是 Wu-Tang 家族外的 Nas 第一次客座、被 Jay-Z《Reasonable Doubt》與 Biggie《Life After Death》大量引用的具體說法（維基單源，Quietus 只支持『影響了紐約饒舌、Jay-Z 認其關鍵地位』的較泛說法，facts 只寫兩源都支持的部分）；(4) 2009《Only Built 4 Cuban Linx... Pt. II》被 HipHopDX 選為 2009 年度專輯、Raekwon 獲該站年度 MC（維基單源）；(5) 專輯發行首週銷量與認證等榜單數字屬履歷，未收。\n『第一位／唯一』類：維基寫 mafioso rap 的開創者，Quietus 稱他自己說『沒人用音樂把這件事做出來』——這是本人說法，故 legacy 只寫『被廣泛視為開創者』的維基原意，不寫『第一』，並保留 Quietus 的較泛說法。\n非獨立提示：sound 第 1 條的 src2 與 src 同為英文維基（不同條目），非獨立；era 兩條的 src 為維基、src2 為 Britannica，獨立。sound 第 2 條、origin 第 2 條與 legacy 的 src2 為 The Quietus（WebFetch 摘要，小模型摘述，引語已轉間接）。The Quietus 稿中『Nas 在 2002 年曲中談到受影響的問題』只出現在摘要，未收。\nODB 等與本位無關事實不在此位。字元：全篇繁體；專名照原文。"
+  "notes": "同名檢查：卡池五張（Only Built 4 Cuban Linx...、Immobilarity、Only Built 4 Cuban Linx... Pt. II、The Babygrande Recordings、The Wild）全是 Staten Island 的 Raekwon，無混卡。事實庫 research 只有 Immobilarity 與 Pt. II 兩張專輯的曲目與銷量細節，無身世與地位，三格全靠補查；上線簡介兩篇與本稿無衝突。\n請求（成功 8 次）：en 維基 Raekwon（API 版一次，因被 429 限流後改抓網頁版再一次，同一頁算兩次）、en 維基《Only Built 4 Cuban Linx...》、WebSearch（mafioso rap 影響）、The Quietus 30 年回顧（WebFetch，實際開頁）、Britannica Wu-Tang Clan（實際開頁；此一次請求同時供 Wu-Tang Clan 一位使用，只記在本位、Wu-Tang 位不重複計）、WebSearch（Salon 訪談，只看摘要，無新增內容）、WebSearch（Rolling Stone 名次，只看摘要）。\n失敗請求 7 次（超出上限 4 次，其中 4 次是 en 維基 API 被 429 限流、屬工具面失敗；Britannica Raekwon 頁 curl 403 與 WebFetch 404 各一、Rolling Stone 榜單頁 307 轉 tollbit 一）。超出上限的失敗請求未取得任何內容，未用於 facts。\n單源未進 facts：(1) 出生年月日 1970 年 1 月 12 日、生於 Brownsville Brooklyn、母親帶他搬到 Staten Island、Park Hill、與 Ghostface 同讀國中、New Dorp High School、被捲入槍戰中槍四次才認真寫詞、Raekwon 之名取自 Five-Percent Nation（皆 en 維基 Raekwon 單源，其引用的 Salon、HipHopDX 訪談未逐頁開）；(2)《Only Built 4 Cuban Linx...》Rolling Stone 500 大專輯榜 2012 年第 480 名、2020 年改版第 219 名（en 維基單源，Rolling Stone 頁面被 tollbit 擋住）；(3) 該專輯是 Wu-Tang 家族外的 Nas 第一次客座、被 Jay-Z《Reasonable Doubt》與 Biggie《Life After Death》大量引用的具體說法（維基單源，Quietus 只支持『影響了紐約饒舌、Jay-Z 認其關鍵地位』的較泛說法，facts 只寫兩源都支持的部分）；(4) 2009《Only Built 4 Cuban Linx... Pt. II》被 HipHopDX 選為 2009 年度專輯、Raekwon 獲該站年度 MC（維基單源）；(5) 專輯發行首週銷量與認證等榜單數字屬履歷，未收。\n『第一位／唯一』類：維基寫 mafioso rap 的開創者，Quietus 稱他自己說『沒人用音樂把這件事做出來』——這是本人說法，故 legacy 只寫『被廣泛視為開創者』的維基原意，不寫『第一』，並保留 Quietus 的較泛說法。\n非獨立提示：sound 第 1 條的 src2 與 src 同為英文維基（不同條目），非獨立；era 兩條的 src 為維基、src2 為 Britannica，獨立。sound 第 2 條、origin 第 2 條與 legacy 的 src2 為 The Quietus（WebFetch 摘要，小模型摘述，引語已轉間接）。The Quietus 稿中『Nas 在 2002 年曲中談到受影響的問題』只出現在摘要，未收。\nODB 等與本位無關事實不在此位。字元：全篇繁體；專名照原文。"
  },
  {
   "key": "rick ross",
@@ -449,10 +449,10 @@
    "維基寫 Pam the Funkstress 1992 年才加入；Oakland Artists Project 寫她是創團三人之一。facts 不寫她是否創團成員，只寫她是團裡的 DJ。"
   ],
   "searches": 6,
-  "failedFetches": 3,
+  "failedFetches": 2,
   "status": "full",
   "pubIssues": [],
-  "notes": "同名檢查：卡池五張（Kill My Landlord、Genocide & Juice、Steal This Album、Party Music、Sorry to Bother You）全是 Oakland 的 The Coup（主腦 Boots Riley），無混卡；Sorry to Bother You 是 2012 年專輯，不是 2018 年電影配樂。事實庫 research 與 published 皆空，全部新查。\n請求（成功 6 次）：en 維基 The Coup、WebSearch（Party Music 封面，只看摘要）、Albumism Party Music 回顧（WebFetch，實際開頁）、WebSearch（Boots Riley 生平，只看摘要）、Oakland Artists Project（WebFetch，實際開頁）、East Bay Express（WebFetch，實際開頁）。失敗 3 次：Snopes 402、Britannica Boots Riley 404，另有搜尋一次改搜。\n單源未進 facts：(1) 維基：1991 年首張發行物為 The EP、1993 年《Kill My Landlord》、1998 年《Steal This Album》前有四年錄音空窗、團員忙於社區行動；Dusted 稱《Steal This Album》是『1990 年代最佳嘻哈專輯』（維基單源，且為單一站的評價，不收）；(2) 維基：〈Practice Lookin' Hard〉（E-40，1993）副歌概念取自 The Coup 的〈Not Yet Free〉、Boots Riley 在該曲演唱、Tupac 出現在 MV；Monique W. Morris 2001 年小說《Too Beautiful For Words》改編自〈Me and Jesus the Pimp in a '79 Granada Last Night〉、Rickey Vincent 2013 年著作《Party Music》受專輯概念啟發（皆維基單源）；(3) 維基：《Sorry to Bother You》專輯（2012 年 10 月 30 日）源自 Riley 根據自己當電話行銷員經歷寫的劇本，2018 年電影版由他導演（電影導演一事 Oakland Artists Project 也寫，但『專輯源自劇本、電話行銷』只有維基與搜尋摘要）；(4) East Bay Express：《Party Music》在 Village Voice 年度票選排第 8、父親 Walter Riley 是民權時代的運動者兼律師、Riley 十五歲起在 Wasco、Delano 等加州農村組織墨西哥移民（該站單源，另一則搜尋摘要相同但未開頁）；(5) Oakland Artists Project：Riley 家從 Detroit 搬到 Oakland；(6) 維基：2005 年成員 Tarus Jackson 遭槍殺、2006 年巡迴巴士翻覆起火、2010 年貝斯手 Dewey Tucker 遭槍殺（悲劇事件屬單源且與作品無關，未收）。\n爭議：維基寫 Michelle Malkin 批評〈5 Million Ways to Kill a CEO〉，屬單源，未收。\n非獨立提示：origin 第 2 條與 legacy 第 2 條皆為不同站兩源；legacy 第 1 條的封面說法 src 為維基、src2 為 Albumism，Albumism 只寫『9/11 之後廠牌要求換封面、改用 Molotov 雞尾酒意象』，維基寫換成手持燃燒馬丁尼杯的手，兩源對『換了封面』一致，具體新封面樣貌未寫。『封面在 9/11 之前完成』由維基（2001 年 6 月完成）與 East Bay Express（9/11 前創作）支持，Albumism 未明說。"
+  "notes": "同名檢查：卡池五張（Kill My Landlord、Genocide & Juice、Steal This Album、Party Music、Sorry to Bother You）全是 Oakland 的 The Coup（主腦 Boots Riley），無混卡；Sorry to Bother You 是 2012 年專輯，不是 2018 年電影配樂。事實庫 research 與 published 皆空，全部新查。\n請求（成功 6 次）：en 維基 The Coup、WebSearch（Party Music 封面，只看摘要）、Albumism Party Music 回顧（WebFetch，實際開頁）、WebSearch（Boots Riley 生平，只看摘要）、Oakland Artists Project（WebFetch，實際開頁）、East Bay Express（WebFetch，實際開頁）。失敗 2 次：Snopes 402、Britannica Boots Riley 404。\n單源未進 facts：(1) 維基：1991 年首張發行物為 The EP、1993 年《Kill My Landlord》、1998 年《Steal This Album》前有四年錄音空窗、團員忙於社區行動；Dusted 稱《Steal This Album》是『1990 年代最佳嘻哈專輯』（維基單源，且為單一站的評價，不收）；(2) 維基：〈Practice Lookin' Hard〉（E-40，1993）副歌概念取自 The Coup 的〈Not Yet Free〉、Boots Riley 在該曲演唱、Tupac 出現在 MV；Monique W. Morris 2001 年小說《Too Beautiful For Words》改編自〈Me and Jesus the Pimp in a '79 Granada Last Night〉、Rickey Vincent 2013 年著作《Party Music》受專輯概念啟發（皆維基單源）；(3) 維基：《Sorry to Bother You》專輯（2012 年 10 月 30 日）源自 Riley 根據自己當電話行銷員經歷寫的劇本，2018 年電影版由他導演（電影導演一事 Oakland Artists Project 也寫，但『專輯源自劇本、電話行銷』只有維基與搜尋摘要）；(4) East Bay Express：《Party Music》在 Village Voice 年度票選排第 8、父親 Walter Riley 是民權時代的運動者兼律師、Riley 十五歲起在 Wasco、Delano 等加州農村組織墨西哥移民（該站單源，另一則搜尋摘要相同但未開頁）；(5) Oakland Artists Project：Riley 家從 Detroit 搬到 Oakland；(6) 維基：2005 年成員 Tarus Jackson 遭槍殺、2006 年巡迴巴士翻覆起火、2010 年貝斯手 Dewey Tucker 遭槍殺（悲劇事件屬單源且與作品無關，未收）。\n爭議：維基寫 Michelle Malkin 批評〈5 Million Ways to Kill a CEO〉，屬單源，未收。\n非獨立提示：origin 第 2 條與 legacy 第 2 條皆為不同站兩源；legacy 第 1 條的封面說法 src 為維基、src2 為 Albumism，Albumism 只寫『9/11 之後廠牌要求換封面、改用 Molotov 雞尾酒意象』，維基寫換成手持燃燒馬丁尼杯的手，兩源對『換了封面』一致，具體新封面樣貌未寫。『封面在 9/11 之前完成』由維基（2001 年 6 月完成）與 East Bay Express（9/11 前創作）支持，Albumism 未明說。"
  },
  {
   "key": "the roots",
@@ -549,5 +549,278 @@
   "status": "full",
   "pubIssues": [],
   "notes": "同名檢查：卡池五張（Things Fall Apart、Illadelph Halflife、Phrenology、undun、…and Then You Shoot Your Cousin）全是 Philadelphia 的 The Roots（Black Thought 與 Questlove），無混卡。事實庫 research 與 published 皆空，全部新查。\n請求（成功 5 次）：en 維基 The Roots、WebSearch（起源與影響，只看摘要）、Britannica The Roots（WebFetch，實際開頁）、WebSearch（Soulquarians，只看摘要）、Electric Lady Studios 官方頁（WebFetch，實際開頁，內容只有 Soulquarians 的一段簡介）。失敗 2 次：Britannica 舊網址 404、Kennedy Center 403。\nlegacy 中 Soulquarians 的成員名單：Electric Lady 官方頁只列 D'Angelo、The Roots、Erykah Badu、Common；『成軍』與各成員的貢獻不在 facts 內。維基《The Roots》寫 Illadelph Halflife（1996）的合作『成為 Soulquarians 的基礎』，Electric Lady 頁寫該集體 1998 年前後在該錄音室聚集，兩者時間點不一致，facts 只寫『1990 年代末』。\n單源未進 facts：(1) 維基：早期在街頭賣藝、Questlove 打水桶鼓、首場演出為 1989 年學校才藝表演、團名從 Radio Activity 換到 Black to the Future 再到 The Square Roots、1992 年去掉 Square；在費城打不開局面而短暫搬到倫敦、1993 年獨立發行《Organix》、在歐洲累積死忠後簽 DGC/Geffen；Do You Want More?!!!??! 開場曲裡 Black Thought 把團體聲音介紹成 organic hip hop jazz、被視為爵士饒舌經典；《Illadelph Halflife》受 Wu-Tang 與 RZA 影響轉向陰暗；ThoughtCo 把他們排第 7 名並稱『嘻哈第一支真正的樂團』（『第一』類，單源且有反例疑慮，不收）；(2) 搜尋摘要：Black Thought 影響了 Logic、Joey Badass、Rapsody 等（來源不明，未開頁）；(3) 維基：專輯銷量與榜單、2001 年為 Jay-Z MTV Unplugged 伴奏、2003 年 Jay-Z 告別演唱會伴奏（履歷未收）。\n非獨立提示：全部 src 為維基不同條目或不同站；origin、sound、legacy 第 2、3 條與 era 的 src2 為 Britannica，獨立。"
+ },
+ {
+  "key": "toni braxton",
+  "name": "Toni Braxton",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Toni Braxton 生於馬里蘭州 Severn，是六個孩子中的老大；父親是衛理公會牧師，母親受過歌劇訓練。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.georgiaencyclopedia.org/articles/arts-culture/toni-braxton-b-1968/",
+      "from": "new"
+     },
+     {
+      "f": "她在管教嚴格的宗教家庭長大，第一個演唱經驗是和四個妹妹一起在教會詩班唱歌。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/toni-braxton",
+      "from": "new"
+     },
+     {
+      "f": "1990 年她與四個妹妹組成的 The Braxtons 以單曲〈Good Life〉簽在 Arista；這首歌引起製作人 L.A. Reid 與 Babyface 注意，她後來以個人身分簽進他們的 LaFace Records。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/toni-braxton",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她以獨特的女低音（contralto）嗓音聞名，被形容為低沉沙啞又華麗。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/toni-braxton",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1993 年首張同名專輯讓她拿下葛萊美最佳新人獎（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.biography.com/musicians/toni-braxton",
+      "from": "new"
+     },
+     {
+      "f": "1998 年 9 月起她在百老匯《Beauty and the Beast》飾演 Belle；作曲家 Alan Menken 專為她寫了新歌〈A Change in Me〉加進該劇。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.biography.com/musicians/toni-braxton",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1990 年 The Braxtons 發行單曲〈Good Life〉。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/toni-braxton",
+      "from": "new"
+     },
+     {
+      "f": "1993 年發行首張個人專輯《Toni Braxton》。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.biography.com/musicians/toni-braxton",
+      "from": "new"
+     },
+     {
+      "f": "1998 年在百老匯演出《Beauty and the Beast》。",
+      "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+      "src2": "https://www.biography.com/musicians/toni-braxton",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年首張專輯獲葛萊美最佳新人獎（得獎）。",
+    "src": "https://en.wikipedia.org/wiki/Toni_Braxton",
+    "src2": "https://www.biography.com/musicians/toni-braxton",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基寫她生於 1967 年 10 月 7 日；New Georgia Encyclopedia 與 Encyclopedia.com 寫 1968 年。出生年兩源不一致，facts 不寫年份。",
+   "首張專輯葛萊美座數：維基寫三座（最佳新人與兩年連續的最佳女歌手 R&B 演唱），biography.com 寫兩座（最佳新人與最佳女歌手 R&B 演唱）；facts 只寫兩源一致的『最佳新人』。",
+   "首張專輯全球銷量：維基寫 1000 萬張以上、Georgia Encyclopedia 與 Encyclopedia.com 寫 900 萬張以上、biography.com 寫 800 萬張以上；銷量屬累計數字，facts 不寫。"
+  ],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "同名檢查：卡池五張（Toni Braxton、Secrets、The Heat、Libra、Sex & Cigarettes）全是馬里蘭出身的 Toni Braxton，無混卡。事實庫 research 與 published 皆空，全部新查。\n請求（成功 5 次）：en 維基 Toni Braxton、WebSearch（生平，只看摘要）、New Georgia Encyclopedia（WebFetch，實際開頁）、Encyclopedia.com（WebFetch，實際開頁）、biography.com（WebFetch，實際開頁）。失敗 1 次：Britannica 404。\nlegacy 偏薄：查無兩源一致的權威共識或後輩點名；維基列有 Beyoncé、Tamar Braxton、Kelly Clarkson、Keyshia Cole、Kehlani、Ari Lennox 等人被說『受她影響』，但那是維基單源、且原文只是列舉『被引為影響的藝人』，未逐一驗證，故不進 facts。\n單源未進 facts：(1) 維基：2011 年入選 Georgia Music Hall of Fame、2017 年獲 Soul Train Music Awards 的 Legend Award（維基首段單源）；(2) 維基：在 Bowie State University 讀教職學位、被 William Pettaway 發掘（本人在 2014 年 NPR 節目說不是在加油站自言自語，而是 Pettaway 在加油站認出她並自我介紹，維基與 biography.com 的『加油站聽到她自己唱歌』兩說並存，不收）；(3) 維基：1996 年《Secrets》〈Un-Break My Heart〉是她最大的一首單曲；1996 至 1999 年與 LaFace／Arista 的訴訟與破產（法務履歷，未收）；(4) Georgia Encyclopedia：『the First Lady of LaFace』稱號、成為同志偶像、倡導自閉症認知與紅斑性狼瘡教育（單源）；(5) Encyclopedia.com：一位評論者說她的抒情曲『bluesy, hard-hitting』、讓人想到 Billie Holiday（單源，評語）；(6) 維基：Steve Huey 稱〈Un-Break My Heart〉是最佳 R&B 分手歌之一（單一評論者）。\n『第一位』類：維基、Georgia Encyclopedia、biography.com 都稱她是百老匯《Beauty and the Beast》第一位黑人 Belle、也是第一位主演 Disney 百老匯音樂劇的黑人女性；三源一致，但反例未逐一查證，故 f 只寫她演 Belle 與 Menken 寫新歌，不寫『第一位』；寫作層若要用，須寫成『多家傳記稱她是第一位』。\n日期：〈Good Life〉單曲年份 1990 三源一致（維基寫 1989 年簽約 Arista、1990 年單曲）；LaFace 簽約年 Georgia Encyclopedia 與 Encyclopedia.com 寫 1991、維基未寫，facts 不寫。\n非獨立提示：無，src 與 src2 皆不同站；biography.com 摘要曾把首張專輯銷量與獎項寫得與維基略有出入，見 conflicts。"
+ },
+ {
+  "key": "vince staples",
+  "name": "Vince Staples",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Vince Staples 1993 年 7 月 2 日生於 Compton，在 Long Beach 長大，住在北 Long Beach 的 Ramona Park 一帶。",
+      "src": "https://en.wikipedia.org/wiki/Vince_Staples",
+      "src2": "https://www.revolt.tv/article/12-facts-about-vince-staples-you-need-to-know",
+      "from": "new"
+     },
+     {
+      "f": "他在 Ramona Park 親身經歷幫派暴力與社區的困境。",
+      "src": "https://en.wikipedia.org/wiki/Vince_Staples",
+      "src2": "https://www.revolt.tv/article/12-facts-about-vince-staples-you-need-to-know",
+      "from": "new"
+     },
+     {
+      "f": "他透過 Earl Sweatshirt 與 Syd 進入 Odd Future 的圈子；Mac Miller 後來製作了他 2013 年的混音帶《Stolen Youth》。",
+      "src": "https://en.wikipedia.org/wiki/Vince_Staples",
+      "src2": "https://www.revolt.tv/article/12-facts-about-vince-staples-you-need-to-know",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的詞常帶 conscious 意識，製作則往前衛、舞曲與電子實驗；2017 年《Big Fish Theory》把 house 與電子舞曲帶進嘻哈。",
+      "src": "https://en.wikipedia.org/wiki/Vince_Staples",
+      "src2": "https://www.revolt.tv/article/12-facts-about-vince-staples-you-need-to-know",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2015 年首張錄音室專輯《Summertime '06》獲樂評廣泛好評，內容寫他在 Long Beach 成長的暴力、失去與求生。",
+      "src": "https://en.wikipedia.org/wiki/Summertime_%2706",
+      "src2": "https://www.revolt.tv/article/12-facts-about-vince-staples-you-need-to-know",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2026 年 6 月 5 日發行第七張錄音室專輯《Cry Baby》，簽在 Loma Vista Recordings；維基稱這是他作為獨立藝人的第一張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Vince_Staples",
+      "src2": "https://musicbrainz.org/ws/2/release-group/c61a29d8-6311-4b4a-96ab-e5f1b2294dab?fmt=json&inc=artist-credits+releases",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "同名檢查：卡池五張（Summertime '06、Big Fish Theory、Vince Staples、RAMONA PARK BROKE MY HEART、Cry Baby）全是 Long Beach 的 Vince Staples，無混卡。事實庫 research 僅有《Cry Baby》的 MusicBrainz 條目（4 筆 release、2026-06-05、Loma Vista／Section Eight Arthouse、US 黑膠 11 軌），沒有身世與地位；上線簡介『Cry Baby』寫『成為獨立藝人之後第一次發行』與維基一致，無衝突。\n請求（成功 6 次）：en 維基 Vince Staples、WebSearch（風格與 Ramona Park，只看摘要）、Revolt 12 facts（WebFetch，實際開頁）、Complex 專文（WebFetch，實際開頁，僅用於 notes）、WebSearch（年度榜，只看摘要）、en 維基《Summertime '06》。無失敗請求。\n單源未進 facts：(1) 維基：祖父來自海地、祖母來自多明尼加、外祖父 Andrew Hutchins 為 Dodgers 球迷因 Duke Snider 而定居 Compton、家人有多人是幫派成員、國中起加入 Long Beach 的 2N Gangsta Crips（與堂哥 Joey Fatts）、Mayfair High School 的事件與遷居 Atlanta 八個月、輟學後寄住朋友家（維基單源；『幫派』只有維基寫明幫派名稱，Revolt 只寫經歷幫派暴力）；(2) 維基：2010 年經 Dijon Samo 認識 Syd、和 Earl Sweatshirt 錄〈epaR〉（兩人後來都否認此曲）、他自稱只是 Odd Future 關係人而非成員（維基單源）；(3) 維基：Summertime '06 專輯封面根據 Joy Division《Unknown Pleasures》、2015 年 Metacritic 87/100、Pitchfork 8.8、〈Norf Norf〉白金認證（單源、榜單數字未收）；(4) Complex 專文（評 2022 年《Ramona Park Broke My Heart》）：唱腔刻意壓低、陽光式的配樂搭配沉重的詞，說法只是單一樂評；(5) 搜尋摘要：Inverse 稱《Summertime '06》是『年度專輯』（單一站的立場文章，且同一摘要說當年多數人認為年度專輯是 Kendrick Lamar《To Pimp a Butterfly》）；(6) 維基：2024 年 Netflix 影集《The Vince Staples Show》（履歷）。\nlegacy 偏薄：查無兩源一致的『後輩點名受他影響』或權威票選；status 仍標 full 因為 origin、sound、legacy 三格皆有兩源事實，但 legacy 只有一條專輯層級評價。\n非獨立提示：origin 與 sound 的 src 為維基、src2 為 Revolt；legacy 的 src 為維基《Summertime '06》條目、src2 為 Revolt（Revolt 摘要語句與另一搜尋摘要的說法相同，可能引自同一稿）。era 的 src2 為 MusicBrainz release-group（取自事實庫）：只支持 2026 年 6 月 5 日發行、Loma Vista 為發行方，『獨立藝人』一詞只有維基與上線簡介（簡介出自先前研究層），寫作層寫成『維基稱』。"
+ },
+ {
+  "key": "wu-tang clan",
+  "name": "Wu-Tang Clan",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Wu-Tang Clan 1992 年在紐約成軍，成員來自 Staten Island 與 Brooklyn 的社會住宅區；RZA 是團的實質領袖與製作人。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     },
+     {
+      "f": "團名取自一部功夫片（Shaolin and Wu Tang）；團體的世界觀來自功夫片與 Five-Percent Nation 的教義。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的聲音帶功夫片與靈魂樂的片段取樣，由 RZA 一手打造；RZA 在 Staten Island 自家地下室為第一波個人專輯製作。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "英文維基稱 Wu-Tang Clan 被認為讓東岸嘻哈重新活起來，並廣泛被視為史上最偉大的嘻哈團體之一；Britannica 也寫業界許多人視他們為最偉大的嘻哈團體之一。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     },
+     {
+      "f": "首張專輯《Enter the Wu-Tang (36 Chambers)》（1993）被視為嘻哈史上最偉大的專輯之一；Britannica 稱它替 Nas、Mobb Deep 與 Notorious B.I.G. 這類硬派饒舌手爭取到唱片合約鋪了路。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     },
+     {
+      "f": "RZA 設計了非典型的合約：團簽在 Loud，成員仍可各自和其他廠牌簽個人專輯（Method Man 去 Def Jam、Ghostface Killah 去 Sony、GZA 去 Geffen）；Britannica 也寫他鼓勵成員簽給非嘻哈本業的廠牌，因為那些廠牌沒有需要與之競爭的藝人。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     },
+     {
+      "f": "Wu-Tang Clan 獲選 2026 年搖滾名人堂表演者類，是首次被提名就入選；典禮尚未舉行。",
+      "src": "https://rockhall.com/press-release/the-rock-roll-hall-of-fame-reveals-2026-inductees/",
+      "src2": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1992 年成軍。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     },
+     {
+      "f": "1993 年 11 月發行首張專輯《Enter the Wu-Tang (36 Chambers)》。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     },
+     {
+      "f": "Ol' Dirty Bastard 2004 年過世。",
+      "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+      "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年發行首張專輯《Enter the Wu-Tang (36 Chambers)》。",
+    "src": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+    "src2": "https://www.britannica.com/topic/Wu-Tang-Clan",
+    "from": "new"
+   },
+   {
+    "f": "獲選 2026 年搖滾名人堂表演者類。",
+    "src": "https://rockhall.com/press-release/the-rock-roll-hall-of-fame-reveals-2026-inductees/",
+    "src2": "https://en.wikipedia.org/wiki/Wu-Tang_Clan",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": 2,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "同名檢查：卡池五張（Wu-Tang Forever、8 Diagrams、The W、Enter the Wu-Tang (36 Chambers)、Iron Flag）全是 Staten Island 的 Wu-Tang Clan，無混卡。事實庫 research 只有《Iron Flag》的曲目、封面與 ODB 缺席（維基《Iron Flag》一條）；上線簡介《Iron Flag》寫『封面照硫磺島升旗、Cappadonna 被修掉、ODB 整張沒登場、Billboard 200 第 32 名、金唱片、687000 張為團內銷量第二低』與本稿無衝突，也未發現需改之處。\n請求（成功 3 次）：en 維基 Wu-Tang Clan、WebSearch（搖滾名人堂 2026，只看摘要）、搖滾名人堂官網新聞稿（WebFetch，實際開頁）。另外 Britannica Wu-Tang Clan（WebFetch，實際開頁）是在處理 Raekwon 時開的同一次請求，記在 Raekwon 位、此處不重複計數。失敗 2 次：CNN 451、Hollywood Reporter 307 轉 tollbit。\n依特注：Wu-Tang 材料多，只收『為什麼重要』的共識與身世；成員 ODB 2004 年過世只收年份（享年 35 歲與死因只見 Britannica 單源，維基《Wu-Tang Clan》本頁只寫『until his death in 2004』，故不收）。\n搖滾名人堂：官方新聞稿（可具名單源，屬此類例外的官方頁）寫 2026 年 4 月 13 日公布名單、Wu-Tang Clan 與 Phil Collins、Luther Vandross 是首次被提名；典禮預定 2026 年 11 月 14 日在洛杉磯 Peacock Theater 舉行，尚未舉行（今日為 2026 年 9 月 30 日），寫作層要寫『獲選』、不可寫『已入選』。官方新聞稿對 Wu-Tang 無描述文字，只是名單；維基《Wu-Tang Clan》寫『2026 年將入選』，為第二源（維基 2026 年說法可能寫在提名結果公布後，日期不明）。\n單源未進 facts：(1) 維基：GZA、RZA、Ol' Dirty Bastard 三位表兄弟 1980 年代末先組過 Force of the Imperial Masters（後稱 All in Together Now Crew）、1991 年 GZA 與 RZA 各自簽約 Cold Chillin' 與 Tommy Boy 後被解約、RZA 與 Ghostface 決定組團、1993 年獨立單曲〈Protect Ya Neck〉、團名的縮寫解釋；(2) 維基：1994 至 1996 年各成員個人專輯（Tical、Return to the 36 Chambers、Only Built 4 Cuban Linx...、Liquid Swords、Ironman）；Method Man〈All I Need〉1995 年葛萊美得獎（該獎為單曲、非團體）；(3) 維基：Wu-Tang Killa Bees 旗下附屬藝人；2015 年《Once Upon a Time in Shaolin》唯一一張拷貝以 200 萬美元售給 Martin Shkreli，被稱為史上最貴的音樂作品（涉及買家後續官司，未收）；(4) 維基：RZA 談『Wu-Tang was a financial movement』的引語（本人說法，已轉間接）；(5) Britannica：『Wu-Tang 的名稱來自他們最愛的武術電影』只是 Britannica 說法，維基寫是 RZA 與 ODB 取自電影《Shaolin and Wu Tang》，兩者一致。\n『第一位／唯一』類：未寫。『重振東岸嘻哈』為維基原文的『credited with revitalizing』，Britannica 未直接寫，故 legacy 第 1 條寫成兩源各自的說法（維基：重振東岸、最偉大團體之一；Britannica：最偉大團體之一），寫作層須寫成『維基稱』與『Britannica 引業界說法』。\n非獨立提示：origin、sound、legacy（前三條）與 era 的 src2 為 Britannica，與維基獨立；legacy 第 2 條『最偉大專輯之一』由維基提供，Britannica 提供的是『替硬派饒舌手鋪路』，兩源各寫各的一半，寫作層分開寫。"
  }
 ]
