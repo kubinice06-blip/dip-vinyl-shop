@@ -41,3 +41,7 @@
 - 補洞第 4 組交件，補洞交齊（40 位）。Zbigniew Seifert 失敗請求 5 次，照實記，放行。pubIssue 3 條（Ziad Rahbani〈Saalouni El Nass〉創作年紀；日野皓正隨白木秀雄五重奏赴柏林年份；杉本喜代志《One More》錄音年）。日野皓正紫綬褒章採 2004（日文維基＋ARBAN），不採英文維基 2014。
 - 寫作第 2 組（20 位）審畢，修 3 處：The Skatalites「因同居女友死亡被捕」語意含糊 → 主線 WebSearch（Jamaica Observer、維基）核實為殺害同居女友、陪審團裁定「有罪但精神失常」，照中性事實改寫；明田川荘之刪「一開就是 50 年以上」（會長大的數字）；Tony Bennett「最年長的冠軍歌手」加「當時」。Арсенал 創辦人 Aleksei Kozlov 2026 年 9 月過世，主線 WebSearch 核實 2026-09-25 於莫斯科過世、享年 90（Meduza、Fontanka、Vedomosti）。Tom Zé 273、Tony Bennett 275 照准。
 - ar-b-004 上架：40 位（爵士），審稿修 5 處。
+
+### ar-b-005
+
+- 補洞第 1 組：Adele 失敗請求 6 次、Barry White 5 次、Betty Davis 5 次（付費牆轉址），照實記，放行。pubIssue 2 條（菅野《COWBOY BEBOP》簡介「本多雅人」應為本田雅人、樂器待核；鈴木宏昌コルゲン盤名與樂團名先後）。Boney M. 對嘴說法各源不一，不寫。菅野「国民祭典」為日文專名，QA 誤判保留。

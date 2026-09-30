@@ -727,5 +727,126 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "事實庫沒有研究稿，只有四則上線簡介，三格全靠補查。補查 8 次：維基 Mavis Staples、搖滾名人堂 The Staple Singers 頁、Britannica、WebSearch（Kennedy Center Honors 2016）、Anti- Records 新聞稿、維基 The Staple Singers、維基 You Are Not Alone、維基 We'll Never Turn Back。失敗請求 2 次（不計入）：Kennedy Center 榮譽頁（403）、Kennedy Center 藝人頁（403）。非獨立：維基三條目（Mavis、Staple Singers、專輯）同站；Anti- 新聞稿是 Mavis 唱片公司文宣，Rubenstein 的話轉述自 Kennedy Center 新聞稿。名人堂官方（可具名單源）：搖滾名人堂官網對 The Staple Singers 的介紹稱其音樂是『a vehicle for social activism, positive change and love』（社會行動、正向改變與愛的載體），引介人 Lauryn Hill 稱他們的音樂是『Soul liberating, soul inspiring, and soul empowering music』；寫作層可寫成『搖滾名人堂稱…』。單源不收 facts：Roebuck 1936 年從密西西比 Drew 遷到芝加哥（維基 Staple Singers 單源）；1972 年〈I'll Take You There〉登上兩個 Billboard 榜冠軍（維基 Staple Singers 單源）；1965 年《Freedom Highway》代表 Pops 的抗議歌路線（維基單源）；11 歲加入樂團、原想讀護理、1957 年高中畢業後被父親說服留下（Britannica 單源）；2004 年《Have a Little Faith》悼念父親、2000 年父親過世後與 Bob Dylan 合作（Britannica 單源）；2017 年入選 Blues Hall of Fame、獲五座葛萊美、2015 年紀錄片中透露 Dylan 曾求婚（維基單源）；Anti- 稱她獲最佳 American Roots Performance 葛萊美（單源，未查屆次）；2007 年《We'll Never Turn Back》Ry Cooder 製作、錄於 Van Nuys 的 Sound City、以民權運動歌曲為主題、Billboard 200 第 180 名、Greg Kot 選為年度第一（維基專輯單源；上線簡介寫法一致）；搜尋摘要（Kennedy Center 頁，未開）稱 13 歲於 1954 年首次錄音，以及 Obama 頒獎時說她 8 歲站上教堂椅子唱福音，聽眾都哭了。卡池四張專輯確認為同一人（1969–2010）。"
+ },
+ {
+  "key": "maxwell",
+  "name": "Maxwell",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Maxwell（本名 Gerald Maxwell Rivera）1973 年生於紐約布魯克林，母親是海地人、父親是波多黎各人；父親在他 3 歲時死於空難。",
+      "src": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+      "src2": "https://www.okayplayer.com/rediscovered-maxwells-urban-hang-suite/1426772",
+      "from": "new"
+     },
+     {
+      "f": "他 1990 年代初開始在紐約的俱樂部場景演出，1994 年獲 Columbia Records 簽約。",
+      "src": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+      "src2": "https://www.wpxi.com/entertainment/maxwell-has-always-done-it-his-own-way-hispanic-heritage-month/3SOZY2GLTBH2LHMJE3BNYOVJEQ/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Maxwell's Urban Hang Suite》（1996）把 1990 年代初紐約市中心俱樂部的聲響，接上 20 年前大地般的靈魂樂，取法 Marvin Gaye 與 Prince，而不是當年主流的嘻哈取向 R&B。",
+      "src": "https://en.wikipedia.org/wiki/Maxwell%27s_Urban_Hang_Suite",
+      "src2": "https://www.okayplayer.com/rediscovered-maxwells-urban-hang-suite/1426772",
+      "from": "new"
+     },
+     {
+      "f": "這張首作有 Sade 的製作人兼樂手 Stuart Matthewman 參與，Leon Ware 也共同創作，其中包括〈Sumthin' Sumthin'〉，把專輯連回 1970 年代靈魂樂的路數。",
+      "src": "https://www.okayplayer.com/rediscovered-maxwells-urban-hang-suite/1426772",
+      "src2": "https://en.wikipedia.org/wiki/Leon_Ware",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Maxwell 與 Lauryn Hill、D'Angelo、Erykah Badu 並列，被認為是 1990 年代晚期把 neo soul 帶進主流流行音樂的人；《Urban Hang Suite》與 D'Angelo《Brown Sugar》、Badu《Baduizm》一起讓 neo soul 站上主流舞台。",
+      "src": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+      "src2": "https://en.wikipedia.org/wiki/Maxwell%27s_Urban_Hang_Suite",
+      "from": "new"
+     },
+     {
+      "f": "《Urban Hang Suite》感官而迷幻的質地，影響了 Jhene Aiko 與 The Weeknd 等後輩；維基也記他影響了 The Weeknd。",
+      "src": "https://www.okayplayer.com/rediscovered-maxwells-urban-hang-suite/1426772",
+      "src2": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "2010 年第 52 屆葛萊美，《BLACKsummers'night》得最佳 R&B 專輯，〈Pretty Wings〉得最佳男歌手 R&B 演唱（皆得獎）；〈Pretty Wings〉另入圍年度歌曲與最佳 R&B 歌曲（入圍）。2017 年第 59 屆，〈Lake by the Ocean〉得最佳 R&B 歌曲（得獎）。",
+      "src": "https://www.grammy.com/artists/maxwell/4672/",
+      "src2": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "他沉寂 8 年後在 2009 年 7 月 7 日推出《BLACKsummers'night》，首週賣出約 31.6 萬張，登上 Billboard 200 冠軍，是他最高的首週成績。",
+      "src": "https://en.wikipedia.org/wiki/BLACKsummers%27night",
+      "src2": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1996 年 4 月 2 日由 Columbia 發行首張專輯《Maxwell's Urban Hang Suite》，一開始銷售緩慢，靠單曲〈Ascension (Don't Ever Wonder)〉才逐步累積，1997 年達白金。",
+      "src": "https://en.wikipedia.org/wiki/Maxwell%27s_Urban_Hang_Suite",
+      "src2": "https://www.okayplayer.com/rediscovered-maxwells-urban-hang-suite/1426772",
+      "from": "new"
+     },
+     {
+      "f": "2001 年 8 月 14 日的《Now》是他首張 Billboard 200 冠軍，也是他 8 年空窗前最後一張錄音室專輯。",
+      "src": "https://en.wikipedia.org/wiki/Now_(Maxwell_album)",
+      "src2": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "2001 年至 2009 年之間他沒有發行錄音室專輯；他對 Reuters 說，離開的時間讓他更懂得珍惜，也才能把新專輯做出內容。",
+      "src": "https://www.wpxi.com/entertainment/maxwell-has-always-done-it-his-own-way-hispanic-heritage-month/3SOZY2GLTBH2LHMJE3BNYOVJEQ/",
+      "src2": "https://en.wikipedia.org/wiki/BLACKsummers%27night",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1996 年首張專輯《Maxwell's Urban Hang Suite》推出，成為 neo soul 的標誌之作。",
+    "src": "https://en.wikipedia.org/wiki/Maxwell%27s_Urban_Hang_Suite",
+    "src2": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+    "from": "new"
+   },
+   {
+    "f": "2001 年《Now》為他首張 Billboard 200 冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Now_(Maxwell_album)",
+    "src2": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+    "from": "new"
+   },
+   {
+    "f": "2010 年第 52 屆葛萊美，《BLACKsummers'night》拿下最佳 R&B 專輯與最佳男歌手 R&B 演唱。",
+    "src": "https://www.grammy.com/artists/maxwell/4672/",
+    "src2": "https://en.wikipedia.org/wiki/BLACKsummers%27night",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "上線簡介《Now》（首週約 29 萬 6 千張、Billboard 200 冠軍、白金、〈This Woman's Work〉Hot 100 第 58 名與 R&B 第 16 名、2009 年回歸）與維基 Now 條目一致；無衝突。",
+   "《BLACKsummers'night》首週銷量：維基 Maxwell 條目寫 316,000，BLACKsummers'night 條目同（316,000）；同站，非獨立。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫只有《Now》一則上線簡介，無研究稿，三格全靠補查。補查 8 次：維基 Maxwell (musician)、維基 Maxwell's Urban Hang Suite、WebSearch（背景與葛萊美，一次呼叫內含三個子查詢）、Okayplayer 專文、Grammy.com 藝人頁、維基 BLACKsummers'night、維基 Now、WPXI 訪談報導。失敗請求 3 次（不計入）：Britannica（404）、BET 25 週年文（回傳的是首頁內容而非文章）、Rolling Stone 訪談（402 付費牆，經 tollbit）。Grammy.com 為一手來源，證實 2010 年（第 52 屆）兩項得獎與 2017 年（第 59 屆）一項得獎，以及另外 10 項入圍，其中 1997 年《Maxwell's Urban Hang Suite》與 1999 年《Embrya》入圍最佳 R&B 專輯；三座得獎與維基『won three Grammy Awards』一致。非獨立：維基四條目同站；WPXI 稿為地方電視台整理，內容與維基多處雷同。單源不收 facts：Vibe 稱他 the next Prince、《華盛頓郵報》稱他 the Marvin Gaye of the '90s（維基單源）；16 歲以前無、17 歲拿到 Casio 鍵盤開始作曲（維基單源）；專輯風格細節 falsetto、wah wah guitar、Rhodes（維基專輯條目單源）；AllMusic 評《Urban Hang Suite》『destined to become a classic contemporary R&B disc』與 Christgau 給 dud（維基單源）；《Urban Hang Suite》在 Billboard 200 最高第 36 名、R&B 第 8 名（維基 Maxwell 單源）、雙白金 2002 年（維基專輯單源）；1997 年 6 月 15 日 MTV Unplugged 錄製（維基單源）；Now 條目的 Kate Bush 翻唱與上線簡介相符（維基單源）；〈Ascension〉R&B 第 8 名（Okayplayer 單源）；2019 年國會黑人連線基金會終身成就獎、6 座 Soul Train、2 座 NAACP Image（搜尋摘要，來源為 TikTok 轉貼維基文字，不採）；Embrya 首發不受好評、後被重新評價為開創之作（維基單源）；紐約時報選《BLACKsummers'night》為 2009 年最佳專輯（維基專輯條目單源）。第 2 源說明：origin 第一條『父親空難』第二源 Okayplayer；沒有一源明說『1973 年』以外的月日，出生日 5 月 23 日單源（維基）；sound 第二條的 Leon Ware 共同創作〈Sumthin' Sumthin'〉，第二源為維基 Leon Ware 條目（本組另一位藝人，已於本組讀過），Okayplayer 只寫『Leon Ware 提供精神與音樂方向』，寫作層請寫『參與創作』。卡池四張專輯確認為同一人（1996–2009）。"
  }
 ]
