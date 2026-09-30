@@ -292,3 +292,4 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 補洞第 1 組：pubIssues 2 條（Burial《South London Boroughs》「Hyperdub 第一位簽下的藝人／HDB001」與維基 Hyperdub 條目矛盾；Coldcut《Let Us Play》「首度在 Ninja Tune 發片」視指專輯或單曲而定）。Daft Punk 解散不寫原因。
 - ar-a-016 寫作第 2 組（20 位）審畢，0 處。主線親驗：Boards of Canada《Inferno》2026-05-29 由 Warp 發行（Consequence、RA、維基）。
 - ar-a-016 上架：40 位（電子），審稿 0 處。
+- 補洞交齊。Robyn 失敗請求 5 次，照實記，放行。Enya 兩則上線簡介年份與銷量待核 → pubIssues。
