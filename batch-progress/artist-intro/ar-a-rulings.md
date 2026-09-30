@@ -272,3 +272,6 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 補洞第 1 組：pubIssues 3 條（Umm Kulthum 兩張簡介的調式互相矛盾、R.D. Burman《Amar Prem》曲名、Ali Farka Touré《Niafunké》「灌溉工程」查無出處）。Umm Kulthum 葬禮人數兩源口徑不一（約 400 萬／200–400 萬），寫作層寫「數百萬」。
 - 寫作第 2 組（20 位）審畢，修 1 處：Fela Kuti「她昏迷不醒，隔年因傷過世」暗示昏迷一年多，來源只寫受傷昏迷、隔年傷重過世 → 改「受了重傷，隔年傷重過世」。
 - 上架：40 位（流行、日港台、K-pop、世界），審稿修 7 處。
+- 補洞第 2 組：pubIssues 3 條（Big Youth 2、Orchestra Baobab 1）。Oumou Sangaré〈Imagine〉葛萊美屬合作計畫，不算個人。
+- 補洞第 3 組：**Air 卡池混了美國自由爵士三重奏 Air（Threadgill、Hopkins、McCall）的 4 張**（Air Song／Air Time／Air Lore／Air Mail）→ 只寫法國二人組，爵士四張待本機拆卡另立「Air (jazz trio)」。
+  **Cicada《ある男》配樂**：flau 官網稱獲日本電影學院獎「最優秀音樂獎」有誤；主線查證（Oricon、松竹官網）實為「優秀音樂獎」（入圍層級），最優秀由《すずめの戸締まり》獲得 → 以正確說法補進 legacy。

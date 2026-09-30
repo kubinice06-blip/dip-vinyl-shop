@@ -1,0 +1,350 @@
+[
+ {
+  "key": "ryoji ikeda",
+  "name": "Ryoji Ikeda",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "池田亮司 1966 年生於日本岐阜縣，現居法國巴黎。",
+      "src": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+      "src2": "https://ja.wikipedia.org/wiki/池田亮司",
+      "from": "new"
+     },
+     {
+      "f": "他是京都藝術團體 Dumb Type 的成員，負責音樂。",
+      "src": "https://ja.wikipedia.org/wiki/ダムタイプ",
+      "src2": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的創作從物理與數學的角度處理頻率，素材是正弦波與雜訊這類「生」的聲音，常用落在人耳聽覺邊緣的頻率。",
+      "src": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+      "src2": "https://ja.wikipedia.org/wiki/池田亮司",
+      "from": "new"
+     },
+     {
+      "f": "創作從錄音延伸到視覺與裝置藝術，以數據、數學與科學概念為基礎，作品在北美、歐洲、亞洲與澳洲展出。",
+      "src": "https://ja.wikipedia.org/wiki/池田亮司",
+      "src2": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+      "from": "new"
+     },
+     {
+      "f": "他與 Carsten Nicolai 有合作，兩人 2012 年共同獲得 Giga-Hertz Award 的聲音藝術類獎項。",
+      "src": "https://ja.wikipedia.org/wiki/池田亮司",
+      "src2": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2001 年以《matrix》獲 Prix Ars Electronica 數位音樂類（Digital Music）的 Golden Nica（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+      "src2": "https://en.wikipedia.org/wiki/Prix_Ars_Electronica",
+      "from": "new"
+     },
+     {
+      "f": "2014 年獲 Prix Ars Electronica Collide@CERN 獎，2014 年 7 月起赴 CERN 駐村約一年。",
+      "src": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+      "src2": "https://ja.wikipedia.org/wiki/池田亮司",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dumb Type 1984 年成立於京都，成員多出自京都市立藝術大學。",
+      "src": "https://ja.wikipedia.org/wiki/ダムタイプ",
+      "src2": "https://en.wikipedia.org/wiki/Dumb_Type",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年以《matrix》獲 Prix Ars Electronica 數位音樂類 Golden Nica（得獎）。",
+    "src": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+    "src2": "https://en.wikipedia.org/wiki/Prix_Ars_Electronica",
+    "from": "new"
+   },
+   {
+    "f": "2014 年獲 Prix Ars Electronica Collide@CERN 獎，赴 CERN 駐村。",
+    "src": "https://en.wikipedia.org/wiki/Ryoji_Ikeda",
+    "src2": "https://ja.wikipedia.org/wiki/池田亮司",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "日文維基寫 2020 年獲文部科學大臣賞（媒體藝術部門）；文化庁令和 2 年度（第 71 回）芸術選奨公告的媒體藝術部門得主搜尋結果是湯淺政明，查不到池田，故不收該獎。",
+   "英文維基寫 matrix 是 2001 年 Golden Nica 得獎作，另有搜尋摘要稱 Matrix 專輯 2000 年發行；卡池為 2001，facts 只寫獲獎年 2001，不寫專輯發行年。"
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "名冊 Ryoji Ikeda，poolAlbums 十張皆電子音樂（+/-、0°C、Matrix、op.、Dataplex、Test Pattern、Supercodex、ultratronics 等），確認為池田亮司本人，無同名混卡。事實庫 research 與 published 皆空，三格從零查。搜尋 8 次：英文維基 Ryoji Ikeda、日文維基池田亮司、WebSearch（Golden Nica）、WebSearch（人物側寫）、WebSearch（芸術選奨）、Prix Ars Electronica 英文維基、Dumb Type 英文維基、Dumb Type 日文維基。失敗請求 3 次未計入：creativeapplications.net 403、AllMusic 403、Guardian 無法抓取。src2 說明：origin 第一條與 legacy 兩條的英日維基、以及 Prix Ars Electronica 英文維基均實際開頁讀到，但英文維基與日文維基屬同站不同條目，非獨立；Dumb Type 兩條為同站不同語言版，非獨立。Giga-Hertz Award 2012 只見日文維基明寫，英文維基僅寫與 Carsten Nicolai 以 Cyclo. 名義合作，src2 只支持「有合作」，獎項單源（日文維基）。Prix Ars Electronica 英文維基寫該獎是 the best known and longest running yearly prizes in the field of electronic and interactive art，單源，未進 facts。單源未收：1990 年代初當 DJ、約 1993 年加入 Dumb Type（AllMusic 搜尋摘要，未開頁）；英文維基寫他參與 Dumb Type 四張團體錄音（1995–2000，單源）；搜尋摘要稱 +/-、0°C、Matrix 被評論界稱為當代電子音樂最激進創新的例子（來源未開頁，單源）；他受 Steve Reich、Philip Glass、John Cage 影響（搜尋摘要，未開頁）。legacy 只有獎項與駐村，沒有找到後輩點名或有出處的共識評價，屬得獎型而非評價型。日文姓名照原文，「亮」「岐」等字為日文原名用字。"
+ },
+ {
+  "key": "einstürzende neubauten",
+  "name": "Einstürzende Neubauten",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 1980 年 4 月 1 日在西柏林成軍，創始成員有 Blixa Bargeld 與 N.U. Unruh。",
+      "src": "https://de.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "src2": "https://neubauten.org/en/blixa-bargeld/",
+      "from": "new"
+     },
+     {
+      "f": "主唱 Blixa Bargeld 1959 年 1 月 12 日生於西柏林。",
+      "src": "https://en.wikipedia.org/wiki/Blixa_Bargeld",
+      "src2": "https://de.wikipedia.org/wiki/Blixa_Bargeld",
+      "from": "new"
+     },
+     {
+      "f": "樂團起初缺乏資金，沒有現成的樂器可用，改以廢金屬與建築工具等撿來或自製的物件演奏。",
+      "src": "https://de.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "src2": "https://en.wikipedia.org/wiki/Blixa_Bargeld",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1981 年 11 月發行首張專輯《Kollaps》，用自製機器與撿來的物件演奏。",
+      "src": "https://en.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "src2": "https://neubauten.org/en/blixa-bargeld/",
+      "from": "new"
+     },
+     {
+      "f": "樂器包括以廢金屬與建築工具改造的自製樂器，搭配一般樂器；電鑽與槌子也是舞台上的樂器。",
+      "src": "https://en.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "src2": "https://neubauten.org/en/blixa-bargeld/",
+      "from": "new"
+     },
+     {
+      "f": "樂團被歸在工業（industrial）、後工業與噪音的實驗音樂範疇。",
+      "src": "https://de.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "src2": "https://en.wikipedia.org/wiki/Industrial_music",
+      "from": "new"
+     },
+     {
+      "f": "作品隨年代從音樂與噪音的邊界，走向較有旋律、但仍抽象的寫法。",
+      "src": "https://de.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "src2": "https://en.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bargeld 曾擔任 Nick Cave and the Bad Seeds 的吉他手，直到 2003 年。",
+      "src": "https://en.wikipedia.org/wiki/Blixa_Bargeld",
+      "src2": "https://de.wikipedia.org/wiki/Blixa_Bargeld",
+      "from": "new"
+     },
+     {
+      "f": "樂團自 2000 年代初推行 Supporter 計畫，由粉絲出資支持專輯製作，出資者可參與並進入錄音室，是早期的粉絲集資做法。",
+      "src": "https://de.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "src2": "https://neubauten.org/en/blixa-bargeld/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1984 年在倫敦當代藝術學院（ICA）演出《Concerto for Voice and Machinery》，台上動用電鑽等工具。",
+      "src": "https://en.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+      "src2": "https://en.wikipedia.org/wiki/Industrial_music",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1980 年 4 月 1 日在西柏林成軍。",
+    "src": "https://de.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+    "src2": "https://neubauten.org/en/blixa-bargeld/",
+    "from": "new"
+   },
+   {
+    "f": "1981 年 11 月發行首張專輯《Kollaps》。",
+    "src": "https://en.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+    "src2": "https://neubauten.org/en/blixa-bargeld/",
+    "from": "new"
+   },
+   {
+    "f": "1984 年在倫敦 ICA 演出《Concerto for Voice and Machinery》。",
+    "src": "https://en.wikipedia.org/wiki/Einst%C3%BCrzende_Neubauten",
+    "src2": "https://en.wikipedia.org/wiki/Industrial_music",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Bargeld 加入 Bad Seeds 的起年不一致（英文維基寫 1983、德文維基寫 1984），facts 只寫終年 2003。",
+   "Supporter 計畫起年不一致（德文維基寫 2002 起、官方網站寫 2001–2008），facts 只寫『2000 年代初』，不寫確切年份。",
+   "1984 年 ICA 演出的結局：英文維基寫演出中途被場地叫停，英文維基 Industrial music 條目寫鑽穿地板並引發騷動；兩源不一致，facts 只寫使用電鑽，不寫叫停或騷動。"
+  ],
+  "searches": 8,
+  "failedFetches": 1,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "名冊 Einstürzende Neubauten，poolAlbums 九張（Kollaps、Zeichnungen des Patienten O.T.、Halber Mensch、Haus der Lüge、Tabula Rasa、Ende Neu、Perpetuum Mobile、Alles wieder offen、Alles in Allem），確認為柏林同一樂團，無同名混卡。事實庫 research 與 published 皆空，從零查。搜尋 8 次：英文維基樂團、德文維基樂團、WebSearch（影響力）、neubauten.org 官網（blixa-bargeld 頁）、英文維基 Blixa Bargeld、WebSearch（Reznor/Ministry）、德文維基 Blixa Bargeld、英文維基 Industrial music。失敗 1 次未計：Britannica 404。src2 說明：origin 與 legacy 各條的英文、德文維基屬同站不同語言版，非獨立；官網頁為樂團官方來源，抓回的內容含樂團史與 Kollaps 描述（頁面實際是 Blixa 專頁的樂團介紹，以摘要讀到）。官方網站寫 Kollaps 是『a frontal attack on expectations and ways of listening』並稱樂團『one of the renowned greats of the present and of pop culture』，屬自我介紹，未進 facts；官網稱 2014 年 Goethe-Institut 巡迴展涵蓋 1980 年代德國藝術（單源）。單源未收：英文維基寫樂團影響 Ministry 與 Nine Inch Nails、Trent Reznor 點名其影響（單源，且搜尋摘要另有 Nothing Records 簽約說，未開頁）；Nick Cave 在 1982 年海牙旅館電視上看到 Neubauten 演出而注意到 Bargeld（官網搜尋摘要，另有英文維基 Bargeld 條提到透過電視演出發現，兩處說法時間細節不同，單源處理）；Bargeld 藝名指涉 Dada 藝術家 Johannes Theodor Baargeld、本名 Hans Christian Emmerich（德文維基，單源）；樂團 1986 年與 Peter Zadek、1987–1990 年與 Heiner Müller 合作劇場（德文維基，單源）；2004 年 Palast der Republik 演出 2006 年發行（德文維基，單源）；Halber Mensch（1985）轉向有組織的旋律（英文維基，單源）。legacy 格只有 Bad Seeds 與 Supporter 計畫，缺乏後輩點名與共識評價的雙源，偏薄。"
+ },
+ {
+  "key": "moodymann",
+  "name": "Moodymann",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Moodymann 本名 Kenny Dixon Jr.，生於洛杉磯，出生三週後就搬到底特律。",
+      "src": "https://en.wikipedia.org/wiki/Moodymann",
+      "src2": "https://www.redbullmusicacademy.com/lectures/moodymann-henny-and-kenny/",
+      "from": "new"
+     },
+     {
+      "f": "他的祖父經營過一間爵士俱樂部。",
+      "src": "https://en.wikipedia.org/wiki/Moodymann",
+      "src2": "https://www.redbullmusicacademy.com/lectures/moodymann-henny-and-kenny/",
+      "from": "new"
+     },
+     {
+      "f": "KDJ Records 是他自己創立的獨立廠牌。",
+      "src": "https://en.wikipedia.org/wiki/Moodymann",
+      "src2": "https://www.redbullmusicacademy.com/lectures/moodymann-henny-and-kenny/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把靈魂樂、爵士的取樣與低沉的貝斯線，和現場樂器混進 house 與底特律 techno 的骨架。",
+      "src": "https://en.wikipedia.org/wiki/Moodymann",
+      "src2": "https://ra.co/dj/moodymann/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他一貫強調黑人在 house 與 techno 裡的歷史根源，主張讓這兩種音樂保留鮮明的黑人印記。",
+      "src": "https://ra.co/dj/moodymann/biography",
+      "src2": "https://www.redbullmusicacademy.com/lectures/moodymann-henny-and-kenny/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "KDJ Records 成立年不一致：英文維基寫 1994 年以 EP《Moody Trax》起家，Red Bull Music Academy 講座頁寫約 1992–1993 年開始錄音並創辦；facts 不寫年份。"
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "名冊 Moodymann，poolAlbums 九張（Silentintroduction、Mahogany Brown、Forevernevermore、Silence in the Secret Garden、Black Mahogani、ABCD、Moodymann、Sinner、Taken Away），皆為 Kenny Dixon Jr. 的底特律 house，無同名混卡。事實庫皆空，從零查。搜尋 8 次：英文維基 Moodymann、RA 傳記頁、WebSearch（人物側寫）、Red Bull Music Academy 講座頁、Theo Parrish 英文維基、Detroit techno 英文維基、WebSearch（lo-fi house 影響）、Outsider house 英文維基。失敗 3 次未計：DJ Mag 403、Guardian 無法抓取、英文維基 Silentintroduction 404。英文維基與 RBMA 講座頁屬獨立來源；RA 與 RBMA 也獨立。單源未收（皆為實際開頁但只有一處）：英文維基寫他早年替本地饒舌歌手賣節奏、後來轉向 house 與 techno、在派對當 DJ，並成長於溜冰場與祖父爵士俱樂部的環境（單源）；Philip Sherburne 評他的聲音取自 Stevie Wonder、Marvin Gaye、Chic、根植於 disco 的搖擺（英文維基，單源）；評論者 Ben Cardew 稱他影響了 2010 年代的 lo-fi house、outsider house 與 chillwave（英文維基，單源；另查 Outsider house 維基條未提 Moodymann，未能補第二源）；Soul Skate 溜冰活動 2007 年起每年辦兩次（英文維基，單源）；RBMA 講座稱他是 house 音樂中最神秘、最有魅力的人物之一（RBMA 單源，另有 DJ Mag 搜尋摘要未開頁）；父親是音樂人、電台 DJ Mojo 的啟蒙（RBMA 單源）；1990 年代中期在唱片行工作（含 Blake Baxter 的店）、在 Outcast Motorcycle Club 當駐場 DJ、先用 House 名號再改 Moodymann（RA 單源）；鼓組編程刻意不隨潮流加速（RA 單源）；Theo Parrish 1995 年 B 面曲 Lake Shore Drive 附在 Moodymann 的 12 吋、兩人同屬 3 Chairs（Theo Parrish 維基，單源）；首張專輯《Silentintroduction》1997 年 Planet E 發行（英文維基與卡池，RA 只寫早期 Planet E 單曲，專輯年份缺第二個網頁來源）。查得到的人物層次偏薄：legacy 只有一條雙源，era 為 none。"
+ },
+ {
+  "key": "plaid",
+  "name": "Plaid",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Plaid 是 Ed Handley 與 Andy Turner 組成的英國電子音樂二人組，兩人是 The Black Dog 的創始成員之一（另一位是 Ken Downie）。",
+      "src": "https://en.wikipedia.org/wiki/Plaid_(band)",
+      "src2": "https://en.wikipedia.org/wiki/The_Black_Dog_(band)",
+      "from": "new"
+     },
+     {
+      "f": "1995 年 Handley 與 Turner 離開 The Black Dog，全力投入 Plaid。",
+      "src": "https://en.wikipedia.org/wiki/The_Black_Dog_(band)",
+      "src2": "https://ra.co/dj/plaid/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Plaid 的節奏繁複卻始終有律動，旋律與聲響設計直指情感，並混用真實樂器與取樣。",
+      "src": "https://en.wikipedia.org/wiki/Plaid_(band)",
+      "src2": "https://ra.co/dj/plaid/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1992 年 Warp 的合輯《Artificial Intelligence》收錄了 The Black Dog 與 Autechre、Aphex Twin、B12 等人，被認為助長了 1990 年代初環境 techno 與 IDM 的成形。",
+      "src": "https://en.wikipedia.org/wiki/Artificial_Intelligence_(compilation_album)",
+      "src2": "https://en.wikipedia.org/wiki/Intelligent_dance_music",
+      "from": "new"
+     },
+     {
+      "f": "Plaid 與 Björk 等歌手合作，也替 Goldfrapp 等人做過混音。",
+      "src": "https://en.wikipedia.org/wiki/Plaid_(band)",
+      "src2": "https://ra.co/dj/plaid/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2006 年為 Michael Arias 導演的動畫電影《Tekkonkinkreet》配樂，此後持續做電影配樂。",
+      "src": "https://en.wikipedia.org/wiki/Plaid_(band)",
+      "src2": "https://ra.co/dj/plaid/biography",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Plaid 起始年：英文維基寫 1991 年起 Plaid 是主要計畫，RA 與 The Black Dog 條目寫 1995 年後才全力投入；facts 只寫 1995 年離團專心。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "名冊 Plaid，poolAlbums 九張（Not for Threes、Rest Proof Clockwork、Double Figure、Spokes、Scintilli、Reachy Prints、The Digging Remedy、Polymer、Feorm Falorx），皆為 Warp 旗下的英國電子二人組 Plaid，無同名混卡。事實庫皆空，從零查。搜尋 8 次：英文維基 Plaid、英文維基 The Black Dog（Black Dog Productions 轉址）、WebSearch（訪談）、RA 傳記頁、Artificial Intelligence 合輯英文維基、The Black Dog 英文維基（與第二次同一條目）、IDM 英文維基、WebSearch（Warp 與 AI 影響）。失敗 2 次未計：prsformusic.com 404、warp.net 403。src2 說明：origin 第一條的 The Black Dog 條目與 legacy 兩處的英文維基，皆同站英文維基不同條目，非獨立；RA 與英文維基屬獨立。單源未收：The Black Dog 1989 年成軍於雪菲爾（The Black Dog 維基，另一條是同一條目轉址，非獨立第二源）；早期受 hip hop、electro，後來受美國 techno、house、acid 啟發（RA 單源）；RA 寫 Plaid 與 The Black Dog 是 1990 年代初到中期 Artificial Intelligence 運動的核心，並稱該運動是狂歡爆發的白熱之外的溫暖對應（RA 單源，Warp 官網被擋）；1996 年為 Björk 亞洲巡演擔任開場、獲得很大助力（RA 單源，PRS 搜尋摘要未開頁）；The Black Dog 條目稱其為 techno 沉思式居家聆聽美學的先驅（指 The Black Dog，非 Plaid 本身）；Artificial Intelligence 合輯的 Pitchfork、Rolling Stone 評價（合輯維基單源，且主詞為合輯與 The Black Dog，不宜寫成 Plaid）。合輯收錄的是 The Black Dog（以 I.A.O. 名義）而非 Plaid 名義，寫作層不得把 Plaid 寫成合輯參與者；合輯與 Plaid 的關係只寫「兩人是當時 The Black Dog 的成員」。legacy 偏薄，Plaid 自身缺後輩點名與共識評價的雙源。"
+ }
+]
