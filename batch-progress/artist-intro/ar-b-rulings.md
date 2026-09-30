@@ -87,3 +87,7 @@
 
 - 補洞第 1 組：Crosby, Stills & Nash 失敗請求 5 次，照實記，放行。deca joins 金曲獎第 30 屆 MV 入圍署名是空氣腦唱片，不寫成樂團入圍。Dezerter 兩條 src2 為維基衍生頁，視同單源。
 - 補洞第 2 組：Flower Travellin' Band 地位格 none；日本團員名照上線簡介原文，查不到漢字者以拉丁拼音。Fall Out Boy 銷量兩說不寫。
+
+### ar-b-010
+
+- 補洞第 1 組：Noir Désir 2003 年案件只收年份、法院、罪名與刑期，不寫案情與受害者姓名。Nirvana Cobain 過世只寫 1994 年（遺體發現日 4 月 8 日與推定死亡日 4 月 5 日並存，兩源各取其一）。Neurosis Scott Kelly 2019 年採「離團」。
