@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 28 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 35 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -32,3 +32,10 @@
 | ar-a-004 | Michel Legrand | Legrand Jazz | 二十四歲的巴黎編曲家開了張名單 | Legrand 1932 年 2 月 24 日生，1958 年 6 月錄音時已 26 歲，不是 24 歲（事實庫研究稿 c50a-a 也沿用 24 歲）；維基記他 1954 年《I Love Paris》走紅時為 22 歲，與 1932 年出生一致。 | https://en.wikipedia.org/wiki/Michel_Legrand |
 | ar-a-004 | Milt Jackson | Milt Jackson With John Lewis, Percy Heath, Kenny Clarke, Lou Donaldson and the Thelonious Monk Quintet | 〈Evidence〉錄於 1948 年 7 月的 Monk 場次，24 歲的 Jackson 是側手 | Jackson 生於 1923 年 1 月 1 日，1948 年 7 月已 25 歲，不是 24 歲。 | https://en.wikipedia.org/wiki/Milt_Jackson |
 | ar-a-004 | The Modern Jazz Quartet | Music from Odds Against Tomorrow | 「Lewis 說這是他第一次順著劇情線寫音樂，而不是交出一組互不相干的曲子」 | 維基 John Lewis 條目列他 1957 年已為《Sait-On Jamais》（Roger Vadim 電影）配樂，1959 年才是 Odds Against Tomorrow；『第一次』若非 Lewis 原話有出處，容易被推翻，建議改成不帶序數的寫法或補出處 | https://en.wikipedia.org/wiki/John_Lewis_(pianist) |
+| ar-a-004 | 本田竹広 | Jōdo | 這是本田竹広在 Trio Records 時期的第三張領銜作 | 日文維基列出的 Trio Records 領銜作編號是 RSP-9008《The Trio》、RSP-9018《浄土》、RSP-9021、RSP-9026，《Jōdo》依序是第二張；『第三張』沒有找到依據，可能記錯，需核對 Trio Records 目錄或改成不排序的寫法。 | https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83 |
+| ar-a-004 | Al Green | Lay It Down | 暌違世俗靈魂樂多年後的 2008 年作品 | 英文維基《Lay It Down》條目列出前作是 2005 年的《Everything’s OK》，卡池另有 2003 年《I Can’t Stop》，兩張都是世俗靈魂作品，與其間相隔僅約三年不合，『暌違多年』的說法建議刪或改為『回到 Hi 時期樂隊聲響』；兩座葛萊美（第 51 屆：〈Stay with Me (By the Sea)〉得最佳 R&B 雙人或團體演唱、〈You've Got the Love I Need〉得最佳傳統 R&B 演唱）依維基專輯頁屬實。 | https://en.wikipedia.org/wiki/Lay_It_Down_(Al_Green_album) |
+| ar-a-004 | The Staple Singers | Freedom Highway | Sony 於 2015 年以《Freedom Highway Complete》重發，補回引言與祝禱、擴成十八軌 | Legacy Recordings（Sony 旗下）2014 年 12 月的官方新聞稿寫 Complete 版共 17 首、補回 30 多分鐘內容；上線簡介寫 18 軌，建議依 Discogs 或實體曲目表核對軌數。 | https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/ |
+| ar-a-004 | The Staple Singers | Freedom Highway | 同名曲……歌詞點名艾默特·提爾在 Tallahatchie 河邊遇害一事 | 本層讀到的 Legacy Recordings 官方新聞稿與維基都未提到歌詞點名 Emmett Till，只寫標題曲受 Selma 到 Montgomery 遊行啟發；無法證實，建議回查歌詞或出處，查不到就刪。 | https://www.legacyrecordings.com/2014/12/17/the-staple-singers-freedom-highway-complete-available-on-march-3-2015/ |
+| ar-a-005 | The Impressions | Finally Got Myself Together | Curtis Mayfield 離團三年後，The Impressions 靠這張 1974 年的專輯…… | 兩源（維基、Britannica）都寫 Mayfield 1970 年離團，1974 年距離團為四年，「離團三年後」算法不合；另「第十五張錄音室專輯」未查證。 | https://en.wikipedia.org/wiki/The_Impressions |
+| ar-a-005 | Slave | The Hardness of the World | Slave 是 1975 年在 Dayton 由小號手 Steve Washington 與 Floyd Miller 組起 | 成軍年各源不一（維基 1975 年底至 1976 年春；Buckeye Beat 1976），建議改成『1970 年代中期』；Floyd Miller 是長號手，簡介只點名 Washington 為小號手，未寫錯。 | https://www.buckeyebeat.com/slave.html |
+| ar-a-005 | Johnnie Taylor | Raw Blues | 少年時在 Highway Q.C.'s 唱福音、與 Sam Cooke 同團 | Cooke 是 Highway Q.C.'s 的前成員，Taylor 後來加入並在 1955 年錄音時任主唱，兩人並非同時同團；Taylor 是 1957 年接替 Cooke 在 Soul Stirrers 的位置。 | https://encyclopediaofarkansas.net/entries/johnnie-harrison-taylor-637/ |
