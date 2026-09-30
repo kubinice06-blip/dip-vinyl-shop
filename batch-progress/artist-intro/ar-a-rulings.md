@@ -181,3 +181,5 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 補洞第 3 組：主線親驗落日飛車第 37 屆金曲最佳樂團（2026-06-27，《QUIT QUIETLY》，鏡週刊、Rti、中時），第二座。
   Bon Jovi《New Jersey》上線簡介「首張在蘇聯正式上架的美國專輯」只找到 1989 年預告稿、主詞是團體不是專輯 → 記 pubIssues，交本機。
   卡單年份疑誤：Built to Spill《Perfect from Now On》卡 1996（實 1997）、《Keep It Like a Secret》卡 1998（實 1999）。
+- 補洞第 4 組：Caravan 卡池混了泰國樂團 คาราวาน 的《คนกับควาย》（1975），只寫英國坎特伯里那團；該卡待本機拆出（同 Placebo、Steve Lacy 案）。
+  Devo《Q: Are We Not Men?》上線簡介「改請 David Bowie 重混」三源皆無 → pubIssues，交本機。
