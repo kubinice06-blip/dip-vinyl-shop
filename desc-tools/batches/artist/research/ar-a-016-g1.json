@@ -479,5 +479,89 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，全靠補查。**本位用了 9 次（超出上限 1 次）**：維基 Christian Fennesz、WebSearch、The Quietus、RA 專輯評、維基《Endless Summer》、HHV Mag、WebSearch（生平）、RA 藝人小傳、musicexport.at（第 9 次，超額）。依規則，超額那次取得的內容全數撤掉、不入 facts：musicexport.at 稱《Hotel Paral.lel》（1997）獲 Prix Ars Electronica、《Endless Summer》被認為是十年間最重要的作品之一、稱他為「電子音樂的關鍵人物與最具辨識度的聲音之一」，這些只作為線索，需下一輪兩源查證。身分確認：poolAlbums 七張（《Hotel Paral.lel》《Endless Summer》《Venice》《Cendre》《Black Sea》《Bécs》《Agora》）皆為維也納的 Christian Fennesz，無同名混卡。**單源（不入 facts）**：維基單源：1962 年 12 月 25 日生於 Neusiedl am See（生年，單源不收，搜尋摘要亦為維基轉述）、8 或 9 歲學吉他、藝術學校正式受樂理訓練、使用 Max/MSP 與 Ppooll 修補、與 David Sylvian 與 King Midas Sound 合作、現與英國 Touch 廠牌、《Agora》（2019）與《Mosaic》（2024）；維基《Endless Summer》單源：他說「melody was forbidden. I didn't agree with that at all」（當時旋律被視為禁忌）、專輯只用筆電、Shure SM57 麥克風、吉他與踏板製作、Pitchfork 9.4 分、Pitchfork 2001 年度專輯榜第 2 名、2000 年代榜第 26 名、Fact 2000 年代百大專輯第 23、RA 2000 年代百大專輯第 41、Pitchfork 2017〈50 Best Ambient Albums of All Time〉第 22（榜單名次全為維基單源，各榜原頁未開）；The Quietus 單源：他早年寄 demo 給 Wire 的 Colin Newman，後者介紹他認識 Mego 的 Peter Rehberg（RA 與維基未寫，搜尋也找不到佐證，不收）、專輯用小調、與 Sparklehorse 合作；RA 專輯評單源：他早年做過 Rolling Stones 與 Beach Boys 的『被日曬褪色』式處理。**非獨立**：Maische 與 techno 場景兩條的 src2 為維基，維基與 RA 藝人小傳的文字很近（RA 小傳疑似轉引維基／廠牌文案），兩者未必獨立；第二條 origin 已刪去『與 Mego 搭上線』一句：出自維基（『techno 的影響讓他開始用筆電作曲』與『簽 Mego 後』的語序）與 RA 小傳（『had ties with Mego』），兩源都沒說是怎麼搭上的；HHV 稱 Endless Summer 的引語是評論者解讀。專輯名『Bruce Brown 1966 衝浪紀錄片、非 Beach Boys 精選輯』見 Quietus 與維基《Endless Summer》，兩者都寫他不知道與 Beach Boys 精選輯同名。"
+ },
+ {
+  "key": "m83",
+  "name": "M83",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "M83 起於法國南部的昂蒂布（Antibes），由 Anthony Gonzalez 與 Nicolas Fromageau 兩人組成；團名取自螺旋星系 Messier 83。",
+      "src": "https://en.wikipedia.org/wiki/M83_(band)",
+      "src2": "https://gsgcreativemusic.wordpress.com/2013/02/07/m83s-epic-hurry-up-were-dreaming-nominated-for-grammy-best-alternative-music-album/",
+      "from": "new"
+     },
+     {
+      "f": "Gonzalez 少年時走足球路線，一次受傷讓這條路中斷；父母買了吉他給他，他因此轉向音樂。",
+      "src": "https://en.wikipedia.org/wiki/M83_(band)",
+      "src2": "https://www.electronicsound.co.uk/features/long-reads/m83-back-to-the-future/",
+      "from": "new"
+     },
+     {
+      "f": "2010 年 Gonzalez 從法國搬到洛杉磯；他說那讓他覺得自己「又活過來了」，並認為能在《Hurry Up, We're Dreaming》裡聽到。",
+      "src": "https://gsgcreativemusic.wordpress.com/2013/02/07/m83s-epic-hurry-up-were-dreaming-nominated-for-grammy-best-alternative-music-album/",
+      "src2": "https://en.wikipedia.org/wiki/M83_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Gonzalez 的聲音來源很雜：他說哥哥給了他最初的音樂與電影教育，讓他年少時愛上 shoegaze、70 年代前衛搖滾、krautrock 與極簡 ambient 電子樂；維基列出的靈感包括 My Bloody Valentine、Smashing Pumpkins 與 Jean-Michel Jarre，並指樂團大量取用 1980 年代的美學。",
+      "src": "https://www.electronicsound.co.uk/features/long-reads/m83-back-to-the-future/",
+      "src2": "https://en.wikipedia.org/wiki/M83_(band)",
+      "from": "new"
+     },
+     {
+      "f": "M83 的曲風早期偏 shoegaze 與 dream pop，2016 年《Junk》幾乎與過去的 shoegaze 和 dream pop 切斷，重心移到 synthpop 與 indie pop。",
+      "src": "https://en.wikipedia.org/wiki/Junk_(M83_album)",
+      "src2": "https://fr.wikipedia.org/wiki/Junk_(album_de_M83)",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Hurry Up, We're Dreaming》入圍 2013 年第 55 屆葛萊美獎最佳另類音樂專輯（入圍，非得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Hurry_Up,_We%27re_Dreaming",
+      "src2": "https://gsgcreativemusic.wordpress.com/2013/02/07/m83s-epic-hurry-up-were-dreaming-nominated-for-grammy-best-alternative-music-album/",
+      "from": "new"
+     },
+     {
+      "f": "Pitchfork 把《Hurry Up, We're Dreaming》排在 2011 年度最佳專輯第 3 名。",
+      "src": "https://en.wikipedia.org/wiki/Hurry_Up,_We%27re_Dreaming",
+      "src2": "https://en.wikipedia.org/wiki/M83_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2011 年推出雙專輯《Hurry Up, We're Dreaming》，2013 年入圍葛萊美最佳另類音樂專輯。",
+    "src": "https://en.wikipedia.org/wiki/Hurry_Up,_We%27re_Dreaming",
+    "src2": "https://gsgcreativemusic.wordpress.com/2013/02/07/m83s-epic-hurry-up-were-dreaming-nominated-for-grammy-best-alternative-music-album/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：維基 M83 條目寫 1999 年於昂蒂布成軍，GSG 部落格與 Electronic Sound 寫 2001 年（團的第一張同名專輯發行年也是 2001）；兩說不一致，facts 不寫成軍年。",
+   "Fromageau 離團：維基寫他在《Dead Cities, Red Seas & Lost Ghosts》（2003）巡迴後離開，Electronic Sound 寫 M83 自 2009 年起成為 Gonzalez 的個人計畫；兩者不衝突但時間點不同，不入 facts。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫有 Junk 的兩條研究稿與一則上線簡介：本位 sound 第二條取自事實庫（from bank，《Junk》兩個維基語言版）；上線簡介《Junk》所述（Steve Vai 在〈Go!〉未掛名、Mai Lan 上四軌、Sundfør 與 Beck 各一軌、Jordan Lawlor 2011 年網路徵選進團並首次寫詞主唱〈Walkway Blues〉、2016 年 4 月 8 日、55 分 40 秒、製作 Gonzalez 與 Justin Meldal-Johnsen）與研究稿一致，未見衝突，也未發現新的上線簡介問題。補查用了 6 次：維基 M83 (band)、WebSearch（葛萊美）、GSG 部落格、WebSearch（生平與影響，一次搜尋內含多個子查詢）、Electronic Sound、維基《Hurry Up, We're Dreaming》；失敗請求 2 次：grammy.com 404、Mother Jones 403。身分確認：poolAlbums 七張（《M83》《Dead Cities, Red Seas & Lost Ghosts》《Before the Dawn Heals Us》《Saturdays = Youth》《Hurry Up, We're Dreaming》《Junk》《Fantasy》）皆為 Anthony Gonzalez 的 M83，無同名混卡。**非獨立**：legacy 第二條 Pitchfork 榜名次兩處都是維基（M83 條目與專輯條目），Pitchfork 原頁未開；GSG 部落格是粉絲類部落格，僅用於葛萊美屆次（55th）與 Gonzalez 談搬家的引語；GSG 稱 2001 年成軍與維基的 1999 不同，已入 conflicts。**單源（不入 facts）**：維基單源：Gonzalez 1980 年 3 月 13 日生於昂蒂布（生年單源）、14 歲膝傷、〈Midnight City〉列 Pitchfork 2011 年度單曲第 1、2013 年《Warm Bodies》使用、2013 年電影《Oblivion》配樂（與 Joseph Trapanese 合寫，導演 Joseph Kosinski，主演 Tom Cruise）、Cirque du Soleil《Volta》音樂總監（2016 年 12 月宣布）、Fromageau 巡迴後離團；維基《Hurry Up》單源：Filter 年度第 1、Paste 第 9、PopMatters 第 5、雙碟『兄妹』構想與 Smashing Pumpkins《Mellon Collie》靈感、洛杉磯搬家的動機（加州風景、The Killers、Depeche Mode 與 Kings of Leon 的演出、Joshua Tree 公路旅行）、1980 年代影響含 Kraftwerk、Simple Minds、Peter Gabriel、Harold Faltermeyer；Electronic Sound 單源：哥哥 Yann（電影工作者）、外祖父 Laurent Robuschi 是 1966 年世界盃法國隊球員、影響含 Brian Eno、Tangerine Dream、Wendy Carlos；搜尋摘要（未開頁）稱 Jarre《Oxygene》是幼年靈感、哥哥聽 Ash Ra Tempel 與 Tangerine Dream，不收。origin 第二條已拿掉 AS Cannes：只有 Electronic Sound 寫他曾到 AS Cannes 試訓（單源），維基寫的是 14 歲膝傷。"
  }
 ]
