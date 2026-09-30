@@ -104,5 +104,336 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "事實庫 research 為空，三格從零查。實際開頁：維基 Big Joe Turner、Britannica、搖滾名人堂官網 inductee 頁、維基 From Spirituals to Swing（另有 WebSearch 一次，只讀摘要、未採其內容）。poolAlbums 三張（1956／1960／1976）與此人一致，無同名混卡。單源未收（放 notes）：維基稱他約 14 歲起在堪薩斯城當唱歌酒保（單源）；AllMusic 稱他為「the premier blues shouter of the postwar era」（維基轉述，AllMusic 頁未開，單源）；維基載 1945 年 Esquire 男歌手獎、1956 年 Melody Maker 最佳新人男歌手（單源）；Haley 版銷量高於 Turner 版（維基單源，Britannica 只說改詞翻唱）。Rock Hall 官網頁本身只確認入選年、類別、引介人 Doc Pomus 與其名句，生平細節需 PDF 長文，未取得。上線簡介三張與已查事實無衝突。"
+ },
+ {
+  "key": "big mama thornton",
+  "name": "Big Mama Thornton",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Willie Mae「Big Mama」Thornton 1926 年 12 月 11 日生於阿拉巴馬州 Ariton，1984 年 7 月 25 日於洛杉磯過世，享年 57 歲。",
+      "src": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+      "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+      "from": "new"
+     },
+     {
+      "f": "她是浸信會牧師的女兒，從小在教會接觸音樂，受 Bessie Smith 與 Memphis Minnie 啟發，自學鼓與口琴。",
+      "src": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+      "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+      "from": "new"
+     },
+     {
+      "f": "她約 14 歲起在南方的 chitlin' circuit 巡演，加入 Sammy Green's Hot Harlem Revue 表演；1948 年落腳德州休士頓。",
+      "src": "https://www.rockhall.com/inductees/big-mama-thornton",
+      "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Thornton 的嗓音深沉有力、粗礪，舞台氣勢十足，同時能唱、打鼓、吹口琴，也自己寫歌。",
+      "src": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+      "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+      "from": "new"
+     },
+     {
+      "f": "她的唱法與風格影響了藍調、節奏藍調與搖滾樂。",
+      "src": "https://www.britannica.com/biography/Big-Mama-Thornton",
+      "src2": "https://www.rockhall.com/inductees/big-mama-thornton",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Hound Dog〉由 Jerry Leiber 與 Mike Stoller 為她而寫，1952 年底與 Johnny Otis 樂隊錄於 Peacock，1953 年登上 R&B 榜冠軍、銷量約 50 萬張；據載她只拿到 500 美元。Elvis Presley 後來的搖滾版本商業成績遠大得多。",
+      "src": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+      "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+      "from": "new"
+     },
+     {
+      "f": "〈Ball and Chain〉是她自己的作品；Janis Joplin 在 1960 年代末翻唱，讓這首歌成為大熱門，也讓外界重新注意到 Thornton。",
+      "src": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+      "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+      "from": "new"
+     },
+     {
+      "f": "Thornton 2024 年以「音樂影響力」（Musical Influence）類別入選搖滾名人堂；〈Hound Dog〉1953 年錄音於 2013 年入選葛萊美名人堂。",
+      "src": "https://www.rockhall.com/inductees/big-mama-thornton",
+      "src2": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1950 年與 Don Robey 的 Peacock Records 簽下五年合約並首度錄音；〈Hound Dog〉1953 年成為 R&B 冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+      "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1953 年〈Hound Dog〉登上 R&B 榜冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+    "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+    "from": "new"
+   },
+   {
+    "f": "2013 年〈Hound Dog〉入選葛萊美名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+    "src2": "https://www.britannica.com/biography/Big-Mama-Thornton",
+    "from": "new"
+   },
+   {
+    "f": "2024 年以音樂影響力類別入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/big-mama-thornton",
+    "src2": "https://en.wikipedia.org/wiki/Big_Mama_Thornton",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基寫 Elvis 翻唱在 1955 年、Britannica 寫 1956 年；facts 不寫年份。",
+   "國家錄音登錄：維基寫 2017、Britannica 寫 2016；兩源不一致，facts 不收。",
+   "維基寫她 1940 年 14 歲被 Diamond Teeth Mary 發現並參加 Hot Harlem Revue 選拔；名人堂官網只說 14 歲起在 chitlin' circuit 演出、1940 年代；facts 只寫「約 14 歲起」與巡演、不寫 1940 年與發現者。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，從零查。實際開頁：維基、Britannica、搖滾名人堂官網頁；第 4 次為 WebSearch（藍調名人堂 1984），只讀搜尋摘要、無第二頁，故 1984 年入選藍調名人堂放 notes 不放 facts（維基與搜尋摘要一致，上線簡介亦寫 1984）。名人堂官方（可具名單源）：Rock Hall 稱「Her songs, sound, style, and attitude made formative contributions to the development of rock & roll」，並點名 Janis Joplin、Tina Turner、Aretha Franklin 受其影響，稱她以陽剛服裝挑戰性別框架（網址 https://www.rockhall.com/inductees/big-mama-thornton）。單源（維基）：Joplin 與 Big Brother and the Holding Company 1967 年 Monterey Pop 現場翻唱、1968 年《Cheap Thrills》收錄；母親 1939 年病逝、她讀到小學三年級輟學照顧母親；2006 年〈Hound Dog〉入藍調名人堂 Classics of Blues Recording；2020 年阿拉巴馬音樂名人堂；2004 年創立 Willie Mae Rock Camp for Girls；Joplin 說她「feels like I do」；一生寫二十多首歌卻少有版稅（學者說法）。Rock Hall 引 Thornton 的詞曲作者說她的聲音是「guttural, growling」（名人堂單源）。poolAlbums 三張（1966／1969／1975）與此人一致，無同名混卡。上線簡介核對：〈Hound Dog〉R&B 榜冠軍七週（維基）、1953 年（三源一致）、Stronger Than Dirt 的 Billboard 200 第 198 名未核，無衝突；〈Hound Dog〉寫於 1952 年底錄音、1953 年發行。"
+ },
+ {
+  "key": "champion jack dupree",
+  "name": "Champion Jack Dupree",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "William Thomas Dupree 生於紐奧良（生年有 1908、1909、1910 數說，本檔不採信任一年）；8 歲成為孤兒，被送進紐奧良的 Colored Waif's Home 少年孤兒院，在那裡開始碰鋼琴。",
+      "src": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "src2": "https://64parishes.org/entry/champion-jack-dupree",
+      "from": "new"
+     },
+     {
+      "f": "他向 Willie Hall（綽號 Drive 'Em Down）等紐奧良 barrelhouse 鋼琴手學藝，累積紐奧良藍調曲目。",
+      "src": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "src2": "https://64parishes.org/entry/champion-jack-dupree",
+      "from": "new"
+     },
+     {
+      "f": "他年輕時打過拳擊，贏了 107 場比賽，「Champion Jack」這個名字由此而來；二戰時在美國海軍擔任廚師。",
+      "src": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "src2": "https://64parishes.org/entry/champion-jack-dupree",
+      "from": "new"
+     },
+     {
+      "f": "他 1960 年移居歐洲，先後住過瑞士、丹麥、英國、瑞典，最後定居德國，1992 年 1 月 21 日在漢諾威過世。",
+      "src": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "src2": "https://64parishes.org/entry/champion-jack-dupree",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dupree 彈的是紐奧良風格的 barrelhouse 藍調與 boogie-woogie 鋼琴，是紐奧良 barrelhouse 鋼琴傳統的活資料庫。",
+      "src": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "src2": "https://64parishes.org/entry/champion-jack-dupree",
+      "from": "new"
+     },
+     {
+      "f": "〈Junker Blues〉是他的早期錄音，寫吸毒者與法律的衝突，歌中提到古柯鹼、針頭與監獄。",
+      "src": "https://en.wikipedia.org/wiki/Junker_Blues",
+      "src2": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fats Domino 1949 年的〈The Fat Man〉改編自〈Junker Blues〉，大幅更動旋律與歌詞後賣出超過百萬張，維基稱它被廣泛視為第一張賣破百萬的搖滾唱片；同一段旋律也見於 Lloyd Price〈Lawdy Miss Clawdy〉、Professor Longhair〈Tipitina〉。",
+      "src": "https://en.wikipedia.org/wiki/Junker_Blues",
+      "src2": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "from": "new"
+     },
+     {
+      "f": "移居歐洲後，他與 John Mayall、Eric Clapton 等英國藍調樂手合作錄音。",
+      "src": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "src2": "https://64parishes.org/entry/champion-jack-dupree",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1960 年離開美國，此後約三十年在歐洲生活與演出。",
+      "src": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+      "src2": "https://64parishes.org/entry/champion-jack-dupree",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1960 年移居歐洲，此後在歐洲生活約三十年。",
+    "src": "https://en.wikipedia.org/wiki/Champion_Jack_Dupree",
+    "src2": "https://64parishes.org/entry/champion-jack-dupree",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基 Champion Jack Dupree 說他在孤兒院自學鋼琴，64parishes 說向一位義大利神父學基礎；facts 只寫「在孤兒院開始碰鋼琴」。",
+   "維基寫二戰時被日軍俘虜兩年，64parishes 通篇未提；兩源不一致，facts 不收 POW。",
+   "生年：維基列 1910 年 7 月 4 日、另有 1909 年 7 月 23 日、1908 年說；64parishes 寫約 1908；不寫生年。",
+   "〈Junker Blues〉錄音日期（1941 年 1 月 28 日、芝加哥、Okeh）只見維基 Junker Blues 條目單源，facts 不寫日期。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Natural & Soulful Blues",
+    "claim": "拳擊冠軍出身、在紐奧良孤兒院自學鋼琴",
+    "problem": "維基稱他在孤兒院自學鋼琴，64parishes 稱向一位義大利神父學基礎、之後向 barrelhouse 鋼琴手學藝；兩源不一致，建議改寫成「在孤兒院開始學鋼琴」或拿掉「自學」。",
+    "src": "https://64parishes.org/entry/champion-jack-dupree"
+   }
+  ],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空，從零查。搜尋次數計 5：WebSearch 兩次（身世綜合、藍調名人堂年份，第二次只讀摘要）、維基 Champion Jack Dupree、64parishes、維基 Junker Blues。失敗請求 2 次：Britannica Champion-Jack-Dupree（404）、blues.org 名人堂頁（404）。⚠ 非獨立：〈Junker Blues〉與 Fats Domino 那條，兩源都是維基（Junker Blues 條目與 Dupree 條目），非獨立；另 Dupree 條目該處寫 Junker's Blues 影響 The Fat Man，Junker Blues 條目寫的是 Domino 改編，寫作層請只寫到「改編自」。〈Junker Blues〉1941 年 1 月 28 日芝加哥 Okeh 錄音只見 Junker Blues 維基條目，單源，已從 facts 移除。單源未收：Golden Gloves 與 Joe Louis 在底特律勸他打拳（維基）；『Champion Jack』名字敬 Jack Johnson、Indiana 州輕量級冠軍（64parishes，另有搜尋摘要）；向 Leroy Carr 學藝（64parishes）；葬禮逾 500 人、New Orleans 式爵士樂隊送行（64parishes）；晚年為 Rounder 灌三張專輯（64parishes）；歐洲人視他為『二十世紀城市藍調與紐奧良 barrelhouse 鋼琴的活寶庫』（64parishes，搜尋摘要）；藍調名人堂 1993 年入選（僅 WebSearch 摘要，blues.org 頁 404，未取得），另 Blues from the Gutter 亦有 Blues Foundation 名人堂條目（搜尋結果標題，未開頁）。未取得任何『後輩點名』或權威票選類共識，legacy 偏弱，屬 full 但較薄。poolAlbums 三張（1958／1961／1966）與此人一致，無同名混卡。"
+ },
+ {
+  "key": "clarence \"gatemouth\" brown",
+  "name": "Clarence \"Gatemouth\" Brown",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Clarence \"Gatemouth\" Brown 1924 年 4 月 18 日生於路易斯安那州 Vinton，在德州 Orange 附近長大。",
+      "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "from": "new"
+     },
+     {
+      "f": "父親是鐵路工人兼在地樂手，教他拉小提琴、彈鋼琴與吉他。",
+      "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "from": "new"
+     },
+     {
+      "f": "「Gatemouth」的綽號來自他低沉的嗓音。",
+      "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "from": "new"
+     },
+     {
+      "f": "他 2005 年 9 月 10 日在德州 Orange 過世，享年 81 歲。",
+      "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Brown 會吉他、小提琴、曼陀林、中提琴、口琴與鼓，把藍調和鄉村、爵士、Cajun 與節奏藍調揉在一起，拒絕被單一曲風框住。",
+      "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "from": "new"
+     },
+     {
+      "f": "1950 年代末起，他不再願意被當成「純粹的藍調與 R&B 樂手」，此後陸續演出鄉村、爵士、Cajun 等多種曲風。",
+      "src": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "src2": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的電吉他風格影響了 Guitar Slim、Albert Collins 與 Johnny \"Guitar\" Watson。",
+      "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "from": "new"
+     },
+     {
+      "f": "《Alright Again!》讓他拿下最佳傳統藍調專輯（Best Traditional Blues Album）葛萊美，這個類別當時首度頒發，他是首位得主。",
+      "src": "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Traditional_Blues_Album",
+      "src2": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "from": "new"
+     },
+     {
+      "f": "他 1999 年入選藍調名人堂，並拿過八座 W.C. Handy 獎。",
+      "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1947 年在休士頓 Don Robey 的 Bronze Peacock 夜總會，T-Bone Walker 演出中途身體不適，Brown 上台彈奏〈Gatemouth Boogie〉，觀眾反應熱烈，也讓 Robey 注意到他。",
+      "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+      "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1947 年在 Bronze Peacock 臨時代替身體不適的 T-Bone Walker 上台，一舉被 Don Robey 看上。",
+    "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+    "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+    "from": "new"
+   },
+   {
+    "f": "《Alright Again!》拿下首度頒發的最佳傳統藍調專輯葛萊美。",
+    "src": "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Traditional_Blues_Album",
+    "src2": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+    "from": "new"
+   },
+   {
+    "f": "1999 年入選藍調名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Clarence_%22Gatemouth%22_Brown",
+    "src2": "https://www.tshaonline.org/handbook/entries/brown-clarence-gatemouth",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Grammy 年份：Brown 維基與 TSHA 寫 1982（獎項年度），Best Traditional Blues Album 維基條目寫 1983 年首度頒發；facts 只寫『該類別首度頒發時得獎』，不寫年份。",
+   "綽號由來：維基寫高中老師說他『voice like a gate』，TSHA 寫在 territory swing band 時因嗓音低沉得名；facts 只寫『來自低沉嗓音』。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空，從零查。搜尋次數 5：維基 Brown、WebSearch（只讀摘要）、TSHA Handbook、維基 Grammy Best Traditional Blues Album 條目（用來查首度頒發與 Standing My Ground 提名）；外加 Britannica 頁 404（failedFetches 1）。poolAlbums 三張（1981／1983／1989）與此人一致，無同名混卡。單源（放 notes 不放 facts）：維基稱他是『one of the most influential exponents of the blues fiddle』（維基與搜尋摘要，未開第二頁）；Frank Zappa 在自傳中稱他為重要影響（維基）；影響 Jimi Hendrix、Buddy Guy、Stevie Ray Vaughan（TSHA）；1997 年 Rhythm and Blues Foundation Pioneer Award、2012 年德州歷史標誌（TSHA）；1949 年 Peacock Records 為捧他而設、首支 Peacock 單曲〈Mary Is Fine〉登 R&B 榜第 8（TSHA，維基只寫 1949 年設廠）；Hurricane Katrina 後離開紐奧良、在弟弟家過世（TSHA）。上線簡介核對：《Standing My Ground》入圍葛萊美最佳傳統藍調錄音，維基類別條目列為 1991 年（第 33 屆）提名者，單源，未見衝突；《Alright Again!》類別首度頒發成立。『晚年一年兩三百場巡演』『移居紐奧良多年』兩處未核對。"
  }
 ]

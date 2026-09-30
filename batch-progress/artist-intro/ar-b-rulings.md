@@ -66,3 +66,5 @@
 
 - 補洞第 1 組：**pubIssue 需優先處理**：Lou Rawls《Lou Rawls Live!》上線簡介整段是退件說明文字（「此筆應退回重新配對…」），不是簡介，且卡片繫結 1978 年版，需本機重新配對重寫。Rose Royce 葛萊美主詞是製作人 Norman Whitfield；Rufus 葛萊美主詞是團體、名人堂是 Chaka Khan 個人；Shalamar 的 Jeffrey Daniel 只能寫早於 Michael Jackson 約一年跳 moonwalk，不寫發明者。
 - 補洞第 2 組：Shuggie Otis 失敗請求 5 次、Snooks Eaglin 8 次、Teena Marie 8 次（403／付費牆），照實記，放行。pubIssue 1 條（Clark Sisters《Unworthy》「1973 年離婚後才正式組團」與 1960 年代中期成軍說法不一）。Teena Marie〈Cuff It〉身後葛萊美未驗證，不收。
+- 補洞第 3 組：pubIssue 3 條，其中 **Bukka White《Big Daddy》上線簡介含「Wikipedia 僅一筆帶過、原始 LP 流通極低」這類管線說明文字，需本機優先重寫**（與 Lou Rawls 退件文字同類）；Willie Hutch《Fully Exposed》「全片自寫自編自彈」不實；Bombino《Deran》錄音地點只寫一地。Bukka White 罪名與刑期各源不一，不寫。
+- 主線掃描全部事實庫的上線專輯簡介：明確殘留管線文字的只有 Lou Rawls《Lou Rawls Live!》一則（「此筆應退回重新配對…」）；另有大量簡介在正文寫「維基記…／英文維基記…」（至少 40 則，集中在 ar-a-001～015），屬專輯簡介寫法問題，不在藝人介紹範圍，交店主決定要不要另開清理。
