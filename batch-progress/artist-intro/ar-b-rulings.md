@@ -18,3 +18,4 @@
 - ar-b-001 上架：40 位（爵士），審稿修 5 處。
 - 寫作第 1 組（20 位）審畢，修 2 處：佐藤允彦「主幹講師」（日文職稱）→「主任講師」；Alfa Mist「hip-hop」統一寫「嘻哈」（大類曲風中文）。Tina Brooks 275（人生故事）照准。Sonny Criss「被低估」來源弱，已用「被稱為」，保留。
 - 補洞第 3 組：Cedar Walton 失敗請求 6 次，照實記，放行。Dollar Brand（Abdullah Ibrahim）過世主線以 WebSearch 核實：2026 年 6 月 15 日在德國過世，享年 91 歲（NPR、News24、IOL），寫作層可寫到日期。交本機待核：David Murray《Flowers for Albert》上線簡介稱「首張唱片」，1976 年另有 Adelphi《Low Class Conspiracy》（代理未核實）。
+- 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 1 條（Fats Navarro「生前只發過 78 轉與一張 10 吋」與身後 1951 年《Memorial Album》不合）。Esperanza Spalding「第一位得最佳新人的爵士藝人」有爭議不寫；Ezra Collective「首個爵士樂團」只用於 2023 Mercury 獎，2026 年專輯榜冠軍（維基同站）不寫。交本機待核：Doug Carn《Revelation》簡介「替〈Naima〉填詞」。
