@@ -27,3 +27,4 @@
 - ar-b-002 上架：40 位（爵士），審稿修 6 處。
 - 補洞第 3 組：Machito 出生年三說不寫；Kenny Wheeler 加拿大勳章採官方授勳稿年份；Mahavishnu《Inner Worlds》為第三期陣容，不套原班故事。Laufey 在世，葛萊美只能寫固定年份。
 - 補洞第 2 組：Jimmy Giuffre 失敗請求 9 次、Kamasi Washington 5 次，超限後未收新事實，照實記，放行。Jim Hall「第一位獲 NEA 的現代爵士吉他手」未查反例，不寫序數。
+- 寫作第 1 組（20 位）審畢，修 2 處：Gilberto Gil 在世，刪「拿過兩座葛萊美」（會長大的累計數）；Burton & Corea 雙人專輯得葛萊美不只兩張，「兩張」→「多張」。交本機待核：Hamiet Bluiett 上線簡介「生於 Brooklyn」（伊利諾州 Brooklyn 與聖路易兩說）；James Moody《Modernists》簡介「1948 年生涯第一次錄音」（1946 年起已在 Gillespie 樂團錄音）。

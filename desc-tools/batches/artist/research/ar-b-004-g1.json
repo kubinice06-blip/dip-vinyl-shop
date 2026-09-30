@@ -82,5 +82,389 @@
     "failedFetches": 2,
     "status": "full",
     "notes": "搜尋 8 次（WebFetch 6：en 維基 Piero Umiliani、it 維基、The Vinyl Factory、In Sheeps Clothing、Soundohm 文章、en 維基 Mah Nà Mah Nà；WebSearch 2）；失敗 2 次（Retrofuturista 回空、AllMusic 403）。名冊 3 張卡（Continente Nero、To-Day's Sound、Synthi Time）都是同一位義大利作曲家，無同名混卡。origin 只有生卒與出生地兩源；佛羅倫斯音樂學院 1952 年畢業（對位與賦格文憑）、1942 年在地方報紙投書為爵士辯護、戰後組 Quintetto Stella 在美軍常去的場子彈琴——皆只見義大利維基，單源。以下也是單源（義大利維基）不收：1958 年 Monicelli 邀約《I soliti ignoti》15 天完成、1968 年設立 Sound Work-Shop 錄音室、超過 150 部配樂、1990 年代末 lounge 風潮把他的音樂重新推上、2021 年 9 月 15 日逝世 20 週年在佛羅倫斯故居掛紀念牌、2022 年 Torino 影展紀錄片《Il tocco di Piero》（後兩者搜尋摘要另見 Lungarno、MYmovies 等，未開頁）。搜尋摘要說 AllMusic 與 Soundohm 稱他『是義大利最早試用 Moog 等電子鍵盤的人之一』『1990 年代 lounge 復興中被重新發現』：只看到摘要、未開頁，不收。The Vinyl Factory 那頁只說他與 Morricone、Ortolani 同輩、是 1960–70 年代歐洲爵士風電影聲響的塑造者之一，單源。In Sheeps Clothing 文中稱 Moog、ARP、VCS3 出現在他的 library 錄音，並列 Four Flies、Schema、Dagored 三廠牌重發，單源。Benny Hill Show 1971 年起用〈Mah Nà Mah Nà〉配追逐橋段：只見英文維基 Mah Nà 條目，單源。Soundohm 文章與 In Sheeps Clothing 的敘述部分出自同一份廠牌文案，非獨立（Soundohm 與 In Sheeps Clothing 的形容近乎同稿）；sound 格第一條因此在 notes 註明兩源非嚴格獨立。en 維基兩頁同站不同條目，非獨立，但 it 維基與 en 維基兩條互相獨立撰寫，生卒年與出生地兩源成立；legacy 那條是 en 維基兩條目（Mah Nà Mah Nà 與 Piero Umiliani），非獨立，年份細節（1969 年 11 月、1976 年開場）只見 Mah Nà 條目。era 的 1971 年：en 維基寫 library 系列從 1971 年起，Soundohm 寫盒裝收 1971–1983 年、是他最多產的階段。已上線 To-Day's Sound 簡介的 Sound Work-Shop、Ampex 八軌與 Minimoog／ARP 2600／EMS VCS3 細節本層未查證。"
+  },
+  {
+    "key": "ramsey lewis",
+    "name": "Ramsey Lewis",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Ramsey Lewis 1935 年 5 月 27 日生於芝加哥，從小在教會接觸鋼琴，四歲起彈琴，享年 87 歲。",
+            "src": "https://en.wikipedia.org/wiki/Ramsey_Lewis",
+            "src2": "https://www.cbsnews.com/chicago/news/chicago-jazz-legend-ramsey-lewis-dies-at-age-87/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Ramsey Lewis Trio 是 Lewis（鋼琴）、Eldee Young（貝斯）與 Isaac \"Redd\" Holt（鼓）的三重奏編制，1965 年的《The In Crowd》就是這組班底的現場專輯。",
+            "src": "https://en.wikipedia.org/wiki/Ramsey_Lewis",
+            "src2": "https://en.wikipedia.org/wiki/The_In_Crowd_(Ramsey_Lewis_album)",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《The In Crowd》1965 年是他的跨界突破：專輯在 Billboard 200 最高第 2 名，同名單曲在 Hot 100 最高第 5 名。",
+            "src": "https://en.wikipedia.org/wiki/Ramsey_Lewis",
+            "src2": "https://en.wikipedia.org/wiki/The_In_Crowd_(Ramsey_Lewis_album)",
+            "from": "new"
+          },
+          {
+            "f": "Lewis 三度得葛萊美獎，第 8 屆（1966 年）以〈The 'In' Crowd〉得最佳爵士小團體演奏獎，同一首歌另獲最佳唱片提名（入圍，未得獎）。",
+            "src": "https://www.grammy.com/artists/ramsey-lewis/15078/",
+            "src2": "https://en.wikipedia.org/wiki/The_In_Crowd_(Ramsey_Lewis_album)",
+            "from": "new"
+          },
+          {
+            "f": "Lewis 2007 年獲美國國家藝術基金會（NEA）頒發爵士大師（NEA Jazz Master）獎。",
+            "src": "https://en.wikipedia.org/wiki/Ramsey_Lewis",
+            "src2": "https://www.cbsnews.com/chicago/news/chicago-jazz-legend-ramsey-lewis-dies-at-age-87/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1965 年《The In Crowd》專輯在 Billboard 200 最高第 2 名，同名單曲在 Hot 100 最高第 5 名。",
+        "src": "https://en.wikipedia.org/wiki/Ramsey_Lewis",
+        "src2": "https://en.wikipedia.org/wiki/The_In_Crowd_(Ramsey_Lewis_album)",
+        "from": "new"
+      },
+      {
+        "f": "2007 年獲 NEA Jazz Master 獎。",
+        "src": "https://en.wikipedia.org/wiki/Ramsey_Lewis",
+        "src2": "https://www.cbsnews.com/chicago/news/chicago-jazz-legend-ramsey-lewis-dies-at-age-87/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基 Ramsey Lewis 條目把三座葛萊美標成 1965、1966、1973 年；grammy.com 標第 8 屆（1966）、第 9 屆（1967）、第 16 屆（1974）。年份標法不同（以錄音年或頒獎年），facts 只寫 grammy.com 與《The In Crowd》頁一致的第 8 屆（1966）那一項，不寫另外兩項年份。",
+      "上線簡介（Wade in the Water）寫〈Hold It Right There〉為他拿下該年葛萊美最佳節奏藍調團體演出獎：維基專輯頁確認該曲收在專輯 B 面並獲該獎，grammy.com 標為第 9 屆（1967）得獎；與簡介無實質衝突，不列 pubIssues。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 6,
+    "status": "full",
+    "notes": "搜尋 7 次（成功開頁 5：en 維基 Ramsey Lewis、CBS Chicago 訃聞、grammy.com 藝人頁、維基《The In Crowd》、維基《Wade in the Water》；WebSearch 2）。失敗請求 6 次，超過失敗上限 4 次：Britannica 404、NPR 503、Washington Post 403、維基《The In Crowd》與《Wade in the Water》各一次因猜錯條目名 404（之後用搜尋結果給的正確網址成功）、Jazzapedia 403；照實記，超上限的原因是猜網址。名冊 3 張卡都是芝加哥的 Ramsey Lewis，無同名混卡。三個 en 維基頁（藝人、《The In Crowd》、《Wade in the Water》）同站，非獨立；生平與獎項的獨立第二源用 CBS 訃聞與 grammy.com。單源不收（放 notes）：11 歲起入 Chicago Musical College 隨 Dorothy Mendelssohn 學古典、首位老師是教會鋼琴手 Ernestine Bruce（維基）；成長於 Cabrini Green 公共住宅、父親是教會詩班指揮、常放 Duke Ellington 與 Art Tatum（CBS 單源）；1956 年首張專輯、簽 Chess、1966 年 Young 與 Holt 離團另組 Young-Holt Unlimited、Maurice White 短暫加入（維基）；《The In Crowd》1965 年 5 月 13 至 15 日在華盛頓特區 Bohemian Caverns 現場錄音、7 月由 Argo 發行、R&B 榜第 1、單曲 R&B 榜第 2、該曲 2009 年入葛萊美名人堂、原曲是 Dobie Gray 的人聲版（維基《The In Crowd》頁與 CBS 各見一部分）；電台主持人 Rick O'Dell 說他『把古典與爵士的矯飾拿掉、讓人可以坐下來聽』（CBS 單源）；2004 年 NAACP Image Award、五張金唱片、WNUA 晨間節目與《Legends of Jazz》（維基單源）。死亡日期 2022 年 9 月 12 日只見維基，搜尋結果摘要（NPR、ABC7、Deadline 等）一致但未開頁，故 facts 只寫享年 87 歲。維基摘要曾把 Sun Goddess 寫成 1975 年錄製並另得一座葛萊美，與卡池與上線簡介的 1974 年、與 grammy.com 的 1974 年第 16 屆〈Hang On Sloopy〉獎項不符，維基該句本層不採。sound 格只有編制一條、偏薄；『福音手感』『soul jazz』等描述在本層開過的頁面都沒有明確語句，不收。"
+  },
+  {
+    "key": "ray bryant",
+    "name": "Ray Bryant",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Ray Bryant（本名 Raphael Homer Bryant）1931 年 12 月 24 日生於費城，2011 年 6 月 2 日在紐約皇后區過世，享年 79 歲。",
+            "src": "http://dougpayne.blogspot.com/2011/06/ray.html",
+            "src2": "https://en.wikipedia.org/wiki/Ray_Bryant",
+            "from": "new"
+          },
+          {
+            "f": "1953 年起他是費城 Blue Note 俱樂部的駐店鋼琴手，與同為貝斯手的兄弟 Tommy Bryant 同在駐店樂團；那裡有紐約的名家過場，他伴奏過 Charlie Parker 與 Miles Davis。",
+            "src": "http://dougpayne.blogspot.com/2011/06/ray.html",
+            "src2": "https://jazzinfo.org/artist/ray-bryant",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的鋼琴帶著教會福音的響亮和聲色彩，並與藍調結合；jazzinfo 稱他的風格把藍調、boogie woogie 與福音融成一體。",
+            "src": "https://jazzinfo.org/artist/ray-bryant",
+            "src2": "http://dougpayne.blogspot.com/2011/06/ray.html",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他當過 Coleman Hawkins、Miles Davis 與 Charlie Parker 等人的伴奏。",
+            "src": "http://dougpayne.blogspot.com/2011/06/ray.html",
+            "src2": "https://jazzinfo.org/artist/ray-bryant",
+            "from": "new"
+          },
+          {
+            "f": "1960 年他的〈The Madison Time〉在 Billboard 最高第 30 名、R&B 榜最高第 5 名；〈Little Susie〉同年是他的暢銷單曲。",
+            "src": "https://en.wikipedia.org/wiki/Madison_Time",
+            "src2": "http://dougpayne.blogspot.com/2011/06/ray.html",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1967 年他翻唱〈Ode to Billie Joe〉並上榜。",
+            "src": "http://dougpayne.blogspot.com/2011/06/ray.html",
+            "src2": "https://en.wikipedia.org/wiki/Ray_Bryant",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1953 至 1956 年是費城 Blue Note 俱樂部的駐店鋼琴手。",
+        "src": "https://en.wikipedia.org/wiki/Ray_Bryant",
+        "src2": "https://jazzinfo.org/artist/ray-bryant",
+        "from": "new"
+      },
+      {
+        "f": "1960 年〈The Madison Time〉在 Billboard 最高第 30 名。",
+        "src": "https://en.wikipedia.org/wiki/Madison_Time",
+        "src2": "http://dougpayne.blogspot.com/2011/06/ray.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Blue Note 駐店年份：維基寫 1953 至 1956 年，jazzinfo 只寫 1953 年任駐店鋼琴手；起點 1953 兩源一致，結束年 1956 只見維基（也與上線簡介一致），facts 的 milestone 那條採維基加 jazzinfo 的 1953 起點，era 未單列結束年。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Alone with the Blues",
+        "claim": "費城的 Ray Bryant 自幼在教會裡聽當牧師的母親彈琴",
+        "problem": "維基只寫母親是牧師、父親愛音樂、他受福音與教會音樂影響，沒有『聽母親彈琴』的說法；建議核對出處或改成『母親是牧師、他從教會音樂起步』。本層只開到維基一處，屬單源存疑。",
+        "src": "https://en.wikipedia.org/wiki/Ray_Bryant"
+      }
+    ],
+    "searches": 6,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "搜尋 6 次（WebFetch 4：en 維基 Ray Bryant、jazzinfo.org、維基 Madison Time、Doug Payne 部落格；WebSearch 2）；失敗 3 次（JazzTimes 403、AllAboutJazz 兩個網址各 403）。名冊 3 張卡（Ray Bryant Trio、Alone with the Blues、Little Susie）都是費城鋼琴家 Ray Bryant，無同名混卡。Doug Payne 部落格那頁貼的是 Nate Chinen 2011 年 6 月 4 日的《紐約時報》訃文全文（搜尋結果摘要標明 NYT 訃文作者與日期，頁面本身只看得到訃文文字，未標報名），本層當作 NYT 訃文的轉載使用，可信度略低於原站；維基、jazzinfo、Madison Time 維基條目彼此不同站或同站不同條目（維基兩條非獨立）。單源不收：出生時已有『牧師母親、樂手父親』、6 至 7 歲起學琴、12 歲賺跳舞場酬勞、14 歲隨 Mickey Collins 樂團轉職業、1955 年與 Miles Davis 及 Sonny Rollins 錄音、1972 年蒙特勒爵士節演出開啟歐洲獨奏事業、曾隨 Tiny Grimes 起步（維基或 jazzinfo 單源）；NYT 訃文說他『左手觸鍵紮實、節奏穩定』與『傳承不靠榜上成績，而靠大量獨奏錄音與伴奏工作』（單源）；AllMusic 稱《Madison Time》是他最受歡迎的專輯（維基單源轉述）；兄弟 Tommy 與姪子 Robin、Kevin Eubanks（jazzinfo，搜尋摘要另提 Duane Eubanks，未開頁）。搜尋摘要（JazzTimes、AllAboutJazz）稱他是『現代主流鋼琴的支柱』『一種爵士與福音的混合』：只看到摘要、未開頁，不收。Grokipedia 出現在搜尋結果，不採。上線簡介中『1953 到 1956 年費城 Blue Note 駐店』與維基一致。legacy 格缺少『後輩點名受他影響』或名人堂類共識評價，沒查到，僅有伴奏名單與榜上成績。"
+  },
+  {
+    "key": "roscoe mitchell",
+    "name": "Roscoe Mitchell",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Roscoe Mitchell 1940 年 8 月 3 日生，在芝加哥長大；哥哥 Norman 帶他接觸爵士。",
+            "src": "https://en.wikipedia.org/wiki/Roscoe_Mitchell",
+            "src2": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+            "from": "new"
+          },
+          {
+            "f": "他在美國陸軍服役期間駐德國，在軍樂隊演奏，並在那裡認識薩克斯風手 Albert Ayler 與 Rubin Cooper。",
+            "src": "https://en.wikipedia.org/wiki/Roscoe_Mitchell",
+            "src2": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1966 年 Delmark 發行的《Sound》是他的首張個人專輯，也是 AACM 音樂的第一份錄音文獻。",
+            "src": "https://delmark.com/product/408/",
+            "src2": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+            "from": "new"
+          },
+          {
+            "f": "Art Ensemble of Chicago 演出時，除了傳統爵士樂器，也用鈴、腳踏車喇叭、風鈴等小型音響物件與現成物件當樂器。",
+            "src": "https://en.wikipedia.org/wiki/Art_Ensemble_of_Chicago",
+            "src2": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Mitchell 2020 年獲美國國家藝術基金會（NEA）頒發爵士大師（NEA Jazz Master）獎。",
+            "src": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+            "src2": "https://en.wikipedia.org/wiki/Roscoe_Mitchell",
+            "from": "new"
+          },
+          {
+            "f": "1966 年的《Sound》被稱為自由爵士早期的 landmark 錄音：Delmark 的介紹寫它是 landmark recording，維基專輯條目稱它是自由爵士的 watershed moment。",
+            "src": "https://delmark.com/product/408/",
+            "src2": "https://en.wikipedia.org/wiki/Sound_(Roscoe_Mitchell_album)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Mitchell 是 1965 年成立的 AACM（Association for the Advancement of Creative Musicians）的首批成員。",
+            "src": "https://en.wikipedia.org/wiki/Roscoe_Mitchell",
+            "src2": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+            "from": "new"
+          },
+          {
+            "f": "他的六重奏是第一個錄音的 AACM 團體；1966 年的《Sound》陣容含 Lester Bowie 與 Malachi Favors，之後這批人演變成 Art Ensemble of Chicago。",
+            "src": "https://en.wikipedia.org/wiki/Art_Ensemble_of_Chicago",
+            "src2": "https://delmark.com/product/408/",
+            "from": "new"
+          },
+          {
+            "f": "除了自己領銜的作品，他以共同創辦 Art Ensemble of Chicago 與 AACM 著稱。",
+            "src": "https://en.wikipedia.org/wiki/Roscoe_Mitchell",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1965 年成為 AACM 首批成員。",
+        "src": "https://en.wikipedia.org/wiki/Roscoe_Mitchell",
+        "src2": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+        "from": "new"
+      },
+      {
+        "f": "1966 年 Delmark 發行首張個人專輯《Sound》。",
+        "src": "https://delmark.com/product/408/",
+        "src2": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+        "from": "new"
+      },
+      {
+        "f": "2020 年獲 NEA Jazz Master 獎。",
+        "src": "https://www.arts.gov/honors/jazz/roscoe-mitchell",
+        "src2": "https://en.wikipedia.org/wiki/Roscoe_Mitchell",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "改名為 Art Ensemble of Chicago 的年份：維基 AEC 條目寫 1968 年秋天在巴黎、NEA 寫 1969 年到巴黎後、維基 Roscoe Mitchell 條目寫 1967 至 1969 年間陸續改名；三說不一，facts 不寫改名年份與經過。",
+      "開始吹奏的年齡：維基寫約 12 歲吹薩克斯風與單簧管，NEA 寫 12 歲學單簧管、後來才改薩克斯風；facts 不寫年齡與樂器。",
+      "上線簡介（Old / Quartet）寫 1967 年錄下、1975 年由 Nessa 發行；本層沒有查到相反資料，也沒有另開頁核對。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "搜尋 8 次（WebFetch 6：en 維基 Roscoe Mitchell、NEA 藝術基金會頁、維基 Art Ensemble of Chicago、維基《Sound》、Delmark 產品頁、Chicago Reader；WebSearch 2）；失敗 1 次（NPR 503）。名冊 3 張卡（Composition/Improvisation Nos. 1, 2 & 3、Nonaah、Old / Quartet）都是芝加哥的 Roscoe Mitchell，無同名混卡。bank 的 c86-b 研究稿全是《Nonaah》的 MusicBrainz／Discogs 欄位，不含生平，故只取 c95-b 維基首段一條。三個維基頁彼此同站不同條目、非獨立；Delmark 產品頁是廠牌自家介紹（『landmark recording』屬廠牌宣傳語氣），故 legacy 的《Sound》一條在 f 欄以雙方各自措辭並列，不寫成無來源歸屬的共識。NEA 頁的出身欄把 Fitchburg, Wisconsin 列在名字旁（判讀為現居地），出生地以維基的芝加哥為準，facts 只寫『在芝加哥長大』（NEA 與維基一致）。2020 年 NEA 大師獎：年份取自 NEA 頁，維基摘要只確認『名列 NEA Jazz Master』，搜尋結果標題（NPR『class of 2020』）也是 2020 但未開頁。單源不收：1961 年返芝加哥隨 Muhal Richard Abrams 學習並加入其 Experimental Band、他吹奏從 sopranino 到 bass 的各型薩克斯風、單簧管、巴洛克長笛、直笛與打擊，且花一年學會循環呼吸，錄音逾 85 張、作品逾 250 首（NEA，搜尋摘要也重述這兩個數字）；1965 年首場錄音（Chicago Reader 稱與 Fred Berry、Malachi Favors、Alvin Fielder 的四重奏，46 年後才發行）；《Sound》1966 年 8 月 10 至 26 日錄音、Penguin Guide 列入 Core Collection、觀念後由 Anthony Braxton 與 Muhal Richard Abrams 等人延伸、被列為 20 張必備自由爵士錄音之一（維基單源）；《Sound》在 DownBeat 拿到五星（只見搜尋摘要）；他任教於伊利諾大學、威斯康辛大學麥迪遜校區、加州藝術學院與 Mills College（維基單源）；維基稱 Art Ensemble 是 1970 至 1980 年代『可能最受讚譽的爵士樂團』（維基 Mitchell 條目單源）；Chicago Reader 稱 AACM『終將被認定對爵士與即興音樂發展有震撼性的影響』（單源，且指 AACM 而非個人）；AEC 名稱由法國經紀人加上 of Chicago（維基單源）。legacy 格缺『後輩點名受他影響』這類具名出處，僅有 NEA 與《Sound》定位。"
+  },
+  {
+    "key": "roy ayers",
+    "name": "Roy Ayers",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Roy Edward Ayers Jr. 1940 年 9 月 10 日生於洛杉磯，父親吹長號、母親彈鋼琴。",
+            "src": "https://en.wikipedia.org/wiki/Roy_Ayers",
+            "src2": "https://aaregistry.org/story/roy-ayers-vibraphonist-and-composer-born/",
+            "from": "new"
+          },
+          {
+            "f": "他 5 歲時去看 Lionel Hampton 的演出，Hampton 送了他第一副顫音琴琴槌。",
+            "src": "https://downbeat.com/news/detail/roy-ayers-dies-at-84",
+            "src2": "https://en.wikipedia.org/wiki/Roy_Ayers",
+            "from": "new"
+          },
+          {
+            "f": "Ayers 2025 年 3 月 4 日在紐約曼哈頓家中因長期生病過世，享年 84 歲。",
+            "src": "https://downbeat.com/news/detail/roy-ayers-dies-at-84",
+            "src2": "https://en.wikipedia.org/wiki/Roy_Ayers",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1970 年代初他成立 Roy Ayers Ubiquity，以顫音琴為主的樂團走爵士、放克與靈魂交會的路線。",
+            "src": "https://en.wikipedia.org/wiki/Roy_Ayers",
+            "src2": "https://downbeat.com/news/detail/roy-ayers-dies-at-84",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的作品被嘻哈與 R&B 音樂人大量取樣：維基寫他曾名列被饒舌歌手取樣最多的表演者之一，DownBeat 寫他的曲子被取樣數百次。",
+            "src": "https://en.wikipedia.org/wiki/Roy_Ayers",
+            "src2": "https://downbeat.com/news/detail/roy-ayers-dies-at-84",
+            "from": "new"
+          },
+          {
+            "f": "1976 年的〈Everybody Loves the Sunshine〉被 Mary J. Blige、Dr. Dre 與 2Pac（Tupac Shakur）等人取樣。",
+            "src": "https://en.wikipedia.org/wiki/Everybody_Loves_the_Sunshine",
+            "src2": "https://www.bostonglobe.com/2025/03/06/metro/roy-ayers-obituary-jazz-legend/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1962 年他以 bebop 伴奏樂手身分開始錄音，1963 年首張個人專輯是《West Coast Vibes》，1966 年加入長笛手 Herbie Mann 的樂團。",
+            "src": "https://en.wikipedia.org/wiki/Roy_Ayers",
+            "src2": "https://aaregistry.org/story/roy-ayers-vibraphonist-and-composer-born/",
+            "from": "new"
+          },
+          {
+            "f": "1973 年他為電影《Coffy》寫作並製作配樂。",
+            "src": "https://en.wikipedia.org/wiki/Roy_Ayers",
+            "src2": "https://www.bostonglobe.com/2025/03/06/metro/roy-ayers-obituary-jazz-legend/",
+            "from": "new"
+          },
+          {
+            "f": "〈Everybody Loves the Sunshine〉1976 年發行，是他最廣為人知的作品之一。",
+            "src": "https://downbeat.com/news/detail/roy-ayers-dies-at-84",
+            "src2": "https://en.wikipedia.org/wiki/Everybody_Loves_the_Sunshine",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1966 年加入 Herbie Mann 的樂團。",
+        "src": "https://en.wikipedia.org/wiki/Roy_Ayers",
+        "src2": "https://aaregistry.org/story/roy-ayers-vibraphonist-and-composer-born/",
+        "from": "new"
+      },
+      {
+        "f": "1973 年為電影《Coffy》寫作並製作配樂。",
+        "src": "https://en.wikipedia.org/wiki/Roy_Ayers",
+        "src2": "https://www.bostonglobe.com/2025/03/06/metro/roy-ayers-obituary-jazz-legend/",
+        "from": "new"
+      },
+      {
+        "f": "1976 年發行〈Everybody Loves the Sunshine〉。",
+        "src": "https://downbeat.com/news/detail/roy-ayers-dies-at-84",
+        "src2": "https://en.wikipedia.org/wiki/Everybody_Loves_the_Sunshine",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 4,
+    "status": "full",
+    "notes": "搜尋 8 次（WebFetch 5：en 維基 Roy Ayers、DownBeat 訃聞、維基〈Everybody Loves the Sunshine〉、African American Registry、Boston Globe 訃聞；WebSearch 3）；失敗 4 次（NPR 503、The HistoryMakers 403、AllAboutJazz 403、Pitchfork 無法擷取），另 Rolling Stone 只回轉址（307 到 tollbit 網域，未採信、未計次）。名冊 3 張卡（Coffy、Let's Do It、Fever）都是洛杉磯的 Roy Ayers，無同名混卡。African American Registry 那頁的傳記文字與維基高度重疊，判讀為同源改寫，出生與早期經歷兩源『非獨立』；DownBeat 與 Boston Globe（多半是通訊社訃文）與維基是各自撰文，取樣、Coffy 與過世日期的兩源可視為獨立。單源不收：維基稱他是『The Godfather of Neo Soul』與 acid jazz 運動的關鍵人物（維基單源，搜尋結果標題如 Billboard、Gulf News 也用『godfather of neo-soul』，但未開頁）；DownBeat 稱 Ubiquity 在剛興起的 jazz-funk 領域『影響力很大』、他『靈魂驅動、電氣化的做法影響了一整代 R&B 周邊的樂手』、原創曲中〈Everybody Loves the Sunshine〉『最廣為人知』（第三句已進 era 那條、與維基專輯頁並列，該頁僅確認它是取樣與翻唱極多的曲目，『最廣為人知之一』的措辭較保守）；〈Everybody Loves the Sunshine〉被取樣近 200 次（維基專輯頁單源，搜尋結果重述）、被 D'Angelo 與 Robert Glasper Experiment 等翻唱、Pitchfork 2016 年排在『1970 年代 200 首最佳歌曲』第 72 名（維基專輯頁轉述）；Ayers 本人說『我有比任何人都多的被取樣熱門曲，可能取樣總數比不上 James Brown』（Boston Globe 單源）；〈Running Away〉被 A Tribe Called Quest、Big Daddy Kane、Common 取樣（搜尋摘要）；三個音樂人取樣的名單在 Boston Globe 內指的是 1976 年那首曲子，A Tribe Called Quest 等名單不併入 facts；曾與 Rick James、The Roots、George Benson、Fela Kuti 合作、錄音逾 40 張專輯（DownBeat 單源）；成長於南中央洛杉磯、就讀 Thomas Jefferson 高中、彈鋼弦吉他與鋼琴並領 Latin Lyrics 樂團（aaregistry 單源）；17 歲遇 Bobby Hutcherson 才正式學顫音琴（搜尋摘要）；2020 年最後一張 JID002 與 Ali Shaheed Muhammad 合作（搜尋摘要）；Herbie Mann 三張 Atlantic 專輯、〈Lifeline〉1977 年 R&B/Hip-Hop 榜第 9 名、12 張 Billboard 200 專輯最高《You Send Me》1978 年第 48 名（Boston Globe 單源）；《Everybody Loves the Sunshine》1976 年 5 月 12 日 Polydor 發行、Billboard 200 第 51 名（維基專輯頁單源）。上線簡介（Let's Do It、Fever）本層未查證榜位與錄音室細節。sound 格只有成軍一條，聲音特色的具名描述都是單源，故偏薄。"
   }
 ]
