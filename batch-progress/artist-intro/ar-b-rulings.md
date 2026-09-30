@@ -47,3 +47,4 @@
 - 補洞第 1 組：Adele 失敗請求 6 次、Barry White 5 次、Betty Davis 5 次（付費牆轉址），照實記，放行。pubIssue 2 條（菅野《COWBOY BEBOP》簡介「本多雅人」應為本田雅人、樂器待核；鈴木宏昌コルゲン盤名與樂團名先後）。Boney M. 對嘴說法各源不一，不寫。菅野「国民祭典」為日文專名，QA 誤判保留。
 - 補洞第 2 組：Christina Aguilera 搜尋 9 次，第 9 次內容已撤，放行（先例）。pubIssue 2 條（Fatback《Fatback XII》簡介稱〈King Tim III〉為「史上第一張商業嘻哈唱片」、發行月份不一）。Bruno Mars 冠軍單曲數兩說，不寫。
 - 補洞第 3 組：pubIssue 1 條（Minnie Riperton《Adventures in Paradise》Larry Carlton 職稱，維基單源）。Mavis Staples 2005 年葛萊美終身成就獎主詞是 The Staple Singers。Jungle「Noel Gallagher 稱…」查無原句不收。
+- 寫作第 1 組（20 位）審畢，修 1 處：Jagged Edge 刪「成軍以來四位成員從未更動」（相對時間、會失效）。裁定：日本作品名沒有通行中文譯名時保留原文（如《海のトリトン》），與團名同視為專有名詞；有通行中譯者（如〈花開〉）才改。Boney M.「錄音室只有兩位女成員開口、男聲為 Farian」為通行定論，照寫。Betty Davis 276、Dusty Springfield 259 照准。
