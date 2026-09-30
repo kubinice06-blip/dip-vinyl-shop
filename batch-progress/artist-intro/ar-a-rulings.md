@@ -115,7 +115,7 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   2. Luther Vandross「中風昏迷近兩個月後完成的《Dance with My Father》」：中風在 2003 年 4 月、專輯 6 月發行，錄音多半在中風前完成，「之後完成」是推論 → 改成照 facts 的「同年發行」。
 
 - 寫作第 2 組（20 位）審畢，修 6 處（措辭貼回 facts）：Erykah Badu「內在自我」→「內在的自己」；Four Tops「一路暢銷」→「走紅」；Graham Central Station 措辭；
-  藍調歌手「夜裡偷聽」為推論 → 照 facts「一家人夜裡收聽」；Stylistics 製作人起初不滿意為單源 →「據說」；Lightnin' Hopkins「少年時」→「小時候」（年齡照 facts）。
+  Otis Clay「夜裡偷聽」為推論 → 照 facts「一家人夜裡收聽」；Stylistics 製作人起初不滿意為單源 →「據說」；Lightnin' Hopkins「少年時」→「小時候」（年齡照 facts）。
   The Emotions〈Blind Alley〉「超過 150 首」查 facts 有兩源，保留。
 - 上架：40 位（靈魂、R&B、藍調），審稿修 8 處。
 

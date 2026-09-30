@@ -847,5 +847,250 @@
     "failedFetches": 2,
     "notes": "事實庫 research 為空，三格從零查；卡池 9 張（1980–1992）皆為本團，無混卡。6 次請求：英文維基 Iron Maiden、Rock Hall（2026 年入選）、WebSearch（Harris 與團名）、Louder 的 Steve Harris 專訪（curl 讀全文）、WebSearch（限 britannica.com，取得 Britannica 條目網址）、Britannica 條目（實取內容極少，僅有頁面導覽，只能確認「British rock band」與名人堂條目；NWOBHM 領軍一句的 Britannica 支持只來自搜尋摘要）。失敗未計：Britannica 兩個猜錯的網址（404）。標 src2 者為第二來源。Harris 混合重 riff、速度與前衛成分的講法為維基 2010 年引語單源，未收；1982 年專輯被 Rock Hall 評為 widely considered one of the best metal albums of all time、維基稱銷量近 2000 萬張，兩者各為單源，未收；成軍時另有「主要詞曲作者」一說（維基單源）。單源、未收進 facts：團名取自 Man in the Iron Mask 電影改編、讓 Harris 聯想到鐵處女刑具（維基；搜尋摘要同一說法）；成軍於倫敦東區 Leyton（維基；搜尋摘要只複述維基）；1976 年 5 月 1 日 St. Nicks Hall 首演（維基）；Rock Hall 名人堂簡介「created the blueprint for how heavy metal bands should look, sound, and tour」（維基亦引該句，非獨立來源）；Rock Hall「1981 年是第一個在 MTV 播出的金屬樂團」（首位類宣稱，單源）；2012 年《The Number of the Beast》獲英國民眾票選為女王登基鑽禧紀念的「史上最佳英國專輯」（維基）；Paul Stanley「helped spawn an entire genre」、Metal Hammer 稱影響力僅次於 Black Sabbath（維基）；Pollstar 2025 年演唱會營收逾 10 億美元（維基）；2016 年薩爾瓦多、2019 年阿根廷國會的榮譽（維基）；2023 年 Royal Mail 郵票、2025 年 Royal Mint 紀念幣（維基）；歌詞題材涵蓋歷史、文學、戰爭、神話（維基首段）；Dickinson 歌劇式唱腔、Wishbone Ash《Argus》為雙吉他和聲源頭的 Harris 引語（維基）。Rock Hall 名人堂日期：維基載明 2026 年 4 月 13 日。上線簡介核對：三篇（首作、Killers、Somewhere in Time）與本次讀到的維基／Rock Hall 內容無衝突，未逐句查證。",
     "pubIssues": []
+  },
+  {
+    "key": "judas priest",
+    "name": "Judas Priest",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "主唱 Rob Halford 長年沒有公開自己是同志，怕曝光會危及樂團的成就；他直到 1998 年 2 月 4 日在 MTV 專訪中才出櫃。",
+            "src": "https://ultimateclassicrock.com/rob-halford-comes-out-mtv/",
+            "src2": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "聲音以雙吉他的猛攻、強勁的 riff 與高亢的歌劇式人聲為核心。",
+            "src": "https://www.rockhall.com/inductees/judas-priest",
+            "src2": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "from": "new"
+          },
+          {
+            "f": "Halford 1979 年巡演起穿上皮衣加鉚釘的造型，這套造型取自同志皮革文化，後來被許多重金屬樂團沿用，成為重金屬的招牌打扮。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://ultimateclassicrock.com/rob-halford-comes-out-mtv/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2022 年以音樂卓越獎（Award for Musical Excellence）入選搖滾名人堂，由 Alice Cooper 頒獎。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://www.rockhall.com/inductees/judas-priest",
+            "from": "new"
+          },
+          {
+            "f": "全球專輯銷量超過 5000 萬張。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://www.rockhall.com/inductees/judas-priest",
+            "from": "new"
+          },
+          {
+            "f": "被視為打下後來重金屬的模子，影響了 speed metal、thrash metal 與 power metal 等次類型。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://www.rockhall.com/inductees/judas-priest",
+            "from": "new"
+          },
+          {
+            "f": "1990 年 7 月至 8 月，美國內華達州一場民事審判指控他們的《Stained Class》藏有潛意識訊息，導致兩名青年於 1985 年自殺；法官在 8 月 24 日駁回訴訟，認定歌曲與自殺之間沒有因果關係。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://www.rollingstone.com/music/music-features/judas-priests-subliminal-message-trial-rob-halford-looks-back-57552/",
+            "from": "new"
+          },
+          {
+            "f": "1998 年 2 月 Halford 在 MTV 專訪中出櫃，當時距離他離開 Judas Priest 已六年。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://ultimateclassicrock.com/rob-halford-comes-out-mtv/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1990 年 7 月至 8 月，Stained Class 潛意識訊息訴訟開庭，8 月 24 日駁回。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://www.rollingstone.com/music/music-features/judas-priests-subliminal-message-trial-rob-halford-looks-back-57552/",
+            "from": "new"
+          },
+          {
+            "f": "1998 年 2 月 Halford 在 MTV 專訪出櫃。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://ultimateclassicrock.com/rob-halford-comes-out-mtv/",
+            "from": "new"
+          },
+          {
+            "f": "2022 年入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+            "src2": "https://www.rockhall.com/inductees/judas-priest",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1990 年 8 月，潛意識訊息訴訟被駁回。",
+        "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+        "src2": "https://www.rollingstone.com/music/music-features/judas-priests-subliminal-message-trial-rob-halford-looks-back-57552/",
+        "from": "new"
+      },
+      {
+        "f": "1998 年 2 月，Rob Halford 在 MTV 專訪出櫃。",
+        "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+        "src2": "https://ultimateclassicrock.com/rob-halford-comes-out-mtv/",
+        "from": "new"
+      },
+      {
+        "f": "2022 年入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Judas_Priest",
+        "src2": "https://www.rockhall.com/inductees/judas-priest",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "searches": 6,
+    "status": "thin",
+    "failedFetches": 0,
+    "notes": "origin 格偏薄：成軍於伯明罕（1969 年，主唱 Al Atkins 與貝斯手 Brian Stapenhill）、團名取自 Bob Dylan〈The Ballad of Frankie Lee and Judas Priest〉、Halford 1973 年加入、Ian Hill 與 K. K. Downing 的少年友誼皆只見維基單源，Britannica 頁面實取內容只有導覽，未能作第二源；status 因此標 thin（sound、legacy 兩格有料）。事實庫 research 為空；卡池 9 張（1976–2001）皆為本團，無混卡。6 次請求：英文維基、Rock Hall（2022）、Britannica（WebFetch 取到的只有頁首導覽，僅見「British rock band」與「power-chord pioneers」一句）、WebSearch（Halford 出櫃）、Ultimate Classic Rock 全文（curl）、WebSearch（1990 審判）。標 src2 或第二來源者：審判第二源 Rolling Stone 只見搜尋結果標題與摘要（摘要為多源合併，法官駁回日 8 月 24 日與「無因果關係」兩點與維基一致）；Halford 出櫃日期 2 月 4 日出自 UCR，維基只寫 1998 年 2 月，年月一致。單源、未收進 facts：維基首段「sold over 50 million、frequently ranked one of greatest metal bands、pioneers of NWOBHM」，銷量已與 Rock Hall 對上；Guardian 稱 British Steel 為「定義重金屬的唱片」（維基轉引）；AllMusic 稱其為最有影響力並領軍 NWOBHM（維基）；MTV 2006 年將其排在最偉大金屬樂團第 2、VH1 2010 年第 78 名、Loudwire 2016 年第 4（維基）；2006 年首屆 VH1 Rock Honors、2010 年葛萊美最佳金屬演出（維基）；《Sin After Sin》〈Dissident Aggressor〉推高速度與攻擊性，被後來更硬派的樂團採用（維基，與上線簡介一致）；Halford 受 Little Richard、Elvis、Janis Joplin、Robert Plant 影響，稱 Freddie Mercury 為最大偶像（維基）；Halford 出櫃後被許多聽眾解讀出酷兒色彩，其本人稱對 S&M 無興趣（維基單源）；樂團 1992 年 Halford 離團、1996 年 Tim Owens 加入、2003 年 Halford 回歸（維基，未逐項雙源）；《Sin After Sin》〈Raw Deal〉與〈Jawbreaker〉歌詞暗示性向（UCR）。審判一條為避免渲染細節，f 只寫日期、訴求與判決。搜尋摘要稱 Halford 是「first metal icon to announce he is gay」，屬「第一位」類宣稱且單源，未收，寫作層不要寫成「第一位」。出櫃當時 Halford 已離團（1992 年離團，維基與 UCR「six years removed」相符）。",
+    "pubIssues": []
+  },
+  {
+    "key": "neil young",
+    "name": "Neil Young",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1945 年 11 月 12 日生於加拿大多倫多，父親 Scott Young 是知名的記者兼作家。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/neil-young-emc",
+            "from": "new"
+          },
+          {
+            "f": "雙親在 1960 年離異，他隨母親搬到溫尼伯（Winnipeg）；他在當地組起 Squires 等搖滾樂團，年輕時的演出多在曼尼托巴省與安大略省北部。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/neil-young-emc",
+            "from": "new"
+          },
+          {
+            "f": "1966 年他離開加拿大前往洛杉磯，與 Stephen Stills 等人組成 Buffalo Springfield。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/neil-young-emc",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的風格跨度極大：從原音、內省的民謠與鄉村搖滾，到與 Crazy Horse 合作時失真、粗糙而直接的電吉他，1982 年的《Trans》甚至用聲碼器做電子流行。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/neil-young-emc",
+            "from": "new"
+          },
+          {
+            "f": "嗓音高亢，時而緊繃有力、時而輕柔，辨識度極高。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/neil-young-emc",
+            "from": "new"
+          },
+          {
+            "f": "1979 年的《Rust Never Sleeps》被視為他對龐克浪潮的回應：電吉他段落的刺耳寫法受到龐克氣氛影響，而不是排斥它。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.britannica.com/biography/Neil-Young",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1995 年以個人身分入選搖滾名人堂，由 Pearl Jam 的 Eddie Vedder 頒獎。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.rockhall.com/inductees/neil-young",
+            "from": "new"
+          },
+          {
+            "f": "Nirvana 的 Kurt Cobain 1994 年的遺書引用了他〈Hey Hey, My My〉的歌詞「It's better to burn out than to fade away」。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://loudwire.com/kurt-cobain-suicide-note-struck-neil-young/",
+            "from": "new"
+          },
+          {
+            "f": "1989 年的致敬專輯《The Bridge: A Tribute to Neil Young》由另類搖滾世代的樂團翻唱他的作品，被視為年輕一代敬意的證明。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/neil-young-emc",
+            "from": "new"
+          },
+          {
+            "f": "1985 年他與 Willie Nelson、John Mellencamp 共同創辦 Farm Aid，也長年參與為嚴重肢體與語言障礙兒童設立的 Bridge School（維基載明 1986 年與 Pegi Young 共同創辦）。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.britannica.com/biography/Neil-Young",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1966 至 1968 年在 Buffalo Springfield，1968 年後專注於個人發展。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.thecanadianencyclopedia.ca/en/article/neil-young-emc",
+            "from": "new"
+          },
+          {
+            "f": "1979 年的《Rust Never Sleeps》是他回應龐克浪潮的作品。",
+            "src": "https://en.wikipedia.org/wiki/Neil_Young",
+            "src2": "https://www.britannica.com/biography/Neil-Young",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1966 年遷居洛杉磯並組成 Buffalo Springfield。",
+        "src": "https://en.wikipedia.org/wiki/Neil_Young",
+        "src2": "https://www.thecanadianencyclopedia.ca/en/article/neil-young-emc",
+        "from": "new"
+      },
+      {
+        "f": "1985 年共同創辦 Farm Aid。",
+        "src": "https://en.wikipedia.org/wiki/Neil_Young",
+        "src2": "https://www.britannica.com/biography/Neil-Young",
+        "from": "new"
+      },
+      {
+        "f": "1995 年以個人身分入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Neil_Young",
+        "src2": "https://www.rockhall.com/inductees/neil-young",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Order of Canada 官階年份：維基寫 2010 年獲頒官員級，Britannica 摘要寫 2009 年；不一致，facts 不寫年份。",
+      "Britannica 摘要稱母親為 Astrid Young，維基寫母親是 Edna「Rassy」Young；facts 不寫母親名。"
+    ],
+    "searches": 6,
+    "status": "full",
+    "failedFetches": 1,
+    "notes": "事實庫 research 為空，三格從零查；卡池 9 張（1970–1985）皆為 Neil Young 本人，無混卡。6 次請求：英文維基、Rock Hall、Britannica（WebFetch）、WebSearch（Cobain 遺書引用）、WebSearch（加拿大百科與早年）、Canadian Encyclopedia 條目（curl 讀全文）。失敗未計：the canadianencyclopedia 猜錯網址（404）。標 src2 者為第二來源；Cobain 一條的第二源 Loudwire 只見搜尋結果標題與摘要（摘要稱 Cobain 遺書引用〈My My, Hey Hey (Out of the Blue)〉的這句）。「Rust Never Sleeps」一條的第二源 Britannica 僅摘要語「回應龐克而非排斥」。「Nirvana 一條」只寫遺書引用，不寫其他。單源、未收進 facts：維基首段「Godfather of Grunge」稱號與 Kurt Cobain、Eddie Vedder 常點名他為主要影響（維基；Vedder 於 1995 年頒獎則有 Rock Hall 佐證）；1995 年《Mirror Ball》與 Pearl Jam 合作（維基）；1997 年以 Buffalo Springfield 成員再度入選搖滾名人堂（維基）；2006 年 Order of Manitoba、2010 年 Order of Canada 官員級（維基；Britannica 寫 2009）；Rolling Stone 百大音樂人與 2023 年 250 大吉他手第 30 名（維基）；1951 年夏罹患小兒麻痺、左半身部分癱瘓（維基，搜尋摘要只複述維基）；Thom Yorke、Johnny Marr 點名受其影響（維基）；澳洲樂團 Powderfinger 團名取自〈Powderfinger〉（維基）；1964–66 年 Mynah Birds 與 Rick James、用二手靈車南下洛杉磯、1970 年才取得綠卡（維基）；1974 年 CSNY 巡迴為最早的體育場巡演之一（維基）；CE 稱其詞作以詩意意象、地景與社會良知見長（單源）；CE 稱 1969–79 年間僅三張專輯賣不到 50 萬張（單源）；Neil Young 生涯後期與 Crazy Horse 復出、環保活動（維基）。",
+    "pubIssues": []
   }
 ]
