@@ -1402,5 +1402,188 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫 research 為空，三格全靠補查。補查 6 次：英文維基、搖滾名人堂官網、Britannica、WebSearch（King 與民權歌曲）、Stax 官方藝人介紹、Legacy Recordings 新聞稿；失敗 1 次：NPR 訪談頁（503）。同名混卡：無。Pops Staples 的生卒日期只有維基單一來源（逝世年屬高風險），不收；Pervis 2021 年過世同樣不收。未收：搜尋摘要提到 Pops 1963 年在蒙哥馬利聽 King 講道後說的『他能講，我們就能唱』與『隨 King 巡演募款』，只見搜尋摘要，未逐頁核對（Stax 官方頁只確認 1963 年蒙哥馬利演出、King 在場）；Greg Kot 稱《Freedom Highway》是『史上最佳現場專輯之一』屬單一評論者評價，不收；Bob Dylan 2015 年那句話只有維基一源，上線簡介《Uncloudy Day》也引用；維基未提 Dylan 說《Uncloudy Day》是『最神祕的東西』，上線簡介該句本層未能驗證。"
+ },
+ {
+  "key": "aretha franklin",
+  "name": "Aretha Franklin",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Aretha Franklin 1942 年 3 月 25 日生於田納西州 Memphis，2018 年 8 月 16 日辭世，享年 76 歲，死因是胰臟腫瘤。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 同樣記她生於 1942 年 3 月 25 日的 Memphis，2018 年 8 月 16 日卒於底特律，享年 76 歲，死因是胰臟癌。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     },
+     {
+      "f": "她是牧師 C. L. Franklin 與福音歌手 Barbara Siggers Franklin 的女兒；她 5 歲前全家搬到底特律，父親在那裡擔任 New Bethel Baptist Church 的牧師。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 記她的父母在她 6 歲時分居，母親在她 10 歲時過世；她小時候跟著父親在福音節目上演唱，受 Clara Ward 影響。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     },
+     {
+      "f": "她從小受福音訓練，接觸過 Clara Ward 與 Mahalia Jackson 等人，後來 Sam Cooke 成為她的重要影響。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "她十來歲就開始錄音，1956 年 14 歲時發行專輯《Songs of Faith》；Britannica 同樣記該專輯為她 14 歲的作品。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "她 1960 年簽給 Columbia，在製作人 John Hammond 手下待到 1966 年；Britannica 寫她在 Columbia 期間雖獲評論肯定，卻始終難以打開跨界市場。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1967 年她轉到 Atlantic，由製作人 Jerry Wexler 主導；在 Alabama 的 Muscle Shoals 錄下〈I Never Loved a Man (The Way I Love You)〉，成為她第一首百萬銷量的單曲。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     },
+     {
+      "f": "她重新詮釋 Otis Redding 的〈Respect〉，成為她的招牌曲，後來被譽為民權與女性主義的讚歌。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 寫〈Respect〉是「在個人、性與種族三個層次上運作的讚歌」，登上 Billboard 流行榜冠軍。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     },
+     {
+      "f": "維基形容她有強而有力的次女高音，鋼琴彈得精湛，編曲富有創意，音樂把福音根基與靈魂樂、R&B 和流行融合在一起。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 稱她在民權時代贏得「靈魂樂女王」的稱號，能駕馭爵士、藍調、流行、R&B、搖滾與歌劇等多種類型，福音出身的嗓音氣勢驚人。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     },
+     {
+      "f": "她 1972 年的現場福音專輯《Amazing Grace》銷量超過 200 萬張，至今仍是史上暢銷的福音專輯之一。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "搖滾名人堂稱她是「充滿熱情、精緻與掌控力的藝術家，錄音成為定義靈魂樂的讚歌」，並形容她 1967 年的〈Respect〉「驕傲、性感、坦率而自信，令人難忘」。",
+      "src": "https://www.rockhall.com/inductees/aretha-franklin",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Britannica 稱她是「20 世紀最偉大的聲樂家之一」，並說「靈魂樂女王」的稱號是在民權時代贏得的。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     },
+     {
+      "f": "她 1987 年成為第一位入選搖滾名人堂的女性，由 Keith Richards 頒獎；名人堂的入選文稱她是「靈魂樂女王、音樂女王」。",
+      "src": "https://www.rockhall.com/inductees/aretha-franklin",
+      "from": "new"
+     },
+     {
+      "f": "維基與 Britannica 也都記她 1987 年是第一位入選搖滾名人堂的女性。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 記她 1994 年獲甘迺迪中心榮譽，2005 年獲總統自由勳章；維基另記她拿過國家藝術勳章，並在 2019 年獲普立茲特別褒揚，理由是她「五十多年來對美國音樂與文化的不朽貢獻」。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     },
+     {
+      "f": "維基寫她拿過 18 座葛萊美（44 次入圍）；《Rolling Stone》兩度把她評為史上最偉大的歌手，2023 年的 200 大歌手榜她排第 1 名。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "《Rolling Stone》2023 年 200 大歌手榜把她排在第 1 名，說她是「無可撼動的女王」，並稱她 1967 年靠〈Respect〉在全球爆紅、登上最偉大的流行、搖滾或靈魂歌手的寶座。",
+      "src": "https://www.pressherald.com/2023/01/03/rolling-stone-hails-aretha-franklin-as-greatest-singer-of-all-time/",
+      "from": "new"
+     },
+     {
+      "f": "2018 年 8 月 31 日她的告別式在底特律 Greater Grace Temple 舉行：Bill Clinton、Jesse Jackson、Al Sharpton、Tyler Perry 與 Cicely Tyson 致詞，Ariana Grande、Jennifer Hudson、Faith Hill 與 Ron Isley 演唱。",
+      "src": "https://www.cbsnews.com/pictures/aretha-franklin-funeral-service-today-2018-08-31/",
+      "from": "new"
+     },
+     {
+      "f": "告別式只開放約千名一般民眾入場，歌迷通宵排隊，教堂外架起大螢幕，一排粉紅色凱迪拉克停在外頭；維基寫這場告別式由主要電視網全國轉播。",
+      "src": "https://www.cbsnews.com/pictures/aretha-franklin-funeral-service-today-2018-08-31/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1956 年她 14 歲，發行專輯《Songs of Faith》。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "1960 年她簽給 Columbia，1966 年前在製作人 John Hammond 手下錄音。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     },
+     {
+      "f": "1967 年她轉到 Atlantic，在 Muscle Shoals 錄下〈I Never Loved a Man (The Way I Love You)〉，並以〈Respect〉登上流行榜冠軍。",
+      "src": "https://www.britannica.com/biography/Aretha-Franklin",
+      "from": "new"
+     },
+     {
+      "f": "1972 年現場福音專輯《Amazing Grace》銷量超過 200 萬張。",
+      "src": "https://en.wikipedia.org/wiki/Aretha_Franklin",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1967 年在 Atlantic 以〈I Never Loved a Man (The Way I Love You)〉與〈Respect〉打開局面，〈Respect〉登上流行榜冠軍。",
+    "src": "https://www.britannica.com/biography/Aretha-Franklin",
+    "from": "new"
+   },
+   {
+    "f": "1987 年成為第一位入選搖滾名人堂的女性。",
+    "src": "https://www.rockhall.com/inductees/aretha-franklin",
+    "from": "new"
+   },
+   {
+    "f": "2005 年獲總統自由勳章。",
+    "src": "https://www.britannica.com/biography/Aretha-Franklin",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "告別式時長：搜尋摘要一處寫六小時、標題另一處寫 8 小時；facts 不寫時長。",
+   "Obama 是否『致悼詞』：英文維基寫 Obama eulogized her，而 CBS 告別式名單沒有 Obama 致詞；facts 不寫 Obama 悼詞，只寫 CBS 列出的致詞者。",
+   "上線簡介與本層事實無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全靠補查。補查 6 次：英文維基、搖滾名人堂官網、Britannica、WebSearch（告別式）、CBS 告別式圖輯、WebSearch（Rolling Stone 200 大歌手）；失敗 3 次：Billboard 告別式報導（307 轉址、再試 402 付費牆）、WZZM 報導（403）。同名混卡：無。生卒年月日與享年有維基與 Britannica 兩源一致；第一位女性入選搖滾名人堂有維基、Britannica 與名人堂官網三源。未收：Rolling Stone『兩度』稱她史上最偉大歌手只見維基（2008 年那次未逐頁核對）；18 座葛萊美與『連續八屆最佳女 R&B 演唱』只有維基，後者屬『第一次連續』類宣稱，不收；維基『Obama 致悼詞』與 CBS 名單不符，不收；『Respect 與 Otis Redding 原版』的製作細節與 Wexler 錄音過程搜尋摘要沒有內文，不收。名人堂官網未寫她的出身。"
  }
 ]
