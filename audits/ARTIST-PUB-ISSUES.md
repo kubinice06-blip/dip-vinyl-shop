@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 35 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 37 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -39,3 +39,5 @@
 | ar-a-005 | The Impressions | Finally Got Myself Together | Curtis Mayfield 離團三年後，The Impressions 靠這張 1974 年的專輯…… | 兩源（維基、Britannica）都寫 Mayfield 1970 年離團，1974 年距離團為四年，「離團三年後」算法不合；另「第十五張錄音室專輯」未查證。 | https://en.wikipedia.org/wiki/The_Impressions |
 | ar-a-005 | Slave | The Hardness of the World | Slave 是 1975 年在 Dayton 由小號手 Steve Washington 與 Floyd Miller 組起 | 成軍年各源不一（維基 1975 年底至 1976 年春；Buckeye Beat 1976），建議改成『1970 年代中期』；Floyd Miller 是長號手，簡介只點名 Washington 為小號手，未寫錯。 | https://www.buckeyebeat.com/slave.html |
 | ar-a-005 | Johnnie Taylor | Raw Blues | 少年時在 Highway Q.C.'s 唱福音、與 Sam Cooke 同團 | Cooke 是 Highway Q.C.'s 的前成員，Taylor 後來加入並在 1955 年錄音時任主唱，兩人並非同時同團；Taylor 是 1957 年接替 Cooke 在 Soul Stirrers 的位置。 | https://encyclopediaofarkansas.net/entries/johnnie-harrison-taylor-637/ |
+| ar-a-006 | Chic | C'est Chic | 〈Le Freak〉在 1978 年 10 月同時攻上 Hot 100、R&B 與舞曲榜冠軍 | Hot 100 第 1 名首度出現在 1978 年 12 月 9 日當週（Stereogum、WYSO 等記載）；10 月只能說是單曲發行後不久，不能寫成 10 月同時登頂 Hot 100。維基《C'est Chic》條目原句即是這種寫法，屬維基內部不一致。R&B 與舞曲榜登頂日期未逐項查證。 | https://stereogum.com/2069711/the-number-ones-chics-le-freak/columns/the-number-ones |
+| ar-a-006 | Syl Johnson | Back for a Taste of Your Love | 1970 年〈Is It Because I'm Black〉立足 | 單曲 1969 年 9 月由 Twinight 發行；1970 年是同名專輯。簡介若指單曲，年份應為 1969。 | https://en.wikipedia.org/wiki/Is_It_Because_I%27m_Black |

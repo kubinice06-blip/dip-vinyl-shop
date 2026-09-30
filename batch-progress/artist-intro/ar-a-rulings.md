@@ -103,3 +103,7 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 補洞四組交齊。寫作第 1 組（20 位）審畢 0 處：寫作層已自行擋下 Supremes「僅次於 Beatles」、Diana Ross「第一位兩度獲終身成就獎的女性」、Prince 單源數字，Diana Ross 的金氏紀錄具名帶出。
 - Earth, Wind & Fire「第一個獲甘迺迪中心榮譽的非裔美國人團體」保留：兩源（Grammy 官網、NewsOne），反查 2019 年以前的團體得主（The Who、Led Zeppelin、Eagles 等）無非裔團體。
 - The Bar-Kays 墜機：只寫兩源確定的部分，Ben Cauley 生還過程的單源細節不寫。
+- 寫作第 2 組（20 位）審畢，修 2 處（同一篇）：Millie Jackson「辭掉文書工作」（前職各源寫法不一）→「原本的工作」；「她被稱為嘻哈的教母」只有一篇 The Quietus → 「有人稱她為嘻哈的教母」。
+- 主線親驗：Patrice Rushen 為 2026 年 NEA Jazz Master（arts.gov、Billboard）。
+- Bar-Kays「抓住座椅坐墊生還」：補洞層放進 facts 又在回報說單源，寫作層照派工詞沒寫。補洞派工詞自 ar-a-007 起加「facts 只放兩源都支持的內容，單源一律進 notes」。
+- 上架：40 位（靈魂、放克），審稿修 2 處。
