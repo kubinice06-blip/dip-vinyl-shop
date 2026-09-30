@@ -55,3 +55,5 @@
 - 補洞第 4 組交件，補洞交齊（40 位）。Solomon Burke 失敗請求 9 次、Brooklyn Allstars 5 次（付費牆與 503），照實記，放行。pubIssue 2 條（Sylvester《Step II》「Fantasy 第四張」、《Stars》「第五張」，依 1977 同名作為 Fantasy 首張推算應為第二、三張）。
 - 補洞第 2 組：Allen Toussaint 失敗請求 8 次、Billy Paul 6 次，照實記，放行。pubIssue 5 條（Bee Gees《Spirits Having Flown》連冠時長；Billy Paul《War of the Gods》靈魂榜名次；Chuck Brown 三條：國民隊全壘打歌現況、〈We the People〉與 go-go 先後、《Bustin' Loose》年份）。Clarence Carter〈Patches〉葛萊美主詞為詞曲作者。
 - 補洞第 3 組：D'Angelo 失敗請求 8 次、Ebo Taylor 5 次，照實記，放行。Ebo Taylor 2026-02-07 過世，主線 WebSearch 核實（DJ Mag、NPR、World Music Central）。D'Angelo 2025-10-14 過世兩源一致。pubIssue 1 條（Ebo Taylor《Appia Kwa Bridge》「錄製時已 77 歲」與生年不合）。Denise LaSalle、Eddie Floyd 生年兩說不寫。Eddie Kendricks 的名人堂稱讚主詞是 The Temptations。
+- 寫作第 2 組（20 位）審畢，0 處。Smokey Robinson「Motown 副總裁」f 欄無兩源，寫作層改用名人堂官方語，照准。Sam Smith 全篇以姓名代稱、不用性別代名詞，照准。
+- ar-b-005 上架：40 位（爵士、靈魂），審稿修 1 處。

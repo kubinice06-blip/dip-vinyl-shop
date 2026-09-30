@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 103 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 116 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -107,3 +107,16 @@
 | ar-b-005 | 鈴木宏昌 | Skip Step Colgen | 1977 年它先成了盤名，後來成了樂團的名字（コルゲン・バンド 再發展成 The Players） | Kotobank 與日文維基摘要記コルゲン・バンド 1976 年成立、1979 年改名 The Players，樂團名早於 1977 年的盤名；『先成盤名、後成團名』的先後對不上。 | https://kotobank.jp/word/%E9%88%B4%E6%9C%A8%20%E5%AE%8F%E6%98%8C-1647546 |
 | ar-b-005 | Fatback | Fatback XII | 該曲一般被視為史上第一張商業發行的嘻哈唱片，比〈Rapper's Delight〉早約一週上市 | 維基〈King Tim III〉條目寫『常被視為錄音嘻哈的開端，但〈Rapper's Delight〉才被廣泛認定為第一首商業發行的嘻哈歌曲』；樂團條目說『一般視為最早的商業發行嘻哈單曲』，說法互相牴觸。建議改為『常被視為最早的商業嘻哈單曲之一，與〈Rapper's Delight〉爭第一，兩首在靈魂榜上榜只差一週』。 | https://en.wikipedia.org/wiki/King_Tim_III_(Personality_Jock) |
 | ar-b-005 | Fatback | Fatback XII | Fatback 一九七九年八月在 Spring Records 發行的作品 | DJ Rob 部落格寫《Fatback XII》1979 年 3 月發行，維基單曲條目寫〈King Tim III〉1979 年 7 月 25 日發行；專輯發行月份與上線簡介的『八月』不一致，建議本機再對 Discogs 或 Billboard 核對專輯發行日。 | https://djrobblog.com/archives/9177 |
+| ar-b-005 | Minnie Riperton | Adventures in Paradise | Larry Carlton 掛編曲 | 維基專輯條目寫 Carlton 負責吉他編曲（handling guitar arrangements），非整張編曲；單一來源，建議店主改成『Larry Carlton 負責吉他編曲』或刪除該句，待其他來源（唱片內頁 credits）確認。 | https://en.wikipedia.org/wiki/Adventures_in_Paradise_(Minnie_Riperton_album) |
+| ar-b-005 | Sylvester | Step II | Sylvester 在 Fantasy 的第四張 | 1977 年同名專輯是他在 Fantasy 的第一張（事實庫研究稿與上線《Sylvester》簡介皆如此，Sylvester and the Hot Band 兩張是 1973 年 Blue Thumb 發行），《Step II》應是 Fantasy 第二張；『第四張』可能把 Blue Thumb 兩張算進去了，但簡介明寫『在 Fantasy』。本次未逐張核對全部年表。 | https://en.wikipedia.org/wiki/Sylvester_(singer) |
+| ar-b-005 | Sylvester | Stars | Sylvester 在 Fantasy 的第五張 | 同上，依同一算法應是 Fantasy 第三張（《Sylvester》《Step II》《Stars》）。 | https://en.wikipedia.org/wiki/Sylvester_(singer) |
+| ar-b-006 | The S.O.S. Band | On the Rise | 在第四張作品把製作權交給明尼阿波利斯來的 Jimmy Jam 與 Terry Lewis | Albumism 稱 Jam 與 Lewis 只製作該專輯約一半（另一半非他們製作），維基專輯條目署名製作為 Gene Dozier、Jimmy Jam、Terry Lewis 與樂團；『把製作權交給』有過度之嫌，建議改成『與 Jimmy Jam、Terry Lewis 共同製作／由兩人製作其中部分曲目』。 | https://albumism.com/features/the-sos-band-sands-of-time-album-anniversary |
+| ar-b-006 | Bee Gees | Spirits Having Flown | 三首冠軍單曲讓三兄弟在一年內累積六首連續冠軍，追平 Bing Crosby、Elvis Presley 與 The Beatles 的紀錄 | 維基 Bee Gees 條目寫的是『18 個月內六首連續美國冠軍單曲（1977 至 1979），追平 Beatles』，簡介寫『一年內』與時間跨度不符，且『Bing Crosby、Elvis Presley』兩名未在本層查到來源；建議改為『約 18 個月內』並只留有出處的 Beatles，或再核 Bing Crosby 與 Elvis 的說法。 | https://en.wikipedia.org/wiki/Bee_Gees |
+| ar-b-006 | Billy Paul | War of the Gods | 〈Thanks for Saving My Life〉打進流行榜第 37 名，專輯登上靈魂榜第 12 名 | 維基 War of the Gods 條目只寫單曲流行榜第 37 名、靈魂榜第 9 名；專輯靈魂榜第 12 名本層未查到來源，需核對（可能是專輯榜位，需 Billboard 專輯榜記錄）。 | https://en.wikipedia.org/wiki/War_of_the_Gods_(album) |
+| ar-b-006 | Chuck Brown & the Soul Searchers | Bustin' Loose | 華盛頓國民隊則拿它當全壘打進場曲 | WJLA 報導：2015 年球隊把它從官方全壘打歌換成 Jessie J 的〈Bang Bang〉（原為 2008 年球迷票選），歌仍留在賽場播放清單；維基〈Bustin' Loose〉則說仍在每場第一支全壘打後播放。現在式的『拿它當全壘打進場曲』有時態與範圍問題，建議改為『曾是國民隊全壘打歌』或『在國民球場首支全壘打後播放』（需再核）。 | https://wjla.com/sports/content/nationals-ditch-chuck-brown-s-bustin-loose-as-official-post-homerun-song-113363 |
+| ar-b-006 | Chuck Brown & the Soul Searchers | We the People | 本盤錄於 go-go 成形之前，仍靠近同期的靈魂樂與放克；『首張專輯』 | NEA 國家傳統獎頁稱 1971 年錄音〈We the People〉被廣泛認為是第一首 go-go 曲目（單源、且『第一』類宣稱未查反例）；簡介的『go-go 之前』定位與之相反，店主可考慮改成中性說法並註明各方說法不一。 | https://www.arts.gov/honors/heritage/chuck-brown |
+| ar-b-006 | Chuck Brown & the Soul Searchers | Bustin' Loose | 1979 年 Source Records 發行的這張專輯 | NEA 寫專輯是 1978 年；維基〈Bustin' Loose (song)〉寫單曲 1978 年 10 月發行、1979 年初登頂。專輯發行年份未查到權威記錄，需核（可能專輯 1978 年底、榜位在 1979 年）。 | https://en.wikipedia.org/wiki/Bustin%27_Loose_(song) |
+| ar-b-006 | Ebo Taylor | Appia Kwa Bridge | 錄製時他已 77 歲 | Ebo Taylor 生於 1936 年 1 月 6 日，《Appia Kwa Bridge》2012 年發行，錄音在發行之前，錄製與發行時他都是 75 至 76 歲，尚未滿 77 歲（77 歲要到 2013 年 1 月）。依據：維基與 Okay Africa 皆寫生日 1936-01-06 與專輯 2012 年發行。 | https://www.okayafrica.com/ebo-taylor-ghanaian-highlife-legend-dies-at-90/1422853 |
+| ar-b-006 | First Choice | Armed and Extremely Dangerous | 樂團日後轉入 Salsoul 旗下以〈Doctor Love〉等曲成為舞曲名團 | 〈Doctor Love〉是 1977 年出在 Gold Mind 廠牌《Delusions》的單曲（Hot 100 第 41 名、Hot Soul Singles 第 23 名），不是 Salsoul 時期；Salsoul 是 1983 年重發〈Let No Man Put Asunder〉那條線。建議把『Salsoul 旗下以 Doctor Love 成名』改成『Gold Mind 時期以 Doctor Love 成為舞曲名團』 | https://en.wikipedia.org/wiki/Delusions_(First_Choice_album) |
+| ar-b-006 | Joe Bataan | Riot! | Joe Bataan 本名 Bataan Nitollano | 本名各源不一致：維基寫 Bataan Nitollano，LA Phil 藝人頁寫 Peter Nitollano；建議店主本機再核對（AllMusic 或官方網站），核不出來就從簡介拿掉本名 | https://www.laphil.com/musicdb/artists/9963/joe-bataan |
+| ar-b-007 | Lou Rawls | Lou Rawls Live! | 上線簡介整段是配對錯誤的退件說明（『此筆應退回重新配對正確的 release group…』），不是可讀的專輯簡介 | 簡介內容是內部處理註記，且說明卡片繫結的是 1978 年費城國際版《Lou Rawls Live》而非 1966 年 Capitol 版；卡池 poolAlbums 年份為 1978，需重新配對／重寫。 | https://en.wikipedia.org/wiki/Lou_Rawls |
