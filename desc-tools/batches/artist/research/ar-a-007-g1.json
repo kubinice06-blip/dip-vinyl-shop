@@ -613,5 +613,581 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫 research 為空，三格全從零查。介紹的是樂團本身。計次：維基（curl 純文字）、Britannica（WebFetch 摘要）、WebSearch（樂團史）、encyclopedia.com（WebFetch 摘要）、WebSearch（2012 音樂禁令與後輩）、ABC News 2026 訪談（WebFetch 摘要）共 6 次；失敗請求 1 次（tinariwen.com/about 403）。Britannica、encyclopedia.com、ABC 皆為模型摘要，措辭已依此保守寫。單源、未收進 facts：Ag Alhabib 4 歲親眼目睹父親被處決（維基，encyclopedia.com 只寫父親被殺）；1989 年離開利比亞、1990 年起義部分成員以叛軍參戰（含 Iyad Ag Ghaly）、1991 年 Tamanrasset 協議後全職音樂、1991 年在阿比讓錄卡帶《Kel Tinariwen》（維基）；1993 年 Manny Ansar 任經理（維基）；成員稱直到 2000 年代初出國前從未聽過美式藍調（維基）；Dire Straits、Led Zeppelin、Dylan 等盜錄卡帶流入撒哈拉（維基）；2005 BBC World Music 獎、2008 Praetorius 音樂獎（維基）；Tamikrest、Kel Assouf、Imarhan 等點名受其影響（維基，搜尋摘要另稱 Tamikrest 受其啟發，來源為 Tamikrest 維基頁）；2013 年 Abdallah Ag Lamida 被武裝分子劫持後獲釋、部分成員暫居美國西南部錄製《Emmaar》（維基，ABC 未提）；NPR 稱他們是「music's true rebels」（維基轉引）。ABC 訪談稱成員如今因馬利軍隊威脅逃到阿爾及利亞南部，屬現況，未收。 另：童年看西部片後用油桶、木棍與腳踏車煞車線自製吉他（維基）；團名 Kel Tinariwen 是旁人對他們的稱呼、意為「沙漠的人」，Tinariwen 是 ténéré（沙漠）的複數（維基）。"
+ },
+ {
+  "key": "buddy guy",
+  "name": "Buddy Guy",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1936 年 7 月 30 日生於路易斯安那州 Lettsworth，家境貧困，父母是分成佃農，他從小自己動手做琴來學吉他。",
+      "src": "https://en.wikipedia.org/wiki/Buddy_Guy",
+      "src2": "https://www.britannica.com/biography/Buddy-Guy",
+      "from": "new"
+     },
+     {
+      "f": "1957 年他移居芝加哥，Muddy Waters 是他初到芝加哥時最重要的引路人。",
+      "src": "https://en.wikipedia.org/wiki/Buddy_Guy",
+      "src2": "https://www.britannica.com/biography/Buddy-Guy",
+      "from": "new"
+     },
+     {
+      "f": "他在 Chess Records 期間常被當作錄音室伴奏吉他手，替 Muddy Waters、Howlin' Wolf、Little Walter、Koko Taylor 等人伴奏。",
+      "src": "https://en.wikipedia.org/wiki/Buddy_Guy",
+      "src2": "https://www.britannica.com/biography/Buddy-Guy",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的吉他風格猛烈外放，以凌厲的電吉他 riff 見稱；Rock Hall 形容那風格「發自內臟、凶猛到藍調彷彿在他血管裡流動」。",
+      "src": "https://www.rockhall.com/inductees/buddy-guy",
+      "src2": "https://www.britannica.com/biography/Buddy-Guy",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Rock and Roll Hall of Fame 在 2005 年將他選入名人堂，由 B.B. King 與 Eric Clapton 頒授；名人堂稱 Eric Clapton、Jimi Hendrix 與 Stevie Ray Vaughan 都說受他影響。",
+      "src": "https://www.rockhall.com/inductees/buddy-guy",
+      "src2": "https://en.wikipedia.org/wiki/Buddy_Guy",
+      "from": "new"
+     },
+     {
+      "f": "Eric Clapton 在 1986 年公開說 Buddy Guy「毫無疑問是在世最好的吉他手」。",
+      "src": "https://www.rockhall.com/inductees/buddy-guy",
+      "src2": "https://en.wikipedia.org/wiki/Buddy_Guy",
+      "from": "new"
+     },
+     {
+      "f": "他 2003 年獲美國國家藝術勳章（National Medal of Arts），2012 年獲 Kennedy Center Honors，2015 年獲葛萊美終身成就獎。",
+      "src": "https://en.wikipedia.org/wiki/Buddy_Guy",
+      "src2": "https://www.britannica.com/biography/Buddy-Guy",
+      "from": "new"
+     },
+     {
+      "f": "1972 年他與 L.C. Thurman 在芝加哥開設藍調俱樂部 Checkerboard Lounge，1985 年離開。",
+      "src": "https://en.wikipedia.org/wiki/Buddy_Guy",
+      "src2": "https://www.britannica.com/biography/Buddy-Guy",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2005 年入選 Rock and Roll Hall of Fame。",
+    "src": "https://www.rockhall.com/inductees/buddy-guy",
+    "src2": "https://en.wikipedia.org/wiki/Buddy_Guy",
+    "from": "new"
+   },
+   {
+    "f": "2012 年獲 Kennedy Center Honors。",
+    "src": "https://en.wikipedia.org/wiki/Buddy_Guy",
+    "src2": "https://www.britannica.com/biography/Buddy-Guy",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "自製吉他的材料：維基寫兩弦 diddley bow，Kennedy Center Honors 致詞（American Blues Scene 轉述）說是紗窗線、油漆罐與髮夾；Britannica 摘要只寫自己做了吉他。facts 只寫「自己動手做琴」。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "Buddy Guy 在世，facts 不收現況（巡演狀態、近年獲獎與電影客串）。事實庫 research 為空，三格全從零查。計次：維基（curl 純文字）、Rock Hall 名人堂頁（curl）、Britannica（WebFetch 摘要）、WebSearch（Kennedy Center 相關）、American Blues Scene（WebFetch 摘要）共 5 次；失敗請求 2 次（kennedy-center.org 403、allamericanspeakers.com 403）。第二來源大半是 Britannica 摘要與維基，獨立度有限。單源、未收進 facts：13 歲自製吉他並從廣播學藍調、特別是 John Lee Hooker（Britannica）；1958 年與 Magic Sam、Otis Rush 的西區比賽拿到合約、Cobra 時期與 Ike Turner（維基）；Chess 不肯錄他現場那種新式風格、Leonard Chess 斥為「只是製造噪音」（維基）；1965 年 American Folk Blues Festival 歐洲巡演、與 Junior Wells 合作（維基）；1965 年 Clapton 在倫敦 Marquee 看他用牙齒撥弦、把琴舉過頭頂，日後影響 Hendrix（維基）；1980 年代末因 Clapton 邀請參加 24 Nights 而復出（維基）；Kennedy Center 主席 David Rubenstein 說他影響了近半世紀所有拿起電吉他的人（維基）；搜尋摘要稱他開創失真與回授的用法、Clapton 說他之於自己「像 Elvis 之於別人」（來源不明）；9 座葛萊美、23 座 W.C. Handy 獎與 Billboard Century Award（維基）；1985 年 Blues Foundation 名人堂（Britannica）；Louisiana 與 Mississippi 訂 2018 年 12 月 8 日為 Buddy Guy Day、Lettsworth 一段公路命名 Buddy Guy Way（維基）。 另單源：Kennedy Center Honors 現場 Bill Clinton 致詞說他用紗窗的線、油漆罐與母親的髮夾拼出第一把琴、出身貧困（American Blues Scene 轉述）；American Blues Scene 稱他是把電吉他推到藍調最前面的芝加哥藍調先驅之一。"
+ },
+ {
+  "key": "otis rush",
+  "name": "Otis Rush",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他出生在密西西比州 Neshoba County 的 Philadelphia 附近，父母是分成佃農，家境貧困，童年就在農場幹活。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://msbluestrail.org/blues-trail-markers/otis-rush",
+      "from": "new"
+     },
+     {
+      "f": "他靠自學學會吉他。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     },
+     {
+      "f": "他 14 歲離開密西西比北上芝加哥，Muddy Waters 的電氣藍調啟發他走上職業音樂這條路。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     },
+     {
+      "f": "他 1956 年在 Willie Dixon 製作下推出首支單曲〈I Can't Quit You Baby〉，這是他在芝加哥獨立廠牌 Cobra 的第一張唱片，成為全國節奏藍調榜熱門，登上第 6 名。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     },
+     {
+      "f": "他 2018 年 9 月 29 日因中風併發症過世，享年 84 歲。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他是左撇子，卻用右手吉他並把琴弦上下顛倒地裝，低音 E 弦在最下方；一般認為這造就了他獨特的音色。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     },
+     {
+      "f": "他的吉他音色慢燃、推弦拉得很長，句子像人聲一樣流動，他與 Buddy Guy、Magic Sam 同被視為 West Side 芝加哥藍調的代表人物。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     },
+     {
+      "f": "他的嗓音是寬廣有力的男高音，唱腔高亢、情感強烈。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.rollingstone.com/music/music-news/otis-rush-chicago-blues-guitarist-dead-731136/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Eric Clapton 等多位吉他手受他影響；維基列出的還有 Michael Bloomfield 與 Peter Green。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     },
+     {
+      "f": "他 1971 年在舊金山為 Capitol 錄製《Right Place, Wrong Time》，Capitol 沒有發行；他買回母帶，1976 年才由其他廠牌推出，之後被視為他最好的作品之一。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     },
+     {
+      "f": "他 1984 年入選 Blues Hall of Fame，《Any Place I'm Going》獲葛萊美最佳傳統藍調專輯獎。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://msbluestrail.org/blues-trail-markers/otis-rush",
+      "from": "new"
+     },
+     {
+      "f": "2003 年他中風，此後無法再正常演出。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+      "from": "new"
+     },
+     {
+      "f": "2007 年密西西比藍調委員會在他離開家鄉的 Philadelphia 火車站設立 Mississippi Blues Trail 紀念牌。",
+      "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+      "src2": "https://msbluestrail.org/blues-trail-markers/otis-rush",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1956 年首支單曲〈I Can't Quit You Baby〉登上 Billboard 節奏藍調榜第 6 名。",
+    "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+    "src2": "https://www.ebsco.com/research-starters/history/otis-rush/",
+    "from": "new"
+   },
+   {
+    "f": "1984 年入選 Blues Hall of Fame。",
+    "src": "https://en.wikipedia.org/wiki/Otis_Rush",
+    "src2": "https://msbluestrail.org/blues-trail-markers/otis-rush",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "出生年：維基寫 1934 年 4 月 29 日，Mississippi Blues Trail 摘要寫 1935 年（sixth of seven children），維基寫 one of seven children；EBSCO 未給年份，facts 不寫出生年。",
+   "離開家鄉年份：維基內文寫 1949 年抵芝加哥（14 歲），Awards 節寫他 1948 年搭北上火車；facts 只寫 14 歲。",
+   "葛萊美年份：維基寫 1999 年得獎，Mississippi Blues Trail 摘要寫 1998，facts 不寫年份，只寫專輯與獎項類別。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Mourning in the Morning",
+    "claim": "Otis Rush 自 1955 年起錄單曲",
+    "problem": "維基、Mississippi Blues Trail 與 EBSCO 都寫他 1956 年以 Cobra 的〈I Can't Quit You Baby〉出道，1955 年這個起點三源皆無；建議改為 1956 年。",
+    "src": "https://en.wikipedia.org/wiki/Otis_Rush"
+   }
+  ],
+  "searches": 6,
+  "failedFetches": 5,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全從零查。計次：維基（curl 純文字）、Mississippi Blues Trail 標示牌頁（WebFetch 摘要）、WebSearch（訃聞）、WebSearch（限站，Rolling Stone 等）、WebSearch（事業挫折）、EBSCO Research Starters（WebFetch 摘要）共 6 次；失敗請求 5 次（Britannica 404、legacy.com 403、Rock Hall 猜測網址 404、NPR 503、blues.org 404），超出失敗上限 1 次。Rolling Stone 訃聞網址取自搜尋結果，內容為搜尋摘要，未開頁；該摘要另稱 Led Zeppelin 1969 年首張專輯翻唱〈I Can't Quit You Baby〉、他是 West Side sound 的建築師。單源、未收進 facts：他 1956 至 1958 年在 Cobra 錄了八首、推薦 Magic Sam 與 Buddy Guy 給 Cobra（維基）；1960 年簽 Chess、只發四首，後轉 Duke（維基）；1965 年 Vanguard《Chicago/The Blues/Today!》介紹他給白人聽眾、American Folk Blues Festival 歐洲巡演（維基）；1975 年首度赴日、1970 年代末拒絕巡演與錄音、1985 年復出、1986 年 Montreux 與 Clapton 同台（維基）；他拒絕了 Rolling Stones 的錄音與巡演邀請、未接受 Johnny Winter 在 Blue Sky 為他製作、與 Carlos Santana 的合作沒成（維基）；1994 年《Ain't Enough Comin' In》為他睽違 16 年的錄音室專輯（維基；已在上線簡介）；2016 年芝加哥市長宣布 6 月 12 日為 Otis Rush Day（維基）；Rolling Stone 2015 百大吉他手第 53 名（維基）；受影響者另有 Jimi Hendrix、Stevie Ray Vaughan、Jimmy Page、Jeff Beck、Rory Gallagher（EBSCO 與搜尋摘要，來源不一）；他 1948 年在 Philadelphia 車站搭北上火車（維基）；EBSCO 稱他早年當過卡車司機與肉品包裝工，維基寫牲畜場、鋼廠與馬拉煤車。"
+ },
+ {
+  "key": "albert collins",
+  "name": "Albert Collins",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1932 年 10 月 1 日生於德州 Leona，堂親是 Lightnin' Hopkins，家人 1941 年搬到休士頓。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.alligator.com/artists/Albert-Collins/",
+      "from": "new"
+     },
+     {
+      "f": "另一位親戚 Willow Young 教他一種少見的小調調弦，成為他終身使用的招牌：吉他調成開放 F 小調和弦，再以 capo 夾在第 5、6 或 7 格。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.alligator.com/artists/Albert-Collins/",
+      "from": "new"
+     },
+     {
+      "f": "他受 T-Bone Walker、John Lee Hooker 與 Clarence「Gatemouth」Brown 等人啟發。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.alligator.com/artists/Albert-Collins/",
+      "from": "new"
+     },
+     {
+      "f": "他 1993 年 11 月 24 日在拉斯維加斯因癌症過世，享年 61 歲。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.tshaonline.org/handbook/entries/collins-albert",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以 Fender Telecaster 聞名，得到「Master of the Telecaster」稱號；冰冷、清脆、延音很長的高音讓他另有「Iceman」之稱。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.alligator.com/artists/Albert-Collins/",
+      "from": "new"
+     },
+     {
+      "f": "他以少見的小調調弦搭配帶打擊感的右手手法，彈出獨特的斷奏式冰冷音色，並用手指而不用撥片彈奏。",
+      "src": "https://www.alligator.com/artists/Albert-Collins/",
+      "src2": "https://www.tshaonline.org/handbook/entries/collins-albert",
+      "from": "new"
+     },
+     {
+      "f": "他的現場演出以親近觀眾聞名，樂團叫 The Icebreakers。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.alligator.com/artists/Albert-Collins/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Robert Cray 說，1969 年在一場搖滾音樂節看到 Collins 演出讓他大開眼界，兩年後 Collins 到他在 Tacoma 的高中畢業派對演出，「那改變了我的一生，從那一刻起我開始認真研究藍調」。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.alligator.com/artists/Albert-Collins/",
+      "from": "new"
+     },
+     {
+      "f": "他與 Robert Cray、Johnny Copeland 合錄的《Showdown!》獲葛萊美獎。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.alligator.com/artists/Albert-Collins/",
+      "from": "new"
+     },
+     {
+      "f": "他被視為啟發一整代德州吉他手的人物，Stevie Ray Vaughan 與 Jimmie Vaughan 都受他影響。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://bluesrockreview.com/2025/09/why-albert-collins-deserves-more-credit-in-blues-history.html",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年他由 Bruce Iglauer 簽入 Alligator Records，首張作品《Ice Pickin'》成為他晚期生涯的起點。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+      "src2": "https://www.alligator.com/artists/Albert-Collins/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1978 年簽入 Alligator Records，發行《Ice Pickin'》。",
+    "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+    "src2": "https://www.alligator.com/artists/Albert-Collins/",
+    "from": "new"
+   },
+   {
+    "f": "與 Robert Cray、Johnny Copeland 合作的《Showdown!》獲葛萊美獎。",
+    "src": "https://en.wikipedia.org/wiki/Albert_Collins",
+    "src2": "https://www.alligator.com/artists/Albert-Collins/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Blues Hall of Fame 入選年：搜尋摘要寫 1986，維基與其他頁面未載，facts 不收。",
+   "與上線簡介〈Ice Pickin'〉：簡介寫獲 1979 年葛萊美提名；Alligator 頁面寫獲葛萊美提名與 Montreux 最佳藍調專輯獎，維基未提，facts 不收。",
+   "Robert Cray 看到 Collins 的場合：維基寫 1969 年搖滾音樂節與 1971 年高中畢業派對，Alligator 頁面寫高中舞會（prom）；facts 依維基寫畢業派對。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全從零查。計次：維基（curl 純文字）、WebSearch（生平）、Alligator Records 藝人頁（WebFetch 摘要）、WebSearch（影響與地位）共 4 次；失敗請求 3 次（Rock Hall 猜測網址 404、Britannica 404、Guitar World 回傳會員頁）。TSHA（tshaonline.org）與 bluesrockreview.com 兩個網址取自搜尋結果、內容為搜尋摘要，未開頁；TSHA 頁面先前有驗證頁擋下，該頁摘要涵蓋出生地、Willow Young、死於拉斯維加斯與不用撥片。Alligator 是唱片公司頁面，屬宣傳性質，措辭已保守。單源、未收進 facts：16 歲聽到 John Lee Hooker〈Boogie Chillen'〉決定專攻吉他（維基）；1952 年看到 Gatemouth Brown 彈 Esquire 買下 Fender（維基）；1958 年首張單曲〈Freeze〉、1964 年〈Frosty〉、1965 年首張專輯（維基）；1968 年經 Canned Heat 引薦簽 Imperial 並搬去加州（維基，已在上線簡介）；1971 年時因無法靠音樂維生轉做營造、1970 年代末在妻子 Gwen 勸說下重返音樂（維基）；現場拉長導線走出俱樂部、在觀眾陪同下去隔壁店買糖果、在 Antone's 邊彈邊出門等軼事（維基）；1985 年 Live Aid 與 George Thorogood 同台（維基）；Rolling Stone 百大吉他手第 56 名（維基）；他是 Johnny Copeland 等德州藍調樂手把 T-Bone Walker 傳統帶成現代藍調範本的一員（維基）；Alligator 稱 Cray 是在高中舞會看了他而走上藍調路（與維基不同，見 conflicts）。"
+ },
+ {
+  "key": "b.b. king",
+  "name": "B.B. King",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Riley B. King，1925 年 9 月 16 日生於密西西比州 Itta Bena 附近的棉花園，在三角洲長大。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://www.britannica.com/biography/B-B-King",
+      "from": "new"
+     },
+     {
+      "f": "他小時候在教會唱福音歌，教會音樂是他最早的音樂養分；他自學吉他，堂表親 Bukka White 是他早年接觸三角洲藍調的重要人物。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://www.britannica.com/biography/B-B-King",
+      "from": "new"
+     },
+     {
+      "f": "他在孟菲斯 WDIA 電台當歌手兼 DJ，被叫作「Beale Street Blues Boy」，後來簡化成「B.B.」。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://www.britannica.com/biography/B-B-King",
+      "from": "new"
+     },
+     {
+      "f": "他在 WDIA 聽到 T-Bone Walker 後，決心也要有一把電吉他；T-Bone Walker 是他吉他技法的重要啟發。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://www.britannica.com/biography/B-B-King",
+      "from": "new"
+     },
+     {
+      "f": "他 2015 年 5 月 14 日在拉斯維加斯過世，享年 89 歲。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://www.britannica.com/biography/B-B-King",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的吉他以單音、帶獨特顫音的樂句回應自己的歌聲，維基稱他確立了一種以流暢推弦、閃爍顫音與斷奏為主的精緻獨奏風格，影響了後來許多電吉他藍調樂手。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://www.britannica.com/biography/B-B-King",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被稱為「藍調之王」（King of the Blues），也與 Albert King、Freddie King 並稱「三王」（Three Kings of the Blues Guitar）；Rock Hall 稱他 50 年的音樂生涯裡，藍調始終是他的家。",
+      "src": "https://www.rockhall.com/inductees/bb-king",
+      "src2": "https://en.wikipedia.org/wiki/B._B._King",
+      "from": "new"
+     },
+     {
+      "f": "他 1980 年入選 Blues Hall of Fame，1987 年入選 Rock and Roll Hall of Fame，由 Sting 頒授。",
+      "src": "https://www.rockhall.com/inductees/bb-king",
+      "src2": "https://en.wikipedia.org/wiki/B._B._King",
+      "from": "new"
+     },
+     {
+      "f": "他 1990 年獲美國國家藝術勳章（National Medal of Arts），1995 年獲 Kennedy Center Honors。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://www.britannica.com/biography/B-B-King",
+      "from": "new"
+     },
+     {
+      "f": "2015 年 5 月他的靈柩先在孟菲斯 Beale Street 遊行、數千人夾道送行，再運回家鄉 Indianola，5 月 30 日在 Bell Grove Missionary Baptist Church 舉行葬禮，之後安葬在 B.B. King Museum 園區。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://msbluestrail.org/blog/memphis-indianola-bb-king-funeral-arrangements",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1964 年他在芝加哥 Regal 劇院錄下《Live at the Regal》，後來被視為他的代表性現場專輯。",
+      "src": "https://en.wikipedia.org/wiki/B._B._King",
+      "src2": "https://www.britannica.com/biography/B-B-King",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1987 年入選 Rock and Roll Hall of Fame。",
+    "src": "https://www.rockhall.com/inductees/bb-king",
+    "src2": "https://en.wikipedia.org/wiki/B._B._King",
+    "from": "new"
+   },
+   {
+    "f": "1990 年獲美國國家藝術勳章，1995 年獲 Kennedy Center Honors。",
+    "src": "https://en.wikipedia.org/wiki/B._B._King",
+    "src2": "https://www.britannica.com/biography/B-B-King",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "第一支榜首單曲〈3 O'Clock Blues〉的年份：維基寫 1952 年 2 月登上節奏藍調榜，Britannica 摘要寫 1951；兩源不一致，facts 不寫年份。",
+   "與上線簡介〈Lucille〉相關：B.B. King 為吉他取名 Lucille 的由來（阿肯色州 Twist 一場鬥毆引發的火災）只見維基，未收。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全從零查。計次：維基（curl 純文字）、Rock Hall 名人堂頁（curl）、Britannica（WebFetch 摘要）、WebSearch（葬禮，第二來源網址取自搜尋結果、內容為搜尋摘要，未逐頁開啟）共 4 次。單源、未收進 facts：AllMusic 稱他是「20 世紀後半最重要的電吉他手」（維基）；1956 年一年演出 342 場、70 多歲仍年均 200 多場（維基）；Lucille 命名由來（維基）；Britannica 稱吉他技法也受 Django Reinhardt、Charlie Christian 啟發（Britannica 單源）；Britannica 稱他共獲 15 座葛萊美（Britannica 單源）；1969 年 Rolling Stones 美國巡演開場、經紀人 Sid Seidenberg 引導他進入搖滾聽眾場域（維基）；1988 年與 U2 合作〈When Love Comes to Town〉（維基）；1970 年 Cook County Jail 演出後參與成立囚犯更生基金會（維基）；2004 Polar Music Prize、2006 Presidential Medal of Freedom、1987 葛萊美終身成就獎、1998 〈The Thrill Is Gone〉入 Grammy Hall of Fame（維基）；Rolling Stone 2011 百大吉他手第 6、2023 名單第 8（維基）；1946 年赴孟菲斯投靠 Bukka White 住約十個月、King Biscuit Time 電台節目啟發他想當電台樂手（維基）。"
+ },
+ {
+  "key": "koko taylor",
+  "name": "Koko Taylor",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Cora Walton，1928 年 9 月 28 日生於田納西州孟菲斯附近的 Bartlett，出身分成佃農家庭，靠摘棉花維生。",
+      "src": "https://en.wikipedia.org/wiki/Koko_Taylor",
+      "src2": "https://www.britannica.com/biography/Koko-Taylor",
+      "from": "new"
+     },
+     {
+      "f": "她小時候在晚上聽 Bessie Smith、Howlin' Wolf 與 Muddy Waters 的藍調，NEA 也指出她的歌唱受 Bessie Smith 等藍調前輩影響。",
+      "src": "https://www.britannica.com/biography/Koko-Taylor",
+      "src2": "https://www.arts.gov/honors/heritage/koko-taylor",
+      "from": "new"
+     },
+     {
+      "f": "1950 年代初她與丈夫 Robert「Pops」Taylor 搬到芝加哥，白天做家務工作，晚上到南區的藍調俱樂部演唱。",
+      "src": "https://www.britannica.com/biography/Koko-Taylor",
+      "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Wang-Dang-Doodle_Luby.pdf",
+      "from": "new"
+     },
+     {
+      "f": "她在芝加哥的俱樂部演唱時被 Willie Dixon 聽到，Dixon 認為她有唱藍調的「正確嗓子」，把她帶進 Chess 唱片的體系。",
+      "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Wang-Dang-Doodle_Luby.pdf",
+      "src2": "https://www.britannica.com/biography/Koko-Taylor",
+      "from": "new"
+     },
+     {
+      "f": "她 2009 年 6 月 3 日過世，享年 80 歲。",
+      "src": "https://en.wikipedia.org/wiki/Koko_Taylor",
+      "src2": "https://www.britannica.com/biography/Koko-Taylor",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她以粗糙、強而有力的嗓音聞名，Britannica 形容她的聲音「渾厚而洪亮」。",
+      "src": "https://en.wikipedia.org/wiki/Koko_Taylor",
+      "src2": "https://www.britannica.com/biography/Koko-Taylor",
+      "from": "new"
+     },
+     {
+      "f": "〈Wang Dang Doodle〉是 Willie Dixon 寫的歌，Dixon 自己與 Howlin' Wolf 先前的錄音都沒有走紅；Dixon 說服她重錄後，她的演唱使它成為她四十多年的招牌曲。",
+      "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Wang-Dang-Doodle_Luby.pdf",
+      "src2": "https://en.wikipedia.org/wiki/Koko_Taylor",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她被稱為「藍調女王」（Queen of the Blues）。",
+      "src": "https://en.wikipedia.org/wiki/Koko_Taylor",
+      "src2": "https://www.arts.gov/honors/heritage/koko-taylor",
+      "from": "new"
+     },
+     {
+      "f": "她的〈Wang Dang Doodle〉1966 年初由 Checker 發行，登上 Billboard 節奏藍調榜第 4 名，銷量破百萬張。",
+      "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Wang-Dang-Doodle_Luby.pdf",
+      "src2": "https://en.wikipedia.org/wiki/Koko_Taylor",
+      "from": "new"
+     },
+     {
+      "f": "她的〈Wang Dang Doodle〉在 2023 年入選美國國家錄音登記表（National Recording Registry），美國國會圖書館為此刊出專文。",
+      "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Wang-Dang-Doodle_Luby.pdf",
+      "src2": "https://en.wikipedia.org/wiki/Koko_Taylor",
+      "from": "new"
+     },
+     {
+      "f": "她 2004 年獲 NEA National Heritage Fellowship，1999 年獲 Blues Foundation 終身成就獎，NEA 稱她拿過的 W.C. Handy 獎比任何女性藍調藝人都多。",
+      "src": "https://www.arts.gov/honors/heritage/koko-taylor",
+      "src2": "https://en.wikipedia.org/wiki/Koko_Taylor",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2023 年〈Wang Dang Doodle〉入選美國國家錄音登記表。",
+    "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Wang-Dang-Doodle_Luby.pdf",
+    "src2": "https://en.wikipedia.org/wiki/Koko_Taylor",
+    "from": "new"
+   },
+   {
+    "f": "2004 年獲 NEA National Heritage Fellowship。",
+    "src": "https://www.arts.gov/honors/heritage/koko-taylor",
+    "src2": "https://en.wikipedia.org/wiki/Koko_Taylor",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "被 Dixon 發掘與簽 Chess 的年份：維基寫 1962 年發掘、1964 年帶進 Checker，Britannica 摘要寫 1963，NEA 寫 1962 拿到 Chess 合約，上線簡介寫 1964 年簽進 Checker；各源不一致，facts 不寫年份。",
+   "〈Wang Dang Doodle〉發行年與榜位：維基與 LoC 為 1966 年、R&B 榜第 4 名；Britannica 摘要寫 1965 年單曲、榜前五；NEA 寫 1965；搜尋摘要另有第 13 名一說。facts 採維基與 LoC 一致的 1966 初、第 4 名，該版與上線簡介一致。",
+   "葛萊美：維基寫提名 11 次、1985 年以《Blues Explosion》得最佳傳統藍調專輯，LoC 寫 11 次提名、1984 年一次得獎，Britannica 摘要寫 8 次提名；三源不一致，facts 只寫最保守的『多次提名』，實際未收。",
+   "搬到芝加哥的年紀：維基寫 1952 年，NEA 寫 21 歲；facts 只寫『1950 年代初』。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格全從零查。計次：維基（curl 純文字）、Britannica（WebFetch 摘要）、WebSearch（Wang Dang Doodle 與 2023 錄音登記表）、Library of Congress 專文 PDF（WebFetch 未能摘要，改用本機解出全文，作者 Frank Luby）、NEA National Heritage 頁（WebFetch 摘要）共 5 次；失敗請求 1 次（Rock Hall 猜測網址 404，Koko Taylor 未入名人堂）。單源、未收進 facts：從小在教會唱歌、兄弟用乾草捆鐵絲與釘子做吉他、玉米芯做口琴（LoC 引述本人）；B.B. King 在 WDIA 放 Memphis Minnie 讓她愛上藍調（LoC）；她起初「討厭這首歌、不想錄」、錄音班底有 Buddy Guy、Gene Barge、Fred Below、Lafayette Leake（LoC）；1989 年在老布希就職舞會演唱（LoC）；Iglauer 1970 年代後期把她簽進 Alligator（LoC 寫『late 1970s』，維基寫 1975，兩源不一致）；Alligator 期間九張專輯、八張獲葛萊美提名、29 座 W.C. Handy 獎（維基；NEA 寫 19 座 Handy 獎，數字不一致）；Bonnie Raitt、Shemekia Copeland、Janis Joplin、Susan Tedeschi 等點名受她影響（維基）；1997 Blues Hall of Fame（維基）；1989 年車禍與 1994 年開設自己的藍調俱樂部（維基）；2009 年 5 月 7 日最後一場演出在 Blues Music Awards（維基）。本位輸出是否『full』：origin、sound、legacy 三格皆有兩源事實，但 sound 格較薄。"
  }
 ]

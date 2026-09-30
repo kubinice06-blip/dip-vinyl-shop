@@ -240,5 +240,612 @@
     "failedFetches": 1,
     "notes": "事實庫 research 為空，卡池 10 張（1970–1986）皆為本團，無混卡。6 次請求：英文維基（curl 取純文字）、Rock Hall、Britannica（curl 403 一次未計，改 WebFetch）、WebSearch（Hackett 影響）、WebSearch（Steve Harris）、loudersound 搜尋結果頁用作 Harris 第二源（只見搜尋結果標題與摘要，未逐頁讀取；標題即為該引語）。標 src2 者為第二來源。單源、未收進 facts：Hackett 加入的年月（維基 1971 年 1 月、Britannica 摘要寫 1970 年，兩源不一致，故 f 欄不寫年份）；團名由校友 Jonathan King 所取、首張《From Genesis to Revelation》1969 年被唱片行歸進宗教音樂區、一年只賣 649 張（維基）；成軍時眾人年齡 15 至 17 歲（維基）；1988 年葛萊美最佳概念音樂錄影帶〈Land of Confusion〉（維基，上線簡介亦寫）；銷量估計 1 億至 1.5 億張（維基首段）；Q 雜誌 2004 年列第 17 大樂團、1977 年 Silver Clef、2008 Mojo 終身成就、2012 Progressive Music Awards 終身成就（維基）；neo-prog（Marillion、Pallas）以 Genesis 為主要影響（維基）；Hackett 影響 Alex Lifeson（維基）；被 Dream Theater、Opeth、Queensrÿche 等金屬團視為影響（維基）；維基 Legacy 節載明評價兩極：七〇年代被反前衛者批評為中產出身，八〇年代 Robert Hilburn 稱其「flabbergastingly insignificant」，Banks 自承「沒有一張定義性的專輯」；Hackett 自稱率先在錄音中使用雙手點弦（tapping）、1973 年《Selling England by the Pound》首見於唱片，來源為搜尋摘要（udiscovermusic 等）且屬「第一位」類宣稱，早於他有其他吉他手的點弦紀錄，不收。Harris 引語採維基與 Louder 標題共同支持的「兩首最愛之一」。Genesis 與 Hackett 影響一條的 Brian May、Eddie Van Halen 兩人由 udiscovermusic 搜尋摘要支持（未逐頁讀），維基則列 May、Lifeson、Van Halen。",
     "pubIssues": []
+  },
+  {
+    "key": "sonic youth",
+    "name": "Sonic Youth",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1981 年成軍於紐約市，創始成員是 Kim Gordon、Thurston Moore 與 Lee Ranaldo。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.britannica.com/topic/Sonic-Youth",
+            "from": "new"
+          },
+          {
+            "f": "他們從曼哈頓的 no wave 實驗藝術與音樂場景冒出來；Ranaldo 與 Moore 都曾在作曲家 Glenn Branca 的電吉他樂團演奏。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.britannica.com/topic/Sonic-Youth",
+            "from": "new"
+          },
+          {
+            "f": "2011 年因 Kim Gordon 與 Thurston Moore 的婚姻破裂而解散。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.britannica.com/topic/Sonic-Youth",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "早期以噪音與回授為主，被視為 noise rock 與 alternative rock 的先驅。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.britannica.com/topic/Sonic-Youth",
+            "from": "new"
+          },
+          {
+            "f": "他們設計大量自製的另類調弦，並在吉他弦與琴格間夾鼓棒、螺絲起子等物件改變音色。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.guitarworld.com/artists/guitarists/how-and-why-thurston-moore-started-using-alternative-tunings",
+            "from": "new"
+          },
+          {
+            "f": "Thurston Moore 說，一直用標準調弦，聽起來就會很標準；另類調弦是為了逼出新的聲音。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.guitarworld.com/artists/guitarists/how-and-why-thurston-moore-started-using-alternative-tunings",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Daydream Nation》被廣泛視為樂團的代表作；這張 1988 年的雙專輯 2006 年獲美國國會圖書館選入國家錄音登記簿（National Recording Registry）。",
+            "src": "https://en.wikipedia.org/wiki/Daydream_Nation",
+            "src2": "https://www.loc.gov/loc/lcib/0605/nrr.html",
+            "from": "new"
+          },
+          {
+            "f": "Sonic Youth 是 alternative rock 與 indie rock 風潮的關鍵影響者，被視為八〇、九〇年代另類搖滾樂團的重要先行者。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.britannica.com/topic/Sonic-Youth",
+            "from": "new"
+          },
+          {
+            "f": "Nirvana 簽下 DGC 的決定受到他們影響；Kim Gordon 與雙方共用的經紀公司 Gold Mountain 都替 Nirvana 引介過這間廠牌，《Nevermind》即由 DGC 發行。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.loudersound.com/features/sonic-youth-dinosaurjr-nirvana-changed-alternative-rock",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1981 年成軍於紐約。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.britannica.com/topic/Sonic-Youth",
+            "from": "new"
+          },
+          {
+            "f": "1988 年發行《Daydream Nation》。",
+            "src": "https://en.wikipedia.org/wiki/Daydream_Nation",
+            "src2": "https://www.britannica.com/topic/Sonic-Youth",
+            "from": "new"
+          },
+          {
+            "f": "2011 年因 Kim Gordon 與 Thurston Moore 的婚姻破裂而解散。",
+            "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+            "src2": "https://www.britannica.com/topic/Sonic-Youth",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1981 年成軍於紐約市。",
+        "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+        "src2": "https://www.britannica.com/topic/Sonic-Youth",
+        "from": "new"
+      },
+      {
+        "f": "2006 年《Daydream Nation》入選美國國會圖書館國家錄音登記簿。",
+        "src": "https://en.wikipedia.org/wiki/Daydream_Nation",
+        "src2": "https://www.loc.gov/loc/lcib/0605/nrr.html",
+        "from": "new"
+      },
+      {
+        "f": "2011 年解散。",
+        "src": "https://en.wikipedia.org/wiki/Sonic_Youth",
+        "src2": "https://www.britannica.com/topic/Sonic-Youth",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Steve Shelley 的加入年：維基寫 1985 年、Britannica 摘要寫 1986 年前後定下；兩源不一致，故 facts 不寫 Shelley 的加入年；最後演出在巴西亦為維基單源，未收。"
+    ],
+    "searches": 6,
+    "status": "full",
+    "failedFetches": 3,
+    "notes": "事實庫 research 為空，三格從零查；卡池 10 張（1983–2006）皆為本團，無混卡。6 次請求：英文維基 Sonic Youth、Britannica、WebSearch（Nirvana／DGC）、維基 Daydream Nation、WebSearch（國家錄音登記簿）、WebSearch（另類調弦）。失敗未計：Rock Hall（404，Sonic Youth 未入選）、loc.gov 登記簿總表（403）、AllMusic 傳記（403）。標 src2 者為第二來源；LOC 第二源只見搜尋結果（LOC Information Bulletin 標題與摘要，Daydream Nation 2006 年第四屆選入、50 件錄音），未逐頁讀；Guitar World 與 Louder 兩條亦只見搜尋摘要。單源、未收進 facts：團名取自 MC5 吉他手 Fred「Sonic」Smith 與雷鬼歌手 Big Youth（維基）；1995 Lollapalooza 壓軸（維基）；Krist Novoselic 說樂團目標是「做得跟 Sonic Youth 一樣好」（維基）；Stephen Malkmus、Sleater-Kinney、Fugazi、Dinosaur Jr. 等點名受影響（維基）；維基首段「redefined what rock guitar could do」（Guitar World 稱）；Heather Phares（AllMusic）、Spin、Stereogum 評語（維基轉引）；Daydream Nation 榜單：1988 年 Village Voice Pazz & Jop 第 2 名、Pitchfork 2002 年八〇年代百大專輯第 1 名（Daydream Nation 維基單源）；主要影響來源含 Velvet Underground、Stooges、Neil Young、Joni Mitchell、Yoko Ono（維基）；早期只買得起廉價吉他、另類調弦是省錢的副產品（Michael Azerrad 引語，維基）。Nirvana 與 DGC 一條：維基寫「影響其音樂風格與簽 DGC 的決定」，Louder 摘要寫 Kim Gordon 與 Gold Mountain 推薦，兩者對「簽 DGC 受 Sonic Youth 影響」一致，但具體推薦細節單以搜尋摘要為據。",
+    "pubIssues": []
+  },
+  {
+    "key": "the cure",
+    "name": "The Cure",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "團長 Robert Smith 1959 年 4 月 21 日生於 Blackpool，童年舉家搬到英格蘭南部的西薩塞克斯郡。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Smith_(musician)",
+            "src2": "https://thecircle.de/en/blogs/features/zeitsprung-am-21-4-1959-kommt-robert-smith-von-the-cure-zur-welt",
+            "from": "new"
+          },
+          {
+            "f": "Smith 出身音樂家庭，父親愛唱歌、母親彈鋼琴；他與妹妹 Janet 從小學鋼琴，妹妹是鋼琴神童，他改拿吉他，最初的和弦由哥哥 Richard 教。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Smith_(musician)",
+            "src2": "https://thecircle.de/en/blogs/features/zeitsprung-am-21-4-1959-kommt-robert-smith-von-the-cure-zur-welt",
+            "from": "new"
+          },
+          {
+            "f": "樂團由 Crawley 學校裡的同學 Robert Smith、Michael Dempsey 與 Lol Tolhurst 組成。",
+            "src": "https://en.wikipedia.org/wiki/The_Cure",
+            "src2": "https://www.britannica.com/topic/the-Cure",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1980 年的《Seventeen Seconds》起，樂團的風格轉向陰暗、簡約的 post-punk。",
+            "src": "https://en.wikipedia.org/wiki/The_Cure",
+            "src2": "https://www.britannica.com/topic/the-Cure",
+            "from": "new"
+          },
+          {
+            "f": "同一個樂團既寫陰鬱的歌，也寫輕快閃亮的流行歌，Smith 的嗓音與流行旋律感是核心。",
+            "src": "https://en.wikipedia.org/wiki/The_Cure",
+            "src2": "https://www.rockhall.com/inductees/cure",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2019 年入選搖滾名人堂，由 Nine Inch Nails 的 Trent Reznor 頒獎。",
+            "src": "https://en.wikipedia.org/wiki/The_Cure",
+            "src2": "https://www.rockhall.com/inductees/cure",
+            "from": "new"
+          },
+          {
+            "f": "被視為 gothic rock 的代表樂團之一，也影響了從 goth 到 alternative 的多種曲風。",
+            "src": "https://en.wikipedia.org/wiki/The_Cure",
+            "src2": "https://www.rockhall.com/inductees/cure",
+            "from": "new"
+          },
+          {
+            "f": "Smashing Pumpkins 與 Nine Inch Nails 等後輩樂團被列為受其影響。",
+            "src": "https://www.rockhall.com/inductees/cure",
+            "src2": "https://www.britannica.com/topic/the-Cure",
+            "from": "new"
+          },
+          {
+            "f": "Robert Smith 蒼白的膚色、暈開的紅唇膏、黑眼線與蓬亂的黑髮，深深影響了八〇年代興起的 goth 次文化。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Smith_(musician)",
+            "src2": "https://www.britannica.com/topic/the-Cure",
+            "from": "new"
+          },
+          {
+            "f": "2026 年 2 月的第 68 屆葛萊美，樂團憑《Songs of a Lost World》首度拿下葛萊美。",
+            "src": "https://en.wikipedia.org/wiki/The_Cure",
+            "src2": "https://www.britannica.com/topic/the-Cure",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1980 年《Seventeen Seconds》走向陰暗、簡約的風格。",
+            "src": "https://en.wikipedia.org/wiki/The_Cure",
+            "src2": "https://www.britannica.com/topic/the-Cure",
+            "from": "new"
+          },
+          {
+            "f": "1989 年的《Disintegration》讓樂團成為主流市場的大型樂團。",
+            "src": "https://en.wikipedia.org/wiki/The_Cure",
+            "src2": "https://www.britannica.com/topic/the-Cure",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2019 年入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/The_Cure",
+        "src2": "https://www.rockhall.com/inductees/cure",
+        "from": "new"
+      },
+      {
+        "f": "2026 年首度贏得葛萊美獎。",
+        "src": "https://en.wikipedia.org/wiki/The_Cure",
+        "src2": "https://www.britannica.com/topic/the-Cure",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年：維基寫 1976 年（前身 Malice，1977 年改 Easy Cure）、Britannica 寫 1978 年在 St. Wilfrid's 成軍；兩源不一致，facts 不寫成軍年。",
+      "Robert Smith 古典吉他課：維基寫老師是 John Williams 的學生、thecircle 寫是 John Williams 本人；不一致，facts 不寫。"
+    ],
+    "searches": 6,
+    "status": "full",
+    "failedFetches": 0,
+    "notes": "事實庫 research 為空，三格從零查；卡池 10 張（1980–2024）皆為本團，無混卡。6 次請求：英文維基 The Cure、Rock Hall、Britannica（WebFetch）、維基 Robert Smith、WebSearch（Smith 早年）、thecircle.de（Smith 生平）。標 src2 者為第二來源。單源、未收進 facts：維基首段「Seventeen Seconds 對新興 gothic rock 影響深遠」；維基 Legacy「often regarded as one of the most significant alternative artists of the 1980s」、NME 1992「the most successful alternative band that ever shuffled disconsolately about the earth」、Pitchfork「unlikeliest alt-rock heroes」；維基首段銷量逾 3000 萬張；Trent Reznor 名人堂文「changed the face of popular music indelibly in their 40-year history without ever having to compromise their sound or aesthetic」（Rock Hall 單源）；Smith 多次拒絕 goth 標籤（維基引 2004、2006 年訪談）；貝斯線主導、鍵盤自 Seventeen Seconds 起入樂、Smith 與 Gallup 先寫鼓與貝斯（維基）；Smith 1982–84 兼任 Siouxsie and the Banshees 吉他手（維基）；維基列出受影響者含 Slowdive、Ride、My Bloody Valentine、Interpol、Deftones 等；Rock Hall 影響者名單含 Nine Inch Nails、Oasis、Cranberries、Phoebe Bridgers。葛萊美一條：維基載明最佳另類音樂專輯（《Songs of a Lost World》）與最佳另類音樂演出（〈Alone〉），Britannica 只說 2026 年首度贏得葛萊美，具體類別單源。",
+    "pubIssues": []
+  },
+  {
+    "key": "chicago",
+    "name": "Chicago",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1967 年在伊利諾州芝加哥成軍，最初的七位成員是 Terry Kath、Peter Cetera、Robert Lamm、Walter Parazaider、Danny Seraphine、James Pankow 與 Lee Loughnane。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+            "from": "new"
+          },
+          {
+            "f": "團名最初叫 Chicago Transit Authority，後來縮短成城市名 Chicago。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "在六〇年代晚期的搖滾樂團裡，Chicago 以編制內固定有銅管樂手而與眾不同；他們自稱是「帶銅管的搖滾樂團」（rock and roll band with horns）。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+            "from": "new"
+          },
+          {
+            "f": "早期偏爵士搖滾，七〇年代起在 Cetera、Lamm、Pankow 與製作經理 James Guercio 的帶領下往流行方向走，到八〇年代末成為成人抒情取向的樂團。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "唱片銷量超過 1 億張，是美國史上最受歡迎的錄音藝人之一。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+            "from": "new"
+          },
+          {
+            "f": "2016 年原始陣容入選搖滾名人堂，由 Matchbox Twenty 的 Rob Thomas 頒獎。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.rockhall.com/inductees/chicago",
+            "from": "new"
+          },
+          {
+            "f": "2025 年首張專輯《Chicago Transit Authority》入選美國國會圖書館國家錄音登記簿。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+            "from": "new"
+          },
+          {
+            "f": "一共有 20 首 Billboard Hot 100 前十名單曲。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.rockhall.com/inductees/chicago",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1978 年吉他手兼主唱 Terry Kath 過世，樂團因此一度走下坡。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+            "from": "new"
+          },
+          {
+            "f": "2016 年入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+            "src2": "https://www.rockhall.com/inductees/chicago",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1967 年在芝加哥成軍。",
+        "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+        "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+        "from": "new"
+      },
+      {
+        "f": "2016 年原始陣容入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+        "src2": "https://www.rockhall.com/inductees/chicago",
+        "from": "new"
+      },
+      {
+        "f": "2025 年首張專輯入選國家錄音登記簿。",
+        "src": "https://en.wikipedia.org/wiki/Chicago_(band)",
+        "src2": "https://www.britannica.com/topic/Chicago-American-rock-group",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "searches": 5,
+    "status": "full",
+    "failedFetches": 2,
+    "notes": "事實庫 research 為空，三格從零查；卡池 9 張（1969–1991）皆為本團（美國銅管搖滾樂團 Chicago，非城市），無同名混卡。5 次請求：英文維基 Chicago (band)、Rock Hall、維基 Chicago X、WebSearch（找到 Britannica 正確網址）、Britannica。失敗未計：Britannica 兩個猜錯的網址（404）。標 src2 者為第二來源。單源、未收進 facts：維基首段「1971 年是第一個連續一週賣光 Carnegie Hall 的搖滾樂團」（首位類宣稱，僅維基）；維基「以醒目 logo 與羅馬數字編號專輯名開創搖滾行銷」；Billboard 2015 年榜單 Billboard 200 成績第 9 名；2014 年首張專輯入葛萊美名人堂、2020 年葛萊美終身成就獎、2017 年 Cetera／Lamm／Pankow 入詞曲作者名人堂（維基）；「僅次於 Beach Boys 的最成功美國樂團」（維基）；Jimi Hendrix 誇銅管與 Kath 的傳聞（Parazaider 轉述，維基）；1969 年 Woodstock 檔期被 Bill Graham 換到 Fillmore West（Cetera 轉述，維基）；Pankow 以「主唱聲部般的旋律」寫銅管編曲（維基引 Daily Press）；Cetera 1985 年離團（維基單源；上線簡介亦寫他在《Chicago 17》後離團）；Rock Hall 稱在五個年代都有上榜單曲、22 首成人抒情榜前十。Rock Hall 與維基都寫 20 首 Top 10。上線簡介核對：Chicago X 上線簡介寫〈If You Leave Me Now〉拿下最佳流行團體演唱與最佳人聲伴奏編曲兩座葛萊美，維基 Chicago X 條目顯示後者頒給編曲人 James William Guercio 與 Jimmie Haskell、團體本身「僅此一座」葛萊美，另 Best Album Package 頒給封面設計 John Berg；上線簡介句子以單曲計，不算錯，但讀者可能誤會樂團拿兩座，列入 pubIssues 供店主參考。",
+    "pubIssues": [
+      {
+        "album": "Chicago X",
+        "claim": "〈If You Leave Me Now〉拿下最佳流行團體演唱與最佳人聲伴奏編曲兩座葛萊美；並奪下葛萊美最佳專輯包裝獎",
+        "problem": "輕微：兩項葛萊美皆成立，但最佳人聲伴奏編曲（Best Arrangement Accompanying Vocalists）頒給編曲人 James William Guercio 與 Jimmie Haskell，最佳專輯包裝頒給美術總監 John Berg；樂團本身只有最佳流行團體演唱一座，維基 Chicago 條目稱其為「唯一的葛萊美」。若改成「單曲拿下兩座」並註明編曲與包裝的得主，較不易誤讀。",
+        "src": "https://en.wikipedia.org/wiki/Chicago_X"
+      }
+    ]
+  },
+  {
+    "key": "goblin",
+    "name": "Goblin",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "前身是七〇年代初以 Oliver 為名錄 demo 的義大利前衛搖滾樂手：鍵盤 Claudio Simonetti、吉他 Massimo Morante、貝斯 Fabio Pignatelli 與鼓手 Walter Martino。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://www.factmag.com/2013/10/30/a-beginners-guide-to-italian-horror-trailblazers-goblin/",
+            "from": "new"
+          },
+          {
+            "f": "Oliver 赴倫敦闖蕩未果，返回義大利後與專做配樂發行的 Cinevox 簽約，被廠牌改名 Cherry Five，出了一張同名前衛搖滾專輯。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://www.factmag.com/2013/10/30/a-beginners-guide-to-italian-horror-trailblazers-goblin/",
+            "from": "new"
+          },
+          {
+            "f": "導演 Dario Argento 不滿作曲家 Giorgio Gaslini 為《Profondo Rosso》走的爵士方向，改找 Cherry Five 重寫配樂，樂團因此改名 Goblin。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://www.factmag.com/2013/10/30/a-beginners-guide-to-italian-horror-trailblazers-goblin/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的配樂帶陰森不祥的色調，以詭異的風琴、鐘鳴般的吉他與打擊樂為骨架，底子是義大利前衛搖滾。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://www.factmag.com/2013/10/30/a-beginners-guide-to-italian-horror-trailblazers-goblin/",
+            "from": "new"
+          },
+          {
+            "f": "在電影之外，他們也錄前衛搖滾專輯，1976 年的《Roller》是純器樂的前衛搖滾專輯。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://www.factmag.com/2013/10/30/a-beginners-guide-to-italian-horror-trailblazers-goblin/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "與導演 Dario Argento 長期合作，最知名的是 1975 年《Profondo Rosso》與 1977 年《Suspiria》的配樂。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://progressiverockcentral.com/2022/10/09/progrock-artist-profiles-goblin/",
+            "from": "new"
+          },
+          {
+            "f": "被視為義大利恐怖片音樂的代表團體，影響了後來許多作曲家與藝人，範圍涵蓋金屬、電子與實驗音樂。",
+            "src": "https://www.factmag.com/2013/10/30/a-beginners-guide-to-italian-horror-trailblazers-goblin/",
+            "src2": "https://www.vice.com/en/article/simonetti-interview-demons-life-after-goblin/",
+            "from": "new"
+          },
+          {
+            "f": "瑞典前衛金屬團 Opeth 在 2014 年的《Pale Communion》收錄器樂曲〈Goblin〉，向這個義大利樂團致敬。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://www.metal-archives.com/reviews/Opeth/Pale_Communion/450212/",
+            "from": "new"
+          },
+          {
+            "f": "創團吉他手 Massimo Morante 於 2022 年 6 月過世。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://progressiverockcentral.com/2022/10/09/progrock-artist-profiles-goblin/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1975 年為《Profondo Rosso》配樂，樂團改用 Goblin 之名。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://www.factmag.com/2013/10/30/a-beginners-guide-to-italian-horror-trailblazers-goblin/",
+            "from": "new"
+          },
+          {
+            "f": "1977 年為《Suspiria》配樂。",
+            "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+            "src2": "https://progressiverockcentral.com/2022/10/09/progrock-artist-profiles-goblin/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1975 年為 Argento 的《Profondo Rosso》配樂，改名 Goblin。",
+        "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+        "src2": "https://www.factmag.com/2013/10/30/a-beginners-guide-to-italian-horror-trailblazers-goblin/",
+        "from": "new"
+      },
+      {
+        "f": "1977 年《Suspiria》配樂。",
+        "src": "https://en.wikipedia.org/wiki/Goblin_(band)",
+        "src2": "https://progressiverockcentral.com/2022/10/09/progrock-artist-profiles-goblin/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "《Profondo Rosso》配樂銷量：維基寫超過 100 萬張、義大利榜 52 週且單曲與 LP 雙冠；Simonetti 在 Vice 訪談自稱賣了 400 萬張；兩源不一致，facts 不寫銷量數字。",
+      "Argento 找上樂團的經過：維基與 Fact 寫 Gaslini 的爵士方向不合，Vice 訪談 Simonetti 說法是 Argento 要搖滾聲音、製作人推薦此團；facts 只採維基與 Fact 一致的版本。"
+    ],
+    "searches": 6,
+    "status": "full",
+    "failedFetches": 3,
+    "notes": "事實庫 research 為空，三格從零查；卡池 9 張（1975–2018）皆為義大利前衛搖滾樂團 Goblin（Dario Argento 配樂，含 Profondo rosso、Suspiria、Zombi），無同名混卡。6 次請求：英文維基 Goblin (band)、WebSearch（樂團歷史，回覆含一次後續搜尋）、Fact Magazine（curl 讀全文）、Progressive Rock Central、WebSearch（Opeth 致敬）、Vice／Noisey Simonetti 專訪（curl 讀全文）。失敗未計：progarchives（403）、Variety（307 導向 tollbit）、italianprog.com（連線重置）。標 src2 者為第二來源；Opeth 第二源 Metal Archives 只見搜尋摘要（評論者稱〈Goblin〉是向同名義大利前衛搖滾樂團的致敬）。單源、未收進 facts：《Profondo Rosso》一夜寫成、一天錄完（Argento 給的時限，維基）；成員 Walter Martino 的替代 Agostino Marangolo（維基）；AllMusic 評《Deep Red》「融合爵士、前衛搖滾與重金屬」及維基「Italian prog-to-disco giallo soundtrack kings」；受 Yes、Genesis、King Crimson、Gentle Giant、ELP 影響（維基）；Zombi 樂團受 Goblin 影響（維基）；CD 再版在德國與日本表現好（維基）；1978 年拍完《Zombi》後解散、2000 年為《Non ho sonno》重組、2001 年最後合作（維基）；Fact 稱 2013 年 Goblin 比以往更具影響力；Vice 稱 Simonetti 生於巴西、1964 年隨家人移居義大利、父親是知名作曲家兼藝人、受古典訓練（單源）；Vice 稱 Argento 想要 Deep Purple、Pink Floyd 或 ELP 那樣的搖滾聲音（單源）；2017 年《Suspiria》40 週年盒裝（Progressive Rock Central 單源）；「第一個為驚悚／恐怖片配樂的搖滾團」之說出自搜尋摘要且屬「第一位」類宣稱，不收。Goblin 名下有多個分支團（Claudio Simonetti's Goblin、Goblin Rebirth 等），facts 寫的是原團。",
+    "pubIssues": []
+  },
+  {
+    "key": "iron maiden",
+    "name": "Iron Maiden",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1975 年由貝斯手 Steve Harris 成軍，早期陣容更動頻繁，1980 年才發行首張同名專輯。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.rockhall.com/inductees/iron-maiden",
+            "from": "new"
+          },
+          {
+            "f": "Harris 的養成從 Beatles、Who 一路聽到 Wishbone Ash，再進入前衛搖滾；他點名的影響包括 Black Sabbath、Genesis、Yes 與 Jethro Tull。",
+            "src": "https://www.loudersound.com/features/steve-harris-genesis",
+            "src2": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "from": "new"
+          },
+          {
+            "f": "1982 年鼓手 Nicko McBrain 加入，Harris、Dave Murray、Adrian Smith、Bruce Dickinson 與他組成的陣容成為經典編制。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.rockhall.com/inductees/iron-maiden",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "聲音以雙吉他、推進感強的節奏組與高亢的人聲為招牌。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.rockhall.com/inductees/iron-maiden",
+            "from": "new"
+          },
+          {
+            "f": "作品常有長篇史詩與多段情緒、速度轉換，帶著前衛搖滾的色彩。",
+            "src": "https://www.loudersound.com/features/steve-harris-genesis",
+            "src2": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "from": "new"
+          },
+          {
+            "f": "殭屍吉祥物 Eddie 自 1980 年首張專輯起出現在封面，成為樂團形象的核心。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.rockhall.com/inductees/iron-maiden",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2026 年入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.rockhall.com/inductees/iron-maiden",
+            "from": "new"
+          },
+          {
+            "f": "被視為新浪潮英國重金屬（NWOBHM）的領軍樂團之一。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.britannica.com/topic/Iron-Maiden-band",
+            "from": "new"
+          },
+          {
+            "f": "唱片銷量超過 1.3 億張。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.rockhall.com/inductees/iron-maiden",
+            "from": "new"
+          },
+          {
+            "f": "Metallica 與 Dream Theater 等後輩樂團點名受其影響。",
+            "src": "https://www.rockhall.com/inductees/iron-maiden",
+            "src2": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1982 年《The Number of the Beast》是 Bruce Dickinson 加入後的第一張專輯，他的加入被視為樂團的轉折點。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.rockhall.com/inductees/iron-maiden",
+            "from": "new"
+          },
+          {
+            "f": "2026 年入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+            "src2": "https://www.rockhall.com/inductees/iron-maiden",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1975 年由 Steve Harris 成軍。",
+        "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+        "src2": "https://www.rockhall.com/inductees/iron-maiden",
+        "from": "new"
+      },
+      {
+        "f": "1982 年 Bruce Dickinson 主唱的《The Number of the Beast》發行。",
+        "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+        "src2": "https://www.rockhall.com/inductees/iron-maiden",
+        "from": "new"
+      },
+      {
+        "f": "2026 年入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Iron_Maiden",
+        "src2": "https://www.rockhall.com/inductees/iron-maiden",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Eddie 是否出現在「每一張」專輯封面：Rock Hall 寫 every album cover，維基寫 almost all；facts 只寫「自首張起出現在封面」。"
+    ],
+    "searches": 6,
+    "status": "full",
+    "failedFetches": 2,
+    "notes": "事實庫 research 為空，三格從零查；卡池 9 張（1980–1992）皆為本團，無混卡。6 次請求：英文維基 Iron Maiden、Rock Hall（2026 年入選）、WebSearch（Harris 與團名）、Louder 的 Steve Harris 專訪（curl 讀全文）、WebSearch（限 britannica.com，取得 Britannica 條目網址）、Britannica 條目（實取內容極少，僅有頁面導覽，只能確認「British rock band」與名人堂條目；NWOBHM 領軍一句的 Britannica 支持只來自搜尋摘要）。失敗未計：Britannica 兩個猜錯的網址（404）。標 src2 者為第二來源。Harris 混合重 riff、速度與前衛成分的講法為維基 2010 年引語單源，未收；1982 年專輯被 Rock Hall 評為 widely considered one of the best metal albums of all time、維基稱銷量近 2000 萬張，兩者各為單源，未收；成軍時另有「主要詞曲作者」一說（維基單源）。單源、未收進 facts：團名取自 Man in the Iron Mask 電影改編、讓 Harris 聯想到鐵處女刑具（維基；搜尋摘要同一說法）；成軍於倫敦東區 Leyton（維基；搜尋摘要只複述維基）；1976 年 5 月 1 日 St. Nicks Hall 首演（維基）；Rock Hall 名人堂簡介「created the blueprint for how heavy metal bands should look, sound, and tour」（維基亦引該句，非獨立來源）；Rock Hall「1981 年是第一個在 MTV 播出的金屬樂團」（首位類宣稱，單源）；2012 年《The Number of the Beast》獲英國民眾票選為女王登基鑽禧紀念的「史上最佳英國專輯」（維基）；Paul Stanley「helped spawn an entire genre」、Metal Hammer 稱影響力僅次於 Black Sabbath（維基）；Pollstar 2025 年演唱會營收逾 10 億美元（維基）；2016 年薩爾瓦多、2019 年阿根廷國會的榮譽（維基）；2023 年 Royal Mail 郵票、2025 年 Royal Mint 紀念幣（維基）；歌詞題材涵蓋歷史、文學、戰爭、神話（維基首段）；Dickinson 歌劇式唱腔、Wishbone Ash《Argus》為雙吉他和聲源頭的 Harris 引語（維基）。Rock Hall 名人堂日期：維基載明 2026 年 4 月 13 日。上線簡介核對：三篇（首作、Killers、Somewhere in Time）與本次讀到的維基／Rock Hall 內容無衝突，未逐句查證。",
+    "pubIssues": []
   }
 ]
