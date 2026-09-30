@@ -244,3 +244,6 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 補洞第 2 組：Alan Stivell「第一位以布列塔尼語演唱的職業歌手」有反例（Glenmor 1959 年起登台）→ 移出 facts；《Renaissance de la harpe celtique》上線簡介「Bruce Elder」應為 Bruce Eder → pubIssues。
 - 補洞第 4 組：Kacey Musgraves 失敗請求 5 次，照實記，放行。
 - 寫作第 1 組（20 位）審畢，0 處。
+- 補洞第 3 組：**Dolly Parton 2026-08-25 過世**（主線親驗：NPR、CNN），寫作層用過去式。**Areski Belkacem 2026 年 6 月初過世**（補洞層只見維基；主線以 RTS、Jazz Radio 查實後補進 era）。
+  pubIssues 4 條（Emmylou Harris 2、Gillian Welch 1、John Martyn 1）。De André 卡池有《Sogno nº 1》（2011，身後管弦重編版），屬他名下無誤。
+  Dolly Parton 卡池上線專輯簡介若有現在式描述她在世，交本機一併檢查。
