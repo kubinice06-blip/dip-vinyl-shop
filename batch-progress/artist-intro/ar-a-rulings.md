@@ -243,3 +243,4 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - ar-a-012 上架：40 位（搖滾、台灣樂團、竇唯），審稿修 3 處。
 - 補洞第 2 組：Alan Stivell「第一位以布列塔尼語演唱的職業歌手」有反例（Glenmor 1959 年起登台）→ 移出 facts；《Renaissance de la harpe celtique》上線簡介「Bruce Elder」應為 Bruce Eder → pubIssues。
 - 補洞第 4 組：Kacey Musgraves 失敗請求 5 次，照實記，放行。
+- 寫作第 1 組（20 位）審畢，0 處。
