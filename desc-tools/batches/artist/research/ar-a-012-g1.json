@@ -89,5 +89,95 @@
   "pubIssues": [],
   "status": "thin",
   "notes": "事實庫為空（卡池 5 張、上線簡介 0 篇），三格全靠補查。本位共 8 次（WebFetch 維基 Porcupine Tree、WebSearch 起源、WebFetch stevenwilsonhq 簡介、WebFetch 維基 Steven Wilson、WebSearch『most important band』、WebFetch rock-atlas、WebFetch Louder 專輯排名、WebFetch 維基 Fear of a Blank Planet）；失敗 3 次（Louder Deadwing 訪談只回傳導覽列、Goldmine 403、AllMusic 403）。非獨立：Porcupine Tree 與 Steven Wilson 維基是同站不同條目；legacy 那條的 src2 rock-atlas 是資料／粉絲站、疑轉引維基（未見獨立原文），屬弱二源，寫作層若用請寫成『被稱為』並保守。未收單源：維基寫 Wilson 後來接觸 Gojira、Meshuggah 等極端金屬『restored his faith in metal』；Metal Hammer 稱他們『among the greatest progressive metal acts of all time』；Neil Peart、Adrian Belew、Mike Portnoy 等人的推崇；《The Incident》2009 UK 第 23 名、US 前 25（維基單源）；《Fear of a Blank Planet》UK 第 31、US 第 59（維基單源）；Steven Wilson 生於 Kingston upon Thames、6 歲起在 Hemel Hempstead 長大、父母送 Dark Side of the Moon（維基單源，且屬 Wilson 個人）；重組後為 Wilson、Richard Barbieri、Gavin Harrison 三人（維基單源）；Steven Wilson 維基引 Daily Telegraph 2017『most successful British artist you've never heard of』（指 Wilson 個人、單源）。legacy 格只有一條弱二源，判 thin。卡池 5 張皆屬同一支英國樂團，未見同名混卡。"
+ },
+ {
+  "key": "randy newman",
+  "name": "Randy Newman",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Randy Newman 1943 年 11 月 28 日生於洛杉磯，叔伯 Alfred、Lionel、Emil Newman 都是好萊塢電影配樂作曲家，他出身音樂世家。",
+      "src": "https://en.wikipedia.org/wiki/Randy_Newman",
+      "src2": "https://www.britannica.com/biography/Randy-Newman",
+      "from": "new"
+     },
+     {
+      "f": "他雖生在洛杉磯，嬰兒時期就被帶到紐奧良，童年與這座城市關係很深，之後才回到洛杉磯定居。",
+      "src": "https://en.wikipedia.org/wiki/Randy_Newman",
+      "src2": "https://www.britannica.com/biography/Randy-Newman",
+      "from": "new"
+     },
+     {
+      "f": "他年紀輕輕就成了專業詞曲作者，在音樂出版公司當駐社寫手，先替別人寫歌，才轉到自己錄音演出。",
+      "src": "https://en.wikipedia.org/wiki/Randy_Newman",
+      "src2": "https://www.britannica.com/biography/Randy-Newman",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Newman 的歌多半不寫自白，而是替虛構的角色開口：敘事者常常不可靠，歌詞帶著諷刺與尖刻。",
+      "src": "https://en.wikipedia.org/wiki/Randy_Newman",
+      "src2": "https://www.rockhall.com/inductees/randy-newman",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Newman 2002 年入選詞曲作者名人堂，2013 年以表演者類別入選搖滾名人堂。",
+      "src": "https://en.wikipedia.org/wiki/Randy_Newman",
+      "src2": "https://www.songhall.org/profiles/randy-newman",
+      "from": "new"
+     },
+     {
+      "f": "Harry Nilsson 1970 年推出整張專輯演唱 Newman 的作品，由 Newman 彈鋼琴伴奏；Three Dog Night 等人也翻唱過他的歌。",
+      "src": "https://en.wikipedia.org/wiki/Nilsson_Sings_Newman",
+      "src2": "https://www.britannica.com/biography/Randy-Newman",
+      "from": "new"
+     },
+     {
+      "f": "Newman 拿過兩座奧斯卡最佳原創歌曲獎：一座是 2002 年以〈If I Didn't Have You〉（《怪獸電力公司》），另一座是〈We Belong Together〉（《玩具總動員 3》）。",
+      "src": "https://en.wikipedia.org/wiki/Randy_Newman",
+      "src2": "https://www.britannica.com/biography/Randy-Newman",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2002 年以〈If I Didn't Have You〉拿下奧斯卡最佳原創歌曲，同年入選詞曲作者名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Randy_Newman",
+    "src2": "https://www.songhall.org/profiles/randy-newman",
+    "from": "new"
+   },
+   {
+    "f": "2013 年以表演者類別入選搖滾名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Randy_Newman",
+    "src2": "https://www.rockhall.com/inductees/randy-newman",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《玩具總動員 3》那座奧斯卡，維基寫 2011 年、Britannica 寫 2010 年（疑為影片年度與頒獎年之別）；兩源不一致，facts 不寫這座的年份。",
+   "Songwriters Hall of Fame 官網稱〈Mama Told Me Not to Come〉『in the 1990's』成為 Three Dog Night 冠軍曲，與原曲 1969 年不符，該頁此句不採。上線簡介 Little Criminals 寫他說〈Short People〉純粹是個玩笑，與維基一致。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "事實庫 research 為空、上線簡介只有 12 Songs 與 Little Criminals 兩篇（無生平事實），三格全靠補查。本位 8 次：維基 Randy Newman、Britannica、rockhall 官網、WebSearch（影響與名人堂）、songhall 官網、維基 Nilsson Sings Newman、維基 Louisiana 1927、WebSearch（Louisiana 1927 與卡翠娜）。非獨立：維基 Randy Newman 與維基 Nilsson Sings Newman 為同站不同條目；Songwriters Hall of Fame 與 Rock Hall 為名人堂官方介紹，各自獨立於維基。名人堂官方（可具名單源）：搖滾名人堂官網稱他是『teller of tales, spinner of yarns and satirist』，寫『invented characters and their hijinks』而非自傳式告白，並稱他為『one of pop music's secret hidden weapons for more than four decades』；頒獎人為 Don Henley，官網引其語『No one has written more beautifully about love and loss』（https://www.rockhall.com/inductees/randy-newman）。單源未收：17 歲成為專業詞曲作者、替 The Fleetwoods 寫歌（1962）（維基）；南方口音拖腔（維基）；Disney Legend 2007（維基）；7 座葛萊美與 22 次奧斯卡提名（維基與 Britannica 只有總數／年份列表、類別未逐項核對）；1996 年 ASCAP 首屆 Henry Mancini 終身成就獎（songhall 單源）；Nilsson 說 Newman 的歌比自己的好（Nilsson Sings Newman 維基單源）；〈Louisiana 1927〉（Good Old Boys，1974）於 2005 卡翠娜颶風後被視為一種輓歌／代表曲，Aaron Neville 與 Newman 本人都在賑災演唱會唱過，該事實維基已讀、第二源（NPR 2015 專文）只見搜尋摘要未實際開頁，且已達 8 次上限，故不收進 facts，留待有餘額時補；Newman 自述母親家族在紐奧良（NPR 訪談，只見搜尋摘要）。era 格無兩源事實，判 none。卡池 5 張皆為這位美國歌手，無同名混卡。"
  }
 ]
