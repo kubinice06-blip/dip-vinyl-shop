@@ -550,5 +550,73 @@
   "notes": "同名檢查：卡池五張（Map of the Human Soul、Swan Songs、魂: Map the Soul、99、신발장）全是韓國的 Epik High，無混卡。事實庫為空，全部新查。請求 7 次：en 維基、ko 維基、WebSearch（僅看摘要）、NBC News、WebSearch（限媒體網域，僅看摘要）、Korea Times、K-pop Herald 專訪（首次為 kpopherald.koreaherald.com 的同站轉址，改開 www.kpopherald.com 才取得）。失敗請求 3 次：HipHopDX 410、K-pop Herald 轉址、Billboard Coachella 訪談 307 轉 tollbit。⚠ 成軍年份三源不一致：en 維基 2002、ko 維基 2001、NBC 2003、Korea Times 2002，facts 不寫成軍年，只寫 2003 年首張專輯出道（en 維基、ko 維基、K-pop Herald 一致）。⚠ 『第一組登上 Coachella』被推翻（見 conflicts）；搜尋摘要與 Billboard 標題另寫『first major South Korean act』，開不了頁，不收。⚠ 這批 en 維基與 ko 維基是不同語言版本，視為部分獨立；K-pop Herald 與 Korea Herald 為同集團，未同時當兩源。『Korea Times 2014 年專訪』的摘要內容與其他來源有多處出入（把《Remapping the Human Soul》寫成 2007 年、《Shoebox》寫成 2008 年，實際應為 2008 與 2014 年，疑為抽取錯誤），整頁不採用。單源、未進 facts：(1) en 維基稱 Tablo 自 Stanford 畢業後回首爾，透過地下 hip hop 的 Movement crew 認識 Mithra Jin；ko 維基則稱三人經由製作首張專輯的 J-Win 牽線而組團，兩說不同，不收（Tablo 學歷爭議一律未收，本組沒有兩源一致的中性事實）；(2) en 維基稱他們把 R&B、soul、trot、拉丁元素帶進韓國 hip hop，並引 Tablo：『we also love melodies』『we are fans of other genres』（單源）；(3) NBC 稱他們『credited as one of the original pioneers of Korean hip-hop』並引 Tablo 說在亞洲體育場能有五萬人（單源，且人數為當事人自述）；(4) en 維基稱 2018 年離開 YG 並成立 Ours Co.，ko 維基列 Woollim 2003–2010、YG 2012–2018、Ours Co. 2019–（廠牌沿革屬履歷，不收）；(5) 搜尋摘要稱《Swan Songs》原本打算是最後一張專輯，出處為 Billboard 相關頁，未開頁，單源不收，但這是一條可補的人物故事；(6) K-pop Herald 稱 2015 年 SXSW 演出（單源）；(7) 中文書寫：Tablo、Mithra Jin、DJ Tukutz 為團員藝名，按東亞音樂人規則團員名以拉丁字母原樣書寫（三人藝名皆為拉丁字母）；韓文專輯名《신발장》等照卡池。",
   "pubIssues": [],
   "failedFetches": 3
+ },
+ {
+  "key": "epmd",
+  "name": "EPMD",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "EPMD 是長島 Brentwood 的 hip hop 二人組，成員是 Erick Sermon 與 Parrish Smith（PMD），1987 年成軍。",
+      "src": "https://en.wikipedia.org/wiki/EPMD",
+      "src2": "https://albumism.com/features/epmd-debut-album-strictly-business-album-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "團名 EPMD 是「Erick and Parrish Making Dollars」的縮寫。",
+      "src": "https://en.wikipedia.org/wiki/EPMD",
+      "src2": "https://albumism.com/features/epmd-debut-album-strictly-business-album-anniversary",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們在那個大家普遍採樣 disco 的年代，改採 funk 與搖滾的唱片做 beat，是最早一批這樣做的 hip hop 團體之一。",
+      "src": "https://en.wikipedia.org/wiki/EPMD",
+      "src2": "https://xxlmag.com/news/2018/06/today-in-hip-hop-epmd-strictly-business-album",
+      "from": "new"
+     },
+     {
+      "f": "他們成名曲〈You Gots to Chill〉以 Zapp 的〈More Bounce to the Ounce〉為骨幹，Albumism 說這首歌比任何一首都更決定了團的音樂走向。",
+      "src": "https://albumism.com/features/epmd-debut-album-strictly-business-album-anniversary",
+      "src2": "https://daily.bandcamp.com/lists/erick-sermon-def-squad-epmd-feature",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《Strictly Business》1988 年 6 月 7 日由 Fresh/Sleeping Bag 發行，四個月內拿下 RIAA 金唱片，後來被普遍視為經典。",
+      "src": "https://xxlmag.com/news/2018/06/today-in-hip-hop-epmd-strictly-business-album",
+      "src2": "https://en.wikipedia.org/wiki/Strictly_Business_(EPMD_album)",
+      "from": "new"
+     },
+     {
+      "f": "EPMD 周邊的 Hit Squad／Def Squad 圈子後來帶出 Redman 與 Keith Murray 等人；Bandcamp Daily 稱 Def Squad 是九〇年代 hip hop 最受推崇的人才庫之一。",
+      "src": "https://en.wikipedia.org/wiki/EPMD",
+      "src2": "https://daily.bandcamp.com/lists/erick-sermon-def-squad-epmd-feature",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 8,
+  "status": "full",
+  "notes": "同名檢查：卡池五張（Strictly Business、Unfinished Business、Business As Usual、Business Never Personal、Back in Business）全是長島的 EPMD，無混卡。事實庫為空，全部新查。請求 8 次：en 維基 EPMD、WebSearch（僅看摘要）、Bandcamp Daily、WebSearch（限媒體網域，僅看摘要）、Albumism《Strictly Business》、XXL、Rolling Stone Australia《Strictly Business》、en 維基《Strictly Business》；失敗請求 1 次（Vibe 307 轉 tollbit）。⚠ 兩源非獨立：legacy 第 1 條的第二源為 en 維基專輯頁，第一源 XXL 獨立；legacy 第 2 條第一源為 en 維基（EPMD 條目，寫 Hit Squad 帶出 Redman、Das EFX、Keith Murray、Hurricane G）、第二源 Bandcamp Daily（寫 Sermon 在 1993 年 EPMD 解散後把往來的 Redman、Keith Murray 等人組成 Def Squad），兩邊寫的集團名（Hit Squad、Def Squad）不同，f 欄以『Hit Squad／Def Squad 圈子』並列，寫作層須只寫兩源都支持的『Redman 與 Keith Murray』。拼名：en 維基專輯頁與 XXL 拼 Parish Smith，其餘來源拼 Parrish Smith，採 Parrish。『最早一批用 funk／搖滾採樣』的『第一』類：維基寫『pioneered』、XXL 寫『one of the first』，f 欄採『最早一批之一』的保守寫法，未做全面反例檢查（Marley Marl 等也在同時期採 funk 取樣，維基自己也這麼寫）。單源、未進 facts：(1) 組成時 Erick 在念高中、Parrish 是大學四分衛人選（Albumism 單源）；(2) 團名原為 EEPMD，因 Eazy-E 已被 N.W.A 用而縮短（維基單源）；(3) 〈You Gots to Chill〉的靈感來自 Parrish 父親播放的 Zapp 卡帶（搜尋摘要，出處為 Bandcamp 的另一頁，未開頁）；(4) Redman 在《Strictly Business》首度亮相（搜尋摘要，Albumism 與 XXL 頁都未提，未查證）；(5) Rolling Stone 2012 年 500 大專輯第 453 名（en 維基專輯頁單源）、Rolling Stone Australia 200 大 hip hop 專輯第 50 名並稱其為 G-funk 式 laid-back 卻帶威脅聲音的先驅（RS AU 單源，且『G-funk 先驅』為單一樂評的說法）；(6) 團史：1993 年首度解散、1997 年重組、1999 至 2005 年再度解散、2006 年起重組（維基單源）；(7) 首張專輯登上 Top R&B/Hip-Hop Albums 榜首、Billboard 200 最高第 80 名（維基專輯頁單源，XXL 只寫第 80 名）；(8)『You're a Customer』鼓點被 Mario Winans 與 Metro Boomin 取樣（維基單源）；(9) Albumism 稱 EPMD 是『史上最佳 hip hop 二人組』（單一撰稿人形容，不收）。",
+  "pubIssues": [],
+  "failedFetches": 1
  }
 ]
