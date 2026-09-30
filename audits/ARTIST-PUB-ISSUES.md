@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 24 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 28 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -28,3 +28,7 @@
 | ar-a-003 | 日野皓正 | Feelin' Good | 1964 年他加入白木秀雄的五重奏 | 日文維基作 1964，英文維基作 1965 加入、1969 離團；兩源不一致，建議刪去年份或再查一手來源。 | https://en.wikipedia.org/wiki/Terumasa_Hino |
 | ar-a-003 | 秋吉敏子 | Her Trio Her Quartet | 三重奏那五軌（Pettiford 與 Haynes），另外三軌加 Mussulli 成四重奏 | 英文維基的分配相反：四重奏是五軌（1、2、4、5、7）、三重奏是三軌（3、6、8）；MusicBrainz 與維基不一致，需要盤背或 Storyville 一手來源確認後再改簡介。 | https://en.wikipedia.org/wiki/Toshiko_%E2%80%93_Her_Trio,_Her_Quartet |
 | ar-a-003 | 高橋達也と東京ユニオン | Black Pearl | 1980 年樂團赴加州演出，……同年也第二次登上 Montreux Jazz Festival | 日文維基寫 1978、1980 兩度出演 Montreux；英文維基寫 1980 是赴加州並登上 Monterey（蒙特雷）爵士節，未提 1980 蒙特勒。兩源不一致，簡介『第二次 Montreux』需以一手來源確認。 | https://en.wikipedia.org/wiki/Tokyo_Union |
+| ar-a-004 | Harold Land | Harold in the Land of Jazz | 西岸次中音手 Harold Land 的首張領銜專輯，1958 年錄音、Contemporary 發行 | African American Registry 與英文維基都記他 1949 年已為 Savoy 錄下領銜的 Harold Land All-Stars；『首張領銜專輯』若指首張 LP 專輯可成立，但沒有限定容易被讀成他首次領銜，建議改為『首張以個人名義發行的 LP』或拿掉『首張』。 | https://aaregistry.org/story/harold-land-born/ |
+| ar-a-004 | Michel Legrand | Legrand Jazz | 二十四歲的巴黎編曲家開了張名單 | Legrand 1932 年 2 月 24 日生，1958 年 6 月錄音時已 26 歲，不是 24 歲（事實庫研究稿 c50a-a 也沿用 24 歲）；維基記他 1954 年《I Love Paris》走紅時為 22 歲，與 1932 年出生一致。 | https://en.wikipedia.org/wiki/Michel_Legrand |
+| ar-a-004 | Milt Jackson | Milt Jackson With John Lewis, Percy Heath, Kenny Clarke, Lou Donaldson and the Thelonious Monk Quintet | 〈Evidence〉錄於 1948 年 7 月的 Monk 場次，24 歲的 Jackson 是側手 | Jackson 生於 1923 年 1 月 1 日，1948 年 7 月已 25 歲，不是 24 歲。 | https://en.wikipedia.org/wiki/Milt_Jackson |
+| ar-a-004 | The Modern Jazz Quartet | Music from Odds Against Tomorrow | 「Lewis 說這是他第一次順著劇情線寫音樂，而不是交出一組互不相干的曲子」 | 維基 John Lewis 條目列他 1957 年已為《Sait-On Jamais》（Roger Vadim 電影）配樂，1959 年才是 Odds Against Tomorrow；『第一次』若非 Lewis 原話有出處，容易被推翻，建議改成不帶序數的寫法或補出處 | https://en.wikipedia.org/wiki/John_Lewis_(pianist) |

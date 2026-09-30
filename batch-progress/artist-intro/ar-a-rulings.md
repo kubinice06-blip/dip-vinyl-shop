@@ -71,3 +71,9 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 主線親驗：Sade 名列搖滾名人堂 2026 年入選名單（NPR、rockhall.com），典禮 11 月 14 日；寫作層只能寫「入選」。
 - **管線漏洞修補**：上一筆提交重建分片時，把審稿中的 ar-a-003（含還在寫的 -out-2）一起建進 `data/artist-intros/`（144 位）。
   `build-artist-intros.mjs` 與 `artist-alias.mjs` 改為量產批只收 progress.json 標 `published` 的，重建回 114 位。未審稿的內容只在 1 筆提交裡短暫存在，未合併、未上線。
+- 寫作第 2 組（20 位）審畢，修 2 處：
+  5. Etta James「被稱為『藍調的女族長』」：補洞稿沒有這個稱號 → 改成 facts 有的「先後入選搖滾名人堂與藍調名人堂，並獲葛萊美終身成就獎」。
+  6. Art Ensemble of Chicago「1969 年Lester」缺半形空格 → 補。
+- 高橋達也と東京ユニオン（thin）照寫作層判斷具名 Swing Journal 爵士唱片大獎：sound 格 none、這個獎就是全篇份量，依 writer-base「例外二」。
+- 秋吉敏子「Berklee 第一位日本學生」保留：NEA 單源，但寫作層反查無反例、屬廣為人知的經歷。
+- 上架：40 位，審稿共修 6 處（含回修 ar-a-002 一篇）。
