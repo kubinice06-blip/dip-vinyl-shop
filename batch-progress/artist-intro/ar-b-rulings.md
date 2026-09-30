@@ -29,3 +29,7 @@
 - 補洞第 2 組：Jimmy Giuffre 失敗請求 9 次、Kamasi Washington 5 次，超限後未收新事實，照實記，放行。Jim Hall「第一位獲 NEA 的現代爵士吉他手」未查反例，不寫序數。
 - 寫作第 1 組（20 位）審畢，修 2 處：Gilberto Gil 在世，刪「拿過兩座葛萊美」（會長大的累計數）；Burton & Corea 雙人專輯得葛萊美不只兩張，「兩張」→「多張」。交本機待核：Hamiet Bluiett 上線簡介「生於 Brooklyn」（伊利諾州 Brooklyn 與聖路易兩說）；James Moody《Modernists》簡介「1948 年生涯第一次錄音」（1946 年起已在 Gillespie 樂團錄音）。
 - 補洞第 4 組交件，補洞交齊（40 位）。卡片拆分交本機：Mother Earth《Living with the Animals》（1968）是舊金山 Tracy Nelson 的藍調搖滾團，非倫敦 acid jazz 同名團；簡介只寫倫敦團。Moacir Santos《Maestro》錄音室與年份三源不一，交本機核。
+
+### ar-b-004
+
+- 補洞第 2 組：pubIssue 1 條（Tal Farlow「二十二歲才開始學吉他」三源不一，建議「二十出頭」）。Sun Ra Arkestra 卡池三張皆 Sun Ra 領導時期，以 Sun Ra 生平為主。Sharrock、Rypdal 後輩點名單源，不寫「眾多後輩公認」。
