@@ -94,3 +94,5 @@
 - ar-b-009 補洞第 3 組：Kasabian 失敗請求 5 次，照實記，放行。Joy Division（與 New Order）2026 年搖滾名人堂典禮 11 月未舉行 → 照 ar-a-018 Wu-Tang 先例寫「獲選」。INXS 成軍地與銷量兩說不寫。
 - ar-b-009 寫作第 1 組（20 位）審畢，0 處。Elvis Presley 269 照准。CSN「三人也各以原樂團成員身分入選」核對：Crosby（The Byrds 1991）、Stills（Buffalo Springfield 1997）、Nash（The Hollies 2010）皆屬實。Descendents 不寫 Aukerman 博士校名（補洞稿 UCSD 疑誤）。
 - ar-b-009 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 2 條（Love《Love》「Elektra 第一張搖滾唱片」說法脆弱；發行月份 3 月／4 月不一）。Koes Plus 的 Rolling Stone Indonesia 名次屬媒體榜單，不寫。
+- ar-b-009 寫作第 2 組（20 位）審畢，修 1 處：Jason Isbell 在世且 2024 年又同屆包辦兩獎，「兩度」→「曾多次」。Guns N' Roses 補洞 thin、寫作層依名人堂官方語寫成 full，照准。
+- ar-b-009 上架：40 位（搖滾），審稿修 1 處。

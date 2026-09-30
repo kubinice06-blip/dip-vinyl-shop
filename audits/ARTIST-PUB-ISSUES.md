@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 127 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 130 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -131,3 +131,6 @@
 | ar-b-008 | Robert Johnson | The Complete Recordings | 四十一軌裡有十三個是同一首歌的另一次 take | MusicBrainz 記 41 軌，維基（與傳記）記全部只有 29 首曲子；41 減 29 為 12 個另一次 take，不是 13。建議店主核對 13 的算法（另：維基稱該套件收 59 個 take 中 17 個已失傳，與 41 軌的算法是否一致未查） | https://en.wikipedia.org/wiki/Robert_Johnson:_The_Complete_Recordings |
 | ar-b-008 | Songhoy Blues | Résistance | 廷巴克圖出身的三人在 2012 年北馬利衝突與音樂禁令下南遷巴馬科組團 | 維基與 OkayAfrica 都說 Garba Touré 來自 Diré（廷巴克圖地區的城鎮，非廷巴克圖市）；搜尋摘要（帝國戰爭博物館頁，未開）稱成員家鄉為 Gao 與 Timbuktu；三位 Touré 之外另有鼓手 Nathanaël Dembélé。『廷巴克圖出身的三人』過於肯定，建議改為『來自北馬利』 | https://en.wikipedia.org/wiki/Songhoy_Blues |
 | ar-b-008 | Blind Guardian | Imaginations from the Other Side | 他對節奏吉他與人聲的要求遠高於前兩張的 Kalle Trapp | 待核（非確定錯誤）：維基《Somewhere Far Beyond》頁寫該專輯（1992）由 Kalle Trapp 製作，Trapp 是《Imaginations》之前至少一張的製作人；『前兩張』是指哪兩張，本層沒有在維基頁查到 Trapp 製作範圍（只確認 1992 年一張），店主在本機對照《Imaginations》維基頁製作段落後再決定是否改寫。其餘（1994 年 8 月至 1995 年 3 月 Sweet Silence、Rasmussen、Kürsch 最後一張兼貝斯、〈A Past and Future Secret〉為第一支單曲）與維基 Imaginations 頁一致。 | https://en.wikipedia.org/wiki/Somewhere_Far_Beyond |
+| ar-b-009 | Love | Love | 3 月由 Elektra 發行——這家民謠大廠的第一張搖滾唱片 | 『第一張搖滾唱片』說法脆弱：英文維基專輯條目確實寫 first rock album issued on Elektra，但 Library of Congress 專文只說 Love 是『第一個簽給 Elektra 的搖滾團體』（簽約，非發行）；搜尋摘要（維基專輯條目）另指 Elektra 已先簽下 Butterfield Blues Band 作為第一個『rock』藝人，該團 1965 年已在 Elektra 出片。建議改成『Elektra 簽下的第一個搖滾團體』，或刪去序位宣稱。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Love-Forever-Changes.pdf |
+| ar-b-009 | Love | Love | 3 月由 Elektra 發行 | 發行月份兩源不一致：英文維基專輯條目寫 1966 年 3 月，LOC 專文寫 1966 年 4 月；主線可另查 Discogs 或 Elektra 目錄。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Love-Forever-Changes.pdf |
+| ar-b-010 | SBB | Pamięć | 那段伴奏生涯到 1973 年底結束 | 搜尋摘要（轉述維基 Grupa Niemen 段）寫合作期間是 1971 年 12 月到 1973 年 8 月；波蘭部落格只寫到 1973 年。兩者與『1973 年底』不一致，但摘要未開頁核實，屬低信心提示，建議店主本機查 Grupa Niemen 條目再定。 | https://en.wikipedia.org/wiki/SBB_(band) |
