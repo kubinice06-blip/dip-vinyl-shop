@@ -229,3 +229,5 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 
 - 補洞第 2 組：Allman Brothers《Brothers and Sisters》上線簡介「Duane 走後不到一年 Oakley 也死於機車事故」實隔約 13 個月（1971-10-29／1972-11-11）→ pubIssues。
   The Flaming Lips 失敗請求 7 次（多家 403／404），照實記，放行。Replacements 的單源敏感內容不收，同意。
+- 寫作第 1 組（20 位）審畢，修 1 處：Porcupine Tree「被稱為最重要、卻最少人聽過的樂團」是單一樂評語（第二源疑轉引維基）→ 刪。
+  寫作層指出 g3 的 Allman Brothers era 事實「《At Fillmore East》發行前 Duane 過世」有誤（專輯 1971-07、Duane 1971-10）；正文未用，研究稿錯誤不外流，記此備查。
