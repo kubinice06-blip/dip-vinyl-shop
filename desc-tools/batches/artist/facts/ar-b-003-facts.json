@@ -1,0 +1,3628 @@
+[
+ {
+  "key": "galliano",
+  "name": "Galliano",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1991,
+   1994
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "In Pursuit of the 13th Note",
+    "year": 1991,
+    "genres": [
+     "jazz",
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Joyful Noise Unto the Creator",
+    "year": 1992,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Plot Thickens",
+    "year": 1994,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "In Pursuit of the 13th Note",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "Galliano 先是 Eddie Piller 與 Gilles Peterson 的 Acid Jazz Records 首位錄音藝人，後又成為 Peterson 自立的 Talkin' Loud 首位簽約者，這張一九九一年三月的首作即是該廠牌的專輯開端。錄音在一九九○年五、六月完成，雖屬錄音室作品，演奏卻是全團一次過現場收錄，製作人為 Chris Bangs。Rob Gallagher 以受 The Last Poets 影響的口白貫穿全片，Roy Ayers 亦參與演出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/In_Pursuit_of_the_13th_Note",
+     "https://en.wikipedia.org/wiki/Galliano_(band)",
+     "https://musicbrainz.org/release-group/d70b72b0-c222-3320-b18f-8583eedc9198"
+    ]
+   },
+   {
+    "album": "A Joyful Noise Unto the Creator",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "Galliano 一九九二年六月的第二張，仍由 Gilles Peterson 的 Talkin' Loud 發行。以〈Grounation Part 1〉開場、〈Grounation Part 2〉收尾，中段的〈Jus' Reach〉〈Skunk Funk〉〈Prince of Peace〉把口白、打擊樂與號組排成一整段行進。Rob Gallagher 受 The Last Poets 影響的唸白仍是主軸，Crispin Robinson 的康加鼓比首作更前。〈Skunk Funk〉登英國單曲榜第四十一名，〈Prince of Peace〉第四十七名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Galliano_(band)",
+     "https://en.wikipedia.org/wiki/Talkin%27_Loud",
+     "https://musicbrainz.org/release-group/9df71a3e-12bb-33b2-b570-4fbfed1029e6"
+    ]
+   },
+   {
+    "album": "The Plot Thickens",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "一九九四年五月由 Talkin' Loud 發行，Adam Moseley 與樂團共同製作，是 Galliano 最成功的一張：英國專輯榜第八名，並入選《NME》年度五十大專輯。Rob Gallagher 的唸白與 Valerie Etienne 的歌唱交替推進，Mick Talbot 的鍵盤與 Crispin Robinson 的打擊樂寫進多數曲目。翻唱 David Crosby 的〈Long Time Gone〉登英國單曲榜第十五名；〈Twyford Down〉第三十七名，寫的是當時英國反築路運動的抗爭。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Plot_Thickens_(Galliano_album)",
+     "https://en.wikipedia.org/wiki/Galliano_(band)",
+     "https://musicbrainz.org/release-group/ca1a3c6b-353e-42da-bf31-8001d513c3d0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ganelin trio",
+  "name": "Ganelin Trio",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1977,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Con Anima",
+    "year": 1977,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Live in East Germany",
+    "year": 1980,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ancora da Capo",
+    "year": 1982,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 20,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c53-c",
+    "album": "Con Anima",
+    "facts": [
+     {
+      "f": "立陶宛音樂資訊中心記《Con anima》是三重奏的第一套錄音室節目，1976 年在維爾紐斯錄成。",
+      "src": "https://www.mic.lt/en/database/jazz/composers-artists/gtc/"
+     },
+     {
+      "f": "三重奏以維爾紐斯為據點：Ganelin 1968 年組團，薩克斯風位置 1971 年由 Чекасин 接下 Резицкий 的棒子，樂團 1987 年解散。",
+      "src": "https://en.wikipedia.org/wiki/Ganelin_Trio"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c53-c",
+    "album": "Live in East Germany",
+    "facts": [
+     {
+      "f": "Leo Records 由俄裔移民 Leo Feigin 於 1979 年在倫敦創立，專營自由爵士，1980 年代成為蘇聯前衛爵士錄音在全球最主要的發行管道；創辦後十年內發行了二十多張共產陣營樂手的專輯。",
+      "src": "https://en.wikipedia.org/wiki/Leo_Records"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Con Anima",
+    "manifest": "onboarding-manifest-c53-20260903.json",
+    "desc": "整張唱片只有一首曲子，名字是立陶宛文的〈Džiazo kontrastai〉。A 面是開頭，B 面標著「Pabaiga」（結尾）。1977 年 Мелодия 發行，唱片掛名是立陶宛文的「V. Ganelinas, V. Tarasovas, V. Čekasinas」。1976 年在維爾紐斯錄成，立陶宛音樂資訊中心記為三重奏的第一套錄音室節目，並引一位德國樂評的話：那是他多年來聽過組織最好、最專業的自由爵士。鋼琴、簧管與打擊互相追逐，靠力度與音色轉換換段。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4455019",
+     "https://www.mic.lt/en/database/jazz/composers-artists/gtc/",
+     "https://en.wikipedia.org/wiki/Ganelin_Trio",
+     "https://musicbrainz.org/release-group/eedadce1-6def-4ca1-8679-a4aaaa4c231f"
+    ]
+   },
+   {
+    "album": "Live in East Germany",
+    "manifest": "onboarding-manifest-c53-20260903.json",
+    "desc": "封套上印著一行字：樂手對這些母帶的出版不負任何責任。錄音在 1979 年 4 月 22 日的東柏林，1980 年由英國 Leo Records 發行，目錄號 LR 102。兩面各是一首同名的〈Catalogue〉，24 分 15 秒與 22 分 15 秒，全程不斷句，掌聲與場地殘響一直在。Leo Records 是俄裔移民 Leo Feigin 1979 年在倫敦創立的廠牌，1980 年代成為蘇聯前衛爵士錄音最主要的出口管道。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2874554",
+     "https://en.wikipedia.org/wiki/Leo_Records",
+     "https://musicbrainz.org/release-group/f816d7bd-7085-45ba-8c27-9b565da97b2f"
+    ]
+   },
+   {
+    "album": "Ancora da Capo",
+    "manifest": "onboarding-manifest-c53-20260903.json",
+    "desc": "原盤是兩張唱片：一張是 11 月 15 日的列寧格勒，一張是隔天。1982 年由 Leo Records 分成《Ancora da Capo Part 1》（LR 108）與 Part 2（LR 109）兩張發行，卡片上的單一盤名是後來 CD 版的統稱，錄音都在 1980 年 11 月的列寧格勒。四十分鐘量級的長篇，結構像一部有樂章的作品而非一串即興。《The Penguin Guide to Jazz》把它列入 Core Collection。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2686458",
+     "https://www.discogs.com/release/2457930",
+     "https://en.wikipedia.org/wiki/Ancora_da_Capo",
+     "https://musicbrainz.org/release/8457eadc-bb1f-4f13-a52b-51c781794562",
+     "https://musicbrainz.org/release-group/747c76c7-7daa-4362-9f52-925c5906e391"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gary burton & chick corea",
+  "name": "Gary Burton & Chick Corea",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   2009
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Crystal Silence",
+    "year": 1973,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Duet",
+    "year": 1979,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Crystal Silence: The ECM Recordings 1972–79",
+    "year": 2009,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "george braith",
+  "name": "George Braith",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1963,
+   1967
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Two Souls in One",
+    "year": 1963,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Soul Stream",
+    "year": 1964,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Extension",
+    "year": 1967,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 3,
+   "facts": 7,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c139-b",
+    "album": "Two Souls in One",
+    "facts": [
+     {
+      "f": "英文維基《Two Souls in One》：1963 年 9 月 4 日錄於 Van Gelder（Englewood Cliffs, NJ），製作 Alfred Lion，長度 41:11，**是 Braith 的首張領銜專輯**（infobox 的 prev_title 為空、next_title 是《Soul Stream》）。編制：George Braith 高音薩克斯風與 stritch（Rahsaan Roland Kirk 那種改裝的中音）、Billy Gardner 風琴、Grant Green 吉他、Donald Bailey 鼓。AllMusic 的 Erlewine 給三星：「In some ways, it's hard to view George Braith's playing a soprano and alto saxophone simultaneously as anything other than a gimmick… Nevertheless, *Two Souls in One* remains an enjoyable, occasionally rewarding, collection of soul-jazz and cautiously adventurous hard bop.」",
+      "src": "https://en.wikipedia.org/wiki/Two_Souls_in_One"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c139-b",
+    "album": "Soul Stream",
+    "facts": [
+     {
+      "f": "release-group 407a319e 的欄位：title「Soul Stream」、artist-credit「George Braith」、**first-release-date 1963（＝錄音年，見 yearVerified）**、primary-type Album、轄下三筆：原盤 724d28f5（1963 US Official、12 吋 6 軌、Blue Note BLP 4161）、1994-10-26 JP CD 6913eda3（ST-84161）、2018-10-19 XW 數位 e2213fca。六軌與長度：〈The Man I Love〉5:25、〈Outside Around the Corner〉7:52、〈Soul Stream〉3:12、〈Boop Bop Bing Bash〉6:23、〈Billy Told〉7:51、〈Jo Anne〉5:22，合計約 36 分 5 秒。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=407a319e-d58f-436d-b667-30f20b93afac&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "**同期紙本：1964 年夏天的專輯評論，這是本張年份的關鍵舉證**。《Cash Box》1964 年 6 月 27 日的 ALBUM REVIEWS：「SOULSTREAM — George Braith — Blue Note 4161／Jazz saxist George Braith (he plays both tenor and soprano with equal poise) teams up with an accomplished crew of jazzmen including **Grant Green, Billy Gardner and Hugh Walker** on this **his second Blue Note offering**. While supported by the crew Braith shines in a funky, midstream style on, with the exception of『The Man I Love,』a swingin' batch of originals. Highlights are『Soul Stream』and『Jo Anne.』」**「第二張 Blue Note」與鼓手 Hugh Walker 都與維基相符**（第一張是 1963 年 12 月上市的《Two Souls in One》，鼓手是 Donald Bailey）。**1963 年整年的 Cash Box 沒有任何 4161 的記載。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-06-27.pdf"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c140-a",
+    "album": "Extension",
+    "facts": [
+     {
+      "f": "**Cash Box 1967 年 1 月 21 日第 25 頁的 Blue Note 整版廣告**，標題「FOR THE 'LOOK' OF PURE JAZZ」，兩張並列：「**BLP 4171／BST 84171 — \"EXTENSION\" — George Braith**」與「BLP 4196／BST 84196 — BLUE SPIRITS — Freddie Hubbard」，頁腳印著「THE FINEST IN JAZZ SINCE 1939 — BLUE NOTE — **A PRODUCT OF LIBERTY RECORDS**」。**這是本盤在同期紙本上的首次出現，時間是 1967 年 1 月、Liberty 期的盤標**；本層掃過 1964-01 至 1967-08 共 154 期 Cash Box，1964–1966 全段沒有 BLP 4171 的任何條目（唯一的「4171」是 1965-02 Top 100 Albums 裡 Goldfinger 原聲帶的 United Artists UAL 4171，不同廠不同碟）。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1967/CB-1967-01-21.pdf"
+     },
+     {
+      "f": "jazzdisco 的 4100 系列目錄記 BLP 4171 **年份欄 1967**，錄音 **1964-03-27 Van Gelder Studio, Englewood Cliffs**，母帶編號 1325–1330（tk.5 Nut City／tk.10 Sweetville／tk.14 Ethlyn's Love／tk.15 Out Here／tk.31 Extension／tk.33 Ev'ry Time We Say Goodbye），編制四人：**George Braith 次中音、高音、中音薩克斯風；Billy Gardner 管風琴；Grant Green 吉他；Clarence Johnston 鼓**。附註「also released on Blue Note BST 84171 in 1967」。",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/"
+     },
+     {
+      "f": "英文維基：infobox released **1967**、recorded 1964-03-27、studio Van Gelder Studio, Englewood Cliffs、producer Alfred Lion、label Blue Note BST 84171。正文第一句：「''Extension'' is **the third album** by American saxophonist George Braith recorded in 1964 and released on the Blue Note label.」chronology：前作《Soulstream》（1963）、後作《Laughing Soul》（1966）——**兩張都比本盤早出**，本盤是 Braith 在 Blue Note 的最後一張。AllMusic 的 Stephen Thomas Erlewine 給 4.5 星：「George Braith turned in his strongest record with ''Extension''. **Largely freed from the restraints of the dueling horns**, Braith is able to explore the outer reaches of his music. He still remains grounded in soul-jazz — any guitar-organ combo is bound to have soul-jazz roots — but he pushes the music toward adventurous hard bop」。",
+      "src": "https://en.wikipedia.org/wiki/Extension_(George_Braith_album)"
+     },
+     {
+      "f": "第 531 條加跑：Discogs `search?catno=BLP 4171` 的**兩筆美國原壓都標 1967**（另兩筆是同號干擾的 Polydor／Urban 合輯）；`catno=BST 84171` 的三筆美國盤分別是 1967（Liberty Records, Inc. 盤標）、1967（Blue Note）、1970（Liberty/UA）。**沒有任何一筆 1964–1966 的壓片。**",
+      "src": "https://api.discogs.com/database/search?catno=BLP+4171&per_page=100"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Two Souls in One",
+    "manifest": "onboarding-manifest-c139-20260917.json",
+    "desc": "童謠〈Mary Had a Little Lamb〉，被他一次吹兩支管的方式翻成 soul-jazz。五軌 1963 年 9 月 4 日錄於 Van Gelder，同年以 Blue Note BLP 4148 出版，是他掛頭牌的頭一張。他同時吹高音薩克斯風與 stritch 這種直管中音，班底是 Billy Gardner、Grant Green 與 Donald Bailey。末軌〈Braith-A-Way〉十三分二十七秒。1963 年 12 月的評論點名了那三位側人。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=065f84ac-7b35-4c70-9716-ac0d94cddacc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1963/CB-1963-12-21.pdf",
+     "https://api.discogs.com/database/search?catno=BLP+4148",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/",
+     "https://en.wikipedia.org/wiki/Two_Souls_in_One",
+     "https://musicbrainz.org/release-group/065f84ac-7b35-4c70-9716-ac0d94cddacc"
+    ]
+   },
+   {
+    "album": "Soul Stream",
+    "manifest": "onboarding-manifest-c139-20260917.json",
+    "desc": "鼓椅換成 Hugh Walker，六首裡只剩〈The Man I Love〉出自別人。六軌 1963 年 12 月 16 日錄於 Van Gelder，唱片壓到 1964 年才上市。Billy Gardner 的風琴與 Grant Green 的吉他照舊，他自己這回加吹次中音。〈Outside Around the Corner〉〈Jo Anne〉與標題曲是他寫的。1964 年 6 月的評論寫明這是他的第二張 Blue Note，編號 Blue Note BLP 4161。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=407a319e-d58f-436d-b667-30f20b93afac&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-06-27.pdf",
+     "https://api.discogs.com/database/search?catno=BLP+4161",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/",
+     "https://en.wikipedia.org/wiki/Soul_Stream",
+     "https://musicbrainz.org/release-group/407a319e-d58f-436d-b667-30f20b93afac"
+    ]
+   },
+   {
+    "album": "Extension",
+    "manifest": "onboarding-manifest-c140-20260917.json",
+    "desc": "一個人帶著次中音、高音、中音三支薩克斯風進棚。1964 年 3 月 27 日在 Van Gelder 一場錄完六軌，四重奏另有 Billy Gardner 的管風琴、Grant Green 的吉他與 Clarence Johnston 的鼓。〈Nut City〉〈Out Here〉與標題曲各六到七分鐘，〈Ev'ry Time We Say Goodbye〉收尾。這是他在 Blue Note 的最後一張，1967 年才出貨，盤標頁腳已印著 Liberty。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=eb8a47d6-7022-4cef-b66c-613713c330d1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1967/CB-1967-01-21.pdf",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4100-series/",
+     "https://en.wikipedia.org/wiki/Extension_(George_Braith_album)",
+     "https://api.discogs.com/database/search?catno=BLP+4171&per_page=100",
+     "https://musicbrainz.org/release-group/eb8a47d6-7022-4cef-b66c-613713c330d1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gilberto gil",
+  "name": "Gilberto Gil",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1968,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Expresso 2222",
+    "year": 1972,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gilberto Gil",
+    "year": 1968,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Um Banda Um",
+    "year": 1982,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "gogo penguin",
+  "name": "GoGo Penguin",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2012,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Man Made Object",
+    "year": 2016,
+    "genres": [
+     "jazz",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gogo Penguin",
+    "year": 2020,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fanfares",
+    "year": 2012,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "hamiet bluiett",
+  "name": "Hamiet Bluiett",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1976,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ebu",
+    "year": 1984,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Endangered Species",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Birthright: A Solo Blues Concert",
+    "year": 1977,
+    "genres": [
+     "jazz",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 17,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c59-a",
+    "album": "Endangered Species",
+    "facts": [
+     {
+      "f": "Hamiet Bluiett（1940 年 9 月 16 日－2018 年 10 月 4 日）生於伊利諾州的 Brooklyn（又名 Lovejoy），那是 1830 年代作為自由黑人避難地建立的村鎮，後來成為美國第一個黑人佔多數的市鎮；他十歲起就認定上低音薩克斯風。",
+      "src": "https://en.wikipedia.org/wiki/Hamiet_Bluiett"
+     },
+     {
+      "f": "1960 年代末他在聖路易共同創立 Black Artists Group，並在 1968 至 1969 年帶領 BAG 的大樂團；1969 年底搬到紐約後加入 Charles Mingus 五重奏與 Sam Rivers 的大編制樂團。",
+      "src": "https://en.wikipedia.org/wiki/Hamiet_Bluiett"
+     },
+     {
+      "f": "所謂 loft 場景指的是 1970 年代中期紐約一批由樂手自己經營、兼作住處與演出場地的空間，入場多半只收低額捐款，Ladies' Fort 是其中之一。",
+      "src": "https://en.wikipedia.org/wiki/Loft_jazz"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c86-b",
+    "album": "Birthright: A Solo Blues Concert",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group c554e650 的欄位：title《Birthright: A Solo Blues Concert》、first-release-date 1977、primary-type Album、**secondary-types 只有一項「Live」**、artist-credit「Hamiet Bluiett」；genre 欄兩個標籤 free jazz 與 jazz（各 1 票）；url-rels 四條——allmusic 指向 mw0000614000、discogs 指向 master/301749、other databases 兩條（rateyourmusic 的 hamiet-bluiett/birthright 與 jazzmusicarchives 的 birthright-a-solo-blues-concert(live)）。掛名實體是 Hamiet Bluiett（MBID f2995617-71f9-419a-8460-00e0f17221c9，type Person，country US，disambiguation 欄「jazz baritone saxophonist, clarinetist and flutist」）。",
+      "src": "https://musicbrainz.org/release-group/c554e650-09c4-4d30-af33-53aaa2cc2860"
+     },
+     {
+      "f": "MB 轄下 1977 US 那筆 release（d9e7ba0e）：status Official、title《Birthright: A Solo Blues Concert》、artist-credit「Hamiet Bluiett」、廠牌欄 India Navigation、編號欄 IN 1030、一張 12\" Vinyl、**track-count 7**、barcode 欄空字串、date 欄只有年。逐軌軌號與曲長：1〈Doll Baby a.k.a. Song Service〉9:46、2〈The Mighty Denn〉5:29、3〈The Village of Brooklyn, Ill. 62059〉4:52、4〈Ballad for George Hudson〉2:30、5〈My Father's House: a) Hamiet; b) Deborah; c) Karen〉11:24、6〈In Tribute to Harry Carney〉9:20、7〈Ebu–Helen〉3:21。",
+      "src": "https://musicbrainz.org/release/d9e7ba0e-759c-4817-8223-7f8c4d8f92e2"
+     },
+     {
+      "f": "同一 release-group 轄下另兩筆 release，**兩筆的軌數都不是 7**：1996 US（c2bcb095，status Official、廠牌欄 India Navigation、編號欄 IN 1030 CD、CD、**track-count 9**、barcode 750553103023）——曲序是 1〈Doll Baby, aka Song Service〉9:57、2〈The Mighty Denn〉5:34、3〈Village of Brooklyn, Illinois 62059〉4:51、4〈Ballad for George Hudson〉2:33、5〈My Father's House–1.Hamiet 2. Deborah 3. Karen〉11:31、**6〈In Tribute to Harry Carney I〉2:34、7〈In Tribute to Harry Carney II〉7:14**、8〈Ebu–Helen〉3:43、**9〈Closing〉0:43**；2015-08-07 XW（c07fa9ab，status Official、廠牌欄 India Navigation、編號欄空、Digital Media、**track-count 8**、barcode 3614594187909）——與 1996 那筆相比少了〈In Tribute to Harry Carney II〉那一軌。以 release?release-group=…&inc=recordings 逐版比對三筆，**原盤的第 6 軌〈In Tribute to Harry Carney〉9:20 在 1996 年的 CD 上被拆成 I（2:34）與 II（7:14）兩個曲位，尾端另外多出一軌〈Closing〉0:43；2015 年那筆是 8 軌，等於 1996 版拿掉 II。三筆的軌數是 7／9／8，逐軌比對過整份曲目表。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=c554e650-09c4-4d30-af33-53aaa2cc2860&inc=recordings&fmt=json"
+     },
+     {
+      "f": "Discogs 原盤條目 2369101 的欄位：**title《Birthright (A Solo Blues Concert)》——副標題用括號，MB 用冒號**、year 與 released 欄皆 1977、國別 US、格式欄 Vinyl ×1［LP, Album, Stereo］、廠牌欄 India Navigation、編號欄 IN 1030、genre 欄 Jazz、style 欄 Free Jazz、Spiritual Jazz。公司欄五條：Record Company「India Navigation Company」、Published By「Teimah Music Co.」、Phonographic Copyright (p) 與 Copyright (c) 皆「India Navigation Company」、**Recorded At「The Kitchen, New York City」**。identifiers 欄三條：Rights Society「For compositions BMI」、Matrix / Runout 蝕刻「IN-1030-A」與「IN-1030-B」。",
+      "src": "https://www.discogs.com/release/2369101"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Endangered Species",
+    "manifest": "onboarding-manifest-c59-20260903.json",
+    "desc": "上低音薩克斯風站到最前面，這件事在 1976 年的紐約已經算異數。他十歲起就認定這件樂器，本作四首全部由他所作，〈Ayana Nneke〉的副標寫明獻給他的女兒。他生於伊利諾州的 Brooklyn（又名 Lovejoy），那是 1830 年代作為自由黑人避難地建立的村鎮。錄音在 6 月 19 日的 Ladies' Fort 做成，由 India Navigation 發行；所謂 loft，是樂手自己經營、兼作住處與演出場地、入場只收低額捐款的空間。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1658889",
+     "https://en.wikipedia.org/wiki/Hamiet_Bluiett",
+     "https://en.wikipedia.org/wiki/Loft_jazz",
+     "https://musicbrainz.org/release-group/0caf960c-6764-498a-8cfa-9308bbf192fa"
+    ]
+   },
+   {
+    "album": "Birthright: A Solo Blues Concert",
+    "manifest": "onboarding-manifest-c86-20260910.json",
+    "desc": "五條 credit 裡有四條掛著同一個名字：上低音薩克斯風、作曲、封套概念與內頁文字。第五條 Photography By 寫的是攝影者 Bob Cummins。公司欄的 Recorded At 記在紐約的 The Kitchen；註記欄引的那段錄音說明寫著，多支麥克風對著一個會移動的聲源，現場的環境聲原樣留著。七個曲位分成兩面，第五個曲位的 position 欄在條目上是空的，最長的〈My Father's House〉11:24 就在那裡。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c554e650-09c4-4d30-af33-53aaa2cc2860",
+     "https://musicbrainz.org/release/d9e7ba0e-759c-4817-8223-7f8c4d8f92e2",
+     "https://musicbrainz.org/ws/2/release?release-group=c554e650-09c4-4d30-af33-53aaa2cc2860&inc=recordings&fmt=json",
+     "https://www.discogs.com/release/2369101",
+     "https://www.discogs.com/master/301749",
+     "https://www.discogs.com/release/2467237",
+     "https://itunes.apple.com/search?term=Hamiet%20Bluiett&entity=album&limit=25&country=us",
+     "https://en.wikipedia.org/wiki/Hamiet_Bluiett"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "hermeto pascoal",
+  "name": "Hermeto Pascoal",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1979
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Slaves Mass",
+    "year": 1977,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Música Livre de Hermeto Paschoal",
+    "year": 1973,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Zabumbê-bum-á",
+    "year": 1979,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "A Música Livre de Hermeto Paschoal",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1971 年在 Miles Davis 的錄音裡露臉之後，Hermeto Pascoal 於 1973 年在巴西發表這張以「自由音樂」為名的作品。長笛、鍵盤、手風琴與人聲被他當成同一件樂器使用，北東部的 baião、forró 素材一路被推進即興與噪音的邊界，段落之間常常沒有過門就換人格。封面那張叼著長笛、白髮白鬚的照片後來成了「巫師」形象的定版；封套上的姓氏拼作 Paschoal，與他日後通行的 Pascoal 不同。",
+    "sourceUrls": [
+     "https://pt.wikipedia.org/wiki/Hermeto_Pascoal",
+     "https://musicbrainz.org/release-group/05e6f8a6-5c2f-3fa4-96de-22818b9f05a7"
+    ]
+   },
+   {
+    "album": "Zabumbê-bum-á",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1979 年的作品，標題把北東部低音鼓 zabumba 拆成擬聲字，等於直接把節奏的名字唸出來。Hermeto Pascoal 這一時期已經固定用一支自己的樂隊工作，管樂、鍵盤與大量打擊互相咬合，forró 與 baião 的骨架被拉長、切碎，再用他慣用的自然聲響與非樂器物件補縫。藍底細線圖案的封套只印他的名字與小寫標題，是他在 1973 年《A Música Livre》與 1984 年《Lagoa da Canoa》之間最常被點名的一張。",
+    "sourceUrls": [
+     "https://pt.wikipedia.org/wiki/Hermeto_Pascoal",
+     "https://musicbrainz.org/release-group/4a3cb6a7-3c3c-3a2f-a2eb-2c6b0dce0477"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "j.j. johnson",
+  "name": "J.J. Johnson",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1955,
+   1961
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Eminent Jay Jay Johnson, Volume 1",
+    "year": 1955,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "J.J. Inc.",
+    "year": 1961,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Eminent Jay Jay Johnson, Volume 2",
+    "year": 1956,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c136-a",
+    "album": "The Eminent Jay Jay Johnson, Volume 2",
+    "facts": [
+     {
+      "f": "jazzdisco 的 Blue Note 1500 系列目錄把 BLP 1506 記為 1956 年出版，三場錄音：**1953-06-22 WOR Studios**（Clifford Brown、Jimmy Heath、John Lewis、Percy Heath、Kenny Clarke）出〈Capri〉〈Turnpike〉兩個 alternate take 與〈It Could Happen To You〉；**1954-09-24 Van Gelder Studio, Hackensack**（Wynton Kelly、Charles Mingus、Kenny Clarke 的四重奏）只出〈Time After Time〉一首；**1955-06-06 Van Gelder Studio**（Hank Mobley、Horace Silver、Paul Chambers、Kenny Clarke）出〈Pennies From Heaven〉〈Viscosity〉〈You're Mine You〉〈Daylie Double〉〈Groovin'〉〈Portrait Of Jennie〉六首——本盤主體是 1955 年這場五重奏。再發：BST 81506 假立體聲 1975、CDP 7 81506 2 1989。",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/"
+     },
+     {
+      "f": "英文維基把 Vols. 1 & 2 記為「a pair of separate but related compilation albums」，三場錄音先以三張 10 吋出版——《Jay Jay Johnson with Clifford Brown》（1953）、《The Eminent Jay Jay Johnson Volume 2》（1954）、《Volume 3》（1955）——10 吋在規格戰中落敗後 Blue Note 把 Modern Jazz Series 重組成 12 吋 BLP 1505／1506，1956 年出版；CD 再發又改回 10 吋的曲目分法，Volume 2 CD 收 10 吋 Vol. 2（BLP 5057）與 Vol. 3（BLP 5070）加三個 1955 年場次的 alternate take。1953 年錄音時 Johnson 已退出全職演奏、在做藍圖檢驗員。Penguin Guide 兩集都給四星（第一集另給「Crown」）；AllMusic 的 Stephen Cook 評 Volume 2「若只想挑一張長號手早期作品，就是這一張……a bop classic」。",
+      "src": "https://en.wikipedia.org/wiki/The_Eminent_Jay_Jay_Johnson,_Vols._1_%26_2"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Eminent Jay Jay Johnson, Volume 2",
+    "manifest": "onboarding-manifest-c136-20260917.json",
+    "desc": "長號手 1953 年錄下第一場時，白天的工作是藍圖檢驗員。那幾年他已退出全職演奏，錄音只能斷續進行。1953 年 6 月的六重奏留下兩個 alternate master，隔年的四重奏則僅剩〈Time After Time〉一首入選；盤上主體是 1955 年 6 月與 Hank Mobley 那組五重奏，一場錄滿六首。10 吋規格退場後，Blue Note 把這批材料重編成兩張 12 吋，內容是同一批錄音，1956 年出版的這張共 10 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=013b98d0-4244-3631-97f3-5512fc4ed9fe&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1956/Billboard%201956-09-08.pdf",
+     "https://www.discogs.com/release/1995260",
+     "https://en.wikipedia.org/wiki/The_Eminent_Jay_Jay_Johnson,_Vols._1_%26_2",
+     "https://itunes.apple.com/lookup?id=723622252&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/013b98d0-4244-3631-97f3-5512fc4ed9fe"
+    ]
+   },
+   {
+    "album": "J.J. Inc.",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "長號宗師 J.J. Johnson 率六重奏為 Columbia 灌錄、1961 年發行的作品，前線是年輕的 Freddie Hubbard 與 Clifford Jordan，節奏組為 Cedar Walton、Arthur Harper、Albert Heath。六首全數 Johnson 自作，三管聲部寫得緊密，hard bop 火力之下是他作曲家的結構感；Penguin Guide 點名〈Aquarius〉是他編作功力至當時最好的證明，後輩長號手 Steve Turre 也轉述 Johnson 自認這是他帶過最好的樂團之一。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/J.J._Inc.",
+     "https://musicbrainz.org/release-group/ac98f02b-5661-38eb-bf40-4659dae7eb18"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jack wilson",
+  "name": "Jack Wilson",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1967,
+   1970
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Something Personal",
+    "year": 1967,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Easterly Winds",
+    "year": 1968,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Song for My Daughter",
+    "year": 1970,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c141-a",
+    "album": "Easterly Winds",
+    "facts": [
+     {
+      "f": "release-group b1935625 的欄位：title「Easterly Winds」、artist-credit「Jack Wilson」（Person 219c17de，MB 註「jazz pianist」1936–2007）、first-release-date 1967、primary-type Album。原盤兩筆：d74b54cc（mono BLP 4270）與 d62be761（stereo BST 84270），**MB 兩筆都標 1967＝錄音年**。六軌：〈Do It〉〈On Children〉〈A Time for Love〉〈Easterly Winds〉〈Nirvanna〉〈Frank's Tune〉。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=b1935625-0fa9-3ba9-ae53-e836ac764a68&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "jazzdisco 的 Jack Wilson 場次頁：**Jack Wilson Sextet，Van Gelder Studio, Englewood Cliffs, NJ, 1967 年 9 月 22 日**，編制 **Lee Morgan（小號，#1-5）、Garnett Brown（長號，#1-5）、Jackie McLean（中音，#1-5）**、Jack Wilson（鋼琴）、Bob Cranshaw（貝斯）、Billy Higgins（鼓）；母帶 1951–1956，六軌一場錄完，全部發在 BST 84270。**第 6 軌〈A Time for Love〉是三管不在的鋼琴三重奏。**",
+      "src": "https://www.jazzdisco.org/jack-wilson/discography/"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c142-a",
+    "album": "Song for My Daughter",
+    "facts": [
+     {
+      "f": "jazzdisco 4300 系列目錄頁的 **BST 84328** 區塊（**真號在這裡，jazzdisco 沒有跟著 MB 錯**）把本盤拆成**五場外加一次疊錄，全部在 Liberty Studios, Los Angeles**：**1968-09-28**——Stan Levey（顫音琴、沙鈴）、Jack Wilson（鋼琴）、John Gray（吉他）、Ray Brown（貝斯）、Varney Barlow（鼓）＋**7 把小提琴、2 把中提琴、3 把大提琴**，**Billy Byers 編曲指揮**，錄 Imagine／Changing With The Times／Se Todos Fossem Iguais A Voce；**1968-12-16**——Victor Feldman（顫音琴、定音鼓）、Howard Roberts（吉他）、**Andy Simpkins（貝斯）**、Jimmie Smith（鼓）＋8／2／2 的弦樂，錄 Eighty-One／Herman's Helmet／Night Creature；**1969-04-23**——Tommy Vig（顫音琴）、Howard Roberts、Ray Brown、Donald Bailey，錄 Soft Summer Rain；**1969-06-19**——Wilson／Ike Isaacs／Donald Bailey 三重奏，錄 Scarborough Fair / Canticle；**1969-06-21 ＋ 06-26 疊錄弦樂**，錄 Song For My Daughter；另 Stormy 是三重奏加疊錄弦樂。**十軌出自五場、三位不同的顫音琴手、三位不同的貝斯手、三位不同的鼓手。**",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/"
+     },
+     {
+      "f": "Discogs release 3378314（1969 US 原壓）：註記「**Recorded at Liberty Studios, West Hollywood, CA**」，**製作、編曲、指揮都掛 Billy Byers**（維基 infobox 的 producer 欄是空的，**Discogs 是本張製作人的唯一來源**）、**封面攝影 Fred Seligo、內頁文字 Michael Randall**；編制掛 Jack Wilson（鋼琴）、Ray Brown／Ike Isaacs／Andrew Simpkins（貝斯）、Donald Bailey／Jimmie Smith／Varney Barlow（鼓）、Howard Roberts／John Gray（吉他）、Stan Levey／Tommy Vig／Victor Feldman（顫音琴）。⚠ `database/search?catno=BST 84328` 的四筆（1041075 master／3378314／28891183、德國 24623720）**全部標 1969——整群早一年**（第 550／553 條）；**把同一個號拿去反查，回來的全是本張，沒有一筆是 Mustang!——這正是第 604 條說的「catno 反查一次就看得出 MB 登錯」。**",
+      "src": "https://api.discogs.com/releases/3378314"
+     },
+     {
+      "f": "⚠ **掛名邊界（第 603 條第 2 點的第三次記錄）**：**MB 的 `Jack Wilson` 同字串有 17 個實體**——`artist:\"Jack Wilson\"` 分數最高的是製作音樂作曲家 4b2dc66f，另有**英國樂團領班（1907–2006，維基的「Jack Wilson (pianist)」條目講的正是他、不是本人）**、美國民謠搖滾歌手、雷鬼歌手、Fickle Friends 鍵盤手、小號手、金屬吉他手、匹茲堡饒舌歌手。**本卡與池中兩張都是 219c17de（US，1936-08-03–2007-10-05，jazz pianist）**；**英文維基沒有這位 Jack Wilson 的個人條目，只有專輯條目**——**寫作層查生平務必帶 jazz pianist／Blue Note／1936–2007，抓到「Jack Wilson (pianist)」那個條目就是抓錯人。**",
+      "src": "https://musicbrainz.org/ws/2/artist?query=artist%3A%22Jack+Wilson%22&fmt=json&limit=25"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Easterly Winds",
+    "manifest": "onboarding-manifest-c141-20260917.json",
+    "desc": "廠牌廣告乾脆把陣容印出來：Lee Morgan、Garnett Brown、Jackie McLean。1967 年 9 月 22 日在 Van Gelder 一場錄完，另有 Bob Cranshaw 與 Billy Higgins，末軌〈A Time for Love〉收成鋼琴三重奏。〈Frank's Tune〉出自 Frank Strozier，其餘多是他寫的。製作是 Duke Pearson，1968 年 2 月以 Blue Note BST 84270 上市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b1935625-0fa9-3ba9-ae53-e836ac764a68&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/jack-wilson/discography/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1968/Billboard%201968-02-10.pdf",
+     "https://api.discogs.com/database/search?catno=BST%2084270",
+     "https://en.wikipedia.org/wiki/Easterly_Winds",
+     "https://musicbrainz.org/release-group/b1935625-0fa9-3ba9-ae53-e836ac764a68"
+    ]
+   },
+   {
+    "album": "Song for My Daughter",
+    "manifest": "onboarding-manifest-c142-20260917.json",
+    "desc": "十首曲子出自五場錄音：三位顫音琴手、三位貝斯手、三位鼓手。五場從 1968 年 9 月排到 1969 年 6 月，全部在洛杉磯 Liberty Studios，他的鋼琴在前，Billy Byers 編寫並指揮的弦樂組鋪底，顫音琴由 Stan Levey、Victor Feldman、Tommy Vig 各接一場。曲目混著〈Imagine〉與〈Eighty-One〉。製作、編曲與指揮都是 Billy Byers，1970 年 Blue Note BST 84328。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=802871da-c459-406f-98eb-18bd85c8d4fd&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-02-07.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-02-14.pdf",
+     "https://api.discogs.com/releases/3378314",
+     "https://itunes.apple.com/lookup?id=1768828974&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/ws/2/artist?query=artist%3A%22Jack+Wilson%22&fmt=json&limit=25",
+     "https://musicbrainz.org/release-group/802871da-c459-406f-98eb-18bd85c8d4fd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jaki byard",
+  "name": "Jaki Byard",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1962,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "To Them - To Us",
+    "year": 1982,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Blues for Smoke",
+    "year": 1988,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hi-Fly",
+    "year": 1962,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Blues for Smoke",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Jaki Byard 1960 年 12 月 16 日在紐約錄下生平第一張掛名作品，形式是純獨奏鋼琴，卻在美國一路壓到 1988 年才由 Candid 正式發行。九首曲子把他的多語能力攤開：〈Pete and Thomas〉向 stride 前輩致敬，〈Spanish Tinge No. 1〉借 Jelly Roll Morton 那個講法的節奏腔調，〈Flight of the Fly〉衝進近乎自由的快速跑句，開場的 European Episodes 組曲則在段落間切換年代與音色。同年他開始與 Charles Mingus 合作。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Blues_for_Smoke",
+     "https://en.wikipedia.org/wiki/Jaki_Byard",
+     "https://musicbrainz.org/release-group/e1f1f398-a436-46df-aacf-12f4a79ef670"
+    ]
+   },
+   {
+    "album": "Hi-Fly",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "1962 年 1 月 30 日錄於 Van Gelder 錄音室，Jaki Byard 與 Ron Carter、Pete La Roca 的 New Jazz 三重奏（NJLP 8273）。Byard 是爵士鋼琴史的通才，開場翻奏 Randy Weston 的〈Hi-Fly〉，接著把 James P. Johnson 的〈Yamecraw〉選段、stride、bop 到自由化的語彙全排進同一張唱片，〈'Round Midnight〉的重讀和聲亦不落俗套。DownBeat 給四星半，AllMusic 稱之為他最好的作品之一。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hi-Fly_(Jaki_Byard_album)",
+     "https://musicbrainz.org/release-group/9cbd3dc3-2e8a-3584-abb5-5d28ce32076e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "james moody",
+  "name": "James Moody",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1951,
+   1958
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Last Train from Overbrook",
+    "year": 1958,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "James Moody With Strings",
+    "year": 1951,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "James Moody and His Modernists",
+    "year": 1952,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c135-a",
+    "album": "James Moody With Strings",
+    "facts": [
+     {
+      "f": "release-group 539cbbde 的欄位：title「James Moody With Strings」、artist-credit「James Moody」（Person cb8c8b87）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 1 筆 release。release c389601c：1952 US Official、**10 吋黑膠 8 軌**、Blue Note BLP 5005；八軌依序 Loving You the Way I Do／Bedelia／Autumn Leaves／So Very Pretty／Singing for You／Shades of Blonde／Jackie My Little Cat／September Serenade。MB 的錄音層關係八軌一致：James Moody（次中音與中音薩克斯風）、**André Hodeir（編曲與指揮）**、Raymond Fol（鋼琴）、Pierre Michelot（貝斯）、Pierre Lemarchand（鼓）、Pepito Riebe（bongo）、Bernard Galais（豎琴）、Max Porret（長笛）、Robert Jeannoutot（雙簧管）、Henri Bellicourt（單簧管）、René Reumont（法國號）、四把小提琴（Marcel Beaujojan、Lionel Gali、Jean Gaunet、Charles Vaudevoir）與兩把大提琴（Robert Jadoux、Guy Rogne）。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=539cbbde-0296-44a5-bd01-1a659e8c0a3e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5005 的八軌全部繫在**同一場：1951 年 7 月 13 日，法國巴黎**，母帶編號 V4055–V4062（Loving You The Way I Do／Bedelia／Autumn Leaves／So Very Pretty／Singing For You／Shade Of Blond／Jackie My Little Cat／September Serenade），編制與 MB 相同、André Hodeir 任編曲與指揮。同一段下方明寫「**originally released on Moody's Mood, Vogue (F) LD 018**」。",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+     },
+     {
+      "f": "串流側三種查法全部落空。`search` us／gb 回的 `1809205170`／`6810538415`《Moody With Strings》是 **1961 年的 Verve 同名專輯**（11 軌：Dorothee／Love For Sale／I Remember Clifford…），與本盤無一軌相同；藝人目錄 `lookup?id=57053&entity=album`（us 46 張、gb 103 張）沒有本盤；直查候選：`461645520`《Moody's Moods, Vol. 1》（AP Music，24 軌）含 Aimer Comme Je T'aime、Si Lolie、Bedilia 三軌，`461726671` Vol. 2（24 軌）含 Chanter pour Toi、Les Feuilles Mortes、September Serenade 三軌，`1750065461`／`1750074898`《The Moody Story · James Moody Septet 1951-1955》Vol. 2／3（Fresh Sound）無一軌相符。**單一條目最高覆蓋 3/8。**",
+      "src": "https://itunes.apple.com/lookup?id=461645520&country=gb&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c135-a",
+    "album": "James Moody and His Modernists",
+    "facts": [
+     {
+      "f": "release-group 056ef42f 的欄位：title「James Moody and His Modernists」、**artist-credit 是兩段「James Moody and His Modernists With Chano Pozo」**（Person cb8c8b87 以編制名當 credit-name ＋ Person 505047e5 Chano Pozo）、first-release-date 1952、primary-type Album、secondary-types 空、轄下 1 筆 release。release 61e9034c：1952 US Official、**10 吋黑膠 8 軌**、Blue Note BLP 5006；八軌依序 Workshop／Tin Tin Deo／Oh Henry／Mood's All Frantic／Tropicana／The Fuller Bop Man／Cu-Ba／Moodamorphosis。MB 的錄音層關係顯示固定班底是 Dave Burns 與 Elmon Wright（小號）、Ernie Henry（中音薩克斯風）、James Moody（次中音）、Cecil Payne（上低音）、James Forman Jr.（鋼琴）、Nelson Boyd（貝斯），**四軌鼓手是 Teddy Stewart、四軌是 Art Blakey 並加 Chano Pozo 的 bongo 與人聲**，編曲 Walter「Gil」Fuller。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=056ef42f-f8f3-4d59-84a3-33baf799a808&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "jazzdisco 的 Blue Note 5000 系列把 BLP 5006 記為「James Moody And His Modernists With Chano Pozo」，八軌來自 Apex Studios, NYC 的兩場：**1948 年 10 月 19 日**（鼓 Teddy Stewart，無 Pozo）出 The Fuller Bop Man／Workshop／Oh Henry!／Mooda-Morphosis；**1948 年 10 月 25 日**（鼓 Art Blakey，加 Chano Pozo 的人聲與 bongo）出 Tropicana／Cu-Ba／Moody's All Frantic／Tin Tin Deo。兩場的編制其餘不變（Dave Burns、Elmon Wright 小號，Ernie Henry 中音，Moody 次中音，Cecil Payne 上低音，Hen Gates 鋼琴，Nelson Boyd 貝斯，「Gil」Fuller 編曲）。同段註明這八面 1991 年併進 CD《Art Blakey's Messengers, James Moody's Modernists - New Sounds》（Blue Note CDP 7 84436 2）。",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/"
+     },
+     {
+      "f": "Chano Pozo（本名 Luciano Pozo González，1915-01-07 哈瓦那出生）**1948 年 12 月 2 日在紐約辭世，得年 33**；他是 Dizzy Gillespie 樂團的第一位拉丁打擊樂手，〈Manteca〉與〈Tin Tin Deo〉都有他的共同作曲。本盤 1948 年 10 月 25 日那一場是他生前最後幾次錄音之一，而他共同寫的〈Tin Tin Deo〉就在這張碟裡。",
+      "src": "https://en.wikipedia.org/wiki/Chano_Pozo"
+     },
+     {
+      "f": "James Moody 1948 年首度替 Blue Note 錄音，那是他長達六十年的錄音生涯的起點；同年他移居歐洲住了三年。本盤這兩場 1948 年 10 月的紐約錄音就是那次首錄，四年後才以 10 吋 LP 出版。",
+      "src": "https://en.wikipedia.org/wiki/James_Moody_(saxophonist)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "James Moody With Strings",
+    "manifest": "onboarding-manifest-c135-20260917.json",
+    "desc": "原盤是法國 Vogue 的《Moody's Mood》，八首裡有四首當時掛著法文曲名。八軌 1951 年 7 月 13 日在巴黎一場錄完，編曲與指揮是 André Hodeir：長笛、法國號、豎琴、四把小提琴與兩把大提琴加上節奏部，他把 Moody 的次中音與中音擺得很前面，〈Autumn Leaves〉最抒情。旅歐三年到此告一段落，隔年他回到美國。原盤 1951 年以 Vogue L.D. 018 發行，美國同配置的授權版是 Blue Note BLP 5005。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=539cbbde-0296-44a5-bd01-1a659e8c0a3e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/",
+     "https://www.discogs.com/release/15317069",
+     "https://www.discogs.com/release/10087023",
+     "https://en.wikipedia.org/wiki/James_Moody_(saxophonist)",
+     "https://itunes.apple.com/lookup?id=461645520&country=gb&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/539cbbde-0296-44a5-bd01-1a659e8c0a3e"
+    ]
+   },
+   {
+    "album": "James Moody and His Modernists",
+    "manifest": "onboarding-manifest-c135-20260917.json",
+    "desc": "〈Tin Tin Deo〉的共同作者本人在場打 bongo、唱和聲，五週後他在紐約離世。1948 年 10 月 19 與 25 日兩場在 Apex Studios，是他生涯的第一次錄音：咆勃大編制，編曲是 Gil Fuller。19 日的鼓是 Teddy Stewart，25 日換成 Art Blakey，加上 Chano Pozo 的四軌讓 Afro-Cuban 節奏與咆勃撞在一起。Pozo 同年 12 月 2 日辭世、得年 33。1952 年以 BLP 5006 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=056ef42f-f8f3-4d59-84a3-33baf799a808&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-5000-series/",
+     "https://www.discogs.com/master/315544",
+     "https://en.wikipedia.org/wiki/Chano_Pozo",
+     "https://en.wikipedia.org/wiki/James_Moody_(saxophonist)",
+     "https://itunes.apple.com/lookup?id=1694443322&country=gb&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/056ef42f-f8f3-4d59-84a3-33baf799a808"
+    ]
+   },
+   {
+    "album": "Last Train from Overbrook",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "1958 年，James Moody 在紐澤西 Overbrook 精神療養院住了五個月，戒酒並調養身心；出院後不久，他就錄下這張以療養院為名的宣言，由芝加哥的 Argo 發行。他輪流吹次中音、中音與長笛，背後是 Johnny Pate 編寫並兼彈貝斯的樂隊，標題曲是宣告重生的快板搖擺。曲目多為兩三分鐘的精悍篇幅，從〈Tico-Tico〉到〈All the Things You Are〉一路輕快，AllMusic 給四星半。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Last_Train_from_Overbrook",
+     "https://musicbrainz.org/release-group/62fbca9c-afd0-4098-824f-c059888aae6f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "james p. johnson",
+  "name": "James P. Johnson",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1951,
+   1991
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Snowy Morning Blues",
+    "year": 1991,
+    "genres": [
+     "jazz",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Carolina Shout",
+    "year": 1988,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Jazz Band Ball",
+    "year": 1951,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 14,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c135-a",
+    "album": "Jazz Band Ball",
+    "facts": [
+     {
+      "f": "jazzdisco 的 Blue Note 7000 系列把 BLP 7012 記為「James P. Johnson's Blue Note Jazz Men - Jazz Band Ball」，六軌來自三場 WOR Studios, NYC 錄音：**1944 年 3 月 4 日**（Sidney De Paris 小號、Vic Dickenson 長號、**Ben Webster 次中音薩克斯風**、James P. Johnson 鋼琴、Jimmy Shirley 吉他、John Simmons 貝斯、Sidney Catlett 鼓）出 After You've Gone；**1944 年 6 月 21 日**（管樂換成 Edmond Hall 單簧管）出 Everybody Loves My Baby／The Call Of The Blues；**1944 年 10 月 26 日**（同前，貝斯 Al Lucas、鼓 Arthur Trappier）出 Tishomingo Blues／Walking The Dog／At The Ball。同一頁記這些面的 78 轉原編號（Blue Note 40 等），並註明後來收進 1985 年的 Mosaic MR6-109 四人全集。",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-7000-series/"
+     },
+     {
+      "f": "James P. Johnson（1894–1955）是 stride 鋼琴的奠基者，〈Charleston〉的作者；1940 年代他替 Blue Note 錄過大量獨奏與樂團面，1943 年 11 月 17 日的 J.P. Boogie／Back Water Blues／Carolina Balmoral／Gut Stomp 那組獨奏後來成了 BLP 7011《Rent Party Piano》。本盤是他以樂團領班身分掛名的那一張，同一批 1943–44 年錄音的其他面散在 BLP 7007（Hall–De Paris）與 BLP 7016（Sidney De Paris）。",
+      "src": "https://en.wikipedia.org/wiki/James_P._Johnson"
+     },
+     {
+      "f": "串流側三種查法全部落空。`search`（us／gb／jp）以盤名＋掛名只回 stride 獨奏的各種公版精選；藝人目錄 `lookup?id=272668&entity=album`（us 21 張、gb 56 張）沒有本盤；直查候選 collectionId：`308494189`《Complete Jazz Series 1944》（CJS，18 軌）含 1944-06-21 那場的〈Everybody Loves My Baby (06-21-44)〉218 秒與〈The Call Of The Blues (06-21-44)〉260 秒兩軌，`308539206`《Complete Jazz Series 1943 - 1944》（20 軌）含 1944-03-04 那場的〈After You've Gone (03-04-44)〉267 秒一軌，`1403915166`《Classic Sessions Vol. 3》（Sony，57 軌）與 `308492180`《Complete Jazz Series 1944》（20 軌）都是別的場次。**單一條目最高覆蓋 2/6，1944-10-26 那場的三軌（Tishomingo Blues／Walking The Dog／At The Ball）三種查法全部查無。**",
+      "src": "https://itunes.apple.com/lookup?id=308494189&country=gb&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c95-b",
+    "album": "Carolina Shout",
+    "facts": [
+     {
+      "f": "英文維基〈James P. Johnson〉開頭：James Price Johnson（1894 年 2 月 1 日–1955 年 11 月 17 日）是美國鋼琴家與作曲家，stride piano 的開路者，也是錄音早期最重要的鋼琴家之一；他對 Count Basie、Duke Ellington、Art Tatum、Thelonious Monk 與他的學生 Fats Waller 都有重大影響。音樂學者 David Schiff 稱他為「The Invisible Pianist」。",
+      "src": "https://en.wikipedia.org/wiki/James_P._Johnson"
+     },
+     {
+      "f": "英文維基〈Biograph Records〉：這家廠牌 1967 年由 Arnold S. Caplin 創立，專門再發行美國早期的 ragtime、爵士與藍調；**1970 年 Biograph 向 QRS Records 買下了以鋼琴紙卷製成之錄音的發行權**，其中包括 Scott Joplin 與 Fats Waller 的作品。",
+      "src": "https://en.wikipedia.org/wiki/Biograph_Records"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Jazz Band Ball",
+    "manifest": "onboarding-manifest-c135-20260917.json",
+    "desc": "六軌只有一軌有 Ben Webster：1944 年 3 月之後，管樂換成了 Edmond Hall 的單簧管。三場錄音都在 WOR Studios，3 月 4 日那場留下〈After You've Gone〉，6 月 21 日出兩軌、10 月 26 日出三軌。寫〈Charleston〉的那位 stride 宗師在這裡是樂團領班，左手撐住整個節奏部，其餘是七人編制。1951 年三場的六面併成一張 10 吋，編號 LP 7012。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7a44da58-49e1-4490-b96c-ff29a999c712&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-7000-series/",
+     "https://www.discogs.com/master/1705301",
+     "https://en.wikipedia.org/wiki/James_P._Johnson",
+     "https://itunes.apple.com/lookup?id=308494189&country=gb&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/7a44da58-49e1-4490-b96c-ff29a999c712"
+    ]
+   },
+   {
+    "album": "Snowy Morning Blues",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "stride 鋼琴的奠基者 Johnson 在 Decca 體系的獨奏與二重奏，二十軌分成兩段時間：前四首錄於 1930 年 1 月 21 日，其餘來自 1944 年六月至九月的四場。1944 年那批有八首掛在 Fats Waller 名下的曲子，由鼓手 Eddie Dougherty 搭一層極簡的節奏。他的左手在低音與和弦之間跳動、右手切分不落在拍上；〈Carolina Shout〉是同代鋼琴手的考題，Duke Ellington 就是照 1921 年的紙捲一個音一個音學下來的。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/James_P._Johnson",
+     "https://musicbrainz.org/release/918673ec-5cdd-4b47-bb6f-2d25ada5eaa0"
+    ]
+   },
+   {
+    "album": "Carolina Shout",
+    "manifest": "onboarding-manifest-c95-20260910.json",
+    "desc": "Duke Ellington 是照著一捲鋼琴紙卷，一個音一個音學會〈Carolina Shout〉的。那是 1921 年的 QRS 紙卷。他 1917 到 1927 年間為 Aeolian、Artempo、QRS 等公司錄紙卷，是 stride piano 的開路者，也教過 Fats Waller。〈The Charleston〉1923 年在他的百老匯秀《Runnin' Wild》裡首度亮相。Biograph 整理的這一輯十四軌全是獨奏鋼琴，1988 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/573ca4f6-67c7-380a-b5d5-227e110c362b",
+     "https://musicbrainz.org/release/aa88a4f0-8de6-4fa0-80ff-1a127be8f021",
+     "https://en.wikipedia.org/wiki/James_P._Johnson",
+     "https://en.wikipedia.org/wiki/Biograph_Records",
+     "https://music.apple.com/us/album/203053431"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jelly roll morton",
+  "name": "Jelly Roll Morton",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1988,
+   2005
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Birth of the Hot",
+    "year": 1995,
+    "genres": [
+     "jazz",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Complete Library of Congress Recordings",
+    "year": 2005,
+    "genres": [
+     "jazz",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Pearls",
+    "year": 1988,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c95-b",
+    "album": "The Pearls",
+    "facts": [
+     {
+      "f": "英文維基〈Jelly Roll Morton〉開頭：Ferdinand Joseph LaMothe（約 1890 年 9 月 20 日–1941 年 7 月 10 日），藝名 Jelly Roll Morton，是路易斯安那克里奧爾裔的美國藍調與爵士鋼琴家、樂團領班與作曲家。「Morton 是爵士的第一位編曲者，他證明了一個根植於即興的樂種，即使被寫成譜也能保有它的本質。」他 1915 年出版的〈Jelly Roll Blues〉是最早付印的爵士作品之一。",
+      "src": "https://en.wikipedia.org/wiki/Jelly_Roll_Morton"
+     },
+     {
+      "f": "同一條目：**1926 年 Morton 與 Victor Talking Machine Company 簽約**，得以帶一支排練充分的樂團到 Victor 在芝加哥的錄音室演奏他的編曲；這些以 Jelly Roll Morton and His Red Hot Peppers 名義錄下的作品，參與者包括 **Kid Ory**、Omer Simeon、George Mitchell、Johnny St. Cyr、Barney Bigard、Johnny Dodds、Baby Dodds 與 Andrew Hilaire。",
+      "src": "https://en.wikipedia.org/wiki/Jelly_Roll_Morton"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Birth of the Hot",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Jelly Roll Morton 自稱發明了爵士，誇言之外，他作為爵士第一位編曲家的地位無可動搖——證據正是 1926 至 27 年在芝加哥率 Red Hot Peppers 留下的場次。這張 1995 年 RCA Bluebird 官方結集收齊〈Black Bottom Stomp〉〈The Chant〉〈Dead Man Blues〉〈Doctor Jazz〉〈Wolverine Blues〉等名演並附替代錄次：三管前線的對位、事先寫定的段落轉換與刻意留白的獨奏空隙，示範了根植即興的音樂如何被作曲思維組織起來而不失本色。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Jelly_Roll_Morton",
+     "https://musicbrainz.org/release-group/046a81bc-528c-3137-94d3-1ad5d6b6751c"
+    ]
+   },
+   {
+    "album": "The Complete Library of Congress Recordings",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "1938 年 Alan Lomax 在國會圖書館架起錄音機，讓 Morton 邊彈邊講，把紐奧良從 ragtime 到爵士的變化一路示範下來——他模仿別人的彈法、糾正別人的說法，順帶把自己說成爵士的發明者。Rounder 2005 年這套八片裝共一百二十八軌、將近九小時，是首度不刪剪、依時序排列的版本，第八張收的是 1949 年同代人談論他的錄音。2006 年拿下葛萊美最佳歷史專輯與最佳專輯解說兩獎。口白多於音樂，先是文獻，才是唱片。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Jelly_Roll_Morton:_The_Complete_Library_of_Congress_Recordings",
+     "https://musicbrainz.org/release-group/394a2ca6-8a57-3657-bd58-e420b22fe17c"
+    ]
+   },
+   {
+    "album": "The Pearls",
+    "manifest": "onboarding-manifest-c95-20260910.json",
+    "desc": "他自稱 1902 年發明了爵士，這個說法後來受到批評。Scott Yanow 說他誇大自己分量反而在身後害了自己，「他身為早期創新者的成就如此巨大，其實根本不需要拉長事實」。維基稱他是爵士的第一位編曲者，1915 年出版的〈Jelly Roll Blues〉是最早付印的爵士作品之一。1926 年他與 Victor 簽約，帶排練充分的樂團進芝加哥錄音室，以 Red Hot Peppers 之名錄下這些編曲。Bluebird 整理的這一輯收二十三軌，1988 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b34cfd15-c52f-3a01-b5f7-2ecc636f674a",
+     "https://musicbrainz.org/release/312b8e0e-08a9-4250-8286-a08e4936bbbd",
+     "https://en.wikipedia.org/wiki/Jelly_Roll_Morton",
+     "https://music.apple.com/us/album/302055819",
+     "https://music.apple.com/gb/album/504543940"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jim hall",
+  "name": "Jim Hall",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1957,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Concierto",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "... Where Would I Be?",
+    "year": 1971,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Jazz Guitar",
+    "year": 1957,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c137-a",
+    "album": "Jazz Guitar",
+    "facts": [
+     {
+      "f": "英文維基：這是 Jim Hall 的首張專輯，1957 年 1 月 10 日與 24 日在洛杉磯為 Pacific Jazz 錄音，製作人 Richard Bock，1957 年以單聲道 LP（PJ-1227）發行、10 軌，曲目以標準曲為主；當時 Hall 是 Chico Hamilton 五重奏的成員，該團也在 Pacific Jazz 錄音。編制是吉他／鋼琴／貝斯的三重奏——這個組合由 Nat King Cole 在 1940 年代帶紅，Tal Farlow 1956 年也在 Norgran 與 Verve 用過兩次。**《Jazz Guitar》賣得不夠好，Pacific Jazz 沒有替他錄續作**，Hall 此後十餘年以伴奏與錄音室樂手為業，直到 1969 年 MPS 的《It's Nice to Be With You》才再有自己掛名的專輯（其間有數張聯合掛名作）。1963 年——在 Wes Montgomery 與 Kenny Burrell 的吉他專輯正好賣的時候——Pacific Jazz 決定再發本盤，**但找鼓手 Larry Bunker 補錄了鼓聲軌，並把半數曲目剪短、刪掉 Carl Perkins 與 Red Mitchell 的獨奏段；這些剪輯直接動在母帶上，除〈Things Ain't What They Used to Be〉一首外，原始長度的版本沒有留備份**。",
+      "src": "https://en.wikipedia.org/wiki/Jazz_Guitar_(album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Jazz Guitar",
+    "manifest": "onboarding-manifest-c137-20260917.json",
+    "desc": "1963 年再發時廠牌補錄了鼓聲、剪短半數曲目，而且剪的是母帶本身。1957 年 1 月 10 日與 24 日在洛杉磯錄成，是他的出道盤，編制只有吉他、鋼琴與貝斯：Hall 的單音線條乾淨克制，Carl Perkins 的鋼琴與 Red Mitchell 的貝斯輪流接話。十首全是標準曲，各四到六分鐘。當年的樂評說這把吉他讓人想起 Charlie Christian。1957 年由 Pacific Jazz 以 PJ-1227 發行，那次剪輯只有一首留下原始長度。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e70c8c40-97dc-3f61-abc6-e2e5c6963649&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-05-13.pdf",
+     "https://en.wikipedia.org/wiki/Jazz_Guitar_(album)",
+     "https://www.discogs.com/search/?catno=PJ-1227",
+     "https://itunes.apple.com/lookup?id=1398455521&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/e70c8c40-97dc-3f61-abc6-e2e5c6963649"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jimmy giuffre",
+  "name": "Jimmy Giuffre",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1957,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Jimmy Giuffre 3",
+    "year": 1957,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Free Fall",
+    "year": 1963,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dragonfly",
+    "year": 1983,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "john zorn",
+  "name": "John Zorn",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1986,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Naked City",
+    "year": 1990,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Big Gundown",
+    "year": 1986,
+    "genres": [
+     "jazz",
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Spillane",
+    "year": 1987,
+    "genres": [
+     "jazz",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51c-c",
+    "album": "Spillane",
+    "facts": [
+     {
+      "f": "〈Two-Lane Highway〉18 分 16 秒是為藍調吉他手 Albert Collins 量身寫的，鼓由 Ronald Shannon Jackson 與 Bobby Previte 分擔；〈Forbidden Fruit〉10 分 20 秒副題作「Variations for Voice, String Quartet and Turntables」，由 Kronos Quartet 與唱盤手 Christian Marclay 演出。",
+      "src": "https://en.wikipedia.org/wiki/Spillane_(album)"
+     },
+     {
+      "f": "素材來自推理作家 Mickey Spillane 筆下的偵探 Mike Hammer 系列，Zorn 把小說裡的場景描述寫在索引卡上當作結構。",
+      "src": "https://en.wikipedia.org/wiki/Spillane_(album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Big Gundown",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "他把義大利西部片的配樂拆碎，交給管風琴、口哨與三把電吉他重組。拆的是 Ennio Morricone 的作品，專輯名取自 1966 年一部由他配樂的片子。口哨與口琴出自 Toots Thielemans，電吉他是 Bill Frisell、Fred Frith 與 Vernon Reid，管風琴是 Big John Patton。1986 年由 Nonesuch 的 Icon 系列發行。這是 Zorn 的創作突破，也是他第一次大規模動用多軌錄音、疊錄與繁複編曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2481781-John-Zorn-The-Big-Gundown-John-Zorn-Plays-The-Music-Of-Ennio-Morricone",
+     "https://en.wikipedia.org/wiki/The_Big_Gundown_(album)",
+     "https://musicbrainz.org/release-group/fec0b67b-3435-3a72-93bf-57b8fa047894"
+    ]
+   },
+   {
+    "album": "Spillane",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "樂手拿到的樂譜是一疊索引卡，每張只寫一個場景。這套作曲法叫 file card，樂手靠卡上的提示與輪廓即興接續；場景描述取自推理作家 Mickey Spillane 筆下的偵探 Mike Hammer 系列。1987 年由 Elektra Nonesuch 發行。同名曲由 Bill Frisell 彈吉他，John Lurie 以偵探的口吻旁白；〈Forbidden Fruit〉則交給 Kronos Quartet 與唱盤手 Christian Marclay。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Spillane_(album)",
+     "https://musicbrainz.org/release-group/c257f57c-9b4f-35eb-b5bf-d2068436b62c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "johnny hammond",
+  "name": "Johnny Hammond",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1971,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Gears",
+    "year": 1975,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Breakout",
+    "year": 1971,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Higher Ground",
+    "year": 1974,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Breakout",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "Creed Taylor 為 CTI 開設的子廠 Kudu 以此作開張（KU-01），也是 Johnny Hammond 把本名裡的 Smith 拿掉的第一張唱片。錄音仍由 Rudy Van Gelder 操刀：Hammond 的 B-3 走低音與和聲，Billy Cobham 的鼓、Johnny Williams 的電貝斯與 Airto Moreira 的打擊樂構成節奏層，前線是 Hank Crawford 的中音薩克斯風與單飛前的 Grover Washington Jr.，後者同時擔任部分編曲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Breakout_(Johnny_Hammond_album)",
+     "https://musicbrainz.org/release-group/8bcda41f-4a3f-3a4c-b35d-b0dc0ad2d7bc"
+    ]
+   },
+   {
+    "album": "Higher Ground",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "爵士風琴手 Johnny “Hammond” Smith 1973 年替 CTI 旗下 Kudu 廠錄下的四首長篇，Bob James 編曲指揮並兼彈電鋼琴與 Mellotron，Ron Carter、Steve Gadd、Joe Henderson 與 George Benson 在列。翻自 Stevie Wonder 的〈Higher Ground〉長逾十分鐘，〈Summertime／The Ghetto〉把 Gershwin 接上 Donny Hathaway，〈Big Sur Suite〉後來被 Beastie Boys 取樣。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Higher_Ground_(Johnny_Hammond_album)",
+     "https://musicbrainz.org/release-group/4f9ff60d-b260-4923-b948-b0ad05931319"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "judy garland",
+  "name": "Judy Garland",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1956,
+   1961
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Judy at Carnegie Hall",
+    "year": 1961,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Judy",
+    "year": 1956,
+    "genres": [
+     "jazz",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Alone",
+    "year": 1957,
+    "genres": [
+     "jazz",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 2,
+   "facts": 6,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51d-b",
+    "album": "Judy",
+    "facts": [
+     {
+      "f": "1956 年 10 月 10 日由 Capitol Records 發行（編號 T-734），Nelson Riddle 編曲並指揮，全碟 11 首，開場是 Harold Arlen 與 Johnny Mercer 的〈Come Rain or Come Shine〉。",
+      "src": "https://musicbrainz.org/release-group/63ac4773-4faf-33a8-9409-ae41cfff3bc2"
+     },
+     {
+      "f": "2024 年 HDTT 發行《The Alternate \"Judy\" Album》，收錄 1956 年未發表的替換錄音——她當時得了呼吸道感染，部分試唱的聲音狀況受影響，後來在正式版裡被換掉；這批稀有的醋酸盤由設計師與收藏家 Raphael Geroni 持有。",
+      "src": "https://en.wikipedia.org/wiki/Judy_(Judy_Garland_album)"
+     },
+     {
+      "f": "Nelson Riddle 是 Capitol 的招牌編曲家，同時期替 Frank Sinatra、Nat King Cole、Ella Fitzgerald、Dean Martin、Peggy Lee 編曲。",
+      "src": "https://en.wikipedia.org/wiki/Nelson_Riddle"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c51d-b",
+    "album": "Alone",
+    "facts": [
+     {
+      "f": "1957 年 5 月 6 日由 Capitol Records 發行（編號 T-835），Gordon Jenkins 編曲並指揮，是她的第七張錄音室專輯。",
+      "src": "https://musicbrainz.org/release-group/59fd6916-7f68-3398-9485-9cd6853aec66"
+     },
+     {
+      "f": "這張刻意離開她慣唱的百老匯與電影歌曲，整張圍繞孤獨這個主題選歌。",
+      "src": "https://en.wikipedia.org/wiki/Alone_(Judy_Garland_album)"
+     },
+     {
+      "f": "Gordon Jenkins 1945 年進 Decca，替 Billie Holiday、Louis Armstrong、Ella Fitzgerald、Dick Haymes 編曲與指揮，1940 年代末就以厚重的弦樂寫法出名；他也是 Frank Sinatra、Nat King Cole 與 Judy Garland 這批歌手的常用編曲家。",
+      "src": "https://en.wikipedia.org/wiki/Gordon_Jenkins"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Judy at Carnegie Hall",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "一夜實況錄成雙唱片，讓 Garland 成為首位拿下葛萊美年度專輯獎的女性。演唱會辦在 1961 年 4 月 23 日的卡內基音樂廳，同年 7 月 10 日由 Capitol 發成雙唱片。1962 年頒發的第 4 屆葛萊美，這張四項全數得獎：年度專輯、最佳女歌手演唱、最佳非古典類錄音工程，連最佳專輯封面都拿下。專輯在告示牌榜上停留 73 週、其中 13 週坐鎮冠軍，並獲金唱片認證。現場錄音整段保留她與觀眾之間的即時互動，唱腔渾厚而戲劇化。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Judy_at_Carnegie_Hall",
+     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/judy.pdf",
+     "https://musicbrainz.org/release-group/62c88992-750d-3b07-991f-d4dab86d2d78"
+    ]
+   },
+   {
+    "album": "Judy",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "Capitol 派給她的編曲家，正是替 Sinatra 寫出那套聲音的人。Nelson Riddle 是 Capitol 的招牌，這張 1956 年 10 月 10 日發行的唱片由他編曲並指揮，開場是〈Come Rain or Come Shine〉。選曲刻意配合她的唱法挑，快慢交錯，好維持整張的情緒起伏。本作在 1956 年 11 月 24 日登上 Billboard 的 Pop Albums Coming Up Strong 榜第 2。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/63ac4773-4faf-33a8-9409-ae41cfff3bc2",
+     "https://en.wikipedia.org/wiki/Judy_(Judy_Garland_album)",
+     "https://en.wikipedia.org/wiki/Nelson_Riddle"
+    ]
+   },
+   {
+    "album": "Alone",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "他們把百老匯與電影歌單整個抽掉，只留下深夜。1957 年 5 月 6 日由 Capitol Records 發行的第七張錄音室專輯，由 Gordon Jenkins 編曲並指揮，整張圍繞孤獨這個主題選歌，離開了她慣唱的曲目。收的全是老派抒情標準曲——〈By Myself〉〈Mean to Me〉——最後以〈Happy New Year〉收尾。本作在 1957 年 7 月 15 日登上 Billboard 的 Pop Albums Coming Up Strong 榜第 2。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/59fd6916-7f68-3398-9485-9cd6853aec66",
+     "https://en.wikipedia.org/wiki/Alone_(Judy_Garland_album)",
+     "https://en.wikipedia.org/wiki/Gordon_Jenkins"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kamasi washington",
+  "name": "Kamasi Washington",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2015,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Epic",
+    "year": 2015,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Heaven and Earth",
+    "year": 2018,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fearless Movement",
+    "year": 2024,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ken mcintyre",
+  "name": "Ken McIntyre",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1963,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Home",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Year of the Iron Sheep",
+    "year": 1963,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "'Way, 'Way Out",
+    "year": 1963,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c139-a",
+    "album": "Year of the Iron Sheep",
+    "facts": [
+     {
+      "f": "**Billboard 1963 年 2 月 9 日第 29 頁的「JAZZ SPECIAL MERIT」欄整段**：「YEAR OF THE IRON SHEEP — Ken McIntyre. **United Artists Jazz UAJ 14015 (M); UAJS 15015 (S)** — **The title for this album is derived from the Tibetan calendar (now there's a far-out bit) since McIntyre was born in “The Year Of The Iron Sheep.”** **Third album outing for McIntyre (first for UA)**, it's a showcase for medium-length compositions all by McIntyre, **except for the Mercer-Raksin “Laura.”** **McIntyre's work on alto and flute is exciting and lyrical, and worth hearing as a new direction in scored jazz.**」⚠ **關鍵在同一欄還一起評了另外四張 United Artists Jazz**：Kenny Dorham《Matador》15007、Billy Strayhorn《The Peaceful Side》UAJS 15010、**Vi Redd《Bird Call》15016**、Oliver Nelson Ork《Phaedra》15019。**五張 UA Jazz 同週受評，是一批貨一起出的形狀。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1963/Billboard%201963-02-09.pdf"
+     },
+     {
+      "f": "**Cash Box 1963 年 3 月 9 日的爵士專輯評介也評了本盤**（由 c-139 b 組代理掃出、本層覆核原文）：「“**YEAR OF THE SHEEP**” — Ken McIntyre — **United Artists 15015**. Ken McIntyre should be winning quite a few laurels in jazz circles if this bright United Artists date is any indication of his talents. **The multi-talented artist, who plays the alto sax, the flute, penned most of the selections on the album.** McIntyre is a sophisticated musician, deeply concerned with subtle melodic and rhythmic progressions. He wails in a distinctive, professional style on “Say What,”...」⚠ **這則有兩處誤植**：盤名少了「Iron」（印成 Year of the Sheep）、廠牌寫成「United Artists」而非 United Artists Jazz；**靠 15015 這個目錄號、編制（中音薩克斯風＋長笛）、〈Say What〉這首曲名交叉定位才確認是本盤**（第 509c 條）。同一期 Cash Box 前後幾週的 UA Jazz 評論還有 1963-02-02 的 Oliver Nelson《Impressions Of Phaedra》15019 與 1963-02-09 的 Billy Strayhorn《The Peaceful Side》UAJS 15010——**與 Billboard 那一欄是同一批貨。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1963/CB-1963-03-09.pdf"
+     },
+     {
+      "f": "Discogs 原壓 3849797（**United Artists Jazz UAJ 14015，US mono，灰標、大薩克斯風手標誌**）的完整名單：**Ken McIntyre（alto saxophone, flute）、Jaki Byard／Ed Stoute（piano）、Ron Carter／Ahmed Abdul-Malik（bass）、Ben Riley／Louis Hayes／Warren Smith（drums）、John Mancebo Lewis（trombone）**；製作 **Alan Douglas**、錄音 **Bill Schwartau**、封面設計 **Frank Gauna**、封面攝影 **Chuck Stewart**、內頁文案 Kaijee。⚠ **Discogs 把年份標成 1962，但同一段 UA Jazz 目錄號的 Discogs 年份彼此打架**：`catno=UAJ 14007`（Kenny Dorham《Matador》）與 `catno=UAJ 14010`（Billy Strayhorn《The Peaceful Side》）**都標 1963**，`catno=UAJ 14001`（Coltrane Time）甚至標 1963——**但 Cash Box 1962-07-14 明寫 Coltrane Time 是 UA Jazz 1962 年 7 月首發五張之一。這一段的 Discogs 年份兩個方向都會錯，多半抄自封套的 © 年，不是上市年**（第 531 條在這一段失效，要退回紙本）。",
+      "src": "https://api.discogs.com/database/search?catno=UAJ%2014015"
+     },
+     {
+      "f": "英文維基「Year of the Iron Sheep」把三場錄音拆得很清楚（引 Michael Fitzgerald 的 Makanda Ken McIntyre 作品目錄）：本盤**在紐約的 Sound Mixers 錄音室錄製、Alan Douglas 製作**，除〈Laura〉外全是 McIntyre 的曲。**末軌〈Someday〉來自 1962 年 6 月 11 日的一場 session（長號手 John Mancebo Lewis 參與的那場），⚠ 但雖然封套把他列名，那場裡唯一一首收進本盤的曲子恰好是他沒吹的那首**；**第二場 1962 年 8 月 31 日錄下〈Cosmos〉**，編制是 McIntyre 加 Jaki Byard（鋼琴）、Ron Carter（貝斯）、Louis Hayes（鼓）；**第三場四天後（9 月 4 日）Hayes 換成 Ben Riley，錄下其餘四軌**。〈Someday〉那軌 McIntyre 吹的是長笛，鋼琴是 Ed Stoute、貝斯是 Ahmed Abdul-Malik。本盤後來與另一張專輯合併成 2 CD 的《The Complete United Artists Sessions》。**維基把本盤歸在 1962，與 Discogs 同源，本層不採（見 yearVerified）。**",
+      "src": "https://en.wikipedia.org/wiki/Year_of_the_Iron_Sheep"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c139-b",
+    "album": "'Way, 'Way Out",
+    "facts": [
+     {
+      "f": "英文維基《Makanda Ken McIntyre》的唱片列表把本張記為「''Way, Way Out'' (United Artists, **1963**)」；McIntyre（1931–2001）生於波士頓，1960 年的出道盤《Looking Ahead》是與 **Eric Dolphy** 合錄的——**本盤第一軌〈Miss Ann〉正是 Dolphy 的曲子**，兩人 1960 年就一起錄過。池中已有他 1975 年的《Home》。",
+      "src": "https://en.wikipedia.org/wiki/Makanda_Ken_McIntyre"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Year of the Iron Sheep",
+    "manifest": "onboarding-manifest-c139-20260917.json",
+    "desc": "盤名取自藏曆：他出生的那一年是鐵羊年。六軌分三場錄成，1962 年 6 月 11 日、8 月 31 日與 9 月 4 日，錄於紐約的 Sound Mixers。主體四軌是他吹中音與長笛，配 Jaki Byard、Ron Carter 與 Ben Riley；〈Cosmos〉那場的鼓是 Louis Hayes，〈Someday〉來自六月那場。六軌只有〈Laura〉出自別人。封套列了長號手 John Mancebo Lewis，收進盤裡的那首他沒吹。1963 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=50535361-182f-4694-af15-800e6fb346ac&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1963/Billboard%201963-02-09.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1963/CB-1963-03-09.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1963/CB-1963-01-05.pdf",
+     "https://api.discogs.com/database/search?catno=UAJ%2014015",
+     "https://en.wikipedia.org/wiki/Year_of_the_Iron_Sheep",
+     "https://itunes.apple.com/lookup?id=1450969199&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/50535361-182f-4694-af15-800e6fb346ac"
+    ]
+   },
+   {
+    "album": "'Way, 'Way Out",
+    "manifest": "onboarding-manifest-c139-20260917.json",
+    "desc": "他一個人吹中音、長笛與雙簧管，內頁文案也是自己寫的。1963 年 5 月 27 日錄音，同年由 United Artists 以 UAL 3336 出版，製作是 George Wein。伴奏是 Bob Cunningham 的貝斯與 Edgar Bateman 的鼓，另有 Selwart Clarke 領銜的弦樂。七軌裡〈Lois Marie〉〈Kaijee〉多為自作，開場的〈Miss Ann〉是 Eric Dolphy 的曲子，兩人 1960 年一起錄過他的出道盤。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=63d63827-7511-4741-a359-6676f6e435cb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1964/CB-1964-01-11.pdf",
+     "https://api.discogs.com/database/search?catno=UAL+3336",
+     "https://en.wikipedia.org/wiki/Makanda_Ken_McIntyre",
+     "https://musicbrainz.org/release-group/63d63827-7511-4741-a359-6676f6e435cb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kenny drew trio",
+  "name": "Kenny Drew Trio",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1974,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dark Beauty",
+    "year": 1974,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "If You Could See Me Now",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Morning",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kenny wheeler",
+  "name": "Kenny Wheeler",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1997
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Gnu High",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "All the More",
+    "year": 1997,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Song for Someone",
+    "year": 1973,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c71-b",
+    "album": "Song for Someone",
+    "facts": [
+     {
+      "f": "同一筆原盤的 credit 欄是大樂團規模：Kenny Wheeler（小號、粗管短號）、Dave Hancock、Greg Bowen、Ian Hamer（小號）；Bobby Lamb、Chris Pyne、David Horler、Keith Christie（長號）、Jim Wilson 與 Malcolm Griffiths（低音長號，Griffiths 只在 B1）、Alf Reece（低音號）；Mike Osborne（中音薩克斯風）、Duncan Lamont（次中音薩克斯風、長笛）、Evan Parker（次中音與高音薩克斯風，只在 A4 與 B1）；John Taylor（鋼琴）、Alan Branscombe（鋼琴、電鋼琴）、Ron Mathewson（貝斯）、Tony Oxley（打擊）、Norma Winstone（人聲）；**Derek Bailey 的吉他只出現在 B1〈The Good Doctor〉一軌**。製作人 Robert Cornford（並負責重混），錄音工程 Keith Grant、重混工程 Alan O'Duffy。",
+      "src": "https://www.discogs.com/release/2349165-Kenny-Wheeler-Song-For-Someone"
+     },
+     {
+      "f": "Discogs 的 Incus 廠牌條目記：黑膠時期的 Incus 目錄號習慣在數字前加上「INCUS」字樣，少數早期發行品的唱片標上印的是「Incus Records」而非單字「Incus」，黑色標的早期盤尤其常見——本碟 1973 年原盤正屬這一種。",
+      "src": "https://www.discogs.com/label/1264835-Incus"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Song for Someone",
+    "manifest": "onboarding-manifest-c71-20260904.json",
+    "desc": "Derek Bailey 只在一首曲子裡出現，而那首是碟上最長的。1973 年 1 月 10 與 11 日錄於 Olympic Sound Studios，是 Incus 的 INCUS 10。碟上是大樂團：小號、長號、薩克斯風、兩台鋼琴、貝斯、Tony Oxley 的打擊與 Norma Winstone 的人聲，六首曲子都是 Kenny Wheeler 寫的。〈The Good Doctor〉在 2004 年 psi 的 CD 上是 15 分 15 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2349165-Kenny-Wheeler-Song-For-Someone",
+     "https://www.discogs.com/release/465717-Kenny-Wheeler-Song-For-Someone",
+     "https://www.discogs.com/master/253480-Kenny-Wheeler-Song-For-Someone",
+     "https://www.discogs.com/release/2312288-Kenny-Wheeler-Song-For-Someone",
+     "https://musicbrainz.org/release-group/3a0ef358-909a-3d8c-ac03-dfb3e55f7789",
+     "https://www.discogs.com/label/1264835-Incus"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "lambert, hendricks & ross",
+  "name": "Lambert, Hendricks & Ross",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1958,
+   1959
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sing a Song of Basie",
+    "year": 1958,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Hottest New Group in Jazz",
+    "year": 1959,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Swingers!",
+    "year": 1959,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51c-b",
+    "album": "The Hottest New Group in Jazz",
+    "facts": [
+     {
+      "f": "伴奏班底包括 Harry「Sweets」Edison（小號）、Pony Poindexter（中音薩克斯風）與 Gildo Mahones（鋼琴），貝斯與鼓手在不同場次更換；原版收十首，從〈Charleston Alley〉到〈Everybody's Boppin'〉。",
+      "src": "https://en.wikipedia.org/wiki/The_Hottest_New_Group_in_Jazz"
+     },
+     {
+      "f": "三重唱由 Dave Lambert、Jon Hendricks 與 Annie Ross 於 1957 年組成，同年在 ABC-Paramount 發行的《Sing a Song of Basie》靠疊錄讓三個人唱出整個 Count Basie 樂團的聲部，該作 1998 年獲頒葛萊美名人堂獎。",
+      "src": "https://en.wikipedia.org/wiki/Lambert,_Hendricks_%26_Ross"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c51c-b",
+    "album": "The Swingers!",
+    "facts": [
+     {
+      "f": "錄音陣容是 Zoot Sims（次中音薩克斯風）、Russ Freeman（鋼琴）、Freddie Green 與 Jim Hall（吉他）、Eddie Jones（貝斯）、Sonny Payne（鼓），Dave Lambert、Jon Hendricks、Annie Ross 主唱。",
+      "src": "https://www.freshsoundrecords.com/zoot-sims-albums/5433-zoot-sims-meets-lambert-hendricks-ross-los-angeles-1959-3-lps-on-2-cds.html"
+     },
+     {
+      "f": "這批錄音來自 Zoot Sims 1959 年回洛杉磯待的那一個月，他當時在當地樂手之間極為搶手。",
+      "src": "https://www.freshsoundrecords.com/zoot-sims-albums/5433-zoot-sims-meets-lambert-hendricks-ross-los-angeles-1959-3-lps-on-2-cds.html"
+     },
+     {
+      "f": "vocalese 是替器樂獨奏的旋律逐音填上歌詞來唱的手法，這個三重唱是它的開創者；Annie Ross 替 Wardell Gray 的旋律填詞的〈Twisted〉是最著名的範例。",
+      "src": "https://en.wikipedia.org/wiki/Lambert,_Hendricks_%26_Ross"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Sing a Song of Basie",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Dave Lambert、Jon Hendricks、Annie Ross 三人 1957 年錄製、1958 年發行的首張合作盤,Creed Taylor 製作,伴奏是 Nat Pierce、Freddie Green 等 Basie 系節奏組。他們把整套 Count Basie 大樂團編曲改由人聲演唱——〈Every Day I Have the Blues〉〈One O'Clock Jump〉的管樂線由 Hendricks 配上歌詞逐句唱出,確立 vocalese 的團體唱法,1998 年入選葛萊美名人堂。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sing_a_Song_of_Basie",
+     "https://en.wikipedia.org/wiki/Lambert,_Hendricks_%26_Ross",
+     "https://musicbrainz.org/release-group/bd2549a3-23d6-3326-bdb7-6a6db3738fe8"
+    ]
+   },
+   {
+    "album": "The Hottest New Group in Jazz",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "唱片名字直接抄了樂評的一句話：爵士圈最火燙的新團體。那句形容出自《DownBeat》。1959 年 12 月由 Columbia 發行，是三重唱在這家大廠牌的第一張。他們 1957 年組團，同年的《Sing a Song of Basie》靠疊錄讓三個人唱出整個 Count Basie 樂團的聲部。原版十首，從〈Charleston Alley〉到〈Everybody's Boppin'〉。他們從 1959 到 1963 年連年拿下該刊讀者票選的最佳人聲團體。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Hottest_New_Group_in_Jazz",
+     "https://en.wikipedia.org/wiki/Lambert,_Hendricks_%26_Ross",
+     "https://musicbrainz.org/release-group/bf62bb64-f8d9-4f42-8fb5-ec27d2899c52"
+    ]
+   },
+   {
+    "album": "The Swingers!",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "Rollins、Davis 與 Parker 的獨奏，被三副喉嚨逐音填上歌詞。這種手法叫 vocalese，替器樂獨奏的旋律逐音填詞來唱，這個三重唱正是它的開創者。這裡被填詞的是〈Airegin〉〈Four〉與〈Now's the Time〉這批咆勃經典。曲目 1959 年 3 月錄於洛杉磯，由 World Pacific 發行；這批錄音來自 Zoot Sims 回洛杉磯待的那一個月，他當時在當地樂手之間極為搶手。",
+    "sourceUrls": [
+     "https://www.freshsoundrecords.com/zoot-sims-albums/5433-zoot-sims-meets-lambert-hendricks-ross-los-angeles-1959-3-lps-on-2-cds.html",
+     "https://en.wikipedia.org/wiki/Lambert,_Hendricks_%26_Ross",
+     "https://musicbrainz.org/release-group/6b556ad5-fd96-3ccf-b9e4-61b2c8610fd6"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "laufey",
+  "name": "Laufey",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2022,
+   2025
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "A Matter of Time",
+    "year": 2025,
+    "genres": [
+     "pop",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bewitched",
+    "year": 2023,
+    "genres": [
+     "jazz",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Everything I Know About Love",
+    "year": 2022,
+    "genres": [
+     "jazz",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lennie tristano",
+  "name": "Lennie Tristano",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1956,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Lennie Tristano",
+    "year": 1956,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Descent Into the Maelstrom",
+    "year": 1978,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The New Tristano",
+    "year": 1962,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "The New Tristano",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "鋼琴家 Lennie Tristano 1961 年錄音、1962 年 2 月由 Atlantic 發行的獨奏專輯。封面特別聲明全片不使用多軌、疊錄或變速——正面回應 1956 年前作引發的爭議。七首曲目六首為原創,多把標準曲和聲改寫為新線條,左手行走低音撐起結構,右手在其上展開長篇即興,〈C Minor Complex〉〈G Minor Complex〉裡塊狀和弦與交錯節奏的密度驚人。鋼琴家 Alan Broadbent 稱之為獨奏爵士鋼琴專輯中無出其右的一張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_New_Tristano",
+     "https://musicbrainz.org/release-group/aea7c9ad-eab4-4a3a-8664-23751b4f4de6"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "lonnie liston smith",
+  "name": "Lonnie Liston Smith",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Expansions",
+    "year": 1975,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Astral Traveling",
+    "year": 1973,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Renaissance",
+    "year": 1976,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Renaissance",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "離開 Flying Dutchman、轉往 RCA Victor 之後的作品（APL1-1822）。開場〈Space Lady〉長六分四十秒，是這一時期的典型寫法：電鋼琴鋪長延音，節奏組維持穩定的中速放克律動，獨奏在其上緩慢展開。〈Mardi Gras (Carnival)〉走嘉年華意象的打擊樂編排，〈Mongotee〉的節奏骨架偏拉丁，〈Starlight and You〉與〈A Song of Love〉轉抒情，同名收尾曲近五分鐘。英文維基的藝人條目把本作與 Loveland、Exotic Mysteries 並列為七〇年代後半的跨界延續。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Lonnie_Liston_Smith",
+     "https://musicbrainz.org/release-group/0c92cc92-b50d-3688-8c8a-ff711a14deae"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "lonnie liston smith & the cosmic echoes",
+  "name": "Lonnie Liston Smith & The Cosmic Echoes",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1974,
+   1976
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Cosmic Funk",
+    "year": 1974,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Visions of a New World",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Reflections of a Golden Dream",
+    "year": 1976,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Cosmic Funk",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "Lonnie Liston Smith 與 The Cosmic Echoes 一九七四年為 Flying Dutchman 錄下的作品，確立了他的宇宙靈性放克路線。編制以電鋼琴長延音、Donald Smith 的無詞人聲與長笛、George Barron 的高音薩克斯風為主，四位打擊樂手讓律動鬆而不散。開場同名曲節奏最緊實，被 Jason Heller 在《Strange Stars》中舉為 sci-fi funk 的例子；其餘曲目遊走於放克與咆勃之間，並收錄 Wayne Shorter〈Footprints〉與 Coltrane〈Naima〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Cosmic_Funk",
+     "https://musicbrainz.org/release-group/50daf76b-d637-34c4-abe2-bdee049da60e"
+    ]
+   },
+   {
+    "album": "Visions of a New World",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "Lonnie Liston Smith 與 Cosmic Echoes 一九七五年在 Flying Dutchman 的作品，比前幾張更往柔滑的 soul-jazz 傾斜。開場的〈A Chance for Peace〉編制最大，Cecil Bridgewater 的小號與 Reggie Lucas 的吉他同時在場；其餘曲目交給 Smith 的鍵盤、Donald Smith 的人聲與長笛，以及 Lawrence Killian 等人的打擊樂，鋪成夜色般的緩慢律動。同名曲拆成〈Phase I〉與〈Phase II〉兩段，是全片少數帶明顯結構變化處。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Visions_of_a_New_World",
+     "https://musicbrainz.org/release-group/4c2774ec-f26c-3d7a-948a-174990ff41ff"
+    ]
+   },
+   {
+    "album": "Reflections of a Golden Dream",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "Flying Dutchman 時期的 Cosmic Echoes 作品，1976 年 9 月發行。開場〈Get Down Everybody〉把舞池節拍推到前景：Wilby Fletcher 的鼓與 Al Anderson 的貝斯咬住四四拍，Jon Faddis 等人的銅管疊在上層，Patti Austin 等三人唱和聲。其餘段落回到電鋼琴的長延音與 Guilherme Franco 的打擊樂，弟弟 Donald Smith 的長笛與人聲貫穿〈Quiet Dawn〉〈Sunbeams〉，把靈性爵士的漂浮感壓進放克律動。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Reflections_of_a_Golden_Dream",
+     "https://musicbrainz.org/release-group/fe5e5ea8-2ac0-3d53-8ba8-5298c611b859"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "machito",
+  "name": "Machito",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1956,
+   1959
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Kenya",
+    "year": 1957,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "With Flute to Boot",
+    "year": 1959,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Afro-Cuban Jazz: The Music of Chico O'Farrill",
+    "year": 1956,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 14,
+   "researchRecords": 2,
+   "facts": 6,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51b-c",
+    "album": "With Flute to Boot",
+    "facts": [
+     {
+      "f": "客座是長笛手 Herbie Mann、次中音薩克斯風手 Johnny Griffin 與長號手 Curtis Fuller，Mario Bauzá 指揮。",
+      "src": "https://www.freshsoundrecords.com/machito-albums/6290-kenya-with-flute-to-boot-2-lps-on-1-cd.html"
+     },
+     {
+      "f": "全碟的曲子與編曲全部出自客座長笛手 Herbie Mann 之手，這一點與《Kenya》不同——後者的原創曲來自 A. K. Salim 與 René Hernández。",
+      "src": "https://www.freshsoundrecords.com/machito-albums/6290-kenya-with-flute-to-boot-2-lps-on-1-cd.html"
+     },
+     {
+      "f": "唱片後來也以《Afro-Jazziac》之名再版流通；1980 年代起《Kenya》與本作常被併成一張 CD 發行。",
+      "src": "https://www.freshsoundrecords.com/machito-albums/6290-kenya-with-flute-to-boot-2-lps-on-1-cd.html"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c95-b",
+    "album": "Afro-Cuban Jazz: The Music of Chico O'Farrill",
+    "facts": [
+     {
+      "f": "該 release-group 底下 1956 年的 US release 標題用彎撇號寫成《Afro-Cuban Jazz: The Music Of Chico O'Farrill》，**MB 上登記的廠牌是 Clef Records、編號 MG C-689**（卡單記的是 Norgran MG N-1085），載體 12\" Vinyl、Cardboard/Paper Sleeve，14 軌：〈Introductory〉〈Pregon〉〈6/8〉〈Jazz〉〈Cancion Antigua〉〈Rhumba Finale〉〈Havana Special〉〈Fiesta Time〉〈Cancion〉〈Mambo〉〈(Cont´d.) Mambo〉〈6/8〉〈Jazz〉〈Rhumba Abierta〉（MB 上這 14 軌都沒有登記曲長）。",
+      "src": "https://musicbrainz.org/release/98aa2bbc-f265-474d-9006-014e3c9b235d"
+     },
+     {
+      "f": "英文維基〈Machito〉開頭：Frank Grillo（本名 Francisco Raúl Gutiérrez Grillo，1909 年 12 月 3 日–1984 年 4 月 15 日），藝名 Machito，是拉丁爵士樂手，協助精煉了 Afro-Cuban jazz，並在 Cubop 與 salsa 的形成中扮演關鍵角色。他 1940 年在紐約組成 the Afro-Cubans，由 Mario Bauzá 擔任音樂總監，把古巴節奏與大樂團編曲放進同一個團裡。George Shearing、Dizzy Gillespie、Charlie Parker、Cab Calloway 與 Stan Kenton 都把 Machito 列為影響來源。",
+      "src": "https://en.wikipedia.org/wiki/Machito"
+     },
+     {
+      "f": "英文維基〈Chico O'Farrill〉開頭：Arturo「Chico」O'Farrill（1921 年 10 月 28 日–2001 年 6 月 27 日）是古巴作曲家、編曲家與指揮，最為人知的是他在拉丁語彙、特別是 Afro-Cuban jazz 或「Cubop」上的作品；他為 Machito 寫過作品（**「Afro-Cuban suite with Charlie Parker, 1950」**），也為 Benny Goodman 的 Bebop Orchestra 寫過〈Undercurrent Blues〉。",
+      "src": "https://en.wikipedia.org/wiki/Chico_O%27Farrill"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Kenya",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1957 年錄音、Roulette 發行。Machito 與音樂總監 Mario Bauzá 自 1940 年代起把古巴 clave 接進大樂隊編制，這一輯編曲多出自 A.K. Salim 與 René Hernández。客席有 Cannonball Adderley 與 Eddie Bert，〈Cannonology〉即為前者而寫；七人打擊組含 Cándido Camero 與 Carlos「Patato」Valdés。半世紀後獲《1001 Albums You Must Hear Before You Die》收錄。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Machito",
+     "https://en.wikipedia.org/wiki/Afro-Cuban_jazz",
+     "https://musicbrainz.org/release-group/2b5535ee-adbe-33a5-8986-74eace9dd169"
+    ]
+   },
+   {
+    "album": "With Flute to Boot",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "掛的是他的名字，十二首曲子全由那位客座長笛手寫好編好。那人是 Herbie Mann，同來的還有次中音薩克斯風手 Johnny Griffin 與長號手 Curtis Fuller，樂團由 Mario Bauzá 指揮。錄音 1958 年 11 月在紐約完成，1959 年由 Roulette 發行，歸在該廠的 Birdland Series 底下，〈The African Flute〉就出自這裡。唱片後來也以《Afro-Jazziac》之名再版流通。",
+    "sourceUrls": [
+     "https://www.freshsoundrecords.com/machito-albums/6290-kenya-with-flute-to-boot-2-lps-on-1-cd.html",
+     "https://musicbrainz.org/release-group/44a43b64-d768-4e4d-9538-6b9a9e96ad60"
+    ]
+   },
+   {
+    "album": "Afro-Cuban Jazz: The Music of Chico O'Farrill",
+    "manifest": "onboarding-manifest-c95-20260910.json",
+    "desc": "樂章名一半是 Mambo、Rhumba，一半就叫〈6/8〉與〈Jazz〉。維基分析 Chico O'Farrill 的風格，是他成長時聽的古巴音樂、學校裡迷上的爵士與音樂院學的歐洲古典的融合，全被收攏在歐洲組曲的秩序形式裡。他自述：「我從來不是古巴音樂的專家……多數時候讓我的爵士感覺帶著我走。」Machito 1940 年在紐約組成 the Afro-Cubans。組曲有 Charlie Parker 參與，1950 年 12 月 21 日錄下，1956 年出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/881fe44b-3f47-44aa-9f38-aea5bf39c00b",
+     "https://musicbrainz.org/release/98aa2bbc-f265-474d-9006-014e3c9b235d",
+     "https://en.wikipedia.org/wiki/Machito",
+     "https://en.wikipedia.org/wiki/Afro-Cuban_jazz",
+     "https://en.wikipedia.org/wiki/Chico_O%27Farrill",
+     "https://itunes.apple.com/lookup?id=413738&entity=album&limit=200&country=us"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mahavishnu orchestra",
+  "name": "Mahavishnu Orchestra",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1971,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Inner Mounting Flame",
+    "year": 1971,
+    "genres": [
+     "jazz",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Birds of Fire",
+    "year": 1973,
+    "genres": [
+     "jazz",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Inner Worlds",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "manu dibango",
+  "name": "Manu Dibango",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1972,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Soul Makossa",
+    "year": 1973,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Africadelic",
+    "year": 1972,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gone Clear",
+    "year": 1980,
+    "genres": [
+     "soul",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51a-b",
+    "album": "Africadelic",
+    "facts": [
+     {
+      "f": "1972 年錄於 Mondiaphone，那是 Louis Delacour 經營的 library music 廠牌——專門替電視與電影製作方提供現成的配樂素材。",
+      "src": "https://www.soundohm.com/product/africadelic"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c51a-b",
+    "album": "Gone Clear",
+    "facts": [
+     {
+      "f": "銅管方面找來紐約的 Michael Brecker 吹薩克斯風，整場錄音的樂手同時來自牙買加與美國。",
+      "src": "https://www.thevinylfactory.com/news/manu-dibango-gone-clear-ambassador-reissued-2xlp"
+     },
+     {
+      "f": "Island 由 Chris Blackwell 創辦，1970 年代末正是這家廠牌把雷鬼推向國際市場的時期。",
+      "src": "https://www.thevinylfactory.com/news/manu-dibango-gone-clear-ambassador-reissued-2xlp"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Soul Makossa",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "喀麥隆薩克斯風手 Manu Dibango 1972 年把〈Soul Makossa〉錄成非洲盃足球賽會歌的 B 面,makossa 一詞在他的母語 Duala 語裡即「我跳舞」。DJ David Mancuso 在布魯克林挖到它,並經 WBLS 電台的 Frankie Crocker 推開,Atlantic 遂向法國 Fiesta 取得授權,1973 年結成這張美版專輯,單曲攻上 Billboard Hot 100 第 35 名。副歌那句 ma-ma-ko, ma-ma-sa, ma-ko ma-ko-sa 日後被麥可傑克森與蕾哈娜先後沿用。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Soul_Makossa",
+     "https://en.wikipedia.org/wiki/Manu_Dibango",
+     "https://musicbrainz.org/release-group/155f0e18-4ab7-3c71-a8a0-2e3d32b9fc22"
+    ]
+   },
+   {
+    "album": "Africadelic",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "原版曲名只有編號，因為它本來是賣給電視台的配樂素材。1972 年這批錄音完成於 Mondiaphone，那是 Louis Delacour 經營的 library music 廠牌，不是為零售市場企劃的專輯。曲目就叫〈Theme No 1〉〈Theme No 2〉一路排下去，旁邊只註著節奏標記，曲子幾天內寫完、一週內錄完。要等同年的〈Soul Makossa〉在國際上走紅，後來的再版才替這些曲子補上正式歌名；那首單曲被稱為史上被取樣最多次的非洲歌曲。",
+    "sourceUrls": [
+     "https://www.soundohm.com/product/africadelic",
+     "https://en.wikipedia.org/wiki/Soul_Makossa",
+     "https://musicbrainz.org/release-group/d8b8a478-dc4d-4f11-a9f6-5e023b8a43eb"
+    ]
+   },
+   {
+    "album": "Gone Clear",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "喀麥隆的薩克斯風手飛到京斯敦，節奏組交給 Sly & Robbie。Dibango 早在 1976 年就第一次到過這座城市，這張 1980 年由 Island 發行的唱片是那條線索多年之後的成品：錄音在京斯敦的 Dynamic Sounds 完成，銅管另找了紐約的 Michael Brecker。整張把喀麥隆的 makossa 節奏放進雷鬼的節奏骨架裡。Island 由 Chris Blackwell 創辦，1970 年代末正把雷鬼推向國際市場。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/cc3cc112-4304-4a96-8728-bb11eda7262a",
+     "https://www.thevinylfactory.com/news/manu-dibango-gone-clear-ambassador-reissued-2xlp"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mary lou williams",
+  "name": "Mary Lou Williams",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1974,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Free Spirits",
+    "year": 1976,
+    "genres": [
+     "jazz",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Zodiac Suite",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Zoning",
+    "year": 1974,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 18,
+   "researchRecords": 2,
+   "facts": 6,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c95-b",
+    "album": "Zodiac Suite",
+    "facts": [
+     {
+      "f": "英文維基〈Zodiac Suite〉開頭：這是美國爵士鋼琴家、作曲家 Mary Lou Williams 寫的十二段組曲，**1945 年首演**；組曲把古典音樂的元素放進爵士裡，Williams 寫作時受現代主義影響。每一段都以一個星座、以及生於該星座的樂手或表演者為靈感。她 1942 年開始寫，1945 年完成。",
+      "src": "https://en.wikipedia.org/wiki/Zodiac_Suite"
+     },
+     {
+      "f": "同一條目：她先以三重奏形式為 **Asch Records** 錄下這套組曲，之後有兩場重要演出——1945 年 12 月 31 日在 Town Hall 與 Edmond Hall 的室內爵士團合作，以及 1946 年 6 月在卡內基音樂廳與七十人編制的交響樂團合作（由 Norman Granz 接洽）。",
+      "src": "https://en.wikipedia.org/wiki/Zodiac_Suite"
+     },
+     {
+      "f": "同一條目：組曲原本寫給小編制——六首給三重奏、五首給獨奏鋼琴、一首給鋼琴與貝斯二重奏；〈Aries〉在頭一分半內就從 boogie-woogie 走到不協和，全曲使用掛留和弦、全音音階與大小調對比。各段的題獻對象包括〈Aries〉給 Ben Webster 與 Billie Holiday、〈Taurus〉給 Duke Ellington、〈Libra〉給 Art Tatum、Dizzy Gillespie、Bud Powell、Thelonious Monk、Charlie Parker 與 John Coltrane。",
+      "src": "https://en.wikipedia.org/wiki/Zodiac_Suite"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c95-b",
+    "album": "Zoning",
+    "facts": [
+     {
+      "f": "該 release-group 底下 1974 年的 US release 在 MB 上沒有登記廠牌與編號、載體欄空白，13 軌：〈Syl-o-gism〉3:30、〈Olinga〉4:06、〈Medi II〉2:10、〈Gloria〉4:42、〈Intermission〉2:25、〈Zoning Fungus II〉6:54、〈Holy Ghost〉5:27、〈Medi I〉4:59、〈Rosa Mae〉4:40、〈Ghost of Love〉4:59、〈Praise the Lord〉6:40、〈Gloria〉6:38、〈Play It Momma〉4:22。",
+      "src": "https://musicbrainz.org/release/f8bdce21-8eee-4ab6-8552-7ad5ebe1659a"
+     },
+     {
+      "f": "英文維基〈Zoning (Mary Lou Williams album)〉開頭：這是 Mary Lou Williams 1974 年由 **Mary Records** 發行的錄音室專輯，由 Williams 自己編曲，以二重奏與三重奏形式為主，搭檔多為貝斯手 Bob Cranshaw 與鼓手 Mickey Roker。**1995 年 Smithsonian Folkways 以 CD 再發，曲目表不同、封面重做，並加入兩段先前未發表的錄音。**",
+      "src": "https://en.wikipedia.org/wiki/Zoning_(Mary_Lou_Williams_album)"
+     },
+     {
+      "f": "英文維基〈Mary Lou Williams〉開頭：Williams（1910 年 5 月 8 日–1981 年 5 月 28 日）是美國爵士鋼琴家、編曲家與作曲家，寫過數百首作品與編曲、錄過超過一百張唱片；她為 Duke Ellington 與 Benny Goodman 寫作與編曲，也是 Thelonious Monk、Charlie Parker、Miles Davis、Tadd Dameron、Bud Powell 與 Dizzy Gillespie 的朋友、導師與老師。她 1954 年改宗天主教，此後暫別音樂、回歸後作品性質也隨之轉變。",
+      "src": "https://en.wikipedia.org/wiki/Mary_Lou_Williams"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Zodiac Suite",
+    "manifest": "onboarding-manifest-c95-20260910.json",
+    "desc": "十二段各寫一個星座，題獻名單上有 Duke Ellington 與 Art Tatum。〈Taurus〉給 Ellington，〈Libra〉給 Tatum、Dizzy Gillespie 與 Charlie Parker。原本寫給小編制：六首三重奏、五首獨奏鋼琴、一首鋼琴與貝斯二重奏；〈Aries〉在頭一分半內就從 boogie-woogie 走到不協和。她 1942 年動筆、1945 年完成並首演，這一版 1975 年由 Folkways 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bf0ae0c9-7d4e-42ed-a782-da48f565daa4",
+     "https://musicbrainz.org/release/52fbfb02-843a-4aa2-b23d-42ceb9d7f1c4",
+     "https://en.wikipedia.org/wiki/Zodiac_Suite",
+     "https://music.apple.com/us/album/261233781"
+    ]
+   },
+   {
+    "album": "Zoning",
+    "manifest": "onboarding-manifest-c95-20260910.json",
+    "desc": "《Ebony》的 Phyl Garland 點名〈Zoning Fungus II〉：先是無調性和聲，才落回 funky 基底。這張由她自己編曲，以二重奏與三重奏為主，搭檔多是貝斯手 Bob Cranshaw 與鼓手 Mickey Roker，康加鼓只出現在部分軌。AllMusic 的 Scott Yanow 說她「聽起來年輕了四十歲，顯出 McCoy Tyner 的影響」。1974 年由 Mary Records 發行，1995 年的 CD 版收十三軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ac5f2664-c1f3-31ea-96bc-52566f650a3b",
+     "https://musicbrainz.org/release/f8bdce21-8eee-4ab6-8552-7ad5ebe1659a",
+     "https://en.wikipedia.org/wiki/Zoning_(Mary_Lou_Williams_album)",
+     "https://en.wikipedia.org/wiki/Mary_Lou_Williams",
+     "https://music.apple.com/us/album/261235738"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "melody gardot",
+  "name": "Melody Gardot",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2009,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "My One and Only Thrill",
+    "year": 2009,
+    "genres": [
+     "jazz",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Entre eux deux",
+    "year": 2022,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Currency of Man",
+    "year": 2015,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "michael bublé",
+  "name": "Michael Bublé",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2003,
+   2009
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "It's Time",
+    "year": 2005,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Totally Bublé",
+    "year": 2003,
+    "genres": [
+     "jazz",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Crazy Love",
+    "year": 2009,
+    "genres": [
+     "jazz",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "moacir santos",
+  "name": "Moacir Santos",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Maestro",
+    "year": 1973,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Saudade",
+    "year": 1974,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Carnival of the Spirits",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 19,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c144-a",
+    "album": "Saudade",
+    "facts": [
+     {
+      "f": "jazzdisco 的 BN-LA 系列目錄頁：**BN-LA260-G，年份欄 1974**，錄於 **United Artists Studio, Los Angeles，1974 年 3 月 5、6、12 三天**，母帶 13961–13970 連號。十四人編制：Steve Huffsteter 小號與粗管短號、**Benny Powell 長號**、Morris Repass 低音長號、Sidney Muldrow 法國號、Ray Pizzi 低音管兼中音／次中音／長笛／短笛、**Jerome Richardson 四種薩克斯風兼長笛與中音長笛**、Santos 中音與上低音薩克斯風兼編曲指揮、**Mark Levine 鋼琴與電鋼琴兼編曲**、**Lee Ritenour 吉他**、John Heard 貝斯、**Harvey Mason 鼓**、Mayuto Correa 與 Carmelo Garcia 康加打擊，外加六人合聲。jazzdisco 另註「also released on Blue Note (E) 8 27206 1」**但沒有給年**。",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+     },
+     {
+      "f": "**Cash Box 1974 年 7 月 27 日的 UA 七月發片稿**：「Blue Note, the UA-distributed jazz label, will have two albums out, **Moacir Santos' Latin-flavored \"Saudade\"** and Lou Donaldson's blues-tinged \"Sweet Lou.\"」——**廠牌自己的檔期報導，第 612 條的最上位證據**，把本張釘在 1974 年下半。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1974/CB-1974-07-27.pdf"
+     },
+     {
+      "f": "**Cash Box 1974 年 10 月 5 日 p19 的整版廠牌廣告「NEW BLUE — For September」逐張印出目錄號與文案**：「**MOACIR SANTOS: Saudade** ／ In the winter of 1973, Moacir Santos came down with an acute case of what he calls \"saudade\" - a serious homesickness for his native Brazil. Moacir packed up his family and his music and headed for the enticing jungles and mountains of his homeland. It was there that Moacir's Afro-Brazilian rhythms and beautiful melodies first made him a celebrity. His latest album is a musical reflection on his journey through Brazil and appropriately enough, it's called \"Saudade.\" **BN-LA260-G／8 TRK. BN-EA260-G**」；同一版還有 Ronnie Foster《On the Avenue》BN-LA261-G 與 Lou Donaldson《Sweet Lou》。**⚠ 一份廣告釘多張，不算多個獨立來源**（第 509c／614 條）。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1974/CB-1974-10-05.pdf"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c144-a",
+    "album": "Carnival of the Spirits",
+    "facts": [
+     {
+      "f": "**Billboard 1975 年 6 月 28 日 p25 的 Blue Note 整版廠牌廣告逐軌印出本盤曲目**：「SAMPAGUITA ／ QUIET CARNIVAL ／ COISA NO. 2 ／ KAMBA」。⚠ **這是本張唯一一份把它釘在 1975 年的同期紙本廣告**，**而且與本組另外五張同版、不算多個獨立來源**（第 509c／614 條）。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1975/Billboard%201975-06-28.pdf"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Maestro",
+    "manifest": "onboarding-manifest-c143-20260917.json",
+    "desc": "上低音薩克斯風、人聲、打擊樂與編曲，全出自他一個人。1972 年 9 月 29 日與 10 月 10、18 日錄於 A&M Studios，編制是一支大型錄音室樂團：Oscar Brashear 的小號、Frank Rosolino 的長號、Don Menza 的次中音。八軌從〈Monologue / Nanã〉開場。1973 年 2 月 17 日 Billboard 的評介把〈Nanã〉挑成最佳曲目，1973 年 Blue Note BN-LA007-F。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=3aaa1c04-517b-3002-9744-d1e11c6aecff&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1973/Billboard%201973-02-17.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1973/Billboard%201973-03-03.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1973/Billboard%201973-06-23.pdf",
+     "https://en.wikipedia.org/wiki/Maestro_(Moacir_Santos_album)",
+     "https://api.discogs.com/database/search?catno=BN-LA007-F",
+     "https://musicbrainz.org/release-group/3aaa1c04-517b-3002-9744-d1e11c6aecff"
+    ]
+   },
+   {
+    "album": "Saudade",
+    "manifest": "onboarding-manifest-c144-20260917.json",
+    "desc": "犯了一場他自己叫做 saudade 的鄉愁，他帶著家人與譜子回巴西走一趟。回洛杉磯後把那趟旅程寫成這張碟。1974 年 3 月 5、6、12 三天錄於洛杉磯 United Artists 錄音室，十四人樂團加六人合聲：Benny Powell 的長號，Ray Pizzi 與 Jerome Richardson 包辦木管，他自己吹中音與上低音薩克斯風兼編曲指揮。十軌多半三到四分鐘。Duke Pearson 製作，1974 年 Blue Note BN-LA260-G。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=efdceed0-cd82-4b1a-9197-55a63c724bc8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1554105",
+     "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1974/CB-1974-07-27.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1974/CB-1974-10-05.pdf",
+     "https://en.wikipedia.org/wiki/Saudade_(Moacir_Santos_album)",
+     "https://musicbrainz.org/release-group/efdceed0-cd82-4b1a-9197-55a63c724bc8"
+    ]
+   },
+   {
+    "album": "Carnival of the Spirits",
+    "manifest": "onboarding-manifest-c144-20260917.json",
+    "desc": "二十五人的樂團裡坐著 J.J. Johnson，他只在一軌吹了一段長號獨奏。1975 年 3 月 17 至 20 日錄於洛杉磯 The Record Plant，每天錄兩軌。編制裡有三把小號、兩把長號，Ray Pizzi 的木管群，鋼琴、管風琴與電鋼琴三層鍵盤，Harvey Mason 的鼓加三位巴西打擊手。每一軌都指定一位獨奏者，他那段在〈Coisa No. 2〉。編曲六軌是 Dale Oehler、兩軌是他自己，1975 年 Blue Note BN-LA463-G。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=36159319-895a-4f8b-954c-88c7f0772550&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1639514",
+     "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1975/Billboard%201975-06-28.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1975/Billboard-1975-10-18.pdf",
+     "https://en.wikipedia.org/wiki/Carnival_of_the_Spirits",
+     "https://musicbrainz.org/release-group/36159319-895a-4f8b-954c-88c7f0772550"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mother earth",
+  "name": "Mother Earth",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1968,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Living with the Animals",
+    "year": 1968,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Stoned Woman",
+    "year": 1992,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The People Tree",
+    "year": 1993,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Living with the Animals",
+    "manifest": "onboarding-manifest-c30-blues-20260821.json",
+    "desc": "Tracy Nelson 1967 年在舊金山組成 Mother Earth,1968 年由 Mercury 發行的首作找來 Mike Bloomfield 彈吉他,美國專輯榜最高第 144 名。除藍調外還帶著福音、鄉村與 R&B 的口音,壓軸的〈Down So Low〉由 Nelson 自寫自唱,日後成為她最常被翻唱的曲目。錄完這張後樂團把基地從灣區遷到納許維爾郊外的農場,核心縮到 Nelson、鍵盤手 Andy McMahon 與吉他手 John Andrews 三人。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mother_Earth_(American_band)",
+     "https://musicbrainz.org/release-group/ff1cae09-070a-38fd-95c6-1f0f977e566d"
+    ]
+   },
+   {
+    "album": "Stoned Woman",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "倫敦四人組的首作，1992 年 4 月 4 日由 Acid Jazz Records 發行（JAZID 48）。Bryn Barklam 的 Hammond 風琴是全盤重心，Matt Deighton 的吉他與人聲、Neil Corcoran 貝斯構成緊實的現場編制，主唱由 Shauna Green 擔任。樂團原是 1991 年的錄音室企畫，Paul Weller、James Taylor 與 Simon Bartholomew 都曾參與；首度公開演出時同場的新團是 Jamiroquai。曲目含〈Riot on 103rd Street〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mother_Earth_(British_band)",
+     "https://musicbrainz.org/release-group/aed209fb-e141-377b-82a3-920fd36e6be2"
+    ]
+   },
+   {
+    "album": "The People Tree",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "1993 年 9 月 1 日由 Acid Jazz Records 發行的第二作，比首作更靠向六〇年代英式搖滾與放克的交界。Matt Deighton 主唱兼原聲與電吉他，Bryn Barklam 同時彈 Hammond、Fender Rhodes 與鋼琴；客席有 James Taylor 的 Fender Rhodes、Simon Bartholomew 的 Moog，Paul Weller 也在和聲名單裡。〈Jesse〉由 Deighton 與 Shauna Greene 合寫；終曲〈A Trip Down Brian Lane〉長十一分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_People_Tree",
+     "https://en.wikipedia.org/wiki/Mother_Earth_(British_band)",
+     "https://musicbrainz.org/release-group/7c303250-65fb-31fb-a7a8-4b091fb84773"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "naná vasconcelos",
+  "name": "Naná Vasconcelos",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Africadeus",
+    "year": 1973,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Naná, Nelson Angelo & Novelli",
+    "year": 1974,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Saudades",
+    "year": 1980,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Saudades",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1979 年 3 月錄音、1980 年由 ECM 發行。Naná Vasconcelos 的 berimbau、打擊與多層疊唱是主軸，Egberto Gismonti 彈吉他，背後是 Mladen Gutesha 指揮的斯圖加特廣播交響樂團——所謂獨奏其實是單人樂器對上整個樂團。開場〈O Berimbau〉一路撐到近十九分鐘，〈Cego Aderaldo〉出自 Gismonti 之手。AllMusic 的 John Storm Roberts 給四星半，稱這可能是他最好的一次錄音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Saudades_(Nan%C3%A1_Vasconcelos_album)",
+     "https://musicbrainz.org/release-group/050ae63e-54b1-37a0-bf21-1ad7a9eb71de"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "nubya garcia",
+  "name": "Nubya Garcia",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2017,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Source",
+    "year": 2020,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Odyssey",
+    "year": 2024,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Nubya's 5ive",
+    "year": 2017,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "paul desmond",
+  "name": "Paul Desmond",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1962,
+   1965
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Take Ten",
+    "year": 1963,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Desmond Blue",
+    "year": 1962,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bossa Antigua",
+    "year": 1965,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Desmond Blue",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "中音薩克斯風手 Paul Desmond 轉投 RCA Victor 的第一張專輯,1962 年發行,由早年在 Columbia 便合作過的製作人 George Avakian 操刀,也是他首次以管弦樂團為背景的錄音。輕霧般的音色貼著弦樂鋪陳,〈My Funny Valentine〉與標題曲把他擅長的抒情長句放進最慢、最薄的動態,整張幾乎聽不到強奏。1978 年 RCA 曾以《Pure Gold Jazz》之名重發,他晚年在 CTI 的《Summertime》再度回到這條管弦路線。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Desmond_Blue",
+     "https://musicbrainz.org/release-group/0d6dcd26-9b31-32c8-8d8a-cd3c326b7c95"
+    ]
+   },
+   {
+    "album": "Bossa Antigua",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Paul Desmond 1964 年錄音、1965 年由 RCA Victor 發行的 bossa nova 專輯,吉他手 Jim Hall 掛名合演。標題是他式的文字遊戲——把意為「新浪潮」的 bossa nova 反轉成「舊東西」,自嘲幽默一如其人。中音薩克斯風與吉他互相讓位的輕聲對話貫穿全片,〈Bossa Antigua〉〈O Gato〉〈Samba Cantina〉都維持在低溫的搖擺裡,是 Brubeck 四重奏之外最能聽出他個人氣質的錄音之一。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bossa_Antigua",
+     "https://musicbrainz.org/release-group/27c4bb0e-a7ed-33f2-a32c-068b3607acf3"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "peter brötzmann",
+  "name": "Peter Brötzmann",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1967,
+   1969
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Machine Gun",
+    "year": 1968,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "For Adolphe Sax",
+    "year": 1967,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Nipples",
+    "year": 1969,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 14,
+   "researchRecords": 2,
+   "facts": 6,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51a-b",
+    "album": "For Adolphe Sax",
+    "facts": [
+     {
+      "f": "1967 年 6 月至 9 月錄音，同年由 Brötzmann 自己開的 BRÖ 廠牌發行，是他的首張領銜專輯。",
+      "src": "https://en.wikipedia.org/wiki/For_Adolphe_Sax"
+     },
+     {
+      "f": "三重奏編制：Peter Brötzmann 吹薩克斯風、Peter Kowald 彈貝斯、Sven-Åke Johansson 打鼓。",
+      "src": "https://en.wikipedia.org/wiki/For_Adolphe_Sax"
+     },
+     {
+      "f": "沒有廠牌肯發，他就自己來。Brötzmann 的說法是：「我們從馬克思那裡學到，工人不該把工具和產品交出去，所以我開了自己的公司。」",
+      "src": "https://en.wikipedia.org/wiki/For_Adolphe_Sax"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c51a-c",
+    "album": "Nipples",
+    "facts": [
+     {
+      "f": "1969 年 4 月錄音，同年由德國廠牌 Calig 發行，全長 73 分 38 秒。",
+      "src": "https://en.wikipedia.org/wiki/Nipples_(Peter_Br%C3%B6tzmann_album)"
+     },
+     {
+      "f": "同名曲由六重奏演出：Peter Brötzmann 與 Evan Parker 兩把次中音薩克斯風、Derek Bailey 吉他、Fred Van Hove 鋼琴、Buschi Niebergall 貝斯、Han Bennink 鼓；另一首則是拿掉 Parker 與 Bailey 的四重奏。",
+      "src": "https://en.wikipedia.org/wiki/Nipples_(Peter_Br%C3%B6tzmann_album)"
+     },
+     {
+      "f": "這種中型編制在 Brötzmann 的目錄裡其實很少見，多數時候他不是帶三重奏就是帶大團。",
+      "src": "https://en.wikipedia.org/wiki/Nipples_(Peter_Br%C3%B6tzmann_album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "For Adolphe Sax",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "沒有廠牌肯發，他就搬出馬克思，自己開了一家。他的說法是，工人不該把工具和產品交出去，於是有了自己的廠牌 BRÖ。1967 年 6 月至 9 月錄下的三軌成了他的首張領銜專輯，三重奏是他的薩克斯風、Peter Kowald 的貝斯與 Sven-Åke Johansson 的鼓，專輯名致敬的是薩克斯風的發明者 Adolphe Sax。原盤是極小量的私人發行，封面由他自己設計並手工絹印，內圈標籤一張一張手蓋上去。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/For_Adolphe_Sax",
+     "https://www.discogs.com/release/1498597-The-Peter-Br%C3%B6tzmann-Trio-For-Adolphe-Sax",
+     "https://musicbrainz.org/release-group/b9027142-1a67-3604-a08a-58a72fa19f32"
+    ]
+   },
+   {
+    "album": "Nipples",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "製作人叫 Manfred Eicher，同一年他開了 ECM。1969 年 4 月錄下的這批錄音，同年由德國廠牌 Calig 發行。同名曲是六重奏：Brötzmann 與 Evan Parker 兩把次中音薩克斯風、Derek Bailey 的吉他、Fred Van Hove 的鋼琴，再加上貝斯與鼓；另一首則拿掉 Parker 與 Bailey，縮成四重奏。這種中型編制在他的目錄裡很少見。同批未發表的錄音要到 2003 年才以《More Nipples》單獨問世。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Nipples_(Peter_Br%C3%B6tzmann_album)",
+     "https://en.wikipedia.org/wiki/ECM_Records",
+     "https://musicbrainz.org/release-group/5611e149-f4f7-3e16-8ac0-7e67b124d153"
+    ]
+   }
+  ]
+ }
+]

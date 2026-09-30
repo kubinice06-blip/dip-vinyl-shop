@@ -1,0 +1,3265 @@
+[
+ {
+  "key": "生祥樂隊",
+  "name": "生祥樂隊",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   2013,
+   2022
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "圍庄",
+    "year": 2016,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "我庄",
+    "year": 2013,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "江湖卡夫卡",
+    "year": 2022,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "把自己種回來",
+    "year": 2022,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c119-b",
+    "album": "江湖卡夫卡",
+    "facts": [
+     {
+      "f": "串流側 collectionId 1650712802 攤開逐軌覆核：collectionName「江湖卡夫卡」、artistName「生祥樂隊」、releaseDate 2022-10-20、trackCount **9**、℗ 2022 Foothills Folk LLC（**℗ 掛的公司名與 release 上的廠牌 StreetVoice 不同**）。**9 軌逐位置同序同名、長度逐軌完全相同（9 軌一秒不差，含第 7 軌的日文假名曲名）**。9 軌全部有 previewUrl。**採信。**release-group 的封面查詢**回 200，有圖**。以掛名當 term 查 tw 店面回 7 筆，這位藝人在該店面有 5 張長篇（2013／2016 兩張／2020／本張）。",
+      "src": "https://itunes.apple.com/lookup?id=1650712802&country=tw&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c119-b",
+    "album": "把自己種回來",
+    "facts": [
+     {
+      "f": "兩間廠牌的實體 MBID 與本批另外兩張逐一比對，**兩組都是同一間，不是同名不同實體**：「好有感覺音樂」（5ef1c430）就是本批 a 組勞動服務《海島聲事》2016（catno CMS001）那筆掛的同一間；「山下民謠 Foothills Folk」（f82a64f4）就是本批 b 組林生祥《林生祥童謠專輯: 頭擺頭擺》2018（catno FHFCD180509）那筆掛的同一間。**本張的 catno FHFCD220324 用的是後者的前綴，卻掛在前者名下。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=8a94cd21-b31b-4f8c-a290-1222881c6356&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "江湖卡夫卡",
+    "manifest": "onboarding-manifest-c119-20260910.json",
+    "desc": "第七軌的曲名是三個日文假名，其餘八軌全是漢字。那一軌是〈ばか〉4:14。第四軌〈佇夜之前〉5:19 與第八軌〈佇夜之前 (Reprise)〉5:14 是同一首歌的兩次，中間隔了三軌，其間還有〈議場猴話研究〉5:49。九軌全部在四分鐘以上，最短的就是與盤名同名的〈江湖卡夫卡〉4:00，收在最長的〈科恩度我〉6:49。2022 年的台灣 CD 掛 StreetVoice，目錄編號與條碼兩欄都是空的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/e2cf938d-20ac-44ff-863d-075b990af8b3?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=e2cf938d-20ac-44ff-863d-075b990af8b3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=4d668604-473d-4eb2-8317-503e1273bf18&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1650712802&country=tw&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/e2cf938d-20ac-44ff-863d-075b990af8b3"
+    ]
+   },
+   {
+    "album": "把自己種回來",
+    "manifest": "onboarding-manifest-c119-20260910.json",
+    "desc": "十軌裡有兩軌的曲名帶阿拉伯數字，收尾那軌帶一個驚嘆號。帶數字的是〈縣道184〉與〈風神125〉，另有三軌以人物名開場，其中「阿成」出現兩次、分放在第三與第六軌，收尾的是〈嗷！〉。第九軌〈菊花夜行軍〉與盤名欄位裡被紀念的那張碟同名。2022 年的台灣 CD 同一筆掛了兩間廠牌，目錄編號 FHFCD220324 用的是其中一間的前綴，卻掛在另一間名下。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/87142d3c-b65e-43db-83e0-4ca43b909226?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=87142d3c-b65e-43db-83e0-4ca43b909226&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=8a94cd21-b31b-4f8c-a290-1222881c6356&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=4d668604-473d-4eb2-8317-503e1273bf18&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/search?term=%E7%94%9F%E7%A5%A5%E6%A8%82%E9%9A%8A&country=tw&entity=album&limit=60",
+     "https://musicbrainz.org/release-group/87142d3c-b65e-43db-83e0-4ca43b909226"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "羅大佑",
+  "name": "羅大佑",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   1982,
+   1988
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "之乎者也",
+    "year": 1982,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "未來的主人翁",
+    "year": 1983,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "家",
+    "year": 1984,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "愛人同志",
+    "year": 1988,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "家",
+    "manifest": "onboarding-manifest-c41-chinese-20260823.json",
+    "desc": "羅大佑滾石時期三張創作專輯的收尾。這回他親赴日本，請作曲家三枝成章編曲，多數曲子在東京錄音，聲響比前兩張圓潤許多。〈家（I）〉與〈家（II）〉一頭一尾夾住整張唱片，中間放了台語的〈青蚵嫂〉、英語的〈Mysterious Eyes〉，以及〈超級市民〉這種鋒利的城市速寫，開場〈吾鄉印象〉則把鄉土題材放進流行編制。此作之後他沉寂四年才推出《愛人同志》，台灣百佳專輯第五十名。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E5%AE%B6_(%E7%BE%85%E5%A4%A7%E4%BD%91%E5%B0%88%E8%BC%AF)",
+     "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+     "https://musicbrainz.org/release-group/ea681aed-bea1-3109-b400-87fe67d82703"
+    ]
+   },
+   {
+    "album": "愛人同志",
+    "manifest": "onboarding-manifest-c41-chinese-20260823.json",
+    "desc": "沉寂四年後推出的第四張個人專輯，羅大佑自任製作人。整張唱片幾乎是繞著電影寫成的：〈暗戀〉是《神行太保》主題曲，〈戀曲1990〉與〈妳的樣子〉分別是《阿郎的故事》國語版的主題曲與片尾曲，〈愛人同志〉與〈黃色臉孔〉來自《棋王》，〈不變的結局〉為《棋王》插曲。政治語彙與情歌腔在同一批旋律裡並行，是他八〇年代末最外顯的一次。隔年的香港大中華版重排曲序並換上〈侏儒之歌〉，台灣百佳專輯第四十二名。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E6%84%9B%E4%BA%BA%E5%90%8C%E5%BF%97_(%E7%BE%85%E5%A4%A7%E4%BD%91%E5%B0%88%E8%BC%AF)",
+     "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+     "https://musicbrainz.org/release-group/af8f3eb8-3fdb-3215-8fb7-c7545fe2cd70"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "血肉果汁機 flesh juicer",
+  "name": "血肉果汁機 Flesh Juicer",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   2015,
+   2021
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "GOLDEN太子BRO",
+    "year": 2021,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "GIGO",
+    "year": 2015,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "深海童話",
+    "year": 2018,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "血肉宮建宮蓋廟演唱會",
+    "year": 2017,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 19,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c126-a",
+    "album": "血肉宮建宮蓋廟演唱會",
+    "facts": [
+     {
+      "f": "**這是一份現場錄音**，錄的是 2016-05-28 在台中 Legacy Taichung 舉行的「血肉宮 Build it on Brutal Taichung」——樂團的第一場大型專場。**演出在 2016 年、唱片在 2017-02-08 才發行**。實體形式為 CD，另有 DVD 版本；發行方為 **禾廣娛樂**。樂團 2006 年成軍於台中，以台語創作。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E8%A1%80%E8%82%89%E6%9E%9C%E6%B1%81%E6%A9%9F"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c91-b",
+    "album": "GIGO",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group f4c8d09b 的欄位：title《GIGO》、artist-credit「Flesh Juicer」（英文，不是中文團名）、first-release-date 2015-06-01、primary-type Album、secondary-types 空、轄下 1 個 TW／Official release，13 軌，廠牌欄空白。",
+      "src": "https://musicbrainz.org/release-group/f4c8d09b-6b42-4ecd-a2c4-4009dfb07c18"
+     },
+     {
+      "f": "同條目記樂團 2015 年發行首張專輯《GIGO》，在傳統廟會與喪禮伴奏裡獲得啟發；樂團出道地點台中、活躍年代自 2006 年起，創團初期是輾核與死核、特色是極重的吉他音牆加 blast-beat 與豬吠唱腔，自《GIGO》開始轉變為金屬核但仍使用豬吠。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E8%A1%80%E8%82%89%E6%9E%9C%E6%B1%81%E6%A9%9F"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "血肉宮建宮蓋廟演唱會",
+    "manifest": "onboarding-manifest-c126-20260917.json",
+    "desc": "壓軸三首〈陣頭〉〈血肉宮〉〈出巡〉，曲名全部取自廟會。這是一場專場的完整現場錄音，演出在 2016 年 5 月 28 日的台中 Legacy，唱片卻隔到 2017 年 2 月 8 日才發行。這支 2006 年在台中成軍、唱台語的樂團，當時只發過一張錄音室專輯與兩張 EP，十八軌的來源因此橫跨了整份目錄，中段〈粗殘台中〉把咬字推到最前面。實體由禾廣娛樂發行，另有一個 DVD 版本。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=57c4c6ba-f69d-4256-b2a0-b7256cfaece5&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://zh.wikipedia.org/zh-tw/%E8%A1%80%E8%82%89%E6%9E%9C%E6%B1%81%E6%A9%9F",
+     "https://itunes.apple.com/lookup?id=1594306453&country=tw&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/artist/b1d39433-6353-4e3b-8125-8716d984fb2c?fmt=json&inc=release-groups+aliases&limit=100",
+     "https://musicbrainz.org/release-group/57c4c6ba-f69d-4256-b2a0-b7256cfaece5"
+    ]
+   },
+   {
+    "album": "GIGO",
+    "manifest": "onboarding-manifest-c91-20260910.json",
+    "desc": "傳統廟會與喪禮的伴奏，是這張碟的靈感來源。中文維基〈血肉果汁機〉這麼記；樂團自這張起從輾核與死核轉為金屬核，仍留著豬吠唱腔。同表替每一軌附了英文副題，例如〈血肉宮 Flesh Temple〉、〈大年開始 Annuit Coeptis〉，並記數位版 2015 年 6 月、實體版同年 8 月，發行禾廣娛樂。第 6 屆金音創作獎最佳搖滾專輯獎由這張碟得獎，同屆最佳樂團獎與〈血肉宮〉的最佳搖滾單曲獎入圍未得獎；2016 年第 27 屆金曲獎最佳專輯包裝獎入圍未得獎的是設計者趙奕翔。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f4c8d09b-6b42-4ecd-a2c4-4009dfb07c18",
+     "https://musicbrainz.org/release/25727c36-c19c-4a68-8cbc-ff1b074fa86e",
+     "https://zh.wikipedia.org/zh-tw/%E8%A1%80%E8%82%89%E6%9E%9C%E6%B1%81%E6%A9%9F",
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC6%E5%B1%86%E9%87%91%E9%9F%B3%E5%89%B5%E4%BD%9C%E7%8D%8E",
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC27%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://music.apple.com/tw/album/1578470615"
+    ]
+   },
+   {
+    "album": "深海童話",
+    "manifest": "onboarding-manifest-c91-20260910.json",
+    "desc": "第二軌把太陽打開，第十軌再把它關掉。〈打開太陽〉與〈關閉太陽〉分踞這張碟的前後段，其餘曲名也幾乎都繞著海走：〈海底騎士〉〈深海洋〉〈海盜〉〈馬里亞納〉〈海底城〉。MusicBrainz 那筆 2018 年的台灣條目由好有感覺音樂發行、編號 FJ007，11 軌；第 30 屆金曲獎入圍名單上的報名單位卻是另一個名字，好球娛樂有限公司。兩筆成績都是入圍未得獎：2019 年第 30 屆金曲獎最佳樂團獎，以及 2018 年第 9 屆金音創作獎最佳樂團獎。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/fc56d0b4-2d78-4507-b950-2a9cf63273d6",
+     "https://musicbrainz.org/release/032bce8a-21a1-4bde-8103-df79d5210f2d",
+     "https://zh.wikipedia.org/zh-tw/%E8%A1%80%E8%82%89%E6%9E%9C%E6%B1%81%E6%A9%9F",
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC30%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://music.apple.com/tw/album/1398909746"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "陳奕迅",
+  "name": "陳奕迅",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   1998,
+   2007
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "我的快樂時代",
+    "year": 1998,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "U87",
+    "year": 2005,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Shall We Dance? Shall We Talk!",
+    "year": 2001,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "認了吧",
+    "year": 2007,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51a-d",
+    "album": "Shall We Dance? Shall We Talk!",
+    "facts": [
+     {
+      "f": "2001 年 4 月 13 日發行，唱片編號 EEG1025，由英皇娛樂旗下的音樂家唱片推出，全碟製作人是陳輝陽。",
+      "src": "https://zh.wikipedia.org/wiki/Shall_We_Dance%3F_Shall_We_Talk!"
+     },
+     {
+      "f": "2002 年 1 月 18 日的第 24 屆十大中文金曲頒獎音樂會上，〈Shall We Talk〉再得十大中文金曲與全球華人至尊金曲，受獎人同列陳奕迅、陳輝陽、林夕；同一首歌另得最佳男歌手卡拉 OK 歌曲獎。",
+      "src": "https://en.wikipedia.org/wiki/2001_RTHK_Top_10_Gold_Songs_Awards"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c51a-d",
+    "album": "認了吧",
+    "facts": [
+     {
+      "f": "本作入圍第 19 屆金曲獎最佳國語男歌手獎（入圍，未得獎）。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E8%AA%8D%E4%BA%86%E5%90%A7"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "我的快樂時代",
+    "manifest": "onboarding-manifest-c41-chinese-20260823.json",
+    "desc": "加盟華星後的第三張粵語專輯，1998年5月發行，林健華包辦多數編曲與監製。〈天下無雙〉為陳奕迅帶來生涯首座十大中文金曲，全碟則拿下他第一個叱吒樂壇至尊唱片大獎。同碟〈新曲＋精選〉由他自己作曲、黃偉文填詞，整段歌詞以過往粵語歌名接龍寫成；〈愈想愈無謂〉改編自玉置浩二的〈Mr Lonely〉。封面回他小學母校拍攝。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E6%88%91%E7%9A%84%E5%BF%AB%E6%A8%82%E6%99%82%E4%BB%A3",
+     "https://musicbrainz.org/release-group/f93309d1-69fe-3240-b95c-57613621ece5"
+    ]
+   },
+   {
+    "album": "U87",
+    "manifest": "onboarding-manifest-c41-chinese-20260823.json",
+    "desc": "2005年轉投新藝寶後的首張粵語碟，名字取自他錄音室慣用的一支 Neumann U87 麥克風。梁榮駿統籌製作，C.Y. Kong、Eric Kwok、雷頌德分頭寫曲：〈爛〉與〈浮誇〉走外放嗆耳的路線，〈夕陽無限好〉則是 Eric Kwok 的懷舊粵語流行寫法。四首派台歌全在商台903拿下冠軍，專輯獲時代週刊列為當年最值得購買的五張亞洲唱片之一。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/U87_(%E4%B8%93%E8%BE%91)",
+     "https://musicbrainz.org/release-group/8905581d-9785-39d6-8470-e4888b102f1f",
+     "https://web.archive.org/web/20130111143019/http://www.time.com/time/magazine/article/0,9171,1101364,00.html"
+    ]
+   },
+   {
+    "album": "Shall We Dance? Shall We Talk!",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "〈Shall We Talk〉一首歌，收走香港那年兩個最高單曲榮譽。這首由陳輝陽作曲、林夕填詞的歌先在 2001 年度十大勁歌金曲頒獎典禮拿下金曲金獎，2002 年 1 月 18 日的第 24 屆十大中文金曲頒獎音樂會上再得全球華人至尊金曲。專輯 2001 年 4 月 13 日由英皇娛樂旗下的音樂家唱片推出，全碟製作人也是陳輝陽，首波主打是〈2001 太空漫遊〉，〈單車〉則是派出的五首宣傳歌之一。碟本身另拿下叱吒樂壇的至尊唱片大獎與四台聯頒音樂大獎的大碟獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/Shall_We_Dance%3F_Shall_We_Talk!",
+     "https://en.wikipedia.org/wiki/2001_Jade_Solid_Gold_Awards",
+     "https://en.wikipedia.org/wiki/2001_RTHK_Top_10_Gold_Songs_Awards",
+     "https://musicbrainz.org/release-group/28e0e88e-dd20-3b49-8b87-39cc6597865f"
+    ]
+   },
+   {
+    "album": "認了吧",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "十首歌有八首換了語言重寫，剩下的〈淘汰〉來自周杰倫。那八首取自前一年的粵語專輯《What's Going On...?》，重新填上國語詞：〈愛情轉移〉出自〈富士山下〉，〈好久不見〉出自〈不如不見〉。全新的國語曲只有〈淘汰〉與〈快樂男生〉，其中周杰倫作曲填詞的〈淘汰〉是為這張量身打造。2007 年 4 月 24 日由新藝寶發行，在台灣 G-Music 風雲榜上榜 13 週、最高第 3 名，並獲香港 IFPI 十大銷量國語唱片，另入圍第 19 屆金曲獎最佳國語男歌手。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E8%AA%8D%E4%BA%86%E5%90%A7",
+     "https://musicbrainz.org/release-group/828d4fcd-99f2-3d42-b7b8-4e97a4e51981"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "929",
+  "name": "929",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2005,
+   2014
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "也許像星星",
+    "year": 2008,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "929同名專輯",
+    "year": 2005,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "3",
+    "year": 2014,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c91-b",
+    "album": "929同名專輯",
+    "facts": [
+     {
+      "f": "中文維基〈吳志寧〉記 2004 年正值大學時期，吳志寧與黃玠一同成立 929 樂團，團名來自團員們常去的撞球室名稱「929」；草創初期成員並不固定，2005 年推出樂團同名唱片，該張「以兩人的編制」完成；吳志寧 2005 年自中興大學森林學系畢業。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E5%90%B3%E5%BF%97%E5%AF%A7"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c91-b",
+    "album": "3",
+    "facts": [
+     {
+      "f": "中文維基〈吳志寧〉記 2014 年 6 月發行了 929 的第四部作品《3》；同條目記樂團成立於 2004 年、2005 年推出同名唱片、2008 年以四人編制出《也許像星星》。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E5%90%B3%E5%BF%97%E5%AF%A7"
+     },
+     {
+      "f": "風和日麗唱片行是本張與 929 首張同名專輯（編號 AGD-003）共同的發行方。",
+      "src": "https://musicbrainz.org/release-group/a1a7ebbf-69fa-42b5-ba0a-4fd1f280ebbc"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "929同名專輯",
+    "manifest": "onboarding-manifest-c91-20260910.json",
+    "desc": "同名碟是兩人的編制做出來的，2008 年那張才變成四人。中文維基〈吳志寧〉寫這張同名唱片「以兩人的編制」完成，2008 年的《也許像星星》則「以四人的編制」出。同條目也記 2004 年吳志寧與黃玠在大學時期成立 929，團名取自團員們常去的撞球室名稱。七軌，2005 年，由風和日麗唱片行發行、編號 AGD-003；〈簡單的方式〉在碟上出現兩次，第 5 軌是一般版，末軌的海邊版長 6:06，也是全碟最長的一首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a1a7ebbf-69fa-42b5-ba0a-4fd1f280ebbc",
+     "https://musicbrainz.org/release/a098c9b0-4ed4-4c57-8743-b2d194bc22cf",
+     "https://zh.wikipedia.org/zh-tw/%E5%90%B3%E5%BF%97%E5%AF%A7",
+     "https://music.apple.com/tw/album/6768261172"
+    ]
+   },
+   {
+    "album": "3",
+    "manifest": "onboarding-manifest-c91-20260910.json",
+    "desc": "九首歌裡，最短的〈齒輪〉也有 4:33。最長的末軌〈緩緩降落〉7:07，其餘七軌落在五分到六分四十七秒之間。九軌由風和日麗唱片行發行——這家也是 929 首張同名專輯（編號 AGD-003）的發行方；MusicBrainz 那筆條目把發行日期記在 2014 年 6 月。曲目從〈天狼星〉與〈青春地圖〉開場。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/57e54cad-5b5d-4646-ba26-48f2d785c7aa",
+     "https://musicbrainz.org/release/ef246793-c2f8-48b0-8924-cb53c052e788",
+     "https://zh.wikipedia.org/zh-tw/%E5%90%B3%E5%BF%97%E5%AF%A7",
+     "https://musicbrainz.org/release-group/a1a7ebbf-69fa-42b5-ba0a-4fd1f280ebbc",
+     "https://music.apple.com/tw/album/6768264314"
+    ]
+   },
+   {
+    "album": "也許像星星",
+    "manifest": "onboarding-manifest-ctw-taiwan-indie-20260823.json",
+    "desc": "929 由吳志寧與黃玠 2004 年在大學時期組成，團名來自團員常去的撞球室名稱。吳志寧是詩人吳晟之子，寫歌習慣把家人的文學作品與台灣時事帶進來。2008 年這張由風和日麗唱片行發行（AGD-009），編制擴成四人，十首歌從同名曲〈也許像星星〉、〈早起去爬山〉這類民謠搖滾，一路走到談核四爭議的〈貢寮你好嗎〉；隔年單曲〈相逢〉之後樂團就暫停運作。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E5%90%B3%E5%BF%97%E5%AF%A7",
+     "https://musicbrainz.org/release-group/fa705e48-8c75-4b08-8136-2a5e022982a1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "aka",
+  "name": "AKA",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1970,
+   1972
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Do What You Like",
+    "year": 1970,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Reflection",
+    "year": 1971,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Crazy Joe",
+    "year": 1972,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 3,
+   "facts": 7,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c129-b",
+    "album": "Reflection",
+    "facts": [
+     {
+      "f": "藝人端點：AKA 名下只有 4 個 release-group——1970《Do What You Like》、**1971《Reflection》**、1972《Crazy Joe》、2011-06-24《Hard Beat》。《Reflection》是三張 1970 年代連續出版裡的第二張。",
+      "src": "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100"
+     },
+     {
+      "f": "印尼文維基：AKA 1967 年 5 月 23 日成立於泗水（Surabaya），「Nama AKA merupakan singkatan dari Apotik Kaliasin, apotek milik orang tua Ucok Harahap」——團名是 Ucok Harahap 父母開的 Kaliasin 藥局的縮寫，藥局就是排練場。首張《Do What You Like》1970 年由 Indra Records 出版；1975 年前後 Ucok 另組 Ucok and His Gangs，其餘三人於 1975 年底組成 SAS。",
+      "src": "https://id.wikipedia.org/wiki/AKA_(grup_musik)"
+     },
+     {
+      "f": "印尼樂迷站 iMusik 的 AKA 條目把《Reflection》記為 1971 年 Indra 出版、兩面混搭搖滾與印尼語曲目，並把首張的聲音描述為借自 1960 年代末英美樂團的 fuzz-rock、hard rock 加迷幻與 funk-rock 元素。",
+      "src": "https://shardianto.wordpress.com/2020/07/05/aka/"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c129-b",
+    "album": "Crazy Joe",
+    "facts": [
+     {
+      "f": "藝人端點：AKA 名下 4 個 release-group 依年序是 1970《Do What You Like》、1971《Reflection》、**1972《Crazy Joe》**、2011《Hard Beat》——本碟是 1970 年代三張連續出版的最後一張，原盤編號 AKL-047 接在《Reflection》的 AKL - 029 之後。",
+      "src": "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100"
+     },
+     {
+      "f": "iMusik 把《Crazy Joe》記為 1972 年 Indra 出版、編制與前兩張相同，並把 1973 年雅加達那場含棺材、刀劍與吊掛的演出綁在〈Crazy Joe〉這首歌上；同一條目記樂團 1967 年 5 月成立於泗水、團名來自 Ucok Harahap 家的 Kaliasin 藥局。",
+      "src": "https://shardianto.wordpress.com/2020/07/05/aka/"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "cseac-c",
+    "album": "Do What You Like",
+    "facts": [
+     {
+      "f": "1970 年由 Indra Records 發行，是 AKA 的首張專輯，收五首印尼語曲與三首英語曲——〈Do What You Like〉〈I've Gotta Work It Out〉與〈Glenmore〉。",
+      "src": "https://id.wikipedia.org/wiki/AKA_(grup_musik)"
+     },
+     {
+      "f": "樂團 1967 年 5 月 23 日成軍於泗水（Surabaya），團名 AKA 是 Apotik Kaliasin（Kaliasin 藥房）的縮寫——那是主唱 Ucok Harahap 家裡開的藥房，也是他們的練團場地。",
+      "src": "https://id.wikipedia.org/wiki/AKA_(grup_musik)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Reflection",
+    "manifest": "onboarding-manifest-c129-20260917.json",
+    "desc": "團名是一間藥局的縮寫，那間藥局也是他們的排練場。店名 Kaliasin，開店的是這支泗水四人團主唱兼鍵盤手 Ucok Harahap 的父母。1971 年印尼 Indra 以 AKL - 029 壓成 12 吋黑膠，九軌 34 分 38 秒，曲名兩首英文、七首印尼文；同名曲 4 分 26 秒開場，第 6 軌〈Only One Man〉一軌就 8 分 22 秒，佔去全碟近四分之一。這是他們 1970 年代三張連續出版裡的第二張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=04f56d24-7b7d-4521-9538-288a99bfc1fb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=04f56d24-7b7d-4521-9538-288a99bfc1fb&fmt=json&inc=media+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://id.wikipedia.org/wiki/AKA_(grup_musik)",
+     "https://shardianto.wordpress.com/2020/07/05/aka/",
+     "https://musicbrainz.org/release-group/04f56d24-7b7d-4521-9538-288a99bfc1fb"
+    ]
+   },
+   {
+    "album": "Crazy Joe",
+    "manifest": "onboarding-manifest-c129-20260917.json",
+    "desc": "1973 年雅加達的演出裡，主唱被吊起來、再放進一具棺材。在那之前他先跳上牆、再爬上屋瓦；特技配在哪一首歌上，來源只有一處說法。碟本身是 1972 年印尼 Indra 以 AKL-047 壓的 12 吋黑膠，編號緊接在前一張的 AKL - 029 之後，也是他們 1970 年代三張連續出版的最後一張。九軌裡兩個英文曲名、七個印尼文曲名，〈Crazy Joe〉開場、〈Bidadari〉收尾。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7fc685d9-6364-442e-a33e-d74ab8aa859e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/d991e1c6-2d93-4652-953d-568e0d85c08c?fmt=json&inc=aliases+release-groups&limit=100",
+     "https://id.wikipedia.org/wiki/AKA_(grup_musik)",
+     "https://shardianto.wordpress.com/2020/07/05/aka/",
+     "https://musicbrainz.org/release-group/7fc685d9-6364-442e-a33e-d74ab8aa859e"
+    ]
+   },
+   {
+    "album": "Do What You Like",
+    "manifest": "onboarding-manifest-csea-20260901.json",
+    "desc": "團名 AKA 是他家開的那間藥房的縮寫，那裡也是他們的練團室。藥房叫 Apotik Kaliasin，是主唱 Ucok Harahap 家開的；樂團 1967 年在泗水成軍，1970 年由 Indra Records 發行這張首作。他們把 Led Zeppelin 與 Grand Funk Railroad 的硬搖滾接上商業取向的流行旋律，Ucok Harahap 的舞台噱頭包括開場上吊、躺進棺材裡出場；1973 年他在雅加達從屋頂跳下、被扮成劊子手的人鞭打，晚於本作三年。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/AKA_(grup_musik)",
+     "https://www.thejakartapost.com/news/2011/06/19/overdue-recognition-aka.html",
+     "https://musicbrainz.org/release-group/5739f79b-01fd-4edc-9597-87559399ea3a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "alkaline trio",
+  "name": "Alkaline Trio",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1998,
+   2003
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Goddamnit",
+    "year": 1998,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "From Here to Infirmary",
+    "year": 2001,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Good Mourning",
+    "year": 2003,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "amon amarth",
+  "name": "Amon Amarth",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1998,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Once Sent From the Golden Hall",
+    "year": 1998,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Great Heathen Army",
+    "year": 2022,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Deceiver of the Gods",
+    "year": 2013,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "amon düül ii",
+  "name": "Amon Düül II",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1969,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Yeti",
+    "year": 1970,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Phallus Dei",
+    "year": 1969,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Tanz der Lemminge",
+    "year": 1971,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Tanz der Lemminge",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1971 年 3 月由 United Artists 發行的雙 LP，四面各是一組套曲：A 面〈Syntelman's March of the Roaring Seventies〉出自 Chris Karrer，B 面〈Restless Skylight-Transistor-Child〉由 John Weinzierl 主導，C、D 兩面掛「Chamsin Soundtrack」。Al Gromer 的西塔琴把即興段落拉向室內樂。《Q》與《Mojo》的「40 Cosmic Rock Albums」把它列在第 36 位。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Tanz_der_Lemminge",
+     "https://en.wikipedia.org/wiki/Amon_Düül_II",
+     "https://musicbrainz.org/release-group/a9aa820e-1ab9-37dc-8888-7da6ae7e012f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "amyl and the sniffers",
+  "name": "Amyl and the Sniffers",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2019,
+   2024
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Comfort to Me",
+    "year": 2021,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cartoon Darkness",
+    "year": 2024,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Amyl and the Sniffers",
+    "year": 2019,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "anthrax",
+  "name": "Anthrax",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Among the Living",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Spreading the Disease",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Persistence of Time",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-a",
+    "album": "Persistence of Time",
+    "facts": [
+     {
+      "f": "英文維基〈Persistence of Time〉的資訊框記：發行日 1990 年 8 月 21 日、錄音期 1989 年 12 月至 1990 年 2 月、錄音室 A&M 與 Conway（加州好萊塢）以及 Soundtrack（紐約市）、曲風 thrash metal、總長 58:40、廠牌 Megaforce 與 Island、製作人 Anthrax 與 Mark Dodson。",
+      "src": "https://en.wikipedia.org/wiki/Persistence_of_Time"
+     },
+     {
+      "f": "同條目導言記〈Got the Time〉是 Joe Jackson 的翻唱；〈In My World〉樂團曾在《Married... with Children》的〈My Dinner with Anthrax〉那集裡演出。本作也是 Joey Belladonna 擔任主唱的最後一張完整 Anthrax 專輯，直到 2011 年的《Worship Music》才回歸。",
+      "src": "https://en.wikipedia.org/wiki/Persistence_of_Time"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Persistence of Time",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "1990 年 1 月，紐約 Yonkers 的一場火燒掉排練室與十萬美元以上的器材。樂團因此在 2 月底改到另一間錄音室收尾，場地橫跨好萊塢的 A&M 與 Conway、紐約的 Soundtrack，製作是樂團與 Mark Dodson。第五張的基調比先前沉靜成熟，捨棄慣有的幽默與漫畫典故，歌詞轉向寬容與和平，也降低快節奏的比重。〈Got the Time〉翻自 Joe Jackson，〈Intro to Reality〉的引子取自《陰陽魔界》的對白。十一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ea25c463-c8e7-3f2b-8ec9-d883ed227e25?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/release/7bf0e30c-54e5-4fde-9100-fefae89a2aa5",
+     "https://en.wikipedia.org/wiki/Persistence_of_Time",
+     "https://music.apple.com/us/album/1531807492",
+     "https://musicbrainz.org/release-group/ea25c463-c8e7-3f2b-8ec9-d883ed227e25"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "aphrodite's child",
+  "name": "Aphrodite's Child",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1968,
+   1972
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "666",
+    "year": 1972,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "It's Five O'Clock",
+    "year": 1969,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "End of the World",
+    "year": 1968,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 25,
+   "researchRecords": 3,
+   "facts": 4,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c62-a",
+    "album": "666",
+    "facts": [
+     {
+      "f": "英文維基：《666》（副標 The Apocalypse of John, 13/18）是希臘樂團 Aphrodite's Child 的第三張也是最後一張錄音室專輯、唯一的雙專輯，**1972 年 6 月由 Vertigo Records 發行**，由鍵盤手 Vangelis 作曲、Costas Ferris 作詞。樂團內部以及與唱片公司對這張碟不商業的路線起了衝突，**使發行延後了一年以上**；問世時評論與銷量都不熱，日後才在樂迷與樂手之間形成邪典地位。",
+      "src": "https://en.wikipedia.org/wiki/666_(Aphrodite's_Child_album)"
+     },
+     {
+      "f": "希臘文維基：**發行前 Vangelis 與 Mercury Records 為內容起過激烈爭執**——唱片公司反對〈∞〉（Infinity），認為它猥褻。那首曲子裡 Ειρήνη Παππά 念的是「I was, I am, I am to come」，字面出自《啟示錄》1:8，但這句英文在口語裡是另一個意思；伴她的是 Παπαθανασίου 的打擊。另一個摩擦點是封套上那句「本專輯是在 σαλέπι 的影響下錄製的」，唱片公司的人起初以為 σαλέπι 是某種毒品。",
+      "src": "https://el.wikipedia.org/wiki/666_(άλμπουμ)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c62-a",
+    "album": "It's Five O'Clock",
+    "facts": [
+     {
+      "f": "英文維基：Aphrodite's Child 是 1967 年組成的希臘流行與搖滾樂團，成員為 Evangelos Papathanassiou（後來的 Vangelis，鍵盤、長笛）、Demis Roussos（貝斯、木吉他與電吉他、主唱）、Loukas Sideras（鼓、主唱）與 Silver Koulouris（吉他）；他們先以〈Rain and Tears〉〈End of the World〉〈I Want to Live〉〈It's Five O'Clock〉這幾首單曲在歐洲走紅，之後才轉向前衛搖滾的《666》。",
+      "src": "https://en.wikipedia.org/wiki/Aphrodite's_Child"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c94-b",
+    "album": "End of the World",
+    "facts": [
+     {
+      "f": "英文維基〈End of the World (album)〉記：1968 年 11 月 6 日發行、廠牌 Philips Records；錄音日期為 1968 年「5 月 10 日與 18 日；6 月 26 至 29 日；9 月 11 至 13 日；10 月 2 至 8 日」；全長 34:43。",
+      "src": "https://en.wikipedia.org/wiki/End_of_the_World_(album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "666",
+    "manifest": "onboarding-manifest-c62-20260903.json",
+    "desc": "封套上寫著這張碟是在 σαλέπι 的影響下錄的，公司的人以為那是毒品。概念由鍵盤手與 Costas Ferris 共構，參考是幾部非線性敘事的電影與兩張搖滾概念碟：一場以末日為題的馬戲正在對觀眾演出，真正的末日同時在帳篷外發生。1970 年末在巴黎的 Europa Sonor 開工，錄了三個多月；樂團內部與唱片公司對這條不商業的路線起衝突，發行延後了一年以上，1972 年 6 月才由 Vertigo 推出。24 軌從 17 秒排到 19 分 27 秒。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/666_(Aphrodite's_Child_album)",
+     "https://el.wikipedia.org/wiki/666_(άλμπουμ)",
+     "https://www.discogs.com/release/2501532",
+     "https://www.discogs.com/master/6200",
+     "https://musicbrainz.org/release-group/9eb48d7e-2425-32d9-8d0b-54903d4a66be"
+    ]
+   },
+   {
+    "album": "It's Five O'Clock",
+    "manifest": "onboarding-manifest-c62-20260903.json",
+    "desc": "碟出來之後樂團繼續巡演，鍵盤手沒去——他留在巴黎替一部電影寫音樂。那是 Henry Chapier 的《Sex Power》，宣傳場合改由他弟弟 Nikos Papathanassiou 代打。這是他們的第二張專輯，錄於倫敦的 Trident Studios：第一支單曲〈Let Me Love, Let Me Live〉十一月先出，專輯隔年一月才問世。詞曲欄上反覆出現 Richard Julian Francis 的名字。鋼琴與風琴鋪底，高音顫音是辨識點。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Aphrodite's_Child",
+     "https://www.discogs.com/release/3890003",
+     "https://www.discogs.com/master/199717",
+     "https://el.wikipedia.org/wiki/Aphrodite's_Child",
+     "https://musicbrainz.org/release-group/aebb0b97-f578-33e5-80c7-11fe65b3de41"
+    ]
+   },
+   {
+    "album": "End of the World",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "〈Rain and Tears〉的作者欄上，掛著十七世紀的 Johann Pachelbel。這首歌 1968 年先以單曲發行，進過英國 Top 30。這支希臘三人組的分工是 Vangelis Papathanassiou 的鍵盤、管風琴與 clavichord，Demis Roussos 唱主唱兼彈貝斯，Loukas Sideras 打鼓。九軌全長 34 分 43 秒，最長的〈The Grass Is No Green〉371 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/0a81b153-42ce-34ef-be1f-f3ae941039f3",
+     "https://musicbrainz.org/release/0bd98887-9600-4c1e-b577-a20f00e53f38",
+     "https://en.wikipedia.org/wiki/End_of_the_World_(album)",
+     "https://en.wikipedia.org/wiki/Rain_and_Tears",
+     "https://music.apple.com/us/album/1842558969"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "at the drive-in",
+  "name": "At the Drive-In",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   2000
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Relationship of Command",
+    "year": 2000,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "In/Casino/Out",
+    "year": 1998,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Acrobatic Tenement",
+    "year": 1996,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 17,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-b",
+    "album": "In/Casino/Out",
+    "facts": [
+     {
+      "f": "同一條目記：〈Hourglass〉是 Jim Ward 在 At the Drive-In 歌曲裡第一次擔任主唱；〈Chanbara〉的歌詞取材自秘魯的「光輝道路」（Shining Path）運動。",
+      "src": "https://en.wikipedia.org/wiki/In/Casino/Out"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c94-b",
+    "album": "Acrobatic Tenement",
+    "facts": [
+     {
+      "f": "英文維基〈Acrobatic Tenement〉記：1997 年 2 月 18 日發行（CD 最初為 1996 年 8 月 18 日），廠牌為洛杉磯的獨立廠牌兼同人誌 Flipside；1996 年 7 月錄於好萊塢 Commercial Soundworks；**錄音預算 600 美元**（條目換算為 2025 年幣值約 1232 美元）；製作人 Blaze James 與 Doug Green；全長 32:20。",
+      "src": "https://en.wikipedia.org/wiki/Acrobatic_Tenement"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "In/Casino/Out",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "進錄音室採實況收音、幾乎不疊錄，三天錄完。1998 年錄於好萊塢 Messenger’s Studio，製作人 Alex Newport、錄音師 Doug Messenger，混音由 Newport 在 Paramount 完成，只補了極少量人聲與吉他。十一軌裡，〈Chanbara〉的歌詞取材自秘魯的光輝道路，〈Hourglass〉是 Jim Ward 在團裡第一次擔任主唱；〈Napoleon Solo〉290 秒，〈Pickpocket〉160 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6e672015-9666-3169-907a-35bac0655eaa",
+     "https://musicbrainz.org/release/fd3bc7da-a463-48ef-b0e7-eaeba43b13a9",
+     "https://en.wikipedia.org/wiki/In/Casino/Out",
+     "https://music.apple.com/us/album/1443564291"
+    ]
+   },
+   {
+    "album": "Acrobatic Tenement",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "Flipside 這家洛杉磯獨立廠牌，同時也是一本同人誌。1996 年錄於好萊塢 Commercial Soundworks，製作人 Blaze James 與 Doug Green，錄音預算六百美元。陣容是 Cedric Bixler-Zavala、Jim Ward、Adam Amparan 與 Ryan Sawyer，Omar Rodríguez-López 在這張碟上彈貝斯。十一軌裡的〈Star Slight〉78 秒，〈Ticklish〉275 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bee4fcbb-9e54-3d62-a72c-06b9f97fa487",
+     "https://musicbrainz.org/release/6d03c9de-d6f2-45a4-8b68-a35255c3669f",
+     "https://en.wikipedia.org/wiki/Acrobatic_Tenement",
+     "https://music.apple.com/us/album/516372970"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "azra",
+  "name": "Azra",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sunčana strana ulice",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Filigranski pločnici",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Azra",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 3,
+   "facts": 3,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c54-a",
+    "album": "Azra",
+    "facts": [
+     {
+      "f": "鼓手 Boris Leiner 在這段時間同時替 Azra 與薩格勒布的另一支樂團 Haustor 打鼓，後來才退出 Haustor。",
+      "src": "https://en.wikipedia.org/wiki/Haustor"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-a",
+    "album": "Sunčana strana ulice",
+    "facts": [
+     {
+      "f": "三位團員都有主唱曲：貝斯手 Mišo Hrnjak 唱〈Uvijek ista priča〉，鼓手 Boris Leiner 唱〈Provedimo vikend zajedno〉與〈Suzi F. (Kada vidim Beč)〉。",
+      "src": "https://en.wikipedia.org/wiki/Sunčana_strana_ulice"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-a",
+    "album": "Filigranski pločnici",
+    "facts": [
+     {
+      "f": "〈Ne prodajem nasmiješenog psa〉由鼓手 Boris Leiner 主唱，〈Naizgled lijepa〉裡的鋼琴是貝斯手 Hrnjak 彈的。",
+      "src": "https://en.wikipedia.org/wiki/Filigranski_pločnici"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Sunčana strana ulice",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "二十四首歌攤在兩張黑膠上，貝斯手和鼓手各自拿走了幾首。Mišo Hrnjak 唱〈Uvijek ista priča〉，Boris Leiner 唱兩首，其餘都是 Branimir Štulić——除了一首歌詞，全碟詞曲都是他寫的，製作也從這張起由他自己擔任。唱片 1981 年 6 月由 Jugoton 以雙唱片發行，總長約 61 分鐘。三件式的骨架沒變，曲子卻切得更短更碎，薩克斯風與管樂把顏色打開，同名曲只有兩分零一秒。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sunčana_strana_ulice",
+     "https://musicbrainz.org/release-group/d2e85c65-fa21-3e96-9d05-8999e51656ae"
+    ]
+   },
+   {
+    "album": "Filigranski pločnici",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "二十七首、八十八分鐘，詞曲全部出自 Štulić 一個人。這套雙唱片 1982 年 3 至 4 月錄於薩格勒布，同年 6 月由 Jugoton 與 Azra Music 共同發行，製作人也是他。陣容仍是三人，加上 Miroslav Sedak-Benčić 的薩克斯風、長笛與風琴。路線與前作相同，寫得卻更密：短曲一首接一首，吉他的刷法幾乎不變，變的是句子的內容，〈Kao ti i ja〉拉到五分半。1998 年的 YU 100 樂評票選把這張排在第 8 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Filigranski_pločnici",
+     "https://musicbrainz.org/release-group/cc9427b4-e3dc-3070-93af-3224f0dacf1b"
+    ]
+   },
+   {
+    "album": "Azra",
+    "manifest": "onboarding-manifest-c54-20260904b.json",
+    "desc": "Heine 有一首詩，詩裡那個部族的人一旦愛上就會死，樂團拿它當名字。那首詩是〈Der Asra〉，Branimir Štulić 1977 年創團時取的。首張長片 1980 年錄於薩格勒布，同年由 Jugoton 發行，製作人是 Drago Mlinarec。錄音是三件式，十二首的詞曲全由 Štulić 包辦，鼓手 Boris Leiner 當時同時替 Azra 與 Haustor 打鼓。吉他刷法乾脆、和弦不多，〈Krvava Meri〉的旋律跟著語句走。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Azra_(album)",
+     "https://en.wikipedia.org/wiki/Azra_(band)",
+     "https://en.wikipedia.org/wiki/Haustor",
+     "https://musicbrainz.org/release-group/81b04aba-e457-3576-a43c-3684597dc8ff"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bad brains",
+  "name": "Bad Brains",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1982,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "I Against I",
+    "year": 1986,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Rock for Light",
+    "year": 1983,
+    "genres": [
+     "rock",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bad Brains",
+    "year": 1982,
+    "genres": [
+     "rock",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Rock for Light",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "The Cars 的 Ric Ocasek 製作，1983 年在波士頓 Syncro Sound 錄音，同年 4 月由 Passport 發行的第二張全長作。十七軌把 1982 年 ROIR 卡帶的曲目重錄成聽得清楚的版本：〈Coptic Times〉〈Sailin' On〉〈Big Takeover〉是高速的 hardcore punk，〈Rally 'Round Jah Throne〉與五分多鐘的〈I and I Survive〉整段轉進雷鬼，兩種速度硬接在一起。Robert Christgau 認為 Ocasek 的製作讓它成了決定版。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rock_for_Light",
+     "https://musicbrainz.org/release-group/876288a6-9b52-342b-a998-4d7dc01bc8bf"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "banco del mutuo soccorso",
+  "name": "Banco del Mutuo Soccorso",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1972,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Donna Plautilla",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Darwin!",
+    "year": 1972,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Io sono nato libero",
+    "year": 1973,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Darwin!",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "羅馬的 Banco 第二張，1972 年由 Ricordi 發行、Alessandro Colombini 製作，以演化論編成概念盤：近十四分鐘的〈L'evoluzione〉從生命起源寫起，接著是〈La conquista della posizione eretta〉與〈Danza dei grandi rettili〉。Vittorio Nocenzi 的風琴與合成器、弟弟 Gianni 的鋼琴與單簧管構成雙鍵盤編制，Francesco Di Giacomo 以近乎男高音的音域唱義大利文歌詞，走向與同期英國 prog 明顯分岔。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Darwin!",
+     "https://en.wikipedia.org/wiki/Banco_del_Mutuo_Soccorso",
+     "https://musicbrainz.org/release-group/de54cbbb-070c-32fe-834e-329c33f6d0af"
+    ]
+   },
+   {
+    "album": "Io sono nato libero",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "三部曲的收尾，1973 年 10 月錄音、由 Ricordi 發行。開場〈Canto nomade per un prigioniero politico〉近十六分鐘，把政治犯的處境寫成組曲，是義大利 prog 少見直接處理時局的長篇；〈Non mi rompete〉與〈La città sottile〉另發單曲，前者轉成木吉他襯底的抒情段落。初版封套採模切工藝。2015 年《Rolling Stone》「50 Greatest Prog Rock Albums of All Time」把它排在第 35 位。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Io_sono_nato_libero",
+     "https://en.wikipedia.org/wiki/Banco_del_Mutuo_Soccorso",
+     "https://musicbrainz.org/release-group/af87af37-2612-3885-a0be-43bf04fcebe5"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "barış manço",
+  "name": "Barış Manço",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1975,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "2023",
+    "year": 1975,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sakla Samanı Gelir Zamanı",
+    "year": 1976,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sarı Çizmeli Mehmet Ağa",
+    "year": 1977,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c55-a",
+    "album": "Sarı Çizmeli Mehmet Ağa",
+    "facts": [
+     {
+      "f": "1980 年沙烏地阿拉伯 747 廠牌（T 023）也出過同名卡帶，Discogs 標為非官方發行——反映這批錄音在土耳其移工社群流通的路徑。",
+      "src": "https://www.discogs.com/release/30300719"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Sakla Samanı Gelir Zamanı",
+    "manifest": "onboarding-manifest-c55-20260903.json",
+    "desc": "Kurtalan Ekspres 替十首人人會哼的老曲子接上電，包括〈Bir Bahar Akşamı〉。這張碟掛名 Barış Manço 與 Kurtalan Ekspres，土耳其文維基把它定性為集結：十首全部是土耳其民謠與古典曲目的搖滾改編，沒有一首是他的原創。〈Bir Bahar Akşamı〉是古典藝術音樂的標準曲，〈Gönül Dağı〉則是 Neşet Ertaş 的曲目。貝斯與鼓走實在的搖滾八分，bağlama 穿插其間，他的唱法接近說唱與吟誦。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3341251",
+     "https://tr.wikipedia.org/wiki/Sakla_Saman%C4%B1_Gelir_Zaman%C4%B1",
+     "https://musicbrainz.org/release-group/081773e0-de8c-4a41-911c-02e6f5f0472f"
+    ]
+   },
+   {
+    "album": "Sarı Çizmeli Mehmet Ağa",
+    "manifest": "onboarding-manifest-c55-20260903.json",
+    "desc": "土耳其諺語當標題的一張碟，裡面夾著英文歌〈Nick the Chopper〉。民謠改編與英文原創曲交替：〈Uzun İnce Bir Yoldayım〉是 Aşık Veysel 的名作，1969 年也由 Fikret Kızılok 錄成 45 轉。Kurtalan Ekspres 的編制托著 bağlama 與弦樂式鋪面，他的聲音低、咬字清楚。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/2116dbcd-e80f-430a-948d-a4341e299707",
+     "https://tr.wikipedia.org/wiki/Fikret_K%C4%B1z%C4%B1lok",
+     "https://www.discogs.com/release/30300719"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "baroness",
+  "name": "Baroness",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2009,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Blue Record",
+    "year": 2009,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Purple",
+    "year": 2015,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Stone",
+    "year": 2023,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "beabadoobee",
+  "name": "beabadoobee",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2020,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Fake It Flowers",
+    "year": 2020,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Beatopia",
+    "year": 2022,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "This Is How Tomorrow Moves",
+    "year": 2024,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "beach fossils",
+  "name": "Beach Fossils",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2013,
+   2021
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Clash the Truth",
+    "year": 2013,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Somersault",
+    "year": 2017,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Other Side of Life: Piano Ballads",
+    "year": 2021,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "beck",
+  "name": "Beck",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1994,
+   2002
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mellow Gold",
+    "year": 1994,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Odelay",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sea Change",
+    "year": 2002,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Mellow Gold",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Beck 的第三張、也是進入 DGC 的大廠首作，1992 至 93 年主要在 Carl Stephenson 與 Rob Schnapf 家中用四軌機錄成，DGC 與 Bong Load 同時掛名。〈Loser〉取樣 Johnny Jenkins 版的〈I Walk on Guilded Splinters〉，把滑管吉他、嘻哈節拍與唸唱縫在一起，1994 年 2 月發單曲後把專輯推上《Billboard》200 第 13 名。原本要叫《Cold Ass Fashion》，最後的標題取自加州一種大麻品種。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mellow_Gold",
+     "https://musicbrainz.org/release-group/4f8bb33f-9e2d-34dc-8852-5d591cc104d8"
+    ]
+   },
+   {
+    "album": "Odelay",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1994 年先和 Tom Rothrock、Rob Schnapf 錄了收尾曲〈Ramshackle〉，其餘多在 1995 年於 Dust Brothers 位在洛杉磯 Silver Lake 的自宅錄音室完成，取樣密度與曲風跳接由此而來。1996 年 6 月 DGC 發行，《Rolling Stone》、Pazz & Jop 與《NME》年度票選都把它排在第一，第 39 屆葛萊美獎拿下最佳另類專輯，〈Where It's At〉另得最佳男搖滾演唱。封面那隻跨欄的匈牙利可蒙犬，是 Joan Ludwig 為 1977 年美國育犬協會會刊拍的。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Odelay",
+     "https://musicbrainz.org/release-group/df0bfd42-78a9-40c3-a45f-a12e10d446f8"
+    ]
+   },
+   {
+    "album": "Sea Change",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "與交往九年的未婚妻分手後，Beck 在一週內寫完大半歌，擱了一陣子才決定錄。2002 年 3 至 5 月在洛杉磯 Ocean Way 與 Record One 完成，Nigel Godrich 製作，多數曲子現場收音、事後才補上鈴與弦樂，弦樂編曲出自 David Campbell。取樣與反諷全部收起，換成直白的第一人稱敘述，〈The Golden Age〉〈Lost Cause〉〈Guess I'm Doing Fine〉都在慢速木吉他上進行。9 月 Geffen 發行，美國榜第 8 名；2014 年《Morning Phase》被官方稱為它的姊妹作。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sea_Change_(album)",
+     "https://musicbrainz.org/release-group/5f84e8b9-b8e5-3fbf-b514-0192a62d88b6"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "behemoth",
+  "name": "Behemoth",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2018
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Thelema.6",
+    "year": 2000,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Demigod",
+    "year": 2004,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "I Loved You at Your Darkest",
+    "year": 2018,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "bijelo dugme",
+  "name": "Bijelo Dugme",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1974,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Kad bi' bio bijelo dugme",
+    "year": 1974,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bitanga i princeza",
+    "year": 1979,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Pljuni i zapjevaj moja Jugoslavijo",
+    "year": 1986,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 3,
+   "facts": 8,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c54-b",
+    "album": "Kad bi' bio bijelo dugme",
+    "facts": [
+     {
+      "f": "Bijelo Dugme 的首張錄音室專輯，1974 年由 Jugoton 發行（目錄號 LSY 63016）；1974 年 10 月 2 日在盧比安納的 Studio Akademik 開錄，樂團自己製作，錄音室的駐廠製作人 Dečo Žgur 協助。",
+      "src": "https://en.wikipedia.org/wiki/Kad_bi'_bio_bijelo_dugme"
+     },
+     {
+      "f": "Jugoton 原本打算 1975 年春天才發，經紀人 Vladimir Mihaljek 說服廠牌提前到 1974 年秋天。",
+      "src": "https://en.wikipedia.org/wiki/Kad_bi'_bio_bijelo_dugme"
+     },
+     {
+      "f": "樂評 Dražen Vrdoljak 1974 年 11 月 30 日在《Studio》上把開場曲的前奏形容成「pastirski」（牧羊人式的），幾週後《Tina》雜誌用了「pastirski rok」（牧羊人搖滾）這個詞，隨即被廣泛沿用——而且常常帶貶意——來指 Bijelo Dugme 那種 Deep Purple、Led Zeppelin 影響加上巴爾幹民謠元素的硬搖滾。",
+      "src": "https://en.wikipedia.org/wiki/Kad_bi'_bio_bijelo_dugme"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-b",
+    "album": "Bitanga i princeza",
+    "facts": [
+     {
+      "f": "這是樂團最後一張硬搖滾取向的專輯，隔年就轉向新浪潮；本作幾乎沒有民謠元素，兩首抒情曲〈Kad zaboraviš juli〉與〈Sve će to mila moja prekriti ruzmarin, snjegovi i šaš〉用上了管弦樂團。也是鼓手 Dragan「Điđi」Jankelić 第一次參與的專輯，他接替原鼓手 Ipe Ivandić。",
+      "src": "https://en.wikipedia.org/wiki/Bitanga_i_princeza"
+     },
+     {
+      "f": "在廠牌堅持下，〈Ala je glupo zaboravit njen broj〉刪掉一句粗話，〈Sve će to, mila moja, prekriti ruzmarin, snjegovi i šaš〉裡的「A Hrist je bio kopile i jad」（而基督是個雜種與悲哀）被改成「A on je bio kopile i jad」（而他是個雜種與悲哀）。",
+      "src": "https://en.wikipedia.org/wiki/Bitanga_i_princeza"
+     },
+     {
+      "f": "1979 年 4 月 Bregović 在《Džuboks》受訪時說他接受了改詞、但反對改封面；他轉述廠牌對改基督那句的解釋是「政治問題」，並說：「他們一講『政治』，討論就結束了。」2005 年他在紀錄片《Rockovnik》裡說：「今天我大概不會寫那一句。」",
+      "src": "https://en.wikipedia.org/wiki/Bitanga_i_princeza"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-b",
+    "album": "Pljuni i zapjevaj moja Jugoslavijo",
+    "facts": [
+     {
+      "f": "這是樂團第一張由 Alen Islamović 主唱的專輯，他接替只待了一年就離團的 Mladen Vojičić「Tifa」；也是自 1977 年現場盤《Koncert kod Hajdučke česme》以來 Laza Ristovski 第一次以正式團員身分參與，並且是 Vlado Pravdić 參與的最後一張錄音室專輯。",
+      "src": "https://sr.wikipedia.org/wiki/Пљуни_и_запјевај_моја_Југославијо"
+     },
+     {
+      "f": "Bregović 原本想找三位長年被排除在南斯拉夫公共論述之外的人參與這張唱片：歌手 Vice Vukov（因與克羅埃西亞之春的牽連被貼上民族主義標籤）、與黑浪潮電影運動相關的畫家 Mića Popović、以及 1972 年塞爾維亞自由派整肅後淡出的政治人物兼外交官 Koča Popović。",
+      "src": "https://sr.wikipedia.org/wiki/Пљуни_и_запјевај_моја_Југославијо"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Kad bi' bio bijelo dugme",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "「pastirski rok」這個詞出自一篇樂評對前奏的形容，幾週後全國都在用。說那話的是樂評 Dražen Vrdoljak，1974 年底寫在《Studio》上；那個詞後來常帶著貶意。唱片同年由 Jugoton 發行，標題曲原本是 1973 年的七吋單曲，當時樂團還叫 Jutro，碟上收的是重錄版。底子是 Deep Purple 那一路的硬搖滾，旋律的走法卻來自波士尼亞民謠。一發行就打破 YU Grupa 首作保持的銷售紀錄，最終賣出約 141000 張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Kad_bi'_bio_bijelo_dugme",
+     "https://musicbrainz.org/release-group/33f5c3f7-1074-3450-96b2-6847830ab391"
+    ]
+   },
+   {
+    "album": "Bitanga i princeza",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "一隻女腿踢向男人下體的封面被退回，改成全白，廠牌說那會讓唱片變便宜。最後用的是 Jugoton 自家設計師的版本。廠牌還要求改詞，一首抒情曲裡「而基督是個雜種與悲哀」的基督被換成「他」；Bregović 說他接受改詞、反對改封面，廠牌的解釋是政治問題——「他們一講『政治』，討論就結束了」。這張 1979 年 3 月發行的第四張在貝爾格勒錄音、母帶在 Abbey Road 處理，是樂團硬搖滾語言的最後一次完整展開，民謠動機幾乎被清乾淨。唱片賣出 320000 張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bitanga_i_princeza",
+     "https://sr.wikipedia.org/wiki/Б92_100_најбољих_домаћих_песама",
+     "https://musicbrainz.org/release-group/0635800e-1987-36ff-aa3f-90944325f782"
+    ]
+   },
+   {
+    "album": "Pljuni i zapjevaj moja Jugoslavijo",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "樂評在電視上對著鏡頭撕掉這張唱片的封套，Bregović 在巡演途中看的是錄影帶。撕封套的是《Danas》的樂評 Dragan Kremer。這張 1986 年由 Diskoton 發行的唱片是 Alen Islamović 接手主唱後的第一張，開場直接唱出革命老歌〈Padaj silo i nepravdo〉的前兩段。Bregović 原想找三位長年被排除在公共論述外的人參與，計畫沒有實現：經紀人見完 Vice Vukov 回程時，在塞拉耶佛機場被警方帶走問話。",
+    "sourceUrls": [
+     "https://sr.wikipedia.org/wiki/Пљуни_и_запјевај_моја_Југославијо",
+     "https://hr.wikipedia.org/wiki/Padaj_silo_i_nepravdo",
+     "https://musicbrainz.org/release-group/a80379d6-5cd6-32f8-a339-471060e43ad2"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "black country, new road",
+  "name": "Black Country, New Road",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2021,
+   2025
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ants from Up There",
+    "year": 2022,
+    "genres": [
+     "rock",
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "For the First Time",
+    "year": 2021,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Forever Howlong",
+    "year": 2025,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "black midi",
+  "name": "black midi",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2019,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Schlagenheim",
+    "year": 2019,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cavalcade",
+    "year": 2021,
+    "genres": [
+     "rock",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hellfire",
+    "year": 2022,
+    "genres": [
+     "rock",
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "blue öyster cult",
+  "name": "Blue Öyster Cult",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1972,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Agents of Fortune",
+    "year": 1976,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Secret Treaties",
+    "year": 1974,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Blue Öyster Cult",
+    "year": 1972,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Blue Öyster Cult",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1971 年 10 月錄於紐約 David Lucas 平常做廣告配樂的 The Warehouse，全碟只有八軌可用；Joe Bouchard 回憶 Lucas 教他們用倒帶與複製聲部把聲音疊厚。開場〈Transmaniacon MC〉寫的是 Altamont 那場演唱會，MC 指機車幫；歌詞主筆是製作人 Sandy Pearlman 與樂評人 Richard Meltzer。1972 年 1 月由 Columbia 發行，五月才進榜、最高 172 名，〈Then Came the Last Days of May〉至今仍是固定曲目。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Blue_%C3%96yster_Cult_(album)",
+     "https://musicbrainz.org/release-group/4756061c-110f-381b-a2f0-6dc0588d01f2"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "boøwy",
+  "name": "BOØWY",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "BOØWY",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "BEAT EMOTION",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "PSYCHOPATH",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "BOØWY",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1985年6月由東芝EMI旗下イーストワールド發行，是樂團移籍ユイ音楽工房後的第三張錄音室作品。製作人佐久間正英把四人帶到柏林的ハンザ・スタジオ，完成他們首次海外錄音；氷室京介與布袋寅泰把原本偏歌謡曲的旋律改寫成硬質吉他riff。先行單曲〈ホンキー・トンキー・クレイジー〉之外，〈DREAMIN'〉與〈BAD FEELING〉日後都成為現場固定曲目。發行當時オリコン最高只到第48名，靠口碑長銷累積約62萬張。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/BOØWY_(アルバム)",
+     "https://musicbrainz.org/release-group/9818fe95-75ff-38b5-852a-5bce72824c44"
+    ]
+   },
+   {
+    "album": "BEAT EMOTION",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1986年11月8日由東芝EMI／イーストワールド發行，製作由布袋寅泰與糟谷銑司擔綱。錄音全程留在日本國內、僅花18天完成，主題定在「回想ライブハウス時代」，是BOØWY唯一一張四名團員都參與作詞的作品，山下久美子、ホッピー神山、矢口博康以客席身分加入。先行單曲〈B・BLUE〉讓樂團首度打進オリコン單曲榜前十，後來再切出的〈ONLY YOU〉最高第4名；專輯本身初登場即オリコン第1，累計約120萬張。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/BEAT_EMOTION",
+     "https://musicbrainz.org/release-group/60356b20-236b-37f1-975f-133d2cb3a8c3"
+    ]
+   },
+   {
+    "album": "PSYCHOPATH",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1987年9月5日由東芝EMI／イーストワールド發行，是BOØWY最後一張錄音室作品。錄音在日本國內16天完成，只有混音回到柏林的ハンザ・スタジオ；歌詞轉向近似哥德恐怖的意象，製作時解散已成定局，收錄曲裡也留下相關痕跡。先行單曲〈Marionette -マリオネット-〉為樂團首支オリコン單曲冠軍，後切的〈季節が君だけを変える〉初登場第4名。專輯連兩作拿下初登場第1，累計150萬張，同年12月24日渋谷公会堂公演上宣布解散。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/PSYCHOPATH",
+     "https://musicbrainz.org/release-group/2a89816e-614b-39a2-8471-ec530d751da9"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "boston",
+  "name": "Boston",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1976,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Don't Look Back",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Third Stage",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Boston",
+    "year": 1976,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Third Stage",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "Tom Scholz 在自宅 Hideaway 錄音室斷續做了六年的第三張，1986 年改投 MCA 發行，起因是與 Epic 的官司。〈Amanda〉早在 1980 年就寫好，成為樂團唯一的 Billboard Hot 100 冠軍單曲；專輯上榜三週後登頂四週，美國認證四白金，也是史上第一張以 CD 形式取得金唱片認證的作品。此作首度用上 Scholz 自製的 Rockman 吉他處理器與電子鼓取樣，Brad Delp 的高音仍是全片支點。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Third_Stage",
+     "https://musicbrainz.org/release-group/abdc4c7e-656e-343b-add2-00a8c6277bbc"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "broadcast",
+  "name": "Broadcast",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2005
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Noise Made by People",
+    "year": 2000,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Tender Buttons",
+    "year": 2005,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Haha Sound",
+    "year": 2003,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "burzum",
+  "name": "Burzum",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1993,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Filosofem",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hvis lyset tar oss",
+    "year": 1994,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Det som engang var",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-a",
+    "album": "Det som engang var",
+    "facts": [
+     {
+      "f": "MusicBrainz release 916f2b92（1993-08-20、NO、status Official）：廠牌欄 Cymophane Productions、編號 EYE 001、載體 CD、8 軌。逐軌曲名與曲長依序為〈Den onde kysten〉2:20、〈Key to the Gate〉5:15、〈En ring til å herske〉7:11、〈Lost Wisdom〉4:38、〈Han som reiste〉4:51、〈Når himmelen klarner〉3:51、〈Snu mikrokosmos tegn〉9:37、〈Svarte troner〉2:17。",
+      "src": "https://musicbrainz.org/release/916f2b92-4548-4516-9336-ad245e4b2f1e"
+     },
+     {
+      "f": "英文維基〈Det som engang var〉的資訊框記：類型 studio、發行 1993 年 8 月、錄音 1992 年 4 月、錄音場所 Grieg Hall（挪威卑爾根）、曲風 black metal 與 dark ambient、總長 39:49、語言英語與挪威語、廠牌 Cymophane、製作人 Count Grishnackh 與 Pytten、前一作《Aske》(1993)、後一作《Hvis lyset tar oss》(1994)。",
+      "src": "https://en.wikipedia.org/wiki/Det_som_engang_var"
+     },
+     {
+      "f": "同條目導言記盤名的挪威語意思是「What Once Was」，這是挪威 black metal 個人企劃 Burzum 的第二張錄音室專輯，1992 年 4 月錄音、1993 年 8 月經 Burzum 自己的廠牌 Cymophane Productions 發行。",
+      "src": "https://en.wikipedia.org/wiki/Det_som_engang_var"
+     },
+     {
+      "f": "同節記封面在視覺上取材自《Advanced Dungeons & Dragons》第一版的模組《The Temple of Elemental Evil》，畫面下方有 Burzum 首張專輯上那個「收割者」與那棵樹；封面由 Jannicke Wiese-Hansen 所繪，她也畫了 Burzum 首張專輯的封面。",
+      "src": "https://en.wikipedia.org/wiki/Det_som_engang_var"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Det som engang var",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "原本要叫《På svarte troner》，臨發行前才換了名字。現在這個盤名的挪威語意思是「What Once Was」。1992 年 4 月錄於卑爾根的 Grieg Hall，製作欄記 Count Grishnackh 與 Pytten，1993 年 8 月由 Cymophane Productions 發行，限約 950 張。封面出自 Jannicke Wiese-Hansen。八軌，〈Snu mikrokosmos tegn〉9:37 最長。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4907bca2-147d-3720-84ce-e6e5dd3a6c13?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/release/916f2b92-4548-4516-9336-ad245e4b2f1e",
+     "https://en.wikipedia.org/wiki/Det_som_engang_var",
+     "https://music.apple.com/us/album/286929510",
+     "https://musicbrainz.org/release-group/4907bca2-147d-3720-84ce-e6e5dd3a6c13"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "butthole surfers",
+  "name": "Butthole Surfers",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Locust Abortion Technician",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Psychic... Powerless... Another Man's Sac",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Electriclarryland",
+    "year": 1996,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "camera obscura",
+  "name": "Camera Obscura",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2003,
+   2009
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Let's Get Out of This Country",
+    "year": 2006,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Underachievers Please Try Harder",
+    "year": 2003,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "My Maudlin Career",
+    "year": 2009,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "cannibal corpse",
+  "name": "Cannibal Corpse",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   2017
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Tomb of the Mutilated",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Red Before Black",
+    "year": 2017,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Eaten Back to Life",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "celtic frost",
+  "name": "Celtic Frost",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   2006
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "To Mega Therion",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Monotheist",
+    "year": 2006,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Morbid Tales",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Morbid Tales",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Tom G. Warrior 收掉 Hellhammer 之後，1984 年 10 月 8 到 15 日在柏林 Caet Studio 錄成 Celtic Frost 的第一張。歐洲 Noise 版是六曲 mini-LP，美國 Enigma／Metal Blade 版補上〈Dethroned Emperor〉與同名曲湊成完整 LP，樂團後來認這個版本為正式首作。不協和 riff 與 Warrior 的呼喝被 Darkthrone 的 Fenriz 列為 riff 來源，《Decibel》的 thrash 五十大把它排在第 14。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Morbid_Tales",
+     "https://musicbrainz.org/release-group/c0787405-1e45-4cb3-b2c4-41cffb1c9ae0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "cem karaca",
+  "name": "Cem Karaca",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1975,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Nem Kaldı?",
+    "year": 1975,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Yoksulluk Kader Olamaz",
+    "year": 1977,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Safinaz",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 22,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c55-a",
+    "album": "Yoksulluk Kader Olamaz",
+    "facts": [
+     {
+      "f": "錄音在 Doruk Onatkut 位於伊斯坦堡 Galatasaray 與 Tünel 之間 Suriye Pasajı 那棟樓頂層的錄音室完成，吉他手 Taner Öngür 回憶那裡有一台十六軌 Tascam，是當時土耳其最好的錄音室之一。",
+      "src": "https://tr.wikipedia.org/wiki/Yoksulluk_Kader_Olamaz"
+     },
+     {
+      "f": "專輯共八首，每首歌前面都有約三十秒的鋼琴前奏，由 Cem Karaca 報出曲名後歌曲才開始；1970 年代街頭抗議塗鴉也被放進了封面。",
+      "src": "https://tr.wikipedia.org/wiki/Yoksulluk_Kader_Olamaz"
+     },
+     {
+      "f": "參與者：Cem Karaca 主唱，Dervişan 由 Uğur Dikmen（鍵盤、鋼琴）、Murat Töz（貝斯）、Taner Öngür（吉他）、Sefa Ulaştır（鼓）組成；製作人 Osman Bayşu，錄音與混音 Doruk Onatkut。",
+      "src": "https://tr.wikipedia.org/wiki/Yoksulluk_Kader_Olamaz"
+     },
+     {
+      "f": "封面照片裡拿貝斯的是 Hami Barutçu，但實際錄音的貝斯手是 Murat Töz——Töz 錄完就去服兵役，補進團的 Barutçu 才拍了封面照。",
+      "src": "https://tr.wikipedia.org/wiki/Yoksulluk_Kader_Olamaz"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c55-a",
+    "album": "Safinaz",
+    "facts": [
+     {
+      "f": "Edirdahan 是「從 Edirne 到 Ardahan」（土耳其最西與最東兩省）的縮寫，Cem Karaca 1978 年組成，只錄了《Safinaz》這一張長片。",
+      "src": "https://en.wikipedia.org/wiki/Cem_Karaca"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Nem Kaldı?",
+    "manifest": "onboarding-manifest-c55-20260903.json",
+    "desc": "十二首歌來自四個樂團：Apaşlar、Ferdy Klein、Moğollar、Dervişan。1975 年 Yavuz Plak 推出的這張第三張長片，內頁寫明全碟集結自 1968 至 1975 年間的單曲，記的是四個時期而不是任何一個陣容。〈Nem Kaldı〉等三首是第一次被收進唱片，其餘此前只以 45 轉流通；開場曲的詞曲出自民謠詩人 Aşık Mahzuni Şerif，收尾曲則是 Neşet Ertaş 的作品。貫穿全碟的是他厚重帶戲劇腔的男中音。",
+    "sourceUrls": [
+     "https://tr.wikipedia.org/wiki/Nem_Kald%C4%B1_(Cem_Karaca_Toplama_Alb%C3%BCm%C3%BC)",
+     "https://www.discogs.com/release/5335779",
+     "https://musicbrainz.org/release-group/b6b7491e-66c2-4c34-8db5-8e59ea227eb7"
+    ]
+   },
+   {
+    "album": "Yoksulluk Kader Olamaz",
+    "manifest": "onboarding-manifest-c55-20260903.json",
+    "desc": "每首歌開始前有三十秒鋼琴，他先報出曲名，歌才唱起來。八首歌全是新寫的，這是 Cem Karaca 的第一張錄音室專輯，此前的長片都是單曲集結。錄音在 Doruk Onatkut 位於伊斯坦堡 Suriye Pasajı 頂層的錄音室完成，吉他手 Taner Öngür 記得那裡有一台十六軌 Tascam。封面照片裡抱貝斯的是 Hami Barutçu，實際錄音的卻是 Murat Töz，他錄完就去服兵役。鍵盤把八首歌串成一段段敘事，唱法比早期更像在說話。",
+    "sourceUrls": [
+     "https://tr.wikipedia.org/wiki/Yoksulluk_Kader_Olamaz",
+     "https://www.discogs.com/release/3831179",
+     "https://musicbrainz.org/release-group/d7d134a7-c879-3f6f-97e6-2d353f60f8c2"
+    ]
+   },
+   {
+    "album": "Safinaz",
+    "manifest": "onboarding-manifest-c55-20260903.json",
+    "desc": "A 面只有一首歌，十八分鐘，講一個門房女兒的一生。〈Safinaz〉隨劇情換用不同的 makam 與曲種，是第二張錄音室專輯的 A 面。伴奏的 Edirdahan 是他 1978 年新組的團，團名是「從 Edirne 到 Ardahan」的縮寫，只錄了這一張碟。B 面的〈Şeyh Bedrettin Destanı〉把 Nâzım Hikmet 的同名長詩接上交響搖滾。背面的照片裡，他們站在寫著「Kahrolsun Yoz Müzik」（打倒庸俗音樂）的牆前。",
+    "sourceUrls": [
+     "https://tr.wikipedia.org/wiki/Safinaz_(%C5%9Fark%C4%B1)",
+     "https://www.discogs.com/release/3781699",
+     "https://en.wikipedia.org/wiki/Cem_Karaca",
+     "https://musicbrainz.org/release-group/b7f6265b-9222-3b07-b129-577fa50e665b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "chris stapleton",
+  "name": "Chris Stapleton",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2015,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Traveller",
+    "year": 2015,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Starting Over",
+    "year": 2020,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Higher",
+    "year": 2023,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "circle jerks",
+  "name": "Circle Jerks",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Group Sex",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "VI",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Wild in the Streets",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "cocorosie",
+  "name": "CocoRosie",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2004,
+   2007
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "La Maison de Mon Rêve",
+    "year": 2004,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Noah's Ark",
+    "year": 2005,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Adventures of Ghosthorse and Stillborn",
+    "year": 2007,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Noah's Ark",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "CocoRosie 二〇〇五年由 Touch and Go 發行的第二作。Bianca 與 Sierra Casady 姊妹把吉他、豎琴疊在玩具鋼琴與各式非樂器聲響上,〈Bear Hides and Buffalo〉甚至循環了馬與貓的叫聲。部分段落錄在母親位於法國 Camargue 地區 Saintes-Maries-de-la-Mer 的農場,有時就停在路邊或穀倉裡收音。〈Beautiful Boyz〉由 Anohni 獻聲兼彈鋼琴,寫給 Jean Genet;〈Brazilian Sun〉的 Devendra Banhart 是隔著手機唱進去的。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Noah%27s_Ark_(album)",
+     "https://musicbrainz.org/release-group/13e3ea15-2154-3bcd-8123-773ad049d080"
+    ]
+   },
+   {
+    "album": "The Adventures of Ghosthorse and Stillborn",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "CocoRosie 二〇〇七年在 Touch and Go 發表的第三張。初稿錄於母親在法國 Camargue 農場的穀倉,木造空間的吱嘎回聲留在成品裡;冰島製作人 Valgeir Sigurðsson 參與錄音與混音,Tez 與法國饒舌歌手 Spleen 的 beatbox 撐起數首節拍。標題裡的 Stillborn 來自農場舊墓園中的嬰兒墓。封面由法國雙人組 Pierre et Gilles 拍攝,姊妹一著維多利亞裙裝、一著軍服。Metacritic 均分 60,評論兩極。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Adventures_of_Ghosthorse_and_Stillborn",
+     "https://musicbrainz.org/release-group/da839c2f-b486-38cb-b047-b20da27a611a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "cradle of filth",
+  "name": "Cradle of Filth",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2003,
+   2017
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Damnation and a Day",
+    "year": 2003,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cryptoriana: The Seductiveness of Decay",
+    "year": 2017,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dusk… and Her Embrace: The Original Sin",
+    "year": 2016,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "crass",
+  "name": "Crass",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1979,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Feeding of the 5000",
+    "year": 1979,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Penis Envy",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Stations of the Crass",
+    "year": 1979,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Stations of the Crass",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1979 年 8 月 7 日與 11 日錄成，自營的 Crass Records 出版的雙 12 吋，物理格式本身就是宣言：前三面錄音室曲目刻成 45 轉，第四面是 8 月 7 日在 Islington 的 Pied Bull 酒吧現場，刻成 33 轉。盤名把天主教的苦路（Stations of the Cross）換成團名，封面拍的正是他們自稱塗過的 Bond Street 地鐵站牆面。〈White Punks on Hope〉回敬同代龐克，全碟在兩週內賣掉至少兩萬張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Stations_of_the_Crass",
+     "https://musicbrainz.org/release-group/007e8e7c-7c55-3fe6-889e-2d02c9b1f132"
+    ]
+   }
+  ]
+ }
+]

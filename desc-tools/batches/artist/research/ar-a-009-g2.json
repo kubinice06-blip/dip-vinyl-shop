@@ -1,0 +1,914 @@
+[
+  {
+    "key": "dr. john",
+    "name": "Dr. John",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Dr. John 本名 Malcolm John Rebennack Jr.，朋友與家人叫他 Mac，生於紐奧良第三區（3rd Ward），同一個街區也養出了 Louis Armstrong。",
+            "src": "https://www.nbcnews.com/news/obituaries/dr-john-iconic-new-orleans-musician-dies-77-n1014831",
+            "src2": "https://en.wikipedia.org/wiki/Dr._John",
+            "from": "new"
+          },
+          {
+            "f": "他的路數承自 Professor Longhair、Louis Armstrong 與 King Oliver 這批紐奧良前輩。",
+            "src": "https://www.grammy.com/news/dr-john-new-orleans-music-legend-dies-77/",
+            "src2": "https://en.wikipedia.org/wiki/Dr._John",
+            "from": "new"
+          },
+          {
+            "f": "1960 年前後一次槍傷打在手上，讓他無法再彈吉他；他因此轉向貝斯，最後把鋼琴當成主要樂器，成為鋼琴手。",
+            "src": "https://en.wikipedia.org/wiki/Dr._John",
+            "src2": "https://www.nbcnews.com/news/obituaries/dr-john-iconic-new-orleans-musician-dies-77-n1014831",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1968 年推出首張專輯《Gris-Gris》，並以「Dr. John, The Night Tripper」的舞台形象登場，把巫毒的節奏與吟唱和紐奧良音樂傳統接在一起，舞台演出帶有巫毒儀式的氣氛。",
+            "src": "https://en.wikipedia.org/wiki/Dr._John",
+            "src2": "https://www.nbcnews.com/news/obituaries/dr-john-iconic-new-orleans-musician-dies-77-n1014831",
+            "from": "new"
+          },
+          {
+            "f": "他的鋼琴演奏與沙啞嗓音，把藍調、爵士與 R&B 揉成獨屬紐奧良的聲音；維基首段稱他的音樂結合了紐奧良藍調、爵士、R&B、靈魂樂與放克。",
+            "src": "https://www.grammy.com/news/dr-john-new-orleans-music-legend-dies-77/",
+            "src2": "https://en.wikipedia.org/wiki/Dr._John",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 2011 年入選搖滾名人堂，引介人是 John Legend。",
+            "src": "https://www.rockhall.com/inductees/dr-john",
+            "src2": "https://en.wikipedia.org/wiki/Dr._John",
+            "from": "new"
+          },
+          {
+            "f": "他一生拿過 6 座葛萊美獎、15 次入圍；第一座是 1989 年第 32 屆葛萊美的最佳爵士人聲表演（二重唱或團體），曲目是與 Rickie Lee Jones 合唱的〈Makin' Whoopee〉。",
+            "src": "https://www.grammy.com/news/dr-john-new-orleans-music-legend-dies-77/",
+            "src2": "https://en.wikipedia.org/wiki/Dr._John",
+            "from": "new"
+          },
+          {
+            "f": "他 2019 年 6 月 6 日過世，享年 77 歲；葛萊美的訃告稱他是紐奧良音樂在流行文化裡的代言人。",
+            "src": "https://www.grammy.com/news/dr-john-new-orleans-music-legend-dies-77/",
+            "src2": "https://en.wikipedia.org/wiki/Dr._John",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1960 年前後的手部槍傷讓他從吉他轉向鋼琴。",
+            "src": "https://en.wikipedia.org/wiki/Dr._John",
+            "src2": "https://www.nbcnews.com/news/obituaries/dr-john-iconic-new-orleans-musician-dies-77-n1014831",
+            "from": "new"
+          },
+          {
+            "f": "1968 年首張專輯《Gris-Gris》與 Night Tripper 形象問世。",
+            "src": "https://en.wikipedia.org/wiki/Dr._John",
+            "src2": "https://www.grammy.com/news/dr-john-new-orleans-music-legend-dies-77/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2011 年入選搖滾名人堂。",
+        "src": "https://www.rockhall.com/inductees/dr-john",
+        "src2": "https://en.wikipedia.org/wiki/Dr._John",
+        "from": "new"
+      },
+      {
+        "f": "一生 6 座葛萊美獎，最後一座是第 55 屆（2013 年）以《Locked Down》拿下的最佳藍調專輯。",
+        "src": "https://www.grammy.com/news/dr-john-new-orleans-music-legend-dies-77/",
+        "src2": "https://en.wikipedia.org/wiki/Dr._John",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Britannica 頁面寫入選搖滾名人堂為 2012 年；名人堂官網與維基都是 2011，採 2011"
+    ],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "origin 已無事實庫可用（事實庫僅有 Locked Down 一條專輯細節），全部新查。第二源皆實際開頁：wiki、NBC 訃聞、Grammy.com 訃聞、rockhall.com。單源放此：精確生日 1941-11-20（僅維基）；13 歲與 Professor Longhair 開始合作、父親開家電行接觸 Armstrong 與 King Oliver（僅維基）；1960 年槍傷在 Jacksonville 演出時傷到左手無名指、先轉貝斯（僅維基，NBC 只說手部）；1965 年服完兩年聯邦毒品刑期（僅 NBC）；洛杉磯 Wrecking Crew 錄音室樂手經歷，曾與 Rolling Stones、Frank Zappa、Sonny and Cher 錄音（僅 NBC）；〈Right Place, Wrong Time〉Billboard Hot 100 最高第 9 名（僅維基）；Bonnaroo 音樂節取自他的專輯名（Britannica 稱源自克里奧爾俚語、與他的名聲相關，未另開第二源）；Grammy 會長 Neil Portnow 稱他『funky approach to blending musical styles』幫助 diversify the New Orleans Sound（僅 grammy.com）。名人堂官方（可具名單源）：搖滾名人堂官網介紹稱他為 the mystical keyboardist，聲音是紐奧良 glittery, psychedelic funk 混入巫毒色彩；引介人 John Legend 稱他 America's premier roots musician（https://www.rockhall.com/inductees/dr-john）；NBC 引名人堂原句：His name has become synonymous with the city in which he was born。「6 座葛萊美」維基與 grammy.com 兩源一致。上線簡介核對：Goin' Back to New Orleans 得最佳傳統藍調專輯（未另查，未列問題）；Locked Down 第 55 屆最佳藍調專輯與 grammy.com 一致。",
+    "pubIssues": []
+  },
+  {
+    "key": "echo & the bunnymen",
+    "name": "Echo & the Bunnymen",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團 1978 年 10 月在英國利物浦成軍，創始成員是主唱 Ian McCulloch、吉他手 Will Sergeant 與貝斯手 Les Pattinson。",
+            "src": "https://en.wikipedia.org/wiki/Echo_%26_the_Bunnymen",
+            "src2": "https://en.wikipedia.org/wiki/Ian_McCulloch_(singer)",
+            "from": "new"
+          },
+          {
+            "f": "他們出自以 Eric's 俱樂部為中心的利物浦後龐克場景；Sergeant 說自己是看了 Sex Pistols、Television 與 Iggy Pop 在 Eric's 的演出才受到啟發，樂團 1978 年 11 月的首場現場演出也在 Eric's。",
+            "src": "https://www.musicradar.com/features/echo-and-the-bunnymen-will-sergeant-interview",
+            "src2": "https://en.wikipedia.org/wiki/Ian_McCulloch_(singer)",
+            "from": "new"
+          },
+          {
+            "f": "樂團最初沒有鼓手，用一台節奏機代打；外界認為團名的 Echo 就是那台機器，樂團自己否認這個說法。",
+            "src": "https://en.wikipedia.org/wiki/Echo_%26_the_Bunnymen",
+            "src2": "https://en.wikipedia.org/wiki/Ian_McCulloch_(singer)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "主唱 McCulloch 的唱腔與台風承自 The Doors 那條線；他自己點名的偶像有 Lou Reed、Iggy Pop、The Doors、Leonard Cohen 與 David Bowie，Britannica 也把他列為受 The Doors 遺產影響的歌手之一。",
+            "src": "https://en.wikipedia.org/wiki/Ian_McCulloch_(singer)",
+            "src2": "https://www.britannica.com/biography/Ian-McCulloch",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1984 年《Ocean Rain》發行時，唱片公司把它宣傳成「有史以來最偉大的專輯」；McCulloch 事後說那是他在電話裡的玩笑話，被公司總經理當真，拿去做宣傳。",
+            "src": "https://en.wikipedia.org/wiki/Ocean_Rain",
+            "src2": "https://en.wikipedia.org/wiki/Echo_%26_the_Bunnymen",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1978 年在利物浦成軍。",
+        "src": "https://en.wikipedia.org/wiki/Echo_%26_the_Bunnymen",
+        "src2": "https://en.wikipedia.org/wiki/Ian_McCulloch_(singer)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "鼓手 Pete de Freitas 加入時間：Echo & the Bunnymen 維基寫 1980 年、Ian McCulloch 維基寫 1979 年 10 月，兩源不一致，facts 不收這個年份"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "thin",
+    "notes": "事實庫為空，全部新查。legacy 格 none：兩源以上支撐的地位事實湊不到。單源候選（寫作層不得用，除非主線另補第二源）：（1）樂團維基稱 2002 年得 Q Inspiration Award『for influencing subsequent generations』（單源；Q Awards 維基頁沒有 2002 這筆，只列 2018 年 Icon Award 給 Ian McCulloch 個人，兩者不能互證，且獎項名與年份待查）；（2）《Ocean Rain》2013 年 NME 史上 500 大專輯第 276 名、英國專輯榜第 4、美國 Billboard 200 第 87、英國金唱片（僅 Ocean Rain 維基）；〈The Killing Moon〉出現在《Donnie Darko》原劇場版（單源）；（3）搜尋摘要（未開頁，不可用）稱 Coldplay、The Killers、Interpol、The National、Radiohead、The Verve 等點名受他們影響，且 McCulloch 說 Chris Martin 一直提他才拿到 Q 獎；這條是 legacy 最值錢的線索，未能開頁取得兩源；（4）樂團維基：1983 年〈The Cutter〉英國前十、1980 年首張《Crocodiles》英國前二十、鼓手 Pete de Freitas 1989 年 6 月 14 日機車事故過世享年 27（單源）、1993 年解散、1997 年 McCulloch 與 Sergeant 及 Pattinson 重組（單源）；（5）McCulloch 1959 年 5 月 5 日生於利物浦 Norris Green（單源）；成軍前與 Julian Cope、Pete Wylie 組過 Crucial Three（單源，未成團）；（6）MusicRadar 單源：Pattinson 之前沒碰過任何樂器，被 Sergeant 激了一句才去買貝斯；Sergeant 的吉他哲學是重氣氛不重技術，『彈一堆音不會讓歌變好』。AllMusic 兩個網址皆 403（failedFetches 2）；Britannica 樂團頁只有 The Doors 條目中的一句提及。上線簡介：卡池六張皆無已上線簡介，無 pubIssues。",
+    "pubIssues": []
+  },
+  {
+    "key": "elliott smith",
+    "name": "Elliott Smith",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1969 年生，本名 Steven Paul Smith，在德州 Duncanville 長大，14 歲搬到奧勒岡州波特蘭與父親同住。",
+            "src": "https://en.wikipedia.org/wiki/Elliott_Smith",
+            "src2": "https://www.wweek.com/archive/2023/10/28/elliott-smith-1969-2003/",
+            "from": "new"
+          },
+          {
+            "f": "他在麻州 Hampshire College 讀書時與同學 Neil Gust 組了 Heatmiser，1992 年起在波特蘭演出；樂團共發行三張全長專輯。",
+            "src": "https://www.wweek.com/archive/2023/10/28/elliott-smith-1969-2003/",
+            "src2": "https://en.wikipedia.org/wiki/Elliott_Smith",
+            "from": "new"
+          },
+          {
+            "f": "他的個人首張專輯《Roman Candle》1993 年底錄音，1994 年 7 月 14 日由 Cavity Search Records 發行。",
+            "src": "https://en.wikipedia.org/wiki/Roman_Candle_(album)",
+            "from": "bank"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的辨識度來自輕聲、雙軌疊錄的人聲，加上細緻的指彈與層層疊錄的吉他，聽來像在房間裡耳語卻編得很密。",
+            "src": "https://en.wikipedia.org/wiki/Elliott_Smith",
+            "src2": "https://faroutmagazine.co.uk/the-enduring-legacy-of-elliott-smith/",
+            "from": "new"
+          },
+          {
+            "f": "Phoebe Bridgers 談他的技術特徵時點出三件事：雙軌疊錄的人聲、平淡壓低的唱法，以及靠疊錄堆出來的管弦樂式吉他質地。",
+            "src": "https://www.klcc.org/npr-music/npr-music/2020-04-16/learning-from-elliott-smith-20-years-after-figure-8",
+            "src2": "https://faroutmagazine.co.uk/the-enduring-legacy-of-elliott-smith/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他為電影《Good Will Hunting》寫的〈Miss Misery〉入圍 1998 年奧斯卡最佳原創歌曲。",
+            "src": "https://en.wikipedia.org/wiki/Elliott_Smith",
+            "src2": "https://www.wweek.com/archive/2023/10/28/elliott-smith-1969-2003/",
+            "from": "new"
+          },
+          {
+            "f": "Phoebe Bridgers 與 Billie Eilish 都被列為受他影響的後輩；Bridgers 談他時說：「他對我來說就像披頭四，我是說各方面都是。」",
+            "src": "https://en.wikipedia.org/wiki/Elliott_Smith",
+            "src2": "https://www.klcc.org/npr-music/npr-music/2020-04-16/learning-from-elliott-smith-20-years-after-figure-8",
+            "from": "new"
+          },
+          {
+            "f": "Frank Ocean 被列為受他影響的音樂人；Ocean 的專輯《Blonde》裡還有一小段引用他的〈A Fond Farewell〉致意。",
+            "src": "https://faroutmagazine.co.uk/the-enduring-legacy-of-elliott-smith/",
+            "src2": "https://en.wikipedia.org/wiki/Elliott_Smith",
+            "from": "new"
+          },
+          {
+            "f": "Julien Baker 承認他的聲音影響過自己的創作。",
+            "src": "https://faroutmagazine.co.uk/the-enduring-legacy-of-elliott-smith/",
+            "src2": "https://www.klcc.org/npr-music/npr-music/2020-04-16/learning-from-elliott-smith-20-years-after-figure-8",
+            "from": "new"
+          },
+          {
+            "f": "他 2003 年 10 月 21 日在洛杉磯過世，享年 34 歲，死因是刀傷；他過世時正在做第六張錄音室專輯，該作 2004 年以《From a Basement on the Hill》身後發行。",
+            "src": "https://en.wikipedia.org/wiki/Elliott_Smith",
+            "src2": "https://www.thecurrent.org/feature/2020/10/14/today-in-music-history-remembering-elliott-smith",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1994 年 7 月 14 日《Roman Candle》問世，他當時仍是 Heatmiser 成員。",
+            "src": "https://en.wikipedia.org/wiki/Roman_Candle_(album)",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1998 年〈Miss Misery〉入圍奧斯卡最佳原創歌曲。",
+        "src": "https://en.wikipedia.org/wiki/Elliott_Smith",
+        "src2": "https://www.wweek.com/archive/2023/10/28/elliott-smith-1969-2003/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "死因：維基寫兩處刀傷、驗屍未能斷定是自殺或他殺；The Current 與 Willamette Week 寫 apparent self-inflicted。facts 只寫『死因是刀傷』，不寫自殺或他殺"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫只有 Roman Candle 一條（bank 沿用）。Britannica 頁只有 Kenneth Anger 條目中的一句提及，未採。單源（放此，寫作層不得用）：出生地內布拉斯加州 Omaha 與生日 1969 年 8 月 6 日（維基；搜尋摘要也稱 Omaha 但未開頁）；父親是精神科醫師、母親是小學音樂老師，父母在他六個月大時離婚（維基）；9 歲學鋼琴、10 歲學吉他（維基）；聽到披頭四《White Album》是他想當音樂人的契機、強烈的披頭四影響（維基，搜尋摘要稱靈感來源為 Nick Drake、Lou Reed、披頭四，未開頁）；1998 年 3 月奧斯卡頒獎典禮上穿白西裝演唱〈Miss Misery〉（維基）；Gus Van Sant 為《Good Will Hunting》原聲帶選了他六首歌、之後簽 DreamWorks（Willamette Week 單源）；1992 年 2 月 14 日 Heatmiser 在 X-Ray Cafe 首演、末次波特蘭演出 2001 年 12 月 20 日 Crystal Ballroom（Willamette Week）；洛杉磯 Sunset Boulevard 4334 號 Solutions Audio 外的粉絲紀念牆（維基）；維基列 Beck 為受影響者（單源）；klcc 轉載的 NPR 文章另列 Sufjan Stevens、Arcade Fire 為回聲所在（單源）；Far Out 稱 Adrianne Lenker（Big Thief）受他影響（單源）；搜尋摘要（未開頁）稱 Billie Eilish、Julien Baker、Mac Miller 翻唱過他的歌。原 NPR 網址 503（failedFetches 1），改開 klcc 轉載頁。「1998 年奧斯卡」指 1998 年 3 月頒獎典禮，未寫屆次。",
+    "pubIssues": []
+  },
+  {
+    "key": "frank zappa",
+    "name": "Frank Zappa",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Zappa 1940 年 12 月 21 日生於馬里蘭州巴爾的摩，父親是西西里出生、替美國軍方相關單位工作，家庭因此常搬家，後來遷到加州，最後落腳在 Lancaster。",
+            "src": "https://en.wikipedia.org/wiki/Frank_Zappa",
+            "src2": "https://www.britannica.com/biography/Frank-Zappa",
+            "from": "new"
+          },
+          {
+            "f": "他少年時就迷上 Edgard Varèse 等現代作曲家的音樂，這條線後來成為他寫作與編曲的底子。",
+            "src": "https://en.wikipedia.org/wiki/Frank_Zappa",
+            "src2": "https://www.britannica.com/biography/Frank-Zappa",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1966 年 6 月 27 日由 Verve 發行的首張專輯《Freak Out!》是雙張專輯，把 R&B、doo-wop、管弦編曲與前衛音響拼貼混在一起，同時諷刺美國流行文化與洛杉磯的嬉皮場景。",
+            "src": "https://en.wikipedia.org/wiki/Freak_Out!",
+            "src2": "https://en.wikipedia.org/wiki/Frank_Zappa",
+            "from": "new"
+          },
+          {
+            "f": "他的作品橫跨搖滾、爵士與古典管弦，以不從眾、即興、音響實驗、演奏技巧與對美國文化的諷刺為特色；搖滾名人堂稱他的作品從搖滾到爵士到古典無所不包。",
+            "src": "https://en.wikipedia.org/wiki/Frank_Zappa",
+            "src2": "https://www.rockhall.com/inductees/frank-zappa",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1995 年入選搖滾名人堂，引介人是 Lou Reed；Reed 致詞時說 Zappa 是「講理與誠實的力量」。",
+            "src": "https://www.rockhall.com/inductees/frank-zappa",
+            "src2": "https://en.wikipedia.org/wiki/Frank_Zappa",
+            "from": "new"
+          },
+          {
+            "f": "他 1997 年獲葛萊美終身成就獎。",
+            "src": "https://en.wikipedia.org/wiki/Frank_Zappa",
+            "src2": "https://www.britannica.com/biography/Frank-Zappa",
+            "from": "new"
+          },
+          {
+            "f": "1985 年美國參議院就搖滾歌詞與唱片標示舉行聽證，他到場反對 PMRC（Parents Music Resource Center，由 Tipper Gore 創立）提出的分級標示，稱那是通往審查的邀請；聽證後唱片業仍採用了後來的 Parental Advisory 貼紙。",
+            "src": "https://www.fire.org/news/torture-never-stops-how-musician-frank-zappa-responded-recurring-argument-censorship",
+            "src2": "https://www.classical-music.com/articles/frank-zappa-pmrc-hearings-1985",
+            "from": "new"
+          },
+          {
+            "f": "他 1993 年 12 月 4 日在洛杉磯過世，享年 52 歲。",
+            "src": "https://en.wikipedia.org/wiki/Frank_Zappa",
+            "src2": "https://www.britannica.com/biography/Frank-Zappa",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1966 年他隨 Mothers of Invention 與 Verve 簽約後推出首張專輯《Freak Out!》。",
+            "src": "https://en.wikipedia.org/wiki/Freak_Out!",
+            "src2": "https://www.britannica.com/biography/Frank-Zappa",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1995 年入選搖滾名人堂（Lou Reed 引介）。",
+        "src": "https://www.rockhall.com/inductees/frank-zappa",
+        "src2": "https://en.wikipedia.org/wiki/Frank_Zappa",
+        "from": "new"
+      },
+      {
+        "f": "1997 年獲葛萊美終身成就獎。",
+        "src": "https://en.wikipedia.org/wiki/Frank_Zappa",
+        "src2": "https://www.britannica.com/biography/Frank-Zappa",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "加入 Soul Giants（後來的 Mothers）：維基寫 1965 年 4 月，Britannica 寫 Ray Collins 1964 年邀他入團，兩源不一致，facts 不收這個年份",
+      "父親職業：維基寫國防產業（Edgewood Arsenal），Britannica 寫替軍方當氣象員，facts 只寫『軍方相關單位』"
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫的 Sheik Yerbouti 四條與 One Size Fits All 上線簡介皆為專輯細節，本位不引用。單源（寫作層不得用）：維基首段『20 世紀最具創新性且風格最多元的音樂人之一』『喜劇搖滾教父』（維基單源）；搖滾名人堂官方（可具名單源）：名人堂官網稱他是 a great guitarist, songwriter, creator of concept albums, comedian, talent scout, doo wop expert, social critic and avid misanthrope、約六十張專輯『radical, groundbreaking and irreverent』、出面反對搖滾審查（https://www.rockhall.com/inductees/frank-zappa）；Britannica 單源：an instinctive postmodernist who demolished the barriers and hierarchies separating 'high' and 'low' culture；捷克天鵝絨革命後 Václav Havel 任命他為對西方的特別大使、後因美方施壓撤回（Britannica 單源，搜尋摘要查無佐證，另有『Havel 任命為貿易與文化特別代表』說法未驗證，不可用）；classical-music.com 單源：Ice-T、Trent Reznor、Eminem 稱他的立場對自己有形塑作用；《Frank Zappa Meets the Mothers of Prevention》（1985）收〈Porn Wars〉並貼仿製警語貼紙；fire.org 單源：聽證日期 1985 年 9 月 19 日、『Bad facts make bad law...』引言、事後 Jazz From Hell 被貼 Parental Advisory；維基單源：1952 年舉家搬到加州蒙特利、12 歲起學鼓、1957 年拿到第一把吉他、Antelope Valley 高中認識 Don Van Vliet（Captain Beefheart）、R&B 單曲與 doo-wop 收藏、父親生於 Partinico；《Freak Out!》維基單源：美國榜最高第 130 名、歐洲立即成功、1999 年入葛萊美名人堂、Rolling Stone 500 大 2003 年第 243、2012 年第 246、Paul McCartney 稱《Sgt. Pepper》是對《Freak Out!》的回應；「第二張搖滾雙專輯／第一張雙專輯出道作」兩種說法並存，未寫入 facts。Grammy.com 藝人頁 404、WaPo 403、Variety 付費（failedFetches 3）。上線簡介：無明確錯誤，未核對 One Size Fits All『Mothers 名下最後一張錄音室作品』，因未查，不列 pubIssues。",
+    "pubIssues": []
+  },
+  {
+    "key": "fugazi",
+    "name": "Fugazi",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fugazi 出自華盛頓特區 1980 年代的硬核龐克場景，是 Minor Threat 前主唱 Ian MacKaye 成立的新團；成員是 MacKaye（人聲與吉他）、Guy Picciotto（人聲與吉他）、Joe Lally（貝斯）與 Brendan Canty（鼓）。",
+            "src": "https://www.britannica.com/topic/Fugazi",
+            "src2": "https://en.wikipedia.org/wiki/Fugazi",
+            "from": "new"
+          },
+          {
+            "f": "Ian MacKaye 1962 年生於華盛頓特區，1980 年共同創辦獨立廠牌 Dischord Records；Fugazi 的專輯全數由 Dischord 發行。",
+            "src": "https://www.britannica.com/biography/Ian-MacKaye",
+            "src2": "https://iowastatedaily.com/215821/uncategorized/fugazi-the-ultimate-diy-band/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團以兩把吉他與兩位主唱的交錯為核心：人聲來回對唱、節奏停停走走；吉他尖銳而有稜角，用來標點與推節奏，而不是炫技，也打破主奏與節奏吉他的分工。",
+            "src": "https://www.britannica.com/topic/Fugazi",
+            "src2": "https://en.wikipedia.org/wiki/Repeater_(album)",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們堅持自己經營、只在 Dischord 發片、拒絕主流大廠，演出一律全年齡，票價壓在 5 美元以下。",
+            "src": "https://en.wikipedia.org/wiki/Fugazi",
+            "src2": "https://iowastatedaily.com/215821/uncategorized/fugazi-the-ultimate-diy-band/",
+            "from": "new"
+          },
+          {
+            "f": "這套作法讓 Fugazi 成為獨立音樂圈 DIY 作風的標竿；維基稱他們開創了嚴格的 DIY 準則，也有報導稱他們的堅持影響了更廣的 DIY 音樂社群。",
+            "src": "https://en.wikipedia.org/wiki/Fugazi",
+            "src2": "https://iowastatedaily.com/215821/uncategorized/fugazi-the-ultimate-diy-band/",
+            "from": "new"
+          },
+          {
+            "f": "Refused 的主唱 Dennis Lyxzén 表示《Red Medicine》是他最愛的 Fugazi 專輯，並承認 Refused 錄音時受到它的影響。",
+            "src": "https://en.wikipedia.org/wiki/Red_Medicine",
+            "src2": "https://en.wikipedia.org/wiki/Fugazi",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團 2000 年代初宣布無限期休團，沒有正式宣布解散。",
+            "src": "https://en.wikipedia.org/wiki/Fugazi",
+            "src2": "https://www.britannica.com/topic/Fugazi",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "成軍年份：維基寫 1986，Britannica 與 Iowa State Daily（首演）寫 1987，兩源不一致，facts 不收年份",
+      "休團宣布年份：維基寫 2003 年倫敦 Forum 演出後，Britannica 寫 2002 年宣布，兩源不一致，facts 只寫『2000 年代初』",
+      "票價：維基與 Iowa State Daily 寫 5 美元，Britannica 寫不超過 6 美元；facts 採兩源一致的『5 美元以下』"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫為空，全部新查。單源（寫作層不得用）：維基：Atlantic Records 開價逾 1000 萬美元被拒（搜尋摘要稱 1993 年 Ahmet Ertegun，未開頁）、不賣週邊商品、MacKaye 前團 Embrace、Canty 前團 Rites of Spring、共六張錄音室專輯（1989–2001）、演出逾 1000 場、Fugazi Live Series 750 場以上現場錄音、Joe Strummer 2000 年《Rolling Stone》訪談稱 Fugazi 體現 the spirit of punk、維基稱 Nirvana、Pearl Jam、At the Drive-In、Refused 常被提及受其影響（僅 Refused 有第二源）；Repeater 維基：1990 年 4 月 19 日 Dischord 發行、被形容為『an angrier American update of Gang of Four's Solid Gold』（引述樂評，單源）、賣約 50 萬張、Spin 90 年代 90 大專輯第 36、Pitchfork 90 年代百大第 52、Rage Against the Machine、American Football、Metz、The Dillinger Escape Plan 稱受此專輯影響；Red Medicine 維基：Billboard 200 第 126、英國第 18、加入單簧管、取樣與 dub、Pitchfork 2003 年 90 年代百大第 42、John Frusciante 稱之 masterpiece、Russian Circles 的 Mike Sullivan 稱它改變自己看待音樂的方式；Britannica Fugazi：1990 年代另類搖滾熱潮中獲同儕高度尊重；Britannica MacKaye：MacKaye 是硬核先驅、Minor Threat 歌詞啟發 straight edge 認同、出生日 1962 年 4 月 16 日。Iowa State Daily 稱 Fugazi『co-founded the straight-edge movement』，與其他源不符（straight edge 出自 Minor Threat），未採。搜尋摘要（未開頁，不可用）稱 At the Drive-In、Rage Against the Machine 受影響。Mother Jones 403（failedFetches 1）。Fugazi 無卡池已上線簡介，無 pubIssues。",
+    "pubIssues": []
+  },
+  {
+    "key": "gang of four",
+    "name": "Gang of Four",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Gang of Four 1976 年在英國里茲成軍，起點是 Leeds University：吉他手 Andy Gill 在那裡認識主唱 Jon King，陣容是 King、Gill、鼓手 Hugo Burnham 與貝斯手 Dave Allen。",
+            "src": "https://www.nme.com/blogs/andy-gill-obituary-1956-2020-gang-of-four-2604037",
+            "src2": "https://en.wikipedia.org/wiki/Gang_of_Four_(band)",
+            "from": "new"
+          },
+          {
+            "f": "他們的歌詞從一開始就談社會與政治問題，帶著馬克思主義與情境主義的視角。",
+            "src": "https://en.wikipedia.org/wiki/Gang_of_Four_(band)",
+            "src2": "https://www.nme.com/blogs/andy-gill-obituary-1956-2020-gang-of-four-2604037",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們把後龐克與放克、dub 的節奏結合，吉他尖銳有稜角；NME 形容 Andy Gill 的演奏帶著失控的精準，是龐克把放克的律動偷了過來。",
+            "src": "https://en.wikipedia.org/wiki/Gang_of_Four_(band)",
+            "src2": "https://www.nme.com/blogs/andy-gill-obituary-1956-2020-gang-of-four-2604037",
+            "from": "new"
+          },
+          {
+            "f": "1982 年的第三張專輯《Songs of the Free》是 Sara Lee 接替 Dave Allen 之後的第一張錄音，樂團轉向 R&B 或放克，離開早期作品裡較粗礪的成分。",
+            "src": "https://en.wikipedia.org/wiki/Songs_of_the_Free",
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Kurt Cobain 曾說 Nirvana 一開始是「Gang of Four 和 Scratch Acid 的翻版」；他也把《Entertainment!》列進自己最愛的 50 張專輯。",
+            "src": "https://www.nme.com/blogs/andy-gill-obituary-1956-2020-gang-of-four-2604037",
+            "src2": "https://en.wikipedia.org/wiki/Entertainment!",
+            "from": "new"
+          },
+          {
+            "f": "Red Hot Chili Peppers 的貝斯手 Flea 把 Gang of Four 列為樂團早期音樂的關鍵影響，並說《Entertainment!》徹底改變了他看待搖滾與貝斯的方式。",
+            "src": "https://consequence.net/2020/02/andy-gill-gang-of-four-dead/",
+            "src2": "https://en.wikipedia.org/wiki/Entertainment!",
+            "from": "new"
+          },
+          {
+            "f": "R.E.M. 也承認受他們影響；其他點名的還有 Tom Morello、St. Vincent 與 James Murphy。",
+            "src": "https://www.nme.com/blogs/andy-gill-obituary-1956-2020-gang-of-four-2604037",
+            "src2": "https://consequence.net/2020/02/andy-gill-gang-of-four-dead/",
+            "from": "new"
+          },
+          {
+            "f": "1979 年首張專輯《Entertainment!》被視為後龐克運動的經典專輯，維基稱它是 seminal post-punk album，NME 訃文稱它是歷久不衰又影響深遠的經典。",
+            "src": "https://en.wikipedia.org/wiki/Entertainment!",
+            "src2": "https://www.nme.com/blogs/andy-gill-obituary-1956-2020-gang-of-four-2604037",
+            "from": "new"
+          },
+          {
+            "f": "Andy Gill 2020 年 2 月 1 日在倫敦因短暫的呼吸道疾病過世，享年 64 歲。",
+            "src": "https://consequence.net/2020/02/andy-gill-gang-of-four-dead/",
+            "src2": "https://en.wikipedia.org/wiki/Gang_of_Four_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1979 年 9 月 25 日首張專輯《Entertainment!》發行。",
+            "src": "https://en.wikipedia.org/wiki/Entertainment!",
+            "src2": "https://consequence.net/2020/02/andy-gill-gang-of-four-dead/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1979 年首張專輯《Entertainment!》發行。",
+        "src": "https://en.wikipedia.org/wiki/Entertainment!",
+        "src2": "https://consequence.net/2020/02/andy-gill-gang-of-four-dead/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年份：維基與 NME 寫 1976，Consequence 寫 1974，採 1976（兩源）；NME 訃文把首張專輯寫成 1980 年，維基與 Consequence 為 1979 年，採 1979",
+      "Michael Hutchence 的『art meets the devil via James Brown』等單源引述未收"
+    ],
+    "searches": 5,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫僅有 Songs of the Free 專輯細節，其中 Sara Lee 接替 Dave Allen、轉向 R&B 放克一條沿用為 bank。單源（寫作層不得用）：維基：Rolling Stone 稱《Entertainment!》是史上第五佳龐克專輯；Michael Hutchence（INXS）稱其音樂是『art meets the devil via James Brown』；2021 年 King、Burnham 與 Sara Lee 重組；Andy Gill 逝世後樂團的後續巡演；Entertainment! 維基：Rolling Stone 500 大專輯 2003 年第 490、2012 年第 483、2020 年第 273，Pitchfork 2004 年 70 年代最佳專輯第 8、9.5 分，NME 1979 年度專輯第 5，Paste 2016 年最佳後龐克專輯第 6，1979 年 9 月 25 日 EMI（英）與 Warner Bros（北美）發行，被形容為影響了從 Minutemen 到 LCD Soundsystem；NME：Gill 與 King 都受教於馬克思女性主義學者 Griselda Pollock 與情境主義藝術史家 T.J. Clark、Michael Stipe 說『Gang Of Four knew how to swing, I stole a lot from them』、與 The Clash、The Fall 並列政治激進浪潮；Consequence：Gill 開創的稀疏、鋸齒狀、循環回饋聲吉他；搜尋摘要（未開頁）稱 Gill 1956 年生於曼徹斯特。Cobain 說法與 Flea 說法各有兩源開頁。NPR 503、Scotsman 403、Britannica 404（failedFetches 3）。上線簡介核對：Songs of the Free 的簡介與事實庫一致，無 pubIssues。",
+    "pubIssues": []
+  },
+  {
+    "key": "helloween",
+    "name": "Helloween",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Helloween 在西德漢堡成軍，由 Kai Hansen 早年的樂團 Ironfist 等漢堡樂團的成員組成；核心是 Hansen、Michael Weikath、Markus Grosskopf 與 Ingo Schwichtenberg。",
+            "src": "https://en.wikipedia.org/wiki/Helloween",
+            "src2": "https://www.loudersound.com/features/helloween-keeper-of-seven-keys",
+            "from": "new"
+          },
+          {
+            "f": "Hansen 早期兼任主唱與吉他，巡演時發現無法邊彈邊唱，於是退回專任吉他；Michael Kiske 在 1987 年的《Keeper of the Seven Keys: Part I》首度擔任主唱，據說 Hansen 起初對他偏柔的唱法有疑慮，後來才認可。",
+            "src": "https://en.wikipedia.org/wiki/Keeper_of_the_Seven_Keys:_Part_I",
+            "src2": "https://www.loudersound.com/features/helloween-keeper-of-seven-keys",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們把快速的 speed metal 悶音 riff 接上高音的清亮人聲，重旋律、走正向昂揚的路線，成為歐洲 power metal 的範本；Louder 形容這套聲音像「加速版的 Iron Maiden」。",
+            "src": "https://en.wikipedia.org/wiki/Power_metal",
+            "src2": "https://metalhalloffame.org/news/helloween-keeper-of-the-power-metal-keys/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1987 年的《Keeper of the Seven Keys: Part I》被視為催生歐洲式 power metal 的專輯，Louder 稱兩張《Keeper》為這個類型的藍圖。",
+            "src": "https://en.wikipedia.org/wiki/Keeper_of_the_Seven_Keys:_Part_I",
+            "src2": "https://www.loudersound.com/features/helloween-keeper-of-seven-keys",
+            "from": "new"
+          },
+          {
+            "f": "維基稱 Helloween 是 power metal 的先驅之一；Metal Hall of Fame 的文章說他們比任何團都更貼近 power metal 的本質，並在 2023 年 5 月將他們列入名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Helloween",
+            "src2": "https://metalhalloffame.org/news/helloween-keeper-of-the-power-metal-keys/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1987 年 5 月《Keeper of the Seven Keys: Part I》發行，1988 年《Part II》接續。",
+            "src": "https://en.wikipedia.org/wiki/Keeper_of_the_Seven_Keys:_Part_I",
+            "src2": "https://metalhalloffame.org/news/helloween-keeper-of-the-power-metal-keys/",
+            "from": "new"
+          },
+          {
+            "f": "2017 年的 Pumpkins United 巡演讓 Kai Hansen 與 Michael Kiske 和現任主唱 Andi Deris 三位主唱同台。",
+            "src": "https://en.wikipedia.org/wiki/Helloween",
+            "src2": "https://metalhalloffame.org/news/helloween-keeper-of-the-power-metal-keys/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1987 年《Keeper of the Seven Keys: Part I》發行，被視為 power metal 的起點。",
+        "src": "https://en.wikipedia.org/wiki/Keeper_of_the_Seven_Keys:_Part_I",
+        "src2": "https://www.loudersound.com/features/helloween-keeper-of-seven-keys",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年份：維基寫 1984 年在漢堡成立，Louder 與搜尋摘要寫 1979 年 Hansen 與 Piet Sielck 組 Ironfist，兩源說的是不同起點，facts 不寫年份",
+      "研究稿 c50c-d 與上線簡介皆未與本層新查事實衝突"
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫的 The Time of the Oath 研究稿與上線簡介多為專輯細節，本位不引用。單源（寫作層不得用）：維基：團名取自 1978 年電影《Halloween》、成員來自 Iron Fist、Gentry、Second Hell、Powerfool、與 Grave Digger、Rage、Running Wild 並列早期德國『big four』、全球銷量逾 1000 萬張、2023 年入選 Metal Hall of Fame（另有 metalhalloffame.org 文章佐證入選月份為 2023 年 5 月，已用）、Ingo Schwichtenberg 1995 年 3 月 8 日過世（單源，不寫）、2016 年 11 月宣布 Hansen 與 Kiske 回歸、2021 年同名專輯；Power metal 維基：Keeper Part I 是『arguably the single most influential power metal album to date』、Hansen 是 power metal 早期發展最大的影響者之一、後組 Gamma Ray、Schwichtenberg 的雙大鼓技法成為鼓手範本（皆單源）；Part I 維基：Loudwire Top 25 Power Metal Albums 第 3 名、1987 年 5 月 23 日 Noise 發行、德國榜第 15、美國 Billboard 200 第 104、德國金唱片；Louder：Kiske 18 歲加入；〈I Want Out〉維基（單源）：Kai Hansen 作曲、1988 年 10 月 31 日單曲、HammerFall 1999 年版由 Hansen 客串、Sonata Arctica 2000 年翻唱、Gamma Ray 現場常演、Unisonic 2012 年《Ignition》EP 收錄，MV 導演 Storm Thorgerson，與上線簡介『被 Gamma Ray、Unisonic、HammerFall、Sonata Arctica 反覆翻唱』一致；搜尋摘要（未開頁，不可用）稱影響 Blind Guardian、Angra、Edguy、Freedom Call 等。Britannica 404、metalreviews 302 導向付費 402（failedFetches 3）。上線簡介核對：Keeper Part I／II、Walls of Jericho、The Time of the Oath 的簡介與本次所讀來源無矛盾，無 pubIssues。",
+    "pubIssues": []
+  },
+  {
+    "key": "hüsker dü",
+    "name": "Hüsker Dü",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Hüsker Dü 1979 年在明尼蘇達州聖保羅成軍，核心是三人：Bob Mould（吉他與人聲）、Greg Norton（貝斯）與 Grant Hart（鼓與人聲）。",
+            "src": "https://en.wikipedia.org/wiki/H%C3%BCsker_D%C3%BC",
+            "src2": "https://www.britannica.com/topic/Husker-Du",
+            "from": "new"
+          },
+          {
+            "f": "團名取自一款 1950 年代的斯堪地那維亞記憶桌遊，「Hüsker Dü?」在丹麥語與挪威語裡是「你還記得嗎」。",
+            "src": "https://en.wikipedia.org/wiki/H%C3%BCsker_D%C3%BC",
+            "src2": "https://www.britannica.com/topic/Husker-Du",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們一開始是以速度見稱的硬核龐克，後來逐步把旋律、流行與迷幻的成分帶進來，最終成為橋接硬核與另類搖滾的樂團。",
+            "src": "https://en.wikipedia.org/wiki/H%C3%BCsker_D%C3%BC",
+            "src2": "https://www.britannica.com/topic/Husker-Du",
+            "from": "new"
+          },
+          {
+            "f": "1984 年 7 月由 SST 發行的《Zen Arcade》是一張雙專輯，講一個離家男孩發現外面世界更糟的概念故事，在硬核之外混入原聲民謠、迷幻與鋼琴間奏。",
+            "src": "https://en.wikipedia.org/wiki/Zen_Arcade",
+            "src2": "https://www.mnhs.org/mnopedia/search/index/group/h-sker-d",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Britannica 稱他們把流行旋律與抒情帶進龐克，為 1990 年代另類搖滾的爆發鋪了路；維基也稱他們在巔峰期把硬核與另類搖滾接在一起，影響了好幾個世代。",
+            "src": "https://www.britannica.com/topic/Husker-Du",
+            "src2": "https://en.wikipedia.org/wiki/H%C3%BCsker_D%C3%BC",
+            "from": "new"
+          },
+          {
+            "f": "Nirvana、Foo Fighters 與 Green Day 都被列為受 Hüsker Dü 影響的樂團。",
+            "src": "https://www.mnhs.org/mnopedia/search/index/group/h-sker-d",
+            "src2": "https://en.wikipedia.org/wiki/H%C3%BCsker_D%C3%BC",
+            "from": "new"
+          },
+          {
+            "f": "《Zen Arcade》在 Rolling Stone 1989 年評選的 1980 年代最佳專輯中排第 33 名。",
+            "src": "https://en.wikipedia.org/wiki/Zen_Arcade",
+            "src2": "https://en.wikipedia.org/wiki/H%C3%BCsker_D%C3%BC",
+            "from": "new"
+          },
+          {
+            "f": "他們是 1980 年代最早轉簽大廠 Warner Bros. 的獨立／另類樂團之一。",
+            "src": "https://en.wikipedia.org/wiki/H%C3%BCsker_D%C3%BC",
+            "src2": "https://www.mnhs.org/mnopedia/search/index/group/h-sker-d",
+            "from": "new"
+          },
+          {
+            "f": "Grant Hart 2017 年過世，享年 56 歲，樂團的地位在這之後再度被樂評界重新提起。",
+            "src": "https://en.wikipedia.org/wiki/H%C3%BCsker_D%C3%BC",
+            "src2": "https://www.mnhs.org/mnopedia/search/index/group/h-sker-d",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團在最後一張專輯《Warehouse: Songs and Stories》的巡演之後解散，原因包括 Mould 與 Hart 之間的爭執，以及經紀人 David Savoy 於 1987 年 2 月輕生。",
+            "src": "https://en.wikipedia.org/wiki/Warehouse:_Songs_and_Stories",
+            "src2": "https://www.mnhs.org/mnopedia/search/index/group/h-sker-d",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1984 年 7 月發行雙專輯《Zen Arcade》。",
+        "src": "https://en.wikipedia.org/wiki/Zen_Arcade",
+        "src2": "https://www.mnhs.org/mnopedia/search/index/group/h-sker-d",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "轉簽 Warner 年份：MNopedia 寫 1985 年，維基與事實庫（Warehouse 為 1987 年 1 月 Warner 發行）指向 1986 年前後，兩源不一致，facts 不寫年份",
+      "解散年份：MNopedia 寫 1987 年，維基寫 1988 年 12 月，facts 只寫『最後一張巡演之後』",
+      "《Zen Arcade》錄音時數：Hüsker Dü 維基寫 45 小時、Zen Arcade 維基寫 40 小時（混音另 40 小時），兩源不一致，不收；成本 3200 美元兩頁一致但不放 facts（非地位事實）"
+    ],
+    "searches": 5,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "事實庫僅有 Warehouse: Songs and Stories 專輯細節，其中『樂團在這張巡演後解散、原因含爭執與經紀人輕生』沿用為 era bank 並補上 MNopedia 第二源。『第一』類宣稱：兩源都稱 Hüsker Dü 是首批簽大廠的獨立樂團，但搜尋摘要稱 The Replacements 同樣是最早一批，且兩團簽約年份都在 1985–86 年前後，存在明顯反例，故只寫『最早一批之一』，不寫『第一』。單源（寫作層不得用）：維基：Krist Novoselic『What Nirvana did was nothing new, Hüsker Dü did it before us』、Billie Joe Armstrong 稱其對自己寫歌很重要、Dave Grohl 稱《Zen Arcade》是轉捩點（搜尋摘要另有『No Hüsker Dü, no Foo Fighters』，未開頁）、Greg Norton 後來當餐廳老闆、2006 年回到音樂；MNopedia：三人在 Cheapo Records 認識、Hart 與 Norton 是雙城本地人、Mould 為就讀 Macalester College 搬來、後期轉向 power pop、成為大學電台常客、部分人稱他們是『The Beatles of the 80s』、Pixies 與 Metallica 也列為受影響者；Zen Arcade 維基：1983 年 10 月錄於加州 Redondo Beach 的 Total Access Studio、成本 3200 美元、Spin 另類專輯前百第 4、Pitchfork 80 年代最佳第 32、Slant 第 73、〈Turn On the News〉入名人堂『500 Songs That Shaped Rock and Roll』、啟發 Minutemen 做出《Double Nickels on the Dime》。MNopedia 網址兩次 301 轉址才取得內容（兩次轉址不計搜尋，記入 failedFetches）。上線簡介核對：Warehouse 簡介中 Billboard 200 第 117、英國第 72 及 Mould 對 Hart 的當面說法本層未查，不列 pubIssues。",
+    "pubIssues": []
+  },
+  {
+    "key": "interpol",
+    "name": "Interpol",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Interpol 1997 年在紐約成軍，起點是紐約大學（NYU）：Daniel Kessler 與宿舍室友 Greg Drudy 發起，並在校內找來 Carlos Dengler；他還邀了在巴黎遊學計畫認識的同校同學 Paul Banks 加入。",
+            "src": "https://en.wikipedia.org/wiki/Daniel_Kessler_(guitarist)",
+            "src2": "https://en.wikipedia.org/wiki/Paul_Banks_(American_singer)",
+            "from": "new"
+          },
+          {
+            "f": "創團鼓手 Drudy 2000 年離團，由 Sam Fogarino 接手。",
+            "src": "https://en.wikipedia.org/wiki/Interpol_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Daniel_Kessler_(guitarist)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂評常拿 Joy Division 與 Interpol 相比，主唱 Paul Banks 的男中音也最常被比作 Joy Division 的 Ian Curtis。",
+            "src": "https://en.wikipedia.org/wiki/Paul_Banks_(American_singer)",
+            "src2": "https://en.wikipedia.org/wiki/Turn_On_the_Bright_Lights",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《Turn On the Bright Lights》2002 年 8 月由 Matador 發行，獲 Pitchfork 選為 2002 年度專輯，也在 NME 的年度榜上排第 10。",
+            "src": "https://en.wikipedia.org/wiki/Interpol_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Turn_On_the_Bright_Lights",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1997 年成軍，2002 年 8 月以《Turn On the Bright Lights》出道。",
+            "src": "https://en.wikipedia.org/wiki/Interpol_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Turn_On_the_Bright_Lights",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2002 年首張專輯《Turn On the Bright Lights》成為 Pitchfork 年度專輯。",
+        "src": "https://en.wikipedia.org/wiki/Interpol_(band)",
+        "src2": "https://en.wikipedia.org/wiki/Turn_On_the_Bright_Lights",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "legacy 格只有 Pitchfork 與 NME 年度榜一條有兩源，共識評價與後輩點名皆單源，故 status 標 thin。搜尋次數 8 為保守上限估計（其中一次搜尋含兩個查詢，另有兩次開頁內容無用：Paul Banks（English musician）是同名的 Shed Seven 吉他手、Classic Album Sundays 頁面空白）。單源（寫作層不得用）：Interpol 維基：斷奏貝斯、節奏性和聲吉他與偏重鼓面的混音，被比作 Joy Division、Television、Chameleons；Dengler 2010 年第四張同名專輯後離團、Banks 之後在錄音室兼任貝斯；Turn On the Bright Lights 維基：2001 年 11 月錄於康乃狄克 Bridgeport 的 Tarquin Studios、製作 Peter Katis、被稱為 seminal album of the 2000s、影響 The Killers、Editors、The xx、與 The Strokes 和 Yeah Yeah Yeahs 一起被視為帶動紐約後龐克復興、Metacritic 81、全球約 100 萬張、美國金唱片；Paul Banks 維基：1978 年 5 月 3 日生於英國 Clacton-on-Sea、3 歲隨家人到美國密西根、12 歲搬到西班牙讀馬德里美國學校、後又到墨西哥市、在 NYU 讀英文與比較文學；Kessler 維基：1974 年生於倫敦、在巴黎近郊長大到 11 歲、讀 NYU Gallatin、曾在 Domino Recording Company 工作；Kessler 是與 Dengler 在歷史課認識。搜尋摘要（未開頁，不可用）稱 Interpol 與 The Strokes、Yeah Yeah Yeahs 一起帶動後龐克復興、專輯風格與 Echo & the Bunnymen、Cure 有相通之處。Britannica 404（failedFetches 1）。『Paul Banks』有同名者：本層用的是 Interpol 主唱的條目（American singer）。事實庫的 Our Love to Admire 一條（唯一大廠專輯）屬廠牌履歷，不引用。上線簡介：Our Love to Admire 的榜位、Banks『最糟經驗』說法本層未查，不列 pubIssues。",
+    "pubIssues": []
+  },
+  {
+    "key": "jackson browne",
+    "name": "Jackson Browne",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Jackson Browne 1948 年 10 月 9 日生於德國海德堡，在洛杉磯與橘郡長大，家族在南加州有很深的音樂根源。",
+            "src": "https://en.wikipedia.org/wiki/Jackson_Browne",
+            "src2": "https://www.britannica.com/biography/Jackson-Browne",
+            "from": "new"
+          },
+          {
+            "f": "他高中畢業後加入 Nitty Gritty Dirt Band，接著到紐約，替 Nico 伴奏並參與她的首張專輯；在他自己出唱片之前，Tom Rush、Linda Ronstadt 等人已經錄過他寫的歌。",
+            "src": "https://en.wikipedia.org/wiki/Jackson_Browne",
+            "src2": "https://www.britannica.com/biography/Jackson-Browne",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他出自 1970 年代洛杉磯的鄉村搖滾圈，被視為定義 singer-songwriter 風潮的人物之一；搖滾名人堂稱他是 1970 年代 singer-songwriter 的典型。",
+            "src": "https://www.britannica.com/biography/Jackson-Browne",
+            "src2": "https://www.rockhall.com/inductees/jackson-browne",
+            "from": "new"
+          },
+          {
+            "f": "他與 Eagles 的 Glenn Frey 合寫了〈Take It Easy〉。",
+            "src": "https://en.wikipedia.org/wiki/Jackson_Browne",
+            "src2": "https://www.britannica.com/biography/Jackson-Browne",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 2004 年入選搖滾名人堂，引介人是 Bruce Springsteen。",
+            "src": "https://www.rockhall.com/inductees/jackson-browne",
+            "src2": "https://en.wikipedia.org/wiki/Jackson_Browne",
+            "from": "new"
+          },
+          {
+            "f": "1979 年賓州三哩島核電廠事故後，他與 Bonnie Raitt 等人成立 Musicians United for Safe Energy（MUSE），反對核能。",
+            "src": "https://en.wikipedia.org/wiki/Jackson_Browne",
+            "src2": "https://en.wikipedia.org/wiki/Musicians_United_for_Safe_Energy",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1979 年成立 MUSE，並在同年 9 月於紐約麥迪遜廣場花園舉辦五場 No Nukes 演唱會。",
+            "src": "https://en.wikipedia.org/wiki/Musicians_United_for_Safe_Energy",
+            "src2": "https://en.wikipedia.org/wiki/Jackson_Browne",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2004 年入選搖滾名人堂，由 Bruce Springsteen 引介。",
+        "src": "https://www.rockhall.com/inductees/jackson-browne",
+        "src2": "https://en.wikipedia.org/wiki/Jackson_Browne",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "《Running on Empty》年份：Britannica 寫 1978，維基與上線簡介為 1977 年 12 月，採 1977；本層 facts 不引用"
+    ],
+    "searches": 7,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫研究稿為空，全部新查。單源（已移出 facts）：Britannica 稱 1980 年代他的音樂轉向政治，1986 年《Lives in the Breach》反映對美國中美洲政策的反對，維基第二源僅支持社運大意。單源（寫作層不得用）：搖滾名人堂官方（可具名單源）：名人堂官網稱他 among the vanguard singer/songwriters of the rock & roll era，創作 reflective, socially aware and intelligent（https://www.rockhall.com/inductees/jackson-browne）；Springsteen 引介致詞（Far Out 轉述，搜尋摘要另引 UPI）：this guy was simply one of the best、Jackson's influence and his voice has always been his own、one of the true activist musicians I've ever known、稱《Late for the Sky》是他的 masterpiece（僅 Late for the Sky 維基佐證後者，單源）；維基：父親 Clyde Jack Browne 是美國軍人、3 歲搬到洛杉磯、Elektra 的 Nina Music 駐社詞曲作者、〈These Days〉與 Shadow Dream Song 被 Tom Rush、Eagles、Linda Ronstadt、Joan Baez 錄過、1971 年簽 Asylum、Running on Empty 為最大商業成功登專輯榜第 3、2007 年入詞曲作者名人堂、Occidental College 榮譽博士、8 次葛萊美提名、2002 年 John Steinbeck Award、2018 年 Gandhi Peace Award；Britannica：也替 Tim Buckley 伴奏、1972 首張有前十單曲〈Doctor My Eyes〉、《The Pretender》（1976）與《Running on Empty》為破百萬專輯、風格從民謠搖滾情歌到快節奏搖滾與雷鬼；MUSE 維基（單源）：創始人含 Graham Nash、Harvey Wasserman，1979 年 9 月 23 日巴特里公園城集會近 20 萬人，Springsteen、James Taylor、Carly Simon、Doobie Brothers 等參加，1980 年 No Nukes 專輯與紀錄片；Late for the Sky 維基（單源）：1974 年 9 月 13 日 Asylum、Billboard 200 第 14、金唱片與白金、Rolling Stone 500 大 2003 年第 372（Browne 最高名次）、AllMusic 五星。songhall.org 404（failedFetches 1）。上線簡介核對：〈Doctor My Eyes〉『流行單曲榜第八名』本層只確認 Britannica 寫前十名，未逐項查證；Running on Empty 專輯榜第 3 與維基一致；無 pubIssues。",
+    "pubIssues": []
+  }
+]

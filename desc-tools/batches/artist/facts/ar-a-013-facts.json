@@ -1,0 +1,4856 @@
+[
+ {
+  "key": "麋先生",
+  "name": "麋先生",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "rock",
+  "yearRange": [
+   2015,
+   2023
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "野生",
+    "year": 2016,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "嗜愛動物",
+    "year": 2020,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "沒名字的人類",
+    "year": 2015,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "都是浪漫害的",
+    "year": 2023,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "我們的十年 WE LIVE 現場十錄",
+    "year": 2023,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 5,
+   "facts": 8,
+   "publishedDescs": 5,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c126-b",
+    "album": "野生",
+    "facts": [
+     {
+      "f": "這是麋先生的**第三張專輯，也是他們拿下金曲獎之後的第二張**：2013 年的《馬戲團運動》替他們**拿下第 25 屆金曲獎最佳樂團獎**（得獎），2015 年的《沒名字的人類》**入圍第 27 屆同一個獎**（入圍，未得獎），本作接在後面。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC25%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+     },
+     {
+      "f": "樂團 2012 年 10 月才正式成軍，成員多半從學生時期就一起玩音樂；本作發行兩年後的 2018 年 12 月 29 日，他們在臺大體育館辦了首場大型售票演唱會《麋宮》。",
+      "src": "https://zh.wikipedia.org/wiki/%E9%BA%8B%E5%85%88%E7%94%9F"
+     },
+     {
+      "f": "MB 這筆 CD 的十軌**每一軌都掛滿了外部連結**——每首歌各有 free streaming、purchase for download 與兩條 streaming 關係。十軌逐軌：小朋友／野生遊樂園／說黑說白／出口／怕黑／在揮手那天回首／圓／囝仔／霸道／Hello。",
+      "src": "https://musicbrainz.org/ws/2/release/308f7918-e2a8-4001-8294-cefa6e2fa207?fmt=json&inc=recordings+recording-level-rels+media+labels"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c126-b",
+    "album": "嗜愛動物",
+    "facts": [
+     {
+      "f": "專輯的第 2 軌〈四不像〉在店面的英文副題是 **Père David's Deer**——那正是麋鹿。樂團的團名就是從麋鹿來的：團員認為麋鹿的角形似雙手，象徵用自己的雙手開創未來，加上台灣沒有麋鹿、「麋」又與「迷」同音，才定了「麋先生」這個名字。",
+      "src": "https://zh.wikipedia.org/wiki/%E9%BA%8B%E5%85%88%E7%94%9F"
+     },
+     {
+      "f": "MB 這筆 2020-10-08 的台灣 CD，十三軌**每一軌都掛了五條外部連結**（兩條 free streaming、一條 purchase for download、兩條 streaming），與同團 2016 年《野生》的四條相比又多了一條。",
+      "src": "https://musicbrainz.org/ws/2/release/9db52176-5c1f-4cb7-ab6e-106e107bf186?fmt=json&inc=recordings+recording-level-rels+media+labels"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c127-a",
+    "album": "沒名字的人類",
+    "facts": [
+     {
+      "f": "這張以概念專輯的形式做，是這支團在資料庫端的第二張 Album，也是他們第一張完整編制的錄音室盤。作品讓樂團入圍第 27 屆金曲獎（2016）最佳樂團獎——**是入圍，不是得獎**；同一個獎項他們在第 25 屆（2014）以前作《馬戲團運動》**得過一次**。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E9%BA%8B%E5%85%88%E7%94%9F"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c127-a",
+    "album": "都是浪漫害的",
+    "facts": [
+     {
+      "f": "這張讓樂團入圍第 35 屆金曲獎（2024）最佳樂團獎——**是入圍，不是得獎**。這是他們第三次進入這個獎項：第 25 屆（2014）以《馬戲團運動》得獎，第 27 屆（2016）以《沒名字的人類》入圍。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E9%BA%8B%E5%85%88%E7%94%9F"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c127-a",
+    "album": "我們的十年 WE LIVE 現場十錄",
+    "facts": [
+     {
+      "f": "這是這支團的第一張現場專輯，錄自成軍十週年的演唱會；樂團 2012 年成軍，碟在 2023 年 2 月出版。第 7 軌〈閉上眼睛會想起的人〉的現場版帶一位客座女聲 家家。",
+      "src": "https://www.mymusic.net.tw/ux/w/album/show/10125080"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "野生",
+    "manifest": "onboarding-manifest-c126-20260917.json",
+    "desc": "十首的長度差只有一分二十八秒，八首擠在三分半到四分鐘。最長的〈在揮手那天回首〉4 分 37 秒，最短的〈小朋友〉3 分 9 秒，整張約 38 分鐘，副歌位置也擺得很固定。這是麋先生的第三張專輯：2013 年那張替他們拿下第 25 屆金曲獎最佳樂團獎，2015 年那張入圍第 27 屆同一個獎但沒有得，本作接在後面。樂團 2012 年 10 月才正式成軍，五人編制，這張碟發行兩年後才辦了首場大型售票演唱會。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=60823366-847b-4101-9c77-6b80435a8615&fmt=json&inc=media+labels+artist-credits&limit=100",
+     "https://zh.wikipedia.org/wiki/%E7%AC%AC25%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://zh.wikipedia.org/wiki/%E9%BA%8B%E5%85%88%E7%94%9F",
+     "https://musicbrainz.org/ws/2/release/308f7918-e2a8-4001-8294-cefa6e2fa207?fmt=json&inc=recordings+recording-level-rels+media+labels",
+     "https://itunes.apple.com/lookup?id=1167908899&country=tw&entity=song&limit=100",
+     "https://musicbrainz.org/release-group/60823366-847b-4101-9c77-6b80435a8615"
+    ]
+   },
+   {
+    "album": "嗜愛動物",
+    "manifest": "onboarding-manifest-c126-20260917.json",
+    "desc": "第二首歌的英文副題是 Père David's Deer，正是團名的來歷。團員認為麋鹿的角形似雙手，象徵用自己的雙手開創未來，加上台灣沒有麋鹿、「麋」又與「迷」同音，團名就這麼定了。十三軌用兩段器樂當隔板，第一軌〈INTRO（帶路）〉開場，第九軌〈INTERLUDE〉把整張切成前後兩半，合計約 45 分鐘。第五軌〈廢廢〉是公視劇集《大債時代》的片尾曲。這是第四張專輯，2020 年 10 月發行，年底辦了同名的北中南巡迴。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5bd697c4-7416-4e72-9798-dbe76fd61cec&fmt=json&inc=media+labels+artist-credits&limit=100",
+     "https://zh.wikipedia.org/wiki/%E9%BA%8B%E5%85%88%E7%94%9F",
+     "https://itunes.apple.com/lookup?id=1533034559&country=tw&entity=song&limit=100",
+     "https://musicbrainz.org/ws/2/release/9db52176-5c1f-4cb7-ab6e-106e107bf186?fmt=json&inc=recordings+recording-level-rels+media+labels",
+     "https://musicbrainz.org/release-group/5bd697c4-7416-4e72-9798-dbe76fd61cec"
+    ]
+   },
+   {
+    "album": "沒名字的人類",
+    "manifest": "onboarding-manifest-c127-20260917.json",
+    "desc": "相信音樂給他們開了一條專屬編號，這張是第二號。同一條序列後面接的是 2016 年的《野生》與 2020 年的《嗜愛動物》，一路用到 2023 年才換成另一組字首。碟在 2015 年 3 月 27 日發行，是樂團的第二張專輯，以概念專輯的形式做，也是他們第一張完整編制的錄音室盤：十軌的第一軌是 1 分 35 秒的器樂前奏，後面九首的長度落差被壓得很小。作品讓樂團入圍第 27 屆金曲獎最佳樂團獎，同一個獎他們在第 25 屆已經以《馬戲團運動》得過一次。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=27c759a3-7fd9-46f3-b6ce-764181169810&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1115598945&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/zh-tw/%E9%BA%8B%E5%85%88%E7%94%9F",
+     "https://musicbrainz.org/ws/2/release?artist=c245230b-f02f-4d01-8ad4-e8e219113875&fmt=json&inc=labels+media&limit=100",
+     "https://musicbrainz.org/release-group/27c759a3-7fd9-46f3-b6ce-764181169810"
+    ]
+   },
+   {
+    "album": "都是浪漫害的",
+    "manifest": "onboarding-manifest-c127-20260917.json",
+    "desc": "碟裡那首電影片尾曲，比整張碟早十二天先出來。那是第 4 軌〈壞蛋〉，電影《周處除三害》的片尾曲，2023 年 10 月 5 日先以單曲發行，整張碟 10 月 17 日才上，同年 11 月才出 CD，2025 年 2 月又再版一次。這是樂團目前最新的一張錄音室專輯，讓他們入圍第 35 屆金曲獎最佳樂團獎，是第三次進這個名單。十一軌裡有七首壓在三分半上下，節奏排得極平，只有末段兩軌把長度拉開。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=04335c66-26ca-4ebb-a647-41b5f93b12f8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1711761060&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=976685640&country=tw&entity=album&limit=200",
+     "https://zh.wikipedia.org/zh-tw/%E9%BA%8B%E5%85%88%E7%94%9F",
+     "https://musicbrainz.org/release-group/04335c66-26ca-4ebb-a647-41b5f93b12f8"
+    ]
+   },
+   {
+    "album": "我們的十年 WE LIVE 現場十錄",
+    "manifest": "onboarding-manifest-c127-20260917.json",
+    "desc": "開場那一軌整整六分鐘，前奏與台上講的話沒有切開。這是樂團的第一張現場專輯，錄音來自成軍十週年的那場演唱會——他們 2012 年成軍，十週年落在 2022 年，唱片則到 2023 年 2 月 6 日才發行，十軌正好對上十年。第 7 軌〈閉上眼睛會想起的人〉的現場版帶了一位客座女聲 家家。其餘九軌都落在三分十五秒到五分十二秒之間，觀眾的聲音與現場的空氣都沒有被剪掉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=5fd7bdba-301e-4f04-ba02-8283de6f0b78&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1669512704&country=tw&entity=song&limit=200",
+     "https://www.mymusic.net.tw/ux/w/album/show/10125080",
+     "https://musicbrainz.org/release-group/5fd7bdba-301e-4f04-ba02-8283de6f0b78"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bob dylan",
+  "name": "Bob Dylan",
+  "tier": "A",
+  "cards": 12,
+  "mainGenre": "folk",
+  "yearRange": [
+   1963,
+   1979
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "John Wesley Harding",
+    "year": 1967,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Nashville Skyline",
+    "year": 1969,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dylan",
+    "year": 1973,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Self Portrait",
+    "year": 1970,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Slow Train Coming",
+    "year": 1979,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Times They Are A-Changin'",
+    "year": 1964,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Highway 61 Revisited",
+    "year": 1965,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Blood on the Tracks",
+    "year": 1975,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Blonde on Blonde",
+    "year": 1966,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bringing It All Back Home",
+    "year": 1965,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Freewheelin' Bob Dylan",
+    "year": 1963,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Desire",
+    "year": 1976,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 11
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "The Times They Are A-Changin'",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bob Dylan 1964 年 2 月 10 日發行的第三張作品,也是首張全部由自己創作的專輯。編制退到只剩木吉他與口琴,歌幾乎都是冷硬的敘事民謠:〈Ballad of Hollis Brown〉寫農家走投無路,〈North Country Blues〉寫礦區凋敝,〈The Lonesome Death of Hattie Carroll〉取材自真實命案,〈Only a Pawn in Their Game〉寫民權運動者 Medgar Evers 之死。當時已有樂評嫌它缺少幽默與變化,唱片仍登上美國榜第 20 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Times_They_Are_a-Changin%27_(Bob_Dylan_album)",
+     "https://musicbrainz.org/release-group/846f8032-9a85-3f4f-b7f5-28c86573d044"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "johnny cash",
+  "name": "Johnny Cash",
+  "tier": "A",
+  "cards": 10,
+  "mainGenre": "folk",
+  "yearRange": [
+   1957,
+   2004
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "At Folsom Prison",
+    "year": 1968,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "At San Quentin",
+    "year": 1969,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "American IV: The Man Comes Around",
+    "year": 2002,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Keep on the Sunny Side",
+    "year": 1964,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hymns From the Heart",
+    "year": 1962,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Now, There Was a Song!",
+    "year": 1960,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "My Mother's Hymn Book",
+    "year": 2004,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "With His Hot and Blue Guitar",
+    "year": 1957,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bitter Tears: Ballads of the American Indian",
+    "year": 1964,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "American Recordings",
+    "year": 1994,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 6
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "My Mother's Hymn Book",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "全片只有 Cash 一個人的聲音與一把木吉他，十五首都是他小時候從母親那本歌本學來的聖歌。這批錄音多半出自 1993 至 1994 年他為 American Recordings 做的最早期 session，2003 年先以《Unearthed》五片盒的第四片問世，2004 年才單獨發行，是他名下第八十九張專輯，在 Christian 專輯榜最高第九名。他在內頁寫明這是自己做過最喜歡的一張唱片。〈I'll Fly Away〉〈In the Garden〉〈Just As I Am〉都收在裡面。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Unearthed_(Johnny_Cash_album)",
+     "https://musicbrainz.org/release-group/eb598fe7-0281-3333-8dfb-8f1faaac6bcd"
+    ]
+   },
+   {
+    "album": "With His Hot and Blue Guitar",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "Sun Records 旗下第一位發行 LP 的藝人，把四首成名單曲全部收進了這一張。本作 1957 年 10 月 11 日由 Sun 發行，Sam Phillips 製作，收 1954 至 1957 年間的錄音，是 Johnny Cash 的首張錄音室專輯。包括〈I Walk the Line〉與〈Folsom Prison Blues〉在內的四首 Sun 單曲全數入列；廠牌招牌的 slapback echo 迴音與 boom-chicka-boom 節奏，在此已經定型。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Johnny_Cash_with_His_Hot_and_Blue_Guitar!",
+     "https://sunrecords.com/artists/johnny-cash/",
+     "https://musicbrainz.org/release-group/288b58ea-6b89-3dae-8428-2822fb15c7cb"
+    ]
+   },
+   {
+    "album": "Bitter Tears: Ballads of the American Indian",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "電台拒播〈The Ballad of Ira Hayes〉，他自掏腰包買下一千多張，寄往全美各台。這張概念專輯全八曲寫美國原住民的歷史與處境，1964 年 10 月 26 日由 Columbia 發行。單曲講的是硫磺島升旗六名陸戰隊員之一、皮馬族原住民 Ira Hayes；歌曲遭拒播後，Cash 在《Billboard》刊出全版廣告，點名部分主持人「沒膽識」、質問他們在怕什麼。這首歌最終在 9 月 19 日當週爬上鄉村單曲榜第 3 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bitter_Tears:_Ballads_of_the_American_Indian",
+     "https://americansongwriter.com/on-this-day-in-1964-johnny-cash-called-out-country-radio-for-refusing-to-play-a-song-about-an-american-hero-where-are-your-guts/",
+     "https://musicbrainz.org/release-group/8fc2a449-90b5-3698-8dc9-de127b812b1d"
+    ]
+   },
+   {
+    "album": "American Recordings",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "做嘻哈與重金屬起家的製作人主動敲門，錄音地點選在 Cash 自家的客廳。Rick Rubin 在 1992 年 Bob Dylan 出道 30 週年演唱會上看到 Johnny Cash 演出，認定他仍有未被開發的活力——當時唱片業已對 Cash 失去興趣，他正從藥癮復發中恢復。錄音就在 Hendersonville 自宅客廳近乎不插電、獨自彈唱錄成，1994 年 4 月由 Rubin 的廠牌發行。這次首度合作開啟他晚期的復興，拿下 1995 年葛萊美最佳當代民謠專輯獎。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/American_Recordings_(album)",
+     "https://faroutmagazine.co.uk/how-rick-rubin-resurrected-the-career-of-johnny-cash/",
+     "https://www.grammy.com/news/johnny-cash-american-recordings-albums-legacy/",
+     "https://www.rollingstone.com/music/music-lists/100-best-albums-of-the-90s-152425/johnny-cash-american-recordings-2-163119/",
+     "https://superdeluxeedition.com/news/johnny-cash-american-recordings/",
+     "https://musicbrainz.org/release-group/a4e748bc-d200-3a3d-bd51-d366a0785a40"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "current 93",
+  "name": "Current 93",
+  "tier": "A",
+  "cards": 8,
+  "mainGenre": "folk",
+  "yearRange": [
+   1988,
+   2018
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Thunder Perfect Mind",
+    "year": 1992,
+    "genres": [
+     "folk",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "All the Pretty Little Horses",
+    "year": 1996,
+    "genres": [
+     "folk",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Soft Black Stars",
+    "year": 1998,
+    "genres": [
+     "folk",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Light Is Leaving Us All",
+    "year": 2018,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Black Ships Ate the Sky",
+    "year": 2006,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Earth Covers Earth",
+    "year": 1988,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sleep Has His House",
+    "year": 2000,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Aleph at Hallucinatory Mountain",
+    "year": 2009,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 8
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "joni mitchell",
+  "name": "Joni Mitchell",
+  "tier": "A",
+  "cards": 8,
+  "mainGenre": "folk",
+  "yearRange": [
+   1970,
+   1998
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Hissing of Summer Lawns",
+    "year": 1975,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dog Eat Dog",
+    "year": 1985,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Taming the Tiger",
+    "year": 1998,
+    "genres": [
+     "jazz",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Don Juan's Reckless Daughter",
+    "year": 1977,
+    "genres": [
+     "jazz",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Blue",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Court and Spark",
+    "year": 1974,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hejira",
+    "year": 1976,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ladies of the Canyon",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 8
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "sufjan stevens",
+  "name": "Sufjan Stevens",
+  "tier": "A",
+  "cards": 8,
+  "mainGenre": "folk",
+  "yearRange": [
+   2003,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Michigan",
+    "year": 2003,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Age of Adz",
+    "year": 2010,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Planetarium",
+    "year": 2017,
+    "genres": [
+     "electronic",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Beginner's Mind",
+    "year": 2021,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Javelin",
+    "year": 2023,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Seven Swans",
+    "year": 2004,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Illinois",
+    "year": 2005,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Carrie & Lowell",
+    "year": 2015,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 7
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Seven Swans",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "2004 年由 Sounds Familyre 發行，製作是 Danielson 的 Daniel C. Smith，錄音在其自宅工作室完成，聲響幾乎只剩 banjo、木吉他與貼近麥克風的輕聲。歌詞直接取自聖經：〈Abraham〉寫獻以撒，〈The Transfiguration〉寫登山變像，〈A Good Man Is Hard to Find〉改寫 Flannery O'Connor 的短篇。Metacritic 二十三篇評論平均 87 分，Spin 形容像「上了十年主日學的 Elliott Smith」，是他極簡 indie folk 的一條支線。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Seven_Swans",
+     "https://musicbrainz.org/release-group/9c034a12-db0e-3bc1-b3ed-e74e7ffa92b1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "townes van zandt",
+  "name": "Townes Van Zandt",
+  "tier": "A",
+  "cards": 8,
+  "mainGenre": "folk",
+  "yearRange": [
+   1968,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Townes Van Zandt",
+    "year": 1969,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Our Mother the Mountain",
+    "year": 1969,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "For the Sake of the Song",
+    "year": 1968,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Somebody Had to Write It",
+    "year": 2020,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Delta Momma Blues",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "High, Low and In Between",
+    "year": 1971,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Late Great Townes Van Zandt",
+    "year": 1972,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Live at the Old Quarter, Houston, Texas",
+    "year": 1977,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Delta Momma Blues",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Townes Van Zandt 第四張錄音室作品,1970 年 10 月由 Poppy 發行,Kevin Eggers 與 Ronald Frangipane 製作。前幾張在納許維爾錄音、帶阿帕拉契民謠與鄉村底色,這回改到紐約 Century Sound 錄音室,寫法明顯偏向藍調。同名曲與〈F.F.V.〉、〈Turnstyled, Junkpiled〉、〈Tower Song〉構成 32 分 55 秒的短小格局,編曲比同期作品乾冷,是他早期目錄裡最少被談論、氣味也最都會的一張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Delta_Momma_Blues",
+     "https://musicbrainz.org/release-group/bc28644a-b484-3416-aeb8-cad92209d43d"
+    ]
+   },
+   {
+    "album": "High, Low and In Between",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Townes Van Zandt 第五張錄音室作品,1971 年 4 月錄於洛杉磯 Larrabee Sound,同年 12 月由 Poppy 發行,製作人 Kevin Eggers。31 分 44 秒的篇幅裡,鄉村、民謠與福音唱腔並置:〈Two Hands〉、〈Standin'〉靠合聲推進,〈Greensboro Woman〉、〈Highway Kind〉則收回到一個人的獨白。片中的〈To Live Is to Fly〉,他自己認為是寫得最好的歌之一,也成了後人認識他的入口。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/High,_Low_and_In_Between",
+     "https://musicbrainz.org/release-group/bfc80d2c-852a-3a5f-9179-8cf8017c97cc"
+    ]
+   },
+   {
+    "album": "The Late Great Townes Van Zandt",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Townes Van Zandt 第六張錄音室作品,1972 年錄於納許維爾的 Jack Clement 錄音室,由 Jack Clement 製作,同年 9 月經 Poppy 發行,弦樂與鄉村編制比前作厚實。〈Pancho and Lefty〉在此首度錄下,1983 年由 Willie Nelson 與 Merle Haggard 唱上 Billboard 鄉村榜冠軍;〈If I Needed You〉則在 1981 年由 Emmylou Harris 與 Don Williams 對唱到鄉村榜第三。片名的黑色玩笑,出自當時人還在世的他。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Late_Great_Townes_Van_Zandt",
+     "https://en.wikipedia.org/wiki/Pancho_and_Lefty",
+     "https://musicbrainz.org/release-group/f945567b-e750-3399-9e3d-d0dc8c5c6293"
+    ]
+   },
+   {
+    "album": "Live at the Old Quarter, Houston, Texas",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Townes Van Zandt 的雙碟現場錄音,1973 年 7 月錄於休士頓的 Old Quarter,1977 年 5 月才由 Tomato 發行,製作與錄音均是 Earl Willis。92 分 40 秒裡只有一把木吉他與人聲,連報幕與台上的玩笑都留著,〈Pancho & Lefty〉、〈Mr. Mudd & Mr. Gold〉、〈Two Girls〉在沒有編曲遮蔽的狀態下攤開。評論界長期一致認為這是最能呈現他本質的錄音之一。封面設計出自 Milton Glaser。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Live_at_the_Old_Quarter,_Houston,_Texas",
+     "https://musicbrainz.org/release-group/517b6d9f-8ba7-34c1-aeff-1f69db1655a9"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "devendra banhart",
+  "name": "Devendra Banhart",
+  "tier": "A",
+  "cards": 7,
+  "mainGenre": "folk",
+  "yearRange": [
+   2002,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rejoicing in the Hands",
+    "year": 2004,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cripple Crow",
+    "year": 2005,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Flying Wig",
+    "year": 2023,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Mala",
+    "year": 2013,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Oh Me Oh My...",
+    "year": 2002,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Niño Rojo",
+    "year": 2004,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Smokey Rolls Down Thunder Canyon",
+    "year": 2007,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Oh Me Oh My...",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Devendra Banhart 二〇〇二年十月在 Michael Gira 的 Young God Records 推出的第二張,也是他在該廠的首發。全名長達一整句,由《Oh Me Oh My...》起頭再接一串意象,取自他早期歌曲〈Sunrise (A Long Time Ago)〉的歌詞。Banhart 一人包辦吉他、鋼琴、鼓與製作,Doug Henderson 共同製作兼母帶,Gira 設計封面。數首歌與《The Charles C. Leary》共用同一批錄音,〈Nice People〉原名〈Mmplushumblehorse〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Oh_Me_Oh_My_(Devendra_Banhart_album)",
+     "https://musicbrainz.org/release-group/8fa15104-196f-3183-8361-b982ec981db2"
+    ]
+   },
+   {
+    "album": "Niño Rojo",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Devendra Banhart 二〇〇四年九月在 Young God Records 發行的第四張作品,與同年春天的《Rejoicing in the Hands》出自同一批錄音。Michael Gira 掛名共同製作並吹口琴,Julia Kent 拉大提琴,Thor Harris 打擊,Vetiver 的 Andy Cabic 在〈At the Hop〉唱和聲。〈Little Yellow Spider〉後來被 Orange 電信拿去做廣告。Metacritic 均分 82,二〇〇六年獲 IMPALA 銀獎認證,歐洲銷量逾三萬張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ni%C3%B1o_Rojo",
+     "https://musicbrainz.org/release-group/0048bac3-2d8b-3fda-9357-e9ae7fd1fa6b"
+    ]
+   },
+   {
+    "album": "Smokey Rolls Down Thunder Canyon",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Devendra Banhart 二〇〇七年的第五張,在南加州 Topanga Canyon 錄製,編制與曲風都比前作放得更開:〈Samba Vexillographica〉走拉美節奏,〈Seahorse〉拉成長篇迷幻。內容與他和 CocoRosie 的 Bianca Casady 二〇〇六年結束的感情有關。唱片獻給 Alice Coltrane、Malachi Ritscher 與 Elliott Smith。《滾石》列為當年年度五十張第 19 名,〈Seahorse〉入選百大單曲第 69 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Smokey_Rolls_Down_Thunder_Canyon",
+     "https://musicbrainz.org/release-group/b07452de-c871-37a0-bc2f-bd2db3b07f82"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "leonard cohen",
+  "name": "Leonard Cohen",
+  "tier": "A",
+  "cards": 7,
+  "mainGenre": "folk",
+  "yearRange": [
+   1967,
+   2012
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Songs from a Room",
+    "year": 1969,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Future",
+    "year": 1992,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Old Ideas",
+    "year": 2012,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dear Heather",
+    "year": 2004,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Songs of Leonard Cohen",
+    "year": 1967,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Songs of Love and Hate",
+    "year": 1971,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "I'm Your Man",
+    "year": 1988,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 7
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ry cooder",
+  "name": "Ry Cooder",
+  "tier": "A",
+  "cards": 7,
+  "mainGenre": "folk",
+  "yearRange": [
+   1970,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Paradise and Lunch",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Into the Purple Valley",
+    "year": 1972,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Boomer's Story",
+    "year": 1972,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Chicken Skin Music",
+    "year": 1976,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Paris, Texas",
+    "year": 1985,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ry Cooder",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bop Till You Drop",
+    "year": 1979,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 14,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 6,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c50c-b",
+    "album": "Ry Cooder",
+    "facts": [
+     {
+      "f": "Cooder 一人負責吉他、人聲、曼陀林與貝斯；伴奏有貝斯手 Chris Ethridge、Roy Estrada 與 Max Bennett，鼓手 Richie Hayward 與 John Barbata，小提琴 Bobby Bruce，和聲 Gloria Jones。",
+      "src": "https://en.wikipedia.org/wiki/Ry_Cooder_(album)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c50c-c",
+    "album": "Bop Till You Drop",
+    "facts": [
+     {
+      "f": "全片用 3M 打造的 32 軌數位錄音機錄製，那台機器當時要價 115000 美元；這是流行音樂裡第一張以數位方式錄製的主流廠牌專輯。",
+      "src": "https://en.wikipedia.org/wiki/Bop_Till_You_Drop"
+     },
+     {
+      "f": "伴奏班底包括節奏組 Tim Drummond 與 Jim Keltner，以及吉他手 David Lindley。",
+      "src": "https://en.wikipedia.org/wiki/Bop_Till_You_Drop"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Into the Purple Valley",
+    "manifest": "onboarding-manifest-c30-blues-20260821.json",
+    "desc": "Ry Cooder 1972 年的第二張專輯,把美國早期歌謠與藍調重新考掘出土,〈How Can You Keep Moving (Unless You Migrate Too)〉、〈F.D.R. in Trinidad〉等曲多帶遷徙與時政敘事,滑音吉他貫穿其間。封面攝於 Warner Bros. 片廠,Cooder 與當時的妻子 Susan Titelman 同乘敞篷車,這幅影像被《Rolling Stone》選為史上最偉大專輯封面第 12 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Into_the_Purple_Valley",
+     "https://musicbrainz.org/release-group/a4bcc367-6de7-3fb3-a360-c5137b2c687a"
+    ]
+   },
+   {
+    "album": "Boomer's Story",
+    "manifest": "onboarding-manifest-c30-blues-20260821.json",
+    "desc": "Ry Cooder 1972 年 11 月發行的第三張專輯,沉靜地梳理鐵道流浪者與老南方的歌謠記憶:標題曲源自 1929 年錄下的〈The Railroad Boomer〉,Sleepy John Estes 親自現身演唱自作的〈President Kennedy〉,Randy Newman 在〈Rally 'Round the Flag〉彈鋼琴,〈The Dark End of the Street〉則改成純器樂的吉他獨白,藍調、民謠與靈魂樂素材在低限編制中緩緩展開。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Boomer%27s_Story",
+     "https://musicbrainz.org/release-group/499a19f0-5565-3a24-a730-ed33e09fd912"
+    ]
+   },
+   {
+    "album": "Chicken Skin Music",
+    "manifest": "onboarding-manifest-c30-blues-20260821.json",
+    "desc": "Ry Cooder 1976 年在 Reprise 發行的第五張專輯,把藍調與美國歌謠帶進德墨邊境與夏威夷的聲響:Flaco Jiménez 的手風琴讓 Jim Reeves 名曲〈He'll Have to Go〉染上 bolero 節奏,〈Always Lift Him Up / Kanaka Wai Wai〉轉向夏威夷傳統,開場則翻唱 Lead Belly 的〈The Bourgeois Blues〉。AllMusic 形容它拒絕承認地理與音樂的邊界。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Chicken_Skin_Music",
+     "https://musicbrainz.org/release-group/749098dc-e3b3-3622-ad5c-dc57edf86f3f"
+    ]
+   },
+   {
+    "album": "Paris, Texas",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "Wim Wenders 1984 年公路片的配樂，整張建立在 Blind Willie Johnson 1927 年〈Dark Was the Night, Cold Was the Ground〉的和聲上——Cooder 稱那是全美國音樂裡最超越的一首。他在 2018 年 BBC Radio 4 訪談裡說，Wenders 錄下的沙漠環境音本身共振在降 E，於是他把所有樂器都調到降 E。瓶頸滑管吉他多半獨奏，靠延音與空拍撐開空間。Warner Bros. 於 1985 年發行，十軌，末軌直接以 Johnson 那首曲名收尾。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Paris,_Texas_(film)",
+     "https://musicbrainz.org/release/b0708fd4-1518-3af4-80ee-d66dbd87f719"
+    ]
+   },
+   {
+    "album": "Ry Cooder",
+    "manifest": "onboarding-manifest-c50-20260831.json",
+    "desc": "首張唱片裡一半是別人的歌，最早的一批來自三〇年代。十二首裡有六首是翻唱，改寫自 Woody Guthrie、Blind Willie Johnson 與 Lead Belly 等人，另有一首出自同輩的 Randy Newman。唱片 1970 年 12 月由 Reprise Records 發行，製作人是 Van Dyke Parks 與 Lenny Waronker。Ry Cooder 一人負責吉他、人聲、曼陀林與貝斯，當年樂評反應正面。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ry_Cooder_(album)",
+     "https://musicbrainz.org/release-group/552fe1de-686a-3430-9c97-276ab68bfa6e"
+    ]
+   },
+   {
+    "album": "Bop Till You Drop",
+    "manifest": "onboarding-manifest-c50-20260831.json",
+    "desc": "他押上一台 115000 美元的機器，只為錄下手指壓弦的皮膚聲。那是 3M 打造的 32 軌數位錄音機，讓這張成為流行音樂裡第一張以數位方式錄製的主流廠牌專輯；他說第一次聽回來的就是自己彈下去的東西，以前聽到的只是雜訊。唱片 1979 年 7 月由 Warner Bros. 發行，曲目幾乎全是節奏藍調與早期搖滾的翻唱，〈Don't Mess Up a Good Thing〉由他與 Chaka Khan 對唱。專輯在美國告示牌 200 大專輯榜最高第 62 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bop_Till_You_Drop",
+     "https://musicbrainz.org/release-group/1fe891a0-1e71-334c-aeba-1df6148af916"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "謝銘祐",
+  "name": "謝銘祐",
+  "tier": "A",
+  "cards": 7,
+  "mainGenre": "folk",
+  "yearRange": [
+   2004,
+   2024
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "城市",
+    "year": 2005,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "舊年",
+    "year": 2017,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "台南",
+    "year": 2012,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "泥土",
+    "year": 2004,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "也獸",
+    "year": 2014,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "情獸",
+    "year": 2014,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "偏南",
+    "year": 2024,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 37,
+   "researchRecords": 5,
+   "facts": 10,
+   "publishedDescs": 7,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c91-b",
+    "album": "城市",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 8014af89 的欄位：title《城市》、artist-credit「謝銘祐」、first-release-date 只記到年（2005）、primary-type Album、secondary-types 空、轄下 1 個 TW／Official release，12 軌，廠牌欄空白。",
+      "src": "https://musicbrainz.org/release-group/8014af89-8e89-48b8-ae44-d245a08b2e95"
+     },
+     {
+      "f": "同條目記謝銘祐 1969 年 2 月 8 日生於南投草屯、五歲搬家至台南安平，畢業於台南一中與輔仁大學圖書館學系；1993 年拜在黃大軍門下開始製作生涯，歷經雙臣、巨登、金點、名冠、亞克北起、大宇等唱片公司，2000 年離開台北回到台南、自稱「府城流浪漢」，綽號黑仔。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90"
+     },
+     {
+      "f": "同條目記他 2005 年與同好成立「玩物尚志唱片事業有限公司」，並與台南創作人組成「麵包車」樂團，研究並改編、創作台灣民謠，在全台各地巡迴表演，也到老人與醫療院所義唱。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c91-b",
+    "album": "舊年",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 668c1bcf 的欄位：title《舊年》、artist-credit「謝銘祐」、first-release-date 只記到年（2017）、primary-type Album、secondary-types 空、轄下 1 個 TW／Official release，15 軌，廠牌欄空白。",
+      "src": "https://musicbrainz.org/release-group/668c1bcf-c69a-41d5-a66c-e09d73c67fa6"
+     },
+     {
+      "f": "第 28 屆金曲獎（2017 年）謝銘祐以《舊年》拿下最佳台語男歌手獎；同屆該碟另有四項入圍未得獎：年度專輯獎、最佳台語專輯獎（得獎者伍佰《釘子花》）、以〈下晡的ワルツ〉入圍最佳作曲人獎，以及以〈彼卡皮箱〉入圍最佳作詞人獎（得獎者五月天阿信〈成名在望〉）。該屆統計表把謝銘祐《舊年》記為入圍 5 項、得獎 1 項，報名單位三川娛樂有限公司。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E7%AC%AC28%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+     },
+     {
+      "f": "第 8 屆金音創作獎（2017 年）《舊年》拿下最佳專輯獎與最佳民謠專輯獎兩座，並以〈序曲〉拿下最佳民謠單曲獎；同屆謝銘祐以《舊年》入圍最佳創作歌手獎未得獎。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E7%AC%AC8%E5%B1%86%E9%87%91%E9%9F%B3%E5%89%B5%E4%BD%9C%E7%8D%8E"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c92-a",
+    "album": "台南",
+    "facts": [
+     {
+      "f": "第 24 屆金曲獎最佳台語男歌手獎也由謝銘祐以《台南》拿下（得獎），同屆入圍的還有翁立友《用情》、許富凱《寫乎你的歌》、邵大倫《漂浪的靈魂》、王俊傑《幸福佇佗找》。",
+      "src": "https://zh.wikipedia.org/zh-hant/%E7%AC%AC24%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+     },
+     {
+      "f": "VERSE 2025 年 4 月 21 日郭璈的專訪記：謝銘祐早年在台北做幕後製作、替劉德華、徐若瑄、謝霆鋒等歌手寫歌，師承製作人黃大軍；三十歲出頭因心累與憂鬱症回台南，2005 年與台南在地創作者組成麵包車樂團，到全台安養院義演，同時做台灣民謠的研究改編。",
+      "src": "https://www.verse.com.tw/article/chia-beng-iu-tainan"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c92-a",
+    "album": "也獸",
+    "facts": [
+     {
+      "f": "同一屆最佳台語男歌手獎的入圍名單為羅時豐《英雄好漢》、許富凱《一寸真心》、謝銘祐《也獸》、蕭煌奇《上水的花》、施文彬《文跡奇武③歸組害了了》；該獎也由蕭煌奇拿下，謝銘祐入圍未得獎。",
+      "src": "https://zh.wikipedia.org/zh-hant/%E7%AC%AC26%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c92-a",
+    "album": "偏南",
+    "facts": [
+     {
+      "f": "第 36 屆金曲獎最佳台語男歌手獎的入圍名單裡也有謝銘祐以《偏南》入圍，該獎由陳以恆《罐頭塔》拿下，入圍未得獎。",
+      "src": "https://zh.wikipedia.org/zh-hant/%E7%AC%AC36%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "城市",
+    "manifest": "onboarding-manifest-c91-20260910.json",
+    "desc": "2000 年離開台北回台南之後，他自稱府城流浪漢。中文維基〈謝銘祐〉記他 1993 年拜在黃大軍門下開始製作生涯，2005 年與同好成立玩物尚志唱片事業有限公司，同年也與台南創作人組成麵包車樂團，研究並改編、創作台灣民謠，在全台各地巡迴，也到老人與醫療院所義唱。同一份作品表把這張碟記為 2005 年發行的國語專輯、由玩物尚志唱片發行；MusicBrainz 的廠牌欄空白，Apple Music 的版權欄則寫 Great Music Publishing Ltd.。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/8014af89-8e89-48b8-ae44-d245a08b2e95",
+     "https://musicbrainz.org/release/8c6545ec-fdd9-4bce-ad3b-1b7806fcfbad",
+     "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90",
+     "https://music.apple.com/tw/album/1745304543"
+    ]
+   },
+   {
+    "album": "舊年",
+    "manifest": "onboarding-manifest-c91-20260910.json",
+    "desc": "〈序曲〉排在第一軌，長 9:16，是十五軌裡最長的一首。兩個獎系那一年各有各的收成：2017 年第 28 屆金曲獎，謝銘祐以這張碟拿下最佳台語男歌手獎，同屆另有四項入圍未得獎——年度專輯獎、最佳台語專輯獎、以〈下晡的ワルツ〉入圍的最佳作曲人獎，以及以〈彼卡皮箱〉入圍的最佳作詞人獎，報名單位三川娛樂有限公司；同年第 8 屆金音創作獎則拿下最佳專輯獎、最佳民謠專輯獎，以及〈序曲〉的最佳民謠單曲獎三座，同屆的最佳創作歌手獎入圍未得獎。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/668c1bcf-c69a-41d5-a66c-e09d73c67fa6",
+     "https://musicbrainz.org/release/94bdbde7-758c-4e97-a5a2-c6315c481919",
+     "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90",
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC28%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC8%E5%B1%86%E9%87%91%E9%9F%B3%E5%89%B5%E4%BD%9C%E7%8D%8E",
+     "https://music.apple.com/tw/album/1194938465"
+    ]
+   },
+   {
+    "album": "台南",
+    "manifest": "onboarding-manifest-c92-20260910.json",
+    "desc": "他替劉德華寫過歌，後來組團到安養院義演。VERSE 2025 年 4 月 21 日郭璈的專訪記：他早年在台北做幕後、師承製作人黃大軍，三十歲出頭因心累與憂鬱症回台南，2005 年與在地創作者組成麵包車樂團到全台安養院義演。這張拿下第 24 屆金曲獎最佳台語專輯獎，同屆的最佳台語男歌手獎也由他以本盤拿下；第 4 屆金音創作獎最佳民謠專輯獎也是他。題材是台南街廓與老行業，〈五條港邊〉與〈金小姐〉都在；最短的〈信守的明信片〉2 分 50 秒，最長的〈行〉5 分 58 秒。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC24%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://tavis.tw/GIMA/14th/win_history_04.txt",
+     "https://music.apple.com/tw/album/1393950160",
+     "https://www.verse.com.tw/article/chia-beng-iu-tainan",
+     "https://zh.wikipedia.org/zh-tw/%E5%8F%B0%E5%8D%97_(%E5%B0%88%E8%BC%AF)",
+     "https://www.books.com.tw/products/0020212214",
+     "https://music.apple.com/tw/album/%E5%8F%B0%E5%8D%97/1393950160"
+    ]
+   },
+   {
+    "album": "泥土",
+    "manifest": "onboarding-manifest-c92-20260910.json",
+    "desc": "十二軌裡最長的一軌是 9 分 53 秒的〈島〉。最短的是 2 分 50 秒的〈天田〉，其餘多落在三到五分鐘之間，〈一撮土〉5 分 07 秒。第七軌〈老城門〉6 分 59 秒，2012 年《台南》第二軌的同名曲則是 5 分 48 秒，兩份長度不同的錄音。可澄音樂文創網站的專輯列表把這張記在 2004 年，之前列 2002 年的《圖騰》、之後列 2005 年的《城市》。碟上華語與台語並置，℗ 行是 2004 Great Music Publishing Ltd.",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1745303957",
+     "https://music.apple.com/tw/album/1393950160",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC16%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://music.apple.com/tw/album/%E6%B3%A5%E5%9C%9F/1745303957",
+     "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90"
+    ]
+   },
+   {
+    "album": "也獸",
+    "manifest": "onboarding-manifest-c92-20260910.json",
+    "desc": "曲名短到只剩一個字：〈想〉〈伊〉〈認〉〈泅〉。十三軌裡另有〈毋甘〉〈無閒〉〈迷人〉〈哭聲〉，也還有〈茫霧〉與〈海灣〉；最短的是收尾的〈漂流〉2 分 03 秒，最長的是〈想〉5 分 02 秒。碟出在 2014 年 12 月 7 日，℗ 行是三川娛樂有限公司，可澄音樂文創的專輯列表也把發行者記成三川娛樂。第 26 屆金曲獎最佳台語專輯獎，這張入圍未得獎，那一座由蕭煌奇《上水的花》拿走；同屆的最佳台語男歌手獎他也入圍未得獎，得獎的還是蕭煌奇。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/956393709",
+     "https://music.apple.com/tw/album/956394589",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC26%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://music.apple.com/tw/album/%E4%B9%9F%E7%8D%B8/956393709",
+     "https://www.books.com.tw/products/0020212205"
+    ]
+   },
+   {
+    "album": "情獸",
+    "manifest": "onboarding-manifest-c92-20260910.json",
+    "desc": "兩張碟同一天發行，一張進華語目錄、一張進台語目錄。Apple 的主要類型欄把本盤記成華語流行樂，《也獸》記成台灣流行樂。本盤十二軌，開場的〈I Love You〉1 分 00 秒是全片最短的一軌、只是一段引子；最長的是 4 分 52 秒的〈第九首〉，而它正好是碟上的第九軌。〈有一個寫歌的人〉4 分 12 秒、〈半夏〉4 分 11 秒。兩張都出在 2014 年 12 月 7 日、℗ 行同為三川娛樂有限公司，可澄音樂文創的專輯列表也把它們並列在 2014 年。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/956394589",
+     "https://music.apple.com/tw/album/956393709",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://music.apple.com/tw/album/%E6%83%85%E7%8D%B8/956394589",
+     "https://zh.wikipedia.org/zh-tw/%E8%AC%9D%E9%8A%98%E7%A5%90"
+    ]
+   },
+   {
+    "album": "偏南",
+    "manifest": "onboarding-manifest-c92-20260910.json",
+    "desc": "收尾那首〈偏南風〉，自己入圍了年度歌曲與作詞人兩個獎。第 36 屆金曲獎裡這兩項都是入圍未得獎，兩座分別由 Energy〈星期五晚上〉與張淦勛〈南迴之子〉拿走；同屆的最佳台語專輯獎本盤入圍未得獎，得獎的是李竺芯《Suí 水》；最佳台語男歌手獎他也入圍未得獎，得獎的是陳以恆《罐頭塔》。碟出在 2024 年 12 月 15 日，℗ 行的 KAWA Music Co.Ltd 就是他自營的可澄音樂文創。最短的〈無應的批〉3 分 28 秒，最長的〈攬入心肝〉5 分 49 秒。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/1784381552",
+     "https://zh.wikipedia.org/zh-hant/%E7%AC%AC36%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://www.kawamusic.com.tw/blank-1",
+     "https://music.apple.com/tw/album/%E5%81%8F%E5%8D%97/1784381552",
+     "https://www.puretainan.info/team"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bill callahan",
+  "name": "Bill Callahan",
+  "tier": "A",
+  "cards": 6,
+  "mainGenre": "folk",
+  "yearRange": [
+   2009,
+   2026
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sometimes I Wish We Were an Eagle",
+    "year": 2009,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Apocalypse",
+    "year": 2011,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dream River",
+    "year": 2013,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Shepherd in a Sheepskin Vest",
+    "year": 2019,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gold Record",
+    "year": 2020,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "My Days of 58",
+    "year": 2026,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c112-a",
+    "album": "My Days of 58",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 349e0f25 的欄位：title「My Days of 58」、artist-credit「Bill Callahan」（藝人實體 MBID c309d914，type Person、country US、生於 1966-06-03）、first-release-date 2026-02-27、primary-type Album、secondary-types **空**。轄下 **2 筆 release 全部 Official、全部 12 軌**：US 的對開紙套 CD（**Drag City DC964CD**）與 XW 的數位，**兩筆共用同一個 barcode 781484096429**。",
+      "src": "https://musicbrainz.org/ws/2/release-group/349e0f25-131d-4f12-bd04-3c1ff84f74b0?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "MB release 6d5cd7c1（2026-02-27 XW 數位，Drag City）的逐軌曲目與長度：1〈Why Do Men Sing〉6:58、2〈The Man I’m Supposed to Be〉3:42、3〈Pathol O.G.〉6:03、**4〈Stepping Out for Air〉7:23**、5〈Lonely City〉5:10、6〈Empathy〉5:19、7〈West Texas〉4:51、8〈Computer〉3:47、9〈Lake Winnebago〉3:51、10〈Highway Born〉4:47、11〈And Dream Land〉4:25、12〈The World Is Still〉4:29。最短是〈The Man I’m Supposed to Be〉3:42、最長是第 4 軌的〈Stepping Out for Air〉7:23；前四軌有三首超過六分鐘，後八軌全部在五分二十秒以內。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=349e0f25-131d-4f12-bd04-3c1ff84f74b0&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "Drag City 的商品頁：目錄編號 **DC964**、發行日 **2026-02-27**，提供的載體是 **雙片 LP、CD、卡帶、MP3 下載與 FLAC 下載** 五種——**雙片黑膠與卡帶 MusicBrainz 目前都沒有建檔**。廠牌文案寫這張把「他現場演出那種活生生的能量」帶進錄音室，讓他的生活切片式描寫「切得更深」。",
+      "src": "https://www.dragcity.com/products/my-days-of-58"
+     },
+     {
+      "f": "Bandcamp 專輯頁的說明文把班底與做法交代得很細：這是**第八張 Bill Callahan 專輯、也是他 2022 年以來的第一張**；核心班底就是 **2022 年《REALITY》那趟巡演的原班人馬——吉他手 Matt Kinsey、薩克斯風手 Dustin Laurenzi、鼓手 Jim White**，三人的默契在 2024 年的現場盤《Resuscitate!》上已經聽得出來。做法上：**除了一首之外，所有歌的基本軌都是他與 Jim White 兩個人錄的**（這個做法是他從詞曲作者兼朋友 Jerry DeCicca 那裡學來的）；他另外與 Matt Kinsey 一對一吉他排練，並請 Dustin Laurenzi 為幾首歌寫銅管譜。",
+      "src": "https://billcallahan.bandcamp.com/album/my-days-of-58"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "My Days of 58",
+    "manifest": "onboarding-manifest-c112-20260910.json",
+    "desc": "他把這張想成一張「客廳唱片」：銅管要像有人坐在沙發上吹。他說指的是客廳的態度與氣氛——不要太大聲、也不要不食人間煙火，所以要求銅管放鬆一點。錄法也照這個走：除了一首之外，所有歌的基本軌都由他與鼓手 Jim White 兩人先錄下，之後才疊上其他人。核心班底是 2022 年《REALITY》巡演的原班，吉他 Matt Kinsey、薩克斯風 Dustin Laurenzi；彈踏板鋼棒吉他的 Bill McCullough 同時是攝影師，封面與封底都是他拍的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/349e0f25-131d-4f12-bd04-3c1ff84f74b0?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=349e0f25-131d-4f12-bd04-3c1ff84f74b0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1846471021&country=us&entity=song&limit=200",
+     "https://www.dragcity.com/products/my-days-of-58",
+     "https://billcallahan.bandcamp.com/album/my-days-of-58",
+     "https://musicbrainz.org/release-group/349e0f25-131d-4f12-bd04-3c1ff84f74b0"
+    ]
+   },
+   {
+    "album": "Dream River",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bill Callahan 的第十五張錄音室專輯、以本名發表的第四張,2013 年 9 月由 Drag City 推出,Erik Wofford 錄音。他從 2012 年 8 月開始寫,目標是做出「一天結束前、上床之前能聽的最後一張唱片」,因此全盤走得平順鬆弛;Matt Kinsey 的吉他、Thor Harris 的康加鼓與 Chojo Jacques 的提琴撐起質地,Paul Ryan 畫了封面。〈Small Plane〉是其中最常被引用的一首。專輯登上英國專輯榜第 44 名,Mojo 給五顆星並選為 2013 年度最佳。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dream_River",
+     "https://musicbrainz.org/release-group/da7cb5c4-b82a-4b4a-85ca-0c14d9e28623"
+    ]
+   },
+   {
+    "album": "Shepherd in a Sheepskin Vest",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bill Callahan 沉潛六年後的復出作,2019 年 6 月由 Drag City 發行,以本名計為第六張、連 Smog 時期一併計算則是第十七張。二十首歌、超過六十三分鐘的雙 LP,是他至今最長的一張;發行前四面中的前三面分批以數位形式提前放出,NPR 的 First Listen 也在正式發行前開放試聽。內容繞著婚姻與初為人父打轉,編制收得極簡。Metacritic 二十二篇評論平均 88 分,Pitchfork 的 Jayson Greene 稱其為他生涯的高點。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Shepherd_in_a_Sheepskin_Vest",
+     "https://musicbrainz.org/release-group/2178c2dc-1aaf-466a-98eb-7477f7ddc285"
+    ]
+   },
+   {
+    "album": "Gold Record",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bill Callahan 以本名發表的第七張作品(連 Smog 時期計為第十八張),2020 年由 Drag City 發行,一週內錄完。班底是吉他手 Matt Kinsey、貝斯 Jaime Zuverza 與鼓手 Adam Jones,John Congleton 負責錄音與混音,另有低音單簧管與富魯格號點綴。專輯名取自 RIAA 的金唱片認證;曲目多半是他擱置多年的舊稿,並重錄了 1999 年《Knock Knock》的開場曲〈Let's Move to the Country〉。宣傳期自 6 月底起每週放出一曲,各配一張他自己的手繪素描。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Gold_Record_(album)",
+     "https://musicbrainz.org/release-group/85c09614-c248-4d42-8a93-13850a8ebc04"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "fairport convention",
+  "name": "Fairport Convention",
+  "tier": "A",
+  "cards": 6,
+  "mainGenre": "folk",
+  "yearRange": [
+   1969,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Unhalfbricking",
+    "year": 1969,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "What We Did on Our Holidays",
+    "year": 1969,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Full House",
+    "year": 1970,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Angel Delight",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Rising for the Moon",
+    "year": 1975,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Liege & Lief",
+    "year": 1969,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 5,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "What We Did on Our Holidays",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Fairport Convention 第二張錄音室專輯，Island 發行，也是 Sandy Denny 加入後的首錄；美國版由 A&M 改名為《Fairport Convention》另做封面。〈Fotheringay〉與 Richard Thompson 寫的〈Meet on the Ledge〉自此成為團史保留曲，後者長年用作演出收尾。傳統歌〈Nottamun Town〉唱得近乎 raga，與 Bob Dylan〈I'll Keep It with Mine〉並置，是樂團從美式 folk-rock 轉向英國傳統歌謠的過渡點。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/What_We_Did_on_Our_Holidays",
+     "https://en.wikipedia.org/wiki/Fairport_Convention",
+     "https://musicbrainz.org/release-group/9dd78f1e-eeb1-317b-b299-4edfa49fe2b8"
+    ]
+   },
+   {
+    "album": "Liege & Lief",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Fairport Convention 第四張，1969 年 12 月發行。全部取材自英國與凱爾特傳統歌謠，或以同一筆法寫成的新作：〈Matty Groves〉〈Tam Lin〉與 Richard Thompson 的〈Crazy Man Michael〉皆出於此。Dave Swarbrick 與鼓手 Dave Mattacks 首度以正式團員身分參與，素材多由 Ashley Hutchings 從 Cecil Sharp 的採集中翻出。英榜最高 17 名；2006 年 BBC Radio 2 Folk Awards 聽眾票選為史上最具影響力的民謠專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Liege_%26_Lief",
+     "https://en.wikipedia.org/wiki/BBC_Radio_2_Folk_Awards",
+     "https://musicbrainz.org/release-group/3a6b89d1-ae82-3710-8e71-765405aa8a78"
+    ]
+   },
+   {
+    "album": "Full House",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Sandy Denny 離團去組 Fotheringay、Ashley Hutchings 轉往 Steeleye Span 之後，Fairport Convention 以五人全男陣容錄成這張 1970 年的作品，Dave Pegg 接手貝斯。〈Dirty Linen〉與〈Flatback Caper〉把數首傳統舞曲串成器樂組曲，九分鐘的〈Sloth〉此後多年留在現場曲目裡。Richard Thompson 在此留下離團前最後一批獨奏，也寫了內頁那篇虛構民謠遊戲的惡搞說明。1970 年 7 月 18 日進英榜，停留 11 週，最高 13 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Full_House_(Fairport_Convention_album)",
+     "https://en.wikipedia.org/wiki/Fairport_Convention",
+     "https://musicbrainz.org/release-group/1fc6511b-e2ed-3bc5-9fff-b36464f38f73"
+    ]
+   },
+   {
+    "album": "Angel Delight",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Fairport Convention 第六張，1971 年 6 月由 Island 發行（ILPS 9162），是 Richard Thompson 離團後的首作；陣容只剩 Simon Nicol、Dave Swarbrick、Dave Pegg 與 Dave Mattacks。標題取自樂團當時同住的 Little Hadham 舊酒館 The Angel，同名曲是自傳性的，唱出「牆上有個洞，是卡車撞進來的」——一輛卡車確實撞進了 Swarbrick 的臥房。靠《Top of the Pops》推介，英榜衝到第 8，是團史最高名次。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Angel_Delight_(album)",
+     "https://en.wikipedia.org/wiki/Fairport_Convention",
+     "https://musicbrainz.org/release-group/da375e02-43d9-3381-8d41-3fea9e53a233"
+    ]
+   },
+   {
+    "album": "Rising for the Moon",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Fairport Convention 第十張錄音室專輯，1975 年 6 月發行，也是 Sandy Denny 回歸後留下的唯一一張。Fotheringay 舊部 Denny、Trevor Lucas 與 Jerry Donahue 和 Dave Pegg、Dave Swarbrick、Dave Mattacks 合流，樂迷戲稱這版本為「Fotheringport Confusion」。Glyn Johns 掌製作，聲音比前作光滑、帶流行取向，是團史唯一不收傳統曲目的一張。1975 年 7 月進英榜只停留一週，最高 52 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rising_for_the_Moon",
+     "https://en.wikipedia.org/wiki/Fairport_Convention",
+     "https://musicbrainz.org/release-group/bffe4cef-db08-390d-b480-3a81faf3ee4a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "simon & garfunkel",
+  "name": "Simon & Garfunkel",
+  "tier": "A",
+  "cards": 6,
+  "mainGenre": "folk",
+  "yearRange": [
+   1964,
+   1972
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sounds of Silence",
+    "year": 1966,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Wednesday Morning, 3 A.M.",
+    "year": 1964,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Parsley, Sage, Rosemary and Thyme",
+    "year": 1966,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Simon and Garfunkel's Greatest Hits",
+    "year": 1972,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bridge over Troubled Water",
+    "year": 1970,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bookends",
+    "year": 1968,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 5
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Simon and Garfunkel's Greatest Hits",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1972 年 6 月 14 日發行,是賽門與葛芬柯解散兩年後的第一張精選。內容不只錄音室版本,還放進四段先前未發表的現場錄音;〈For Emily, Whenever I May Find Her〉的現場版依 2008 年《Live 1969》內頁說明,錄自 1969 年 11 月密蘇里州聖路易的演出,〈Kathy's Song〉的來源在不同版本說明中則有出入。2003 年《滾石》五百大專輯名單將其列於第 293 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Simon_and_Garfunkel%27s_Greatest_Hits",
+     "https://musicbrainz.org/release-group/a39bc4d1-82c9-3ff2-97d0-817f5913fb61"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "steeleye span",
+  "name": "Steeleye Span",
+  "tier": "A",
+  "cards": 6,
+  "mainGenre": "folk",
+  "yearRange": [
+   1970,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Please to See the King",
+    "year": 1971,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hark! The Village Wait",
+    "year": 1970,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ten Man Mop, or Mr. Reservoir Butler Rides Again",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Below the Salt",
+    "year": 1972,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Parcel of Rogues",
+    "year": 1973,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "All Around My Hat",
+    "year": 1975,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 5,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Hark! The Village Wait",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Steeleye Span 的首張，1970 年由 RCA 在英國發行，也是 Maddy Prior、Tim Hart、Ashley Hutchings 與 Terry、Gay Woods 夫婦這組原始陣容唯一一次錄音——他們一場現場都沒演就拆夥重組。做法是把鼓與電貝斯加進傳統歌，班鳩琴在〈The Blackleg Miner〉等曲吃重，Gerry Conway 與 Dave Mattacks 分頭客座打鼓。標題裡的 wait 指的是舊時市鎮出錢供養的管樂隊，不是等待。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hark!_The_Village_Wait",
+     "https://musicbrainz.org/release-group/1804f153-f5a3-30b5-ba87-d3c1d7fcf60b"
+    ]
+   },
+   {
+    "album": "Ten Man Mop, or Mr. Reservoir Butler Rides Again",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Steeleye Span 第三張，1971 年 9 月錄音、同年由短命的 Pegasus 廠牌發行，Sandy Roberton 製作。五人編制不設鼓手，Maddy Prior、Tim Hart、Peter Knight 加上 Martin Carthy 與 Ashley Hutchings，〈Four Nights Drunk〉〈Marrowbones〉〈Wee Weaver〉幾乎是原樣的傳統唱法。Hutchings 錄完就在 11 月退團，理由之一是嫌內容偏向愛爾蘭、離英格蘭太遠。原版做了壓紋跨頁封套與內頁，印製成本高過收益，樂團每賣一張賠一張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ten_Man_Mop,_or_Mr._Reservoir_Butler_Rides_Again",
+     "https://musicbrainz.org/release-group/c604dbf9-0858-3496-ab33-85d693510568"
+    ]
+   },
+   {
+    "album": "Below the Salt",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Steeleye Span 轉投 Chrysalis 後的第四張錄音室作，1972 年 5、6 月在倫敦 Sound Techniques 自製完成，Bob Johnson 與 Rick Kemp 首度入陣，創團成員只剩 Tim Hart 與 Maddy Prior。中世紀素材是主軸：〈King Henry〉取自 Child 民謠第 32 號，Johnson 提議收的拉丁文聖歌〈Gaudete〉出自 1582 年的《Piae Cantiones》，專輯版特意做長淡入淡出，模擬唱詩班走近再遠離，隔年發成單曲拿下英國榜第 14 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Below_the_Salt_(Steeleye_Span_album)",
+     "https://musicbrainz.org/release-group/c6a3417f-c222-3a9d-b0fb-32c6140d853a"
+    ]
+   },
+   {
+    "album": "Parcel of Rogues",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Steeleye Span 第五張錄音室作，1973 年由 Chrysalis 發行，是他們當時最暢銷、首度打進英國榜前三十的一張。素材來自樂團為愛丁堡舞台版《綁架》所做的功課，一整批十八世紀蘇格蘭詩文被翻出來用：〈Cam Ye O'er Frae France〉諷的是喬治一世與 1715 年詹姆斯黨起事，專輯名則取自無伴奏合唱的〈Rogues in a Nation〉。疊軌用得比以往都多，〈Robbery with Violins〉的破音吉他緊接在清淡的〈The Ups and Downs〉之後。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Parcel_of_Rogues_(album)",
+     "https://musicbrainz.org/release-group/aee9f1ce-d47f-3ace-88e5-828c18cc871c"
+    ]
+   },
+   {
+    "album": "All Around My Hat",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Steeleye Span 商業上最成功的一張，1975 年 10 月由 Chrysalis 發行，Mike Batt 製作，衝上英國專輯榜第 7 名並在榜上停留半年，也是他們首度打進美國榜（第 143 名）。同名單曲剪掉最後一段後推出，拿下英國單曲榜第 5 名，B 面是〈Black Jack Davy〉。曲目仍全是傳統歌，編曲卻被推到接近流行搖滾的亮度。封面由 John O'Connor 設計，用變形投影拉長團員的臉，得從側面透過歌詞紙上的針孔看才會回正。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/All_Around_My_Hat_(album)",
+     "https://musicbrainz.org/release-group/0cfde3d6-3a81-370e-9ca6-c20bd23982b9"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "willie nelson",
+  "name": "Willie Nelson",
+  "tier": "A",
+  "cards": 6,
+  "mainGenre": "folk",
+  "yearRange": [
+   1968,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Red Headed Stranger",
+    "year": 1975,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Stardust",
+    "year": 1978,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Shotgun Willie",
+    "year": 1973,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "My Own Peculiar Way",
+    "year": 1969,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Good Times",
+    "year": 1968,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Phases and Stages",
+    "year": 1974,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 5
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Phases and Stages",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "黑膠的 A 面讓妻子說話，翻過來 B 面才輪到丈夫，一段婚姻就這樣裂成兩半。Willie Nelson 自陳寫的是普遍的傷痛，並非影射自己。1973 年他在 Muscle Shoals 只花兩天錄完整張，由 Jerry Wexler 製作，1974 年 3 月經 Atlantic 發行。〈Bloody Mary Morning〉登上鄉村單曲榜第 17 名，被視為鄉村概念專輯的突破之作；發行半年後 Atlantic 關閉鄉村部門，本作是他在該廠牌僅有的兩張錄音室專輯之一。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Phases_and_Stages",
+     "https://www.rollingstone.com/music/music-album-reviews/phases-and-stages-255419/",
+     "https://musicbrainz.org/release-group/362145cb-0de8-3a3e-8653-e26f8f25d25c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "陳明章",
+  "name": "陳明章",
+  "tier": "A",
+  "cards": 6,
+  "mainGenre": "folk",
+  "yearRange": [
+   1990,
+   1999
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "下午的一齣戲",
+    "year": 1990,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "戀戀風塵 電影原聲帶",
+    "year": 1993,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "現場音樂 I",
+    "year": 1990,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "阮嘸是一個無感情个人",
+    "year": 1995,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "幻之光",
+    "year": 1996,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "勿愛問阮的名",
+    "year": 1999,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 59,
+   "researchRecords": 5,
+   "facts": 6,
+   "publishedDescs": 6,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c49a-d",
+    "album": "戀戀風塵 電影原聲帶",
+    "facts": [
+     {
+      "f": "陳明章 1956 年 7 月 4 日生、成長於北投，早期接觸傳統戲曲，受歌手陳達與二二八事件的影響轉向台語創作；他與侯孝賢的合作自《戀戀風塵》開始。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c89-b",
+    "album": "現場音樂 I",
+    "facts": [
+     {
+      "f": "陳明章 1956 年 7 月 4 日生於台北縣北投鎮，1978 年參加第二屆金韻獎，是他第一次公開演唱自己的作品。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0"
+     },
+     {
+      "f": "VERSE 的陳明章專訪寫：「1990 年起，又陸續出了三張專輯，《現場作品 1 》、《下午的一齣戲》以及《現場作品 2》音樂專輯，和林強、伍佰等音樂人開啟了『新台語歌運動』」。",
+      "src": "https://www.verse.com.tw/article/aiwanese-folk-music-tan-bing-tsiong"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c89-b",
+    "album": "現場作品 II",
+    "facts": [
+     {
+      "f": "zh 維基的陳明章條目把這張列為 1991 年《現場作品(2)》，廠牌記水晶唱片；同表把 1990 年那張列為《現場作品(1)》，廠牌記水晶／滾石。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c89-b",
+    "album": "幻之光",
+    "facts": [
+     {
+      "f": "Discogs 上這張最早的台灣實體是 2005 年的 CD《Maborosi = 幻之光》（release 9602725，廠牌 Chen Ming Chang Music & Art），2024 年同廠牌另出黑膠《Maborosi - 幻之光》（release 35022395）。",
+      "src": "https://api.discogs.com/artists/5315748/releases"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c92-a",
+    "album": "海尪·油桐花新娘",
+    "facts": [
+     {
+      "f": "同一屆的最佳台語男歌手獎入圍名單裡也有陳明章以《海尪·油桐花新娘》入圍，該獎由施文彬以《真情味》拿下，陳明章入圍未得獎。",
+      "src": "https://zh.wikipedia.org/zh-hant/%E7%AC%AC18%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "下午的一齣戲",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "北投長大的陳明章，童年天天看北管、歌仔戲與布袋戲，隔壁旅館的那卡西是他最早的音樂教室；1990年他把這些底蘊寫成台語創作專輯，由滾石發行。同名曲寫戲班在雨中散場的落寞，〈再會吧！北投〉〈新莊街〉〈紅目達仔〉唱市井人物，〈黑水溝〉是純演奏曲。他在專輯文案自嘲「民歌運動時曾應徵加入木吉他合唱團，因歌聲太爛被淘汰」。名列1975－1993台灣流行音樂百張最佳專輯第三十六。次類型為台語新民謠。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/陳明章",
+     "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯",
+     "https://musicbrainz.org/release-group/2b5fedeb-3763-3757-8de8-a7b860ac90fd"
+    ]
+   },
+   {
+    "album": "戀戀風塵 電影原聲帶",
+    "manifest": "onboarding-manifest-c49-20260831.json",
+    "desc": "母帶被消磁，七捲從垃圾桶撿回的盤帶在架上放了六七年。撿回盤帶的是攝影師陳懷恩：1986 年他在陳明章家借住三天三夜，三人邊聊邊把整部電影的配樂勾勒出來，陳明章與許景淳隨後在錄音室花兩整天錄完四十多分鐘。這批錄音到 1993 年才由水晶唱片出版，許景淳引介陳揚做後期製作，並補錄〈無悔〉〈信〉〈雨水〉三曲。電影 1987 年在南特影展得最佳配樂獎，本作則得第 5 屆金曲獎最佳演奏專輯獎與最佳錄音獎。",
+    "sourceUrls": [
+     "https://www.mirrormedia.mg/story/20180718cul002",
+     "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0",
+     "https://indexcrystal.blogspot.com/2021/02/blog-post_7.html",
+     "https://www.cmcmusic.com.tw/shop/albums/%E9%99%B3%E6%98%8E%E7%AB%A0%E9%85%8D%E6%A8%82%E5%B0%88%E8%BC%AF/%E6%88%80%E6%88%80%E9%A2%A8%E5%A1%B5%E9%9B%BB%E5%BD%B1%E5%8E%9F%E8%81%B2%E5%B8%B6/",
+     "https://vocus.cc/article/601a699afd89780001367bb8"
+    ]
+   },
+   {
+    "album": "現場音樂 I",
+    "manifest": "onboarding-manifest-c89-20260910.json",
+    "desc": "1978 年的第二屆金韻獎，是他第一次公開唱自己寫的歌。他 1956 年 7 月 4 日生於台北縣北投鎮，那次之後一路唱下去，這份現場錄音要到 1990 年才問世：紀錄上的廠牌欄記著水晶唱片，編號欄空著，一片 CD 收九軌，開場那一軌 6:45，〈紅磚橋〉3:54，最長的〈慶端陽(二)〉拉到 9:54。1990 年起他又陸續出了《現場作品 1》《下午的一齣戲》與《現場作品 2》，和林強、伍佰等人開啟了新台語歌運動。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/7519babc-1936-4d0d-895b-7c0451a56847",
+     "https://musicbrainz.org/release/39384311-9067-4272-849a-bcd8388cf935",
+     "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0",
+     "https://www.verse.com.tw/article/aiwanese-folk-music-tan-bing-tsiong",
+     "https://zh.wikipedia.org/zh-tw/%E9%BB%91%E5%90%8D%E5%96%AE%E5%B7%A5%E4%BD%9C%E5%AE%A4"
+    ]
+   },
+   {
+    "album": "阮嘸是一個無感情个人",
+    "manifest": "onboarding-manifest-c89-20260910.json",
+    "desc": "1993 年他替勵馨基金會寫了一首歌，就收在這張的末軌。那是應勵馨社會福利事業基金會執行長紀惠容之請、為「拯救雛妓」活動寫的〈伊是咱的寶貝〉；1999 年九二一之後，它成為聲援災區重建的曲子之一，2004 年是「228 百萬人牽手護台灣」的主題曲，2005 年又當上「三二六護台灣大遊行」的閉幕合唱。唱片本身是 1995 年新力音樂的 SDD9506，一片 CD 收十二軌，同名曲 6:12 排在第 2 軌，那首歌 4:57 收在最後一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/e0b5a3c1-6a7f-4495-b11b-7768eb848dba",
+     "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%98%AF%E5%92%B1%E7%9A%84%E5%AF%B6%E8%B2%9D",
+     "https://api.discogs.com/artists/5315748/releases",
+     "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0",
+     "https://musicbrainz.org/release-group/f8fbeeec-07e0-34e8-8b04-a7d82f53d621"
+    ]
+   },
+   {
+    "album": "幻之光",
+    "manifest": "onboarding-manifest-c89-20260910.json",
+    "desc": "日本盤 1996 年出，台灣最早的實體要到 2005 年。日本那筆是 1996 年 5 月 15 日的 Daiki Sound CD，十軌全用英文標題，〈Theme I〉6:32 最長，〈Photo〉4:40 收尾。配樂寫給是枝裕和的第一部劇情長片《幻の光》，該片 1995 年 9 月在威尼斯首映、12 月 9 日在日本上映，並在第 52 屆威尼斯影展拿下金奧薩拉獎的攝影獎，受獎的是攝影師中堀正夫。台灣那張 2005 年的 CD 之後，2024 年同廠牌又出了黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/79e27c70-44ff-46c0-a4bf-1252cc122318",
+     "https://ja.wikipedia.org/wiki/%E5%B9%BB%E3%81%AE%E5%85%89",
+     "https://api.discogs.com/artists/5315748/releases",
+     "https://www.verse.com.tw/article/aiwanese-folk-music-tan-bing-tsiong",
+     "https://musicbrainz.org/release-group/dbd26b2c-9378-4a29-92cb-f5f7887e8dbf"
+    ]
+   },
+   {
+    "album": "勿愛問阮的名",
+    "manifest": "onboarding-manifest-c89-20260910.json",
+    "desc": "同一張入圍名單上的三張碟，有兩張由同一家公司報名。第 11 屆金曲獎最佳方言男演唱人獎的入圍者是朱約信《傲骨人生》、郭之儀《情關》與本張，陳明章與朱約信的碟都由魔岩唱片報名；得獎的是朱約信，本張停在入圍那一欄，該屆頒獎在 2000 年 4 月 28 日。碟本身是 1999 年 5 月 18 日的魔岩出品，CD 編號 MSD-043，十二軌，〈勿愛問阮的名〉5:07 排第 2 軌，末兩軌是同一首〈幸福進行曲〉，第 12 軌換成演奏版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/6ad25a03-c78e-4946-8fb1-6aca66c05146",
+     "https://musicbrainz.org/release/b514164a-04f2-398a-aed8-e90c3b0eee49",
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://zh.wikipedia.org/zh-tw/%E9%99%B3%E6%98%8E%E7%AB%A0",
+     "https://zh.wikipedia.org/zh-tw/%E7%AC%AC9%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://musicbrainz.org/release-group/58cf6de0-d751-327f-baa0-5722a0f35b6d"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "alan stivell",
+  "name": "Alan Stivell",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1970,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "À l'Olympia",
+    "year": 1972,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Renaissance de la harpe celtique",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Chemins de terre",
+    "year": 1973,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Reflets",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "E langonned (A Langonnet)",
+    "year": 1974,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 19,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 5,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51d-b",
+    "album": "Chemins de terre",
+    "facts": [
+     {
+      "f": "班底包括後來組成 Malicorne 的 Gabriel Yacoub（木吉他、班鳩、揚琴、詩琴、人聲）、吉他手 Dan Ar Bras、提琴手 René Werneer、貝斯手 Jean-Luc Hallereau，以及布列塔尼的風笛隊 Bagad Bleimor。",
+      "src": "https://en.wikipedia.org/wiki/Chemins_de_Terre"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c98-b",
+    "album": "Reflets",
+    "facts": [
+     {
+      "f": "該 release-group 底下 1970 年的法國 release 由 Fontana 發行、編號 6325340，10 軌：〈Reflets〉4:22、〈Suite des montagnes〉3:38、〈Marig ar pollanton〉3:47、〈Brocéliande〉4:07、〈Son ar chistr〉2:29、〈Sally Free and Easy〉3:24、〈Suite irlandaise〉3:07、〈Silvestrig〉3:03、〈Tenval an deiz〉1:40、〈Je suis né au milieu de la mer〉3:59。",
+      "src": "https://musicbrainz.org/release/d6eb469c-b3fe-4475-98fa-d6ecc71db9eb"
+     },
+     {
+      "f": "法文維基〈Reflets (album d'Alan Stivell)〉開頭寫：《Reflets》是 Alan Stivell 的第一張職業專輯，1970 年 12 月問世，在此之前只有一張 1965 年的凱爾特豎琴器樂唱片；他先在巴黎 Hootenanny 的開放舞台上打出名號，之後與 Philips 簽約、發表這張他的第一張有唱的專輯；這張唱片標誌著「凱爾特流行樂」（pop celtique）的誕生。",
+      "src": "https://fr.wikipedia.org/wiki/Reflets_(album_d'Alan_Stivell)"
+     },
+     {
+      "f": "法文維基〈Alan Stivell〉寫：他本名 Alain Cochevelou，1944 年 1 月 6 日生於里永；1964 年他在 Mouez Breiz 錄了第一張器樂獨奏 33 轉《Harpe celtique》，1966 年以《Telenn geltiek : Harpe celtique》之名重發、封面由他自己畫；**1967 年他取了 Alan Stivell 這個名字**（布列塔尼語「泉源」，由本姓 Cochevelou 衍生，布列塔尼語 kozh stivelloù 意為「古老的泉源們」），同年與 Philips-Phonogram 簽下國際獨家合約。",
+      "src": "https://fr.wikipedia.org/wiki/Alan_Stivell"
+     },
+     {
+      "f": "同一條目寫：從 1966 年起，Alan Stivell 是第一位主要以布列塔尼語（brezhoneg）演唱的職業布列塔尼歌手；他繼承布列塔尼第一波音樂復興（催生出 bagadoù 的那一波）的遺產，受英美搖滾與 folk-song 啟發，參與了 1960、70 年代法國與凱爾特的 folk 與 folk rock 運動。",
+      "src": "https://fr.wikipedia.org/wiki/Alan_Stivell"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Renaissance de la harpe celtique",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "Alan Stivell(本名 Alan Cochevelou)的父親 Georges 親手復原了近乎失傳的布列塔尼凱爾特豎琴,他九歲開始學琴,1971 年在 Fontana 交出這份全器樂錄音,拿下法國 Académie Charles Cros 大獎。開場〈Ys〉取材沉沒之城的傳說,長達十九分鐘的〈Gaeltacht〉以豎琴橫貫愛爾蘭、蘇格蘭與曼島的蓋爾語地帶。樂評 Bruce Elder 稱聽過的人再也回不去,凱爾特豎琴自此重新進入世界音樂的視野。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Renaissance_of_the_Celtic_Harp",
+     "https://en.wikipedia.org/wiki/Alan_Stivell"
+    ]
+   },
+   {
+    "album": "À l'Olympia",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1972 年 2 月 28 日,Alan Stivell 在巴黎 Olympia 音樂廳把凱爾特豎琴、bombarde 與蘇格蘭風笛推上電吉他與鼓組的編制。Fontana 發行的這份現場錄音賣出超過一百五十萬張,讓布列塔尼語演唱與 Celtic rock 一舉進入法國主流視野,也把他送上法國、英國、加拿大與美國的巡演。當時這種混編被視為冒險,結果卻成了 1970 年代凱爾特音樂復興最有效的擴音器。1988 年曾以《Olympia Concert》之名重發。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/%C3%80_l%27Olympia_(Alan_Stivell_album)",
+     "https://en.wikipedia.org/wiki/Alan_Stivell"
+    ]
+   },
+   {
+    "album": "Chemins de terre",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "父親一生想把凱爾特豎琴重做出來，兒子把它插上了電。1972 年 2 月 Alan Stivell 在巴黎 Olympia 的那場演出把凱爾特傳統接上電吉他與鼓組，現場專輯《À l'Olympia》賣出超過 150 萬張；這張 1973 年由 Fontana 發行的錄音室作品就接在那之後，英國版另改名《From Celtic Roots...》。除了〈Brezhoneg 'Raok〉是他自己寫的，其餘都是他改編的傳統曲，布列塔尼的風笛隊 Bagad Bleimor 也在班底裡。",
+    "sourceUrls": [
+     "https://www.theballadeers.com/stiv_1973_fcr.htm",
+     "https://en.wikipedia.org/wiki/Chemins_de_Terre",
+     "https://en.wikipedia.org/wiki/Alan_Stivell",
+     "https://musicbrainz.org/release-group/a94757b8-2a6c-3bda-9ab5-4e4d2d902747"
+    ]
+   },
+   {
+    "album": "Reflets",
+    "manifest": "onboarding-manifest-c98-20260910.json",
+    "desc": "Stivell 在布列塔尼語裡是「泉源」，他要做的是一道新的泉源。這段話出自他寫在原封套上的文字，同一段他並寫，他不想比 Mozart、Elvis Presley 或 Ravi Shankar 做得更多或更少的民俗。法文維基記這是他的第一張職業專輯，也是他第一張有演唱的專輯，此前只有一張 1965 年的凱爾特豎琴器樂唱片；同一條目稱這張標誌著凱爾特流行樂的誕生。盤上記著 1970 年 12 月的法國盤由 Fontana 發行、編號 6325340，十軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/95c078e0-78af-3d0b-acae-75e35f4d18fe",
+     "https://musicbrainz.org/release/d6eb469c-b3fe-4475-98fa-d6ecc71db9eb",
+     "https://fr.wikipedia.org/wiki/Reflets_(album_d'Alan_Stivell)",
+     "https://fr.wikipedia.org/wiki/Alan_Stivell",
+     "https://music.apple.com/us/album/1677338476"
+    ]
+   },
+   {
+    "album": "E langonned (A Langonnet)",
+    "manifest": "onboarding-manifest-c98-20260910.json",
+    "desc": "兩首威爾斯曲、一首曼島曲、一首愛爾蘭曲，選它們是因為夠布列塔尼。這個判準出自 Stivell 自己的說法，同一段他也說某些布列塔尼曲是因為它們的蓋爾性格而被選上。法文維基記這是一張原音唱片，回到凱爾特尤其是布列塔尼音樂的根柢；他在同段自述裡明說這張沒有更往電子、搖滾或自由爵士走。〈Planedenn〉與〈Ne bado ket atao〉用的是 Y. B. Piriou 為傳統曲調寫的新詞。盤上記著 1974 年的法國盤由 Fontana 發行，十六軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6c69672d-79c6-3861-ab43-fc1a08c34805",
+     "https://musicbrainz.org/release/09303181-b141-41d2-ac2c-998349d70dfa",
+     "https://fr.wikipedia.org/wiki/E_Langonned",
+     "https://music.apple.com/fr/album/1677196014"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "angel olsen",
+  "name": "Angel Olsen",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   2012,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Burn Your Fire for No Witness",
+    "year": 2014,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "All Mirrors",
+    "year": 2019,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Half Way Home",
+    "year": 2012,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "MY WOMAN",
+    "year": 2016,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Big Time",
+    "year": 2022,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Big Time",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Angel Olsen 的第五張錄音室作品,2022 年 6 月 3 日由 Jagjaguwar 發行,寫於她的養父母雙雙在 2021 年離世前後。與 Jonathan Wilson 共同製作,錄於洛杉磯 Fivestarstudios,厚重的弦樂與銅管編寫把她的聲音放進 country 的框架。〈All the Good Times〉、〈Big Time〉、〈Through the Fires〉為單曲,另有 Kimberly Stuckwisch 執導的二十八分鐘影像作品。Metacritic 88 分,英國 Americana 榜登頂。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Big_Time_(Angel_Olsen_album)",
+     "https://en.wikipedia.org/wiki/Angel_Olsen",
+     "https://musicbrainz.org/release-group/c66ca7b3-aad2-41e9-9826-b2675fe21545"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bert jansch",
+  "name": "Bert Jansch",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1965,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Bert Jansch",
+    "year": 1965,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "It Don't Bother Me",
+    "year": 1965,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Jack Orion",
+    "year": 1966,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Rosemary Lane",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "L.A. Turnaround",
+    "year": 1974,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "It Don't Bother Me",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bert Jansch 1965 年的第二張專輯，離首作不過數月，由 Nathan Joseph 與未掛名的 Bill Leader 製作、Transatlantic 發行。除自作曲外另收 Alex Campbell 的〈So Long (Been on the Road So Long)〉與傳統曲〈900 Miles〉，後者他改彈班鳩琴。John Renbourn 在〈My Lover〉負責主奏吉他、Roy Harper 補上一把；器樂曲〈Lucky Thirteen〉是兩人的吉他對奏，出自《Bert and John》的同一批 session。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/It_Don%27t_Bother_Me",
+     "https://musicbrainz.org/release-group/7b1083a2-7033-398b-a910-145808d2fa0a"
+    ]
+   },
+   {
+    "album": "Jack Orion",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bert Jansch 1966 年的第三張作品，Bill Leader 製作，幾乎全是傳統歌。標題曲把 Child ballad〈Glasgerion〉拉成近十分鐘的敘事，講宮廷提琴手求歡未成、僕人頂替得手的背德故事；John Renbourn 在四首裡加入吉他，〈The Waggoner's Lad〉反過來由 Jansch 彈班鳩。其中〈Blackwaterside〉的編法經 Anne Briggs 傳給 Jansch，後被 Jimmy Page 未經註記挪為 Led Zeppelin 首張的〈Black Mountain Side〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Jack_Orion",
+     "https://en.wikipedia.org/wiki/Black_Mountain_Side",
+     "https://musicbrainz.org/release-group/f391d4db-6ac0-3c99-84e9-f1c6525af985"
+    ]
+   },
+   {
+    "album": "Rosemary Lane",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bert Jansch 1971 年 6 月的第七張專輯，仍由 Bill Leader 製作、Transatlantic 發行，封套由他當時的妻子 Heather Jansch 設計。錄音回到一人一把吉他的最簡狀態，傳統歌〈Rosemary Lane〉〈Reynardine〉〈Sylvie〉與自作曲〈Tell Me What Is True Love?〉〈Wayward Child〉交錯，中間穿插 Robert Johnson 的〈Alman〉與 Corelli 的〈Sarabanda〉兩段器樂，把英國民謠與早期音樂放在同一把琴上。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rosemary_Lane_(album)",
+     "https://musicbrainz.org/release-group/e5404f06-dd31-3233-8397-99b2fcb3d36f"
+    ]
+   },
+   {
+    "album": "L.A. Turnaround",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Pentangle 解散之後，Bert Jansch 1974 年交出這張第九號作品，由 Monkees 出身的 Michael Nesmith 製作，先在 Tony Stratton Smith 位於 Sussex 的宅邸錄音，再移師加州完成。Red Rhodes 的踏板鋼棒吉他、Byron Berline 的提琴與曼陀林、Klaus Voormann 的貝斯把他推向 americana 一側的呼吸法；〈Chambertin〉與 Renbourn 所寫的〈Lady Nothing〉則是前一年在巴黎留下的舊錄音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/L.A._Turnaround",
+     "https://musicbrainz.org/release-group/50d55c8f-4b62-312a-bee9-a9cdcf2cd4db"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bon iver",
+  "name": "Bon Iver",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   2007,
+   2025
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "22, A Million",
+    "year": 2016,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "i,i",
+    "year": 2019,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "SABLE, fABLE",
+    "year": 2025,
+    "genres": [
+     "pop",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "For Emma, Forever Ago",
+    "year": 2007,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bon Iver, Bon Iver",
+    "year": 2011,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 5
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "brigitte fontaine & areski belkacem",
+  "name": "Brigitte Fontaine & Areski Belkacem",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1973,
+   1980
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "L'Incendie",
+    "year": 1974,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Vous et nous",
+    "year": 1977,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Je ne connais pas cet homme",
+    "year": 1973,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Les églantines sont peut-être formidables",
+    "year": 1980,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Le Bonheur",
+    "year": 1975,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 5
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "cat stevens",
+  "name": "Cat Stevens",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1970,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Teaser and the Firecat",
+    "year": 1971,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Mona Bone Jakon",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Foreigner",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Catch Bull at Four",
+    "year": 1972,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Tea for the Tillerman",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Catch Bull at Four",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "Cat Stevens 1972 年 9 月 27 日發行的作品,英國由 Island、北美由 A&M 推出,製作人 Paul Samwell-Smith。專輯在 Billboard 200 蟬聯三週冠軍,澳洲與加拿大同樣封王,英國榜第 2 名,美國白金認證。專輯名取自禪宗十牛圖其中一景,呼應他當時的宗教與哲學探索。先行單曲〈Sitting〉登上 Hot 100 第 16 名,〈The Boy with a Moon and Star on His Head〉則是長篇敘事曲。他本人包辦鋼琴、鍵盤、吉他、合成器與打擊樂,再配上管弦編寫,聲音比前作更厚。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Catch_Bull_at_Four",
+     "https://musicbrainz.org/release-group/70b1a098-51b5-3647-939e-84662aa1bf59"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "dolly parton",
+  "name": "Dolly Parton",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1970,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Coat of Many Colors",
+    "year": 1971,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Jolene",
+    "year": 1974,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Once More",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Touch Your Woman",
+    "year": 1972,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Joshua",
+    "year": 1971,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 5
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "emmylou harris",
+  "name": "Emmylou Harris",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1975,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Pieces of the Sky",
+    "year": 1975,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Light of the Stable: The Christmas Album",
+    "year": 1979,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cowgirl's Prayer",
+    "year": 1993,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Roses in the Snow",
+    "year": 1980,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Wrecking Ball",
+    "year": 1995,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Roses in the Snow",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Emmylou Harris 1980 年的第七張錄音室專輯，接在純鄉村路線的《Blue Kentucky Girl》之後，這回整張改採 bluegrass 編制，選曲來自 Flatt and Scruggs、Carter Family 與 Paul Simon。Johnny Cash、Dolly Parton、Linda Ronstadt、Ricky Skaggs 與 Tony Rice 等人助陣。〈Wayfaring Stranger〉登上告示牌鄉村榜第七，翻唱 Simon & Garfunkel 的〈The Boxer〉拿下第十三。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Roses_in_the_Snow",
+     "https://musicbrainz.org/release-group/f9f4b42a-196d-3c25-8782-9e6018b09803"
+    ]
+   },
+   {
+    "album": "Wrecking Ball",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "1995 年 9 月 26 日經 Elektra 發行的第十八張錄音室專輯，Emmylou Harris 找來 Daniel Lanois 製作、Mark Howard 錄音，捨去她原本的原音鄉村寫法，換成一層混響濃厚、低限而幽暗的音場。客席包括寫下同名曲的 Neil Young、Steve Earle、Lucinda Williams、Kate & Anna McGarrigle 與 U2 鼓手 Larry Mullen Jr.。把老歌本擺進氛圍製作裡的這套做法，日後成了 americana 一路人反覆借用的模板。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Wrecking_Ball_(Emmylou_Harris_album)",
+     "https://musicbrainz.org/release-group/50bf0710-3c1f-3e96-aca7-21c8fd3c4930"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "fabrizio de andré",
+  "name": "Fabrizio De André",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1970,
+   2011
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sogno nº 1",
+    "year": 2011,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "La buona novella",
+    "year": 1970,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Crêuza de mä",
+    "year": 1984,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Non al denaro non all'amore né al cielo",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Anime salve",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c50c-a",
+    "album": "Anime salve",
+    "facts": [
+     {
+      "f": "1996 年 9 月 19 日由 Ricordi 與 BMG 發行，是 Fabrizio De André 的第十三張、也是最後一張錄音室專輯。",
+      "src": "https://en.wikipedia.org/wiki/Anime_salve"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Crêuza de mä",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1984年由Dischi Ricordi發行,De André的第十一張錄音室作品,全碟以熱那亞方言演唱,與Mauro Pagani合作:歌詞出自De André,旋律與編曲多由Pagani負責,樂器取自地中海沿岸各地。〈Sidun〉寫1982年黎巴嫩戰爭中的西頓城,〈Jamin-a〉來自兩人的非洲與中東見聞,同名開場曲末尾錄進熱那亞魚市的叫賣人聲。David Byrne曾對Rolling Stone稱它是那十年最重要的唱片之一,義版Rolling Stone百大義大利專輯將它列在第四。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Cr%C3%AAuza_de_m%C3%A4",
+     "https://it.wikipedia.org/wiki/Creuza_de_m%C3%A4",
+     "https://musicbrainz.org/release-group/115205fa-3ad9-3097-9252-bf41447089f8"
+    ]
+   },
+   {
+    "album": "Non al denaro non all'amore né al cielo",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "向詩人借來的一本詩集，私下譯成義大利文，最後長成一整張概念專輯。譯者是作家 Fernanda Pivano，她向 Cesare Pavese 借得 Edgar Lee Masters 的《Spoon River Anthology》後私下譯出，手稿被 Pavese 發現才促成出版。1971 年由 Produttori Associati 發行的這張唱片就以它為本，De André 與作詞人把墓園裡的人物詩改寫成歌，並拿掉了原詩中每個角色的姓名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Non_al_denaro_non_all%27amore_n%C3%A9_al_cielo",
+     "https://www.sentireascoltare.com/recensioni/fabrizio-de-andre-non-al-denaro-non-allamore-ne-al-cielo/",
+     "https://en.debaser.it/fabrizio-de-andre/non-al-denaro-non-allamore-ne-al-cielo/review",
+     "https://musicbrainz.org/release-group/63464ccd-4c09-34b5-88d6-c6c16a5866e9"
+    ]
+   },
+   {
+    "album": "La buona novella",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "學運正熱的年頭，他交出一張講耶穌生平的唱片，換來自己人的責難。1970 年 11 月由 Produttori Associati 發行的第四張錄音室專輯，取材自次經文本改寫耶穌的一生。1968 年學運的餘波未平，不少左翼與學運圈人士認為這題材保守、與社會改革的訴求格格不入。他的回應是把耶穌說成歷史上最偉大的革命者，一個為了四海皆兄弟、反對任何濫權而甘願被釘上十字架的人。專輯裡的〈Il testamento di Tito〉讓與耶穌同釘十字架的盜賊逐條反駁十誡。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/La_buona_novella",
+     "https://musicbrainz.org/release-group/c5a8368c-8334-3b9c-91d5-421efaeaecf8"
+    ]
+   },
+   {
+    "album": "Anime salve",
+    "manifest": "onboarding-manifest-c50-20260831.json",
+    "desc": "名字寫著得救的靈魂，字源上卻是孤獨的靈魂。整張把孤獨與差異當成正面的生存狀態來寫，人物包括一位巴西跨性別移民、羅姆人、貧窮的漁民與戀人。1996 年 9 月 19 日由 Ricordi 發行，是 Fabrizio De André 的最後一張錄音室專輯，全碟與 Ivano Fossati 合寫。打擊樂手 Naco 在錄完之後、唱片發行之前死於車禍。1997 年 Targa Tenco，本作得到最佳專輯獎，〈Princesa〉得到最佳歌曲獎。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Anime_salve",
+     "https://en.wikipedia.org/wiki/Targa_Tenco",
+     "https://musicbrainz.org/release-group/ca2eaac8-2cdc-3abf-bb51-cf5749cfab91"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gillian welch",
+  "name": "Gillian Welch",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1996,
+   2011
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Time (The Revelator)",
+    "year": 2001,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Harrow & the Harvest",
+    "year": 2011,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hell Among the Yearlings",
+    "year": 1998,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Soul Journey",
+    "year": 2003,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Revival",
+    "year": 1996,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Revival",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Gillian Welch 與吉他手 David Rawlings 的出道作，1996 年四月由 Almo Sounds 發行，T Bone Burnett 製作。兩把木吉他加兩個聲部的極簡配置，寫出彷彿從三〇年代阿帕拉契挖出來的歌——〈Orphan Girl〉後來由 Emmylou Harris 翻唱，〈One More Dollar〉、〈Barroom Girls〉同走蕭條年代敘事。兩人其實來自洛杉磯與羅德島，真偽問題當年引來爭論：Christgau 認為她撐不起這種模擬，AllMusic 與 Entertainment Weekly 則給高分。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Revival_(Gillian_Welch_album)",
+     "https://musicbrainz.org/release-group/1b59c403-965a-3f63-bca2-2590f3a0660f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "hank williams",
+  "name": "Hank Williams",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1952,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Moanin' the Blues",
+    "year": 1952,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "40 Greatest Hits",
+    "year": 1978,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hank Williams Sings",
+    "year": 1952,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ramblin' Man",
+    "year": 1955,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hank Williams as \"Luke the Drifter\"",
+    "year": 1955,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 18,
+   "researchRecords": 3,
+   "facts": 6,
+   "publishedDescs": 5,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c98-a",
+    "album": "Hank Williams Sings",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 364c2c37 的欄位：title「Hank Williams Sings」、artist-credit「Hank Williams with His Drifting Cowboys」、first-release-date 1949、primary-type Album、secondary-types 空陣列、轄下 4 個 release 全數 US／XW Official——1949 US（8 軌分 4 片，廠牌欄 MGM Records，編號 30453／30454／30455／30456）、1951 US（8 軌 1 片，MGM Records E 107）、1952 US（8 軌 1 片，MGM Records E107）、2021-11-05 XW（8 軌，Mercury Nashville，標題印成《Sings》）。",
+      "src": "https://musicbrainz.org/release-group/364c2c37-cdeb-4dca-87b5-9eb7e6907ea6"
+     },
+     {
+      "f": "該 release-group 的 1952 年 release 05fefa8c 欄位：1952、US、status Official、廠牌 MGM Records、編號 E107、載體 10\" Vinyl、8 軌。逐軌曲名依序為 A1〈I Saw the Light〉A2〈A Mansion on the Hill〉A3〈Six More Miles〉A4〈Wedding Bells〉B1〈Lost Highway〉B2〈I've Just Told Mama Goodbye〉B3〈Wealth Won't Save Your Soul〉B4〈A House Without Love〉。",
+      "src": "https://musicbrainz.org/release/05fefa8c-5571-4dbd-b730-58d54e21e1ec"
+     },
+     {
+      "f": "英文維基〈Hank Williams Sings〉記：這是 Hank Williams 的首張專輯，MGM Records 於 1951 年 11 月 9 日發行；收錄的錄音來自 1946 至 1949 年間的錄音期，製作人 Fred Rose 從先前銷路不佳的單曲裡挑曲，傳記作者 Colin Escott 的說法是「Rose used Hank's first album as a dump site for oddball tracks that hadn't sold elsewhere」。同條目記這張同時以三種規格發行：十吋 LP、四張 45 轉的成套裝、四張 78 轉的成套裝，並且沒有進榜。",
+      "src": "https://en.wikipedia.org/wiki/Hank_Williams_Sings"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c98-a",
+    "album": "Ramblin' Man",
+    "facts": [
+     {
+      "f": "該 release-group 的 1955 年原盤 release 09c63f7b 欄位：1955、US、status Official、廠牌 MGM Records、編號 E 3219、載體 12\" Vinyl、12 軌。逐軌曲名依序為 A1〈Ramblin' Man〉A2〈My Son Calls Another Man Daddy〉A3〈I Can't Escape From You〉A4〈Nobody's Lonesome for Me〉A5〈I Can't Help It (If I'm Still in Love with You)〉A6〈There'll Be No Tear Drops Tonight〉B1〈Lonesome Whistle〉B2〈I Just Don't Like This Kind of Livin'〉B3〈Take These Chains From My Heart〉B4〈Why Don't You Love Me〉B5〈My Heart Would Know〉B6〈You're Gonna Change (Or I'm Gonna Leave)〉。",
+      "src": "https://musicbrainz.org/release/09c63f7b-e1ec-4a6e-8053-2eedf808cd01"
+     },
+     {
+      "f": "英文維基〈Hank Williams〉記：Hiram「Hank」Williams 生於 1923 年 9 月 17 日、卒於 1953 年 1 月 1 日；他有 55 首單曲進過 Billboard Country & Western Best Sellers 榜前十，其中 5 首是身後發行、12 首曾登上第一名。",
+      "src": "https://en.wikipedia.org/wiki/Hank_Williams"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c98-a",
+    "album": "Hank Williams as \"Luke the Drifter\"",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group bda516f0 的欄位：title「Hank Williams as “Luke the Drifter”」、artist-credit「Hank Williams as Luke the Drifter」、first-release-date 1955、primary-type **Album**、secondary-types [Compilation]、轄下 2 個 release 皆 Official——1955 US（12 軌，廠牌欄 MGM Records、編號 E203、載體 12\" Vinyl）與 2021-11-05 XW（14 軌，Mercury Nashville，標題去掉引號）。",
+      "src": "https://musicbrainz.org/release-group/bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "40 Greatest Hits",
+    "manifest": "onboarding-manifest-c33-comps-20260821.json",
+    "desc": "Mercury 在 1978 年、Hank Williams 逝世二十五週年推出的雙唱片，四十首依年序從〈Move It on Over〉排起。相較 MGM 早年那些加了假立體聲、後製配唱甚至與兒子拼接對唱的版本，這套首度讓錄音回到原始樣貌，也成為他生涯銷量最高的唱片。2003 年《滾石》五百大專輯列第九十四名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/40_Greatest_Hits_(Hank_Williams_album)",
+     "https://musicbrainz.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849"
+    ]
+   },
+   {
+    "album": "Moanin' the Blues",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "五年間的單曲被彙整成一張 10 吋黑膠，四個月後便成了他生前最後一張專輯。1952 年 9 月 12 日由 MGM 發行，曲目取自 Hank Williams 1947 至 1951 年的單曲，由製作人 Fred Rose 以藍調主題編選成冊——當年 10 吋專輯格式的通行做法。收〈Lovesick Blues〉等三首鄉村榜冠軍。1953 年 1 月 1 日 Williams 辭世。未打榜的〈I'm So Lonesome I Could Cry〉後來被公認是他的寫作代表作。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Moanin'_the_Blues_(album)",
+     "https://musicbrainz.org/release-group/1105ba98-917f-3052-a6fb-338de095100a"
+    ]
+   },
+   {
+    "album": "Hank Williams Sings",
+    "manifest": "onboarding-manifest-c98-20260910.json",
+    "desc": "製作人 Fred Rose 從賣不動的舊單曲裡挑出了這八首。維基記曲目來自 1946 至 1949 年間的錄音期，傳記作者 Colin Escott 的說法是 Rose 把這張碟當成別處賣不掉的怪曲子的堆放處。八首裡有五首是他自己寫的，〈Wedding Bells〉1949 年最高第 2 名，〈A Mansion on the Hill〉1948 年底只到第 12 名。十吋盤上記著 MGM E107、8 軌，八軌都落在兩分半到三分之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/364c2c37-cdeb-4dca-87b5-9eb7e6907ea6",
+     "https://musicbrainz.org/release/05fefa8c-5571-4dbd-b730-58d54e21e1ec",
+     "https://api.discogs.com/masters/435297",
+     "https://en.wikipedia.org/wiki/Hank_Williams_Sings",
+     "https://itunes.apple.com/lookup?id=1591133640&entity=song&limit=200&country=us"
+    ]
+   },
+   {
+    "album": "Ramblin' Man",
+    "manifest": "onboarding-manifest-c98-20260910.json",
+    "desc": "同一個盤名，在唱片目錄上對到祖孫兩代與另一支樂團。維基的消歧義頁把〈Ramblin' Man〉記為 1951 年的曲子，另列 Hank Williams III 2014 年的同名專輯與 The Allman Brothers Band 1992 年的同名精選。原盤記著 1955 年、MGM、編號 E 3219，12 吋 12 軌，首軌就是標題曲。十二軌裡只有標題曲滿三分鐘，其餘都在兩分半上下。他卒於 1953 年 1 月 1 日，這張屬身後發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b9e595aa-b513-4d0a-b5f9-a1d2a167a679",
+     "https://musicbrainz.org/release/09c63f7b-e1ec-4a6e-8053-2eedf808cd01",
+     "https://api.discogs.com/masters/274766",
+     "https://itunes.apple.com/lookup?id=1592563692&entity=song&limit=200&country=us",
+     "https://en.wikipedia.org/wiki/Hank_Williams",
+     "https://en.wikipedia.org/wiki/Ramblin%27_Man"
+    ]
+   },
+   {
+    "album": "Hank Williams as \"Luke the Drifter\"",
+    "manifest": "onboarding-manifest-c98-20260910.json",
+    "desc": "唱片掛名寫的是 Hank Williams as Luke the Drifter。MB 與 Discogs 兩邊的掛名欄都把 Luke the Drifter 寫了進去。原盤 12 軌，曲名如〈Pictures From Life's Other Side〉〈Men With Broken Hearts〉。同一批曲目有兩種規格：十吋的 MGM E-203 與十二吋的 E-3267，兩個編號指的是兩種盤。後來的加曲版收到十四軌，最短 148 秒、最長 192 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bda516f0-beb1-4271-a8ca-fc2c2c7ef4b1",
+     "https://musicbrainz.org/release/cf3b22e9-fbf2-42a5-b958-f6a909106698",
+     "https://api.discogs.com/masters/396408",
+     "https://api.discogs.com/masters/396408/versions?per_page=50",
+     "https://itunes.apple.com/lookup?id=1884151486&entity=song&limit=200&country=us",
+     "https://api.discogs.com/database/search?q=Hank+Williams+Luke+the+Drifter&type=master"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "john fahey",
+  "name": "John Fahey",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1964,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Transfiguration of Blind Joe Death",
+    "year": 1965,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "America",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Dance of Death & Other Plantation Favorites",
+    "year": 1964,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Yellow Princess",
+    "year": 1968,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fare Forward Voyagers (Soldier's Choice)",
+    "year": 1973,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "The Dance of Death & Other Plantation Favorites",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "John Fahey 第三張,1964 年由他自營的 Takoma 發行,原題《Volume 3: The Dance of Death & Other Plantation Favorites》;1967 年他把整張重錄一次,兩個版本至今並存。十一首鋼弦吉他獨奏,從〈Wine and Roses〉、〈Worried Blues〉到收尾的同名曲,把 Delta blues 的指法與教會調式推往抽象。這套自學而成的獨奏路數後被稱作 American primitive guitar;他 2003 年名列《滾石》史上百大吉他手第 35。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Dance_of_Death_%26_Other_Plantation_Favorites",
+     "https://en.wikipedia.org/wiki/John_Fahey_(musician)",
+     "https://musicbrainz.org/release-group/e979b14d-2943-42dc-9826-c29a878050f3"
+    ]
+   },
+   {
+    "album": "The Yellow Princess",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "John Fahey 第九張,1968 年由 Vanguard 發行,是他在該廠牌的第二張也是最後一張。九首曲目除同名曲外,有悼念金恩博士的〈March! for Martin Luther King〉,以及〈View (East from the Top of the Riggs Road / B&O Trestle)〉這類把華府近郊地景寫進標題的曲子。Fahey 把二十世紀古典、葡萄牙、巴西與印度的養分接進美國根源素材,American primitive guitar 這條路在此走得最外放。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Yellow_Princess_(album)",
+     "https://en.wikipedia.org/wiki/John_Fahey_(musician)",
+     "https://musicbrainz.org/release-group/07b0bef9-0e4f-3fb3-89da-632e38d8e60f"
+    ]
+   },
+   {
+    "album": "Fare Forward Voyagers (Soldier's Choice)",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "John Fahey 1973 年的 Takoma 作品,只有三首:〈When the Fire and the Rose Are One〉近十四分鐘,〈Thus Krishna on the Battlefield〉六分半,同名曲〈Fare Forward Voyagers〉獨占原版一整面、長逾二十三分鐘。曲名裡的克里希那呼應他後期吸收的印度音樂養分,鋼弦吉他在開放調弦上緩慢盤旋,幾乎沒有段落轉折可抓。這是 American primitive guitar 把長篇形式推到極限的一次嘗試,也是他 Takoma 時期尾聲的樣貌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Fare_Forward_Voyagers_(Soldier%27s_Choice)",
+     "https://en.wikipedia.org/wiki/John_Fahey_(musician)",
+     "https://musicbrainz.org/release-group/999694f5-d8ce-33f7-adb4-82de3d60ca9e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "john martyn",
+  "name": "John Martyn",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1971,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Solid Air",
+    "year": 1973,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "One World",
+    "year": 1977,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bless the Weather",
+    "year": 1971,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Inside Out",
+    "year": 1973,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Grace and Danger",
+    "year": 1980,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Bless the Weather",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "John Martyn 在與妻子 Beverley 合作兩張後重回個人名義，1971 年推出這張作品，寫作反映兩人由倫敦遷居黑斯廷斯舊城的日子。整體仍以原聲吉他為主，〈Head and Heart〉與標題曲成為他日後的常備曲目，〈Glistening Glyndebourne〉則是他第一首真正的 Echoplex 迴圈實驗。Danny Thompson 與 Tony Reeves 分擔低音提琴，Richard Thompson 也在其中。Q 於 1999 年將它選入史上十二張必備民謠專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bless_the_Weather",
+     "https://musicbrainz.org/release-group/c1bb15fd-bea2-343e-a1ea-e992d8024eb9"
+    ]
+   },
+   {
+    "album": "Inside Out",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "John Martyn 第五張個人作，1973 年 10 月由 Island 發行，也是他目錄裡最偏爵士、最放任的一張。Echoplex 把木吉他拉成一片持續嗡鳴，〈Outside In〉長達八分餘，成為他日後現場即興的骨架；〈Make No Mistake〉直接指涉 Coltrane 的《A Love Supreme》，另收愛爾蘭傳統曲〈Eibhli Ghail Chiuin Ni Chearbhail〉。Danny Thompson 的低音提琴、Steve Winwood 的鍵盤與 Keshav Sathe 的塔布拉在場。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Inside_Out_(John_Martyn_album)",
+     "https://en.wikipedia.org/wiki/John_Martyn",
+     "https://musicbrainz.org/release-group/80852827-7d3e-33ed-8483-5e1d5d8cf0b5"
+    ]
+   },
+   {
+    "album": "Grace and Danger",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "John Martyn 第八張錄音室作，寫錄於他與 Beverley 離婚期間，九首歌幾乎是分手的逐日紀錄。Phil Collins 打鼓兼和聲，兩人當時同樣正在離婚，聲響與 Collins 的《Face Value》互為鏡像。Island 老闆 Chris Blackwell 嫌太悲傷，把發行押後一年多，直到 1980 年 10 月才問世。〈Hurt in Your Heart〉〈Sweet Little Mystery〉把他黏膩含混的唱腔推到極限，Colin Larkin《All Time Top 1000 Albums》將其列在第 327 位。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Grace_and_Danger",
+     "https://en.wikipedia.org/wiki/John_Martyn",
+     "https://musicbrainz.org/release-group/08734e17-a42c-3fe1-88d5-d0728018d4b6"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "john prine",
+  "name": "John Prine",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1971,
+   1991
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "John Prine",
+    "year": 1971,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sweet Revenge",
+    "year": 1973,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Diamonds in the Rough",
+    "year": 1972,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bruised Orange",
+    "year": 1978,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Missing Years",
+    "year": 1991,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Bruised Orange",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "John Prine 第五張專輯,1978 年 5 月由 Asylum 發行,製作人是老友 Steve Goodman。編制回到民謠與鄉村的清朗處:Jethro Burns 的曼陀林、Howard Levy 的鋼琴與手風琴、Corky Siegel 的口琴,Jackson Browne 與 Ramblin' Jack Elliott 也在合音名單裡。〈That's the Way the World Goes Round〉把苦事寫得輕,標題曲〈Bruised Orange (Chain of Sorrow)〉則正面談怨恨如何拖著人走。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bruised_Orange",
+     "https://musicbrainz.org/release-group/19f67871-5861-37b2-bacd-13ae2598bd8d"
+    ]
+   },
+   {
+    "album": "The Missing Years",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "John Prine 第十張錄音室專輯,1991 年 9 月 24 日由他自營的 Oh Boy Records 發行,Tom Petty 樂團的貝斯手 Howie Epstein 製作,拿下葛萊美最佳當代民謠專輯。David Lindley、Albert Lee、Benmont Tench、Mike Campbell 撐起的班底讓 americana 骨架飽滿,〈It's a Big Old Goofy World〉寫得鬆而準;壓軸的〈Jesus the Missing Years〉用近六分鐘替耶穌十二歲到三十歲之間的空白編故事,片名即由此而來。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Missing_Years_(album)",
+     "https://musicbrainz.org/release-group/2ee8c1cc-5e27-32cd-9a32-50dfdff399f3"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "josé gonzález",
+  "name": "José González",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   2003,
+   2026
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Veneer",
+    "year": 2003,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Local Valley",
+    "year": 2021,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Vestiges & Claws",
+    "year": 2015,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Against the Dying of the Light",
+    "year": 2026,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "In Our Nature",
+    "year": 2007,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "In Our Nature",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "哥德堡出身、雙親為阿根廷政治流亡者的 José González，2007 年 9 月交出第二張個人專輯，英國由 Peacefrog、美國由 Mute 發行。古典吉他加低語人聲的 indie folk 基本盤延續自《Veneer》，但加進拍手、和聲與合成器。歌詞談人的處境，部分受 Richard Dawkins《上帝錯覺》與 Peter Singer《實踐倫理學》影響。〈Down the Line〉與〈Killing for Love〉分別是歐洲與瑞典的首支單曲，翻唱 Massive Attack 的〈Teardrop〉則作為第二單曲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/In_Our_Nature_(Jos%C3%A9_Gonz%C3%A1lez_album)",
+     "https://en.wikipedia.org/wiki/Jos%C3%A9_Gonz%C3%A1lez_(singer)",
+     "https://musicbrainz.org/release-group/9b257522-ef8c-3bdc-8d09-464f2da3d98a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kacey musgraves",
+  "name": "Kacey Musgraves",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   2015,
+   2026
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Golden Hour",
+    "year": 2018,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "star-crossed",
+    "year": 2021,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Pageant Material",
+    "year": 2015,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Very Kacey Christmas",
+    "year": 2016,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Middle of Nowhere",
+    "year": 2026,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c112-a",
+    "album": "Middle of Nowhere",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group f0387d06 的欄位：title「Middle of Nowhere」、artist-credit「Kacey Musgraves」（藝人實體 MBID d1393ecb，type Person、country US）、first-release-date 2026-05-01、primary-type Album、secondary-types **空**。轄下 **19 筆 release**，其中 **17 筆 Official（全部 2026-05-01）、2 筆 status 是 Withdrawn（都是 2026-05-05 的數位版，15 軌與 16 軌各一）**。廠牌欄十九筆全記 Lost Highway。",
+      "src": "https://musicbrainz.org/ws/2/release-group/f0387d06-86d9-40e6-9bb3-c82de9002006?fmt=json&inc=artist-credits+releases"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Middle of Nowhere",
+    "manifest": "onboarding-manifest-c112-20260910.json",
+    "desc": "封面那頭長角牛是真的：她姊妹在達拉斯街頭拍的，沒申請任何許可。牛是朋友 Evan 從牧場牽來的，一行人在街上騎著牛跑、拿三角錐擋住來車才拍完，她強調那不是 AI。原盤十三軌總長 44:10，最短是開場的同名曲 2:36，最長是〈Loneliest Girl〉4:16。客席三位各佔一軌：Willie Nelson 在第 10 軌、Miranda Lambert 在第 9 軌、Billy Strings 在第 8 軌。前作是 2024 年的《Deeper Well》。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f0387d06-86d9-40e6-9bb3-c82de9002006?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f0387d06-86d9-40e6-9bb3-c82de9002006&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1883176984&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Middle_of_Nowhere_(Kacey_Musgraves_album)",
+     "https://musicbrainz.org/release-group/f0387d06-86d9-40e6-9bb3-c82de9002006"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kenny rogers",
+  "name": "Kenny Rogers",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1978,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Gambler",
+    "year": 1978,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Once Upon a Christmas",
+    "year": 1984,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Eyes That See in the Dark",
+    "year": 1983,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gideon",
+    "year": 1980,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Kenny Rogers' Greatest Hits",
+    "year": 1980,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Kenny Rogers' Greatest Hits",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "Kenny Rogers 的首張個人精選,1980 年 9 月 23 日由 Liberty 發行,Richard Landis 製作。美國流行榜與鄉村榜同時封王,RIAA 認證 12 白金,至今仍是鄉村樂史上最暢銷的精選輯。十二首裡有三首當時未發表:Lionel Richie 寫的〈Lady〉、出自《Urban Cowboy》原聲帶的〈Love the World Away〉,以及〈Long Arm of the Law〉;其餘為〈The Gambler〉、〈Lucille〉、〈Coward of the County〉等跨界鄉村與流行的招牌曲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Kenny_Rogers%27_Greatest_Hits",
+     "https://musicbrainz.org/release-group/dccbe6ea-276b-3037-9935-7ed23a4f8646"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "lucinda williams",
+  "name": "Lucinda Williams",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1980,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Car Wheels on a Gravel Road",
+    "year": 1998,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Stories From a Rock n Roll Heart",
+    "year": 2023,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Little Honey",
+    "year": 2008,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Happy Woman Blues",
+    "year": 1980,
+    "genres": [
+     "folk",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Lucinda Williams",
+    "year": 1988,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Happy Woman Blues",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Lucinda Williams 的第二張錄音室專輯，1980 年由 Folkways 發行。相對於全是翻唱的首作《Ramblin' on My Mind》，這次曲目全由她一人寫成，並與 Mickey White 共同製作，六人編制的班底把路易斯安那的鄉音牽進傳統與 alternative country、民謠、藍調之間。〈Lafayette〉〈I Lost It〉〈King of Hearts〉已見日後 americana 寫作的骨架，唱腔卻還沒長出九〇年代那股沙啞張力，是她離開純民謠場景之前的起點紀錄。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Happy_Woman_Blues",
+     "https://musicbrainz.org/release-group/9cf7a5e0-e479-3805-8d0e-c2d49cd55dcd"
+    ]
+   },
+   {
+    "album": "Lucinda Williams",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "1988 年 Rough Trade 發行的同名第三作，Williams 與 Dusty Wakeman、Gurf Morlix 共製，題材繞著情感關係的難處打轉。〈Passionate Kisses〉首度現身於此，1992 年 Mary Chapin Carpenter 翻唱後，為 Williams 贏得 1994 年葛萊美最佳鄉村歌曲。〈The Night's Too Long〉〈Big Red Sun Blues〉把 alternative country 與 roots rock 的寫法定了型，長期被視為 americana 成形中的領銜作品。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Lucinda_Williams_(album)",
+     "https://musicbrainz.org/release-group/9868b6bf-6bf5-3d62-bdb9-a312694c34f1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "martin carthy",
+  "name": "Martin Carthy",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1965,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Martin Carthy",
+    "year": 1965,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Prince Heathen",
+    "year": 1969,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Crown of Horn",
+    "year": 1976,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Shearwater",
+    "year": 1972,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sweet Wivelsfield",
+    "year": 1974,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c117-b",
+    "album": "Shearwater",
+    "facts": [
+     {
+      "f": "專輯條目：《Shearwater》是 Martin Carthy **1972 年在 Pegasus 廠牌以編號 PEG12 發行**的專輯，1973／74 年由 Mooncrest 以 CREST25 再壓黑膠，1995 年 Mooncrest 出 CD（CRESTCD 008），2005 年 3 月 Castle Music 再出 CD（CMQCD1096）。**全部曲目皆為傳統曲、由 Martin Carthy 改編**，條目並逐首標出 Roud 與 Child 編號（例如〈Banks of Green Willow〉Roud 172／Child 24、〈Outlandish Knight〉Roud 21／Child 4、〈Lord Randall〉Roud 10／Child 12、〈Famous Flower of Serving Men〉Roud 199／Child 106）。人員：**Martin Carthy（人聲、吉他、洋琴）、Maddy Prior（〈Betsy Bell and Mary Gray〉的人聲）**、〈William Taylor〉上有一段未具名的持續低音。製作 Terry Brown（為 September Productions Ltd），錄音師 Jerry Boys，美術 David Berney Wade。2005 年 Castle CD 的三首追加曲來自 1972 年 5 月 22 日在倫敦 Playhouse Theatre 錄、5 月 30 日播出的電台 session。",
+      "src": "https://en.wikipedia.org/wiki/Shearwater_(album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Shearwater",
+    "manifest": "onboarding-manifest-c117-20260910.json",
+    "desc": "第九軌走了九分二十三秒，緊接著的末軌只用一分三十三秒收場。那首長的是〈Famous Flower of Serving Men〉。1972 年 Pegasus 的原盤 10 軌、總長 40 分 44 秒，十首全部是傳統曲，也全部由他自己改編，多首帶有編號。他自己唱、彈吉他兼洋琴，末軌的人聲是 Maddy Prior，另有一軌帶著一段未具名的持續低音。製作人是 Terry Brown，錄音師 Jerry Boys。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/a7cc4ab3-78a7-32de-88f1-1f9defb4993d?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=a7cc4ab3-78a7-32de-88f1-1f9defb4993d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://en.wikipedia.org/wiki/Shearwater_(album)",
+     "https://itunes.apple.com/lookup?id=2416045&country=gb&entity=album&limit=200",
+     "https://coverartarchive.org/release-group/a7cc4ab3-78a7-32de-88f1-1f9defb4993d/front",
+     "https://musicbrainz.org/release-group/a7cc4ab3-78a7-32de-88f1-1f9defb4993d"
+    ]
+   },
+   {
+    "album": "Sweet Wivelsfield",
+    "manifest": "onboarding-manifest-c117-20260910.json",
+    "desc": "製作人是他在 Steeleye Span 的前團友，兩人合作三張的頭一張。1974 年 Deram 的原盤 10 軌、總長 41 分 59 秒，三首六分多的長曲分別擺在第 4、第 8 與最後一軌，其餘七首壓在二到四分鐘。十首全部是傳統曲，也全部由他自己改編，他一個人唱並彈木吉他。曲目裡的〈Skewbald〉，此前已在 Steeleye Span 1971 年的專輯上做過電聲版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/9fdb999d-5959-4a40-ad32-fbebc5219c13?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=9fdb999d-5959-4a40-ad32-fbebc5219c13&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://en.wikipedia.org/wiki/Sweet_Wivelsfield",
+     "https://itunes.apple.com/lookup?id=1616959003&country=gb&entity=song&limit=200",
+     "https://coverartarchive.org/release-group/9fdb999d-5959-4a40-ad32-fbebc5219c13/front",
+     "https://musicbrainz.org/release-group/9fdb999d-5959-4a40-ad32-fbebc5219c13"
+    ]
+   },
+   {
+    "album": "Prince Heathen",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "1969 年 Fontana 發行（STL 5529），MusicBrainz 以 Martin Carthy 與 Dave Swarbrick 雙人名義收錄。整張都是傳統敘事歌：〈Arthur McBride and the Sergeant〉〈Salisbury Plain〉〈Polly on the Shore〉〈Reynardine〉，壓軸同名曲取自 Child 第 104 號，唱女子遭王子囚禁、被迫為他生子的殘酷情節。Swarbrick 的提琴與 Carthy 的調式吉他把旋律拉得冷硬，不做民謠常見的甜化處理。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b34b22d7-f1fe-3897-81b6-4be547c5530e",
+     "https://en.wikipedia.org/wiki/Prince_Heathen",
+     "https://en.wikipedia.org/wiki/Martin_Carthy"
+    ]
+   },
+   {
+    "album": "Crown of Horn",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Martin Carthy 1976 年在 Topic Records 發行，Ashley Hutchings 製作，錄於 Tony Cox 的 Old Sawmill 錄音室。Cox 在〈Willie's Lady〉〈Bonny Lass of Anglesey〉〈Palaces of Gold〉三首寫了細密的 Moog 合成器編排，出現在純傳統歌謠唱片上相當罕見——他此前是 Caravan、Yes 與 Trees 的製作人。七分半的〈Willie's Lady〉（Child 6）與〈Geordie〉（Child 209）是他最常被引用的敘事歌演出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Crown_of_Horn",
+     "https://en.wikipedia.org/wiki/Martin_Carthy",
+     "https://musicbrainz.org/release-group/d94b3b3c-94dd-3fcd-ab36-5ce6984d51b3"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mercedes sosa",
+  "name": "Mercedes Sosa",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1969,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mujeres Argentinas",
+    "year": 1969,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Homenaje a Violeta Parra",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cantata Sudamericana",
+    "year": 1972,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Mercedes Sosa en Argentina",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Traigo un pueblo en mi voz",
+    "year": 1973,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 5,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Mujeres Argentinas",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1969 年 Sosa 與作曲家 Ariel Ramírez、作詞人 Félix Luna 合作的概念專輯，八首歌各寫一位阿根廷女性：獨立戰爭的游擊將領 Juana Azurduy、鄉村女教師 Rosarito Vera，最後是〈Alfonsina y el mar〉，寫 1938 年投海自盡的詩人 Alfonsina Storni。這首 zamba 日後被各國歌手不斷翻唱，也成了 Sosa 的招牌。原盤由阿根廷 Philips 發行；1971 年她還在電影《Güemes, la tierra en armas》裡飾演 Juana Azurduy。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Alfonsina_y_el_mar",
+     "https://en.wikipedia.org/wiki/Mercedes_Sosa",
+     "https://en.wikipedia.org/wiki/Ariel_Ram%C3%ADrez",
+     "https://musicbrainz.org/release-group/e59406ff-e468-3bba-9a65-b3995255e49b"
+    ]
+   },
+   {
+    "album": "Homenaje a Violeta Parra",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1971 年由阿根廷 Philips 發行，整張唱的都是智利 nueva canción 先驅 Violeta Parra 的作品——她已在 1967 年自殺身亡。開場的〈Defensa de Violeta〉之後緊接〈Gracias a la vida〉，這個版本此後成為 Sosa 最為人熟知的演唱；其餘還有〈Volver a los 17〉〈Me gustan los estudiantes〉〈La carta〉。2015 年《Billboard》把它選進「近五十年五十張必備拉丁專輯」。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Homenaje_a_Violeta_Parra",
+     "https://en.wikipedia.org/wiki/Mercedes_Sosa",
+     "https://musicbrainz.org/release-group/f5bb2173-9e91-488a-9e2b-a06797ea717b"
+    ]
+   },
+   {
+    "album": "Cantata Sudamericana",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "繼 1969 年《Mujeres Argentinas》之後，Sosa 與 Ariel Ramírez、Félix Luna 在 1972 年做出第二部大型合作：一部以整片南美洲為題的民謠清唱套曲，從〈Es Sudamérica mi voz〉唱到〈Alcen la bandera〉，中間有寫給原住民的〈Antiguos dueños de las flechas〉與寫南方草原的〈Pampas del sur〉。Ramírez 以《Misa Criolla》聞名，Luna 則是史學家出身的作詞人。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mercedes_Sosa",
+     "https://en.wikipedia.org/wiki/Ariel_Ram%C3%ADrez",
+     "https://musicbrainz.org/release-group/e8c4a770-63e5-34f3-a1c3-3887432f8e8c"
+    ]
+   },
+   {
+    "album": "Mercedes Sosa en Argentina",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "1979 年在 La Plata 演出時被當場逮捕、隨後遭軍政府禁演的 Sosa，流亡巴黎與馬德里後，於 1982 年 2 月回到阿根廷，在布宜諾斯艾利斯的 Teatro Ópera 連演數場。這套 Philips 雙唱片就是當時的現場錄音，上市即成暢銷盤，曲目含〈Gracias a la vida〉〈Alfonsina y el mar〉〈Sólo le pido a Dios〉與收尾的〈Canción con todos〉。2024 年拉美樂評名單 Los 600 將它排在第 12 名，2017 年 NPR 也選入「150 張女性最偉大專輯」。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mercedes_Sosa_en_Argentina",
+     "https://en.wikipedia.org/wiki/Mercedes_Sosa",
+     "https://en.wikipedia.org/wiki/Los_600_de_Latinoam%C3%A9rica",
+     "https://musicbrainz.org/release-group/c2b09c77-0ac1-31d1-807a-132797aa258c"
+    ]
+   },
+   {
+    "album": "Traigo un pueblo en mi voz",
+    "manifest": "onboarding-manifest-c50-20260831.json",
+    "desc": "唱片內頁把她的嗓音直接稱作武器。那段文字由 Juan Parotti 撰寫，寫她拒絕把這把武器用在無足輕重的事情上，整張唱片的題材是社會性的、而且幾乎總是悲傷的。1973 年由 Philips 在阿根廷發行，全碟 10 首，開場曲〈Cuando tenga la tierra〉與〈Hermano dame tu mano〉都是在這張唱片上首度錄音。曲目橫跨阿根廷民謠與拉美詩作，其中兩首的詞取自秘魯詩人 César Vallejo。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ce0db549-c05c-4352-b8cb-616023904a94",
+     "https://perrerac.org/album/mercedes-sosa-traigo-pueblo-voz-1973/9723/",
+     "https://www.cancioneros.com/nd/758/0/traigo-un-pueblo-en-mi-voz-mercedes-sosa"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "nico",
+  "name": "Nico",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1967,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Chelsea Girl",
+    "year": 1967,
+    "genres": [
+     "folk",
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Drama of Exile",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Marble Index",
+    "year": 1968,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Desertshore",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The End...",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c50a-a",
+    "album": "The End...",
+    "facts": [
+     {
+      "f": "You Forget to Answer 寫的是 Nico 在 Jim Morrison 1971 年去世之前試圖聯絡他卻沒有回音的那一次。",
+      "src": "https://en.wikipedia.org/wiki/The_End..."
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The End...",
+    "manifest": "onboarding-manifest-c50-20260831.json",
+    "desc": "她打了那通電話給 Jim Morrison，沒有人接。〈You Forget to Answer〉寫的就是 1971 年他去世之前，她試圖聯絡卻沒有回音的那一次。十首歌裡八首出自 Nico 之手，另外兩首是翻唱，其中一首是 The Doors 的〈The End〉。John Cale 第二度擔任她的製作人，Brian Eno 在三軌彈合成器。唱片 1974 年 11 月由 Island Records 發行，當年評價兩極、銷售不佳，Island 隨後結束了與她的合作。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_End...",
+     "https://musicbrainz.org/release-group/24cb805d-b6ca-3cf2-860f-e2426829cd1d"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pentangle",
+  "name": "Pentangle",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1968,
+   1972
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Basket of Light",
+    "year": 1969,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Pentangle",
+    "year": 1968,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sweet Child",
+    "year": 1968,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cruel Sister",
+    "year": 1970,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Solomon's Seal",
+    "year": 1972,
+    "genres": [
+     "folk",
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "The Pentangle",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bert Jansch 與 John Renbourn 兩把木吉他、Jacqui McShee 的高音、Danny Thompson 的低音提琴與 Terry Cox 的鼓，五個人各帶一套語彙進錄音室，1968 年 5 月 17 日由 Transatlantic 發行的首作因此落在傳統歌、藍調與爵士的交叉點上。〈Let No Man Steal Your Thyme〉唱得清冷，〈Pentangling〉則放手讓五人輪流獨奏，內頁解說由 John Peel 執筆。英國專輯榜最高第 21 名，是樂團商業上最成功的作品之一。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Pentangle_(album)",
+     "https://en.wikipedia.org/wiki/Pentangle_(band)",
+     "https://musicbrainz.org/release-group/f8be2e9d-0cf5-4ae5-b77f-7e6e30735e04"
+    ]
+   },
+   {
+    "album": "Sweet Child",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "一片現場、一片錄音室的雙唱片，現場部分錄自 1968 年 6 月 29 日的倫敦皇家節慶廳演出。曲目跨度是 Pentangle 之最：傳統歌、藍調、早期音樂與自作曲並置，還翻了 Charles Mingus 的〈Haitian Fight Song〉。封面出自設計過《Sgt. Pepper's》的 Peter Blake，1968 年 11 月 1 日以 Transatlantic TRA178 發行。〈Market Song〉〈No More My Lord〉可以聽見五人如何把民謠唱成室內爵士。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sweet_Child",
+     "https://en.wikipedia.org/wiki/Pentangle_(band)",
+     "https://musicbrainz.org/release-group/6d70cf6f-26a9-3efd-b8e3-160ae859caa5"
+    ]
+   },
+   {
+    "album": "Cruel Sister",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "全數取材傳統歌的一張，製作人換成錄慣民謠的 Bill Leader，聲音比前作素樸許多。第二面整面留給〈Jack Orion〉——Child 敘事歌〈Glasgerion〉的版本，Bert Jansch 早先已在同名獨奏專輯錄過，此處展開成多段變速的長篇。〈Lord Franklin〉由 John Renbourn 主唱並兼彈木吉他與電吉他，唱的是富蘭克林探尋西北航道未歸的舊事。封面用了杜勒的木刻〈男子浴場〉，1970 年 11 月 27 日由 Transatlantic 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Cruel_Sister_(Pentangle_album)",
+     "https://en.wikipedia.org/wiki/Pentangle_(band)",
+     "https://musicbrainz.org/release-group/2aace3c8-aca9-3b33-a4c6-5a1b2b2f3e34"
+    ]
+   },
+   {
+    "album": "Solomon's Seal",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "原始五人陣容的告別作，1972 年 2 至 3 月錄於倫敦 Sound Techniques。與 Transatlantic 的合約到期又起版稅糾紛，樂團改投 Warner／Reprise，同年 9 月配合巡演發行，銷量不佳，1973 年初解散，債務拖到八〇年代初才清完。開場的〈Sally Free and Easy〉取自 Cyril Tawney，被改成慢速藍調而非慣見的水手歌調。Jacqui McShee 說這是她最喜歡的 Pentangle 唱片。母帶一度被認為遺失，2003 年 CD 版是以 John Renbourn 私藏的帶子轉錄。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Solomon%27s_Seal_(album)",
+     "https://en.wikipedia.org/wiki/Pentangle_(band)",
+     "https://musicbrainz.org/release-group/2ff26146-0283-354d-bb05-c94fcd27c017"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "silvio rodríguez",
+  "name": "Silvio Rodríguez",
+  "tier": "A",
+  "cards": 5,
+  "mainGenre": "folk",
+  "yearRange": [
+   1975,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Días y Flores",
+    "year": 1975,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Al Final de Este Viaje",
+    "year": 1978,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Mujeres",
+    "year": 1978,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Rabo de Nube",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Unicornio",
+    "year": 1982,
+    "genres": [
+     "folk",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Al Final de Este Viaje",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "Silvio Rodríguez 的第二張專輯，1978 年在馬德里 Sonoland 錄音室完成，全程只有他一把木吉他與人聲，收的是 1968 至 1970 年間寫的歌。〈Ojalá〉、〈Canción del elegido〉與〈Óleo de mujer con sombrero〉都在裡面，後來成為拉美左翼歌謠的共同語言。2024 年由樂評集體票選的「Los 600 de Latinoamérica」名單，把它排在 1920 至 2022 年拉美專輯的第四位。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Al_Final_de_Este_Viaje",
+     "https://es.wikipedia.org/wiki/Al_final_de_este_viaje",
+     "https://musicbrainz.org/release-group/376759f2-047c-317a-a84f-19c4d6ee4d7e"
+    ]
+   },
+   {
+    "album": "Mujeres",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "Silvio Rodríguez 的第三張專輯，1978 年由古巴 Areito 發行，鋼琴家 Frank Fernández 與他共同製作。全盤仍以木吉他為底，但比前作《Al final de este viaje》多了琶音與較長的獨奏段落，題材集中在情歌。A 面從標題曲〈Mujeres〉一路排到〈Te doy una canción〉，〈¿Qué hago ahora?〉只有兩分鐘出頭，語氣壓得比同期的政治歌謠低很多。",
+    "sourceUrls": [
+     "https://es.wikipedia.org/wiki/Mujeres_(%C3%A1lbum)",
+     "https://en.wikipedia.org/wiki/Silvio_Rodr%C3%ADguez",
+     "https://musicbrainz.org/release-group/da577841-8edc-3e83-af0c-0301ff7c5f14"
+    ]
+   },
+   {
+    "album": "Rabo de Nube",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "Silvio Rodríguez 的第四張專輯，1980 年由 Areito／EGREM 發行，是他從獨奏木吉他走向樂團編制的轉折：Frank Fernández 的鍵盤與 Moog 合成器進場，〈Testamento〉尾段留下一長串器樂 coda。早期版本封面還印著「Rabo de Nube — Volumen I」，續集始終沒有問世。標題曲後來被 Charles Lloyd 四重奏收進 2007 年錄於巴塞爾、由 ECM 發行的同名現場專輯。〈Vamos a andar〉則是他傳唱最廣的曲目之一。",
+    "sourceUrls": [
+     "https://es.wikipedia.org/wiki/Rabo_de_nube",
+     "https://en.wikipedia.org/wiki/Rabo_de_Nube",
+     "https://musicbrainz.org/release-group/52518151-100a-3721-be6c-378fcacde5d6"
+    ]
+   },
+   {
+    "album": "Unicornio",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "古巴 nueva trova 領袖 Silvio Rodríguez 1982 年的第五張錄音室專輯，Ojalá 出品。十首歌收進〈La Maza〉與同名的〈Unicornio〉，兩首都在他傳唱最廣的作品之列。錄音陣容龐大：José María Vitier、Frank Fernández、Hilario Durán 三位鍵盤手分工，外加二十餘人的弦樂群與銅管木管，把吉他彈唱的 trova 骨架擴寫成近乎管弦樂的規模。〈Por Quien Merece Amor〉〈La Gaviota〉走抒情敘事，〈Pioneros〉則直指革命語彙。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Unicornio",
+     "https://en.wikipedia.org/wiki/Silvio_Rodr%C3%ADguez",
+     "https://musicbrainz.org/release-group/9594cd07-e7fd-3490-94ab-ae1a0bd87d13"
+    ]
+   }
+  ]
+ }
+]
