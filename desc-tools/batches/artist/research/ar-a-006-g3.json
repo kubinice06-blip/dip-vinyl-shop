@@ -1158,5 +1158,320 @@
     "failedFetches": 2,
     "status": "full",
     "notes": "事實庫只有 Voyage to India 一則上線簡介，三格全 gap。補查 6 次：維基 India.Arie、WebSearch（生平）、grammy.com 藝人頁、WebSearch（Video 與遺產）、維基 Video、Encyclopedia.com。失敗請求 2 次未計入：Britannica（404）與 BlackPast（403）。⚠ legacy 格較弱：只有葛萊美與銷量，沒有取得『後輩點名受她影響』或名人堂類共識評價的來源，主要靠獎項與銷量；搜尋摘要提到 AARP 等稿件把她定位為自愛主題代表，未取得全文。2022 年因 Joe Rogan 撤下 Spotify 音樂一事（維基單源）屬近況，不收。AARP 那條〈Video〉歌詞引文只見搜尋摘要，寫作層若引用請改間接敘述。唱片序號：Acoustic Soul 發行月份維基與 Encyclopedia.com 寫法不同（單曲 2 月、專輯 3 月），facts 只寫年。Oprah SuperSoul100 只維基單源。"
+  },
+  {
+    "key": "justin timberlake",
+    "name": "Justin Timberlake",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Justin Timberlake 1981 年 1 月 31 日生於田納西州孟菲斯。",
+            "src": "https://en.wikipedia.org/wiki/Justin_Timberlake",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 寫他的祖父是浸信會牧師、父親是 bluegrass 樂手，他 8 歲起在教會唱詩班唱歌；維基寫他的父親 Charles Randall Timberlake 是浸信會詩班指揮。",
+            "src": "https://www.britannica.com/biography/Justin-Timberlake",
+            "from": "new"
+          },
+          {
+            "f": "他 11 歲上電視選秀節目《Star Search》，以「Justin Randall」的名字唱鄉村歌曲。",
+            "src": "https://en.wikipedia.org/wiki/Justin_Timberlake",
+            "from": "new"
+          },
+          {
+            "f": "他 1990 年代初在 Disney Channel 的《The All New Mickey Mouse Club》登場，同期有 Britney Spears、Christina Aguilera 與 JC Chasez；之後加入男團 *NSYNC。",
+            "src": "https://www.britannica.com/biography/Justin-Timberlake",
+            "from": "new"
+          },
+          {
+            "f": "*NSYNC 2000 年的專輯《No Strings Attached》成為史上銷售最快的專輯之一，賣出超過 1400 萬張。",
+            "src": "https://www.britannica.com/biography/Justin-Timberlake",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Justified》2002 年 11 月 5 日在 *NSYNC 休團期間發行；他想要更成熟的 R&B 藝人形象，由 The Neptunes 與 Timbaland 擔綱主要製作。",
+            "src": "https://en.wikipedia.org/wiki/Justified_(album)",
+            "from": "new"
+          },
+          {
+            "f": "The Neptunes 做《Justified》時取法 Earth, Wind & Fire 與 Michael Jackson 的《Off the Wall》《Thriller》；有幾首歌原本是替 Michael Jackson 寫的，後來改給 Timberlake。",
+            "src": "https://en.wikipedia.org/wiki/Justified_(album)",
+            "from": "new"
+          },
+          {
+            "f": "《FutureSex/LoveSounds》2006 年 9 月 8 日發行，主要由 Timbaland 與 Danja 製作，Rick Rubin 與 will.i.am 也有參與；曲風參考 Prince、David Bowie 與搖滾，把 R&B 與 electro-funk、trance 和 disco 元素混在一起。",
+            "src": "https://en.wikipedia.org/wiki/FutureSex/LoveSounds",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 寫《FutureSex/LoveSounds》由 Timbaland 與 Rick Rubin 參與製作，〈SexyBack〉在 Billboard Hot 100 榜首待了七週，並拿下最佳舞曲錄音。",
+            "src": "https://www.britannica.com/biography/Justin-Timberlake",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他共拿下 10 座葛萊美獎、40 次提名。",
+            "src": "https://www.grammy.com/artists/justin-timberlake/15478",
+            "from": "new"
+          },
+          {
+            "f": "第 46 屆葛萊美獎（2004 年），《Justified》拿下最佳流行演唱專輯，〈Cry Me a River〉拿下最佳男流行演唱（皆為得獎）。",
+            "src": "https://www.grammy.com/artists/justin-timberlake/15478",
+            "from": "new"
+          },
+          {
+            "f": "《FutureSex/LoveSounds》拿下 7 項葛萊美提名（含年度專輯），〈SexyBack〉得最佳舞曲錄音、〈My Love〉（與 T.I.）得最佳 Rap／演唱合作。",
+            "src": "https://en.wikipedia.org/wiki/FutureSex/LoveSounds",
+            "from": "new"
+          },
+          {
+            "f": "維基寫他有五首 Billboard Hot 100 冠軍單曲：〈SexyBack〉〈My Love〉〈What Goes Around...Comes Around〉〈Give It to Me〉與〈Can't Stop the Feeling!〉。",
+            "src": "https://en.wikipedia.org/wiki/Justin_Timberlake",
+            "from": "new"
+          },
+          {
+            "f": "《Justified》被維基引述稱為「也許是流行音樂史上前團員最具代表性的首張個人專輯」，並成為其他男團成員轉型單飛的範本；該專輯全球賣出超過 1000 萬張。",
+            "src": "https://en.wikipedia.org/wiki/Justified_(album)",
+            "from": "new"
+          },
+          {
+            "f": "他拿過 4 座艾美獎；Britannica 記載艾美得獎年份為 2007、2009 與 2011。",
+            "src": "https://www.britannica.com/biography/Justin-Timberlake",
+            "from": "new"
+          },
+          {
+            "f": "2007 年入選 Time 全球百大最具影響力人物。",
+            "src": "https://en.wikipedia.org/wiki/Justin_Timberlake",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2002 年發行首張個人專輯《Justified》，首週登上 Billboard 200 第 2 名（賣出 43.9 萬張）。",
+            "src": "https://en.wikipedia.org/wiki/Justified_(album)",
+            "from": "new"
+          },
+          {
+            "f": "2006 年《FutureSex/LoveSounds》首週賣出約 68.4 萬張、登上 Billboard 200 第 1 名。",
+            "src": "https://en.wikipedia.org/wiki/FutureSex/LoveSounds",
+            "from": "new"
+          },
+          {
+            "f": "2004 年第 38 屆超級盃中場秀，他與 Janet Jackson 的演出發生 wardrobe malfunction 事件，他事後公開致歉。",
+            "src": "https://en.wikipedia.org/wiki/Justin_Timberlake",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "第 46 屆葛萊美獎（2004 年），《Justified》得最佳流行演唱專輯、〈Cry Me a River〉得最佳男流行演唱（皆為得獎）。",
+        "src": "https://www.grammy.com/artists/justin-timberlake/15478",
+        "from": "new"
+      },
+      {
+        "f": "〈SexyBack〉2006 年在 Billboard Hot 100 榜首待了七週。",
+        "src": "https://www.britannica.com/biography/Justin-Timberlake",
+        "from": "new"
+      },
+      {
+        "f": "累計 10 座葛萊美獎與 4 座艾美獎。",
+        "src": "https://www.grammy.com/artists/justin-timberlake/15478",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "*NSYNC 加入年份：維基 1995，Britannica 1996；facts 不寫年份。",
+      "葛萊美座數：維基與 grammy.com 都是 10 座，Britannica 寫『14+』；採 10（grammy.com 為官方）。",
+      "Britannica 寫艾美 4 座、年份列 2007、2009、2011（三個年份對四座，有同年多座之可能）；facts 不寫各年份對應的獎項。",
+      "父親：維基 Charles 是浸信會詩班指揮，Britannica 寫父親是 bluegrass 樂手、祖父是牧師；facts 並列，不合併。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫全空，三格全 gap。補查 6 次：維基、Britannica、WebSearch（葛萊美）、grammy.com、維基 Justified、維基 FutureSex/LoveSounds。健康：Britannica 寫他 2025 年 7 月公開罹患萊姆病，只此一源，不收。Super Bowl 2004 事件只維基與 Britannica 的一句『wardrobe malfunction』，維基的『他事後致歉』單源，寫作層宜只寫事件本身、克制。未收：Time 100（2007）與 Berklee 榮譽博士（2019）只維基單源（Time 100 已放 legacy，請低調）；Billboard 2023 二十一世紀流行巨星榜單源不收；FutureSex/LoveSounds 被列入 Rock Hall 資料庫典藏之說法只維基單源、不收。origin 第 4 條的措辭是提醒性質、不建議直接採用；請採前三條與 Mickey Mouse Club 同期成員名單。"
+  },
+  {
+    "key": "labelle",
+    "name": "Labelle",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Labelle 的前身是費城與紐澤西 Trenton 一帶的女聲團 The Ordettes 與 The Del-Capris；Patti LaBelle（本名 Patricia Louise Holte）、Cindy Birdsong、Nona Hendryx 與 Sarah Dash 組成 Patti LaBelle & The Bluebelles。",
+            "src": "https://en.wikipedia.org/wiki/Labelle",
+            "from": "bank"
+          },
+          {
+            "f": "Encyclopedia.com 寫 Patti Labelle and the Bluebelles 是由 Ordettes 出身的 Patti Labelle 與 Cindy Birdsong，加上 Del Carpis 出身的 Nona Hendryx 與 Sarah Dash 組成。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/labelle",
+            "from": "new"
+          },
+          {
+            "f": "Cindy Birdsong 1967 年離團加入 The Supremes 之後，剩下三人依英國電視製作人兼經紀人 Vicki Wickham 的建議改變造型、音樂方向與風格，1971 年以進步靈魂樂三重唱 Labelle 的名義重組，簽在 Warner Bros. Records。",
+            "src": "https://en.wikipedia.org/wiki/Labelle",
+            "from": "bank"
+          },
+          {
+            "f": "Encyclopedia.com 也寫 1971 年在 Vicki Wickham 的帶領下，團體以三人組合更名為 Labelle。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/labelle",
+            "from": "new"
+          },
+          {
+            "f": "Sarah Dash 1960 年代初與 Patti LaBelle、Nona Hendryx 一起唱，團名從 Ordettes 一路變成 Bluebelles、Patti LaBelle and the Bluebelles，1970 年代初改名 Labelle。",
+            "src": "https://www.legacy.com/news/celebrity-deaths/sarah-dash-1945-2021-singer-who-co-founded-labelle/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Nightbirds》1974 年 9 月 13 日由 Epic 發行，在紐奧良的 Sea-Saint Studios 錄製，製作人是 Allen Toussaint；音樂混合放克、流行、靈魂樂、glam rock 與 disco。",
+            "src": "https://en.wikipedia.org/wiki/Nightbirds",
+            "from": "new"
+          },
+          {
+            "f": "Labelle 1971 年後的造型是舞台化的太空風服裝；Encyclopedia.com 稱她們「大概是第一個、也許是唯一一個重要的黑人女性 glitter-rock 團體」。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/labelle",
+            "from": "new"
+          },
+          {
+            "f": "她們的服裝出自設計師 Larry LeGaspi，讓三位成員各有鮮明個性，是他作品裡最重要的一批。",
+            "src": "https://www.dazeddigital.com/fashion/article/43114/1/larry-legaspi-70s-futuristic-fashion-designer-divine-labelle-kiss-rick-owens",
+            "from": "new"
+          },
+          {
+            "f": "Nona Hendryx 是團裡寫歌的主力，並影響團體的造型；Vicki Wickham 陪團體從成套的禮服轉成太空裝的 glam-funk 團體。",
+            "src": "https://en.wikipedia.org/wiki/Nona_Hendryx",
+            "from": "new"
+          },
+          {
+            "f": "1973 年《Pressure Cookin'》是她們在 RCA 唯一的一張，音樂混合 R&B、jazz-funk 與 fusion，參與樂手來自費城與皇后區的樂隊，後來成了 Labelle 的巡演班底。",
+            "src": "https://en.wikipedia.org/wiki/Pressure_Cookin%27",
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Lady Marmalade〉1974 年 11 月 5 日發行，登上 Billboard Hot 100、R&B 與舞曲榜冠軍；Hot 100 與 R&B 榜的冠軍在 1975 年 3 月。",
+            "src": "https://en.wikipedia.org/wiki/Nightbirds",
+            "from": "new"
+          },
+          {
+            "f": "《Nightbirds》登上 Billboard 200 第 7 名、R&B 專輯榜第 4 名，在美國達白金；Rolling Stone《500 Greatest Albums》2003 年排第 272 名、2012 年修訂版排第 274 名。",
+            "src": "https://en.wikipedia.org/wiki/Nightbirds",
+            "from": "new"
+          },
+          {
+            "f": "美國國會圖書館把 Labelle 版的〈Lady Marmalade〉（1974）納入國家錄音登錄庫，官方標為 2020 年度，2021 年 3 月公布；理由是文化、歷史或藝術上的重要性。",
+            "src": "https://www.spokesman.com/stories/2021/mar/27/labelles-lady-marmalade-and-songs-by-janet-jackson/",
+            "from": "new"
+          },
+          {
+            "f": "〈Lady Marmalade〉2012 年入選葛萊美名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Nightbirds",
+            "from": "new"
+          },
+          {
+            "f": "〈Lady Marmalade〉2001 年被 Christina Aguilera、Mýa、Lil' Kim 與 Pink 四人組翻唱，另有 All Saints 的版本。",
+            "src": "https://en.wikipedia.org/wiki/Nightbirds",
+            "from": "new"
+          },
+          {
+            "f": "Encyclopedia.com 寫 Labelle 是 1974 年第一個在紐約大都會歌劇院演出的搖滾團體；1975 年她們登上 Rolling Stone 封面。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/labelle",
+            "from": "new"
+          },
+          {
+            "f": "2008 年 Labelle 為專輯《Back to Now》重聚，是 32 年來第一張錄音室專輯；此後持續演出，直到 Sarah Dash 2021 年 9 月 20 日過世，享年 76 歲。",
+            "src": "https://en.wikipedia.org/wiki/Labelle",
+            "from": "new"
+          },
+          {
+            "f": "Sarah Dash 2021 年 9 月 20 日過世，享年 76 歲，訃聞稱她是以 1974 年〈Lady Marmalade〉聞名的 Labelle 共同創辦人。",
+            "src": "https://www.legacy.com/news/celebrity-deaths/sarah-dash-1945-2021-singer-who-co-founded-labelle/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1971 年重組為 Labelle 並簽入 Warner Bros.，首張專輯《Labelle》收有 Carole King 的〈You've Got a Friend〉。",
+            "src": "https://en.wikipedia.org/wiki/Labelle",
+            "from": "bank"
+          },
+          {
+            "f": "1973 年轉到 RCA 發行《Pressure Cookin'》，1974 年轉到 Epic 發行《Nightbirds》。",
+            "src": "https://en.wikipedia.org/wiki/Nightbirds",
+            "from": "new"
+          },
+          {
+            "f": "三位成員 1976 年一趟巡演結束後各自展開個人事業。",
+            "src": "https://en.wikipedia.org/wiki/Labelle",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1974 年《Nightbirds》發行，〈Lady Marmalade〉1975 年 3 月登上 Billboard Hot 100 與 R&B 榜冠軍。",
+        "src": "https://en.wikipedia.org/wiki/Nightbirds",
+        "from": "new"
+      },
+      {
+        "f": "1975 年登上 Rolling Stone 封面。",
+        "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/labelle",
+        "from": "new"
+      },
+      {
+        "f": "美國國家錄音登錄庫收錄〈Lady Marmalade〉（2020 年度，2021 年 3 月公布）。",
+        "src": "https://www.spokesman.com/stories/2021/mar/27/labelles-lady-marmalade-and-songs-by-janet-jackson/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "解散年：維基寫 1976 年 12 月因創作歧見解散；Encyclopedia.com 寫 1977；facts 只寫『1976 年一趟巡演結束後各自發展』（沿用事實庫），不寫確切解散年。",
+      "上線簡介 Nightbirds 寫〈Lady Marmalade〉『2021 年入選美國國家錄音登錄庫』；國會圖書館文件標『Added to the National Registry: 2020』，2021 年 3 月才公布（Spokesman 等）；採『2020 年度、2021 年 3 月公布』。",
+      "首張專輯 Labelle 的簡介與事實庫維基一致；Pressure Cookin' 簡介『合約限制不能具名的 Stevie Wonder』本層未查。",
+      "Encyclopedia.com 把 Cindy Birdsong 與 Patti 都寫成 Ordettes 出身，維基寫 Patti 出自 Ordettes、Hendryx 與 Dash 出自 Del-Capris；細節不一，facts 只寫兩邊一致的『Ordettes 與 Del-Capris 兩團合併』。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Nightbirds",
+        "claim": "〈Lady Marmalade〉……2021 年入選美國國家錄音登錄庫",
+        "problem": "國會圖書館官方標示為『Added to the National Registry: 2020』，2020 年度名單於 2021 年 3 月才公布；寫『2021 年入選』是以公布年計，宜改成『2020 年度名單、2021 年 3 月公布』或直接寫『入選國家錄音登錄庫』。",
+        "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Lady-Marmalade_Bertei.pdf"
+      }
+    ],
+    "searches": 6,
+    "failedFetches": 4,
+    "status": "full",
+    "notes": "樂團條，事實庫有 3 份專輯層級研究稿與 5 份上線簡介，但只有成軍沿革可用，其餘三格靠補查。補查 6 次：維基 Labelle、維基 Nightbirds（第一次網址 404）、WebSearch（NRR 與『第一』宣稱）、Encyclopedia.com、WebSearch（後輩與造型）；另有 LoC 部落格 403、Rolling Stone 封面故事轉址 tollbit、LoC PDF 為二進位無法解析，共 4 次失敗未計入（另 Nightbirds 404 也是失敗）。『第一』類宣稱處理：Encyclopedia.com 寫 1974 年大都會歌劇院『first rock group』，維基摘要與搜尋另有『first African American pop group』的不同措辭；『第一個登上 Rolling Stone 封面的黑人聲樂團體』只見維基與搜尋摘要、無法排除反例，全部不放 facts 的『第一』結論，只放在 facts 的第六條並註明是 Encyclopedia.com 的說法，寫作層宜以『據稱／被稱為』行文或略去。『後輩點名』：搜尋摘要提到 Nona Hendryx 被視為 Erykah Badu、Janelle Monáe、M.I.A. 等人的『母親輩』，來源是編輯性文章摘要、無取得本人點名的引述，不收。Vicki Wickham 2026 年過世的消息（搜尋結果）與本批無關，不收。Pressure Cookin' 一條沿用事實庫。"
   }
 ]
