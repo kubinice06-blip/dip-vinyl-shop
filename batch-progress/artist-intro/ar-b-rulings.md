@@ -76,3 +76,5 @@
 - 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 3 條（Luther Allison 移居法國年份；Professor Longhair「1960 年代靠掃地維生」時序錯置；Sonny Boy Williamson II 借名時 John Lee Williamson 尚在世，「已故」不對）。
 - 補洞第 3 組：pubIssue 1 條（Blind Guardian《Imaginations from the Other Side》「前兩張的 Kalle Trapp」，Trapp 也製作了第三張，待核）。Bauhaus「第一張哥德搖滾」、Bathory／Blind Guardian「維京金屬」起源屬「第一」類，不寫成定論。Bonnie Raitt 在世，葛萊美座數不寫。
 - 補洞第 2 組：Agnostic Front 失敗請求 5 次，照實記，放行。pubIssue 2 條（Robert Johnson《The Complete Recordings》另 take 數應為 12 非 13；Songhoy Blues《Résistance》「廷巴克圖出身的三人」過肯定）。Robert Johnson 死因只寫流傳說法。
+- 寫作第 2 組（20 位）審畢，0 處。放寬額度 4 位（Bombino、Bukka White、Professor Longhair、Stevie Ray Vaughan）皆人物故事或份量素材，照准。Robert Cray「5 座葛萊美」已改「多次拿下」，照准。
+- ar-b-007 上架：40 位（靈魂、藍調），審稿修 0 處。
