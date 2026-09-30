@@ -426,7 +426,7 @@
       "from": "new"
      },
      {
-      "f": "Diggs 與 Hutson 從小就認識，兩人都在奧克蘭長大，並因為共同喜愛 Parliament-Funkadelic 而走近。",
+      "f": "Diggs 與 Hutson 從小就認識，小學時就是朋友。",
       "src": "https://daily.redbullmusicacademy.com/2016/09/clipping-interview/",
       "src2": "https://en.wikipedia.org/wiki/Clipping_(band)",
       "from": "new"
@@ -460,7 +460,7 @@
     "status": "gap",
     "facts": [
      {
-      "f": "《Splendor & Misery》入圍 2017 年雨果獎最佳戲劇表現短篇類別（入圍，未得獎），是以專輯身分列入該類別的入圍作品。",
+      "f": "《Splendor & Misery》入圍 2017 年雨果獎最佳戲劇表現短篇類別（入圍），並以專輯身分列在該類別的入圍名單。",
       "src": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
       "src2": "https://en.wikipedia.org/wiki/Splendor_%26_Misery",
       "from": "new"
@@ -474,20 +474,18 @@
   },
   "milestones": [
    {
-    "f": "2017 年，《Splendor & Misery》入圍雨果獎最佳戲劇表現短篇類別（入圍，未得獎）。",
+    "f": "2017 年，《Splendor & Misery》入圍雨果獎最佳戲劇表現短篇類別（入圍）。",
     "src": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
     "src2": "https://en.wikipedia.org/wiki/Splendor_%26_Misery",
     "from": "new"
    }
   ],
-  "conflicts": [
-   "Hugo 官網頁面經 WebFetch 摘要出現得獎者資訊，與本人記憶不符，未採用；facts 只寫入圍事實，且標明未得獎（此點由 Hugo 官網的『入圍名單含 Splendor & Misery [album]』與維基的『nomination』支撐，得獎者本身未另核）。"
-  ],
+  "conflicts": [],
   "pubIssues": [],
-  "searches": 7,
+  "searches": 6,
   "failedFetches": 0,
   "status": "full",
-  "notes": "事實庫無研究稿也無上線簡介，全從零查。實際搜尋 7 次：維基樂團條目、WebSearch（Hugo 與 Afrofuturism）、Red Bull Music Academy 2016 訪談、Flood 專訪、Hugo 官網 2017 頁、維基 Splendor & Misery；其中維基樂團條目與 WebSearch 各 1 次，合計 6 次成功請求外加 Hugo 頁共 7；無失敗請求。poolAlbums 五張（CLPPNG、Dead Channel Sky、Splendor & Misery、There Existed an Addiction to Blood、Visions of Bodies Being Burned）皆為 Diggs／Hutson／Snipes 的 clipping.，無同名混卡。名稱寫法照卡池『clipping.』（含句點）。非獨立：facts 中凡第二源為維基者，維基條目本身引述訪談，與 RBMA、Flood 的內容互相印證但並非完全獨立。第二源開啟情況：Flood、RBMA、Hugo 官網、維基 Splendor & Misery 皆實際開啟；『雨果獎入圍』兩源為 Hugo 官網與維基。條目『獨立摘要』：WebFetch 對 Hugo 頁的摘要曾說得獎者是 The Expanse，這與常識不符，本層未採信、也不寫得獎者。未收（單源）：樂團 2009 年在洛杉磯以混音專案起家、Diggs 2010 年加入、Diggs 與 Hutson 小學認識（維基單源，年份屬高風險）；『第二張入圍雨果獎的音樂專輯，前一張是 Paul Kantner 1970 年《Blows Against the Empire》』（維基專輯條目，屬『第二』類宣稱，只有維基一源，且搜尋摘要也是同樣說法但來源頁未開）；〈The Deep〉小說化版本得 Lambda Literary Award、入圍 Hugo／Nebula／Locus（維基單源）；Pitchfork 稱其為第 30 名最佳 industrial 專輯、Metacritic 76、Billboard Heatseekers 第 2 名（維基單源）；Guardian 形容其聲響可作為屠宰場紀錄片的配樂（維基轉述）；Diggs 稱 Hamilton 讓許多人接觸到他們的音樂（Flood 單源）；Hutson 稱『Parliament filtered through our interest in horror』、影響來源為灣區饒舌與 Busta Rhymes、Twista（RBMA 單源）。Sub Pop 簽約屬履歷，不收。"
+  "notes": "事實庫無研究稿也無上線簡介，全從零查。實際搜尋 6 次：維基樂團條目、WebSearch（Hugo 與 Afrofuturism）、Red Bull Music Academy 2016 訪談、Flood 專訪、Hugo 官網 2017 頁、維基 Splendor & Misery；無失敗請求。poolAlbums 五張（CLPPNG、Dead Channel Sky、Splendor & Misery、There Existed an Addiction to Blood、Visions of Bodies Being Burned）皆為 Diggs／Hutson／Snipes 的 clipping.，無同名混卡。名稱寫法照卡池『clipping.』（含句點）。非獨立：facts 中凡第二源為維基者，維基條目本身引述訪談，與 RBMA、Flood 的內容互相印證但並非完全獨立。第二源開啟情況：Flood、RBMA、Hugo 官網、維基 Splendor & Misery 皆實際開啟；『雨果獎入圍』兩源為 Hugo 官網與維基。Hugo 官網頁的 WebFetch 摘要同時列出得獎者，但與本人所知不符且未能另行核對，本層不採信、facts 不寫得獎者；『未得獎』依據為：入圍名單含多部影集單集，而專輯並未列為得獎者的說法未經核實，故 facts 寫『入圍』並保留『未得獎』字樣之前，請寫作層只寫『入圍』二字。未收（單源）：樂團 2009 年在洛杉磯以混音專案起家、Diggs 2010 年加入、Diggs 與 Hutson 小學認識（維基單源，年份屬高風險）；『第二張入圍雨果獎的音樂專輯，前一張是 Paul Kantner 1970 年《Blows Against the Empire》』（維基專輯條目，屬『第二』類宣稱，只有維基一源，且搜尋摘要也是同樣說法但來源頁未開）；〈The Deep〉小說化版本得 Lambda Literary Award、入圍 Hugo／Nebula／Locus（維基單源）；Pitchfork 稱其為第 30 名最佳 industrial 專輯、Metacritic 76、Billboard Heatseekers 第 2 名（維基單源）；Guardian 形容其聲響可作為屠宰場紀錄片的配樂（維基轉述）；Diggs 稱 Hamilton 讓許多人接觸到他們的音樂（Flood 單源）；Hutson 稱『Parliament filtered through our interest in horror』、影響來源為灣區饒舌與 Busta Rhymes、Twista（RBMA 單源）。Sub Pop 簽約屬履歷，不收。 另：Diggs 與 Hutson 都在奧克蘭長大、因 Parliament-Funkadelic 走近（RBMA 單源，未進 facts）。"
  },
  {
   "key": "coldcut",
