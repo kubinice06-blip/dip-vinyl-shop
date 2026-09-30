@@ -98,3 +98,4 @@
 - ar-b-009 上架：40 位（搖滾），審稿修 1 處。
 - ar-b-010 補洞第 3 組：SBB 失敗請求 5 次，照實記，放行。pubIssue 1 條（SBB《Pamięć》「Niemen 伴奏到 1973 年底」，低信心）。Ryan Adams 2019 年只寫「《紐約時報》刊出報導」的中性事實；FBI 結案說法為匿名消息單源，不寫。
 - ar-b-010 補洞第 2 組：Rancid 失敗請求 5 次，照實記，放行。Pantera、Rammstein 特注照辦（Rammstein 只寫 2023 年 8 月柏林檢察署終止調查）。
+- ar-b-010 補洞第 4 組交件，補洞交齊（40 位）。Soda Stereo 搜尋 9 次，第 9 次內容未用，放行（先例）。交本機待核：Soda Stereo《Sueño Stereo》「Aphex Twin 與 The Orb 影響」、Spiritualized《Pure Phase》「編制縮到三人」「封面掛名 Spiritualized Electric Mainline」未能查證。
