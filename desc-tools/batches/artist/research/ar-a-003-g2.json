@@ -111,5 +111,133 @@
     "failedFetches": 3,
     "status": "full",
     "notes": "補查 5 次（維基 Marlena Shaw、WebSearch 訃聞、udiscovermusic、WebSearch 生平、Encyclopedia.com）；另有 3 次失敗（Washington Post 403、Rolling Stone 與 Deadline 皆被導向 tollbit 付費牆）。origin 生年、Basie 年份因來源打架不收；Basie 合作只有 Encyclopedia.com 與搜尋摘要（Washington Post 訃聞摘要稱她曾與 Count Basie 同台，未能開頁核對），故只寫『擔任樂團歌手』不寫年數。Blue Note『第一位女歌手』來自 Encyclopedia.com 與生平搜尋摘要，維基未載；Encyclopedia.com 寫 1970–76 年錄五張，與卡池 1972 年起的首張不符，facts 只寫『1970 年代錄了五張』。事實庫 research 皆為專輯層級，無生平。"
+  },
+  {
+    "key": "maze",
+    "name": "Maze",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Maze 是主唱兼作曲的 Frankie Beverly 在費城起家的團，前身叫 Raw Soul，1971 年遷到舊金山灣區。",
+            "src": "https://en.wikipedia.org/wiki/Maze_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Frankie Beverly 本名 Howard Stanley Beverly，1946 年生於費城，少年時在教會唱歌，也在各種 R&B 與 doo-wop 團體演唱。",
+            "src": "https://radiomilwaukee.org/discover-music/music-news/2024-09-11/frankie-beverly-maze-obituary",
+            "from": "new"
+          },
+          {
+            "f": "Beverly 在費城 East Germantown 長大，青少年時組過 doo-wop 團 The Blenders，1963 年成立 The Butlers，1967 年錄的〈If That's What You Wanted〉後來成為 Northern soul 的經典單曲。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Beverly",
+            "from": "new"
+          },
+          {
+            "f": "團在舊金山被 Marvin Gaye 找去當巡演的開場團，Gaye 也建議他們改掉 Raw Soul 這個團名，團名於是成為 Maze。",
+            "src": "https://en.wikipedia.org/wiki/Maze_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Beverly 2024 年 9 月 10 日過世，享年 77 歲。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Beverly",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Maze 是 R&B、靈魂與放克樂團，代表曲有〈Happy Feelin's〉〈Before I Let Go〉〈Joy and Pain〉〈Back in Stride〉〈Can't Get Over You〉。",
+            "src": "https://en.wikipedia.org/wiki/Maze_(band)",
+            "from": "new"
+          },
+          {
+            "f": "〈Before I Let Go〉（1981）由 Beverly 自己寫並製作，最初構想是一首關於矛盾心緒的抒情曲，樂團在排練時把它改成快板編曲。",
+            "src": "https://en.wikipedia.org/wiki/Before_I_Let_Go",
+            "from": "new"
+          },
+          {
+            "f": "Beverly 全身訂製白色的服裝（長褲、長袖襯衫加棒球帽）成為招牌，聽眾習慣穿白衣去看演唱會。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Beverly",
+            "from": "new"
+          },
+          {
+            "f": "Maze 在 1977 至 1993 年間有九張金唱片。",
+            "src": "https://en.wikipedia.org/wiki/Maze_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Before I Let Go〉在 Billboard R&B 單曲榜只到第 13 名，卻成為黑人社群聚會的固定曲目，維基稱它是「a staple of gatherings and parties」，Essence 雜誌「50 Greatest R&B Songs of All Time」排它第 5 名。",
+            "src": "https://en.wikipedia.org/wiki/Before_I_Let_Go",
+            "from": "new"
+          },
+          {
+            "f": "Radio Milwaukee 的訃聞稱〈Before I Let Go〉（1981）成為烤肉、街區派對與黃昏聚會的代名詞，是非官方的黑人國歌。",
+            "src": "https://radiomilwaukee.org/discover-music/music-news/2024-09-11/frankie-beverly-maze-obituary",
+            "from": "new"
+          },
+          {
+            "f": "Beyoncé 2019 年在《Homecoming: The Live Album》翻唱〈Before I Let Go〉（融入 DJ Jubilee 取樣與 Cameo〈Candy〉），該版本登上 Billboard Hot 100 第 65 名與 Hot R&B/Hip-Hop Songs 第 24 名；Beverly 說這是「他人生的高光之一」。",
+            "src": "https://en.wikipedia.org/wiki/Before_I_Let_Go",
+            "from": "new"
+          },
+          {
+            "f": "Beverly 2025 年 2 月 1 日身後獲 Recording Academy 特別貢獻獎（Special Merit Award，即葛萊美終身成就獎）；Frankie Beverly 與 Maze 五十多年職業生涯沒拿過競賽類的葛萊美，由他的兒子代領。",
+            "src": "https://www.grammy.com/news/2025-grammys-special-merit-awards-recipients/",
+            "from": "new"
+          },
+          {
+            "f": "Beverly 生前另獲 2006 年 Rhythm and Blues Foundation 先驅獎、2012 年 BET 終身成就獎、2024 年 3 月 NAACP 形象獎終身成就獎，2024 年 10 月身後入選 National Rhythm & Blues Hall of Fame。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Beverly",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Beverly 2023 年 7 月在費城辦完最後一場演出後退休，主唱由 Tony Lindsay 接手，樂團改名 Maze Honoring Frankie Beverly 繼續巡演。",
+            "src": "https://en.wikipedia.org/wiki/Maze_(band)",
+            "from": "new"
+          },
+          {
+            "f": "〈Joy and Pain〉1979 年單曲在英國排到第 57 名。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Beverly",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2025 年 2 月身後獲 Recording Academy 特別貢獻獎（葛萊美終身成就獎）。",
+        "src": "https://www.grammy.com/news/2025-grammys-special-merit-awards-recipients/",
+        "from": "new"
+      },
+      {
+        "f": "2024 年 10 月身後入選 National Rhythm & Blues Hall of Fame。",
+        "src": "https://en.wikipedia.org/wiki/Frankie_Beverly",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "樂團成軍與改名年份：Maze 條目寫 1970 年費城成立、1976 年 Gaye 建議改名；Radio Milwaukee 寫『1970 年改名 Maze』；Frankie Beverly 條目寫 1963 年 The Butlers 起、遷舊金山後叫 Raw Soul。三源不一致，facts 不寫成軍年與改名年。",
+      "Radio Milwaukee 寫『1960 年代成立 Raw Soul』，與維基（遷舊金山後才叫 Raw Soul）不同，不採。",
+      "上線簡介：卡池 Maze 六張專輯皆無已上線簡介，無衝突。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "樂團條，介紹 Maze 本身，Frankie Beverly 為領軍人物。poolAlbums 確認六張皆為 Maze／Maze featuring Frankie Beverly 專輯（1977 至 1993），無同名混卡。補查 6 次（維基 Maze、WebSearch 訃聞、Radio Milwaukee、維基 Frankie Beverly、WebSearch Grammy、維基 Before I Let Go）；Billboard 訃聞導向 tollbit 付費牆（失敗 1）。葛萊美特別貢獻獎的日期與『沒拿過競賽類葛萊美』來自 grammy.com 標題與搜尋結果摘要，未能開頁逐句核對；維基 Frankie Beverly 條也載此獎。電滑步（Electric Slide）一說只見訃聞搜尋摘要，未收。九張金唱片的年區間出自維基 Maze 條，Frankie 條僅載九張金唱片，已把年區間改掛 Maze 條。"
   }
 ]
