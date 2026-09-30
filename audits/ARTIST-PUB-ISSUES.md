@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 130 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 135 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -134,3 +134,8 @@
 | ar-b-009 | Love | Love | 3 月由 Elektra 發行——這家民謠大廠的第一張搖滾唱片 | 『第一張搖滾唱片』說法脆弱：英文維基專輯條目確實寫 first rock album issued on Elektra，但 Library of Congress 專文只說 Love 是『第一個簽給 Elektra 的搖滾團體』（簽約，非發行）；搜尋摘要（維基專輯條目）另指 Elektra 已先簽下 Butterfield Blues Band 作為第一個『rock』藝人，該團 1965 年已在 Elektra 出片。建議改成『Elektra 簽下的第一個搖滾團體』，或刪去序位宣稱。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Love-Forever-Changes.pdf |
 | ar-b-009 | Love | Love | 3 月由 Elektra 發行 | 發行月份兩源不一致：英文維基專輯條目寫 1966 年 3 月，LOC 專文寫 1966 年 4 月；主線可另查 Discogs 或 Elektra 目錄。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Love-Forever-Changes.pdf |
 | ar-b-010 | SBB | Pamięć | 那段伴奏生涯到 1973 年底結束 | 搜尋摘要（轉述維基 Grupa Niemen 段）寫合作期間是 1971 年 12 月到 1973 年 8 月；波蘭部落格只寫到 1973 年。兩者與『1973 年底』不一致，但摘要未開頁核實，屬低信心提示，建議店主本機查 Grupa Niemen 條目再定。 | https://en.wikipedia.org/wiki/SBB_(band) |
+| ar-b-011 | Warzone | Don't Forget the Struggle, Don't Forget the Streets | 簡介寫 1987 年的 12 吋全長 25 分 32 秒，1988 年的美國再壓只是封底多掛另一家廠牌的編號 | 維基專輯條目寫首發為 1988 年的 Fist Records，同年授權給 Caroline，1987 年 8 月錄音，全長 25:38；與簡介的 1987 年首發、25:32 不同。Fist 與 Caroline 的先後也與簡介『1988 再壓多掛另一家』的說法不同。MusicBrainz 為 1987 年發行，與維基專輯條目衝突，待店主以實體版或 Discogs 核對首發年份與長度。 | https://en.wikipedia.org/wiki/Don%27t_Forget_the_Struggle,_Don%27t_Forget_the_Streets |
+| ar-b-011 | ザ・スターリン | trash | 上線簡介寫 A 面十首錄於「Mod Studio」 | 事實庫 c70-a 引日文維基專輯條目寫「Mad Studio」，兩者拼法不同；本層未獨立查到第三個來源，請店主本機對照日文維基與盤面資料後決定。 | https://ja.wikipedia.org/wiki/Trash_(%E3%82%B6%E3%83%BB%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%AA%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0) |
+| ar-b-011 | 不失者 | 不失者 (Double Live) | 2026 年 3 月他獲頒威尼斯雙年展音樂部門的終身成就金獅獎 | 威尼斯雙年展官網與搜尋摘要記：金獅獎在第 70 屆 Biennale Musica（2026 年 10 月 10–24 日）期間頒發，頒獎日為 10 月 12 日；以今天（2026-09-30）看尚未頒獎，只是已宣布授獎。「獲頒」宜改為「獲宣布授予」或待頒獎後再改。宣布的月份本層未查到。 | https://www.labiennale.org/en/news/2026-lion-awards-music |
+| ar-b-011 | 不失者 | 不失者 (Double Live) | 他自七〇年代起的百餘種錄音 | 威尼斯雙年展與 Foundation for Contemporary Arts 都寫 50 年來錄音超過 200 張（兩源可能同出一稿）；日文維基舊寫法為 100 張以上。數字已過時，宜改「兩百餘張」。 | https://www.foundationforcontemporaryarts.org/recipients/keiji-haino/ |
+| ar-b-011 | 夾子電動大樂隊 | 夾子電動大樂隊 | 主唱應蔚民（小應）是濁水溪公社前鼓手 | 本層開頁的搖滾客專訪與中文維基〈應蔚民〉只寫他「先後參與濁水溪公社與霹靂鳥」，沒有寫擔任鼓手；搜尋摘要另說霹靂鳥四號由蔡海恩、張明章與應蔚民組成，也沒有樂器資料。鼓手之說本層查不到來源，宜改成「參與過濁水溪公社」。 | https://roxyrocker.com/2015/06/17/%E3%80%90%E6%90%96%E6%BB%BE%E5%AE%A2-%E5%B0%81%E9%9D%A2%E4%BA%BA%E7%89%A9%E3%80%91%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A-%E5%B0%8F%E6%87%89%EF%BC%88%E6%87%89/ |
