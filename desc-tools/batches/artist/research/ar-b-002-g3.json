@@ -466,5 +466,114 @@
     "failedFetches": 0,
     "status": "full",
     "notes": "補查 8 次：維基 David Murray、WebSearch（獎項）、Encyclopedia.com、維基 World Saxophone Quartet、維基 Fo Deuk Revue、WebSearch（WSQ 與紐約）、Bandcamp Daily 專輯導覽、Gothamist（第一個 URL 被重導、第二個 tollbit URL 取得內文，前者未計）。失敗請求 0。身分確認：poolAlbums 為《Children》1985、《Fo Deuk Revue》1997、《Flowers for Albert》1976，皆為薩克斯風手 David Murray 作品，無同名混卡。單源、未收 facts：媽媽是教會鋼琴手（Encyclopedia.com 單源）；十幾歲時在土風靈魂團吹次中音（Encyclopedia.com 單源）；1989 年葛萊美最佳爵士器樂團體演出，得獎作《Blues for Coltrane: A Tribute to John Coltrane》（維基單源，搜尋摘要另有 Fandom 系維基重述，非獨立；得獎主體是與 McCoy Tyner 等人的合作專輯，未核對署名，若寫須註明非 Murray 個人）；80 年代中期向 Ben Webster 與 Coleman Hawkins 致敬的專輯、Jim Macnie 稱他的演奏有藍調與深度的抒情（Gothamist 單源）；Bandcamp Daily 稱他是八〇年代爵士『single most important musician』、『There is no one who has ever sounded or played like him』、能在前衛與傳統兩端同時運作、在 Sweet Basil 長期帶團有 Henry Threadgill 與 Butch Morris 同台（Bandcamp 單源）；World Saxophone Quartet 融合自由爵士、節奏藍調、放克與南非爵士（維基 WSQ 與搜尋摘要，同站）；WSQ 活躍到 2016 年（維基單源）；Murray 自己說在 WSQ 與 Hemphill 共事讓他看到『how he constructed things』（搜尋摘要，未開頁）；《Fo Deuk Revue》1996 年 6 月 3–4 日錄於塞內加爾 Studio 2000、1997 年加拿大廠牌 Justin Time 發行，參與者有 Doudou N'Diaye Rose、Positive Black Soul 成員與 Amiri Baraka（維基專輯頁單源）；維基提到 2012 年榮譽學位與 2024 年《Francesca》被 NYT 選為年度爵士專輯第 2（單源）。維基的『Village Voice Musician of the Decade（1980）』年份與 Gothamist 一致（1980 年），但『十年最佳』寫在 1980 年的語意不明，寫作層寫『1980 年 Village Voice 稱他為 Musician of the Decade』即可，勿推演為『八〇年代最佳』。待查、未證實（超出 8 次上限，不動用）：上線簡介 Flowers for Albert 稱它是『首張唱片』，但 Murray 1976 年另有 Adelphi 的《Low Class Conspiracy》，可能在它之前或同期，建議主線在本機核對後再決定是否列 pubIssues。"
+  },
+  {
+    "key": "derek bailey",
+    "name": "Derek Bailey",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Derek Bailey 1930 年生於英格蘭 Sheffield。",
+            "src": "https://en.wikipedia.org/wiki/Derek_Bailey_(guitarist)",
+            "src2": "https://pleasekillme.com/guitarist-derek-bailey/",
+            "from": "new"
+          },
+          {
+            "f": "他早年是商業音樂圈的職業吉他手，替電視節目與綜藝樂團伴奏（例如喜劇二人組 Morecambe & Wise 的節目、《Opportunity Knocks》）。",
+            "src": "https://www.thewire.co.uk/in-writing/essays/derek-bailey-remembered",
+            "src2": "http://www.samadhisound.com/derekbailey/obituary/obituary_derek_bailey_212006_by_david_toop.html",
+            "from": "new"
+          },
+          {
+            "f": "1963 年他在 Sheffield 與鼓手 Tony Oxley、貝斯手 Gavin Bryars 組成 Joseph Holbrooke Trio，自由即興的手法從這個三重奏一步步成形。",
+            "src": "https://en.wikipedia.org/wiki/Derek_Bailey_(guitarist)",
+            "src2": "http://www.samadhisound.com/derekbailey/obituary/obituary_derek_bailey_212006_by_david_toop.html",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bailey 把自己的做法稱為「非慣用語彙」（non-idiomatic）的即興，不依附爵士或任何既有風格。",
+            "src": "https://en.wikipedia.org/wiki/Derek_Bailey_(guitarist)",
+            "src2": "https://www.thewire.co.uk/in-writing/essays/derek-bailey-remembered",
+            "from": "new"
+          },
+          {
+            "f": "他 1970 年與 Evan Parker、Tony Oxley 等人共同創辦 Incus Records，這是英國第一家由樂手自己經營的獨立廠牌，專門發行自由即興。",
+            "src": "https://en.wikipedia.org/wiki/Incus_Records",
+            "src2": "https://bombmagazine.org/articles/2006/04/01/editors-tribute-derek-bailey/",
+            "from": "bank"
+          },
+          {
+            "f": "他發起的 Company 是編制不斷更換的即興系列，樂手來自歐洲、美洲、非洲與日本，事前不排練也不必彼此熟悉。",
+            "src": "https://bombmagazine.org/articles/2006/04/01/editors-tribute-derek-bailey/",
+            "src2": "http://www.samadhisound.com/derekbailey/obituary/obituary_derek_bailey_212006_by_david_toop.html",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fred Frith、Eugene Chadbourne、John Zorn 等後輩音樂人受 Bailey 影響或公開承認他的開創性。",
+            "src": "https://bombmagazine.org/articles/2006/04/01/editors-tribute-derek-bailey/",
+            "src2": "https://pleasekillme.com/guitarist-derek-bailey/",
+            "from": "new"
+          },
+          {
+            "f": "他 1980 年出版《Improvisation: Its Nature and Practice in Music》，把自己的即興放進世界各地即興傳統的脈絡來談。",
+            "src": "https://en.wikipedia.org/wiki/Derek_Bailey_(guitarist)",
+            "src2": "https://bombmagazine.org/articles/2006/04/01/editors-tribute-derek-bailey/",
+            "from": "new"
+          },
+          {
+            "f": "Bailey 2005 年 12 月 25 日因運動神經元疾病過世，享年 75 歲；《The Wire》2006 年 2 月號刊出訃聞專題，收錄多位音樂人的悼念。",
+            "src": "https://www.thewire.co.uk/in-writing/essays/derek-bailey-remembered",
+            "src2": "http://www.samadhisound.com/derekbailey/obituary/obituary_derek_bailey_212006_by_david_toop.html",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1963 年 Joseph Holbrooke Trio 成立；1970 年 Incus Records 成立。",
+            "src": "https://en.wikipedia.org/wiki/Derek_Bailey_(guitarist)",
+            "src2": "http://www.samadhisound.com/derekbailey/obituary/obituary_derek_bailey_212006_by_david_toop.html",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1970 年與 Evan Parker、Tony Oxley 等人創辦 Incus Records，是英國第一家樂手自營的獨立廠牌。",
+        "src": "https://en.wikipedia.org/wiki/Incus_Records",
+        "src2": "https://bombmagazine.org/articles/2006/04/01/editors-tribute-derek-bailey/",
+        "from": "bank"
+      },
+      {
+        "f": "1980 年出版《Improvisation: Its Nature and Practice in Music》。",
+        "src": "https://en.wikipedia.org/wiki/Derek_Bailey_(guitarist)",
+        "src2": "https://bombmagazine.org/articles/2006/04/01/editors-tribute-derek-bailey/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫與上線簡介關於 Incus（1970 年由 Bailey、Oxley、Parker、Michael Walters 創辦）與 Solo Guitar 為 Incus 第二號、Ballads 2002 年 Tzadik 發行，與本位查到的 Incus 1970 年成立一致，無衝突。",
+      "Incus 創辦人：維基 Incus 條目寫 Bailey、Oxley、Parker、Walters 四人；PleaseKillMe 只寫與 Parker 共創、Toop 訃聞寫 Parker 與 Oxley，Bomb 寫與 Oxley；facts 寫『與 Evan Parker、Tony Oxley 等人』。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "補查 7 次：維基 Derek Bailey (guitarist)、WebSearch（訃聞）、The Wire 追思、PleaseKillMe、WebSearch（衛報／獨立報，未找到）、David Toop 訃聞（samadhisound 轉載）、BOMB 編輯悼文。失敗請求 0。身分確認：poolAlbums 為《Aida》1980、《Solo Guitar Volume 1》1971、《Ballads》2002，皆為吉他手 Derek Bailey，無同名混卡。Incus 一條 from bank：事實庫 src 為維基 Incus Records（創辦人四人、1970 年），第二源 Bomb 只支持『英國第一家樂手自營獨立廠牌』與『與 Tony Oxley 共創』。單源、未收 facts：生日 1930 年 1 月 29 日與逝世地倫敦（維基單源；PleaseKillMe 只有年份）；他是三代音樂家、隨叔叔 George Wing 與 C. H. C. Biltcliffe 學琴（維基單源，搜尋摘要另有 George Wing 與 John Duarte，兩者不一致）；1950 至 60 年代初在倫敦做錄音室與夜總會、管弦樂演出、曾參與女王御前演出（PleaseKillMe 單源）；1960 年代中期研究 Webern，稱自己的做法為 instant composition，稱自由即興『offers more playing per cubic second than any other type of music making』（PleaseKillMe 單源）；Toop 稱他也受 Webern、Satie 與 Bill Evans、Lennie Tristano 影響（Toop 單源）；Marc Ribot 稱他是自由即興的創始者之一，或依人而異是『the』創始者（Bomb 單源、具名引述），並稱他是後輩心中『gold standard of musical integrity』、自由即興技術後來成為音樂學院課程（Bomb 單源）；George Lewis 稱其著作證明實驗音樂也能吸引廣大讀者、Alan Licht 談其『低調的決心』（The Wire 單源）；Henry Kaiser 與 Thurston Moore 也承認受影響（PleaseKillMe 單源）；Company 1976 至 1994 年、Music Improvisation Company 1968 至 1971 年、Spontaneous Music Ensemble 1966 年、Iskra 1903（維基單源）；著作 1992 年被改編成電視系列（維基單源）；晚年腕隧道症候群與運動神經元疾病並調整演奏方式（維基單源）。origin 第 2 條『替電視節目與綜藝樂團伴奏』：Wire 寫電視 showband 與 Morecambe & Wise、Toop 寫 Opportunity Knocks，兩源指涉不同節目但都屬電視商業伴奏，寫作層寫到『電視節目與綜藝伴奏』即可。Toop 訃聞轉載於 samadhisound.com，原刊物待查（標題與作者為 David Toop、2006 年 1 月 2 日），Wire 與 Toop 為兩份獨立文字。"
   }
 ]
