@@ -77,3 +77,14 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 高橋達也と東京ユニオン（thin）照寫作層判斷具名 Swing Journal 爵士唱片大獎：sound 格 none、這個獎就是全篇份量，依 writer-base「例外二」。
 - 秋吉敏子「Berklee 第一位日本學生」保留：NEA 單源，但寫作層反查無反例、屬廣為人知的經歷。
 - 上架：40 位，審稿共修 6 處（含回修 ar-a-002 一篇）。
+
+### ar-a-004（審稿中）
+
+- 寫作第 1 組（20 位）審畢，修 5 處：
+  1. Gerry Mulligan「《Birth of the Cool》十一首裡有六首出自他的筆」：conflicts 記維基三首、官方傳記另一說，數字不一致 → 改寫成兩源一致的「九人團用了他、Gil Evans 與 John Lewis 的編曲，錄音他全程參與」。
+  2. Harold Land「因祖母病危離團」：單一部落格 → 加「據說」。
+  3. Mal Waldron「日本最暢銷的爵士藝人之一」：只有 Encyclopedia.com → 降為「1970 年起多次赴日，在日本尤其受歡迎」。
+  4. Sade「Sade Adu 成為第一位拿下葛萊美最佳新人的奈及利亞出生藝人」：**主詞錯**（最佳新人是樂團 Sade 得的），序數又只有單源 → 改「樂團也拿下葛萊美最佳新人」。
+  5. （寫作層自己已擋 Reuben Wilson「協助開創 soul jazz」：1968 年才錄 Blue Note，soul jazz 早就有了——反查規則見效。）
+- 主線親驗：Oliver Nelson《The Blues and the Abstract Truth》2026-05-14 入選國家錄音登錄（loc.gov、CBS News）；Pat Metheny《Bright Size Life》2020 年度入選（loc.gov PDF）。
+- 補洞範本這批起加「獎項主詞要寫對」（ar-a-005 g2 起）。
