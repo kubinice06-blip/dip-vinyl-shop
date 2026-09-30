@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 12 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 24 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -15,4 +15,16 @@
 | ar-a-002 | Archie Shepp | The Magic of Ju-Ju | Impulse! 同年發行四軌（錄音為 1967 年 4 月 26 日） | 維基條目寫 1968 年 5 月由 Impulse! 發行，出處是 1968 年 6 月 1 日《Billboard》；錄音與發行相隔一年，不是同年。 | https://en.wikipedia.org/wiki/The_Magic_of_Ju-Ju |
 | ar-a-002 | Bud Powell | The Amazing Bud Powell, Volume One | 1949 年 8 月 8 日的五重奏有才十九歲的 Sonny Rollins | Sonny Rollins 生於 1930 年 9 月 7 日，1949 年 8 月 8 日錄音時是 18 歲，尚未滿 19。 | https://www.britannica.com/biography/Sonny-Rollins |
 | ar-a-002 | Bud Powell | Bouncing with Bud | 與年僅 16 歲的 Niels-Henning Ørsted Pedersen 合作（1962 年 4 月 26 日錄音） | Pedersen 生於 1946 年 5 月 27 日，1962 年 4 月錄音時是 15 歲；他 1961 年除夕首次登上 Montmartre 時是 15 歲，1962 年初成為駐場節奏組，第一份工作就是替 Powell 伴奏。 | https://www.jazz.com/encyclopedia/rsted-pedersen-niels-henning |
+| ar-a-002 | Gil Evans | The Gil Evans Orchestra Plays the Music of Jimi Hendrix | 1974 年在 RCA 錄音室錄製 | 搜尋結果的頁面標題（jonasmjacobs.substack.com 第 014 篇）標示錄音為 1974 年 6 月與 1975 年 4 月兩梯次；本層未逐頁核對，建議店主在本機以 Discogs 或 jazzdisco 確認是否要補『與 1975 年』。 | https://jonasmjacobs.substack.com/p/014-gil-evans-plays-the-music-of |
+| ar-a-002 | 笠井紀美子 | Butterfly | 上線簡介：笠井紀美子與 Herbie Hancock 1979 年為 CBS/Sony 合作的錄音 | 若『1979 年』指錄音年，兩源衝突：英文維基寫 1979 年 10 月錄音，日文搜尋摘要寫 1978 年 10 月錄音、1979 年發行；只寫作『1979 年發行』最穩。需本機以 ja.wikipedia バタフライ條目或 Discogs 核對。 | https://en.wikipedia.org/wiki/Butterfly_(Kimiko_Kasai_album) |
+| ar-a-002 | Bobbi Humphrey | Satin Doll | 長笛手 Bobbi Humphrey 的第四張 Blue Note 專輯 | 英文維基稱是第四張錄音室專輯（前作是 1973 年錄音的《Live at Montreux》）；Blue Note 官方頁稱她在廠牌出過六張，含現場盤則這張是第五張 Blue Note 專輯。建議改成『第四張錄音室專輯』或『第五張 Blue Note 專輯』。 | https://en.wikipedia.org/wiki/Satin_Doll_(Bobbi_Humphrey_album) |
+| ar-a-002 | Bobbi Humphrey | Fancy Dancer | 1975 年…的第五張 Blue Note 專輯 | 同上：依維基是第五張錄音室專輯，若含 Live at Montreux 則是第六張 Blue Note 專輯；『第五張 Blue Note 專輯』的說法與官方六張的算法對不上。 | https://www.bluenote.com/artist/bobbi-humphrey/ |
+| ar-a-002 | Booker Ervin | The In Between | 這是他在 Blue Note 唯一發行的領銜盤 | 《The In Between》確是他生前在 Blue Note 唯一發行的領銜盤，但 1968 年 6 月 24 日 Van Gelder 場次的《Tex Book Tenor》後來由 Blue Note 發行（1976 年收在《Back from the Gig》，2005 年單獨 CD）；寫成『生前唯一』較安全，或改成『他生前在 Blue Note 發行的唯一一張領銜盤』。 | https://en.wikipedia.org/wiki/Tex_Book_Tenor |
 | ar-a-003 | Carmen McRae | I Am Music | 是她在 Blue Note 的唯一一張 | 她 1976 年還有《Can't Hide Love》，MusicBrainz 與 Discogs 均記為 Blue Note BN-LA635-G，同樣是卡池裡的專輯；改成『她在 Blue Note 的第一張』。 | https://api.discogs.com/releases/16483368 |
+| ar-a-003 | Kenny Drew | New Faces - New Sounds, Introducing the Kenny Drew Trio | 他二十五歲掛頭牌的第一張 | 生日 1928 年 8 月 28 日，錄音 1953 年 4 月 16 日時 24 歲；改為『二十四歲』或去掉歲數。 | https://en.wikipedia.org/wiki/Kenny_Drew |
+| ar-a-003 | Kenny Drew | Undercurrent | 他移居哥本哈根前在美國的最後錄音 | 他 1961 年底先到巴黎、1964 年才遷居哥本哈根，中間還有歐洲巡演；『在美國的最後錄音』本層無來源可證，建議改為『他為 Blue Note 錄的最後一張』（該處有簡介自述來源），或核對他 1961 年後是否還有在美錄音。 | https://tedpanken.wordpress.com/2017/08/28/for-the-89th-birthday-anniversary-of-pianist-kenny-drew-1928-1993-my-liner-note-for-the-reissue-of-the-xanadu-album-home-is-where-the-soul-is/ |
+| ar-a-003 | 原信夫とシャープス・アンド・フラッツ | Operation Glenn Miller | 樂團 1950 年在橫濱的舞廳起家，移到品川的美軍俱樂部駐演之後才改了團名 | 與《Sharps & Flats In Newport》簡介「1951 年 9 月以十人編制起家」矛盾；日本哥倫比亞官方與日經訃聞都寫樂團 1951 年成立，1950 年是原信夫加入橫濱舞廳樂團之年（日文維基）。同一支樂團兩張簡介的起家年應統一，建議改寫成『1951 年成立』或避開年份。 | https://columbia.jp/artist-info/haranobuo/prof.html |
+| ar-a-003 | 日野皓正 | Alone, Alone and Alone | 1969 年才離團專心帶自己的團；同年他也與菊地雅章錄下 Hino-Kikuchi Quintet | 「同年」若指 1969 年有誤：英文維基與日文維基皆記 Hino-Kikuchi Quintet 為 1968 年專輯；建議改為 1968 年。 | https://en.wikipedia.org/wiki/Terumasa_Hino |
+| ar-a-003 | 日野皓正 | Feelin' Good | 1964 年他加入白木秀雄的五重奏 | 日文維基作 1964，英文維基作 1965 加入、1969 離團；兩源不一致，建議刪去年份或再查一手來源。 | https://en.wikipedia.org/wiki/Terumasa_Hino |
+| ar-a-003 | 秋吉敏子 | Her Trio Her Quartet | 三重奏那五軌（Pettiford 與 Haynes），另外三軌加 Mussulli 成四重奏 | 英文維基的分配相反：四重奏是五軌（1、2、4、5、7）、三重奏是三軌（3、6、8）；MusicBrainz 與維基不一致，需要盤背或 Storyville 一手來源確認後再改簡介。 | https://en.wikipedia.org/wiki/Toshiko_%E2%80%93_Her_Trio,_Her_Quartet |
+| ar-a-003 | 高橋達也と東京ユニオン | Black Pearl | 1980 年樂團赴加州演出，……同年也第二次登上 Montreux Jazz Festival | 日文維基寫 1978、1980 兩度出演 Montreux；英文維基寫 1980 是赴加州並登上 Monterey（蒙特雷）爵士節，未提 1980 蒙特勒。兩源不一致，簡介『第二次 Montreux』需以一手來源確認。 | https://en.wikipedia.org/wiki/Tokyo_Union |

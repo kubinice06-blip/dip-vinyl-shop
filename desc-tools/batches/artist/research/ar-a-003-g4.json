@@ -734,5 +734,522 @@
     "failedFetches": 0,
     "status": "full",
     "notes": "事實庫無研究稿也無上線簡介，三格全靠補查。卡池 5 張（2002《Christian Scott》、2012《Christian aTunde Adjuah》、2015、2017、2019）皆同一人，藝人欄名稱不同是改名所致，無同名混卡。2012 年開始使用 aTunde Adjuah 只見維基單一來源；Herb Alpert 年份 2020 只見 chiefadjuah.com（維基未載年份）；Doris Duke 2023 與 Grand Griot 2023 只見維基。這三項皆非高風險類，但審稿時視為單源。未收：後輩點名與跨地域現象查無有出處的說法；Guardian／NPR 類獨立樂評未取得。"
+  },
+  {
+    "key": "clifford brown",
+    "name": "Clifford Brown",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Clifford Brown 1930 年 10 月 30 日生於德拉瓦州 Wilmington，1956 年 6 月 26 日死於車禍，得年 25 歲。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "from": "bank"
+          },
+          {
+            "f": "Britannica 也記他 1930 年 10 月 30 日生於 Wilmington，1956 年 6 月 26 日在賓州過世，享年 25 歲。",
+            "src": "https://www.britannica.com/biography/Clifford-Brown",
+            "from": "new"
+          },
+          {
+            "f": "父親組織兒子們唱四重唱，家裡有一支小號讓他著迷；約 10 歲在學校開始吹小號，13 歲時父親替他買了樂器，並安排 Robert \"Boysie\" Lowery 私人授課。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "from": "new"
+          },
+          {
+            "f": "他先讀 Delaware State，再轉到 Maryland State College，加入偏爵士的校樂隊。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "from": "new"
+          },
+          {
+            "f": "1950 年 6 月他在一場演出後的車禍中受傷住院，住院期間 Dizzy Gillespie 去探望，勸他走音樂這條路。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "from": "bank"
+          },
+          {
+            "f": "Fats Navarro 是他最重要的影響；早期他與節奏藍調樂團領班 Chris Powell 錄音，之後與 Tadd Dameron、Lionel Hampton、J. J. Johnson 合作，並在 1953 年加入 Art Blakey 的團，在 Birdland 現場錄音。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Britannica 說他以抒情、清亮的音色與優雅的技巧見稱，有明亮的高音、細緻的節奏處理與大量裝飾音，即興的旋律常流成長樂句。",
+            "src": "https://www.britannica.com/biography/Clifford-Brown",
+            "from": "new"
+          },
+          {
+            "f": "1954 年年中他與鼓手 Max Roach 成立五重奏，被稱為早期 hard bop 的典範；維基寫〈Joy Spring〉〈Daahoud〉〈Sandu〉都成為爵士標準曲。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "from": "new"
+          },
+          {
+            "f": "《Clifford Brown & Max Roach》1954 年 8 月錄於好萊塢 Capitol 錄音室，陣容為 Harold Land、Richie Powell、George Morrow、Brown 與 Roach；《紐約時報》稱這個團是「或許是 Brown 1956 年車禍前的決定性 bop 團」。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown_%26_Max_Roach",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Britannica 寫：「Brown was the most influential trumpeter of his generation」，影響了 Lee Morgan 與 Booker Little 等許多小號手。",
+            "src": "https://www.britannica.com/biography/Clifford-Brown",
+            "from": "new"
+          },
+          {
+            "f": "UDiscover 記載他影響了 Freddie Hubbard、Lee Morgan 與 Wynton Marsalis：Hubbard 在 Jordan Conservatory 花三年研究他的音樂，Morgan 則直接向他上過課。",
+            "src": "https://www.udiscovermusic.com/stories/clifford-brown-legacy-feature/",
+            "from": "new"
+          },
+          {
+            "f": "Quincy Jones 說，百年後回顧 20 世紀，人們會把 Miles Davis、Charlie Parker、Clifford Brown、Ella Fitzgerald 與 Dizzy Gillespie 看成爵士的莫札特、蕭邦、巴赫與貝多芬。",
+            "src": "https://www.udiscovermusic.com/stories/clifford-brown-legacy-feature/",
+            "from": "new"
+          },
+          {
+            "f": "他 1956 年 6 月 26 日在賓州高速公路上，坐在 Richie Powell 的妻子 Nancy 開的車裡，車在濕滑路面撞上橋墩、滾下 75 英尺的斜坡，三人當場身亡；Powell 是他五重奏的鋼琴手。",
+            "src": "https://www.udiscovermusic.com/stories/clifford-brown-legacy-feature/",
+            "from": "new"
+          },
+          {
+            "f": "Benny Golson 1957 年寫下悼念曲〈I Remember Clifford〉；Golson 回憶噩耗傳到 Apollo 劇院時，一位鋼琴手衝上舞台大喊。",
+            "src": "https://www.udiscovermusic.com/stories/clifford-brown-legacy-feature/",
+            "from": "new"
+          },
+          {
+            "f": "他 1954 年獲 DownBeat 樂評票選的年度新星，1972 年入選 DownBeat 爵士名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "from": "bank"
+          },
+          {
+            "f": "他的家鄉 Wilmington 每年舉辦 Clifford Brown Festival 紀念他。",
+            "src": "https://www.udiscovermusic.com/stories/clifford-brown-legacy-feature/",
+            "from": "new"
+          },
+          {
+            "f": "《Clifford Brown & Max Roach》1999 年入選葛萊美名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown_%26_Max_Roach",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的錄音生涯約四年，從 1952 年 3 月到 1956 年 6 月。",
+            "src": "https://www.udiscovermusic.com/stories/clifford-brown-legacy-feature/",
+            "from": "new"
+          },
+          {
+            "f": "1954 年年中與 Max Roach 成立 Clifford Brown/Max Roach 五重奏。",
+            "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1954 年獲 DownBeat 樂評票選年度新星。",
+        "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+        "from": "bank"
+      },
+      {
+        "f": "1972 年入選 DownBeat 爵士名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Clifford_Brown",
+        "from": "bank"
+      },
+      {
+        "f": "《Clifford Brown & Max Roach》1999 年入選葛萊美名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Clifford_Brown_%26_Max_Roach",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫的專輯研究稿有生卒、1950 車禍、DownBeat 獎項（c138-a 條目），標 bank；其餘補查。卡池 5 張（1953–1960）皆為小號手 Clifford Brown，無同名混卡。生卒年有維基與 Britannica 兩源；1956 年車禍細節有 UDiscover、維基（同車三人）與 Britannica 交叉。Britannica 未提 1950 車禍，該條只有維基單源（來自事實庫）。「Clifford Brown Jazz Festival」細節（1988 年前身、東岸最大免費爵士節）只見搜尋摘要，未收。上線簡介五張與補查無衝突。"
+  },
+  {
+    "key": "curtis fuller",
+    "name": "Curtis Fuller",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1932 年 12 月 15 日生於底特律，父母都來自外地（父親是牙買加移民、在福特工廠做工，母親從亞特蘭大北上），雙親早逝，他在耶穌會辦的孤兒院長大。",
+            "src": "https://en.wikipedia.org/wiki/Curtis_Fuller",
+            "from": "new"
+          },
+          {
+            "f": "WGCU 轉載的 NPR 訃聞同樣記他 1932 年 12 月 15 日生於底特律，父母是牙買加裔且早逝，他在孤兒院長大；他 2021 年 5 月 8 日在底特律過世，享年 88 歲。",
+            "src": "https://www.wgcu.org/2021-05-10/curtis-fuller-leading-trombonist-of-jazzs-detroit-wave-dies-at-86",
+            "from": "new"
+          },
+          {
+            "f": "孤兒院裡的一位修女帶他去看 Illinois Jacquet 的樂團演出，J.J. Johnson 的長號讓他覺得「I think I can do this」，他 16 歲開始改吹長號。",
+            "src": "https://www.arts.gov/honors/jazz/curtis-fuller",
+            "from": "new"
+          },
+          {
+            "f": "他在底特律公立學校的同學包括 Paul Chambers、Donald Byrd、Tommy Flanagan、Thad Jones 與 Milt Jackson；長號師事 J.J. Johnson 與 Elmer James。",
+            "src": "https://en.wikipedia.org/wiki/Curtis_Fuller",
+            "from": "new"
+          },
+          {
+            "f": "離開孤兒院後他進入底特律的爵士圈，接觸 Kenny Burrell 與 Yusef Lateef，並在 Blue Bird 俱樂部與 Barry Harris 等人一起磨練。",
+            "src": "https://www.arts.gov/honors/jazz/curtis-fuller",
+            "from": "new"
+          },
+          {
+            "f": "1953 至 1955 年他服兵役，在陸軍裡與 Cannonball Adderley、Paul Chambers 同團；1957 年搬到紐約。",
+            "src": "https://en.wikipedia.org/wiki/Curtis_Fuller",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他專攻 hard bop 與 soul jazz 長號，J.J. Johnson 是他的示範與老師，他自己說是先模仿 Johnson，之後才慢慢長出個人特色，追求溫暖與有效的表達。",
+            "src": "https://www.arts.gov/honors/jazz/curtis-fuller",
+            "from": "new"
+          },
+          {
+            "f": "學者 Mark Stryker 形容他的演奏根植於藍調、搖擺與 bebop 的基本功，把快速的技巧與帶靈魂的表達結合在一起。",
+            "src": "https://www.wgcu.org/2021-05-10/curtis-fuller-leading-trombonist-of-jazzs-detroit-wave-dies-at-86",
+            "from": "new"
+          },
+          {
+            "f": "他是 Art Farmer–Benny Golson Jazztet 的第一位長號手，1959 年 Jazztet 成軍時是創團成員。",
+            "src": "https://www.arts.gov/honors/jazz/curtis-fuller",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1961 年他成為 Art Blakey 的 Jazz Messengers 的「第六位成員」，待到 1965 年；同團有 Wayne Shorter 與 Freddie Hubbard。",
+            "src": "https://en.wikipedia.org/wiki/Curtis_Fuller",
+            "from": "new"
+          },
+          {
+            "f": "他參與 John Coltrane 的《Blue Train》，Coltrane 自己把這張視為個人最愛的錄音之一。",
+            "src": "https://www.wgcu.org/2021-05-10/curtis-fuller-leading-trombonist-of-jazzs-detroit-wave-dies-at-86",
+            "from": "new"
+          },
+          {
+            "f": "他 2007 年獲 NEA Jazz Masters 獎，NEA 肯定他對 hard bop 發展的貢獻，以及在哈佛與杜克等校數十年的教學指導。",
+            "src": "https://www.arts.gov/honors/jazz/curtis-fuller",
+            "from": "new"
+          },
+          {
+            "f": "NPR 訃聞把他放在「底特律浪潮」裡：一批底特律樂手大舉遷到紐約，包括 Donald Byrd 與 Barry Harris，改寫了 hard bop。",
+            "src": "https://www.wgcu.org/2021-05-10/curtis-fuller-leading-trombonist-of-jazzs-detroit-wave-dies-at-86",
+            "from": "new"
+          },
+          {
+            "f": "他 1999 年獲 Berklee 音樂學院榮譽博士。",
+            "src": "https://en.wikipedia.org/wiki/Curtis_Fuller",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1957 年搬到紐約後，先加入 Yusef Lateef 的五重奏，之後錄音於 Blue Note、Prestige、Impulse!、Savoy 與 Epic。",
+            "src": "https://en.wikipedia.org/wiki/Curtis_Fuller",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2007 年獲 NEA Jazz Masters 獎。",
+        "src": "https://www.arts.gov/honors/jazz/curtis-fuller",
+        "from": "new"
+      },
+      {
+        "f": "1961 至 1965 年是 Art Blakey Jazz Messengers 的長號手。",
+        "src": "https://en.wikipedia.org/wiki/Curtis_Fuller",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生年：NEA 頁面抓取結果讀為 1934 年，維基、WGCU 轉載的 NPR 訃聞與訃聞標題（1932–2021、享年 88 歲）皆為 1932，採 1932；孤兒院時間長短（維基「數年」、NEA「約十年」）與吹過什麼樂器（小提琴、薩克斯風、上低音號說法不一）也不一致，facts 不寫。"
+    ],
+    "pubIssues": [],
+    "searches": 4,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫研究稿只有《Bone & Bari》《Volume 3》兩張專輯層級材料（錄音與版本細節），無身世地位，三格靠補查。卡池 5 張（1957–1980）皆為長號手 Curtis Fuller，無同名混卡。失敗請求：Britannica（404）、NPR 原站（503）、JazzTimes（403）；NPR 內容取 WGCU 轉載版。Hard bop 首席長號手一類評價只見搜尋摘要，未收。1957 年搬紐約、陸軍服役年份、Berklee 榮譽博士 1999 只見維基單源；生卒有維基、WGCU/NPR 兩源。上線簡介四張與補查無衝突。"
+  },
+  {
+    "key": "dinah washington",
+    "name": "Dinah Washington",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Ruth Lee Jones，1924 年 8 月 29 日生於阿拉巴馬州 Tuscaloosa；童年搬到芝加哥，在 St. Luke's Baptist 教會彈鋼琴、指揮詩班，從福音音樂起步。",
+            "src": "https://en.wikipedia.org/wiki/Dinah_Washington",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 也記她本名 Ruth Lee Jones、1924 年 8 月 29 日生於 Tuscaloosa，成長於芝加哥南區；1939 年在 Regal Theater 的業餘歌唱比賽奪冠，並隨 Sallie Martin 的福音團巡演。",
+            "src": "https://www.britannica.com/biography/Dinah-Washington",
+            "from": "new"
+          },
+          {
+            "f": "1940 年代初她在芝加哥夜總會演唱，藝名 Dinah Washington 是夜總會老闆 Joe Sherman 建議的；隨後被 Lionel Hampton 聘為樂團女主唱，1942 年 12 月以〈Evil Gal Blues〉在 Keynote 廠牌錄音出道。",
+            "src": "https://en.wikipedia.org/wiki/Dinah_Washington",
+            "from": "new"
+          },
+          {
+            "f": "她 1946 年離開 Hampton 樂團，展開個人生涯。",
+            "src": "https://www.britannica.com/biography/Dinah-Washington",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她跨越爵士、藍調、節奏藍調與傳統流行，Britannica 形容她有「excellent voice control」與受福音影響的唱腔。",
+            "src": "https://www.britannica.com/biography/Dinah-Washington",
+            "from": "new"
+          },
+          {
+            "f": "Quincy Jones 說她的聲音「像生命的管線」，「她唱的每一條旋律都成了她的」。",
+            "src": "https://www.britannica.com/biography/Dinah-Washington",
+            "from": "new"
+          },
+          {
+            "f": "Rock and Roll Hall of Fame 引 Quincy Jones 的說法：她能把旋律握在手裡，像捧著一顆蛋，敲開、煎熟、讓它滋滋作響，再重新組合；Natalie Cole 的推介文稱她的嗓音「intricate, penetrating」。",
+            "src": "https://rockhall.com/inductees/dinah-washington/",
+            "from": "new"
+          },
+          {
+            "f": "她自稱「Queen of the Blues」，Britannica 稱這個綽號來自她對女性搖滾與節奏藍調歌手的深遠影響。",
+            "src": "https://www.britannica.com/biography/Dinah-Washington",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她 1993 年以「Early Influence」入選 Rock and Roll Hall of Fame，由 Natalie Cole 引介。",
+            "src": "https://rockhall.com/inductees/dinah-washington/",
+            "from": "new"
+          },
+          {
+            "f": "維基寫 1948 至 1955 年間她有 27 首 R&B 前十名單曲；1959 年的〈What a Diff'rence a Day Makes〉登上美國流行榜第 4 名，並拿下葛萊美獎。",
+            "src": "https://en.wikipedia.org/wiki/Dinah_Washington",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 也記〈What a Diff'rence a Day Makes〉讓她 1959 年拿下葛萊美獎。",
+            "src": "https://www.britannica.com/biography/Dinah-Washington",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 指她影響了 Etta James、Ruth Brown 與 Amy Winehouse，Winehouse 稱她是「my goddess」。",
+            "src": "https://www.britannica.com/biography/Dinah-Washington",
+            "from": "new"
+          },
+          {
+            "f": "Aretha Franklin 1964 年發行向她致敬的專輯《Unforgettable: A Tribute to Dinah Washington》，Franklin 自年輕就仰慕她。",
+            "src": "https://www.allmusic.com/album/unforgettable-a-tribute-to-dinah-washington-mw0000123999",
+            "from": "new"
+          },
+          {
+            "f": "家鄉 Tuscaloosa 2008 年設 Dinah Washington Avenue，2013 年成立 Dinah Washington Cultural Arts Center。",
+            "src": "https://en.wikipedia.org/wiki/Dinah_Washington",
+            "from": "new"
+          },
+          {
+            "f": "她 1963 年 12 月 14 日因處方巴比妥類藥物（治失眠與減重）意外過量過世，年僅 39 歲；Britannica 記她死於底特律。",
+            "src": "https://en.wikipedia.org/wiki/Dinah_Washington",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她 1946 年單飛，1959 年〈What a Diff'rence a Day Makes〉跨界成為流行榜熱門。",
+            "src": "https://www.britannica.com/biography/Dinah-Washington",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年入選 Rock and Roll Hall of Fame（Early Influence 類別）。",
+        "src": "https://rockhall.com/inductees/dinah-washington/",
+        "from": "new"
+      },
+      {
+        "f": "1959 年〈What a Diff'rence a Day Makes〉登上美國流行榜第 4 名並拿下葛萊美獎。",
+        "src": "https://en.wikipedia.org/wiki/Dinah_Washington",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Hampton 樂團年份：維基記 1942 年 12 月錄音出道，Britannica 記 1943–1946 年在團，兩源不一致，facts 只寫 1942 年 12 月錄音出道與 1946 年單飛。"
+    ],
+    "pubIssues": [],
+    "searches": 4,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫無研究稿，只有《Dinah Sings Bessie Smith》《Dinah Jams》兩張上線簡介，三格全靠補查。卡池 5 張（1954–1961）皆為 Dinah Washington 本人，無同名混卡。生卒有維基與 Britannica 兩源；Rock Hall 1993 有 rockhall.com 與維基兩源。Aretha 致敬專輯只見 AllMusic 頁面標題與搜尋摘要（未開全文）；Tuscaloosa 兩處紀念只見維基。未核對：搜尋摘要稱《Unforgettable: Aretha》1964 年發行、Aretha 21 歲。上線簡介兩張與補查無衝突。"
+  },
+  {
+    "key": "etta james",
+    "name": "Etta James",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Jamesetta Hawkins，1938 年 1 月 25 日生於洛杉磯；母親 Dorothy Hawkins 生她時才 14 歲，生父身分不明。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 也記她 1938 年 1 月 25 日生於洛杉磯、2012 年 1 月 20 日在加州 Riverside 過世，享年 73 歲；維基記她死於白血病與失智症。",
+            "src": "https://www.britannica.com/biography/Etta-James",
+            "from": "new"
+          },
+          {
+            "f": "她 5 歲起在洛杉磯南中部 St. Paul Baptist 教會的 Echoes of Eden 詩班，向音樂總監 James Earle Hines 學唱歌。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "她 12 歲時被母親帶到舊金山，組了 doo-wop 團 Creolettes；14 歲時被樂團領班 Johnny Otis 發掘，替她們簽下 Modern Records，並替她取了藝名 Etta James。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 記 Otis 發掘她們時她 14 歲，團名改為 Peaches，1954 年的〈Roll with Me Henry〉因暗示性歌詞引發爭議，後來改詞重發。",
+            "src": "https://www.britannica.com/biography/Etta-James",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她的音域是女低音，維基稱她深沉而帶泥土味的嗓音被認為彌合了節奏藍調與搖滾樂之間的縫隙。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "1960 年簽入 Chess Records 後，她的風格從 1950 年代的 doo-wop 與節奏藍調，走向傳統流行與爵士標準曲。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 稱她是 Chess 的第一位主要女歌手，也是最早以後來成為靈魂樂的方式演唱的女性之一，嗓音隨年月變得更粗糙、更深。",
+            "src": "https://www.britannica.com/biography/Etta-James",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她 1993 年入選 Rock and Roll Hall of Fame，由 k.d. lang 引介；名人堂文章寫道：如果搖滾樂扎根於青少年的熱情、叛逆、躁動與性，那 Etta James 骨子裡就是搖滾歌手，並稱她是「the matriarch of the blues」。",
+            "src": "https://rockhall.com/inductees/etta-james/",
+            "from": "new"
+          },
+          {
+            "f": "她 2001 年入選 Blues Hall of Fame，2003 年獲葛萊美終身成就獎；2008 年《Rolling Stone》「史上最偉大 100 位歌手」榜她排第 22 名。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "維基指出她影響了 Janis Joplin、Christina Aguilera、Adele 與 Beyoncé；Beyoncé 在 2008 年電影《Cadillac Records》裡飾演她。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "〈At Last〉在 R&B 榜最高第 2 名，但她的版本成了這首歌最廣為人知的版本。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "她的喪禮上由 Stevie Wonder 與 Christina Aguilera 獻唱致意。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 記她一生拿下四座葛萊美獎（含 2003 年終身成就獎）。",
+            "src": "https://www.britannica.com/biography/Etta-James",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她從 1960 年代中期起深受海洛因成癮所苦，多次被捕與進戒治機構。",
+            "src": "https://en.wikipedia.org/wiki/Etta_James",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 記她 1988 年以專輯《Seven Year Itch》復出。",
+            "src": "https://www.britannica.com/biography/Etta-James",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年入選 Rock and Roll Hall of Fame。",
+        "src": "https://rockhall.com/inductees/etta-james/",
+        "from": "new"
+      },
+      {
+        "f": "2003 年獲葛萊美終身成就獎。",
+        "src": "https://en.wikipedia.org/wiki/Etta_James",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "復出前的空白：維基寫約十年沒有錄音，Britannica 寫七年空白後於 1988 年復出；兩源不一致，facts 只寫 1988 年復出、不寫空白年數。"
+    ],
+    "pubIssues": [],
+    "searches": 4,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫無研究稿，只有《Rocks the House》《Deep in the Night》《Let's Roll》三張上線簡介，三格全靠補查。卡池 5 張（1960–2003）皆為 Etta James 本人，無同名混卡。生卒有維基與 Britannica 兩源；Rock Hall 1993 有 rockhall.com 與維基兩源。Rolling Stone 第 22 名與 Blues Hall of Fame 2001 只見維基；後輩點名只見維基單源（摘要抓取，來源不明）。Britannica 摘要寫 Otis 替樂團改名 Peaches，維基寫 Otis 賜藝名 Etta James，兩說並列。搜尋摘要提到喪禮 2012 年 1 月 28 日在 City of Refuge Church、Al Sharpton 主持，只見 legacy.com 摘要，未收。上線簡介三張與補查無衝突。"
   }
 ]
