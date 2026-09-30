@@ -42,7 +42,12 @@ const rosterFile = fs.readdirSync('batch-progress/artist-intro').filter(f => /^r
 const roster = new Map(JSON.parse(fs.readFileSync(path.join('batch-progress/artist-intro', rosterFile), 'utf8')).entries.map(e => [e.key, e]))
 
 // 寫作層分組時會是 <批名>-out-1.json、-out-2.json，一併收（2026-09-29 v3 起）
-const files = fs.readdirSync(OUT_SRC).filter(f => /-out(?:-\d+)?\.json$/.test(f)).sort()
+const allFiles = fs.readdirSync(OUT_SRC).filter(f => /-out(?:-\d+)?\.json$/.test(f)).sort()
+// 量產批（ar-a-001 這類）只收 progress.json 標 published 的：審稿中或寫作中的成品不得進分片
+// （2026-09-30 ar-a-003 審稿時，未審完的 -out-2 被一起建進分片，因此加這道閘）。試做批與別名檔不受限。
+const PROG = 'desc-tools/batches/artist/progress.json'
+const published = new Set(fs.existsSync(PROG) ? JSON.parse(fs.readFileSync(PROG, 'utf8')).batches.filter(b => b.state === 'published').map(b => b.batch) : [])
+const files = allFiles.filter(f => { const m = f.match(/^(ar-[a-d]-\d{3})-out/); return !m || published.has(m[1]) })
 const errors = []
 const entries = new Map()
 for (const f of files) {

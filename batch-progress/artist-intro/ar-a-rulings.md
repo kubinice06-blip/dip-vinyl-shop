@@ -69,3 +69,5 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
      同篇「以中音薩克斯風手身分進爵士圈…後來改名為ニューハード」主詞錯置（改名的是樂團）→ 改寫。
 - 寫作層這批自己擋掉 5 條「第一」宣稱（Marlena Shaw、Nat King Cole、George Russell、Armstrong、Komeda），反查到反例的有三條，規則見效。
 - 主線親驗：Sade 名列搖滾名人堂 2026 年入選名單（NPR、rockhall.com），典禮 11 月 14 日；寫作層只能寫「入選」。
+- **管線漏洞修補**：上一筆提交重建分片時，把審稿中的 ar-a-003（含還在寫的 -out-2）一起建進 `data/artist-intros/`（144 位）。
+  `build-artist-intros.mjs` 與 `artist-alias.mjs` 改為量產批只收 progress.json 標 `published` 的，重建回 114 位。未審稿的內容只在 1 筆提交裡短暫存在，未合併、未上線。

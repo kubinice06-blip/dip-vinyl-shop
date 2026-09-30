@@ -24,7 +24,7 @@ description: 跑 dip vinyl 藝人介紹產線（點藝人名跳出的小視窗�
 5. **審稿**：`node qa-artist.mjs out <批>` 到 0 處，再 `node artist-review.mjs <批>` 逐位對事實。
    **主線逐位審，不外包。** 重點：⚑ 標的數字、單一來源寫成定論、「一生」用在在世者、共同得獎寫成獨得、
    拆夥後的事寫成原因、notes／conflicts 標「不收」的值、同名混卡、轉述句、口語。改動直接改 output 檔，記進 rulings。
-6. **上架**：`node artist-alias.mjs` → `node ../scripts/build-artist-intros.mjs`（cwd 回 repo 根）→ progress 標 `published` →
+6. **上架**：先把 progress 標 `published`（build 與 alias 只收已上架的量產批），再 `node artist-alias.mjs` → `node ../scripts/build-artist-intros.mjs`（cwd 回 repo 根）→ progress 標 `published` →
    逐一 `git add` 本批檔案（**絕不 `git add -A`**）→ commit → push 到本工作分支。
 
 ## 接力節奏（併行上限四支）
