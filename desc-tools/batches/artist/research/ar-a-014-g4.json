@@ -898,5 +898,134 @@
     "failedFetches": 1,
     "status": "full",
     "notes": "事實庫有《圓缺》《Pluto》兩份研究稿與五張上線簡介（專輯層級），本層補的是人的層面。8 次：中文維基鄭宜農、WebSearch（第 34 屆金曲）、中央社、小人物 UNBIGGIE、人物誌 PERSONA、WebSearch（夏天的尾巴與金馬）、台灣電影網人物頁、WebSearch（第 37 屆入圍）；另失敗 1 次（Bella.tw 403）。兩源皆實際開頁讀到：中文維基、中央社、UNBIGGIE、人物誌、台灣電影網；中文維基為 fetch 工具摘要。第 37 屆入圍一條與《圓缺》一條的來源只有事實庫的中文維基《圓缺》條目（bank），搜尋摘要另顯示該屆最佳台語女歌手由吳蓓雅獲得、鄭宜農在第三輪評審僅以些微差距落選（政府新聞稿與 Yahoo 頁未開，不收）。未收（單源）：中文維基寫她 1987 年 3 月 19 日生（台灣電影網只寫 1987 年，日期單源，f 不寫）；2013 年組猛虎巧克力樂團擔任主唱（中文維基單源）；2019 年第 30 屆金曲獎入圍最佳作曲人（中文維基單源）；2009 年第 46 屆金馬獎以〈眼淚〉入圍最佳電影原創歌曲（台灣電影網單源）；2016 年 1 月公開談論性傾向、成為樂壇 LGBTQ+ 代表人物（中文維基單源，屬個人生活，未收）；母親是駐唱歌手與名字由來（人物誌單源）；19 歲受加拿大樂團 Stars 啟發、借吉他給 Stars 女主唱、在西門町電影公園首次表演（UNBIGGIE 單源）；她在大學讀中文系（UNBIGGIE 單源）；《水逆》第 34 屆入圍 6 項（最佳台語女歌手、最佳作詞、最佳作曲、年度專輯、年度歌曲、最佳台語專輯，人物誌單源，其餘為搜尋摘要）；得獎感言致敬 MeToo 勇者（中央社單源，另有風傳媒與關鍵評論網搜尋摘要）；人物誌稱歌詞是『文學性的台語』、含蓄隱喻（單源）。《圓缺》的『第五張專輯』『第二張全台語』出自事實庫維基條目，與中文維基本頁的『2025 年推出第五張個人專輯《圓缺》，再次採用全台語創作』一致，故 sound 格的 bank 條目實際得到本次開頁的部分印證，但仍以 bank 標示。人名照原文。同名混卡檢查：poolAlbums 五張皆為台灣音樂人鄭宜農（2011–2025），無混卡。"
+  },
+  {
+    "key": "fela kuti",
+    "name": "Fela Kuti",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fela Kuti 1938 年 10 月 15 日生於奈及利亞的 Abeokuta；母親 Funmilayo Ransome-Kuti 是女權與勞工運動者。",
+            "src": "https://en.wikipedia.org/wiki/Fela_Kuti",
+            "src2": "https://www.britannica.com/biography/Fela-Kuti",
+            "from": "new"
+          },
+          {
+            "f": "他年輕時到倫敦的 Trinity College 學音樂。",
+            "src": "https://en.wikipedia.org/wiki/Fela_Kuti",
+            "src2": "https://www.britannica.com/biography/Fela-Kuti",
+            "from": "new"
+          },
+          {
+            "f": "1969 年的美國行讓他接觸黑人權力運動，Britannica 提到馬爾科姆 X 與黑豹黨的影響；回奈及利亞後，他的音樂轉向社會與政治議題。",
+            "src": "https://en.wikipedia.org/wiki/Fela_Kuti",
+            "src2": "https://www.britannica.com/biography/Fela-Kuti",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他創出 Afrobeat，把爵士、放克、highlife 與約魯巴等西非傳統的節奏與唱誦融成一體。",
+            "src": "https://en.wikipedia.org/wiki/Fela_Kuti",
+            "src2": "https://www.rockhall.com/inductees/fela-kuti",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 2026 年入選搖滾名人堂。",
+            "src": "https://www.britannica.com/biography/Fela-Kuti",
+            "src2": "https://www.rockhall.com/inductees/fela-kuti",
+            "from": "new"
+          },
+          {
+            "f": "1977 年 2 月 18 日，約 1000 名士兵闖進 Kalakuta 公社，毆打居民、逮捕 Fela，並把他的母親從二樓窗戶扔出去；她受傷昏迷，1978 年 4 月 13 日因傷過世。",
+            "src": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti",
+            "src2": "https://felakuti.com/story/1977",
+            "from": "new"
+          },
+          {
+            "f": "Fela 把母親的棺木送到拉哥斯軍政府所在地 Dodan Barracks，當作羞辱政府之舉，並寫下〈Coffin for Head of State〉。",
+            "src": "https://en.wikipedia.org/wiki/Fela_Kuti",
+            "src2": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他在拉哥斯自己的夜總會旁設立公社，宣布為獨立的「Kalakuta 共和國」；維基記為 1970 年。",
+            "src": "https://en.wikipedia.org/wiki/Fela_Kuti",
+            "src2": "https://www.britannica.com/biography/Fela-Kuti",
+            "from": "new"
+          },
+          {
+            "f": "1984 年他以貨幣走私的罪名入獄。",
+            "src": "https://en.wikipedia.org/wiki/Fela_Kuti",
+            "src2": "https://www.britannica.com/biography/Fela-Kuti",
+            "from": "new"
+          },
+          {
+            "f": "1997 年 8 月 2 日 Fela 因愛滋病相關併發症過世。",
+            "src": "https://www.britannica.com/biography/Fela-Kuti",
+            "src2": "https://felakuti.com/story/1997",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1977 年 2 月 18 日 Kalakuta 公社遭約 1000 名士兵突襲，他的母親受傷、1978 年過世。",
+        "src": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti",
+        "src2": "https://felakuti.com/story/1977",
+        "from": "new"
+      },
+      {
+        "f": "1984 年因貨幣走私罪名入獄。",
+        "src": "https://en.wikipedia.org/wiki/Fela_Kuti",
+        "src2": "https://www.britannica.com/biography/Fela-Kuti",
+        "from": "new"
+      },
+      {
+        "f": "2026 年入選搖滾名人堂。",
+        "src": "https://www.britannica.com/biography/Fela-Kuti",
+        "src2": "https://www.rockhall.com/inductees/fela-kuti",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "上線簡介《Sorrow Tears and Blood》寫 Funmilayo『昏迷約八週後過世』；維基 Funmilayo 條目與 felakuti.com 1978 年條目都寫她 1978 年 4 月 13 日因傷過世（距 1977 年 2 月 18 日突襲逾一年），Britannica 也寫『隔年』過世。採來源，不採簡介的『約八週』，記入 pubIssues。",
+      "上線簡介《Coffin for Head of State》寫母親『78 歲』；felakuti.com 寫突襲時她 77 歲，維基 Funmilayo 條目寫 1978 年過世時 77 歲，兩源年紀算法不同且都不是 78；facts 不寫年紀。簡介另寫『Fela 隨後…把母親的空棺抬到 Dodan Barracks』：維基兩條目只寫他把棺木送到軍政府所在地、未說明棺內是否有遺體，且時間點在她過世的 1978 年；facts 不寫『空棺』。",
+      "倫敦求學年份：維基寫 1958 年、Britannica 寫 1959 年；兩源不一致，facts 不寫年份。Kalakuta 成立年：維基寫 1970 年、Britannica 未寫年份，facts 註明『維基記為 1970 年』。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Sorrow Tears and Blood",
+        "claim": "母親、女權運動者 Funmilayo Ransome-Kuti 被從二樓拋下，昏迷約八週後過世",
+        "problem": "維基 Funmilayo 條目與 felakuti.com 官方年表都寫她 1978 年 4 月 13 日因傷過世，距 1977 年 2 月 18 日的突襲逾一年，『約八週』沒有來源支持。",
+        "src": "https://felakuti.com/story/1978"
+      },
+      {
+        "album": "Coffin for Head of State",
+        "claim": "他 78 歲的母親 Funmilayo Ransome-Kuti 被從二樓拋下，傷重不治；Fela 隨後率眾把母親的空棺抬到 Dodan Barracks",
+        "problem": "felakuti.com 官方年表寫突襲時她 77 歲，維基寫她 1978 年過世時 77 歲，『78 歲』兩源都對不上；維基兩條目寫棺木送到 Dodan Barracks 發生在她過世之後的 1978 年 4 月，且都沒說是空棺；『隨後』與『空棺』兩處需改。",
+        "src": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti"
+      }
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫沒有研究稿，只有六張上線簡介（專輯層級），三格全靠補查。8 次：英文維基 Fela Kuti、Britannica、維基 Funmilayo Ransome-Kuti、WebSearch（突襲與棺木）、felakuti.com 1977 年條目、felakuti.com 1978 年條目、搖滾名人堂官網、felakuti.com 1997 年條目。兩源皆實際開頁讀到；維基兩條目同站不同條目、非獨立；felakuti.com 是遺產管理方官方站，與維基／Britannica 並用時註明非第三方。名人堂官方（可具名單源）：搖滾名人堂 Fela Kuti 頁寫『Inducted: 2026』，類別 Musical Influence；介紹句『a revolutionary voice who spoke out against injustice through his innovative music – provoking political change while infusing jazz, West African, and soul music to pioneer the Afrobeat genre』；並稱他影響了 Salif Keita、Ginger Baker、Burna Boy，他的影響來源為 James Brown、Miles Davis、Parliament-Funkadelic；寫作層可寫『搖滾名人堂稱…』。網址 https://www.rockhall.com/inductees/fela-kuti 。未收（單源）：葬禮規模——felakuti.com 1997 年條目寫約 15 萬人聚集在 Tafawa Balewa Square、超過一百萬人沿路送行、20 公里路程耗時七小時、翌日葬於 Kalakuta 院內（官方站單源，未找到第二個開頁來源，達搜尋上限，建議主線補查後再寫成故事的結尾）；1978 年 2 月 20 日與 27 名女子舉行約魯巴傳統婚禮（felakuti.com 單源）；1984 年入獄關了 20 個月（Britannica 單源）與 Amnesty International 稱他為 prisoner of conscience（維基單源）；2026 年獲葛萊美終身成就獎、首位獲此獎的非洲藝人（維基單源）；Britannica 稱他是首位入選搖滾名人堂的非洲表演者（Britannica 單源，且屬『第一位』類宣稱，未收）；Rolling Stone 200 大歌手第 188 名（維基單源）；2009 年百老匯音樂劇《Fela!》獲 11 項東尼獎提名（維基單源）；Tony Allen 是定義 Afrobeat 聲音的關鍵鼓手（維基單源，簡介引 Fela 的話『沒有 Tony Allen 就沒有 Afrobeat』亦未核）；樂團名稱 Nigeria 70／Africa 70／Egypt 80（Britannica 與維基各寫一部分，未整理成 facts）；1969 年在洛杉磯經由 Sandra Izsadore 接觸黑人權力運動（維基單源）；〈Zombie〉（1977）批評軍隊、其後遭突襲（維基單源；搜尋摘要另稱〈Zombie〉惹怒時任元首 Obasanjo，未開頁）；Vintage News 搜尋摘要稱 Fela 送去的是母親棺木的複製品（replica），未開頁，與維基未說明的部分並存，故 f 欄只寫『棺木』；父親 Israel Oludotun Ransome-Kuti 為聖公會牧師與奈及利亞教師聯合會首任會長（維基單源）；Fela 與 Kalakuta 遭多次臨檢（簡介提及，本層未核）；死因方面 felakuti.com 未明寫死因，維基與 Britannica 寫愛滋病相關併發症，f 採兩源。人名照原文；Fela 全名 Fela Aníkúlápó Kútì。同名混卡檢查：poolAlbums 十一張皆為 Fela Kuti（含 Africa 70 與 Egypt 80 署名的作品），無混卡。"
   }
 ]
