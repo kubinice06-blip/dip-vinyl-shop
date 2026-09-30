@@ -8,3 +8,4 @@
 - 補洞第 2 組：Gregory Porter 搜尋 9 次，第 9 次內容已撤，放行（先例）；George Benson 失敗請求 5 次，照實記。pubIssue 1 條（Jimmy Witherspoon 隨 McShann 出道年份）。Jamie Cullum 的 BRIT「得獎」實為入圍，不採。Jaco Pastorius 遇襲日期兩說，只寫 9 月中旬。
 - 補洞第 3 組：pubIssue 1 條（Julie London《About the Blues》1957 年稱 Bobby Troup「丈夫」，兩人 1959 年才結婚）。Lonnie Smith 確認為風琴手 Dr. Lonnie Smith。卡池年份提醒（代理單方說法，未複核）：Max Roach《We Insist!》1960 錄音、1961 年 1 月發行；Lester Young 兩張 1997 為再版年。
 - 寫作第 1 組（20 位）審畢，修 3 處：Gregory Porter 在世，「兩度拿下葛萊美」加固定年份（2014、2017）；Jaco Pastorius 受傷的是美式足球不是橄欖球；Hailu Mergia「最早赴美的現代衣索比亞樂團」加「之一」。Franco 以「Franco」指人、樂團名寫全名一次，照准。Jaco 用滿 280（人生故事），Hailu 268，照准。
+- 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 2 條（Pino Daniele《Nero a metà》書名典故、《Pino Daniele》銷量數字皆查無來源）。Mulatu Astatke《Sketches of Ethiopia》「首張國際發行」存疑，未列 pubIssue。

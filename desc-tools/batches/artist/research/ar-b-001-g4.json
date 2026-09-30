@@ -1054,5 +1054,106 @@
     "status": "thin",
     "notes": "事實庫 research 只有《After Hours》與《Comin' On Home》的目錄與榜位資料，人物三格皆補查。搜尋 8 次：維基 Richard Holmes (organist)、WebSearch（生平）、fromthevaults 部落格、維基《Soul Message》、維基《Groove》、WebSearch（限定媒體，另有一次因網域限制報錯未計）、Blue Note 藝人頁、Blue Note McGriff 藝人頁；失敗 4 次（WKCR 403、JazzTimes 兩篇各 403、一次限定網域的搜尋請求報錯）。地位格判 thin：查到的『共識』僅有〈Misty〉走紅與 organ battle，未查到名人堂、權威票選或後輩點名的雙源證據。fromthevaults 部落格與 Blue Note 藝人頁的傳記文字疑轉載或改寫自 AllMusic 傳記，兩源可能非獨立，寫作層用語宜保守。單源未收進 facts：(0) fromthevaults 寫 1960 年 Les McCann 在匹茲堡與紐澤西小俱樂部發現他（單源，facts 只寫『經 McCann 引薦』）；(1) fromthevaults 與搜尋摘要寫他原本是貝斯手，改彈 Hammond 風琴、沒受過正式鋼琴訓練；(2) fromthevaults 與搜尋摘要引 AllMusic 式文字：他的低音線是所有爵士風琴手裡『最快、最有頓點、最有脈動』的，靠腳踏板控制，兩處是同一段文字，不算兩源；(3) Blue Note 稱他是『unapologetically swinging Jimmy Smith admirer』，能從最粗礪的藍調轉到最抒情的敘事曲；(4) fromthevaults 引風琴手 Johnny Hammond Smith 認為他的技巧與音樂性被低估；(5) Blue Note 的 Jimmy McGriff 藝人頁寫 McGriff 在 Camden 的俱樂部看過 Holmes 表演後受啟發彈風琴，後來向 Holmes 學琴，Holmes 是他的『mentor and longtime friend』（該頁也沒有寫 organ battle）——這條影響最有價值，但只有單一頁面，建議主線再找第二源；(6) 維基寫 1991 年 Chicago Blues Festival 與 Jimmy Witherspoon 同台是最後演出之一（維基與部落格皆寫，但與本人定位無關，未收）；(7) 維基《Soul Message》引 AllMusic 4.5 星『混合 boogaloo 節奏與情感豐富的獨奏』；(8) 上線簡介《Soul Message》寫『左手踏出低音線』，查到的來源說是腳踏板，簡介可能混用了左手與踏板，本次未逐條核對，未列入 pubIssues。無同名混卡（維基 Richard Holmes 消歧義頁的其他人與本人無關，卡池四張皆為此人）。",
     "pubIssues": []
+  },
+  {
+    "key": "ronnie laws",
+    "name": "Ronnie Laws",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Ronnie Laws 1950 年生於德州休士頓，出身音樂家庭：哥哥是長笛手 Hubert Laws，姊姊 Eloise 與妹妹 Debra 也都是歌手。",
+            "src": "https://en.wikipedia.org/wiki/Ronnie_Laws",
+            "src2": "https://www.arts.gov/honors/jazz/hubert-laws",
+            "from": "new"
+          },
+          {
+            "f": "他 1970 年代初到洛杉磯，1972 年加入 Earth, Wind & Fire，吹薩克斯風與長笛，參與《Last Days and Time》，約 18 個月後離團單飛。",
+            "src": "https://en.wikipedia.org/wiki/Ronnie_Laws",
+            "src2": "https://wbssmedia.com/artists/detail/2425",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他以薩克斯風為主，走爵士融合與放克路線，後來常被歸入 smooth jazz。",
+            "src": "https://en.wikipedia.org/wiki/Ronnie_Laws",
+            "src2": "https://somethingelsereviews.com/2008/08/03/one-track-mind-ronnie-laws-always-there-1975/",
+            "from": "new"
+          },
+          {
+            "f": "〈Always There〉是他 1975 年首張個人專輯《Pressure Sensitive》裡的器樂曲，由他與 William Jeffrey 共同寫成。",
+            "src": "https://en.wikipedia.org/wiki/Always_There_(Side_Effect_song)",
+            "src2": "https://somethingelsereviews.com/2008/08/03/one-track-mind-ronnie-laws-always-there-1975/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Always There〉後來被 Side Effect（1976 年）與 Incognito（1991 年）翻唱，Incognito 與 Jocelyn Brown 的版本成為更廣為人知的版本。",
+            "src": "https://en.wikipedia.org/wiki/Always_There_(Side_Effect_song)",
+            "src2": "https://somethingelsereviews.com/2008/08/03/one-track-mind-ronnie-laws-always-there-1975/",
+            "from": "new"
+          },
+          {
+            "f": "1976 年《Fever》在 Billboard 爵士專輯榜最高第 3 名。",
+            "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-09-11.pdf",
+            "from": "bank"
+          },
+          {
+            "f": "1980 年《Every Generation》在 Billboard 爵士專輯榜 3 月 8 日登上第 1 名，Soul 專輯榜最高第 6 名。",
+            "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-03-08.pdf",
+            "from": "bank"
+          },
+          {
+            "f": "1977 年的《Friends & Strangers》獲 RIAA 金唱片認證。",
+            "src": "https://en.wikipedia.org/wiki/Friends_%26_Strangers",
+            "src2": "https://en.wikipedia.org/wiki/Ronnie_Laws",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1975 年他以《Pressure Sensitive》在 Blue Note 出道個人專輯。",
+            "src": "https://en.wikipedia.org/wiki/Ronnie_Laws",
+            "src2": "https://somethingelsereviews.com/2008/08/03/one-track-mind-ronnie-laws-always-there-1975/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1975 年以《Pressure Sensitive》在 Blue Note 出道。",
+        "src": "https://en.wikipedia.org/wiki/Ronnie_Laws",
+        "src2": "https://somethingelsereviews.com/2008/08/03/one-track-mind-ronnie-laws-always-there-1975/",
+        "from": "new"
+      },
+      {
+        "f": "1980 年《Every Generation》登上 Billboard 爵士專輯榜第 1 名。",
+        "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-03-08.pdf",
+        "from": "bank"
+      }
+    ],
+    "conflicts": [
+      "《Every Generation》榜位：WBSS 部落格（轉自維基）寫『1980 年《Every Generation》登上第 4 名』，Billboard 原刊顯示 Soul LPs 最高第 6 名、爵士榜第 1 名；採 Billboard 原刊。維基另寫單曲〈Every Generation〉是他最高的 R&B 單曲第 12 名，本次未查單曲榜，不收。",
+      "上線簡介《Fever》『爵士榜第 3 名、Soul 榜第 13』與事實庫 Billboard 原刊一致，無衝突。",
+      "上線簡介《Friends and Strangers》寫『是他唯一取得 RIAA 金唱片認證的錄音』，本次只確認《Friends & Strangers》是金唱片，『唯一』未查證。"
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "thin",
+    "notes": "事實庫 research 只有《Fever》與《Every Generation》的榜位／目錄資料（Billboard、MusicBrainz），人物三格補查。搜尋 8 次：維基 Ronnie Laws、WebSearch（生平與 Always There）、WBSS Media 傳記、NEA Hubert Laws 頁、WebSearch（Always There 翻唱）、維基 Always There (Side Effect song)、Something Else! 專文、維基 Friends & Strangers；失敗 3 次（維基 Pressure Sensitive 404、維基 Always There (Ronnie Laws song) 404、維基 Friends and Strangers (Ronnie Laws album) 404）。地位格判 thin：Laws 只有榜位、金唱片與〈Always There〉被翻唱可查，沒有名人堂、權威票選或後輩點名的雙源證據。WBSS Media 的傳記文字與英文維基高度重合，疑為轉載，origin 第 2 條的兩源『非獨立』；《Friends & Strangers》金唱片一條的兩源同屬維基，非獨立。單源未收進 facts：(1) 維基與 WBSS 寫 Boney James 與 Norman Brown 稱他為影響（WBSS 疑轉自維基，單源）；(2) NEA Hubert Laws 頁寫 Hubert 說 Ronnie 的第一張唱片是『Blue Note 有史以來賣最多的專輯』（家人自述，搜尋摘要另處也有，但不是獨立第三方，不收）；(3) 維基寫 Pressure Sensitive 在 Soul 專輯榜第 25 名、他 1971 年在洛杉磯與 Hugh Masekela 同台、就讀 Stephen F. Austin 州立大學兩年、11 歲開始吹薩克斯風（維基與 WBSS 同文）；(4) Something Else! 寫他受 Eddie Harris 啟發、早年替 Quincy Jones、Ramsey Lewis、Earth, Wind & Fire 吹奏，〈Always There〉以兩和弦為底，用 clavinet、節奏吉他與電鋼琴，Jeff Lorber 也翻唱過（單源）；(5) 維基 Side Effect 條目寫 Side Effect 版在美國舞曲榜前五、Incognito 與 Jocelyn Brown 版 1991 年英國第 6 名、荷蘭與盧森堡第 2 名（單條目，不收）；(6) 維基 Side Effect 條目寫 Wayne Henderson 找 Paul B. Allen III 填詞，使 Allen 成為共同作者。無同名混卡。",
+    "pubIssues": []
   }
 ]
