@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 37 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 46 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -41,3 +41,12 @@
 | ar-a-005 | Johnnie Taylor | Raw Blues | 少年時在 Highway Q.C.'s 唱福音、與 Sam Cooke 同團 | Cooke 是 Highway Q.C.'s 的前成員，Taylor 後來加入並在 1955 年錄音時任主唱，兩人並非同時同團；Taylor 是 1957 年接替 Cooke 在 Soul Stirrers 的位置。 | https://encyclopediaofarkansas.net/entries/johnnie-harrison-taylor-637/ |
 | ar-a-006 | Chic | C'est Chic | 〈Le Freak〉在 1978 年 10 月同時攻上 Hot 100、R&B 與舞曲榜冠軍 | Hot 100 第 1 名首度出現在 1978 年 12 月 9 日當週（Stereogum、WYSO 等記載）；10 月只能說是單曲發行後不久，不能寫成 10 月同時登頂 Hot 100。維基《C'est Chic》條目原句即是這種寫法，屬維基內部不一致。R&B 與舞曲榜登頂日期未逐項查證。 | https://stereogum.com/2069711/the-number-ones-chics-le-freak/columns/the-number-ones |
 | ar-a-006 | Syl Johnson | Back for a Taste of Your Love | 1970 年〈Is It Because I'm Black〉立足 | 單曲 1969 年 9 月由 Twinight 發行；1970 年是同名專輯。簡介若指單曲，年份應為 1969。 | https://en.wikipedia.org/wiki/Is_It_Because_I%27m_Black |
+| ar-a-006 | Labelle | Nightbirds | 〈Lady Marmalade〉……2021 年入選美國國家錄音登錄庫 | 國會圖書館官方標示為『Added to the National Registry: 2020』，2020 年度名單於 2021 年 3 月才公布；寫『2021 年入選』是以公布年計，宜改成『2020 年度名單、2021 年 3 月公布』或直接寫『入選國家錄音登錄庫』。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Lady-Marmalade_Bertei.pdf |
+| ar-a-006 | The Emotions | Untouched | 母帶其後隨 Stax 財務動盪而塵封多年，直到 2014 年才有正式數位重發 | 擱置的是 1973 年錄的第三張《Songs of Innocence and Experience》（2004 年由 Stax 發行）；《Untouched》本身 1971 年正常發行，單曲〈Show Me How〉當年進榜。2014 年重發一說本位沒找到依據，建議刪除或改述 | https://staxrecords.com/spotlight/the-emotions/ |
+| ar-a-006 | The Emotions | Untouched | 1972 年發行 | 維基專輯條目與 Stax 官方頁寫 1971 年（單曲 1971 年 9 月發行）；Stax 頁另一處寫 1972，年份不一致，建議店主以 Discogs 首版日期確認 | https://en.wikipedia.org/wiki/Untouched_(The_Emotions_album) |
+| ar-a-006 | The Emotions | Flowers | Verdine White、Al McKay 等 EWF 班底跨刀 | 維基專輯條目寫 Verdine White 與 Fred White 參與；Al McKay 一名本位未找到來源，建議查 Discogs 製作人員表或改寫 | https://en.wikipedia.org/wiki/Flowers_(The_Emotions_album) |
+| ar-a-006 | The Stylistics | Rockin' Roll Baby | The Stylistics 與 Thom Bell 的合作在 1973 年的《Rockin' Roll Baby》畫下句點 | 維基、SoulTracks 都寫 Bell 1974 年停止與團合作；專輯是 1973 年發行，但『合作畫下句點』的時間點是 1974 年，建議改成『Bell 時期最後的專輯之一』或刪『句點』說法（未能確認《Let's Put It All Together》1974 是否仍有 Bell 參與，故只列為待查） | https://en.wikipedia.org/wiki/The_Stylistics |
+| ar-a-007 | John Lee Hooker | The Healer | 製作人 Roy Rogers 讓七十三歲的 John Lee Hooker 逐曲搭配不同來客 | Hooker 出生年有爭議；多數資料列 1917 年 8 月 22 日，據此 1989 年專輯發行時是 72 歲，普查記錄則暗示更早。「七十三歲」採哪一種算法不明，建議改為不寫年齡或寫「年逾七十」。 | https://en.wikipedia.org/wiki/John_Lee_Hooker |
+| ar-a-007 | Tinariwen | The Radio Tisdas Sessions | 2001 年由 Justin Adams 與 Lo'Jo 帶著器材進駐馬利基達爾的 Radio Tisdas 電台錄音 | 維基寫該片由 Justin Adams 與 Jean-Paul Romann 錄製；Lo'Jo 是 1998 年起與樂團結識、促成後續合作的法國團體，維基未寫 Lo'Jo 參與錄音。建議改為 Justin Adams 與 Jean-Paul Romann。另外發行年各源不同（見 conflicts），維基為 2001。 | https://en.wikipedia.org/wiki/Tinariwen |
+| ar-a-007 | Otis Rush | Mourning in the Morning | Otis Rush 自 1955 年起錄單曲 | 維基、Mississippi Blues Trail 與 EBSCO 都寫他 1956 年以 Cobra 的〈I Can't Quit You Baby〉出道，1955 年這個起點三源皆無；建議改為 1956 年。 | https://en.wikipedia.org/wiki/Otis_Rush |
+| ar-a-007 | Chicago | Chicago X | 〈If You Leave Me Now〉拿下最佳流行團體演唱與最佳人聲伴奏編曲兩座葛萊美；並奪下葛萊美最佳專輯包裝獎 | 輕微：兩項葛萊美皆成立，但最佳人聲伴奏編曲（Best Arrangement Accompanying Vocalists）頒給編曲人 James William Guercio 與 Jimmie Haskell，最佳專輯包裝頒給美術總監 John Berg；樂團本身只有最佳流行團體演唱一座，維基 Chicago 條目稱其為「唯一的葛萊美」。若改成「單曲拿下兩座」並註明編曲與包裝的得主，較不易誤讀。 | https://en.wikipedia.org/wiki/Chicago_X |
