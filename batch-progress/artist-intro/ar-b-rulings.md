@@ -61,3 +61,7 @@
 - 補洞第 4 組交件，補洞交齊（40 位）。pubIssue 2 條（First Choice〈Doctor Love〉為 Gold Mind 時期而非 Salsoul；Joe Bataan 本名兩說）。交本機待核：Jr. Walker《Road Runner》Dave Marsh 評語、Lionel Richie《Can't Slow Down》週數與認證、Kleeer《Get Ready》卡池年份。
 - 寫作第 2 組（20 位）審畢，修 2 處：Dionne Warwick 在世，刪「六座競賽類葛萊美」；Joe Tex「始終沒有入選」屬相對時間（日後可能入選）→「曾多次獲提名」。Esther Phillips 277（人生故事）照准。
 - ar-b-006 上架：40 位（靈魂、R&B），審稿修 2 處。
+
+### ar-b-007
+
+- 補洞第 1 組：**pubIssue 需優先處理**：Lou Rawls《Lou Rawls Live!》上線簡介整段是退件說明文字（「此筆應退回重新配對…」），不是簡介，且卡片繫結 1978 年版，需本機重新配對重寫。Rose Royce 葛萊美主詞是製作人 Norman Whitfield；Rufus 葛萊美主詞是團體、名人堂是 Chaka Khan 個人；Shalamar 的 Jeffrey Daniel 只能寫早於 Michael Jackson 約一年跳 moonwalk，不寫發明者。
