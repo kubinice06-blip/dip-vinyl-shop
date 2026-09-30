@@ -405,5 +405,180 @@
   "failedFetches": 3,
   "status": "full",
   "notes": "事實庫無研究稿也無上線簡介，全從零查。實際搜尋 6 次：維基 Carl Craig、WebSearch（第二代與 Bug in the Bassbin）、Insomniac〈Bug in the Bassbin〉、Beatportal Planet E 專題、The Wire Carl Craig 訪談、Resident Advisor 藝人簡介；失敗請求 3 次（維基 Carl_Craig_(producer) 404、Britannica 404、Discogs 403），不計入。poolAlbums 五張皆為底特律的 Carl Craig，無同名混卡。已知取捨：〈Bug in the Bassbin〉那條屬『啟發某曲風』的宣稱，三個開啟頁面（Insomniac、Resident Advisor、維基轉引 Now Toronto）一致，沒有『第一』字樣；不寫成『drum & bass 的起源』。legacy 格只有這一條有兩源，地位格偏薄。未收（單源）：Mixmag 稱他是「a leading figure in Detroit techno's second generation」（維基引述；搜尋摘要有『常被稱為第二代』但來源頁未打開）；Pitchfork 50 大 IDM 專輯第 29 名（《More Songs About Food and Revolutionary Art》，維基單源）；2008 年 Junior Boys 混音的葛萊美入圍、2024 紀錄片《Desire, the Carl Craig Story》Tribeca 首映（維基單源）；Electrifying Mojo 電台是他的啟蒙、12 歲聽到 Kraftwerk（Wire 單源）；Carl Craig Foundation（RA 單源）；1989 年首支曲目收錄於 Virgin UK 選輯（RA 單源）；生於 1969 年 5 月 22 日、Cooley High School、家庭背景（維基單源，生年屬高風險）；Beatportal 述家人（祖父母為喬治亞州牧師）單源。"
+ },
+ {
+  "key": "clipping.",
+  "name": "clipping.",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "clipping. 是來自洛杉磯的三人組：饒舌手 Daveed Diggs 與製作人 William Hutson、Jonathan Snipes。",
+      "src": "https://en.wikipedia.org/wiki/Clipping_(band)",
+      "src2": "https://floodmagazine.com/82119/clipping-visions-of-bodies-being-burned-feature/",
+      "from": "new"
+     },
+     {
+      "f": "Hutson 與 Snipes 先開始一起做音樂，Diggs 後來加入，替他們寫饒舌。",
+      "src": "https://en.wikipedia.org/wiki/Clipping_(band)",
+      "src2": "https://floodmagazine.com/82119/clipping-visions-of-bodies-being-burned-feature/",
+      "from": "new"
+     },
+     {
+      "f": "Diggs 與 Hutson 從小就認識，兩人都在奧克蘭長大，並因為共同喜愛 Parliament-Funkadelic 而走近。",
+      "src": "https://daily.redbullmusicacademy.com/2016/09/clipping-interview/",
+      "src2": "https://en.wikipedia.org/wiki/Clipping_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的聲響以田野錄音與生活中的真實聲音為材料：公車煞車、義式咖啡機、排水管、烤箱門都被拿來當太空船音效。",
+      "src": "https://daily.redbullmusicacademy.com/2016/09/clipping-interview/",
+      "src2": "https://en.wikipedia.org/wiki/Clipping_(band)",
+      "from": "new"
+     },
+     {
+      "f": "Diggs 給自己立下規則，歌詞不用第一人稱；他說第一首不用「I」寫的歌很難，但這條規則逼他變得更有意思。",
+      "src": "https://daily.redbullmusicacademy.com/2016/09/clipping-interview/",
+      "src2": "https://en.wikipedia.org/wiki/Clipping_(band)",
+      "from": "new"
+     },
+     {
+      "f": "《Splendor & Misery》（2016）是一張 Afrofuturism 概念專輯：一名奴隸暴動後的倖存者與貨運太空船的 AI 一同困在外太空。",
+      "src": "https://en.wikipedia.org/wiki/Splendor_%26_Misery",
+      "src2": "https://daily.redbullmusicacademy.com/2016/09/clipping-interview/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Splendor & Misery》入圍 2017 年雨果獎最佳戲劇表現短篇類別（入圍，未得獎），是以專輯身分列入該類別的入圍作品。",
+      "src": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
+      "src2": "https://en.wikipedia.org/wiki/Splendor_%26_Misery",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2017 年，《Splendor & Misery》入圍雨果獎最佳戲劇表現短篇類別（入圍，未得獎）。",
+    "src": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/",
+    "src2": "https://en.wikipedia.org/wiki/Splendor_%26_Misery",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Hugo 官網頁面經 WebFetch 摘要出現得獎者資訊，與本人記憶不符，未採用；facts 只寫入圍事實，且標明未得獎（此點由 Hugo 官網的『入圍名單含 Splendor & Misery [album]』與維基的『nomination』支撐，得獎者本身未另核）。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫無研究稿也無上線簡介，全從零查。實際搜尋 7 次：維基樂團條目、WebSearch（Hugo 與 Afrofuturism）、Red Bull Music Academy 2016 訪談、Flood 專訪、Hugo 官網 2017 頁、維基 Splendor & Misery；其中維基樂團條目與 WebSearch 各 1 次，合計 6 次成功請求外加 Hugo 頁共 7；無失敗請求。poolAlbums 五張（CLPPNG、Dead Channel Sky、Splendor & Misery、There Existed an Addiction to Blood、Visions of Bodies Being Burned）皆為 Diggs／Hutson／Snipes 的 clipping.，無同名混卡。名稱寫法照卡池『clipping.』（含句點）。非獨立：facts 中凡第二源為維基者，維基條目本身引述訪談，與 RBMA、Flood 的內容互相印證但並非完全獨立。第二源開啟情況：Flood、RBMA、Hugo 官網、維基 Splendor & Misery 皆實際開啟；『雨果獎入圍』兩源為 Hugo 官網與維基。條目『獨立摘要』：WebFetch 對 Hugo 頁的摘要曾說得獎者是 The Expanse，這與常識不符，本層未採信、也不寫得獎者。未收（單源）：樂團 2009 年在洛杉磯以混音專案起家、Diggs 2010 年加入、Diggs 與 Hutson 小學認識（維基單源，年份屬高風險）；『第二張入圍雨果獎的音樂專輯，前一張是 Paul Kantner 1970 年《Blows Against the Empire》』（維基專輯條目，屬『第二』類宣稱，只有維基一源，且搜尋摘要也是同樣說法但來源頁未開）；〈The Deep〉小說化版本得 Lambda Literary Award、入圍 Hugo／Nebula／Locus（維基單源）；Pitchfork 稱其為第 30 名最佳 industrial 專輯、Metacritic 76、Billboard Heatseekers 第 2 名（維基單源）；Guardian 形容其聲響可作為屠宰場紀錄片的配樂（維基轉述）；Diggs 稱 Hamilton 讓許多人接觸到他們的音樂（Flood 單源）；Hutson 稱『Parliament filtered through our interest in horror』、影響來源為灣區饒舌與 Busta Rhymes、Twista（RBMA 單源）。Sub Pop 簽約屬履歷，不收。"
+ },
+ {
+  "key": "coldcut",
+  "name": "Coldcut",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Matt Black 是寫程式的，Jonathan More 曾教美術；兩人 1986 年在倫敦相識，More 在 Soho 的 Reckless Records 工作，Black 是常客。",
+      "src": "https://en.wikipedia.org/wiki/Coldcut",
+      "src2": "https://www.soundonsound.com/techniques/classic-tracks-coldcut-paid-in-full",
+      "from": "new"
+     },
+     {
+      "f": "兩人都受 Double Dee & Steinski 的取樣拼貼唱片啟發；Black 說〈Say Kids What Time Is It?〉純粹是想做出一張像 Steinski《Lessons》那樣的唱片。",
+      "src": "https://www.soundonsound.com/techniques/classic-tracks-coldcut-paid-in-full",
+      "src2": "https://daily.redbullmusicacademy.com/2018/01/coldcut-dj-history-interview/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首支合作單曲〈Say Kids What Time Is It?〉（1987）是用唱盤、混音器與四軌卡帶機做成。",
+      "src": "https://musictech.com/features/interviews/matt-black-legacy-coldcut-ninja-tune/",
+      "src2": "https://daily.redbullmusicacademy.com/2018/01/coldcut-dj-history-interview/",
+      "from": "new"
+     },
+     {
+      "f": "1987 年他們為 Eric B. & Rakim 的〈Paid in Full〉做的混音（Seven Minutes of Madness）以唱盤與該專輯黑膠拼貼成形，登上英國單曲榜第 15 名。",
+      "src": "https://www.soundonsound.com/techniques/classic-tracks-coldcut-paid-in-full",
+      "src2": "https://en.wikipedia.org/wiki/Coldcut",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們創辦的 Ninja Tune 後來培養出 The Cinematic Orchestra 等藝人。",
+      "src": "https://daily.redbullmusicacademy.com/2018/01/coldcut-dj-history-interview/",
+      "src2": "https://en.wikipedia.org/wiki/Ninja_Tune",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ninja Tune 創立於 1990 年；起因是兩人在大廠牌簽約時吃過苦頭、失去創作自由，流行單曲成功期賺的錢成為創辦資金。",
+      "src": "https://musictech.com/features/interviews/matt-black-legacy-coldcut-ninja-tune/",
+      "src2": "https://www.soundonsound.com/people/coldcut-ninja-tune",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1987 年，〈Paid in Full〉混音登上英國單曲榜第 15 名。",
+    "src": "https://www.soundonsound.com/techniques/classic-tracks-coldcut-paid-in-full",
+    "src2": "https://en.wikipedia.org/wiki/Coldcut",
+    "from": "new"
+   },
+   {
+    "f": "1990 年，創辦 Ninja Tune。",
+    "src": "https://en.wikipedia.org/wiki/Ninja_Tune",
+    "src2": "https://en.wikipedia.org/wiki/Coldcut",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Solid Steel 開播年份：維基 Coldcut 條目寫 1987 年、維基 Ninja Tune 條目寫 1988 年，RBMA 訪談寫 KISS FM 1988 年；不一致，facts 不寫年份。",
+   "Black 與 More 相識：維基與 Sound on Sound 寫 1986 年在 Reckless Records；RBMA 訪談寫兩人 1970 年代末就在倫敦地下圈認識；採前者並不寫 1970 年代末說法。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Let Us Play",
+    "claim": "上線簡介寫「也是他們首度在自營的 Ninja Tune 發片」",
+    "problem": "維基 Coldcut 條目寫他們在 Ninja Tune 的第一支正式發行是 1997 年 2 月的單曲〈Atomic Moog 2000 / Boot the System〉，專輯《Let Us Play!》是同年 9 月；若簡介說的是『首度發專輯』則無誤，若說『首度發片』則有落差。單源（維基），建議店主確認後決定是否改成『首張在 Ninja Tune 發行的專輯』。",
+    "src": "https://en.wikipedia.org/wiki/Coldcut"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫有 What's That Noise?／Some Like It Cold 兩份研究稿與五張上線簡介，補了身世、聲音與地位。實際搜尋 8 次：維基 Coldcut、WebSearch（歷史與 Ninja Tune）、Sound on Sound 人物頁、MusicTech Matt Black 訪談、維基 Ninja Tune、WebSearch（排除維基與 fandom 後找訪談）、Red Bull Music Academy 2018 訪談、Sound on Sound Classic Tracks〈Paid in Full〉；失敗請求 4 次（Britannica 404、Medium Cuepoint 403、Resident Advisor 藝人簡介無內文、Peel fandom 402），恰為上限。poolAlbums 五張皆為 Matt Black 與 Jonathan More 的 Coldcut，無同名混卡。非獨立：origin 第一條與 sound 第二條第二源為維基 Coldcut，與 Sound on Sound 可互相印證，但維基本身也引用 SoS 類資料。未收：維基寫〈Say Kids What Time Is It?〉是『UK's first breaks record』『第一張完全由取樣構成的英國唱片』、Chemical Brothers 稱〈Beats + Pieces〉是『first bigbeat record』（『第一』類，只有維基單源，也未逐條查反例；上線簡介 What's That Noise? 已用『被視為英國第一張完全由取樣構成的唱片』，該句寫成『被視為』屬安全寫法）；『pioneers for pop sampling in the 1980s』『the first stars of UK electronic dance music』（維基單源，標為『被視為』寫法可用但無第二源）；Sound on Sound 稱〈Paid in Full〉混音是『the first remix to enjoy chart success in its own right』（『第一』類單源）；Pitchfork 稱 Ninja Tune 早期發行『usher in trip-hop/instrumental hip-hop』（維基單源）；Ninja Tune 首發為 Bogus Order（維基單源）；VJAMM 軟體 1997 年、進入美國移動影像博物館典藏（維基單源）；RBMA 稱兩人為『éminences grises』；Sound on Sound 人物頁 Matt Black 談取樣：『給 10 個製作人同樣 20 個取樣，都該做出完全不同的東西』（單源）；Yazz、Lisa Stansfield 經 Coldcut 製作而打入流行榜（維基與事實庫既有，單源）；Paid in Full 混音耗時 39 小時（RBMA 單源）。"
  }
 ]
