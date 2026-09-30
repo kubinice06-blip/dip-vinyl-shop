@@ -1092,5 +1092,162 @@
     "failedFetches": 1,
     "notes": "事實庫 research 為空，三格從零查；卡池 9 張（1970–1985）皆為 Neil Young 本人，無混卡。6 次請求：英文維基、Rock Hall、Britannica（WebFetch）、WebSearch（Cobain 遺書引用）、WebSearch（加拿大百科與早年）、Canadian Encyclopedia 條目（curl 讀全文）。失敗未計：the canadianencyclopedia 猜錯網址（404）。標 src2 者為第二來源；Cobain 一條的第二源 Loudwire 只見搜尋結果標題與摘要（摘要稱 Cobain 遺書引用〈My My, Hey Hey (Out of the Blue)〉的這句）。「Rust Never Sleeps」一條的第二源 Britannica 僅摘要語「回應龐克而非排斥」。「Nirvana 一條」只寫遺書引用，不寫其他。單源、未收進 facts：維基首段「Godfather of Grunge」稱號與 Kurt Cobain、Eddie Vedder 常點名他為主要影響（維基；Vedder 於 1995 年頒獎則有 Rock Hall 佐證）；1995 年《Mirror Ball》與 Pearl Jam 合作（維基）；1997 年以 Buffalo Springfield 成員再度入選搖滾名人堂（維基）；2006 年 Order of Manitoba、2010 年 Order of Canada 官員級（維基；Britannica 寫 2009）；Rolling Stone 百大音樂人與 2023 年 250 大吉他手第 30 名（維基）；1951 年夏罹患小兒麻痺、左半身部分癱瘓（維基，搜尋摘要只複述維基）；Thom Yorke、Johnny Marr 點名受其影響（維基）；澳洲樂團 Powderfinger 團名取自〈Powderfinger〉（維基）；1964–66 年 Mynah Birds 與 Rick James、用二手靈車南下洛杉磯、1970 年才取得綠卡（維基）；1974 年 CSNY 巡迴為最早的體育場巡演之一（維基）；CE 稱其詞作以詩意意象、地景與社會良知見長（單源）；CE 稱 1969–79 年間僅三張專輯賣不到 50 萬張（單源）；Neil Young 生涯後期與 Crazy Horse 復出、環保活動（維基）。",
     "pubIssues": []
+  },
+  {
+    "key": "pink floyd",
+    "name": "Pink Floyd",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1965 年在倫敦成軍，創始成員是 Syd Barrett、Nick Mason、Roger Waters 與 Richard Wright；David Gilmour 在 1967 年底加入，1968 年接替離團的 Barrett。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.britannica.com/topic/Pink-Floyd",
+            "from": "new"
+          },
+          {
+            "f": "團名由 Barrett 取自兩位藍調樂手 Pink Anderson 與 Floyd Council 的名字。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.britannica.com/biography/Syd-Barrett",
+            "from": "new"
+          },
+          {
+            "f": "Syd Barrett 1946 年 1 月 6 日生於英格蘭劍橋，與日後的團員 Roger Waters 從小相識。",
+            "src": "https://en.wikipedia.org/wiki/Syd_Barrett",
+            "src2": "https://www.britannica.com/biography/Syd-Barrett",
+            "from": "new"
+          },
+          {
+            "f": "Barrett 是首張《The Piper at the Gates of Dawn》的主要詞曲作者。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.britannica.com/biography/Syd-Barrett",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團起於倫敦的地下場景，是英國最早的迷幻樂團之一，也被視為迷幻搖滾與前衛搖滾兩股潮流的奠基者。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.rockhall.com/inductees/pink-floyd",
+            "from": "new"
+          },
+          {
+            "f": "Barrett 時期以〈See Emily Play〉等迷幻流行單曲走紅，這首是樂團第一首英國前十名單曲。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.rockhall.com/inductees/pink-floyd",
+            "from": "new"
+          },
+          {
+            "f": "Barrett 離團後，Waters 成為主要作詞人，主導《The Dark Side of the Moon》等概念專輯的構想。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.rockhall.com/inductees/pink-floyd",
+            "from": "new"
+          },
+          {
+            "f": "Pink Floyd 讓概念專輯普及：歌曲導向、以主題貫串，並包含長篇器樂段落。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.britannica.com/topic/Pink-Floyd",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1996 年入選搖滾名人堂，由 Smashing Pumpkins 的 Billy Corgan 頒獎。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.rockhall.com/inductees/pink-floyd",
+            "from": "new"
+          },
+          {
+            "f": "《The Dark Side of the Moon》與《The Wall》是史上最暢銷的專輯之一。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.rockhall.com/inductees/pink-floyd",
+            "from": "new"
+          },
+          {
+            "f": "《The Dark Side of the Moon》在美國榜單上停留超過十年。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.britannica.com/topic/Pink-Floyd",
+            "from": "new"
+          },
+          {
+            "f": "David Bowie 與 Radiohead 等人被列為受其影響的音樂人。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.rockhall.com/inductees/pink-floyd",
+            "from": "new"
+          },
+          {
+            "f": "Barrett 離團後成為樂團心裡的缺口：1975 年的《Wish You Were Here》與〈Shine On You Crazy Diamond〉是為他而寫。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.loudersound.com/features/syd-barrett-visits-pink-floyd-1975",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1968 年 Barrett 在精神狀況惡化之下離團，Gilmour 接替。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.britannica.com/topic/Pink-Floyd",
+            "from": "new"
+          },
+          {
+            "f": "1974 年 Barrett 離開音樂圈，回劍橋隱居，畫畫、種花，此後極少公開露面。",
+            "src": "https://en.wikipedia.org/wiki/Syd_Barrett",
+            "src2": "https://www.britannica.com/biography/Syd-Barrett",
+            "from": "new"
+          },
+          {
+            "f": "1975 年《Wish You Were Here》錄製期間，Barrett 突然來到錄音室，外貌變化太大，樂團起初沒認出他；Waters 深受打擊。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.loudersound.com/features/syd-barrett-visits-pink-floyd-1975",
+            "from": "new"
+          },
+          {
+            "f": "2006 年 7 月 7 日 Barrett 在劍橋過世，享年 60 歲。",
+            "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+            "src2": "https://www.britannica.com/biography/Syd-Barrett",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1965 年在倫敦成軍。",
+        "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+        "src2": "https://www.britannica.com/topic/Pink-Floyd",
+        "from": "new"
+      },
+      {
+        "f": "1973 年發行《The Dark Side of the Moon》。",
+        "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+        "src2": "https://www.britannica.com/topic/Pink-Floyd",
+        "from": "new"
+      },
+      {
+        "f": "1996 年入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Pink_Floyd",
+        "src2": "https://www.rockhall.com/inductees/pink-floyd",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Barrett 離團的精神狀況說法：Britannica 摘要寫「濫用 LSD、患有思覺失調」，維基寫「精神健康惡化」、維基 Barrett 條寫「外界推測精神疾病與迷幻藥」；診斷屬單源推測，facts 只寫「精神狀況惡化」。",
+      "Barrett 離團日期：Britannica 寫 1968 年 3 月正式離團，維基寫 3 月初同意離開、4 月 6 日公告；facts 只寫 1968 年。"
+    ],
+    "searches": 6,
+    "status": "full",
+    "failedFetches": 0,
+    "notes": "事實庫 research 為空，三格從零查；卡池 9 張（1967–2014）皆為本團，無混卡。6 次請求：英文維基 Pink Floyd（curl）、Rock Hall、Britannica Pink Floyd、Britannica Syd Barrett、維基 Syd Barrett、WebSearch（1975 Barrett 造訪錄音室；第二源 Louder 只見搜尋結果標題與摘要，Barrett 造訪一條的第二源以搜尋摘要為據）。標 src2 者為第二來源。Barrett 故事的細節取捨：離團、1974 退出、1975 造訪、2006 過世四條有兩源；其餘細節只有維基一源，未收：1968 年 1 月 26 日去 Southampton 演出時團員決定不去接他、〈Have You Got It Yet?〉每次改編曲結構讓人學不會、Waters 說「他是我們的朋友，但多半時候我們想掐死他」、Gilmour 在 1967 年底加入以「掩護 Barrett 的怪異」、原本打算讓 Barrett 當不上台的詞曲作者；2006 年 Barrett 葬禮無 Pink Floyd 成員出席、2007 年 5 月 10 日 Barbican 追思音樂會「Madcap's Last Laugh」；Barrett 1970 年兩張個人專輯《The Madcap Laughs》與《Barrett》（維基 Barrett 與 Britannica 兩源，未入 f 欄僅因篇幅）；1975 年造訪日期 6 月 5 日、Gilmour 當天婚禮、「發福、剃光頭與眉毛」、Barrett 問起牙刷與豬排等細節出自搜尋摘要（Louder、Classical-music.com、Ultimate Classic Rock 標題），只見摘要，未逐頁讀，故 f 欄不收具體日期與細節。其他單源：維基首段銷量超過 2.5 億張、四張登頂 Billboard 200 與五張登頂英國榜；2008 年 Polar Music Prize（維基）；1996 年之外 2005 年英國音樂名人堂；Rolling Stone 2003 年 500 大專輯排名（Dark Side 第 43、Wall 第 87）；Q 2004 年「史上最大樂團」；Barrett 影響 Bowie 與 The Edge 買延遲踏板（維基）；Waters 與 Mason 1962 年在攝政街理工學院讀建築時相識、Wright 同為建築系學生、團名前身 Sigma 6 與 Tea Set（維基）；RH 稱《The Wall》巡演 1980–81 年是當時最精緻的巡演、紐約時報評為「所有未來搖滾大場面的試金石」；1995 年 Grammy 最佳搖滾器樂演出〈Marooned〉（維基）。Britannica Pink Floyd 稱團名取自 Pink Anderson 與 Floyd Council，與維基相同；「Waters 主導概念」一條的兩源是維基首段（Waters became primary lyricist, devising the concepts）與 Rock Hall（post-Barrett concept albums masterminded by primary lyricist Roger Waters）。",
+    "pubIssues": []
   }
 ]
