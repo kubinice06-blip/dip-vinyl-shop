@@ -317,3 +317,6 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   卡池年份疑點：CunninLynguists《A Piece of Strange》卡 2005／實 2006；Dälek《Absence》卡 2004／Bandcamp 2005，交本機。
 - 補洞第 3 組：Raekwon 失敗請求 7 次（4 次為維基 API 429 限流）、T.I. 失敗 5 次，均未用於 facts，照實記，放行。Wu-Tang Clan 名人堂典禮預定 2026-11-14 → 寫作層寫「獲選」，不寫「入選」。T.I.「trap 一詞」、Talib Kweli「歷史站在它這邊」為轉述本人說法，須寫「他說」。
 - 補洞第 2 組（重派）交件：Little Simz 失敗請求 9 次（維基 API 限流），未取得事實，照實記，放行。Mobb Deep《滾石》榜單名次不進正文；Lil Wayne「史上最偉大」單源不寫。
+- 補洞第 4 組交件。主線刪 Max Richter《Sleep》「第一張串流超過 20 億次的古典專輯」（維基單源＋累計數字）。
+  卡片拆分交本機：John Williams《Rodrigo: Concierto de Aranjuez》（1967）是古典吉他手 John Williams，非電影作曲家；簡介只寫作曲家。
+- ar-a-019 補洞交齊（40 位）。
