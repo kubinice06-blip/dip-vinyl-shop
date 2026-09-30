@@ -116,5 +116,407 @@
     "failedFetches": 2,
     "status": "full",
     "notes": "事實庫 research 為空，三格從零查。實際開頁：維基 McDowell、uDiscover、維基〈You Gotta Move〉、密西西比藍調步道標示牌（msbluestrail.org）、維基 Blues Hall of Fame，另 WebSearch 兩次（第一次只讀摘要，其中 Raitt 出資立墓碑一事未採）。失敗請求 2 次（Britannica 404、blues.org 404，不計搜尋）。poolAlbums 三張（1964／1967／1969）與此人一致，無同名混卡。出生年各源不一致（維基 1904 年 1 月 12 日、uDiscover 1906 年、步道標示牌 c.1904–1907 且『確切日期不詳』），facts 不寫出生年。單源未收：14 歲起彈吉他（維基單源）；跟鄰居 Eli Green 學滑音（步道標示牌單源）；R. L. Burnside 從彈 McDowell 的吉他起步、Lomax 稱他『與 Son House、Muddy Waters 相當、但論音樂是他們的祖父輩』（標示牌單源）；Rolling Stones 版初版無作曲掛名、後來再版列 McDowell 與 Gary Davis（維基〈You Gotta Move〉單源）；1969 年《I Do Not Play No Rock 'n' Roll》為首張電吉他專輯、2006 年入選藍調名人堂專輯類、〈Mississippi Delta Blues〉專輯 2000 年入選（維基 Blues Hall of Fame 單源）；1964 年 Newport 民謠節（uDiscover 單源）；uDiscover 稱《I Do Not Play No Rock 'n' Roll》是『one of the great blues albums』（單源、單一媒體形容詞）。Britannica 頁 404，非獨立提示：uDiscover 與維基內容重疊但為不同出版方。上線簡介三張與已查事實無衝突（簡介稱 Lomax 1959 田野錄音，與維基與標示牌一致；葛萊美提名與電吉他首作未再核）。"
+  },
+  {
+    "key": "robert johnson",
+    "name": "Robert Johnson",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Robert Johnson 生於密西西比州 Hazlehurst，傳統記載是 1911 年 5 月 8 日，確切年份有爭議。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          },
+          {
+            "f": "他向 Ike Zimmerman 學了約一年的吉他；後來的研究者認為，他琴技的驟變出自這段密集學習，而不是超自然的交易。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          },
+          {
+            "f": "他起初在 Son House、Willie Brown 這個三角洲藍調圈子旁邊彈琴，被認為彈得很差；消失約一年後回來，琴技已判若兩人，這段經過成了日後傳說的起點。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          },
+          {
+            "f": "在魔鬼十字路口出賣靈魂換得琴藝的傳說，最早是 Tommy Johnson（與他無血緣關係）的故事，後來才被安到 Robert Johnson 身上。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          },
+          {
+            "f": "他 1938 年 8 月 16 日在 Greenwood 附近過世，約 27 歲；流傳的說法是他在當地場子喝下被人下毒的威士忌。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的吉他把 Son House、Willie Brown 圈子的三角洲藍調傳統整合成自己的路數，被稱為三角洲藍調史上的關鍵人物。",
+            "src": "https://msbluestrail.org/featured-robert-johnson",
+            "src2": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "from": "new"
+          },
+          {
+            "f": "〈Sweet Home Chicago〉〈Dust My Broom〉〈Crossroads〉〈Stop Breaking Down〉〈Love in Vain〉都成了被廣泛翻唱的藍調標準曲。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          },
+          {
+            "f": "他生前只留下 29 首曲子：1936 年 11 月在 San Antonio 的 Gunter Hotel 房間、1937 年 6 月在 Dallas 的臨時錄音空間，製作人都是 Don Law。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://en.wikipedia.org/wiki/Robert_Johnson:_The_Complete_Recordings",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的作品影響了 Muddy Waters 與 Elmore James，密西西比藍調步道稱他是三角洲藍調史上的 seminal figure。",
+            "src": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "src2": "https://msbluestrail.org/featured-robert-johnson",
+            "from": "new"
+          },
+          {
+            "f": "Eric Clapton 與 Rolling Stones 的 Keith Richards 都公開推崇他，兩人還替 1990 年的《The Complete Recordings》寫了文章。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://en.wikipedia.org/wiki/Robert_Johnson:_The_Complete_Recordings",
+            "from": "new"
+          },
+          {
+            "f": "他在 1986 年首屆搖滾名人堂入選，類別是早期影響者（Early Influence）。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.rockhall.com/inductees/robert-johnson",
+            "from": "new"
+          },
+          {
+            "f": "《The Complete Recordings》2003 年被收進美國國家錄音登記表（National Recording Registry）。",
+            "src": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "src2": "https://en.wikipedia.org/wiki/Robert_Johnson:_The_Complete_Recordings",
+            "from": "new"
+          },
+          {
+            "f": "他的墓地有三處立了紀念碑：Quito 的 Payne Chapel、Morgan City 附近的 Mount Zion、Greenwood 北邊的 Little Zion；目前最被認為是實際埋葬處的是 Little Zion。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://msbluestrail.org/featured-robert-johnson",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1936 年 11 月在 San Antonio 的 Gunter Hotel 錄下第一批曲子，製作人 Don Law。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          },
+          {
+            "f": "1937 年 6 月在 Dallas 錄下第二批曲子。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          },
+          {
+            "f": "1938 年 8 月 16 日在 Greenwood 附近過世。",
+            "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+            "src2": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1936 至 1937 年的兩次錄音留下他全部 29 首曲子。",
+        "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+        "src2": "https://en.wikipedia.org/wiki/Robert_Johnson:_The_Complete_Recordings",
+        "from": "new"
+      },
+      {
+        "f": "1986 年入選首屆搖滾名人堂，早期影響者類別。",
+        "src": "https://en.wikipedia.org/wiki/Robert_Johnson",
+        "src2": "https://www.rockhall.com/inductees/robert-johnson",
+        "from": "new"
+      },
+      {
+        "f": "《The Complete Recordings》2003 年入選美國國家錄音登記表。",
+        "src": "https://www.britannica.com/biography/Robert-Johnson-American-musician",
+        "src2": "https://en.wikipedia.org/wiki/Robert_Johnson:_The_Complete_Recordings",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫 MusicBrainz 首發 release 記《The Complete Recordings》為 1990-08-20，維基記 1990 年 8 月 28 日；facts 只寫 1990 年，未帶日期"
+    ],
+    "pubIssues": [
+      {
+        "album": "The Complete Recordings",
+        "claim": "四十一軌裡有十三個是同一首歌的另一次 take",
+        "problem": "MusicBrainz 記 41 軌，維基（與傳記）記全部只有 29 首曲子；41 減 29 為 12 個另一次 take，不是 13。建議店主核對 13 的算法（另：維基稱該套件收 59 個 take 中 17 個已失傳，與 41 軌的算法是否一致未查）",
+        "src": "https://en.wikipedia.org/wiki/Robert_Johnson:_The_Complete_Recordings"
+      }
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫 research 只有兩筆 MusicBrainz 曲目資料，三格從零查。實際開頁：維基 Robert Johnson、Britannica、搖滾名人堂官網 inductee 頁、維基 The Complete Recordings、維基 Gayle Dean Wardlow、密西西比藍調步道 featured-robert-johnson，另 WebSearch 兩次（只讀摘要，未採其內容；死亡證明 1968 年由 Wardlow 找到一事只見於維基 Robert Johnson 與搜尋摘要）。失敗請求 1 次（Atlas Obscura 403，不計搜尋）。搜尋 8 次用滿。poolAlbums 三張（1961／1970／1990）與此人一致，無同名混卡。這人最有名的是人生故事，已把學琴、消失一年、十字路口傳說的來歷、兩次錄音、死亡說法與墓地三處逐條收齊。死因：維基稱官方死因不明（死亡證明只載日期與地點，無驗屍），Britannica 直接寫喝了下毒威士忌，兩源不一致，所以 facts 只寫『流傳的說法』，不寫成定論；維基另載毒物說（strychnine 有爭議、naphthalene 為 2019 年 Conforth 與 Wardlow 的說法）與農場主人說死於梅毒，皆單源未收。單源未收（放 notes）：出生年 1920 年人口普查記 7 歲、暗示 1912 至 1913 年（維基單源，故 facts 只寫『確切年份有爭議』）；繼父 Charles Dodds 因私刑威脅逃離 Hazlehurst、童年多數在 Robinsonville（Britannica 單源提 Robinsonville 與三位父親角色）；與 Ike Zimmerman 在墓園夜間練琴（維基單源）；Zimmerman 拼法維基作 Zimmerman、Britannica 作 Zinneman（同一人，facts 用維基拼法）；Robert Palmer 說他還受 Lonnie Johnson 與 Scrapper Blackwell 單弦彈法影響（Britannica 單源）；十字路口傳說由 Peter Guralnick 1982 年《Searching for Robert Johnson》轉嫁到他身上（維基單源）；San Antonio 錄音為 1936 年 11 月 23 至 25 日、Gunter Hotel 414 室、16 首含另一次 take，Dallas 為 1937 年 6 月 19 至 20 日（維基單源）；〈Terraplane Blues〉生前約賣 1 萬張（維基單源）；只有三張可靠照片（維基單源）；死亡證明 1968 年由 Wardlow 找到（維基單源）；Keith Richards『Robert Johnson was like an orchestra all by himself』與初聽時問『另一個吉他手是誰』（維基單源）；Clapton『most important blues musician who ever lived』與 2004 年《Me and Mr. Johnson》（維基單源）；Led Zeppelin 的 Robert Plant 與 Bob Dylan 受影響（維基單源）；1961 年《King of the Delta Blues Singers》被認為讓他被更多人聽到並影響英國藍調（維基單源）；1990 年《The Complete Recordings》得 1991 年葛萊美最佳歷史專輯（Best Historical Album）、銷量逾 100 萬張、RIAA 白金、Billboard 200 最高第 80 名、Rolling Stone 2012 年名單第 22 名（維基單源，未能取得第二源，搜尋額度已用盡，故未進 facts）；藍調名人堂入選年 Britannica 作 1980、維基 The Complete Recordings 作 1992，兩源不一致，未收；27 Club（維基單源）；《Up Jumped the Devil》2019 年出版、獲 2020 年 Penderyn Prize（維基 Wardlow 單源）。搖滾名人堂官網（可具名單源）：引介人 Robert Palmer；官網稱他可能是『the first ever rock star』，並以『His playing was to die for—or at the very least, sell your soul to Satan for』形容其吉他（寫作層可寫成『搖滾名人堂稱…』）。第二源說明：Britannica 為獨立出版，密西西比藍調步道頁只給概略資訊（生卒年、墓地、影響 Muddy Waters 與 Elmore James、seminal figure），沒有學琴與死亡細節。維基 Robert Johnson 與 The Complete Recordings 為同站不同條目，非獨立。上線簡介兩張（Vol. II、The Complete Recordings）的錄音時地與 Don Law、LaVere、Driggs 與已查事實一致，僅 take 數字有疑問（見 pubIssues）。"
+  },
+  {
+    "key": "skip james",
+    "name": "Skip James",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Skip James 本名 Nehemiah Curtis James，1902 年 6 月 9 日生於密西西比州 Bentonia 一帶。",
+            "src": "https://en.wikipedia.org/wiki/Skip_James",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          },
+          {
+            "f": "1931 年他前往威斯康辛州 Grafton 為 Paramount 錄音，〈Devil Got My Woman〉與〈Hard Time Killing Floor Blues〉都在這次錄音裡。",
+            "src": "https://en.wikipedia.org/wiki/Skip_James",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          },
+          {
+            "f": "這批錄音發行在大蕭條期間，賣得很差；他離開藍調演出，轉去當牧師、帶教會詩班與福音團體。",
+            "src": "https://en.wikipedia.org/wiki/Skip_James",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          },
+          {
+            "f": "1964 年，藍調愛好者在密西西比州 Tunica 找到他，鼓勵他重新演出；他隨後上民謠節與俱樂部舞台，1969 年 10 月 3 日在費城過世。",
+            "src": "https://en.wikipedia.org/wiki/Skip_James",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的聲音以開放小調調弦、陰森的假聲與陰暗的歌詞主題為辨識，是 Bentonia 藍調風格的代表。",
+            "src": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "src2": "https://en.wikipedia.org/wiki/Skip_James",
+            "from": "new"
+          },
+          {
+            "f": "Robert Johnson 的創作受他影響。",
+            "src": "https://en.wikipedia.org/wiki/Skip_James",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Cream 1966 年翻唱他的〈I'm So Glad〉，收在首張專輯《Fresh Cream》，讓這首 1931 年的歌重新被聽見。",
+            "src": "https://en.wikipedia.org/wiki/I%27m_So_Glad",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          },
+          {
+            "f": "他 1992 年（身後）以表演者類別入選藍調名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1931 年在 Grafton 為 Paramount 錄音，之後因大蕭條沉寂、轉行傳道。",
+            "src": "https://en.wikipedia.org/wiki/Skip_James",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          },
+          {
+            "f": "1964 年被藍調愛好者在 Tunica 找到，重返舞台。",
+            "src": "https://en.wikipedia.org/wiki/Skip_James",
+            "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1931 年 Paramount 錄音（Grafton, Wisconsin）。",
+        "src": "https://en.wikipedia.org/wiki/Skip_James",
+        "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+        "from": "new"
+      },
+      {
+        "f": "1964 年被找到並重返舞台。",
+        "src": "https://en.wikipedia.org/wiki/Skip_James",
+        "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+        "from": "new"
+      },
+      {
+        "f": "1992 年（身後）入選藍調名人堂，表演者類別。",
+        "src": "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
+        "src2": "https://msbluestrail.org/blues-trail-markers/skip-james",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 4,
+    "status": "full",
+    "notes": "事實庫 research 為空，三格從零查。實際開頁：維基 Skip James（兩次，第二次針對影響段）、密西西比藍調步道標示牌、維基〈I'm So Glad〉、維基 Blues Hall of Fame，另 WebSearch 一次（只讀摘要，未採其內容）。失敗請求 4 次用滿（Britannica 404、Mississippi Encyclopedia 頁面內容為空、mswritersandmusicians 內容為空、維基 Bentonia blues 404，皆不計搜尋）。poolAlbums 三張（1966／1968／1994）與此人一致，無同名混卡。維基引述 AllMusic 形容其早期錄音『能讓人背脊發涼』（維基單源、AllMusic 頁未開）；Johnson 也用過他的開放 D 小調調弦（維基單源）。單源未收：跟當地樂手 Henry Stuckey 學吉他、母親買了 2.5 美元的第一把吉他、後來也會彈鋼琴與風琴（維基單源）；向探子 H.C. Speir 試音（維基單源）；1931 年 Grafton 錄音的數量，維基稱『八面（eight sides）』、步道稱『十八首、吉他 13 首鋼琴 5 首』，兩源不一致，facts 不寫數量；Fahey、Bill Barth、Henry Vestine 三人在 Tunica 醫院找到他、當年 7 月上新港民謠節、為 30 多年來首度公開演出（維基單源，搜尋摘要亦同）；父親 Eddie James 為私酒販、約 1907 年離家、後來成傳教士（維基單源）；死因癌症（維基單源）；Robert Johnson〈Hell Hound on My Trail〉以〈Devil Got My Woman〉為本、〈32-20 Blues〉以〈22-20 Blues〉為本（維基單源；步道只稱影響其創作，兩源皆無互相矛盾）；Cream 版給他 1 萬美元版稅、『the only windfall of his career』（維基單源，搜尋摘要亦同）；他稱 Cream 版『That piece is absolutely gonna stand』（維基〈I'm So Glad〉單源）；〈Devil Got My Woman〉2020 年入 Grammy Hall of Fame（維基單源）；藍調名人堂另收〈Devil Got My Woman〉2006 年、〈Hard Time Killin' Floor Blues〉2011 年（單曲類）、專輯《The Complete 1931 Session》1990 年（維基 BHOF 單源）；Stephen Calt 主張 Bentonia 沒有獨立風格、Jack Owens 承接他的殘餘，Jimmy 'Duck' Holmes 向 Stuckey 學琴、被稱『last of the Bentonia Bluesmen』（維基單源）；步道稱 Bentonia 風格『ethereal』。出生地：維基作 Bentonia、步道作 Woodbine Plantation（同屬 Bentonia 一帶，facts 寫『一帶』）。非獨立提示：維基 Skip James、〈I'm So Glad〉、Blues Hall of Fame 為同站不同條目。上線簡介兩張未發現與已查事實衝突（『第四張錄音室專輯』『78 轉僅存三張』『Ghost World 2001』未查）；《The Complete Early Recordings》簡介的 Stuckey 調弦傳承、大蕭條滯銷轉帶詩班、1964 年找到並送上新港，與維基一致。"
+  },
+  {
+    "key": "sleepy john estes",
+    "name": "Sleepy John Estes",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Sleepy John Estes 生於田納西州 Ripley（出生年說法不一），約 1915 年隨佃農父親搬到 Brownsville，此後一生以此地為據點。",
+            "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "from": "new"
+          },
+          {
+            "f": "他與口琴手 Hammie Nixon、吉他與曼陀林手 Yank Rachell 搭檔，1920 年代在孟菲斯 Beale Street 一帶演出，三人的合作前後超過五十年。",
+            "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "from": "new"
+          },
+          {
+            "f": "1929 年 Ralph Peer 在孟菲斯為 Victor 安排了他的第一場錄音。",
+            "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "from": "new"
+          },
+          {
+            "f": "1940 年代初他回到 Brownsville 務農，後來雙眼全盲、生活貧困；他的早期錄音聽起來就像老人，重新發掘藍調的樂迷起初以為他早已過世。",
+            "src": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "src2": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "from": "new"
+          },
+          {
+            "f": "1962 年他被人在 Brownsville 的佃農小屋找到，已經全盲、生活貧困；Delmark 的 Bob Koester 讓他重新錄音復出。",
+            "src": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "src2": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的唱法帶著哭腔，Big Bill Broonzy 稱之為 crying the blues；他的嗓音蒼老，連早期錄音都像老人的聲音。",
+            "src": "https://www.blueskc.org/sleepy-john-estes/",
+            "src2": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "from": "new"
+          },
+          {
+            "f": "他寫歌取材自親身觀察與身邊的生活，也寫大蕭條年代的貧困處境。",
+            "src": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "src2": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1935 年的〈Someday Baby Blues〉是〈Worried Life Blues〉的基礎：Estes 唱的是 country blues，Big Maceo 1941 年 6 月 24 日錄成芝加哥藍調版本；Muddy Waters 的〈Trouble No More〉承此而來，也是 Bob Dylan 2006 年《Modern Times》〈Someday Baby〉的直接範本。",
+            "src": "https://en.wikipedia.org/wiki/Worried_Life_Blues",
+            "src2": "https://en.wikipedia.org/wiki/Someday_Baby",
+            "from": "new"
+          },
+          {
+            "f": "他 1991 年（身後）入選藍調名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "from": "new"
+          },
+          {
+            "f": "1964 年他與 Hammie Nixon、Yank Rachell 登上 Newport 民謠節，復出後也赴歐洲巡演。",
+            "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1929 年在孟菲斯為 Victor 錄下首批唱片。",
+            "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "from": "new"
+          },
+          {
+            "f": "1962 年被找到並重新錄音，1964 年登上 Newport 民謠節。",
+            "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+            "from": "new"
+          },
+          {
+            "f": "1977 年 6 月 5 日在 Brownsville 中風後過世。",
+            "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+            "src2": "https://www.blueskc.org/sleepy-john-estes/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1929 年錄下首批唱片（Victor，孟菲斯）。",
+        "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+        "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+        "from": "new"
+      },
+      {
+        "f": "1962 年被找到後重新錄音復出，1964 年登上 Newport 民謠節。",
+        "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+        "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+        "from": "new"
+      },
+      {
+        "f": "1991 年（身後）入選藍調名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Sleepy_John_Estes",
+        "src2": "https://tennesseeencyclopedia.net/entries/sleepy-john-estes/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "誰找到他：維基稱 Bob Koester 與 Samuel Charters 1962 年尋得，Tennessee Encyclopedia 與 blueskc 稱紀錄片導演 David Blumenthal 找到；上線簡介〈The Legend of Sleepy John Estes〉採 Koester 與 Charters。facts 只寫『被找到』與 Koester 的 Delmark 讓他復出，不指名尋人者",
+      "出生年：維基 1899 年 1 月 25 日（1900 年見一戰徵兵卡）、Tennessee Encyclopedia c. 1900；facts 不寫出生年"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "事實庫 research 為空，三格從零查。實際開頁：維基 Sleepy John Estes（兩次，第二次針對風格段）、Tennessee Encyclopedia、blueskc.org、維基〈Someday Baby〉、維基〈Worried Life Blues〉，另 WebSearch 一次（只讀摘要，未採其內容）。失敗請求 2 次（Britannica 404、Big Black Creek 歷史協會 526，不計搜尋）。poolAlbums 三張（1962／1964／1965）與此人一致，無同名混卡。這人最有名的是被遺忘又被找回的故事，已收：全盲貧困、被誤以為早已過世、1962 年被找到、1964 Newport、歐洲巡演、1977 年中風過世。單源未收：右眼少年時被朋友丟石頭弄瞎（維基單源）；19 歲起與 Nixon、Rachell 正式演出（維基單源）；12 歲向父親學吉他（Tennessee Encyclopedia 單源）；『Sleepy』綽號由來——Koester 稱他遇事就縮進昏昏欲睡的狀態、Estes 自稱是白天下田晚上演出太累（維基單源）；1929 年後在 Decca、Bluebird 錄音，1952 年 Sun Studio，最後戰前錄音 1941 年（維基單源）；John Lennon 回憶藝術學院時期大家都在聽 Sleepy John Estes（維基單源）；Bob Dylan 在 1965 年《Bringing It All Back Home》內頁文字提到他、〈Milk Cow Blues〉影響 Dylan 的〈From a Buick 6〉（維基單源）；Robert Plant 稱他是早期影響（維基單源）；Tennessee Encyclopedia 稱他是『a true original』並深刻影響後來藍調樂手（單源）；歌詞取材本地人事，如律師 Hugh L. Clarke（〈Lawyer Clark Blues〉）、修車師傅（〈Vassie Williams' Blues〉）、少女（〈Little Laura Blues〉）、〈Special Agent〉寫他搭貨車去錄音（維基單源，上線簡介〈Brownsville Blues〉所寫律師與修車師傅與此一致）；blueskc 另提〈Floating Bridge Blues〉寫一次險些喪命的意外（單源）；歐洲巡演 1964 與 1966 年隨 American Blues Festival（blueskc 單源）；日本巡演年份 blueskc 稱 1976 年，維基搜尋摘要只說去過日本，年份未能兩源確認，facts 不寫；〈Worried Life Blues〉被稱『one of the most recorded blues songs of all time』、1983 年藍調名人堂經典錄音、2006 年 Grammy Hall of Fame（維基〈Worried Life Blues〉單源）；死時年 73（blueskc 單源）。搜尋摘要另出現 grokipedia，未使用。第二源說明：維基 Sleepy John Estes、〈Someday Baby〉、〈Worried Life Blues〉為同站不同條目，非獨立；Tennessee Encyclopedia 與 blueskc 為獨立來源。"
   }
 ]

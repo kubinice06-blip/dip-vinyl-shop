@@ -69,3 +69,7 @@
 - 補洞第 3 組：pubIssue 3 條，其中 **Bukka White《Big Daddy》上線簡介含「Wikipedia 僅一筆帶過、原始 LP 流通極低」這類管線說明文字，需本機優先重寫**（與 Lou Rawls 退件文字同類）；Willie Hutch《Fully Exposed》「全片自寫自編自彈」不實；Bombino《Deran》錄音地點只寫一地。Bukka White 罪名與刑期各源不一，不寫。
 - 主線掃描全部事實庫的上線專輯簡介：明確殘留管線文字的只有 Lou Rawls《Lou Rawls Live!》一則（「此筆應退回重新配對…」）；另有大量簡介在正文寫「維基記…／英文維基記…」（至少 40 則，集中在 ar-a-001～015），屬專輯簡介寫法問題，不在藝人介紹範圍，交店主決定要不要另開清理。
 - 寫作第 1 組（20 位）審畢，0 處。Shuggie Otis 274（人生故事）照准。Intruders、Shalamar、SWV、Snoh Aalegra 非獨立來源的評價已用「據說／被說成／也有人稱」處理，照准。
+
+### ar-b-008
+
+- 補洞第 1 組：James Cotton 失敗請求 9 次，照實記，放行。pubIssue 1 條（Champion Jack Dupree《Natural & Soulful Blues》「自學鋼琴」兩源不一）。Big Mama Thornton 2024 年搖滾名人堂（Musical Influence）、Jimmy Reed 1991 年（ZZ Top 引介）可具名單源。
