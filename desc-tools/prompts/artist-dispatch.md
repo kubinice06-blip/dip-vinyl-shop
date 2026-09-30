@@ -30,12 +30,12 @@
 
 事實庫：batches/artist/facts/{{批名}}-facts.json（檔案大，用 node 依 key 取單人，不要整檔讀）。
 讀法例：node -e "const a=require('./batches/artist/facts/{{批名}}-facts.json');const x=a.find(x=>x.key==='{{首位鍵}}');console.log(JSON.stringify({...x,published:x.published.map(p=>({album:p.album,desc:p.desc}))},null,1))"
-研究稿事實很少或沒有的藝人（事實庫 research 為空）等於從零查，六次搜尋內優先湊 origin 與 legacy 的兩源。
+研究稿事實很少或沒有的藝人（事實庫 research 為空）等於從零查，八次搜尋內優先湊 origin 與 legacy 的兩源。
 
 本組（key｜名冊名）：
 {{逐行：- key｜名冊名}}
 
-輸出：batches/artist/research/{{批名}}-g{{組號}}.json。每位補查上限 6 次（取不到內容的請求不計入，另記 failedFetches）。
+輸出：batches/artist/research/{{批名}}-g{{組號}}.json。每位補查上限 8 次（取不到內容的請求不計入，另記 failedFetches）。
 **每做完 3 位就寫檔；輸出檔已有內容就讀進來接續，不要從頭重寫**（容器會重啟）。
 完成後自己跑 node qa-artist.mjs gap {{批名}}（其他組沒交件時會報「缺 N 位」，那條忽略，其餘修到 0；搜尋次數照實記）。
 回報只寫：每位三格狀態與搜尋次數、同名混卡、pubIssues 條數、查不到的格。不要覆述事實原文。

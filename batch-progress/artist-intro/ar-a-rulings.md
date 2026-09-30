@@ -135,3 +135,11 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   4. 董事長樂團「探望冠宇父親、年前圍爐」只有 ETtoday 一源 → 加「據說」。
   5. 同篇「另四度入圍」：維基列五次、官方頁另記第 22 屆，次數不一致 →「另有多次入圍」。
   寫作層回報 g2 無 `src2` 後，主線以既有知識逐條核對 g2 十位（Stones、Bowie、Beatles、Queen、Sabbath、Springsteen 等），其餘數字與宣稱無誤。
+
+### ar-a-008
+
+- **裁定：搜尋上限 6 → 8（ar-a-008 起）。** 新查事實必帶 `src2` 後，每條事實都要實際開第二源，g2 四位（Beach House 7、Blondie 7、Eagles 8、Blur 9）超過 6。
+  上限是為了防止代理無限深挖，不是為了省錢；src2 是品質硬規則，兩者打架時讓上限。`qa-artist.mjs`、`artist-gap-base.md`、派工範本同步改 8。
+  Blur 9 次是規則中途變更造成，一次性放行，不回頭刪事實。
+- 補洞第 1 組：Metallica《Master of Puppets》2015 年入選國家錄音登記表（第一張入選的金屬專輯），補洞層只見摘要放 notes；主線以 loc.gov PDF 與 KQED 查實後移入 legacy。
+- 補洞第 2 組 Eagles 甘迺迪中心榮譽採 2016（2015 年獲選、因 Glenn Frey 病況延到 2016 年受獎）；James Taylor 名人堂採 2000。

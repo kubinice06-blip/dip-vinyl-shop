@@ -100,7 +100,9 @@ if (stage === 'gap') {
       if (no2) { if (/^ar-a-00[1-7]$/.test(batch)) notes.push(`${r.name}：${no2} 條新查事實沒記 src2（舊格式）`); else warn(r.name, `${no2} 條新查事實缺 src2（單源應移進 notes）`) } }
     const allBank = SLOTS.every(s => slots[s]?.status === 'bank')
     if (allBank && r.searches > 0) warn(r.name, `三格皆 bank 卻用了 ${r.searches} 次搜尋`)
-    if (r.searches > 6) warn(r.name, `搜尋 ${r.searches} 次，超過上限 6`)
+    // 2026-09-30 起新查事實必帶 src2，開第二源要多花請求：ar-a-008 起上限放寬到 8
+    { const cap = /^ar-a-00[1-7]$|^ar-trial/.test(batch) ? 6 : 8
+      if (r.searches > cap) warn(r.name, `搜尋 ${r.searches} 次，超過上限 ${cap}`) }
     if (!['full', 'thin'].includes(r.status)) warn(r.name, `status 不合法：${r.status}`)
     searches += Number(r.searches) || 0
     const LABEL = { identity: '身分', era: '年代', position: '位置', origin: '身世', sound: '貢獻', legacy: '地位' }
