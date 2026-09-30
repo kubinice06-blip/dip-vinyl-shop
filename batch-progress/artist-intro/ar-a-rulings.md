@@ -219,3 +219,5 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 補洞第 2 組：Ghost 卡池混了日本 Ghost（Masaki Batoh，3 張，上線簡介也是這團）與瑞典 Ghost（Tobias Forge，2 張）→ 寫日本 Ghost，瑞典兩張待本機拆卡。
   Gong《You》卡池記 2021（原作 1974，應為再發），《Acid Motherhood》屬 Acid Mothers Gong 名義，一併交本機。Franz Ferdinand 失敗請求 6 次，照實記，放行。
 - 補洞第 4 組：多數兩源是同站或同媒體，notes 已註明非獨立；寫作層派工詞加一句視同單源。
+- 寫作第 1 組（20 位）審畢，修 1 處：Faith No More「樂團在 1998 年解散」——樂團 2009 年已重組，單寫解散會誤導，且與後句評價無關 → 刪。
+  Ghost 的 Masaki Batoh 照 facts 寫羅馬字（輸入無漢字，不自補）；可逆。
