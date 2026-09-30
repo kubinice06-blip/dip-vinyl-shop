@@ -57,3 +57,4 @@
 - 補洞第 3 組：D'Angelo 失敗請求 8 次、Ebo Taylor 5 次，照實記，放行。Ebo Taylor 2026-02-07 過世，主線 WebSearch 核實（DJ Mag、NPR、World Music Central）。D'Angelo 2025-10-14 過世兩源一致。pubIssue 1 條（Ebo Taylor《Appia Kwa Bridge》「錄製時已 77 歲」與生年不合）。Denise LaSalle、Eddie Floyd 生年兩說不寫。Eddie Kendricks 的名人堂稱讚主詞是 The Temptations。
 - 寫作第 2 組（20 位）審畢，0 處。Smokey Robinson「Motown 副總裁」f 欄無兩源，寫作層改用名人堂官方語，照准。Sam Smith 全篇以姓名代稱、不用性別代名詞，照准。
 - ar-b-005 上架：40 位（爵士、靈魂），審稿修 1 處。
+- 寫作第 1 組（20 位）審畢，0 處。主線 WebSearch 核實三條近期事實：Clarence Carter 2026-05-13 於亞特蘭大過世、享年 90（Billboard、WSFA）；Chaka Khan 獲 2026 年葛萊美終身成就獎（grammy.com）；9m88 為 2025 金馬影展開幕片《大濛》主演之一（金馬影展官網、風傳媒）。Charles Bradley 補洞稿標 thin、寫作層依人生故事寫成 full 276，照准。交本機待核：The Jacksons 補洞稿稱〈Shake Your Body〉作者為 Mick Jackson，實為〈Blame It on the Boogie〉（正文未寫）。
