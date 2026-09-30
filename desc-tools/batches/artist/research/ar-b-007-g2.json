@@ -550,6 +550,375 @@
   "searches": 6,
   "failedFetches": 8,
   "status": "full",
-  "notes": "事實庫 research 空、3 篇上線簡介無來源網址。搜尋 6 次：維基 Teena Marie、WebSearch（訃聞）、Gulf News（AP 訃聞）、WebSearch（Brockert 訴訟）、CourtListener（內容空白，未取得）、Studicata 案例摘要。失敗請求 8 次（Britannica 404、KING5 403、NPR 503、CBC 403、Bay State Banner 403、Justia 403、Rolling Stone 轉址、Lawlink 403），超過上限 4 次 4 次（共 8 次），照實記錄。單源未收：本名 Mary Christine Brockert、1956 年 3 月 5 日生於 Santa Monica、多國血統（維基單源）；2010 年 12 月 26 日於 Pasadena 過世（維基；Gulf News 只寫享年 54，搜尋摘要與 NPR 標題頁另有記載但未開頁），死亡年因兩源要求暫不入 facts；1979 年上《Soul Train》成為該節目首位白人女性來賓、Rick James 替她取「Lady T」暱稱與製作《Wild and Peaceful》（維基單源）；首張專輯封面無照片，Motown 被指擔心白人身分引來反彈（Gulf News 單源，搜尋摘要 KING5 亦同但未開頁；上線簡介同）；〈Lovergirl〉1985 年 3 月 Hot 100 最高第 4 名、《Starchild》最暢銷、《La Doña》Billboard 200 第 6 名（維基單源）；Fugees 1996 年〈Fu-Gee-La〉引用她的〈Ooo La La La〉、Lenny Kravitz 感謝她早期支持、她是 Maya Rudolph 與 Nona Gaye 的教母（維基單源）；2011 年追思禮 Stevie Wonder、Smokey Robinson、Berry Gordy 出席（維基單源）；她談官司「It wasn't something I set out to do…幫到 Luther Vandross 與 Mary Jane Girls」（維基引 2004 年洛杉磯時報，搜尋摘要另有，皆單源）；AP 訃聞稱她「arguably among the most gifted and respected」白人靈魂歌手（Gulf News 單源）；1984 年判決細節：選擇權年薪 6000 美元不足以滿足申請禁制令所需的保證最低報酬（Studicata 單源，Justia 與 CourtListener 未取得）。⚠ 維基稱 2023 年她以〈Cuff It〉共同作者身分身後獲葛萊美最佳 R&B 歌曲，此說我未能驗證且出處存疑，完全不收。同名混卡：三張專輯（1979、1980、1981）皆 Motown 的 Teena Marie，無混卡。"
+  "notes": "事實庫 research 空、3 篇上線簡介無來源網址。搜尋 6 次：維基 Teena Marie、WebSearch（訃聞）、Gulf News（AP 訃聞）、WebSearch（Brockert 訴訟）、CourtListener（內容空白，未取得）、Studicata 案例摘要。失敗請求 8 次（Britannica 404、KING5 403、NPR 503、CBC 403、Bay State Banner 403、Justia 403、Rolling Stone 轉址、Lawlink 403），超過上限 4 次，照實記錄。單源未收：本名 Mary Christine Brockert、1956 年 3 月 5 日生於 Santa Monica、多國血統（維基單源）；2010 年 12 月 26 日於 Pasadena 過世（維基；Gulf News 只寫享年 54，搜尋摘要與 NPR 標題頁另有記載但未開頁），死亡年因兩源要求暫不入 facts；1979 年上《Soul Train》成為該節目首位白人女性來賓、Rick James 替她取「Lady T」暱稱與製作《Wild and Peaceful》（維基單源）；首張專輯封面無照片，Motown 被指擔心白人身分引來反彈（Gulf News 單源，搜尋摘要 KING5 亦同但未開頁；上線簡介同）；〈Lovergirl〉1985 年 3 月 Hot 100 最高第 4 名、《Starchild》最暢銷、《La Doña》Billboard 200 第 6 名（維基單源）；Fugees 1996 年〈Fu-Gee-La〉引用她的〈Ooo La La La〉、Lenny Kravitz 感謝她早期支持、她是 Maya Rudolph 與 Nona Gaye 的教母（維基單源）；2011 年追思禮 Stevie Wonder、Smokey Robinson、Berry Gordy 出席（維基單源）；她談官司「It wasn't something I set out to do…幫到 Luther Vandross 與 Mary Jane Girls」（維基引 2004 年洛杉磯時報，搜尋摘要另有，皆單源）；AP 訃聞稱她「arguably among the most gifted and respected」白人靈魂歌手（Gulf News 單源）；1984 年判決細節：選擇權年薪 6000 美元不足以滿足申請禁制令所需的保證最低報酬（Studicata 單源，Justia 與 CourtListener 未取得）。⚠ 維基稱 2023 年她以〈Cuff It〉共同作者身分身後獲葛萊美最佳 R&B 歌曲，此說我未能驗證且出處存疑，完全不收。同名混卡：三張專輯（1979、1980、1981）皆 Motown 的 Teena Marie，無混卡。"
+ },
+ {
+  "key": "the chi-lites",
+  "name": "The Chi-Lites",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Chi-Lites 1959 年在芝加哥起家，最初叫 Hi-Lites，由 Marshall Thompson 創立，成員有 Eugene Record、Robert Lester 與 Creadel \"Red\" Jones。",
+      "src": "https://en.wikipedia.org/wiki/The_Chi-Lites",
+      "src2": "https://walkoffame.com/press_releases/chilites/",
+      "from": "new"
+     },
+     {
+      "f": "Eugene Record 是團的主唱、詞曲作者兼製作人，是團的創作核心。",
+      "src": "https://en.wikipedia.org/wiki/Eugene_Record",
+      "src2": "https://vocalgroup.org/inductees/the-chi-lites",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的聲音是芝加哥靈魂：精緻的和聲與抒情情歌。",
+      "src": "https://en.wikipedia.org/wiki/The_Chi-Lites",
+      "src2": "https://vocalgroup.org/inductees/the-chi-lites",
+      "from": "new"
+     },
+     {
+      "f": "團的歌大多出自 Eugene Record 之手。",
+      "src": "https://walkoffame.com/press_releases/chilites/",
+      "src2": "https://en.wikipedia.org/wiki/Eugene_Record",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Oh Girl〉1972 年春天登上美國流行榜冠軍。",
+      "src": "https://vocalgroup.org/inductees/the-chi-lites",
+      "src2": "https://en.wikipedia.org/wiki/The_Chi-Lites",
+      "from": "new"
+     },
+     {
+      "f": "Beyoncé 的〈Crazy in Love〉（2003）取樣了他們 1970 年的〈Are You My Woman (Tell Me So)〉，這首取樣曲後來拿下葛萊美獎。",
+      "src": "https://en.wikipedia.org/wiki/The_Chi-Lites",
+      "src2": "https://walkoffame.com/press_releases/chilites/",
+      "from": "new"
+     },
+     {
+      "f": "Eugene Record 因〈Crazy in Love〉的取樣而列名詞曲作者。",
+      "src": "https://en.wikipedia.org/wiki/Crazy_in_Love",
+      "src2": "https://en.wikipedia.org/wiki/Eugene_Record",
+      "from": "new"
+     },
+     {
+      "f": "Beyoncé、Jay-Z 等藝人都取樣過他們的錄音。",
+      "src": "https://en.wikipedia.org/wiki/The_Chi-Lites",
+      "src2": "https://walkoffame.com/press_releases/chilites/",
+      "from": "new"
+     },
+     {
+      "f": "他們入選 Vocal Group Hall of Fame。",
+      "src": "https://vocalgroup.org/inductees/the-chi-lites",
+      "src2": "https://walkoffame.com/press_releases/chilites/",
+      "from": "new"
+     },
+     {
+      "f": "2021 年獲好萊塢星光大道星章（錄音類）。",
+      "src": "https://en.wikipedia.org/wiki/The_Chi-Lites",
+      "src2": "https://walkoffame.com/press_releases/chilites/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈Oh Girl〉1972 年春天登上美國流行榜冠軍。",
+    "src": "https://vocalgroup.org/inductees/the-chi-lites",
+    "src2": "https://en.wikipedia.org/wiki/The_Chi-Lites",
+    "from": "new"
+   },
+   {
+    "f": "2021 年獲好萊塢星光大道星章（錄音類）。",
+    "src": "https://en.wikipedia.org/wiki/The_Chi-Lites",
+    "src2": "https://walkoffame.com/press_releases/chilites/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Vocal Group Hall of Fame 入選年：維基與 VGHOF 官網寫 2005，Hollywood Walk of Fame 新聞稿寫 2004；R&B 名人堂年份：VGHOF 與新聞稿寫 2000，維基寫 2013 年 R&B Music Hall of Fame；facts 不寫年份。",
+   "成軍學校：維基寫 Hyde Park Academy High School，搜尋摘要寫 Hyde Park High School；facts 不寫學校。改名：VGHOF 寫 1964 年加 C 取自 Chicago，新聞稿寫 1964 年 Marshall & The Chi-Lites、1969 年正名 The Chi-Lites；facts 不寫改名年。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫 research 空，2 篇上線簡介（A Lonely Man、A Letter to Myself）無來源網址；三格全靠補查。搜尋 7 次：維基 The Chi-Lites、WebSearch、Vocal Group Hall of Fame 官網、維基 Eugene Record、維基〈Crazy in Love〉、WebSearch（星光大道）、Hollywood Walk of Fame 新聞稿。失敗請求 4 次（Under the Radar 403、SoulTracks 403、WhoSampled 403、Variety 轉址），剛好達上限。非獨立：多條的 src 或 src2 是維基的不同條目（Chi-Lites、Eugene Record、Crazy in Love）；Walk of Fame 新聞稿是好萊塢商會的宣傳稿。〈Oh Girl〉冠軍一條：VGHOF 明寫 1972 年春天流行榜第一，維基 Chi-Lites 只寫「有一首 Hot 100 冠軍」未點名歌名，故 src2 只能算部分支持（搜尋摘要另稱是〈Oh Girl〉，未開頁）。單源未收：Eugene Record 1940 年 12 月 23 日生於芝加哥、2005 年 7 月 22 日因癌症過世、與 Barbara Acklin 合寫、〈Have You Seen Her〉為妻子 Sandra Scott 而寫、1980 年回團（維基 Record 單源；逝世年屬高風險項，第二源缺，不收）；〈Give More Power to the People〉是首支跨界熱門曲、1968 年簽 Brunswick（VGHOF 單源）；BMI 2000 年將〈Oh Girl〉排為 20 世紀第 36 名熱門歌、1969–1974 年 11 首 R&B 前十、逾 40 首 Billboard 上榜曲、其製作技術影響 Bruce Swedien 為 Michael Jackson 做的工作（新聞稿單源）；2004 年第 46 屆葛萊美〈Crazy in Love〉贏得最佳 R&B 歌曲與最佳饒舌／演唱合作、入圍年度製作但未得（維基〈Crazy in Love〉單源）；團體介入公益（新聞稿單源）；社會關懷題材、Record 的假音招牌（維基單源）。上線簡介中〈Oh Girl〉的英國第 14 名、專輯榜名次、AllMusic 用 flawless 形容等本層未反驗，不列 pubIssues。"
+ },
+ {
+  "key": "the clark sisters",
+  "name": "The Clark Sisters",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "五姊妹在底特律出生長大，母親是合唱團指揮 Dr. Mattie Moss Clark；姊妹們從小在 Church of God in Christ 教會合唱團裡唱歌，唱的多半是母親寫並編的曲子。",
+      "src": "https://en.wikipedia.org/wiki/The_Clark_Sisters",
+      "from": "bank"
+     },
+     {
+      "f": "Clark Sisters 是來自底特律的五姊妹福音團體：Jacky、Denise、Elbernita（Twinkie）、Dorinda 與 Karen。",
+      "src": "https://en.wikipedia.org/wiki/The_Clark_Sisters",
+      "src2": "https://www.gospel900.com/2024/01/12/the-clark-sisters-have-been-honored-with-a-lifetime-achievement-award-for-the-grammys/",
+      "from": "new"
+     },
+     {
+      "f": "Twinkie Clark 是團的創作主力（寫曲、編曲、指揮、製作），後來接下母親手中的團務領導。",
+      "src": "https://en.wikipedia.org/wiki/The_Clark_Sisters",
+      "src2": "https://tvone.tv/578023/the-clark-sisters-receive-lifetime-achievement-award-from-the-recording-academy/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈You Brought the Sunshine〉由 Twinkie Clark 寫作，她與 Karen Clark 領唱。",
+      "src": "https://en.wikipedia.org/wiki/You_Brought_the_Sunshine",
+      "src2": "https://en.wikipedia.org/wiki/The_Clark_Sisters",
+      "from": "new"
+     },
+     {
+      "f": "〈You Brought the Sunshine〉1983 年登上 Billboard 熱門 R&B 單曲榜最高第 16 名。",
+      "src": "https://en.wikipedia.org/wiki/You_Brought_the_Sunshine",
+      "src2": "https://en.wikipedia.org/wiki/The_Clark_Sisters",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2024 年獲葛萊美終身成就獎，是第 5 個獲此獎的福音團體。",
+      "src": "https://en.wikipedia.org/wiki/The_Clark_Sisters",
+      "src2": "https://tvone.tv/578023/the-clark-sisters-receive-lifetime-achievement-award-from-the-recording-academy/",
+      "from": "new"
+     },
+     {
+      "f": "Beyoncé 2022 年《Renaissance》的〈Church Girl〉取樣了她們的〈Center of Thy Will〉（收錄於 1981 年《You Brought the Sunshine》）。",
+      "src": "https://en.wikipedia.org/wiki/You_Brought_the_Sunshine",
+      "src2": "https://thelightnc.com/10308494/twinkie-clark-thanks-beyonce/",
+      "from": "new"
+     },
+     {
+      "f": "R&B 與靈魂樂圈不少人向她們取經，Beyoncé 是其中之一。",
+      "src": "https://en.wikipedia.org/wiki/The_Clark_Sisters",
+      "src2": "https://thelightnc.com/10308494/twinkie-clark-thanks-beyonce/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Sound of Gospel 是底特律 Armen Boladian 的 Westbound Records 開設的副牌；The Clark Sisters 在 Westbound 靠〈You Brought the Sunshine〉這首意外的舞廳熱門曲走紅。",
+      "src": "https://journalofgospelmusic.com/gospel/npr-armen-boladian-westbound-records-sound-of-gospel/",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2024 年獲葛萊美終身成就獎，是第 5 個獲此獎的福音團體。",
+    "src": "https://en.wikipedia.org/wiki/The_Clark_Sisters",
+    "src2": "https://tvone.tv/578023/the-clark-sisters-receive-lifetime-achievement-award-from-the-recording-academy/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成團年：研究稿（引 Detroit News）與維基寫 1973 年 Clark 夫婦離婚後母親才正式組團，gospel900 寫團於 1960 年代中期成軍、1973 年出首張《Jesus Has a Lot to Give》；facts 的 bank 條目已刪去「1973 年正式組團」一句，不寫成團年。",
+   "上線簡介 Unworthy 寫「依英文維基，1973 年離婚後母親才把女兒們正式組成一個團」，與 gospel900 的「1960 年代中期成軍」說法不一，見 pubIssues。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Unworthy",
+    "claim": "依英文維基，1973 年 Clark 夫婦離婚之後，母親才把幾個女兒正式組成一個團",
+    "problem": "gospel900（WGOK 2024）寫該團於 1960 年代中期成軍、1973 年發行首張專輯；現行維基寫 1973 年「formally established」。「正式組成」與「成軍」口徑不同，但簡介會被讀成團到 1973 才存在，建議改成「1973 年正式以團的名義發行首張」或刪去離婚因果。",
+    "src": "https://www.gospel900.com/2024/01/12/the-clark-sisters-have-been-honored-with-a-lifetime-achievement-award-for-the-grammys/"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫有 2 條研究稿事實（維基家族與 Journal of Gospel Music 的 Marovich），皆歸入 bank；origin 第 1 條為 bank 版，刪去了與 gospel900 衝突的「1973 年正式組團」。搜尋 8 次：維基 The Clark Sisters、WebSearch（影響與終身成就）、The Root（頁面空白，未取得）、TV One、Encyclopedia.com（Mattie Moss Clark）、維基〈You Brought the Sunshine〉、The Light NC、gospel900（先遇 301 轉址，再取得）。失敗請求 2 次（Detroit News 402、gospel900 首次 301 轉址）。非獨立：維基〈You Brought the Sunshine〉與維基 The Clark Sisters 是同站不同條目。單源未收：2008 年第 50 屆葛萊美以《Live...One Last Time》得獎、1982／1986／1988 年入圍（《Sincerely》《Heart & Soul》《Conqueror》）、2020 年 Lifetime 傳記片 270 萬觀眾、2022 年 Black Music & Entertainment Walk of Fame、2025 年 Gospel Music Hall of Fame、影響 Mary J. Blige 與 Missy Elliott、生年（維基單源）；葛萊美終身成就獎前四位（Mahalia Jackson、The Staple Singers、The Blind Boys of Alabama、Shirley Caesar）與 2024 年 2 月 3 日特別頒獎典禮（維基與 TV One 只各一半，未列進 facts）；「史上最暢銷女子福音團體」（gospel900 引述，搜尋摘要另有 Detroit News 等，皆單源，寫作層若用須註明「據報導」）；Blood Orange 2018 年引用〈Center of Thy Will〉、〈You Brought the Sunshine〉單曲舞曲榜第 27 名、1985 年 11 月售逾 20 萬張（維基〈You Brought the Sunshine〉單源，與上線簡介一致）；Beyoncé 與 Jay-Z 2017 年〈Family Feud〉取樣（The Light NC 單源）；Mattie Moss Clark 1925 年生於 Selma、1947 年遷底特律、1968 年任 COGIC 國際音樂主席、1958 年錄〈Going to Heaven to Meet the King〉被稱為首張現代福音合唱團錄音、三部和聲取代齊唱、1994 年過世、訓練嚴格塑造姊妹的唱法（Encyclopedia.com 單源；搜尋摘要另有 Mattie 條目，未開頁）；「Clark Sound」——繁複 vocal runs、緊密和聲、合成器與 funk 元素（維基單源；上線簡介亦同）。TV One 稱團由 Mattie 創立，與維基「1973 年才正式組成」不完全一致，facts 未採。"
+ },
+ {
+  "key": "the intruders",
+  "name": "The Intruders",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Intruders 1960 年在費城成軍，起初是 doo-wop 團體，成員有 Sam \"Little Sonny\" Brown（主唱）、Eugene \"Bird\" Daughtry、Phil Terry 與 Robert \"Big Sonny\" Edwards。",
+      "src": "https://en.wikipedia.org/wiki/The_Intruders_(band)",
+      "src2": "https://www.philadelphiamusicalliance.org/walk-of-fame/the-intruders/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的聲音把費城街角的 doo-wop 傳統與福音的熱度結合在一起。",
+      "src": "https://en.wikipedia.org/wiki/The_Intruders_(band)",
+      "src2": "https://soulmusic.com/the-intruders-a-soulful-appreciation-by-perry-thompson/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Intruders 是第一個靠 Kenny Gamble 與 Leon Huff 的詞曲製作拿到熱門曲的團體，成功促成 Columbia 出資成立 Philadelphia International Records。",
+      "src": "https://www.philadelphiamusicalliance.org/walk-of-fame/the-intruders/",
+      "src2": "https://www.gamble-huffmusic.com/artist/the-intruders/",
+      "from": "new"
+     },
+     {
+      "f": "他們的成功對費城靈魂樂的興起與 Gamble、Huff 的崛起至關重要。",
+      "src": "https://en.wikipedia.org/wiki/The_Intruders_(band)",
+      "src2": "https://www.gamble-huffmusic.com/artist/the-intruders/",
+      "from": "new"
+     },
+     {
+      "f": "他們常被 O'Jays 等更有名的費城團體蓋過鋒頭。",
+      "src": "https://www.philadelphiamusicalliance.org/walk-of-fame/the-intruders/",
+      "src2": "https://www.gamble-huffmusic.com/artist/the-intruders/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團在 1975 年解散，1984 年短暫重組。",
+      "src": "https://www.philadelphiamusicalliance.org/walk-of-fame/the-intruders/",
+      "src2": "https://www.gamble-huffmusic.com/artist/the-intruders/",
+      "from": "new"
+     },
+     {
+      "f": "Eugene Daughtry 1994 年過世，Sam Brown 1995 年過世。",
+      "src": "https://en.wikipedia.org/wiki/The_Intruders_(band)",
+      "src2": "https://soulmusic.com/the-intruders-a-soulful-appreciation-by-perry-thompson/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1968 年〈Cowboys to Girls〉登上 R&B 榜冠軍、Hot 100 第 6 名。",
+    "src": "https://en.wikipedia.org/wiki/The_Intruders_(band)",
+    "src2": "https://www.philadelphiamusicalliance.org/walk-of-fame/the-intruders/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "簽約 Gamble Records 年：PMA 與 Gamble-Huff 官網寫 1966，Soulmusic.com 寫 1965 年 Gamble 與 Huff 創立廠牌並招攬；facts 不寫。",
+   "成員：Soulmusic.com 寫 Daughtry 後來才從北卡羅來納加入，其餘來源列為原始四人；facts 依多數來源列四人。",
+   "上線簡介 Save the Children 寫「首張正式掛名 MFSB 班底樂隊的專輯」與「Rolling Stone Album Guide 直言 disco 從這裡開始」「AllMusic 稱〈I'll Always Love My Mama〉為史上最好的媽媽之歌」，本層未查到對應來源，未反驗。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 空，1 篇上線簡介（Save the Children）無來源網址；三格靠補查。搜尋 6 次：維基 The Intruders（撞到消歧義頁，內容無用，仍計次）、WebSearch、維基 The Intruders (band)、Philadelphia Music Alliance、Gamble-Huff Music 官網、Soulmusic.com（Perry Thompson）。⚠ 非獨立：維基 Intruders (band)、PMA 與 Gamble-Huff 官網的多句文字相同（「first group to score hits with…」「played a major role in the rise of Philadelphia soul」「topped the R&B charts and climbed to number six on the pop side」皆疑源自 AllMusic），三者只能算一條實質來源；Soulmusic.com 為較獨立的第二源。〈Cowboys to Girls〉R&B 冠軍、Hot 100 第 6 名有維基、PMA、Gamble-Huff 三處，仍多為同源；Soulmusic 寫 R&B 冠軍、百萬銷量。單源未收：Philadelphia Music Alliance Walk of Fame 1996 年入選（PMA 單源）；24 首 R&B 上榜曲與 14 首 Hot 100（維基單源）；「既不像 Motown 那麼流行、也不像 Stax 那麼粗獷」（維基單源）；1975 年兩位原始成員成為耶和華見證人而離開樂壇（維基單源）；Sam Brown 之死與成癮問題（PMA 單源，不寫細節）；Robert Edwards 2016 年過世、Phil Terry 是唯一在世原始成員（Soulmusic 單源，逝世年屬高風險）；〈I'll Always Love My Mama〉（1973）R&B 榜第 6 名、被當母親節歌曲、靈感來自 Gamble 的母親 Ruby（Soulmusic 單源）；Soulmusic 稱團體影響 1970 至 80 年代西岸拉丁裔社群（單源，屬跨地域現象，值得寫作層留意但須查第二源才可寫）；1966 年〈(We'll Be) United〉R&B 第 14 名（Soulmusic）與 Top 20 R&B（Gamble-Huff）口徑不一。"
+ },
+ {
+  "key": "the j.b.’s",
+  "name": "The J.B.’s",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The J.B.’s 是 James Brown 的樂團班底，1970 年代初由 Fred Wesley 領軍。",
+      "src": "https://en.wikipedia.org/wiki/The_J.B.%27s",
+      "src2": "https://en.wikipedia.org/wiki/Fred_Wesley",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fred Wesley 的銅管 riff 與獨奏以精準著稱，是 funk 的根基。",
+      "src": "https://www.ajc.com/uatl/fred-wesley-trombone-player-for-james-brown-still-brings-the-funk-at-81/ZMNYSSFRUBBQDGZFYFXVKCCBHI/",
+      "src2": "https://en.wikipedia.org/wiki/Fred_Wesley",
+      "from": "new"
+     },
+     {
+      "f": "〈Doing It to Death〉（掛名 Fred Wesley & the J.B.’s，James Brown 主唱）1973 年登上 R&B 榜冠軍，並獲 RIAA 金唱片認證。",
+      "src": "https://en.wikipedia.org/wiki/The_J.B.%27s",
+      "src2": "https://en.wikipedia.org/wiki/Doing_It_to_Death_(album)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "J.B.’s 的錄音成為嘻哈製作人的基礎素材，Fred Wesley 的演奏被大量取樣，從 Janet Jackson 到 2Pac。",
+      "src": "https://en.wikipedia.org/wiki/The_J.B.%27s",
+      "src2": "https://www.ajc.com/uatl/fred-wesley-trombone-player-for-james-brown-still-brings-the-funk-at-81/ZMNYSSFRUBBQDGZFYFXVKCCBHI/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The J.B.’s 的唱片由 James Brown 製作，在他自己的 People Records 發行（1972 年《Food for Thought》、1973 年《Doing It to Death》）。",
+      "src": "https://en.wikipedia.org/wiki/Food_for_Thought_(The_J.B.%27s_album)",
+      "src2": "https://en.wikipedia.org/wiki/Doing_It_to_Death_(album)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈Doing It to Death〉1973 年獲 RIAA 金唱片認證，登上 R&B 榜冠軍。",
+    "src": "https://en.wikipedia.org/wiki/The_J.B.%27s",
+    "src2": "https://en.wikipedia.org/wiki/Doing_It_to_Death_(album)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Fred Wesley 回到 Brown 麾下的時間：J.B.’s 維基寫 1970 年 12 月，AJC 寫 1971 年回任音樂總監；facts 不寫年份。",
+   "J.B.’s 維基寫原始陣容含 Bobby Byrd 與 Jabo Starks，與一般所知的 Bootsy／Catfish Collins 班底描述不完全吻合，本層未反驗，facts 不寫原始陣容。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 6 次：維基 The J.B.’s、WebSearch、維基 Fred Wesley、AJC 專訪 Fred Wesley、維基 Doing It to Death (album)、維基 Food for Thought (The J.B.’s album)；失敗請求 1 次（Rock Hall 404）。⚠ 非獨立：除 AJC 外全是維基不同條目，「R&B 榜冠軍、金唱片」一條的兩源都是維基；AJC 是唯一獨立第二源，只支持 Wesley 的銅管與取樣。origin 與 legacy 皆薄：找不到有出處的後輩點名、名人堂級評價，legacy 只有取樣現象一條，故 status thin。同名／身分：卡池三張——《Food for Thought》（1972）、《Doing It to Death》（1973，掛 Fred Wesley & the J.B.’s）、《Groove Machine》（1979）——皆屬 James Brown 系 J.B.’s 名下，本層未查《Groove Machine》的掛名與陣容（後期版本陣容不同，寫作層別把 1970 年代前期陣容套上去）。單源未收：1970 年 3 月因薪資糾紛 Brown 舊班底離團、Bootsy Collins 與 Catfish Collins 為初期成員、曾錄 Brown 最凶猛的 funk 如〈Get Up (I Feel Like Being a) Sex Machine〉與〈Super Bad〉、Wesley 與 Maceo Parker 1975 年離開轉往 Parliament-Funkadelic、2015 年獲 Rock Hall 提名但未入選（J.B.’s 維基單源；搜尋摘要另稱 Collins 兄弟後來離開 Brown 加入 P-Funk，出處是維基 Fred Wesley 條目摘要，未開頁）；〈The Grunt〉為早期器樂熱門曲（維基單源）；《Doing It to Death》專輯 1973 年 People Records、10 分鐘版單曲、AllMusic 4.5 星、Christgau B（專輯維基單源）；《Food for Thought》1972 年 6 月發行、大多為已發行單曲的彙整、含〈Pass the Peas〉〈Gimme Some More〉（專輯維基單源；「首張錄音室專輯」的說法帶有彙整性質，寫作層需留意）；Wesley 生於喬治亞州 Columbus、12 歲學長號、1962 年加入 Ike & Tina Turner Revue、1968 年首度加入 Brown、之後 P-Funk、1978 年加入 Count Basie Orchestra、2002 年回憶錄《Hit Me, Fred》、他起初反對取樣後來說「I realized what they were doing was connecting the old with the new」（AJC 或維基單源）。"
  }
 ]
