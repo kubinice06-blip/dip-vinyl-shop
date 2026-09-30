@@ -723,5 +723,152 @@
     "failedFetches": 3,
     "status": "full",
     "notes": "事實庫 Free Will 研究稿只有專輯層級，三格全 gap。補查 5 次：維基、Britannica、Rock Hall 官網、WebSearch（I'm New Here 與牢獄）、WebSearch（訃聞與『rap 教父』）。失敗請求 3 次未計入：華盛頓郵報訃聞（403）、NPR 訃聞（503）、Rolling Stone 訃聞（轉址 tollbit）。『rap 教父，他自己拒絕』一條來源是 WebSearch 摘要對 NPR 與 Hollywood Reporter 的整理，未取得全文；寫作層可寫『有時被稱為 rap 教父』，『他拒絕這稱號』宜降調。牢獄細節取自維基 I'm New Here 條目與搜尋摘要，第二源（NME 2006 的入獄報導）只見搜尋結果標題，未取全文，年份取自維基與搜尋摘要，facts 已去掉逐日日期。HIV 確診（2008）只見維基單源，不收。Kanye／Common 等人的『受影響』引述：只有 Chuck D 一句有 Britannica 單源。National Recording Registry 2005、Grammy Hall of Fame 2014 只見 Britannica 單源（官方名單）。"
+  },
+  {
+    "key": "graham central station",
+    "name": "Graham Central Station",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Graham Central Station 是貝斯手 Larry Graham 離開 Sly and the Family Stone 後，1970 年代初在加州奧克蘭與舊金山灣區成立的樂團；團名是在玩紐約 Grand Central Station 的諧音。",
+            "src": "https://en.wikipedia.org/wiki/Larry_Graham",
+            "from": "new"
+          },
+          {
+            "f": "Larry Graham 1946 年 8 月 14 日生於德州 Beaumont，父母都是成功的音樂人。",
+            "src": "https://en.wikipedia.org/wiki/Larry_Graham",
+            "from": "new"
+          },
+          {
+            "f": "他 15 歲加入母親的 Dell Graham Trio（鋼琴、鼓與他的吉他），母親後來決定不再用鼓手；他說自己是為了彌補沒有鼓手，才「想在貝斯上打鼓」，用拇指敲弦頂替大鼓、用手指勾弦頂替 snare 的反拍，這就是他稱為「thumpin' and pluckin'」的 slap bass。",
+            "src": "https://www.premierguitar.com/artists/interview-larry-graham-sheer-energy",
+            "from": "new"
+          },
+          {
+            "f": "Rolling Stone 的貝斯手榜單條目也寫他是在與母親組成的三重奏裡，因鼓手離開而發展出這套打法，並引用他的話：用拇指敲弦補大鼓，用手指勾弦補 snare 的反拍。",
+            "src": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/larry-graham-13610",
+            "from": "new"
+          },
+          {
+            "f": "他說自己母親的鋼琴左手低音型，是他貝斯低音型最大的影響來源。",
+            "src": "https://www.premierguitar.com/artists/interview-larry-graham-sheer-energy",
+            "from": "new"
+          },
+          {
+            "f": "Graham 說自己當上團長是「出於必要」而非野心：他當時在 Hot Chocolate 這個團當製作人、也寫所有的歌，等到發現自己也在團裡，就自然接下團長的位置。",
+            "src": "https://www.premierguitar.com/artists/interview-larry-graham-sheer-energy",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Larry Graham 被視為 slap bass 的發明者或推廣者：維基寫他在母親的樂團裡創出這種打法；Rolling Stone 寫他在 Sly and the Family Stone 時期讓這技巧廣為流傳。",
+            "src": "https://en.wikipedia.org/wiki/Larry_Graham",
+            "from": "new"
+          },
+          {
+            "f": "Sly Stone 有一晚在夜店聽到 Graham 演奏，邀他加入一支連名字都還沒有的新團；Graham 說，若沒有那一晚，他的風格也許不會廣為人知。",
+            "src": "https://www.premierguitar.com/artists/interview-larry-graham-sheer-energy",
+            "from": "new"
+          },
+          {
+            "f": "Graham Central Station 的成員包括 Larry Graham（人聲、貝斯）、Patryce「Chocolate」Banks、David Vega、Willie Sparks、Hershall Kennedy 與 Robert Sam；樂團起初簽在 Warner Bros. Records。",
+            "src": "https://en.wikipedia.org/wiki/Graham_Central_Station",
+            "from": "new"
+          },
+          {
+            "f": "Rolling Stone 引 Brian Eno 的觀察：Graham 這套「thumpin' and pluckin'」讓錄音裡的重心從旋律樂器轉向節奏樂器。",
+            "src": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/larry-graham-13610",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Rolling Stone 的《50 Greatest Bassists of All Time》（2020）把 Larry Graham 排在第 7 名。",
+            "src": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/larry-graham-13610",
+            "from": "new"
+          },
+          {
+            "f": "Slap bass 後來成為 Stanley Clarke、Bootsy Collins、Marcus Miller、Les Claypool、Flea、Doug Wimbish 與 Victor Wooten 等貝斯手的基本技法。",
+            "src": "https://stringjoy.com/history-slap-bass/",
+            "from": "new"
+          },
+          {
+            "f": "維基寫 Graham 的打法影響了 Bootsy Collins、Flea、Les Claypool 與 Marcus Miller。",
+            "src": "https://en.wikipedia.org/wiki/Larry_Graham",
+            "from": "new"
+          },
+          {
+            "f": "Prince 曾稱 Graham 是「我的老師」；Rolling Stone 稱兩人是朋友與長期合作者。",
+            "src": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/larry-graham-13610",
+            "from": "new"
+          },
+          {
+            "f": "Graham 1975 年成為耶和華見證人，被認為是他把 Prince 帶進這個信仰；1990 年代後期他搬到 Prince 所在的 Chanhassen，Prince 說他是精神導師。",
+            "src": "https://en.wikipedia.org/wiki/Larry_Graham",
+            "from": "new"
+          },
+          {
+            "f": "1998 年 Graham Central Station 的專輯《GCS 2000》由 Larry Graham 與 Prince 共同製作，在 Prince 的 NPG Records 發行，是這個團名 1979 年之後的第一張專輯；起因是 Prince 鼓勵他讓沉寂已久的樂團復活。",
+            "src": "https://discography.prince.com/albums/larry-graham-gcs-2000",
+            "from": "new"
+          },
+          {
+            "f": "Larry Graham 1993 年以 Sly and the Family Stone 成員身分入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Larry_Graham",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Graham Central Station 1975 年的專輯《Ain't No 'Bout-A-Doubt It》在美國達到金唱片，收錄〈Your Love〉；〈Your Love〉1975 年登上 R&B 榜第 1 名。",
+            "src": "https://en.wikipedia.org/wiki/Graham_Central_Station",
+            "from": "new"
+          },
+          {
+            "f": "Larry Graham 1980 年單曲〈One in a Million You〉登上 Billboard Hot 100 第 9 名。",
+            "src": "https://en.wikipedia.org/wiki/Larry_Graham",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1975 年《Ain't No 'Bout-A-Doubt It》在美國達到金唱片。",
+        "src": "https://en.wikipedia.org/wiki/Graham_Central_Station",
+        "from": "new"
+      },
+      {
+        "f": "Larry Graham 1993 年以 Sly and the Family Stone 成員身分入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Larry_Graham",
+        "from": "new"
+      },
+      {
+        "f": "Rolling Stone 2020 年《50 Greatest Bassists of All Time》把 Larry Graham 排第 7 名。",
+        "src": "https://au.rollingstone.com/music/music-lists/50-greatest-bassists-of-all-time-13565/larry-graham-13610",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基 Graham Central Station 條目寫團由 Hot Chocolate 演變、Graham 起初是那個團的作曲兼製作；Premier Guitar 訪談是 Graham 本人的說法；兩者一致，未見衝突。",
+      "事實庫沒有任何 Graham Central Station 研究稿與上線簡介，無衝突。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫全空，三格全 gap。補查 6 次：維基 Graham Central Station、維基 Larry Graham、WebSearch（slap bass 與 Prince）、Premier Guitar 訪談、WebSearch（Prince 與 GCS）、Rolling Stone 貝斯榜條目。樂團條，facts 以樂團為主，Larry Graham 是核心與創辦人。未收：成軍確切年份（維基只寫 1973，未有第二來源，facts 只寫『1970 年代初』）；Graham 離開 Sly 的年份與原因（維基寫 1972 年與一場演出後的爭吵，只此一源）；Graham 1946 年生的出生日期已有維基與搜尋結果標題（Jointz of the Day）兩處，但未取全文，寫作層若要用請低調；〈Your Love〉登 R&B 榜第 1 名與專輯金唱片只見維基單源、未逐條核對榜單，已放進 era，寫作層宜慎寫；1997–98 與 2012 重聚只維基單源，不收。注意：Rock Hall 1993 入選是以 Sly and the Family Stone 成員身分，不是 Graham Central Station 本身。Prince 稱 Graham『老師』出自 Rolling Stone 條目，精神導師與搬到 Chanhassen 出自搜尋摘要。"
   }
 ]

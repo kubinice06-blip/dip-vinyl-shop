@@ -275,7 +275,7 @@
   ],
   "conflicts": [],
   "searches": 4,
-  "failedFetches": 3,
+  "failedFetches": 4,
   "status": "full",
   "pubIssues": [],
   "notes": "事實庫 research 與 published 皆空，全靠補查。用了英文維基、WebSearch 兩次、soulyears 一次；AllMusic（403）、jazzrocksoul（空頁）、last.fm（載入錯誤）、wbssmedia（驗證頁）取不到，不計，另記 failedFetches。未收：Lou Wilson 2013 年過世（年齡與年份只見維基單源）、Ric Wilson 為哈佛畢業的心臟科醫師與 Carlos 為越戰退伍且上過 Mannes School of Music（只見搜尋摘要，未逐頁核對）、對 Parliament-Funkadelic 有影響（只見搜尋摘要，來源不明）、Polydor 時期年份（屬廠牌履歷）。搜尋結果出現 grokipedia 頁，未採用。"
@@ -803,5 +803,603 @@
   "status": "full",
   "pubIssues": [],
   "notes": "事實庫 research 與 published 皆空，全靠補查。用了維基 Teddy Pendergrass、Britannica、WebSearch（車禍）、UPI 1982 年報導、WebSearch（影響）共五次；NYT 訃聞（不可抓取）與 The Root（空頁）取不到，不計。車禍細節的來源：時間、車款、護欄與撞樹、被困 45 分鐘見 UPI 當日報導，另有搜尋所見 Washington Post 與其他報導一致；下半身癱瘓有維基、Britannica 與 UPI 三源（部位寫法不一致，見 conflicts）。車禍乘客 Tenika Watson 的身分不收。生卒年有維基與 Britannica 兩源。未收：Sataloff 醫師特製背心協助呼吸（只見維基單源）、Live Aid 上與 Ashford & Simpson 合唱〈Reach Out and Touch (Somebody's Hand)〉（只見搜尋摘要）、影響 Usher、Maxwell、Anthony Hamilton 的說法（只見搜尋摘要，未逐頁核對）、2006 年退休與 2007 年回歸。1982 年時他是否已有「七張白金」不明，故不寫。"
+ },
+ {
+  "key": "the o’jays",
+  "name": "The O’Jays",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The O'Jays 出自俄亥俄州 Canton，成員在 Canton McKinley High School 就讀時組團。",
+      "src": "https://en.wikipedia.org/wiki/The_O%27Jays",
+      "from": "new"
+     },
+     {
+      "f": "Eddie Levert 與 Walter Williams 是 Canton 的兒時朋友，1950 年代末一起唱福音，之後與三位同學組成早期的團。",
+      "src": "https://www.britannica.com/topic/The-OJays",
+      "from": "new"
+     },
+     {
+      "f": "1963 年他們改名為 The O'Jays，向克里夫蘭電台 DJ Eddie O'Jay 致敬。",
+      "src": "https://en.wikipedia.org/wiki/The_O%27Jays",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 同樣記載：克里夫蘭 DJ Eddie O'Jay 力挺這個團，他們於 1963 年改名為 The O'Jays。",
+      "src": "https://www.britannica.com/topic/The-OJays",
+      "from": "new"
+     },
+     {
+      "f": "最初的五位成員是 Eddie Levert、Walter Williams、William Powell、Bobby Massey 與 Bill Isles。",
+      "src": "https://en.wikipedia.org/wiki/The_O%27Jays",
+      "from": "new"
+     },
+     {
+      "f": "William Powell 1977 年過世，Sammy Strain 隨後加入。",
+      "src": "https://www.britannica.com/topic/The-OJays",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Britannica 稱 Kenny Gamble 與 Leon Huff 替 O'Jays 的音樂灌進費城靈魂樂的特色：豐厚的管弦編曲、放克節奏與具社會意識的歌詞。",
+      "src": "https://www.britannica.com/topic/The-OJays",
+      "from": "new"
+     },
+     {
+      "f": "搖滾名人堂形容他們的聲音「velvety, lush, yet funk-tinged」，並說他們「were instrumental in popularizing Philly soul and the work of songwriting team Gamble and Huff」。",
+      "src": "https://www.rockhall.com/inductees/ojays",
+      "from": "new"
+     },
+     {
+      "f": "〈For the Love of Money〉由 Kenneth Gamble、Leon Huff 與貝斯手 Anthony Jackson 合寫；Jackson 的貝斯線過了 phaser 效果器，做出那個標誌性的嗖嗖聲。",
+      "src": "https://en.wikipedia.org/wiki/For_the_Love_of_Money",
+      "from": "new"
+     },
+     {
+      "f": "〈For the Love of Money〉的歌詞出自《提摩太前書》6 章 10 節，批判貪婪與物質主義。",
+      "src": "https://en.wikipedia.org/wiki/For_the_Love_of_Money",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們 2005 年入選搖滾名人堂，名人堂稱他們是「the pinnacle of Seventies soul music」，由 Justin Timberlake 擔任引介人。",
+      "src": "https://www.rockhall.com/inductees/ojays",
+      "from": "new"
+     },
+     {
+      "f": "The O'Jays 2004 年入選 Vocal Group Hall of Fame，2005 年入選搖滾名人堂，2013 年入選 Rhythm and Blues Music Hall of Fame。",
+      "src": "https://en.wikipedia.org/wiki/The_O%27Jays",
+      "from": "new"
+     },
+     {
+      "f": "〈Love Train〉與〈For the Love of Money〉都入選葛萊美名人堂（Grammy Hall of Fame）；〈For the Love of Money〉是 2016 年入選。",
+      "src": "https://en.wikipedia.org/wiki/For_the_Love_of_Money",
+      "from": "new"
+     },
+     {
+      "f": "〈For the Love of Money〉登上 Billboard Hot 100 第 9 名、R&B 榜第 3 名。",
+      "src": "https://en.wikipedia.org/wiki/For_the_Love_of_Money",
+      "from": "new"
+     },
+     {
+      "f": "〈For the Love of Money〉獲 1975 年葛萊美最佳 R&B 團體或二重唱演出提名（入圍），敗給 Rufus 的〈Tell Me Something Good〉。",
+      "src": "https://en.wikipedia.org/wiki/For_the_Love_of_Money",
+      "from": "new"
+     },
+     {
+      "f": "〈For the Love of Money〉後來成為 NBC 實境節目《The Apprentice》的開場主題曲。",
+      "src": "https://en.wikipedia.org/wiki/For_the_Love_of_Money",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1972 年的〈Back Stabbers〉是他們在費城廠牌時期的商業突破，1973 年的〈Love Train〉登上冠軍。",
+      "src": "https://en.wikipedia.org/wiki/The_O%27Jays",
+      "from": "new"
+     },
+     {
+      "f": "1977 年 William Powell 過世，Sammy Strain 加入。",
+      "src": "https://www.britannica.com/topic/The-OJays",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1963 年改名 The O'Jays。",
+    "src": "https://en.wikipedia.org/wiki/The_O%27Jays",
+    "from": "new"
+   },
+   {
+    "f": "1972 年〈Back Stabbers〉成為商業突破。",
+    "src": "https://en.wikipedia.org/wiki/The_O%27Jays",
+    "from": "new"
+   },
+   {
+    "f": "2005 年入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/ojays",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基寫成軍於 1958 年、Britannica 寫 1959 年（早期團名 Triumphs）；兩源不一致，facts 不寫成軍年，只寫 1963 年改名（兩源一致）。",
+   "Britannica 把〈For the Love of Money〉列在 1973 年，維基寫 1974 年 4 月發行（1973 年 10 月錄音）；facts 不寫發行年。",
+   "維基寫 Gamble and Huff 1971 年簽下 O'Jays，Britannica 寫 1968 年起合作；兩源不一致，facts 不寫年份。"
+  ],
+  "searches": 5,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫 research 與 published 皆空，全靠補查（樂團條，介紹樂團本身）。用了英文維基 The O'Jays、搖滾名人堂官網、Britannica、WebSearch、維基〈For the Love of Money〉五次。搖滾名人堂 2005 年有維基、Britannica、名人堂官網三源。未收：William Powell 享年 35 歲與 Bill Isles 2019 年過世（維基抓取結果與 Walter Williams 2019 年過世混淆，未逐頁核對）；Eddie Levert 之子 Gerald 與 Sean（未查）；2016 年 Trump 使用〈Love Train〉與團員反應（與作品無關，且只見搜尋摘要）；維基「現仍演出」的敘述已過時，不收。搜尋結果中的 Wiki of the Arts（Fandom）與部落格不當來源。"
+ },
+ {
+  "key": "whitney houston",
+  "name": "Whitney Houston",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Whitney Houston 1963 年 8 月 9 日生於紐澤西州 Newark，2012 年 2 月 11 日在加州 Beverly Hills 過世，享年 48 歲。",
+      "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 同樣記她 1963 年 8 月 9 日生於 Newark，2012 年 2 月 11 日在 Beverly Hills 過世，享年 48 歲；死因為意外溺水，心臟病與古柯鹼使用是促成因素。",
+      "src": "https://www.britannica.com/biography/Whitney-Houston",
+      "from": "new"
+     },
+     {
+      "f": "她的母親 Cissy Houston 是葛萊美得主的福音與靈魂歌手，曾替 Aretha Franklin 伴唱；表姊是 Dionne Warwick。",
+      "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 同樣記載：母親 Emily「Cissy」Houston 是 Aretha Franklin 的和聲歌手，表姊是 Dionne Warwick；Whitney 從小在教會唱歌，高中時替 Chaka Khan 與 Lou Rawls 唱和聲，也當過時裝模特兒。",
+      "src": "https://www.britannica.com/biography/Whitney-Houston",
+      "from": "new"
+     },
+     {
+      "f": "她 5 歲加入 Newark 的 New Hope Baptist Church 詩班，12 歲（1975 年 11 月）第一次在教會獨唱。",
+      "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "1983 年 Clive Davis 在 Sweetwaters 夜店看了她的演出後，與她簽下 Arista 合約。",
+      "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 稱 Clive Davis 把這位福音出身的歌手「groomed」成適合跨界流行的歌手。",
+      "src": "https://www.britannica.com/biography/Whitney-Houston",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她從福音唱腔出發，走向跨界流行；四個八度的音域橫跨女高音與次女高音。",
+      "src": "https://en.wikipedia.org/wiki/Cultural_impact_of_Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "她在 1980 至 1990 年代把 melisma（一字多音的花腔轉音）帶進主流流行樂；樂評稱她把 Aretha Franklin 的力度與 quiet storm 的柔潤音色放在一起。",
+      "src": "https://en.wikipedia.org/wiki/Cultural_impact_of_Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "1991 年 1 月 27 日她在第 25 屆 Super Bowl 唱美國國歌，單曲版登上 Billboard Hot 100 前 20 名；導演 Kevin Macdonald 說這場演出讓她成為「America's Sweetheart」。",
+      "src": "https://en.wikipedia.org/wiki/Cultural_impact_of_Whitney_Houston",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她是連續七支單曲登上 Billboard Hot 100 冠軍的歌手，紀錄打破了 The Beatles。",
+      "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "她的全球唱片銷量超過 2.2 億張，是史上銷量最高的音樂人之一。",
+      "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "1985 年的同名首張專輯是銷量最高的個人首作之一，拿到鑽石認證；1987 年的《Whitney》是第一張首週就登上 Billboard 200 冠軍的女歌手專輯。",
+      "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "《The Bodyguard》原聲帶是女歌手銷量最高的專輯，也是史上銷量最高的原聲帶；她因此拿下 1994 年葛萊美年度專輯（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "她在《The Bodyguard》中翻唱的〈I Will Always Love You〉連續 14 週登上冠軍，這個版本 2019 年入選美國國家錄音登記簿。",
+      "src": "https://www.britannica.com/biography/Whitney-Houston",
+      "from": "new"
+     },
+     {
+      "f": "她 2020 年入選搖滾名人堂，名人堂稱她是「greatest singer of her generation」；Jennifer Hudson 說：「看到這位女神用臉上的氣勢、再用嗓音掌控舞台，就想我也要成為那樣。」",
+      "src": "https://www.rockhall.com/inductees/whitney-houston",
+      "from": "new"
+     },
+     {
+      "f": "點名受她影響的歌手包括 Mariah Carey、Beyoncé、Adele 與 Ariana Grande。",
+      "src": "https://en.wikipedia.org/wiki/Cultural_impact_of_Whitney_Houston",
+      "from": "new"
+     },
+     {
+      "f": "《滾石》2023 年的「200 位最偉大歌手」榜把她排在第 2 名。",
+      "src": "https://en.wikipedia.org/wiki/Cultural_impact_of_Whitney_Houston",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1985 年的首張專輯《Whitney Houston》讓她成為主流流行歌手。",
+      "src": "https://www.britannica.com/biography/Whitney-Houston",
+      "from": "new"
+     },
+     {
+      "f": "1992 年的《The Bodyguard》是她的電影處女作，原聲帶與電影同時成為她的代表作。",
+      "src": "https://www.britannica.com/biography/Whitney-Houston",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1985 年首張專輯《Whitney Houston》發行，拿到鑽石認證。",
+    "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+    "from": "new"
+   },
+   {
+    "f": "1991 年 1 月 27 日在 Super Bowl XXV 演唱美國國歌。",
+    "src": "https://en.wikipedia.org/wiki/Whitney_Houston",
+    "from": "new"
+   },
+   {
+    "f": "2020 年入選搖滾名人堂。",
+    "src": "https://www.rockhall.com/inductees/whitney-houston",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Britannica 把《The Bodyguard》的葛萊美寫成 1993 年（資格年），維基寫 1994 年；facts 只用維基的頒獎年 1994。上線簡介寫「第 36 屆葛萊美年度專輯」（1994 年頒獎）與此一致。"
+  ],
+  "searches": 5,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫 research 為空，published 僅《The Bodyguard》一張，其餘靠補查。用了維基 Whitney Houston、搖滾名人堂官網、WebSearch（Guinness 與連續冠軍紀錄）、維基〈Cultural impact of Whitney Houston〉、Britannica 共五次。生卒日期有維基與 Britannica 兩源；搖滾名人堂 2020 年有 Britannica 與名人堂官網兩源。上線簡介《The Bodyguard》的第 36 屆葛萊美年度專輯與本層查到的一致；其他數字（21 國榜首、34 國冠軍、兩千四百萬）未逐項查。未收：首位獲 MTV 密集播放的黑人女性（第一類宣稱，只見維基單源，有 Donna Summer 等前例的爭議風險）、Britannica 寫首張專輯是女歌手首次有三支單曲登上 Hot 100 冠軍（第一類，單源）、「唯一連七支冠軍」的「唯一」字眼、Guinness 33 項紀錄與 400 多個獎（只見搜尋摘要）、死因細節以外的個人生活。「首週就登冠軍的女歌手專輯」一條見維基單源，屬第一類宣稱；查無反例，予收，但寫作層可略。"
+ },
+ {
+  "key": "william bell",
+  "name": "William Bell",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "William Bell 1939 年 7 月 16 日生於田納西州 Memphis，本名 William Yarbrough；「Bell」取自祖母 Belle 的名字。",
+      "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "他 1939 年生於 Memphis 並在當地長大，六、七歲在教會唱歌，九、十歲開始寫歌；他是獨生子，寫歌是他的出口。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     },
+     {
+      "f": "他是第一位簽進 Stax Records 的男性個人歌手，1961 年錄下出道單曲〈You Don't Miss Your Water〉。",
+      "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "他是剛起步的 Stax 簽下的第一位男性個人歌手，並協助發展出後來稱為 Memphis Sound 的南方靈魂樂。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     },
+     {
+      "f": "Stax 對附近街坊的孩子來說像「a home away from home」；Jim Stewart 與 Estelle Axton 在種族隔離的年代讓不同種族的人一起創作。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他與 Booker T. Jones 合寫〈Born Under a Bad Sign〉，這首歌經 Albert King 與 Cream 唱紅。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     },
+     {
+      "f": "他寫的歌被 Albert King 與 Cream 唱成藍調經典。",
+      "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "他認為靈魂歌手每次演出都不會用一模一樣的方式唱同一首歌：「you're creating as you deliver the idea」。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     },
+     {
+      "f": "他把靈魂樂與南方情歌傳統連在一起：1961 年的〈You Don't Miss Your Water〉是他的突破作，也是 Memphis 靈魂樂的早期名曲。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈You Don't Miss Your Water〉先後被 Otis Redding 與 The Byrds 翻唱。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     },
+     {
+      "f": "〈You Don't Miss Your Water〉2024 年入選葛萊美名人堂（Grammy Hall of Fame）。",
+      "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "他 2020 年獲頒 National Heritage Fellowship，美國國家藝術基金會稱那是民俗與傳統藝術的國家最高榮譽。",
+      "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "2016 年他與重新啟用的 Stax 簽約，發行《This Is Where I Live》，拿下他的第一座葛萊美，類別為最佳 Americana 專輯。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     },
+     {
+      "f": "他透過 Stax Music Academy 與 Take Me to the River Education Foundation 指導年輕音樂人。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     },
+     {
+      "f": "〈Tryin' to Love Two〉登上 Billboard R&B 榜冠軍，Hot 100 第 10 名。",
+      "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1975 年 Stax 關門後，他搬到亞特蘭大成立自己的廠牌。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     },
+     {
+      "f": "2016 年他與重新啟用的 Stax 簽約，發行《This Is Where I Live》。",
+      "src": "https://www.arts.gov/honors/heritage/fellows/william-bell",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1961 年錄下出道單曲〈You Don't Miss Your Water〉，是第一位簽進 Stax 的男性個人歌手。",
+    "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+    "from": "new"
+   },
+   {
+    "f": "2017 年《This Is Where I Live》獲葛萊美最佳 Americana 專輯（得獎）。",
+    "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+    "from": "new"
+   },
+   {
+    "f": "2020 年獲頒 National Heritage Fellowship。",
+    "src": "https://en.wikipedia.org/wiki/William_Bell_(singer)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基寫〈Tryin' to Love Two〉為 1976 年，NEA 頁寫 1977 年；兩源不一致，facts 不寫年份。"
+  ],
+  "searches": 3,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫 research 為空，published 三張（《Bound to Happen》《Phases of Reality》《This Is Where I Live》）。用了英文維基、NEA 官網（National Heritage Fellow 頁）、WebSearch 三次。上線簡介的「Stax 首位男性個人歌手」與維基、NEA 兩源一致；「2017 年葛萊美最佳美國音樂專輯」與維基一致；其餘（I Forgot to Be Your Lover 榜位、Robert Cray 與 Springsteen 翻唱）未逐項查。未收：與 Booker T. Jones 另合寫〈I Forgot to Be Your Lover〉〈Private Number〉（只見搜尋摘要）、與 Otis Redding 的友誼（只見搜尋摘要）、1962 至 1964 年服役（NEA 單源）、〈Born Under a Bad Sign〉的確切創作年。第 3 條 sound 事實是對 NEA 頁內容的概括，寫作層若引用請以「1961 年〈You Don't Miss Your Water〉是突破作」為限。「第一位簽進 Stax 的男性個人歌手」屬第一類宣稱，維基與 NEA 兩源一致，且上線簡介已採用。"
+ },
+ {
+  "key": "alicia keys",
+  "name": "Alicia Keys",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alicia Keys 1981 年 1 月 25 日生於紐約曼哈頓的 Hell's Kitchen，本名 Alicia Augello Cook。",
+      "src": "https://en.wikipedia.org/wiki/Alicia_Keys",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 同樣記她 1981 年 1 月 25 日生於紐約，本名 Alicia Augello Cook。",
+      "src": "https://www.britannica.com/biography/Alicia-Keys",
+      "from": "new"
+     },
+     {
+      "f": "她兩歲時父親離家，由母親在一房公寓裡養大；母親 Teresa Augello 是律師助理兼兼職演員。",
+      "src": "https://en.wikipedia.org/wiki/Alicia_Keys",
+      "from": "new"
+     },
+     {
+      "f": "她小時候，母親在週日早晨放 Thelonious Monk、Billie Holiday、Ella Fitzgerald 與 Louis Armstrong 的唱片；青少年時她迷上 Marvin Gaye 與 Curtis Mayfield。",
+      "src": "https://en.wikipedia.org/wiki/Alicia_Keys",
+      "from": "new"
+     },
+     {
+      "f": "她從 7 歲起學古典鋼琴，每天練六小時，學的作曲家包括 Beethoven、Mozart、Chopin 與 Satie，古典訓練持續到 18 歲。",
+      "src": "https://en.wikipedia.org/wiki/Alicia_Keys",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 同樣記載：她 7 歲起學鋼琴，主攻古典與爵士，14 歲時已寫出原創曲；16 歲以第一名畢業於曼哈頓的 Professional Performing Arts School。",
+      "src": "https://www.britannica.com/biography/Alicia-Keys",
+      "from": "new"
+     },
+     {
+      "f": "她 1996 年簽進 Columbia，不滿廠方要把她推向青少年偶像路線；1998 年的試聽帶被 Columbia 拒絕後，Clive Davis 買下她的合約，簽她到 Arista，2000 年她隨 Davis 轉到新成立的 J Records 完成首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Songs in A Minor》把當代古典音樂與 R&B、靈魂、爵士融在一起，另有嘻哈、藍調與福音的影響；核心是她的鋼琴。",
+      "src": "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+      "from": "new"
+     },
+     {
+      "f": "樂評形容專輯是「old-school urban sounds and attitude set against a backdrop of classical piano and sweet, warm vocals」。",
+      "src": "https://en.wikipedia.org/wiki/Alicia_Keys",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 稱她的作品把現代感與 Marvin Gaye、Stevie Wonder 等早期靈魂樂前輩的聲音結合。",
+      "src": "https://www.britannica.com/biography/Alicia-Keys",
+      "from": "new"
+     },
+     {
+      "f": "首張專輯 16 首成品中，她寫了 14 首、製作了 15 首；她以〈Troubles〉為專輯成形的轉折：「Finally, I knew how to structure my feelings into something that made sense」。",
+      "src": "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+      "from": "new"
+     },
+     {
+      "f": "她說〈Troubles〉是專輯成形的轉折，「Finally, I knew how to structure my feelings into something that made sense」（引自 2001 年《滾石》）。",
+      "src": "https://www.grammy.com/news/alicia-keys-songs-minor-20th-anniversary-record/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2002 年第 44 屆葛萊美，她以《Songs in A Minor》拿下 5 座：最佳 R&B 專輯，以及〈Fallin'〉的年度歌曲、最佳 R&B 歌曲、最佳女 R&B 演唱，另有最佳新人。",
+      "src": "https://www.grammy.com/news/alicia-keys-songs-minor-20th-anniversary-record/",
+      "from": "new"
+     },
+     {
+      "f": "她在第 44 屆葛萊美一晚拿 5 座，追平 Lauryn Hill 創下的女性單夜獲獎紀錄。",
+      "src": "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+      "from": "new"
+     },
+     {
+      "f": "〈Fallin'〉登上 Billboard Hot 100 冠軍，並是 2001 年美國成績第二好的單曲。",
+      "src": "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+      "from": "new"
+     },
+     {
+      "f": "《Songs in A Minor》2001 年首週賣出 23.6 萬張，登上 Billboard 200 冠軍；全球銷量超過 1200 萬張。",
+      "src": "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+      "from": "new"
+     },
+     {
+      "f": "Britannica 記《Songs in A Minor》全球銷量逾 1000 萬張，〈Fallin'〉登上冠軍。",
+      "src": "https://www.britannica.com/biography/Alicia-Keys",
+      "from": "new"
+     },
+     {
+      "f": "Bob Dylan 在 2006 年的歌〈Thunder on the Mountain〉裡點名了 Alicia Keys，起因是他看了 2002 年葛萊美頒獎典禮的轉播。",
+      "src": "https://www.grammy.com/news/alicia-keys-songs-minor-20th-anniversary-record/",
+      "from": "new"
+     },
+     {
+      "f": "Billboard 把她評為 2000 年代的 R&B/Hip-Hop 頂尖藝人，《時代》雜誌 2005 年與 2017 年兩度把她列入百大影響力人物。",
+      "src": "https://en.wikipedia.org/wiki/Alicia_Keys",
+      "from": "new"
+     },
+     {
+      "f": "她參與創作的音樂劇《Hell's Kitchen》上演於百老匯，拿下兩座東尼獎。",
+      "src": "https://en.wikipedia.org/wiki/Alicia_Keys",
+      "from": "new"
+     },
+     {
+      "f": "她創作的音樂劇《Hell's Kitchen》2024 年在百老匯上演，獲 13 項東尼獎提名。",
+      "src": "https://www.britannica.com/biography/Alicia-Keys",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2001 年首張專輯《Songs in A Minor》出版，同年〈Fallin'〉登上冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+      "from": "new"
+     },
+     {
+      "f": "2009 年她與 Jay-Z 合作〈Empire State of Mind〉；2020 年的《ALICIA》是她的第七張錄音室專輯。",
+      "src": "https://www.britannica.com/biography/Alicia-Keys",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年首張專輯《Songs in A Minor》登上 Billboard 200 冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Songs_in_A_Minor",
+    "from": "new"
+   },
+   {
+    "f": "2002 年第 44 屆葛萊美拿下 5 座（得獎）。",
+    "src": "https://www.grammy.com/news/alicia-keys-songs-minor-20th-anniversary-record/",
+    "from": "new"
+   },
+   {
+    "f": "2024 年音樂劇《Hell's Kitchen》在百老匯上演。",
+    "src": "https://www.britannica.com/biography/Alicia-Keys",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Songs in A Minor》發行日期：維基專輯條目寫 2001 年 6 月 26 日，GRAMMY.com 寫 6 月 5 日；兩源不一致，facts 不寫日期。",
+   "《Songs in A Minor》銷量：維基寫逾 1200 萬張，Britannica 寫逾 1000 萬張；facts 兩條各引各的來源，寫作層取「逾 1000 萬張」較穩。",
+   "維基寫她 12 歲進 Professional Performing Arts School，Britannica 寫 16 歲以第一名畢業；兩者不衝突，facts 只採後者。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫 research 與 published 皆空，全靠補查。卡池五張（Songs in A Minor、The Diary of Alicia Keys、Girl on Fire、Santa Baby、ALICIA）確為同一人。用了維基 Alicia Keys（兩次）、Britannica、WebSearch、維基 Songs in A Minor、GRAMMY.com 共六次。生日有維基與 Britannica 兩源；2002 年 5 座葛萊美有 GRAMMY.com、維基專輯條目與 Britannica 三源；追平 Lauryn Hill 有維基專輯條目與搜尋所見 GRAMMY.com 摘要。未收：受她影響的歌手名單（Adele、Bruno Mars、Rihanna、Janelle Monáe 等，只見搜尋摘要，出處為維基一類，未逐頁核對）、葛萊美總座數（維基抓取摘要寫 17，未核對）、《Hell's Kitchen》2023 年首演與確切東尼獎年份、全球逾 9000 萬張的總銷量（維基單源）。其中 Time 100 與 Billboard 年代最佳藝人只見維基單源，屬榮譽類，予收。"
  }
 ]
