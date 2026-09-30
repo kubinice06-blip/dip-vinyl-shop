@@ -110,3 +110,4 @@
 ### ar-b-011
 
 - 補洞第 1、2 組交件。Stereophonics 貢獻格 none（thin）。Steven Wilson「最成功卻沒人聽過」屬單一報紙語，不寫。
+- 寫作第 1 組（20 位）審畢，修 2 處：Sublime 刪「RIAA 鑽石認證」（未核、屬會變動的認證數）；Supertramp 補 Rick Davies 2025-09-06 過世（主線 WebSearch 核實：CNN、NPR、Billboard）。
