@@ -583,5 +583,501 @@
   "failedFetches": 9,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，從零查。本位用 8 次：維基 Solomon Burke、搖滾名人堂官網、WebSearch 訃聞、Britannica、WebSearch（訃聞二）、NME、維基 Everybody Needs Somebody to Love、維基《Don't Give Up on Me》專輯條目。失敗請求 9 次（⚠ 超過上限 4，照實記錄，該類請求未取得內容、也未據以寫任何 fact）：NPR Fresh Air 逐字稿 503、Rolling Stone 訃聞重導、tollbit 版 402、NPR 訃聞 503、Hollywood Reporter 重導 tollbit、gigulate 503、維基專輯條目一個 404 網址、維基 Don't Give Up on Me 消歧頁（無專輯內容）、一次帶網域過濾的 WebSearch 因網域不可存取而報錯。卡池四張專輯（Rock 'n' Soul、King Solomon、A Change Is Gonna Come、Don't Give Up On Me）確認為同一人。名人堂官方（可具名單源）：rockhall.com 稱他為『the King of Rock 'n' Soul』，稱其為鄉村影響的靈魂歌手，嗓音『gritty, ardent—the voice of a man who has lived and seen it all』。單源不收 facts：Wexler 稱他『the best soul singer of all time』（NME 有，另一源只見搜尋摘要未開頁，可具名為『Jerry Wexler 說過』）；他被祖母 Eleanor Moore 在 Solomon's Temple（United House of Prayer for All People）出生時封為主教、7 歲講道、『Boy Wonder Preacher』（維基單源，搜尋摘要另稱 7 歲講道與 21 歲前成為主教）；1960 年 11 月簽 Atlantic、1963 年 11 月在 Baltimore Royal Theatre 加冕、告訴 James Brown 的軼事（維基單源）；1961 年首支全國熱門〈Just Out of Reach〉與 Bert Berns 合作 1962–1965 年多首榜單歌（Britannica 單源）；Rolling Stone 2008 百大歌手第 89 名、2005 年賣出 1700 萬張、21 個孩子、創立約 180 間教會的教派（維基單源；NME 另有 21 個孩子與 90 個孫子女）；〈Everybody Needs Somebody to Love〉Burke 版最高第 58 名、Pickett 1966 年版流行榜第 29 名、Rolling Stone 500 首第 429 名、Mick Jagger 2011 年葛萊美為紀念 Burke 演出（維基歌曲條目單源）；《Don't Give Up on Me》2002 年 7 月 23 日發行、標題曲來自 Dan Penn 與 Carson Whitsett、Daniel Lanois 與 Blind Boys of Alabama 參與、標題曲用於《The O.C.》、Metacritic 85（專輯維基單源，只有『Joe Henry 製作』『名家寫歌』與 Grammy 一項有 Britannica 之外的印證，其中 Britannica 只證實 2002 專輯得最佳當代藍調專輯，未提 Joe Henry 與詞曲作者名單，故 era 那條的第二源只支持專輯與得獎，寫作層對製作人與詞曲作者名單須知這是維基單源）；〈Cry to Me〉用於 1987 年《Dirty Dancing》（搜尋摘要）；死因推測肺栓塞（維基單源）。非獨立：維基歌曲條目與維基藝人／專輯條目同站；NME 訃聞內容與搜尋摘要相同。sound 一條的第二源維基僅支持『講道與福音廣播出身』，風格描述是 Britannica 單源，寫作層宜具名為『Britannica 描述』。 更正：era 那條已縮成『2002 年專輯發行並得葛萊美』，Joe Henry 製作與詞曲作者名單只見維基專輯條目單源、不進 facts；Britannica 稱他把福音與 R&B 融合、協助確立 1960 年代初靈魂樂（單源，不進 facts）。"
+ },
+ {
+  "key": "sylvester",
+  "name": "Sylvester",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sylvester（本名 Sylvester James Jr.）1947 年 9 月 6 日生於洛杉磯 Watts 的一個中產階級黑人家庭，在五旬節教會的福音詩班裡學會唱歌。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "src2": "https://sylvesterofficial.com/about/",
+      "from": "new"
+     },
+     {
+      "f": "他因同志身分遭教會與家人排斥，後來離開教會。",
+      "src": "https://sylvesterofficial.com/about/",
+      "src2": "https://blog.strazcenter.org/2022/01/18/artists-we-love-sylvester-the-other-queen-of-disco/",
+      "from": "new"
+     },
+     {
+      "f": "他 1970 年到舊金山，加入前衛扮裝劇團 The Cockettes。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "src2": "https://sylvesterofficial.com/about/",
+      "from": "new"
+     },
+     {
+      "f": "1976 年 9 月起他與樂團在舊金山 Polk Street 的 The Palms 夜店拿到週末固定檔期，Motown 出身的製作人 Harvey Fuqua 在那裡看見他，1977 年把他簽進 Fantasy。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "from": "bank"
+     },
+     {
+      "f": "為了拿到唱片合約，經紀人 Brent Thomson 要他收掉雌雄同體的舞台形象、改穿男裝，理由是「沒有人會發合約給扮裝皇后」；1977 年同名專輯的封面就是他穿男裝的樣子。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sylvester 以假聲見稱；PopMatters 形容那是結合福音色彩的高亢假聲。",
+      "src": "https://www.popmatters.com/167895-queen-of-disco-the-legend-of-sylvester-2495781452.html",
+      "src2": "https://www.ajc.com/entertainment/music/disco-superstar-sylvester-why-his-relevance-still-feels-mighty-real/glreInzZS6VNRd1hrG4bOP/",
+      "from": "new"
+     },
+     {
+      "f": "〈You Make Me Feel (Mighty Real)〉（1978，收在《Step II》）原本是以鋼琴為主的福音式編曲，經 Patrick Cowley 改用電子樂器重做成迪斯可舞曲。",
+      "src": "https://en.wikipedia.org/wiki/You_Make_Me_Feel_(Mighty_Real)",
+      "src2": "https://www.ajc.com/entertainment/music/disco-superstar-sylvester-why-his-relevance-still-feels-mighty-real/glreInzZS6VNRd1hrG4bOP/",
+      "from": "new"
+     },
+     {
+      "f": "Patrick Cowley 被認為是 hi-NRG（快節奏的迪斯可分支）的開創者之一；Straz 中心的文章更稱〈Mighty Real〉幾乎是發明了 hi-NRG 的一首。",
+      "src": "https://en.wikipedia.org/wiki/Patrick_Cowley",
+      "src2": "https://blog.strazcenter.org/2022/01/18/artists-we-love-sylvester-the-other-queen-of-disco/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sylvester 2005 年入選 Dance Music Hall of Fame，與 Chic、Gloria Gaynor 同屆。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "src2": "https://sylvesterofficial.com/about/",
+      "from": "new"
+     },
+     {
+      "f": "1979 年他在舊金山 War Memorial Opera House 的演出之後，獲頒舊金山市鑰。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "src2": "https://sylvesterofficial.com/about/",
+      "from": "new"
+     },
+     {
+      "f": "〈You Make Me Feel (Mighty Real)〉2019 年入選美國國會圖書館 National Recording Registry。",
+      "src": "https://en.wikipedia.org/wiki/You_Make_Me_Feel_(Mighty_Real)",
+      "src2": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "〈You Make Me Feel (Mighty Real)〉被 Billboard 列入史上最佳 LGBTQ 頌歌榜，AJC 稱它是同志解放運動的配樂。",
+      "src": "https://en.wikipedia.org/wiki/You_Make_Me_Feel_(Mighty_Real)",
+      "src2": "https://www.ajc.com/entertainment/music/disco-superstar-sylvester-why-his-relevance-still-feels-mighty-real/glreInzZS6VNRd1hrG4bOP/",
+      "from": "new"
+     },
+     {
+      "f": "他公開出櫃，在愛滋疫情初期投入防治，1988 年 12 月 16 日死於愛滋併發症；遺囑把日後版稅留給 Project Open Hand 與 AIDS Emergency Fund 兩個愛滋慈善機構。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "src2": "https://sylvesterofficial.com/about/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1970 年到舊金山加入 The Cockettes。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "src2": "https://sylvesterofficial.com/about/",
+      "from": "new"
+     },
+     {
+      "f": "1978 年《Step II》推出，開場曲〈You Make Me Feel (Mighty Real)〉讓他站上舞曲榜頂端。",
+      "src": "https://en.wikipedia.org/wiki/You_Make_Me_Feel_(Mighty_Real)",
+      "src2": "https://blog.strazcenter.org/2022/01/18/artists-we-love-sylvester-the-other-queen-of-disco/",
+      "from": "new"
+     },
+     {
+      "f": "1988 年 12 月 16 日過世。",
+      "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+      "src2": "https://sylvesterofficial.com/about/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈You Make Me Feel (Mighty Real)〉登上 Billboard Dance Club 榜冠軍，Hot 100 第 36 名。",
+    "src": "https://en.wikipedia.org/wiki/You_Make_Me_Feel_(Mighty_Real)",
+    "src2": "https://blog.strazcenter.org/2022/01/18/artists-we-love-sylvester-the-other-queen-of-disco/",
+    "from": "new"
+   },
+   {
+    "f": "2005 年入選 Dance Music Hall of Fame。",
+    "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)",
+    "src2": "https://sylvesterofficial.com/about/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "上線《Step II》簡介寫『在 Fantasy 的第四張』、《Stars》寫『在 Fantasy 的第五張』；事實庫研究稿（維基）與上線《Sylvester》簡介皆說 1977 年同名專輯是他在 Fantasy 的第一張，則《Step II》應是 Fantasy 第二張、《Stars》第三張；採事實庫與《Sylvester》簡介的說法，facts 不寫任何序數。",
+   "享年：維基寫 1988 年 12 月 16 日死於愛滋，生於 1947 年 9 月 6 日，推算 41 歲；AJC 寫 42 歲；facts 不寫年齡。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Step II",
+    "claim": "Sylvester 在 Fantasy 的第四張",
+    "problem": "1977 年同名專輯是他在 Fantasy 的第一張（事實庫研究稿與上線《Sylvester》簡介皆如此，Sylvester and the Hot Band 兩張是 1973 年 Blue Thumb 發行），《Step II》應是 Fantasy 第二張；『第四張』可能把 Blue Thumb 兩張算進去了，但簡介明寫『在 Fantasy』。本次未逐張核對全部年表。",
+    "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)"
+   },
+   {
+    "album": "Stars",
+    "claim": "Sylvester 在 Fantasy 的第五張",
+    "problem": "同上，依同一算法應是 Fantasy 第三張（《Sylvester》《Step II》《Stars》）。",
+    "src": "https://en.wikipedia.org/wiki/Sylvester_(singer)"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 有 1 筆（《Sylvester》專輯，4 條全來自維基），另有 4 篇上線簡介。本位用 8 次：維基 Sylvester、WebSearch、sylvesterofficial.com、維基 You Make Me Feel (Mighty Real)、PopMatters、AJC、Straz 中心部落格、維基 Patrick Cowley。失敗請求 1 次不計入：Billboard 追思文（重導 tollbit 未取到）。卡池四張專輯（Sylvester 1977、Step II 1978、Stars 1979、Living Proof 1979）確認為同一人。origin 兩條 bank 事實只有維基單源、與上線《Sylvester》簡介一致（簡介未提 Brent Thomson 姓名），取用是因它們已上線。非獨立：官方網站（sylvesterofficial.com）的生平文字與維基高度重疊，可能同源；『因同志身分被教會排斥』官方站與 Straz 是獨立兩篇，維基摘要沒有這條；Straz 摘要寫『family and church rejection』、官方站寫教會不接受，故 facts 寫教會與家人排斥／離開教會取兩者共同處；搜尋摘要另稱被母親與教會拒絕，未開頁。單源不收 facts：Peter Shapiro 稱〈Mighty Real〉是『the cornerstone of gay disco』與『an epochal record in disco history』（維基）；Robert Christgau 稱其為『one of those surges of sustained, stylized energy that is disco's great gift to pop music』、Jimmy Somerville 1990 年英國第 5 名、Byron Stingily 1998 年舞曲榜冠軍、Billboard 2025 年百大舞曲第 17 名與 LGBTQ+ 頌歌第 2 名（維基歌曲條目單源；LGBTQ 頌歌榜名 AJC 只說 ranks among top，未給名次，故 legacy 那條只寫『列入』）；PopMatters 稱他的假聲 Prince『would steal for his entire career』（作者個人論斷，單源）；AJC 稱他影響 Billy Porter、五首金唱片一首白金（單源）；1979 年 3 月 11 日獲市鑰的日期（維基單源）；五首金唱片、被穿著紅色刺繡和服下葬（AJC 單源）；早年在洛杉磯加入 Disquotays、男友 1987 年死於愛滋、生平傳記《The Fabulous Sylvester》與音樂劇（Straz 單源）；Patrick Cowley 1950–1982、1978 年認識 Sylvester、1982 年〈Do Ya Wanna Funk〉、Pet Shop Boys 與 New Order 受其影響（維基 Cowley 單源）。『第一』類宣稱：〈Mighty Real〉Hi-NRG 之說兩源都用『被認為／幾乎』措辭，facts 保留原措辭。名人堂：Sylvester 未入選搖滾名人堂，不寫。National Recording Registry 2019：維基兩個條目都寫，國會圖書館頁未開，兩源同站，屬非獨立。 更正：Cockettes 一條只留兩源共同的『1970 年到舊金山加入』（官方站另說在團裡演唱個人段落、受藍調爵士女歌手影響，單源）；National Recording Registry 一條兩源同為維基（非獨立），AJC 明說未提此事。"
+ },
+ {
+  "key": "the blackbyrds",
+  "name": "The Blackbyrds",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Blackbyrds 是華盛頓特區 Howard University 的學生樂團，1970 年代初在教授兼小號手 Donald Byrd 的指導下成軍。",
+      "src": "https://en.wikipedia.org/wiki/The_Blackbyrds",
+      "src2": "https://thedig.howard.edu/all-stories/walking-rhythm-blackbyrds-enduring-legacy-howard-university-international-stage",
+      "from": "new"
+     },
+     {
+      "f": "Donald Byrd 是 Howard 爵士研究課程的主持人（Howard Dig 稱他創辦該課程與 Black Music Department）。",
+      "src": "https://thedig.howard.edu/all-stories/walking-rhythm-blackbyrds-enduring-legacy-howard-university-international-stage",
+      "src2": "https://boundarystones.weta.org/2021/02/25/blackbyrds-making-music-was-walk-park",
+      "from": "new"
+     },
+     {
+      "f": "創團成員包括鍵盤 Kevin Toney、鼓手兼主唱 Keith Killgo、貝斯 Joe Hall、薩克斯風 Allan Barnes 與吉他 Barney Perry。",
+      "src": "https://en.wikipedia.org/wiki/The_Blackbyrds",
+      "src2": "https://thedig.howard.edu/all-stories/walking-rhythm-blackbyrds-enduring-legacy-howard-university-international-stage",
+      "from": "new"
+     },
+     {
+      "f": "首張同名專輯由 Donald Byrd 與 Larry Mizell 製作，交給 Fantasy 發行，1974 年推出。",
+      "src": "https://www.udiscovermusic.com/stories/blackbyrds-walking-in-rhythm-song/",
+      "src2": "https://thedig.howard.edu/all-stories/walking-rhythm-blackbyrds-enduring-legacy-howard-university-international-stage",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Blackbyrds 玩的是爵士放克（jazz-funk）融合，把爵士即興與靈魂、放克的律動接在一起。",
+      "src": "https://en.wikipedia.org/wiki/The_Blackbyrds",
+      "src2": "https://www.seventies-soul-report.com/the-blackbyrds/",
+      "from": "new"
+     },
+     {
+      "f": "〈Walking in Rhythm〉由 Barney Perry 寫作、Donald Byrd 製作，收在 1974 年的第二張專輯《Flying Start》。",
+      "src": "https://en.wikipedia.org/wiki/Walking_in_Rhythm",
+      "src2": "https://www.udiscovermusic.com/stories/blackbyrds-walking-in-rhythm-song/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Walking in Rhythm〉1975 年登上 Billboard Hot 100 第 6 名、R&B 榜第 4 名，也進英國榜前 30 名。",
+      "src": "https://en.wikipedia.org/wiki/Walking_in_Rhythm",
+      "src2": "https://www.udiscovermusic.com/stories/blackbyrds-walking-in-rhythm-song/",
+      "from": "new"
+     },
+     {
+      "f": "《City Life》《Unfinished Business》與《Action》三張專輯在 1980 年前先後拿到金唱片。",
+      "src": "https://en.wikipedia.org/wiki/The_Blackbyrds",
+      "src2": "https://boundarystones.weta.org/2021/02/25/blackbyrds-making-music-was-walk-park",
+      "from": "new"
+     },
+     {
+      "f": "樂團的作品後來被 De La Soul、Nas 等嘻哈藝人取樣，〈Rock Creek Park〉就被 Nas、De La Soul 等人用過。",
+      "src": "https://en.wikipedia.org/wiki/The_Blackbyrds",
+      "src2": "https://boundarystones.weta.org/2021/02/25/blackbyrds-making-music-was-walk-park",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1974 年發行同名首張專輯，同年再推出收有〈Walking in Rhythm〉的《Flying Start》。",
+      "src": "https://thedig.howard.edu/all-stories/walking-rhythm-blackbyrds-enduring-legacy-howard-university-international-stage",
+      "src2": "https://www.udiscovermusic.com/stories/blackbyrds-walking-in-rhythm-song/",
+      "from": "new"
+     },
+     {
+      "f": "〈Walking in Rhythm〉1975 年 3 月開始上榜。",
+      "src": "https://en.wikipedia.org/wiki/Walking_in_Rhythm",
+      "src2": "https://en.wikipedia.org/wiki/The_Blackbyrds",
+      "from": "new"
+     },
+     {
+      "f": "樂團沉寂多年後，2012 年由鼓手 Keith Killgo 重新組成。",
+      "src": "https://en.wikipedia.org/wiki/The_Blackbyrds",
+      "src2": "https://www.seventies-soul-report.com/the-blackbyrds/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈Walking in Rhythm〉1975 年 Hot 100 第 6 名。",
+    "src": "https://en.wikipedia.org/wiki/Walking_in_Rhythm",
+    "src2": "https://www.udiscovermusic.com/stories/blackbyrds-walking-in-rhythm-song/",
+    "from": "new"
+   },
+   {
+    "f": "三張專輯拿到金唱片（1980 年前）。",
+    "src": "https://en.wikipedia.org/wiki/The_Blackbyrds",
+    "src2": "https://boundarystones.weta.org/2021/02/25/blackbyrds-making-music-was-walk-park",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年份：維基寫 1973 年成立、WETA 寫 1973 年，Seconddisc 寫 1974 年（可能指首張專輯年）、Dig 寫『1970 年代初』；facts 只寫『1970 年代初』。",
+   "創團成員：維基列 Toney、Killgo、Hall、Barnes、Perry 五人，Orville Saunders 後來加入；Dig 列的原始成員多出 Steve Johnson、Saunders、Perk Jacobs；facts 只寫兩源共同的五人。",
+   "Seventies Soul Report 稱〈Walkin' In Rhythm〉『Grammy-winning』，維基與 WETA 皆為『Grammy 提名』；採提名，且屆次與類別查不到，facts 不收。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫全空，從零查。本位用 8 次：維基 The Blackbyrds、WebSearch（三輪合併於同一次搜尋請求，回傳多筆結果）、Howard Dig、uDiscoverMusic、維基 Walking in Rhythm、Seventies Soul Report、The Second Disc、WETA Boundary Stones。（註：WebSearch 一次請求內含多組查詢，照一次計。）失敗請求 2 次不計入：WhoSampled 403、維基 Rock Creek Park (song) 404。卡池四張專輯（Flying Start 1974、The Blackbyrds 1974、City Life 1975、Action 1977）確認為同一人。單源不收 facts：樂團名稱是 1973 年替 Byrd 在《Live: Cookin' with the Blue Note at Montreux》伴奏時定下（Dig）；WETA 稱 Byrd 1968 年因校園抗議、受聘主持 Jazz Studies Program（單源）；〈Walking in Rhythm〉Grammy 提名與『1975 年 5 月前賣破百萬張』『金唱片』（維基藝人條目；WETA 亦稱提名，屆次與類別兩源都沒有寫，依規則不收）；Allan Barnes 2016 年 7 月 25 日逝世、Kevin Toney 2024 年 3 月 18 日逝世（維基單源）；音樂教授 Carroll V. Dashiell Jr. 稱樂團是最早結合學院訓練與當代藝術性的團體之一（Dig 單源）；《Flying Start》登 Billboard 爵士專輯榜第 2、流行專輯榜第 30、〈Happy Music〉1976 年 R&B 第 3、11 首 R&B 榜單曲、〈Walking in Rhythm〉Barney Perry 寫作與 Allan Barnes 長笛（uDiscover 單源）；2006 年華盛頓特區議會因〈Rock Creek Park〉通過表揚決議、Keith Killgo 談歌曲誕生（WETA 單源）；〈Rock Creek Park〉被 Ice Cube、Eric B. & Rakim 取樣（WETA）與 MF Doom、Wiz Khalifa、Massive Attack 等（維基 Blackbyrds 與搜尋摘要）；Roberta Flack 為首張專輯寫 liner notes（Second Disc 單源）；Byrd 與 Mizell 兄弟《Black Byrd》（1973）等爵士放克脈絡（Second Disc 單源）。非獨立：Howard Dig 與 Howard 系所報導同屬校方來源；uDiscover 與 Seconddisc 皆偏重唱片公司資料。sampling 一條：維基只寫『作品被 De La Soul、Nas 等取樣』（未指名 Rock Creek Park），WETA 明寫 Rock Creek Park 被 Ice Cube、Nas、De La Soul、Eric B. & Rakim 取樣；facts 已改成只寫兩源共同的 Nas 與 De La Soul。 更正：Byrd 挑選學生並給實際演出機會（Dig 單源）；Byrd 兼任樂團製作人（udiscover 與維基 Walking in Rhythm 條目皆載，見 sound 一條）。"
+ },
+ {
+  "key": "the brand new heavies",
+  "name": "The Brand New Heavies",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Brand New Heavies 1985 年在倫敦西部 Ealing 成軍，創團的是學生時代的朋友 Andrew Levy、Simon Bartholomew 與 Jan Kincaid。",
+      "src": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies",
+      "src2": "https://www.acerecords.co.uk/the-brand-new-heavies-1",
+      "from": "new"
+     },
+     {
+      "f": "他們 1989 年前後帶著一卷卡帶找上 Eddie Piller，簽進他的 Acid Jazz Records，1990 年在該廠牌發行首張專輯。",
+      "src": "https://www.acerecords.co.uk/the-brand-new-heavies-1",
+      "src2": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies_(album)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團以真樂手現場演奏為招牌；AllMusic 對首張專輯的評語強調用的是真銅管，不是合成器做出來的銅管聲。",
+      "src": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies_(album)",
+      "src2": "https://www.acerecords.co.uk/the-brand-new-heavies-1",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Brand New Heavies 被視為 acid jazz 的代表樂團之一：維基 acid jazz 條目稱他們 1991 年替這個曲風帶來突破性的成功，jazzfuel 稱他們是史上最成功的 jazz funk／acid jazz 團體之一。",
+      "src": "https://en.wikipedia.org/wiki/Acid_jazz",
+      "src2": "https://jazzfuel.com/acid-jazz-artists-albums/",
+      "from": "new"
+     },
+     {
+      "f": "首張專輯 1991 年 3 月由 Delicious Vinyl 在北美重發，換上 N'Dea Davenport 擔任主唱，在美國 R&B 專輯榜上排到第 17 名，並在榜上停留將近一年。",
+      "src": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies_(album)",
+      "src2": "https://www.acerecords.co.uk/the-brand-new-heavies-1",
+      "from": "new"
+     },
+     {
+      "f": "《Brother Sister》（1994）登上英國專輯榜第 4 名，拿到英國白金認證。",
+      "src": "https://en.wikipedia.org/wiki/Brother_Sister_(The_Brand_New_Heavies_album)",
+      "src2": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1985 年成軍。",
+      "src": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies",
+      "src2": "https://jazzfuel.com/acid-jazz-artists-albums/",
+      "from": "new"
+     },
+     {
+      "f": "1990 年在 Acid Jazz Records 發行首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies_(album)",
+      "src2": "https://www.acerecords.co.uk/the-brand-new-heavies-1",
+      "from": "new"
+     },
+     {
+      "f": "1991 年首張專輯經 Delicious Vinyl 在美國重發，N'Dea Davenport 成為主唱。",
+      "src": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies_(album)",
+      "src2": "https://www.acerecords.co.uk/the-brand-new-heavies-1",
+      "from": "new"
+     },
+     {
+      "f": "1994 年《Brother Sister》發行，是 N'Dea Davenport 離團前的最後一張。",
+      "src": "https://en.wikipedia.org/wiki/Brother_Sister_(The_Brand_New_Heavies_album)",
+      "src2": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1990 年在 Acid Jazz Records 發行首張專輯，後被視為 acid jazz 代表團體。",
+    "src": "https://en.wikipedia.org/wiki/Acid_jazz",
+    "src2": "https://jazzfuel.com/acid-jazz-artists-albums/",
+    "from": "new"
+   },
+   {
+    "f": "《Brother Sister》（1994）英國專輯榜第 4 名、英國白金。",
+    "src": "https://en.wikipedia.org/wiki/Brother_Sister_(The_Brand_New_Heavies_album)",
+    "src2": "https://en.wikipedia.org/wiki/The_Brand_New_Heavies",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "首張專輯發行月份：維基專輯條目寫 1990 年 4 月 16 日，Ace Records 頁寫 1990 年 5 月；上線簡介寫 4 月，與維基一致，本次 facts 只寫 1990 年。",
+   "N'Dea Davenport 加入年份：維基藝人條目寫 1990 年加入，維基專輯條目與 Ace 寫她隨 1991 年北美重發版才加入（英國原版主唱為 Jaye Ella Ruth）；facts 採 1991 年北美重發。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空，僅上線四篇簡介，三格從零查。本位用 8 次：維基 The Brand New Heavies、WebSearch、Ace Records 樂團頁、維基 Acid jazz、維基首張專輯條目、維基《Heavy Rhyme Experience, Vol. 1》、維基《Brother Sister》、jazzfuel。失敗請求 2 次不計入：維基 Heavy Rhyme Experience: Vol. 1（404，改用逗號版網址）、維基 Brother Sister (album)（404，改用括號帶團名版網址）。卡池四張專輯（The Brand New Heavies 1990、Heavy Rhyme Experience: Vol. 1 1992、Brother Sister 1994、Shelter 1997）確認為同一個 Ealing 樂團。已核對上線簡介：首張 1990 年 4 月（維基專輯條目一致）、Heavy Rhyme Experience 1992 年 8 月 3 日發行、Billboard 200 第 139 名與 R&B 專輯榜第 49 名（維基單源、與簡介一致）、Brother Sister 英國第 4 名白金與 Davenport 離團前最後一張（維基兩條目一致）、〈Spend Some Time〉美國舞曲榜第 2 名（維基單源、一致）；未核對：Shelter、〈You've Got a Friend〉英國第 9 名是否為唯一前十單曲、Jay Ella Ruth 是否演唱〈Dream Come True〉與〈Stay This Way〉原英國版。單源不收 facts：團名取自 James Brown 的別號，維基寫是 1987 年在 Wembley Arena 為 Brown 暖場後所改，搜尋摘要另寫是取自 Brown 單曲 liner note 的『Minister of New Super Heavy Funk』，兩說一致指向 Brown 的稱號但暖場一節只見維基（開頁僅維基）；團前身 Brother International／the Brothers、Jim Wellman 薩克斯風、Cat In The Hat 夜店與 rare groove 場景、曾簽 Cooltempo 發一張單曲就被解約、Jazz FM 開台播出（Ace 單源）；維基稱他們『一度是 acid jazz 的定義樂團之一』『全球賣出超過 250 萬張』、Carleen Anderson 與 Siedah Garrett 主唱年份（維基單源）；《Heavy Rhyme Experience: Vol. 1》1992 年 8 月 3 日發行、十首全與饒舌者合作（Main Source、Gang Starr、Grand Puba、Masta Ace、Jamalski、Kool G Rap、Black Sheep、Ed O.G.、Tiger、The Pharcyde）、樂團用吉他貝斯鼓打擊薩克斯風小號現場伴奏、AllMusic 4 星（維基條目單源）；首張專輯〈Never Stop〉英國單曲榜第 43 名、UK 專輯榜 1992 年 3 月排第 25 名、英國銀唱片（維基專輯條目單源）；《Brother Sister》Billboard 200 第 95 名、Billboard 樂評稱其為『one of the absolute best albums we have heard in a real long time』（維基單源）；〈You've Got a Friend〉英國第 9 名（維基藝人條目單源）；Acid Jazz Records 由 Gilles Peterson 與 Eddie Piller 等人 1987–88 年創立（維基 acid jazz 條目與搜尋摘要，年份不一）。非獨立：維基藝人條目、專輯條目、Acid jazz 條目、Brother Sister 條目同屬維基站；Brother Sister 一條、1991 北美重發一條已各配一個非維基或不同條目的來源，但 Brother Sister 那條的兩源實為維基兩個條目，屬非獨立。『被視為代表樂團之一』的另一源 jazzfuel 是部落格式文章、Ace Records 為廠牌自家介紹。"
+ },
+ {
+  "key": "the brothers johnson",
+  "name": "The Brothers Johnson",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Brothers Johnson 是洛杉磯出身的兄弟檔，哥哥 George 彈吉他、弟弟 Louis 彈貝斯，Louis 生於 1955 年。",
+      "src": "https://en.wikipedia.org/wiki/The_Brothers_Johnson",
+      "src2": "https://www.notreble.com/buzz/2015/05/22/in-memoriam-louis-johnson/",
+      "from": "new"
+     },
+     {
+      "f": "兩兄弟成名前的 1970 年代，先替 Bobby Womack、The Supremes 與 Billy Preston 等人伴奏。",
+      "src": "https://www.notreble.com/buzz/2015/05/22/in-memoriam-louis-johnson/",
+      "src2": "https://liveforlivemusic.com/news/rip-louis-johnson-bassist-for-michael-jackson-and-brothers-johnson/",
+      "from": "new"
+     },
+     {
+      "f": "Quincy Jones 幫助他們起步，《Look Out for #1》《Right on Time》《Blam!!》《Light Up the Night》四張專輯全由 Jones 製作。",
+      "src": "https://liveforlivemusic.com/news/rip-louis-johnson-bassist-for-michael-jackson-and-brothers-johnson/",
+      "src2": "https://en.wikipedia.org/wiki/The_Brothers_Johnson",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Louis Johnson 以拇指拍弦的 slap 貝斯技法著稱，綽號「Thunder Thumbs」（雷霆拇指），這種律動成了二人組放克的骨幹。",
+      "src": "https://en.wikipedia.org/wiki/Louis_Johnson_(bassist)",
+      "src2": "https://www.notreble.com/buzz/2015/05/22/in-memoriam-louis-johnson/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Louis Johnson 是 slap 貝斯技法的先驅之一，被視為放克貝斯的重要人物。",
+      "src": "https://en.wikipedia.org/wiki/Louis_Johnson_(bassist)",
+      "src2": "https://www.notreble.com/buzz/2015/05/22/in-memoriam-louis-johnson/",
+      "from": "new"
+     },
+     {
+      "f": "Louis 也是搶手的錄音室貝斯手，Michael Jackson 的《Off the Wall》《Thriller》都有他的演奏，包括〈Billie Jean〉與〈Don't Stop 'Til You Get Enough〉。",
+      "src": "https://www.notreble.com/buzz/2015/05/22/in-memoriam-louis-johnson/",
+      "src2": "https://liveforlivemusic.com/news/rip-louis-johnson-bassist-for-michael-jackson-and-brothers-johnson/",
+      "from": "new"
+     },
+     {
+      "f": "〈I'll Be Good to You〉（1976）與〈Strawberry Letter 23〉（1977）都登上 R&B 榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/The_Brothers_Johnson",
+      "src2": "https://en.wikipedia.org/wiki/Strawberry_Letter_23",
+      "from": "new"
+     },
+     {
+      "f": "Louis Johnson 2015 年 5 月 21 日過世，享年 60 歲。",
+      "src": "https://en.wikipedia.org/wiki/The_Brothers_Johnson",
+      "src2": "https://liveforlivemusic.com/news/rip-louis-johnson-bassist-for-michael-jackson-and-brothers-johnson/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1976 年首張專輯《Look Out for #1》由 A&M 發行、Quincy Jones 製作，拿到美國白金認證。",
+      "src": "https://en.wikipedia.org/wiki/Look_Out_for_%231",
+      "src2": "https://liveforlivemusic.com/news/rip-louis-johnson-bassist-for-michael-jackson-and-brothers-johnson/",
+      "from": "new"
+     },
+     {
+      "f": "1977 年《Right on Time》收有翻唱 Shuggie Otis 的〈Strawberry Letter 23〉，成為二人組最紅的單曲之一。",
+      "src": "https://en.wikipedia.org/wiki/Strawberry_Letter_23",
+      "src2": "https://en.wikipedia.org/wiki/The_Brothers_Johnson",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1976 年〈I'll Be Good to You〉登上 R&B 榜冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Look_Out_for_%231",
+    "src2": "https://en.wikipedia.org/wiki/The_Brothers_Johnson",
+    "from": "new"
+   },
+   {
+    "f": "1977 年〈Strawberry Letter 23〉登上 R&B 榜冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Strawberry_Letter_23",
+    "src2": "https://en.wikipedia.org/wiki/The_Brothers_Johnson",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Louis Johnson 逝世日：維基兩條目與 Live for Live Music 寫 2015 年 5 月 21 日，No Treble 寫 5 月 22 日；採 21 日。死因維基寫食道出血、No Treble 寫未公開，facts 不寫死因。",
+   "〈Strawberry Letter 23〉Hot 100 第 5 名只見維基歌曲條目單源，未進 facts。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫全空，從零查。本位用 8 次：維基 The Brothers Johnson、WebSearch（Louis Johnson 訃聞）、維基 Louis Johnson (bassist)、No Treble、Live for Live Music、維基 Strawberry Letter 23、維基 Look Out for #1、維基 George Johnson (musician)（誤點成另一位 1913 年生的爵士樂手，未取得任何 Brothers Johnson 資訊，也照實計為 1 次）。失敗請求 2 次不計入：維基 George Johnson (guitarist) 404、維基 Look Out 之前無其他失敗，第二次為 George Johnson (guitarist) 網址之前的空頁（實際失敗僅 1 次；照 2 次記較保守）。卡池四張專輯（Look Out for #1 1976、Right on Time 1977、Blam!! 1978、Light Up the Night 1980）確認為同一組兄弟檔。單源不收 facts：Quincy Jones 稱 Louis『one of the greatest bass players to ever pick up the instrument』『a core member of my production team』（Live for Live Music 開頁；搜尋摘要稱他對 Rolling Stone 這樣說，Rolling Stone 頁未開，可具名寫『Quincy Jones 說過』）；Louis 與 Larry Graham 並稱 slap 貝斯的『grandfathers』（搜尋摘要與維基 Louis 條目的『foundational figures』，Live for Live Music 明說其文未提 Graham；No Treble 只說 pioneering，故 facts 只寫先驅）；Music Man StingRay 貝斯是 Leo Fender 專為他打造、Bass Player 雜誌百大貝斯手第 38 名、George Benson〈Give Me the Night〉與 Michael McDonald〈I Keep Forgettin'〉的貝斯線常被嘻哈取樣、演奏過 Michael Jackson《Dangerous》（維基 Louis 單源）；No Treble 稱許多貝斯手視他為入門啟蒙、獨奏專輯《Passage》（1981）與《Evolution》（1985）（單源）；〈Strawberry Letter 23〉原曲是 Shuggie Otis 1971 年《Freedom Flight》、George 因約會 Otis 的表親而發現原曲、Lee Ritenour 重製吉他獨奏、草莓香味紅膠 12 吋單曲、Pitchfork 1970 年代最佳歌曲第 134 名、Tevin Campbell 1992 年翻唱（維基歌曲條目單源）；《Look Out for #1》Billboard 200 第 9 名、Top Soul Albums 第 1 名、〈I'll Be Good to You〉Hot 100 第 3 名、〈Get the Funk Out Ma Face〉Hot 100 第 30 名、翻唱 Beatles〈Come Together〉、參與樂手 Dave Grusin、Harvey Mason、Toots Thielemans、Billy Cobham（維基單源）；1982 年解散、期間有重聚、〈Stomp!〉1980 年 R&B 冠軍（維基 Brothers Johnson 單源；三首 R&B 冠軍中只有前兩首有第二源，故 facts 只寫前兩首）。不知確切：Quincy Jones 如何認識兩兄弟、Grammy 得獎紀錄（維基摘要稱有 Grammy 肯定，但未取得年份與類別，依規則不收）。非獨立：維基四個條目同站；No Treble 與 Live for Live Music 皆為 2015 年訃聞，可能同源（AP 稿）。『Quincy Jones 把他們帶進錄音圈』一句：維基只說 Jones 助其起步，Live for Live Music 只說專輯由 Jones 製作，措辭略放寬，寫作層宜只寫『專輯由 Quincy Jones 製作』。"
  }
 ]
