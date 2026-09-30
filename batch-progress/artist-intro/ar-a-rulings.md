@@ -330,3 +330,4 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 補洞第 1 組：Nino Rota 搜尋 9 次，第 9 次內容已撤，放行（同 J Dilla、Ka 先例）。主線補一條 pubIssue：Rota《Casanova》上線簡介稱「生前最後一部 Fellini 長片」，實際最後合作是 1978 年《Prova d'orchestra》。Glass《Mishima》「第一次替劇情片作曲」未核，不列。
   Guardian、NYT、Telegraph、BBC、AP、LA Times 對補洞代理網域受限，照實記。
 - 補洞第 2 組：Furtwängler 失敗請求 5 次，照實記，放行，thin。Glenn Gould 卡池《Art of Fugue》（1962）為管風琴錄音，寫作層照寫。Bach「BBC Music Magazine 票選第 1」屬媒體榜單，不進正文。
+- 補洞第 3 組（5 位）交件，補洞交齊（25 位）。Beethoven 部分兩源為維基同站不同條目、小澤征爾 BSO 頁與 Arnalds 廠牌頁為自家來源，評價性說法視同單源。
