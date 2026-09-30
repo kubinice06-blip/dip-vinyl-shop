@@ -186,3 +186,23 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
 - 寫作第 1 組（20 位）審畢，0 處。寫作層自行擋下：崔健〈一無所有〉嗩吶與 RHCP 三條 bank 單源、Slayer《Reign in Blood》同站兩頁、The Jam mod 復興改「被稱為」。
   Van Halen 由 thin 升 full（名人堂官方素材），同意；Spoon 的 Metacritic 十年最佳藝人屬評分彙整、非單一樂評，照 writer-base 例外具名，同意。
   主線親驗：大象體操第 35 屆金曲評審團獎（中央社 2024-06-29）。
+- 寫作第 2 組（20 位）審畢，修 1 處：Devo「他與朋友把所見歸結成 de-evolution 一詞」——conflicts 記維基寫這個概念 1960 年代末已是 Casale 與 Bob Lewis 的玩笑、槍擊後才變認真 → 改「也讓 de-evolution 這個概念成形」，兩說皆容。
+  Can 的 Damo Suzuki 照 facts 寫羅馬字（日文通行名ダモ鈴木並非全漢字，國際上以 Damo Suzuki 通行）；可逆。
+  Def Leppard「Steve Clark 過世後以四人編制繼續」寫作層存疑沒寫；實際上《Adrenalize》確為四人錄製，不寫也無損。
+- 上架：40 位（搖滾、台灣樂團、歐陸），審稿修 1 處。
+
+## 十批收尾（2026-09-30）
+
+- ar-a-001～010 全數上架：400 位 A 級藝人，另有別名補鍵；網站分片累計見 manifest。
+- 各批審稿修正：001 9、002 4、003 5、004 4、005 2、006 8、007 6、008 8、009 5、010 1。
+- 中途新增的規則（皆可逆）：新查事實必帶 src2（008 起 QA 硬擋）、搜尋上限 6→8、名人堂官方介紹可具名單源、Swing Journal 例外、樂評媒體榜單不進正文。
+- 交本機處理：audits/ARTIST-PUB-ISSUES.md（上線專輯簡介錯誤）；拆卡：Steve Lacy（The Internet 那位 3 張）、Placebo（比利時 2 張）、Caravan（泰國 1 張）；
+  卡單年份：Green Onions 1979→1962、Metallica Black Album 1998→1991、Built to Spill 兩張各差一年、新寶島康樂隊「腳開開」→《八腳開開》。
+
+### PROJECT_MEMORY 草稿（雲端不寫 PROJECT_MEMORY.md，請本機貼入）
+
+2026-09-30｜dip-vinyl-shop｜藝人介紹量產 ar-a-001～010 上架（A 級 400 位）。產線：artist-cut/extract/prompt/review/alias/issues 六支工具、
+補洞 Sonnet ×4＋寫作 Opus ×2＋主線逐位審稿；build 與 alias 只收 progress 標 published 的量產批。新規則：新查事實必帶 src2、搜尋上限 8、名人堂官方可具名單源。
+主要檔案：desc-tools/batches/artist/*、data/artist-intros/*、batch-progress/artist-intro/ar-a-rulings.md、audits/ARTIST-PUB-ISSUES.md。
+驗證：每批 qa-artist gap／out 皆 0 處、主線逐位審稿共修 52 處；死訊與 2025–26 榮譽由主線 WebSearch 親驗。
+
