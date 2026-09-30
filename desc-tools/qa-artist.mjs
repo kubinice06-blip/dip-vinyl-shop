@@ -132,6 +132,9 @@ if (stage === 'out') {
     // 用剝除《》〈〉與本卡專名後的文字掃，官方原題裡的字不誤報。
     if (/大陸/.test(stripped)) warn(r.name, '用語：出現「大陸」，稱中國一律寫「中國」')
     if (/蔣中正/.test(stripped)) warn(r.name, '用語：「蔣中正」一律寫「蔣介石」')
+    // 語氣與措辭（2026-09-30 店主裁定）：評價不從轉述句帶出；用書面語
+    { const m = stripped.match(/訃報稱|訃聞稱|報導稱|報導說|媒體說|媒體稱|寫道/); if (m) warn(r.name, `措辭：「${m[0]}」這類轉述句不帶評價，改寫成「被視為」「被稱為」`) }
+    { const m = stripped.match(/帶了約|帶了\s*\d|搞|超級|很紅|爆紅/); if (m) warn(r.name, `措辭：口語「${m[0]}」，改用書面語`) }
     // 反流水帳（2026-09-29 店主改定方向）：四位數年份至多 4 個、不得連兩句以年份開頭
     { const years = t.match(/(?<!\d)(1[89]\d\d|20\d\d)(?!\d)/g) || []
       if (years.length > 4) warn(r.name, `年份 ${years.length} 個，上限 4（流水帳）`)
