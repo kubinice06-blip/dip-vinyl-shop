@@ -522,5 +522,111 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "事實庫完全空白，從零查。poolAlbums 四張（Epicus Doomicus Metallicus 1986、Nightfall 1987、King of the Grey Islands 2007、Psalms for the Dead 2012）皆屬瑞典樂團 Candlemass，無同名混卡。補查 8 次：英維基 Candlemass（第一次抓到消歧頁、無內容，也計入）、英維基 Candlemass (band)、WebSearch（只讀摘要）、英維基 Epicus Doomicus Metallicus、Louder 首作故事專文、Yahoo 轉載同一專文、瑞典維基、英維基 Doom metal。失敗請求 2：Britannica（404）、Louder 專文誤用網址（404，改用正確網址成功）。Louder 與 Yahoo 是同一篇專文的兩個網址，非獨立，故 facts 只把 Louder 當一源、Yahoo 只用於發行月份；英維基各頁與瑞典維基同屬維基，非獨立。Grammis 年份兩源不一致：英維基寫 2005 年得瑞典 Grammy、瑞典維基寫 Grammisgalan 2006 年『Årets hårdrock』，facts 不寫年份，只寫『2005 年同名專輯得年度硬式搖滾獎』。未收（單源）：AllMusic 的 Eduardo Rivadavia 稱他們『wrote the handbook for the modern doom metal movement』（英維基單源）；與 Pentagram、Saint Vitus、Trouble 並稱 doom『big four』（英維基單源，搜尋摘要同一來源）；Satyricon、Emperor 與 Paradise Lost、My Dying Bride 點名受其影響、《Epicus Doomicus Metallicus》名列 doom 票選榜首（Louder/Yahoo 單源，搜尋摘要另稱 Paradise Lost 與 My Dying Bride 推崇，只見摘要）；AllMusic 給首作 4.5 星稱其為『a pillar of classic 80s metal』、Pitchfork 8.4（英維基 Epicus 頁單源）；1986 年 1 月在斯德哥爾摩大學地下的 Thunderload Studios 五天錄完、預算約 3000 美元、暖氣壞掉穿皮大衣錄音，首作被主流雜誌痛批，Black Dragon 只補償 50 便士的優惠券，半年後地下圈自發發現、加印，但樂團已改簽 Active Records（Louder/Yahoo 單源）；Edling 先寄 demo 給約十家廠牌、Black Dragon 是他景仰的 Manilla Road、Chastain 所屬廠牌（Louder 單源）；首作後 Johan Längqvist 是客座主唱、2018 年才正式重返（英維基單源）；Messiah Marcolin 接手主唱並於 1991 年離團（英維基單源）；活動期 1984–1994、1997–2002、2004 起持續（瑞典維基單源）。首作被 Black Dragon 解約的說法：英維基 Epicus 頁寫當年被廠牌放棄並改簽 Axis、Louder/Yahoo 寫 Black Dragon 後來加印、樂團改簽 Active，兩源後續廠牌不一致，facts 只寫商業表現不佳。"
+ },
+ {
+  "key": "carcass",
+  "name": "Carcass",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Carcass 1985 年成軍於英格蘭利物浦。",
+      "src": "https://en.wikipedia.org/wiki/Carcass_(band)",
+      "src2": "https://www.vice.com/en/article/carcass-experience-a-glorious-resurrection-after-years-in-the-grave/",
+      "from": "new"
+     },
+     {
+      "f": "Bill Steer 是 Carcass 1985 年的共同創團成員，此後始終是樂團唯一的吉他手；他與貝斯手兼主唱 Jeff Walker 是樂團歷來僅有的固定成員。",
+      "src": "https://en.wikipedia.org/wiki/Bill_Steer",
+      "src2": "https://en.wikipedia.org/wiki/Carcass_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Carcass 被視為 grindcore 的先驅之一。",
+      "src": "https://en.wikipedia.org/wiki/Carcass_(band)",
+      "src2": "https://www.vice.com/en/article/carcass-experience-a-glorious-resurrection-after-years-in-the-grave/",
+      "from": "new"
+     },
+     {
+      "f": "1993 年的《Heartwork》把旋律帶進死亡金屬，被視為 melodic death metal 的里程碑，儘管樂團來自利物浦、不是 Gothenburg 場景。",
+      "src": "https://en.wikipedia.org/wiki/Carcass_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Heartwork_(album)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Carcass 被視為 grindcore 與 melodic death metal 的先驅。",
+      "src": "https://en.wikipedia.org/wiki/Carcass_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Heartwork_(album)",
+      "from": "new"
+     },
+     {
+      "f": "鼓手 Ken Owen 1999 年腦出血，之後無法再以先前的水準打鼓；出事時樂團已經解散。",
+      "src": "https://www.vice.com/en/article/carcass-experience-a-glorious-resurrection-after-years-in-the-grave/",
+      "src2": "https://www.loudersound.com/news/carcass-still-owe-debt-to-ken-owen",
+      "from": "new"
+     },
+     {
+      "f": "Carcass 2007 年重組，Owen 因病沒有回歸；重組後的首張專輯是 2013 年的《Surgical Steel》。",
+      "src": "https://en.wikipedia.org/wiki/Carcass_(band)",
+      "src2": "https://www.loudersound.com/news/carcass-still-owe-debt-to-ken-owen",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Heartwork》1993 年 10 月在歐洲由 Earache Records 發行。",
+      "src": "https://en.wikipedia.org/wiki/Heartwork_(album)",
+      "src2": "https://en.wikipedia.org/wiki/Carcass_(band)",
+      "from": "new"
+     },
+     {
+      "f": "2013 年，Carcass 發行重組後的首張專輯《Surgical Steel》。",
+      "src": "https://en.wikipedia.org/wiki/Bill_Steer",
+      "src2": "https://www.loudersound.com/news/carcass-still-owe-debt-to-ken-owen",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年發行《Heartwork》，被視為 melodic death metal 的里程碑。",
+    "src": "https://en.wikipedia.org/wiki/Carcass_(band)",
+    "src2": "https://en.wikipedia.org/wiki/Heartwork_(album)",
+    "from": "new"
+   },
+   {
+    "f": "2007 年重組，Ken Owen 因病沒有回歸。",
+    "src": "https://en.wikipedia.org/wiki/Carcass_(band)",
+    "src2": "https://www.loudersound.com/news/carcass-still-owe-debt-to-ken-owen",
+    "from": "new"
+   },
+   {
+    "f": "2013 年發行重組後首張專輯《Surgical Steel》。",
+    "src": "https://en.wikipedia.org/wiki/Bill_Steer",
+    "src2": "https://www.loudersound.com/news/carcass-still-owe-debt-to-ken-owen",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫完全空白，從零查。poolAlbums 四張（Symphonies of Sickness 1989、Necroticism 1991、Heartwork 1993、Swansong 1995）皆屬英國樂團 Carcass，無同名混卡。補查 7 次：英維基 Carcass (band)、WebSearch（只讀摘要）、英維基 Heartwork、英維基 Bill Steer、WebSearch（Ken Owen，只讀摘要）、Louder『Carcass still owe debt to Ken Owen』、Vice 重組專文。英維基三頁同站非獨立；Louder 與 Vice 為獨立媒體。解散年份兩源不一致：英維基 Bill Steer 寫 1995 年、英維基 Carcass 與 Vice 寫 1996 年（Vice 文內另提 1995），重組年份英維基 Bill Steer 寫 2008 而 Carcass 頁、Louder、Vice 寫 2007，facts 不寫解散年，重組取 2007。Owen 與『Vice 稱 1999 年腦出血時樂團已解散』相符。未收（單源）：樂團起於 Steer 與 Owen 的校園計畫、前身為 D-beat 樂團 Disattack（英維基單源）；Steer 1987 年 4 月至 1989 年 7 月在 Napalm Death 彈吉他、參與前兩張專輯（英維基 Bill Steer 頁單源；搜尋摘要另稱 Carcass 起初與 Napalm Death 路線相近但強調血腥歌詞、《Reek of Putrefaction》被認為開創 goregrind，只見摘要）；歌詞多用醫學術語與血腥意象、1991《Necroticism》起加入進階與技術元素（英維基單源）；Loudwire 2016 年把 Carcass 排為史上第 21 名金屬樂團（英維基單源）；Steer 在 Decibel 死亡金屬吉他手榜第 3、Guitar World 偉大重金屬吉他手第 92（英維基 Bill Steer 頁單源）；Heartwork 在 Rolling Stone 偉大金屬專輯榜第 51、Metal Hammer 稱其『arguably the point where melodic death metal became a cohesive idea』、2013 年入選 Decibel 名人堂、影響 Arch Enemy 與 The Black Dahlia Murder、銷量至少 8.1 萬、H.R. Giger 設計封面雕塑、美國由 Columbia 發行（英維基 Heartwork 頁單源）；Vice 稱影響『從 Cannibal Corpse 到 Nasum』、並說 Carcass『so revered and so well respected』（Vice 單源）；Owen 兩次腦部手術與昏迷（Vice 單源，搜尋摘要稱 1999 年 2 月腦出血、昏迷逾十個月、2000 年 6 月動動脈瘤手術，只見摘要）；Owen 認可重組、2008 至 2010 年盡量讓他參與、重組後由 Daniel Erlandsson 補位、《Surgical Steel》距上張相隔 17 年（Louder 單源）；重組後樂團資助 Owen 安家（Vice 單源）。英維基 Heartwork 頁稱歐洲發行日 1993 年 10 月 18 日，本層 f 只寫月份（Carcass 頁只給 1993 年）。"
  }
 ]

@@ -1032,5 +1032,108 @@
     "failedFetches": 5,
     "status": "thin",
     "notes": "事實庫 research 只有 MusicBrainz 的 release-group 欄位與廠牌實體，三格從零查。實際開頁：維基 Agnostic Front、Dazed、維基 Victim in Pain、Vice（Miret 訪談），另 WebSearch 一次（只讀摘要，未採其內容）。失敗請求 5 次，超過上限 4 次：Britannica 404、Rolling Stone 307 轉址、轉址後 tollbit 402、CVLT Nation 403、維基 Cause for Alarm 404；第 5 次失敗屬超出上限的一次，照實記錄，沒有從中取得任何事實，也就沒有需要撤掉的內容。poolAlbums 四張（1984／1986／1992／1983）與此紐約 hardcore 樂團一致，無同名混卡。整體 thin：sound 與 era 兩格只有單源，標 none；legacy 只有一條（且兩個來源同為維基，非獨立），後輩點名與權威評價全是單源。單源未收（放 notes）：維基稱他們是『the godfathers of hardcore』並影響 Sick of It All、Madball、Hatebreed、Killswitch Engage、Pantera（維基單源）；初期陣容全是 skinhead，Miret 1985 年接受 Flipside 訪問時回應法西斯指控，1986 年 Phil Donahue 節目因〈Public Assistance〉被質疑種族歧視（維基單源）；1986 年《Cause for Alarm》跨進 crossover thrash、2014 年入選 Decibel 名人堂、2021 年 Revolver 選為十大紐約 hardcore 專輯之一（維基單源）；1983 年《United Blood》EP 奠定 NYHC 的基礎（維基單源，上線簡介亦寫 1983 年）；紀錄片《The Godfathers of Hardcore》2017 年首映於 DOC NYC、導演 Ian McFarland（搜尋摘要，未開頁）、2018 年 Boston Independent Film Festival 最佳紀錄片（維基單源）；前身團名 Zoo Crew、Stigma 來自 The Eliminators（維基單源）；Dazed 稱他們在 hardcore 文化影響深遠，但金錢上的成功要到 1990 年代末才來（單源）；Miret 早年在下東城住 squat、因毒品相關罪行入獄（Dazed 單源，不收）；Miret 曾在 Psychos 樂團、1981 年 10 月 14 日在 Peppermint Lounge 的 Stimulators 演出遇見 Stigma（Vice 單源）；《Victim in Pain》1984 年 4 月三天錄成於 Little Italy 的 Demo Studios、製作人 Don Fury、陣容 Miret／Stigma／Rob Kabula／Dave Jones、全長 15 分 22 秒、Vice 稱它『helped define the New York City hardcore punk sound』、Revolver 與 Rolling Stone 榜單、Fear Factory 與 Napalm Death 翻唱、〈Victim in Pain〉入 Grand Theft Auto IV（皆維基 Victim in Pain 單源；錄音地與製作人只在維基 Victim in Pain，未進 facts）。長度差異：維基 Victim in Pain 記全長 15 分 22 秒，上線簡介依 MusicBrainz 記 15 分 28 秒，屬版本不同的小差異，不列 pubIssues。"
+  },
+  {
+    "key": "alt-j",
+    "name": "alt-J",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "alt-J 2007 年在英國利茲大學（University of Leeds）成軍，成員多是美術系的學生。",
+            "src": "https://en.wikipedia.org/wiki/Alt-J",
+            "src2": "https://www.interviewmagazine.com/music/discovery-alt-j",
+            "from": "new"
+          },
+          {
+            "f": "他們早期叫 FILMS，後來因為和一個美國同名樂團混淆而改名。",
+            "src": "https://en.wikipedia.org/wiki/Alt-J",
+            "src2": "https://www.interviewmagazine.com/music/discovery-alt-j",
+            "from": "new"
+          },
+          {
+            "f": "團名 alt-J 是三角形符號 ∆（delta）：在 Mac 電腦上按 Alt 加 J 就能打出這個符號。",
+            "src": "https://en.wikipedia.org/wiki/Alt-J",
+            "src2": "https://www.interviewmagazine.com/music/discovery-alt-j",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的聲音橫跨 indie rock、art rock 與 folktronica，混入 folk、trip-hop、pop 與電子元素。",
+            "src": "https://en.wikipedia.org/wiki/Alt-J",
+            "src2": "https://www.interviewmagazine.com/music/discovery-alt-j",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2012 年首張專輯《An Awesome Wave》拿下英國 Mercury Prize；這個獎頒給當年英國或愛爾蘭藝人的最佳專輯。",
+            "src": "https://en.wikipedia.org/wiki/Alt-J",
+            "src2": "https://en.wikipedia.org/wiki/Mercury_Prize",
+            "from": "new"
+          },
+          {
+            "f": "《An Awesome Wave》在 2013 年的 Ivor Novello 獎奪得專輯獎（Album of the Year）。",
+            "src": "https://en.wikipedia.org/wiki/Alt-J",
+            "src2": "https://en.wikipedia.org/wiki/An_Awesome_Wave",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2007 年在利茲大學成軍。",
+            "src": "https://en.wikipedia.org/wiki/Alt-J",
+            "src2": "https://www.interviewmagazine.com/music/discovery-alt-j",
+            "from": "new"
+          },
+          {
+            "f": "2012 年由 Infectious Music 發行首張專輯《An Awesome Wave》，同年拿下 Mercury Prize。",
+            "src": "https://en.wikipedia.org/wiki/An_Awesome_Wave",
+            "src2": "https://en.wikipedia.org/wiki/Alt-J",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2012 年發行首張專輯《An Awesome Wave》。",
+        "src": "https://en.wikipedia.org/wiki/An_Awesome_Wave",
+        "src2": "https://en.wikipedia.org/wiki/Alt-J",
+        "from": "new"
+      },
+      {
+        "f": "2012 年《An Awesome Wave》拿下 Mercury Prize。",
+        "src": "https://en.wikipedia.org/wiki/Alt-J",
+        "src2": "https://en.wikipedia.org/wiki/Mercury_Prize",
+        "from": "new"
+      },
+      {
+        "f": "2013 年《An Awesome Wave》拿下 Ivor Novello 專輯獎。",
+        "src": "https://en.wikipedia.org/wiki/Alt-J",
+        "src2": "https://en.wikipedia.org/wiki/An_Awesome_Wave",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "《An Awesome Wave》發行日：維基 Alt-J 作 2012 年 5 月 28 日（英國）、維基 An Awesome Wave 作 2012 年 5 月 25 日；facts 只寫 2012 年",
+      "Mercury Prize 頒獎月份：維基 Mercury Prize 頁摘要作 2012 年 10 月，搜尋摘要（SPIN，頁面 403 未開）作 2012 年 11 月 1 日；facts 只寫 2012 年"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 4,
+    "status": "full",
+    "notes": "事實庫 research 為空、無上線簡介，三格從零查。實際開頁：維基 Alt-J、維基 An Awesome Wave、維基 Mercury Prize、Interview Magazine，另 WebSearch 兩次（只讀摘要，未採其內容）。失敗請求 4 次用滿（Britannica 404、SPIN 403、NPR 503、利茲大學新聞頁 404，不計搜尋）。搜尋 6 次（WebSearch 2、成功開頁 4）。poolAlbums 四張（2012／2022／2014／2017）與此英國樂團一致，無同名混卡（名字 alt-J 大小寫混合，卡池無其他同名者）。非獨立提示：維基 Alt-J、An Awesome Wave、Mercury Prize 為同站不同條目；legacy 兩條與 era 第二條的第二源為同站不同條目。單源未收（放 notes）：原為四人，Gwil Sainsbury 2014 年初離團、之後成三人（維基單源）；Joe Newman 說『I basically went to art school to start a band』、二年級時給 Sainsbury 看自己的歌、兩人在宿舍用 GarageBand 錄音、Sainsbury 當製作（搜尋摘要，來自利茲大學頁，該頁 404 未開，未收）；聲音來自學生宿舍限制噪音與樂器不足（維基單源與搜尋摘要）；Unger-Hamilton 讀英文、其餘三人讀美術（搜尋摘要，未開頁）；《An Awesome Wave》英國排行榜最高第 13 名，在英國、澳洲、加拿大、荷蘭、美國達白金認證，Metacritic 71 分（維基 An Awesome Wave 單源）；專輯名引自 Bret Easton Ellis《American Psycho》、封面為 ESA Envisat 衛星拍的恆河三角洲雷達影像、代表曲〈Breezeblocks〉〈Tessellate〉〈Fitzpleasure〉（維基 An Awesome Wave 單源，標題出處搜尋摘要相同）；三次 Brit Award 入圍（British Breakthrough Act、Album of the Year、Group of the Year）、《This Is All Yours》入圍第 57 屆葛萊美最佳另類音樂專輯（維基 Alt-J 單源，皆入圍未得獎）；Newman 稱拿到 Mercury 是『life-changing』、有冒牌者的感覺（維基單源）；Interview Magazine：花了一個半月想團名、Newman 稱『a name we could all agree on』，並稱歌詞有文學典故式的親密感與『accessible eccentricity』（單源）；Mercury Prize 2012 短名單 12 張、獎金 25,000 英鎊（維基 Mercury Prize 單源）。名人堂、後輩點名類的共識評價未查到，legacy 只有獎項事實。"
   }
 ]
