@@ -146,3 +146,6 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   Blur 9 次是規則中途變更造成，一次性放行，不回頭刪事實。
 - 補洞第 1 組：Metallica《Master of Puppets》2015 年入選國家錄音登記表（第一張入選的金屬專輯），補洞層只見摘要放 notes；主線以 loc.gov PDF 與 KQED 查實後移入 legacy。
 - 補洞第 2 組 Eagles 甘迺迪中心榮譽採 2016（2015 年獲選、因 Glenn Frey 病況延到 2016 年受獎）；James Taylor 名人堂採 2000。
+- 補洞第 3 組：Placebo 卡池混了比利時 Marc Moulin 的 Placebo（《Ball of Eyes》《1973》），只寫英國那團，兩張比利時卡待本機拆卡（同 Steve Lacy 案）。
+  Motörhead 失敗請求 5 次（同一 NPR 頁 503 兩次後改 curl 讀到），重試同頁不算濫用，放行。
+- 接力節奏更正：批 N 的 g1＋g2 交齊就可以派 w1，不必等 g3、g4（ar-a-008 w1 晚派了一輪）。

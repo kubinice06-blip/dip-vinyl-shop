@@ -175,5 +175,185 @@
   "failedFetches": 5,
   "status": "full",
   "notes": "補查 8 次：維基、WebSearch（影響）、WebSearch（成員與簽約）、WebSearch（Heaven or Las Vegas 榜位）、Encyclopedia.com、英國官方榜單頁、WebSearch（Guardian 說法）、waxxlyrical 專文。失敗未計入：Britannica（404）、BrooklynVegan 24 位受影響藝人（403）、AllMusic（403）、cocteautwins.com 轉載 Guardian〈10 of the best〉（驗證頁無內文）、Discogs（403）；theguardian.com 工具不允許抓取，未發出請求。單源未進 facts：團名取自 Simple Minds 早期歌〈The Cocteau Twins〉（單源維基）；1997 年解散、原因與 Guthrie 和 Fraser 分手有關（單源維基）；Guardian 稱其為 enigmatic ethereal indie-pop 的 gold standard（維基轉述，搜尋摘要，未開原文）；John Peel session 1982 年 6 月、〈Pearly-Dewdrops' Drops〉1984 年英國第 29（單源維基）；Rachel Goswell 16 歲初聽 Cocteau Twins（搜尋摘要，單源）；Deftones 自述受其啟發（搜尋摘要，未開頁）。第二源 waxxlyrical 為部落格性質站台，Encyclopedia.com 內容止於 1993 年，故影響名單只採兩源皆列的名字，寫作層宜寫『被列為受其影響』而非『自述受其影響』。同名混卡：無。"
+ },
+ {
+  "key": "coldplay",
+  "name": "Coldplay",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Chris Martin 1977 年 3 月 2 日生於英格蘭德文郡的艾克希特（Exeter）。",
+      "src": "https://en.wikipedia.org/wiki/Chris_Martin",
+      "src2": "https://www.britannica.com/topic/Coldplay",
+      "from": "new"
+     },
+     {
+      "f": "Coldplay 是 Chris Martin 與 Jonny Buckland 在倫敦大學學院（UCL）就學時成立的樂團，之後 Guy Berryman 與 Will Champion 加入。",
+      "src": "https://en.wikipedia.org/wiki/Coldplay",
+      "src2": "https://www.britannica.com/topic/Coldplay",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們早期以旋律性強、由鋼琴帶動的 anthem 起家，後來加入吉他驅動、適合大型場館的搖滾 anthem，各張專輯也陸續用到電子、R&B、ambient 等元素。",
+      "src": "https://www.britannica.com/topic/Coldplay",
+      "src2": "https://en.wikipedia.org/wiki/Coldplay",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2002 年葛萊美，首張專輯《Parachutes》讓他們拿下第一座葛萊美，類別是最佳另類音樂專輯（Best Alternative Music Album）。",
+      "src": "https://en.wikipedia.org/wiki/Coldplay",
+      "src2": "https://www.britannica.com/topic/Coldplay",
+      "from": "new"
+     },
+     {
+      "f": "2009 年葛萊美，《Viva la Vida or Death and All His Friends》拿下最佳搖滾專輯（Best Rock Album），〈Viva la Vida〉拿下年度歌曲（Song of the Year）。",
+      "src": "https://en.wikipedia.org/wiki/Coldplay",
+      "src2": "https://www.britannica.com/topic/Coldplay",
+      "from": "new"
+     },
+     {
+      "f": "Guinness 世界紀錄在 2025 年 1 月認證 Music of the Spheres 世界巡迴為史上觀眾最多的巡迴，當時累計已賣出超過 1030 萬張票，超過 Taylor Swift 的 Eras Tour 的 1010 萬張。",
+      "src": "https://www.guinnessworldrecords.com/news/2025/1/coldplays-music-of-the-spheres-tour-sets-record-for-highest-attendance",
+      "src2": "https://en.wikipedia.org/wiki/Coldplay",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2009 年葛萊美，《Viva la Vida or Death and All His Friends》拿下最佳搖滾專輯，〈Viva la Vida〉拿下年度歌曲。",
+    "src": "https://en.wikipedia.org/wiki/Coldplay",
+    "from": "new"
+   },
+   {
+    "f": "Guinness 世界紀錄在 2025 年 1 月認證 Music of the Spheres 世界巡迴為史上觀眾最多的巡迴。",
+    "src": "https://www.guinnessworldrecords.com/news/2025/1/coldplays-music-of-the-spheres-tour-sets-record-for-highest-attendance",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫無研究稿與上線簡介，全部從零補查。",
+   "成軍年不合：維基寫 1996 年 9 月 Martin 與 Buckland 在 UCL 迎新週認識、1997 年起寫歌，Britannica 寫 1998 年成立；facts 不寫年份，只寫『在 UCL 成立』。",
+   "Music of the Spheres 巡迴的票數是 2025 年 1 月的數字（當時尚餘約八個月行程），寫作層須帶時點，不可寫成總數。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "補查 8 次：維基 Coldplay、Britannica Coldplay、WebSearch（銷量與紀錄）、WebSearch（Guinness）、WebSearch（Martin 生平）、Guinness 頁面、維基 Chris Martin、WebSearch（早期影響）。失敗未計入：Britannica Chris Martin（404）、Guinness 猜測網址（404）、grammy.com 藝人頁（404）、UCL 新聞頁（403）。單源未進 facts：其餘成員出生地（Buckland 倫敦、Berryman 蘇格蘭 Kirkcaldy、Champion 南安普敦，單源 Britannica）；Martin 家世與求學——長子、父親特許會計師、母親來自辛巴威的音樂老師、祖父 1929 年創立 Martin's of Exeter、就讀 Sherborne School、UCL 希臘文與拉丁文一等榮譽學位（單源維基 Chris Martin）；Sherborne 認識日後經紀人 Phil Harvey（單源維基）；Martin 稱『Travis invented Coldplay』、U2 全部作品倒背如流（單源維基 Chris Martin）；早期以 Big Fat Noises、Starfish 為名，1998 年 1 月 16 日 Camden Laurel Tree 首演（單源維基）；全球銷量超過 1.7 億張、『史上最暢銷音樂人之一』（維基，另有搜尋摘要寫 1.6 億，兩者不一致，未開第二頁，單源）；Britannica 寫 X&Y（2005）讓他們躋身 U2 與 Radiohead 這類大團之列（單源 Britannica）；Brit Awards 樂團最多得獎紀錄、最佳英國樂團 2001／2003／2012、Glastonbury 2011 與 2016 headliner、Spotify 首個破 1 億月聽眾樂團、搖滾名人堂〈200 Definitive Albums〉收《A Rush of Blood to the Head》、〈Yellow〉入選〈Songs That Shaped Rock and Roll〉展覽（皆單源維基）；Jeff Buckley 影響（Martin 自認〈Shiver〉是『明目張膽的 Jeff Buckley 模仿』）、被 Rolling Stone 稱為『新 Radiohead』（搜尋摘要，未開頁）。同名混卡：無。"
+ },
+ {
+  "key": "creedence clearwater revival",
+  "name": "Creedence Clearwater Revival",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Creedence Clearwater Revival 出身舊金山灣區的加州 El Cerrito，成員是 John Fogerty、其兄 Tom Fogerty 與同學 Stu Cook、Doug Clifford，前身是 Blue Velvets 與 Golliwogs。",
+      "src": "https://en.wikipedia.org/wiki/Creedence_Clearwater_Revival",
+      "src2": "https://www.britannica.com/topic/Creedence-Clearwater-Revival",
+      "from": "new"
+     },
+     {
+      "f": "這幾位成員 1959 年前後就在 El Cerrito 以 Blue Velvets 等名字一起演出，後來才有 Golliwogs 與 Creedence Clearwater Revival 這些團名。",
+      "src": "https://en.wikipedia.org/wiki/Creedence_Clearwater_Revival",
+      "src2": "https://www.britannica.com/topic/Creedence-Clearwater-Revival",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "John Fogerty 是樂團的主要詞曲創作者，寫的是三分鐘的搖滾歌，底子是南方搖滾與藍調，聲音走 roots 一路的粗獷簡潔。",
+      "src": "https://www.britannica.com/topic/Creedence-Clearwater-Revival",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/creedence-clearwater-revival",
+      "from": "new"
+     },
+     {
+      "f": "〈Fortunate Son〉1969 年 11 月發行，批評徵兵制度的階級不公，登上單曲榜第 3 名；Britannica 指出 Fogerty 的寫作觸及越戰與社會動盪。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/creedence-clearwater-revival",
+      "src2": "https://www.britannica.com/topic/Creedence-Clearwater-Revival",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 到 1970 年間，Creedence 稱霸美國流行榜；搖滾名人堂稱他們在三年內有九首前十單曲，可能是當時美國最受歡迎的樂團。",
+      "src": "https://www.britannica.com/topic/Creedence-Clearwater-Revival",
+      "src2": "https://rockhall.com/inductees/creedence-clearwater-revival/",
+      "from": "new"
+     },
+     {
+      "f": "Creedence 1993 年入選搖滾名人堂；樂團解散後從未重組。",
+      "src": "https://www.britannica.com/topic/Creedence-Clearwater-Revival",
+      "src2": "https://rockhall.com/inductees/creedence-clearwater-revival/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 年 8 月 Woodstock 音樂節，Creedence 有上台，但沒有出現在電影與現場錄音裡。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/creedence-clearwater-revival",
+      "src2": "https://en.wikipedia.org/wiki/Creedence_Clearwater_Revival",
+      "from": "new"
+     },
+     {
+      "f": "Tom Fogerty 1971 年離團；其他成員要求創作參與，內部衝突擴大，樂團在 1972 年解散。",
+      "src": "https://www.britannica.com/topic/Creedence-Clearwater-Revival",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/creedence-clearwater-revival",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年入選搖滾名人堂。",
+    "src": "https://rockhall.com/inductees/creedence-clearwater-revival/",
+    "from": "new"
+   },
+   {
+    "f": "1972 年解散，之後未重組。",
+    "src": "https://www.britannica.com/topic/Creedence-Clearwater-Revival",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫無研究稿與上線簡介，全部從零補查。",
+   "名人堂稱三年內九首前十單曲，維基寫 14 首連續前十，兩者不一致；facts 只採名人堂的九首並具名，不寫 14。",
+   "Encyclopedia.com 寫〈Proud Mary〉是第一首冠軍單曲，與維基『五首亞軍、從未拿下 Hot 100 冠軍』衝突，採維基，Encyclopedia.com 該句不用；〈Fortunate Son〉第 3 名採 Encyclopedia.com（維基未寫名次）。",
+   "Blue Velvets 起始年不合：維基 1959、Britannica 1959 起一起玩、Encyclopedia.com 約 1960；facts 寫『1959 年前後』。改名 CCR 的年份維基 1968 年 1 月、Britannica 1967、Encyclopedia.com 約 1967，facts 不寫。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "補查 8 次：維基、Britannica、WebSearch（名人堂）、搖滾名人堂官網、WebSearch（國會圖書館與 Fortunate Son）、Encyclopedia.com、（國會圖書館 PDF 為亂碼、工具讀不出內文，記失敗但仍佔一次）、WebSearch（Rolling Stone 排名）。失敗：loc.gov 新聞稿（403）、loc.gov 評論 PDF（讀不出文字）。名人堂官方（可具名單源）：Bruce Springsteen 引介致詞『I stand here tonight still envious of that music's power and its simplicity』；名人堂稱其 roots rock 在 prog 主導的舊金山是『offbeat standout』；名人堂長文以『The origin of America's greatest authentic rock & roll band begins in 1959』開頭（全文未讀到）。單源未進 facts：他們來自加州卻以路易斯安那沼澤（bayou）意象寫南方（維基，轉述名人堂與 AllMusic）；John Fogerty 1993 年拒絕與 Cook、Clifford 同台，Cook 與 Clifford 在 Fogerty 與 Springsteen、Robbie Robertson 等人合演時離場（單源維基，搜尋摘要 Ultimate Classic Rock／Rolling Stone 有同說，未開頁）；『首度入圍即當選』與『首次在西岸舉辦的名人堂典禮』（搜尋摘要，單源）；Grammy 名人堂收〈Fortunate Son〉、〈Proud Mary〉與《Cosmo's Factory》、國會圖書館 2013 年把〈Fortunate Son〉收入國家錄音登記（維基與搜尋摘要，單源）；Rolling Stone 2011 年百大藝人第 82、《Green River》五百大專輯第 95、《Cosmo's Factory》第 265、〈Fortunate Son〉2004 年五百大歌曲第 99（2021 年改版降至 227，單源維基與搜尋摘要）；五首亞軍單曲從未有冠軍（維基單源）；《Chronicle: The 20 Greatest Hits》12 倍白金（單源維基）；John Fogerty 2023 年 1 月宣布取回全球版權（單源維基）；Fogerty 是陸軍服役經驗、〈Fortunate Son〉出於憤怒（搜尋摘要，單源）。同名混卡：無。"
  }
 ]

@@ -369,5 +369,69 @@
   "status": "full",
   "pubIssues": [],
   "notes": "事實庫 research 與 published 皆空，三格全靠補查（6 次：維基 Animal Collective、維基 Merriweather Post Pavilion、WebSearch×2、Talkhouse、Uncut 評論；三個失敗請求不計）。⚠ 第二源獨立性有限：維基 Merriweather 條目的「wide influence」與 Deerhunter、Tune-Yards 等句本身引自 Uncut，legacy 那條兩源實為同一出處，寫作層應寫成「Uncut 評論稱…」。單源（維基 AC）：Avey Tare（David Portner）與 Geologist（Brian Weitz）讀巴爾的摩 Park School、Panda Bear（Noah Lennox）與 Deakin（Josh Dibb）於 Waldorf School 相識（Talkhouse 只說成員讀不同學校）；被稱為 American experimental pop band，混合 psychedelia、freak folk、noise、electronica，手法有 loops、drones、sampling、vocal harmonies、sound collage；AllMusic 稱其 defined the face of independent experimental rock during the 2000s and 2010s（AllMusic 403，只見維基轉述）；Merriweather 賣逾 20 萬張。單源（Talkhouse）：Portner 約 1999–2000 年進 NYU、Weitz 讀 Columbia、Lennox 2000 年夏搬到紐約；早期作品《Spirit They're Gone, Spirit They've Vanished》。單源（維基 Merriweather）：Metacritic 89/100（36 則評論）；Pitchfork 9.6 分並列 2009 年度專輯、2000 年代 200 大第 14 名；Spin 與 Entertainment Weekly 選為 2009 年度最佳、Rolling Stone 年終榜第 14；Uncut 的 Stephen Troussé 稱 one of the landmark American albums of the century so far；專輯名來自成員少年時看演出的 Maryland 場館；美國獨立專輯榜第 2；2012 年前賣出逾 19.9 萬張。單源（Uncut 評論）：the album that changed indie rock forever；聲音為 bright neo-psychedelia 交織 dub 與非洲節奏、Beach Boys 式和聲與閃亮的 rave；Uncut 評論人票選 2009 年度最佳。搜尋摘要（Flavorwire Tom Hawking 稱 Animal Collective 是 chillwave 的 spiritual overlords、Metacritic 稱其為 2009 年最受好評專輯、〈My Girls〉獲 Pitchfork 與 Slant 2009 年度歌曲）只見摘要，未開頁，不收。"
+ },
+ {
+  "key": "big thief",
+  "name": "Big Thief",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Big Thief 2015 年在紐約布魯克林成軍；Adrianne Lenker 與 Buck Meek 先以雙人組巡演，之後才找來其他成員組成樂團。",
+      "src": "https://en.wikipedia.org/wiki/Big_Thief",
+      "src2": "https://daily.bandcamp.com/features/big-thief-ufof-interview",
+      "from": "new"
+     },
+     {
+      "f": "四位成員都念過波士頓的 Berklee 音樂學院。",
+      "src": "https://en.wikipedia.org/wiki/Big_Thief",
+      "src2": "https://wfuv.org/content/big-thief",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "none",
+    "facts": []
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "葛萊美提名：2020 年《U.F.O.F.》入圍最佳另類音樂專輯；2021 年〈Not〉入圍最佳搖滾表演；2023 年《Dragon New Warm Mountain I Believe in You》入圍最佳另類音樂專輯、〈Certainty〉入圍最佳另類音樂表演（皆為入圍）。",
+      "src": "https://www.grammy.com/artists/big-thief",
+      "src2": "https://en.wikipedia.org/wiki/Big_Thief",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2020 年《U.F.O.F.》入圍葛萊美最佳另類音樂專輯（入圍）。",
+    "src": "https://www.grammy.com/artists/big-thief",
+    "src2": "https://en.wikipedia.org/wiki/Big_Thief",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基寫〈Not〉2021 年入圍最佳搖滾歌曲與最佳搖滾表演兩項，grammy.com 只列最佳搖滾表演一項；facts 只收兩源一致的最佳搖滾表演。",
+   "Lenker 與 Meek 如何相識：維基寫在波士頓的一場演出、Bandcamp Daily 寫畢業後在布魯克林的便利商店、Berklee 頁寫 Meek 與 Oleartchik 少年時在 Berklee 暑期班認識；Lenker 畢業年 Berklee 頁 '12、Bandcamp 寫 2014。互相不一致，facts 皆不寫。"
+  ],
+  "searches": 6,
+  "failedFetches": [
+   "https://www.britannica.com/topic/Big-Thief（404）",
+   "https://www.grammy.com/artists/big-thief/19603（404，後改用 /artists/big-thief 成功）",
+   "https://www.guitarworld.com/features/big-thief-adrianne-lenker-buck-meek（只回會員表單，無內容）",
+   "https://www.npr.org/sections/world-cafe/2016/11/23/503034867/big-thief-on-world-cafe（503）"
+  ],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "事實庫 research 與 published 皆空，全靠補查（6 次：維基 Big Thief、WebSearch、Berklee 新聞頁、WFUV、Bandcamp Daily、grammy.com 藝人頁）。sound 格：查到的都是單源，故標 none：維基寫 indie folk 帶 indie rock、Americana、folk rock 元素，以 Lenker 個人化詞曲為中心；Bandcamp Daily（U.F.O.F. 時期）寫多首在 Bear Creek Studios 主房間現場錄成、有的只錄一兩個 take，編曲較前作更飽滿、明亮、粗糙；Lenker 與 Meek 共同愛聽 The Band 與 Joni Mitchell。搜尋摘要（AllMusic 藝人頁，403 風險未開）稱 Grammy-nominated Brooklyn indie rock quartet steered by the vulnerable songwriting of Lenker，只見摘要不收。單源（維基）：Capacity（2017）為 NPR Bob Boilen 2017 年度十大第 1；U.F.O.F. Pitchfork 9.2 分 Best New Music；〈Mary〉列 Pitchfork 2010s 200 首最佳歌曲第 44；Oleartchik 2024 年 6 月離團；Jason Burger 原任鼓手、Krivchenia 接任。單源（Berklee 頁，母校自述，宜審慎）：七張專輯後已達與 Arcade Fire、The National 相當的獨立樂壇地位；Krivchenia 是在替《Masterpiece》擔任錄音工程時加入，Meek 與 Lenker 沒聽過他打鼓就請他；《Dragon New Warm Mountain I Believe in You》（2022）是評論與商業上的成功。單源（Bandcamp）：2016 年首作《Masterpiece》錄於紐約州北部一棟房子；2017 年《Capacity》與 Luke Temple 的牽線有關。grammy.com 頁面另有「尚未得獎」一句，只此一源，不寫進 facts。"
  }
 ]

@@ -162,7 +162,7 @@
     ],
     "pubIssues": [],
     "status": "thin",
-    "notes": "本位實際讀頁 8 次，超出上限 2 次（英文維基 Motörhead、WebSearch×2、NPR 逐字稿、維基 Lemmy、Loudwire Lemmy 傳記、grammy.com 藝人頁、Loudwire 十週年忌日文）；超出原因是前四次失敗請求後才改用 curl，且 legacy 格要找共識評價的第二源仍未湊齊。失敗請求 5 次（超出 failedFetches 上限 1 次，同一 NPR 頁算兩次）。\n⚠ legacy 格偏薄：最有價值的共識評價全是單源，不進 facts——（1）維基 Motörhead 首段：常被視為新浪潮英國重金屬（NWOBHM）的先驅，並被認為影響了眾多音樂場景、尤其是 thrash metal 與 speed metal；Loudwire 的搜尋摘要有相近說法（『forefathers of all varieties of speed metal』『perhaps no band influenced [thrash] to the extent Motörhead did』），但該文未開頁；（2）NPR 逐字稿：Motörhead 以融合朋克與金屬著稱，『inspired Metallica』，與 Slayer 交好，Lemmy 曾出現在 Sex Pistols 的舊 MV 裡——單源；（3）維基 Lemmy：追悼會 2016 年 1 月 9 日在 Forest Lawn Memorial Park 舉行；Rob Halford、Dave Grohl、Ozzy Osbourne、Alice Cooper、Metallica、Scott Ian、Tony Iommi 致意；2016 年 2 月葛萊美典禮由 Hollywood Vampires 獻唱致敬；2016 年 6 月 11 日 Download Festival 把主舞台改名『Lemmy Stage』——單源；（4）維基 Motörhead：1995 年 Lemmy 五十歲生日派對在洛杉磯 Whisky a Go Go，Metallica 以『the Lemmy's』之名登台——單源；（5）維基 Motörhead：〈Ace of Spades〉單曲 1980 年 10 月 27 日發行、英國單曲榜第 15 名，專輯第 4 名；被稱為樂團的代表曲——單源；（6）維基 Lemmy：一度想取名 Bastard，經紀人說 Bastard 這名字上不了 Top of the Pops 才改名 Motörhead——單源；（7）NPR：樂團有 22 張錄音室專輯；Lemmy 死於癌症，樂團官方聲明說他坐在最愛的 Rainbow Bar and Grill 電玩機前過世——單源；（8）維基 Lemmy 死因細目為前列腺癌、心律不整與充血性心臟衰竭（facts 只寫兩源一致的『過世』與年月日）；（9）維基 Motörhead：Lemmy 的原班三人組 Lemmy、Eddie Clarke、Phil Taylor 皆已於 2018 年前過世——單源。\n葛萊美：維基寫第 47 屆（2005 年）、grammy.com 寫『2004』年度（典禮年與頒獎年度之別），指同一次；grammy.com 另寫該類別還有三次提名（未逐項核對，1992 年《1916》入圍一事與上線簡介一致，不列問題）。\n『Lemmy 堅持是 rock and roll band』一句取自 WebFetch 摘要轉述維基 Motörhead 條目（原文未在 curl 原文中逐字核到），寫作層若要引用請降為間接敘述。\nera 格：無兩源事實，標 none；事實庫兩條單源事實見 conflicts。"
+    "notes": "本位實際讀頁 8 次，用滿上限 8（英文維基 Motörhead、WebSearch×2、NPR 逐字稿、維基 Lemmy、Loudwire Lemmy 傳記、grammy.com 藝人頁、Loudwire 十週年忌日文）；前幾次失敗請求後才改用 curl，legacy 格要找共識評價的第二源仍未湊齊。失敗請求 5 次（超出 failedFetches 上限 1 次，同一 NPR 頁算兩次）。\n⚠ legacy 格偏薄：最有價值的共識評價全是單源，不進 facts——（1）維基 Motörhead 首段：常被視為新浪潮英國重金屬（NWOBHM）的先驅，並被認為影響了眾多音樂場景、尤其是 thrash metal 與 speed metal；Loudwire 的搜尋摘要有相近說法（『forefathers of all varieties of speed metal』『perhaps no band influenced [thrash] to the extent Motörhead did』），但該文未開頁；（2）NPR 逐字稿：Motörhead 以融合朋克與金屬著稱，『inspired Metallica』，與 Slayer 交好，Lemmy 曾出現在 Sex Pistols 的舊 MV 裡——單源；（3）維基 Lemmy：追悼會 2016 年 1 月 9 日在 Forest Lawn Memorial Park 舉行；Rob Halford、Dave Grohl、Ozzy Osbourne、Alice Cooper、Metallica、Scott Ian、Tony Iommi 致意；2016 年 2 月葛萊美典禮由 Hollywood Vampires 獻唱致敬；2016 年 6 月 11 日 Download Festival 把主舞台改名『Lemmy Stage』——單源；（4）維基 Motörhead：1995 年 Lemmy 五十歲生日派對在洛杉磯 Whisky a Go Go，Metallica 以『the Lemmy's』之名登台——單源；（5）維基 Motörhead：〈Ace of Spades〉單曲 1980 年 10 月 27 日發行、英國單曲榜第 15 名，專輯第 4 名；被稱為樂團的代表曲——單源；（6）維基 Lemmy：一度想取名 Bastard，經紀人說 Bastard 這名字上不了 Top of the Pops 才改名 Motörhead——單源；（7）NPR：樂團有 22 張錄音室專輯；Lemmy 死於癌症，樂團官方聲明說他坐在最愛的 Rainbow Bar and Grill 電玩機前過世——單源；（8）維基 Lemmy 死因細目為前列腺癌、心律不整與充血性心臟衰竭（facts 只寫兩源一致的『過世』與年月日）；（9）維基 Motörhead：Lemmy 的原班三人組 Lemmy、Eddie Clarke、Phil Taylor 皆已於 2018 年前過世——單源。\n葛萊美：維基寫第 47 屆（2005 年）、grammy.com 寫『2004』年度（典禮年與頒獎年度之別），指同一次；grammy.com 另寫該類別還有三次提名（未逐項核對，1992 年《1916》入圍一事與上線簡介一致，不列問題）。\n『Lemmy 堅持是 rock and roll band』一句取自 WebFetch 摘要轉述維基 Motörhead 條目（原文未在 curl 原文中逐字核到），寫作層若要引用請降為間接敘述。\nera 格：無兩源事實，標 none；事實庫兩條單源事實見 conflicts。"
   },
   {
     "key": "opeth",
@@ -521,5 +521,300 @@
     ],
     "status": "full",
     "notes": "事實庫 research 只有 1 筆（Santana III 兩條單源）；其餘從零查。實際讀頁 6 次：英文維基 Santana (band)（curl）、搖滾名人堂官網 Santana 頁、WebSearch（葛萊美）、Billboard 2000 葛萊美專文、grammy.com Santana 藝人頁、維基 Carlos Santana。\n⚠ origin 兩條的第二源是同站（維基）不同條目（樂團條目與 Carlos 個人條目），未找到獨立第二源；寫作層用時視為單源等級，語氣保守。sound 的搖滾名人堂官方單源加維基。\n名人堂官方（可具名單源）：rockhall.com Santana 頁稱『Santana's fusion of jazz, rock and Latin influences built them a hugely successful and lasting reign in the world of rock』並列 Clive Davis 與 John Popper 為引介人；網址 https://rockhall.com/inductees/santana/ 。\n單源細節（不進 facts）：（1）維基樂團條目：全球估計賣出 1 億張、美國認證逾 4700 萬張，是史上最暢銷的團體之一；1967 年 1 月在 Bill Graham 的 Fillmore Auditorium 試演，同年 6 月因成員遲到被 Graham 解雇；1972 年陣容與方向改變後在《Caravanserai》《Welcome》《Borboletta》嘗試爵士融合；〈Smooth〉與〈Maria Maria〉都是 Hot 100 冠軍，《Supernatural》登十一國榜首、美國賣 1200 萬張；（2）維基 Carlos：Tijuana 時期看 Javier Bátiz 的 Los TJ's 啟蒙，接觸 T-Bone Walker、Muddy Waters、B.B. King 的藍調；Gábor Szabó 的爵士吉他影響他，〈Black Magic Woman〉接的〈Gypsy Queen〉出自 Szabó；Michael Bloomfield 是他自認的直接導師；2015 年 Rolling Stone 排他第 20 名、2023 年排第 11 名；共得 10 座葛萊美與 3 座拉丁葛萊美；Bill Graham 安排樂團在首張專輯發行前登上 Woodstock；《Abraxas》1970 年 9 月發行、上榜 88 週；（3）Billboard：Clive Davis 以《Supernatural》14 位製作人之一的身分拿下生平首兩座葛萊美（年度專輯、最佳搖滾專輯）；此前 Carlos 個人只得過 1 座（1988 年〈Blues for Salvador〉最佳搖滾器樂演出）；Billboard 圖說日期寫 2000 年 2 月 5 日、搜尋摘要寫 2 月 23 日，兩者不一致，facts 不寫日期；（4）事實庫 c50b-c：《Santana III》為伍茲塔克陣容最後一張、Neal Schon 17 歲加入的說法皆單源（維基專輯與 Neal Schon 條目），本次未複核，上線簡介已用。\nGRAMMY.com 藝人頁只列提名與得獎類別，未含獎項年份，故葛萊美事實以 Billboard 與維基為兩源。\n上線簡介 Supernatural：〈Smooth〉Hot 100 蟬聯 12 週、專輯不連續 12 週登冠，本次未複核；唯一發現問題為得獎座數，見 pubIssues。\n單源補充：維基 Carlos——Woodstock 演出日期為 1969 年 8 月 16 日，且是在首張專輯發行前由 Bill Graham 安排。"
+  },
+  {
+    "key": "sepultura",
+    "name": "Sepultura",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Sepultura 1984 年由 Max 與 Igor（Iggor）Cavalera 兄弟在巴西 Belo Horizonte 成軍。",
+            "src": "https://en.wikipedia.org/wiki/Sepultura",
+            "src2": "https://loudersound.com/bands-artists/biographies/max-cavalera-interview-metal-hammer-2026",
+            "from": "new"
+          },
+          {
+            "f": "Max Cavalera 1969 年生於 Belo Horizonte，幼年喪父，家中隨即陷入經濟困境。",
+            "src": "https://en.wikipedia.org/wiki/Max_Cavalera",
+            "src2": "https://loudersound.com/bands-artists/biographies/max-cavalera-interview-metal-hammer-2026",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1996 年的《Roots》把調弦降低、速度放慢，並加入巴西原住民音樂：樂團親赴巴西 Xavante 部落，把他們的節奏帶進專輯。",
+            "src": "https://loudersound.com/bands-artists/biographies/max-cavalera-interview-metal-hammer-2026",
+            "src2": "https://www.grammy.com/news/2021-sepultura-roots-25th-anniversary-interview/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Sepultura 從巴西 Belo Horizonte 走向國際，成為 1990 年代最成功的重金屬樂團之一。",
+            "src": "https://en.wikipedia.org/wiki/Sepultura",
+            "src2": "https://loudersound.com/bands-artists/biographies/max-cavalera-interview-metal-hammer-2026",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1996 年 Max Cavalera 離開 Sepultura，之後另組 Soulfly。",
+            "src": "https://en.wikipedia.org/wiki/Max_Cavalera",
+            "src2": "https://loudersound.com/bands-artists/biographies/max-cavalera-interview-metal-hammer-2026",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 5,
+    "failedFetches": [],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "事實庫 research 為空、卡池七張皆無上線簡介，全部從零查。實際讀頁 5 次：英文維基 Sepultura（curl 原文）、WebSearch、Louder 2026 Max Cavalera 專訪、GRAMMY.com《Roots》25 週年專文、維基 Max Cavalera。\n⚠ 『Max 幼年喪父』的寫法：維基 Max Cavalera 寫父親 Graziano（義大利領事館職員）在 Max 9 歲時過世，Louder 寫『at an early age』；facts 不寫年齡與職業。\n單源細節（不進 facts）：（1）維基：團名 Sepultura 是葡文『墳墓』，取自 Max 翻譯 Motörhead 〈Dancing on Your Grave〉歌詞時；早年聽 Led Zeppelin、Black Sabbath、Iron Maiden、Motörhead，後被 Venom 帶向更極端的 Hellhammer、Celtic Frost、Kreator、Slayer；也受巴西金屬 Stress、Sagrado Inferno、Dorsal Atlântica 影響；（2）維基：1985 年首任吉他手 Jairo Guedes（Lamounier）離團後領導巴西前黑金屬團 Sarcófago；1988 年被 Roadrunner 簽下；1989 年《Beneath the Remains》為國際突破；1991 年在 Rock in Rio II 面對逾 10 萬人演出；1993 年《Chaos A.D.》AllMusic 稱其為史上最偉大的重金屬專輯之一；樂團全球約賣出 2000 萬張、美國逾 300 萬張；Igor 2006 年離團後團內已無創團成員；2023 年 12 月宣布 2024 年告別巡演、預計 2026 年解散（時效敏感，寫作層不要用現在式）；（3）Louder 2026：Max 母親帶孩子們搬回 Belo Horizonte、住在外婆家後面的小屋；Igor 直到《Beneath the Remains》才有自己的鼓組；首場演出與 Overdose 同台，台下兩人穿 Motörhead T 恤；Max 1996 年與樂團爭執而分手後與弟弟失聯約 10 年；Max 說『Heavy metal was never the same after Roots』（他本人說法，非第三方評價）；（4）GRAMMY.com：〈Itsári〉在 Mato Grosso 與 Xavante 部落合作；部落說只有長者夢到旋律才能寫歌，樂團為此等了一整天；起因是 Max 看了一部電影後想與原住民部落錄音，原想找 Kayapó；巴西最大報 Folha de São Paulo 為《Roots》登整版報導；Andreas Kisser 稱這是改變人生的經驗；搜尋摘要（Louder〈Ratamahatta〉專文、Metal Injection 的 Igor 談 Gojira）另有相近說法，未開頁。\n被移出 facts 的單源句：GRAMMY.com 導言稱《Roots》是『the most polarizing and beloved LP in the band's canon』；Louder 專訪導言稱 Max 是『global metal』（融合本國音樂與精神的金屬）先驅，並說巴西當時經濟衰退、缺乏產業支持、國際能見度低；GRAMMY.com：《Roots》錄音請巴西打擊樂大師 Carlinhos Brown，原先想找的是 Naná Vasconcelos（維基摘要未核到 Carlinhos Brown）。"
+  },
+  {
+    "key": "talking heads",
+    "name": "Talking Heads",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Talking Heads 1975 年在紐約成軍，起初是 David Byrne、Chris Frantz、Tina Weymouth 三人；Jerry Harrison 之後才加入。",
+            "src": "https://en.wikipedia.org/wiki/Talking_Heads",
+            "src2": "https://rockhall.com/inductees/talking-heads/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Talking Heads 融合朋克、藝術搖滾、放克與世界音樂的複節奏，被稱為新浪潮（new wave）的開創者之一；音樂帶著神經質的緊張感與實驗性。",
+            "src": "https://en.wikipedia.org/wiki/Talking_Heads",
+            "src2": "https://rockhall.com/inductees/talking-heads/",
+            "from": "new"
+          },
+          {
+            "f": "《Remain in Light》（1980）與製作人 Brian Eno 合作，受 Fela Kuti 與 Afrobeat 影響，把西非複節奏、放克與迪斯可織在一起。",
+            "src": "https://en.wikipedia.org/wiki/Talking_Heads",
+            "src2": "https://www.grammy.com/news/remain-light-turns-40-artists-weigh-talking-heads-genre-defying-dance-floor-classic/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2002 年入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Talking_Heads",
+            "src2": "https://rockhall.com/inductees/talking-heads/",
+            "from": "new"
+          },
+          {
+            "f": "1984 年由 Jonathan Demme 執導的演唱會電影《Stop Making Sense》常被稱為史上最偉大的演唱會電影。",
+            "src": "https://en.wikipedia.org/wiki/Talking_Heads",
+            "src2": "https://www.npr.org/2023/09/28/1197954366/talking-heads-stop-making-sense-is-still-burning-down-the-house",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1978 年起樂團與製作人 Brian Eno 合作，《Remain in Light》（1980）是這段合作的成果。",
+            "src": "https://en.wikipedia.org/wiki/Talking_Heads",
+            "src2": "https://www.grammy.com/news/remain-light-turns-40-artists-weigh-talking-heads-genre-defying-dance-floor-classic/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2002 年入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Talking_Heads",
+        "src2": "https://rockhall.com/inductees/talking-heads/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Fela Kuti 是誰介紹給樂團：維基寫 Eno 把 Fela 的音樂介紹給樂團；GRAMMY.com 引 Chris Frantz 說 Eno 總把功勞歸己，但樂團大學時期早已有 Fela 的唱片；兩源不一致，facts 只寫『受 Fela Kuti 影響』，不寫誰介紹。",
+      "首場演出：維基寫 1975 年 6 月 5 日在 CBGB 為 Ramones 暖場；搖滾名人堂頁面文案寫 1975 年在 Lower Manhattan Ocean Club 的小房間登台；兩源說法不同，facts 不寫首演地點。"
+    ],
+    "searches": 5,
+    "failedFetches": [
+      "Britannica Talking-Heads 頁 403",
+      "loc.gov 國家錄音登錄簿《Remain in Light》PDF（下載成功但環境無 PDF 解析工具，讀不了內容）"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "事實庫 research 為空、卡池七張皆無上線簡介，全部從零查。實際讀頁 5 次：英文維基 Talking Heads（curl 原文）、搖滾名人堂官網 Talking Heads 頁、WebSearch（含三組子搜尋）、GRAMMY.com《Remain in Light》40 週年專文、NPR《Stop Making Sense》專文。\n名人堂官方（可具名單源）：rockhall.com 頁面稱『Artsy and experimental, Talking Heads created an oeuvre of funky New Wave hits』『Their blend of funk, minimalism and polyrhythmic world beats articulated the strangeness and anxiety of modern times』；頁面上另有一句訪談引文『They taught me that music could be inspired by visual arts』（說話者未標示，不採）。網址 https://rockhall.com/inductees/talking-heads/ 。頁面文字未列入選年份，2002 年只在維基明寫（名人堂頁面確認為入選者）。\n單源細節（不進 facts）：（1）維基：Byrne、Frantz、Weymouth 在 Rhode Island School of Design 大一時認識，Byrne 與 Frantz 組過樂團 the Artistics；1976 年 11 月簽 Sire，1977 年 1 月 Jerry Harrison（前 Modern Lovers）加入；團名 Talking Heads 取自 TV Guide 對電視『只拍頭肩畫面』的用語；Weymouth 與 Frantz 1977 年結婚；（2）維基：〈Psycho Killer〉常被聯想到 Son of Sam，Byrne 說寫在事件之前；Eno 1977 年的歌〈King's Lead Hat〉是團名的字母重組；《Remain in Light》用 Eno 的 Oblique Strategies；〈Once in a Lifetime〉MV 被 Time 列為史上最佳之一；Weymouth 與 Frantz 另組 Tom Tom Club；Byrne 與 Eno 合作《My Life in the Bush of Ghosts》；1991 年 Byrne 離團；（3）維基：4 張專輯入選 2003 年 Rolling Stone『500 大專輯』；〈Psycho Killer〉〈Life During Wartime〉〈Once in a Lifetime〉入選搖滾名人堂『塑造搖滾的 500 首歌』；VH1『100 大藝人』第 64 名；2011 年 Rolling Stone『100 大藝人』第 100 名；（4）搜尋摘要（Britannica）稱 Byrne 生於 1952 年 5 月 14 日蘇格蘭 Dumbarton，Frantz 1951 年生於 Kentucky Fort Campbell，Weymouth 1950 年生於 California Coronado；Library of Congress 2016 年把《Remain in Light》列入國家錄音登錄簿——皆只見搜尋摘要標題，未開頁；（5）GRAMMY.com：Lotus、Mise en Scene 等後輩音樂人談《Remain in Light》的影響，該文為多位音樂人的轉述集，不作共識評價。\n『新浪潮開創者』：維基寫『helped to pioneer new wave music』，搖滾名人堂寫『funky New Wave hits』，兩者對『屬新浪潮、實驗性』一致；『緊張感』來自名人堂『nervous energy』與維基『anxious yet clean-cut image』。"
+  },
+  {
+    "key": "the doors",
+    "name": "The Doors",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Doors 1965 年在洛杉磯成軍，由 UCLA 影視科系出身的 Jim Morrison 與 Ray Manzarek 創立；Robby Krieger 與 John Densmore 隨後加入，組成經典的四人陣容。",
+            "src": "https://en.wikipedia.org/wiki/The_Doors",
+            "src2": "https://www.udiscovermusic.com/artist/the-doors/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Doors 的聲音融合藍調、爵士與迷幻搖滾。",
+            "src": "https://rockhall.com/inductees/doors/",
+            "src2": "https://en.wikipedia.org/wiki/The_Doors",
+            "from": "new"
+          },
+          {
+            "f": "Morrison 的歌詞帶有詩性，模糊了搖滾歌詞與詩之間的界線。",
+            "src": "https://rockhall.com/inductees/doors/",
+            "src2": "https://www.udiscovermusic.com/artist/the-doors/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1971 年 Jim Morrison 在巴黎過世，得年 27 歲，死因始終有疑點。",
+            "src": "https://en.wikipedia.org/wiki/The_Doors",
+            "src2": "https://www.udiscovermusic.com/artist/the-doors/",
+            "from": "new"
+          },
+          {
+            "f": "1993 年入選搖滾名人堂。",
+            "src": "https://en.wikipedia.org/wiki/The_Doors",
+            "src2": "https://rockhall.com/inductees/doors/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1969 年 3 月 1 日 Morrison 在邁阿密 Dinner Key Auditorium 的演出引發猥褻指控與樂團生涯中最大的風波，樂團因此險些垮掉。",
+            "src": "https://en.wikipedia.org/wiki/The_Doors",
+            "src2": "https://www.udiscovermusic.com/artist/the-doors/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年入選搖滾名人堂。",
+        "src": "https://en.wikipedia.org/wiki/The_Doors",
+        "src2": "https://rockhall.com/inductees/doors/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "searches": 4,
+    "failedFetches": [
+      "Britannica The-Doors 頁 403",
+      "rockhall.com/inductees/the-doors/ 網址錯誤（正確為 /inductees/doors/）"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "事實庫 research 為空、卡池七張皆無上線簡介，全部從零查。實際讀頁 4 次：英文維基 The Doors（curl 原文）、WebSearch、uDiscover 樂團頁、搖滾名人堂官網 The Doors 頁；另讀 rockhall.com 1993 年度頁，頁面文字未列名單。\n名人堂官方（可具名單源）：rockhall.com 頁面稱『the Doors' fusion of blues, jazz and psychedelic rock was just the ticket』『Jim Morrison reinvented the frontman, his brooding, Beat-inspired lyrics, commanding voice, physical magnetism, and fearless anti-authoritarianism creating a durable template』『Blending psychedelic rock, blues, and jazz, the Doors crafted a compellingly dark sound, delivered in legendarily confrontational performances』『boldly blurred the lines between rock lyrics and Dionysian poetry』；網址 https://rockhall.com/inductees/doors/ 。頁面文字未列入選年份，1993 年見維基，並由搜尋結果『1993 Induction』年度頁標題佐證（頁面本身文字不含名單）。\n⚠ 兩條的第二源說明：『UCLA 影視出身』uDiscover 寫『UCLA film alumni』、維基寫兩人都讀過 UCLA School of Theater, Film and Television；『Morrison 詩性歌詞』uDiscover 寫『poesy above all』『American poet mystique』，與名人堂『Dionysian poetry』語意相近但非同句。\n單源細節（不進 facts）：（1）維基：1965 年 7 月 Morrison 與 Manzarek 在 Santa Monica 海灘重逢，Morrison 唱出〈Moonlight Drive〉開頭；John Densmore 8 月加入，經 Transcendental Meditation 課認識 Manzarek；1965 年 9 月 2 日錄六首 demo；Krieger 1965 年底加入；團名取自 Aldous Huxley《The Doors of Perception》，書名又引自 William Blake；1966 年 5 月起成為 Whisky a Go Go 駐場，同年 8 月 21 日因〈The End〉的伊底帕斯段落被開除；1966 年 8 月 18 日簽 Elektra；〈Light My Fire〉是 Elektra 第一支 Hot 100 冠軍單曲；1967 年 9 月 17 日在 Ed Sullivan Show 演出；（2）維基：他們沒有固定貝斯手，Manzarek 以鍵盤貝斯彈奏；被稱『Kings of Acid Rock』；1972 年前美國專輯賣逾 400 萬張、單曲近 800 萬張；共賣約 3600 萬張（美國）與逾 1 億張（全球）；第一支連續八張 RIAA 金唱片或白金唱片的美國樂團；被形容為『one of the most innovative, influential and controversial rock bands in history』；Rolling Stone『100 大藝人』第 41 名；〈Riders on the Storm〉入葛萊美名人堂；Morrison 葬於巴黎 Père Lachaise 公墓的『詩人角』，7 月 7 日下葬；Manzarek 2013 年 5 月 20 日過世；（3）uDiscover：Morrison 來自佛羅里達，父親是海軍高階軍官，Manzarek 來自芝加哥；名作〈Light My Fire〉主要由 Krieger 寫、Morrison 修詞；《Morrison Hotel》是英國榜最高名次（第 12 名）；（4）搜尋摘要：2007 年獲葛萊美終身成就獎——來源為搜尋摘要的彙整、未開頁，故不採；1993 年入選與 2007 年葛萊美的敘述皆未逐頁核對。\n〈Morrison 死因〉：維基寫『uncertain circumstances』、uDiscover 寫『highly suspicious circumstances – most likely from a heroin overdose』，兩源對『死因有疑點』一致，facts 不寫毒品。\n名人堂官方單源（不進 facts）：Manzarek 的旋轉管風琴、Densmore 難以預測的節奏與 Krieger 的火熱吉他，構成以洛杉磯為底色的獨特氣味。"
+  },
+  {
+    "key": "the national",
+    "name": "The National",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The National 是俄亥俄州出身的樂團，家鄉是 Cincinnati。",
+            "src": "https://en.wikipedia.org/wiki/The_National_(band)",
+            "src2": "https://www.billboard.com/articles/columns/rock/8070457/the-national-sleep-well-beast-music-video-premiere",
+            "from": "new"
+          },
+          {
+            "f": "樂團由主唱 Matt Berninger、Dessner 兩兄弟（Aaron、Bryce）與 Devendorf 兩兄弟（Scott、Bryan）組成。",
+            "src": "https://en.wikipedia.org/wiki/The_National_(band)",
+            "src2": "https://www.grammy.com/news/national-win-best-alternative-music-album-2018-grammys/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "主唱 Matt Berninger 以低沉的男中音唱關係與社會的焦慮；樂團的聲音常被比作 Joy Division 與 Wilco 的混合。",
+            "src": "https://www.rollingstone.com/music/albumreviews/review-the-nationals-sleep-well-beast-w501686",
+            "src2": "https://en.wikipedia.org/wiki/The_National_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "第 60 屆葛萊美獎（2018 年），《Sleep Well Beast》拿下最佳另類音樂專輯，得獎。",
+            "src": "https://www.grammy.com/news/national-win-best-alternative-music-album-2018-grammys/",
+            "src2": "https://en.wikipedia.org/wiki/The_National_(band)",
+            "from": "new"
+          },
+          {
+            "f": "吉他手 Aaron Dessner 與 Taylor Swift 合作《Folklore》，該專輯拿下第 63 屆葛萊美獎（2021 年）年度專輯，Dessner 上台與 Swift 一同領獎。",
+            "src": "https://www.grammy.com/news/taylor-swift-wins-album-year-folklore-2021-grammys/",
+            "src2": "https://en.wikipedia.org/wiki/The_National_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2018 年《Sleep Well Beast》獲第 60 屆葛萊美最佳另類音樂專輯。",
+        "src": "https://www.grammy.com/news/national-win-best-alternative-music-album-2018-grammys/",
+        "src2": "https://en.wikipedia.org/wiki/The_National_(band)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "searches": 8,
+    "failedFetches": [
+      "udiscovermusic.com/artist/the-national/（導向不相干頁面，未取得樂團內容）"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "事實庫 research 為空、卡池七張皆無上線簡介，全部從零查。實際讀頁 8 次（達上限）：英文維基 The National (band)（curl 原文）、WebSearch×2、GRAMMY.com 2018 得獎報導、NME《Sleep Well Beast》樂評、Billboard《Sleep Well Beast》MV 專文、GRAMMY.com 2021 年度專輯報導、Rolling Stone《Sleep Well Beast》樂評。\n⚠ 『1999 年在紐約布魯克林成軍』只見維基（『from Cincinnati, Ohio, formed in Brooklyn in 1999』），單源，不進 facts；f 欄的『俄亥俄出身、家鄉 Cincinnati』由 Billboard（『its home of Cincinnati』）與 Rolling Stone（『Ohio-bred』）支持。\n『兩對兄弟』：GRAMMY.com 引 The Guardian 的 Kitty Empire『hyper-musical brother duos』，維基逐一列出兩對兄弟；Aaron 與 Bryce 是雙胞胎為維基單源。\n《Folklore》一條：GRAMMY.com 只寫 Dessner 是 Swift 的合作者並與 Antonoff 一同上台領獎；『共同製作』與『獲第 63 屆年度專輯』見維基（『co-produced Folklore, for which he won a Grammy for Album of the Year in 2021』）；GRAMMY.com 該頁並寫這是 Swift 第三座年度專輯。搜尋摘要另稱 Dessner 共同寫了 9 首、製作 11 首（16 首中），未開頁。\n單源細節（不進 facts）：（1）維基：Berninger 與 Scott Devendorf 1991 年在 University of Cincinnati 的 DAAP 讀平面設計，在校組過 lo-fi 樂團 Nancy；Dessner 兄弟與 Alec Hanley Bemis 創辦 Brassland Records，首張《The National》（2001）在該廠牌發行；2004 年辭去日常工作並簽 Beggars Banquet；NME 與 Pitchfork 把《Alligator》(2005) 列為 2000 年代最佳專輯之一；《Boxer》(2007) 的〈Start a War〉被用於 Barack Obama 2008 年競選影片〈Signs of Hope and Change〉，《Boxer》上多份『十年最佳專輯』榜；《High Violet》(2010)；《Trouble Will Find Me》(2013) 入圍第 56 屆葛萊美最佳另類專輯；（2）維基：Aaron 與 Bryce Dessner 先寫音樂、Berninger 再依音樂填詞；Berninger 的妻子 Carin Besser 自《Boxer》起參與詞作；兩兄弟策劃《Dark Was the Night》(2009，Red Hot 慈善合輯) 與 Grateful Dead 致敬輯《Day of the Dead》；Aaron 與 Justin Vernon 組 Big Red Machine，並替 Ed Sheeran、Michael Stipe 等人製作；Bryce 也是作曲家，與 Philip Glass、Steve Reich 等合作；（3）Billboard：《Sleep Well Beast》另入圍最佳專輯包裝；樂團在家鄉 Cincinnati 策劃 Homecoming 音樂節，與俄亥俄的 MusicNOW 合作，Bryce 參與該機構 13 年；（4）NME：Bryan Devendorf 的行進樂隊式鼓點、鋼琴與銅管編排、巧妙的措辭與敘事是樂團的『steadfast elements』——單源；（5）Rolling Stone：《Sleep Well Beast》聲音更寬廣，鋼琴與電子（德國 Mouse on Mars）加入，Bryce 的弦樂編排更大膽——單源。\nera 格無兩源事實，標 none。"
   }
 ]
