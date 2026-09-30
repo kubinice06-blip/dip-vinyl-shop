@@ -213,3 +213,9 @@ g1、g4 回報把 403／404／503／付費牆也算進六次上限，十位裡�
   但照分級順序 A 級剩 10 批應先跑。取 32 批＝ar-a-011～020（10 批）＋ar-b-001～022（22 批）；B 級剩 10 批留待下一次授權。可逆：只是先後順序。
 - 32 批的 cut 清單與事實庫一次抽好（artist-extract --lean）。
 - B 級裁定另開 ar-b-rulings.md。
+
+### ar-a-011
+
+- 補洞第 2 組：Ghost 卡池混了日本 Ghost（Masaki Batoh，3 張，上線簡介也是這團）與瑞典 Ghost（Tobias Forge，2 張）→ 寫日本 Ghost，瑞典兩張待本機拆卡。
+  Gong《You》卡池記 2021（原作 1974，應為再發），《Acid Motherhood》屬 Acid Mothers Gong 名義，一併交本機。Franz Ferdinand 失敗請求 6 次，照實記，放行。
+- 補洞第 4 組：多數兩源是同站或同媒體，notes 已註明非獨立；寫作層派工詞加一句視同單源。
