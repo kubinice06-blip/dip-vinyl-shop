@@ -598,5 +598,255 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "事實庫有 2 筆研究稿與 5 篇上線簡介（多為專輯層級的曲目與盤面資訊），生平與地位須補；origin／sound／legacy 補查。實際 8 次：俄文維基、英文維基、WebSearch（訃聞）、Meduza、Film Music Reporter、英文維基 ANS synthesizer、WebSearch（勞動英雄，俄文）、warheroes.ru（俄羅斯英雄網）；失敗 2 次不計入（克里姆林宮弔唁頁 en.kremlin.ru 與 kremlin.ru 皆 503）。poolAlbums 五張皆為 Эдуард Артемьев 本人，無同名混卡。非獨立：origin 與 legacy 多數條目的第一源為俄文維基、第二源 warheroes.ru 為官方英雄名錄網站（其內容與維基大致同源於官方履歷，屬相近而非獨立）；legacy 第一條（索契）的兩源為俄文與英文維基，同站不同語言版；sound 第一條的兩源為維基不同條目。人名 Артемьев 依店主特注 Eduard Artemyev，facts 第一條並列俄文原名與拉丁拼寫，其後行文用拉丁拼寫 Artemyev（QA 若誤判西里爾字，保留專名原文：藝人欄與奧運清唱劇〈Ода доброму вестнику〉為專名）。單源未收：俄文維基記 1960 年與 Murzin 相識、1968 年佛羅倫斯國際電子音樂大會展示 ANS 成果（單源）；英文維基記 1967 年用 ANS 寫成第一首作品（英文維基單源，其他兩處搜尋摘要來源不明，未列入 facts）；俄文維基記妻子 Izolda（1936–2019）與兒子 Artemy（1966 年生，作曲家兼製作人）、追思儀式 2022 年 12 月 31 日在莫斯科大升天教堂舉行、金面具獎 2017 年、金鷹獎五次、2013 年功勳勳章四級、2018 年亞歷山大·涅夫斯基勳章（各單源或屬履歷）；Hero 官方網站記他 1990 年創立俄羅斯電聲音樂協會（單源）；Meduza 記死因為新冠住院後併發細菌性肺炎、心臟慢性病使病情複雜，俄文維基寫肺炎併發症（兩處一致但屬逝者細節，未進 facts）；Film Music Reporter 記他為 Mikhalkov 的《Burnt by the Sun》《The Barber of Siberia》《12》配樂（單源）。已依店主特注：蘇聯／俄羅斯作曲家、2022 年過世。1980 年莫斯科奧運：俄文維基與 Hero 官方網站兩處都記此清唱劇與 1980 年奧運有關（Hero 網站原文『Ode to the Good Messenger』），上線簡介寫其器樂段用於點燃聖火、人聲配合閉幕式熄火，該細節是否準確本層沒有第二源驗證，不列 pubIssue。"
+ },
+ {
+  "key": "aesop rock",
+  "name": "Aesop Rock",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Aesop Rock（本名 Ian Bavitz）1976 年生於美國紐約州的長島（Long Island）。",
+      "src": "https://en.wikipedia.org/wiki/Aesop_Rock",
+      "src2": "https://wknc.org/2023/04/07/aesop-rock-artist-in-review/",
+      "from": "new"
+     },
+     {
+      "f": "他在波士頓大學讀視覺藝術（繪畫）。",
+      "src": "https://en.wikipedia.org/wiki/Aesop_Rock",
+      "src2": "https://soundofboston.com/interview-aesop-rock/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的饒舌又快又密，用字繁複，常讓人聽不清歌詞在講什麼。",
+      "src": "https://en.wikipedia.org/wiki/Aesop_Rock",
+      "src2": "https://wknc.org/2023/04/07/aesop-rock-artist-in-review/",
+      "from": "new"
+     },
+     {
+      "f": "他說自己龐大的詞彙來自大量閱讀。",
+      "src": "https://en.wikipedia.org/wiki/Aesop_Rock",
+      "src2": "https://soundofboston.com/interview-aesop-rock/",
+      "from": "new"
+     },
+     {
+      "f": "2001 年的《Labor Days》以工作與勞動為題，他常在歌裡寫上班族的日常抱怨。",
+      "src": "https://en.wikipedia.org/wiki/Labor_Days",
+      "src2": "https://wknc.org/2023/04/07/aesop-rock-artist-in-review/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2014 年 Matt Daniels 的分析比對各饒舌歌手前 35,000 字歌詞的用字量，Aesop Rock 位居第一，被稱為嘻哈裡詞彙量最大的人。",
+      "src": "https://pudding.cool/projects/vocabulary/index.html",
+      "src2": "https://en.wikipedia.org/wiki/Aesop_Rock",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "詞彙量數字：英文維基摘要寫 7,839 個不重複字，搜尋摘要寫 7,392，Pudding 原頁面未給出確切個數；數字不一致，facts 不寫個數，只寫『居第一』。",
+   "首張專輯《Music for Earthworms》年份：維基寫 1997 年，搜尋摘要寫 1998 年；不一致，facts 不寫。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫無研究稿也無上線簡介，三格從零查。實際 8 次：維基 Aesop Rock、WebSearch（人物與詞彙）、Pudding 詞彙量分析頁、WKNC 藝人回顧、維基 Definitive Jux、維基 Labor Days、WebSearch（Labor Days 榜單）、Sound of Boston 訪談；失敗 2 次不計入（維基 Labor_Days_(album) 404、Treble 入門文 403）。poolAlbums 九張皆為 Aesop Rock 本人，無同名混卡。legacy 只有詞彙量分析一條雙源，共識評價與後輩點名都停在單源，所以整位標 thin。非獨立：origin 與 sound 的第一源皆為維基，第二源（WKNC 電台學生評論、Sound of Boston 訪談、Pudding）為獨立來源；legacy 的 Pudding 是原始研究，維基是轉述。sound 第二條的『超現實筆法』：搜尋摘要寫『exploring the drudgery of the working class through a surrealist lens』來自未開頁的來源，facts 不寫『超現實』，只保留維基『概念專輯談工作與勞動』與 WKNC『常寫職場日常抱怨』；『超現實』一詞僅搜尋摘要支撐，若寫作層要用請自查，此處不視為雙源。單源未收：維基記本名 Ian Matthias Bavitz、生於 Syosset、在長島 Northport 長大、1994 年在波士頓大學認識製作人 Blockhead、1998 年畢業、早期偶像為 Public Enemy、BDP、KMD、Run DMC、1999 年《Appleseed》EP 後簽 Mush、約 2001 年轉 Definitive Jux、2019 年與 Tobacco 組 Malibu Ken；維基《Labor Days》記 2001 年 9 月 18 日在 Definitive Jux 發行、由 Aesop Rock、Blockhead 與 Omega One 製作、Roland VS-880 錄音、Metacritic 92、Pitchfork 8.7、2010 年 Rhapsody『10 大白人饒舌專輯』、2015 年 Fact『100 大獨立嘻哈唱片』第 17、2025 年 Pitchfork『100 大饒舌專輯』第 58（皆維基單源，搜尋摘要為維基轉述）；維基《Definitive Jux》記 Guardian 2011 年稱該廠牌是『backpacker hip-hop 的開端』、列為饒舌與 R&B 史 41 個關鍵時刻的第 41（單源）；Pudding 頁面記 2019 年 1 月 21 日更新加入 75 位饒舌歌手後 Aesop Rock 仍居第一、原本作者因『太冷門』而排除他、後經 Reddit 社群抗議才加入（單源）；Sound of Boston 記他說每天讀許多新聞與科學文章、把有趣的字寫下、被稱比莎士比亞多 2,222 個字（單源）；WKNC 稱 9 張錄音室專輯、6 張 EP（單源）。Definitive Jux 成立年：維基寫 1999 年，且 2001 年因與 Def Jam 訴訟和解才改正式名，故 facts 不寫廠牌成立年。"
+ },
+ {
+  "key": "the weeknd",
+  "name": "The Weeknd",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Weeknd 本名 Abel Makkonen Tesfaye，1990 年 2 月 16 日生於加拿大多倫多，家人是來自衣索比亞的移民，他的母語是阿姆哈拉語（Amharic）。",
+      "src": "https://en.wikipedia.org/wiki/The_Weeknd",
+      "src2": "https://www.britannica.com/biography/The-Weeknd",
+      "from": "new"
+     },
+     {
+      "f": "他高中中途輟學，之後開始寫歌。",
+      "src": "https://en.wikipedia.org/wiki/The_Weeknd",
+      "src2": "https://www.britannica.com/biography/The-Weeknd",
+      "from": "new"
+     },
+     {
+      "f": "2010 年 12 月，他的歌曲透過 Drake 的 OVO 部落格首度曝光；Drake 本人在 2011 年 3 月也貼出他的〈Wicked Games〉推薦。",
+      "src": "https://en.wikipedia.org/wiki/House_of_Balloons",
+      "src2": "https://stereogum.com/2120756/the-weeknd-house-of-balloons/reviews/the-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "他出道時刻意匿名，宣傳只放陰暗的照片與「INTRODUCING THE WEEKND」的字樣，外界一度分不清這是一個人還是一組人。",
+      "src": "https://stereogum.com/2120756/the-weeknd-house-of-balloons/reviews/the-anniversary",
+      "src2": "https://www.hotnewhiphop.com/345141-how-the-weeknd-changed-rnb-and-pop-culture-with-house-of-balloons-news",
+      "from": "new"
+     },
+     {
+      "f": "2011 年 3 月 21 日，他以免費下載的方式推出混音帶《House of Balloons》，入圍當年 Polaris Music Prize 決選名單（short-list）。",
+      "src": "https://en.wikipedia.org/wiki/House_of_Balloons",
+      "src2": "https://www.britannica.com/biography/The-Weeknd",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《House of Balloons》把 R&B 做成陰暗、夜行、帶迷幻藥味的氣氛，製作以 Doc McKinney 與 Illangelo 為主。",
+      "src": "https://stereogum.com/2120756/the-weeknd-house-of-balloons/reviews/the-anniversary",
+      "src2": "https://stanforddaily.com/2021/04/08/ten-years-later-the-enduring-vice-of-the-weeknds-debut-mixtape-house-of-balloons/",
+      "from": "new"
+     },
+     {
+      "f": "這張混音帶取樣了 Beach House 與 Cocteau Twins 等獨立與另類樂團，在 R&B 裡相當少見。",
+      "src": "https://en.wikipedia.org/wiki/House_of_Balloons",
+      "src2": "https://stanforddaily.com/2021/04/08/ten-years-later-the-enduring-vice-of-the-weeknds-debut-mixtape-house-of-balloons/",
+      "from": "new"
+     },
+     {
+      "f": "他以高亢的假音（falsetto）為招牌，歌聲帶著獨特的顫音。",
+      "src": "https://www.britannica.com/biography/The-Weeknd",
+      "src2": "https://exclaim.ca/music/article/the_weeknd_house_of_balloons_10th_anniversary",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "評論界普遍認為《House of Balloons》改變了 R&B：Exclaim 稱它催生了 alternative R&B 這個次類型，Stanford Daily 稱它為 2010 年代及之後的 alternative R&B 立下標準。",
+      "src": "https://exclaim.ca/music/article/the_weeknd_house_of_balloons_10th_anniversary",
+      "src2": "https://stanforddaily.com/2021/04/08/ten-years-later-the-enduring-vice-of-the-weeknds-debut-mixtape-house-of-balloons/",
+      "from": "new"
+     },
+     {
+      "f": "2021 年 2 月 7 日，他在 Super Bowl LV 的中場秀演出。",
+      "src": "https://en.wikipedia.org/wiki/The_Weeknd",
+      "src2": "https://www.britannica.com/biography/The-Weeknd",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Drake 推薦的時間：Britannica 與維基本傳寫 2010 年底 Drake 推廣他的 YouTube 上傳；維基《House of Balloons》與 Stereogum 寫 2010 年 12 月由 Drake 的經理人 Oliver El-Khatib 在 Drake 部落格貼出，Drake 本人是 2011 年 3 月才貼〈Wicked Games〉。facts 採後者較細的版本。",
+   "《House of Balloons》取樣 Aaliyah：Stereogum 稱有取樣 Aaliyah；維基寫 2011 年原版沒有 Aaliyah 與動漫取樣、2021 年重發才補回。facts 不列 Aaliyah。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫無研究稿也無上線簡介，三格從零查。實際 8 次：維基 The Weeknd、Britannica、WebSearch（House of Balloons 遺產）、Exclaim 十週年、Stereogum 十週年、維基 House of Balloons、Stanford Daily 十週年、HotNewHipHop；無失敗請求。poolAlbums 九張皆為 The Weeknd 本人，無同名混卡。已依店主特注：銷量、串流、冠軍數與各類累計獎項一律不收；維基本傳的榜單成績、Blinding Lights 紀錄、Forbes 榜、演唱會票房、演員與電影作品也都不收。非獨立：origin 第一、二、三、五條與 legacy 第二條各含一個維基來源，另一源為獨立來源；Siouxsie and the Banshees 的取樣見於維基與 Stereogum，Stanford Daily 只點名 Beach House 與 Cocteau Twins，facts 只寫後兩者。單源未收：維基記出生地為多倫多都會區（Toronto 或 Scarborough）、母親與外婆帶大、17 歲輟學後搬到 Parkdale、曾在 American Apparel 打工、經歷過無家可歸與入獄、藝名由來（搬到 Parkdale 那個週末、去掉一個 e 避開加拿大樂團 The Weekend）、更早以 Kin Kane 之名在 Bulleez n Nerdz 二人組、2011 年共同創辦 XO 廠牌、2012 年《Echoes of Silence》入圍 Polaris 長名單、2016 年第 58 屆葛萊美以〈Earned It〉得最佳 R&B 表演獎、〈Earned It〉入圍奧斯卡最佳原創歌曲、2020 年 Time 100、2021 年 Super Bowl 是首位登上該舞台的加拿大單人歌手（『第一』類宣稱，單源，不收）、After Hours 帶 dream pop 與 new wave 影響、被稱為『流行樂裡具影響力的人物』（皆維基單源）；Britannica 記他輟學後與製作人 Jeremy Rose 合作、歌詞半唱半饒舌、題材是性與藥物且多半自傳（單源）；維基《House of Balloons》記 Metacritic 87、2011 年 Complex 第 1、Pitchfork 第 10、Billboard 第 7、Rolling Stone 21 世紀第 99、Billboard 2010 年代第 20（皆維基單源）；Exclaim 點名 Bryson Tiller、6LACK、H.E.R.、SAULT 承襲他的神祕感與疏離（單源，故 legacy 不列人名）；HotNewHipHop 稱 Drake 的《Take Care》受到影響、The Weeknd 自稱『每首歌都是 House of Balloons 2.0』、新一代 R&B 歌手多少都有他的影子（單源）；Stereogum 提到《House of Balloons》與 Frank Ocean《Nostalgia, Ultra》同期，並指出『alternative R&B』一詞常忽略 Janet Jackson、Brandy 等前輩（單源）。Super Bowl 一條只寫演出，不寫『第一位』。"
+ },
+ {
+  "key": "bts",
+  "name": "BTS",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "BTS（방탄소년단，Bangtan Sonyeondan，意為「防彈少年團」）由 Bang Si-hyuk 的 Big Hit Entertainment 在 2010 年開始籌組，2013 年出道。",
+      "src": "https://en.wikipedia.org/wiki/BTS",
+      "src2": "https://www.britannica.com/topic/BTS",
+      "from": "new"
+     },
+     {
+      "f": "這個團最初以首爾的地下饒舌歌手 RM 為起點，RM 是第一位成員。",
+      "src": "https://en.wikipedia.org/wiki/BTS",
+      "src2": "https://www.britannica.com/topic/BTS",
+      "from": "new"
+     },
+     {
+      "f": "成員共七人：Jin、Suga、J-Hope、RM、Jimin、V 與 Jungkook。",
+      "src": "https://en.wikipedia.org/wiki/BTS",
+      "src2": "https://www.britannica.com/topic/BTS",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團體從一開始就自己寫作素材，成員親自參與詞曲創作與製作。",
+      "src": "https://en.wikipedia.org/wiki/BTS",
+      "src2": "https://www.britannica.com/topic/BTS",
+      "from": "new"
+     },
+     {
+      "f": "他們的歌詞與理念反覆談自愛與賦權：2017 年 11 月與 UNICEF 推出反暴力的「Love Myself」活動，理念是「真正的愛從先愛自己開始」。",
+      "src": "https://www.unicef.org/press-releases/we-have-learned-love-ourselves-so-now-i-urge-you-speak-yourself",
+      "src2": "https://www.britannica.com/topic/BTS",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2018 年 9 月 24 日，RM 在第 73 屆聯合國大會上，UNICEF 的「Generation Unlimited」啟動儀式中演說，呼籲年輕人「speak yourself」。",
+      "src": "https://www.unicef.org/press-releases/we-have-learned-love-ourselves-so-now-i-urge-you-speak-yourself",
+      "src2": "https://www.dazeddigital.com/music/article/41533/1/bts-un-general-assembly-speech-rm-love-yourself-campaign",
+      "from": "new"
+     },
+     {
+      "f": "2018 年 10 月，南韓政府宣布授予全體成員五等花冠文化勳章（Hwagwan Order of Cultural Merit），理由是他們推廣了韓國文化與韓語；他們是這項勳章最年輕的受勳者。",
+      "src": "https://www.koreatimes.co.kr/entertainment/k-pop/20181009/bts-becomes-the-youngest-to-receive-order-of-cultural-merit",
+      "src2": "https://en.wikipedia.org/wiki/BTS",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2018 年 5 月 18 日發行的《Love Yourself: 轉 'Tear'》登上美國 Billboard 200 冠軍，維基寫它是首張登頂美國專輯榜的 K-pop 專輯。",
+    "src": "https://en.wikipedia.org/wiki/Love_Yourself:_Tear",
+    "src2": "https://en.wikipedia.org/wiki/BTS",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《2 Cool 4 Skool》的性質：維基寫 single album，Britannica 寫 EP；facts 不歸類，只寫 2013 年出道。",
+   "團體起點：維基寫 2010 年舉行試鏡，Britannica 寫 2010 年起開始組成、RM 是第一位成員；facts 寫『開始籌組』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫有 3 筆專輯研究稿（DARK&WILD、BE、Map of the Soul: 7）與 5 篇上線簡介，內容偏專輯層級，團體生平與地位須補；origin／sound／legacy 補查。實際 8 次：維基 BTS、Britannica、WebSearch（花冠文化勳章）、Korea Times、WebSearch（聯合國演說）、UNICEF 新聞稿、Dazed、維基《Love Yourself: Tear》；失敗 1 次不計入（Billboard 文章轉址 tollbit 未取到）。poolAlbums 八張皆為 BTS 本團，無同名混卡。已依店主特注：銷量、串流、冠軍總數等累計數字與成員服兵役一律不收。非獨立：origin、sound 第一條的維基與 Britannica 為兩個獨立來源；legacy 第二條與 milestone 各含維基一源；legacy 第一條的 UNICEF 與 Dazed 為兩個獨立來源。單源未收：維基記團名英文譯為『Bulletproof Boy Scouts』、J-Hope 說取名是要『擋掉像子彈一樣射向青少年的成見、批評與期待』、2017 年再增添 Beyond the Scene 的意涵、團隊原本是以 RM 為中心的 hip hop 團、後來為分散實體專輯下滑的風險擴大成偶像團體形式、由 Suga、RM、J-Hope 擔任主要製作；維基記聲音從 hip hop 擴展到 K-pop、pop、R&B 與 EDM（單源）；維基記 2019 年登 Time 100 與 Time『Next Generation Leaders』封面、2018 年 Citi Field 為韓國藝人首場美國體育場演出、2017 年〈Mic Drop〉首個獲 RIAA 金唱片的韓國團體、2021 年首位在葛萊美現場演出的韓國入圍者、IFPI 全球年度藝人（2020、2021）——這些皆為『第一』或榜單類宣稱且維基單源，未收；Britannica 記 2021 年聯合國大會上他們以『下一代與文化特使』（special presidential envoys for future generations and culture）身分發言（單源）；維基《Love Yourself: Tear》記首週 135,000 個專輯等值單位、封面設計 HuskyFox 入圍 2019 年葛萊美最佳唱片包裝（Best Recording Package）、是自 2006 年 Il Divo《Ancora》以來首張登頂的非英語為主專輯（皆單源）；Dazed 稱 BTS 是『首個在聯合國發表演說的 K-pop 團體』（『第一』類宣稱，單源，不收）；UNICEF 頁面說 Love Myself 2017 年 11 月啟動。本層檢查上線簡介：《Love Yourself: 轉 Tear》簡介『首張攻頂美國專輯榜的韓語作品』與維基『首張登頂美國專輯榜的 K-pop 專輯』、『2006 年以來首張非英語為主登頂專輯』一致；簡介的封面設計獎項稱『最佳專輯包裝獎』，維基英文原名為 Best Recording Package，類別中譯可再斟酌但不算錯，不列 pubIssue。《Map of the Soul: 7》簡介『亞洲團體的第一次（美英日德法同時登頂）』與『連續第四張美國冠軍專輯』本層未查證（超出搜尋上限），不列 pubIssue，也不確認。"
  }
 ]

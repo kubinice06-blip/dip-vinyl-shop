@@ -371,5 +371,243 @@
   "status": "full",
   "notes": "同名檢查：卡池八張專輯（What's the 411?、My Life、Share My World、Mary、No More Drama、The Breakthrough、Growing Pains、Good Morning Gorgeous）皆為同一位 Mary J. Blige，無混卡。事實庫為空，全部新查。7 次請求：en 維基、Britannica、Rock Hall 官網、WebSearch（影響與入選）、WebSearch（國會圖書館）、LOC 新聞稿、Yonkers Ledger；failedFetches 1 次（NPR 503），Vibe 影響者名單被導到 tollbit 付費站未取得。Rock Hall 官網與 Yonkers Ledger 皆為獨立來源，但『2024 年 4 月 21 日典禮』日期只有 Yonkers Ledger 明寫，Rock Hall 頁摘要只給年份與類別，寫作層寫年份即可。名人堂官方（可具名單源）：Rock Hall 官網稱她『created a new R&B template』，融合福音底子的唱腔與 hip hop；由 Dr. Dre 與 Method Man 引介，Dr. Dre 致詞：『Every single syllable, her emotional vocals capture the pain and culture, but her messages of resilience, of hope and light are a pathway towards healing.』；官網『Influenced』欄列 Beyoncé、SZA、Alicia Keys、Rihanna。單源未進 facts：(1) Alicia Keys、Beyoncé 稱受她影響的個別引述（僅 WebSearch 摘要，Vibe 原頁未取得）；(2) 1996 年 Grammy 最佳饒舌二人組或團體演出（與 Method Man）、2007 年三項 Grammy（維基單源，且獎項摘要未逐項核對）；(3) 首位同時獲奧斯卡演技與原創歌曲提名者（2018《Mudbound》，維基單源，屬『第一位』類宣稱，未反查）；(4) TIME 2022 年 100 大影響力人物、2022 Super Bowl 中場 Emmy（維基單源）；(5) Britannica 稱她受教會歌唱與母親的靈魂樂唱片啟蒙（單源）；(6) LOC 條目稱《My Life》取樣 Marvin Gaye、Curtis Mayfield 與 Mary Jane Girls 並由她寫大部分歌曲（LOC 單源，『大部分歌曲由她參與寫作』只有 LOC 說到；購物中心 White Plains 錄音亭、經 Jeff Redd 轉給 Andre Harrell（維基單源））；(7) Yonkers Ledger『為黑人女性創造了被看見與展露情感而不羞愧的空間』（單源）；(8) 維基稱她『把 R&B 與 hip hop 的混合帶進主流流行文化』（維基單源）；(9) 1989 年 18 歲簽約作為和聲歌手（維基單源）。",
   "pubIssues": []
+ },
+ {
+  "key": "atmosphere",
+  "name": "Atmosphere",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Atmosphere 是來自明尼蘇達州 Minneapolis 的 hip hop 二人組，由饒舌手 Slug（Sean Daley）與 DJ 兼製作人 Ant（Anthony Davis）組成。",
+      "src": "https://en.wikipedia.org/wiki/Atmosphere_(group)",
+      "src2": "https://www.huckmag.com/article/atmosphere",
+      "from": "new"
+     },
+     {
+      "f": "團體最初是 Slug 與 D-Spawn（Derek Turner）的組合，後來 Ant 加入負責製作。",
+      "src": "https://www.clevescene.com/music/honest-atmosphere-slug-and-ant-keep-kickin-the-truth-into-middle-age-4323458/",
+      "src2": "https://en.wikipedia.org/wiki/Slug_(rapper)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Slug 以內省、坦白的詞見稱，題材取自個人經歷與感情關係。",
+      "src": "https://en.wikipedia.org/wiki/Atmosphere_(group)",
+      "src2": "https://www.clevescene.com/music/honest-atmosphere-slug-and-ant-keep-kickin-the-truth-into-middle-age-4323458/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Slug 與 Ant 是 Minneapolis 獨立 hip hop 廠牌 Rhymesayers Entertainment 的共同創辦人，廠牌 1995 年成立。",
+      "src": "https://en.wikipedia.org/wiki/Rhymesayers_Entertainment",
+      "src2": "https://en.wikipedia.org/wiki/Slug_(rapper)",
+      "from": "new"
+     },
+     {
+      "f": "Rhymesayers 1999 年在 Minneapolis 開了 Fifth Element 唱片行。",
+      "src": "https://en.wikipedia.org/wiki/Rhymesayers_Entertainment",
+      "src2": "https://www.huckmag.com/article/atmosphere",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Atmosphere 成軍年：英文維基寫 1996 年，Rhymesayers 條目寫廠牌 1995 年成立（創辦人含 Slug 與 Ant），兩者先後矛盾；facts 只寫廠牌 1995 年、不寫團的成軍年",
+   "Soundset：Huck 寫 1997 年，Rhymesayers 條目寫 2008 年起贊助 Soundset 音樂節，兩源不一致，不收年份"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "同名檢查：卡池七張專輯（Overcast!、God Loves Ugly、Seven's Travels、You Can't Imagine How Much Fun We're Having、When Life Gives You Lemons You Paint That Shit Gold、Southsiders、Fishing Blues）皆為 Minneapolis 的 Atmosphere，無混卡。事實庫為空，全部新查。8 次請求：維基 Atmosphere 消歧頁（無內容）、Rhymesayers 維基、Atmosphere (group) 維基、WebSearch、Huck、Cleveland Scene、Rhymesayers 官網 Atmosphere 頁、Slug (rapper) 維基。兩源非獨立：Rhymesayers 官網為廠牌自家介紹，未作為第二源使用。era 標 none（年表細節互相矛盾）。legacy 只撐得起廠牌共同創辦這一條，缺『後輩點名』或名人堂類共識評價，因此 status 為 thin。單源未進 facts：(1) 維基稱團體 1996 年成立於 Minneapolis、前身名稱 Mental Subjects／A Rhythmic Culture／Urban Atmosphere（單源）；(2)《God Loves Ugly》（2002）賣超過 13 萬張、Interscope／Sony／Warner 曾出價但團體維持獨立（維基單源，寫作時須寫成當時數字）；(3) Minneapolis First Avenue 外牆的明星（維基單源，名義與規則未核）；(4) Slug 1972 年 9 月 7 日生於 Minneapolis、藝名來自父親綽號 Sluggo（Slug 維基單源）；(5) Huck：Slug 自述自己既是藝術家也是小生意老闆與 A&R（單源）；(6) Cleveland Scene：Ant 的製作『stripped-down、bare-bones beats』（單源）；Rhymesayers 官網：Ant 取材靈魂、放克、搖滾、雷鬼與 hip hop 先驅 DJ（廠牌自家、單源）；(7) 搜尋摘要稱 Atmosphere 是『地下 hip hop 乃至整個獨立音樂的代表性團體之一』（來源頁未逐頁確認，未收）。Slug 維基稱早期 Slug 打 DJ、Spawn 負責主唱，與維基團體條目『Spawn 在首張專輯後離團』並存，成員分工不寫。",
+  "pubIssues": []
+ },
+ {
+  "key": "big daddy kane",
+  "name": "Big Daddy Kane",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Big Daddy Kane 本名 Antonio Hardy，1968 年 9 月 10 日生於布魯克林的 Bedford-Stuyvesant。",
+      "src": "https://en.wikipedia.org/wiki/Big_Daddy_Kane",
+      "src2": "https://www.vice.com/en/article/some-things-you-may-not-know-about-big-daddy-kane/",
+      "from": "new"
+     },
+     {
+      "f": "他從布魯克林的 battle rapper 起步，後來加入 Marley Marl 領軍的 Juice Crew，同團有 Biz Markie。",
+      "src": "https://www.vice.com/en/article/some-things-you-may-not-know-about-big-daddy-kane/",
+      "src2": "https://en.wikipedia.org/wiki/Big_Daddy_Kane",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以快速的押韻與複雜的字詞技巧見稱。",
+      "src": "https://ambrosiaforheads.com/2017/04/big-daddy-kane-greatest-rapper-video/",
+      "src2": "https://northcarolinamusichalloffame.org/inductee-item/bigdaddykane/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Jay-Z 早年是 Kane 提攜的後輩。",
+      "src": "https://djbooth.net/features/2019-08-20-big-daddy-kane-show-and-prove-legendary-story/",
+      "src2": "https://northcarolinamusichalloffame.org/inductee-item/bigdaddykane/",
+      "from": "new"
+     },
+     {
+      "f": "1994 年 Kane 的專輯《Daddy's Home》收錄〈Show & Prove〉，Jay-Z 在曲中客串。",
+      "src": "https://djbooth.net/features/2019-08-20-big-daddy-kane-show-and-prove-legendary-story/",
+      "src2": "https://en.wikipedia.org/wiki/Big_Daddy_Kane",
+      "from": "new"
+     },
+     {
+      "f": "Kane 沉穩自信的風格被認為為 Jay-Z、Nas 這些後輩鋪了路。",
+      "src": "https://theshadowleague.com/big-daddy-kane-turned-50-and-will-still-body-your-favorite-rapper/",
+      "src2": "https://ambrosiaforheads.com/2017/04/big-daddy-kane-greatest-rapper-video/",
+      "from": "new"
+     },
+     {
+      "f": "他被與 Rakim、KRS-One 並列為 hip hop 黃金年代最好的 MC 之一。",
+      "src": "https://www.vice.com/en/article/some-things-you-may-not-know-about-big-daddy-kane/",
+      "src2": "https://ambrosiaforheads.com/2017/04/big-daddy-kane-greatest-rapper-video/",
+      "from": "new"
+     },
+     {
+      "f": "MTV 的「Greatest MCs of All Time」榜單把他排在第 7 名。",
+      "src": "https://en.wikipedia.org/wiki/Big_Daddy_Kane",
+      "src2": "https://theshadowleague.com/big-daddy-kane-turned-50-and-will-still-body-your-favorite-rapper/",
+      "from": "new"
+     },
+     {
+      "f": "他的前兩張專輯《Long Live the Kane》（1988）與《It's a Big Daddy Thing》（1989）被公認為經典。",
+      "src": "https://www.vice.com/en/article/some-things-you-may-not-know-about-big-daddy-kane/",
+      "src2": "https://northcarolinamusichalloffame.org/inductee-item/bigdaddykane/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1987 年他以單曲〈Raw〉出道，快速押韻是這首歌的核心。",
+      "src": "https://northcarolinamusichalloffame.org/inductee-item/bigdaddykane/",
+      "src2": "https://en.wikipedia.org/wiki/Big_Daddy_Kane",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "藝名來源兩源不一致：維基寫取自電視劇《Kung Fu》的 Caine 與電影《Beach Party》的 Big Daddy，Vice 寫 Kane 是『King Asiatic Nobody's Equal』，facts 不寫藝名來源"
+  ],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "同名檢查：卡池七張專輯（Long Live the Kane、It's a Big Daddy Thing、Taste of Chocolate、Prince of Darkness、Looks Like a Job For…、Daddy's Home、Veteranz Day）皆為 Brooklyn 的 Big Daddy Kane，無混卡。事實庫為空，全部新查。7 次請求：en 維基、WebSearch、Vice、DJBooth、North Carolina Music Hall of Fame、Ambrosia for Heads、The Shadow League；failedFetches 1 次（Britannica 404）。兩源非獨立：Shadow League 與 Vice 兩處相同的『Jay-Z 與 Biggie 的早期影響』說法很可能同源轉述，故『與 Rakim、KRS-One 並列』的 src2 改用 Ambrosia（其文字為『晚 1980 年代 Rakim、Kool G Rap、KRS-One 同屬頂尖 MC，Kane 商業上最成功』，與 Vice『並列』口徑略有差，寫作層宜寫『被視為黃金年代頂尖 MC 之一』）；『MTV 榜第 7』的 src 為維基，Shadow League 亦列，兩者可能同出一源，且 MTV 榜年份未查，不寫年份。單源未進 facts：(1) Kool Moe Dee《There's a God on the Mic》榜第 4（Shadow League 單源）；(2) RZA 列他為前五（Vice 單源）；(3) 維基轉引 Rolling Stone：〈Ain't No Half-Steppin'〉列《50 Greatest Hip-Hop Songs》第 25，且稱他『a master wordsmith of rap's golden age and a huge influence on a generation of MCs』（維基單源，Rolling Stone 原頁未開）；(4) Ice-T 稱願拿 Kane 對戰任何饒舌手（維基單源）；(5) Ambrosia：Kane 與 Rakim 把 Five Percent Nation 教義帶進饒舌，影響 Wu-Tang Clan、Busta Rhymes（單源）；(6) Shadow League：粗金鍊、高頂髮型、絲絨套裝的布魯克林造型因他走向全國、1984 年與 Biz Markie 合寫歌（單源）；(7) 1991 年 Grammy（Quincy Jones《Back on the Block》相關的最佳饒舌二人組或團體演出）與 2016 年入選北卡羅來納音樂名人堂（North Carolina Music Hall of Fame 官網單源，且他 2000 年代初才遷居該州，與出身無關）；(8) 1987 年 Cold Chillin' 簽約（維基單源）。 〈Show & Prove〉：DJBooth 稱製作 DJ Premier、受邀者含 Big Scoob 與 Shyheim（DJBooth 單源，未進 facts）。",
+  "pubIssues": []
+ },
+ {
+  "key": "billy woods",
+  "name": "billy woods",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "billy woods 生於華盛頓特區，母親是牙買加裔的文學教授，父親是辛巴威的馬克思主義知識分子。",
+      "src": "https://en.wikipedia.org/wiki/Billy_Woods",
+      "src2": "https://jacobin.com/2025/02/billy-woods-rap-zimbabwe-colonialism",
+      "from": "new"
+     },
+     {
+      "f": "他童年有一段時間在辛巴威度過，1989 年舉家回到美國。",
+      "src": "https://en.wikipedia.org/wiki/Billy_Woods",
+      "src2": "https://oxfordamerican.org/magazine/issue-120-spring-2023/billy-woods-madness-in-the-cupboards",
+      "from": "new"
+     },
+     {
+      "f": "他 2000 年代初創辦獨立廠牌 Backwoodz Studioz。",
+      "src": "https://en.wikipedia.org/wiki/Billy_Woods",
+      "src2": "https://oxfordamerican.org/magazine/issue-120-spring-2023/billy-woods-madness-in-the-cupboards",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的詞密度高、層層纏繞，適合細聽；Wax Poetics 形容他的節奏走位帶著抽象而難以預測的稜角。",
+      "src": "https://oxfordamerican.org/magazine/issue-120-spring-2023/billy-woods-madness-in-the-cupboards",
+      "src2": "https://magazine.waxpoetics.com/article/billy-woods-interview/",
+      "from": "new"
+     },
+     {
+      "f": "他的歌把流行文化、黑人革命與個人回憶錄交織在一起，題材觸及身分、種族與殖民。",
+      "src": "https://oxfordamerican.org/magazine/issue-120-spring-2023/billy-woods-madness-in-the-cupboards",
+      "src2": "https://magazine.waxpoetics.com/article/billy-woods-interview/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的專輯多年來經常出現在年終最佳專輯榜上。",
+      "src": "https://en.wikipedia.org/wiki/Billy_Woods",
+      "src2": "https://jacobin.com/2025/02/billy-woods-rap-zimbabwe-colonialism",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他與製作人 Kenny Segal 合作了 2019 年的《Hiding Places》與 2023 年的《Maps》。",
+      "src": "https://magazine.waxpoetics.com/article/billy-woods-interview/",
+      "src2": "https://en.wikipedia.org/wiki/Maps_(Billy_Woods_and_Kenny_Segal_album)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "搬去辛巴威的年份：維基寫 1980 年，Oxford American 寫 1981 年（五歲）；父親逝世是否為返美原因，維基寫是、Oxford American 未提；facts 不寫遷往年份與父親過世",
+   "Backwoodz Studioz 創辦年：維基 2002、Oxford American 約 2001–2002、搜尋摘要 2003；facts 只寫 2000 年代初"
+  ],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "同名檢查：卡池七張專輯（History Will Absolve Me、Known Unknowns、Hiding Places、Church、Aethiopes、Maps、GOLLIWOG）皆為紐約 billy woods，無混卡（Aethiopes 與 Church 為另掛 Preservation、Armand Hammer 之名，維基的 Aethiopes 條目署名為 Billy Woods 與 Preservation，屬同一人）。事實庫為空，全部新查。7 次請求：en 維基、WebSearch（出身）、Wax Poetics、Oxford American、WebSearch（年終榜與影響）、Jacobin、en 維基 Maps 條目；Rolling Stone 被導到 tollbit 付費站、Pitchfork 被工具拒絕（皆未計入）。兩源非獨立：Oxford American 與 Wax Poetics 為獨立媒體；『年終榜』一條的 Jacobin 與維基為獨立。legacy 只有一條、缺後輩點名，status 為 thin。單源未進 facts：(1) 維基稱《History Will Absolve Me》（2012）成為地下 hip hop 的『cult classic』並使他事業復甦（維基單源）；(2) 維基：2013 年與 Elucid 組成 Armand Hammer（維基單源，Jacobin 只說他是成員）；(3) Jacobin 稱他為『cornerstone figure in contemporary underground hip-hop』（單源）；(4)《Maps》2023 年終榜名次（維基單源，Pitchfork 第 3、Rolling Stone 第 8 等，Pitchfork 頁面拒絕連線、Rolling Stone 付費）；維基轉引 NPR Sheldon Pearce 稱他『one of rap's greatest-ever penmen』與 Pitchfork Stephen Kearse『into the ranks of rap's great stylists and storytellers』（維基單源）；(5) 搜尋摘要稱他影響 Earl Sweatshirt 與 MIKE、Earl 2019 年訪談提到常聽他（僅搜尋摘要、來源頁 Medium／Hip Hop Golden Age 未開，且來源品質偏低，未收）；(6) 1998 年在哈林經 Atoms Family 開始饒舌（Oxford American 單源，搜尋摘要另稱 1997 年在緬因州寫下第一段詞，來源不一致）；(7) 就讀 Howard University（Oxford American 與搜尋摘要，僅一頁實際開啟）；(8) 本名未公開、刻意遮臉（維基單源）；(9) 童書《A is for Anarchist》（2023）（維基單源）。 父親參與辛巴威解放戰爭（Oxford American、Jacobin 皆提，但 Oxford 為單頁詳述、維基僅稱馬克思主義知識分子，未收）；母親在 Howard 任教、父親在 University of Maryland 任教（Oxford American 單源）。",
+  "pubIssues": []
  }
 ]
