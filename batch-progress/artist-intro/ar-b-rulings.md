@@ -175,3 +175,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 014 w1 審稿（4 處）：Kreator 刪《Pleasure to Kill》與 Master of Puppets／Reign in Blood 的先後比較（發行日 1986-04-01 與 1986-11-01 兩說，主線 WebSearch 確認衝突），改以 Teutonic thrash 定位補足篇幅；Magazine 解散敘述改「McGeoch 後來離團，樂團在 1981 年解散」（McGeoch 實為 1980 年離團）；Juan de la Cruz Band 語序；KENSO「県相」保留原字（校名簡稱）。
 - 014 w2 審稿（2 處）：Mazzy Star 刪 Roback 死因；NELL 的서태지 改漢字「徐太志」（比照申海澈）。Nena 氣球靈感段照寫（兩源一致的部分，不寫是誰、不寫年份）。Mayhem 榮譽獎評審語兩源（Bravewords＋挪威文維基）照用。
 - **ar-b-014 上線**：40 位，reviewFixes 6。
+- 015 g3 交件。thin：Sharon Van Etten、Smog、Snapcase、Styx。Suicidal Tendencies 搜尋 9 次超限 1 次，該次內容已撤；Sick of It All、Snapcase 失敗請求 5 次超限，未取得內容，照收。Lou Koller 2026-07-24 過世，主線 WebSearch 核實（Noise11、Reason），但享年 59／61 各源不一 → 只寫年份，不寫年紀與死因。Steve Miller 入選名人堂的主詞是本人。

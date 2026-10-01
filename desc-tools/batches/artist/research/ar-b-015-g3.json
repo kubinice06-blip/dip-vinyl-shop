@@ -544,5 +544,69 @@
     "failedFetches": 1,
     "status": "thin",
     "notes": "名冊 key 對應芝加哥的 Styx（The Grand Illusion、Paradise Theatre、Pieces of Eight）；英國另有同名團，卡池三張專輯皆為芝加哥這一團，無同名混卡。事實庫 research 為空，published 兩張為專輯層級。搜尋 8 次：維基 Styx (band)、Britannica（有內容，僅歸類 art rock，與 Steely Dan、Supertramp、Rush 同組）、WebSearch（歷史）、uDiscoverMusic、維基《The Grand Illusion》、WebSearch（文化與名人堂）、Louder 專訪文、維基《Come Sail Away》；失敗請求 1 次（Observer 403，不計入）。⚠ 非獨立：origin 的第二源 Louder 與維基互證；legacy 的第二源 uDiscover；legacy 只收到專輯層級的一條，團體層級的共識評價（名人堂、後輩點名）查無。未收（單源或僅搜尋摘要）：維基 Styx 寫 1977 至 1981 年連續四張多白金專輯、八首單曲進美國 Hot 100 前十、1975 至 1984 年替 A&M 賣超過 2000 萬張（維基單源；在世團體銷量不寫）；〈Babe〉登上冠軍、《Paradise Theatre》登上美國榜冠軍、《Kilroy Was Here》（uDiscover 單源，上線簡介已寫前者）；〈Lady〉1975 年登上 Billboard 第 6 名（Louder 單源）；Wooden Nickel 簽約與被要求改名（Louder 單源）；維基《Come Sail Away》寫 Billboard 把它排在最佳十首 Styx 歌曲第 1、2026 年 6 月 CBS News 的 250 首美國歌曲名單收入它（單源）；維基《The Grand Illusion》寫 Classic Rock 的 Malcolm Dome 把同名曲評為 Styx 最佳歌曲（單源）；搖滾名人堂：搜尋摘要（Loudwire、Ultimate Classic Rock 標題等）稱 Styx 1998 年起具資格、從未入圍，Tommy Shaw 公開表示失望，皆只看到搜尋摘要未開頁，不收；〈Come Sail Away〉在 South Park、Freaks and Geeks 的使用也只看搜尋摘要（維基《Come Sail Away》頁沒有這些），不收。『highbrow critics berated the band』只在搜尋摘要，且出處是否為 Louder 無法確認，不收。後輩具名點名查無。 另：uDiscover 寫早期作品受 Emerson, Lake & Palmer 與 Moody Blues 影響、並稱 Styx 是『a staple of AOR radio in America』與『one of the most interesting and creative rock bands to come out of America』（單源，未收）；維基《The Grand Illusion》寫同名曲在 FM 電台有大量播放（指同名曲，不是〈Come Sail Away〉）。"
+  },
+  {
+    "key": "suicidal tendencies",
+    "name": "Suicidal Tendencies",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Suicidal Tendencies 出自洛杉磯 Venice 的滑板與龐克場景；主唱 Mike Muir 的哥哥 Jim 'Red Dog' Muir 是 Dogtown 滑板圈的人物，把弟弟帶進了滑板與金屬樂。",
+            "src": "https://en.wikipedia.org/wiki/Mike_Muir",
+            "src2": "https://juicemagazine.com/home/suicidal-tendencies-2/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Suicidal Tendencies 的路線是 crossover thrash，也就是 hardcore punk 與 thrash metal 的混合；1983 年的首張專輯還偏向 hardcore punk，1987 年的《Join the Army》起才轉向金屬那一側。",
+            "src": "https://en.wikipedia.org/wiki/Suicidal_Tendencies_(album)",
+            "src2": "https://en.wikipedia.org/wiki/Crossover_thrash",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Suicidal Tendencies 被視為 crossover thrash 的奠基者之一；維基《Crossover thrash》寫 Metal Hammer 稱他們是『the godfathers of crossover』。",
+            "src": "https://en.wikipedia.org/wiki/Crossover_thrash",
+            "src2": "https://en.wikipedia.org/wiki/Suicidal_Tendencies",
+            "from": "new"
+          },
+          {
+            "f": "1983 年首張專輯裡的〈Institutionalized〉，其音樂錄影帶是最早在 MTV 獲得大量播放的硬核龐克影片之一，替樂團帶來更廣的聽眾。",
+            "src": "https://en.wikipedia.org/wiki/Suicidal_Tendencies",
+            "src2": "https://en.wikipedia.org/wiki/Suicidal_Tendencies_(album)",
+            "from": "new"
+          },
+          {
+            "f": "2016 年，Suicidal Tendencies 入選滑板名人堂（Skateboarding Hall of Fame），顯示樂團的影響已延伸到滑板文化。",
+            "src": "https://en.wikipedia.org/wiki/Suicidal_Tendencies",
+            "src2": "https://en.wikipedia.org/wiki/Mike_Muir",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "成軍年：英文維基《Suicidal Tendencies》與《Mike Muir》寫 1980 年；搜尋摘要（滑板名人堂官網標題的摘要）寫 1981 年。兩源不一致，facts 不寫成軍年。"
+    ],
+    "pubIssues": [],
+    "searches": 9,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "名冊 key 對應洛杉磯 Venice 的 Suicidal Tendencies（Suicidal Tendencies 1983、Join the Army、Lights… Camera… Revolution!），無同名混卡。事實庫 research 與 published 皆空，從零查。⚠ 搜尋次數超過上限：實際請求 9 次（上限 8）——維基 Suicidal Tendencies、WebSearch（滑板名人堂）、維基 Mike Muir、Juice Magazine 1999 訪談、維基 Crossover thrash、樂團官方商店部落格（Hall of Fame 日期與類別）、WebSearch（後輩點名）、維基《Suicidal Tendencies (album)》、Erie Reader（第 9 次）。第 9 次（Erie Reader）取得的內容已撤掉、沒有任何 facts 引用它，其說法（『catalyzing band』『influence undeniable』）一概不收。失敗請求 2 次（滑板名人堂官網頁面空白、Alt Press 403，不計入）。⚠ 非獨立：legacy 與 sound 的兩源多為維基不同條目互證，legacy 第三條是維基與 Mike Muir 條目互證；origin 的第二源 Juice 是 1999 年訪談（Mike 與哥哥 Jim 談 Venice 的滑板與龐克場景，開頁）。未收（單源或僅搜尋摘要）：成員 Rocky George、Robert Trujillo 引進放克（維基單源）；《The Art of Rebellion》1992 年 Billboard 200 最高第 52 名、1991 與 1994 年葛萊美提名（維基單源，提名類別未查，故不收）；滑板名人堂 2016 年 5 月 13 日、Icon Award（只見樂團商店頁與搜尋摘要）；Muir 稱樂團『became a soundtrack for a lot of skaters』（商店頁，樂團自述）；1987 年 5 月 Mike Muir 登上 Thrasher 雜誌封面，被稱為首位非滑手（屬『第一位』類，商店頁與搜尋摘要皆是樂團或單源，且有無反例未查，不收）；〈Possessed to Skate〉成為滑手的主題歌（搜尋摘要）；Anthrax 的 Scott Ian 稱首張專輯是『a perfect crossover between hardcore punk and metal』（維基《Suicidal Tendencies (album)》單源）；維基專輯條目稱 AllMusic 的 Steve Huey 給 4.5 顆星、並說它『owed much more to hardcore punk than to the later hybrid』（單源）；搜尋摘要稱 Big Four 各自點名過他們、The Offspring 與 NOFX 也是（出處為搜尋摘要，未開頁，不收）。Muir 青少年時期的聽覺啟蒙（Sex Pistols、Ramones、Black Sabbath、UFO、AC/DC、Van Halen）只見維基 Mike Muir 單源。名人堂（搖滾）、國家級榮譽查無。"
   }
 ]
