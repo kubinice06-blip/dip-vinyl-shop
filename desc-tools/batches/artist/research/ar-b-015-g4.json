@@ -838,5 +838,100 @@
     "status": "full",
     "notes": "確認身分：poolAlbums《The Cars》1978、《Candy-O》1979、《Heartbeat City》1984 皆為波士頓的 The Cars，無同名混卡。事實庫 research 為空，只有《Heartbeat City》一則上線簡介（無衝突）。補查 8 次（英文維基 The Cars、搖滾名人堂官網、搜尋 Ocasek 訃聞、NBC 訃聞、英文維基 Ocasek、Boston Globe 訃聞、英文維基 Benjamin Orr、搜尋後輩影響）；失敗請求 2 次不計入（Rolling Stone 訃聞轉址後 402）。非獨立提醒：origin 與 legacy 的多條第二源是同站不同條目（維基 The Cars、Ric Ocasek、Benjamin Orr）；NBC 與 Boston Globe 為獨立新聞稿。名人堂官方（可具名單源）：搖滾名人堂官網稱 The Cars 有『新浪潮與經典搖滾的完美組合』、『hook 感強烈』，其『磁性與知性的編排讓聽眾願意離開地下，走進主流』，並說他們『一出手音色就已成熟、囂張，超出既有分類而重新定義分類』；2018 年入選，引介人是 The Killers 的 Brandon Flowers（官網 https://www.rockhall.com/inductees/cars）。單源未收：1978 年首張專輯賣出六百萬張、四首進入 Top 10、1984 年 MTV Video of the Year（〈You Might Think〉影帶；維基單源，且在世成員累計銷量不寫）；樂團最後一場演出在名人堂典禮上（維基單源）；Ocasek 1944 年生於巴爾的摩，16 歲隨父親到克里夫蘭（維基單源）；Orr 1947 年生於俄亥俄 Lakewood、本名 Orzechowski、祖輩為 Carpatho-Rusyn 與波蘭裔（維基單源）；Ocasek 死因為高血壓性心臟病與冠狀動脈疾病（維基與搜尋摘要提到；兩者均只列為自然死因，依規則不寫成因）；Boston Globe 稱團員比同期搖滾人年長、出身波士頓民謠場景（單源）；NBC 引一位評論者稱 Ocasek 是『現代吉他流行的建築師』（匿名評語，不收）；搜尋摘要稱 Weezer、Foo Fighters、The Killers、Fountains of Wayne、The Strokes、Smashing Pumpkins 曾點名 The Cars 影響（來源為 Music Data Blog、Ringer 等，未開頁，不收）；Orr 為〈Just What I Needed〉〈Drive〉等曲主唱，Ocasek 為悼念他寫了〈Silver〉（維基單源）；Britannica 搜尋結果出現但未開頁。",
     "pubIssues": []
+  },
+  {
+    "key": "the enid",
+    "name": "The Enid",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Enid 由鍵盤手兼作曲家 Robert John Godfrey 創立；創團成員是他在英國肯特郡 Finchden Manor 這所教育機構認識的朋友，包括 Francis Lickerish、Stephen Stewart 與 David Williams。",
+            "src": "https://en.wikipedia.org/wiki/The_Enid",
+            "src2": "https://www.theenid.co.uk/about/history",
+            "from": "new"
+          },
+          {
+            "f": "Godfrey 受過皇家音樂學院訓練，成立 The Enid 之前當過 Barclay James Harvest 的音樂指導。",
+            "src": "https://en.wikipedia.org/wiki/Robert_John_Godfrey",
+            "src2": "https://ramzine.co.uk/featured/robert-john-godfrey-announces-retirement-from-the-enid/",
+            "from": "new"
+          },
+          {
+            "f": "創團主唱 Peter Roberts 在 1975 年過世，Godfrey 沒有解散樂團；早期專輯全是器樂。",
+            "src": "https://en.wikipedia.org/wiki/The_Enid",
+            "src2": "https://ramzine.co.uk/featured/robert-john-godfrey-announces-retirement-from-the-enid/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Enid 走交響與藝術搖滾路線，把搖滾配器與古典的交響動態結合；早期專輯是取材神話的器樂作品。",
+            "src": "https://en.wikipedia.org/wiki/The_Enid",
+            "src2": "https://www.thepublicityconnection.com/theenid",
+            "from": "new"
+          },
+          {
+            "f": "1983 年的第五張專輯《Something Wicked This Way Comes》是他們第一張有歌詞的專輯。",
+            "src": "https://en.wikipedia.org/wiki/The_Enid",
+            "src2": "https://en.wikipedia.org/wiki/Something_Wicked_This_Way_Comes_(album)",
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "離開大廠牌之後，他們靠歌迷支持維持獨立：1980 年代成立訂閱制的歌迷組織 The Stand，用會員的支持籌措巡演、設備與錄音經費，被視為早期的群眾募資先例。",
+            "src": "https://www.theenid.co.uk/about/history",
+            "src2": "https://ramzine.co.uk/featured/robert-john-godfrey-announces-retirement-from-the-enid/",
+            "from": "new"
+          },
+          {
+            "f": "Godfrey 在 2014 年 Progressive Music Awards 拿下 Visionary 獎（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Robert_John_Godfrey",
+            "src2": "https://www.thepublicityconnection.com/theenid",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "bank",
+        "facts": [
+          {
+            "f": "《Something Wicked This Way Comes》1983 年 2 月在英國由樂團自行發行（編號 Enid 3）。",
+            "src": "https://www.discogs.com/release/1881252",
+            "from": "bank"
+          },
+          {
+            "f": "《The Stand》1984 年 3 月以歌迷俱樂部唱片的形式發行，廠牌欄就叫 The Stand，Discogs 條目註明不對公眾販售。",
+            "src": "https://www.discogs.com/release/3333651-The-Enid-The-Stand",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "Godfrey 2014 年獲 Progressive Music Awards 的 Visionary 獎。",
+        "src": "https://en.wikipedia.org/wiki/Robert_John_Godfrey",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年：英文維基與 Ramzine 寫 1973 年，樂團官網與 The Publicity Connection 寫 1974 年；搜尋摘要也說兩說並存（1974 年為正式開始錄音）；facts 不寫成軍年。",
+      "The Stand 歌迷組織的成立年：樂團官網寫 1983 年，Discogs 顯示《The Stand》1984 年 3 月才以 The Stand 廠牌出版；官網另稱樂團 1980 年自行離開唱片合約；facts 只寫『1980 年代』與『離開大廠牌之後』。",
+      "Godfrey 的退休：英文維基《The Enid》寫 2013 年宣布罹患阿茲海默症並退休、2018 年復出；《Robert John Godfrey》條目與 Ramzine 寫 2016 年退休（Ramzine 稱 2016 年 4 月 2 日生效）、2017 年 8 月生日演出；兩處不一致，facts 不寫。",
+      "上線簡介《Something Wicked This Way Comes》引維基轉述 Colin Larkin 稱『第五張專輯、第一張有歌詞』；本層用英文維基《The Enid》條目另證『第五張（1983）帶來歌詞』，與簡介一致。"
+    ],
+    "searches": 7,
+    "status": "full",
+    "notes": "確認身分：poolAlbums《Something Wicked This Way Comes》1983、《The Stand》1984、《The Spell》1985 皆為英國的 The Enid，無同名混卡。補查 7 次（英文維基 The Enid、英文維基 Robert John Godfrey、搜尋 Visionary 獎、The Publicity Connection、Ramzine、搜尋成軍史、樂團官網 history）；沒有失敗請求。非獨立提醒：origin、sound 的第二源多為維基不同條目；The Publicity Connection 是宣傳稿性質（含 Classic FM 與『第一個靠群眾募資存活的樂團』這類宣傳語氣，未收）；樂團官網是樂團自述，只當第二源使用，寫作層宜用『樂團自述』而不寫成公論。sound 第 2 條兩源（維基 The Enid、維基《Something Wicked This Way Comes》）是同站不同條目，且後者是 Larkin 百科的轉述，非獨立。單源未收：Godfrey 1947 年 7 月 30 日生於肯特的 Leeds Castle 莊園、1968 至 1971 年任 Barclay James Harvest 音樂指導、與該團不歡而散並曾提告（維基 Godfrey 單源）；Godfrey 曾在 Charisma 出過獨唱專輯 1974《Fall of Hyperion》（維基與搜尋摘要）；樂團後與 Inner Sanctum 有版權糾紛、之後取得 EMI 對三張專輯的授權（維基單源）；1997 至 2010 年停止錄音、之後以《Journey's End》回歸（維基單源）；官網稱 1983 年成立 The Stand、Godfrey 說『一支小小的邪典樂團都做得到，誰都做得到』、2024 年滿 50 週年（官網單源）；Publicity Connection 稱 The Stand 曾因被疑為邪教而被當局調查、Godfrey 入選 Classic FM 名人堂前百大作曲家、Joe Payne 嗓音（宣傳稿單源，不收）；搜尋摘要稱 2014 年 Visionary 獎是因『早期以歌迷為基礎的群眾募資模式』（摘要，未開頁）。era 兩條沿用事實庫 Discogs 條目（bank），Peter Roberts 過世事只寫年份、不寫經過。",
+    "pubIssues": []
   }
 ]

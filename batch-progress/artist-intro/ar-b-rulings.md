@@ -177,3 +177,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - **ar-b-014 上線**：40 位，reviewFixes 6。
 - 015 g3 交件。thin：Sharon Van Etten、Smog、Snapcase、Styx。Suicidal Tendencies 搜尋 9 次超限 1 次，該次內容已撤；Sick of It All、Snapcase 失敗請求 5 次超限，未取得內容，照收。Lou Koller 2026-07-24 過世，主線 WebSearch 核實（Noise11、Reason），但享年 59／61 各源不一 → 只寫年份，不寫年紀與死因。Steve Miller 入選名人堂的主詞是本人。
 - 015 g2 交件。thin：Satyricon（搜尋 9 次超限 1 次，該次內容已撤）。pubIssues 1（Robert Calvert《Test-Tube Conceived》逝世地點 Ramsgate／Margate 兩說 → 本機待改，只留年份）。w1（g1+g2）派出。
+- 015 g4 交件（QA 本組 0）。thin：Sunn O)))、Testament。pubIssues 2（The Black Skirts《201》移居年齡／返韓年 → 建議「青少年時期」「2007 年」；THE BLUE HEARTS 成軍時鼓手 1986 年才加入，單源）→ 本機待改。w2（g3+g4）派出。
