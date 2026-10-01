@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 140 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 142 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -144,3 +144,5 @@
 | ar-b-013 | Gene Clark | No Other | 2019 年 4AD 重製後評價翻轉 | 維基 No Other 條寫評價早在 2000 年代就已翻轉，4AD 2019 年重發是翻轉之後的豪華版（Metacritic 94）；The Quietus 的長文原稿寫於 1995 年已稱它是史上最偉大專輯之一。建議改成「多年後重新評價，2019 年 4AD 推出豪華重發」。 | https://en.wikipedia.org/wiki/No_Other |
 | ar-b-013 | Gorilla Biscuits | Start Today | 全張總長 24 分 45 秒、十四軌 | 英文維基 Start Today 條寫總長 24:09，Crack 雜誌寫 12 軌；與上線簡介的 24:45、十四軌不一致，可能是不同版本（CD 再版加曲或 MusicBrainz 版本差異），請在本機對 MusicBrainz 與原盤核對。 | https://en.wikipedia.org/wiki/Start_Today |
 | ar-b-014 | Leb i Sol | Leb i sol | 團名是馬其頓的待客語：貴客上門，先端出麵包和一撮鹽 | en 維基同此說，但 sr 維基把團名解釋為『只吃麵包和鹽也不放棄』的堅持之意，兩源解釋不一；建議改成只寫『團名是馬其頓語的麵包與鹽』或標明由來有兩種說法。低優先。 | https://sr.wikipedia.org/wiki/Леб_и_сол |
+| ar-b-015 | Phil Collins | ...But Seriously | 談無家者的〈Another Day in Paradise〉拿下第三十三屆葛萊美年度單曲 | 維基〈Another Day in Paradise〉條目寫它在 1991 年葛萊美獎得的是 Record of the Year（年度唱片），Song of the Year（年度歌曲）只是入圍沒得；『年度單曲』易被讀成 Song of the Year，建議改成『年度唱片』或寫成 Record of the Year。單源，建議本機再核。 | https://en.wikipedia.org/wiki/Another_Day_in_Paradise |
+| ar-b-015 | Robert Calvert | Test-Tube Conceived | 1988 年他在拉姆斯蓋特去世，墓碑上刻著莎士比亞的一句詩 | 死亡地點兩源不一致：英文維基寫在 Ramsgate 的 Corner House 咖啡館外、Encyclopedia.com 寫在 Margate 家中；建議簡介只留「1988 年去世」，不寫地點（墓碑刻句只見維基與衍生網站，單源）。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/calvert-robert |
