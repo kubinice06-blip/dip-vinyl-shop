@@ -170,3 +170,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-015
 - g1 交件（QA 本組 0）。thin：Obituary、Outer Limits、Pageant。Obituary 5、Outer Limits 6 次失敗請求超限，未取得內容，照收。Phil Collins 2026 年個人入選搖滾名人堂、典禮 2026-11-14 尚未舉行 → 寫「獲選／入選名單公布」，不寫「入選典禮」；主線 WebSearch 核實（rockhall.com、NPR）。pubIssues 1（Phil Collins《...But Seriously》「年度單曲」應為年度唱片，入本機待改）。Primal Scream《XTRMNTR》卡池 1999、多源 2000，入本機待改。
+- 014 g4 交件（QA 本組 0）。thin：NOFX。Napalm Death 失敗請求 5 次超限，未取得內容，照收。Nena 1998 年那張是個人專輯，不得寫成樂團作品。第一／最短類宣稱（blast beat 命名、金氏最短歌曲）不寫。N.EX.T 的 신해철 正文寫漢字「申海澈」（通行漢字名）。
