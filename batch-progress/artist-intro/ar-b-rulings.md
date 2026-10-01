@@ -147,3 +147,41 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - w2 審稿（5 處）：Behemoth、Bijelo Dugme 去「始終」；Camera Obscura 刪死因（比照本批成員逝世不寫死因）；Circle Jerks 紀錄片年份 1980→1981（影片 1981 年上映）；Crass 改正 Crass Records 緣由（不是「沒有壓片廠願意處理」，是愛爾蘭壓片廠工人拒壓〈Asylum〉一曲）。Matt Kwasniewski-Kelvin 2026-01-12 過世、享年 26 歲，主執行緒 WebSearch 核實（Variety、Rolling Stone、Consequence）。
 - w1 審稿（8 處）：生祥樂隊「協調」→「揉合」；羅大佑 1985 年先赴美、後落腳香港，改「離台，後來落腳香港」；929 去「總」；Azra 刪《YU 100》票選名次（比照媒體榜單不寫）、「最受歡迎」改「被視為」、「從此」→「此後」；Banco 刪「義大利百科」來源字樣；Amyl and the Sniffers 刪「第一次獲得提名」（首次宣稱）。2025 ARIA 四獎與 AC/DC 澳洲巡演暖場由主執行緒 WebSearch 核實（ARIA 官網、ABC News）。
 - **ar-b-012 上線**：40 位，reviewFixes 13；建置後 1,315 位藝人、64 分片。929 已上線簡介的成軍說法已進 audits/ARTIST-PUB-ISSUES.md（本機待改）。第三段到此結束，ar-b-013 起未開。
+
+## 第四段（2026-10-01，店主：「再做三批並推上去」）
+
+範圍 ar-b-013、014、015（皆 rock，各 40 位）。完成後開 PR 併入 main 上正式站（比照 #17）。併行上限四支：013 補洞四支先跑，交件後依序補位 014、015 與寫作層。
+
+### ar-b-013
+- 補洞特注：同名常見的團照 poolAlbums 確認（Judge、Magazine、Journey、Foreigner、Doves、Friction、Gauze、God Bless、High Rise、Isis、Harmonia、Immortal）；成員死亡只收年份。
+- g4 交件（QA 本組 0）。thin：High Rise、Immortal、Incubus、Japanese Breakfast。Immortal 失敗請求 5 次超限 1 次，失敗請求未取得內容，照收。衝突值（Immortal 成軍年、Héroes 改名年與銷量、High Rise 成軍年、Indochine 銷量）不寫。
+- g1 交件（QA 本組 0）。thin：Cro-Mags、Danzig、Deerhoof、DIIV、Dry Cleaning。Danzig 5、Dave Matthews Band 8 次失敗請求超限（付費牆轉址），未取得內容，照收。Danzig 的恐怖龐克先驅地位屬 Misfits，正文不得移花接木；Dry Cleaning 葛萊美包裝獎主詞是美術指導、不描述《Stumpwork》封面。
+- g2 交件（QA 本組 0）。thin：Enslaved、Gamma Ray。Every Time I Die 失敗請求 5 次超限，未取得內容，照收。衝突值（Enslaved 成軍地、FRICTION チコ・ヒゲ 樂器、EKV 成軍年／改名年、Erkin Koray 逝世日）不寫。w1（g1+g2）派出。
+- g3 交件（QA 0）。thin：Gary Clark Jr.、Gauze、Geoff Mann。Gene Clark 失敗請求 5 次超限，未取得內容，照收。pubIssues 2（Gene Clark《No Other》「2019 重製後評價翻轉」說法不準；Gorilla Biscuits《Start Today》軌數／長度疑版本差異）→ 已入 ARTIST-PUB-ISSUES 本機待改。God Bless 成員車禍單源不寫；Harmonia 的 Eno 評語出處不明，只能「據稱」。w2（g3+g4）派出。
+
+### ar-b-014
+- g1 交件（QA 本組 0）。thin：Judge、Katatonia（legacy none，Agalloch／Pallbearer 受影響說只有維基單源，不寫）。Johnny Hallyday 逝世日、出殯人數、藝名來源各源矛盾，不寫；Julien Baker 的葛萊美主體是 boygenius。
+
+### ar-b-013 審稿與上線
+- w1（4 處）：EKV 刪 Mladenović 享年（研究寫 37，依 1958-09-21 生、1994-11-05 卒應為 36，兩說不一 → 不寫）、刪寫作層自行推出的「逝世 12 週年當天揭曉」。FRICTION 的 レック 轉寫 Reck 照用（通行拼法）。
+- w2（6 處）：「朋克」→「龐克」（5 位，避開中國用語）；Gene Clark〈Eight Miles High〉是合寫，改「有他參與創作」；Harmonia 的 Eno 評語語序修順。High Rise 三人的漢字（南条麻人、成田宗弘、生悦住英夫）主線核對無誤。
+- **上線**：40 位，reviewFixes 10。
+- g2 交件（QA 本組 0）。thin：Lip Cream、Lucy Dacus。Catherine Ringer 2026-09-14 過世、享年 68，主線 WebSearch 核實（RTS、Orange／Magic）。pubIssues 1（Leb i Sol 團名由來，低優先）。衝突值一律不寫。w1（g1+g2）派出。
+
+### ar-b-015
+- g1 交件（QA 本組 0）。thin：Obituary、Outer Limits、Pageant。Obituary 5、Outer Limits 6 次失敗請求超限，未取得內容，照收。Phil Collins 2026 年個人入選搖滾名人堂、典禮 2026-11-14 尚未舉行 → 寫「獲選／入選名單公布」，不寫「入選典禮」；主線 WebSearch 核實（rockhall.com、NPR）。pubIssues 1（Phil Collins《...But Seriously》「年度單曲」應為年度唱片，入本機待改）。Primal Scream《XTRMNTR》卡池 1999、多源 2000，入本機待改。
+- 014 g4 交件（QA 本組 0）。thin：NOFX。Napalm Death 失敗請求 5 次超限，未取得內容，照收。Nena 1998 年那張是個人專輯，不得寫成樂團作品。第一／最短類宣稱（blast beat 命名、金氏最短歌曲）不寫。N.EX.T 的 신해철 正文寫漢字「申海澈」（通行漢字名）。
+- 014 g3 交件。thin：Melt-Banana、Minutemen。Melvins 搜尋 9 次超限 1 次，該次獨有內容已撤（QA 保留此警示，照實記）。My Bloody Valentine origin 只有一條兩源 → 主線以通行事實補「1983 年都柏林成軍、後簽 Creation」。Mayhem 案件只留 notes。w2（g3+g4）派出。
+- 014 w1 審稿（4 處）：Kreator 刪《Pleasure to Kill》與 Master of Puppets／Reign in Blood 的先後比較（發行日 1986-04-01 與 1986-11-01 兩說，主線 WebSearch 確認衝突），改以 Teutonic thrash 定位補足篇幅；Magazine 解散敘述改「McGeoch 後來離團，樂團在 1981 年解散」（McGeoch 實為 1980 年離團）；Juan de la Cruz Band 語序；KENSO「県相」保留原字（校名簡稱）。
+- 014 w2 審稿（2 處）：Mazzy Star 刪 Roback 死因；NELL 的서태지 改漢字「徐太志」（比照申海澈）。Nena 氣球靈感段照寫（兩源一致的部分，不寫是誰、不寫年份）。Mayhem 榮譽獎評審語兩源（Bravewords＋挪威文維基）照用。
+- **ar-b-014 上線**：40 位，reviewFixes 6。
+- 015 g3 交件。thin：Sharon Van Etten、Smog、Snapcase、Styx。Suicidal Tendencies 搜尋 9 次超限 1 次，該次內容已撤；Sick of It All、Snapcase 失敗請求 5 次超限，未取得內容，照收。Lou Koller 2026-07-24 過世，主線 WebSearch 核實（Noise11、Reason），但享年 59／61 各源不一 → 只寫年份，不寫年紀與死因。Steve Miller 入選名人堂的主詞是本人。
+- 015 g2 交件。thin：Satyricon（搜尋 9 次超限 1 次，該次內容已撤）。pubIssues 1（Robert Calvert《Test-Tube Conceived》逝世地點 Ramsgate／Margate 兩說 → 本機待改，只留年份）。w1（g1+g2）派出。
+- 015 g4 交件（QA 本組 0）。thin：Sunn O)))、Testament。pubIssues 2（The Black Skirts《201》移居年齡／返韓年 → 建議「青少年時期」「2007 年」；THE BLUE HEARTS 成軍時鼓手 1986 年才加入，單源）→ 本機待改。w2（g3+g4）派出。
+
+### ar-b-015 審稿與上線
+- 審稿（3 處）：Styx 刪「三白金」、Ozzy 刪「多白金」（認證會長大）；The Black Skirts 刪〈Ditto〉Circle 榜連續 13 週（兩源同站非獨立）。조휴일 無確定漢字，保留韓文＋羅馬拼音。放寬額度 6 位（Phil Collins、RCサクセション、Robert Calvert、Rory Gallagher、Sex Pistols 等）皆為人物故事所需，照准。Ozzy 2025-07-22 過世、享年 76 為已知事實。
+- **ar-b-015 上線**：40 位，reviewFixes 3。
+
+### 第四段收尾
+- ar-b-013／014／015 共 120 位上線（分支累計見 manifest）。本機待改的已上線簡介疑點：Gene Clark《No Other》、Gorilla Biscuits《Start Today》、Leb i Sol、Phil Collins《...But Seriously》（年度單曲→年度唱片）、Primal Scream《XTRMNTR》年份、Robert Calvert 逝世地、The Black Skirts《201》、THE BLUE HEARTS 成軍成員 → 皆在 audits/ARTIST-PUB-ISSUES.md。
