@@ -147,3 +147,10 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - w2 審稿（5 處）：Behemoth、Bijelo Dugme 去「始終」；Camera Obscura 刪死因（比照本批成員逝世不寫死因）；Circle Jerks 紀錄片年份 1980→1981（影片 1981 年上映）；Crass 改正 Crass Records 緣由（不是「沒有壓片廠願意處理」，是愛爾蘭壓片廠工人拒壓〈Asylum〉一曲）。Matt Kwasniewski-Kelvin 2026-01-12 過世、享年 26 歲，主執行緒 WebSearch 核實（Variety、Rolling Stone、Consequence）。
 - w1 審稿（8 處）：生祥樂隊「協調」→「揉合」；羅大佑 1985 年先赴美、後落腳香港，改「離台，後來落腳香港」；929 去「總」；Azra 刪《YU 100》票選名次（比照媒體榜單不寫）、「最受歡迎」改「被視為」、「從此」→「此後」；Banco 刪「義大利百科」來源字樣；Amyl and the Sniffers 刪「第一次獲得提名」（首次宣稱）。2025 ARIA 四獎與 AC/DC 澳洲巡演暖場由主執行緒 WebSearch 核實（ARIA 官網、ABC News）。
 - **ar-b-012 上線**：40 位，reviewFixes 13；建置後 1,315 位藝人、64 分片。929 已上線簡介的成軍說法已進 audits/ARTIST-PUB-ISSUES.md（本機待改）。第三段到此結束，ar-b-013 起未開。
+
+## 第四段（2026-10-01，店主：「再做三批並推上去」）
+
+範圍 ar-b-013、014、015（皆 rock，各 40 位）。完成後開 PR 併入 main 上正式站（比照 #17）。併行上限四支：013 補洞四支先跑，交件後依序補位 014、015 與寫作層。
+
+### ar-b-013
+- 補洞特注：同名常見的團照 poolAlbums 確認（Judge、Magazine、Journey、Foreigner、Doves、Friction、Gauze、God Bless、High Rise、Isis、Harmonia、Immortal）；成員死亡只收年份。
