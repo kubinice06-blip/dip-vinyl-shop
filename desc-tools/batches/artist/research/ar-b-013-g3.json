@@ -509,5 +509,296 @@
   "failedFetches": 4,
   "status": "full",
   "notes": "同名檢查：poolAlbums 為 Streetcleaner、Pure、Selfless，皆為伯明罕這團 industrial metal 的 Godflesh，無混卡。搜尋 6 次（英維 Godflesh、英維 Streetcleaner、搜尋、Bandcamp Daily、The Courier、搜尋 Rolling Stone 榜）；失敗請求 4 次（Revolver 403、AllMusic 403、MetalSucks 403、Ghost Cult 403），已達上限，之後未再試。注意：英文維基 Godflesh 條的第二位創團成員於擷取文字中出現「B. C. Green」，其餘來源（Courier、搜尋摘要、事實庫）皆為 G. C. Green；Bandcamp Daily 稱為 Ben Green；facts 用 G. C. Green。單源未收：(1) 單源（英維 Godflesh）：前身 O.P.D.（1982–83）、Fall of Because（1983–87）；Broadrick 還待過 Final；『hip hop 式的鼓機編程、金屬 riff 與工業不協和』；2002 年 4 月解散、2009 年重組；Fear Factory、Korn、Neurosis、Pelican、Helmet、Prong、Converge、Code Orange 受其影響；Pure 對 post-metal 影響深遠。(2) 單源（英維 Streetcleaner）：1989 年 11 月 13 日（英）與 1990 年 12 月 7 日（美）由 Earache 發行，1989 年 5 至 8 月錄於伯明罕與德比；Chicago Tribune 的 Greg Kot 稱它「最具威脅感的作品之一」；Fact 雜誌稱它「可說是 1980 年代最重要的極端音樂」；Burton C. Bell 稱每首歌都是一部史詩；Neurosis 說《Streetcleaner》「forever changed heavy music」的引言只有維基單源，不放進 facts。(3) 單源（The Courier，學生媒體）：受 Killing Joke 與 Throbbing Gristle 啟發；採樣含連環殺手的錄音；稱 Metallica、Faith No More、Korn 是愛好者；Rolling Stone 2017 年榜單 64。(4) 單源（Bandcamp）：Broadrick 稱《Streetcleaner》是『最不費思量』的作品；文章末尾提到 Broadrick 宣布 Godflesh 將以最終專輯《The End》作結，時間點與細節未核實，不收。第二源非獨立註記：兩篇維基條目同站，Godflesh 與 Streetcleaner 一組、Bandcamp Daily 是獨立媒體。後輩點名的第二源：Metallica、Korn、Neurosis、Fear Factory 在維基與 Bandcamp Daily 都出現。"
+ },
+ {
+  "key": "gorilla biscuits",
+  "name": "Gorilla Biscuits",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Gorilla Biscuits 來自紐約，是 1980 年代中後期紐約 youth crew 場景的代表樂團之一，與 Youth of Today、Bold 並列。",
+      "src": "https://en.wikipedia.org/wiki/New_York_hardcore",
+      "src2": "https://crackmagazine.net/article/lists/positive-mental-attitude-5-essential-youth-crew-records/",
+      "from": "new"
+     },
+     {
+      "f": "樂團成員與 Youth of Today 有重疊：吉他手 Walter Schreifels 同時待過 Youth of Today 與 Gorilla Biscuits。",
+      "src": "https://en.wikipedia.org/wiki/Walter_Schreifels",
+      "src2": "https://crackmagazine.net/article/lists/positive-mental-attitude-5-essential-youth-crew-records/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們屬於 youth crew 與 positive hardcore 一路，聽起來旋律感強、情緒濃烈；youth crew 是紐約硬蕊對金屬化的一種反動，回到以朋克為底的路線。",
+      "src": "https://en.wikipedia.org/wiki/New_York_hardcore",
+      "src2": "https://crackmagazine.net/article/lists/positive-mental-attitude-5-essential-youth-crew-records/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Vice 稱他們是紐約硬蕊的標誌性樂團，Crack 則稱《Start Today》大概是紐約 youth crew 場景最經典的專輯。",
+      "src": "https://www.vice.com/en/article/hardcore-in-hindsight-gorilla-biscuits-in-a-modern-era/",
+      "src2": "https://crackmagazine.net/article/lists/positive-mental-attitude-5-essential-youth-crew-records/",
+      "from": "new"
+     },
+     {
+      "f": "《Start Today》是 Revelation Records 史上最暢銷的專輯。",
+      "src": "https://en.wikipedia.org/wiki/Start_Today",
+      "src2": "https://en.wikipedia.org/wiki/Gorilla_Biscuits",
+      "from": "new"
+     },
+     {
+      "f": "成員日後分別組了 CIV 與 Quicksand：主唱 Civ 另組 CIV，Walter Schreifels 先組 Quicksand、後來又與人共組 Rival Schools。",
+      "src": "https://en.wikipedia.org/wiki/Gorilla_Biscuits",
+      "src2": "https://en.wikipedia.org/wiki/Walter_Schreifels",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1989 年由 Revelation Records 發行首張專輯《Start Today》。",
+    "src": "https://en.wikipedia.org/wiki/Start_Today",
+    "src2": "https://en.wikipedia.org/wiki/Walter_Schreifels",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Start Today》長度與軌數：上線簡介寫十四軌、全長 24 分 45 秒；英文維基 Start Today 條寫 24:09，Crack 寫 12 軌。上線簡介應是引用 MusicBrainz 的某個版本（簡介自己提到卡帶只有十二軌），無法在此核對，列 pubIssues 請主線在本機確認。",
+   "成軍年份與高中地點：英文維基寫 1986 年成軍，Arthur Smilios 與 Anthony Civorelli 在高中認識，但擷取結果與搜尋摘要對學校所在地有 Queens 與 Long Island 兩種寫法；facts 不寫成軍年與學校。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Start Today",
+    "claim": "全張總長 24 分 45 秒、十四軌",
+    "problem": "英文維基 Start Today 條寫總長 24:09，Crack 雜誌寫 12 軌；與上線簡介的 24:45、十四軌不一致，可能是不同版本（CD 再版加曲或 MusicBrainz 版本差異），請在本機對 MusicBrainz 與原盤核對。",
+    "src": "https://en.wikipedia.org/wiki/Start_Today"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 為 Start Today、demo 1987、Gorilla Biscuits（1988 EP），皆為紐約 youth crew 這團，無混卡。搜尋 8 次（英維 Gorilla Biscuits、英維 Start Today、搜尋、Crack、英維 New York hardcore、英維 Walter Schreifels、搜尋、Vice），無失敗請求。第二源非獨立註記：幾條 facts 以維基不同條目互為第二源（New York hardcore、Walter Schreifels、Gorilla Biscuits、Start Today），為同站；Crack、Vice 為獨立媒體。單源未收：(1) 單源（英維 GB）：1986 年成軍；Arthur Smilios 與 Anthony 'Civ' Civorelli 在高中認識；受 Agnostic Front 影響；與 Youth of Today 的 Ray Cappo、John Porcelly 有交集；1988 年起簽 Revelation；1997 年 CBGB 為 Raybeez（Warzone）辦的義演、2005 年起重組活動；現任陣容含 Luke Abbey、Charlie Garriga（2019 加入）。(2) 單源（英維 Start Today）：1989 年 1 至 4 月錄於紐約 Demo² Studios，與 Don Fury 共同製作，全長 24:09；NME 列為硬蕊史上 15 大專輯之一；AllMusic 4.5 星；僅 CD 就賣出逾 10 萬張。(3) 單源（Vice）：〈Degradation〉是反種族主義的名曲、Civ 談在演出中對抗納粹光頭黨；稱『沒有 Gorilla Biscuits 與同輩鋪路，今天就沒有硬蕊場景』。(4) 單源（Crack）：稱《Start Today》『essential, innovative and kind of hilarious』。(5) 搜尋摘要（未開頁）：Turnstile、Scowl 受他們影響、〈Start Today〉用口琴獨奏；未開頁，不收。後輩點名的兩源版本：查無。Schreifels 的詞曲作者角色僅維基單源，故 facts 只寫他同時在 Youth of Today。"
+ },
+ {
+  "key": "gustavo cerati",
+  "name": "Gustavo Cerati",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Gustavo Cerati 1959 年 8 月 11 日生於阿根廷布宜諾斯艾利斯，2014 年過世，享年 55 歲。",
+      "src": "https://en.wikipedia.org/wiki/Gustavo_Cerati",
+      "src2": "https://www.nbcnews.com/news/latino/argentinian-rocker-gustavo-cerati-soda-stereo-dies-55-n195956",
+      "from": "new"
+     },
+     {
+      "f": "他的家族有義大利與愛爾蘭血統；九歲收到一把吉他，少年時期就組了好幾個樂團。",
+      "src": "https://en.wikipedia.org/wiki/Gustavo_Cerati",
+      "src2": "https://es.wikipedia.org/wiki/Gustavo_Cerati",
+      "from": "new"
+     },
+     {
+      "f": "1982 年他與貝斯手 Héctor「Zeta」Bosio、鼓手 Charly Alberti 在布宜諾斯艾利斯組成 Soda Stereo，擔任主唱、吉他手與主要作曲者。",
+      "src": "https://en.wikipedia.org/wiki/Gustavo_Cerati",
+      "src2": "https://en.wikipedia.org/wiki/Soda_Stereo",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的路線是把搖滾與電子、實驗元素揉在一起；1999 年的個人專輯《Bocanada》融合數位與傳統搖滾，被視為他的代表性傑作。",
+      "src": "https://en.wikipedia.org/wiki/Gustavo_Cerati",
+      "src2": "https://es.wikipedia.org/wiki/Gustavo_Cerati",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Soda Stereo 被視為 1980 與 1990 年代拉丁美洲最有影響力的搖滾樂團之一，是「Rock en Español」的先驅；Cerati 被稱為西語世界最重要的音樂人物之一。",
+      "src": "https://www.nbcnews.com/news/latino/argentinian-rocker-gustavo-cerati-soda-stereo-dies-55-n195956",
+      "src2": "https://laist.com/news/kpcc-archive/argentine-rock-legend-gustavo-cerati-dies-after-pr",
+      "from": "new"
+     },
+     {
+      "f": "Soda Stereo 的〈De música ligera〉成為拉丁美洲幾代年輕人的代表性頌歌。",
+      "src": "https://laist.com/news/kpcc-archive/argentine-rock-legend-gustavo-cerati-dies-after-pr",
+      "src2": "https://en.wikipedia.org/wiki/Soda_Stereo",
+      "from": "new"
+     },
+     {
+      "f": "2017 年 11 月與 2022 年 10 月，Coldplay 兩度在阿根廷的演唱會上翻唱〈De música ligera〉向 Soda Stereo 致敬。",
+      "src": "https://rpp.pe/musica/conciertos/coldplay-rindio-homenaje-a-soda-stereo-al-cantar-de-musica-ligera-durante-concierto-en-argentina-noticia-1442447",
+      "src2": "https://en.wikipedia.org/wiki/Gustavo_Cerati",
+      "from": "new"
+     },
+     {
+      "f": "阿根廷《Rolling Stone》2012 年把他排在阿根廷百大搖滾吉他手第 7 名；《Billboard》2023 年把他排在史上最偉大搖滾歌手第 33 名。",
+      "src": "https://en.wikipedia.org/wiki/Gustavo_Cerati",
+      "src2": "https://es.wikipedia.org/wiki/Gustavo_Cerati",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Soda Stereo 1982 年成軍、1997 年解散，前後十五年；解散後 Cerati 走個人路線，發片到 2010 年停下。",
+      "src": "https://www.nbcnews.com/news/latino/argentinian-rocker-gustavo-cerati-soda-stereo-dies-55-n195956",
+      "src2": "https://es.wikipedia.org/wiki/Gustavo_Cerati",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1982 年在布宜諾斯艾利斯組成 Soda Stereo。",
+    "src": "https://en.wikipedia.org/wiki/Gustavo_Cerati",
+    "src2": "https://en.wikipedia.org/wiki/Soda_Stereo",
+    "from": "new"
+   },
+   {
+    "f": "1997 年 Soda Stereo 解散，Cerati 展開個人生涯。",
+    "src": "https://www.nbcnews.com/news/latino/argentinian-rocker-gustavo-cerati-soda-stereo-dies-55-n195956",
+    "src2": "https://es.wikipedia.org/wiki/Gustavo_Cerati",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Coldplay 翻唱：搜尋摘要寫 2017 年 11 月 14 日在 La Plata 唱了〈De música ligera〉，RPP 頁面寫 2022 年 10 月 25 日在 Monumental（River Plate）體育場再唱一次、並提及 2017 年先例；英文維基 Cerati 條只寫 U2 與 Coldplay 演唱過 Soda Stereo 的作品，沒給日期。facts 兩個日期的出處是 RPP 頁面與搜尋摘要，不寫細日。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 為 Bocanada（1999）、Ahí vamos（2006）、Fuerza natural（2009），皆為 Soda Stereo 主腦 Gustavo Cerati，無混卡。事實庫 research 與 published 為空，等於從零查。搜尋 8 次（英維 Cerati、西維 Cerati、搜尋、英維 Soda Stereo、NBC、LAist、搜尋 Coldplay、RPP）；失敗請求 2 次（NPR 503、Billboard 重導到付費牆）。逝世只寫年份與年紀，不寫病情與死因。第二源非獨立註記：英文維基與西班牙文維基為同站不同語言；NBC、LAist、RPP 是獨立媒體；NBC 與 LAist 皆為通訊稿性質。單源未收：(1) 單源（英維 Cerati）：父親 Juan José Cerati 為倫巴底後裔、母親 Lilian Clarke 在愛爾蘭出生；九歲收到吉他、受 Jimi Hendrix〈Purple Haze〉與 The Who 啟發；十三歲組三重奏、在天主教學校合唱團演出；Cerati 說 Bocanada 被拉丁美洲搖滾圈視為「magnum opus」（維基用語）；獲多項 Latin Grammy 與其他榮譽（細節不寫）；U2 與 Coldplay 向他致敬（U2 未查到）。(2) 單源（西維）：出生於 Palermo 區；父親會計師、母親速記員，在 Esso 公司相識；有巴斯克法國血統；1979 年進薩爾瓦多大學念廣告；青少年時組 Koala、Existencia Terrenal 等團；《Ahí vamos》（2006）回歸吉他驅動的搖滾，《Fuerza natural》（2009）帶民謠與鄉村影響；獲 Latin Grammy、MTV Latin America、Konex、Carlos Gardel 獎（細節未核）；阿根廷政府宣布國喪（單源，未核）。(3) 單源（英維 Soda Stereo）：首張專輯帶 new wave 與 ska，後期融入 post-punk、1990 年代的 shoegaze 與 art rock；《Canción Animal》（1990）讓他們成為大陸級巨星；《Sueño Stereo》（1995）在阿根廷發行 15 天內白金；1997 年 9 月 20 日在 River Plate 體育場告別演出；2007 年《Me Verás Volver》重聚巡演在阿根廷 River Plate 兩場一天內賣完、在智利兩場賣 12.6 萬張；號稱阿根廷史上最暢銷的樂團、2007 年前賣出七百萬張。(4) 單源（LAist）：Soda Stereo 發行過 MTV Unplugged；Shakira、Ricky Martin 在社群發文悼念。(5) 搜尋摘要（網路評論留言）：『如果用英文寫歌，會比 The Police 與 U2 更大』，是網友留言，不收。Billboard 與 Rolling Stone 兩條排名榜單，兩源都是維基（en、es），非獨立；榜單原文未開頁核對。"
+ },
+ {
+  "key": "harmonia",
+  "name": "Harmonia",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Harmonia 1973 年成軍，由 Neu! 的吉他手 Michael Rother 與 Cluster 的 Dieter Moebius、Hans-Joachim Roedelius 組成；Moebius 與 Roedelius 當時已從柏林搬到下薩克森的小鎮 Forst，三人就在那裡生活與錄音。",
+      "src": "https://en.wikipedia.org/wiki/Harmonia_(band)",
+      "src2": "https://www.popmatters.com/harmonia-complete-works-2495465799.html",
+      "from": "new"
+     },
+     {
+      "f": "緣起是 Rother 去拜訪 Cluster 兩人；他們後來在 Forst 一棟老農舍裡以家庭錄音的方式創作。",
+      "src": "https://en.wikipedia.org/wiki/Harmonia_(band)",
+      "src2": "https://redefinemag.net/2015/harmonia-complete-works-reissue-krautrock-supergroup/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把 Cluster 的探索性空間音樂與 Rother 的搖滾與流行感揉在一起，Moebius 偏好無政府式的衝撞，Roedelius 著重和聲與旋律，成品被歸入 krautrock 與 kosmische musik。",
+      "src": "https://en.wikipedia.org/wiki/Harmonia_(band)",
+      "src2": "https://www.popmatters.com/harmonia-complete-works-2495465799.html",
+      "from": "new"
+     },
+     {
+      "f": "聲音是漂流的合成器線條配上手調的機器節奏，被認為預告了後來的 ambient 與 techno，也影響了 ambient 音樂的發展。",
+      "src": "https://redefinemag.net/2015/harmonia-complete-works-reissue-krautrock-supergroup/",
+      "src2": "https://en.wikipedia.org/wiki/Harmonia_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Brian Eno 稱 Harmonia 是「世界上最重要的搖滾樂團」。",
+      "src": "https://www.popmatters.com/harmonia-complete-works-2495465799.html",
+      "src2": "https://redefinemag.net/2015/harmonia-complete-works-reissue-krautrock-supergroup/",
+      "from": "new"
+     },
+     {
+      "f": "1976 年 Eno 到 Forst 與他們一起生活、錄音，那批錄音日後成為《Tracks and Traces》。",
+      "src": "https://en.wikipedia.org/wiki/Harmonia_(band)",
+      "src2": "https://www.popmatters.com/harmonia-complete-works-2495465799.html",
+      "from": "new"
+     },
+     {
+      "f": "他們在當時雖受樂評好評，卻始終沒走出小眾；後世稱他們是 krautrock 最被低估的團體之一，重要性可與 Tangerine Dream、Can、Kraftwerk 並列。",
+      "src": "https://www.popmatters.com/harmonia-complete-works-2495465799.html",
+      "src2": "https://redefinemag.net/2015/harmonia-complete-works-reissue-krautrock-supergroup/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團只活動了約三年，1973 至 1976 年，留下《Musik von Harmonia》（1974）與《Deluxe》（1975）兩張專輯。",
+      "src": "https://www.popmatters.com/harmonia-complete-works-2495465799.html",
+      "src2": "https://de.wikipedia.org/wiki/Harmonia_(Band)",
+      "from": "new"
+     },
+     {
+      "f": "2007 年三位原班成員重聚，11 月 27 日在柏林演出，是 1976 年以來的第一場現場。",
+      "src": "https://de.wikipedia.org/wiki/Harmonia_(Band)",
+      "src2": "https://en.wikipedia.org/wiki/Harmonia_(band)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1973 年成軍，成員來自 Neu! 與 Cluster。",
+    "src": "https://en.wikipedia.org/wiki/Harmonia_(band)",
+    "src2": "https://de.wikipedia.org/wiki/Harmonia_(Band)",
+    "from": "new"
+   },
+   {
+    "f": "1976 年 Brian Eno 到 Forst 與他們合作，成果是《Tracks and Traces》。",
+    "src": "https://en.wikipedia.org/wiki/Harmonia_(band)",
+    "src2": "https://www.popmatters.com/harmonia-complete-works-2495465799.html",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Tracks and Traces》發行年：Redefine 與維基擷取寫 1997，另有說 2000；facts 只寫 1976 年錄音，不寫發行年。",
+   "受 Harmonia 影響的團：英文維基寫 Wire、New Order、My Bloody Valentine；德文維基寫 David Bowie、The Human League、Red Hot Chili Peppers，兩邊對不上且各自單源，一律不收進 facts。",
+   "Rother 的出身：德文維基寫他曾屬 Kraftwerk 與 Neu!，英文維基只寫 Neu!；facts 只寫 Neu!。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 為 Musik von Harmonia（1974）、Deluxe（1975）、Documents 1975（2015），皆為西德 Forst 這支 Harmonia（Rother、Moebius、Roedelius），與其他同名無關，無混卡。事實庫 research 與 published 為空，等於從零查。搜尋 6 次（英維、德維、搜尋、PopMatters、Redefine、英維 Musik von Harmonia），無失敗請求。第二源非獨立註記：英維與德維同站不同語言；PopMatters 與 Redefine 都是 2015 年《Complete Works》重發的評論，可能引用同樣的背景文字，不完全獨立。Eno 評語的出處與時間：維基《Musik von Harmonia》條寫 Eno『reportedly』如此說，並註明沒有給出原始出處；PopMatters、Redefine 皆採同樣說法、時間不明，所以 facts 只寫『Eno 稱』，不寫哪一年、在哪裡說；寫作層建議寫「據稱」或「Eno 曾說」，不寫成確定的引述場合。單源未收：(1) 單源（英維）：Rother 本想請 Cluster 兩人替 Neu! 現場伴奏；『musical love at first sight』；團名是 choir 的玩笑；Eno 1976 年 9 月在 Forst 待 11 天；2007 至 2009 年重聚。(2) 單源（德維）：1973 年 5 月成立；首張專輯無人聲、重複與極簡的序列器旋律，第二張更重合成器、帶人聲與和聲。(3) 單源（英維 Musik von Harmonia）：1973 年 6 至 11 月錄於 Cluster 在 Forst 的錄音室，1974 年 1 月由 Brain 發行；AllMusic 4.5/5、Pitchfork 8.5/10、Uncut 稱其為 krautrock 最佳之一；Julian Cope 把它列入 krautrock 前 50 大專輯；Artforum 的描述。(4) 搜尋摘要：兩張專輯銷量有限、1976 年解散；Dieter Moebius 於 2015 年 7 月過世（只在 Redefine 見到，單源，不收）。後輩點名受其影響：兩條單源互相矛盾，查無。"
  }
 ]
