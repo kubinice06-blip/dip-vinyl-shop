@@ -132,3 +132,11 @@
 - Lou Rawls《Lou Rawls Live!》定為 1966 Capitol 版並重寫。Tom Misch《Happy Music》改掛 Supershy。
 - PR #16 轉 ready 並合併進 main（藝人介紹前端與 1,275 位上線）。
 - ar-b-012～022 維持停止（店主先前指示）；PROJECT_MEMORY.md 依 REMOTE_RUNBOOK 仍由本機貼上（條目見上方）。
+
+## 第三段（2026-10-01）：店主「繼續做一批」
+
+PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位）。
+
+### ar-b-012
+
+- 補洞 4 組開跑；派工加「請求標頭不得帶店主 email」。Burzum 刑案、Cannibal Corpse 禁售只收中性事實。
