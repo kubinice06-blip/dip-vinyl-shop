@@ -800,5 +800,101 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "同名檢查：poolAlbums 為 Musik von Harmonia（1974）、Deluxe（1975）、Documents 1975（2015），皆為西德 Forst 這支 Harmonia（Rother、Moebius、Roedelius），與其他同名無關，無混卡。事實庫 research 與 published 為空，等於從零查。搜尋 6 次（英維、德維、搜尋、PopMatters、Redefine、英維 Musik von Harmonia），無失敗請求。第二源非獨立註記：英維與德維同站不同語言；PopMatters 與 Redefine 都是 2015 年《Complete Works》重發的評論，可能引用同樣的背景文字，不完全獨立。Eno 評語的出處與時間：維基《Musik von Harmonia》條寫 Eno『reportedly』如此說，並註明沒有給出原始出處；PopMatters、Redefine 皆採同樣說法、時間不明，所以 facts 只寫『Eno 稱』，不寫哪一年、在哪裡說；寫作層建議寫「據稱」或「Eno 曾說」，不寫成確定的引述場合。單源未收：(1) 單源（英維）：Rother 本想請 Cluster 兩人替 Neu! 現場伴奏；『musical love at first sight』；團名是 choir 的玩笑；Eno 1976 年 9 月在 Forst 待 11 天；2007 至 2009 年重聚。(2) 單源（德維）：1973 年 5 月成立；首張專輯無人聲、重複與極簡的序列器旋律，第二張更重合成器、帶人聲與和聲。(3) 單源（英維 Musik von Harmonia）：1973 年 6 至 11 月錄於 Cluster 在 Forst 的錄音室，1974 年 1 月由 Brain 發行；AllMusic 4.5/5、Pitchfork 8.5/10、Uncut 稱其為 krautrock 最佳之一；Julian Cope 把它列入 krautrock 前 50 大專輯；Artforum 的描述。(4) 搜尋摘要：兩張專輯銷量有限、1976 年解散；Dieter Moebius 於 2015 年 7 月過世（只在 Redefine 見到，單源，不收）。後輩點名受其影響：兩條單源互相矛盾，查無。"
+ },
+ {
+  "key": "haustor",
+  "name": "Haustor",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Haustor 1979 年在克羅埃西亞的薩格勒布成軍，靈魂人物是主唱兼吉他手 Darko Rundek 與貝斯手 Srđan Sacher；兩人在 1977 年已組過一支非正式的前身樂團 Komuna。",
+      "src": "https://hr.wikipedia.org/wiki/Haustor",
+      "src2": "https://tekstomanija.com/izvodjaci/haustor/biografija",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把新浪潮與朋克、牙買加雷鬼等加勒比節奏，以及大樂隊式的銅管編排混在一起，聲音和當時薩格勒布與南斯拉夫的搖滾場景都不一樣。",
+      "src": "https://hr.wikipedia.org/wiki/Haustor",
+      "src2": "https://sr.wikipedia.org/sr-el/%D0%A5%D0%B0%D1%83%D1%81%D1%82%D0%BE%D1%80",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Haustor 被視為南斯拉夫新浪潮場景最重要的樂團之一，也是前南斯拉夫搖滾樂壇的頂級樂團之一。",
+      "src": "https://en.wikipedia.org/wiki/Haustor",
+      "src2": "https://www.darko-rundek.com/det.php?groid=5&movid=29",
+      "from": "new"
+     },
+     {
+      "f": "1998 年的 YU 100（南斯拉夫流行與搖滾百大專輯）票選中，《Treći svijet》排第 20、首張《Haustor》排第 29。",
+      "src": "https://en.wikipedia.org/wiki/Haustor",
+      "src2": "https://en.wikipedia.org/wiki/Haustor_(album)",
+      "from": "new"
+     },
+     {
+      "f": "1998 年《YU 100》的樂評票選把《Bolero》列第 39；2015 年克羅埃西亞版《Rolling Stone》的「1955–2015 百大南斯拉夫專輯」列第 35；2000 年 Rock Express 的百大南斯拉夫搖滾歌曲把〈Šejn〉列第 26。",
+      "src": "https://sr.wikipedia.org/wiki/Болеро_(албум)",
+      "from": "bank"
+     },
+     {
+      "f": "〈Šejn〉與〈Ena〉都出現在南斯拉夫史上最佳搖滾歌曲的榜單上。",
+      "src": "https://hr.wikipedia.org/wiki/Haustor",
+      "src2": "https://sr.wikipedia.org/sr-el/%D0%A5%D0%B0%D1%83%D1%81%D1%82%D0%BE%D1%80",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯原定收錄〈Radnička klasa odlazi u raj〉，當局認為光是標題就過於挑釁，結果這首歌被拿掉，換成〈Moja prva ljubav〉。",
+      "src": "https://hr.wikipedia.org/wiki/Haustor",
+      "src2": "https://sr.wikipedia.org/sr-el/%D0%A5%D0%B0%D1%83%D1%81%D1%82%D0%BE%D1%80",
+      "from": "new"
+     },
+     {
+      "f": "樂團 1990 年前後解散，1996 年曾在薩格勒布的 Dom sportova 重聚演出。",
+      "src": "https://en.wikipedia.org/wiki/Haustor",
+      "src2": "https://sr.wikipedia.org/sr-el/%D0%A5%D0%B0%D1%83%D1%81%D1%82%D0%BE%D1%80",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1979 年在薩格勒布成軍。",
+    "src": "https://hr.wikipedia.org/wiki/Haustor",
+    "src2": "https://en.wikipedia.org/wiki/Haustor",
+    "from": "new"
+   },
+   {
+    "f": "1981 年首張專輯《Haustor》發行，讓他們在全國打開知名度。",
+    "src": "https://en.wikipedia.org/wiki/Haustor",
+    "src2": "https://en.wikipedia.org/wiki/Haustor_(album)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "首張專輯被拿掉的經過：上線簡介寫「Jugoton 的主管拿掉，理由是文化主管部門的堅持」；克羅埃西亞文與塞爾維亞文維基寫「當局認為標題過於挑釁」並換成〈Moja prva ljubav〉。兩者不衝突，facts 採維基寫法，不寫是誰動手。",
+   "重聚年份：英文維基寫 1996 與 2022 年；克羅埃西亞文維基只寫兩次、在 Dom sportova；塞爾維亞文維基寫一次十週年回顧演出與 1996 年；Tekstomanija 寫 1994 與 1996。只有 1996 年各源一致，facts 只寫 1996。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 為 Treći svijet（1984）、Bolero（1985）、Haustor（1981），皆為薩格勒布這團南斯拉夫的 Haustor，無混卡（與電影或其他同名無關）。搜尋 7 次（英維 Haustor、克語維基、搜尋、darko-rundek.com、Tekstomanija、英維 Haustor 專輯、塞語維基），無失敗請求。第二源非獨立註記：英、克、塞三個維基條目為同站；Tekstomanija 與 darko-rundek.com 為獨立但屬粉絲與樂手官方性質的網站。legacy 的第 3 條《Bolero》排名直接沿用事實庫（塞語維基《Bolero》專輯條，單源）；Rock Express、Rolling Stone 的榜單原頁沒有開。單源未收：(1) 單源（英維）：Haustor 首張專輯在 2015 年 Rolling Stone 的南斯拉夫專輯榜排第 4；原始成員還有鼓手 Boris Leiner、吉他手 Ozren Štiglić；Rundek 帶入戲劇性演出、Sacher 帶入南斯拉夫與外國民族音樂元素；1984 年《Treći svijet》轉向 world music；1990 年解散時正在錄第五張專輯；Rundek 1996 年起發展歌手兼詞曲作者生涯；2022 年再度重聚；專輯被各類型後輩翻唱。(2) 單源（克語維基）：Rundek 與 Sacher 都生於 1956 年；『一種和當時薩格勒布、克羅埃西亞與南斯拉夫搖滾場景都不同的新鮮聲音』；〈Šejn〉與〈Ena〉上最佳歌曲榜。(3) 單源（塞語維基）：〈Šejn〉在 2006 年 B92 百大本國歌曲排第 2（上線簡介已用）；首張專輯一面主要是 Sacher 作曲、一面是 Rundek，日後兩人出現創作歧見；解散後 Rundek 搬到巴黎；十週年重聚演出。(4) 單源（英維專輯條）：全長 34:04；〈Moja prva ljubav〉歌詞的一句取自 Irwin Shaw 短篇；Balkanrock 2015 年把封面排進南斯拉夫搖滾專輯封面百大第 5。(5) 單源（Tekstomanija）：1981 年成名作〈Moja prva ljubav〉的薩克斯風獨奏是 Jurij Novoselić；Sacher 1984 年後離團。(6) 搜尋摘要：1994 年的重聚與現場專輯（1995）；未核。後輩點名受其影響：查無（英維只寫「專輯被許多後來的藝人翻唱」，單源）。"
  }
 ]

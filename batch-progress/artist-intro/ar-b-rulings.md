@@ -157,3 +157,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - g4 交件（QA 本組 0）。thin：High Rise、Immortal、Incubus、Japanese Breakfast。Immortal 失敗請求 5 次超限 1 次，失敗請求未取得內容，照收。衝突值（Immortal 成軍年、Héroes 改名年與銷量、High Rise 成軍年、Indochine 銷量）不寫。
 - g1 交件（QA 本組 0）。thin：Cro-Mags、Danzig、Deerhoof、DIIV、Dry Cleaning。Danzig 5、Dave Matthews Band 8 次失敗請求超限（付費牆轉址），未取得內容，照收。Danzig 的恐怖龐克先驅地位屬 Misfits，正文不得移花接木；Dry Cleaning 葛萊美包裝獎主詞是美術指導、不描述《Stumpwork》封面。
 - g2 交件（QA 本組 0）。thin：Enslaved、Gamma Ray。Every Time I Die 失敗請求 5 次超限，未取得內容，照收。衝突值（Enslaved 成軍地、FRICTION チコ・ヒゲ 樂器、EKV 成軍年／改名年、Erkin Koray 逝世日）不寫。w1（g1+g2）派出。
+- g3 交件（QA 0）。thin：Gary Clark Jr.、Gauze、Geoff Mann。Gene Clark 失敗請求 5 次超限，未取得內容，照收。pubIssues 2（Gene Clark《No Other》「2019 重製後評價翻轉」說法不準；Gorilla Biscuits《Start Today》軌數／長度疑版本差異）→ 已入 ARTIST-PUB-ISSUES 本機待改。God Bless 成員車禍單源不寫；Harmonia 的 Eno 評語出處不明，只能「據稱」。w2（g3+g4）派出。
