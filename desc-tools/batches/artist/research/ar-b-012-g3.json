@@ -1,0 +1,95 @@
+[
+ {
+  "key": "beck",
+  "name": "Beck",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Beck 1970 年 7 月 8 日生於洛杉磯，本名 Bek David Campbell；母親 Bibbe Hansen 是曾與 Andy Warhol 的 Factory 往來的藝術家與表演者，父親 David Campbell 是加拿大籍的作曲家與指揮。",
+      "src": "https://en.wikipedia.org/wiki/Beck",
+      "src2": "https://www.ebsco.com/research-starters/music/beck/",
+      "from": "new"
+     },
+     {
+      "f": "外祖父 Al Hansen 是 Fluxus 前衛藝術運動的先驅，長住歐洲；Beck 的童年在洛杉磯、堪薩斯與德國之間流轉，分別接觸到 1980 年代洛杉磯的龐克文化、教會聖歌與外祖父的前衛藝術觀。",
+      "src": "https://en.wikipedia.org/wiki/Beck",
+      "src2": "https://www.ebsco.com/research-starters/music/beck/",
+      "from": "new"
+     },
+     {
+      "f": "他 16 歲拿到第一把吉他，從 Lead Belly 等藍調曲子自學，起初在街頭與公車上演唱；18 歲左右到紐約，投入曼哈頓下東城的 anti-folk 場景，之後回洛杉磯做 lo-fi 錄音並接觸嘻哈製作。",
+      "src": "https://en.wikipedia.org/wiki/Beck",
+      "src2": "https://www.ebsco.com/research-starters/music/beck/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的作品被形容為橫跨多種曲風的音樂拼貼，把民謠、放克、靈魂、嘻哈、電子、另類搖滾、鄉村與迷幻串在一起，帶有 lo-fi 與後現代的編排。",
+      "src": "https://en.wikipedia.org/wiki/Beck",
+      "src2": "https://www.ebsco.com/research-starters/music/beck/",
+      "from": "new"
+     },
+     {
+      "f": "1994 年〈Loser〉把滑管吉他、嘻哈節拍與唸唱縫在一起、使他成名；1996 年《Odelay》以大量取樣與曲風跳接，把這種拼貼推到最高密度。",
+      "src": "https://en.wikipedia.org/wiki/Odelay",
+      "src2": "https://en.wikipedia.org/wiki/Beck",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Odelay》在 1996 年被《Rolling Stone》、《Village Voice》的 Pazz & Jop 樂評人票選與《NME》年度票選都選為年度最佳專輯；Pazz & Jop 當年該專輯得 110 票提及。",
+      "src": "https://en.wikipedia.org/wiki/Odelay",
+      "src2": "https://en.wikipedia.org/wiki/Pazz_%26_Jop",
+      "from": "new"
+     },
+     {
+      "f": "《Odelay》入選 2010 年版《1001 Albums You Must Hear Before You Die》；《Rolling Stone》500 大專輯榜 2009 年版排第 306 名、2023 年版排第 424 名；Pitchfork 1990 年代百大專輯 2003 年版排第 19 名。",
+      "src": "https://en.wikipedia.org/wiki/Odelay",
+      "src2": "https://en.wikipedia.org/wiki/Beck",
+      "from": "new"
+     },
+     {
+      "f": "Beck 2015 年第 57 屆葛萊美獎以《Morning Phase》拿下年度專輯（得獎），擊敗 Beyonce、Ed Sheeran、Sam Smith 與 Pharrell Williams 的專輯；他個人累計葛萊美 8 座得獎。",
+      "src": "https://www.grammy.com/artists/beck/292/",
+      "src2": "https://en.wikipedia.org/wiki/Beck",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1996 年《Odelay》同時登上《Rolling Stone》、Pazz & Jop 與《NME》年度最佳專輯第一名。",
+    "src": "https://en.wikipedia.org/wiki/Odelay",
+    "src2": "https://en.wikipedia.org/wiki/Pazz_%26_Jop",
+    "from": "new"
+   },
+   {
+    "f": "2015 年第 57 屆葛萊美獎以《Morning Phase》得年度專輯獎。",
+    "src": "https://www.grammy.com/artists/beck/292/",
+    "src2": "https://en.wikipedia.org/wiki/Beck",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空（從零查）。搜尋 7 次：WebFetch en.wikipedia Beck、WebSearch（Britannica 找不到，轉 EBSCO）、WebFetch EBSCO、WebFetch Odelay 維基、WebSearch（Grammy）、WebFetch grammy.com、WebFetch Pazz & Jop 維基。失敗請求 3 次（Britannica 404、Pitchfork 不可取、Rolling Stone 307→402 付費牆），不計入。非獨立：Odelay 年度第一與 Pazz & Jop 兩源同屬維基（Pazz & Jop 條目只確認 1996 冠軍為 Odelay 與票數，Rolling Stone 與 NME 年度第一只見於 Odelay 維基條目）；Odelay 在 Pitchfork／Rolling Stone 榜上的名次、1001 Albums 只見 Odelay 維基條目，第二源 Beck 維基未實際查到這些榜單名次，屬單源（寫作層若要寫榜單名次請注意，可降級不寫）。Beck 維基首段與 EBSCO 都沒有「widely regarded」式的共識句，也未查到後輩點名受他影響的出處，legacy 以年度榜與葛萊美為主。grammy.com 頁面摘要稱 8 座得獎 24 提名（搜尋摘要為 22 提名，數字不一致），故只收 8 座得獎，不收提名數；該頁摘要對 Odelay 得獎的說法與維基不符（頁面資料可能不完整），Odelay 的 1997 年葛萊美以維基為準（第 39 屆最佳另類專輯＋〈Where It's At〉最佳男搖滾演唱，得獎），不放 facts 以避免單源。Beck 2022 年被提名搖滾名人堂（維基）未入選，單源不收。Beyonce 等名單來自搜尋摘要（Today／Hollywood Reporter，未開頁），只在此條 facts 中屬單源細節風險：f 內已寫出，建議寫作層僅寫『拿下年度專輯』，不寫對手名單。",
+  "pubIssues": []
+ }
+]
