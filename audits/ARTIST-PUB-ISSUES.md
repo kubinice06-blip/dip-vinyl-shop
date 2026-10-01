@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 142 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 144 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -146,3 +146,5 @@
 | ar-b-014 | Leb i Sol | Leb i sol | 團名是馬其頓的待客語：貴客上門，先端出麵包和一撮鹽 | en 維基同此說，但 sr 維基把團名解釋為『只吃麵包和鹽也不放棄』的堅持之意，兩源解釋不一；建議改成只寫『團名是馬其頓語的麵包與鹽』或標明由來有兩種說法。低優先。 | https://sr.wikipedia.org/wiki/Леб_и_сол |
 | ar-b-015 | Phil Collins | ...But Seriously | 談無家者的〈Another Day in Paradise〉拿下第三十三屆葛萊美年度單曲 | 維基〈Another Day in Paradise〉條目寫它在 1991 年葛萊美獎得的是 Record of the Year（年度唱片），Song of the Year（年度歌曲）只是入圍沒得；『年度單曲』易被讀成 Song of the Year，建議改成『年度唱片』或寫成 Record of the Year。單源，建議本機再核。 | https://en.wikipedia.org/wiki/Another_Day_in_Paradise |
 | ar-b-015 | Robert Calvert | Test-Tube Conceived | 1988 年他在拉姆斯蓋特去世，墓碑上刻著莎士比亞的一句詩 | 死亡地點兩源不一致：英文維基寫在 Ramsgate 的 Corner House 咖啡館外、Encyclopedia.com 寫在 Margate 家中；建議簡介只留「1988 年去世」，不寫地點（墓碑刻句只見維基與衍生網站，單源）。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/calvert-robert |
+| ar-b-015 | The Black Skirts | 201 | 他十二歲移居美國、2006 年返韓後以單人樂團起步。 | 移居年齡有 12 歲（英文維基）與 13 歲（韓文維基、搜尋摘要）兩說；返韓年份英文維基寫 2006，但韓文維基、Bugs 訪談、Newsis 訪談都指向 2007 年來韓，2006 年是樂團轉為單人專案的年份。建議把『十二歲』改成『青少年時期』、『2006 年返韓』改成『2007 年來韓發展』。 | https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88 |
+| ar-b-015 | THE BLUE HEARTS | THE BLUE HEARTS | 甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成 | 日文維基寫 1985 年成軍時是甲本、真島與河口，鼓手梶原徹也 1986 年才加入；單源（日文維基），建議把『四人 1985 年組成』改為『甲本與真島 1985 年起頭、1986 年補齊四人』或改成不點年份。 | https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS |
