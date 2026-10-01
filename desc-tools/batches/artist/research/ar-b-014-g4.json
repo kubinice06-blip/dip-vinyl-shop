@@ -54,5 +54,256 @@
   "failedFetches": 3,
   "status": "full",
   "notes": "事實庫 research 為空，全部新查。身分：poolAlbums 三張（Turn Loose the Swans 1993、The Light at the End of the World 1999、Songs of Darkness, Words of Light 2004）都是英國 Bradford 的 My Dying Bride，無同名混卡。失敗請求 3（britannica 404、allmusic 403、ghostcultmag 403）；scream blast repeat 頁抓回空內容，已當一次搜尋計。\n非獨立警示：src2 mydyingbride.net 是樂團官網、peaceville.com 是旗下廠牌官網，兩者都是自我介紹，legacy 的「先驅／開路者」寫作層應寫成「維基稱」「廠牌介紹稱」，不要寫成中立共識；官網『godfathers of doom by international metal press』單源自述不收。\n單源細節（不進 facts）：成軍地 Bradford, West Yorkshire、成軍月份 June 1990（維基單源；官網只寫 summer 1990 與 Yorkshire）；《Turn Loose the Swans》1993-10-11 Peaceville 發行、2011 年經 IMPALA 認證 gold（歐洲 75000 張，維基單源）；Rolling Stone 1994 稱其為「Bram Stoker's Dracula for the ears」（維基單源轉述）；Chris Chantler（Metal Hammer）評語（維基單源）。維基首段以外沒找到名人堂或國家級榮譽。\nlegacy 的 src2 非獨立（廠牌自評），第二個獨立來源（ghostcult、AllMusic）抓取失敗；若要升級需再補。"
+ },
+ {
+  "key": "n.ex.t",
+  "name": "N.EX.T",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "N.EX.T 是韓國首爾的樂團，團名是 New EXperiment Team 的縮寫，1992 年由主唱 신해철（Shin Hae-chul）成立。",
+      "src": "https://ko.wikipedia.org/wiki/N.EX.T",
+      "src2": "https://en.wikipedia.org/wiki/N.EX.T",
+      "from": "bank"
+     },
+     {
+      "f": "신해철 1988 年以樂團《무한궤도》（Muhangwedo）主唱的身分拿下 MBC 大學歌謠祭首獎出道，N.EX.T 是他之後另組的團。",
+      "src": "https://en.wikipedia.org/wiki/Shin_Hae-chul",
+      "src2": "https://www.korea.net/NewsFocus/People/view?articleId=122568",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "N.EX.T 由 신해철 把創作從流行轉向帶社會批判的實驗搖滾，樂風橫跨 hard rock、heavy metal 與 progressive。",
+      "src": "https://en.wikipedia.org/wiki/Shin_Hae-chul",
+      "src2": "https://en.wikipedia.org/wiki/N.EX.T",
+      "from": "new"
+     },
+     {
+      "f": "신해철 的創作不限於搖滾，涵蓋 rap、爵士、舞曲、techno 與無伴奏合唱；他曾以 Crom 之名發表 techno 與爵士專輯。",
+      "src": "https://en.wikipedia.org/wiki/Shin_Hae-chul",
+      "src2": "https://www.korea.net/NewsFocus/People/view?articleId=122568",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "신해철 的樂迷與同行稱他「마왕」（魔王、Demon Lord）。",
+      "src": "https://en.wikipedia.org/wiki/Shin_Hae-chul",
+      "src2": "https://www.korea.net/NewsFocus/People/view?articleId=122568",
+      "from": "new"
+     },
+     {
+      "f": "신해철 2014 年 10 月 27 日過世，享年 46 歲；他的醫療糾紛促成南韓以他為名的「Shin Hae-chul Act」（신해철법），2016 年底生效，讓國家機構可在醫院或醫師未同意時就啟動重大醫療糾紛的調解。",
+      "src": "https://en.wikipedia.org/wiki/Shin_Hae-chul",
+      "src2": "https://www.koreaherald.com/article/1655535",
+      "from": "new"
+     },
+     {
+      "f": "신해철 2014 年過世時，Psy、Girls' Generation、IU 等藝人到場悼念；首爾市長朴元淳公開說，「魔王」留下的空缺會隨時間越來越大。",
+      "src": "https://www.korea.net/NewsFocus/People/view?articleId=122568",
+      "src2": "https://en.wikipedia.org/wiki/Shin_Hae-chul",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "N.EX.T 的第一階段是 1992 至 1997 年，1997 年暫時解散。",
+      "src": "https://en.wikipedia.org/wiki/Shin_Hae-chul",
+      "src2": "https://www.korea.net/NewsFocus/People/view?articleId=122568",
+      "from": "new"
+     },
+     {
+      "f": "신해철 2014 年過世後，N.EX.T 2015 年完全解散。",
+      "src": "https://ko.wikipedia.org/wiki/N.EX.T",
+      "src2": "https://en.wikipedia.org/wiki/N.EX.T",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "韓文維基（bank）寫 N.EX.T 2003 年重組；英文維基 Shin Hae-chul 條目與 korea.net 都寫 2004 年重組（korea.net 另提 2007）；兩種年份不一致，facts 不放重組年份。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "身分：poolAlbums 三張（Home 1992、Part 1 The Being 1994、Part 2 World 1995）都是韓國 N.EX.T，無同名混卡；英文維基條目名為 NEXT (South Korean band)。事實庫的韓文維基條目 bank 事實（成軍 1992、解散 2015、Home 為電子舞曲與搖滾結合）沿用；第二源 en 維基開頁讀到。\n源頭相近：en 維基 Shin Hae-chul 與 N.EX.T 是同站不同條目（非獨立）；korea.net 是南韓政府官方媒體、Korea Herald 是獨立報社。\n單源（不進 facts）：生於 1968-05-06 首爾、1987 年進西江大學哲學系後輟學（en 維基）；1991 年專輯《Myself》為韓國第一張使用 MIDI 的專輯（en 維基單源，且屬「第一張」宣稱，未查反例）；2003–2007 年主持深夜電台節目《Ghost Nation》（en 維基）；Seo Taiji 說他「像一座大山」（korea.net）；Cho Yong-pil 稱「欽佩他」（搜尋摘要，未開頁）；追思參加人數 korea.net 寫逾 1 萬、搜尋摘要寫逾 1.6 萬，兩說不一，不收數字；2015-08-08 在 Pentaport 最後一次演出（en 維基）；死因細節與刑事判決不收。\n沒有找到名人堂、國家榮譽或後輩點名受影響的有出處說法；legacy 以稱號與以其為名的法律為主。\n事實庫既有已上線簡介（Home、World、The Being）與本層查到的資料無衝突，無 pubIssues；The Being 簡介「1993 年大麻案」於本層未查證，未動。"
+ },
+ {
+  "key": "napalm death",
+  "name": "Napalm Death",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Napalm Death 1981 年 5 月成軍於英格蘭 West Midlands 的 Meriden（伯明罕附近），創團的 Nic Bullen 與 Miles Ratledge 當時才十幾歲。",
+      "src": "https://en.wikipedia.org/wiki/Napalm_Death",
+      "src2": "https://viergeist.wordpress.com/bands/napalm-death/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Napalm Death 把 crust punk、death metal 與噪音揉在一起，用嚴重失真的低調音吉他、極快的速度、blast beat 與極短的歌，把重金屬推向更極端。",
+      "src": "https://en.wikipedia.org/wiki/Napalm_Death",
+      "src2": "https://www.rte.ie/entertainment/2026/0119/1553287-behind-the-music-napalm-death/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 Napalm Death 是「grindcore 之父」，RTÉ 的樂團介紹也稱他們是 grindcore 類型的先驅；1987 年首張專輯《Scum》被維基形容為對全球金屬與龐克圈影響深遠，與 1988 年的下一張一起定義了 grindcore。",
+      "src": "https://en.wikipedia.org/wiki/Napalm_Death",
+      "src2": "https://www.rte.ie/entertainment/2026/0119/1553287-behind-the-music-napalm-death/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "維基 Napalm Death 條目寫成軍地 Meriden（West Midlands）；多個搜尋摘要與 RTÉ 稱他們是 Birmingham 的樂團；facts 寫「Meriden（伯明罕附近）」兼容兩者。",
+   "《Scum》的英國獨立榜名次：維基專輯條目寫第 4 名，搜尋摘要（metal-archives 之類的轉述）寫第 8 名；不收。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 5,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，全部新查。身分：poolAlbums 三張（Scum 1987、Diatribes 1995、Time Waits for No Slave 2009）都是英國 Napalm Death，無同名混卡。\n⚠ 失敗請求 5 次（guinnessworldrecords 404、britannica 404、napalm-death.fandom 402、metal-archives 403、discogs 403），超過上限 4 次，照實記錄；這 5 次未計入搜尋 8 次。\n非獨立警示：origin 的 src2 viergeist.wordpress.com 是維基文字的轉貼（非獨立），所以 1981 年 5 月成軍與創團兩人只算「一站加轉貼」，寫作層可寫但風險略高；legacy 與 sound 的 RTÉ 為獨立媒體，但 RTÉ 只支持「伯明罕樂團、grindcore 先驅、crust punk/death metal 元素、極短的歌、blast beat、失真低調吉他」，『grindcore 之父』的字眼與《Scum》影響深遠是維基單句。\n單源（不進 facts）：《Scum》A 面 1986 年 8 月、B 面 1987 年 5 月由幾乎不同的人馬錄成，鼓手 Mick Harris 是唯一貫穿者；1987-07-01 Earache 發行、第一年賣逾 1 萬張；BBC John Peel 1987 年 9 月的 Peel Session；入選《1001 Albums You Must Hear Before You Die》；2005 年 Kerrang! 讀者票選英國史上第 50 名專輯（以上皆為維基 Scum 條目單源）；Morbid Angel 的 Dave Vincent 初聽其速度的回憶（維基單源）；「coined the term blast beat」是維基單句，屬『最早』類宣稱，未查反例，不收；『Guinness 世界紀錄最短歌曲〈You Suffer〉』只有維基轉貼與搜尋摘要，Guinness 官網頁 404，不收（屬『唯一／最短』類宣稱）；2003 年 SoundScan 全美第 7 名死亡金屬樂團（維基單源）；現任成員 Barney Greenway、Shane Embury、Danny Herrera、John Cooke 全非創團成員（維基單源，Greenway 1989 年加入見 Louder 訪談搜尋摘要）；Barney Greenway 稱 Motörhead 是他的最大迷戀（RTÉ、Louder 兩源一致，但屬個人而非樂團影響，不放 facts）。\n本層沒找到名人堂或國家級榮譽。"
+ },
+ {
+  "key": "neil diamond",
+  "name": "Neil Diamond",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Neil Diamond 1941 年 1 月 24 日生於紐約布魯克林，家庭是猶太裔，父母經營雜貨（dry goods）生意。",
+      "src": "https://en.wikipedia.org/wiki/Neil_Diamond",
+      "src2": "https://www.britannica.com/biography/Neil-Diamond",
+      "from": "new"
+     },
+     {
+      "f": "他 16 歲拿到第一把吉他，起因是夏令營裡看過民謠歌手 Pete Seeger 的演出；回布魯克林後開始學琴，很快就動手寫歌。",
+      "src": "https://en.wikipedia.org/wiki/Neil_Diamond",
+      "src2": "https://www.britannica.com/biography/Neil-Diamond",
+      "from": "new"
+     },
+     {
+      "f": "他先是 Brill Building 一帶的專職詞曲作者，1966 年 The Monkees 錄唱他寫的〈I'm a Believer〉，成為他出名的起點。",
+      "src": "https://en.wikipedia.org/wiki/Neil_Diamond",
+      "src2": "https://www.britannica.com/biography/Neil-Diamond",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Diamond 的作品以流行、搖滾與軟搖滾為底，帶鄉村色彩，後來偏向內省的寫法；他靠舞台魅力與電台好聽的單曲，橫跨五個年代都有暢銷歌。",
+      "src": "https://en.wikipedia.org/wiki/Neil_Diamond",
+      "src2": "https://www.britannica.com/biography/Neil-Diamond",
+      "from": "new"
+     },
+     {
+      "f": "《Hot August Night》錄自 1972 年 8 月 24 日在洛杉磯 Greek Theatre 的演出（當月共十場），同年 12 月 9 日由 MCA 發行成雙張現場專輯。",
+      "src": "https://en.wikipedia.org/wiki/Hot_August_Night",
+      "src2": "https://ultimateclassicrock.com/neil-diamond-hot-august-night/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Diamond 1984 年入選 Songwriters Hall of Fame，2011 年入選搖滾名人堂並獲甘迺迪中心榮譽（Kennedy Center Honors），2018 年獲葛萊美終身成就獎。",
+      "src": "https://en.wikipedia.org/wiki/Neil_Diamond",
+      "src2": "https://www.britannica.com/biography/Neil-Diamond",
+      "from": "new"
+     },
+     {
+      "f": "2011 年搖滾名人堂入選典禮上，Diamond 由 Paul Simon 引介，入選類別為表演者（Performer）。",
+      "src": "https://www.rockhall.com/inductees/neil-diamond",
+      "src2": "https://en.wikipedia.org/wiki/Neil_Diamond",
+      "from": "new"
+     },
+     {
+      "f": "〈Sweet Caroline〉自 1997 年起在 Boston Red Sox 的 Fenway Park 播放，成為球迷全場合唱的傳統。",
+      "src": "https://en.wikipedia.org/wiki/Neil_Diamond",
+      "src2": "https://www.history.com/articles/sweet-caroline-song-sports-neil-diamond",
+      "from": "new"
+     },
+     {
+      "f": "《Hot August Night》在澳洲專輯榜連續 29 週奪冠。",
+      "src": "https://en.wikipedia.org/wiki/Hot_August_Night",
+      "src2": "https://ultimateclassicrock.com/neil-diamond-hot-august-night/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 年 Diamond 發行〈Sweet Caroline〉。",
+      "src": "https://www.britannica.com/biography/Neil-Diamond",
+      "src2": "https://www.history.com/articles/sweet-caroline-song-sports-neil-diamond",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2011 年入選搖滾名人堂（表演者類別，Paul Simon 引介）。",
+    "src": "https://www.rockhall.com/inductees/neil-diamond",
+    "from": "new"
+   },
+   {
+    "f": "2011 年獲甘迺迪中心榮譽。",
+    "src": "https://www.britannica.com/biography/Neil-Diamond",
+    "from": "new"
+   },
+   {
+    "f": "2018 年獲葛萊美終身成就獎。",
+    "src": "https://en.wikipedia.org/wiki/Neil_Diamond",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "身分：poolAlbums 三張（Hot August Night 1972、The Jazz Singer 1980、Tap Root Manuscript 1970）都是美國 Neil Diamond，無同名混卡。在世者，銷量與葛萊美座數一律不寫。失敗請求 2（hot august night 專輯頁 404、MLB 文章 406）；搜尋＋開頁共 8 次。\n兩源若同站：wiki 與 Britannica 是獨立來源；Rock Hall 官網介紹屬『名人堂官方（可具名單源）』：Diamond 為自己寫、但『對每個人說話』（wrote for himself but spoke to everybody），他『能說出人類的經驗』解釋了他的商業成功、多元樂迷與跨世代的長青；網址 https://www.rockhall.com/inductees/neil-diamond 。\n單源（不進 facts）：就讀 Erasmus Hall High School 與 Barbra Streisand 同在合唱團（wiki）；紐約大學醫學預科、最後一年輟學去寫歌、1965 年簽 Bang Records、首張《The Feel of Neil》（Britannica）；〈I'm a Believer〉登冠七週（wiki，單源）；〈Sweet Caroline〉靈感來自 Caroline Kennedy 照片（Britannica）、2018 年入選 National Recording Registry（Britannica）、〈Sweet Caroline〉1969 年 Hot 100 最高第 4 名（history.com）、Fenway 2002 年起每場第八局中段播放與 Carolina Panthers、澳洲橄欖球與英國足球採用（history.com）；《Hot August Night》由 Lee Holdridge 編曲指揮約三十六人弦樂團、Lee Holdridge 說『那晚才誕生了人們說的 Neil Diamond 魅力』（UCR）；Lester Bangs 在 Rolling Stone 稱之為『great, pretentious, goofy pop』、Stephen Thomas Erlewine 稱『the ultimate Neil Diamond record』（維基專輯條目＋UCR 部分重疊，屬單一樂評，不收）；2018 年 1 月宣布因帕金森氏症停止巡演（維基單源）；2003–2007 年等其他事項未查。\n〈Sweet Caroline〉在 Fenway 的 1997 起點兩源只一致到年份；起因（Red Sox 員工 Amy Tobey 為新生兒 Caroline 播放）是 history.com 與搜尋摘要，單源，不進 f。\nera 的 1969 年份以 Britannica 與 history.com 為兩源。\n已上線 Jazz Singer 與 Tap Root Manuscript 簡介本層沒有查到衝突，無 pubIssues。"
  }
 ]
