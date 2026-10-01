@@ -144,3 +144,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - w2（g3+g4）派出，加特注：Burzum 只寫罪名、判決、刑期、獲釋年；Cannibal Corpse、Cradle of Filth 不描述歌詞或封面；成員逝世不寫死因；Stapleton 葛萊美座數不寫。
 - 補洞 g1 交件（QA 0 處）。929 失敗請求 7 次超上限，但失敗請求都沒取得內容，facts 不受影響，照收；929 標 thin。929 已上線兩張簡介（《也許像星星》《929同名專輯》）寫「2004 年吳志寧與黃玠成立」，與馬世芳專訪（2005 年兩人編制是志寧與嘟嘟）不一致 → 列入本機待改（建議只寫「吳志寧在大學時期組成」）；介紹正文不寫成軍年與共同創團者。
 - w1（g1+g2）派出。
+- w2 審稿（5 處）：Behemoth、Bijelo Dugme 去「始終」；Camera Obscura 刪死因（比照本批成員逝世不寫死因）；Circle Jerks 紀錄片年份 1980→1981（影片 1981 年上映）；Crass 改正 Crass Records 緣由（不是「沒有壓片廠願意處理」，是愛爾蘭壓片廠工人拒壓〈Asylum〉一曲）。Matt Kwasniewski-Kelvin 2026-01-12 過世、享年 26 歲，主執行緒 WebSearch 核實（Variety、Rolling Stone、Consequence）。
