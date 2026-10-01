@@ -1,5 +1,28 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-01｜dip-vinyl-shop｜Apple Music 按鈕第二修：改用含名稱段的正式專輯網址（短網址 App 不認）
+
+**症狀**：09-28 修正上線後店主實測，點 Apple Music 仍只打開 App 首頁。
+
+**根因**：上一版組的是 `music.apple.com/<sf>/album/<id>` 短網址。網頁版會 301 轉到
+`/album/<名稱段>/<id>`，但 iOS Apple Music App 以 Universal Link 接手時**不跟轉址**，認不出短網址就停在首頁。
+（實測：`/tw/album/1048475674` → 301 `/tw/album/excitable-boy/1048475674`。）
+
+**修法**：
+- 新增 `scripts/fetch-apple-album-urls.mjs`：以 iTunes lookup（每次 150 個 id、按 storefront 分批）替試聽索引
+  每張 matched 專輯補 `collectionViewUrl`；lookup 查無的標 `collectionGone`。結果 **12,909 張補齊、159 張已不在 Apple**
+  （多半是 Apple 換了 collectionId，例：Mac DeMarco《Salad Days》、TV on the Radio《Seeds》，之後可用名稱重查補回）。
+- `build-apple-audio-runtime-map.mjs`：runtime 索引加第 4 欄＝名稱段；下架或未 lookup 則留空。
+- `dip-player.js`：`appleAlbumUrl()` 組 `/<sf>/album/<名稱段>/<id>`，沒有名稱段就不改（維持搜尋連結）；
+  索引網址改 `?v=2`（載入用 `force-cache`，不換網址舊索引會一直被沿用）；`dip-player.js?v=43`。
+
+**驗證**：隨機 8 個組出的網址（含中文、帶重音字母）curl 全部 200、無轉址；本機 iPhone 模擬：
+索引未載完就點與載完後點，都導向 `music.apple.com/tw/album/excitable-boy/1048475674`、`/tw/album/single/905173853`。
+真機仍待店主確認。
+
+**主要檔案**：`scripts/fetch-apple-album-urls.mjs`（新）、`scripts/build-apple-audio-runtime-map.mjs`、
+`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`
+
 ### 2026-09-28｜dip-vinyl-shop｜串流按鈕 Apple Music 改連專輯頁（原本只會打開 App）
 
 **症狀**：專輯卡四平台按鈕的 Apple Music，手機點下去只打開 Apple Music App 首頁、沒有到專輯。
