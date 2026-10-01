@@ -385,5 +385,281 @@
     "status": "full",
     "notes": "確認身分：poolAlbums《Marquee Moon》1977、《Adventure》1978、《Television》1992 皆為紐約 Verlaine／Lloyd 這一團，無同名混卡。事實庫 research 與 published 皆空，全靠補查。補查 8 次（維基 Television、維基 Marquee Moon、搜尋 Verlaine 訃聞、CBS、Britannica、Today、搜尋 Marquee Moon 影響、Consequence）；失敗請求 2 次不計入（NPR 兩個訃文網址皆 503）。非獨立提醒：CBS 與 Today 的訃文都是通訊社式稿件，Billboard 2003 的說法經 CBS 轉述（CBS 稿單獨成立 Pavement、Sonic Youth、Strokes、Jeff Buckley 一句，Consequence 只列 Pavement、Sonic Youth、Built to Spill，因此 facts 只收兩源重疊的前兩團）。單源未收：維基稱 1973 年 3 月 12 日正式成立（維基單源）；Consequence 稱 1974 年 3 月在 CBGB 首度現場演出（單源）；The Strokes 與 Jeff Buckley 受影響（CBS 引 Billboard 2003，單源）；The Edge 用效果器模擬其吉他聲、稱標題曲『改變了他對吉他的想法』，Michael Stipe 稱對本作的愛僅次於《Horses》，Joy Division 的 Stephen Morris 與 Echo & the Bunnymen 的 Will Sergeant 亦點名（維基 Marquee Moon 單源）；John Frusciante（維基 Marquee Moon）與 Flea（Today）各自單源；Billy Idol 稱 Verlaine 對 1970 年代美英龐克影響深遠（Today 單源）；Mike Scott 稱 Verlaine 是史上最佳搖滾吉他手（CBS 單源，單人評語不收）；Patti Smith 形容其吉他聲像『千隻藍鳥在尖叫』（Britannica 單源）；Rolling Stone 500 大專輯名次 2003 年第 128、2012 年第 130、2020 年第 107，NME 2003 年第 4 名，Pitchfork 70 年代專輯第 3（維基單源，名次未寫進 facts）；《Marquee Moon》在英國賣得比美國好（Britannica 單源）；1991–1993 重組、2001 年再重組（維基單源，且 1992 年《Television》專輯的年份屬重組期，未另查）。",
     "pubIssues": []
+  },
+  {
+    "key": "testament",
+    "name": "Testament",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Testament 出身加州柏克萊，早期以 Legacy 之名活動；吉他手 Eric Peterson 是創團成員。",
+            "src": "https://en.wikipedia.org/wiki/Testament_(band)",
+            "src2": "https://en.wikipedia.org/wiki/The_Legacy_(album)",
+            "from": "new"
+          },
+          {
+            "f": "樂團發現另一個團（一支 R&B 翻唱團）已用 Legacy 這個名字，改採 S.O.D. 與 M.O.D. 的 Billy Milano 建議的 Testament。",
+            "src": "https://en.wikipedia.org/wiki/Testament_(band)",
+            "src2": "https://en.wikipedia.org/wiki/The_Legacy_(album)",
+            "from": "new"
+          },
+          {
+            "f": "主唱 Chuck Billy 1962 年生於加州奧克蘭，是 Pomo 原住民後裔，在北加州的 Hopland 保留地一帶長大。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Billy",
+            "src2": "https://ictnews.org/archive/testaments-chuck-billy-honored-by-california-assembly/",
+            "from": "new"
+          },
+          {
+            "f": "Billy 接替離團加入 Exodus 的原主唱 Steve \"Zetro\" Souza 進入 Legacy；他從小就認識 Souza。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Billy",
+            "src2": "https://www.loudersound.com/features/testaments-chuck-billy-my-life-story",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Testament 的靈感來自新浪潮英國重金屬（NWOBHM）與灣區本地的樂團場景，被視為 1980 年代後期第二波 thrash metal 的領軍者之一。",
+            "src": "https://en.wikipedia.org/wiki/Testament_(band)",
+            "src2": "https://www.loudersound.com/features/testaments-chuck-billy-my-life-story",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chuck Billy 把原住民題材寫進 Testament 的歌，例如〈Trail of Tears〉。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Billy",
+            "src2": "https://ictnews.org/archive/testaments-chuck-billy-honored-by-california-assembly/",
+            "from": "new"
+          },
+          {
+            "f": "2001 年前後 Billy 被診斷出胸腔靠近心臟的生殖細胞瘤，經化療康復後繼續與 Testament 合作；他把康復歸功於原住民療者，也因此重新與自己的原住民根源接上線。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Billy",
+            "src2": "https://www.loudersound.com/features/testaments-chuck-billy-my-life-story",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "樂團改名時間：英文維基 Testament 條目寫 1986 年改名；《The Legacy》條目寫發現同名團是在發片（1987 年 4 月）前約一個月；兩處不一致，facts 只寫改名的原因與建議者，不寫改名年份。",
+      "成軍年：Testament 維基寫 1983 年在柏克萊以 Legacy 之名成軍；搜尋摘要有『1982 年成軍』一說；facts 不寫成軍年。"
+    ],
+    "searches": 8,
+    "status": "thin",
+    "notes": "確認身分：poolAlbums《The Legacy》1987、《Practice What You Preach》1989、《Demonic》1997 皆為柏克萊的 Testament，無同名混卡。事實庫 research 與 published 皆空。補查 8 次（維基 Testament、維基 Chuck Billy、搜尋整體背景、搜尋 Billy 原住民背景、ICT News、Louder、維基 The Legacy、搜尋 Skolnick 背景）；失敗請求 1 次不計入（metal-archives 403）。非獨立提醒：origin 前兩條使用同站不同條目（維基 Testament 與維基 The Legacy），Chuck Billy 維基與 ICT／Louder 為獨立來源。legacy 格偏弱標 thin：沒有取得『後輩點名受其影響』的具名來源。單源未收：維基稱 Testament 與 Exodus、Death Angel、Lȧȧz Rockit、Forbidden、Vio-lence 並列『Big Six of Bay Area thrash』、並被列入全球『Big Eight』（維基單源）；《The Legacy》三年內在美國賣超過 15 萬張、Metal Hammer 稱『thrash metal 真正的里程碑專輯之一』、2008 年入選 Decibel 名人堂、Loudwire 2016 年排為團最佳專輯（維基 The Legacy 單源）；Billy 嗓音從清亮高音轉向近似死吼的低音（維基單源）；Billy 2013 年 6 月獲加州州議會表揚為原住民青年的正面榜樣，並是首位永久陳列於阿布奎基 Hard Rock Hotel 紀念品展的原住民藝人（ICT 單源；搜尋結果另有 Nuclear Blast 與 Screamer Magazine 的同題標題，未開頁）；Louder 稱樂團曾挑戰 Big Four 的地位、1990 年代風向轉變中斷氣勢、1999 年《The Gathering》回歸、2008 年《Formation of Damnation》再起（單源）；Skolnick 約 15 歲加入 Legacy、受過 Joe Satriani 指導、早期離團投入爵士（搜尋摘要，未開頁）。era 與 milestones 因單源或衝突，無可收條目。",
+    "pubIssues": []
+  },
+  {
+    "key": "the black skirts",
+    "name": "The Black Skirts",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《검정치마》（The Black Skirts）2004 年在美國紐約以三人 punk rock 編制成軍，後來變成 Jo Hyu-il（조휴일）一人的單人樂團。",
+            "src": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88",
+            "src2": "https://www.newsis.com/view/NISX20110715_0008693318",
+            "from": "bank"
+          },
+          {
+            "f": "Jo Hyu-il 青少年時期隨家人移居美國，在紐澤西長大；他把紐澤西的 201 區碼當作自己的認同，首張專輯就以《201》為名。",
+            "src": "https://en.wikipedia.org/wiki/The_Black_Skirts",
+            "src2": "https://music.bugs.co.kr/musicpost/4733?ft=INTERVIEW",
+            "from": "new"
+          },
+          {
+            "f": "他在美國時從 MTV 與網路接觸音樂，單純喜歡 punk，1990 年代的韓國龐克場景是他在網路上嚮往的對象；2007 年起轉到韓國發展。",
+            "src": "https://music.bugs.co.kr/musicpost/4733?ft=INTERVIEW",
+            "src2": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的音樂養分來自 Alanis Morissette 等歐美流行搖滾；韓文維基另列 Brian Wilson 與 Elvis Costello。",
+            "src": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88",
+            "src2": "https://en.wikipedia.org/wiki/The_Black_Skirts",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《201》2008 年 11 月 13 日發行，拿下第 7 屆韓國大眾音樂獎最佳現代搖滾專輯（Best Modern Rock Album）。",
+            "src": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88",
+            "src2": "https://en.wikipedia.org/wiki/The_Black_Skirts",
+            "from": "bank"
+          },
+          {
+            "f": "第三張《Team Baby》（2017）入圍 2018 年韓國大眾音樂獎年度專輯（入圍，未得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Team_Baby",
+            "from": "bank"
+          },
+          {
+            "f": "他是 NewJeans〈Ditto〉（2022 年 12 月發行）的詞作者之一，與 Minji、Ylva Dimberg、Oohyo 共同掛名；〈Ditto〉在 Circle Digital Chart 連續 13 週排名第一。",
+            "src": "https://en.wikipedia.org/wiki/Ditto_(song)",
+            "src2": "https://en.wikipedia.org/wiki/The_Black_Skirts",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2016 年與 Tablo 主持的廠牌 HIGHGRND 簽約；《Team Baby》的實體盤與 HIGHGRND 版同日在 2017 年 5 月 30 日問世。",
+            "src": "https://en.wikipedia.org/wiki/Team_Baby",
+            "src2": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2004 年，在紐約以三人 punk rock 編制成軍。",
+        "src": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88",
+        "from": "bank"
+      },
+      {
+        "f": "2008 年 11 月 13 日發行首張《201》，並獲第 7 屆韓國大眾音樂獎最佳現代搖滾專輯。",
+        "src": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88",
+        "from": "bank"
+      }
+    ],
+    "conflicts": [
+      "移居美國的年齡：英文維基寫 12 歲、韓文維基與搜尋摘要（namu）寫 13 歲；上線簡介寫 12 歲；facts 只寫『青少年時期』。",
+      "返韓年份：英文維基寫 2006 年返韓，韓文維基、Bugs、Newsis 與搜尋摘要寫 2007 年來韓、2006 年是變成單人專案的年份；採 2007 年；上線簡介《201》寫 2006 年返韓，列入 pubIssues。",
+      "英文維基 The Black Skirts 條目寫『2010 年首張《201》』，與韓文維基『2008 年 11 月』及上線簡介、搜尋摘要不一致，採 2008 年 11 月 13 日；英文維基同條目還把 2004 年的樂團寫成 Castel Prayon，與韓文維基『Black Skirts 前身是 2004 年三人 punk』不同，未採。"
+    ],
+    "searches": 8,
+    "status": "full",
+    "notes": "確認身分：poolAlbums《201》2008、《Don't You Worry Baby (I'm Only Swimming)》2011、《TEAM BABY》2017 皆為韓國 Jo Hyu-il 的《검정치마》，無同名混卡。補查 8 次（英文維基、韓文維基、搜尋 Jo 的成長與影響、Bugs 訪談、Newsis 2011 訪談、搜尋 Ditto 與後輩、英文維基 Ditto、搜尋《201》獎項）；失敗請求 4 次不計入（namu.wiki 403、英文維基 7th Korean Music Awards 404、英文維基 201 (album) 404、韓文維基 201 條目 404）。非獨立提醒：legacy 的 Ditto 詞作者一條，兩個來源皆為英文維基（不同條目）；第 7 屆 KMA 一條，英文維基 Black Skirts 條目把年份寫成 2010 首張，只拿來佐證『得獎』本身；origin 第 2 條的 Bugs 為韓國樂評網站訪談，與英文維基獨立。origin 第 1 條 bank 沿用韓文維基，Newsis 訪談亦說 2004 年三人 punk、2006 年轉為單人專案，兩源一致。單源未收：Bugs 稱 Built To Spill 是他從龐克轉向創作歌手的轉捩點，首張與製作人 Kia Eshghi 約一個月完成，歌詞中英混寫（Bugs 單源）；Newsis 稱《201》約賣兩萬張、對獨立發行相當高，最早的韓國音樂印象是徐太志與孩子們（Newsis 單源）；韓文維基稱各張合計賣出五萬張以上、第二張兩週寫成、2007 年首次在 Smash 之類的音樂祭選拔失利後返美（搜尋摘要）、之後與 Ruby Salon 因糾紛分手並自設 Doggy Rich（韓文維基單源）；英文維基稱他影響 Hyukoh 等團、被稱為當代韓國獨立音樂的奠基者（單源）；搜尋摘要稱 Oohyo 說《검정치마》是他最愛的韓國樂團、第一次聽的衝擊像 Hyukoh 剛出現時（未開頁）；《201》同屆入圍五個獎項、入選 Space 共感 2000 年代韓國大眾音樂名盤百大（搜尋摘要，未開頁）；英文維基稱 KMA 2010、2012、2018、2020、2023 多次獲獎並三度得最佳現代搖滾專輯（單源）。上線簡介《201》『列名 Melon 與 한겨레合辦「한국 대중음악 명반 100」第 73 名』與『錄音在自宅地下室』、『十首曲全由 조휴일 作詞作曲』本層未能查證（未列為錯誤）。韓國藝名依規則保留諺文並附拉丁拼寫。",
+    "pubIssues": [
+      {
+        "album": "201",
+        "claim": "他十二歲移居美國、2006 年返韓後以單人樂團起步。",
+        "problem": "移居年齡有 12 歲（英文維基）與 13 歲（韓文維基、搜尋摘要）兩說；返韓年份英文維基寫 2006，但韓文維基、Bugs 訪談、Newsis 訪談都指向 2007 年來韓，2006 年是樂團轉為單人專案的年份。建議把『十二歲』改成『青少年時期』、『2006 年返韓』改成『2007 年來韓發展』。",
+        "src": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88"
+      }
+    ]
+  },
+  {
+    "key": "the blue hearts",
+    "name": "THE BLUE HEARTS",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "THE BLUE HEARTS 1985 年成軍，由主唱甲本ヒロト與吉他手真島昌利（マーシー）起頭。",
+            "src": "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS",
+            "src2": "https://en.wikipedia.org/wiki/Hiroto_K%C5%8Dmoto",
+            "from": "new"
+          },
+          {
+            "f": "1987 年 5 月以單曲〈リンダリンダ〉在 Meldac 出道，同月發行首張同名專輯。",
+            "src": "https://en.wikipedia.org/wiki/Linda_Linda",
+            "src2": "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS_(アルバム)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們是 1980 年代日本龐克搖滾的代表樂團，歌詞帶社會意識，演出火力十足，常被拿來和 Sex Pistols、The Clash、Ramones 相提並論。",
+            "src": "https://en.wikipedia.org/wiki/The_Blue_Hearts",
+            "src2": "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈リンダリンダ〉是 2005 年日本電影《Linda Linda Linda》的核心：一支高中女生樂團演奏 The Blue Hearts 的歌。",
+            "src": "https://en.wikipedia.org/wiki/Linda_Linda",
+            "src2": "https://en.wikipedia.org/wiki/The_Blue_Hearts",
+            "from": "new"
+          },
+          {
+            "f": "洛杉磯的女孩龐克樂團 The Linda Lindas（2018 年成軍）團名取自那部電影，電影又取自 The Blue Hearts 的歌。",
+            "src": "https://en.wikipedia.org/wiki/The_Linda_Lindas",
+            "src2": "https://en.wikipedia.org/wiki/Linda_Linda",
+            "from": "new"
+          },
+          {
+            "f": "解散後影響仍大，尤其在 2000 年代的日本龐克與青春搖滾世代；歌曲在多年後仍大量出現在電視劇、電影、廣告、電玩與動畫中。",
+            "src": "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS",
+            "src2": "https://en.wikipedia.org/wiki/The_Blue_Hearts",
+            "from": "new"
+          },
+          {
+            "f": "首張同名專輯在 2007 年 Rolling Stone Japan 的日本搖滾百大專輯榜上排第 3 名。",
+            "src": "https://en.wikipedia.org/wiki/The_Blue_Hearts",
+            "from": "bank"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1995 年 6 月解散；甲本ヒロト與真島昌利隨後組成 The High-Lows，2006 年再組成 The Cro-Magnons。",
+            "src": "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS",
+            "src2": "https://en.wikipedia.org/wiki/The_Blue_Hearts",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1985 年，甲本ヒロト與真島昌利成立 THE BLUE HEARTS。",
+        "src": "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS",
+        "from": "new"
+      },
+      {
+        "f": "1995 年 6 月解散。",
+        "src": "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "上線簡介 THE BLUE HEARTS 寫『甲本ヒロト、真島昌利、河口純之助、梶原徹也 1985 年組成』；日文維基寫梶原徹也 1986 年才因反覆請求試奏而加入，1985 年成軍時只有甲本、真島、河口；facts 只寫甲本與真島 1985 年起頭，列入 pubIssues。"
+    ],
+    "searches": 8,
+    "status": "full",
+    "notes": "確認身分：poolAlbums《THE BLUE HEARTS》1987、《TRAIN-TRAIN》1988、《BUST WASTE HIP》1990 皆為日本的 THE BLUE HEARTS，無同名混卡（與同名他團無涉）。補查 8 次（英文維基 Blue Hearts、日文維基、搜尋影響評價、英文維基 Hiroto Kōmoto、英文維基 Linda Linda、英文維基 The Linda Lindas、日文維基首張專輯條目、搜尋日文影響者），沒有失敗請求。非獨立提醒：origin 與 legacy 大半第二源是同站（維基不同語版或不同條目），英文維基 Linda Linda、Blue Hearts、The Linda Lindas 三條彼此為同站不同條目；legacy 日文維基與英文維基的『影響後世』是兩種語言版本，非獨立。sound 一格的兩源同樣為維基，且英文維基的『與 Sex Pistols、Clash、Ramones 相提並論』在日文維基未見，寫作層宜保守。Rolling Stone Japan 2007 年第 3 名一條沿用上線簡介（bank），來源只有英文維基單源（搜尋摘要與日文維基首張條目都未重複），寫作層宜寫『Rolling Stone Japan 2007 年日本搖滾專輯榜』而不寫成『公認』。單源未收：甲本與真島在下北澤一帶的 live house 圈相遇、後來加入貝斯手河口純之助（日文維基單源）；甲本ヒロト 1963 年生於岡山（英文維基單源）；梶原徹也 1986 年加入（日文維基單源）；樂風為直白 8 拍、混龐克、鄉村與 rock and roll（日文維基單源；搜尋摘要亦有此描述）；《TRAIN-TRAIN》（1988）超過 50 萬張、標題曲成為電視劇主題曲（日文維基單源）；1995 年 6 月在 NHK-FM 節目上宣布解散，媒體曾報導與貝斯手宗教活動有關、甲本日後另有說法（日文維基單源，爭議類不收）；2003 年 HMV 日本流行重要藝人排名第 19（英文維基單源）；〈Train-Train〉與〈Linda Linda〉成為卡拉 OK 定番（英文維基單源）；〈リンダリンダ〉單曲 1987 年 5 月 1 日發行、Oricon 第 38 名，2002 年 2 月再發，Andrew W.K. 2008 年與 MxPx 2009 年翻唱（英文維基 Linda Linda 單源）；首張專輯 1987 年 5 月 21 日發行、Oricon 專輯榜第 31 名、約 34 分鐘，〈未来は僕等の手の中〉傳說被一朗在低潮時反覆聽（日文維基『reportedly』，單源，不收）；搜尋摘要稱『1980 年代末 10 到 20 多歲的日本人幾乎都受其影響』『Spitz、桜井和寿、MONGOL800、サンボマスター、銀杏BOYZ、Hi-STANDARD 的横山健等人受其影響』，來源是知恵袋與部落格類網頁，未開頁，不收。上線簡介《TRAIN-TRAIN》『Oricon 第 3 名、在榜 44 週』與《BUST WASTE HIP》『首度登上 Oricon 專輯榜冠軍』『〈情熱の薔薇〉賣約 50 萬張』本層未查（未列為錯誤）。",
+    "pubIssues": [
+      {
+        "album": "THE BLUE HEARTS",
+        "claim": "甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成",
+        "problem": "日文維基寫 1985 年成軍時是甲本、真島與河口，鼓手梶原徹也 1986 年才加入；單源（日文維基），建議把『四人 1985 年組成』改為『甲本與真島 1985 年起頭、1986 年補齊四人』或改成不點年份。",
+        "src": "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS"
+      }
+    ]
   }
 ]
