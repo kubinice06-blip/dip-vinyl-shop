@@ -2,7 +2,8 @@
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
   const SPOTIFY_API = 'https://open.spotify.com/embed/iframe-api/v1';
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
-  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json';
+  // 換內容就換 ?v：載入用 cache:'force-cache'，不換網址的話舊索引會一直被沿用。
+  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=2';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
@@ -791,9 +792,11 @@
   function appleAlbumUrl(artist, album) {
     const hit = appleAudioMap?.entries?.[appleAudioKey(artist, album)];
     if (!Array.isArray(hit)) return '';
-    const [storefront, collectionId] = hit;
-    if (!/^[A-Z]{2}$/.test(String(storefront || '')) || !/^\d+$/.test(String(collectionId || ''))) return '';
-    return `https://music.apple.com/${String(storefront).toLowerCase()}/album/${collectionId}`;
+    // 第 4 欄是正式網址的名稱段。不能省略：/album/<id> 短網址在網頁版靠 301 補上名稱段，
+    // 但 iOS Apple Music App 接手 Universal Link 時不跟轉址，只會停在首頁（2026-10-01 店主實測）。
+    const [storefront, collectionId, , slug] = hit;
+    if (!/^[A-Z]{2}$/.test(String(storefront || '')) || !/^\d+$/.test(String(collectionId || '')) || !/^[^/?#\s]+$/.test(String(slug || ''))) return '';
+    return `https://music.apple.com/${String(storefront).toLowerCase()}/album/${slug}/${collectionId}`;
   }
 
   // 頁面只要在 Apple Music 按鈕帶上 data-apple-artist／data-apple-album，

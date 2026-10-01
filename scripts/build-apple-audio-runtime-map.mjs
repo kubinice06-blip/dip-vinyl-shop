@@ -37,8 +37,11 @@ for (const [key, entry] of Object.entries(source.entries).sort(([left], [right])
     skippedInvalid++;
     continue;
   }
-  // [storefront, collectionId, previewUrl] is deliberately positional to minimize transfer size.
-  entries[key] = [storefront, collectionId, previewUrl];
+  // 第 4 欄是 Apple 正式專輯網址的名稱段（collectionViewUrl 的 /album/<slug>/<id>），
+  // 串流按鈕靠它組出 App 認得的網址；專輯已下架或尚未 lookup 則留空、前台退回搜尋。
+  const slug = entry.collectionGone ? '' : (String(entry.collectionViewUrl || '').match(/\/album\/([^/?#]+)\/\d+/)?.[1] || '');
+  // [storefront, collectionId, previewUrl, albumSlug] is deliberately positional to minimize transfer size.
+  entries[key] = [storefront, collectionId, previewUrl, slug];
 }
 
 const runtime = {
