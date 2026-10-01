@@ -154,3 +154,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-013
 - 補洞特注：同名常見的團照 poolAlbums 確認（Judge、Magazine、Journey、Foreigner、Doves、Friction、Gauze、God Bless、High Rise、Isis、Harmonia、Immortal）；成員死亡只收年份。
+- g4 交件（QA 本組 0）。thin：High Rise、Immortal、Incubus、Japanese Breakfast。Immortal 失敗請求 5 次超限 1 次，失敗請求未取得內容，照收。衝突值（Immortal 成軍年、Héroes 改名年與銷量、High Rise 成軍年、Indochine 銷量）不寫。
