@@ -161,3 +161,8 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-014
 - g1 交件（QA 本組 0）。thin：Judge、Katatonia（legacy none，Agalloch／Pallbearer 受影響說只有維基單源，不寫）。Johnny Hallyday 逝世日、出殯人數、藝名來源各源矛盾，不寫；Julien Baker 的葛萊美主體是 boygenius。
+
+### ar-b-013 審稿與上線
+- w1（4 處）：EKV 刪 Mladenović 享年（研究寫 37，依 1958-09-21 生、1994-11-05 卒應為 36，兩說不一 → 不寫）、刪寫作層自行推出的「逝世 12 週年當天揭曉」。FRICTION 的 レック 轉寫 Reck 照用（通行拼法）。
+- w2（6 處）：「朋克」→「龐克」（5 位，避開中國用語）；Gene Clark〈Eight Miles High〉是合寫，改「有他參與創作」；Harmonia 的 Eno 評語語序修順。High Rise 三人的漢字（南条麻人、成田宗弘、生悦住英夫）主線核對無誤。
+- **上線**：40 位，reviewFixes 10。
