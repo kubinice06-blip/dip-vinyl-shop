@@ -305,5 +305,233 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "身分：poolAlbums 三張（Hot August Night 1972、The Jazz Singer 1980、Tap Root Manuscript 1970）都是美國 Neil Diamond，無同名混卡。在世者，銷量與葛萊美座數一律不寫。失敗請求 2（hot august night 專輯頁 404、MLB 文章 406）；搜尋＋開頁共 8 次。\n兩源若同站：wiki 與 Britannica 是獨立來源；Rock Hall 官網介紹屬『名人堂官方（可具名單源）』：Diamond 為自己寫、但『對每個人說話』（wrote for himself but spoke to everybody），他『能說出人類的經驗』解釋了他的商業成功、多元樂迷與跨世代的長青；網址 https://www.rockhall.com/inductees/neil-diamond 。\n單源（不進 facts）：就讀 Erasmus Hall High School 與 Barbra Streisand 同在合唱團（wiki）；紐約大學醫學預科、最後一年輟學去寫歌、1965 年簽 Bang Records、首張《The Feel of Neil》（Britannica）；〈I'm a Believer〉登冠七週（wiki，單源）；〈Sweet Caroline〉靈感來自 Caroline Kennedy 照片（Britannica）、2018 年入選 National Recording Registry（Britannica）、〈Sweet Caroline〉1969 年 Hot 100 最高第 4 名（history.com）、Fenway 2002 年起每場第八局中段播放與 Carolina Panthers、澳洲橄欖球與英國足球採用（history.com）；《Hot August Night》由 Lee Holdridge 編曲指揮約三十六人弦樂團、Lee Holdridge 說『那晚才誕生了人們說的 Neil Diamond 魅力』（UCR）；Lester Bangs 在 Rolling Stone 稱之為『great, pretentious, goofy pop』、Stephen Thomas Erlewine 稱『the ultimate Neil Diamond record』（維基專輯條目＋UCR 部分重疊，屬單一樂評，不收）；2018 年 1 月宣布因帕金森氏症停止巡演（維基單源）；2003–2007 年等其他事項未查。\n〈Sweet Caroline〉在 Fenway 的 1997 起點兩源只一致到年份；起因（Red Sox 員工 Amy Tobey 為新生兒 Caroline 播放）是 history.com 與搜尋摘要，單源，不進 f。\nera 的 1969 年份以 Britannica 與 history.com 為兩源。\n已上線 Jazz Singer 與 Tap Root Manuscript 簡介本層沒有查到衝突，無 pubIssues。"
+ },
+ {
+  "key": "nell",
+  "name": "NELL",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "NELL 是韓國樂團，1999 年成軍，團名取自 Jodie Foster 主演的電影《Nell》。",
+      "src": "https://en.wikipedia.org/wiki/Nell_(band)",
+      "src2": "https://ko.wikipedia.org/wiki/%EB%84%AC_(%EB%B0%B4%EB%93%9C)",
+      "from": "new"
+     },
+     {
+      "f": "樂團早年在新村一帶的 club 演出，2001 年發行兩張獨立（indie）專輯《Reflection of》與《Speechless》；2002 年成為 Seo Taiji 旗下廠牌 Goesoo Indigene 的第一支樂團。",
+      "src": "https://en.wikipedia.org/wiki/Nell_(band)",
+      "src2": "https://ko.wikipedia.org/wiki/Let_It_Rain_(%EB%84%AC%EC%9D%98_%EC%9D%8C%EB%B0%98)",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "NELL 的樂風是帶陰鬱與迷幻感的另類搖滾（modern rock），自承受 Radiohead 影響。",
+      "src": "https://en.wikipedia.org/wiki/Nell_(band)",
+      "src2": "https://www.dazeddigital.com/music/article/40528/1/the-korean-rock-bands-shaking-up-the-status-quo",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Billboard 的「2014 年最佳 K-pop 專輯」榜單把 NELL 的《Newton's Apple》排第 2 名。",
+      "src": "https://en.wikipedia.org/wiki/Nell_(band)",
+      "src2": "https://www.soompi.com/article/678317wpp/billboard-names-their-best-k-pop-songs-and-albums-of-2014",
+      "from": "new"
+     },
+     {
+      "f": "NELL 曾拿下 Korean Music Awards、Mnet 音樂獎與 Golden Disk Awards 等韓國音樂獎項。",
+      "src": "https://en.wikipedia.org/wiki/Nell_(band)",
+      "src2": "https://ko.wikipedia.org/wiki/%EB%84%AC_(%EB%B0%B4%EB%93%9C)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "身分：poolAlbums（Let It Rain 2003、Healing Process 2006、Separation Anxiety 2008）都是韓國 NELL，無同名混卡。失敗請求 1（billboard.com 回 307 轉址到未驗證的 tollbit 網址，未跟隨；改以 soompi 轉述，soompi 為轉述 Billboard 榜單，非 Billboard 原頁）。\n非獨立：en／ko 維基是同站不同條目；Dazed Digital 為獨立媒體；origin 第二條 bank 沿用事實庫的 ko 維基 Let It Rain 條目＋en 維基。\n單源（不進 facts）：Dazed 稱評論者視 NELL 為「該國搖滾類型最重要的建構者之一」，並稱「談南韓獨立搖滾不可能不提 NELL」，也提到與 G-Dragon、Epik High 合作（Dazed 單源；lostinnell.com 開頁後確認沒有這類說法）；ko 維基稱 NELL 被評為「韓國的 Radiohead」「感性樂團」，日本搖滾專刊 Crossbeat 形容為「韓國的 Coldplay」（ko 維基單源）；ko 維基獎項細節：2008 年 Korean Music Awards 網友票選年度音樂人（modern rock 類）、2008 年 Mnet KM 音樂祭搖滾音樂獎與作曲獎、2008 年第 23 屆 Golden Disk 搖滾獎（單源，且 KMA 為網友票選獎，不寫成評審獎）；en 維基稱 2007–2018 年間於這些獎項「有得獎」但無類別，所以 facts 只寫泛稱；2014 年 Newton's Apple 為 Billboard 該榜第 2；團名來自電影《Nell》的由來（1999-07-31 仁川 Tri-Port 搖滾祭避雨時取名）為 ko 維基單源；成員 2023 年 6 月鼓手 정재원 離團（en 維基單源）；2016 年與 Woollim 分手、自設 Space Bohemian（en 維基單源）；2012《Slip Away》登多個榜（單源）。\n沒找到名人堂或國家級榮譽；legacy 的地位只有 Billboard 榜單一條較硬。已上線四張簡介（Let It Rain、Separation Anxiety、Healing Process）與本層所查無衝突，無 pubIssues；Healing Process 簡介裡「帶動早期《Reflection of》二手行情」本層未查證，未動。"
+ },
+ {
+  "key": "nena",
+  "name": "Nena",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Nena 本名 Gabriele Susanne Kerner，1960 年 3 月 24 日生於西德的 Hagen；「Nena」這個藝名來自她童年在西班牙度假時別人對她的暱稱，意思是「小女孩」。",
+      "src": "https://en.wikipedia.org/wiki/Nena",
+      "src2": "https://de.wikipedia.org/wiki/Nena",
+      "from": "new"
+     },
+     {
+      "f": "她領軍的 Nena 樂團屬於 Neue Deutsche Welle（新德國浪潮）一路，樂團 1987 年解散。",
+      "src": "https://de.wikipedia.org/wiki/Nena",
+      "src2": "https://classicsongoftheday.com/99-luftballons-nena/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈99 Luftballons〉的靈感來自 1982 年 Rolling Stones 在西柏林的演唱會：氣球放飛後飄向柏林圍牆，樂團成員想像一顆無辜的氣球被當成敵情，引爆冷戰衝突。",
+      "src": "https://classicsongoftheday.com/99-luftballons-nena/",
+      "src2": "https://faroutmagazine.co.uk/why-did-99-luftballons-get-an-english-rewrite/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "德語原版〈99 Luftballons〉1984 年攻上美國 Billboard Hot 100 第 2 名（被 Van Halen〈Jump〉擋在第 1 名之外），在以英語為主的美國電台是罕見的外語熱門曲。",
+      "src": "https://classicsongoftheday.com/99-luftballons-nena/",
+      "src2": "https://faroutmagazine.co.uk/why-did-99-luftballons-get-an-english-rewrite/",
+      "from": "new"
+     },
+     {
+      "f": "英語版〈99 Red Balloons〉在英國單曲榜拿下第 1 名，登冠 3 週。",
+      "src": "https://faroutmagazine.co.uk/why-did-99-luftballons-get-an-english-rewrite/",
+      "src2": "https://en.wikipedia.org/wiki/Nena",
+      "from": "new"
+     },
+     {
+      "f": "維基稱 Nena 是德國最成功的流行歌手之一。",
+      "src": "https://en.wikipedia.org/wiki/Nena",
+      "src2": "https://de.wikipedia.org/wiki/Nena",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Nena 樂團 1987 年解散；她 1989 年以單曲〈Wunder gescheh'n〉展開個人事業，2002 年以重錄舊作的專輯《20 Jahre – Nena feat. Nena》復出。",
+      "src": "https://de.wikipedia.org/wiki/Nena",
+      "src2": "https://en.wikipedia.org/wiki/Nena",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "德語版〈99 Luftballons〉1984 年登上美國 Billboard Hot 100 第 2 名。",
+    "src": "https://classicsongoftheday.com/99-luftballons-nena/",
+    "src2": "https://faroutmagazine.co.uk/why-did-99-luftballons-get-an-english-rewrite/",
+    "from": "new"
+   },
+   {
+    "f": "英語版〈99 Red Balloons〉1984 年在英國單曲榜登頂。",
+    "src": "https://faroutmagazine.co.uk/why-did-99-luftballons-get-an-english-rewrite/",
+    "src2": "https://en.wikipedia.org/wiki/Nena",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年份：de 維基與上線簡介寫 1982 年在西柏林組成；classicsongoftheday 與搜尋摘要寫 1981 年；facts 不放成軍年份。",
+   "〈99 Luftballons〉概念由誰想出：farout 與上線簡介寫吉他手 Carlo Karges；classicsongoftheday 寫鍵盤手 Fahrenkrog-Petersen；facts 不指名，採兩源一致的演唱會與氣球情節。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "身分：poolAlbums 三張（Nena 1983、? (Fragezeichen) 1984、Wenn alles richtig ist, dann stimmt was nicht 1998）。前兩張是 Nena 樂團，1998 年那張是 Gabriele Kerner 的個人專輯、沿用 Nena 名義（樂團 1987 年解散後），同一人，不算同名混卡，但寫作層要避免把 1998 年作品寫成樂團作品。\n失敗請求 3（de.wikipedia Nena_(Sängerin) 兩種寫法 404、britannica 404）。步驟：搜尋與開頁共 6 次。\n在世者：銷量與獎座數不寫（en 維基稱累計 2500 萬張以上，未收）。\n非獨立：en／de 維基同站不同條目；classicsongoftheday 與 faroutmagazine 為獨立網站。\n單源（不進 facts）：出生地年份以外的 Rolf Brendel 同行搬柏林、團員名單（搜尋摘要，未開頁）；德語版 1984-03-03 當期登第 2（搜尋摘要）；〈Nur geträumt〉1982 年（de 維基）；1 Live Krone 2002 終身成就獎（de 維基單源；搜尋摘要另列 Echo 2003、Goldene Stimmgabel 等，皆為維基衍生站摘要）；2005 年〈Liebe ist〉登德國單曲榜冠軍，且創下首尾兩次冠軍相隔 22 年的紀錄（en 維基單源，屬紀錄類宣稱）；2011–2014 年擔任 The Voice of Germany 教練（de 維基）；2021 年起因反對防疫規定受到抨擊、演出取消（en／de 維基皆有，與本張專輯無關，未收，寫作層如需寫須另行處理）；? 專輯由 Spliff 的 Reinhold Heil 與 Manne Praeker 製作、同名曲問號由來（事實庫 bank，en 維基單源，已有上線簡介）；德語版 99 Luftballons 在多國登冠（搜尋摘要）。\n未找到名人堂或國家級榮譽。上線簡介《Nena (1983)》寫「德語版 1984 年 2 月攻上 Hot 100 第 2 名」：搜尋摘要顯示 1984-03-03 當期登第 2（可能是 2 月底創峰），月份與榜單日期可能差一個月，未能開頁證實，不列 pubIssues，只提醒。"
+ },
+ {
+  "key": "neu!",
+  "name": "Neu!",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Neu! 1971 年在德國杜塞道夫成立，創團的鼓手 Klaus Dinger 與吉他手 Michael Rother 都曾短暫參與早期 Kraftwerk，離開後自組樂團。",
+      "src": "https://en.wikipedia.org/wiki/Neu!",
+      "src2": "https://artsandculture.google.com/story/mwWBwrTR7-I5lg",
+      "from": "new"
+     },
+     {
+      "f": "兩人與工程師兼製作 Conny Plank 合作，首張專輯 1971 年 12 月在漢堡錄音，1972 年 3 月由 Brain Records 發行。",
+      "src": "https://retroforgerecords.com/bands/neu",
+      "src2": "https://en.wikipedia.org/wiki/Neu!",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Neu! 的招牌是 Klaus Dinger 的 motorik 節拍：穩定、不搖擺、一路向前推進的 4/4 律動，搭配 Michael Rother 帶空間感的吉他。",
+      "src": "https://en.wikipedia.org/wiki/Neu!",
+      "src2": "https://artsandculture.google.com/story/mwWBwrTR7-I5lg",
+      "from": "new"
+     },
+     {
+      "f": "《Neu! 2》（1973）錄音經費用完，B 面以先前發行的單曲〈Neuschnee〉／〈Super〉用不同轉速與剪接重新處理的版本填滿。",
+      "src": "https://en.wikipedia.org/wiki/Neu!_2",
+      "src2": "https://retroforgerecords.com/bands/neu",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 Neu! 是 1970 年代西德 krautrock 運動的核心樂團之一；Britannica 也把 Neu! 與 Can、Faust 並列為 Kraftwerk 之外的德國實驗團體。",
+      "src": "https://en.wikipedia.org/wiki/Neu!",
+      "src2": "https://www.britannica.com/topic/Neu",
+      "from": "new"
+     },
+     {
+      "f": "David Bowie、Brian Eno 與 Radiohead 被點名受 Neu! 影響；Google Arts & Culture 的專題寫道，Bowie、Eno 與 Iggy Pop 1970 年代末的唱片受杜塞道夫這座「萊茵河上的音樂實驗室」啟發。",
+      "src": "https://en.wikipedia.org/wiki/Neu!",
+      "src2": "https://artsandculture.google.com/story/mwWBwrTR7-I5lg",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Neu! 1972 至 1975 年共發行三張專輯，之後因音樂方向分歧解散。",
+      "src": "https://en.wikipedia.org/wiki/Neu!",
+      "src2": "https://artsandculture.google.com/story/mwWBwrTR7-I5lg",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "身分：poolAlbums 三張（Neu! 1972、Neu! 2 1973、Neu! 75 1975）都是德國 Neu!，無同名混卡。事實庫 research／published 皆空，全新查。\n非獨立：W 與 W2 同站不同條目；Google Arts & Culture 專題是 Visit Düsseldorf 出品（地方觀光機構，帶宣傳性質）；retroforgerecords.com 是唱片店／廠牌介紹性網站；Britannica 的 Neu! 條目只有一句話提及（開頁確認為 stub）。\n單源（不進 facts）：首張只賣約 3 萬張（en 維基）；Stephen Morris（Joy Division／New Order）稱 Klaus Dinger 的鼓是重要影響（en 維基）；Thom Yorke 被點名受影響（en 維基，Arts & Culture 只寫 Radiohead）；Stereolab、Sonic Youth、Oasis 受影響（Arts & Culture 單源；搜尋摘要亦列 Stereolab、Sonic Youth，皆非開頁）；Dinger 把節拍稱為「endlose gerade」或「Apache beat」（搜尋摘要與 retroforge 兩種說法不同，不收）；Dinger 後來把《Neu! 2》B 面說成「當今流行單曲多重混音的原型」（en 維基單源）；Ben Sisario（NYT）稱三張專輯為「德國實驗搖滾的地標」、Paul Morley 2003 年把《Neu! 2》列入百大專輯（en 維基單源）；〈Super 16〉用於《Kill Bill》（維基單源）；1985–86 年短暫重聚、Dinger 2008 年過世（維基單源；過世年屬高風險，不收）；《Neu! 2》1973 年 1 月錄、2 月混（維基單源）；Neu! 75 兩面各自走向 Rother 與 Dinger 的路（retroforge 單源）。\n本層沒找到名人堂或國家級榮譽；legacy 以後輩點名與 krautrock 定位為主。"
  }
 ]

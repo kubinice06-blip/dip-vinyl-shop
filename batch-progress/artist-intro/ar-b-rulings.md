@@ -167,3 +167,6 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - w2（6 處）：「朋克」→「龐克」（5 位，避開中國用語）；Gene Clark〈Eight Miles High〉是合寫，改「有他參與創作」；Harmonia 的 Eno 評語語序修順。High Rise 三人的漢字（南条麻人、成田宗弘、生悦住英夫）主線核對無誤。
 - **上線**：40 位，reviewFixes 10。
 - g2 交件（QA 本組 0）。thin：Lip Cream、Lucy Dacus。Catherine Ringer 2026-09-14 過世、享年 68，主線 WebSearch 核實（RTS、Orange／Magic）。pubIssues 1（Leb i Sol 團名由來，低優先）。衝突值一律不寫。w1（g1+g2）派出。
+
+### ar-b-015
+- g1 交件（QA 本組 0）。thin：Obituary、Outer Limits、Pageant。Obituary 5、Outer Limits 6 次失敗請求超限，未取得內容，照收。Phil Collins 2026 年個人入選搖滾名人堂、典禮 2026-11-14 尚未舉行 → 寫「獲選／入選名單公布」，不寫「入選典禮」；主線 WebSearch 核實（rockhall.com、NPR）。pubIssues 1（Phil Collins《...But Seriously》「年度單曲」應為年度唱片，入本機待改）。Primal Scream《XTRMNTR》卡池 1999、多源 2000，入本機待改。
