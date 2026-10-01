@@ -132,3 +132,18 @@
 - Lou Rawls《Lou Rawls Live!》定為 1966 Capitol 版並重寫。Tom Misch《Happy Music》改掛 Supershy。
 - PR #16 轉 ready 並合併進 main（藝人介紹前端與 1,275 位上線）。
 - ar-b-012～022 維持停止（店主先前指示）；PROJECT_MEMORY.md 依 REMOTE_RUNBOOK 仍由本機貼上（條目見上方）。
+
+## 第三段（2026-10-01）：店主「繼續做一批」
+
+PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位）。
+
+### ar-b-012
+
+- 補洞 4 組開跑；派工加「請求標頭不得帶店主 email」。Burzum 刑案、Cannibal Corpse 禁售只收中性事實。
+- 補洞 g2／g3／g4 交件（各 10 位，QA 本組 0 警示）。薄格：Black Country, New Road 身世 none（只有維基單源）、Beach Fossils 與 CocoRosie 地位 none、Camera Obscura 地位單源。採用研究層的保守值：Boston 成軍年、black midi 吉他手離團年、Cem Karaca 喪失公民身分年、Celtic Frost Martin Eric Ain 逝世日、Broadcast 主唱逝世日都不寫確切值；Chris Stapleton《Traveller》首週名次採兩獨立源的第 14 名。
+- w2（g3+g4）派出，加特注：Burzum 只寫罪名、判決、刑期、獲釋年；Cannibal Corpse、Cradle of Filth 不描述歌詞或封面；成員逝世不寫死因；Stapleton 葛萊美座數不寫。
+- 補洞 g1 交件（QA 0 處）。929 失敗請求 7 次超上限，但失敗請求都沒取得內容，facts 不受影響，照收；929 標 thin。929 已上線兩張簡介（《也許像星星》《929同名專輯》）寫「2004 年吳志寧與黃玠成立」，與馬世芳專訪（2005 年兩人編制是志寧與嘟嘟）不一致 → 列入本機待改（建議只寫「吳志寧在大學時期組成」）；介紹正文不寫成軍年與共同創團者。
+- w1（g1+g2）派出。
+- w2 審稿（5 處）：Behemoth、Bijelo Dugme 去「始終」；Camera Obscura 刪死因（比照本批成員逝世不寫死因）；Circle Jerks 紀錄片年份 1980→1981（影片 1981 年上映）；Crass 改正 Crass Records 緣由（不是「沒有壓片廠願意處理」，是愛爾蘭壓片廠工人拒壓〈Asylum〉一曲）。Matt Kwasniewski-Kelvin 2026-01-12 過世、享年 26 歲，主執行緒 WebSearch 核實（Variety、Rolling Stone、Consequence）。
+- w1 審稿（8 處）：生祥樂隊「協調」→「揉合」；羅大佑 1985 年先赴美、後落腳香港，改「離台，後來落腳香港」；929 去「總」；Azra 刪《YU 100》票選名次（比照媒體榜單不寫）、「最受歡迎」改「被視為」、「從此」→「此後」；Banco 刪「義大利百科」來源字樣；Amyl and the Sniffers 刪「第一次獲得提名」（首次宣稱）。2025 ARIA 四獎與 AC/DC 澳洲巡演暖場由主執行緒 WebSearch 核實（ARIA 官網、ABC News）。
+- **ar-b-012 上線**：40 位，reviewFixes 13；建置後 1,315 位藝人、64 分片。929 已上線簡介的成軍說法已進 audits/ARTIST-PUB-ISSUES.md（本機待改）。第三段到此結束，ar-b-013 起未開。

@@ -1,0 +1,801 @@
+[
+ {
+  "key": "beck",
+  "name": "Beck",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Beck 生於洛杉磯市中心；母親 Bibbe Hansen 是曾與 Andy Warhol 的 Factory 往來的藝術家與表演者，父親 David Campbell 是音樂人。",
+      "src": "https://en.wikipedia.org/wiki/Beck",
+      "src2": "https://www.ebsco.com/research-starters/music/beck/",
+      "from": "new"
+     },
+     {
+      "f": "外祖父 Al Hansen 是 Fluxus 前衛藝術運動的藝術家，長住歐洲，對 Beck 的創作觀影響很深。",
+      "src": "https://en.wikipedia.org/wiki/Beck",
+      "src2": "https://www.ebsco.com/research-starters/music/beck/",
+      "from": "new"
+     },
+     {
+      "f": "他自學吉他，從藍調曲子入門，起初在街頭與公車上演唱；約 18 歲前往紐約，投入曼哈頓下東城的 anti-folk 場景，之後回洛杉磯做 lo-fi 錄音並接觸嘻哈製作。",
+      "src": "https://en.wikipedia.org/wiki/Beck",
+      "src2": "https://www.ebsco.com/research-starters/music/beck/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的作品被形容為橫跨多種曲風的音樂拼貼，把民謠、放克、靈魂、嘻哈、電子、另類搖滾、鄉村與迷幻串在一起，帶有 lo-fi 與後現代的編排。",
+      "src": "https://en.wikipedia.org/wiki/Beck",
+      "src2": "https://www.ebsco.com/research-starters/music/beck/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Odelay》是 1996 年《Village Voice》Pazz & Jop 樂評人票選的年度冠軍專輯。",
+      "src": "https://en.wikipedia.org/wiki/Odelay",
+      "src2": "https://en.wikipedia.org/wiki/Pazz_%26_Jop",
+      "from": "new"
+     },
+     {
+      "f": "Beck 2015 年第 57 屆葛萊美獎以《Morning Phase》拿下年度專輯（得獎）。",
+      "src": "https://www.grammy.com/artists/beck/292/",
+      "src2": "https://en.wikipedia.org/wiki/Beck",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1996 年《Odelay》名列《Village Voice》Pazz & Jop 年度冠軍專輯。",
+    "src": "https://en.wikipedia.org/wiki/Odelay",
+    "src2": "https://en.wikipedia.org/wiki/Pazz_%26_Jop",
+    "from": "new"
+   },
+   {
+    "f": "2015 年第 57 屆葛萊美獎以《Morning Phase》得年度專輯獎。",
+    "src": "https://www.grammy.com/artists/beck/292/",
+    "src2": "https://en.wikipedia.org/wiki/Beck",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空（從零查）。搜尋 7 次：WebFetch en.wikipedia Beck、WebSearch（Britannica 找不到，轉 EBSCO）、WebFetch EBSCO、WebFetch Odelay 維基、WebSearch（Grammy）、WebFetch grammy.com、WebFetch Pazz & Jop 維基。失敗請求 3 次（Britannica 404、Pitchfork 不可取、Rolling Stone 307→402 付費牆），不計入。非獨立：Odelay 與 Pazz & Jop 兩條目同屬維基；Pazz & Jop 條目只確認 1996 冠軍為 Odelay。以下為單源，不放 facts：Odelay 1996 年被《Rolling Stone》與《NME》年度票選選為第一（單源，Odelay 維基）；Rolling Stone 500 大專輯榜 2009 版第 306 名、2023 版第 424 名；Pitchfork 90 年代百大 2003 版第 19 名；1001 Albums 2010 版收錄（皆單源，Odelay 維基）；生年 1970 年 7 月 8 日與本名 Bek David Campbell（單源維基＋搜尋摘要未開頁）；父親為加拿大籍作曲家兼指揮（單源維基，EBSCO 只說 bluegrass 樂手，故 f 只寫音樂人）；童年在洛杉磯、堪薩斯、德國之間流轉，分別接觸龐克、教會聖歌與外祖父的前衛藝術（EBSCO 單源，搜尋摘要另有一站同說但未開頁）；葛萊美累計 8 座得獎（grammy.com 摘要與搜尋摘要，未能第二源開頁確認；提名數 24 與 22 不一致，不收）；Odelay 第 39 屆葛萊美最佳另類專輯與〈Where It's At〉最佳男搖滾演唱得獎只見維基 Odelay（單源，與上線簡介一致；grammy.com 摘要稱 Odelay 未得獎，與維基衝突，頁面資料可能不完整，不收）；〈Loser〉與《Odelay》的取樣拼貼手法只見上線簡介與維基單源，不放 facts；2022 年被提名搖滾名人堂（單源維基，未入選）。Beck 維基與 EBSCO 皆無『widely regarded』式共識句，也未查到後輩點名受他影響的出處，legacy 偏薄但有出處。era 格查不到兩源年表，標 none。",
+  "pubIssues": []
+ },
+ {
+  "key": "behemoth",
+  "name": "Behemoth",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Behemoth 是來自波蘭的樂團，由 Nergal 在少年時期創立；Nergal 一直是樂團的主唱、作詞與主要作曲者。",
+      "src": "https://en.wikipedia.org/wiki/Behemoth_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Nergal_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Behemoth 以 blackened death metal（黑死金屬）見稱，從波蘭的地下起家。",
+      "src": "https://en.wikipedia.org/wiki/Behemoth_(band)",
+      "src2": "https://www.loudersound.com/features/why-behemoth-s-the-satanist-was-one-of-the-best-albums-of-this-century",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《The Satanist》（2014 年 2 月 3 日發行）被 Loudwire 選為 2010 年代最佳金屬專輯。",
+      "src": "https://loudwire.com/behemoth-the-satanist-anniversary/",
+      "src2": "https://en.wikipedia.org/wiki/The_Satanist_(album)",
+      "from": "new"
+     },
+     {
+      "f": "Behemoth 從波蘭極限金屬地下場景的 cult 團體，在 2009 年《Evangelion》之後成為極限金屬的領頭團體之一。",
+      "src": "https://www.loudersound.com/features/why-behemoth-s-the-satanist-was-one-of-the-best-albums-of-this-century",
+      "src2": "https://en.wikipedia.org/wiki/Behemoth_(band)",
+      "from": "new"
+     },
+     {
+      "f": "Nergal 因在台上撕毀聖經而在波蘭被控褻瀆宗教，並因擔任電視選秀《The Voice of Poland》評審成為波蘭主流媒體的焦點人物。",
+      "src": "https://en.wikipedia.org/wiki/Nergal_(musician)",
+      "src2": "https://loudwire.com/behemoth-the-satanist-anniversary/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2009 年《Evangelion》與 2014 年《The Satanist》之間隔了約五年，期間 Nergal 罹癌治療。",
+      "src": "https://www.loudersound.com/features/why-behemoth-s-the-satanist-was-one-of-the-best-albums-of-this-century",
+      "src2": "https://loudwire.com/behemoth-the-satanist-anniversary/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 8 次（含 3 次 WebSearch：決選查詢、十年榜、限定網域；另一次含 theguardian.com 的限網域搜尋因 400 失敗未計）；失敗請求 4 次（Britannica 404、波蘭文維基 404 兩次、Metal Archives 403），已達失敗上限。非獨立：W、N、SA 三條皆維基；LS（Louder）與 LW（Loudwire）各為獨立媒體，但 LS 對 origin 只確認『來自波蘭』，1991 年與格但斯克成立只見維基與限網域搜尋摘要（AllMusic 與 Loudwire 摘要，未開頁），故 origin 第二源為維基 Nergal 條目（非獨立）。Metal Hammer Golden Gods 2014 最佳專輯（維基 Behemoth 單源）不收，milestones 留空。單源不放 facts：維基稱 Behemoth『被視為奠定波蘭極限金屬地下場景』與 Vader、Hate 並列；2016 年 Loudwire 列為史上第 50 大金屬樂團；Fryderyk 獎提名 2004 至 2014，2010 年得重金屬年度專輯（維基單源，且派系主詞為樂團）；The Satanist 榜位波蘭第 1、Billboard 200 第 34 名、德國第 11（維基單源）；Metacritic 92/100；2019 年 Loudwire 與 Consequence of Sound 都選為十年最佳金屬專輯（CoS 單源）；Nergal 出身天主教家庭、8 歲學吉他（維基單源）；Nergal 2010 年審判、2012 年最高法院判決（維基單源，摘要與 Loudwire『最終打贏官司』說法不一致，故 facts 只寫被控；判決結果不收）；波蘭媒體提及 Nergal 的次數由 2009 年 61 次升至 2011 年 2755 次（Loudwire 單源）；癌症種類兩源不一致（Loudersound 與 AllMusic 摘要稱白血病，Loudwire 稱淋巴瘤），facts 只寫『罹癌』，不寫種類；撕毀聖經是 2007 年演出（維基單源），facts 因此不寫年份。專輯 poolAlbums：Thelema.6、Demigod、I Loved You at Your Darkest。 修正：origin 的 1991 年成立、格但斯克與 Nergal 1977 年生於格丁尼亞，兩源不足（W 單源，N 不含 1991 與格但斯克；限網域搜尋摘要另有 AllMusic／Loudwire 說法但未開頁），不放 facts，列單源待查。sound：1999《Satanica》前後由傳統黑金屬轉向 blackened death metal 單源（維基）；《The Satanist》Nergal 稱『重生』、轉向情感直接、吸收 Watain 等巡演影響單源（Loudersound），不放 facts。origin 兩源皆為維基（非獨立）。",
+  "pubIssues": []
+ },
+ {
+  "key": "bijelo dugme",
+  "name": "Bijelo Dugme",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bijelo Dugme 1974 年在塞拉耶佛正式成軍，吉他手 Goran Bregović 是創團者，也是樂團存續期間唯一始終在團的核心。",
+      "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "src2": "https://sr.wikipedia.org/wiki/Бијело_дугме",
+      "from": "new"
+     },
+     {
+      "f": "樂團成員在成軍之前已以 Jutro 之名演出，Bregović 在大學時期受 1960 年代搖滾影響而組團。",
+      "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "src2": "https://www.goranbregovic.rs/biography/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂評 Dražen Vrdoljak 1974 年 11 月 30 日在《Studio》上把開場曲的前奏形容成「pastirski」（牧羊人式的），幾週後《Tina》雜誌用了「pastirski rok」（牧羊人搖滾）這個詞並迅速沿用，指 Bijelo Dugme 那種 Deep Purple、Led Zeppelin 影響加上巴爾幹民謠元素的硬搖滾。",
+      "src": "https://en.wikipedia.org/wiki/Kad_bi'_bio_bijelo_dugme",
+      "src2": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "from": "bank"
+     },
+     {
+      "f": "樂團的招牌是把硬搖滾與巴爾幹傳統民謠元素併在一起；1979 年的《Bitanga i princeza》是最後一張硬搖滾取向的專輯，1980 年代初起轉入新浪潮。",
+      "src": "https://en.wikipedia.org/wiki/Bitanga_i_princeza",
+      "src2": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bijelo Dugme 被視為南斯拉夫最受歡迎的搖滾樂團，其 1989 年解散與南斯拉夫的政治崩解被連在一起，樂團也成為南斯拉夫文化的象徵。",
+      "src": "https://sr.wikipedia.org/wiki/Бијело_дугме",
+      "src2": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "from": "new"
+     },
+     {
+      "f": "1977 年 8 月 28 日樂團在貝爾格勒 Hajdučka česma 辦免費露天演唱會，據估有 7 萬至 10 萬人到場，是當時南斯拉夫搖滾史上最大的聽眾聚會。",
+      "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "src2": "https://sr.wikipedia.org/wiki/Бијело_дугме",
+      "from": "new"
+     },
+     {
+      "f": "2005 年樂團重聚，在塞拉耶佛、札格拉布與貝爾格勒各辦一場，貝爾格勒的免費場是史上觀眾人數最多的演唱會之一。",
+      "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "src2": "https://sr.wikipedia.org/wiki/Бијело_дугме",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1977 年 8 月 28 日在貝爾格勒 Hajdučka česma 的免費露天演唱會，聽眾約 7 萬至 10 萬人。",
+      "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "src2": "https://sr.wikipedia.org/wiki/Бијело_дугме",
+      "from": "new"
+     },
+     {
+      "f": "1984 年 4 月原主唱 Željko Bebek 離團，接任的 Mladen Vojičić「Tifa」只待約一年，Alen Islamović 在 1986 年的《Pljuni i zapjevaj moja Jugoslavijo》接手主唱。",
+      "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "src2": "https://sr.wikipedia.org/wiki/Пљуни_и_запјевај_моја_Југославијо",
+      "from": "new"
+     },
+     {
+      "f": "樂團 1989 年解散，普遍被連到南斯拉夫的政治危機。",
+      "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+      "src2": "https://sr.wikipedia.org/wiki/Бијело_дугме",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1977 年 8 月 28 日貝爾格勒 Hajdučka česma 免費演唱會，估計 7 萬至 10 萬人到場。",
+    "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+    "src2": "https://sr.wikipedia.org/wiki/Бијело_дугме",
+    "from": "new"
+   },
+   {
+    "f": "2005 年重聚巡演，貝爾格勒免費場是史上觀眾人數最多的演唱會之一。",
+    "src": "https://en.wikipedia.org/wiki/Bijelo_Dugme",
+    "src2": "https://sr.wikipedia.org/wiki/Бијело_дугме",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫有 3 份研究稿與 3 份上線簡介；研究稿與上線簡介在 pastirski rok、Islamović 接手 Tifa 上一致，無衝突。搜尋 7 次：en 維基、Britannica Bregović 頁（內容極少，無用）、sr 維基、WebSearch、goranbregovic.rs 官方傳記、Beat Magazine、shootfarken；失敗請求 1 次（Chicago Reader 429）。非獨立：W 與 SR 同屬維基（不同語言條目）、KB／BP／PJ 皆維基；OF 為 Bregović 官方網站（自家說法）。origin 第 2 條：Jutro 之名見於維基（1971 至 1973 年），官方傳記只支持『受 1960 年代搖滾影響、組成團體』，Jutro 單源。1974 年成軍：sr 維基寫 1973/1974（1974 年 1 月 1 日正式改名），en 維基寫正式成軍 1974，故寫『1974 年正式成軍』。以下單源，不放 facts：Bregović 在塞拉耶佛長大，父親為塞爾維亞人、母親為克羅埃西亞人，學小提琴與對位和聲，在大學念哲學與社會學（官方傳記單源，自家說法）；『Dugmemanija』稱呼與首張專輯約 14.1 萬張（維基單源）；《Bitanga i princeza》32 萬、《Pljuni i zapjevaj moja Jugoslavijo》逾 57 萬張（sr 維基單源）；『南斯拉夫的披頭四』的稱號與學者 Peter Liotta 說樂團『把搖滾南斯拉夫化』（shootfarken 單源，Chicago Reader 頁因 429 未能開頁，搜尋摘要有相同說法；Beat Magazine 開頁後只說樂團在南斯拉夫與國際都有成就、Bregović 稱搖滾在共產國家『比較像宗教而不是音樂』，未支持『披頭四』稱號，故不收）；有批評者認為其民謠搖滾融合影響了日後 turbo-folk（維基單源，『some critics』不收）；2005 年貝爾格勒場人數 25 至 30 萬、塞拉耶佛 10 小時售出 6 萬張票（sr 維基單源）；1984 年 4 月 Bebek 離團（en 維基單源，PJ 只證明 Islamović 接替 Tifa、Tifa 只待一年，f 內『約一年』與 PJ『只待了一年』相符）。1974 年首專輯的樂評詞源來自 KB（en 維基，已與上線簡介一致）。『最受歡迎』：sr 維基稱樂團是 more than two decades 最受歡迎的南斯拉夫搖滾團；en 維基開頁摘要未明寫最受歡迎，只寫『massive success』『symbol of Yugoslav culture』，搜尋摘要（en 維基首段）稱『most popular and best-selling』，未逐字開頁驗證，寫作層可寫『被視為南斯拉夫最受歡迎的搖滾樂團之一』。人名與專名照拉丁原文。",
+  "pubIssues": []
+ },
+ {
+  "key": "black country, new road",
+  "name": "Black Country, New Road",
+  "slots": {
+   "origin": {
+    "status": "none",
+    "facts": []
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團的聲音被形容為把 post-rock 或 post-punk 與爵士並在一起的實驗搖滾。",
+      "src": "https://www.hotpress.com/culture/black-country-new-road-vocalist-isaac-wood-announces-his-departure-ahead-of-their-second-album-release-22889487",
+      "src2": "https://therockrevival.co.uk/black-country-new-road-forever-howlong-a-new-statement-of-identity/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《For the First Time》（2021）入圍 2021 年 Mercury Prize（入圍，該屆由 Arlo Parks 的《Collapsed in Sunbeams》得獎），並登上英國專輯榜第 4 名。",
+      "src": "https://en.wikipedia.org/wiki/Mercury_Prize",
+      "src2": "https://en.wikipedia.org/wiki/Black_Country,_New_Road",
+      "from": "new"
+     },
+     {
+      "f": "2022 年 1 月 31 日主唱 Isaac Wood 宣布離團，理由是心理健康；當時距第二張《Ants from Up There》發行（2022 年 2 月 4 日）只剩四天，其餘成員決定繼續。",
+      "src": "https://www.hotpress.com/culture/black-country-new-road-vocalist-isaac-wood-announces-his-departure-ahead-of-their-second-album-release-22889487",
+      "src2": "https://en.wikipedia.org/wiki/Black_Country,_New_Road",
+      "from": "new"
+     },
+     {
+      "f": "《Ants from Up There》登上英國專輯榜第 3 名，是樂團當時成績最高的專輯。",
+      "src": "https://en.wikipedia.org/wiki/Ants_from_Up_There",
+      "src2": "https://en.wikipedia.org/wiki/Black_Country,_New_Road",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Wood 離團後，Tyler Hyde、May Kershaw 與 Georgia Ellery 分擔主唱；過渡的《Live at Bush Hall》之後，樂團推出第三張專輯《Forever Howlong》。",
+      "src": "https://en.wikipedia.org/wiki/Black_Country,_New_Road",
+      "src2": "https://therockrevival.co.uk/black-country-new-road-forever-howlong-a-new-statement-of-identity/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2021 年首張專輯《For the First Time》入圍 Mercury Prize。",
+    "src": "https://en.wikipedia.org/wiki/Mercury_Prize",
+    "src2": "https://en.wikipedia.org/wiki/Black_Country,_New_Road",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Hotpress 寫 Mercury Prize 提名為 2020 年；Mercury Prize 維基頁與樂團維基頁指向 2021 年（專輯 2021 年 2 月發行），採 2021 年"
+  ],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 8 次：en 維基、WebSearch（背景）、Ants 維基、Hotpress、Mercury Prize 維基、Rock Revival、WebSearch（年榜）、Apple Music（無傳記，無用）；失敗請求 4 次（Britannica 404、NME 404、Metacritic 403、Album of the Year 403），已達上限。origin 查無兩源：樂團 2018 年在劍橋成軍、六位創團成員（Tyler Hyde、Lewis Evans、Georgia Ellery、May Kershaw、Charlie Wayne、Isaac Wood）、2019 年 Luke Mark 加入、前身為 Nervous Conditions（因主唱遭性侵指控而解散）皆只見維基（單源，搜尋摘要另有相同說法但未開頁；Nervous Conditions 一節涉及指控，無第二源，不收）。非獨立：W 與 A、M 同屬維基。單源，不放 facts：Ants from Up There 的 Metacritic 92 分、NME 5/5、Line of Best Fit 10/10、Pitchfork 8.4 Best New Music（維基 Ants）；2022 年榜 Beats Per Minute 第 3、Paste 與 Sputnikmusic 第 5、Needle Drop 第 7、NME 第 11；『masterpiece』『future cult classic』評語（維基 Ants 與搜尋摘要，未開頁原評論）；Album of the Year 2022 排第 15、Rate Your Music 2022 第 1、Best Ever Albums 第 180（搜尋摘要，未開頁）；klezmer、極簡音樂等影響（維基單源）；2023 年 Live at Bush Hall 與 2025 年 4 月 Forever Howlong 英國榜第 3、美國 Billboard 200 第 135 名（維基單源，era 的 facts 因此不寫年份，只寫『第三張』）。Hotpress 的『古典訓練與自學並存』為單源，已移出 facts。legacy 無後輩點名受影響、無『widely regarded』式共識句，故 thin。人名 Hyde 等照拉丁原文。 補記：sound 第二源改為 Rock Revival（post-rock 與爵士）；Hotpress 稱既定演出全數取消、維基 Ants 稱其餘成員不再演奏該專輯歌曲，兩者各單源，皆不放 facts。",
+  "pubIssues": []
+ },
+ {
+  "key": "black midi",
+  "name": "black midi",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "black midi 由 Geordie Greep、Cameron Picton、Matt Kwasniewski-Kelvin 與 Morgan Simpson 四人組成；四人在倫敦的 BRIT School 認識，並隨布里克斯頓 Windmill 一帶的場景崛起。",
+      "src": "https://en.wikipedia.org/wiki/Black_Midi",
+      "src2": "https://consequence.net/2026/01/matt-kwasniewski-kelvin-dead-black-midi-guitarist/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "black midi 走的是實驗搖滾路線。",
+      "src": "https://en.wikipedia.org/wiki/Schlagenheim",
+      "src2": "https://en.wikipedia.org/wiki/Black_Midi",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《Schlagenheim》（2019）入圍 2019 年 Mercury Prize（入圍，該屆由 Dave 的《Psychodrama》得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Mercury_Prize",
+      "src2": "https://en.wikipedia.org/wiki/Black_Midi",
+      "from": "new"
+     },
+     {
+      "f": "樂團與 Black Country, New Road、Squid、Shame 等同屬 2010 年代末到 2020 年代初的 Windmill 場景（南倫敦吉他搖滾的復興），並是該場地的駐場團體。",
+      "src": "https://en.wikipedia.org/wiki/The_Windmill,_Brixton",
+      "src2": "https://consequence.net/2026/01/matt-kwasniewski-kelvin-dead-black-midi-guitarist/",
+      "from": "new"
+     },
+     {
+      "f": "創團吉他手 Matt Kwasniewski-Kelvin 於 2026 年 1 月 12 日過世，享年 26 歲；Rough Trade 轉發的家人聲明稱他在長期與心理健康奮戰後離世。他在樂團第二張專輯之前已暫離團。",
+      "src": "https://consequence.net/2026/01/matt-kwasniewski-kelvin-dead-black-midi-guitarist/",
+      "src2": "https://en.wikipedia.org/wiki/Black_Midi",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2019 年首張專輯《Schlagenheim》入圍 Mercury Prize。",
+    "src": "https://en.wikipedia.org/wiki/Mercury_Prize",
+    "src2": "https://en.wikipedia.org/wiki/Black_Midi",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Schlagenheim 維基頁寫 Kwasniewski-Kelvin 2020 年離團；Consequence 寫 2021 年為了心理健康療養暫離，兩源不一致，facts 不寫離團年份"
+  ],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 black midi、WebSearch（背景）、WebSearch（Matt 訃聞）、Schlagenheim 維基、Consequence 訃聞、Windmill 維基、Mercury Prize 維基；失敗請求 2 次（Rolling Stone 與 Variety 皆 307 轉 tollbit，付費牆未取）。非獨立：W、SC、WM、M 同屬維基；C 是獨立媒體但是訃聞，只支持 BRIT School 認識、Windmill 場景、Matt 過世日期與心理健康聲明。Matt 的死因細節維基有寫、Rough Trade 家人聲明未寫，依本批審慎原則 facts 只收聲明原文層級，不寫方式。生卒：1999 年 2 月 8 日生（搜尋摘要與維基 Matt 條目，未開頁）、2026 年 1 月 12 日歿（Consequence 開頁；維基 black midi 條目寫 2026 年 1 月）。單源，不放 facts：2017 年成軍、2017 年 6 月 12 日 Windmill 首演（維基與搜尋摘要）；2018 年單曲〈bmbmbm〉在 Dan Carey 的 Speedy Wunderground 發行；2019 年 KEXP Iceland Airwaves 演出讓樂團受國際注目；Schlagenheim 2018 年 11 月錄製五天、Metacritic 82、Pitchfork Best New Music、年榜 Quietus 第 7、Mojo 與 musicOMH 第 8、NYT 與 Spin 第 9、英國榜第 43（皆 Schlagenheim 維基單源）；Schlagenheim 混合 math rock、noise rock 與 post-punk、前衛搖滾、krautrock（維基單源，故 sound 只寫實驗搖滾，貢獻格偏薄）；Hellfire 英國榜第 22；2024 年 8 月 10 日 Greep 在 Instagram Live 說樂團『indefinitely over』，其後澄清為無限期休團（維基單源，搜尋摘要有『2024 年解散』說法，但維基稱休團，且未開頁）。後輩點名受影響、『widely regarded』式共識句皆查無。era 查無兩源年表。",
+  "pubIssues": []
+ },
+ {
+  "key": "blue öyster cult",
+  "name": "Blue Öyster Cult",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Blue Öyster Cult 1967 年在長島的 Stony Brook 一帶以 Soft White Underbelly 之名起家；樂評人 Sandy Pearlman 發現這批人後成為他們的經理與創作夥伴。",
+      "src": "https://en.wikipedia.org/wiki/Blue_%C3%96yster_Cult",
+      "src2": "https://www.saturdayeveningpost.com/2022/01/50-years-ago-blue-oyster-cult-breaks-out/",
+      "from": "new"
+     },
+     {
+      "f": "團名取自 Pearlman 的詩作：詩裡有一個暗中影響人類歷史的外星祕密組織，名叫 Blue Öyster Cult。",
+      "src": "https://www.saturdayeveningpost.com/2022/01/50-years-ago-blue-oyster-cult-breaks-out/",
+      "src2": "https://www.songfacts.com/facts/blue-oyster-cult",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團被稱為「the thinking man's heavy metal band」（動腦筋的重金屬樂團），因為歌詞與創作合作者偏向文學與科幻；Patti Smith 與科幻作家 Michael Moorcock 都曾為他們寫詞。",
+      "src": "https://en.wikipedia.org/wiki/Blue_%C3%96yster_Cult",
+      "src2": "https://www.saturdayeveningpost.com/2022/01/50-years-ago-blue-oyster-cult-breaks-out/",
+      "from": "new"
+     },
+     {
+      "f": "他們把 heavy metal 的力道與迷幻、前衛的質地，以及神秘學意象和文學野心混在一起。",
+      "src": "https://www.saturdayeveningpost.com/2022/01/50-years-ago-blue-oyster-cult-breaks-out/",
+      "src2": "https://www.toppermost.co.uk/blue-oyster-cult/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團名上 Öyster 的 Ö 使他們成為「heavy metal umlaut」（金屬團名加變音符號）風氣的早期使用者；這個樣式後來被金屬團廣泛沿用。",
+      "src": "https://en.wikipedia.org/wiki/Blue_%C3%96yster_Cult",
+      "src2": "https://www.songfacts.com/facts/blue-oyster-cult",
+      "from": "new"
+     },
+     {
+      "f": "〈(Don't Fear) The Reaper〉1976 年登上 Billboard Hot 100 第 12 名。",
+      "src": "https://www.saturdayeveningpost.com/2022/01/50-years-ago-blue-oyster-cult-breaks-out/",
+      "src2": "https://en.wikipedia.org/wiki/Blue_%C3%96yster_Cult",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《Blue Öyster Cult》1972 年 1 月發行。",
+      "src": "https://www.saturdayeveningpost.com/2022/01/50-years-ago-blue-oyster-cult-breaks-out/",
+      "src2": "https://www.toppermost.co.uk/blue-oyster-cult/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1976 年〈(Don't Fear) The Reaper〉登上 Billboard Hot 100 第 12 名。",
+    "src": "https://www.saturdayeveningpost.com/2022/01/50-years-ago-blue-oyster-cult-breaks-out/",
+    "src2": "https://en.wikipedia.org/wiki/Blue_%C3%96yster_Cult",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 空、上線簡介只有 1 張（首張，與本次查到的 1972 年 1 月發行一致，無衝突）。搜尋 8 次：維基、Britannica（內容極少）、WebSearch×2、Saturday Evening Post、Reaper 維基、Songfacts、Toppermost；失敗請求 1 次（Invisible Oranges 403）。非獨立：W、Reaper 維基同屬維基；SEP、SF、TP 為各自獨立。名人堂：BÖC 自 1998 年起具資格、至今未入選（搜尋摘要未開頁，單源不收，且不是『入選』，不放 facts）。單源，不放 facts：維基稱影響及 Iron Maiden 與 Metallica、全球賣 2500 萬張（美國 700 萬）、(Don't Fear) The Reaper 的 SNL 2000 年 4 月『More Cowbell』短劇、Rolling Stone 2010 年 500 大歌曲第 405 名、1976 年《Rolling Stone》年度歌曲、Mojo 1997 年 80 大單曲、1978《Halloween》使用（皆 Reaper 維基單源）；Metallica 翻唱 BÖC 歌曲（Toppermost 與搜尋摘要，維基未同說）；Iron Maiden 製作人 Martin Birch 曾操刀多張 BÖC 專輯（Toppermost 單源）；Pearlman 希望他們成為『美國的 Black Sabbath』（搜尋摘要）／早期影響含 Black Sabbath（Songfacts）；五人經典陣容 1970 年起穩定整個 1970 年代（SEP 單源）；Buck Dharma 藝名 1971 年起（SEP 單源）；2020 年《The Symbol Remains》與 2024 年《Ghost Stories》為最後錄音室專輯（維基單源）；umlaut 由 Richard Meltzer 或 Allen Lanier 提議，說法不一（維基與 TP 皆說多方宣稱）。『Reaper 最大單曲』用語已移除；寫作層請只寫『登上第 12 名』。Soft White Underbelly 的起源年 1967 年：維基與 SEP 同；Songfacts 寫 1969 年前後成形，屬說法差異，facts 取 1967 年『起家』。人名專名照拉丁原文。",
+  "pubIssues": []
+ },
+ {
+  "key": "boøwy",
+  "name": "BOØWY",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "BOØWY 1981 年成軍，核心成員來自群馬縣高崎；定型的四人陣容是主唱氷室京介、吉他手布袋寅泰、貝斯手松井恒松與鼓手高橋まこと。",
+      "src": "https://ja.wikipedia.org/wiki/BOØWY",
+      "src2": "https://en.wikipedia.org/wiki/Boøwy",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團把 new wave 與 punk rock 揉進日本搖滾。",
+      "src": "https://ja.wikipedia.org/wiki/BOØWY",
+      "src2": "https://en.wikipedia.org/wiki/Boøwy",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "BOØWY 被視為 1980 年代日本樂團熱潮（バンドブーム）的關鍵推手之一，影響延伸到視覺系與後來的日本搖滾美學。",
+      "src": "https://ja.wikipedia.org/wiki/BOØWY",
+      "src2": "https://en.wikipedia.org/wiki/Boøwy",
+      "from": "new"
+     },
+     {
+      "f": "1987 年 12 月 24 日在澀谷公會堂宣布解散，當時正值人氣高峰，這種「在巔峰解散」的決斷後來成為樂團的傳說之一。",
+      "src": "https://realsound.jp/2017/12/post-141842.html",
+      "src2": "https://ja.wikipedia.org/wiki/BOØWY",
+      "from": "new"
+     },
+     {
+      "f": "1988 年 4 月在東京巨蛋舉行告別演唱會「LAST GIGS」，門票數分鐘內售罄。",
+      "src": "https://ja.wikipedia.org/wiki/BOØWY",
+      "src2": "https://en.wikipedia.org/wiki/Boøwy",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1987 年 12 月 24 日澀谷公會堂宣布解散；1988 年 4 月東京巨蛋「LAST GIGS」是最後的演出。",
+      "src": "https://ja.wikipedia.org/wiki/BOØWY",
+      "src2": "https://en.wikipedia.org/wiki/Boøwy",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1987 年 12 月 24 日在澀谷公會堂宣布解散。",
+    "src": "https://realsound.jp/2017/12/post-141842.html",
+    "src2": "https://ja.wikipedia.org/wiki/BOØWY",
+    "from": "new"
+   },
+   {
+    "f": "1988 年 4 月東京巨蛋「LAST GIGS」告別演唱會。",
+    "src": "https://ja.wikipedia.org/wiki/BOØWY",
+    "src2": "https://en.wikipedia.org/wiki/Boøwy",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 空，有 3 份上線簡介（BOØWY／BEAT EMOTION／PSYCHOPATH），內容與本次查到的解散日期 1987 年 12 月 24 日一致，無衝突、未發現 pubIssues。搜尋 4 次：ja 維基、en 維基、WebSearch（解散）、Real Sound 專文；失敗請求 1 次（Natalie 403）。非獨立：J 與 E 同屬維基（不同語言條目）；R 為 Real Sound 專文（獨立）。單源，不放 facts：『1988 年成為史上第一組在同一年拿下三張 Oricon 冠軍專輯的男性藝人』（en 維基單源，寫作層若要寫須另驗）；LAST GIGS 為 4 月 4 至 5 日、門票 9.5 萬張十分鐘售罄（en 維基與搜尋摘要）；團名『belong nowhere, resemble no one』之說（en 維基單源）；BEAT EMOTION 與 PSYCHOPATH 皆破百萬（ja 維基與上線簡介，無第二來源網址）；『1 位になったら解散』方針與 1986 年 12 月 16 日長野市民會館公演後於飯店決定解散（Real Sound 單源，另有 note.com 部落格稱此為『說法』，不收）；『誰が何と言おうと日本で一番カッコいいバンド』為成員自述、不入 facts；1985 年移籍、2 年爆發（Real Sound 單源）；搜尋摘要稱 1986 年 4th album JUST A HERO 與〈B·BLUE〉掀起樂團熱潮，與上線簡介〈B・BLUE〉屬 BEAT EMOTION 先行單曲的說法有出入，未開頁查證，不入 facts 也不列 pubIssues。ja 維基稱『東京成軍』與 en 維基『高崎出身』，facts 寫『核心成員來自群馬縣高崎』。legacy 無後輩點名受影響的具名出處（en 維基只有『視覺系到重金屬都有人點名』泛稱），也無名人堂級共識句。人名照原文漢字。",
+  "pubIssues": []
+ },
+ {
+  "key": "boston",
+  "name": "Boston",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Boston 的核心是 MIT 出身的工程師 Tom Scholz，他先在自家的錄音室裡做出樣帶；主唱是 Brad Delp。",
+      "src": "https://en.wikipedia.org/wiki/Boston_(band)",
+      "src2": "https://www.britannica.com/topic/Boston-American-rock-group",
+      "from": "new"
+     },
+     {
+      "f": "1976 年的首張專輯《Boston》主要在 Scholz 家中的錄音室錄成，由 Scholz 與 Delp 完成。",
+      "src": "https://en.wikipedia.org/wiki/Boston_(album)",
+      "src2": "https://www.yahoo.com/entertainment/music/articles/50-years-ago-today-beloved-130000175.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Boston 把前衛搖滾的元素與硬搖滾、體育場搖滾的力道結合；Scholz 以精雕細琢的多軌吉他和聲為骨幹，Delp 的高音域是另一根支柱。",
+      "src": "https://en.wikipedia.org/wiki/Boston_(band)",
+      "src2": "https://www.britannica.com/topic/Boston-American-rock-group",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《Boston》（1976 年 8 月 25 日發行）累計取得 RIAA 17 倍白金認證，是美國銷量最高的首張專輯之一。",
+      "src": "https://en.wikipedia.org/wiki/Boston_(band)",
+      "src2": "https://www.yahoo.com/entertainment/music/articles/50-years-ago-today-beloved-130000175.html",
+      "from": "new"
+     },
+     {
+      "f": "《Boston》大半在 Scholz 家中的錄音室錄成，卻成為搖滾史上最暢銷的首張專輯之一。",
+      "src": "https://en.wikipedia.org/wiki/Boston_(album)",
+      "src2": "https://www.britannica.com/topic/Boston-American-rock-group",
+      "from": "new"
+     },
+     {
+      "f": "原主唱 Brad Delp 2007 年 3 月 9 日過世。",
+      "src": "https://en.wikipedia.org/wiki/Boston_(band)",
+      "src2": "https://ultimateclassicrock.com/brad-delp-suicide/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Boston 以發片間隔漫長聞名，Scholz 的完美主義與內部衝突是常被提到的原因。",
+      "src": "https://en.wikipedia.org/wiki/Boston_(band)",
+      "src2": "https://www.britannica.com/topic/Boston-American-rock-group",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1976 年 8 月 25 日首張專輯《Boston》發行，後來取得 RIAA 17 倍白金。",
+    "src": "https://en.wikipedia.org/wiki/Boston_(band)",
+    "src2": "https://www.yahoo.com/entertainment/music/articles/50-years-ago-today-beloved-130000175.html",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：維基稱 1975 年成立，Britannica 稱 1976 年出現（那一年是首張發行年），兩者不一致，facts 不寫成軍年"
+  ],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 空，上線簡介 1 張（Third Stage）。搜尋 7 次：維基 Boston（樂團）、Britannica、WebSearch（一個請求內帶兩段查詢，保守記 2 次）、Boston 專輯維基、Ultimate Classic Rock、Yahoo；失敗請求 1 次（Rock Hall 404）。非獨立：W 與 A 同屬維基；Y（Yahoo 轉載）、U、B 各自獨立。facts 裡『美國樂團史上賣得最快的首張專輯之一』：專輯維基寫『fastest-selling debut album for any American group at that time』，Britannica 寫『biggest-selling debut in rock history』（兩源口氣不同，寫作層請只寫『最暢銷的首張專輯之一』，不寫『史上最快』『第一』）。專輯維基另稱美國首張專輯銷量第二、僅次於 Guns N' Roses《Appetite for Destruction》（單源）；UCR 稱 Delp 與 Scholz 合作使首張成為史上第二暢銷首張、美國逾千萬張，數字不同，不收。單源，不放 facts：首張登 Billboard 200 第 3 名、在榜 138 週（Yahoo）；全球 7500 萬張、全球銷量榜第 63（維基）；Rockman 影響 Def Leppard 與 Journey（維基）；專輯入選《1001 Albums》與搖滾名人堂 Definitive 200 第 43 名（專輯維基，Rock Hall 頁 404 驗不到）；AllMusic Vik Iyengar 評語；6 張錄音室專輯跨 51 年（維基）；Tommy DeCarlo 2007 年起任主唱、2026 年 3 月 9 日過世（維基單源，未驗）；Delp 死因，不寫；1978《Don't Look Back》與 1986《Third Stage》登榜（Britannica 單源）。上線簡介 Third Stage 的說法（六年、MCA、Amanda 冠軍）與本次查到的內容無衝突，未發現 pubIssues。『Scholz 形容 Delp 能把人聲疊成近似管弦』出自 UCR 單源，已移出 facts。 修正：Scholz 自己彈多數樂器、成本只有數千美元、賣得最快為專輯維基單源，已不放 facts。",
+  "pubIssues": []
+ },
+ {
+  "key": "broadcast",
+  "name": "Broadcast",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Broadcast 1995 年在英格蘭伯明罕成立，核心是主唱 Trish Keenan 與貝斯手 James Cargill；兩人對 1960 年代美國迷幻樂團 The United States of America 的聲音著迷，決定自己走這條路。",
+      "src": "https://www.factmag.com/2015/02/19/essential-broadcast/",
+      "src2": "https://en.wikipedia.org/wiki/Broadcast_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Broadcast 的聲音是把 1960s 迷幻歌曲寫法與早期電子音樂、取自冷僻來源的取樣混在一起，並汲取 library music（資料庫配樂）與 BBC Radiophonic Workshop 的製作手法。",
+      "src": "https://en.wikipedia.org/wiki/Broadcast_(band)",
+      "src2": "https://www.factmag.com/2015/02/19/essential-broadcast/",
+      "from": "new"
+     },
+     {
+      "f": "Trish Keenan 是樂團的創作與概念核心，並與視覺藝術家 Julian House 合作多媒體計畫。",
+      "src": "https://www.factmag.com/2015/02/19/essential-broadcast/",
+      "src2": "https://thequietus.com/articles/05558-a-tribute-to-broadcast-s-trish-keenan-obituary",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Broadcast 常被歸入 hauntology（鬼魅懷舊）一類。",
+      "src": "https://en.wikipedia.org/wiki/Broadcast_(band)",
+      "src2": "https://thequietus.com/opinion-and-essays/anniversary/broadcast-the-noise-made-by-people-review/",
+      "from": "new"
+     },
+     {
+      "f": "2011 年 1 月，Keenan 在澳洲巡演染上 H1N1 後併發肺炎過世，享年 42 歲。",
+      "src": "https://en.wikipedia.org/wiki/Trish_Keenan",
+      "src2": "https://thequietus.com/articles/05558-a-tribute-to-broadcast-s-trish-keenan-obituary",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《The Noise Made by People》2000 年在 Warp 發行，之後是 2003 年的《Haha Sound》與 2005 年的《Tender Buttons》。",
+      "src": "https://thequietus.com/opinion-and-essays/anniversary/broadcast-the-noise-made-by-people-review/",
+      "src2": "https://en.wikipedia.org/wiki/Broadcast_(band)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Trish Keenan 逝世日：維基（Broadcast／Trish Keenan 條目）與 Warp 聲明的搜尋摘要指 2011 年 1 月 14 日，Quietus 悼文寫 1 月 17 日；兩源不一致，facts 只寫 2011 年 1 月、享年 42 歲，不寫日"
+  ],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 Broadcast、WebSearch（背景）、Fact Magazine Essential、維基 Trish Keenan、WebSearch（限網域，訃聞）、Quietus 悼文、Quietus 專輯 25 週年；失敗請求 3 次（Britannica 404、Warp 官網 403、Ciaran Ryan 頁內容為空），另有一次含 bbc／nytimes／pitchfork 的限網域搜尋因 400 失敗未計。非獨立：W 與 TK 同屬維基；QT 與 QA 同屬 The Quietus。legacy 第一條：Quietus 悼文支持『影響聽眾轉向 Radiophonic Workshop、ghost box 與 library music』，維基只列 hauntology 為評論給的曲風標籤，『把聽眾帶向…』實際是 Quietus 單句，故此條視為近單源；寫作層請寫成『被歸入 hauntology，Quietus 稱…』，不要寫成通論。單源，不放 facts：Haha Sound 是首張進美國榜的專輯（維基）；Sensateria 迷幻俱樂部相識、早期成員 Tim Felton／Roj Stevens／Steve Perkins（維基與 Fact 都列，成員名可用，但年份未驗）；Trish 出生 1968 年 9 月 28 日於伯明罕 Winson Green（Trish 維基與搜尋摘要）；Toro y Moi、Graham Coxon、Colin Meloy 公開悼念（Trish 維基單源）；Warp 聲明『an untimely, tragic loss』（Trish 維基單源）；2009 年與 The Focus Group 合作專輯、2013 年 Spell Blanket、Cargill 以 Keenan 留下的人聲完成最終專輯（Fact 單句）；維基稱樂團在 2024 年 9 月《Distant Call》後正式結束（維基單源，未驗）；與 Portishead、Stereolab 的比較（維基、Quietus 專輯文只提 Stereolab）；1996 年首支 EP《The Book Lovers》（Quietus 單源）；〈Come On Let's Go〉英國榜第 82 名（Quietus 單源）；Quietus 稱前三張為『near-perfect trio』（單源且為單一樂評觀點，不收）。Trish 悼文把 Broadcast 寫成四張錄音室專輯（2000 至 2009），維基稱五張，數字不一致，facts 不寫張數。人名照拉丁原文。 修正：『把聽眾帶向 Radiophonic Workshop、Ghost Box 與 library music』（Quietus 悼文單源）與 Keenan 冷靜疏離的唱腔（Fact 單源）已移出 facts；hauntology 奠基一說出自 Quietus 專輯文（單源，維基只給曲風標籤），寫作層請寫成『被歸入 hauntology 一類』即可，不要寫『奠基』。",
+  "pubIssues": []
+ },
+ {
+  "key": "burzum",
+  "name": "Burzum",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Burzum 是 Varg Vikernes 在挪威卑爾根（Bergen）於 1991 年創立的個人音樂企劃。",
+      "src": "https://en.wikipedia.org/wiki/Burzum",
+      "src2": "https://no.wikipedia.org/wiki/Varg_Vikernes",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Burzum 以簡約、重複的結構與刻意的 lo-fi 質地見稱，把黑金屬與 dark ambient 放在同一個聲音裡。",
+      "src": "https://en.wikipedia.org/wiki/Burzum",
+      "src2": "https://www.decibelmagazine.com/2011/04/25/buzrum-filosofem/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "英文維基稱 Burzum 是黑金屬史上最具影響力的團體之一；Decibel 則說《Filosofem》「來定義黑金屬」，聽起來卻和 Mayhem、Darkthrone、Emperor、Immortal 等同期挪威團幾乎不像。",
+      "src": "https://en.wikipedia.org/wiki/Burzum",
+      "src2": "https://www.decibelmagazine.com/2011/04/25/buzrum-filosofem/",
+      "from": "new"
+     },
+     {
+      "f": "《Filosofem》極簡、重複的作法，被認為影響了後來的黑金屬走向，包括孤立式黑金屬。",
+      "src": "https://en.wikipedia.org/wiki/Filosofem",
+      "src2": "https://www.decibelmagazine.com/2011/04/25/buzrum-filosofem/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Det som engang var》1992 年 4 月在卑爾根的 Grieg Hall 錄音，1993 年 8 月由 Burzum 自己的廠牌 Cymophane Productions 發行。",
+      "src": "https://en.wikipedia.org/wiki/Det_som_engang_var",
+      "from": "bank"
+     },
+     {
+      "f": "《Filosofem》1993 年 3 月錄音，因 Vikernes 1994 年入獄，直到 1996 年 1 月 31 日才發行。",
+      "src": "https://en.wikipedia.org/wiki/Filosofem",
+      "src2": "https://www.decibelmagazine.com/2011/04/25/buzrum-filosofem/",
+      "from": "new"
+     },
+     {
+      "f": "1994 年 Vikernes 被判謀殺與縱火教堂等罪，刑期 21 年。",
+      "src": "https://en.wikipedia.org/wiki/Burzum",
+      "src2": "https://no.wikipedia.org/wiki/Varg_Vikernes",
+      "from": "new"
+     },
+     {
+      "f": "Vikernes 2009 年獲釋。",
+      "src": "https://en.wikipedia.org/wiki/Burzum",
+      "src2": "https://no.wikipedia.org/wiki/Varg_Vikernes",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "en 維基摘要寫『1994 年被捕並被判刑』，no 維基列『原判決 1994 年』；逮捕年份兩處說法不同，facts 只寫 1994 年判決，不寫逮捕年"
+  ],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為 Det som engang var 的 MusicBrainz 與維基資訊框（來源網址完整，已取 1992 年 4 月 Grieg Hall 錄音與 1993 年 8 月 Cymophane 發行的 bank 條，與上線簡介一致，無衝突）。搜尋 6 次：en 維基 Burzum、no 維基 Varg Vikernes、WebSearch（背景）、Filosofem 維基、WebSearch（限網域，影響）、Decibel《Filosofem》名人堂條目；失敗請求 2 次（Guitar World 只回傳註冊頁、Invisible Oranges 403）。非獨立：W、N、F、DS 皆維基。本批特注：只收罪名、判刑年份與刑期、獲釋年等中性事實；其受害者、細節與其後言論與意識形態一概不收、不轉述。單源，不放 facts：Decibel 名人堂（第 75 號）排名；孤立式黑金屬代表（Leviathan、Xasthur）名單；『Filosofem 是最早的 depressive suicidal black metal 範例／DSBM 範本』（搜尋摘要，來自 Decibel 或 Invisible Oranges，兩者未同時開頁）；後輩點名名單（Deafheaven、Liturgy、Wolves in the Throne Room、Altar of Plagues，搜尋摘要來自維基）；獄中兩張純合成器 dark ambient《Dauði Baldrs》（1997）與《Hliðskjálf》（1999）（維基單源）；2018 年宣布終止企劃、2024 年再有新作（維基單源）；〈Dunkelheit〉曾在 MTV、VH1 播出、25 分鐘長曲入選電影《Gummo》配樂（Filosofem 維基單源）；Filosofem 錄音用立體聲擴大機與舊直升機耳麥人聲（維基單源）；專輯名意思與團名為托爾金『黑語』的『黑暗』（維基單源）；AllMusic 4/5。刑期與年份：en 維基『1994 年被判 21 年，2009 年獲釋』、no 維基『21 年、2009 年 5 月獲釋』，一致。『被判謀殺與縱火教堂等罪』：no 維基列謀殺、三起教堂縱火、縱火未遂與竊盜，en 維基列謀殺與多起教堂縱火，f 取共同的謀殺與縱火。建議寫作層對此段維持兩句內中性帶過，不寫細節、不做推介式評價。",
+  "pubIssues": []
+ }
+]
