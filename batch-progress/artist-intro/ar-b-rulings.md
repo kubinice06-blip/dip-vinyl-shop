@@ -142,3 +142,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 補洞 4 組開跑；派工加「請求標頭不得帶店主 email」。Burzum 刑案、Cannibal Corpse 禁售只收中性事實。
 - 補洞 g2／g3／g4 交件（各 10 位，QA 本組 0 警示）。薄格：Black Country, New Road 身世 none（只有維基單源）、Beach Fossils 與 CocoRosie 地位 none、Camera Obscura 地位單源。採用研究層的保守值：Boston 成軍年、black midi 吉他手離團年、Cem Karaca 喪失公民身分年、Celtic Frost Martin Eric Ain 逝世日、Broadcast 主唱逝世日都不寫確切值；Chris Stapleton《Traveller》首週名次採兩獨立源的第 14 名。
 - w2（g3+g4）派出，加特注：Burzum 只寫罪名、判決、刑期、獲釋年；Cannibal Corpse、Cradle of Filth 不描述歌詞或封面；成員逝世不寫死因；Stapleton 葛萊美座數不寫。
+- 補洞 g1 交件（QA 0 處）。929 失敗請求 7 次超上限，但失敗請求都沒取得內容，facts 不受影響，照收；929 標 thin。929 已上線兩張簡介（《也許像星星》《929同名專輯》）寫「2004 年吳志寧與黃玠成立」，與馬世芳專訪（2005 年兩人編制是志寧與嘟嘟）不一致 → 列入本機待改（建議只寫「吳志寧在大學時期組成」）；介紹正文不寫成軍年與共同創團者。
+- w1（g1+g2）派出。
