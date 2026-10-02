@@ -288,3 +288,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - **ar-b-025 上線**：40 位，reviewFixes 2。
 - 026 w1 審稿（2 處）：Nitzer Ebb 語序調整（「被稱為 EBM 的先驅」移到過世句之前）；Perfume「無限期休團」改「自年底起休團」（2025-09-21 宣布 2025 年底起コールドスリープ）。Douglas McCarthy 2025-06-11 過世、Perfume 休團皆經主線 WebSearch 核實（Rolling Stone、DJ Mag；中日スポーツ、TOWER RECORDS）。Stromae 父親只寫 1994 年過世。Perfume《Game》Oricon 榜首、ODESZA 榜位依在世者規則不寫。
 - 026 g3 交件（QA 本組 0）。thin：Trentemøller、Whitehouse。The Chainsmokers 失敗請求 6 次超限（含 2 次轉址），照收。衝突值不寫（Tiësto 起步年齡、Trentemøller 出生地與年、Whitehouse 結束年、Yello 創團先後）。Trentemøller 葛萊美提名未驗證不寫。pubIssues 0（Whitehouse《Erector》Peter McKay 職司單源待核）。
+- 026 g4 交件（QA 本組 0，四組齊）。thin：尾島由郎。Zodiac 銷量與成軍／解散年不寫；Brand Nubian 地位為弱來源。pubIssues 1（浜瀬元彦《Reminiscence》年份 1985／1986）→ 本機待核。w2（g3+g4）派出。
