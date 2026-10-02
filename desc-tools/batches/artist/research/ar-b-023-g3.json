@@ -303,7 +303,7 @@
   "name": "Jackie Mittoo",
   "slots": {
    "origin": {
-    "status": "bank",
+    "status": "gap",
     "facts": [
      {
       "f": "Jackie Mittoo 本名 Donat Roy Mittoo，1948 年 3 月 3 日生於牙買加，1990 年 12 月 16 日在加拿大多倫多過世，享年 42 歲。",
@@ -658,5 +658,89 @@
   "status": "full",
   "pubIssues": [],
   "notes": "補查 7 次：en 維基 Los Mirlos、es 維基 Los Mirlos、WebSearch（綜合）、Sounds and Colours 專文、UPI 報導（轉述 NPR Tiny Desk 稿）、Yahoo 轉載的 Coachella 專訪、en 維基 Mirlo's Dance；另 NPR 與 BIME 各 503 一次（不計入）。NPR 原文未能開頁，『NPR 稱 pioneers and innovators』一句由 UPI 轉引，已在 facts 標明出處主體。事實庫的 es 維基條目已重新驗證 1968 Los Saetas、Moyobamba、Jorge Rodríguez Grández 創團。非獨立：en 維基三條目（Los Mirlos、Peruvian cumbia、Mirlo's Dance）同站；UPI 與 Yahoo 為各自獨立的新聞稿；es 維基單源與其他互證。單源未收：『首個登上 Coachella 的秘魯樂團』（es 維基與 Yahoo 專訪皆稱 first，但屬『第一位』宣稱、拿不準有無反例，只收『2025 年登上 Coachella』）；Sounds and Colours 稱他們是『秘魯 cumbia（chicha）的基石之一』、吉他手 Danny Jhonston Lopez 對標誌聲音有貢獻（單源）；成團前身為 Los Saetas 以外的細節；Mexico 流行與 Epic 簽約、約 30 張錄音室專輯（es／en 維基單源）；Damas Gratis 翻唱其歌（es 維基單源）；紀錄片獲獎（Trujillo 影展最佳紀錄片，維基單源）屬影片獎項不收；多數宣稱的獎項、巡演國別不收。同名混卡：poolAlbums（El sonido selvático 1973、Los charapas de oro 1975、Tirense con la escoba 1976）皆為利馬 Infopesa 這團，無混卡。 1968 年 Jorge Rodríguez Grández 在 Moyobamba 先組 Los Saetas 只見 es 維基（事實庫），未收；樂團究竟在 Moyobamba 或利馬成立，各源口徑不一（UPI：Moyobamba 創立後遷利馬；Sounds and Colours：1973 年遷到利馬成團），故 facts 不寫成團地點與年份。"
+ },
+ {
+  "key": "los van van",
+  "name": "Los Van Van",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Los Van Van 1969 年 12 月 4 日在古巴哈瓦那成立，創辦人是貝斯手 Juan Formell。",
+      "src": "https://en.wikipedia.org/wiki/Los_Van_Van",
+      "src2": "https://es.wikipedia.org/wiki/Los_Van_Van",
+      "from": "new"
+     },
+     {
+      "f": "Formell 成軍前曾任 Elio Revé 的 charanga 樂團（Orquesta Revé）音樂總監，他相信把北美搖滾的元素注入 Revé 的編曲，就能抓住古巴年輕世代的想像。",
+      "src": "https://en.wikipedia.org/wiki/Los_Van_Van",
+      "src2": "https://es.wikipedia.org/wiki/Los_Van_Van",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Formell 發展出 songo 這種節奏：把 charanga 傳統的長笛與提琴，加上電吉他、爵士鼓，後來再加長號，揉進古巴與加勒比節奏，並融入搖滾與流行元素。",
+      "src": "https://www.afrocubaweb.com/vanvan.htm",
+      "src2": "https://es.wikipedia.org/wiki/Los_Van_Van",
+      "from": "new"
+     },
+     {
+      "f": "樂團在傳統 charanga 編制（長笛、弦樂、節奏組）之外，加進電貝斯、電吉他、鍵盤、長號，後來還有合成器與鼓機；afrocubaweb 形容 14 人編制同時像 charanga、salsa 大樂團與搖滾樂團。",
+      "src": "https://en.wikipedia.org/wiki/Los_Van_Van",
+      "src2": "https://www.afrocubaweb.com/vanvan.htm",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 Los Van Van 是革命後古巴最重要的音樂團體之一，AfroCubaWeb 稱它是古巴舞曲樂團公認的王者（the undisputed king of Cuban dance orchestras）。",
+      "src": "https://en.wikipedia.org/wiki/Los_Van_Van",
+      "src2": "https://www.afrocubaweb.com/vanvan.htm",
+      "from": "new"
+     },
+     {
+      "f": "樂團參與了 songo 與 timba 兩種古巴舞曲類型的發展；NG La Banda 等團後來採用他們的結構作法。",
+      "src": "https://en.wikipedia.org/wiki/Los_Van_Van",
+      "src2": "https://www.afrocubaweb.com/vanvan.htm",
+      "from": "new"
+     },
+     {
+      "f": "他們以《Llegó... Van Van (Van Van Is Here)》拿下 2000 年葛萊美獎的 Best Salsa Performance（當年類別名稱，後來改稱最佳 salsa 專輯；得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Salsa_Album",
+      "src2": "https://www.afrocubaweb.com/vanvan.htm",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫『拿下 2000 年葛萊美最佳 salsa 專輯』；葛萊美條目與 AfroCubaWeb 皆寫 2000 年（1999 年作品）得獎，當年類別名是 Best Salsa Performance（後改名 Best Salsa Album）。en 維基〈Los Van Van〉卻寫為 2000 年拉丁葛萊美最佳 salsa 專輯『提名』；拉丁葛萊美最佳 salsa 專輯條目亦列該專輯為 2000 年提名（得獎者 Celia Cruz）。兩個典禮並非同一場：美國葛萊美（2000 年 2 月 23 日）得獎、首屆拉丁葛萊美（2000 年 9 月）提名。採上線簡介（葛萊美得獎）並註明當年類別名。",
+   "en 維基與 es 維基對成立日皆為 1969 年 12 月 4 日；AfroCubaWeb 只寫 1969 年並稱另有鋼琴手 César Pedroso 共同創辦（單源，未收）。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Llegó... Van Van (Van Van Is Here)",
+    "claim": "拿下 2000 年葛萊美最佳 salsa 專輯",
+    "problem": "2000 年是美國葛萊美（非拉丁葛萊美），當年類別名為 Best Salsa Performance（該類別後來改稱 Best Salsa Album），寫成『最佳 salsa 專輯』與當年名稱不同；另 en 維基〈Los Van Van〉條目把它寫成 2000 年拉丁葛萊美提名，與葛萊美類別條目、AfroCubaWeb 衝突（拉丁葛萊美 2000 年最佳 salsa 專輯另有提名紀錄、得獎者為 Celia Cruz）。建議簡介寫『2000 年葛萊美 Best Salsa Performance』或加上屆次。",
+    "src": "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Salsa_Album"
+   }
+  ],
+  "notes": "補查 8 次：en 維基 Los Van Van、es 維基 Los Van Van、en 維基拉丁葛萊美最佳 salsa 專輯、en 維基第 42 屆葛萊美（未見）、en 維基 Grammy Best Tropical Latin Album（未見）、en 維基 Grammy Best Salsa Album、WebSearch（得獎確認）、AfroCubaWeb；另 en 維基兩個頁面（Llegó 專輯條目、第 1 屆拉丁葛萊美）404 兩次（不計入）。事實庫研究稿只有 MusicBrainz 目錄欄位，三格皆靠補查。葛萊美得獎：Grammy Best Salsa Album 條目與 AfroCubaWeb 兩源一致（搜尋摘要另引 Grammy 官方 2/23/00，未開頁）；『第 42 屆』由 2000 年 2 月 23 日典禮推得，第 42 屆條目本身沒列該類別，寫作層可只寫 2000 年。非獨立：en 維基與 es 維基同站不同語言；Grammy Best Salsa Album 為 en 維基另一條目。單源未收：『古巴第一個使用合成器與鼓機的團』『第一批用電貝斯、電子風琴的團』（en／es 維基，屬『第一』宣稱、拿不準有無反例）；Formell 2014 年過世（維基單源，且與生卒年規則相關，不寫）；Formell 2013 年獲拉丁葛萊美卓越獎（en 維基單源）；Formell 1942 年生於哈瓦那 Pueblo Nuevo、受父親與 Elvis、披頭四影響（AfroCubaWeb 單源）；樂團名稱『Van Van』的語源（en 維基：可能譯為『他們去、他們去』，措辭不確定）；Changuito 與 songo 的關係（es 維基提及，AfroCubaWeb 反而強調 Formell 本人實驗，口徑不同）；1980 年代國際巡演國別（es 維基單源）。同名混卡：poolAlbums（Sandunguera 1986、Songo 1988、Llegó... Van Van 1999）皆為哈瓦那這團，無混卡。"
  }
 ]

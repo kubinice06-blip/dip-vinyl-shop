@@ -261,3 +261,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 022 w2 審稿（1 處）：Marisa Monte 刪「第一位獲 Premio Tenco 的巴西女性」（首次宣稱）。Celia Cruz「首位登上美國硬幣的非裔拉丁裔人物」屬美國鑄幣局官方表述，照准。
 - **ar-b-022 上線**：40 位，reviewFixes 1。
 - 023 g2 交件。thin：Augustus Pablo。生年衝突不寫（Pablo、Burning Spear、Isaacs、Fairuz）。Buju Banton 只寫服刑與 2018 年出獄。pubIssues 2（Dennis Brown《Wolf & Leopards》稱號出處；《No Man Is an Island》錄音年齡）→ 本機待核；Hamza El Din《Escalay》Reich／Riley 受影響說單源待核。w1（g1+g2）派出（派工檔因單引號斷行重產一次，首支代理開跑即停）。
+- 023 g3 交件（QA 本組 0）。全 full；thin：Horace Andy、Irakere、Johnny Osbourne（地位單薄）。衝突值不寫（Irakere 葛萊美年、Osbourne 生年、Los Mirlos 成軍年、Mittoo 出生地與移居年、LKJ Golden PEN 年）。單源未收：Horace Andy 2023 Icon Award、J Balvin「Coachella 首位拉丁裔 headliner」。pubIssues 1（Los Van Van《Llegó... Van Van》葛萊美類別名當年為 Best Salsa Performance）→ 本機待核。
