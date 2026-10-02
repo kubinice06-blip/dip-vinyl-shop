@@ -297,3 +297,6 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - **流程**：十批先一次切卡單（`cut/<批>.txt` 取自 progress keys）並跑 `artist-extract.mjs --lean`。各批特注改放 scratchpad `notes/<批>.txt`，由 notes10.sh 帶入。
 - **C 級審稿深度**：計畫書 §7-4 未定案，比照 A／B 級逐位審（較嚴的一邊，可逆）。C 級裁定另開 `ar-c-rulings.md`。
 - **合作型與編制名稱**（「某某 Quartet／Trio」「A, B & C」）：沿用 §7-3 建議，以卡上字串為一位，以領隊或搭檔為主體，寫明是哪一個編制名義。
+
+### ar-b-027
+- g1 交件（QA 本組 0）。thin：Busdriver、Danny Brown、Denzel Curry、Dilated Peoples、DMX、Eric B. & Rakim。生年皆維基單源，不寫。單源或主詞不符未收：Del 後輩點名（核對不到）、Dizzee Rascal「第二位水星獎饒舌手」、Rakim 個人的 Berklee 名人堂、DJ Babu 個人 DMC 獎。IAM 成軍年兩說，不寫。pubIssues 0。
