@@ -286,3 +286,8 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 025 w1 審稿（2 處）：冨田勲 刪「四項葛萊美提名」與「首位獲葛萊美提名的日本人」（首次宣稱兩源非獨立），壓回 259；Above & Beyond「兩度入圍」改「曾入圍」（在世者累計）。Ace of Base 2024 年入選瑞典音樂名人堂經主線 WebSearch 核實（theneedledrop）。Bruce Haack 放寬至 274 照准。
 - 025 w2 審稿無修正。Kim Petras「最佳流行二人組／團體演唱第一位公開跨性別女性得主」屬廣泛報導的官方表述，照准。Major Lazer 改具名引 Switch、Kruder & Dorfmeister 寫明出自維也納觀光推廣，照准。Fever Ray 全文無性別代名詞。
 - **ar-b-025 上線**：40 位，reviewFixes 2。
+- 026 w1 審稿（2 處）：Nitzer Ebb 語序調整（「被稱為 EBM 的先驅」移到過世句之前）；Perfume「無限期休團」改「自年底起休團」（2025-09-21 宣布 2025 年底起コールドスリープ）。Douglas McCarthy 2025-06-11 過世、Perfume 休團皆經主線 WebSearch 核實（Rolling Stone、DJ Mag；中日スポーツ、TOWER RECORDS）。Stromae 父親只寫 1994 年過世。Perfume《Game》Oricon 榜首、ODESZA 榜位依在世者規則不寫。
+- 026 g3 交件（QA 本組 0）。thin：Trentemøller、Whitehouse。The Chainsmokers 失敗請求 6 次超限（含 2 次轉址），照收。衝突值不寫（Tiësto 起步年齡、Trentemøller 出生地與年、Whitehouse 結束年、Yello 創團先後）。Trentemøller 葛萊美提名未驗證不寫。pubIssues 0（Whitehouse《Erector》Peter McKay 職司單源待核）。
+- 026 g4 交件（QA 本組 0，四組齊）。thin：尾島由郎。Zodiac 銷量與成軍／解散年不寫；Brand Nubian 地位為弱來源。pubIssues 1（浜瀬元彦《Reminiscence》年份 1985／1986）→ 本機待核。w2（g3+g4）派出。
+- 026 w2 審稿無修正。The Avalanches 第 16 屆 Australian Music Prize（ABC Double J、NME）、Vitalic《Disco Boy》2024 年 Prix Lumières 最佳電影音樂（本人官方帳號、Lumières 條目）經主線 WebSearch 核實。Tiësto「第一位在奧運開幕式現場演出的 DJ」有兩個獨立來源，照准；DJ Mag 百大不寫。Trentemøller 2007 年丹麥音樂獎年度製作人屬獎項事實，照准。
+- **ar-b-026 上線**：40 位，reviewFixes 2。**第六段（017–026）十批全部上線。**
