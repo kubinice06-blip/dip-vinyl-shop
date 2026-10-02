@@ -253,3 +253,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 022 g2 交件（QA 本組 0）。全 full。pubIssues 3（蔡琴《此情可待》〈最後一夜〉金馬獎得主是詞曲作者、獎名待核；蔡琴《出塞曲》「隔年」首作；陳慧嫻《永遠是你的朋友》「唯一」宣稱無來源）→ 本機待核。w1（g1+g2）派出。
 - **流程補記**：ar-b-023～026 先前只切了 progress、沒有 cut 卡單與事實庫，派出的 023 g1 讀到空名單後立即停掉重派；已補 `cut/ar-b-023～026.txt` 與 `artist-extract.mjs --lean` 事實庫。
 - 022 g3 交件（QA 本組 0）。thin：Black Uhuru、Dead Can Dance。年份未定不寫：Celia & Johnny 國家錄音登記年、〈Amor eterno〉入選年、Cesária Évora 葛萊美年。pubIssues 3（Cesária Évora〈Mar Azul〉突破年；Goran Bregović〈Time of the Gypsies〉與 Bijelo Dugme 解散時序；Fania All-Stars 洋基球場日期）→ 本機待核。
+- 022 g4 交件（QA 0，四組齊）。全 full。衝突值（Adé 出生地、Ladysmith 成軍年、Makeba 葛萊美／護照／Polar 年、Keita Victoires 年）不寫。w2（g3+g4）派出。

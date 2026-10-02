@@ -677,5 +677,298 @@
     "status": "full",
     "pubIssues": [],
     "notes": "事實庫有 c98-b 的 es 維基一條與 c108-b 的 MusicBrainz 一條（後者只是 catno，不用）；origin、sound、legacy 三格都補查，用 6 次（維基 en、Britannica、維基 es、維基 Cantata、WebSearch、維基 El Pueblo Unido 專輯），上限內；失敗 2 次（musicapopular.cl 403×2，不計入）。pool 四張專輯與此人吻合，無同名混卡。非獨立：絕大多數 src 與 src2 是維基不同條目或不同語言版；Britannica 是這團唯一非維基的完整來源。〈El pueblo unido〉：作曲 Ortega、Quilapayún 參與詞作出自英文維基團條，專輯條目寫為雙方合作；Britannica 該頁未提這首。單源未收：〈El pueblo unido〉在伊朗、加州、柏林示威都被唱起，並影響 2004 年烏克蘭橘色革命的歌曲（維基專輯單源）；Allende 政府時期被任命為文化大使、1973 年 2 月 Viña del Mar 音樂節演出引發爭議（es 維基單源）；1966 年在第一屆全國民俗音樂節拿下 La Guitarra de Oro（en 維基單源）；2017 年被封為智利音樂的 Figura Fundamental、並獲總統獎（es 維基單源）；搜尋摘要稱團體是 Nueva Canción Chilena 最大的象徵、與人民團結政府最貼近（出處為智利網站，未開頁）；Jara 與團體約三年後各走各路，Eduardo Carrasco 接任團長（搜尋摘要）；2015 年商標歸 Carrasco 一派的內部分裂（不收）。Víctor Jara 的死亡經過不收。《Cantata》清唱劇的 Cortázar 1978 年改寫文本與 Advis 公開抗議，維基 Cantata 條目寫法與上線簡介一致。"
+  },
+  {
+    "key": "rosalía",
+    "name": "ROSALÍA",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "ROSALÍA 1992 年 9 月 25 日出生，在加泰隆尼亞的 Sant Esteve Sesrovires 長大；13 歲因為聽到 Camarón de la Isla 的唱片而愛上佛朗明哥。",
+            "src": "https://es.wikipedia.org/wiki/Rosal%C3%ADa_(cantante)",
+            "src2": "https://www.dazeddigital.com/music/article/42076/1/rosalia-el-mal-querer-interview",
+            "from": "new"
+          },
+          {
+            "f": "她在加泰隆尼亞高等音樂學院（ESMUC）修讀，以《El mal querer》作為畢業計畫，並以優等畢業。",
+            "src": "https://en.wikipedia.org/wiki/El_mal_querer",
+            "src2": "https://es.wikipedia.org/wiki/Rosal%C3%ADa_(cantante)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年的首張專輯《Los Ángeles》與製作人 Raül Refree 合作，重新處理佛朗明哥老曲。",
+            "src": "https://en.wikipedia.org/wiki/Rosal%C3%ADa",
+            "src2": "https://es.wikipedia.org/wiki/Rosal%C3%ADa_(cantante)",
+            "from": "new"
+          },
+          {
+            "f": "《El mal querer》（2018）以 13 世紀奧克語小說《Flamenca》為藍本，每首歌對應小說的一章；她與 El Guincho 共同製作，把佛朗明哥與流行、都會音樂與電子製作接在一起。",
+            "src": "https://en.wikipedia.org/wiki/El_mal_querer",
+            "src2": "https://www.dazeddigital.com/music/article/42076/1/rosalia-el-mal-querer-interview",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《El mal querer》在 2019 年拿下拉丁葛萊美年度專輯（得獎），2020 年第 62 屆葛萊美再拿下最佳拉丁搖滾、都會或另類專輯（得獎）。",
+            "src": "https://www.grammy.com/news/rosalia-wins-album-year-el-mal-querer-2019-latin-grammy-awards/",
+            "src2": "https://www.grammy.com/news/rosalia-wins-best-latin-rock-urban-or-alternative-album-el-mal-querer-2020-grammys/",
+            "from": "new"
+          },
+          {
+            "f": "《Motomami》（2022）在第 23 屆拉丁葛萊美拿下四項大獎，包括年度專輯（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Rosal%C3%ADa",
+            "src2": "https://es.wikipedia.org/wiki/Rosal%C3%ADa_(cantante)",
+            "from": "new"
+          },
+          {
+            "f": "她以佛朗明哥為底的做法也引發文化挪用的爭論，批評聲音來自部分羅姆（吉普賽）人社群。",
+            "src": "https://en.wikipedia.org/wiki/Rosal%C3%ADa",
+            "src2": "https://es.wikipedia.org/wiki/Rosal%C3%ADa_(cantante)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2025 年 11 月的《LUX》是第四張錄音室專輯，與倫敦交響樂團合錄，由 Daníel Bjarnason 指揮。",
+            "src": "https://en.wikipedia.org/wiki/Lux_(Rosal%C3%ADa_album)",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "《El mal querer》拿下 2019 年拉丁葛萊美年度專輯（得獎）與 2020 年葛萊美最佳拉丁搖滾、都會或另類專輯（得獎）。",
+        "src": "https://www.grammy.com/news/rosalia-wins-album-year-el-mal-querer-2019-latin-grammy-awards/",
+        "src2": "https://www.grammy.com/news/rosalia-wins-best-latin-rock-urban-or-alternative-album-el-mal-querer-2020-grammys/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生地：en 維基寫生於 Sant Cugat del Vallès、在 Sant Esteve Sesrovires 長大；es 維基寫生於 Sant Esteve Sesrovires；不一致，facts 只寫『在 Sant Esteve Sesrovires 長大』。",
+      "《El mal querer》曲數：en《El mal querer》條寫 11 首各對應一章；其他來源未覆核，facts 不寫曲數與章數。"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫有 c111-a 的 LUX 研究稿兩條（取其一為 era，from: bank），其餘三格從零查，用 8 次（維基 en、維基 es、WebSearch×2、維基 El mal querer、Daze 訪談、grammy.com 兩篇新聞）；失敗 2 次（Britannica 404、grammy.com 藝人頁 404，不計入）。pool 四張專輯與此人吻合，無同名混卡。非獨立：en 與 es 維基視為不同條目；Daze 訪談與維基各自獨立。ROSALÍA 在世，銷量、串流與獎座累計數不寫。獎項主詞：全是 ROSALÍA 本人／其專輯得獎；《El mal querer》的拉丁葛萊美年度專輯是專輯獎，歌曲〈Malamente〉另得兩項拉丁葛萊美（2018，維基單源，未收）。2019 與 2020 兩項由 grammy.com 兩篇新聞各自證實一項，兩條皆實讀；年度專輯在第 20 屆拉丁葛萊美（2019 年 11 月）、葛萊美在第 62 屆（2020 年 1 月）。《Motomami》四項拉丁葛萊美含年度專輯：en 與 es 維基都寫，非獨立；en 維基另稱她是第一位兩度以主要藝人身分拿下該獎的女性（單源、涉『第一』，未收）。單源未收：en 維基稱 Guardian 的 Petridis 說《El mal querer》是『a unique new talent 的名片』（維基轉引，單源）；Rolling Stone 榜單名次不收；《El mal querer》影響 Kacey Musgraves 與 C. Tangana，並引發大學論文（維基單源）；es 維基稱她是首位獲葛萊美最佳新人提名的西班牙歌手（單源，且『第一』）、最常提到的師承為 Camarón、James Blake、Kate Bush 與 La Niña de los Peines（es 單源）；Daze 訪談稱她『我想找電子聲響與傳統音樂之間可能的橋』（單源，可作引述用）；en 維基稱 Los Ángeles 在拉丁葛萊美獲最佳新人提名（grammy.com 稿稱 2017 年最佳新人提名，只是提名，不收）；佛朗明哥挪用爭論的另一面（NYT 2019 稱批評不公平、她稱這是教育與機會不均的政治問題）是 en 維基的轉述，單源，不收。LUX 條目 bank 條 src 為維基 LUX 條目，沿用事實庫；LUX 的曲目、語言數與上線簡介一致，無衝突。上線簡介 LUX 未見錯誤。"
+  },
+  {
+    "key": "salif keita",
+    "name": "Salif Keita",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Salif Keita 1949 年 8 月 25 日生於馬利的 Djoliba 村，是馬利帝國開創者松迪亞塔．凱塔（Sundiata Keita）的後裔，卻出身貧窮的農家。",
+            "src": "https://www.britannica.com/biography/Salif-Keita-Malian-singer-songwriter",
+            "src2": "https://afroculture.net/salif-keita-21-things-you-need-to-know-about-malis-golden-voice/",
+            "from": "new"
+          },
+          {
+            "f": "他天生白化症，被傳統視為不祥之兆，遭家人與社群排斥；在曼丁哥社會，音樂是 griot 的職業，貴族出身的他投身音樂更違反身分上的禁忌。",
+            "src": "https://www.britannica.com/biography/Salif-Keita-Malian-singer-songwriter",
+            "src2": "https://afroculture.net/salif-keita-21-things-you-need-to-know-about-malis-golden-voice/",
+            "from": "new"
+          },
+          {
+            "f": "他 18 歲（1967 年）搬到首都巴馬科，在夜總會演唱並加入 Rail Band，1970 年代初轉往象牙海岸加入 Les Ambassadeurs。",
+            "src": "https://en.wikipedia.org/wiki/Salif_Keita",
+            "src2": "https://www.britannica.com/biography/Salif-Keita-Malian-singer-songwriter",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他加入的 Rail Band 以「電聲化的曼丁哥傳統加上非洲—加勒比流行樂」聞名；他後來移居巴黎，把曼丁哥音樂與爵士、節奏藍調等國際流行風格混合，Britannica 稱他開創了 Afropop 舞曲類型。",
+            "src": "https://www.britannica.com/biography/Salif-Keita-Malian-singer-songwriter",
+            "src2": "https://afroculture.net/salif-keita-21-things-you-need-to-know-about-malis-golden-voice/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1991 年的《Amen》獲葛萊美最佳世界音樂專輯提名（提名，未得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Amen_(Salif_Keita_album)",
+            "src2": "https://afroculture.net/salif-keita-21-things-you-need-to-know-about-malis-golden-voice/",
+            "from": "new"
+          },
+          {
+            "f": "他被視為非洲 Afro-pop 的奠基人物之一，有「非洲金嗓」的稱號。",
+            "src": "https://afroculture.net/salif-keita-21-things-you-need-to-know-about-malis-golden-voice/",
+            "src2": "https://www.britannica.com/biography/Salif-Keita-Malian-singer-songwriter",
+            "from": "new"
+          },
+          {
+            "f": "2005 年他成立 Salif Keita Global Foundation，推動白化症者的權益；2009 年的專輯《La différence》談白化症遭遇的歧視，收益用來支持基金會。",
+            "src": "https://www.britannica.com/biography/Salif-Keita-Malian-singer-songwriter",
+            "src2": "https://afroculture.net/salif-keita-21-things-you-need-to-know-about-malis-golden-voice/",
+            "from": "new"
+          },
+          {
+            "f": "《La différence》為他拿下 Victoires de la musique 的世界音樂類獎（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Salif_Keita",
+            "src2": "https://www.salifkeitamusic.com/salif-keita",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2018 年他以《Un autre blanc》宣布退出錄音、轉向人道事務，2025 年 4 月以《So Kono》回歸。",
+            "src": "https://www.britannica.com/biography/Salif-Keita-Malian-singer-songwriter",
+            "src2": "https://en.wikipedia.org/wiki/Salif_Keita",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1991 年《Amen》獲葛萊美最佳世界音樂專輯提名（提名，未得獎）。",
+        "src": "https://en.wikipedia.org/wiki/Amen_(Salif_Keita_album)",
+        "src2": "https://afroculture.net/salif-keita-21-things-you-need-to-know-about-malis-golden-voice/",
+        "from": "new"
+      },
+      {
+        "f": "2005 年成立 Salif Keita Global Foundation，推動白化症者的權益。",
+        "src": "https://www.britannica.com/biography/Salif-Keita-Malian-singer-songwriter",
+        "src2": "https://afroculture.net/salif-keita-21-things-you-need-to-know-about-malis-golden-voice/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "搬到巴馬科年份：en 維基與 afroculture 寫 1967，WebSearch 摘要寫 1968，Britannica 只寫 18 歲；採 1967。",
+      "移居巴黎：Britannica 寫 1980 年代初，afroculture 與 WebSearch 摘要寫 1984 年（Les Ambassadeurs 解散後），與上線簡介 Amen 的『1984 年移居巴黎』一致；兩源不一致，facts 不寫年份。",
+      "Victoires de la musique 年份：en 維基寫 2010 年的世界音樂類獎，官方傳記寫 2009 年；不一致，facts 不寫年份。",
+      "Soro：Britannica 與官方傳記稱 1987 年的 Soro 是『首張』，維基稱它是『國際突破之作』，且 Amen 是『第三張錄音室專輯』；facts 不寫『首張』。"
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫無研究稿，三格從零查，用 8 次（維基 en、維基 fr（僅是同名消歧頁，無傳記內容）、WebSearch×2、Britannica、官方網站傳記、afroculture、維基 Amen）；失敗請求 3 次（Britannica 舊網址 404、All About Jazz 403 等，不計入）。pool 四張專輯與此人吻合；注意 fr 維基有同名足球員（1946–2023 的 Salif Keita、Ballon d'Or 得主），本層一條都未收，無同名混卡。非獨立：官方網站傳記的段落與 Britannica 高度雷同，視為同源，故未拿它當唯一第二源（只用在 Victoires 條，該條 en 維基寫 2010、官方寫 2009，年份已不寫）。單源未收：Britannica 稱 1977 年 Guinea 總統 Sékou Touré 授予他國家勳章（單源）；官方傳記稱 2010 年被非洲聯盟任命為和平大使（單源）；afroculture 稱《Amen》是第一位獲葛萊美提名的非洲樂團領袖（afroculture 與 WebSearch 摘要重述，但為『第一』類宣稱，且摘要稱提名年份與專輯年份有出入，不收）；afroculture 稱他的嗓音沙啞、詩意歌詞、自學吉他、因視力無法當老師（單源）；官方稱累計 5 次葛萊美提名（在世者不寫）；Rail Band 原為政府贊助的樂團（WebSearch 摘要，未開頁）；『Golden Voice of Africa』稱號本層兩源（afroculture、WebSearch 摘要）都只是稱號，未查到是誰授予、哪年起，寫作層應寫『被稱為』，不寫成正式頭銜。上線簡介核對：Amen 的『登上告示牌 World Albums 榜冠軍』『入圍葛萊美最佳世界音樂專輯』與維基 Amen 條目一致；『Joe Zawinul 製作、Mango 發行』一致；Moffou 的『第十張錄音室專輯』未核。 Amen 的 Joe Zawinul 製作、Mango 發行、World Albums 榜冠軍只見維基 Amen 條目（單源），已不放 facts。"
+  },
+  {
+    "key": "selena",
+    "name": "Selena",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Selena Quintanilla 1971 年 4 月 16 日生於德州 Lake Jackson，是墨西哥裔美國人家庭的么女；父親 Abraham Quintanilla Jr. 看出她的天分，組了家族樂團 Selena y Los Dinos，哥哥 A.B. 彈貝斯、姊姊 Suzette 打鼓。",
+            "src": "https://www.britannica.com/biography/Selena-American-singer",
+            "src2": "https://www.biography.com/musicians/selena",
+            "from": "new"
+          },
+          {
+            "f": "她從小在美國以英語長大，是靠父親教她用拼音式的方法背誦才學會用西班牙語演唱；她進入的 Tejano 是個男性主導、常拒絕女歌手演出邀約的西班牙語樂種。",
+            "src": "https://en.wikipedia.org/wiki/Selena",
+            "src2": "https://www.biography.com/musicians/selena",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Selena y Los Dinos 演奏的 Tejano 是德州的拉丁舞曲，混合墨西哥與鄉村等多種風格；Grammy.com 稱她把其他音樂風格融進 Tejano、做成自己的聲音，在不失傳統的情況下讓這個樂種現代化。",
+            "src": "https://www.britannica.com/biography/Selena-American-singer",
+            "src2": "https://www.grammy.com/news/selena-forever-remembering-latin-pop-icon-25-years-later/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1994 年她以現場專輯《Live!》拿下葛萊美最佳墨西哥裔美國人專輯（Best Mexican/American Album，得獎），是第一位拿下該獎的女性 Tejano 歌手。",
+            "src": "https://www.britannica.com/biography/Selena-American-singer",
+            "src2": "https://www.grammy.com/news/selena-forever-remembering-latin-pop-icon-25-years-later/",
+            "from": "new"
+          },
+          {
+            "f": "她被稱為「Tejano 音樂女王」，被認為替女性在這個男性主導的樂種打開了路，並把 Tejano 推向主流市場。",
+            "src": "https://en.wikipedia.org/wiki/Selena",
+            "src2": "https://www.grammy.com/news/selena-forever-remembering-latin-pop-icon-25-years-later/",
+            "from": "new"
+          },
+          {
+            "f": "Grammy.com 與德州公共廣播 TPR 都指出，她在美國出生、以英語為主、卻以西班牙語演唱的雙文化身分，成了後來美國出生的拉丁裔藝人與年輕拉丁裔女性的認同範本。",
+            "src": "https://www.grammy.com/news/selena-forever-remembering-latin-pop-icon-25-years-later/",
+            "src2": "https://www.tpr.org/arts-culture/2025-03-30/a-next-generation-of-latinas-embrace-selena",
+            "from": "new"
+          },
+          {
+            "f": "1995 年她遇害，得年 23 歲；德州州長 George W. Bush 宣布每年 4 月 16 日為德州的「Selena Day」。",
+            "src": "https://en.wikipedia.org/wiki/Selena",
+            "src2": "https://www.biography.com/musicians/selena",
+            "from": "new"
+          },
+          {
+            "f": "她身後獲頒好萊塢星光大道星星，也獲美國國家藝術勳章（National Medal of Arts），由姊姊 Suzette 代表領受。",
+            "src": "https://www.biography.com/musicians/selena",
+            "src2": "https://www.latintimes.com/immortal-legacy-selena-quintanilla-recognized-national-medal-arts-white-house-563131",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1995 年的《Dreaming of You》在她身後發行，首週登上告示牌 200 大專輯榜冠軍，是拉丁裔女歌手的專輯第一次做到。",
+            "src": "https://www.britannica.com/biography/Selena-American-singer",
+            "src2": "https://en.wikipedia.org/wiki/Selena",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1994 年《Live!》拿下葛萊美最佳墨西哥裔美國人專輯（得獎），是第一位拿下該獎的女性 Tejano 歌手。",
+        "src": "https://www.britannica.com/biography/Selena-American-singer",
+        "src2": "https://www.grammy.com/news/selena-forever-remembering-latin-pop-icon-25-years-later/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Tejano Music Award 年份與年齡：en 維基寫 1987 年拿到女歌手獎、Britannica 寫 1986 年 15 歲；不一致，facts 不寫。",
+      "Selena 的年齡開始組團：Britannica 寫 9 歲父親組團、biography.com 寫約 10 歲成為主唱；facts 不寫年齡。",
+      "Live! 的葛萊美年份：en 維基寫 1994 年，grammy.com 寫 1994 年獎項給 1993 年現場專輯，Britannica 寫 1994 年，一致，採 1994（典禮年）。"
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫無研究稿，三格從零查，用 8 次（維基 en、Britannica、WebSearch、grammy.com 25 週年稿、TPR、latintimes、biography.com、維基 National Medal of Arts），上限內。pool 四張專輯（Ven Conmigo、Entre a mi mundo、Amor Prohibido、Dreaming of You）與此人吻合，無同名混卡。遇害只寫年份，不點名加害者、不收案情；享年 23 歲兩源一致（en 維基、Britannica）。非獨立：Selena Day 與 Hollywood 星光大道等屬同一類百科型來源。好萊塢星光大道：biography.com 寫 2017 年 11 月，latintimes 只列『星光大道星星』無年份，WebSearch 摘要也寫 2017 年 11 月（未開頁），facts 不寫年份。國家藝術勳章：latintimes 寫 2022–2023 年度、2024 年 10 月宣布、Biden 在白宮頒贈、姊姊 Suzette 代領；維基 National Medal of Arts 列在 2023 年名單；facts 只寫獲頒，維基是第三源，未列於 src 欄。《Dreaming of You》首週登上告示牌 200 大專輯榜冠軍、為拉丁裔女歌手首次：Britannica 寫明；en 維基寫『debuted atop the Billboard 200』，未明寫『第一次』；『第一』類宣稱兩源之外沒有找到反例，但因維基未明寫，寫作層若用『第一次』請標 Britannica；已把 facts 寫成與 Britannica 一致，若審稿覺得不穩可刪『是拉丁裔女歌手的專輯第一次做到』。單源未收：Billboard 2020 年把她列在『史上最偉大拉丁裔藝人』第 3 名（WebSearch 摘要，雜誌榜單名次不收）；Billboard Latin Music Hall of Fame、Grammy 特別功績獎、終身成就獎（latintimes 單源）；2022 年 Smithsonian 收藏她 1994 年 Tejano Music Awards 的黑色皮夾克、1997 年電影由 Jennifer Lopez 主演（biography.com 單源）；『Tejano Madonna』稱號（en 維基單源）；Houston Astrodome 1995 年演唱會（TPR 單源，且接近死亡事件）；累計銷量與認證倍數（不寫）。上線簡介核對：Entre a mi mundo『Regional Mexican 榜一連坐了八個月』與 en 維基『eight consecutive months』一致；Amor Prohibido 的『曾祖母禁忌戀情』『97 週』與各認證倍數本層未核。"
   }
 ]
