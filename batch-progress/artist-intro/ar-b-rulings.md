@@ -185,3 +185,8 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### 第四段收尾
 - ar-b-013／014／015 共 120 位上線（分支累計見 manifest）。本機待改的已上線簡介疑點：Gene Clark《No Other》、Gorilla Biscuits《Start Today》、Leb i Sol、Phil Collins《...But Seriously》（年度單曲→年度唱片）、Primal Scream《XTRMNTR》年份、Robert Calvert 逝世地、The Black Skirts《201》、THE BLUE HEARTS 成軍成員 → 皆在 audits/ARTIST-PUB-ISSUES.md。
+
+## 第五段（2026-10-02，店主：「再一批」）
+
+### ar-b-016（rock，40 位）
+- 補洞特注：同名常見照 poolAlbums 確認（X、Traffic、toe、Thursday、Thrice、UFO、夢幻、Third Quadrant、White Heaven、Wipers、Ulver）；台灣團金曲獎主詞分清；五月天、U2 不寫累計數字；Hendrix、Цой、hide、TAIJI 只寫年份。完成後比照 #19 開 PR 併入 main。
