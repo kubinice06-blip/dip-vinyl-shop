@@ -216,3 +216,7 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - **ar-b-017 上線**：40 位，reviewFixes 3。
 - g2 交件（QA 本組 0）。thin：Bridget St John（失敗請求 5 次超限，未取得內容）、Damien Rice、Dando Shaft、Darren Korb。pubIssues 2（Charlie Rich《The Fabulous Charlie Rich》簽約年；Dwight Yoakam《Guitars, Cadillacs》移居年與 EP 發行說法）→ 本機待核。w1（g1+g2）派出。
 - g3 交件。thin：Gracie Abrams、Jessica Pratt。John Renbourn 搜尋 9 次超限 1 次（該次只記衝突、未取用）。pubIssues 2（《Down to the Cider Mill》「廠牌第一張唱片」錯，County 第一張是 1964 年 501 號；Kryl《Bratříčku》印量口徑）→ 本機待改。John Renbourn《Sir John Alot》舊簡介含「英文維基」字樣，修正包 audits/pub-fix/APPLY-desc.json 已涵蓋（待本機套用）；Brassens《Le Gorille》「1955 年歐洲一台開播」待核。
+- 018 w1 交件，審稿無修正（Tyler Childers「第一座葛萊美」主線查證屬實）。
+
+### ar-b-019
+- g1 交件（QA 本組 0）。thin：Phoebe Bridgers、Phosphorescent。Odetta 失敗請求 6 次超限，未取得內容，照收。Phoebe Bridgers 2024 葛萊美主體是 boygenius；Ray LaMontagne 葛萊美署名含 the Pariah Dogs。pubIssues 3（Nic Jones《The Noah's Ark Trap》調弦說法；Randy Travis《Storms of Life》首次／銷量措辭；Ray LaMontagne《God Willin'》得獎時間）→ 本機待核。
