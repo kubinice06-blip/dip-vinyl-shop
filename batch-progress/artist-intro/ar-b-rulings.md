@@ -321,3 +321,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 028 w2 審稿無修正。G-DRAGON 2025-10-23 第 16 屆大眾文化藝術獎玉冠文化勳章經主線 WebSearch 核實（亞洲經濟、Star News）；「最年輕」不寫。Clipse 放寬至 264 照准。Heavy D & The Boyz「Uptown 第一組簽約藝人」、Faith Evans「Bad Boy 第一位女歌手」各有兩源，照准。
 - **ar-b-028 上線**：40 位，reviewFixes 2。
 - 029 w1 審稿無修正。Kehlani〈Folded〉第 68 屆（2026）葛萊美最佳 R&B 歌曲經主線 WebSearch 核實（Oaklandside、grammy.com）。MF DOOM 271、KRS-One 263 放寬照准；Subroc 只寫「在這段期間過世」。John Legend「第一位 EGOT 非裔男性」屬廣泛報導，照准。
+- 029 g4 交件（QA 本組 0，四組齊）。thin：People Under the Stairs、PNL、Pusha T、RJD2。Queen Latifah「《Black Reign》第一張金唱片女性個人饒舌專輯」只准「搖滾名人堂稱」。單源未收：Pete Rock「最偉大製作人之一」、Percy Mayfield 藍調名人堂。Percy Mayfield 生年 1920／1922 不寫。pubIssues 0。w2（g3+g4）派出。

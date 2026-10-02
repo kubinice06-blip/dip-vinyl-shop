@@ -184,5 +184,290 @@
     "failedFetches": 5,
     "status": "full",
     "notes": "事實庫為空，從零查。成功請求 7 次：維基 Shaggy (musician)、WebSearch（生平與葛萊美）、Encyclopedia.com、WebSearch（Order of Distinction）、牙買加 Gleaner 2007 報導、維基第 38 屆葛萊美、WebSearch（Hot 100 冠軍）。失敗請求 5 次（Britannica 404、BlackPast 403、grammy.com 404、兩次 Billboard 被導向 tollbit 付費牆 307／402），超過上限 4 次，照實記載。同名檢查：poolAlbums 為《Boombastic》《Midnite Lover》《Christmas in the Islands》，皆為牙買加的 Shaggy，無混卡。非獨立標註：葛萊美那條的第一源是維基第 38 屆條目、第二源 Encyclopedia.com（獨立）；其餘多條以維基 Shaggy 條目搭 Encyclopedia.com，兩者獨立。2007 年那條的第二源（維基）僅在導言標示 CD 與搜尋摘要提到 2007，年份與等級主要由 Gleaner 支撐。單源未收進 facts：（1）藝名來自《Scooby Doo》卡通角色（Encyclopedia.com 與搜尋摘要；摘要來源頁未開）；（2）服役期間每逢週末開 18 小時車從北卡基地到紐約錄音（Encyclopedia.com，單源）；（3）《Boombastic》在 Billboard 雷鬼榜連續 30 週居冠（Encyclopedia.com，單源）；（4）〈Angel〉也登上 Hot 100 冠軍（維基與搜尋摘要，未開第二頁，單源）；（5）維基稱他隸屬第 10 陸戰團野戰砲兵連（單源）；（6）Shaggy and Friends 慈善演唱會捐助 Bustamante 兒童醫院（搜尋摘要，單源）。在世者累計獎座數與銷量不寫（搜尋摘要提到八次葛萊美提名、兩座，不收）。"
+  },
+  {
+    "key": "skepta",
+    "name": "Skepta",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Joseph Adenuga，1982 年 9 月 19 日生於倫敦，成長於北倫敦的 Tottenham，父母是奈及利亞移民。",
+            "src": "https://en.wikipedia.org/wiki/Skepta",
+            "src2": "https://www.thefamouspeople.com/profiles/skepta-33322.php",
+            "from": "new"
+          },
+          {
+            "f": "他是家中長子，弟弟 Jme 同樣是 grime 音樂人，後來兩人一起在 Boy Better Know 的陣容裡。",
+            "src": "https://en.wikipedia.org/wiki/Skepta",
+            "src2": "https://www.nme.com/news/music/skepta-36-1199427",
+            "from": "new"
+          },
+          {
+            "f": "起步是 Tottenham 的 grime 團體 Meridian Crew 的 DJ，在海盜電台上露面；之後短暫加入 Roll Deep，再與弟弟 Jme 共同創立 Boy Better Know。",
+            "src": "https://en.wikipedia.org/wiki/Skepta",
+            "src2": "https://www.thefamouspeople.com/profiles/skepta-33322.php",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2016 年 9 月 15 日在倫敦 Hammersmith Apollo，《Konnichiwa》奪下水星獎（得獎），入圍對手包括 David Bowie 的《Blackstar》與 Radiohead。",
+            "src": "https://www.nme.com/news/music/skepta-36-1199427",
+            "src2": "https://en.wikipedia.org/wiki/Konnichiwa_(Skepta_album)",
+            "from": "new"
+          },
+          {
+            "f": "他是繼 2003 年 Dizzee Rascal《Boy in da Corner》之後，第二位拿到水星獎的 grime MC。",
+            "src": "https://www.nme.com/news/music/skepta-36-1199427",
+            "src2": "https://www.factmag.com/2016/09/15/skepta-wins-2016-mercury-prize/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2016 年《Konnichiwa》奪得水星獎，是 Dizzee Rascal 之後第二位拿到水星獎的 grime MC。",
+        "src": "https://www.nme.com/news/music/skepta-36-1199427",
+        "src2": "https://www.factmag.com/2016/09/15/skepta-wins-2016-mercury-prize/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Boy Better Know 成立年：維基 Skepta 條目寫 2005 年，thefamouspeople 寫 2006 年；兩源不一致，facts 不寫成立年。",
+      "Skepta 出生地：維基寫 London，thefamouspeople 寫 Tottenham；facts 寫『生於倫敦、成長於 Tottenham』。",
+      "Factmag 同一篇的前後文在摘要中說法不一（原句 first grime MC to win since Dizzee Rascal 2003），意思等於第二位 grime 得主，與 NME 的 second grime MC 一致。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 5,
+    "status": "thin",
+    "notes": "事實庫為空，從零查。成功請求 8 次：維基 Skepta、WebSearch（水星獎）、NME 水星獎報導、WebSearch（生平與 Boy Better Know）、維基《Konnichiwa》、thefamouspeople 傳記、DIY 水星獎報導（未支撐新事實，只確認頒獎細節）、Factmag 水星獎報導。失敗請求 5 次（NPR 503、AllMusic 403、Britannica 404，另有一次限定網域的 WebSearch 被拒），超過上限 4 次，照實記載。同名檢查：poolAlbums 為《Konnichiwa》《Microphone Champion》《Ignorance is Bliss》，皆為 Tottenham 的 Skepta，無混卡。第二源品質：thefamouspeople 是通俗傳記站，只用來對照出生日期、父母背景與起步經歷，品質偏弱，寫作層寫到出生地要保守。sound 格查不到兩源支持的內容；單源未收：（1）《Konnichiwa》他自己擔任監製、除三首外全由他製作，並在離開前廠牌後獨立經由 Boy Better Know 發行，2016 年 5 月 6 日（維基，單源）；（2）父親屬 Yoruba、母親屬 Igbo 背景（維基，單源）；（3）Debrett's 2017 年英國最具影響力人物名單入選（維基，單源）；（4）《Konnichiwa》在英國專輯榜初登場第 2 名、Drake 的支持（維基，單源）；（5）維基《Konnichiwa》稱樂評讚揚它在 grime 復興中的角色（單源）；（6）搜尋摘要稱他『推動 grime 從地下走向流行榜』，疑似出自 AllMusic，頁面 403 未讀到，不收；（7）維基稱他得過 Ivor Novello 年度詞曲作者獎，搜尋結果找不到佐證，疑似有誤，不收，且 Brit 提名次數與 Ivor 獎項主詞待查；（8）水星獎同屆入圍者 Kano（維基《Konnichiwa》）、Anohni 與 Savages（NME 搜尋摘要）只收 Bowie 與 Radiohead（兩源皆有）。名單年榜名次（Apple Music、NME 年度榜等）屬雜誌榜單不收。 另：NME 寫領獎時 Boy Better Know 成員含弟弟 JME 在台上，Factmag 沒寫，只算單源，不收。"
+  },
+  {
+    "key": "snoop dogg",
+    "name": "Snoop Dogg",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Calvin Cordozar Broadus Jr.，1971 年 10 月 20 日生於加州長灘。",
+            "src": "https://en.wikipedia.org/wiki/Snoop_Dogg",
+            "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+            "from": "new"
+          },
+          {
+            "f": "小時候在長灘的浸信會教會唱詩、彈鋼琴。",
+            "src": "https://en.wikipedia.org/wiki/Snoop_Dogg",
+            "src2": "https://www.biography.com/musicians/snoop-dogg",
+            "from": "new"
+          },
+          {
+            "f": "他與表親 Nate Dogg、Warren G 組成團體 213 錄 demo；其中一首傳到 Dr. Dre 手上，Dre 邀他試音（維基寫是 Warren G 把卡帶交給 Dre）。",
+            "src": "https://en.wikipedia.org/wiki/Snoop_Dogg",
+            "src2": "https://www.biography.com/musicians/snoop-dogg",
+            "from": "new"
+          },
+          {
+            "f": "高中畢業後曾因古柯鹼持有被捕並入獄；Britannica 稱他拖長語調的歌詞，靈感來自早年與執法單位的接觸。",
+            "src": "https://en.wikipedia.org/wiki/Snoop_Dogg",
+            "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Doggystyle》承接 Dr. Dre《The Chronic》（1992）所建立的西岸聲音與 G-funk 路線；Snoop 在《The Chronic》上貢獻甚多。",
+            "src": "https://en.wikipedia.org/wiki/Doggystyle",
+            "src2": "https://www.biography.com/musicians/snoop-dogg",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Doggystyle》1993 年 11 月 23 日由 Death Row 與 Interscope 發行，首週即登上美國 Billboard 200 冠軍。",
+            "src": "https://en.wikipedia.org/wiki/Doggystyle",
+            "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+            "from": "new"
+          },
+          {
+            "f": "維基《Doggystyle》條目稱此專輯幫助 G-funk 被主流聽眾認識，讓西岸嘻哈在 1990 年代初中期成為主導力量；Britannica 稱他是西岸嘻哈的核心人物，他的西岸俚語與誇張的語氣進入美國主流文化。",
+            "src": "https://en.wikipedia.org/wiki/Doggystyle",
+            "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+            "from": "new"
+          },
+          {
+            "f": "2018 年 11 月 19 日在好萊塢星光大道獲得第 2651 顆星，典禮在 El Capitan Theater 舉行。",
+            "src": "https://www.upi.com/Entertainment_News/2018/11/19/Snoop-Dogg-earns-Hollywood-Walk-of-Fame-star/7821542675043",
+            "src2": "https://www.thefader.com/2018/11/19/snoop-dogg-hollywood-walk-of-fame-acceptance-speech",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1992 年他先在 Dr. Dre 的單曲〈Deep Cover〉與專輯《The Chronic》上登場，隔年才推出自己的首張專輯《Doggystyle》。",
+            "src": "https://www.britannica.com/biography/Snoop-Dogg",
+            "src2": "https://en.wikipedia.org/wiki/Doggystyle",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1992 年在 Dr. Dre 的〈Deep Cover〉與《The Chronic》登場。",
+        "src": "https://www.britannica.com/biography/Snoop-Dogg",
+        "src2": "https://en.wikipedia.org/wiki/Doggystyle",
+        "from": "new"
+      },
+      {
+        "f": "1993 年首張專輯《Doggystyle》首週登上 Billboard 200 冠軍。",
+        "src": "https://en.wikipedia.org/wiki/Doggystyle",
+        "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+        "from": "new"
+      },
+      {
+        "f": "2018 年獲好萊塢星光大道第 2651 顆星。",
+        "src": "https://www.upi.com/Entertainment_News/2018/11/19/Snoop-Dogg-earns-Hollywood-Walk-of-Fame-star/7821542675043",
+        "src2": "https://www.thefader.com/2018/11/19/snoop-dogg-hollywood-walk-of-fame-acceptance-speech",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Britannica 與維基都寫 Doggystyle 首週登上 Billboard 200 冠軍；Britannica 另寫『第一張一出道就登上 Billboard 200 冠軍的首作』，屬『第一位／最早』類宣稱，只見 Britannica 單源、未做反例檢查，facts 只寫登頂，不寫『第一』。",
+      "事實庫的《Tha Last Meal》研究稿與上線簡介（盤名涵義、No Limit 最後一張、Doggy Style 第一張、Billboard 200 最高第 4 名）彼此一致，本層不引用該專輯層級事實。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫研究稿只有《Tha Last Meal》一張的專輯層級資料（MusicBrainz 版本、維基廠牌沿革、樂評引文），沒有生平，故三格靠補查。成功請求 8 次：維基 Snoop Dogg、WebSearch（星光大道）、UPI、Britannica、Fader、維基《Doggystyle》、WebSearch（213 與 demo）、Biography.com；失敗請求 3 次（Variety 與 Billboard 類被導向 tollbit 付費牆、Ebony 403、Hypebeast 回傳空頁），在上限內。同名檢查：poolAlbums 為《Doggystyle》《Tha Doggfather》《Tha Last Meal》，皆為長灘的 Snoop Dogg，無混卡。第二源非獨立之處：『星光大道』兩源（UPI、Fader）獨立；『Doggystyle 登頂』第一源為維基專輯條目、第二源 Britannica，獨立；『高中後入獄』的第二源 Britannica 只寫 incarcerated 與歌詞靈感，案由（古柯鹼持有）只見維基，寫作層不要寫案由細節，只寫被捕入獄。單源未收進 facts：（1）維基稱他曾是 Rollin' 20s Crips 成員（單源，且涉幫派，不收）；（2）維基稱母親替他取小名 Snoopy，Biography.com 也寫了（母親取名的由來，兩源皆有但屬閒筆，未收進 facts，可由寫作層視需要用）；（3）維基稱他『常被視為史上最偉大的饒舌歌手之一，協助定義 G-funk 與 gangsta rap』（單源，且屬維基自述）；（4）維基《Doggystyle》稱樂評視它為 1990 年代最重要的專輯之一（單源）；（5）Britannica 稱他拖長語調的歌詞是招牌（單源）；搜尋摘要稱 Dre 被他『長灘式的拖長腔』打動，來源頁未開；（6）銷量與首週張數屬在世者累計銷量，不寫；（7）搜尋摘要稱他就讀 Long Beach Polytechnic High School（單源，未開頁）。星光大道類別『饒舌、演員、製作人、企業家與慈善家』只見 UPI，Fader 只寫獲星，寫作層以『獲星』為準、不細列類別。"
+  },
+  {
+    "key": "stormzy",
+    "name": "Stormzy",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Michael Owuo Jr.，1993 年生於南倫敦的 Croydon 一帶，有迦納血統（維基寫母親是迦納人）。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "from": "new"
+          },
+          {
+            "f": "他 11 歲開始 MC。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2014 年前後他靠〈Wicked Skengman〉系列 freestyle 在地下圈受到注意，這系列是在經典 grime 節拍上自由饒舌，並放上 YouTube。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年 2 月 24 日首張專輯《Gang Signs & Prayer》以自家 #Merky Records 獨立發行，初登場即登上英國專輯榜冠軍，是第一張登上該榜冠軍的 grime 專輯。",
+            "src": "https://en.wikipedia.org/wiki/Gang_Signs_%26_Prayer",
+            "src2": "https://www.britannica.com/biography/Stormzy",
+            "from": "new"
+          },
+          {
+            "f": "2018 年 2 月 21 日的 Brit Awards，《Gang Signs & Prayer》拿下英國年度專輯。",
+            "src": "https://www.abc.net.au/triplej/news/stormzy-wins-album-of-the-year-brit-awards/9473394",
+            "src2": "https://en.wikipedia.org/wiki/Gang_Signs_%26_Prayer",
+            "from": "new"
+          },
+          {
+            "f": "2019 年他在 Glastonbury 音樂節壓軸演出，維基與 Britannica 稱他是首位在該音樂節壓軸的英國饒舌歌手，PAPER 與倫敦博物館稱他是首位黑人英國獨唱藝人壓軸；演出時穿 Banksy 設計的防刺背心。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.papermag.com/stormzy-glastonbury-2019",
+            "from": "new"
+          },
+          {
+            "f": "他與企鵝蘭登書屋旗下的 Heinemann 合作創立出版品牌 #Merky Books（2018 年宣布），另設立劍橋大學黑人學生獎學金。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年首張專輯《Gang Signs & Prayer》；2018 年 Brit Awards 得獎；2019 年 Glastonbury 壓軸。",
+            "src": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "src2": "https://en.wikipedia.org/wiki/Stormzy",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2017 年《Gang Signs & Prayer》成為第一張登上英國專輯榜冠軍的 grime 專輯。",
+        "src": "https://en.wikipedia.org/wiki/Gang_Signs_%26_Prayer",
+        "src2": "https://www.britannica.com/biography/Stormzy",
+        "from": "new"
+      },
+      {
+        "f": "2018 年《Gang Signs & Prayer》拿下 Brit Awards 英國年度專輯。",
+        "src": "https://www.abc.net.au/triplej/news/stormzy-wins-album-of-the-year-brit-awards/9473394",
+        "src2": "https://en.wikipedia.org/wiki/Gang_Signs_%26_Prayer",
+        "from": "new"
+      },
+      {
+        "f": "2019 年在 Glastonbury 音樂節壓軸演出。",
+        "src": "https://en.wikipedia.org/wiki/Stormzy",
+        "src2": "https://www.papermag.com/stormzy-glastonbury-2019",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生地：維基寫 Thornton Heath（Croydon 的郊區），倫敦博物館寫 Norbury, Croydon；兩源不一致，facts 只寫『南倫敦的 Croydon 一帶』。",
+      "Glastonbury 的『第一』：維基與 Britannica 寫首位壓軸的英國饒舌歌手；PAPER 與倫敦博物館寫首位黑人英國獨唱藝人。兩種版本的主詞不同，facts 並列、各自歸屬來源，寫作層擇一並標出處，不寫成單一絕對的『第一位』。『第一』類宣稱反例檢查：美國的 Jay-Z 2008 年曾壓軸，所以必須限定『英國』。",
+      "『第一張登上英國專輯榜冠軍的 grime 專輯』：維基、Britannica、倫敦博物館三處一致，未見反例。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫為空，從零查。成功請求 8 次：維基 Stormzy、WebSearch（Glastonbury）、PAPER、維基《Gang Signs & Prayer》、WebSearch（榜單與 Brit Awards）、倫敦博物館、triple j（ABC）、Britannica；失敗請求 1 次（brits.co.uk 403，未取得，未計入）。同名檢查：poolAlbums 為《Gang Signs & Prayer》《Heavy Is the Head》《This Is What I Mean》，皆為 Stormzy，無混卡。第二源注意：Glastonbury 那條的 Britannica 內容只見於 Britannica 摘要頁（文字被截斷，但開頭『first British rapper to headline』可讀）；『是否也是 Brit 英國男獨唱藝人得主』：triple j 寫 2018 Brit Awards 他得 Male Solo Artist 與 Album of the Year，搜尋摘要也提到，但第二源只有搜尋摘要，未收進 facts，主詞為 Stormzy 本人，單源（triple j）。單源未收：（1）維基稱他就讀 Harris Academy South Norwood（倫敦博物館寫 Harris Federation School，不同寫法）；（2）倫敦博物館稱他 2015 年的 freestyle〈Shut Up〉是突破作並登上榜單第 8 名（單源）；（3）維基稱《Gang Signs & Prayer》客座包含 Wretch 32、Ghetts、J Hus 等（單源）；（4）Britannica 稱他以渾厚的倫敦口音念 verse（單源）；（5）倫敦博物館稱他學歷與先前在煉油廠工作的經歷（單源）；（6）維基稱他的 Cambridge 獎學金涵蓋兩名學生的學費與最多四年生活補助（單源，細節不收）；（7）Merky FC 2022 年計畫（單源）。專輯銷量與『首週 68,000 張』屬銷量，不寫；Brit 提名次數不寫。"
   }
 ]
