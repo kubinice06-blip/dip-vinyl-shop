@@ -335,3 +335,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 ### ar-b-031
 - g1 交件（QA 本組 0）。全 full。衝突值不寫：Toscanini 紐約愛樂起年、Britten 奧爾德堡音樂節創辦年、Pärt 電台任職年、Giulini 離任年、Elfman 出生地、Lipatti 生日與最後獨奏會日期。Kleiber 人生細節只收兩源一致處；BBC Music Magazine 票選不收。Lipatti 疾病與死因不寫。pubIssues 2（Budapest String Quartet《Ravel/Debussy》「三十五年」與 1940–1967 不符；《Mozart: Haydn Quartets》國會圖書館樂器委託年 1938／1939）→ 本機待核。
 - 031 g2 交件（QA 本組 0）。thin：Frans Brüggen、Fritz Wunderlich（地位 none）。Georges Prêtre 失敗請求 5 次超限，照收。任期與日期不一致者不寫（Szell、Barbirolli、Ansermet）。du Pré 疾病、死因與過世年不寫。pubIssues 0。w1（g1+g2）派出。
+- 030 w2 審稿（2 處）：Jerry Goldsmith「1976 年拿下奧斯卡」改「以《The Omen》拿下」（該片 1976 年上映，頒獎在 1977 年）；鷺巣詩郎《新・哥吉拉》改台灣片名《正宗哥吉拉》。Herrmann AFI 名次比照 Goldsmith 不寫。Lloyd Webber 的《貓》《歌劇魅影》用台灣通行譯名，照准。
+- **ar-b-030 上線**：40 位，reviewFixes 4。
