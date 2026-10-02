@@ -580,5 +580,385 @@
   "pubIssues": [],
   "status": "full",
   "notes": "成功請求 7 次：維基、Britannica、WebSearch（訃聞與影響）、YourClassical（NPR 系統）、Fact 雜誌訃文、NYS Music 訃文、CapRadio 懷念專文；失敗 1 次未計：NPR（503）。poolAlbums 三張（Ghostdance、Deep Listening、Accordion & Voice）都是 Pauline Oliveros，無同名混卡。\n注意：YourClassical 與 CapRadio 都是 NPR 系統稿件，非完全獨立（sound 第 2 條）；Fact 與 NYS Music 兩篇訃文行文接近，可能共用通訊稿，也請視為半獨立。\n事實庫原有 origin 條目（九歲、1988 年 deep listening 提出、1981 年辭 UCSD 終身教職等）多為維基單源，其中 1981 年離開 UCSD 本層補到 NYS Music 佐證；『1988 年提出 deep listening』只見維基（Britannica、Fact 只談 1989 專輯與 1971 年 Sonic Meditations），不放 facts；上線簡介寫的『1988 年才提出』與維基一致，沒有反證。\n未收（單源）：師從 Robert Erickson、1962 年 Gaudeamus 國際作曲家獎（維基單源）；Britannica 稱 1971 年 Sonic Meditations 奠定 deep listening 概念、1985 年成立 Pauline Oliveros Foundation 並於 2005 年改名 Deep Listening Institute、獲 Guggenheim 與 NEA 與 ASCAP 肯定（Britannica 單源，且 ASCAP 獎項細節未查）；2001 年起任 Rensselaer 傑出研究教授（NYS Music 單源）；公開的女同志身分與與 IONE 的長期合作（維基單源）；搜尋摘要稱她參與 Terry Riley《In C》首演（Fact 有寫，維基與 Britannica 摘要沒寫，且屬『首演』類，不收）；Steve Smith 談她對歌劇的女性主義詮釋（CapRadio 單源）；搜尋摘要稱她的作品與氛圍音樂並行、預示 John Luther Adams（出處不明）。\n事實庫 era 原有一條『Accordion & Voice 是她掛名的第一張獨奏唱片』沒有查到旁證，本層未收；上線簡介仍保留該說法，請主線留意（見 pubIssues 空白是因為未發現錯誤，只是未能驗證）。"
+ },
+ {
+  "key": "philippe herreweghe",
+  "name": "Philippe Herreweghe",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Philippe Herreweghe 生於比利時根特（Ghent），先在音樂院學鋼琴，同時在根特大學讀醫學與精神醫學。",
+      "src": "https://en.wikipedia.org/wiki/Philippe_Herreweghe",
+      "src2": "https://www.harmoniamundi.com/en/artistes/philippe-herreweghe/",
+      "from": "new"
+     },
+     {
+      "f": "1970 年他還在讀醫科時，與根特大學的同學一起成立 Collegium Vocale Gent。",
+      "src": "https://www.harmoniamundi.com/en/artistes/philippe-herreweghe/",
+      "src2": "https://en.wikipedia.org/wiki/Collegium_Vocale_Gent",
+      "from": "new"
+     },
+     {
+      "f": "Nikolaus Harnoncourt 與 Gustav Leonhardt 注意到他的做法，邀他與 Collegium Vocale Gent 參與 Bach 清唱劇全集的錄音。",
+      "src": "https://en.wikipedia.org/wiki/Philippe_Herreweghe",
+      "src2": "https://www.collegiumvocale.com/en/ensemble/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的巴洛克詮釋走歷史演奏路線，講求活力與修辭：萊比錫巴哈音樂節的介紹稱之為有活力、依歷史知識而來、重視修辭的做法，Collegium Vocale Gent 官方稱之為有活力、重真實性、重修辭。",
+      "src": "https://www.bachfestleipzig.de/en/bachfest/herreweghe-philippe",
+      "src2": "https://www.collegiumvocale.com/en/ensemble/",
+      "from": "new"
+     },
+     {
+      "f": "Collegium Vocale Gent 很快就以德國巴洛克音樂、尤其是 Bach 的聲樂作品為專長；該團 2000 年迎來投身 Bach 的第三十個年頭。",
+      "src": "https://en.wikipedia.org/wiki/Collegium_Vocale_Gent",
+      "src2": "https://www.harmoniamundi.com/en/artistes/philippe-herreweghe/",
+      "from": "new"
+     },
+     {
+      "f": "為了涵蓋文藝復興到當代的曲目，他另外成立 La Chapelle Royale 與 Orchestre des Champs-Élysées 等團。",
+      "src": "https://en.wikipedia.org/wiki/Philippe_Herreweghe",
+      "src2": "https://www.harmoniamundi.com/en/artistes/philippe-herreweghe/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Collegium Vocale Gent 的官方介紹稱該團在巴洛克音樂的革新中扮演開路角色；維基稱它是最早採用巴洛克演奏新觀念的人聲團體之一。",
+      "src": "https://www.collegiumvocale.com/en/ensemble/",
+      "src2": "https://en.wikipedia.org/wiki/Collegium_Vocale_Gent",
+      "from": "new"
+     },
+     {
+      "f": "1990 年歐洲音樂媒體票選他為年度音樂人物（Musical Personality of the Year）；1993 年他與 Collegium Vocale Gent 獲任命為法蘭德斯文化大使；1997 年獲魯汶天主教大學榮譽博士。",
+      "src": "https://www.harmoniamundi.com/en/artistes/philippe-herreweghe/",
+      "src2": "https://www.collegiumvocale.com/en/ensemble/",
+      "from": "new"
+     },
+     {
+      "f": "他 2003 年獲法國榮譽軍團勳章，2010 年獲萊比錫市頒授巴哈獎章（Bach-Medaille），表彰他作為巴哈詮釋者的貢獻。",
+      "src": "https://en.wikipedia.org/wiki/Philippe_Herreweghe",
+      "src2": "https://www.bachfestleipzig.de/en/bachfest/herreweghe-philippe",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Collegium Vocale Gent 1970 年成立；1990 年代錄製了十二卷的 Bach 清唱劇。",
+      "src": "https://en.wikipedia.org/wiki/Collegium_Vocale_Gent",
+      "src2": "https://www.collegiumvocale.com/en/ensemble/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2010 年獲萊比錫市巴哈獎章。",
+    "src": "https://www.bachfestleipzig.de/en/bachfest/herreweghe-philippe",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "受封爵位年份兩源不一致：維基寫 2000 年由 King Albert II 授予騎士封號，Harmonia Mundi 寫 2003 年由比利時國王封為騎士；facts 不寫這項。Légion d'honneur 2003 年兩源一致，等級（Chevalier）只見 Harmonia Mundi，facts 不寫等級。",
+   "上線簡介寫『1993 年 6 月 Herreweghe 以一人一聲部錄下全作』：事實庫研究稿只寫 Ensemble vocal européen 1993 年 6 月錄音，一人一聲部的編制本層沒查到來源，建議主線核對。"
+  ],
+  "searches": 7,
+  "failedFetches": 1,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "成功請求 7 次：維基 Herreweghe、WebSearch（生平與獎項）、Harmonia Mundi 藝人頁、Collegium Vocale Gent 官網、維基 Collegium Vocale Gent、WebSearch（萊比錫巴哈獎章）、萊比錫巴哈音樂節藝人頁；失敗 1 次未計：德文維基 Bach-Medaille（404）。poolAlbums 三張（St. John Passion、Schütz Musikalische Exequien、Lassus Lagrime）皆為 Herreweghe 的錄音，無同名混卡。\n兩源非完全獨立：Collegium Vocale Gent 官網與 Harmonia Mundi 簡介可能出自同一份官方生平稿；維基 Collegium Vocale Gent 條目亦與官網措辭相近。\n未收（單源）：維基稱他『被當代主要 Bach 學者視為歷史演奏、古樂器運動的奠基人之一』（維基單源，原文為 regarded by leading Bach scholars today as a founding father of the Baroque authentic practice, original-instrument movement，來源出處在維基內，未逐頁核對）；出生日 1947 年 5 月 2 日（維基單源）；1977 年在巴黎成立 La Chapelle Royale、1991 年成立 Orchestre des Champs-Élysées（維基單源）；Ensemble Vocal Européen 專攻文藝復興複音音樂（維基單源）；錄音逾 60 張主要為 Harmonia Mundi（維基）與『近六十張』（Harmonia Mundi），數字不同不收；1982 至 2002 年任 Saintes 音樂節藝術總監、1994 年 Officier des Arts et Lettres、1991 年歐洲年度音樂人（Harmonia Mundi 單源）；2017 年根特大學榮譽博士、2021 年 Ultima 終身成就獎（官網單源，且屬較新事件）；維基稱 Collegium Vocale 小編制、獨唱與合唱由同批歌手擔任，並稱其『透明的聲音』享譽全球（維基單源）。"
+ },
+ {
+  "key": "quartetto italiano",
+  "name": "Quartetto Italiano",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Quartetto Italiano 1945 年成軍，首演在 Carpi，當時團名是 Nuovo Quartetto Italiano；創團成員是第一小提琴 Paolo Borciani、第二小提琴 Elisa Pegreffi、中提琴 Lionello Forzanti 與大提琴 Franco Rossi，中提琴後來換成 Piero Farulli。",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano",
+      "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/quartetto-italiano",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的曲目涵蓋奧地利與德國作品、五個世紀的義大利音樂，另有 Debussy、Ravel 等；評價特別集中在 Debussy、Ravel 與貝多芬的詮釋上。",
+      "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/quartetto-italiano",
+      "src2": "https://www.warnerclassics.com/release/prima-la-musica",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1951 年他們首度訪美，作曲家兼樂評 Virgil Thomson 評他們是「The finest string quartet, unquestionably, that our century has known」；維基記這段話刊在 1951 年 11 月 5 日的《紐約先驅論壇報》。",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano",
+      "src2": "https://www.warnerclassics.com/release/prima-la-musica",
+      "from": "new"
+     },
+     {
+      "f": "1977 年送上太空的 Voyager 金唱片收錄的圖像裡，有一張是 Quartetto Italiano；NASA 的金唱片內容頁列有「String Quartet (Quartetto Italiano)」這一項。",
+      "src": "https://science.nasa.gov/mission/voyager/golden-record-contents/images/",
+      "src2": "https://en.wikipedia.org/wiki/Quartetto_Italiano",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1945 年成軍，首演在 Carpi。",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano",
+      "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/quartetto-italiano",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1951 年 Virgil Thomson 稱他們是該世紀所知無疑最優秀的弦樂四重奏。",
+    "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Farulli 接任中提琴的年份：維基與搜尋摘要寫 1947 年（2 月），encyclopedia.com 寫 1946 年；上線簡介《Schubert D. 887》採維基的 1947 年。facts 不寫年份；採 1947 的上線簡介只有維基一源，建議保留但不加強。",
+   "解散／停止活動年份：維基與搜尋摘要寫 1980 年，encyclopedia.com（Oxford 音樂辭典條目）寫 disbanded 1987；事實庫與上線簡介無此項，facts 不寫年份。",
+   "出道年：Warner Classics 稱團員在 Siena 求學時相識、1946 年首演（時名 Nuovo Quartetto Italiano），維基與 encyclopedia.com 寫 1945 年在 Carpi 首演；facts 採兩源一致的 1945。",
+   "上線簡介《Debussy / Ravel》的金唱片說法經 NASA 內容頁證實有『String Quartet (Quartetto Italiano)』一項，與簡介一致。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "成功請求 8 次：維基 QI、WebSearch（團史）、encyclopedia.com、維基 Voyager Golden Record（無相關內容）、WebSearch（Voyager 圖像）、NASA science.nasa.gov 金唱片圖像頁、WebSearch（Thomson 評語）、Warner Classics《Prima la musica》頁；失敗請求（未計）：維基 List of images 404、voyager.jpl.nasa.gov 兩次轉址到 missing 頁、AllMusic（403），其中 403 與 404 計入 failedFetches 1 次（轉址不計）。poolAlbums 三張（Beethoven 全集、Debussy / Ravel、Schubert D. 887）皆為 Quartetto Italiano，無同名混卡。\n注意：NASA 頁把它列在 Additional Images 一節，頁面摘要把它描述得像音訊項目（Phillips Recordings 為標示來源，疑為 Philips 之誤）；我只寫『列有這一項』，不寫它是照片或音訊，寫作層請照 facts 原句。Warner Classics 是廠牌文案，Thomson 引文可作第二源，但行銷性質請注意。\n未收（單源）：Thomson 另一句 Perfection is the only word to describe this playing（Warner 單源）；Robert Kemp 在《世界報》形容 1956 年 Debussy 錄音 miraculous（維基單源，且 Kemp 名字與日期未驗）；貝多芬弦樂四重奏全集錄於 1967 至 1975 年（維基與搜尋摘要，搜尋摘要未開頁）；背譜演奏、每首準備極為仔細（Oxford 辭典條目，單源）；1950 年代初受 Wilhelm Furtwängler 指點使風格更複雜（搜尋摘要，出處不明）；1979 年與 Maurizio Pollini 錄 Brahms 鋼琴五重奏（維基單源）；全體成員獲義大利總統 Cossiga 頒 Benemerenti della Scuola, della Cultura e dell'Arte 金質獎章（維基單源）；1977 年 12 月 Farulli 因病退出、Dino Asciolla 接任（維基與搜尋摘要，上線簡介已用；本層未另覓獨立第二源）；1951 年去掉 Nuovo（維基與搜尋摘要，同源，未獨立驗證）。\n事實庫原有的 Discogs 1807138 錄音日期與 Schubert D. 887 作品背景屬專輯層級資料，未歸入三格。"
+ },
+ {
+  "key": "rafael kubelík",
+  "name": "Rafael Kubelík",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Rafael Kubelík 1914 年 6 月 29 日生於波希米亞的 Býchory，1996 年 8 月 11 日在瑞士盧森（Lucerne）過世。",
+      "src": "https://en.wikipedia.org/wiki/Rafael_Kubel%C3%ADk",
+      "src2": "https://www.britannica.com/biography/Rafael-Kubelik",
+      "from": "new"
+     },
+     {
+      "f": "他是捷克小提琴家 Jan Kubelík 的兒子，在布拉格音樂院學作曲與指揮。",
+      "src": "https://www.britannica.com/biography/Rafael-Kubelik",
+      "src2": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/05-rafael-kubelik/",
+      "from": "new"
+     },
+     {
+      "f": "他 1942 至 1948 年擔任捷克愛樂首席指揮。",
+      "src": "https://www.britannica.com/biography/Rafael-Kubelik",
+      "src2": "https://musicpreserved.org.uk/conductors/rafael-kubelik/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1961 至 1979 年擔任慕尼黑巴伐利亞廣播交響樂團的首席指揮，這段時期被視為他事業的高峰。",
+      "src": "https://en.wikipedia.org/wiki/Rafael_Kubel%C3%ADk",
+      "src2": "https://musicpreserved.org.uk/conductors/rafael-kubelik/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "納粹占領捷克期間，他拒絕與占領當局合作。",
+      "src": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/05-rafael-kubelik/",
+      "src2": "https://musicpreserved.org.uk/conductors/rafael-kubelik/",
+      "from": "new"
+     },
+     {
+      "f": "1948 年共產黨接管捷克斯洛伐克後，他離開祖國，先到英國、後定居瑞士，在海外度過 42 年，直到 1990 年才回國。",
+      "src": "https://www.britannica.com/biography/Rafael-Kubelik",
+      "src2": "https://www.baltimoresun.com/news/bs-xpm-1996-08-13-1996226021-story.html",
+      "from": "new"
+     },
+     {
+      "f": "1990 年 5 月，天鵝絨革命之後，他回到布拉格指揮捷克愛樂，為 Prague Spring Festival 開幕，曲目是 Smetana《Má vlast》。",
+      "src": "https://musicpreserved.org.uk/conductors/rafael-kubelik/",
+      "src2": "https://en.wikipedia.org/wiki/Rafael_Kubel%C3%ADk",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1950 至 1953 年他擔任芝加哥交響樂團的音樂總監。",
+      "src": "https://chicagosymphony.org/about/rosenthal-archives/former-music-directors/05-rafael-kubelik/",
+      "src2": "https://www.britannica.com/biography/Rafael-Kubelik",
+      "from": "new"
+     },
+     {
+      "f": "他 1955 至 1958 年任倫敦 Covent Garden 皇家歌劇院的音樂總監。",
+      "src": "https://www.britannica.com/biography/Rafael-Kubelik",
+      "src2": "https://musicpreserved.org.uk/conductors/rafael-kubelik/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1948 年離開捷克斯洛伐克，1990 年返國指揮 Prague Spring Festival 開幕音樂會。",
+    "src": "https://musicpreserved.org.uk/conductors/rafael-kubelik/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "捷克愛樂任期與出道年份各源不一：Britannica 寫 1936–39 與 1942–48 兩段指揮；維基寫 1942 年起；Baltimore Sun 寫 1941 年起任首席、22 歲首度指揮該團；Music Preserved 寫 1934 年（20 歲）首演；芝加哥交響樂團檔案頁寫入音樂院十四歲、五年後首演；facts 只寫 1942 至 1948 年首席（Britannica、Music Preserved、芝加哥檔案頁一致），不寫出道年份。",
+   "維基寫他『被 Communist coup 後在英國指揮時投奔西方』並引述其話；Britannica 只寫離開後先英國後瑞士；facts 只寫兩源一致的部分。",
+   "Britannica 與搜尋結果寫他在盧森過世，維基寫 Kastanienbaum（盧森近郊）；facts 寫盧森。"
+  ],
+  "searches": 8,
+  "failedFetches": 1,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "人生故事型藝人：核心是戰時拒絕合作、1948 年出走、42 年流亡、1990 年返國開幕音樂節。成功請求 8 次：維基、Britannica、WebSearch（訃聞與返國）、Baltimore Sun 訃聞、Music Preserved、芝加哥交響樂團檔案頁（cso.org 301 轉址一次不計）、WebSearch（1990 返國細節）、維基 Prague Spring Festival（無 1990 內容）；失敗 1 次未計：捷克愛樂雜誌頁（404）。poolAlbums 三張（Má vlast、Mahler 1、Die Meistersinger）皆為指揮家 Rafael Kubelík，無同名混卡。\n⚠ 故事細節因來源限制不足兩源，未能收齊，請主線評估是否另派一輪：\n（單源或半源，未收）維基引述他 1948 年出走時的話：『I had lived through one form of bestial tyranny, Nazism. As a matter of principle I was not going to live through another』，並稱他誓言國家未獲解放不回國；維基稱他 1944 年因拒絕向希特勒行禮與不指揮華格納而被迫從布拉格『消失』（維基單源，本層未找到第二源）；搜尋摘要（疑出自捷克愛樂官方雜誌）稱 1990 年 5 月 12 日在布拉格 Smetana Hall 開幕，哈維爾在場並曾說服他返國，是 42 年來第一次在自由中舉行的音樂節，他對歷次邀請的答覆是『No, not as long as the country is not free』，另於 6 月 9 日在老城廣場指揮 Má vlast（Baltimore Sun 只寫老城廣場上一場令人難忘的音樂會）；這些都只見搜尋摘要或單篇報導，我開頁那一次是 404。\n其他未收：芝加哥任內為樂團引進數十首新作，含 Bartók、Janáček、Martinů、Vaughan Williams 等（芝加哥交響樂團檔案頁單源，且樂團檔案頁稱樂團員、樂評與聽眾反應不一）；1957 年 Covent Garden 的 Berlioz《Les Troyens》（維基摘要稱 world premiere，疑為首次完整英國演出，屬『首演』類不收）；1973 至 1974 年短暫擔任大都會歌劇院首任音樂總監（Britannica 與 Music Preserved，兩源一致但屬履歷，且任期年份一致寫法需另核，未收）；Mahler 與 Dvořák 全集錄音奠定國際聲譽、與捷克曲目、德奧交響傳統及 Mahler 的關聯（Music Preserved 單源）；作曲：兩齣歌劇、三首交響曲、合唱與協奏曲（Britannica 單源）；1973 年入瑞士籍（搜尋摘要單源）；Prague Spring Festival 1946 年成立由他發起（維基 Prague Spring 條目單源）；芝加哥任內與樂團團員、樂評的不睦與辭職（Britannica 寫 resigned amid disagreements，芝加哥檔案頁只寫 mixed reactions）。\n事實庫研究稿《Meistersinger》的 DG 擱置說法已隨上線簡介使用，本層未新增佐證。"
+ },
+ {
+  "key": "rodgers & hammerstein",
+  "name": "Rodgers & Hammerstein",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Richard Rodgers 與 Oscar Hammerstein II 是 Columbia University 時期的舊識，1920 年兩人為學校的 Varsity Show 首度合作。",
+      "src": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "src2": "https://rodgersandhammerstein.com/songwriter/oscar-hammerstein/",
+      "from": "new"
+     },
+     {
+      "f": "Hammerstein 1895 年 7 月 12 日生於紐約市的戲劇世家：祖父是歌劇製作人、父親經營 Hammerstein's Victoria 雜耍劇院、叔叔是百老匯製作人。",
+      "src": "https://www.pbs.org/wnet/broadway/stars/oscar-hammerstein-ii/",
+      "src2": "https://rodgersandhammerstein.com/songwriter/oscar-hammerstein/",
+      "from": "new"
+     },
+     {
+      "f": "兩人合作之前各有搭檔：Rodgers 長年與詞作家 Lorenz Hart 合作，Hammerstein 則與作曲家 Jerome Kern 合作，寫出《Show Boat》；Rodgers 與 Hart 的搭檔結束後，才找上 Hammerstein。",
+      "src": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "src2": "https://www.biography.com/musicians/richard-rodgers",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1943 年的《Oklahoma!》把歌、舞與劇情緊密結合；Hammerstein 形容它創造了「musical play」這個融合音樂喜劇與輕歌劇的新類型。",
+      "src": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "src2": "https://rodgersandhammerstein.com/songwriter/oscar-hammerstein/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Oklahoma!》1944 年獲普立茲獎特別獎；《South Pacific》1950 年獲普立茲戲劇獎。",
+      "src": "https://www.pbs.org/wnet/broadway/stars/oscar-hammerstein-ii/",
+      "src2": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "from": "new"
+     },
+     {
+      "f": "他們 1940 至 1950 年代的百老匯作品被視為音樂劇黃金時代（golden age）的開端與代表，維基點名《Oklahoma!》《Carousel》《South Pacific》《The King and I》《The Sound of Music》五部。",
+      "src": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "src2": "https://www.pbs.org/wnet/broadway/stars/oscar-hammerstein-ii/",
+      "from": "new"
+     },
+     {
+      "f": "Hammerstein 是 Stephen Sondheim 的導師；Sondheim 把自己在劇場的成就直接歸功於 Hammerstein 的影響與指點。",
+      "src": "https://www.pbs.org/wnet/broadway/stars/oscar-hammerstein-ii/",
+      "src2": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Oklahoma!》1943 年 3 月 31 日在百老匯開演，是兩人合作的第一部音樂劇。",
+      "src": "https://www.pbs.org/wnet/broadway/stars/oscar-hammerstein-ii/",
+      "src2": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "from": "new"
+     },
+     {
+      "f": "Hammerstein 1960 年過世，兩人的合作隨之結束。",
+      "src": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "src2": "https://rodgersandhammerstein.com/songwriter/oscar-hammerstein/",
+      "from": "new"
+     },
+     {
+      "f": "Rodgers 1902 年生、1979 年過世，在 Hammerstein 之後還活了近二十年。",
+      "src": "https://en.wikipedia.org/wiki/Rodgers_and_Hammerstein",
+      "src2": "https://www.biography.com/musicians/richard-rodgers",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1943 年《Oklahoma!》開演；1944 年獲普立茲獎特別獎。",
+    "src": "https://www.pbs.org/wnet/broadway/stars/oscar-hammerstein-ii/",
+    "from": "new"
+   },
+   {
+    "f": "《South Pacific》1950 年獲普立茲戲劇獎。",
+    "src": "https://www.pbs.org/wnet/broadway/stars/oscar-hammerstein-ii/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基稱兩人合作『五部』定義黃金時代（Oklahoma!、Carousel、South Pacific、The King and I、The Sound of Music）；PBS 稱合作八部主要音樂劇、R&H 官網稱十一部舞台音樂劇；數字不一，facts 不寫部數。",
+   "上線簡介《South Pacific》寫『普立茲戲劇獎的得主欄位 1950 年第一次寫上作曲家的名字、Rodgers 與兩位編劇並列共同得主』：PBS 與維基只證實 South Pacific 獲 1950 年普立茲獎，共同得主名單與『首位作曲家』一節本層未查到來源；『首位作曲家得普立茲戲劇獎』屬首位類宣稱，建議主線另查普立茲官網得獎名單。"
+  ],
+  "searches": 5,
+  "failedFetches": 1,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "名冊上是創作搭檔而非樂團，卡池三張（The King and I、Oklahoma!、South Pacific）皆為原版卡司錄音，主體是兩人的音樂劇，無同名混卡。成功請求 5 次：維基 Rodgers and Hammerstein、WebSearch（搭檔、Pulitzer、Sondheim）、PBS Hammerstein 頁、R&H 官網 Hammerstein 頁、Biography.com Rodgers 頁；失敗 1 次未計：Britannica（404）。事實庫研究稿為空，從零查；因發現成果夠兩源，未用滿 8 次。\n注意：rodgersandhammerstein.com 是版權方（Concord）官網，屬行銷性質；Hammerstein 引述自己對《Oklahoma!》的形容出自該站（搜尋摘要另一處也寫 musical play 一詞，但頁面未開）。Rodgers 1902–1979 的生卒年有維基與 Biography.com 兩源。\n未收（單源）：維基統計的兩座普立茲、34 座東尼獎、15 座奧斯卡與 2 座葛萊美，且主體是搭檔合計，易寫錯主詞（未收）；維基稱兩人的作品 has been called the greatest of the 20th century（單源）；Hammerstein 個人獲兩座普立茲、兩座奧斯卡與五座東尼（R&H 官網單源，且為個人獎項）；Hammerstein 先寫詞、Rodgers 後譜曲（搜尋摘要）；Hammerstein 與 Kern 的 Show Boat 年份（PBS 寫 1925，一般記為 1927，不收）；Biography.com 稱 Rodgers 是首位集齊四大獎（EGOT）者、1978 年甘迺迪中心榮譽獎、Hart 搭檔 1918–1943 年共 26 部（單源，且屬首位類）；Hammerstein 百年誕辰（1995）時三部作品同時在百老匯重演（R&H 官網單源）；Hammerstein 1960 年於賓州 Doylestown 過世（R&H 官網，維基只寫 1960）；《Oklahoma!》連演 2212 場（PBS 單源，場次不收）。"
  }
 ]
