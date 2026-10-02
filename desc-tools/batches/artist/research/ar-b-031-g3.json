@@ -583,5 +583,479 @@
   "pubIssues": [],
   "status": "full",
   "notes": "本位補查 7 次（維基 Bernstein、Britannica、維基 Young People's Concerts、甘迺迪榮譽搜尋、維基 West Side Story、維基 Kennedy Center Honors、leonardbernstein.com 官方傳記）；失敗請求 3 次（kennedy-center.org 兩個網址 403、維基 Ode to Freedom 404）。事實庫 research 與 published 皆空，從零查。身分：poolAlbums 的馬勒第五與第二、蕭士塔高維契第五皆為指揮家 Leonard Bernstein，無同名混卡。單源未放 facts：維基——父母是來自俄羅斯帝國的猶太移民、1971 年《Mass》、《Young People's Concerts》『史上最具影響力的電視音樂教育節目』說法；官方傳記單源——1960 年代與紐約愛樂的馬勒交響曲演出與錄音喚起對馬勒的重新重視（本批卡池有兩張馬勒，寫作層可用此但須註明單源）、留有五百多筆錄音與影像、《West Side Story》對百老匯音樂劇有『轉化性影響』、Young People's Concerts 讓他成為『美國最有名的古典音樂家』；Britannica——曾主持《Omnibus》，交響作品融入爵士、聖經與猶太禮儀元素。維基 West Side Story：原版百老匯 1957 年六項東尼獎提名、得兩項（編舞、舞台設計）；1961 年電影十項奧斯卡；1985 年 Bernstein 指揮、José Carreras 與 Kiri Te Kanawa 主演的錄音拿葛萊美最佳卡司秀專輯（皆單源）。Berlin 1989 一條的兩源：維基寫 12 月 25 日指揮貝九，官方傳記寫 12 月的『Berlin Celebration Concerts』；『Freude 改為 Freiheit』的細節未讀到二源，不收。逝世年與出生為兩源一致。古典錄音年份（1959 年蕭士塔高維契第五、1987／1988 年馬勒）本層未查，卡池年份需寫作層自行對照卡單。"
+ },
+ {
+  "key": "lerner & loewe",
+  "name": "Lerner & Loewe",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "作詞的 Alan Jay Lerner 1918 年 8 月 31 日生於紐約，家裡經營 Lerner Stores 零售連鎖，後來進哈佛大學。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Jay_Lerner",
+      "src2": "https://www.britannica.com/biography/Alan-Jay-Lerner",
+      "from": "new"
+     },
+     {
+      "f": "作曲的 Frederick Loewe 1901 年 6 月 10 日生於柏林，父親 Edmund 是維也納出身的輪舞曲（operetta）男高音；他師從 Ferruccio Busoni 與 Eugen d'Albert，13 歲時以鋼琴獨奏家身分與柏林愛樂同台，1924 年移居紐約。",
+      "src": "https://en.wikipedia.org/wiki/Frederick_Loewe",
+      "src2": "https://www.britannica.com/biography/Frederick-Loewe",
+      "from": "new"
+     },
+     {
+      "f": "兩人 1942 年在紐約的 Lambs Club 相識，從此成為搭檔。",
+      "src": "https://en.wikipedia.org/wiki/Lerner_and_Loewe",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Jay_Lerner",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1947 年《Brigadoon》是他們的突破之作，寫在看過 Rodgers & Hammerstein 的《Oklahoma!》之後；先前的《What's Up?》與《The Day Before Spring》只算小有成績。",
+      "src": "https://en.wikipedia.org/wiki/Brigadoon",
+      "src2": "https://en.wikipedia.org/wiki/Alan_Jay_Lerner",
+      "from": "new"
+     },
+     {
+      "f": "《My Fair Lady》1956 年 3 月 15 日在 Mark Hellinger Theatre 首演，改編自 George Bernard Shaw 的《Pygmalion》；它拿下 1957 年東尼獎最佳音樂劇等六項大獎，也是當時演出最久的百老匯音樂劇。",
+      "src": "https://en.wikipedia.org/wiki/My_Fair_Lady",
+      "src2": "https://en.wikipedia.org/wiki/Lerner_and_Loewe",
+      "from": "new"
+     },
+     {
+      "f": "1958 年的電影音樂劇《Gigi》由兩人寫作，拿下九項奧斯卡，包括最佳影片。",
+      "src": "https://en.wikipedia.org/wiki/Lerner_and_Loewe",
+      "src2": "https://en.wikipedia.org/wiki/Frederick_Loewe",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "兩人 1985 年一起獲甘迺迪中心榮譽獎（Kennedy Center Honors），在名單上列為同一組受獎者。",
+      "src": "https://en.wikipedia.org/wiki/Kennedy_Center_Honors",
+      "src2": "https://en.wikipedia.org/wiki/Frederick_Loewe",
+      "from": "new"
+     },
+     {
+      "f": "《My Fair Lady》上演期間成為當時百老匯演出最久的音樂劇，劇本身拿下 1957 年東尼獎最佳音樂劇。",
+      "src": "https://en.wikipedia.org/wiki/My_Fair_Lady",
+      "src2": "https://en.wikipedia.org/wiki/Lerner_and_Loewe",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Brigadoon》1947 年、《My Fair Lady》1956 年、《Camelot》1960 年，是兩人最知名的三部百老匯音樂劇。",
+      "src": "https://en.wikipedia.org/wiki/Lerner_and_Loewe",
+      "src2": "https://www.britannica.com/biography/Frederick-Loewe",
+      "from": "new"
+     },
+     {
+      "f": "《Camelot》之後 Loewe 退休，搭檔告一段落；兩人 1974 年因電影《The Little Prince》再度合作。",
+      "src": "https://en.wikipedia.org/wiki/Lerner_and_Loewe",
+      "src2": "https://www.britannica.com/biography/Frederick-Loewe",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1942 年在 Lambs Club 相識。",
+    "src": "https://en.wikipedia.org/wiki/Lerner_and_Loewe",
+    "src2": "https://en.wikipedia.org/wiki/Alan_Jay_Lerner",
+    "from": "new"
+   },
+   {
+    "f": "1956 年《My Fair Lady》首演。",
+    "src": "https://en.wikipedia.org/wiki/My_Fair_Lady",
+    "src2": "https://en.wikipedia.org/wiki/Lerner_and_Loewe",
+    "from": "new"
+   },
+   {
+    "f": "1985 年同獲甘迺迪中心榮譽獎。",
+    "src": "https://en.wikipedia.org/wiki/Kennedy_Center_Honors",
+    "src2": "https://en.wikipedia.org/wiki/Frederick_Loewe",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "上線簡介《My Fair Lady》寫『美國第一張賣破一百萬張的密紋唱片』『Billboard 榜蟬聯冠軍 15 週』；本層讀到的維基只說原版卡司錄音 1956 年 4 月 2 日發行、為該年美國最暢銷專輯，不矛盾，未核對百萬與 15 週，不列 pubIssues。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "本位補查 8 次（維基 Lerner and Loewe、維基 My Fair Lady、維基 Frederick Loewe、維基 Alan Jay Lerner、Britannica Frederick Loewe、Britannica Alan Jay Lerner、維基 Kennedy Center Honors、維基 Brigadoon）；失敗請求 2 次（Britannica 的 Lerner-and-Loewe 專題頁 404、songhall.org 的 Loewe 頁 404）。這是音樂劇創作搭檔，名冊一個 key 兩個人，寫作層請寫成『作詞與作曲的搭檔』，不要寫成單一個人。身分：poolAlbums 的《Camelot》《My Fair Lady》《Brigadoon》皆為 Lerner & Loewe 的原版卡司錄音（不是兩人本人演奏）；寫作層寫唱片時要點明是卡司錄音。事實庫的 Brigadoon 研究稿一條（地名取自蘇格蘭 Ayrshire 的 Brig o' Doon，Burns 詩〈Tam o' Shanter〉場景，來源 https://en.wikipedia.org/wiki/Brigadoon）與維基 Brigadoon 頁一致，該頁也寫 Highland 村莊名取自真實的 Brig o' Doon 橋。多數兩源同為維基不同條目或 Britannica（Britannica 與維基獨立；維基 Lerner and Loewe／Loewe／Lerner／Kennedy Center Honors／My Fair Lady／Brigadoon 為同站不同條目，非獨立）。Kennedy Center Honors 1985：維基 Kennedy Center Honors 名單列『Alan Jay Lerner and Frederick Loewe』為同一項、維基 Loewe、維基 Lerner、Britannica 兩篇皆寫 1985。單源未放 facts：維基 Lerner——叔叔 Samuel 創辦 Lerner Stores、與 John F. Kennedy 在 Choate 與哈佛同學、Juilliard 夏季學作曲、三座奧斯卡（An American in Paris 原創劇本、Gigi 改編劇本與原創歌曲）、三座東尼、1971 年入選作曲家名人堂（Songwriters Hall of Fame，songhall.org 404 未能第二源）、1986 年 6 月 14 日過世（Britannica 同），結婚八次與藥物使用不收；維基 Loewe——1972 年入選 Songwriters Hall of Fame、1979 年入選 American Theater Hall of Fame、1988 年 2 月 14 日在棕櫚泉過世（Britannica 同）；維基 Brigadoon——1947 年 3 月 13 日在 Ziegfeld Theatre 首演、連演 581 場、de Mille 獲東尼最佳編舞、紐約劇評人協會最佳音樂劇（此處與上線簡介一致，但本層為單源，facts 不寫場數）、〈Almost Like Being in Love〉成為標準曲；維基 My Fair Lady——2717 場、1962 年 9 月 29 日閉幕、Rodgers 與 Hammerstein 曾試改編 Pygmalion 而放棄、Brooks Atkinson 評語；Britannica Loewe 說 Loewe 1959 年因 Gigi 得奧斯卡、Britannica Lerner 說 Lerner 1965 年葛萊美（未核對類別）。Lerner 與 Loewe 的歷史影響力（『音樂劇黃金年代』）屬維基單源形容，不收。兩人皆已逝，無在世限制。"
+ },
+ {
+  "key": "ludovico einaudi",
+  "name": "Ludovico Einaudi",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ludovico Einaudi 1955 年 11 月 23 日生於義大利杜林，母親在家彈鋼琴。",
+      "src": "https://www.classicfm.com/composers/einaudi/guides/facts/",
+      "src2": "https://www.italyonthisday.com/2016/11/ludovico-einaudi-composer.html",
+      "from": "new"
+     },
+     {
+      "f": "祖父 Luigi Einaudi 在 1948 至 1955 年擔任義大利總統，父親 Giulio Einaudi 是知名出版人，合作的作家包括 Italo Calvino。",
+      "src": "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+      "src2": "https://www.italyonthisday.com/2016/11/ludovico-einaudi-composer.html",
+      "from": "new"
+     },
+     {
+      "f": "他在米蘭威爾第音樂院（Conservatorio Verdi）讀作曲，1982 年取得文憑，並跟前衛作曲家 Luciano Berio 學習；Berio 的課教他用非常開放的方式想音樂。",
+      "src": "https://www.classicfm.com/composers/einaudi/guides/facts/",
+      "src2": "https://www.italyonthisday.com/2016/11/ludovico-einaudi-composer.html",
+      "from": "new"
+     },
+     {
+      "f": "他曾擔任 Berio 的助手，也跟 Karlheinz Stockhausen 學過。",
+      "src": "https://www.wisemusicclassical.com/composer/414/Ludovico-Einaudi/",
+      "src2": "https://www.newstatesman.com/culture/2026/07/ludovico-einaudi-on-fame-critics-and-escaping-his-familys-legacy",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂以極簡的結構、反覆的旋律型與鋼琴為主，把古典訓練和流行、搖滾、民謠、世界音樂融在一起。",
+      "src": "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+      "src2": "https://www.classicalmusicdaily.com/articles/e/l/ludovico-einaudi.htm",
+      "from": "new"
+     },
+     {
+      "f": "1996 年的《Le Onde》是他的第一張鋼琴獨奏專輯，確立他的極簡風格。",
+      "src": "https://www.classicfm.com/composers/einaudi/guides/facts/",
+      "src2": "https://www.newstatesman.com/culture/2026/07/ludovico-einaudi-on-fame-critics-and-escaping-his-familys-legacy",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2005 年他獲頒義大利共和國功績勳章（Ordine al Merito della Repubblica Italiana）軍官級。",
+      "src": "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+      "src2": "https://www.italyonthisday.com/2016/11/ludovico-einaudi-composer.html",
+      "from": "new"
+     },
+     {
+      "f": "他的音樂被用在電影《The Intouchables》（2011）、英國影集《This Is England》與《Nomadland》（2020）等作品裡。",
+      "src": "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+      "src2": "https://www.newstatesman.com/culture/2026/07/ludovico-einaudi-on-fame-critics-and-escaping-his-familys-legacy",
+      "from": "new"
+     },
+     {
+      "f": "2016 年他在綠色和平（Greenpeace）的北極保護行動中演出《Elegy for the Arctic》。",
+      "src": "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+      "src2": "https://www.wisemusicclassical.com/composer/414/Ludovico-Einaudi/",
+      "from": "new"
+     },
+     {
+      "f": "古典樂評界對他的評價兩極：他的音樂廣受聽眾喜愛，卻被不少評論者批評不夠冒險。",
+      "src": "https://www.newstatesman.com/culture/2026/07/ludovico-einaudi-on-fame-critics-and-escaping-his-familys-legacy",
+      "src2": "https://www.classicalmusicdaily.com/articles/e/l/ludovico-einaudi.htm",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1982 年取得米蘭威爾第音樂院作曲文憑。",
+    "src": "https://www.classicfm.com/composers/einaudi/guides/facts/",
+    "src2": "https://www.italyonthisday.com/2016/11/ludovico-einaudi-composer.html",
+    "from": "new"
+   },
+   {
+    "f": "1996 年發行第一張鋼琴獨奏專輯《Le Onde》。",
+    "src": "https://www.classicfm.com/composers/einaudi/guides/facts/",
+    "src2": "https://www.newstatesman.com/culture/2026/07/ludovico-einaudi-on-fame-critics-and-escaping-his-familys-legacy",
+    "from": "new"
+   },
+   {
+    "f": "2016 年演出《Elegy for the Arctic》。",
+    "src": "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+    "src2": "https://www.wisemusicclassical.com/composer/414/Ludovico-Einaudi/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "義大利勳章等級：維基只寫 Officer of the Order of Merit of the Italian Republic，italyonthisday 寫 OMRI『相當於騎士』，採維基的 Officer（軍官級）。"
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "本位補查 8 次（維基、藝人傳記搜尋、Classic FM、Classical Music Daily、italyonthisday、Wise Music、評價搜尋、New Statesman）；失敗請求 3 次（官方網站與 Britannica 404、AllMusic 403）。事實庫 research 與 published 皆空，從零查。身分：poolAlbums 的《Nightbook》《Eden Roc》《Seven Days Walking》皆為 Ludovico Einaudi，無同名混卡。在世，銷量、串流、獎座數不寫（搜尋摘要有『串流量』說法，一律不收）。多數兩源為獨立網站；維基與 Classic FM、italyonthisday 等彼此獨立。單源未放 facts：Classic FM——十幾歲為民謠吉他寫曲、曾為 La Scala、Tanglewood、Lincoln Center 寫室內與管弦作品、1980 年代中期起為舞蹈與多媒體寫作並轉向鋼琴獨奏、1996 年義大利 Grolla d'oro 最佳電影配樂（搜尋摘要與 Classic FM 同源，非獨立）、《Le Onde》靈感來自 Virginia Woolf《海浪》、《I Giorni》（2001）單曲進英國單曲榜第 32 名（榜名次不收）、《Nightbook》（2009）加入合成器聲響、2013 年為北京國家大劇院寫《Wetlands》；Wise Music——在杜林音樂院師從 Azio Corghi、1982 年 Tanglewood 獎學金接觸美國極簡主義、與 Michael Nyman 相提並論、2019 年與 Colm Tóibín 合作歌劇《Winter Journey》；italyonthisday——母親名 Renata、2005 年勳章稱為義大利最高國家榮譽之一（寫作層不採）、2002 年 Echo Klassik 與『2000 年奧斯卡提名電影 Fuori del mondo』的說法與常識不符，不收；New Statesman——外祖父是作曲兼指揮（單源）、Einaudi 回應批評稱『有點酸，可能因為成功』。Guardian 2016 評論『比一般獨立樂團還不冒險』原話出自 New Statesman 轉述，單源，寫作層不得具名引用 Guardian。『一世代新古典音樂定義者』等說法只見搜尋摘要，不收。Eden Roc（1999）本層未查到可用資料，寫作層對該張不可憑記憶補年份之外的事實。"
+ },
+ {
+  "key": "maurizio pollini",
+  "name": "Maurizio Pollini",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Maurizio Pollini 1942 年 1 月 5 日生於米蘭，2024 年 3 月 23 日在米蘭過世。",
+      "src": "https://www.britannica.com/biography/Maurizio-Pollini",
+      "src2": "https://www.voanews.com/a/acclaimed-italian-pianist-maurizio-pollini-dies-at-82-/7540304.html",
+      "from": "new"
+     },
+     {
+      "f": "他出身藝術家庭：父親 Gino Pollini 是義大利現代主義建築師，母親是雕塑家 Fausto Melotti 的妹妹。",
+      "src": "https://en.wikipedia.org/wiki/Maurizio_Pollini",
+      "src2": "https://www.deutschegrammophon.com/en/artists/maurizio-pollini/biography",
+      "from": "new"
+     },
+     {
+      "f": "他先後跟 Carlo Lonati、Carlo Vidusso 學琴，1959 年從米蘭音樂院畢業；贏得蕭邦鋼琴大賽之後，又向 Arturo Benedetti Michelangeli 請益。",
+      "src": "https://en.wikipedia.org/wiki/Maurizio_Pollini",
+      "src2": "https://www.deutschegrammophon.com/en/artists/maurizio-pollini/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把二十世紀的現代作品放進核心曲目，與作曲家 Luigi Nono 合作，並到工廠與學校演出，把音樂視為公民參與。",
+      "src": "https://en.wikipedia.org/wiki/Maurizio_Pollini",
+      "src2": "https://www.deutschegrammophon.com/en/artists/maurizio-pollini/biography",
+      "from": "new"
+     },
+     {
+      "f": "他的錄音多數在 Deutsche Grammophon 出版，1972 年錄的蕭邦練習曲是其中的代表作之一。",
+      "src": "https://en.wikipedia.org/wiki/Maurizio_Pollini",
+      "src2": "https://www.deutschegrammophon.com/en/artists/maurizio-pollini/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1960 年他在華沙贏得第六屆蕭邦國際鋼琴大賽，時年 18 歲。",
+      "src": "https://en.wikipedia.org/wiki/Maurizio_Pollini",
+      "src2": "https://www.britannica.com/biography/Maurizio-Pollini",
+      "from": "new"
+     },
+     {
+      "f": "評審團主席 Arthur Rubinstein 當場說這個男孩彈得比在場任何一位評審都好。",
+      "src": "https://en.wikipedia.org/wiki/Maurizio_Pollini",
+      "src2": "https://www.voanews.com/a/acclaimed-italian-pianist-maurizio-pollini-dies-at-82-/7540304.html",
+      "from": "new"
+     },
+     {
+      "f": "他曾憑蕭邦《Nocturnes》錄音拿下葛萊美獎，也獲日本美術協會的高松宮殿下紀念世界文化賞（Praemium Imperiale）音樂部門（2010 年）。",
+      "src": "https://www.britannica.com/biography/Maurizio-Pollini",
+      "src2": "https://en.wikipedia.org/wiki/Maurizio_Pollini",
+      "from": "new"
+     },
+     {
+      "f": "米蘭斯卡拉歌劇院在他過世的消息裡，稱他是『我們這個時代最偉大的音樂家之一』，是劇院五十多年來的重要依靠。",
+      "src": "https://www.voanews.com/a/acclaimed-italian-pianist-maurizio-pollini-dies-at-82-/7540304.html",
+      "src2": "https://chicagosymphony.org/inside-the-music/article/18003/remembering-maurizio-pollini",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1960 年贏得第六屆蕭邦國際鋼琴大賽。",
+    "src": "https://en.wikipedia.org/wiki/Maurizio_Pollini",
+    "src2": "https://www.britannica.com/biography/Maurizio-Pollini",
+    "from": "new"
+   },
+   {
+    "f": "2010 年獲 Praemium Imperiale 音樂部門。",
+    "src": "https://www.britannica.com/biography/Maurizio-Pollini",
+    "src2": "https://en.wikipedia.org/wiki/Praemium_Imperiale",
+    "from": "new"
+   },
+   {
+    "f": "2024 年 3 月 23 日在米蘭過世，享年 82 歲。",
+    "src": "https://www.britannica.com/biography/Maurizio-Pollini",
+    "src2": "https://www.voanews.com/a/acclaimed-italian-pianist-maurizio-pollini-dies-at-82-/7540304.html",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "葛萊美年份：Britannica 寫 2006 年、美聯社寫 2007 年（均為《Chopin: Nocturnes》），兩源不一致，facts 不寫年份。",
+   "Rubinstein 的話：維基與美聯社措辭不同（『彈得比我們任何人都好』），facts 只寫大意。"
+  ],
+  "searches": 8,
+  "failedFetches": 4,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "本位補查 8 次（維基、Britannica、訃聞搜尋、美聯社（VOA 轉載）、芝加哥交響樂團追思頁、維基蕭邦大賽、Deutsche Grammophon 傳記、維基 Praemium Imperiale）；失敗請求 4 次（Presto 與華盛頓郵報 403、Ernst von Siemens 基金會網站無法解析主機、Praemium Imperiale 官網 404）。美聯社文章寫 La Scala 稱他『one of the great musicians of our time and a fundamental reference in the artistic life of the theater for over 50 years』；第二源 CSO 追思頁只是同為追思稿，並未重複這句話，故這條實際只有單源（美聯社）——寫作層請寫成『據美聯社轉述，斯卡拉歌劇院稱他…』或不用。事實庫 research 空，published 只有《Schoenberg: Piano Works》一張。身分：poolAlbums 的蕭邦練習曲、貝多芬晚期鋼琴奏鳴曲、荀白克鋼琴作品皆為鋼琴家 Pollini，無同名混卡。『首位非斯拉夫人贏得蕭邦大賽』說法維基與維基蕭邦大賽頁皆寫，但蕭邦大賽頁列 1932 年 Imre Ungár（匈牙利）同為獲獎者，有反例，不收。單源未放 facts：維基——母親是 Fausto Melotti 的妹妹（DG 同，故進 facts）、1968 年卡內基音樂廳美國首演、Rossini Opera Festival 的重要推手、1960 至 70 年代左翼立場與 Claudio Abbado、Luigi Nono 合作、Ernst von Siemens 音樂獎（年份未讀到）；Britannica——9 歲登台、1959 年畢業；CSO 追思頁——1971 年 1 月首次登 Orchestra Hall（巴爾托克第二鋼琴協奏曲）、Riccardo Muti 把他與 Serkin、Michelangeli、Gilels、Richter 並列、1977 年與 Abbado 錄的巴爾托克鋼琴協奏曲 1979 年得葛萊美與 Gramophone 獎（皆單源）；DG 頁——引述他自述追求『phenomenal precision and acute expressive poise』；美聯社——他在 2022 年因身體因素取消演出（健康細節不收）。上線簡介《Schoenberg: Piano Works》（1974 年 5 月錄於慕尼黑 Residenz、DG 2530 531、1975 年發行等細節）本層未查證，也未發現矛盾。DG 傳記頁寫『1972 年 DG 首張錄音』與常識（Stravinsky／Prokofiev 的 1971 年錄音）可能不符，故 facts 只說『多數錄音在 DG』與練習曲 1972。"
+ },
+ {
+  "key": "michael nyman",
+  "name": "Michael Nyman",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Michael Nyman 1944 年 3 月 23 日生於倫敦。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/michael-nyman",
+      "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+      "from": "new"
+     },
+     {
+      "f": "他在倫敦國王學院與皇家音樂學院受教育，跟 Thurston Dart 學英國巴洛克音樂，1967 年畢業。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+      "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+      "from": "new"
+     },
+     {
+      "f": "他早年先當樂評與音樂學者，後來才重新投入作曲。",
+      "src": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+      "src2": "https://www.wisemusicclassical.com/composer/1149/Michael-Nyman/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1976 年 Harrison Birtwistle 請他為 Carlo Goldoni《Il Campiello》的演出編曲，這個臨時樂隊（Campiello Band）後來成了 Michael Nyman Band；樂隊起初混用古樂器與薩克斯風、班鳩琴，後來改成擴大器放大的編制：弦樂四重奏、薩克斯風、小號、法國號、低音長號、電貝斯與鋼琴。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman_Band",
+      "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+      "from": "new"
+     },
+     {
+      "f": "《The Draughtsman's Contract》（1982）的唱片信用欄，把十七世紀的 Henry Purcell 列為音樂顧問。",
+      "src": "https://www.discogs.com/release/5401832",
+      "src2": "https://en.wikipedia.org/wiki/The_Draughtsman%27s_Contract",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1968 年他在《The Spectator》一篇談 Cornelius Cardew 的文章裡，把「minimalism」這個詞用在音樂上；1974 年的著作《Experimental Music: Cage and Beyond》延續了這條思路。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+      "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+      "from": "new"
+     },
+     {
+      "f": "他與導演 Peter Greenaway 長期合作，起點是 1982 年的《The Draughtsman's Contract》。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+      "src2": "https://en.wikipedia.org/wiki/The_Draughtsman%27s_Contract",
+      "from": "new"
+     },
+     {
+      "f": "1993 年 Jane Campion 電影《The Piano》的配樂專輯由 Virgin 發行，是慕尼黑愛樂在 Nyman 指揮下的重新錄音，Nyman 本人彈鋼琴。",
+      "src": "https://en.wikipedia.org/wiki/The_Piano_(soundtrack)",
+      "src2": "https://en.wikipedia.org/wiki/Michael_Nyman",
+      "from": "new"
+     },
+     {
+      "f": "2008 年他獲頒大英帝國司令勳章（CBE）。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+      "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1968 年他首度把「minimalism」一詞用於音樂評論。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/michael-nyman",
+      "from": "new"
+     },
+     {
+      "f": "1976 年 Michael Nyman Band 的前身 Campiello Band 成立。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman_Band",
+      "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+      "from": "new"
+     },
+     {
+      "f": "1982 年《The Draughtsman's Contract》是他與 Greenaway 合作的起點。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+      "src2": "https://en.wikipedia.org/wiki/The_Draughtsman%27s_Contract",
+      "from": "new"
+     },
+     {
+      "f": "1993 年《The Piano》的配樂讓他的音樂傳到古典圈外。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+      "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1968 年在《The Spectator》把 minimalism 一詞用於音樂。",
+    "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+    "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+    "from": "new"
+   },
+   {
+    "f": "1976 年組成 Michael Nyman Band 的前身 Campiello Band。",
+    "src": "https://en.wikipedia.org/wiki/Michael_Nyman_Band",
+    "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+    "from": "new"
+   },
+   {
+    "f": "2008 年獲頒 CBE。",
+    "src": "https://en.wikipedia.org/wiki/Michael_Nyman",
+    "src2": "https://ressources.ircam.fr/en/composer/michael-nyman/biography",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "與 Greenaway 的合作部數：維基 11 部、Wise Music 約十二部、encyclopedia.com 18 件，不一致，facts 不寫數字。《The Piano》配樂銷量維基與 IRCAM 寫三百萬張以上、encyclopedia.com 寫一百五十萬張，不一致且他在世，不寫。上線簡介《The Piano》寫『售出超過三百萬張』：數字各源不一，建議本機改 KV 時移除（見 pubIssues）。"
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "pubIssues": [
+   {
+    "album": "The Piano",
+    "claim": "售出超過三百萬張",
+    "problem": "各來源數字不一致（維基、IRCAM、Wise Music 寫三百萬張以上，encyclopedia.com 寫一百五十萬張），且藝人在世，依本批規則不寫累計銷量；建議移除該句。",
+    "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/michael-nyman"
+   }
+  ],
+  "status": "full",
+  "notes": "本位補查 8 次（維基 Michael Nyman、維基 The Piano (soundtrack)、minimalism 搜尋、encyclopedia.com、IRCAM、維基 The Draughtsman's Contract、維基 Michael Nyman Band、Wise Music）；失敗請求 3 次（Britannica 與 michaelnyman.com 404、皇家音樂學院 403）。事實庫 research 內兩張（Draughtsman's Contract、Drowning by Numbers）是黑膠版本欄位的檢查，不涉及生平；上線簡介三張（The Piano、The Draughtsman's Contract、Drowning by Numbers）。身分：poolAlbums 的三張皆為作曲家 Michael Nyman 與其樂隊，無同名混卡（注意 Michael Nyman 是 Michael Nyman Band 的領導人，卡上掛的是他本人）。在世，銷量不寫。『minimalism』一詞的『第一位』說法：維基『定義了這個詞』、IRCAM『第一位把這個詞用於音樂』、encyclopedia.com『引入』、Wise『發明』，措辭不一，且樂評界另有更早使用『minimal』的說法未核對，故 facts 只寫『在 1968 年文章裡把這個詞用在音樂上』，不寫『第一位』。《The Draughtsman's Contract》Purcell 一條：唱片信用欄那條取自事實庫（Discogs 來源，本層未重開，故 from 標 bank）；維基《The Draughtsman's Contract》頁寫配樂『derived from grounds by Henry Purcell overlaid with new melodies』、Purcell 掛 music consultant、〈An Eye for Optical Theory〉可能用 William Croft 的固定低音、一段取自 Mozart 小提琴奏鳴曲 K.304 第二樂章、1982 年 Piano Records 發行——這些皆維基單源，未放 facts；《The Piano》配樂維基：〈The Heart Asks Pleasure First〉取自蘇格蘭歌謠〈Gloomy Winter's Noo Awa'〉、Golden Globe 與 BAFTA 提名皆落選（單源）、薩克斯風手 John Harle、David Roach、Andrew Findon。其他單源：維基——波蘭猶太家庭、King's College London 1961–67（Wise 亦寫 1961–67，兩源一致，已進 facts 的教育條）、2025 年世界配樂學院終身成就獎；encyclopedia.com——1964 年放棄作曲轉任樂評（The Listener、Spectator）、1986 年歌劇《The Man Who Mistook His Wife for a Hat》；Wise——1969 年為 Birtwistle 的歌劇《Down By The Greenwood Side》寫詞、Observer 評語；Band 維基——1977 年《In Re Don Giovanni》是為樂隊寫的第一批原創作品。事實庫 Drowning by Numbers 與 Draughtsman 版本欄位屬黑膠細節，不屬於藝人介紹。兩源多數為獨立站（維基、encyclopedia.com、IRCAM、Wise），維基各條目彼此非獨立。"
  }
 ]

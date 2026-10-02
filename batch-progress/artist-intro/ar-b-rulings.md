@@ -337,3 +337,12 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 031 g2 交件（QA 本組 0）。thin：Frans Brüggen、Fritz Wunderlich（地位 none）。Georges Prêtre 失敗請求 5 次超限，照收。任期與日期不一致者不寫（Szell、Barbirolli、Ansermet）。du Pré 疾病、死因與過世年不寫。pubIssues 0。w1（g1+g2）派出。
 - 030 w2 審稿（2 處）：Jerry Goldsmith「1976 年拿下奧斯卡」改「以《The Omen》拿下」（該片 1976 年上映，頒獎在 1977 年）；鷺巣詩郎《新・哥吉拉》改台灣片名《正宗哥吉拉》。Herrmann AFI 名次比照 Goldsmith 不寫。Lloyd Webber 的《貓》《歌劇魅影》用台灣通行譯名，照准。
 - **ar-b-030 上線**：40 位，reviewFixes 4。
+- 031 w1 審稿無修正。Pärt 的 Bachtrack「演出最多的在世作曲家」屬榜單與最高級，不寫，照准。Britten「第一位受封終身貴族的作曲家」屬通行事實，照准。Lipatti、Kleiber、du Pré、Wunderlich 均無死因；du Pré 無過世年。
+- 031 g3 交件（QA 本組 0）。thin：Jonny Greenwood、Jordi Savall（身世 none；失敗請求 5 次超限）。Lang Lang 貢獻格的樂評分歧語氣要保留。Pollini：斯卡拉「我們時代最偉大」只有美聯社單源、葛萊美年 2006／2007 不一、「首位非斯拉夫人贏蕭邦大賽」有反例，皆不寫。Kronos 遷居年與委託數不寫。Bernstein 甘迺迪中心榮譽採 1980。主詞：Kronos 葛萊美為樂團、Radiohead 名人堂為樂團。pubIssues 1（Michael Nyman《The Piano》銷量數字兩源不一，在世者銷量建議刪）→ 本機待核。
+- 031 g4 交件（QA 0，四組齊）。thin：Musica Antiqua Köln。Kubelík 細節單源者不再補派，只寫兩源事實（可逆）。衝突值不寫：Musica Antiqua Köln 解散年、Milstein 出生日、Quartetto Italiano 入團與解散年；Casals 遷居 Prades 採 1939。Järvi 師承與任期單源不寫。待核（非 pubIssues）：Rodgers & Hammerstein《South Pacific》普立茲「首位作曲家」說法、Oliveros《Accordion & Voice》「第一張獨奏唱片」。w2（g3+g4）派出。
+
+### ar-b-032（18 位，只分 g1、g2）
+- g2 交件（8 位，QA 本組 0）。thin：Yevgeny Mravinsky（貢獻 none）、Yiruma。Preisner 凱撒獎只採 1995《紅》一座；Menuhin 學校創辦年、登台年不寫；Tiersen Victoires 不寫；近藤浩治 國家錄音登錄採 2023（主線所知與 LoC 原文一致）。Yiruma 的 Billboard 與 MIDEM「首位」單源不寫。pubIssues 0。
+- 032 g1 交件（QA 0，兩組齊）。全 full。Van Cliburn 兩條「唯一」說法皆不寫（單源或兩源同站）；Víkingur 出生年、Hilliard 成軍年、Celibidache 柏林任期年不寫；Riley《In C》國家錄音登錄單源不寫。pubIssues 1（Trevor Pinnock《Haydn: Nelson Mass》The English Concert 創立年 1972／1973）→ 本機待核。w1（g1+g2，18 位）派出；本批無 w2。
+- 031 w2 審稿（2 處）：Jonny Greenwood「兩度入圍」改「再度入圍」（在世者入圍次數；且他只有兩次奧斯卡提名，原句暗示三次）；Lang Lang 多餘空格。Casals 263 放寬照准。Bernstein「第一位美國出生、在美國受訓的紐約愛樂音樂總監」有兩源，照准。Lerner & Loewe 的 operetta 改譯「輕歌劇」照准。
+- **ar-b-031 上線**：40 位，reviewFixes 2。
