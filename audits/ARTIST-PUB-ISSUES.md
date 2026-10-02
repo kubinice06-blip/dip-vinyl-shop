@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 231 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 234 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -235,3 +235,6 @@
 | ar-b-030 | Jascha Heifetz | Korngold: Violin Concerto | 這是本曲的第一份錄音，往後很多年裡也是唯一的一份 | 英文維基 Korngold 小提琴協奏曲條目記 Heifetz 1947 年 2 月 15 日聖路易首演、1947 年 3 月 30 日 Carnegie Hall 演出有廣播轉錄盤；因此『第一份錄音』至少應限定為『第一份商業錄音』，『唯一』也沒有來源（僅查到維基，未能證實或推翻） | https://en.wikipedia.org/wiki/Violin_Concerto_(Korngold) |
 | ar-b-031 | Budapest String Quartet | Ravel: Quartet in F major / Debussy: Quartet in G minor | 此後三十五年他們為 Columbia 錄下 89 首作品 | 1940 年轉投 Columbia、1967 年解散，只有約 27 年；維基人物條目首段寫『from 1940 through 1967 it recorded for Columbia』，內文另有一句『Over 35 years the quartet recorded 89 individual works』，條目自己前後不一，建議改寫成『在 Columbia 期間錄下 89 首作品』並避開年數 | https://en.wikipedia.org/wiki/Budapest_String_Quartet |
 | ar-b-031 | Budapest String Quartet | Mozart: Haydn Quartets | 1939 年美方委託他們固定使用館藏五把史特拉底瓦里 | WETA 轉述的國會圖書館資料寫他們 1938 至 1962 年在該館演出，與維基的 1939 差一年，兩源不一致，建議改成『1930 年代末』 | https://weta.org/fm/classical-score/budapest-quartet-century-music-library-congress |
+| ar-b-031 | Michael Nyman | The Piano | 售出超過三百萬張 | 各來源數字不一致（維基、IRCAM、Wise Music 寫三百萬張以上，encyclopedia.com 寫一百五十萬張），且藝人在世，依本批規則不寫累計銷量；建議移除該句。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/michael-nyman |
+| ar-b-032 | Trevor Pinnock | Haydn: Nelson Mass | 他 1973 年創立 The English Concert | 創立年兩說：維基（Pinnock 與 English Concert 條目）、Askonas Holt、AMC、Avie 寫 1972 年（維基並註明常被寫成 1973 年）；樂團官網與 bach-cantatas 寫 1973 年；建議改成『1970 年代初』或加註。 | https://en.wikipedia.org/wiki/The_English_Concert |
+| ar-c-001 | Astrud Gilberto | Beach Samba | 全片被收進《1001 Albums You Must Hear Before You Die》書單 | 「全片」不得用來指整張專輯（writer-base 用語規則），建議改「整張專輯」或「這張專輯」；書單收錄本身本層未查證。 | https://en.wikipedia.org/wiki/Astrud_Gilberto |

@@ -344,3 +344,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 ### ar-b-032（18 位，只分 g1、g2）
 - g2 交件（8 位，QA 本組 0）。thin：Yevgeny Mravinsky（貢獻 none）、Yiruma。Preisner 凱撒獎只採 1995《紅》一座；Menuhin 學校創辦年、登台年不寫；Tiersen Victoires 不寫；近藤浩治 國家錄音登錄採 2023（主線所知與 LoC 原文一致）。Yiruma 的 Billboard 與 MIDEM「首位」單源不寫。pubIssues 0。
 - 032 g1 交件（QA 0，兩組齊）。全 full。Van Cliburn 兩條「唯一」說法皆不寫（單源或兩源同站）；Víkingur 出生年、Hilliard 成軍年、Celibidache 柏林任期年不寫；Riley《In C》國家錄音登錄單源不寫。pubIssues 1（Trevor Pinnock《Haydn: Nelson Mass》The English Concert 創立年 1972／1973）→ 本機待核。w1（g1+g2，18 位）派出；本批無 w2。
+- 031 w2 審稿（2 處）：Jonny Greenwood「兩度入圍」改「再度入圍」（在世者入圍次數；且他只有兩次奧斯卡提名，原句暗示三次）；Lang Lang 多餘空格。Casals 263 放寬照准。Bernstein「第一位美國出生、在美國受訓的紐約愛樂音樂總監」有兩源，照准。Lerner & Loewe 的 operetta 改譯「輕歌劇」照准。
+- **ar-b-031 上線**：40 位，reviewFixes 2。
