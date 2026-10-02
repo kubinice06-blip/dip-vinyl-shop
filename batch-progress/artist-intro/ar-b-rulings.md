@@ -331,3 +331,6 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 030 g3 交件（QA：Eugen Jochum 搜尋 9 次超限 1 次，該次已撤）。全 full。任期年份兩源不一不寫（Colin Davis、Jochum）；Perlman 卡內基首演採 1963。Goldsmith AFI 名次屬榜單，不寫。pubIssues 3（Piazzolla《Adiós Nonino》得知父喪地點；Herrmann《Taxi Driver》過世與錄音時序；Heifetz《Korngold》「第一份錄音、多年唯一」有 1947 廣播轉錄反例）→ 本機待核。
 - 030 w1 審稿（2 處）：Skepta 刪「繼 Dizzee Rascal 之後第二位獲水星獎的 grime MC」（序數宣稱，比照 027 Dizzee 裁定）；玖壹壹 刪「創下該屆每分鐘最高收視率」（在世者最高級紀錄）。玖壹壹 2026-09-11 台中市榮譽獎章經主線 WebSearch 核實（台中市政府、自由時報）。Timbaland 2021《時代》百大屬推選名單，照准。Stormzy「首位在 Glastonbury 壓軸的英國饒舌歌手」屬廣泛報導，照准。
 - 030 g4 交件（QA 本組 0，四組齊）。thin：Karl Richter、Stars of the Lid、鷺巣詩郎（era none）、Arthur Grumiaux。Brian McBride 2023 年過世只寫年份；「ambient 傳奇」只准具名 NME。單源未收：Richter 影響 Harnoncourt／Gardiner、Grumiaux「少數真正偉大」。pubIssues 0。w2（g3+g4）派出。
+
+### ar-b-031
+- g1 交件（QA 本組 0）。全 full。衝突值不寫：Toscanini 紐約愛樂起年、Britten 奧爾德堡音樂節創辦年、Pärt 電台任職年、Giulini 離任年、Elfman 出生地、Lipatti 生日與最後獨奏會日期。Kleiber 人生細節只收兩源一致處；BBC Music Magazine 票選不收。Lipatti 疾病與死因不寫。pubIssues 2（Budapest String Quartet《Ravel/Debussy》「三十五年」與 1940–1967 不符；《Mozart: Haydn Quartets》國會圖書館樂器委託年 1938／1939）→ 本機待核。

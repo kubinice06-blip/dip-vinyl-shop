@@ -638,5 +638,423 @@
   "failedFetches": 4,
   "status": "full",
   "notes": "搜尋 5 次：維基頁、WebSearch（訃聞）、Ionarts 追悼文、維基原始碼（curl，讀全文）、Classical Music Daily；失敗 4 次（Britannica 404、NPR 503、Washington Post 403、Deutsche Grammophon 404，已達上限，之後未再嘗試）。事實庫無研究稿。實際開頁讀到：維基、Ionarts、Classical Music Daily。⚠ Ionarts 是個人音樂部落格，引述前人話語，非獨立的大型媒體，且 Ionarts 與 Classical Music Daily 各有錯（Classical Music Daily 的母親、出道年疑錯），故人生細節大多只收兩源一致處。未收（單源）：維基記 ETH Zurich 讀化學後轉向音樂；1958 至 1964 年杜塞道夫、1964 至 1966 年蘇黎世、1966 至 1973 年斯圖加特的職位；1966 年愛丁堡音樂節英國首演《Wozzeck》；1978 年首次與芝加哥交響樂團合作；1990 年代初退出音樂會；Plácido Domingo 稱他是『當代最偉大的指揮』（單源，書籍）；Abbado 稱他是 20 世紀最偉大的指揮之一『甚至是最偉大』（維基引 Rai Radio 3，單源）、Abbado 認為他是最佳《Tristan》指揮與 Karajan 稱『如此偉大的音樂家其實不愛音樂』（Ionarts 單源）；BBC Music Magazine 2011 年百位指揮家票選為史上最偉大（雜誌榜單，依規不收）；留聲機名人堂 2012 年入選（維基單源）；各國勳章（維基單源，Pour le Mérite 1990 等）；『一生只指揮 96 場音樂會、約 400 場歌劇』（維基與 BBC 稿，單源）。錄音名單（與維也納愛樂的貝多芬第五、第七號、布拉姆斯第四號、舒伯特第三與第八號，錄音很少）只見維基單源，已移出 facts，寫作層若要寫請具名『維基記』。 維基另記他『一生據稱只接受過一次訪問』（單源，已不放 facts）。"
+ },
+ {
+  "key": "charles munch",
+  "name": "Charles Munch",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1891 年 9 月 26 日生於阿爾薩斯的史特拉斯堡（當時屬德國），1968 年 11 月 6 日在美國維吉尼亞州里奇蒙過世。",
+      "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+      "src2": "https://www.britannica.com/biography/Charles-Munch",
+      "from": "new"
+     },
+     {
+      "f": "他是管風琴家 Ernst Münch 的兒子，早年學小提琴，後來跟 Lucien Capet 在巴黎、跟 Carl Flesch 在柏林學習。",
+      "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+      "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/munch-originally-munch-charles",
+      "from": "new"
+     },
+     {
+      "f": "他先是小提琴家，曾任萊比錫布商大廈管弦樂團（Gewandhaus）的首席；1932 年 11 月 1 日在巴黎指揮 Straram 樂團，才以 41 歲之齡登上指揮生涯。",
+      "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+      "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/munch-originally-munch-charles",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以現代法國曲目見長，Debussy、Ravel 是招牌；維基稱他也被視為 Berlioz 的權威詮釋者，Encyclopedia.com 稱他在法國曲目上享有傑出聲望，演奏帶著「spontaneity, color, and elegance」。",
+      "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+      "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/munch-originally-munch-charles",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1949 至 1962 年他任波士頓交響樂團音樂總監，期間有 39 部世界首演；1951 至 1962 年也主持 Tanglewood（Berkshire 音樂中心）。",
+      "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+      "src2": "https://www.britannica.com/biography/Charles-Munch",
+      "from": "new"
+     },
+     {
+      "f": "1967 年巴黎管弦樂團（Orchestre de Paris）成立，Munch 在 1967 年 11 月 14 日指揮首場音樂會；巴黎愛樂的官方歷史稱他是樂團的「founding father」；他在 1968 年隨樂團巡迴北美時過世。",
+      "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+      "src2": "https://philharmoniedeparis.fr/en/orchestre-de-paris/history",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1932 年登上指揮台，1949 至 1962 年任波士頓交響樂團音樂總監，1967 年創立巴黎管弦樂團，1968 年過世。",
+      "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+      "src2": "https://philharmoniedeparis.fr/en/orchestre-de-paris/history",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1932 年 11 月 1 日在巴黎的指揮首演。",
+    "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+    "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/munch-originally-munch-charles",
+    "from": "new"
+   },
+   {
+    "f": "1949 至 1962 年任波士頓交響樂團音樂總監。",
+    "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+    "src2": "https://www.britannica.com/biography/Charles-Munch",
+    "from": "new"
+   },
+   {
+    "f": "1967 年 11 月 14 日指揮巴黎管弦樂團首場音樂會。",
+    "src": "https://en.wikipedia.org/wiki/Charles_Munch_(conductor)",
+    "src2": "https://philharmoniedeparis.fr/en/orchestre-de-paris/history",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "過世月份：維基、Britannica、Encyclopedia.com 都寫 1968 年 11 月 6 日；巴黎愛樂官網歷史頁寫 1968 年 10 月，疑為該頁筆誤，採 11 月 6 日。",
+   "波士頓交響樂團世界首演數：維基與 Britannica 都寫 39 部世界首演；Britannica 另寫 17 部美國首演，維基寫 58 部，兩源不一致，只寫 39。",
+   "Britannica 稱 1935 年他參與創辦 Paris Philharmonic Orchestra 並任指揮至 1938 年；維基寫 1935 至 1938 年他任 Société Philharmonique de Paris 指揮，名稱不一致，facts 不收。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "搜尋 5 次：維基原始碼（curl，全文讀過）、Britannica、WebSearch（巴黎管弦樂團與 Ozawa）、Encyclopedia.com、巴黎愛樂官網歷史頁；失敗 1 次（Classical Music Daily 404）。事實庫無研究稿。同名確認：卡池三張專輯（Berlioz 幻想交響曲、Ravel 達芙妮與克羅埃、Saint-Saëns 第三號）都是這位法國指揮，無混卡。未收（單源）：任教地點（維基、Britannica 寫史特拉斯堡音樂院，Encyclopedia.com 寫萊比錫音樂院，兩派不一致，不收）；維基記他出生名 Karl Münch、自認『以阿爾薩斯人與音樂人而言純然是德國人』、一戰被徵入德軍；二戰留在法國指揮、拒絕赴德演出並保護樂團成員、1945 年獲榮譽軍團勳章（紅綬）、1952 年升司令級（維基單源）；他在 Tanglewood 的學生有小澤征爾（維基單源，搜尋摘要也提到但未開頁）；Munch 讓 Boston 樂團首度赴歐洲巡演（1952、1956）並在 1956 年成為首支赴蘇聯演出的美國樂團（維基單源）；著作《我是指揮》1954 年（維基單源）；Encyclopedia.com 稱他歸化法國公民（與維基『阿爾薩斯法國人』敘述未交叉）。巴黎愛樂官網寫 Munch 是 founding father，但未寫馬爾羅與蘭多夫斯基的角色，搜尋摘要寫馬爾羅部長邀他創團，本層未開頁，故 facts 只寫創團首場與 founding father。Encyclopedia.com 該條是傳記辭典轉載，視為與維基獨立。Lipatti 的法國老師之一是 Munch（指揮，維基與 Classical Music Daily 都記），可作為跨藝人的連結，但不放 facts。"
+ },
+ {
+  "key": "danny elfman",
+  "name": "Danny Elfman",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1953 年 5 月 29 日生於美國洛杉磯，在洛杉磯長大。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.wisemusicclassical.com/composer/2267/Danny-Elfman/",
+      "from": "new"
+     },
+     {
+      "f": "他沒受過正式音樂訓練，是自學出身的作曲家。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.wisemusicclassical.com/composer/2267/Danny-Elfman/",
+      "from": "new"
+     },
+     {
+      "f": "哥哥 Richard Elfman 組了街頭與劇場表演團體 The Mystic Knights of the Oingo Boingo，Danny 先擔任其中的音樂人；團體後來變成搖滾樂團 Oingo Boingo。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/danny-elfman",
+      "from": "new"
+     },
+     {
+      "f": "1980 年，他為哥哥 Richard 導演的電影《Forbidden Zone》寫歌與配樂。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/danny-elfman",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1985 年，Tim Burton 找他替《Pee-wee's Big Adventure》配樂，兩人從此成為長期搭檔；他日後的配樂包括《Beetlejuice》《Batman》《Edward Scissorhands》《The Nightmare Before Christmas》。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/danny-elfman",
+      "from": "new"
+     },
+     {
+      "f": "他替《辛普森家庭》寫了主題曲。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.wisemusicclassical.com/composer/2267/Danny-Elfman/",
+      "from": "new"
+     },
+     {
+      "f": "《Serenada Schizophrana》是他第一首專為音樂廳寫的管弦樂作品。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.wisemusicclassical.com/composer/2267/Danny-Elfman/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱他 1989 年為 Burton 的《Batman》寫的配樂影響深遠，標誌著一次風格轉向：走向黑暗、編制濃密的浪漫派語彙；Wise Music Classical（其作品出版方的作曲家簡介）稱他是好萊塢的頂尖電影配樂家之一。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.wisemusicclassical.com/composer/2267/Danny-Elfman/",
+      "from": "new"
+     },
+     {
+      "f": "Oingo Boingo 在 1990 年代中期解散，他把重心全轉到配樂。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/danny-elfman",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1980 年為《Forbidden Zone》配樂，1985 年首次替 Burton 的電影配樂，1989 年《Batman》。",
+      "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/danny-elfman",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1985 年首次替 Tim Burton 的電影配樂（《Pee-wee's Big Adventure》）。",
+    "src": "https://en.wikipedia.org/wiki/Danny_Elfman",
+    "src2": "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/danny-elfman",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "出生地：維基與 Wise Music Classical 寫洛杉磯，Encyclopedia.com 寫德州 Amarillo（在洛杉磯長大），兩派不一致，採洛杉磯（維基、Wise 兩源）。",
+   "Oingo Boingo 解散年：維基寫 1995 年，Encyclopedia.com 寫 1995 或 1996 年，facts 只寫『1990 年代中期』；解散原因維基寫聽力受損與配樂事業衝突，Encyclopedia.com 寫好萊塢工作量，不寫原因。",
+   "奧斯卡提名數：維基寫四次，Wise Music Classical 寫三次，兩源不一致，facts 不寫。",
+   "事實庫與上線簡介（《Batman》原聲帶錄音班底：Sinfonia of London、Steve Bartek、Shirley Walker、Steven Scott Smalley）和搜尋摘要所見一致，無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "搜尋 5 次：維基頁、維基原始碼（curl，全文讀過）、WebSearch、Encyclopedia.com、Wise Music Classical；失敗 1 次（Britannica 404）。⚠ Wise Music Classical 是他的作品出版方網站，屬官方簡介、非獨立，故 legacy 第一條只寫『Wise 稱』。Elfman 在世，奧斯卡提名數、艾美獎座數、葛萊美座數一律不寫（獎項細節維基單源，且兩源數字不一致）。未收（單源）：《Forbidden Zone》是他的第一份電影配樂（維基寫法，Encyclopedia.com 只寫哥哥請他配樂）；維基記他 1976 年接手 Mystic Knights、1979 年更名 Oingo Boingo（主唱兼主要寫歌人）、《Dead Man's Party》1985；Steve Bartek 協助管弦樂編曲；《Pee-wee》致敬 Bernard Herrmann 與 Nino Rota，他自述最大影響是 Herrmann；《Serenada Schizophrana》2005 年 2 月 23 日由 American Composers Orchestra 在 Carnegie Hall 首演（維基單源，上線專輯為 2006 年 CD 版）；2017 年小提琴協奏曲《Eleven Eleven》；2021 年 6 月 11 日單飛專輯《Big Mess》（維基單源，共 18 首，卡池專輯 Big Mess 2021）；《Batman》的葛萊美（維基與 Encyclopedia.com 皆寫 1989 年得獎，但獎項類別、屆次與主詞未查，沒有第三源，不收）；Disney Legend 2015、Max Steiner 獎 2017 等榮譽（維基單源）；他『自述靠抄寫 Duke Ellington 學作曲』（Encyclopedia.com 單源）。維基記他十八年樂團期間聽力受損，不放 facts。Oingo Boingo 出身這點在事實庫 slotsHint 已提示。"
+ },
+ {
+  "key": "david oistrakh",
+  "name": "David Oistrakh",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1908 年 9 月 30 日生於敖德薩（當時屬俄羅斯帝國，今烏克蘭），1974 年 10 月 24 日在阿姆斯特丹過世。",
+      "src": "https://en.wikipedia.org/wiki/David_Oistrakh",
+      "src2": "https://www.britannica.com/biography/David-Oistrakh",
+      "from": "new"
+     },
+     {
+      "f": "他五歲開始學小提琴，老師是敖德薩的 Pyotr Stolyarsky；1923 年進敖德薩音樂院，1926 年畢業。",
+      "src": "https://en.wikipedia.org/wiki/David_Oistrakh",
+      "src2": "https://queenelisabethcompetition.be/en/laureates/david-oistrakh/133/",
+      "from": "new"
+     },
+     {
+      "f": "1934 年起他在莫斯科音樂院任教。",
+      "src": "https://en.wikipedia.org/wiki/David_Oistrakh",
+      "src2": "https://www.britannica.com/biography/David-Oistrakh",
+      "from": "new"
+     },
+     {
+      "f": "1937 年他在布魯塞爾的伊薩伊國際小提琴大賽（Ysaÿe Competition）拿下第一名。",
+      "src": "https://www.britannica.com/biography/David-Oistrakh",
+      "src2": "https://queenelisabethcompetition.be/en/laureates/david-oistrakh/133/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "蕭士塔高維契的兩首小提琴協奏曲都題獻給他，並由他首演。",
+      "src": "https://en.wikipedia.org/wiki/David_Oistrakh",
+      "src2": "https://www.classicalmusicdaily.com/articles/o/d/david-oistrakh.htm",
+      "from": "new"
+     },
+     {
+      "f": "西方要到 1950 年代中期才廣泛認識他：1951 年起他到歐洲巡演，1955 年首次到美國巡演。",
+      "src": "https://www.britannica.com/biography/David-Oistrakh",
+      "src2": "https://en.wikipedia.org/wiki/David_Oistrakh",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱他是二十世紀最傑出的小提琴家之一（one of the preeminent violinists of the 20th century）；伊莉莎白王后大賽官網稱他是二十世紀中葉蘇聯的首席小提琴家（the premiere violinist of the mid-twentieth century Soviet Union）。",
+      "src": "https://en.wikipedia.org/wiki/David_Oistrakh",
+      "src2": "https://queenelisabethcompetition.be/en/laureates/david-oistrakh/133/",
+      "from": "new"
+     },
+     {
+      "f": "他的兒子 Igor Oistrakh 也成為小提琴家。",
+      "src": "https://en.wikipedia.org/wiki/David_Oistrakh",
+      "src2": "https://www.britannica.com/biography/David-Oistrakh",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1937 年伊薩伊國際小提琴大賽第一名。",
+    "src": "https://www.britannica.com/biography/David-Oistrakh",
+    "src2": "https://queenelisabethcompetition.be/en/laureates/david-oistrakh/133/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "首次莫斯科登台年：Britannica 寫 1929 年，Classical Music Daily 寫 1933 年，維基記 1927 年遷莫斯科、1934 年起任教，三說不一，facts 不寫。",
+   "斯大林獎年份：維基寫 1942 年，bach-cantatas.com 寫 1943 年，facts 不寫。",
+   "伊薩伊大賽與伊莉莎白王后大賽：維基寫他『拿下布魯塞爾伊莉莎白王后大賽首獎』，Britannica 與伊莉莎白王后大賽官網寫 1937 年伊薩伊大賽首獎（該賽後來改名），facts 採 1937 年伊薩伊大賽首獎。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "搜尋 6 次：維基原始碼（curl，全文讀過）、Britannica、Classical Music Daily、WebSearch、伊莉莎白王后大賽官網、bach-cantatas.com。⚠ bach-cantatas.com 的 Oistrakh 傳記與維基文句高度重複（非獨立），只拿來核對，不當第二源。sound 第一條的第二源 Classical Music Daily 寫『題獻兩首協奏曲並由他首演』，伊莉莎白王后大賽官網寫蕭士塔高維契為他寫兩首協奏曲，三源一致。維基另記他也是 Khachaturian 協奏曲題獻者與 Prokofiev 奏鳴曲首演者（維基單源）。2 號協奏曲 1967 年、1 號協奏曲 1955 年首演（搜尋摘要，來自維基與樂團節目單，未開頁）。未收（單源）：猶太家庭商人之家（維基與 bach-cantatas.com，同文，非獨立）；1935 年華沙維尼亞夫斯基比賽第二名（維基：落在 Ginette Neveu 之後）；1949 年赫爾辛基是首次西方演出；莫斯科音樂院 1939 年升教授；1940 至 1963 年與 Knushevitsky、Oborin 的三重奏；教過 Gidon Kremer 等人（維基單源，名單長）；蘇聯榮譽（人民藝術家 1953、列寧獎 1960）維基單源，bach-cantatas 同文；Britannica 稱他有『exceptional technique and tone production』（單源）；搜尋摘要提到『百位小提琴家票選最受啟發者第一名』（雜誌類榜單，且未開頁，不收）。維基記他 1937 年與 Prokofiev 的棋賽被視為蘇聯棋風普及的重要因素（單源）。事實庫的上線簡介只講錄音，與本層無衝突。"
+ },
+ {
+  "key": "dinu lipatti",
+  "name": "Dinu Lipatti",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1917 年生於羅馬尼亞布加勒斯特的音樂世家：父親學過小提琴，母親是鋼琴家；George Enescu 是他的教父。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-history/dinu-lipatti",
+      "from": "new"
+     },
+     {
+      "f": "他在布加勒斯特音樂院跟 Florica Musicescu 學鋼琴。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.classicalmusicdaily.com/articles/l/d/dinu-lipatti.htm",
+      "from": "new"
+     },
+     {
+      "f": "1933 年他在維也納國際鋼琴大賽拿到第二名，之後到巴黎，跟 Alfred Cortot 學鋼琴、跟 Paul Dukas 學作曲，Dukas 過世後由 Nadia Boulanger 指導作曲；維基與 Classical Music Daily 也記他跟 Charles Munch 學指揮。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-history/dinu-lipatti",
+      "from": "new"
+     },
+     {
+      "f": "1943 年他離開羅馬尼亞，到瑞士日內瓦，在日內瓦音樂院任鋼琴教授。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-history/dinu-lipatti",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他最受稱許的是 Chopin、Mozart 與 Bach 的詮釋。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-history/dinu-lipatti",
+      "from": "new"
+     },
+     {
+      "f": "他的國際聲望主要靠 EMI／Columbia 的錄音建立，錄音量不大，留下的商業與現場錄音至今仍是後人理解他的依據。",
+      "src": "https://www.thepianofiles.com/dinu-lipatti-prince-of-pianists/",
+      "src2": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "同行對他評價極高：維基稱他生前就受到 Menuhin、Cortot、Nadia Boulanger 等重量級人物的讚譽；The Piano Files 列出 Cortot 稱他是鋼琴界地平線上的「真正啟示」，Classical Music Daily 記 Boulanger 稱他是「史上最偉大的鋼琴家之一」。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.thepianofiles.com/dinu-lipatti-prince-of-pianists/",
+      "from": "new"
+     },
+     {
+      "f": "評論家 Harold Schonberg 1953 年寫道，Lipatti 若活得更久，會成為這個時代最頂尖的藝術家之一。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.thepianofiles.com/dinu-lipatti-prince-of-pianists/",
+      "from": "new"
+     },
+     {
+      "f": "1950 年 9 月 16 日他在法國 Besançon 音樂節舉行最後一場獨奏會。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.classicalmusicdaily.com/articles/l/d/dinu-lipatti.htm",
+      "from": "new"
+     },
+     {
+      "f": "那場獨奏會上，他把 Chopin 圓舞曲排成自己決定的順序，最後一首改以巴赫的〈Jesu, Joy of Man's Desiring〉作結。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.thepianofiles.com/dinu-lipatti-prince-of-pianists/",
+      "from": "new"
+     },
+     {
+      "f": "他 1950 年 12 月 2 日在日內瓦過世，得年 33 歲。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-history/dinu-lipatti",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1933 年維也納比賽第二名，1943 年定居日內瓦，1950 年過世。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+      "src2": "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-history/dinu-lipatti",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1933 年維也納國際鋼琴大賽第二名。",
+    "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+    "src2": "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-history/dinu-lipatti",
+    "from": "new"
+   },
+   {
+    "f": "1950 年 9 月 16 日在 Besançon 舉行最後一場獨奏會。",
+    "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+    "src2": "https://www.classicalmusicdaily.com/articles/l/d/dinu-lipatti.htm",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "生日：維基寫 1 April 1917（新曆，並以 Julian 為 19 March），Classical Music Daily、Encyclopedia.com、The Piano Files 寫 19 March 1917，facts 只寫 1917 年。",
+   "最後獨奏會日期：維基與 Classical Music Daily 寫 1950 年 9 月 16 日；Encyclopedia.com 寫 9 月 19 日，The Piano Files 寫 12 月，採 9 月 16 日（兩源，且維基節目表同）。",
+   "卒年：Classical Music Daily 寫 1955 年 12 月 2 日，與維基、Encyclopedia.com、The Piano Files 的 1950 不符，採 1950（三源）；Classical Music Daily 該處是筆誤。",
+   "維也納比賽年份：維基、Classical Music Daily、Encyclopedia.com 寫 1933 年，搜尋摘要有 1934 年一說，採 1933。",
+   "上線簡介《Chopin: Waltzes (Geneva 1950)》寫『同年 12 月 2 日他在日內瓦辭世，得年 33 歲』與兩源一致；事實庫研究稿的死因敘述不收。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "搜尋 6 次：維基頁摘要、維基原始碼（curl，全文讀過）、Classical Music Daily、WebSearch、Encyclopedia.com、The Piano Files；失敗 1 次（Britannica 404）。事實庫研究稿的死因與疾病一律不收（依本批特注）；維基與 The Piano Files 提到最後獨奏會時的身體狀況與疾病，本層一律未寫進 facts。未收（單源）：Cortot 因不滿評審結果辭去評審（維基單源）；1935 年巴黎首演獨奏會（維基單源，5 月 17 日 Dukas 過世）；1930 年 13 歲在布加勒斯特歌劇院演 Grieg 鋼琴協奏曲；作曲作品受 Bartók 影響；1997 年追選為羅馬尼亞科學院院士（維基單源，Encyclopedia.com 也寫 2004 年 Lipatti-Haskil 基金會，另一件）；『Chopin 圓舞曲錄音自發行以來從未絕版』（維基標 citation needed）；Toscanini『終於有了不任性、且速度彈性合我意的 Chopin』、Karajan『已不是鋼琴的聲音而是純粹的音樂』、Schnabel『全新的鋼琴彈法』、Poulenc『神聖精神性的藝術家』（The Piano Files 單源引語）；與 Walter Legge 的 1947 至 1950 年錄音合作（維基單源）；上線簡介所述『1950 年 7 月日內瓦廣播電台、Legge 錄音』The Piano Files 也寫 7 月日內瓦錄音，但未提 Legge 的器材與天數，此處不放 facts。The Piano Files 是個人網站，與維基獨立程度有限。教父 Enescu 在維基寫為小提琴家兼作曲家，Encyclopedia.com 寫『羅馬尼亞音樂家』，採兩者交集的『作曲家兼小提琴家』僅維基，寫作層可只寫『Enescu 是他的教父』。 最後獨奏會日期不採 The Piano Files（寫 12 月，疑誤），facts 的『Jesu』那條只取該頁的曲目描述，日期另條用維基＋Classical Music Daily。Lipatti 1934 年移居巴黎（Encyclopedia.com 與 The Piano Files 兩源皆有）已不寫入 era，因主要取兩源一致者可另補。"
  }
 ]
