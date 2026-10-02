@@ -238,3 +238,15 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 020 w1 審稿（1 處）：IU 刪 Gallup Korea 年度歌手民調「兩度第一」（民調排名比照榜單，且屬在世者累計）。Harry Styles「第一位單獨登上美國版 Vogue 封面的男性」有 NBC 獨立源，照准。
 - 020 w2 審稿無修正。江蕙 2024 年復出（10 月國慶晚會開唱）、Aqua 2026-05-18 宣布解散，皆經主線 WebSearch 核實（中時、自由；Euronews、Consequence）。大滝詠一 加主線事實後升 full，照准。
 - **ar-b-020 上線**：40 位，reviewFixes 1。
+
+### ar-b-021
+- g1 交件。thin：Collage、FKA twigs。Demi Lovato、Gal Costa 搜尋 9 次超限 1 次（該次已撤）。pubIssues 6（Collage《Collage》全女性說法、《Kadriko》《Käokiri》年份；Girls' Generation《Oh!》含銷量（簡介層不禁，不改）、《Gee》發行地；H.O.T.《We Hate All Kinds of Violence》含銷量排名（簡介層不禁，不改））→ 前三筆與《Gee》本機待核。
+- 021 g2 交件（QA 本組 0）。thin：ITZY（地位 none）、Julia Holter（地位 none）、Kesha（失敗請求 5 次超限，未取得內容）、Little Mix。w1（g1+g2）派出。
+- 021 g3 交件。thin：Tate McRae。Stray Kids 搜尋 9 次超限 1 次（該次已撤）。單源未收：Sabrina Carpenter 2026 葛萊美入圍、Sigrid MTV EMA、Stray Kids／SEVENTEEN UNESCO 任命。pubIssues 1（Phương Dung 出生年 1945／1946）→ 本機待核；The Field Mice《Skywriting》「Ian Catt 把路線帶去 Saint Etienne」因果待核。
+- 021 w1 審稿（1 處）：Claude François「意外身故」改「過世」（不寫死因類別）。FKA twigs《Eusexua》2026 葛萊美最佳舞曲／電子專輯經主線 WebSearch 核實（Billboard、grammy.com）。Chế Linh 放寬至 259 字、被關押 28 個月（兩個語版維基）照准——屬人物主體，寫法中性。Demi Lovato TIME100 屬推選名單，照准。
+- 021 g4 交件。thin：Wild Nothing（地位 none）、조용필（貢獻 none）。韓國人名正文寫漢字（李文世、趙容弼）。サザン「国」字為日文原文，保留。pubIssues 6（이문세 4 集曲名混漢字待核；조용필 1 集「第一張破百萬」；原子邦妮《折桂令》首張單源；其餘為簡介銷量，簡介層不禁，不改）→ 本機待核。w2（g3+g4）派出。
+
+### ar-b-022
+- g1 交件（QA 本組 0）。全 full。王力宏「chinked-out」自創專名含族群貶詞字根，正文不用；婚姻糾紛不收。王菲只寫「繼鞏俐之後第二位登上《時代》封面的華人藝人」。pubIssues 3（徐小鳳《風雨同路》「小白光」來由；徐小鳳《每一步》加盟寶麗金年；王菲《天空》署名年份）→ 本機待核。
+- 021 w2 審稿（1 處）：原子邦妮刪「合計三度入圍」（在世者累計）。ちあきなおみ 本名「瀬川三恵子」日文字形主線核對無誤。韓國人名寫「韓文（漢字）」照准。
+- **ar-b-021 上線**：40 位，reviewFixes 2。

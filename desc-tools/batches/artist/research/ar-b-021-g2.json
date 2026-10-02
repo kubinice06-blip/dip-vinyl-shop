@@ -4,7 +4,7 @@
     "name": "Heavenly",
     "slots": {
       "origin": {
-        "status": "bank",
+        "status": "gap",
         "facts": [
           {
             "f": "Heavenly 1989 年在牛津組成，四位創團成員 Amelia Fletcher（人聲、吉他）、她弟弟 Mathew Fletcher（鼓）、Peter Momtchiloff（吉他）與 Robert Pursey（貝斯）都來自剛解散的 Talulah Gosh。",
@@ -157,19 +157,19 @@
           {
             "f": "Julia Holter 生在威斯康辛州密爾瓦基，六歲搬到洛杉磯。",
             "src": "https://en.wikipedia.org/wiki/Julia_Holter",
-            "src2": "http://issuemagazine.com/julia-holter/",
+            "src2": "https://issuemagazine.com/julia-holter/",
             "from": "new"
           },
           {
             "f": "她在密西根大學念作曲，後來進加州藝術學院（CalArts），在那裡跟 Michael Pisaro 學。",
             "src": "https://en.wikipedia.org/wiki/Julia_Holter",
-            "src2": "http://issuemagazine.com/julia-holter/",
+            "src2": "https://issuemagazine.com/julia-holter/",
             "from": "new"
           },
           {
             "f": "她覺得學院古典那種目標導向、一路往前發展的寫法讓她卡住，CalArts 則給她開放、鼓勵實驗的環境。",
             "src": "https://thequietus.com/interviews/julia-holter-interview-loud-city-song/",
-            "src2": "http://issuemagazine.com/julia-holter/",
+            "src2": "https://issuemagazine.com/julia-holter/",
             "from": "new"
           }
         ]
@@ -303,7 +303,7 @@
             "from": "new"
           },
           {
-            "f": "她 17 歲時沒念完高中，就離開納許維爾去追音樂。",
+            "f": "她 17 歲時沒念完高中，就去追音樂。",
             "src": "https://en.wikipedia.org/wiki/Kesha",
             "src2": "https://www.biography.com/musicians/kesha",
             "from": "new"
@@ -449,5 +449,368 @@
     "status": "thin",
     "pubIssues": [],
     "notes": "事實庫完全沒有料，從零查，補查 8 次（維基 Little Mix、WebSearch、Today、RTE、WebSearch（BRIT 2021）、NME、維基 Brit Award for British Group、musicfeeds）；失敗請求 2 次（Britannica 404、IMDb 403，不計入）。同名檢查：poolAlbums 三張（《DNA》2012、《Get Weird》2015、《LM5》2018）皆為這個英國女團，無混卡。『首個團體冠軍』一條：維基稱 first group and only girl group to win the original UK series（單源，未收『唯一女團』）；Today 與 RTE 皆說首個團體。『首個女子團體』一條屬『第一』類宣稱：NME、musicfeeds、維基 Brit 條目三處一致，Brit 條目有完整得獎名單可核對無反例；NME 與維基 Brit 條目非同站但 NME 與 musicfeeds 皆為新聞報導，獨立程度尚可。sound 偏薄：只讀到維基稱主題包含女性主義、性別平等、LGBT 權利、身體自主與反性別歧視，以及 pop／R&B／dance-pop 與三個八度女高音音域之說（維基單源，未收）；曲風描述未取得第二源。未收（單源）：成員出身（Jesy Nelson 艾塞克斯、Leigh-Anne Pinnock 倫敦、Jade Thirlwall 與 Perrie Edwards 南希爾茲，RTE 單源）；Simon Cowell 稱她們是 a revelation（RTE 單源）；Jesy Nelson 2020 年 12 月離團（維基單源，musicfeeds 只提離團未給年份，成員異動年份需兩源，未收）；2021 年 12 月宣布 2022 年巡演後休團（維基單源）；〈Cannonball〉為翻唱 Damien Rice 的出道單曲（維基、RTE、Today 一致，屬履歷，不收）；美國榜與英國榜位、銷量、獎項座數（不寫）；『biggest girl group in the world』是維基轉述的說法，無具名來源，不收；《LM5》《Get Weird》《DNA》皆無事實庫研究稿，專輯層級細節本層未查。"
+  },
+  {
+    "key": "los ángeles negros",
+    "name": "Los Ángeles Negros",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Los Ángeles Negros 1968 年在智利南部的小城 San Carlos 成軍；創團的 Cristián Blasser（鼓）與 Mario Gutiérrez（吉他）起家，Germaín de la Fuente 後來加入擔任主唱。",
+            "src": "https://www.cnnchile.com/cultura/mario-gutierrez-muerte-los-angeles-negros-fundador/",
+            "src2": "https://en.wikipedia.org/wiki/Los_Ángeles_Negros",
+            "from": "new"
+          },
+          {
+            "f": "他們 1968 年在奇廉（Chillán）一場地方樂團比賽中勝出，因此錄下第一支單曲，接著被 Odeon 簽下。",
+            "src": "https://www.losangelesnegros.mx/biograf%C3%ADa.html",
+            "src2": "https://en.wikipedia.org/wiki/Los_Ángeles_Negros",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們把搖滾樂團的編制放進浪漫情歌與 bolero，混入迷幻放克，被稱為「balada rockmántica」（bolero-beat）；CNN Chile 稱這種浪漫情歌加搖滾配器的混合讓他們在整個拉丁美洲都辨認得出來。",
+            "src": "https://www.cnnchile.com/cultura/mario-gutierrez-muerte-los-angeles-negros-fundador/",
+            "src2": "https://en.wikipedia.org/wiki/Los_Ángeles_Negros",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的歌被 Celia Cruz、Raphael 等拉丁樂壇名人翻唱。",
+            "src": "https://www.losangelesnegros.mx/biograf%C3%ADa.html",
+            "src2": "https://en.wikipedia.org/wiki/Los_Ángeles_Negros",
+            "from": "new"
+          },
+          {
+            "f": "《Y Volveré》（1969）的曲子到了五十年後仍被新一代取樣，Beastie Boys 與 Jay-Z 都取樣過他們的作品。",
+            "src": "https://ccandtnr.com/2019/08/21/hidden-gems-los-angeles-negros-and-y-volvere-50-years-later/",
+            "src2": "https://en.wikipedia.org/wiki/Los_Ángeles_Negros",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們 1982 年起定居墨西哥，此後以墨西哥為基地。",
+            "src": "https://www.losangelesnegros.mx/biograf%C3%ADa.html",
+            "src2": "https://en.wikipedia.org/wiki/Los_Ángeles_Negros",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "成軍時間：官方網站寫 1967 年底在 San Carlos 的學校，並寫創團成員含 Federico Blasser、Luis Alarcón；英文維基、西班牙文維基與 CNN Chile 都寫 1968 年，創團成員名單也不同（維基為 Cristián Blasser、Mario Gutiérrez、Sergio Rojas 與 de la Fuente）。採 1968 年，不寫創團全名單。",
+      "遷居墨西哥：英文維基寫 1971 年遷墨西哥、定居 1982；西班牙文維基寫 1973 年 10 月設基地、1982 年定居；CNN Chile 寫 1970 年代中期。只收三處相符的 1982 年定居。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫只有 MusicBrainz 專輯層級資料，生平全靠補查；補查 8 次（西班牙文維基、英文維基、WebSearch、ccandtnr、西班牙文維基再查、WebSearch、CNN Chile、官方網站傳記）；失敗請求 1 次（musicapopular.cl 403，不計入）。同名檢查：poolAlbums 三張（《Y volveré》1969、《Esta noche la paso contigo》1971、《Aplaude mi final》1974）皆為智利樂團 Los Ángeles Negros（MB 藝人實體 3febb873），無混卡。兩源有非獨立處：英文維基與西班牙文維基是同站，其餘條目的 src 為 CNN Chile、官方網站、ccandtnr 三個各自獨立的頁面，但取樣與翻唱名單在 ccandtnr、官方網站與維基之間彼此重疊。Germaín de la Fuente 1974 年離團：西班牙文維基寫 1974 年 3 月、末場 4 月 8 日在芝加哥，英文維基寫主唱期 1968–1974，兩者同站，成員異動年份需兩源，未收。未收（單源）：西班牙文維基稱『el grupo más importante e influyente』於 música cebolla 類型；影響 Los Pasteles Verdes（秘魯）、Los Terrícolas（委內瑞拉）、Los Galos 與 Los Golpes（智利）（西班牙文維基）；英文維基稱影響 Los Bukis 與 Los Bunkers、2012 年獲 El Micrófono de Oro、〈El rey y yo〉入 GTA V 配樂；Raphael、José José、Celia Cruz、Los Tigres del Norte 翻唱（官方網站，Celia Cruz 與 Raphael 另見英文維基，已收）；巡演國名清單（官方網站）；創團名稱由來的雷擊傳說（搜尋摘要，未讀頁）；《Y Volveré》是第二張專輯、1969 年 10 月完成（ccandtnr；MB 與英文維基對『首張』定義不同，不收）。事實庫 MB 資料：Aplaude mi final 1974 為美國版、無廠牌名；與上線簡介一致，本層未發現上線簡介錯誤。專輯 Y volveré 的 1972 年美國 Parnaso 版（上線簡介）本層未查。 創團者當時是 San Carlos 的學生（Blasser 與 Gutiérrez）、de la Fuente 為學校職員（英文維基與官方網站），CNN Chile 未寫，故不入 facts。Chillán 比賽由 Radio La Discusión 與 Indis 唱片主辦（官方網站與搜尋摘要），已簡化。"
+  },
+  {
+    "key": "naushad",
+    "name": "Naushad",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Naushad Ali 1919 年 12 月 25 日生於勒克瑙（Lucknow），父親在宮廷任事；他從小跟老師學印度斯坦古典與器樂。",
+            "src": "https://en.wikipedia.org/wiki/Naushad",
+            "src2": "https://www.cinemaazi.com/people/naushad-ali",
+            "from": "new"
+          },
+          {
+            "f": "他 1937 年從勒克瑙到孟買闖蕩。",
+            "src": "https://en.wikipedia.org/wiki/Naushad",
+            "src2": "https://www.arabnews.com/archive/284323",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Baiju Bawra》（1952）作詞是 Shakeel Badayuni，除了一首以外全部以印度斯坦古典的拉格為底；演唱者除了播放歌手 Mohammed Rafi、Lata Mangeshkar、Shamshad Begum，還有古典聲樂家 Amir Khan 與 D. V. Paluskar，Amir Khan 同時擔任音樂顧問。",
+            "src": "https://en.wikipedia.org/wiki/Baiju_Bawra_(film)",
+            "from": "bank"
+          },
+          {
+            "f": "Naushad 的曲子兼用古典與民謠：DailyO 說他是最早把民謠帶進電影的作曲家之一，mapsofindia 也以古典、民謠與頌歌類作品形容他。",
+            "src": "https://www.dailyo.in/arts/naushad-ali-mughal-e-azam-bollywood-music-director-death-anniversary-34543",
+            "src2": "https://www.mapsofindia.com/on-this-day/5-may-2006-naushad-ali-indian-composer-and-producer-died",
+            "from": "new"
+          },
+          {
+            "f": "他替《Aan》（1952）用上約百人規模的樂隊，也引進混音技術。",
+            "src": "https://en.wikipedia.org/wiki/Naushad",
+            "src2": "https://www.mapsofindia.com/on-this-day/5-may-2006-naushad-ali-indian-composer-and-producer-died",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "英文維基稱他普遍被視為印地語電影最偉大、最重要的音樂總監之一；Onmanorama 也稱他是上個世紀最偉大的印度電影音樂總監之一。",
+            "src": "https://en.wikipedia.org/wiki/Naushad",
+            "src2": "https://www.onmanorama.com/entertainment/music/nine-years-without-naushad-ali.amp.html",
+            "from": "new"
+          },
+          {
+            "f": "1954 年首屆 Filmfare 獎的最佳音樂總監由他以《Baiju Bawra》（1952）拿下；首屆與次屆這個獎是頒給單一歌曲而非整張原聲帶，他得獎的歌是〈Tu Ganga Ki Mauj〉。",
+            "src": "https://en.wikipedia.org/wiki/Filmfare_Award_for_Best_Music_Director",
+            "src2": "https://www.cinemaazi.com/people/naushad-ali",
+            "from": "new"
+          },
+          {
+            "f": "他獲有 Dadasaheb Phalke Award，並在 1992 年獲 Padma Bhushan。",
+            "src": "https://en.wikipedia.org/wiki/Naushad",
+            "src2": "https://www.mapsofindia.com/on-this-day/5-may-2006-naushad-ali-indian-composer-and-producer-died",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 2006 年 5 月 5 日在孟買過世。",
+            "src": "https://en.wikipedia.org/wiki/Naushad",
+            "src2": "https://www.arabnews.com/archive/284323",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1954 年首屆 Filmfare 最佳音樂總監獎得主，作品為《Baiju Bawra》。",
+        "src": "https://en.wikipedia.org/wiki/Filmfare_Award_for_Best_Music_Director",
+        "src2": "https://www.cinemaazi.com/people/naushad-ali",
+        "from": "new"
+      },
+      {
+        "f": "1992 年獲 Padma Bhushan。",
+        "src": "https://en.wikipedia.org/wiki/Naushad",
+        "src2": "https://www.mapsofindia.com/on-this-day/5-may-2006-naushad-ali-indian-composer-and-producer-died",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Dadasaheb Phalke Award 年份：英文維基與搜尋摘要寫 1981，mapsofindia 寫 1982（可能是 1981 年度、1982 年頒發）。年份不一致，facts 只寫『獲有』，不寫年份。",
+      "享壽：cinemaazi 寫 87 歲，維基與 Arab News 寫 86 歲；facts 只寫過世日期、不寫享壽。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 8 次（維基 Naushad、WebSearch、Arab News、DailyO、cinemaazi、維基 Filmfare 最佳音樂總監、mapsofindia、Onmanorama）；失敗請求 1 次（Britannica 404，不計入）。同名檢查：poolAlbums 三張（《Baiju Bawra》1952、《Mother India》1957、《Mughal-E-Azam》1960）皆為作曲家 Naushad Ali，無混卡。事實庫研究稿與上線簡介三張一致，無衝突，bank 的 Baiju Bawra 條單源（維基 Baiju Bawra 條目，上線簡介同寫），保留為 bank。第一屆 Filmfare：維基（Naushad 條與 Filmfare 條，同站）、cinemaazi 皆說他是首位得主；Filmfare 條目特別註明首兩年是頒給單曲〈Tu Ganga Ki Mauj〉而非整部作品，寫作層請避免寫成『整張原聲帶得獎』；『第一』類已用兩個站台核對、無反例。生年：維基與 cinemaazi 一致（1919 年 12 月 25 日），mapsofindia 亦同，三處一致。去孟買：維基寫 1937 年底，Arab News 寫 1937 年，cinemaazi 寫十八歲時（約同年），一致。未收（單源）：Mother India 是第一部入圍奧斯卡的印度電影（維基單源，且屬『第一』類，未另查反例，宜只在專輯卡寫上線簡介已有的『入圍最佳外語片』）；Aan 的百人樂隊是『第一』（維基稱 first，mapsofindia 只說有此編制，未收『第一』）；『分開錄音人聲與配樂』（維基單源）；首部獨立作曲電影《Prem Nagar》（1940）與《Rattan》（1944）突破（維基；Arab News 亦提 Ratan 突破，但作曲年份兩源寫法不同，屬履歷不收）；Carter Road 改名 Sangeetkar Naushad Ali Marg、Sangeet Natak Akademi 獎（cinemaazi 與 mapsofindia，年份只有 mapsofindia 的 1992 單源）；Dadasaheb Phalke 年份見 conflicts；片頭字幕名字排在男女主角之後、製片人在錄音室不得開口（DailyO 單源）；『1940–50 年代 Naushad 領頭、別人跟進』（DailyO 單源）；Bade Ghulam Ali Khan 因 Baiju Bawra 破例為電影演唱（DailyO，與上線簡介同向）；詩人兼電影製片、1998 年 Aathwan Sur（mapsofindia 單源）。 父親起初反對他走音樂（cinemaazi 單源）；到孟買後先當助理、鋼琴手與助理作曲（維基與 cinemaazi，未與 Arab News 對上），皆不入 facts。DailyO 原句為『one of the first composers to bring folk music into films』，屬『最早之一』類單源宣稱，寫作層宜保守。"
+  },
+  {
+    "key": "o.p. nayyar",
+    "name": "O.P. Nayyar",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "O. P. Nayyar 1926 年生於拉合爾（當時屬英屬印度），早年在拉合爾的 All India Radio 工作。",
+            "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+            "src2": "https://www.iheart.com/artist/op-nayyar-93366",
+            "from": "new"
+          },
+          {
+            "f": "他 1949 年到孟買進電影圈。",
+            "src": "https://www.iheart.com/artist/op-nayyar-93366",
+            "src2": "https://www.thefamouspeople.com/profiles/o-p-nayyar-23724.php",
+            "from": "new"
+          },
+          {
+            "f": "他沒有受過正式的古典音樂訓練，是自學出身。",
+            "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+            "src2": "https://www.etvbharat.com/en/!lifestyle/op-nayyar-birth-anniversary-birthday-bollywood-film-music-composer-enn25011601718",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的招牌是把旁遮普民謠的節奏與西方樂器混在一起，最有名的是模仿馬蹄聲的「tonga beat」，Gulf News 形容那是帶馬蹄聲的節奏，加上民謠與現代樂器的混合。",
+            "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+            "src2": "https://gulfnews.com/world/asia/india/top-melody-maker-op-nayyar-dies-at-81-1.157065",
+            "from": "new"
+          },
+          {
+            "f": "他主要與 Geeta Dutt、Asha Bhosle 和 Mohammed Rafi 合作，從沒和 Lata Mangeshkar 合作過。",
+            "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+            "src2": "https://gulfnews.com/world/asia/india/top-melody-maker-op-nayyar-dies-at-81-1.157065",
+            "from": "new"
+          },
+          {
+            "f": "英文維基註明這不是兩人交惡：Lata Mangeshkar 在訪談中澄清雙方毫無問題，Nayyar 認為她雖然是極好的歌手，但他的路數由 Asha Bhosle 或 Geeta Dutt 唱更合適，Lata 本人也同意這個看法。",
+            "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他被稱為「Rhythm King」（節奏之王）；AllMusic 的簡介（iHeart 轉載）稱他是 Asia's rhythm king，Gulf News 的訃聞也以這個稱號形容他。",
+            "src": "https://www.iheart.com/artist/op-nayyar-93366",
+            "src2": "https://gulfnews.com/world/asia/india/top-melody-maker-op-nayyar-dies-at-81-1.157065",
+            "from": "new"
+          },
+          {
+            "f": "他 1958 年以《Naya Daur》（1957）拿下 Filmfare 最佳音樂總監獎。",
+            "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+            "src2": "https://www.thefamouspeople.com/profiles/o-p-nayyar-23724.php",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他和導演 Guru Dutt 合作的《Aar Paar》（1954）與《C.I.D.》（1956）奠定了他的路線。",
+            "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+            "src2": "https://gulfnews.com/world/asia/india/top-melody-maker-op-nayyar-dies-at-81-1.157065",
+            "from": "new"
+          },
+          {
+            "f": "他 2007 年 1 月 28 日在孟買過世，享年 81 歲。",
+            "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+            "src2": "https://www.thefamouspeople.com/profiles/o-p-nayyar-23724.php",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1958 年以《Naya Daur》獲 Filmfare 最佳音樂總監獎。",
+        "src": "https://en.wikipedia.org/wiki/O._P._Nayyar",
+        "src2": "https://www.thefamouspeople.com/profiles/o-p-nayyar-23724.php",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Lata Mangeshkar：事實庫（維基）寫 Lata 澄清雙方沒有問題、是 Nayyar 認為風格由 Asha Bhosle 或 Geeta Dutt 唱更合適；ETV Bharat 寫他『拒絕與 Lata 合作、認為歌比歌手重要』。facts 只寫『沒合作過』並保留維基版本的說明，ETV 說法放 notes。上線簡介寫『一生沒有與 Lata 合作過』，與維基、Gulf News 一致。",
+      "訓練背景：維基與 ETV Bharat 說他沒受過正式訓練、自學；thefamouspeople 說他透過 All India Radio 受過正式訓練。採兩源一致的『沒有正式古典訓練』。"
+    ],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 7 次（維基 O. P. Nayyar、WebSearch、ETV Bharat、iHeart、thefamouspeople、WebSearch、Gulf News）。同名檢查：poolAlbums 三張（《C.I.D.》1956、《Naya Daur》1957、《Kashmir Ki Kali》1964）皆為作曲家 O. P. Nayyar，無混卡。上線簡介三張與本層讀到的資料無衝突：Naya Daur 簡介說〈Yeh Desh Hai Veer Jawanon Ka〉替他拿下 1958 年 Filmfare 最佳音樂總監，維基寫 1958 年以《Naya Daur》得獎並提到該曲，二者相容（但『是這首歌讓他得獎』本層未驗證，維基只說得獎作品是《Naya Daur》）。『Rhythm King』一條：iHeart 簡介是 AllMusic 文字的轉載，與 Gulf News 為不同機構，獨立。未收（單源）：All India Radio 以『太潮、太西化』為由禁播他的歌、他的歌在 Radio Ceylon 大受歡迎（ETV Bharat）；西式鼓與響板和 tabla、dholak 並用（ETV Bharat）；拒絕 Lata Mangeshkar Award、與 Rafi 及 Kishore Kumar 關係緊張（ETV Bharat）；1974 年與 Asha Bhosle 的合作結束（搜尋摘要，未讀頁；維基亦提 1974）；1953 年 Baaz 帶來與 Guru Dutt 合作（thefamouspeople）與維基寫的 Aar Paar 1954 為突破不一致，不收；iHeart 稱他 11 歲在 All India Radio 彈鋼琴、而維基稱他在拉合爾電台是歌手，說法不一，只收『在 All India Radio 工作』；晚年與家人疏遠、葬禮無家人出席（維基，屬私人細節不收）；1950 年代起與 Asha Bhosle 合作近 60 部電影（搜尋摘要）。"
+  },
+  {
+    "key": "p!nk",
+    "name": "P!nk",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "P!nk 本名 Alecia Beth Moore，1979 年 9 月 8 日生於賓州 Doylestown，十多歲就在費城的夜店圈唱歌跳舞。",
+            "src": "https://en.wikipedia.org/wiki/Pink_(singer)",
+            "src2": "https://www.biography.com/musicians/pink",
+            "from": "new"
+          },
+          {
+            "f": "她先在 R&B 女團 Choice 起步，團沒發出像樣的作品就散了，之後才以個人身分展開生涯。",
+            "src": "https://en.wikipedia.org/wiki/Pink_(singer)",
+            "src2": "https://www.biography.com/musicians/pink",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "第一張《Can't Take Me Home》（2000）走 R&B，她不滿被當成 R&B 少女歌手行銷；2001 年的《M!ssundaztood》與 Linda Perry 合寫，轉向 pop rock。",
+            "src": "https://en.wikipedia.org/wiki/Pink_(singer)",
+            "src2": "https://stereogum.com/2167957/missundaztood-turns-20/reviews/the-anniversary",
+            "from": "new"
+          },
+          {
+            "f": "她的現場以空中雜技著稱，會在空中絲綢與鞦韆（trapeze）上演唱，Funhouse 巡演就有倒掛著唱的橋段。",
+            "src": "https://en.wikipedia.org/wiki/Pink_(singer)",
+            "src2": "https://www.biography.com/musicians/pink",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年 8 月 27 日，她在洛杉磯 The Forum 的 MTV 錄影帶音樂獎領到 Michael Jackson Video Vanguard Award。",
+            "src": "https://time.com/4917950/pink-vmas-2017/",
+            "src2": "https://www.grammy.com/news/pink-receive-2017-mtv-vmas-video-vanguard-award",
+            "from": "new"
+          },
+          {
+            "f": "2019 年她在好萊塢星光大道留下星星。",
+            "src": "https://en.wikipedia.org/wiki/Pink_(singer)",
+            "src2": "https://www.biography.com/musicians/pink",
+            "from": "new"
+          },
+          {
+            "f": "她公開支持女性平等與 LGBTQ 權益。",
+            "src": "https://en.wikipedia.org/wiki/Pink_(singer)",
+            "src2": "https://www.biography.com/musicians/pink",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2017 年 8 月 27 日獲 MTV 錄影帶音樂獎的 Michael Jackson Video Vanguard Award。",
+        "src": "https://time.com/4917950/pink-vmas-2017/",
+        "src2": "https://www.grammy.com/news/pink-receive-2017-mtv-vmas-video-vanguard-award",
+        "from": "new"
+      },
+      {
+        "f": "2019 年入星好萊塢星光大道。",
+        "src": "https://en.wikipedia.org/wiki/Pink_(singer)",
+        "src2": "https://www.biography.com/musicians/pink",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫完全沒有料，從零查，補查 8 次（維基 Pink (singer)、WebSearch 兩段、Biography.com、GRAMMY 官網、維基 Missundaztood、WebSearch、Stereogum、Time）；失敗請求 2 次（Britannica 404、Rolling Stone 307 轉 tollbit，不計入）。同名檢查：poolAlbums 三張（《M!ssundaztood》2001、《Beautiful Trauma》2017、《TRUSTFALL》2023）皆為賓州出身的 P!nk（Alecia Moore），無混卡；名字寫作 P!nk，維基條目名是 Pink (singer)。兩處『維基』：Pink (singer) 與 Missundaztood 為同站，Missundaztood 條目只作為背景閱讀，未放進 src。Stereogum 一條涵蓋『R&B 轉向 pop rock 與 Linda Perry』，維基 Pink 條目寫 Missundaztood 與 Linda Perry 合作轉向 pop-rock、不願被當成 cookie cutter pop act。Video Vanguard：GRAMMY 官網與 Time 皆為 2017 年 8 月 27 日；GRAMMY 稱地點是洛杉磯 The Forum，Time 未寫地點，兩源合寫。未收（單源）：藝名取自塔倫提諾《Reservoir Dogs》的 Mr. Pink（Biography.com 單源）；2019 年 BRIT Awards 的 Outstanding Contribution to Music（維基單源）；2010 年 Human Rights Campaign 的 Ally for Equality Award（維基單源）；她發現 Linda Perry 的電話號碼在化妝師通訊錄裡、留語音訊息的經過，以及〈Eventually〉五分鐘寫成（維基 Missundaztood 單源）；Stereogum 稱她的自主路線為 Olivia Rodrigo、Billie Eilish、Miley Cyrus 這些後輩鋪路（單一樂評形容，非後輩點名，不收）；搜尋摘要稱她的影響來源含 Mary J. Blige、PJ Harvey、Billy Joel、Janis Joplin、Madonna 與 Linda Perry（未讀頁）；Time 與 GRAMMY 提到的領獎演出內容與演說（單源）；〈Lady Marmalade〉為她第一首冠軍單曲與首座葛萊美（維基單源，且屬榜位與獎座）；葛萊美獎座數與銷量（不寫）。法律與私人細節（青少年期濫藥、家庭）不收。 Stereogum 另寫該專輯帶龐克式的爆發段落（單源，不入 facts）。"
   }
 ]
