@@ -337,3 +337,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 031 g2 交件（QA 本組 0）。thin：Frans Brüggen、Fritz Wunderlich（地位 none）。Georges Prêtre 失敗請求 5 次超限，照收。任期與日期不一致者不寫（Szell、Barbirolli、Ansermet）。du Pré 疾病、死因與過世年不寫。pubIssues 0。w1（g1+g2）派出。
 - 030 w2 審稿（2 處）：Jerry Goldsmith「1976 年拿下奧斯卡」改「以《The Omen》拿下」（該片 1976 年上映，頒獎在 1977 年）；鷺巣詩郎《新・哥吉拉》改台灣片名《正宗哥吉拉》。Herrmann AFI 名次比照 Goldsmith 不寫。Lloyd Webber 的《貓》《歌劇魅影》用台灣通行譯名，照准。
 - **ar-b-030 上線**：40 位，reviewFixes 4。
+- 031 w1 審稿無修正。Pärt 的 Bachtrack「演出最多的在世作曲家」屬榜單與最高級，不寫，照准。Britten「第一位受封終身貴族的作曲家」屬通行事實，照准。Lipatti、Kleiber、du Pré、Wunderlich 均無死因；du Pré 無過世年。
