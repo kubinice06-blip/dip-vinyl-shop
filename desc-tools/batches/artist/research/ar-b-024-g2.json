@@ -562,5 +562,361 @@
     "failedFetches": 2,
     "status": "full",
     "notes": "池內四張（Neptune's Lair、Harnessed the Storm、Grava 4、The Quest）皆為底特律二人組 Drexciya，無同名混卡。補查成功請求 8 次：英文維基 Drexciya、WebSearch（神話與 Afrofuturism）、英文維基 James Stinson (musician)、In Sheep's Clothing 專文、英文維基 Gerald Donald、WebSearch（展覽與 Clipping）、RA 展覽新聞、Smithsonian Magazine 專文。失敗請求 2 次：djmag.com 專文 403、si.edu 新聞稿 403。成員死亡只收年份與年齡，不收死因與地點細節。非獨立：英文維基的 Drexciya、Stinson、Gerald Donald 三條同站，彼此不獨立；In Sheep's Clothing、RA、Smithsonian Magazine 相互獨立。單源未收（放此）：Stinson 1969 年 9 月 14 日生於底特律、曾是 Underground Resistance 成員、被稱為 Afrofuturism 在電子音樂的先驅（Stinson 維基單源）；《Lifestyles of the Laptop Café》被 Resident Advisor 稱為最重要的電子唱片之一（單源，且屬媒體形容）；Donald 的匿名宣言與演出戴面具、Dopplereffekt 與 Arpanet（Donald 維基單源）；神話受 Paul Gilroy《The Black Atlantic》（1993）啟發（維基單源，上線簡介也寫到）；Clipping 2017 年的〈The Deep〉受 Drexciya 影響（維基與搜尋摘要皆出自維基，單源）；神話把非洲水神 Oshun、Yemonja、Mami Wata 納入（Smithsonian Magazine 單源）；hifi 稱其為對中央航路的『修正式回望，視為可能性而非滅絕的領域』（單源）；Neptune's Lair 獲『Dance CD of the Week』（維基單源）；2025 年 Trump 白宮批評該展覽的新聞（RA、Mixmag 標題，屬時事爭議，不收）。 另有單源而撤出 facts：音色描述『濕潤鍵盤線、聲納回音、潛水音效、1980 年代底特律 techno 底子』（英文維基單源）與『節拍緊繃帶壓迫感、曲子短』（In Sheep's Clothing 單源）；Ayana V. Jackson 籌備前取得 Gerald Donald 與 Underground Resistance 同意、製作人說回應這神話的創作者以女性居多（Smithsonian Magazine 單源）；Stinson 享年 32 歲、過世後才被確認是成員（Stinson 維基單源）。sound 格因此只剩 1 條雙源 facts，寫作層可沿用上線簡介的音色描述。"
+  },
+  {
+    "key": "faithless",
+    "name": "Faithless",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Faithless 1995 年在倫敦成軍，核心成員是製作人 Rollo Armstrong、Sister Bliss 與主唱 Maxi Jazz，早期另有 Jamie Catto 一同創團。",
+            "src": "https://en.wikipedia.org/wiki/Faithless",
+            "src2": "https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/",
+            "from": "new"
+          },
+          {
+            "f": "Rollo 與 Sister Bliss 的興趣本來在電子音樂；Maxi Jazz 則從 hip-hop 出身，1980 年代中期起就在倫敦當饒舌手與 DJ。",
+            "src": "https://en.wikipedia.org/wiki/Faithless",
+            "src2": "https://en.wikipedia.org/wiki/Maxi_Jazz",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Faithless 把 house、trip hop 與下節拍電子混在一起，首張專輯《Reverence》（1996）被形容成一張涵蓋 house、hip-hop、民謠與古典的混音帶式專輯，由 Rollo 製作。",
+            "src": "https://en.wikipedia.org/wiki/Faithless",
+            "src2": "https://en.wikipedia.org/wiki/Reverence_(Faithless_album)",
+            "from": "new"
+          },
+          {
+            "f": "Maxi Jazz 是虔誠的佛教徒，擔任主唱與詞作者，低沉的嗓音是團體聲音的核心，歌詞常帶著社會關懷與精神層面的思考。",
+            "src": "https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/",
+            "src2": "https://www.abc.net.au/listen/doublej/music-reads/features/faithless-sister-bliss-interview-maxi-jazz-dj-australia-2023/103233708",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Insomnia〉是團體最廣為人知的曲子，1990 年代中期起成為舞池的招牌歌。",
+            "src": "https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/",
+            "src2": "https://en.wikipedia.org/wiki/Insomnia_(Faithless_song)",
+            "from": "new"
+          },
+          {
+            "f": "Faithless 的作品常觸及政治與社會議題，2020 年的專輯《All Blessed》處理的是移民。",
+            "src": "https://en.wikipedia.org/wiki/Faithless",
+            "src2": "https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/",
+            "from": "new"
+          },
+          {
+            "f": "Maxi Jazz 於 2022 年 12 月 23 日過世，享年 65 歲；Rollo 與 Sister Bliss 悼念他是團體的道德指引。",
+            "src": "https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/",
+            "src2": "https://en.wikipedia.org/wiki/Maxi_Jazz",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1996 年 4 月發行首張專輯《Reverence》，同年 10 月再版。",
+        "src": "https://en.wikipedia.org/wiki/Reverence_(Faithless_album)",
+        "src2": "https://en.wikipedia.org/wiki/Faithless",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "上線簡介《Reverence》寫『Rollo、Sister Bliss 與 Maxi Jazz 在 1996 年 4 月推出的首張專輯』；CBS 訃聞寫創團成員是 Maxi Jazz、Rollo、Sister Bliss 與 Jamie Catto。採 CBS 的四人創團說，簡介未提 Catto。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Reverence",
+        "claim": "Rollo、Sister Bliss 與 Maxi Jazz 在 1996 年 4 月推出的首張專輯",
+        "problem": "待核：CBS 訃聞與英文維基 Maxi Jazz 條目都寫創團成員還有 Jamie Catto，簡介只列三人，可能漏了一位創團成員；Catto 是否參與《Reverence》錄音本層未查，請店主對照專輯人員名單後決定是否補上。",
+        "src": "https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/"
+      }
+    ],
+    "searches": 9,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "池內四張（Reverence、Sunday 8pm、No Roots、Champion Sound）皆為英國 Faithless，無同名混卡。⚠ 搜尋次數照實：成功請求 9 次（WebSearch 2、WebFetch 7），超出上限 1 次。9 次為：英文維基 Faithless、WebSearch（Maxi Jazz 訃聞）、英文維基 Maxi Jazz、CBS 訃聞、英文維基 Insomnia (Faithless song)、英文維基 Reverence、WebSearch（團體地位）、Double J 專訪、Irish Examiner 專文（超出的第 9 次）。第 9 次取得的內容未進 facts，僅記於此（單源）：〈Insomnia〉1995 年在英國榜第 27 名，1996 年重發後上到第 3 名，並由 Pete Tong 力挺；錄於 Rollo 花園棚屋的錄音室；Bliss 與 Jazz 共同喜愛 Joni Mitchell 與爵士、Jazz 與 Rollo 共同喜愛 dub reggae。失敗請求 1 次：rollingstone.com 轉址至 tollbit（未取得內容）。成員死亡只收年月日與年齡，不收死因與細節。非獨立：英文維基的 Faithless、Maxi Jazz、Reverence、Insomnia 四條同站，彼此不獨立；CBS、Double J 為獨立來源。單源未收（放此）：Maxi Jazz 生於 1957 年 6 月 14 日（Hackney）、1983 年接觸 hip-hop、1984 年成立 Soul Food Café System、在盜版電台 Reach FM 主持節目、2011 年離團後 2015 至 2016 年回歸、2016 年 8 月 31 日最後一場演出、葬禮 2023 年 1 月 30 日（Maxi Jazz 維基單源）；『南倫敦』饒舌手與盜版電台主持節目已撤出 facts，只剩『1980 年代中期起在倫敦當饒舌手與 DJ』兩條維基支持（非獨立）；Brit Awards 最佳英國舞曲團體 1999 與 2002 入圍（只入圍，維基單源）、Glastonbury headline 四次（維基單源）；Mixmag 讀者票選第 4 大舞曲樂團與〈Insomnia〉第 5 名、MTV 與 Billboard 排名（雜誌與媒體榜單，不收）；〈Insomnia〉歌詞源於牙膿腫失眠與創作經過（Insomnia 維基單源）；Sister Bliss 本名 Ayalah Bentovim、為團體主要作曲者（Double J 與搜尋摘要，單源）；Rollo 製作《Reverence》於 Swanyard Studios 錄製、Cheeky 廠牌（Reverence 維基單源）；《Reverence》英國榜第 26 名與同年 11 月《Reverence / Irreverence》再版（Reverence 維基，上線簡介一致）。注意：『Rollo 製作』一句與『混音帶式專輯』來自 Reverence 與 Faithless 兩條維基，同站非獨立。"
+  },
+  {
+    "key": "fatboy slim",
+    "name": "Fatboy Slim",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fatboy Slim 是英國音樂人 Norman Cook 的藝名，Cook 1963 年生，長期以英格蘭海濱城市布萊頓為基地。",
+            "src": "https://en.wikipedia.org/wiki/Fatboy_Slim",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/fatboy-slim",
+            "from": "new"
+          },
+          {
+            "f": "Cook 起步不在電子音樂：他先是 1980 年代英國獨立搖滾團 The Housemartins 的貝斯手，之後轉向舞曲，組了取樣為本的 Beats International，〈Dub Be Good to Me〉登上英國單曲榜第 1 名。",
+            "src": "https://en.wikipedia.org/wiki/Fatboy_Slim",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/fatboy-slim",
+            "from": "new"
+          },
+          {
+            "f": "在 Fatboy Slim 這個名字之前，Cook 還用過 Pizzaman、Freak Power 等多個化名與團名做舞曲。",
+            "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/fatboy-slim",
+            "src2": "https://trouserpress.com/reviews/fatboy-slim/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fatboy Slim 屬 big beat：以 hip-hop 的 breakbeat、acid house 的能量與流行音樂的旋律感，加上一點龐克態度，把厚重鼓點與取樣堆成舞池曲目。",
+            "src": "https://en.wikipedia.org/wiki/Big_beat",
+            "src2": "https://en.wikipedia.org/wiki/Fatboy_Slim",
+            "from": "new"
+          },
+          {
+            "f": "他的做法是挖冷門取樣，再轉成當代舞曲：鼓點越堆越大，配上巧妙的取樣與舞曲配器。",
+            "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/fatboy-slim",
+            "src2": "https://trouserpress.com/reviews/fatboy-slim/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Cook 與 Damian Harris 在布萊頓 Concorde 俱樂部主持的週五夜 Big Beat Boutique（1995 至 2001 年），是 big beat 的重要據點；倫敦的 Heavenly Social 則由 The Chemical Brothers 駐場。",
+            "src": "https://en.wikipedia.org/wiki/Big_beat",
+            "src2": "https://en.wikipedia.org/wiki/Fatboy_Slim",
+            "from": "new"
+          },
+          {
+            "f": "Fatboy Slim 與 The Chemical Brothers 並列為 1990 年代英國 big beat 風潮的核心人物。",
+            "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/fatboy-slim",
+            "src2": "https://en.wikipedia.org/wiki/Big_beat",
+            "from": "new"
+          },
+          {
+            "f": "2002 年 7 月 13 日他在布萊頓海灘辦了免費演出 Big Beach Boutique II，這是他的第二場海灘演出；到場人潮約 25 萬人，是主辦方預期的數倍。",
+            "src": "https://en.wikipedia.org/wiki/Fatboy_Slim",
+            "src2": "https://faroutmagazine.co.uk/fatboy-slim-brighton-beach/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2002 年 7 月 13 日的布萊頓海灘免費演出 Big Beach Boutique II，約 25 萬人到場。",
+        "src": "https://en.wikipedia.org/wiki/Fatboy_Slim",
+        "src2": "https://faroutmagazine.co.uk/fatboy-slim-brighton-beach/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "生日不一致：英文維基寫 1963 年 7 月 31 日，Encyclopedia.com 寫 7 月 13 日；出生地英文維基寫 Bromley，Encyclopedia.com 寫 Bromley 或 Brighton。facts 只寫 1963 年。",
+      "Housemartins 加入年：英文維基 1985、Encyclopedia.com 1986；Beats International 單曲年：英文維基 1990、Encyclopedia.com 1989；Fatboy Slim 化名啟用年：維基 1995、Encyclopedia.com 約 1994、搜尋摘要 1996。年份全不收。",
+      "Far Out 寫 The Housemartins 1983 年出道，與維基 1985 不一致；不收。",
+      "Big Beach Boutique 第二場傷亡人數各源不一致（維基 170 多人傷、搜尋摘要 160 人輕傷）；傷亡細節一律不收，只寫人潮。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "池內四張（You've Come a Long Way, Baby、Halfway Between the Gutter and the Stars、Better Living Through Chemistry、Palookaville）皆為英國 Fatboy Slim，無同名混卡；事實庫 research 與 published 皆空，從零查。補查成功請求 8 次：英文維基 Fatboy Slim、WebSearch（生平）、Encyclopedia.com 條目、英文維基 Big beat、英文維基 Praise You、Trouser Press 條目、WebSearch（布萊頓海灘）、Far Out 專文。失敗請求 1 次：npg.org.uk 403。非獨立：英文維基的 Fatboy Slim、Big beat、Praise You 三條同站，彼此不獨立；Encyclopedia.com、Trouser Press、Far Out 為獨立來源。『Big Beat Boutique 1995 至 2001、Cook 與 Damian Harris 主持』只有 Big beat 條目寫到主持人與年份，Fatboy 條目只寫 1995 年共同創辦，兩條同站，非獨立。單源未收（放此）：Trouser Press 稱他是『grand poobah of big beat』與『第一個從封閉的 DJ 文化走出來的搖滾明星式人物』（單源評論，不收）；〈Praise You〉的 Spike Jonze 錄像 1999 年 MTV VMA 贏得 Breakthrough Video、Best Direction、Best Choreography（獎歸錄像與導演，Praise You 維基單源）；〈Weapon of Choice〉2001 年 MTV VMA 六項（維基單源）；〈Praise You〉2000 年葛萊美最佳舞曲錄音入圍（維基單源，入圍未得獎）；維基稱他得過葛萊美與全英音樂獎，但本層未查到類別與屆次，不收；金氏紀錄（維基單源）；Pizzaman 與 Freak Power 以外的化名（Mighty Dub Katz 等）；2015 年起以 DJ 演出為主、Glastonbury 百場（維基單源）；Skint Records 共同創辦（Trouser Press 單源）；MTV 2001 年二十週年票選〈Praise You〉為百大錄像第 1（媒體票選，不收）；〈Praise You〉取樣 Camille Yarbrough〈Take Yo' Praise〉（Praise You 維基單源）；Beats International 因取樣官司破產（搜尋摘要，單源）；Brighton 事件死者資訊一律不收。 另：前一年第一場海灘演出約 6 萬人、他自掏 27.5 萬英鎊善後、Housemartins 1983 年出道（Far Out 單源）已撤出 facts。"
+  },
+  {
+    "key": "frank bretschneider",
+    "name": "Frank Bretschneider",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Frank Bretschneider 1956 年生於東德的卡爾馬克思城（今 Chemnitz），在德意志民主共和國（東德）長大。",
+            "src": "https://en.wikipedia.org/wiki/Frank_Bretschneider",
+            "src2": "https://www.amsterdam-dance-event.nl/en/artists-speakers/frank-bretschneider/4322/",
+            "from": "new"
+          },
+          {
+            "f": "他讀的是美術，音樂方面主要是自學：1984 年起在科幻廣播劇與電影的啟發下，用錄音機、合成器與改裝吉他做實驗。",
+            "src": "https://www.12k.com/artist/bretschneider-frank/",
+            "src2": "https://steponnopets.wordpress.com/2009/03/29/frank-bretschneider-white-male-electronic-musician/",
+            "from": "new"
+          },
+          {
+            "f": "他 1986 年創立 AG Geige，這是東德最具影響力的地下樂團之一。",
+            "src": "https://www.12k.com/artist/bretschneider-frank/",
+            "src2": "https://www.amsterdam-dance-event.nl/en/artists-speakers/frank-bretschneider/4322/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bretschneider 主要用正弦波與白噪音當原料做音樂。",
+            "src": "https://en.wikipedia.org/wiki/Frank_Bretschneider",
+            "src2": "https://www.staimusic.com/en/artist/frank-bretschneider_1672.html",
+            "from": "new"
+          },
+          {
+            "f": "他的作品以精準的聲音定位、交織複雜的節奏結構，以及極簡而流動的做法著稱，並與視覺藝術結合。",
+            "src": "https://www.12k.com/artist/bretschneider-frank/",
+            "src2": "https://www.amsterdam-dance-event.nl/en/artists-speakers/frank-bretschneider/4322/",
+            "from": "new"
+          },
+          {
+            "f": "他早期的個人專輯多用 Komet 這個名字發行，第一張是 1996 年的《SAAT》。",
+            "src": "https://www.12k.com/artist/bretschneider-frank/",
+            "src2": "https://www.amsterdam-dance-event.nl/en/artists-speakers/frank-bretschneider/4322/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bretschneider 與 AG Geige 的同伴 Olaf Bender 合辦廠牌 Rastermusic，1999 年與 Carsten Nicolai 的 noton 合併成 raster-noton。",
+            "src": "https://en.wikipedia.org/wiki/Raster-Noton",
+            "src2": "https://www.amsterdam-dance-event.nl/en/artists-speakers/frank-bretschneider/4322/",
+            "from": "new"
+          },
+          {
+            "f": "他被介紹為東德地下電子音樂的先行者，並被稱為電子音樂界的先驅。",
+            "src": "https://www.amsterdam-dance-event.nl/en/artists-speakers/frank-bretschneider/4322/",
+            "src2": "https://www.staimusic.com/en/artist/frank-bretschneider_1672.html",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1986 年創立東德地下樂團 AG Geige。",
+        "src": "https://en.wikipedia.org/wiki/Frank_Bretschneider",
+        "src2": "https://www.12k.com/artist/bretschneider-frank/",
+        "from": "new"
+      },
+      {
+        "f": "1999 年 Rastermusic 與 noton 合併成 raster-noton。",
+        "src": "https://en.wikipedia.org/wiki/Raster-Noton",
+        "src2": "https://www.amsterdam-dance-event.nl/en/artists-speakers/frank-bretschneider/4322/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Rastermusic 成立年不一致：英文維基 Frank Bretschneider、ADE、搜尋摘要寫 1995；Raster-Noton 維基、Staimusic 與一則部落格寫 1996。facts 只寫 1999 年合併，不寫成立年。",
+      "AG Geige 解散年不一致：英文維基寫 1992，搜尋摘要寫 1993；不收。",
+      "klangFarBe 錄音帶廠牌成立年不一致：ADE 寫 1986，搜尋摘要寫 1985；不收。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "池內四張（Curve、Exp、Komet、Rhythm）皆為德國 Frank Bretschneider（Komet 是專輯名，也是他早期的化名），無同名混卡；事實庫 research 與 published 皆空，從零查。補查成功請求 8 次：英文維基 Frank Bretschneider、WebSearch（生平）、12k 藝人頁、英文維基 Raster-Noton、Staimusic 藝人頁、部落格 steponnopets 專文、WebSearch（東德背景）、ADE 藝人頁，另加 WebSearch（20' to 2000 與 Ars Electronica）；實際成功請求 9 次（WebSearch 3、WebFetch 6），超出上限 1 次，超出的那次只拿到搜尋摘要、沒有開頁，其內容未進 facts。失敗請求 0 次。⚠ 非獨立：12k、ADE、Staimusic、部落格與英文維基人物條目的人物介紹，都出自同一份官方簡介（用詞幾乎一致，如『sine waves and white noise』『precise sound placement』），彼此不算獨立來源；sound 與 AG Geige 的兩源皆屬此類。legacy 偏薄：查不到後輩點名或權威票選型共識評價，只有廠牌的地位與介紹文字稱他為先行者；故 status thin。單源未收（放此）：少年時聽地下廣播、聽走私來的 Beastie Boys 錄音帶（ADE 單源）；學過小提琴與鋼琴、在萊比錫視覺藝術學院學媒體藝術（Staimusic 單源）；Raster-Noton 被稱為『one of Europe's most revered and reliable hubs for experimental electronic music, IDM and audio-visual art』（英文維基單源）；廠牌系列《20' to 2000》獲 2000 年 Ars Electronica Golden Nica（英文維基 Raster-Noton 單源開頁；搜尋摘要另有一處但未開頁；獎項屬廠牌系列，不是 Bretschneider 個人）；與 Taylor Deupree、Olafur Eliasson、Steve Roden 合作及 Signal（維基與部落格，各單源）；『abstract analogue pointilism』（部落格單源）；Komet 2004 為最受好評（Staimusic 單源，且與卡池『Komet』2011 年專輯對不上，不收）。 另撤出 facts（單源）：兩德統一前 AG Geige 只能在東德活動、1989 年後才受邀到各地與海外演出（ADE 與搜尋摘要）；raster-noton 總部在 Chemnitz（Raster-Noton 維基單源）。"
+  },
+  {
+    "key": "gary numan",
+    "name": "Gary Numan",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Gary Numan 本來是龐克樂團 Tubeway Army 的主腦，1970 年代末轉向合成器，1979 年的《Replicas》是樂團轉向電子音樂的關鍵一張。",
+            "src": "https://en.wikipedia.org/wiki/Gary_Numan",
+            "src2": "https://articles.roland.com/listening-guide-gary-numan/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Numan 的招牌做法是把合成器等樂器接進吉他效果器處理，做出冰冷、帶未來感的聲音，兼有電子與搖滾的質地。",
+            "src": "https://en.wikipedia.org/wiki/Gary_Numan",
+            "src2": "https://articles.roland.com/listening-guide-gary-numan/",
+            "from": "new"
+          },
+          {
+            "f": "他以類似機器人或人造人的舞台形象示人，這個「android」造型與歌裡關於科技與孤立的主題相呼應。",
+            "src": "https://en.wikipedia.org/wiki/Gary_Numan",
+            "src2": "https://articles.roland.com/listening-guide-gary-numan/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年 5 月 18 日，Numan 在第 62 屆 Ivor Novello 獎獲頒 Inspiration Award（得獎），頒獎詞是「肯定他身為電子音樂先驅的影響」；這個獎表彰的是啟發了其他創作者的傑出詞曲作者。",
+            "src": "https://www.musicweek.com/publishing/read/all-the-winners-from-the-62nd-ivor-novello-awards/068521",
+            "src2": "https://garynuman.com/ivornovelloaward/",
+            "from": "new"
+          },
+          {
+            "f": "英文維基稱 Numan 被視為電子音樂的先驅之一；Nine Inch Nails 與 Foo Fighters 等後輩點名他的影響，hip-hop 與電子樂製作人也取樣過他的作品。",
+            "src": "https://en.wikipedia.org/wiki/Gary_Numan",
+            "src2": "https://articles.roland.com/listening-guide-gary-numan/",
+            "from": "new"
+          },
+          {
+            "f": "Nine Inch Nails 翻唱過 Numan 的〈Metal〉。",
+            "src": "https://www.nin.wiki/Gary_Numan",
+            "src2": "https://en.wikipedia.org/wiki/The_Pleasure_Principle_(album)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2017 年獲 Ivor Novello Inspiration Award。",
+        "src": "https://www.musicweek.com/publishing/read/all-the-winners-from-the-62nd-ivor-novello-awards/068521",
+        "src2": "https://garynuman.com/ivornovelloaward/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Reznor 在樂團早期大量聽《The Pleasure Principle》、做《The Downward Spiral》時參考《Telekon》，只有 nin.wiki（粉絲站）單源，未收；legacy 只保留雙源支持的翻唱〈Metal〉。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "池內四張（The Pleasure Principle、Pure、Berserker、Warriors）皆為英國 Gary Numan，無同名混卡；事實庫 research 與 published 皆空，從零查。補查成功請求 8 次：英文維基 Gary Numan、WebSearch（影響與地位）、Roland 聆聽指南、英文維基 The Pleasure Principle、WebSearch（Ivor Novello）、garynuman.com 獎項頁、Music Week 得獎名單、nin.wiki。失敗請求 1 次：halftonemagazine.com 503。origin 偏薄：只有『龐克轉電子』一條雙源；出生地與家庭（1958 年生於 Hammersmith、本名 Gary Webb、父親開巴士、在 Stanwell 一帶長大）與『錄音室裡意外發現 Minimoog 而轉向電子』只有英文維基單源，已放 notes 不收；故 status thin。單源未收（放此）：2016 年 Moog Innovation Award（英文維基單源）；1994 年《Sacrifice》起的復興、《Exile》《Pure》（英文維基單源）；《Replicas》與〈Are 'Friends' Electric?〉、《The Pleasure Principle》1979 年登上英國榜首（英文維基與 Pleasure Principle 維基，同站不同條目，非獨立，且為榜單名次，故不寫入 facts）；Afrika Bambaataa、Thought Industry 翻唱〈Metal〉（Pleasure Principle 維基單源）；Basement Jaxx〈Where's Your Head At〉取樣〈M.E.〉（Pleasure Principle 維基單源）；《The Pleasure Principle》全專輯不用電吉他、改用 Minimoog 與 Polymoog、Ultravox 的 Billy Currie 拉小提琴（Pleasure Principle 維基單源）；被稱為 King of synthpop 與商業電子音樂先驅（搜尋摘要，來源未開頁）；Asperger 症與個人生活、飛行執照（維基，個人事項不收）；2009 年、2013 年等與 Nine Inch Nails 同台（nin.wiki 單源，且為粉絲站）。非獨立：英文維基的 Gary Numan 與 The Pleasure Principle 同站；Roland 文章稱『hip-hop 與電子製作人取樣他的作品』，與維基『Basement Jaxx 取樣』相互支持。"
   }
 ]

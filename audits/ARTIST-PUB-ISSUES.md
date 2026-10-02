@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 210 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 217 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -213,4 +213,11 @@
 | ar-b-023 | Alton Ellis | （Yellowman 卡）Zungguzungguguzungguzeng | 源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉 | 維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。 | https://en.wikipedia.org/wiki/Alton_Ellis |
 | ar-b-023 | Dennis Brown | Wolf & Leopards | Bob Marley 口中的 Crown Prince of Reggae | 維基稱 Marley 贈此稱號，但 jamaicasonice 稱此稱號是 1980 年代前後才得到，各源只一致於『Marley 說他是最愛的歌手』；建議改寫成『Marley 曾說他是自己最喜歡的歌手』 | https://www.jamaicasonice.com/post/famous-jamaicans-the-crown-prince-of-reggae-dennis-emmanuel-brown |
 | ar-b-023 | Dennis Brown | No Man Is an Island | 錄這批母帶時他 12 歲；錄音在 1969 至 1970 年間完成，他當時 12 到 13 歲 | 各源對出道錄音時的年齡不一（維基 12 歲、jamaicasonice 與 reggae museum 11 歲、牙買加國家圖書館 13 歲被發掘），建議改成『還是個孩子』避開年齡 | https://nlj.gov.jm/reggaeportal/dennisbrown/ |
+| ar-b-023 | Los Van Van | Llegó... Van Van (Van Van Is Here) | 拿下 2000 年葛萊美最佳 salsa 專輯 | 2000 年是美國葛萊美（非拉丁葛萊美），當年類別名為 Best Salsa Performance（該類別後來改稱 Best Salsa Album），寫成『最佳 salsa 專輯』與當年名稱不同；另 en 維基〈Los Van Van〉條目把它寫成 2000 年拉丁葛萊美提名，與葛萊美類別條目、AfroCubaWeb 衝突（拉丁葛萊美 2000 年最佳 salsa 專輯另有提名紀錄、得獎者為 Celia Cruz）。建議簡介寫『2000 年葛萊美 Best Salsa Performance』或加上屆次。 | https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Salsa_Album |
 | ar-b-023 | Orhan Gencebay | Bir Teselli Ver | 〈Bir Teselli Ver〉最早是 1971 年的 45 轉單曲 | Daily Sabah 寫該曲所在 EP 為 1970 年；tr 維基寫 1969 年的突破單曲；上線簡介寫 1971；三源不一致，建議店主在本機核對原盤年份後再決定是否保留該年份 | https://www.dailysabah.com/portrait/2015/06/06/orhan-gencebay-inventor-of-turkish-arabesque-music |
+| ar-b-024 | พุ่มพวง ดวงจันทร์（Pumpuang Duangjan） | ตะวันลับฟ้า／ลำเพลิน พุ่มพวง ดวงจันทร์ | 《ตะวันลับฟ้า》寫「1975 年拜師之後才改用現在這個藝名」；《ลำเพลิน》寫「1976 年一位 luk thung 歌師收她為徒，替她取了名字」 | 兩張上線簡介對拜師與改名年份自相矛盾（1975 vs 1976）；泰文維基（事實庫）為 1975，英文維基只寫 15 歲（約 1976）被 Waiphot Phetsuphan 的巡演樂團發現，師父人名也不同。建議兩張都改成不帶年份的寫法，或由店主本機以泰文原始資料裁定。 | https://th.wikipedia.org/wiki/พุ่มพวง_ดวงจันทร์ |
+| ar-b-024 | Amon Tobin | Supermodified | Metacritic 依八篇樂評給出 85 分，2012 年獲 IMPALA 雙銀認證，代表歐洲銷量逾四萬張 | 認證倍數與銷量（在世者）、樂評評分依共同特注不寫；事實本身與維基一致，只是違反寫作規範，建議本機刪去。 | https://en.wikipedia.org/wiki/Supermodified_(album) |
+| ar-b-024 | Amon Tobin | Bricolage | Pitchfork 給滿分十分，Fact 在 2015 年 50 張最佳 trip-hop 專輯榜列第 23 | 雜誌榜單名次依共同特注不收；事實與維基一致，只是違反寫作規範，建議本機刪去。 | https://en.wikipedia.org/wiki/Bricolage_(album) |
+| ar-b-024 | Bernard Parmegiani | Chants magnétiques | 法文維基記他 1959 至 1992 年是 GRM 的常任成員 | 待核：本層讀到的法文維基摘要寫 1960 年因 Schaeffer 邀請加入、到 1992 年；英文維基寫 1959 年加入。兩種維基對起始年不一致，上線簡介若要保留年份，建議改寫成不分起始年的說法或回頭對照法文維基原文（本層只讀到 WebFetch 摘要）。 | https://fr.wikipedia.org/wiki/Bernard_Parmegiani |
+| ar-b-024 | Faithless | Reverence | Rollo、Sister Bliss 與 Maxi Jazz 在 1996 年 4 月推出的首張專輯 | 待核：CBS 訃聞與英文維基 Maxi Jazz 條目都寫創團成員還有 Jamie Catto，簡介只列三人，可能漏了一位創團成員；Catto 是否參與《Reverence》錄音本層未查，請店主對照專輯人員名單後決定是否補上。 | https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/ |
+| ar-b-024 | Masonna | Inner Mind Mystique | 團名是一整句法文的縮寫……山崎マゾ 1987 年起用它當這個獨作計畫的名字 | 維基〈Masonna〉寫團名是マゾ與女的組合、亦為 Madonna 的諧音，縮寫展開只是『有時』的另一種讀法（且有兩種展開）；簡介把縮寫說成唯一由來，過度肯定。建議改成『名字常被拆成一句法文縮寫來讀』。 | https://en.wikipedia.org/wiki/Masonna |
