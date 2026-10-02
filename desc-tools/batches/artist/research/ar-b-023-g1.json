@@ -596,7 +596,14 @@
       "Columbia 簽約：維基寫 1981 年成為『第一位與美國大廠簽約的 dancehall 藝人』（Columbia），Enkis 寫 1983 年簽 CBS 的『第一位 reggae deejay』；年份與主詞都不一致，facts 不寫簽約年份與『第一位』。",
       "Tastee 比賽：維基、Reggaeville、Enkis 都寫 1979 年奪冠，Observer 寫 1979 年得第二名；採三源，維基另記 1978 年得第二名（冠軍 Nadine Sutherland），Observer 疑似混淆。"
     ],
-    "pubIssues": [],
+    "pubIssues": [
+      {
+        "album": "Zungguzungguguzungguzeng",
+        "claim": "源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉",
+        "problem": "維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。（此條在補查 Alton Ellis 時發現。）",
+        "src": "https://en.wikipedia.org/wiki/Alton_Ellis"
+      }
+    ],
     "searches": 7,
     "failedFetches": 4,
     "status": "full",
@@ -710,5 +717,286 @@
     "failedFetches": 1,
     "status": "full",
     "notes": "同名檢查：poolAlbums 四張（Immigrés、Set、The Guide (Wommat)、Egypt）皆為塞內加爾的 Youssou N'Dour，無混卡。事實庫無研究稿，全部從零。本位用掉 8 次（已達上限）：維基 Youssou N'Dour、WebSearch（mbalax 與傳記）、Praemium Imperiale 官網、Encyclopedia.com、WebSearch（Egypt 葛萊美）、維基 Egypt (album)、Polar Music Prize 官網、Grammy 官網藝人頁；維基《Egypt (album)》第一次網址 404（失敗不計）。在世者：累計銷量、座數、提名次數一律未收。維基兩條與 Encyclopedia.com 為不同出版者；Praemium 與 Polar 為頒獎單位官網。單源未收（官方）：Praemium Imperiale 第 29 屆（2017）音樂部門得主、『第一位獲獎的塞內加爾人』（Praemium 官網單源）；Polar Music Prize 2013 年得主與頒獎詞（Polar 官網單源，另一份搜尋結果只列網址）。其餘單源：2012 年 4 月至 2013 年 9 月任塞內加爾觀光部長（維基單源；搜尋摘要稱 2012–13 文化與觀光部長，措辭不同，未核）、2012 年參選總統被取消資格（維基單源）、Rolling Stone 2023 年第 69 名（雜誌榜單不收）、『Le Petit Prince de Dakar』綽號與 1984 年在倫敦被 Peter Gabriel 發現（Encyclopedia.com 單源）、1988 年 Human Rights Now 巡迴（單源）、《Egypt》因九一一延後至 2004 發行（維基單源，上線簡介已寫）、《Egypt》在 Polar 官網被寫成《Allah-Egypte》且銷量 40 萬張（銷量不收）、〈7 Seconds〉銷量過百萬（銷量不收）。《Set》與《The Guide》的上線簡介內容（Billboard World Albums 榜首、MTV 歐洲音樂獎最佳歌曲、Virgin 解約）本位未核；Grammy 官網顯示《The Guide》1995 年（第 37 屆）為提名（Best World Music Album），簡介未寫得獎，無誤。『第 47 屆』與『2005 年』兩者官網與維基一致。"
+  },
+  {
+    "key": "ネーネーズ",
+    "name": "ネーネーズ",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "ネーネーズ（Nēnēs）是 1990 年由知名定男製作、結成的沖繩音樂團體；團名「ネーネー」在沖繩方言裡是「姊姊」的意思。",
+            "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+            "src2": "https://en.wikipedia.org/wiki/N%C4%93n%C4%93s",
+            "from": "new"
+          },
+          {
+            "f": "第一期成員是古謝美佐子、吉田康子、宮里奈美子、比屋根幸乃四位女聲，由知名定男把她們找來組成。",
+            "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+            "src2": "https://powerofokinawa.wordpress.com/2023/10/06/a-new-world-for-nenes/",
+            "from": "new"
+          },
+          {
+            "f": "知名定男 1945 年 4 月 21 日生於福岡縣，父親知名定繁是從沖繩出外謀生的音樂人；他後來回到沖繩，師事三線名手登川誠仁，十二歲左右（1957 年）正式錄音出道。",
+            "src": "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+            "src2": "https://en.wikipedia.org/wiki/China_Sadao",
+            "from": "new"
+          },
+          {
+            "f": "團體先以獨立盤《IKAWU》賣得比預期好，帶動了日本本土的巡演，之後簽下 Sony，再發行《ユンタ》。",
+            "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+            "src2": "https://powerofokinawa.wordpress.com/2023/10/06/a-new-world-for-nenes/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她們唱沖繩民謠與島唄，融進現代流行樂；四位女聲和聲、穿沖繩服裝、以三線伴奏。",
+            "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+            "src2": "https://en.wikipedia.org/wiki/N%C4%93n%C4%93s",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "第一期成員在 1999 年停止活動後換血，2003 年前後再度整批換人，後來分成多個世代延續至今。",
+            "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+            "src2": "https://en.wikipedia.org/wiki/N%C4%93n%C4%93s",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1990 年由知名定男製作結成，1991 年以獨立盤《IKAWU》起步，之後簽下 Sony。",
+        "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+        "src2": "https://powerofokinawa.wordpress.com/2023/10/06/a-new-world-for-nenes/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "1990 年代前期第一期成員人數：ja 維基寫 1996 年當眞江里子加入、1997 年轉投アンティノスレコード、1999 年 11 月第一期停止活動；en 維基寫 1990 至 1997 為原始四人、1997 至 1999 為三位原始成員加當眞江里子、1999 至 2003 全新陣容；兩源在『古謝美佐子 1995 年退團／當眞江里子 1996 或 1997 加入』的年份不一致，facts 不寫這些年份，只寫 1999 年第一期停止活動、2003 年前後再換人。",
+      "世代數：ja 維基寫到第六期（2019 年起），en 維基寫 2004 起為現行陣容；facts 不寫期數。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "⚠ 同名檢查：poolAlbums 四張（あしび、コザ dabasa、なーらび、YUNTA）皆為沖繩的ネーネーズ，無混卡；但 (1) MusicBrainz 上荷蘭有同名 trance 製作人 Nenes，一條都未收；(2) 搜尋結果裡 school-pro.net 的『ネネス』頁寫的是 1990 年由小松亨結成的另一個團體，與沖繩團無關，我開頁後發現同名不同人，其內容一條都未收（但那一次開頁仍計入次數）。本位用掉 8 次：日文維基ネーネーズ、WebSearch（日文）、school-pro（同名不同人，作廢）、パライソレコード（唱片行商品頁）、WebSearch（英文）、英文維基 Nēnēs、Power of Okinawa 部落格（1993 年 3 月寫的雜誌轉載，可信度中等）、英文維基 China Sadao；dokumen.pub 的《Nenes' Koza Dabasa》（Bloomsbury 33 1/3 Japan 系列專書）頁面只顯示維護中，未能讀到（失敗不計）。日文維基與英文維基為同站不同語言版，不完全獨立，已在可能處配上 Power of Okinawa 作第二源。知名定男的出生資料：ja 維基取自事實庫（前人讀過，我本次未再開頁），en 維基 China Sadao 我讀到；生日 1945 年 4 月 21 日與父親知名定繁兩源一致，『福岡縣』en 維基、『北九州市』ja 維基（事實庫），一致。1957 年出道：en 維基『twelve in 1957』與事實庫『六歲首次錄音、1956 年回沖繩』相容但不同，未收 1956 年細節。legacy 格查不到兩源共識評價，標 none；status 為 thin。單源未收：〈黄金の花〉（作詞岡本おさみ、作曲知名定男）1994 年成為《筑紫哲也 NEWS23》片尾曲（ja 維基單源，搜尋摘要多為其轉述）；1994 年巡演歐洲並在紐約演出、與坂本龍一合作、參與 Talvin Singh 專輯《OK》（en 維基單源）；《コザ dabasa》由 Ry Cooder 參與、洛杉磯錄音（パライソ商品頁單源，上線簡介的 credit 描述一致但無第二網址）；《コザ dabasa》是 Bloomsbury『33 1/3 Japan』系列專書的主題（僅見搜尋結果標題）；2016 年台灣公演、2015 年《リボーン》二十五週年（ja 維基單源）；『沖縄ポップスの至宝』評語（搜尋摘要，來源不明）；古謝美佐子 1996 年 solo 出道（en 維基單源）。成員名一律照日文原文漢字收。"
+  },
+  {
+    "key": "abdel halim hafez",
+    "name": "Abdel Halim Hafez",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Abdel Halim Hafez 本名 Abdel Halim Ali Shabana，1929 年 6 月 21 日生於埃及 El Sharqia 的 El-Halawat（Al-Ḥalāwāt）。",
+            "src": "https://en.wikipedia.org/wiki/Abdel_Halim_Hafez",
+            "src2": "https://www.britannica.com/biography/Abd-al-Halim-Hafiz",
+            "from": "new"
+          },
+          {
+            "f": "他自小失去雙親成為孤兒，家境貧困。",
+            "src": "https://en.wikipedia.org/wiki/Abdel_Halim_Hafez",
+            "src2": "https://artsandculture.google.com/story/the-lasting-legacy-of-abdel-halim-hafez-american-research-center-in-egypt/gQUR5LYwwnrVIg?hl=en",
+            "from": "new"
+          },
+          {
+            "f": "他少年時進入開羅的阿拉伯音樂學院學習。",
+            "src": "https://en.wikipedia.org/wiki/Abdel_Halim_Hafez",
+            "src2": "https://www.britannica.com/biography/Abd-al-Halim-Hafiz",
+            "from": "new"
+          },
+          {
+            "f": "他在電台臨時代替歌手 Karem Mahmoud 上場，被電台音樂節目主管 Hafez Abdel Wahab 發掘；藝名裡的「Hafez」就取自這位提攜他的人。",
+            "src": "https://en.wikipedia.org/wiki/Abdel_Halim_Hafez",
+            "src2": "https://www.egyptindependent.com/abdel-halim-hafez-dark-nightingale-1929-1977/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他以浪漫情歌與民族情懷歌曲的深情演繹見長，被形容為重視情感衝擊勝過技巧，也偏好現場演出而非錄音室。",
+            "src": "https://www.britannica.com/biography/Abd-al-Halim-Hafiz",
+            "src2": "https://artsandculture.google.com/story/the-lasting-legacy-of-abdel-halim-hafez-american-research-center-in-egypt/gQUR5LYwwnrVIg?hl=en",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的綽號是「el-Andaleeb el-Asmar」，英文常譯為 Brown-Skinned Nightingale 或 Tan Nightingale。",
+            "src": "https://en.wikipedia.org/wiki/Abdel_Halim_Hafez",
+            "src2": "https://www.britannica.com/biography/Abd-al-Halim-Hafiz",
+            "from": "new"
+          },
+          {
+            "f": "他的愛國歌曲與埃及民族主義緊密相連：1952 年革命時期的歌曲被說成激起了對納瑟的支持與民族自豪（Google Arts & Culture），2011 年埃及革命時又被當成頌歌（維基）。",
+            "src": "https://artsandculture.google.com/story/the-lasting-legacy-of-abdel-halim-hafez-american-research-center-in-egypt/gQUR5LYwwnrVIg?hl=en",
+            "src2": "https://en.wikipedia.org/wiki/Abdel_Halim_Hafez",
+            "from": "new"
+          },
+          {
+            "f": "他被奉為埃及最偉大的藝人之一，Britannica 稱許多人視他為同類歌手中無人能比。",
+            "src": "https://artsandculture.google.com/story/the-lasting-legacy-of-abdel-halim-hafez-american-research-center-in-egypt/gQUR5LYwwnrVIg?hl=en",
+            "src2": "https://www.britannica.com/biography/Abd-al-Halim-Hafiz",
+            "from": "new"
+          },
+          {
+            "f": "Google Arts & Culture 與 Egypt Independent 都稱他深刻影響了後來的阿拉伯／埃及流行音樂。",
+            "src": "https://artsandculture.google.com/story/the-lasting-legacy-of-abdel-halim-hafez-american-research-center-in-egypt/gQUR5LYwwnrVIg?hl=en",
+            "src2": "https://www.egyptindependent.com/abdel-halim-hafez-dark-nightingale-1929-1977/",
+            "from": "new"
+          },
+          {
+            "f": "他 1977 年在倫敦過世，開羅的出殯隊伍擠滿街道，被形容為全城哀悼。",
+            "src": "https://www.britannica.com/biography/Abd-al-Halim-Hafiz",
+            "src2": "https://artsandculture.google.com/story/the-lasting-legacy-of-abdel-halim-hafez-american-research-center-in-egypt/gQUR5LYwwnrVIg?hl=en",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1955 年演出首部電影《Lahn el-Wafaa》，1969 年的《Abi foq al-Shagara》是他的最後一部電影。",
+            "src": "https://www.britannica.com/biography/Abd-al-Halim-Hafiz",
+            "src2": "https://www.egyptindependent.com/abdel-halim-hafez-dark-nightingale-1929-1977/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1977 年在倫敦過世，開羅出殯規模龐大。",
+        "src": "https://www.britannica.com/biography/Abd-al-Halim-Hafiz",
+        "src2": "https://artsandculture.google.com/story/the-lasting-legacy-of-abdel-halim-hafez-american-research-center-in-egypt/gQUR5LYwwnrVIg?hl=en",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "被發掘的年份：維基與事實庫寫 1953 年，Egypt Independent 寫 1951 年，Britannica 寫 1952 年舉行一系列公開音樂會後走紅；三源不一，facts 不寫年份。",
+      "出殯人數：維基寫數萬人，Britannica 與 Egypt Independent 寫逾十萬人，搜尋摘要另有『數百萬人』說法；facts 不寫人數，只寫規模。",
+      "電影數：維基寫 16 部，Egypt Independent 寫 15 部；facts 不寫部數。",
+      "享年：Google Arts 寫 48 歲，Gulf News 摘要寫 47 歲（1929 年 6 月生、1977 年 3 月逝世，實為 47 歲）；facts 不寫享年。"
+    ],
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 三張（Mawoud、Ya Malekan Kalby、La Takzebi）皆為埃及的 Abdel Halim Hafez，無混卡。本位用掉 5 次：維基、WebSearch（出殯與傳記）、Britannica、Egypt Independent、Google Arts & Culture；Ahram Online 403（失敗不計）。名字照通行拉丁轉寫。維基與其他三源為不同出版者；Google Arts & Culture 是 ARCE 製作的策展頁。死因：事實庫與維基有死因細節，依本批規則不收，只收年份與地點。單源未收：Moog 合成器入樂（Britannica 單源）、1960 年代起唱口語詩與民謠（Egypt Independent 單源）、比 Umm Kulthum 與 Abdel Wahab『更輕更現代』的聲音（Egypt Independent 單源）、創立 Sout al-Phan 廠牌（Egypt Independent 單源；事實庫另記 Soutelphan 為 EMI 體系本地廠牌，兩者是否同一未核）、與 Umm Kulthum、Abdel Wahab、Farid al-Atrash 並列為同代歌手（維基單源）、《Dalila》為埃及第一部 Cinemascope 電影（維基單源，『第一部』宣稱未反查）、唱片銷量逾八千萬（維基單源，不收）、阿拉伯音樂學院 1948 年畢業（Britannica 單源）、十一歲染血吸蟲病（維基與 Egypt Independent 兩源一致，但與死因相連，依規則不寫）。第 4 條民族主義歌曲一條由兩源各支持一半（Google Arts 支持 1952 年與納瑟、維基支持 2011 頌歌），寫作層若只想用一半，兩半都各有一源。上線簡介三張未發現錯處。"
+  },
+  {
+    "key": "alton ellis",
+    "name": "Alton Ellis",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Alton Ellis 1938 年 9 月 1 日生於金斯敦的 Trenchtown，2008 年 10 月 10 日在倫敦過世。",
+            "src": "https://en.wikipedia.org/wiki/Alton_Ellis",
+            "src2": "https://jamaicans.com/on-this-day-in-jamaican-history-alton-ellis-the-godfather-of-rocksteady/",
+            "from": "new"
+          },
+          {
+            "f": "1959 年他與 Eddy Parkins 組成二重唱 Alton & Eddy，開始錄音生涯。",
+            "src": "https://en.wikipedia.org/wiki/Alton_Ellis",
+            "src2": "https://jamaicans.com/on-this-day-in-jamaican-history-alton-ellis-the-godfather-of-rocksteady/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的〈Rock Steady〉被說成把這個樂種的名字唱進歌名的歌曲，Ellis 本人也自稱是他替這種聲音命名。",
+            "src": "https://en.wikipedia.org/wiki/Alton_Ellis",
+            "src2": "https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他被稱為「Godfather of Rocksteady」，是 rocksteady 的開創者之一。",
+            "src": "https://en.wikipedia.org/wiki/Alton_Ellis",
+            "src2": "https://jamaicans.com/on-this-day-in-jamaican-history-alton-ellis-the-godfather-of-rocksteady/",
+            "from": "new"
+          },
+          {
+            "f": "2006 年他入選 International Reggae And World Music Awards 名人堂。",
+            "src": "https://en.wikipedia.org/wiki/Alton_Ellis",
+            "src2": "https://jamaicans.com/on-this-day-in-jamaican-history-alton-ellis-the-godfather-of-rocksteady/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2006 年入選 International Reggae And World Music Awards 名人堂。",
+        "src": "https://en.wikipedia.org/wiki/Alton_Ellis",
+        "src2": "https://jamaicans.com/on-this-day-in-jamaican-history-alton-ellis-the-godfather-of-rocksteady/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "〈Rock Steady〉年份：維基寫 1967 年，Songfacts 記 1965 年（Ellis 自稱 1965 年命名）；facts 不寫年份。",
+      "〈Mad Mad〉底軌年份：維基寫 1968 年（與 Sound Dimension），上線簡介《Yellowman》卡寫 1967 年為 Coxsone Dodd 錄製；僅維基單源，facts 不收。",
+      "『第一首』：Jamaica Observer 另說 Lynn Taitt 在 1966 年彈奏的某曲『據稱是這個樂種的第一首歌』，所以只收『命名』，不收『第一首 rocksteady 單曲』。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Sings Rock and Soul",
+        "claim": "同年（1967）替 Duke Reid 錄的〈Rock Steady〉是第一首在歌名裡指出這個樂種的作品",
+        "problem": "維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。",
+        "src": "https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady"
+      },
+      {
+        "album": "Mr. Soul of Jamaica",
+        "claim": "Ellis 1967 年的〈Rock Steady〉是第一首把這個節奏名稱唱進歌名的作品",
+        "problem": "維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。",
+        "src": "https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady"
+      },
+      {
+        "album": "（Yellowman 卡）Zungguzungguguzungguzeng",
+        "claim": "源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉",
+        "problem": "維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。",
+        "src": "https://en.wikipedia.org/wiki/Alton_Ellis"
+      }
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "thin",
+    "notes": "同名檢查：poolAlbums 三張（Sunday Coming、Mr. Soul of Jamaica、Sings Rock and Soul）皆為牙買加的 Alton Ellis，無混卡。本位用掉 8 次（已達上限）：維基、WebSearch（訃聞）、Jamaicans.com、WebSearch（Rock Steady 年份）、Songfacts、My Island Jamaica、Jamaica Observer、WBSS Media；失敗請求 2 次不計：Jamadio（頁面空白）、Reggae Vibes（頁面空白）。My Island Jamaica 與 WBSS Media 的文字幾乎與維基同句，疑為維基轉述，非獨立，故不作第二源。Songfacts 為 Rock Steady 一曲的條目；Jamaicans.com 是牙買加僑民資訊網站。『第一首以樂種名稱命名』只收成『被說成』並以兩源（維基、Songfacts）支撐；Jamaica Observer 的內文另提 Lynn Taitt 與『據稱第一首 rocksteady 歌』，寫作層請勿寫成確定的史上第一。單源未收：Jamaica Observer 稱他是 rocksteady 的『Sam Cooke』且列第 1 名（媒體榜單，不收）、『Ellis inspired Dennis Brown、Freddie McGregor、Sugar Minott、Beres Hammond』（Observer 單源，是 legacy 最有價值的一條但湊不到第二源，建議之後補查）、Order of Distinction 2004（維基單源，My Island 與 WBSS 為維基複本）、2012 年 Trench Town 禮堂以他命名（維基單源）、〈Mad Mad〉底軌後被 KRS-One、The Notorious B.I.G.、Tupac 取樣（維基單源，事實庫與上線簡介亦同源）、〈Get Ready – Rock Steady〉錄音時貝斯手缺席、Jackie Mittoo 左手彈貝斯並放慢節奏（Songfacts 單源）、1972 年起定居英國（維基單源）、在 ska 流行時站在反 rude boy 一邊（事實庫，維基單源）、〈Girl I've Got a Date〉被視為 rocksteady 奠基曲（維基單源）、Studio One 與 Duke Reid 時期細節（維基單源）。legacy 格只有稱號與名人堂兩條，後輩點名與共識評價查不到兩源，故 status 標 thin；era 標 none。"
   }
 ]
