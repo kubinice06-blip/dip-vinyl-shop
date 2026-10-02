@@ -29,3 +29,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 ### ar-c-004
 - g1 交件（QA 本組 0）。thin：Patty Waters（失敗請求 5 次超限）、Phil Ranelin、Portico Quartet。Paul Bley Trio 兩張是不同編制；Pharoah Sanders Quartet《The Creator Has a Master Plan》是 2003 年東京現場；Paul Motian Quintet 與 Paul Motian 共用生平。《Vibes from the Tribe》年份不寫；Portico Quartet 賣藝地點只寫泰晤士河南岸。Pepper Adams 地位兩源同出傳記，須具名「傳記作者稱」。pubIssues 0。
+- w1 審稿（1 處）：Kunihiko Sugano 首句主詞錯置（讀成介紹兄長），改為「日本爵士鋼琴手菅野邦彦，兄長是…菅野沖彦」。Sugano 用事實庫 Nadja 目錄單源補到 thin 下限，照准（可逆）。King Oliver 264 放寬照准；Armstrong 引語具名。稲垣次郎 2024 年過世、Kokoroko 2020 年 Proms 均有補洞稿來源。Johnny Hartman「民謠爵士」誤譯未採用，照准。
