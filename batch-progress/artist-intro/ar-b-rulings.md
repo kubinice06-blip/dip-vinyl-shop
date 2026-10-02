@@ -210,3 +210,7 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-018
 - g1 交件（QA 本組 0）。thin：Waxahatchee、Adrianne Lenker。Tyler Childers 2026 葛萊美最佳鄉村歌曲（〈Bitin' List〉）主線 WebSearch 核實（grammy.com、Backstage Country）。Víctor Jara〈Venceremos〉不得寫成他所作；出生地三說只寫「生於智利」。Alan Jackson 各名人堂年份互相矛盾，不寫。pubIssues 1（Woody Guthrie《Library of Congress Recordings》「最早的錄音」→ 本機待改）。
+
+### ar-b-017 審稿與上線
+- w1 無修正。w2（3 處）：Natalia Lafourcade 刪「拉丁葛萊美史上得獎最多的女藝人」（在世者累計）；Marty Robbins 不是身後入選——1982 年 10 月入選、12 月辭世，改正；Steve Earle「三度」改「多次」。放寬額度 4 位（Pete Seeger、Ruhi Su、Selda Bağcan、Shirley Collins）皆人物故事所需，照准。
+- **ar-b-017 上線**：40 位，reviewFixes 3。

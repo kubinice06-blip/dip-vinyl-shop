@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 145 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 155 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -149,3 +149,13 @@
 | ar-b-015 | The Black Skirts | 201 | 他十二歲移居美國、2006 年返韓後以單人樂團起步。 | 移居年齡有 12 歲（英文維基）與 13 歲（韓文維基、搜尋摘要）兩說；返韓年份英文維基寫 2006，但韓文維基、Bugs 訪談、Newsis 訪談都指向 2007 年來韓，2006 年是樂團轉為單人專案的年份。建議把『十二歲』改成『青少年時期』、『2006 年返韓』改成『2007 年來韓發展』。 | https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88 |
 | ar-b-015 | THE BLUE HEARTS | THE BLUE HEARTS | 甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成 | 日文維基寫 1985 年成軍時是甲本、真島與河口，鼓手梶原徹也 1986 年才加入；單源（日文維基），建議把『四人 1985 年組成』改為『甲本與真島 1985 年起頭、1986 年補齊四人』或改成不點年份。 | https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS |
 | ar-b-016 | 光束夜 | 1st | 這張 12 吋出在 1990 年的日本 Ray Night Music，編號 RNM0001 | 英文維基系統來源（搜尋摘要）寫首張 LP 在 Ray Night Music 於 1991 年發行；MusicBrainz 記 1990；兩源不一致，未能判定，建議店主再核對 Discogs 實體資料。 | https://en.wikipedia.org/wiki/Kousokuya |
+| ar-b-017 | 老王樂隊 | 暮夜徐行 | 發行約半年之後樂團宣布暫時休團，這張碟因而成為目前的最後一張 | ETtoday 報導樂團 2025 年 11 月 30 日在簡單生活節 Legacy 舞台宣布暫時休團，中文維基寫 2025 年底在簡單生活節宣布；而本專輯首發為 2025 年 10 月 30 日（事實庫 MusicBrainz），第二張實體碟 11 月 13 日。休團距首發約一個月，不是約半年；建議改為『發行約一個月之後』，並因『目前的最後一張』會過期，建議改寫。 | https://star.ettoday.net/news/3076296 |
+| ar-b-017 | 脫拉庫 | 飛向陽光飛向你 | 一九九九年首張《歡迎脫拉庫》入圍第十一屆金曲獎最佳演唱團體獎 | 第 11 屆金曲獎典禮於 2000 年 4 月 28 日舉行，1999 年是專輯發行年；寫『一九九九年…入圍』易讀成入圍發生在 1999 年，建議改為『首張專輯入圍 2000 年第 11 屆…』或去掉年份。 | https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E |
+| ar-b-017 | 脫拉庫 | 歡迎脫拉庫 | 貝斯彭承吉、鼓陳沐凡 | 本層開頁的中文維基摘要與聯合報 udn 專題都寫彭丞吉、陳牧凡，與上線簡介（彭承吉、陳沐凡）寫法不同；中文維基原頁字形請店主於本機核對（本層讀的是工具摘要，字形可能被轉寫，不確定）。 | https://time.udn.com/udntime/story/122834/8011437 |
+| ar-b-017 | Dick Gaughan | Coppers & Brass | 同一段時間，他還與一支凱爾特搖滾團錄了四張 | Stoneyport（藝人經紀簡介）寫與 Five Hand Reel 錄了三張專輯，與簡介的『四張』不一致；是否有誤待店主用 Five Hand Reel 目錄核對（本層未查到可確認的專輯清單，僅供核對）。 | https://stoneyport.biz/dick-gaughan |
+| ar-b-017 | Garth Brooks | No Fences | 獲 RIAA 認證 18 白金 | 本批特注規定 Garth Brooks 銷量與認證倍數不寫；這不是事實錯誤，是規則問題，建議店主本機改寫時拿掉認證倍數與週數統計 | https://en.wikipedia.org/wiki/Garth_Brooks |
+| ar-b-017 | Garth Brooks | Garth Brooks | 2006 年 11 月鑽石認證、美國出貨超過一千萬張 | 同上，在世者認證與銷量不寫 | https://en.wikipedia.org/wiki/Garth_Brooks |
+| ar-b-017 | Garth Brooks | The Chase | 首週賣出 403000 張並獲 RIAA 鑽石認證 | 同上，在世者銷量與認證不寫 | https://en.wikipedia.org/wiki/Garth_Brooks |
+| ar-b-017 | Steve Earle | Copperhead Road | B 面轉成情歌，收尾的〈Nothing but a Child〉與 Maria McKee 對唱 | 維基〈Copperhead Road〉專輯條目把〈Nothing but a Child〉描述為聖誕主題的二重唱（Christmas-themed duet），不是情歌；建議把『B 面轉成情歌』改成較中性的說法 | https://en.wikipedia.org/wiki/Copperhead_Road |
+| ar-b-018 | Woody Guthrie | Library of Congress Recordings | 維基記這是 Guthrie 最早的錄音 | Britannica 的傳記寫他『1941 年與 Alan Lomax 做了首批錄音』，與『1940 年 3 月最早』矛盾；『最早』一類宣稱兩源不一致，建議店主在本機改為不寫『最早』，只寫 1940 年 3 月為 Lomax 錄音、編目於國會圖書館 | https://www.britannica.com/biography/Woody-Guthrie |
+| ar-b-018 | Charlie Rich | The Fabulous Charlie Rich | 1958 年剛進 Sun Records；九年後 Epic 簽下他（即 1967 年） | 年份來源不一致：Encyclopedia of Arkansas 寫 1957 年簽 Sun，encyclopedia.com 寫 1968 年簽 Epic，英文維基為 1958 與 1967。建議改為『1950 年代後期』與『1960 年代後期』，或不寫確切年份。 | https://encyclopediaofarkansas.net/entries/charlie-rich-2519/ |
