@@ -243,3 +243,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - g1 交件。thin：Collage、FKA twigs。Demi Lovato、Gal Costa 搜尋 9 次超限 1 次（該次已撤）。pubIssues 6（Collage《Collage》全女性說法、《Kadriko》《Käokiri》年份；Girls' Generation《Oh!》含銷量（簡介層不禁，不改）、《Gee》發行地；H.O.T.《We Hate All Kinds of Violence》含銷量排名（簡介層不禁，不改））→ 前三筆與《Gee》本機待核。
 - 021 g2 交件（QA 本組 0）。thin：ITZY（地位 none）、Julia Holter（地位 none）、Kesha（失敗請求 5 次超限，未取得內容）、Little Mix。w1（g1+g2）派出。
 - 021 g3 交件。thin：Tate McRae。Stray Kids 搜尋 9 次超限 1 次（該次已撤）。單源未收：Sabrina Carpenter 2026 葛萊美入圍、Sigrid MTV EMA、Stray Kids／SEVENTEEN UNESCO 任命。pubIssues 1（Phương Dung 出生年 1945／1946）→ 本機待核；The Field Mice《Skywriting》「Ian Catt 把路線帶去 Saint Etienne」因果待核。
+- 021 w1 審稿（1 處）：Claude François「意外身故」改「過世」（不寫死因類別）。FKA twigs《Eusexua》2026 葛萊美最佳舞曲／電子專輯經主線 WebSearch 核實（Billboard、grammy.com）。Chế Linh 放寬至 259 字、被關押 28 個月（兩個語版維基）照准——屬人物主體，寫法中性。Demi Lovato TIME100 屬推選名單，照准。

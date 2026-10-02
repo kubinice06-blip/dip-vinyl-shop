@@ -550,5 +550,280 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "本位用掉 7 次（WebFetch 6：zh 維基徐小鳳、en 維基 Paula Tsui、ourchinastory 專文、zh 維基梅艷芳、zh-yue 維基徐小鳳、zh 維基金針獎；WebSearch 1）。另 1 次失敗（zh 維基金針獎(十大中文金曲) 404，不計入）。WebFetch 回傳是小模型摘要，非逐字原文；金針獎頁摘要把唐滌生寫成女性得主，明顯有誤，因此只用它確認『1989 年第 12 屆金針獎得主是徐小鳳』，不用它判斷是否首位女性。\n兩源非獨立標記：zh、zh-yue、en 維基與 zh 梅艷芳、金針獎條目皆同屬維基百科（非獨立）；ourchinastory 是獨立的人物專文，與維基交叉。\n單源未收入 facts：(1) 『首位獲金針獎的女歌手』（zh 單源，且頁面表格推算與此說法不一致，拿不準就不收）；(2) 1984 年十大勁歌金曲榮譽大獎（zh 單源）；(3) 五位演藝人士對她跪拜朝聖（周潤發、劉德華、倫永亮、呂方、杜德偉，zh 單源，粵語維基沒提）；(4) 1969 年在吉隆坡南國唱片廠兩天灌 12 首（事實庫 zh 單源）；(5) 銷量與白金張數、1986 年起寶麗金九張原創唱片（zh 單源且為履歷）；(6) en 維基稱曾在家裡髮廊／美甲工作、1969 年起在夜總會演出、以禮服聞名（en 單源，且與 zh 說法不同）；(7) 因此出道有「小白光」之稱（zh 單源）；(8) 家中小店的描述各處不同（ourchinastory 寫父親小店、粵語維基寫江浙食品生意、英文維基寫髮廊），不收；(9) 2018 年紅館演唱會與 2023 年復出亮相（ourchinastory 單源）。\n身分：poolAlbums 三張（全新歌集3、風雨同路、每一步）皆是香港歌手徐小鳳，沒有同名混卡。\n用語：沒有逐字引用歌詞，不寫累計銷量與場次數字。"
+ },
+ {
+  "key": "松任谷由実",
+  "name": "松任谷由実",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "松任谷由実 1954 年 1 月 19 日生於東京都八王子市，本姓荒井。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://www.nippon.com/en/japan-topics/g02147/",
+      "from": "new"
+     },
+     {
+      "f": "她 17 歲時就以作曲人身分起步，1972 年以荒井由実的名義發行單曲出道。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://www.nippon.com/en/japan-topics/g02147/",
+      "from": "new"
+     },
+     {
+      "f": "創立 Alfa 唱片的村井邦彦鼓勵她從寫歌人兼做歌手；她原本只想專心作曲。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://en.wikipedia.org/wiki/Yumi_Matsutoya",
+      "from": "new"
+     },
+     {
+      "f": "1976 年她與編曲家、製作人松任谷正隆結婚，之後改用夫姓名義發片；松任谷正隆長年是她的編曲者與製作人。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://en.wikipedia.org/wiki/Yumi_Matsutoya",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的歌被歸為ニューミュージック與シティ・ポップ，是西洋流行音樂編曲與日本語感的結合。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://www.nippon.com/en/japan-topics/g02147/",
+      "from": "new"
+     },
+     {
+      "f": "她自己說創作核心是把洋樂的影響與日本語的美感結合起來。",
+      "src": "https://yuming.co.jp/information/2022/10/25/7025/",
+      "src2": "https://www.nippon.com/en/japan-topics/g02147/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2013 年她獲頒紫綬褒章。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://en.wikipedia.org/wiki/Yumi_Matsutoya",
+      "from": "new"
+     },
+     {
+      "f": "2022 年度她獲選文化功労者。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://yuming.co.jp/information/2022/10/25/7025/",
+      "from": "new"
+     },
+     {
+      "f": "她從 1970 年代到 2020 年代連續 6 個年代都有專輯拿下 Oricon 專輯榜冠軍，這項紀錄獲金氏世界紀錄認定為日本專輯榜連續最多個十年有冠軍專輯。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://www.guinnessworldrecords.com/world-records/740676-most-consecutive-decades-with-a-no-1-on-the-japanese-albums-chart",
+      "from": "new"
+     },
+     {
+      "f": "專輯《SURF&SNOW》（1980）帶出在苗場等度假地舉行的度假型演唱會系列，成為她的年度活動，也塑造出「ユーミン世代」的度假文化認同。",
+      "src": "https://ja.wikipedia.org/wiki/SURF&SNOW",
+      "src2": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1972 年以荒井由実名義出道；1976 年與松任谷正隆結婚。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://en.wikipedia.org/wiki/Yumi_Matsutoya",
+      "from": "new"
+     },
+     {
+      "f": "2013 年紫綬褒章，2022 年度文化功労者。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+      "src2": "https://en.wikipedia.org/wiki/Yumi_Matsutoya",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1972 年以荒井由実名義出道。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+    "src2": "https://www.nippon.com/en/japan-topics/g02147/",
+    "from": "new"
+   },
+   {
+    "f": "2013 年獲頒紫綬褒章。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+    "src2": "https://en.wikipedia.org/wiki/Yumi_Matsutoya",
+    "from": "new"
+   },
+   {
+    "f": "2022 年度獲選文化功労者。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BB%BB%E8%B0%B7%E7%94%B1%E5%AE%9F",
+    "src2": "https://yuming.co.jp/information/2022/10/25/7025/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Guinness 官方頁寫紀錄達成日為 2022 年 10 月 17 日（《Yuming Banzai!》登上 Oricon 榜首當週），日文維基寫 2023 年 9 月金氏世界紀錄認定；兩源日期不一致，facts 只寫『連續 6 個年代』，不寫認定年月。",
+   "連續冠軍張數：nippon.com 寫 1981 至 1997 年連續 17 張，與上線簡介《昨晩お会いしましょう》『自本作起連續 17 張』一致，無衝突；日文維基未見另寫。",
+   "事實庫 research 為空；上線簡介三張（流線形'80、SURF&SNOW、昨晩お会いしましょう）與本層查到的生平事實無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "本位用掉 8 次（WebFetch 6：ja 維基松任谷由実、en 維基 Yumi Matsutoya、yuming 官方公告頁、nippon.com 專文、Guinness 紀錄頁、ja 維基 SURF&SNOW；WebSearch 2：文化功労者、Guinness）。另有 4 次取不到內容（東京新聞 404、秋田魁新報回傳找不到文章、nordot 404、時事通信 404，皆不計入），已達失敗上限 4 次。WebFetch 回傳是小模型摘要，非逐字原文；兩次 WebSearch 只看摘要，facts 未採用只在摘要出現的內容。\n兩源非獨立標記：ja 維基松任谷由実與 ja 維基 SURF&SNOW 同為維基（非獨立）；en 維基同為維基。獨立來源為 yuming 官方公告、nippon.com（國際交流基金出版系統的 Japan Topics，含引述）、Guinness 官方頁。\n單源未收入 facts：(1) 『シンガーソングライターとして史上初の文化功労者』（ja 維基單源；官方公告頁摘要明說未提首位，搜尋摘要有相同說法但沒開頁，兩次嘗試開新聞頁都 404，依『第一位類』規則放 notes）；(2) 荒井家是經營吳服店、第 4 個孩子（ja 單源）；(3) 6 歲學鋼琴、14 歲學貝斯、1971 年高三向加橋かつみ提供〈愛は突然に…〉（ja 單源）；(4) 1972 年 7 月 5 日單曲〈返事はいらない〉、かまやつひろし製作（ja 單源，且屬履歷）；(5) 為松田聖子寫〈赤いスイートピー〉，筆名呉田軽穂（ja 單源）；(6) 向井秀徳與峯田和伸翻唱〈守ってあげたい〉時她說『目前為止的翻唱裡最開心』（ja 單源）；(7) 2005 年第 56 回紅白首度出演（ja 單源）；(8) nippon.com 單源：1981 至 1997 年連續 17 張專輯登上榜首（與上線簡介一致，但 ja 維基摘要未見）；en 單源：聲音吸收前衛搖滾與歐洲流行、靈感來自 Joni Mitchell 與 Carole King；1973 年《ひこうき雲》是離開當時主流風格的作品、『沒有任何創作歌手或藝人能如此超越音樂的邊界』、〈やさしさに包まれたなら〉進入教科書；(9) 24 張冠軍專輯排名第 2、累計 4004 萬張等銷量（在世者累計銷量，依規則不寫）；(10) 『若者のカリスマ』『恋愛の教祖』（ja 單源，媒體稱呼）；(11) 英文維基稱 Yuming 暱稱由 13 歲時一位華人貝斯手所取（en 單源）。\n日期處理：『度假型演唱會系列』一條 f 欄不寫年份——SURF&SNOW in Naeba 1981 年起、in Zushi Marina 1983 至 2004 年（ja SURF&SNOW 頁），逗子一條與上線簡介寫『1983 年起』一致，但年份只見單頁。\n身分：poolAlbums 三張（流線形'80、SURF&SNOW、昨晩お会いしましょう）皆是松任谷由実本人，沒有同名混卡。"
+ },
+ {
+  "key": "林子祥",
+  "name": "林子祥",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "林子祥 1947 年 10 月 12 日生於英屬香港，祖籍廣東新會。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "from": "new"
+     },
+     {
+      "f": "他學生時期就自己組過樂隊；1975 年返港加入玉石樂隊，1976 年推出首張英文專輯《Lam》。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://www.ourchinastory.com/zh/14648/%E6%A8%82%E5%A3%87%E5%82%B3%E5%A5%87%E6%9E%97%E5%AD%90%E7%A5%A5-%E6%B7%B1%E6%83%85%E6%AC%BE%E6%AC%BE%E5%8F%88%E8%B1%AA%E9%82%81%E6%BF%80%E6%98%82-%E7%94%A8%E9%9F%B3%E6%A8%82%E6%84%9F%E5%8B%95%E8%A7%80%E7%9C%BE-",
+      "from": "new"
+     },
+     {
+      "f": "他 1976 年以英文專輯《Lam》起步，1978 年起轉唱粵語歌。",
+      "src": "https://en.wikipedia.org/wiki/George_Lam",
+      "src2": "https://www.ourchinastory.com/zh/14648/%E6%A8%82%E5%A3%87%E5%82%B3%E5%A5%87%E6%9E%97%E5%AD%90%E7%A5%A5-%E6%B7%B1%E6%83%85%E6%AC%BE%E6%AC%BE%E5%8F%88%E8%B1%AA%E9%82%81%E6%BF%80%E6%98%82-%E7%94%A8%E9%9F%B3%E6%A8%82%E6%84%9F%E5%8B%95%E8%A7%80%E7%9C%BE-",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音域極廣，嗓音強勁而有衝擊力。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://en.wikipedia.org/wiki/George_Lam",
+      "from": "new"
+     },
+     {
+      "f": "他把當時流行的 20 首歌用編曲串成一首〈10分12吋〉，被視為經典串燒歌。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "from": "new"
+     },
+     {
+      "f": "〈Ah Lam 日記〉被稱為華語樂壇最早的說唱歌曲之一，他也因此被視為香港最早的說唱歌手之一。",
+      "src": "https://www.ourchinastory.com/zh/14648/%E6%A8%82%E5%A3%87%E5%82%B3%E5%A5%87%E6%9E%97%E5%AD%90%E7%A5%A5-%E6%B7%B1%E6%83%85%E6%AC%BE%E6%AC%BE%E5%8F%88%E8%B1%AA%E9%82%81%E6%BF%80%E6%98%82-%E7%94%A8%E9%9F%B3%E6%A8%82%E6%84%9F%E5%8B%95%E8%A7%80%E7%9C%BE-",
+      "src2": "https://en.wikipedia.org/wiki/George_Lam",
+      "from": "new"
+     },
+     {
+      "f": "他的風格涵蓋鄉村搖滾、節奏藍調、爵士與放克，也自己創作歌曲，〈分分鐘需要你〉是他作曲的代表作之一。",
+      "src": "https://en.wikipedia.org/wiki/George_Lam",
+      "src2": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1980 年他憑〈在水中央〉與〈分分鐘需要你〉在第 3 屆十大中文金曲頒獎音樂會連獲兩個金曲獎，成為當年的大贏家。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "from": "new"
+     },
+     {
+      "f": "1994 年在第 17 屆十大中文金曲頒獎音樂會上，他獲香港電台頒發金針獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "from": "new"
+     },
+     {
+      "f": "他 2016 年入選十大中文金曲名人堂（RTHK Hall of Fame）。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://en.wikipedia.org/wiki/George_Lam",
+      "from": "new"
+     },
+     {
+      "f": "1986 年他憑電影《最愛》的歌曲獲香港電影金像獎最佳原創電影歌曲。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://en.wikipedia.org/wiki/George_Lam",
+      "from": "new"
+     },
+     {
+      "f": "1980 年代他共有 23 首歌拿下香港電台中文歌曲龍虎榜冠軍，僅次於譚詠麟的 28 首。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://en.wikipedia.org/wiki/George_Lam",
+      "from": "new"
+     },
+     {
+      "f": "陳奕迅等後輩歌手把他視為偶像、或表示受過他的影響。",
+      "src": "https://en.wikipedia.org/wiki/George_Lam",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1975 年返港加入玉石樂隊，1976 年推出英文專輯《Lam》，1978 年起轉唱粵語。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://www.ourchinastory.com/zh/14648/%E6%A8%82%E5%A3%87%E5%82%B3%E5%A5%87%E6%9E%97%E5%AD%90%E7%A5%A5-%E6%B7%B1%E6%83%85%E6%AC%BE%E6%AC%BE%E5%8F%88%E8%B1%AA%E9%82%81%E6%BF%80%E6%98%82-%E7%94%A8%E9%9F%B3%E6%A8%82%E6%84%9F%E5%8B%95%E8%A7%80%E7%9C%BE-",
+      "from": "new"
+     },
+     {
+      "f": "1980 年連獲兩個十大中文金曲獎，1994 年獲金針獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1980 年憑〈在水中央〉與〈分分鐘需要你〉連獲兩個十大中文金曲獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+    "src2": "https://zh-yue.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+    "from": "new"
+   },
+   {
+    "f": "1994 年獲十大中文金曲金針獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+    "src2": "https://zh-yue.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+    "from": "new"
+   },
+   {
+    "f": "2016 年入選十大中文金曲名人堂。",
+    "src": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%AD%90%E7%A5%A5",
+    "src2": "https://en.wikipedia.org/wiki/George_Lam",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "〈10分12吋〉年份：中文維基寫 1984 年（同年有〈每一個晚上〉），粵語維基與搜尋摘要寫 1985 年，兩源不一致，facts 不寫年份。",
+   "CASH 2003 年的獎項名稱：中文維基寫「CASH 音樂成就大獎、首位唱作人獲此殊榮」，英文維基寫「CASH Hall of Fame Award」，兩邊名稱不一致，故 facts 不收 CASH 一條。",
+   "玉石樂隊一說：粵語維基摘要未提及玉石樂隊，只寫學生時期組樂隊；中文維基與 ourchinastory 都寫 1975 年返港加入玉石樂隊，採中文維基與 ourchinastory 兩源。",
+   "上線簡介《活色生香》寫該年同名曲拿下十大中文金曲歌手獎與作曲人獎，本層沒查到該年獎項，無法證實或推翻。其餘上線簡介與本層查到的生平無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "本位用掉 7 次（WebFetch 6：zh 維基林子祥、en 維基 George Lam、zh-yue 維基林子祥、Yahoo 香港新聞陳奕迅合唱報導、ourchinastory 林子祥專文、vocus 專欄；WebSearch 2：影響與串燒、玉石樂隊）。WebFetch 回傳是小模型摘要，非逐字原文；兩次 WebSearch 只看摘要，只出現在摘要的內容一律沒採用。Yahoo 報導只用來確認 2025 年陳奕迅在林子祥葉蒨文演唱會上台合唱並表示敬佩，facts 沒採用（屬單場演唱會）。\n兩源非獨立標記：zh、zh-yue、en 維基同為維基百科（非獨立）；vocus 專欄內容與中文維基同文（非獨立，只作旁證，沒當 src2）；ourchinastory 是獨立的人物專文。\n單源未收入 facts：(1) 祖父、父親、四叔公皆是醫生，祖父是那打素醫院院長、父親林達志是元朗婦產科醫生；父母離婚、1960 年母親赴美、1965 年赴英讀書、曾讀拔萃男書院與英國多佛學院、赴美曾任網球教練（zh 單源，vocus 同文轉述）；(2) 英國讀書時自組樂隊 The Midnighters 任主唱兼吉他手（ourchinastory 單源）；(3) 說話聲線陰柔細聲、上台卻能唱情歌與激昂歌曲（ourchinastory 單源）；(4) 〈每一個晚上〉由兩首中西樂曲拼合而成（zh 單源）；(5) 〈10分12吋〉掀起串燒歌熱潮，後來周潤發、朱咪咪、古巨基用類似形式（zh 單源）；(6) 2003 年 CASH 獎項（名稱兩源不一致）、2015 年 J.S.G. 終身成就獎（en 單源）；(7) 與葉蒨文的婚姻經過（只收年份層級也不屬音樂，且涉私人，不收）；(8) en 稱他創作『已知第一首 Cantorap』（en 單源，且屬『第一位』類宣稱，拿不準；facts 只寫『最早之一』並有 ourchinastory 對〈Ah Lam 日記〉的同向說法，屬兩個不同說法互相支持，非同一證據）；(9) 1983 年第一位在紅磡開四面台的歌手、1983 年《投奔怒海》提名第 2 屆金像獎最佳男主角（事實庫 zh 單源，『第一位』類）；(10) 1980 年代 23 首榜首已有 zh 與 en 兩源，已收。\n身分：poolAlbums 三張（活色生香、愛到發燒、抉擇）皆是香港歌手林子祥，沒有同名混卡。\n用語：不寫累計銷量與場次。"
  }
 ]
