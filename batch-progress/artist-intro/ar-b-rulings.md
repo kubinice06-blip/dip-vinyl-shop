@@ -320,3 +320,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 028 w1 審稿（2 處）：Bone Thugs-n-Harmony 刪「最偉大的饒舌團體之一」（在世成員的最高級評價，第二源未見支持），也刪「十年後在 Drake 一代身上顯現」（無來源的影響延伸）。A$AP Rocky 2025 年 CFDA Fashion Icon 與 Thom Browne 引語經主線 WebSearch 核實（cfda.com、Ebony）。Backxwash「第一位獲 Polaris 的跨性別藝人」屬廣泛報導，照准。
 - 028 w2 審稿無修正。G-DRAGON 2025-10-23 第 16 屆大眾文化藝術獎玉冠文化勳章經主線 WebSearch 核實（亞洲經濟、Star News）；「最年輕」不寫。Clipse 放寬至 264 照准。Heavy D & The Boyz「Uptown 第一組簽約藝人」、Faith Evans「Bad Boy 第一位女歌手」各有兩源，照准。
 - **ar-b-028 上線**：40 位，reviewFixes 2。
+- 029 w1 審稿無修正。Kehlani〈Folded〉第 68 屆（2026）葛萊美最佳 R&B 歌曲經主線 WebSearch 核實（Oaklandside、grammy.com）。MF DOOM 271、KRS-One 263 放寬照准；Subroc 只寫「在這段期間過世」。John Legend「第一位 EGOT 非裔男性」屬廣泛報導，照准。
