@@ -185,3 +185,15 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### 第四段收尾
 - ar-b-013／014／015 共 120 位上線（分支累計見 manifest）。本機待改的已上線簡介疑點：Gene Clark《No Other》、Gorilla Biscuits《Start Today》、Leb i Sol、Phil Collins《...But Seriously》（年度單曲→年度唱片）、Primal Scream《XTRMNTR》年份、Robert Calvert 逝世地、The Black Skirts《201》、THE BLUE HEARTS 成軍成員 → 皆在 audits/ARTIST-PUB-ISSUES.md。
+
+## 第五段（2026-10-02，店主：「再一批」）
+
+### ar-b-016（rock，40 位）
+- 補洞特注：同名常見照 poolAlbums 確認（X、Traffic、toe、Thursday、Thrice、UFO、夢幻、Third Quadrant、White Heaven、Wipers、Ulver）；台灣團金曲獎主詞分清；五月天、U2 不寫累計數字；Hendrix、Цой、hide、TAIJI 只寫年份。完成後比照 #19 開 PR 併入 main。
+- g1 交件（QA 本組 0）。thin：Fabulous Thunderbirds、Gaslight Anthem、New Pornographers、Stranglers、Third Quadrant（貢獻／地位 none）。The xx、Third Quadrant 失敗請求 5 次超限，未取得內容，照收。Jimi Hendrix 1970 年過世為通行事實，主線核可寫年份（不寫死因）。Gaslight Anthem 與 Springsteen 同台場合兩說，不寫。
+- g3 交件（QA 本組 0）。thin：White Heaven、Within Temptation、Wolf Alice。Wolf Alice 2022 年 Brit Awards 最佳英國團體由主線 WebSearch 核實（NME、Radio X）→ 可寫。Z.Z. Hill 藍調名人堂單源、Yoko Ono 初識 Lennon 年份兩說，不寫。Аквариум《Равноденствие》「第一張正式黑膠」為首次類說法，列本機待核。
+- g2 交件（QA 本組 0）。地位僅一條：Traffic、U2、Ulver。Ulver《Nattens Madrigal》卡池記 1996、實為 1997-03 發行 → 本機待改。w1（g1+g2）派出。
+- g4 交件。thin：光束夜、八十八顆芭樂籽、夢幻（地位 none）。산울림、八十八顆芭樂籽 搜尋 9 次超限 1 次（該次未取用）；夢幻 失敗請求 5 次超限，未取得內容，照收。pubIssues 1（光束夜《1st》年份 1990／1991 → 本機待核）。五月天 MSG 首組說法只准「被稱為」。w2（g3+g4）派出。
+- w1 審稿（2 處）：Viagra Boys 2026 Grammis 年度專輯經主線 WebSearch 核實（得獎），但 Murphy「年度詞作者」只見入圍、未證實得獎 → 刪；「兩度年度搖滾」改「多次獲 Grammis 肯定」。toe 文中 tricot 改小寫通行寫法。
+- w2 審稿（1 處）：X 的 Ray Manzarek 製作了前四張而非「前三張」→ 改「最初的幾張」。Wolf Alice 由 thin 升 full（Mercury＋主線核實的 Brit），照准。光束夜正文「不失者」漢字主線核對無誤。
+- **ar-b-016 上線**：40 位，reviewFixes 3。

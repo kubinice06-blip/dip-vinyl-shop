@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 144 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 145 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -148,3 +148,4 @@
 | ar-b-015 | Robert Calvert | Test-Tube Conceived | 1988 年他在拉姆斯蓋特去世，墓碑上刻著莎士比亞的一句詩 | 死亡地點兩源不一致：英文維基寫在 Ramsgate 的 Corner House 咖啡館外、Encyclopedia.com 寫在 Margate 家中；建議簡介只留「1988 年去世」，不寫地點（墓碑刻句只見維基與衍生網站，單源）。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/calvert-robert |
 | ar-b-015 | The Black Skirts | 201 | 他十二歲移居美國、2006 年返韓後以單人樂團起步。 | 移居年齡有 12 歲（英文維基）與 13 歲（韓文維基、搜尋摘要）兩說；返韓年份英文維基寫 2006，但韓文維基、Bugs 訪談、Newsis 訪談都指向 2007 年來韓，2006 年是樂團轉為單人專案的年份。建議把『十二歲』改成『青少年時期』、『2006 年返韓』改成『2007 年來韓發展』。 | https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88 |
 | ar-b-015 | THE BLUE HEARTS | THE BLUE HEARTS | 甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成 | 日文維基寫 1985 年成軍時是甲本、真島與河口，鼓手梶原徹也 1986 年才加入；單源（日文維基），建議把『四人 1985 年組成』改為『甲本與真島 1985 年起頭、1986 年補齊四人』或改成不點年份。 | https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS |
+| ar-b-016 | 光束夜 | 1st | 這張 12 吋出在 1990 年的日本 Ray Night Music，編號 RNM0001 | 英文維基系統來源（搜尋摘要）寫首張 LP 在 Ray Night Music 於 1991 年發行；MusicBrainz 記 1990；兩源不一致，未能判定，建議店主再核對 Discogs 實體資料。 | https://en.wikipedia.org/wiki/Kousokuya |
