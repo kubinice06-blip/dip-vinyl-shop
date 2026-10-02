@@ -215,3 +215,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - w1 無修正。w2（3 處）：Natalia Lafourcade 刪「拉丁葛萊美史上得獎最多的女藝人」（在世者累計）；Marty Robbins 不是身後入選——1982 年 10 月入選、12 月辭世，改正；Steve Earle「三度」改「多次」。放寬額度 4 位（Pete Seeger、Ruhi Su、Selda Bağcan、Shirley Collins）皆人物故事所需，照准。
 - **ar-b-017 上線**：40 位，reviewFixes 3。
 - g2 交件（QA 本組 0）。thin：Bridget St John（失敗請求 5 次超限，未取得內容）、Damien Rice、Dando Shaft、Darren Korb。pubIssues 2（Charlie Rich《The Fabulous Charlie Rich》簽約年；Dwight Yoakam《Guitars, Cadillacs》移居年與 EP 發行說法）→ 本機待核。w1（g1+g2）派出。
+- g3 交件。thin：Gracie Abrams、Jessica Pratt。John Renbourn 搜尋 9 次超限 1 次（該次只記衝突、未取用）。pubIssues 2（《Down to the Cider Mill》「廠牌第一張唱片」錯，County 第一張是 1964 年 501 號；Kryl《Bratříčku》印量口徑）→ 本機待改。**另：John Renbourn 某張已上線簡介含「英文維基把…列為」字樣 → 違反「來源平台不進正文」，優先本機改寫**；Brassens《Le Gorille》「1955 年歐洲一台開播」待核。
