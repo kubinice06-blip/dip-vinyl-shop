@@ -282,5 +282,95 @@
     "status": "thin",
     "pubIssues": [],
     "notes": "補查 7 次：英文維基（兩次，第二次專查歷史段）、WebSearch（起源）、KTVU 頁（內容為 AllMusic 傳記）、WebSearch（遺產）、Musician Guide、維基 Good Life Cafe；失敗請求 3 次未計（Britannica 404、Variety 307 轉址後 402 付費牆）。事實庫 research 與 published 皆空，全為新查。KTVU 與 Musician Guide 的內容皆出自 AllMusic 傳記（段落相同），兩者「非獨立」，origin 第一條與第二條用維基＋AllMusic 系各一個獨立來源；sound 第一條與 legacy 唯一條為 AllMusic 系同源兩頁，寫作層用語宜寫成「AllMusic 傳記稱」，不要寫成「公認」。同名核對：poolAlbums《Quality Control》《Power in Numbers》《Feedback》，確為此洛杉磯團。legacy 只有一條有來源的評價，且非獨立，故整體標 thin。未收：2007 年解散（只有維基，且 KTVU 只寫「暫時解散」）；團名取自 Fantastic Five 的說法（維基單源，Chali 2na 2002 訪談）；Good Life Cafe 開放麥克風 1989 年 12 月至 1997 年 9 月、周四、禁髒話（維基單源）；Project Blowed 與 2008 年紀錄片《This Is the Life》（維基單源）；「自 N.W.A. 以來洛杉磯第一個站在重要運動前端的團」（只見搜尋結果摘要，AllMusic 系，未在開頁內容中核對）；與 Freestyle Fellowship 同出 Good Life 圈（搜尋摘要）；Unity Committee 在 Musician Guide 拼成 Unity Community，採維基與 KTVU 的 Unity Committee；《Power in Numbers》榜名次不寫。"
+  },
+  {
+    "key": "kano",
+    "name": "Kano",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "英國饒舌歌手 Kano 本名 Kane Brett Robinson，1985 年生於倫敦東區的 East Ham，由擔任體育老師的母親帶大。",
+            "src": "https://en.wikipedia.org/wiki/Kano_(British_musician)",
+            "src2": "https://www.theculturecrypt.com/posts/kano-made-in-the-manor-retrospective",
+            "from": "new"
+          },
+          {
+            "f": "他少年時是足球好手，曾在 Chelsea、West Ham、Norwich City 的青年隊踢球，約十四歲起把重心轉到音樂。",
+            "src": "https://en.wikipedia.org/wiki/Kano_(British_musician)",
+            "src2": "https://www.theculturecrypt.com/posts/kano-made-in-the-manor-retrospective",
+            "from": "new"
+          },
+          {
+            "f": "他早年在倫敦的海盜電台圈起家，屬 grime 的第一代 MC。",
+            "src": "https://www.theskinny.co.uk/music/interviews/made-in-the-uk-kano-interviewed",
+            "src2": "https://en.wikipedia.org/wiki/Kano_(British_musician)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他以 grime 為根，同時會寫歌：The Skinny 稱他是少數（與 Dizzee Rascal 並列）能把 grime 的反商業氣質與現代流行歌接起來的早期 MC；他也與 Craig David、Damon Albarn 等主流與跨界歌手合作。",
+            "src": "https://www.theskinny.co.uk/music/interviews/made-in-the-uk-kano-interviewed",
+            "src2": "https://en.wikipedia.org/wiki/Kano_(rapper)",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2016 年他的第五張專輯《Made in the Manor》入圍 Mercury Prize（入圍，未得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Made_in_the_Manor",
+            "src2": "https://www.theculturecrypt.com/posts/kano-made-in-the-manor-retrospective",
+            "from": "new"
+          },
+          {
+            "f": "《Made in the Manor》在 2016 年 MOBO 獎拿下最佳專輯。",
+            "src": "https://en.wikipedia.org/wiki/Made_in_the_Manor",
+            "src2": "https://en.wikipedia.org/wiki/Kano_(British_musician)",
+            "from": "new"
+          },
+          {
+            "f": "他也以演員身分在英劇《Top Boy》中飾演 Sully，該劇後來由 Netflix 接手續拍。",
+            "src": "https://en.wikipedia.org/wiki/Kano_(British_musician)",
+            "src2": "https://www.theculturecrypt.com/posts/kano-made-in-the-manor-retrospective",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2005 年發行首張專輯《Home Sweet Home》。",
+            "src": "https://en.wikipedia.org/wiki/Kano_(British_musician)",
+            "src2": "https://www.theculturecrypt.com/posts/kano-made-in-the-manor-retrospective",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2016 年《Made in the Manor》入圍 Mercury Prize（入圍）並拿下 MOBO 最佳專輯（得獎）。",
+        "src": "https://en.wikipedia.org/wiki/Made_in_the_Manor",
+        "src2": "https://www.theculturecrypt.com/posts/kano-made-in-the-manor-retrospective",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Mercury Prize 第二次入圍：維基一頁寫專輯《Hoodies All Summer》2019、另一頁寫 2020，兩頁不一致，不收那一次。Netflix 續拍年份維基兩頁寫 2017 與 2019 不同，facts 不寫年份。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "⚠ 同名混卡：poolAlbums 的 Kano 底下混了兩個不同的人，《Home Sweet Home》（2005）與《Made in the Manor》（2016）是倫敦 grime MC Kano（Kane Robinson），《Kano》（1980）是 1979 年在米蘭成立的義大利 disco 錄音計畫（已上線簡介的班底是 Luciano Ninzatti、Stefano Pulga、Matteo Bonsanto）。英國這位專輯數多（2 張），本檔只寫英國這位；義大利那張的藝人介紹不得套用本檔，建議店主考慮把 1980 年《Kano》拆成獨立藝人名（例如 Kano (Italy)）。補查 8 次：維基 Kano（rapper）、WebSearch、維基 Kano（rapper）第二次、維基 Kano (British musician)、The Culture Crypt、維基 Made in the Manor、WebSearch（BBC 評論）、The Skinny 訪談；Britannica 404 未計。注意：Kano_(rapper) 與 Kano_(British_musician) 是維基的同一英國藝人條目（轉址），所以維基視為單一來源，上列凡「維基＋維基」者皆為非獨立（MOBO 2016 一條兩源都是維基）。The Culture Crypt 是文化網站文章、The Skinny 是蘇格蘭音樂雜誌，兩者獨立於維基。未收：父母為牙買加人（只見維基單源）；哥哥 Lee（Chopper）有唱盤、兩人錄 UK garage 卡帶、經 Flava FM 認識 Nasty Crew 創辦人 Sharky Major、約 2002 年加入、2005 年離團（單源，維基）；2004 年簽 679 Recordings（履歷，不收）；2005 年 MOBO 最佳新人、2022 年 MOBO 影視表演（單源，維基）；2006 年 Brit Awards 英國都會藝人入圍（單源，維基）；Jay-Z 2005 年點名他為最愛饒舌歌手（單源，The Skinny）；BBC 稱《Made in the Manor》是「grime 未來的路標」、該專輯影響 Dave、Loyle Carner、Little Simz（單源，The Culture Crypt，查不到 BBC 原文，不收）；「被廣泛認為是 grime 先驅之一」僅見搜尋結果摘要，維基條目首段並無此句，不收。《Home Sweet Home》金唱片認證屬認證倍數，不寫。"
   }
 ]
