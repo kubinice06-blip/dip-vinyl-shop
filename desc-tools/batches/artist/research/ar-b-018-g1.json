@@ -702,5 +702,173 @@
   "status": "full",
   "pubIssues": [],
   "notes": "補查 6 次：日文維基、WebSearch（訃報與功績）、琉球新報訃報頁、琉球新報追悼文、日刊 Sports 訃報、OKINAWA QUEST 介紹文。事實庫 research 為專輯層級（含日文維基生平，已用）；origin／sound／legacy 皆靠補查補強第二源。非獨立：legacy 第一條的 OKINAWA QUEST 是個人部落格，與琉球新報的訃報同樣屬一般報導／網誌，不能算學術獨立；日刊 Sports 訃報與琉球新報訃報都是共同社類通訊稿式的重述，疑似同源（兩篇措辭高度重疊：5 歲移居、豊節與デンサー節、立役者），已標『非獨立』，因此 legacy 第二條的『立役者』與『第一人者』雖兩源，但屬同一則新聞素材。人名、專名照原文漢字（登川誠仁、湛水流、ナビィの恋）；『国』等字無出現。單源未收：師承板良敷朝賢、1955 年起獨唱、與喜納昌永及津波恒徳組成民謠表演組合而奠定民謠 show（日文維基單源）；1957 年參與琉球民謡協會設立、1984 年起連任六屆會長、1998 年起名譽會長、1999 年琉球民謡名人位（日文維基與琉球新報部分重疊，但不同細節各單源）；2011 年第 9 回宮良長包音樂賞與琉球民謡協會第一回功勞賞（琉球新報訃報／OKINAWA QUEST 各單源）；歌詞堅持使用ウチナーグチ、為三線加弦做六線、改良三板帶進民謠、開發電三線（日文維基單源）；基地勞動轉入藝道的人生、『他的一切皆是藝』（琉球新報追悼文，記者個人評語，不收）；戰前戰後細節。事實庫另有 MusicBrainz 只有一筆作品（2007 精選），屬資料庫狀態，不入 facts。poolAlbums（美ら弾き、スピリチュアル ユニティ、登川誠仁独演会、スタンド！）皆為此人。"
+ },
+ {
+  "key": "adrianne lenker",
+  "name": "Adrianne Lenker",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Adrianne Lenker 1991 年生於印第安納州 Indianapolis；她 4 歲前生活在一個她自稱「religious cult」的宗教團體裡，父母離開後家人常常搬家，有時住在廂型車上。",
+      "src": "https://en.wikipedia.org/wiki/Adrianne_Lenker",
+      "src2": "https://www.theringer.com/2019/04/30/music/big-thief-adrianne-lenker-ufof-capacity-band",
+      "from": "new"
+     },
+     {
+      "f": "她的父親是音樂人，教她吉他與寫歌、帶她去開放麥克風；她 8 歲寫出第一首歌。",
+      "src": "https://en.wikipedia.org/wiki/Adrianne_Lenker",
+      "src2": "https://www.theringer.com/2019/04/30/music/big-thief-adrianne-lenker-ufof-capacity-band",
+      "from": "new"
+     },
+     {
+      "f": "她靠 Susan Tedeschi 籌的獎學金進入波士頓的 Berklee 音樂學院；2015 年她在紐約與 Buck Meek 等人成立 Big Thief。",
+      "src": "https://en.wikipedia.org/wiki/Adrianne_Lenker",
+      "src2": "https://www.theringer.com/2019/04/30/music/big-thief-adrianne-lenker-ufof-capacity-band",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Ringer 形容 Big Thief 的聲音「folksy but modern」，兼有親密與遼闊；維基引 NPR 稱她的歌詞「unequivocal, instinctive and deeply personal」。",
+      "src": "https://www.theringer.com/2019/04/30/music/big-thief-adrianne-lenker-ufof-capacity-band",
+      "src2": "https://en.wikipedia.org/wiki/Adrianne_Lenker",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2024 年的個人專輯《Bright Future》入圍第 67 屆葛萊美（2025）民謠專輯類（Best Folk Album，入圍未得獎）；這是她以個人名義第一次葛萊美入圍，其餘入圍都掛在 Big Thief 名下。",
+      "src": "https://en.wikipedia.org/wiki/Adrianne_Lenker",
+      "src2": "https://www.grammy.com/artists/adrianne-lenker/251868",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2015 年她在紐約與 Buck Meek 等人成立 Big Thief。",
+    "src": "https://en.wikipedia.org/wiki/Adrianne_Lenker",
+    "src2": "https://www.theringer.com/2019/04/30/music/big-thief-adrianne-lenker-ufof-capacity-band",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Bright Future 上線簡介寫『入圍第 67 屆葛萊美最佳民謠專輯，是她個人作品首度獲提名』，與維基、grammy.com（67 屆、Bright Future、個人名義首次）一致；grammy.com 頁面把類別寫成『Best Contemporary Folk Album』，維基與其他報導寫『Best Folk Album』，採多數寫法。"
+  ],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 5 次：英文維基 Adrianne Lenker、WebSearch（身世）、The Ringer 專文、WebSearch（葛萊美）、grammy.com 藝人頁；NPR〈The Lore of Big Thief〉503（未取得，計入 failedFetches）。事實庫 research 空，三格從零查；legacy 只湊到葛萊美一條，沒有找到有出處的後輩點名或共識評價，故 status 為 thin。非獨立：origin 兩源是維基與 The Ringer（獨立）；legacy 兩源是維基與 grammy.com。origin 第三條的『Berklee 獎學金』兩源都有，『2015 年紐約成立 Big Thief』兩源都有（維基寫與 Buck Meek、Max Oleartchik 等，Ringer 寫在紐約成軍、成員含 Meek、Oleartchik、Krivchenia），f 只寫 Meek 等人。宗教團體一條：維基寫 raised in a Christian cult，Ringer 引她自述 religious cult，straight up，facts 照她自述寫為『宗教團體』，寫作層建議以『她自稱』帶過，不展開。單源未收：主要在明尼蘇達長大、13 歲錄第一張專輯、州空手道冠軍連三年、14 歲起走專業音樂、16 歲取得 GED（維基單源）；13 歲左右開始實驗開放調弦、16 歲離開父親的音樂經紀、表演原創曲給 Berklee 教務長聽的經過、欣賞 Joni Mitchell、Neil Young、Leonard Cohen（The Ringer 單源）；2006 年首張《Stages of the Sun》、2014《Hours Were the Birds》（維基單源，且屬出道作類；上線簡介稱《abysskiss》為第三張、《Bright Future》為第六張，與維基個人作品清單數量一致，無衝突）；Big Thief 2016 年首張《Masterpiece》（維基單源）；性別認同（不收）；grammy.com 列的 Big Thief 提名——第 62 屆（2020）最佳另類音樂專輯《U.F.O.F.》、第 63 屆（2021）最佳搖滾演出／搖滾歌曲〈Not〉、第 65 屆（2023）最佳另類音樂演出〈Certainty〉與專輯《Dragon New Warm Mountain I Believe In You》，全是 Big Thief 名下、grammy.com 單源，且主詞是樂團不是個人，若寫作層要用須寫成『Big Thief 入圍』；搜尋摘要稱 2025 年同類得獎者為 Gillian Welch 與 David Rawlings《Woodland》（未開頁）。poolAlbums（Songs、abysskiss、Bright Future）皆為此人。"
+ },
+ {
+  "key": "alan jackson",
+  "name": "Alan Jackson",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alan Jackson 1958 年 10 月 17 日生於喬治亞州 Newnan，早年在鄉下聽與唱福音歌。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Jackson",
+      "src2": "https://www.britannica.com/biography/Alan-Jackson",
+      "from": "new"
+     },
+     {
+      "f": "1980 年代中期他與妻子 Denise 搬到 Nashville；轉機來自 Denise 偶遇 Glen Campbell，Alan 因此拿到 Campbell 音樂出版公司的詞曲合約。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Jackson",
+      "src2": "https://www.britannica.com/biography/Alan-Jackson",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為新傳統（neotraditional）鄉村歌手：同輩擁抱流行與搖滾時，他堅持鄉村傳統，歌多寫鄉村與小鎮生活；鄉村音樂名人堂稱他把「富含傳統的鄉村音樂帶進二十一世紀」。",
+      "src": "https://www.countrymusichalloffame.org/hall-of-fame/alan-jackson",
+      "src2": "https://www.britannica.com/biography/Alan-Jackson",
+      "from": "new"
+     },
+     {
+      "f": "他的歌多半自己寫或合寫，名人堂形容這些歌常帶自傳色彩，有「謙遜、幽默與雄辯的簡樸」。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Jackson",
+      "src2": "https://www.countrymusichalloffame.org/hall-of-fame/alan-jackson",
+      "from": "new"
+     },
+     {
+      "f": "他自己說過、也被傳記點名的影響來源包括 George Jones。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Jackson",
+      "src2": "https://www.britannica.com/biography/Alan-Jackson",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2017 年入選鄉村音樂名人堂（Country Music Hall of Fame）。",
+      "src": "https://www.countrymusichalloffame.org/hall-of-fame/alan-jackson",
+      "src2": "https://www.britannica.com/biography/Alan-Jackson",
+      "from": "new"
+     },
+     {
+      "f": "2001 年九一一事件後他寫的〈Where Were You (When the World Stopped Turning)〉獲葛萊美最佳鄉村歌曲（Best Country Song，得獎，主詞是詞曲作者 Alan Jackson）。",
+      "src": "https://www.countrymusichalloffame.org/hall-of-fame/alan-jackson",
+      "src2": "https://www.britannica.com/biography/Alan-Jackson",
+      "from": "new"
+     },
+     {
+      "f": "1991 年他成為 Grand Ole Opry 成員。",
+      "src": "https://www.countrymusichalloffame.org/hall-of-fame/alan-jackson",
+      "src2": "https://www.britannica.com/biography/Alan-Jackson",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1991 年成為 Grand Ole Opry 成員。",
+    "src": "https://www.countrymusichalloffame.org/hall-of-fame/alan-jackson",
+    "src2": "https://www.britannica.com/biography/Alan-Jackson",
+    "from": "new"
+   },
+   {
+    "f": "2017 年入選鄉村音樂名人堂。",
+    "src": "https://www.countrymusichalloffame.org/hall-of-fame/alan-jackson",
+    "src2": "https://www.britannica.com/biography/Alan-Jackson",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Songwriters Hall of Fame：英文維基列『Nashville Songwriters Hall of Fame: 2018』；songhall.org 官方頁寫 Songwriters Hall of Fame 2018、並寫 Nashville Songwriters Hall of Fame 2001；alanjackson.com 官網新聞頁寫 Nashville Songwriters Hall of Fame 為 2011 年 10 月 17 日。三方對『哪一座名人堂、哪一年』互相矛盾，facts 一律不收這類名人堂。",
+   "影響來源：英文維基寫 Gene Watson、John Anderson、Hank Williams Jr. 啟蒙，後來點名 George Jones 與 Merle Haggard；Britannica 寫 George Jones 與 Hank Williams；只取兩源共同的 George Jones。",
+   "『第一位簽入 Arista Nashville 的藝人』三源（維基、名人堂、Britannica）一致，因屬簽約履歷不收入 facts。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 6 次：英文維基 Alan Jackson、鄉村音樂名人堂官網人物頁、Britannica、WebSearch（詞曲作者名人堂）、songhall.org 人物頁、alanjackson.com 官網新聞頁。事實庫 research 與 published 皆空，三格從零查。poolAlbums（Under the Influence、Let It Be Christmas、High Mileage）皆為此人（Newnan 出身的鄉村歌手），無同名混卡。非獨立：sound 第二條『多半自己寫或合寫』兩源是維基與名人堂；『自傳色彩、謙遜、幽默、簡樸』措辭取自名人堂，屬官方介紹文字（鄉村音樂名人堂，可在寫作層寫成『名人堂稱…』，但本批例外條款僅適用搖滾名人堂，這裡兩源其實是維基『writing many of his own songs』與名人堂，屬弱支持）。單源未收：妻子遇 Campbell 的年份 1985（Britannica）；1989 年成為 Arista Nashville 首位簽約藝人與首張《Here in the Real World》（三源皆有，屬簽約與出道作履歷，不收）；製作人 Keith Stegall 製作其 19 張專輯、1986 年在 TNN『You Can Be a Star』被發現（維基單源）；2001 年 CMA 典禮首演〈Where Were You〉被視為當晚亮點、官網隔天因湧入流量當機（維基單源）；〈Where Were You〉同時獲 CMA 與 ACM 年度歌曲（名人堂與 songhall.org 皆有，屬兩個官方介紹頁、但未與維基交叉，且本層未開到頒獎單位頁；可由寫作層寫成『名人堂稱…』）；2021 年公開 Charcot-Marie-Tooth 病症（健康，不收）；與 Randy Travis 合作多支單曲、定位為『另一位年輕的傳統派』（名人堂單源）；2011 年與 Zac Brown Band 獲葛萊美最佳鄉村合作演唱（Britannica 單源）；Grammy 兩座、CMA 16 座、ACM 17 座、三度 CMA 年度藝人、冠軍單曲 26 首、銷量 6000 萬張（在世者獎座數與銷量依規則不寫）。"
  }
 ]

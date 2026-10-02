@@ -463,5 +463,89 @@
   "status": "full",
   "pubIssues": [],
   "notes": "補查 8 次：英文維基 Clannad（band）、WebSearch（身世與影響）、encyclopedia.com、Irish News、Irish Echo、維基〈Theme from Harry's Game〉、WebSearch（葛萊美）、Deseret News 1999 葛萊美得獎名單；另 grammy.com 藝人頁 404 一次不計入。事實庫 research 為空、只有 3 張上線簡介，從零查。非獨立：legacy 第二條的兩源同為維基不同條目；sound 第二條的 Irish Echo 與維基用詞相近（bridge the gap 等），視為近似轉述；origin 第四條 encyclopedia.com 與維基各有一半支持（愛爾蘭語環境、家族傳統）。『第一位／唯一』：『唯一全程以愛爾蘭語演唱的英國暢銷單曲』為維基 Clannad 與 Harry's Game 兩條皆有的引述說法，同站，且為『唯一』類宣稱，寫作層請寫成『據維基』或略去。Deseret 名單確認類別名為 New Age Album、得獎者為 Landmarks 的 Clannad；專輯年份 1998，頒獎為 1999 年第 41 屆（2 月 24 日，搜尋摘要）。Noel Duggan 說『我們贏錯了類別、更像 old age』（搜尋摘要，未開頁，不收）。單源未收：維基稱影響 Enya、Altan、Capercaillie、the Corrs、Loreena McKennitt、U2，且 Titanic 配樂中 James Horner 仿效其風格（維基單源，影響名單屬後輩點名但無第二源）；Irish Echo 稱 Celtic Woman 受益於他們的 New Age 路線（單源）；Bono 稱 Moya 擁有『one of the greatest voices』（維基單源）；2024 年 5 月 17 日獲頒 Freedom of Donegal（Irish News 單源）；2024 年 10 月 30 日在 Royal Albert Hall 告別演出（維基單源）；Pádraig Duggan 2016 年辭世享年 67（Irish Echo 單源，成員死亡年份高風險）；Moya Brennan 的 Gweedore 與 Enya 離團年份 1982（維基單源）；Irish Echo 與 enc.com 的全球銷量不寫。poolAlbums（Clannad 2、Dúlamán、Magical Ring）皆是這個愛爾蘭家族樂團，無同名混卡。三張上線簡介與查到的事實無衝突（Magical Ring 簡介的 Ivor Novello、英國榜最高第 5 與維基一致）。"
+ },
+ {
+  "key": "damien rice",
+  "name": "Damien Rice",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Damien Rice 來自愛爾蘭 Kildare 郡的 Celbridge。",
+      "src": "https://en.wikipedia.org/wiki/Damien_Rice",
+      "src2": "https://www.irishtimes.com/culture/tv-radio/2025/06/11/ed-sheeran-irish-culture-family-heritage-louis-theroux-podcast/",
+      "from": "new"
+     },
+     {
+      "f": "唱片公司與出版商都拒絕他的 demo，《O》最後是他自己錄成：他的表親、作曲家 David Arnold 寄來錄音設備並出錢請樂手，父親借他一小筆錢，條件是把專輯做完才不用還。",
+      "src": "https://en.wikipedia.org/wiki/O_(Damien_Rice_album)",
+      "src2": "https://www.irishtimes.com/life-and-style/people/first-encounters-singer-songwriter-damien-rice-and-composer-david-arnold-1.2055506",
+      "from": "new"
+     },
+     {
+      "f": "2001 年他回到愛爾蘭，在家庭錄音設備上錄下《O》。",
+      "src": "https://en.wikipedia.org/wiki/Damien_Rice",
+      "src2": "https://en.wikipedia.org/wiki/O_(Damien_Rice_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂以另類與民謠為底；《O》由他與 Mark Kelly 製作，Lisa Hannigan 唱和聲、彈鋼琴，加進大提琴與管弦樂手。",
+      "src": "https://en.wikipedia.org/wiki/O_(Damien_Rice_album)",
+      "src2": "https://en.wikipedia.org/wiki/Damien_Rice",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ed Sheeran 公開說 Rice 是影響過自己的音樂人，〈Eraser〉歌詞裡就提到他。",
+      "src": "https://www.irishtimes.com/culture/tv-radio/2025/06/11/ed-sheeran-irish-culture-family-heritage-louis-theroux-podcast/",
+      "src2": "https://en.wikipedia.org/wiki/Eraser_(Ed_Sheeran_song)",
+      "from": "new"
+     },
+     {
+      "f": "《O》2003 年獲 Shortlist Music Prize。",
+      "src": "https://en.wikipedia.org/wiki/O_(Damien_Rice_album)",
+      "src2": "https://en.wikipedia.org/wiki/Damien_Rice",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2002 年 2 月《O》先在愛爾蘭與英國發行，是他的第一張專輯。",
+      "src": "https://en.wikipedia.org/wiki/O_(Damien_Rice_album)",
+      "src2": "https://en.wikipedia.org/wiki/Damien_Rice",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2003 年《O》獲 Shortlist Music Prize。",
+    "src": "https://en.wikipedia.org/wiki/O_(Damien_Rice_album)",
+    "src2": "https://en.wikipedia.org/wiki/Damien_Rice",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Ed Sheeran 看 Rice 現場時的年齡：Irish Times 寫 14 歲，搜尋摘要（her.ie、joe.ie，兩者都 403 沒開到）寫 11 或 12 歲；facts 不寫年齡。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "事實庫 research 為空、只有兩張上線簡介（《O》無簡介），從零查。補查 8 次：英文維基 Damien Rice、WebSearch（生平）、維基《O》專輯條目、Irish Times 的 Rice 與 David Arnold 對談、維基〈The Blower's Daughter〉、WebSearch（Sheeran 影響）、維基〈Eraser〉、Irish Times 的 Sheeran 專文；her.ie 與 joe.ie 各 403 一次（共 2 次，不計入）。非獨立：origin、sound、legacy 的多條第二源是維基不同條目（Damien Rice、O、Eraser）。legacy 偏弱：Sheeran 點名有兩源，但『Shortlist 獎』只是獎項，沒有名人堂或官方級的共識，因此整體標 thin。《O》的『專輯第一張』：維基 Rice 條目寫 O 是他的 debut album、O 條目寫 2002 年 2 月 1 日在愛爾蘭與英國發行；Rice 早期的 Juniper 樂團不算個人專輯，facts 寫『第一張專輯』時指個人專輯，寫作層請寫『個人首作』。金額：維基 O 條目寫 500 美元、Irish Times 寫 500 歐元，兩源不一致，facts 不寫金額與幣別。Shortlist Music Prize 的說明（只頒給銷量未達 50 萬張的專輯，O 條目單源）不收。單源未收：1973 年 12 月 7 日生於都柏林、Salesian College（維基單源，生年高風險）；1991 年與同學組 Juniper、簽 PolyGram、1998 年因不滿藝術妥協離團，再到 Tuscany 務農並在歐洲街頭賣唱、2001 年返愛爾蘭（維基單源，搜尋摘要同出自維基）；《O》錄音含歌劇歌手與葛利果式吟唱、2003 年透過新廠牌 Vector 全球發行、原版是 CD 大小的精裝書（O 條目單源）；〈The Blower's Daughter〉2004 年用於 Mike Nichols《Closer》預告與正片、後來被各國選秀節目翻唱（〈The Blower's Daughter〉維基單源）；Sheeran 少年時在 Whelan's 看他演出，說那對自己有決定性影響（Irish Times 單源，另有未開頁的 her.ie、joe.ie）；Eraser 之外〈You Need Me, I Don't Need You〉也提到 Rice（Eraser 維基單源）；《9》《My Favourite Faded Fantasy》的年份與製作人（上線簡介與維基，未取第二源）；Metacritic 與評論分數、榜單名次、認證不收。poolAlbums（O、9、My Favourite Faded Fantasy）皆是這位愛爾蘭歌手，無同名混卡。兩張上線簡介未核對到衝突（未查評論分數與 NME 引述）。"
  }
 ]
