@@ -1,0 +1,492 @@
+[
+  {
+    "key": "the mountain goats",
+    "name": "The Mountain Goats",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Mountain Goats 由 John Darnielle 1991 年在加州 Claremont 起家；名義上是個樂團，早年其實只有他一人，其餘是輪流幫忙的朋友。",
+            "src": "https://en.wikipedia.org/wiki/The_Mountain_Goats",
+            "src2": "https://laist.com/podcasts/off-ramp/mountain-goats-john-darnielle-on-coming-of-age-in-la-sprawl",
+            "from": "new"
+          },
+          {
+            "f": "Darnielle 在 Claremont 長大，念過 Pitzer College，也在加州 Norwalk 的州立精神科醫院工作過。",
+            "src": "https://en.wikipedia.org/wiki/John_Darnielle",
+            "src2": "https://laist.com/podcasts/off-ramp/mountain-goats-john-darnielle-on-coming-of-age-in-la-sprawl",
+            "from": "new"
+          },
+          {
+            "f": "整個 1990 年代，他的歌幾乎都在家裡對著卡帶錄音機（boombox）直接唱彈錄成，以卡帶和 7 吋單曲小量發行。",
+            "src": "https://en.wikipedia.org/wiki/The_Mountain_Goats",
+            "src2": "https://trouserpress.com/reviews/mountain-goats/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "早期的招牌做法是 boombox 錄音，加上成系列的歌、拉丁文引言與神話題材；最早的幾張 EP 就看得出他對神話的著迷，封套上甚至引了中古英文的喬叟。",
+            "src": "https://en.wikipedia.org/wiki/The_Mountain_Goats",
+            "src2": "https://trouserpress.com/reviews/mountain-goats/",
+            "from": "new"
+          },
+          {
+            "f": "他一直不想被當成純粹的低傳真藝人；他把自己的錄音稱為「bi-fi」，理由是這類錄音少了現代科技也做不出來。",
+            "src": "https://en.wikipedia.org/wiki/John_Darnielle",
+            "src2": "https://en.wikipedia.org/wiki/The_Mountain_Goats",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1990 年代的卡帶地下圈長期把這個「團」奉為心頭好；Trouser Press 稱他們是卡帶迷長年高度敬重的對象，維基則說 Darnielle 靠多產與文學性的歌詞累積了 cult following。",
+            "src": "https://trouserpress.com/reviews/mountain-goats/",
+            "src2": "https://en.wikipedia.org/wiki/John_Darnielle",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1990 年代他幾乎都在家裡對著 boombox 錄音，後來的幾張專輯改在錄音室錄。",
+            "src": "https://en.wikipedia.org/wiki/The_Mountain_Goats",
+            "src2": "https://laist.com/podcasts/off-ramp/mountain-goats-john-darnielle-on-coming-of-age-in-la-sprawl",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "出生地：維基 John Darnielle 條目寫生於 Indiana 的 Bloomington、後來搬到 San Luis Obispo 再到 Claremont；LAist 寫生於 San Luis Obispo、長於 Claremont。兩源不一致，facts 只寫兩源一致的『在 Claremont 長大』，不寫出生地。",
+      "首批錄音的年份：樂團維基與 Trouser Press 唱片列表都記 Taboo VI: The Homecoming 為 1991（Shrimper），John Darnielle 條目卻寫 1992 年由 Shrimper 發行；facts 只寫兩源一致的『1991 年起家』（成軍年，三處一致），不寫首作發行年。",
+      "事實庫的三筆專輯研究稿都是 Discogs 版本欄位，與上線簡介一致，無衝突。"
+    ],
+    "searches": 7,
+    "failedFetches": 10,
+    "pubIssues": [],
+    "status": "thin",
+    "notes": "同名檢查：卡池三張（The Hound Chronicles 1992、Hot Garden Stomp 1993、Nothing for Juice 1996）都是 John Darnielle 的早期卡帶／CD，無同名混卡。搜尋 7 次：WebFetch 英文維基 The Mountain Goats（摘要幾乎沒內容）、同頁 curl 取全文、維基 John Darnielle、WebSearch×2（生平與影響各一）、Trouser Press 條目、LAist 2011 專訪頁；皆實際開頁讀過（WebSearch 只看摘要的不引用）。失敗請求 10 次（超出 4 次上限；其中 5 次是起手用 Wikipedia API 時代理被限流回 429／空回應，5 次是 nationalbook.org 的 WebFetch 空頁與 curl 回 202 空頁），照實記，未再追查。legacy 偏薄，原因：維基兩頁都沒有後輩點名或獎項段落，且 Wolf in White Van 入圍國家書卷獎小說類（維基 John Darnielle 稱出版兩天後入圍，其實是長名單）只見維基單源，nationalbook.org 開不了，不收進 facts：單源。其他單源未收：樂團名稱取自 Screamin' Jay Hawkins 的〈Yellow Coat〉（樂團維基單源）；三部小說《Wolf in White Van》2014、《Universal Harvester》2017、《Devil House》2022 與《Devil House》2023 年 Edgar 最佳小說入圍（維基單源）；2020 年疫情期間重拾 boombox 錄《Songs for Pierre Chuvin》（維基單源）；Sasha Frere-Jones 在 New Yorker 稱他『America's best non-hip-hop lyricist』與 Paste 2006 年『100 位最佳在世詞曲作者』屬單一評論／雜誌榜單，不收；LAist 的『被稱為在世最佳詞人之一』無出處，不收；Bowerbirds 巡演暖場、Darnielle 稱其『favorite new band』只見搜尋摘要，未開頁，不收。LAist 另記他把 Chino 這類『不是旅遊目的地』的郊區地名寫進〈Going to Chino〉並與 Peter Hughes（Chino 人）相識（單源）。專輯簡介所引的 Trouser Press『direct-to-boombox』已於本次實際開頁核對，與上線簡介一致。AI 生成百科 grokipedia 出現在搜尋結果，未使用。"
+  },
+  {
+    "key": "the tallest man on earth",
+    "name": "The Tallest Man on Earth",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Kristian Matsson 1983 年生於瑞典，在達拉納省（Dalarna）的 Leksand 長大；童年身邊是小提琴手、民俗舞者與仲夏節的傳統。",
+            "src": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "src2": "https://thetallestmanonearth.com/about",
+            "from": "new"
+          },
+          {
+            "f": "他原本玩的是車庫搖滾與龐克，是 indie 樂團 Montezumas 的主唱；用 The Tallest Man on Earth 這個名字唱的歌，一開始只是搖滾樂團之外的玩票，沒打算發行，更沒想過當成職業。",
+            "src": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "src2": "https://thecreativeindependent.com/people/musician-kristian-matsson-on-redefining-what-it-means-to-be-successful/",
+            "from": "new"
+          },
+          {
+            "f": "他 15 歲開始聽 Bob Dylan，順著 Dylan 翻唱的歌回頭找源頭，才接觸到 Pete Seeger、Woody Guthrie 這些早期美國民謠；他自己的說法是 Dylan 為他開了一扇窗，通往老田野錄音。",
+            "src": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "src2": "https://thetallestmanonearth.com/about",
+            "from": "new"
+          },
+          {
+            "f": "藝名是他隨口想的一個「蠢名字」；他不是真的最高，維基記他身高 170 公分。",
+            "src": "https://theworld.org/stories/2013/08/15/tallest-man-earth-swedish-musician-kristian-matsson",
+            "src2": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他在自家錄音、自己製作，人聲與吉他通常同軌一起錄。",
+            "src": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "src2": "https://thetallestmanonearth.com/about",
+            "from": "new"
+          },
+          {
+            "f": "他的歌常被拿來和 Bob Dylan 比較，詞曲功力與唱腔都有人比；Paste 稱他是常被提到的 Dylan 接班人。",
+            "src": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "src2": "https://www.pastemagazine.com/music/the-tallest-man-on-earth/the-wild-hunt-retrospective",
+            "from": "new"
+          },
+          {
+            "f": "早期他用舊錄音機自己錄 lo-fi 的歌，那種機器放出來速度與音高都不準，錄音帶有一種特別的音色；剛開始在很小的場子唱，音響很差或根本沒有，他沿用龐克時期的唱法，把聲音大力打出去。",
+            "src": "https://thecreativeindependent.com/people/musician-kristian-matsson-on-redefining-what-it-means-to-be-successful/",
+            "src2": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2008 年首張全長作《Shallow Grave》之後，他受邀為 Bon Iver 暖場；那是他第一次到美國巡演。這段曝光帶出後來遍及美國、澳洲與歐洲的個人巡演，當時他在美國既沒有唱片合約也沒有發行，仍吸引大批聽眾。",
+            "src": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "src2": "https://thecreativeindependent.com/people/musician-kristian-matsson-on-redefining-what-it-means-to-be-successful/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2012 年《There's No Leaving Now》在他達拉納的自家錄音室錄成；他後來把這張稱為同樣是在家裡慢慢做出來的作品。",
+            "src": "https://en.wikipedia.org/wiki/The_Tallest_Man_on_Earth",
+            "src2": "https://thetallestmanonearth.com/about",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "維基資訊框寫 Years active 從 2005 起，內文與 Creative Independent、搜尋摘要都寫 2006 年起單飛；本位 facts 沒寫起始年。",
+      "上線簡介《Shallow Grave》寫 2006 年起單飛、原是 Montezumas 主唱、Pitchfork 2008 年五十大第 47 名、靠巡演打開美國市場，與維基一致，無衝突。"
+    ],
+    "searches": 7,
+    "failedFetches": 0,
+    "pubIssues": [],
+    "status": "thin",
+    "notes": "同名檢查：卡池三張（The Wild Hunt 2010、Shallow Grave 2008、There's No Leaving Now 2012）皆為 Kristian Matsson，無混卡。搜尋 7 次：維基、WebSearch×2、PRX The World 訪問頁、官網 About 頁、Creative Independent 2023 訪談、NPR Mountain Stage 頁（只有曲目，未採用）、Paste 2020 專文；WebSearch 只當線索，facts 皆來自實際開頁。兩源非獨立之處：維基與 Creative Independent 的人物簡介是同一段文字；官網 About 頁是宣傳稿（官方）。legacy 偏薄：查不到名人堂、國家級榮譽或後輩的具名點名；Paste 作者（Ellen Johnson）推測 Joan Shelley、William Tyler、Hiss Golden Messenger、Kevin Morby、Waxahatchee 受他影響，但只是單一樂評人的推測、不是當事人自述，單源不收（William Tyler 在本批名冊內，寫作層不可採）；Paste 另稱 The Wild Hunt 讓後來的獨立民謠有了可追的標準，同屬單一評論，不收。單源未收：2009 年 Daytrotter 時自述受 Roscoe Holcomb 影響唱法、後又列 Emmylou Harris、Feist、Cat Power（維基單源）；開放調弦與古典吉他底子，在二十出頭聽 Nick Drake 後發現開放調弦（維基單源）；2006 年首張 EP 由 Gravitation 發行（維基與搜尋摘要）；2023 年《Henry St.》是第一張樂團錄製專輯（維基單源）；官網預告 2026 年 10 月 9 日 Anti- 發行新作《Just Beyond Endless Mountain》，受瑞典 polska 民謠影響（官網單源，尚未發行，不寫）。Pitchfork 2008 年五十大名次屬雜誌榜單，不收。"
+  },
+  {
+    "key": "the watersons",
+    "name": "The Watersons",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Watersons 來自英格蘭 Hull 的一家人：Norma、Mike、Elaine（人稱 Lal）三姊弟妹，加上表親 John Harrison。",
+            "src": "https://en.wikipedia.org/wiki/The_Watersons",
+            "src2": "https://www.npr.org/2022/01/31/1076926232/norma-waterson-folk-music-died",
+            "from": "new"
+          },
+          {
+            "f": "三姊弟妹的父母早逝，由祖母帶大；祖母很會唱歌，一家人和聲是從小在祖母家與親戚一起唱學出來的。",
+            "src": "https://en.wikipedia.org/wiki/Norma_Waterson",
+            "src2": "https://tribunemag.co.uk/2022/02/norma-waterson-folk-singer-music-obituary",
+            "from": "new"
+          },
+          {
+            "f": "他們 1960 年代初是一支 skiffle 樂隊，後來轉向傳統歌；Billy Bragg 悼念 Norma 時也說她是從 skiffler 起家。",
+            "src": "https://en.wikipedia.org/wiki/Norma_Waterson",
+            "src2": "https://www.npr.org/2022/01/31/1076926232/norma-waterson-folk-music-died",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們唱的主要是傳統歌，幾乎不用或完全不用伴奏，招牌是緊密交織的和聲。",
+            "src": "https://en.wikipedia.org/wiki/The_Watersons",
+            "src2": "https://tribunemag.co.uk/2022/02/norma-waterson-folk-singer-music-obituary",
+            "from": "new"
+          },
+          {
+            "f": "他們從 1960 年代起重新唱起英格蘭的傳統老歌；Tribune 形容曲目多是北方的傳統敘事歌，NPR 舉的代表曲包括〈Hal-An-Tow〉與〈Here We Come A-Wassailing〉。",
+            "src": "https://tribunemag.co.uk/2022/02/norma-waterson-folk-singer-music-obituary",
+            "src2": "https://www.npr.org/2022/01/31/1076926232/norma-waterson-folk-music-died",
+            "from": "new"
+          },
+          {
+            "f": "首張專輯《Frost and Fire》（1965）依一年的時序，排進一首接一首傳統的儀式歌。",
+            "src": "https://www.irishtimes.com/culture/music/donal-dineen-s-sunken-treasure-the-watersons-frost-and-fire-1.3018620",
+            "src2": "https://en.wikipedia.org/wiki/The_Watersons",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們被稱為「英國民謠界最有名的家族」；Norma 過世時，NPR 的標題把她稱作 English folk royalty。",
+            "src": "https://en.wikipedia.org/wiki/The_Watersons",
+            "src2": "https://www.npr.org/2022/01/31/1076926232/norma-waterson-folk-music-died",
+            "from": "new"
+          },
+          {
+            "f": "Norma Waterson 個人 2016 年獲 BBC Radio 2 民謠獎的終身成就獎（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Norma_Waterson",
+            "src2": "https://www.npr.org/2022/01/31/1076926232/norma-waterson-folk-music-died",
+            "from": "new"
+          },
+          {
+            "f": "家傳延續到下一代：Norma、丈夫 Martin Carthy 與女兒 Eliza Carthy 另組了 Waterson:Carthy；女兒 Eliza 是歌手兼小提琴手。",
+            "src": "https://en.wikipedia.org/wiki/Norma_Waterson",
+            "src2": "https://www.npr.org/2022/01/31/1076926232/norma-waterson-folk-music-died",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《Frost and Fire》1965 年發行；樂團 1968 年解散，1972 年重組，丈夫 Martin Carthy 同年取代 Bernie Vickers 入團。",
+            "src": "https://en.wikipedia.org/wiki/The_Watersons",
+            "src2": "https://en.wikipedia.org/wiki/Norma_Waterson",
+            "from": "new"
+          },
+          {
+            "f": "三位原始成員先後離世：Lal 1998 年、Mike 2011 年、Norma 2022 年。",
+            "src": "https://en.wikipedia.org/wiki/The_Watersons",
+            "src2": "https://www.npr.org/2022/01/31/1076926232/norma-waterson-folk-music-died",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "《Frost and Fire》的副題：維基 The Watersons 條目寫 A Calendar of Ceremonial Folk Songs，搜尋結果（AllMusic、Discogs、多家唱片行）寫 A Calendar of Ritual and Magical Songs；兩者不一致，facts 只寫『依一年時序排儀式歌』，不寫副題。",
+      "祖母的出身：Norma 維基寫 Irish Gypsy 後裔，Tribune 寫 half-Irish Traveller；用語不一致，facts 不寫其族群。",
+      "上線簡介（For Pence and Spicy Ale、Sound, Sound）與維基一致，無衝突。"
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池三張（Frost and Fire 1965、For Pence and Spicy Ale 1975、Sound, Sound Your Instruments of Joy 1977）皆為 Hull 的 Waterson 家族，無混卡。搜尋 8 次：樂團維基、WebSearch（Norma 訃聞）、NPR 訃聞頁、Tribune 訃聞、Norma Waterson 維基、WebSearch（Frost and Fire）、Irish Times 專文、Wikipedia『Frost and Fire (album)』（誤開到 Cirith Ungol 的同名專輯，無用，已棄）。兩源非獨立：樂團維基與 Norma 維基同站；官方 Topic 與 BBC 頁未開。legacy 偏薄：查不到名人堂或國家級榮譽落在團體上；Norma 的終身成就獎是個人獎，寫作層主詞要寫 Norma。單源未收：Frost and Fire 獲 Melody Maker 年度專輯（Norma 維基與搜尋摘要的零售商文案，未開頁，單源）、Traffic 的〈John Barleycorn Must Die〉出自 Frost and Fire 與『啟發數代和聲歌手』（零售商文案，未開頁，單源，不收）；Topic Records 七十週年盒裝書列 Frost and Fire 與 For Pence and Spicy Ale 為經典專輯（維基單源）；Norma 2003 年新年授勳 MBE（Norma 維基單源）；Tribune 稱樂團在 1965 年第二波民謠復興中『立刻造成衝擊』、北方口音在倫敦主導的俱樂部圈罕見（單源）；Billy Bragg 稱 Norma 為『英國傳統音樂的代表嗓音之一』（NPR 轉引，單源）；Irish Times 稱 Bill Leader 的錄音讓和聲『有形』，並稱一家人『站在成名的門檻上』（單源，作者主觀形容）；四人從未學過讀譜（維基單源，上線簡介已用，寫作層可沿用上線簡介）；與 Sussex 的 Copper Family 相比（維基單源）；Norma 1996 年個人專輯入圍 Mercury Music Prize（Norma 維基單源，且屬個人）。成員過世只收年份。 東海岸漁業歌與吉普賽、Traveller 流浪生活歌的曲目描述只見 Tribune（單源），不收。"
+  },
+  {
+    "key": "tim mcgraw",
+    "name": "Tim McGraw",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Tim McGraw 1967 年生於路易斯安那州 Delhi，在附近的 Start 長大；他從小以為卡車司機繼父 Horace Smith 是親生父親，11 歲在母親衣櫃裡翻到出生證明，才知道生父是費城人隊（Phillies）的救援投手 Tug McGraw。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "from": "new"
+          },
+          {
+            "f": "Tug McGraw 否認父子關係長達七年，直到 Tim 18 歲左右兩人才建立起關係；Tim 之後改用生父的姓。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "from": "new"
+          },
+          {
+            "f": "他靠棒球獎學金進了 Northeast Louisiana University 念預科法律，膝傷斷了職業運動的路；吉他是在大學時期自己學的，常彈唱換零錢。",
+            "src": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "src2": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "from": "new"
+          },
+          {
+            "f": "1989 年他搭灰狗巴士到納許維爾，那天正是他心目中的英雄 Keith Whitley 過世的日子；1990 年他已和 Curb Records 簽下唱片合約。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://savingcountrymusic.com/tim-mcgraw-named-new-2026-country-music-hall-of-fame-inductee/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1994 年《Not a Moment Too Soon》首支單曲〈Indian Outlaw〉引來爭議，有評論者認為它對原住民的呈現居高臨下，部分電台拒播；爭議反而推高銷量，成為他第一支前十名單曲，專輯成為當年最暢銷的鄉村專輯。",
+            "src": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "src2": "https://savingcountrymusic.com/tim-mcgraw-named-new-2026-country-music-hall-of-fame-inductee/",
+            "from": "new"
+          },
+          {
+            "f": "2002 年的《Tim McGraw and the Dancehall Doctors》他改用自己的巡演樂隊錄音，不像納許維爾慣例請錄音室樂手。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "from": "new"
+          },
+          {
+            "f": "2004 年他與饒舌歌手 Nelly 合唱〈Over and Over〉，成為跨界的流行電台熱門，這首也是他在英國的第一首熱門單曲。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2026 年 3 月 20 日，Country Music Association 宣布 Tim McGraw 以 Modern Era Artist 類別入選鄉村音樂名人堂，同屆還有 Paul Overstreet（詞曲作者類）與 The Stanley Brothers（Veterans Era Artist 類）。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://savingcountrymusic.com/tim-mcgraw-named-new-2026-country-music-hall-of-fame-inductee/",
+            "from": "new"
+          },
+          {
+            "f": "他的《Everywhere》與《A Place in the Sun》接連拿下 CMA 的年度專輯獎（得獎）。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "from": "new"
+          },
+          {
+            "f": "〈It's Your Love〉（1997）、〈Just to See You Smile〉（1998）、〈Live Like You Were Dying〉（2004）分別是 Billboard 年終榜當年的鄉村年度歌曲。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年的首張專輯《Tim McGraw》沒有進榜、也賣得不好；1994 年第二張《Not a Moment Too Soon》才讓他走紅，同時登上鄉村榜與流行專輯榜的第一名。",
+            "src": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "src2": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "from": "new"
+          },
+          {
+            "f": "2004 年，Tug McGraw 過世，同年他錄下〈Live Like You Were Dying〉；這首歌之後，他的專輯偏向時間、家庭與面對生死的歌。",
+            "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+            "src2": "https://en.wikipedia.org/wiki/Tim_McGraw",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2026 年入選鄉村音樂名人堂（Modern Era Artist 類）。",
+        "src": "https://www.cmaworld.com/cma-announces-paul-overstreet-the-stanley-brothers-and-tim-mcgraw-as-the-country-music-hall-of-fame-class-of-2026/",
+        "from": "new",
+        "src2": "https://savingcountrymusic.com/tim-mcgraw-named-new-2026-country-music-hall-of-fame-inductee/"
+      }
+    ],
+    "conflicts": [
+      "CMA 年度專輯的年份：維基內文寫《Everywhere》獲 1997 年 CMA 年度專輯，維基獎項表與 CMA 官方稿寫 1998、1999 兩年連獲；兩源不一致，facts 只寫『接連拿下』，不寫年份。",
+      "〈Over and Over〉在流行榜首的週數：CMA 官方稿寫 11 週，維基寫 Top 40 榜首 10 週；兩源不一致，facts 不寫週數。",
+      "事實庫無研究稿也無上線簡介，無衝突。"
+    ],
+    "searches": 4,
+    "failedFetches": 1,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池三張（Everywhere 1997、A Place in the Sun 1999、Emotional Traffic 2012）皆為 Tim McGraw（鄉村歌手），無混卡。搜尋 4 次：英文維基、WebSearch（名人堂入選）、CMA 官網入選公告（官方，含傳記段）、Saving Country Music 報導；countrynow.com 回 403（失敗請求 1 次，未計入）。兩源非獨立之處：維基對 2026 入選一句只有一行，傳記細節與 CMA 官方傳記大致相互印證但寫法相近，CMA 稿為官方傳記、屬可具名單源的名人堂官方稿，已另有 Saving Country Music 或維基作第二源。名人堂 CEO Kyle Young 在 CMA 公告中稱他『建立了一批情感共鳴強、引人思考的歌，留下不可磨滅的印記』（名人堂官方，可具名單源，寫作層可寫『鄉村音樂名人堂執行長 Kyle Young 稱…』）。Saving Country Music 作者評他沒有像其他入選者那樣有過連續多年稱霸的時期、但長青（單一評論，不收）；他 2001 年獲 CMA 年度藝人（Entertainer of the Year，Saving Country Music 單源，不收）。在世者累計銷量、冠軍單曲數、獎項座數、巡演票房一律未收（維基與 CMA 稿均有，依規則不寫）。正式授章典禮：WebSearch 摘要稱 2026 年 10 月舉行（未開頁，單源，不收），寫作層寫『獲宣布入選』為宜。〈Live Like You Were Dying〉作者 Craig Wiseman 與 Tim Nichols、錄音時間三點（CMA 稿單源）未收；父親 Tug McGraw 的死因不收。《Emotional Traffic》為其最後一張 Curb 專輯，2012 年 1 月 24 日發行、與 Curb 的訴訟（維基單源）屬轉廠牌履歷，未收。"
+  },
+  {
+    "key": "violeta parra",
+    "name": "Violeta Parra",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Violeta Parra 1917 年 10 月 4 日生於智利南部的 Ñuble 省，是家中九個孩子之一；父親是音樂老師，母親有一副好嗓子，會唱歌也會彈吉他，教孩子們傳統民謠。",
+            "src": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "src2": "https://hiplatina.com/violeta-parra-a-history-of-the-spirited-tesoro-of-chilean-folk-music-with-playlist/",
+            "from": "new"
+          },
+          {
+            "f": "她 1952 年起開始四處採集智利農民的民間音樂；她的做法是放下原本的民謠曲目，以傳統民謠的形式寫自己的歌。",
+            "src": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "src2": "https://hiplatina.com/violeta-parra-a-history-of-the-spirited-tesoro-of-chilean-folk-music-with-playlist/",
+            "from": "new"
+          },
+          {
+            "f": "她 1967 年過世，得年 49 歲。",
+            "src": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "src2": "https://www.france24.com/es/20171004-chile-centenario-violeta-parra",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她的歌描寫智利的民間傳統，也是拉丁美洲社會與經濟邊緣者的聲音；她一直唱的是平民與受苦的人。",
+            "src": "https://www.france24.com/es/20171004-chile-centenario-violeta-parra",
+            "src2": "https://hiplatina.com/violeta-parra-a-history-of-the-spirited-tesoro-of-chilean-folk-music-with-playlist/",
+            "from": "new"
+          },
+          {
+            "f": "她同時是畫家、雕塑家與詩人，也縫製 arpilleras（民間刺繡掛毯）。",
+            "src": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "src2": "https://www.dailyartmagazine.com/violeta-parra/",
+            "from": "new"
+          },
+          {
+            "f": "1964 年 4 月，她在巴黎羅浮宮內的裝飾藝術博物館（Musée des Arts décoratifs）展出 arpilleras、油畫與鐵絲雕塑，為該館第一場拉丁美洲藝術家的個展。",
+            "src": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "src2": "https://www.dailyartmagazine.com/violeta-parra/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她被視為 Nueva Canción Chilena（智利新歌運動）的開創者；這個運動在她身後，隨更廣的社會政治運動在智利、拉丁美洲乃至更遠處蓬勃發展。",
+            "src": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "src2": "https://www.abc.net.au/listen/programs/musicshow/violeta-parra-100-years/9025072",
+            "from": "new"
+          },
+          {
+            "f": "她的生日 10 月 4 日在智利是音樂人日（France24 稱為 Día Nacional de la Música）；2015 年 10 月 4 日 Violeta Parra 博物館在聖地牙哥開幕。",
+            "src": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "src2": "https://www.france24.com/es/20171004-chile-centenario-violeta-parra",
+            "from": "new"
+          },
+          {
+            "f": "2017 年是她的百年誕辰，智利各地舉辦紀念活動與重新發行她的作品；時任總統 Michelle Bachelet 說她已成為智利人「情感地理」與最深認同的一部分。",
+            "src": "https://www.france24.com/es/20171004-chile-centenario-violeta-parra",
+            "src2": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "from": "new"
+          },
+          {
+            "f": "〈Gracias a la vida〉是她最廣為人知的歌，1971 年由阿根廷的 Mercedes Sosa 在拉丁美洲唱開，後來 Joan Baez 在美國也唱了；它是史上被翻唱最多的拉丁美洲歌曲之一。",
+            "src": "https://en.wikipedia.org/wiki/Violeta_Parra",
+            "src2": "https://hiplatina.com/violeta-parra-a-history-of-the-spirited-tesoro-of-chilean-folk-music-with-playlist/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Recordando a Chile (una chilena en París)》是她的第九張正式錄音室專輯，1964 至 1965 年間錄於聖地牙哥與巴黎，1965 年由 EMI Odeon 首次發行；她的兩個孩子 Isabel 與 Ángel，兄姊 Hilda 與 Nicanor 都參與其中。",
+            "src": "https://es.wikipedia.org/wiki/Recordando_a_Chile_(una_chilena_en_Par%C3%ADs)",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "出生地：維基寫法院出生證明印章是 San Carlos、但 Violeta Parra 基金會與博物館官網寫 San Fabián de Alico（皆在 Ñuble 省）；兩說並存，facts 只寫『Ñuble 省』，不寫鎮名。",
+      "〈Gracias a la vida〉的創作年份：維基同一條目既寫 1966 年在 La Paz 創作、又寫 1964 至 1965 年寫成並錄音；內部矛盾，facts 不寫創作年。",
+      "上線簡介與事實庫的研究稿（Recordando a Chile）無衝突；上線簡介寫『1962 年起旅居巴黎』『被視為 nueva canción chilena 的源頭』，維基與 ABC 一致。"
+    ],
+    "searches": 6,
+    "failedFetches": 2,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池三張（Las Últimas Composiciones 1966、Canciones reencontradas en París 1971、Recordando a Chile 1965）皆為智利 Violeta Parra，無混卡。死因一律不收（France24、HipLatina、搜尋摘要都有寫，已略去）。搜尋 6 次：維基、WebSearch（傳承與羅浮宮）、France24 西語專文、ABC listen 百年專題、DailyArt Magazine 羅浮宮展專文、HipLatina 專文與 Karen Kerschen 訪談；失敗 2 次（Britannica 與 Smithsonian Folkways 回 403，未計入）。非獨立：HipLatina 的『首位在羅浮宮裝飾藝術博物館個展的拉丁美洲藝術家』『被翻唱最多的拉丁美洲歌曲之一』兩句與維基用詞幾乎相同，應是引自維基，兩源非獨立，用於 Gracias a la vida 一條時請寫作層保守措辭；羅浮宮個展一條的第二源是 DailyArt（獨立，且引 Le Monde 1964 年 4 月 17 日評論）。『第一位』類：羅浮宮個展寫成『該館第一場拉丁美洲藝術家的個展』（限定在 Musée des Arts décoratifs 這個館，兩源口徑一致），未查到反例。單源未收：哥哥 Nicanor 鼓勵她 1952 年起採集；父親 1930 年過世家境變差；1955 年赴華沙青年節後移居巴黎、1956 年在 Chant du Monde 錄音；1957 年返智利錄 Folklore of Chile 系列 LP；學會古老 guitarrón；後期加入委內瑞拉 cuatro 與玻利維亞 charango；1960 年在 Concepción 創辦國立民俗藝術博物館；1965 年 12 月 17 日 La Carpa de la Reina 開幕；Pablo Neruda 1970 年寫詩〈Elegía para cantar〉獻給她；2011 年傳記電影《Violeta se fue a los cielos》；2017 年 Google Doodle；1992 年成立 Violeta Parra 基金會；1997 年其視覺作品在羅浮宮裝飾藝術博物館展出（以上皆維基單源）。Ana Tijoux 2015 年對 Billboard 說她是『我們音樂的母親』（HipLatina 轉引，單源）。博物館館長稱『今日對 Violeta Parra 的世界意義有全球共識』（France24 單源）。Isabel 與 Ángel Parra 是新歌運動重要人物（維基單源，未開其條目）。Karen Kerschen 稱她『觸及人類處境的深度無人能及』屬傳記作者的個人評價，不收。搜尋結果中的 grokipedia 未使用。"
+  }
+]

@@ -214,3 +214,12 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 ### ar-b-017 審稿與上線
 - w1 無修正。w2（3 處）：Natalia Lafourcade 刪「拉丁葛萊美史上得獎最多的女藝人」（在世者累計）；Marty Robbins 不是身後入選——1982 年 10 月入選、12 月辭世，改正；Steve Earle「三度」改「多次」。放寬額度 4 位（Pete Seeger、Ruhi Su、Selda Bağcan、Shirley Collins）皆人物故事所需，照准。
 - **ar-b-017 上線**：40 位，reviewFixes 3。
+- g2 交件（QA 本組 0）。thin：Bridget St John（失敗請求 5 次超限，未取得內容）、Damien Rice、Dando Shaft、Darren Korb。pubIssues 2（Charlie Rich《The Fabulous Charlie Rich》簽約年；Dwight Yoakam《Guitars, Cadillacs》移居年與 EP 發行說法）→ 本機待核。w1（g1+g2）派出。
+- g3 交件。thin：Gracie Abrams、Jessica Pratt。John Renbourn 搜尋 9 次超限 1 次（該次只記衝突、未取用）。pubIssues 2（《Down to the Cider Mill》「廠牌第一張唱片」錯，County 第一張是 1964 年 501 號；Kryl《Bratříčku》印量口徑）→ 本機待改。John Renbourn《Sir John Alot》舊簡介含「英文維基」字樣，修正包 audits/pub-fix/APPLY-desc.json 已涵蓋（待本機套用）；Brassens《Le Gorille》「1955 年歐洲一台開播」待核。
+- 018 w1 交件，審稿無修正（Tyler Childers「第一座葛萊美」主線查證屬實）。
+
+### ar-b-019
+- g1 交件（QA 本組 0）。thin：Phoebe Bridgers、Phosphorescent。Odetta 失敗請求 6 次超限，未取得內容，照收。Phoebe Bridgers 2024 葛萊美主體是 boygenius；Ray LaMontagne 葛萊美署名含 the Pariah Dogs。pubIssues 3（Nic Jones《The Noah's Ark Trap》調弦說法；Randy Travis《Storms of Life》首次／銷量措辭；Ray LaMontagne《God Willin'》得獎時間）→ 本機待核。
+- 018 g4 交件（QA 本組 0）。thin：Léo Ferré、Leo Kottke。Loretta Lynn 6、Laura Marling 5、Michael Chapman 5 次失敗請求超限，未取得內容，照收。Miranda Lambert 的 TIME100 屬推選名單、非名次榜，可寫。pubIssues 2（Léo Ferré《Verlaine et Rimbaud》「第一張錄音室雙唱片」單源；Michael Chapman《Rainmaker》1966／1967）→ 本機待核。w2（g3+g4）派出。
+- 018 w2 審稿（2 處）：Laura Marling「三度入圍」改「多次」（在世者累計）；Los Jaivas 刪「第一個得獎的智利團體」（首次宣稱）。放寬額度 3 位（Kristofferson、Los Jaivas、Merle Haggard）照准。
+- **ar-b-018 上線**：40 位，reviewFixes 2。

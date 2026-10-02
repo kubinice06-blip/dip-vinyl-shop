@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 155 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 167 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -159,3 +159,15 @@
 | ar-b-017 | Steve Earle | Copperhead Road | B 面轉成情歌，收尾的〈Nothing but a Child〉與 Maria McKee 對唱 | 維基〈Copperhead Road〉專輯條目把〈Nothing but a Child〉描述為聖誕主題的二重唱（Christmas-themed duet），不是情歌；建議把『B 面轉成情歌』改成較中性的說法 | https://en.wikipedia.org/wiki/Copperhead_Road |
 | ar-b-018 | Woody Guthrie | Library of Congress Recordings | 維基記這是 Guthrie 最早的錄音 | Britannica 的傳記寫他『1941 年與 Alan Lomax 做了首批錄音』，與『1940 年 3 月最早』矛盾；『最早』一類宣稱兩源不一致，建議店主在本機改為不寫『最早』，只寫 1940 年 3 月為 Lomax 錄音、編目於國會圖書館 | https://www.britannica.com/biography/Woody-Guthrie |
 | ar-b-018 | Charlie Rich | The Fabulous Charlie Rich | 1958 年剛進 Sun Records；九年後 Epic 簽下他（即 1967 年） | 年份來源不一致：Encyclopedia of Arkansas 寫 1957 年簽 Sun，encyclopedia.com 寫 1968 年簽 Epic，英文維基為 1958 與 1967。建議改為『1950 年代後期』與『1960 年代後期』，或不寫確切年份。 | https://encyclopediaofarkansas.net/entries/charlie-rich-2519/ |
+| ar-b-018 | Dwight Yoakam | Guitars, Cadillacs, Etc., Etc. | 1980 年代初…從 Nashville 移居洛杉磯 | 年份來源不一致：PBS SoCal 寫 1977 年離開 Ohio State 與 Nashville 後來到洛杉磯，維基寫約 1982 年。建議不寫年份，或改成『離開 Nashville 後移居洛杉磯』。另『1984 年先在獨立廠牌發行同名六曲 EP』本層只查到 EP 在 1984 年錄成、之後簽 Warner 旗下廠牌，未查到『獨立廠牌發行』一節，請本機覆核。 | https://www.pbssocal.org/shows/artbound/dwight-yoakam-on-his-early-cowpunk-years-in-los-angeles |
+| ar-b-018 | Fred Cockerham, Tommy Jarrell & Oscar Jenkins | Down to the Cider Mill | 這家廠牌的第一張唱片，材料直接來自老闆自己的收藏 | County Records 的第一張出版品是 1964 年的《A Collection of Mountain Fiddle Music》（County 501）；本張是 1968 年的 County 713，只能說是三人聯名的第一張。另外簡介「Charles Faurot 替廠牌錄的十幾張都在這一段」未在事實庫找到出處，建議一併查核。 | https://en.wikipedia.org/wiki/County_Records |
+| ar-b-018 | Karel Kryl | Bratříčku, zavírej vrátka | 起初印一萬張很快售罄，換社長後庫存被圓鋸切掉，總印量估計五萬張 | 需確認口徑：Radiožurnál 報導該專輯數週內賣出約四萬張，捷克維基則稱該首歌 2015 年前累計約 30 萬張；簡介的『總印量五萬張』與這兩個數字的時間尺度不同，建議店主對照原始出處確認是哪個口徑。 | https://radiozurnal.rozhlas.cz/osobnosti-a-kultura-68-7571690/2 |
+| ar-b-018 | Léo Ferré | Verlaine et Rimbaud chantés par Léo Ferré | 同一條目記這是流行音樂史上第一張錄音室雙唱片 | 這句出自法文維基單源、屬「史上第一」型宣稱，本層沒有另一個獨立來源，也沒有查到反例；建議改成『法文維基稱⋯』或刪去。上線簡介已寫成『同一條目記』，風險有限，列出供店主決定。 | https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9 |
+| ar-b-018 | Michael Chapman | Rainmaker | 1967 年才進倫敦與 Cornwall 的民謠場演出 | 本層查到的來源對年份說法不一：維基與 KLOF 寫 1966 年在 Cornwall 演出，Tompkins Square 寫 1967 年在康瓦爾圈起步；上線簡介的『1967 年』與『才進倫敦』兩點無兩個一致來源，建議改為『1960 年代中期』或刪去年份。 | https://klofmag.com/2021/09/michael-chapman-dies-aged-80/ |
+| ar-b-019 | Nic Jones | The Noah's Ark Trap | 聽過 Martin Carthy 的錄音之後，他把標準調弦換成了 DADGAD | DADGAD 只見英文維基單一說法；Living Tradition 專文寫他的招牌是 C 與 G modal 開放調弦，兩源不一致，建議改成「開放調弦」。 | https://www.livingtradition.co.uk/articles/nicjones |
+| ar-b-019 | Randy Travis | Storms of Life | 史上第一張發行一年內銷量破 100 萬張的鄉村音樂首張錄音室專輯 | 鄉村音樂名人堂官網的措辭是『第一位以首張專輯達白金的鄉村藝人、第一位首張專輯達多白金的新人』，與上線簡介的『一年內破 100 萬張』不同口徑，且『第一』類宣稱本層無法獨立驗證；另外在世者的銷量與認證倍數（三白金）依現行規則不寫。建議改成名人堂官網的措辭或刪除。 | https://countrymusichalloffame.org/artist/randy-travis |
+| ar-b-019 | Ray LaMontagne | God Willin' & the Creek Don't Rise | 同年 12 月獲兩項葛萊美提名，拿下最佳當代民謠專輯 | 提名公布在 2010 年 12 月 1 日，最佳當代民謠專輯的得獎在 2011 年 2 月 13 日的第 53 屆葛萊美獎；『同年 12 月……拿下』容易讓人讀成 2010 年得獎。建議改成『2010 年 12 月入圍、2011 年 2 月得獎』。 | https://en.wikipedia.org/wiki/53rd_Annual_Grammy_Awards |
+| ar-b-019 | Seu Jorge | Cru | 第二張個人錄音室作 | 疑為第三張：KVPR 稱他 2001 年憑《Samba Esporte Fino》已在巴西成名，英文維基摘要另列 2003《Carolina》在《Cru》（2004）之前；上線簡介若按錄音室專輯數算，Cru 應是第三張（América Brasil o Disco 稱第四張則與此一致）。我只讀到維基摘要與 KVPR，未逐張核對年表，請店主本機覆核。 | https://www.kvpr.org/2016-02-27/brazilian-singer-seu-jorge-on-music-race-and-luck-versus-hard-work |
+| ar-b-019 | Tammy Wynette | Your Good Girl's Gonna Go Bad | 維基記她 1965 年搬去（納許維爾） | 本次讀到的英文維基、Britannica、Country Music Hall of Fame 都寫 1966 年搬到納許維爾（維基寫 1966 年 1 月）；1965 年說法與本次三個來源不符，請店主在本機查原條目再決定是否改成 1966。 | https://www.countrymusichalloffame.org/artist/tammy-wynette |
+| ar-b-019 | 周雲蓬 | 牛羊下山 | 此作使他獲得南方音樂盛典最佳民謠藝人 | 本層查得的最佳民謠藝人與最佳作詞是第 8 屆音樂風雲榜（Chinese Music Media Awards），中文維基連到的是《中國孩子》；未查到《牛羊下山》與南方音樂盛典的連結，建議店主本機核對該獎名稱與得獎專輯。 | https://zh.wikipedia.org/wiki/%E5%91%A8%E4%BA%91%E8%93%AC |
+| ar-b-019 | 周雲蓬 | 沉默如謎的呼吸 | 這是 2004 年的碟，也是他的首張專輯 | 中文與英文維基寫首張專輯 2003 年由摩登天空發行；MusicBrainz 的 release 年為 2004，兩種年份並存，建議簡介改成不寫發行年或標明為 2004 年版本。 | https://en.wikipedia.org/wiki/Zhou_Yunpeng |
