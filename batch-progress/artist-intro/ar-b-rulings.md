@@ -197,3 +197,20 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - w1 審稿（2 處）：Viagra Boys 2026 Grammis 年度專輯經主線 WebSearch 核實（得獎），但 Murphy「年度詞作者」只見入圍、未證實得獎 → 刪；「兩度年度搖滾」改「多次獲 Grammis 肯定」。toe 文中 tricot 改小寫通行寫法。
 - w2 審稿（1 處）：X 的 Ray Manzarek 製作了前四張而非「前三張」→ 改「最初的幾張」。Wolf Alice 由 thin 升 full（Mercury＋主線核實的 Brit），照准。光束夜正文「不失者」漢字主線核對無誤。
 - **ar-b-016 上線**：40 位，reviewFixes 3。
+
+## 第六段（2026-10-02，店主：「繼續走10批」）
+
+範圍 ar-b-017～026（rock/folk、folk、folk/pop、pop×2、pop/world、world、world/electronic、electronic、electronic/hiphop，各 40 位）。併行上限四支；每批上線後開 PR 併入 main。共同特注（在世者累計數字、死因、指控者、榜單、地區獎項主詞、人名原文）寫進 scratchpad/notes10.sh，每批另附特注。
+
+### ar-b-017
+- g3 交件（QA 本組 0）。thin：Fleet Foxes、Joanna Newsom（地位 none）。Garth Brooks 的 3 條 pubIssues 是「簡介寫了銷量／認證」——「在世者累計數字不寫」是藝人介紹的規則，不溯及專輯簡介，不列待改。Marty Robbins〈El Paso〉「第一首超過四分鐘的冠軍曲」列本機待核。〈Grândola〉成曲年兩說不寫。
+- g4 交件（QA 本組 0）。thin：Shawn Mendes。Shirley Collins 失敗請求 6 次超限，未取得內容，照收。pubIssues 1（Steve Earle《Copperhead Road》收尾曲描述 → 本機待核）。Patsy Cline 後輩名單只能寫「鄉村音樂名人堂列出…」。
+- g2 交件（QA 本組 0）。thin：阿飛西雅（地位 none）。Donovan 失敗請求 5 次超限，未取得內容，照收。裸のラリーズ 成員涉劫機案不收；Dixie Chicks「首個全女性團體三大獎」不收。pubIssues 1（Dick Gaughan《Coppers & Brass》合作張數 3／4 → 本機待核）。w2（g3+g4）派出。
+- g1 交件（QA 0）。thin：脫拉庫（貢獻 none）。椎名林檎事實庫空、補洞偏薄 → 主線以通行事實補（1978 生於埼玉、福岡長大、1998〈幸福論〉出道、1999《無罪モラトリアム》、2004 東京事変），升 full。pubIssues 3（老王樂隊《暮夜徐行》休團時距、脫拉庫《飛向陽光飛向你》第 11 屆金曲在 2000 年、脫拉庫成員名字形）→ 本機待改。w1（g1+g2）派出。
+
+### ar-b-018
+- g1 交件（QA 本組 0）。thin：Waxahatchee、Adrianne Lenker。Tyler Childers 2026 葛萊美最佳鄉村歌曲（〈Bitin' List〉）主線 WebSearch 核實（grammy.com、Backstage Country）。Víctor Jara〈Venceremos〉不得寫成他所作；出生地三說只寫「生於智利」。Alan Jackson 各名人堂年份互相矛盾，不寫。pubIssues 1（Woody Guthrie《Library of Congress Recordings》「最早的錄音」→ 本機待改）。
+
+### ar-b-017 審稿與上線
+- w1 無修正。w2（3 處）：Natalia Lafourcade 刪「拉丁葛萊美史上得獎最多的女藝人」（在世者累計）；Marty Robbins 不是身後入選——1982 年 10 月入選、12 月辭世，改正；Steve Earle「三度」改「多次」。放寬額度 4 位（Pete Seeger、Ruhi Su、Selda Bağcan、Shirley Collins）皆人物故事所需，照准。
+- **ar-b-017 上線**：40 位，reviewFixes 3。
