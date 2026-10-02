@@ -296,5 +296,90 @@
     "status": "full",
     "pubIssues": [],
     "notes": "事實庫無研究稿也無上線簡介，從零查，用 8 次（維基 en、Britannica、維基 fr、WebSearch、Remezcla、維基 Clandestino、WebSearch 戈雅、維基 Princesas）；失敗 1 次（hiru.eus 503）。Britannica 頁只讀到 Amadou & Mariam 一段（頁面被截），era 條 src 用它，且為短條目。非獨立：多處 src 與 src2 同為維基不同語言版或不同條目（Manu Chao en／fr、Clandestino、Princesas）。pool 的四張專輯（Clandestino、Sibérie m'était contéee、La Radiolina、Viva tu）與此人吻合，無同名混卡。戈雅條：WebSearch 摘要還稱同曲 2007 年拿拉丁葛萊美，但只見維基 en 單源（en 維基稱 Best Alternative Song），未收。單源未收：Joe Strummer 與薩帕塔副司令 Marcos 公開支持 Clandestino、Remezcla 稱他是『下一代的 Bob Marley』（Remezcla 單源，且是記者形容詞）；Mano Negra 風格是 punk、reggae 與拉丁（en 維基單源）；祖父 Tomás Ortega 以共產黨員身分逃離西班牙（fr 單源）；2001 MTV Europe Music Award 法國最佳藝人（en 單源）；《Clandestino》入選《1001 Albums You Must Hear Before You Die》（單源）；樂評媒體榜單名次不收。在世者，銷量與獎座數不寫；Victoires 與戈雅只寫單項得獎。"
+  },
+  {
+    "key": "marisa monte",
+    "name": "Marisa Monte",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Marisa Monte 1967 年 7 月 1 日生於巴西里約熱內盧；童年學過歌唱、鋼琴與鼓，少女時期到義大利學習抒情／美聲唱法。",
+            "src": "https://en.wikipedia.org/wiki/Marisa_Monte",
+            "src2": "https://pt.wikipedia.org/wiki/Marisa_Monte",
+            "from": "new"
+          },
+          {
+            "f": "她 1987 年回到里約，製作人 Nelson Motta 為她導演了首場個人演出，這是她職涯的起點。",
+            "src": "https://en.wikipedia.org/wiki/Marisa_Monte",
+            "src2": "https://pt.wikipedia.org/wiki/Marisa_Monte",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她以 MPB 為根，同時錄過傳統森巴與民謠；合作對象橫跨 Arto Lindsay、David Byrne 與 Philip Glass，作品被形容流動多變、難被 MPB 一個標籤框住。",
+            "src": "https://en.wikipedia.org/wiki/Marisa_Monte",
+            "src2": "https://www.bluenote.com/artist/marisa-monte/",
+            "from": "new"
+          },
+          {
+            "f": "Arto Lindsay、Arnaldo Antunes、Nando Reis 與 Carlinhos Brown 是她長期往來的製作與創作夥伴；Antunes 與 Reis 在 1991 年《Mais》就已參與。",
+            "src": "https://www.bluenote.com/artist/marisa-monte/",
+            "src2": "https://pt.wikipedia.org/wiki/Marisa_Monte",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2002 年她與 Carlinhos Brown、Arnaldo Antunes 組成 Tribalistas，同名專輯在 2003 年拉丁葛萊美拿下巴西當代流行專輯獎（團體得獎，主詞是 Tribalistas）。",
+            "src": "https://pt.wikipedia.org/wiki/Marisa_Monte",
+            "src2": "https://www.bluenote.com/artist/marisa-monte/",
+            "from": "new"
+          },
+          {
+            "f": "《Memórias, Crônicas e Declarações de Amor》（2000）拿下拉丁葛萊美最佳巴西當代流行專輯（得獎）。",
+            "src": "https://pt.wikipedia.org/wiki/Marisa_Monte",
+            "src2": "https://www.bluenote.com/artist/marisa-monte/",
+            "from": "new"
+          },
+          {
+            "f": "2021 年她獲義大利 Premio Tenco（以表彰對創作歌曲的貢獻），是第一位獲此獎的巴西女性；歷屆得主包括 Leonard Cohen、Joni Mitchell，以及 Chico Buarque、Milton Nascimento、Caetano Veloso 與 Gilberto Gil 等巴西前輩。",
+            "src": "https://pt.wikipedia.org/wiki/Marisa_Monte",
+            "src2": "https://www.gazetanews.com/colunistas/gene-de-souza/2021/10/439165-marisa-monte-recebe-premio-na-italia-e-canta-com-jorge-drexler.html",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2021 年獲義大利 Premio Tenco，是第一位獲此獎的巴西女性。",
+        "src": "https://pt.wikipedia.org/wiki/Marisa_Monte",
+        "src2": "https://www.gazetanews.com/colunistas/gene-de-souza/2021/10/439165-marisa-monte-recebe-premio-na-italia-e-canta-com-jorge-drexler.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出國學歌年齡：en 維基寫 14 歲開始學歌劇、19 歲赴義大利；搜尋摘要寫 18 歲退學赴羅馬；pt 維基寫羅馬學 10 個月；年齡不一致，facts 不寫年齡。",
+      "父親職業：en／pt 維基寫工程師 Carlos Saboia Monte，搜尋摘要寫經濟學家兼 Portela 文化總監；不寫職業。",
+      "Memórias 的拉丁葛萊美類別：pt 維基寫 Best Contemporary Brazilian Pop Album，Blue Note 寫 Best Pop Album；採 pt 維基，與上線簡介一致。"
+    ],
+    "searches": 6,
+    "failedFetches": 3,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫無研究稿，三格從零查，用 6 次（維基 en、維基 pt、WebSearch×2、Blue Note、gazetanews）；失敗請求 3 次（Britannica 404、AllMusic 403、Il Mattino 418，不計入）。pool 四張專輯與此人吻合，無同名混卡。era 格：曾想放 1994 年《Verde, Anil…》被視為職涯代表作，但 pt 維基單源（AllMusic 403 未讀），改標 none。Blue Note 是她的唱片公司官方傳記，非獨立第三方；其文字（『the most acclaimed female vocalist to arise in Brazil during the 1990s』）疑為轉引 AllMusic，單源且為宣傳來源，未放 facts，寫作層若要用須寫成『廠牌傳記稱…』或不用。搜尋摘要稱她被視為『同世代最偉大的歌手』，來源不明，未收。單源未收：父親 Carlos Monte 在 Portela 森巴學校任職至 1975 年（pt 維基）、出身 Saboia 義裔家族（en 維基）；首張專輯 MM（1989）與 Veludo Azul 演出（pt 維基）；累計銷量與獎座數（在世者不寫）。Tribalistas 條 src 與 src2 取不同語言／非獨立來源，簡要：pt 維基稱 2003 拉丁葛萊美得獎、Blue Note 稱 Best Brazilian Contemporary Pop Album 得獎。上線簡介核對：Memórias 拉丁葛萊美最佳巴西當代流行專輯與 pt 維基一致；其餘（鑽石唱片、Mais 的製作名單等）未核。"
   }
 ]

@@ -955,5 +955,114 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "實開頁：en.wikipedia、fr.wikipedia、The Conversation（Amadou 訃聞式評論）、France 24（訃聞）。WebSearch 1 次。失敗：NPR 2005 專訪（503，不計入）。搜尋 5 次，另 3 次未用（上限 8）。同名混卡：無，卡池四張（含 Dimanche à Bamako 2004、Sou Ni Tilé 1998、Se te djon ye 1999、Welcome to Mali 2008）皆為本團。『非獨立』：en/fr 維基各一條，同為維基媒體；The Conversation 與 France 24 為獨立媒體。單源（放 notes）：英文維基稱兩人是 one of Africa's most successful musical exports（單源）；France 24 稱『Africa's best-selling and beloved pairs』（銷量類，不收）；英文維基稱 1982 年 Amadou 贏得 RFI 的 Discoveries 比賽（單源）；1990 年左右在阿比讓見到 Stevie Wonder（en 維基單源）；The Conversation 稱兩人避開 griot 傳統、以愛與平等為主題，音樂源自馬利南部（Bougouni、Sikasso）並帶雷鬼與古巴節奏（單源）；英文維基 1998 年《Sou Ni Tilé》單曲〈Je pense à toi〉（銷量不收）；法文維基 1989 至 1991 年在象牙海岸發行卡帶 Vol.1–4（單源）；1998 年《Sou Ni Tilé》與 1999 年《Se te djon ye》的發行（卡池年）未再核對。Amadou Bagayoko 2025 年 4 月 4 日過世只收年份與日期，不收死因；Mariam 仍在世，銷量與獎座數均未寫。Victoires de la musique 與 BBC Radio 3：法文維基寫 2005 年兩個獎（BBC Radio 3 為『World Music in African』與『Best Album』，英文維基只寫 won），France 24 只寫 won BBC radio and Victoires de la Musique；獎項主詞為專輯《Dimanche à Bamako》與雙人組，寫作層請寫『《Dimanche à Bamako》為他們贏得』，並保留法文維基的類別名稱不具體引用。2013 年 Folila 獲 Victoires 世界音樂專輯獎（法文維基單源）。"
+ },
+ {
+  "key": "angélique kidjo",
+  "name": "Angélique Kidjo",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Angélique Kidjo 1960 年 7 月 14 日生於貝南的 Ouidah（當時的法屬達荷美），出身表演家庭，母親是編舞與劇場導演，她 6 歲起就在母親的劇團登台，後來也跟哥哥們一起在搖滾與節奏藍調樂團唱歌。",
+      "src": "https://www.britannica.com/biography/Angelique-Kidjo",
+      "src2": "https://en.wikipedia.org/wiki/Angélique_Kidjo",
+      "from": "new"
+     },
+     {
+      "f": "1983 年她因貝南共產政權不容許音樂人自由創作而離開，移居巴黎，在當地爵士學校學習，並接觸到大量非洲與世界音樂人。",
+      "src": "https://www.nprillinois.org/2018-05-31/angelique-kidjo-gives-new-life-to-talking-heads-remain-in-light",
+      "src2": "https://en.wikipedia.org/wiki/Angélique_Kidjo",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她把貝南的傳統音樂與爵士、funk、Afropop 以及其他世界音樂混在一起，以 Fon、Yorùbá、法語、英語等多種語言演唱。",
+      "src": "https://www.britannica.com/biography/Angelique-Kidjo",
+      "src2": "https://www.polarmusicprize.org/laureates/angelique-kidjo/",
+      "from": "new"
+     },
+     {
+      "f": "2018 年她重新詮釋 Talking Heads 1980 年的專輯《Remain in Light》，由 Jeff Bhasker 製作，用多種西非語言與非洲節奏把原作拉回它的非洲根源；她說 1983 年在巴黎初聽〈Once in a Lifetime〉時，就認定那是非洲音樂而不是搖滾。",
+      "src": "https://www.nprillinois.org/2018-05-31/angelique-kidjo-gives-new-life-to-talking-heads-remain-in-light",
+      "src2": "https://en.wikipedia.org/wiki/Angélique_Kidjo",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她多次獲葛萊美世界音樂類獎項：《Djin Djin》獲 2008 年最佳當代世界音樂專輯，《Eve》與《Sings》都獲最佳世界音樂專輯（主詞是專輯，得獎者為她）。",
+      "src": "https://www.britannica.com/biography/Angelique-Kidjo",
+      "src2": "https://fr.wikipedia.org/wiki/Angélique_Kidjo",
+      "from": "new"
+     },
+     {
+      "f": "2023 年她獲瑞典北極星音樂獎（Polar Music Prize）。",
+      "src": "https://www.polarmusicprize.org/laureates/angelique-kidjo/",
+      "src2": "https://fr.wikipedia.org/wiki/Angélique_Kidjo",
+      "from": "new"
+     },
+     {
+      "f": "她 2002 年起擔任聯合國兒童基金會親善大使，2006 年成立 Batonga Foundation，支持非洲女孩的教育。",
+      "src": "https://www.britannica.com/biography/Angelique-Kidjo",
+      "src2": "https://www.polarmusicprize.org/laureates/angelique-kidjo/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1983 年移居巴黎；1991 年《Logozo》為她在國際上打開局面的專輯。",
+      "src": "https://www.britannica.com/biography/Angelique-Kidjo",
+      "src2": "https://en.wikipedia.org/wiki/Angélique_Kidjo",
+      "from": "new"
+     },
+     {
+      "f": "2014 年《Eve》（2015 年獲葛萊美最佳世界音樂專輯）；2018 年《Remain in Light》。",
+      "src": "https://www.britannica.com/biography/Angelique-Kidjo",
+      "src2": "https://www.nprillinois.org/2018-05-31/angelique-kidjo-gives-new-life-to-talking-heads-remain-in-light",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1983 年因政治因素離開貝南，移居巴黎。",
+    "src": "https://www.nprillinois.org/2018-05-31/angelique-kidjo-gives-new-life-to-talking-heads-remain-in-light",
+    "from": "new"
+   },
+   {
+    "f": "2008 年《Djin Djin》獲葛萊美最佳當代世界音樂專輯。",
+    "src": "https://en.wikipedia.org/wiki/Angélique_Kidjo",
+    "from": "new"
+   },
+   {
+    "f": "2023 年獲北極星音樂獎。",
+    "src": "https://www.polarmusicprize.org/laureates/angelique-kidjo/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "離開貝南年份：英文維基、法文維基、Britannica、NPR Illinois 都寫 1983 年，北極星音樂獎官方頁寫 1981 年；採 1983，與上線簡介《Logozo》一致。",
+   "出生地：英文維基、法文維基、Britannica 寫 Ouidah，北極星音樂獎官方頁寫 Cotonou；採 Ouidah（三源）。",
+   "UNICEF 親善大使起年：英文維基、法文維基、Britannica 寫 2002 年，北極星官方頁寫 2001 年；採 2002，寫作層可不寫年份。",
+   "好萊塢星光大道：英文維基稱她是第二位獲得星光大道星星的非洲藝人，法文維基稱 2026 年首位非洲藝人，兩源不一致，不收。",
+   "上線簡介《Eve》『第 57 屆葛萊美最佳世界音樂專輯』與 Britannica、法文維基一致（2015 年頒）；Britannica 寫 Eve（2014）與 Sings（2015）都獲獎。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "實開頁：en.wikipedia、fr.wikipedia、Polar Music Prize 官方、Britannica、NPR Illinois（轉載 NPR 2018 專文）。WebSearch 1 次。失敗：WBUR 同篇（頁面只有導覽、沒有正文，視為取不到，不計入）。搜尋 6 次，另 2 次未用。同名混卡：無，卡池四張（Ayé 1994、Remain in Light 2018、Logozo 1991、Eve 2014）皆為貝南的 Angélique Kidjo；《Remain in Light》是她翻唱 Talking Heads 1980 年原專輯的 2018 年作品，不是原作。『非獨立』：en/fr 維基各一條；Britannica、NPR Illinois、Polar Music Prize 官方為獨立來源。單源（放 notes）：法文維基稱《紐約時報》說她『可能是最受尊敬的國際非洲歌手』（引述，單源，未見原文）；英文維基稱 2021 年入選《Time》100 位最具影響力人物（單源，雜誌榜單不收）；搜尋摘要稱 Forbes 稱她為非洲最有影響力的女性、《衛報》選為 100 位最啟發人心的女性（來源為搜尋摘要，未開頁，雜誌榜單不收）；法文維基 2020 年法國榮譽軍團勳章軍官、2008 年貝南國家勳章司令、2010 與 2019 年藝術與文學勳章（單源）；英文維基 2021 年東京奧運開幕式演出（單源）；2016 年《Sings》與 2020 年《Celia》、2022 年《Mother Nature》葛萊美（法文維基單源，只列年份清單；上線簡介未涉及）；Britannica 稱 1988 年出道專輯《Pretty》（英文維基稱 20 歲錄《Pretty》，年份未交叉）；『1983 年在巴黎聽〈Once in a Lifetime〉就認為是非洲音樂』的更完整引述（搜尋摘要來源為另一篇報導，未開頁）。在世者葛萊美座數、銷量不寫（只寫專輯名與類別）。"
  }
 ]
