@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 220 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 222 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -224,3 +224,5 @@
 | ar-b-025 | 冨田勲 | 展覧会の絵 | 1960 年代末購入 Moog III 模組合成器 | 日文維基寫 1969 年在大阪的唱片行遇到《Switched-On Bach》、1971 年秋個人進口 Moog III-P；CISAC 與 Consequence 也都寫 1971 年進口。『1960 年代末購入』與來源不符，建議改『1971 年進口』。 | https://ja.wikipedia.org/wiki/冨田勲 |
 | ar-b-025 | Cliff Martinez | Solaris | 本片獲 2003 年 Satellite Awards 最佳音效 | 獎項屬於電影音響（得主 Larry Blake），與 Martinez 的配樂無關；字面無誤但放在配樂簡介易被讀成配樂得獎，建議改寫或刪去 | https://en.wikipedia.org/wiki/Solaris_(2002_film) |
 | ar-b-025 | DJ Koze | Kosi Comes Around | Stefan Kozalla 出身德國 Flensburg | en 維基寫生於 Flensburg，de 維基與 Pampa Records 官方頁寫生於 Marrakech，來源衝突；建議改成『在 Flensburg 的嘻哈圈起家』較穩。 | https://de.wikipedia.org/wiki/DJ_Koze |
+| ar-b-026 | Paul van Dyk | Out There and Back | 自營廠牌 Vandit 的第一號發行 | 維基 Vandit Records 條目稱廠牌最早的發行是 Paul van Dyk 的單曲〈Another Way〉與〈Avenue〉；維基《Out There and Back》條目稱這是廠牌的第一張專輯。建議改成「Vandit 的第一張專輯」。兩條都是維基，非獨立，建議店主再核廠牌目錄。 | https://en.wikipedia.org/wiki/Vandit_Records |
+| ar-b-026 | Sven Grünberg | Hingus | 愛沙尼亞文維基記載，1981 年完成的《Hingus》是整個蘇聯的第一張電子音樂唱片。 | 簡介把『蘇聯第一張電子音樂唱片』掛在愛沙尼亞文維基名下，原句確實出自該條目；但這是『第一』類宣稱且有明顯反例：拉脫維亞團 Zodiac 的《Disco Alliance》1980 年已由國營 Melodiya 發行，英文維基說它大量使用當時罕見的合成器音色，早於 1981 年。建議改成『愛沙尼亞文維基稱…』並加『說法有爭議』，或刪掉這個『第一』。另，Bureau B 重發頁（搜尋摘要）寫本作錄製於 1978 至 1980 年、1981 年發行，簡介『1981 年完成』可改『1981 年發行』。 | https://en.wikipedia.org/wiki/Zodiac_(Latvian_band) |
