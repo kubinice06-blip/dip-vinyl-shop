@@ -21,3 +21,6 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - w1 審稿無修正。單源軟引用（Eddie Gale「被形容為」、Frank Lowe「據說」、Gabor Szabo「據他自述」）照准；Fletcher Henderson「與 Ellington 並列」、Evan Parker「歐洲自由即興關鍵人物」屬百科首段共識，照准。David Murray 葛萊美不寫。Gary Bartz 2024 NEA Jazz Master 照准。
 - w2 審稿無修正。Gil Mellé「把 Van Gelder 引介給 Blue Note」屬通行事實，照准。Hiatus Kaiyote「第一個入圍該類別的澳洲團體」有兩個獨立來源，照准。Grover Washington Jr. 已過世，Hot 100 名次可寫。Helen Merrill 未寫生死，照准。
 - **ar-c-002 上線**：40 位，reviewFixes 0。
+
+### ar-c-003
+- g1 交件（QA 本組 0）。thin：John Lee & Gerry Brown。Jean-Luc Ponty 失敗請求 5 次超限，照收。衝突值不寫：João Gilberto 葛萊美座數、Johnny Dyani 生卒日、Johnny Hartman《麥迪遜之橋》收錄首數、Joe Williams 葛萊美年與專輯。稲垣次郎、ソウル・メディア 有兩源，可寫原文。pubIssues 0。

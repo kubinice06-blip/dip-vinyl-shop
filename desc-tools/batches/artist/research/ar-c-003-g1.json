@@ -509,6 +509,71 @@
   "notes": "搜尋 4 次：英文維基、WebSearch、Britannica、Classic FM。失敗請求：Britannica 第一個網址（404）、Britannica 的 John-Barry-British-composer 網址（404，後以搜尋結果給的網址取得）。已確認身分：卡池 Goldfinger（1964）與 Dances With Wolves（1990）皆為這位英國作曲家，事實庫的研究稿與上線簡介只談專輯版本編制，無生平。死因不收。單源未收：英文維基稱他在服役時透過 Bill Russo 的函授課學吹小號；他把 Monty Norman 的作品編成〈James Bond Theme〉（涉及與 Norman 的作者歸屬官司，不收）；曾在合成器於電影配樂的運用上開路；Britannica 稱他入選 Songwriters Hall of Fame（1998）、四座葛萊美；Classic FM 稱《Goldfinger》原聲帶 1964 年在美國榜上超越披頭四《A Hard Day's Night》、AFI 把《Out of Africa》配樂排第 15（榜單名次，不收）、Mark Ronson 稱『他每次寫配樂都寫出一首現代標準曲』、母親是鋼琴家；WebSearch 摘要（未開頁）：David Arnold 稱見到他『如同觸到神的衣角』、少年時就想當電影配樂家。Classic FM 的奧斯卡清單把《Midnight Cowboy》算進得獎，與兩個來源不符，已捨。"
  },
  {
+  "key": "john lee & gerry brown",
+  "name": "John Lee & Gerry Brown",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "貝斯手 John Lee 與鼓手 Gerry Brown 在費城讀高中時就一起演奏，1970 年起同進音樂學院。",
+      "src": "https://en.wikipedia.org/wiki/John_Lee_(bassist)",
+      "src2": "https://en.wikipedia.org/wiki/Gerry_Brown_(drummer)",
+      "from": "new"
+     },
+     {
+      "f": "1972 年兩人一起搬到荷蘭，加入 Chris Hinze 的搖滾爵士團。",
+      "src": "https://en.wikipedia.org/wiki/John_Lee_(bassist)",
+      "src2": "https://en.wikipedia.org/wiki/Gerry_Brown_(drummer)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "兩人是 1970 年代融合爵士樂團的共同領隊，先後在 Blue Note 與 Columbia 發片；Blue Note 時期的簽約在 1975 年、轉往 Columbia 在 1977 年。",
+      "src": "https://en.wikipedia.org/wiki/John_Lee_(bassist)",
+      "src2": "https://www.moderndrummer.com/article/gerry-brown-groove-reverence/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "John Lee 是 Larry Coryell 的 Eleventh House 的貝斯手。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1975/CB-1975-08-30.pdf",
+      "src2": "https://en.wikipedia.org/wiki/The_Eleventh_House",
+      "from": "bank"
+     },
+     {
+      "f": "Gerry Brown 日後長年為 Stevie Wonder 與 Diana Ross 打鼓。",
+      "src": "https://en.wikipedia.org/wiki/Gerry_Brown_(drummer)",
+      "src2": "https://www.moderndrummer.com/article/gerry-brown-groove-reverence/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "兩人相識：兩份英文維基（John Lee、Gerry Brown 條目）寫兩人在費城高中就一起演奏；WebSearch 摘要（AllMusic 風格傳記，未開頁）寫 1972 年在歐洲相識；不一致，facts 寫『高中時就一起演奏』，採兩份維基，但兩份同站、可能同源。",
+   "上線簡介『John Lee 的電貝斯與 Gerry Brown 的鼓是骨架』『九軌全是兩人自己寫的』與事實庫研究稿一致，本層未見衝突。"
+  ],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "搜尋 6 次：WebSearch（雙人）、英文維基 John Lee（貝斯手）、英文維基 Gerry Brown（鼓手）、Modern Drummer（付費牆預覽）、WebSearch（限域名）、英文維基 The Eleventh House。失敗請求 2 次：All About Jazz John Lee 頁（403）、JazzRockSoul Eleventh House 頁（空白）；Modern Drummer 為付費牆，僅預覽可讀，已計入搜尋。已確認身分：名冊名是雙人組合；卡池 Mango Sunrise（1975）與 Still Can't Say Enough（1976）是貝斯手 John Lee 與鼓手 Gerry Brown 的 Blue Note 兩張。正文以兩人合稱為主體，個人事蹟分寫清楚。legacy 格沒有查到有出處的共識評價（無名人堂、國家級榮譽、後輩點名），只有合作履歷，故整體標 thin。來源皆非獨立：兩份英文維基同站；Modern Drummer 為付費牆預覽，只能讀到『co-led 70s fusion band、七張唱片、Eleventh House、Diana Ross、Stevie Wonder』幾個要點。事實庫：Cash Box 1975 年 8 月 30 日簽約照片說明稱 Lee 是 Larry Coryell 的 Eleventh House 的貝斯手、Brown 是 Michał Urbaniak 的鼓手（取自事實庫，來源為 Cash Box 影本，與英文維基 The Eleventh House 條目『John Lee 為原始陣容貝斯』相符）。單源未收：Gerry Brown 1951 年 11 月 9 日生於費城、五歲開始打鼓、年輕時在靈魂樂團演出（英文維基；WebSearch 摘要有同樣說法）；他原想當古典打擊樂手、看了 Delfonics 現場後改變方向（Modern Drummer 預覽單源）；John Lee 1952 年 6 月 28 日生於麻州波士頓（WebSearch 摘要稱 Roxbury，與波士頓同市）、牧師之子、1962 年起跟 Carolyn Lush 學低音大提琴、1971 年起與 Carlos Garnett 與 Joe Henderson 合作並隨 Max Roach 巡演、1972 年 8 月赴荷蘭後與 Philip Catherine、Jasper Van't Hof、Joachim Kühn、Charlie Mariano 合作、1974 年 10 月移居紐約、1974 年 12 月加入 Eleventh House、1984 至 1993 年是 Dizzy Gillespie 的貝斯手（皆英文維基單源；Gillespie 一節 WebSearch 摘要有同樣說法）；兩人 1973 年合錄首張專輯《Infinite Jones》（只見 WebSearch 摘要，未開頁）；Brown 1992 至 2004 年與 Stevie Wonder 同台十四年、2000 年起為 Diana Ross 打鼓（維基單源，年份不收）；1976 年 Billboard 與 Cash Box 稱兩人合作過 Max Roach、Joe Henderson、Pharoah Sanders、Lonnie Liston Smith、Norman Connors（取自事實庫，雜誌短訊單源）；Eleventh House 的時間：維基寫原始陣容 1973 至 1975 年，與 John Lee 傳記寫 1974 年 12 月加入不一致，故不寫加入年月。在世者獎項與銷量不寫。"
+ },
+ {
   "key": "johnny dyani",
   "name": "Johnny Dyani",
   "slots": {
@@ -667,5 +732,88 @@
   "status": "full",
   "pubIssues": [],
   "notes": "搜尋 4 次：英文維基本人、WebSearch、jazzstandards.com 傳記、英文維基《John Coltrane and Johnny Hartman》。失敗請求：Britannica（404）。已確認身分：卡池 Songs from the Heart（1956）與 I Just Dropped By to Say Hello（1964）皆為這位歌手。事實庫無研究稿；上線簡介兩張，與本層查到的『男中音、慢板情歌、與 Coltrane 合作』一致。出生日 1923 年 7 月 3 日、生地 Houma 只見英文維基與 WebSearch 摘要（未開頁），故 facts 只寫路易斯安那州；逝世年 1983 兩源皆有。單源未收：1923 年 7 月 3 日生於 Houma、1983 年 9 月 15 日於紐約過世（死因不收）；jazzstandards 與搜尋摘要稱他八歲就彈鋼琴唱歌；曾與 Erroll Garner 短暫合作後 1950 年單飛；jazzstandards 稱 Coltrane 1963 年找他是因為想起 1950 年 Apollo 劇院同台的印象（單源，寫作層不寫）；1963 年 3 月 7 日錄於 Van Gelder Studio、一發錄成、〈Lush Life〉為 Hartman 臨時堅持加入；《John Coltrane and Johnny Hartman》2013 年入選葛萊美名人堂、Coltrane 唯一以領隊身分錄過的歌手（『唯一』類宣稱，專輯條目與本人條目同屬維基）；1981 年葛萊美最佳男爵士歌手提名（入圍，維基單源）；Johnny Hartman Plaza 1984 年於紐約市哈林區命名；他自述『歌詞是在講一個故事，要讓人相信』（jazzstandards 單源）。"
+ },
+ {
+  "key": "joshua redman",
+  "name": "Joshua Redman",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Joshua Redman 1969 年 2 月 1 日生於加州 Berkeley，父親是薩克斯風手 Dewey Redman，母親 Renee Shedroff 是舞者。",
+      "src": "https://en.wikipedia.org/wiki/Joshua_Redman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/joshua-redman",
+      "from": "new"
+     },
+     {
+      "f": "他十歲開始吹次中音薩克斯風；Berkeley 高中時是校內爵士樂團的成員，1986 年畢業。",
+      "src": "https://en.wikipedia.org/wiki/Joshua_Redman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/joshua-redman",
+      "from": "new"
+     },
+     {
+      "f": "他 1991 年以最優異成績（summa cum laude）自哈佛畢業，主修社會學科；獲耶魯法學院錄取，但延後入學、轉往布魯克林走音樂。",
+      "src": "https://en.wikipedia.org/wiki/Joshua_Redman",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/joshua-redman",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他點名的影響包括 John Coltrane、Ornette Coleman、Cannonball Adderley 與父親 Dewey Redman，也聽搖滾與靈魂樂。",
+      "src": "https://en.wikipedia.org/wiki/Joshua_Redman",
+      "src2": "https://www.bluenote.com/artist/joshua-redman-2/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1991 年贏得 Thelonious Monk 國際爵士薩克斯風大賽，隨即以樂團領隊身分出道。",
+      "src": "https://en.wikipedia.org/wiki/Joshua_Redman",
+      "src2": "https://www.bluenote.com/artist/joshua-redman-2/",
+      "from": "new"
+     },
+     {
+      "f": "1993 年的同名首張專輯讓他獲得第一次葛萊美提名（入圍）。",
+      "src": "https://en.wikipedia.org/wiki/Joshua_Redman",
+      "src2": "https://www.bluenote.com/artist/joshua-redman-2/",
+      "from": "new"
+     },
+     {
+      "f": "1994 年《MoodSwing》的四重奏由 Brad Mehldau（鋼琴）、Christian McBride（貝斯）與 Brian Blade（鼓）組成。",
+      "src": "https://en.wikipedia.org/wiki/MoodSwing_(Joshua_Redman_album)",
+      "src2": "https://www.bluenote.com/artist/joshua-redman-2/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1991 年贏得 Thelonious Monk 國際爵士薩克斯風大賽。",
+    "src": "https://en.wikipedia.org/wiki/Joshua_Redman",
+    "src2": "https://www.bluenote.com/artist/joshua-redman-2/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "耶魯法學院：英文維基、encyclopedia.com 與 Blue Note 的說法是錄取後延後入學（Blue Note 寫『原本打算念法學院』）；Canadian Jazz Archive 寫『拒絕』；採延後入學。"
+  ],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "搜尋 7 次：英文維基、WebSearch、encyclopedia.com、Canadian Jazz Archive、Blue Note 官網藝人頁、英文維基《MoodSwing》消歧義頁（無內容）、英文維基《MoodSwing (Joshua Redman album)》。失敗請求：Britannica（404）；英文維基 MoodSwing 消歧義頁取得但無專輯內容，已計入搜尋。已確認身分：卡池 MoodSwing（1994）與 Timeless Tales (For Changing Times)（1998）皆為這位薩克斯風手（Dewey Redman 之子）；事實庫無研究稿與上線簡介，全部從零查。Blue Note 官網是廠牌藝人頁、非獨立媒體。《MoodSwing》第二源為維基專輯條目與 Blue Note 頁，Blue Note 稱該四重奏為『landmark quartet』。單源未收：他九歲學豎笛、十歲轉次中音（維基；encyc 與 Canadian Jazz Archive 只說十歲開始吹薩克斯風，故只寫十歲）；他在 Berkeley 的 Center for World Music 早年學習、跟 Jody Diamond 學直笛（維基）；母親帶他聽甘美朗音樂、單親由母親帶大、靠學校租借樂器計畫拿到薩克斯風（encyc 單源）；encyc 稱他是 1990 年代『Young Lions』運動的代表並以易入耳的詮釋把爵士帶給更多聽眾（單源，WebSearch 摘要有 young lion 一詞）；2000 年共同創立 SFJAZZ Collective、2009 年創立 James Farm（維基單源，Canadian Jazz Archive 稱他 2004 至 2007 年任 SFJAZZ Collective 藝術總監，兩源說法不同，不寫）；DownBeat 評論家票選（雜誌榜單，不收）；格萊美提名次數兩源不一致（維基列多個年份、Blue Note 稱 10 次提名），在世者獎項次數不寫；《MoodSwing》四重奏 2020 年重聚發行《RoundAgain》（維基單源）；《MoodSwing》1995 年獲 Soul Train Music Award 最佳爵士專輯提名（維基單源）。"
  }
 ]
