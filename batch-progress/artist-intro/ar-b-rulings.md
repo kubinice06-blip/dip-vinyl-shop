@@ -201,3 +201,6 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 ## 第六段（2026-10-02，店主：「繼續走10批」）
 
 範圍 ar-b-017～026（rock/folk、folk、folk/pop、pop×2、pop/world、world、world/electronic、electronic、electronic/hiphop，各 40 位）。併行上限四支；每批上線後開 PR 併入 main。共同特注（在世者累計數字、死因、指控者、榜單、地區獎項主詞、人名原文）寫進 scratchpad/notes10.sh，每批另附特注。
+
+### ar-b-017
+- g3 交件（QA 本組 0）。thin：Fleet Foxes、Joanna Newsom（地位 none）。Garth Brooks 的 3 條 pubIssues 是「簡介寫了銷量／認證」——「在世者累計數字不寫」是藝人介紹的規則，不溯及專輯簡介，不列待改。Marty Robbins〈El Paso〉「第一首超過四分鐘的冠軍曲」列本機待核。〈Grândola〉成曲年兩說不寫。
