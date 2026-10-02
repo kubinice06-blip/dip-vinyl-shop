@@ -36,3 +36,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - **ar-c-003 上線**：40 位，reviewFixes 2。
 - g4 交件（QA 本組 0）。thin：The Headhunters、The James Taylor Quartet。衝突值不寫：UFO 首作、Headhunters《Straight from the Gate》年份、JTQ 成軍年；Singers Unlimited 成立年採 1967。Tony Williams 後輩點名單源不寫。卡池待核（記入本機待辦）：Vince Guaraldi Trio《A Charlie Brown Christmas》卡上 1978 疑為再版年（原版 1965）；Vijay Iyer《A Cosmic Rhythm With Each Stroke》是與 Wadada Leo Smith 的雙人專輯，不是三重奏。pubIssues 0。
 - g3 交件（QA 0，四組齊）。thin：The Awakening（確認為芝加哥 Black Jazz 團）。Spontaneous Music Ensemble 失敗請求 5 次超限，照收。葛萊美年份與座數一律不寫（Mendes、Snarky Puppy、Kenton、Thad Jones & Mel Lewis）；Thad Jones 與 Mel Lewis 生卒年單源不寫。Steve Kuhn 當在世處理。pubIssues 0（Kenton 簡介《紐約時報》稱頌 Russo 一句無來源，記 notes）。w2（g3+g4）派出。
+- w1 審稿（1 處）：Serge Chaloff 刪「曾深陷海洛因毒癮、後來戒除」（病況與私人健康細節，依 g2 裁定不收）。Ruth Brown 279 放寬照准；Bonnie Raitt 引介詞具名。Roy Hargrove、Roy Haynes 的 DownBeat 名人堂不寫，照准。Patty Waters《Sings》年份 1965／1966 未寫。
