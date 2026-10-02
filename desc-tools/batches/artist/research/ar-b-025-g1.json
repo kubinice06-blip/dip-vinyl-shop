@@ -1,0 +1,230 @@
+[
+ {
+  "key": "the future sound of london",
+  "name": "The Future Sound of London",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Garry Cobain 與 Brian Dougans 1980 年代中期在曼徹斯特讀大學、主修電子與音樂錄音科技時認識，最初在當地俱樂部合作；Dougans 1965 年生於格拉斯哥。",
+      "src": "https://en.wikipedia.org/wiki/The_Future_Sound_of_London",
+      "src2": "https://en.wikipedia.org/wiki/Brian_Dougans",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1994 年起他們把現場演出透過 ISDN 數位電話線傳給世界各地的電台（含紐約前衛表演空間 The Kitchen 與 BBC Radio 1 的 John Peel 節目），內容是氛圍音景加上尚未發行的曲目；這批廣播剪輯後成為專輯《ISDN》。",
+      "src": "https://en.wikipedia.org/wiki/The_Future_Sound_of_London",
+      "src2": "https://en.wikipedia.org/wiki/ISDN_(album)",
+      "from": "new"
+     },
+     {
+      "f": "1996 年《Dead Cities》之後，他們把 ISDN 傳輸擴大成面向藝廊、場地與電台的全球聲音與影像傳送；英文維基稱 1996、1997 年這輪是不離開錄音室的世界巡迴。",
+      "src": "https://kinetica-museum.org/artist-profiles/future-sound-of-london/",
+      "src2": "https://en.wikipedia.org/wiki/The_Future_Sound_of_London",
+      "from": "new"
+     },
+     {
+      "f": "他們的聲音橫跨 techno、ambient、house、trip hop、迷幻與 dub，並自己做幾乎所有單曲的影像、電腦動畫與發聲裝置。",
+      "src": "https://en.wikipedia.org/wiki/The_Future_Sound_of_London",
+      "src2": "https://kinetica-museum.org/artist-profiles/future-sound-of-london/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "thin",
+  "notes": "事實庫 research 為空，從零查。搜尋：WebFetch 維基主條（1）、同頁以 API 取全文（2，同頁重複不另開新源）、WebSearch×2（3、4）、Kinetica Museum 藝人頁（5）、Lifeforms 與 ISDN 維基條目（6、7，API 取全文）、Brian Dougans 維基（8）。失敗請求 4 次：AllMusic 三次 403、Britannica 搜尋 403。取不到獨立的第二源，所以 origin 與 sound 的 src2 多為同站不同條目（維基主條／Brian Dougans／ISDN 條目），屬「非獨立」；Kinetica 頁是藝術機構的藝人介紹，來源性質偏自述。\nlegacy 格標 none：可用線索都是單源，未入 facts——(1) Lifeforms 維基條目稱 AllMusic 評為 one of the best experimental techno releases of the '90s（上線簡介已用；維基引文頁本層未開）；(2) 瑞典樂團 Carbon Based Lifeforms 的團名部分取自此專輯（單源，維基 Lifeforms 條目）；(3) Noel Gallagher 聽過後成為樂迷並委託混音（單源，維基主條）；(4) Kinetica 頁稱 Lifeforms 重新定義了現代古典、氛圍、電子與實驗音樂，屬機構自述、非獨立評價，不收。另：維基稱 Dougans 的父親參與 BBC Radiophonic Workshop 並深刻影響 Lifeforms，Brian Dougans 條目未提，單源，不收。維基寫 Lifeforms 1994 年 5 月 23 日發行、舞曲專輯榜第 1、綜合榜第 6、BPI 銀唱片（與上線簡介一致；上線簡介寫「英國舞曲專輯榜冠軍、綜合榜第六名」，無衝突）。上線簡介寫〈Papua New Guinea〉進 Melody Maker 年度單曲榜、專輯排名第 21 名——樂評媒體榜單名次本批規則不收，且本層未查。era 格 none：〈Papua New Guinea〉1991 年單曲 1992 年榜上七週、最高第 22 名（單源，維基主條；已移出 facts）。\n註：Dougans 生於格拉斯哥一項 src2 為同站不同條目，非獨立。"
+ },
+ {
+  "key": "the human league",
+  "name": "The Human League",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ian Craig Marsh 與 Martyn Ware 當時都是電腦操作員，1977 年在英國雪菲爾組成早期全電子的樂團，最初團名叫 The Future，1978 年初改名 The Human League。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "from": "new"
+     },
+     {
+      "f": "他們找來主唱 Philip Oakey 是因為外型夠像流行明星，而不是歌唱能力；Oakey 當時是醫院的雜工、沒有音樂經驗。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "from": "new"
+     },
+     {
+      "f": "1980 年底 Marsh 與 Ware 離團另組 Heaven 17，Oakey 留下團名，從雪菲爾一間夜店舞池找來當時仍是少女的 Joanne Catherall 與 Susan Ann Sulley 加入。",
+      "src": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "src2": "https://diffuser.fm/human-league-dare-album/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期作品是冷調的工業感電子聲響，被形容為把 Kraftwerk、Kubrick、Bowie 與 Ballard 蒸餾成的後工業反烏托邦電子；〈Being Boiled〉與〈Empire State Human〉是代表。",
+      "src": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "src2": "https://diffuser.fm/human-league-dare-album/",
+      "from": "new"
+     },
+     {
+      "f": "1981 年《Dare》與製作人 Martin Rushent 合作，把團轉向明亮、容易上口的 synth-pop；兩位女聲加入後，Oakey 說這讓他們也能吸引女性聽眾。",
+      "src": "https://diffuser.fm/human-league-dare-album/",
+      "src2": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年他們早期的現場演出就獲得 David Bowie 公開背書。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "from": "new"
+     },
+     {
+      "f": "〈Don't You Want Me〉登上英國與美國單曲榜第 1 名；《Dare》在多國拿下榜首、在美國最高第 3 名。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://diffuser.fm/human-league-dare-album/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1980 年底 Marsh 與 Ware 離開，另組 Heaven 17 與製作公司 B.E.F.，團名由 Oakey 保留。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://en.wikipedia.org/wiki/Heaven_17",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋：維基主條（API 全文，1）、Britannica 條目（2，WebFetch 只拿到 Jimmy Jam 條目順帶提及，無內容）、WebSearch（3）、Diffuser《Dare》專文（4）、Uncut 2017 年 A Very British Synthesizer Group 評論（5）、維基 1982 Brit Awards（6，抓不到相關內容）、維基 Heaven 17（7）。失敗請求 1 次：Sheffield Music Archive 回空頁。同名檢查：卡池四張（Dare、Hysteria、Crash、Romantic?）都是雪菲爾這團，無混卡。\nsrc2 的 Heaven 17 為維基同站不同條目，非獨立；其餘 Uncut、Diffuser 為獨立來源。維基與 Uncut 年份：Uncut 寫 1977 年成軍，與維基一致。\n以下為單源、未入 facts：(1) 英文維基稱 1982 年獲 Brit Award 最佳英國新人（Best British Breakthrough Act），第二源未取得；(2) 維基稱 Bowie 1978 年 12 月在觀眾席、事後對 NME 說他「看見了流行樂的未來」，facts 只收兩源都支持的『Bowie 背書』（Uncut 寫 Bowie-endorsed）；(3) 維基稱 Nightshift 把他們與 Gary Numan、OMD 並稱 synth-pop 的「holy trinity」、Pitchfork 稱他們是該場景的 the essence、Dare 被稱為最具影響力的流行專輯之一、被視為 1980 年代第二次英倫入侵的代表藝人；皆為維基轉述，未開原頁；(4) 〈Don't You Want Me〉是首支純用鼓機登上英國單曲榜冠軍的歌（維基單源；『第一』類宣稱，有反例疑慮，未收）；(5) Uncut 稱他們 1977 年組成『英國第一個全電子樂團』（單源、『第一』類宣稱，同期有其他電子團，未收）；(6) Diffuser 稱錄製 Dare 的錄音室據報收到英格蘭第一台 LinnDrum（單源且為『據報』，未收）；(7) 維基稱 2000 年有致敬專輯《Reproductions: Songs of The Human League》，Ladytron、Momus 等參與；Moby 與 Little Boots 是長年樂迷（單源）；(8) 2015 年紀錄片《Big Gold Dream》涵蓋 Fast Product 時期（單源）。累計銷量（維基稱 2010 年前超過兩千萬張）依規則不寫。\n另：legacy 的〈Don't You Want Me〉一條是榜位、不是銷量。"
+ },
+ {
+  "key": "the residents",
+  "name": "The Residents",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "成員是 1960 年代後半離開路易斯安那的一小圈朋友，1969 年前後落腳加州 San Mateo，起初沒人會樂器，先玩攝影、絹印與繪畫。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     },
+     {
+      "f": "1971 年他們把 demo 寄給 Warner Bros.，因為沒署名，退件信封只寫「Residents」，團名就此而來。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     },
+     {
+      "f": "1972 年他們搬進舊金山 Sycamore St. 的住處兼錄音室與攝影棚，同年成立 Ralph Records 發行自己的作品。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://piedmontexedra.com/2022/01/new-coffee-table-book-eyeballs-the-legacy-of-sf-based-experimental-group-the-residents",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的作品大致分兩路：拆解西方流行樂，以及圍繞某個主題或理論的概念作品；樂評形容他們一輩子都在顛覆、重組流行音樂。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.wbur.org/news/2016/04/21/the-residents",
+      "from": "new"
+     },
+     {
+      "f": "他們自稱受 N. Senada 影響，這位人物據說是巴伐利亞作曲家與樂理家，提出「晦澀理論」與「音響組織理論」，後者主張從聲音出發建構音樂；Senada 是否真有其人一直有爭議。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://daily.redbullmusicacademy.com/2015/07/the-residents-guide/",
+      "from": "new"
+     },
+     {
+      "f": "成員始終匿名，標誌是巨大的眼球頭套配禮帽與燕尾服；這套造型 1979 年隨《Eskimo》封面首度出現，原本只打算用一次，後來成為長期形象。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://piedmontexedra.com/2022/01/new-coffee-table-book-eyeballs-the-legacy-of-sf-based-experimental-group-the-residents",
+      "from": "new"
+     },
+     {
+      "f": "《The Third Reich 'n Roll》用錄音帶剪接與拼貼把流行歌改寫成兩段長組曲，被形容預示了日後的取樣手法。",
+      "src": "https://daily.redbullmusicacademy.com/2015/07/the-residents-guide/",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1981 年 MTV 開台時音樂錄影帶很少，他們的短片因此獲得大量播放；《Commercial Album》的《One Minute Movies》是當時少數的音樂影片之一。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     },
+     {
+      "f": "1994 至 1998 年間他們做出三部互動 CD-ROM 作品並獲獎，被視為把 CD-ROM 當藝術媒介的先驅。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     },
+     {
+      "f": "2022 年為紀念成軍 50 週年出版畫冊《The Residents: A Sight for Sore Eyes, Vol. 1》，內含受他們影響的名人證言。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://piedmontexedra.com/2022/01/new-coffee-table-book-eyeballs-the-legacy-of-sf-based-experimental-group-the-residents",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 一條（Ralph Records 成立，已被上線簡介採用）、published 兩張（Meet the Residents、Third Reich 'n Roll）；上線簡介與本層 facts 無衝突。同名檢查：卡池四張（Eskimo、Not Available、Meet the Residents、The Third Reich 'n Roll）皆為舊金山這團，無混卡。搜尋：維基主條 API（1）、WebSearch（2）、WBUR 2016 專文（3）、Red Bull Music Academy 導覽（4）、Truthdig 2023 專文（5、6，同頁為取不同段落重取一次）、Piedmont Exedra 2022 專文（7、8，同頁重取一次）。失敗請求 3 次：Taylor & Francis 期刊導言 403、Groupon 文章 403、Frieze 文章 403。\n⚠ 兩源註記：RBMA 導覽以《Theory of Obscurity》紀錄片為底，WBUR 以同片與 Hardy Fox 訪談為底，但為不同媒體獨立撰文；Truthdig 一文語氣誇飾（稱沒有他們就沒有 MTV、The Simpsons 等），其誇飾推論一律不收，只取事實層。\n以下單源未入 facts：(1) Truthdig 稱 Primus、Ween、Talking Heads、DEVO 成員都承認受他們影響，並稱 Matt Groening 1978 年是首個粉絲會的創始會員、Penn Jillette 曾與他們合作（單源；維基只寫 Les Claypool 與 Gerald Casale 被傳是團員）；(2) Truthdig 稱紐約 MoMA 把《One Minute Movies》與《Third Reich 'n Roll》短片收進永久典藏並稱是最早的真正音樂錄影帶（單源、『最早』類宣稱，未收）；(3) Truthdig 稱第一個有意為之的 mashup 出現在《Third Reich 'n Roll》、1980 年買下第五台 E-mu Emulator、最早用電腦設計封面、最早的全電腦動畫音樂錄影帶（單源、『最早』類宣稱，未收）；(4) 維基稱《Eskimo》入圍 1980 年葛萊美最終提名名單但未獲提名，寫作層不要寫成入圍；(5) 維基稱 2017 年 Hardy Fox 公開承認是共同創辦人與主要作曲，2018 年過世——生卒涉及年份兩源要求，且團隊刻意匿名，不收；(6) 樂迷圈對成員身分的種種傳聞不收；(7) 維基稱被形容為 punk rock、art rock 與 techno 的先驅（單源）。\nsrc2 說明：Exedra 一條 Sycamore St. 住址寫成 18-20，維基寫 20，f 欄只寫街名；Exedra 與維基都是 1972。『1969 年前後』：維基寫 1969 年 Fox 搬到 San Mateo，Truthdig 寫約 1966–1969 年間朋友圈遷出路易斯安那、四人在 San Mateo 落腳，兩者時間點略有出入，f 欄用『1960 年代後半…1969 年前後』的寬寫法。"
+ }
+]

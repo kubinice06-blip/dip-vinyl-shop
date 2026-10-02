@@ -263,5 +263,296 @@
   "status": "full",
   "notes": "事實庫 research 為空，三格從零查。搜尋 6 次：en 維基、sv 維基、WebSearch×2、WRAL（Kygo 2018 Coachella 致詞）、weraveyou（藝人悼念彙整）。失敗請求 2 次（Britannica 404、Billboard 導向 tollbit 付費轉址未取得）。\n本批特注：過世只寫年份 2018，未收死因與案情；搜尋摘要含死因細節，一概不收。\n未收：（1）早期偏深沉與前進式浩室（en 維基單源）；（2）〈Wake Me Up〉是突破單曲（sv 維基與搜尋摘要，英維基頁未明確讀到）；（3）使用者名 Timberman、2007 年簽 Dejfitts Plays：en 維基單源；（4）父母身分：sv 維基單源；（5）2016 年退出巡演：搜尋摘要單源；（6）Alesso、Nicky Romero 等人的悼文：只有 weraveyou 單頁。\nlegacy 第一條的「帶進主流」en 維基寫 credited with；sv 維基寫 helped popularize EDM globally，寫作層用「被認為」。Kygo 的話出自 2018 年 Coachella 現場致詞（WRAL）與 weraveyou，兩者皆為媒體轉述同一人言論。第 4 條的 Foundation 宗旨只見 sv 維基，f 不寫。\n同名混卡檢查：poolAlbums（2013《True》、2015《Stories》、2019《TIM》）皆為 Avicii，無混卡。",
   "pubIssues": []
+ },
+ {
+  "key": "b12",
+  "name": "B12",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "B12 是英國電子二人組，成員 Mike Golding 與 Steve Rutter；兩人受底特律 techno 啟發，也從龐克、海盜電台與東倫敦的 soca 派對汲取養分。",
+      "src": "https://www.thevinylfactory.com/news/b12-electro-soma-vinyl-reissue-warp",
+      "src2": "https://igloomag.com/profiles/b12-more-strings-more-808-more-909",
+      "from": "new"
+     },
+     {
+      "f": "兩人成立自己的廠牌 B12 Records，目標是替英國電子樂界帶來一種乾淨俐落（「clear cut」）的底特律式聲音。",
+      "src": "https://igloomag.com/profiles/b12-more-strings-more-808-more-909",
+      "src2": "https://en.wikipedia.org/wiki/B12_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "B12 的聲音屬於 1990 年代初的 ambient techno 與 IDM，作品反覆出現科幻與未來主題。",
+      "src": "https://en.wikipedia.org/wiki/B12_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Electro-Soma",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1992 年 Warp 的《Artificial Intelligence》合輯收錄了 B12，與 Aphex Twin、Autechre 等人並列；這張合輯被認為幫忙確立了 ambient techno 這個類型。",
+      "src": "https://en.wikipedia.org/wiki/B12_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Ambient_techno",
+      "from": "new"
+     },
+     {
+      "f": "1993 年的《Electro-Soma》被 The Vinyl Factory 稱為那個年代的指標專輯之一，Resident Advisor 則稱它是 ambient techno 的經典，兩人也因此從邊緣走到 IDM 與 techno 具影響力的代表人物。",
+      "src": "https://www.thevinylfactory.com/news/b12-electro-soma-vinyl-reissue-warp",
+      "src2": "https://en.wikipedia.org/wiki/Electro-Soma",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Electro-Soma》1993 年 3 月 29 日由 Warp 發行，是 Warp「Artificial Intelligence」系列的第四張。",
+      "src": "https://en.wikipedia.org/wiki/Electro-Soma",
+      "src2": "https://www.thevinylfactory.com/news/b12-electro-soma-vinyl-reissue-warp",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年在 Warp 推出《Electro-Soma》，列為「Artificial Intelligence」系列第四張。",
+    "src": "https://en.wikipedia.org/wiki/Electro-Soma",
+    "src2": "https://www.thevinylfactory.com/news/b12-electro-soma-vinyl-reissue-warp",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "B12 Records 成立年：en 維基與 igloomag 寫 1991，搜尋摘要（疑為官方介紹）寫 1990；facts 不寫年份。"
+  ],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫 research 為空，三格從零查。搜尋 7 次：en 維基 B12、WebSearch×2、The Vinyl Factory、igloomag 專訪、en 維基 Electro-Soma、en 維基 Ambient techno。失敗請求 2 次（warp.net 403、b12records.com 503）。\n未收：（1）成員來自艾塞克斯 Ilford、兩人 1980 年代末因喜愛底特律 techno 相識：en 維基單源（搜尋摘要有類似但未開頁）。（2）早期用 Musicology、Redcell、Cmetric 等名義發片：維基單源。（3）成軍年 1990：單源。（4）Warp 官方稱《Electro-Soma》讓他們從邊緣走成 techno 與 IDM 代表：只見搜尋摘要，未開頁。（5）早期用 Atari 與 Akai S900，2007 年起全用軟體合成器：igloomag 單源。（6）1998 年後兩人暫別音樂、2005 年重返現場演出：igloomag 單源。（7）《Time Tourist》（1996）包裝像 2166 年的教育電腦遊戲、設計 The Designers Republic：只見搜尋摘要。（8）《Electro-Soma》是「首張／出道作」：維基稱 debut studio album，但 Electro-Soma 條目引評論說它較像早期作品的彙編，屬首張類宣稱，不收。（9）AllMusic 給五星、Reverb 的 IDM 入門清單：評論網站評分與榜單，依規則不收。\nlegacy 偏薄：facts 兩條都是媒體評價與維基歸類，沒有後輩點名，也沒有名人堂或國家榮譽；第 1 條兩源同為英文維基（非獨立）；第 2 條的 Resident Advisor 說法是經維基轉述（第二源非獨立）。The Vinyl Factory 是唱片再版新聞稿性質。故整體標 thin。\n同名混卡檢查：poolAlbums 三張（1993《Electro-Soma》、1993《Prelude Part 1》、1996《Time Tourist》）都是英國二人組 B12，無混卡。",
+  "pubIssues": []
+ },
+ {
+  "key": "basic channel",
+  "name": "Basic Channel",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Basic Channel 1993 年在柏林成軍，由 Moritz von Oswald 與 Mark Ernestus 組成。",
+      "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+      "src2": "https://monumental-movement.jp/en/column-basic-channel/",
+      "from": "bank"
+     },
+     {
+      "f": "Mark Ernestus 1989 年在柏林克羅伊茨貝格（Kreuzberg）開了 Hard Wax 唱片行，Basic Channel 這個計畫就是圍繞這間店長出來的。",
+      "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+      "src2": "https://magazine.032c.com/magazine/berlin-s-sonic-mecca-hard-wax",
+      "from": "bank"
+     },
+     {
+      "f": "Moritz von Oswald 原本是打擊樂手，後來轉做電子音樂製作，並與柏林的 Tresor 廠牌合作。",
+      "src": "https://en.wikipedia.org/wiki/Moritz_von_Oswald",
+      "src2": "https://monumental-movement.jp/en/column-basic-channel/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "兩人把 dub reggae 式的延遲效果放進 techno 的極簡結構，這種做法幫忙定義了剛起步的 dub techno。",
+      "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+      "src2": "https://monumental-movement.jp/en/column-basic-channel/",
+      "from": "bank"
+     },
+     {
+      "f": "1993 至 1994 年間他們以不同掛名發了九張 12 吋，盤面只印最少的資訊與難辨的字樣，讓計畫來歷成謎；匿名本身成了他們的品牌手法。",
+      "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+      "src2": "https://monumental-movement.jp/en/column-basic-channel/",
+      "from": "bank"
+     },
+     {
+      "f": "為了做出想要的音質，兩人自設母帶室 Dubplates & Mastering，後來母帶室、廠牌與唱片行都集中在同一棟廠房裡。",
+      "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+      "src2": "https://magazine.032c.com/magazine/berlin-s-sonic-mecca-hard-wax",
+      "from": "bank"
+     },
+     {
+      "f": "他們另以 Rhythm & Sound 之名與牙買加、多米尼加的歌手合作，做出忠於牙買加 dub 的作品。",
+      "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+      "src2": "https://en.wikipedia.org/wiki/Dub_techno",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Basic Channel 被視為 dub techno 的開創者；他們 1990 年代的作品是極簡 techno 與 dub techno 的先驅範例。",
+      "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+      "src2": "https://monumental-movement.jp/en/column-basic-channel/",
+      "from": "new"
+     },
+     {
+      "f": "1995 年兩人創辦 Chain Reaction 廠牌，旗下發行過 Monolake、Porter Ricks、Vladislav Delay、Substance 等人的作品，這些人被描述為 Basic Channel 的「延伸朋友圈」，延續極簡與 dub techno 的路線。",
+      "src": "https://en.wikipedia.org/wiki/Chain_Reaction_(record_label)",
+      "src2": "https://en.wikipedia.org/wiki/Dub_techno",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把 1993 至 1994 年那批 12 吋的編輯版整編成兩張 CD：《BCD》（1995）與《BCD-2》（2008）。",
+      "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+      "src2": "https://musicbrainz.org/release/1b43a144-f4be-4365-b376-947d93586550",
+      "from": "bank"
+     },
+     {
+      "f": "Chain Reaction 廠牌 1995 年成立，持續到 2003 年發出最後一張。",
+      "src": "https://en.wikipedia.org/wiki/Chain_Reaction_(record_label)",
+      "src2": "https://monumental-movement.jp/en/column-basic-channel/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年，Moritz von Oswald 與 Mark Ernestus 在柏林成立 Basic Channel。",
+    "src": "https://en.wikipedia.org/wiki/Basic_Channel",
+    "src2": "https://monumental-movement.jp/en/column-basic-channel/",
+    "from": "bank"
+   },
+   {
+    "f": "1995 年創辦 Chain Reaction 廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Chain_Reaction_(record_label)",
+    "src2": "https://monumental-movement.jp/en/column-basic-channel/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫兩張專輯的研究稿與上線簡介在成軍年、Hard Wax 1989、九張 12 吋上一致，無衝突。研究稿 BCD-2 條目寫 MusicBrainz 德國盤為 2008-05，與上線簡介一致。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫僅有專輯層級研究稿（c97-a，皆以 en 維基為唯一敘事源），故成軍年等原本只有單源；本層補查，成軍 1993 年另得 monumental-movement 與 dub techno 維基；Hard Wax 1989 另得 032c；origin、sound、legacy 三格都補上第二源。\n搜尋 8 次：en 維基 Basic Channel、WebSearch、monumental-movement 專欄、en 維基 Dub techno、Moritz von Oswald 維基、Mark Ernestus 維基（條目其實只重述 Basic Channel）、Chain Reaction 維基、032c Hard Wax 專文；已達上限。\n非獨立注意：Basic Channel 維基、Dub techno 維基、Ernestus 維基、Chain Reaction 維基都是英文維基同站不同條目；sound 第 4 條、legacy 第 2 條的第二源即屬此類。monumental-movement.jp 是日本站的專欄、032c 是德國雜誌專文，這兩個才是獨立來源。\n未收（單源）：（1）von Oswald 1962 年生於漢堡、俾斯麥後裔、Palais Schaumburg 打擊樂手、Moritz von Oswald Trio 與 Juan Atkins 的 Borderland：維基單源，與本團無必要關聯。（2）The Stranger 稱 von Oswald 為「dub techno 的大師級建築師之一」：維基轉述單源。（3）維基稱這批唱片「spawning a legion of imitators and earning the duo legend status among those in the know」：評論語句，單源。（4）Deepchord、Gas、Yagya 受其影響：monumental-movement 單源。（5）Hard Wax 繞過歐洲經銷商直接向底特律廠牌進貨、1996 年遷到 Paul-Lincke-Ufer：032c 單源（遷址年份寫入 f 不收）。（6）Hard Wax 開在 1989 年冬天、Reichenberger Strasse：032c 單源細節。（7）化名 Cyrus、Quadrant、Maurizio：monumental 與維基提到的名單不完全一致，f 不列名。（8）「dub techno」一詞要到 2001 年才通行：維基單源。\npubIssues：兩條上線簡介（BCD-2、Phylyps Trak）與本層讀到的來源對得上，未發現錯誤。\n同名混卡檢查：poolAlbums 三張（《Phylyps Trak》1993、《BCD》1995、《BCD-2》2008）皆為這個柏林二人組，無混卡。",
+  "pubIssues": []
+ },
+ {
+  "key": "boys noize",
+  "name": "Boys Noize",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Alexander \"Alex\" Ridha，1982 年 8 月 22 日生於漢堡（當時的西德）。",
+      "src": "https://en.wikipedia.org/wiki/Boys_Noize",
+      "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+      "from": "new"
+     },
+     {
+      "f": "他還在念書就開始在夜店當 DJ，深受 1990 年代的 house 文化影響。",
+      "src": "https://de.wikipedia.org/wiki/Boys_Noize",
+      "src2": "https://ra.co/dj/boysnoize/biography",
+      "from": "new"
+     },
+     {
+      "f": "他早期用 Kid Alex 這個名義演出，後來搬到柏林發展。",
+      "src": "https://en.wikipedia.org/wiki/Boys_Noize",
+      "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的聲音以 techno、electro 與 house 為底。",
+      "src": "https://en.wikipedia.org/wiki/Boys_Noize",
+      "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+      "from": "new"
+     },
+     {
+      "f": "2005 年他創辦獨立廠牌 Boysnoize Records，為了保有創作自由，廠牌不被曲風框住。",
+      "src": "https://ra.co/dj/boysnoize/biography",
+      "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+      "from": "new"
+     },
+     {
+      "f": "他與 Skrillex 合組 Dog Blood 這個二人組。",
+      "src": "https://en.wikipedia.org/wiki/Boys_Noize",
+      "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以〈Midnight Hour〉（與 Skrillex、Ty Dolla $ign 合作）入圍葛萊美最佳舞曲錄音（Best Dance Recording）。",
+      "src": "https://en.wikipedia.org/wiki/Boys_Noize",
+      "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+      "from": "new"
+     },
+     {
+      "f": "他是 Lady Gaga 與 Ariana Grande〈Rain on Me〉的共同創作者之一。",
+      "src": "https://en.wikipedia.org/wiki/Boys_Noize",
+      "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+      "from": "new"
+     },
+     {
+      "f": "他的合作與混音對象橫跨 Skrillex、Nine Inch Nails 等人，作品從夜店 techno 延伸到流行與搖滾圈。",
+      "src": "https://en.wikipedia.org/wiki/Boys_Noize",
+      "src2": "https://ra.co/dj/boysnoize/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2005 年創辦 Boysnoize Records。",
+    "src": "https://ra.co/dj/boysnoize/biography",
+    "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+    "from": "new"
+   },
+   {
+    "f": "以〈Midnight Hour〉入圍葛萊美最佳舞曲錄音。",
+    "src": "https://en.wikipedia.org/wiki/Boys_Noize",
+    "src2": "https://de.wikipedia.org/wiki/Boys_Noize",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空，三格從零查。搜尋 5 次：en 維基、WebSearch×2、RA 藝人介紹、de 維基。失敗請求 1 次（AllMusic 403）。\n未收：（1）德國－伊拉克血統：en 維基單源，de 維基未提。（2）15 歲開始當 DJ、21 歲搬到柏林：RA 與搜尋摘要有 15 歲；搬柏林年份 de 維基寫 2003，搜尋摘要寫 21 歲，僅作輔助未入 f。（3）受 Daft Punk 影響：只見搜尋摘要。（4）Rolling Stone 的「統治世界的 DJ」名單、Beatport 最佳電子藝人：雜誌／商業榜單，依規則不收。（5）2ManyDJs／Soulwax 稱他是「唯一能對三萬人放地下 techno 的 DJ」：RA 引述單源。（6）Billboard 稱他是舞曲界傳奇：de 維基單源。（7）Dog Blood 首支單曲 2012 年 8 月、專輯《Turn Off the Lights》2019：de 維基單源。（8）Octave Minds（與 Chilly Gonzales）、與 Virgil Abloh 的計畫、Oliver Stone《Snowden》配樂：RA 單源。（9）2025 年 Nine Inch Noize 合作：en 維基單源。\n葛萊美：〈Midnight Hour〉入圍者署名為 Skrillex、Boys Noize、Ty Dolla Sign 三方，是入圍而非得獎；屆次 en 維基寫 2019、搜尋摘要寫第 62 屆（2020 年典禮、2019 年入圍公告），為免年份衝突 f 不帶屆次。〈Rain on Me〉的葛萊美屬於演唱者 Lady Gaga 與 Ariana Grande，不是他；f 只寫他是共同創作者，寫作層不得寫成他得獎。\n兩源 en／de 維基為同站不同語言條目，非獨立；RA 藝人介紹是活動方／平台的自介性質。sound 格偏薄，寫作層宜以廠牌創辦與 Dog Blood 為主。\n同名混卡檢查：poolAlbums 三張（2007《Oi Oi Oi》、2009《Power》、2016《Mayday》）皆為 Alex Ridha，無混卡。",
+  "pubIssues": []
  }
 ]

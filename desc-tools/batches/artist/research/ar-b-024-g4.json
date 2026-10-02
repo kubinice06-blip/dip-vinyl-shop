@@ -553,5 +553,197 @@
   "failedFetches": 0,
   "status": "thin",
   "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Seefeel、英文維基《Quique》、WebSearch（Warp 與影響）、Rock and Roll Globe 長文、Igloo 的《Sol.Hz》評介、WebSearch（後輩影響）、英文維基 Maria Somerville（核對 Igloo 的說法，維基頁完全沒提 Seefeel）、Yu Su 的 Bandcamp 頁；無失敗請求。poolAlbums 四張（Quique、Succour、(Ch-Vox)、Sol.Hz）皆為這個倫敦樂團，無同名混卡。legacy 查不到兩源：（單源）Igloo 稱 Maria Somerville 與 Yu Su 等後輩點名受 Seefeel 影響（Maria Somerville 維基頁不提 Seefeel、只列 My Bloody Valentine 等影響來源，未核實；Yu Su Bandcamp 頁只證實她 2026 年專輯《Foundry》的〈One Place After Another〉有 Sarah Peacock 與 Mark Clifford 參與，沒有寫影響）；（單源）Warp 創辦人 Steve Beckett 說 Seefeel 是『第一支簽進 Warp 的有吉他的樂團』，英文維基引用、Igloo 與 AllMusic 搜尋摘要也寫『the label's first guitar-wielding act』，但屬『第一』類宣稱、來源多半轉述同一句、拿不準有無反例，不放 facts；（單源）英文維基稱 John Peel 在 BBC Radio 1 播放他們的 demo 後 Too Pure 簽約，Quique 條目只寫 1992 年底簽約、1993 年 7 月錄音；（單源）RRG 與 Igloo 兩篇樂評稱它是『1990 年代最具前瞻性的樂團之一』『走在時代前面』，屬樂評形容詞、非共識，不收；（單源）RRG 稱他們受 Kraftwerk、My Bloody Valentine、Cocteau Twins 影響、深受 rave 文化啟發，《Pure, Impure》收錄 Aphex Twin 的混音；（單源）Quique 維基條目引 Pitchfork 8.4 分、Pitchfork『50 張最佳 shoegaze』第 13 名、Paste『50 張最佳 post-rock』第 8 名（雜誌榜單名次不收）；（單源）Quique 維基條目稱《Melody Maker》1993 年度專輯名單（榜單名次不收）。非獨立：Quique 條目與樂團條目同為英文維基。"
+ },
+ {
+  "key": "selena gomez",
+  "name": "Selena Gomez",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Selena Gomez 1992 年 7 月 22 日生於美國德州的 Grand Prairie，名字取自 Tejano 歌手 Selena Quintanilla。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     },
+     {
+      "f": "她 2002 年從 PBS 的《Barney & Friends》開始演戲，2007 至 2012 年在迪士尼頻道的《Wizards of Waverly Place》演 Alex Russo 而走紅。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     },
+     {
+      "f": "她主唱 Selena Gomez & the Scene，樂團發行過三張專輯。",
+      "src": "https://www.britannica.com/biography/Selena-Gomez",
+      "src2": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2013 年的《Stars Dance》是她的個人首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     },
+     {
+      "f": "2015 年《Revival》以 dance-pop 與 electropop 為主，帶 R&B 氣息，評論把它看成她轉向成熟的一張。",
+      "src": "https://en.wikipedia.org/wiki/Revival_(Selena_Gomez_album)",
+      "src2": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "from": "new"
+     },
+     {
+      "f": "2020 年的《Rare》是《Revival》之後隔了約五年的專輯，期間她公開談過狼瘡診斷與腎臟移植。",
+      "src": "https://en.wikipedia.org/wiki/Rare_(Selena_Gomez_album)",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Lose You to Love Me〉是《Rare》的先行單曲，2019 年 10 月 23 日發行，成為她第一首 Billboard Hot 100 冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Lose_You_to_Love_Me",
+      "src2": "https://www.wionews.com/entertainment/selena-gomez-gets-her-first-no-1-on-billboard-hot-100-with-lose-you-to-love-me-259984",
+      "from": "new"
+     },
+     {
+      "f": "她是聯合國兒童基金會（UNICEF）的親善大使，並長期倡議心理健康。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2020 年她創辦美妝品牌 Rare Beauty。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2019 年〈Lose You to Love Me〉成為她第一首 Billboard Hot 100 冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Lose_You_to_Love_Me",
+    "src2": "https://www.wionews.com/entertainment/selena-gomez-gets-her-first-no-1-on-billboard-hot-100-with-lose-you-to-love-me-259984",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Britannica 寫《Emilia Pérez》『贏得坎城金棕櫚獎』，英文維基寫她 2024 年與同片女演員群共同獲坎城最佳女演員獎；兩者不一致，Britannica 該句與事實不符（該片獲的是評審團獎），facts 不收坎城任何一項，也不寫金棕櫚。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Selena Gomez、Britannica、英文維基《Revival》、英文維基〈Lose You to Love Me〉、WebSearch（Billboard 第一名）、wionews 報導、英文維基《Rare》、WebSearch（Time 100 與公益）；失敗 1 次（Billboard 網址 307 轉址到 tollbit，未取得，未計入）。身分：poolAlbums 四張（Stars Dance、Revival、Rare、I Said I Love You First）皆為美國流行歌手 Selena Gomez，與 Selena Quintanilla 無關，無同名混卡。本位『名字取自 Selena Quintanilla』只是取名由來，不可寫成兩人混為一談。單源未收：（單源）英文維基《Revival》條目稱 2014 年自 Hollywood Records 轉到 Interscope、該專輯登上 Billboard 200 冠軍、靈感來自 Christina Aguilera 的《Stripped》並共同寫了 16 首中的 12 首；（單源）英文維基《Rare》條目稱該專輯登上 Billboard 200 冠軍、『是 2020 年代第一張登頂的專輯』（屬『第一』類，拿不準，不收）、主題為自愛與賦權、客串有 Kid Cudi 與 6lack；（單源）英文維基稱 2020 年入選 Time 100（搜尋摘要同說，未開頁）、Rare Impact Fund 目標十年募 1 億美元（搜尋摘要）；（單源）英文維基稱 2024 年與《Emilia Pérez》同片女演員共同獲坎城最佳女演員獎、Only Murders in the Building 艾美提名；（單源）Britannica 稱樂團 2012 年解散、2020 年公開雙極性情感疾患、2022 紀錄片《Selena Gomez: My Mind and Me》。〈Lose You to Love Me〉獎項（2020 iHeartRadio 最佳歌詞入圍、2021 ASCAP 流行音樂獎得獎）只見英文維基單源，未收。銷量、認證、串流、Instagram 追蹤數一律不寫（在世者規則）；Rolling Stone、Vulture 等榜單名次不收。"
+ },
+ {
+  "key": "shackleton",
+  "name": "Shackleton",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sam Shackleton 出生於英格蘭蘭開夏。",
+      "src": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "src2": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "from": "new"
+     },
+     {
+      "f": "他不是從舞曲文化起家，青少年時期先玩龐克樂團，2000 年代初才轉向電子製作。",
+      "src": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "src2": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "from": "new"
+     },
+     {
+      "f": "他透過倫敦 dubstep 夜店 FWD>> 與 Appleblim（Laurie Osborne）等人接觸，認識了 grime 與 dubstep。",
+      "src": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "src2": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "from": "new"
+     },
+     {
+      "f": "2005 年他與 Appleblim 共同創辦 Skull Disco 廠牌，2008 年收攤，前後發行了十張黑膠。",
+      "src": "https://en.wikipedia.org/wiki/Skull_Disco",
+      "src2": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "Skull Disco 結束後他搬到柏林，後來另創 Woe to the Septic Heart! 廠牌。",
+      "src": "https://ra.co/news/10965",
+      "src2": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂以綿密的打擊樂與深沉的低頻為核心；Skull Disco 的出版品常見非洲打擊樂、民族人聲取樣與厚重的次低音。",
+      "src": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "src2": "https://en.wikipedia.org/wiki/Skull_Disco",
+      "from": "new"
+     },
+     {
+      "f": "他的作品常被形容帶有濃重的陰鬱氛圍，介於 dubstep、garage 與 techno 之間。",
+      "src": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "src2": "https://www.andrewliles.com/10-questions/sam-shackleton/",
+      "from": "new"
+     },
+     {
+      "f": "2009 年的《Three EPs》由 Perlon 發行，原本是以三組 EP 的形式構想。",
+      "src": "https://ra.co/news/10965",
+      "src2": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Skull Disco 被樂評視為把 dubstep 帶向更抽象、更有機方向的重要廠牌，The Quietus 稱它是新一代英國廠牌中影響力很大的一個。",
+      "src": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "src2": "https://en.wikipedia.org/wiki/Skull_Disco",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2005 年與 Appleblim 創辦 Skull Disco 廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Skull_Disco",
+    "src2": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基與搜尋摘要稱《Three EPs》是他的首張專輯；RA 訪談中 Shackleton 自己說『我不把它看成專輯』，刻意以三張 EP 的形式發行；facts 不寫『首張專輯』。",
+   "英文維基 Skull Disco 條目寫廠牌以布里斯托為據點，同條目又寫 Shackleton 在倫敦辦 Skull Disco 夜晚，地點兩說並存；facts 不寫地點。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Shackleton (musician)、RA 藝人頁（內容極少）、WebSearch（生平）、The Quietus 專訪、RA 新聞《Three EPs》訪談、英文維基 Skull Disco、WebSearch（影響與 Honest Jon's）、Andrew Liles 十問；失敗 1 次（英文維基《Music for the Quiet Hour》404，未計入）。poolAlbums 四張（Three EPs、Music for the Quiet Hour、The Drawbar Organ EPs 合輯、Primal Forms）皆為英國製作人 Sam Shackleton；注意 Simon Shackleton（Elite Force）是另一人，一條都沒收，無同名混卡。legacy 僅一條兩源且為媒體評價（The Quietus 與維基引 The Wire 的 Derek Walmsley），性質接近單一樂評，請寫作層保守，不寫成共識。單源未收：（單源）英文維基稱 Shackleton 2008 年搬到柏林、2010 年成立 Woe to the Septic Heart!、與 Pinch、Ernesto Tomasini、Vengeance Tenfold 合作；（單源）英文維基引他說『我沒有刻意引用非洲或中東音樂，只是用我喜歡的聲音』；（單源）Quietus 引他說『我把它完全看成俱樂部音樂，不太喜歡 electronica 這種說法』『我不是天生會做音樂的人』；（單源）Andrew Liles 十問裡他說對自己影響最大的唱片『大概是 Godflesh 的《Streetcleaner》』；（單源）RA 新聞稱《Three EPs》2009 年 10 月 12 日發行、九首曲子；（單源）Skull Disco 維基稱廠牌名取自一本談喀麥隆喪葬儀式的書（來自 Shackleton 條目，Skull Disco 條目未再核）、Derek Walmsley 稱該廠牌顯示 dubstep『終於進化到不受僵硬公式束縛、走向新的有機成熟』；（單源）搜尋摘要稱 2011 年 Pinch & Shackleton 專輯由 Honest Jon's 發行（未開頁）。非獨立：英文維基 Shackleton 條目與 Skull Disco 條目同站。Grokipedia 出現在搜尋結果，不當來源。"
  }
 ]
