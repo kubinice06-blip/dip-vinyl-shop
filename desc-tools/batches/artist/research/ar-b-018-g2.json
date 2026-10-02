@@ -553,7 +553,7 @@
   "name": "Dando Shaft",
   "slots": {
    "origin": {
-    "status": "bank",
+    "status": "gap",
     "facts": [
      {
       "f": "Dando Shaft 1968 年成軍於英格蘭 Coventry，原始是五人編制：吉他兼主唱 Kevin Dempsey 與 Dave Cooper、多樂器手 Martin Jenkins、貝斯手 Roger Bullen、塔布拉與打擊的 Ted Kay。",
@@ -616,7 +616,7 @@
     ]
    },
    "era": {
-    "status": "bank",
+    "status": "gap",
     "facts": [
      {
       "f": "1970 年首張《An Evening With Dando Shaft》由 Young Blood Records 發行；1971 年同名專輯改由 RCA 旗下的 Neon 發行。",
@@ -769,5 +769,380 @@
   "status": "thin",
   "pubIssues": [],
   "notes": "Darren Korb 是電玩配樂作曲家兼音訊總監，三張卡都是遊戲原聲帶，非傳統樂手。事實庫有三份研究稿與三張上線簡介，我只取能補第二源的。補查 8 次：英文維基 Darren Korb、WebSearch（訪談）、indiegamewebsite 訪談、Spin 的 Hades 訪談、維基 Bastion、WebSearch（Spike VGA）、Original Sound Version 的 Bastion 得獎短文、維基 Hades；維基 2011 Spike Video Game Awards 頁面 404 一次不計入。非獨立：origin 第二條、sound 第一條、legacy 第二與第三條的兩源都是維基不同條目；legacy 第一條的 Original Sound Version 為短文、列出同場競爭的 Arkham City、Deus Ex、Portal 2 為其轉述。第二源未開頁：搜尋摘要中的 Supergiant 官方部落格『Bastion Wins Big at the Spike VGAs』說 Bastion 另獲 Best Downloadable Game（遊戲獎，非 Korb 個人，不收）。單源未收：1983 年 11 月 5 日生於 San Jose、五歲起演音樂劇、Bellarmine College Preparatory 與 Logan Cunningham、Ashley Barrett 的童年友誼（維基單源，生年高風險）；《Bastion》是他配樂的第一款電玩（維基 Bastion 條目單源，出道作類，故不收，上線簡介三處皆寫此事，建議本機視為單源）；《Bastion》全套錄在紐約公寓衣櫥、三千多句旁白由 Logan Cunningham 配、聲音錄在同處（Bastion 維基單源；搜尋摘要另見他說受限於公寓錄音、無法錄真鼓，未開頁）；Pyre 2017 的『吟遊樂手團』概念、他的主要樂器（吉他為主，另有貝斯、鼓、烏克麗麗、班鳩、曼陀林與改裝合成器）、他自列的影響名單（Weezer、They Might Be Giants、Radiohead、Björk、Led Zeppelin 等；indiegamewebsite 另寫 They Might Be Giants 是他最愛的樂團、Bastion 靈感為『Cormac McCarthy 若做奇幻遊戲』，皆單源）；Game Audio Network Guild 2012 年對 Bastion 的獎與他的 Rookie of the Year（Bastion 維基單源）；Transistor 2014 至 2015 年的 GANG 獎與 D.I.C.E./TGA 入圍、Hades 的 BAFTA 與 D.I.C.E. 提名與 2021 年 NAVGTR 獎（Korb 維基單源，且屬遊戲獎項而非個人）；Hades II 的 D.I.C.E. 獎（2026，維基單源，遊戲獎）；Kotaku 樂評引句（樂評單一媒體，不收）；《Bastion》OST 銷量（不收）。legacy 偏弱：只有獎項，沒有找到後輩點名或有出處的共識評價，因此整體標 thin。同名檢查：poolAlbums 三張都是 Supergiant Games 的遊戲原聲帶，無同名混卡。三張上線簡介抽查（acoustic frontier trip hop、old-world electronic post-rock、Mediterranean prog rock Halloween、Abbey Road）與查到內容一致；Austin Wintory 管弦編曲、Ashley Barrett 的曲目分配、Transistor 暫停濾波等細節未查。"
+ },
+ {
+  "key": "davy graham",
+  "name": "Davy Graham",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Davy Graham（維基與唱片常拼成 Davey）1940 年 11 月 26 日生於英格蘭 Leicestershire，在倫敦 Notting Hill 長大。",
+      "src": "https://en.wikipedia.org/wiki/Davey_Graham",
+      "src2": "https://www.pureeffectmusic.com/post/acoustic-guitar-gods-davey-graham-26-november-1940-15-december-2008",
+      "from": "new"
+     },
+     {
+      "f": "父親 Hamish 是來自蘇格蘭的教師（蓋爾語），母親 Winifred 來自圭亞那，混合的家世讓他從小接觸不同文化。",
+      "src": "https://en.wikipedia.org/wiki/Davey_Graham",
+      "src2": "https://www.pureeffectmusic.com/post/acoustic-guitar-gods-davey-graham-26-november-1940-15-december-2008",
+      "from": "new"
+     },
+     {
+      "f": "他年輕時到北非（摩洛哥）一帶旅行，接觸當地的音樂。",
+      "src": "https://www.pureeffectmusic.com/post/acoustic-guitar-gods-davey-graham-26-november-1940-15-december-2008",
+      "src2": "https://en.wikipedia.org/wiki/Davey_Graham",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把民謠、藍調、爵士與中東音樂揉進原音指彈吉他。",
+      "src": "https://en.wikipedia.org/wiki/Davey_Graham",
+      "src2": "https://www.pureeffectmusic.com/post/acoustic-guitar-gods-davey-graham-26-november-1940-15-december-2008",
+      "from": "new"
+     },
+     {
+      "f": "他在 1960 年代初把 DADGAD 調弦推廣開來；據說那是他在摩洛哥為了彈出烏德琴（oud）的音色而摸索出來的，如今這種調弦廣泛用於民謠與世界音樂。",
+      "src": "https://en.wikipedia.org/wiki/Davey_Graham",
+      "src2": "https://www.yahoo.com/entertainment/music/articles/davy-grahams-1961-anji-influenced-023125031.html",
+      "from": "new"
+     },
+     {
+      "f": "他最有名的作品是指彈曲〈Anji〉（Angi），成為許多原音吉他手的必練曲。",
+      "src": "https://en.wikipedia.org/wiki/Davey_Graham",
+      "src2": "https://www.musicradar.com/news/guitars/davy-graham-dies-188116",
+      "from": "new"
+     },
+     {
+      "f": "《Folk, Blues and Beyond》1965 年 1 月由 Decca 發行，製作人 Ray Horricks，用爵士和聲進行把傳統聲響改寫，也用到 DADGAD 等非標準調弦。",
+      "src": "https://en.wikipedia.org/wiki/Folk,_Blues_and_Beyond",
+      "from": "new",
+      "src2": "https://en.wikipedia.org/wiki/Davey_Graham"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bert Jansch 與 Jimmy Page 等人都受他影響。",
+      "src": "https://www.musicradar.com/news/guitars/davy-graham-dies-188116",
+      "src2": "https://www.yahoo.com/entertainment/music/articles/davy-grahams-1961-anji-influenced-023125031.html",
+      "from": "new"
+     },
+     {
+      "f": "Paul Simon 在 1966 年的《Sounds of Silence》錄了〈Anji〉，Bert Jansch 也在 1965 年翻奏這首，讓它從英國民謠圈傳開。",
+      "src": "https://www.yahoo.com/entertainment/music/articles/davy-grahams-1961-anji-influenced-023125031.html",
+      "src2": "https://www.pureeffectmusic.com/post/acoustic-guitar-gods-davey-graham-26-november-1940-15-december-2008",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "海洛因成癮讓他的演出與事業逐漸沉寂。",
+      "src": "https://en.wikipedia.org/wiki/Davey_Graham",
+      "src2": "https://www.pureeffectmusic.com/post/acoustic-guitar-gods-davey-graham-26-november-1940-15-december-2008",
+      "from": "new"
+     },
+     {
+      "f": "他 2008 年 12 月在倫敦過世，享年 68 歲。",
+      "src": "https://en.wikipedia.org/wiki/Davey_Graham",
+      "src2": "https://www.pureeffectmusic.com/post/acoustic-guitar-gods-davey-graham-26-november-1940-15-december-2008",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1960 年代初推廣 DADGAD 調弦。",
+    "src": "https://en.wikipedia.org/wiki/Davey_Graham",
+    "src2": "https://www.musicradar.com/news/guitars/davy-graham-dies-188116",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "逝世日期：維基與 pureeffectmusic 寫 2008 年 12 月 15 日，musicradar 寫 12 月 18 日；facts 只寫『2008 年 12 月』。",
+   "〈Anji〉創作年：維基寫 19 歲時所寫（約 1959 至 1960 年）、首次收於 1962 年 4 月的 EP《3/4 AD》，Yahoo 文章寫 1961 年；facts 不寫創作年份。",
+   "出生地：維基寫 Market Bosworth（Leicestershire），pureeffectmusic 寫 Leicester；facts 只寫 Leicestershire。"
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "拼法：維基條目名為 Davey Graham，卡池與上線簡介用 Davy Graham（MB 作 Davey Graham），為同一人。事實庫 research 為空、僅有 2 張上線簡介（無《Folk, Blues & Beyond》），從零查。補查 8 次：英文維基 Davey Graham、WebSearch（DADGAD 與影響）、維基《Folk, Blues and Beyond》、WebSearch（訃聞）、musicradar 訃聞、pureeffectmusic 專文、Yahoo 轉載的〈Anji〉文章、維基〈Angi〉（開錯頁：開到的是同名的 Angi 網站條目，已棄用，但仍算 1 次）；失敗請求 3 次（Guitar World 只回會員頁無內文、Parade 403、Amoeba 403），未超過 4 次上限。非獨立：legacy 第一條、第二條各有一源互相轉述；musicradar 的 Simon 與 Jansch 引言是訃聞轉述。origin 第一條兩源對『出生地』描述不同（Market Bosworth／Leicester），故只寫郡名。單源未收：Wizz Jones 稱他是啟發整代歐洲吉他手的『guru』（Yahoo 單源）、Martin Carthy 說他『extraordinary』（pureeffectmusic 單源）；Bert Jansch 稱他『my absolute hero, always will be』（musicradar 單源）；在歐洲與北非各地街頭賣藝、學阿拉伯語與土耳其語（pureeffectmusic 單源）；12 歲學古典吉他（維基；pureeffectmusic 寫 16 歲才開始瘋狂練琴，兩說不一致，不收）；受 Steve Benbow 影響（維基單源）；1962 年 4 月首張 EP《3/4 AD》收〈Anji〉（維基單源）；〈Angi〉在原版《Folk, Blues and Beyond》沒有、2005 年重發版才作為 bonus（FBB 維基單源）；1964 年與 Shirley Collins 合作《Folk Roots, New Routes》（維基單源）；Jimmy Page 的〈White Summer〉以 Graham 編的〈She Moved Through the Fair〉為本（維基單源，搜尋摘要同出維基）；Paul Simon 稱他『probably England's greatest guitarist』、Jimmy Page 在〈Kashmir〉用 DADGAD（musicradar 單源，Page 用 DADGAD 一說為訃聞轉述，不收）；Bert Jansch 形容他『courageous and controversial』、Ray Davies 也點名他（pureeffectmusic 單源）；Robert Plant 近年點名他為最偉大吉他手之一（Yahoo 單源）；他的〈Somewhere They Can't Find Me〉套用〈Anji〉開場（Yahoo 單源）；2005 年 BBC Radio 紀錄片《Whatever Happened to Davy Graham?》、2006 年 BBC Four《Folk Britannia》、2016 年 11 月出生地藍牌（維基單源）；與 Holly Gwinn 結婚、因大麻定罪簽證受阻無法赴美（維基單源，且屬個人私事）；教吉他並與 Mind 等心理健康慈善機構合作（維基單源）；《Folk, Blues and Beyond》被評為『最突破且最一致的作品』『20 世紀的決定性唱片之一』（Richie Unterberger／AllMusic 與維基轉述，單一樂評人，不收）。legacy 的後輩引言都只有單源，未放 facts，只收『Jansch 與 Page 受他影響』與〈Anji〉被 Simon、Jansch 翻奏。poolAlbums（Folk, Blues & Beyond、Midnight Man、Large as Life and Twice as Natural）皆是這位英國吉他手，無同名混卡。兩張上線簡介（DADGAD、啟發 Jansch 與 Page）與查到內容一致，其餘曲目細節本層未查。"
+ },
+ {
+  "key": "dwight yoakam",
+  "name": "Dwight Yoakam",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dwight Yoakam 生於肯塔基州，在俄亥俄州 Columbus 長大；小時候聽 Johnny Cash 等人的唱片。",
+      "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+      "src2": "https://kentuckymusichalloffame.com/dwight-yoakam/",
+      "from": "new"
+     },
+     {
+      "f": "他先到 Nashville 闖蕩沒闖出名堂，他的 honky-tonk 路線與當時偏流行的鄉村製作格格不入，於是轉往加州。",
+      "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+      "src2": "https://www.pbssocal.org/shows/artbound/dwight-yoakam-on-his-early-cowpunk-years-in-los-angeles",
+      "from": "new"
+     },
+     {
+      "f": "在洛杉磯，他在 Madame Wong's、Al's Bar 這類龐克與 cowpunk 場地登台，與 Los Lobos、The Blasters 同台，吉他手兼製作人 Pete Anderson 成為他的長期搭檔。",
+      "src": "https://www.pbssocal.org/shows/artbound/dwight-yoakam-on-his-early-cowpunk-years-in-los-angeles",
+      "src2": "https://www.mixonline.com/recording/classic-tracks-dwight-yoakam-and-buck-owens-streets-bakersfield-366215",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂承接 Buck Owens、Merle Haggard、Wynn Stewart 一路的 honky-tonk 與 Bakersfield sound，再加進搖滾的力道。",
+      "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+      "src2": "https://www.mixonline.com/recording/classic-tracks-dwight-yoakam-and-buck-owens-streets-bakersfield-366215",
+      "from": "new"
+     },
+     {
+      "f": "1988 年他與 Buck Owens 合唱〈Streets of Bakersfield〉登上鄉村榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+      "src2": "https://www.mixonline.com/recording/classic-tracks-dwight-yoakam-and-buck-owens-streets-bakersfield-366215",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1988 年的〈Streets of Bakersfield〉讓當時已退隱的 Buck Owens 重回舞台。",
+      "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+      "src2": "https://www.mixonline.com/recording/classic-tracks-dwight-yoakam-and-buck-owens-streets-bakersfield-366215",
+      "from": "new"
+     },
+     {
+      "f": "他把 Bakersfield sound 與傳統 honky-tonk 帶回 1980 年代後期的主流鄉村；Kentucky Music Hall of Fame 稱他「幫助鄉村樂回到根源」。",
+      "src": "https://kentuckymusichalloffame.com/dwight-yoakam/",
+      "src2": "https://www.mixonline.com/recording/classic-tracks-dwight-yoakam-and-buck-owens-streets-bakersfield-366215",
+      "from": "new"
+     },
+     {
+      "f": "他的聽眾橫跨傳統鄉村歌迷與搖滾、cowpunk 圈。",
+      "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+      "src2": "https://kentuckymusichalloffame.com/dwight-yoakam/",
+      "from": "new"
+     },
+     {
+      "f": "他得過兩次葛萊美：〈Ain't That Lonely Yet〉的 Best Male Country Vocal Performance，與〈Same Old Train〉的 Best Country Collaboration with Vocals。",
+      "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+      "src2": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Dwight_Yoakam",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1984 年他與 Pete Anderson 先錄了一張六首歌的 EP，之後簽給 Warner 旗下的廠牌，1986 年《Guitars, Cadillacs, Etc., Etc.》以完整專輯發行。",
+      "src": "https://www.pbssocal.org/shows/artbound/dwight-yoakam-on-his-early-cowpunk-years-in-los-angeles",
+      "src2": "https://www.mixonline.com/recording/classic-tracks-dwight-yoakam-and-buck-owens-streets-bakersfield-366215",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1988 年與 Buck Owens 合唱〈Streets of Bakersfield〉，登上鄉村榜冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+    "src2": "https://www.mixonline.com/recording/classic-tracks-dwight-yoakam-and-buck-owens-streets-bakersfield-366215",
+    "from": "new"
+   },
+   {
+    "f": "兩度獲葛萊美：〈Ain't That Lonely Yet〉獲 Best Male Country Vocal Performance，〈Same Old Train〉獲 Best Country Collaboration with Vocals。",
+    "src": "https://en.wikipedia.org/wiki/Dwight_Yoakam",
+    "src2": "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Dwight_Yoakam",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "移居洛杉磯的年份：維基寫約 1982 年，PBS SoCal 寫 1977 年；facts 不寫年份。上線簡介《Guitars, Cadillacs, Etc., Etc.》寫『1980 年代初』，列入 pubIssues。",
+   "葛萊美年份：主條目寫 1993 與 1998（得獎作品年），獎項列表寫 1994 與 1999（典禮年）；facts 不寫年份。",
+   "簽約廠牌：維基寫 Reprise，PBS SoCal 與 Mix 寫 Warner Bros.（Reprise 為 Warner 旗下）；facts 寫『Warner 旗下的廠牌』。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Guitars, Cadillacs, Etc., Etc.",
+    "claim": "1980 年代初…從 Nashville 移居洛杉磯",
+    "problem": "年份來源不一致：PBS SoCal 寫 1977 年離開 Ohio State 與 Nashville 後來到洛杉磯，維基寫約 1982 年。建議不寫年份，或改成『離開 Nashville 後移居洛杉磯』。另『1984 年先在獨立廠牌發行同名六曲 EP』本層只查到 EP 在 1984 年錄成、之後簽 Warner 旗下廠牌，未查到『獨立廠牌發行』一節，請本機覆核。",
+    "src": "https://www.pbssocal.org/shows/artbound/dwight-yoakam-on-his-early-cowpunk-years-in-los-angeles"
+   }
+  ],
+  "notes": "事實庫只有一張上線簡介，從零查。補查 8 次：英文維基 Dwight Yoakam、WebSearch（Bakersfield 與龐克場地）、PBS SoCal Artbound、Mix Online『Classic Tracks』、WebSearch（名人堂與影響）、Kentucky Music Hall of Fame 頁、Saving Country Music 的 Nashville Songwriters Hall of Fame 報導、維基獎項列表；無失敗請求。非獨立：legacy 第一條與 origin 第一條各有一源是維基；legacy 最後一條兩源皆維基（主條目與獎項列表）；Kentucky Music Hall of Fame 的『helped return country music to its roots』是該名人堂自己的說明，寫作層請寫『Kentucky Music Hall of Fame 稱…』。Madame Wong's 在 Chinatown、Al's Bar 在市中心（搜尋摘要與 PBS 皆有，PBS 只寫 Madame Wong's 在 Chinatown）。單源未收：在俄亥俄州立大學只念了很短時間、Owens 簽回 Capitol（維基單源）；Pete Anderson 為〈Streets of Bakersfield〉編出帶 Tex-Mex 波卡味的編曲、Owens 之後巡演到過世（Mix 單源）；1956 年 10 月 23 日生於 Pikeville（維基單源，生年高風險）；六歲開始彈吉他、母親的唱片有 Hank Williams、Johnny Cash、Buck Owens（KMHOF 單源）；Pete Anderson 經 Bob Bernstein 引介（Mix 單源）、Pete Anderson 在酒吧認出他與 Merle Haggard 的親近（維基單源）；EP 預算約 5000 美元（Mix 單源）；Kentucky Music Hall of Fame 2008 年入選、Nashville Songwriters Hall of Fame 2019 年 10 月 14 日入選（各只有名人堂頁與 Saving Country Music 一個來源，另有搜尋摘要轉述維基，未開頁）；Hollywood Walk of Fame 2003 年（搜尋摘要）；Johnny Cash 稱他是『favorite modern country singer』（Saving Country Music 單源）；2013 年 Americana Music Association Artist of the Year（搜尋摘要，未開頁）；《Tomorrow's Sounds Today》（2000）有 Buck Owens 在三首合作、兩人 1999 年演唱會重逢，《Swimmin' Pools, Movie Stars...》（2016）為 Sugar Hill 發行的藍草風專輯、由 Alison Krauss & Union Station 成員伴奏、翻唱 Prince〈Purple Rain〉（皆維基單源）；『middle-aged Stonewall Jackson fans and young punk rockers』（維基單源，已併入 legacy 第三條的概括）；電影演出、1993 年 This Time 的白金認證（不收）；Whiskey Riff 稱他是 neotraditional 回歸的先驅（搜尋摘要，單一媒體，不收）。獎項主詞：兩項葛萊美都是 Yoakam 本人（Same Old Train 為合作曲，列表寫 Best Country Collaboration with Vocals）。poolAlbums（Swimmin' Pools, Movie Stars、Tomorrow's Sounds Today、Guitars, Cadillacs, Etc., Etc.）皆是這位肯塔基出身的 Yoakam，無同名混卡。"
+ },
+ {
+  "key": "elizabeth cotten",
+  "name": "Elizabeth Cotten",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Elizabeth Cotten 本姓 Nevills，1893 年生於北卡羅萊納州 Chapel Hill 附近（今 Carrboro），家境貧寒，從小就得做家務。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://www.dncr.nc.gov/blog/2023/12/20/elizabeth-cotten-1893-1987-g-129",
+      "from": "new"
+     },
+     {
+      "f": "她十二歲在 Chapel Hill 當住家幫傭，月薪一美元，母親替她存錢，買了她的第一把吉他；那是一把 Sears 的琴，售價 3.75 美元。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://www.rockhall.com/inductees/elizabeth-cotten",
+      "from": "new"
+     },
+     {
+      "f": "她左手慣用，卻彈右手用的吉他、整把倒過來彈，全靠自學。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/elizabeth-cotten",
+      "from": "new"
+     },
+     {
+      "f": "結婚生女、加入教會之後，她放下吉他達數十年，靠幫傭與百貨公司的工作維生。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://www.dncr.nc.gov/blog/2023/12/20/elizabeth-cotten-1893-1987-g-129",
+      "from": "new"
+     },
+     {
+      "f": "後來她在一家百貨公司幫忙一個走失的孩子 Peggy Seeger 找媽媽，Peggy 的母親 Ruth Crawford Seeger 因此請她到家裡幫傭；她在 Seeger 家重新拿起吉他，被家人發現是難得的原生樂手。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/elizabeth-cotten",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她倒著彈吉他，低音線用手指彈、旋律用拇指彈，這種交替低音的手法後來被稱為「Cotten picking」。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/elizabeth-cotten",
+      "from": "new"
+     },
+     {
+      "f": "她的〈Freight Train〉是十來歲時寫的，靈感來自家鄉附近的火車。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://en.wikipedia.org/wiki/Freight_Train_(folk_song)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2022 年她身後入選搖滾名人堂，屬 Musical Influence 類；名人堂稱她「溫暖而親密」的錄音與演出啟發了好幾個世代。",
+      "src": "https://www.rockhall.com/inductees/elizabeth-cotten",
+      "src2": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "from": "new"
+     },
+     {
+      "f": "〈Freight Train〉被 Joan Baez、Bob Dylan、Grateful Dead、Peter, Paul and Mary 等人翻唱。",
+      "src": "https://www.rockhall.com/inductees/elizabeth-cotten",
+      "src2": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "from": "new"
+     },
+     {
+      "f": "1956 年 Chas McDevitt 與 Nancy Whiskey 的英國版〈Freight Train〉成為暢銷曲，影響了當時 skiffle 熱潮。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://en.wikipedia.org/wiki/Freight_Train_(folk_song)",
+      "from": "new"
+     },
+     {
+      "f": "1984 年她獲美國國家藝術基金會頒發 National Heritage Fellowship，並以現場專輯《Elizabeth Cotten Live!》獲葛萊美 Best Ethnic or Traditional Folk Recording。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/elizabeth-cotten",
+      "from": "new"
+     },
+     {
+      "f": "〈Freight Train〉的著作權曾被英國的 skiffle 樂手冒名掛走，後來在 Seeger 家族協助下才還給她。",
+      "src": "https://en.wikipedia.org/wiki/Freight_Train_(folk_song)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/elizabeth-cotten",
+      "from": "new"
+     },
+     {
+      "f": "她 1958 年的首張專輯《Folksongs and Instrumentals with Guitar》2008 年被美國國會圖書館選入 National Recording Registry。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://en.wikipedia.org/wiki/Folksongs_and_Instrumentals_with_Guitar",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1950 年代後期 Mike Seeger 在華盛頓特區替她錄音，1958 年由 Folkways 發行《Folksongs and Instrumentals with Guitar》，那是她的首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://en.wikipedia.org/wiki/Folksongs_and_Instrumentals_with_Guitar",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代民謠復興期間，她走上舞台，1964 年在 Newport Folk Festival 演出。",
+      "src": "https://www.dncr.nc.gov/blog/2023/12/20/elizabeth-cotten-1893-1987-g-129",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/elizabeth-cotten",
+      "from": "new"
+     },
+     {
+      "f": "她 1987 年 6 月 29 日在紐約州 Syracuse 過世。",
+      "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/elizabeth-cotten",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1984 年獲 National Heritage Fellowship。",
+    "src": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+    "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/elizabeth-cotten",
+    "from": "new"
+   },
+   {
+    "f": "2022 年入選搖滾名人堂（Musical Influence 類）。",
+    "src": "https://www.rockhall.com/inductees/elizabeth-cotten",
+    "src2": "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "出生年與地：英文維基與北卡 DNCR 寫 1893 年（Carrboro／Chapel Hill 附近），encyclopedia.com 寫 c.1892 年 Chapel Hill；採 1893。逝世年齡：維基 94 歲、encyclopedia.com 95 歲；facts 只寫逝世日期與地點。",
+   "葛萊美年份與年齡：事實庫研究稿寫 1984 年（90 歲）、維基主條目寫 1985 年、DNCR 寫 1984 年（91 歲）、encyclopedia.com 寫 1985 年（93 歲）；facts 寫 1984 年的是 National Heritage（三源一致），葛萊美不寫年份與年齡。",
+   "買吉他年齡：維基與搖滾名人堂寫十二歲，encyclopedia.com 寫十一歲；採十二歲。九歲輟學（維基）與十一歲輟學（encyclopedia.com）不一致，不寫。",
+   "搖滾名人堂類別：維基寫 Early Influence，名人堂官網頁寫 Musical Influence（官方該獎現名）；採官網。",
+   "首張專輯與錄音地：專輯維基寫 1958 年發行、1957 至 1958 年在華盛頓特區錄音，不載『在她家中』；Cotten 維基寫 Mike Seeger 在她臥室以盤帶錄音。facts 寫『在華盛頓特區』，與上線簡介『在她家中』不衝突（她住在華盛頓）。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "事實庫已有 Cotten 維基資料（生卒日期、左撇子、Freight Train、葛萊美、National Heritage、搖滾名人堂、早年），補查是為補第二源與 legacy。補查 8 次：英文維基 Elizabeth Cotten、WebSearch（Seeger 與名人堂）、北卡 DNCR 歷史標誌頁、搖滾名人堂官網頁、WebSearch（National Recording Registry）、維基《Folksongs and Instrumentals with Guitar》、維基〈Freight Train〉、encyclopedia.com；失敗請求 2 次（folkways.si.edu 403、arts.gov 404）不計入。非獨立：origin 第一條、legacy 第三與第六條等的兩源都是維基不同條目（Cotten、Freight Train、專輯）；搖滾名人堂官網單源說明另見『名人堂官方（可具名單源）』：名人堂稱她的『warm and intimate recordings and live performances』『inspired generations of artists』『guitar prowess and musical inventiveness influenced countless other musicians』；Gary Clark Jr. 在名人堂短文說『You've got to realize that this is one person when you hear these records』（名人堂官網，可具名單源）。National Heritage 年份 1984 年三源一致；encyclopedia.com 該條的生年、年齡、輟學年齡都與其他源不同，只取定性內容與日期一致的部分。單源未收：維基稱 2023 年 Rolling Stone 把她排在 36 名（榜單不收）；NPR 稱 her influence has reverberated through the generations（維基轉述，單源）；DNCR 歷史標誌稱她是 1960 年代民謠復興的『key figure』、『taught the world』〈Freight Train〉與〈Shake Sugaree〉，1963 Philadelphia Folk Festival 演出（DNCR 單源）；家中五個孩子最小、Frank Cotten 1910 年 11 月 7 日結婚、女兒 Lillie、Seeger 家四個孩子與『Libba』小名（維基單源）；1947 年在百貨公司遇 Peggy（encyclopedia.com 單源，維基無年份，且與維基寫的 40 年／25 年停琴間隔不易對齊，故不寫年份）；1959 年 Swarthmore 首次公開演出、1972 年 Burl Ives Award、1978 Carnegie Hall、與 Taj Mahal 巡演（encyclopedia.com 單源）；Quarrymen 1957–1959 演唱〈Freight Train〉（維基單源）；Library of Congress 的 National Recording Registry 官網頁沒開到，2008 年入選由專輯維基與 Cotten 維基皆載，但同站、非獨立。獎項主詞：National Heritage Fellowship 與葛萊美、搖滾名人堂入選的主詞都是 Cotten 本人；葛萊美為專輯《Elizabeth Cotten Live!》。poolAlbums（Vol. 2: Shake Sugaree、Folksongs and Instrumentals with Guitar、Volume 3: When I'm Gone）皆是這位 Elizabeth Cotten，無同名混卡。三張上線簡介（Freight Train 少女時期、Cotten picking、National Recording Registry、Folkways FA 3537 等）與查到內容一致；Shake Sugaree 簡介的曾孫女 Brenda Joyce Evans 與 12 歲等細節本層未查。"
  }
 ]
