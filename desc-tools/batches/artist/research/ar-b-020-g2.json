@@ -1,110 +1,540 @@
 [
-{
-"key": "lucio battisti",
-"name": "Lucio Battisti",
-"slots": {
-"origin": { "status": "gap", "facts": [
-{ "f": "Lucio Battisti 1943 年 3 月 5 日生於義大利拉齊奧大區列蒂省的 Poggio Bustone，1950 年全家遷居羅馬；他是自學的吉他手。", "src": "https://en.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://italysegreta.com/lucio-battisti-a-tale-of-ligh/", "from": "new" },
-{ "f": "1960 年代中期，他經音樂出版人 Christine Leroux 引介，認識作詞人 Giulio Rapetti（藝名 Mogol）；Mogol 起初對他的嗓音存疑，後來被說服，並向 Ricordi 唱片力推讓他自己唱自己寫的歌。", "src": "https://it.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://en.wikipedia.org/wiki/Lucio_Battisti", "from": "new" },
-{ "f": "1969 年，Battisti 與 Mogol 等人共同創辦 Numero Uno，被視為義大利最早的獨立唱片廠牌之一，目的是保住創作自主權。", "src": "https://en.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://it.wikipedia.org/wiki/Lucio_Battisti", "from": "new" }
-] },
-"sound": { "status": "gap", "facts": [
-{ "f": "Battisti 把前衛搖滾、funk、迪斯可與電子流行的元素帶進義大利流行樂，一路從彩色流行歌走到實驗與電子。", "src": "https://en.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://it.wikipedia.org/wiki/Lucio_Battisti", "from": "new" },
-{ "f": "1974 年的《Anima latina》被視為他最有野心的一張：把拉丁（巴西）節奏與前衛搖滾、迷幻色彩混在一起。", "src": "https://it.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://thequietus.com/articles/28710-lucio-battisti-anima-latina-review", "from": "new" }
-] },
-"legacy": { "status": "gap", "facts": [
-{ "f": "David Bowie 公開稱 Battisti 是自己最喜歡的歌手之一，與 Lou Reed 並列。", "src": "https://thequietus.com/articles/28710-lucio-battisti-anima-latina-review", "src2": "https://en.wikipedia.org/wiki/Lucio_Battisti", "from": "new" },
-{ "f": "義大利維基稱他是義大利最重要的創作歌手之一，與 Mogol 的合作締造了義大利音樂與文化史的一個時代；Italy on This Day 稱他的歌是好幾代義大利人的生活配樂。", "src": "https://it.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://www.italyonthisday.com/2023/03/lucio-battisti-singer-songwriter.html", "from": "new" },
-{ "f": "1980 年代初起，他幾乎完全退出公眾視野、不再接受訪問；他的說法是藝術家只該透過作品與大眾溝通。", "src": "https://en.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://italysegreta.com/lucio-battisti-a-tale-of-ligh/", "from": "new" }
-] },
-"era": { "status": "gap", "facts": [
-{ "f": "1969 年與 Mogol 等人創辦獨立廠牌 Numero Uno。", "src": "https://en.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://it.wikipedia.org/wiki/Lucio_Battisti", "from": "new" },
-{ "f": "1998 年 9 月 9 日在米蘭過世，享年 55 歲。", "src": "https://en.wikipedia.org/wiki/Lucio_Battisti", "src2": "https://www.italyonthisday.com/2023/03/lucio-battisti-singer-songwriter.html", "from": "new" }
-] }
-},
-"milestones": [
-{ "f": "1969 年與 Mogol 等人共同創辦獨立廠牌 Numero Uno。", "src": "https://en.wikipedia.org/wiki/Lucio_Battisti", "from": "new" },
-{ "f": "1974 年發行《Anima latina》，把拉丁節奏與前衛搖滾混在一起。", "src": "https://it.wikipedia.org/wiki/Lucio_Battisti", "from": "new" }
-],
-"conflicts": [
-"義大利維基寫 1970 年夏天最後一輪巡演後不再現場演出、1972 年 4 月最後一次上義大利電視；Italy Segreta 寫最後一次電視出現是 1980 年的瑞士電視；英文維基寫 1982 年後幾乎完全退隱；Italy on This Day 寫 1974 年之後深居簡出。各源年份不一致，facts 只寫『1980 年代初起幾乎完全退出公眾視野』，不寫停止登台的年份。",
-"義大利維基寫錄音室專輯 20 張、英文維基與 Italy on This Day 寫 18 張；上線簡介《Anima latina》稱『第九張錄音室專輯』，序數取決於算法，本層不採任何總張數。"
-],
-"pubIssues": [],
-"searches": 6,
-"failedFetches": 1,
-"status": "full",
-"notes": "查證：英文維基、義大利文維基、WebSearch（Bowie 與 Molteno）、Italy Segreta、The Quietus、Italy on This Day，共 6 次，皆實際開頁讀到（WebSearch 除外）；Britannica 404 未取得（failedFetches 1）。事實庫 research 為空，三格全為新查。poolAlbums 四張（Una donna per amico、Emozioni、Il mio canto libero、Anima latina）都是義大利歌手 Lucio Battisti，無同名混卡。非獨立：origin 第二、第三條與 sound 第一條、legacy 第二條前半的兩源為英文維基與義大利文維基（同屬維基百科）；Italy Segreta、The Quietus、Italy on This Day 是否獨立於維基未逐一確認。單源放 notes：義大利維基稱寫曲方式是先曲後詞，後期與 Pasquale Panella 合作、詞趨向晦澀；義大利維基稱他的嗓音長期被批評不合傳統唱功標準、他回應歌曲重點在傳達情感；義大利維基稱 1973 年《Il mio canto libero》與《Il nostro caro angelo》同時佔據專輯榜第 1、2 名，壓過 Pink Floyd《The Dark Side of the Moon》；義大利維基稱 1970 年夏天最後一輪巡演後不再現場演出；英文維基把他的堅持與 J. D. Salinger 相比，並說有一顆小行星 9115 Battisti 以他命名；英文維基稱 Bowie 曾為其他歌手翻譯他的作品；Italy on This Day 稱 Bowie 的吉他手 Mick Ronson 也推崇他、18 張錄音室專輯中 13 張登上義大利榜首、葬禮在 Molteno 私下舉行；The Quietus 稱《Anima latina》錄音動用 EMS Synthi Hi-Fli 合成器、人聲刻意混得較低，並轉述 Luciano Pavarotti 說他的風格『像 Puccini』，實驗音樂人 Iosonouncane 把該專輯視為解構歌曲形式的重要創作；Italy Segreta 的『每個義大利人都有一段與 Battisti 歌曲有關的故事』。〈Music Is Lethal〉出自上線簡介，非本層查得。死因各源說法不一，依規則不收。上線簡介未發現錯誤。"
-},
-{
-"key": "miley cyrus",
-"name": "Miley Cyrus",
-"slots": {
-"origin": { "status": "gap", "facts": [
-{ "f": "Miley Cyrus 1992 年 11 月 23 日生於美國田納西州 Franklin，本名 Destiny Hope Cyrus，父親是鄉村歌手 Billy Ray Cyrus、母親是 Tish Cyrus。", "src": "https://en.wikipedia.org/wiki/Miley_Cyrus", "src2": "https://www.britannica.com/biography/Miley-Cyrus", "from": "new" },
-{ "f": "2006 年她主演 Disney Channel 影集《Hannah Montana》，演的是過著雙重生活的少女：一面是普通中學生，一面是華麗的流行歌星。", "src": "https://en.wikipedia.org/wiki/Miley_Cyrus", "src2": "https://www.britannica.com/biography/Miley-Cyrus", "from": "new" },
-{ "f": "《Hannah Montana》首播就創下收視紀錄，讓她成為青少年偶像。", "src": "https://en.wikipedia.org/wiki/Miley_Cyrus", "src2": "https://au.variety.com/2024/music/events/miley-cyrus-disney-legend-d23-16912", "from": "new" }
-] },
-"sound": { "status": "gap", "facts": [
-{ "f": "2013 年的《Bangerz》帶進嘻哈影響與更成人的詞意，形象也大幅轉向，與她早年的影集偶像形象拉開距離。", "src": "https://www.britannica.com/biography/Miley-Cyrus", "src2": "https://en.wikipedia.org/wiki/Miley_Cyrus", "from": "new" }
-] },
-"legacy": { "status": "gap", "facts": [
-{ "f": "2024 年 8 月她被封為 Disney Legend（音樂與電視類），時年 31 歲，是史上最年輕的 Disney Legend。", "src": "https://d23.com/walt-disney-legend/miley-cyrus/", "src2": "https://au.variety.com/2024/music/events/miley-cyrus-disney-legend-d23-16912", "from": "new" },
-{ "f": "第 66 屆葛萊美（2024 年頒發），她的〈Flowers〉拿下年度唱片與最佳流行獨唱表現兩項。", "src": "https://www.britannica.com/biography/Miley-Cyrus", "src2": "https://en.wikipedia.org/wiki/Miley_Cyrus", "from": "new" }
-] },
-"era": { "status": "gap", "facts": [
-{ "f": "2006 年《Hannah Montana》首播；2013 年《Bangerz》走嘻哈路線。", "src": "https://www.britannica.com/biography/Miley-Cyrus", "src2": "https://en.wikipedia.org/wiki/Miley_Cyrus", "from": "new" }
-] }
-},
-"milestones": [
-{ "f": "2006 年主演《Hannah Montana》，成為青少年偶像。", "src": "https://en.wikipedia.org/wiki/Miley_Cyrus", "from": "new" },
-{ "f": "2024 年以〈Flowers〉拿下第 66 屆葛萊美年度唱片與最佳流行獨唱表現。", "src": "https://www.britannica.com/biography/Miley-Cyrus", "from": "new" },
-{ "f": "2024 年成為史上最年輕的 Disney Legend。", "src": "https://d23.com/walt-disney-legend/miley-cyrus/", "from": "new" }
-],
-"conflicts": [
-"Britannica 寫『2023 年她的單曲 Flowers 讓她拿到首座葛萊美（年度唱片與最佳流行獨唱）』，2023 指單曲發行年、頒獎在 2024 年 2 月第 66 屆；搜尋結果（The Fader、Rolling Stone、Billboard、Hollywood Reporter 標題）一致寫 2024 Grammys。facts 採第 66 屆（2024 年頒發），不寫『首座』。",
-"Variety 寫《Hannah Montana》自 2005 年開始，D23 與英文維基寫 2006 年首播，facts 採 2006。"
-],
-"pubIssues": [],
-"searches": 5,
-"failedFetches": 2,
-"status": "thin",
-"notes": "查證：英文維基、Britannica、WebSearch（Grammy 與 Disney Legend）、D23 官方頁、Variety 澳洲站，共 5 次；Billboard 與 Rolling Stone 頁面重新導向到 tollbit 子網域未取得（failedFetches 2，未手動跟隨導向）。事實庫 research 與 published 都為空，三格全為新查。poolAlbums（Bangerz、Something Beautiful、Younger Now、Can't Be Tamed）是同一位美國歌手，無同名混卡。thin 的原因：legacy 只有 Disney Legend 與葛萊美兩項榮譽，查不到後輩點名受她影響的有出處說法，也沒有可具名引用的共識評價；英文維基只說她是『an influential figure in popular music』（單源）。『首座葛萊美』只有 Britannica 一源且年份寫法有歧義，不收。獎項主詞：年度唱片與最佳流行獨唱表現是〈Flowers〉這首歌的得獎，寫作層請以歌為主詞。單源放 notes：教母是 Dolly Parton；九歲在父親影集《Doc》演出、2003 年電影《Big Fish》（Britannica 單源）；2008 年首張個人專輯《Breakout》是轉向流行歌手的起點（Britannica 單源）；〈Wrecking Ball〉是她第一首登上 Billboard 單曲榜榜首的歌（Britannica 單源）；2017 年《Younger Now》走流行與鄉村、2020 年《Plastic Hearts》走搖滾與 glam rock 並與 Billy Idol、Joan Jett 合作（英文維基單源）；2014 年成立 Happy Hippie Foundation（Britannica 單源）；英文維基稱她被 Billboard 列入『21 世紀最偉大流行巨星』（單源，且屬雜誌榜單，不收）。Disney Legend 領獎時她說『我站在這裡，仍然為曾是 Hannah Montana 而驕傲』（Variety 單源）。Variety 與 D23 兩源皆實際開頁讀到，Variety 是 D23 活動報導、與 D23 官方頁性質不同但同談一事。在世者獎座與銷量總數依規則不寫。"
-},
-{
-"key": "mylène farmer",
-"name": "Mylène Farmer",
-"slots": {
-"origin": { "status": "gap", "facts": [
-{ "f": "Mylène Farmer 本名 Mylène Gautier，1961 年 9 月 12 日生於加拿大魁北克的 Pierrefonds（蒙特婁近郊），父母是法國人；她約 8 歲時全家回到巴黎近郊。", "src": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "src2": "https://en.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "from": "new" },
-{ "f": "她的藝名取自 1930 年代美國演員 Frances Farmer；首支單曲〈Maman a tort〉的靈感也來自以這位演員為本的電影《Frances》。", "src": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "src2": "https://www.mylene.net/mylene/biographie.php", "from": "new" },
-{ "f": "1984 年她在 Laurent Boutonnat 與 Jérôme Dahan 辦的試鏡中與兩人結識，此後 Boutonnat 作曲與製作、她寫詞，兩人的搭檔延續十多年。", "src": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "src2": "https://www.mylene.net/mylene/biographie.php", "from": "new" }
-] },
-"sound": { "status": "gap", "facts": [
-{ "f": "她的歌向來是她寫詞、Boutonnat 作曲；專輯《L'Autre...》十首歌的詞全由她寫、曲全由他作。", "src": "https://en.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "src2": "https://fr.wikipedia.org/wiki/L'Autre%E2%80%A6", "from": "new" },
-{ "f": "她的音樂錄影被當成短片來做，多數由 Boutonnat 執導（另有 Luc Besson 等人）；1986 年〈Libertine〉的 MV 長約 11 分鐘，由 Boutonnat 執導，法語維基稱它革新了法國的音樂錄影。", "src": "https://en.wikipedia.org/wiki/Libertine_(song)", "src2": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "from": "new" }
-] },
-"legacy": { "status": "gap", "facts": [
-{ "f": "1986 年的〈Libertine〉與它的 MV 讓她在法國一舉成名。", "src": "https://en.wikipedia.org/wiki/Libertine_(song)", "src2": "https://www.mylene.net/mylene/biographie.php", "from": "new" },
-{ "f": "她很少接受訪問，沒有官方歌迷俱樂部，也沒有公開的社群帳號；她的說法是想說的話都在歌裡。", "src": "https://en.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "src2": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "from": "new" },
-{ "f": "她寫下法國藝人單曲榜冠軍最多的紀錄。", "src": "https://en.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "src2": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer", "from": "new" }
-] },
-"era": { "status": "bank", "facts": [
-{ "f": "1993 年 Boutonnat 開拍《Giorgino》、由她擔綱主角，電影 1994 年 10 月上映後失利；她隨後到洛杉磯待了九個月，再做出 1995 年更偏搖滾的《Anamorphosée》。", "src": "https://fr.wikipedia.org/wiki/Anamorphos%C3%A9e", "src2": "https://www.mylene.net/mylene/biographie.php", "from": "bank" }
-] }
-},
-"milestones": [
-{ "f": "1986 年〈Libertine〉與它的 MV 讓她在法國成名。", "src": "https://en.wikipedia.org/wiki/Libertine_(song)", "from": "new" },
-{ "f": "1995 年在洛杉磯錄成《Anamorphosée》，走向更搖滾的路線。", "src": "https://fr.wikipedia.org/wiki/Anamorphos%C3%A9e", "from": "bank" }
-],
-"conflicts": [
-"法語維基寫她出生於蒙特婁 Sacré-Cœur 醫院、在 Pierrefonds 度過前八年、1969 年回法國；英文維基與 mylene.net 寫生於 Pierrefonds，搬到 Chaville 或 Ville d'Avray（巴黎近郊）；mylene.net 寫回國在 1970 年代初。facts 只寫『Pierrefonds（蒙特婁近郊）』與『約 8 歲回巴黎近郊』，不寫具體近郊城鎮與回國年份。",
-"事實庫《Anamorphosée》研究稿與上線簡介一致，無衝突。"
-],
-"pubIssues": [],
-"searches": 6,
-"failedFetches": 0,
-"status": "full",
-"notes": "查證：法語維基、英文維基、WebSearch（Libertine 與藝名）、英文維基〈Libertine〉、mylene.net 傳記、WebSearch（Muse 與 Elton John），共 6 次。poolAlbums（Ainsi soit je...、Cendres de lune、L'Autre...、Anamorphosée）是同一位法國歌手，無同名混卡。非獨立：origin 第一條、legacy 第二與第三條、sound 第一與第二條的兩源（含 L'Autre... 條目）都是維基雙語；mylene.net 是歌迷站，只用於與維基互證的次要事實。era 事實庫原本單源（法語維基《Anamorphosée》條目），本層以 mylene.net 補第二源，但該站只證實《Giorgino》是兩人第一次重大失敗，1994 年 10 月上映與洛杉磯九個月仍只有法語維基。legacy 第三條屬在世者的榜單紀錄，只寫名次式說法、不寫數字。單源放 notes：法語維基稱她的詞常寫性、死亡、宗教與愛，並援引 Baudelaire、Poe、Wilde；法語維基稱 1984 年首支單曲被多家廠牌拒絕後由 RCA 接手；〈Libertine〉的 MV 受 Stanley Kubrick《Barry Lyndon》啟發、在 Ferrières 與 Brou 兩座城堡拍攝，英文維基〈Libertine〉稱它被認為是歌手在大型 MV 中第一次全裸入鏡（屬『第一次』類，未找到反例檢證，不放 facts）；法語維基稱 Madonna、Elton John 與 Muse 公開表示欣賞她（搜尋摘要另有 Elton John 的說法與 2022 年與 Muse 合唱〈Ghosts (How Can I Move On)〉，只見摘要未開頁）；英文維基稱她是同志偶像；mylene.net 稱 1988 年《Ainsi soit je...》是法國女歌手首張鑽石認證專輯（『第一』類單源，且涉認證，不收）、1989 年首次現場演出（單源）；法語維基稱 2012 年 NRJ Music Award 鑽石獎。1991 年她工作場所發生的重大事件只取『此後她更遠離媒體』，不收案情。體育場、場次與觀眾人數、累計銷量依規則不寫。"
-}
+ {
+  "key": "lucio battisti",
+  "name": "Lucio Battisti",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Lucio Battisti 1943 年 3 月 5 日生於義大利拉齊奧大區列蒂省的 Poggio Bustone，1950 年全家遷居羅馬；他是自學的吉他手。",
+      "src": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://italysegreta.com/lucio-battisti-a-tale-of-ligh/",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代中期，他經音樂出版人 Christine Leroux 引介，認識作詞人 Giulio Rapetti（藝名 Mogol）；Mogol 起初對他的嗓音存疑，後來被說服，並向 Ricordi 唱片力推讓他自己唱自己寫的歌。",
+      "src": "https://it.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+      "from": "new"
+     },
+     {
+      "f": "1969 年，Battisti 與 Mogol 等人共同創辦 Numero Uno，被視為義大利最早的獨立唱片廠牌之一，目的是保住創作自主權。",
+      "src": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://it.wikipedia.org/wiki/Lucio_Battisti",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Battisti 把前衛搖滾、funk、迪斯可與電子流行的元素帶進義大利流行樂，一路從彩色流行歌走到實驗與電子。",
+      "src": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://it.wikipedia.org/wiki/Lucio_Battisti",
+      "from": "new"
+     },
+     {
+      "f": "1974 年的《Anima latina》被視為他最有野心的一張：把拉丁（巴西）節奏與前衛搖滾、迷幻色彩混在一起。",
+      "src": "https://it.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://thequietus.com/articles/28710-lucio-battisti-anima-latina-review",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "David Bowie 公開稱 Battisti 是自己最喜歡的歌手之一，與 Lou Reed 並列。",
+      "src": "https://thequietus.com/articles/28710-lucio-battisti-anima-latina-review",
+      "src2": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+      "from": "new"
+     },
+     {
+      "f": "義大利維基稱他是義大利最重要的創作歌手之一，與 Mogol 的合作締造了義大利音樂與文化史的一個時代；Italy on This Day 稱他的歌是好幾代義大利人的生活配樂。",
+      "src": "https://it.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://www.italyonthisday.com/2023/03/lucio-battisti-singer-songwriter.html",
+      "from": "new"
+     },
+     {
+      "f": "1980 年代初起，他幾乎完全退出公眾視野、不再接受訪問；他的說法是藝術家只該透過作品與大眾溝通。",
+      "src": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://italysegreta.com/lucio-battisti-a-tale-of-ligh/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 年與 Mogol 等人創辦獨立廠牌 Numero Uno。",
+      "src": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://it.wikipedia.org/wiki/Lucio_Battisti",
+      "from": "new"
+     },
+     {
+      "f": "1998 年 9 月 9 日在米蘭過世，享年 55 歲。",
+      "src": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+      "src2": "https://www.italyonthisday.com/2023/03/lucio-battisti-singer-songwriter.html",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1969 年與 Mogol 等人共同創辦獨立廠牌 Numero Uno。",
+    "src": "https://en.wikipedia.org/wiki/Lucio_Battisti",
+    "from": "new"
+   },
+   {
+    "f": "1974 年發行《Anima latina》，把拉丁節奏與前衛搖滾混在一起。",
+    "src": "https://it.wikipedia.org/wiki/Lucio_Battisti",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "義大利維基寫 1970 年夏天最後一輪巡演後不再現場演出、1972 年 4 月最後一次上義大利電視；Italy Segreta 寫最後一次電視出現是 1980 年的瑞士電視；英文維基寫 1982 年後幾乎完全退隱；Italy on This Day 寫 1974 年之後深居簡出。各源年份不一致，facts 只寫『1980 年代初起幾乎完全退出公眾視野』，不寫停止登台的年份。",
+   "義大利維基寫錄音室專輯 20 張、英文維基與 Italy on This Day 寫 18 張；上線簡介《Anima latina》稱『第九張錄音室專輯』，序數取決於算法，本層不採任何總張數。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "查證：英文維基、義大利文維基、WebSearch（Bowie 與 Molteno）、Italy Segreta、The Quietus、Italy on This Day，共 6 次，皆實際開頁讀到（WebSearch 除外）；Britannica 404 未取得（failedFetches 1）。事實庫 research 為空，三格全為新查。poolAlbums 四張（Una donna per amico、Emozioni、Il mio canto libero、Anima latina）都是義大利歌手 Lucio Battisti，無同名混卡。非獨立：origin 第二、第三條與 sound 第一條、legacy 第二條前半的兩源為英文維基與義大利文維基（同屬維基百科）；Italy Segreta、The Quietus、Italy on This Day 是否獨立於維基未逐一確認。單源放 notes：義大利維基稱寫曲方式是先曲後詞，後期與 Pasquale Panella 合作、詞趨向晦澀；義大利維基稱他的嗓音長期被批評不合傳統唱功標準、他回應歌曲重點在傳達情感；義大利維基稱 1973 年《Il mio canto libero》與《Il nostro caro angelo》同時佔據專輯榜第 1、2 名，壓過 Pink Floyd《The Dark Side of the Moon》；義大利維基稱 1970 年夏天最後一輪巡演後不再現場演出；英文維基把他的堅持與 J. D. Salinger 相比，並說有一顆小行星 9115 Battisti 以他命名；英文維基稱 Bowie 曾為其他歌手翻譯他的作品；Italy on This Day 稱 Bowie 的吉他手 Mick Ronson 也推崇他、18 張錄音室專輯中 13 張登上義大利榜首、葬禮在 Molteno 私下舉行；The Quietus 稱《Anima latina》錄音動用 EMS Synthi Hi-Fli 合成器、人聲刻意混得較低，並轉述 Luciano Pavarotti 說他的風格『像 Puccini』，實驗音樂人 Iosonouncane 把該專輯視為解構歌曲形式的重要創作；Italy Segreta 的『每個義大利人都有一段與 Battisti 歌曲有關的故事』。〈Music Is Lethal〉出自上線簡介，非本層查得。死因各源說法不一，依規則不收。上線簡介未發現錯誤。"
+ },
+ {
+  "key": "miley cyrus",
+  "name": "Miley Cyrus",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Miley Cyrus 1992 年 11 月 23 日生於美國田納西州 Franklin，本名 Destiny Hope Cyrus，父親是鄉村歌手 Billy Ray Cyrus、母親是 Tish Cyrus。",
+      "src": "https://en.wikipedia.org/wiki/Miley_Cyrus",
+      "src2": "https://www.britannica.com/biography/Miley-Cyrus",
+      "from": "new"
+     },
+     {
+      "f": "2006 年她主演 Disney Channel 影集《Hannah Montana》，演的是過著雙重生活的少女：一面是普通中學生，一面是華麗的流行歌星。",
+      "src": "https://en.wikipedia.org/wiki/Miley_Cyrus",
+      "src2": "https://www.britannica.com/biography/Miley-Cyrus",
+      "from": "new"
+     },
+     {
+      "f": "《Hannah Montana》首播就創下收視紀錄，讓她成為青少年偶像。",
+      "src": "https://en.wikipedia.org/wiki/Miley_Cyrus",
+      "src2": "https://au.variety.com/2024/music/events/miley-cyrus-disney-legend-d23-16912",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2013 年的《Bangerz》帶進嘻哈影響與更成人的詞意，形象也大幅轉向，與她早年的影集偶像形象拉開距離。",
+      "src": "https://www.britannica.com/biography/Miley-Cyrus",
+      "src2": "https://en.wikipedia.org/wiki/Miley_Cyrus",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2024 年 8 月她被封為 Disney Legend（音樂與電視類），時年 31 歲，是史上最年輕的 Disney Legend。",
+      "src": "https://d23.com/walt-disney-legend/miley-cyrus/",
+      "src2": "https://au.variety.com/2024/music/events/miley-cyrus-disney-legend-d23-16912",
+      "from": "new"
+     },
+     {
+      "f": "第 66 屆葛萊美（2024 年頒發），她的〈Flowers〉拿下年度唱片與最佳流行獨唱表現兩項。",
+      "src": "https://www.britannica.com/biography/Miley-Cyrus",
+      "src2": "https://en.wikipedia.org/wiki/Miley_Cyrus",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2006 年《Hannah Montana》首播；2013 年《Bangerz》走嘻哈路線。",
+      "src": "https://www.britannica.com/biography/Miley-Cyrus",
+      "src2": "https://en.wikipedia.org/wiki/Miley_Cyrus",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2006 年主演《Hannah Montana》，成為青少年偶像。",
+    "src": "https://en.wikipedia.org/wiki/Miley_Cyrus",
+    "from": "new"
+   },
+   {
+    "f": "2024 年以〈Flowers〉拿下第 66 屆葛萊美年度唱片與最佳流行獨唱表現。",
+    "src": "https://www.britannica.com/biography/Miley-Cyrus",
+    "from": "new"
+   },
+   {
+    "f": "2024 年成為史上最年輕的 Disney Legend。",
+    "src": "https://d23.com/walt-disney-legend/miley-cyrus/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Britannica 寫『2023 年她的單曲 Flowers 讓她拿到首座葛萊美（年度唱片與最佳流行獨唱）』，2023 指單曲發行年、頒獎在 2024 年 2 月第 66 屆；搜尋結果（The Fader、Rolling Stone、Billboard、Hollywood Reporter 標題）一致寫 2024 Grammys。facts 採第 66 屆（2024 年頒發），不寫『首座』。",
+   "Variety 寫《Hannah Montana》自 2005 年開始，D23 與英文維基寫 2006 年首播，facts 採 2006。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "查證：英文維基、Britannica、WebSearch（Grammy 與 Disney Legend）、D23 官方頁、Variety 澳洲站，共 5 次；Billboard 與 Rolling Stone 頁面重新導向到 tollbit 子網域未取得（failedFetches 2，未手動跟隨導向）。事實庫 research 與 published 都為空，三格全為新查。poolAlbums（Bangerz、Something Beautiful、Younger Now、Can't Be Tamed）是同一位美國歌手，無同名混卡。thin 的原因：legacy 只有 Disney Legend 與葛萊美兩項榮譽，查不到後輩點名受她影響的有出處說法，也沒有可具名引用的共識評價；英文維基只說她是『an influential figure in popular music』（單源）。『首座葛萊美』只有 Britannica 一源且年份寫法有歧義，不收。獎項主詞：年度唱片與最佳流行獨唱表現是〈Flowers〉這首歌的得獎，寫作層請以歌為主詞。單源放 notes：教母是 Dolly Parton；九歲在父親影集《Doc》演出、2003 年電影《Big Fish》（Britannica 單源）；2008 年首張個人專輯《Breakout》是轉向流行歌手的起點（Britannica 單源）；〈Wrecking Ball〉是她第一首登上 Billboard 單曲榜榜首的歌（Britannica 單源）；2017 年《Younger Now》走流行與鄉村、2020 年《Plastic Hearts》走搖滾與 glam rock 並與 Billy Idol、Joan Jett 合作（英文維基單源）；2014 年成立 Happy Hippie Foundation（Britannica 單源）；英文維基稱她被 Billboard 列入『21 世紀最偉大流行巨星』（單源，且屬雜誌榜單，不收）。Disney Legend 領獎時她說『我站在這裡，仍然為曾是 Hannah Montana 而驕傲』（Variety 單源）。Variety 與 D23 兩源皆實際開頁讀到，Variety 是 D23 活動報導、與 D23 官方頁性質不同但同談一事。在世者獎座與銷量總數依規則不寫。"
+ },
+ {
+  "key": "mylène farmer",
+  "name": "Mylène Farmer",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mylène Farmer 本名 Mylène Gautier，1961 年 9 月 12 日生於加拿大魁北克的 Pierrefonds（蒙特婁近郊），父母是法國人；她約 8 歲時全家回到巴黎近郊。",
+      "src": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "src2": "https://en.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "from": "new"
+     },
+     {
+      "f": "她的藝名取自 1930 年代美國演員 Frances Farmer；首支單曲〈Maman a tort〉的靈感也來自以這位演員為本的電影《Frances》。",
+      "src": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "src2": "https://www.mylene.net/mylene/biographie.php",
+      "from": "new"
+     },
+     {
+      "f": "1984 年她在 Laurent Boutonnat 與 Jérôme Dahan 辦的試鏡中與兩人結識，此後 Boutonnat 作曲與製作、她寫詞，兩人的搭檔延續十多年。",
+      "src": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "src2": "https://www.mylene.net/mylene/biographie.php",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的歌向來是她寫詞、Boutonnat 作曲；專輯《L'Autre...》十首歌的詞全由她寫、曲全由他作。",
+      "src": "https://en.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "src2": "https://fr.wikipedia.org/wiki/L'Autre%E2%80%A6",
+      "from": "new"
+     },
+     {
+      "f": "她的音樂錄影被當成短片來做，多數由 Boutonnat 執導（另有 Luc Besson 等人）；1986 年〈Libertine〉的 MV 長約 11 分鐘，由 Boutonnat 執導，法語維基稱它革新了法國的音樂錄影。",
+      "src": "https://en.wikipedia.org/wiki/Libertine_(song)",
+      "src2": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1986 年的〈Libertine〉與它的 MV 讓她在法國一舉成名。",
+      "src": "https://en.wikipedia.org/wiki/Libertine_(song)",
+      "src2": "https://www.mylene.net/mylene/biographie.php",
+      "from": "new"
+     },
+     {
+      "f": "她很少接受訪問，沒有官方歌迷俱樂部，也沒有公開的社群帳號；她的說法是想說的話都在歌裡。",
+      "src": "https://en.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "src2": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "from": "new"
+     },
+     {
+      "f": "她寫下法國藝人單曲榜冠軍最多的紀錄。",
+      "src": "https://en.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "src2": "https://fr.wikipedia.org/wiki/Myl%C3%A8ne_Farmer",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1993 年 Boutonnat 開拍《Giorgino》、由她擔綱主角，電影 1994 年 10 月上映後失利；她隨後到洛杉磯待了九個月，再做出 1995 年更偏搖滾的《Anamorphosée》。",
+      "src": "https://fr.wikipedia.org/wiki/Anamorphos%C3%A9e",
+      "src2": "https://www.mylene.net/mylene/biographie.php",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1986 年〈Libertine〉與它的 MV 讓她在法國成名。",
+    "src": "https://en.wikipedia.org/wiki/Libertine_(song)",
+    "from": "new"
+   },
+   {
+    "f": "1995 年在洛杉磯錄成《Anamorphosée》，走向更搖滾的路線。",
+    "src": "https://fr.wikipedia.org/wiki/Anamorphos%C3%A9e",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "法語維基寫她出生於蒙特婁 Sacré-Cœur 醫院、在 Pierrefonds 度過前八年、1969 年回法國；英文維基與 mylene.net 寫生於 Pierrefonds，搬到 Chaville 或 Ville d'Avray（巴黎近郊）；mylene.net 寫回國在 1970 年代初。facts 只寫『Pierrefonds（蒙特婁近郊）』與『約 8 歲回巴黎近郊』，不寫具體近郊城鎮與回國年份。",
+   "事實庫《Anamorphosée》研究稿與上線簡介一致，無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "查證：法語維基、英文維基、WebSearch（Libertine 與藝名）、英文維基〈Libertine〉、mylene.net 傳記、WebSearch（Muse 與 Elton John），共 6 次。poolAlbums（Ainsi soit je...、Cendres de lune、L'Autre...、Anamorphosée）是同一位法國歌手，無同名混卡。非獨立：origin 第一條、legacy 第二與第三條、sound 第一與第二條的兩源（含 L'Autre... 條目）都是維基雙語；mylene.net 是歌迷站，只用於與維基互證的次要事實。era 事實庫原本單源（法語維基《Anamorphosée》條目），本層以 mylene.net 補第二源，但該站只證實《Giorgino》是兩人第一次重大失敗，1994 年 10 月上映與洛杉磯九個月仍只有法語維基。legacy 第三條屬在世者的榜單紀錄，只寫名次式說法、不寫數字。單源放 notes：法語維基稱她的詞常寫性、死亡、宗教與愛，並援引 Baudelaire、Poe、Wilde；法語維基稱 1984 年首支單曲被多家廠牌拒絕後由 RCA 接手；〈Libertine〉的 MV 受 Stanley Kubrick《Barry Lyndon》啟發、在 Ferrières 與 Brou 兩座城堡拍攝，英文維基〈Libertine〉稱它被認為是歌手在大型 MV 中第一次全裸入鏡（屬『第一次』類，未找到反例檢證，不放 facts）；法語維基稱 Madonna、Elton John 與 Muse 公開表示欣賞她（搜尋摘要另有 Elton John 的說法與 2022 年與 Muse 合唱〈Ghosts (How Can I Move On)〉，只見摘要未開頁）；英文維基稱她是同志偶像；mylene.net 稱 1988 年《Ainsi soit je...》是法國女歌手首張鑽石認證專輯（『第一』類單源，且涉認證，不收）、1989 年首次現場演出（單源）；法語維基稱 2012 年 NRJ Music Award 鑽石獎。1991 年她工作場所發生的重大事件只取『此後她更遠離媒體』，不收案情。體育場、場次與觀眾人數、累計銷量依規則不寫。"
+ },
+ {
+  "key": "one direction",
+  "name": "One Direction",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "One Direction 2010 年誕生於英國選秀節目《The X Factor》：五位原本以個人身分報名的參賽者，被湊成一個五人男孩團，成員是 Niall Horan（愛爾蘭人）、Zayn Malik、Liam Payne、Harry Styles 與 Louis Tomlinson，其餘四人是英國人。",
+      "src": "https://en.wikipedia.org/wiki/One_Direction",
+      "src2": "https://www.britannica.com/topic/One-Direction",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2013 年的第三張《Midnight Memories》刻意離開早期的青少年流行路線，走得更搖滾。",
+      "src": "https://en.wikipedia.org/wiki/One_Direction",
+      "src2": "https://en.wikipedia.org/wiki/Midnight_Memories",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "國際唱片業協會 IFPI 把 2013 年度的全球最受歡迎錄音藝人（Global Recording Artist of the Year）頒給 One Direction。",
+      "src": "https://en.wikipedia.org/wiki/One_Direction",
+      "src2": "https://gulfnews.com/entertainment/one-direction-takes-new-record-industry-award-as-top-band-of-2013-1.1284091",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2015 年 Zayn Malik 離團，其餘四人繼續；團體自 2016 年起無限期休團。",
+      "src": "https://en.wikipedia.org/wiki/One_Direction",
+      "src2": "https://www.britannica.com/topic/One-Direction",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2010 年在《The X Factor》被湊成團。",
+    "src": "https://en.wikipedia.org/wiki/One_Direction",
+    "from": "new"
+   },
+   {
+    "f": "2013 年度被 IFPI 選為全球最受歡迎錄音藝人。",
+    "src": "https://gulfnews.com/entertainment/one-direction-takes-new-record-industry-award-as-top-band-of-2013-1.1284091",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基寫 2015 年 8 月宣布 2016 年休團；Britannica 寫 2016 年宣布無限期休團；facts 只寫『自 2016 年起無限期休團』，不寫宣布時間。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "查證：英文維基、Britannica、WebSearch（IFPI 與影響）、Gulf News、英文維基《Midnight Memories》、WebSearch（限定 NPR／Rolling Stone／Billboard 的影響力查詢），共 6 次；失敗請求 3 次（Hollywood Reporter 與 Billboard 頁面重新導向到 tollbit 子網域、未手動跟隨；一次 WebSearch 因網域限制回 400）。事實庫 research 與 published 皆空，三格全為新查。poolAlbums（Midnight Memories、Take Me Home、Four、Up All Night）是同一個英愛男孩團，無同名混卡。thin 的原因：legacy 只有 IFPI 一項有兩源開頁證實的榮譽；『帶動男孩團復興』『新一波英倫入侵』『粉絲文化改變產業』的說法只有英文維基單源（另有 Billboard 與 Rolling Stone 的搜尋摘要未能開頁），依規則不進 facts，寫作層若要用請當單源處理。單源放 notes：英文維基稱粉絲現象被媒體稱為『One Direction Infection』並與披頭四狂熱相比；團名由 Harry Styles 取；Simon Cowell 與評審 Nicole Scherzinger 都說組團是自己的點子，2022 年影像顯示 Scherzinger 的角色很重；團員沒有統一舞步與制服、身上有明顯刺青，不同於過往男孩團（英文維基單源）；《Four》（2014）被形容更粗獷，《Made in the A.M.》（2015）嘗試爵士融合、獨立與英倫流行（英文維基單源）；《Midnight Memories》2013 年 11 月 25 日由 Columbia 與 Syco 發行，製作班底含 Mutt Lange，團員多人有寫作掛名（英文維基《Midnight Memories》單源）；Britannica 稱首張《Up All Night》（2011）2012 年在美國榜單首登即登冠（單源；寫作層若寫請加『最早』類的反例檢查）；Britannica 稱 Liam Payne 2024 年 10 月過世（單源，依規則成員死亡只收兩源年份，不收）。榜單雜誌評價（Rolling Stone 稱他們是 21 世紀偉大搖滾團之一、Billboard 稱《Four》是十年來流行樂的標竿、Billboard 21 世紀流行巨星第 22 名）屬雜誌評價與榜單名次，不收。Brit、AMA、MTV 與 Billboard 的得獎座數屬累計獎座數，不寫；Forbes 收入排名亦不收。 單源補記：Gulf News 稱該年 IFPI 排名第二是 Eminem、第三是 Justin Timberlake，並說那一年的排名首度納入串流資料；英文維基稱《Midnight Memories》帶 1980 年代搖滾色彩（單源）。"
+ },
+ {
+  "key": "panda bear",
+  "name": "Panda Bear",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Panda Bear 是 Noah Lennox 的個人名義；他同時是 Animal Collective 的成員。",
+      "src": "https://en.wikipedia.org/wiki/Panda_Bear_(musician)",
+      "src2": "https://en.wikipedia.org/wiki/Person_Pitch",
+      "from": "new"
+     },
+     {
+      "f": "1999 年他以 Panda Bear 之名發行首張個人專輯《Panda Bear》。",
+      "src": "https://en.wikipedia.org/wiki/Panda_Bear_(musician)",
+      "src2": "https://www.vice.com/en/article/rank-your-records-panda-bear-noah-lennox/",
+      "from": "new"
+     },
+     {
+      "f": "他搬到葡萄牙里斯本，2007 年的《Person Pitch》就在那裡完成。",
+      "src": "https://www.vice.com/en/article/rank-your-records-panda-bear-noah-lennox/",
+      "src2": "https://en.wikipedia.org/wiki/Person_Pitch",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Person Pitch》主要用 SP-303 取樣器做成：他把取樣一層層疊起來，堆成密實的和聲織體。",
+      "src": "https://en.wikipedia.org/wiki/Person_Pitch",
+      "src2": "https://www.vice.com/en/article/rank-your-records-panda-bear-noah-lennox/",
+      "from": "new"
+     },
+     {
+      "f": "專輯的招牌是帶濃重迴響的人聲和聲，聲音像水波般的電子聲加上褪色的取樣，有 Beach Boys 式的迷幻色彩。",
+      "src": "https://en.wikipedia.org/wiki/Person_Pitch",
+      "src2": "https://en.wikipedia.org/wiki/Chillwave",
+      "from": "new"
+     },
+     {
+      "f": "他做取樣的方法受到 Madlib 的製作啟發，高中合唱團的經驗也影響了他處理人聲的方式。",
+      "src": "https://en.wikipedia.org/wiki/Person_Pitch",
+      "src2": "https://www.vice.com/en/article/rank-your-records-panda-bear-noah-lennox/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Person Pitch》（2007 年 3 月）被認為催生了 chillwave 這個風格；樂評人 Anthony Carew 說它那種水波般的電子聲、褪色的取樣與 Beach Boys 式人聲，基本上啟發了 chillwave 的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Chillwave",
+      "src2": "https://en.wikipedia.org/wiki/Person_Pitch",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2007 年 3 月發行《Person Pitch》。",
+      "src": "https://en.wikipedia.org/wiki/Person_Pitch",
+      "src2": "https://en.wikipedia.org/wiki/Chillwave",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2007 年發行《Person Pitch》，被認為催生了 chillwave。",
+    "src": "https://en.wikipedia.org/wiki/Chillwave",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Vice 寫 Lennox 稱使用的是 Roland SP-303，英文維基《Person Pitch》寫 Boss SP-303；facts 只寫『SP-303 取樣器』。",
+   "英文維基寫 1999 年首張專輯由 Soccer Star Records 發行；Vice 寫是自己發行、只有約 200 張流通；facts 不寫發行形式。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "查證：英文維基 Panda Bear (musician)、WebSearch（Person Pitch 與 chillwave）、英文維基 Person Pitch、Vice（Lennox 自評個人專輯）、英文維基 Chillwave，共 5 次，皆實際開頁讀到。非獨立：sound 第一條與 legacy 的來源全是英文維基不同條目（Person Pitch 與 Chillwave）；Vice 是獨立來源，用在 origin 與 sound 第二條。事實庫 research 為空。poolAlbums（Sinister Grift、Panda Bear、Person Pitch、Tomboy）都是 Noah Lennox 的個人作品，無同名混卡（注意：這一位是個人名義，與 Animal Collective 是兩個名字，寫作層請以個人為主，不要把 Animal Collective 的作品算進來）。單源放 notes：Lennox 1978 年生於維吉尼亞州 Charlottesville、在巴爾的摩 Roland Park 長大，與兒時友人 Deakin 等人在 1990 年代末共組 Animal Collective（英文維基單源）；2004 年搬到里斯本（英文維基）；2004 年《Young Prayer》是在父親生病與過世期間錄製（Vice 單源，涉及親人死亡，不寫細節）；《Person Pitch》樂評分數高、Pitchfork 排為 2007 年第一名與 2000 年代第 9 名（雜誌榜單，不收）；Grimes 等人說受該專輯影響、並影響了 Animal Collective 的《Merriweather Post Pavilion》（英文維基《Person Pitch》單源）；《Tomboy》（2011）用吉他經 Korg 合成器處理而非取樣器（Vice 單源；上線簡介亦寫此事）；《Panda Bear Meets the Grim Reaper》（2015）與 Pete Kember 合作、偏 dub 與鼓點（Vice 單源；英文維基稱《Tomboy》與該張都進了 Billboard 200）；《Sinister Grift》（2025）源自 2023 年離婚的情緒（英文維基單源）。Vice 說《Person Pitch》與他搬去里斯本同時發生。上線簡介《Tomboy》未發現錯誤。 本層撤回的單源細節：1999 年首張專輯內容是他十五到十八歲間的錄音，他後來自評像混音帶、多是模仿喜歡的藝人（Vice 單源）；Vice 稱他搬到里斯本時認識後來的伴侶；《Person Pitch》他自估約 96% 是取樣（英文維基《Person Pitch》單源）；chillwave 一詞 2009 年 7 月由部落客 Carles 提出，比專輯晚兩年（英文維基 Chillwave 單源）；專輯七首有五首在 2005 至 2007 年間先以單曲釋出，發行日 2007 年 3 月 20 日、廠牌 Paw Tracks（英文維基《Person Pitch》單源）。"
+ },
+ {
+  "key": "red velvet",
+  "name": "Red Velvet",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Red Velvet 是 SM Entertainment 的女團，2014 年以四人出道，成員是 Irene、Seulgi、Wendy 與 Joy；2015 年 3 月 Yeri 加入，成為五人團。",
+      "src": "https://en.wikipedia.org/wiki/Red_Velvet_(group)",
+      "src2": "https://www.tatlerasia.com/lifestyle/entertainment/get-to-know-the-girls-of-red-velvet",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團名對應兩面並行的概念：Red Velvet 以「Red」與「Velvet」兩種路線輪流推出作品，外界稱為雙面概念。",
+      "src": "https://en.wikipedia.org/wiki/Red_Velvet_(group)",
+      "src2": "https://joysauce.com/meet-bini-the-next-big-thing-in-p-pop/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2018 年 4 月，Red Velvet 隨南韓藝術團赴北韓平壤演出。",
+      "src": "https://en.wikipedia.org/wiki/Spring_Is_Coming",
+      "src2": "https://www.tatlerasia.com/lifestyle/entertainment/get-to-know-the-girls-of-red-velvet",
+      "from": "new"
+     },
+     {
+      "f": "BINI 的成員說，經紀公司最初拿 Red Velvet 的「雙面」概念當範本；英文維基也記載 BINI 的經紀團隊把 Red Velvet 的雙面性視為啟發。",
+      "src": "https://joysauce.com/meet-bini-the-next-big-thing-in-p-pop/",
+      "src2": "https://en.wikipedia.org/wiki/Red_Velvet_(group)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2015 年 9 月 9 日發行第一張完整專輯《The Red》，只走團名裡「Red」的那一面。",
+      "src": "https://en.wikipedia.org/wiki/The_Red_(album)",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2014 年以四人團出道，2015 年 3 月 Yeri 加入。",
+    "src": "https://en.wikipedia.org/wiki/Red_Velvet_(group)",
+    "from": "new"
+   },
+   {
+    "f": "2018 年 4 月隨南韓藝術團赴平壤演出。",
+    "src": "https://en.wikipedia.org/wiki/Spring_Is_Coming",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基寫 2014 年 8 月 1 日出道、Yeri 2015 年 3 月 11 日加入；Tatler 寫 2014 年 7 月 27 日出道、Yeri 2015 年 3 月 10 日加入；facts 只寫年份與 2015 年 3 月，不寫日。",
+   "研究稿 c105-a 與上線簡介《The Red》一致（Red 與 Blue 兩版、Red 那一面），無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "查證：英文維基、韓文維基（disambiguation 頁，內容無用但請求成功，計 1 次；韓文維基的團體條目網址 404，failedFetches 1）、WebSearch（平壤演出）、英文維基 Spring Is Coming、WebSearch（BINI）、Joysauce、WebSearch（韓文出道資料）、Tatler Asia，共 8 次，用滿上限。事實庫僅有《The Red》研究稿（era 取自該稿，單源英文維基，輔助格不另補）。poolAlbums（Chill Kill、Bloom、Perfect Velvet、The Red）是同一個南韓女團，無同名混卡。非獨立：sound 與 legacy 第二條的英文維基與 Joysauce 為兩個獨立來源；legacy 第一條中英文維基《Spring Is Coming》與 Tatler 兩源，但 Tatler 只證實『2018 年在北韓演出』，4 月 1 日、東平壤大劇場、Joy 缺席、同場歌手、金正恩出席，這些細節只有英文維基《Spring Is Coming》（單源）；寫作層若要用請只保留『2018 年隨藝術團赴平壤演出』。『第一次』類說法：英文維基《Red Velvet》稱她們是第一個在平壤演出的 K-pop 女團，《Spring Is Coming》頁則稱這是自 2005 年趙容弼演唱會以來南韓音樂人首度赴北韓演出；兩者都未做反例檢證，不進 facts。單源放 notes：英文維基稱該團吸引以女性為主的粉絲、打破女團粉絲以男性為主的刻板印象，並說她們因平壤演出獲政府表彰；英文維基稱 Billboard 在 2019 年 11 月稱她們是『best idol group alive』、Time 稱她們是標竿 K-pop 團體（雜誌評價，不收）；英文維基稱 2024 年 Gallup Korea 調查中她們排 21 世紀最受歡迎女團第 8（單源）；2025 年 4 月 SM 宣布 Wendy 與 Yeri 的專屬契約到期、仍以成員身分參與團體活動（英文維基單源）；英文維基稱 Red 那一面偏帶電子與 funk 元素的明亮流行、Velvet 那一面偏 R&B、慢歌與嘻哈（單源，上線簡介亦寫類似分法）。Tatler 列的獎項累計座數屬累計獎座數，不寫。1 次請求為 ko.wikipedia disambiguation 頁，內容與藝人無關。 本層撤回的單源細節：音樂會名為〈春天來了〉（Spring Is Coming）、4 月 1 日在東平壤大劇場、Joy 因行程缺席、同場有趙容弼等歌手（英文維基《Spring Is Coming》單源）；Seulgi 2007 年、Irene 2009 年進 SM 受訓（Tatler 與搜尋摘要，單源）。"
+ }
 ]

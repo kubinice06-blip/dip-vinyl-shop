@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 167 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 178 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -169,5 +169,16 @@
 | ar-b-019 | Ray LaMontagne | God Willin' & the Creek Don't Rise | 同年 12 月獲兩項葛萊美提名，拿下最佳當代民謠專輯 | 提名公布在 2010 年 12 月 1 日，最佳當代民謠專輯的得獎在 2011 年 2 月 13 日的第 53 屆葛萊美獎；『同年 12 月……拿下』容易讓人讀成 2010 年得獎。建議改成『2010 年 12 月入圍、2011 年 2 月得獎』。 | https://en.wikipedia.org/wiki/53rd_Annual_Grammy_Awards |
 | ar-b-019 | Seu Jorge | Cru | 第二張個人錄音室作 | 疑為第三張：KVPR 稱他 2001 年憑《Samba Esporte Fino》已在巴西成名，英文維基摘要另列 2003《Carolina》在《Cru》（2004）之前；上線簡介若按錄音室專輯數算，Cru 應是第三張（América Brasil o Disco 稱第四張則與此一致）。我只讀到維基摘要與 KVPR，未逐張核對年表，請店主本機覆核。 | https://www.kvpr.org/2016-02-27/brazilian-singer-seu-jorge-on-music-race-and-luck-versus-hard-work |
 | ar-b-019 | Tammy Wynette | Your Good Girl's Gonna Go Bad | 維基記她 1965 年搬去（納許維爾） | 本次讀到的英文維基、Britannica、Country Music Hall of Fame 都寫 1966 年搬到納許維爾（維基寫 1966 年 1 月）；1965 年說法與本次三個來源不符，請店主在本機查原條目再決定是否改成 1966。 | https://www.countrymusichalloffame.org/artist/tammy-wynette |
+| ar-b-019 | The Bothy Band | The Bothy Band 1975 | Dónal Lunny 離開 Planxty、創辦 Mulligan 後召集的七人編制，首張同名專輯以 Keenan、Molloy、Peoples 齊奏 | 維基稱樂團最初的陣容有七人（原名 Seachtar，意為七人），但 Paddy Glackin 與 Tony MacMahon 在首張專輯前後離開，首張專輯的實際陣容是六人（RTÉ 與維基列出 Lunny、Keenan、Molloy、Peoples、Tríona Ní Dhomhnaill、Mícheál Ó Domhnaill）；寫成『首張專輯七人編制』不準確。另『Lunny 離開 Planxty、創辦 Mulligan』只見維基單源，我未取得第二源。 | https://www.rte.ie/culture/2018/0809/984081-simply-folk-recommends-the-bothy-band-1975-by-the-bothy-band/ |
+| ar-b-019 | William Tyler | Impossible Truth | 2013 年這張…是他登陸 Merge 的第一張 | 本位未能查證：BOMB 2014 年 4 月稿寫 2014 年 4 月 29 日 Merge 發行《Lost Colony》EP，並稱《Impossible Truth》為 2013 年佳評作品，沒說明該張的廠牌；維基資訊框只列三個廠牌；建議店主在本機核對 Merge 官網或 Discogs 後再決定是否保留『Merge 的第一張』 | https://bombmagazine.org/articles/2014/04/24/william-tyler/ |
+| ar-b-019 | คาราวาน | อเมริกันอันตราย | 碟是 1976 年 1 月的第二張，距首張一年多 | 泰文維基專輯表列首張《คนกับควาย》為 2518 年 12 月（1975 年 12 月）、《อเมริกันอันตราย》為 2519 年 1 月（1976 年 1 月），兩張只差約一個月；英文維基只標 1975 與 1976。泰文維基月份為單源，建議店主在本機以 Discogs 或 MusicBrainz 覆核後再改 KV。 | https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%99_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5) |
+| ar-b-019 | คาราวาน | อเมริกันอันตราย | 此後作品表空了七年，下一張要到 1983 年 | 英文維基寫 1976 年另有《Ruam Botpleng Sipsee Tulaa Siphok Vol. 2》，並稱 1982 年已出《Deuan Phen》（Full Moon）；泰文維基專輯表則在 1976 年 1 月後直接接 1983 年 6 月《บ้านนาสะเทือน》，無 1982 年一張。兩源不一致，『空了七年』『下一張是 1983』宜改為保守寫法或再覆核。 | https://en.wikipedia.org/wiki/Caravan_(Thai_band) |
+| ar-b-019 | คาราวาน | บ้านนาสะเทือน | 七年沒出片之後，1983 年 6 月回來的這一張 | 同上：英文維基稱 1982 年已有《Deuan Phen》，故『七年沒出片之後』未必成立；泰文維基列 2526 年 6 月（1983 年 6 月）為《บ้านนาสะเทือน》。 | https://en.wikipedia.org/wiki/Caravan_(Thai_band) |
+| ar-b-019 | あがた森魚 | 日本少年 | マリオ／ニュー・モーニング 發行（FW-8001-02） | Mikiki 2021 年專欄『1976 年の細野晴臣』把本作標為『あがた森魚『日本少年（ヂパング・ボーイ）』フィリップス（1976）』，與上線簡介的發行廠牌寫法不同；FW- 開頭的編號是否屬 Philips 系統本層未核到，建議店主在本機以 Discogs 覆核廠牌與編號後再決定。 | https://mikiki.tokyo.jp/articles/-/44459 |
+| ar-b-019 | あがた森魚 | 日本少年 | 細野晴臣製作 | Mikiki 寫的是『細野晴臣が共同プロデュース』（共同製作），上線簡介寫『細野晴臣製作』，建議改為『共同製作』。 | https://mikiki.tokyo.jp/articles/-/44459 |
+| ar-b-019 | 中島みゆき | 愛していると云ってくれ | 先行單曲〈わかれうた〉…累計銷量破百萬 | ja 維基寫〈わかれうた〉銷量超過 70 萬枚（70万枚を超える），en 維基寫 more than 700,000；兩源都未達百萬；建議改為『超過 70 萬枚』或刪掉銷量。 | https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E3%81%BF%E3%82%86%E3%81%8D |
+| ar-b-019 | 中島みゆき | 愛していると云ってくれ | 〈世情〉後來因1980年《3年B組金八先生》第二季選為插入曲 | ja 維基與 en 維基都寫是 1981 年被該劇劇中使用而走紅（未提第二季）；上線簡介寫 1980 年。建議核對 TBS 播出年份後再決定，或改為『被《3年B組金八先生》使用後廣為人知』。 | https://en.wikipedia.org/wiki/Miyuki_Nakajima |
+| ar-b-019 | 中島みゆき | 予感 | 末曲〈ファイト!〉後來在1994年被住友生命廣告啟用，並以兩A面單曲重新發行 | ja 維基只寫 1994 年的〈空と君のあいだに／ファイト!〉是雙 A 面單曲，並以〈空と君のあいだに〉為日本電視台《家なき子》主題歌；本位未查到〈ファイト!〉被住友生命廣告啟用一事，建議在本機核對。 | https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E3%81%BF%E3%82%86%E3%81%8D |
 | ar-b-019 | 周雲蓬 | 牛羊下山 | 此作使他獲得南方音樂盛典最佳民謠藝人 | 本層查得的最佳民謠藝人與最佳作詞是第 8 屆音樂風雲榜（Chinese Music Media Awards），中文維基連到的是《中國孩子》；未查到《牛羊下山》與南方音樂盛典的連結，建議店主本機核對該獎名稱與得獎專輯。 | https://zh.wikipedia.org/wiki/%E5%91%A8%E4%BA%91%E8%93%AC |
 | ar-b-019 | 周雲蓬 | 沉默如謎的呼吸 | 這是 2004 年的碟，也是他的首張專輯 | 中文與英文維基寫首張專輯 2003 年由摩登天空發行；MusicBrainz 的 release 年為 2004，兩種年份並存，建議簡介改成不寫發行年或標明為 2004 年版本。 | https://en.wikipedia.org/wiki/Zhou_Yunpeng |
+| ar-b-020 | 林俊傑 | 和自己對話 | 全球第一張以假人頭麥克風（人頭錄音）製作的華語流行唱片 | 『首張』的範圍有三種說法：中文維基〈和自己對話〉寫為全球首張以 Dummy Head 錄製的流行音樂專輯；媒體（人民網、Audionet）寫為華語樂壇先例或台灣創舉；英文維基該專輯頁未載。『第一』類宣稱兩源不一致，建議簡介改成較保守的『以人頭錄音技術錄製』，或寫成『中文維基稱…全球首張』。 | https://zh.wikipedia.org/zh-tw/%E5%92%8C%E8%87%AA%E5%B7%B1%E5%B0%8D%E8%A9%B1 |

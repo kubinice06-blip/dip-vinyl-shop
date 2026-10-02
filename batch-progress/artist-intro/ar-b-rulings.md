@@ -230,3 +230,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-020
 - g1 交件（QA 本組 0）。thin：f(x)、Fishmans、Halsey（地位 none）、Justin Bieber（地位 none）。Françoise Hardy 失敗請求 5 次超限，未取得內容，照收。f(x) 韓國名盤百大名次屬榜單，不寫。Battiato「第一張破百萬」只准寫成歸屬說法。
+- 019 w2 審稿（1 處）：a-ha 刪「也是唯一一首」（唯一類宣稱）。Tim McGraw 寫「獲選為 2026 年鄉村音樂名人堂成員」符合裁定。友川かずき 文中ちあきなおみ依寫作規則轉寫 Naomi Chiaki，照准。
+- **ar-b-019 上線**：40 位，reviewFixes 1。
