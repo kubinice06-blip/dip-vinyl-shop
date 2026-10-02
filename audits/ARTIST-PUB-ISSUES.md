@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 178 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 187 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -182,3 +182,12 @@
 | ar-b-019 | 周雲蓬 | 牛羊下山 | 此作使他獲得南方音樂盛典最佳民謠藝人 | 本層查得的最佳民謠藝人與最佳作詞是第 8 屆音樂風雲榜（Chinese Music Media Awards），中文維基連到的是《中國孩子》；未查到《牛羊下山》與南方音樂盛典的連結，建議店主本機核對該獎名稱與得獎專輯。 | https://zh.wikipedia.org/wiki/%E5%91%A8%E4%BA%91%E8%93%AC |
 | ar-b-019 | 周雲蓬 | 沉默如謎的呼吸 | 這是 2004 年的碟，也是他的首張專輯 | 中文與英文維基寫首張專輯 2003 年由摩登天空發行；MusicBrainz 的 release 年為 2004，兩種年份並存，建議簡介改成不寫發行年或標明為 2004 年版本。 | https://en.wikipedia.org/wiki/Zhou_Yunpeng |
 | ar-b-020 | 林俊傑 | 和自己對話 | 全球第一張以假人頭麥克風（人頭錄音）製作的華語流行唱片 | 『首張』的範圍有三種說法：中文維基〈和自己對話〉寫為全球首張以 Dummy Head 錄製的流行音樂專輯；媒體（人民網、Audionet）寫為華語樂壇先例或台灣創舉；英文維基該專輯頁未載。『第一』類宣稱兩源不一致，建議簡介改成較保守的『以人頭錄音技術錄製』，或寫成『中文維基稱…全球首張』。 | https://zh.wikipedia.org/zh-tw/%E5%92%8C%E8%87%AA%E5%B7%B1%E5%B0%8D%E8%A9%B1 |
+| ar-b-020 | 藤圭子 | 新宿の女 | 連續二十週第一，接續的《女のブルース》再連十七週，合計三十七週 | 《女のブルース》的連續週數與合計週數與來源不一致：Weblio（〈新宿の女／“演歌の星”藤圭子のすべて〉條目）寫《女のブルース》16 週、與其他作品合計 41 週；Tower Records 訃報與日文維基摘要寫其後三張共計 42 週。首張 20 週四源一致。建議簡介只留『首張連續二十週第一』，或查原始榜單後再定合計。 | https://www.weblio.jp/content/%E6%96%B0%E5%AE%BF%E3%81%AE%E5%A5%B3/%E2%80%9C%E6%BC%94%E6%AD%8C%E3%81%AE%E6%98%9F%E2%80%9D%E8%97%A4%E5%9C%AD%E5%AD%90%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6 |
+| ar-b-020 | 謝雷 | 梨山痴情花 | 1974 年在菲律賓被檢舉遣返，台灣也禁止他出境兩年，之後轉往歌廳與秀場 | 高風險事件只有中文維基單一來源；百度百科、WSM 經紀簡介、udn 專訪皆未提；本層未能找到第二來源，建議店主審視是否保留或改成較模糊寫法。 | https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29 |
+| ar-b-021 | Collage | Collage | 成員關係欄只有六筆，六位全是女性 | 該句只依 MusicBrainz 關係欄；愛沙尼亞文維基列有 Aarne Vahuri、Tauno Vahter、Enn Tomson、Uno Loop 等人名為歌手，專輯條目另列男性樂手 German Pekarevski（長號）與 Lembit Saarsalu（次中音薩克斯風，性別由名字判斷、未另查），全是女性的說法恐誤導。 | https://et.wikipedia.org/wiki/Collage |
+| ar-b-021 | Collage | Kadriko | 盤面是 1975 年 Мелодия СМ 02821-2 | 愛沙尼亞文維基團條目的唱片目錄把《Kadriko》記為 1974，與 MusicBrainz 的 1975 不一致，年份待核（Melodiya 目錄號本層未驗）。 | https://et.wikipedia.org/wiki/Collage |
+| ar-b-021 | Collage | Käokiri | 盤面是 1977 年 Мелодия С60-08739-40；團史裡最後一個當年出的發行品 | 愛沙尼亞文維基記《Käokiri》為 1978，與 MusicBrainz 的 1977 不一致，年份待核；『最後一個當年出的發行品』的說法隨年份而變。 | https://et.wikipedia.org/wiki/Collage |
+| ar-b-021 | Girls' Generation | Oh! | 原版在 2010 年 Gaon 年榜以 197,934 張排到全年第二 | 含銷量數字，依本批特注『K-pop 團體銷量、獎座數不寫』不應出現；數字本層未驗證。 | https://en.wikipedia.org/wiki/Girls%27_Generation |
+| ar-b-021 | Girls' Generation | Gee | 實體是韓國一筆加中國一筆 | 事實庫引的英文維基〈Gee (EP)〉Release history 表列出南韓、菲律賓、台灣等地，與『韓國加中國』的說法對不上，待店主對照 MusicBrainz 核對。 | https://en.wikipedia.org/wiki/Gee_(EP) |
+| ar-b-021 | H.O.T. | We Hate All Kinds of Violence | 銷量逾一百五十萬張，此後二十四年一直是 SM 旗下最暢銷的專輯，2020 年才被 NCT 打破 | 含銷量與排名宣稱，依本批特注『K-pop 團體銷量、獎座數不寫』不應出現；本層未驗證數字。 | https://en.wikipedia.org/wiki/H.O.T. |
+| ar-b-021 | Phương Dung | Băng nhạc hương quê 1 - Tiếng hát Phương Dung | 她 1945 年生於 Gò Công | 越文維基寫 1945 年 8 月 9 日，英文維基寫 1946 年；來源不一致，建議店主確認或改成不帶年份 | https://en.wikipedia.org/wiki/Phuong_Dung |

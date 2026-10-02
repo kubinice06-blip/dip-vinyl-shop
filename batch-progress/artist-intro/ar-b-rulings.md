@@ -232,3 +232,9 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - g1 交件（QA 本組 0）。thin：f(x)、Fishmans、Halsey（地位 none）、Justin Bieber（地位 none）。Françoise Hardy 失敗請求 5 次超限，未取得內容，照收。f(x) 韓國名盤百大名次屬榜單，不寫。Battiato「第一張破百萬」只准寫成歸屬說法。
 - 019 w2 審稿（1 處）：a-ha 刪「也是唯一一首」（唯一類宣稱）。Tim McGraw 寫「獲選為 2026 年鄉村音樂名人堂成員」符合裁定。友川かずき 文中ちあきなおみ依寫作規則轉寫 Naomi Chiaki，照准。
 - **ar-b-019 上線**：40 位，reviewFixes 1。
+- 020 g2 交件（QA 本組 0）。thin：Miley Cyrus、One Direction、The 1975。首次類單源（Mylène Farmer 鑽石認證、Red Velvet 平壤）不收。Tellier《Politics》「大部分曲目有 Tony Allen」待本機核。w1（g1+g2）派出。
+- 020 g3 交件（QA 本組 0）。thin：大滝詠一、杏里、林俊傑、藤圭子、謝雷。荒井由実 失敗請求 5 次超限，未取得內容，照收。大滝詠一 主線以通行事實補（はっぴいえんど 成員、1981《A LONG VACATION》、2013 年過世）。pubIssues 3（林俊傑《和自己對話》「全球第一張」範圍；藤圭子《新宿の女》連霸週數；謝雷《梨山痴情花》遣返與禁止出境單源）→ 本機待核。
+- 020 g4 交件（QA 0）。thin：Aqua（貢獻 none）、Blueboy、Brown Eyed Soul（地位 none）、Cavetown。卡池疑點（本機待核）：Big Star《Third/Sister Lovers》1987 疑再版年（原錄約 1978）；Brigitte Fontaine《Brigitte Fontaine est... ?》疑為《…est folle》（1968）簡稱；Cavetown《Everything Is Made of Clouds》2013 未核。w2（g3+g4）派出。
+- 020 w1 審稿（1 處）：IU 刪 Gallup Korea 年度歌手民調「兩度第一」（民調排名比照榜單，且屬在世者累計）。Harry Styles「第一位單獨登上美國版 Vogue 封面的男性」有 NBC 獨立源，照准。
+- 020 w2 審稿無修正。江蕙 2024 年復出（10 月國慶晚會開唱）、Aqua 2026-05-18 宣布解散，皆經主線 WebSearch 核實（中時、自由；Euronews、Consequence）。大滝詠一 加主線事實後升 full，照准。
+- **ar-b-020 上線**：40 位，reviewFixes 1。
