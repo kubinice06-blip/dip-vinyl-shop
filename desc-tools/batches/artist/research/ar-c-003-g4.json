@@ -245,5 +245,152 @@
   "status": "full",
   "pubIssues": [],
   "notes": "搜尋 8 次：en 維基、fr 維基、WebSearch（訃聞）、jazzfuel 傳記、jazz.com 百科、fr 維基第二次（榮譽與 Blue Note）、WebSearch（巴黎 Place）、fr 維基 Place Michel-Petrucciani 條目。失敗請求 2 次：Britannica（404）、NYT 訃聞（工具無法抓取）。疾病不寫細節，只收年份與地點。已確認身分：卡池 Pianism（1986）與 100 Hearts（1984）都是這位法國鋼琴家。非獨立：legacy 第二條與 fr 維基的 src2 同屬法文維基不同條目。事實庫 era 一條取自研究稿 c146-a（Cash Box 1984-04-28 評介『his first for an American label』），與上線簡介『第一次為美國廠牌錄音』一致，卡單 100 Hearts 年份 1984 無誤；這是履歷性質，寫作層可酌用。⚠ 與『第一位』有關的出處不一致，一律不收：法文維基稱他是『第一位與 Blue Note 簽約的非美國藝人』，搜尋摘要稱『第一位與 Blue Note 簽約的法國樂手』，簽約年份 jazz.com 作 1985、搜尋摘要作 1986、jazzfuel 作 1985 年開始錄音；亦有可能有更早的非美國藝人，故不寫。其他出處不一致未收：出生地 jazzfuel 寫 Montpellier，英文維基、法文維基、jazz.com 皆為 Orange，採 Orange；榮譽英文維基寫 1994 年 Légion d'honneur，法文維基只列 1997 年『Officier de l'ordre national du Mérite』且未提 Légion d'honneur，不收；13 歲伴奏 Clark Terry（法文維基）與 1978 年 Cliousclat 爵士節與 Terry 同台（jazzfuel，約 15 歲）不一致，不寫；Charles Lloyd 的年份英文維基作 1982，jazzfuel 作 1980 年代初，facts 只寫『1980 年代初』；遷居美國年份法文維基作 1981，其他作 1982，不寫。單源未收：1990 年代起專注獨奏（jazzfuel 單源）；法文維基列 Victoires du jazz 1988、1990 年度爵士樂手等獎項（單源）；十五歲由鼓手 Aldo Romano 帶到巴黎（英文維基單源）；1985 年 One Night with Blue Note 演出（英文維基單源）；英文維基稱評論界有人批評他情感直接、『太易親近』（單源評語）；jazz.com 稱他 1990 年代成為『爵士圈家喻戶曉的名字』（單源）。"
+ },
+ {
+  "key": "mike osborne trio",
+  "name": "Mike Osborne Trio",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "領隊 Mike Osborne（本名 Michael Evans Osborne）1941 年 9 月 28 日生於英格蘭的 Hereford，2007 年 9 月 19 日過世。",
+      "src": "https://en.wikipedia.org/wiki/Mike_Osborne",
+      "src2": "https://musicbrainz.org/ws/2/artist/90eb12d4-8957-4995-8f45-b2b22ed871e0?fmt=json",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "三重奏的編制是 Mike Osborne（中音薩克斯風）、Harry Miller（低音提琴）與 Louis Moholo（鼓）；《Border Crossing》七軌裡六首是 Osborne 所寫，只有〈Awakening Spirit〉出自 Miller。",
+      "src": "https://www.discogs.com/release/1660268-Mike-Osborne-Trio-Border-Crossing",
+      "from": "bank"
+     },
+     {
+      "f": "《All Night Long (The Willisau Concert)》兩面各是一整段連續的演出：A 面〈All Night Long〉21 分 30 秒、B 面〈Recapitulations〉22 分 10 秒，各含四個段落，八段裡只有〈Round Midnight〉出自別人。",
+      "src": "https://www.discogs.com/release/2485097-Mike-Osborne-Trio-All-Night-Long-The-Willisau-Concert",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Osborne 是 Brotherhood of Breath 的成員。這個大樂團由南非流亡鋼琴家 Chris McGregor 創立，是英國自由爵士樂手與南非流亡樂手合組的英—南非大樂團，同團還有 Harry Miller 與 Louis Moholo。",
+      "src": "https://en.wikipedia.org/wiki/Brotherhood_of_Breath",
+      "src2": "https://en.wikipedia.org/wiki/Mike_Osborne",
+      "from": "new"
+     },
+     {
+      "f": "Osborne 1982 年因健康問題提前結束演奏生涯，回到出生地 Hereford，2007 年在那裡過世，享年 65 歲。",
+      "src": "https://en.wikipedia.org/wiki/Mike_Osborne",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《Border Crossing》是 Ogun 廠牌的第三號目錄（OG 300），1974 年英國發行。",
+      "src": "https://www.discogs.com/master/1774253-Mike-Osborne-Trio-Border-Crossing",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 6,
+  "failedFetches": 10,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "名義：名冊『Mike Osborne Trio』是三重奏編制名義，以領隊 Mike Osborne 為主體撰寫；卡池兩張都是 Osborne／Miller／Moholo 三人。搜尋 6 次：英文維基 Mike Osborne、WebSearch（訃聞）、Ogun Records 維基、Brotherhood of Breath 維基、MusicBrainz 藝人 API（User-Agent 照規定）、WebSearch（1982 年與評價）。失敗請求 10 次（超過上限 4 次，照實記）：theguardian 等域名限定搜尋（400）、AllMusic 與 allaboutjazz（403）、peoplepill（403）、Discogs 藝人頁（403）、JazzTimes（403）、cuneiformrecords http 與 https 各一次（503）、jazzmusicarchives（403）、ogunrecords.com（DNS 失敗）、英文維基 Harry Miller 兩種標題（404）。身分：卡池 Border Crossing（1974）與 All Night Long（1976）皆為這位英格蘭中音薩克斯手的三重奏，無同名混卡（MusicBrainz 另有搖滾與貝斯同名者，與本卡無關）。⚠ legacy 第二條『1982 年因健康問題結束演奏生涯』來自事實庫（英文維基，上線簡介亦同），本層只讀到英文維基這一源；搜尋摘要顯示 Cuneiform 頁亦有同樣敘述，但該頁 503 無法開啟，故標為 bank 單源，寫作層若引用請保守措辭、不寫病名與病況（搜尋摘要提到的病況細節一律不收）。限制：生卒日 src2 是 MusicBrainz 藝人條目（2007 年卒的 Osborne，begin 1941-09-28、end 2007-09-19、出生與終老地皆 Hereford），已實際查詢；legacy 第一條兩源同為英文維基不同條目（非獨立）。單源未收：1962 至 1972 年是 Mike Westbrook 樂團成員、就讀 Wycliffe College 與 Guildhall School of Music（英文維基單源）；1974 至 1975 年與 John Surman、Alan Skidmore 組薩克斯風三人團 S.O.S.（英文維基單源）；Ogun Records 1973 年在倫敦由南非流亡貝斯手 Harry Miller、妻 Hazel Miller 與錄音師 Keith Beal 創立，專門記錄英國自由爵士與南非流亡者，Osborne 列為廠牌記錄的英國創新者之一（英文維基 Ogun 條目單源；Miller 於 1983 年過世）；Louis Moholo 的生平（事實庫條目）可補寫 Blue Notes 與 Brotherhood of Breath 成員身分；搜尋摘要稱論壇網友問『是否是英國最偉大的中音薩克斯手』，非權威共識，不收。未查到：後輩點名、名人堂或國家級榮譽、有出處的共識評價（查不到）。上線簡介檢查：Border Crossing 簡介的 1974 年 9 月 28 日為三十三歲生日，與 MusicBrainz 生日 1941-09-28 相符；兩張簡介無與本層衝突之處。"
+ },
+ {
+  "key": "mina",
+  "name": "Mina",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mina 本名 Mina Anna Mazzini，1940 年 3 月 25 日生於義大利倫巴底的 Busto Arsizio，後來舉家遷到 Cremona，成長於當地。",
+      "src": "https://en.wikipedia.org/wiki/Mina_(Italian_singer)",
+      "src2": "https://it.wikipedia.org/wiki/Mina_(cantante)",
+      "from": "new"
+     },
+     {
+      "f": "她的歌唱生涯起點是 1958 年在 Versilia 一家夜總會的即興登台；義大利文維基指出那家夜總會是 Bussola。",
+      "src": "https://it.wikipedia.org/wiki/Mina_(cantante)",
+      "src2": "https://en.wikipedia.org/wiki/Mina_(Italian_singer)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的嗓音以寬廣的音域與力度、靈活度著稱，英文維基稱她有三個八度的音域。",
+      "src": "https://en.wikipedia.org/wiki/Mina_(Italian_singer)",
+      "src2": "https://it.wikipedia.org/wiki/Mina_(cantante)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年 8 月 23 日，她在 Versilia 的 Bussola（Lido di Camaiore）唱了最後一場現場演出，當時已有約 20 年的舞台資歷。",
+      "src": "https://tg24.sky.it/spettacolo/2018/08/23/mina-40-anni-ultimo-concerto",
+      "src2": "https://www.unita.it/2024/11/21/perche-mina-si-e-ritirata-addio-scene-tv-concerti-ultimo-live-bussoladomani/",
+      "from": "new"
+     },
+     {
+      "f": "她離開舞台的理由是想要隱私，受不了名氣帶來的持續注目。",
+      "src": "https://tg24.sky.it/spettacolo/2018/08/23/mina-40-anni-ultimo-concerto",
+      "src2": "https://www.unita.it/2024/11/21/perche-mina-si-e-ritirata-addio-scene-tv-concerti-ultimo-live-bussoladomani/",
+      "from": "new"
+     },
+     {
+      "f": "此後她再沒有現場演唱，也退出電視、宣傳與訪談，遷居瑞士的 Lugano，繼續在遠離鎂光燈的地方發行錄音室作品。",
+      "src": "https://www.unita.it/2024/11/21/perche-mina-si-e-ritirata-addio-scene-tv-concerti-ultimo-live-bussoladomani/",
+      "src2": "https://en.wikipedia.org/wiki/Mina_(Italian_singer)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1978 年 8 月 23 日在 Bussola 唱完最後一場現場演出，此後不再登台。",
+    "src": "https://tg24.sky.it/spettacolo/2018/08/23/mina-40-anni-ultimo-concerto",
+    "src2": "https://www.unita.it/2024/11/21/perche-mina-si-e-ritirata-addio-scene-tv-concerti-ultimo-live-bussoladomani/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Mina® (1974)",
+    "claim": "義大利第一位自己開唱片公司的歌手",
+    "problem": "本層查到 PDU 是 Mina 與父親 Giacomo Mazzini 於 1967 年在 Lugano 創立（義大利文維基、搜尋摘要一致），但沒有任何來源把這件事寫成『義大利第一位自己開唱片公司的歌手』，『第一位』宣稱無出處，建議退成『與父親創立 PDU』",
+    "src": "https://it.wikipedia.org/wiki/Mina_(cantante)"
+   }
+  ],
+  "notes": "搜尋 8 次：英文維基、義大利文維基、WebSearch（1978 最後演唱會）、Treccani（開成 mina 軍火條目，無用）、Sky TG24、l'Unità、WebSearch（PDU 廠牌）、Treccani 第二個網址（開到首頁，無用）。失敗請求 1 次：gay.it（403）。事實庫研究稿為空、僅有兩篇上線簡介。已確認身分：卡池 Studio Uno 66（1966）與 Mina®（1974）是這位義大利歌手，無同名混卡。出處說明：legacy 前兩條的兩源 Sky TG24 與 l'Unità 都實際開頁讀到，是兩家獨立媒體；『Bussola 也是 1958 年登台處』一句靠義大利文維基同時寫了 1958 年 La Bussola 與 1978 年 La Bussola Viareggio，英文維基只寫 Versilia 夜總會，所以 origin 第二條把 Bussola 這個名字明寫為義大利文維基單源說法；Bussola 的所在地 Sky 寫 Lido di Camaiore、義大利文維基寫 Viareggio（同屬 Versilia），facts 寫 Lido di Camaiore。『約 20 年』是 Sky 與 l'Unità 的說法。單源未收：祖母 Amelia 是西班牙歌劇歌手並教她鋼琴、父親 Giacomo Mazzini 是工業家、1943 年遷 Cremona、1967 年與父親在 Lugano 創立 PDU（義大利文維基，搜尋摘要有同樣說法但未開頁，故單源）；小時候聽美國搖滾與爵士、常去米蘭俱樂部（英文維基單源）；早期切分搖滾、後期戲劇化抒情的風格轉變（英文維基單源）；1963 年與已婚演員 Corrado Pani 的關係與生子引發的廣播禁播、RAI 在 1964 年 1 月因聽眾需求恢復她的節目（英文維基單源，社會現象，建議寫作層若要用請另補第二源）；英文維基稱 Louis Armstrong『據稱』說她是『世上最偉大的白人歌手』（單源且帶『據稱』）；義大利文維基稱她『被視為義大利歌壇歷史上最有天分的嗓音之一』，並列 Frank Sinatra、Louis Armstrong、Luciano Pavarotti、Sarah Vaughan 的讚譽（單源，共識評價缺第二源，不收）；l'Unità 引述她解釋退出的說法（『我天生不是為了唱歌』）與兒子證實那是自發決定（單源）；1978 年 8 月 23 日最後一曲〈Grande grande grande〉（l'Unità 單源，搜尋摘要亦同）；1978 年演唱會錄音發行為專輯《Mina Live '78》（僅搜尋摘要，未開頁）；1968 年 5 月發行義大利首張現場專輯《Mina alla Bussola dal vivo》（僅搜尋摘要，且是『第一』宣稱，不收）。『最後一場是否因身體原因提前結束』搜尋摘要有提，不收。銷量（1.5 億張、25 張冠軍專輯）不寫。注意：Treccani 摘要工具曾輸出『Mina（1940-2024）』字樣，那是工具摘要、非來源原文，未經查證，英文維基與 l'Unità 的語氣皆為在世，寫作層不要寫她的生死狀態以外的推測。era 格：無兩源事實，標 none。上線簡介其餘主張（Se telefonando 的警笛靈感、Musica e dischi 榜、2010 年 La Repubblica 讀者票選三萬人）本層未查，不列 pubIssues。 補：Sky 稱她『definitivamente nel mito della musica italiana』（單源措辭，未入 facts）；『這家 Bussola 也是 1958 年首度登台處』僅義大利文維基一源，故未寫進 legacy 事實。"
  }
 ]
