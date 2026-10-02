@@ -195,3 +195,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - g2 交件（QA 本組 0）。地位僅一條：Traffic、U2、Ulver。Ulver《Nattens Madrigal》卡池記 1996、實為 1997-03 發行 → 本機待改。w1（g1+g2）派出。
 - g4 交件。thin：光束夜、八十八顆芭樂籽、夢幻（地位 none）。산울림、八十八顆芭樂籽 搜尋 9 次超限 1 次（該次未取用）；夢幻 失敗請求 5 次超限，未取得內容，照收。pubIssues 1（光束夜《1st》年份 1990／1991 → 本機待核）。五月天 MSG 首組說法只准「被稱為」。w2（g3+g4）派出。
 - w1 審稿（2 處）：Viagra Boys 2026 Grammis 年度專輯經主線 WebSearch 核實（得獎），但 Murphy「年度詞作者」只見入圍、未證實得獎 → 刪；「兩度年度搖滾」改「多次獲 Grammis 肯定」。toe 文中 tricot 改小寫通行寫法。
+- w2 審稿（1 處）：X 的 Ray Manzarek 製作了前四張而非「前三張」→ 改「最初的幾張」。Wolf Alice 由 thin 升 full（Mercury＋主線核實的 Brit），照准。光束夜正文「不失者」漢字主線核對無誤。
+- **ar-b-016 上線**：40 位，reviewFixes 3。
