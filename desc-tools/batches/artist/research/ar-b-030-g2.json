@@ -670,5 +670,96 @@
     "failedFetches": 1,
     "status": "full",
     "notes": "⚠ 搜尋次數 9，超出上限 1 次（第 9 次是 yourclassical.org 的 1812 序曲條目，只確認了錄音編號，沒有取得任何事實，故已棄用，所有 f 欄事實都來自前 8 次）。依序：維基 Antal Doráti、WebSearch（訃聞與生平）、Britannica、維基 Philharmonia Hungarica、encyclopedia.com（Baker's Biographical Dictionary 與 Concise Oxford Dictionary of Music）、維基 1812 Overture、維基 Mercury Living Presence、WebSearch（1812 錄音史）、yourclassical.org（棄用）；失敗 1 次（Washington Post 訃聞 403）。同名檢查：poolAlbums 四張（海頓倫敦交響曲 1974、柴可夫斯基 1812 1978、Bartók《神奇的滿大人》1985、史特拉文斯基《火鳥》Mercury 1959）都是匈牙利裔指揮 Doráti，無同名混卡。非獨立提示：維基 Doráti、Philharmonia Hungarica、1812 Overture、Mercury Living Presence 同站不同條目，『1812 序曲』那條兩源『非獨立』；Britannica 與 Baker's（encyclopedia.com 轉載）為獨立來源。單源未收：逝世於 1988 年 11 月 13 日、地點 Gerzensee（維基單源；WaPo 訃聞網址日期為 1988 年 11 月 15 日但頁面 403 未開、搜尋摘要同說，不足兩源開頁，故逝世年不收 f，寫作層若要寫須另行補查）、1983 年獲頒 KBE 榮譽爵位（維基單源）、Philharmonia Hungarica 1956 年由逃離蘇聯入侵的匈牙利樂手在維也納近郊 Baden 成立、Doráti 任榮譽會長（維基單源，與他的流亡匈牙利背景有關，值得寫作層參考但無第二源）、1812 錄音『成為測試音響的常用試片』（維基單源）、1954 年 12 月 4 日 Northrop Auditorium 錄音與 1761 年 Strasbourg 製造的大砲（搜尋摘要，未開頁）、該錄音『十年間最暢銷古典唱片』（搜尋摘要，未開頁）、Mercury 的柴可夫斯基三大芭蕾『首度完整錄音』（維基 Mercury Living Presence 單源，屬首次類且拿不準，不收）、錄音超過 600 張（維基單源）、自傳《Notes of Seven Decades》1979（Britannica 單源）、他本人也作曲（來源未開）。事實庫既有三條 Firebird 研究稿事實（Mercury 系列名稱由來、Cozart、芭蕾經歷）屬專輯層級，未重複收；上線簡介〈火鳥〉說『1940 年代前期轉到 Ballet Theatre』與兩源的 1941 年一致。古典音樂家職位年份要兩源才寫：本位只寫兩源一致者。"
+  },
+  {
+    "key": "arthur rubinstein",
+    "name": "Arthur Rubinstein",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Arthur（Artur）Rubinstein 1887 年 1 月 28 日生於波蘭洛茲（Łódź），1982 年 12 月 20 日在日內瓦逝世，享年 95 歲。",
+            "src": "https://en.wikipedia.org/wiki/Arthur_Rubinstein",
+            "src2": "https://www.britannica.com/biography/Artur-Rubinstein",
+            "from": "new"
+          },
+          {
+            "f": "他是神童，十歲上下到柏林，跟 Heinrich Barth 學琴，1900 年 13 歲在柏林登台。",
+            "src": "https://en.wikipedia.org/wiki/Arthur_Rubinstein",
+            "src2": "https://www.britannica.com/biography/Artur-Rubinstein",
+            "from": "new"
+          },
+          {
+            "f": "二次大戰期間他移居美國，1946 年成為美國公民。",
+            "src": "https://en.wikipedia.org/wiki/Arthur_Rubinstein",
+            "src2": "https://www.britannica.com/biography/Artur-Rubinstein",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chopin 是他的專長，也是他最出名的曲目；同時曲目寬廣，從 Mozart、Beethoven 到 Ravel、Stravinsky 都彈。",
+            "src": "https://en.wikipedia.org/wiki/Arthur_Rubinstein",
+            "src2": "https://www.britannica.com/biography/Artur-Rubinstein",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Rubinstein 被廣泛視為二十世紀最偉大的鋼琴家之一；維基的寫法是 widely regarded as one of the greatest pianists of his day，Britannica 則寫許多人視他為本世紀這套曲目的首席詮釋者。",
+            "src": "https://en.wikipedia.org/wiki/Arthur_Rubinstein",
+            "src2": "https://www.britannica.com/biography/Artur-Rubinstein",
+            "from": "new"
+          },
+          {
+            "f": "他 1976 年獲美國總統自由勳章（Presidential Medal of Freedom）。",
+            "src": "https://en.wikipedia.org/wiki/Arthur_Rubinstein",
+            "src2": "https://www.britannica.com/biography/Artur-Rubinstein",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1976 年退出舞台；晚年出了兩冊自傳，《My Young Years》（1973）與《My Many Years》（1980）。",
+            "src": "https://en.wikipedia.org/wiki/Arthur_Rubinstein",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/arthur-rubinstein",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1900 年 13 歲在柏林登台。",
+        "src": "https://en.wikipedia.org/wiki/Arthur_Rubinstein",
+        "from": "new"
+      },
+      {
+        "f": "1976 年獲美國總統自由勳章，同年退出舞台。",
+        "src": "https://www.britannica.com/biography/Artur-Rubinstein",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "退休時的最後一場音樂會：維基寫 1976 年 5 月倫敦 Wigmore Hall，encyclopedia.com 寫 3 月 Carnegie Hall；兩源不一致，f 欄只寫『1976 年退出舞台』，不寫地點與月份。",
+      "出生年：encyclopedia.com 寫 1886–1887 並陳，維基與 Britannica 皆寫 1887 年 1 月 28 日；採 1887。",
+      "赴柏林年齡與公開首演年齡：Britannica 寫 8 歲進華沙音樂院、7 歲首次公開演出，維基與 encyclopedia.com 寫 10 歲赴柏林；f 欄只寫兩源一致的『十歲上下到柏林』與『1900 年 13 歲柏林登台』。",
+      "事實庫 research 為空、上線簡介兩筆（〈Rubinstein Plays Liszt〉、〈Chopin: Polonaises (1964)〉）；〈Polonaises〉簡介提到『1964 年同年在莫斯科開全場 Chopin 獨奏會』與維基一致；『77 歲』推算符合 1887 年生。"
+    ],
+    "pubIssues": [],
+    "searches": 4,
+    "failedFetches": 4,
+    "status": "full",
+    "notes": "本位 4 次計入：維基 Arthur Rubinstein、WebSearch（生平與 Chopin）、Britannica（Artur-Rubinstein）、encyclopedia.com；失敗 4 次（Britannica 另一網址 404、Gramophone 專文 403、culture.pl 只取得標題大綱無內文、Sony Classical 403），已達失敗上限。同名檢查：poolAlbums 四張（Chopin 夜曲 1967、敘事曲與詼諧曲 1960、波蘭舞曲 1964、Rubinstein Plays Liszt 1956）都是波蘭裔鋼琴家 Arthur Rubinstein（舊稱 Artur），無同名混卡。非獨立提示：Britannica 與 encyclopedia.com（Gale 等詞典轉載）為獨立來源；維基單條。單源未收：1906 年美國首演反應冷淡與 1937 年 Carnegie Hall 演出讓他被稱『天才』（Britannica 單源）、Joachim 聽四歲的他說『這孩子將成為偉大音樂家』（維基單源；encyclopedia.com 寫法是十歲面試 Joachim，兩源說法不同）、1976 年總統自由勳章以外的榮譽：1977 KBE、1978 甘迺迪中心榮譽、1994 葛萊美終身成就獎（維基單源）、1969 年紀錄片《Arthur Rubinstein – The Love of Life》獲奧斯卡最佳紀錄長片（維基單源）、NYT 逝世報導稱他被許多人視為無人能比的 Chopin 演奏者（維基轉述 NYT，單源）、Harold Schonberg 評『沒有鋼琴家像 Rubinstein 那樣把一切整合在一起』（encyclopedia.com 單源）、Barth 的教學塑造了他獨特的音色（encyclopedia.com 單源）、納粹抄沒他巴黎住宅財物後他拒絕再到德國演奏（encyclopedia.com 單源）、1958 年戰後回波蘭演出（encyclopedia.com 單源）、『演奏生涯橫跨八十年』（維基單源）、『civilized yet passionate eloquence』的評語（搜尋摘要、出處未開頁）、1969 年發現黃斑部病變（encyclopedia.com 單源）、1964 年莫斯科全場 Chopin 獨奏會（維基單源；上線簡介已寫）、三度錄製波蘭舞曲的年份（事實庫上線簡介所述，未重新查證）。"
   }
 ]
