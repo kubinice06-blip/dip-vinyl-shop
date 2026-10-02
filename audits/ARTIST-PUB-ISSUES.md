@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 201 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 210 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -205,3 +205,12 @@
 | ar-b-022 | 陳慧嫻 | 永遠是你的朋友 | 她也是唯一以同一張唱片有兩首歌同年入選十大中文金曲的女歌手 | 『唯一』類宣稱，補查的中文維基陳慧嫻條與〈千千闋歌〉條都只記〈千千闋歌〉入選 1989 年十大中文金曲，沒有『唯一』或另一首同年入選的記載，無法找到來源；建議主線在本機核對 1989 年十大中文金曲名單，查不到就刪掉這句。 | https://zh.wikipedia.org/wiki/千千闋歌 |
 | ar-b-022 | Cesária Évora | Mar Azul | 前兩張唱片反應冷淡，1991 年這套八曲作品才真正賣動 | 英文維基與 Britannica 都寫的是 1992 年的《Miss Perfumado》帶來歐洲普遍的人氣與國際巡演；1991 年《Mar Azul》是她第三張，說它才真正賣動與兩源的突破作說法不符。建議改成『Miss Perfumado 之前的作品』或拿掉『才真正賣動』。另該簡介說 1987 年由 José da Silva 發掘，Britannica 與維基只說她 1985 年復出、1988 年首張專輯，1987 年未見支持。 | https://www.britannica.com/biography/Cesaria-Evora |
 | ar-b-022 | Fania All-Stars | Latin-Soul-Rock | 同一條目抄下 1974 年原壓的說明欄：錄於 1973 年 8 月 24 日的洋基球場與紐約 Good Vibrations 錄音室，只有〈Soul Makossa〉錄在聖胡安 | 這句是轉述 Discogs 說明欄，洋基球場日期與美國國會圖書館文章不同（8 月 23 日 vs 24 日，LOC 文內自己也寫成『星期五』但 8 月 23 日是星期四），建議簡介保留轉述語氣，或把日期改成『1973 年 8 月』。另外 LOC 文章說《Live at Yankee Stadium》的音源有一部分取自 1973 年 11 月的波多黎各演出，與簡介無直接衝突。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf |
+| ar-b-022 | Goran Bregović | Time of the Gypsies | 是 Goran Bregović 結束 Bijelo Dugme 後跨進電影音樂的第一份工作 | 維基寫 Bijelo Dugme 1989 年才因政治危機解散，而《Time of the Gypsies》1988 年 12 月 21 日已在南斯拉夫首映，配樂早在樂團解散前完成，『結束 Bijelo Dugme 後』的時序對不上；『第一份電影音樂工作』也只見簡介，兩源都沒有這樣寫（Save The Music 只寫他『從 Time of the Gypsies 起』成為電影配樂主力）。建議改成『他在 Bijelo Dugme 時期之末跨進電影音樂的重要一步』或拿掉『第一份』。 | https://en.wikipedia.org/wiki/Time_of_the_Gypsies |
+| ar-b-023 | Yellowman | Zungguzungguguzungguzeng | 源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉 | 維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。（此條在補查 Alton Ellis 時發現。） | https://en.wikipedia.org/wiki/Alton_Ellis |
+| ar-b-023 | Youssou N'Dour | Egypt | 拿下 2004 年葛萊美最佳當代世界音樂專輯 | Grammy 官網的藝人頁記為第 47 屆（2005 年）Best Contemporary World Music Album 得獎專輯《Egypt》；2004 年（第 46 屆）他的提名是另一張《Nothing's In Vain (Coono du Réér)》。維基《Egypt》專輯條目寫成『2004 Grammy Award』，應是上線簡介出錯的來源。 | https://www.grammy.com/artists/youssou-ndour/17140/ |
+| ar-b-023 | Alton Ellis | Sings Rock and Soul | 同年（1967）替 Duke Reid 錄的〈Rock Steady〉是第一首在歌名裡指出這個樂種的作品 | 維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。 | https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady |
+| ar-b-023 | Alton Ellis | Mr. Soul of Jamaica | Ellis 1967 年的〈Rock Steady〉是第一首把這個節奏名稱唱進歌名的作品 | 維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。 | https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady |
+| ar-b-023 | Alton Ellis | （Yellowman 卡）Zungguzungguguzungguzeng | 源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉 | 維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。 | https://en.wikipedia.org/wiki/Alton_Ellis |
+| ar-b-023 | Dennis Brown | Wolf & Leopards | Bob Marley 口中的 Crown Prince of Reggae | 維基稱 Marley 贈此稱號，但 jamaicasonice 稱此稱號是 1980 年代前後才得到，各源只一致於『Marley 說他是最愛的歌手』；建議改寫成『Marley 曾說他是自己最喜歡的歌手』 | https://www.jamaicasonice.com/post/famous-jamaicans-the-crown-prince-of-reggae-dennis-emmanuel-brown |
+| ar-b-023 | Dennis Brown | No Man Is an Island | 錄這批母帶時他 12 歲；錄音在 1969 至 1970 年間完成，他當時 12 到 13 歲 | 各源對出道錄音時的年齡不一（維基 12 歲、jamaicasonice 與 reggae museum 11 歲、牙買加國家圖書館 13 歲被發掘），建議改成『還是個孩子』避開年齡 | https://nlj.gov.jm/reggaeportal/dennisbrown/ |
+| ar-b-023 | Orhan Gencebay | Bir Teselli Ver | 〈Bir Teselli Ver〉最早是 1971 年的 45 轉單曲 | Daily Sabah 寫該曲所在 EP 為 1970 年；tr 維基寫 1969 年的突破單曲；上線簡介寫 1971；三源不一致，建議店主在本機核對原盤年份後再決定是否保留該年份 | https://www.dailysabah.com/portrait/2015/06/06/orhan-gencebay-inventor-of-turkish-arabesque-music |
