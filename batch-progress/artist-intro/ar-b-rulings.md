@@ -338,3 +338,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 030 w2 審稿（2 處）：Jerry Goldsmith「1976 年拿下奧斯卡」改「以《The Omen》拿下」（該片 1976 年上映，頒獎在 1977 年）；鷺巣詩郎《新・哥吉拉》改台灣片名《正宗哥吉拉》。Herrmann AFI 名次比照 Goldsmith 不寫。Lloyd Webber 的《貓》《歌劇魅影》用台灣通行譯名，照准。
 - **ar-b-030 上線**：40 位，reviewFixes 4。
 - 031 w1 審稿無修正。Pärt 的 Bachtrack「演出最多的在世作曲家」屬榜單與最高級，不寫，照准。Britten「第一位受封終身貴族的作曲家」屬通行事實，照准。Lipatti、Kleiber、du Pré、Wunderlich 均無死因；du Pré 無過世年。
+- 031 g3 交件（QA 本組 0）。thin：Jonny Greenwood、Jordi Savall（身世 none；失敗請求 5 次超限）。Lang Lang 貢獻格的樂評分歧語氣要保留。Pollini：斯卡拉「我們時代最偉大」只有美聯社單源、葛萊美年 2006／2007 不一、「首位非斯拉夫人贏蕭邦大賽」有反例，皆不寫。Kronos 遷居年與委託數不寫。Bernstein 甘迺迪中心榮譽採 1980。主詞：Kronos 葛萊美為樂團、Radiohead 名人堂為樂團。pubIssues 1（Michael Nyman《The Piano》銷量數字兩源不一，在世者銷量建議刪）→ 本機待核。
