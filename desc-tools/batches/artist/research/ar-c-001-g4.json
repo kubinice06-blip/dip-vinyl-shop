@@ -602,5 +602,321 @@
   "failedFetches": 2,
   "status": "thin",
   "notes": "身分確認：poolAlbums《New History Warfare Vol. 2: Judges》2011 與《Sorrow (reimagining Górecki)》2016 皆為薩克斯風手 Colin Stetson（蒙特婁），無同名混卡。事實庫 research 為空，從零查。搜尋 5 次：維基 1、WebSearch 生平 2、colinstetson.com/bio 3、WebSearch Polaris 4、維基 2011 Polaris Music Prize 5；失敗請求 2 次（NPR 503、BlogTO 403）。第二源實際開頁：colinstetson.com 官網傳記（官方自述，非獨立；origin、sound、legacy 多條皆此）、維基 2011 Polaris 條目（同站，非獨立）。legacy 查不到有兩源的共識評價（名人堂、後輩點名、國家級榮譽），標 thin；Polaris 為入圍而非得獎，寫作層須寫明『入圍決選名單』。單源不收：（0）維基引 New Yorker 影評人 Anthony Lane 形容 Hereditary 配樂像『為小提琴、打擊、一頭座頭鯨與蝙蝠而寫』；（1）官網稱他學循環呼吸只花一個下午，搜尋摘要同說但來源（AllMusic／leguesswho）未開；（2）官網稱他的演出全為原聲、不用效果器或疊錄，搜尋摘要稱 Judges 單人現場一次錄成、用約二十支麥克風（來源 Metacritic／維基未開頁），單源；（3）Mary Anne Hobbs 的『能改變你怎麼想音樂』評語（官網單源）；（4）Jeff Mangum 挑選他在 2011 年 ATP 演出（維基單源）；（5）師承 Roscoe Mitchell 與 Donald Sinta 只有搜尋摘要（官網只寫 Sinta）；（6）Arcade Fire 2007 至 2010 年的成員身分只見官網。"
+ },
+ {
+  "key": "corduroy",
+  "name": "Corduroy",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Corduroy 是倫敦的四人 acid jazz 團，1991 年從 Boys Wonder 的班底演變出來，起初只是為一場跨年派對臨時組成；核心是雙胞胎 Ben Addison（鼓、主唱）與 Scott Addison（鍵盤），兩人先前都在 Sire 旗下的 Boys Wonder。",
+      "src": "https://en.wikipedia.org/wiki/Corduroy_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Richard_Searle",
+      "from": "new"
+     },
+     {
+      "f": "另兩位團員是貝斯手 Richard Searle（曾在 Doctor and the Medics，該團 1986 年以〈Spirit in the Sky〉的翻唱登上英國單曲榜冠軍）與吉他手 Simon Nelson-Smith。",
+      "src": "https://en.wikipedia.org/wiki/Corduroy_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Richard_Searle",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們自稱「fabric four」，主要錄製電影配樂風格的作品，許多曲子是器樂。",
+      "src": "https://en.wikipedia.org/wiki/Corduroy_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Dad_Man_Cat",
+      "from": "new"
+     },
+     {
+      "f": "1992 年 Acid Jazz Records 發行的首作《Dad Man Cat》以器樂為主，樂團與廠牌創辦人 Eddie Piller 共同製作；曲目有〈Harry Palmer〉等，借六○年代英國間諜電影配樂的語彙。",
+      "src": "https://en.wikipedia.org/wiki/Dad_Man_Cat",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們在 Eddie Piller 的 Acid Jazz Records 出了三張專輯（《Dad Man Cat》《High Havoc》《Out of Here》），1993 年《High Havoc》有數支單曲進英國獨立榜，1994 年《Out of Here》登上英國專輯榜第 73 名。",
+      "src": "https://en.wikipedia.org/wiki/Corduroy_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Out_of_Here_(Corduroy_album)",
+      "from": "new"
+     },
+     {
+      "f": "樂團在日本累積了一批支持者，1993 年首度赴日，之後多次再訪，1994 年錄了現場專輯《Quattro - Live in Japan》。",
+      "src": "https://en.wikipedia.org/wiki/Corduroy_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Richard_Searle",
+      "from": "new"
+     },
+     {
+      "f": "樂團 1999 年解散，2007 年在倫敦 Jazz Cafe 重聚演出，2018 年在 Acid Jazz Records 發行睽違 18 年的新專輯《Return of the Fabric Four》。",
+      "src": "https://en.wikipedia.org/wiki/Corduroy_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Richard_Searle",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1991 年成軍；1992 年首作《Dad Man Cat》、1993 年《High Havoc》、1994 年《Out of Here》，都在 Acid Jazz Records。",
+      "src": "https://en.wikipedia.org/wiki/Corduroy_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Out_of_Here_(Corduroy_album)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Acid Jazz Records 維基條寫 1989 年簽下 Corduroy，與 Corduroy 條寫 1991 年才由 Boys Wonder 演變成團不一致；facts 只採 1991。",
+   "事實庫上線簡介 Dad Man Cat 寫『首作』、Acid Jazz 出版，與維基一致；High Havoc 簡介寫的 1993 年 10 月發行日期，維基只寫 1993 年，未核月份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "thin",
+  "notes": "身分確認：poolAlbums《Dad Man Cat》1992、《High Havoc》1993 皆為倫敦 acid jazz 團 Corduroy，無同名混卡。事實庫 research 為空，從零查。搜尋 8 次：維基 Corduroy (band) 1、WebSearch 2、WebSearch（Return of the Fabric Four）3、維基 Richard Searle 4、維基 High Havoc 5、維基 Out of Here 6、維基 Dad Man Cat 7、維基 Acid Jazz Records 8；失敗請求 4 次（Rough Trade en-us 403、Rough Trade en-gb 403、last.fm 無內容、Discogs 403；AllMusic 也未能開）。【非獨立】所有 facts 的兩源都是英文維基的不同條目（互相引用、同站），查不到站外的第二個可開頁來源，故全藝人標 thin，寫作層宜少寫；Rough Trade 搜尋摘要稱「1991 年從 Boys Wonder 的灰燼中成軍、在 Acid Jazz 做了三張越來越出色的專輯、此後十年在世界各地演出」屬廠商文案，未開頁，不收。單源不收：（0）NME 的 Paul Moody 對《Dad Man Cat》的評語（維基單源），Louder Than War 稱〈London England〉成為 1990s 舞池經典、並說 Blur 邀他們 1994 年在 Alexandra Palace 暖場（維基 High Havoc 條單源）；（1）Select 對 High Havoc 與 Out of Here 的低評（雜誌評論不收）；（2）1998 年《Mini!: The Best of Corduroy》等選輯與 Big Cat 時期專輯細節；（3）Searle 條稱樂團樣式建立在 Simon Nelson-Smith 領導的一支本地器樂爵士團上，單源。評論文字與雜誌評分一律不收。"
+ },
+ {
+  "key": "cortex",
+  "name": "Cortex",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Cortex 是法國的爵士放克樂團，1974 年由鍵盤手 Alain Mion 在巴黎成軍；早期成員有女主唱 Mireille Dalbray、鼓手 Alain Gandolfi、中音薩克斯風手 Alain Labib 與貝斯手 Jean Grevet。",
+      "src": "https://en.wikipedia.org/wiki/Cortex_(band)",
+      "src2": "https://microchop.substack.com/p/cortex-the-mysterious-french-band",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1975 年的首作《Troupeau Bleu》只花了兩天錄完，Mireille Dalbray 的聲音出現在幾乎每一首曲子裡。",
+      "src": "https://en.wikipedia.org/wiki/Cortex_(band)",
+      "src2": "https://www.cbsnews.com/sanfrancisco/news/cortex-french-jazz-funk-uc-berkeley-theatre/",
+      "from": "new"
+     },
+     {
+      "f": "他們的曲風混合爵士、放克與靈魂，帶迷幻搖滾的氛圍與巴西式的 samba、bossa nova 律動，配上飄在樂器層之上的人聲。",
+      "src": "https://en.wikipedia.org/wiki/Cortex_(band)",
+      "src2": "https://www.cbsnews.com/sanfrancisco/news/cortex-french-jazz-funk-uc-berkeley-theatre/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 1981 年解散後長期無人提起，直到 2000 年代前後，rare groove DJ 與 hip-hop 製作人陸續取樣《Troupeau Bleu》才重新受到注意；MF DOOM、Tyler, the Creator、Flying Lotus 與 Lupe Fiasco 都用過他們的曲子。",
+      "src": "https://en.wikipedia.org/wiki/Cortex_(band)",
+      "src2": "https://www.cbsnews.com/sanfrancisco/news/cortex-french-jazz-funk-uc-berkeley-theatre/",
+      "from": "new"
+     },
+     {
+      "f": "Alain Mion 在 2009 年重組樂團（Alain Mion & The New Cortex），2022 年首度赴美演出。",
+      "src": "https://en.wikipedia.org/wiki/Cortex_(band)",
+      "src2": "https://www.cbsnews.com/sanfrancisco/news/cortex-french-jazz-funk-uc-berkeley-theatre/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1974 年成軍、1981 年解散、2009 年重組。",
+      "src": "https://en.wikipedia.org/wiki/Cortex_(band)",
+      "src2": "https://www.cbsnews.com/sanfrancisco/news/cortex-french-jazz-funk-uc-berkeley-theatre/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "CBS 稿把鼓手寫成 Alain Gandolfini，維基與 Micro-Chop 皆寫 Gandolfi；採 Gandolfi。",
+   "唱片廠牌：維基目錄寫 Vol. 2 為 Sonodisc（Trad Vibe 再版），Micro-Chop 寫《Troupeau Bleu》與《Volume 2》皆出在巴黎的 Disques Espérance；上線簡介寫 Disques Espérance。廠牌不歸藝人格，未進 facts，但列入 pubIssues 供店主核對。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Vol. 2",
+    "claim": "1977 年由法國 Disques Espérance 發行（ESP 165501）",
+    "problem": "維基目錄寫 Vol. 2 為 Sonodisc 發行（再版 Trad Vibe），Micro-Chop 則寫兩張都在 Disques Espérance；各源不一致，建議對照原盤標籤再定廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Cortex_(band)"
+   }
+  ],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "身分確認：poolAlbums《Troupeau Bleu》1975、《Vol. 2》1977 皆為 Alain Mion 領軍的法國 Cortex，無同名混卡。事實庫 research 為空，從零查。搜尋 5 次：維基 Cortex (band) 1、WebSearch 2、WebSearch 3、Micro-Chop 4、CBS San Francisco 5；失敗請求 2 次（BrooklynVegan 403、Rolling Stone tollbit 402）。第二源實際開頁：Micro-Chop（Substack 文章，origin）、CBS 新聞（sound、legacy、era）。Micro-Chop 與維基 Cortex 條的來源清單互相引用，非完全獨立。單源不收：（0）維基寫成員是因為 Mion 回應巴黎 Centre Américain 佈告欄的徵人海報才湊在一起；（1）Micro-Chop 稱 Mion 是「據報導法國被取樣最多的藝人」，WhoSampled 116 筆，Madlib 2004 年的製作與 Wiz Khalifa 2010 年的曲子帶動後續取樣；CBS 稱 DJ Cam 1997 年為最早取樣者（『最早』類，兩源說法不同、且在世者數字不寫）；（2）CBS 稱 Mion 1960 年代末在巴黎領自己的三重奏、《Troupeau Bleu》用 Fender Rhodes；（3）Forced Exposure 稱樂團為「神話般的」，Micro-Chop 轉述，單源；（4）搜尋摘要稱《Troupeau Bleu》被取樣至少 142 次，來源不明；（5）上線簡介說〈Huit octobre 1971〉取名自 Dalbray 與 Mion 的結婚紀念日，未能在任何開頁來源查到。「2022 年首度赴美」一句：CBS 明寫首次，維基只寫 2022 年赴美巡演，『首次』類宣稱兩源口徑略有差異，寫作層可寫「2022 年赴美演出」。"
+ },
+ {
+  "key": "cory wong",
+  "name": "Cory Wong",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Cory Wong 約 1985 年生，在明尼蘇達長大、現居明尼阿波利斯（Twin Cities）；父母喜歡音樂，從小讓他接觸搖滾與爵士。",
+      "src": "https://en.wikipedia.org/wiki/Cory_Wong",
+      "src2": "https://www.hometownsource.com/abc_newspapers/community/fridley/a-sound-of-his-own-fridley-grad-cory-wong-journeys-to-renowned-guitarist-musician/article_b6e73570-ed28-11ea-a7af-43197ced54c1.html",
+      "from": "new"
+     },
+     {
+      "f": "他年少時迷上 Red Hot Chili Peppers 與 Primus，想打貝斯、組團，後來走上吉他；他念過明尼蘇達大學，之後轉進 St. Paul 的 McNally Smith College of Music 讀音樂。",
+      "src": "https://en.wikipedia.org/wiki/Cory_Wong",
+      "src2": "https://www.hometownsource.com/abc_newspapers/community/fridley/a-sound-of-his-own-fridley-grad-cory-wong-journeys-to-renowned-guitarist-musician/article_b6e73570-ed28-11ea-a7af-43197ced54c1.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以節奏吉他為招牌，在 Vulfpeck 裡說自己的聲音有一部分是「把節奏吉他帶到前面」；彈法偏大幅度的掃弦。",
+      "src": "https://en.wikipedia.org/wiki/Cory_Wong",
+      "src2": "https://mixdownmag.com.au/features/cory-wong-on-his-youtube-series-touring-with-vulfpeck-and-new-fender-stratocaster-guitar/",
+      "from": "new"
+     },
+     {
+      "f": "他是放克樂團 Vulfpeck 的吉他手，也是器樂四重奏 The Fearless Flyers 的成員。",
+      "src": "https://en.wikipedia.org/wiki/Cory_Wong",
+      "src2": "https://mixdownmag.com.au/features/cory-wong-on-his-youtube-series-touring-with-vulfpeck-and-new-fender-stratocaster-guitar/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他與 Jon Batiste 合作的新世紀專輯《Meditations》入圍第 63 屆葛萊美獎最佳新世紀專輯（Best New Age Album，入圍未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/63rd_Annual_Grammy_Awards",
+      "src2": "https://mixdownmag.com.au/features/cory-wong-on-his-youtube-series-touring-with-vulfpeck-and-new-fender-stratocaster-guitar/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2017 年發行首張個人專輯《Cory Wong and The Green Screen Band》，2020 年與 Jon Batiste 發行《Meditations》。",
+      "src": "https://en.wikipedia.org/wiki/Cory_Wong",
+      "src2": "https://mixdownmag.com.au/features/cory-wong-on-his-youtube-series-touring-with-vulfpeck-and-new-fender-stratocaster-guitar/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Meditations》（與 Jon Batiste）入圍第 63 屆葛萊美獎最佳新世紀專輯。",
+    "src": "https://en.wikipedia.org/wiki/63rd_Annual_Grammy_Awards",
+    "src2": "https://mixdownmag.com.au/features/cory-wong-on-his-youtube-series-touring-with-vulfpeck-and-new-fender-stratocaster-guitar/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "身分確認：poolAlbums《Elevator Music for an Elevated Mood》與《Meditations》皆 2020 年，為明尼阿波利斯吉他手 Cory Wong，無同名混卡。《Meditations》是與 Jon Batiste 的合作專輯，卡池掛名 Cory Wong。事實庫 research 為空，從零查。搜尋 5 次：維基 Cory Wong 1、WebSearch 2、hometownsource 3、Mixdown 4、維基 63rd Annual Grammy Awards 5；失敗請求 1 次（AllAboutJazz 403）。第二源實際開頁：hometownsource（Fridley 高中畢業生報導）、Mixdown 專訪；在世者，不寫銷量與座數。legacy 查不到有兩源的共識評價（名人堂、後輩點名、國家榮譽），只有葛萊美入圍，故 thin。入圍年份依葛萊美維基的第 63 屆提名名單（2021 年頒獎，《Meditations》列於最佳新世紀專輯提名；該屆得主非本專輯）。第二源 Mixdown 只寫『Grammy-nominated』，未寫屆次與類別，屆次與類別只有維基名單支撐，列為『維基單源的細節』，寫作層可寫「葛萊美入圍」，不必寫屆次。單源不收：（0）維基寫他 2013 年與 Vulfpeck 同台即興、2016 年起正式隨團錄音巡演並錄了每張專輯，hometownsource 與 Mixdown 未寫年份；（1）hometownsource 寫 Vulfpeck 靠網路累積聽眾後在 Madison Square Garden 演出，Mixdown 說在 MSG 演出像登頂，兩處皆是團的成就、在世者座數不寫；（2）他自述的導師 Andrés Prado、Michael Bland 與早期影響 Dave Williams、Paul Jackson Jr.（維基單源）；（3）2021 年起的 YouTube 綜藝節目《Cory and the Wongnotes》（維基單源）；（4）Mixdown 載其父列舉 Stratocaster 名手的話。"
+ },
+ {
+  "key": "dave burrell",
+  "name": "Dave Burrell",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dave Burrell 本名 Herman Davis Burrell，1940 年 9 月 10 日出生，一般記載為俄亥俄州 Middletown 人。",
+      "src": "https://en.wikipedia.org/wiki/Dave_Burrell",
+      "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/burrell-dave-herman-davis-ii",
+      "from": "new"
+     },
+     {
+      "f": "他讀過夏威夷大學與波士頓的 Berklee 音樂學院，之後移居紐約，與 Marion Brown、Pharoah Sanders 等人合作。",
+      "src": "https://en.wikipedia.org/wiki/Dave_Burrell",
+      "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/burrell-dave-herman-davis-ii",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 年夏天他在巴黎為法國 BYG Actuel 錄下《Echo》與《La Vie de Bohème》，當時自由爵士樂手在法國比在美國受歡迎。",
+      "src": "https://en.wikipedia.org/wiki/Dave_Burrell",
+      "src2": "https://www.musicworks.ca/featured-article/unsung-songbooks-dave-burrell",
+      "from": "new"
+     },
+     {
+      "f": "同年他隨 Archie Shepp 的團出席阿爾及爾的泛非洲音樂節（Pan-African Festival）。",
+      "src": "https://en.wikipedia.org/wiki/Dave_Burrell",
+      "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/burrell-dave-herman-davis-ii",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1960 年代末到 1970 年代他是 Archie Shepp 樂團的鋼琴手；1980 年代末到 1990 年代初又加入 David Murray 的團，在 DIW 錄了多張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Dave_Burrell",
+      "src2": "https://www.musicworks.ca/featured-article/unsung-songbooks-dave-burrell",
+      "from": "new"
+     },
+     {
+      "f": "2004 年他與貝斯手 William Parker、鼓手 Andrew Cyrille 的三重奏專輯《Expansion》，是他近 40 年來第一張在美國廠牌發行的錄音，並獲 NPR 等媒體好評。",
+      "src": "https://en.wikipedia.org/wiki/Dave_Burrell",
+      "src2": "https://laist.com/news/npr-news/pianist-dave-burrell-back-on-the-scene",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1960 年代中期移居紐約；1969 年巴黎 BYG Actuel 錄音；2004 年的《Expansion》。",
+      "src": "https://en.wikipedia.org/wiki/Dave_Burrell",
+      "src2": "https://laist.com/news/npr-news/pianist-dave-burrell-back-on-the-scene",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "出生地：維基、encyclopedia.com、jazzinfo.org 皆寫俄亥俄州 Middletown；Musicworks 寫『生於 Harlem、長在夏威夷』。facts 採 Middletown 但加『一般記載』；Musicworks 的說法單源不收。",
+   "本名：維基寫 Herman Davis Burrell，encyclopedia.com 條目名寫 Herman Davis II；facts 寫『Herman Davis Burrell』（維基）；encyclopedia 的『II』未採，只作為同一人佐證。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "身分確認：poolAlbums《Echo》1969、《La Vie de Bohême》1970 皆為鋼琴家 Dave Burrell（BYG Actuel 1969 年巴黎錄音），無同名混卡。卡池兩張的年份：維基與搜尋結果寫兩張皆 1969 年錄於巴黎，卡單《La Vie de Bohême》標 1970（可能為發行年），專輯層級不歸本格。事實庫 research 為空，從零查。搜尋 7 次：維基 1、WebSearch 2、LAist（NPR 轉載）3、WebSearch 4、encyclopedia.com 5、Musicworks 6、jazzinfo.org 7；失敗請求 2 次（AllAboutJazz 403、Pittsburgh 圖書館檔案頁驗證牆）。第二源實際開頁：encyclopedia.com、Musicworks、LAist。jazzinfo.org 的文字與維基幾乎逐句相同，視為維基衍生，不當作第二源。legacy 查不到有兩源的共識評價，標 thin。單源不收：（0）維基寫他自小因遇見 Herb Jeffries 而喜歡爵士（jazzinfo 同句，維基衍生）；（1）維基寫他 1965 年移居紐約、1968 年與 Grachan Moncur III、Beaver Harris 共組 The 360 Degree Music Experience、1978 年與瑞典詩人 Monika Larsson 寫爵士歌劇《Windward Passages》；（2）Musicworks 稱他影響源從自由爵士回溯到 Ellington、Monk、Scott Joplin 與 Jelly Roll Morton，並稱《La Vie de Bohême》是對 Puccini 歌劇的爵士改寫；（3）Musicworks 說他有一位歌劇女高音母親、少年時在夏威夷帶 R&B 樂團；（4）維基稱他與 Shepp 錄了近二十張專輯（『近二十張』單源）；（5）維基稱 2004 年《Expansion》獲 NPR、Down Beat、Village Voice、JazzTimes、The Wire 等好評（雜誌評論不收，只留 NPR 一處開頁來源）；（6）2022 年他把檔案捐給匹茲堡大學圖書館系統（維基單源，檔案頁驗證牆未能開）；（7）encyclopedia 寫他在 Queens College 教兩年、1990 年代中期主持 UCLA 爵士課程（單源）。LAist 稿來自 NPR 2005 年 5 月報導，『近 40 年來第一張在美國廠牌的錄音』為 NPR 原句；在世者，不寫銷量。"
  }
 ]
