@@ -165,5 +165,482 @@
   "failedFetches": 3,
   "status": "thin",
   "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 The Streets、維基 Mike Skinner、維基 Original Pirate Material、WebSearch 一次、Vice、The Fader、維基 Arctic Monkeys（查『受 Streets 影響』結果該頁沒提）。失敗請求 3 次不計入：Britannica topic 頁 404、Red Bull 頁（回傳空內容）、Medium 頁 403。⚠ 維基三條目互為『非獨立』，已盡量搭配 Vice 或 The Fader 當獨立第二源；origin 第 2 條與 sound 第 1、3 條的兩源都是維基不同條目（非獨立）。單源未收：出生於倫敦 Barnet（維基 Mike Skinner）、癲癇病史與慢性疲勞（私人健康，不收）；Pitchfork 稱《Original Pirate Material》為『英國 rap 的里程碑』與 Dazed『為 Britpop 之後的十年配樂』（維基轉述加 WebSearch 摘要，原頁未開，且屬媒體評價）；Arctic Monkeys 受 The Streets 影響（只有 The Fader 單源；維基 Arctic Monkeys 條目未提；WebSearch 摘要提到 Arctic Monkeys、Jamie T、Dizzee Rascal、Kano 受影響，但來源為 Red Bull／Medium 等未取得內容的頁面，不收）；〈Dry Your Eyes〉是唯一英國單曲冠軍、2005 年 Brit Award 英國男歌手獎（維基單源，且屬排行與獎項、需另兩源）；Observer、NME、Pitchfork、Rolling Stone 的年代榜名次（榜單名次不收）；Locked On 與 679 發行細節、Tonga Balloon Gang 等（履歷）。年代：1994 年起組成、2011 年暫停、2017 年復出，只有維基單源，不放 era。status 為 thin：legacy 只有 Vice＋The Fader 的評價與 Mercury 入圍，缺名人堂或國家級榮譽類共識。無同名混卡（poolAlbums 皆為 Mike Skinner 的 The Streets）。"
+ },
+ {
+  "key": "tlc",
+  "name": "TLC",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "TLC 是在美國喬治亞州亞特蘭大成軍的三人女子團，最廣為人知的陣容是 Tionne \"T-Boz\" Watkins、Lisa \"Left Eye\" Lopes 與 Rozonda \"Chilli\" Thomas；團名 TLC 取自三人名字的縮寫。",
+      "src": "https://en.wikipedia.org/wiki/TLC_(group)",
+      "src2": "https://en.wikipedia.org/wiki/Tionne_Watkins",
+      "from": "new"
+     },
+     {
+      "f": "經紀人 Pebbles 把她們引介給 L.A. Reid 的 LaFace Records，1991 年簽約。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/tlc",
+      "src2": "https://en.wikipedia.org/wiki/Tionne_Watkins",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "TLC 被視為「new jill swing」的代表，把 hip-hop 與 R&B 揉在一起。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/tlc",
+      "src2": "https://en.wikipedia.org/wiki/TLC_(group)",
+      "from": "new"
+     },
+     {
+      "f": "她們穿寬鬆的男孩風衣著、帶著從男性 hip-hop 團體借來的態度，和 The Supremes 那種性感優雅的前輩女團形象拉開距離。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/tlc",
+      "src2": "https://en.wikipedia.org/wiki/TLC_(group)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Encyclopedia.com 稱 TLC 用寬鬆男孩風與 hip-hop 態度改寫了女子 R&B 團體的形象；英文維基《CrazySexyCool》條目引述的評論則認為，在塑造如今深受 hip-hop 文化影響的 R&B 版圖上，TLC 的角色還不夠常被談起。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/tlc",
+      "src2": "https://en.wikipedia.org/wiki/CrazySexyCool",
+      "from": "new"
+     },
+     {
+      "f": "《CrazySexyCool》（1994）在 1996 年葛萊美拿下最佳 R&B 專輯與最佳 R&B 團體演唱（〈Creep〉）兩項（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/CrazySexyCool",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/tlc",
+      "from": "new"
+     },
+     {
+      "f": "TLC 於 2022 年 6 月 18 日入選亞特蘭大的 Black Music & Entertainment Walk of Fame（主流女子團體類）。",
+      "src": "https://en.wikipedia.org/wiki/Black_Music_%26_Entertainment_Walk_of_Fame",
+      "src2": "https://en.wikipedia.org/wiki/TLC_(group)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "《CrazySexyCool》在 1996 年葛萊美拿下最佳 R&B 專輯與最佳 R&B 團體演唱（〈Creep〉）。",
+    "src": "https://en.wikipedia.org/wiki/CrazySexyCool",
+    "from": "new"
+   },
+   {
+    "f": "2022 年入選 Black Music & Entertainment Walk of Fame。",
+    "src": "https://en.wikipedia.org/wiki/Black_Music_%26_Entertainment_Walk_of_Fame",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：英文維基 TLC 條目寫 1990 年，Encyclopedia.com 寫 1991 年；兩者不一致，facts 只寫 1991 年簽約（Watkins 維基條目與 Encyclopedia.com 摘要一致），不寫成軍年。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 TLC、WebSearch（組成沿革）、Encyclopedia.com、維基 CrazySexyCool、WebSearch（Walk of Fame）、維基 Black Music & Entertainment Walk of Fame、維基 Tionne Watkins。失敗請求 2 次不計入：Britannica 404、grammy.com 藝人頁 404（Britannica 改以 Encyclopedia.com 代替）。⚠ 維基各條目互為『非獨立』；origin 第 1 條、legacy 第 3 條的兩源都是維基不同條目（非獨立），另 sound 與 legacy 第 1、2 條已搭配 Encyclopedia.com 作獨立源。依批特注不收 Lisa Lopes 死因；其 2002 年過世、其餘兩人選擇以二人組繼續，只有維基 TLC 條目打開讀過（WebSearch 摘要重複同句、未開別頁），屬兩源缺一，不收進 facts。單源未收：T-Boz 1970 年生於愛荷華州 Des Moines、9 歲搬到亞特蘭大（維基 Watkins）；試鏡由 Crystal Jones 舉辦、後由 Rozonda Thomas 取代 Jones（維基 Watkins）；Beyoncé 稱『TLC 影響了現在幾乎每一個女子團體』與 SWV、Destiny's Child 受其啟發（維基 TLC 單源）；Left Eye 眼鏡上別保險套、對年輕女性談自我肯定與自我保護的歌詞取向（Encyclopedia.com 單源，WebSearch 摘要有重複句但來源頁未開）；Joan Morgan 在《Vibe》稱她們『差點領導了一場草根 womanist 革命』（Encyclopedia.com 單源轉述）；《CrazySexyCool》的製作陣容（Dallas Austin、Babyface、Organized Noize 等）與 Erlewine 形容（維基單源）；1995 年 VMA 年度影片獎〈Waterfalls〉（維基單源）；『史上銷量最高女子團體之一』與 VH1 排名、Rolling Stone 500 大專輯名次（銷量與榜單名次不寫）；Grammy 總座數；《CrazySexyCool》六項入圍也只有維基單源，已從 facts 拿掉；Grammy 總座數各處說法為五座，與 Watkins 條目的四座不一致，不收。無同名混卡（poolAlbums 皆為 Atlanta 的 TLC）。"
+ },
+ {
+  "key": "travis scott",
+  "name": "Travis Scott",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Jacques Bermon Webster II，1991 年 4 月 30 日生於德州休士頓，在近郊 Missouri City 長大；父親是業餘的靈魂樂手。",
+      "src": "https://en.wikipedia.org/wiki/Travis_Scott",
+      "src2": "https://www.britannica.com/biography/Travis-Scott",
+      "from": "new"
+     },
+     {
+      "f": "他讀過德州大學聖安東尼奧分校，二年級時輟學專心做音樂。",
+      "src": "https://en.wikipedia.org/wiki/Travis_Scott",
+      "src2": "https://www.britannica.com/biography/Travis-Scott",
+      "from": "new"
+     },
+     {
+      "f": "藝名由他喜愛的叔叔名字 Travis，加上 Kid Cudi 的本名 Scott 組成。",
+      "src": "https://en.wikipedia.org/wiki/Travis_Scott",
+      "src2": "https://www.britannica.com/biography/Travis-Scott",
+      "from": "new"
+     },
+     {
+      "f": "他最早靠製作被看見：先與 Kanye West 的 GOOD Music 體系有淵源，後來由 T.I. 簽進 Grand Hustle Records。",
+      "src": "https://en.wikipedia.org/wiki/Travis_Scott",
+      "src2": "https://www.britannica.com/biography/Travis-Scott",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的聲音以暗黑、氛圍感濃的製作與高能量的現場為辨識度，Auto-Tune 與人聲加工是招牌手法；英文維基歸類為 hip-hop、trap、pop rap 與 psychedelic rap。",
+      "src": "https://en.wikipedia.org/wiki/Travis_Scott",
+      "src2": "https://www.britannica.com/biography/Travis-Scott",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2017 年他在休士頓成立廠牌 Cactus Jack Records，旗下簽過 Don Toliver、Sheck Wes、SoFaygo 等人；他說成立目的是「幫助其他藝人、推出新名字、提供機會」。",
+      "src": "https://en.wikipedia.org/wiki/Cactus_Jack_Records",
+      "src2": "https://en.wikipedia.org/wiki/Travis_Scott",
+      "from": "new"
+     },
+     {
+      "f": "2018 年的《Astroworld》獲得廣泛好評。",
+      "src": "https://www.britannica.com/biography/Travis-Scott",
+      "src2": "https://en.wikipedia.org/wiki/Astroworld_(album)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2017 年成立 Cactus Jack Records。",
+    "src": "https://en.wikipedia.org/wiki/Cactus_Jack_Records",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 Travis Scott、Britannica、維基 Astroworld（專輯）、WebSearch 一次、維基 Cactus Jack Records、Revolt、維基 Travis Scott 獎項列表。失敗請求 4 次不計入（已達上限，之後停止）：Billboard 307 轉址後 tollbit 402、NPR 503、Spin 403。⚠ 本位 legacy 偏薄：facts 的兩源有數條是維基不同條目（非獨立）；Cactus Jack 一條的兩源都是維基（非獨立）。依批特注，Astroworld 音樂祭事故一概不收，也沒有查。單源未收：祖父為爵士作曲家（維基）與祖父帶樂團（Britannica）兩源說法不同，不收；6 歲前由祖母帶大、3 歲收到鼓組、16 歲開始做製作（Britannica 單源）；早期團體 The Graduates、The Classmates（維基單源）；受 Kanye West 與 Kid Cudi 影響（維基『cites influences』單源）；Kanye West 2012 年 GOOD Music 發行合約、Anthony Kilhoffer 牽線（各單源）；Cactus Jack 簽下 Don Toliver（2018 年，因〈Can't Say〉）；《Astroworld》以休士頓已關閉的 Six Flags AstroWorld 樂園命名、第 61 屆葛萊美最佳饒舌專輯入圍（未得獎；維基 Astroworld 單源，另有 2019 BET Hip Hop Awards 年度專輯，單源）；《Utopia》第 66 屆葛萊美最佳饒舌專輯入圍（維基獎項列表單源）、累計 10 項葛萊美入圍而無得獎（維基單源，屬在世者獎項數量，不寫）；2020 年 4 月 Fortnite 虛擬演唱會（維基單源，參與人數屬在世者數字，不寫）；Revolt 稱他『在自己的城市有名人堂等級的影響』並說現今休士頓新一代受他影響（Revolt 單源，WebSearch 摘要重複同句）；WebSearch 摘要稱他幫忙推廣 emo-rap（來源頁未取得，不收）。無同名混卡。"
+ },
+ {
+  "key": "young thug",
+  "name": "Young Thug",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Jeffery Williams，來自喬治亞州亞特蘭大；他稱 Lil Wayne 是自己的偶像，2015 年的混音帶原本取名《Carter 6》，向 Wayne 的《Tha Carter》系列致意，臨時才改成《Barter 6》。",
+      "src": "https://en.wikipedia.org/wiki/Young_Thug",
+      "src2": "https://en.wikipedia.org/wiki/Barter_6",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的招牌是不斷變形的嗓音：Okayplayer 形容他的「frenzied yelp」，嗓音常落在中性、近女聲的 alto 音域，變過太多次，連他自己的歌都難以辨認；The Fader 寫他在一段 verse 裡會同時又哼又吼又抱怨又唱，把聲音扭成各種奇特音色。",
+      "src": "https://www.okayplayer.com/originals/playboi-carti-baby-voice-young-thug-influence-androgyny.html",
+      "src2": "https://en.wikipedia.org/wiki/Young_Thug",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以中性的嗓音與穿著，挑戰 rap 對陽剛的既定想像：Okayplayer 把他視為 rap 嗓音實驗與中性唱腔的代表；他 2016 年的混音帶《JEFFERY》封面穿的是洋裝，他後來回應說別再執著於性別。",
+      "src": "https://www.okayplayer.com/originals/playboi-carti-baby-voice-young-thug-influence-androgyny.html",
+      "src2": "https://en.wikipedia.org/wiki/Jeffery_(mixtape)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "英文維基 Young Thug 條目寫他是 Gucci Mane 的門生（mentored by Gucci Mane），維基 Barter 6 條目寫 Birdman 是他的 mentor；兩者不一致，facts 不寫誰是他的導師。",
+   "〈This Is America〉的年度歌曲：維基 Young Thug 條目寫他因共同創作拿下 2019 年葛萊美年度歌曲，維基〈This Is America〉條目只說他有詞曲掛名（outro）並說該曲四項全拿，沒有列出年度歌曲的得獎人名；兩源對不上，不放 facts。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 Young Thug、WebSearch 兩次（影響力、童年）、Okayplayer、維基 Jeffery 混音帶、維基〈This Is America〉、維基 Barter 6（第 2、6 次為 WebSearch，只看摘要；其餘為實際開頁）。失敗請求 3 次不計入：Britannica 404、11alive 403、wfmynews2 403。⚠ 本位是整批最薄的一位，origin 與 legacy 在 8 次內沒湊齊，只有 sound 較紮實。origin 的兩源都是維基不同條目（非獨立）。單源未收（皆為英文維基 Young Thug，WebSearch 摘要重複同句）：1991 年 8 月 16 日生於亞特蘭大、在 Jonesboro South 一帶長大、十一個孩子中排行第十；2010 年首次客串、2011 至 2012 年《I Came from Nothing》系列、2013 年簽入 Gucci Mane 的 1017 Brick Squad Records（導師說法見 conflicts）；2016 年 11 月成立 YSL Records；BBC 的 Jeff Weiss 稱他『21 世紀影響力最大的饒舌歌手』與『mumble rap 的推廣者』（維基轉述，原文未開）；他在 Pivot 播客說自己的中性風格替 Lil Uzi Vert、Playboi Carti 開路（WebSearch 摘要，原頁未開，且是本人說法）；Okayplayer 全文沒有點名受他影響的後輩，不能寫成後輩點名；〈This Is America〉年度歌曲得獎主詞未能確認（見 conflicts），不寫。Young Thug 與 Chief Keef 官司依批特注不收，也沒有查。無同名混卡（poolAlbums 皆為 Atlanta 的 Young Thug）。"
+ },
+ {
+  "key": "豬頭皮",
+  "name": "豬頭皮",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "朱約信（藝名豬頭皮）是台南人，在長老教會的環境裡長大，大學念台灣大學大氣科學相關系所。",
+      "src": "https://time.udn.com/udntime/story/122834/7945545",
+      "src2": "https://www.cna.com.tw/culture/article/20230410w002",
+      "from": "new"
+     },
+     {
+      "f": "他大學時期參與學生運動，經歷解嚴前後的年代，創作與這段街頭運動的親身經驗有關。",
+      "src": "https://www.cna.com.tw/culture/article/20230410w002",
+      "src2": "https://time.udn.com/udntime/story/122834/7945545",
+      "from": "new"
+     },
+     {
+      "f": "他大學時熱衷創作，參加過詩歌創作比賽，1991 年發行首張專輯，之後也曾為男團 The Party 寫歌。",
+      "src": "https://time.udn.com/udntime/story/122834/7945545",
+      "src2": "https://www.cna.com.tw/culture/article/20230410w002",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把西洋嘻哈與台灣民間的唸歌說唱傳統結合，做出「台式念歌」；他認為台語本身就是有旋律的語言；中文維基把他的風格歸為饒舌、搖滾與唸歌的融合。",
+      "src": "https://www.cna.com.tw/culture/article/20230410w002",
+      "src2": "https://zh.wikipedia.org/zh-tw/%E6%9C%B1%E7%B4%84%E4%BF%A1",
+      "from": "new"
+     },
+     {
+      "f": "歌詞貼近生活俗事，幽默詼諧；《聯合報時光》形容充滿反叛與黑色幽默，曲風前衛，並帶著社會批判。",
+      "src": "https://time.udn.com/udntime/story/122834/7945545",
+      "src2": "https://www.cna.com.tw/culture/article/20230410w002",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1994 年推出《笑魁唸歌－我是神經病》後，已故文史學者莊永明曾指責他破壞台灣文化，他的歌被貼上「歪歌」「怪歌」的標籤；公視《DRAMA GO》專訪寫這些作品如今被視為走在時代前面，他本人則說所有的音樂都有存在的權利，後來還把莊永明的詩譜成歌。",
+      "src": "https://dramago.ptsplus.tv/articles/18254/",
+      "src2": "https://www.cna.com.tw/culture/article/20230410w002",
+      "from": "new"
+     },
+     {
+      "f": "2000 年第 11 屆金曲獎，朱約信以《傲骨人生》獲最佳方言男演唱人獎（得獎）。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E6%9C%B1%E7%B4%84%E4%BF%A1",
+      "src2": "https://www.cna.com.tw/culture/article/20230410w002",
+      "from": "new"
+     },
+     {
+      "f": "公視專訪稱他的創作打破了對台語音樂的刻板想像、拓展台語表現的可能；商業周刊《Alive》寫他推動台語歌多元發展，並挑戰雅俗二分的既定觀念。",
+      "src": "https://dramago.ptsplus.tv/articles/18254/",
+      "src2": "https://alive.businessweekly.com.tw/single/Index/ARTL006002134",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1994 年發行《豬頭皮的笑魁唸歌－我是神經病》。",
+      "src": "https://dramago.ptsplus.tv/articles/18254/",
+      "src2": "https://alive.businessweekly.com.tw/single/Index/ARTL006002134",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2000 年第 11 屆金曲獎最佳方言男演唱人獎（得獎，專輯《傲骨人生》）。",
+    "src": "https://zh.wikipedia.org/zh-tw/%E6%9C%B1%E7%B4%84%E4%BF%A1",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《笑魁唸歌－我是神經病》年份：聯合報《聯合報時光》（udn）與搜尋摘要寫 1992 年；公視 DRAMA GO、Alive（商周）、上線簡介、莊永明事件的 1994 年敘述皆為 1994 年，與卡池 1994 一致；採 1994，udn 的 1992 視為誤植。",
+   "金曲獎獎名：udn 寫『最佳台語男歌手獎』，中文維基、公視、Alive、CNA 與上線簡介皆為『最佳方言男演唱人獎』；採後者。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 只有《傲骨人生》與《人生半百古來嘻》兩筆（生平一條、書單排名一條），三格仍從零補。搜尋 8 次：中文維基 朱約信、WebSearch 三次（第 2、5、8 次，只看摘要，第 8 次無新開頁）、udn、CNA、公視 DRAMA GO、Alive。⚠ 『Alive』（商業周刊）文章的內容與 CNA 文章幾乎相同，疑為轉載或同稿，視為『非獨立』；sound 第 2 與 origin 第 2、3 條的 udn／CNA 為不同媒體，算獨立。依批特注：朱約信是台灣饒舌歌手，非同名他人；poolAlbums 四張皆為朱約信，無同名混卡。年份：未寫出生年月日（1966 年 2 月 16 日只有中文維基單源，搜尋摘要為同條目內容，生卒年屬高風險類，故不放）。單源或不收：『台灣第一張台語嘻哈專輯』（udn 引述）與『台語嘻哈第一人』（公視、Alive 以『被譽為』轉述，無明確出處，且『第一』類宣稱找不到可驗證依據、也沒有逐一排除更早的台語說唱作品如 1990 年代初的林強等，拿不準，不放 facts）；藝名來自小學綽號（腮腺炎，台南俗稱豬頭皮）、真言社老闆倪重華建議取藝名（公視單源）；參加簡上仁台灣歌謠研習營、在廁所錄卡帶、被水晶唱片老闆發現（公視單源，水晶 1991 年出版在 Alive 另有提）；6 歲能視譜唱歌、1989 年歌唱比賽第 3 名（udn 單源）；小學三年級父親送吉他學民歌（CNA 與 Alive 同稿，非獨立，且仍屬細節未收）；受林強、陳明章、伍佰影響（udn 單源）；1996 年《和諧的夜晚 OAA》入圍音樂人交流協會年度十大專輯（udn 單源）；2005 年組搖滾主耶穌樂團（udn 單源；卡池該專輯為 2004 年，年份有出入，不收）；『新台語歌運動成員』（中文維基單源）；事實庫的《台灣流行音樂200最佳專輯》（時報文化 2009）第 27 名為書單排名，依規則不收；義光教會長老與真理大學兼任副教授屬履歷，不收；莊永明事件兩源皆為『中性轉述』，未寫對方責罵的場景細節。"
+ },
+ {
+  "key": "112",
+  "name": "112",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "112 是來自美國亞特蘭大的四人男子 R&B 團，四人是高中同學；最初團名叫 Forte，後來改叫 112，取自亞特蘭大的一家夜店，他們在那裡見到 Sean Combs。",
+      "src": "https://en.wikipedia.org/wiki/112_(band)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/112",
+      "from": "new"
+     },
+     {
+      "f": "他們簽進 Sean Combs 的 Bad Boy Records，在 Bad Boy 的 R&B 陣容裡發跡。",
+      "src": "https://en.wikipedia.org/wiki/112_(band)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/112",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "112 是以和聲為核心的 R&B 團，結合當代 R&B 與 hip-hop soul，擅長抒情慢歌；Encyclopedia.com 形容他們的和聲柔和而令人安心。",
+      "src": "https://en.wikipedia.org/wiki/112_(band)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/112",
+      "from": "new"
+     },
+     {
+      "f": "成員 Daron Jones 說 Boyz II Men 對他們影響很大；Encyclopedia.com 也寫他們主要受 1990s R&B 團體 Boyz II Men 啟發。",
+      "src": "https://en.wikipedia.org/wiki/112_(album)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/112",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈I'll Be Missing You〉（Puff Daddy 與 Faith Evans 合作、112 客串）拿下第 40 屆葛萊美最佳饒舌團體或二人組演唱（得獎）；英文維基與 Encyclopedia.com 都把這個獎記在 112 名下。",
+      "src": "https://en.wikipedia.org/wiki/I%27ll_Be_Missing_You",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/112",
+      "from": "new"
+     },
+     {
+      "f": "〈Peaches & Cream〉入圍第 44 屆葛萊美最佳 R&B 團體或二人組演唱（入圍，未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Peaches_%26_Cream_(112_song)",
+      "src2": "https://en.wikipedia.org/wiki/112_(band)",
+      "from": "new"
+     },
+     {
+      "f": "首張專輯《112》（1996）裡〈Only You〉的混音版請到 The Notorious B.I.G. 與 Mase 加入。",
+      "src": "https://en.wikipedia.org/wiki/112_(album)",
+      "src2": "https://daddyshangout.com/2026/08/27/112-debut-album-30th-anniversary/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈I'll Be Missing You〉拿下第 40 屆葛萊美最佳饒舌團體或二人組演唱。",
+    "src": "https://en.wikipedia.org/wiki/I%27ll_Be_Missing_You",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "發掘經過：英文維基 112 條目寫由製作二人組 Tim & Bob 發掘；Encyclopedia.com 寫由經理人 Courtney Sills 與 Kevin Wales 帶到 Combs 面前，Combs 在 Buckhead 的 112 Club 看到他們；維基《112》專輯條目寫在亞特蘭大 112 夜店演出，被 Faith Evans 與 Usher 看到。三說不同，facts 只寫『團名取自夜店、在那裡見到 Combs』與『簽進 Bad Boy』。",
+   "葛萊美年份：維基與 Encyclopedia.com 都寫〈I'll Be Missing You〉1997 年得獎；維基歌曲條目寫第 40 屆（1998 年頒獎）；facts 採屆次，不寫年。〈Peaches & Cream〉維基 112 條目寫 2001 年入圍，歌曲條目寫第 44 屆（2002 年頒獎）；採屆次。",
+   "成團年：英文維基 112 條目寫 1993 年，WebSearch 摘要有寫 1996 年（疑指首張專輯年）；facts 不寫成團年。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 8 次：維基 112（band）、WebSearch 兩次（第 2、6 次，只看摘要）、Encyclopedia.com、維基〈Peaches & Cream〉、維基《112》專輯、daddyshangout、維基〈I'll Be Missing You〉（共 8 次；此外 LiveAbout 回 402 一次，不計入）。⚠ 維基各條目互為『非獨立』；origin、legacy 的部分條目兩源為維基不同條目；daddyshangout 是 2026 年的歌迷／部落格型文章，只用於〈Only You〉混音的事實，不用其評價。單源未收：Walter F. George 高中、在教會與學校活動表演（Encyclopedia.com）；經理人 Courtney Sills 與 Kevin Wales、1995 年簽 Bad Boy（Encyclopedia.com）；『Bad Boy 簽的第二個 R&B 團體，由 Faith Evans 與 Chucky Thompson 推薦』（維基《112》專輯）；Slim 的主唱聲音是招牌（daddyshangout）；『定義了一個世代的 R&B 團體之一』『證明 R&B 與 hip-hop 可以自然共存』（daddyshangout 單源，且屬部落格評價）；Boyz II Men 影響的細節（原寫給 Boyz II Men 專輯《II》的歌後來由 112 收下，維基《112》單源）；成員異動（Aldon Lagon 1993 至 1994、Parker 與 Daron Jones 2018 年離團、Reginald Finley）只有維基單源，屬成員異動年份高風險類，不收；AllMusic 評論人 Leo Stanley 的評語（單一樂評人，不收）；〈Only You〉〈Cupid〉的 Hot 100 名次、2× Platinum（榜單名次、認證不收）；〈I'll Be Missing You〉的悼念對象為 The Notorious B.I.G.（歌曲條目有寫，與 112 本身無關，不放）。無同名混卡（poolAlbums 皆為亞特蘭大 112）。"
+ },
+ {
+  "key": "21 savage",
+  "name": "21 Savage",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Shéyaa Bin Abraham-Joseph，英國籍，成長於美國喬治亞州亞特蘭大一帶；他 2005 年 7 月合法入境美國，簽證 2006 年到期。",
+      "src": "https://en.wikipedia.org/wiki/21_Savage",
+      "src2": "https://www.fox5atlanta.com/news/rapper-21-savage-taken-into-custody-by-ice-in-atlanta",
+      "from": "new"
+     },
+     {
+      "f": "他在亞特蘭大與 Decatur 的地下 rap 圈打出名號，由製作人 Key! 牽線認識 Metro Boomin、Sonny、Zaytoven 等製作人；Metro Boomin 成為他最主要的合作對象。",
+      "src": "https://www.thefader.com/2015/10/01/feature-21-savage/amp",
+      "src2": "https://en.wikipedia.org/wiki/21_Savage",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的聲音是低沉單調、近乎面無表情的口吻，搭配暗黑、氛圍濃的 trap 節奏；The Fader 形容那是帶威脅感的沙啞嗓音，英文維基稱之為 deadpan 而收斂的唸法。",
+      "src": "https://en.wikipedia.org/wiki/21_Savage",
+      "src2": "https://www.thefader.com/2015/10/01/feature-21-savage/amp",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "與 J. Cole 合作的〈A Lot〉在第 62 屆葛萊美拿下最佳饒舌歌曲（得獎）；得獎的詞曲作者包括 21 Savage，這是他與 J. Cole 的第一座葛萊美。",
+      "src": "https://en.wikipedia.org/wiki/A_Lot_(21_Savage_song)",
+      "src2": "https://en.wikipedia.org/wiki/21_Savage",
+      "from": "new"
+     },
+     {
+      "f": "Metro Boomin 在 2015 年稱他的重要性在於真實，說他是少數還在做音樂的真正街頭人物之一。",
+      "src": "https://www.thefader.com/2015/10/01/feature-21-savage/amp",
+      "src2": "https://en.wikipedia.org/wiki/21_Savage",
+      "from": "new"
+     },
+     {
+      "f": "2019 年 2 月 3 日，他在亞特蘭大都會區被 ICE 帶走，ICE 指他的簽證 2006 年到期、非法滯留；案件成為公眾關注的事件。",
+      "src": "https://www.fox5atlanta.com/news/rapper-21-savage-taken-into-custody-by-ice-in-atlanta",
+      "src2": "https://en.wikipedia.org/wiki/21_Savage",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈A Lot〉在第 62 屆葛萊美拿下最佳饒舌歌曲（得獎）。",
+    "src": "https://en.wikipedia.org/wiki/A_Lot_(21_Savage_song)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "出生地：英文維基寫 1992 年 10 月 22 日生於倫敦 Plaistow，7 歲搬到亞特蘭大；The Fader 2015 年寫他生於亞特蘭大 Old Fourth Ward。兩源不一致，facts 只寫『英國籍、成長於亞特蘭大』，不寫出生地。",
+   "入境年齡：Fox 5 寫 2005 年 7 月入境時 14 歲，維基寫 12 歲（1992 年生）；facts 只寫 2005 年 7 月，不寫年齡。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 6 次：維基 21 Savage、維基〈A Lot〉、WebSearch 一次、The Fader 2015、Fox 5 Atlanta、維基《Savage Mode》。失敗請求 2 次不計入：Britannica 404、Billboard 307 轉址（tollbit 付費牆，未再試）。⚠ 維基各條目互為『非獨立』；origin 第 1 條、legacy 各條搭配維基以外的 Fox 5 或 The Fader。依規則：Metro Boomin 的引述原文含不雅字眼，facts 只寫意譯；ICE 事件只收 ICE 與維基一致的中性層級（日期、簽證到期），未寫其聲明中的前科說法與後續聽證、取得綠卡等（單源）。單源未收（皆為英文維基 21 Savage）：Three 6 Mafia 影響（Billboard 與 WebSearch 摘要有相關標題，原頁因付費牆未取得）、表弟為 Young Nudy、母親來自多米尼克與父親來自聖文森、2013 年起開始 rap 的契機（涉及遭槍擊與友人過世，不收細節）、2019 年 2 月 13 日獲釋與 2023 年取得綠卡、『21 Savage Bank Account』理財教育與返校日活動；The Fader 單源：Gucci Mane 的影響、2015 年《The Slaughter Tape》、Old Fourth Ward 出生說（見 conflicts）；《Savage Mode》（2016）由 Metro Boomin 擔任執行製作（維基《Savage Mode》單源，製作陣容與樂評形容為媒體評價不收）；『連續四張專輯冠軍』屬榜單與在世者數字，不寫；Billboard 2019 年度歌曲榜第 6 名（榜單名次不收）。無同名混卡（poolAlbums 皆為 21 Savage 專輯）。"
  }
 ]
