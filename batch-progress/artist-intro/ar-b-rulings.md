@@ -301,3 +301,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 ### ar-b-027
 - g1 交件（QA 本組 0）。thin：Busdriver、Danny Brown、Denzel Curry、Dilated Peoples、DMX、Eric B. & Rakim。生年皆維基單源，不寫。單源或主詞不符未收：Del 後輩點名（核對不到）、Dizzee Rascal「第二位水星獎饒舌手」、Rakim 個人的 Berklee 名人堂、DJ Babu 個人 DMC 獎。IAM 成軍年兩說，不寫。pubIssues 0。
 - 027 g4 交件（QA 本組 0）。thin：Run the Jewels（貢獻 none）、ScHoolboy Q、Slum Village。單源或有反例未收：Slick Rick 刑案與特赦細節、Salt-N-Pepa「首位葛萊美」。日文「会」被 QA 誤判為簡體，facts 改寫「音樂社團」。pubIssues 0。
+- 027 g3 交件（QA 本組 0）。thin：Migos、Monica、Open Mike Eagle、Playboi Carti。2026 年搖滾名人堂經主線 WebSearch 核實（rockhall.com、Rolling Stone、XXL）：Wu-Tang Clan 入選表演者類（主詞是團體，Method Man 只能寫「所屬的 Wu-Tang Clan」）；MC Lyte、Queen Latifah 獲早期影響獎；典禮在 11-14。正文一律寫「獲選 2026 年…」，不寫典禮、不用相對時間詞。單源未收：Migos 2026 年重聚、Monica 後輩點名。pubIssues 0。
