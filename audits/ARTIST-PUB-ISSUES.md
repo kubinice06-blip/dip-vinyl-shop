@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 234 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 247 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -238,3 +238,16 @@
 | ar-b-031 | Michael Nyman | The Piano | 售出超過三百萬張 | 各來源數字不一致（維基、IRCAM、Wise Music 寫三百萬張以上，encyclopedia.com 寫一百五十萬張），且藝人在世，依本批規則不寫累計銷量；建議移除該句。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/michael-nyman |
 | ar-b-032 | Trevor Pinnock | Haydn: Nelson Mass | 他 1973 年創立 The English Concert | 創立年兩說：維基（Pinnock 與 English Concert 條目）、Askonas Holt、AMC、Avie 寫 1972 年（維基並註明常被寫成 1973 年）；樂團官網與 bach-cantatas 寫 1973 年；建議改成『1970 年代初』或加註。 | https://en.wikipedia.org/wiki/The_English_Concert |
 | ar-c-001 | Astrud Gilberto | Beach Samba | 全片被收進《1001 Albums You Must Hear Before You Die》書單 | 「全片」不得用來指整張專輯（writer-base 用語規則），建議改「整張專輯」或「這張專輯」；書單收錄本身本層未查證。 | https://en.wikipedia.org/wiki/Astrud_Gilberto |
+| ar-c-001 | Barney Wilen | Zodiac | 受克蘇魯文學影響 | Jazz Journal 與再版介紹（搜尋摘要）只寫 Larivière 構想的超現實超級英雄劇本（活的地景與怪物），未提 Lovecraft／克蘇魯；本層查不到此說依據，建議店主回頭核對再版內頁或刪除。 | https://jazzjournal.co.uk/2022/07/09/barney-wilen-zodiac/ |
+| ar-c-001 | Barney Wilen | Zodiac | 直到 2022 年才由家族提供私藏首版修復再版 | Jazz Journal 寫「restored and remastered from Barney Wilen's personal copy」（取自 Wilen 本人的那一張），未寫由家族提供，也未明言母帶佚失；建議改成「取自 Wilen 本人留下的唱片修復」。 | https://jazzjournal.co.uk/2022/07/09/barney-wilen-zodiac/ |
+| ar-c-001 | Barney Wilen | Zodiac | 當年銷量極差、每首僅兩三分鐘、最終只停在分鏡階段 | 本層開頁的來源都沒有這三點（銷量、曲長、分鏡階段）；Jazz Journal 只說電影當時沒有拍成，建議店主自行核實或刪除。 | https://jazzjournal.co.uk/2022/07/09/barney-wilen-zodiac/ |
+| ar-c-001 | Clara Nunes | Canto das Três Raças | 一九七一年後改信溫班達（umbanda），舞台上以白衣與頭巾示人 | 宗教歸屬各源不一致：英文維基與 Dicionário Cravo Albin 寫她皈依 Candomblé，葡文維基寫 1971 年離開 Candomblé 轉 Umbanda，Projeto Colabora 說她兼信 Kardec 派、Umbanda 與 Candomblé。建議改成較中性的寫法（她的歌與舞台形象與非裔巴西宗教相連），不指定 1971 年與單一宗教。 | https://pt.wikipedia.org/wiki/Clara_Nunes |
+| ar-c-001 | Clara Nunes | Alvorecer | 唱片銷量讓她成為巴西當時最暢銷的女歌手，也替 Alcione、Beth Carvalho 等人打開市場 | Alcione 與 Beth Carvalho 因她而受惠一說只見英文維基；銷量約 30 萬張兩源一致。建議保留銷量、對『最暢銷』與替他人開路的因果句降級。 | https://dicionariompb.com.br/artista/clara-nunes/ |
+| ar-c-001 | Clara Nunes | Alvorecer | Clara Nunes 的第七張 | 英文維基專輯列表在 Alvorecer 之前已有 1966、1968、1969、1971、1972、1973、1973（與 Vinicius de Moraes、Toquinho 合輯）、1974《Brasileiro Profissão Esperança》，序數取決於是否計入合輯與演出專輯，各源口徑不一；建議刪『第七張』。 | https://en.wikipedia.org/wiki/Clara_Nunes |
+| ar-c-001 | Cortex | Vol. 2 | 1977 年由法國 Disques Espérance 發行（ESP 165501） | 維基目錄寫 Vol. 2 為 Sonodisc 發行（再版 Trad Vibe），Micro-Chop 則寫兩張都在 Disques Espérance；各源不一致，建議對照原盤標籤再定廠牌。 | https://en.wikipedia.org/wiki/Cortex_(band) |
+| ar-c-002 | Édith Piaf | À l'Olympia 1961 | 那一晚（1960 年 12 月 29 日）她首度在觀眾面前唱出〈Non, je ne regrette rien〉 | 上線簡介自己引用的 INA 專文，標題為『Piaf 首度演唱 Non, je ne regrette rien』，內文摘要指首唱是 1960 年 12 月 Olympia 開演前一晚、電視節目《Cinq colonnes à la Une》上（摘要寫 12 月 1 日，日期本層未能二次確認）；維基《Piaf》條目另寫 1961 年 Olympia 場次首唱。建議把『首度在觀眾面前』改成較不具體的寫法，或本機再核對 INA 原文。 | https://www.ina.fr/ina-eclaire-actu/edith-piaf-chante-pour-la-premiere-fois-non-je-ne-regrette-rien |
+| ar-c-002 | Grover Washington Jr. | Winelight | 由 Bill Withers 獻聲的〈Just the Two of Us〉拿下 Hot 100 亞軍與葛萊美獎 | 〈Just the Two of Us〉的葛萊美是第 24 屆（1982 年）最佳 R&B 歌曲獎，得主是詞曲作者 Bill Withers、Ralph MacDonald 與 William Salter，不是演出者；原句主詞容易被讀成 Grover 或該曲演出者得獎，建議改寫主詞。專輯本身的最佳融合爵士演奏獎得主則是 Grover Washington Jr.（寫法無誤）。 | https://en.wikipedia.org/wiki/24th_Annual_Grammy_Awards |
+| ar-c-002 | Guru | Jazzmatazz Volume 1 | 爵士嘻哈（jazz rap）的起點——不再只是取樣爵士唱片，而是真的請來爵士樂手與嘻哈音樂人現場合作 | 『起點』過頭：維基 Jazz rap 條目列出更早的 Gang Starr〈Words I Manifest〉（取樣 Dizzy Gillespie）、1990 年〈Jazz Thing〉、Stetsasonic〈Talkin' All That Jazz〉（1989）與 Native Tongues 自 1988 年起的爵士取向專輯，並把 Jazzmatazz 描述為『持續的爵士饒舌合作系列』；建議改成『把爵士樂手請進錄音室的系列起點』之類的限定寫法。 | https://en.wikipedia.org/wiki/Jazz_rap |
+| ar-c-002 | Harry Roesli | Titik Api | 在 1973 年《Philosophy Gang》、1975 年《Ken Arok》之後推出的第三作，1976 年問世 | 與《Ken Arok》上線簡介互相矛盾：該簡介與 MusicBrainz 都說《Ken Arok》唱片是 1977 年 Eterna 出版（1975 年是萬隆首演的搖滾歌劇），若如此 1976 年的《Titik Api》就不是《Ken Arok》唱片之後的第三作；Bandung Bergerak 另把《Ken Arok》列為 1975 年作品，兩邊對不上，建議改成不排專輯先後的寫法，或查清《Ken Arok》首版年再定。 | https://musicbrainz.org/release-group/480b1428-33b7-4aaa-b8d0-b39ee65d8486 |
+| ar-c-002 | Ivo Papasov & His Bulgarian Wedding Band | Orpheus Ascending | 一九八二年因土耳其裔身分被當局拘捕毆打，社會主義政權要求他改名為 Ivo | 維基與 WOMEX 都寫 Papasov 是羅姆人，1982 年被捕是因為出身與在土耳其裔居民間的人氣，並非本人為土耳其裔；改名則是 1980 年代（多數來源寫中期）的同化政策，不是 1982 年的同一事件。建議改寫成『羅姆家庭、1982 年因出身與在土耳其裔居民間的人氣被拘捕毆打；1980 年代被迫改名 Ivo』。 | https://en.wikipedia.org/wiki/Ivo_Papazov |
+| ar-c-002 | Janko Nilovic | Soul Impressions | 替專做配樂授權的廠牌一口氣做了十張唱片 | Bandcamp Daily 寫 over 10 albums，It's Psychedelic Baby 訪談中他說為 MP 2000 作了約 60 張；『十張』疑為低估，兩源不一致，建議改成不寫確切張數或標明說法不一。 | https://www.psychedelicbabymag.com/2013/02/janko-nilovic-interview.html |
