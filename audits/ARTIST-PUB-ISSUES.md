@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 248 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 252 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -251,4 +251,8 @@
 | ar-c-002 | Harry Roesli | Titik Api | 在 1973 年《Philosophy Gang》、1975 年《Ken Arok》之後推出的第三作，1976 年問世 | 與《Ken Arok》上線簡介互相矛盾：該簡介與 MusicBrainz 都說《Ken Arok》唱片是 1977 年 Eterna 出版（1975 年是萬隆首演的搖滾歌劇），若如此 1976 年的《Titik Api》就不是《Ken Arok》唱片之後的第三作；Bandung Bergerak 另把《Ken Arok》列為 1975 年作品，兩邊對不上，建議改成不排專輯先後的寫法，或查清《Ken Arok》首版年再定。 | https://musicbrainz.org/release-group/480b1428-33b7-4aaa-b8d0-b39ee65d8486 |
 | ar-c-002 | Ivo Papasov & His Bulgarian Wedding Band | Orpheus Ascending | 一九八二年因土耳其裔身分被當局拘捕毆打，社會主義政權要求他改名為 Ivo | 維基與 WOMEX 都寫 Papasov 是羅姆人，1982 年被捕是因為出身與在土耳其裔居民間的人氣，並非本人為土耳其裔；改名則是 1980 年代（多數來源寫中期）的同化政策，不是 1982 年的同一事件。建議改寫成『羅姆家庭、1982 年因出身與在土耳其裔居民間的人氣被拘捕毆打；1980 年代被迫改名 Ivo』。 | https://en.wikipedia.org/wiki/Ivo_Papazov |
 | ar-c-002 | Janko Nilovic | Soul Impressions | 替專做配樂授權的廠牌一口氣做了十張唱片 | Bandcamp Daily 寫 over 10 albums，It's Psychedelic Baby 訪談中他說為 MP 2000 作了約 60 張；『十張』疑為低估，兩源不一致，建議改成不寫確切張數或標明說法不一。 | https://www.psychedelicbabymag.com/2013/02/janko-nilovic-interview.html |
+| ar-c-003 | Leo Parker | Let Me Tell You 'Bout It | John Burks 的小號與 Bill Swindell 的次中音在前六首加進來 | 維基專輯條目摘要寫七首主要曲目的六重奏都有管樂，與簡介『前六首』可能不符；本層讀到的是網頁摘要，可能不精確，請主線對照維基原文與 Discogs 曲目後再決定是否改。人員名單、1961 年 9 月 9 日 Van Gelder 錄音、前一次錄音為 1957 年均與簡介一致。 | https://en.wikipedia.org/wiki/Let_Me_Tell_You_%27Bout_It |
 | ar-c-003 | Louis Smith | Here Comes Louis Smith | 〈Tribute to Brownie〉是 Duke Pearson 寫給 Clifford Brown 的 | 本層未能開頁驗證曲目作曲者（AllMusic 403）；建議對 Blue Note BLP 1584 內頁或 Discogs 覆核。非確認有誤，只是未見兩源支持。 | https://en.wikipedia.org/wiki/Here_Comes_Louis_Smith |
+| ar-c-003 | Mina | Mina® (1974) | 義大利第一位自己開唱片公司的歌手 | 本層查到 PDU 是 Mina 與父親 Giacomo Mazzini 於 1967 年在 Lugano 創立（義大利文維基、搜尋摘要一致），但沒有任何來源把這件事寫成『義大利第一位自己開唱片公司的歌手』，『第一位』宣稱無出處，建議退成『與父親創立 PDU』 | https://it.wikipedia.org/wiki/Mina_(cantante) |
+| ar-c-004 | Rabih Abou-Khalil | Blue Camel | 在貝魯特隨 Georges Farah 學 oud | 英文維基支持 Georges Farah，但 Jazz in the Park 的簡介寫的是 Wadih El Safi，兩說並存；建議店主改成不點名老師，或另查官方傳記確認。 | https://jazzinthepark.ro/en/rabih-abou-khalil-a-unique-map-of-the-music/ |
+| ar-c-004 | Serge Chaloff | Boston Blow-Up! | 1955 年 4 月在紐約為 Capitol 錄下 | boppinbob 亦寫 1955 年 4 月錄《Boston Blow-Up!》、Stan Kenton 製作、Capitol；未見錄音地點的第二源，「在紐約」維持未驗證，建議店主複核。 | https://fromthevaults-boppinbob.blogspot.com/2022/11/serge-chaloff-born-24-november-1923.html |

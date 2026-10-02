@@ -21,3 +21,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - w1 審稿無修正。單源軟引用（Eddie Gale「被形容為」、Frank Lowe「據說」、Gabor Szabo「據他自述」）照准；Fletcher Henderson「與 Ellington 並列」、Evan Parker「歐洲自由即興關鍵人物」屬百科首段共識，照准。David Murray 葛萊美不寫。Gary Bartz 2024 NEA Jazz Master 照准。
 - w2 審稿無修正。Gil Mellé「把 Van Gelder 引介給 Blue Note」屬通行事實，照准。Hiatus Kaiyote「第一個入圍該類別的澳洲團體」有兩個獨立來源，照准。Grover Washington Jr. 已過世，Hot 100 名次可寫。Helen Merrill 未寫生死，照准。
 - **ar-c-002 上線**：40 位，reviewFixes 0。
+
+### ar-c-003
+- g1 交件（QA 本組 0）。thin：John Lee & Gerry Brown。Jean-Luc Ponty 失敗請求 5 次超限，照收。衝突值不寫：João Gilberto 葛萊美座數、Johnny Dyani 生卒日、Johnny Hartman《麥迪遜之橋》收錄首數、Joe Williams 葛萊美年與專輯。稲垣次郎、ソウル・メディア 有兩源，可寫原文。pubIssues 0。
+- g2 交件（QA 本組 0）。thin：Kamaal Williams（失敗請求 5 次超限；出生地與母親背景單源不寫）、Kunihiko Sugano（貢獻、地位 none；生日兩說不寫）。King Oliver 生年與出生地不寫；Juju 遷居年單源只寫次序；Leo Parker 改寫「開路者之一」。pubIssues 1（Leo Parker《Let Me Tell You 'Bout It》「前六首」有管樂，摘要稱七首都有）→ 本機待核。w1（g1+g2）派出。
+- g3 交件（QA 本組 0）。thin：Louis Smith、Madeleine Peyroux（地位 none）。Mammal Hands 與 Mary Halvorson 的 MacArthur 說明屬單一來源，須具名；Mark Murphy 的 Kurt Elling 評語須具名。待核（非錯誤）：Louis Smith《Here Comes Louis Smith》〈Tribute to Brownie〉作者未能兩源驗證 → 本機待核。
+
+### ar-c-004
+- g1 交件（QA 本組 0）。thin：Patty Waters（失敗請求 5 次超限）、Phil Ranelin、Portico Quartet。Paul Bley Trio 兩張是不同編制；Pharoah Sanders Quartet《The Creator Has a Master Plan》是 2003 年東京現場；Paul Motian Quintet 與 Paul Motian 共用生平。《Vibes from the Tribe》年份不寫；Portico Quartet 賣藝地點只寫泰晤士河南岸。Pepper Adams 地位兩源同出傳記，須具名「傳記作者稱」。pubIssues 0。
+- w1 審稿（1 處）：Kunihiko Sugano 首句主詞錯置（讀成介紹兄長），改為「日本爵士鋼琴手菅野邦彦，兄長是…菅野沖彦」。Sugano 用事實庫 Nadja 目錄單源補到 thin 下限，照准（可逆）。King Oliver 264 放寬照准；Armstrong 引語具名。稲垣次郎 2024 年過世、Kokoroko 2020 年 Proms 均有補洞稿來源。Johnny Hartman「民謠爵士」誤譯未採用，照准。
+- g4 交件（QA 0，四組齊）。thin：Michael Franks、Nala Sinephro（地位 none；失敗請求 5 次超限）、Noah Howard、Norman Connors、Nubiyan Twist。Mike Osborne Trio 失敗請求 10 次超限，照收；1982 結束演奏只寫健康因素層級。Mina 生死不寫。年份：Noah Howard 1966 錄音／1968 發行、World Saxophone Quartet 採 1977、Michael Franks《The Art of Tea》不寫。pubIssues 1（Mina《Mina® (1974)》「義大利第一位自己開唱片公司的歌手」無來源）→ 本機待核。w2（g3+g4）派出。
+- g2 交件（QA 本組 0）。thin：Rabih Abou-Khalil、Return to Forever、Rudolph Johnson、Sam Jones。Return to Forever 5 次、Roy Hargrove 6 次、Rudolph Johnson 6 次失敗請求超限，照收。衝突值不寫：Hargrove 葛萊美年、Haynes 終身成就獎年、Beirach Quest 年份、Chaloff 錄音時是否坐輪椅。Richie Beirach 2026-01-26 過世經主線 WebSearch 核實（WRTI、JazzTimes），只寫年份。pubIssues 2（Rabih Abou-Khalil《Blue Camel》烏德琴老師兩說；Serge Chaloff《Boston Blow-Up!》「在紐約錄音」未驗證）→ 本機待核。w1（g1+g2）派出。
+- w2 審稿（1 處）：Norman Connors 刪 R&B 單曲榜「第 4 名」（在世者榜單名次）。Michel Petrucciani 263 放寬照准。Mina「與父親創立 PDU」因單源未寫，照准。Maria Schneider「被記為第一張網路發行葛萊美專輯」兩源措辭不同，以「被記為」照准。Leszek Możdżer 評語具名 ACT。
+- **ar-c-003 上線**：40 位，reviewFixes 2。
