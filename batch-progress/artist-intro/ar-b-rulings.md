@@ -197,3 +197,7 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - w1 審稿（2 處）：Viagra Boys 2026 Grammis 年度專輯經主線 WebSearch 核實（得獎），但 Murphy「年度詞作者」只見入圍、未證實得獎 → 刪；「兩度年度搖滾」改「多次獲 Grammis 肯定」。toe 文中 tricot 改小寫通行寫法。
 - w2 審稿（1 處）：X 的 Ray Manzarek 製作了前四張而非「前三張」→ 改「最初的幾張」。Wolf Alice 由 thin 升 full（Mercury＋主線核實的 Brit），照准。光束夜正文「不失者」漢字主線核對無誤。
 - **ar-b-016 上線**：40 位，reviewFixes 3。
+
+## 第六段（2026-10-02，店主：「繼續走10批」）
+
+範圍 ar-b-017～026（rock/folk、folk、folk/pop、pop×2、pop/world、world、world/electronic、electronic、electronic/hiphop，各 40 位）。併行上限四支；每批上線後開 PR 併入 main。共同特注（在世者累計數字、死因、指控者、榜單、地區獎項主詞、人名原文）寫進 scratchpad/notes10.sh，每批另附特注。
