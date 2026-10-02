@@ -11,3 +11,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 ### ar-c-002
 - g1 交件（QA 本組 0）。thin：David Murray Quartet、Dewey Redman、Don Wilkerson。Dorothy Ashby 影響 Brandee Younger 單源不寫；David Axelrod 生年 1931／1933 不寫。pubIssues 1（Édith Piaf《À l'Olympia 1961》〈Non, je ne regrette rien〉首唱場合三說不一）→ 本機待核。
+- w1 審稿（1 處）：Paco de Lucía「世界第一的佛朗明哥吉他手」改「最偉大的佛朗明哥吉他手之一」（排名式說法）。Amy Winehouse《Back to Black》2025 年入選國家錄音登錄經主線 WebSearch 核實（loc.gov、CBS、Rolling Stone）。Alberta Hunter 269、Astrud Gilberto 270 放寬照准。Barney Kessel 的 DownBeat 讀者票選不寫，照准。
