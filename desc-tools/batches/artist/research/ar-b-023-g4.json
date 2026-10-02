@@ -427,5 +427,246 @@
   "failedFetches": 5,
   "status": "full",
   "notes": "同名檢查：poolAlbums 三張（1980 兩集《Maestra Vida》、1984《Buscando América》）皆為巴拿馬 salsa 歌手 Rubén Blades，無混卡。⚠ 失敗請求 5 次（latingrammy.com 403、businesswire 403、Variety 與 Billboard 轉址 tollbit、tollbit 402），超出 4 次上限，已照實記錄；這 5 次未取得任何事實。Seis del Solar 的 1982 年成軍與『顫音琴取代銅管』出自 Britannica；『合成器與世界音樂、mixtura』出自 Grammy.com，兩源對『離開傳統 salsa 編制』一致，但細節各別單源，寫作層請只寫兩源共有的『加入搖滾、爵士等元素、改變樂器編制』。legacy 第 2 條『政治題材在 salsa 電台聽不到』是 Blades 的自述（Grammy.com 單源），Britannica 只支持『寫抗議歌曲、談社會議題』，寫作層請標明是他自己的說法。單源細節（不入 facts）：Grammy.com 寫他『替 salsa 帶來前所未有的詩意與社會政治意識』（該文敘述）；en 維基引『nueva canción 與 nueva trova 的抒情講究』；《Siembra》2007 年入選拉丁葛萊美名人堂（搜尋摘要與 Siembra 維基，後者實際開頁、前者未開頁，單源）；『史上最暢銷的 salsa 專輯』說法（Jazz Journal、en 維基、Siembra 維基、Grammy.com 皆用，但出處追到 Nahuel Ribke 2015 年著作的銷量主張，屬『最』類宣稱，且為銷量，不收）；2001 年國際拉丁音樂名人堂（en 維基單源）；2024 年普林斯頓榮譽博士（en 維基單源，在世者）；Britannica『Latin Bruce Springsteen』綽號（單源）；Rolling Stone 2024 年 salsa 專輯榜單第一名（樂評雜誌榜單，不收）。上線《Buscando América》簡介寫 Seis del Solar 與 1984 年發行，與 Britannica（Seis del Solar 1982 成軍）不衝突；簡介的葛萊美入圍說法本層未查證。 已從 facts 移出（單源）：Blades 自述政治題材當年在 salsa 電台聽不到（Grammy.com）；Britannica 寫他的抗議歌談伊朗門事件與愛滋危機。Seis del Solar 細節（顫音琴取代銅管：Britannica；合成器與 mixtura：Grammy.com）各為單源。"
+ },
+ {
+  "key": "scientist",
+  "name": "Scientist",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Scientist 本名 Hopeton Overton Brown，1960 年生於牙買加京斯敦。",
+      "src": "https://en.wikipedia.org/wiki/Scientist_(musician)",
+      "src2": "https://unitedreggae.com/articles/n212/092408/interview-scientist",
+      "from": "new"
+     },
+     {
+      "f": "他從電子維修出身：修電視、繞變壓器、修音響系統用的擴大機；為了自製擴大機找零件，認識了 King Tubby，之後進 Tubby 的錄音室當助手，再轉到混音檯前。",
+      "src": "https://tapeop.com/interviews/136/hopeton-overton-brown-scientist",
+      "src2": "https://en.wikipedia.org/wiki/Scientist_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Scientist 認為 dub 是「第一種電子音樂」，錄音師在裡面成了作曲者與演出者；他的招牌手法是高通濾波器與殘響，讓同一首曲子每次聽起來都略有不同。",
+      "src": "https://tapeop.com/interviews/136/hopeton-overton-brown-scientist",
+      "src2": "https://www.grammy.com/news/10-scientist-dub-reggae-productions-yellowman-sugar-minott-roots-radics-shaggy-khruangbin-lone-ranger/",
+      "from": "new"
+     },
+     {
+      "f": "1980 年代初的一系列 Greensleeves 專輯，底軌由 Roots Radics 在 Channel One 錄好，再由他混音；他說這些唱片多半是製作人不在場時，用他自己的時間做出來的。",
+      "src": "https://www.largeup.com/2012/09/21/largeup-interview-scientist/",
+      "src2": "https://en.wikipedia.org/wiki/Scientist_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的混音生涯從 Roots Radics、Sly & Robbie 一路到 2010 年代的美國樂團 Khruangbin：Khruangbin 的 Laura Lee 說他創造的 dub 是她貝斯風格的靈感。",
+      "src": "https://www.grammy.com/news/10-scientist-dub-reggae-productions-yellowman-sugar-minott-roots-radics-shaggy-khruangbin-lone-ranger/",
+      "src2": "https://tapeop.com/interviews/136/hopeton-overton-brown-scientist",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他離開 King Tubby 的錄音室之後轉到 Channel One 與 Tuff Gong；Channel One 的 16 軌混音檯，取代了 Tubby 那邊的 4 軌。",
+      "src": "https://en.wikipedia.org/wiki/Scientist_(musician)",
+      "src2": "https://tapeop.com/interviews/136/hopeton-overton-brown-scientist",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "綽號來歷：en 維基與 Dubbook 寫是 Bunny Lee 對 King Tubby 說『這小子一定是個科學家』；Tape Op 與 Grammy.com 寫是 King Tubby 替他取的名號，兩源不一致，facts 不收綽號來歷（事實庫 bank 取了前一種說法，不採）。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "同名檢查：poolAlbums 三張（1980 Heavyweight Dub Champion、1981 兩張 Scientist 系列）皆為牙買加 dub 混音師 Scientist，無混卡。legacy 偏薄：只有 Khruangbin Laura Lee 的點名（Grammy.com 單源）與合作名單；『共識評價』級的資料（名人堂、國家榮譽、權威票選）沒查到，status 記 thin。Dubbook 條目幾乎照抄 en 維基，非獨立，未用作第二源。單源細節（不入 facts）：1960 年 4 月 18 日（en 維基與 Dubbook，後者非獨立；unitedreggae 只寫 1960 年）；16 歲起在 Tubby 處工作、取代不穩定的工程師（Grammy.com）；Henry『Junjo』Lawes 最常用的混音工程師、為 Barrington Levy 的 Roots Radics 專輯混音（en 維基）；1982 年轉 Tuff Gong 當副工程師、1985 年起在華盛頓特區工作（en 維基與 Dubbook，後者非獨立）；1991 年混 Nando Boom《Reggae Español》，被維基連結到 reggaeton 的興起（en 維基單源，因果宣稱不收）；《Vampires》專輯曲目後來出現在《Grand Theft Auto III》（LargeUp 單源）；2016 年與 Greensleeves 的版權爭議（en 維基與 unitedreggae，涉及法律爭議，不收）；Boomshots 連結轉址失敗（失敗請求 1 次）。上線簡介《Heavyweight Dub Champion》稱他『七〇年代末離開 Tubby 轉任 Channel One 首席錄音師』與 en 維基、Tape Op 一致；其中『Greensleeves 專輯 GREL 13』編號本層未查證。"
+ },
+ {
+  "key": "sean paul",
+  "name": "Sean Paul",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sean Paul 本名 Sean Paul Ryan Francis Henriques，1973 年 1 月 9 日生於牙買加京斯敦，家族有非裔牙買加、英國、華人與葡萄牙裔猶太人的多元血統。",
+      "src": "https://en.wikipedia.org/wiki/Sean_Paul",
+      "src2": "https://thereggaemuseum.com/musician/sean-paul/",
+      "from": "new"
+     },
+     {
+      "f": "他進樂壇前是運動員，13 歲到 21 歲代表牙買加國家水球隊；之後透過替本地歌手客串、拍音樂錄影帶進入音樂圈，2000 年發行首張專輯《Stage One》。",
+      "src": "https://en.wikipedia.org/wiki/Sean_Paul",
+      "src2": "https://thereggaemuseum.com/musician/sean-paul/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把 dancehall 的節奏與流行歌的旋律感接在一起，被視為 2000 年代把 dancehall 推向國際市場的人物；《Dutty Rock》被形容為 dancehall 全球擴散的分水嶺，並帶動「dancehall pop」這個走向。",
+      "src": "https://en.wikipedia.org/wiki/Sean_Paul",
+      "src2": "https://www.jamaicaobserver.com/entertainment/20-years-ago-dutty-rock-stood-tall/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Dutty Rock》在第 46 屆葛萊美獎（2004 年）獲最佳雷鬼專輯；專輯單曲〈Get Busy〉2003 年登上 Billboard Hot 100 冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Sean_Paul",
+      "src2": "https://thereggaemuseum.com/musician/sean-paul/",
+      "from": "new"
+     },
+     {
+      "f": "2019 年 10 月 21 日英雄日，牙買加政府授予他指揮官級的「功績勳章」（Order of Distinction, Commander），理由是對雷鬼音樂全球知名度與推廣的貢獻，並成功把 dancehall 與雷鬼帶進國際市場。",
+      "src": "https://hypelifemagazine.com/celebrity-news/sean-paul-honored-jamaica-order-of-distinction/",
+      "src2": "https://thereggaemuseum.com/musician/sean-paul/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2016 年他以客席身分參與 Sia 的〈Cheap Thrills〉與 Clean Bandit 的〈Rockabye〉，兩首都是國際暢銷曲。",
+      "src": "https://en.wikipedia.org/wiki/Sean_Paul",
+      "src2": "https://thereggaemuseum.com/musician/sean-paul/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2004 年《Dutty Rock》獲第 46 屆葛萊美獎最佳雷鬼專輯。",
+    "src": "https://en.wikipedia.org/wiki/Sean_Paul",
+    "from": "new"
+   },
+   {
+    "f": "2019 年獲牙買加指揮官級功績勳章。",
+    "src": "https://hypelifemagazine.com/celebrity-news/sean-paul-honored-jamaica-order-of-distinction/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Dutty Rock》發行年：en 維基與 Reggae Museum 寫 2002 年，Jamaica Observer 寫 2003 年，facts 不寫發行年；葛萊美為 2004 年（46 屆）三源一致。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 三張（2005《The Trinity》、2014《Full Frequency》、2018《Mad Love: The Prequel》）皆為牙買加 dancehall 歌手 Sean Paul，無混卡；事實庫 research 與 published 皆空，三格從零查。Sean Paul 在世：銷量、認證倍數、串流、葛萊美累計座數與提名數一律不寫（en 維基列了多屆提名，不收）。facts 中『〈Get Busy〉冠軍』：en 維基 Sean Paul 條與 Reggae Museum『number-one hit』支持，但年份 2003 出自 en 維基 Sean Paul 條與搜尋摘要（Get Busy 條目，未開頁），寫作層寫年份時請以 2003 為準。『功績勳章』用 Order of Distinction 的通行中譯，寫作層可自行用『卓越勳章』或保留英文。單源細節（不入 facts）：〈Get Busy〉是第一首登上 Hot 100 冠軍的 dancehall 歌曲（en 維基單源，且為『第一』宣稱，不收）；父母職業（母親畫家、父親水球與長泳選手）與 15 歲時父親被捕入獄的家庭事件（en 維基單源，不收）；Jeremy Harding 1995–1996 年在 Kingston 發掘他並成為經紀人（en 維基單源）；2024 年 UTech 榮譽博士（搜尋摘要，未開頁）；Toots and the Maytals 是他的靈感來源（en 維基單源）。失敗請求 2 次：britannica.com 404、jamaica-star.com 503。"
+ },
+ {
+  "key": "shankar",
+  "name": "Shankar",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "L. Shankar（Lakshminarayana Shankar）生於印度馬德拉斯（今清奈），父親 V. Lakshminarayana 是卡納提克音樂的聲樂家兼小提琴家，母親 Seethalakshmi 彈 veena、也唱歌；他在父親任教的斯里蘭卡賈夫納一帶長大，1958 年因族群衝突舉家遷回印度。",
+      "src": "https://en.wikipedia.org/wiki/L._Shankar",
+      "src2": "https://lshankar.com/",
+      "from": "new"
+     },
+     {
+      "f": "他兩歲開始學聲樂、五歲學小提琴、七歲學 mridangam，七歲時在斯里蘭卡的寺廟辦了第一場公開演出。",
+      "src": "https://en.wikipedia.org/wiki/L._Shankar",
+      "src2": "https://lshankar.com/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1980 年起他只用自己設計的雙頸電小提琴（十弦、立體聲，由 Ken Parker 製作）：一頸涵蓋低音提琴與大提琴的音域，一頸是小提琴與中提琴，兩頸合計十一個八度。",
+      "src": "https://en.wikipedia.org/wiki/L._Shankar",
+      "src2": "https://lshankar.com/",
+      "from": "new"
+     },
+     {
+      "f": "1973 年他與吉他手 John McLaughlin 起團，起初叫 Turiyananda Sangeet，加入 tabla 的 Zakir Hussain 與打擊樂的 T.H. Vinayakram 後成為 Shakti；兩人合寫全部曲目，團在 CBS 留下三張唱片。",
+      "src": "https://en.wikipedia.org/wiki/L._Shankar",
+      "src2": "https://lshankar.com/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為把印度古典與西方爵士、搖滾連起來的先行者；Shakti 常被稱為印度爵士融合（Indo-jazz fusion）的開路團體。",
+      "src": "https://en.wikipedia.org/wiki/L._Shankar",
+      "src2": "https://lshankar.com/",
+      "from": "new"
+     },
+     {
+      "f": "他與 Peter Gabriel 合作的《Passion》（Martin Scorsese 電影《基督最後的誘惑》的配樂）拿下葛萊美獎；他合作過的名字還有 Frank Zappa、Phil Collins 與 Bruce Springsteen。",
+      "src": "https://en.wikipedia.org/wiki/L._Shankar",
+      "src2": "https://lshankar.com/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他在 ECM 的第一張是《Who's to Know》，1984 年的《Vision》是第二張；1990 年的《Pancha Nadai Pallavi》（ECM 1407）1989 年 7 月錄於奧斯陸 Rainbow Studio，1990 年 5 月 1 日發行，由 Zakir Hussain 的 tabla 與 Vikku Vinayakram 的 ghatam 伴奏。",
+      "src": "https://en.wikipedia.org/wiki/L._Shankar",
+      "src2": "https://ecmrecords.com/product/pancha-nadai-pallavi-shankar-zakir-hussain-vikku-vinayakram-caroline/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1973 年與 John McLaughlin 起團，後來成為 Shakti。",
+    "src": "https://en.wikipedia.org/wiki/L._Shankar",
+    "from": "new"
+   },
+   {
+    "f": "1980 年起改用自己設計的雙頸電小提琴。",
+    "src": "https://en.wikipedia.org/wiki/L._Shankar",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Who's to Know》年份：en 維基目錄段寫 1980 年，同條內文又寫雙頸小提琴『1981 年首度出現在唱片上，一是 Phil Collins《Face Value》、二是《Who's to Know》』；卡池記 1981，facts 不寫該專輯年份。Shakti 起團年：en 維基與官方網站寫 1973 年（Turiyananda Sangeet），搜尋摘要（All About Jazz，未開頁）寫 1975，採 1973。生日 1950 年 4 月 26 日只有 en 維基與搜尋摘要（維基轉述），官方網站未寫，facts 不收生年。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 三張（1981《Who's to Know》、1984《Vision》、1990《Pancha Nadai Pallavi》）皆為小提琴家 L. Shankar（ECM 掛名 Shankar），非 Ravi Shankar 或其他 Shankar，無混卡。⚠ 第二源多為 lshankar.com（本人官方網站，自述性質，非獨立）；The Freight 的簡介幾乎照抄 en 維基，不當第二源。era 的《Who's to Know》與《Vision》順序（第一、第二張 ECM）出自 en 維基單源（事實庫 bank 亦同），以『第一張』措詞屬風險，若寫作層採用請寫成『他在 ECM 早期的專輯』；ECM 官方頁只支持 Pancha 的目錄號、錄音與發行日。單源細節（不入 facts）：Frank Zappa 稱他『可能是世上最好的小提琴手』（BAM 1979，en 維基單源）；《Pancha Nadai Pallavi》登上 Billboard 世界音樂榜十大三個月、是第一張傳統印度唱片（en 維基與搜尋摘要皆為維基轉述，且為『第一』宣稱，不收）；Times of India 2019 年稱『兩位 Shankar：Ravi 與 L.』（en 維基轉引、搜尋摘要轉述，未開頁）；DownBeat 1978 年讀者…評論人票選第四名與 Lee Underwood 的『masterpieces』評語（單一樂評，en 維基與官網轉述，不收）；1995 年《Raga Aberi》葛萊美最佳世界音樂專輯入圍（en 維基單源）；Violin Trio 1958 年（en 維基寫與兩位兄弟，The Freight 寫與 Palghat Mani Iyer，不一致）；1969 年赴美、衛斯理大學民族音樂學博士（en 維基單源，搜尋摘要亦有）；2004 年 World Peace Music Award（en 維基單源）。Passion 的葛萊美：en 維基稱 Grammy-winning、官網稱 Last Temptation 配樂獲葛萊美肯定，兩者皆未寫屆次與類別，寫作層寫『獲葛萊美獎』即可，不要寫屆次。失敗請求 2 次：allaboutjazz.com 403、spin.com 403。"
  }
 ]
