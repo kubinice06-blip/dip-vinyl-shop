@@ -279,3 +279,6 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 025 g3 交件（QA 本組 0）。thin：Incapacitants。衝突值不寫（Jarre UNESCO 任命年、榮譽軍團年、演唱會人數）。Ken Ishii 漢字兩說，正文只寫拉丁藝名。Fever Ray（Karin Dreijer）正文避開性別代名詞。pubIssues 1（DJ Koze《Kosi Comes Around》出生地 Flensburg／Marrakech 衝突）→ 本機待核。
 - 025 g1 交件（QA 本組 0）。thin：The Future Sound of London（地位 none）、Tycho、Zero 7、Above & Beyond。單源未收：Zero 7 Brit／葛萊美提名、Human League 1982 Brit Award。Ace of Base 樂迷站（aceofbase.net）列弱來源不採。pubIssues 1（冨田勲《展覧会の絵》Moog III 購入年應為 1971 年）→ 本機待核。w1（g1+g2）派出。
 - 025 g4 交件（QA：Mouse on Mars 搜尋 9 次超限 1 次，該次已撤；四組齊）。thin：Marshmello、Mouse on Mars。Major Lazer 失敗請求 5 次超限；葛萊美提名各源矛盾，一律不寫。Marshmello 真名不寫。Mr. Oizo《Rubber》專輯與電影不混寫。pubIssues 0。w2（g3+g4）派出。
+
+### ar-b-026
+- g1 交件（QA 本組 0）。thin：Nosaj Thing、ODESZA、Omar-S、Paul van Dyk、Poppy。Paul van Dyk DJ Mag 讀者票選屬民調名次，不寫；葛萊美入圍年對不上，不寫。Omar-S 2023 年爭議與 Poppy／Titanic Sinclair 指控一律不收。Prurient Hospital Productions 創立年不寫。單源未收：Nitzer Ebb、Portishead 後輩影響名單。pubIssues 1（Paul van Dyk《Out There and Back》「Vandit 第一號發行」應為「第一張專輯」）→ 本機待核。
