@@ -287,3 +287,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 025 w2 審稿無修正。Kim Petras「最佳流行二人組／團體演唱第一位公開跨性別女性得主」屬廣泛報導的官方表述，照准。Major Lazer 改具名引 Switch、Kruder & Dorfmeister 寫明出自維也納觀光推廣，照准。Fever Ray 全文無性別代名詞。
 - **ar-b-025 上線**：40 位，reviewFixes 2。
 - 026 w1 審稿（2 處）：Nitzer Ebb 語序調整（「被稱為 EBM 的先驅」移到過世句之前）；Perfume「無限期休團」改「自年底起休團」（2025-09-21 宣布 2025 年底起コールドスリープ）。Douglas McCarthy 2025-06-11 過世、Perfume 休團皆經主線 WebSearch 核實（Rolling Stone、DJ Mag；中日スポーツ、TOWER RECORDS）。Stromae 父親只寫 1994 年過世。Perfume《Game》Oricon 榜首、ODESZA 榜位依在世者規則不寫。
+- 026 g3 交件（QA 本組 0）。thin：Trentemøller、Whitehouse。The Chainsmokers 失敗請求 6 次超限（含 2 次轉址），照收。衝突值不寫（Tiësto 起步年齡、Trentemøller 出生地與年、Whitehouse 結束年、Yello 創團先後）。Trentemøller 葛萊美提名未驗證不寫。pubIssues 0（Whitehouse《Erector》Peter McKay 職司單源待核）。
