@@ -632,5 +632,89 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "同名檢查：poolAlbums 三張（1999《五月天第一張創作專輯》、2000《愛情萬歲》、2001《人生海海》）皆為台灣的五月天，無混卡；事實庫 research 與 published 都是空的，等於從零查。補查 7 次：en wiki Mayday (Taiwanese band)、zh wiki 五月天、WebSearch（英）、Grammy 官網介紹文、chinaalbums.com（有誤，不採）、WebSearch（第 12 屆金曲獎）、文化部／影視及流行音樂產業局（bamid.gov.tw）第十二屆金曲獎得獎名單頁。第二源說明：origin 與 legacy 第 2 條的 src 與 src2 為中英兩版維基（非獨立）；legacy 第 1、3 條與 origin 第 3 條、sound 的 src2 是 Grammy 官網文章（實際開頁，這篇文章寫於 2025 年 7 月）；era 與 milestones 的第 12 屆最佳樂團獎有官方得獎名單頁為獨立來源。注意：legacy 第 3 條是「第一組」類宣稱（英維基、中維基〔寫「首組登上」〕與 Grammy 官網三處一致，但是否另有更早登上該場館的華語樂團未能另行反查，寫作層請寫成「被稱為」或「據報導」，且只限「樂團」不泛稱歌手）。2004、2009、2012 年得獎的專輯名只有中文維基單源，屆次只有 2012 年第 23 屆有中維基，其餘屆次與專輯未另行查證，寫作層若用請只寫年份與獎名。依特注，累計銷量、座數、場次一律不收。單源未收：①中維基：2012 年第 23 屆金曲獎《第二人生》入圍七項、得六項，含最佳國語專輯、最佳編曲人、最佳專輯製作人、年度歌曲〈諾亞方舟〉，2017 年《自傳》獲最佳國語專輯；2012 年首組登北京鳥巢、2015 年首組登日本武道館的華語樂團（皆「首組」類，單源）；樂團深受披頭四影響、認為搖滾有改變世界的力量；2014 年服貿議題與 2023 年中國巡演假唱爭議（與音樂無關，不收）；②Grammy 官網：首張專輯有中速抒情曲與車庫樂團的聲音、「legacy of firsts」、累計得獎 30 多項（累計數不收）；③英維基：2009 年等四次得獎為「紀錄」（未收「紀錄」二字）、被 Forbes China 名人榜列名；④搜尋摘要：4.15 百萬人次的巡演（場次與人次類，依特注不收）。未用滿 8 次，餘 1 次未用。"
+ },
+ {
+  "key": "光束夜",
+  "name": "光束夜",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "光束夜是東京地下的暗黑迷幻搖滾樂團，1978 年由吉他手金子寿徳創立，一直活動到 2007 年。",
+      "src": "https://ja.wikipedia.org/wiki/光束夜",
+      "src2": "https://en.wikipedia.org/wiki/Jutok_Kaneko",
+      "from": "new"
+     },
+     {
+      "f": "金子寿徳在組光束夜之前，先有一支叫 Kokugaiso 的團；光束夜 1978 年成軍。",
+      "src": "https://en.wikipedia.org/wiki/Jutok_Kaneko",
+      "src2": "http://bleakbliss.blogspot.com/2010/12/kousokuya.html",
+      "from": "new"
+     },
+     {
+      "f": "金子寿徳 2007 年 1 月 24 日過世。",
+      "src": "https://en.wikipedia.org/wiki/Jutok_Kaneko",
+      "src2": "https://en.wikipedia.org/wiki/Kousokuya",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "光束夜被歸為暗黑迷幻搖滾與噪音搖滾；日文維基的曲風欄還列了即興與工業。",
+      "src": "https://en.wikipedia.org/wiki/Kousokuya",
+      "src2": "https://ja.wikipedia.org/wiki/光束夜",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "光束夜長年只活動於東京地下圈，錄音量很少，在圈外知名度有限；同圈的 High Rise 與 Fushitsusha 後來成為傳說，光束夜相對不受注意。",
+      "src": "https://ja.wikipedia.org/wiki/光束夜",
+      "src2": "http://bleakbliss.blogspot.com/2010/12/kousokuya.html",
+      "from": "new"
+     },
+     {
+      "f": "P.S.F. Records 重新發行了光束夜的多張錄音，包括首張專輯與 1979 年的現場錄音，讓更多人聽到。",
+      "src": "https://en.wikipedia.org/wiki/Kousokuya",
+      "src2": "https://en.wikipedia.org/wiki/P.S.F._Records",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯 1990 年以 12 吋黑膠發行，2003 年 4 月 25 日由 P.S.F. Records 做成 CD 重發。",
+      "src": "https://musicbrainz.org/ws/2/release-group/80431aee-6e61-4456-9fd9-ec66402076f7?fmt=json&inc=artist-credits+releases",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "MusicBrainz 藝人實體 begin 寫 1979、成員關係寫金子寿徳 1978–2007；英日維基與 Bleak Bliss 都寫 1978 年成軍、1979 年在 Minor 首演；facts 採 1978。",
+   "事實庫 MusicBrainz 記首張 12 吋 1990 年 Ray Night Music；搜尋摘要（英文維基系統）寫首張 LP 於 1991 年；兩者不一致，era 的 bank 條沿用 MusicBrainz 的 1990，並列入 pubIssues 供店主核對。"
+  ],
+  "pubIssues": [
+   {
+    "album": "1st",
+    "claim": "這張 12 吋出在 1990 年的日本 Ray Night Music，編號 RNM0001",
+    "problem": "英文維基系統來源（搜尋摘要）寫首張 LP 在 Ray Night Music 於 1991 年發行；MusicBrainz 記 1990；兩源不一致，未能判定，建議店主再核對 Discogs 實體資料。",
+    "src": "https://en.wikipedia.org/wiki/Kousokuya"
+   }
+  ],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "同名檢查：poolAlbums 三張（1990《1st》、1997《The Dark Spot》、1979 錄音的《ファースト・ライブ1979 吉祥寺マイナー》）皆為東京的光束夜（束，不是速），無混卡。補查 7 次：WebSearch（英）、ja wiki 光束夜、en wiki Kousokuya、en wiki Jutok Kaneko、WebSearch（樂評）、Bleak Bliss 部落格、en wiki P.S.F. Records。legacy 實在查不到硬共識（名人堂、榜單、後輩點名皆無），只能如實寫它是長年被忽略的地下團，因此整位標 thin；寫作層請以「少為人知、靠 P.S.F. 重發才被聽到」為主軸，不要寫成傳奇。第二源說明：origin 第 1、2 與 sound 的 src/src2 多為英日兩版維基（非獨立）；Bleak Bliss 部落格的措辭與英文維基、AllMusic 傳記高度重疊（非獨立，內容多半是轉貼）；legacy 第 2 條的兩源是英文維基不同條目（非獨立）；ja 維基的抽取內容由摘要模型轉述，人名「Toshunori Kaneko」是它的誤讀，專名一律以 MusicBrainz 登錄的金子寿徳為準。單源未收：①英維基 Jutok Kaneko：1958 年生於群馬縣前橋、約 1972 年學吉他、1975 年組 Kokugaiso（結合詩、音樂、美術與舞蹈的多媒體表演）、寫光束夜的聲音「rock-based soundscapes characterised by the feeling of infinite space, desolate emotion and imminent chaos」、2007 年 4 月 30 日在新宿 Jam 有地下圈音樂人參加的追悼演出；②英維基 Kousokuya：他們是吉祥寺 Minor 場域「即興、噪音搖滾圈的中心團體之一」，同場有灰野敬二與工藤冬里（搜尋摘要，兩位名字未在開頁內容出現）；③Bleak Bliss：28 年來只出過一張錄音室專輯、金子過世後以雙人編制續團；④搜尋摘要：他們的音樂被拿來與 Acid Mothers Temple、High Rise、Fushitsusha 相比（來源不明）、首張花十個月錄了十小時素材再挑四首；⑤ja 維基：成員含 Sachiko（1995–2003，人聲與合成器）。鼓手名字英日維基拼法不一（Ikuro／Ikuo Takahashi），原文漢字未查到，寫作層不寫其名。"
  }
 ]
