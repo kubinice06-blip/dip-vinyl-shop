@@ -305,6 +305,694 @@
   "failedFetches": 5,
   "pubIssues": [],
   "status": "full",
-  "notes": "事實庫 research 為空，published 有三張簡介（與維基一致：第二、第四、第七張，Mercury 2010／2013／2020 入圍，第 63 屆葛萊美最佳民謠專輯提名），無須更正。實際開頁 8 次：英文維基 Laura Marling、WebSearch（出身與 Brit）、contactmusic、Songfacts、WebSearch（後輩影響）、維基 Mercury Prize、維基 2011 Brit Awards、維基第 60 屆葛萊美；失敗 5 次未計入（Guardian 無法抓、Britannica 404、brits.co.uk 403、mercuryprize.com 404、grammy.com 404）。身分：卡池三張都是這位英國民謠歌手，無同名混卡。非獨立提醒：Songfacts 頁的生平段落疑似取自維基，兩處同源；維基 Laura Marling、維基 Mercury Prize、維基 2011 Brit Awards、維基第 60 屆葛萊美四頁同站（但內容來自不同條目）。「Brit 2011 最佳女歌手」contactmusic 也寫她得過 Brit。單源／未收：(1) 父親教她彈吉他的年紀三處說法不一（維基寫五歲、WebSearch 摘要寫三歲、Songfacts 約五歲），不寫。(2) 母親是音樂老師（維基）與父親是音樂老師兼錄音師（Songfacts）互相矛盾，不寫母親職業。(3) 離開 Noah and the Whale 的原因牽涉私人感情，不收。(4) contactmusic 稱她被形容為「詩意歌詞、細緻吉他、獨特嗓音」，並稱 Phoebe Bridgers 等人受她影響；WebSearch 結果反而是 Marling 稱讚 Bridgers，找不到 Bridgers 親口點名她的證據，影響力一欄查不到「後輩點名」，不收。(5)『最傑出的 nu-folk 詞曲人之一』只見搜尋摘要未開頁，不收。(6) Song for Our Daughter 入圍葛萊美最佳民謠專輯（維基寫兩度入圍、上線簡介寫第 63 屆）只有維基與簡介，第二個獨立來源沒開成，facts 只收 Semper Femina。(7) 維基稱 NME 獎最佳個人藝人只有維基與 Songfacts（非獨立）。(8) 碩士學位與近況的私人生活不收。legacy 為本位最弱格：獎項記錄兩源穩，缺後輩點名與共識評價，sound 格只有一條。"
+  "notes": "事實庫 research 為空，published 有三張簡介（與維基一致：第二、第四、第七張，Mercury 2010／2013／2020 入圍，第 63 屆葛萊美最佳民謠專輯提名），無須更正。實際開頁 8 次：英文維基 Laura Marling、WebSearch（出身與 Brit）、contactmusic、Songfacts、WebSearch（後輩影響）、維基 Mercury Prize、維基 2011 Brit Awards、維基第 60 屆葛萊美；失敗 5 次未計入（Guardian 無法抓、Britannica 404、brits.co.uk 403、mercuryprize.com 404、grammy.com 404）。身分：卡池三張都是這位英國民謠歌手，無同名混卡。非獨立提醒：Songfacts 頁的生平段落疑似取自維基，兩處同源；維基 Laura Marling、維基 Mercury Prize、維基 2011 Brit Awards、維基第 60 屆葛萊美四頁同站（但內容來自不同條目）。「Brit 2011 最佳女歌手」contactmusic 也寫她得過 Brit。單源／未收：(1) 父親教她彈吉他的年紀三處說法不一（維基寫五歲、WebSearch 摘要寫三歲、Songfacts 約五歲），不寫。(2) 母親是音樂老師（維基）與父親是音樂老師兼錄音師（Songfacts）互相矛盾，不寫母親職業。(3) 離開 Noah and the Whale 的原因牽涉私人感情，不收。(4) contactmusic 稱她被形容為「詩意歌詞、細緻吉他、獨特嗓音」，並稱 Phoebe Bridgers 等人受她影響；WebSearch 結果反而是 Marling 稱讚 Bridgers，找不到 Bridgers 親口點名她的證據，影響力一欄查不到「後輩點名」，不收。(5)『最傑出的 nu-folk 詞曲人之一』只見搜尋摘要未開頁，不收。(6) Song for Our Daughter 入圍葛萊美最佳民謠專輯（維基寫兩度入圍、上線簡介寫第 63 屆）只有維基與簡介，第二個獨立來源沒開成，facts 只收 Semper Femina。(7) 維基稱 NME 獎最佳個人藝人只有維基與 Songfacts（非獨立）。(8) 碩士學位與近況的私人生活不收。legacy 為本位最弱格：獎項記錄兩源穩，缺後輩點名與共識評價，sound 格只有一條。 失敗請求超過上限 4 次（實際 5 次），照實記錄；上限外未靠失敗請求取得任何內容。"
+ },
+ {
+  "key": "léo ferré",
+  "name": "Léo Ferré",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Léo Ferré 1916 年 8 月 24 日生於摩納哥，父親 Joseph Ferré 是蒙地卡羅賭場的法國籍人事主管，母親 Marie Scotto 是摩納哥籍裁縫。",
+      "src": "https://en.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://fr.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "from": "new"
+     },
+     {
+      "f": "他七歲進摩納哥主教座堂的唱詩班，接觸到文藝復興的複音音樂；蒙地卡羅的歌劇與交響樂環境，加上聽到貝多芬第五號交響曲的經驗，都是他音樂養成的起點。",
+      "src": "https://en.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://patkayharvey.wordpress.com/2016/09/30/leo-ferre-1916-1993/",
+      "from": "new"
+     },
+     {
+      "f": "他 1925 至 1934 年在義大利 Bordighera 的寄宿學校度過，生活嚴苛。",
+      "src": "https://en.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://www.hellomonaco.com/sightseeing/monaco-s-celebrities/leo-ferre-an-anarchist-musician-from-monaco/",
+      "from": "new"
+     },
+     {
+      "f": "他心裡想的是音樂學院，卻到巴黎讀了政治與法律。",
+      "src": "https://www.hellomonaco.com/sightseeing/monaco-s-celebrities/leo-ferre-an-anarchist-musician-from-monaco/",
+      "src2": "https://patkayharvey.wordpress.com/2016/09/30/leo-ferre-1916-1993/",
+      "from": "new"
+     },
+     {
+      "f": "1946 年他搬到巴黎，在小酒館裡演出，同時替別的歌手寫歌。",
+      "src": "https://fr.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://patkayharvey.wordpress.com/2016/09/30/leo-ferre-1916-1993/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以把法國詩人的作品譜成歌著稱，包括 Baudelaire、Verlaine 與 Aragon。",
+      "src": "https://en.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://fr.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "from": "new"
+     },
+     {
+      "f": "他的歌混合歌唱、長篇獨白與朗誦式的唱腔，對聲音的處理極為講究。",
+      "src": "https://en.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://fr.wikipedia.org/wiki/Il_n'y_a_plus_rien_(album)",
+      "from": "new"
+     },
+     {
+      "f": "1973 年的《Il n'y a plus rien》是他第一張從配器到指揮都由自己包辦的交響作品，演唱更接近宣敘調、口語詩與朗誦。",
+      "src": "https://fr.wikipedia.org/wiki/Il_n'y_a_plus_rien_(album)",
+      "from": "bank"
+     },
+     {
+      "f": "他自認無政府主義者，這個立場貫穿他的歌詞，對軍國主義與權威的抨擊尤其多。",
+      "src": "https://en.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://fr.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1993 年 7 月 14 日在義大利托斯卡尼的 Castellina in Chianti 過世，遺體葬在家鄉摩納哥的墓園。",
+      "src": "https://en.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://www.hellomonaco.com/sightseeing/monaco-s-celebrities/leo-ferre-an-anarchist-musician-from-monaco/",
+      "from": "new"
+     },
+     {
+      "f": "摩納哥有一座以他命名的演出場地 Espace Léo Ferré，由市政府營運，是當地重要的文化場地。",
+      "src": "https://www.hellomonaco.com/sightseeing/monaco-s-celebrities/leo-ferre-an-anarchist-musician-from-monaco/",
+      "src2": "https://www.mairie.mc/lespace-leo-ferre",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1969 年起定居托斯卡尼。",
+      "src": "https://en.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "src2": "https://fr.wikipedia.org/wiki/L%C3%A9o_Ferr%C3%A9",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "研究稿（c98-b）與上線簡介對 Il n'y a plus rien 的描述一致（第一張自己包辦配器與指揮的交響作品），採用。"
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "pubIssues": [
+   {
+    "album": "Verlaine et Rimbaud chantés par Léo Ferré",
+    "claim": "同一條目記這是流行音樂史上第一張錄音室雙唱片",
+    "problem": "這句出自法文維基單源、屬「史上第一」型宣稱，本層沒有另一個獨立來源，也沒有查到反例；建議改成『法文維基稱⋯』或刪去。上線簡介已寫成『同一條目記』，風險有限，列出供店主決定。",
+    "src": "https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9"
+   }
+  ],
+  "status": "thin",
+  "notes": "事實庫 research 只有兩張專輯的製作人員與編曲資料，無生平，故三格靠補查。實際開頁 8 次：英文維基、法文維基、Larousse（URL 回傳的是別人的頁面〔雕塑家 Desiderio da Settignano〕，無用，但算一次）、WebSearch（生平與影響）、hellomonaco、patkayharvey 部落格、WebSearch（Espace Léo Ferré）、mairie.mc；失敗 3 次未計入（Britannica 404、monacomatin 500，另有一次 Larousse 錯頁不算失敗）。身分：卡池三張（Amour Anarchie 1970、Verlaine et Rimbaud 1964、Il n'y a plus rien 1973）皆為這位法國歌手，無同名混卡。非獨立提醒：hellomonaco 與 patkayharvey 是個人／觀光網站，內容多半轉述維基與官方介紹，品質只算輔助來源。單源、未收進 facts 的：(1) 英文維基稱他的交響風格影響英語系創作歌手 Scott Walker、Martin Newell、Benjamin Clementine，且與 Brel、Brassens 並稱法國香頌代表——單源。(2) 英文維基稱『藝術家唯一的榮譽就是沒有榮譽』，他拒絕法國歌曲獎項與藝術文學勳章——單源。(3) 法文維基稱他是第一位把整張專輯獻給單一詩人（1957《Les Fleurs du mal》，Baudelaire）的歌手——單源，且屬『第一』型宣稱，未想出反例但無第二源。(4) patkayharvey 稱 Le Monde 形容他是『模範的詩人無政府主義者』，並稱 2012 年他的代表作被音樂人與評論票選為『最佳法國歌曲』——單源，未驗證。(5) 摩納哥 2013 年 6 月 11 日把 Salle du Canton 改名為 Espace Léo-Ferré、親王 Albert II 與其遺孀出席，只見搜尋摘要與 hellomonaco 一句，Monaco-Matin 原頁 500 打不開，facts 只收場地存在。(6) 父親擋下音樂學院：英文維基與 hellomonaco 都有；巴黎就讀科系法文維基寫 Sciences Po（1935–1939）、hellomonaco 寫法律與政治、patkay 寫政治與牙醫，說法不一，facts 只寫『政治與法律』的概括（hellomonaco 與英文維基皆未衝突）；『歌手第一次公開演出 1941 年化名 Forlane』法文維基單源。(7) 英文維基稱 1945 年在 Radio Monte-Carlo 遇見 Piaf、被鼓勵去巴黎；patkay 稱在音樂會上遇見 Piaf，說法有出入，facts 不寫 Piaf。(8) 『童年聽 Chaliapin、Toscanini 指揮貝多芬第五』只見英文維基；貝多芬第五另見 patkay，但 facts 只概括寫成音樂養成的起點。另：『替別的歌手寫歌』為法文維基（作曲給他人）與 patkay（Catherine Sauvage、Juliette Greco 等）說法相近，歸在第 1946 年那條。 Piaf 一事兩源說法有出入，不寫。 Tuscany 與 Radio Monte-Carlo 年份不另寫。人名保留原文，無簡體字疑慮。legacy 格只撐起葬地與場地命名，後輩點名與共識評價僅單源，所以整位標 thin。"
+ },
+ {
+  "key": "leo kottke",
+  "name": "Leo Kottke",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Leo Kottke 1945 年生於喬治亞州 Athens，因為父親工作的關係，家裡不斷搬家，他在許多地方長大。",
+      "src": "https://en.wikipedia.org/wiki/Leo_Kottke",
+      "src2": "https://www.toppermost.co.uk/kottke-leo/",
+      "from": "new"
+     },
+     {
+      "f": "他少年時學過長號，後來才轉向吉他。",
+      "src": "https://en.wikipedia.org/wiki/Leo_Kottke",
+      "src2": "https://www.toppermost.co.uk/kottke-leo/",
+      "from": "new"
+     },
+     {
+      "f": "他曾兩度因意外傷到聽力，其中一次發生在海軍預備役期間；他後來定居明尼阿波利斯，常駐 Scholar Coffeehouse 演出，第一張專輯《12 String Blues》就在那裡錄製。",
+      "src": "https://en.wikipedia.org/wiki/Leo_Kottke",
+      "src2": "https://www.toppermost.co.uk/kottke-leo/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的指彈融合藍調、爵士與民謠，在六弦與十二弦吉他上獨奏，曲間穿插幽默的獨白。",
+      "src": "https://en.wikipedia.org/wiki/Leo_Kottke",
+      "src2": "https://www.toppermost.co.uk/kottke-leo/",
+      "from": "new"
+     },
+     {
+      "f": "1980 年代初的肌腱炎逼他放棄指套，改走古典吉他式的彈法。",
+      "src": "https://en.wikipedia.org/wiki/Leo_Kottke",
+      "src2": "https://www.toppermost.co.uk/kottke-leo/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1969 年在 John Fahey 的 Takoma 廠牌推出《6- and 12-String Guitar》，這張是他的突破作，至今仍是他最廣為人知的一張。",
+      "src": "https://www.toppermost.co.uk/kottke-leo/",
+      "src2": "https://en.wikipedia.org/wiki/6-_and_12-String_Guitar",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 年底，《6- and 12-String Guitar》由 Takoma 發行。",
+      "src": "https://en.wikipedia.org/wiki/6-_and_12-String_Guitar",
+      "src2": "https://www.toppermost.co.uk/kottke-leo/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫 Mudlark『首次登上大廠』與維基『Mudlark 是他的第一張主要廠牌發行』一致；Greenhouse 簡介『Fahey 的經紀人 Denny Bruce 引介簽進 Capitol』與維基『Fahey 的經紀人簽他進 Capitol』一致，無衝突。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "事實庫 research 為空、published 有 Mudlark 與 Greenhouse 兩張簡介，沒發現錯誤（Mudlark 的榜位 168、Greenhouse 的 127 本層沒有驗，不算查證）。實際開頁 8 次：英文維基 Leo Kottke、WebSearch（生平與 Fahey）、toppermost、維基 6- and 12-String Guitar、維基 Michael Hedges、innerviews 訪談、WebSearch（名人堂與榮譽）、MPR 報導；失敗 2 次未計入（Britannica 404、onmilwaukee 403）。身分：卡池三張（6- and 12-String Guitar 1969、Mudlark 1971、Greenhouse 1972）皆為這位吉他手，無同名混卡。**legacy 格只有一條兩源**，其他有料但單源，全部放這裡：(1) 『6- and 12-String Guitar 是史上最有影響力的獨奏原聲吉他專輯之一』只見 innerviews 引述（出自 AllMusic 式文案，原頁未開）與搜尋摘要。(2) 維基專輯頁稱它影響吉他手 Michael Hedges，並與 Kottke 巡演；但維基 Michael Hedges 頁只寫到兩人曾一起巡演、沒有寫受他影響——兩源不一致，不收『影響 Hedges』。(3) 1978 年在連續五年被 Guitar Player 讀者票選為『最佳民謠吉他手』後入選 Guitar Player 名人堂——只見搜尋摘要，未開頁。(4) 2013 年入選明尼蘇達音樂名人堂（第 25 屆，2013-11-01 於 New Ulm 典禮）——只見 MPR 單源（mnmusichalloffame.org 在搜尋結果但未開）。(5) 2008 年威斯康辛大學密爾瓦基分校頒榮譽音樂博士，校方稱他是指彈吉他『最具代表性的人物』、『過去 38 年沒有任何吉他手像 Kottke 對指彈風格有這麼大的影響』——維基有『2008 年榮譽博士』一句，引文只在搜尋摘要，onmilwaukee 原頁 403。(6) 專輯銷量『數十萬張／超過 50 萬張』是在世者累計銷量，依規則不寫。(7) 6- and 12-String Guitar 錄音『一個下午、約三個半小時、多為單次錄成、依曲序』只見維基專輯頁，單源。(8) 早年受 Mississippi John Hurt 影響（維基）、欣賞 Buddy Holly（innerviews）各單源。(9) 與 Phish 的 Mike Gordon 合作《Clone》2002、《Sixty Six Steps》2005 只見維基與 toppermost 概略，屬履歷不收。(10) 簡介裡『與 Fahey、Basho 同屬一路』『他自嘲嗓音像悶熱天裡的鵝放屁』——維基確有該自嘲句，寫作層若重用請寫成他本人說法。toppermost 與維基大致同源，非完全獨立。 (11)「犰狳專輯」封面綽號與 Empire Photo-Sound 錄音地點只見維基專輯頁，單源，未寫入 facts。"
+ },
+ {
+  "key": "loretta lynn",
+  "name": "Loretta Lynn",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Loretta Lynn 本名 Loretta Webb，1932 年 4 月 14 日生於肯塔基州的 Butcher Hollow（亦拼作 Butcher Holler），父親是煤礦工人；「煤礦工的女兒」後來成為她的招牌歌與自傳書名。",
+      "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+      "src2": "https://www.countrymusichalloffame.org/artist/loretta-lynn",
+      "from": "new"
+     },
+     {
+      "f": "她 15 歲就嫁給 Oliver「Mooney」Lynn，婚後兩人搬到華盛頓州，那是她第一次離開家鄉。",
+      "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+      "src2": "https://www.countrymusichalloffame.org/artist/loretta-lynn",
+      "from": "new"
+     },
+     {
+      "f": "她 1962 年成為 Grand Ole Opry 會員。",
+      "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+      "src2": "https://www.britannica.com/biography/Loretta-Lynn",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她自己寫歌，用直白的語言唱女人的日常、婚姻裡的不忠與工人階級的生活，在男性主導的鄉村樂裡顯得特別大膽。",
+      "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+      "src2": "https://www.bostonglobe.com/2022/10/04/nation/country-music-icon-loretta-lynn-dies/",
+      "from": "new"
+     },
+     {
+      "f": "1975 年的〈The Pill〉談避孕與女性對生育的自主，部分鄉村電台因此拒播。",
+      "src": "https://en.wikipedia.org/wiki/The_Pill_(song)",
+      "src2": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她 1988 年入選鄉村音樂名人堂，2003 年獲甘迺迪中心榮譽獎，2013 年獲總統自由勳章。",
+      "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+      "src2": "https://www.bostonglobe.com/2022/10/04/nation/country-music-icon-loretta-lynn-dies/",
+      "from": "new"
+     },
+     {
+      "f": "Miranda Lambert 在她 2022 年過世後致意，說她「為我們這些鄉村樂的女孩開了許多路」，也說她總是直說自己正在經歷的事，所以才能打動人。",
+      "src": "https://hollywoodlife.com/2022/10/04/loretta-lynn-tributes-country-stars-mourn/",
+      "src2": "https://www.bostonglobe.com/2022/10/04/nation/country-music-icon-loretta-lynn-dies/",
+      "from": "new"
+     },
+     {
+      "f": "她 2022 年 10 月 4 日在田納西州 Hurricane Mills 過世，享年 90 歲。",
+      "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+      "src2": "https://www.britannica.com/biography/Loretta-Lynn",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她 1960 年 2 月簽下 Zero Records，推出首支作品〈I'm a Honky Tonk Girl〉。",
+      "src": "https://www.countrymusichalloffame.org/artist/loretta-lynn",
+      "src2": "https://www.britannica.com/biography/Loretta-Lynn",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1988 年入選鄉村音樂名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+    "src2": "https://www.countrymusichalloffame.org/artist/loretta-lynn",
+    "from": "new"
+   },
+   {
+    "f": "2003 年獲甘迺迪中心榮譽獎。",
+    "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+    "src2": "https://www.britannica.com/biography/Loretta-Lynn",
+    "from": "new"
+   },
+   {
+    "f": "2013 年獲總統自由勳章。",
+    "src": "https://en.wikipedia.org/wiki/Loretta_Lynn",
+    "src2": "https://www.britannica.com/biography/Loretta-Lynn",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基稱她 15 歲、1948 年結婚；Britannica 寫 1948 年 1 月；CMHOF 寫結婚時距 16 歲生日三個月——一致。出生地拼字 Butcher Hollow（維基、Britannica）與 Butcher Holler（名人堂）不同，facts 兩種都寫。"
+  ],
+  "searches": 7,
+  "failedFetches": 6,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，三格全從零查。實際開頁 7 次：英文維基 Loretta Lynn、Britannica、鄉村音樂名人堂藝人頁、WebSearch（訃聞與影響）、Boston Globe、維基 The Pill (song)、hollywoodlife 悼念名單；失敗 6 次未計入（NPR 503、CNN 451、legacy.com 403、甘迺迪中心 403、華盛頓郵報 403、Axios 403），**失敗請求超過上限 4 次**，照實記錄、不影響事實（上限外沒有靠失敗請求取得任何內容）。身分：卡池三張（Coal Miner's Daughter 1970、Songs From My Heart 1965、I Like 'Em Country 1966）皆為這位歌手，無同名混卡。獎項那條：Boston Globe 與維基皆列 1988 名人堂、2003 甘迺迪中心榮譽獎、2013 總統自由勳章；Britannica 也有後兩者。單源未收：(1) 維基稱她『贏得 24 首冠軍單曲與 11 張冠軍專輯，是得獎最多的女性鄉村錄音藝人』，單源且屬『最多』類宣稱；(2) Grammy 終身成就獎 2010 年只見維基與 Boston Globe，兩源皆有但屬獎項補述，未重複寫入；Boston Globe 另列 2008 年詞曲作者名人堂（單源）；(3) CMHOF：丈夫買 17 美元的 Sears 吉他、安排她在 Grange hall 首演、組自己的樂團——單源；(4) 維基稱『八首歌被電台禁播』，Pill 條目只說『部分電台』，facts 只寫部分電台；(5) 唱片公司把〈The Pill〉壓了兩年多才發行、錄音日 1972-12-12——Pill 條目單源；〈The Pill〉1975 年才發行（錄音在 1972 年底），Pill 條目與 Boston Globe（1975）一致；(6) Britannica 稱與 Jack White 合作《Van Lear Rose》（2004）讓她接觸新聽眾——單源；(7) 維基與 Britannica 對她的半妹 Crystal Gayle 一句（Britannica 單源）不收；(8) 在世者累計銷量與榜位一律不寫。『Miranda Lambert』言論兩源措詞略有差異（一句說開路、一句說直說自己的經歷），已在 facts 分述。維基 Pill 與 Loretta Lynn 同站，非獨立。 hollywoodlife 另列 Carrie Underwood、Martina McBride 等悼詞，僅單源，未寫入 facts。era 那條 Opry 1962 的另一源是維基與 Britannica（寫在 origin）。"
+ },
+ {
+  "key": "los jaivas",
+  "name": "Los Jaivas",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Los Jaivas 1963 年成軍於智利的海港城市 Viña del Mar，創團成員是 Parra 三兄弟（Eduardo、Claudio、Gabriel）加上 Gato Alquinta 與 Mario Mutis。",
+      "src": "https://en.wikipedia.org/wiki/Los_Jaivas",
+      "src2": "https://www.memoriachilena.gob.cl/602/w3-article-3567.html",
+      "from": "new"
+     },
+     {
+      "f": "團名一開始是英文的 High Bass（又寫 The High & Bass），1970 年才改用西班牙語化的「Jaivas」。",
+      "src": "https://www.memoriachilena.gob.cl/602/w3-article-3567.html",
+      "src2": "https://www.cooperativa.cl/noticias/entretencion/listas/10-momentos-en-la-historia-de-los-jaivas/2013-01-15/151858.html",
+      "from": "new"
+     },
+     {
+      "f": "1973 年智利軍事政變後，他們先移居阿根廷、再到法國巴黎，在流亡期間錄下《Alturas de Macchu Picchu》（1981）等專輯。",
+      "src": "https://en.wikipedia.org/wiki/Los_Jaivas",
+      "src2": "https://www.memoriachilena.gob.cl/602/w3-article-3567.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把進步搖滾與迷幻搖滾，和安地斯原住民樂器、拉丁美洲的節奏揉在一起，常被稱作安地斯搖滾。",
+      "src": "https://en.wikipedia.org/wiki/Los_Jaivas",
+      "src2": "https://www.memoriachilena.gob.cl/602/w3-article-3567.html",
+      "from": "new"
+     },
+     {
+      "f": "1981 年的《Alturas de Macchu Picchu》把 Pablo Neruda 的詩譜成大型作品，是他們最受推崇的一張；智利國家圖書館的 Memoria Chilena 把它列為智利搖滾與流行音樂最偉大的作品之一。",
+      "src": "https://www.memoriachilena.gob.cl/602/w3-article-3567.html",
+      "src2": "https://es.wikipedia.org/wiki/Los_Jaivas",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2023 年他們在 Viña del Mar 國際歌曲節獲頒最高榮譽 Gaviota de Platino（白金海鷗獎），是第一個拿到這個獎的智利團體；前三位得主是 Luis Miguel（2012）、Isabel Pantoja（2017）與 Lucho Gatica（2019，身後追頒）。同一晚市長也頒給他們 Viña del Mar 的城市鑰匙，以表彰創團六十年。",
+      "src": "https://www.cnnchile.com/cultura/los-jaivas-gaviota-de-platino-llaves-de-la-ciudad-vina-2023/",
+      "src2": "https://www.latercera.com/culto/2023/02/22/los-jaivas-son-galardonados-con-la-gaviota-de-platino-en-vina-que-otros-artistas-la-han-recibido/",
+      "from": "new"
+     },
+     {
+      "f": "鼓手 Gabriel Parra 1988 年過世；主唱兼吉他手 Gato Alquinta 2003 年過世，據報導約有四十萬人到場送別。",
+      "src": "https://es.wikipedia.org/wiki/Los_Jaivas",
+      "src2": "https://www.cooperativa.cl/noticias/entretencion/listas/10-momentos-en-la-historia-de-los-jaivas/2013-01-15/151858.html",
+      "from": "new"
+     },
+     {
+      "f": "維基百科英文版稱他們是拉丁美洲歷來最重要且最有影響力的藝術家之一；西班牙文版稱他們是智利最具影響力的搖滾樂團。",
+      "src": "https://en.wikipedia.org/wiki/Los_Jaivas",
+      "src2": "https://es.wikipedia.org/wiki/Los_Jaivas",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1970 年他們從 High Bass 改名為 Jaivas；1973 年政變後出走，流亡到 1980 年代初。",
+      "src": "https://www.memoriachilena.gob.cl/602/w3-article-3567.html",
+      "src2": "https://www.cooperativa.cl/noticias/entretencion/listas/10-momentos-en-la-historia-de-los-jaivas/2013-01-15/151858.html",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1981 年發行《Alturas de Macchu Picchu》，把 Neruda 的詩譜成大型作品。",
+    "src": "https://en.wikipedia.org/wiki/Los_Jaivas",
+    "src2": "https://www.memoriachilena.gob.cl/602/w3-article-3567.html",
+    "from": "new"
+   },
+   {
+    "f": "2023 年獲 Viña del Mar 國際歌曲節的 Gaviota de Platino，是第一個得到此獎的智利團體。",
+    "src": "https://www.cnnchile.com/cultura/los-jaivas-gaviota-de-platino-llaves-de-la-ciudad-vina-2023/",
+    "src2": "https://www.latercera.com/culto/2023/02/22/los-jaivas-son-galardonados-con-la-gaviota-de-platino-en-vina-que-otros-artistas-la-han-recibido/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "事實庫 research 只有兩張專輯的 MusicBrainz 欄位（無生平），published 兩張簡介只談曲目長度，無生平主張，無衝突。實際開頁 8 次：英文維基、西班牙文維基、WebSearch（Gaviota de Platino）、CNN Chile、La Tercera、WebSearch（歷史與流亡）、Memoria Chilena（智利國家圖書館）、Cooperativa 十大時刻；失敗 0 次。身分：卡池三張（Alturas de Macchu Picchu 1981、El volantín 1971、Canción del sur 1977）皆為這支智利樂團，無同名混卡。非獨立提醒：英文與西班牙文維基同站不同語版；『維基稱最具影響力』那條只能算維基自己的表述，寫作層需寫成『維基百科稱』，不要當成共識評價。單源、未收進 facts：(1) Memoria Chilena 稱 1972 年單曲〈Todos juntos〉是『第一首登上廣播人氣排行榜第一名、帶有國家認同的搖滾歌曲』——單源且屬『第一』類宣稱；(2) 西班牙文維基稱 2004 年獲智利國家音樂獎（Premio Nacional de Artes Musicales）、2003 年總統獎——單源；(3) 英文維基稱 50 週年演唱會在聖地牙哥聚集超過六萬人——單源，且屬場次規模；(4) 西班牙文維基稱 1977–1981 住巴黎、1973–1977 在阿根廷——Cooperativa 與 Memoria 只寫『先阿根廷再法國』，年份只見維基與搜尋摘要，facts 不寫年份；(5) Cooperativa 稱 Gabriel Parra 的葬禮逾十萬人、女兒 Juanita 1991 年接任鼓手、1973 年 Raúl Ruiz 電影《Palomita Blanca》配樂——單源；(6) Gabriel Parra 與 Gato Alquinta 的死因依規則不收。Memoria Chilena 與 Cooperativa 對『改團名年份 1970』一致；英文維基只寫改名、無年份，不衝突。Parra 三兄弟與 Alquinta 的親屬關係：英文維基與 Memoria 都把 Eduardo、Claudio、Gabriel 列為 Parra 兄弟、Alquinta 另列，寫作層不要寫成 Alquinta 與 Parra 同家。"
+ },
+ {
+  "key": "merle haggard",
+  "name": "Merle Haggard",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Merle Haggard 1937 年 4 月 6 日生於加州 Bakersfield 一帶（Oildale），父母是從奧克拉荷馬逃到加州的移民，他在一節改裝的火車廂裡出生、長大。",
+      "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+      "src2": "https://www.loudersound.com/features/obituary-merle-haggard-april-6-1937-april-6-2016",
+      "from": "new"
+     },
+     {
+      "f": "他九歲時父親過世。",
+      "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+      "src2": "https://www.britannica.com/biography/Merle-Haggard",
+      "from": "new"
+     },
+     {
+      "f": "他十幾歲就出入少年感化機構，後來因闖空門被關進聖昆汀監獄（San Quentin）；他看了 Johnny Cash 到監獄的演出，決心走音樂這條路。",
+      "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+      "src2": "https://www.loudersound.com/features/obituary-merle-haggard-april-6-1937-april-6-2016",
+      "from": "new"
+     },
+     {
+      "f": "他 1960 年出獄後，認真投入音樂。",
+      "src": "https://alancackett.com/merle-haggard-obituary",
+      "src2": "https://www.loudersound.com/features/obituary-merle-haggard-april-6-1937-april-6-2016",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他是 Bakersfield sound 的核心人物。",
+      "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+      "src2": "https://alancackett.com/merle-haggard-obituary",
+      "from": "new"
+     },
+     {
+      "f": "他的音樂在鄉村樂的根上吸收了藍調與爵士；名人堂另列 honky-tonk、流行與民謠，Alan Cackett 的訃文另列西部搖擺。",
+      "src": "https://www.countrymusichalloffame.org/artist/merle-haggard",
+      "src2": "https://alancackett.com/merle-haggard-obituary",
+      "from": "new"
+     },
+     {
+      "f": "他受西部搖擺樂團長 Bob Wills 影響很深。",
+      "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+      "src2": "https://www.britannica.com/biography/Merle-Haggard",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1994 年入選鄉村音樂名人堂，2010 年獲甘迺迪中心榮譽獎。",
+      "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+      "src2": "https://www.britannica.com/biography/Merle-Haggard",
+      "from": "new"
+     },
+     {
+      "f": "他的歌被各種曲風的歌手翻唱：Alan Cackett 的訃文列出 Willie Nelson、Dolly Parton、Elvis Costello、Dwight Yoakam 與 Grateful Dead；Louder 的訃文則提到 Bobby \"Blue\" Bland、Millie Jackson 等靈魂與藍調歌手。",
+      "src": "https://alancackett.com/merle-haggard-obituary",
+      "src2": "https://www.loudersound.com/features/obituary-merle-haggard-april-6-1937-april-6-2016",
+      "from": "new"
+     },
+     {
+      "f": "他 2016 年 4 月 6 日（79 歲生日當天）過世。",
+      "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+      "src2": "https://www.britannica.com/biography/Merle-Haggard",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1994 年入選鄉村音樂名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+    "src2": "https://www.britannica.com/biography/Merle-Haggard",
+    "from": "new"
+   },
+   {
+    "f": "2010 年獲甘迺迪中心榮譽獎。",
+    "src": "https://en.wikipedia.org/wiki/Merle_Haggard",
+    "src2": "https://www.britannica.com/biography/Merle-Haggard",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "入獄年份不一致：維基寫 1958–1960、Britannica 寫 1957–1960、名人堂寫 1957 年被捕、1960 年假釋；Cash 在聖昆汀的演出年份也有 1958、1959、1960 三種說法。facts 只寫 1960 年出獄（四源一致），不寫入獄年與演唱會年份。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，三格全從零查。實際開頁 8 次：英文維基、Britannica、WebSearch（訃聞）、Alan Cackett 訃文、Louder 訃文、鄉村音樂名人堂、WebSearch（甘迺迪中心）、theboot 典禮報導；失敗 0 次。身分：卡池三張（Mama Tried 1968、Strangers 1965、Sing Me Back Home 1968）皆為這位歌手，無同名混卡。era 格留空：Britannica 寫 1964 年首次錄音、三年後有第一首冠軍，Louder 寫 1965 年簽 Capitol，各自單源，不寫。單源、未收進 facts：(1) 鄉村音樂名人堂官方藝人頁稱他是『鄉村音樂史上最有影響力的詞曲作者（可能只除了 Hank Williams）』、『追隨者多得數不清』——名人堂官方（可具名單源）；(2) 甘迺迪中心 2010 年典禮，Vince Gill 引介時稱他是『平民詩人（Poet of the Common Man）』並說『透過文字與音樂，他講述自己的人生故事，在許多方面也是美國的故事』——典禮引介人致詞，可具名單源，theboot 與搜尋摘要都有，寫作層可寫『Vince Gill 在 2010 年甘迺迪中心典禮上稱…』；同場致敬的有 Miranda Lambert、Kris Kristofferson、Brad Paisley、Willie Nelson 等（theboot 單源）；(3) 1972 年 Reagan 州長特赦——維基寫，搜尋摘要也提到，但另一源未開頁，單源；(4) 維基稱他受 Lefty Frizzell、Hank Williams 影響、Rolling Stone 2017 年排他為最偉大鄉村藝人第 1——前者單源，後者是雜誌榜單，依規則不收；(5) 2007 年詞曲作者名人堂、1984 年葛萊美（Britannica）、2006 年葛萊美終身成就獎（維基）各單源；(6) 他的死因與病況依規則不收；(7) 38 首冠軍單曲、80 多首大熱單曲：在世者規則不適用於已逝者但屬榜位／履歷，不寫。Cackett 與 Louder 兩篇訃文提到的翻唱者不同，facts 已分別署名來源。"
+ },
+ {
+  "key": "michael chapman",
+  "name": "Michael Chapman",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Michael Chapman 1941 年 1 月 24 日生於英格蘭約克郡的 Leeds（Hunslet），在約克郡長大。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)",
+      "src2": "https://klofmag.com/2021/09/michael-chapman-dies-aged-80/",
+      "from": "new"
+     },
+     {
+      "f": "他讀的是 Leeds 的藝術學院，之後到 Bolton College 教攝影，才轉向全職音樂。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)",
+      "src2": "https://klofmag.com/2021/09/michael-chapman-dies-aged-80/",
+      "from": "new"
+     },
+     {
+      "f": "他 1960 年代中期南下康瓦爾，在當地的酒館與民謠俱樂部演出。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)",
+      "src2": "https://klofmag.com/2021/09/michael-chapman-dies-aged-80/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的吉他把爵士、民謠與拉格泰姆（ragtime）揉在一起，難以歸類。",
+      "src": "https://klofmag.com/2021/09/michael-chapman-dies-aged-80/",
+      "src2": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "他 1970 年的《Fully Qualified Survivor》請到 Mick Ronson 彈吉他。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)",
+      "src2": "https://klofmag.com/2021/09/michael-chapman-dies-aged-80/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "John Peel 把《Fully Qualified Survivor》選為他 1970 年最愛的唱片。",
+      "src": "https://lightintheattic.net/products/wrecked-again",
+      "src2": "https://tompkinssquare.bandcamp.com/album/oh-michael-look-what-youve-done-friends-play-michael-chapman",
+      "from": "new"
+     },
+     {
+      "f": "Sonic Youth 的 Thurston Moore 是他的樂迷，並公開推崇他。",
+      "src": "https://tompkinssquare.bandcamp.com/album/oh-michael-look-what-youve-done-friends-play-michael-chapman",
+      "src2": "https://lightintheattic.net/products/wrecked-again",
+      "from": "new"
+     },
+     {
+      "f": "2012 年有一張向他致敬的專輯《Oh Michael, Look What You've Done: Friends Play Michael Chapman》，參與者包括 Thurston Moore、Lucinda Williams、Maddy Prior 與 William Tyler 等人。",
+      "src": "https://tompkinssquare.bandcamp.com/album/oh-michael-look-what-youve-done-friends-play-michael-chapman",
+      "src2": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)",
+      "from": "new"
+     },
+     {
+      "f": "他 2021 年 9 月 10 日過世，享年 80 歲。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)",
+      "src2": "https://klofmag.com/2021/09/michael-chapman-dies-aged-80/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 年他以《Rainmaker》在 EMI 的 Harvest 廠牌發行首張專輯，製作人是 Gus Dudgeon。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Chapman_(singer)",
+      "src2": "https://klofmag.com/2021/09/michael-chapman-dies-aged-80/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "他開始在康瓦爾演出的年份：研究稿（維基舊文）與上線簡介 Rainmaker 寫 1967 年進倫敦與 Cornwall 的民謠場；本層重抓維基寫 1966 年在康瓦爾酒館演出，KLOF 寫 1966 年在 Count House 民謠俱樂部，Tompkins Square 寫 1967 年在康瓦爾圈起步。三處不一致，facts 只寫『1960 年代中期』；上線簡介的『1967 年才進…』列入 pubIssues 供店主決定是否改寫。"
+  ],
+  "searches": 7,
+  "failedFetches": 5,
+  "pubIssues": [
+   {
+    "album": "Rainmaker",
+    "claim": "1967 年才進倫敦與 Cornwall 的民謠場演出",
+    "problem": "本層查到的來源對年份說法不一：維基與 KLOF 寫 1966 年在 Cornwall 演出，Tompkins Square 寫 1967 年在康瓦爾圈起步；上線簡介的『1967 年』與『才進倫敦』兩點無兩個一致來源，建議改為『1960 年代中期』或刪去年份。",
+    "src": "https://klofmag.com/2021/09/michael-chapman-dies-aged-80/"
+   }
+  ],
+  "status": "full",
+  "notes": "事實庫 research 有 Rainmaker 與 Wrecked Again 的維基生平段，published 三張簡介。實際開頁 7 次：英文維基 Michael Chapman (singer)、WebSearch（訃聞與影響）、KLOF 訃文、American Blues Scene、WebSearch（Light in the Attic）、Light in the Attic 商品頁、Tompkins Square 致敬專輯頁；失敗 5 次未計入（Guitar World 只回導覽列沒有內文、AllMusic 403、Light in the Attic 藝人頁 404、Guardian 無法抓、elsewhere.co.nz 403），**失敗請求超過上限 4 次**，照實記錄。身分：卡池三張（Fully Qualified Survivor 1970、Rainmaker 1969、Wrecked Again 1971）皆為這位英國吉他手，無同名混卡（搜尋結果中的 Michael Chapman 牧師另有其人，已排除）。非獨立提醒：Light in the Attic 與 Tompkins Square 的說明文都是唱片公司／發行方文案（行銷性質），兩處的『Peel 最愛 1970』很可能同出一源，視為輔助。單源、未收進 facts：(1) 維基稱 Thurston Moore 說 Chapman 啟發了 Sonic Youth 的成軍——維基單源（KLOF 只說 Moore 等人『受啟發』）；(2) KLOF 稱 Steve Gunn、Ryley Walker、William Tyler、Thurston Moore 受他的『全景式』吉他啟發，並稱 1998 年與 Sonic Youth 成員相遇、2012 年與 Moore 合作《The Resurrection of Clayton Peacock》——單源（搜尋摘要同說，但來自未能讀取的 Guitar World）；(3) American Blues Scene 稱他是『同世代最好的英國吉他手、歌手與詞曲作者之一』，並引 Sarah McQuaid 稱他是『真正的音樂導師』——單源；(4) 父親是鋼鐵工人、出生在 Hunslet 的細節在事實庫維基段，本層第一次重抓維基沒再出現，且 KLOF 只寫 Yorkshire，所以 facts 的出生地寫成 Leeds（Hunslet）、不寫父親職業；(5) KLOF 稱 Fully Qualified Survivor 帶來他唯一的榜上作品——單源，未寫；2009 年 Thurston Moore 的長訪談讓他在美國被注意到——Tompkins Square 與搜尋摘要，單源；Supergrass 推崇他——Light in the Attic 單源；每週五晚在 Count House 駐唱——KLOF 單源。(6) 他與 Jack Rose、Bill Callahan 巡演只見搜尋摘要；與 Andru Makin 的關係屬私人生活，不收。"
+ },
+ {
+  "key": "miranda lambert",
+  "name": "Miranda Lambert",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Miranda Lambert 1983 年 11 月 10 日生於德州 Longview，在德州東北部的 Lindale 長大。",
+      "src": "https://en.wikipedia.org/wiki/Miranda_Lambert",
+      "src2": "https://www.britannica.com/biography/Miranda-Lambert",
+      "from": "new"
+     },
+     {
+      "f": "她的父母是私家偵探，工作中常接觸受虐婦女與背叛的故事；她說這些經歷影響了她的寫歌，例如〈Gunpowder & Lead〉就反映了父母協助受虐婦女的工作。",
+      "src": "https://en.wikipedia.org/wiki/Miranda_Lambert",
+      "src2": "https://www.britannica.com/biography/Miranda-Lambert",
+      "from": "new"
+     },
+     {
+      "f": "她十六歲參加當地的才藝節目，並在德州的酒館與舞廳演出，開始靠現場累積經驗。",
+      "src": "https://en.wikipedia.org/wiki/Miranda_Lambert",
+      "src2": "https://www.britannica.com/biography/Miranda-Lambert",
+      "from": "new"
+     },
+     {
+      "f": "她 2003 年參加美國電視歌唱節目《Nashville Star》，雖然沒有奪冠（第三名），表現仍引起唱片公司注意而簽下合約。",
+      "src": "https://en.wikipedia.org/wiki/Miranda_Lambert",
+      "src2": "https://www.britannica.com/biography/Miranda-Lambert",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的音樂一邊承襲主流鄉村與 outlaw 詞曲作者（Britannica 舉 Merle Haggard 為例），一邊帶著搖滾的稜角。",
+      "src": "https://en.wikipedia.org/wiki/Miranda_Lambert",
+      "src2": "https://www.britannica.com/biography/Miranda-Lambert",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她在 2022 年 3 月的第 57 屆鄉村音樂學院獎（ACM Awards）奪下年度藝人（Entertainer of the Year）。",
+      "src": "https://en.wikipedia.org/wiki/57th_Academy_of_Country_Music_Awards",
+      "src2": "https://countrynow.com/time100-miranda-lambert-is-one-of-the-most-influential-people-of-2022/",
+      "from": "new"
+     },
+     {
+      "f": "她入選 2022 年《時代》雜誌的 TIME100（全球最具影響力 100 人），歸在「創新者」類別；她是當年唯一入選的鄉村藝人，推薦文由合作過的 Elle King 撰寫。",
+      "src": "https://en.wikipedia.org/wiki/Miranda_Lambert",
+      "src2": "https://countrynow.com/time100-miranda-lambert-is-one-of-the-most-influential-people-of-2022/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2011 年她與 Ashley Monroe、Angaleena Presley 組成三人團 Pistol Annies。",
+      "src": "https://en.wikipedia.org/wiki/Miranda_Lambert",
+      "src2": "https://en.wikipedia.org/wiki/Pistol_Annies",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，三格全從零查。實際開頁 7 次：英文維基 Miranda Lambert、Britannica、WebSearch（TIME100）、Country Now 的 TIME100 報導、維基 57th ACM Awards、維基 Pistol Annies、WebSearch（後輩影響）；失敗 1 次未計入（猜測的 Time 推薦文網址只有連結沒有內文）。身分：卡池三張（Palomino 2022、The Weight of These Wings 2016、Crazy Ex-Girlfriend 2007）皆為這位鄉村歌手，無同名混卡。依派工特注，獎座數與銷量不寫（Britannica 列的葛萊美與 ACM／CMA 連續獲獎、維基列的白金認證一律略）。非獨立：維基 Miranda Lambert、維基 57th ACM Awards、維基 Pistol Annies 同站不同條目。TIME100 屬雜誌推選名單，不是名次榜單，本層判定可收，但若店主視為『雜誌榜單』請寫作層略去。單源、未收進 facts：(1) Britannica 稱她 Kerosene 專輯除一首外都有寫作掛名、自 2001 年自行發行首張、提前畢業追夢——單源；(2) Britannica 稱她的歌路『從痛快的復仇歌到細膩的家居心事』——單源（內容涉暴力主題，寫作層請溫和處理）；(3) 維基稱她 16 歲上 Johnnie High Country Music Revue、在 Reo Palm Isle 演出——Britannica 只說 local talent show，專名只見維基；(4) 維基寫 2003 年第三名、Epic 簽約 2003 年 9 月，Britannica 只寫沒贏而被簽下——名次單源，故 facts 的『第三名』只見維基，寫作層可略；(5) 維基稱 Pistol Annies 2011 成團，Pistol Annies 條目寫官方首演 2011-04-04、活動 2010–2013 後 2017 重聚——年份兩條目一致但同站；(6) 後輩點名：搜尋摘要稱 Ashley McBryde 說 Lambert 是一路逼她成長的人（Country Now 專訪）、Priscilla Block 把她當作持續累積成績的榜樣——兩篇 Country Now 都未開頁，單源且未讀，不收；(7) 另見 Kris Kristofferson 那位的 Time 與 Loretta Lynn 的悼文，Lambert 公開感謝前輩開路，說明她是他們影響的受益者，但那是別人的卡資料，不放這裡。legacy 格沒有『後輩點名』與『權威共識評價』，只有獎項與名單，故合計 full 但偏薄。"
  }
 ]
