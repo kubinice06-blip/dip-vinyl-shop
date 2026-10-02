@@ -17,3 +17,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - g3 交件（QA 本組 0）。thin：Ginuwine、Harold Vick、Harry Roesli、Helen Merrill。George Lewis 確認為 AACM 長號手，非同名紐奧良單簧管手。單源或有反例不寫：Guru 過世年（改寫事件不寫年或以兩源為準）、Gene Russell 生卒年、Ginuwine 與 Harry Roesli 生年、Gil Mellé「Blue Note 第一位白人樂手」、Gene Russell「第一家黑人爵士廠牌」。pubIssues 3（Grover Washington Jr.《Winelight》〈Just the Two of Us〉葛萊美主詞為詞曲作者；Guru《Jazzmatazz Volume 1》「爵士嘻哈起點」過頭；Harry Roesli《Titik Api》《Ken Arok》年份 1975／1977 矛盾）→ 本機待核。**卡池重複**：《Jazzmatazz, Vol. 1》與《Jazzmatazz Volume 1》同一張唱片兩張卡 → 記入本機待辦。
 - w2 審稿無修正。Buena Vista Social Club 2022 年入選國家錄音登錄經主線 WebSearch 核實（loc.gov、ASCAP）。Charles Gayle 274 放寬照准。Candido「現代康加鼓演奏之父」以「被稱為」單源評語照准。Aznavour 引語具名 Dicale 與 Dylan。
 - **ar-c-001 上線**：40 位，reviewFixes 1。
+- g4 交件（QA 本組 0，四組齊）。thin：Irreversible Entanglements。Threadgill NEA 年、Garbarek 聖奧拉夫勳章年不寫；Nilovic 唱片張數與葛萊美說法不寫。pubIssues 2（Ivo Papasov《Orpheus Ascending》被捕原因寫成「土耳其裔身分」，實為羅姆人；Janko Nilovic《Soul Impressions》「十張唱片」兩源不一）→ 本機待核。w2（g3+g4）派出。
