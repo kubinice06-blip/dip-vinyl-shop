@@ -282,3 +282,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-026
 - g1 交件（QA 本組 0）。thin：Nosaj Thing、ODESZA、Omar-S、Paul van Dyk、Poppy。Paul van Dyk DJ Mag 讀者票選屬民調名次，不寫；葛萊美入圍年對不上，不寫。Omar-S 2023 年爭議與 Poppy／Titanic Sinclair 指控一律不收。Prurient Hospital Productions 創立年不寫。單源未收：Nitzer Ebb、Portishead 後輩影響名單。pubIssues 1（Paul van Dyk《Out There and Back》「Vandit 第一號發行」應為「第一張專輯」）→ 本機待核。
+- 026 g2 交件（QA：Sven Grünberg 搜尋 9 次超限 1 次，facts 未依賴該次）。thin：Purity Ring、Ricardo Villalobos、Shlohmo、Skrillex、Stromae、Sven Grünberg。RA 年度 DJ 票選屬民調名次不寫。Derrick May 出生地兩源不一，不寫。單源未收：Sven Grünberg 2010 年白星勳章。pubIssues 1（Sven Grünberg《Hingus》「蘇聯第一張電子音樂唱片」有反例 Zodiac《Disco Alliance》1980）→ 本機待核。w1（g1+g2）派出。
+- 025 w1 審稿（2 處）：冨田勲 刪「四項葛萊美提名」與「首位獲葛萊美提名的日本人」（首次宣稱兩源非獨立），壓回 259；Above & Beyond「兩度入圍」改「曾入圍」（在世者累計）。Ace of Base 2024 年入選瑞典音樂名人堂經主線 WebSearch 核實（theneedledrop）。Bruce Haack 放寬至 274 照准。
