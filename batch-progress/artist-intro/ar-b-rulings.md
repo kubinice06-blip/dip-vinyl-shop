@@ -220,3 +220,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-019
 - g1 交件（QA 本組 0）。thin：Phoebe Bridgers、Phosphorescent。Odetta 失敗請求 6 次超限，未取得內容，照收。Phoebe Bridgers 2024 葛萊美主體是 boygenius；Ray LaMontagne 葛萊美署名含 the Pariah Dogs。pubIssues 3（Nic Jones《The Noah's Ark Trap》調弦說法；Randy Travis《Storms of Life》首次／銷量措辭；Ray LaMontagne《God Willin'》得獎時間）→ 本機待核。
+- 018 g4 交件（QA 本組 0）。thin：Léo Ferré、Leo Kottke。Loretta Lynn 6、Laura Marling 5、Michael Chapman 5 次失敗請求超限，未取得內容，照收。Miranda Lambert 的 TIME100 屬推選名單、非名次榜，可寫。pubIssues 2（Léo Ferré《Verlaine et Rimbaud》「第一張錄音室雙唱片」單源；Michael Chapman《Rainmaker》1966／1967）→ 本機待核。w2（g3+g4）派出。
