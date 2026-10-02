@@ -260,3 +260,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - g1 交件（QA 本組 0）。thin：ネーネーズ（地位 none）、Alton Ellis。單源未收：Alton Ellis 後輩點名、Order of Distinction；Youssou N'Dour 高松宮殿下記念世界文化賞與 Polar Music Prize。pubIssues 5（Youssou N'Dour《Egypt》葛萊美應為第 47 屆／2005；Alton Ellis 兩張〈Rock Steady〉年份；Yellowman《Zungguzungguguzungguzeng》〈Mad Mad Mad〉年份）→ 本機待核。
 - 022 w2 審稿（1 處）：Marisa Monte 刪「第一位獲 Premio Tenco 的巴西女性」（首次宣稱）。Celia Cruz「首位登上美國硬幣的非裔拉丁裔人物」屬美國鑄幣局官方表述，照准。
 - **ar-b-022 上線**：40 位，reviewFixes 1。
+- 023 g2 交件。thin：Augustus Pablo。生年衝突不寫（Pablo、Burning Spear、Isaacs、Fairuz）。Buju Banton 只寫服刑與 2018 年出獄。pubIssues 2（Dennis Brown《Wolf & Leopards》稱號出處；《No Man Is an Island》錄音年齡）→ 本機待核；Hamza El Din《Escalay》Reich／Riley 受影響說單源待核。w1（g1+g2）派出（派工檔因單引號斷行重產一次，首支代理開跑即停）。
