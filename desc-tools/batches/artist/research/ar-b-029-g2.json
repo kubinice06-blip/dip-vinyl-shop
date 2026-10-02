@@ -544,5 +544,313 @@
   "failedFetches": 3,
   "status": "thin",
   "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 Lloyd (singer)、WebSearch（限媒體網域）、Complex 專訪、WebSearch（Tru 回歸，排除維基與社群）、Factmag（實際開頁）、ratedrnb（實際開頁）、WebSearch（獎項）。失敗請求 3 次：vibe.com 與 billboard.com 轉址 tollbit 未取得、allmusic.com 403。同名確認：卡池 Southside（2004）、Street Love（2007）、Lessons in Love（2008）皆是這位 R&B 歌手 Lloyd（本名 Lloyd Polite Jr.），搜尋結果裡同名的 Lloyd Price、Lloyd Lambert 是別人，一條都未收。legacy 格查不到有出處的共識評價（無名人堂、榜單外的後輩點名或國家級榮譽），標 none。未收（單源或只見搜尋摘要）：生日 1986 年 1 月 3 日、Calliope Projects 成長（維基單源）；Marvin Gaye 與 R. Kelly 是早年影響（搜尋摘要，未開頁）；2012 年 mixtape《The Playboy Diaries, Vol. 1》（搜尋摘要）；因取得高中文憑與家庭而淡出（搜尋摘要）；〈Tru〉2016 年的白金認證、YouTube 觀看數（認證與串流數字不收）；2006 年〈You〉（Lil Wayne 合作）、2009 年〈BedRock〉榜單名次（榜單不收）；〈Lay It Down〉入圍葛萊美最佳男 R&B 演唱與〈Dedication to My Ex (Miss That)〉入圍葛萊美最佳饒舌／演唱合作（搜尋摘要一句，未開頁、屆次不明，且是入圍非得獎，不收）；2005 年 UPN 影集《One on One》、2024 年電影（維基單源，履歷）；Billboard 與 Soul Train 入圍（只見摘要）。Factmag 描述他對 R&B 的立場與現場樂器（單源）。N-Toon 一條：維基寫 1996 年成軍、2001 年解散；Factmag 寫發行一張專輯後解散、解散時他 15 歲，兩源一致。"
+ },
+ {
+  "key": "loyle carner",
+  "name": "Loyle Carner",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Loyle Carner 本名 Benjamin Coyle-Larner，在南倫敦的 Croydon 由母親 Jean 與繼父帶大。",
+      "src": "https://en.wikipedia.org/wiki/Loyle_Carner",
+      "src2": "https://www.nme.com/big-reads/big-read-loyle-carner-interview-not-waving-but-drowning-2481201",
+      "from": "new"
+     },
+     {
+      "f": "他有 ADHD 與閱讀障礙（dyslexia）；他說小時候被灌輸自己很笨、什麼都做不好，卻發現寫作是自己最喜歡的事。",
+      "src": "https://www.thefader.com/2016/04/26/loyle-carner-stars-shards-interview",
+      "src2": "https://en.wikipedia.org/wiki/Loyle_Carner",
+      "from": "new"
+     },
+     {
+      "f": "他熱愛烹飪，創辦了給 ADHD 孩子的烹飪課 Chilli Con Carner；專輯裡也有以名廚 Yotam Ottolenghi 與 Antonio Carluccio 為題的歌。",
+      "src": "https://en.wikipedia.org/wiki/Loyle_Carner",
+      "src2": "https://www.nme.com/big-reads/big-read-loyle-carner-interview-not-waving-but-drowning-2481201",
+      "from": "new"
+     },
+     {
+      "f": "他曾讀 Drama Centre London 的表演，2014 年前後輟學、改專心做音樂。",
+      "src": "https://en.wikipedia.org/wiki/Loyle_Carner",
+      "src2": "https://www.nme.com/news/music/loyle-carner-receives-honorary-degree-from-university-of-the-arts-london-3777526",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基形容他的聲音是自白式、帶爵士味的饒舌；Fader 則寫他早期作品有懷舊溫暖的製作（製作人 Rebel Kleff）與內省、細節密集的家庭、愛情與失去的敘事。",
+      "src": "https://en.wikipedia.org/wiki/Loyle_Carner",
+      "src2": "https://www.thefader.com/2016/04/26/loyle-carner-stars-shards-interview",
+      "from": "new"
+     },
+     {
+      "f": "他成長期間美國嘻哈與英國 grime 並重地聽，維基也列這兩者為影響來源。",
+      "src": "https://www.thefader.com/2016/04/26/loyle-carner-stars-shards-interview",
+      "src2": "https://en.wikipedia.org/wiki/Loyle_Carner",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的首張專輯《Yesterday's Gone》入圍 2017 年 Mercury Prize（入圍，未得獎，得主是 Sampha）；第三張《hugo》（2022）入圍 2023 年 Mercury Prize（入圍，未得獎，得主是 Ezra Collective）。",
+      "src": "https://en.wikipedia.org/wiki/Loyle_Carner",
+      "src2": "https://www.nme.com/news/music/loyle-carner-receives-honorary-degree-from-university-of-the-arts-london-3777526",
+      "from": "new"
+     },
+     {
+      "f": "2023 年 Mercury Prize 的 12 位入圍者包含 Loyle Carner，當年得主 Ezra Collective 是第一個贏得該獎的爵士團體。",
+      "src": "https://www.thefader.com/2023/09/08/ezra-collective-2023-mercury-prize-winners",
+      "src2": "https://en.wikipedia.org/wiki/Loyle_Carner",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "首張專輯《Yesterday's Gone》入圍 2017 年 Mercury Prize（入圍）。",
+    "src": "https://en.wikipedia.org/wiki/Loyle_Carner",
+    "from": "new"
+   },
+   {
+    "f": "《hugo》入圍 2023 年 Mercury Prize（入圍）。",
+    "src": "https://www.thefader.com/2023/09/08/ezra-collective-2023-mercury-prize-winners",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "WebSearch 摘要把《hugo》寫成 2020 年；維基與 NME 為 2022 年，採 2022。",
+   "維基寫他出生於倫敦 Lambeth、在南 Croydon 長大；NME 寫 Croydon 長大；facts 只寫『南倫敦的 Croydon 長大』，不寫出生地。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基、WebSearch（限媒體網域）、NME 長專訪、Fader 2016 專訪、WebSearch（2023 Mercury 入圍名單）、Fader 2023 Mercury 報導、NME 榮譽學位報導。失敗請求 3 次：mercuryprize.com 兩個頁面 404、billboard.com 轉址 tollbit 未取得；另有兩次 WebSearch 因網域限制參數錯誤（400，未計）。同名確認：卡池 hopefully !（2025）、hugo（2022）、Not Waving, but Drowning（2019）皆是這位 Croydon 的 Loyle Carner，無混卡。獎項主詞：Mercury Prize 是專輯獎，facts 寫專輯入圍、不寫成他個人得獎；皆入圍未得獎。Fader 2023 報導未列出 hugo 的專輯名，專輯名由維基、NME 與搜尋摘要補；Fader 只作為『他是 2023 入圍者』的來源，非獨立程度：維基與 NME 為不同來源。未收（單源）：2024 年 7 月獲 University of the Arts London 榮譽博士，理由含 Mercury 提名與以 Chilli Con Carner 協助 ADHD 與閱讀障礙年輕人（NME 單源；若主線想用，可去 UAL 官網補第二源）；NME 稱他『英國樂壇最令人振奮的成功故事之一』（單一媒體形容）；2018 年兩項 Brit Awards 提名（維基單源，入圍）；生日 1994 年 10 月 6 日、出生 Lambeth、生父幾亞那裔、繼父因癲癇猝死、讀 Whitgift 學校與 Brit School（維基單源；繼父過世屬家人死亡，僅在 notes，不寫細節）；2014 年 EP《A Little Late》為突破（Fader 單源）；母親在專輯〈Dear Ben〉錄音回應（NME 單源）；視 Ottolenghi 與 Carluccio 為父親過世後的男性榜樣（NME 單源）。在世者獎座數、榜單名次一律未收。"
+ },
+ {
+  "key": "megan thee stallion",
+  "name": "Megan Thee Stallion",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Megan Thee Stallion 本名 Megan Pete，1995 年生，在德州 Houston 長大，出身南區的 South Park 一帶。",
+      "src": "https://en.wikipedia.org/wiki/Megan_Thee_Stallion",
+      "src2": "https://www.thefader.com/2019/05/20/megan-thee-stallion-fever-cover-story",
+      "from": "new"
+     },
+     {
+      "f": "她的母親 Holly Thomas 以 Holly-Wood 為名是 Houston 的饒舌歌手，Megan 從小跟著進錄音室。",
+      "src": "https://www.complex.com/music/a/j-mckinney/megan-thee-stallion-everything-you-need-to-know",
+      "src2": "https://www.thefader.com/2019/05/20/megan-thee-stallion-fever-cover-story",
+      "from": "new"
+     },
+     {
+      "f": "她從小聽的是 Houston 與南方的前輩：Complex 寫她早年受 Pimp C 與 The Notorious B.I.G. 影響，Fader 寫她在母親身邊聽 UGK、Three 6 Mafia 與 Biggie；維基則說 Pimp C 形塑了她的 talk-rap 唱法與自信。",
+      "src": "https://en.wikipedia.org/wiki/Megan_Thee_Stallion",
+      "src2": "https://www.complex.com/music/a/j-mckinney/megan-thee-stallion-everything-you-need-to-know",
+      "from": "new"
+     },
+     {
+      "f": "她是在讀大學期間才讓人知道她會 rap；同時在 Texas Southern University 讀健康行政（health administration）。",
+      "src": "https://www.thefader.com/2019/05/20/megan-thee-stallion-fever-cover-story",
+      "src2": "https://www.complex.com/music/a/j-mckinney/megan-thee-stallion-everything-you-need-to-know",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她把 Houston 的饒舌傳統（Pimp C 與 UGK 一路的講話式 talk-rap 與自信姿態）帶進當代；Fader 的描述裡她尊重 South Park 與 DJ Screw 一脈的城市傳承。",
+      "src": "https://en.wikipedia.org/wiki/Megan_Thee_Stallion",
+      "src2": "https://www.thefader.com/2019/05/20/megan-thee-stallion-fever-cover-story",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "「Hot Girl Summer」是她 2019 年帶起的流行語，她定義為『不再為難自己、做自己、玩得開心』，同年她申請了這個詞的商標。",
+      "src": "https://en.wikipedia.org/wiki/Megan_Thee_Stallion",
+      "src2": "https://www.complex.com/music/a/j-mckinney/megan-thee-stallion-everything-you-need-to-know",
+      "from": "new"
+     },
+     {
+      "f": "第 63 屆葛萊美獎（2021 年）她獲最佳新人（Best New Artist），並與 Beyoncé 以〈Savage〉的 Remix 共同獲最佳饒舌表演（Best Rap Performance）；維基說她是繼 Lauryn Hill（1999）之後第二位贏得最佳新人的女饒舌歌手。",
+      "src": "https://www.grammy.com/news/megan-thee-stallion-wins-best-new-artist-2021-grammy-awards-show/",
+      "src2": "https://en.wikipedia.org/wiki/Megan_Thee_Stallion",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "第 63 屆葛萊美獎（2021 年）獲最佳新人。",
+    "src": "https://www.grammy.com/news/megan-thee-stallion-wins-best-new-artist-2021-grammy-awards-show/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基寫 Hot Girl Summer 商標在 2019 年 9 月取得／登記；Complex 寫 2019 年 7 月申請；facts 只寫『2019 年申請商標』，不寫月份。",
+   "grammy.com 的最佳新人頁寫她『獲兩座』（最佳新人、最佳饒舌表演）；維基與搜尋結果列題另有最佳饒舌歌曲（Best Rap Song，與 Beyoncé 共同、同為〈Savage〉Remix）；facts 只寫兩個已開頁核對的獎。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 6 次：維基、WebSearch（生平，限媒體網域）、Fader 2019 封面故事、Complex 生平整理、WebSearch（葛萊美）、grammy.com 最佳新人頁。失敗請求 1 次：time.com TIME100 頁只回標題連結、無內文。同名確認：卡池 Good News（2020）、Traumazine（2022）、MEGAN（2024）皆是 Houston 的這位 Megan Thee Stallion，無混卡。獎項主詞：〈Savage〉Remix 的最佳饒舌表演由她與 Beyoncé 共同得獎；最佳新人是她個人。未收（單源或只見搜尋摘要）：出生於 San Antonio、14 歲搬 Pearland、2021 年 Texas Southern 學位（維基單源）；母親 2019 年過世（Complex 單源，家人過世）；Q-Tip 為前輩導師（Complex 單源）；最佳饒舌歌曲（Best Rap Song）〈Savage〉Remix（維基單源加搜尋標題，未開頁）；『第一位本世紀贏得最佳新人的女饒舌歌手』（grammy 搜尋摘要）與維基『第二位，繼 Lauryn Hill 之後』措辭不同、屬『第一／第二』類宣稱，只把維基說法掛在 facts 並註明出處，寫作層若用請寫『維基稱』；TIME 2020 年百大影響力人物（維基單源，time.com 頁無內文）；槍擊案與後續官司只收層級、一律不寫細節；Tina Snow 分身（搜尋摘要）；在世者銷量、串流、獎座總數、榜單名次一律未收。"
+ },
+ {
+  "key": "mf doom",
+  "name": "MF DOOM",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "MF DOOM 本名 Daniel Dumile（Dumile Daniel Thompson）；他在紐約長島長大，早年以 Zev Love X 的名字，與弟弟 DJ Subroc 組成 hip-hop 團 KMD。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "from": "new"
+     },
+     {
+      "f": "KMD 的專輯《Black Bastards》因封面爭議被廠牌 Elektra 拒絕發行，團也遭除名；弟弟 Subroc 在這段期間遇車禍身亡，團隨之解散。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "from": "new"
+     },
+     {
+      "f": "之後他退出樂壇多年，處境潦倒，一度「幾乎無家可歸」（damn near homeless）。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://complex.com/music/2015/01/20-things-you-didnt-know-about-mf-doom/subroc-funeral",
+      "from": "new"
+     },
+     {
+      "f": "他先在 open-mic 場合遮著臉演出，後來戴上金屬面具，以 MF DOOM 這個角色重新登場；面具與角色取自 Marvel 的反派 Doctor Doom。",
+      "src": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "src2": "https://en.wikipedia.org/wiki/MF_Doom",
+      "from": "new"
+     },
+     {
+      "f": "他 2020 年過世，享年 49 歲。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://www.xxlmag.com/mf-doom-death/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以綿密的文字遊戲與押韻見稱：維基稱他廣被視為嘻哈史上最偉大、最有影響力的詞人之一，Stereogum 則稱《Madvillainy》有密集的詞藻與文字遊戲。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "from": "new"
+     },
+     {
+      "f": "他不只用 MF DOOM 一個名字：還用 Viktor Vaughn、King Geedorah 等化名發片，也以 Metal Fingers 的名義做拍子。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://complex.com/music/2015/01/20-things-you-didnt-know-about-mf-doom/subroc-funeral",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基首段稱 MF DOOM 廣被視為嘻哈史上最偉大、最有影響力的詞人之一；Stereogum 寫他受同輩高度敬重，影響跨越風格界線的後輩，連 Playboi Carti 這種音樂上沒有交集的人也提到他。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "from": "new"
+     },
+     {
+      "f": "2004 年與製作人 Madlib 合作的《Madvillainy》（樂團名 Madvillain）被維基稱為另類嘻哈的里程碑專輯，Stereogum 也寫它受到廣泛好評。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "from": "new"
+     },
+     {
+      "f": "2010 年他因入境問題無法再回美國，搬到英國，直到過世都住在那裡。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1997 年他以 MF DOOM 這個戴面具的角色重新出發。",
+      "src": "https://www.xxlmag.com/mf-doom-death/",
+      "src2": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "from": "new"
+     },
+     {
+      "f": "1999 年的《Operation: Doomsday》讓他在紐約的地下嘻哈場景站穩腳步。",
+      "src": "https://www.stereogum.com/2111984/mf-doom-leaves-earth/columns/sounding-board/",
+      "src2": "https://www.xxlmag.com/mf-doom-death/",
+      "from": "new"
+     },
+     {
+      "f": "2004 年的《Madvillainy》是他與 Madlib 的合作專輯，帶他走向更廣的聽眾。",
+      "src": "https://en.wikipedia.org/wiki/MF_Doom",
+      "src2": "https://www.xxlmag.com/mf-doom-death/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1997 年以戴面具的 MF DOOM 角色重返樂壇。",
+    "src": "https://www.xxlmag.com/mf-doom-death/",
+    "from": "new"
+   },
+   {
+    "f": "1999 年發行《Operation: Doomsday》。",
+    "src": "https://www.xxlmag.com/mf-doom-death/",
+    "from": "new"
+   },
+   {
+    "f": "2004 年與 Madlib 合作《Madvillainy》。",
+    "src": "https://en.wikipedia.org/wiki/MF_Doom",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基寫出生日 1971 年 7 月 13 日；WebSearch 摘要（NPR 或 Rolling Stone 訃聞轉述）寫 1971 年 1 月 9 日。出生日兩源不一致，facts 不寫出生日，也不寫出生年。",
+   "Elektra 除名 KMD 的年份：Complex 訃聞寫 1993 年，Complex『20 Things』寫 1994 年；facts 只寫事件、不寫年份。",
+   "Subroc 的過世年份：維基與搜尋摘要為 1993 年 4 月，但已開頁的 Stereogum、XXL、Complex 沒有寫年份（XXL 只寫『這段期間』），所以 Subroc 年份只有維基單源，facts 不寫。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基、WebSearch（生平與訃聞）、Complex 訃聞、XXL 訃聞、WebSearch（影響與 Nuyorican，一次呼叫含兩條查詢）、Complex『20 Things』、Stereogum 追思。失敗請求 4 次（已達上限）：britannica 404、npr.org 兩篇各 503、rollingstone.com 轉址 tollbit 未取得。同名確認：卡池 Operation: Doomsday（1999）、MM..FOOD（2004）、Born Like This（2009）皆是這位 MF DOOM，無混卡。死亡只收 2020 年與年齡 49 歲，不收死因與家人細節。非獨立說明：legacy 與 sound 第一條共用維基『widely regarded』一句，是同一個來源重複用；XXL、Complex 的年份敘述沒有交叉到維基，因此 era 的 1997 與 1999 用的是 XXL 與 Stereogum 兩個獨立來源。『damn near homeless』一句維基與 Complex 都有，但 Complex 該文可能是引自同一次訪談，不排除同源。未收（單源或未開頁）：生於倫敦 Hounslow、在 Long Beach 長大、1971 年生日（維基單源，搜尋摘要有同說）；Subroc 1993 年 4 月過世（維基單源，搜尋摘要同說）；《Black Bastards》2001 年才發行（搜尋摘要）；他住 Atlanta 約三年、在 Nuyorican Poets Cafe 戴絲襪演出（搜尋摘要，未開頁；Stereogum 只寫 open-mic 遮臉）；面具由塗鴉藝術家 KEO 協助設計、起初考慮 Darth Maul、定案受電影《神鬼戰士》啟發（Complex『20 Things』單源）；Malachi Z York 與 Nuwaubian 的一段（Complex 單源）；Bishop Nehru 稱他為『第一位導師』（XXL 單源）；Joey Badass、Milo、Tyler 與 Earl Sweatshirt 受他影響（搜尋摘要，未開頁）；啟發後輩遮臉（搜尋摘要）；Stereogum 與 Consequence 的 20 週年文章未開頁。KMD 1991 年《Mr. Hood》（Stereogum 單源）。人物故事的各條都只收到兩源能支撐的版本；寫作層請依 facts 寫，不要補入未收項。搜尋次數 7，另有 1 次額度未用。"
  }
 ]
