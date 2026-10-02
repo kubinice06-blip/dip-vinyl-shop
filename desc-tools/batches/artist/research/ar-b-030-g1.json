@@ -469,5 +469,277 @@
     "failedFetches": 1,
     "status": "full",
     "notes": "事實庫為空，從零查。成功請求 8 次：維基 Stormzy、WebSearch（Glastonbury）、PAPER、維基《Gang Signs & Prayer》、WebSearch（榜單與 Brit Awards）、倫敦博物館、triple j（ABC）、Britannica；失敗請求 1 次（brits.co.uk 403，未取得，未計入）。同名檢查：poolAlbums 為《Gang Signs & Prayer》《Heavy Is the Head》《This Is What I Mean》，皆為 Stormzy，無混卡。第二源注意：Glastonbury 那條的 Britannica 內容只見於 Britannica 摘要頁（文字被截斷，但開頭『first British rapper to headline』可讀）；『是否也是 Brit 英國男獨唱藝人得主』：triple j 寫 2018 Brit Awards 他得 Male Solo Artist 與 Album of the Year，搜尋摘要也提到，但第二源只有搜尋摘要，未收進 facts，主詞為 Stormzy 本人，單源（triple j）。單源未收：（1）維基稱他就讀 Harris Academy South Norwood（倫敦博物館寫 Harris Federation School，不同寫法）；（2）倫敦博物館稱他 2015 年的 freestyle〈Shut Up〉是突破作並登上榜單第 8 名（單源）；（3）維基稱《Gang Signs & Prayer》客座包含 Wretch 32、Ghetts、J Hus 等（單源）；（4）Britannica 稱他以渾厚的倫敦口音念 verse（單源）；（5）倫敦博物館稱他學歷與先前在煉油廠工作的經歷（單源）；（6）維基稱他的 Cambridge 獎學金涵蓋兩名學生的學費與最多四年生活補助（單源，細節不收）；（7）Merky FC 2022 年計畫（單源）。專輯銷量與『首週 68,000 張』屬銷量，不寫；Brit 提名次數不寫。"
+  },
+  {
+    "key": "summer walker",
+    "name": "Summer Walker",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Summer Marjani Walker，1996 年生於美國喬治亞州亞特蘭大，是亞特蘭大在地出身的 R&B 歌手。",
+            "src": "https://en.wikipedia.org/wiki/Summer_Walker",
+            "src2": "https://www.revolt.tv/article/2021-11-15/128430/summer-walkers-still-over-it-debuts-at-no-1-on-billboard-200/",
+            "from": "new"
+          },
+          {
+            "f": "她先在社群平台上傳翻唱與短片，被亞特蘭大的廠牌 LVRN（Love Renaissance）發現，簽下合約，並與 Interscope 合作。",
+            "src": "https://en.wikipedia.org/wiki/Summer_Walker",
+            "src2": "https://www.summerwalker.org/bio",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2019 年 10 月 4 日首張專輯《Over It》發行，首週登上 Billboard 200 第 2 名，當時創下女性 R&B 專輯的最大首週串流週紀錄。",
+            "src": "https://en.wikipedia.org/wiki/Over_It_(album)",
+            "src2": "https://en.wikipedia.org/wiki/Summer_Walker",
+            "from": "new"
+          },
+          {
+            "f": "《Over It》拿下 2020 年 Soul Train Music Awards 年度專輯。",
+            "src": "https://en.wikipedia.org/wiki/Over_It_(album)",
+            "src2": "https://interscope.com/pages/artist/summer-walker",
+            "from": "new"
+          },
+          {
+            "f": "2021 年 11 月第二張專輯《Still Over It》首度登上 Billboard 200 冠軍，是她的第一張冠軍專輯。",
+            "src": "https://www.revolt.tv/article/2021-11-15/128430/summer-walkers-still-over-it-debuts-at-no-1-on-billboard-200/",
+            "src2": "https://interscope.com/pages/artist/summer-walker",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2018 年 10 月發行首張混音帶《Last Day of Summer》，收錄〈Girls Need Love〉，後來有 Drake 參與的混音版。",
+            "src": "https://en.wikipedia.org/wiki/Summer_Walker",
+            "src2": "https://interscope.com/pages/artist/summer-walker",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2018 年 10 月首張混音帶《Last Day of Summer》，〈Girls Need Love〉有 Drake 混音版。",
+        "src": "https://en.wikipedia.org/wiki/Summer_Walker",
+        "src2": "https://interscope.com/pages/artist/summer-walker",
+        "from": "new"
+      },
+      {
+        "f": "2019 年《Over It》首週登上 Billboard 200 第 2 名。",
+        "src": "https://en.wikipedia.org/wiki/Over_It_(album)",
+        "src2": "https://en.wikipedia.org/wiki/Summer_Walker",
+        "from": "new"
+      },
+      {
+        "f": "2021 年《Still Over It》登上 Billboard 200 冠軍。",
+        "src": "https://www.revolt.tv/article/2021-11-15/128430/summer-walkers-still-over-it-debuts-at-no-1-on-billboard-200/",
+        "src2": "https://interscope.com/pages/artist/summer-walker",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "簽約年份：維基寫 2017 年與 LVRN、Interscope 簽約，Interscope 官方頁與搜尋摘要寫 2018 年嶄露頭角、簽約 2017–2018；兩說不一，facts 不寫簽約年。",
+      "『最大首週串流週紀錄』：維基《Over It》寫當時為女性 R&B 專輯最大串流週，維基 Summer Walker 條目寫『briefly』（後被超越），facts 用『當時』。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "事實庫為空，從零查。成功請求 8 次：維基 Summer Walker、WebSearch（生平與 LVRN）、summerwalker.org、WebSearch（Still Over It 與葛萊美）、Revolt、WebSearch（人物介紹）、Interscope 藝人頁、維基《Over It》。失敗請求 0 次。同名檢查：poolAlbums 為《Over It》《Last Day of Summer》《Still Over It》，皆為亞特蘭大的 Summer Walker，無混卡。第二源品質與非獨立標註：（1）summerwalker.org 自稱『Not official Fan-made website』，內容與維基近似，只用來對照 LVRN 發現過程，非獨立、品質偏弱，寫作層寫發現經過要保守；（2）Interscope 是她的簽約廠牌官方頁，屬利益相關來源，只用來佐證年份與專輯榜成績，非獨立；（3）《Over It》首週第 2 名那條兩源都是維基（專輯條目與藝人條目），非獨立。sound 格查不到兩源支持的內容；單源未收：（1）維基《Over It》稱專輯是當代 R&B 製作，多數曲目由 London on da Track 製作，客座含 Usher、Drake、Bryson Tiller、Jhené Aiko（單源）；（2）summerwalker.org 稱她融合 1990 與 2000 年代 R&B 與現代 trap 質地、聲線輕如耳語（粉絲站單源，不收）；（3）她做過清潔工作並靠 YouTube 教學自學吉他（維基，與粉絲站、搜尋摘要重述同一說法，疑似同源，不收，且搜尋摘要另提的其他打工經歷未核實）；（4）維基稱《Over It》是 2020 年 Apple Music 上女性藝人收聽最多的專輯（單源）；（5）維基稱她與 Taylor Swift 並列為唯一有 18 首同張專輯歌曲同時進 Hot 100 的女性（單源，且屬首次類）；（6）搜尋摘要稱《Over It》在 Billboard 紀錄上超越 Beyoncé《Lemonade》（單源、來源頁未開）；（7）Revolt 稱 Walker 是自 Beyoncé 以來五年多來首位以專輯登上 R&B 冠軍的女性（屬『第一位』類，單源，且 Billboard 搜尋摘要寫『first R&B album by a woman to top the Billboard 200 in more than five years』措辭不同，不收）；（8）葛萊美：搜尋摘要稱《Over It》與《Still Over It》都未獲提名，維基稱她四次提名（2023、2024、2026 屆，類別與得獎主詞未逐項核對），本層不收；（9）Soul Train 2019 年最佳新人（搜尋摘要，單源）。銷量認證倍數與串流量屬在世者累計數據，不寫。專輯名 Over It／Still Over It／Finally Over It 為三部曲，Finally Over It 為 2025 年作，卡池未收。"
+  },
+  {
+    "key": "the game",
+    "name": "The Game",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Jayceon Terrell Taylor，1979 年 11 月 29 日生於加州 Compton。",
+            "src": "https://en.wikipedia.org/wiki/The_Game_(rapper)",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          },
+          {
+            "f": "他遭槍擊後在療養期間決定走嘻哈，花了數個月聽經典嘻哈專輯、練習 freestyle；維基寫事發於 2001 年底，傳記站寫約 2000 年，年份不一。",
+            "src": "https://en.wikipedia.org/wiki/The_Game_(rapper)",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          },
+          {
+            "f": "他先發行混音帶，被 Dr. Dre 簽進 Aftermath Entertainment，之後兩年多在 Dr. Dre 指導下準備主流廠牌首作（簽約年份兩源不一：維基 2002，傳記站 2003）。",
+            "src": "https://en.wikipedia.org/wiki/The_Game_(rapper)",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張主流廠牌專輯《The Documentary》2005 年 1 月 18 日發行，登上 Billboard 200 冠軍。",
+            "src": "https://en.wikipedia.org/wiki/The_Documentary",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          },
+          {
+            "f": "維基稱他自《The Documentary》之後被視為帶動沒落的西岸嘻哈重返主流的『driving force』；傳記站也稱他讓西岸嘻哈重回主流。",
+            "src": "https://en.wikipedia.org/wiki/The_Documentary",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          },
+          {
+            "f": "第 48 屆葛萊美獎（2006），單曲〈Hate It or Love It〉（The Game featuring 50 Cent）入圍最佳饒舌團體或二重唱表演（入圍）與最佳饒舌歌曲（入圍）。主詞是該單曲，不是專輯。",
+            "src": "https://www.grammy.com/artists/50-cent/2468/",
+            "src2": "https://en.wikipedia.org/wiki/The_Documentary",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2005 年 1 月發行首張主流廠牌專輯《The Documentary》，由 Dr. Dre 的 Aftermath、50 Cent 的 G-Unit 與 Interscope 發行。",
+            "src": "https://en.wikipedia.org/wiki/The_Documentary",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2005 年《The Documentary》登上 Billboard 200 冠軍。",
+        "src": "https://en.wikipedia.org/wiki/The_Documentary",
+        "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+        "from": "new"
+      },
+      {
+        "f": "第 48 屆葛萊美獎（2006）〈Hate It or Love It〉入圍兩項（最佳饒舌團體或二重唱表演、最佳饒舌歌曲）。",
+        "src": "https://www.grammy.com/artists/50-cent/2468/",
+        "src2": "https://en.wikipedia.org/wiki/The_Documentary",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "被 Dr. Dre 簽下的年份：維基 The Game 條目寫 2002，傳記站 thefamouspeople 寫 2003；搜尋摘要也稱 2002。兩源不一致，寫作層不要寫簽約年。",
+      "遭槍擊的年份：維基寫 2001 年底，傳記站寫約 2000 年；facts 已註明年份不一，寫作層只寫『遭槍擊後療養期間』，不寫年份。",
+      "父母背景：維基寫父母是 Crips 成員，傳記站寫父母有成癮問題並曾入寄養；兩源說法不重疊，不收。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 5,
+    "status": "thin",
+    "notes": "事實庫為空，從零查。成功請求 7 次：維基 The Game (rapper)、WebSearch（Documentary 與西岸）、維基《The Documentary》、WebSearch（葛萊美入圍）、grammy.com 50 Cent 頁、WebSearch（生平）、thefamouspeople。另有失敗請求 5 次（Britannica 404、rappers.fandom 402、AllMusic 兩次 403、liveabout 402），超過上限 4 次，照實記載。同名檢查：poolAlbums 為《The Documentary》《LAX》《West Coast Resurrection》，與 Compton 的 The Game 一致，未見同名混卡。但《West Coast Resurrection》（2005）的性質未查證（維基有條目、搜尋結果出現，未開頁），可能屬非標準錄音室首發性質，請主線與寫作層確認再寫。第二源品質：thefamouspeople 是通俗傳記站，品質偏弱，與維基在生平細節上已出現年份不一，寫作層寫出身要保守。sound 格查不到兩源支持的內容；單源未收：（1）維基稱《The Documentary》製作陣容含 Dr. Dre、Kanye West、Scott Storch、Timbaland、Just Blaze、Hi-Tek 等（單源）；（2）維基稱 2006 年因與 50 Cent 的不合離開 G-Unit 等三個廠牌（單源，屬後續爭端，且為『唯一一張在三廠牌』類措辭，不收）；（3）Complex 2012 年稱《The Documentary》是『過去十年的經典專輯之一』（雜誌評價，不收）；（4）搜尋摘要引述 AllMusic 稱他是西岸最生猛的聲音之一、有強烈的自傳敘事與『creatively referential』的取向（AllMusic 頁面 403，只見搜尋摘要，不收）；（5）維基稱《The Documentary》2005 年年度銷量第 16、傳記站稱第 10，兩源不一致，銷量不寫；（6）首週 586000 張、雙白金認證屬銷量，不寫；（7）維基稱 Game 早期混音帶在 JT the Bigga Figga 旗下發行（單源，搜尋摘要有重述但屬維基轉載）；（8）〈Hate It or Love It〉兩項提名的得獎者資訊，搜尋摘要順序混亂，未收。"
+  },
+  {
+    "key": "timbaland",
+    "name": "Timbaland",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Timothy Zachery Mosley，3 月 10 日生於維吉尼亞州 Norfolk（出生年份兩源不一致，不寫）。",
+            "src": "https://en.wikipedia.org/wiki/Timbaland",
+            "src2": "https://www.britannica.com/biography/Timbaland",
+            "from": "new"
+          },
+          {
+            "f": "他與 Missy Elliott 都出身維吉尼亞的 Virginia Beach 與 Norfolk 一帶；Britannica 稱他與 Missy Elliott、Magoo 是在維吉尼亞一起長大的音樂夥伴。",
+            "src": "https://daily.redbullmusicacademy.com/2015/04/origin-stories-missy-elliott-timbaland/",
+            "src2": "https://www.britannica.com/biography/Timbaland",
+            "from": "new"
+          },
+          {
+            "f": "他早年與饒舌歌手 Magoo 搭檔，並追隨 Jodeci 的 DeVante Swing；DeVante Swing 以 Timberland 靴子品牌為本替他取了 Timbaland 這個名字。",
+            "src": "https://en.wikipedia.org/wiki/Timbaland",
+            "src2": "https://www.britannica.com/biography/Timbaland",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Britannica 稱他不靠取樣，而是自製帶有複雜切分節奏的原創器樂底，再加進耳語、動物聲這類意外的音色；Revolt 也形容他的鼓點與節奏不照規則走。",
+            "src": "https://www.britannica.com/biography/Timbaland",
+            "src2": "https://www.revolt.tv/article/best-beats-produced-by-timbaland-pt-1",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他與 Missy Elliott 參與 Aaliyah 1996 年的《One in a Million》，RBMA 稱這次合作是兩人的關鍵轉折；維基稱他製作了該專輯的大半。",
+            "src": "https://daily.redbullmusicacademy.com/2015/04/origin-stories-missy-elliott-timbaland/",
+            "src2": "https://en.wikipedia.org/wiki/Timbaland",
+            "from": "new"
+          },
+          {
+            "f": "2021 年他與 Swizz Beatz 因共同創辦直播對戰系列 Verzuz，入選 TIME 年度 100 位最具影響力人物。",
+            "src": "https://www.udiscovermusic.com/news/time-100-most-influential-people-angelique-kidjo-billie-eilish/",
+            "src2": "https://en.wikipedia.org/wiki/Timbaland",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "疫情期間他與 Swizz Beatz 創辦 Verzuz，讓製作人與歌手在直播上輪流對戰歌單。",
+            "src": "https://en.wikipedia.org/wiki/Timbaland",
+            "src2": "https://www.udiscovermusic.com/news/time-100-most-influential-people-angelique-kidjo-billie-eilish/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1996 年與 Missy Elliott 參與 Aaliyah《One in a Million》。",
+        "src": "https://daily.redbullmusicacademy.com/2015/04/origin-stories-missy-elliott-timbaland/",
+        "src2": "https://en.wikipedia.org/wiki/Timbaland",
+        "from": "new"
+      },
+      {
+        "f": "2021 年與 Swizz Beatz 因 Verzuz 入選 TIME 100。",
+        "src": "https://www.udiscovermusic.com/news/time-100-most-influential-people-angelique-kidjo-billie-eilish/",
+        "src2": "https://en.wikipedia.org/wiki/Timbaland",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生年：維基寫 1972 年 3 月 10 日，Britannica 寫 1971 年 3 月 10 日；兩源不一致，facts 不寫年份。",
+      "Britannica 稱 One in a Million 是他的『production debut』，維基稱他製作該專輯大半；『首次』類說法不收，facts 只寫參與與製作大半。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫為空，從零查。成功請求 7 次：維基 Timbaland、Britannica、WebSearch（影響與 Virginia Beach 聲音）、Red Bull Music Academy 專訪、WebSearch（TIME 100 2021）、uDiscover Music、Revolt 精選。失敗請求 0 次。同名檢查：poolAlbums 為《TIMBO PROGRESSION》（2025）《Shock Value II》（2009）《Indecent Proposal》（2001，Timbaland & Magoo 名義）；皆為維吉尼亞的製作人 Timbaland，無混卡，但《Indecent Proposal》掛 Timbaland & Magoo 二人名義，寫作層宜註明；《TIMBO PROGRESSION》2025 年作與《Shock Value II》性質（是否原創錄音室專輯）未查證。非獨立與品質：Revolt 精選文章是評論性質、uDiscover 只確認入選原因；RBMA 的『Da Bassment』轉述來自 Melvin Barcliff 的口述，Britannica 第二源只涵蓋『Missy 與 Magoo 一起長大』與『DeVante 改名』，未涵蓋 Da Bassment 那條（該條只有 RBMA 單源，已移出 facts）。單源未收：（1）維基稱他起步為 DJ『DJ Timmy Tim』（單源）；（2）維基引《Entertainment Weekly》2007 稱『當前幾乎每個流行趨勢都能追溯到他』（雜誌評價，單源，不收）；（3）RBMA 稱 Teddy Riley 在 1990 年代初的存在啟發了他與 Pharrell Williams（單源）；（4）Britannica 稱他與 Magoo 1997 年首張專輯經 Blackground 發行並達白金（單源，且屬銷量認證）；（5）Britannica 稱他『從根本上塑造了 2000 年代初的流行音樂製作』並跨足 hip-hop、R&B、流行與搖滾，列舉 Jay-Z、Justin Timberlake、Madonna、Nelly Furtado（單源）；（6）維基稱他製作 Justin Timberlake 的〈Cry Me a River〉與《FutureSex/LoveSounds》（單源）；（7）維基稱他『四座葛萊美、22 次提名』（在世者獎座數，不寫）；（8）RBMA 稱 Angelique Miles 以〈Pony〉與〈Steelo〉簽下兩人，稱聲音具革命性（單源）。 移出 facts 的單源：RBMA 稱他與 Missy Elliott 都加入 DeVante Swing 在紐約的 Da Bassment 團隊，Missy 對 DeVante 說若 Tim 不來她也不來（Melvin Barcliff 口述）。"
   }
 ]
