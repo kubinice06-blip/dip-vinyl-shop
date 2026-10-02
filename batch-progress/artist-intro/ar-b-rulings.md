@@ -318,3 +318,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 029 g3 交件。thin：Mýa（貢獻 none；失敗請求 5 次超限）、Mystikal、Nice & Smooth（貢獻、地位 none）、PARTYNEXTDOOR（貢獻 none；搜尋 9 次超限，超出部分已撤）。Nujabes 只寫「瀬葉淳（Seba Jun）」，本名不寫。N.W.A《Straight Outta Compton》採 1988。Mystikal、Nelly 生年不寫。Naughty by Nature 只寫得獎，不寫「首屆」。pubIssues 0。
 - 029 g2 交件（QA 本組 0）。thin：Lil Baby、Lil Uzi Vert、Lloyd、Moor Mother。Lil Uzi Vert 正文不用性別代名詞。Megan Thee Stallion 葛萊美只寫官方頁核對過的兩項；Lil' Kim〈Lady Marmalade〉採第 44 屆（2002）。MF DOOM 相關年份不一，只寫事件。單源未收：Yeat 評 Uzi、Lil Baby TIME 名單。pubIssues 0。w1（g1+g2）派出。
 - 028 w1 審稿（2 處）：Bone Thugs-n-Harmony 刪「最偉大的饒舌團體之一」（在世成員的最高級評價，第二源未見支持），也刪「十年後在 Drake 一代身上顯現」（無來源的影響延伸）。A$AP Rocky 2025 年 CFDA Fashion Icon 與 Thom Browne 引語經主線 WebSearch 核實（cfda.com、Ebony）。Backxwash「第一位獲 Polaris 的跨性別藝人」屬廣泛報導，照准。
+- 028 w2 審稿無修正。G-DRAGON 2025-10-23 第 16 屆大眾文化藝術獎玉冠文化勳章經主線 WebSearch 核實（亞洲經濟、Star News）；「最年輕」不寫。Clipse 放寬至 264 照准。Heavy D & The Boyz「Uptown 第一組簽約藝人」、Faith Evans「Bad Boy 第一位女歌手」各有兩源，照准。
+- **ar-b-028 上線**：40 位，reviewFixes 2。
