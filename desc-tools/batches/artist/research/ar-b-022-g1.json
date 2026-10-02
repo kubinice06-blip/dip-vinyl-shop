@@ -1087,5 +1087,311 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "本位用掉 8 次（WebFetch 6：zh 維基王力宏、en 維基 Wang Leehom、generasia、zh 維基第 17 屆金曲獎、zh 維基第 10 屆金曲獎、zh 維基《心中的日月》；WebSearch 2）。另有 2 次失敗（SCMP 403、Williams 音樂系新聞頁 403，不計入）。WebFetch 回傳是小模型摘要，非逐字原文；兩次 WebSearch 只看摘要，只出現在摘要的內容未採用。\n兩源非獨立標記：zh、en 維基與 zh 金曲獎屆次頁、專輯頁全是維基百科（非獨立）；generasia 是日本流行文化 wiki 站，同為 wiki 性質（非權威，但與維基不同站）。台灣、華語演藝人缺少可開頁的第二家權威媒體，故本位 legacy 主要靠維基屆次頁（金曲獎名單屆次頁是原始名單表，可信度高）。\n單源未收入 facts：(1) 父親畢業於台大醫學系、為腦科醫師，母親畢業於政大；祖母是許鳳藻之女、表叔李建復、七舅公許倬云（zh 單源，涉及家人）；(2) 『家人都愛聽京劇』（zh 單源）；(3) 以《公轉自轉》成為該兩獎史上最年輕得主（en 單源，且屬『最年輕』類）；(4) 2018 年 CNN 稱他 King of Chinese Pop、四度金曲得主與 19 次入圍、2012 年首位在北京國家體育場開個人演唱會的流行歌手、威廉斯學院與伯克利榮譽博士（en 單源，搜尋摘要同向，Williams 官網 403）；(5) 2013 年牛津大學演講（zh 單源）；(6) 《蓋世英雄》受電影《霸王別姬》啟發製作（zh 單源）；(7) 絕對音感、18 歲才學中文（generasia 單源，且『18 歲才學中文』與其他來源衝突風險高，不收）；(8) 2012 年十大中文金曲全國最佳男歌手、2006 年 MTV 亞洲大獎最受歡迎台灣藝人（zh 單源）；(9) 1996 年最佳新人（generasia 單源）；(10) 婚姻糾紛依派工詞不收；『chinked-out』一詞：依各來源原樣引用（zh、en 維基皆使用，屬他自創的專名），寫作層若覺不妥請斟酌。\n身分：poolAlbums 三張（唯一、心中的日月、蓋世英雄）皆是台灣藝人王力宏，沒有同名混卡。"
+ },
+ {
+  "key": "王菲",
+  "name": "王菲",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "王菲 1969 年 8 月 8 日生於北京，父親是煤炭工程師，母親曾是煤礦文工團的女高音。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "from": "new"
+     },
+     {
+      "f": "她 18 歲移居香港，做過模特兒，並跟香港音樂教育家戴思聰學流行歌唱法。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://en.wikipedia.org/wiki/Faye_Wong",
+      "from": "new"
+     },
+     {
+      "f": "1989 年她以藝名「王靖雯」（英文名 Shirley）加入新藝寶唱片，推出首張專輯出道。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://en.wikipedia.org/wiki/Faye_Wong",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的音色獨特，歌聲常被形容為空靈。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://www.ourchinastory.com/zh/10674/%E8%8F%AF%E8%AA%9E%E6%A8%82%E5%A3%87%E7%9A%84%E5%82%B3%E5%A5%87-%E7%8E%8B%E8%8F%B2%E5%A4%A9%E7%94%9F%E5%94%B1%E5%B0%87%E7%84%A1%E4%BA%BA%E5%8F%AF%E4%BB%A3%E6%9B%BF",
+      "from": "new"
+     },
+     {
+      "f": "1992 年她翻唱日本歌曲的〈容易受傷的女人〉走紅，奠定歌壇地位。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "from": "new"
+     },
+     {
+      "f": "1994 年的《胡思亂想》放棄港式流行樂的模式，大膽把英倫音樂元素帶進來；此後她的唱片都帶有這類元素，並開始與中國音樂人合作。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://www.ourchinastory.com/zh/10674/%E8%8F%AF%E8%AA%9E%E6%A8%82%E5%A3%87%E7%9A%84%E5%82%B3%E5%A5%87-%E7%8E%8B%E8%8F%B2%E5%A4%A9%E7%94%9F%E5%94%B1%E5%B0%87%E7%84%A1%E4%BA%BA%E5%8F%AF%E4%BB%A3%E6%9B%BF",
+      "from": "new"
+     },
+     {
+      "f": "1996 年《浮躁》由蘇格蘭樂團 Cocteau Twins 為她寫了兩首歌〈分裂〉與〈掃興〉，由竇唯與張亞東負責編曲與製作。",
+      "src": "https://en.wikipedia.org/wiki/Fuzao",
+      "src2": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1996 年她登上《時代》雜誌封面（主題 The Divas of Pop），是繼鞏俐之後第二位登上該雜誌封面的華人藝人。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://en.wikipedia.org/wiki/Fuzao",
+      "from": "new"
+     },
+     {
+      "f": "2004 年第 15 屆金曲獎，她以《將愛》獲最佳國語女演唱人獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "from": "new"
+     },
+     {
+      "f": "她 2005 年起無限期休息，2010 年虎年春晚演唱李健創作的〈傳奇〉復出，這首歌因此在中國迅速傳開。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://zh.wikipedia.org/zh-hant/%E5%82%B3%E5%A5%87_(%E6%AD%8C%E6%9B%B2)",
+      "from": "new"
+     },
+     {
+      "f": "許多年輕一代的華人歌手把她當作偶像；她被視為華語樂壇的「天后」。",
+      "src": "https://zh-yue.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://www.ourchinastory.com/zh/10674/%E8%8F%AF%E8%AA%9E%E6%A8%82%E5%A3%87%E7%9A%84%E5%82%B3%E5%A5%87-%E7%8E%8B%E8%8F%B2%E5%A4%A9%E7%94%9F%E5%94%B1%E5%B0%87%E7%84%A1%E4%BA%BA%E5%8F%AF%E4%BB%A3%E6%9B%BF",
+      "from": "new"
+     },
+     {
+      "f": "1999 年她演唱日本遊戲《Final Fantasy VIII》的主題曲〈Eyes on Me〉。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://en.wikipedia.org/wiki/Faye_Wong",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1987 年移居香港；1989 年以王靖雯之名出道。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://en.wikipedia.org/wiki/Faye_Wong",
+      "from": "new"
+     },
+     {
+      "f": "1992 年〈容易受傷的女人〉走紅；1994 年《胡思亂想》轉向英倫音樂路線；1996 年《浮躁》。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "from": "new"
+     },
+     {
+      "f": "2005 年無限期休息，2010 年春晚復出。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+      "src2": "https://zh.wikipedia.org/zh-hant/%E5%82%B3%E5%A5%87_(%E6%AD%8C%E6%9B%B2)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1989 年以王靖雯之名出道。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+    "src2": "https://en.wikipedia.org/wiki/Faye_Wong",
+    "from": "new"
+   },
+   {
+    "f": "1996 年登上《時代》雜誌封面。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+    "src2": "https://en.wikipedia.org/wiki/Fuzao",
+    "from": "new"
+   },
+   {
+    "f": "2004 年第 15 屆金曲獎最佳國語女演唱人獎（《將愛》）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+    "src2": "https://zh-yue.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "改名「Faye Wong」年份：中文維基寫 1992 年改為 Faye Wong，ourchinastory 寫 1994 年改回本名王菲；兩源不一致，facts 不寫改名年份。上線簡介《天空》寫 1994 年 11 月以「王靖雯」之名發行，與 ourchinastory 的 1994 年改名說法相容，與中文維基 1992 年說法不一致，見 pubIssues。",
+   "金氏世界紀錄年份：中文維基寫 2002 年、英文維基寫 2000 年，兩源不一致，且屬銷量類，不收。",
+   "斯德哥爾摩影展：中文維基寫 1994 年電影《重慶森林》獲最佳女主角，英文維基寫 1996 年斯德哥爾摩影展，年份不一致；facts 未收。",
+   "《時代》封面：英文維基《浮躁》條稱她是 the first Chinese singer 上封面，並寫明是繼鞏俐之後第二位華人；中文維基寫 1996 年 10 月 14 日、亞洲版封面、繼鞏俐後第二位登上封面的華人藝人。facts 只寫兩源一致的『繼鞏俐之後第二位』，『第一位歌手』留 notes。"
+  ],
+  "pubIssues": [
+   {
+    "album": "天空",
+    "claim": "一九九四年十一月十日以「王靖雯」之名發行",
+    "problem": "中文維基王菲條寫 1992 年起藝名已改為 Faye Wong（王菲），而 ourchinastory 寫 1994 年才改回本名；兩說對不上，若採中文維基，1994 年的《天空》署名應核對原盤。建議核對原盤署名後再決定是否保留『以王靖雯之名發行』。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2"
+   }
+  ],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "本位用掉 7 次（WebFetch 6：zh 維基王菲、en 維基 Faye Wong、ourchinastory 專文、en 維基 Fuzao、zh-yue 維基王菲、zh 維基〈傳奇〉歌曲條；WebSearch 1）。另 1 次失敗（udn 404，不計入）。WebFetch 回傳是小模型摘要，非逐字原文；搜尋只看摘要，只出現在摘要的內容未採用。\n兩源非獨立標記：zh、zh-yue、en 維基與〈傳奇〉歌曲條全是維基百科（非獨立）；ourchinastory 為獨立專文，但摘要只描述概況。\n單源未收入 facts：(1) 祖父王兆民（粵語維基寫王墨林）曾任立法委員、15 歲前隨母姓夏林（zh 與 yue 兩條寫法對不上祖父名，不收）；(2) 1989 年參加亞太金箏流行曲創作大賽以〈仍是舊句子〉得銅獎（yue 單源）；(3) 小學時入選央視銀河少年藝術團、1983 年央視六一晚會獨唱、1985 年推出翻唱鄧麗君的首張專輯（ourchinastory 單源）；(4) 與竇唯合作〈誓言〉〈童〉、張亞東長期合作（zh 單源）；『iron triangle』張亞東、林夕、王菲（en 單源）；(5) 滿島光深受她影響進入演藝圈、2024 年翻唱〈夢中人〉；吳青峰、田馥甄、孫燕姿、蔡依林、單依純受啟發；2010 年田馥甄《To Hebe》同名歌致敬（zh 單源，搜尋摘要同向未開頁）；(6) 樂評人李皖、張亞東、昆汀的評語、2023 年格萊美稱她塑造粵語流行、CNN 稱她粵語流行女王（zh 單源且為人名評語）；(7) 2009 年官方問卷影響力第二（en 單源）；(8) 1994 年紅館連開 18 場（zh 單源，且屬場次）；(9) 2007 年嫦娥一號搭載〈但願人長久〉、多次登央視春晚、2025 年春晚（zh 單源）；(10) 《重慶森林》斯德哥爾摩影展最佳女主角（zh 與 en 年份不一致，不收）；(11) 銷量與金氏紀錄（在世者累計銷量，依規則不寫）；(12) 『第一位登上時代雜誌的華人歌手』（en 單源；中文維基只寫『第二位華人藝人』，且鞏俐是演員，為『第一位／唯一』類，拿不準，只寫兩源一致版本）。\n身分：poolAlbums 三張（天空、浮躁、唱遊）皆是生於北京、在香港發展的歌手王菲，沒有同名混卡。事實庫 research 一條（Time 封面）已被本層用 zh 與 en（Fuzao）兩源取代，上線簡介《浮躁》『第一位登上時代雜誌的華人歌手』與本層 en 單源一致但中文維基說法較保守。\n用語：不寫累計銷量，私人感情糾紛不收。"
+ },
+ {
+  "key": "甄妮",
+  "name": "甄妮",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "甄妮原名甄淑詩，1953 年生於葡屬澳門。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+      "from": "new"
+     },
+     {
+      "f": "她是混血兒，生父是奧地利籍的退休土木工程師，母親是上海人。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://news.qq.com/rain/a/20230905A040T200",
+      "from": "new"
+     },
+     {
+      "f": "1971 年她在台灣銀河唱片推出第一張個人專輯《心湖》，開始唱片生涯。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://news.qq.com/rain/a/20230905A040T200",
+      "from": "new"
+     },
+     {
+      "f": "她 1971 年出道，先以國語時代曲走紅台灣，再以粵語流行曲走紅香港。",
+      "src": "https://zh-yue.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1970 年代她與台灣作曲家劉家昌合作無間，演唱多首國語電影主題曲。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "from": "new"
+     },
+     {
+      "f": "她與鄧麗君、鳳飛飛同期走紅，三人幾乎瓜分了當時整個台灣唱片市場。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "from": "new"
+     },
+     {
+      "f": "她在台灣以國語歌走紅，1970 年代後期轉往香港，改唱粵語歌，1978 年推出首張粵語專輯《奮鬥》。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://news.qq.com/rain/a/20230905A040T200",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1981 年她獲台灣金鐘獎最佳女歌星獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+      "from": "new"
+     },
+     {
+      "f": "2011 年她獲十大中文金曲金針獎（香港電台）。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+      "from": "new"
+     },
+     {
+      "f": "1983 年她與羅文合唱《射鵰英雄傳》主題曲〈鐵血丹心〉，這首歌隨劇集在 1980 年代於中國播出後廣為傳唱，被視為華語流行樂的經典之一。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+      "from": "new"
+     },
+     {
+      "f": "首張粵語專輯《奮鬥》（1978）打破香港開埠以來的唱片銷售紀錄。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://news.qq.com/rain/a/20230905A040T200",
+      "from": "new"
+     },
+     {
+      "f": "她與鳳飛飛因為爭唱〈楓葉情〉鬧上報紙，成為當時台灣歌壇的話題。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://news.qq.com/rain/a/20230905A040T200",
+      "from": "new"
+     },
+     {
+      "f": "1990 年代初她淡出樂壇，之後多次復出舉辦演唱會。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1971 年出道；1972 至 1978 年與海山唱片合作並與劉家昌合作。",
+      "src": "https://zh-yue.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "from": "new"
+     },
+     {
+      "f": "1978 年推出首張粵語專輯《奮鬥》；1983 年與羅文合唱〈鐵血丹心〉。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+      "from": "new"
+     },
+     {
+      "f": "1981 年金鐘獎最佳女歌星；2011 年金針獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+      "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1971 年推出首張個人專輯《心湖》出道。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+    "src2": "https://news.qq.com/rain/a/20230905A040T200",
+    "from": "new"
+   },
+   {
+    "f": "1981 年獲台灣金鐘獎最佳女歌星獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+    "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+    "from": "new"
+   },
+   {
+    "f": "2011 年獲十大中文金曲金針獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%94%84%E5%A6%AE",
+    "src2": "https://en.wikipedia.org/wiki/Jenny_Tseng",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "生日：中文維基與粵語維基寫 1953 年 4 月 3 日，英文維基與新浪文章摘要寫 1953 年 2 月 20 日；事實庫（c49a-c）採 4 月 3 日，兩邊不一致，facts 只寫 1953 年，不寫月日。",
+   "結婚年份：英文維基寫 1976 年結婚，中文維基與粵語維基寫 1977 年；facts 不收婚姻年份，也不寫配偶細節。",
+   "事實庫（c106-b 秋歌、海上花研究稿）與上線簡介《秋歌》寫 1972 年轉簽海山、與劉家昌合作，與粵語維基『海山 1972–1978 年』一致；上線簡介《誓言》寫 1978 年 10 月推出首張個人粵語專輯《奮鬥》，與中文維基一致，本層無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "本位用掉 6 次（WebFetch 5：zh 維基甄妮、en 維基 Jenny Tseng、新浪女性專題、騰訊新聞專文、zh-yue 維基甄妮；WebSearch 1）。WebFetch 回傳是小模型摘要，非逐字原文，其中新浪專題的摘要內容與其他來源差異大（寫父親為香港人、母親為廣東人、生日 2 月 20 日），可信度低，因此 facts 沒採用新浪。\n兩源非獨立標記：zh、zh-yue、en 維基同為維基百科（非獨立）；騰訊新聞專文的家庭背景與中文維基近乎同文（疑似轉述維基，非獨立），其餘部分（劉家昌三大弟子、〈楓葉情〉爭唱、《奮鬥》賣出 25 萬張、1979 年第一屆十大中文金曲最高票、紐約麥迪遜廣場花園個人演唱會）為本頁獨有。\n單源未收入 facts：(1) 洋娃娃歌后稱號、養父祖籍廣東恩平（zh 單源）；(2) 1974 年與鳳飛飛爭唱〈楓葉情〉『大打出手』的說法（zh，騰訊僅寫『報紙頭版互相怼』，兩源說法有出入，facts 取較保守的『鬧上報紙』）；(3) 『樂壇風紀』稱號（zh 單源）；(4) 《奮鬥》兩個月賣出逾 25 萬張、總銷量 40 萬張（銷量，在世者累計銷量依規則不寫）；(5) 1979 年歌曲以最高票當選第一屆十大中文金曲、同年在紐約麥迪遜廣場花園開個人演唱會『首位東方藝人』（騰訊單源，『第一位』類）；(6) 『劉家昌三大弟子』甄妮、鄧麗君、鳳飛飛，三人都得過金鐘獎、鄧麗君第一位、甄妮第二位（騰訊與搜尋摘要，單源）；(7) 『第一代同時走紅海峽兩岸的華語歌手』（粵語維基單源，『第一位』類）；(8) 〈鐵血丹心〉『二十世紀十大華語經典之一』（粵語維基單源；en 只寫 classics 之一）；(9) 1990 年代初退隱美國（yue 單源）；(10) 加拿大與中華民國國籍；超過 130 張專輯（新浪摘要，可信度低）；(11) 1984 年十大勁歌金曲獎（新浪單源）；(12) 配偶與婚姻、喪偶與女兒（私人事項，不收）。\n身分：poolAlbums 三張（誓言、秋歌、海上花）皆為香港與台灣發展的歌手甄妮（澳門出生），沒有同名混卡。\n用語：不寫累計銷量，簡體曲名皆轉繁體。"
  }
 ]
