@@ -312,3 +312,6 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 027 w2 審稿（2 處）：MC HotDog 刪「台灣第一位地下饒舌歌手」（首次宣稱，兩源一為部落格）；Salt-N-Pepa「入選 2025 年搖滾名人堂」改「以音樂影響獎入選」（經主線 WebSearch 核實：Rolling Stone、CBS、rockhall.com）。Slick Rick〈La Di Da Di〉2024 年列入國家錄音登記經主線核實（Hypebot、Deadline）。MC Lyte「第一位發行完整個人專輯的女饒舌歌手」以「搖滾名人堂稱」具名，照准。
 - **ar-b-027 上線**：40 位，reviewFixes 2。
 - 028 g4 交件（QA 本組 0，四組齊）。thin：Faith Evans、Freddie Gibbs、Immortal Technique。G-DRAGON 文化勳章「首位偶像」單源、「史上最年輕」屬最高級，皆不寫。Ice-T 1992 葛萊美屬 Quincy Jones 專輯，不收。pubIssues 0。w1、w2 派出。
+
+### ar-b-029
+- g1 交件（QA 本組 0）。thin：Jurassic 5、Kehlani、Kelela、Keyshia Cole。**同名混卡：Kano**——卡池《Kano》（1980）是米蘭 disco 計畫，另兩張才是倫敦 grime 的 Kano；介紹只寫英國這位，1980 那張待本機拆成獨立藝人名（記入待辦）。Jurassic 5 成軍年三說不寫；KRS-One 出生與離家細節單源不寫。Kehlani 正文不用性別代名詞。pubIssues 0。
