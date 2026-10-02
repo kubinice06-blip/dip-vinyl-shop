@@ -684,6 +684,115 @@
   "notes": "事實庫 research 只有一條維基單源（c139-b），本層補第二源後才入 facts。5 次：Wikipedia Don Wilkerson（事實庫已有，本次再讀 raw）、WebSearch、TSHA Handbook of Texas、Encyclopedia.com、Blue Note 官方藝人頁。⚠ legacy 格只有 Ray Charles 樂團一條；查不到後輩點名或共識評價。未收（單源）：Blue Note 官方頁稱他『unfortunately not documented on record as much as the quality of his music deserved』（唱片公司自述）；TSHA 稱他栽培 Ted Dunbar、Ed Soph、Shelley Carrol 等樂手（單源）；1954 年加入 Ray Charles 樂團、1960 年代初曾再度加入（TSHA 單源，搜尋摘要同）；1970 年代起在休士頓 Sonny Franklin Big Band 與 Arnett Cobb 等人演出（維基單源）；與 Amos Milburn、Charles Brown 合作（維基與 TSHA／Encyclopedia.com 對年份不同調，未收）；AllMusic 稱他為六○年代初最強悍的靈魂爵士薩克斯手之一（樂評，不收）。出生日：TSHA 寫 1932 年 7 月 6 日，維基寫約 1932 年（c.），facts 只寫 1932 年。死因不涉及。事實庫研究稿原寫『三張領銜盤都有 Grant Green，本張是其中第二張』，與 Blue Note 官方頁、維基一致，未見衝突。身分：卡池 2 張（Preach Brother! 1962、Elder Don 1963），皆為此 Don Wilkerson，無同名混卡。"
  },
  {
+  "key": "dorothy ashby",
+  "name": "Dorothy Ashby",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dorothy Ashby 本名 Dorothy Jeanne Thompson，1932 年生於美國底特律；父親 Wiley Thompson 是自學的爵士吉他手，常邀爵士樂手到家裡聚會演奏。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+      "from": "new"
+     },
+     {
+      "f": "Ashby 就讀底特律的 Cass Technical High School，在校內學會豎琴，後來進 Wayne State University 讀鋼琴與音樂教育。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+      "from": "new"
+     },
+     {
+      "f": "Ashby 1986 年過世。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://daily.redbullmusicacademy.com/2018/05/dorothy-ashby-detroit-harp-pioneer/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 Ashby 把豎琴確立為能即興的爵士樂器，證明豎琴也能演奏 bebop，而不只是點綴或管弦樂背景；Red Bull Music Academy 的專文也稱她讓豎琴成為爵士作曲裡的重要角色。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://daily.redbullmusicacademy.com/2018/05/dorothy-ashby-detroit-harp-pioneer/",
+      "from": "new"
+     },
+     {
+      "f": "Ashby 的唱片以爵士為底，後來走向 R&B、世界音樂與靈魂放克；1968 年的《Afro-Harping》由 Richard Evans 編曲並指揮管弦樂，被形容為融合靈魂、爵士與放克的專輯。",
+      "src": "https://en.wikipedia.org/wiki/Afro-Harping",
+      "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+      "from": "new"
+     },
+     {
+      "f": "1970 年的《The Rubaiyat of Dorothy Ashby》裡，Ashby 除了豎琴還彈日本箏（koto）。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 Ashby 是「1950 年代被低估的爵士名家」之一；Red Bull Music Academy 專文同樣稱她是被低估、少人疼愛的爵士大師之一。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://daily.redbullmusicacademy.com/2018/05/dorothy-ashby-detroit-harp-pioneer/",
+      "from": "new"
+     },
+     {
+      "f": "Ashby 的豎琴被 Jay-Z、Madlib 等嘻哈製作人取樣；Drake 2018 年專輯《Scorpion》裡的〈Final Fantasy〉取樣了她演奏的〈The Windmills of Your Mind〉。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+      "from": "new"
+     },
+     {
+      "f": "Ashby 後來成為錄音室豎琴手，替 Stevie Wonder 等流行歌手錄音。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ashby 1957 年錄下首張完整的爵士專輯《The Jazz Harpist》，編制含 Frank Wess（長笛）；1968 年發行《Afro-Harping》，1970 年發行《The Rubaiyat of Dorothy Ashby》，後兩張皆在 Cadet 廠牌。",
+      "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+      "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1957 年錄下首張爵士專輯《The Jazz Harpist》。",
+    "src": "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+    "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+    "from": "new"
+   },
+   {
+    "f": "1968 年發行《Afro-Harping》，1970 年發行《The Rubaiyat of Dorothy Ashby》，後者加入日本箏。",
+    "src": "https://en.wikipedia.org/wiki/Afro-Harping",
+    "src2": "https://www.udiscovermusic.com/stories/dorothy-ashby-feature/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《The Jazz Harpist》廠牌：Wikipedia 內文寫 Savoy，discography 寫 Regent；facts 不寫廠牌。",
+   "『第一位把豎琴帶進 bebop／爵士』：uDiscoverMusic 原句是『the first artist to translate harp to bebop and jazz in a real way』，但爵士豎琴有更早的先例（例如 1930 年代 Casper Reardon、Adele Girard），不收為『第一位』，facts 採『確立為即興爵士樂器』的維基用語。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空、無上線簡介，從零查。8 次：Wikipedia Dorothy Ashby、WebSearch（含三組子查詢，同一次呼叫）、Red Bull Music Academy、uDiscoverMusic、Wikipedia《Afro-Harping》、Wikipedia《The Rubáiyát of Dorothy Ashby》、WebSearch（Brandee Younger）、Bandcamp Daily。失敗請求 3 次（BlackPast 403、WhoSampled 403、sheshreds 500）。⚠ 單源未收：Bandcamp Daily 稱後輩豎琴手 Brandee Younger『heavily influenced by Coltrane and Ashby』，其專輯《Soul Awakening》收錄 Ashby 的〈Games〉（Bandcamp 單源；搜尋摘要另有 Younger 說『Dorothy Ashby convinced me that I didn't want to be in a classical orchestra』，但原頁未開，不收）；維基稱 Ashby 在 1970 年專輯『pioneered the use of the koto in jazz』（維基單源）；1962 年 Down Beat 評審與讀者票選獎（雜誌榮譽，不收）；1967 年底特律學校為 10 把豎琴捐贈計畫（維基單源）；Ashby Players 劇團（維基單源）；晚年 1984 年《Concierto de Aranjuez》為最後專輯（RBMA 單源）；死因與逝世地點細節不收。Jay-Z、Madlib、Drake 取樣兩源（維基、uDiscover）；維基另列 Pete Rock、Rahzel、Ugly Duckling、Mac Miller、J Dilla，J Dilla 與 Madlib 的取樣曲目只見 WhoSampled 搜尋摘要（403 未開頁），未收。出生日 1932-08-06 只見維基單源，僅寫年份；逝世年 1986 兩源（維基、RBMA）。身分：卡池 2 張（Afro-Harping 1968、The Rubaiyat of Dorothy Ashby 1970），皆為此 Dorothy Ashby，無同名混卡。 另未收（單源）：Rubaiyat 由 Richard Evans 指揮編曲（維基專輯條目單源）；Bill Withers 推薦她給 Stevie Wonder（維基單源）；Velma Froude／Fraude 兩源拼法不同，師承名未收；童年彈鋼琴伴奏父親的客人（維基單源）；逝世地 Santa Monica（維基單源）。"
+ },
+ {
   "key": "eddie gale",
   "name": "Eddie Gale",
   "slots": {
@@ -792,5 +901,131 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫已有 2 張專輯研究稿（Ghetto Music／Black Rhythm Happening，jazzdisco、Cash Box、Discogs、維基），sound 與 era 取自事實庫（from: bank）；origin 與 legacy 為補查。8 次：Wikipedia Eddie Gale、WebSearch（訃聞）、WBGO、NME、eddiegale.com 新聞頁、Consequence、Last Row Music、Wikipedia《Ghetto Music》。失敗請求 1 次（San Jose Jazz 頁面回傳空白，未取得內容）。⚠ legacy 格只有 San Jose 的地方榮譽（市長指定與 Black Legends Hall of Fame）；查不到後輩點名受其影響的有出處說法。未收（單源）：WBGO 引音樂史家 Pat Thomas：『Eddie Gale and Horace Silver changed the sound of Blue Note with consciousness-raising lyrical-jazz compositions』（單一評論人）；搜尋摘要稱 Sun Ra 曾稱他為『the first avant garde trumpeter』，但開了 5 頁都找不到出處，不收；Last Row Music（轉自 uDiscoverMusic）稱兩張 Blue Note 專輯『pivotal recordings from the late 1960s』（單源）；Gale 與 Oakland 嘻哈團體 The Coup 合作（維基單源）；Ghetto Music 2017 年 50 週年版（NME 單源）；經由鼓手 Scoby Stroman 認識 Sun Ra（維基單源）；AllMusic 五星與 Pitchfork 9.4（樂評媒體，不收）；Cecil Taylor〈Inter-Evening〉入選 Smithsonian（WBGO 單源，且主體非 Gale）。1941 年出生日期 8 月 15 日只見維基，facts 只寫年份。死因（癌症）屬逝者克制範圍，未收。《Unit Structures》1966：維基未寫年份，Consequence 寫 1966。身分：卡池 2 張（Ghetto Music 1968、Black Rhythm Happening 1969）皆為此 Eddie Gale，無同名混卡。bank 條目來源：jazzdisco 4200 系列、Cash Box、Discogs 1018259、維基《Black Rhythm Happening》，皆為事實庫既有 src。"
+ },
+ {
+  "key": "édith piaf",
+  "name": "Édith Piaf",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Édith Piaf 本名 Édith Giovanna Gassion，1915 年 12 月 19 日生於巴黎。",
+      "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "src2": "https://www.britannica.com/biography/Edith-Piaf",
+      "from": "new"
+     },
+     {
+      "f": "Piaf 的父親是雜技藝人；她少女時期隨父親到各地賣藝，並在街頭開始唱歌賺錢。",
+      "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "src2": "https://www.britannica.com/biography/Edith-Piaf",
+      "from": "new"
+     },
+     {
+      "f": "1935 年，夜總會老闆 Louis Leplée 在巴黎發掘了她，替她取了藝名 La Môme Piaf（巴黎俚語「小麻雀」），並給她第一份夜總會演出。",
+      "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "src2": "https://www.britannica.com/biography/Edith-Piaf",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈La Vie en rose〉的歌詞出自 Piaf 之手，1945 年寫成，1947 年由她錄製發行，成為她的招牌曲。",
+      "src": "https://en.wikipedia.org/wiki/La_Vie_en_rose",
+      "src2": "https://www.britannica.com/biography/Edith-Piaf",
+      "from": "new"
+     },
+     {
+      "f": "〈Non, je ne regrette rien〉由 Charles Dumont 作曲、Michel Vaucaire 作詞，Piaf 在 1960 年錄下這首歌。",
+      "src": "https://www.ina.fr/ina-eclaire-actu/edith-piaf-chante-pour-la-premiere-fois-non-je-ne-regrette-rien",
+      "src2": "https://en.wikipedia.org/wiki/R%C3%A9cital_1961",
+      "from": "new"
+     },
+     {
+      "f": "病後復出的 Olympia 演出現場錄音《Récital 1961》（又名《À l'Olympia 1961》）錄於 1960 年 12 月 29 日，1961 年 1 月由 Columbia 發行，九首歌中有八首是 Charles Dumont 作曲。",
+      "src": "https://en.wikipedia.org/wiki/R%C3%A9cital_1961",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 Piaf 被視為法國最偉大的流行歌手，Britannica 也稱她「被許多人視為法國最偉大的歌手」。",
+      "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "src2": "https://www.britannica.com/biography/Edith-Piaf",
+      "from": "new"
+     },
+     {
+      "f": "Piaf 提攜過年輕的 Yves Montand，兩人 1940 年代中期合作。",
+      "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "src2": "https://www.britannica.com/biography/Edith-Piaf",
+      "from": "new"
+     },
+     {
+      "f": "Charles Aznavour 早期為 Piaf 開場，Piaf 建議他走歌唱路線並帶他巡演、錄唱他的歌，Aznavour 的維基條目也寫她協助他發展出獨特的唱腔。",
+      "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "src2": "https://en.wikipedia.org/wiki/Charles_Aznavour",
+      "from": "new"
+     },
+     {
+      "f": "1963 年 Piaf 出殯時，大批巴黎民眾上街送行。",
+      "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "src2": "https://www.britannica.com/biography/Edith-Piaf",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Piaf 1935 年被發掘，1947 年錄製〈La Vie en rose〉，1963 年過世。",
+      "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+      "src2": "https://www.britannica.com/biography/Edith-Piaf",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1935 年被 Louis Leplée 發掘，取藝名 La Môme Piaf。",
+    "src": "https://en.wikipedia.org/wiki/%C3%89dith_Piaf",
+    "src2": "https://www.britannica.com/biography/Edith-Piaf",
+    "from": "new"
+   },
+   {
+    "f": "1947 年錄製〈La Vie en rose〉，成為招牌曲。",
+    "src": "https://en.wikipedia.org/wiki/La_Vie_en_rose",
+    "src2": "https://www.britannica.com/biography/Edith-Piaf",
+    "from": "new"
+   },
+   {
+    "f": "1960 年 12 月 29 日在 Olympia 復出演出，錄成《Récital 1961》。",
+    "src": "https://en.wikipedia.org/wiki/R%C3%A9cital_1961",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "〈Non, je ne regrette rien〉首唱：維基 Piaf 條目寫 1961 年的 Olympia 演唱會『first sang』；上線簡介寫 1960 年 12 月 29 日 Olympia 當晚首度在觀眾面前唱出；INA 專文標題稱首唱，內文摘要指是 1960 年 12 月 Olympia 開演前一晚在電視節目《Cinq colonnes à la Une》上唱（日期摘要寫 12 月 1 日，未再次確認）。三說不一，facts 只寫『1960 年錄下這首歌』，不寫首唱場合。",
+   "La Vie en rose：維基《Piaf》與《La Vie en rose》寫 1945 年寫成、1946 年首度現場演唱、1947 年發行單曲；Britannica 寫 1947 年錄音；facts 寫 1945 寫詞、1947 錄製發行。"
+  ],
+  "pubIssues": [
+   {
+    "album": "À l'Olympia 1961",
+    "claim": "那一晚（1960 年 12 月 29 日）她首度在觀眾面前唱出〈Non, je ne regrette rien〉",
+    "problem": "上線簡介自己引用的 INA 專文，標題為『Piaf 首度演唱 Non, je ne regrette rien』，內文摘要指首唱是 1960 年 12 月 Olympia 開演前一晚、電視節目《Cinq colonnes à la Une》上（摘要寫 12 月 1 日，日期本層未能二次確認）；維基《Piaf》條目另寫 1961 年 Olympia 場次首唱。建議把『首度在觀眾面前』改成較不具體的寫法，或本機再核對 INA 原文。",
+    "src": "https://www.ina.fr/ina-eclaire-actu/edith-piaf-chante-pour-la-premiere-fois-non-je-ne-regrette-rien"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空，上線簡介 1 篇（À l'Olympia 1961，來源維基《Récital 1961》、INA、MusicBrainz）。8 次：Wikipedia Édith Piaf、Wikipedia《Récital 1961》、Britannica、WebSearch（Grammy／Aznavour）、Wikipedia《Edith Piaf（1953 專輯）》、Wikipedia《La Vie en rose》、Wikipedia Charles Aznavour、INA 專文。失敗請求 1 次（Grammy.com 404）。⚠ sound 格第 3 條『Récital 1961』來自上線簡介所用的來源（維基專輯條目，bank）。Aznavour 那條兩源為維基兩個條目，非獨立。身分：卡池 2 張（Édith Piaf 1953、À l'Olympia 1961）皆為歌手 Édith Piaf 本人；⚠《Édith Piaf》1953 年（又名《La Vie en Rose》，Columbia 33 FS 1008）是把先前單曲（78 轉，1946、1950、1951）彙整成 10 吋 LP 的選輯，維基單源；建議寫作層不要把它當成新錄的錄音室專輯。卡池 genre 標 jazz 不準，屬香頌／流行。死因依特注不收；戰時被指控與德軍合作的經過不收。單源未收：Grammy Hall of Fame 1998 年收入〈La Vie en rose〉（維基單源，Grammy.com 404）；1946 年 Virgil Thomson 評論帶動美國聲勢、Ed Sullivan Show 八次、Carnegie Hall 1956 與 1957（維基單源）；墓園儀式逾 10 萬名歌迷、Aznavour 稱出殯使巴黎交通全停（維基單源，Britannica 只寫 thousands）；Père Lachaise 墓地為參訪最多之一、Place Édith Piaf（1978）、小行星 3772 Piaf、2007 年電影《La Môme》與 Marion Cotillard 奧斯卡（維基單源）；Britannica 引當時樂評形容她『一分音樂家、三分演員』（評論人，不收）；『觀眾叫她謝幕 22 次』與 1960 年 11 月 10 日進錄音室（上線簡介所寫，INA 摘要寫 1960 年 11 月 10 日錄音，與簡介一致，僅 INA 單源）。Yves Montand 那條：維基寫 1944 年 Moulin Rouge 合作並有戀情，Britannica 寫 1940 年代中期受她提攜，facts 只寫提攜與合作，不寫私人關係；『成為法國最有名歌手之一』為維基句子（Montand 在 1947 年錄《What Can I Do?》之後一年內），Britannica 未寫，該半句屬單源——寫作層可略。"
  }
 ]
