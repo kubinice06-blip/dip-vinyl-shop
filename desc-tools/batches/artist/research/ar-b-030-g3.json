@@ -448,5 +448,220 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫 research 為 Schubert Lieder 的 Moore 合作一條（維基單源），上線簡介（Schubert: Lieder Volume 1）與維基一致，未發現錯誤。成功請求 5 次：維基 Fischer-Dieskau、Britannica、WebSearch（訃聞與評價）、Boston Globe 追思文、維基 War Requiem；失敗 1 次（NPR 503，未計入）。同名檢查：poolAlbums 為 Schubert《Winterreise》《Die schöne Müllerin》《Lieder Volume 1》與 Mahler《Kindertotenlieder》，都是德國男中音 Fischer-Dieskau，無混卡。單源或未收：（1）出生名 Albert Dietrich Fischer、1934 年父親加上 Dieskau、父母職業（單源，維基）；（2）戰俘兩年期間對思鄉的士兵唱藝術歌曲（單源，維基）；Boston Globe 稱他 1943 年空襲中首唱《Winterreise》（單源）；（3）師事 Georg Walter、Hermann Weissenborn（單源，Britannica）；（4）與 Moore 錄完所有適合男聲的舒伯特歌曲（1951–1972，維基單源，上線簡介已寫）；（5）1951 年薩爾茲堡音樂節與 Furtwängler 合作 Mahler、1978 年退出歌劇、1993 年元旦退出音樂廳、之後轉向指揮與教學（單源，維基）；（6）Alan Blyth『no singer in our time…』、Schwarzkopf『a born god』、Time 雜誌『the world's greatest Lieder singer』、Le Monde 悼文（皆為評論轉述，單源，維基，樂評與雜誌評語不收）；（7）Britannica 稱『unexcelled as a lieder singer』（單源）；（8）五座葛萊美（1970、1972、1977、1988、2000）：兩源有列年份但類別未查，故不收；Léonie Sonning 1975、Ernst von Siemens 1980、Polar Music Prize 2005、Légion d'honneur 1990、Gramophone Hall of Fame 2012（單源，維基）；（9）Britten《Songs and Proverbs of William Blake》1965 年 Aldeburgh 由他首演、題獻給他（Britannica 與搜尋摘要，未取得第二個開頁來源）；（10）War Requiem 1963 Decca 錄音五個月賣 20 萬張（單源，維基 War Requiem）。維基 Fischer-Dieskau 與維基 War Requiem 同站不同條目，Britten 那條第二源為 Britannica（獨立）。Barenboim 那條：Boston Globe 寫他把 Fischer-Dieskau 的革命性比作大提琴家 Pablo Casals、說歌手不必在歌劇與獨唱會之間二選一（單源，Casals 比擬不入 f）；Boston Globe 另寫其演唱把詩的文字與音樂線條緊密結合（單源，不入 f）；維基寫的是『革命性的演唱者、歌劇清唱劇藝術歌曲三種領域』，兩源說法略有出入但來自同一人，故 f 欄只寫兩源共有的『革命性、不必二選一』。"
+ },
+ {
+  "key": "emil gilels",
+  "name": "Emil Gilels",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Emil Gilels 生於 1916 年，出身敖德薩（Odessa）的猶太家庭，父親是糖廠職員。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://interlude.hk/on-this-day-19-october-emil-gilels-was-born/",
+      "from": "new"
+     },
+     {
+      "f": "他約 5 歲起跟 Yakov Tkach 學琴，1935 年畢業於敖德薩音樂院，之後到莫斯科跟 Heinrich Neuhaus 繼續深造。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://www.classicalconnect.com/emil_gilels/8836",
+      "from": "new"
+     },
+     {
+      "f": "1932 年 Arthur Rubinstein 到訪敖德薩，聽了年少的 Gilels 演奏。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://interlude.hk/on-this-day-19-october-emil-gilels-was-born/",
+      "from": "new"
+     },
+     {
+      "f": "1985 年 10 月 14 日他在莫斯科過世。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://www.britannica.com/biography/Emil-Gilels",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以精湛的技巧、渾厚的音色與嚴謹的控制見稱，核心曲目是 Beethoven、Brahms 與 Schumann，曲目從巴洛克延伸到 20 世紀。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://www.britannica.com/biography/Emil-Gilels",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為 20 世紀最偉大的鋼琴家之一。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://www.classicalconnect.com/emil_gilels/8836",
+      "from": "new"
+     },
+     {
+      "f": "據說 Rachmaninoff 在廣播裡聽到他的演奏，認定他是自己鋼琴藝術的繼承人，把自己的獎章與證書寄給了他。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://melody.su/en/artists/41220/",
+      "from": "new"
+     },
+     {
+      "f": "1933 年他在全蘇聯鋼琴大賽拿下首獎，1938 年在布魯塞爾的 Ysaÿe 國際音樂節（今伊莉莎白皇后大賽）拿下首獎。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://www.britannica.com/biography/Emil-Gilels",
+      "from": "new"
+     },
+     {
+      "f": "1955 年 10 月他在美國首演，與 Eugene Ormandy 指揮的費城管弦樂團合作。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://www.classicalconnect.com/emil_gilels/8836",
+      "from": "new"
+     },
+     {
+      "f": "1958 年首屆柴可夫斯基國際鋼琴大賽，他擔任評審團主席，首獎頒給 Van Cliburn。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://www.classicalconnect.com/emil_gilels/8836",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1933 年他在全蘇聯鋼琴大賽拿下首獎，1938 年在布魯塞爾拿下 Ysaÿe 國際音樂節首獎。",
+      "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+      "src2": "https://www.britannica.com/biography/Emil-Gilels",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1938 年在布魯塞爾的 Ysaÿe 國際音樂節拿下首獎。",
+    "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+    "src2": "https://www.britannica.com/biography/Emil-Gilels",
+    "from": "new"
+   },
+   {
+    "f": "1955 年美國首演（Eugene Ormandy 與費城管弦樂團）。",
+    "src": "https://en.wikipedia.org/wiki/Emil_Gilels",
+    "src2": "https://www.classicalconnect.com/emil_gilels/8836",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "生日：維基、Interlude、classicalconnect 寫 1916 年 10 月 19 日，Britannica 寫 10 月 6 日（應為舊曆日期）；facts 只寫年份 1916。",
+   "英國首演：維基寫 1951 年 Coventry，classicalconnect 與 Britannica 寫 1959 年；兩源不一致，facts 不寫。",
+   "西方首演地：Britannica 寫 1955 年紐約，維基與 classicalconnect 寫費城管弦樂團；facts 採費城（兩源）。",
+   "1938 年布魯塞爾比賽的名稱：維基與 melody.su 稱 Ysaÿe International Festival（今 Queen Elisabeth Competition），Britannica 稱 Ysaÿe Festival；採 Ysaÿe 國際音樂節。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 只有生卒年與 Grieg 唱片年表（維基單源），上線簡介（Grieg: Lyric Pieces）只談曲目與編排、無需更正。成功請求 7 次：維基 Gilels、Britannica、WebSearch（影響與地位）、Interlude 生日文、classicalconnect、WebSearch（Rachmaninoff 獎章）、melody.su；失敗 1 次（Emil Gilels Foundation 網站 503，未計入）。同名檢查：poolAlbums 為 Beethoven《Waldstein / Appassionata》、《Piano Concertos》（Szell）、Brahms 第二號鋼琴協奏曲、Grieg《Lyric Pieces》，都是蘇聯鋼琴家 Emil Gilels，無混卡。非獨立：Rachmaninoff 獎章那條，melody.su 與維基文字相同（疑為維基轉載），非獨立；第二源只能算形式上的兩個網址；寫作層若採用請用『據說』或『被視為』，不要寫成確定事實；另一個獨立來源（Emil Gilels Foundation 官網）503 未能開啟。單源或未收：（1）父親糖廠職員、姊姊 Elizabeth 是小提琴家、女兒 Elena 是鋼琴家、完美音準（單源，維基）；（2）1936 年維也納國際鋼琴大賽第二名（單源，維基）；（3）1946 年史達林獎、1954 年蘇聯人民藝術家、1961 與 1966 年列寧獎、1976 年社會主義勞動英雄（單源，維基）；（4）『最早獲准赴西方的蘇聯藝術家之一，與 Oistrakh 並列』（維基與搜尋摘要，未取得第二個開頁來源，且『第一批』類宣稱可能有反例，不收）；（5）與 Szell 錄 Beethoven 協奏曲、DG 貝多芬奏鳴曲全集錄到一半而過世、1982 年《Hammerklavier》錄音獲 1984 年 Gramophone Award（維基單源；melody.su 為轉載）；（6）1952 年任莫斯科音樂院教授、學生 Valery Afanassiev（維基）；Britannica 寫 1938 年即受聘教授，兩源不一致；（7）Richter 對死因的說法有爭議，不收；（8）Interlude 引 Gilels 話『我不彈我個人不喜歡的作品』、以 Tkach 為最大影響（單源）；（9）Rubinstein 與 Gilels 是終身朋友（維基單源）；（10）1938 年布魯塞爾評審團含 Rubinstein、Casadesus、Friedman 等（classicalconnect 單源）。維基與 classicalconnect 的『20 世紀最偉大鋼琴家之一』措辭相近但出自兩個網站，可視為各自表述；classicalconnect 為 Wikipedia 轉述的可能性存在，未能排除。"
+ },
+ {
+  "key": "eugen jochum",
+  "name": "Eugen Jochum",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Eugen Jochum 1902 年 11 月 1 日生於巴伐利亞的 Babenhausen（奧格斯堡附近），1987 年 3 月 26 日在慕尼黑過世。",
+      "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+      "src2": "https://www.bach-cantatas.com/Bio/Jochum-Eugen.htm",
+      "from": "new"
+     },
+     {
+      "f": "他的哥哥 Otto Jochum 是作曲家，弟弟 Georg Ludwig Jochum 也是指揮家。",
+      "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+      "src2": "https://www.bach-cantatas.com/Bio/Jochum-Eugen.htm",
+      "from": "new"
+     },
+     {
+      "f": "他在奧格斯堡學鋼琴與管風琴，8 歲就在教堂禮拜中彈管風琴。",
+      "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+      "src2": "https://www.stage-plus.com/artist/artist_85P78QBJEHFJ4C1L6K",
+      "from": "new"
+     },
+     {
+      "f": "他後來到慕尼黑跟 Siegmund von Hausegger 學指揮、跟 Hermann von Waltershausen 學作曲。",
+      "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+      "src2": "https://www.bach-cantatas.com/Bio/Jochum-Eugen.htm",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以詮釋德國晚期浪漫派，尤其是 Bruckner 的交響曲著稱。",
+      "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+      "src2": "https://www.bach-cantatas.com/Bio/Jochum-Eugen.htm",
+      "from": "new"
+     },
+     {
+      "f": "他錄下完整的 Bruckner 交響曲全集；在 Deutsche Grammophon 的那套由巴伐利亞廣播交響樂團與柏林愛樂分擔，自 1960 年代發行後一直留在唱片目錄裡。",
+      "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+      "src2": "https://www.deutschegrammophon.com/en/catalogue/products/jochum-complete-dg-recordings-8549",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他被視為同世代最重要的德國指揮家之一，也是最受推崇的 Bruckner 詮釋者之一。",
+      "src": "https://www.bach-cantatas.com/Bio/Jochum-Eugen.htm",
+      "src2": "https://www.deutschegrammophon.com/en/catalogue/products/jochum-complete-dg-recordings-8549",
+      "from": "new"
+     },
+     {
+      "f": "1949 年巴伐利亞廣播交響樂團成立，Jochum 是創團的首任音樂總監，把樂團培養成重要的樂團。",
+      "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+      "src2": "https://www.britannica.com/biography/Eugen-Jochum",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1934 至 1949 年他任漢堡國家歌劇院與愛樂的音樂總監，接替 Karl Böhm。",
+      "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+      "src2": "https://www.bach-cantatas.com/Bio/Jochum-Eugen.htm",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1949 年出任新成立的巴伐利亞廣播交響樂團首任音樂總監。",
+    "src": "https://en.wikipedia.org/wiki/Eugen_Jochum",
+    "src2": "https://www.britannica.com/biography/Eugen-Jochum",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "首次指揮慕尼黑愛樂、以 Bruckner 第七號開場：bach-cantatas 寫 1927 年，維基搜尋摘要寫 1926 年，維基 Kiel 歌劇院條目也是 1926；年份不一致，facts 不寫。",
+   "巴伐利亞廣播交響樂團任期：維基寫 1949–1961，Britannica 與 bach-cantatas 寫 1949–1960；facts 只寫 1949。",
+   "阿姆斯特丹皇家音樂廳樂團任期：維基 1961–1963，bach-cantatas 1961–1964，stage-plus 1961–1963；Bamberg：維基與 bach-cantatas 1969–1973，stage-plus 1969–1977；柏林廣播樂團：維基 1932–1944，bach-cantatas 1932–1934；皆不一致，facts 不寫。"
+  ],
+  "pubIssues": [],
+  "searches": 9,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "⚠ 本位成功請求共 9 次，超過上限 8 次（第 9 次是 Kenneth Woods 部落格，其內容已全數撤掉、一條都沒用；第 4 次 Britannica 抓回的多是巴伐利亞廣播交響樂團的敘述，沒有生卒年）。成功請求：維基 Jochum、Britannica、WebSearch（生平）、bach-cantatas、stage-plus、維基 Carmina Burana、WebSearch（Bruckner 協會與全集）、DG 目錄頁、Kenneth Woods 部落格（已撤）。同名檢查：poolAlbums 為 Bruckner 第七號、第五號、Te Deum 與 Orff《Carmina Burana》，都是德國指揮 Eugen Jochum，無混卡（注意 Jochum 的哥哥 Otto 與弟弟 Georg Ludwig 也是音樂家，未混入）。單源或未收：（1）自 1950 年任國際 Bruckner 協會主席：維基單源；搜尋摘要稱是協會的德國分會主席，兩者不一致，不收；（2）Carmina Burana：1952 年 10 月與巴伐利亞廣播交響樂團錄下首版、1953 年發行；1967 年與 Deutsche Oper Berlin 再錄，經 Orff 認可，並獲 BBC Radio 3《CD Review》1995 年『Building a Library』首選（單源，維基 Carmina Burana 條目）；（3）DG 頁稱他『首次完整錄下』Bruckner 交響曲，維基稱 DG 這套是他的『第一套』全集（他一生錄了兩套，DG 與 EMI 德勒斯登），『史上第一』類說法可能有反例，不收；（4）1944 年首次商業錄音 Bruckner 第三號、1949 年第八號（單源，維基）；（5）Kiel 歌劇院首季指揮 17 部歌劇／三年 50 餘部（維基與 stage-plus 數字不一致，不收）；（6）Jochum 是 Hausegger 與 Waltershausen 學生：兩源一致（已收）；（7）DG 頁稱他是『最後的偉大德國 Kapellmeister 傳統代表之一』，bach-cantatas 稱『最偉大的德國指揮家之一』（已併入 legacy 第一條，措辭取兩源共識）；（8）stage-plus 稱他的 Bruckner『溫暖、開闊、深具浪漫』（單源）。上線簡介 Bruckner 第五號說他是『1949 年重組時出任首任音樂總監』：維基與 Britannica 都是 1949 年創團／組成，與簡介相符。"
  }
 ]
