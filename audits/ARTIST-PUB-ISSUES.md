@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 222 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 223 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -226,3 +226,4 @@
 | ar-b-025 | DJ Koze | Kosi Comes Around | Stefan Kozalla 出身德國 Flensburg | en 維基寫生於 Flensburg，de 維基與 Pampa Records 官方頁寫生於 Marrakech，來源衝突；建議改成『在 Flensburg 的嘻哈圈起家』較穩。 | https://de.wikipedia.org/wiki/DJ_Koze |
 | ar-b-026 | Paul van Dyk | Out There and Back | 自營廠牌 Vandit 的第一號發行 | 維基 Vandit Records 條目稱廠牌最早的發行是 Paul van Dyk 的單曲〈Another Way〉與〈Avenue〉；維基《Out There and Back》條目稱這是廠牌的第一張專輯。建議改成「Vandit 的第一張專輯」。兩條都是維基，非獨立，建議店主再核廠牌目錄。 | https://en.wikipedia.org/wiki/Vandit_Records |
 | ar-b-026 | Sven Grünberg | Hingus | 愛沙尼亞文維基記載，1981 年完成的《Hingus》是整個蘇聯的第一張電子音樂唱片。 | 簡介把『蘇聯第一張電子音樂唱片』掛在愛沙尼亞文維基名下，原句確實出自該條目；但這是『第一』類宣稱且有明顯反例：拉脫維亞團 Zodiac 的《Disco Alliance》1980 年已由國營 Melodiya 發行，英文維基說它大量使用當時罕見的合成器音色，早於 1981 年。建議改成『愛沙尼亞文維基稱…』並加『說法有爭議』，或刪掉這個『第一』。另，Bureau B 重發頁（搜尋摘要）寫本作錄製於 1978 至 1980 年、1981 年發行，簡介『1981 年完成』可改『1981 年發行』。 | https://en.wikipedia.org/wiki/Zodiac_(Latvian_band) |
+| ar-b-026 | 浜瀬元彦 | Reminiscence | 1986 年 1 月 25 日由 Shi Zen 發行的個人作 | 日文維基唱片表把《Reminiscence》記為 1985 年，與上線簡介的 1986 年 1 月 25 日不一致；不確定誰對（Discogs／MusicBrainz 為 1986），僅供店主核對，非確定錯誤 | https://ja.wikipedia.org/wiki/%E6%BF%B1%E7%80%AC%E5%85%83%E5%BD%A6 |
