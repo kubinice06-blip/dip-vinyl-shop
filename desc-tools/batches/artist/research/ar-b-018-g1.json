@@ -238,5 +238,469 @@
   "status": "full",
   "pubIssues": [],
   "notes": "補查 6 次：英文維基 Víctor Jara、WebSearch（Britannica 傳記）、史密森尼美國藝術博物館頁、Britannica 傳記、WebSearch（2009 葬禮與體育場改名）、Global Voices 葬禮報導；CBC 葬禮報導 403（未取得，計入 failedFetches）。事實庫兩條（西文維基）只有專輯屬性與遇害年份層級，origin／sound／legacy 的主體靠補查。1973 年遇害一條：英文維基與 Britannica 兩源，另有西文維基（事實庫）為第三源；只收年份層級，Britannica 與維基的死亡細節與日期不收。「新歌運動代表人物之一」：英文維基寫 one of the leading figures of the neo-folkloric movement that established the Nueva canción chilena；Britannica 寫 one of the pioneers of the nueva canción genre，兩源措辭不同但方向一致。智利國民象徵一條的兩源為 Britannica 與史密森尼（獨立）。單源未收：母親有 Mapuche 血統（維基）；1957 至 1963 年加入 Cuncumén（維基）；1969 年〈Plegaria a un labrador〉在首屆新歌節獲首獎（維基）；〈Venceremos〉成為 Allende 競選期間人民團結陣線的主題曲——維基與 Britannica 都寫成 Jara 的歌，但這首歌一般記為 Sergio Ortega 與 Claudio Iturra 的作品、Jara 是傳唱者，兩源與通說不一致，寫作層不得寫成 Jara 所作；U2、The Clash、Simple Minds 的致敬曲與 2013 年 Rolling Stone「15 Rock & Roll Rebels」入列（維基單源，後者屬雜誌榜單，不收）；「南美洲的 Bob Dylan」的稱呼（史密森尼與搜尋摘要，只有史密森尼實際開頁，單源）；Global Voices 稱 2009 年葬禮有數千人、總統 Bachelet 出席、他生前導演過 15 齣以上戲劇、1966 至 1974 年發行 9 張專輯（單源；葬禮日期 Global Voices 寫 12 月 3 日，搜尋摘要的 AP 圖說寫 12 月 5 日，日期不一致，且 CBC 403 未能核對，故葬禮整條不收）；2018 年退役軍官被判刑屬案情，不收。"
+ },
+ {
+  "key": "waxahatchee",
+  "name": "Waxahatchee",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Waxahatchee 是 Katie Crutchfield 的音樂計畫，她在阿拉巴馬州 Birmingham 長大。",
+      "src": "https://en.wikipedia.org/wiki/Waxahatchee",
+      "src2": "https://daily.bandcamp.com/features/waxahatchee-saint-cloud-katie-crutchfield-interview",
+      "from": "new"
+     },
+     {
+      "f": "她的雙胞胎姊妹 Allison 也是音樂人；Katie 在 Waxahatchee 之前待過 P.S. Eliot 等樂團。",
+      "src": "https://en.wikipedia.org/wiki/Waxahatchee",
+      "src2": "https://daily.bandcamp.com/features/waxahatchee-saint-cloud-katie-crutchfield-interview",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期的 Waxahatchee 偏吵鬧的 indie rock；2020 年的《Saint Cloud》轉向柔和的鄉村與 Americana 聲音，製作人是 Brad Cook。",
+      "src": "https://en.wikipedia.org/wiki/Saint_Cloud_(album)",
+      "src2": "https://daily.bandcamp.com/features/waxahatchee-saint-cloud-katie-crutchfield-interview",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2024 年的《Tigers Blood》入圍第 67 屆葛萊美（2025）最佳 Americana 專輯（Best Americana Album，入圍未得獎），是 Waxahatchee 的第一次葛萊美入圍。",
+      "src": "https://en.wikipedia.org/wiki/Waxahatchee",
+      "src2": "https://www.grammy.com/artists/waxahatchee/58192/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《Tigers Blood》2022 至 2023 年在德州 Sonic Ranch 錄製，製作人掛 Brad Cook，MJ Lenderman 在第 1 至 12 軌全碟彈電吉他。",
+      "src": "https://en.wikipedia.org/wiki/Tigers_Blood",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2025 年（第 67 屆）葛萊美最佳 Americana 專輯入圍，作品《Tigers Blood》。",
+    "src": "https://en.wikipedia.org/wiki/Waxahatchee",
+    "src2": "https://www.grammy.com/artists/waxahatchee/58192/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫研究稿與上線簡介對《Tigers Blood》的班底、錄音年份一致，無衝突。"
+  ],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 7 次：英文維基 Waxahatchee、WebSearch（身世）、Bandcamp Daily《Saint Cloud》專訪、WebSearch（找《Saint Cloud》維基網址）、WebSearch（葛萊美）、英文維基《Saint Cloud》、grammy.com 藝人頁。失敗請求 4 次（Rolling Stone 專訪轉址至 tollbit 後 402、WXPN 專訪 404、猜錯的維基網址 404，加上 Rolling Stone 原網址 307 轉址未取得內容），已到上限，照實記錄。legacy 偏薄：只找到葛萊美入圍一條有兩源者，沒有後輩點名或名人堂級共識；若寫作層需要更多，可考慮把 legacy 寫輕、以 era 的 Tigers Blood 合作補足。非獨立：origin 兩條的第一源與 sound 的第一源都是維基（不同條目間未交叉）；origin 兩條第二源是 Bandcamp Daily（獨立）。origin 第二條的支持度：維基寫 P.S. Eliot 由她與 Allison 創立；Bandcamp 提到雙胞胎姊妹與 P.S. Eliot 但未明說 Allison 共同創立，故 f 只寫「Allison 也是音樂人」「待過 P.S. Eliot」，沒寫「與 Allison 創立」。era 一條取自事實庫（維基《Tigers Blood》，事實庫另附 MusicBrainz 屬專輯版本資料，本層未使用；與上線簡介一致）。poolAlbums（Saint Cloud、American Weekend、Ivy Tripp、Tigers Blood）皆是 Katie Crutchfield 的 Waxahatchee，無同名混卡。單源未收：團名取自她成長地的 Waxahatchee Creek（維基單源，搜尋摘要另有轉述未開頁）；2010 年成立、2012 年首張臥室錄音專輯（維基單源，屬出道作類）；從小聽 Emmylou Harris、Loretta Lynn、青少年時迷龐克而排斥鄉村、Dolly Parton 的創作手法啟發了新作（Bandcamp Daily 單源）；《Saint Cloud》歌詞受 Lucinda Williams 影響（維基《Saint Cloud》單源，搜尋摘要同源）；《Saint Cloud》2020 年 3 月 27 日由 Merge 發行、2019 年夏在德州 Sonic Ranch 與紐約 Long Pond 錄製、班底為 Bonny Doon 成員（維基單源）；2018 年歐洲巡演後決定戒酒、搬到 Kansas City（Bandcamp Daily 單源，屬個人健康細節，建議不寫）；《Saint Cloud》獲 2021 年 Libera Awards 最佳鄉村專輯（維基單源）；與 Jess Williamson 合組 Plains、與 MJ Lenderman 於 2024 年單曲〈Right Back to It〉合作（維基單源）。專輯榜單與樂評排名不收。"
+ },
+ {
+  "key": "waylon jennings",
+  "name": "Waylon Jennings",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Waylon Jennings 1937 年 6 月 15 日生於德州 Littlefield 一帶，少年時就在當地電台演出與播音，後來才轉往 Lubbock 與 Nashville；2002 年 2 月 13 日過世。",
+      "src": "https://en.wikipedia.org/wiki/Waylon_Jennings",
+      "src2": "https://www.tshaonline.org/handbook/entries/jennings-waylon",
+      "from": "new"
+     },
+     {
+      "f": "1959 年他是 Buddy Holly「Winter Dance Party」巡演的貝斯手；2 月 3 日他把包機座位讓給別人，沒登上後來墜毀的那架飛機。",
+      "src": "https://en.wikipedia.org/wiki/Waylon_Jennings",
+      "src2": "https://www.tshaonline.org/handbook/entries/jennings-waylon",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1970 年代他向 RCA 爭取到錄音的自主權（自己選歌、選錄音室、選樂手），並堅持用自己的巡迴樂團與較精簡的聲音，不接受 Nashville 慣用的管弦樂編制；這是 outlaw country 的核心訴求。",
+      "src": "https://en.wikipedia.org/wiki/Waylon_Jennings",
+      "src2": "https://www.countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基、德州歷史協會《Handbook of Texas》與鄉村音樂名人堂都把他列為 outlaw country 運動的開創者之一，名人堂稱他是「因為要求並終於得到搖滾團體早就習慣的待遇」而被 Nashville 稱為 Outlaw。",
+      "src": "https://en.wikipedia.org/wiki/Waylon_Jennings",
+      "src2": "https://www.countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+      "from": "new"
+     },
+     {
+      "f": "2001 年入選鄉村音樂名人堂（Country Music Hall of Fame）。",
+      "src": "https://www.countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+      "src2": "https://www.tshaonline.org/handbook/entries/jennings-waylon",
+      "from": "new"
+     },
+     {
+      "f": "1976 年與 Willie Nelson、Tompall Glaser、Jessi Colter 合輯的《Wanted! The Outlaws》，維基與鄉村音樂名人堂都稱是鄉村音樂史上第一張獲白金認證的專輯，名人堂說它證明歌手保有創作自主權也能大賣。",
+      "src": "https://en.wikipedia.org/wiki/Waylon_Jennings",
+      "src2": "https://www.countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+      "from": "new"
+     },
+     {
+      "f": "1979 年他與 Willie Nelson 以〈Mammas Don't Let Your Babies Grow Up to Be Cowboys〉獲葛萊美最佳鄉村二重唱或團體演唱（Best Country Performance by a Duo or Group with Vocal，得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Waylon_Jennings",
+      "src2": "https://en.wikipedia.org/wiki/Mammas_Don't_Let_Your_Babies_Grow_Up_to_Be_Cowboys",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年入選鄉村音樂名人堂。",
+    "src": "https://www.countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+    "src2": "https://www.tshaonline.org/handbook/entries/jennings-waylon",
+    "from": "new"
+   },
+   {
+    "f": "1976 年《Wanted! The Outlaws》成為鄉村音樂史上第一張白金專輯。",
+    "src": "https://en.wikipedia.org/wiki/Waylon_Jennings",
+    "src2": "https://www.countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Wanted! The Outlaws》的「第一張白金」：維基與名人堂寫 first country music album certified platinum；Handbook of Texas 寫 first platinum album ever recorded in Nashville（範圍較窄）；採兩源一致的前者，未見明顯反例。",
+   "墜機當天他讓座的對象：維基寫 J. P. Richardson，Handbook of Texas 摘要寫成 Holly（疑為摘要錯誤或原文表述不同），facts 因此只寫「把座位讓給別人」。",
+   "他少年開始電台工作的年紀：維基寫 14 歲在 KVOW 演出、1956 年起當 DJ，Handbook of Texas 寫 12 歲前已當 DJ；兩源不一致，facts 不寫年齡。",
+   "維基寫他死於亞利桑那州 Chandler 的家中，Handbook of Texas 寫死於 Phoenix；facts 只寫日期、不寫地點。",
+   "事實庫上線簡介（Dreaming My Dreams）稱 Honky Tonk Heroes 起實行自主製作安排，與維基『Honky Tonk Heroes 是最早在他創作自主下錄製發行的專輯之一』一致，無衝突。"
+  ],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 7 次：英文維基 Waylon Jennings、WebSearch（名人堂與 outlaw）、Handbook of Texas、鄉村音樂名人堂官網人物頁、WebSearch（影響他人）、WebSearch（葛萊美〈Mammas…〉）、英文維基〈Mammas Don't Let Your Babies Grow Up to Be Cowboys〉。事實庫 research 空，published 只有《Dreaming My Dreams》一則，三格靠補查。非獨立：legacy 第四條兩源皆為英文維基（Waylon 條目與歌曲條目），非獨立；維基 Waylon 條目另稱 1970 年與 The Kimberlys 以〈MacArthur Park〉得葛萊美（歌曲條目未載，單源，不收）。「outlaw 開創者之一」三源措辭一致：維基 one of the pioneers of the outlaw movement、名人堂 instrumental in defining the Outlaw movement 並引述上述說法、Handbook 寫與 Willie Nelson 在 1970 年代一同形成 Outlaw 運動。sound 的「自主權」一條：維基寫 1972 年經理人 Neil Reshen 談成合約、取得 75000 美元預付金與藝術控制權；名人堂引述他要求「想錄的歌、想用的錄音室、想用的樂手」；Handbook 寫他主張用自己的巡迴樂團與精簡聲音、對抗管弦化。f 裡的『精簡聲音、不接受管弦』來自 Handbook，與名人堂並非逐字同一件事，寫作層可合併寫成『拿回選歌、選錄音室、選樂手的權力』。單源未收（放 notes）：父親是佃農、後來經營農產店（Handbook 單源）；1954 年到 Lubbock、1955 年在 KDAV 認識 Holly、1958 年 Holly 製作其首支單曲〈Jole Blon〉（Handbook 單源，首支單曲類）；1965 年經 Chet Atkins 簽 RCA（維基與 Handbook 皆有，但屬簽約履歷，不收）；《Honky Tonk Heroes》1973 年是最早在創作自主下錄製的專輯之一（維基單源；搜尋摘要稱「早期展現 outlaw 聲音的專輯」）；名人堂稱他的成功讓 Nashville 體系從製作人主導轉向藝人分享權力（名人堂官網單源，可作寫作層的『名人堂稱…』，但本層依 Country Music Hall of Fame 非搖滾名人堂，不適用例外，故未入 facts）；Texas Country Music Hall of Fame 1999 與 Texas Heritage Songwriters 2014 入選、2007 年終身成就獎（Handbook 單源，細節不明）；維基列 Hank Williams Jr.、Travis Tritt、Steve Earle、Eric Church、Sturgill Simpson 受其影響（維基單源；Sturgill Simpson 本人在訪談中說過去並不特別聽 Waylon，故此名單不收）；2001 年入選名人堂時他因糖尿病疼痛未出席（維基單源）。銷量與認證倍數（《Greatest Hits》多白金、60 張以上專輯、13 張金唱片、16 首冠軍歌）依規則不寫；《Wanted! The Outlaws》的『第一張白金』屬里程碑事實而非累計銷量，保留。poolAlbums（Honky Tonk Heroes、Jewels、JD's、Dreaming My Dreams）皆為此人，無同名混卡。"
+ },
+ {
+  "key": "woody guthrie",
+  "name": "Woody Guthrie",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Woody Guthrie 1912 年 7 月 14 日生於奧克拉荷馬州 Okemah。",
+      "src": "https://en.wikipedia.org/wiki/Woody_Guthrie",
+      "src2": "https://www.britannica.com/biography/Woody-Guthrie",
+      "from": "new"
+     },
+     {
+      "f": "大蕭條與沙塵暴時期，他隨大批流離失所的奧克拉荷馬人前往加州，並在洛杉磯電台開始演唱與寫歌。",
+      "src": "https://en.wikipedia.org/wiki/Woody_Guthrie",
+      "src2": "https://www.britannica.com/biography/Woody-Guthrie",
+      "from": "new"
+     },
+     {
+      "f": "他晚年罹患亨丁頓舞蹈症，1967 年因該病併發症過世。",
+      "src": "https://en.wikipedia.org/wiki/Woody_Guthrie",
+      "src2": "https://www.britannica.com/biography/Woody-Guthrie",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "搖滾名人堂說他把民謠拿來表達自己常常很激進的社會看法，徹底改變了民謠；Britannica 稱他的音樂啟發了 1960 年代的美國民謠復興。",
+      "src": "https://www.rockhall.com/inductees/woody-guthrie",
+      "src2": "https://www.britannica.com/biography/Woody-Guthrie",
+      "from": "new"
+     },
+     {
+      "f": "〈This Land Is Your Land〉寫於 1940 年，是對 Irving Berlin〈God Bless America〉的回應。",
+      "src": "https://www.britannica.com/topic/This-Land-Is-Your-Land",
+      "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/This-Land-Is-Your-Land.pdf",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1988 年他以「音樂影響力」類別入選搖滾名人堂，由 Neil Young 引介；名人堂寫「沒有 Woody Guthrie，就沒有 Dylan、Springsteen 或 Baez」，Britannica 也點名他深深影響了 Bob Dylan、Bruce Springsteen、Joan Baez 與 Phil Ochs。",
+      "src": "https://www.rockhall.com/inductees/woody-guthrie",
+      "src2": "https://www.britannica.com/biography/Woody-Guthrie",
+      "from": "new"
+     },
+     {
+      "f": "〈This Land Is Your Land〉的 1944 年錄音 2002 年入選美國國會圖書館國家錄音登記（National Recording Registry）；國會圖書館稱它已成為美國的非正式國歌，Britannica 提到有人提議以它取代〈星條旗〉，但 Guthrie 家屬反對。",
+      "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/This-Land-Is-Your-Land.pdf",
+      "src2": "https://www.britannica.com/topic/This-Land-Is-Your-Land",
+      "from": "new"
+     },
+     {
+      "f": "這首歌後來被民權運動等社會運動採用，也出現在總統就職典禮與獨立紀念日場合。",
+      "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/This-Land-Is-Your-Land.pdf",
+      "src2": "https://www.britannica.com/topic/This-Land-Is-Your-Land",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1940 年 3 月他在華盛頓為 Alan Lomax 錄音，錄音編目於美國國會圖書館；內容含他自己的〈So Long It's Been Good To Know You〉〈Talking Dust Bowl Blues〉〈Do-Re-Mi〉，也有他談奧克拉荷馬與大蕭條見聞的自述。",
+      "src": "https://en.wikipedia.org/wiki/Library_of_Congress_Recordings",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1988 年入選搖滾名人堂（音樂影響力類別）。",
+    "src": "https://www.rockhall.com/inductees/woody-guthrie",
+    "src2": "https://www.britannica.com/biography/Woody-Guthrie",
+    "from": "new"
+   },
+   {
+    "f": "2002 年〈This Land Is Your Land〉錄音入選美國國家錄音登記。",
+    "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/This-Land-Is-Your-Land.pdf",
+    "src2": "https://www.britannica.com/topic/This-Land-Is-Your-Land",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Britannica 傳記寫他「1941 年與 Alan Lomax 做了首批錄音」，事實庫（維基《Library of Congress Recordings》）與上線簡介寫 1940 年 3 月；採 1940 年 3 月（國會圖書館那批），Britannica 的 1941 年不收。",
+   "事實庫研究稿稱 Library of Congress Recordings 是『最早的錄音』（維基），Britannica 的 1941 年首次錄音說法與之矛盾，兩者擺不平；本層 facts 不寫『最早』，只寫 1940 年 3 月那批錄音。",
+   "〈This Land Is Your Land〉的錄音時間：維基與 Britannica 〈歌曲條目〉寫 1944 年 4 月，國會圖書館寫 1944 年首次錄音，一致。",
+   "事實庫（維基《Struggle》條目）的 1945 與 1946 年與上線簡介的處理一致（尊重 Asch 序文寫 1946、目錄記 1945），無新衝突。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Library of Congress Recordings",
+    "claim": "維基記這是 Guthrie 最早的錄音",
+    "problem": "Britannica 的傳記寫他『1941 年與 Alan Lomax 做了首批錄音』，與『1940 年 3 月最早』矛盾；『最早』一類宣稱兩源不一致，建議店主在本機改為不寫『最早』，只寫 1940 年 3 月為 Lomax 錄音、編目於國會圖書館",
+    "src": "https://www.britannica.com/biography/Woody-Guthrie"
+   }
+  ],
+  "notes": "補查 6 次：英文維基 Woody Guthrie、Britannica 傳記、搖滾名人堂官網人物頁、WebSearch（國家錄音登記與詞曲名人堂）、國會圖書館《This Land Is Your Land》國家錄音登記 PDF 文章、Britannica 〈This Land Is Your Land〉條目。事實庫研究稿與上線簡介都是專輯層級（Struggle、Library of Congress Recordings 等），三格主體靠補查；era 一條取自事實庫。非獨立：origin 的第一源皆為英文維基、第二源 Britannica 傳記，獨立；sound 第二條與 legacy 第二、三條用了 LoC 文章與 Britannica 歌曲條目，獨立。legacy 第一條的 src 是搖滾名人堂官網（Guthrie 入選頁），其介紹文字可具名單源但這裡已有 Britannica 第二源；『Neil Young 引介』與『音樂影響力類別』只見名人堂頁（單源，官方）。注意：國會圖書館 PDF 的實際內容我是透過摘要讀取，已確認 1940 年寫成、1944 年首次錄音、2002 年入選、『非正式國歌』。單源未收：出生時父親是牛仔、土地投機客兼民主黨政客，母親罹患亨丁頓舞蹈症（Britannica 單源，且屬家庭病史）；19 歲搬到 Pampa 並結婚（Britannica 單源）；1952 年確診（維基單源）；1937 年洛杉磯電台、與 Maxine『Lefty Lou』Crissman 在 KFVD 搭檔成名（維基與 Britannica 的 1937 年與電台，但搭檔細節只有維基）；Almanac Singers 與 Pete Seeger 共同創團（維基單源；Britannica 只提 Almanac Singers 與 Leadbelly、Seeger 合作，兩源措辭不同故未入 facts）；『This machine kills fascists』吉他標語（維基單源）；Dust Bowl Ballads 入 Mojo『改變世界的 100 張唱片』（維基單源，且屬雜誌榜單，不收）；〈This Land Is Your Land〉旋律借自 Carter Family 〈When the World's on Fire〉、1945 年首度出版於小冊、1950 年代初經 Howie Richmond 授權進教科書後才普及、2002 年之外 1989 年 Grammy Hall of Fame（單源／搜尋摘要）；全國詞曲作者名人堂 1970、Nashville Songwriters Hall of Fame 1977、Oklahoma Hall of Fame 2006（搜尋摘要，未開頁）；維基列出的一長串受其影響者名單（Seeger、Dylan、Cash、Lou Reed、Springsteen、Joe Strummer 等，維基單源，名單中 Dylan、Springsteen、Baez、Ochs 已由名人堂與 Britannica 兩源支持）；Britannica 稱他寫過超過 1000 首歌（單源）。poolAlbums（Ballads of Sacco & Vanzetti、Dust Bowl Ballads、Struggle、Library of Congress Recordings）皆為此人。"
+ },
+ {
+  "key": "井上陽水",
+  "name": "井上陽水",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "井上陽水 1948 年 8 月 30 日生於福岡縣；父親是牙醫（曾任軍醫），期待他繼承診所，他卻沒考上牙醫大學。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+      "src2": "https://en.wikipedia.org/wiki/Yosui_Inoue",
+      "from": "new"
+     },
+     {
+      "f": "他從年輕時就迷上 The Beatles，音樂上受到很大啟發。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+      "src2": "https://en.wikipedia.org/wiki/Yosui_Inoue",
+      "from": "new"
+     },
+     {
+      "f": "1969 年他先以藝名アンドレ・カンドレ出道，單曲沒有走紅；後來改以本名井上陽水再出發，首張專輯是 1972 年的《断絶》。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+      "src2": "https://en.wikipedia.org/wiki/Yosui_Inoue",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《氷の世界》（1973）有一部分在倫敦錄音，唱片公司安排；Tower Records 稱這在當時日本藝人的作品裡相當少見。",
+      "src": "https://www.oricon.co.jp/news/2035609/full/",
+      "src2": "https://tower.jp/article/feature_item/2014/03/27/0702",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1973 年 12 月發行的《氷の世界》，1975 年 8 月成為日本唱片史上第一張銷量破百萬的 LP。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+      "src2": "https://tower.jp/article/feature_item/2014/03/27/0702",
+      "from": "new"
+     },
+     {
+      "f": "他也替其他歌手寫歌：作詞〈ワインレッドの心〉（安全地帯，1983 年，作曲玉置浩二）。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%83%AF%E3%82%A4%E3%83%B3%E3%83%AC%E3%83%83%E3%83%89%E3%81%AE%E5%BF%83",
+      "src2": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+      "from": "new"
+     },
+     {
+      "f": "他也為中森明菜寫作詞作曲〈飾りじゃないのよ涙は〉（1984 年），自己隨後收進 1984 年底的專輯《9.5カラット》。",
+      "src": "https://ja.wikipedia.org/wiki/%E9%A3%BE%E3%82%8A%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%AE%E3%82%88%E6%B6%99%E3%81%AF",
+      "src2": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+      "from": "new"
+     },
+     {
+      "f": "跨世代的合作對象包括忌野清志郎、安全地帯，以及後輩奥田民生（兩人曾以「井上陽水奥田民生」名義合作）。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+      "src2": "https://en.wikipedia.org/wiki/Yosui_Inoue",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1973 年 12 月《氷の世界》由 Polydor 發行，是他的第三張原創專輯。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+      "src2": "https://tower.jp/article/feature_item/2014/03/27/0702",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1975 年 8 月，《氷の世界》成為日本唱片史上第一張銷量破百萬的 LP。",
+    "src": "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4",
+    "src2": "https://tower.jp/article/feature_item/2014/03/27/0702",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基寫他 1971 年簽 Polydor、首張專輯《断絶》，日文維基寫 1972 年改名再出道；上線簡介寫 1972 年 5 月《断絶》，採 1972 年（專輯發行年），簽約年不寫。",
+   "搜尋摘要稱《氷の世界》為『日本初のミリオン』，日文維基、英文維基、Tower 與 Oricon 都限定為『LP（專輯）』，facts 限定寫『第一張銷量破百萬的 LP』。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 8 次：日文維基 井上陽水、英文維基 Yosui Inoue、WebSearch（氷の世界 歷史地位）、Oricon 新聞、Tower Records 40 週年文、日文維基〈ワインレッドの心〉、日文維基〈飾りじゃないのよ涙は〉、WebSearch（受賞）。事實庫 research 空、published 四則皆專輯層級，三格從零查。非獨立：origin 三條、legacy 第一與第四條兩源是日文維基與英文維基（同站不同語言版）；legacy 第二、三條的 src 為日文維基歌曲條目、src2 為日文維基本人條目，非獨立，且兩源互相支持的是同一件事（作詞者）；sound 的兩源是 Oricon 與 Tower（Oricon 只說唱片公司安排倫敦錄音，『當時罕見』只有 Tower）。Oricon 與 Tower 兩頁是 40 週年紀念盤的新聞稿性質報導，非獨立於唱片公司宣傳。人名照原文漢字：井上陽水、忌野清志郎、玉置浩二、奥田民生（日文新字體『奥』照原文保留，QA 若誤判請保留原名）。單源未收：本名讀音あきみ、出生地福岡縣嘉穂郡幸袋町、在田川郡糸田町長大（日文維基單源）；1969 年 RKB 電台播出〈カンドレ・マンドレ〉成為出道契機（日文維基）、同年 CBS Sony 發行三張單曲未走紅（英文維基）；1973 年〈夢の中へ〉為電影《放課後》主題曲、首次走紅（日文維基單源）；1985 年《9.5カラット》為第二張破百萬（日文維基，並有搜尋摘要；屬銷量，不寫）；避開電視、唱片封面是外界認識他外貌的主要方式（日文維基單源）；英文維基稱他是 folk-rock 歌手、早期被拿來比 Paul McCartney 與 Roy Orbison、以獨特音色、怪異歌詞與常戴墨鏡聞名（單源）；日文維基稱他是『日本代表性的シンガーソングライター』、領導 1970 年代以後日本新音樂（單源，定型句）；CDジャーナル稱〈飾りじゃないのよ涙は〉『日本歌謠史上的名曲』（樂評，不收）；日本レコード大賞：1985 年第 27 回《9.5カラット》（作曲賞與アルバム賞）、1974 年第 16 回編曲賞與企画賞、1990 年第 32 回優秀アルバム賞、1993 年第 35 回金賞與編曲賞——只見搜尋摘要（jacompa 頁未開、已無搜尋次數可用），不收，且主詞（作曲／編曲／專輯）須分清；《氷の世界》『オリコンLP榜 5 度回冠、百週以上 TOP10』（搜尋摘要與 Tower 皆有但屬榜單／銷量，不收）。poolAlbums（断絶、二色の独楽、氷の世界、陽水II センチメンタル）皆為此人，無同名混卡。"
+ },
+ {
+  "key": "登川誠仁",
+  "name": "登川誠仁",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "登川誠仁 1932 年 11 月 18 日生於兵庫縣尼崎市，約 5 歲起在沖繩長大，2013 年 3 月 19 日過世，享年 80 歲。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+      "src2": "https://ryukyushimpo.jp/news/prentry-204250.html",
+      "from": "new"
+     },
+     {
+      "f": "他從小接觸三線與沖繩民謠；16 歲（1948 年）起在沖繩戲劇的「松劇団」擔任地謡（舞台伴奏兼合唱）。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+      "src2": "https://ryukyushimpo.jp/news/prentry-204250.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他擅長速彈，用吉他 pick 彈三線，因此被稱作「沖縄のジミヘン」（比擬吉他手 Jimi Hendrix）。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+      "src2": "https://www.daily.co.jp/gossip/obituaries/2013/03/21/0005831209.shtml",
+      "from": "new"
+     },
+     {
+      "f": "他寫了不少自作曲，其中包括〈豊節〉，除了唱傳統曲，也自己編曲、整理民謠。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+      "src2": "https://ryukyushimpo.jp/news/prentry-204250.html",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他是琉球民謡登川流宗家、琉球古典音楽湛水流名誉師範，也是沖繩縣指定無形文化財（琉球歌劇）的保持者。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+      "src2": "https://okinawaquest.hatenablog.com/entry/2017/11/25/221711",
+      "from": "new"
+     },
+     {
+      "f": "日刊 Sports 稱他是沖繩民謠熱潮的「立役者」（推手），琉球新報的訃報標題稱他是「沖縄民謡の第一人者」。",
+      "src": "https://www.daily.co.jp/gossip/obituaries/2013/03/21/0005831209.shtml",
+      "src2": "https://ryukyushimpo.jp/news/prentry-204250.html",
+      "from": "new"
+     },
+     {
+      "f": "1999 年出演電影《ナビィの恋》後，他在沖繩以外也成為全國知名的人物；2002 年又出演《ホテル・ハイビスカス》。",
+      "src": "https://ryukyushimpo.jp/news/entry-1279204.html",
+      "src2": "https://okinawaquest.hatenablog.com/entry/2017/11/25/221711",
+      "from": "new"
+     },
+     {
+      "f": "他積極出版民謠樂譜（工工四）並錄音留存，以傳承沖繩民謠，也整理、編曲過埋沒的民謠。",
+      "src": "https://ryukyushimpo.jp/news/prentry-204250.html",
+      "src2": "https://okinawaquest.hatenablog.com/entry/2017/11/25/221711",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1999 年出演電影《ナビィの恋》，成為全國知名的沖繩民謠歌手。",
+    "src": "https://ryukyushimpo.jp/news/entry-1279204.html",
+    "src2": "https://okinawaquest.hatenablog.com/entry/2017/11/25/221711",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "幼年接觸三線的經過：日文維基寫 7 歲拿到手製三線、受姊姊影響；日刊 Sports 與 OKINAWA QUEST 寫受父親影響；兩說不一致，facts 只寫「從小接觸三線與民謠」，不寫誰影響他。",
+   "搬到沖繩的年紀：琉球新報、日刊 Sports 寫 5 歲，日文維基只寫在沖繩長大；採 5 歲（兩源）。",
+   "事實庫（日文維基）寫他的綽號與『沖縄のジミヘン』與 OKINAWA QUEST、日刊 Sports 一致，無衝突。",
+   "琉球新報訃報頁內文沒有『沖縄のジミヘン』一語（只有日刊 Sports 與 OKINAWA QUEST、日文維基有），該稱呼不用琉球新報作源。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 6 次：日文維基、WebSearch（訃報與功績）、琉球新報訃報頁、琉球新報追悼文、日刊 Sports 訃報、OKINAWA QUEST 介紹文。事實庫 research 為專輯層級（含日文維基生平，已用）；origin／sound／legacy 皆靠補查補強第二源。非獨立：legacy 第一條的 OKINAWA QUEST 是個人部落格，與琉球新報的訃報同樣屬一般報導／網誌，不能算學術獨立；日刊 Sports 訃報與琉球新報訃報都是共同社類通訊稿式的重述，疑似同源（兩篇措辭高度重疊：5 歲移居、豊節與デンサー節、立役者），已標『非獨立』，因此 legacy 第二條的『立役者』與『第一人者』雖兩源，但屬同一則新聞素材。人名、專名照原文漢字（登川誠仁、湛水流、ナビィの恋）；『国』等字無出現。單源未收：師承板良敷朝賢、1955 年起獨唱、與喜納昌永及津波恒徳組成民謠表演組合而奠定民謠 show（日文維基單源）；1957 年參與琉球民謡協會設立、1984 年起連任六屆會長、1998 年起名譽會長、1999 年琉球民謡名人位（日文維基與琉球新報部分重疊，但不同細節各單源）；2011 年第 9 回宮良長包音樂賞與琉球民謡協會第一回功勞賞（琉球新報訃報／OKINAWA QUEST 各單源）；歌詞堅持使用ウチナーグチ、為三線加弦做六線、改良三板帶進民謠、開發電三線（日文維基單源）；基地勞動轉入藝道的人生、『他的一切皆是藝』（琉球新報追悼文，記者個人評語，不收）；戰前戰後細節。事實庫另有 MusicBrainz 只有一筆作品（2007 精選），屬資料庫狀態，不入 facts。poolAlbums（美ら弾き、スピリチュアル ユニティ、登川誠仁独演会、スタンド！）皆為此人。"
  }
 ]
