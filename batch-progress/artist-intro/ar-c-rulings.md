@@ -24,3 +24,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 ### ar-c-003
 - g1 交件（QA 本組 0）。thin：John Lee & Gerry Brown。Jean-Luc Ponty 失敗請求 5 次超限，照收。衝突值不寫：João Gilberto 葛萊美座數、Johnny Dyani 生卒日、Johnny Hartman《麥迪遜之橋》收錄首數、Joe Williams 葛萊美年與專輯。稲垣次郎、ソウル・メディア 有兩源，可寫原文。pubIssues 0。
+- g2 交件（QA 本組 0）。thin：Kamaal Williams（失敗請求 5 次超限；出生地與母親背景單源不寫）、Kunihiko Sugano（貢獻、地位 none；生日兩說不寫）。King Oliver 生年與出生地不寫；Juju 遷居年單源只寫次序；Leo Parker 改寫「開路者之一」。pubIssues 1（Leo Parker《Let Me Tell You 'Bout It》「前六首」有管樂，摘要稱七首都有）→ 本機待核。w1（g1+g2）派出。
