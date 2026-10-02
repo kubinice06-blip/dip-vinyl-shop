@@ -289,5 +289,422 @@
     "status": "thin",
     "pubIssues": [],
     "notes": "補查 8 次（WebFetch 維基、classical-music.com ×2、十八世紀管弦樂團維基、WebSearch ×2、ABC Legends、Holtslag 維基）；失敗請求 3 次：Britannica 404、Gramophone 403、The Strad 405（不計）。搜尋摘要提及『哈佛 Erasmus 教授、柏克萊 Regent 教授』在 classical-music.com 讀到，維基未載，單源未收。legacy 格查不到兩源共識，全為單源，寫作層若用須具名：ABC Legends 稱他是『第一位專以直笛維生的音樂家』（單源，且屬『第一』類宣稱，不收）、Telefunken 將他當作古樂『招牌人物』（ABC 單源）、其樂團『改變了巴洛克與古典音樂如何以真實樂器演奏』（ABC 單源）；維基單源：他給直笛演奏帶入音色與節奏的彈性（彎音、音色變化、彈性速度），日後廣為流傳；2003 年荷蘭獅子勳章騎士、2010 年橙黃勳章榮譽獎章；Peter Holtslag 維基稱 Brüggen 是他的『great inspiration』（維基單源，且是一位直笛家的自述）；BBC Music Magazine 評論稱『Brüggen 對真實性的取徑本身已成歷史的一部分』（classical-music.com 單源）。海牙『21 歲』與『一位最年輕的音樂學者』兩源（維基＋classical-music.com，後者轉述的措辭與維基類似，可能非獨立）。事實庫 poolAlbums 為 Vivaldi 直笛協奏曲 op. 10（1979）與 Haydn 交響曲，確認為同一人，無同名混卡。"
+  },
+  {
+    "key": "fritz kreisler",
+    "name": "Fritz Kreisler",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fritz Kreisler 1875 年 2 月 2 日生於維也納，1962 年 1 月 29 日在紐約過世。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+            "src2": "https://www.britannica.com/biography/Fritz-Kreisler",
+            "from": "new"
+          },
+          {
+            "f": "他七歲進維也納音樂院，隨 Anton Bruckner 學理論；1885 至 1887 年在巴黎音樂院學習，12 歲拿到該院最高的 Premier Prix。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+            "src2": "https://www.ebsco.com/research-starters/biography/fritz-kreisler",
+            "from": "new"
+          },
+          {
+            "f": "他 1888 至 1889 年首度到美國巡演；之後回維也納，一度改學醫學與美術並服兵役，1899 年重回小提琴演奏。",
+            "src": "https://www.britannica.com/biography/Fritz-Kreisler",
+            "src2": "https://www.ebsco.com/research-starters/biography/fritz-kreisler",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的琴聲甜美、樂句富於表情，帶有明顯的滑音（portamento）與彈性速度，維基形容那帶著戰前維也納的悠閒氣質；Britannica 與 EBSCO 都提到他的密集、近乎持續的顫音。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+            "src2": "https://www.ebsco.com/research-starters/biography/fritz-kreisler",
+            "from": "new"
+          },
+          {
+            "f": "他寫了大量短小提琴曲，如〈Liebesleid〉〈Liebesfreud〉與〈Caprice Viennois〉，常排在音樂會曲目與安可。",
+            "src": "https://www.britannica.com/biography/Fritz-Kreisler",
+            "src2": "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1910 年他首演 Edward Elgar 的小提琴協奏曲，那是為他而寫並題獻給他的作品。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+            "src2": "https://www.britannica.com/biography/Fritz-Kreisler",
+            "from": "new"
+          },
+          {
+            "f": "他寫過一批託名 Pugnani、Tartini、Vivaldi 等舊時代作曲家的作品，1935 年公開承認那些其實是自己寫的；面對批評他回了一句「The name changes, the value remains」。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+            "src2": "https://www.britannica.com/biography/Fritz-Kreisler",
+            "from": "new"
+          },
+          {
+            "f": "EBSCO 稱他的作品是小提琴家的重要曲目，也是年輕小提琴手磨練技巧的教學曲。",
+            "src": "https://www.ebsco.com/research-starters/biography/fritz-kreisler",
+            "src2": "https://www.britannica.com/biography/Fritz-Kreisler",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1915 年之後主要住在美國，同時仍在歐洲各地巡演；1943 年入美國籍。",
+            "src": "https://www.britannica.com/biography/Fritz-Kreisler",
+            "src2": "https://www.ebsco.com/research-starters/biography/fritz-kreisler",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1910 年首演 Elgar 小提琴協奏曲。",
+        "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+        "src2": "https://www.britannica.com/biography/Fritz-Kreisler",
+        "from": "new"
+      },
+      {
+        "f": "1935 年公開承認舊時代作曲家名下的作品是自己所寫。",
+        "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+        "src2": "https://www.britannica.com/biography/Fritz-Kreisler",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "託名作品揭露年份：維基與 Britannica 寫 1935 年承認；EBSCO 寫 1910 年先承認〈Schön Rosmarin〉為自己所作、1905 年另有託名 Lanner 的三首，兩說有出入；facts 只寫兩源一致的『1935 年公開承認』。",
+      "1924 年回歐洲、住柏林、1938 年移法國（事實庫維基）與 Britannica『1915 年後主要住美國、仍巡演歐洲』敘述角度不同，不矛盾；事實庫的 1924／1938 年只有維基單源，facts 不重複，上線簡介已用，不動。"
+    ],
+    "searches": 5,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 5 次：維基、Britannica、WebSearch、EBSCO、Strings 雜誌頁（取得空白內容，仍計入）；The Strad 405 未取得（不計）。EBSCO 與 Britannica 的措辭有部分相近，若寫作層採用『重要曲目與教學曲』建議具名 EBSCO。未收（單源）：EBSCO 稱他父親是業餘小提琴手的醫生、他留下 18 世紀名琴的大型私人收藏；EBSCO『風格塑造二十世紀小提琴教學』與搜尋摘要『Heifetz 工作室只掛一張照片是 Kreisler』『Kreisler 是持續顫音的先驅』來源是論壇或未開頁，未收，且屬『第一』類宣稱不採；維基：貝多芬協奏曲裝飾奏是今日最常演奏的版本（事實庫維基單源）；與 Rachmaninoff 合作演出、1950 年最後錄音（維基單源）；1901 年與 Harriet Lies 結婚（維基單源，且屬履歷類，不收）。名人堂類不適用。Kreisler 生卒日期三源一致（維基、Britannica、EBSCO 年份）。poolAlbums 為 1920 年代 Victor／HMV 錄音與 1946 精選錄音，確認同一人。"
+  },
+  {
+    "key": "fritz wunderlich",
+    "name": "Fritz Wunderlich",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fritz Wunderlich 1930 年 9 月 26 日生於德國 Pfalz 地區的 Kusel，母親是小提琴手，父親也是音樂人。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Wunderlich",
+            "src2": "https://de.wikipedia.org/wiki/Fritz_Wunderlich",
+            "from": "new"
+          },
+          {
+            "f": "他 1950 年進弗萊堡音樂院，起初主修法國號，後來由聲樂教師 Margarethe von Winterfeldt 發現嗓音，改走歌唱。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Wunderlich",
+            "src2": "https://de.wikipedia.org/wiki/Fritz_Wunderlich",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他是德國抒情男高音，以莫札特角色與藝術歌曲見稱，後來把曲目擴及整個抒情男高音的範圍。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Wunderlich",
+            "src2": "https://www.abc.net.au/listen/programs/legends/legends/12269582",
+            "from": "new"
+          },
+          {
+            "f": "他與鋼琴家 Hubert Giesen 錄了舒伯特與舒曼的歌曲套曲；Giesen 後來也是他在獨唱會上的伴奏。",
+            "src": "https://en.wikipedia.org/wiki/Fritz_Wunderlich",
+            "src2": "https://www.abc.net.au/listen/programs/legends/legends/12269582",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "過世日：德文與英文維基寫 1966 年 9 月 17 日，ABC Legends 寫 9 月 5 日，兩說不一；facts 不寫日期，上線簡介與事實庫維基一致，採 9 月 17 日、只在寫作層需要時用。",
+      "父親職業：英文維基寫 choirmaster，德文維基寫大提琴手兼樂長（Kapellmeister），ABC 寫軍樂或舞曲樂隊領隊；facts 只寫『也是音樂人』。",
+      "聲樂教師譯名：ABC 寫 Maria von Winterweldt，維基寫 Margarethe von Winterfeldt，採維基。"
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "thin",
+    "pubIssues": [],
+    "notes": "補查 8 次：英文維基 ×2、德文維基、WebSearch ×2、klassikakzente（轉址後的 stage-plus 頁沒有評價內容）、ABC Legends、WQXR（頁面無內容）。legacy 格查不到兩源都實際開頁的共識，全為單源，寫作層若用須具名：德文維基稱他『或許是 20 世紀最偉大的抒情男高音』並記 Pavarotti 1990 年被問歷史上最傑出的男高音時答『Fritz Wunderlich』（德文維基單源；搜尋摘要另有一站稱同事，未開頁）；ABC Legends：指揮 Nigel Douglas 稱他是『同輩中最耀眼的才華』，Jonas Kaufmann 說自己研究他的歌曲現場錄音，女中音 Brigitte Fassbaender 與鋼琴家 Giesen 的回憶（皆單源）；英文維基首段只寫 famed for Mozart and Lieder，沒有『廣受推崇』措辭，搜尋摘要宣稱的『widely regarded』與 BBC Music Magazine 2008 年排名第四屬雜誌榜單名次，不收。德文維基單源未收：1954 年以 Tamino 登台、1955 年進斯圖加特歌劇院一夜成名、『strahlende klare Stimme』描述、1959 年起為薩爾茨堡常客（事實庫）。事實庫過世細節（顱骨骨折、10 月 8 日大都會首演）不再重複；死因細節不收。事實庫 poolAlbums 為《美麗磨坊少女》《詩人之戀》與薩爾茨堡獨唱會，確認為同一位男高音，無同名混卡。德文維基父親自殺一節不收。"
+  },
+  {
+    "key": "george szell",
+    "name": "George Szell",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "George Szell 1897 年 6 月 7 日生於布達佩斯，在維也納長大受訓，是個鋼琴神童。",
+            "src": "https://en.wikipedia.org/wiki/George_Szell",
+            "src2": "https://www.britannica.com/biography/George-Szell",
+            "from": "new"
+          },
+          {
+            "f": "1915 年他進柏林歌劇院任職，Richard Strauss 是他的提攜者。",
+            "src": "https://en.wikipedia.org/wiki/George_Szell",
+            "src2": "https://www.britannica.com/biography/George-Szell",
+            "from": "new"
+          },
+          {
+            "f": "他 1942 年在大都會歌劇院首次登台。",
+            "src": "https://en.wikipedia.org/wiki/George_Szell",
+            "src2": "https://www.britannica.com/biography/George-Szell",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Britannica 稱他以演出的清晰、平衡與強度聞名；維基稱他要求節奏紀律，樂團的精準與整體感通常只見於最好的弦樂四重奏。",
+            "src": "https://www.britannica.com/biography/George-Szell",
+            "src2": "https://en.wikipedia.org/wiki/George_Szell",
+            "from": "new"
+          },
+          {
+            "f": "他的曲目重心是從 Haydn 到 Strauss 的奧德古典與浪漫作品，也推動 Bartók、Hindemith 與 Prokofiev 等當代作曲家。",
+            "src": "https://en.wikipedia.org/wiki/George_Szell",
+            "src2": "https://www.britannica.com/biography/George-Szell",
+            "from": "new"
+          },
+          {
+            "f": "他以嚴厲的完美主義管理樂團，維基稱他是專制的監工（autocratic taskmaster），克里夫蘭歷史百科稱他是嚴厲到近乎專橫、卻深受同行敬重的人。",
+            "src": "https://en.wikipedia.org/wiki/George_Szell",
+            "src2": "https://case.edu/ech/articles/s/szell-george",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 1946 年起擔任 The Cleveland Orchestra 音樂總監，一路到 1970 年過世，前後 24 年。",
+            "src": "https://en.wikipedia.org/wiki/George_Szell",
+            "src2": "https://www.britannica.com/biography/George-Szell",
+            "from": "new"
+          },
+          {
+            "f": "Britannica 稱他把克里夫蘭樂團建成美國的頂尖樂團之一；克里夫蘭歷史百科稱他過世時，該團已躋身世界最好的樂團之列，並稱他與該團的錄音是同時代最好的交響樂錄音之一。",
+            "src": "https://www.britannica.com/biography/George-Szell",
+            "src2": "https://case.edu/ech/articles/s/szell-george",
+            "from": "new"
+          },
+          {
+            "f": "克里夫蘭樂團在他任內於 1957 年巡演歐洲；維基稱那是樂團首次歐洲巡演，並一路到鐵幕以東。",
+            "src": "https://en.wikipedia.org/wiki/Cleveland_Orchestra",
+            "src2": "https://case.edu/ech/articles/s/szell-george",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他與樂團董事會（Musical Arts Association）的合約給他對曲目、排程、人事與錄音的完整藝術掌控。",
+            "src": "https://en.wikipedia.org/wiki/Cleveland_Orchestra",
+            "src2": "https://en.wikipedia.org/wiki/George_Szell",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1946 年起領導 The Cleveland Orchestra 直到 1970 年。",
+        "src": "https://en.wikipedia.org/wiki/George_Szell",
+        "src2": "https://www.britannica.com/biography/George-Szell",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "蘇格蘭樂團任期：維基寫 1936–1939，Britannica 寫 1937–1939，兩說不一，facts 不寫。",
+      "少年首演：維基寫 11 歲倫敦登台、17 歲指揮初登場，Britannica 寫 16 歲在維也納交響樂團指揮首演，兩說不一，facts 不寫年齡。",
+      "事實庫與上線簡介寫『1930 至 1937 年布拉格德意志劇院首席指揮』：Britannica 兩次開頁都寫 1930–37，維基只寫曾任布拉格職位未載年份，仍屬單源；上線簡介保留，不列 pubIssues，但提醒主線該年份僅 Britannica 一源。"
+    ],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 5 次：維基、Britannica、Cleveland Orchestra 維基、克里夫蘭歷史百科（case.edu）、WebSearch。已撤掉『1946 年入美國籍』（Britannica 單源）與『1942–46 在大都會指揮』（Britannica 單源）；完整藝術掌控見 Cleveland Orchestra 維基與 Szell 維基，同站不同條目，非獨立。1957 年巡演：Cleveland 維基與克里夫蘭歷史百科（1957、1959）皆有，『首次歐洲巡演』僅維基單源，故 facts 寫成維基稱。『名字長期與克里夫蘭樂團同義』（維基單源）未收。未收（單源）：CBE 1963（維基）；1965 年蘇聯巡演、1967 年首支受邀同年到薩爾茲堡、琉森、愛丁堡三大音樂節的美國樂團（Cleveland 維基，且屬『第一』類）；Mannes College 任教 1940–45（維基）；『I cannot pour chocolate sauce over asparagus』（維基，直接引語，不收）；Welser-Möst 對紐約時報稱『Szell 執著於精準與平衡』（搜尋摘要，未開頁）。Cleveland 前樂團被形容為『respected if undersized』與『world's keenest symphonic instrument』（維基單源，評論家說法）未收。poolAlbums 為貝多芬第九、德弗札克，確認同一人。"
+  },
+  {
+    "key": "georges prêtre",
+    "name": "Georges Prêtre",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Georges Prêtre 1924 年生於法國北部，進了巴黎音樂院（Conservatoire de Paris）；2017 年過世，享年 92 歲。",
+            "src": "https://en.wikipedia.org/wiki/Georges_Pr%C3%AAtre",
+            "src2": "https://www.france24.com/en/20170105-obituary-renowned-french-conductor-georges-pretres-dies-92",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他長期推廣法國音樂，與作曲家 Francis Poulenc 關係密切，並指揮了 Poulenc 獨角歌劇《La voix humaine》的世界首演。",
+            "src": "https://en.wikipedia.org/wiki/Georges_Pr%C3%AAtre",
+            "src2": "https://slippedisc.com/2017/01/viennas-favourite-maestro-dies-aged-92/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他與女高音 Maria Callas 長期合作，維基記他們錄了《卡門》與《托斯卡》，法國 24 台稱他是 Callas 偏好的指揮。",
+            "src": "https://en.wikipedia.org/wiki/Georges_Pr%C3%AAtre",
+            "src2": "https://www.france24.com/en/20170105-obituary-renowned-french-conductor-georges-pretres-dies-92",
+            "from": "new"
+          },
+          {
+            "f": "他在維也納新年音樂會指揮過兩次，分別是 2008 與 2010 年。",
+            "src": "https://en.wikipedia.org/wiki/Georges_Pr%C3%AAtre",
+            "src2": "https://www.france24.com/en/20170105-obituary-renowned-french-conductor-georges-pretres-dies-92",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1986 至 1991 年他是維也納交響樂團（Wiener Symphoniker）的首席指揮。",
+            "src": "https://en.wikipedia.org/wiki/Georges_Pr%C3%AAtre",
+            "src2": "https://slippedisc.com/2017/01/viennas-favourite-maestro-dies-aged-92/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2008 與 2010 年兩度指揮維也納新年音樂會。",
+        "src": "https://en.wikipedia.org/wiki/Georges_Pr%C3%AAtre",
+        "src2": "https://www.france24.com/en/20170105-obituary-renowned-french-conductor-georges-pretres-dies-92",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "過世日：維基寫 2017 年 1 月 4 日，法國 24 台寫 1 月 5 日；facts 只寫 2017 年。",
+      "事實庫研究稿的 Massenet《Werther》錄音年、地點（Salle Wagram、1968 年 11 月與 1969 年 6 月）取自專輯層級來源，與本層新查無衝突；上線簡介寫 Prêtre 錄音是 1931 年之後首份全曲錄音，依 MusicWeb 樂評，未再查。"
+    ],
+    "searches": 4,
+    "failedFetches": 5,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 4 次：維基、WebSearch、法國 24 台訃聞、Slippedisc；失敗請求 5 次（Britannica 404、Presto 403、NPR 503、AllMusic 403、維基 La voix humaine 條目 404），超過 4 次上限 1 次，照實記；失敗請求不計入搜尋。未收（單源）：維基記 1959 年在 Opéra-Comique 首演《La voix humaine》、1955–1959 年任 Opéra-Comique 院長、1959–1971 年在芝加哥抒情歌劇院、1970–1971 年任巴黎歌劇院音樂總監、2004 年奧地利科學與藝術榮譽十字、2009 年法國榮譽軍團大軍官勳章；『在維也納新年音樂會是唯一被任命的法國指揮』維基單源且屬『唯一』類宣稱，不收；法國 24 台：父親是製鞋匠、7 歲半聽歌劇序曲決心當音樂家、柔道黑帶、巴黎歌劇院總監 Lissner 稱他『音樂界的巨人』、維也納愛樂稱他『親愛的榮譽成員』並合作 50 年（搜尋摘要另一站同樣記載，未開頁）；Slippedisc 的 Maxim Vengerov 稱他是『最偉大的人文指揮之一』（單源，文中亦有負面評語，評價分歧不收）；搜尋摘要稱他習慣不看譜指揮長篇交響曲，單源未開頁未收。Callas 兩次錄音：維基寫《卡門》與《托斯卡》，搜尋摘要寫兩次『地標式』錄音含《托斯卡》，錄音年未查。Prêtre 與維也納交響樂團的 1986–1991 兩源一致（維基、Slippedisc 文中）。poolAlbums 為 Poulenc《Gloria》、斯卡拉最後音樂會、Massenet《Werther》，確認為同一位法國指揮，無同名混卡。"
+  },
+  {
+    "key": "hilary hahn",
+    "name": "Hilary Hahn",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Hilary Hahn 1979 年 11 月 27 日生於美國維吉尼亞州 Lexington；她在快滿四歲時，於巴爾的摩 Peabody 學院開始以鈴木教學法學小提琴。",
+            "src": "https://en.wikipedia.org/wiki/Hilary_Hahn",
+            "src2": "https://www.britannica.com/biography/Hilary-Hahn",
+            "from": "new"
+          },
+          {
+            "f": "她 10 歲進費城的 Curtis 音樂學院，1999 年拿到學士學位。",
+            "src": "https://en.wikipedia.org/wiki/Hilary_Hahn",
+            "src2": "https://www.britannica.com/biography/Hilary-Hahn",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bach 是她的根基：維基記她 1999 年說自己從八歲起每天拉 Bach 獨奏曲；Britannica 記她從 1997 年的第一張專輯起，到 2018 年完成了 Bach 獨奏作品的錄音系列。",
+            "src": "https://en.wikipedia.org/wiki/Hilary_Hahn",
+            "src2": "https://www.britannica.com/biography/Hilary-Hahn",
+            "from": "new"
+          },
+          {
+            "f": "2012 年她與鋼琴家 Hauschka 合作《Silfra》，錄於冰島雷克雅維克的 Greenhouse Studios；專輯名稱取自冰島歐亞與北美板塊之間的 Silfra 裂縫。",
+            "src": "https://www.cmuse.org/hilary-hahn-hauschka-the-sacred-geography-of-silfra/",
+            "src2": "https://en.wikipedia.org/wiki/Hilary_Hahn",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2011 年她啟動《In 27 Pieces》委託計畫：邀 26 位作曲家為她寫安可小品，第 27 位由線上徵選產生；她與鋼琴家 Cory Smythe 錄成專輯，2013 年發行。",
+            "src": "https://chicagosymphony.org/inside-the-music/article/7900/a-penchant-for-new-music-affirmed-in-27-piece",
+            "src2": "https://en.wikipedia.org/wiki/Hilary_Hahn",
+            "from": "new"
+          },
+          {
+            "f": "這個計畫之後，她又委託西班牙作曲家 Antón García Abril 為她寫六首複音的無伴奏小提琴帕蒂塔。",
+            "src": "https://chicagosymphony.org/inside-the-music/article/7900/a-penchant-for-new-music-affirmed-in-27-piece",
+            "src2": "https://en.wikipedia.org/wiki/Hilary_Hahn",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2011 年啟動《In 27 Pieces》委託計畫。",
+        "src": "https://chicagosymphony.org/inside-the-music/article/7900/a-penchant-for-new-music-affirmed-in-27-piece",
+        "src2": "https://en.wikipedia.org/wiki/Hilary_Hahn",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "搜尋摘要一度寫《Silfra》得 2015 年葛萊美；維基與 Chicago Symphony 都指出得獎的是《In 27 Pieces》，採後者，且在世者獎座數不寫，facts 不收葛萊美。",
+      "事實庫對本位無研究稿與上線簡介，無衝突。"
+    ],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 6 次：維基、Britannica、WebSearch、cmuse（Silfra）、Chicago Symphony（先轉址後取得內容）。Hahn 在世，銷量、獎座數、串流不寫。未收（單源）：維基記她在 Baltimore 長大、師從 Klara Berkovich（1985–1990）與 Jascha Brodsky（Curtis 七年）、2024 年 Avery Fisher Prize、Classical FM 2022 年『25 位最偉大小提琴家』榜（媒體榜單名次不收）、使用 Vuillaume 製琴；Britannica：11 歲與費城室內樂團合作、1995 年與巴伐利亞廣播交響樂團的首演經歐洲電視與廣播轉播、16 歲與 Sony Classical 簽約、2003 年轉 Deutsche Grammophon（履歷類，不收）；Britannica 稱她是『同代最好的獨奏小提琴家之一』，維基只寫與各大樂團合作，評價單源，寫作層若用須具名；《Silfra》是完全即興的專輯（維基單源，cmuse 文中未明言），寫作層只能寫『維基稱』。cmuse 稱專輯裡她用微不協和的音像在『預置小提琴』上演奏（單篇樂評式說法，不收）。《6 Partitas》（2019）年份與《Ysaÿe》六首奏鳴曲（2023）只見維基單源，年份不寫。poolAlbums 為《Silfra》《6 Partitas》《Ysaÿe》，確認為同一位小提琴家，無同名混卡。"
   }
 ]

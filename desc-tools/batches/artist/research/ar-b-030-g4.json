@@ -463,5 +463,476 @@
   "failedFetches": 0,
   "status": "thin",
   "notes": "同名檢查：poolAlbums 四張（NEON GENESIS EVANGELION 一至二、THE END OF EVANGELION、Music from EVANGELION:1.0）都是作曲家鷺巣詩郎（Shiro Sagisu），無混卡；日本人名照原文漢字。事實庫只有 Apple 目錄筆數那一條，四則上線簡介都是專輯層級。成功請求 8 次：日文維基、英文維基、WebSearch（日本アカデミー賞與獎項）、日本アカデミー賞官方第 40 回頁、eiga.com 第 40 回報導、WebSearch（家族與 P Production）、Universal Music Japan 官方 BIOGRAPHY、PRESIDENT Online 專訪；無失敗請求。origin 第二源用的 Universal 頁只寫『1957 年東京』，世田谷出自日文與英文維基。非獨立：Universal Music Japan 頁是廠牌官方介紹。legacy 第二條：PRESIDENT 專訪是『稱他是日本代表性作編曲家』的單篇媒體用語，第二源日文維基只支持與庵野長期合作，不支持『代表』一語，寫作層請具名『PRESIDENT Online 稱』，或只寫庵野合作關係。legacy 格偏弱，沒有名人堂或權威票選層級的共識，標 thin；era 格無料標 none（Evangelion 年份已併入 sound）。單源或未收：（1）日本アカデミー賞官方第 40 回頁列鷺巣詩郎以《シン・ゴジラ》為優秀音楽賞五名受獎者之一（官方單源；eiga.com 報導確認同屆最優秀音楽賞是 RADWIMPS《君の名は。》，未提及鷺巣，所以不是兩源，主詞是『優秀賞』，不是最優秀）；（2）英文維基稱 2010 年以《Evangelion: 2.0 You Can (Not) Advance》獲 Tokyo Anime Award 最佳音樂（單源，搜尋未找到第二源）；（3）搜尋摘要稱《シン・ゴジラ》音樂獲第 58 回日本唱片大賞特別賞、《シン・ゴジラ音樂集》是哥吉拉相關專輯銷量最高（僅搜尋摘要，未開頁，不收）；（4）日文維基稱《シン・ゴジラ》與伊福部昭共同掛名、為 Hideo Yashio 與 Ikuko Kawai 等古典跨界歌手製作、為《笑っていいとも！》寫過主題曲（日文維基單源）；（5）PRESIDENT 專訪與搜尋摘要稱他的世田谷老家附設特攝片廠與作畫片廠、童年坐在父親腿上畫畫、受父親精密『匹配畫』（マット画）影響（PRESIDENT 單源）；（6）英文維基稱 1997 年已寫過兩千多首作品（含廣告配樂）（單源）；（7）2004 年父親過世後接掌 P Production（Universal 說他接任代表董事，日文維基與搜尋摘要稱 2004 年；年份未兩源確認，只寫『後來接任』）。"
+ },
+ {
+  "key": "adrian boult",
+  "name": "Adrian Boult",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Adrian Boult 1889 年 4 月 8 日生於英格蘭的 Chester，1983 年過世，享年 93 歲。",
+      "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "src2": "https://www.britannica.com/biography/Adrian-Cedric-Boult",
+      "from": "new"
+     },
+     {
+      "f": "他先在牛津大學 Christ Church 讀書，之後到萊比錫音樂院，師從匈牙利指揮家 Arthur Nikisch。",
+      "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "src2": "https://www.britannica.com/biography/Adrian-Cedric-Boult",
+      "from": "new"
+     },
+     {
+      "f": "他 1919 至 1930 年、1962 至 1966 年在皇家音樂學院（Royal College of Music）教指揮。",
+      "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/sir-adrian-boult",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他承襲 Nikisch 的簡省指揮法，動作節制、少用左手，講究樂團的平衡與清晰。",
+      "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "src2": "https://www.britannica.com/biography/Adrian-Cedric-Boult",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1930 年 BBC 任命他為音樂總監，他創建 BBC 交響樂團並擔任首席指揮約二十年，把它帶成國際一流的樂團。",
+      "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "src2": "https://www.britannica.com/biography/Adrian-Cedric-Boult",
+      "from": "new"
+     },
+     {
+      "f": "1918 年 9 月 29 日 Holst 的《行星組曲》（The Planets）在倫敦 Queen's Hall 首度演出，指揮是 Boult，由 Holst 親自點名；Holst 在他的總譜上題字，感謝他讓這部作品第一次向公眾發光。",
+      "src": "https://en.wikipedia.org/wiki/The_Planets",
+      "src2": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "from": "new"
+     },
+     {
+      "f": "他在 1918 至 1919 年憑 Elgar、Vaughan Williams 與 Holst 的作品演出而受到注目，三人後來都成為他的好友；演出英國作曲家的作品成為他一生的重心，卻不是唯一曲目。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/sir-adrian-boult",
+      "src2": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "from": "new"
+     },
+     {
+      "f": "1937 年受封爵士，1969 年獲頒榮譽勳位（Companion of Honour）。",
+      "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/sir-adrian-boult",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1950 年屆齡離開 BBC 交響樂團，之後出任倫敦愛樂首席指揮，到 1957 年。",
+      "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+      "src2": "https://www.britannica.com/biography/Adrian-Cedric-Boult",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1918 年指揮 Holst《行星組曲》的首演。",
+    "src": "https://en.wikipedia.org/wiki/The_Planets",
+    "src2": "https://en.wikipedia.org/wiki/Adrian_Boult",
+    "from": "new"
+   },
+   {
+    "f": "1930 年創建 BBC 交響樂團並任首席指揮。",
+    "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+    "src2": "https://www.britannica.com/biography/Adrian-Cedric-Boult",
+    "from": "new"
+   },
+   {
+    "f": "1937 年受封爵士。",
+    "src": "https://en.wikipedia.org/wiki/Adrian_Boult",
+    "src2": "https://www.britannica.com/biography/Adrian-Cedric-Boult",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "死亡日期與地點：維基寫 1983 年 2 月 22 日在倫敦、Britannica 寫 2 月 23 日在肯特、encyclopedia.com 寫 Hampstead；facts 只寫 1983 年。",
+   "倫敦愛樂任期起年：維基與 Britannica 寫 1950 年起、encyclopedia.com 寫 1951 年；BBC 交響樂團首席指揮任期 encyclopedia.com 寫 1931–50；facts 只寫 1950 年離開 BBC 交響樂團與 1957 年任期結束，不寫倫敦愛樂的起年。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：poolAlbums 三張（Elgar《Enigma Variations》1962、Holst《The Planets》1979、Vaughan Williams《A London Symphony》1971）都是指揮家 Adrian Boult，無混卡。成功請求 5 次：維基 Adrian Boult、WebSearch（訃聞與地位）、Britannica（Adrian-Cedric-Boult 網址）、維基 The Planets、encyclopedia.com；失敗 1 次：Britannica Adrian-Boult 網址 404。非獨立：legacy 第 2 條兩源都是維基不同條目；encyclopedia.com 條目文字與傳統辭典（Grove 類）簡略詞條相近，與維基的簡略說法是否獨立無法確認。單源或未收：（1）維基稱出身利物浦航運商家，父親 Cedric Randal Boult 是治安法官（單源）；（2）維基稱 1908–12 年讀 Christ Church、1912–13 年在萊比錫（Britannica 只寫順序，沒有年份，年份不收）；（3）維基稱他『the least sensational but not the least remarkable』、『a rare probity』，並指導 Colin Davis、Vernon Handley、James Loughran（維基單源，評語是引述個人）；（4）維基稱他的 Vaughan Williams 九首交響曲錄音是『定本詮釋』（單源）；（5）encyclopedia.com 稱他首演 Vaughan Williams《田園交響曲》（1922）、第四（1935）與第六（1948）交響曲、1979 年退休、自傳《My Own Trumpet》（1973）（單源，維基節錄僅說 1922 年《田園》，搜尋摘要也有但未開頁）；（6）維基稱他 1944 年獲皇家愛樂協會金牌、13 所大學榮譽學位、伯明罕皇家音樂學院有 Adrian Boult Hall、最後錄音是 Parry 的作品（1978 年 12 月）（單源）；（7）退休年份：搜尋摘要稱 1981 年正式停止指揮，encyclopedia.com 稱 1979 年退休，兩源不一致，不收；（8）《行星組曲》維基條目只提到 Boult 1945 年的錄音，沒有 1978 年那一版的資料，卡池《行星》的 1979 年年份本層無法驗證。"
+ },
+ {
+  "key": "amadeus quartet",
+  "name": "Amadeus Quartet",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Amadeus Quartet 的三位成員 Norbert Brainin、Siegmund Nissel 與 Peter Schidlof 都是維也納出生的猶太人，1938 年德奧合併後被迫離開奧地利，逃到英國。",
+      "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet",
+      "src2": "https://en.wikipedia.org/wiki/Norbert_Brainin",
+      "from": "new"
+     },
+     {
+      "f": "Brainin 與 Schidlof 是在英國的拘留營裡認識；獲釋後三人師從小提琴教師 Max Rostal，由 Rostal 介紹認識英國大提琴家 Martin Lovett，湊齊四重奏。",
+      "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet",
+      "src2": "https://www.britannica.com/topic/Amadeus-Quartet",
+      "from": "new"
+     },
+     {
+      "f": "四人 1947 年先以 Brainin Quartet 之名成團，1948 年改名 Amadeus Quartet。",
+      "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet",
+      "src2": "https://en.wikipedia.org/wiki/Norbert_Brainin",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們以流暢、洗練的風格與渾然一體的合奏著稱，錄音約兩百首作品，包括貝多芬、布拉姆斯與莫札特的弦樂四重奏全集。",
+      "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet",
+      "src2": "https://www.britannica.com/topic/Amadeus-Quartet",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Britannica 稱他們是歐洲最持久、最受推崇的弦樂四重奏之一；英國皇家音樂學院（RCM）的介紹稱他們是二十世紀最重要的弦樂四重奏之一。",
+      "src": "https://www.britannica.com/topic/Amadeus-Quartet",
+      "src2": "https://www.rcm.ac.uk/singingasong/featuredmusicianscategory1/amadeusquartet/",
+      "from": "new"
+     },
+     {
+      "f": "樂團成員獲頒英帝國勳章（OBE）與奧地利科學與藝術榮譽勳章等多項榮譽。",
+      "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet",
+      "src2": "https://en.wikipedia.org/wiki/Norbert_Brainin",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1947 年成團到 1987 年解散的四十年間，四位成員一個都沒換過；1987 年 Schidlof 過世後，其餘三人不找人遞補，選擇解散。",
+      "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet",
+      "src2": "https://en.wikipedia.org/wiki/Norbert_Brainin",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1948 年改名 Amadeus Quartet。",
+    "src": "https://en.wikipedia.org/wiki/Amadeus_Quartet",
+    "src2": "https://en.wikipedia.org/wiki/Norbert_Brainin",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Lovett 加入與成團年份：Britannica 寫 Lovett 1946 年加入、1948 年成立、1947 年拘留營相識，維基寫 1947 年成立為 Brainin Quartet、1948 年改名；兩源不一致，facts 只採維基與 Brainin 維基一致的『1947 年 Brainin Quartet、1948 年改名』，不寫 Lovett 加入年與拘留營年份。",
+   "上線簡介寫『1947 年四人約定，只要有一個離團或過世就不遞補、整團解散』；維基 Amadeus Quartet 條目同寫，Brainin 條目只寫『認為 Schidlof 無可取代』，約定一節只有單源，本層 facts 只寫結果（沒有遞補、解散），不寫『成團時就約定』。",
+   "事實庫的舊稿寫 Schidlof 死因與日期（1987 年 8 月 16 日）；死因不收，facts 只寫年份。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 三張（Haydn op. 76、Schubert 弦樂五重奏、Haydn op. 71/74/77/103）都是英國 Amadeus Quartet，無混卡。成功請求 5 次：維基 Amadeus Quartet、Britannica、WebSearch（Brainin 訃聞與 Rostal）、RCM 專頁、維基 Norbert Brainin；無失敗請求。非獨立：legacy 第一條 Britannica『最持久、最受推崇』與維基『流暢洗練』用語幾乎相同，兩者可能同出一個典故，sound 條的兩源即為此，請視為『非獨立』；RCM 與 Brainin 維基稱『二十世紀最重要／最著名的四重奏之一』各自措辭不同。單源或未收：（1）維基稱 1948 年 1 月 10 日在倫敦 Wigmore Hall 首演（搜尋摘要另有『1948 年 1 月 10 日倫敦首次以 Amadeus 之名演出』，但未開頁；milestone 只寫 1948 年改名，Wigmore Hall 與日期不寫）；（2）Britannica 稱 Myra Hess 與 Vaughan Williams 協助他們獲釋（單源）、也錄製 Bartók 與 Britten 等二十世紀作品（單源）；（3）Brainin 維基稱 OBE 為 1960 年、奧地利科學與藝術榮譽十字勳章為 1974 年、德國聯邦十字勳章大十字（Grand Cross of Merit），並有多所大學榮譽博士（年份單源）；（4）Brainin 2005 年 4 月過世、獨奏活動至過世前（Brainin 個人，不屬團體，不收）；（5）維基稱樂團曾在歐、北美、亞洲巡演（泛述）。上線簡介寫的 Discogs 錄音年份與地點（op. 77 漢諾威 1964/65、op. 103 1973 等）本層沒有驗證。"
+ },
+ {
+  "key": "andrew lloyd webber",
+  "name": "Andrew Lloyd Webber",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Andrew Lloyd Webber 1948 年 3 月 22 日生於倫敦。",
+      "src": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+      "src2": "https://achievement.org/achiever/andrew-lloyd-webber/",
+      "from": "new"
+     },
+     {
+      "f": "他出身音樂家庭：父親 William Lloyd Webber 是作曲家兼管風琴手，弟弟 Julian 是大提琴家。",
+      "src": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+      "src2": "https://achievement.org/achiever/andrew-lloyd-webber/",
+      "from": "new"
+     },
+     {
+      "f": "他少年時迷上 1960 年代的搖滾與流行樂，是把這些聲音帶進古典家庭的人；1965 年他與詞作者 Tim Rice 相識，之後離開牛津的歷史學業，走向音樂劇。",
+      "src": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+      "src2": "https://achievement.org/achiever/andrew-lloyd-webber/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1970 年的《Jesus Christ Superstar》是他與 Tim Rice 的成名作，是一部沒有說白、通篇歌唱的搖滾歌劇。",
+      "src": "https://achievement.org/achiever/andrew-lloyd-webber/",
+      "src2": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的《Cats》（1981 年）曾是倫敦西區上演最久的音樂劇，《The Phantom of the Opera》（1986 年）則成為 Broadway 上演最久的音樂劇，2023 年下檔。",
+      "src": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+      "src2": "https://achievement.org/achiever/andrew-lloyd-webber/",
+      "from": "new"
+     },
+     {
+      "f": "他 1992 年受封爵士，2006 年獲頒甘迺迪中心榮譽（Kennedy Center Honors）。",
+      "src": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+      "src2": "https://achievement.org/achiever/andrew-lloyd-webber/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "主要作品依序是 1970 年《Jesus Christ Superstar》、1981 年《Cats》與 1986 年《The Phantom of the Opera》。",
+      "src": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+      "src2": "https://achievement.org/achiever/andrew-lloyd-webber/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1992 年受封爵士。",
+    "src": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+    "src2": "https://achievement.org/achiever/andrew-lloyd-webber/",
+    "from": "new"
+   },
+   {
+    "f": "2006 年獲頒甘迺迪中心榮譽。",
+    "src": "https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber",
+    "src2": "https://achievement.org/achiever/andrew-lloyd-webber/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "出生地：維基寫倫敦，achievement.org 與搜尋摘要寫 Kensington；facts 只寫倫敦。",
+   "牛津與皇家音樂學院：維基寫『短暫讀牛津歷史後進皇家音樂學院』；achievement.org 寫他拒絕了 Magdalen College 的歷史獎學金（demyship）、只讀一學期；兩源說法不完全一致，facts 只寫『離開牛津的歷史學業』，不寫學校名與皇家音樂學院。",
+   "母親：維基寫小提琴家兼鋼琴家，achievement.org 寫鋼琴教師；facts 不寫母親職業。"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫 research 為空，三則上線簡介是專輯層級，從零查。同名檢查：poolAlbums 三張（Jesus Christ Superstar 1970、The Phantom of the Opera 1986、Cats 1981）都是作曲家 Andrew Lloyd Webber，無混卡。成功請求 3 次：維基、WebSearch（傳記與甘迺迪中心）、American Academy of Achievement 專頁；失敗 2 次：Britannica 404、Kennedy Center 官網 403。在世者規則：不收銷量、場次、座數；Phantom 與 Cats 只寫『上演最久』的排名層級，不寫場次與年數。非獨立：achievement.org 是 Academy of Achievement 的自述專頁，內容與維基有重疊但獨立撰寫。單源或未收：（1）維基稱 1997 年受封終身貴族、2018 年以 Emmy 達成 EGOT、2024 年獲嘉德勳章（單源）；（2）維基引《紐約時報》2001 年稱他『史上商業上最成功的作曲家』（屬銷量／商業性質，在世者不收）；（3）achievement.org 稱他六座東尼獎、三座葛萊美、一座奧斯卡、14 座 Ivor Novello（獎座數，在世者不寫）；（4）維基稱他六歲開始作曲、與 Rice 的合作被比作 Gilbert 與 Sullivan（單源，且為比喻）；（5）搜尋摘要稱七座東尼、七座 Olivier 等（不收）；（6）上線簡介的 Judi Dench 退出《Cats》、Brightman 與婚姻、Deep Purple 的 Ian Gillan 唱耶穌等細節本層未驗證，也無衝突證據；achievement.org 稱 Cats 在西區 21 年與上線簡介一致。legacy 兩條都是作品與官方榮譽層級，沒有『後輩點名受他影響』的來源，標 full 僅因三格都有兩源料，實質上偏弱，寫作層請以作品與榮譽為主，不要寫影響力評價。"
+ },
+ {
+  "key": "arthur grumiaux",
+  "name": "Arthur Grumiaux",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Arthur Grumiaux 1921 年 3 月 21 日生於比利時的 Villers-Perwin，1986 年 10 月 16 日在布魯塞爾過世，享年 65 歲。",
+      "src": "https://www.britannica.com/biography/Arthur-Grumiaux-Baron",
+      "src2": "https://en.wikipedia.org/wiki/Arthur_Grumiaux",
+      "from": "new"
+     },
+     {
+      "f": "他很小就開始學琴，先進夏勒羅瓦（Charleroi）的音樂院學小提琴與鋼琴，十一歲轉到布魯塞爾的皇家音樂院專攻小提琴，後來又到巴黎隨 George Enescu 學習。",
+      "src": "https://en.wikipedia.org/wiki/Arthur_Grumiaux",
+      "src2": "https://queenelisabethcompetition.be/en/laureates/arthur-grumiaux/96/",
+      "from": "new"
+     },
+     {
+      "f": "1939 年他拿下 Vieuxtemps 獎，1940 年獲比利時政府的 Prix de Virtuosité；1940 年在布魯塞爾登台，隨後因德軍占領比利時，演出中斷，1945 年復出並在倫敦首演。",
+      "src": "https://www.britannica.com/biography/Arthur-Grumiaux-Baron",
+      "src2": "https://en.wikipedia.org/wiki/Arthur_Grumiaux",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的演奏結合精緻的優雅與純熟的技巧；Queen Elisabeth Competition 的介紹說他以技巧精準、忠於樂譜與細膩的音樂感受著稱。",
+      "src": "https://www.britannica.com/biography/Arthur-Grumiaux-Baron",
+      "src2": "https://queenelisabethcompetition.be/en/laureates/arthur-grumiaux/96/",
+      "from": "new"
+     },
+     {
+      "f": "他在 Philips 錄了大量唱片，其中最受推崇的有 J.S. Bach 的無伴奏小提琴作品，以及與鋼琴家 Clara Haskil 合作的貝多芬與莫札特奏鳴曲。",
+      "src": "https://www.britannica.com/biography/Arthur-Grumiaux-Baron",
+      "src2": "https://queenelisabethcompetition.be/en/laureates/arthur-grumiaux/96/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1973 年比利時國王 Baudouin 授予他男爵頭銜。",
+      "src": "https://www.britannica.com/biography/Arthur-Grumiaux-Baron",
+      "src2": "https://queenelisabethcompetition.be/en/laureates/arthur-grumiaux/96/",
+      "from": "new"
+     },
+     {
+      "f": "1977 年美國航海家金唱片收入他演奏的 Bach 無伴奏小提琴組曲第三號（BWV 1006）〈Gavotte en rondeau〉，錄音是 1960 年 11 月。",
+      "src": "https://en.wikipedia.org/wiki/Contents_of_the_Voyager_Golden_Record",
+      "src2": "https://en.wikipedia.org/wiki/Arthur_Grumiaux",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1949 年起他在布魯塞爾音樂院任小提琴教授。",
+      "src": "https://en.wikipedia.org/wiki/Arthur_Grumiaux",
+      "src2": "https://www.britannica.com/biography/Arthur-Grumiaux-Baron",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1973 年獲比利時國王授予男爵頭銜。",
+    "src": "https://www.britannica.com/biography/Arthur-Grumiaux-Baron",
+    "src2": "https://queenelisabethcompetition.be/en/laureates/arthur-grumiaux/96/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "開始學琴的年紀：維基寫祖父三歲時鼓勵他學音樂、六歲進夏勒羅瓦音樂院；Queen Elisabeth Competition 寫四歲開始學小提琴、十一歲前拿到首獎；兩源不一致，facts 只寫『很小就開始』，不寫具體年紀。",
+   "Voyager 金唱片：維基 Grumiaux 條目與 Contents 條目一致寫他的 Bach 錄音入選；錄音年份與地點取自 Contents 條目（1960 年 11 月，柏林）；facts 只寫 1960 年 11 月，不寫地點。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：poolAlbums 三張（Bach 無伴奏奏鳴曲與組曲 1961、Bach 小提琴協奏曲 1978、Mozart 小提琴協奏曲第三與第五號 1962）都是比利時小提琴家 Arthur Grumiaux，無混卡。成功請求 5 次：維基 Arthur Grumiaux、WebSearch（生平與地位）、Britannica Arthur-Grumiaux-Baron、維基 Contents of the Voyager Golden Record、Queen Elisabeth Competition 專頁；失敗 2 次：Britannica 舊網址 404、The Strad 405。非獨立：Voyager 一條兩源都是維基不同條目；origin 第三條 Britannica 與 QEC 都有 1939 與 1940 獎項，維基只在 1940 年登台與 1945 年復出重疊，已取最保守一併寫。單源或未收：（1）QEC 與搜尋摘要稱他是『one of the few truly great violin virtuosi of the twentieth century』（QEC 單源頁面實際讀到；搜尋摘要來源未開頁）；（2）維基稱 Edward Greenfield 評他『大師級的技巧而不炫技』、評論家稱他音色美、音準無瑕（引述個人評語，單源）；（3）維基稱出身工人階級、祖父三歲時鼓勵學音樂（單源）；（4）搜尋摘要稱師事 Alfred Dubois（Ysaÿe 弟子），1949 年接任他的教席（未開頁，不收）；（5）搜尋摘要稱 1940 年成為首位獲 Prix de Virtuosité 者（『第一位』類，未開頁，不收）；（6）QEC 稱 Haskil 在趕赴與他的演出途中於車站意外過世，並稱 Grumiaux 與 Paganini 同樣獲 baron 頭銜（單源，Haskil 死因細節不收）；（7）Grumiaux Trio 與 Georges Janzer、Eva Czako（QEC 單源）、1951 年波士頓首演（維基單源）；（8）Grumiaux 的 Philips 錄音約 20 多年（搜尋摘要，未開頁）。legacy 格只有官方榮譽與 Voyager 兩條，沒有後輩點名或權威票選，標 thin。"
+ },
+ {
+  "key": "artur schnabel",
+  "name": "Artur Schnabel",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Artur Schnabel 1882 年生於奧地利帝國的 Lipnik（今屬波蘭），1951 年在瑞士過世。",
+      "src": "https://en.wikipedia.org/wiki/Artur_Schnabel",
+      "src2": "https://www.britannica.com/biography/Artur-Schnabel",
+      "from": "new"
+     },
+     {
+      "f": "他少年時在維也納師從名教師 Theodor Leschetizky。",
+      "src": "https://en.wikipedia.org/wiki/Artur_Schnabel",
+      "src2": "https://www.britannica.com/biography/Artur-Schnabel",
+      "from": "new"
+     },
+     {
+      "f": "他 1925 年起在柏林國立音樂院任教，猶太出身的他在 1933 年離開德國，1939 年起定居美國，戰後回到歐洲。",
+      "src": "https://en.wikipedia.org/wiki/Artur_Schnabel",
+      "src2": "https://www.britannica.com/biography/Artur-Schnabel",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把重心放在貝多芬、舒伯特與布拉姆斯，尤其長期演奏舒伯特的鋼琴奏鳴曲；彈奏講究知性的深度，不靠技術炫耀。",
+      "src": "https://en.wikipedia.org/wiki/Artur_Schnabel",
+      "src2": "https://www.britannica.com/biography/Artur-Schnabel",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1932 至 1935 年為 HMV 錄下貝多芬的鋼琴奏鳴曲全集，被認為是史上第一套貝多芬鋼琴奏鳴曲完整錄音。",
+      "src": "https://en.wikipedia.org/wiki/Artur_Schnabel",
+      "src2": "https://www.wvtf.org/2018-03-21/the-pianist-who-first-climbed-beethovens-mount-everest",
+      "from": "new"
+     },
+     {
+      "f": "這套《貝多芬鋼琴奏鳴曲全集》（1932–35）入選美國國會圖書館的國家錄音登錄（National Recording Registry），名單 2018 年 3 月公布。",
+      "src": "https://blogs.loc.gov/loc/2018/03/national-recording-registry-reaches-500/",
+      "src2": "https://www.wvtf.org/2018-03-21/the-pianist-who-first-climbed-beethovens-mount-everest",
+      "from": "new"
+     },
+     {
+      "f": "他 1927 年起在柏林公開演奏全部 32 首貝多芬鋼琴奏鳴曲；今天演奏整套奏鳴曲常被比作攀登聖母峰，WVTF 稱他是最先登頂的人。",
+      "src": "https://www.britannica.com/biography/Artur-Schnabel",
+      "src2": "https://www.wvtf.org/2018-03-21/the-pianist-who-first-climbed-beethovens-mount-everest",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1925 年到 1933 年，他在柏林國立音樂院教學，是當時重要的鋼琴教師。",
+      "src": "https://en.wikipedia.org/wiki/Artur_Schnabel",
+      "src2": "https://www.britannica.com/biography/Artur-Schnabel",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1932 至 1935 年錄下貝多芬鋼琴奏鳴曲全集（HMV）。",
+    "src": "https://en.wikipedia.org/wiki/Artur_Schnabel",
+    "src2": "https://www.wvtf.org/2018-03-21/the-pianist-who-first-climbed-beethovens-mount-everest",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "定居柏林的年份：維基寫 1898 年、Britannica 寫 1900 年；兩源不一致，facts 不寫。",
+   "在柏林演奏貝多芬奏鳴曲全套的時間：Britannica 寫 1927 年與 1932–34 年，wvtf 寫 1927、1933 年（另有卡內基音樂廳 1936 年）；facts 只採兩源一致的『1927 年起』。",
+   "『第一套完整錄音』：維基、wvtf、搜尋摘要都寫第一；Schnabel 的 HMV 套組是 Beethoven Sonata Society 分批發行的，沒有查到更早的完整套組，未發現反例；但這類『第一』宣稱已降級為『被認為』，寫作層請保留此語氣。",
+   "事實庫與上線簡介寫第一到第三號協奏曲是 Sargent 指揮兩個倫敦樂團、1932–1935 年錄成，維基同；本層沒有發現衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 三張（貝多芬奏鳴曲全集 1932–35、舒伯特錄音全集 1932、貝多芬鋼琴協奏曲集 1993）都是鋼琴家 Artur Schnabel，無混卡。成功請求 5 次：維基 Artur Schnabel、Britannica、WebSearch（國會圖書館與第一套全集）、LoC 部落格、WVTF 專文；無失敗請求。非獨立：wvtf 專文是 2018 年 3 月 NPR 系統電台對國家錄音登錄的報導，與 LoC 公告同期；LoC 部落格只列『The Complete Beethoven Piano Sonatas (album), Artur Schnabel (1932–35)』，沒有『第一套』說明，第一套的說法靠維基與 wvtf。LoC 部落格列在 2017 年度入選名單、3 月 2018 年公布；維基稱 2018 年入選，facts 只寫『名單 2018 年 3 月公布』避開年度歧義。單源或未收：（1）維基稱 Schnabel 被稱為『the man who invented Beethoven』，wvtf 說這是 Harold Schonberg 一章的標題（個別樂評人的形容，單源評價，不收；寫作層若要用請標明是 Schonberg 的章名）；（2）wvtf 稱其師 Leschetizky 師事 Czerny、Czerny 師事 Beethoven（單源）；（3）維基稱他 1905 年與女低音 Therese Behr 結婚、兒子 Karl Ulrich Schnabel 也是鋼琴家與教師（事實庫與上線簡介亦有 Behr-Schnabel 與 Karl Ulrich，但婚年單源）；（4）Britannica 稱他『a legend in his own time』、演奏成為後世鋼琴家的典範、受 Schoenberg 影響卻從不公開演奏現代作品（單源）；（5）維基稱『愛好是不是帳單的收據』名言（引述個人話語，不收）；（6）維基稱 1936 年在卡內基音樂廳演出全套（wvtf 同，兩源，但 wvtf 稱 1927、1933 與 Britannica 說法不一，不收年份）。維基稱他不加演安可、不彈炫技小品、專注『比演奏更高明的音樂』（維基單源，已自 facts 撤下，不收）；維基稱他長期推廣被冷落的舒伯特奏鳴曲（『被冷落』僅維基，facts 只寫長期演奏舒伯特）。"
  }
 ]
