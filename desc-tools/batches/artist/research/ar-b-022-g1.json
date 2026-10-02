@@ -257,5 +257,298 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "本位用掉 8 次（WebFetch 7：ja 維基、en 維基、Oricon 葬禮報導、Asagei 債務報導、Billboard Japan 葬禮報導、Daily Sports 葬禮報導、kotobank 島倉千代子頁；WebSearch 1：葬禮與債務）。另有 1 次失敗（kotobank 猜網址，回傳到別人的條目，沒有島倉內容，不計入）。WebFetch 回傳是小模型摘要，非逐字原文。\n兩源非獨立標記：ja 維基與 en 維基同為維基百科（非獨立）；Billboard Japan 與 Daily Sports 葬禮一條為兩家不同媒體；Oricon 該頁摘要中參列人數與場地描述有誤（寫成「新宿」），所以 Oricon 只用於石川さゆり悼詞「小學一年級看過舞台而決心當歌手」，場地與人數取 Billboard 與 Daily。\n單源未收入 facts：(1) 1938 年 3 月 30 日生日（ja 單源，facts 只寫 1938 年）；(2) 1945 年疏散松本、左手臂受傷縫 47 針（事實庫 ja 單源）；(3) 〈この世の花〉原預定由コロムビア・ローズ錄製、半年賣 200 萬張（ja 與 kotobank 皆有銷量，但屬銷量細節，不收）；(4) 『59 年歌手生涯在舞台上從未對嘴』（ja 單源）；(5) 早期『哭腔唱法』、1968 年〈愛のさざなみ〉改變印象、「高度成長初期日本社會的代表性歌謠歌手」（kotobank 單源）；(6) 1963 年父親過世、結婚與 1968 年離婚、1993 年乳癌、2010 年肝癌、2013 年第 64 回紅白設追悼單元、遺作〈からたちの小徑〉四十九日發售（ja 單源；死因與病況依規則不收）；(7) 「お千代さん」暱稱、「演歌の女神」（en 稱 the Goddess of Enka，單源）；(8) 債務相關第三人指控（不點名，不收）。\n身分：poolAlbums 三張（千代ちゃんの一日、すみだ川、九段の母）皆是島倉千代子本人，沒有同名混卡；事實庫研究稿提到 1949 年〈お山のお猿〉誤植為「戸倉千代子」，不算出道作。\n用語：sound 格只靠風格歸類與代表曲，辨識度描述少，屬偏薄。"
+ },
+ {
+  "key": "張學友",
+  "name": "張學友",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "張學友 1961 年 7 月 10 日生於香港鰂魚涌，父親張作琪的祖籍是天津。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     },
+     {
+      "f": "1984 年他以〈大地恩情〉奪得第一屆十八區業餘歌唱大賽冠軍，隨後與寶麗金唱片簽約。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     },
+     {
+      "f": "他 1984 年贏得十八區歌唱比賽，之後簽下寶麗金唱片（Polygram）。",
+      "src": "https://en.wikipedia.org/wiki/Jacky_Cheung",
+      "src2": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以出色的聲線與唱功見稱，擅長情感飽滿的抒情情歌。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "src2": "https://www.hk-cityguide.com/expat-guide/guide-to-the-most-iconic-cantopop-stars",
+      "from": "new"
+     },
+     {
+      "f": "他的粵語代表作有〈李香蘭〉〈每天愛你多一些〉，國語代表作是 1993 年的〈吻別〉。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他與許冠傑同被稱為「歌神」。",
+      "src": "https://www.hk-cityguide.com/expat-guide/guide-to-the-most-iconic-cantopop-stars",
+      "src2": "https://zh.wikipedia.org/zh-hant/%E6%AD%8C%E7%A5%9E",
+      "from": "new"
+     },
+     {
+      "f": "1992 年他與劉德華、黎明、郭富城被封為「四大天王」，是九〇年代香港流行樂壇的代表人物。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     },
+     {
+      "f": "2000 年代起，陳奕迅被傳媒與樂迷稱為「第三代歌神」「張學友的接班人」。",
+      "src": "https://zh.wikipedia.org/zh-hant/%E6%AD%8C%E7%A5%9E",
+      "src2": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     },
+     {
+      "f": "世界音樂獎（World Music Awards）1995、1996 年連續兩年頒給他全球最暢銷的亞洲／華人歌手獎項。",
+      "src": "https://en.wikipedia.org/wiki/Jacky_Cheung",
+      "src2": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     },
+     {
+      "f": "他 1998 年獲金曲獎最佳國語男演唱人。",
+      "src": "https://en.wikipedia.org/wiki/Jacky_Cheung",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     },
+     {
+      "f": "1989 年他以《旺角卡門》獲香港電影金像獎最佳男配角，1990 年以《笑傲江湖》獲金馬獎最佳男配角。",
+      "src": "https://en.wikipedia.org/wiki/Jacky_Cheung",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1984 年贏得十八區歌唱比賽並簽約寶麗金。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     },
+     {
+      "f": "1992 年與劉德華、黎明、郭富城被封為四大天王。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     },
+     {
+      "f": "1998 年獲金曲獎最佳國語男演唱人。",
+      "src": "https://en.wikipedia.org/wiki/Jacky_Cheung",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1984 年奪得第一屆十八區業餘歌唱大賽冠軍。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+    "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+    "from": "new"
+   },
+   {
+    "f": "1992 年被封為四大天王之一。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+    "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+    "from": "new"
+   },
+   {
+    "f": "1998 年獲金曲獎最佳國語男演唱人。",
+    "src": "https://en.wikipedia.org/wiki/Jacky_Cheung",
+    "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B5%E5%AD%B8%E5%8F%8B",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "十八區歌唱比賽參賽人數：中文維基寫逾 5 萬人，英文維基寫逾 1 萬人，兩源不一致，facts 不寫人數。",
+   "金針獎年份：中文維基張學友條寫 2001 年（最年輕得主），粵語維基寫 2000 年；兩源不一致，facts 不收金針獎。",
+   "世界音樂獎類別：中文維基寫「全球最暢銷華人歌手」，英文維基寫 Best-Selling Asian Artist，粵語維基兩種都列但沒寫年份；facts 寫『亞洲／華人歌手』兩種說法並列，年份 1995、1996 由英文與中文維基兩源支持。",
+   "上線簡介《真情流露》「1992 年 5 月」「第十一張粵語專輯」「八白金」「四大天王」與本層查到的 1992 年四大天王一條無衝突；其餘不涉本層查證範圍。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "本位用掉 8 次（WebFetch 6：zh 維基張學友、en 維基 Jacky Cheung、zh 維基十大中文金曲（沒查到金針獎名單，等於空轉）、zh 維基歌神、zh-yue 維基張學友、hk-cityguide；WebSearch 2）。另 1 次失敗（Britannica 404，不計入）。WebFetch 回傳是小模型摘要，非逐字原文；兩次 WebSearch 只看摘要，沒有採用只出現在摘要的內容。\n兩源非獨立標記：zh 維基、en 維基、zh-yue 維基、zh 歌神條目全是維基百科（非獨立，其中 zh 與 zh-yue 互相有部分抄錄關係）；獨立來源只有 hk-cityguide（旅遊指南性質，只用於歌神稱號與唱功描述）。台灣與香港演藝人在這個站點沒有第二家權威媒體可開頁，故 legacy 多條屬維基間交叉。\n單源未收入 facts：(1) 父母 1949 年隨逃港潮來港、母親浙江嘉興（zh 維基單源）；(2) 1985 年 4 月首張專輯《Smile》（zh 單源）；(3) 1992 年度十大勁歌金曲頒獎禮上商台董事總經理俞琤說他是九十年代歌神的接班人（zh 歌神條單源；搜尋摘要有相同內容但沒開頁）；(4) 他本人不太認同『歌神』稱號、認為屬於許冠傑（zh 單源）；(5) 1999 年獲國際青年商會『世界傑出青年』、2000 年入選環球唱片九〇年代巨星名人堂（en 單源）；(6) 金曲獎『首位非台灣籍歌手獲最佳國語男歌手』（zh 單源）；(7) 鄭秀文稱他『樂壇慈父』、庾澄慶稱『歌佛』、郭富城語錄（zh 單源，且是單一藝人評語）；(8) 能歌劇唱法、R&B 與爵士（zh 單源）；rich baritone 與 dramatic vibrato（en 單源）；(9) 銷量（吻別 400 萬張、25 百萬張專輯等）、環球巡迴場次一律是在世者累計銷量與場次，依規則不寫；(10) 1993、1994 金曲獎年度歌曲（yue 單源，且屬屆次不明的歌曲獎）。\n身分：poolAlbums 三張（吻別、真情流露、忘記你我做不到）皆為香港歌手張學友，沒有同名混卡。"
+ },
+ {
+  "key": "徐小鳳",
+  "name": "徐小鳳",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "徐小鳳 1949 年 1 月 1 日生，原名徐鄖書，家中排行最大。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "from": "new"
+     },
+     {
+      "f": "她出生在湖北武昌（今武漢），童年隨父母從中國移居香港。",
+      "src": "https://en.wikipedia.org/wiki/Paula_Tsui",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "from": "new"
+     },
+     {
+      "f": "她 16 歲左右報名「香港之鶯」歌唱比賽，以一曲白光的〈戀之火〉拿下冠軍，因此入行。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://www.ourchinastory.com/zh/6554/%E6%B4%BB%E8%BA%8D%E6%A8%82%E5%A3%87%E9%80%BE50%E5%B9%B4-%E5%BE%90%E5%B0%8F%E9%B3%B3%E7%A3%81%E6%80%A7%E6%AD%8C%E8%81%B2%E9%AD%85%E5%8A%9B%E9%9D%9E%E5%87%A1",
+      "from": "new"
+     },
+     {
+      "f": "得到冠軍後，她在旺角、尖沙咀的夜總會駐唱，起步時是夜總會歌手。",
+      "src": "https://www.ourchinastory.com/zh/6554/%E6%B4%BB%E8%BA%8D%E6%A8%82%E5%A3%87%E9%80%BE50%E5%B9%B4-%E5%BE%90%E5%B0%8F%E9%B3%B3%E7%A3%81%E6%80%A7%E6%AD%8C%E8%81%B2%E9%AD%85%E5%8A%9B%E9%9D%9E%E5%87%A1",
+      "src2": "https://en.wikipedia.org/wiki/Paula_Tsui",
+      "from": "new"
+     },
+     {
+      "f": "她的父母起初不贊成她以唱歌為業，後來才同意。",
+      "src": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://en.wikipedia.org/wiki/Paula_Tsui",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的聲線低沉、帶磁性，天生的中低音是辨識度所在。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://www.ourchinastory.com/zh/6554/%E6%B4%BB%E8%BA%8D%E6%A8%82%E5%A3%87%E9%80%BE50%E5%B9%B4-%E5%BE%90%E5%B0%8F%E9%B3%B3%E7%A3%81%E6%80%A7%E6%AD%8C%E8%81%B2%E9%AD%85%E5%8A%9B%E9%9D%9E%E5%87%A1",
+      "from": "new"
+     },
+     {
+      "f": "代表曲有〈順流逆流〉〈風雨同路〉〈無奈〉〈隨想曲〉。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://www.ourchinastory.com/zh/6554/%E6%B4%BB%E8%BA%8D%E6%A8%82%E5%A3%87%E9%80%BE50%E5%B9%B4-%E5%BE%90%E5%B0%8F%E9%B3%B3%E7%A3%81%E6%80%A7%E6%AD%8C%E8%81%B2%E9%AD%85%E5%8A%9B%E9%9D%9E%E5%87%A1",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1989 年（第 12 屆十大中文金曲）她獲香港電台頒發金針獎，表揚她在樂壇的成就。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://zh.wikipedia.org/wiki/%E9%87%91%E9%87%9D%E7%8D%8E",
+      "from": "new"
+     },
+     {
+      "f": "1982 年梅艷芳參加第一屆新秀歌唱大賽，以徐小鳳的名曲〈風的季節〉奪冠，從此入行。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://zh.wikipedia.org/zh-hant/%E6%A2%85%E8%89%B7%E8%8A%B3",
+      "from": "new"
+     },
+     {
+      "f": "她 1992 年在紅館連開的《金光燦爛徐小鳳演唱會》，至今仍是紅館連續開演唱會場數最多的紀錄，並曾被香港旅遊協會小冊子列為當時的世界紀錄。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "from": "new"
+     },
+     {
+      "f": "1992 年後她逐漸減少公開活動，2005 年推出《金光燦爛徐小鳳演唱會 2005》復出舞台，其後持續開演唱會。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年她轉投新力唱片（CBS/Sony），首張專輯《風雨同路》甫上市便售出超過廿萬張；同年主唱無綫電視劇集主題曲〈大亨〉，開始演繹大眾熟悉的原創廣東歌。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "from": "bank"
+     },
+     {
+      "f": "1965 年底贏得「香港之鶯」冠軍；1969 年起灌錄唱片；1992 年後減少活動，2005 年復出。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "from": "new"
+     },
+     {
+      "f": "1989 年獲金針獎；1992 年在紅館連開演唱會創下紀錄。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1965 年以〈戀之火〉贏得「香港之鶯」歌唱比賽冠軍，入行。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+    "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+    "from": "new"
+   },
+   {
+    "f": "1989 年獲十大中文金曲金針獎。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+    "src2": "https://zh.wikipedia.org/wiki/%E9%87%91%E9%87%9D%E7%8D%8E",
+    "from": "new"
+   },
+   {
+    "f": "2005 年復出舞台。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+    "src2": "https://zh-yue.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "出身地與比賽年份：英文維基寫生於武漢、1966 年贏得比賽；中文維基與粵語維基寫湖北鄖縣人（籍貫）、1965 年 12 月 23 日比賽。facts 出生地採英文維基與 ourchinastory 兩源一致的武昌／武漢，比賽年份採中文與粵語維基的 1965（起筆 16 歲與 1949 年出生一致）。",
+   "事實庫（c106-b 風雨同路研究稿）說 1978 年轉投新力後首張專輯為《風雨同路》，與中文維基一致；上線簡介同樣採此說，無衝突。",
+   "紅館 43 場：中文維基與 ourchinastory 都寫 43 場，粵語維基寫 43 場並被香港旅遊協會小冊子列入當時世界紀錄；依規則 facts 不寫場次數字，只寫「紀錄」這個共識。"
+  ],
+  "pubIssues": [
+   {
+    "album": "風雨同路",
+    "claim": "她的女低音在這批 1978 年的錄音裡壓得很低，「小白光」這個外號就是這麼來的",
+    "problem": "「小白光」是 1965 年她在「香港之鶯」歌唱比賽以白光的〈戀之火〉奪冠、出道時得到的稱號，與 1978 年的錄音音域無關；中文維基把這個外號放在出道段落（單源）；粵語維基與 ourchinastory 都只寫她 1965 年憑〈戀之火〉奪冠入行，未提外號。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3"
+   },
+   {
+    "album": "每一步",
+    "claim": "〈冬〉是 1985 年她加盟寶麗金時先灌的一首",
+    "problem": "中文維基寫她 1986 年起與寶麗金合作；上線簡介的〈全新歌集3〉則寫「翌年（1986）轉投寶麗金」。『1985 年加盟寶麗金』與兩處不一致，疑為 1985 年底簽約或 1986 年起算的差別，需回頭查單曲〈冬〉的實際年份。",
+    "src": "https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3"
+   }
+  ],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "本位用掉 7 次（WebFetch 6：zh 維基徐小鳳、en 維基 Paula Tsui、ourchinastory 專文、zh 維基梅艷芳、zh-yue 維基徐小鳳、zh 維基金針獎；WebSearch 1）。另 1 次失敗（zh 維基金針獎(十大中文金曲) 404，不計入）。WebFetch 回傳是小模型摘要，非逐字原文；金針獎頁摘要把唐滌生寫成女性得主，明顯有誤，因此只用它確認『1989 年第 12 屆金針獎得主是徐小鳳』，不用它判斷是否首位女性。\n兩源非獨立標記：zh、zh-yue、en 維基與 zh 梅艷芳、金針獎條目皆同屬維基百科（非獨立）；ourchinastory 是獨立的人物專文，與維基交叉。\n單源未收入 facts：(1) 『首位獲金針獎的女歌手』（zh 單源，且頁面表格推算與此說法不一致，拿不準就不收）；(2) 1984 年十大勁歌金曲榮譽大獎（zh 單源）；(3) 五位演藝人士對她跪拜朝聖（周潤發、劉德華、倫永亮、呂方、杜德偉，zh 單源，粵語維基沒提）；(4) 1969 年在吉隆坡南國唱片廠兩天灌 12 首（事實庫 zh 單源）；(5) 銷量與白金張數、1986 年起寶麗金九張原創唱片（zh 單源且為履歷）；(6) en 維基稱曾在家裡髮廊／美甲工作、1969 年起在夜總會演出、以禮服聞名（en 單源，且與 zh 說法不同）；(7) 因此出道有「小白光」之稱（zh 單源）；(8) 家中小店的描述各處不同（ourchinastory 寫父親小店、粵語維基寫江浙食品生意、英文維基寫髮廊），不收；(9) 2018 年紅館演唱會與 2023 年復出亮相（ourchinastory 單源）。\n身分：poolAlbums 三張（全新歌集3、風雨同路、每一步）皆是香港歌手徐小鳳，沒有同名混卡。\n用語：沒有逐字引用歌詞，不寫累計銷量與場次數字。"
  }
 ]
