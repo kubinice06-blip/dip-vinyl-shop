@@ -300,3 +300,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-027
 - g1 交件（QA 本組 0）。thin：Busdriver、Danny Brown、Denzel Curry、Dilated Peoples、DMX、Eric B. & Rakim。生年皆維基單源，不寫。單源或主詞不符未收：Del 後輩點名（核對不到）、Dizzee Rascal「第二位水星獎饒舌手」、Rakim 個人的 Berklee 名人堂、DJ Babu 個人 DMC 獎。IAM 成軍年兩說，不寫。pubIssues 0。
+- 027 g4 交件（QA 本組 0）。thin：Run the Jewels（貢獻 none）、ScHoolboy Q、Slum Village。單源或有反例未收：Slick Rick 刑案與特赦細節、Salt-N-Pepa「首位葛萊美」。日文「会」被 QA 誤判為簡體，facts 改寫「音樂社團」。pubIssues 0。
