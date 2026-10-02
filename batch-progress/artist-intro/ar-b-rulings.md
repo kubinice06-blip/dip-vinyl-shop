@@ -204,3 +204,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-017
 - g3 交件（QA 本組 0）。thin：Fleet Foxes、Joanna Newsom（地位 none）。Garth Brooks 的 3 條 pubIssues 是「簡介寫了銷量／認證」——「在世者累計數字不寫」是藝人介紹的規則，不溯及專輯簡介，不列待改。Marty Robbins〈El Paso〉「第一首超過四分鐘的冠軍曲」列本機待核。〈Grândola〉成曲年兩說不寫。
+- g4 交件（QA 本組 0）。thin：Shawn Mendes。Shirley Collins 失敗請求 6 次超限，未取得內容，照收。pubIssues 1（Steve Earle《Copperhead Road》收尾曲描述 → 本機待核）。Patsy Cline 後輩名單只能寫「鄉村音樂名人堂列出…」。
