@@ -1,0 +1,670 @@
+[
+ {
+  "key": "the future sound of london",
+  "name": "The Future Sound of London",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Garry Cobain 與 Brian Dougans 1980 年代中期在曼徹斯特讀大學、主修電子與音樂錄音科技時認識，最初在當地俱樂部合作；Dougans 1965 年生於格拉斯哥。",
+      "src": "https://en.wikipedia.org/wiki/The_Future_Sound_of_London",
+      "src2": "https://en.wikipedia.org/wiki/Brian_Dougans",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1994 年起他們把現場演出透過 ISDN 數位電話線傳給世界各地的電台（含紐約前衛表演空間 The Kitchen 與 BBC Radio 1 的 John Peel 節目），內容是氛圍音景加上尚未發行的曲目；這批廣播剪輯後成為專輯《ISDN》。",
+      "src": "https://en.wikipedia.org/wiki/The_Future_Sound_of_London",
+      "src2": "https://en.wikipedia.org/wiki/ISDN_(album)",
+      "from": "new"
+     },
+     {
+      "f": "1996 年《Dead Cities》之後，他們把 ISDN 傳輸擴大成面向藝廊、場地與電台的全球聲音與影像傳送；英文維基稱 1996、1997 年這輪是不離開錄音室的世界巡迴。",
+      "src": "https://kinetica-museum.org/artist-profiles/future-sound-of-london/",
+      "src2": "https://en.wikipedia.org/wiki/The_Future_Sound_of_London",
+      "from": "new"
+     },
+     {
+      "f": "他們的聲音橫跨 techno、ambient、house、trip hop、迷幻與 dub，並自己做幾乎所有單曲的影像、電腦動畫與發聲裝置。",
+      "src": "https://en.wikipedia.org/wiki/The_Future_Sound_of_London",
+      "src2": "https://kinetica-museum.org/artist-profiles/future-sound-of-london/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "thin",
+  "notes": "事實庫 research 為空，從零查。搜尋：WebFetch 維基主條（1）、同頁以 API 取全文（2，同頁重複不另開新源）、WebSearch×2（3、4）、Kinetica Museum 藝人頁（5）、Lifeforms 與 ISDN 維基條目（6、7，API 取全文）、Brian Dougans 維基（8）。失敗請求 4 次：AllMusic 三次 403、Britannica 搜尋 403。取不到獨立的第二源，所以 origin 與 sound 的 src2 多為同站不同條目（維基主條／Brian Dougans／ISDN 條目），屬「非獨立」；Kinetica 頁是藝術機構的藝人介紹，來源性質偏自述。\nlegacy 格標 none：可用線索都是單源，未入 facts——(1) Lifeforms 維基條目稱 AllMusic 評為 one of the best experimental techno releases of the '90s（上線簡介已用；維基引文頁本層未開）；(2) 瑞典樂團 Carbon Based Lifeforms 的團名部分取自此專輯（單源，維基 Lifeforms 條目）；(3) Noel Gallagher 聽過後成為樂迷並委託混音（單源，維基主條）；(4) Kinetica 頁稱 Lifeforms 重新定義了現代古典、氛圍、電子與實驗音樂，屬機構自述、非獨立評價，不收。另：維基稱 Dougans 的父親參與 BBC Radiophonic Workshop 並深刻影響 Lifeforms，Brian Dougans 條目未提，單源，不收。維基寫 Lifeforms 1994 年 5 月 23 日發行、舞曲專輯榜第 1、綜合榜第 6、BPI 銀唱片（與上線簡介一致；上線簡介寫「英國舞曲專輯榜冠軍、綜合榜第六名」，無衝突）。上線簡介寫〈Papua New Guinea〉進 Melody Maker 年度單曲榜、專輯排名第 21 名——樂評媒體榜單名次本批規則不收，且本層未查。era 格 none：〈Papua New Guinea〉1991 年單曲 1992 年榜上七週、最高第 22 名（單源，維基主條；已移出 facts）。\n註：Dougans 生於格拉斯哥一項 src2 為同站不同條目，非獨立。"
+ },
+ {
+  "key": "the human league",
+  "name": "The Human League",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ian Craig Marsh 與 Martyn Ware 當時都是電腦操作員，1977 年在英國雪菲爾組成早期全電子的樂團，最初團名叫 The Future，1978 年初改名 The Human League。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "from": "new"
+     },
+     {
+      "f": "他們找來主唱 Philip Oakey 是因為外型夠像流行明星，而不是歌唱能力；Oakey 當時是醫院的雜工、沒有音樂經驗。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "from": "new"
+     },
+     {
+      "f": "1980 年底 Marsh 與 Ware 離團另組 Heaven 17，Oakey 留下團名，從雪菲爾一間夜店舞池找來當時仍是少女的 Joanne Catherall 與 Susan Ann Sulley 加入。",
+      "src": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "src2": "https://diffuser.fm/human-league-dare-album/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期作品是冷調的工業感電子聲響，被形容為把 Kraftwerk、Kubrick、Bowie 與 Ballard 蒸餾成的後工業反烏托邦電子；〈Being Boiled〉與〈Empire State Human〉是代表。",
+      "src": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "src2": "https://diffuser.fm/human-league-dare-album/",
+      "from": "new"
+     },
+     {
+      "f": "1981 年《Dare》與製作人 Martin Rushent 合作，把團轉向明亮、容易上口的 synth-pop；兩位女聲加入後，Oakey 說這讓他們也能吸引女性聽眾。",
+      "src": "https://diffuser.fm/human-league-dare-album/",
+      "src2": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年他們早期的現場演出就獲得 David Bowie 公開背書。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://www.uncut.co.uk/reviews/human-league-british-synthesizer-group-98883/",
+      "from": "new"
+     },
+     {
+      "f": "〈Don't You Want Me〉登上英國與美國單曲榜第 1 名；《Dare》在多國拿下榜首、在美國最高第 3 名。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://diffuser.fm/human-league-dare-album/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1980 年底 Marsh 與 Ware 離開，另組 Heaven 17 與製作公司 B.E.F.，團名由 Oakey 保留。",
+      "src": "https://en.wikipedia.org/wiki/The_Human_League",
+      "src2": "https://en.wikipedia.org/wiki/Heaven_17",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋：維基主條（API 全文，1）、Britannica 條目（2，WebFetch 只拿到 Jimmy Jam 條目順帶提及，無內容）、WebSearch（3）、Diffuser《Dare》專文（4）、Uncut 2017 年 A Very British Synthesizer Group 評論（5）、維基 1982 Brit Awards（6，抓不到相關內容）、維基 Heaven 17（7）。失敗請求 1 次：Sheffield Music Archive 回空頁。同名檢查：卡池四張（Dare、Hysteria、Crash、Romantic?）都是雪菲爾這團，無混卡。\nsrc2 的 Heaven 17 為維基同站不同條目，非獨立；其餘 Uncut、Diffuser 為獨立來源。維基與 Uncut 年份：Uncut 寫 1977 年成軍，與維基一致。\n以下為單源、未入 facts：(1) 英文維基稱 1982 年獲 Brit Award 最佳英國新人（Best British Breakthrough Act），第二源未取得；(2) 維基稱 Bowie 1978 年 12 月在觀眾席、事後對 NME 說他「看見了流行樂的未來」，facts 只收兩源都支持的『Bowie 背書』（Uncut 寫 Bowie-endorsed）；(3) 維基稱 Nightshift 把他們與 Gary Numan、OMD 並稱 synth-pop 的「holy trinity」、Pitchfork 稱他們是該場景的 the essence、Dare 被稱為最具影響力的流行專輯之一、被視為 1980 年代第二次英倫入侵的代表藝人；皆為維基轉述，未開原頁；(4) 〈Don't You Want Me〉是首支純用鼓機登上英國單曲榜冠軍的歌（維基單源；『第一』類宣稱，有反例疑慮，未收）；(5) Uncut 稱他們 1977 年組成『英國第一個全電子樂團』（單源、『第一』類宣稱，同期有其他電子團，未收）；(6) Diffuser 稱錄製 Dare 的錄音室據報收到英格蘭第一台 LinnDrum（單源且為『據報』，未收）；(7) 維基稱 2000 年有致敬專輯《Reproductions: Songs of The Human League》，Ladytron、Momus 等參與；Moby 與 Little Boots 是長年樂迷（單源）；(8) 2015 年紀錄片《Big Gold Dream》涵蓋 Fast Product 時期（單源）。累計銷量（維基稱 2010 年前超過兩千萬張）依規則不寫。\n另：legacy 的〈Don't You Want Me〉一條是榜位、不是銷量。"
+ },
+ {
+  "key": "the residents",
+  "name": "The Residents",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "成員是 1960 年代後半離開路易斯安那的一小圈朋友，1969 年前後落腳加州 San Mateo，起初沒人會樂器，先玩攝影、絹印與繪畫。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     },
+     {
+      "f": "1971 年他們把 demo 寄給 Warner Bros.，因為沒署名，退件信封只寫「Residents」，團名就此而來。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     },
+     {
+      "f": "1972 年他們搬進舊金山 Sycamore St. 的住處兼錄音室與攝影棚，同年成立 Ralph Records 發行自己的作品。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://piedmontexedra.com/2022/01/new-coffee-table-book-eyeballs-the-legacy-of-sf-based-experimental-group-the-residents",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的作品大致分兩路：拆解西方流行樂，以及圍繞某個主題或理論的概念作品；樂評形容他們一輩子都在顛覆、重組流行音樂。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.wbur.org/news/2016/04/21/the-residents",
+      "from": "new"
+     },
+     {
+      "f": "他們自稱受 N. Senada 影響，這位人物據說是巴伐利亞作曲家與樂理家，提出「晦澀理論」與「音響組織理論」，後者主張從聲音出發建構音樂；Senada 是否真有其人一直有爭議。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://daily.redbullmusicacademy.com/2015/07/the-residents-guide/",
+      "from": "new"
+     },
+     {
+      "f": "成員始終匿名，標誌是巨大的眼球頭套配禮帽與燕尾服；這套造型 1979 年隨《Eskimo》封面首度出現，原本只打算用一次，後來成為長期形象。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://piedmontexedra.com/2022/01/new-coffee-table-book-eyeballs-the-legacy-of-sf-based-experimental-group-the-residents",
+      "from": "new"
+     },
+     {
+      "f": "《The Third Reich 'n Roll》用錄音帶剪接與拼貼把流行歌改寫成兩段長組曲，被形容預示了日後的取樣手法。",
+      "src": "https://daily.redbullmusicacademy.com/2015/07/the-residents-guide/",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1981 年 MTV 開台時音樂錄影帶很少，他們的短片因此獲得大量播放；《Commercial Album》的《One Minute Movies》是當時少數的音樂影片之一。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     },
+     {
+      "f": "1994 至 1998 年間他們做出三部互動 CD-ROM 作品並獲獎，被視為把 CD-ROM 當藝術媒介的先驅。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://www.truthdig.com/articles/keeping-a-watchful-eye-a-half-century-of-the-residents/",
+      "from": "new"
+     },
+     {
+      "f": "2022 年為紀念成軍 50 週年出版畫冊《The Residents: A Sight for Sore Eyes, Vol. 1》，內含受他們影響的名人證言。",
+      "src": "https://en.wikipedia.org/wiki/The_Residents",
+      "src2": "https://piedmontexedra.com/2022/01/new-coffee-table-book-eyeballs-the-legacy-of-sf-based-experimental-group-the-residents",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 一條（Ralph Records 成立，已被上線簡介採用）、published 兩張（Meet the Residents、Third Reich 'n Roll）；上線簡介與本層 facts 無衝突。同名檢查：卡池四張（Eskimo、Not Available、Meet the Residents、The Third Reich 'n Roll）皆為舊金山這團，無混卡。搜尋：維基主條 API（1）、WebSearch（2）、WBUR 2016 專文（3）、Red Bull Music Academy 導覽（4）、Truthdig 2023 專文（5、6，同頁為取不同段落重取一次）、Piedmont Exedra 2022 專文（7、8，同頁重取一次）。失敗請求 3 次：Taylor & Francis 期刊導言 403、Groupon 文章 403、Frieze 文章 403。\n⚠ 兩源註記：RBMA 導覽以《Theory of Obscurity》紀錄片為底，WBUR 以同片與 Hardy Fox 訪談為底，但為不同媒體獨立撰文；Truthdig 一文語氣誇飾（稱沒有他們就沒有 MTV、The Simpsons 等），其誇飾推論一律不收，只取事實層。\n以下單源未入 facts：(1) Truthdig 稱 Primus、Ween、Talking Heads、DEVO 成員都承認受他們影響，並稱 Matt Groening 1978 年是首個粉絲會的創始會員、Penn Jillette 曾與他們合作（單源；維基只寫 Les Claypool 與 Gerald Casale 被傳是團員）；(2) Truthdig 稱紐約 MoMA 把《One Minute Movies》與《Third Reich 'n Roll》短片收進永久典藏並稱是最早的真正音樂錄影帶（單源、『最早』類宣稱，未收）；(3) Truthdig 稱第一個有意為之的 mashup 出現在《Third Reich 'n Roll》、1980 年買下第五台 E-mu Emulator、最早用電腦設計封面、最早的全電腦動畫音樂錄影帶（單源、『最早』類宣稱，未收）；(4) 維基稱《Eskimo》入圍 1980 年葛萊美最終提名名單但未獲提名，寫作層不要寫成入圍；(5) 維基稱 2017 年 Hardy Fox 公開承認是共同創辦人與主要作曲，2018 年過世——生卒涉及年份兩源要求，且團隊刻意匿名，不收；(6) 樂迷圈對成員身分的種種傳聞不收；(7) 維基稱被形容為 punk rock、art rock 與 techno 的先驅（單源）。\nsrc2 說明：Exedra 一條 Sycamore St. 住址寫成 18-20，維基寫 20，f 欄只寫街名；Exedra 與維基都是 1972。『1969 年前後』：維基寫 1969 年 Fox 搬到 San Mateo，Truthdig 寫約 1966–1969 年間朋友圈遷出路易斯安那、四人在 San Mateo 落腳，兩者時間點略有出入，f 欄用『1960 年代後半…1969 年前後』的寬寫法。"
+ },
+ {
+  "key": "thievery corporation",
+  "name": "Thievery Corporation",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Rob Garza 與 Eric Hilton 1995 年在美國華盛頓特區的 Eighteenth Street Lounge 認識並組成二人組；Hilton 是這間夜店的共同創辦人。",
+      "src": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "src2": "https://www.metroweekly.com/2011/08/to-catch-a-thievery/",
+      "from": "new"
+     },
+     {
+      "f": "Garza 1980 年代在華盛頓特區的硬核龐克場景打滾，高中時期在康乃狄克州就已接觸電子音樂；一張 Antonio Carlos Jobim 的唱片替他打開通往爵士與電子樂的門。",
+      "src": "https://www.aspentimes.com/news/thievery-corporation-an-inter-and-outer-national-sensation/",
+      "src2": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "from": "new"
+     },
+     {
+      "f": "兩人當年的共同愛好是 1960 年代的 bossa nova 與巴西音樂，也愛 dub、reggae 與爵士唱片，最初想做的是電子舞曲。",
+      "src": "https://ra.co/news/12752",
+      "src2": "https://www.aspentimes.com/news/thievery-corporation-an-inter-and-outer-national-sensation/",
+      "from": "new"
+     },
+     {
+      "f": "團名取自他們採樣與借用各種音樂的做法，用意是承認「所有音樂都是借來的」；團名中的 Thievery 因此而來。",
+      "src": "https://www.metroweekly.com/2011/08/to-catch-a-thievery/",
+      "src2": "https://www.oursociallandscape.com/post/rob-garza-world-music-and-the-state-of-the-union",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把 dub reggae、bossa nova、爵士、Afrobeat、印度與中東音樂等世界音樂元素混進電子樂，1996 年成立自家廠牌 Eighteenth Street Lounge Music，隔年推出首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "src2": "https://www.metroweekly.com/2011/08/to-catch-a-thievery/",
+      "from": "new"
+     },
+     {
+      "f": "合作人聲來自多個國家，歌詞語言涵蓋英文、西班牙文、法文、義大利文、波斯文、葡萄牙文、羅馬尼亞文與印地文；Garza 說華盛頓特區是很國際化的城市，常碰到來自各國的歌手，合作是自然發生的。",
+      "src": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "src2": "https://www.aspentimes.com/news/thievery-corporation-an-inter-and-outer-national-sensation/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Metro Weekly 稱他們很快成為實驗性 downtempo（chillout）音樂的潮流領頭者；Resident Advisor 稱他們是廣為人知、最成功的 downtempo 團體之一。",
+      "src": "https://www.metroweekly.com/2011/08/to-catch-a-thievery/",
+      "src2": "https://ra.co/news/12752",
+      "from": "new"
+     },
+     {
+      "f": "維基寫道，downtempo 與 lounge 風電子樂在 1990 年代後期更廣為流行，Thievery Corporation 是其中的代表藝人之一；團員自己則不同意把音樂完全歸為 chill-out，並自創「outer-national」一詞形容自己的全球取向。",
+      "src": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "src2": "https://www.aspentimes.com/news/thievery-corporation-an-inter-and-outer-national-sensation/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，published 一張（Sounds From the Thievery Hi-Fi）。上線簡介寫『1995 年夏天在 Eighteenth Street Lounge 相識，隔年開了同名廠牌』，維基寫 1996 年起了 Eighteenth Street Lounge Music 廠牌，兩者一致。pubIssues：上線簡介寫『隔年開了同名廠牌並推出首張長篇』——廠牌名是 Eighteenth Street Lounge Music（以夜店命名），不是以團名命名；『同名』指與夜店同名，無誤。維基寫首張專輯 1996 年，Aspen Times 與維基 Influences 節寫 1997 年（台灣、美國版本發行年不同）；上線簡介未寫年份，f 欄也不寫專輯年份，卡池放 1996。同名檢查：卡池四張（The Mirror Conspiracy、Symphonik、Saudade、Sounds From the Thievery Hi-Fi）皆為華盛頓特區這個二人組，無混卡。\n搜尋：維基 API（1）、WebSearch（2）、Metro Weekly 2011（3）、Resident Advisor 2010 新聞（4）、Aspen Times（5）、Our Social Landscape 訪談頁（6）。失敗請求 0。第二源皆為實際開頁。『非獨立』註記：Metro Weekly 與 RA 的相關句有可能轉述新聞稿（RA 文為新聞稿式寫法），兩者視為弱獨立；legacy 第一條建議寫寫作層以『被稱為』方式處理、不寫成事實判定。\n單源未入 facts：(1) 維基稱 Radio Retaliation 的包裝入圍葛萊美最佳唱片包裝（Best Recording Package，入圍非得獎；Metro Weekly 只寫『Grammy nomination』未指類別與屆次，故未收，寫作層若要寫須另證）；(2) Aspen Times 稱 Garza 母親為墨西哥人；(3) Aspen Times 稱首張專輯有 Bebel Gilberto 獻聲（上線簡介已寫）；(4) Aspen Times 稱 2011 年版 Culture of Fear 屬較輕鬆路線；(5) Metro Weekly 稱 Hilton 後來成為 U Street 夜生活場館的合夥人；(6) 維基稱 2009 年為 Paul McCartney 開場、2005 年參與 Operation Ceasefire 演唱會（政治立場類，不收）。\nMetro Weekly 寫 Hilton 是 Rockville 本地人（單源，未收）。"
+ },
+ {
+  "key": "tricky",
+  "name": "Tricky",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tricky 本名 Adrian Thaws，在英國布里斯托南部經濟困頓的 Knowle West 區長大，出身混血家庭。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "from": "new"
+     },
+     {
+      "f": "他 1980 年代中期混進布里斯托的 Wild Bunch 音響班底、當 MC，這個班底後來演變成 Massive Attack；他在 Massive Attack 首張專輯《Blue Lines》（1991）裡饒舌，1995 年離團單飛。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的作品以陰暗、層疊的風格見稱，混合 hip-hop、另類搖滾與 ragga；《Maxinquaye》用 dub 的製作手法與大幅改造的取樣，做出以節奏為底、朦朧而破碎的下拍聲響。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://en.wikipedia.org/wiki/Maxinquaye",
+      "from": "new"
+     },
+     {
+      "f": "《Maxinquaye》中 Martina Topley-Bird 的人聲出現在除兩首之外的所有曲目，她氣音式的聲線與 Tricky 低語式的饒舌互為對照，成為這張專輯情緒的主要來源。",
+      "src": "https://en.wikipedia.org/wiki/Maxinquaye",
+      "src2": "https://epigram.org.uk/martina-topley-bird-the-unsung-hero-of-tricky-success/",
+      "from": "new"
+     },
+     {
+      "f": "Tricky 當年與至今都拒絕 trip hop 這個標籤（這個詞出自英國舞曲雜誌 Mixmag，許多藝人不認同）。",
+      "src": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "src2": "https://www.britannica.com/topic/trip-hop",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱他是 trip hop 的先驅；Dazed 稱他儘管拒絕這個標籤，仍被尊為其主要建築師之一。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "from": "new"
+     },
+     {
+      "f": "1990 年代中期布里斯托的地下場景孕育出 trip hop，Tricky 是其中的重要人物；Britannica 稱他 1995 年的《Maxinquaye》是「偏執氛圍的傑作」。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://www.britannica.com/topic/trip-hop",
+      "from": "new"
+     },
+     {
+      "f": "《Maxinquaye》入圍 1995 年水星獎（Mercury Prize，入圍、未得獎，得主是 Portishead 的《Dummy》）。",
+      "src": "https://en.wikipedia.org/wiki/Maxinquaye",
+      "src2": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池四張（Maxinquaye、Pre-Millennium Tension、Mixed Race、Vulnerable）皆為布里斯托這位 Tricky，無混卡；注意英文維基條目名為 Tricky (musician)、搜尋結果曾出現 Tricky (rapper)，同一人。搜尋：維基主條 API（1）、WebSearch（2）、Dazed 訪談（3）、Epigram 專文（4）、維基 Maxinquaye（5）、Britannica trip-hop 條目（6）。失敗請求 1 次：Tricky 官網傳記頁回空。\n『非獨立』：W 與 M 同為維基不同條目。Dazed（2026 年訪談）與 Epigram（布里斯托大學學生報）、Britannica 為獨立來源。\nconflicts 性質：Martina Topley-Bird 認識 Tricky 的年份——維基寫 1991 年她 15 歲時登門，Epigram 寫 1993 年在 Clifton College 外被他發現；年份不一致，facts 不收年份。\n單源未入 facts：(1) 維基稱父親為牙買加人、母親為迦納裔英國人、1968 年 1 月 27 日生；母親在他四歲時過世（死因維基列兩說，且依規則不收死因），他的父親家族經營 Studio 17 音響班；(2) 維基稱 Maxinquaye 被視為對電子樂、地下 hip hop 與英國 hip hop 有重要影響，並被許多記者評為 1995 年度最佳、1995 年底在 NME、Melody Maker、The Wire 年終票選第 1，Pazz & Jop 第 2（雜誌榜單名次本批規則不收）；(3) Dazed 稱 David Bowie 是忠實樂迷，寫過一篇虛構短文提到 Tricky，並主動聯絡他，Tricky 沒有跟進；Dazed 稱 Maxinquaye 獲得金唱片認證與水星獎入圍（認證倍數不寫，水星入圍已與維基兩源收入）；(4) 維基稱 Tricky 曾與 Terry Hall、Björk、Gravediggaz、Alanis Morissette、Grace Jones、PJ Harvey 合作；(5) 維基稱 17 歲時因購買偽鈔入獄、少年時加入幫派（個人前科細節，與音樂貢獻無關，未收）。\n注意：《Maxinquaye》專輯名來自他母親 Maxine Quaye，母親過世細節依規則只寫年份層級、不收死因；本層 facts 完全未涉及。"
+ },
+ {
+  "key": "tycho",
+  "name": "Tycho",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tycho 是美國舊金山音樂人 Scott Hansen 的音樂名義；他另以 ISO50 之名做攝影與平面設計，樂評也常把他的設計名氣與音樂相提並論。",
+      "src": "https://en.wikipedia.org/wiki/Tycho_(musician)",
+      "src2": "https://ra.co/reviews/10040",
+      "from": "new"
+     },
+     {
+      "f": "Tycho 的首張專輯在 2004 年推出，第二張《Dive》（2011）相隔七年，也是他在 Ghostly International 的第一張。",
+      "src": "https://ra.co/reviews/10040",
+      "src2": "https://en.wikipedia.org/wiki/Dive_(Tycho_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂是以類比合成器與吉他為主的 downtempo 與 ambient 電子樂，帶著懷舊與自然的主題，節奏緩慢推進、帶有淡淡的憂鬱。",
+      "src": "https://en.wikipedia.org/wiki/Tycho_(musician)",
+      "src2": "https://ra.co/reviews/10040",
+      "from": "new"
+     },
+     {
+      "f": "《Dive》（2011）以硬體與類比設備為主，許多聲音出自 Minimoog；這是 Tycho 第一張用麥克風錄原音樂器的專輯，吉他與電貝斯的比重也比前作高。",
+      "src": "https://en.wikipedia.org/wiki/Dive_(Tycho_album)",
+      "src2": "https://everythingisnoise.net/features/a-scene-in-retrospect-tycho-dive/",
+      "from": "new"
+     },
+     {
+      "f": "Hansen 說他受 DJ Shadow 影響，讓每首曲子都有主段、插段與像另一首歌的尾段；維基也提到他的作品常被拿來與 DJ Shadow、Ulrich Schnauss 與 Boards of Canada 比較。",
+      "src": "https://en.wikipedia.org/wiki/Dive_(Tycho_album)",
+      "src2": "https://en.wikipedia.org/wiki/Tycho_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2016 年的《Epoch》入圍 2017 年葛萊美最佳舞曲／電子專輯獎（Best Dance/Electronic Album，入圍、未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Tycho_(musician)",
+      "src2": "https://grayarea.org/community-entry/tycho/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "維基寫 2004 年首張全長專輯是 Sunrise Projector、Past Is Prologue 為 2006 年；Hansen 在 The Great Discontent 訪談把 2004 年首張全長專輯稱作 Past Is Prologue。卡池這張卡的名稱是『Sunrise Projector / Past Is Prologue』（2004），看起來是同一張專輯的兩個名稱或再版；f 欄只寫『2004 年首張專輯』，不寫專輯名。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池四張（Dive、Infinite Health、Awake、Sunrise Projector / Past Is Prologue）皆為 Scott Hansen 這位 Tycho，無混卡。搜尋：維基 API（1）、WebSearch（2）、The Great Discontent 訪談（3）、Gray Area 條目（4）、WebSearch（5）、Everything Is Noise 專文（6）、RA《Dive》樂評（7）、維基 Dive 條目（8）。失敗請求 3 次：Ghostly 藝人頁只回空殼、Grammy.com 404、KCRW 429。\nlegacy 格偏薄（只有一條葛萊美入圍），整體標 thin。『非獨立』：維基主條與 Gray Area 條目（Gray Area 文字與維基同源，非獨立）；維基主條與 Dive 條目同站不同條目。獨立的只有 RA 與 Everything Is Noise。\n單源未入 facts：(1) 維基稱 2019 年專輯《Weather》入圍 2020 年葛萊美最佳舞曲／電子專輯，第二源未取得；(2) The Great Discontent 訪談（Hansen 自述，單源）：他早年在沙加緬度做網頁設計，2001 年一場意外後在家休養六週開始認真做音樂（首場演出數月後在沙加緬度），2006 年初回舊金山做介面設計工作，約 2009 年起專職做音樂；二十一二歲才碰樂器，先玩合成器、取樣器與鼓機，吉他是做了五年音樂之後才拿；沙加緬度的電子樂手 Dusty Brown 是他的音樂導師，ISO50 名稱來自一位法國攝影師常用的 Fuji Velvia ISO 50 底片；(3) 維基稱團名取自丹麥天文學家 Tycho Brahe；(4) Everything Is Noise 稱『幾年前談電子樂幾乎都繞不開 Scott Hansen』（單一評論者、不收）；(5) 維基 Dive 條目稱專輯登上 Billboard 美國 Top Dance/Electronic Albums 與 Top Heatseekers 榜（單源）；(6) 維基稱 2019 年簽 Mom+Pop 與 Ninja Tune（廠牌履歷，不收）；(7) 搜尋摘要有『成為當代 ambient 與 downtempo 領軍人物』一句，來自網站自我介紹性文字、未實際開頁，不收。\n維基稱 Hansen 2024 年現場樂團成員為 Hansen、Brown、O'Connor、Kim，樂團編制不收。"
+ },
+ {
+  "key": "zero 7",
+  "name": "Zero 7",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Henry Binns 與 Sam Hardaker 是倫敦人，少年時就認識；兩人在 1990 年代於 Mickie Most 的 RAK Studios 當錄音學徒（tape op），替別的藝人做工程與編程。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "src2": "https://www.songwritingmagazine.co.uk/interviews/interview-henry-binns",
+      "from": "new"
+     },
+     {
+      "f": "他們下班後開始自己實驗，第一次公開的作品是替 Radiohead 的〈Climbing Up the Walls〉做的混音，團名 Zero 7 就首見於這個「Zero 7 Mix」；原團喜歡這支混音而將它發行。",
+      "src": "https://en.wikipedia.org/wiki/Zero_7",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "from": "new"
+     },
+     {
+      "f": "1999 年他們發行第一張原創的 EP 作品《EP 1》，隨後在 2001 年推出首張專輯《Simple Things》。",
+      "src": "https://en.wikipedia.org/wiki/Zero_7",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的音樂是以電子取樣為底，混進吉他、管樂與人聲的 downtempo；帶有 soul、funk 與民謠的色彩，被形容為令人放鬆的電子樂。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "src2": "https://www.songwritingmagazine.co.uk/interviews/interview-henry-binns",
+      "from": "new"
+     },
+     {
+      "f": "《Simple Things》的人聲由 Mozez、Sia 與 Sophie Barker 輪流擔綱；Binns 說這些歌手多是自然而然找來的：Sophie 是在倫敦西區的小演出裡被他們發現，Sia 則在專輯接近完成時最後一刻才加入，當時她還是不太知名的歌手。",
+      "src": "https://www.songwritingmagazine.co.uk/interviews/interview-henry-binns",
+      "src2": "https://en.wikipedia.org/wiki/Simple_Things_(Zero_7_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Simple Things》（2001）入圍當年的水星獎（Mercury Prize，入圍、未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Zero_7",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "維基稱團名 Zero 7 取自宏都拉斯 Utila 島上一間叫 Cero Siete 的酒吧、替 Radiohead 混音時沿用；encyclopedia.com 把混音曲名寫成〈Climbing the Walls〉，維基寫〈Climbing Up the Walls〉，採維基曲名；f 欄不寫團名來源的酒吧說法（單源）。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池四張（Simple Things、Yeah Ghost、When It Falls、The Garden）皆為 Binns／Hardaker 這個倫敦二人組，無混卡。搜尋：維基 API（1）、WebSearch（2）、encyclopedia.com 條目（3）、Songwriting Magazine 對 Henry Binns 訪談（4）、維基 Simple Things 條目（5）。失敗請求 1 次：DCS Audio 專文 403。\n『非獨立』：W 與 S 為維基不同條目。encyclopedia.com 條目為百科轉載性質（原出處為 Contemporary Musicians 類工具書），Songwriting Magazine 為訪談，兩者獨立於維基。\n單源未入 facts：(1) 維基稱團名取自 Utila 島酒吧 Cero Siete；(2) encyclopedia.com 稱 Simple Things 因授權給精品店、旅館、餐廳等場所營造悠閒氣氛，且被《Sex and the City》《Six Feet Under》取用，是 chill-out 場景化的現象，但第二源未取得；(3) encyclopedia.com 稱專輯以多層小提琴取代完整管弦樂團（Simple Things 維基只列小提琴手 Sally Herbert，未確認此說）；(4) 維基稱 2002 年入圍 Brit Awards 最佳英國新人、2007 年《The Garden》入圍葛萊美最佳電子／舞曲專輯（維基『Awards』節單源，第二源未取得；屆次與主詞須另證）；Simple Things 條目稱美國 Billboard Top Dance/Electronic Albums 第 4 名、英國榜第 28 名且在榜 56 週；(5) encyclopedia.com 稱兩人原本堅決不想現場演出，首張專輯後世界巡迴持續到 2002 年、在美國巡演三次；(6) Songwriting Magazine 稱 Binns 與 Hardaker 自覺像『音樂圈的冒牌貨』、Binns 在 RAK 與 Nigel Godrich、Hardaker 同為學徒，三人合力蓋出位於 Swiss Cottage 的錄音室（Godrich 為 Radiohead 製作人，單源）；(7) 維基稱兩人 1997 年混音 Radiohead 時 Binns 也在《Kid A》掛名額外取樣（單源）。累計銷量與認證倍數（白金、金唱片）依規則不寫。\nlegacy 格偏薄，整體標 thin。f 欄『倫敦人』：encyclopedia 寫 met while still teenagers in London，Songwriting 訪談 Binns 自稱 West Londoners，兩源皆有。"
+ },
+ {
+  "key": "冨田勲",
+  "name": "冨田勲",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "冨田勲 1932 年生於東京，在慶應義塾大學讀藝術史期間自學配器與作曲，1955 年畢業後長年替日本電視、電影與劇場寫配樂，1960 年代末受 Wendy Carlos 與 Robert Moog 的成果啟發轉入電子音樂。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "bank"
+     },
+     {
+      "f": "冨田勲 1932 年 4 月 22 日生於東京，幼年隨父親在中國生活；2016 年 5 月 5 日過世，享年 84 歲。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     },
+     {
+      "f": "他的早期配樂包括手塚治虫的動畫《ジャングル大帝》（海外名 Kimba the White Lion）；1956 年他為參加墨爾本奧運的日本女子體操隊作曲伴奏音樂。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://www.tinymixtapes.com/news/rip-isao-tomita-pioneer-japanese-electronic-music",
+      "from": "new"
+     },
+     {
+      "f": "1971 年他把 Moog III 合成器進口到日本，成為把合成器音樂帶進日本的先驅；他在 1969 年於大阪的唱片行遇到 Wendy Carlos 的《Switched-On Bach》，直覺合成器正是自己要找的樂器。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://www.cisac.org/Newsroom/articles/memoriam-isao-tomita",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他不只用合成器重現原聲樂器的音色，還用它創造全新的音色，做出古典名曲的電子編曲。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "src2": "https://consequence.net/2016/05/r-i-p-isao-tomita-japenese-pioneer-of-electronic-music-has-died-at-age-84/",
+      "from": "new"
+     },
+     {
+      "f": "他的專輯多是熟悉古典曲目的電子版：Debussy（《Snowflakes Are Dancing》，1974）、Stravinsky《Firebird》、Mussorgsky《Pictures at an Exhibition》與 Holst《The Planets》。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "src2": "https://ja.wikipedia.org/wiki/冨田勲",
+      "from": "new"
+     },
+     {
+      "f": "他在自宅打造電子音樂工作室，以多軌錄音疊出管弦樂般的電子編曲；日文維基稱音色製作、全部聲部演奏、錄音到剪輯都出自他一人之手。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     },
+     {
+      "f": "1984 年他在奧地利 Linz 的多瑙河畔辦「Sound Cloud」戶外立體音響演出，聽眾約 8 萬人；此後他在世界各地辦了同系列演出。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1974 年的《Snowflakes Are Dancing》獲四項葛萊美提名（1975 年第 17 屆，入圍、未得獎），冨田勲成為第一位被葛萊美提名的日本人。",
+      "src": "https://www.cisac.org/Newsroom/articles/memoriam-isao-tomita",
+      "src2": "https://consequence.net/2016/05/r-i-p-isao-tomita-japenese-pioneer-of-electronic-music-has-died-at-age-84/",
+      "from": "new"
+     },
+     {
+      "f": "他的助手松武秀樹後來成為 Yellow Magic Orchestra 的合成器操作員，被稱為「第四位 YMO」；CISAC 的訃告也寫他的音樂影響了 YMO 的坂本龍一。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     },
+     {
+      "f": "Stevie Wonder 把冨田勲列為他最尊敬的音樂家之一；1987 年 Michael Jackson 訪日時參觀了他的錄音室。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     },
+     {
+      "f": "2015 年冨田勲獲日本國際交流基金獎（Japan Foundation Award），表彰他對促進日本與世界交流的貢獻。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "src2": "https://consequence.net/2016/05/r-i-p-isao-tomita-japenese-pioneer-of-electronic-music-has-died-at-age-84/",
+      "from": "new"
+     },
+     {
+      "f": "英文維基與 CISAC 都把他列為電子音樂與 space music 的先驅之一，日本音樂著作權團體 JASRAC 會長在他過世時稱他是「真正的先驅」。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "src2": "https://www.cisac.org/Newsroom/articles/memoriam-isao-tomita",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1971 年進口 Moog III；1974 年《Snowflakes Are Dancing》由 RCA 在美國發行；1984 年 Linz 的 Sound Cloud 演出。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1974 年《Snowflakes Are Dancing》獲葛萊美四項提名，為第一位被葛萊美提名的日本人。",
+    "src": "https://www.cisac.org/Newsroom/articles/memoriam-isao-tomita",
+    "src2": "https://consequence.net/2016/05/r-i-p-isao-tomita-japenese-pioneer-of-electronic-music-has-died-at-age-84/",
+    "from": "new"
+   },
+   {
+    "f": "1984 年在奧地利 Linz 舉辦 Sound Cloud 戶外立體音響演出，約 8 萬名觀眾。",
+    "src": "https://ja.wikipedia.org/wiki/冨田勲",
+    "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Consequence 稱《Snowflakes Are Dancing》登上 Billboard 古典榜冠軍；日文維基寫它最高第 2 名（1975 年 1 月 18 日當週）、1 名是下一張《展覧会の絵》。採日文維基，f 欄不寫該專輯榜位。",
+   "英文維基寫《Pictures at an Exhibition》為 1976 年，日文維基寫 1975 年 2 月（日本）、卡池標 1975；f 欄不寫專輯年份。",
+   "上線簡介寫『1960 年代末購入 Moog III』；日文維基、CISAC、Consequence 皆寫 1971 年進口 Moog III（1969 年只是在唱片行見到 Switched-On Bach）；採 1971 年，並列 pubIssues。"
+  ],
+  "pubIssues": [
+   {
+    "album": "展覧会の絵",
+    "claim": "1960 年代末購入 Moog III 模組合成器",
+    "problem": "日文維基寫 1969 年在大阪的唱片行遇到《Switched-On Bach》、1971 年秋個人進口 Moog III-P；CISAC 與 Consequence 也都寫 1971 年進口。『1960 年代末購入』與來源不符，建議改『1971 年進口』。",
+    "src": "https://ja.wikipedia.org/wiki/冨田勲"
+   }
+  ],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 一條（生平，單源英文維基，已作為 origin bank 條目；其中『1960 年代末受 Wendy Carlos 與 Robert Moog 啟發轉入電子音樂』與日文維基 1969 年遇《Switched-On Bach』一致）；published 兩張（展覧会の絵、Firebird）。同名檢查：卡池四張（Snowflakes Are Dancing、展覧会の絵、The Planets、Firebird）皆為冨田勲，無混卡。姓名照原文漢字『冨田勲』（上方『冨』為日文字形，保留）。\n搜尋：日文維基 API 全文（1）、WebSearch（2）、CISAC 訃告（3）、Consequence 訃告（4）、英文維基 API 全文（5）、Tiny Mix Tapes 訃告（6）、Synthtopia 訃告（7，僅確認過世與葬禮資訊，未取為 facts）。失敗請求 0。\n『非獨立』：J 與 E 為同站不同語版維基，常彼此參照；CISAC（著作權團體聯盟）、Consequence、Tiny Mix Tapes 為獨立來源。\n『第一位』類宣稱處理：『第一位被葛萊美提名的日本人』日文維基、CISAC、Consequence、英文維基開頭皆有，且均指《Snowflakes Are Dancing》，但本層未逐一查是否有反例，寫作層請用『被稱為』或『據多處報導』語氣；若不放心可降為 notes。\n單源未入 facts：(1) 日文維基稱他 4 歲起隨父親轉勤在青島、防府、北京長大，在北京天壇的回音壁聽到聲音是他音樂的原點；祖父起家業行醫，家族為醫生世家；(2) 日文維基稱他大二時合唱曲〈風車〉獲朝日新聞社與全日本合唱連盟比賽第 1 名，因而決意走作曲；(3) 日文維基稱把 Moog III 進口時被海關疑為軍用類比電腦，拿 Keith Emerson 的演奏照片證明是樂器，且沒有說明書、一度後悔買了『貴的鐵屑』；(4) 日文維基稱《月の光》（Snowflakes Are Dancing 的日本版名）母帶拿給日本各唱片公司都被拒，理由是『不是古典也不是流行、唱片行沒地方擺』，後來透過日本 RCA 的山本德源向紐約 RCA 總部牽線才簽約（人生故事類，單源，建議審稿時視需要補第二源）；(5) 日文維基稱 1975 年該專輯入選 NARM 1974 年度最佳古典唱片，《展覧会の絵》（1975 年 2 月）登上 Billboard 與 Cash Box 全美古典榜第 1、NARM 同獎項連兩年、並獲 1975 年日本唱片大賞企劃賞，《惑星》1978 年登上 Billboard 古典榜第 1，《Bermuda Triangle》與《大峡谷》各獲一次葛萊美提名（共三次提名）；(6) 日文維基稱 Francis Ford Coppola 欣賞《惑星》的立體音響，曾邀他為《地獄默示錄》配樂，因唱片公司專屬合約未成；(7) 英文維基稱《The Planets》發行時因 Gustav Holst 的女兒 Imogen Holst 拒絕授權引起爭議；(8) 日文維基稱 1979 年美國 Contemporary Keyboard 雜誌讀者票選為『最佳錄音室合成器演奏家』；(9) 日文維基與英文維基稱 2002 年《たそがれ清兵衛》獲 2003 年日本電影學院獎優秀音樂獎（日文維基另寫 2001 年《千年の恋 ひかる源氏物語》獲同獎，兩者不一致，未收）；(10) 英文維基稱 2007 年他編的 Debussy〈月光〉用在《Ocean's 13》。\n過世只收年份：2016 年 5 月 5 日，享年 84 歲（日文維基、英文維基、CISAC 一致）；不收死因與院所。\nera 那條為三個年份的並列，寫作層可拆開用。"
+ }
+]

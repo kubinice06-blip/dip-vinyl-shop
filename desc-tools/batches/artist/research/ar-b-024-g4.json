@@ -1,0 +1,913 @@
+[
+ {
+  "key": "popol vuh",
+  "name": "Popol Vuh",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 1969 年在西德慕尼黑成立，核心是鍵盤手 Florian Fricke，同組的有音響設計 Frank Fiedler 與打擊樂手 Holger Trülzsch。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "from": "new"
+     },
+     {
+      "f": "Florian Fricke 1944 年 2 月 23 日出生，從小學古典鋼琴，青少年時期進了弗萊堡的音樂學院。",
+      "src": "https://en.wikipedia.org/wiki/Florian_Fricke",
+      "src2": "https://vinylwriters.com/florian-frickes-mystical-genius/",
+      "from": "new"
+     },
+     {
+      "f": "Fricke 2001 年過世，樂團隨之實質解散。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期的 Popol Vuh 以 Moog III 合成器做電子音樂，這台 Moog 後來轉給了 Klaus Schulze。",
+      "src": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "src2": "https://en.wikipedia.org/wiki/Florian_Fricke",
+      "from": "new"
+     },
+     {
+      "f": "1972 年《Hosianna Mantra》起，Fricke 大致放下電子樂器，改以鋼琴為主，搭配雙簧管與 tambura 等原音樂器。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Hosianna_Mantra",
+      "from": "new"
+     },
+     {
+      "f": "樂團的音樂取材於西藏、非洲與前哥倫布時期等非西方傳統，往世界音樂的方向走。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fricke 與導演 Werner Herzog 長期合作，為《Aguirre》（1972）、《Heart of Glass》（1976）、《Nosferatu》（1979）與《Fitzcarraldo》（1982）等片配樂。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Aguirre》配樂的錄音橫跨 1972 至 1974 年，是樂團與 Herzog 電影合作的起點。",
+      "src": "https://en.wikipedia.org/wiki/Aguirre_(soundtrack)",
+      "src2": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1969 年在慕尼黑成軍。",
+    "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+    "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+    "from": "new"
+   },
+   {
+    "f": "1972 年《Hosianna Mantra》轉向原音樂器為主。",
+    "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+    "src2": "https://en.wikipedia.org/wiki/Hosianna_Mantra",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基樂團條目寫 Fricke 與 Herzog 1967 年相識，Fricke 條目寫 1960 年代初；兩源不一致，facts 不寫相識年份。",
+   "Fricke 條目寫他 1975 年 12 月前把 Moog 賣給 Schulze，vinylwriters 暗示 1972 年左右轉向原音；facts 不寫賣出年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫 research／published 皆空，從零查。實際請求 8 次：英文維基樂團條目、德文維基樂團條目、英文維基 Florian Fricke、WebSearch（影響與遺產）、英文維基 Aguirre 配樂、WebSearch（Fricke 訃聞）、vinylwriters 長文、英文維基 Hosianna Mantra；失敗 2 次（Britannica 404、AllMusic 403，未計入）。poolAlbums 四張（Affenstunde、In den Gärten Pharaos、Hosianna Mantra、Aguirre）都對得上這個德國樂團，無同名混卡。legacy 格僅一條兩源事實，狀態 thin：查到但單源、未收入 facts 的有（單源）英文維基 Fricke 條目引 Klaus Schulze 稱 Fricke 把電子音樂的思路轉成原音民族音樂的語言；（單源）vinylwriters 稱 Tangerine Dream 的 Edgar Froese 受 Fricke 影響並邀他在《Zeit》彈 Moog；（單源）英文維基 Aguirre 配樂條目寫樂評拿它與 Brian Eno 相提並論；（單源）英文維基樂團條目稱『Popol Vuh influenced many other European bands』並視樂團為 new age、ambient、世界音樂的先驅（搜尋摘要另顯示 soundohm 等店家文案有同樣說法，未開頁）。專名由來（取自瑪雅經典《Popol Vuh》，Fricke 與 Herzog 在大學圖書館讀到）只見搜尋摘要所引的維基 Fricke 條目，單源。兩個維基（英、德）為同站不同語言版，非獨立；其中成軍年、解散年的兩源即屬此類。《Hosianna Mantra》各樂評分數（Pitchfork 9.5 等）屬樂評榜單類，不收。Hosianna 的演奏者（韓籍女高音 Djong Yun、Conny Veit、Robert Eliscu、Klaus Wiese）只見單一維基，未收。"
+ },
+ {
+  "key": "prefuse 73",
+  "name": "Prefuse 73",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Guillermo Scott Herren 生於邁阿密、在亞特蘭大長大，父親是加泰隆尼亞人，母親有愛爾蘭與古巴血統。",
+      "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/prefuse-73",
+      "from": "new"
+     },
+     {
+      "f": "母親讓他從小學鈴木教學法的樂器訓練，他在亞特蘭大的商業嘻哈錄音室做過製作，後來到紐約念大學，開始用多個別名錄音。",
+      "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/prefuse-73",
+      "from": "new"
+     },
+     {
+      "f": "他的興趣橫跨嘻哈、龐克與電子樂；先在亞特蘭大的小夜店 MJQ 當 DJ，再替本地饒舌歌手做製作。",
+      "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/prefuse-73",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把饒舌與人聲切成碎片，當成節奏與質地的素材來用，成為 Prefuse 73 的招牌。",
+      "src": "https://www.clevescene.com/music/prefuse-73-1479549/",
+      "src2": "https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2001 年的《Vocal Studies + Uprock Narratives》是他以 Prefuse 73 名義發行的第一張專輯，由 Warp 出版。",
+      "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+      "src2": "https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年以 Prefuse 73 名義發行首作《Vocal Studies + Uprock Narratives》。",
+    "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+    "src2": "https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫 research／published 皆空，從零查。實際請求 8 次：英文維基 Prefuse 73、WebSearch（人聲切碎與影響）、encyclopedia.com 條目、英文維基《Vocal Studies + Uprock Narratives》、clevescene 評介、WebSearch（團名由來）、WebSearch（影響後輩）、factmag 2015 訪談；失敗 3 次（Warp 官網 403、Chicago Reader 429、music.fandom 402，未計入）。poolAlbums 四張（Vocal Studies、One Word Extinguisher、Surrounded by Silence、Everything She Touched Turned Ampexian）對得上 Scott Herren，無同名混卡。legacy 格查不到兩源：（單源）factmag 訪談稱他的早期作品是 2000 年代末 beat scene 的根基、他曾促成 Flying Lotus 與 Warp 簽約；Herren 自述 Warp 沒讓他發十週年紀念版，『改變了現在年輕人在做的事』；（單源）encyclopedia.com 稱他開創 glitchhop；（單源）英文維基《Vocal Studies》條目引 Sylvan Esso 的 Nick Sanborn 說 Herren 是他進入器樂嘻哈的入口、之後才聽到 Dilla 與 Madlib，另有 Pitchfork 2000–2004 年榜單第 84 名（榜單名次不收）。其他單源未收：（單源）clevescene 稱團名取自 1973 年前的 pre-fusion 爵士，那是他偏愛的取樣來源之一、另一個是人聲；（單源）factmag 稱他 1976 年生於邁阿密、1999 年與 Warp 簽約、2011 年雙方結束合作（共 8 張專輯、11 年）；（單源）encyclopedia.com 稱影響來源含 DJ Shadow、Aphex Twin、Squarepusher、Mouse on Mars，並以嘻哈視角重詮；（單源）英文維基《Vocal Studies》條目稱專輯在喬治亞州 Decatur 的錄音室製作，用兩台唱盤接 MPC、靠瞬間靜音多組聲道切換取樣來源做出 glitch，客串人聲（MF Doom、Aesop Rock、Mikah 9、Sam Prekop）是寄錄音帶給他的；Sacrifices 等後續作品與 Savath & Savalas 年份未核。Wikipedia 與 encyclopedia.com 的 origin 三條彼此部分取材重疊，視為半獨立；encyclopedia.com 條目疑為轉載自傳記辭典，非獨立程度未能確認。"
+ },
+ {
+  "key": "richie hawtin",
+  "name": "Richie Hawtin",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Richie Hawtin 1970 年生於英格蘭。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://www.paradisecity.be/en/news/richie-hawtin-and-the-long-arc-of-techno",
+      "from": "new"
+     },
+     {
+      "f": "他九歲（1979 年）隨父母搬到加拿大安大略省。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     },
+     {
+      "f": "他在安大略的溫莎一帶長大，那裡隔著河就是底特律；父親在通用汽車從事自動化與機器人技術，也愛電子音樂。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://www.paradisecity.be/en/news/richie-hawtin-and-the-long-arc-of-techno",
+      "from": "new"
+     },
+     {
+      "f": "他與 John Acquaviva 共同創辦 Plus 8 廠牌，這是他進入底特律 techno 圈的起點。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1993 年他開始用 Plastikman 這個名義發行作品，單曲〈Spastik〉與專輯《Sheet One》是起點。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     },
+     {
+      "f": "他自 1990 年代中期起是 minimal techno 的領軍人物，並以自己的 M_nus 廠牌推廣這種精簡、回到打擊節奏本質的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     },
+     {
+      "f": "他與 Native Instruments 合作，把 Traktor 這類數位工具帶進 DJ 現場。",
+      "src": "https://ra.co/dj/richiehawtin/biography",
+      "src2": "https://www.theacidmind.com/2025/01/richie-hawtin-the-visionary-pioneer-redefining-techno/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2015 年 7 月 14 日，英國哈德斯菲爾德大學頒給他榮譽博士，表彰他對音樂科技的貢獻。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://www.musicweek.com/news/read/richie-hawtin-receives-an-honorary-doctorate-of-the-university-of-huddersfield/062290",
+      "from": "new"
+     },
+     {
+      "f": "M_nus 廠牌成為精簡 minimal techno 的代名詞。",
+      "src": "https://www.paradisecity.be/en/news/richie-hawtin-and-the-long-arc-of-techno",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1998 年的 Plastikman 專輯《Consumed》是他在 minimal techno 上的重要作品。",
+      "src": "https://ra.co/dj/richiehawtin/biography",
+      "src2": "https://en.wikipedia.org/wiki/Plastikman",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年以 Plastikman 名義發行〈Spastik〉與《Sheet One》。",
+    "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+    "src2": "https://ra.co/dj/richiehawtin/biography",
+    "from": "new"
+   },
+   {
+    "f": "2015 年獲英國哈德斯菲爾德大學榮譽博士。",
+    "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+    "src2": "https://www.musicweek.com/news/read/richie-hawtin-receives-an-honorary-doctorate-of-the-university-of-huddersfield/062290",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Plus 8 創立年：英文維基寫 1989，某搜尋摘要（技術性傳記站）寫 1990，RA 只寫他『1980 年代中期』投入底特律圈；兩源不一致，facts 不寫創立年。",
+   "M_nus 創立年只見英文維基（1998），RA 未寫年份，不收年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫的研究稿只有《DE9》專輯層級的曲目資料，沒有身世與地位，三格全靠補查。已上線簡介（《DE9: Decks, EFX & 909》《Closer to the Edit》《Transitions》）與本次查到的生平沒有衝突，未發現 pubIssues（簡介裡的『三十八首曲目』『AllMusic John Bush 給滿分』等未核）。實際請求 8 次：英文維基 Richie Hawtin、WebSearch（生平與影響）、英文維基 Plastikman、RA 傳記、paradisecity 長文、WebSearch（榮譽博士）、Music Week 新聞、theacidmind 長文；無失敗請求。poolAlbums 四張（From My Mind to Yours、DE9 三張）皆為這位加拿大 DJ，無同名混卡。非獨立說明：RA 與 paradisecity、theacidmind 屬獨立媒體，但 RA 傳記與維基許多細節（Plus 8、Plastikman、Minus）重疊。M_nus『代名詞』那條的第二源 RA 只寫他透過 MINUS『開創並推廣 minimal techno』，語氣較弱，寫作層請維持保守措辭。Traktor 那條 theacidmind 只確認『與 Native Instruments 合作、Traktor 與 Ableton Live』，沒有細節。單源未收：（單源）RA 引 Mute 創辦人 Daniel Miller 稱他『a leader』『a pioneer』，並引《紐約時報》稱他是『電子舞曲世界的智性力量之一』；（單源）RA 稱他是 Ableton Live 的 beta 測試者、2004 年與 Acquaviva 創辦 Beatport；（單源）維基稱他 2002、2006、2008 年三度獲 DJ Awards 最佳 techno DJ（共 17 次入圍）、17 歲起當 DJ 並受底特律 The Shelter 的 Scott Gordon 指點、1998 年創立 M_nus；（單源）paradisecity 引他說『極簡是在最少的聲音裡找出最多的資訊』與後來『變成一種聲音，我就失去興趣』，並稱 DE9 把混音機制攤在現場；（單源）搜尋摘要稱 Plus 8 有助推出底特律第二波藝人、M_nus 旗下有 Magda、Troy Pierce、Gaiser。"
+ },
+ {
+  "key": "ron trent",
+  "name": "Ron Trent",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ron Trent 在芝加哥出生長大，父親在當地的唱片圈工作，家裡從小就有唱片與樂器。",
+      "src": "https://ra.co/dj/rontrent/biography",
+      "src2": "https://www.redbullmusicacademy.com/lectures/ron-trent-stoked-on-trent/",
+      "from": "new"
+     },
+     {
+      "f": "他 1986 年前後開始用鼓機與小鍵盤摸索創作。",
+      "src": "https://en.wikipedia.org/wiki/Ron_Trent",
+      "src2": "https://www.redbullmusicacademy.com/lectures/ron-trent-stoked-on-trent/",
+      "from": "new"
+     },
+     {
+      "f": "〈Altered States〉1990 年由 Armando 的 Warehouse Records 發行；Frankie Knuckles 與 David Morales 等 DJ 的力挺，讓這首歌打開知名度。",
+      "src": "https://www.redbullmusicacademy.com/lectures/ron-trent-stoked-on-trent/",
+      "src2": "https://www.theskinny.co.uk/clubs/interviews/ron-trent-interview",
+      "from": "new"
+     },
+     {
+      "f": "Frankie Knuckles 是他養成階段最重要的影響之一。",
+      "src": "https://www.theskinny.co.uk/clubs/interviews/ron-trent-interview",
+      "src2": "https://mixmag.net/feature/the-choice-ron-trent",
+      "from": "new"
+     },
+     {
+      "f": "他與底特律的 Chez Damier 合作，1993 年兩人共同創辦 Prescription 廠牌。",
+      "src": "https://en.wikipedia.org/wiki/Ron_Trent",
+      "src2": "https://mixmag.net/feature/the-choice-ron-trent",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把 house、爵士放克、neo-soul 與非洲等世界節奏揉在一起。",
+      "src": "https://ra.co/dj/rontrent/biography",
+      "src2": "https://mixmag.net/feature/the-choice-ron-trent",
+      "from": "new"
+     },
+     {
+      "f": "Prescription 走精緻的器樂 house 路線，強調旋律與音響保真度，而不是只做一次性的舞池唱片。",
+      "src": "https://www.theskinny.co.uk/clubs/interviews/ron-trent-interview",
+      "src2": "https://mixmag.net/feature/the-choice-ron-trent",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Prescription 被視為 1990 年代最具影響力的 deep house 廠牌之一，也啟發了後來的製作人。",
+      "src": "https://ra.co/dj/rontrent/biography",
+      "src2": "https://mixmag.net/feature/the-choice-ron-trent",
+      "from": "new"
+     },
+     {
+      "f": "他不只做 house，合作對象涵蓋非洲節拍鼓手 Tony Allen 等人。",
+      "src": "https://ra.co/dj/rontrent/biography",
+      "src2": "https://www.redbullmusicacademy.com/lectures/ron-trent-stoked-on-trent/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1990 年代後期他搬到紐約（布魯克林），在那裡把風格往爵士、neo-soul 與世界節奏延伸。",
+      "src": "https://en.wikipedia.org/wiki/Ron_Trent",
+      "src2": "https://ra.co/dj/rontrent/biography",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1990 年〈Altered States〉在 Warehouse Records 發行。",
+    "src": "https://en.wikipedia.org/wiki/Ron_Trent",
+    "src2": "https://www.redbullmusicacademy.com/lectures/ron-trent-stoked-on-trent/",
+    "from": "new"
+   },
+   {
+    "f": "1993 年與 Chez Damier 共同創辦 Prescription 廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Ron_Trent",
+    "src2": "https://mixmag.net/feature/the-choice-ron-trent",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "父親的職業：RA 與 Skinny 說在唱片圈、唱片 pool 相關，Red Bull Music Academy 說是芝加哥唱片 pool NADJA 的副總並打擊樂；KZSC 說是爵士樂手；facts 只寫『唱片圈工作』。",
+   "〈Altered States〉發行時的年齡：RA 寫 14 歲、KZSC 寫 17 歲、Mixmag 寫 18 歲；與 1990 年發行對不上的版本不採，facts 不寫年齡。",
+   "出道 EP 年份：Skinny 寫『80 年代中期』，維基與 Red Bull Music Academy 寫 1990 年發行；採 1990，1986–87 年是創作期。",
+   "上線簡介寫『1973 年生』：只見英文維基（5 月 23 日、芝加哥）與搜尋摘要，未取得第二個開頁來源，facts 不收出生年；簡介保留不動。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫研究稿空、已上線簡介只有《Altered States》一張，三格都靠補查。實際請求 8 次：英文維基 Ron Trent、RA 傳記、WebSearch（Prescription 與影響）、The Skinny 訪談、Mixmag 專訪、KZSC 介紹、WebSearch（Altered States 與 Djax）、Red Bull Music Academy 講座頁；無失敗請求。poolAlbums 四張（Altered States、Primitive Arts、What Do the Stars Say to You、Lift Off）皆為這位芝加哥製作人，無同名混卡。已上線簡介與本次查到的事實大致一致：1990、Armando 的 Warehouse Records、1993 Prescription 與 Chez Damier 都有兩源；簡介的 Djax-Up-Beats 1992 年再壓只看到搜尋摘要（Armando 1992 年混音收在 1994 年 Djax 的《The Warehouse Remixes》）與 RBMA 說荷蘭授權公司，年份不一致，列為未驗而非錯誤，故 pubIssues 為空。非獨立：RA、Mixmag 兩條 Prescription 與廠牌影響的敘述來源各自獨立。單源未收：（單源）KZSC 稱他是 deep house 子類型的先驅、『舞蹈音樂社群的基石』，影響無數 DJ 與製作人，並說 2022 年《What Do the Stars Say to You》有 Gigi Masin 與 Jean-Luc Ponty 參與；（單源）RA 稱 2016 年創辦 SODA 音樂教育計畫、與 Joe Claussell 共創 Sacred Medicine 廠牌，並提『近期葛萊美的肯定』（未查到具體屆次與類別，不收）；（單源）Mixmag 稱他常與 Theo Parrish、Omar S 並提；（單源）The Skinny 稱 Frankie Knuckles 2014 年過世後他寫了〈7th Heaven〉致敬；（單源）英文維基稱他 1990 年代後期在布魯克林成立 Urban Sound Gallery（USG）、與 Anthony Nicholson 合作，2000 年代回芝加哥；（單源）英文維基與搜尋摘要稱〈Altered States〉在 techno 聽眾中成為俱樂部熱門、介於 jacking house 與早期底特律 techno 之間。"
+ },
+ {
+  "key": "röyksopp",
+  "name": "Röyksopp",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Röyksopp 是挪威電子二人組，由 Svein Berge 與 Torbjørn Brundtland 組成，兩人都來自特羅姆瑟，1998 年在卑爾根成軍。",
+      "src": "https://en.wikipedia.org/wiki/R%C3%B6yksopp",
+      "src2": "https://snl.no/R%C3%B6yksopp",
+      "from": "new"
+     },
+     {
+      "f": "兩人從 1990 年代起活躍於特羅姆瑟的電子音樂圈，受到當地的 Biosphere（Geir Jenssen）等人啟發，早期也聽 Kraftwerk。",
+      "src": "https://en.wikipedia.org/wiki/R%C3%B6yksopp",
+      "src2": "https://no.wikipedia.org/wiki/R%C3%B6yksopp",
+      "from": "new"
+     },
+     {
+      "f": "他們後來從特羅姆瑟搬到卑爾根，在那裡正式成立 Röyksopp。",
+      "src": "https://rockheim.no/hall-of-fame/royksopp",
+      "src2": "https://no.wikipedia.org/wiki/R%C3%B6yksopp",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的音樂橫跨 electronica、house、ambient 與 synthpop，以溫暖的 downbeat 電子樂見長。",
+      "src": "https://snl.no/R%C3%B6yksopp",
+      "src2": "https://en.wikipedia.org/wiki/R%C3%B6yksopp",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2024 年 Röyksopp 與 Bel Canto、Bjørn Eidsvåg 一同入選挪威國家流行音樂博物館 Rockheim 的名人堂。",
+      "src": "https://en.wikipedia.org/wiki/Rockheim",
+      "src2": "https://rockheim.no/hall-of-fame/royksopp",
+      "from": "new"
+     },
+     {
+      "f": "2001 年的 Spellemannprisen（挪威的國家級音樂獎）Elektronika 類由 Röyksopp 的《Melody A.M.》得獎。",
+      "src": "https://no.wikipedia.org/wiki/Spellemannprisen_2001",
+      "src2": "https://no.wikipedia.org/wiki/R%C3%B6yksopp",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《Melody A.M.》2001 年由 Wall of Sound 發行，登上挪威專輯榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Melody_A.M.",
+      "src2": "https://rockheim.no/hall-of-fame/royksopp",
+      "from": "new"
+     },
+     {
+      "f": "2022 至 2023 年間，他們推出《Profound Mysteries》三部曲。",
+      "src": "https://en.wikipedia.org/wiki/R%C3%B6yksopp",
+      "src2": "https://snl.no/R%C3%B6yksopp",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年《Melody A.M.》獲 Spellemannprisen Elektronika 類獎。",
+    "src": "https://no.wikipedia.org/wiki/Spellemannprisen_2001",
+    "src2": "https://no.wikipedia.org/wiki/R%C3%B6yksopp",
+    "from": "new"
+   },
+   {
+    "f": "2024 年入選 Rockheim 名人堂。",
+    "src": "https://en.wikipedia.org/wiki/Rockheim",
+    "src2": "https://rockheim.no/hall-of-fame/royksopp",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Spellemannprisen 得獎總數：英文維基寫七座，挪威文維基與 Rockheim 搜尋摘要寫六座；兩源不一致，facts 不寫總數，只寫 2001 年 Elektronika 類一項（挪威文維基兩個頁面一致）。",
+   "Grammy 入圍：英文維基寫『兩次』，挪威文維基只列 2015 年 Best Dance/Electronica Album 一項、snl 未列屆次；屆次與類別不全，不收。",
+   "早期合作計畫：英文維基寫 1994 年與 Geir Jenssen 合作的 Aedena Cycle《Traveler's Dreams》，挪威文維基寫 1996 年 Brundtland 與 Rune Lindbæk 以 Alanïa 發行《Instinctive Travels》，兩者同時存在但說法來源不同，單源，不收。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Röyksopp、英文維基 Melody A.M.、snl.no 條目、挪威文維基 Röyksopp、英文維基 Rockheim、WebSearch（Rockheim 與 Spellemannprisen）、Rockheim 官網名人堂頁、挪威文維基 Spellemannprisen 2001；無失敗請求。poolAlbums 四張（Melody A.M.、Profound Mysteries II／III、Nebulous Nights）皆為這組挪威二人組，無同名混卡。非獨立：英文維基、挪威文維基為同站不同語言版；2001 年 Elektronika 得獎的兩源是同站（挪威文維基的樂團頁與年度獎項頁），非獨立；Rockheim 名人堂的兩源（維基 Rockheim 條目與 rockheim.no）在名單上一致。名人堂官方（可具名單源）：Rockheim 官網稱兩人『從 1990 年代起是特羅姆瑟電子音樂圈的核心人物』，並稱他們是『挪威流行音樂史上最大的音樂輸出之一』（原句 one of the greatest music exports in Norwegian popular music history 係英譯），作品被用在廣告、電玩與電視，『是全球許多人生活的配樂』，在美國、亞洲與歐洲都有市場；寫作層可寫成『Rockheim 稱…』。單源未收：（單源）英文維基《Melody A.M.》條目稱 2009 年 11 月 24 日《Verdens Gang》報紙票選其為 2000 年代挪威最佳專輯；（單源）snl 稱他們為 Coldplay、Beck、Peter Gabriel 做過混音，並與 Erlend Øye、Robyn、Susanne Sundfør、Astrid S 合作；（單源）英文維基稱 1990 年代卑爾根是挪威地下電子樂的中心、兩人在特羅姆瑟相識時分別 12 歲與 13 歲；（單源）挪威文維基稱 2002 年 Spellemannprisen 年度藝人、2005 年《The Understanding》流行團體類、2009 年《Junior》Elektronika 類、2024 年入選 Rockheim 名人堂、1999 年以單曲〈So Easy〉在 Telle Records 出道（出道類，不收）；（單源）挪威文維基稱 2001 年 Spellemannprisen 另有 Röyksopp〈Eple〉的年度音樂錄影帶獎（頁面摘要，未再核）。銷量、白金認證與全球銷售數字一律不寫（在世者規則）。"
+ },
+ {
+  "key": "seefeel",
+  "name": "Seefeel",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Seefeel 1992 年在倫敦成軍，吉他手兼編程的 Mark Clifford 是發起人；主唱兼吉他手 Sarah Peacock 是透過 NME 上的徵人廣告加入。",
+      "src": "https://en.wikipedia.org/wiki/Seefeel",
+      "src2": "https://rockandrollglobe.com/electronic/the-purity-of-seefeel/",
+      "from": "new"
+     },
+     {
+      "f": "1992 年底簽給 Too Pure，首張專輯《Quique》1993 年發行。",
+      "src": "https://en.wikipedia.org/wiki/Quique_(album)",
+      "src2": "https://en.wikipedia.org/wiki/Seefeel",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的聲音夾在 shoegaze 與電子音樂之間，把吉他質地與 ambient techno、dub 的製作手法融在一起。",
+      "src": "https://igloomag.com/reviews/seefeel-sol-hz-warp",
+      "src2": "https://rockandrollglobe.com/electronic/the-purity-of-seefeel/",
+      "from": "new"
+     },
+     {
+      "f": "《Quique》混合 techno、dream pop、ambient 與 dub，樂評給它的標籤包含 shoegaze、IDM 與 post-rock，分類始終模糊。",
+      "src": "https://en.wikipedia.org/wiki/Quique_(album)",
+      "src2": "https://en.wikipedia.org/wiki/Seefeel",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 1997 年起休團，2026 年的《Sol.Hz》是睽違約十五年的新專輯。",
+      "src": "https://igloomag.com/reviews/seefeel-sol-hz-warp",
+      "src2": "https://en.wikipedia.org/wiki/Seefeel",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年首張專輯《Quique》由 Too Pure 發行。",
+    "src": "https://en.wikipedia.org/wiki/Quique_(album)",
+    "src2": "https://en.wikipedia.org/wiki/Seefeel",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "RRG 長文寫樂團有『2004 年自名 專輯』，英文維基與 AllMusic 搜尋摘要寫 2011 年同名專輯（2010 年 EP《Faults》之後）；採 2011，且 facts 不寫該專輯年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Seefeel、英文維基《Quique》、WebSearch（Warp 與影響）、Rock and Roll Globe 長文、Igloo 的《Sol.Hz》評介、WebSearch（後輩影響）、英文維基 Maria Somerville（核對 Igloo 的說法，維基頁完全沒提 Seefeel）、Yu Su 的 Bandcamp 頁；無失敗請求。poolAlbums 四張（Quique、Succour、(Ch-Vox)、Sol.Hz）皆為這個倫敦樂團，無同名混卡。legacy 查不到兩源：（單源）Igloo 稱 Maria Somerville 與 Yu Su 等後輩點名受 Seefeel 影響（Maria Somerville 維基頁不提 Seefeel、只列 My Bloody Valentine 等影響來源，未核實；Yu Su Bandcamp 頁只證實她 2026 年專輯《Foundry》的〈One Place After Another〉有 Sarah Peacock 與 Mark Clifford 參與，沒有寫影響）；（單源）Warp 創辦人 Steve Beckett 說 Seefeel 是『第一支簽進 Warp 的有吉他的樂團』，英文維基引用、Igloo 與 AllMusic 搜尋摘要也寫『the label's first guitar-wielding act』，但屬『第一』類宣稱、來源多半轉述同一句、拿不準有無反例，不放 facts；（單源）英文維基稱 John Peel 在 BBC Radio 1 播放他們的 demo 後 Too Pure 簽約，Quique 條目只寫 1992 年底簽約、1993 年 7 月錄音；（單源）RRG 與 Igloo 兩篇樂評稱它是『1990 年代最具前瞻性的樂團之一』『走在時代前面』，屬樂評形容詞、非共識，不收；（單源）RRG 稱他們受 Kraftwerk、My Bloody Valentine、Cocteau Twins 影響、深受 rave 文化啟發，《Pure, Impure》收錄 Aphex Twin 的混音；（單源）Quique 維基條目引 Pitchfork 8.4 分、Pitchfork『50 張最佳 shoegaze』第 13 名、Paste『50 張最佳 post-rock』第 8 名（雜誌榜單名次不收）；（單源）Quique 維基條目稱《Melody Maker》1993 年度專輯名單（榜單名次不收）。非獨立：Quique 條目與樂團條目同為英文維基。"
+ },
+ {
+  "key": "selena gomez",
+  "name": "Selena Gomez",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Selena Gomez 1992 年 7 月 22 日生於美國德州的 Grand Prairie，名字取自 Tejano 歌手 Selena Quintanilla。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     },
+     {
+      "f": "她 2002 年從 PBS 的《Barney & Friends》開始演戲，2007 至 2012 年在迪士尼頻道的《Wizards of Waverly Place》演 Alex Russo 而走紅。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     },
+     {
+      "f": "她主唱 Selena Gomez & the Scene，樂團發行過三張專輯。",
+      "src": "https://www.britannica.com/biography/Selena-Gomez",
+      "src2": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2013 年的《Stars Dance》是她的個人首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     },
+     {
+      "f": "2015 年《Revival》以 dance-pop 與 electropop 為主，帶 R&B 氣息，評論把它看成她轉向成熟的一張。",
+      "src": "https://en.wikipedia.org/wiki/Revival_(Selena_Gomez_album)",
+      "src2": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "from": "new"
+     },
+     {
+      "f": "2020 年的《Rare》是《Revival》之後隔了約五年的專輯，期間她公開談過狼瘡診斷與腎臟移植。",
+      "src": "https://en.wikipedia.org/wiki/Rare_(Selena_Gomez_album)",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Lose You to Love Me〉是《Rare》的先行單曲，2019 年 10 月 23 日發行，成為她第一首 Billboard Hot 100 冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Lose_You_to_Love_Me",
+      "src2": "https://www.wionews.com/entertainment/selena-gomez-gets-her-first-no-1-on-billboard-hot-100-with-lose-you-to-love-me-259984",
+      "from": "new"
+     },
+     {
+      "f": "她是聯合國兒童基金會（UNICEF）的親善大使，並長期倡議心理健康。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2020 年她創辦美妝品牌 Rare Beauty。",
+      "src": "https://en.wikipedia.org/wiki/Selena_Gomez",
+      "src2": "https://www.britannica.com/biography/Selena-Gomez",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2019 年〈Lose You to Love Me〉成為她第一首 Billboard Hot 100 冠軍。",
+    "src": "https://en.wikipedia.org/wiki/Lose_You_to_Love_Me",
+    "src2": "https://www.wionews.com/entertainment/selena-gomez-gets-her-first-no-1-on-billboard-hot-100-with-lose-you-to-love-me-259984",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Britannica 寫《Emilia Pérez》『贏得坎城金棕櫚獎』，英文維基寫她 2024 年與同片女演員群共同獲坎城最佳女演員獎；兩者不一致，Britannica 該句與事實不符（該片獲的是評審團獎），facts 不收坎城任何一項，也不寫金棕櫚。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Selena Gomez、Britannica、英文維基《Revival》、英文維基〈Lose You to Love Me〉、WebSearch（Billboard 第一名）、wionews 報導、英文維基《Rare》、WebSearch（Time 100 與公益）；失敗 1 次（Billboard 網址 307 轉址到 tollbit，未取得，未計入）。身分：poolAlbums 四張（Stars Dance、Revival、Rare、I Said I Love You First）皆為美國流行歌手 Selena Gomez，與 Selena Quintanilla 無關，無同名混卡。本位『名字取自 Selena Quintanilla』只是取名由來，不可寫成兩人混為一談。單源未收：（單源）英文維基《Revival》條目稱 2014 年自 Hollywood Records 轉到 Interscope、該專輯登上 Billboard 200 冠軍、靈感來自 Christina Aguilera 的《Stripped》並共同寫了 16 首中的 12 首；（單源）英文維基《Rare》條目稱該專輯登上 Billboard 200 冠軍、『是 2020 年代第一張登頂的專輯』（屬『第一』類，拿不準，不收）、主題為自愛與賦權、客串有 Kid Cudi 與 6lack；（單源）英文維基稱 2020 年入選 Time 100（搜尋摘要同說，未開頁）、Rare Impact Fund 目標十年募 1 億美元（搜尋摘要）；（單源）英文維基稱 2024 年與《Emilia Pérez》同片女演員共同獲坎城最佳女演員獎、Only Murders in the Building 艾美提名；（單源）Britannica 稱樂團 2012 年解散、2020 年公開雙極性情感疾患、2022 紀錄片《Selena Gomez: My Mind and Me》。〈Lose You to Love Me〉獎項（2020 iHeartRadio 最佳歌詞入圍、2021 ASCAP 流行音樂獎得獎）只見英文維基單源，未收。銷量、認證、串流、Instagram 追蹤數一律不寫（在世者規則）；Rolling Stone、Vulture 等榜單名次不收。"
+ },
+ {
+  "key": "shackleton",
+  "name": "Shackleton",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sam Shackleton 出生於英格蘭蘭開夏。",
+      "src": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "src2": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "from": "new"
+     },
+     {
+      "f": "他不是從舞曲文化起家，青少年時期先玩龐克樂團，2000 年代初才轉向電子製作。",
+      "src": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "src2": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "from": "new"
+     },
+     {
+      "f": "他透過倫敦 dubstep 夜店 FWD>> 與 Appleblim（Laurie Osborne）等人接觸，認識了 grime 與 dubstep。",
+      "src": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "src2": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "from": "new"
+     },
+     {
+      "f": "2005 年他與 Appleblim 共同創辦 Skull Disco 廠牌，2008 年收攤，前後發行了十張黑膠。",
+      "src": "https://en.wikipedia.org/wiki/Skull_Disco",
+      "src2": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "Skull Disco 結束後他搬到柏林，後來另創 Woe to the Septic Heart! 廠牌。",
+      "src": "https://ra.co/news/10965",
+      "src2": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂以綿密的打擊樂與深沉的低頻為核心；Skull Disco 的出版品常見非洲打擊樂、民族人聲取樣與厚重的次低音。",
+      "src": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "src2": "https://en.wikipedia.org/wiki/Skull_Disco",
+      "from": "new"
+     },
+     {
+      "f": "他的作品常被形容帶有濃重的陰鬱氛圍，介於 dubstep、garage 與 techno 之間。",
+      "src": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "src2": "https://www.andrewliles.com/10-questions/sam-shackleton/",
+      "from": "new"
+     },
+     {
+      "f": "2009 年的《Three EPs》由 Perlon 發行，原本是以三組 EP 的形式構想。",
+      "src": "https://ra.co/news/10965",
+      "src2": "https://en.wikipedia.org/wiki/Shackleton_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Skull Disco 被樂評視為把 dubstep 帶向更抽象、更有機方向的重要廠牌，The Quietus 稱它是新一代英國廠牌中影響力很大的一個。",
+      "src": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+      "src2": "https://en.wikipedia.org/wiki/Skull_Disco",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2005 年與 Appleblim 創辦 Skull Disco 廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Skull_Disco",
+    "src2": "https://thequietus.com/interviews/shackleton-interview-bloc-weekend/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基與搜尋摘要稱《Three EPs》是他的首張專輯；RA 訪談中 Shackleton 自己說『我不把它看成專輯』，刻意以三張 EP 的形式發行；facts 不寫『首張專輯』。",
+   "英文維基 Skull Disco 條目寫廠牌以布里斯托為據點，同條目又寫 Shackleton 在倫敦辦 Skull Disco 夜晚，地點兩說並存；facts 不寫地點。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Shackleton (musician)、RA 藝人頁（內容極少）、WebSearch（生平）、The Quietus 專訪、RA 新聞《Three EPs》訪談、英文維基 Skull Disco、WebSearch（影響與 Honest Jon's）、Andrew Liles 十問；失敗 1 次（英文維基《Music for the Quiet Hour》404，未計入）。poolAlbums 四張（Three EPs、Music for the Quiet Hour、The Drawbar Organ EPs 合輯、Primal Forms）皆為英國製作人 Sam Shackleton；注意 Simon Shackleton（Elite Force）是另一人，一條都沒收，無同名混卡。legacy 僅一條兩源且為媒體評價（The Quietus 與維基引 The Wire 的 Derek Walmsley），性質接近單一樂評，請寫作層保守，不寫成共識。單源未收：（單源）英文維基稱 Shackleton 2008 年搬到柏林、2010 年成立 Woe to the Septic Heart!、與 Pinch、Ernesto Tomasini、Vengeance Tenfold 合作；（單源）英文維基引他說『我沒有刻意引用非洲或中東音樂，只是用我喜歡的聲音』；（單源）Quietus 引他說『我把它完全看成俱樂部音樂，不太喜歡 electronica 這種說法』『我不是天生會做音樂的人』；（單源）Andrew Liles 十問裡他說對自己影響最大的唱片『大概是 Godflesh 的《Streetcleaner》』；（單源）RA 新聞稱《Three EPs》2009 年 10 月 12 日發行、九首曲子；（單源）Skull Disco 維基稱廠牌名取自一本談喀麥隆喪葬儀式的書（來自 Shackleton 條目，Skull Disco 條目未再核）、Derek Walmsley 稱該廠牌顯示 dubstep『終於進化到不受僵硬公式束縛、走向新的有機成熟』；（單源）搜尋摘要稱 2011 年 Pinch & Shackleton 專輯由 Honest Jon's 發行（未開頁）。非獨立：英文維基 Shackleton 條目與 Skull Disco 條目同站。Grokipedia 出現在搜尋結果，不當來源。"
+ },
+ {
+  "key": "soft cell",
+  "name": "Soft Cell",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Soft Cell 是英國的合成器二人組，主唱 Marc Almond 與電子樂器手 Dave Ball 在利茲理工學院（Leeds Polytechnic）念書時相識並組團。",
+      "src": "https://en.wikipedia.org/wiki/Soft_Cell",
+      "src2": "https://en.wikipedia.org/wiki/Marc_Almond",
+      "from": "new"
+     },
+     {
+      "f": "Dave Ball 2025 年過世，享年 66 歲。",
+      "src": "https://www.yahoo.com/entertainment/music/articles/soft-cell-dave-ball-famous-194311083.html",
+      "src2": "https://www.queerty.com/the-unexpected-gay-power-of-soft-cells-synth-pop-classic-tainted-love-20251023/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們是 synth-pop 的代表之一，把合成器電子聲響配上 Northern soul 的情感與歌舞秀式的戲劇性。",
+      "src": "https://en.wikipedia.org/wiki/Soft_Cell",
+      "src2": "https://en.wikipedia.org/wiki/Marc_Almond",
+      "from": "new"
+     },
+     {
+      "f": "1981 年他們翻唱 Gloria Jones 1960 年代的 Northern soul 冷門歌曲〈Tainted Love〉，成了代表作。",
+      "src": "https://en.wikipedia.org/wiki/Tainted_Love",
+      "src2": "https://www.queerty.com/the-unexpected-gay-power-of-soft-cells-synth-pop-classic-tainted-love-20251023/",
+      "from": "new"
+     },
+     {
+      "f": "首張專輯《Non-Stop Erotic Cabaret》（1981）寫的是離家的年輕人與倫敦 Soho 的夜生活與都市頹靡。",
+      "src": "https://en.wikipedia.org/wiki/Soft_Cell",
+      "src2": "https://en.wikipedia.org/wiki/Non-Stop_Erotic_Cabaret",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Tainted Love〉登上英國單曲榜冠軍，並在美國 Billboard Hot 100 連續停留 43 週，最高第 8 名，當時創下上榜最久的紀錄。",
+      "src": "https://en.wikipedia.org/wiki/Tainted_Love",
+      "src2": "https://www.queerty.com/the-unexpected-gay-power-of-soft-cells-synth-pop-classic-tainted-love-20251023/",
+      "from": "new"
+     },
+     {
+      "f": "他們被認為替後來的合成器二人組鋪了路，包括 Pet Shop Boys 與 Erasure。",
+      "src": "https://en.wikipedia.org/wiki/Soft_Cell",
+      "src2": "https://www.yahoo.com/entertainment/music/articles/soft-cell-dave-ball-famous-194311083.html",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1981 年首張專輯《Non-Stop Erotic Cabaret》與單曲〈Tainted Love〉發行。",
+    "src": "https://en.wikipedia.org/wiki/Non-Stop_Erotic_Cabaret",
+    "src2": "https://en.wikipedia.org/wiki/Tainted_Love",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：英文維基 Soft Cell 條目寫 1978，英文維基 Marc Almond 條目與搜尋摘要寫 1977，Yahoo 報導寫 1979；三說不一致，facts 不寫成軍年。",
+   "Dave Ball 過世日：Yahoo 寫 10 月 22 日、Queerty 寫 10 月 23 日（疑為時區或發稿差異）；facts 只寫年份與歲數 66。",
+   "〈Tainted Love〉原曲年份：英文維基寫 1964 年錄音、1965 年 B 面發行；facts 只寫『1960 年代』。",
+   "美國榜的『43 週』紀錄是當時的紀錄（Queerty 與維基用 Guinness World Record 說法），後來上榜週數已被打破；facts 已加『當時』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Soft Cell、Britannica（只有零星提及）、英文維基《Non-Stop Erotic Cabaret》、英文維基〈Tainted Love〉、WebSearch（身世與影響）、Yahoo 訃聞報導、Queerty 報導、英文維基 Marc Almond；失敗 3 次（Variety 與 Billboard 訃聞皆 307 轉址到 tollbit 網域，未跟隨；英文維基 Dave Ball (electronic musician) 404；未計入）。poolAlbums 四張（Non-Stop Erotic Cabaret、This Last Night in Sodom、*Happiness Not Included、*Happiness Now Completed）皆為這個英國二人組，無同名混卡。legacy 查到的多為單源：（單源）英文維基稱他們影響 Pet Shop Boys、Erasure、Nine Inch Nails（本位 facts 只收有兩源的 Pet Shop Boys 與 Erasure）；（單源）Yahoo 報導稱專輯『改變了流行樂的走向』、為 Yazoo、Eurythmics、Pet Shop Boys、Erasure 鋪路，單曲在 17 國登頂，Ball 與 Bowie、Kylie Minogue、Pet Shop Boys 合作並與 Richard Norris 組 The Grid；（單源）英文維基《Non-Stop Erotic Cabaret》條目稱 Mike Thorne 製作、用借來的 Synclavier、Almond 轉述 Neil Tennant 把專輯看成一齣關於郊區男子去 Soho 找尋狂野的『音樂劇』、入選《1001 Albums You Must Hear Before You Die》、〈Sex Dwarf〉MV 在英國被禁（榜單與銷量名次不收）；（單源）Queerty 稱 Almond 是同志、當時尚未公開出櫃，〈Tainted Love〉在愛滋危機期間對同志觀眾有特殊共鳴，Almond 說它『成了那個年代的配樂』；（單源）英文維基 Marc Almond 條目稱 2018 年新年授勳獲頒 OBE（表彰對藝術與文化的貢獻）、2013 年獲 Ivors Inspiration Award（建議寫作層慎用，單源）；Almond 出生年與家鄉也只見該維基條目（單源）。非獨立：英文維基四個條目同站；Yahoo 與 Queerty 是各自獨立的報導，Yahoo 內容疑似轉載通訊稿。銷量與認證不寫（在世者規則）；NME、VH1、Rolling Stone 榜單名次不收。Dave Ball 過世只收年份、歲數與公開層級，不收任何細節。"
+ },
+ {
+  "key": "telefon tel aviv",
+  "name": "Telefon Tel Aviv",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Telefon Tel Aviv 是美國電子音樂團體，1999 年由高中同學 Joshua Eustis 與 Charles Cooper 在路易斯安那州紐奧良組成。",
+      "src": "https://en.wikipedia.org/wiki/Telefon_Tel_Aviv",
+      "src2": "https://en.wikipedia.org/wiki/Joshua_Eustis",
+      "from": "new"
+     },
+     {
+      "f": "2009 年 1 月《Immolate Yourself》發行兩天後，Charles Cooper 過世；此後 Eustis 獨自延續 Telefon Tel Aviv 這個名字。",
+      "src": "https://en.wikipedia.org/wiki/Immolate_Yourself",
+      "src2": "https://en.wikipedia.org/wiki/Joshua_Eustis",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團的風格歸在 IDM、glitch 與 ambient techno 之間。",
+      "src": "https://en.wikipedia.org/wiki/Telefon_Tel_Aviv",
+      "src2": "https://daily.bandcamp.com/2016/12/16/optimism-tragedy-and-idm-josh-eustis-returns-to-telefon-tel-aviv/",
+      "from": "new"
+     },
+     {
+      "f": "他們把 IDM 的電子音色與 R&B、soul 的人聲情感結合在一起。",
+      "src": "https://daily.bandcamp.com/2016/12/16/optimism-tragedy-and-idm-josh-eustis-returns-to-telefon-tel-aviv/",
+      "src2": "https://en.wikipedia.org/wiki/Map_of_What_Is_Effortless",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2001 年首張專輯《Fahrenheit Fair Enough》由 Hefty 發行；2016 年 Ghostly International 重發，並加入 1999 年的存檔曲目。",
+      "src": "https://en.wikipedia.org/wiki/Fahrenheit_Fair_Enough",
+      "src2": "https://daily.bandcamp.com/2016/12/16/optimism-tragedy-and-idm-josh-eustis-returns-to-telefon-tel-aviv/",
+      "from": "new"
+     },
+     {
+      "f": "Cooper 過世後，Eustis 曾擔任 Nine Inch Nails 與 Puscifer 的巡演成員。",
+      "src": "https://en.wikipedia.org/wiki/Joshua_Eustis",
+      "src2": "https://daily.bandcamp.com/2016/12/16/optimism-tragedy-and-idm-josh-eustis-returns-to-telefon-tel-aviv/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年首張專輯《Fahrenheit Fair Enough》在 Hefty 發行。",
+    "src": "https://en.wikipedia.org/wiki/Fahrenheit_Fair_Enough",
+    "src2": "https://en.wikipedia.org/wiki/Telefon_Tel_Aviv",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Cooper 過世的日期與情形：英文維基 Joshua Eustis 條目寫 2009 年 1 月 22 日、Immolate Yourself 條目寫專輯 1 月 20 日發行後兩天；某搜尋摘要寫 2009 年 3 月 1 日；兩源（Eustis 條目與 Immolate 條目）一致，採 1 月，3 月之說不採；死因三處說法互異（維基 Immolate 條目、維基 Telefon 條目與搜尋摘要各不相同），一律不收死因，facts 只寫年月與發行後兩天這個公開時序。",
+   "《Map of What Is Effortless》的廠牌：搜尋與記憶中常把 BPitch Control 與該作混在一起，英文維基該專輯條目寫 2004 年 1 月 27 日 Hefty 發行；BPitch Control 是《Immolate Yourself》（2009 年 1 月 20 日）的發行商。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Telefon Tel Aviv、英文維基《Immolate Yourself》、WebSearch（身世）、Bandcamp Daily 2016 專訪、英文維基 Joshua Eustis、英文維基《Fahrenheit Fair Enough》、英文維基《Map of What Is Effortless》、WebSearch（遺產與《Dreams Are Not Enough》）；失敗 2 次（RA 傳記 403、Ghostly 藝人頁只有名稱，未計入）。poolAlbums 四張（Fahrenheit Fair Enough、Map of What Is Effortless、Immolate Yourself、Dreams Are Not Enough）皆為這個美國二人組，無同名混卡。研究層提醒：研究層共用規則（research-base）要求《Immolate Yourself》必寫『發行兩天後 Cooper 辭世』，本位已以兩源確認該時序，寫作層請維持克制、不寫死因。legacy 格查不到兩源：（單源）搜尋摘要稱他們 2000 年代的三張專輯是『後 IDM 合成歌曲寫作』的有影響力之作，並引 RA 評《Dreams Are Not Enough》『達成了前三張都沒做到的事』（皆只見搜尋摘要，未開頁）。單源未收：（單源）英文維基 Eustis 條目稱他 1977 年 7 月 16 日生於紐奧良、成長期受 Depeche Mode、OMD、Talk Talk 等 1980 年代初電子樂影響，2013 年任 Nine Inch Nails 巡演成員、2011 年共同製作 Puscifer 的《Conditions of My Parole》、個人計畫 Sons of Magdalene 首張專輯 2014 年發行、也是 The Black Queen 的創始成員；（單源）Bandcamp Daily 引 Eustis 說首張專輯想把南方饒舌與 R&B、英美 IDM、後搖滾放在一起（『pan-genre experimentation』），並稱他在 2016 年重返 Telefon Tel Aviv；（單源）英文維基 Immolate Yourself 條目稱該作轉向較易親近的歌曲寫作、受 minimal wave、krautrock 與 psychedelic 影響，Billboard 電子專輯榜最高第 17 名（兩個維基條目都有，同站、屬榜單名次，不收）；（單源）英文維基 Map of What Is Effortless 條目稱該作有 Loyola University Chamber Orchestra 與客座歌手參與、AllMusic 4.5 星（樂評分數不收）；（單源）搜尋摘要稱 2019 年 9 月 27 日 Ghostly 發行《Dreams Are Not Enough》，是 Eustis 自 2009 年以來首張以 Telefon Tel Aviv 名義的專輯（英文維基 Telefon 條目也寫 2019 年發行該作，但屬年份單源）。非獨立：本位 8 條 facts 的『兩源』中，凡兩源皆為英文維基者（Telefon、Eustis、Immolate、Fahrenheit、Map 各條目）互為同站不同條目，非獨立；Bandcamp Daily 是獨立來源。"
+ }
+]

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 217 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 220 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -221,3 +221,6 @@
 | ar-b-024 | Bernard Parmegiani | Chants magnétiques | 法文維基記他 1959 至 1992 年是 GRM 的常任成員 | 待核：本層讀到的法文維基摘要寫 1960 年因 Schaeffer 邀請加入、到 1992 年；英文維基寫 1959 年加入。兩種維基對起始年不一致，上線簡介若要保留年份，建議改寫成不分起始年的說法或回頭對照法文維基原文（本層只讀到 WebFetch 摘要）。 | https://fr.wikipedia.org/wiki/Bernard_Parmegiani |
 | ar-b-024 | Faithless | Reverence | Rollo、Sister Bliss 與 Maxi Jazz 在 1996 年 4 月推出的首張專輯 | 待核：CBS 訃聞與英文維基 Maxi Jazz 條目都寫創團成員還有 Jamie Catto，簡介只列三人，可能漏了一位創團成員；Catto 是否參與《Reverence》錄音本層未查，請店主對照專輯人員名單後決定是否補上。 | https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/ |
 | ar-b-024 | Masonna | Inner Mind Mystique | 團名是一整句法文的縮寫……山崎マゾ 1987 年起用它當這個獨作計畫的名字 | 維基〈Masonna〉寫團名是マゾ與女的組合、亦為 Madonna 的諧音，縮寫展開只是『有時』的另一種讀法（且有兩種展開）；簡介把縮寫說成唯一由來，過度肯定。建議改成『名字常被拆成一句法文縮寫來讀』。 | https://en.wikipedia.org/wiki/Masonna |
+| ar-b-025 | 冨田勲 | 展覧会の絵 | 1960 年代末購入 Moog III 模組合成器 | 日文維基寫 1969 年在大阪的唱片行遇到《Switched-On Bach》、1971 年秋個人進口 Moog III-P；CISAC 與 Consequence 也都寫 1971 年進口。『1960 年代末購入』與來源不符，建議改『1971 年進口』。 | https://ja.wikipedia.org/wiki/冨田勲 |
+| ar-b-025 | Cliff Martinez | Solaris | 本片獲 2003 年 Satellite Awards 最佳音效 | 獎項屬於電影音響（得主 Larry Blake），與 Martinez 的配樂無關；字面無誤但放在配樂簡介易被讀成配樂得獎，建議改寫或刪去 | https://en.wikipedia.org/wiki/Solaris_(2002_film) |
+| ar-b-025 | DJ Koze | Kosi Comes Around | Stefan Kozalla 出身德國 Flensburg | en 維基寫生於 Flensburg，de 維基與 Pampa Records 官方頁寫生於 Marrakech，來源衝突；建議改成『在 Flensburg 的嘻哈圈起家』較穩。 | https://de.wikipedia.org/wiki/DJ_Koze |
