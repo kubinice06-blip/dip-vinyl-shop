@@ -226,3 +226,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 019 g2 交件（QA 本組 0）。thin：Seu Jorge、Shania Twain。pubIssues 3（Seu Jorge《Cru》張數；Tammy Wynette《Your Good Girl's》搬家年 1965→1966；The Bothy Band《1975》七人→六人）→ 本機待核。w1（g1+g2）派出。
 - 019 g4 交件（QA 本組 0）。thin：農村武裝青年。單源未收：鳳飛飛褒揚令與金鐘特別貢獻獎、農村武裝青年金音獎、知名定男獲獎、大工哲弘縣文化功勞賞、a-ha Rockheim 名人堂、BTS 自述受 BIGBANG 影響。pubIssues 2（周雲蓬《牛羊下山》獎項名稱；《沉默如謎的呼吸》2003／2004）→ 本機待核。
 - 019 g3 交件（QA 0）。thin：The Mountain Goats（失敗請求 10 次超限，未取得內容）、The Tallest Man on Earth、William Tyler（地位 none，失敗 5 次）。Tim McGraw 2026 鄉村音樂名人堂獲選經主線 WebSearch 核實（Rolling Stone、Variety），授勳典禮 2026-10-18 未舉行 → 寫「獲選」。pubIssues 8（〈わかれうた〉破百萬→逾 70 萬；《อเมริกันอันตราย》時距；William Tyler《Impossible Truth》「Merge 第一張」；คาราวาน 空窗年與 1982《Deuan Phen》；あがた森魚《日本少年》廠牌與共同製作；中島みゆき〈世情〉年份與〈ファイト!〉廣告）→ 本機待核。w2（g3+g4）派出。
+- 019 w1 交件，審稿無修正。

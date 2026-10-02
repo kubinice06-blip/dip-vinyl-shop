@@ -217,5 +217,299 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "補查 6 次：英文維基、義大利文維基、WebSearch（逝世與致哀）、ANSA、Sky TG24、Treccani。兩源皆實際開頁讀到（WebSearch 結果僅作線索）。同名檢查：卡池四張專輯 1979–1988 皆為這位西西里歌手，無混卡。英文維基與義大利文維基同站不同語版，非完全獨立；Treccani、ANSA、Sky 各自獨立。未收（單源）：總統 Mattarella 稱他是『博學而細緻的藝術家，以其獨特風格迷倒本國與國外的廣大聽眾』（ANSA 頁與搜尋摘要，Sky 頁沒有，單源）；Vasco Rossi、Piero Pelù、Marco Mengoni、Roby Facchinetti 與教廷生命科學院的致哀（ANSA 單源，且只是弔唁，不是點名受影響）；1978 年 Stockhausen 獎（Treccani 單源，未見他處，需防字面誤會，不收）；Per Elisa 由 Alice 唱在 1981 年 Sanremo 奪冠（Treccani 單源）；1960 年代中期以抗議歌曲起步（義大利文維基單源）；2003 年電影處女作《Perduto amor》獲銀絲帶新導演獎（英文維基單源）；1989 年在聖若望保祿二世面前演出（事實庫 Fisiognomica 義大利文維基單源，未補第二源）。未找到有出處的後輩點名受影響。他逝世年份與日期已兩源一致，死因（英文維基提及）不收。bank 的 Patriots、Fisiognomica 事實各自為義大利文維基單源，與上線簡介一致；『第一首阿拉伯語歌』屬第一類宣稱且單源，寫作層宜降為次要。2012 年 11 月西西里大區旅遊與文化職位（英文維基稱獲邀並辭任、義大利文維基稱任至 2013 年 4 月且拒領薪酬）與政治事件不屬音樂貢獻，不收。"
+ },
+ {
+  "key": "françoise hardy",
+  "name": "Françoise Hardy",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Françoise Hardy 1944 年 1 月 17 日生於巴黎，由單親母親撫養，住在巴黎 rue d'Aumale 一間簡樸的兩房公寓。",
+      "src": "https://en.wikipedia.org/wiki/Françoise_Hardy",
+      "src2": "https://fr.wikipedia.org/wiki/Françoise_Hardy",
+      "from": "new"
+     },
+     {
+      "f": "她少女時從 Radio Luxembourg 聽到搖滾與流行音樂（英文節目裡的 Elvis Presley、Cliff Richard 等人），1961 年與 Vogue 唱片簽約。",
+      "src": "https://fr.wikipedia.org/wiki/Françoise_Hardy",
+      "src2": "https://www.irishtimes.com/obituaries/2024/07/13/francoise-hardy-french-singer-for-whom-fame-was-a-gilded-prison/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她是 yé-yé 世代裡少見自己寫歌的人，作品以憂鬱、感傷的旋律與民謠式的情歌見稱，寫的多半是她自己的經驗與疑惑。",
+      "src": "https://en.wikipedia.org/wiki/Françoise_Hardy",
+      "src2": "https://www.irishtimes.com/obituaries/2024/07/13/francoise-hardy-french-singer-for-whom-fame-was-a-gilded-prison/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2006 年她獲法蘭西學術院頒發「法國歌曲大獎章」（Grande médaille de la chanson française）。",
+      "src": "https://en.wikipedia.org/wiki/Françoise_Hardy",
+      "src2": "https://fr.wikipedia.org/wiki/Françoise_Hardy",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代她成為時尚界的靈感繆思，設計師 Yves Saint Laurent 與 André Courrèges 都為她做衣服。",
+      "src": "https://en.wikipedia.org/wiki/Françoise_Hardy",
+      "src2": "https://www.irishtimes.com/obituaries/2024/07/13/francoise-hardy-french-singer-for-whom-fame-was-a-gilded-prison/",
+      "from": "new"
+     },
+     {
+      "f": "她 2024 年 6 月 11 日過世，享年 80 歲。",
+      "src": "https://en.wikipedia.org/wiki/Françoise_Hardy",
+      "src2": "https://fr.wikipedia.org/wiki/Françoise_Hardy",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1962 年 10 月她在電視上演唱出道單曲〈Tous les garçons et les filles〉，一夕爆紅；英文維基記載這首歌在當月法國總統大選（公投）開票時播出。",
+      "src": "https://en.wikipedia.org/wiki/Françoise_Hardy",
+      "src2": "https://fr.wikipedia.org/wiki/Françoise_Hardy",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Irish Times 寫 Dylan 的詩出現在『1965 年專輯』的內頁文字，搜尋摘要寫 1964 年《Another Side of Bob Dylan》，英文維基《Another Side》條目未提；年份與是否屬實不一致，未收。",
+   "英文維基寫父親 Étienne Dillard，Irish Times 寫 Pierre Dillard；父名不一致，不收。",
+   "〈Tous les garçons et les filles〉的銷量兩源不一致（英文維基 250 萬張、法文維基 1962 年底逾 50 萬張），不寫銷量。",
+   "英文維基稱該曲在『1962 年 10 月總統大選結果播出時』播出，Irish Times 稱是 De Gaulle 10 月公投時；用字不同，facts 只寫『1962 年 10 月』與電視演唱。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 5,
+  "status": "full",
+  "notes": "事實庫 research 為空，從零查；卡池四張（La question、Tous les garçons et les filles、La Maison où j'ai grandi、Entr'acte）皆為這位法國歌手，無混卡。補查 6 次（英文維基、法文維基、WebSearch×2、Irish Times、Another Side 維基）；失敗請求 5 次（Variety 307 轉址、Washington Post 403、Guardian 被工具擋、Britannica 404、NPR 503），超出失敗上限 4 次 1 次，故停止再試，Dylan 等的第二源因此沒補成。兩源皆實際開頁讀到。英文維基與法文維基同站不同語版，非完全獨立。未收（單源）：Bob Dylan 在專輯內頁為她寫詩、Mick Jagger 稱她『理想女性』、David Bowie 曾為她傾倒、後來與 Damon Albarn（Blur）、Iggy Pop 合作（Irish Times 頁面讀到；Dylan 一句另有搜尋摘要，未開頁）；『法國最能輸出的女歌手』與 1966 年 46 人『世紀之照』（英文維基單源）；『法國、英國、魁北克音樂人的靈感來源』（法文維基單源）；2005 年 Victoires de la musique 女歌手獎（法文維基單源）；Rolling Stone 2023 百大歌手第 162 名屬雜誌榜單，不收；曾學德語（法文維基單源）。死因不收。出道單曲的『第一首』『售出多少』不寫。"
+ },
+ {
+  "key": "googoosh",
+  "name": "Googoosh",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Googoosh 本名 Faegheh Atashin，1950 年 5 月 5 日生於德黑蘭，家人有亞塞拜然血統。",
+      "src": "https://en.wikipedia.org/wiki/Googoosh",
+      "src2": "https://fa.wikipedia.org/wiki/گوگوش",
+      "from": "new"
+     },
+     {
+      "f": "她很小就跟著父親登台，父親是表演藝人（英文維基稱 cabaret 藝人與雜技演員），她從童年就在他的舞台秀裡唱歌跳舞，1960 年代也以童星身分演出波斯電影。",
+      "src": "https://en.wikipedia.org/wiki/Googoosh",
+      "src2": "https://www.britannica.com/biography/Googoosh",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的歌路從輕快的 1960、70 年代流行曲，到情感濃烈、帶香頌味道的抒情曲；Red Bull Music Academy 的描述是「輕快的流行香頌」加上「更痛切的抒情歌」。",
+      "src": "https://en.wikipedia.org/wiki/Googoosh",
+      "src2": "https://daily.redbullmusicacademy.com/2018/04/googoosh-profile/",
+      "from": "new"
+     },
+     {
+      "f": "她除了波斯語，也錄過法語、義大利語、西班牙語與英語的歌。",
+      "src": "https://theconversation.com/googoosh-the-voice-of-iran-has-gone-quiet-and-thats-her-point-273447",
+      "src2": "https://daily.redbullmusicacademy.com/2018/04/googoosh-profile/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1970 年代伊朗女性爭相模仿她的穿著與短髮造型，那款髮型被稱為「Googooshi」。",
+      "src": "https://www.britannica.com/biography/Googoosh",
+      "src2": "https://fa.wikipedia.org/wiki/گوگوش",
+      "from": "new"
+     },
+     {
+      "f": "大英百科稱她是伊朗「最受歡迎且歷久不衰的藝人之一」；英文維基稱她是伊朗最受矚目的藝人之一。",
+      "src": "https://www.britannica.com/biography/Googoosh",
+      "src2": "https://en.wikipedia.org/wiki/Googoosh",
+      "from": "new"
+     },
+     {
+      "f": "1979 年伊朗革命後流行音樂被禁、女性不得公開獨唱；Googoosh 留在伊朗，曾被短暫關押，此後 21 年沒有公開演出。",
+      "src": "https://www.britannica.com/biography/Googoosh",
+      "src2": "https://theconversation.com/googoosh-the-voice-of-iran-has-gone-quiet-and-thats-her-point-273447",
+      "from": "new"
+     },
+     {
+      "f": "2000 年她離開伊朗，在多倫多 Air Canada Centre 登台，是她睽違 21 年後的首場演出。",
+      "src": "https://en.wikipedia.org/wiki/Googoosh",
+      "src2": "https://theconversation.com/googoosh-the-voice-of-iran-has-gone-quiet-and-thats-her-point-273447",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "The Conversation 稱她 3 歲開始表演，英文維基稱『很小』、波斯文維基稱 7 歲、大英百科稱幼時與父親同台、第一部電影 7 歲；開始年齡各說各話，facts 不寫年齡。",
+   "Red Bull Music Academy 稱她 2001 年恢復國際演出，英文維基、大英百科、The Conversation 皆為 2000 年；採 2000。",
+   "父母出身：英文維基『伊朗亞塞拜然裔』、波斯文維基『來自蘇聯的亞塞拜然移民』，不一致，facts 只寫『亞塞拜然血統』。",
+   "藝名由來：英文維基『亞美尼亞名字、幼年起使用』、波斯文維基『保母所取』，不收細節。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "卡池四張（Mordaab 1971、Pol 1975、Googoosh 3 Dou Mahi 1974、Akharin Khabar 2004）皆為這位伊朗歌手，無混卡；事實庫 research 是串流／版本比對，與人物無關，一條都沒用。補查 7 次（英文維基、波斯文維基、WebSearch×2、Britannica、The Conversation、Red Bull Music Academy）；失敗請求 4 次（IranWire 403、NPR 503、Al Arabiya 403、Iranica 403）。兩源皆實際開頁讀到。英文維基與波斯文維基同站不同語版，非完全獨立。伊朗禁唱一節只收革命後流行樂被禁、女性不得公開獨唱、她被短暫關押與 21 年沒有公開演出這類兩源一致的中性事實；不收罪名（The Conversation 單源）、護照被扣的細節（RBMA 與 Britannica 措辭不同，未逐項對照）。未收（單源）：英文維基稱她常為王室演出、在皇室特別受寵（單源，政治敏感）；波斯文維基稱她 1972 年 Sepas 電影節影后、作曲者 Varoozhan 與作詞者 Shahyar Ghanbari 合作；The Conversation 稱 1979 年前夕在洛杉磯夜總會駐唱、之後錄過九張專輯、其他流亡歌手 Hayedeh、Mahasti、Homeyra 在洛杉磯重建事業；RBMA 稱西方媒體把她比作 Edith Piaf 與 Barbra Streisand、受 Vigen 彈吉他唱西式音樂啟發、在波斯流行歌裡融入古典波斯音樂元素與詩的吐字、曾與 Ray Charles 與 Tina Turner 同台；搜尋摘要稱她 1968 年首張單曲是伊朗史上最暢銷唱片、1968–1979 年出了 150 張唱片，只見摘要未開頁，不收；銷量與入座人數屬舊檔限制範圍外（她在世，觀眾逾 12,000 人屬座數類，不收；The Conversation 稱 2000 年返場為『首場流亡後演出』、7 月 29 日日期只見英文維基，寫作層不寫日期亦可；1970 年代中期『最具辨識度的流行文化人物』（The Conversation 單源）不收）。未找到有出處的後輩點名受她影響，legacy 缺『後輩點名』，但有社會現象（造型風潮）與兩源共識評價。"
+ },
+ {
+  "key": "halsey",
+  "name": "Halsey",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Halsey 本名 Ashley Nicolette Frangipane，生於美國紐澤西州 Edison，母親有義大利與匈牙利血統，父親是非裔美國人（也有愛爾蘭血統），她自述是混血；家裡常搬家，她念過六所學校。",
+      "src": "https://en.wikipedia.org/wiki/Halsey_(singer)",
+      "src2": "https://www.eonline.com/news/1077794/25-fascinating-facts-about-halsey",
+      "from": "new"
+     },
+     {
+      "f": "藝名 Halsey 是本名 Ashley 的字母重組，同時指她少女時常待、也開始寫歌的布魯克林 Halsey Street。",
+      "src": "https://en.wikipedia.org/wiki/Halsey_(singer)",
+      "src2": "https://www.eonline.com/news/1077794/25-fascinating-facts-about-halsey",
+      "from": "new"
+     },
+     {
+      "f": "她 2012 年前後開始在 Tumblr 等網站貼翻唱與自己的作品；2014 年把〈Ghost〉上傳到 SoundCloud，很快就有多家唱片公司來接洽。",
+      "src": "https://en.wikipedia.org/wiki/Halsey_(singer)",
+      "src2": "https://www.eonline.com/news/1077794/25-fascinating-facts-about-halsey",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《Badlands》（2015 年 8 月 28 日，Astralwerks）以 electropop、alternative pop 與 dark pop 為底，帶一點工業質地；概念是一個虛構的反烏托邦社會「The Badlands」。",
+      "src": "https://en.wikipedia.org/wiki/Halsey_(singer)",
+      "src2": "https://en.wikipedia.org/wiki/Badlands_(Halsey_album)",
+      "from": "new"
+     },
+     {
+      "f": "2021 年的《If I Can't Have Love, I Want Power》由 Nine Inch Nails 的 Trent Reznor 與 Atticus Ross 製作，偏向工業搖滾與另類搖滾，是她從流行轉向更暗的路線的一張。",
+      "src": "https://en.wikipedia.org/wiki/Halsey_(singer)",
+      "src2": "https://en.wikipedia.org/wiki/If_I_Can't_Have_Love,_I_Want_Power",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。卡池四張（Badlands、Manic、hopeless fountain kingdom、The Great Impersonator）皆為這位美國歌手，無混卡。補查 7 次（英文維基、Badlands 維基、IICHLIWP 維基、Simple English 維基、E! News、WebSearch×2）；失敗請求 4 次（Britannica 404、Time 100 頁面無內文、2020 Time 100 兩個維基網址 404），已用完失敗上限。第二源說明：origin 三條的 src2 為 E! News（獨立）。1994 年 9 月 29 日生日只見英文維基與 Simple English 維基（同一百科體系，非獨立）及搜尋摘要，不收。Simple 維基的 Astralwerks 簽約年份 2014、首張 EP 同年，與英文維基一致，但同為維基系，不當第二源。legacy 查不到有兩源的共識評價：2020 年入選 Time 100（英文維基單源，Time 頁面讀不到內文，已嘗試兩次維基名單頁皆 404）、公開雙性戀與混血身分並倡導預防自殺、反性暴力與種族正義（英文維基；E! News 另提 2017 年 Women's March 與捐款，屬在世者捐款數字不收）、三次葛萊美提名（英文維基單源，且一次提名的屆次與類別我沒有第二源確認，不收；IICHLIWP 條目稱獲第 64 屆葛萊美最佳另類音樂專輯提名，無法以第二源確認，未採）、Badlands 評價（Pitchfork『算計、挑釁、最後空洞』與 Rolling Stone 評語屬樂評，不收）、〈Colors〉等榜位銷量不收。E! News 提到 2016 年與 The Chainsmokers 合作單曲（Simple 維基單源；屬履歷）不收。身分議題寫作層只寫她公開說的，不評論。"
+ },
+ {
+  "key": "harry styles",
+  "name": "Harry Styles",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Harry Styles 1994 年 2 月 1 日生於英格蘭 Redditch，在柴郡 Holmes Chapel 長大。",
+      "src": "https://en.wikipedia.org/wiki/Harry_Styles",
+      "src2": "https://www.britannica.com/biography/Harry-Styles",
+      "from": "new"
+     },
+     {
+      "f": "2010 年他以個人身分報名英國選秀節目《The X Factor》，沒有晉級後被編進由五位落選者組成的團體，成為 One Direction；團體 2016 年起暫停活動。",
+      "src": "https://en.wikipedia.org/wiki/Harry_Styles",
+      "src2": "https://www.britannica.com/biography/Harry-Styles",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的個人作品走 classic rock、soft rock 與流行的路線，取法 1970 年代的搖滾，英文維基提到 1970 年代 soft rock 與 Britpop 影響、並被拿來和 David Bowie 比較，Britannica 列出 The Rolling Stones、The Beatles、Pink Floyd 與 Fleetwood Mac 等。",
+      "src": "https://en.wikipedia.org/wiki/Harry_Styles",
+      "src2": "https://www.britannica.com/biography/Harry-Styles",
+      "from": "new"
+     },
+     {
+      "f": "2017 年的同名首張個人專輯《Harry Styles》由單曲〈Sign of the Times〉先行，這首歌登上英國單曲榜冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Harry_Styles",
+      "src2": "https://www.britannica.com/biography/Harry-Styles",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2020 年 12 月號美國版 Vogue 封面讓他成為第一位單獨登上該刊封面的男性；他在訪談裡說，衣服是拿來玩的，拿掉『男裝』與『女裝』的界線，能玩的範圍就更大。",
+      "src": "https://www.nbcnews.com/pop-culture/celebrity/harry-styles-becomes-first-solo-male-artist-grace-vogue-cover-n1247705",
+      "src2": "https://en.wikipedia.org/wiki/Blue_Gucci_dress_of_Harry_Styles",
+      "from": "new"
+     },
+     {
+      "f": "2023 年第 65 屆葛萊美獎，《Harry's House》（2022）拿下年度專輯與最佳流行演唱專輯（得獎）。",
+      "src": "https://en.wikipedia.org/wiki/65th_Annual_Grammy_Awards",
+      "src2": "https://www.britannica.com/biography/Harry-Styles",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。卡池四張（Fine Line、Harry's House、Harry Styles、Kiss All the Time. Disco, Occasionally.）皆為這位英國歌手，無混卡。補查 7 次（英文維基、Britannica、WebSearch、65th Grammy 維基、NBC News、Blue Gucci dress 維基、V&A 官網）；失敗請求 4 次（Grammy.com 404、Vogue.com 被工具擋、CNN 451、Billboard 轉址 tollbit）。兩源皆實際開頁。Vogue 一條：『第一位單獨登上封面的男性』是第一類宣稱，英文維基、Blue Gucci dress 條目與 NBC 都這樣寫，標明限於美國版 Vogue 2020 年 12 月號；Blue Gucci dress 與 Harry Styles 同為維基，非獨立，NBC 才是獨立源。未收（單源）：英文維基稱他被 Rolling Stone UK 封為『新流行天王』（雜誌評語，不收）；他受歡迎推動珍珠項鍊與寬褲潮流（英文維基單源）；65 屆葛萊美他是『繼 1989 年 George Michael 後第一位贏得年度專輯的英國男性獨唱歌手』（65 屆維基單源、搜尋摘要另有但未開頁）；2022 年 V&A《Fashioning Masculinities》展出藍色 Gucci 禮服、2024 年國家肖像館展出（維基單源，V&A 官網頁未提 Styles，不收）；Ben Shapiro 與 Candace Owens 的批評屬政治爭議，不收；White Eskimo 校園樂團、母親 Anne Twist 與姊姊 Gemma（Britannica 單源）；Brit Awards、Ivor Novello、MTV VMA 的得獎數與銷量、串流、首週數字（在世者不寫）。"
  }
 ]
