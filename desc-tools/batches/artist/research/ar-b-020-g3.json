@@ -489,5 +489,104 @@
   "failedFetches": 4,
   "status": "full",
   "notes": "事實庫已有 research 7 條多為中文維基與 MusicBrainz（愛作夢的魚）細節，bank 項目只有中文維基單源；本層補第二源。查證 8 次（成功請求）：英文維基 Jody Chiang、中文維基江蕙、WebSearch（告別演唱會與金曲特別貢獻獎）、Focus Taiwan 告別演唱會、Focus Taiwan 金曲終身貢獻獎、WebSearch（風格轉型與落雨聲）、udn 專文、中文維基第 14 屆金曲獎。失敗請求 4 次：thenewslens 403、英文維基兩個金曲獎類別頁 404、中文維基金曲獎類別頁 404（不計入）。第二源皆實際開頁讀到。⚠ udn 專文可信度低：寫她生於角板山、出道於皇冠唱片、首曲《梨山癡情花》，與中文維基不符，只用其『悲苦優美的唱腔』一句佐證早期歌路，其餘不收。Focus Taiwan 兩篇因 CNA 存檔限制內容只有預覽，只用日期與稱呼。單源未收：90 年代後期改以輕柔歌聲、少嘶吼（中維單源，與事實庫 published 同口徑）；金曲歌后四連霸（第 11 至 14 屆，中維單源，上線簡介亦寫；第 14 屆已由第 14 屆頁兩源確認、第 11 至 13 屆僅中維）；1990 年第 1 屆最佳女演唱人、1993 年第 5 屆最佳演唱專輯獎（中維單源）；1982 年首張台語專輯《你不該輕視我》乏人問津、1983 年《你著忍耐》開始受注意（中維單源）；周杰倫、伍思凱因與她合作成名（中維單源）；〈落雨聲〉為周杰倫與方文山成名前賣出的第一首知名作品（搜尋摘要多源，但未逐頁開讀）；『每個臺灣人心中都有一首江蕙的歌』（歌迷流傳說法）；洪榮宏與她被稱為台灣流行樂 King and Queen（英維單源）；2024 年復出前的癌症病史（健康隱私不收）。中英維基同系，非獨立。在世者座數場次不寫，facts 中 25 場演唱會與日期屬事件而非銷售。 Focus Taiwan 稱她為 Taiwanese pop diva（單源，未入 facts）。"
+ },
+ {
+  "key": "美空ひばり",
+  "name": "美空ひばり",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "美空ひばり本名加藤和枝，1937 年 5 月 29 日生於神奈川縣橫濱市（日文維基載磯子區），1989 年 6 月 24 日過世，享年 52 歲。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A",
+      "src2": "https://en.wikipedia.org/wiki/Hibari_Misora",
+      "from": "new"
+     },
+     {
+      "f": "她 1949 年以〈河童ブギウギ〉灌錄唱片出道。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A",
+      "src2": "https://www.tokyoweekender.com/art_and_culture/spotlight-hibari-misora/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她橫跨歌謡曲、演歌、爵士與民謠，錄過上千首歌，也演出超過 150 部電影（日文維基載 170 部以上，英文維基載 150 部以上）。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A",
+      "src2": "https://en.wikipedia.org/wiki/Hibari_Misora",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她被稱為「歌謡界の女王」，英文維基稱她是「Queen of Showa」與「Queen of Enka」，Tokyo Weekender 也稱她為 Queen of Enka。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A",
+      "src2": "https://en.wikipedia.org/wiki/Hibari_Misora",
+      "from": "new"
+     },
+     {
+      "f": "1989 年 7 月她身後獲頒國民栄誉賞，是首位獲此獎的女性，也是首位獲此獎的歌手（授與理由為在歌謠曲裡給國民夢想與希望）。",
+      "src": "https://showa-g.org/events/view/898",
+      "src2": "https://en.wikipedia.org/wiki/Hibari_Misora",
+      "from": "new"
+     },
+     {
+      "f": "她過世後，日本各大電視網取消原訂節目，改播追悼內容。",
+      "src": "https://en.wikipedia.org/wiki/Hibari_Misora",
+      "src2": "https://www.tokyoweekender.com/art_and_culture/spotlight-hibari-misora/",
+      "from": "new"
+     },
+     {
+      "f": "她生前最後一張單曲〈川の流れのように〉1989 年 1 月 11 日發行，後來在 NHK 的全國票選中被選為日本最偉大的歌曲。",
+      "src": "https://en.wikipedia.org/wiki/Kawa_no_Nagare_no_Y%C5%8D_ni",
+      "src2": "https://en.wikipedia.org/wiki/Hibari_Misora",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1988 年 4 月她在東京巨蛋舉行復出演唱會（日文維基稱「不死鳥コンサート」，4 月 11 日），帶病登台。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A",
+      "src2": "https://en.wikipedia.org/wiki/Hibari_Misora",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1989 年 7 月身後獲頒國民栄誉賞，是首位獲此獎的女性。",
+    "src": "https://showa-g.org/events/view/898",
+    "src2": "https://en.wikipedia.org/wiki/Hibari_Misora",
+    "from": "new"
+   },
+   {
+    "f": "1988 年 4 月東京巨蛋復出演唱會。",
+    "src": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E7%A9%BA%E3%81%B2%E3%81%B0%E3%82%8A",
+    "src2": "https://en.wikipedia.org/wiki/Hibari_Misora",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "國民栄誉賞授與日：日文維基摘要寫 7 月 2 日，昭和館 showa-g 與搜尋結果寫 1989 年 7 月 6 日，facts 只寫 1989 年 7 月。",
+   "NHK 票選年份：英文維基寫 1997 年，Tokyo Weekender 寫 1998 年，不一致，facts 不寫年份。",
+   "初次登台年齡：英維稱 1945 年 8 歲舞台出道，日文維基摘要稱 9 歲起舞台活動、1949 年 11 歲唱片出道，Tokyo Weekender 稱 11 歲電影登台，不一致，facts 不寫年齡。",
+   "死因與錄音曲數（1200、1500 首以上）各源不一致，且死因不收，facts 只寫『上千首』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 只有 3 條 MusicBrainz／日文維基經紀資料與 release-group 資訊，published 4 張十吋盤簡介為目錄性質，與新查生平無衝突。查證 8 次（成功請求）：日文維基（WebFetch 摘要）、英文維基 Hibari Misora、WebSearch（國民栄誉賞）、showa-g.org 國民栄誉賞頁、WebSearch（NHK 票選）、英文維基〈川の流れのように〉、WebSearch（童年與葬禮）、Tokyo Weekender 專題；Britannica 404 為失敗請求不計。第二源皆實際開頁讀到。日英維基同系，英維兩頁（本人與單曲）互相不獨立，NHK 票選那條兩源皆為英文維基（非獨立），Tokyo Weekender 的 1998 年與之衝突。單源未收：葬禮 1989 年 7 月 22 日在青山葬儀所約 4.2 萬人到場（日維明載，搜尋摘要另有英文來源但未逐頁開讀，不放 facts）；母親喜美枝擔任幼年經紀人（日維單源）；映畫東映專屬 10 年 102 本（日維單源）；1950 年電影《東京キッド》使她成為戰後日本堅韌的象徵（英維單源）；2006 年文化廳『日本の歌百選』入選（只見搜尋摘要）；〈柔〉與東京奧運柔道（Tokyo Weekender 單源，且含銷量）。死因與病名不收。死亡年份與年齡已由日維、英維、showa-g、Tokyo Weekender 四源一致。美空ひばり 名照原文。"
  }
 ]
