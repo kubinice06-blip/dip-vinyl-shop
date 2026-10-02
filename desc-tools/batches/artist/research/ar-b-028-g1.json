@@ -718,5 +718,95 @@
   "failedFetches": 2,
   "status": "thin",
   "notes": "事實庫 research 與 published 皆空，從零查。搜尋 8 次：維基 6lack、WebSearch 兩次（第 2、6 次，只看摘要）、A Polaroid Story、維基《Free 6lack》、維基 Spillage Village、Grammy 官網藝人頁、維基《Since I Have a Lover》。失敗請求 2 次不計入：Britannica 404、BET 文章頁回傳的是 BET 首頁內容而非文章（無資料）。legacy 第 1 條第二源為 Polaroid Story（兩項入圍皆有寫，維基《Free 6lack》只寫專輯一項）。⚠ 本位 legacy 偏薄：只有葛萊美入圍（官網加維基兩源，皆入圍未得獎），沒有後輩點名、名人堂類共識；origin 與 sound 的第二源多為維基（非獨立）。『Free 6lack』入圍條件依 Grammy 官網：2018 年第 60 屆最佳都會當代專輯、〈PRBLMS〉最佳饒舌或演唱表演；官網另列〈Pretty Little Fears〉（與 J. Cole）第 61 屆、〈Wholeheartedly〉（J.I.D、Ty Dolla $ign 與 6LACK）第 68 屆入圍，只有官網單源，未收。單源未收：1992 年 6 月 24 日出生、5 歲搬到亞特蘭大（維基單源，生卒年屬高風險類）；就讀 Stone Mountain 與 Newton 高中、輟學 Valdosta State University；受 Sade、T-Pain、The-Dream、Usher 影響（維基單源）；Billboard 稱他為 moody hip hop（維基轉述）；住房不穩甚至睡錄音室（Polaroid Story 單源，屬私人處境細節）；2019 年 MTV 影音獎最佳 R&B 影片、累計五次葛萊美入圍（在世者獎項數量不寫）；Spillage Village 在 Atlanta 與 Dreamville 脈絡的地位（維基單源）；AllMusic、Observer 對《Since I Have a Lover》的形容、Metacritic 分數（單一評論與評分不收）。無同名混卡（poolAlbums 皆為 6LACK 專輯）。"
+ },
+ {
+  "key": "a$ap rocky",
+  "name": "A$AP Rocky",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Rakim Mayers，1988 年 10 月 3 日生於紐約哈林區，童年時家裡一度無家可歸。",
+      "src": "https://en.wikipedia.org/wiki/ASAP_Rocky",
+      "src2": "https://www.britannica.com/biography/ASAP-Rocky",
+      "from": "new"
+     },
+     {
+      "f": "他加入哈林的創作團體 A$AP Mob，團體由 A$AP Yams 等人創立，Yams 成為他的導師。",
+      "src": "https://en.wikipedia.org/wiki/A$AP_Mob",
+      "src2": "https://www.britannica.com/biography/ASAP-Rocky",
+      "from": "new"
+     },
+     {
+      "f": "2011 年單曲〈Peso〉讓他在哈林的圈子裡贏得認可，並簽進 Polo Grounds Music 與 RCA（Sony 體系）。",
+      "src": "https://en.wikipedia.org/wiki/Long.Live.A$AP",
+      "src2": "https://www.britannica.com/biography/ASAP-Rocky",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的聲音被歸為 cloud rap，帶著迷幻與實驗色彩；英文維基稱他把 cloud rap 帶進主流，Britannica 也以實驗取向與 cloud rap 風格形容他。",
+      "src": "https://en.wikipedia.org/wiki/ASAP_Rocky",
+      "src2": "https://www.britannica.com/biography/ASAP-Rocky",
+      "from": "new"
+     },
+     {
+      "f": "他的靈感混著東岸與南方的 hip-hop：英文維基列出 UGK、Three 6 Mafia 等為影響來源，《AT.LONG.LAST.A$AP》的製作也汲取休士頓與南方 rap 的傳統。",
+      "src": "https://en.wikipedia.org/wiki/ASAP_Rocky",
+      "src2": "https://en.wikipedia.org/wiki/At.Long.Last.ASAP",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把 hip-hop 帶進時裝界：2025 年獲美國時裝設計師協會 CFDA 頒發 Fashion Icon 獎；CFDA 主席 Thom Browne 稱他是「最純粹意義上的 Fashion Icon」，並提到他是 Ray-Ban 的第一位創意總監。",
+      "src": "https://cfda.com/news/aap-rocky-is-cfdas-2025-fashion-icon/",
+      "src2": "https://www.britannica.com/biography/ASAP-Rocky",
+      "from": "new"
+     },
+     {
+      "f": "A$AP Mob 成員涵蓋饒舌歌手、製作人、MV 導演與服裝設計師，被英文維基形容為橫跨 hip-hop 與時尚的 tastemaker 團體。",
+      "src": "https://en.wikipedia.org/wiki/A$AP_Mob",
+      "src2": "https://en.wikipedia.org/wiki/ASAP_Rocky",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "A$AP Yams 在 2015 年過世，當時 Rocky 正在製作《AT.LONG.LAST.A$AP》，Yams 掛名該專輯的執行製作之一。",
+      "src": "https://en.wikipedia.org/wiki/A$AP_Mob",
+      "src2": "https://en.wikipedia.org/wiki/At.Long.Last.ASAP",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2025 年獲 CFDA Fashion Icon 獎。",
+    "src": "https://cfda.com/news/aap-rocky-is-cfdas-2025-fashion-icon/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "加入 A$AP Mob 年份：英文維基 A$AP Rocky 條目寫 2007 年，Britannica 寫約 20 歲（約 2008 至 2009 年）；兩源不一致，facts 不寫年份。",
+   "A$AP Mob 的 AWGE：維基 A$AP Mob 條目稱其為唱片廠牌，維基 A$AP Rocky 條目稱為 2014 年成立的創意公司；facts 不描述 AWGE 性質。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基 A$AP Rocky、Britannica、維基《Long. Live. A$AP》、WebSearch 一次（CFDA 獎項）、CFDA 官網、維基《AT.LONG.LAST.A$AP》、維基 A$AP Mob。⚠ 維基各條目互為『非獨立』；origin 第 2、3 條、legacy 第 2 條、era 第 1 條的兩源含維基不同條目。依規則：A$AP Yams 之死只寫年份，不收死因（Mob 條目有寫，不收）；Britannica 載有的家人與販毒等私人細節不收；簽約金額屬商業數字不收。單源未收：父親來自巴貝多（維基）；Harrisburg 與 9 歲開始 rap（維基）；藝名『Always Strive and Prosper』（維基 A$AP Rocky 與 A$AP Mob 條目寫為 backronym 說法，同站，未收）；受 Diplomats、Mobb Deep、Wu-Tang Clan 等影響（維基單源）；Britannica 稱他是 Dior Homme 的第一位黑人代言人（單源，『第一』類宣稱無第二源，且未排除反例，不收）；2025 年 Met Gala 共同主席（Britannica 單源；WebSearch 摘要亦有）；NAACP Image Awards 2026 時尚 Vanguard 獎（Britannica 單源）；葛萊美入圍（維基寫兩次、Britannica 寫影片類入圍，無逐項屆次，不寫）；2019 與 2011 年 Live. Love. A$AP 混音帶獲好評（維基單源）；VLONE 共同創辦（維基單源，疑有誤，未查證）；『Long. Live. A$AP』登上 Billboard 200 冠軍（榜單名次不收）；〈1 Train〉群星曲、Lord Flacko 製作化名（單源）。依批特注，不收任何法律爭議。無同名混卡（poolAlbums 皆為 A$AP Rocky 專輯；2026 年《Don't Be Dumb》為已列入卡池之新作）。"
  }
 ]

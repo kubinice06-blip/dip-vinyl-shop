@@ -697,5 +697,89 @@
     "failedFetches": 3,
     "status": "full",
     "notes": "事實庫無研究稿與上線簡介，從零查。搜尋 2 次（WebSearch）＋開頁 6 次（維基 Busta_Rhymes、Rock the Bells 官網〔頁面內容為空、無可用內容，但算一次〕、Billboard、Vibe、WERS、維基 Scenario_(song)）＝8，未超限；失敗 3 次（Britannica 403、Ebony 403、HipHopDX 429，不計）。同名檢查：卡池三張 Back on My B.S. 2009／Extinction Level Event 2 2020／Genesis 2001 皆為紐約的 Busta Rhymes；無同名混卡。⚠ 兩條事實的 src2 支持度不均，寫作層用語宜保守：①origin 第二條，Notorious B.I.G.、Jay-Z 同校維基與 WERS 都提；Chill-o-ski 藝名、霹靂舞團、輟學只見 WERS（單源）；維基只說曾短暫就讀 Westinghouse 高中。②era 第一條，1986 年成軍與四位成員名字只見維基，WERS 寫三位成員名並說 1989 年 12 月簽 Elektra，WERS 未寫 1986，故『1986 年組成』實為維基單源，若寫作層要寫請不帶年份；WERS 與維基皆支持 1991 年首張專輯與 Public Enemy 巡演開場。交件前已移除我草稿裡的 partial、note 標記欄。單源未入 facts：WERS 稱他影響過 Travis Barker、Yelawolf、Nelly、Missy Elliott、Buju Banton 等，並稱他受 George Clinton、Jimi Hendrix、Chuck D、Bob Marley、Shabba Ranks、Super Cat 影響（WERS 單源，且『他影響了誰』是電台文章自列）；維基稱 Billboard 與 Vibe 把他列入 50 大饒舌歌手、Forbes 列入 Top 50（雜誌榜單名次不收）；Billboard 稱他 2025 年 8 月獲 Harlem Week 的 Hip-Hop Icon Award 與 Caribbean Music Awards 的 Elite Icon（單源）；維基稱 2009 年《Back on My B.S.》中〈Arab Money〉因引用古蘭經在阿聯酋被禁並引發爭議（屬與作品直接綁定、但本層只一源，不收）；維基稱他 2012 年哀悼經理人（不收）。Chuck D 命名的『bust-a-rhyme』說法維基未寫、只見 WERS，facts 第三條已刪去該半句。在世者銷量與認證不寫。 另：第二條原寫『Jay-Z 與他在學校 battle』只見 WERS，維基未提，已在 facts 保留 B.I.G. 與 Jay-Z 同校（兩源皆有），並刪去 battle 說法；校內 battle 與 Chill-o-ski 皆 WERS 單源。"
+  },
+  {
+    "key": "chief keef",
+    "name": "Chief Keef",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chief Keef 本名 Keith Cozart，1995 年 8 月 15 日生於芝加哥，是個十幾歲就靠自己的 mixtape 出名的芝加哥饒舌手與製作人。",
+            "src": "https://en.wikipedia.org/wiki/Chief_Keef",
+            "src2": "https://www.billboard.com/music/music-news/chief-keef-21-under-21-2014-6251182/",
+            "from": "new"
+          },
+          {
+            "f": "他在 16 歲時以〈I Don't Like〉成名：這首歌收在 2012 年 3 月的 mixtape《Back From the Dead》，由 Young Chop 製作、Lil Reese 客串，先在芝加哥爆紅，再被 Kanye West 找來混音。",
+            "src": "https://www.billboard.com/music/music-news/chief-keef-dont-like-songs-that-defined-the-decade-8543876/",
+            "src2": "https://www.rollingstone.com/music/music-news/chief-keef-documentary-cole-bennett-director-1235134883/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的招牌聲響來自製作人 Young Chop：暗色而帶旋律感的合成器、陰沉的鈴聲加上乾脆的 808；Billboard 稱〈I Don't Like〉裡逐步升高的合成器配上鈴聲與 808，在當時顯得是他們以往顆粒感聲響之外的另類路線。",
+            "src": "https://www.billboard.com/music/music-news/chief-keef-dont-like-songs-that-defined-the-decade-8543876/",
+            "src2": "https://www.rollingstone.com/music/music-features/young-chop-interview-1235278020/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他被認為把芝加哥 drill 帶進主流：維基稱他被視為這個子類型的奠基者之一、並讓它在主流廣為人知；Men's Journal 則提醒他並未發明 drill，而是它的招牌代表人物，並引 Grammy.com 把 drill 一詞追到已故芝加哥饒舌手 Pacman。",
+            "src": "https://en.wikipedia.org/wiki/Chief_Keef",
+            "src2": "https://www.yahoo.com/entertainment/music/articles/chief-keef-helped-turn-chicago-130000101.html",
+            "from": "new"
+          },
+          {
+            "f": "2012 年 Kanye West 把〈I Don't Like〉拉進 GOOD Music 的《Cruel Summer》做成明星混音版（Pusha T、Big Sean、Jadakiss 同唱），這首歌因此推進主流，並在 Billboard Hot 100 登上最高第 73 名。",
+            "src": "https://www.billboard.com/music/music-news/chief-keef-dont-like-songs-that-defined-the-decade-8543876/",
+            "src2": "https://en.wikipedia.org/wiki/Chief_Keef",
+            "from": "new"
+          },
+          {
+            "f": "drill 之後在芝加哥以外各自生根：Rolling Stone 稱它擴散並變形到英國、法國與布魯克林；Men's Journal 也寫 Pitchfork 追溯了它對英國與布魯克林場景的影響。",
+            "src": "https://www.rollingstone.com/music/music-features/young-chop-interview-1235278020/",
+            "src2": "https://www.yahoo.com/entertainment/music/articles/chief-keef-helped-turn-chicago-130000101.html",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2024 年 5 月他發行《Almighty So 2》；Rolling Stone 稱它是他當年帶進主流那種聲音的精煉版本。",
+            "src": "https://en.wikipedia.org/wiki/Chief_Keef",
+            "src2": "https://www.rollingstone.com/music/music-news/chief-keef-documentary-cole-bennett-director-1235134883/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "上線簡介《Back From the Dead》寫『第五張 mixtape』，與維基 Chief Keef 條目『His fifth mixtape』一致；但 Billboard 2019 年的〈I Don't Like〉專文寫它是『third mixtape』。依事實庫採上線簡介與維基；序數寫作層不要主動放。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Back From the Dead",
+        "claim": "2012 年 3 月 … 的第五張 mixtape",
+        "problem": "維基稱《Back from the Dead》是他的第五張 mixtape，Billboard（2019，Songs That Defined the Decade）卻稱是第三張；序數兩源不一致，建議店主改寫成不帶序數的版本，或另查 mixtape 目錄後再定。其餘如〈I Don't Like〉Hot 100 第 73 名、Kanye West 官方 remix 收進《Cruel Summer》，Billboard 與維基皆支持，無誤。",
+        "src": "https://www.billboard.com/music/music-news/chief-keef-dont-like-songs-that-defined-the-decade-8543876/"
+      }
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "事實庫有 2 則上線簡介（Back From the Dead、Almighty So），無研究稿；三格從零查。有效搜尋 2 次（WebSearch；另有 1 次因網域篩選被拒、不計）＋開頁 6 次（維基 Chief_Keef、Men's Journal 轉載於 Yahoo、Billboard 2019 專文、Rolling Stone 2024 紀錄片報導、Billboard 21 Under 21、Rolling Stone Young Chop 訪談）＝8，未超限。失敗 2 次（Men's Journal 原站 403、The TRiiBE 回 202 空頁，不計）。同名檢查：卡池三張 Finally Rich 2012／Back From the Dead 2012／Almighty So 2013 皆為芝加哥的 Chief Keef 本人，無同名混卡。⚠ 官司與入獄、幫派隸屬、家庭悲劇、與 Chicago 市政府的演出爭議皆不收（依批次特注，只收中性層級事實或不寫）；維基稱他入獄與演出被取消的段落、Rolling Stone Young Chop 訪談中的刑案內容都未入 facts。單源未入 facts：維基稱 2013 年他客串 Kanye West《Yeezus》的〈Hold My Liquor〉，Lou Reed 公開稱讚其副歌（維基單源）；維基稱他 2020 年 Lil Uzi Vert〈Bean (Kobe)〉與 2023 年 Drake〈All the Parties〉的客串各進 Hot 100 前 40（維基單源，榜位細節不寫）；Billboard 稱『Young Chop Snare』已滲透 Travis Scott、Lil Uzi Vert 與整個現代 trap（Billboard 單源，不收為 Keef 的影響）；Rolling Stone 2024 報導稱他睽違十餘年後在 2024 年 6 月於 Lyrical Lemonade 的 Summer Smash 音樂節回到芝加哥登台（單源）；Billboard 2014 年 21 Under 21 榜單列他第 10 名（雜誌榜單，不收）；維基稱他 2012 年與 Interscope 簽約（金額細節不寫）並於 2014 年被廠牌解約（維基單源）；維基稱他 5 歲在媽媽的卡拉 OK 機上開始錄音、2008 年開始寫饒舌（維基單源）。『Love Sosa』的白金與鑽石認證不寫。上線簡介《Almighty So》的『2024 年另有續作《Almighty So 2》』與維基、Rolling Stone 皆吻合；其餘（HotNewHipHop 44 分、第七張 mixtape、十五軌三十八分半）本層未查。Men's Journal 文章為轉載於 Yahoo 的專欄文，二次引用 Grammy.com、Billboard、Pitchfork，視為弱於直接來源。"
   }
 ]

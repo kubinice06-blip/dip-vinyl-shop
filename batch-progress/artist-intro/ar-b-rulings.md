@@ -307,3 +307,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-028
 - g3 交件（QA 本組 0）。thin：Daniel Caesar。Clipse 第 68 屆（2026）葛萊美最佳饒舌演出〈Chains & Whips〉與梵蒂岡 Grace for the World 演出，經主線 WebSearch 核實（grammy.com、Billboard）；「第一組在梵蒂岡演出的嘻哈藝人」只准以「被稱為」寫。衝突值不寫（《The Chronic》國家錄音登錄年、Dr. Dre 葛萊美座數、N.W.A 成立年、Cypress Hill 成員族裔與星光大道「首個」、Destiny's Child 簽約年、Das EFX 生年）。Shock G、Eyedea 只寫年份。pubIssues 0。
+- 028 g1 交件（QA 本組 0）。thin：The Streets、TLC、Travis Scott、Young Thug、112、6LACK。TLC 後輩點名與 Left Eye 過世年未湊足兩源，不寫；Young Thug 導師說法兩源不一、〈This Is America〉年度歌曲主詞未對上，不寫；豬頭皮「台語嘻哈第一人」只有轉述，不寫；《笑魁唸歌》採 1994。21 Savage 出生地兩源不一，只寫英國籍、在亞特蘭大長大。A$AP Rocky 法律爭議不收。pubIssues 0。
