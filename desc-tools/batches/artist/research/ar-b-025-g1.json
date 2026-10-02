@@ -386,5 +386,75 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池四張（Maxinquaye、Pre-Millennium Tension、Mixed Race、Vulnerable）皆為布里斯托這位 Tricky，無混卡；注意英文維基條目名為 Tricky (musician)、搜尋結果曾出現 Tricky (rapper)，同一人。搜尋：維基主條 API（1）、WebSearch（2）、Dazed 訪談（3）、Epigram 專文（4）、維基 Maxinquaye（5）、Britannica trip-hop 條目（6）。失敗請求 1 次：Tricky 官網傳記頁回空。\n『非獨立』：W 與 M 同為維基不同條目。Dazed（2026 年訪談）與 Epigram（布里斯托大學學生報）、Britannica 為獨立來源。\nconflicts 性質：Martina Topley-Bird 認識 Tricky 的年份——維基寫 1991 年她 15 歲時登門，Epigram 寫 1993 年在 Clifton College 外被他發現；年份不一致，facts 不收年份。\n單源未入 facts：(1) 維基稱父親為牙買加人、母親為迦納裔英國人、1968 年 1 月 27 日生；母親在他四歲時過世（死因維基列兩說，且依規則不收死因），他的父親家族經營 Studio 17 音響班；(2) 維基稱 Maxinquaye 被視為對電子樂、地下 hip hop 與英國 hip hop 有重要影響，並被許多記者評為 1995 年度最佳、1995 年底在 NME、Melody Maker、The Wire 年終票選第 1，Pazz & Jop 第 2（雜誌榜單名次本批規則不收）；(3) Dazed 稱 David Bowie 是忠實樂迷，寫過一篇虛構短文提到 Tricky，並主動聯絡他，Tricky 沒有跟進；Dazed 稱 Maxinquaye 獲得金唱片認證與水星獎入圍（認證倍數不寫，水星入圍已與維基兩源收入）；(4) 維基稱 Tricky 曾與 Terry Hall、Björk、Gravediggaz、Alanis Morissette、Grace Jones、PJ Harvey 合作；(5) 維基稱 17 歲時因購買偽鈔入獄、少年時加入幫派（個人前科細節，與音樂貢獻無關，未收）。\n注意：《Maxinquaye》專輯名來自他母親 Maxine Quaye，母親過世細節依規則只寫年份層級、不收死因；本層 facts 完全未涉及。"
+ },
+ {
+  "key": "tycho",
+  "name": "Tycho",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tycho 是美國舊金山音樂人 Scott Hansen 的音樂名義；他另以 ISO50 之名做攝影與平面設計，樂評也常把他的設計名氣與音樂相提並論。",
+      "src": "https://en.wikipedia.org/wiki/Tycho_(musician)",
+      "src2": "https://ra.co/reviews/10040",
+      "from": "new"
+     },
+     {
+      "f": "Tycho 的首張專輯在 2004 年推出，第二張《Dive》（2011）相隔七年，也是他在 Ghostly International 的第一張。",
+      "src": "https://ra.co/reviews/10040",
+      "src2": "https://en.wikipedia.org/wiki/Dive_(Tycho_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂是以類比合成器與吉他為主的 downtempo 與 ambient 電子樂，帶著懷舊與自然的主題，節奏緩慢推進、帶有淡淡的憂鬱。",
+      "src": "https://en.wikipedia.org/wiki/Tycho_(musician)",
+      "src2": "https://ra.co/reviews/10040",
+      "from": "new"
+     },
+     {
+      "f": "《Dive》（2011）以硬體與類比設備為主，許多聲音出自 Minimoog；這是 Tycho 第一張用麥克風錄原音樂器的專輯，吉他與電貝斯的比重也比前作高。",
+      "src": "https://en.wikipedia.org/wiki/Dive_(Tycho_album)",
+      "src2": "https://everythingisnoise.net/features/a-scene-in-retrospect-tycho-dive/",
+      "from": "new"
+     },
+     {
+      "f": "Hansen 說他受 DJ Shadow 影響，讓每首曲子都有主段、插段與像另一首歌的尾段；維基也提到他的作品常被拿來與 DJ Shadow、Ulrich Schnauss 與 Boards of Canada 比較。",
+      "src": "https://en.wikipedia.org/wiki/Dive_(Tycho_album)",
+      "src2": "https://en.wikipedia.org/wiki/Tycho_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2016 年的《Epoch》入圍 2017 年葛萊美最佳舞曲／電子專輯獎（Best Dance/Electronic Album，入圍、未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Tycho_(musician)",
+      "src2": "https://grayarea.org/community-entry/tycho/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "維基寫 2004 年首張全長專輯是 Sunrise Projector、Past Is Prologue 為 2006 年；Hansen 在 The Great Discontent 訪談把 2004 年首張全長專輯稱作 Past Is Prologue。卡池這張卡的名稱是『Sunrise Projector / Past Is Prologue』（2004），看起來是同一張專輯的兩個名稱或再版；f 欄只寫『2004 年首張專輯』，不寫專輯名。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池四張（Dive、Infinite Health、Awake、Sunrise Projector / Past Is Prologue）皆為 Scott Hansen 這位 Tycho，無混卡。搜尋：維基 API（1）、WebSearch（2）、The Great Discontent 訪談（3）、Gray Area 條目（4）、WebSearch（5）、Everything Is Noise 專文（6）、RA《Dive》樂評（7）、維基 Dive 條目（8）。失敗請求 3 次：Ghostly 藝人頁只回空殼、Grammy.com 404、KCRW 429。\nlegacy 格偏薄（只有一條葛萊美入圍），整體標 thin。『非獨立』：維基主條與 Gray Area 條目（Gray Area 文字與維基同源，非獨立）；維基主條與 Dive 條目同站不同條目。獨立的只有 RA 與 Everything Is Noise。\n單源未入 facts：(1) 維基稱 2019 年專輯《Weather》入圍 2020 年葛萊美最佳舞曲／電子專輯，第二源未取得；(2) The Great Discontent 訪談（Hansen 自述，單源）：他早年在沙加緬度做網頁設計，2001 年一場意外後在家休養六週開始認真做音樂（首場演出數月後在沙加緬度），2006 年初回舊金山做介面設計工作，約 2009 年起專職做音樂；二十一二歲才碰樂器，先玩合成器、取樣器與鼓機，吉他是做了五年音樂之後才拿；沙加緬度的電子樂手 Dusty Brown 是他的音樂導師，ISO50 名稱來自一位法國攝影師常用的 Fuji Velvia ISO 50 底片；(3) 維基稱團名取自丹麥天文學家 Tycho Brahe；(4) Everything Is Noise 稱『幾年前談電子樂幾乎都繞不開 Scott Hansen』（單一評論者、不收）；(5) 維基 Dive 條目稱專輯登上 Billboard 美國 Top Dance/Electronic Albums 與 Top Heatseekers 榜（單源）；(6) 維基稱 2019 年簽 Mom+Pop 與 Ninja Tune（廠牌履歷，不收）；(7) 搜尋摘要有『成為當代 ambient 與 downtempo 領軍人物』一句，來自網站自我介紹性文字、未實際開頁，不收。\n維基稱 Hansen 2024 年現場樂團成員為 Hansen、Brown、O'Connor、Kim，樂團編制不收。"
  }
 ]

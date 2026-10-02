@@ -864,5 +864,101 @@
     "src": "https://en.wikipedia.org/wiki/Solaris_(2002_film)"
    }
   ]
+ },
+ {
+  "key": "com truise",
+  "name": "Com Truise",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Com Truise 本名 Seth Haley，出身美國紐約州，一路住在東岸，後來才搬到洛杉磯一帶，再搬到佛羅里達的奧蘭多。",
+      "src": "https://en.wikipedia.org/wiki/Com_Truise",
+      "src2": "https://www.soundonsound.com/people/com-truise-tour",
+      "from": "new"
+     },
+     {
+      "f": "他原本是平面設計師與藝術指導，辭掉工作後才專心做音樂。",
+      "src": "https://en.wikipedia.org/wiki/Com_Truise",
+      "src2": "https://www.citybeat.com/music/synthwave-provocateur-com-truise-performs-in-covington-this-week-12217404",
+      "from": "new"
+     },
+     {
+      "f": "他先前用 Sarin Sunday、SYSTM、Airliner 等化名發片，2010 年起改用 Com Truise 這個名義。",
+      "src": "https://en.wikipedia.org/wiki/Com_Truise",
+      "src2": "https://www.citybeat.com/music/synthwave-provocateur-com-truise-performs-in-covington-this-week-12217404",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂以合成器為主，靈感來自 1980 年代的科幻電影配樂與年代聲響。",
+      "src": "https://en.wikipedia.org/wiki/Com_Truise",
+      "src2": "https://www.soundonsound.com/people/com-truise-tour",
+      "from": "new"
+     },
+     {
+      "f": "他點名的影響包括 Boards of Canada。",
+      "src": "https://en.wikipedia.org/wiki/Com_Truise",
+      "src2": "https://www.citybeat.com/music/synthwave-provocateur-com-truise-performs-in-covington-this-week-12217404",
+      "from": "new"
+     },
+     {
+      "f": "他的作品串成一則科幻概念故事：太空人 Com Truise 逃離壓迫的社會；故事在 2017 年的《Iteration》收尾。",
+      "src": "https://en.wikipedia.org/wiki/Iteration_(album)",
+      "src2": "https://www.citybeat.com/music/synthwave-provocateur-com-truise-performs-in-covington-this-week-12217404",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2011 年發行《Galactic Melt》，是他在 Ghostly International 時期那則概念故事的起點。",
+      "src": "https://en.wikipedia.org/wiki/Iteration_(album)",
+      "src2": "https://en.wikipedia.org/wiki/Com_Truise",
+      "from": "new"
+     },
+     {
+      "f": "《Iteration》2017 年 6 月由 Ghostly International 發行，為概念故事收尾。",
+      "src": "https://en.wikipedia.org/wiki/Iteration_(album)",
+      "src2": "https://www.citybeat.com/music/synthwave-provocateur-com-truise-performs-in-covington-this-week-12217404",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2010 年起改用 Com Truise 名義發表音樂。",
+    "src": "https://en.wikipedia.org/wiki/Com_Truise",
+    "src2": "https://www.citybeat.com/music/synthwave-provocateur-com-truise-performs-in-covington-this-week-12217404",
+    "from": "new"
+   },
+   {
+    "f": "2017 年以《Iteration》為概念故事收尾。",
+    "src": "https://en.wikipedia.org/wiki/Iteration_(album)",
+    "src2": "https://www.citybeat.com/music/synthwave-provocateur-com-truise-performs-in-covington-this-week-12217404",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "概念故事的張數：Iteration 維基寫四部曲（《Galactic Melt》《Wave 1》《Silicon Tare》《Iteration》），CityBeat 寫橫跨六張發行；facts 只寫「2017 年《Iteration》收尾」，不寫張數。",
+   "影響來源：維基（引 AllMusic）列 Giorgio Moroder、OMD、Boards of Canada；CityBeat 列 John Carpenter、《Blade Runner》、funk、Boards of Canada；搜尋摘要的維基又寫 Joy Division、New Order、Cocteau Twins。只有 Boards of Canada 兩處讀到的來源都出現，f 只收這個。"
+  ],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "事實庫 research 為空（《Galactic Melt》2011、《Iteration》2017、《Persuasion System》2019），三格從零查。搜尋 7 次：en 維基、WebSearch×2、CityBeat 專訪、synthwave 維基（確認 Com Truise 未被提及）、Iteration 維基、Sound on Sound 2018 專訪。失敗請求 1 次（Under the Radar 403）。\nlegacy 格查不到：維基 Synthwave 條目完全沒提到他；搜尋也沒有『被譽為／影響後輩／入選榮譽』類的有出處共識，最接近的只是媒體稱他是「synthwave star」（搜尋摘要，未開頁）。標 none，整體標 thin，寫作層宜以身世與概念故事為主，不要寫地位。\n未收（單源）：（1）1985 年生於 Madison County、來自 Oneida：維基單源；化名 Seth Haley。（2）藝名是 Tom Cruise 的 spoonerism：維基單源（搜尋摘要為同一維基）。（3）自稱「mid-fi synthwave, slow-motion funk」：維基單源。（4）2010 年《Cyanide Sisters》EP 先在 AMDISCS 免費釋出、2011 年 1 月 Ghostly 數位再版：維基單源。（5）十幾歲因有線電視接觸電子音樂、從 drum and bass 開始自學：CityBeat 單源。（6）受 John Carpenter、《Blade Runner》影響，「我受 80 年代聲音啟發而非 80 年代本身」：CityBeat 單源。（7）自述「比同類 synthwave 多拍子、更專注鼓」、主用 Juno-106 與 Ableton：Sound on Sound 單源。（8）2022 年為 Coinbase 超級盃廣告配樂：維基單源。（9）《Persuasion System》（2019）轉向個人經歷、約一半是未發表舊素材：CityBeat 單源。\n第一格第 1 條的兩源只各自支持一半（維基：紐約州與奧蘭多；Sound on Sound：一輩子在東岸、搬到洛杉磯一帶），洛杉磯與奧蘭多的先後只靠兩處串接，寫作層寫成簡短的「搬到洛杉磯、後來又搬到奧蘭多」即可，不要寫年份。\n同名混卡檢查：poolAlbums 三張（2011、2017、2019）皆為這位美國音樂人，無混卡。",
+  "pubIssues": []
  }
 ]
