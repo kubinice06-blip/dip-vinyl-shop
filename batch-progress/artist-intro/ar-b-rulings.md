@@ -224,3 +224,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 018 w2 審稿（2 處）：Laura Marling「三度入圍」改「多次」（在世者累計）；Los Jaivas 刪「第一個得獎的智利團體」（首次宣稱）。放寬額度 3 位（Kristofferson、Los Jaivas、Merle Haggard）照准。
 - **ar-b-018 上線**：40 位，reviewFixes 2。
 - 019 g2 交件（QA 本組 0）。thin：Seu Jorge、Shania Twain。pubIssues 3（Seu Jorge《Cru》張數；Tammy Wynette《Your Good Girl's》搬家年 1965→1966；The Bothy Band《1975》七人→六人）→ 本機待核。w1（g1+g2）派出。
+- 019 g4 交件（QA 本組 0）。thin：農村武裝青年。單源未收：鳳飛飛褒揚令與金鐘特別貢獻獎、農村武裝青年金音獎、知名定男獲獎、大工哲弘縣文化功勞賞、a-ha Rockheim 名人堂、BTS 自述受 BIGBANG 影響。pubIssues 2（周雲蓬《牛羊下山》獎項名稱；《沉默如謎的呼吸》2003／2004）→ 本機待核。
