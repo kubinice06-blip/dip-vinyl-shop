@@ -262,5 +262,198 @@
     "failedFetches": 0,
     "status": "full",
     "notes": "本位用 8 次：英文維基與法文維基 Claude François、WebSearch×2（Giscard 評語；Claudettes 與 Comme d'habitude）、法文維基 Claudettes、theartsdesk（原網址 301、第二次才取得內容）、法文維基 Claude François 複查三個疑點、英文維基 Belles belles belles（該條是 2003 年的 jukebox 音樂劇，與 1962 年單曲無關，未用）。⚠ 英法維基視為同站非獨立；theartsdesk 才是獨立源。Giscard 評語兩源：英文維基與 theartsdesk（artsdesk 只寫『等同披頭四』，『一個世代的大才華』一句僅英文維基）。〈Comme d'habitude〉是〈My Way〉原曲、Anka 改寫，兩源一致；詞曲署名細節（Revaux、Gilles Thibaut）本層未查，沿用上線簡介。死因與經過依規則不收，只收年份與『意外』。單源未收（寫作層不要寫）：1962 年秋以〈Belles ! Belles ! Belles !〉得到第一個成功（法文維基單源）；1978 年 3 月 15 日葬禮上數千歌迷在外哭泣、全法國深感震動（法文維基單源）；Claudettes 啟發 Naguettes（Nagui）與 Gafettes（Vincent Lagaf'）（法文維基 Claudettes 單源，Claude François 條目未載）；Claudettes 靈感來自 Ike & Tina Turner 的 Ikettes、1966 年看 Otis Redding 電視演出受啟發、前後約 30 位舞者（法文維基 Claudettes 單源）；母親學過鋼琴與小提琴、日間銀行職員夜晚在蔚藍海岸飯店打鼓、1959 年遇舞者 Janet Woollacott、1963 年 4 月 5 日在 Olympia 開唱、創辦 Flèche（英文維基單源）；artsdesk 稱他在法國流行文化中從 1960 年代中到逝世一直居核心、逝世後仍持續存在，並形容『James Brown 少了靈魂』（單源）。起始年份與 Claudettes 在 1966 年出現，法文維基與 artsdesk（只寫 from 1966 onwards）兩源一致。同名無混卡：poolAlbums 三張皆為此人。"
+  },
+  {
+    "key": "collage",
+    "name": "Collage",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Collage 是愛沙尼亞塔林的團體，由 Raivo（Rivo）Dikson 創立，成員是塔林國立音樂學院的學生，後來加入塔林音樂學校與師範學院音樂系的學生；當時愛沙尼亞屬蘇聯。",
+            "src": "https://et.wikipedia.org/wiki/Collage",
+            "src2": "https://www.nts.live/artists/31845-collage",
+            "from": "new"
+          },
+          {
+            "f": "團名由一開始就在團裡唱歌的 Anne Erm 取的，用意是曲目橫跨爵士化的流行歌、古典器樂改編與愛沙尼亞作曲家的原創作品。",
+            "src": "https://www.nts.live/artists/31845-collage",
+            "src2": "https://sirp.ee/online-uudised/ansambel-collage-esitles-uut-albumit/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的曲目有兩條主線：把愛沙尼亞民歌用進流行音樂，以及爵士式的流行歌與管弦樂譜的人聲編曲。",
+            "src": "https://sirp.ee/online-uudised/ansambel-collage-esitles-uut-albumit/",
+            "src2": "https://et.wikipedia.org/wiki/Collage",
+            "from": "new"
+          },
+          {
+            "f": "1970 年代由 Aarne Vahuri 擔任團的精神領袖，團裡所有民歌改編都出自他手。",
+            "src": "https://et.wikipedia.org/wiki/Collage",
+            "src2": "https://funkembassyrecords.bandcamp.com/track/mets-neidude-vahel",
+            "from": "new"
+          },
+          {
+            "f": "首張專輯收有五首民歌改編，由 Tõnu Naissoo 與 Aarne Vahuri 編曲；團的民歌材料取自愛沙尼亞傳統的 runo 歌。",
+            "src": "https://et.wikipedia.org/wiki/Collage_(album)",
+            "src2": "https://www.nts.live/artists/31845-collage",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Collage 是愛沙尼亞最早把民歌元素用進流行音樂的樂團之一。",
+            "src": "https://et.wikipedia.org/wiki/Collage",
+            "src2": "https://funkembassyrecords.bandcamp.com/track/mets-neidude-vahel",
+            "from": "new"
+          },
+          {
+            "f": "三張專輯在 2014 年 12 月重新發行黑膠，同時另出一張收有四首未發表歌曲的 12 吋單曲。",
+            "src": "https://sirp.ee/online-uudised/ansambel-collage-esitles-uut-albumit/",
+            "src2": "https://et.wikipedia.org/wiki/Collage_(album)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團在 1970 年代錄下三張專輯與一張四首歌的 EP，三張專輯依序是《Collage》《Kadriko》《Käokiri》。",
+            "src": "https://sirp.ee/online-uudised/ansambel-collage-esitles-uut-albumit/",
+            "src2": "https://et.wikipedia.org/wiki/Collage",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "團的成立與解散年：愛沙尼亞文維基寫 1965–1979，NTS 與 MusicBrainz 寫 1966 年成立（MB 到 1979），Sirp 寫活動於 1966–1976；三說不一，facts 不寫成立與解散年。",
+      "三張專輯年份：愛沙尼亞文維基寫《Collage》1971、《Kadriko》1974、《Käokiri》1978，MusicBrainz 與上線簡介寫 1971、1975、1977；NTS 把首張寫成 1970。facts 不寫年份；上線簡介《Kadriko》與《Käokiri》的年份待店主核對。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Collage",
+        "claim": "成員關係欄只有六筆，六位全是女性",
+        "problem": "該句只依 MusicBrainz 關係欄；愛沙尼亞文維基列有 Aarne Vahuri、Tauno Vahter、Enn Tomson、Uno Loop 等人名為歌手，專輯條目另列男性樂手 German Pekarevski（長號）與 Lembit Saarsalu（次中音薩克斯風，性別由名字判斷、未另查），全是女性的說法恐誤導。",
+        "src": "https://et.wikipedia.org/wiki/Collage"
+      },
+      {
+        "album": "Kadriko",
+        "claim": "盤面是 1975 年 Мелодия СМ 02821-2",
+        "problem": "愛沙尼亞文維基團條目的唱片目錄把《Kadriko》記為 1974，與 MusicBrainz 的 1975 不一致，年份待核（Melodiya 目錄號本層未驗）。",
+        "src": "https://et.wikipedia.org/wiki/Collage"
+      },
+      {
+        "album": "Käokiri",
+        "claim": "盤面是 1977 年 Мелодия С60-08739-40；團史裡最後一個當年出的發行品",
+        "problem": "愛沙尼亞文維基記《Käokiri》為 1978，與 MusicBrainz 的 1977 不一致，年份待核；『最後一個當年出的發行品』的說法隨年份而變。",
+        "src": "https://et.wikipedia.org/wiki/Collage"
+      }
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "thin",
+    "notes": "本位用 8 次：WebSearch×3、愛沙尼亞文維基 Collage、Collage (album)、Sirp 報導、Bandcamp（Funk Embassy 曲目頁）、NTS 藝人頁；失敗 3 次（愛沙尼亞文維基 Collage_(ansambel) 404、Forced Exposure 403、Discogs 藝人頁 403）。原先猜的愛沙尼亞文維基標題不對，正確標題是 Collage。⚠ 中文世界與英文維基無此團專條，資料極少；legacy 偏薄，status 記 thin。單源、不收進 facts（寫作層不要寫）：愛沙尼亞電視台委託五首民歌、作為一檔民族誌節目的一部分（NTS 單源，另有搜尋摘要同文，非獨立；愛沙尼亞文專輯條目沒有這件事）；『Collage 的 runo 歌用法影響了愛沙尼亞與國外其他樂團』（NTS 單源）；受 Jan Johansson 與 Veljo Tormis 啟發（NTS 單源）；Bandcamp（唱片公司文案）稱他們是『第一個』把傳統音樂放進流行的愛沙尼亞團，且在蘇聯與全世界都算獨特——與愛沙尼亞文維基『之一』不同，facts 取較保守的『之一』，『第一個』與『全世界獨特』屬廠方文案，不收；runo 歌做領唱與合唱對答、混爵士放克（Bandcamp 單源）；Anne Erm 後來成為愛沙尼亞爵士圈核心人物（Bandcamp 單源）；團員名單：Lea Gabral、Anne Erm、Maire Eliste、Aarne Vahuri 等（多源，但名單不入 facts）。『Aarne Vahuri 精神領袖』一條兩源措辭略異（維基『所有民歌改編出自他』，Bandcamp『完整負責寫作』），facts 採維基。『創立者 Raivo Dikson』兩源拼法 Raivo／Rivo，NTS 與維基皆有；Raivo Dikson 的人物背景未查。成立地塔林見 NTS 與愛沙尼亞文維基（維基寫學院在塔林），『愛沙尼亞屬蘇聯』為背景常識。事實庫 MusicBrainz 的成員關係全是女性，與 Tauno Vahter、Enn Tomson、Uno Loop 等男性成員的名單衝突，上線簡介『六位全是女性』一句建議店主留意（pubIssues 已列）。非獨立：NTS 與搜尋摘要中的 Forced Exposure 文案同源，Bandcamp 文案也可能同源。"
+  },
+  {
+    "key": "conan gray",
+    "name": "Conan Gray",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Conan Gray 在德州 Georgetown 長大，父親是愛爾蘭裔、母親是日本裔。",
+            "src": "https://en.wikipedia.org/wiki/Conan_Gray",
+            "src2": "https://americansongwriter.com/kid-krow-conan-gray-album-interview/",
+            "from": "new"
+          },
+          {
+            "f": "他靠在 YouTube 發生活 vlog 與翻唱歌曲起家，之後才開始上傳自己錄的原創歌。",
+            "src": "https://en.wikipedia.org/wiki/Conan_Gray",
+            "src2": "https://americansongwriter.com/kid-krow-conan-gray-album-interview/",
+            "from": "new"
+          },
+          {
+            "f": "2017 年 3 月，他在高中最後一年於自己房間錄下〈Idle Town〉，寫的是他長大的德州小鎮與畢業前想離開的心情；這首歌上網後傳開，成為他後來發行音樂的起點。",
+            "src": "https://readdork.com/features/conan-gray-idle-town-sunset-season-rediscovery-c64e41b183",
+            "src2": "https://americansongwriter.com/kid-krow-conan-gray-album-interview/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的歌屬 indie pop，寫的是心碎、孤獨與青春期的不安；他說自己寫歌「不加糖衣、不過濾自己」。",
+            "src": "https://en.wikipedia.org/wiki/Kid_Krow",
+            "src2": "https://americansongwriter.com/kid-krow-conan-gray-album-interview/",
+            "from": "new"
+          },
+          {
+            "f": "他的歌長期自己寫，早期是在房間裡用 GarageBand 與便宜麥克風做出來的臥室製作。",
+            "src": "https://americansongwriter.com/kid-krow-conan-gray-album-interview/",
+            "src2": "https://readdork.com/features/conan-gray-idle-town-sunset-season-rediscovery-c64e41b183",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2020 年 8 月，Elton John 在 BBC Radio 6 Music 的訪談裡稱讚 Conan Gray 是美國 Spotify 前 50 名裡唯一獨力寫歌的人，並說自己喜歡真正寫歌的人。",
+            "src": "https://www.audacy.com/national/music/elton-john-stans-conan-gray-i-like-people-who-write-songs",
+            "src2": "https://americansongwriter.com/kid-krow-conan-gray-album-interview/",
+            "from": "new"
+          },
+          {
+            "f": "首張專輯《Kid Krow》2020 年 3 月 20 日發行，在 Billboard 200 排第 5 名，當年被稱為該年最大的新人首專輯成績；其中〈Heather〉靠 TikTok 傳開，帶動專輯。",
+            "src": "https://en.wikipedia.org/wiki/Kid_Krow",
+            "src2": "https://americansongwriter.com/kid-krow-conan-gray-album-interview/",
+            "from": "new"
+          },
+          {
+            "f": "Taylor Swift 在 Instagram 公開稱讚《Kid Krow》裡的一首歌是 masterpiece；Conan 本人說 Swift 是他最大的靈感來源。",
+            "src": "https://en.wikipedia.org/wiki/Kid_Krow",
+            "src2": "https://en.wikipedia.org/wiki/Conan_Gray",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他 2020 年推出首張專輯《Kid Krow》，之後接著發行《Superache》（2022）與《Found Heaven》（2024）。",
+            "src": "https://en.wikipedia.org/wiki/Conan_Gray",
+            "src2": "https://en.wikipedia.org/wiki/Kid_Krow",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "開始發影片的年紀：英文維基與 American Songwriter 寫 15 歲開頻道，Dork 寫 9 歲就開始發影片、12 歲唱第一首原創；兩說不一，facts 不寫年齡。",
+      "《Kid Krow》錄音地點：American Songwriter 寫在洛杉磯臥室寫與錄完整張，英文維基專輯條目寫 2019 年錄於 Los Angeles 的 Amusement Studios、由 Dan Nigro 等人製作；facts 不寫錄音地點。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "本位用 7 次：英文維基 Conan Gray、WebSearch（背景與 Swift）、American Songwriter 專訪、Dork 專文、英文維基 Kid Krow、WebSearch（Elton John 與 Teen Vogue）、Audacy 報導。事實庫為空、全部從零查。⚠ 在世者，銷量、串流、認證倍數一概不寫；〈Heather〉的 Hot 100 名次：American Songwriter（2020 年）寫當時最高第 46 名，搜尋摘要寫 5 名，兩說不一，facts 不寫名次；《Kid Krow》首週 Billboard 200 第 5 名兩源一致，『最大新人首張』一句是『截至 2020 年 9 月』的說法，寫作層加時間限定。Conan 條目與 Kid Krow 條目同為英文維基，非獨立；『Taylor Swift 最大靈感』一條的兩源即屬此型，且 Swift 稱讚的『masterpiece』我只在 Kid Krow 條目讀到、沒見具體曲名，不寫曲名。單源、不收：出生 1998 年 12 月 5 日於加州 Lemon Grove、嬰兒時舉家搬到廣島（英文維基與搜尋摘要）；Teen Vogue 稱他『the pop prince for sad internet teens』（英文維基單源）；2018 年簽 Republic（履歷不收）；影響他的歌手 Lorde、Adele 等（英文維基單源）；《Kid Krow》主題含童年在德州的貧窮與歧視（英文維基單源）；ADHD、聯覺與性向相關個人資料不收。Elton John 的引述在 Audacy（原話、日期 2020 年 8 月 27 日、BBC Radio 6 Music）與 American Songwriter（轉述）兩處，後者為二手轉述。同名無混卡：poolAlbums 三張皆為此人。"
   }
 ]
