@@ -361,7 +361,7 @@
   "failedFetches": [
    "britannica.com Traffic 條目 403"
   ],
-  "status": "thin",
+  "status": "full",
   "notes": "同名檢查：poolAlbums 為《John Barleycorn Must Die》（1970）《The Low Spark of High Heeled Boys》（1971）《Mr. Fantasy》（1967），皆為英國伯明罕的 Traffic，無同名混卡。搜尋 5 次：維基 Traffic（curl）、搖滾名人堂官網（curl）、WebSearch、uDiscover（curl）、維基 Aston Tirrold（curl）。名人堂官方（可具名單源）：rockhall.com 對 Traffic 的介紹寫「潛入自己心智的迷幻兔子洞，除了音樂與繆思不對任何人負責；九分鐘長的歌與歌中突然冒出的 hook，讓 Traffic 打破所有規則」，引介人 Dave Matthews。其他單源、不進 facts：uDiscover 稱 Traffic 是『同世代最偉大的英國搖滾樂團之一』『對任何追求音樂品質的樂團仍是有創意的範本』，並稱《The Low Spark of High Heeled Boys》融合 spaced rock 與 jazz-fusion（單源）；維基說 Winwood 與 Wood 1968 年常與 Jimi Hendrix 合奏並參與《Electric Ladyland》（單源）；〈Glad〉被 Christina Aguilera 2006 年的歌取樣（單源）；搜尋摘要稱 Traffic 是『第一個去鄉下 get it together 的樂團、其他團隨後仿效』（Wikipedia Aston Tirrold 條目並無此語；屬『第一個』類宣稱、找不到第二源且有反例可疑，不收）；摘要引述 Dave Matthews『我聽 Jim Capaldi 長大、是他推我走向音樂路』（只見搜尋摘要、未開頁，不收）。成員逝世：Wood 1983、Capaldi 2005、Mason 2026（維基單源，不收）。維基 Aston Tirrold 與維基 Traffic 為同站、非獨立。 另：典禮上 Winwood 與 Capaldi 演出〈Dear Mr. Fantasy〉、Mason 加入同唱〈Feelin' Alright〉（維基單源）。"
  },
  {
@@ -660,5 +660,71 @@
   ],
   "status": "full",
   "notes": "同名檢查：poolAlbums 為《Welfare Jazz》（2021）《viagr aboys》（2025）《Street Worms》（2018），皆為瑞典斯德哥爾摩的 Viagra Boys，無同名混卡。搜尋 8 次：維基 Viagra Boys（curl）、WebSearch、Generation X Offender（curl）、Pitchfork Street Worms 評論（curl）、WebSearch、nyheter24（curl）、DIY Magazine（curl）、Pressen.se（curl）。Generation X Offender 的出身段落與維基高度重疊，疑似轉述維基，標非獨立。Grammis 2023 的『年度搖滾』：維基寫 2023 年得獎，Pressen.se 寫『樂團 2023 年得過同一個獎』；搜尋摘要稱 2023 年得獎專輯是《Cave World》（Grammis 提名名單，未開頁，不寫專輯主詞）。2026 年第 43 屆 Grammis 的得獎資訊來自 TT 通訊社經 nyheter24 轉載，Pressen.se 轉自 Sydsvenskan，兩篇同日同源（非獨立）。單源、不進 facts：Murphy 曾是刺青師、樂團看到他在卡拉 OK 醉唱 Mariah Carey 後找他入團（搜尋摘要，來自維基 Sebastian Murphy 條目，未開頁）；Pitchfork 說 Murphy 搖晃的唱腔是向 Mark E. Smith 致意（單一樂評人）；Murphy 引言『一半是演出、一半像日記，不是刻意的，但潛意識裡變成對自己與他人的諷刺』（維基單源）；創團吉他手 Benjamin Vallé 2021 年過世、當時已非現役成員（維基單源，只收年份不收細節）；2023 年支援 Queens of the Stone Age 北美巡演、2025 年〈infinite anxiety〉巡演含倫敦 Alexandra Palace 與斯德哥爾摩 Avicii Arena（維基單源，場次不收）；成員另出自 Pig Eyes、Neu-Ronz（維基單源）。"
+ },
+ {
+  "key": "vision of disorder",
+  "name": "Vision of Disorder",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Vision of Disorder 1992 年成軍於紐約長島，創團成員是吉他手 Matt Baumbach 與 Mike Kennedy、主唱兼詞作者 Tim Williams、鼓手 Brendon Cohen 與貝斯手 Mike Fleischmann。",
+      "src": "https://en.wikipedia.org/wiki/Vision_of_Disorder",
+      "src2": "https://noisecreep.com/vision-of-disorder-curse-remain-cursed/",
+      "from": "new"
+     },
+     {
+      "f": "樂團 1993 年出過 demo 卡帶，1995 年出第一張 EP《Still》。",
+      "src": "https://en.wikipedia.org/wiki/Vision_of_Disorder",
+      "src2": "https://www.noecho.net/features/vision-of-disorder-first-album-interview",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Vision of Disorder 在傳統硬核的框架裡混進旋律與 groove；No Echo 說金屬與硬核早在他們之前就已混合，但他們在那個風格空間裡走出了自己的路。",
+      "src": "https://en.wikipedia.org/wiki/Vision_of_Disorder",
+      "src2": "https://www.noecho.net/features/vision-of-disorder-first-album-interview",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Noisecreep 2012 年的專題稱 Vision of Disorder「普遍被視為現代 metalcore 的開山鼻祖」，並說長島同鄉的 Glassjaw 等後輩對他們推崇不已；英文維基也說樂團後來因為對硬核普及化的影響而受到讚譽。",
+      "src": "https://noisecreep.com/vision-of-disorder-curse-remain-cursed/",
+      "src2": "https://en.wikipedia.org/wiki/Vision_of_Disorder",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 2002 年前解散後，Tim Williams 與 Mike Kennedy 另組 Bloodsimple；Vision of Disorder 之後重組，2012 年發行《The Cursed Remain Cursed》。",
+      "src": "https://en.wikipedia.org/wiki/Vision_of_Disorder",
+      "src2": "https://noisecreep.com/vision-of-disorder-curse-remain-cursed/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "事實庫的 MusicBrainz 記錄寫藝人起算年 1992、begin-area Northport；維基與 Noisecreep 皆寫 1992 年成軍於長島，兩者一致，採 1992 與長島，不寫 Northport。",
+   "上線簡介與本層查到的資料在目前可核對處無衝突（首張長篇 1996 年 10 月 Roadrunner／Supersoul、《Still》1995 年 Striving for Togetherness 皆與維基一致）。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "同名檢查：poolAlbums 為《Vision of Disorder》（1996）《Demo '93》（1993）《Still》（1995），皆為長島的 Vision of Disorder，無同名混卡。搜尋 7 次：維基 VOD（curl）、WebSearch、No Echo（curl）、WebSearch、Noisecreep（curl）、Louder（curl，只得到編輯個人的入門感想、未取用）、維基首張專輯條目（curl）。維基 VOD 與維基首張專輯為同站、非獨立；Noisecreep 為 Mike Gitter 的專題（個人撰稿），No Echo 為訪談式專題。單源、不進 facts：維基引用的評語『首張專輯是沒人聽過的金屬硬核、大廠發行給大眾、嘶吼人聲疊在憂鬱的乾淨人聲上、有新鮮的「非硬核」吉他段與陌生的鼓型』；首張專輯 1996 年 6–8 月在麻州數間錄音室錄製、製作人 Jamie Locke、發行日 10 月 22 日、2001 年前賣出十萬張以上、樂團自己一直批評其製作與演出（維基首張專輯條目單源）；Ray Cappo 在賓州一場與 Shelter 的演出後邀樂團成為他在 Roadrunner 旗下新廠牌 Supersoul 的第一個團（維基首張專輯條目與 No Echo 的 Fleischmann 說法一致，屬『第一個』類宣稱且為履歷，不進 facts）；Fleischmann 簽約時 18 歲、其他人 20 歲（No Echo 單源）；Noisecreep 引 Overcast 貝斯手 Mike D'Antonio（後為 Killswitch Engage）說 Overcast、Candiria 與 V.O.D. 像『一張潛伏小組網絡』（單源）；維基『Heavy hardcore』條目引書籍列出的代表團名單（單源）；1998 年《Imprint》與廠牌決裂、Phil Anselmo 客串（維基單源）；2001 年《From Bliss to Devastation》轉向傳統段落歌曲結構、Kennedy 說像是『配合新金屬場景』（維基引訪談，單源）。事實庫 research 的兩條是 MusicBrainz 實體欄位（Northport、無廠牌標記、Striving for Togetherness 登記地 Bayreuth），本層未再採用。 另：樂團在 1995 年前後出現在紐約硬核紀錄片《N.Y.H.C.》、並收錄於《New York's Hardest》合輯（維基單源）。"
  }
 ]
