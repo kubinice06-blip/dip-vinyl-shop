@@ -264,5 +264,469 @@
   "status": "full",
   "notes": "事實庫 research 為空、無已上線簡介，從零查。搜尋 6 次：WebFetch 維基 Al B. Sure! 1（另以 curl 讀同頁原文，不重算）、WebSearch 身世／Sony 比賽 2、encyclopedia.com 傳記 3、WebSearch 影響／Jodeci 4、維基 In Effect Mode 5、維基 T.E.V.I.N. 6（維基 Jodeci 條目也讀過，沒有提到他，故未列為來源，同站不計）。失敗請求 1 次：AllMusic 傳記 403。第二源實際開頁：encyclopedia.com（Gale 傳記條目，收入 Contemporary Musicians，是獨立於維基的傳記資料）；維基 In Effect Mode 與 T.E.V.I.N. 為維基不同條目，與維基 Al B. Sure! 非獨立。池內兩張專輯確認為同一人：《In Effect Mode》（1988）與《Private Times... And the Whole 9!》（1990）。未收進 facts：（1）獎項：維基稱得 American Music Award 最佳新 R&B 藝人與 Soul Train 最佳新人（得獎）、多次 Grammy 與 AMA 提名；encyclopedia.com 稱 1988 年 Soul Train 最佳新人、1988 年 AMA 最佳新人、1993 年 New York Music Award 最佳男 R&B 歌手。兩源類別名稱與年份不一致，查不到確切屆次與類別，依規則不收。（2）「Sony 比賽首屆優勝」只有維基（兩條維基條目），不寫「首屆」；（3）早年想以饒舌歌手出道後改唱 R&B：維基 In Effect Mode 單源；（4）1993 年為 David Bowie《Black Tie White Noise》同名曲唱和聲：維基單源；（5）與 Quincy Jones〈The Secret Garden (Sweet Seduction Suite)〉：維基單源；（6）專輯與單曲銷量、榜位：在世者銷量不寫；（7）1989 年曾遭指控且獲撤銷：屬指控，不收；（8）Rolling Stone 與其他媒體對他的評語：樂評媒體評語不收。「new jack swing 最受歡迎表演者之一」一句維基標示出自 AllMusic，本次 AllMusic 頁 403 未能開頁，故兩源實為維基與 encyclopedia.com（後者以 Rolling Stone 1988 年的形容、並稱其聲音讓一種更柔和重旋律的嘻哈普及），措辭已降為「最受歡迎之一」，未寫先驅或開創。",
   "pubIssues": []
+ },
+ {
+  "key": "al cohn & zoot sims",
+  "name": "Al Cohn & Zoot Sims",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "這是 Al Cohn（1925–1988）與 Zoot Sims（1925–1985）兩位次中音手的搭檔名義；Sims 生於加州 Inglewood，雙親是歌舞雜耍藝人，13 歲開始吹次中音。",
+      "src": "https://en.wikipedia.org/wiki/Zoot_Sims",
+      "src2": "https://nationaljazzarchive.org.uk/explore/interviews/1634252-al-cohn-and-zoot-sims",
+      "from": "new"
+     },
+     {
+      "f": "兩人都是在 Woody Herman 的樂團成名，Sims 是該團著名的 Four Brothers 薩克斯風組成員。",
+      "src": "https://en.wikipedia.org/wiki/Zoot_Sims",
+      "src2": "https://nationaljazzarchive.org.uk/explore/interviews/1634252-al-cohn-and-zoot-sims",
+      "from": "new"
+     },
+     {
+      "f": "兩人都出身於崇拜 Lester Young 的 1920 年代中期出生次中音世代，後來再吸收 Charlie Parker 的和聲。",
+      "src": "https://jazzprofiles.blogspot.com/2019/10/zoot-sims-all-in-one-place.html",
+      "src2": "https://nationaljazzarchive.org.uk/explore/interviews/1634252-al-cohn-and-zoot-sims",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "兩人 1957 年前後合組雙次中音五重奏，常駐紐約的 Half Note，斷斷續續合作到 Sims 1985 年過世。",
+      "src": "https://nationaljazzarchive.org.uk/explore/interviews/1634252-al-cohn-and-zoot-sims",
+      "src2": "https://en.wikipedia.org/wiki/Zoot_Sims",
+      "from": "new"
+     },
+     {
+      "f": "Cohn 同時是公認的編曲家，替這個雙人團寫譜，也替多支大樂團寫譜，寫作是他的主要收入來源。",
+      "src": "https://en.wikipedia.org/wiki/Al_Cohn",
+      "src2": "https://nationaljazzarchive.org.uk/explore/interviews/1634252-al-cohn-and-zoot-sims",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1957 年前後兩人共組五重奏，合作延續近三十年。",
+    "src": "https://nationaljazzarchive.org.uk/explore/interviews/1634252-al-cohn-and-zoot-sims",
+    "src2": "https://en.wikipedia.org/wiki/Zoot_Sims",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Sims 與 Cohn 合組樂團的起年：NJA 訪談中 Sims 說「57 年左右」，JazzProfiles 轉引另一份傳記寫「1956 或 1957 年」，維基只說 1960 與 1970 年代初期常合作；facts 寫「1957 年前後」。"
+  ],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫僅有《Jazz Alive!》一份研究稿與兩篇已上線簡介，沒有人物層資料，三格從零查。搜尋 8 次：維基 Al Cohn 1、維基 Zoot Sims 2、WebSearch 搭檔 3、National Jazz Archive 1965 年 Les Tomkins 雙人訪談 4、ESU 圖書館 Al Cohn 頁 5、WebSearch 遺產 6、維基 Al and Zoot 7、JazzProfiles Zoot Sims 專題 8。失敗請求 3 次未計入：Britannica、JazzTimes、All About Jazz（Cloudflare 擋）。第二源實際開頁：NJA 訪談全文、JazzProfiles（內有 Doug Ramsey《Jazz Matters》1989 年節錄）。NJA 的傳記段落與維基文字近乎相同，兩者非完全獨立。名稱是兩人搭檔名義，以兩人為主體寫；注意池內《Al and Zoot》實為 Al Cohn Quintet featuring Zoot Sims 名義。legacy 查不到雙源共識，標 none、整位 status 記 thin。以下單源不進 facts（寫作層若要用須另補第二源）：（1）NJA 1965 年訪談：Ronnie Scott 稱「Al and Zoot? – my favourite group!」；Sims 稱 1948 年在鹽湖城 Woody Herman 樂團與 Cohn 相識，兩人一見如故；Cohn 自述 12 歲迷爵士改學單簧管、聽到 Lester Young 後改次中音、17 歲加入 Georgie Auld 樂團；Cohn 說「我們想法一致，但吹法不同」。（2）JazzProfiles 轉引：Doug Ramsey 稱 Sims「幾乎從出道起就獲得所有世代爵士樂手毫無保留的敬佩」，Cohn、Getz、Sims 是 Young 門徒中最出名的幾位，Cohn 1948 年為 Herman 樂團寫編曲並接替 Herbie Steward 進入 Four Brothers 組；貝斯手 Bill Crow 稱 Sims 是他聽過「最能 swing 的爵士樂手」；Dave Frishberg 稱他為「聽過最天然的爵士樂手」。（3）維基單源：Cohn 生於布魯克林、1988 年於賓州 Stroudsburg 過世；Cohn 為 Broadway《Raisin》《Sophisticated Ladies》編曲，編曲曾由 Maynard Ferguson、Gerry Mulligan 等大樂團演奏。（4）ESU 圖書館以他命名設有 Al Cohn Memorial Jazz Collection（單源）。（5）《Al and Zoot》AllMusic 樂評引文、其他樂評評語：樂評媒體評語不收。（6）搜尋摘要稱 Cohn 音色較重，未開頁。已上線簡介《Al and Zoot》《Jazz Alive!》與以上來源無衝突。",
+  "pubIssues": []
+ },
+ {
+  "key": "al di meola, john mclaughlin & paco de lucía",
+  "name": "Al Di Meola, John McLaughlin & Paco de Lucía",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Paco de Lucía（1947–2014）生於西班牙安達魯西亞的 Algeciras，父親與兩位兄弟都是佛朗明哥音樂人，他 11 歲就第一次公開演出。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.npr.org/sections/therecord/2014/02/26/283032550/paco-de-lucia-modern-superstar-of-flamenco-dies",
+      "from": "new"
+     },
+     {
+      "f": "John McLaughlin 1942 年生於英格蘭約克郡，母親是小提琴家，他本人 11 歲開始彈吉他，早年受布魯斯、Django Reinhardt 與佛朗明哥啟發。",
+      "src": "https://en.wikipedia.org/wiki/John_McLaughlin_(musician)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/john-mclaughlin",
+      "from": "new"
+     },
+     {
+      "f": "1969 年 McLaughlin 赴美，先加入 Tony Williams 的 Lifetime，隨即參與 Miles Davis 的《In a Silent Way》等電子爵士專輯。",
+      "src": "https://en.wikipedia.org/wiki/John_McLaughlin_(musician)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/john-mclaughlin",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Paco de Lucía 把爵士帶進佛朗明哥，常讓傳統派皺眉；與 Di Meola、McLaughlin 組成三人合作後，他可以放手發揮對爵士的興趣。",
+      "src": "https://www.npr.org/sections/therecord/2014/02/26/283032550/paco-de-lucia-modern-superstar-of-flamenco-dies",
+      "src2": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "from": "new"
+     },
+     {
+      "f": "McLaughlin 是爵士融合樂（jazz fusion）的先驅，把爵士與搖滾、印度音樂、佛朗明哥等混在一起，之後又以 Mahavishnu Orchestra 與原音團 Shakti 走不同路線。",
+      "src": "https://en.wikipedia.org/wiki/John_McLaughlin_(musician)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/john-mclaughlin",
+      "from": "new"
+     },
+     {
+      "f": "《Friday Night in San Francisco》是三人 1981 年發行的現場專輯，開場的〈Mediterranean Sundance / Rio Ancho〉把 Di Meola 與 Paco 各自的曲子接成一首。",
+      "src": "https://en.wikipedia.org/wiki/Friday_Night_in_San_Francisco",
+      "src2": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Paco de Lucía 被廣泛認為是世界第一的佛朗明哥吉他手。",
+      "src": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "src2": "https://www.npr.org/sections/therecord/2014/02/26/283032550/paco-de-lucia-modern-superstar-of-flamenco-dies",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代末起，Paco 與歌手 Camarón de la Isla 合作近十年，把傳統上以歌手為主、吉他只負責伴奏的佛朗明哥往前推。",
+      "src": "https://www.npr.org/sections/therecord/2014/02/26/283032550/paco-de-lucia-modern-superstar-of-flamenco-dies",
+      "src2": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+      "from": "new"
+     },
+     {
+      "f": "McLaughlin 把爵士、搖滾、印度音樂與佛朗明哥等混在一起的做法，開出一條路，後來被稱為融合樂（fusion）。",
+      "src": "https://en.wikipedia.org/wiki/John_McLaughlin_(musician)",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/john-mclaughlin",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1981 年三人合作的現場專輯《Friday Night in San Francisco》發行。",
+    "src": "https://en.wikipedia.org/wiki/Friday_Night_in_San_Francisco",
+    "src2": "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基 Paco 條目寫三人團 The Guitar Trio 1979 年起與 Larry Coryell 合組、Di Meola 1981 年才接替，但同條目與《Friday Night in San Francisco》條目都寫該專輯錄於 1980 年 12 月、三人是 Di Meola／McLaughlin／Paco；兩處不一致，facts 不寫 Di Meola 加入年份。",
+   "維基 Paco 條目寫《Friday Night in San Francisco》賣過 100 萬張，Di Meola 條目寫全球賣過 700 萬張；兩邊不一致，且成員仍在世，銷量一律不寫。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "三人合作名義，已上線兩張專輯（《Friday Night in San Francisco》《Passion, Grace & Fire》）確認為同一組。事實庫 research 為空，從零查。搜尋 8 次：維基 Friday Night in San Francisco 1、維基 Paco de Lucía 2、維基 John McLaughlin 3、維基 Al Di Meola 4、WebSearch Paco 訃聞 5、NPR 2014 訃聞 6、WebSearch McLaughlin 傳記 7、encyclopedia.com McLaughlin（Gale）8。第二源實際開頁：NPR 訃聞全文、encyclopedia.com 傳記全文。維基四個條目同站，彼此非獨立；本位 facts 凡兩源皆維基者已在上面明列：《Friday Night》一條（WF 與 WP）、Paco 地位一條中的 NPR 為獨立源。Al Di Meola 本人的身世與地位只有維基單源，不進 facts：1954 年生於紐澤西 Jersey City、義大利裔、8 歲受 Elvis 與披頭四啟發學吉他、念 Berklee、19 歲替 Bill Connors 加入 Chick Corea 的 Return to Forever、1977《Elegant Gypsy》邀 Paco 錄〈Mediterranean Sundance〉；Di Meola 說 McLaughlin 是「第一個把驚人情感與驚人技術結合的吉他手」。這些可在下一輪補第二源後再用。其他單源：Paco 1959 年獲 Jerez 佛朗明哥賽特別獎、2004 年獲 Prince of Asturias 藝術獎（需屆次與類別，未核）、2004 年與 2012 年拿 Latin Grammy（搜尋摘要提到，未開頁）、被 Billboard 2015 列為最具影響力拉丁藝人之一（榜單）；NPR 單源：Paco 不是羅姆人，與傳統派對他的觀感；McLaughlin 單源：Jeff Beck 稱他「現存最好的吉他手」、Rolling Stone 2003 年百大吉他手第 49（榜單名次不收）；Musician 雜誌 1993 年稱他是「被認為發明真正 fusion 的神祕主義者」（encyclopedia.com 轉引，屬雜誌評語）；1996 年三人以《The Guitar Trio》再聚、1983 年《Passion, Grace & Fire》每人各寫兩曲（維基單源）；Kolosky 把《Friday Night》比作 1938 年 Benny Goodman 卡內基演出，是單一評論者形容詞（已上線簡介有具名引述，無事實錯誤；寫作層若再用須具名）。搜尋摘要稱《Passion, Grace & Fire》是現場專輯，與維基與已上線簡介（棚內錄音）不符，以後兩者為準。",
+  "pubIssues": []
+ },
+ {
+  "key": "albert mangelsdorff",
+  "name": "Albert Mangelsdorff",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Albert Mangelsdorff 1928 年 9 月 5 日生於法蘭克福，2005 年 7 月 25 日在法蘭克福過世。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Mangelsdorff",
+      "src2": "https://variety.com/2005/scene/people-news/albert-mangelsdorff-1117927772/",
+      "from": "new"
+     },
+     {
+      "f": "他小時候學小提琴、後來自學吉他；哥哥 Emil Mangelsdorff 是爵士樂手，納粹時期爵士受壓制，他對這種音樂的熱情只能收斂。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Mangelsdorff",
+      "src2": "https://variety.com/2005/scene/people-news/albert-mangelsdorff-1117927772/",
+      "from": "new"
+     },
+     {
+      "f": "戰後他先以吉他手身分，在替美軍演出的樂團裡起步，約 1948 年改吹長號。",
+      "src": "https://playbill.com/article/jazz-trombonist-albert-mangelsdorff-dies-at-76",
+      "src2": "https://variety.com/2005/scene/people-news/albert-mangelsdorff-1117927772/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以 multiphonics 見稱：一邊吹長號、一邊哼唱，讓長號同時發出多個音，製造出和聲與和弦，使長號能夠獨奏成立。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Mangelsdorff",
+      "src2": "https://variety.com/2005/scene/people-news/albert-mangelsdorff-1117927772/",
+      "from": "new"
+     },
+     {
+      "f": "他 1950 年代趕上 cool jazz，1960 年代起轉向前衛與自由爵士，也常錄製長號獨奏。",
+      "src": "https://variety.com/2005/scene/people-news/albert-mangelsdorff-1117927772/",
+      "src2": "https://playbill.com/article/jazz-trombonist-albert-mangelsdorff-dies-at-76",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1958 年他代表德國參加 Newport 爵士音樂節的國際樂團，並與 Louis Armstrong 合作錄音。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Mangelsdorff",
+      "src2": "https://playbill.com/article/jazz-trombonist-albert-mangelsdorff-dies-at-76",
+      "from": "new"
+     },
+     {
+      "f": "1994 年起，德國爵士樂手聯盟（Union Deutscher Jazzmusiker）設立以他為名的 Albert Mangelsdorff 獎，兩年頒發一次。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Mangelsdorff",
+      "src2": "https://variety.com/2005/scene/people-news/albert-mangelsdorff-1117927772/",
+      "from": "new"
+     },
+     {
+      "f": "1990 年代他擔任柏林爵士音樂節（JazzFest Berlin）的音樂總監。",
+      "src": "https://en.wikipedia.org/wiki/Albert_Mangelsdorff",
+      "src2": "https://playbill.com/article/jazz-trombonist-albert-mangelsdorff-dies-at-76",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1958 年代表德國參加 Newport 爵士音樂節國際樂團。",
+    "src": "https://en.wikipedia.org/wiki/Albert_Mangelsdorff",
+    "src2": "https://playbill.com/article/jazz-trombonist-albert-mangelsdorff-dies-at-76",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Variety 寫他向父親學小提琴；維基寫父親是裝訂工、他『被安排學小提琴』，兩源說法不一，facts 只寫『小時候學小提琴』。",
+   "維基 discography 記《Trombirds》為 1973 年，內文寫 1972 年錄首張獨奏專輯；不寫該專輯年份。"
+  ],
+  "searches": 4,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 為空、無已上線簡介，從零查。池內兩張《Solo》（1982）、《A Jazz Tune I Hope》（1979）確認為這位德國長號手。搜尋 4 次：維基 1、WebSearch 訃聞 2、Playbill 訃聞（Ben Mattison，2005-07-26）3、Variety 訃聞（Christian Koehl，2005-08-18）4。失敗請求 1 次：Britannica（Cloudflare）。第二源實際開頁：Variety、Playbill，各自獨立於維基。單源不進 facts：（1）維基：1947 年在 Otto Laufner Big Band 彈節奏吉他、用幾條菸在黑市買下第一把長號、向法蘭克福歌劇院首席長號 Fritz Stähr 學長號；1952 年隨 Hans Koller 首次錄音；1961 年成立 Albert Mangelsdorff Quintet；1993 年起為法蘭克福音樂與表演藝術大學爵士榮譽教授，1995–2001 年任柏林爵士節總監；2008 年 Alte Oper 設 Albert Mangelsdorff Foyer、2013 年法蘭克福有以他命名的池塘、2009 年遺物成為 Jazzarchiv 基礎；業餘鳥類研究者。（2）Variety：1965 年 DownBeat 讀者票選 Brightest Hope；與 Don Cherry、Lee Konitz、Jaco Pastorius 合作；『被認為從鳥鳴得到 multiphonics 技法』只是『據信』，不收。（3）維基引述的一段評語（『讓獨奏長號成為前所未有的概念』）無具名作者，不引。已上線簡介無此人，無衝突。",
+  "pubIssues": []
+ },
+ {
+  "key": "alberta hunter",
+  "name": "Alberta Hunter",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alberta Hunter 1895 年 4 月 1 日生於田納西州孟菲斯，父親是臥鋪車服務員（Pullman porter），她自稱從沒見過他；母親當女傭撐起家。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://amsterdamnews.com/news/2017/11/30/remember-her-namesinger-and-composer-alberta-hunte/",
+      "from": "new"
+     },
+     {
+      "f": "她少年時離家到芝加哥想當歌手，一開始只能在寄宿屋打工，之後先在芝加哥的酒館與夜店唱起。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/alberta-hunter",
+      "from": "new"
+     },
+     {
+      "f": "1917 年起她在芝加哥的 Dreamland 唱了五年，與 King Oliver 的樂團同台，週薪從約 17.5 美元一路加到 35 美元。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/alberta-hunter",
+      "src2": "https://amsterdamnews.com/news/2017/11/30/remember-her-namesinger-and-composer-alberta-hunte/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1922 年她與 Lovie Austin 合寫〈Downhearted Blues〉，這首歌後來由 Bessie Smith 錄成 Columbia 的熱賣唱片，Hunter 本人只拿到很少版稅。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://amsterdamnews.com/news/2017/11/30/remember-her-namesinger-and-composer-alberta-hunte/",
+      "from": "new"
+     },
+     {
+      "f": "1920 年代她錄音不輟，廠牌遍及 Black Swan、Paramount、Gennett、OKeh、Victor 與 Columbia。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://amsterdamnews.com/news/2017/11/30/remember-her-namesinger-and-composer-alberta-hunte/",
+      "from": "new"
+     },
+     {
+      "f": "1928 年她在倫敦 Drury Lane 版的《Show Boat》中與 Paul Robeson 同台，演出 Queenie。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/alberta-hunter",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "母親過世後，她心灰意冷，謊報年齡報考護士學校，先在 Harlem 的 Joint Diseases Hospital 當志工，後來做了約二十年護士。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/alberta-hunter",
+      "from": "new"
+     },
+     {
+      "f": "護士生涯期間，她只錄過寥寥幾次音，也接受了 Smithsonian 的訪談。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/alberta-hunter",
+      "from": "new"
+     },
+     {
+      "f": "醫院以為她已滿 70 歲而強制退休，其實她已 82 歲，1977 年她就此重回歌壇。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/alberta-hunter",
+      "from": "new"
+     },
+     {
+      "f": "Barney Josephson 邀她到紐約 Greenwich Village 的 The Cookery 登台，一唱就轟動，成為她復出後的主要舞台。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/alberta-hunter",
+      "from": "new"
+     },
+     {
+      "f": "Alberta Hunter 2011 年入選 Blues Hall of Fame。",
+      "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+      "src2": "https://camphouseconcerts.com/2018/03/02/hall-of-fame-blues-hall-of-fame-inductees/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1977 年 82 歲重回歌壇，在 The Cookery 復出。",
+    "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+    "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/alberta-hunter",
+    "from": "new"
+   },
+   {
+    "f": "2011 年入選 Blues Hall of Fame。",
+    "src": "https://en.wikipedia.org/wiki/Alberta_Hunter",
+    "src2": "https://camphouseconcerts.com/2018/03/02/hall-of-fame-blues-hall-of-fame-inductees/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "離家去芝加哥的年齡：維基寫約 11 歲，Gale 與 Amsterdam News 寫 16 歲；兩源不一致，facts 只寫「少年時」。",
+   "母親過世年：維基與 Amsterdam News 寫 1957 年，Gale 寫 1954 年；facts 只寫「母親過世後」，不寫年份。",
+   "開始當護士的年份：維基寫母親過世（1957）後入護校，Gale 寫 1957 年 8 月取得護士執照；一致採 1957，但 facts 未寫年份。",
+   "首次在 Cookery 登台年份：維基內文寫 1976 年夏天的聚會後，同條目又寫 1977 年被醫院強制退休後復出；Gale 與搜尋摘要寫 1977；facts 只寫 1977 年復出。",
+   "已上線《Amtrak Blues》簡介與維基專輯條目一致（專輯入圍 W. C. Handy 獎傳統藍調專輯，她個人 1980 年得傳統藍調女藝人獎），無衝突。"
+  ],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "事實庫 research 為空，兩份已上線簡介是唯一材料，從零查。人物故事格（護士二十年與復出）逐條收齊兩源。搜尋 7 次：維基 Alberta Hunter 1、WebSearch 訃聞／復出 2、encyclopedia.com（Gale《Contemporary Black Biography》）3、WebSearch 名人堂 4、Amsterdam News 2017 專題 5、Camp House 名人堂入選名單 6、維基 Amtrak Blues 7。失敗請求 3 次未計入：blues.org 名人堂頁 404、Britannica（Cloudflare）、Smithsonian NMAAHC（500）。第二源實際開頁：Gale、Amsterdam News、Camp House 名單。Amsterdam News 文字與維基高度相近，非完全獨立。單源不進 facts：（1）Gale：她年少即影響 Al Jolson 與 Sophie Tucker（未見他源）；她的歌詞偏暗示而不露骨；Handy Award 1980 年傳統藍調女藝人獎（維基專輯條目有同說法，但同站）；Smithsonian 訪談與 1982 年影片；受邀在 Carnegie Hall 與 Carter 白宮演出（搜尋摘要亦見，未在第二頁讀到）；在 Kennedy Center 為 Marian Anderson 慶典演唱。（2）維基單源：John Hammond 簽她進 Columbia；2009 年《Amtrak Blues》入藍調名人堂經典錄音；2015 年入選 Memphis Music Hall of Fame；1988 年紀錄片《My Castle's Rockin'》與音樂劇《Cookin' at the Cookery》；1944 年 USO 隊伍訪中緬印戰區；1934 年 Dorchester 與 Jack Jackson 樂團。（3）私人生活（婚姻、性傾向）與童年受害細節不收。（4）搜尋摘要一說她 1954 年退休，與維基、Gale 的 1957 不符，不採。",
+  "pubIssues": []
+ },
+ {
+  "key": "alexander von schlippenbach",
+  "name": "Alexander von Schlippenbach",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alexander von Schlippenbach 1938 年 4 月 7 日生於柏林，8 歲開始學鋼琴。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_von_Schlippenbach",
+      "src2": "https://ausland.berlin/artist/alexander-von-schlippenbach",
+      "from": "new"
+     },
+     {
+      "f": "他在科隆的音樂學院（Staatliche Hochschule für Musik）跟 Bernd Alois Zimmermann 學作曲。",
+      "src": "https://ausland.berlin/artist/alexander-von-schlippenbach",
+      "src2": "https://www.lespressesdureel.com/EN/auteur.php?id=5650&menu=0",
+      "from": "new"
+     },
+     {
+      "f": "他早年先後在 Gunter Hampel 與 Manfred Schoof 的樂團裡演奏，後來才自己帶團。",
+      "src": "https://ausland.berlin/artist/alexander-von-schlippenbach",
+      "src2": "https://www.lespressesdureel.com/EN/auteur.php?id=5650&menu=0",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1966 年他受柏林爵士節（Berliner Jazztage）委託，為了演出自己寫的〈Globe Unity〉組成 Globe Unity Orchestra；首版由 Manfred Schoof 的五重奏、Gunter Hampel 的四重奏與 Peter Brötzmann 的三重奏合併而成。",
+      "src": "https://en.wikipedia.org/wiki/Globe_Unity_Orchestra",
+      "src2": "https://www.lespressesdureel.com/EN/auteur.php?id=5650&menu=0",
+      "from": "new"
+     },
+     {
+      "f": "他與薩克斯風手 Evan Parker、鼓手 Paul Lovens 組成的鋼琴三重奏，與 Globe Unity Orchestra 並列，是他在自由爵士圈最為人知的兩個招牌。",
+      "src": "https://ausland.berlin/artist/alexander-von-schlippenbach",
+      "src2": "https://en.wikipedia.org/wiki/Alexander_von_Schlippenbach",
+      "from": "new"
+     },
+     {
+      "f": "1980 年代起，他轉向重新詮釋 Thelonious Monk 與 Jelly Roll Morton 等傳統爵士作曲家；1999 年起與 Rudi Mahall 的樂團 Die Enttäuschung 演奏並錄製 Monk 全部作品，2005 年發行《Monk's Casino》。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_von_Schlippenbach",
+      "src2": "https://www.lespressesdureel.com/EN/auteur.php?id=5650&menu=0",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Globe Unity Orchestra 後來擴編納入歐洲、美國與亞洲的樂手，包括 Steve Lacy、Anthony Braxton、Kenny Wheeler 等人。",
+      "src": "https://en.wikipedia.org/wiki/Globe_Unity_Orchestra",
+      "src2": "https://corbettvsdempsey.com/records/globe-unity-lp/",
+      "from": "new"
+     },
+     {
+      "f": "1988 年他另組 Berlin Contemporary Jazz Orchestra，成員包括 Evan Parker、Paul Lovens、Kenny Wheeler、Misha Mengelberg 與他的妻子 Aki Takase 等歐洲前衛爵士樂手。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_von_Schlippenbach",
+      "src2": "https://www.lespressesdureel.com/EN/auteur.php?id=5650&menu=0",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1966 年成立 Globe Unity Orchestra。",
+    "src": "https://en.wikipedia.org/wiki/Globe_Unity_Orchestra",
+    "src2": "https://www.lespressesdureel.com/EN/auteur.php?id=5650&menu=0",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Evan Parker 與 Paul Lovens 三重奏的成立年：維基寫 1960 年代成名，Presses du réel 寫 1970 年組成；facts 不寫成立年。",
+   "Schlippenbach 在 Hampel 與 Schoof 樂團的年份：EFI 寫 1962–65 年隨 Hampel，Presses du réel 寫 1963 年與 Hampel、1964–67 年在 Schoof 五重奏；facts 不寫年份。",
+   "Globe Unity 首版人數：Corbett vs. Dempsey 寫 14 人，DownBeat 寫 13 人；facts 不寫人數。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空、無已上線簡介，從零查。池內《Payan》（1972）與《Globe Unity》（1967）確認為這位德國鋼琴家。搜尋 8 次：維基 Schlippenbach 1、WebSearch Globe Unity 2、維基 Globe Unity Orchestra 3、DownBeat 2018 年《Globe Unity (50 Years)》樂評 4、Corbett vs. Dempsey 重發頁 5、WebSearch 生年／獎項 6、ausland.berlin（轉載 European Free Improvisation Pages 小傳）7、Presses du réel 作者頁 8。第二源實際開頁：ausland.berlin、Presses du réel、Corbett vs. Dempsey。ausland 頁是轉載 EFI 小傳，Presses du réel 小傳文字近似 AllMusic，彼此與維基非完全獨立；Corbett vs. Dempsey 是重發廠牌宣傳文，立場偏褒，只取事實面。單源不進 facts：（1）Corbett：《Globe Unity》（SABA 1967）是 Peter Brötzmann 與 Peter Kowald 的首張 LP；Jaki Liebezeit（Can）與 Mani Neumeier（Guru Guru）在首版節奏組；1966 年 12 月 6、7 日錄於科隆 Ariola 錄音室，製作人 Joachim E. Berendt；有圖形記譜。（2）EFI：1968 年音樂家自辦的「反音樂節」（含他在科隆辦的一場）促成 FMP 廠牌成立，首批唱片有 Schoof《European Echoes》與他的《The Living Music》；他說「自由爵士讓人保持年輕」；與 Sven-Åke Johansson 的二重奏。（3）維基：1994 年獲 Albert Mangelsdorff Prize（Mangelsdorff 條目證實該獎 1994 年設立，但未見得獎名單頁）；搜尋摘要稱 2017 年聯邦十字勳章、2024 年德國爵士獎終身成就獎，未開頁，不收。（4）維基 Globe Unity Orchestra：被描述為「繼 AACM 大樂團之後最出色的外圍爵士人才集結」，無具名作者，不引；1987 年芝加哥爵士節為其主要壽命期的最後一場演出。（5）DownBeat 樂評：1966 年首演規模之大讓 Ornette Coleman 的雙四重奏相形有結構；2016 年 50 週年演出在 Jazzfest Berlin：屬樂評媒體評語，不收。Wikipedia 把《The Living Music》列為 QUASAR 1969，EFI 寫為 FMP 首批唱片，兩源不一致，不寫廠牌。",
+  "pubIssues": []
  }
 ]
