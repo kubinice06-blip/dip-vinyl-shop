@@ -825,5 +825,267 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "本位用掉 7 次（WebFetch 6：zh 維基林子祥、en 維基 George Lam、zh-yue 維基林子祥、Yahoo 香港新聞陳奕迅合唱報導、ourchinastory 林子祥專文、vocus 專欄；WebSearch 2：影響與串燒、玉石樂隊）。WebFetch 回傳是小模型摘要，非逐字原文；兩次 WebSearch 只看摘要，只出現在摘要的內容一律沒採用。Yahoo 報導只用來確認 2025 年陳奕迅在林子祥葉蒨文演唱會上台合唱並表示敬佩，facts 沒採用（屬單場演唱會）。\n兩源非獨立標記：zh、zh-yue、en 維基同為維基百科（非獨立）；vocus 專欄內容與中文維基同文（非獨立，只作旁證，沒當 src2）；ourchinastory 是獨立的人物專文。\n單源未收入 facts：(1) 祖父、父親、四叔公皆是醫生，祖父是那打素醫院院長、父親林達志是元朗婦產科醫生；父母離婚、1960 年母親赴美、1965 年赴英讀書、曾讀拔萃男書院與英國多佛學院、赴美曾任網球教練（zh 單源，vocus 同文轉述）；(2) 英國讀書時自組樂隊 The Midnighters 任主唱兼吉他手（ourchinastory 單源）；(3) 說話聲線陰柔細聲、上台卻能唱情歌與激昂歌曲（ourchinastory 單源）；(4) 〈每一個晚上〉由兩首中西樂曲拼合而成（zh 單源）；(5) 〈10分12吋〉掀起串燒歌熱潮，後來周潤發、朱咪咪、古巨基用類似形式（zh 單源）；(6) 2003 年 CASH 獎項（名稱兩源不一致）、2015 年 J.S.G. 終身成就獎（en 單源）；(7) 與葉蒨文的婚姻經過（只收年份層級也不屬音樂，且涉私人，不收）；(8) en 稱他創作『已知第一首 Cantorap』（en 單源，且屬『第一位』類宣稱，拿不準；facts 只寫『最早之一』並有 ourchinastory 對〈Ah Lam 日記〉的同向說法，屬兩個不同說法互相支持，非同一證據）；(9) 1983 年第一位在紅磡開四面台的歌手、1983 年《投奔怒海》提名第 2 屆金像獎最佳男主角（事實庫 zh 單源，『第一位』類）；(10) 1980 年代 23 首榜首已有 zh 與 en 兩源，已收。\n身分：poolAlbums 三張（活色生香、愛到發燒、抉擇）皆是香港歌手林子祥，沒有同名混卡。\n用語：不寫累計銷量與場次。"
+ },
+ {
+  "key": "森進一",
+  "name": "森進一",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "森進一 1947 年 11 月 18 日生於山梨縣，本名森內一寛。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://kotobank.jp/word/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "from": "new"
+     },
+     {
+      "f": "1965 年他在富士電視台的歌唱節目奪冠，被製作人チャーリー石黒發掘，進入經紀公司旗下；1966 年以〈女のためいき〉出道。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://en.wikipedia.org/wiki/Shin'ichi_Mori",
+      "from": "new"
+     },
+     {
+      "f": "他的出道曲是 1966 年的〈女のためいき〉。",
+      "src": "https://www.jvcmusic.co.jp/-/Profile/A000460.html",
+      "src2": "https://kotobank.jp/word/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以沙啞的嗓音（しわがれ声）聞名，出道曲〈女のためいき〉就是用這種嗓音唱成。",
+      "src": "https://kotobank.jp/word/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "from": "new"
+     },
+     {
+      "f": "他的〈襟裳岬〉（1974）由吉田拓郎作曲，是他與演歌圈外的創作者合作的代表作。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://en.wikipedia.org/wiki/Shin'ichi_Mori",
+      "from": "new"
+     },
+     {
+      "f": "官方簡介列出的代表曲有〈港町ブルース〉〈おふくろさん〉〈襟裳岬〉〈冬のリヴィエラ〉〈北の螢〉。",
+      "src": "https://www.jvcmusic.co.jp/-/Profile/A000460.html",
+      "src2": "https://kotobank.jp/word/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1968 年首度登上 NHK 紅白歌合戰，此後連續出場 48 次，2015 年的第 66 回是最後一次，並創下連續出場最多的紀錄。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://www.nikkei.com/article/DGKKZO94812250V01C15A2CR0000/",
+      "from": "new"
+     },
+     {
+      "f": "1974 年他以〈襟裳岬〉拿下日本レコード大賞。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://en.wikipedia.org/wiki/Shin'ichi_Mori",
+      "from": "new"
+     },
+     {
+      "f": "2021 年春他獲頒旭日小綬章。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://www.jvcmusic.co.jp/-/Profile/A000460.html",
+      "from": "new"
+     },
+     {
+      "f": "他的兩個兒子是樂團主唱：ONE OK ROCK 的 Taka 與 MY FIRST STORY 的 Hiro。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://en.wikipedia.org/wiki/Shin'ichi_Mori",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1966 年出道；1968 年首度登上紅白歌合戰。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://www.jvcmusic.co.jp/-/Profile/A000460.html",
+      "from": "new"
+     },
+     {
+      "f": "1974 年〈襟裳岬〉獲日本レコード大賞。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://kotobank.jp/word/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "from": "new"
+     },
+     {
+      "f": "2015 年第 66 回紅白是他最後一次出場；2021 年獲旭日小綬章。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+      "src2": "https://www.nikkei.com/article/DGKKZO94812250V01C15A2CR0000/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1966 年以〈女のためいき〉出道。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+    "src2": "https://www.jvcmusic.co.jp/-/Profile/A000460.html",
+    "from": "new"
+   },
+   {
+    "f": "1974 年以〈襟裳岬〉獲日本レコード大賞。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+    "src2": "https://kotobank.jp/word/%E6%A3%AE%E9%80%B2%E4%B8%80",
+    "from": "new"
+   },
+   {
+    "f": "2015 年結束連續 48 次的紅白出場。",
+    "src": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E9%80%B2%E4%B8%80",
+    "src2": "https://www.nikkei.com/article/DGKKZO94812250V01C15A2CR0000/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "事實庫 c103-a 研究稿寫「自 1968 年第 19 回連續入選紅白」，與本層 ja 維基、Nikkei、JVC 官方簡介一致，無衝突。",
+   "上線簡介《森進一全曲集》寫「1969 年〈港町ブルース〉拿下日本唱片大賞最優秀歌唱賞、出場第二次擔任紅白トリ」，本層只有 ja 維基（及搜尋摘要）支持，沒有第二源，沒收入 facts；也沒有推翻。",
+   "kouhakusearch 摘要把 1968 年寫成「第 1 回」與 1972 年第 5 回，顯然是頁面標示錯位，不採用。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "本位用掉 8 次（WebFetch 7：ja 維基森進一、en 維基 Shin'ichi Mori、Nikkei 報導（會員限定，只看到開頭兩句）、kouhakusearch、Victor 官方簡介、syowa-kayo 港町ブルース頁、kotobank 森進一；WebSearch 1）。另有 1 次取不到相關內容（otokake 頁面內容是賭場廣告，不計入）。WebFetch 回傳是小模型摘要，非逐字原文。syowa-kayo 與 kouhakusearch 的摘要沒有提供可用內容，facts 未引用。\n兩源非獨立標記：ja 維基與 en 維基為維基（非獨立）；kotobank 辭典條目多由日本大百科或人名辭典轉載；JVC 官方簡介與 Nikkei 為獨立來源。\n單源未收入 facts：(1) 出道初期被批評為「ゲテモノ」「一発屋」、與青江三奈一起走「ため息路線」、本人自稱流行歌手而不願稱演歌歌手（ja 單源，事實庫 c103-a 同為 ja；搜尋摘要有相同說法但沒開頁）；(2) 經紀人チャーリー石黒認定他得把聲音磨壞、改唱演歌（上線簡介與搜尋摘要，ja 維基單源）；(3) 1969 年〈港町ブルース〉獲第 11 回日本レコード大賞最優秀歌唱賞、1971 年〈おふくろさん〉獲最優秀歌唱賞（ja 單源）；(4) 1969 年出場第 2 次即擔任白組トリ，為歷代最年輕トリ（ja 單源；搜尋摘要同向）；(5) 1968 年〈盛り場ブルース〉獲第 1 回全日本有線放送大賞與第 1 回日本有線大賞（JVC 單源）；(6) 〈冬のリヴィエラ〉為松本隆作詞、大瀧詠一作曲，開拓新聽眾（ja 單源，事實庫 c103-a 同）；(7) 與井上陽水、谷村新司、細野晴臣、長渕剛、ZARD 坂井泉水等合作（ja 單源）；(8) 藝名由ハナ肇命名、取渡辺晋的『晋』改『進』（ja 單源）；(9) 父母離婚、母子家庭、新聞配達等童年家庭細節（ja 單源，涉及家庭私事，不收）；(10) en 稱『首位擁有 100 張 Oricon 百大單曲的藝人（2008 〈波止場〉）』（en 單源，且屬『第一位』類）；(11) 『累計 9000 萬張』（在世者累計銷量，依規則不寫）；(12) 社會貢獻活動、じゃがいもの会（ja 單源，不收）；(13) 紅白トリ總次數與各回年份（ja 單源，且 kouhakusearch 摘要與 ja 摘要說法不一致）。\n身分：poolAlbums 三張（森進一全曲集、森進一のブルース、輪廻）皆為日本演歌歌手森進一，沒有同名混卡。\n用語：不寫累計銷量，死因無涉。"
+ },
+ {
+  "key": "王力宏",
+  "name": "王力宏",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "王力宏 1976 年 5 月 17 日生於美國紐約州羅徹斯特，是台灣家庭出身的美籍華裔。",
+      "src": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "src2": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "from": "new"
+     },
+     {
+      "f": "他畢業於威廉斯學院（Williams College），後來進伯克利音樂學院（Berklee）。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "src2": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "from": "new"
+     },
+     {
+      "f": "1995 年他在台灣贏得 BMG 的新人選拔，同年底發行首張華語專輯《情敵貝多芬》出道。",
+      "src": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "src2": "https://www.generasia.com/wiki/Wang_Leehom",
+      "from": "new"
+     },
+     {
+      "f": "1998 年他加入新力音樂（Sony Music Taiwan），發行《公轉自轉》（英文名 Revolution）。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "src2": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他自創「chinked-out」一詞，指把 R&B、嘻哈與傳統中國音樂結合起來、既國際又中國的聲音，從 2004 年前後開始。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "src2": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "from": "new"
+     },
+     {
+      "f": "2004 年的《心中的日月》製作期間，他花三週到西藏、新疆、內蒙古、雲南等地採風，錄下民族音樂做取樣。",
+      "src": "https://zh.wikipedia.org/wiki/%E5%BF%83%E4%B8%AD%E7%9A%84%E6%97%A5%E6%9C%88",
+      "src2": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "from": "new"
+     },
+     {
+      "f": "他自己寫詞曲、做音樂製作。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "src2": "https://www.generasia.com/wiki/Wang_Leehom",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1999 年第 10 屆金曲獎，他以《公轉自轉》獲最佳國語男演唱人獎，並與 Jim Lee 以同一張專輯獲最佳唱片製作人獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC10%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+      "src2": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "from": "new"
+     },
+     {
+      "f": "2006 年第 17 屆金曲獎，他以《蓋世英雄》獲最佳國語男演唱人獎。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC17%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+      "src2": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "from": "new"
+     },
+     {
+      "f": "他曾擔任北京奧運聖火傳遞的火炬手。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "src2": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1995 年出道；1998 年加入新力音樂。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "src2": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "from": "new"
+     },
+     {
+      "f": "1999 年以《公轉自轉》獲最佳國語男演唱人與最佳唱片製作人。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC10%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+      "src2": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "from": "new"
+     },
+     {
+      "f": "2004 年《心中的日月》起提出 chinked-out 風格；2006 年以《蓋世英雄》再獲最佳國語男演唱人。",
+      "src": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+      "src2": "https://en.wikipedia.org/wiki/Wang_Leehom",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1999 年第 10 屆金曲獎：最佳國語男演唱人獎與最佳唱片製作人獎（《公轉自轉》）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC10%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+    "src2": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+    "from": "new"
+   },
+   {
+    "f": "2006 年第 17 屆金曲獎：最佳國語男演唱人獎（《蓋世英雄》）。",
+    "src": "https://zh.wikipedia.org/wiki/%E7%AC%AC17%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+    "src2": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%8A%9B%E5%AE%8F",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "金曲獎：中文維基王力宏條寫 2004 年《不可思議》另獲最佳專輯製作人獎、英文維基寫四度得主，本層只用第 10 屆與第 17 屆兩個官方屆次頁確認的項目，其餘獎項年份對不上，不收。",
+   "北京奧運火炬手年份：中文維基寫 2007 年在希臘境內傳遞聖火、英文維基寫 2008 年北京與 2012 年倫敦火炬手，年份不一致，facts 只寫擔任火炬手，不寫年份。",
+   "本層查到《心中的日月》2004 年 12 月 31 日發行與上線簡介「第十張錄音室專輯」不涉，無衝突；『第八張』『第十張』序數本層未查。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "本位用掉 8 次（WebFetch 6：zh 維基王力宏、en 維基 Wang Leehom、generasia、zh 維基第 17 屆金曲獎、zh 維基第 10 屆金曲獎、zh 維基《心中的日月》；WebSearch 2）。另有 2 次失敗（SCMP 403、Williams 音樂系新聞頁 403，不計入）。WebFetch 回傳是小模型摘要，非逐字原文；兩次 WebSearch 只看摘要，只出現在摘要的內容未採用。\n兩源非獨立標記：zh、en 維基與 zh 金曲獎屆次頁、專輯頁全是維基百科（非獨立）；generasia 是日本流行文化 wiki 站，同為 wiki 性質（非權威，但與維基不同站）。台灣、華語演藝人缺少可開頁的第二家權威媒體，故本位 legacy 主要靠維基屆次頁（金曲獎名單屆次頁是原始名單表，可信度高）。\n單源未收入 facts：(1) 父親畢業於台大醫學系、為腦科醫師，母親畢業於政大；祖母是許鳳藻之女、表叔李建復、七舅公許倬云（zh 單源，涉及家人）；(2) 『家人都愛聽京劇』（zh 單源）；(3) 以《公轉自轉》成為該兩獎史上最年輕得主（en 單源，且屬『最年輕』類）；(4) 2018 年 CNN 稱他 King of Chinese Pop、四度金曲得主與 19 次入圍、2012 年首位在北京國家體育場開個人演唱會的流行歌手、威廉斯學院與伯克利榮譽博士（en 單源，搜尋摘要同向，Williams 官網 403）；(5) 2013 年牛津大學演講（zh 單源）；(6) 《蓋世英雄》受電影《霸王別姬》啟發製作（zh 單源）；(7) 絕對音感、18 歲才學中文（generasia 單源，且『18 歲才學中文』與其他來源衝突風險高，不收）；(8) 2012 年十大中文金曲全國最佳男歌手、2006 年 MTV 亞洲大獎最受歡迎台灣藝人（zh 單源）；(9) 1996 年最佳新人（generasia 單源）；(10) 婚姻糾紛依派工詞不收；『chinked-out』一詞：依各來源原樣引用（zh、en 維基皆使用，屬他自創的專名），寫作層若覺不妥請斟酌。\n身分：poolAlbums 三張（唯一、心中的日月、蓋世英雄）皆是台灣藝人王力宏，沒有同名混卡。"
  }
 ]
