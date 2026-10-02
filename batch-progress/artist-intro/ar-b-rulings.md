@@ -346,3 +346,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 032 g1 交件（QA 0，兩組齊）。全 full。Van Cliburn 兩條「唯一」說法皆不寫（單源或兩源同站）；Víkingur 出生年、Hilliard 成軍年、Celibidache 柏林任期年不寫；Riley《In C》國家錄音登錄單源不寫。pubIssues 1（Trevor Pinnock《Haydn: Nelson Mass》The English Concert 創立年 1972／1973）→ 本機待核。w1（g1+g2，18 位）派出；本批無 w2。
 - 031 w2 審稿（2 處）：Jonny Greenwood「兩度入圍」改「再度入圍」（在世者入圍次數；且他只有兩次奧斯卡提名，原句暗示三次）；Lang Lang 多餘空格。Casals 263 放寬照准。Bernstein「第一位美國出生、在美國受訓的紐約愛樂音樂總監」有兩源，照准。Lerner & Loewe 的 operetta 改譯「輕歌劇」照准。
 - **ar-b-031 上線**：40 位，reviewFixes 2。
+- 032 w1 審稿（1 處）：The Hilliard Ensemble 刪「共走過 41 年」（隱含成軍年 1973，與兩說衝突的裁定相抵）。Van Cliburn「史上第一張白金古典專輯」屬通行事實，照准。Mravinsky 首演蕭士塔高維契六首交響曲屬通行事實，照准。Víkingur Ólafsson 第 67 屆葛萊美最佳古典器樂獨奏（2025）、下村陽子 GDCA 終身成就與 BAFTA Fellowship，照准。
+- **ar-b-032 上線**：18 位，reviewFixes 1。**B 級 32 批全部上線。**
