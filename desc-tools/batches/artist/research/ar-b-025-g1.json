@@ -456,5 +456,215 @@
   "failedFetches": 3,
   "status": "thin",
   "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池四張（Dive、Infinite Health、Awake、Sunrise Projector / Past Is Prologue）皆為 Scott Hansen 這位 Tycho，無混卡。搜尋：維基 API（1）、WebSearch（2）、The Great Discontent 訪談（3）、Gray Area 條目（4）、WebSearch（5）、Everything Is Noise 專文（6）、RA《Dive》樂評（7）、維基 Dive 條目（8）。失敗請求 3 次：Ghostly 藝人頁只回空殼、Grammy.com 404、KCRW 429。\nlegacy 格偏薄（只有一條葛萊美入圍），整體標 thin。『非獨立』：維基主條與 Gray Area 條目（Gray Area 文字與維基同源，非獨立）；維基主條與 Dive 條目同站不同條目。獨立的只有 RA 與 Everything Is Noise。\n單源未入 facts：(1) 維基稱 2019 年專輯《Weather》入圍 2020 年葛萊美最佳舞曲／電子專輯，第二源未取得；(2) The Great Discontent 訪談（Hansen 自述，單源）：他早年在沙加緬度做網頁設計，2001 年一場意外後在家休養六週開始認真做音樂（首場演出數月後在沙加緬度），2006 年初回舊金山做介面設計工作，約 2009 年起專職做音樂；二十一二歲才碰樂器，先玩合成器、取樣器與鼓機，吉他是做了五年音樂之後才拿；沙加緬度的電子樂手 Dusty Brown 是他的音樂導師，ISO50 名稱來自一位法國攝影師常用的 Fuji Velvia ISO 50 底片；(3) 維基稱團名取自丹麥天文學家 Tycho Brahe；(4) Everything Is Noise 稱『幾年前談電子樂幾乎都繞不開 Scott Hansen』（單一評論者、不收）；(5) 維基 Dive 條目稱專輯登上 Billboard 美國 Top Dance/Electronic Albums 與 Top Heatseekers 榜（單源）；(6) 維基稱 2019 年簽 Mom+Pop 與 Ninja Tune（廠牌履歷，不收）；(7) 搜尋摘要有『成為當代 ambient 與 downtempo 領軍人物』一句，來自網站自我介紹性文字、未實際開頁，不收。\n維基稱 Hansen 2024 年現場樂團成員為 Hansen、Brown、O'Connor、Kim，樂團編制不收。"
+ },
+ {
+  "key": "zero 7",
+  "name": "Zero 7",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Henry Binns 與 Sam Hardaker 是倫敦人，少年時就認識；兩人在 1990 年代於 Mickie Most 的 RAK Studios 當錄音學徒（tape op），替別的藝人做工程與編程。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "src2": "https://www.songwritingmagazine.co.uk/interviews/interview-henry-binns",
+      "from": "new"
+     },
+     {
+      "f": "他們下班後開始自己實驗，第一次公開的作品是替 Radiohead 的〈Climbing Up the Walls〉做的混音，團名 Zero 7 就首見於這個「Zero 7 Mix」；原團喜歡這支混音而將它發行。",
+      "src": "https://en.wikipedia.org/wiki/Zero_7",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "from": "new"
+     },
+     {
+      "f": "1999 年他們發行第一張原創的 EP 作品《EP 1》，隨後在 2001 年推出首張專輯《Simple Things》。",
+      "src": "https://en.wikipedia.org/wiki/Zero_7",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的音樂是以電子取樣為底，混進吉他、管樂與人聲的 downtempo；帶有 soul、funk 與民謠的色彩，被形容為令人放鬆的電子樂。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "src2": "https://www.songwritingmagazine.co.uk/interviews/interview-henry-binns",
+      "from": "new"
+     },
+     {
+      "f": "《Simple Things》的人聲由 Mozez、Sia 與 Sophie Barker 輪流擔綱；Binns 說這些歌手多是自然而然找來的：Sophie 是在倫敦西區的小演出裡被他們發現，Sia 則在專輯接近完成時最後一刻才加入，當時她還是不太知名的歌手。",
+      "src": "https://www.songwritingmagazine.co.uk/interviews/interview-henry-binns",
+      "src2": "https://en.wikipedia.org/wiki/Simple_Things_(Zero_7_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Simple Things》（2001）入圍當年的水星獎（Mercury Prize，入圍、未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Zero_7",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/zero-7",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "維基稱團名 Zero 7 取自宏都拉斯 Utila 島上一間叫 Cero Siete 的酒吧、替 Radiohead 混音時沿用；encyclopedia.com 把混音曲名寫成〈Climbing the Walls〉，維基寫〈Climbing Up the Walls〉，採維基曲名；f 欄不寫團名來源的酒吧說法（單源）。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池四張（Simple Things、Yeah Ghost、When It Falls、The Garden）皆為 Binns／Hardaker 這個倫敦二人組，無混卡。搜尋：維基 API（1）、WebSearch（2）、encyclopedia.com 條目（3）、Songwriting Magazine 對 Henry Binns 訪談（4）、維基 Simple Things 條目（5）。失敗請求 1 次：DCS Audio 專文 403。\n『非獨立』：W 與 S 為維基不同條目。encyclopedia.com 條目為百科轉載性質（原出處為 Contemporary Musicians 類工具書），Songwriting Magazine 為訪談，兩者獨立於維基。\n單源未入 facts：(1) 維基稱團名取自 Utila 島酒吧 Cero Siete；(2) encyclopedia.com 稱 Simple Things 因授權給精品店、旅館、餐廳等場所營造悠閒氣氛，且被《Sex and the City》《Six Feet Under》取用，是 chill-out 場景化的現象，但第二源未取得；(3) encyclopedia.com 稱專輯以多層小提琴取代完整管弦樂團（Simple Things 維基只列小提琴手 Sally Herbert，未確認此說）；(4) 維基稱 2002 年入圍 Brit Awards 最佳英國新人、2007 年《The Garden》入圍葛萊美最佳電子／舞曲專輯（維基『Awards』節單源，第二源未取得；屆次與主詞須另證）；Simple Things 條目稱美國 Billboard Top Dance/Electronic Albums 第 4 名、英國榜第 28 名且在榜 56 週；(5) encyclopedia.com 稱兩人原本堅決不想現場演出，首張專輯後世界巡迴持續到 2002 年、在美國巡演三次；(6) Songwriting Magazine 稱 Binns 與 Hardaker 自覺像『音樂圈的冒牌貨』、Binns 在 RAK 與 Nigel Godrich、Hardaker 同為學徒，三人合力蓋出位於 Swiss Cottage 的錄音室（Godrich 為 Radiohead 製作人，單源）；(7) 維基稱兩人 1997 年混音 Radiohead 時 Binns 也在《Kid A》掛名額外取樣（單源）。累計銷量與認證倍數（白金、金唱片）依規則不寫。\nlegacy 格偏薄，整體標 thin。f 欄『倫敦人』：encyclopedia 寫 met while still teenagers in London，Songwriting 訪談 Binns 自稱 West Londoners，兩源皆有。"
+ },
+ {
+  "key": "冨田勲",
+  "name": "冨田勲",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "冨田勲 1932 年生於東京，在慶應義塾大學讀藝術史期間自學配器與作曲，1955 年畢業後長年替日本電視、電影與劇場寫配樂，1960 年代末受 Wendy Carlos 與 Robert Moog 的成果啟發轉入電子音樂。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "bank"
+     },
+     {
+      "f": "冨田勲 1932 年 4 月 22 日生於東京，幼年隨父親在中國生活；2016 年 5 月 5 日過世，享年 84 歲。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     },
+     {
+      "f": "他的早期配樂包括手塚治虫的動畫《ジャングル大帝》（海外名 Kimba the White Lion）；1956 年他為參加墨爾本奧運的日本女子體操隊作曲伴奏音樂。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://www.tinymixtapes.com/news/rip-isao-tomita-pioneer-japanese-electronic-music",
+      "from": "new"
+     },
+     {
+      "f": "1971 年他把 Moog III 合成器進口到日本，成為把合成器音樂帶進日本的先驅；他在 1969 年於大阪的唱片行遇到 Wendy Carlos 的《Switched-On Bach》，直覺合成器正是自己要找的樂器。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://www.cisac.org/Newsroom/articles/memoriam-isao-tomita",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他不只用合成器重現原聲樂器的音色，還用它創造全新的音色，做出古典名曲的電子編曲。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "src2": "https://consequence.net/2016/05/r-i-p-isao-tomita-japenese-pioneer-of-electronic-music-has-died-at-age-84/",
+      "from": "new"
+     },
+     {
+      "f": "他的專輯多是熟悉古典曲目的電子版：Debussy（《Snowflakes Are Dancing》，1974）、Stravinsky《Firebird》、Mussorgsky《Pictures at an Exhibition》與 Holst《The Planets》。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "src2": "https://ja.wikipedia.org/wiki/冨田勲",
+      "from": "new"
+     },
+     {
+      "f": "他在自宅打造電子音樂工作室，以多軌錄音疊出管弦樂般的電子編曲；日文維基稱音色製作、全部聲部演奏、錄音到剪輯都出自他一人之手。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     },
+     {
+      "f": "1984 年他在奧地利 Linz 的多瑙河畔辦「Sound Cloud」戶外立體音響演出，聽眾約 8 萬人；此後他在世界各地辦了同系列演出。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1974 年的《Snowflakes Are Dancing》獲四項葛萊美提名（1975 年第 17 屆，入圍、未得獎），冨田勲成為第一位被葛萊美提名的日本人。",
+      "src": "https://www.cisac.org/Newsroom/articles/memoriam-isao-tomita",
+      "src2": "https://consequence.net/2016/05/r-i-p-isao-tomita-japenese-pioneer-of-electronic-music-has-died-at-age-84/",
+      "from": "new"
+     },
+     {
+      "f": "他的助手松武秀樹後來成為 Yellow Magic Orchestra 的合成器操作員，被稱為「第四位 YMO」；CISAC 的訃告也寫他的音樂影響了 YMO 的坂本龍一。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     },
+     {
+      "f": "Stevie Wonder 把冨田勲列為他最尊敬的音樂家之一；1987 年 Michael Jackson 訪日時參觀了他的錄音室。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     },
+     {
+      "f": "2015 年冨田勲獲日本國際交流基金獎（Japan Foundation Award），表彰他對促進日本與世界交流的貢獻。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "src2": "https://consequence.net/2016/05/r-i-p-isao-tomita-japenese-pioneer-of-electronic-music-has-died-at-age-84/",
+      "from": "new"
+     },
+     {
+      "f": "英文維基與 CISAC 都把他列為電子音樂與 space music 的先驅之一，日本音樂著作權團體 JASRAC 會長在他過世時稱他是「真正的先驅」。",
+      "src": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "src2": "https://www.cisac.org/Newsroom/articles/memoriam-isao-tomita",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1971 年進口 Moog III；1974 年《Snowflakes Are Dancing》由 RCA 在美國發行；1984 年 Linz 的 Sound Cloud 演出。",
+      "src": "https://ja.wikipedia.org/wiki/冨田勲",
+      "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1974 年《Snowflakes Are Dancing》獲葛萊美四項提名，為第一位被葛萊美提名的日本人。",
+    "src": "https://www.cisac.org/Newsroom/articles/memoriam-isao-tomita",
+    "src2": "https://consequence.net/2016/05/r-i-p-isao-tomita-japenese-pioneer-of-electronic-music-has-died-at-age-84/",
+    "from": "new"
+   },
+   {
+    "f": "1984 年在奧地利 Linz 舉辦 Sound Cloud 戶外立體音響演出，約 8 萬名觀眾。",
+    "src": "https://ja.wikipedia.org/wiki/冨田勲",
+    "src2": "https://en.wikipedia.org/wiki/Isao_Tomita",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Consequence 稱《Snowflakes Are Dancing》登上 Billboard 古典榜冠軍；日文維基寫它最高第 2 名（1975 年 1 月 18 日當週）、1 名是下一張《展覧会の絵》。採日文維基，f 欄不寫該專輯榜位。",
+   "英文維基寫《Pictures at an Exhibition》為 1976 年，日文維基寫 1975 年 2 月（日本）、卡池標 1975；f 欄不寫專輯年份。",
+   "上線簡介寫『1960 年代末購入 Moog III』；日文維基、CISAC、Consequence 皆寫 1971 年進口 Moog III（1969 年只是在唱片行見到 Switched-On Bach）；採 1971 年，並列 pubIssues。"
+  ],
+  "pubIssues": [
+   {
+    "album": "展覧会の絵",
+    "claim": "1960 年代末購入 Moog III 模組合成器",
+    "problem": "日文維基寫 1969 年在大阪的唱片行遇到《Switched-On Bach》、1971 年秋個人進口 Moog III-P；CISAC 與 Consequence 也都寫 1971 年進口。『1960 年代末購入』與來源不符，建議改『1971 年進口』。",
+    "src": "https://ja.wikipedia.org/wiki/冨田勲"
+   }
+  ],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 一條（生平，單源英文維基，已作為 origin bank 條目；其中『1960 年代末受 Wendy Carlos 與 Robert Moog 啟發轉入電子音樂』與日文維基 1969 年遇《Switched-On Bach』一致）；published 兩張（展覧会の絵、Firebird）。同名檢查：卡池四張（Snowflakes Are Dancing、展覧会の絵、The Planets、Firebird）皆為冨田勲，無混卡。姓名照原文漢字『冨田勲』（上方『冨』為日文字形，保留）。\n搜尋：日文維基 API 全文（1）、WebSearch（2）、CISAC 訃告（3）、Consequence 訃告（4）、英文維基 API 全文（5）、Tiny Mix Tapes 訃告（6）、Synthtopia 訃告（7，僅確認過世與葬禮資訊，未取為 facts）。失敗請求 0。\n『非獨立』：J 與 E 為同站不同語版維基，常彼此參照；CISAC（著作權團體聯盟）、Consequence、Tiny Mix Tapes 為獨立來源。\n『第一位』類宣稱處理：『第一位被葛萊美提名的日本人』日文維基、CISAC、Consequence、英文維基開頭皆有，且均指《Snowflakes Are Dancing》，但本層未逐一查是否有反例，寫作層請用『被稱為』或『據多處報導』語氣；若不放心可降為 notes。\n單源未入 facts：(1) 日文維基稱他 4 歲起隨父親轉勤在青島、防府、北京長大，在北京天壇的回音壁聽到聲音是他音樂的原點；祖父起家業行醫，家族為醫生世家；(2) 日文維基稱他大二時合唱曲〈風車〉獲朝日新聞社與全日本合唱連盟比賽第 1 名，因而決意走作曲；(3) 日文維基稱把 Moog III 進口時被海關疑為軍用類比電腦，拿 Keith Emerson 的演奏照片證明是樂器，且沒有說明書、一度後悔買了『貴的鐵屑』；(4) 日文維基稱《月の光》（Snowflakes Are Dancing 的日本版名）母帶拿給日本各唱片公司都被拒，理由是『不是古典也不是流行、唱片行沒地方擺』，後來透過日本 RCA 的山本德源向紐約 RCA 總部牽線才簽約（人生故事類，單源，建議審稿時視需要補第二源）；(5) 日文維基稱 1975 年該專輯入選 NARM 1974 年度最佳古典唱片，《展覧会の絵》（1975 年 2 月）登上 Billboard 與 Cash Box 全美古典榜第 1、NARM 同獎項連兩年、並獲 1975 年日本唱片大賞企劃賞，《惑星》1978 年登上 Billboard 古典榜第 1，《Bermuda Triangle》與《大峡谷》各獲一次葛萊美提名（共三次提名）；(6) 日文維基稱 Francis Ford Coppola 欣賞《惑星》的立體音響，曾邀他為《地獄默示錄》配樂，因唱片公司專屬合約未成；(7) 英文維基稱《The Planets》發行時因 Gustav Holst 的女兒 Imogen Holst 拒絕授權引起爭議；(8) 日文維基稱 1979 年美國 Contemporary Keyboard 雜誌讀者票選為『最佳錄音室合成器演奏家』；(9) 日文維基與英文維基稱 2002 年《たそがれ清兵衛》獲 2003 年日本電影學院獎優秀音樂獎（日文維基另寫 2001 年《千年の恋 ひかる源氏物語》獲同獎，兩者不一致，未收）；(10) 英文維基稱 2007 年他編的 Debussy〈月光〉用在《Ocean's 13》。\n過世只收年份：2016 年 5 月 5 日，享年 84 歲（日文維基、英文維基、CISAC 一致）；不收死因與院所。\nera 那條為三個年份的並列，寫作層可拆開用。"
  }
 ]

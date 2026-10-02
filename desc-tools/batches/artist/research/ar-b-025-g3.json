@@ -227,5 +227,226 @@
     "status": "full",
     "notes": "事實庫 research 為空、published 為空，三格從零查。請求 6 次：en 維基、WebSearch×2、Vice 悼念文、Teklife 維基、Mixmag《Double Cup》十週年。失敗請求 3 次（Chicago Reader 兩次 429、DJ Mag 403）；Rolling Stone 連結被導到第三方網域，未跟隨。同名混卡檢查：poolAlbums 三張（2009《Jukeworkz》、2013《Double Cup》、2016《Afterlife》）都是芝加哥的 Rashad Harden；《Afterlife》2016 年是身後發行的作品集（Teklife 維基稱 Teklife Records 於 2015 年 7 月正式成立並發行此作，年份與卡單 2016 有出入，寫作層不要寫發行年、也不要寫成錄音室專輯）；《Jukeworkz》2009 年份未核對。\n死亡只收年份與年齡，不收死因。『2014 年 4 月過世、享年 34』來源：en 維基只給 1979–2014，Teklife 維基給 2014 年 4 月與 34 歲，兩源合起來支持；生日 1979 年 10 月 9 日 Vice 與搜尋摘要有，維基首段未逐字核對，故只寫年。\n【非獨立】origin、legacy 各條多有 en 維基與 Teklife 維基同站不同條目；Mixmag 兩條是 Double Cup 十週年重發報導，文中引述經紀人說法。\n未收（單源）：（1）Vice 說他影響了 Addison Groove、Mouse on Mars、Nguzunguzu、Sully，footwork 衝擊英國、波蘭、日本場景（Vice 單源；日本另有 Teklife 維基支持，已寫進 legacy 第一條）。（2）Vice 評語『會被記得是當代舞曲界最有創意的造型師之一』：en 維基轉引，Vice 頁面讀到的摘要未含此句，單源。（3）Kode9 稱 Rashad 是他最大的音樂影響之一：只見搜尋摘要，DJ Mag 403。（4）『第一位在歐洲電台放 footwork／juke 的 DJ』（Rinse FM）：第一位宣稱，只見搜尋摘要，不收。（5）Mixmag 引述當時經紀人 Wes Harden：Rashad 把 Frankie Knuckles 等人的芝加哥 house 火炬接下來，帶向新一代與新地區：單源。（6）en 維基稱他的取樣切割、延展、循環手法被拿來比 J Dilla，並引他的話『不需要會跳 footwork 也能享受這音樂』：單源。（7）Teklife 成員 RP Boo、Traxman、DJ Earl、Gant-Man、DJ Paypal（挪威 Slick Shoota、塞爾維亞 Feloneezy 等海外成員）：Teklife 維基單源。（8）Hyperdub 為悼念發行《Next Life》合輯、款項捐給他兒子：搜尋摘要，未開頁，不收。Pitchfork 與 Guardian 的專輯評分與年度榜名次依規則不收。",
     "pubIssues": []
+  },
+  {
+    "key": "fever ray",
+    "name": "Fever Ray",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fever Ray 是瑞典音樂人 Karin Dreijer 的個人名義，Dreijer 1975 年生。",
+            "src": "https://en.wikipedia.org/wiki/Karin_Dreijer",
+            "src2": "https://sv.wikipedia.org/wiki/Karin_Dreijer",
+            "from": "new"
+          },
+          {
+            "f": "Dreijer 1994 年在哥特堡以樂團 Honey Is Cool 開始音樂路，1999 年與哥哥 Olof Dreijer 組成電子雙人組 The Knife；The Knife 2014 年解散。",
+            "src": "https://en.wikipedia.org/wiki/Karin_Dreijer",
+            "src2": "https://sv.wikipedia.org/wiki/Fever_Ray",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Dreijer 的聲音辨識度來自高低跨度大的嗓音，加上多軌疊錄與變調處理；現場常戴面具、塗臉與身體彩繪、穿繁複服裝，躲在紗幕後演出。",
+            "src": "https://en.wikipedia.org/wiki/Fever_Ray",
+            "src2": "https://en.wikipedia.org/wiki/Karin_Dreijer",
+            "from": "new"
+          },
+          {
+            "f": "2009 年的首張專輯《Fever Ray》寫的是婚姻、為人父母與家庭生活對心靈的影響；首支單曲〈If I Had a Heart〉（2008）的歌詞則取材於 Dreijer 對自己年幼孩子的觀察。",
+            "src": "https://www.thefader.com/2023/03/09/the-world-is-opening-up-for-fever-ray",
+            "src2": "https://en.wikipedia.org/wiki/If_I_Had_a_Heart",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈If I Had a Heart〉被用作歷史影集《維京傳奇》（Vikings）的片頭曲。",
+            "src": "https://en.wikipedia.org/wiki/Karin_Dreijer",
+            "src2": "https://sv.wikipedia.org/wiki/Karin_Dreijer",
+            "from": "new"
+          },
+          {
+            "f": "Karin Dreijer 2020 年入選瑞典音樂名人堂（Swedish Music Hall of Fame），當年入選者共十位（組）。",
+            "src": "https://en.wikipedia.org/wiki/Swedish_Music_Hall_of_Fame",
+            "src2": "https://sv.wikipedia.org/wiki/Karin_Dreijer",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "出生地：en 維基（Karin Dreijer 條目與 Fever Ray 條目）寫哥特堡，sv 維基寫 Nacka 教區；兩源不一致，facts 只寫 1975 年。",
+      "Fever Ray 起始年：en 維基寫 2009 年 1 月首張專輯，sv 維基寫 2008 年起以 Fever Ray 名義活動，〈If I Had a Heart〉單曲為 2008 年 12 月；facts 不寫起始年，只寫專輯 2009、單曲 2008。"
+    ],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫 research 與 published 全空，三格從零查。請求 8 次：en 維基 Fever Ray、sv 維基 Fever Ray（實為 Karin Dreijer 條目）、WebSearch×2、Fader 專訪、en 維基 Swedish Music Hall of Fame、en 維基 If I Had a Heart、en 維基 Karin Dreijer。同名混卡檢查：poolAlbums 三張（2009《Fever Ray》、2017《Plunge》、2023《Radical Romantics》）都是 Karin Dreijer 的 Fever Ray。\n人稱：Dreijer 2019 年起公開用 they／hen（en 維基），寫作層請避開性別代名詞，直接用 Dreijer 或『Fever Ray』。身分議題只收公開敘述，facts 未收。\n【非獨立】origin、legacy 各條多為 en／sv 維基；legacy 第二條 en 維基 Swedish Music Hall of Fame 與 sv 維基 Karin Dreijer 同站不同條目，且 en 維基 Fever Ray 條目沒提此事；名人堂條目只確認『Karin Dreijer 2020 入選、當年十位』，未見官方頒獎理由。sound 第一條的兩源（Fever Ray、Karin Dreijer 條目）為 en 維基同站；sound 第二條 Fader 與 If I Had a Heart 條目各說一半（專輯主題／單曲歌詞題材），寫作層請分開寫。legacy 第一條 Vikings 片頭曲：Fever Ray 條目與 If I Had a Heart 條目讀到的摘要沒有明寫 Vikings，僅 Karin Dreijer 條目與 sv 條目支持，雖兩個語言版本但來源性質接近，請寫作層保守寫『被用作影集主題曲』。\n未收（單源）：（1）en 維基 Fever Ray：Grammis 2023 年度音樂錄影帶、2024 年度作詞者；en 維基 Karin Dreijer：2018 年 Grammis 年度製作人（Plunge）；sv 維基：2024 年度詞曲作者，三處說法不一致，獎項主詞與類別須逐項核對，未收。（2）Gaffa 2018 瑞典年度電子類：單源。（3）The Knife 2014 年以《Shaking the Habitual》拿 Nordic Music Prize：sv 單源，且屬樂團獎項、不是 Fever Ray 名義，不收。（4）〈If I Had a Heart〉與製作人 Christoffer Berg 合作、取樣循環原聲吉他：en 單條目單源。（5）搜尋摘要的『受影響者眾多』評語來源不明（疑為 The Quietus 或雜誌專文），未開頁，不收；legacy 格沒有後輩點名，只有名人堂與影集主題曲兩項可核對的外部認可。（6）Dreijer 身分、子女、病況：不收。",
+    "pubIssues": []
+  },
+  {
+    "key": "floating points",
+    "name": "Floating Points",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Floating Points 是英國音樂人 Sam Shepherd，在曼徹斯特長大，從小受古典鋼琴訓練，就讀 Chetham's School of Music。",
+            "src": "https://en.wikipedia.org/wiki/Floating_Points",
+            "src2": "https://www.paradisecity.be/en/news/floating-points-bridging-science-and-sound",
+            "from": "new"
+          },
+          {
+            "f": "Shepherd 在倫敦大學學院（University College London）讀神經科學博士，研究疼痛機制與神經元裡的 microRNA 等分子調節因子。",
+            "src": "https://en.wikipedia.org/wiki/Floating_Points",
+            "src2": "https://www.paradisecity.be/en/news/floating-points-bridging-science-and-sound",
+            "from": "new"
+          },
+          {
+            "f": "2008 年他與 Alexander Nut 共同創辦 Eglo Records，並在 2000 年代晚期擔任倫敦俱樂部 Plastic People 的駐場 DJ。",
+            "src": "https://en.wikipedia.org/wiki/Floating_Points",
+            "src2": "https://www.paradisecity.be/en/news/floating-points-bridging-science-and-sound",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Shepherd 把 Claude Debussy、Olivier Messiaen 等古典作曲家視為重要養分，並用老合成器（含稀有的 Rhodes Chroma）等器材，以近乎科學的嚴謹做電子音樂。",
+            "src": "https://en.wikipedia.org/wiki/Floating_Points",
+            "src2": "https://www.paradisecity.be/en/news/floating-points-bridging-science-and-sound",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "薩克斯風手 Pharoah Sanders 聽了 Floating Points 2015 年的首張專輯《Elaenia》後主動結交 Shepherd，兩人再加上倫敦交響樂團（London Symphony Orchestra）合作，成了 2021 年的《Promises》。",
+            "src": "https://en.wikipedia.org/wiki/Floating_Points",
+            "src2": "https://en.wikipedia.org/wiki/Promises_(Floating_Points,_Pharoah_Sanders_and_the_London_Symphony_Orchestra_album)",
+            "from": "new"
+          },
+          {
+            "f": "《Promises》入圍 2021 年 Mercury Prize 的 12 張決選名單。",
+            "src": "https://www.thelineofbestfit.com/news/latest-news/mercury-prize-2021-shortlist-unveiled",
+            "src2": "https://en.wikipedia.org/wiki/Promises_(Floating_Points,_Pharoah_Sanders_and_the_London_Symphony_Orchestra_album)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫 research 與 published 全空，三格從零查。請求 6 次：en 維基 Floating Points、en 維基 Promises、WebSearch×2（身世、Mercury 2021）、paradisecity.be 專文、Line of Best Fit Mercury 名單。失敗請求 1 次（Document Journal 503）。同名混卡檢查：poolAlbums 三張（2015《Elaenia》、2019《Crush》、2026《Mere Mortals》）都是 Sam Shepherd；《Mere Mortals》2026 年份：en 維基寫它是 2024 年舊金山芭蕾舞團作品的配樂，2026 年份可能是錄音室專輯版，寫作層請不要寫成 2026 年首演；《Crush》2019 年份與 en 維基專輯列表一致。\nMercury 2021：f 欄只寫入圍；得主我沒讀到，寫作層不要寫得獎與否。\n【非獨立】origin／sound 的第二源 paradisecity.be 是演出場館專文，與維基相互獨立，但都轉述自本人訪談，內容一致；en 維基 Floating Points 與 Promises 條目同站。sound 的 Debussy、Messiaen 在 paradisecity 為『學過這些作曲家』，en 維基為『自述影響』；Rhodes Chroma 等器材細節只在 paradisecity（單源，寫作層可不寫器材）。\n未收（單源）：（1）1986 年生於曼徹斯特、本名 Samuel Thomas Shepherd：en 維基單源（paradisecity 只說生於曼徹斯特）。（2）Bill Evans 為影響來源：en 維基單源。（3）2015 年成立 Pluto Records；Floating Points Ensemble 16 人團；Sunflower Sound System 自製大型音響：單源。（4）《Promises》2021 年登英國專輯榜第 6：榜單位次，不收；Paste、Time、Mojo 年度榜名第一：雜誌榜單，依規則不收；Pitchfork『晚年傑作』、Observer 五星評語：單一樂評，不收。（5）Sanders 為《Promises》2019 夏於洛杉磯、2020 夏於倫敦 AIR Studios 錄製：Promises 條目單源。（6）2025 年動畫《Lazarus》配樂、2026 年 Music Awards Japan 獎項：en 維基單源，且屬近期履歷。（7）搜尋摘要：《Elaenia》花約五年寫成、他讀博士期間完成：只見搜尋摘要。legacy 格偏薄，沒有後輩點名、名人堂或國家級榮譽，只有 Sanders 合作與 Mercury 入圍；寫作層宜把篇幅放在『神經科學博士＋古典鋼琴＋俱樂部 DJ』的身世。",
+    "pubIssues": []
+  },
+  {
+    "key": "flume",
+    "name": "Flume",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Flume 本名 Harley Streten，澳洲人，在雪梨北灘區（Northern Beaches）的 Seaforth 長大。",
+            "src": "https://en.wikipedia.org/wiki/Flume_(musician)",
+            "src2": "https://www.abc.net.au/triplej/programs/hack/how-flume-won-triple-j-hottest-100-again-say-nothing-may-a/101903692",
+            "from": "new"
+          },
+          {
+            "f": "他 11 歲就用一盒 Nutri-Grain 麥片附贈的簡易混音軟體開始做拍子，高中時在臥室裡自己做音樂。",
+            "src": "https://en.wikipedia.org/wiki/Flume_(musician)",
+            "src2": "https://www.abc.net.au/triplej/programs/hack/how-flume-won-triple-j-hottest-100-again-say-nothing-may-a/101903692",
+            "from": "new"
+          },
+          {
+            "f": "2012 年他發行同名首張專輯《Flume》，登上 ARIA 專輯榜冠軍。",
+            "src": "https://en.wikipedia.org/wiki/Flume_(musician)",
+            "src2": "https://www.abc.net.au/triplej/programs/hack/how-flume-won-triple-j-hottest-100-again-say-nothing-may-a/101903692",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2016 年的《Skin》找來多位歌手與饒舌歌手合作，包括 Kai（〈Never Be Like You〉）、Vic Mensa、Tove Lo、Vince Staples 與 Beck 等，把他從地下舞曲圈帶進更廣的主流聽眾。",
+            "src": "https://en.wikipedia.org/wiki/Skin_(Flume_album)",
+            "src2": "https://dancingastronaut.com/2017/02/flumes-skin-wins-grammy-best-danceelectronic-album/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Flume 被稱為把 future bass 這個類型推向流行的先驅之一。",
+            "src": "https://en.wikipedia.org/wiki/Flume_(musician)",
+            "src2": "https://www.abc.net.au/triplej/programs/hack/how-flume-won-triple-j-hottest-100-again-say-nothing-may-a/101903692",
+            "from": "new"
+          },
+          {
+            "f": "《Skin》拿下 2017 年葛萊美獎最佳舞曲／電子專輯（得獎）；〈Never Be Like You〉入圍同屆最佳舞曲錄音，輸給 The Chainsmokers 的〈Don't Let Me Down〉。",
+            "src": "https://dancingastronaut.com/2017/02/flumes-skin-wins-grammy-best-danceelectronic-album/",
+            "src2": "https://en.wikipedia.org/wiki/Skin_(Flume_album)",
+            "from": "new"
+          },
+          {
+            "f": "2016 年 ARIA 音樂獎，Flume 一人拿下 8 座獎，包括《Skin》的年度專輯（Album of the Year）。",
+            "src": "https://musicfeeds.com.au/news/flume-dominates-aria-award-winners-2016/",
+            "src2": "https://en.wikipedia.org/wiki/Skin_(Flume_album)",
+            "from": "new"
+          },
+          {
+            "f": "〈Never Be Like You〉（feat. Kai）在 2016 年登上 triple j Hottest 100 第 1 名。",
+            "src": "https://www.abc.net.au/triplej/programs/hack/how-flume-won-triple-j-hottest-100-again-say-nothing-may-a/101903692",
+            "src2": "https://en.wikipedia.org/wiki/Flume_(musician)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "簽約時點：en 維基與搜尋摘要寫 2011 年 Future Classic 比賽後出 EP《Sleepless》；triple j 專文寫 2011 年把〈Possum〉上傳 triple j Unearthed、2012 年簽 Future Classic。兩源不一致，facts 不寫簽約年。"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "事實庫 research 與 published 全空，三格從零查。請求 8 次：en 維基 Flume、WebSearch×3（含一次限定網域）、en 維基 Skin、Music Feeds、Dancing Astronaut、triple j 專文。失敗請求 2 次（Medium 403、WebSearch 限定網域被擋 400）；Billboard 連結被導向第三方網域，未跟隨。同名混卡檢查：poolAlbums 三張（2012《Flume》、2016《Skin》、2023《Things Don't Always Go the Way You Plan》）都是 Harley Streten；《Things Don't Always Go the Way You Plan》2023 年：en 維基只列三張錄音室專輯（Flume 2012、Skin 2016、Palaces 2022），這張疑似《Palaces》的重製或重混版本，寫作層請不要寫成第四張錄音室專輯、年份與性質需自查（本層未查）。\n【非獨立】origin 與 legacy 多條為 en 維基與 triple j（ABC 公共媒體）兩源，彼此獨立；legacy 第二條 Dancing Astronaut 與 en 維基《Skin》條目獨立；legacy 第三條 Music Feeds 與《Skin》條目獨立。『future bass 先驅』：en 維基寫『a pioneer of future bass who helped popularise the genre』，triple j 寫『credited with pioneering』，但兩者都是一句話，不是權威票選或獎項，寫作層請寫成『被稱為』並避免加強語氣；沒有它與維基首段以外的獨立權威評價。\n未收（單源）：（1）出生日 1991 年 11 月 5 日：en 維基單源。（2）Future Classic 第二名、首張 EP《Sleepless》2011：en 維基單源且與 triple j 不一致，不收。（3）〈Never Be Like You〉在 Hottest 100 得 220 萬票史上最多：單源。（4）triple j 稱他啟發了 RÜFÜS DU SOL 與 Peking Duk 的國際發展、2023 年〈Say Nothing〉再得第一：triple j 單源，不進 facts，寫作層若引用須寫『triple j 報導稱…』；2023 年第一名只見 triple j。（5）在 Hottest 100 前五名每個名次都有作品、17 首上榜：單源。（6）Metacritic 分數、Billboard 200 第 8：榜單，不收。（7）2013 年 ARIA 四座：搜尋摘要標題，未開頁。Kai 等人名來自《Skin》條目單源，Dancing Astronaut 只確認『popular collaborations』，寫作層列名時請注意。",
+    "pubIssues": []
   }
 ]

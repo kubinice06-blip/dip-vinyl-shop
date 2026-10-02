@@ -274,3 +274,5 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-025
 - g2 交件（QA 本組 0）。thin：B12、Com Truise（地位 none）。Armin van Buuren ASOT 開播採 2001-06-01；葛萊美入圍年不寫。Calvin Harris 葛萊美不寫（受獎署名未確認）。Boys Noize〈Rain on Me〉只寫共同創作，不寫得獎。Avicii 只寫 2018 年過世。單源未收：Alexander Robotnick 影響芝加哥 house／底特律 techno（RBMA 單源）。pubIssues 1（Cliff Martinez《Solaris》Satellite Awards 最佳音效得主為音響人員，易被讀成配樂得獎）→ 本機待核。
+- 024 w2 審稿無修正。Röyksopp 2024 年入選 Rockheim 名人堂經主線 WebSearch 核實（rockheim.no）。Pierre Henry〈Psyché Rock〉啟發《Futurama》主題曲屬通行事實，照准。
+- **ar-b-024 上線**：40 位，reviewFixes 2。
