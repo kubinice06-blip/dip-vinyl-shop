@@ -316,3 +316,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 ### ar-b-029
 - g1 交件（QA 本組 0）。thin：Jurassic 5、Kehlani、Kelela、Keyshia Cole。**同名混卡：Kano**——卡池《Kano》（1980）是米蘭 disco 計畫，另兩張才是倫敦 grime 的 Kano；介紹只寫英國這位，1980 那張待本機拆成獨立藝人名（記入待辦）。Jurassic 5 成軍年三說不寫；KRS-One 出生與離家細節單源不寫。Kehlani 正文不用性別代名詞。pubIssues 0。
 - 029 g3 交件。thin：Mýa（貢獻 none；失敗請求 5 次超限）、Mystikal、Nice & Smooth（貢獻、地位 none）、PARTYNEXTDOOR（貢獻 none；搜尋 9 次超限，超出部分已撤）。Nujabes 只寫「瀬葉淳（Seba Jun）」，本名不寫。N.W.A《Straight Outta Compton》採 1988。Mystikal、Nelly 生年不寫。Naughty by Nature 只寫得獎，不寫「首屆」。pubIssues 0。
+- 029 g2 交件（QA 本組 0）。thin：Lil Baby、Lil Uzi Vert、Lloyd、Moor Mother。Lil Uzi Vert 正文不用性別代名詞。Megan Thee Stallion 葛萊美只寫官方頁核對過的兩項；Lil' Kim〈Lady Marmalade〉採第 44 屆（2002）。MF DOOM 相關年份不一，只寫事件。單源未收：Yeat 評 Uzi、Lil Baby TIME 名單。pubIssues 0。w1（g1+g2）派出。

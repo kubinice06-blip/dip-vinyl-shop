@@ -852,5 +852,87 @@
   "failedFetches": 4,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，從零查。搜尋 7 次：維基、WebSearch（生平與訃聞）、Complex 訃聞、XXL 訃聞、WebSearch（影響與 Nuyorican，一次呼叫含兩條查詢）、Complex『20 Things』、Stereogum 追思。失敗請求 4 次（已達上限）：britannica 404、npr.org 兩篇各 503、rollingstone.com 轉址 tollbit 未取得。同名確認：卡池 Operation: Doomsday（1999）、MM..FOOD（2004）、Born Like This（2009）皆是這位 MF DOOM，無混卡。死亡只收 2020 年與年齡 49 歲，不收死因與家人細節。非獨立說明：legacy 與 sound 第一條共用維基『widely regarded』一句，是同一個來源重複用；XXL、Complex 的年份敘述沒有交叉到維基，因此 era 的 1997 與 1999 用的是 XXL 與 Stereogum 兩個獨立來源。『damn near homeless』一句維基與 Complex 都有，但 Complex 該文可能是引自同一次訪談，不排除同源。未收（單源或未開頁）：生於倫敦 Hounslow、在 Long Beach 長大、1971 年生日（維基單源，搜尋摘要有同說）；Subroc 1993 年 4 月過世（維基單源，搜尋摘要同說）；《Black Bastards》2001 年才發行（搜尋摘要）；他住 Atlanta 約三年、在 Nuyorican Poets Cafe 戴絲襪演出（搜尋摘要，未開頁；Stereogum 只寫 open-mic 遮臉）；面具由塗鴉藝術家 KEO 協助設計、起初考慮 Darth Maul、定案受電影《神鬼戰士》啟發（Complex『20 Things』單源）；Malachi Z York 與 Nuwaubian 的一段（Complex 單源）；Bishop Nehru 稱他為『第一位導師』（XXL 單源）；Joey Badass、Milo、Tyler 與 Earl Sweatshirt 受他影響（搜尋摘要，未開頁）；啟發後輩遮臉（搜尋摘要）；Stereogum 與 Consequence 的 20 週年文章未開頁。KMD 1991 年《Mr. Hood》（Stereogum 單源）。人物故事的各條都只收到兩源能支撐的版本；寫作層請依 facts 寫，不要補入未收項。搜尋次數 7，另有 1 次額度未用。"
+ },
+ {
+  "key": "moor mother",
+  "name": "Moor Mother",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Moor Mother 本名 Camae Ayewa，是詩人、音樂人與社區行動者，以賓州費城（北費城）為根據地。",
+      "src": "https://en.wikipedia.org/wiki/Moor_Mother",
+      "src2": "https://thequietus.com/news/moor-mother-lcmf-interview/",
+      "from": "new"
+     },
+     {
+      "f": "她與伴侶、作家兼公益律師 Rasheedah Phillips 共同創辦 Black Quantum Futurism（BQF）藝術與文學集體，用 Afrofuturist 的角度談空間與時間。",
+      "src": "https://thequietus.com/news/moor-mother-lcmf-interview/",
+      "src2": "https://www.factmag.com/2019/08/27/moor-mother-analog-fluids-of-sonic-black-holes/",
+      "from": "new"
+     },
+     {
+      "f": "她也共同創辦費城的活動系列 Rockers! Philly，專門支持被邊緣化的藝術家。",
+      "src": "https://www.factmag.com/2019/08/27/moor-mother-analog-fluids-of-sonic-black-holes/",
+      "src2": "https://www.leeway.org/grantees/camae-ayewa",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的作品把詩與實驗電子聲響接在一起，並碰觸自由爵士；Chanel 的介紹寫她的實踐涵蓋自由爵士、電子與古典等風格。",
+      "src": "https://en.wikipedia.org/wiki/Moor_Mother",
+      "src2": "https://www.chanel.com/us/chanel-next-prize/moor-mother/",
+      "from": "new"
+     },
+     {
+      "f": "她常用檔案錄音與田野錄音，把歷史與當下疊在一起，作為對種族與社會問題的評論。",
+      "src": "https://thequietus.com/news/moor-mother-lcmf-interview/",
+      "src2": "https://www.chanel.com/us/chanel-next-prize/moor-mother/",
+      "from": "new"
+     },
+     {
+      "f": "她同時是自由爵士團體 Irreversible Entanglements 的核心成員，把自己的詩與樂手的即興結合。",
+      "src": "https://en.wikipedia.org/wiki/Moor_Mother",
+      "src2": "https://www.chanel.com/us/chanel-next-prize/moor-mother/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2024 年 Camae Ayewa（Moor Mother）獲 Chanel Next Prize，這是每兩年選出十位當代藝術與文化創作者的獎，得獎者獲獎金與兩年的導師支持。",
+      "src": "https://www.chanel.com/us/chanel-next-prize/moor-mother/",
+      "src2": "https://music.usc.edu/camae-ayewa-chanel-next-prize/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2024 年獲 Chanel Next Prize。",
+    "src": "https://www.chanel.com/us/chanel-next-prize/moor-mother/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Leeway 基金會官網寫 Ayewa 的 Leeway Transformation Award 為 2015 年；WebSearch 摘要（彙整履歷）寫 2016 年。兩源不一致，facts 不收這個獎。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 8 次：維基、WebSearch（生平）、The Quietus 專訪、Factmag、WebSearch（獎項）、USC Thornton 新聞、Chanel Next Prize 官方頁、Leeway 基金會頁。失敗請求 0 次。同名確認：卡池 Fetish Bones（2016）、Analog Fluids of Sonic Black Holes（2019）、Jazz Codes（2022）皆是費城的 Moor Mother（Camae Ayewa），無混卡。非獨立說明：legacy 的 Chanel 官方頁與 USC 新聞稿談同一個獎，USC 稿的資訊多半取自 Chanel，視為『非獨立』；USC 稿也未引用 Chanel 之外的說法，寫作層請寫『獲 Chanel Next Prize』即可，不要加形容。未收（單源或只見搜尋摘要）：生日 1981 年 11 月 19 日、生於 Maryland 的 Aberdeen、在費城長大（維基單源）；USC 助理教授（維基與 Chanel 都有，但屬履歷，不收）；Sonia Sanchez 是她的詩歌啟發，她說 Sanchez 的詩是『最好的時間旅行』、自學成長（Quietus 單源）；Community Futures Lab（Quietus 單源）；Irreversible Entanglements 2015 年成軍、700 Bliss 與 DJ Haram（搜尋摘要與 Factmag 單源）；2023 年德國爵士獎（German Jazz Prize）國際年度藝術家（Chanel 頁單源，搜尋摘要也提，未開第二頁）；2017 年 Pew 藝術與遺產中心獎助、2016 年 A Blade of Grass 獎助、2017 年 The Kitchen 首屆 Emerging Artist Award（搜尋摘要，未開頁）；2015 年 Leeway Transformation Award（Leeway 官網單源，與摘要的 2016 年衝突）；作品在 Guggenheim、Metropolitan Museum、Documenta 15 展出（Chanel 頁單源）；《Fetish Bones》登上 Pitchfork、Rolling Stone、The Wire 年終榜（榜單，不收）；Rolling Stone 2016 年『值得關注藝人』、Bandcamp 年度藝人（搜尋摘要，媒體榜單類不收）。legacy 格只有 Chanel Next Prize 一條有兩個頁面支撐，其他有價值的線索都只有單源，標 thin；若主線想補，可補開 Pew 與 The Kitchen 官網頁取第二源。"
  }
 ]
