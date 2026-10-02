@@ -499,5 +499,254 @@
     "status": "full",
     "pubIssues": [],
     "notes": "事實庫 research 只有 Water Passion 兩條（單源，沿用為 bank）。補查 8 次：維基 Tan Dun、Britannica（該頁只取到《臥虎藏龍》配樂一段風格敘述）、WebSearch（生平）、IRCAM 傳記、encyclopedia.com、WebSearch（Grawemeyer）、維基 Grawemeyer Award、Bard College 院長任命新聞；失敗 1 次不計入（甘迺迪中心 403）。第二源皆實際開頁。非獨立：encyclopedia.com 與 Britannica 風格那條說法相近但屬不同出版者；Grawemeyer 與 Tan Dun 兩個維基條目為同站，故 Grawemeyer 條 src2 改用 IRCAM。譚盾姓名照原文：Tan Dun 譚盾。單源未收：維基稱 1993 年 Columbia 博士論文《Death and Fire: Dialogue with Paul Klee》（IRCAM 另有同題，可考慮寫作層用，但年份不寫）；IRCAM 稱他屬於『1978 世代』中國作曲家；encyclopedia.com 稱 1983 年作品因『精神污染』被禁、1997 年《紐約時報》稱他『年度古典音樂家』、22 歲寫《離騷》被視為『新浪潮』領袖、26 歲 Suntory 委託案最年輕得主；維基稱 BAFTA 獎；Bard 新聞稿稱他『世界最知名且最受邀約的作曲家之一』『Internet Symphony 超過 2300 萬人線上觀看』（機構自述，非獨立共識，不收）、上海迪士尼開幕指揮、Bach Prize、Shostakovich Award、威尼斯金獅終身成就獎（Bard 單源）。Britannica 與 encyclopedia.com 兩源支持『中西融合』是風格概括；譚盾本人抗拒『文化大使』標籤（encyclopedia.com 單源）。"
+  },
+  {
+    "key": "terry riley",
+    "name": "Terry Riley",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Terry Riley 是加州出身的美國作曲家，1935 年生。",
+            "src": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "src2": "https://www.songlines.co.uk/content/features/terry-riley-interview-every-decade-of-my-life-has-had-a-different-focus",
+            "from": "new"
+          },
+          {
+            "f": "他的音樂受爵士即興與印度古典音樂影響。",
+            "src": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "src2": "https://en.wikipedia.org/wiki/A_Rainbow_in_Curved_Air",
+            "from": "new"
+          },
+          {
+            "f": "1970 年他赴印度追隨印度古典聲樂大師 Pandit Pran Nath 學習，之後一路跟著這位老師，直到 1996 年老師過世。",
+            "src": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "src2": "https://www.songlines.co.uk/content/features/terry-riley-interview-every-decade-of-my-life-has-had-a-different-focus",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他以重複、錄音帶延遲系統與即興見稱，被視為最早使用錄音帶迴圈與重複手法的先驅之一。",
+            "src": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "src2": "https://www.songlines.co.uk/content/features/terry-riley-interview-every-decade-of-my-life-has-had-a-different-focus",
+            "from": "new"
+          },
+          {
+            "f": "《In C》1964 年 3 月寫成，1964 年 11 月 4 日在舊金山 San Francisco Tape Music Center 首演；樂譜只有一頁，由 53 個短小的旋律片段組成，全在 C 大調，演奏者依序進行，但各片段重複幾次由自己決定，編制不限。",
+            "src": "https://en.wikipedia.org/wiki/In_C",
+            "src2": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "from": "new"
+          },
+          {
+            "f": "《A Rainbow in Curved Air》1969 年由 CBS 發行，標題曲由 Riley 自己疊錄電風琴、電子大鍵琴等樂器完成；B 面〈Poppy Nogood and the Phantom Band〉用疊錄、錄音帶延遲與迴圈，全由他一人演奏。",
+            "src": "https://en.wikipedia.org/wiki/A_Rainbow_in_Curved_Air",
+            "src2": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Songlines 稱他與 La Monte Young 是美國極簡主義無可爭議的開創者；英文維基首段也把他稱為極簡主義作曲學派的先驅。",
+            "src": "https://www.songlines.co.uk/content/features/terry-riley-interview-every-decade-of-my-life-has-had-a-different-focus",
+            "src2": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "from": "new"
+          },
+          {
+            "f": "他的影響及於當代古典、電子音樂，也及於搖滾樂團。",
+            "src": "https://www.songlines.co.uk/content/features/terry-riley-interview-every-decade-of-my-life-has-had-a-different-focus",
+            "src2": "https://en.wikipedia.org/wiki/A_Rainbow_in_Curved_Air",
+            "from": "new"
+          },
+          {
+            "f": "The Who 的 Pete Townshend 在 1971 年〈Baba O'Riley〉等曲中借用了 Riley 的重複鍵盤手法，這首歌的曲名有一半就是向 Riley 致意（另一半是 Meher Baba）。",
+            "src": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "src2": "https://newmusicusa.org/nmbx/the-influence-engine-steve-reich-and-pop-music/",
+            "from": "new"
+          },
+          {
+            "f": "英國前衛搖滾樂團 Curved Air 的團名取自《A Rainbow in Curved Air》；Mike Oldfield 的《Tubular Bells》與 Soft Machine 的〈Out-Bloody-Rageous〉也被認為受這張專輯啟發。",
+            "src": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "src2": "https://en.wikipedia.org/wiki/A_Rainbow_in_Curved_Air",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《In C》1964 年 11 月 4 日首演；1968 年錄成 Columbia 唱片，《A Rainbow in Curved Air》同年錄製、1969 年發行。",
+            "src": "https://en.wikipedia.org/wiki/In_C",
+            "src2": "https://en.wikipedia.org/wiki/A_Rainbow_in_Curved_Air",
+            "from": "new"
+          },
+          {
+            "f": "1970 年起他追隨 Pandit Pran Nath 學習印度古典聲樂。",
+            "src": "https://en.wikipedia.org/wiki/Terry_Riley",
+            "src2": "https://www.songlines.co.uk/content/features/terry-riley-interview-every-decade-of-my-life-has-had-a-different-focus",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1964 年 11 月 4 日《In C》在舊金山首演。",
+        "src": "https://en.wikipedia.org/wiki/In_C",
+        "src2": "https://www.wqxr.org/story/136432-november-4-1964-the-premiere-of-terry-rileys-in-c",
+        "from": "new"
+      },
+      {
+        "f": "1969 年發行《A Rainbow in Curved Air》。",
+        "src": "https://en.wikipedia.org/wiki/A_Rainbow_in_Curved_Air",
+        "src2": "https://en.wikipedia.org/wiki/Terry_Riley",
+        "from": "new"
+      },
+      {
+        "f": "1970 年赴印度追隨 Pandit Pran Nath 學習。",
+        "src": "https://en.wikipedia.org/wiki/Terry_Riley",
+        "src2": "https://www.songlines.co.uk/content/features/terry-riley-interview-every-decade-of-my-life-has-had-a-different-focus",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Songlines 訪談把《In C》標為 1968 年（唱片年），維基與 WQXR 為 1964 年首演；facts 兩者分寫，標明 1964 首演、1968 錄音。",
+      "Britannica 該頁取到的內容把《In C》描述為『持續的 C 大調三和弦』，與維基『53 個旋律片段』的說法不同；採維基與樂譜結構說法，Britannica 此頁沒有收。",
+      "事實庫 research 為空，卡池的三張專輯（A Rainbow in Curved Air、In C、Cadenza on the Night Plain）皆無上線簡介，故無衝突可比。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫 research 為空、無上線簡介，從零查。補查 8 次：維基 Terry Riley、Britannica（內容很少且與維基不同，未採）、WebSearch（In C 與 Pran Nath）、WQXR 頁（只確認 1964 年 11 月 4 日首演，其餘為導覽）、Songlines 訪談（2023 年 1 月，Riley 87 歲）、維基 In C、維基 A Rainbow in Curved Air、WebSearch（國家錄音登錄）；失敗 1 次不計入（loc.gov 錄音登錄清單 403）。非獨立：origin 第二條、sound 第二與第三條、legacy 第二到第四條的兩源都是維基不同條目（Terry Riley 與 In C 與 A Rainbow in Curved Air），Songlines 為獨立來源。『Baba O'Riley 曲名向 Riley 致意』：維基三個條目同說，New Music USA 只確認 Who 1971 年引用其鍵盤手法，故曲名致意只靠維基，寫作層請寫『據維基』或略過。單源未收：Songlines 記他 20 多歲晚期或近 30 歲時才在柏克萊第一次聽到 Ravi Shankar 現場；1935 年 6 月 24 日生於 Colfax（出生年另有 Songlines 年齡推算：2023 年 1 月 87 歲）；就讀 San Francisco State、舊金山音樂院、UC Berkeley，老師 Seymour Shifrin 與 Robert Erickson；1960 年代在巴黎鋼琴酒吧演奏；1959 至 1960 年與 La Monte Young 合作；1971 年進 Mills College 教印度古典音樂；1980 年前後起與 Kronos Quartet 合作、寫了 13 首弦樂四重奏；2007 年 Chapman 大學榮譽博士；《In C》首演者含 Steve Reich、Pauline Oliveros、Morton Subotnick、Jon Gibson（維基 In C 單源）；《In C》1968 年 Columbia 版由 David Behrman 以提示卡指揮（單源）；Alfred Frankenstein 稱《In C》為『二十世紀的定義性傑作之一』（單一評論者）；《In C》1968 年錄音 2022 年入選美國國會圖書館國家錄音登錄（維基與搜尋摘要，未開頁）；Christgau 稱《Rainbow》標題曲近乎『天體之音』（單一樂評，不收）。"
+  },
+  {
+    "key": "the hilliard ensemble",
+    "name": "The Hilliard Ensemble",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Hilliard Ensemble 是在倫敦成立的英國男聲無伴奏團體，團名取自伊莉莎白時代的細密畫家 Nicholas Hilliard，取意於他對細節的講究。",
+            "src": "https://en.wikipedia.org/wiki/Hilliard_Ensemble",
+            "src2": "https://ecmrecords.com/artists/the-hilliard-ensemble/",
+            "from": "new"
+          },
+          {
+            "f": "他們起初專注演唱早期音樂，後來也唱當代作品；團名的取意，據團員 David James 說，是希望音樂也做到細密畫般的精緻入微。",
+            "src": "https://ecmrecords.com/artists/the-hilliard-ensemble/",
+            "src2": "https://www.operatoday.com/content/2014/12/the_hilliard_en.php",
+            "from": "new"
+          },
+          {
+            "f": "David James 是團裡唯一從創團第一場音樂會一路唱到告別演出的成員。",
+            "src": "https://www.kingssingers.com/news/hilliard-ensemble",
+            "src2": "https://www.operatoday.com/content/2014/12/the_hilliard_en.php",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的曲目從 11 世紀的 Pérotin 唱到當代，Opera Today 的樂評稱讚他們的音樂與咬字精準，能讓中世紀作品顯出現代感，也讓當代作品聽來真誠而開闊。",
+            "src": "https://www.operatoday.com/content/2014/12/the_hilliard_en.php",
+            "src2": "https://en.wikipedia.org/wiki/Hilliard_Ensemble",
+            "from": "new"
+          },
+          {
+            "f": "他們長期為 ECM 錄音，從 Arvo Pärt 的作品開始，唱過 Pérotin、Machaut、Tallis 與 Gesualdo 的中世紀到文藝復興音樂，也錄下 Pärt 等當代作曲家的作品。",
+            "src": "https://ecmrecords.com/artists/the-hilliard-ensemble/",
+            "src2": "https://en.wikipedia.org/wiki/Hilliard_Ensemble",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "King's Singers 稱他們是世界一流的聲樂團體之一，走在早期音樂演出的最前線；Opera Today 的樂評也稱他們是世上最好的無伴奏合唱團之一。",
+            "src": "https://www.kingssingers.com/news/hilliard-ensemble",
+            "src2": "https://www.operatoday.com/content/2014/12/the_hilliard_en.php",
+            "from": "new"
+          },
+          {
+            "f": "Arvo Pärt、Piers Hellawell、Roger Marsh、Heiner Goebbels 等當代作曲家都曾專為他們寫曲；他們也長期推廣當代作曲家，特別是 Pärt。",
+            "src": "https://www.operatoday.com/content/2014/12/the_hilliard_en.php",
+            "src2": "https://www.kingssingers.com/news/hilliard-ensemble",
+            "from": "new"
+          },
+          {
+            "f": "他們與挪威薩克斯風手 Jan Garbarek 合作的《Officium》（ECM，1994 年發行）把 12 至 16 世紀的宗教合唱與薩克斯風即興並置，King's Singers 稱它是開創性的作品；ECM 也說他們的一些錄音成了國際暢銷唱片，尤其是與 Garbarek 的合作。",
+            "src": "https://www.kingssingers.com/news/hilliard-ensemble",
+            "src2": "https://ecmrecords.com/artists/the-hilliard-ensemble/",
+            "from": "new"
+          },
+          {
+            "f": "他們 2014 年 12 月 20 日在倫敦 Wigmore Hall 舉行告別演出，共走過 41 年；ECM 也說他們在 2014 年底退休。",
+            "src": "https://www.operatoday.com/content/2014/12/the_hilliard_en.php",
+            "src2": "https://ecmrecords.com/artists/the-hilliard-ensemble/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1984 年 9 月 17 至 19 日錄於倫敦 Temple Church，由 Paul Hillier 指揮 The Hilliard Ensemble 並親自演唱男中音、撰寫解說，EMI 於 1985 年以黑膠發行《Ockeghem: Requiem / Missa Mi-Mi》。",
+            "src": "https://www.discogs.com/release/6702495-Johannes-OckeghemHilliard-Ensemble-Requiem-Missa-Mi-Mi",
+            "from": "bank"
+          },
+          {
+            "f": "《Officium》1993 年 9 月錄於奧地利 Propstei St. Gerold 修道院，1994 年 9 月由 ECM 發行，由 Manfred Eicher 製作並促成雙方合作。",
+            "src": "https://en.wikipedia.org/wiki/Officium_(album)",
+            "src2": "https://en.wikipedia.org/wiki/Hilliard_Ensemble",
+            "from": "new"
+          },
+          {
+            "f": "自 1998 年起的陣容是 David James、Rogers Covey-Crump、Steven Harrold 與 Gordon Jones，一直唱到 2014 年告別。",
+            "src": "https://www.operatoday.com/content/2014/12/the_hilliard_en.php",
+            "src2": "https://en.wikipedia.org/wiki/Hilliard_Ensemble",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1994 年與 Jan Garbarek 在 ECM 發行《Officium》。",
+        "src": "https://en.wikipedia.org/wiki/Officium_(album)",
+        "src2": "https://en.wikipedia.org/wiki/Hilliard_Ensemble",
+        "from": "new"
+      },
+      {
+        "f": "2014 年 12 月 20 日在 Wigmore Hall 告別演出。",
+        "src": "https://www.operatoday.com/content/2014/12/the_hilliard_en.php",
+        "src2": "https://ecmrecords.com/artists/the-hilliard-ensemble/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年：事實庫與英文維基寫 1974 年；ECM 寫首場音樂會是 1973 年 12 月，Opera Today 與 King's Singers 寫 2014 年告別時『41 年』，推算也是 1973 年；兩說不一致，facts 不寫成軍年份（只寫在倫敦成立）。",
+      "Paul Hillier 1990 年離團：只見維基單源（事實庫沿用），不收進 facts；上線簡介（Ockeghem）只寫 1984 年 Hillier 帶團錄音，無衝突。",
+      "事實庫說整個 1980 年代大量替 EMI 的 Reflexe 古樂系列錄音，為維基單源，不收。"
+    ],
+    "searches": 8,
+    "failedFetches": 4,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "補查 8 次：維基 Hilliard Ensemble、WebSearch（告別演出）、Opera Today 告別音樂會樂評、King's Singers 新聞稿、WebSearch（Officium 與 ECM）、維基 Officium、WebSearch（Pérotin 與 Gesualdo 錄音）、ECM 官網藝人頁；失敗 4 次不計入（Britannica 404、Wigmore Hall 403、Presto 403、Discogs 403，已達失敗上限）。第二源皆實際開頁（Opera Today、King's Singers、ECM、維基）。非獨立：Officium 一條兩源皆為維基（不同條目）。King's Singers 為同行合唱團的悼念式新聞稿，評價屬同業稱讚，寫作層須具名；Opera Today 的『世上最好的無伴奏合唱團之一』是單篇樂評用語，寫作層須寫『樂評稱』並具名。曾在 Pärt 作品《Most Holy Mother of God》題獻予他們：只見搜尋摘要（Wigmore Hall 頁 403 未開），不收。ECM 說『1986 至 2014 年錄了 20 多張，起點是 Pärt 的《Arbos》、最後一張是《Transeamus》』只見 ECM 單源；Officium 銷量數字與各國金唱片認證依規則不寫。Pérotin 錄於 1988 年 9 月 Boxgrove Priory、Gesualdo《Tenebrae》錄於 1990 年 3 月 Douai Abbey、Manfred Eicher 稱 Pérotin、Gesualdo、Tallis 三張為『沉默三部曲』：只見搜尋摘要（ecmreviews 頁未開），不收；且團員名單（Pérotin 盤有 Hillier 在列）可作為 Hillier 離團年份晚於 1988 的旁證。『影響了許多他們指導過的合唱團』（King's Singers 單源）未收。"
   }
 ]
