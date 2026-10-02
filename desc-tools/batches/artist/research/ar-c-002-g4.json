@@ -741,5 +741,206 @@
     "src": "https://en.wikipedia.org/wiki/Ivo_Papazov"
    }
   ]
+ },
+ {
+  "key": "jan garbarek",
+  "name": "Jan Garbarek",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Jan Garbarek 1947 年 3 月 4 日生於挪威東部的 Mysen，父親 Czesław Garbarek 是波蘭人（戰後滯留的戰俘），母親 Kari Nordbø 是挪威人。",
+      "src": "https://en.wikipedia.org/wiki/Jan_Garbarek",
+      "src2": "https://no.wikipedia.org/wiki/Jan_Garbarek",
+      "from": "new"
+     },
+     {
+      "f": "他 14 歲時在收音機裡聽到 John Coltrane，隨即投身薩克斯風；Coltrane 對印度音樂的興趣也讓他早在 1963 年就接觸到非西方音樂。",
+      "src": "https://worldmusiccentral.org/artist-profiles-jan-garbarek/",
+      "src2": "https://ecmrecords.com/artists/jan-garbarek/",
+      "from": "new"
+     },
+     {
+      "f": "他很早就嶄露頭角：十幾歲時在挪威業餘爵士比賽中拿下第一名（1962 年）。",
+      "src": "https://ecmrecords.com/artists/jan-garbarek/",
+      "src2": "https://no.wikipedia.org/wiki/Jan_Garbarek",
+      "from": "new"
+     },
+     {
+      "f": "1960 年代中後期他與美國作曲家 George Russell 合作，是他成長期最重要的一段關係。",
+      "src": "https://en.wikipedia.org/wiki/Jan_Garbarek",
+      "src2": "https://worldmusiccentral.org/artist-profiles-jan-garbarek/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的次中音與高音薩克斯風音色辨識度極高：尖利的音色、悠長的哀鳴式長音，以及大量使用的靜默。",
+      "src": "https://en.wikipedia.org/wiki/Jan_Garbarek",
+      "src2": "https://ecmrecords.com/artists/jan-garbarek/",
+      "from": "new"
+     },
+     {
+      "f": "他的探索橫跨挪威民謠、中世紀複音音樂、印度與中東音樂，與各傳統的樂手合作，而不是只停在爵士。",
+      "src": "https://ecmrecords.com/artists/jan-garbarek/",
+      "src2": "https://worldmusiccentral.org/artist-profiles-jan-garbarek/",
+      "from": "new"
+     },
+     {
+      "f": "他與 Hilliard Ensemble 合作的《Officium》把他的薩克斯風放進修道院裡的人聲複音，後續還有《Mnemosyne》與《Officium Novum》。",
+      "src": "https://ecmrecords.com/artists/jan-garbarek/",
+      "src2": "https://en.wikipedia.org/wiki/Jan_Garbarek",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他獲頒挪威聖奧拉夫勳章一級騎士（Knight First Class of the Order of St. Olav）。",
+      "src": "https://en.wikipedia.org/wiki/Jan_Garbarek",
+      "src2": "https://no.wikipedia.org/wiki/Jan_Garbarek",
+      "from": "new"
+     },
+     {
+      "f": "他 2004 年獲挪威文化委員會（Norwegian Arts Council）榮譽獎，2014 年獲 Willy Brandt Award。",
+      "src": "https://en.wikipedia.org/wiki/Jan_Garbarek",
+      "src2": "https://no.wikipedia.org/wiki/Jan_Garbarek",
+      "from": "new"
+     },
+     {
+      "f": "他 1970 年代中期以 Keith Jarrett 歐洲四重奏成員的身分走向國際。",
+      "src": "https://en.wikipedia.org/wiki/Jan_Garbarek",
+      "src2": "https://ecmrecords.com/artists/jan-garbarek/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1962 年在挪威業餘爵士比賽中奪冠。",
+    "src": "https://ecmrecords.com/artists/jan-garbarek/",
+    "src2": "https://no.wikipedia.org/wiki/Jan_Garbarek",
+    "from": "new"
+   },
+   {
+    "f": "1970 年代中期加入 Keith Jarrett 的歐洲四重奏。",
+    "src": "https://en.wikipedia.org/wiki/Jan_Garbarek",
+    "src2": "https://ecmrecords.com/artists/jan-garbarek/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "聖奧拉夫勳章年份：英文維基寫 1999 年，挪威文維基寫 1998 年；兩源不一致，facts 不寫年份。",
+   "《Officium》年份：英文維基寫 1994、World Music Central 與 ECM 寫 1993（錄音與發行可能不同年），facts 不寫年份。",
+   "進 ECM 的年份：World Music Central 寫 1969、挪威文維基寫 1970，不一致，且屬履歷，era 格不收。"
+  ],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "事實庫研究稿為空、上線簡介一張（Places）。真實查證 6 次（英文維基、WebSearch×2、World Music Central、ECM 官網、挪威文維基），失敗 2 次（Britannica 404、Rockheim 維基頁 404）。卡池《Afric Pepperbird》1970 與《Places》1978 皆為本人，無同名混卡（維基 Garbarek 另有同姓條目，與本人無關）。未收單源：George Russell 稱他「自 Django Reinhardt 以來歐洲爵士最具原創性的聲音」（單源 ECM 官網；是 Russell 個人評語）；「Nordic tone」與「mountain jazz」（單源挪威文維基）；2015 年入選 Rockheim 名人堂（單源挪威文維基）；1978 年 Oslo 藝術家獎、1982 年 Gammleng 獎、1986 年 Paul Robeson 獎、1991 年 Lindeman 獎、1995 年 Anders Jahres 文化獎（單源挪威文維基）；Royal Swedish Academy of Music 外籍院士（單源英文維基）；《Officium》為 ECM 史上最暢銷專輯之一（銷量類，且單源維基，不寫）；出生在難民營（單源挪威文維基）、無國籍至七歲（單源英文維基）；他 1973 年後捨棄前衛爵士的刺耳不協和（單源英文維基）；Dexter Gordon 的影響（單源 ECM）；1976 年《Dis》為 ambient jazz 先驅（搜尋摘要，未開頁）；1974 年《Belonging》等 Jarrett 歐洲四重奏專輯（屬履歷）。World Music Central 與 ECM 官網的簡介措辭相近，疑同源，非獨立。『尖利的音色、悠長的哀鳴式長音、大量靜默』一句只有英文維基逐字出現，ECM 只支持『辨識度極高』部分，寫作層宜只用兩源共有的部分。",
+  "pubIssues": []
+ },
+ {
+  "key": "janko nilovic",
+  "name": "Janko Nilovic",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Janko Nilović（寫作 Nilovic）1941 年 5 月 20 日生於伊斯坦堡，父親是蒙特內哥羅人、母親是希臘人，是在法國活動的鋼琴手、編曲者與作曲家。",
+      "src": "https://en.wikipedia.org/wiki/Janko_Nilovi%C4%87",
+      "src2": "https://www.underdogrecords.fr/en/artiste/janko-nilovic/",
+      "from": "new"
+     },
+     {
+      "f": "他在土耳其長大，少年時組過搖滾樂團，1960 年移居巴黎，起初在夜總會彈琴，多年後才站穩腳跟。",
+      "src": "https://en.wikipedia.org/wiki/Janko_Nilovi%C4%87",
+      "src2": "https://daily.bandcamp.com/features/janko-nilovic-interview",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1960 年代末被 Éditions Montparnasse 2000（MP 2000）的出版人 André Farry 看中編曲而簽下，為這家專做配樂授權的 library 廠牌製作唱片。",
+      "src": "https://en.wikipedia.org/wiki/Janko_Nilovi%C4%87",
+      "src2": "https://daily.bandcamp.com/features/janko-nilovic-interview",
+      "from": "new"
+     },
+     {
+      "f": "他的作品橫跨古典、爵士、放克、流行、迷幻與輕音樂，其中許多收在不對外販售的 library 廠牌，並常用 Andy Loore、Johnny Montevideo 等化名發行。",
+      "src": "https://en.wikipedia.org/wiki/Janko_Nilovi%C4%87",
+      "src2": "https://www.underdogrecords.fr/en/artiste/janko-nilovic/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dr. Dre 2015 年專輯《Compton》的〈Loose Cannons〉取樣了他的〈Underground Session〉。",
+      "src": "https://en.wikipedia.org/wiki/Compton_(Dr._Dre_album)",
+      "src2": "https://daily.bandcamp.com/features/janko-nilovic-interview",
+      "from": "new"
+     },
+     {
+      "f": "No I.D. 為 Jay-Z 的〈D.O.A. (Death of Auto-Tune)〉取樣了他的〈In the Space〉；他的 library 作品因嘻哈取樣被重新挖掘。",
+      "src": "https://en.wikipedia.org/wiki/Janko_Nilovi%C4%87",
+      "src2": "https://daily.bandcamp.com/features/janko-nilovic-interview",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1960 年移居巴黎。",
+    "src": "https://en.wikipedia.org/wiki/Janko_Nilovi%C4%87",
+    "src2": "https://www.underdogrecords.fr/en/artiste/janko-nilovic/",
+    "from": "new"
+   },
+   {
+    "f": "1960 年代末被 MP 2000 簽下。",
+    "src": "https://en.wikipedia.org/wiki/Janko_Nilovi%C4%87",
+    "src2": "https://daily.bandcamp.com/features/janko-nilovic-interview",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "為 MP 2000 錄的專輯數：Bandcamp Daily 寫約十張（over 10 albums）、It's Psychedelic Baby 訪談寫約 60 張；兩源不一致，facts 不寫數量。",
+   "葛萊美：維基與 Bandcamp Daily 寫他因 Jay-Z 取樣曲「獲提名」，Underdog Records 寫他是「得獎的共同受獎人」；兩種說法對不上、也沒有查到頒獎方資料，facts 不寫。",
+   "事實庫唯一一條（MusicBrainz 的 MP 43 版本資料）屬單張專輯版本，與上線簡介一致，未用於三格。"
+  ],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫僅一條單張專輯版本資料，三格從零查。真實查證 8 次（維基、WebSearch×2、It's Psychedelic Baby、edrmartin、維基 Compton、Bandcamp Daily、Underdog Records）。為在法國活動的作曲家，生於伊斯坦堡、父系蒙特內哥羅；不寫成南斯拉夫或塞爾維亞音樂人。在世者，被取樣次數屬累計數字，facts 不寫（Bandcamp 與搜尋摘要寫近六十次，上線簡介已寫）。未收單源：父親 12 歲時過世、自學鋼琴、後來跟 Marthe Papazian 學琴（單源訪談）；1955 年聽到 Elvis 起組團（單源訪談）；Les Doussis 希臘三重奏（單源維基）；〈Impressions〉系列廣泛用於電視紀錄片（單源維基）；為 MP 2000 簽約期間風格完全自由（單源訪談）；The Alchemist、Freddie Gibbs、Joey Bada$$、Schoolboy Q 取樣（單源 Bandcamp）；Underdog 稱他是「70 年代歐洲最偉大的錄音室人才之一」（唱片行宣傳語，單源）；Underdog 2014 至 2017 年重發《Pop Impressions》《Soul Impressions》《Funky Tramway》（履歷）；edrmartin 稱他生於法國大使館、與 Michel Jonasz 合寫至 1969（單源）。維基稱 MP 2000 為「late 1960s」，Bandcamp 寫 1969，採 1960 年代末。Underdog 與 Bandcamp 為不同來源，維基與 Compton 條目同站，故 Dr. Dre 一條第二源用 Bandcamp。",
+  "pubIssues": [
+   {
+    "album": "Soul Impressions",
+    "claim": "替專做配樂授權的廠牌一口氣做了十張唱片",
+    "problem": "Bandcamp Daily 寫 over 10 albums，It's Psychedelic Baby 訪談中他說為 MP 2000 作了約 60 張；『十張』疑為低估，兩源不一致，建議改成不寫確切張數或標明說法不一。",
+    "src": "https://www.psychedelicbabymag.com/2013/02/janko-nilovic-interview.html"
+   }
+  ]
  }
 ]
