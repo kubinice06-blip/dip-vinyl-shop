@@ -275,5 +275,264 @@
   "notes": "本位用 8 次（en 維基兩次、bach-cantatas 傳記、WebSearch 三次、en 維基聖彼得堡愛樂、en 維基 Arvīds Jansons；第三次搜尋只看到摘要，未開頁，內容全未收），失敗請求 1 次（Britannica 404）→ failedFetches 1。⚠ legacy 格薄：後輩點名受其影響、國家級榮譽年份、權威票選都沒取到兩源。未收（單源或單一評論）：『被許多人視為蘇聯時代最偉大的俄國指揮家』（只見搜尋摘要，未能開到出處頁）；Hero of Socialist Labour 1973（只有 bach-cantatas 單源；維基只列榮譽名稱未寫年）；People's Artist of the USSR、列寧獎、史達林獎（維基只列名稱、無年份）；James McCarthy 把樂團比作『被意志力勒住的野馬』（單一樂評人，不收）；1960 年 9 月僅有的英國演出（維基單源）；1946 年首度西歐巡演到芬蘭（SPO 條目單源，且屬樂團）；愛樂首演蕭士塔高維契的交響曲數：SPO 條目寫 7 首、本人條目寫 6 首，採 6 首（本人條目與事實庫一致）。非獨立：bach-cantatas 傳記內容與維基高度重疊，疑似取自維基；SPO 條目與本人條目同為維基。Jansons 條目只確認 Arvīds Jansons 1952 年任列寧格勒愛樂候補指揮、排在 Mravinsky 之後，無法支撐『後輩受其影響』，不收。poolAlbums（蕭士塔高維契第 5、8、11 號）確為本人。 sound 格標 none：bach-cantatas 寫「對樂團有極高的技術掌控、尤其是力度，手勢簡單清楚」只此單源（維基本人條目未寫指揮風格，只有 McCarthy 一句評論）；搜尋摘要所述「近乎軍人的台風、近乎狂熱的分組排練、趕走不合格者」未開頁讀到，不收。",
   "failedFetches": 1,
   "pubIssues": []
+ },
+ {
+  "key": "yiruma",
+  "name": "Yiruma",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yiruma（이루마，本名 Lee Ru-ma）1978 年 2 月 15 日生於韓國首爾，5 歲開始學鋼琴。",
+      "src": "https://en.wikipedia.org/wiki/Yiruma",
+      "src2": "https://yiruma.com/biography/?lang=en",
+      "from": "new"
+     },
+     {
+      "f": "他少年時赴英國，進倫敦的 Purcell School 音樂學校，1997 年畢業，之後讀倫敦大學國王學院（King's College London），2000 年 6 月完成學位。",
+      "src": "https://ko.wikipedia.org/wiki/이루마",
+      "src2": "https://en.wikipedia.org/wiki/Yiruma",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以鋼琴獨奏的器樂曲為主，被歸為 new age、半古典（semi-classical）的當代鋼琴音樂，結合古典訓練與流行取向的旋律。",
+      "src": "https://en.wikipedia.org/wiki/Yiruma",
+      "src2": "https://ko.wikipedia.org/wiki/이루마",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的〈When the Love Falls〉收進韓劇《冬季戀歌》（Winter Sonata）的原聲帶；《冬季戀歌》在日本 NHK 播出後被認為帶動了第二波韓流。",
+      "src": "https://en.wikipedia.org/wiki/Winter_Sonata",
+      "src2": "https://en.wikipedia.org/wiki/Yiruma",
+      "from": "new"
+     },
+     {
+      "f": "他的〈River Flows in You〉收在 2001 年的《First Love》，在 2020 年疫情封城期間再度於網路竄紅。",
+      "src": "https://en.wikipedia.org/wiki/Yiruma",
+      "src2": "https://yiruma.com/biography/?lang=en",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "赴英年齡與年份：en 維基只寫赴英；Classical Post 寫 11 歲、官網寫 10 歲、搜尋摘要寫 1988 年，不一致，不寫年齡與入學年。「放棄英國公民身分」：en 維基寫 citizenship、ko 維基寫 residency，不收。"
+  ],
+  "searches": 6,
+  "status": "thin",
+  "notes": "本位用 6 次（en 維基、ko 維基、WebSearch、Classical Post、yiruma.com 官網傳記、en 維基《Winter Sonata》），失敗請求 2 次（AllMusic 403、Billboard 圖表頁 307 轉址未取得內容）→ failedFetches 2。事實庫 research 與 published 皆空，等於從零查。poolAlbums（Piano、Nocturnal Lights… They Scatter、From the Yellow Room）皆為本人，無同名混卡。非獨立：yiruma.com 是藝人官方網站，屬自述；en 維基兩個條目同站。⚠ legacy 格薄：沒有後輩點名、榮譽或權威評價的兩源，只有《冬季戀歌》與 2020 年的再度流行兩條，故標 thin。未收（單源）：2020 年《The Best: Reminiscent, 10th Anniversary》登上 Billboard 古典專輯榜首（只見 en 維基與搜尋摘要，Billboard 官網未取得；屬榜單且在世者，不寫）；2002 年首位受邀赴 MIDEM（坎城）演出的韓國音樂人（官網單源、屬『首位』類）；師事 Harrison Birtwistle（官網單源）；受 George Winston、David Lanz 影響並自稱把東西方音樂結合（Classical Post 單源）；〈River Flows in You〉靈感來自 Riverdance 廣告（Classical Post 單源）；2006 年 7 月至 2008 年 8 月海軍服役（en、ko 維基兩源，但屬履歷不收）；2013 或 2017 年 MBC 電台獎（兩源年份不一致，且屬履歷）。官網與搜尋摘要提到的 YouTube 觀看數、音樂會場數屬在世者數字，不收。ko 維基頁面摘要使用了『her』代稱，已核對是摘要錯誤，不影響事實。",
+  "failedFetches": 2,
+  "pubIssues": []
+ },
+ {
+  "key": "zbigniew preisner",
+  "name": "Zbigniew Preisner",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Zbigniew Preisner 1955 年 5 月 20 日生於波蘭南部的比耶爾斯科－比亞瓦（Bielsko-Biała），本名 Zbigniew Antoni Kowalski。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Preisner",
+      "src2": "https://pl.wikipedia.org/wiki/Zbigniew_Preisner",
+      "from": "bank"
+     },
+     {
+      "f": "他在克拉科夫的賈蓋隆大學（Jagiellonian University）讀歷史與哲學，沒有受過正式的音樂院訓練，音樂主要靠自學。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Preisner",
+      "src2": "https://www.encyclopedia.com/movies/dictionaries-thesauruses-pictures-and-press-releases/preisner-zbigniew",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的作曲風格被形容為稀疏的調性新浪漫主義，公認的影響包括 Paganini 與 Sibelius。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Preisner",
+      "src2": "https://www.encyclopedia.com/movies/dictionaries-thesauruses-pictures-and-press-releases/preisner-zbigniew",
+      "from": "new"
+     },
+     {
+      "f": "Van den Budenmayer 是 Preisner 與導演 Kieślowski 虛構出來的十八世紀荷蘭作曲家，用來在劇本裡當作品的掛名，出現在《Dekalog》《雙面薇若妮卡》與《三色》系列。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Preisner",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他是導演 Krzysztof Kieślowski 的主要配樂合作者，作品包括《Dekalog》《雙面薇若妮卡》與《三色》三部曲。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Preisner",
+      "src2": "https://pl.wikipedia.org/wiki/Zbigniew_Preisner",
+      "from": "new"
+     },
+     {
+      "f": "他憑《三色：紅》在 1995 年第 20 屆法國凱撒獎拿下最佳原創音樂（得獎）；前一年《三色：藍》則是第 19 屆凱撒獎的入圍。",
+      "src": "https://en.wikipedia.org/wiki/C%C3%A9sar_Award_for_Best_Original_Music",
+      "src2": "https://www.encyclopedia.com/movies/dictionaries-thesauruses-pictures-and-press-releases/preisner-zbigniew",
+      "from": "new"
+     },
+     {
+      "f": "他為《The Island on Bird Street》（Wyspa na ulicy Ptasiej）寫的配樂，在 1997 年第 47 屆柏林影展獲銀熊獎「傑出單項成就」（Outstanding Single Achievement）。",
+      "src": "https://en.wikipedia.org/wiki/47th_Berlin_International_Film_Festival",
+      "src2": "https://pl.wikipedia.org/wiki/Zbigniew_Preisner",
+      "from": "new"
+     },
+     {
+      "f": "他 2012 年獲波蘭復興勳章軍官十字（Krzyż Oficerski Orderu Odrodzenia Polski）。",
+      "src": "https://pl.wikipedia.org/wiki/Zbigniew_Preisner",
+      "src2": "https://preisner.com/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Requiem for My Friend》是他第一部不為電影而寫的大型作品，獻給 Kieślowski，1998 年 10 月 1 日在華沙大劇院（Teatr Wielki）首演。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Preisner",
+      "src2": "https://pl.wikipedia.org/wiki/Zbigniew_Preisner",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1995 年第 20 屆凱撒獎以《三色：紅》獲最佳原創音樂（得獎）。",
+    "src": "https://en.wikipedia.org/wiki/C%C3%A9sar_Award_for_Best_Original_Music",
+    "from": "new"
+   },
+   {
+    "f": "1997 年第 47 屆柏林影展以《The Island on Bird Street》獲銀熊獎「傑出單項成就」。",
+    "src": "https://en.wikipedia.org/wiki/47th_Berlin_International_Film_Festival",
+    "from": "new"
+   },
+   {
+    "f": "1998 年 10 月 1 日《Requiem for My Friend》在華沙首演。",
+    "src": "https://pl.wikipedia.org/wiki/Zbigniew_Preisner",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "凱撒獎年份：en 維基《César Award for Best Original Music》與 encyclopedia.com 寫《紅》為 1995（第 20 屆）；pl 維基寫 1994，採 1995。另 en 維基本人條目與 preisner.com 官網寫 1996 年憑《Élisa》再得凱撒獎，但凱撒獎專頁只列一次得獎（《紅》）與兩次入圍（《藍》第 19 屆、《Un secret》第 33 屆），不採《Élisa》一條。",
+   "與 Kieślowski 合作起點：官網寫 1984 年《No End》、encyclopedia.com 寫 1981 年相識、pl 維基寫經 Krauze 於 1982 年《Prognoza pogody》認識，三源不一致，不寫起始年與合作年數。",
+   "上線簡介（《藍》《雙面薇若妮卡》《紅》）與本層查到的事實無衝突；《藍》簡介『1993 年威尼斯影展金獅獎』屬電影，與配樂獲獎無關，不改。"
+  ],
+  "searches": 7,
+  "status": "full",
+  "notes": "本位用 7 次（en 維基、pl 維基、en 維基凱撒獎頁、WebSearch、preisner.com 官網、encyclopedia.com、en 維基第 47 屆柏林影展），無失敗請求。事實庫已有生日（en 維基單源）與 Budenmayer 條，生日本層補 pl 維基第二源。poolAlbums（Trois couleurs : Bleu、La Double Vie de Véronique、Trois couleurs : Rouge）皆為本人，無同名混卡。非獨立：en 維基的幾條（本人條、凱撒獎頁、柏林影展頁）同站；encyclopedia.com 與維基內容近似。encyclopedia.com 另寫合作約 15 年、至 Kieślowski 1996 年過世（單源，不收）；『Requiem 是第一部非電影大型作品』：en 維基與官網（自述）一致，pl 維基只確認首演日期與地點，facts 已寫『第一部』，審稿時可改弱。未收（單源）：preisner.com 稱他是『Poland's leading film music composer』『one of the most outstanding film composers of his generation』（官方自述，不當共識）；Haifa 影展終身成就獎 2018（官網單源）；波蘭復興勳章軍官十字 2012（pl 維基與官網，兩源但屬官方榮譽、年份只一處對得上，審稿時可補收；pl 維基寫 2012、官網寫 2012，實為兩源一致，可收為『2012 年獲波蘭復興勳章軍官十字（Krzyż Oficerski Orderu Odrodzenia Polski）』）；Golden Globe 入圍（en 維基寫《藍》與《At Play in the Fields of the Lord》、pl 維基只寫 1992、1994，年份不一致，不收）；Los Angeles Film Critics 獎（官網與 encyclopedia.com 只一致於《Damage》1992，類別不明，不收）；為 80 多部電影配樂（pl 維基單源）。 波蘭復興勳章 2012 年一條：pl 維基與官網（自述）兩源一致，已收入 legacy。",
+  "failedFetches": 0,
+  "pubIssues": []
+ },
+ {
+  "key": "下村陽子",
+  "name": "下村陽子",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "下村陽子 1967 年 10 月 19 日生於日本兵庫縣，幼年開始學鋼琴，進大阪音樂大學主修鋼琴。",
+      "src": "https://ja.wikipedia.org/wiki/下村陽子",
+      "src2": "https://en.wikipedia.org/wiki/Yoko_Shimomura",
+      "from": "new"
+     },
+     {
+      "f": "她 1988 年進 Capcom 工作，起初是做遊戲音樂的作曲人員，在街機與家用機遊戲的音效組裡累積資歷。",
+      "src": "https://en.wikipedia.org/wiki/Yoko_Shimomura",
+      "src2": "https://ja.wikipedia.org/wiki/下村陽子",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她出身古典鋼琴，自述喜歡 Chopin 等古典作曲家；轉往 Square 是因為想為幻想題材的 RPG 寫作。",
+      "src": "https://ja.wikipedia.org/wiki/下村陽子",
+      "src2": "https://en.wikipedia.org/wiki/Yoko_Shimomura",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她 2024 年 3 月 20 日在第 24 屆遊戲開發者選擇獎（Game Developers Choice Awards）獲頒終身成就獎（Lifetime Achievement Award）。",
+      "src": "https://en.wikipedia.org/wiki/24th_Game_Developers_Choice_Awards",
+      "src2": "https://en.wikipedia.org/wiki/Yoko_Shimomura",
+      "from": "new"
+     },
+     {
+      "f": "她 2025 年 4 月 8 日在第 21 屆 BAFTA 遊戲獎（British Academy Games Awards）獲頒 BAFTA Fellowship。",
+      "src": "https://en.wikipedia.org/wiki/21st_British_Academy_Games_Awards",
+      "src2": "https://ja.wikipedia.org/wiki/下村陽子",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她 1988 至 1993 年在 Capcom，1993 年轉到 Square，一直待到 2002 年。",
+      "src": "https://ja.wikipedia.org/wiki/下村陽子",
+      "src2": "https://en.wikipedia.org/wiki/Yoko_Shimomura",
+      "from": "new"
+     },
+     {
+      "f": "她 2002 年起為《Kingdom Hearts》系列配樂。",
+      "src": "https://en.wikipedia.org/wiki/Yoko_Shimomura",
+      "src2": "https://ja.wikipedia.org/wiki/下村陽子",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2024 年獲遊戲開發者選擇獎終身成就獎。",
+    "src": "https://en.wikipedia.org/wiki/24th_Game_Developers_Choice_Awards",
+    "from": "new"
+   },
+   {
+    "f": "2025 年獲 BAFTA Fellowship。",
+    "src": "https://en.wikipedia.org/wiki/21st_British_Academy_Games_Awards",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "學琴年紀：ja 維基寫 4 歲、en 維基寫 4 或 5 歲，不寫歲數。離開 Square 與自由接案：ja 維基寫 2002 年起自由接案，en 維基寫 2002 年離開 Square 產假、2003 年轉自由接案，兩源不一致，只寫『Square 待到 2002 年』。",
+   "上線簡介（《LIVE A LIVE》《Legend of Mana》《Kingdom Hearts》）寫的是盤面與軌表，與生平事實無衝突。"
+  ],
+  "searches": 5,
+  "status": "full",
+  "notes": "本位用 5 次（ja 維基、en 維基、WebSearch、en 維基第 21 屆 BAFTA 遊戲獎、en 維基第 24 屆 GDCA），失敗請求 2 次（Anime News Network 403、GamesHub 403）→ failedFetches 2。poolAlbums（LIVE A LIVE、Legend of Mana、Kingdom Hearts）皆為本人，無同名混卡。非獨立：en 維基三個條目同站；ja 維基與 en 維基同站不同語言版。⚠ 事實庫沒有生平，origin 與 legacy 皆為從零補。名字照原文漢字。BAFTA 一條：第二源 ja 維基只列『2025 年 BAFTA Fellowship』，ceremony 日期與屆次來自 en 維基第 21 屆條目。未收：BAFTA 執行長 Jane Millichip 稱她『a pioneer in video game music』『paved the way for women in the industry』（en 維基單源，是 BAFTA 官方具名評語，寫作層若要用請另查 BAFTA 官網）；『首位獲 BAFTA Fellowship 的遊戲作曲家』（搜尋摘要有，兩個新聞頁都 403 未讀到，且屬『首位』類宣稱，en 維基第 21 屆條目並未寫）；2019 年 Fun & Serious Game Festival 先驅獎（ja 維基單源）；進 Capcom 時家人反對、因『遊戲音樂不受重視』（en 維基單源）；《Street Fighter II》她寫了除三首外所有曲目（en 維基單源）；曲風橫跨搖滾、電子、東方、環境、工業等（en 維基單源）；說她受《勇者鬥惡龍 III》曲子感動、欣賞近藤浩治（ja 維基單源）；《Kingdom Hearts》銷量與『系列共 11 款全由她配樂』（en 維基單源，且屬在世者銷量）；皇家斯德哥爾摩愛樂、倫敦愛樂演奏她的作品（en 維基單源）。後輩點名受其影響：兩個來源都沒有。",
+  "failedFetches": 2,
+  "pubIssues": []
  }
 ]
