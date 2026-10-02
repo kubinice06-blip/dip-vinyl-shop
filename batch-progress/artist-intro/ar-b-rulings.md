@@ -311,3 +311,12 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 028 g2 交件。Blood Orange 搜尋 10 次、Bone Thugs-n-Harmony 與 Ciara 各 9 次超限（超出部分已撤或未取用）。全 full。Blood Orange 父母族裔與《Freetown Sound》命名由來單源不寫；Ciara〈Lose Control〉MV 得獎主詞為 Missy Elliott，只能寫「她客串的 MV」；Brent Faiyaz〈Crew〉入圍屆次不寫。pubIssues 2（Blood Orange《Essex Honey》漏 2019《Angel's Pulse》；Chief Keef《Back From the Dead》mixtape 序數兩源不一）→ 本機待核。
 - 027 w2 審稿（2 處）：MC HotDog 刪「台灣第一位地下饒舌歌手」（首次宣稱，兩源一為部落格）；Salt-N-Pepa「入選 2025 年搖滾名人堂」改「以音樂影響獎入選」（經主線 WebSearch 核實：Rolling Stone、CBS、rockhall.com）。Slick Rick〈La Di Da Di〉2024 年列入國家錄音登記經主線核實（Hypebot、Deadline）。MC Lyte「第一位發行完整個人專輯的女饒舌歌手」以「搖滾名人堂稱」具名，照准。
 - **ar-b-027 上線**：40 位，reviewFixes 2。
+- 028 g4 交件（QA 本組 0，四組齊）。thin：Faith Evans、Freddie Gibbs、Immortal Technique。G-DRAGON 文化勳章「首位偶像」單源、「史上最年輕」屬最高級，皆不寫。Ice-T 1992 葛萊美屬 Quincy Jones 專輯，不收。pubIssues 0。w1、w2 派出。
+
+### ar-b-029
+- g1 交件（QA 本組 0）。thin：Jurassic 5、Kehlani、Kelela、Keyshia Cole。**同名混卡：Kano**——卡池《Kano》（1980）是米蘭 disco 計畫，另兩張才是倫敦 grime 的 Kano；介紹只寫英國這位，1980 那張待本機拆成獨立藝人名（記入待辦）。Jurassic 5 成軍年三說不寫；KRS-One 出生與離家細節單源不寫。Kehlani 正文不用性別代名詞。pubIssues 0。
+- 029 g3 交件。thin：Mýa（貢獻 none；失敗請求 5 次超限）、Mystikal、Nice & Smooth（貢獻、地位 none）、PARTYNEXTDOOR（貢獻 none；搜尋 9 次超限，超出部分已撤）。Nujabes 只寫「瀬葉淳（Seba Jun）」，本名不寫。N.W.A《Straight Outta Compton》採 1988。Mystikal、Nelly 生年不寫。Naughty by Nature 只寫得獎，不寫「首屆」。pubIssues 0。
+- 029 g2 交件（QA 本組 0）。thin：Lil Baby、Lil Uzi Vert、Lloyd、Moor Mother。Lil Uzi Vert 正文不用性別代名詞。Megan Thee Stallion 葛萊美只寫官方頁核對過的兩項；Lil' Kim〈Lady Marmalade〉採第 44 屆（2002）。MF DOOM 相關年份不一，只寫事件。單源未收：Yeat 評 Uzi、Lil Baby TIME 名單。pubIssues 0。w1（g1+g2）派出。
+- 028 w1 審稿（2 處）：Bone Thugs-n-Harmony 刪「最偉大的饒舌團體之一」（在世成員的最高級評價，第二源未見支持），也刪「十年後在 Drake 一代身上顯現」（無來源的影響延伸）。A$AP Rocky 2025 年 CFDA Fashion Icon 與 Thom Browne 引語經主線 WebSearch 核實（cfda.com、Ebony）。Backxwash「第一位獲 Polaris 的跨性別藝人」屬廣泛報導，照准。
+- 028 w2 審稿無修正。G-DRAGON 2025-10-23 第 16 屆大眾文化藝術獎玉冠文化勳章經主線 WebSearch 核實（亞洲經濟、Star News）；「最年輕」不寫。Clipse 放寬至 264 照准。Heavy D & The Boyz「Uptown 第一組簽約藝人」、Faith Evans「Bad Boy 第一位女歌手」各有兩源，照准。
+- **ar-b-028 上線**：40 位，reviewFixes 2。
