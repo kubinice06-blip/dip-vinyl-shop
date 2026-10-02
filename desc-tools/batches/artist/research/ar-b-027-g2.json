@@ -641,5 +641,230 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "池內 4 張專輯（2005–2026，含 Arular、Kala、AIM、M.I.7）皆 M.I.A.（斯里蘭卡泰米爾裔英國藝人）本人，無同名混卡。事實庫 research/published 皆空，從零查。搜尋 8 次：維基 M.I.A.、WebSearch×2（皆僅看摘要，未入 facts，其中第二次只用於找 TIME 頁面）、Parse Journal、Cultursmag、維基〈Paper Planes〉、TIME 2009 頁面、維基〈O... Saya〉。失敗請求 2 次未計：Britannica 404、TIME collection 頁（只回導覽，無內容）。非獨立：維基 M.I.A.、〈O... Saya〉為同站不同條目；Parse Journal 為學術文章；Cultursmag 為媒體專文。政治立場只收中性事實；M.I.A. 在世，銷量、串流、榜單名次、獎座數不寫。單源放 notes：(1) 維基 M.I.A.——2019 年獲頒 MBE；2006 年一度被列入美國國土安全部風險名單、ACLU 批評為『意識形態排除』；首次公開展覽 2001 年於 Portobello Road，展出泰米爾政治街頭藝術；影響來源含 Missy Elliott、泰米爾電影音樂、Public Enemy、The Clash、The Slits；標誌性的呼喊、吟誦式人聲；2007 年《Kala》；維基稱她是第一位同年獲奧斯卡與葛萊美提名的南亞裔人士——該句未在〈O... Saya〉頁找到（該頁未寫此宣稱），屬『第一位』類宣稱且單源，不入 facts；(2) 維基〈Paper Planes〉——歌曲取樣 The Clash 〈Straight to Hell〉，故 Clash 四位成員皆列為共同創作；由 M.I.A.、Diplo 與 DJ Switch 在倫敦製作；靈感來自申請美國工作簽證的挫折；The Clash 取樣；Rihanna、Dizzee Rascal 等翻唱或現場演出；T.I.、Jay-Z、Kanye West、Lil Wayne 在〈Swagga Like Us〉取樣其中一句；《Pineapple Express》預告與《貧民百萬富翁》使用；NPR 2018 年榜單（媒體榜單，不收）；(3) Parse Journal——《Piracy Funds Terrorism》（2004）混音帶，母親曾為王室縫紉，雙親相識經過等（單源）；以 DIY『污染與拼貼』文化形容她的手法（學術觀點）。 補：(4) Cultursmag——首張專輯《Arular》以父親之名命名（單源）；Parse——父親留在斯里蘭卡繼續抗爭、家人在英國獲庇護（單源，未入 facts）。"
+ },
+ {
+  "key": "m.o.p.",
+  "name": "M.O.P.",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "M.O.P. 是紐約布魯克林 Brownsville 的饒舌二人組，成員是 Billy Danze 與 Lil' Fame，兩人從小就在 Brownsville 一起長大。",
+      "src": "https://en.wikipedia.org/wiki/M.O.P.",
+      "src2": "https://www.revolt.tv/article/2023-11-06/335887/m-o-p-reveals-their-picks-for-greatest-rappers-of-all-time",
+      "from": "new"
+     },
+     {
+      "f": "團名 M.O.P. 是 Mash Out Posse 的縮寫，取自他們早年在 Brownsville 的街頭團夥名稱。",
+      "src": "https://en.wikipedia.org/wiki/M.O.P.",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/mop",
+      "from": "new"
+     },
+     {
+      "f": "他們是 Gang Starr Foundation 的一員，與 Gang Starr 的製作人 DJ Premier 長期合作。",
+      "src": "https://en.wikipedia.org/wiki/M.O.P.",
+      "src2": "https://www.revolt.tv/article/2023-11-06/335887/m-o-p-reveals-their-picks-for-greatest-rappers-of-all-time",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "M.O.P. 屬於東岸硬派（hardcore）嘻哈，以嘶吼、火力全開的唸法聞名；英國雜誌《Muzik》曾形容他們的聲音是『咆哮般的兇悍』。",
+      "src": "https://en.wikipedia.org/wiki/M.O.P.",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/mop",
+      "from": "new"
+     },
+     {
+      "f": "Lil' Fame 也以 Fizzy Womack 的名字擔任製作人，自《Firing Squad》（1996）起參與團的作品；《Warriorz》（2000）的製作人名單裡也有他。",
+      "src": "https://en.wikipedia.org/wiki/M.O.P.",
+      "src2": "https://en.wikipedia.org/wiki/Warriorz",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Ante Up〉是他們最廣為人知的歌，之後被大量用於電影、電視與電玩，包括《Midnight Club》系列與《Brooklyn Nine-Nine》。",
+      "src": "https://en.wikipedia.org/wiki/M.O.P.",
+      "src2": "https://en.wikipedia.org/wiki/Warriorz",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "出生年：維基寫 Billy Danze 生於 1974 年、Lil' Fame 生於 1976 年；Encyclopedia.com 寫兩人皆生於 1976 年。兩源不一致，facts 不寫生年。",
+   "出道單曲：Encyclopedia.com 寫〈How About Some Hardcore?〉收於 1994 年電影《House Party 3》原聲帶；搜尋摘要寫 1993 年發行該單曲、1994 年春出專輯《To the Death》。年份不一致，facts 不寫單曲年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "池內 4 張專輯（1994–2000：To the Death、Firing Squad、First Family 4 Life、Warriorz）皆 M.O.P.（布魯克林）本團，無同名混卡。事實庫 research/published 皆空，從零查。搜尋 8 次：維基 M.O.P.×2（不同提問）、WebSearch×2（皆僅看摘要，未入 facts）、Encyclopedia.com、Hip Hop Museum（Billy Danze 訪談）、維基 Warriorz、Revolt。失敗請求 2 次未計：Britannica 404、維基〈Ante Up〉條目 404（條目名猜錯）。非獨立：維基 M.O.P. 與維基 Warriorz 為同站不同條目。legacy 格缺權威共識評價（名人堂、後輩點名、國家級榮譽），僅有〈Ante Up〉被廣泛使用的現象，整位標 thin。單源放 notes：(1) Encyclopedia.com——Lil' Fame 16 歲被製作人 Laze E Laze 發掘；Danze 1993 年出獄後兩人重新合作（涉刑案細節，不收）；DJ Premier 聽到他們後決定合作並擔任《Firing Squad》執行製作人，並對《The Source》說『你聽得出他們的痛苦與憤怒是真的』（具名引述、單源）；他們曾因合作曲未列名而不滿；(2) Hip Hop Museum——Danze 自述聲音的核心是『做自己，不靠噱頭』，與 DJ Premier 的合作是『我這輩子最輕鬆的關係』；(3) Revolt——Danze 說他們的唱片『幾乎是為了現場表演而設計』；兩人皆以 30 年生涯為傲；(4) 維基 Warriorz——DJ Premier 為執行製作人與混音，製作含 Fizzy Womack、DR Period、Nottz；〈Ante Up〉混音邀 Busta Rhymes、Remy Ma 與 Teflon；〈Ante Up〉另被用於《You Got Served》《Brown Sugar》《War on Everyone》《The Last Castle》，電視有《The Mindy Project》；該專輯為 Loud Records 2002 年倒閉前的最後一張大廠相關作品（單源）；各媒體評分與 Spin 等雜誌評級不收；(5) 維基 M.O.P.——〈Ante Up〉另用於《Bad Boys II》《Training Day》《NFL Street 2》；〈Cold as Ice〉被用於英國牙膏廣告；(6) 搜尋摘要稱『hardcore energy 的黃金標準』（來源為搜尋整合文字，未開頁，不收）。榜單名次、銷量、認證一律不寫。"
+ },
+ {
+  "key": "masta ace",
+  "name": "Masta Ace",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Masta Ace 本名 Duval Clear，生於紐約布魯克林。",
+      "src": "https://en.wikipedia.org/wiki/Masta_Ace",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/ace-masta",
+      "from": "new"
+     },
+     {
+      "f": "他 1988 年從 University of Rhode Island 畢業，拿到學士學位。",
+      "src": "https://en.wikipedia.org/wiki/Masta_Ace",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/ace-masta",
+      "from": "new"
+     },
+     {
+      "f": "他 1987 年與製作人 Marley Marl 搭上線，1988 年在 Marley Marl 專輯《In Control》的群麥曲〈The Symphony〉上與 Kool G Rap、Craig G、Big Daddy Kane 同場，也因此成為 Juice Crew 的一員。",
+      "src": "https://en.wikipedia.org/wiki/Masta_Ace",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/ace-masta",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以概念專輯見長：《Disposable Arts》（2001）把故事放在虛構的 Institute of Disposable Arts，主角出獄後入學該校。",
+      "src": "https://en.wikipedia.org/wiki/Disposable_Arts",
+      "src2": "https://albumism.com/features/masta-ace-disposable-arts-turns-20-anniversary-retrospective",
+      "from": "new"
+     },
+     {
+      "f": "《A Long Hot Summer》（2004）是《Disposable Arts》故事的前傳。",
+      "src": "https://en.wikipedia.org/wiki/Masta_Ace",
+      "src2": "https://albumism.com/features/masta-ace-a-long-hot-summer-album-anniversary",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的作品被用於 HBO 影集《The Wire》，〈Unfriendly Game〉收進該劇配樂。",
+      "src": "https://en.wikipedia.org/wiki/Disposable_Arts",
+      "src2": "https://albumism.com/features/masta-ace-a-long-hot-summer-album-anniversary",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "成長區域：Encyclopedia.com 寫在 Brownsville 的公共住宅長大、由單親母親帶大；維基抓取的段落只寫 Brooklyn（搜尋摘要寫 Brownsville 來自維基開頭但未實際讀到原句）。facts 只寫『布魯克林』，Brownsville 放 notes。",
+   "《A Long Hot Summer》前傳說法：維基抓取摘要寫為《Disposable Arts》敘事前傳，Albumism 同；一致。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "thin",
+  "notes": "池內 4 張專輯（1990 Take a Look Around、2001 Disposable Arts、2004 A Long Hot Summer、2012 MA_DOOM: Son of Yvonne）皆 Masta Ace 本人（布魯克林），無同名混卡。事實庫 research/published 皆空，從零查。搜尋 8 次：維基 Masta Ace、WebSearch×2（皆僅看摘要，未入 facts）、Encyclopedia.com、Albumism（Disposable Arts）、Albumism（A Long Hot Summer）、維基 Take a Look Around、維基 Disposable Arts。失敗請求 1 次未計：SLAM 403。非獨立：維基 Masta Ace 與維基 Disposable Arts 為同站不同條目；兩篇 Albumism 為同站。『The Symphony』說法兩源一致（維基、Encyclopedia.com），但 Encyclopedia.com 說他因 1987 年說唱比賽首獎得到與 Marley Marl 的錄音時間，維基說 1987 年暑假認識 Marley Marl，兩者互補不衝突。legacy 格缺權威共識評價與有兩源的後輩點名，故整位標 thin。單源放 notes：(1) 維基 Masta Ace——生於 1966 年 12 月 4 日；Eminem 在書《The Way I Am》寫『Masta Ace had amazing storytelling skills – his thoughts were so vivid』（搜尋摘要亦轉述，未開第二頁，建議寫作層若用請標『Eminem 在書中稱』）；Peter Shapiro 稱他『one of the great pure New York MCs』（具名評論，單源）；1993 年《SlaughtaHouse》（Masta Ace Incorporated）批評偽造的幫派饒舌；1995 年《Sittin' on Chrome》；2008 年與 Punchline、Wordsworth、Strick 組 eMC 發行《The Show》；2012 年《MA_DOOM: Son of Yvonne》由 MF DOOM 全程製作，主題是對已故母親的未說出口的話；2000 年確診多發性硬化症、2013 年公開（個人健康，不收入 facts）；(2) Encyclopedia.com——在 Brownsville 公共住宅長大、單親母親；1978–1979 年左右加入 DJ 團體並開始寫詞；1987 年說唱比賽首獎；自稱『Brooklyn bass music』、結合西岸製作與東岸感性；強調為嘻哈提供『平衡』；(3) Albumism（Disposable Arts）——《Take A Look Around》到《Sittin' On Chrome》每張都是概念專輯；原本當作最後一張，卻『讓他的生涯延長 20 年，成為之後所有作品的模板』；他先錄了七八首歌才定出概念；製作含 Ayatollah、Domingo、DJ Paul Nice 等；(4) Albumism（A Long Hot Summer）——稱他『brilliance and career longevity』，作品常被比作連續劇；受 Prince Paul《Politics of the Business》（2003）啟發要為故事配上相稱的配樂；9th Wonder、Marco Polo 等製作；稱本作為『one of the revered rapper's best records』（媒體專文）；(5) 維基 Disposable Arts——JCOR 在發行後一個月倒閉而傷了銷量；〈Take a Walk〉用於電玩 Saints Row；(6) 維基 Take a Look Around——1989 年首支單曲〈Together〉；1990 年首張專輯《Take a Look Around》由 Cold Chillin' 發行，製作人 Marley Marl 與 Mister Cee（媒體評分不收）；(7) 搜尋摘要——『Juice Crew 的道德中心』『概念專輯如連續劇』為媒體形容，未開頁，不收。在世者銷量、榜單不寫。 補：(8) Albumism（A Long Hot Summer）與搜尋摘要——《A Long Hot Summer》主角是想在樂壇出頭的新人，與名為 Fats Belvedere 的人物糾纏、最後入獄（單源，未入 facts）。"
+ },
+ {
+  "key": "master p",
+  "name": "Master P",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Master P 本名 Percy Miller，1970 年 4 月 29 日生於紐奧良，在 Calliope 公共住宅區（第三區）長大。",
+      "src": "https://en.wikipedia.org/wiki/Master_P",
+      "src2": "https://hiphophighsociety.com/2026/04/30/hip-hop-history-master-p-the-general-who-built-an-empire-from-the-bottom-up/",
+      "from": "new"
+     },
+     {
+      "f": "他拿過休士頓大學的籃球獎學金，兩年後因腿傷離隊。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/master-p",
+      "src2": "https://dirtycoast.com/blogs/the-dirt2/master-p-calliope-projects-250-million-empire",
+      "from": "new"
+     },
+     {
+      "f": "祖父過世後，他家人拿到一筆約 1 萬美元的醫療疏失和解金，他用這筆錢搬到加州 Richmond，開了一家叫 No Limit 的唱片行，成為 No Limit Records 的起點。",
+      "src": "https://en.wikipedia.org/wiki/Master_P",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/master-p",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "No Limit 有自家的製作班底 Beats By the Pound（含 KLC），〈Make 'Em Say Uhh!〉即由 KLC 製作，全曲圍繞一句朗朗上口的 ad-lib。",
+      "src": "https://en.wikipedia.org/wiki/No_Limit_Records",
+      "src2": "https://en.wikipedia.org/wiki/Make_%27Em_Say_Uhh!",
+      "from": "new"
+     },
+     {
+      "f": "No Limit 的作法是多張專輯密集推出、專輯偏長、常讓廠牌藝人一起上陣，並以金色坦克作為視覺標誌。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/master-p",
+      "src2": "https://hiphophighsociety.com/2026/04/30/hip-hop-history-master-p-the-general-who-built-an-empire-from-the-bottom-up/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他與 Priority Records 談成發行合約，No Limit 保有母帶所有權與財務、創意的控制權，在當時的饒舌圈相當罕見。",
+      "src": "https://en.wikipedia.org/wiki/Master_P",
+      "src2": "https://hiphophighsociety.com/2026/04/30/hip-hop-history-master-p-the-general-who-built-an-empire-from-the-bottom-up/",
+      "from": "new"
+     },
+     {
+      "f": "他被視為把「自己擁有事業」做成範本的饒舌手，影響後來的饒舌手把事業拓展到音樂之外。",
+      "src": "https://en.wikipedia.org/wiki/Master_P",
+      "src2": "https://dirtycoast.com/blogs/the-dirt2/master-p-calliope-projects-250-million-empire",
+      "from": "new"
+     },
+     {
+      "f": "No Limit 後來遷到路易斯安那州的 Baton Rouge，與 Cash Money 一起把紐奧良與南方饒舌推上全國舞台，挑戰紐約與洛杉磯長期主導的格局。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/master-p",
+      "src2": "https://dirtycoast.com/blogs/the-dirt2/master-p-calliope-projects-250-million-empire",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "唱片行與廠牌創立年份：Encyclopedia.com 寫 1990 年開唱片行、1992 年成立廠牌；維基 Master P 與 Hip Hop High Society 寫 1991 年；No Limit Records 維基寫 Richmond 時期 1991–1996。多源不一致，facts 不寫年份。",
+   "No Limit 遷址年份：No Limit Records 維基寫 Richmond（1991–1996）、紐奧良（1995–1997）、Baton Rouge（1997–2003）；Encyclopedia.com 寫『1990 年代後期遷至 Baton Rouge』。facts 只寫『後來』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "池內 4 張專輯（1994–1998：The Ghettos Tryin to Kill Me!、Ice Cream Man、Ghetto D、MP Da Last Don）皆 Master P（Percy Miller，新奧爾良／No Limit）本人，無同名混卡。事實庫 research/published 皆空，從零查。搜尋 8 次：維基 Master P、WebSearch×2（皆僅看摘要，未入 facts）、Encyclopedia.com、維基 No Limit Records、Dirty Coast、維基〈Make 'Em Say Uhh!〉、Music Business Worldwide、Hip Hop High Society。失敗請求 1 次未計：Forbes 403。非獨立：維基 Master P、維基 No Limit Records、維基〈Make 'Em Say Uhh!〉同站不同條目；Dirty Coast 與 Hip Hop High Society 皆為部落格式專文，觀點成分高，兩者內容與搜尋摘要高度重疊（疑似互相參考），legacy 格列為薄弱。單源放 notes：(1) Encyclopedia.com——父母在他約 3 歲時分居，母親搬到 Richmond、他與祖母及其他 11 名孩子留在紐奧良；1995 年與 Priority 簽發行合約；自家人與兒時友人入公司，強調『給顧客更多』（長專輯與合輯）；兄弟 Silkk the Shocker 與 C-Murder 組 TRU；簽下 Mystikal、Mia X；自編自導自演半自傳電影《I'm 'Bout It》（1997）以錄影帶發行；(2) Dirty Coast（及搜尋摘要轉述）——他影響 Jay-Z、Diddy、50 Cent 等人的創業模式（具名點名，來源皆為部落格式文章，不收入 facts；原文：不將母帶簽給大廠、低成本製作、獨立發行）；多角化經營含服飾、不動產、運動經紀與電影；(3) MBW——他婉拒 Jimmy Iovine 開出的 100 萬美元，選擇後車廂賣 CD；85/15 的發行分成對 No Limit 有利（維基 Master P 亦寫 85% 營收）；現於 Cinq Music 應用同樣模式；(4) 維基 Master P——1998 至 1999 年嘗試職籃（Fort Wayne Fury、Hornets、Raptors）未入 NBA；2025 年 7 月宣布退出樂壇、轉任 University of New Orleans 籃球營運總裁（在世者近況，單源）；(5) 維基 No Limit Records——1998 年一年發行 23 張專輯；2003 年 12 月 17 日申請破產（廠牌，非個人）；(6) 維基〈Make 'Em Say Uhh!〉——取樣 Sugarhill Gang〈Apache〉；錄影帶金色坦克與 Shaquille O'Neal 現身。在世者銷量、認證、身價、榜單一律不寫。"
  }
 ]
