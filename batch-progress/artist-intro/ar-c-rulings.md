@@ -26,3 +26,6 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - g1 交件（QA 本組 0）。thin：John Lee & Gerry Brown。Jean-Luc Ponty 失敗請求 5 次超限，照收。衝突值不寫：João Gilberto 葛萊美座數、Johnny Dyani 生卒日、Johnny Hartman《麥迪遜之橋》收錄首數、Joe Williams 葛萊美年與專輯。稲垣次郎、ソウル・メディア 有兩源，可寫原文。pubIssues 0。
 - g2 交件（QA 本組 0）。thin：Kamaal Williams（失敗請求 5 次超限；出生地與母親背景單源不寫）、Kunihiko Sugano（貢獻、地位 none；生日兩說不寫）。King Oliver 生年與出生地不寫；Juju 遷居年單源只寫次序；Leo Parker 改寫「開路者之一」。pubIssues 1（Leo Parker《Let Me Tell You 'Bout It》「前六首」有管樂，摘要稱七首都有）→ 本機待核。w1（g1+g2）派出。
 - g3 交件（QA 本組 0）。thin：Louis Smith、Madeleine Peyroux（地位 none）。Mammal Hands 與 Mary Halvorson 的 MacArthur 說明屬單一來源，須具名；Mark Murphy 的 Kurt Elling 評語須具名。待核（非錯誤）：Louis Smith《Here Comes Louis Smith》〈Tribute to Brownie〉作者未能兩源驗證 → 本機待核。
+
+### ar-c-004
+- g1 交件（QA 本組 0）。thin：Patty Waters（失敗請求 5 次超限）、Phil Ranelin、Portico Quartet。Paul Bley Trio 兩張是不同編制；Pharoah Sanders Quartet《The Creator Has a Master Plan》是 2003 年東京現場；Paul Motian Quintet 與 Paul Motian 共用生平。《Vibes from the Tribe》年份不寫；Portico Quartet 賣藝地點只寫泰晤士河南岸。Pepper Adams 地位兩源同出傳記，須具名「傳記作者稱」。pubIssues 0。
