@@ -226,5 +226,165 @@
   "failedFetches": 3,
   "status": "full",
   "notes": "事實庫 research 一條（Ralph Records 成立，已被上線簡介採用）、published 兩張（Meet the Residents、Third Reich 'n Roll）；上線簡介與本層 facts 無衝突。同名檢查：卡池四張（Eskimo、Not Available、Meet the Residents、The Third Reich 'n Roll）皆為舊金山這團，無混卡。搜尋：維基主條 API（1）、WebSearch（2）、WBUR 2016 專文（3）、Red Bull Music Academy 導覽（4）、Truthdig 2023 專文（5、6，同頁為取不同段落重取一次）、Piedmont Exedra 2022 專文（7、8，同頁重取一次）。失敗請求 3 次：Taylor & Francis 期刊導言 403、Groupon 文章 403、Frieze 文章 403。\n⚠ 兩源註記：RBMA 導覽以《Theory of Obscurity》紀錄片為底，WBUR 以同片與 Hardy Fox 訪談為底，但為不同媒體獨立撰文；Truthdig 一文語氣誇飾（稱沒有他們就沒有 MTV、The Simpsons 等），其誇飾推論一律不收，只取事實層。\n以下單源未入 facts：(1) Truthdig 稱 Primus、Ween、Talking Heads、DEVO 成員都承認受他們影響，並稱 Matt Groening 1978 年是首個粉絲會的創始會員、Penn Jillette 曾與他們合作（單源；維基只寫 Les Claypool 與 Gerald Casale 被傳是團員）；(2) Truthdig 稱紐約 MoMA 把《One Minute Movies》與《Third Reich 'n Roll》短片收進永久典藏並稱是最早的真正音樂錄影帶（單源、『最早』類宣稱，未收）；(3) Truthdig 稱第一個有意為之的 mashup 出現在《Third Reich 'n Roll》、1980 年買下第五台 E-mu Emulator、最早用電腦設計封面、最早的全電腦動畫音樂錄影帶（單源、『最早』類宣稱，未收）；(4) 維基稱《Eskimo》入圍 1980 年葛萊美最終提名名單但未獲提名，寫作層不要寫成入圍；(5) 維基稱 2017 年 Hardy Fox 公開承認是共同創辦人與主要作曲，2018 年過世——生卒涉及年份兩源要求，且團隊刻意匿名，不收；(6) 樂迷圈對成員身分的種種傳聞不收；(7) 維基稱被形容為 punk rock、art rock 與 techno 的先驅（單源）。\nsrc2 說明：Exedra 一條 Sycamore St. 住址寫成 18-20，維基寫 20，f 欄只寫街名；Exedra 與維基都是 1972。『1969 年前後』：維基寫 1969 年 Fox 搬到 San Mateo，Truthdig 寫約 1966–1969 年間朋友圈遷出路易斯安那、四人在 San Mateo 落腳，兩者時間點略有出入，f 欄用『1960 年代後半…1969 年前後』的寬寫法。"
+ },
+ {
+  "key": "thievery corporation",
+  "name": "Thievery Corporation",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Rob Garza 與 Eric Hilton 1995 年在美國華盛頓特區的 Eighteenth Street Lounge 認識並組成二人組；Hilton 是這間夜店的共同創辦人。",
+      "src": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "src2": "https://www.metroweekly.com/2011/08/to-catch-a-thievery/",
+      "from": "new"
+     },
+     {
+      "f": "Garza 1980 年代在華盛頓特區的硬核龐克場景打滾，高中時期在康乃狄克州就已接觸電子音樂；一張 Antonio Carlos Jobim 的唱片替他打開通往爵士與電子樂的門。",
+      "src": "https://www.aspentimes.com/news/thievery-corporation-an-inter-and-outer-national-sensation/",
+      "src2": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "from": "new"
+     },
+     {
+      "f": "兩人當年的共同愛好是 1960 年代的 bossa nova 與巴西音樂，也愛 dub、reggae 與爵士唱片，最初想做的是電子舞曲。",
+      "src": "https://ra.co/news/12752",
+      "src2": "https://www.aspentimes.com/news/thievery-corporation-an-inter-and-outer-national-sensation/",
+      "from": "new"
+     },
+     {
+      "f": "團名取自他們採樣與借用各種音樂的做法，用意是承認「所有音樂都是借來的」；團名中的 Thievery 因此而來。",
+      "src": "https://www.metroweekly.com/2011/08/to-catch-a-thievery/",
+      "src2": "https://www.oursociallandscape.com/post/rob-garza-world-music-and-the-state-of-the-union",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把 dub reggae、bossa nova、爵士、Afrobeat、印度與中東音樂等世界音樂元素混進電子樂，1996 年成立自家廠牌 Eighteenth Street Lounge Music，隔年推出首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "src2": "https://www.metroweekly.com/2011/08/to-catch-a-thievery/",
+      "from": "new"
+     },
+     {
+      "f": "合作人聲來自多個國家，歌詞語言涵蓋英文、西班牙文、法文、義大利文、波斯文、葡萄牙文、羅馬尼亞文與印地文；Garza 說華盛頓特區是很國際化的城市，常碰到來自各國的歌手，合作是自然發生的。",
+      "src": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "src2": "https://www.aspentimes.com/news/thievery-corporation-an-inter-and-outer-national-sensation/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Metro Weekly 稱他們很快成為實驗性 downtempo（chillout）音樂的潮流領頭者；Resident Advisor 稱他們是廣為人知、最成功的 downtempo 團體之一。",
+      "src": "https://www.metroweekly.com/2011/08/to-catch-a-thievery/",
+      "src2": "https://ra.co/news/12752",
+      "from": "new"
+     },
+     {
+      "f": "維基寫道，downtempo 與 lounge 風電子樂在 1990 年代後期更廣為流行，Thievery Corporation 是其中的代表藝人之一；團員自己則不同意把音樂完全歸為 chill-out，並自創「outer-national」一詞形容自己的全球取向。",
+      "src": "https://en.wikipedia.org/wiki/Thievery_Corporation",
+      "src2": "https://www.aspentimes.com/news/thievery-corporation-an-inter-and-outer-national-sensation/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫 research 為空，published 一張（Sounds From the Thievery Hi-Fi）。上線簡介寫『1995 年夏天在 Eighteenth Street Lounge 相識，隔年開了同名廠牌』，維基寫 1996 年起了 Eighteenth Street Lounge Music 廠牌，兩者一致。pubIssues：上線簡介寫『隔年開了同名廠牌並推出首張長篇』——廠牌名是 Eighteenth Street Lounge Music（以夜店命名），不是以團名命名；『同名』指與夜店同名，無誤。維基寫首張專輯 1996 年，Aspen Times 與維基 Influences 節寫 1997 年（台灣、美國版本發行年不同）；上線簡介未寫年份，f 欄也不寫專輯年份，卡池放 1996。同名檢查：卡池四張（The Mirror Conspiracy、Symphonik、Saudade、Sounds From the Thievery Hi-Fi）皆為華盛頓特區這個二人組，無混卡。\n搜尋：維基 API（1）、WebSearch（2）、Metro Weekly 2011（3）、Resident Advisor 2010 新聞（4）、Aspen Times（5）、Our Social Landscape 訪談頁（6）。失敗請求 0。第二源皆為實際開頁。『非獨立』註記：Metro Weekly 與 RA 的相關句有可能轉述新聞稿（RA 文為新聞稿式寫法），兩者視為弱獨立；legacy 第一條建議寫寫作層以『被稱為』方式處理、不寫成事實判定。\n單源未入 facts：(1) 維基稱 Radio Retaliation 的包裝入圍葛萊美最佳唱片包裝（Best Recording Package，入圍非得獎；Metro Weekly 只寫『Grammy nomination』未指類別與屆次，故未收，寫作層若要寫須另證）；(2) Aspen Times 稱 Garza 母親為墨西哥人；(3) Aspen Times 稱首張專輯有 Bebel Gilberto 獻聲（上線簡介已寫）；(4) Aspen Times 稱 2011 年版 Culture of Fear 屬較輕鬆路線；(5) Metro Weekly 稱 Hilton 後來成為 U Street 夜生活場館的合夥人；(6) 維基稱 2009 年為 Paul McCartney 開場、2005 年參與 Operation Ceasefire 演唱會（政治立場類，不收）。\nMetro Weekly 寫 Hilton 是 Rockville 本地人（單源，未收）。"
+ },
+ {
+  "key": "tricky",
+  "name": "Tricky",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tricky 本名 Adrian Thaws，在英國布里斯托南部經濟困頓的 Knowle West 區長大，出身混血家庭。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "from": "new"
+     },
+     {
+      "f": "他 1980 年代中期混進布里斯托的 Wild Bunch 音響班底、當 MC，這個班底後來演變成 Massive Attack；他在 Massive Attack 首張專輯《Blue Lines》（1991）裡饒舌，1995 年離團單飛。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的作品以陰暗、層疊的風格見稱，混合 hip-hop、另類搖滾與 ragga；《Maxinquaye》用 dub 的製作手法與大幅改造的取樣，做出以節奏為底、朦朧而破碎的下拍聲響。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://en.wikipedia.org/wiki/Maxinquaye",
+      "from": "new"
+     },
+     {
+      "f": "《Maxinquaye》中 Martina Topley-Bird 的人聲出現在除兩首之外的所有曲目，她氣音式的聲線與 Tricky 低語式的饒舌互為對照，成為這張專輯情緒的主要來源。",
+      "src": "https://en.wikipedia.org/wiki/Maxinquaye",
+      "src2": "https://epigram.org.uk/martina-topley-bird-the-unsung-hero-of-tricky-success/",
+      "from": "new"
+     },
+     {
+      "f": "Tricky 當年與至今都拒絕 trip hop 這個標籤（這個詞出自英國舞曲雜誌 Mixmag，許多藝人不認同）。",
+      "src": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "src2": "https://www.britannica.com/topic/trip-hop",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱他是 trip hop 的先驅；Dazed 稱他儘管拒絕這個標籤，仍被尊為其主要建築師之一。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "from": "new"
+     },
+     {
+      "f": "1990 年代中期布里斯托的地下場景孕育出 trip hop，Tricky 是其中的重要人物；Britannica 稱他 1995 年的《Maxinquaye》是「偏執氛圍的傑作」。",
+      "src": "https://en.wikipedia.org/wiki/Tricky_(musician)",
+      "src2": "https://www.britannica.com/topic/trip-hop",
+      "from": "new"
+     },
+     {
+      "f": "《Maxinquaye》入圍 1995 年水星獎（Mercury Prize，入圍、未得獎，得主是 Portishead 的《Dummy》）。",
+      "src": "https://en.wikipedia.org/wiki/Maxinquaye",
+      "src2": "https://www.dazeddigital.com/music/article/70811/1/tricky-interview-different-when-it-s-silent-new-album-trip-hop",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池四張（Maxinquaye、Pre-Millennium Tension、Mixed Race、Vulnerable）皆為布里斯托這位 Tricky，無混卡；注意英文維基條目名為 Tricky (musician)、搜尋結果曾出現 Tricky (rapper)，同一人。搜尋：維基主條 API（1）、WebSearch（2）、Dazed 訪談（3）、Epigram 專文（4）、維基 Maxinquaye（5）、Britannica trip-hop 條目（6）。失敗請求 1 次：Tricky 官網傳記頁回空。\n『非獨立』：W 與 M 同為維基不同條目。Dazed（2026 年訪談）與 Epigram（布里斯托大學學生報）、Britannica 為獨立來源。\nconflicts 性質：Martina Topley-Bird 認識 Tricky 的年份——維基寫 1991 年她 15 歲時登門，Epigram 寫 1993 年在 Clifton College 外被他發現；年份不一致，facts 不收年份。\n單源未入 facts：(1) 維基稱父親為牙買加人、母親為迦納裔英國人、1968 年 1 月 27 日生；母親在他四歲時過世（死因維基列兩說，且依規則不收死因），他的父親家族經營 Studio 17 音響班；(2) 維基稱 Maxinquaye 被視為對電子樂、地下 hip hop 與英國 hip hop 有重要影響，並被許多記者評為 1995 年度最佳、1995 年底在 NME、Melody Maker、The Wire 年終票選第 1，Pazz & Jop 第 2（雜誌榜單名次本批規則不收）；(3) Dazed 稱 David Bowie 是忠實樂迷，寫過一篇虛構短文提到 Tricky，並主動聯絡他，Tricky 沒有跟進；Dazed 稱 Maxinquaye 獲得金唱片認證與水星獎入圍（認證倍數不寫，水星入圍已與維基兩源收入）；(4) 維基稱 Tricky 曾與 Terry Hall、Björk、Gravediggaz、Alanis Morissette、Grace Jones、PJ Harvey 合作；(5) 維基稱 17 歲時因購買偽鈔入獄、少年時加入幫派（個人前科細節，與音樂貢獻無關，未收）。\n注意：《Maxinquaye》專輯名來自他母親 Maxine Quaye，母親過世細節依規則只寫年份層級、不收死因；本層 facts 完全未涉及。"
  }
 ]

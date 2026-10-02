@@ -745,5 +745,169 @@
   "failedFetches": 1,
   "status": "thin",
   "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Shackleton (musician)、RA 藝人頁（內容極少）、WebSearch（生平）、The Quietus 專訪、RA 新聞《Three EPs》訪談、英文維基 Skull Disco、WebSearch（影響與 Honest Jon's）、Andrew Liles 十問；失敗 1 次（英文維基《Music for the Quiet Hour》404，未計入）。poolAlbums 四張（Three EPs、Music for the Quiet Hour、The Drawbar Organ EPs 合輯、Primal Forms）皆為英國製作人 Sam Shackleton；注意 Simon Shackleton（Elite Force）是另一人，一條都沒收，無同名混卡。legacy 僅一條兩源且為媒體評價（The Quietus 與維基引 The Wire 的 Derek Walmsley），性質接近單一樂評，請寫作層保守，不寫成共識。單源未收：（單源）英文維基稱 Shackleton 2008 年搬到柏林、2010 年成立 Woe to the Septic Heart!、與 Pinch、Ernesto Tomasini、Vengeance Tenfold 合作；（單源）英文維基引他說『我沒有刻意引用非洲或中東音樂，只是用我喜歡的聲音』；（單源）Quietus 引他說『我把它完全看成俱樂部音樂，不太喜歡 electronica 這種說法』『我不是天生會做音樂的人』；（單源）Andrew Liles 十問裡他說對自己影響最大的唱片『大概是 Godflesh 的《Streetcleaner》』；（單源）RA 新聞稱《Three EPs》2009 年 10 月 12 日發行、九首曲子；（單源）Skull Disco 維基稱廠牌名取自一本談喀麥隆喪葬儀式的書（來自 Shackleton 條目，Skull Disco 條目未再核）、Derek Walmsley 稱該廠牌顯示 dubstep『終於進化到不受僵硬公式束縛、走向新的有機成熟』；（單源）搜尋摘要稱 2011 年 Pinch & Shackleton 專輯由 Honest Jon's 發行（未開頁）。非獨立：英文維基 Shackleton 條目與 Skull Disco 條目同站。Grokipedia 出現在搜尋結果，不當來源。"
+ },
+ {
+  "key": "soft cell",
+  "name": "Soft Cell",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Soft Cell 是英國的合成器二人組，主唱 Marc Almond 與電子樂器手 Dave Ball 在利茲理工學院（Leeds Polytechnic）念書時相識並組團。",
+      "src": "https://en.wikipedia.org/wiki/Soft_Cell",
+      "src2": "https://en.wikipedia.org/wiki/Marc_Almond",
+      "from": "new"
+     },
+     {
+      "f": "Dave Ball 2025 年過世，享年 66 歲。",
+      "src": "https://www.yahoo.com/entertainment/music/articles/soft-cell-dave-ball-famous-194311083.html",
+      "src2": "https://www.queerty.com/the-unexpected-gay-power-of-soft-cells-synth-pop-classic-tainted-love-20251023/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們是 synth-pop 的代表之一，把合成器電子聲響配上 Northern soul 的情感與歌舞秀式的戲劇性。",
+      "src": "https://en.wikipedia.org/wiki/Soft_Cell",
+      "src2": "https://en.wikipedia.org/wiki/Marc_Almond",
+      "from": "new"
+     },
+     {
+      "f": "1981 年他們翻唱 Gloria Jones 1960 年代的 Northern soul 冷門歌曲〈Tainted Love〉，成了代表作。",
+      "src": "https://en.wikipedia.org/wiki/Tainted_Love",
+      "src2": "https://www.queerty.com/the-unexpected-gay-power-of-soft-cells-synth-pop-classic-tainted-love-20251023/",
+      "from": "new"
+     },
+     {
+      "f": "首張專輯《Non-Stop Erotic Cabaret》（1981）寫的是離家的年輕人與倫敦 Soho 的夜生活與都市頹靡。",
+      "src": "https://en.wikipedia.org/wiki/Soft_Cell",
+      "src2": "https://en.wikipedia.org/wiki/Non-Stop_Erotic_Cabaret",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Tainted Love〉登上英國單曲榜冠軍，並在美國 Billboard Hot 100 連續停留 43 週，最高第 8 名，當時創下上榜最久的紀錄。",
+      "src": "https://en.wikipedia.org/wiki/Tainted_Love",
+      "src2": "https://www.queerty.com/the-unexpected-gay-power-of-soft-cells-synth-pop-classic-tainted-love-20251023/",
+      "from": "new"
+     },
+     {
+      "f": "他們被認為替後來的合成器二人組鋪了路，包括 Pet Shop Boys 與 Erasure。",
+      "src": "https://en.wikipedia.org/wiki/Soft_Cell",
+      "src2": "https://www.yahoo.com/entertainment/music/articles/soft-cell-dave-ball-famous-194311083.html",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1981 年首張專輯《Non-Stop Erotic Cabaret》與單曲〈Tainted Love〉發行。",
+    "src": "https://en.wikipedia.org/wiki/Non-Stop_Erotic_Cabaret",
+    "src2": "https://en.wikipedia.org/wiki/Tainted_Love",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：英文維基 Soft Cell 條目寫 1978，英文維基 Marc Almond 條目與搜尋摘要寫 1977，Yahoo 報導寫 1979；三說不一致，facts 不寫成軍年。",
+   "Dave Ball 過世日：Yahoo 寫 10 月 22 日、Queerty 寫 10 月 23 日（疑為時區或發稿差異）；facts 只寫年份與歲數 66。",
+   "〈Tainted Love〉原曲年份：英文維基寫 1964 年錄音、1965 年 B 面發行；facts 只寫『1960 年代』。",
+   "美國榜的『43 週』紀錄是當時的紀錄（Queerty 與維基用 Guinness World Record 說法），後來上榜週數已被打破；facts 已加『當時』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Soft Cell、Britannica（只有零星提及）、英文維基《Non-Stop Erotic Cabaret》、英文維基〈Tainted Love〉、WebSearch（身世與影響）、Yahoo 訃聞報導、Queerty 報導、英文維基 Marc Almond；失敗 3 次（Variety 與 Billboard 訃聞皆 307 轉址到 tollbit 網域，未跟隨；英文維基 Dave Ball (electronic musician) 404；未計入）。poolAlbums 四張（Non-Stop Erotic Cabaret、This Last Night in Sodom、*Happiness Not Included、*Happiness Now Completed）皆為這個英國二人組，無同名混卡。legacy 查到的多為單源：（單源）英文維基稱他們影響 Pet Shop Boys、Erasure、Nine Inch Nails（本位 facts 只收有兩源的 Pet Shop Boys 與 Erasure）；（單源）Yahoo 報導稱專輯『改變了流行樂的走向』、為 Yazoo、Eurythmics、Pet Shop Boys、Erasure 鋪路，單曲在 17 國登頂，Ball 與 Bowie、Kylie Minogue、Pet Shop Boys 合作並與 Richard Norris 組 The Grid；（單源）英文維基《Non-Stop Erotic Cabaret》條目稱 Mike Thorne 製作、用借來的 Synclavier、Almond 轉述 Neil Tennant 把專輯看成一齣關於郊區男子去 Soho 找尋狂野的『音樂劇』、入選《1001 Albums You Must Hear Before You Die》、〈Sex Dwarf〉MV 在英國被禁（榜單與銷量名次不收）；（單源）Queerty 稱 Almond 是同志、當時尚未公開出櫃，〈Tainted Love〉在愛滋危機期間對同志觀眾有特殊共鳴，Almond 說它『成了那個年代的配樂』；（單源）英文維基 Marc Almond 條目稱 2018 年新年授勳獲頒 OBE（表彰對藝術與文化的貢獻）、2013 年獲 Ivors Inspiration Award（建議寫作層慎用，單源）；Almond 出生年與家鄉也只見該維基條目（單源）。非獨立：英文維基四個條目同站；Yahoo 與 Queerty 是各自獨立的報導，Yahoo 內容疑似轉載通訊稿。銷量與認證不寫（在世者規則）；NME、VH1、Rolling Stone 榜單名次不收。Dave Ball 過世只收年份、歲數與公開層級，不收任何細節。"
+ },
+ {
+  "key": "telefon tel aviv",
+  "name": "Telefon Tel Aviv",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Telefon Tel Aviv 是美國電子音樂團體，1999 年由高中同學 Joshua Eustis 與 Charles Cooper 在路易斯安那州紐奧良組成。",
+      "src": "https://en.wikipedia.org/wiki/Telefon_Tel_Aviv",
+      "src2": "https://en.wikipedia.org/wiki/Joshua_Eustis",
+      "from": "new"
+     },
+     {
+      "f": "2009 年 1 月《Immolate Yourself》發行兩天後，Charles Cooper 過世；此後 Eustis 獨自延續 Telefon Tel Aviv 這個名字。",
+      "src": "https://en.wikipedia.org/wiki/Immolate_Yourself",
+      "src2": "https://en.wikipedia.org/wiki/Joshua_Eustis",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團的風格歸在 IDM、glitch 與 ambient techno 之間。",
+      "src": "https://en.wikipedia.org/wiki/Telefon_Tel_Aviv",
+      "src2": "https://daily.bandcamp.com/2016/12/16/optimism-tragedy-and-idm-josh-eustis-returns-to-telefon-tel-aviv/",
+      "from": "new"
+     },
+     {
+      "f": "他們把 IDM 的電子音色與 R&B、soul 的人聲情感結合在一起。",
+      "src": "https://daily.bandcamp.com/2016/12/16/optimism-tragedy-and-idm-josh-eustis-returns-to-telefon-tel-aviv/",
+      "src2": "https://en.wikipedia.org/wiki/Map_of_What_Is_Effortless",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2001 年首張專輯《Fahrenheit Fair Enough》由 Hefty 發行；2016 年 Ghostly International 重發，並加入 1999 年的存檔曲目。",
+      "src": "https://en.wikipedia.org/wiki/Fahrenheit_Fair_Enough",
+      "src2": "https://daily.bandcamp.com/2016/12/16/optimism-tragedy-and-idm-josh-eustis-returns-to-telefon-tel-aviv/",
+      "from": "new"
+     },
+     {
+      "f": "Cooper 過世後，Eustis 曾擔任 Nine Inch Nails 與 Puscifer 的巡演成員。",
+      "src": "https://en.wikipedia.org/wiki/Joshua_Eustis",
+      "src2": "https://daily.bandcamp.com/2016/12/16/optimism-tragedy-and-idm-josh-eustis-returns-to-telefon-tel-aviv/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年首張專輯《Fahrenheit Fair Enough》在 Hefty 發行。",
+    "src": "https://en.wikipedia.org/wiki/Fahrenheit_Fair_Enough",
+    "src2": "https://en.wikipedia.org/wiki/Telefon_Tel_Aviv",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Cooper 過世的日期與情形：英文維基 Joshua Eustis 條目寫 2009 年 1 月 22 日、Immolate Yourself 條目寫專輯 1 月 20 日發行後兩天；某搜尋摘要寫 2009 年 3 月 1 日；兩源（Eustis 條目與 Immolate 條目）一致，採 1 月，3 月之說不採；死因三處說法互異（維基 Immolate 條目、維基 Telefon 條目與搜尋摘要各不相同），一律不收死因，facts 只寫年月與發行後兩天這個公開時序。",
+   "《Map of What Is Effortless》的廠牌：搜尋與記憶中常把 BPitch Control 與該作混在一起，英文維基該專輯條目寫 2004 年 1 月 27 日 Hefty 發行；BPitch Control 是《Immolate Yourself》（2009 年 1 月 20 日）的發行商。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫研究稿與上線簡介皆空，從零查。實際請求 8 次：英文維基 Telefon Tel Aviv、英文維基《Immolate Yourself》、WebSearch（身世）、Bandcamp Daily 2016 專訪、英文維基 Joshua Eustis、英文維基《Fahrenheit Fair Enough》、英文維基《Map of What Is Effortless》、WebSearch（遺產與《Dreams Are Not Enough》）；失敗 2 次（RA 傳記 403、Ghostly 藝人頁只有名稱，未計入）。poolAlbums 四張（Fahrenheit Fair Enough、Map of What Is Effortless、Immolate Yourself、Dreams Are Not Enough）皆為這個美國二人組，無同名混卡。研究層提醒：研究層共用規則（research-base）要求《Immolate Yourself》必寫『發行兩天後 Cooper 辭世』，本位已以兩源確認該時序，寫作層請維持克制、不寫死因。legacy 格查不到兩源：（單源）搜尋摘要稱他們 2000 年代的三張專輯是『後 IDM 合成歌曲寫作』的有影響力之作，並引 RA 評《Dreams Are Not Enough》『達成了前三張都沒做到的事』（皆只見搜尋摘要，未開頁）。單源未收：（單源）英文維基 Eustis 條目稱他 1977 年 7 月 16 日生於紐奧良、成長期受 Depeche Mode、OMD、Talk Talk 等 1980 年代初電子樂影響，2013 年任 Nine Inch Nails 巡演成員、2011 年共同製作 Puscifer 的《Conditions of My Parole》、個人計畫 Sons of Magdalene 首張專輯 2014 年發行、也是 The Black Queen 的創始成員；（單源）Bandcamp Daily 引 Eustis 說首張專輯想把南方饒舌與 R&B、英美 IDM、後搖滾放在一起（『pan-genre experimentation』），並稱他在 2016 年重返 Telefon Tel Aviv；（單源）英文維基 Immolate Yourself 條目稱該作轉向較易親近的歌曲寫作、受 minimal wave、krautrock 與 psychedelic 影響，Billboard 電子專輯榜最高第 17 名（兩個維基條目都有，同站、屬榜單名次，不收）；（單源）英文維基 Map of What Is Effortless 條目稱該作有 Loyola University Chamber Orchestra 與客座歌手參與、AllMusic 4.5 星（樂評分數不收）；（單源）搜尋摘要稱 2019 年 9 月 27 日 Ghostly 發行《Dreams Are Not Enough》，是 Eustis 自 2009 年以來首張以 Telefon Tel Aviv 名義的專輯（英文維基 Telefon 條目也寫 2019 年發行該作，但屬年份單源）。非獨立：本位 8 條 facts 的『兩源』中，凡兩源皆為英文維基者（Telefon、Eustis、Immolate、Fahrenheit、Map 各條目）互為同站不同條目，非獨立；Bandcamp Daily 是獨立來源。"
  }
 ]
