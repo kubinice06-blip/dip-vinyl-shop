@@ -327,3 +327,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - g1 交件（QA 本組 0）。thin：Shabazz Palaces、Skepta（聲音 none）、Summer Walker（聲音 none）、The Game（聲音 none）。Shaggy、Skepta、The Game 失敗請求 5 次超限（超出部分未取得內容），照收。Skepta、The Game、Summer Walker 第二源偏弱（通俗傳記站、粉絲站、廠牌頁），評價不寫成定論。Timbaland《Indecent Proposal》是 Timbaland & Magoo 名義。pubIssues 0。
 - 029 w2 審稿（1 處）：Nelly 刪「首度」（無兩源的首次說法）。N.W.A 267、Queen Latifah 277 放寬照准；N.W.A 2024 年葛萊美終身成就獎、Queen Latifah「第一位獲甘迺迪中心榮譽的女饒舌歌手」皆屬廣泛報導的官方表述。Mýa〈Lady Marmalade〉主詞寫四人合唱。
 - **ar-b-029 上線**：40 位，reviewFixes 1。
+- 030 g2 交件（QA：Antal Doráti 搜尋 9 次超限 1 次，該次無事實）。全 full。Doráti 逝世年單源、樂團起訖年兩源不一，不寫；卡池《1812》為 1978 錄音，不得套 Mercury 版。Rubinstein 最後音樂會地點不寫。pubIssues 1（陶喆〈I'm OK〉第 11 屆金曲獎「最佳唱片製作人」與「最佳專輯製作人」獎名待核）→ 本機待核。w1（g1+g2）派出。
