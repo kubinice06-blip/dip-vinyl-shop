@@ -277,3 +277,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 024 w2 審稿無修正。Röyksopp 2024 年入選 Rockheim 名人堂經主線 WebSearch 核實（rockheim.no）。Pierre Henry〈Psyché Rock〉啟發《Futurama》主題曲屬通行事實，照准。
 - **ar-b-024 上線**：40 位，reviewFixes 2。
 - 025 g3 交件（QA 本組 0）。thin：Incapacitants。衝突值不寫（Jarre UNESCO 任命年、榮譽軍團年、演唱會人數）。Ken Ishii 漢字兩說，正文只寫拉丁藝名。Fever Ray（Karin Dreijer）正文避開性別代名詞。pubIssues 1（DJ Koze《Kosi Comes Around》出生地 Flensburg／Marrakech 衝突）→ 本機待核。
+- 025 g1 交件（QA 本組 0）。thin：The Future Sound of London（地位 none）、Tycho、Zero 7、Above & Beyond。單源未收：Zero 7 Brit／葛萊美提名、Human League 1982 Brit Award。Ace of Base 樂迷站（aceofbase.net）列弱來源不採。pubIssues 1（冨田勲《展覧会の絵》Moog III 購入年應為 1971 年）→ 本機待核。w1（g1+g2）派出。

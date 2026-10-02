@@ -532,7 +532,7 @@
   "name": "冨田勲",
   "slots": {
    "origin": {
-    "status": "bank",
+    "status": "gap",
     "facts": [
      {
       "f": "冨田勲 1932 年生於東京，在慶應義塾大學讀藝術史期間自學配器與作曲，1955 年畢業後長年替日本電視、電影與劇場寫配樂，1960 年代末受 Wendy Carlos 與 Robert Moog 的成果啟發轉入電子音樂。",
@@ -730,5 +730,88 @@
   "failedFetches": 0,
   "status": "thin",
   "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池三張（Sirens of the Sea、Journey To ABGT250 (DJ Mix)、Group Therapy）皆為 Jono Grant／Tony McGuinness／Paavo Siljamäki 這個團，無混卡。注意 Journey To ABGT250 為 DJ mix 合輯（2017）、不是錄音室專輯（卡池性質由主線判斷，此層不列建議移除）。\n搜尋：維基主條 API（1）、WebSearch（2）、Miami New Times 2015 專訪（3）、Bandwagon 藝人頁（4）、WebSearch（5）、Grammy.com 藝人頁（6，WebFetch）、維基 Anjunabeats（7）。失敗請求 0。\n『非獨立』：W 與 AN 同站不同條目；Bandwagon 藝人頁內容疑似轉述維基舊版（寫節目為 Trance Around the World、稱 2012 年 DJ Magazine 第 8 名），視為弱獨立。Grammy.com 與 Miami New Times 為獨立來源。\nsound 第二條的 src2（Bandwagon）只證實《Trance Around the World》為每週節目，《Group Therapy Radio》2012 年接替與『推新藝人平台』出自維基主條；審稿時若要嚴格，可降為單源。\norigin 格偏薄、legacy 兩條偏事蹟，整體標 thin。\n單源未入 facts：(1) 維基稱 Grant 與 Siljamäki 在倫敦 Westminster 大學認識，McGuinness 當時是 Warner Music 行銷總監，經弟弟 Liam 得知 Grant 為 Yamaha 做的取樣庫而聯繫；(2) 維基稱團名取自一位也叫 Jono Grant 的美國勵志講師的口號，Grant 房間海報上有該句；(3) 維基稱他們的〈Home〉（Chakra）混音登上英國 club 榜第 1；(4) 維基稱 2002 年東京 DJ 首秀、現場 8000 人，與 Ferry Corsten、Tiësto 同台；(5) 維基稱 2009 年在 Virgin Galactic SpaceShipTwo 發表會演出；(6) 維基稱 2007 年底 Rio 海灘表演據稱約百萬人（『據稱』，且為人數類不收）；(7) Miami New Times：Jono Grant 自述 DJ set 要涵蓋多種舞曲風格、動態與情感、帶聽眾走一段旅程，旗下藝人含 Mat Zo、Andrew Bayer、Ilan Bluestone、Arty、Super8 & Tab、Kyau & Albert；(8) 維基稱 Tony McGuinness 說他們寫歌偏 acoustic，先寫成一首歌再把其中元素做成舞池版本（2014 年 Acoustic 專輯脈絡）；(9) 維基稱《Group Therapy》2011 年 iTunes 舞曲專輯榜第 1，DJ Magazine 與 Mixmag 的稱號、DJ Mag Top 100 名次、Billboard 評〈Sun & Moon〉等屬雜誌榜單或樂評，依規則不收；(10) 維基稱 Trance Around the World 每週聽眾達 3000 萬（30 million listeners in 35 countries，收聽規模數字，不收）；維基 Anjunabeats 條目稱廠牌名 Anjuna 取自印度果阿的海灘、2011 年起也發行 trance 味的 house（單源）。\nsound 第一條 src2（Miami New Times）只證實 Above & Beyond 經營 Anjunabeats，Anjunadeep 2005 年出自維基 Anjunabeats 條目（維基主條亦寫他們擁有 Anjunadeep）。\n專輯銷量、串流、DJ 排行名次依本批特注不寫。"
+ },
+ {
+  "key": "ace of base",
+  "name": "Ace of Base",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ace of Base 1990 年在瑞典哥特堡成軍，成員是 Berggren 家的三個手足（Jonas、Jenny、Linn）與 Ulf Ekberg；Jonas 是主要詞曲創作者。",
+      "src": "https://en.wikipedia.org/wiki/Ace_of_Base",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ace-base",
+      "from": "new"
+     },
+     {
+      "f": "團的前身叫 Tech-Noir，Ekberg 是臨時替補上台、之後成為正式成員；Tech-Noir 之後才改名 Ace of Base。",
+      "src": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ace-base",
+      "src2": "https://stereogum.com/2177528/the-number-ones-ace-of-bases-the-sign/columns/the-number-ones",
+      "from": "new"
+     },
+     {
+      "f": "他們的錄音室與排練處緊鄰一組 reggae 樂手，開始把 reggae 節拍融進團的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Ace_of_Base",
+      "src2": "https://stereogum.com/2177528/the-number-ones-ace-of-bases-the-sign/columns/the-number-ones",
+      "from": "new"
+     },
+     {
+      "f": "他們的 demo 在瑞典找不到唱片公司肯簽，1992 年轉而與丹麥的 Mega 簽約，首支單曲〈Wheel of Fortune〉先在丹麥走紅、再傳到歐洲。",
+      "src": "https://stereogum.com/2177528/the-number-ones-ace-of-bases-the-sign/columns/the-number-ones",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ace-base",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的聲音以 reggae 與 dancehall 節奏為底，疊上輕快的流行旋律，歸類為 dance-pop 與 Europop；Stereogum 形容是「輕快的泡泡糖旋律疊在深沉的數位 reggae 節拍上」，維基則提到 1980 年代 Italo disco 與 house 的影響。",
+      "src": "https://en.wikipedia.org/wiki/Ace_of_Base",
+      "src2": "https://stereogum.com/2177528/the-number-ones-ace-of-bases-the-sign/columns/the-number-ones",
+      "from": "new"
+     },
+     {
+      "f": "〈All That She Wants〉由 Denniz Pop 與 Jonas Berggren、Ulf Ekberg 製作；Jonas 先把 demo 寄給 Pop，Pop 把原曲〈Mr. Ace〉帶進錄音室重錄成這首歌，1992 年在 Mega 發行。",
+      "src": "https://stereogum.com/2177528/the-number-ones-ace-of-bases-the-sign/columns/the-number-ones",
+      "src2": "https://www.aceofbase.net/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2024 年 Ace of Base 入選瑞典音樂名人堂（Swedish Music Hall of Fame），入選介紹稱他們定義了 1990 年代的瑞典流行聲音。",
+      "src": "https://en.wikipedia.org/wiki/Ace_of_Base",
+      "src2": "https://theneedledrop.com/news/ace-of-base-refused-and-more-inducted-into-swedish-music-hall-of-fame/",
+      "from": "new"
+     },
+     {
+      "f": "Stereogum 稱他們短暫的成功是個「概念驗證」：瑞典那種光滑閃亮的電腦流行才剛成形，此後主宰了本世紀的流行榜；同一專欄指出他們一路被拿來與 ABBA 比較，encyclopedia.com 的傳記條目也寫到這點。",
+      "src": "https://stereogum.com/2177528/the-number-ones-ace-of-bases-the-sign/columns/the-number-ones",
+      "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ace-base",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "團名來源兩說：維基與 Stereogum 寫 Ekberg 宿醉看 Motörhead〈Ace of Spades〉MV 想到；encyclopedia.com 引 Jonas Berggren 的說法是『base 是我們的錄音室、ace 是大師』。不一致，f 欄不寫團名由來。",
+   "Ekberg 替補進團的原因兩說：encyclopedia.com 寫 Berggren 樂團某成員臨場怯場；Stereogum 寫 Tech-Noir 的貝斯手為看 Rolling Stones 演出而缺席。f 欄只寫『臨時替補』。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池三張（Flowers、Da Capo、The Sign）皆為哥特堡這團，無混卡。注意 Flowers 為 1998 年專輯（美國名 Cruel Summer 另為 1998 專輯名之一，欄位交給主線）。\n搜尋：WebFetch 維基主條（1，英文維基 Ace of Base 因 API 限流改用 WebFetch，內容為摘要）、WebSearch（2）、The Needle Drop 新聞（3）、aceofbase.net（4）、WebSearch（5）、encyclopedia.com 傳記條目（6）、Stereogum Number Ones 專欄（7）。失敗請求 1 次：Britannica 404。\n⚠ aceofbase.net 文風像 SEO 或 AI 生成的樂迷站（含串流與瀏覽量數字、行文空泛），不可當權威來源；本層只用它佐證『Denniz Pop 製作〈All That She Wants〉』，並與 Stereogum 對照；不收其中任何數字。維基主條因限流是 WebFetch 摘要而非全文（作法與其他位不同，已照實記），其中『Swedish Music Hall of Fame 2024 年 9 月入選』只取年份。encyclopedia.com 為 Gale 傳記工具書轉載（原據 Rolling Stone、Entertainment Weekly 等 1990 年代報導），Stereogum 為單一專欄作者（Tom Breihan）的 Number Ones 專欄，屬評論性質；Needle Drop 新聞稿式文字轉述名人堂官方入選介紹，已改由『名人堂入選介紹稱…』的語氣收。\n單源未入 facts：(1) 維基稱 Lady Gaga 說《The Fame Monster》受 Ace of Base 的 90 年代超級流行旋律影響、Katy Perry 說想讓《Teenage Dream》聽起來像〈The Sign〉，Robyn、Clean Bandit、Tegan and Sara 等也被稱受其影響（維基單源，第二源未取得）；(2) 維基稱《The Sign》入圍 1995 年葛萊美（類別寫 Best Pop Album，與實際提名類別可能不符，未收）；(3) encyclopedia.com 稱 1993 年 Echo Award 最成功國際樂團、1994 年 Billboard 最佳新人，及 1995 年金氏世界紀錄最暢銷首張專輯（銷量類不寫）；(4) encyclopedia.com 稱 Berggren 手足從小被鼓勵學古典音樂、Jenny 與 Linn 在家鄉教堂合唱團唱歌，父親是醫生母親是教師（Stereogum 寫父親是 X 光技師，兩說不一致，未收）；(5) Stereogum 稱 Jonas 受 Denniz Pop 製作的 Kayo〈Another Mother〉影響想做一樣的聲音，〈The Sign〉的鼓點亦取自該曲；(6) Stereogum 稱 Jenny Berggren 說哥特堡聽眾偏愛金屬、讓他們難以訂到場地；(7) Stereogum 稱 1992 年〈All That She Wants〉與〈Wheel of Fortune〉曾同時佔據丹麥榜第 1、2 名，〈The Sign〉是團在美國唯一的第 1 名單曲；(8) Max Martin 以 Ace of Base 第二張專輯《The Bridge》的共同製作人身分起步、Cheiron Studios 脈絡：來自搜尋摘要、未實際開頁，不收；(9) Ekberg 青少年時期與極右派的過往爭議（Stereogum 專欄與 2013 年媒體報導）：與音樂貢獻無關，本層不收、不引述。\n特注：Ace of Base 銷量、串流、認證倍數、DJ 或榜單名次一律不寫（本批特注）；f 欄未涉及。\nsound 第一條前半 src 為維基摘要（描述 reggae 與流行混合並以 Italo disco、house 為靈感），『輕快的泡泡糖旋律疊在深沉的數位 reggae 節拍上』為 Stereogum 原句的意譯，寫作層不必引用原句。"
  }
 ]
