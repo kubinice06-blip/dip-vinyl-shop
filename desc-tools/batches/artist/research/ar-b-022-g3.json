@@ -301,5 +301,330 @@
     "status": "full",
     "pubIssues": [],
     "notes": "同名混卡檢查：poolAlbums 四張（La reina del ritmo cubano 1958、Reflexiones de Celia Cruz 1960、Son con Guaguancó 1966、Celia & Johnny 1974）皆為古巴的 Celia Cruz，無混卡。搜尋 6 次（維基、Britannica、搖滾名人堂官網、arts.gov、一次 WebSearch 查葬禮、VOA），失敗請求 2 次（CNN 451、Billboard 轉址未取得）。名人堂官方（可具名單源）：搖滾名人堂官網的介紹寫她是『the sound of freedom post-Cuban Revolution』『voice of love and freedom post-Cuban Revolution and during the U.S. Civil Rights Movement』，並稱 Jennifer Lopez、Gloria Estefan、Sheila E. 等人都視她為影響來源（https://www.rockhall.com/inductees/celia-cruz）；寫作層可寫『搖滾名人堂稱…』。facts 裡以名人堂當 src2 的幾條（自由之聲、guaracha 與 salsa 先驅、Celia & Johnny、2016 終身成就獎、2026 入選）都是名人堂與另一獨立來源（維基或 Britannica）互證。2026 年入選搖滾名人堂：名人堂官網與 Britannica 兩源皆寫 2026、Musical Influence 類別。未收入 facts：(1) 單源——Britannica 稱她是『first primarily Spanish-language artist』入選搖滾名人堂，是『第一位』類宣稱且只有單源，且無法排除反例，放 notes 不放 facts；(2) 單源——Britannica 形容她的嗓音『operatic』、擅長即興押韻詞（soneo），單源；(3) 單源——維基寫標誌喊聲『¡Azúcar!』是 salsa 最具辨識度的符號之一、Smithsonian 2005 年舉辦『¡Azúcar!』展、1994 年 Billboard 拉丁音樂名人堂與 1999 年國際拉丁音樂名人堂、小行星 5212 Celiacruz，皆單源；(4) 單源——維基寫她 1947 年起在哈瓦那國立音樂學院學樂理、聲樂與鋼琴；(5) 邁阿密追思人數：搜尋摘要稱逾 7.5 萬人、排隊長達 15 個街區，只見於搜尋摘要（疑出 CNN／Billboard，兩者皆未取得內文），VOA 只寫『數以千計』，不收人數；(6) 唱片總銷量（3000 萬張）與 Rolling Stone 歌手榜名次依規則不收；(7) 死因不收。第二源說明：facts 中標 bank 的三條，origin 的離開古巴取自事實庫（維基單源），已補 Britannica 為第二源（Britannica 只寫 1960 年離開、先到墨西哥再到美國、定居紐澤西，『古巴政府拒絕她入境』一句取自維基與事實庫，VOA 稱她的音樂在古巴遭禁）。era 那一條 1950／1960／1965／1966／1974 為事實庫與維基的彙整，Rock Hall 官網寫在 Sonora 十五年與年資相符，但 1965 單飛一句仍只有維基單源，寫作層若要用請以較保守措辭。"
+  },
+  {
+    "key": "cesária évora",
+    "name": "Cesária Évora",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Cesária Évora 1941 年 8 月 27 日生於維德角 São Vicente 島的 Mindelo。她的父親是樂手，她年幼時就過世。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.britannica.com/biography/Cesaria-Evora",
+            "from": "new"
+          },
+          {
+            "f": "她十幾歲起就在 Mindelo 的酒吧唱歌（約 16 歲），用的是維德角克里奧爾語。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.aljazeera.com/features/2011/12/18/singer-cesaria-evora-dies-at-70",
+            "from": "new"
+          },
+          {
+            "f": "她 1970 年代中期因個人與經濟困境停止公開演出，1985 年才復出。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.britannica.com/biography/Cesaria-Evora",
+            "from": "new"
+          },
+          {
+            "f": "1988 年的《La Diva aux pieds nus》在法國錄成，是她國際生涯的起點，當時她已是 40 多歲。",
+            "src": "https://www.britannica.com/biography/Cesaria-Evora",
+            "src2": "https://www.aljazeera.com/features/2011/12/18/singer-cesaria-evora-dies-at-70",
+            "from": "new"
+          },
+          {
+            "f": "製作人 José da Silva 發掘了她，把她帶到巴黎，簽進 Lusafrica 廠牌。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.britannica.com/biography/Cesaria-Evora",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她以克里奧爾語唱 morna（維德角的國民歌謠，節奏緩慢）與節奏較快的 coladeira。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.britannica.com/biography/Cesaria-Evora",
+            "from": "new"
+          },
+          {
+            "f": "她的歌寫愛情、思鄉與維德角的歷史；Britannica 形容 morna 是「帶著哀傷與強烈情感的島國苦難編年史」。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.britannica.com/biography/Cesaria-Evora",
+            "from": "new"
+          },
+          {
+            "f": "她表演時習慣赤腳，因此得到「Barefoot Diva」（赤腳天后）的稱號。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.aljazeera.com/features/2011/12/18/singer-cesaria-evora-dies-at-70",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她被視為 morna 最知名的演唱者，把這種維德角國民音樂帶向全世界。",
+            "src": "https://www.nonesuch.com/journal/cesaria-evora-cape-verdean-singer-known-barefoot-diva-dies-70-2011-12-19",
+            "src2": "https://www.aljazeera.com/features/2011/12/18/singer-cesaria-evora-dies-at-70",
+            "from": "new"
+          },
+          {
+            "f": "她以專輯《Voz d'Amor》拿下葛萊美最佳當代世界音樂專輯（Best Contemporary World Music Album，得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.nonesuch.com/journal/cesaria-evora-cape-verdean-singer-known-barefoot-diva-dies-70-2011-12-19",
+            "from": "new"
+          },
+          {
+            "f": "她 2011 年 12 月 17 日在家鄉 Mindelo 過世，享年 70 歲。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.britannica.com/biography/Cesaria-Evora",
+            "from": "new"
+          },
+          {
+            "f": "Mindelo 所在的 São Vicente 島機場（原名 São Pedro）後來改以她的名字命名，稱為 Cesária Évora 國際機場。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.caboverde-airports.cv/en/aeroportos/cesaria-evora-international-airport/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1985 年復出、1988 年首張專輯《La Diva aux pieds nus》；1992 年的《Miss Perfumado》讓她在歐洲普遍走紅。",
+            "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+            "src2": "https://www.britannica.com/biography/Cesaria-Evora",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1988 年《La Diva aux pieds nus》在法國錄成，開啟國際生涯。",
+        "src": "https://www.britannica.com/biography/Cesaria-Evora",
+        "src2": "https://www.aljazeera.com/features/2011/12/18/singer-cesaria-evora-dies-at-70",
+        "from": "new"
+      },
+      {
+        "f": "以《Voz d'Amor》獲葛萊美最佳當代世界音樂專輯。",
+        "src": "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+        "src2": "https://www.nonesuch.com/journal/cesaria-evora-cape-verdean-singer-known-barefoot-diva-dies-70-2011-12-19",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "葛萊美年份：英文維基寫 2004，Britannica、Al Jazeera、Nonesuch 都寫 2003（疑為參賽年度與頒獎年度之差）；facts 不寫年份，只寫得獎與類別。",
+      "《Miss Perfumado》與《Cesária》的出版年：維基與 Britannica 寫《Miss Perfumado》為 1992 年的突破作；上線簡介《Mar Azul》卻寫 1991 年這張才真正賣動，見 pubIssues。Nonesuch 的美國發行清單與原發行年無關，不採。",
+      "父親過世時年齡：維基寫在她童年，Britannica 寫她七歲；facts 只寫『年幼』。"
+    ],
+    "searches": 7,
+    "failedFetches": 4,
+    "status": "full",
+    "pubIssues": [
+      {
+        "album": "Mar Azul",
+        "claim": "前兩張唱片反應冷淡，1991 年這套八曲作品才真正賣動",
+        "problem": "英文維基與 Britannica 都寫的是 1992 年的《Miss Perfumado》帶來歐洲普遍的人氣與國際巡演；1991 年《Mar Azul》是她第三張，說它才真正賣動與兩源的突破作說法不符。建議改成『Miss Perfumado 之前的作品』或拿掉『才真正賣動』。另該簡介說 1987 年由 José da Silva 發掘，Britannica 與維基只說她 1985 年復出、1988 年首張專輯，1987 年未見支持。",
+        "src": "https://www.britannica.com/biography/Cesaria-Evora"
+      }
+    ],
+    "notes": "同名混卡檢查：poolAlbums（Miss Perfumado 1992、Cesária 1995、Mar Azul 1991、Cabo Verde 1997）皆為維德角的 Cesária Évora，無混卡。搜尋 7 次（維基、Britannica、WebSearch 訃聞、Al Jazeera、Nonesuch、WebSearch 機場、維德角機場官網），失敗請求 4 次（NPR 503、Grammy.com 404、CBC 403、維基機場條目 404），已達失敗上限，故未再追。死因不收。未收入 facts：(1) 單源——Nonesuch 稱維德角政府宣布兩日全國哀悼（搜尋摘要亦同，另一來源未能開頁），寫作層若要用需自行評估；(2) 單源——維基寫 2009 年獲法國榮譽軍團勳章（Legion of Honour）、1999 年獲葡萄牙 Order of Prince Henry、2004 年任世界糧食計劃署大使、肖像上了維德角 2000 埃斯庫多鈔票與郵票；(3) 單源——維基稱 Madonna、Caetano Veloso 受她影響或視她為靈感，Stromae 2014 年以〈Ave Cesaria〉致敬；(4) 單源——維基與搜尋摘要稱機場 2012 年更名，維德角機場官網只證實新名稱與舊名 São Pedro，未寫更名年，故 facts 不寫年份；(5) 單源——維基寫她從小由祖母帶大、十歲進孤兒院、16 歲起在酒吧演唱與一段與吉他手的感情有關；(6) 單源——維基稱她赤腳的緣由經紀人說是腳痛、她自己說與專輯名有關，Al Jazeera 只說『赤腳』的形象；(7) 單源——維基稱她被比作 Édith Piaf 與 Billie Holiday，Nonesuch 轉引《紐約時報》把她放在 Sade 與 Billie Holiday 之間，都屬單一樂評形容；(8) 單源——Britannica 稱她 1960 年代起在 Mindelo 的 Radio Mindelo 演出；(9) 她的 Nonesuch 專輯清單（1995 至 1999）是美國發行資訊，非原發行年。第二源說明：Al Jazeera 與 Nonesuch 與維基互不同站；Britannica 與維基對 1985 年復出及中期停演一致。Al Jazeera 對 1988 年的描述是『late 40s』，facts 寫『40 多歲』；Lusafrica 簽約一句維基單寫，Britannica 只說 da Silva 把她帶到巴黎，簽約部分以維基為準（單源）。"
+  },
+  {
+    "key": "dead can dance",
+    "name": "Dead Can Dance",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Dead Can Dance 1981 年成軍於澳洲墨爾本，創團者是 Brendan Perry 與 Lisa Gerrard；1982 年他們搬到倫敦，簽進廠牌 4AD。",
+            "src": "https://en.wikipedia.org/wiki/Dead_Can_Dance",
+            "src2": "https://thequietus.com/interviews/dead-can-dance-interview/",
+            "from": "new"
+          },
+          {
+            "f": "兩人在 1980 年前後的墨爾本實驗音樂小圈子裡認識，那裡的音樂人多半不走專業路線、重視即興。",
+            "src": "https://en.wikipedia.org/wiki/Lisa_Gerrard",
+            "src2": "https://thequietus.com/interviews/strange-world-of/dead-can-dance-review-strange-world-of/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的音樂把歐洲中世紀與古典傳統，加上 ambient pop、darkwave 與世界音樂元素；英文維基稱他們開創了 neoclassical darkwave。",
+            "src": "https://en.wikipedia.org/wiki/Dead_Can_Dance",
+            "src2": "https://thequietus.com/interviews/strange-world-of/dead-can-dance-review-strange-world-of/",
+            "from": "new"
+          },
+          {
+            "f": "Lisa Gerrard 用一種自創的語言演唱，聲音更像樂器而不是傳達可辨的歌詞；她的嗓音帶著遙遠感，像從另一個房間傳來。",
+            "src": "https://en.wikipedia.org/wiki/Lisa_Gerrard",
+            "src2": "https://thequietus.com/interviews/strange-world-of/dead-can-dance-review-strange-world-of/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Future Sound Of London 的 Garry Cobain 在 1991 年的〈Papua New Guinea〉裡取樣了 Lisa Gerrard 的人聲，因為她把聲音當成樂器使用、而不是傳達歌詞。",
+            "src": "https://thequietus.com/interviews/dead-can-dance-interview/",
+            "src2": "https://thequietus.com/interviews/strange-world-of/dead-can-dance-review-strange-world-of/",
+            "from": "new"
+          },
+          {
+            "f": "在 4AD 時期，他們與同廠的 Cocteau Twins 一起塑造了廠牌的辨識度；Lisa Gerrard 的嗓音也與同廠的 Elizabeth Fraser 迥然不同。",
+            "src": "https://thequietus.com/interviews/dead-can-dance-interview/",
+            "src2": "https://thequietus.com/interviews/strange-world-of/dead-can-dance-review-strange-world-of/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1984 年以同名專輯在 4AD 出道。",
+            "src": "https://en.wikipedia.org/wiki/Brendan_Perry",
+            "src2": "https://thequietus.com/interviews/dead-can-dance-interview/",
+            "from": "new"
+          },
+          {
+            "f": "2012 年團重組後發行專輯《Anastasis》。",
+            "src": "https://en.wikipedia.org/wiki/Dead_Can_Dance",
+            "src2": "https://thequietus.com/interviews/dead-can-dance-interview/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1981 年成軍於墨爾本，1982 年移居倫敦、簽約 4AD。",
+        "src": "https://en.wikipedia.org/wiki/Dead_Can_Dance",
+        "src2": "https://thequietus.com/interviews/dead-can-dance-interview/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Lisa Gerrard 的離團年：英文維基 Gerrard 條目寫『成員至 2022』，Dead Can Dance 條目寫『2026 年止 Gerrard 已離團、Perry 續以 Holy Tongue Records 發行』；兩條不一致，facts 不寫離團。",
+      "重組年：維基 Dead Can Dance 條目寫 2005 年重組，Quietus 只寫 2012 年重組專輯《Anastasis》；facts 只寫 2012 年專輯，不寫 2005 年（單源）。"
+    ],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "thin",
+    "pubIssues": [],
+    "notes": "同名混卡檢查：poolAlbums（Spleen and Ideal 1985、Within the Realm of a Dying Sun 1987、Into the Labyrinth 1993、Spiritchaser 1996）皆為 Perry／Gerrard 的 Dead Can Dance，無混卡。上線簡介為空。搜尋 8 次（維基團頁、WebSearch、Quietus 訪談、Gerrard 維基、Perry 維基、WebSearch 影響、Quietus Strange World Of、維基 Gladiator 配樂頁，最後一次是消歧義頁、沒用），失敗請求 3 次（Rolling Stone 轉址、Rolling Stone 402、Britannica 404）。Quietus 的兩篇是同站不同文章，非獨立；其中 origin 的 1981／1982 與 era 的 2012 年《Anastasis》另有維基支持；1984 年同名首張由 Perry 維基與 Quietus 互證；2005 年重組只有 DCD 維基單源，不入 facts。legacy 格偏薄：能兩源成立的只有 Quietus 的取樣與廠牌形象，這兩條互相非獨立。未收入 facts：(1) 單源——維基稱 Into the Labyrinth（1993）在美國 Billboard 200 上榜、銷量約 50 萬張並稱樂團是 4AD 當時銷售最好的藝人，屬銷量類且樂團仍在世，不寫；(2) 單源——搜尋摘要稱 Perry 與 Gerrard 影響了 Chemical Brothers、Slowdive、Björk、Nine Inch Nails 與 pagan-music 運動，出處指向 Rolling Stone 的 Dionysus 專訪，但該頁開不了（轉址後 402），標單源且未核對；(3) 單源——Gerrard 維基稱她與 Hans Zimmer 合寫《神鬼戰士》（2000）配樂，2001 年金球獎最佳原創配樂得獎、奧斯卡只有 Zimmer 一人獲提名；金球獎得主是 Zimmer 與 Gerrard 個人（非 Dead Can Dance 團），第二源查詢失敗（維基 Gladiator 配樂頁是消歧義頁）；(4) 單源——Gerrard 維基稱她女低音橫跨三個八度、自幼創造了一套自己的語言並說那是『the language of the Heart』；(5) 單源——Perry 維基稱他 1959 年生於倫敦、1973 年隨家人搬到紐西蘭奧克蘭、朋克時期玩過 The Scavengers 與 Marching Girls、1979 年到墨爾本，並會彈 hurdy-gurdy、bouzouki 等多種樂器，1990 年代在愛爾蘭 Cavan 把湖畔舊教堂改成錄音室；(6) 單源——維基寫團名風格為 African polyrhythms、Gaelic folk、Gregorian chant 等多元融合。『開創 neoclassical darkwave』的措辭只有英文維基，Quietus 沒有寫此語，故 f 寫成『英文維基稱』。 追加撤出 facts 的條目：(a) 單源——Gerrard 維基寫她在希臘裔人口多的 Prahran 長大、地中海音樂影響她，DCD 維基未印證；(b) 單源——Quietus Strange World Of 寫聽眾常在 chill-out 空間與好萊塢配樂（《神鬼戰士》《亞瑟王》）裡接觸到這種聲音，這兩部配樂與 Gerrard 個人（非整團）有關。"
+  },
+  {
+    "key": "fania all-stars",
+    "name": "Fania All-Stars",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fania All-Stars 1968 年成立，是廠牌 Fania Records 為旗下樂手設的展示團，由創辦人 Johnny Pacheco 組建。",
+            "src": "https://en.wikipedia.org/wiki/Fania_All-Stars",
+            "src2": "https://en.wikipedia.org/wiki/Fania_Records",
+            "from": "new"
+          },
+          {
+            "f": "Fania Records 1964 年在紐約創立，創辦人是多明尼加出生的 Johnny Pacheco 與律師 Jerry Masucci。",
+            "src": "https://en.wikipedia.org/wiki/Fania_All-Stars",
+            "src2": "https://en.wikipedia.org/wiki/Fania_Records",
+            "from": "bank"
+          },
+          {
+            "f": "團員是 Fania 旗下的領隊與歌手：Ray Barretto、Willie Colón、Larry Harlow、Johnny Pacheco 等樂手領隊，以及歌手 Héctor Lavoe、Ismael Miranda、Adalberto Santiago；後來加入的還有 Rubén Blades 與 Celia Cruz。",
+            "src": "https://en.wikipedia.org/wiki/Fania_All-Stars",
+            "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團以 salsa 為本，在紐約的拉丁裔社群裡成形；他們所屬的 Fania Records 以推廣 salsa 聞名。",
+            "src": "https://en.wikipedia.org/wiki/Fania_All-Stars",
+            "src2": "https://en.wikipedia.org/wiki/Fania_Records",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1971 年他們在紐約 Cheetah 夜總會的演出被拍成 1972 年的紀錄片《Our Latin Thing》，把這個團推到舞台前面。",
+            "src": "https://en.wikipedia.org/wiki/Fania_Records",
+            "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf",
+            "from": "new"
+          },
+          {
+            "f": "1973 年 8 月他們在紐約洋基球場演出，吸引約 4 萬名觀眾；演出因群眾衝進場中而提前結束。",
+            "src": "https://en.wikipedia.org/wiki/Fania_All-Stars",
+            "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf",
+            "from": "new"
+          },
+          {
+            "f": "1975 年發行的《Live at Yankee Stadium》雙碟，2003 年入選美國國會圖書館的國家錄音登記名冊（National Recording Registry）。",
+            "src": "https://en.wikipedia.org/wiki/Fania_All-Stars",
+            "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1968 年成團；1971 年 Cheetah 現場；1973 年 8 月洋基球場；1975 年《Live at Yankee Stadium》發行。",
+            "src": "https://en.wikipedia.org/wiki/Fania_All-Stars",
+            "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1973 年洋基球場演出約 4 萬人；專輯 2003 年入選國家錄音登記名冊。",
+        "src": "https://en.wikipedia.org/wiki/Fania_All-Stars",
+        "src2": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "洋基球場演出日期：英文維基與事實庫（Discogs 說明欄）寫 1973 年 8 月 24 日，美國國會圖書館的錄音登記名冊文章寫星期五 8 月 23 日；1973 年 8 月 23 日確為星期四，24 日才是星期五，兩源的『星期五』指向 24 日，但國會圖書館文章寫的是『Friday, August 23』，文內自相矛盾；facts 只寫『1973 年 8 月』，見 pubIssues。",
+      "洋基球場觀眾人數：維基 FAS 條目寫『逾 4 萬』，LOC 文章寫 4 萬，Fania Records 條目寫 4.5 萬；採『約 4 萬』。",
+      "Mongo Santamaría：維基列為原班成員，LOC 文章寫他在 1973 年是受邀的客席；facts 不把他列入成員。"
+    ],
+    "searches": 4,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [
+      {
+        "album": "Latin-Soul-Rock",
+        "claim": "同一條目抄下 1974 年原壓的說明欄：錄於 1973 年 8 月 24 日的洋基球場與紐約 Good Vibrations 錄音室，只有〈Soul Makossa〉錄在聖胡安",
+        "problem": "這句是轉述 Discogs 說明欄，洋基球場日期與美國國會圖書館文章不同（8 月 23 日 vs 24 日，LOC 文內自己也寫成『星期五』但 8 月 23 日是星期四），建議簡介保留轉述語氣，或把日期改成『1973 年 8 月』。另外 LOC 文章說《Live at Yankee Stadium》的音源有一部分取自 1973 年 11 月的波多黎各演出，與簡介無直接衝突。",
+        "src": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf"
+      }
+    ],
+    "notes": "同名混卡檢查：poolAlbums（Live at the Cheetah Vol. 1 1972、Our Latin Thing 1972、Latin-Soul-Rock 1974、Rhythm Machine 1977）皆為 Fania All-Stars，無混卡。搜尋 4 次（維基 FAS、維基 Fania Records、WebSearch 國家錄音登記名冊、LOC 登記名冊 PDF，PDF 需自行解壓抽字才讀到全文）。LOC 登記名冊文章是客座作者 Thomas Muriel 的文章（該 PDF 附註『views of the author』），非獨立於 2010 年再版說明，已在 src2 使用，寫作層請寫『美國國會圖書館的國家錄音登記名冊』而不要把文章意見寫成館方立場。第二源皆實際開頁讀過；兩個維基條目（FAS、Fania Records）視為同站不同條目，非獨立。未收入 facts：(1) 單源——維基 FAS 寫 1974 年在金夏沙（薩伊）20 May 體育場演出（容納 8 萬人，與 2008 年紀錄片《Soul Power》相關）、1979 年 Havana Jam、2015 年 ASCAP Latin Heritage Award；(2) 單源——LOC 文章寫《Live at Yankee Stadium》為樂團帶來第一次葛萊美提名（提名、非得獎，單源）；(3) 單源——LOC 文章寫洋基球場第一場有 Mongo Santamaría、Jan Hammer、Jorge Santana 與 Billy Cobham 客席，證明樂團『搖滾與靈魂都能玩』，並寫第二場因群眾衝進場而中斷、1973 年 11 月 Roberto Clemente Coliseum 開幕演出亦被拍攝錄音，且 Celia Cruz 在洋基球場並未登台；(4) 單源——事實庫（Johnny Pacheco 維基）稱《Our Latin Thing》是第一部談 salsa 對紐約拉丁裔文化影響的電影，屬『第一部』類宣稱，且只有單源，放 notes；(5) 單源——LOC 文章寫 Barretto 因 Orestes Vilató 與 Típica 73 風波要求換人、Pacheco 與 Masucci 不得不讓 Vilató 離團、Nicky Marrero 接手、Adalberto Santiago 離團，屬團內糾紛，不收；(6) 單源——Fania Records 維基寫 1964 年的廠名來自哈瓦那一家樂手常去的小餐館、Masucci 約 1967 年買斷 Pacheco 股份後成唯一老闆（此年份與 1964 年成立並列似有矛盾，不收）、2018 年 Concord 併購；(7) 『Beatles of salsa』『Motown』之類比喻沒有查到來源，不收；(8) 在世者累計銷量不適用本團，但仍未寫銷量。 追加撤出 facts 的條目：(a) 單源——維基 FAS 寫 1971 年 8 月 26 日 Cheetah 現場錄音（上線簡介與事實庫同），facts 只寫 1971 年；(b) 單源——descarga 與 bolero 是維基 FAS 的風格描述；(c) 單源——LOC 文章寫 Celia Cruz 是在 1973 年 11 月波多黎各 Roberto Clemente Coliseum 的演出才正式登台，不是洋基球場。"
   }
 ]
