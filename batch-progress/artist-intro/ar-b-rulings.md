@@ -291,3 +291,9 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 026 g4 交件（QA 本組 0，四組齊）。thin：尾島由郎。Zodiac 銷量與成軍／解散年不寫；Brand Nubian 地位為弱來源。pubIssues 1（浜瀬元彦《Reminiscence》年份 1985／1986）→ 本機待核。w2（g3+g4）派出。
 - 026 w2 審稿無修正。The Avalanches 第 16 屆 Australian Music Prize（ABC Double J、NME）、Vitalic《Disco Boy》2024 年 Prix Lumières 最佳電影音樂（本人官方帳號、Lumières 條目）經主線 WebSearch 核實。Tiësto「第一位在奧運開幕式現場演出的 DJ」有兩個獨立來源，照准；DJ Mag 百大不寫。Trentemøller 2007 年丹麥音樂獎年度製作人屬獎項事實，照准。
 - **ar-b-026 上線**：40 位，reviewFixes 2。**第六段（017–026）十批全部上線。**
+
+## 第七段（ar-b-027～032 ＋ ar-c-001～004，店主 2026-10-02「繼續十批」）
+
+- **流程**：十批先一次切卡單（`cut/<批>.txt` 取自 progress keys）並跑 `artist-extract.mjs --lean`。各批特注改放 scratchpad `notes/<批>.txt`，由 notes10.sh 帶入。
+- **C 級審稿深度**：計畫書 §7-4 未定案，比照 A／B 級逐位審（較嚴的一邊，可逆）。C 級裁定另開 `ar-c-rulings.md`。
+- **合作型與編制名稱**（「某某 Quartet／Trio」「A, B & C」）：沿用 §7-3 建議，以卡上字串為一位，以領隊或搭檔為主體，寫明是哪一個編制名義。
