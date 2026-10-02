@@ -328,5 +328,315 @@
   "failedFetches": 1,
   "status": "full",
   "notes": "搜尋 7 次：維基 Britten、Britannica Britten、WebSearch（Peter Grimes 與英國歌劇）、西敏寺 Britten 頁、維基 War Requiem、維基 Peter Grimes、Britannica War Requiem；失敗 1 次（brittenpearsarts.org 403）。事實庫無研究稿。War Requiem 考文垂首演、1963 Decca 錄音與銷量（維基 War Requiem 單源）、2019 年美國國會圖書館國家錄音登記、Peter Grimes 取材 Crabbe 詩集《The Borough》與紐約時報稱它是二十世紀真正的歌劇傑作（維基單源）、Britannica 稱其歌劇為 Purcell 之後最好的英國歌劇（單源）、Order of Merit 1965 與 Companion of Honour 1953（西敏寺單源，維基未對照）、1978 年西敏寺紀念石（單源）、拒服兵役者身分（維基單源）：皆未收，寫作層如需可放 notes 層級。Britannica 與維基首段措辭不同但都指向『核心人物／歌劇前列』，legacy 第一條的兩半句各自出自一源，寫作層請寫成『維基稱…』或只取其一。『維基稱…；Britannica 稱…』的各半句若被改寫成一般陳述，應只寫『被視為英國二十世紀音樂的重要人物』。Pears 是最重要的合作夥伴（維基與西敏寺頁皆記同行與長期合作）；他首演哪些歌劇主角未逐一核對，寫作層只可寫他演 Peter Grimes。"
+ },
+ {
+  "key": "budapest string quartet",
+  "name": "Budapest String Quartet",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1917 年由四位布達佩斯歌劇院的弦樂手組成；第一場演出在當時屬匈牙利的 Kolozsvár（今羅馬尼亞 Cluj-Napoca）。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+      "src2": "https://time.com/archive/6633815/chamber-music-farewell-to-the-budapest/",
+      "from": "new"
+     },
+     {
+      "f": "最後的四人全是俄國出生：Josef Roisman 與 Boris Kroyt 來自敖德薩，Schneider 兄弟（Mischa 與 Alexander）來自維爾紐斯。",
+      "src": "https://time.com/archive/6633815/chamber-music-farewell-to-the-budapest/",
+      "src2": "https://weta.org/fm/classical-score/budapest-quartet-century-music-library-congress",
+      "from": "new"
+     },
+     {
+      "f": "最後三十年的固定陣容是第一小提琴 Josef Roisman、第二小提琴 Alexander Schneider、大提琴 Mischa Schneider、中提琴 Boris Kroyt。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+      "src2": "https://townline.org/review-potpourri-budapest-string-quartet/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團員陸續換成俄國出生的樂手，風格卻維持連貫；Time 1969 年的告別報導稱他們「a continuity of style despite changes in personnel」。",
+      "src": "https://time.com/archive/6633815/chamber-music-farewell-to-the-budapest/",
+      "src2": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+      "from": "new"
+     },
+     {
+      "f": "1940 年他們離開 RCA Victor 轉投 Columbia；維基稱此後他們為 Columbia 錄下 89 首作品，多年來是該廠古典部門最暢銷的藝人。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+      "src2": "https://townline.org/review-potpourri-budapest-string-quartet/",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "國會圖書館網站文章（WETA 轉述）稱他們在進入圖書館駐館時，已是世界上最成功的古典室內樂團；Time 1969 年的告別報導稱他們是「本世紀最受歡迎的弦樂四重奏，也是最好的」。",
+      "src": "https://weta.org/fm/classical-score/budapest-quartet-century-music-library-congress",
+      "src2": "https://time.com/archive/6633815/chamber-music-farewell-to-the-budapest/",
+      "from": "new"
+     },
+     {
+      "f": "他們固定使用國會圖書館收藏的五把史特拉底瓦里弦樂器（贊助人 Gertrude Clarke Whittall 買下捐贈），在該館的音樂廳演出多年；1962 年 3 月舉行最後一場，之後由茱莉亞四重奏接手。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+      "src2": "https://weta.org/fm/classical-score/budapest-quartet-century-music-library-congress",
+      "from": "new"
+     },
+     {
+      "f": "1936 年 11 月他們抵達紐約時，樂評把他們與 Toscanini 和 Schnabel 相提並論。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1917 年成立，1967 年解散，前後約半世紀。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+      "src2": "https://townline.org/review-potpourri-budapest-string-quartet/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1917 年在 Kolozsvár 首演。",
+    "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+    "src2": "https://time.com/archive/6633815/chamber-music-farewell-to-the-budapest/",
+    "from": "new"
+   },
+   {
+    "f": "1962 年 3 月在國會圖書館舉行最後一場音樂會。",
+    "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+    "src2": "https://weta.org/fm/classical-score/budapest-quartet-century-music-library-congress",
+    "from": "new"
+   },
+   {
+    "f": "1967 年解散。",
+    "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+    "src2": "https://townline.org/review-potpourri-budapest-string-quartet/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "國會圖書館駐館起年：維基寫 1939 年受委託，WETA 寫 1938 至 1962 年共 462 場音樂會，兩源不一致，facts 不寫起年；上線簡介寫 1939 年，見 pubIssues。",
+   "贊助人捐琴年份：WETA 寫 1935 年，維基未載年份，facts 不寫。",
+   "『成立時三匈一荷』只見維基（bank），facts 第二條改用 Time 與 WETA 的『最後四人俄國出生』。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Ravel: Quartet in F major / Debussy: Quartet in G minor",
+    "claim": "此後三十五年他們為 Columbia 錄下 89 首作品",
+    "problem": "1940 年轉投 Columbia、1967 年解散，只有約 27 年；維基人物條目首段寫『from 1940 through 1967 it recorded for Columbia』，內文另有一句『Over 35 years the quartet recorded 89 individual works』，條目自己前後不一，建議改寫成『在 Columbia 期間錄下 89 首作品』並避開年數",
+    "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet"
+   },
+   {
+    "album": "Mozart: Haydn Quartets",
+    "claim": "1939 年美方委託他們固定使用館藏五把史特拉底瓦里",
+    "problem": "WETA 轉述的國會圖書館資料寫他們 1938 至 1962 年在該館演出，與維基的 1939 差一年，兩源不一致，建議改成『1930 年代末』",
+    "src": "https://weta.org/fm/classical-score/budapest-quartet-century-music-library-congress"
+   }
+  ],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "搜尋 7 次：WebSearch（成立與國會圖書館）、維基頁、townline.org 評論、WebSearch（聲望）、WETA、Time 1969 告別報導、維基原始碼（核對 Over 35 years 一句，curl）；失敗 4 次（Discography of American Historical Recordings 403、loc.gov 集合頁 403、Britannica 404、NASA Voyager 頁轉址至 missing.html）。實際開頁的來源：維基、townline.org、WETA、Time 1969。⚠ townline.org 是地方報評論，內容與維基敘述多重疊，獨立性有限，只拿來佐證成立年、解散年、後三十年陣容與 1940 轉廠牌；第二條 sound 的 Columbia 一條是 bank（維基），townline 只佐證 1940 年離開 RCA、改錄 Columbia，『89 首』『最暢銷』仍只見維基單源（寫作層若要寫，請用『維基記』）。facts 的『Time 1969 年』是雜誌文字評述，不是榜單，可具名引用；若覺得不宜，可略。未收（單源）：貝多芬《Cavatina》收進 1977 年 Voyager 金唱片（維基單源，NASA 頁取不到）；『為後來四重奏樹立高標準』（維基單源）；貝多芬十六首四重奏錄過三套（Time 單源）；『布達佩斯 1886 年前身四重奏』（WETA 單源）；成員健康與解散原因（Time 單源，且涉疾病，不收）。哥倫比亞兩百萬張銷量為維基單源敘述，此團已解散但仍不收累計銷量。『成立時三匈一荷』僅維基單源。成員死亡年份只見 townline 列出，未收。"
+ },
+ {
+  "key": "carlo maria giulini",
+  "name": "Carlo Maria Giulini",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1914 年 5 月 9 日生於義大利南部的巴列塔（Barletta），在波爾察諾（Bolzano）長大，2005 年 6 月 14 日在布雷西亞過世，享年 91 歲。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://www.classicalmusicdaily.com/articles/g/c/carlo-maria-giulini.htm",
+      "from": "new"
+     },
+     {
+      "f": "他進羅馬的聖切契莉亞音樂院，先學中提琴與指揮，並在學院管弦樂團拉中提琴。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://www.britannica.com/biography/Carlo-Maria-Giulini",
+      "from": "new"
+     },
+     {
+      "f": "二戰期間他因和平主義與反法西斯的立場，不願繼續為德軍一方作戰，躲了起來，約九個月，直到羅馬解放。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://theviolinchannel.com/on-this-day-carlo-maria-giulini-died-in-2005/",
+      "from": "new"
+     },
+     {
+      "f": "1944 年羅馬解放後，他登台指揮，是他指揮生涯的起點；整個生涯橫跨 54 年，1998 年退休。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://theviolinchannel.com/on-this-day-carlo-maria-giulini-died-in-2005/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的指揮姿態安靜，不靠大動作：維基引述《紐約時報》訃聞，稱他靠「serene authority」（沉靜的權威）取得成果，不是獨裁型或在台上猛衝的指揮；Classical Music Daily 則說他有神祕主義者的名聲，指揮時除了手指與眼神幾乎不動，排練時也很少提高聲量。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://www.classicalmusicdaily.com/articles/g/c/carlo-maria-giulini.htm",
+      "from": "new"
+     },
+     {
+      "f": "他以威爾第與馬勒的詮釋見稱，也長期指揮莫札特。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://www.britannica.com/biography/Carlo-Maria-Giulini",
+      "from": "new"
+     },
+     {
+      "f": "他在 1950 年代的 La Scala 與導演 Zeffirelli、女高音 Callas 合作；1960 年代末起，他決定不再在歌劇院指揮，把時間放在交響樂團上。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://www.britannica.com/biography/Carlo-Maria-Giulini",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他長期與芝加哥交響樂團、倫敦愛樂管弦樂團（Philharmonia）合作；1973 至 1976 年任維也納交響樂團音樂總監，1978 至 1984 年任洛杉磯愛樂的首席指揮兼音樂總監。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://www.britannica.com/biography/Carlo-Maria-Giulini",
+      "from": "new"
+     },
+     {
+      "f": "Classical Music Daily 稱他是「probably one of the greatest musicians of the 20th century」與「the last of the great Romantic conductors」；Britannica 稱他是被拿來與 Toscanini 相比的浪漫派指揮。",
+      "src": "https://www.classicalmusicdaily.com/articles/g/c/carlo-maria-giulini.htm",
+      "src2": "https://www.britannica.com/biography/Carlo-Maria-Giulini",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1950 年代在 La Scala 任職（接任 de Sabata）；1973 至 1976 年任維也納交響樂團音樂總監；1978 至 1984 年任洛杉磯愛樂首席指揮。",
+      "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+      "src2": "https://www.britannica.com/biography/Carlo-Maria-Giulini",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1944 年羅馬解放後登台指揮。",
+    "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+    "src2": "https://theviolinchannel.com/on-this-day-carlo-maria-giulini-died-in-2005/",
+    "from": "new"
+   },
+   {
+    "f": "1978 至 1984 年任洛杉磯愛樂首席指揮。",
+    "src": "https://en.wikipedia.org/wiki/Carlo_Maria_Giulini",
+    "src2": "https://www.britannica.com/biography/Carlo-Maria-Giulini",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "離開歌劇院的年份：維基寫 1968 年（羅馬《費加洛婚禮》製作之後，之後 14 年沒進歌劇院），Britannica 寫 1967 年，兩源不一致，facts 只寫『1960 年代末』。",
+   "La Scala 任期：Britannica 寫 1953 年接任、1955 年離開，維基寫約五年，兩源不一致，facts 不寫年份。",
+   "芝加哥交響樂團首席客座年份（1969 至 1972）只見維基單源，facts 不寫該段年份。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "搜尋 6 次：維基頁、Britannica、WebSearch（訃聞）、Classical Music Daily、維基原始碼（curl，讀全文）、The Violin Channel；失敗 3 次（Telegraph、NYT、Guardian 三站皆被工具封鎖，未取得）。事實庫無研究稿。實際開頁讀到：維基、Britannica、Classical Music Daily、The Violin Channel。芝加哥交響樂團 1969 至 1972 年首席客座只見維基單源，facts 未收年份；其餘年份兩源一致。Classical Music Daily 的 legacy 引文（greatest musicians、last of the great Romantic conductors）是該站自己的評語，未見其他獨立站佐證，且 Britannica 只寫『浪漫派、與 Toscanini 相比』，寫作層請具名寫『Classical Music Daily 稱』或略去。未收（單源）：維基記 1950 年他在 Bergamo 指揮《茶花女》被 Toscanini 注意、兩人成為摯友，Toscanini 推薦他任 La Scala 職位；1955 年 Visconti 製作、Callas 主演的《茶花女》加演 17 場；因 1956 年 Callas 被噓而辭任；1944 年戰後第一場演出是少數未沾法西斯的指揮、演出布拉姆斯第四號交響曲；1982 年《紐約時報》雜誌引述『I get mad when I hear the orchestra is an instrument』（Violin Channel 單源）；榮譽（義大利共和國功績勳章大十字、皇家音樂院 1972 年榮譽會員，維基單源）；葛萊美與留聲機獎（維基單源，未見獎項屆次，不收）；躲藏九個月與猶太家庭同藏、娶妻（維基單源，九個月 Violin Channel 同有）。事實庫無本藝人的簡介或研究稿，卡池專輯《Mozart: Don Giovanni》（1990）、《Mozart: Le nozze di Figaro》（1961）、《Verdi: Requiem》（1964）三張上線簡介為空。"
+ },
+ {
+  "key": "carlos kleiber",
+  "name": "Carlos Kleiber",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1930 年 7 月 3 日生於柏林，2004 年 7 月 13 日在斯洛維尼亞的 Konjšica 過世，享年 74 歲。",
+      "src": "https://en.wikipedia.org/wiki/Carlos_Kleiber",
+      "src2": "https://ionarts.blogspot.com/2004/07/in-memoriam-carlos-kleiber.html",
+      "from": "new"
+     },
+     {
+      "f": "他是指揮名家 Erich Kleiber 的兒子，在阿根廷長大。",
+      "src": "https://en.wikipedia.org/wiki/Carlos_Kleiber",
+      "src2": "https://www.classicalmusicdaily.com/articles/k/c/carlos-kleiber.htm",
+      "from": "new"
+     },
+     {
+      "f": "父親不贊成他走指揮這條路。",
+      "src": "https://en.wikipedia.org/wiki/Carlos_Kleiber",
+      "src2": "https://ionarts.blogspot.com/2004/07/in-memoriam-carlos-kleiber.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他自由接案後只在少數場合指揮，曲目收得很窄，反覆回到同一批作品，如貝多芬第五與第七號交響曲、舒伯特第三號交響曲、《Der Rosenkavalier》與《La Traviata》；1970 年代起沒有固定的樂團職位。",
+      "src": "https://en.wikipedia.org/wiki/Carlos_Kleiber",
+      "src2": "https://ionarts.blogspot.com/2004/07/in-memoriam-carlos-kleiber.html",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "英文維基首段稱他「widely regarded as among the greatest conductors of all time」；Classical Music Daily 也稱他被視為二十世紀最偉大的指揮之一。",
+      "src": "https://en.wikipedia.org/wiki/Carlos_Kleiber",
+      "src2": "https://www.classicalmusicdaily.com/articles/k/c/carlos-kleiber.htm",
+      "from": "new"
+     },
+     {
+      "f": "他個性極度害羞，刻意遠離公眾視線。",
+      "src": "https://ionarts.blogspot.com/2004/07/in-memoriam-carlos-kleiber.html",
+      "src2": "https://en.wikipedia.org/wiki/Carlos_Kleiber",
+      "from": "new"
+     },
+     {
+      "f": "他葬在斯洛維尼亞的 Konjšica，與先他七個月過世的妻子（舞者 Stanislava Brezovar）相鄰。",
+      "src": "https://en.wikipedia.org/wiki/Carlos_Kleiber",
+      "src2": "https://ionarts.blogspot.com/2004/07/in-memoriam-carlos-kleiber.html",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "出道年份：維基寫 1952 年在慕尼黑 Gärtnerplatz 劇院任 répétiteur、1954 年在波茨坦以《Gasparone》指揮出道，Classical Music Daily 寫 1952 年於 La Plata、1953 年於 Gärtnerplatz 歐洲首演，兩源不一致，facts 不寫。",
+   "母親：維基寫母親是美國人 Ruth Goodrich（愛荷華州 Waterloo），Classical Music Daily 寫母親來自斯洛維尼亞，兩源衝突；Classical Music Daily 疑有錯（Slovenia 是 Kleiber 妻子的家鄉），facts 不寫母親國籍。",
+   "Ionarts 的讀者更正：安葬的莊園屬於『妻子的家族，不是 C.K. 母親的』；維基寫與妻子相鄰，採維基＋Ionarts 一致的『與妻子相鄰』。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "搜尋 5 次：維基頁、WebSearch（訃聞）、Ionarts 追悼文、維基原始碼（curl，讀全文）、Classical Music Daily；失敗 4 次（Britannica 404、NPR 503、Washington Post 403、Deutsche Grammophon 404，已達上限，之後未再嘗試）。事實庫無研究稿。實際開頁讀到：維基、Ionarts、Classical Music Daily。⚠ Ionarts 是個人音樂部落格，引述前人話語，非獨立的大型媒體，且 Ionarts 與 Classical Music Daily 各有錯（Classical Music Daily 的母親、出道年疑錯），故人生細節大多只收兩源一致處。未收（單源）：維基記 ETH Zurich 讀化學後轉向音樂；1958 至 1964 年杜塞道夫、1964 至 1966 年蘇黎世、1966 至 1973 年斯圖加特的職位；1966 年愛丁堡音樂節英國首演《Wozzeck》；1978 年首次與芝加哥交響樂團合作；1990 年代初退出音樂會；Plácido Domingo 稱他是『當代最偉大的指揮』（單源，書籍）；Abbado 稱他是 20 世紀最偉大的指揮之一『甚至是最偉大』（維基引 Rai Radio 3，單源）、Abbado 認為他是最佳《Tristan》指揮與 Karajan 稱『如此偉大的音樂家其實不愛音樂』（Ionarts 單源）；BBC Music Magazine 2011 年百位指揮家票選為史上最偉大（雜誌榜單，依規不收）；留聲機名人堂 2012 年入選（維基單源）；各國勳章（維基單源，Pour le Mérite 1990 等）；『一生只指揮 96 場音樂會、約 400 場歌劇』（維基與 BBC 稿，單源）。錄音名單（與維也納愛樂的貝多芬第五、第七號、布拉姆斯第四號、舒伯特第三與第八號，錄音很少）只見維基單源，已移出 facts，寫作層若要寫請具名『維基記』。 維基另記他『一生據稱只接受過一次訪問』（單源，已不放 facts）。"
  }
 ]

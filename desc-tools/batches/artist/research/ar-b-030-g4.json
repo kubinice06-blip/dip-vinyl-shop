@@ -326,5 +326,142 @@
   "failedFetches": 3,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：poolAlbums 四張（柴可夫斯基《悲愴》1977、Dvořák 大提琴協奏曲 Karajan 1969、Shostakovich 大提琴協奏曲第一號 1960、Prokofiev《羅密歐與茱麗葉》1983）都是大提琴家兼指揮 Rostropovich，無混卡；注意《悲愴》與《羅密歐》是他的指揮錄音，Dvořák 與 Shostakovich 是他的大提琴錄音。成功請求 7 次：維基、Britannica、WebSearch（首演作品與柏林圍牆；內含兩組查詢，保守計為 2 次）、classical-music.com 專文、Classic FM 圖輯頁、WebSearch（訃聞與學生）；合計 7。失敗 3 次：Strings 雜誌（內容空）、NPR 503、SFGate（頁面載入失敗）。非獨立：Classic FM 與 classical-music.com 是不同出版社，但柏林圍牆一條 classical-music.com 只寫『圍牆倒下時演出』，細節（Bach 組曲）僅 Classic FM 頁面實際讀到，另有搜尋摘要提到 11 月 11 日、Checkpoint Charlie，未開頁，不收日期。單源或未收：（1）維基稱約 50 個獎項、含 Polar Music Prize 與 Ernst von Siemens 音樂獎（單源）；（2）Britannica 稱 1987 年總統自由勳章、1992 年甘迺迪中心榮譽（單源）；（3）維基稱喪禮在莫斯科救世主大教堂舉行、普丁與西班牙王后 Sofía 到場（單源）；（4）Britannica 稱 1975 年宣布不返回蘇聯（單源）；（5）classical-music.com 稱他對 Lutosławski 說『別想著大提琴去寫，我就是大提琴』、Britten 五部、Shostakovich 六部（單源）；（6）Shostakovich 大提琴協奏曲第一號 1959 年 10 月 4 日在列寧格勒由他首演並題獻給他（僅搜尋摘要，來源 BSO 與維基 Concerto 條目未開頁，不收）；（7）Natalia Gutman 曾向他學習（僅搜尋摘要）；（8）1945 年蘇聯首屆青年音樂家比賽金牌、1950 年史達林獎（單源，維基）。『影響力最大的大提琴家』是雜誌專文用語，非權威票選，寫作層以『classical-music.com 稱』具名帶過。事實庫無任何既有事實，故 origin、sound、legacy、era 全是新查。"
+ },
+ {
+  "key": "stars of the lid",
+  "name": "Stars of the Lid",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Stars of the Lid 是美國德州奧斯汀的 ambient 雙人組，1990 年代初由 Brian McBride 與 Adam Wiltzie 成立。",
+      "src": "https://en.wikipedia.org/wiki/Stars_of_the_Lid",
+      "src2": "https://exclaim.ca/music/article/stars_of_the_lids_brian_mcbride_dies_at_53",
+      "from": "new"
+     },
+     {
+      "f": "團名取自 McBride 的說法：指閉上眼睛時，位於眼球與眼瞼之間、屬於你自己的私人電影院。",
+      "src": "https://en.wikipedia.org/wiki/Stars_of_the_Lid",
+      "src2": "https://www.nme.com/news/music/brian-mcbride-of-ambient-legends-stars-of-the-lid-dies-aged-53-3489483",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的音樂以加了效果的吉他漂流音（drone）為底，後來加入鋼琴、弦樂與銅管；Exclaim 說兩人後期的角色近乎指揮，調配出溫暖而濃密的音色。",
+      "src": "https://en.wikipedia.org/wiki/Stars_of_the_Lid",
+      "src2": "https://exclaim.ca/music/article/stars_of_the_lids_brian_mcbride_dies_at_53",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2023 年 McBride 過世時，NME 與 Far Out 的訃聞分別稱他們為 ambient 傳奇與開創性的 ambient 團體（seminal ambient collective）。",
+      "src": "https://www.nme.com/news/music/brian-mcbride-of-ambient-legends-stars-of-the-lid-dies-aged-53-3489483",
+      "src2": "https://faroutmagazine.co.uk/stars-of-the-lid-brian-mcbride-dies-53/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2023 年 Brian McBride 過世，Adam Wiltzie 成為唯一成員。",
+      "src": "https://en.wikipedia.org/wiki/Stars_of_the_Lid",
+      "src2": "https://exclaim.ca/music/article/stars_of_the_lids_brian_mcbride_dies_at_53",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "成軍時間：英文維基寫 1992 年 12 月 25 日成立於奧斯汀；NME、Exclaim、Far Out 與搜尋摘要寫 1993 年；兩種說法不一致，facts 只寫『1990 年代初』。",
+   "首張專輯年份：NME 與 Far Out 寫 1995 年《Music for Nitrous Oxide》是出道作，搜尋摘要寫 1994 年首張；來源不一致，不寫出道年，也不寫『首張』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：poolAlbums 四張（The Tired Sounds…、And Their Refinement of the Decline、Avec Laudenum、Gravitational Pull…）都是奧斯汀雙人組 Stars of the Lid，無混卡。成功請求 8 次：維基 Stars of the Lid、WebSearch（成軍與廠牌）、維基 Brian McBride、WebSearch（影響與訃聞）、NME 訃聞、Exclaim 訃聞、Far Out 訃聞、WebSearch（Chris Walla 與 clipping. 悼文）；失敗 4 次（上限內）：AllMusic 403、starsofthelidforever.com 回傳空內容、Rolling Stone 307 後 tollbit 402、NPR 503。達 8 次搜尋上限，未再開頁。非獨立：legacy 唯一一條是兩家媒體的訃聞標題與措辭，屬媒體稱呼、不是權威票選或名人堂，寫作層若用請具名『NME 稱』；origin 的 McBride『團名說法』第二源為 NME 頁面實際讀到。legacy 格因此偏弱，標 thin。單源或未收：（1）維基稱受 Arvo Pärt、Zbigniew Preisner、Brian Eno、Talk Talk、Labradford 影響（維基單源；搜尋摘要也有但未開頁）；（2）NME 引 Chris Walla 說他們的唱片『滲進自己的作品』，並引 clipping. 說『Stars of the Lid 對我的影響無法估量』（NME 單源，第二源僅見搜尋摘要，且 clipping. 的原句未在搜尋結果出現；Walla 一句另有搜尋結果顯示為其社群貼文）——若主線要用，寫『NME 引述 Chris Walla』；（3）維基稱 2007 年雙專輯《And Their Refinement of the Decline》獲廣泛好評、2007 年 12 月 Somewhere Cold 網站選為年度藝人（單源，網站不具權威性）；（4）Exclaim 稱 2001 年雙專輯《The Tired Sounds of Stars of the Lid》帶來更廣的樂評成功，早期是與 Kirk Laktas 的三人組（單源）；（5）維基稱發行廠牌為 Sedimental、Kranky、Sub Rosa（履歷，不收）；（6）McBride 1970 年生於德州 Irving、1990 年搬到奧斯汀、2023 年 8 月過世享年 53 歲（維基單源，死因不收）。 （7）Exclaim 稱首張專輯用 drone 吉他並取樣電影與電視聲音（含《Apocalypse Now》《Star Trek: The Next Generation》）——單源，已自 facts 撤下。"
+ },
+ {
+  "key": "鷺巣詩郎",
+  "name": "鷺巣詩郎",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "鷺巣詩郎（Shiro Sagisu）1957 年 8 月 29 日生於東京世田谷。",
+      "src": "https://ja.wikipedia.org/wiki/%E9%B7%BA%E5%B7%A3%E8%A9%A9%E9%83%8E",
+      "src2": "https://en.wikipedia.org/wiki/Shiro_Sagisu",
+      "from": "new"
+     },
+     {
+      "f": "父親是漫畫家、特攝與動畫製作人うしおそうじ（本名鷺巣富雄，1921–2004 年），創辦 P Production。",
+      "src": "https://ja.wikipedia.org/wiki/%E9%B7%BA%E5%B7%A3%E8%A9%A9%E9%83%8E",
+      "src2": "https://www.universal-music.co.jp/sagisu-shiro/biography/",
+      "from": "new"
+     },
+     {
+      "f": "他 1970 年代末從 THE SQUARE（後來的 T-SQUARE）專輯的編曲者起步，1979 年發表專輯《EYES》。",
+      "src": "https://ja.wikipedia.org/wiki/%E9%B7%BA%E5%B7%A3%E8%A9%A9%E9%83%8E",
+      "src2": "https://en.wikipedia.org/wiki/Shiro_Sagisu",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他是庵野秀明的長期合作者：1995 年起為《新世紀福音戰士》系列配樂，一路做到 2021 年的《Evangelion: 3.0+1.0 Thrice Upon a Time》，2016 年也為庵野的《新・哥吉拉》（シン・ゴジラ）配樂。",
+      "src": "https://en.wikipedia.org/wiki/Shiro_Sagisu",
+      "src2": "https://www.universal-music.co.jp/sagisu-shiro/biography/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "東京 2020 奧運開幕式上，由 Misia 演唱的日本國歌〈君が代〉編曲出自鷺巣詩郎。",
+      "src": "https://en.wikipedia.org/wiki/Shiro_Sagisu",
+      "src2": "https://www.universal-music.co.jp/sagisu-shiro/biography/",
+      "from": "new"
+     },
+     {
+      "f": "PRESIDENT Online 的專訪稱他是「日本を代表する作編曲家」，並寫他與庵野秀明是正面交鋒的創作夥伴，而不是單純的委託關係。",
+      "src": "https://president.jp/articles/-/27682",
+      "src2": "https://ja.wikipedia.org/wiki/%E9%B7%BA%E5%B7%A3%E8%A9%A9%E9%83%8E",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "加入 THE SQUARE 的年份：英文維基寫 1977 年加入、1979 年轉為全職作編曲；日文維基與 Universal Music Japan 寫 1978 年參與 THE SQUARE 首作／出道；兩邊不一致，facts 只寫『1970 年代末』。",
+   "上線簡介與事實庫的 Apple 目錄筆數、專輯曲目細節與本層補查的生平事實無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "同名檢查：poolAlbums 四張（NEON GENESIS EVANGELION 一至二、THE END OF EVANGELION、Music from EVANGELION:1.0）都是作曲家鷺巣詩郎（Shiro Sagisu），無混卡；日本人名照原文漢字。事實庫只有 Apple 目錄筆數那一條，四則上線簡介都是專輯層級。成功請求 8 次：日文維基、英文維基、WebSearch（日本アカデミー賞與獎項）、日本アカデミー賞官方第 40 回頁、eiga.com 第 40 回報導、WebSearch（家族與 P Production）、Universal Music Japan 官方 BIOGRAPHY、PRESIDENT Online 專訪；無失敗請求。origin 第二源用的 Universal 頁只寫『1957 年東京』，世田谷出自日文與英文維基。非獨立：Universal Music Japan 頁是廠牌官方介紹。legacy 第二條：PRESIDENT 專訪是『稱他是日本代表性作編曲家』的單篇媒體用語，第二源日文維基只支持與庵野長期合作，不支持『代表』一語，寫作層請具名『PRESIDENT Online 稱』，或只寫庵野合作關係。legacy 格偏弱，沒有名人堂或權威票選層級的共識，標 thin；era 格無料標 none（Evangelion 年份已併入 sound）。單源或未收：（1）日本アカデミー賞官方第 40 回頁列鷺巣詩郎以《シン・ゴジラ》為優秀音楽賞五名受獎者之一（官方單源；eiga.com 報導確認同屆最優秀音楽賞是 RADWIMPS《君の名は。》，未提及鷺巣，所以不是兩源，主詞是『優秀賞』，不是最優秀）；（2）英文維基稱 2010 年以《Evangelion: 2.0 You Can (Not) Advance》獲 Tokyo Anime Award 最佳音樂（單源，搜尋未找到第二源）；（3）搜尋摘要稱《シン・ゴジラ》音樂獲第 58 回日本唱片大賞特別賞、《シン・ゴジラ音樂集》是哥吉拉相關專輯銷量最高（僅搜尋摘要，未開頁，不收）；（4）日文維基稱《シン・ゴジラ》與伊福部昭共同掛名、為 Hideo Yashio 與 Ikuko Kawai 等古典跨界歌手製作、為《笑っていいとも！》寫過主題曲（日文維基單源）；（5）PRESIDENT 專訪與搜尋摘要稱他的世田谷老家附設特攝片廠與作畫片廠、童年坐在父親腿上畫畫、受父親精密『匹配畫』（マット画）影響（PRESIDENT 單源）；（6）英文維基稱 1997 年已寫過兩千多首作品（含廣告配樂）（單源）；（7）2004 年父親過世後接掌 P Production（Universal 說他接任代表董事，日文維基與搜尋摘要稱 2004 年；年份未兩源確認，只寫『後來接任』）。"
  }
 ]

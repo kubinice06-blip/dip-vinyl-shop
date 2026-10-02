@@ -329,3 +329,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - **ar-b-029 上線**：40 位，reviewFixes 1。
 - 030 g2 交件（QA：Antal Doráti 搜尋 9 次超限 1 次，該次無事實）。全 full。Doráti 逝世年單源、樂團起訖年兩源不一，不寫；卡池《1812》為 1978 錄音，不得套 Mercury 版。Rubinstein 最後音樂會地點不寫。pubIssues 1（陶喆〈I'm OK〉第 11 屆金曲獎「最佳唱片製作人」與「最佳專輯製作人」獎名待核）→ 本機待核。w1（g1+g2）派出。
 - 030 g3 交件（QA：Eugen Jochum 搜尋 9 次超限 1 次，該次已撤）。全 full。任期年份兩源不一不寫（Colin Davis、Jochum）；Perlman 卡內基首演採 1963。Goldsmith AFI 名次屬榜單，不寫。pubIssues 3（Piazzolla《Adiós Nonino》得知父喪地點；Herrmann《Taxi Driver》過世與錄音時序；Heifetz《Korngold》「第一份錄音、多年唯一」有 1947 廣播轉錄反例）→ 本機待核。
+- 030 w1 審稿（2 處）：Skepta 刪「繼 Dizzee Rascal 之後第二位獲水星獎的 grime MC」（序數宣稱，比照 027 Dizzee 裁定）；玖壹壹 刪「創下該屆每分鐘最高收視率」（在世者最高級紀錄）。玖壹壹 2026-09-11 台中市榮譽獎章經主線 WebSearch 核實（台中市政府、自由時報）。Timbaland 2021《時代》百大屬推選名單，照准。Stormzy「首位在 Glastonbury 壓軸的英國饒舌歌手」屬廣泛報導，照准。
