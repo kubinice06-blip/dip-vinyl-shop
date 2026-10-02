@@ -88,5 +88,101 @@
     "failedFetches": 1,
     "status": "thin",
     "notes": "事實庫為空，從零查。成功請求 8 次：維基 Shabazz Palaces 兩次、WebSearch 兩次（成軍背景；影響與地位）、Cascade PBS Black Arts Legacies Ishmael Butler、維基 Ishmael Butler、愛爾蘭時報訪談、維基 Digable Planets；另有 1 次失敗請求（City Arts 2011 頁面抓回空內容，未計入）。同名檢查：poolAlbums 為《Black Up》《Lese Majesty》《Quazarz: Born on a Gangster Star》，與 Seattle 的 Shabazz Palaces 一致，無混卡。legacy 格偏薄：查不到後輩點名或國家級榮譽；未收 Pitchfork《The 200 Best Albums of the 2010s》第 179 名（雜誌榜單名次不收）。維基 Shabazz Palaces 與 Ishmael Butler 兩條目同站，第二源為同站者標註『非獨立』：成軍 2009 年那條（維基兩條目，非獨立）、Digable Planets 兩條（部分第二源為維基 Butler 條目，非獨立）。單源未收進 facts：（1）Tendai Maraire 是辛巴威 mbira 大師 Dumisani Maraire 之子（單源，維基；搜尋摘要有重述但屬維基轉載，未獨立開頁）；（2）Shabazz Palaces 是 Sub Pop 簽下的第一個嘻哈團體／《Black Up》是該廠牌首張嘻哈發行（單源，維基；搜尋結果出現 Billboard 與 Sub Pop 頁面但未開頁，需寫作層避開）；（3）Butler 事後加入 Sub Pop A&R 團隊（Cascade PBS，Billboard 只看到標題，單源）；（4）Butler 少年時在 Meany Middle School 跟 Wadie Ervin 學薩克斯風爵士與古典（Cascade，單源）；（5）1987 年進麻州大學安姆斯特分校、1989 年輟學搬到布魯克林錄 demo（維基 Butler，單源）；（6）Butler 稱非洲打擊樂與爵士色彩來自家人的音樂偏好（維基，單源）；（7）Cascade 稱標準 4/4 拍少見、很少 A-B-A-B 結構（單源）；（8）Maraire 在 2020 年專輯前離團（維基，單源）。《Black Up》2011 年發行：兩源（維基 Butler、Cascade）都只寫年份，發行廠牌 Sub Pop 兩源皆有。"
+  },
+  {
+    "key": "shaggy",
+    "name": "Shaggy",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Orville Richard Burrell，1968 年 10 月 22 日生於牙買加金斯敦；18 歲時隨母親搬到紐約，落腳布魯克林的 Flatbush 一帶。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          },
+          {
+            "f": "1988 年加入美國海軍陸戰隊，波斯灣戰爭期間隨野戰砲兵部隊服役。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年的成名曲〈Oh Carolina〉是牙買加老歌的 dancehall 翻唱版，維基指原曲是 Folkes Brothers 的 ska 名曲。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1996 年 2 月 28 日第 38 屆葛萊美獎，《Boombastic》拿下最佳雷鬼專輯（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/38th_Annual_Grammy_Awards",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          },
+          {
+            "f": "2007 年獲牙買加國家勳章 Order of Distinction（指揮官級 Commander，CD），理由是對音樂產業的貢獻。",
+            "src": "http://old.jamaica-gleaner.com/gleaner/20071016/ent/ent1.html",
+            "src2": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "from": "new"
+          },
+          {
+            "f": "2000 年專輯《Hot Shot》的〈It Wasn't Me〉登上 Billboard Hot 100 冠軍。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年以〈Oh Carolina〉打出第一支成名曲。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年〈Oh Carolina〉成名。",
+        "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+        "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+        "from": "new"
+      },
+      {
+        "f": "1996 年《Boombastic》拿下葛萊美最佳雷鬼專輯。",
+        "src": "https://en.wikipedia.org/wiki/38th_Annual_Grammy_Awards",
+        "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+        "from": "new"
+      },
+      {
+        "f": "2007 年獲牙買加 Order of Distinction（指揮官級）。",
+        "src": "http://old.jamaica-gleaner.com/gleaner/20071016/ent/ent1.html",
+        "src2": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基稱〈It Wasn't Me〉與〈Angel〉都登上 Hot 100 冠軍；Encyclopedia.com 稱〈It Wasn't Me〉使他成為自 1991 年 Shabba Ranks 以來第一位登上美國流行單曲榜首的雷鬼歌手。後者是『第一位』類宣稱，Shabba Ranks 並未登頂 Hot 100，疑有問題，facts 不收該句，只收 It Wasn't Me 登頂這個事實。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 5,
+    "status": "full",
+    "notes": "事實庫為空，從零查。成功請求 7 次：維基 Shaggy (musician)、WebSearch（生平與葛萊美）、Encyclopedia.com、WebSearch（Order of Distinction）、牙買加 Gleaner 2007 報導、維基第 38 屆葛萊美、WebSearch（Hot 100 冠軍）。失敗請求 5 次（Britannica 404、BlackPast 403、grammy.com 404、兩次 Billboard 被導向 tollbit 付費牆 307／402），超過上限 4 次，照實記載。同名檢查：poolAlbums 為《Boombastic》《Midnite Lover》《Christmas in the Islands》，皆為牙買加的 Shaggy，無混卡。非獨立標註：葛萊美那條的第一源是維基第 38 屆條目、第二源 Encyclopedia.com（獨立）；其餘多條以維基 Shaggy 條目搭 Encyclopedia.com，兩者獨立。2007 年那條的第二源（維基）僅在導言標示 CD 與搜尋摘要提到 2007，年份與等級主要由 Gleaner 支撐。單源未收進 facts：（1）藝名來自《Scooby Doo》卡通角色（Encyclopedia.com 與搜尋摘要；摘要來源頁未開）；（2）服役期間每逢週末開 18 小時車從北卡基地到紐約錄音（Encyclopedia.com，單源）；（3）《Boombastic》在 Billboard 雷鬼榜連續 30 週居冠（Encyclopedia.com，單源）；（4）〈Angel〉也登上 Hot 100 冠軍（維基與搜尋摘要，未開第二頁，單源）；（5）維基稱他隸屬第 10 陸戰團野戰砲兵連（單源）；（6）Shaggy and Friends 慈善演唱會捐助 Bustamante 兒童醫院（搜尋摘要，單源）。在世者累計獎座數與銷量不寫（搜尋摘要提到八次葛萊美提名、兩座，不收）。"
   }
 ]
