@@ -381,5 +381,301 @@
     "status": "full",
     "pubIssues": [],
     "notes": "事實庫無研究稿，三格從零查，用 6 次（維基 en、維基 pt、WebSearch×2、Blue Note、gazetanews）；失敗請求 3 次（Britannica 404、AllMusic 403、Il Mattino 418，不計入）。pool 四張專輯與此人吻合，無同名混卡。era 格：曾想放 1994 年《Verde, Anil…》被視為職涯代表作，但 pt 維基單源（AllMusic 403 未讀），改標 none。Blue Note 是她的唱片公司官方傳記，非獨立第三方；其文字（『the most acclaimed female vocalist to arise in Brazil during the 1990s』）疑為轉引 AllMusic，單源且為宣傳來源，未放 facts，寫作層若要用須寫成『廠牌傳記稱…』或不用。搜尋摘要稱她被視為『同世代最偉大的歌手』，來源不明，未收。單源未收：父親 Carlos Monte 在 Portela 森巴學校任職至 1975 年（pt 維基）、出身 Saboia 義裔家族（en 維基）；首張專輯 MM（1989）與 Veludo Azul 演出（pt 維基）；累計銷量與獎座數（在世者不寫）。Tribalistas 條 src 與 src2 取不同語言／非獨立來源，簡要：pt 維基稱 2003 拉丁葛萊美得獎、Blue Note 稱 Best Brazilian Contemporary Pop Album 得獎。上線簡介核對：Memórias 拉丁葛萊美最佳巴西當代流行專輯與 pt 維基一致；其餘（鑽石唱片、Mais 的製作名單等）未核。"
+  },
+  {
+    "key": "milton nascimento",
+    "name": "Milton Nascimento",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Milton Nascimento 1942 年 10 月 26 日生於里約熱內盧，由養父母 Josino 與 Lília Campos 在米納斯吉拉斯州的 Três Pontas 帶大；養母是音樂老師。",
+            "src": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+            "src2": "https://pt.wikipedia.org/wiki/Milton_Nascimento",
+            "from": "new"
+          },
+          {
+            "f": "1963 年他搬到米納斯首府 Belo Horizonte，認識 Borges 家的兄弟（尤其是 Lô Borges），這段友誼長成後來的 Clube da Esquina（街角俱樂部）運動；成員另有 Beto Guedes、Toninho Horta 與 Wagner Tiso。",
+            "src": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+            "src2": "https://en.wikipedia.org/wiki/Clube_da_Esquina_(album)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1972 年的雙 LP《Clube da Esquina》把 MPB、巴洛克流行、民謠與爵士流行混在一起，另有搖滾、迷幻與古典的成分，披頭四的影響明顯，又帶著米納斯地方的音樂傳統。",
+            "src": "https://en.wikipedia.org/wiki/Clube_da_Esquina_(album)",
+            "src2": "https://www.udiscovermusic.com/stories/milton-nascimento-lo-borges-clube-da-esquina-feature/",
+            "from": "new"
+          },
+          {
+            "f": "他在 Wayne Shorter 1974 年錄音、1975 年 1 月發行的《Native Dancer》中擔任主唱與木吉他，另有與 Fernando Brant、Márcio Borges 合寫的曲目收在專輯裡；這張專輯把爵士、搖滾與放克接上巴西節奏。",
+            "src": "https://en.wikipedia.org/wiki/Native_Dancer_(album)",
+            "src2": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Clube da Esquina》（1972）被視為巴西流行音樂最重要的作品之一：拉丁錄音學院 2012 年稱它是巴西流行音樂的重要作品，udiscovermusic 稱它是 20 世紀最重要的巴西唱片之一。",
+            "src": "https://www.grammy.com/news/latin-academy-announces-2012-special-awards-recipients",
+            "src2": "https://www.udiscovermusic.com/stories/milton-nascimento-lo-borges-clube-da-esquina-feature/",
+            "from": "new"
+          },
+          {
+            "f": "《Native Dancer》是他進入北美市場的國際突破。",
+            "src": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+            "src2": "https://pt.wikipedia.org/wiki/Milton_Nascimento",
+            "from": "new"
+          },
+          {
+            "f": "2012 年拉丁錄音學院頒給他拉丁葛萊美終身成就獎（Lifetime Achievement Award）；他也獲 Berklee 音樂學院榮譽音樂博士。",
+            "src": "https://www.grammy.com/news/latin-academy-announces-2012-special-awards-recipients",
+            "src2": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1967 年他的〈Travessia〉（與 Fernando Brant 合寫）在國際歌曲節（Festival Internacional da Canção）拿下第 2 名，使他在全國嶄露頭角。",
+            "src": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+            "src2": "https://pt.wikipedia.org/wiki/Milton_Nascimento",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1967 年〈Travessia〉在國際歌曲節拿下第 2 名。",
+        "src": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+        "src2": "https://pt.wikipedia.org/wiki/Milton_Nascimento",
+        "from": "new"
+      },
+      {
+        "f": "2012 年獲拉丁葛萊美終身成就獎。",
+        "src": "https://www.grammy.com/news/latin-academy-announces-2012-special-awards-recipients",
+        "src2": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Native Dancer 年份：en 維基寫 1974 年錄音、1975 年 1 月發行；Milton 條目寫 1974 年專輯、pt 維基寫 1975 年合作；facts 寫『1974 年錄音、1975 年 1 月發行』。",
+      "葛萊美獲獎數：Milton en 維基寫五座、pt 維基寫五次提名（含 1998 年《Nascimento》與 2000 年《Crooner》得獎）、Latin Academy 稿寫 three-time Latin GRAMMY and GRAMMY winner；三源不一致，在世者獲獎數也不寫，facts 不收。"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫只有 Clube da Esquina 2 的上線簡介，沒有研究稿，三格從零查，用 8 次（維基 en、維基 pt、維基 Clube da Esquina 專輯、WebSearch、udiscovermusic、維基 Native Dancer、WebSearch、grammy.com 拉丁學院 2012 新聞）；失敗 2 次（Britannica 404、Jazzwise 403，不計入）。pool 四張專輯（Milagre dos Peixes、Courage、Minas、Clube da Esquina 2）與此人吻合，無同名混卡。非獨立：多處 src 與 src2 是維基不同條目或不同語言版。單源未收：養母曾師從 Villa-Lobos、Elis Regina 1966 年錄 Canção do Sal 帶他上電視（單源）；《Clube da Esquina》（1972）發行時被巴西樂評斥為『poor and disposable』後來才被重估（維基專輯條目單源，且為間接引述）；Esperanza Spalding 與 Earth, Wind & Fire 成員稱《Native Dancer》有影響（維基單源）；pt 維基稱他是『一位在國內音樂史上最具影響力的藝術家』（單源）；2022 年巡演告別、最後一場在 Mineirão（pt 維基單源，WebSearch 摘要重述但未開頁）；Latin Academy 稿稱他以假聲與音域見稱、早期作品把非洲化民謠與 bossa nova、古典、爵士融合（單源，且新聞稿語氣）。Latin Academy 2012 稿是學院自己的宣傳稿，但終身成就獎的事實由學院本身發布，可信；寫作層若寫『拉丁錄音學院稱…』則妥。上線簡介 Clube da Esquina 2 的『2013 年說 Angelus 才算 Clube da Esquina 3』『發行當下反應冷淡』本層未核。"
+  },
+  {
+    "key": "miriam makeba",
+    "name": "Miriam Makeba",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Miriam Makeba 1932 年 3 月 4 日生於約翰尼斯堡一帶，父親是科薩人、母親是史瓦帝人，後來在黑人城鎮 Sophiatown 長大。",
+            "src": "https://www.britannica.com/biography/Miriam-Makeba",
+            "src2": "https://www.nhpr.org/2008-11-10/remembering-miriam-makeba-mama-africa",
+            "from": "new"
+          },
+          {
+            "f": "她先在 Manhattan Brothers 當歌手，又加入全女子團體 Skylarks，之後才展開個人生涯。",
+            "src": "https://en.wikipedia.org/wiki/Miriam_Makeba",
+            "src2": "https://www.nhpr.org/2008-11-10/remembering-miriam-makeba-mama-africa",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她把科薩語、township 節奏與爵士接在一起，對當時的美國聽眾是全然陌生的聲音；Britannica 說她特別擅長傳統的科薩與祖魯歌曲。",
+            "src": "https://www.nhpr.org/2008-11-10/remembering-miriam-makeba-mama-africa",
+            "src2": "https://www.britannica.com/biography/Miriam-Makeba",
+            "from": "new"
+          },
+          {
+            "f": "〈Pata Pata〉是她 1967 年最大的商業成功；歌名在科薩語裡是「摸摸」，描寫一種 township 舞蹈。",
+            "src": "https://www.france24.com/en/20081110-south-african-singer-mama-africa-dies-76-obituary",
+            "src2": "https://www.sahistory.org.za/people/miriam-makeba",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她因公開反對種族隔離而無法返回南非，流亡約三十年，期間住過美國與幾內亞；曼德拉獲釋後的 1990 年她回到南非。",
+            "src": "https://en.wikipedia.org/wiki/Miriam_Makeba",
+            "src2": "https://www.sahistory.org.za/people/miriam-makeba",
+            "from": "new"
+          },
+          {
+            "f": "她與 Harry Belafonte 合作的《An Evening with Belafonte/Makeba》拿下葛萊美最佳民謠錄音（得獎，主詞是兩人合作專輯）。",
+            "src": "https://en.wikipedia.org/wiki/Miriam_Makeba",
+            "src2": "https://www.france24.com/en/20081110-south-african-singer-mama-africa-dies-76-obituary",
+            "from": "new"
+          },
+          {
+            "f": "她被稱為 Mama Africa；France 24 訃聞稱她是反種族隔離長期抗爭中最知名的象徵之一，Britannica 稱她是 20 世紀最知名的非洲黑人表演者之一。",
+            "src": "https://www.france24.com/en/20081110-south-african-singer-mama-africa-dies-76-obituary",
+            "src2": "https://www.britannica.com/biography/Miriam-Makeba",
+            "from": "new"
+          },
+          {
+            "f": "她獲瑞典 Polar Music Prize；頒獎評語稱她以音樂積極投身對抗不公與壓迫的鬥爭。",
+            "src": "https://www.polarmusicprize.org/laureates/miriam-makeba",
+            "src2": "https://en.wikipedia.org/wiki/Miriam_Makeba",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1987 年她與 Paul Simon 的《Graceland》巡演同台，重新站上國際舞台。",
+            "src": "https://en.wikipedia.org/wiki/Miriam_Makeba",
+            "src2": "https://www.france24.com/en/20081110-south-african-singer-mama-africa-dies-76-obituary",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "與 Harry Belafonte 合作的《An Evening with Belafonte/Makeba》拿下葛萊美最佳民謠錄音（得獎）。",
+        "src": "https://en.wikipedia.org/wiki/Miriam_Makeba",
+        "src2": "https://www.france24.com/en/20081110-south-african-singer-mama-africa-dies-76-obituary",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "葛萊美年份：en 維基與 SAHO 寫 1966，Britannica、France 24 寫 1965；不一致，facts 不寫年份。",
+      "被撤銷護照／公民身分的年份：en 維基與 France 24 寫 1960，Britannica 寫 1960 年被拒返國、1963 年唱片被禁與護照吊銷，SAHO 寫 1959 年護照被撤、1963 年聯合國作證後失公民身分，NHPR 寫 1963 聯合國、1964 年護照；不一致，facts 只寫『流亡約三十年』，不寫年份。",
+      "《Come Back, Africa》年份：en 維基與 Britannica 寫 1959，SAHO 寫 1957；不寫。",
+      "回南非年份：en、SAHO、NHPR 寫 1990，Britannica 寫 1991 回去演出；採 1990。",
+      "Polar Music Prize 年份：官方頁寫 2002、en 維基寫 2001；不一致，facts 不寫年份。",
+      "逝世日期：en、SAHO 寫 2008 年 11 月 9 日，Britannica 寫 11 月 10 日；facts 未收逝世日（兩源一致只在 2008 年，且不收死因）。"
+    ],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫只有 Sangoma 一份上線簡介，沒有研究稿，三格從零查，用 7 次（維基 en、Britannica、SAHO、WebSearch、France 24、NHPR、Polar Music Prize 官網），上限內。pool 四張專輯（Pata Pata、A Promise、The Magnificent Miriam Makeba、Sangoma）與此人吻合，無同名混卡。『Mama Africa』稱號三源皆有。單源未收：維基稱她是『第一位贏得葛萊美的非洲錄音藝人』（單源，兩源之外也沒查反例，不寫）；SAHO 稱她是第一位有全球前十名熱門曲的黑人女性（單源且說法可疑，不收）；曼德拉稱她『南非的歌后、當之無愧的 Mama Africa、我們鬥爭的母親』（NHPR 單源，WebSearch 未開頁）；1963 年聯合國作證（NHPR、SAHO 兩源寫 1963，en 維基寫 1962 與 1964，不一致，故未收）；1968 年與 Stokely Carmichael 結婚後美國支持者流失（en 單源）；Dag Hammarskjöld 和平獎 1986、Otto Hahn 和平金牌 2001（單源）；1974 年 Zaire 74 演出（en 單源）；曾與 Hugh Masekela 結婚（SAHO 單源，不收）。逝世只收年份 2008（兩源皆有），不收死因。1987 年 Graceland：en 維基寫 1987 Graceland Tour、France 24 寫 1987 年與 Paul Simon 在辛巴威演出，兩源一致；與上線簡介 Sangoma 的說法方向一致，但『錄音期間摔斷腿坐輪椅』『Hugh Masekela 與 Brenda Fassie 參與』本層未核。Makeba 條 sound 第一條中的『Britannica 說她特別擅長…』為出處標示句，寫作層可改寫。"
+  },
+  {
+    "key": "quilapayún",
+    "name": "Quilapayún",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Quilapayún 1965 年成立於智利，創始成員有 Julio Numhauser 與 Carrasco 兄弟 Julio、Eduardo；團名取自馬普切語（Mapudungun），意思是「三撇鬍子」。",
+            "src": "https://en.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "src2": "https://es.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "from": "new"
+          },
+          {
+            "f": "歌手兼作曲家 Víctor Jara 擔任樂團的藝術總監，協助定下他們的演唱風格；黑色 poncho 與鬍子成了樂團的招牌形象。",
+            "src": "https://es.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "src2": "https://en.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們把安地斯樂器（排笛、笛類）與吉他合用，把鄉村傳統接上強烈的社會正義訊息；與同屬 nueva canción 的 Inti-Illimani 並列，對外呈現濃厚的安地斯形象。",
+            "src": "https://www.britannica.com/topic/Quilapayun",
+            "src2": "https://en.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "from": "new"
+          },
+          {
+            "f": "1968 年的《X Vietnam》採革命民歌風格，在智利全國走紅，並促成 DICAP 廠牌誕生，成為智利新歌運動（Nueva Canción Chilena）的重要平台。",
+            "src": "https://en.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "src2": "https://es.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1970 年他們錄下 Luis Advis 的《Cantata Santa María de Iquique》；西班牙文維基稱它成為智利音樂的重要作品，英文維基稱不少音樂學者視它為拉丁美洲錄音音樂史上最重要的作品之一。",
+            "src": "https://es.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "src2": "https://en.wikipedia.org/wiki/Cantata_Santa_Mar%C3%ADa_de_Iquique",
+            "from": "new"
+          },
+          {
+            "f": "〈El pueblo unido jamás será vencido〉由 Sergio Ortega 作曲、Quilapayún 參與詞作，1975 年收進 Quilapayún 與 Ortega 合作的同名專輯。",
+            "src": "https://en.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "src2": "https://en.wikipedia.org/wiki/El_Pueblo_Unido_Jam%C3%A1s_Ser%C3%A1_Vencido_(album)",
+            "from": "new"
+          },
+          {
+            "f": "1973 年政變後，團體被迫流亡法國約 15 年，1980 年代末回到智利。",
+            "src": "https://en.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "src2": "https://www.britannica.com/topic/Quilapayun",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1975 年在流亡中發行《¡El pueblo unido jamás será vencido!》專輯，與 Sergio Ortega 合作，收錄同名歌曲。",
+            "src": "https://en.wikipedia.org/wiki/El_Pueblo_Unido_Jam%C3%A1s_Ser%C3%A1_Vencido_(album)",
+            "src2": "https://en.wikipedia.org/wiki/Quilapay%C3%BAn",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1970 年錄下 Luis Advis 的《Cantata Santa María de Iquique》。",
+        "src": "https://es.wikipedia.org/wiki/Quilapay%C3%BAn",
+        "src2": "https://en.wikipedia.org/wiki/Cantata_Santa_Mar%C3%ADa_de_Iquique",
+        "from": "new"
+      },
+      {
+        "f": "1973 年政變後流亡法國約 15 年，1980 年代末回到智利。",
+        "src": "https://en.wikipedia.org/wiki/Quilapay%C3%BAn",
+        "src2": "https://www.britannica.com/topic/Quilapayun",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "創始成員：en 維基寫 Numhauser 與 Carrasco 兄弟組成三重唱；es 維基寫 Julio Carrasco 與 Numhauser 創立、Eduardo 原只是暫時的演唱者後來留下；facts 用兩源共同的名單。",
+      "事實庫的 es 維基條目（c98-b）稱 1968 年錄下《X Vietnam》、1970 年錄下 Advis 的清唱劇，與本層新讀版本一致，沿用。",
+      "第 5 張卡 La Fragua 上線簡介稱樂團『此後滯留法國』，與 1973 年政變後流亡法國一致，無衝突。"
+    ],
+    "searches": 6,
+    "failedFetches": 2,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "事實庫有 c98-b 的 es 維基一條與 c108-b 的 MusicBrainz 一條（後者只是 catno，不用）；origin、sound、legacy 三格都補查，用 6 次（維基 en、Britannica、維基 es、維基 Cantata、WebSearch、維基 El Pueblo Unido 專輯），上限內；失敗 2 次（musicapopular.cl 403×2，不計入）。pool 四張專輯與此人吻合，無同名混卡。非獨立：絕大多數 src 與 src2 是維基不同條目或不同語言版；Britannica 是這團唯一非維基的完整來源。〈El pueblo unido〉：作曲 Ortega、Quilapayún 參與詞作出自英文維基團條，專輯條目寫為雙方合作；Britannica 該頁未提這首。單源未收：〈El pueblo unido〉在伊朗、加州、柏林示威都被唱起，並影響 2004 年烏克蘭橘色革命的歌曲（維基專輯單源）；Allende 政府時期被任命為文化大使、1973 年 2 月 Viña del Mar 音樂節演出引發爭議（es 維基單源）；1966 年在第一屆全國民俗音樂節拿下 La Guitarra de Oro（en 維基單源）；2017 年被封為智利音樂的 Figura Fundamental、並獲總統獎（es 維基單源）；搜尋摘要稱團體是 Nueva Canción Chilena 最大的象徵、與人民團結政府最貼近（出處為智利網站，未開頁）；Jara 與團體約三年後各走各路，Eduardo Carrasco 接任團長（搜尋摘要）；2015 年商標歸 Carrasco 一派的內部分裂（不收）。Víctor Jara 的死亡經過不收。《Cantata》清唱劇的 Cortázar 1978 年改寫文本與 Advis 公開抗議，維基 Cantata 條目寫法與上線簡介一致。"
   }
 ]
