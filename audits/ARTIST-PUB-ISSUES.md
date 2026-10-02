@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 225 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 228 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -229,3 +229,6 @@
 | ar-b-026 | 浜瀬元彦 | Reminiscence | 1986 年 1 月 25 日由 Shi Zen 發行的個人作 | 日文維基唱片表把《Reminiscence》記為 1985 年，與上線簡介的 1986 年 1 月 25 日不一致；不確定誰對（Discogs／MusicBrainz 為 1986），僅供店主核對，非確定錯誤 | https://ja.wikipedia.org/wiki/%E6%BF%B1%E7%80%AC%E5%85%83%E5%BD%A6 |
 | ar-b-028 | Blood Orange | Essex Honey | 距上一張完整長篇七年，中間只出過一張四首的 EP；2018 年《Negro Swan》之後他只放了那張 EP | 2018 年《Negro Swan》到 2025 年之間，Blood Orange 另有 2019 年 7 月 12 日的混音帶《Angel's Pulse》（Fader 稱《Essex Honey》距《Angel's Pulse》六年）；『只放了那張 EP』不成立。『七年』若指與《Negro Swan》之間的完整長篇，算法成立，但需避免暗示中間沒有其他發行。四首 EP《Four Songs》為 2022 年 9 月 16 日 RCA 發行、是他在 RCA 的第一個發行，上線簡介此點正確（RCA 簽約消息為 2022 年 9 月，維基與搜尋摘要一致）。 | https://www.thefader.com/2025/07/17/blood-orange-essex-honey-release-date |
 | ar-b-028 | Chief Keef | Back From the Dead | 2012 年 3 月 … 的第五張 mixtape | 維基稱《Back from the Dead》是他的第五張 mixtape，Billboard（2019，Songs That Defined the Decade）卻稱是第三張；序數兩源不一致，建議店主改寫成不帶序數的版本，或另查 mixtape 目錄後再定。其餘如〈I Don't Like〉Hot 100 第 73 名、Kanye West 官方 remix 收進《Cruel Summer》，Billboard 與維基皆支持，無誤。 | https://www.billboard.com/music/music-news/chief-keef-dont-like-songs-that-defined-the-decade-8543876/ |
+| ar-b-030 | 陶喆 | I'm OK | 他以此拿下第十一屆金曲獎最佳唱片製作人獎 | 維基第 11 屆金曲獎頁與陶喆條目都寫第 11 屆該獎為『最佳專輯製作人獎』（維基第 9 屆頁則寫『最佳唱片製作人獎』），疑似該獎名在第 11 屆前後有更名；上線簡介的得獎事實本身與維基一致，只有獎項名稱待對官方資料確認，建議改寫成『最佳專輯製作人』或查金曲獎官網後定案 | https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E |
+| ar-b-030 | Astor Piazzolla | Adiós Nonino | 1959 年 10 月在紐約得知父親死訊後，不到一小時寫成 | 維基 Adiós Nonino 條目（僅見搜尋摘要，未開頁）與 Piazzolla 條目都說他是在波多黎各巡演時得知死訊；前者說幾天後在紐約寫成，後者說得知後不到一小時寫成，建議本機核對地點與『不到一小時』 | https://en.wikipedia.org/wiki/Adi%C3%B3s_Nonino |
+| ar-b-030 | Bernard Herrmann | Taxi Driver | 錄音完成數小時後他即於 1975 年 12 月 24 日過世 | Britannica 寫他 1975 年 12 月 24 日過世、是完成配樂的隔天；『數小時後』與之不一致（僅 Britannica 單源，建議本機再核） | https://www.britannica.com/biography/Bernard-Herrmann |

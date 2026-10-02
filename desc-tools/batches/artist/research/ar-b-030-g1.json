@@ -88,5 +88,833 @@
     "failedFetches": 1,
     "status": "thin",
     "notes": "事實庫為空，從零查。成功請求 8 次：維基 Shabazz Palaces 兩次、WebSearch 兩次（成軍背景；影響與地位）、Cascade PBS Black Arts Legacies Ishmael Butler、維基 Ishmael Butler、愛爾蘭時報訪談、維基 Digable Planets；另有 1 次失敗請求（City Arts 2011 頁面抓回空內容，未計入）。同名檢查：poolAlbums 為《Black Up》《Lese Majesty》《Quazarz: Born on a Gangster Star》，與 Seattle 的 Shabazz Palaces 一致，無混卡。legacy 格偏薄：查不到後輩點名或國家級榮譽；未收 Pitchfork《The 200 Best Albums of the 2010s》第 179 名（雜誌榜單名次不收）。維基 Shabazz Palaces 與 Ishmael Butler 兩條目同站，第二源為同站者標註『非獨立』：成軍 2009 年那條（維基兩條目，非獨立）、Digable Planets 兩條（部分第二源為維基 Butler 條目，非獨立）。單源未收進 facts：（1）Tendai Maraire 是辛巴威 mbira 大師 Dumisani Maraire 之子（單源，維基；搜尋摘要有重述但屬維基轉載，未獨立開頁）；（2）Shabazz Palaces 是 Sub Pop 簽下的第一個嘻哈團體／《Black Up》是該廠牌首張嘻哈發行（單源，維基；搜尋結果出現 Billboard 與 Sub Pop 頁面但未開頁，需寫作層避開）；（3）Butler 事後加入 Sub Pop A&R 團隊（Cascade PBS，Billboard 只看到標題，單源）；（4）Butler 少年時在 Meany Middle School 跟 Wadie Ervin 學薩克斯風爵士與古典（Cascade，單源）；（5）1987 年進麻州大學安姆斯特分校、1989 年輟學搬到布魯克林錄 demo（維基 Butler，單源）；（6）Butler 稱非洲打擊樂與爵士色彩來自家人的音樂偏好（維基，單源）；（7）Cascade 稱標準 4/4 拍少見、很少 A-B-A-B 結構（單源）；（8）Maraire 在 2020 年專輯前離團（維基，單源）。《Black Up》2011 年發行：兩源（維基 Butler、Cascade）都只寫年份，發行廠牌 Sub Pop 兩源皆有。"
+  },
+  {
+    "key": "shaggy",
+    "name": "Shaggy",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Orville Richard Burrell，1968 年 10 月 22 日生於牙買加金斯敦；18 歲時隨母親搬到紐約，落腳布魯克林的 Flatbush 一帶。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          },
+          {
+            "f": "1988 年加入美國海軍陸戰隊，波斯灣戰爭期間隨野戰砲兵部隊服役。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年的成名曲〈Oh Carolina〉是牙買加老歌的 dancehall 翻唱版，維基指原曲是 Folkes Brothers 的 ska 名曲。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1996 年 2 月 28 日第 38 屆葛萊美獎，《Boombastic》拿下最佳雷鬼專輯（得獎）。",
+            "src": "https://en.wikipedia.org/wiki/38th_Annual_Grammy_Awards",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          },
+          {
+            "f": "2007 年獲牙買加國家勳章 Order of Distinction（指揮官級 Commander，CD），理由是對音樂產業的貢獻。",
+            "src": "https://old.jamaica-gleaner.com/gleaner/20071016/ent/ent1.html",
+            "src2": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "from": "new"
+          },
+          {
+            "f": "2000 年專輯《Hot Shot》的〈It Wasn't Me〉登上 Billboard Hot 100 冠軍。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年以〈Oh Carolina〉打出第一支成名曲。",
+            "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+            "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年〈Oh Carolina〉成名。",
+        "src": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+        "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+        "from": "new"
+      },
+      {
+        "f": "1996 年《Boombastic》拿下葛萊美最佳雷鬼專輯。",
+        "src": "https://en.wikipedia.org/wiki/38th_Annual_Grammy_Awards",
+        "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/shaggy",
+        "from": "new"
+      },
+      {
+        "f": "2007 年獲牙買加 Order of Distinction（指揮官級）。",
+        "src": "https://old.jamaica-gleaner.com/gleaner/20071016/ent/ent1.html",
+        "src2": "https://en.wikipedia.org/wiki/Shaggy_(musician)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基稱〈It Wasn't Me〉與〈Angel〉都登上 Hot 100 冠軍；Encyclopedia.com 稱〈It Wasn't Me〉使他成為自 1991 年 Shabba Ranks 以來第一位登上美國流行單曲榜首的雷鬼歌手。後者是『第一位』類宣稱，Shabba Ranks 並未登頂 Hot 100，疑有問題，facts 不收該句，只收 It Wasn't Me 登頂這個事實。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 5,
+    "status": "full",
+    "notes": "事實庫為空，從零查。成功請求 7 次：維基 Shaggy (musician)、WebSearch（生平與葛萊美）、Encyclopedia.com、WebSearch（Order of Distinction）、牙買加 Gleaner 2007 報導、維基第 38 屆葛萊美、WebSearch（Hot 100 冠軍）。失敗請求 5 次（Britannica 404、BlackPast 403、grammy.com 404、兩次 Billboard 被導向 tollbit 付費牆 307／402），超過上限 4 次，照實記載。同名檢查：poolAlbums 為《Boombastic》《Midnite Lover》《Christmas in the Islands》，皆為牙買加的 Shaggy，無混卡。非獨立標註：葛萊美那條的第一源是維基第 38 屆條目、第二源 Encyclopedia.com（獨立）；其餘多條以維基 Shaggy 條目搭 Encyclopedia.com，兩者獨立。2007 年那條的第二源（維基）僅在導言標示 CD 與搜尋摘要提到 2007，年份與等級主要由 Gleaner 支撐。單源未收進 facts：（1）藝名來自《Scooby Doo》卡通角色（Encyclopedia.com 與搜尋摘要；摘要來源頁未開）；（2）服役期間每逢週末開 18 小時車從北卡基地到紐約錄音（Encyclopedia.com，單源）；（3）《Boombastic》在 Billboard 雷鬼榜連續 30 週居冠（Encyclopedia.com，單源）；（4）〈Angel〉也登上 Hot 100 冠軍（維基與搜尋摘要，未開第二頁，單源）；（5）維基稱他隸屬第 10 陸戰團野戰砲兵連（單源）；（6）Shaggy and Friends 慈善演唱會捐助 Bustamante 兒童醫院（搜尋摘要，單源）。在世者累計獎座數與銷量不寫（搜尋摘要提到八次葛萊美提名、兩座，不收）。"
+  },
+  {
+    "key": "skepta",
+    "name": "Skepta",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Joseph Adenuga，1982 年 9 月 19 日生於倫敦，成長於北倫敦的 Tottenham，父母是奈及利亞移民。",
+            "src": "https://en.wikipedia.org/wiki/Skepta",
+            "src2": "https://www.thefamouspeople.com/profiles/skepta-33322.php",
+            "from": "new"
+          },
+          {
+            "f": "他是家中長子，弟弟 Jme 同樣是 grime 音樂人，後來兩人一起在 Boy Better Know 的陣容裡。",
+            "src": "https://en.wikipedia.org/wiki/Skepta",
+            "src2": "https://www.nme.com/news/music/skepta-36-1199427",
+            "from": "new"
+          },
+          {
+            "f": "起步是 Tottenham 的 grime 團體 Meridian Crew 的 DJ，在海盜電台上露面；之後短暫加入 Roll Deep，再與弟弟 Jme 共同創立 Boy Better Know。",
+            "src": "https://en.wikipedia.org/wiki/Skepta",
+            "src2": "https://www.thefamouspeople.com/profiles/skepta-33322.php",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2016 年 9 月 15 日在倫敦 Hammersmith Apollo，《Konnichiwa》奪下水星獎（得獎），入圍對手包括 David Bowie 的《Blackstar》與 Radiohead。",
+            "src": "https://www.nme.com/news/music/skepta-36-1199427",
+            "src2": "https://en.wikipedia.org/wiki/Konnichiwa_(Skepta_album)",
+            "from": "new"
+          },
+          {
+            "f": "他是繼 2003 年 Dizzee Rascal《Boy in da Corner》之後，第二位拿到水星獎的 grime MC。",
+            "src": "https://www.nme.com/news/music/skepta-36-1199427",
+            "src2": "https://www.factmag.com/2016/09/15/skepta-wins-2016-mercury-prize/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2016 年《Konnichiwa》奪得水星獎，是 Dizzee Rascal 之後第二位拿到水星獎的 grime MC。",
+        "src": "https://www.nme.com/news/music/skepta-36-1199427",
+        "src2": "https://www.factmag.com/2016/09/15/skepta-wins-2016-mercury-prize/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Boy Better Know 成立年：維基 Skepta 條目寫 2005 年，thefamouspeople 寫 2006 年；兩源不一致，facts 不寫成立年。",
+      "Skepta 出生地：維基寫 London，thefamouspeople 寫 Tottenham；facts 寫『生於倫敦、成長於 Tottenham』。",
+      "Factmag 同一篇的前後文在摘要中說法不一（原句 first grime MC to win since Dizzee Rascal 2003），意思等於第二位 grime 得主，與 NME 的 second grime MC 一致。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 5,
+    "status": "thin",
+    "notes": "事實庫為空，從零查。成功請求 8 次：維基 Skepta、WebSearch（水星獎）、NME 水星獎報導、WebSearch（生平與 Boy Better Know）、維基《Konnichiwa》、thefamouspeople 傳記、DIY 水星獎報導（未支撐新事實，只確認頒獎細節）、Factmag 水星獎報導。失敗請求 5 次（NPR 503、AllMusic 403、Britannica 404，另有一次限定網域的 WebSearch 被拒），超過上限 4 次，照實記載。同名檢查：poolAlbums 為《Konnichiwa》《Microphone Champion》《Ignorance is Bliss》，皆為 Tottenham 的 Skepta，無混卡。第二源品質：thefamouspeople 是通俗傳記站，只用來對照出生日期、父母背景與起步經歷，品質偏弱，寫作層寫到出生地要保守。sound 格查不到兩源支持的內容；單源未收：（1）《Konnichiwa》他自己擔任監製、除三首外全由他製作，並在離開前廠牌後獨立經由 Boy Better Know 發行，2016 年 5 月 6 日（維基，單源）；（2）父親屬 Yoruba、母親屬 Igbo 背景（維基，單源）；（3）Debrett's 2017 年英國最具影響力人物名單入選（維基，單源）；（4）《Konnichiwa》在英國專輯榜初登場第 2 名、Drake 的支持（維基，單源）；（5）維基《Konnichiwa》稱樂評讚揚它在 grime 復興中的角色（單源）；（6）搜尋摘要稱他『推動 grime 從地下走向流行榜』，疑似出自 AllMusic，頁面 403 未讀到，不收；（7）維基稱他得過 Ivor Novello 年度詞曲作者獎，搜尋結果找不到佐證，疑似有誤，不收，且 Brit 提名次數與 Ivor 獎項主詞待查；（8）水星獎同屆入圍者 Kano（維基《Konnichiwa》）、Anohni 與 Savages（NME 搜尋摘要）只收 Bowie 與 Radiohead（兩源皆有）。名單年榜名次（Apple Music、NME 年度榜等）屬雜誌榜單不收。 另：NME 寫領獎時 Boy Better Know 成員含弟弟 JME 在台上，Factmag 沒寫，只算單源，不收。"
+  },
+  {
+    "key": "snoop dogg",
+    "name": "Snoop Dogg",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Calvin Cordozar Broadus Jr.，1971 年 10 月 20 日生於加州長灘。",
+            "src": "https://en.wikipedia.org/wiki/Snoop_Dogg",
+            "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+            "from": "new"
+          },
+          {
+            "f": "小時候在長灘的浸信會教會唱詩、彈鋼琴。",
+            "src": "https://en.wikipedia.org/wiki/Snoop_Dogg",
+            "src2": "https://www.biography.com/musicians/snoop-dogg",
+            "from": "new"
+          },
+          {
+            "f": "他與表親 Nate Dogg、Warren G 組成團體 213 錄 demo；其中一首傳到 Dr. Dre 手上，Dre 邀他試音（維基寫是 Warren G 把卡帶交給 Dre）。",
+            "src": "https://en.wikipedia.org/wiki/Snoop_Dogg",
+            "src2": "https://www.biography.com/musicians/snoop-dogg",
+            "from": "new"
+          },
+          {
+            "f": "高中畢業後曾因古柯鹼持有被捕並入獄；Britannica 稱他拖長語調的歌詞，靈感來自早年與執法單位的接觸。",
+            "src": "https://en.wikipedia.org/wiki/Snoop_Dogg",
+            "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Doggystyle》承接 Dr. Dre《The Chronic》（1992）所建立的西岸聲音與 G-funk 路線；Snoop 在《The Chronic》上貢獻甚多。",
+            "src": "https://en.wikipedia.org/wiki/Doggystyle",
+            "src2": "https://www.biography.com/musicians/snoop-dogg",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Doggystyle》1993 年 11 月 23 日由 Death Row 與 Interscope 發行，首週即登上美國 Billboard 200 冠軍。",
+            "src": "https://en.wikipedia.org/wiki/Doggystyle",
+            "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+            "from": "new"
+          },
+          {
+            "f": "維基《Doggystyle》條目稱此專輯幫助 G-funk 被主流聽眾認識，讓西岸嘻哈在 1990 年代初中期成為主導力量；Britannica 稱他是西岸嘻哈的核心人物，他的西岸俚語與誇張的語氣進入美國主流文化。",
+            "src": "https://en.wikipedia.org/wiki/Doggystyle",
+            "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+            "from": "new"
+          },
+          {
+            "f": "2018 年 11 月 19 日在好萊塢星光大道獲得第 2651 顆星，典禮在 El Capitan Theater 舉行。",
+            "src": "https://www.upi.com/Entertainment_News/2018/11/19/Snoop-Dogg-earns-Hollywood-Walk-of-Fame-star/7821542675043",
+            "src2": "https://www.thefader.com/2018/11/19/snoop-dogg-hollywood-walk-of-fame-acceptance-speech",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1992 年他先在 Dr. Dre 的單曲〈Deep Cover〉與專輯《The Chronic》上登場，隔年才推出自己的首張專輯《Doggystyle》。",
+            "src": "https://www.britannica.com/biography/Snoop-Dogg",
+            "src2": "https://en.wikipedia.org/wiki/Doggystyle",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1992 年在 Dr. Dre 的〈Deep Cover〉與《The Chronic》登場。",
+        "src": "https://www.britannica.com/biography/Snoop-Dogg",
+        "src2": "https://en.wikipedia.org/wiki/Doggystyle",
+        "from": "new"
+      },
+      {
+        "f": "1993 年首張專輯《Doggystyle》首週登上 Billboard 200 冠軍。",
+        "src": "https://en.wikipedia.org/wiki/Doggystyle",
+        "src2": "https://www.britannica.com/biography/Snoop-Dogg",
+        "from": "new"
+      },
+      {
+        "f": "2018 年獲好萊塢星光大道第 2651 顆星。",
+        "src": "https://www.upi.com/Entertainment_News/2018/11/19/Snoop-Dogg-earns-Hollywood-Walk-of-Fame-star/7821542675043",
+        "src2": "https://www.thefader.com/2018/11/19/snoop-dogg-hollywood-walk-of-fame-acceptance-speech",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Britannica 與維基都寫 Doggystyle 首週登上 Billboard 200 冠軍；Britannica 另寫『第一張一出道就登上 Billboard 200 冠軍的首作』，屬『第一位／最早』類宣稱，只見 Britannica 單源、未做反例檢查，facts 只寫登頂，不寫『第一』。",
+      "事實庫的《Tha Last Meal》研究稿與上線簡介（盤名涵義、No Limit 最後一張、Doggy Style 第一張、Billboard 200 最高第 4 名）彼此一致，本層不引用該專輯層級事實。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫研究稿只有《Tha Last Meal》一張的專輯層級資料（MusicBrainz 版本、維基廠牌沿革、樂評引文），沒有生平，故三格靠補查。成功請求 8 次：維基 Snoop Dogg、WebSearch（星光大道）、UPI、Britannica、Fader、維基《Doggystyle》、WebSearch（213 與 demo）、Biography.com；失敗請求 3 次（Variety 與 Billboard 類被導向 tollbit 付費牆、Ebony 403、Hypebeast 回傳空頁），在上限內。同名檢查：poolAlbums 為《Doggystyle》《Tha Doggfather》《Tha Last Meal》，皆為長灘的 Snoop Dogg，無混卡。第二源非獨立之處：『星光大道』兩源（UPI、Fader）獨立；『Doggystyle 登頂』第一源為維基專輯條目、第二源 Britannica，獨立；『高中後入獄』的第二源 Britannica 只寫 incarcerated 與歌詞靈感，案由（古柯鹼持有）只見維基，寫作層不要寫案由細節，只寫被捕入獄。單源未收進 facts：（1）維基稱他曾是 Rollin' 20s Crips 成員（單源，且涉幫派，不收）；（2）維基稱母親替他取小名 Snoopy，Biography.com 也寫了（母親取名的由來，兩源皆有但屬閒筆，未收進 facts，可由寫作層視需要用）；（3）維基稱他『常被視為史上最偉大的饒舌歌手之一，協助定義 G-funk 與 gangsta rap』（單源，且屬維基自述）；（4）維基《Doggystyle》稱樂評視它為 1990 年代最重要的專輯之一（單源）；（5）Britannica 稱他拖長語調的歌詞是招牌（單源）；搜尋摘要稱 Dre 被他『長灘式的拖長腔』打動，來源頁未開；（6）銷量與首週張數屬在世者累計銷量，不寫；（7）搜尋摘要稱他就讀 Long Beach Polytechnic High School（單源，未開頁）。星光大道類別『饒舌、演員、製作人、企業家與慈善家』只見 UPI，Fader 只寫獲星，寫作層以『獲星』為準、不細列類別。"
+  },
+  {
+    "key": "stormzy",
+    "name": "Stormzy",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Michael Owuo Jr.，1993 年生於南倫敦的 Croydon 一帶，有迦納血統（維基寫母親是迦納人）。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "from": "new"
+          },
+          {
+            "f": "他 11 歲開始 MC。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2014 年前後他靠〈Wicked Skengman〉系列 freestyle 在地下圈受到注意，這系列是在經典 grime 節拍上自由饒舌，並放上 YouTube。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年 2 月 24 日首張專輯《Gang Signs & Prayer》以自家 #Merky Records 獨立發行，初登場即登上英國專輯榜冠軍，是第一張登上該榜冠軍的 grime 專輯。",
+            "src": "https://en.wikipedia.org/wiki/Gang_Signs_%26_Prayer",
+            "src2": "https://www.britannica.com/biography/Stormzy",
+            "from": "new"
+          },
+          {
+            "f": "2018 年 2 月 21 日的 Brit Awards，《Gang Signs & Prayer》拿下英國年度專輯。",
+            "src": "https://www.abc.net.au/triplej/news/stormzy-wins-album-of-the-year-brit-awards/9473394",
+            "src2": "https://en.wikipedia.org/wiki/Gang_Signs_%26_Prayer",
+            "from": "new"
+          },
+          {
+            "f": "2019 年他在 Glastonbury 音樂節壓軸演出，維基與 Britannica 稱他是首位在該音樂節壓軸的英國饒舌歌手，PAPER 與倫敦博物館稱他是首位黑人英國獨唱藝人壓軸；演出時穿 Banksy 設計的防刺背心。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.papermag.com/stormzy-glastonbury-2019",
+            "from": "new"
+          },
+          {
+            "f": "他與企鵝蘭登書屋旗下的 Heinemann 合作創立出版品牌 #Merky Books（2018 年宣布），另設立劍橋大學黑人學生獎學金。",
+            "src": "https://en.wikipedia.org/wiki/Stormzy",
+            "src2": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2017 年首張專輯《Gang Signs & Prayer》；2018 年 Brit Awards 得獎；2019 年 Glastonbury 壓軸。",
+            "src": "https://www.londonmuseum.org.uk/collections/london-stories/stormzy-grime-change-maker/",
+            "src2": "https://en.wikipedia.org/wiki/Stormzy",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2017 年《Gang Signs & Prayer》成為第一張登上英國專輯榜冠軍的 grime 專輯。",
+        "src": "https://en.wikipedia.org/wiki/Gang_Signs_%26_Prayer",
+        "src2": "https://www.britannica.com/biography/Stormzy",
+        "from": "new"
+      },
+      {
+        "f": "2018 年《Gang Signs & Prayer》拿下 Brit Awards 英國年度專輯。",
+        "src": "https://www.abc.net.au/triplej/news/stormzy-wins-album-of-the-year-brit-awards/9473394",
+        "src2": "https://en.wikipedia.org/wiki/Gang_Signs_%26_Prayer",
+        "from": "new"
+      },
+      {
+        "f": "2019 年在 Glastonbury 音樂節壓軸演出。",
+        "src": "https://en.wikipedia.org/wiki/Stormzy",
+        "src2": "https://www.papermag.com/stormzy-glastonbury-2019",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生地：維基寫 Thornton Heath（Croydon 的郊區），倫敦博物館寫 Norbury, Croydon；兩源不一致，facts 只寫『南倫敦的 Croydon 一帶』。",
+      "Glastonbury 的『第一』：維基與 Britannica 寫首位壓軸的英國饒舌歌手；PAPER 與倫敦博物館寫首位黑人英國獨唱藝人。兩種版本的主詞不同，facts 並列、各自歸屬來源，寫作層擇一並標出處，不寫成單一絕對的『第一位』。『第一』類宣稱反例檢查：美國的 Jay-Z 2008 年曾壓軸，所以必須限定『英國』。",
+      "『第一張登上英國專輯榜冠軍的 grime 專輯』：維基、Britannica、倫敦博物館三處一致，未見反例。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "事實庫為空，從零查。成功請求 8 次：維基 Stormzy、WebSearch（Glastonbury）、PAPER、維基《Gang Signs & Prayer》、WebSearch（榜單與 Brit Awards）、倫敦博物館、triple j（ABC）、Britannica；失敗請求 1 次（brits.co.uk 403，未取得，未計入）。同名檢查：poolAlbums 為《Gang Signs & Prayer》《Heavy Is the Head》《This Is What I Mean》，皆為 Stormzy，無混卡。第二源注意：Glastonbury 那條的 Britannica 內容只見於 Britannica 摘要頁（文字被截斷，但開頭『first British rapper to headline』可讀）；『是否也是 Brit 英國男獨唱藝人得主』：triple j 寫 2018 Brit Awards 他得 Male Solo Artist 與 Album of the Year，搜尋摘要也提到，但第二源只有搜尋摘要，未收進 facts，主詞為 Stormzy 本人，單源（triple j）。單源未收：（1）維基稱他就讀 Harris Academy South Norwood（倫敦博物館寫 Harris Federation School，不同寫法）；（2）倫敦博物館稱他 2015 年的 freestyle〈Shut Up〉是突破作並登上榜單第 8 名（單源）；（3）維基稱《Gang Signs & Prayer》客座包含 Wretch 32、Ghetts、J Hus 等（單源）；（4）Britannica 稱他以渾厚的倫敦口音念 verse（單源）；（5）倫敦博物館稱他學歷與先前在煉油廠工作的經歷（單源）；（6）維基稱他的 Cambridge 獎學金涵蓋兩名學生的學費與最多四年生活補助（單源，細節不收）；（7）Merky FC 2022 年計畫（單源）。專輯銷量與『首週 68,000 張』屬銷量，不寫；Brit 提名次數不寫。"
+  },
+  {
+    "key": "summer walker",
+    "name": "Summer Walker",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Summer Marjani Walker，1996 年生於美國喬治亞州亞特蘭大，是亞特蘭大在地出身的 R&B 歌手。",
+            "src": "https://en.wikipedia.org/wiki/Summer_Walker",
+            "src2": "https://www.revolt.tv/article/2021-11-15/128430/summer-walkers-still-over-it-debuts-at-no-1-on-billboard-200/",
+            "from": "new"
+          },
+          {
+            "f": "她先在社群平台上傳翻唱與短片，被亞特蘭大的廠牌 LVRN（Love Renaissance）發現，簽下合約，並與 Interscope 合作。",
+            "src": "https://en.wikipedia.org/wiki/Summer_Walker",
+            "src2": "https://www.summerwalker.org/bio",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2019 年 10 月 4 日首張專輯《Over It》發行，首週登上 Billboard 200 第 2 名，當時創下女性 R&B 專輯的最大首週串流週紀錄。",
+            "src": "https://en.wikipedia.org/wiki/Over_It_(album)",
+            "src2": "https://en.wikipedia.org/wiki/Summer_Walker",
+            "from": "new"
+          },
+          {
+            "f": "《Over It》拿下 2020 年 Soul Train Music Awards 年度專輯。",
+            "src": "https://en.wikipedia.org/wiki/Over_It_(album)",
+            "src2": "https://interscope.com/pages/artist/summer-walker",
+            "from": "new"
+          },
+          {
+            "f": "2021 年 11 月第二張專輯《Still Over It》首度登上 Billboard 200 冠軍，是她的第一張冠軍專輯。",
+            "src": "https://www.revolt.tv/article/2021-11-15/128430/summer-walkers-still-over-it-debuts-at-no-1-on-billboard-200/",
+            "src2": "https://interscope.com/pages/artist/summer-walker",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2018 年 10 月發行首張混音帶《Last Day of Summer》，收錄〈Girls Need Love〉，後來有 Drake 參與的混音版。",
+            "src": "https://en.wikipedia.org/wiki/Summer_Walker",
+            "src2": "https://interscope.com/pages/artist/summer-walker",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2018 年 10 月首張混音帶《Last Day of Summer》，〈Girls Need Love〉有 Drake 混音版。",
+        "src": "https://en.wikipedia.org/wiki/Summer_Walker",
+        "src2": "https://interscope.com/pages/artist/summer-walker",
+        "from": "new"
+      },
+      {
+        "f": "2019 年《Over It》首週登上 Billboard 200 第 2 名。",
+        "src": "https://en.wikipedia.org/wiki/Over_It_(album)",
+        "src2": "https://en.wikipedia.org/wiki/Summer_Walker",
+        "from": "new"
+      },
+      {
+        "f": "2021 年《Still Over It》登上 Billboard 200 冠軍。",
+        "src": "https://www.revolt.tv/article/2021-11-15/128430/summer-walkers-still-over-it-debuts-at-no-1-on-billboard-200/",
+        "src2": "https://interscope.com/pages/artist/summer-walker",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "簽約年份：維基寫 2017 年與 LVRN、Interscope 簽約，Interscope 官方頁與搜尋摘要寫 2018 年嶄露頭角、簽約 2017–2018；兩說不一，facts 不寫簽約年。",
+      "『最大首週串流週紀錄』：維基《Over It》寫當時為女性 R&B 專輯最大串流週，維基 Summer Walker 條目寫『briefly』（後被超越），facts 用『當時』。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "事實庫為空，從零查。成功請求 8 次：維基 Summer Walker、WebSearch（生平與 LVRN）、summerwalker.org、WebSearch（Still Over It 與葛萊美）、Revolt、WebSearch（人物介紹）、Interscope 藝人頁、維基《Over It》。失敗請求 0 次。同名檢查：poolAlbums 為《Over It》《Last Day of Summer》《Still Over It》，皆為亞特蘭大的 Summer Walker，無混卡。第二源品質與非獨立標註：（1）summerwalker.org 自稱『Not official Fan-made website』，內容與維基近似，只用來對照 LVRN 發現過程，非獨立、品質偏弱，寫作層寫發現經過要保守；（2）Interscope 是她的簽約廠牌官方頁，屬利益相關來源，只用來佐證年份與專輯榜成績，非獨立；（3）《Over It》首週第 2 名那條兩源都是維基（專輯條目與藝人條目），非獨立。sound 格查不到兩源支持的內容；單源未收：（1）維基《Over It》稱專輯是當代 R&B 製作，多數曲目由 London on da Track 製作，客座含 Usher、Drake、Bryson Tiller、Jhené Aiko（單源）；（2）summerwalker.org 稱她融合 1990 與 2000 年代 R&B 與現代 trap 質地、聲線輕如耳語（粉絲站單源，不收）；（3）她做過清潔工作並靠 YouTube 教學自學吉他（維基，與粉絲站、搜尋摘要重述同一說法，疑似同源，不收，且搜尋摘要另提的其他打工經歷未核實）；（4）維基稱《Over It》是 2020 年 Apple Music 上女性藝人收聽最多的專輯（單源）；（5）維基稱她與 Taylor Swift 並列為唯一有 18 首同張專輯歌曲同時進 Hot 100 的女性（單源，且屬首次類）；（6）搜尋摘要稱《Over It》在 Billboard 紀錄上超越 Beyoncé《Lemonade》（單源、來源頁未開）；（7）Revolt 稱 Walker 是自 Beyoncé 以來五年多來首位以專輯登上 R&B 冠軍的女性（屬『第一位』類，單源，且 Billboard 搜尋摘要寫『first R&B album by a woman to top the Billboard 200 in more than five years』措辭不同，不收）；（8）葛萊美：搜尋摘要稱《Over It》與《Still Over It》都未獲提名，維基稱她四次提名（2023、2024、2026 屆，類別與得獎主詞未逐項核對），本層不收；（9）Soul Train 2019 年最佳新人（搜尋摘要，單源）。銷量認證倍數與串流量屬在世者累計數據，不寫。專輯名 Over It／Still Over It／Finally Over It 為三部曲，Finally Over It 為 2025 年作，卡池未收。"
+  },
+  {
+    "key": "the game",
+    "name": "The Game",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Jayceon Terrell Taylor，1979 年 11 月 29 日生於加州 Compton。",
+            "src": "https://en.wikipedia.org/wiki/The_Game_(rapper)",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          },
+          {
+            "f": "他遭槍擊後在療養期間決定走嘻哈，花了數個月聽經典嘻哈專輯、練習 freestyle；維基寫事發於 2001 年底，傳記站寫約 2000 年，年份不一。",
+            "src": "https://en.wikipedia.org/wiki/The_Game_(rapper)",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          },
+          {
+            "f": "他先發行混音帶，被 Dr. Dre 簽進 Aftermath Entertainment，之後兩年多在 Dr. Dre 指導下準備主流廠牌首作（簽約年份兩源不一：維基 2002，傳記站 2003）。",
+            "src": "https://en.wikipedia.org/wiki/The_Game_(rapper)",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張主流廠牌專輯《The Documentary》2005 年 1 月 18 日發行，登上 Billboard 200 冠軍。",
+            "src": "https://en.wikipedia.org/wiki/The_Documentary",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          },
+          {
+            "f": "維基稱他自《The Documentary》之後被視為帶動沒落的西岸嘻哈重返主流的『driving force』；傳記站也稱他讓西岸嘻哈重回主流。",
+            "src": "https://en.wikipedia.org/wiki/The_Documentary",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          },
+          {
+            "f": "第 48 屆葛萊美獎（2006），單曲〈Hate It or Love It〉（The Game featuring 50 Cent）入圍最佳饒舌團體或二重唱表演（入圍）與最佳饒舌歌曲（入圍）。主詞是該單曲，不是專輯。",
+            "src": "https://www.grammy.com/artists/50-cent/2468/",
+            "src2": "https://en.wikipedia.org/wiki/The_Documentary",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2005 年 1 月發行首張主流廠牌專輯《The Documentary》，由 Dr. Dre 的 Aftermath、50 Cent 的 G-Unit 與 Interscope 發行。",
+            "src": "https://en.wikipedia.org/wiki/The_Documentary",
+            "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2005 年《The Documentary》登上 Billboard 200 冠軍。",
+        "src": "https://en.wikipedia.org/wiki/The_Documentary",
+        "src2": "https://www.thefamouspeople.com/profiles/the-game-rapper-33197.php",
+        "from": "new"
+      },
+      {
+        "f": "第 48 屆葛萊美獎（2006）〈Hate It or Love It〉入圍兩項（最佳饒舌團體或二重唱表演、最佳饒舌歌曲）。",
+        "src": "https://www.grammy.com/artists/50-cent/2468/",
+        "src2": "https://en.wikipedia.org/wiki/The_Documentary",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "被 Dr. Dre 簽下的年份：維基 The Game 條目寫 2002，傳記站 thefamouspeople 寫 2003；搜尋摘要也稱 2002。兩源不一致，寫作層不要寫簽約年。",
+      "遭槍擊的年份：維基寫 2001 年底，傳記站寫約 2000 年；facts 已註明年份不一，寫作層只寫『遭槍擊後療養期間』，不寫年份。",
+      "父母背景：維基寫父母是 Crips 成員，傳記站寫父母有成癮問題並曾入寄養；兩源說法不重疊，不收。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 5,
+    "status": "thin",
+    "notes": "事實庫為空，從零查。成功請求 7 次：維基 The Game (rapper)、WebSearch（Documentary 與西岸）、維基《The Documentary》、WebSearch（葛萊美入圍）、grammy.com 50 Cent 頁、WebSearch（生平）、thefamouspeople。另有失敗請求 5 次（Britannica 404、rappers.fandom 402、AllMusic 兩次 403、liveabout 402），超過上限 4 次，照實記載。同名檢查：poolAlbums 為《The Documentary》《LAX》《West Coast Resurrection》，與 Compton 的 The Game 一致，未見同名混卡。但《West Coast Resurrection》（2005）的性質未查證（維基有條目、搜尋結果出現，未開頁），可能屬非標準錄音室首發性質，請主線與寫作層確認再寫。第二源品質：thefamouspeople 是通俗傳記站，品質偏弱，與維基在生平細節上已出現年份不一，寫作層寫出身要保守。sound 格查不到兩源支持的內容；單源未收：（1）維基稱《The Documentary》製作陣容含 Dr. Dre、Kanye West、Scott Storch、Timbaland、Just Blaze、Hi-Tek 等（單源）；（2）維基稱 2006 年因與 50 Cent 的不合離開 G-Unit 等三個廠牌（單源，屬後續爭端，且為『唯一一張在三廠牌』類措辭，不收）；（3）Complex 2012 年稱《The Documentary》是『過去十年的經典專輯之一』（雜誌評價，不收）；（4）搜尋摘要引述 AllMusic 稱他是西岸最生猛的聲音之一、有強烈的自傳敘事與『creatively referential』的取向（AllMusic 頁面 403，只見搜尋摘要，不收）；（5）維基稱《The Documentary》2005 年年度銷量第 16、傳記站稱第 10，兩源不一致，銷量不寫；（6）首週 586000 張、雙白金認證屬銷量，不寫；（7）維基稱 Game 早期混音帶在 JT the Bigga Figga 旗下發行（單源，搜尋摘要有重述但屬維基轉載）；（8）〈Hate It or Love It〉兩項提名的得獎者資訊，搜尋摘要順序混亂，未收。"
+  },
+  {
+    "key": "timbaland",
+    "name": "Timbaland",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Timothy Zachery Mosley，3 月 10 日生於維吉尼亞州 Norfolk（出生年份兩源不一致，不寫）。",
+            "src": "https://en.wikipedia.org/wiki/Timbaland",
+            "src2": "https://www.britannica.com/biography/Timbaland",
+            "from": "new"
+          },
+          {
+            "f": "他與 Missy Elliott 都出身維吉尼亞的 Virginia Beach 與 Norfolk 一帶；Britannica 稱他與 Missy Elliott、Magoo 是在維吉尼亞一起長大的音樂夥伴。",
+            "src": "https://daily.redbullmusicacademy.com/2015/04/origin-stories-missy-elliott-timbaland/",
+            "src2": "https://www.britannica.com/biography/Timbaland",
+            "from": "new"
+          },
+          {
+            "f": "他早年與饒舌歌手 Magoo 搭檔，並追隨 Jodeci 的 DeVante Swing；DeVante Swing 以 Timberland 靴子品牌為本替他取了 Timbaland 這個名字。",
+            "src": "https://en.wikipedia.org/wiki/Timbaland",
+            "src2": "https://www.britannica.com/biography/Timbaland",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Britannica 稱他不靠取樣，而是自製帶有複雜切分節奏的原創器樂底，再加進耳語、動物聲這類意外的音色；Revolt 也形容他的鼓點與節奏不照規則走。",
+            "src": "https://www.britannica.com/biography/Timbaland",
+            "src2": "https://www.revolt.tv/article/best-beats-produced-by-timbaland-pt-1",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他與 Missy Elliott 參與 Aaliyah 1996 年的《One in a Million》，RBMA 稱這次合作是兩人的關鍵轉折；維基稱他製作了該專輯的大半。",
+            "src": "https://daily.redbullmusicacademy.com/2015/04/origin-stories-missy-elliott-timbaland/",
+            "src2": "https://en.wikipedia.org/wiki/Timbaland",
+            "from": "new"
+          },
+          {
+            "f": "2021 年他與 Swizz Beatz 因共同創辦直播對戰系列 Verzuz，入選 TIME 年度 100 位最具影響力人物。",
+            "src": "https://www.udiscovermusic.com/news/time-100-most-influential-people-angelique-kidjo-billie-eilish/",
+            "src2": "https://en.wikipedia.org/wiki/Timbaland",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "疫情期間他與 Swizz Beatz 創辦 Verzuz，讓製作人與歌手在直播上輪流對戰歌單。",
+            "src": "https://en.wikipedia.org/wiki/Timbaland",
+            "src2": "https://www.udiscovermusic.com/news/time-100-most-influential-people-angelique-kidjo-billie-eilish/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1996 年與 Missy Elliott 參與 Aaliyah《One in a Million》。",
+        "src": "https://daily.redbullmusicacademy.com/2015/04/origin-stories-missy-elliott-timbaland/",
+        "src2": "https://en.wikipedia.org/wiki/Timbaland",
+        "from": "new"
+      },
+      {
+        "f": "2021 年與 Swizz Beatz 因 Verzuz 入選 TIME 100。",
+        "src": "https://www.udiscovermusic.com/news/time-100-most-influential-people-angelique-kidjo-billie-eilish/",
+        "src2": "https://en.wikipedia.org/wiki/Timbaland",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生年：維基寫 1972 年 3 月 10 日，Britannica 寫 1971 年 3 月 10 日；兩源不一致，facts 不寫年份。",
+      "Britannica 稱 One in a Million 是他的『production debut』，維基稱他製作該專輯大半；『首次』類說法不收，facts 只寫參與與製作大半。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "事實庫為空，從零查。成功請求 7 次：維基 Timbaland、Britannica、WebSearch（影響與 Virginia Beach 聲音）、Red Bull Music Academy 專訪、WebSearch（TIME 100 2021）、uDiscover Music、Revolt 精選。失敗請求 0 次。同名檢查：poolAlbums 為《TIMBO PROGRESSION》（2025）《Shock Value II》（2009）《Indecent Proposal》（2001，Timbaland & Magoo 名義）；皆為維吉尼亞的製作人 Timbaland，無混卡，但《Indecent Proposal》掛 Timbaland & Magoo 二人名義，寫作層宜註明；《TIMBO PROGRESSION》2025 年作與《Shock Value II》性質（是否原創錄音室專輯）未查證。非獨立與品質：Revolt 精選文章是評論性質、uDiscover 只確認入選原因；RBMA 的『Da Bassment』轉述來自 Melvin Barcliff 的口述，Britannica 第二源只涵蓋『Missy 與 Magoo 一起長大』與『DeVante 改名』，未涵蓋 Da Bassment 那條（該條只有 RBMA 單源，已移出 facts）。單源未收：（1）維基稱他起步為 DJ『DJ Timmy Tim』（單源）；（2）維基引《Entertainment Weekly》2007 稱『當前幾乎每個流行趨勢都能追溯到他』（雜誌評價，單源，不收）；（3）RBMA 稱 Teddy Riley 在 1990 年代初的存在啟發了他與 Pharrell Williams（單源）；（4）Britannica 稱他與 Magoo 1997 年首張專輯經 Blackground 發行並達白金（單源，且屬銷量認證）；（5）Britannica 稱他『從根本上塑造了 2000 年代初的流行音樂製作』並跨足 hip-hop、R&B、流行與搖滾，列舉 Jay-Z、Justin Timberlake、Madonna、Nelly Furtado（單源）；（6）維基稱他製作 Justin Timberlake 的〈Cry Me a River〉與《FutureSex/LoveSounds》（單源）；（7）維基稱他『四座葛萊美、22 次提名』（在世者獎座數，不寫）；（8）RBMA 稱 Angelique Miles 以〈Pony〉與〈Steelo〉簽下兩人，稱聲音具革命性（單源）。 移出 facts 的單源：RBMA 稱他與 Missy Elliott 都加入 DeVante Swing 在紐約的 Da Bassment 團隊，Missy 對 DeVante 說若 Tim 不來她也不來（Melvin Barcliff 口述）。"
+  },
+  {
+    "key": "trey songz",
+    "name": "Trey Songz",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Tremaine Aldon Neverson，是維吉尼亞州 Petersburg 出身的 R&B 歌手。",
+            "src": "https://en.wikipedia.org/wiki/Trey_Songz",
+            "src2": "https://www.1015vibe.com/lsp/artist/bio/trey-songz/",
+            "from": "new"
+          },
+          {
+            "f": "他透過繼父認識製作人 Troy Taylor；2002 年高中畢業後搬到紐澤西，跟 Taylor 一起錄音，Taylor 的廠牌 Songbook Entertainment 與 Atlantic 合資，簽下他。",
+            "src": "https://en.wikipedia.org/wiki/Trey_Songz",
+            "src2": "https://www.1015vibe.com/lsp/artist/bio/trey-songz/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基列出他的影響來源有 Luther Vandross、Prince、R. Kelly、Michael Jackson 與 Usher；101.5 The Vibe 的傳記稱他的個人風格與流動感，讓他與 R. Kelly、Usher 的比較減少。",
+            "src": "https://en.wikipedia.org/wiki/Trey_Songz",
+            "src2": "https://www.1015vibe.com/lsp/artist/bio/trey-songz/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2012 年第五張專輯《Chapter V》登上 Billboard 200 冠軍；2014 年 7 月 1 日發行的《Trigga》同樣首週登頂，是他的第二張冠軍專輯。",
+            "src": "https://en.wikipedia.org/wiki/Trigga_(album)",
+            "src2": "https://www.today.com/popculture/trey-songzs-latest-chapter-takes-billboard-no-1-wbna48835091",
+            "from": "new"
+          },
+          {
+            "f": "葛萊美入圍：〈Can't Help but Wait〉入圍最佳男歌手 R&B 演唱（第 51 屆）、《Ready》入圍最佳當代 R&B 專輯（第 52 屆）、〈Heart Attack〉入圍最佳 R&B 歌曲（2013 年）；皆為入圍，未得獎。",
+            "src": "https://en.wikipedia.org/wiki/Trey_Songz",
+            "src2": "https://www.1015vibe.com/lsp/artist/bio/trey-songz/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2005 年 7 月經 Atlantic 發行首張專輯《I Gotta Make It》。",
+            "src": "https://www.1015vibe.com/lsp/artist/bio/trey-songz/",
+            "src2": "https://en.wikipedia.org/wiki/Trey_Songz",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2012 年《Chapter V》登上 Billboard 200 冠軍，2014 年《Trigga》再度登頂。",
+        "src": "https://en.wikipedia.org/wiki/Trigga_(album)",
+        "src2": "https://www.today.com/popculture/trey-songzs-latest-chapter-takes-billboard-no-1-wbna48835091",
+        "from": "new"
+      },
+      {
+        "f": "三度葛萊美入圍（最佳男歌手 R&B 演唱、最佳當代 R&B 專輯、最佳 R&B 歌曲）。",
+        "src": "https://en.wikipedia.org/wiki/Trey_Songz",
+        "src2": "https://www.1015vibe.com/lsp/artist/bio/trey-songz/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "葛萊美入圍年份：維基列 2009、2010、2013 三年（對應第 51、52 屆與 2013 年），101.5 The Vibe 只列三個類別、沒寫年份；facts 的年份取自維基與搜尋摘要（摘要稱 51、52 屆，與維基一致），類別兩源一致。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "事實庫為空，從零查。成功請求 6 次：維基 Trey Songz、WebSearch（生平與葛萊美）、101.5 The Vibe 傳記、WebSearch（Chapter V 與 Trigga 冠軍）、Today.com、維基《Trigga》。失敗請求 3 次（grammy.com 兩個猜測網址 404、Hollywood Reporter 被導向 tollbit 付費牆 307），未計入搜尋次數。同名檢查：poolAlbums 為《I Gotta Make It》《Trey Day》《Ready》，皆為 Petersburg 的 Trey Songz，無混卡。第二源品質：101.5 The Vibe 是電台傳記頁（內容多半摘自官方簡介），與維基大致重疊，視為半獨立；〈Can't Help but Wait〉第 51 屆、《Ready》第 52 屆的屆次與〈Heart Attack〉2013 年只見維基與搜尋摘要，未能開到 grammy.com（404），年份層面等於單源。單源未收：（1）維基稱 2002 年高中畢業、2003 年被 Troy Taylor 簽下（年份單源）；（2）101.5 The Vibe 稱他從小愛嘻哈，唯一聽得進去的 R&B 是 R. Kelly（單源）；（3）101.5 The Vibe 稱他 13 年間有七張專輯進入 Billboard 200 前 20 名（單源）；（4）維基稱《I Gotta Make It》初登場 Billboard 200 第 20 名、〈Say Aah〉Hot 100 第 9 名、〈Bottoms Up〉第 6 名（單源）；（5）維基《Trigga》稱此作融入嘻哈影響、主題圍繞感情不專一與隨性關係，並有『他生涯最囂張的音樂空間』的樂評引語（單源，樂評評價不收）；（6）維基稱他累計銷量逾 3200 萬張（在世者累計銷量，不寫）；（7）《Chapter V》是他『第一張』冠軍專輯：搜尋摘要來自 Billboard 標題，未開頁，Today.com 只寫登頂，不寫成『第一張』；（8）父母姓名與繼父背景（搜尋摘要，來源不明）不收。"
+  },
+  {
+    "key": "trick daddy",
+    "name": "Trick Daddy",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "本名 Maurice Young，生於佛羅里達州邁阿密，成長於 Liberty City 的 Liberty Square 公共住宅區（出生年份三處說法不一，不寫）。",
+            "src": "https://en.wikipedia.org/wiki/Trick_Daddy",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/trick-daddy",
+            "from": "new"
+          },
+          {
+            "f": "他出獄後開始寫饒舌；1996 年 Luther Campbell（Luke）在專輯《Uncle Luke》收錄的〈Scarred〉讓他亮相，並因此簽下 Slip-n-Slide Records。",
+            "src": "https://en.wikipedia.org/wiki/Trick_Daddy",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/trick-daddy",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "音樂被歸為南方嘻哈與 gangsta rap；iHeart 傳記稱他是被主流接納的最『thug』的饒舌歌手之一。",
+            "src": "https://en.wikipedia.org/wiki/Thugs_Are_Us",
+            "src2": "https://www.iheart.com/artist/trick-daddy-44586/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Encyclopedia.com 稱他是自 1980 年代中期 Luke Campbell 與 2 Live Crew 之後，第一位引起全國關注的邁阿密饒舌歌手，帶動當地饒舌產業復興；The Source 稱《www.thug.com》讓 Slip-N-Slide 成為強勢廠牌，替邁阿密饒舌圈日後的主導地位打底。",
+            "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/trick-daddy",
+            "src2": "https://thesource.com/2026/09/22/today-in-hip-hop-history-trick-daddy-released-his-sophomore-album-www-thug-com-28-years-ago/",
+            "from": "new"
+          },
+          {
+            "f": "2001 年以〈I'm a Thug〉走出南方、成為全國知名的饒舌歌手，該曲登上 Billboard Hot 100 第 17 名。",
+            "src": "https://www.iheart.com/artist/trick-daddy-44586/",
+            "src2": "https://en.wikipedia.org/wiki/Thugs_Are_Us",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1998 年第二張專輯《www.thug.com》經 Slip-N-Slide 與 Warner Bros. 發行，單曲〈Nann〉在全國電台打開知名度。",
+            "src": "https://thesource.com/2026/09/22/today-in-hip-hop-history-trick-daddy-released-his-sophomore-album-www-thug-com-28-years-ago/",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/trick-daddy",
+            "from": "new"
+          },
+          {
+            "f": "2001 年 3 月 20 日第四張專輯《Thugs Are Us》經 Slip-N-Slide 與 Atlantic 發行。",
+            "src": "https://en.wikipedia.org/wiki/Thugs_Are_Us",
+            "src2": "https://www.iheart.com/artist/trick-daddy-44586/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1996 年在 Luke 的〈Scarred〉亮相並簽下 Slip-n-Slide。",
+        "src": "https://en.wikipedia.org/wiki/Trick_Daddy",
+        "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/trick-daddy",
+        "from": "new"
+      },
+      {
+        "f": "2001 年〈I'm a Thug〉登上 Billboard Hot 100 第 17 名，讓他走出南方。",
+        "src": "https://www.iheart.com/artist/trick-daddy-44586/",
+        "src2": "https://en.wikipedia.org/wiki/Thugs_Are_Us",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出生年：維基 Trick Daddy 條目導言與資訊欄寫 1973、內文早年生活寫 1974，Encyclopedia.com 寫約 1976，搜尋摘要寫 1973；來源互相矛盾，facts 不寫出生年。",
+      "Encyclopedia.com 稱他是自 Luke 與 2 Live Crew 之後『第一位』獲全國關注的邁阿密饒舌歌手，屬『第一位』類宣稱，單源（The Source 只寫打底，不寫『第一』），寫作層需以『據 Encyclopedia.com』的口吻，不要寫成絕對的第一位。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "事實庫為空，從零查。成功請求 7 次：維基 Trick Daddy、WebSearch（Slip-n-Slide 與邁阿密）、Encyclopedia.com、iHeart 傳記、維基《Thugs Are Us》、WebSearch（邁阿密影響）、The Source（《www.thug.com》回顧）。失敗請求 2 次（Miami New Times 403、一個 DNS 無法解析的網址，未計入）。同名檢查：poolAlbums 為《www.thug.com》（1998）《Thugs Are Us》（2001）《Thug Matrimony: Married to the Streets》（2004），皆為邁阿密的 Trick Daddy，無混卡。第二源注意：iHeart 傳記文字與 AllMusic 傳記高度相似，只擷取到單句；The Source 是 2026 年 9 月的回顧文章，非同時代報導，屬評論；Encyclopedia.com 條目來自 Contemporary 類傳記資料庫。單源未收：（1）維基稱《Thug Matrimony》2004 年登上 Billboard 200 第 2 名、〈Nann〉Hot Rap Singles 第 3 名、〈Let's Go〉Hot 100 第 7 名（單源）；（2）維基稱《Thugs Are Us》首週登上 Billboard 200 第 4 名、白金認證、累計銷量（銷量與認證不寫）；（3）Encyclopedia.com 稱《Based on a True Story》（1997）賣出逾 20 萬張、《www.thug.com》拿下金唱片（認證與銷量，不寫）；（4）搜尋摘要稱七張專輯連續進入 R&B/Hip-Hop 專輯榜前十（來源頁未開，單源）；（5）搜尋摘要稱首張專輯在 Miami bass 當道時建立了較粗獷的邁阿密饒舌藍圖（Miami New Times，403 未開，只見摘要，不收）；（6）維基稱 Ted Lucas 敦促他專心做饒舌（單源）；（7）搜尋摘要稱他自稱『305 市長』（單源）；（8）《www.thug.com》專輯榜成績（The Source：Billboard 200 第 30 名）屬單源。他早年入獄的案由不收。"
   }
 ]

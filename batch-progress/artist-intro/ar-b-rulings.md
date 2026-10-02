@@ -320,3 +320,10 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 028 w1 審稿（2 處）：Bone Thugs-n-Harmony 刪「最偉大的饒舌團體之一」（在世成員的最高級評價，第二源未見支持），也刪「十年後在 Drake 一代身上顯現」（無來源的影響延伸）。A$AP Rocky 2025 年 CFDA Fashion Icon 與 Thom Browne 引語經主線 WebSearch 核實（cfda.com、Ebony）。Backxwash「第一位獲 Polaris 的跨性別藝人」屬廣泛報導，照准。
 - 028 w2 審稿無修正。G-DRAGON 2025-10-23 第 16 屆大眾文化藝術獎玉冠文化勳章經主線 WebSearch 核實（亞洲經濟、Star News）；「最年輕」不寫。Clipse 放寬至 264 照准。Heavy D & The Boyz「Uptown 第一組簽約藝人」、Faith Evans「Bad Boy 第一位女歌手」各有兩源，照准。
 - **ar-b-028 上線**：40 位，reviewFixes 2。
+- 029 w1 審稿無修正。Kehlani〈Folded〉第 68 屆（2026）葛萊美最佳 R&B 歌曲經主線 WebSearch 核實（Oaklandside、grammy.com）。MF DOOM 271、KRS-One 263 放寬照准；Subroc 只寫「在這段期間過世」。John Legend「第一位 EGOT 非裔男性」屬廣泛報導，照准。
+- 029 g4 交件（QA 本組 0，四組齊）。thin：People Under the Stairs、PNL、Pusha T、RJD2。Queen Latifah「《Black Reign》第一張金唱片女性個人饒舌專輯」只准「搖滾名人堂稱」。單源未收：Pete Rock「最偉大製作人之一」、Percy Mayfield 藍調名人堂。Percy Mayfield 生年 1920／1922 不寫。pubIssues 0。w2（g3+g4）派出。
+
+### ar-b-030
+- g1 交件（QA 本組 0）。thin：Shabazz Palaces、Skepta（聲音 none）、Summer Walker（聲音 none）、The Game（聲音 none）。Shaggy、Skepta、The Game 失敗請求 5 次超限（超出部分未取得內容），照收。Skepta、The Game、Summer Walker 第二源偏弱（通俗傳記站、粉絲站、廠牌頁），評價不寫成定論。Timbaland《Indecent Proposal》是 Timbaland & Magoo 名義。pubIssues 0。
+- 029 w2 審稿（1 處）：Nelly 刪「首度」（無兩源的首次說法）。N.W.A 267、Queen Latifah 277 放寬照准；N.W.A 2024 年葛萊美終身成就獎、Queen Latifah「第一位獲甘迺迪中心榮譽的女饒舌歌手」皆屬廣泛報導的官方表述。Mýa〈Lady Marmalade〉主詞寫四人合唱。
+- **ar-b-029 上線**：40 位，reviewFixes 1。
