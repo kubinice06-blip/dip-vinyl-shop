@@ -241,3 +241,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 
 ### ar-b-021
 - g1 交件。thin：Collage、FKA twigs。Demi Lovato、Gal Costa 搜尋 9 次超限 1 次（該次已撤）。pubIssues 6（Collage《Collage》全女性說法、《Kadriko》《Käokiri》年份；Girls' Generation《Oh!》含銷量（簡介層不禁，不改）、《Gee》發行地；H.O.T.《We Hate All Kinds of Violence》含銷量排名（簡介層不禁，不改））→ 前三筆與《Gee》本機待核。
+- 021 g2 交件（QA 本組 0）。thin：ITZY（地位 none）、Julia Holter（地位 none）、Kesha（失敗請求 5 次超限，未取得內容）、Little Mix。w1（g1+g2）派出。
