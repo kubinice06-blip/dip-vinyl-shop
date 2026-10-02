@@ -1,0 +1,277 @@
+[
+ {
+  "key": "popol vuh",
+  "name": "Popol Vuh",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 1969 年在西德慕尼黑成立，核心是鍵盤手 Florian Fricke，同組的有音響設計 Frank Fiedler 與打擊樂手 Holger Trülzsch。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "from": "new"
+     },
+     {
+      "f": "Florian Fricke 1944 年 2 月 23 日出生，從小學古典鋼琴，青少年時期進了弗萊堡的音樂學院。",
+      "src": "https://en.wikipedia.org/wiki/Florian_Fricke",
+      "src2": "https://vinylwriters.com/florian-frickes-mystical-genius/",
+      "from": "new"
+     },
+     {
+      "f": "Fricke 2001 年過世，樂團隨之實質解散。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期的 Popol Vuh 以 Moog III 合成器做電子音樂，這台 Moog 後來轉給了 Klaus Schulze。",
+      "src": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "src2": "https://en.wikipedia.org/wiki/Florian_Fricke",
+      "from": "new"
+     },
+     {
+      "f": "1972 年《Hosianna Mantra》起，Fricke 大致放下電子樂器，改以鋼琴為主，搭配雙簧管與 tambura 等原音樂器。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Hosianna_Mantra",
+      "from": "new"
+     },
+     {
+      "f": "樂團的音樂取材於西藏、非洲與前哥倫布時期等非西方傳統，往世界音樂的方向走。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fricke 與導演 Werner Herzog 長期合作，為《Aguirre》（1972）、《Heart of Glass》（1976）、《Nosferatu》（1979）與《Fitzcarraldo》（1982）等片配樂。",
+      "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Aguirre》配樂的錄音橫跨 1972 至 1974 年，是樂團與 Herzog 電影合作的起點。",
+      "src": "https://en.wikipedia.org/wiki/Aguirre_(soundtrack)",
+      "src2": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1969 年在慕尼黑成軍。",
+    "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+    "src2": "https://de.wikipedia.org/wiki/Popol_Vuh_(Band)",
+    "from": "new"
+   },
+   {
+    "f": "1972 年《Hosianna Mantra》轉向原音樂器為主。",
+    "src": "https://en.wikipedia.org/wiki/Popol_Vuh_(band)",
+    "src2": "https://en.wikipedia.org/wiki/Hosianna_Mantra",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "英文維基樂團條目寫 Fricke 與 Herzog 1967 年相識，Fricke 條目寫 1960 年代初；兩源不一致，facts 不寫相識年份。",
+   "Fricke 條目寫他 1975 年 12 月前把 Moog 賣給 Schulze，vinylwriters 暗示 1972 年左右轉向原音；facts 不寫賣出年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫 research／published 皆空，從零查。實際請求 8 次：英文維基樂團條目、德文維基樂團條目、英文維基 Florian Fricke、WebSearch（影響與遺產）、英文維基 Aguirre 配樂、WebSearch（Fricke 訃聞）、vinylwriters 長文、英文維基 Hosianna Mantra；失敗 2 次（Britannica 404、AllMusic 403，未計入）。poolAlbums 四張（Affenstunde、In den Gärten Pharaos、Hosianna Mantra、Aguirre）都對得上這個德國樂團，無同名混卡。legacy 格僅一條兩源事實，狀態 thin：查到但單源、未收入 facts 的有（單源）英文維基 Fricke 條目引 Klaus Schulze 稱 Fricke 把電子音樂的思路轉成原音民族音樂的語言；（單源）vinylwriters 稱 Tangerine Dream 的 Edgar Froese 受 Fricke 影響並邀他在《Zeit》彈 Moog；（單源）英文維基 Aguirre 配樂條目寫樂評拿它與 Brian Eno 相提並論；（單源）英文維基樂團條目稱『Popol Vuh influenced many other European bands』並視樂團為 new age、ambient、世界音樂的先驅（搜尋摘要另顯示 soundohm 等店家文案有同樣說法，未開頁）。專名由來（取自瑪雅經典《Popol Vuh》，Fricke 與 Herzog 在大學圖書館讀到）只見搜尋摘要所引的維基 Fricke 條目，單源。兩個維基（英、德）為同站不同語言版，非獨立；其中成軍年、解散年的兩源即屬此類。《Hosianna Mantra》各樂評分數（Pitchfork 9.5 等）屬樂評榜單類，不收。Hosianna 的演奏者（韓籍女高音 Djong Yun、Conny Veit、Robert Eliscu、Klaus Wiese）只見單一維基，未收。"
+ },
+ {
+  "key": "prefuse 73",
+  "name": "Prefuse 73",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Guillermo Scott Herren 生於邁阿密、在亞特蘭大長大，父親是加泰隆尼亞人，母親有愛爾蘭與古巴血統。",
+      "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/prefuse-73",
+      "from": "new"
+     },
+     {
+      "f": "母親讓他從小學鈴木教學法的樂器訓練，他在亞特蘭大的商業嘻哈錄音室做過製作，後來到紐約念大學，開始用多個別名錄音。",
+      "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/prefuse-73",
+      "from": "new"
+     },
+     {
+      "f": "他的興趣橫跨嘻哈、龐克與電子樂；先在亞特蘭大的小夜店 MJQ 當 DJ，再替本地饒舌歌手做製作。",
+      "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/prefuse-73",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把饒舌與人聲切成碎片，當成節奏與質地的素材來用，成為 Prefuse 73 的招牌。",
+      "src": "https://www.clevescene.com/music/prefuse-73-1479549/",
+      "src2": "https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2001 年的《Vocal Studies + Uprock Narratives》是他以 Prefuse 73 名義發行的第一張專輯，由 Warp 出版。",
+      "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+      "src2": "https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2001 年以 Prefuse 73 名義發行首作《Vocal Studies + Uprock Narratives》。",
+    "src": "https://en.wikipedia.org/wiki/Prefuse_73",
+    "src2": "https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "事實庫 research／published 皆空，從零查。實際請求 8 次：英文維基 Prefuse 73、WebSearch（人聲切碎與影響）、encyclopedia.com 條目、英文維基《Vocal Studies + Uprock Narratives》、clevescene 評介、WebSearch（團名由來）、WebSearch（影響後輩）、factmag 2015 訪談；失敗 3 次（Warp 官網 403、Chicago Reader 429、music.fandom 402，未計入）。poolAlbums 四張（Vocal Studies、One Word Extinguisher、Surrounded by Silence、Everything She Touched Turned Ampexian）對得上 Scott Herren，無同名混卡。legacy 格查不到兩源：（單源）factmag 訪談稱他的早期作品是 2000 年代末 beat scene 的根基、他曾促成 Flying Lotus 與 Warp 簽約；Herren 自述 Warp 沒讓他發十週年紀念版，『改變了現在年輕人在做的事』；（單源）encyclopedia.com 稱他開創 glitchhop；（單源）英文維基《Vocal Studies》條目引 Sylvan Esso 的 Nick Sanborn 說 Herren 是他進入器樂嘻哈的入口、之後才聽到 Dilla 與 Madlib，另有 Pitchfork 2000–2004 年榜單第 84 名（榜單名次不收）。其他單源未收：（單源）clevescene 稱團名取自 1973 年前的 pre-fusion 爵士，那是他偏愛的取樣來源之一、另一個是人聲；（單源）factmag 稱他 1976 年生於邁阿密、1999 年與 Warp 簽約、2011 年雙方結束合作（共 8 張專輯、11 年）；（單源）encyclopedia.com 稱影響來源含 DJ Shadow、Aphex Twin、Squarepusher、Mouse on Mars，並以嘻哈視角重詮；（單源）英文維基《Vocal Studies》條目稱專輯在喬治亞州 Decatur 的錄音室製作，用兩台唱盤接 MPC、靠瞬間靜音多組聲道切換取樣來源做出 glitch，客串人聲（MF Doom、Aesop Rock、Mikah 9、Sam Prekop）是寄錄音帶給他的；Sacrifices 等後續作品與 Savath & Savalas 年份未核。Wikipedia 與 encyclopedia.com 的 origin 三條彼此部分取材重疊，視為半獨立；encyclopedia.com 條目疑為轉載自傳記辭典，非獨立程度未能確認。"
+ },
+ {
+  "key": "richie hawtin",
+  "name": "Richie Hawtin",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Richie Hawtin 1970 年生於英格蘭。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://www.paradisecity.be/en/news/richie-hawtin-and-the-long-arc-of-techno",
+      "from": "new"
+     },
+     {
+      "f": "他九歲（1979 年）隨父母搬到加拿大安大略省。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     },
+     {
+      "f": "他在安大略的溫莎一帶長大，那裡隔著河就是底特律；父親在通用汽車從事自動化與機器人技術，也愛電子音樂。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://www.paradisecity.be/en/news/richie-hawtin-and-the-long-arc-of-techno",
+      "from": "new"
+     },
+     {
+      "f": "他與 John Acquaviva 共同創辦 Plus 8 廠牌，這是他進入底特律 techno 圈的起點。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1993 年他開始用 Plastikman 這個名義發行作品，單曲〈Spastik〉與專輯《Sheet One》是起點。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     },
+     {
+      "f": "他自 1990 年代中期起是 minimal techno 的領軍人物，並以自己的 M_nus 廠牌推廣這種精簡、回到打擊節奏本質的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     },
+     {
+      "f": "他與 Native Instruments 合作，把 Traktor 這類數位工具帶進 DJ 現場。",
+      "src": "https://ra.co/dj/richiehawtin/biography",
+      "src2": "https://www.theacidmind.com/2025/01/richie-hawtin-the-visionary-pioneer-redefining-techno/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2015 年 7 月 14 日，英國哈德斯菲爾德大學頒給他榮譽博士，表彰他對音樂科技的貢獻。",
+      "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+      "src2": "https://www.musicweek.com/news/read/richie-hawtin-receives-an-honorary-doctorate-of-the-university-of-huddersfield/062290",
+      "from": "new"
+     },
+     {
+      "f": "M_nus 廠牌成為精簡 minimal techno 的代名詞。",
+      "src": "https://www.paradisecity.be/en/news/richie-hawtin-and-the-long-arc-of-techno",
+      "src2": "https://ra.co/dj/richiehawtin/biography",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1998 年的 Plastikman 專輯《Consumed》是他在 minimal techno 上的重要作品。",
+      "src": "https://ra.co/dj/richiehawtin/biography",
+      "src2": "https://en.wikipedia.org/wiki/Plastikman",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年以 Plastikman 名義發行〈Spastik〉與《Sheet One》。",
+    "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+    "src2": "https://ra.co/dj/richiehawtin/biography",
+    "from": "new"
+   },
+   {
+    "f": "2015 年獲英國哈德斯菲爾德大學榮譽博士。",
+    "src": "https://en.wikipedia.org/wiki/Richie_Hawtin",
+    "src2": "https://www.musicweek.com/news/read/richie-hawtin-receives-an-honorary-doctorate-of-the-university-of-huddersfield/062290",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Plus 8 創立年：英文維基寫 1989，某搜尋摘要（技術性傳記站）寫 1990，RA 只寫他『1980 年代中期』投入底特律圈；兩源不一致，facts 不寫創立年。",
+   "M_nus 創立年只見英文維基（1998），RA 未寫年份，不收年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "事實庫的研究稿只有《DE9》專輯層級的曲目資料，沒有身世與地位，三格全靠補查。已上線簡介（《DE9: Decks, EFX & 909》《Closer to the Edit》《Transitions》）與本次查到的生平沒有衝突，未發現 pubIssues（簡介裡的『三十八首曲目』『AllMusic John Bush 給滿分』等未核）。實際請求 8 次：英文維基 Richie Hawtin、WebSearch（生平與影響）、英文維基 Plastikman、RA 傳記、paradisecity 長文、WebSearch（榮譽博士）、Music Week 新聞、theacidmind 長文；無失敗請求。poolAlbums 四張（From My Mind to Yours、DE9 三張）皆為這位加拿大 DJ，無同名混卡。非獨立說明：RA 與 paradisecity、theacidmind 屬獨立媒體，但 RA 傳記與維基許多細節（Plus 8、Plastikman、Minus）重疊。M_nus『代名詞』那條的第二源 RA 只寫他透過 MINUS『開創並推廣 minimal techno』，語氣較弱，寫作層請維持保守措辭。Traktor 那條 theacidmind 只確認『與 Native Instruments 合作、Traktor 與 Ableton Live』，沒有細節。單源未收：（單源）RA 引 Mute 創辦人 Daniel Miller 稱他『a leader』『a pioneer』，並引《紐約時報》稱他是『電子舞曲世界的智性力量之一』；（單源）RA 稱他是 Ableton Live 的 beta 測試者、2004 年與 Acquaviva 創辦 Beatport；（單源）維基稱他 2002、2006、2008 年三度獲 DJ Awards 最佳 techno DJ（共 17 次入圍）、17 歲起當 DJ 並受底特律 The Shelter 的 Scott Gordon 指點、1998 年創立 M_nus；（單源）paradisecity 引他說『極簡是在最少的聲音裡找出最多的資訊』與後來『變成一種聲音，我就失去興趣』，並稱 DE9 把混音機制攤在現場；（單源）搜尋摘要稱 Plus 8 有助推出底特律第二波藝人、M_nus 旗下有 Magda、Troy Pierce、Gaiser。"
+ }
+]
