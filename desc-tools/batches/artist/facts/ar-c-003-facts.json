@@ -1,0 +1,2729 @@
+[
+ {
+  "key": "jean-luc ponty",
+  "name": "Jean-Luc Ponty",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1970,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "King Kong",
+    "year": 1970,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Live at Donte's",
+    "year": 1981,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c142-a",
+    "album": "King Kong",
+    "facts": [
+     {
+      "f": "release-group c992e5f4 的欄位：title「King Kong」、**artist-credit「Jean‐Luc Ponty」（Person 44cd4e2e，名字含 U+2010 非 ASCII 連字號**，FR，1942-09-29–，alias「Jean Luc Ponty」），**first-release-date 1969**，primary-type Album、secondary-types 空、轄下 6 筆。⚠ **原盤 cd7bc624 在 MB 登成「1969 US Pacific Jazz ST-20172」——年份與廠牌名都錯**（Discogs 八筆原壓一致作 **1970 World Pacific Jazz**）；6 軌軌序與軌長：King Kong（295s）／Idiot Bastard Son（243s）／Twenty Small Cigars（337s）／How Would You Like to Have a Head Like That（437s）／**Music for Electric Violin and Low Budget Orchestra（1166s，近二十分鐘）**／America Drinks and Goes Home（159s）。另有 **1970 GB Liberty LBS 83375 兩筆重複建檔**（a249f51f／f1eac64a，release title 用全名）與 1993 年的三筆 Blue Note CD（CDP 0777 7 89539 2 0）。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=c992e5f4-6917-34f0-ae0e-731d75b36a47&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "**Billboard 1970 年 5 月 30 日的 Jazz 評論欄**：「JEAN-LUC PONTY—King Kong. **World Pacific Jazz ST-20172** (S)　Pop music occasionally honors art, but when fearless Frank Zappa collaborates with electric violinist Jean-Luc Ponty, it is true pop art, as the Zappa-Ponty match brings the rock wizard nearer to jazz and Ponty into the mainstream of avant-garde rock. **Ian Underwood adds tenor sax and intelligence to the 'budget orchestra'** as the group formalizes Zappa's 'Idiot Bastard Son,' 'America Drinks' and Ponty's 'A Head Like That.'」——**廠牌名與目錄號原文就是 World Pacific Jazz ST-20172，不是 MB 登的 Pacific Jazz。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-05-30.pdf"
+     },
+     {
+      "f": "**Billboard 1969 年 4 月 12 日第 8 頁的廠牌報導（前史）**：「**WP Sets Mdse. Program Pegged on New Jazz Names**　LOS ANGELES - Two albums recorded here with French avant-garde violinist Jean Luc Ponty will help launch **World Pacific's new jazz name merchandising program**. World Pacific's general manager, **Dick Bock**, has recorded Ponty with the Gerald Wilson band and live at Donte's club with the **George Duke trio**. Pianist Duke himself has been added to WP's jazz roster… **Ponty's amplified instrument marks the first utilization of a violin with Wilson's brass band.** Their LP collaboration titled 'Electric Connection' is scheduled for a May release.」——**把 Ponty 帶到美國、替他排這一連串唱片的就是 World Pacific 的 Dick Bock（＝本盤的製作人 Richard Bock）**；本盤是這個企劃裡的第三張，錄音在 1969 年 10 月。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-04-12.pdf"
+     },
+     {
+      "f": "Discogs release 1064387（1970 US 原壓）：**美術指導與設計 Ron Wolin、編曲 Frank Zappa、指揮 Ian Underwood、錄音師 Dick Kunc**；編制包含 **Frank Zappa（吉他）、George Duke（電鋼琴）、Ernie Watts（中音）、Buell Neidlinger 與 Wilton Felder（貝斯）、Art Tripp 與 John Guerin（鼓）、Vincent DeRosa 與 Art Maebe（法國號）、Gene Cipriano（英國管）、Don Christlieb（低音管）、Harold Bemko（大提琴）、Jonathan Meyer（長笛）**，Ponty 自己同時吹 electric violin 與 baritone violectra。`database/search?catno=ST-20172` 的**八筆美加原壓（25331 master／1064387／8057586／10248474／14547658／8727861／加拿大 14341116／15570584）全部標 1970 World Pacific Jazz**。⚠ **Ron Wolin 就是 c-142 b 組《Worth Waiting For...》《Something To Listen To》的美術指導**（第 639 條）。",
+      "src": "https://api.discogs.com/releases/1064387"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "King Kong",
+    "manifest": "onboarding-manifest-c142-20260917.json",
+    "desc": "Frank Zappa 替他編曲、也替他彈吉他，指揮是 Ian Underwood。1969 年 10 月 6、7 兩天錄完六軌，他拉電小提琴與 baritone violectra，低預算管弦樂團裡有 George Duke。六軌五首出自 Zappa，〈Music for Electric Violin and Low Budget Orchestra〉近二十分鐘。Richard Bock 製作，1970 年 World Pacific Jazz ST-20172。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c992e5f4-6917-34f0-ae0e-731d75b36a47&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-05-30.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1970/Billboard%201970-09-12.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1969/Billboard%201969-04-12.pdf",
+     "https://api.discogs.com/releases/1064387",
+     "https://en.wikipedia.org/wiki/King_Kong:_Jean-Luc_Ponty_Plays_the_Music_of_Frank_Zappa",
+     "https://itunes.apple.com/lookup?id=724662852&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/release-group/c992e5f4-6917-34f0-ae0e-731d75b36a47"
+    ]
+   },
+   {
+    "album": "Live at Donte's",
+    "manifest": "onboarding-manifest-c145-20260917.json",
+    "desc": "封套印 1981、唱片標籤印 1978，錄音其實是 1969 年。1969 年 3 月 11 與 12 日錄於北好萊塢的 Donte's，一家 1966 年開業、只裝得下一百人的爵士酒館。四人編制：Ponty 電小提琴與中音電提琴、George Duke 電鋼琴、John Heard 電貝斯。這批母帶原屬 Pacific Jazz，1981 年才被塞進 LT 號段；製作、錄音與重混三職全由 Richard Bock 一人擔任，整理發行與內頁是 Pete Welding。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=2d067039-3abc-3122-a280-d50349f0c9b2&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-lt-series/",
+     "https://api.discogs.com/releases/2728286",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-11-08.pdf",
+     "https://en.wikipedia.org/wiki/Live_at_Donte%27s",
+     "https://itunes.apple.com/search?term=Live%20at%20Donte%27s&entity=album&country=us&limit=25",
+     "https://musicbrainz.org/release-group/2d067039-3abc-3122-a280-d50349f0c9b2"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jeff parker",
+  "name": "Jeff Parker",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2005,
+   2016
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The New Breed",
+    "year": 2016,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Relatives",
+    "year": 2005,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "jiro inagaki and soul media",
+  "name": "Jiro Inagaki and Soul Media",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1970,
+   1975
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Head Rock",
+    "year": 1970,
+    "genres": [
+     "jazz",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Funky Stuff",
+    "year": 1975,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Head Rock",
+    "manifest": "onboarding-manifest-c34-jazz-20260821.json",
+    "desc": "稲垣次郎（1933–2024）於 1969 年組成ソウル・メディア，隔年在日本哥倫比亞錄下這套 jazz-rock。曲目從〈The Vamp〉的重節奏、〈Spoonful〉的藍調改寫，到標題曲留給薩克斯風的長段吹奏。2000 年代和ジャズ再評價風潮興起，絕版作品陸續復刻，本作 2007 年由 P-Vine 再發，重新回到中古店頭。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E6%AC%A1%E9%83%8E",
+     "https://musicbrainz.org/release-group/e78be364-c74d-4ccd-b54e-a663b8b395be"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "joão gilberto",
+  "name": "João Gilberto",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1959,
+   1962
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Chega de Saudade",
+    "year": 1959,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "João Gilberto",
+    "year": 1962,
+    "genres": [
+     "world",
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "joe williams",
+  "name": "Joe Williams",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1955,
+   1970
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Count Basie Swings, Joe Williams Sings",
+    "year": 1955,
+    "genres": [
+     "jazz",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Worth Waiting For...",
+    "year": 1970,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c142-b",
+    "album": "Worth Waiting For...",
+    "facts": [
+     {
+      "f": "Discogs 美國原壓 1188467（**released 1970-10-00** US BST 84355，master 459291 的 main_release）的盤面名單：**George Butler＝Producer**（⚠ **Blue Note 交棒的實線——Butler 獨立製作的第一批之一，第 639 條**）、**Horace Ott＝Arranged By 兼 Conductor**、**Cannonball Adderley＝Liner Notes**（⚠ 一位薩克斯風手替一張人聲碟寫內頁）、**Ron Wolin＝Art Direction 兼 Photography By [Back]**、**Herb Kravitz＝Cover [Photography]**、David Brand＝Engineer、**Tony May＝Engineer [Remix]**、Recorded At＝**Liberty/UA Recording Studios**、©＝Liberty/UA, Inc.。**出版公司欄反映了選曲的來源**——Harrisongs Music（喬治·哈里森的〈Something〉）、Maclen Music（Lennon–McCartney 的〈Oh! Darling〉）、Kags Music（Sam Cooke 的〈You Send Me〉）、Jobete Music（Motown）、Seasons Four Music（〈Can't Take My Eyes Off You〉）、Fermata International Melodies（巴西曲〈Bridges〉）、Tempo Music（Strayhorn 的〈Lush Life〉）。",
+      "src": "https://api.discogs.com/releases/1188467"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Worth Waiting For...",
+    "manifest": "onboarding-manifest-c142-20260917.json",
+    "desc": "一張人聲唱片的內頁文字，交給了薩克斯風手 Cannonball Adderley。1970 年 5 月 5、6、8 日三場，錄於洛杉磯的 United Artists 錄音室。他的男中音在前，Horace Ott 編曲兼指揮一支沒有留下名單的樂團。十二首沒一首超過五分鐘，〈I Hold No Grudge〉只有兩分半。選曲跨得很開：喬治·哈里森的〈Something〉、Strayhorn 的〈Lush Life〉都在。George Butler 製作，1970 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=07368ab9-dd7c-45eb-af55-37ec764bffda&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/",
+     "https://api.discogs.com/releases/1188467",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1970/CB-1970-10-24.pdf",
+     "https://en.wikipedia.org/wiki/Joe_Williams_(jazz_singer)",
+     "https://itunes.apple.com/lookup?id=695868131&entity=song&limit=200&country=us",
+     "https://musicbrainz.org/release-group/07368ab9-dd7c-45eb-af55-37ec764bffda"
+    ]
+   },
+   {
+    "album": "Count Basie Swings, Joe Williams Sings",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "1955 年由 Norman Granz 製作、Clef 發行,Joe Williams 以 Count Basie 樂團專屬歌手身分首度掛名合作的整張專輯。曲目以 urban blues 為主軸:〈Every Day I Have the Blues〉自此成為兩人的招牌,〈Alright, Okay, You Win〉〈Roll 'Em Pete〉也一同收錄。Williams 渾厚的男中音騎在樂團精準的 riff 聲牆上,AllMusic 給了五星,稱這是當下未必察覺、多年後才知其分量的一刻。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Count_Basie_Swings,_Joe_Williams_Sings",
+     "https://musicbrainz.org/release-group/b041e0f2-3fc4-3adc-9aeb-ef4d7b096a30"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "john barry",
+  "name": "John Barry",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1964,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Goldfinger",
+    "year": 1964,
+    "genres": [
+     "jazz",
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dances With Wolves: Original Motion Picture Soundtrack",
+    "year": 1990,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c88-a",
+    "album": "Dances With Wolves: Original Motion Picture Soundtrack",
+    "facts": [
+     {
+      "f": "MB 該 release-group 的 1990 US release（9f4ff8ba）欄位：US、status Official、廠牌欄 **Epic Associated**、編號 **ZK 46982**、barcode 074644698220、一張 CD、track-count **18**；同組 1990-10-19 XE 的 Epic 版（467591 2）與 1990 AU 版同為 18 軌。",
+      "src": "https://musicbrainz.org/release/9f4ff8ba-ea1c-4ee7-8814-2a514fb78c28"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dances With Wolves: Original Motion Picture Soundtrack",
+    "manifest": "onboarding-manifest-c88-20260910.json",
+    "desc": "原盤登錄十八軌，後來的版本一版加到二十一軌，再一版二十四軌。第四代那套雙碟更是 31 加 29 軌。原盤很素：十八軌全掛 John Barry，credit 欄只有三條——他一人兼作曲、指揮與製作，錄音 Shawn Murphy、母帶 Dave Collins；註記欄兩行，錄音記在洛杉磯的 Columbia Studios。〈The John Dunbar Theme〉在第 2 與第 13 軌各出現一次。末軌〈Farewell and End Title〉8:50。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/64c8dfcf-5aea-38f9-9f21-ad4af310a301",
+     "https://musicbrainz.org/release/9f4ff8ba-ea1c-4ee7-8814-2a514fb78c28",
+     "https://www.discogs.com/release/828079",
+     "https://musicbrainz.org/artist/661e20c8-3d82-4da2-94a2-97d9e11691c0",
+     "https://music.apple.com/us/album/201412901"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "john lee & gerry brown",
+  "name": "John Lee & Gerry Brown",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1975,
+   1976
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mango Sunrise",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Still Can't Say Enough",
+    "year": 1976,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c144-a",
+    "album": "Mango Sunrise",
+    "facts": [
+     {
+      "f": "**Cash Box 1975 年 8 月 30 日 p43 的簽約照片說明把錄音地點講得比 jazzdisco 完整**：「**TWO NEW STARS FOR BLUE NOTE** — Discussing music at UA's Los Angeles offices after John Lee and Gerry Brown signed an exclusive recording contract with Blue Note Records are (from left) **Dr. George Butler, vice president, Blue Note; Skip Drinkwater, producer of Lee and Brown's debut Blue Note album \"Mango Sunrise\"; Gerry Brown; John Lee; Al Teller, president, United Artists Records; and Charlie Lourie, Blue Note director of merchandising.** Lee, who plays bass for Larry Coryell's Eleventh House, and Brown, drummer with Michael Urbaniak, **recorded the album in Holland, Belgium, New York and San Francisco.** \"Mango Sunrise\" will be released next month.」⚠ **預告的「下個月」沒有發成，實際排到 12 月 29 日**——**第 757 條第 3 點的又一個樣本。** 同週 **Billboard 1975-08-30 p25** 亦有一則短訊：「Bassist John Lee and drummer Gerry Brown to Blue Note with first album titled \"Mango Sunrise.\"」",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1975/CB-1975-08-30.pdf"
+     },
+     {
+      "f": "**Discogs 美國原壓 714972（BN-LA541-G，1975 US）的背標把四個錄音地逐一列出，正面推翻 jazzdisco 的單一錄音室寫法**：notes 原文「Recorded/ **June & July 1975** at: **Dureco Sound Studio/Weesp, Holland** ... **Morgan Sound Studio/Brussels, Belgium** ... **Electric Lady Studios/New York, New York** ... **Remixed at/Wally Heider Recording Studios, San Francisco, Calif.** ... **Mastered at Columbia Studios, San Francisco, Calif.**」**製作人 Skip Drinkwater、共同製作助理 Michel Damen、製作助理 Brooke Drinkwater、三位執行製作（Albert Schönberg、George Butler、Jerry Schoenbaum）、為 Zembu Productions, Inc. 製作**；**藝術總監與設計 Bob Cato、封面插畫 Brian Zick、攝影 Eric Cato**。⚠ **吉他手的盤面拼法是 Eef Albers**（jazzdisco 作 Eff Alberts）。",
+      "src": "https://api.discogs.com/releases/714972"
+     },
+     {
+      "f": "jazzdisco 的 BN-LA 系列目錄頁：**BN-LA541-G，年份欄 1975**，**只寫一個錄音室：Dureco Studio, Weesp, Holland, June, 1975**，母帶 16382–16390 連號。編制：Rob Franken 電鋼琴與合成器、**Jasper Van T'Hoff Clavinet 只在第 8 軌〈Magnum Opus〉**、**Eric Tagg Clavinet 與合成器只在第 5 軌〈The Stop And Go〉**、**Mike Mandel 合成器同樣只在第 5 軌**、Eff Alberts／Philip Catherine／**Wah Wah Watson** 吉他、John Lee 電貝斯兼合成器與 Clavinet、Gerry Brown 鼓與打擊。",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c144-b",
+    "album": "Still Can't Say Enough",
+    "facts": [
+     {
+      "f": "release-group 7f478bb0 的欄位：**title「Still Can’t Say Enough」（撇號是 U+2019 不是 ASCII）**、artist-credit 是兩個 Person 並列「John Lee（e128630e，disambiguation「jazz bassist」）+ Gerry Brown（b6526fb3，disambiguation「drummer」）」、first-release-date 1976、primary-type Album、secondary-types 空，轄下兩筆。**原盤 a9b8d970 是 1976 US Official Blue Note BN-LA701-G、12 吋 9 軌，軌長全數有填**：〈Freeze It Up〉292 秒、〈Love the Way You Make Me Feel〉309、〈Rise On〉376、〈Funky Row〉226、〈Talkin’ ’Bout the Right One〉312、〈Strut ’n’ Get Up〉282、〈Breakin’〉267、〈Down the Way〉325、〈Out the Box〉88——**合計約 41 分 5 秒，最後一軌只有 1 分 28 秒、明顯是收尾小品**。另一筆是 2013-01-23 JP Blue Note TOCJ-50546（30a661b6，CD 9 軌，barcode 4988006873964）。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=7f478bb0-6e23-4c1a-b018-cb0f001148c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "jazzdisco 的 BN-LA 系列目錄在 **BN-LA701-G** 條下只記**一個檔期**：**Electric Lady Studios, NYC, circa early August, 1976**，母帶 17957–17965 連號九軌，順序與盤面完全一致。編制是本組最大的一支紐約棚內銅管隊：**Jon Faddis 小號、Randy Brecker 小號兼富魯格號、Barry Rodgers 長號、Gary Bartz 與 David Sanborn 中音薩克斯風、Michael Brecker 與 Ernie Watts 次中音、Ronnie Cuber 上低音**，鍵盤是 **Hubert Eaves（鋼琴／風琴／Clavinet）** 與 Harold Ivory Williams IV，合成器是 **Ian Underwood** 與 **Rob Franken**，吉他 **Ray Gomez 與 Reggie Lucas**，**John Lee 電貝斯、Gerry Brown 鼓與打擊與定音鼓**，**Mtume 康加／打擊／人聲**，人聲另有 **Tawatha Agee**、C.P. Alexander、Donald Smith。⚠ **母帶號連號不代表一天錄完**，jazzdisco 自己也只寫 circa early August。",
+      "src": "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/"
+     },
+     {
+      "f": "Discogs 美國原壓 2231313（1976 US BN-LA701-G，6 圖）補上製作、錄音地與「借將」條款：**Skip Drinkwater＝Producer**（⚠ **他也是前作《Mango Sunrise》的製作，第二次合作**）、**George Butler 與 Jerry Schoenbaum＝Executive-Producer**（**兩位執行製作，本組僅此張與《Heritage》如此**）、Ron Johnsen＝Electric Lady 錄音、Don Murray＝Sound Labs 錄音兼 Remixed By、Bernie Grundman＝Mastered By；美術是 **Bruce Steinberg 與 Ellie Oberzil＝Album Design、Bruce Steinberg＝Photography**（⚠ **Steinberg 同時是本組《Heritage》的設計兼攝影**）。notes 欄的借將聲明把陣容的出處寫死：「**Randy Brecker / Michael Brecker appear through the courtesy of Arista Records**、**Ernie Watts… A&M**、**David Sanborn… Warner Bros.**」，錄音地是「**Electric Lady Studios, New York City ＋ The Sound Labs, Hollywood, California；Remixed at The Sound Labs；Mastered at A&M Studios**」——⚠ **東西兩岸各一間，jazzdisco 只寫 Electric Lady，正文寫「紐約 Electric Lady 錄、洛杉磯 Sound Labs 混」比較準。**",
+      "src": "https://api.discogs.com/releases/2231313"
+     },
+     {
+      "f": "**同期紙本把上市月份釘死在 1976 年 10 月，兩刊各一條廠牌檔期新聞（第 612 條）**：**Cash Box 1976-10-16 p12 的標題就是「Blue Note Sets LP For October Release」**，內文「LOS ANGELES — Blue Note, a subsidiary of United Artists Records, **will release John Lee and Gerry Brown's second album titled 'Still Can't Say Enough' in October**」；**Billboard 1976-10-30 p57**「**John Lee and Gerry Brown will release their second LP on Blue Note Records titled 'Still Can't Say Enough' this month.** The pair have worked with such musicians as Max Roach, Joe Henderson, Pharoah Sanders, Lonnie Liston Smith and Norman Connors」；Cash Box 1976-10-30 p36 的專欄再提一次「John Lee and Gerry Brown's next Blue Note LP will be entitled 'Still Can't Say Enough'」。**三則都是 1976 年 10 月，與 MB／jazzdisco／Discogs 的 1976 完全一致。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1976/Cash-Box-1976-10-16.pdf"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Mango Sunrise",
+    "manifest": "onboarding-manifest-c144-20260917.json",
+    "desc": "荷蘭、比利時、紐約各錄一段，最後拉到舊金山做混音與母帶。1975 年 6、7 月錄於 Weesp 的 Dureco、布魯塞爾的 Morgan Sound 與紐約的 Electric Lady。John Lee 的電貝斯與 Gerry Brown 的鼓是骨架，上面疊 Rob Franken 的電鋼琴，三把吉他輪流獨奏，其中有 Philip Catherine。九軌全是兩人自己寫的。Skip Drinkwater 製作，1975 年 Blue Note BN-LA541-G。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f18475dc-101a-4c7a-9136-4f773b38e7d3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1975/CB-1975-08-30.pdf",
+     "https://api.discogs.com/releases/714972",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1975/CB-1975-12-27.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1976/Cash-Box-1976-01-17.pdf",
+     "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/",
+     "https://itunes.apple.com/lookup?id=2685816&entity=album&limit=200&country=us",
+     "https://musicbrainz.org/release-group/f18475dc-101a-4c7a-9136-4f773b38e7d3"
+    ]
+   },
+   {
+    "album": "Still Can't Say Enough",
+    "manifest": "onboarding-manifest-c144-20260917.json",
+    "desc": "前排七支管樂全是別家廠牌借來的，盤上印著正式的借將聲明。1976 年 8 月初錄於紐約 Electric Lady Studios，混音在洛杉磯 The Sound Labs。掛頭銜的是節奏組：John Lee 的電貝斯與 Gerry Brown 的鼓。前排是一整支紐約棚內管樂隊——Jon Faddis 與 Randy Brecker 的小號、David Sanborn 的中音、Ronnie Cuber 的上低音。九軌全是兩人自己寫的，收尾那首一分二十八秒。1976 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7f478bb0-6e23-4c1a-b018-cb0f001148c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/",
+     "https://api.discogs.com/releases/2231313",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/70s/1976/Cash-Box-1976-10-16.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1977/Billboard%201977-02-12.pdf",
+     "https://itunes.apple.com/lookup?id=2685816&entity=album&country=us&limit=200",
+     "https://musicbrainz.org/release-group/7f478bb0-6e23-4c1a-b018-cb0f001148c8"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "johnny dyani",
+  "name": "Johnny Dyani",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1978,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Witchdoctor's Son",
+    "year": 1978,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Angolian Cry",
+    "year": 1985,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "johnny hartman",
+  "name": "Johnny Hartman",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1956,
+   1964
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Songs from the Heart",
+    "year": 1956,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "I Just Dropped By to Say Hello",
+    "year": 1964,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Songs from the Heart",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Johnny Hartman 1956 年在 Bethlehem 的出道盤，整張慢板情歌，Ralph Sharon 三重奏伴奏，Howard McGhee 的小號在句尾補進暗色填音。男中音的厚度貼著〈What Is There to Say?〉、〈I Fall in Love Too Easily〉、〈September Song〉的字句緩緩滾動；AllMusic 的 John Bush 形容伴奏「輕、省、全然托住人聲」，而 Hartman 寬闊的嗓音珍視著每一個字。七年後他因與 John Coltrane 合作而廣為人知，起點的抒情路數在此已經定形。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Songs_from_the_Heart_(Johnny_Hartman_album)",
+     "https://musicbrainz.org/release-group/846f2d2d-c3d4-3bda-b315-8338b7b7ef1d"
+    ]
+   },
+   {
+    "album": "I Just Dropped By to Say Hello",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "與 John Coltrane 合作的名盤錄成數月後，Johnny Hartman 於 1963 年 10 月再進錄音室完成的 Impulse! 續作，翌年發行。班底換成 Illinois Jacquet 次中音、Hank Jones 鋼琴、Milt Hinton 貝斯、Elvin Jones 鼓，吉他由 Kenny Burrell 與 Jim Hall 分場擔任。〈Charade〉、〈In the Wee Small Hours of the Morning〉等曲多維持在兩三分鐘的短篇尺幅，重點不在詮釋花招，而是男中音低迴的織度本身。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/I_Just_Dropped_by_to_Say_Hello",
+     "https://musicbrainz.org/release-group/e17f27ce-9e47-3892-bccd-2c10ca4a87ea"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "joshua redman",
+  "name": "Joshua Redman",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1994,
+   1998
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "MoodSwing",
+    "year": 1994,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Timeless Tales (For Changing Times)",
+    "year": 1998,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "juju",
+  "name": "Juju",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "A Message from Mozambique",
+    "year": 1973,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Chapter Two: Nia",
+    "year": 1974,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c51d-c",
+    "album": "Chapter Two: Nia",
+    "facts": [
+     {
+      "f": "Juju 在舊金山成立，1972 年 7 月移師紐約，自我定位是「前衛藝術家與推動改變的革命者」；1974 年他們搬到維吉尼亞州 Richmond，在當地成立了該州第一個黑人藝術畫廊與展演空間。",
+      "src": "https://strut.bandcamp.com/album/chapter-two-nia-2"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Chapter Two: Nia",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "他們把樂團搬到維吉尼亞，順手替那個州開了第一間黑人藝術空間。Juju 在舊金山成立，1972 年 7 月移師紐約，1974 年才落腳 Richmond；同年 6 月他們就在當地錄下這張，唱片當年由 Strata-East 發行。樂團核心是 James「Plunky」Branch，他說這團的音樂是非洲中心主義的，黑人民族主義的詩由高中同學 Ngoma Ya Uhuru 寫並朗誦。最後一首自由形式的〈Black Unity〉翻的是 Pharoah Sanders。",
+    "sourceUrls": [
+     "https://strut.bandcamp.com/album/chapter-two-nia-2",
+     "https://musicbrainz.org/release-group/ab53a56a-1b51-4986-ac45-dace8b51dac0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "junior mance",
+  "name": "Junior Mance",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1959,
+   1963
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Junior",
+    "year": 1959,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Junior's Blues",
+    "year": 1963,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Junior",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Junior Mance 的領銜出道作，1959 年由 Verve 發行。他在 Dizzy Gillespie《Have Trumpet, Will Excite!》的錄音工作後獲 Norman Granz 賞識，得到灌錄自己專輯的機會，搭檔是貝斯手 Ray Brown 與鼓手 Lex Humphries。曲目一半自作、一半選曲，從 Benny Golson 的〈Whisper Not〉、Gillespie 的〈Birks' Works〉到〈Love for Sale〉，Mance 把芝加哥藍調的口音揉進 bop 語法，觸鍵溫厚，句子帶著歌唱般的起伏。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Junior_(Junior_Mance_album)",
+     "https://musicbrainz.org/release-group/010f0521-ae3c-4217-9349-aeb6eac9cd11"
+    ]
+   },
+   {
+    "album": "Junior's Blues",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "芝加哥鋼琴家 Junior Mance 1963 年 2 月在 Riverside 錄下的三重奏（RLP 447），與 Bob Cranshaw、Mickey Roker 合作，把藍調與爵士對半調配：翻奏 Ellington 的〈Creole Love Call〉、Meade Lux Lewis 的〈Yancey Special〉，一路排到 McShann 與 Parker 的〈The Jumpin' Blues〉，像用三重奏寫成的一部藍調鋼琴系譜。《The Penguin Guide to Jazz》給滿分四星。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Junior%27s_Blues",
+     "https://musicbrainz.org/release-group/997cd6b8-ac34-354d-b9cd-e541034309ed"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kamaal williams",
+  "name": "Kamaal Williams",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2018,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Wu Hen",
+    "year": 2020,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Return",
+    "year": 2018,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kenny barron",
+  "name": "Kenny Barron",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1985,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "What If?",
+    "year": 1986,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Scratch",
+    "year": 1985,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "khan jamal",
+  "name": "Khan Jamal",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Drum Dance to the Motherland",
+    "year": 1973,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dark Warrior",
+    "year": 1984,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51a-c",
+    "album": "Dark Warrior",
+    "facts": [
+     {
+      "f": "1984 年 9 月 30 日在哥本哈根的 Sweet Silence Studios 錄音，由丹麥廠牌 SteepleChase 發行。",
+      "src": "https://www.discogs.com/release/3304154-Khan-Jamal-Quartet-Dark-Warrior"
+     },
+     {
+      "f": "這是 Khan Jamal 在 SteepleChase 的第一張領銜作，編制為四重奏：他的顫音琴，加上薩克斯風手 Charles Tyler、南非貝斯手 Johnny Dyani、鼓手 Leroy Lowe。",
+      "src": "https://www.discogs.com/release/3304154-Khan-Jamal-Quartet-Dark-Warrior"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dark Warrior",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "費城的顫音琴手飛到哥本哈根，一天之內把整張錄完。那是 1984 年 9 月 30 日，在 Sweet Silence Studios，成品由丹麥廠牌 SteepleChase 發行，也是他在這家廠牌的第一張領銜作。四重奏裡除了顫音琴，還有薩克斯風手 Charles Tyler、南非貝斯手 Johnny Dyani 與鼓手 Leroy Lowe；碟中六首出自 Jamal 之手，另一首〈Space Traveller〉是 Tyler 寫給 Sun Ra 的。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3304154-Khan-Jamal-Quartet-Dark-Warrior",
+     "https://www.allmusic.com/album/dark-warrior-mw0000236859",
+     "https://en.wikipedia.org/wiki/Khan_Jamal",
+     "https://musicbrainz.org/release-group/f455da8b-3c97-4362-a8df-b1b75dec4780"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "king oliver",
+  "name": "King Oliver",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1989,
+   2006
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Off the Record: The Complete 1923 Jazz Band Recordings",
+    "year": 2006,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The New York Sessions (1929-1930)",
+    "year": 1989,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c95-b",
+    "album": "The New York Sessions (1929-1930)",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 1a6ee8f3 的欄位：title《The New York Sessions (1929-1930)》、artist-credit「King Oliver」、first-release-date 1989、primary-type Album、**secondary-types [Compilation]**、**轄下只有 1 個 release**。",
+      "src": "https://musicbrainz.org/release-group/1a6ee8f3-5272-47cb-8633-6a3632eb32f5"
+     },
+     {
+      "f": "英文維基〈King Oliver〉開頭：Joseph Nathan「King」Oliver（1881 年 12 月 19 日–約 1938 年 4 月 10 日）是美國爵士短號手與樂團領班，以他的演奏風格與在爵士裡開創性地使用弱音器著稱；他也寫過至今仍在演奏的曲子，包括〈Dippermouth Blues〉〈Sweet Like This〉〈Canal Street Blues〉與〈Doctor Jazz〉。他是 Louis Armstrong 的導師與老師，Armstrong 說「要不是 Joe Oliver，爵士不會是今天這樣」。",
+      "src": "https://en.wikipedia.org/wiki/King_Oliver"
+     },
+     {
+      "f": "同一條目：1920 年代中期他把樂團擴編成九人、以 King Oliver and his Dixie Syncopators 之名演出，並開始使用更多寫好的編曲搭配爵士獨奏。1927 年樂團去了紐約，他解散樂團改接零工。**「1920 年代後期，他因為牙齦疾病越來越吹不動小號，於是僱人代吹獨奏，包括他的外甥 Dave Nelson、Louis Metcalf 與 Red Allen。他 1928 年重組樂團，一年後為 Victor Talking Machine Company 錄音。」**",
+      "src": "https://en.wikipedia.org/wiki/King_Oliver"
+     },
+     {
+      "f": "Apple Music 美國店面 King Oliver 的兩個藝人頁——King Oliver（artistId 2815301）與 King Oliver and His Orchestra（158229077）——以 lookup 端點全列後，**沒有任何一筆標題是《The New York Sessions (1929-1930)》**；標題含 1929／1930 的只有《The Originals: The Legendary King Oliver 1930 Recordings (Remastered)》（131184356、16 軌、℗ 2006 YOYO USA）、《In Chronological Order 1928-1929: Four or Fives Times》（519505998、16 軌、℗ 2012 Crates Digger）、《I'm Crazy 'Bout My Baby (In Chronological Order 1930-1931)》（519399383、17 軌）與《St. James Infirmary (In Chronological Order 1929-1930)》（519846106、16 軌），四筆的軌數都與 MB 的 22 軌對不上。",
+      "src": "https://itunes.apple.com/lookup?id=2815301&entity=album&limit=200&country=us"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Off the Record: The Complete 1923 Jazz Band Recordings",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "1923 年，King Oliver's Creole Jazz Band 在芝加哥 Lincoln Gardens 駐演的鼎盛期為 Gennett、OKeh、Columbia、Paramount 錄音：Oliver 吹第一短號，二十一歲的 Louis Armstrong 吹第二短號。當時對著號筒直接刻片，Armstrong 音量太大會把刻針震離母盤，只好站到房間角落，這個限制反而定下整團的音量平衡。〈Dippermouth Blues〉裡 Oliver 用弱音器吹的獨奏是事先寫好的，Gennett 與 OKeh 兩版一模一樣。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/King_Oliver",
+     "https://musicbrainz.org/release/5ad7e19e-fe31-4c87-be61-ed0055849b72"
+    ]
+   },
+   {
+    "album": "The New York Sessions (1929-1930)",
+    "manifest": "onboarding-manifest-c95-20260910.json",
+    "desc": "牙齦的病讓他吹不動小號，獨奏改由僱來的人吹，其中一個是他外甥。維基寫 1920 年代後期他越來越吹不動，僱人代吹獨奏，包括外甥 Dave Nelson、Louis Metcalf 與 Red Allen，到 1935 年已完全吹不動。他寫過〈Sweet Like This〉；Louis Armstrong 說要不是 Joe Oliver，爵士不會是今天這樣。二十二軌裡有三組同曲不同 take，錄於 1929 到 1930 年，Bluebird 1989 年整成一輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1a6ee8f3-5272-47cb-8633-6a3632eb32f5",
+     "https://musicbrainz.org/release/0c9559df-89b9-4e77-aba6-5ed8e71d3135",
+     "https://en.wikipedia.org/wiki/King_Oliver",
+     "https://itunes.apple.com/lookup?id=2815301&entity=album&limit=200&country=us"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "koichi matsukaze trio",
+  "name": "Koichi Matsukaze Trio",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1976,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Earth Mother",
+    "year": 1978,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "At the Room 427",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c67-a",
+    "album": "At the Room 427",
+    "facts": [
+     {
+      "f": "BBE 2022 年復刻的 Bandcamp 頁把這張形容為「post-modal power bop 與自由爵士」少見的樣本，說錄音捕捉到的是 1975 年 11 月在「Room 427，一間大學教室」的一場激烈現場；描述松風的風格「distinctively angular, deconstructive」，古沢良治郎的鼓有「Elvin Jones-like rolls」，錄音本身讓人有「being in the room itself」的感覺。",
+      "src": "https://bbemusic.bandcamp.com/album/at-the-room-427"
+     },
+     {
+      "f": "Jazz Tokyo 由齊藤聡執筆、2022 年 6 月 4 日刊出的松風鉱一訪談（Interview #247）把《At The Room 427》記為他 1975 年**以領班身分的首張唱片**，班底寫作松風（as, ts, bcl）、山崎弘一（b）、古澤良治郎（ds）；訪談裡他自己把這張的音色形容成「ガサツな音」——粗糙的聲音，說那是他現在不會再發出來的。",
+      "src": "https://jazztokyo.org/interviews/post-77250/"
+     },
+     {
+      "f": "Discogs master 2475361 有 5 個版本：1976 年 ALM AL-3002 原盤、1997 年掛 Aketa's Disk 名義的 CD（PLCP-65）、2022 年 BBE 的黑膠（BBE588ALP，廠牌欄並列 ALM Records）、CD（BBE588ACD）與數位（BBE588ADGB）；沒有任何一筆標 Unofficial Release。",
+      "src": "https://www.discogs.com/master/2475361"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "At the Room 427",
+    "manifest": "onboarding-manifest-c67-20260904.json",
+    "desc": "同一首〈Theme Of Seikatsu Kojyo Iinkai〉在唱片上出現兩次。A2 是 7 分 44 秒，B3 只有 1 分 6 秒。錄音是 1975 年 11 月 21 日中央大學白門祭的現場，唱片出自 ALM Records；BBE 則說那是「Room 427，一間大學教室」。三個人：松風鉱一薩克斯、山崎弘一貝斯、古沢良治郎鼓，開場的〈Acoustic Chicken〉20 分 2 秒由他寫。Jazz Tokyo 的訪談記它是松風的首張領班作。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5076420",
+     "https://bbemusic.bandcamp.com/album/at-the-room-427",
+     "https://jazztokyo.org/interviews/post-77250/",
+     "https://www.discogs.com/master/2475361",
+     "https://musicbrainz.org/release-group/c2a2ddc7-5bc4-436e-863e-6abeabe2b9aa"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kokoroko",
+  "name": "Kokoroko",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2022,
+   2025
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Could We Be More",
+    "year": 2022,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Tuff Times Never Last",
+    "year": 2025,
+    "genres": [
+     "soul",
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kunihiko sugano",
+  "name": "Kunihiko Sugano",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1977,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Date in Daté",
+    "year": 1977,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Solo",
+    "year": 1977,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 18,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c87-b",
+    "album": "Date in Daté",
+    "facts": [
+     {
+      "f": "日文維基〈菅野邦彦〉條目記：1936 年 10 月 13 日生於東京，學習院大學畢業；**兄長是音響評論家菅野沖彦**。",
+      "src": "https://ja.wikipedia.org/wiki/菅野邦彦"
+     },
+     {
+      "f": "Discogs 的 Nadja 廠牌條目（label 228257）在他名下登錄了六個目錄號：PA-6021《Live!》(1973)、PA-7173《Date In Daté》、PA-7179《The Days Of Wine And Roses》(1977)、PA-7190《Solo》(1977)、PA-7195《Opa! Brasil》(1978)、以及 1980 年的《Live!》(PA-9752／PAP-9241)。",
+      "src": "https://www.discogs.com/label/228257-Nadja"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c87-b",
+    "album": "Solo",
+    "facts": [
+     {
+      "f": "日文維基〈菅野邦彦〉條目記：1960 年前後他與鈴木勲、ジョージ大塚組成三重奏開始演出，被來日的 Tony Scott 看上，整個小組一起加入；**同一組人在 1963 至 64 年前後以「松本英彦カルテット」的名義活動**，解散後他才轉為獨奏鋼琴家與領班，並開始發表 LP。",
+      "src": "https://ja.wikipedia.org/wiki/菅野邦彦"
+     },
+     {
+      "f": "Discogs 的 Nadja 廠牌條目（label 228257）顯示本碟的編號 PA-7190 落在他 1977 年兩張碟之間：同年還有 PA-7173《Date In Daté》與 PA-7179《The Days Of Wine And Roses》，隔年是 PA-7195《Opa! Brasil》。",
+      "src": "https://www.discogs.com/label/228257-Nadja"
+     },
+     {
+      "f": "Discogs 的藤井貞泰《Prelude To A Kiss》條目（同廠 Nadja PA-7168，1976 年）也把 Directed By 掛給 Teruo Hirono——**同一位監製在同一家廠牌的另一張鋼琴碟上也掛了名**。",
+      "src": "https://www.discogs.com/release/13647321"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Date in Daté",
+    "manifest": "onboarding-manifest-c87-20260904.json",
+    "desc": "1985 年的 CD 給這張碟換了一個名字。Apollon 那一版叫《Black Orpheus: Date In Daté》，2008 年沿用，到 2014 年才改回原名，並逐軌補上原盤條目沒有登錄的作曲掛名。他 1936 年生於東京，學習院大學畢業，兄長是音響評論家菅野沖彦。原盤是 1976 年 7 月 18 日在 Daté Royal 的現場，A1 在原盤上拼成〈Black Orfeus〉；1977 年發行，credit 上只有三個名字，四軌分成兩面各兩首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11844107",
+     "https://www.discogs.com/master/899233",
+     "https://www.discogs.com/release/7601541",
+     "https://music.apple.com/jp/album/1329379839",
+     "https://ja.wikipedia.org/wiki/菅野邦彦",
+     "https://www.discogs.com/label/228257-Nadja"
+    ]
+   },
+   {
+    "album": "Solo",
+    "manifest": "onboarding-manifest-c87-20260904.json",
+    "desc": "曲目登了八個曲名，末尾還有一段沒有編號的〈Medley〉。credit 也只有三個名字，樂器欄只有一件 Piano [Solo]。1976 年 12 月 14 日錄於東邦生命ホール，1977 年發行，Teruo Hirono 掛製作與混音。八首裡 A2〈Mood〉與 A4 的作曲欄掛他自己。曲長要到 2022 年的紙盒 CD 才登錄，最短兩分十七秒、最長三分五十四秒。他 1960 年前後與鈴木勲、ジョージ大塚組了三重奏，被來日的 Tony Scott 看上。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7143562",
+     "https://www.discogs.com/master/939442",
+     "https://www.discogs.com/release/21856576",
+     "https://music.apple.com/jp/album/1329378742",
+     "https://ja.wikipedia.org/wiki/菅野邦彦",
+     "https://www.discogs.com/label/228257-Nadja",
+     "https://www.discogs.com/release/13647321"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "leo parker",
+  "name": "Leo Parker",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1961,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Let Me Tell You 'Bout It",
+    "year": 1961,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Rollin' With Leo",
+    "year": 1980,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c138-b",
+    "album": "Let Me Tell You 'Bout It",
+    "facts": [
+     {
+      "f": "Discogs 實體盤面：`catno=BLP 4087` 的美國原壓是 **1961 US Blue Note Records Inc. Vinyl/LP/Album/Mono BLP 4087**，下一筆同號美國盤已是 1966 repress。沒有 1960 或 1962 的 4087 首壓。（同號在 2004 年之後被 BOMP! 廠牌重複使用於 Black Lips 的唱片，與本張無關。）",
+      "src": "https://api.discogs.com/database/search?catno=BLP+4087&type=release&per_page=100"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c145-b",
+    "album": "Rollin' With Leo",
+    "facts": [
+     {
+      "f": "**〈Mad Lad Returns〉的曲名是一句自我指涉**：Leo Parker 1947 年與鋼琴家 Sir Charles Thompson 在 Apollo Records 有過一首叫〈Mad Lad〉的暢銷曲，**「Mad Lad」從此是他的綽號**；1950 年代他因毒品問題幾乎從錄音室消失，**1961 年才靠 Blue Note 錄了兩張復出作**（9 月 9 日的 BLP 4087《Let Me Tell You 'Bout It》與本盤的兩場），**隔年 1962 年 2 月 11 日就因心臟病在紐約過世，得年三十六**。→ **本盤的母帶躺了十九年才變成唱片，而它的主人在錄完後不到四個月就走了。** 維基 `Rollin' with Leo` 條目把它歸在「Albums published posthumously」分類，infobox：released 1980、recorded October 12 & 20, 1961、studio Van Gelder、length 43:48、label Blue Note LT 1076／BST 84095、producer Alfred Lion、**chronology 的 prev 是《Let Me Tell You 'Bout It》(1961)、next 空白**。⚠ **作曲權不是全部在他身上**：維基該條目的曲目欄標出〈Bad Girl〉是貝斯手 Stan Conover 寫的、〈Music Hall Beat〉是 **Illinois Jacquet**、〈Stuffy〉是 **Coleman Hawkins**，**其餘五首才是 Leo Parker 自己的**。**AllMusic 的 Steve Leggett 給四顆半星**，評語是「a wonderful portrait of this unsung but brilliant player, whose huge, sad, but almost impossibly strong tone always felt like it carried the world on its shoulders」。",
+      "src": "https://en.wikipedia.org/wiki/Leo_Parker"
+     },
+     {
+      "f": "**廠牌檔期文件三則，把上市釘在 1980 年 10–11 月**（第 612 條）：**Cash Box 1980-09-27 p16** 的第四季發片預告表（EMI AMERICA／LIBERTY 欄）**十月**列「Stanley Turrentine (Blue Note)、**Leo Parker (Blue Note)**」；**Billboard 1980-11-01 p13** 的 Liberty／UA 整版新片廣告逐字印「**LEO PARKER / Rollin' With Leo LT-1076 4LT-1076 8LT-1076**」，同版另有 a 組的「HANK MOBLEY / Third Season LT-1081」；**Billboard 1980-11-15 p43** 的新片目錄頁印「**PARKER, LEO Rollin' With Leo LP Blue Note LT1076 $7.98 8T8LT1076 $7.98 CA4LT1076 $7.98**」。**預告表、上市廣告、目錄頁三種欄位互相佐證。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-11-01.pdf"
+     },
+     {
+      "f": "Discogs 美國原壓 4316698（1980 US、**盤面副標印「Blue Note CLASSIC」**、4 圖）notes 另記「Blue labels with white lowercase 'b' logo. The runouts are hand etched, and the 'CX' is interlocked.」名單欄：Dave Burns 小號、Bill Swindell 次中音、Leo Parker 上低音、**Johnny Acea 鋼琴（jazzdisco 作 John Acea）**、Al Lucas 與 Stan Conover 兩位貝斯、Purnell Rice 與 Wilbert Hogan 兩位鼓手、**Producer [Original Session Produced By]＝Alfred Lion、Produced For Release＝Michael Cuscuna、Engineer＝Rudy Van Gelder、Remix＝Tony Sestanovich、內頁文案＝Bob Porter**、美術 Bill Burks、攝影 Jed Wilcox。⚠ **`catno=LT-1076` 反查五筆：1980 美國黑膠兩筆與卡帶一筆、1981 紐西蘭壓一筆（MB 漏建）、外加一筆 Britney Spears 的誤植** ——**第 843 條的又一個樣本。**",
+      "src": "https://api.discogs.com/releases/4316698"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Let Me Tell You 'Bout It",
+    "manifest": "onboarding-manifest-c138-20260917.json",
+    "desc": "1957 年之後他幾乎從唱片上消失，四年後帶著一組沒人聽過的樂手回來。七首 1961 年 9 月 9 日在 Van Gelder Studio 一場錄完，六重奏由 Leo Parker 的上低音薩克斯風領銜，John Burks 的小號與 Bill Swindell 的次中音在前六首加進來，底下是 Yusef Salim、Stan Conover 與 Purnell Rice。多是中快板的搖擺與藍調，〈Blue Leo〉是他與 Ike Quebec 合寫的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=43b79a38-3c8c-3e83-8881-4cbc1352f966&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4000-series/",
+     "https://api.discogs.com/database/search?catno=BLP+4087&type=release&per_page=100",
+     "https://en.wikipedia.org/wiki/Let_Me_Tell_You_%27bout_It",
+     "https://itunes.apple.com/lookup?id=715978965&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/43b79a38-3c8c-3e83-8881-4cbc1352f966"
+    ]
+   },
+   {
+    "album": "Rollin' With Leo",
+    "manifest": "onboarding-manifest-c145-20260917.json",
+    "desc": "〈Mad Lad Returns〉用的是他 1947 年那首暢銷曲留下的綽號。1961 年 10 月在 Van Gelder 棚分兩場錄成，相隔八天；管樂與鋼琴兩場不變，貝斯與鼓整組換人，前排是 Dave Burns 小號、Bill Swindell 次中音，Parker 自己吹上低音。八首裡五首是他自己寫的。他 1962 年 2 月因心臟病過世、得年三十六，唱片等到 1980 年才上市；Alfred Lion 錄的原場，Michael Cuscuna 整理發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=dc3d458c-7315-41e6-93f1-44fe3019ba62&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-lt-series/",
+     "https://en.wikipedia.org/wiki/Leo_Parker",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-11-01.pdf",
+     "https://api.discogs.com/releases/4316698",
+     "https://itunes.apple.com/lookup?id=715675271&entity=song&country=us&limit=200",
+     "https://musicbrainz.org/release-group/dc3d458c-7315-41e6-93f1-44fe3019ba62"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "leszek możdżer",
+  "name": "Leszek Możdżer",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2011,
+   2013
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Polska",
+    "year": 2013,
+    "genres": [
+     "jazz",
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Komeda",
+    "year": 2011,
+    "genres": [
+     "jazz",
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "louis smith",
+  "name": "Louis Smith",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1958,
+   1958
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Here Comes Louis Smith",
+    "year": 1958,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Smithville",
+    "year": 1958,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c137-b",
+    "album": "Here Comes Louis Smith",
+    "facts": [
+     {
+      "f": "release-group 56e0f88c 的欄位：title「Here Comes Louis Smith」、artist-credit「Louis Smith」（實體 1f35fe85，Person，US，1931–2016，MB 描述「US jazz trumpeter」）、first-release-date 1958、primary-type Album、secondary-types 空、轄下 4 筆 release。原盤 42c915d1 是 1958 US Official、Blue Note BLP 1584、12 吋 6 軌；其後 1996 US CD CDP 7243 8 52438 2 0、兩筆 2008 年的 Connoisseur CD 50999 5 14381 2 8。六軌：〈Tribute to Brownie〉6:37、〈Brill's Blues〉8:22、〈Ande〉6:41、〈Star Dust〉5:19、〈South Side〉8:38、〈Val's Blues〉6:35。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=56e0f88c-3592-3f90-ae2c-2ac1a294f446&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "英文維基：本盤是小號手 Louis Smith 的首張專輯，**原本是替 Transition Records 錄的，那家公司在發行前倒閉，母帶由 Blue Note 的 Alfred Lion 收購、同年以 BLP 1584 推出**（引 Cary Ginell 寫的 Cannonball Adderley 傳記《Walk Tall》第 33 頁）；製作人掛的是 Tom Wilson，錄音地點 Audio Sonic Sound（Brill Building 內），長度 42:17。AllMusic 的 Scott Yanow 給四星半：「Louis Smith 在這張 Blue Note 專輯上有個出色的開場，這是他在轉行當全職教師之前的兩張之一。」",
+      "src": "https://en.wikipedia.org/wiki/Here_Comes_Louis_Smith"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c137-b",
+    "album": "Smithville",
+    "facts": [
+     {
+      "f": "**Billboard 1958 年 8 月 11 日第 29 頁的爵士專輯評論欄評了「SMITHVILLE — Blue Note 1594」**：Louis Smith 的小號風格同時看得出 Parker 與 Miles Davis 的影子，但照這張新專輯的表現，他正在變成當代小號手裡比較有本事的一位，有想像力也有技術；全盤三首原創加兩首標準曲，最好的兩面是〈Smithville〉與〈Embraceable You〉。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1958/Billboard%201958-08-11.pdf"
+     },
+     {
+      "f": "英文維基：《Smithville》是 Louis Smith 的第二張專輯，也是**他替 Blue Note 錄的最後一張**；1958 年 3 月 30 日錄於 Van Gelder Studio，LP 長度 39:09、CD 版 57:35。CD 再版多了三首：〈Au Privave〉（Charlie Parker）、〈Bakin'〉（又名〈Tunesmith〉）與〈There Will Never Be Another You〉的 mono take。製作 Alfred Lion、錄音 Rudy Van Gelder、設計 Reid Miles、攝影 Francis Wolff、內頁 Robert Levin。AllMusic 的 Stephen Thomas Erlewine 給四星：「風格上沒什麼意外，就是主流咆勃與硬咆勃⋯⋯一場一流的硬咆勃，值得比它現在得到的更廣的流通。」下一張掛他名字的專輯要等到 1978 年的《Just Friends》。",
+      "src": "https://en.wikipedia.org/wiki/Smithville_(album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Here Comes Louis Smith",
+    "manifest": "onboarding-manifest-c137-20260917.json",
+    "desc": "吹中音的「Buckshot La Funke」是個化名，本人是 Cannonball Adderley。這是他的首張專輯，兩場錄於紐約的 Audio Sonic Sound。母帶原屬 Transition Records，公司在發行前收掉，Alfred Lion 買下帶子，1958 年推出。鋼琴由 Duke Jordan 與 Tommy Flanagan 分攤。〈Tribute to Brownie〉是 Duke Pearson 寫給 Clifford Brown 的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=56e0f88c-3592-3f90-ae2c-2ac1a294f446&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1958/Billboard%201958-04-28.pdf",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/",
+     "https://en.wikipedia.org/wiki/Here_Comes_Louis_Smith",
+     "https://itunes.apple.com/lookup?id=724944894&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/56e0f88c-3592-3f90-ae2c-2ac1a294f446"
+    ]
+   },
+   {
+    "album": "Smithville",
+    "manifest": "onboarding-manifest-c137-20260917.json",
+    "desc": "這是他在 Blue Note 的第二張也是最後一張，下一張要等到 1978 年。1958 年 3 月 30 日一場錄完五首，配 Charlie Rouse 的次中音，加上 Sonny Clark、Paul Chambers、Art Taylor 的節奏組。五首佔滿一張 12 吋，〈Smithville〉十一分鐘、〈Wetu〉九分鐘，三首原創對〈Embraceable You〉與〈There Will Never Be Another You〉。中間那二十年他去當全職教師。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=98123987-a057-43a0-ad60-3b3a52f70763&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1958/Billboard%201958-08-11.pdf",
+     "https://www.jazzdisco.org/blue-note-records/catalog-1500-series/",
+     "https://en.wikipedia.org/wiki/Smithville_(album)",
+     "https://itunes.apple.com/lookup?id=716613744&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/98123987-a057-43a0-ad60-3b3a52f70763"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "madeleine peyroux",
+  "name": "Madeleine Peyroux",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2006,
+   2011
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Standing on the Rooftop",
+    "year": 2011,
+    "genres": [
+     "jazz",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Half the Perfect World",
+    "year": 2006,
+    "genres": [
+     "jazz",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "mammal hands",
+  "name": "Mammal Hands",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2017,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Shadow Work",
+    "year": 2017,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Captured Spirits",
+    "year": 2020,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "maria schneider jazz orchestra",
+  "name": "Maria Schneider Jazz Orchestra",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1994,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Evanescence",
+    "year": 1994,
+    "genres": [
+     "jazz",
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Coming About",
+    "year": 1996,
+    "genres": [
+     "jazz",
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "marion brown",
+  "name": "Marion Brown",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1970,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Afternoon of a Georgia Faun",
+    "year": 1970,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Geechee Recollections",
+    "year": 1973,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "mark murphy",
+  "name": "Mark Murphy",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1961,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rah",
+    "year": 1961,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Stolen Moments",
+    "year": 1978,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Rah",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Mark Murphy 在 Riverside 的第一張，1961 年由 Ernie Wilkins 編曲指揮，樂手名單排出 Clark Terry、Bill Evans、Jimmy Cobb 等人。Down Beat 當年評論說這批編曲「足以讓 Sinatra 嫉妒」；Murphy 在〈Milestones〉、〈Twisted〉、〈Doodlin'〉裡衝浪般騎在節奏上，MusicHound 稱之為他的突破作。原錄的改詞版〈My Favorite Things〉遭作曲者 Richard Rodgers 否決抽換，原版母盤成了收藏家獵物。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rah_(Mark_Murphy_album)",
+     "https://musicbrainz.org/release-group/9e406bf7-153f-3629-8de5-ec596f77770d"
+    ]
+   },
+   {
+    "album": "Stolen Moments",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Muse 時期的高峰，1978 年發行。Mark Murphy 為 Oliver Nelson 的器樂名曲〈Stolen Moments〉填上歌詞——寫兩個人偷出時間相聚、不理會世界怎麼說——錄音後在美國電台大量播放，從此成為他的招牌曲。Mitch Farber 編曲並召集樂手，Richie Cole 的中音薩克斯風戲份吃重。原定的主打、配上自寫歌詞的 Zawinul 曲〈Birdland〉在開錄前兩天因授權被拒臨時抽掉，反而讓標題曲坐實了整張的重心，成為他銷售較佳的作品之一。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Stolen_Moments_(Mark_Murphy_album)",
+     "https://musicbrainz.org/release-group/0384ba8a-efa5-311c-94aa-03d2ef66ef07"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mary halvorson",
+  "name": "Mary Halvorson",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2014,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Amaryllis",
+    "year": 2022,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Reverse Blue",
+    "year": 2014,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "mel tormé",
+  "name": "Mel Tormé",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1956,
+   1960
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mel Tormé with the Marty Paich Dek-Tette",
+    "year": 1956,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Mel Tormé Swings Shubert Alley",
+    "year": 1960,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Mel Tormé Swings Shubert Alley",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "1960 年 Verve 盤,Mel Tormé 與 Marty Paich 率領的十人編制(Art Pepper、Frank Rosolino、Bill Perkins、Mel Lewis 等西岸好手)合作,整張唱百老匯音樂劇曲目:〈Too Close for Comfort〉〈On the Street Where You Live〉〈Just in Time〉。編制裡放進法國號與 tuba,Paich 疊出輕而透的室內樂式聲響,Tormé 的霧面嗓音在其上輕快擺盪,是 vocal jazz 與劇場曲目結合的高標。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mel_Torm%C3%A9_Swings_Shubert_Alley",
+     "https://musicbrainz.org/release-group/e1bdbe05-7393-3296-b0ab-962147dff875"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "melvin sparks",
+  "name": "Melvin Sparks",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1970,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sparks!",
+    "year": 1970,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Spark Plug",
+    "year": 1971,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Spark Plug",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "吉他手 Melvin Sparks 的第二張個人專輯，1971 年 3 月錄於 Rudy Van Gelder 的 Englewood Cliffs 錄音室，Prestige 發行。同行有小號手 Virgil Jones、次中音薩克斯風 Grover Washington, Jr. 與鼓手 Idris Muhammad。五首裡有三首超過八分鐘：翻自 Kool & the Gang 的〈Who's Gonna Take the Weight〉開場就是九分二十秒，Sparks 的短促單音樂句與悶音刷弦一路扣在後拍。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Spark_Plug_(album)",
+     "https://musicbrainz.org/release-group/ce4aaa6e-b880-4d29-a2d1-cf14b867d985"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mercan dede",
+  "name": "Mercan Dede",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2002,
+   2004
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Nar",
+    "year": 2002,
+    "genres": [
+     "jazz",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Su",
+    "year": 2004,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Nar",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "本名 Arkın Ilıcalı、一九六六年生於布爾薩的 Mercan Dede，在伊斯坦堡大學讀新聞與攝影，畢業後赴加拿大，另以 DJ Arkin Allen 之名做電子樂。二〇〇二年由伊斯坦堡的 Doublemoon 發行（DM015），掛名 Mercan Dede & Secret Tribe。八首曲名全部以「Nar-ı」（火之）起頭，從〈Nar-ı Ney〉排到〈Nar-ı Seher〉；他自己吹的 ney 竹笛與 bendir 框鼓疊在 downtempo 節拍上，ney 在他口中是「一種純粹、普世的靈性聲音」。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mercan_Dede",
+     "https://musicbrainz.org/release-group/595e1709-1ffd-3b3e-8977-301f6a91f0c6"
+    ]
+   },
+   {
+    "album": "Su",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "Mercan Dede 以四元素為題的系列中屬水的一張，二〇〇四年七月由 Doublemoon 發行（DM 0023）。十二首曲名全部以「Ab-ı」（水之）開頭，從〈Ab-ı Rû〉、〈Ab-ı Hayat〉排到〈Ab-ı Verd〉，其中〈Ab-ı Çeşm〉在土耳其版加註 Kerbela，指向什葉派的卡爾巴拉哀悼。人聲比前作明顯增加，與民謠歌手 Sabahat Akkiraz 合作的一曲在土耳其特別受歡迎；唱片在歐洲世界音樂榜連續兩個月居冠，他也在同年的首屆 Globalfest 完成美國首演。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mercan_Dede",
+     "https://musicbrainz.org/release-group/8a364504-8e37-37a2-abdc-37fda1cdba8c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "michael franks",
+  "name": "Michael Franks",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1976,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Art of Tea",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sleeping Gypsy",
+    "year": 1977,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "michel petrucciani",
+  "name": "Michel Petrucciani",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1984,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Pianism",
+    "year": 1986,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "100 Hearts",
+    "year": 1984,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c146-a",
+    "album": "100 Hearts",
+    "facts": [
+     {
+      "f": "release-group 8388a46d 的欄位（本層以 release 端點重問，**第一次回 503「server is currently busy」，隔兩秒重試即取得——第 642 條的同形，503 不等於查無**）：title「100 Hearts」、artist-credit「Michel Petrucciani」（Person 2b75141c）、first-release-date **1984**、primary-type Album、**secondary-types 空**。轄下只有兩筆、**都是 CD**：b61684a5（**1984 US CD 6 軌，Concord Jazz CCD-43001**，013431300120）、d5143ec9（1999 XE CD 6 軌，Blue Note 7243 5 38329 2 6，724353832926）。**MB 沒建 1984 年的 The George Wein Collection GW-3001 黑膠首發。** 六軌：Turn Around／Three Forgotten Magic Words／Silence／St. Thomas／**Pot Pouri: Someday My Prince Will Come · All the Things You Are · A Child Is Born · Very Early**（14:21，全盤最長）／100 Hearts（11:59）。⚠ **MB 把串燒那軌拼成「Pot Pouri」（少一個 r）**，Discogs 原壓作「Pot Pourri (A Medley)」、維基作「Pot Pourri (Medley)」。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=8388a46d-cbde-3ecd-81ef-4bdd654bf3f7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "Discogs `catno=GW-3001` 反查：**1984 年美國原壓兩筆（4267514 與 541851，欄位相同）＋1984 年德國原壓 13494847**，另有 1986 年日本 King 壓 K23 10005（廠牌欄同時掛 Concord Jazz 與 The George Wein Collection）。美國原壓 4267514 的 notes 只有一句：「**Recorded live at the RCA Studio A, New York (Summer 1983)**」（⚠ **這裡的 live 指的是棚內一次錄成，不是現場演出**——廠牌欄同時列「RCA Studios, New York」與「Concord Jazz, Inc.」）；credit 欄：**製作人 Gabreal Franklin，共同製作 Jeffrey Weber 與 Jim Gierlich，內頁文字 Leonard Feather**。**版權欄逐首列出版商**（Composers Music／Liberation Music／Prestige Music／Bourne／T.B. Harms／D'Accord／TRO-Acorn）。",
+      "src": "https://api.discogs.com/releases/4267514"
+     },
+     {
+      "f": "**Cash Box 1984 年 3 月 10 日 p17 的「On Jazz」專欄（本層自原始 PDF 複驗）**：「**CONCORD WEIN — \"The George Wein Collection,\" a new division of Concord Records, will debut in April with LPs from French piano whiz Michel Petrucciani and Art Blakey sidemen, trumpeter Terence Blanchard and alto saxist Donald Harrison.** Pictured above are jazz impresario extraordinaire Wein (r) and Concord president Carl Jefferson.」——**這是廠牌創立的預告，明寫「四月首發」，而且點名本盤的藝人。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1984/CB-1984-03-10.pdf"
+     },
+     {
+      "f": "**Cash Box 同一週（1984-04-28 p16）的評介欄**：「**100 HEARTS — Michel Petrucciani — George Wein Collection (dist. by Concord Jazz) GW-3001 — Producer: George Wein — List: $8.98** — One of the finest pianists to come upon the scene in ages, Petrucciani is a **21-year-old**, highly romantic French pianist who has managed to churn up his influences — **notably Bill Evans, but Tristano, Tyner, and others shine through** — into his own expressive, dense cauldron. With the hands of a virtuoso and the soul of a poet, Petrucciani, in this **solo LP — his first for an American label** — goes right to the heart.」⚠ **製作人欄印「George Wein」是紙本錯（第 509c 條）**：Wein 是廠牌主人，Billboard 同週與 Discogs 原壓 credit、維基都作 **Gabreal Franklin**。**同期 p16 的新片流水帳另把本盤與 Terence Blanchard／Donald Harrison《New York Second Line》並列為「the latter is a George Wein Collection LP」。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1984/CB-1984-04-28.pdf"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "100 Hearts",
+    "manifest": "onboarding-manifest-c146-20260917.json",
+    "desc": "二十一歲那年第一次為美國廠牌錄音，六首獨奏鋼琴裡只有兩首是自己的。1983 年夏天在紐約 RCA Studio A 錄成，全盤只有他一個人的鋼琴。借來的曲子出自 Ornette Coleman、Charlie Haden 與 Sonny Rollins，另有一段十四分鐘的四曲串燒。它是 George Wein 新開廠牌的第一號，1984 年 4 月上市，Gabreal Franklin 製作。同年 7 月 28 日它進 Billboard 爵士榜，最好名次第 29 名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8388a46d-cbde-3ecd-81ef-4bdd654bf3f7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/4267514",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1984/CB-1984-03-10.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1984/BB-1984-04-28.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1984/CB-1984-04-28.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1984/BB-1984-09-22.pdf",
+     "https://en.wikipedia.org/wiki/100_Hearts",
+     "https://itunes.apple.com/lookup?id=724838710&country=us",
+     "https://musicbrainz.org/release-group/8388a46d-cbde-3ecd-81ef-4bdd654bf3f7"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mike osborne trio",
+  "name": "Mike Osborne Trio",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1974,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Border Crossing",
+    "year": 1974,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "All Night Long (The Willisau Concert)",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 2,
+   "facts": 8,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c71-a",
+    "album": "Border Crossing",
+    "facts": [
+     {
+      "f": "Ogun 的第三號目錄 OG 300，1974 年英國盤，唱片標籤上的版權年是 1974，封底印廠牌地址「28 Richardson Court, London SW4 6RZ」。Discogs master 1774253 底下只有兩筆，都是 1974 年的英國原盤，沒有任何一筆標為 Unofficial Release，也沒有任何再發版本。",
+      "src": "https://www.discogs.com/master/1774253-Mike-Osborne-Trio-Border-Crossing"
+     },
+     {
+      "f": "三重奏 credit：Mike Osborne（中音薩克斯，兼寫內頁文字）、Harry Miller（低音提琴）、Louis Moholo（鼓）；Osborne 與 Keith Beal 共同掛製作，Beal 另掛混音與剪接。",
+      "src": "https://www.discogs.com/release/1660268-Mike-Osborne-Trio-Border-Crossing"
+     },
+     {
+      "f": "原盤七軌，A1〈Ken's Tune〉4:46、A2〈Stop And Start〉3:50、A3〈Awakening Spirit〉3:50、A4〈Ist〉10:00、B1〈Animation〉、B2〈Riff〉、B3〈Border Crossing〉19:15；除〈Awakening Spirit〉是 Harry Miller 所寫，其餘六首都掛 Mike Osborne。",
+      "src": "https://www.discogs.com/release/1660268-Mike-Osborne-Trio-Border-Crossing"
+     },
+     {
+      "f": "Michael Evans Osborne（1941 年 9 月 28 日生於英格蘭 Hereford、2007 年 9 月 19 日過世）是中音薩克斯手、鋼琴與豎笛演奏者，就讀過 Gloucestershire 的 Wycliffe College 與 Guildhall School of Music；1962 到 1972 年間他是 Mike Westbrook 樂團的成員。",
+      "src": "https://en.wikipedia.org/wiki/Mike_Osborne"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c71-a",
+    "album": "All Night Long (The Willisau Concert)",
+    "facts": [
+     {
+      "f": "A 面整段題為〈All Night Long〉21:30，內含四個段落：〈All Night Long〉〈Rivers〉〈Round Midnight〉〈Scotch Pearl〉；B 面整段題為〈Recapitulations〉22:10，內含〈Ken's Tune〉〈Country Bounce〉〈All Night Long〉〈Trio Trio〉四段。〈Rivers〉與〈Country Bounce〉三人共同掛名，〈Round Midnight〉是 Thelonious Monk 與 Cootie Williams 的曲子，其餘皆 Mike Osborne 所作。",
+      "src": "https://www.discogs.com/release/2485097-Mike-Osborne-Trio-All-Night-Long-The-Willisau-Concert"
+     },
+     {
+      "f": "原盤 credit：Mike Osborne（中音薩克斯）、Harry Miller（貝斯）、Louis Moholo（鼓）；錄音是 Walter Troxler、封面美術是 Niklaus Troxler、現場照片是 Andreas Raggenbass，內頁文字由 Keith Beal 撰寫，Osborne 與 Beal 共同掛製作。",
+      "src": "https://www.discogs.com/release/2485097-Mike-Osborne-Trio-All-Night-Long-The-Willisau-Concert"
+     },
+     {
+      "f": "Michael Evans Osborne（1941 年 9 月 28 日－2007 年 9 月 19 日）在 1982 年因健康問題提前結束演奏生涯，返回出生地 Hereford；2007 年過世時仍在接受照護，享年 65 歲。英文維基把他的活動年份記為 1962–1982。",
+      "src": "https://en.wikipedia.org/wiki/Mike_Osborne"
+     },
+     {
+      "f": "Louis Tebogo Moholo（1940 年 3 月 10 日－2025 年 6 月 13 日）是南非鼓手，先後是 Blue Notes、Brotherhood of Breath 與 Assagai 的成員。",
+      "src": "https://en.wikipedia.org/wiki/Louis_Moholo"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Border Crossing",
+    "manifest": "onboarding-manifest-c71-20260904.json",
+    "desc": "那天是薩克斯手的三十三歲生日，他們在一間酒館裡錄音。封套背面印明：1974 年 9 月 28 日，倫敦 Bishopsgate 的 Kings Arms，Peanuts Club 主辦的現場。Ogun 的 OG 300，Mike Osborne 的中音薩克斯、Harry Miller 的低音提琴與 Louis Moholo 的鼓，七軌裡六首掛 Osborne 的名字。Hazel Miller 說錄音師 Keith Beal 把器材拖到完全不適合錄音的場地。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1660268-Mike-Osborne-Trio-Border-Crossing",
+     "https://www.discogs.com/master/1774253-Mike-Osborne-Trio-Border-Crossing",
+     "https://en.wikipedia.org/wiki/Mike_Osborne",
+     "https://ogunrecording.co.uk/the-ogun-story/",
+     "https://musicbrainz.org/release-group/bd49e0f7-c085-4d0f-916f-7747403b7d15"
+    ]
+   },
+   {
+    "album": "All Night Long (The Willisau Concert)",
+    "manifest": "onboarding-manifest-c71-20260910.json",
+    "desc": "他在 1982 年因為健康問題收手，回到出生的那個小城。Mike Osborne 1941 年生於 Hereford。這場錄於 1975 年 4 月 13 日的瑞士 Willisau，唱片是 1976 年的 Ogun OG 700；封套註明兩面各自是一整段連續的軌道，A 面〈All Night Long〉21 分 30 秒、B 面〈Recapitulations〉22 分 10 秒，各含四個段落，八段裡只有〈Round Midnight〉出自別人。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2485097-Mike-Osborne-Trio-All-Night-Long-The-Willisau-Concert",
+     "https://ogunrecording.co.uk/releases/mike-osborne-trio-all-night-long",
+     "https://en.wikipedia.org/wiki/Mike_Osborne",
+     "https://en.wikipedia.org/wiki/Louis_Moholo",
+     "https://www.discogs.com/master/314459-Mike-Osborne-Trio-All-Night-Long-The-Willisau-Concert",
+     "https://musicbrainz.org/release-group/4b95f4ec-ab03-4dbc-9249-b2a2844351e7"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mina",
+  "name": "Mina",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1966,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Studio Uno 66",
+    "year": 1966,
+    "genres": [
+     "jazz",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Mina® (1974)",
+    "year": 1974,
+    "genres": [
+     "jazz",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Studio Uno 66",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "馬賽一輛警車的警笛，只有三個音，被寫成了她的代表錄音。那三個音成了〈Se telefonando〉的主題旋律，曲子由 Ennio Morricone 作曲，收在 1966 年 7 月由 Ri-Fi 發行的這張唱片裡。專輯曲目全來自她為 RAI 電視節目《Studio Uno》第四季演出所錄，唱片也在 Musica e dischi 榜拿下週榜與月榜雙料冠軍。2010 年《La Repubblica》辦的讀者票選中，三萬名投票者選它為她生涯最佳錄音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Studio_Uno_66",
+     "https://en.wikipedia.org/wiki/Se_telefonando",
+     "https://musicbrainz.org/release-group/1554ea7b-5a96-3062-884b-6bb22b2d6d3a"
+    ]
+   },
+   {
+    "album": "Mina® (1974)",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "義大利第一位自己開唱片公司的歌手，在全盛期發了這張同名專輯。PDU 是 Mina 與父親 Giacomo Mazzini 在 1967 年共同創立的廠牌。這張唱片 1974 年 10 月由 PDU 推出、EMI Italiana 經銷，錄於米蘭的 La Basilica 錄音室，收有〈Una musica va〉。專輯登上義大利 Musica e dischi 榜冠軍，也在告示牌的義大利專輯榜攻到第 2 名。編曲成熟，管絃與節奏組並重，中低音域沉穩內斂。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mina_(1974_album)",
+     "https://en.wikipedia.org/wiki/PDU_(record_label)",
+     "https://musicbrainz.org/release-group/a7780003-bd0d-417e-895f-29ff2eaaa329"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "nala sinephro",
+  "name": "Nala Sinephro",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2021,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Space 1.8",
+    "year": 2021,
+    "genres": [
+     "jazz",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Endlessness",
+    "year": 2024,
+    "genres": [
+     "jazz",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "noah howard",
+  "name": "Noah Howard",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1968,
+   1972
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Black Ark",
+    "year": 1972,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "At Judson Hall",
+    "year": 1968,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "norman connors",
+  "name": "Norman Connors",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1972,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dance of Magic",
+    "year": 1972,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "You Are My Starship",
+    "year": 1976,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "You Are My Starship",
+    "manifest": "onboarding-manifest-c38-soul-20260823.json",
+    "desc": "費城鼓手 Connors 1976 年在 Buddah 錄的一張,把爵士樂手的伴奏鋪成 quiet storm 的樣子。標題曲由曾在 Miles Davis 團裡彈貝斯的 Michael Henderson 作曲兼主唱,單曲拿下 R&B 榜第 4、流行榜第 27 名;Phyllis Hyman 唱〈Betcha By Golly Wow〉,收尾翻 Pharoah Sanders 與 Leon Thomas 的〈The Creator Has a Master Plan〉。專輯登上 R&B 榜第 5 名、爵士榜冠軍;封面那艘船是約翰韋恩的。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/You_Are_My_Starship",
+     "https://en.wikipedia.org/wiki/Michael_Henderson",
+     "https://musicbrainz.org/release-group/bd5369b0-f3b9-3252-854a-53c956937f44"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "nubiyan twist",
+  "name": "Nubiyan Twist",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   2021,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Freedom Fables",
+    "year": 2021,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Find Your Flame",
+    "year": 2024,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "oliver lake",
+  "name": "Oliver Lake",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1975,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Heavy Spirits",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "NTU: Point From Which Creation Begins",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c59-a",
+    "album": "NTU: Point From Which Creation Begins",
+    "facts": [
+     {
+      "f": "1971 年錄於聖路易，1976 年才由 Arista 旗下的 Freedom 發行，編號 AL 1024；封底印著「Recorded in St. Louis in 1971 / A Passin' Thru Recording / A Freedom Release」。",
+      "src": "https://www.discogs.com/release/1761120"
+     },
+     {
+      "f": "這張唱片本來要當 Lake 的領班出道作，他還打算用它當基礎帶團去歐洲巡演；結果原本要發行的小廠牌倒閉，他只能四處找願意發的公司，一直拖到他從巴黎住了幾年、搬到紐約之後，1976 年才由 Arista／Freedom 發出來。",
+      "src": "https://en.wikipedia.org/wiki/Ntu:_Point_from_Which_Creation_Begins"
+     },
+     {
+      "f": "研究者 Jeff Schwartz 指出專輯名反映的是 Janheinz Jahn 那本《Muntu: African Culture and the Western World》的影響，那本書在 1970 年代的爵士樂手之間流傳甚廣。",
+      "src": "https://en.wikipedia.org/wiki/Ntu:_Point_from_Which_Creation_Begins"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "NTU: Point From Which Creation Begins",
+    "manifest": "onboarding-manifest-c59-20260903.json",
+    "desc": "原本要發這張碟的小廠牌倒了，它要等到他搬去紐約之後才印成唱片。這張本來要當 Oliver Lake 的領班出道作，他四處找願意發行的公司，拖到 1976 年才由 Arista 旗下的 Freedom 發出來。封底只印著：「Recorded in St. Louis in 1971 / A Passin' Thru Recording / A Freedom Release」。同台的是 Baikida Carroll，製作人是同碟的鋼琴手 John Hicks。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1761120",
+     "https://en.wikipedia.org/wiki/Ntu:_Point_from_Which_Creation_Begins",
+     "https://musicbrainz.org/release-group/c5a6aa0f-ff5f-406f-9dfc-8b0cf90c77f4"
+    ]
+   }
+  ]
+ }
+]

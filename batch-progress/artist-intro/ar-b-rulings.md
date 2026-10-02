@@ -291,3 +291,23 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 026 g4 交件（QA 本組 0，四組齊）。thin：尾島由郎。Zodiac 銷量與成軍／解散年不寫；Brand Nubian 地位為弱來源。pubIssues 1（浜瀬元彦《Reminiscence》年份 1985／1986）→ 本機待核。w2（g3+g4）派出。
 - 026 w2 審稿無修正。The Avalanches 第 16 屆 Australian Music Prize（ABC Double J、NME）、Vitalic《Disco Boy》2024 年 Prix Lumières 最佳電影音樂（本人官方帳號、Lumières 條目）經主線 WebSearch 核實。Tiësto「第一位在奧運開幕式現場演出的 DJ」有兩個獨立來源，照准；DJ Mag 百大不寫。Trentemøller 2007 年丹麥音樂獎年度製作人屬獎項事實，照准。
 - **ar-b-026 上線**：40 位，reviewFixes 2。**第六段（017–026）十批全部上線。**
+
+## 第七段（ar-b-027～032 ＋ ar-c-001～004，店主 2026-10-02「繼續十批」）
+
+- **流程**：十批先一次切卡單（`cut/<批>.txt` 取自 progress keys）並跑 `artist-extract.mjs --lean`。各批特注改放 scratchpad `notes/<批>.txt`，由 notes10.sh 帶入。
+- **C 級審稿深度**：計畫書 §7-4 未定案，比照 A／B 級逐位審（較嚴的一邊，可逆）。C 級裁定另開 `ar-c-rulings.md`。
+- **合作型與編制名稱**（「某某 Quartet／Trio」「A, B & C」）：沿用 §7-3 建議，以卡上字串為一位，以領隊或搭檔為主體，寫明是哪一個編制名義。
+
+### ar-b-027
+- g1 交件（QA 本組 0）。thin：Busdriver、Danny Brown、Denzel Curry、Dilated Peoples、DMX、Eric B. & Rakim。生年皆維基單源，不寫。單源或主詞不符未收：Del 後輩點名（核對不到）、Dizzee Rascal「第二位水星獎饒舌手」、Rakim 個人的 Berklee 名人堂、DJ Babu 個人 DMC 獎。IAM 成軍年兩說，不寫。pubIssues 0。
+- 027 g4 交件（QA 本組 0）。thin：Run the Jewels（貢獻 none）、ScHoolboy Q、Slum Village。單源或有反例未收：Slick Rick 刑案與特赦細節、Salt-N-Pepa「首位葛萊美」。日文「会」被 QA 誤判為簡體，facts 改寫「音樂社團」。pubIssues 0。
+- 027 g3 交件（QA 本組 0）。thin：Migos、Monica、Open Mike Eagle、Playboi Carti。2026 年搖滾名人堂經主線 WebSearch 核實（rockhall.com、Rolling Stone、XXL）：Wu-Tang Clan 入選表演者類（主詞是團體，Method Man 只能寫「所屬的 Wu-Tang Clan」）；MC Lyte、Queen Latifah 獲早期影響獎；典禮在 11-14。正文一律寫「獲選 2026 年…」，不寫典禮、不用相對時間詞。單源未收：Migos 2026 年重聚、Monica 後輩點名。pubIssues 0。
+- 027 g2 交件（QA 0，四組齊）。thin：Juvenile、Little Brother、M.O.P.、Masta Ace。後輩點名皆單源未收（Juice WRLD、Kid Cudi、Masta Ace、Master P）。Juice WRLD 只寫 2019 年與年齡；Ja Rule 官司與 Fyre Festival 不收。pubIssues 0。w1、w2 派出。
+- 027 w1 審稿無修正。M.I.A. 放寬至 275 照准；《時代》百大屬推選名單，比照 Demi Lovato 先例照准。Chance the Rapper「第一張純串流得獎的葛萊美專輯」有兩源（Britannica 與專輯條目），照准。IAM 2015 年 Victoire d'honneur 寫成「榮譽勝利獎」，主詞是整團，照准。
+
+### ar-b-028
+- g3 交件（QA 本組 0）。thin：Daniel Caesar。Clipse 第 68 屆（2026）葛萊美最佳饒舌演出〈Chains & Whips〉與梵蒂岡 Grace for the World 演出，經主線 WebSearch 核實（grammy.com、Billboard）；「第一組在梵蒂岡演出的嘻哈藝人」只准以「被稱為」寫。衝突值不寫（《The Chronic》國家錄音登錄年、Dr. Dre 葛萊美座數、N.W.A 成立年、Cypress Hill 成員族裔與星光大道「首個」、Destiny's Child 簽約年、Das EFX 生年）。Shock G、Eyedea 只寫年份。pubIssues 0。
+- 028 g1 交件（QA 本組 0）。thin：The Streets、TLC、Travis Scott、Young Thug、112、6LACK。TLC 後輩點名與 Left Eye 過世年未湊足兩源，不寫；Young Thug 導師說法兩源不一、〈This Is America〉年度歌曲主詞未對上，不寫；豬頭皮「台語嘻哈第一人」只有轉述，不寫；《笑魁唸歌》採 1994。21 Savage 出生地兩源不一，只寫英國籍、在亞特蘭大長大。A$AP Rocky 法律爭議不收。pubIssues 0。
+- 028 g2 交件。Blood Orange 搜尋 10 次、Bone Thugs-n-Harmony 與 Ciara 各 9 次超限（超出部分已撤或未取用）。全 full。Blood Orange 父母族裔與《Freetown Sound》命名由來單源不寫；Ciara〈Lose Control〉MV 得獎主詞為 Missy Elliott，只能寫「她客串的 MV」；Brent Faiyaz〈Crew〉入圍屆次不寫。pubIssues 2（Blood Orange《Essex Honey》漏 2019《Angel's Pulse》；Chief Keef《Back From the Dead》mixtape 序數兩源不一）→ 本機待核。
+- 027 w2 審稿（2 處）：MC HotDog 刪「台灣第一位地下饒舌歌手」（首次宣稱，兩源一為部落格）；Salt-N-Pepa「入選 2025 年搖滾名人堂」改「以音樂影響獎入選」（經主線 WebSearch 核實：Rolling Stone、CBS、rockhall.com）。Slick Rick〈La Di Da Di〉2024 年列入國家錄音登記經主線核實（Hypebot、Deadline）。MC Lyte「第一位發行完整個人專輯的女饒舌歌手」以「搖滾名人堂稱」具名，照准。
+- **ar-b-027 上線**：40 位，reviewFixes 2。

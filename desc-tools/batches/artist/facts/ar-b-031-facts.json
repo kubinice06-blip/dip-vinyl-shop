@@ -1,0 +1,3433 @@
+[
+ {
+  "key": "arturo toscanini",
+  "name": "Arturo Toscanini",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1946,
+   1953
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Beethoven: Symphony no. 3 Eroica (1953)",
+    "year": 1953,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Beethoven"
+   },
+   {
+    "album": "Respighi: Pini di Roma / Fontane di Roma / Feste Romane",
+    "year": 1949,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Tchaikovsky: Manfred Symphony / Romeo and Juliet",
+    "year": 1946,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 4,
+   "facts": 12,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c100-a",
+    "album": "Respighi: Pini di Roma / Fontane di Roma / Feste Romane",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group fde44455 的欄位：title「Pini di Roma / Fontane di Roma / Feste Romane」、artist-credit「Respighi; NBC Symphony Orchestra, Arturo Toscanini」（作曲家在前、樂團與指揮在後）、first-release-date 1990、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——1990 US（12 軌，標題印成《Arturo Toscanini Collection, Volume 32: Pini di Roma / Fontane di Roma / Feste Romane》，編號 60262-2-RG）、2007-11-02 JP（12 軌，JVC JM-M24XR01）、2009-10-01 XW（只有 2 軌，Past Classics 數位版）。",
+      "src": "https://musicbrainz.org/release-group/fde44455-d1d1-3e93-a1a0-be3ae0d164ad"
+     },
+     {
+      "f": "Discogs release 8645249（RCA Victor Gold Seal 60262-2-RG，1990，CD／Compilation／Remastered／Mono）的說明欄逐字寫：「Recorded March 17, 1953 (1 to 4), December 17, 1951 (5 to 8), December 12, 1949 (9 to 12) in Carnegie Hall」，並列出總長 59:55、三首各自的時長 Pines Of Rome 20:50／Fountains Of Rome 15:05／Roman Festivals 23:40。也就是說一張碟上的三首交響詩來自三場相隔四年的錄音，全部在紐約 Carnegie Hall。",
+      "src": "https://api.discogs.com/releases/8645249"
+     },
+     {
+      "f": "英文維基〈Pines of Rome〉記：《羅馬之松》1924 年完成，1924 年 12 月 14 日在羅馬 Teatro Augusteo 由 Bernardino Molinari 指揮 Augusteo 管弦樂團首演；美國首演在 1926 年 1 月 14 日，那一場正是 Toscanini 接任紐約愛樂指揮的第一場音樂會，他 1945 年與該團的最後一場演出也演了這首。同條目記 Toscanini 在 1953 年與 NBC Symphony 在 Carnegie Hall 錄下這首曲子。",
+      "src": "https://en.wikipedia.org/wiki/Pines_of_Rome"
+     },
+     {
+      "f": "英文維基〈Roman Festivals (Respighi)〉記：《羅馬節日》1928 年完成，世界首演是 1929 年 2 月 21 日在紐約 Carnegie Hall、Toscanini 指揮紐約愛樂（引註紐約愛樂數位檔案的當場節目單）；義大利首演晚了將近一個月，1929 年 3 月 17 日在羅馬 Augusteo 由 Molinari 指揮。同條目記 Toscanini 錄過這首兩次——1942 年與費城管弦樂團（Academy of Music），1949 年再與 NBC Symphony 在 Carnegie Hall 錄一次，並記「1949 年那一場把當時的錄音器材推到極限，因為 Toscanini 堅持工程師要把全部的力度收進來，尤其是〈Circus Games〉與〈Epiphany〉兩段」。",
+      "src": "https://en.wikipedia.org/wiki/Roman_Festivals_(Respighi)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a",
+    "album": "Tchaikovsky: Manfred Symphony / Romeo and Juliet",
+    "facts": [
+     {
+      "f": "英文維基〈Manfred Symphony〉記：這首交響曲 1886 年 3 月 23 日在莫斯科首演；並記「conductor Arturo Toscanini considered it the composer's greatest composition and it was one of only two Tchaikovsky symphonies (the other being the Pathétique) that he ever programmed」，緊接著寫「His admiration did not stop him from making changes in Manfred's score when he performed and recorded it, including a number of cuts.」——也就是說，他推崇這首曲子，但演出與錄音時都改動過總譜、並且做了多處刪節。",
+      "src": "https://en.wikipedia.org/wiki/Manfred_Symphony"
+     },
+     {
+      "f": "MB 藝人 da96be23（Arturo Toscanini）名下以 release-group?artist=&limit=100&offset= 分頁列出 197 個 release-group（策展層實測值），本 release-group 是其中少數標題、曲目與班底都寫清楚的條目；同一位指揮的《羅密歐與茱麗葉》在 Apple 上另有 303072950（單軌，2009）與 383664151（Naxos「Years of Maturity in America, Vol. 4」1929-1946）等多筆不同編輯版本。",
+      "src": "https://musicbrainz.org/artist/da96be23-ef88-420e-8173-3efb7fd995cc"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a1",
+    "album": "Respighi: Pini di Roma / Fontane di Roma / Feste Romane",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group fde44455 的欄位：title「Pini di Roma / Fontane di Roma / Feste Romane」、artist-credit「Respighi; NBC Symphony Orchestra, Arturo Toscanini」（作曲家在前、樂團與指揮在後）、first-release-date 1990、primary-type Album、secondary-types 空陣列、轄下 3 個 release 全數 Official——1990 US（12 軌，標題印成《Arturo Toscanini Collection, Volume 32: Pini di Roma / Fontane di Roma / Feste Romane》，編號 60262-2-RG）、2007-11-02 JP（12 軌，JVC JM-M24XR01）、2009-10-01 XW（只有 2 軌，Past Classics 數位版）。",
+      "src": "https://musicbrainz.org/release-group/fde44455-d1d1-3e93-a1a0-be3ae0d164ad"
+     },
+     {
+      "f": "Discogs release 8645249（RCA Victor Gold Seal 60262-2-RG，1990，CD／Compilation／Remastered／Mono）的說明欄逐字寫：「Recorded March 17, 1953 (1 to 4), December 17, 1951 (5 to 8), December 12, 1949 (9 to 12) in Carnegie Hall」，並列出總長 59:55、三首各自的時長 Pines Of Rome 20:50／Fountains Of Rome 15:05／Roman Festivals 23:40。也就是說一張碟上的三首交響詩來自三場相隔四年的錄音，全部在紐約 Carnegie Hall。",
+      "src": "https://api.discogs.com/releases/8645249"
+     },
+     {
+      "f": "英文維基〈Pines of Rome〉記：《羅馬之松》1924 年完成，1924 年 12 月 14 日在羅馬 Teatro Augusteo 由 Bernardino Molinari 指揮 Augusteo 管弦樂團首演；美國首演在 1926 年 1 月 14 日，那一場正是 Toscanini 接任紐約愛樂指揮的第一場音樂會，他 1945 年與該團的最後一場演出也演了這首。同條目記 Toscanini 在 1953 年與 NBC Symphony 在 Carnegie Hall 錄下這首曲子。",
+      "src": "https://en.wikipedia.org/wiki/Pines_of_Rome"
+     },
+     {
+      "f": "英文維基〈Roman Festivals (Respighi)〉記：《羅馬節日》1928 年完成，世界首演是 1929 年 2 月 21 日在紐約 Carnegie Hall、Toscanini 指揮紐約愛樂（引註紐約愛樂數位檔案的當場節目單）；義大利首演晚了將近一個月，1929 年 3 月 17 日在羅馬 Augusteo 由 Molinari 指揮。同條目記 Toscanini 錄過這首兩次——1942 年與費城管弦樂團（Academy of Music），1949 年再與 NBC Symphony 在 Carnegie Hall 錄一次，並記「1949 年那一場把當時的錄音器材推到極限，因為 Toscanini 堅持工程師要把全部的力度收進來，尤其是〈Circus Games〉與〈Epiphany〉兩段」。",
+      "src": "https://en.wikipedia.org/wiki/Roman_Festivals_(Respighi)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a1",
+    "album": "Tchaikovsky: Manfred Symphony / Romeo and Juliet",
+    "facts": [
+     {
+      "f": "英文維基〈Manfred Symphony〉記：這首交響曲 1886 年 3 月 23 日在莫斯科首演；並記「conductor Arturo Toscanini considered it the composer's greatest composition and it was one of only two Tchaikovsky symphonies (the other being the Pathétique) that he ever programmed」，緊接著寫「His admiration did not stop him from making changes in Manfred's score when he performed and recorded it, including a number of cuts.」——也就是說，他推崇這首曲子，但演出與錄音時都改動過總譜、並且做了多處刪節。",
+      "src": "https://en.wikipedia.org/wiki/Manfred_Symphony"
+     },
+     {
+      "f": "MB 藝人 da96be23（Arturo Toscanini）名下以 release-group?artist=&limit=100&offset= 分頁列出 197 個 release-group（策展層實測值），本 release-group 是其中少數標題、曲目與班底都寫清楚的條目；同一位指揮的《羅密歐與茱麗葉》在 Apple 上另有 303072950（單軌，2009）與 383664151（Naxos「Years of Maturity in America, Vol. 4」1929-1946）等多筆不同編輯版本。",
+      "src": "https://musicbrainz.org/artist/da96be23-ef88-420e-8173-3efb7fd995cc"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Respighi: Pini di Roma / Fontane di Roma / Feste Romane",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "三首交響詩分三次錄，同一個廳；《羅馬節日》的世界首演也在那裡。Discogs 8645249 的說明欄逐字標出三個日期：《節日》1949 年 12 月 12 日、《噴泉》1951 年 12 月 17 日、《松樹》1953 年 3 月 17 日，全部在 Carnegie Hall。英文維基記《羅馬節日》1929 年 2 月 21 日的世界首演由他指揮紐約愛樂，而《羅馬之松》的美國首演 1926 年 1 月 14 日，正是他接任該團的第一場音樂會。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/fde44455-d1d1-3e93-a1a0-be3ae0d164ad",
+     "https://api.discogs.com/releases/8645249",
+     "https://en.wikipedia.org/wiki/Pines_of_Rome",
+     "https://en.wikipedia.org/wiki/Roman_Festivals_(Respighi)",
+     "https://itunes.apple.com/lookup?id=1216431492&entity=song&limit=200&country=gb"
+    ]
+   },
+   {
+    "album": "Tchaikovsky: Manfred Symphony / Romeo and Juliet",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "柴可夫斯基的交響曲，他一生只排演過兩首，這是其中一首。英文維基記他認為這首是柴可夫斯基最好的作品，另一首是《悲愴》；同一條目也記他演出與錄音本曲時改動過總譜、做了多處刪節。Discogs 10056913 說明欄寫兩段錄音落在 1949 年 12 月 5 日與 1946 年 4 月 8 日，都在 Carnegie Hall。五軌是《曼弗雷德》四個樂章加《羅密歐與茱麗葉》，四個樂章是 15 分 12 秒、9 分 13 秒、10 分 26 秒與 13 分 26 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3f6128b1-406d-4a46-a201-803086485df1",
+     "https://api.discogs.com/releases/10056913",
+     "https://en.wikipedia.org/wiki/Manfred_Symphony",
+     "https://itunes.apple.com/lookup?id=1216431103&entity=song&limit=200&country=jp",
+     "https://itunes.apple.com/lookup?id=447412359&entity=song&limit=200&country=de",
+     "https://musicbrainz.org/artist/da96be23-ef88-420e-8173-3efb7fd995cc"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "arvo pärt",
+  "name": "Arvo Pärt",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1984,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Tabula Rasa",
+    "year": 1984,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Te Deum",
+    "year": 1993,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Alina",
+    "year": 1999,
+    "genres": [
+     "classical",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "benjamin britten",
+  "name": "Benjamin Britten",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1954,
+   1963
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "War Requiem (自指)",
+    "year": 1963,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Peter Grimes (自指)",
+    "year": 1959,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Turn of the Screw (自指)",
+    "year": 1954,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "budapest string quartet",
+  "name": "Budapest String Quartet",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1953,
+   1962
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Beethoven: Late String Quartets",
+    "year": 1962,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Beethoven"
+   },
+   {
+    "album": "Mozart: Haydn Quartets",
+    "year": 1953,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ravel: Quartet in F major / Debussy: Quartet in G minor",
+    "year": 1953,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 4,
+   "facts": 12,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c100-a",
+    "album": "Mozart: Haydn Quartets",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 2acfd6f6 的欄位：title「“Haydn” Quartets」、artist-credit「Mozart; Budapest String Quartet」、first-release-date 1991、primary-type Album、secondary-types 空陣列、轄下 1 個 release（XE 1991、Sony Classical SM2K 47 219、status Official）。該 release 是 2 片裝，逐片 12 軌、合計 24 軌，六首四重奏依序是 K. 387、K. 421(417b)、K. 458《狩獵》（第一片）與 K. 428(421b)、K. 464、K. 465《不協和音》（第二片）。",
+      "src": "https://musicbrainz.org/release-group/2acfd6f6-08f3-45b6-adaf-fb8c52a81770"
+     },
+     {
+      "f": "英文維基〈Budapest String Quartet〉記：這個四重奏 1917 年成立、1967 年解散，**成立時是三個匈牙利人加一個荷蘭人，到最後四個人全是俄國人**；1917 年 12 月在當時屬匈牙利的 Kolozsvár（今羅馬尼亞 Cluj-Napoca）首演。錄音方面，1925 年起為 HMV 錄音，先在柏林 Beethoven Saal、後在倫敦 Abbey Road，**1938 年起改在新澤西 Camden 為 RCA Victor 錄**；1940 年轉投 Columbia，**三十五年間為該廠錄下 89 首作品，有些還錄了不只一次，多年來是 Columbia 古典部門最暢銷的藝人**。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet"
+     },
+     {
+      "f": "同一條目記國會圖書館這一段的來龍去脈：**1939 年**，美方委託他們固定使用華盛頓國會圖書館收藏的**五把史特拉底瓦里弦樂器**——那批琴是長期贊助人 Gertrude Clarke Whittall 買下並捐贈的；圖書館園區內的演奏廳則是 1925 年由室內樂贊助人 Elizabeth Sprague Coolidge 出資興建。二戰爆發、他們在歐洲的合約全部作廢之後，這個提議才變得有吸引力，於是他們接受了，**此後在那裡的音樂會持續多年，該館是他們極為重要的演出場地**。**1962 年 3 月他們在國會圖書館舉行最後一場音樂會**，之後由茱莉亞四重奏接手。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet"
+     },
+     {
+      "f": "Apple Music collectionId 913135843「Mozart: The 6 Haydn Quartets & The 6 String Quartets」（Budapest String Quartet，copyright「℗ **1948, 1949, 1952, 1953, 1957** Sony Music Entertainment」，48 軌全帶 previewUrl，gb／us／de／fr／at／it／jp 七店全有）的**前 24 軌就是本盤的六首「海頓四重奏」，曲序與 MB 逐軌相同**（K. 387 起）；K. 387 四個樂章逐軌 351.6／491.5／462.0／247.0 秒，與 MB 的 354000／495000／466000／256333 毫秒相差都在 3.5% 以內，四軌加總 1552.1 秒與 Discogs 說明欄印的 25:47（1547 秒）相差 5 秒。**第 25 軌之後是另外六首四重奏，不屬於本盤。**",
+      "src": "https://itunes.apple.com/lookup?id=913135843&entity=song&limit=200&country=gb"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a",
+    "album": "Ravel: Quartet in F major / Debussy: Quartet in G minor",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 66e33a3f 的欄位：title「Ravel: Quartet in F major / Debussy: Quartet in G minor, op. 10」、artist-credit「Ravel, Debussy; Budapest String Quartet」、first-release-date 1953、primary-type Album、secondary-types 空陣列、轄下 1 個 release（US 1953、Columbia ML 4668、status Official、單片 8 軌）。八軌是拉威爾 F 大調四重奏四個樂章在前、德布西 G 小調四重奏四個樂章在後，**MB 該 release 的八軌全部沒有填時長**。",
+      "src": "https://musicbrainz.org/release-group/66e33a3f-c0ff-4548-9782-d74df194e0f1"
+     },
+     {
+      "f": "同一條目記：這個四重奏 1917 年成立、1967 年解散，成立時三個匈牙利人加一個荷蘭人、最後四人全是俄國人；1939 年美方委託他們固定使用國會圖書館收藏的五把史特拉底瓦里（Gertrude Clarke Whittall 捐贈），二戰爆發、歐洲合約作廢之後他們接受了；**1962 年 3 月在國會圖書館舉行最後一場音樂會**，之後由茱莉亞四重奏接手。1936 年 11 月他們抵達紐約時，樂評把他們與 Toscanini 和 Schnabel 相提並論。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a1",
+    "album": "Mozart: Haydn Quartets",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 2acfd6f6 的欄位：title「“Haydn” Quartets」、artist-credit「Mozart; Budapest String Quartet」、first-release-date 1991、primary-type Album、secondary-types 空陣列、轄下 1 個 release（XE 1991、Sony Classical SM2K 47 219、status Official）。該 release 是 2 片裝，逐片 12 軌、合計 24 軌，六首四重奏依序是 K. 387、K. 421(417b)、K. 458《狩獵》（第一片）與 K. 428(421b)、K. 464、K. 465《不協和音》（第二片）。",
+      "src": "https://musicbrainz.org/release-group/2acfd6f6-08f3-45b6-adaf-fb8c52a81770"
+     },
+     {
+      "f": "英文維基〈Budapest String Quartet〉記：這個四重奏 1917 年成立、1967 年解散，**成立時是三個匈牙利人加一個荷蘭人，到最後四個人全是俄國人**；1917 年 12 月在當時屬匈牙利的 Kolozsvár（今羅馬尼亞 Cluj-Napoca）首演。錄音方面，1925 年起為 HMV 錄音，先在柏林 Beethoven Saal、後在倫敦 Abbey Road，**1938 年起改在新澤西 Camden 為 RCA Victor 錄**；1940 年轉投 Columbia，**三十五年間為該廠錄下 89 首作品，有些還錄了不只一次，多年來是 Columbia 古典部門最暢銷的藝人**。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet"
+     },
+     {
+      "f": "同一條目記國會圖書館這一段的來龍去脈：**1939 年**，美方委託他們固定使用華盛頓國會圖書館收藏的**五把史特拉底瓦里弦樂器**——那批琴是長期贊助人 Gertrude Clarke Whittall 買下並捐贈的；圖書館園區內的演奏廳則是 1925 年由室內樂贊助人 Elizabeth Sprague Coolidge 出資興建。二戰爆發、他們在歐洲的合約全部作廢之後，這個提議才變得有吸引力，於是他們接受了，**此後在那裡的音樂會持續多年，該館是他們極為重要的演出場地**。**1962 年 3 月他們在國會圖書館舉行最後一場音樂會**，之後由茱莉亞四重奏接手。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet"
+     },
+     {
+      "f": "Apple Music collectionId 913135843「Mozart: The 6 Haydn Quartets & The 6 String Quartets」（Budapest String Quartet，copyright「℗ **1948, 1949, 1952, 1953, 1957** Sony Music Entertainment」，48 軌全帶 previewUrl，gb／us／de／fr／at／it／jp 七店全有）的**前 24 軌就是本盤的六首「海頓四重奏」，曲序與 MB 逐軌相同**（K. 387 起）；K. 387 四個樂章逐軌 351.6／491.5／462.0／247.0 秒，與 MB 的 354000／495000／466000／256333 毫秒相差都在 3.5% 以內，四軌加總 1552.1 秒與 Discogs 說明欄印的 25:47（1547 秒）相差 5 秒。**第 25 軌之後是另外六首四重奏，不屬於本盤。**",
+      "src": "https://itunes.apple.com/lookup?id=913135843&entity=song&limit=200&country=gb"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a1",
+    "album": "Ravel: Quartet in F major / Debussy: Quartet in G minor",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 66e33a3f 的欄位：title「Ravel: Quartet in F major / Debussy: Quartet in G minor, op. 10」、artist-credit「Ravel, Debussy; Budapest String Quartet」、first-release-date 1953、primary-type Album、secondary-types 空陣列、轄下 1 個 release（US 1953、Columbia ML 4668、status Official、單片 8 軌）。八軌是拉威爾 F 大調四重奏四個樂章在前、德布西 G 小調四重奏四個樂章在後，**MB 該 release 的八軌全部沒有填時長**。",
+      "src": "https://musicbrainz.org/release-group/66e33a3f-c0ff-4548-9782-d74df194e0f1"
+     },
+     {
+      "f": "同一條目記：這個四重奏 1917 年成立、1967 年解散，成立時三個匈牙利人加一個荷蘭人、最後四人全是俄國人；1939 年美方委託他們固定使用國會圖書館收藏的五把史特拉底瓦里（Gertrude Clarke Whittall 捐贈），二戰爆發、歐洲合約作廢之後他們接受了；**1962 年 3 月在國會圖書館舉行最後一場音樂會**，之後由茱莉亞四重奏接手。1936 年 11 月他們抵達紐約時，樂評把他們與 Toscanini 和 Schnabel 相提並論。",
+      "src": "https://en.wikipedia.org/wiki/Budapest_String_Quartet"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Mozart: Haydn Quartets",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "琴是國會圖書館的收藏，五把史特拉底瓦里，指定給他們用。英文維基記 1939 年美方委託他們固定使用館藏這批琴，那是長期贊助人 Gertrude Clarke Whittall 買下捐贈的；二戰爆發、他們在歐洲的合約全部作廢之後，他們才接受。Discogs 2047449 的說明欄記錄音在 1953 年 5 月 4 至 12 日的國會圖書館。盤名的「海頓四重奏」指的是莫札特題獻給海頓的那六首，最長的一軌是 K. 464 第三樂章 10 分 39 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/2acfd6f6-08f3-45b6-adaf-fb8c52a81770",
+     "https://api.discogs.com/releases/2047449",
+     "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+     "https://itunes.apple.com/lookup?id=913135843&entity=song&limit=200&country=gb",
+     "https://musicbrainz.org/release/fb2b1087-3022-4c98-affa-dcf148d1ab8b"
+    ]
+   },
+   {
+    "album": "Ravel: Quartet in F major / Debussy: Quartet in G minor",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "他們轉投哥倫比亞那年，舊東家回了一句「We are astonished」。英文維基記那是 1940 年，他們離開 RCA Victor，RCA 抗議這「close to a definite breach of faith」。此後三十五年他們為 Columbia 錄下 89 首作品。本盤就是那紙合約下的產物，A 面拉威爾、B 面德布西。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/66e33a3f-c0ff-4548-9782-d74df194e0f1",
+     "https://api.discogs.com/releases/5264532",
+     "https://en.wikipedia.org/wiki/Budapest_String_Quartet",
+     "https://itunes.apple.com/lookup?id=736518523&entity=song&limit=200&country=gb",
+     "https://itunes.apple.com/lookup?id=1854661483&entity=song&limit=200&country=gb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "carlo maria giulini",
+  "name": "Carlo Maria Giulini",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1961,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Mozart: Don Giovanni",
+    "year": 1990,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mozart"
+   },
+   {
+    "album": "Mozart: Le nozze di Figaro",
+    "year": 1961,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mozart"
+   },
+   {
+    "album": "Verdi: Requiem",
+    "year": 1964,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Verdi"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "carlos kleiber",
+  "name": "Carlos Kleiber",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1979,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Beethoven: Symphonies 5 & 7",
+    "year": 1995,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Beethoven"
+   },
+   {
+    "album": "Schubert: Symphonies 3 & 8 Unfinished",
+    "year": 1979,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Schubert"
+   },
+   {
+    "album": "Brahms: Symphony no. 4",
+    "year": 1981,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Brahms"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "charles munch",
+  "name": "Charles Munch",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1955,
+   1962
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Berlioz: Symphonie fantastique",
+    "year": 1962,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Berlioz"
+   },
+   {
+    "album": "Ravel: Daphnis et Chloé",
+    "year": 1955,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Ravel"
+   },
+   {
+    "album": "Saint-Saëns: Symphony no. 3 Organ",
+    "year": 1959,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Saint-Saëns"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "danny elfman",
+  "name": "Danny Elfman",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1989,
+   2021
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Big Mess",
+    "year": 2021,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Serenada Schizophrana",
+    "year": 2006,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Batman: Original Motion Picture Score",
+    "year": 1989,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c88-a",
+    "album": "Batman: Original Motion Picture Score",
+    "facts": [
+     {
+      "f": "MB 該 release-group 的 1989-08-08 US release（2da4b3bc）欄位：US、status Official、廠牌欄 **Warner Bros. Records**、編號 **9 25977-2**、barcode 075992597722、一張 CD、track-count **21**；同組 1989 US 的 Columbia House 版（W2 25977）與 1989 CA、1989-10-08 DE 版同為 21 軌，2010-07-27 US 的 La-La Land Records 版（LLLCD 1140）是 30＋29 軌。",
+      "src": "https://musicbrainz.org/release/2da4b3bc-90ef-4b19-859a-de62284311f0"
+     },
+     {
+      "f": "同一筆 21 軌 release 的曲目全部掛 Danny Elfman，開頭是〈The Batman Theme〉2:38、結尾是〈Batman Theme (reprise)〉1:28；中段曲名多為場景名（〈Roof Fight〉〈Kitchen, Surgery, Face‐off〉〈Clown Attack〉〈The Bat Cave〉〈The Joker’s Poem〉〈Waltz to the Death〉）。",
+      "src": "https://musicbrainz.org/release/2da4b3bc-90ef-4b19-859a-de62284311f0"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Batman: Original Motion Picture Score",
+    "manifest": "onboarding-manifest-c88-20260910.json",
+    "desc": "錄音在英格蘭的 CTS Studios，樂團欄掛的是 Sinfonia Of London。credit 欄的分工排得很細：Steve Bartek 掛製作兼配器，Shirley Walker 掛指揮兼追加配器，Steven Scott Smalley 另掛一份追加配器，錄音師 Eric Tomlinson 之外還有兩位第二錄音師；剪輯與母帶在 Digital Magnetics 做，版權欄掛 DC Comics。二十一軌全掛 Danny Elfman。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/49abab2f-59e3-3732-a97c-dcb7d7008ae3",
+     "https://musicbrainz.org/release/2da4b3bc-90ef-4b19-859a-de62284311f0",
+     "https://www.discogs.com/release/512590",
+     "https://musicbrainz.org/artist/5b24fbab-c58f-4c37-a59d-ab232e2d98c4",
+     "https://music.apple.com/us/album/41229136"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "david oistrakh",
+  "name": "David Oistrakh",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1956,
+   1959
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Beethoven: Violin Concerto",
+    "year": 1959,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Beethoven"
+   },
+   {
+    "album": "Shostakovich: Violin Concerto no. 1",
+    "year": 1956,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Shostakovich"
+   },
+   {
+    "album": "Tchaikovsky: Violin Concerto (Ormandy)",
+    "year": 1959,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c48a-c",
+    "album": "Tchaikovsky: Violin Concerto (Ormandy)",
+    "facts": [
+     {
+      "f": "David Oistrakh 與 Eugene Ormandy 指揮的 The Philadelphia Orchestra 於 1959 年 12 月 24 日錄下柴可夫斯基小提琴協奏曲，同月 26 日錄下西貝流士小提琴協奏曲。",
+      "src": "https://www.discogs.com/release/6299418-Oistrakh-Ormandy-The-Philadelphia-Orchestra-Tchaikovsky-Sibelius-Violin-Concertos"
+     },
+     {
+      "f": "這批錄音屬於 Ormandy 與 The Philadelphia Orchestra 在 Columbia 的立體聲時期，Sony Classical 後來把 1958 至 1963 年的成果集結成《The Columbia Stereo Collection 1958–1963》盒裝。",
+      "src": "https://www.colinscolumn.com/november-17-sony-classical-presents-eugene-ormandy-the-philadelphia-orchestra-the-columbia-stereo-collection-1958-1963/"
+     },
+     {
+      "f": "同一批錄音後來由 Sony 與其他授權廠牌多次以 CD 形式再版。",
+      "src": "https://www.discogs.com/master/346906-Oistrakh-OrmandyPhiladelphia-Orchestra-Tchaikovsky-Violin-Concerto-In-D"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Tchaikovsky: Violin Concerto (Ormandy)",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "聖誕夜的費城，他錄下了柴可夫斯基。1959 年 12 月 24 日，David Oistrakh 與 Eugene Ormandy 指揮的 The Philadelphia Orchestra 錄下這首 D 大調小提琴協奏曲，兩天後的 26 日又錄了西貝流士的協奏曲；原盤是 Columbia Masterworks 的立體聲版，編號 MS 6298。這批母帶屬於 Ormandy 與費城在該廠的立體聲時期，後來被集結成 1958 至 1963 年的盒裝。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6299418-Oistrakh-Ormandy-The-Philadelphia-Orchestra-Tchaikovsky-Sibelius-Violin-Concertos",
+     "https://www.discogs.com/master/346906-Oistrakh-OrmandyPhiladelphia-Orchestra-Tchaikovsky-Violin-Concerto-In-D",
+     "https://www.colinscolumn.com/november-17-sony-classical-presents-eugene-ormandy-the-philadelphia-orchestra-the-columbia-stereo-collection-1958-1963/",
+     "https://musicbrainz.org/release-group/4a0c9b6b-9c96-4985-94fb-d9545a54541e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "dinu lipatti",
+  "name": "Dinu Lipatti",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1948,
+   1950
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Last Recital (Besançon 1950)",
+    "year": 1950,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Grieg / Schumann: Piano Concertos",
+    "year": 1948,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Chopin: Waltzes (Geneva 1950)",
+    "year": 1950,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48a-b",
+    "album": "Chopin: Waltzes (Geneva 1950)",
+    "facts": [
+     {
+      "f": "Lipatti 於 1950 年 12 月 2 日在日內瓦辭世，得年 33 歲，死因是 1947 年確診的何杰金氏淋巴瘤併發單側肺部膿瘍破裂。",
+      "src": "https://en.wikipedia.org/wiki/Dinu_Lipatti"
+     },
+     {
+      "f": "原盤 Columbia 33CX 1032 於 1953 年發行，是 Lipatti 辭世後才問世的唱片。",
+      "src": "https://revolutions33.co.uk/product/33cx-1032-chopin-waltzes-dinu-lipatti/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Chopin: Waltzes (Geneva 1950)",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "製作人把整套器材搬進了日內瓦的廣播電台。1950 年 7 月，Walter Legge 把 EMI 的機器架進電台錄音室，7 月 2 日試音，接著連續九天工作，留下約兩小時演奏、重達 42 公斤的母帶。十四首 Chopin 圓舞曲在這裡完整錄成，曲序由 Lipatti 自己排定，不照作品編號；光是降 A 大調那一首就在四個不同日期重錄過。同年 12 月 2 日他在日內瓦辭世，得年 33 歲，原盤要到 1953 年才問世。",
+    "sourceUrls": [
+     "https://www.dinulipatti.com/2011/03/dinu-lipattis-valedictory-recordings/",
+     "https://en.wikipedia.org/wiki/Dinu_Lipatti",
+     "https://revolutions33.co.uk/product/33cx-1032-chopin-waltzes-dinu-lipatti/",
+     "https://musicbrainz.org/release-group/cd00cc43-8fa5-461a-8520-ccd3242be2c9"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "elisabeth schwarzkopf",
+  "name": "Elisabeth Schwarzkopf",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1966,
+   1967
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Wolf: Lieder",
+    "year": 1967,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Wolf"
+   },
+   {
+    "album": "R. Strauss: Vier letzte Lieder (Szell)",
+    "year": 1966,
+    "genres": [
+     "classical"
+    ],
+    "composer": "R. Strauss"
+   },
+   {
+    "album": "Lehár: Die lustige Witwe",
+    "year": 1966,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c100-a",
+    "album": "Lehár: Die lustige Witwe",
+    "facts": [
+     {
+      "f": "Apple Music 七店面（gb／us／de／fr／at／it／jp）的 Elisabeth Schwarzkopf 目錄（各 200 筆上限）全掃，加上 `search?term=` 四組字串（Lehar Lustige Witwe Matacic Schwarzkopf／Merry Widow Schwarzkopf Wächter Steffek／Lehar Merry Widow Schwarzkopf 1963／Die lustige Witwe Gesamtaufnahme），**Matačić 這一次錄音一筆都沒有**。店面上的《風流寡婦》全部是**另一次錄音**：1953 年 Otto Ackermann 指揮 Philharmonia 的版本，掛名是 Schwarzkopf／Gedda／**Erich Kunz**／Emmy Loose／Anton Niessner。",
+      "src": "https://music.apple.com/gb/artist/606031"
+     },
+     {
+      "f": "兩次錄音的掛名差異可以當識別鍵：**1953 Ackermann 版**的男中音是 Erich Kunz、指揮 Otto Ackermann；**本卡的 Matačić 版**多出 Hanny Steffek（Valencienne）、Eberhard Wächter（Danilo）、Josef Knapp，指揮是 Lovro von Matačić。**Nicolai Gedda 與 Elisabeth Schwarzkopf 兩人兩次都在**——所以光看這兩個名字分不出來。",
+      "src": "https://musicbrainz.org/release-group/1bb8ffb5-6c84-4245-9680-875a93bcc1cf"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a2",
+    "album": "Lehár: Die lustige Witwe",
+    "facts": [
+     {
+      "f": "Apple Music 七店面（gb／us／de／fr／at／it／jp）的 Elisabeth Schwarzkopf 目錄（各 200 筆上限）全掃，加上 `search?term=` 四組字串（Lehar Lustige Witwe Matacic Schwarzkopf／Merry Widow Schwarzkopf Wächter Steffek／Lehar Merry Widow Schwarzkopf 1963／Die lustige Witwe Gesamtaufnahme），**Matačić 這一次錄音一筆都沒有**。店面上的《風流寡婦》全部是**另一次錄音**：1953 年 Otto Ackermann 指揮 Philharmonia 的版本，掛名是 Schwarzkopf／Gedda／**Erich Kunz**／Emmy Loose／Anton Niessner。",
+      "src": "https://music.apple.com/gb/artist/606031"
+     },
+     {
+      "f": "兩次錄音的掛名差異可以當識別鍵：**1953 Ackermann 版**的男中音是 Erich Kunz、指揮 Otto Ackermann；**本卡的 Matačić 版**多出 Hanny Steffek（Valencienne）、Eberhard Wächter（Danilo）、Josef Knapp，指揮是 Lovro von Matačić。**Nicolai Gedda 與 Elisabeth Schwarzkopf 兩人兩次都在**——所以光看這兩個名字分不出來。",
+      "src": "https://musicbrainz.org/release-group/1bb8ffb5-6c84-4245-9680-875a93bcc1cf"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Lehár: Die lustige Witwe",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "那張英國黑膠上只有十一段——它是一份選粹。MusicBrainz 記的 HMV ASD 2252，標題就寫著 Highlights，A 面五段、B 面六段，最長的〈Vilja-Lied〉那段 8 分 19 秒，收場那段只有 46 秒。Schwarzkopf 唱漢娜、Gedda 唱羅西雍、Wächter 唱丹尼洛，Matačić 指揮 Philharmonia 管弦樂團。同一對歌者 1953 年還與 Ackermann 錄過一次，分辨的鍵是丹尼洛——那次唱的是 Kunz。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/1bb8ffb5-6c84-4245-9680-875a93bcc1cf",
+     "https://musicbrainz.org/release/14366b85-b934-411d-805d-261fa8f54ee9",
+     "https://en.wikipedia.org/wiki/Elisabeth_Schwarzkopf",
+     "https://music.apple.com/gb/artist/606031",
+     "https://music.apple.com/gb/album/696606128"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ernest ansermet",
+  "name": "Ernest Ansermet",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1958,
+   1965
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Ravel: Complete Orchestral Works",
+    "year": 1965,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Ravel"
+   },
+   {
+    "album": "The Royal Ballet Gala Performances",
+    "year": 1959,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Tchaikovsky: The Nutcracker (Decca 1958)",
+    "year": 1958,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48a-c",
+    "album": "Tchaikovsky: The Nutcracker (Decca 1958)",
+    "facts": [
+     {
+      "f": "這份《胡桃鉗》是全曲芭蕾錄音，由 Ernest Ansermet 指揮 L'Orchestre de la Suisse Romande，1958 年 10 月至 11 月錄於日內瓦 Victoria Hall。",
+      "src": "https://www.discogs.com/release/4984715-Tchaikovsky-Ansermet-The-Nutcracker-Casse-Noisette-Complete-Ballet"
+     },
+     {
+      "f": "Decca 曾把 Ansermet 的全部立體聲錄音集結成 88 張 CD 的盒裝，紀念這位指揮逝世五十週年。",
+      "src": "https://www.osr.ch/en/about-the-osr/news/details/article/ernest-ansermet-en-88-cds"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Tchaikovsky: The Nutcracker (Decca 1958)",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "Decca 的第一份立體聲實驗，就是交給他做的。1954 年，Ernest Ansermet 帶著自己 1918 年創立、執掌近五十年的樂團，替 Decca 錄下該廠第一份實驗性立體聲，曲目是 Rimsky-Korsakov 的《Antar》。四年後的 1958 年 10 月至 11 月，同一組人在日內瓦 Victoria Hall 錄下全曲《胡桃鉗》，Decca 於 1959 年以雙片裝發行立體聲版。這個廳的音響條件，正是那批唱片長年被引用的原因。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4984715-Tchaikovsky-Ansermet-The-Nutcracker-Casse-Noisette-Complete-Ballet",
+     "https://kingswayhallclassics.com/en-us/products/tchaikovsky-the-nutcracker-ansermet-suisse-romande-2lp-sxl-2092-3",
+     "https://www.osr.ch/en/about-the-osr/news/details/article/ernest-ansermet-en-88-cds",
+     "https://musicbrainz.org/release-group/90785c77-c03f-4491-9aef-f38453dc2a95"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "frans brüggen",
+  "name": "Frans Brüggen",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1979,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Vivaldi: Recorder Concertos op. 10",
+    "year": 1979,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Vivaldi"
+   },
+   {
+    "album": "Haydn: Symphonies 86 & 88",
+    "year": 1989,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Haydn"
+   },
+   {
+    "album": "Haydn: Paris Symphonies",
+    "year": 1999,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Haydn"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "fritz kreisler",
+  "name": "Fritz Kreisler",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1926,
+   1946
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Complete Recordings",
+    "year": 1946,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Berlin HMV Recordings, 1926-27",
+    "year": 1926,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The 1926 & 1927 Victor Recordings: Favourite Short Pieces",
+    "year": 1926,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 4,
+   "facts": 12,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c100-a",
+    "album": "The Berlin HMV Recordings, 1926-27",
+    "facts": [
+     {
+      "f": "MB 該 release 的曲目表：第一片是巴哈無伴奏第一號奏鳴曲的 Adagio（253600 毫秒）＋**貝多芬小提琴協奏曲全曲**（1436960／622800／617933）＋**孟德爾頌小提琴協奏曲全曲**（732933／468733／408600）；第二片是**布拉姆斯小提琴協奏曲全曲**（1247067／471133／497227）＋十二首小品，小品裡有九首標明是 Kreisler 自己的改編（arr. F. Kreisler），包括孟德爾頌〈無言歌 op. 62 no. 1〉、舒曼〈三首浪漫曲 op. 94 no. 2〉、布拉姆斯〈匈牙利舞曲第 17 號〉、法雅《短暫的人生》西班牙舞曲（**同一首錄了兩個版本，第 9 與第 10 軌**）、Scott〈Lotus Land〉，以及四首小提琴／大提琴／鋼琴三重奏編制的小品（〈O Sanctissima〉〈Agnus Dei〉〈Marche miniature viennoise〉〈Syncopation〉）。",
+      "src": "https://musicbrainz.org/release/2bbf00b3-da04-4623-9d6a-915a78b911ee"
+     },
+     {
+      "f": "英文維基〈Fritz Kreisler〉記：Kreisler 1875 年 2 月 2 日生於維也納、1962 年 1 月 29 日卒於紐約。七歲進維也納音樂院，師從 Anton Bruckner、Jakob Dont 與 Joseph Hellmesberger Jr.；1885–1887 年在巴黎音樂院隨 Léo Delibes、Lambert Massart 與 Jules Massenet 學習，**十二歲以最高的 Premier Prix 畢業，同場競爭的四十人多數已經二十歲以上**。1888 年 11 月 10 日在紐約 Steinway Hall 首度登台。他曾應徵維也納愛樂被首席 Arnold Rosé 拒絕，一度離開音樂去學醫。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     },
+     {
+      "f": "同一條目記：**他 1924 年回到歐洲，先住柏林，1938 年才搬到法國**，二戰爆發後再度定居美國、1943 年入籍，1947 年舉行最後一場公開音樂會。1910 年他首演艾爾加小提琴協奏曲——那是為他而寫、並題獻給他的作品。他為布拉姆斯、帕格尼尼第一號與貝多芬三首協奏曲寫的裝飾奏至今仍在使用，**貝多芬那組是今天小提琴家最常演奏的版本**。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     },
+     {
+      "f": "同一條目記：他寫過大量託名舊時代作曲家的「仿作」，長年掛在 Gaetano Pugnani、Giuseppe Tartini、Antonio Vivaldi 等人名下，**1935 年他自己揭穿那些其實都是他寫的**；面對批評他回了一句「The name changes, the value remains」。他也寫輕歌劇（1919《Apple Blossoms》、1932《Sissy》）與一首弦樂四重奏。錄音方面他長期為 Victor／RCA Victor 與 HMV 灌片，**最後一批錄音在 1950 年**。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a",
+    "album": "The 1926 & 1927 Victor Recordings: Favourite Short Pieces",
+    "facts": [
+     {
+      "f": "英文維基〈Fritz Kreisler〉記：他寫過大量託名舊時代作曲家的仿作（Pugnani、Tartini、Vivaldi 等），**1935 年才自己揭穿是他寫的**，並回應批評說「The name changes, the value remains」；他自己的安可小品包括〈Liebesleid〉與〈Liebesfreud〉。同條目記他長期為 Victor／RCA Victor 與 HMV 錄音，最後一批錄音在 1950 年；1962 年 1 月 29 日卒於紐約，葬於 Bronx 的 Woodlawn Cemetery 私人墓室。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     },
+     {
+      "f": "同一條目記：他 1875 年生於維也納，七歲進維也納音樂院師從 Bruckner、Dont 與 Hellmesberger Jr.，1885–1887 年在巴黎音樂院隨 Delibes、Massart、Massenet 學習，十二歲以最高 Premier Prix 畢業。1901 年在美國巡演時認識紐約出生的 Harriet Lies，隔年結婚，**因為法律手續問題前後又重辦了三次婚禮**，兩人結縭六十年直到他過世。1914 年他在一次大戰的奧地利陸軍中負傷後光榮退伍，同年 11 月 24 日抵達紐約，在美國度過整個戰爭期間。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a1",
+    "album": "The Berlin HMV Recordings, 1926-27",
+    "facts": [
+     {
+      "f": "MB 該 release 的曲目表：第一片是巴哈無伴奏第一號奏鳴曲的 Adagio（253600 毫秒）＋**貝多芬小提琴協奏曲全曲**（1436960／622800／617933）＋**孟德爾頌小提琴協奏曲全曲**（732933／468733／408600）；第二片是**布拉姆斯小提琴協奏曲全曲**（1247067／471133／497227）＋十二首小品，小品裡有九首標明是 Kreisler 自己的改編（arr. F. Kreisler），包括孟德爾頌〈無言歌 op. 62 no. 1〉、舒曼〈三首浪漫曲 op. 94 no. 2〉、布拉姆斯〈匈牙利舞曲第 17 號〉、法雅《短暫的人生》西班牙舞曲（**同一首錄了兩個版本，第 9 與第 10 軌**）、Scott〈Lotus Land〉，以及四首小提琴／大提琴／鋼琴三重奏編制的小品（〈O Sanctissima〉〈Agnus Dei〉〈Marche miniature viennoise〉〈Syncopation〉）。",
+      "src": "https://musicbrainz.org/release/2bbf00b3-da04-4623-9d6a-915a78b911ee"
+     },
+     {
+      "f": "英文維基〈Fritz Kreisler〉記：Kreisler 1875 年 2 月 2 日生於維也納、1962 年 1 月 29 日卒於紐約。七歲進維也納音樂院，師從 Anton Bruckner、Jakob Dont 與 Joseph Hellmesberger Jr.；1885–1887 年在巴黎音樂院隨 Léo Delibes、Lambert Massart 與 Jules Massenet 學習，**十二歲以最高的 Premier Prix 畢業，同場競爭的四十人多數已經二十歲以上**。1888 年 11 月 10 日在紐約 Steinway Hall 首度登台。他曾應徵維也納愛樂被首席 Arnold Rosé 拒絕，一度離開音樂去學醫。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     },
+     {
+      "f": "同一條目記：**他 1924 年回到歐洲，先住柏林，1938 年才搬到法國**，二戰爆發後再度定居美國、1943 年入籍，1947 年舉行最後一場公開音樂會。1910 年他首演艾爾加小提琴協奏曲——那是為他而寫、並題獻給他的作品。他為布拉姆斯、帕格尼尼第一號與貝多芬三首協奏曲寫的裝飾奏至今仍在使用，**貝多芬那組是今天小提琴家最常演奏的版本**。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     },
+     {
+      "f": "同一條目記：他寫過大量託名舊時代作曲家的「仿作」，長年掛在 Gaetano Pugnani、Giuseppe Tartini、Antonio Vivaldi 等人名下，**1935 年他自己揭穿那些其實都是他寫的**；面對批評他回了一句「The name changes, the value remains」。他也寫輕歌劇（1919《Apple Blossoms》、1932《Sissy》）與一首弦樂四重奏。錄音方面他長期為 Victor／RCA Victor 與 HMV 灌片，**最後一批錄音在 1950 年**。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a1",
+    "album": "The 1926 & 1927 Victor Recordings: Favourite Short Pieces",
+    "facts": [
+     {
+      "f": "英文維基〈Fritz Kreisler〉記：他寫過大量託名舊時代作曲家的仿作（Pugnani、Tartini、Vivaldi 等），**1935 年才自己揭穿是他寫的**，並回應批評說「The name changes, the value remains」；他自己的安可小品包括〈Liebesleid〉與〈Liebesfreud〉。同條目記他長期為 Victor／RCA Victor 與 HMV 錄音，最後一批錄音在 1950 年；1962 年 1 月 29 日卒於紐約，葬於 Bronx 的 Woodlawn Cemetery 私人墓室。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     },
+     {
+      "f": "同一條目記：他 1875 年生於維也納，七歲進維也納音樂院師從 Bruckner、Dont 與 Hellmesberger Jr.，1885–1887 年在巴黎音樂院隨 Delibes、Massart、Massenet 學習，十二歲以最高 Premier Prix 畢業。1901 年在美國巡演時認識紐約出生的 Harriet Lies，隔年結婚，**因為法律手續問題前後又重辦了三次婚禮**，兩人結縭六十年直到他過世。1914 年他在一次大戰的奧地利陸軍中負傷後光榮退伍，同年 11 月 24 日抵達紐約，在美國度過整個戰爭期間。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Kreisler"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Berlin HMV Recordings, 1926-27",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "1924 年他從美國回歐洲，先落腳柏林；這批唱片就錄在那幾年。英文維基記他到 1938 年才搬去法國。兩片 22 軌是三首協奏曲加十二首小品，貝多芬、孟德爾頌與布拉姆斯三首的第一樂章合計就超過 58 分鐘，小品最短的〈Syncopation〉只有 119.9 秒。協奏曲的伴奏是 Leo Blech 指揮 Staatskapelle Berlin、鋼琴 Arpad Sandor。維基另記他為貝多芬協奏曲寫的裝飾奏是今天最常演奏的版本，而第一片收的正是那首協奏曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6ba51093-bbb8-4fba-8a98-d2ad931d62db",
+     "https://musicbrainz.org/release/2bbf00b3-da04-4623-9d6a-915a78b911ee",
+     "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+     "https://itunes.apple.com/lookup?id=192553360&entity=song&limit=200&country=gb"
+    ]
+   },
+   {
+    "album": "The 1926 & 1927 Victor Recordings: Favourite Short Pieces",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "第 15 軌〈Blue Skies〉是那兩年百老匯的新歌，他改成小提琴曲。那是 Irving Berlin 為 1926 年音樂劇《Betsy》寫的歌，曲名後面標著「Arr. F. Kreisler for Violin & Piano」；第 1 與第 2 軌同樣改編自輕歌劇。第 5、11、12、13、14、19 軌是他自己的作品，〈Liebesleid〉連放兩個版本、時長只差一秒。22 軌全部落在 100 到 266 秒之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bf952c10-656c-3909-b858-239126370b39",
+     "https://itunes.apple.com/lookup?id=1617284555&entity=song&limit=200&country=gb",
+     "https://en.wikipedia.org/wiki/Fritz_Kreisler",
+     "https://musicbrainz.org/release/34c179a4-93f8-4039-838f-82134775e037"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "fritz wunderlich",
+  "name": "Fritz Wunderlich",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1965,
+   1966
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Schubert: Die schöne Müllerin",
+    "year": 1966,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Schubert"
+   },
+   {
+    "album": "Schumann: Dichterliebe",
+    "year": 1965,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Salzburger Liederabend",
+    "year": 1965,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 19,
+   "researchRecords": 3,
+   "facts": 6,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c100-a",
+    "album": "Salzburger Liederabend",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group d3efa5d4 的欄位：title「Fritz Wunderlich Salzburger Liederabend」（MB 標題把歌手名串在盤名前面）、artist-credit「Fritz Wunderlich」、first-release-date 1984、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+      "src": "https://musicbrainz.org/release-group/d3efa5d4-8ca3-4ada-9be9-2966a5b952a6"
+     },
+     {
+      "f": "德文維基〈Fritz Wunderlich〉：1930 年 9 月 26 日生於 Kusel，**1966 年 9 月 17 日歿於海德堡**——他在 Oberderdingen 一戶人家的樓梯上因鞋帶沒繫好摔倒、顱骨骨折，隔天在海德堡的醫院過世，距他三十六歲生日只差九天；當時他正要在 **1966 年 10 月 8 日**於紐約大都會歌劇院首演。條目並記他**自 1959 年起是薩爾茲堡音樂節的常客**（1959 年由 Karl Böhm 邀請首演，唱理查‧史特勞斯《沉默的女人》），1963 年起到過世都是維也納國家歌劇院的固定團員。",
+      "src": "https://de.wikipedia.org/wiki/Fritz_Wunderlich"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a2",
+    "album": "Salzburger Liederabend",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group d3efa5d4 的欄位：title「Fritz Wunderlich Salzburger Liederabend」（MB 標題把歌手名串在盤名前面）、artist-credit「Fritz Wunderlich」、first-release-date 1984、primary-type Album、secondary-types 空、轄下只有 1 個 release。",
+      "src": "https://musicbrainz.org/release-group/d3efa5d4-8ca3-4ada-9be9-2966a5b952a6"
+     },
+     {
+      "f": "德文維基〈Fritz Wunderlich〉：1930 年 9 月 26 日生於 Kusel，**1966 年 9 月 17 日歿於海德堡**——他在 Oberderdingen 一戶人家的樓梯上因鞋帶沒繫好摔倒、顱骨骨折，隔天在海德堡的醫院過世，距他三十六歲生日只差九天；當時他正要在 **1966 年 10 月 8 日**於紐約大都會歌劇院首演。條目並記他**自 1959 年起是薩爾茲堡音樂節的常客**（1959 年由 Karl Böhm 邀請首演，唱理查‧史特勞斯《沉默的女人》），1963 年起到過世都是維也納國家歌劇院的固定團員。",
+      "src": "https://de.wikipedia.org/wiki/Fritz_Wunderlich"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c48a-b",
+    "album": "Schumann: Dichterliebe",
+    "facts": [
+     {
+      "f": "1965 年 10 月 31 日至 11 月 3 日，Fritz Wunderlich 與鋼琴家 Hubert Giesen 在慕尼黑 Hochschule für Musik 為 Deutsche Grammophon 錄下 Schumann《Dichterliebe》全套十六首，錄音監製 Hans Weber、錄音師 Hans-Peter Schweigmann。",
+      "src": "https://andreas-praefcke.de/wunderlich/discography/dichterl.htm"
+     },
+     {
+      "f": "1966 年 9 月 17 日，Wunderlich 在男低音 Gottlob Frick 的鄉間宅邸因鞋帶絆倒、自樓梯墜落造成顱骨骨折辭世，得年 35 歲，距 36 歲生日只差九天；當時他正在錄製 Haydn 的《Die Schöpfung》（Herbert von Karajan 指揮 Berliner Philharmoniker），並已排定 10 月 8 日以 Don Ottavio 首度登上 Metropolitan Opera。",
+      "src": "https://en.wikipedia.org/wiki/Fritz_Wunderlich"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Salzburger Liederabend",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "節目單走完，他又唱了兩首才放觀眾走。兩首安可是舒伯特的〈Im Abendrot〉與〈Ungeduld〉。在那之前是貝多芬五首、舒伯特六首，再加整套舒曼《詩人之戀》十六首，全場二十九軌，台上只有男高音與鋼琴 Hubert Giesen 兩個人。兩筆 Discogs 條目各自直記同一場：1965 年 8 月 19 日，薩爾茲堡莫札特音樂院，音樂節的第六場。德文維基記他自 1959 年起就是薩爾茲堡的常客，原訂 1966 年 10 月 8 日的大都會首演沒能成行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d3efa5d4-8ca3-4ada-9be9-2966a5b952a6",
+     "https://musicbrainz.org/release/220d3960-5ab6-4296-8fb2-132e45ffad0e",
+     "https://www.discogs.com/release/14813186",
+     "https://www.discogs.com/release/15198679",
+     "https://de.wikipedia.org/wiki/Fritz_Wunderlich"
+    ]
+   },
+   {
+    "album": "Schumann: Dichterliebe",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "一個結尾的高音，被說成這套歌曲錄音裡最震撼的聲音。指的是〈Ich grolle nicht〉收尾的那個高音 A。1965 年 10 月底到 11 月初，Wunderlich 與鋼琴家 Hubert Giesen 在慕尼黑為 DG 錄下 Schumann《Dichterliebe》全套十六首，Giesen 既是他的伴奏也是他的藝術導師，原盤 1966 年發行。兩人隔年 9 月 4 日開完最後一場獨唱會，同月 17 日他因意外辭世，得年 35 歲。",
+    "sourceUrls": [
+     "https://andreas-praefcke.de/wunderlich/discography/dichterl.htm",
+     "https://en.wikipedia.org/wiki/Hubert_Giesen",
+     "https://en.wikipedia.org/wiki/Fritz_Wunderlich",
+     "https://store.deutschegrammophon.com/products/wunderlich-fritz-giesen-hubert-schumann-dichterliebe",
+     "https://musicbrainz.org/release-group/69799bfb-266c-3b0c-8ac1-612986410beb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "george szell",
+  "name": "George Szell",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1961,
+   1970
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Beethoven: Symphony no. 9",
+    "year": 1961,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Beethoven"
+   },
+   {
+    "album": "Dvořák: Symphony no. 8",
+    "year": 1970,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Dvořák"
+   },
+   {
+    "album": "Dvořák: Slavonic Dances",
+    "year": 1965,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48a-c",
+    "album": "Dvořák: Slavonic Dances",
+    "facts": [
+     {
+      "f": "這套斯拉夫舞曲由 George Szell 指揮 The Cleveland Orchestra 錄製，錄音地點是克里夫蘭的 Severance Hall，Columbia 於 1965 年以雙片裝發行。",
+      "src": "https://www.discogs.com/release/12256339-Dvo%C5%99%C3%A1k-George-SzellCleveland-Orchestra-The-Slavonic-Dances"
+     },
+     {
+      "f": "George Szell 1930 至 1937 年間在布拉格德意志劇院擔任首席指揮，1946 年起執掌 The Cleveland Orchestra 至 1970 年。",
+      "src": "https://www.britannica.com/biography/George-Szell"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dvořák: Slavonic Dances",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "進克里夫蘭之前，他在布拉格待過七年。1930 至 1937 年 George Szell 在布拉格德意志劇院當首席指揮，1946 年起執掌 The Cleveland Orchestra 直到 1970 年。這套斯拉夫舞曲就是他與克里夫蘭在 Severance Hall 分成好幾個階段錄下的，不是一次錄畢的單場次製作；op. 46 與 op. 72 全部十六首收齊，Columbia 於 1965 年以雙片裝發行。節奏重音推得極清楚，弦樂齊奏整齊到接近機械。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12256339-Dvo%C5%99%C3%A1k-George-SzellCleveland-Orchestra-The-Slavonic-Dances",
+     "https://www.highdeftapetransfers.ca/products/dvorak-slavonic-dances-complete-george-szell-cleveland-orchestra",
+     "https://www.britannica.com/biography/George-Szell",
+     "https://www.highresaudio.com/en/review/the-cleveland-orchestra-george-szell-dvork-the-slavonic-dances-remastered",
+     "https://musicbrainz.org/release-group/e0d5dc8e-ceb9-3d4a-af30-e101b2930c87"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "georges prêtre",
+  "name": "Georges Prêtre",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1969,
+   2016
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Poulenc: Gloria",
+    "year": 1989,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Poulenc"
+   },
+   {
+    "album": "The Last Concert at La Scala",
+    "year": 2016,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Ravel"
+   },
+   {
+    "album": "Massenet: Werther",
+    "year": 1969,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48b-d",
+    "album": "Massenet: Werther",
+    "facts": [
+     {
+      "f": "錄音分兩段進行：1968 年 11 月與 1969 年 6 月，地點是巴黎的 Salle Wagram，Georges Prêtre 指揮 Orchestre de Paris，EMI 製作。",
+      "src": "https://musicwebinternational.com/2023/05/massenet-werther-warner-classics/"
+     },
+     {
+      "f": "MusicWeb International 的樂評 Christopher Howell 指出，此劇在 1931 年之後長期沒有新的全曲錄音，是這份 Prêtre 版把它重新推回國際劇目；他同時批評 Prêtre 的高潮太響、壓過歌手，並認為 de los Ángeles 以年長的女高音唱這個次女高音角色，低音區缺乏共鳴。",
+      "src": "https://musicwebinternational.com/2023/05/massenet-werther-warner-classics/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Massenet: Werther",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "1931 年之後空了三十多年，Prêtre 才在 Salle Wagram 把《維特》錄回劇目。Massenet 這齣法語歌劇曾被 Opéra-Comique 以題材太陰鬱為由退件，1892 年 2 月先在維也納以德語譯本首演，法語版要到 1893 年 1 月才回巴黎上演。錄音分 1968 年 11 月與 1969 年 6 月兩段完成，樂團是 Orchestre de Paris，1969 年由 EMI 以三張黑膠盒裝首發。後世樂評把這一版看成法語傳統的參照，演唱勝於指揮。",
+    "sourceUrls": [
+     "https://musicwebinternational.com/2023/05/massenet-werther-warner-classics/",
+     "https://www.discogs.com/release/7023570-Massenet-Victoria-De-Los-Angeles-Nicolai-Gedda-Mady-Mespl%C3%A9-Roger-Soyer-Jean-Christophe-Benoit-Georg",
+     "https://www.classical-music.com/features/recordings/massenets-werther-a-guide-to-his-operatic-masterpiece-and-its-best-recordings",
+     "https://musicbrainz.org/release-group/ec8644c8-9ac8-4238-898c-15149b0a2dd7"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "hilary hahn",
+  "name": "Hilary Hahn",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   2012,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Silfra",
+    "year": 2012,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "6 Partitas",
+    "year": 2019,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ysaÿe: 6 Sonatas for Violin Solo",
+    "year": 2023,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Ysaÿe"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "jacqueline du pré",
+  "name": "Jacqueline du Pré",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1965,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Elgar: Cello Concerto",
+    "year": 1965,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Elgar"
+   },
+   {
+    "album": "Haydn: Cello Concertos",
+    "year": 1967,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dvořák: Cello Concerto / Waldesruhe",
+    "year": 1971,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 20,
+   "researchRecords": 3,
+   "facts": 9,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c100-a",
+    "album": "Dvořák: Cello Concerto / Waldesruhe",
+    "facts": [
+     {
+      "f": "Discogs release 2339386 是英國原盤 His Master's Voice **ASD 2751**（1971，立體聲黑膠），備註寫「℗ 1971 E.M.I. Records (The Gramophone Company Ltd.)」與「**Recorded in the Medinah Temple, Chicago**」；工作人員列大提琴獨奏 Jacqueline du Pré、指揮 Daniel Barenboim、樂團 Chicago Symphony Orchestra、製作人 Peter Andry、平衡工程師 Carson Taylor、內頁解說 W. A. Chislett。",
+      "src": "https://www.discogs.com/release/2339386"
+     },
+     {
+      "f": "英文維基〈Jacqueline du Pré〉：1945 年 1 月 26 日生於牛津、**1987 年 10 月 19 日過世，得年 42**；十一歲拿下英國最重要的大提琴獎、十六歲在 Wigmore Hall 正式登台、1965 年以艾爾加大提琴協奏曲在美國首演一舉成名；**1967 年 6 月 15 日與 Daniel Barenboim 在耶路撒冷西牆結婚**（六日戰爭前夕她取消了手上所有的演出飛去以色列）。**她的演奏生涯在二十多歲後半因多發性硬化症中斷**，此後以教學為主直到過世。",
+      "src": "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9"
+     },
+     {
+      "f": "同一條目談她的琴與晚期錄音：1970 年她換用費城製琴師 Sergio Peresson 做的一把現代琴，**「那把 Peresson 是她此後直到 1973 年生涯結束都在用的琴，包括第二次的艾爾加協奏曲現場錄音，以及她最後一次錄音室錄音——1971 年 12 月錄的蕭邦 g 小調大提琴奏鳴曲與法朗克 A 大調小提琴奏鳴曲的大提琴改編版」**。條目另記她 1968 年與 Zubin Mehta／柏林愛樂首演時拉的就是德弗札克這首 b 小調大提琴協奏曲。",
+      "src": "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a2",
+    "album": "Dvořák: Cello Concerto / Waldesruhe",
+    "facts": [
+     {
+      "f": "Discogs release 2339386 是英國原盤 His Master's Voice **ASD 2751**（1971，立體聲黑膠），備註寫「℗ 1971 E.M.I. Records (The Gramophone Company Ltd.)」與「**Recorded in the Medinah Temple, Chicago**」；工作人員列大提琴獨奏 Jacqueline du Pré、指揮 Daniel Barenboim、樂團 Chicago Symphony Orchestra、製作人 Peter Andry、平衡工程師 Carson Taylor、內頁解說 W. A. Chislett。",
+      "src": "https://www.discogs.com/release/2339386"
+     },
+     {
+      "f": "英文維基〈Jacqueline du Pré〉：1945 年 1 月 26 日生於牛津、**1987 年 10 月 19 日過世，得年 42**；十一歲拿下英國最重要的大提琴獎、十六歲在 Wigmore Hall 正式登台、1965 年以艾爾加大提琴協奏曲在美國首演一舉成名；**1967 年 6 月 15 日與 Daniel Barenboim 在耶路撒冷西牆結婚**（六日戰爭前夕她取消了手上所有的演出飛去以色列）。**她的演奏生涯在二十多歲後半因多發性硬化症中斷**，此後以教學為主直到過世。",
+      "src": "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9"
+     },
+     {
+      "f": "同一條目談她的琴與晚期錄音：1970 年她換用費城製琴師 Sergio Peresson 做的一把現代琴，**「那把 Peresson 是她此後直到 1973 年生涯結束都在用的琴，包括第二次的艾爾加協奏曲現場錄音，以及她最後一次錄音室錄音——1971 年 12 月錄的蕭邦 g 小調大提琴奏鳴曲與法朗克 A 大調小提琴奏鳴曲的大提琴改編版」**。條目另記她 1968 年與 Zubin Mehta／柏林愛樂首演時拉的就是德弗札克這首 b 小調大提琴協奏曲。",
+      "src": "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c48a-d",
+    "album": "Haydn: Cello Concertos",
+    "facts": [
+     {
+      "f": "曲目是海頓 C 大調大提琴協奏曲（English Chamber Orchestra，Daniel Barenboim 指揮）、海頓 D 大調大提琴協奏曲（London Symphony Orchestra，Sir John Barbirolli 指揮），以及 Boccherini 降 B 大調大提琴協奏曲的 Friedrich Grützmacher 1895 年改編版。",
+      "src": "https://www.musicweb-international.com/classrev/2003/aug03/Haydn_DuPre.htm"
+     },
+     {
+      "f": "海頓 C 大調協奏曲與 Boccherini 最早以 HMV／EMI 的 ASD 2331 於 1967 年發行，是 Jacqueline du Pré 與指揮 Daniel Barenboim 的錄音室合作。",
+      "src": "https://www.discogs.com/release/4869850-Jacqueline-Du-Pr%C3%A9-Daniel-Barenboim-Haydn-Boccherini-The-English-Chamber-Orchestra-Haydn-Cello-Conce"
+     },
+     {
+      "f": "海頓 C 大調大提琴協奏曲曾長期被認為佚失，1961 年由音樂學家 Oldřich Pulkert 在布拉格國家博物館找到抄本；二十世紀首演是 1962 年 5 月 19 日，由 Miloš Sádlo 與 Charles Mackerras 指揮的捷克斯洛伐克廣播交響樂團演出。",
+      "src": "https://en.wikipedia.org/wiki/Cello_Concerto_No._1_(Haydn)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dvořák: Cello Concerto / Waldesruhe",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "獨奏是她，站在指揮台上的是她丈夫。英文維基記，1967 年 6 月 15 日她與 Daniel Barenboim 在耶路撒冷西牆結婚——六日戰爭前夕她取消了手上所有演出飛去以色列。這張是 Barenboim 指揮芝加哥交響，Discogs 記錄音地在芝加哥的 Medinah Temple。四軌：協奏曲三個樂章 15:22、13:16、13:33，再加〈Waldesruhe〉6 分 41 秒。維基另記她 1968 年與 Mehta、柏林愛樂首演，拉的就是這首協奏曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3b7812ec-59f7-3fc4-8a51-c11dc4bf7b47",
+     "https://musicbrainz.org/release/bdb7ec69-11ef-4e02-91f6-b61cbc97379a",
+     "https://www.discogs.com/release/2339386",
+     "https://en.wikipedia.org/wiki/Jacqueline_du_Pr%C3%A9",
+     "https://music.apple.com/gb/album/694084609",
+     "https://music.apple.com/gb/album/693626946"
+    ]
+   },
+   {
+    "album": "Haydn: Cello Concertos",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "Haydn 這首 C 大調協奏曲重見天日還不到六年，du Pré 就進了 Abbey Road。它長期被當成佚失之作，1961 年由音樂學家 Oldřich Pulkert 在布拉格國家博物館找到抄本。1967 年，du Pré 走進一號錄音室錄下它，由 Daniel Barenboim 指揮；樂團編制不大，她的弓壓與揉弦幅度明顯偏浪漫派。EMI 1998 年把它與另兩首協奏曲合成一張，收進 Great Recordings of the Century。",
+    "sourceUrls": [
+     "https://www.musicweb-international.com/classrev/2003/aug03/Haydn_DuPre.htm",
+     "https://www.discogs.com/release/1040940-Haydn-Boccherini-Jacqueline-du-Pr%C3%A9-Daniel-Barenboim-Sir-John-Barbirolli-Cello-Concertos",
+     "https://www.discogs.com/release/4869850-Jacqueline-Du-Pr%C3%A9-Daniel-Barenboim-Haydn-Boccherini-The-English-Chamber-Orchestra-Haydn-Cello-Conce",
+     "https://en.wikipedia.org/wiki/Cello_Concerto_No._1_(Haydn)",
+     "https://musicbrainz.org/release-group/468a41ad-943f-4bc7-8287-89f354446e27"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "john barbirolli",
+  "name": "John Barbirolli",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1957,
+   1964
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Mahler: Symphony no. 9 (BPO)",
+    "year": 1964,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mahler"
+   },
+   {
+    "album": "Elgar: Symphony no. 1",
+    "year": 1957,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Elgar"
+   },
+   {
+    "album": "Vaughan Williams: Symphony no. 5",
+    "year": 1962,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Vaughan Williams"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "jonny greenwood",
+  "name": "Jonny Greenwood",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   2007,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Jarak Qaribak",
+    "year": 2023,
+    "genres": [
+     "classical",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Junun",
+    "year": 2015,
+    "genres": [
+     "classical",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "There Will Be Blood",
+    "year": 2007,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "jordi savall",
+  "name": "Jordi Savall",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1983,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Tous les matins du monde",
+    "year": 1991,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Marin Marais: Pièces de viole",
+    "year": 1983,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Marin Marais"
+   },
+   {
+    "album": "Beethoven: Symphonies (古樂版)",
+    "year": 2022,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Beethoven"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "karlheinz stockhausen",
+  "name": "Karlheinz Stockhausen",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1960,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Stimmung",
+    "year": 1986,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gesang der Jünglinge / Kontakte",
+    "year": 1962,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Kontakte",
+    "year": 1960,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kronos quartet",
+  "name": "Kronos Quartet",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1989,
+   1992
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Black Angels",
+    "year": 1990,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Pieces of Africa",
+    "year": 1992,
+    "genres": [
+     "classical",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Steve Reich: Different Trains",
+    "year": 1989,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Steve Reich"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lang lang",
+  "name": "Lang Lang",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   2011,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "New York Rhapsody",
+    "year": 2016,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Liszt: My Piano Hero",
+    "year": 2011,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bach: Goldberg Variations (2020)",
+    "year": 2020,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c48c-e",
+    "album": "Bach: Goldberg Variations (2020)",
+    "facts": [
+     {
+      "f": "標準版是雙 CD，廠牌編號 Deutsche Grammophon 481 8971，2020 年 9 月 4 日發行，兩片長度分別為 43 分 38 秒與 47 分 56 秒；解說由 Jeremy Nicholas（英文）與 Hannah Schmidt（德文）撰寫。",
+      "src": "https://www.discogs.com/release/15931949-Lang-Lang-Goldberg-Variations"
+     },
+     {
+      "f": "樂評對他的詮釋看法分歧：The Classic Review 指出他在每段變奏的第二次反覆加入額外的裝飾與力度變化，第 13 與第 25 變奏比一般慢、第 19 變奏帶跳躍性格，力度幅度比其他名家寬、低音線條更強，並認為前十段變奏是全曲最成功的一段。",
+      "src": "https://theclassicreview.com/album-reviews/review-bach-goldberg-variations-lang-lang-piano/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Bach: Goldberg Variations (2020)",
+    "manifest": "onboarding-manifest-c48-rescue-20260901.json",
+    "desc": "同一天發行兩份演奏：一份柏林錄音室，一份萊比錫聖多馬教堂。後者是巴哈自己任職的教堂，收在 2020 年 9 月 4 日同步推出的四片豪華版裡；錄音室版錄於同年 3 月 15 至 18 日的柏林 Jesus-Christus-Kirche，以雙 CD 為標準版。郎朗說他二十多年前就開始接觸這部作品。樂評對他的處理看法分歧：反覆時大量加裝飾與力度變化，第 13 與第 25 變奏比一般慢，部分宣敘性質的變奏被認為強調得過頭。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15931949-Lang-Lang-Goldberg-Variations",
+     "https://theclassicreview.com/album-reviews/review-bach-goldberg-variations-lang-lang-piano/",
+     "https://store.deutschegrammophon.com/en-en/products/lang-lang-bach-goldberg-variations",
+     "https://musicbrainz.org/release-group/2162703b-3d66-4b5d-9cb8-72e0cfff87c2"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "leonard bernstein",
+  "name": "Leonard Bernstein",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1959,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Mahler: Symphony no. 5 (VPO)",
+    "year": 1988,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mahler"
+   },
+   {
+    "album": "Mahler: Symphony no. 2 Resurrection",
+    "year": 1987,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mahler"
+   },
+   {
+    "album": "Shostakovich: Symphony no. 5",
+    "year": 1959,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Shostakovich"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lerner & loewe",
+  "name": "Lerner & Loewe",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1947,
+   1960
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Camelot",
+    "year": 1960,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "My Fair Lady",
+    "year": 1956,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Brigadoon",
+    "year": 1947,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51d-a",
+    "album": "Brigadoon",
+    "facts": [
+     {
+      "f": "劇中的高地村莊 Brigadoon 是虛構的，名字取自蘇格蘭 Ayrshire 一座真實的橋 Brig o' Doon——那是 Robert Burns 的詩〈Tam o' Shanter〉最後一段的場景。",
+      "src": "https://en.wikipedia.org/wiki/Brigadoon"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Camelot",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "戲已經下檔十個月，這齣亞瑟王的音樂劇才被追認成一個時代的名字。它 1960 年 12 月 3 日於百老匯 Majestic 劇院首演，Richard Burton 飾亞瑟王、Julie Andrews 飾 Guenevere，Columbia 同年發行原版卡司錄音，演出到 1963 年 1 月 5 日收場。同年 11 月 22 日甘迺迪遇刺，一週後的 11 月 29 日，賈桂琳・甘迺迪受訪把夫婿任內比作亞瑟王的短暫盛世，訪談 12 月 6 日刊於《Life》。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Camelot_(musical)",
+     "https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Richard_Burton",
+     "https://www.jfklibrary.org/asset-viewer/archives/THWPP/059/THWPP-059-009",
+     "https://newenglandhistoricalsociety.com/flashback-photo-theodore-white-creates-camelot-myth-john-f-kennedy/",
+     "https://musicbrainz.org/release-group/bd51e8f2-b0ad-370c-9bed-6e340afa0d5a"
+    ]
+   },
+   {
+    "album": "My Fair Lady",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "美國第一張賣破一百萬張的密紋唱片，來自 1956 年的百老匯舞台。3 月 15 日首演，十天後卡司在 Columbia 第 30 街錄音室用一整天錄完，4 月 2 日發行。這張錄音在 Billboard 榜上蟬聯冠軍 15 週。飾演 Higgins 的 Rex Harrison 音域被作曲 Frederick Loewe 形容只有一個半音，劇組因此替他設計出以旋律的節奏與音高說出歌詞、不真正唱出音符的處理，這種半說半唱成了這個角色的表演標誌。1977 年它進入葛萊美名人堂。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/My_Fair_Lady_(Broadway_cast_recording)",
+     "https://www.mentalfloss.com/article/76684/15-loverly-facts-about-my-fair-lady",
+     "https://www.loc.gov/item/2014621183/",
+     "https://musicbrainz.org/release-group/82e96bfb-bcc7-3179-831c-9cf86aa17aaf"
+    ]
+   },
+   {
+    "album": "Brigadoon",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "一百年才醒來一天的蘇格蘭村子，讓歌、舞與劇情看不出接縫。這是 Alan Jay Lerner 與 Frederick Loewe 合作的第四部作品，寫在他們看過《Oklahoma!》之後，編舞找來替那齣戲編過舞的 Agnes de Mille；1947 年 3 月 13 日在百老匯首演，連演 581 場。本張是同年的原版百老匯卡司錄音，由 RCA Victor 發行。de Mille 以本劇拿下第一屆東尼獎最佳編舞獎，本劇另獲紐約劇評人協會獎最佳音樂劇。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Brigadoon",
+     "https://musicbrainz.org/release-group/672102b5-c605-40c4-b379-89fcf7b70a41"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ludovico einaudi",
+  "name": "Ludovico Einaudi",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1999,
+   2019
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Nightbook",
+    "year": 2009,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Eden Roc",
+    "year": 1999,
+    "genres": [
+     "classical",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Seven Days Walking",
+    "year": 2019,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "maurizio pollini",
+  "name": "Maurizio Pollini",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1972,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Beethoven: Late Piano Sonatas",
+    "year": 1977,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Beethoven"
+   },
+   {
+    "album": "Chopin: Études opp. 10 & 25",
+    "year": 1972,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Chopin"
+   },
+   {
+    "album": "Schoenberg: Piano Works",
+    "year": 1974,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Schoenberg: Piano Works",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "一位作曲家一生的鋼琴獨奏作品，五十分鐘就彈完了。Maurizio Pollini 在 1974 年 5 月的慕尼黑 Residenz 把 Schoenberg 的鋼琴獨奏全集錄成一張：《三首鋼琴小品》op.11、《六首小鋼琴曲》op.19、《五首鋼琴小品》op.23、《鋼琴組曲》op.25，加上兩首單樂章的 op.33a 與 op.33b。原盤 Deutsche Grammophon 2530 531 於 1975 年發行，封套用的是 Schoenberg 本人的畫作局部。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1095998",
+     "https://www.discogs.com/release/1035153",
+     "https://musicbrainz.org/release-group/9407609d-ca05-4bb7-9d4a-1c2b17b3692c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "michael nyman",
+  "name": "Michael Nyman",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1982,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Piano",
+    "year": 1993,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Draughtsman's Contract",
+    "year": 1982,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Drowning by Numbers",
+    "year": 1988,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 22,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c88-b",
+    "album": "The Draughtsman's Contract",
+    "facts": [
+     {
+      "f": "MB 該 release-group 六筆 release 的欄位：1982 GB Official，廠牌欄 Charisma、編號 CAS 1158、載體 **12\" Vinyl**、barcode 空白；1989 GB Charisma CASCD1158、1989 XE Charisma、1989 US Caroline Blue Plate CAROL 1844-2 三筆 CD；2004-03-22 GB Virgin CDVR 965；2005-10 GB MN Records MNRCD 105。**六筆的 track-count 欄全部都是 7。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=86fd1b5f-5711-3949-b178-521c8ae8eccb&inc=labels+media&fmt=json"
+     },
+     {
+      "f": "Discogs release 5401832（UK、1982、Vinyl LP Album、Charisma CAS 1158、註記欄寫「First pressing.」）的 credit 欄裡有一條**掛在十七世紀作曲家名下的職稱：Music Consultant「Henry Purcell」**；同一欄另有 Written-By 與 Supervised By「Michael Nyman」、Harpsichord, Piano「Michael Nyman」、Performer「The Michael Nyman Band」、Producer「David Cunningham」、Mastered By「Tim Young」。",
+      "src": "https://www.discogs.com/release/5401832"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c88-b",
+    "album": "Drowning by Numbers",
+    "facts": [
+     {
+      "f": "MB 該 release-group 四筆 release 的欄位：1988 GB Official，廠牌欄 Venture、編號 VE 23、載體 **12\" Vinyl**、barcode 5012981002312、packaging 欄 Cardboard/Paper Sleeve；1988 GB Venture CDVE 23（barcode 5012981002329）與 1988 GB Virgin DVEBN 55（同一組 barcode）兩筆 CD；1988 US Virgin CAROL 1646-2。**四筆的 track-count 欄全部都是 13。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=d676427f-a288-3329-af1c-9acb993e70dc&inc=labels+media&fmt=json"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Piano",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "Jane Campion 1993 年電影的音樂，Nyman 親自彈鋼琴，Munich Philharmonic Orchestra 由他指揮，片中角色彈的鋼琴則由 Holly Hunter 本人演奏。〈The Heart Asks Pleasure First〉的曲調取自蘇格蘭歌謠〈Gloomy Winter's Noo Awa'〉所用的傳統旋律，Nyman 慣用的反覆音型在此被壓進十九世紀客廳鋼琴的體裁裡。1993 年 10 月 19 日由 Virgin 發行，售出超過三百萬張，英國專輯榜最高第三十一名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Piano_(soundtrack)",
+     "https://musicbrainz.org/release/14fbb204-f9e7-4a65-ac0d-4e0801c510a9"
+    ]
+   },
+   {
+    "album": "The Draughtsman's Contract",
+    "manifest": "onboarding-manifest-c88-20260910.json",
+    "desc": "兩面的收溝裡各刻著一句話，掛名欄上還有一位十七世紀的音樂顧問。1982 年 Charisma 那張黑膠 A 面刻的是 HIS BREECHES ARE HIS BEST DEFENCE、B 面是 A SYMMETRICAL STRATAGEM，而 Discogs 的 Music Consultant 欄寫的是 Henry Purcell；英文維基百科的條目說這份配樂大量取材自 Purcell。碟上七軌由作曲者自己的樂隊演出，他本人彈大鍵琴與鋼琴。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/86fd1b5f-5711-3949-b178-521c8ae8eccb",
+     "https://musicbrainz.org/ws/2/release?release-group=86fd1b5f-5711-3949-b178-521c8ae8eccb&inc=labels+media&fmt=json",
+     "https://musicbrainz.org/release/887bbc4d-1056-4f4f-8318-c1ee1be36a58",
+     "https://www.discogs.com/release/5401832",
+     "https://en.wikipedia.org/wiki/The_Draughtsman%27s_Contract",
+     "https://music.apple.com/gb/album/714832740",
+     "https://music.apple.com/gb/album/1072784189"
+    ]
+   },
+   {
+    "album": "Drowning by Numbers",
+    "manifest": "onboarding-manifest-c88-20260910.json",
+    "desc": "帶編號的曲名只有兩個，而 3 排在 2 的前面。〈Drowning by Number 3〉排在 A4、〈Drowning by Number 2〉排在後面的 A7，十三個曲名裡沒有任何一軌叫 Number 1。英文維基百科的條目說，這張唱片小冊的封底印著一個很大的 58，而片中那個跳繩女孩的計數遊戲數到的正是 58。1988 年那張 Venture 黑膠的曲長從 1:44 到〈Endgame〉8:04；作曲者自己彈鋼琴，並兼指揮與製作。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d676427f-a288-3329-af1c-9acb993e70dc",
+     "https://musicbrainz.org/ws/2/release?release-group=d676427f-a288-3329-af1c-9acb993e70dc&inc=labels+media&fmt=json",
+     "https://musicbrainz.org/release/5b9cded2-dd7c-4115-85b8-88eee8f8b7cc",
+     "https://www.discogs.com/release/446059",
+     "https://en.wikipedia.org/wiki/Drowning_by_Numbers",
+     "https://itunes.apple.com/search?term=Drowning%20by%20Numbers%20Nyman&country=us&entity=album&limit=25"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "musica antiqua köln",
+  "name": "Musica Antiqua Köln",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1979,
+   1991
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Biber: Rosary Sonatas",
+    "year": 1991,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Biber"
+   },
+   {
+    "album": "Telemann: Tafelmusik",
+    "year": 1989,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Telemann"
+   },
+   {
+    "album": "Bach: Musical Offering",
+    "year": 1979,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48b-b",
+    "album": "Bach: Musical Offering",
+    "facts": [
+     {
+      "f": "製作人是 Archiv Produktion 的主事者 Andreas Holschneider，錄音師 Hans-Peter Schweigmann、錄音監督 Gerd Ploebsch，解說由 Thomas Kohlhase 撰寫；封面用的是 Schloß Charlottenburg 所藏 J. G. Glume（1711–1778）的腓特烈大帝畫像。",
+      "src": "https://www.discogs.com/release/5256296-Johann-Sebastian-Bach-Musica-Antiqua-K%C3%B6ln-Reinhard-Goebel-Das-Musikalische-Opfer-Musical-Offering-L"
+     },
+     {
+      "f": "全套包含三聲部與六聲部兩首 ricercar、十首卡農與一首給長笛、小提琴與數字低音的三重奏鳴曲；Bach 大多數樂章沒有指定樂器，演奏者必須自行決定編制，部分卡農更只寫成一行旋律加拉丁文謎題，要演奏者自己解出多聲部的答案，其中一首是不斷向上轉調而不回原調的「無限上升卡農」。",
+      "src": "https://en.wikipedia.org/wiki/The_Musical_Offering"
+     },
+     {
+      "f": "Musica Antiqua Köln 1973 年由 Reinhard Goebel 與科隆音樂院的同學組成，專攻十七、十八世紀曲目與古樂器演奏，長期為 Archiv Produktion 錄音，曾獲 Grand Prix International du Disque、Gramophone Award 與 Diapason d'Or，並入圍葛萊美；樂團在 2007 年、活動逾三十年後解散。",
+      "src": "https://en.wikipedia.org/wiki/Musica_Antiqua_K%C3%B6ln"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Bach: Musical Offering",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "有些卡農只留一行旋律加一句拉丁謎語，樂器要演奏者自己決定。《音樂的奉獻》BWV 1079 源自 1747 年 Bach 到波茨坦晉見腓特烈大帝：國王丟給他一段刁鑽的主題要他當場即興賦格，他回家把整套寫完，四個月後出版，其中一首卡農不斷向上轉調而不回原調。1979 年 2 月，Musica Antiqua Köln 以五人編制錄於慕尼黑王宮的 Herkulessaal，兩首 ricercar 交給大鍵琴獨奏，同年由 Archiv Produktion 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5256296-Johann-Sebastian-Bach-Musica-Antiqua-K%C3%B6ln-Reinhard-Goebel-Das-Musikalische-Opfer-Musical-Offering-L",
+     "https://en.wikipedia.org/wiki/The_Musical_Offering",
+     "https://en.wikipedia.org/wiki/Musica_Antiqua_K%C3%B6ln",
+     "https://musicbrainz.org/release-group/aa41110f-8e24-44db-9ca9-e270e3cadffd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "nathan milstein",
+  "name": "Nathan Milstein",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1961,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Bach: Sonatas & Partitas for Solo Violin",
+    "year": 1975,
+    "genres": [
+     "classical"
+    ],
+    "composer": "J.S. Bach"
+   },
+   {
+    "album": "Mendelssohn: Violin Concerto",
+    "year": 1961,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mendelssohn"
+   },
+   {
+    "album": "Paganiniana: Violin Recital",
+    "year": 1975,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Paganiniana: Violin Recital",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "盤名裡的〈Paganiniana〉，是拉琴的這個人自己寫的。Discogs 10692925 的曲目表補齊了作曲者：「Sonata in A major」是 Geminiani、〈Il pleut dans la ville〉是 Kodály，兩首都經他改編。十五軌的重心壓在巴哈 BWV 1004 的 Ciaccona，一軌 14 分 02 秒，後段五首小品加起來只有 1060 秒。曲目主體錄於 1975 年 11 月慕尼黑的 Alter Herkulessaal。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3c0e8c89-3da9-4f86-b21c-05a408edc80b",
+     "https://api.discogs.com/releases/10692925",
+     "https://api.discogs.com/releases/4910100",
+     "https://api.discogs.com/releases/5934728",
+     "https://musicbrainz.org/release/862bbed6-b3ba-460e-b35a-fc148e0a4f10",
+     "https://itunes.apple.com/lookup?id=41714874&entity=song&limit=200&country=gb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "neeme järvi",
+  "name": "Neeme Järvi",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1984,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "William Grant Still: Afro-American Symphony",
+    "year": 1993,
+    "genres": [
+     "classical"
+    ],
+    "composer": "William Grant Still"
+   },
+   {
+    "album": "Stenhammar: Symphony no. 2",
+    "year": 1984,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Stenhammar"
+   },
+   {
+    "album": "Glazunov: Symphonies",
+    "year": 1986,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Glazunov"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "neville marriner",
+  "name": "Neville Marriner",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1980,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Bach: Brandenburg Concertos",
+    "year": 1981,
+    "genres": [
+     "classical"
+    ],
+    "composer": "J.S. Bach"
+   },
+   {
+    "album": "Handel: Water Music",
+    "year": 1980,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Handel"
+   },
+   {
+    "album": "Mozart: Gran Partita K. 361",
+    "year": 1984,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48a-d",
+    "album": "Mozart: Gran Partita K. 361",
+    "facts": [
+     {
+      "f": "演出者是 Sir Neville Marriner 指揮的 Academy of St Martin in the Fields，管樂陣容包含單簧管 Antony Pay 與 Richard West、低音管 Felix Warnock 與 Graham Sheen、法國號 Timothy Brown、Julian Baker、Colin Horton 與 Nicholas Hill，低音提琴 Raymund Koster。",
+      "src": "https://www.discogs.com/release/6581803"
+     },
+     {
+      "f": "同一年 Marriner 指揮 Academy of St Martin in the Fields 錄製《阿瑪迪斯》電影原聲帶，原聲帶登上 Billboard 古典專輯榜第 1 名、Billboard 流行專輯榜第 56 名，累計銷量逾 650 萬張，並拿到 13 張金唱片。",
+      "src": "https://www.asmf.org/recordings/amadeus-soundtrack/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Mozart: Gran Partita K. 361",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "十三件管樂加一把低音提琴，Marriner 1984 年在倫敦把七個樂章錄完。兩支雙簧管、兩支單簧管、兩支巴塞管、兩支低音管與四支法國號，聲響全靠簧片與銅管層疊撐開。同年的電影《阿瑪迪斯》正是取第三樂章 Adagio 的雙簧管與單簧管進場，當成 Salieri 認清 Mozart 天分的關鍵場面；那部片的原聲帶也由 Marriner 指揮同一支 Academy of St Martin in the Fields 錄成，登上 Billboard 古典專輯榜第 1 名。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6581803",
+     "https://en.wikipedia.org/wiki/Serenade_No._10_(Mozart)",
+     "https://www.asmf.org/recordings/amadeus-soundtrack/",
+     "https://www.flyinginkpot.com/2000/01/inkpot90-classical-music-reviews-mozart-gran-partita-an-inktroduction-with-recommendations/",
+     "https://musicbrainz.org/release-group/c7cf5fec-99d1-3da3-99d1-655dde7dd184"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pablo casals",
+  "name": "Pablo Casals",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1936,
+   1953
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Bach: Cello Suites (1936-39)",
+    "year": 1950,
+    "genres": [
+     "classical"
+    ],
+    "composer": "J.S. Bach"
+   },
+   {
+    "album": "Song of the Birds",
+    "year": 1953,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dvořák: Cello Concerto / Bruch: Kol Nidrei",
+    "year": 1936,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c100-a",
+    "album": "Dvořák: Cello Concerto / Bruch: Kol Nidrei",
+    "facts": [
+     {
+      "f": "英文維基〈Pablo Casals〉的唱片清單把這張黑膠上的兩首曲子分開列成**兩次不同的錄音、不同的樂團與指揮**：「**1936: Boccherini: Cello Concerto in B-flat; and Bruch: Kol Nidrei – London Symphony conducted by Landon Ronald**」與「**1937: Dvořák: Cello Concerto – Czech Philharmonic conducted by George Szell**」。",
+      "src": "https://en.wikipedia.org/wiki/Pablo_Casals"
+     },
+     {
+      "f": "同一條目：Casals 1876 年 12 月 29 日生、1973 年 10 月 22 日歿；1939 年共和政府敗於佛朗哥後他自我流亡，發誓民主不恢復就不回西班牙，1939–1956 年住在法國 Prades、1956 年起住波多黎各直到過世；1950 年他在 Prades 為巴哈逝世兩百週年的音樂節重新出山，條件是收入全數捐給鄰近 Perpignan 的難民醫院。",
+      "src": "https://en.wikipedia.org/wiki/Pablo_Casals"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a2",
+    "album": "Dvořák: Cello Concerto / Bruch: Kol Nidrei",
+    "facts": [
+     {
+      "f": "英文維基〈Pablo Casals〉的唱片清單把這張黑膠上的兩首曲子分開列成**兩次不同的錄音、不同的樂團與指揮**：「**1936: Boccherini: Cello Concerto in B-flat; and Bruch: Kol Nidrei – London Symphony conducted by Landon Ronald**」與「**1937: Dvořák: Cello Concerto – Czech Philharmonic conducted by George Szell**」。",
+      "src": "https://en.wikipedia.org/wiki/Pablo_Casals"
+     },
+     {
+      "f": "同一條目：Casals 1876 年 12 月 29 日生、1973 年 10 月 22 日歿；1939 年共和政府敗於佛朗哥後他自我流亡，發誓民主不恢復就不回西班牙，1939–1956 年住在法國 Prades、1956 年起住波多黎各直到過世；1950 年他在 Prades 為巴哈逝世兩百週年的音樂節重新出山，條件是收入全數捐給鄰近 Perpignan 的難民醫院。",
+      "src": "https://en.wikipedia.org/wiki/Pablo_Casals"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dvořák: Cello Concerto / Bruch: Kol Nidrei",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "他發過誓：西班牙的民主不恢復，他就不回去。英文維基記，1939 年共和政府敗於佛朗哥之後他自我流亡，先住法國 Prades，1956 年起移居波多黎各。碟上兩首都是那之前的錄音，維基的唱片清單把它們分開列：德弗札克大提琴協奏曲是 1937 年，Szell 指揮捷克愛樂；〈Kol Nidrei〉是 1936 年，Landon Ronald 指揮倫敦交響。原盤四軌，A 面是協奏曲的頭兩個樂章，B 面第三樂章再接〈Kol Nidrei〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a1a91158-3066-4d45-ab67-184277274de1",
+     "https://musicbrainz.org/release/107e7df6-992a-4fda-b837-bef044b874e9",
+     "https://en.wikipedia.org/wiki/Pablo_Casals",
+     "https://music.apple.com/gb/album/696818767",
+     "https://music.apple.com/gb/album/510052412"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pauline oliveros",
+  "name": "Pauline Oliveros",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1982,
+   1998
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ghostdance",
+    "year": 1998,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Deep Listening",
+    "year": 1989,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Accordion & Voice",
+    "year": 1982,
+    "genres": [
+     "classical",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c51d-a",
+    "album": "Accordion & Voice",
+    "facts": [
+     {
+      "f": "這是 Pauline Oliveros 以演奏者身分掛名的第一張獨奏唱片；她九歲時從身為鋼琴家的母親手上拿到手風琴，之後又學過小提琴、鋼琴、低音號與法國號，直到這張才把手風琴放到唱片正中央。",
+      "src": "https://en.wikipedia.org/wiki/Pauline_Oliveros"
+     },
+     {
+      "f": "她 1960 年代是舊金山磁帶音樂中心（San Francisco Tape Music Center）的創始成員之一，該中心遷入 Mills College 後由她出任第一任主任；1981 年她辭掉加州大學聖地牙哥分校的終身教職，搬到紐約州北部當獨立作曲家，這張正是那之後的錄音。",
+      "src": "https://en.wikipedia.org/wiki/Pauline_Oliveros"
+     },
+     {
+      "f": "唱片內頁註明兩首曲子的調律是特別處理過的微分音調律，由紐約州 Mount Tremper 的 M T Music 負責；她說這份錄音來自 Mount Tremper 的禪修中心，要人「聽進一個音的深處」，讓聲音在身體、心智、樂器與演出空間裡留下來共振。",
+      "src": "https://importantrecords.com/products/imprec140"
+     },
+     {
+      "f": "「deep listening（深度聆聽）」這個詞要到 1988 年才出現——那年她下到華盛頓州 Port Townsend 一座深約 4.3 公尺的地下蓄水池錄音，之後才提出這個概念，並與 Stuart Dempster、Panaiotis 組成 Deep Listening Band。",
+      "src": "https://en.wikipedia.org/wiki/Pauline_Oliveros"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Accordion & Voice",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "整首曲子的演奏指示只有一句：持續一個音，直到不想改變它的念頭消失。那是〈Horse Sings From Cloud〉，整張唱片只有兩首長曲，都用特別處理過的微分音調律，1982 年由紐約的 Lovely Music 發行。前一年 Pauline Oliveros 剛辭掉加州大學聖地牙哥分校的終身教職，搬到紐約州北部當獨立作曲家，這是那之後的錄音，也是她以演奏者身分掛名的第一張獨奏唱片。deep listening 一詞要到 1988 年才提出，這張是那套美學成形之前的前身。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a7da3f6e-0d69-4b8f-9e02-3e8dfe202320",
+     "https://en.wikipedia.org/wiki/Pauline_Oliveros",
+     "https://importantrecords.com/products/imprec140",
+     "https://www.allaboutjazz.com/accordion-and-voice-pauline-oliveros-important-records-review-by-karl-ackermann"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "philippe herreweghe",
+  "name": "Philippe Herreweghe",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1987,
+   2001
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Bach: St. John Passion",
+    "year": 2001,
+    "genres": [
+     "classical"
+    ],
+    "composer": "J.S. Bach"
+   },
+   {
+    "album": "Schütz: Musikalische Exequien",
+    "year": 1987,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Schütz"
+   },
+   {
+    "album": "Lassus: Lagrime di San Pietro",
+    "year": 1993,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48b-a",
+    "album": "Lassus: Lagrime di San Pietro",
+    "facts": [
+     {
+      "f": "1993 年 6 月錄音，1994 年由 Harmonia Mundi 發行，編號 HMC 901483，演出者為 Ensemble vocal européen，Philippe Herreweghe 指揮。",
+      "src": "https://www.prestomusic.com/classical/products/7941803--lassus-lagrime-di-san-pietro"
+     },
+     {
+      "f": "Orlande de Lassus 於 1594 年完成《Lagrime di San Pietro》，題獻給教宗 Clement VIII，題獻日期是 1594 年 5 月 24 日，距他辭世只有三週。",
+      "src": "https://en.wikipedia.org/wiki/Lagrime_di_San_Pietro"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Lassus: Lagrime di San Pietro",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "八個教會調式，Lassus 只用了七個——刻意留下的那個缺口就是聖彼得。音樂學者 David Crook 認為第八調式的缺席呼應聖彼得的處境，象徵一切不完美之物。全作是二十首七聲部精神牧歌加一首收尾經文歌，歌詞取自 Luigi Tansillo 寫聖彼得否認基督後的悔恨，七個聲部對應聖母七苦，二十一首等於七乘三。Lassus 1594 年 5 月 24 日把它題獻給教宗，三週後辭世；1993 年 6 月 Herreweghe 以一人一聲部錄下全作。",
+    "sourceUrls": [
+     "https://www.prestomusic.com/classical/products/7941803--lassus-lagrime-di-san-pietro",
+     "https://www.classical-music.com/reviews/lassus-1/",
+     "https://en.wikipedia.org/wiki/Lagrime_di_San_Pietro",
+     "https://musicbrainz.org/release-group/c6f81735-8b82-3bf2-a203-7eeb2072faaf"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "quartetto italiano",
+  "name": "Quartetto Italiano",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1966,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Beethoven: Complete String Quartets",
+    "year": 1975,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Beethoven"
+   },
+   {
+    "album": "Debussy: String Quartet / Ravel: String Quartet",
+    "year": 1966,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Schubert: String Quartet op. 161 D 887",
+    "year": 1977,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 4,
+   "facts": 12,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c100-a",
+    "album": "Debussy: String Quartet / Ravel: String Quartet",
+    "facts": [
+     {
+      "f": "英文維基〈Quartetto Italiano〉記：這個四重奏 1945 年在雷焦艾米利亞成立，首演在 1945 年 11 月 12 日的 Carpi、當時四人都才二十出頭，原名 **Nuovo Quartetto Italiano**（為了與二十世紀初小提琴家 Remigio Prìncipe 創立的另一個「Quartetto Italiano」區別），**1951 年才把「Nuovo」拿掉**；1980 年解散。成員是 Paolo Borciani（第一小提琴、創辦人）、Elisa Pegreffi（第二小提琴）、Lionello Forzanti（中提琴，1945-47）→ Piero Farulli（1947-77）→ Dino Asciolla（1977-80）、Franco Rossi（大提琴）。",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano"
+     },
+     {
+      "f": "同一條目記：1951 年 11 月 5 日《紐約先驅論壇報》上，作曲家兼樂評 **Virgil Thomson 稱他們是「The finest string quartet, unquestionably, that our century has known.」**；1953 年他們把錄音計畫轉到 Columbia，同年在美加演了 59 場；**1956 年錄的德布西四重奏被 Robert Kemp 在《世界報》（1956 年 8 月 9 日）形容為「miraculous」**。1967 至 1975 年間他們錄下貝多芬弦樂四重奏全集。**1977 年 NASA 發射的兩具航海家探測器所攜帶的金唱片上，其中一張圖片就是 Quartetto Italiano 的照片。**",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a",
+    "album": "Schubert: String Quartet op. 161 D 887",
+    "facts": [
+     {
+      "f": "Discogs release 1807138（Philips Classics **Duo** 446 163-2，1995，《Schubert: The Last Four Quartets》，2 CD／Compilation／Remastered）的說明欄逐字寫：**「Recorded Switzerland, 12/1965 (1-1 to 1-4, 2-5); 1/1976 (1-5 to 1-8); **7/1977 (2-1 to 2-4)**」** 與「(P) 1966, 1977, **1978**」。該套的曲序是：第一片 D. 810《死與少女》＋D. 804《羅莎蒙德》，第二片 **D. 887**＋D. 703《四重奏樂章》——也就是 **D. 887 錄於 1977 年 7 月的瑞士，其 ℗ 年份是 1978**。",
+      "src": "https://api.discogs.com/releases/1807138"
+     },
+     {
+      "f": "英文維基〈String Quartet No. 15 (Schubert)〉記：這是舒伯特 **1826 年 6 月寫的最後一首弦樂四重奏**，**1851 年才以作品編號 161 遺作出版**（另一處記維也納的 Diabelli 最遲在 1852 年出版）。同條目記「The length of performance of the quartet is about 50 minutes, **if all repeats are observed**」，並舉 Ébène Quartet 的一次演出長達 55 分鐘。條目另引《留聲機》雜誌的 Stephen Johnson：他稱這首是舒伯特最好的弦樂四重奏，並推測它比前兩首少被演出**不是因為品質較低，而是因為它比較不容易親近**。",
+      "src": "https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert)"
+     },
+     {
+      "f": "Apple Music collectionId 1452616283「Schubert: String Quartet, Op. 161, D. 887」（Quartetto Italiano，「This Compilation ℗ 2012 Universal International Music B.V.」，**8 軌**全帶 previewUrl，gb 等店面）：**前四軌是 D. 887**，逐軌 1372.1／813.3／441.2／680.2 秒，與 MB 的 1377800／817240／445280／686173 毫秒逐軌相差 0.4% 到 0.9%（都比 MB 短 4 到 6 秒）；**後四軌是貝多芬第十六號四重奏 op. 135**（382.1／239.8／431.0／464.7 秒），**不屬於本盤**。",
+      "src": "https://itunes.apple.com/lookup?id=1452616283&entity=song&limit=200&country=gb"
+     },
+     {
+      "f": "英文維基〈Quartetto Italiano〉記：**1977 年 12 月 Piero Farulli 因病被迫退出四重奏**、由 Dino Asciolla 接替（Farulli 1947 年入團，做了三十年中提琴）；同條目記「The completion of their recording work in Schubert did not occur until **1977**」，並記他們晚期的音樂會特別集中在貝多芬與舒伯特、常常一場只排兩首曲子（兩位作曲家各一首代表作）。1980 年在一次以色列巡演後決定結束。",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a1",
+    "album": "Debussy: String Quartet / Ravel: String Quartet",
+    "facts": [
+     {
+      "f": "英文維基〈Quartetto Italiano〉記：這個四重奏 1945 年在雷焦艾米利亞成立，首演在 1945 年 11 月 12 日的 Carpi、當時四人都才二十出頭，原名 **Nuovo Quartetto Italiano**（為了與二十世紀初小提琴家 Remigio Prìncipe 創立的另一個「Quartetto Italiano」區別），**1951 年才把「Nuovo」拿掉**；1980 年解散。成員是 Paolo Borciani（第一小提琴、創辦人）、Elisa Pegreffi（第二小提琴）、Lionello Forzanti（中提琴，1945-47）→ Piero Farulli（1947-77）→ Dino Asciolla（1977-80）、Franco Rossi（大提琴）。",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano"
+     },
+     {
+      "f": "同一條目記：1951 年 11 月 5 日《紐約先驅論壇報》上，作曲家兼樂評 **Virgil Thomson 稱他們是「The finest string quartet, unquestionably, that our century has known.」**；1953 年他們把錄音計畫轉到 Columbia，同年在美加演了 59 場；**1956 年錄的德布西四重奏被 Robert Kemp 在《世界報》（1956 年 8 月 9 日）形容為「miraculous」**。1967 至 1975 年間他們錄下貝多芬弦樂四重奏全集。**1977 年 NASA 發射的兩具航海家探測器所攜帶的金唱片上，其中一張圖片就是 Quartetto Italiano 的照片。**",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c100-a1",
+    "album": "Schubert: String Quartet op. 161 D 887",
+    "facts": [
+     {
+      "f": "Discogs release 1807138（Philips Classics **Duo** 446 163-2，1995，《Schubert: The Last Four Quartets》，2 CD／Compilation／Remastered）的說明欄逐字寫：**「Recorded Switzerland, 12/1965 (1-1 to 1-4, 2-5); 1/1976 (1-5 to 1-8); **7/1977 (2-1 to 2-4)**」** 與「(P) 1966, 1977, **1978**」。該套的曲序是：第一片 D. 810《死與少女》＋D. 804《羅莎蒙德》，第二片 **D. 887**＋D. 703《四重奏樂章》——也就是 **D. 887 錄於 1977 年 7 月的瑞士，其 ℗ 年份是 1978**。",
+      "src": "https://api.discogs.com/releases/1807138"
+     },
+     {
+      "f": "英文維基〈String Quartet No. 15 (Schubert)〉記：這是舒伯特 **1826 年 6 月寫的最後一首弦樂四重奏**，**1851 年才以作品編號 161 遺作出版**（另一處記維也納的 Diabelli 最遲在 1852 年出版）。同條目記「The length of performance of the quartet is about 50 minutes, **if all repeats are observed**」，並舉 Ébène Quartet 的一次演出長達 55 分鐘。條目另引《留聲機》雜誌的 Stephen Johnson：他稱這首是舒伯特最好的弦樂四重奏，並推測它比前兩首少被演出**不是因為品質較低，而是因為它比較不容易親近**。",
+      "src": "https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert)"
+     },
+     {
+      "f": "Apple Music collectionId 1452616283「Schubert: String Quartet, Op. 161, D. 887」（Quartetto Italiano，「This Compilation ℗ 2012 Universal International Music B.V.」，**8 軌**全帶 previewUrl，gb 等店面）：**前四軌是 D. 887**，逐軌 1372.1／813.3／441.2／680.2 秒，與 MB 的 1377800／817240／445280／686173 毫秒逐軌相差 0.4% 到 0.9%（都比 MB 短 4 到 6 秒）；**後四軌是貝多芬第十六號四重奏 op. 135**（382.1／239.8／431.0／464.7 秒），**不屬於本盤**。",
+      "src": "https://itunes.apple.com/lookup?id=1452616283&entity=song&limit=200&country=gb"
+     },
+     {
+      "f": "英文維基〈Quartetto Italiano〉記：**1977 年 12 月 Piero Farulli 因病被迫退出四重奏**、由 Dino Asciolla 接替（Farulli 1947 年入團，做了三十年中提琴）；同條目記「The completion of their recording work in Schubert did not occur until **1977**」，並記他們晚期的音樂會特別集中在貝多芬與舒伯特、常常一場只排兩首曲子（兩位作曲家各一首代表作）。1980 年在一次以色列巡演後決定結束。",
+      "src": "https://en.wikipedia.org/wiki/Quartetto_Italiano"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Debussy: String Quartet / Ravel: String Quartet",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "1977 年送出太陽系的那張金唱片上，有一張他們的照片。英文維基記那是 NASA 兩具航海家探測器所攜帶的唱片。這個團 1945 年在雷焦艾米利亞成立，原名 Nuovo Quartetto Italiano，1951 年才把「Nuovo」拿掉；同年 11 月 5 日，Virgil Thomson 在《紐約先驅論壇報》上寫下「The finest string quartet, unquestionably, that our century has known」。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/7ca93f19-ae80-3782-94e3-822d18d960c8",
+     "https://api.discogs.com/releases/3590072",
+     "https://itunes.apple.com/lookup?id=1452197164&entity=song&limit=200&country=gb",
+     "https://en.wikipedia.org/wiki/Quartetto_Italiano"
+    ]
+   },
+   {
+    "album": "Schubert: String Quartet op. 161 D 887",
+    "manifest": "onboarding-manifest-c100-20260910.json",
+    "desc": "這首錄於 1977 年 7 月；同年 12 月，拉中提琴的那位因病離團。英文維基記 Piero Farulli 1947 年入團、拉了三十年中提琴，1977 年 12 月因病退出。錄音日期來自 Discogs 1807138 的說明欄：「Recorded Switzerland ... 7/1977」。這首是舒伯特 1826 年 6 月寫的最後一首弦樂四重奏，1851 年才以作品編號 161 遺作出版。全曲 55 分 27 秒，第一樂章一段就 22 分 58 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bd835f1f-feb3-4204-8145-240cd729be87",
+     "https://api.discogs.com/releases/1807138",
+     "https://api.discogs.com/releases/10255289",
+     "https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert)",
+     "https://itunes.apple.com/lookup?id=1452616283&entity=song&limit=200&country=gb",
+     "https://en.wikipedia.org/wiki/Quartetto_Italiano"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rafael kubelík",
+  "name": "Rafael Kubelík",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1954,
+   1967
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Smetana: Má vlast",
+    "year": 1959,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Smetana"
+   },
+   {
+    "album": "Mahler: Symphony no. 1",
+    "year": 1954,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mahler"
+   },
+   {
+    "album": "Wagner: Die Meistersinger von Nürnberg",
+    "year": 1967,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48b-d",
+    "album": "Wagner: Die Meistersinger von Nürnberg",
+    "facts": [
+     {
+      "f": "錄音日期是 1967 年 10 月 1 至 8 日，地點為慕尼黑的 Herkulessaal，由 Rafael Kubelík 指揮 Chor und Orchester des Bayerischen Rundfunks，錄製時沒有觀眾在場。",
+      "src": "https://wagnerdisco.net/ame/die-meistersinger-nurnberg/1960-1969/1967-kubelik-munchen/"
+     },
+     {
+      "f": "這套錄音由 Deutsche Grammophon 製作，卻長期封存未發行，直到 1990 年代才陸續由 Calig、Myto 與 Arts 這幾家小廠發行。",
+      "src": "https://en.wikipedia.org/wiki/Die_Meistersinger_von_N%C3%BCrnberg_discography"
+     },
+     {
+      "f": "華格納錄音導聆網站 Superconductor 指出，DG 把這份錄音鎖在庫房的原因之一，是要留位置給 Dietrich Fischer-Dieskau 一生想唱錄 Hans Sachs 的心願，該計畫最後落在 1976 年 Eugen Jochum 指揮的 DG 版。",
+      "src": "https://super-conductor.blogspot.com/2016/07/superconductor-audio-guide-die.html"
+     },
+     {
+      "f": "Gramophone 稱這份錄音「大概是立體聲時代整體上最令人滿意的《紐倫堡的名歌手》」，並讚 Kubelík 的詮釋不使勁而充滿情感、Stewart 在唱片上最成功的一次演出。",
+      "src": "https://wagnerdisco.net/ame/die-meistersinger-nurnberg/1960-1969/1967-kubelik-munchen/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Wagner: Die Meistersinger von Nürnberg",
+    "manifest": "onboarding-manifest-c48-20260831.json",
+    "desc": "慕尼黑的音樂廳裡一個觀眾也沒有，錄完的母帶進了庫房二十多年。1967 年 10 月，Kubelík 在 Herkulessaal 指揮巴伐利亞廣播合唱團與交響樂團錄完這部《紐倫堡的名歌手》，Deutsche Grammophon 製作，卻遲遲不發行；一種說法是要替 Fischer-Dieskau 一生想唱錄的 Hans Sachs 留位置。母帶到 1990 年代才由 Calig、Myto 與 Arts 幾家小廠陸續流出，後世樂評把它視為立體聲時代最令人滿意的一份。",
+    "sourceUrls": [
+     "https://wagnerdisco.net/ame/die-meistersinger-nurnberg/1960-1969/1967-kubelik-munchen/",
+     "https://en.wikipedia.org/wiki/Die_Meistersinger_von_N%C3%BCrnberg_discography",
+     "https://super-conductor.blogspot.com/2016/07/superconductor-audio-guide-die.html",
+     "https://musicbrainz.org/release-group/803732c5-f1fd-4f72-a4fc-6716ffd51538"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rodgers & hammerstein",
+  "name": "Rodgers & Hammerstein",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "classical",
+  "yearRange": [
+   1943,
+   1951
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The King and I",
+    "year": 1951,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Oklahoma!",
+    "year": 1943,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "South Pacific",
+    "year": 1949,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Oklahoma!",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "六張 78 轉唱片裝成一套，1943 年的 Decca 把整齣戲搬進了唱片行。這套錄音發行於 1943 年 12 月 1 日，由原班卡司與原劇院管弦樂團演出，Robert Russell Bennett 編曲、Jay Blackton 指揮。在此之前，把一齣舞台劇的主要歌曲交給原班人馬灌成整套，在美國只有零星嘗試，這套是把構想做成完整商品的先例；其後二十年間，卡司與電影原聲帶專輯一度主導唱片銷售榜。78 轉套裝賣出逾百萬份，發行以來從未絕版。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Oklahoma!_(original_Broadway_cast_recording)",
+     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OKLAHOMA!.pdf",
+     "https://musicbrainz.org/release-group/d6603675-74b0-4a50-9fa8-3cb9e77c476f"
+    ]
+   },
+   {
+    "album": "South Pacific",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "普立茲戲劇獎的得主欄位，1950 年第一次寫上了作曲家的名字。委員會那年把 Richard Rodgers 與兩位編劇並列為共同得主。這張原版百老匯卡司錄音早一年就完成，1949 年 4 月錄於紐約 Columbia 第 30 街錄音室。劇中〈You've Got to Be Carefully Taught〉直言種族偏見是後天教出來的，在美國南方引發強烈爭議，面對刪歌壓力，兩位創作者始終不肯讓步。專輯在 Billboard 暢銷專輯榜合計盤踞冠軍 69 週。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/South_Pacific_(original_Broadway_cast_recording)",
+     "https://www.theatermania.com/news/south-pacific-captures-1-spot-on-billboard-cast-album-chart_14138/",
+     "https://www.pulitzer.org/winners/richard-rodgers-oscar-hammerstein-ii-and-joshua-logan",
+     "https://en.wikipedia.org/wiki/You%27ve_Got_to_Be_Carefully_Taught",
+     "https://en.wikipedia.org/wiki/National_Recording_Registry",
+     "https://en.wikipedia.org/wiki/South_Pacific_(musical)",
+     "https://musicbrainz.org/release-group/64350a66-c779-3549-b292-7d0a8e18fdae"
+    ]
+   },
+   {
+    "album": "The King and I",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "Yul Brynner 演暹羅王演了 4625 場，最後一次謝幕是 1985 年。那個數字橫跨 1951 年的原版百老匯製作與其後數十年的重演與巡演。起點是 Decca 於 1951 年 5 月 28 日發行的原版卡司錄音，由 Gertrude Lawrence 與他領銜。這個角色替 Brynner 換來兩座東尼獎：1952 年原版製作的最佳音樂劇男主角，以及 1985 年為累計場次頒發的特別獎。Lawrence 也拿下同屆最佳女主角，同年 9 月 6 日辭世。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_King_and_I_(original_cast_recording)",
+     "https://www.broadwayworld.com/article/VIDEO-On-This-Day-September-13--Yul-Brynner-Plays-4000-Performances-in-THE-KING-AND-I-20170913",
+     "https://en.wikipedia.org/wiki/Yul_Brynner",
+     "https://www.findagrave.com/memorial/2481/gertrude-lawrence",
+     "https://musicbrainz.org/release-group/14df8b37-cd35-3374-a986-7d34627f7ede"
+    ]
+   }
+  ]
+ }
+]
