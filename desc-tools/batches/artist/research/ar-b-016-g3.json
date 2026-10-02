@@ -706,5 +706,64 @@
   "status": "full",
   "notes": "同名檢查：poolAlbums 三張（Табу 1982、Радио Африка 1983、Равноденствие 1988）皆為列寧格勒的 Аквариум（Борис Гребенщиков 的樂團），無混卡。搜尋 7 次：WebSearch 1、成功開頁 6（en 維基 Aquarium (band)、ru 維基 Аквариум、Lenta、Знание.Вики（只回搜尋結果頁，無內容）、reproduktor、en 維基 Boris Grebenshchikov）；無失敗請求。非獨立：en／ru／BG 三份維基同站；Lenta 與 reproduktor 為獨立俄文媒體。人名依上線簡介慣例用西里爾原文（專名照寫）。未收（單源）：樂團名稱由來（ru 維基稱 Гребенщиков 否認啤酒吧說，單源）；1973 年 3 月 22 日在 Zelenogorsk 的首場演出（ru 維基單源）；Гребенщиков 父親是海事學院工程師、母親是律師、1964 年聽到 The Beatles、四年後學吉他（Lenta 單源）；他 1983 年說『搖滾已死、我還活著』（Lenta 單源，與上線簡介〈Рок-н-ролл мёртв〉一致）；歌詞被 Пелевин、Стругацкие 等作家引用（ru 維基單源）；Лента 稱他開創了蘇聯的『精緻龐克搖滾』與新浪漫主義（單源）；《День Серебра》1984 被許多人視為巔峰（reproduktor 單源，評價性質）；BG 1989 年《Radio Silence》Dave Stewart 製作、Billboard Modern Rock 第 7 名（BG 維基單源）；與 Кино、Машина времени 同屬列寧格勒搖滾圈、和 Зоопарк 合作（reproduktor 單源，影響描述含糊）；對 Кино 或 Виктор Цой 的直接影響說法沒有查到可核來源，不寫。成員 Гребенщиков 2022 年後的政治處境等後續生平與作品無關，不收。上線簡介對照：Радио Африка、Табу、Равноденствие 的錄音細節本層未查，無相反證據；Равноденствие 簡介稱『第一張正式壓成黑膠的專輯，1988 年 5 月發行』是首次類說法，本層沒有來源可核，請店主留意；因無相反證據，pubIssues 為空。",
   "pubIssues": []
+ },
+ {
+  "key": "wolf alice",
+  "name": "Wolf Alice",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Wolf Alice 2010 年在倫敦（北倫敦）成形，起初是主唱 Ellie Rowsell 與吉他手 Joff Oddie 的原聲二人組，之後補進鼓手 Joel Amey 與貝斯手 Theo Ellis，成為四人吉他樂團。",
+      "src": "https://en.wikipedia.org/wiki/Wolf_Alice",
+      "src2": "https://www.drownedinsound.org/archive-discover-wolf-alice-4148836/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團的聲音橫跨 alternative rock、indie rock、dream pop、shoegaze 與 folk；早期被貼上 grunge 復興的標籤，團員自己則說他們從來不只愛一種音樂，風格多樣是自然長出來的。",
+      "src": "https://en.wikipedia.org/wiki/Wolf_Alice",
+      "src2": "https://www.drownedinsound.org/archive-discover-wolf-alice-4148836/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2018 年 9 月 20 日，Wolf Alice 以第二張專輯《Visions of a Life》（2017 年）拿下當年的 Mercury Prize（得獎），擊敗包括 Arctic Monkeys、King Krule 與 Florence + The Machine 在內的入圍專輯。",
+      "src": "https://www.irishtimes.com/culture/music/mercury-prize-2018-wolf-alice-win-for-visions-of-a-life-1.3636371",
+      "src2": "https://www.thefader.com/2018/09/20/mercury-prize-winner-wolf-alice-visions-of-a-life",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2018 年以《Visions of a Life》獲 Mercury Prize（得獎）。",
+    "src": "https://www.musicweek.com/talent/read/wolf-alice-win-2018-mercury-prize/073889",
+    "src2": "https://en.wikipedia.org/wiki/Wolf_Alice",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "DiS 稱首支單曲是 2012 年的〈Leaving You〉，搜尋摘要另稱首支單曲〈Fluffy〉2013 年；兩處不一致，facts 不寫首支單曲。"
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫無研究稿與上線簡介，從零查。同名檢查：poolAlbums 三張（My Love Is Cool 2015、Visions of a Life 2017、Blue Weekend 2021）皆為倫敦的 Wolf Alice，無混卡。搜尋 8 次：WebSearch 3、成功開頁 5（en 維基 Wolf Alice、Irish Times、Fader、Music Week、Drowned in Sound）；失敗：Billboard 307 轉址未取得、Drowned in Sound 舊網址 302 轉址（轉址後網址計入第 8 次）。非獨立：Irish Times、Fader、Music Week 是三家獨立媒體，都報導同一場頒獎，彼此獨立。legacy 只有 Mercury 一格有兩源，故整位 thin（身世與聲音僅兩源簡述）。未收（單源或只看搜尋摘要）：團名取自 Angela Carter 短篇（維基單源，搜尋摘要另有，內文未讀）；首場演出 2010 年 12 月在 Highbury Garage（搜尋摘要）；《Blue Weekend》2021 年 6 月發行、樂團第一張英國榜冠軍專輯，並入圍 2021 年 Mercury Prize（維基與搜尋摘要，內文只讀維基）；2022 年 2 月 8 日 Brit Awards 英國年度樂團（Group of the Year／Best Group，得獎；維基單源，搜尋摘要有 NME、Radio X 等多家報導，但未開頁，建議寫作層可寫、請主線補開一頁複核）；2016 年葛萊美最佳搖滾表演提名（〈Moaning Lisa Smile〉，入圍非得獎，維基單源）；Irish Times 稱她們是 2011 年 PJ Harvey 之後第一個女主唱團體得獎（單源，第一類宣稱，未核）；Irish Times 稱 Nadine Shah 是賭盤熱門；Music Week 稱得獎時專輯累計 57214 張；Fader 引 Amey 說吉他樂團仍活躍；2015 年入圍 BBC Sound of 2015、與 Manic Street Preachers 同台（DiS 單源）；影響來源 Kings of Leon、Radiohead、Nick Cave、The Beatles、Blur、Courtney Love（維基單源，自述性質）；《The Clearing》2025 年也登英國榜冠軍（維基單源，近況）。Mercury 專輯入圍者數：Fader 寫擊敗 11 位其他入圍者，故共 12 張。",
+  "pubIssues": []
  }
 ]

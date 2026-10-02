@@ -191,3 +191,4 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 ### ar-b-016（rock，40 位）
 - 補洞特注：同名常見照 poolAlbums 確認（X、Traffic、toe、Thursday、Thrice、UFO、夢幻、Third Quadrant、White Heaven、Wipers、Ulver）；台灣團金曲獎主詞分清；五月天、U2 不寫累計數字；Hendrix、Цой、hide、TAIJI 只寫年份。完成後比照 #19 開 PR 併入 main。
 - g1 交件（QA 本組 0）。thin：Fabulous Thunderbirds、Gaslight Anthem、New Pornographers、Stranglers、Third Quadrant（貢獻／地位 none）。The xx、Third Quadrant 失敗請求 5 次超限，未取得內容，照收。Jimi Hendrix 1970 年過世為通行事實，主線核可寫年份（不寫死因）。Gaslight Anthem 與 Springsteen 同台場合兩說，不寫。
+- g3 交件（QA 本組 0）。thin：White Heaven、Within Temptation、Wolf Alice。Wolf Alice 2022 年 Brit Awards 最佳英國團體由主線 WebSearch 核實（NME、Radio X）→ 可寫。Z.Z. Hill 藍調名人堂單源、Yoko Ono 初識 Lennon 年份兩說，不寫。Аквариум《Равноденствие》「第一張正式黑膠」為首次類說法，列本機待核。
