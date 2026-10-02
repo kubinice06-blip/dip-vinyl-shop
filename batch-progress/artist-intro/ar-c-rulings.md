@@ -18,3 +18,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - w2 審稿無修正。Buena Vista Social Club 2022 年入選國家錄音登錄經主線 WebSearch 核實（loc.gov、ASCAP）。Charles Gayle 274 放寬照准。Candido「現代康加鼓演奏之父」以「被稱為」單源評語照准。Aznavour 引語具名 Dicale 與 Dylan。
 - **ar-c-001 上線**：40 位，reviewFixes 1。
 - g4 交件（QA 本組 0，四組齊）。thin：Irreversible Entanglements。Threadgill NEA 年、Garbarek 聖奧拉夫勳章年不寫；Nilovic 唱片張數與葛萊美說法不寫。pubIssues 2（Ivo Papasov《Orpheus Ascending》被捕原因寫成「土耳其裔身分」，實為羅姆人；Janko Nilovic《Soul Impressions》「十張唱片」兩源不一）→ 本機待核。w2（g3+g4）派出。
+- w1 審稿無修正。單源軟引用（Eddie Gale「被形容為」、Frank Lowe「據說」、Gabor Szabo「據他自述」）照准；Fletcher Henderson「與 Ellington 並列」、Evan Parker「歐洲自由即興關鍵人物」屬百科首段共識，照准。David Murray 葛萊美不寫。Gary Bartz 2024 NEA Jazz Master 照准。
