@@ -238,3 +238,6 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - 020 w1 審稿（1 處）：IU 刪 Gallup Korea 年度歌手民調「兩度第一」（民調排名比照榜單，且屬在世者累計）。Harry Styles「第一位單獨登上美國版 Vogue 封面的男性」有 NBC 獨立源，照准。
 - 020 w2 審稿無修正。江蕙 2024 年復出（10 月國慶晚會開唱）、Aqua 2026-05-18 宣布解散，皆經主線 WebSearch 核實（中時、自由；Euronews、Consequence）。大滝詠一 加主線事實後升 full，照准。
 - **ar-b-020 上線**：40 位，reviewFixes 1。
+
+### ar-b-021
+- g1 交件。thin：Collage、FKA twigs。Demi Lovato、Gal Costa 搜尋 9 次超限 1 次（該次已撤）。pubIssues 6（Collage《Collage》全女性說法、《Kadriko》《Käokiri》年份；Girls' Generation《Oh!》含銷量（簡介層不禁，不改）、《Gee》發行地；H.O.T.《We Hate All Kinds of Violence》含銷量排名（簡介層不禁，不改））→ 前三筆與《Gee》本機待核。
