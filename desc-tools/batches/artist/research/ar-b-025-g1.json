@@ -666,5 +666,69 @@
   "failedFetches": 0,
   "status": "full",
   "notes": "事實庫 research 一條（生平，單源英文維基，已作為 origin bank 條目；其中『1960 年代末受 Wendy Carlos 與 Robert Moog 啟發轉入電子音樂』與日文維基 1969 年遇《Switched-On Bach』一致）；published 兩張（展覧会の絵、Firebird）。同名檢查：卡池四張（Snowflakes Are Dancing、展覧会の絵、The Planets、Firebird）皆為冨田勲，無混卡。姓名照原文漢字『冨田勲』（上方『冨』為日文字形，保留）。\n搜尋：日文維基 API 全文（1）、WebSearch（2）、CISAC 訃告（3）、Consequence 訃告（4）、英文維基 API 全文（5）、Tiny Mix Tapes 訃告（6）、Synthtopia 訃告（7，僅確認過世與葬禮資訊，未取為 facts）。失敗請求 0。\n『非獨立』：J 與 E 為同站不同語版維基，常彼此參照；CISAC（著作權團體聯盟）、Consequence、Tiny Mix Tapes 為獨立來源。\n『第一位』類宣稱處理：『第一位被葛萊美提名的日本人』日文維基、CISAC、Consequence、英文維基開頭皆有，且均指《Snowflakes Are Dancing》，但本層未逐一查是否有反例，寫作層請用『被稱為』或『據多處報導』語氣；若不放心可降為 notes。\n單源未入 facts：(1) 日文維基稱他 4 歲起隨父親轉勤在青島、防府、北京長大，在北京天壇的回音壁聽到聲音是他音樂的原點；祖父起家業行醫，家族為醫生世家；(2) 日文維基稱他大二時合唱曲〈風車〉獲朝日新聞社與全日本合唱連盟比賽第 1 名，因而決意走作曲；(3) 日文維基稱把 Moog III 進口時被海關疑為軍用類比電腦，拿 Keith Emerson 的演奏照片證明是樂器，且沒有說明書、一度後悔買了『貴的鐵屑』；(4) 日文維基稱《月の光》（Snowflakes Are Dancing 的日本版名）母帶拿給日本各唱片公司都被拒，理由是『不是古典也不是流行、唱片行沒地方擺』，後來透過日本 RCA 的山本德源向紐約 RCA 總部牽線才簽約（人生故事類，單源，建議審稿時視需要補第二源）；(5) 日文維基稱 1975 年該專輯入選 NARM 1974 年度最佳古典唱片，《展覧会の絵》（1975 年 2 月）登上 Billboard 與 Cash Box 全美古典榜第 1、NARM 同獎項連兩年、並獲 1975 年日本唱片大賞企劃賞，《惑星》1978 年登上 Billboard 古典榜第 1，《Bermuda Triangle》與《大峡谷》各獲一次葛萊美提名（共三次提名）；(6) 日文維基稱 Francis Ford Coppola 欣賞《惑星》的立體音響，曾邀他為《地獄默示錄》配樂，因唱片公司專屬合約未成；(7) 英文維基稱《The Planets》發行時因 Gustav Holst 的女兒 Imogen Holst 拒絕授權引起爭議；(8) 日文維基稱 1979 年美國 Contemporary Keyboard 雜誌讀者票選為『最佳錄音室合成器演奏家』；(9) 日文維基與英文維基稱 2002 年《たそがれ清兵衛》獲 2003 年日本電影學院獎優秀音樂獎（日文維基另寫 2001 年《千年の恋 ひかる源氏物語》獲同獎，兩者不一致，未收）；(10) 英文維基稱 2007 年他編的 Debussy〈月光〉用在《Ocean's 13》。\n過世只收年份：2016 年 5 月 5 日，享年 84 歲（日文維基、英文維基、CISAC 一致）；不收死因與院所。\nera 那條為三個年份的並列，寫作層可拆開用。"
+ },
+ {
+  "key": "above & beyond",
+  "name": "Above & Beyond",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Above & Beyond 是英國倫敦的電子舞曲三人組 Jono Grant、Tony McGuinness 與芬蘭人 Paavo Siljamäki；Grant 與 Siljamäki 先成立 Anjunabeats 廠牌，McGuinness 2000 年因受邀合作 Chakra〈Home〉的混音加入，三人以 Above & Beyond 之名組團。",
+      "src": "https://en.wikipedia.org/wiki/Above_%26_Beyond_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Anjunabeats",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Anjunabeats 廠牌由 Grant 與 Siljamäki 創辦，Above & Beyond 經營至今；2005 年他們另設副廠牌 Anjunadeep，收納不屬於主廠牌 trance 路線的作品。",
+      "src": "https://en.wikipedia.org/wiki/Anjunabeats",
+      "src2": "https://www.miaminewtimes.com/music/above-and-beyond-we-want-our-set-to-be-more-than-just-a-drunken-night-out-7996532",
+      "from": "new"
+     },
+     {
+      "f": "他們主持每週廣播節目，先是《Trance Around the World》，2012 年起由《Group Therapy Radio》接替，節目也是旗下廠牌推新藝人的平台。",
+      "src": "https://en.wikipedia.org/wiki/Above_%26_Beyond_(band)",
+      "src2": "https://www.bandwagon.asia/artists/above-beyond",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們每年在一座大城市辦一場以《Group Therapy Radio》為名的巨型演出（ABGT）：2014 年在紐約 Madison Square Garden 辦第 100 集，2015 年在雪梨 Allphones Arena 辦第 150 集，兩場都賣完票。",
+      "src": "https://en.wikipedia.org/wiki/Above_%26_Beyond_(band)",
+      "src2": "https://www.miaminewtimes.com/music/above-and-beyond-we-want-our-set-to-be-more-than-just-a-drunken-night-out-7996532",
+      "from": "new"
+     },
+     {
+      "f": "他們兩度入圍葛萊美最佳舞曲錄音獎（Best Dance Recording）：第 58 屆（2016）〈We're All We Need〉（Zoë Johnston 演唱）與第 61 屆（2019）〈Northern Soul〉（Richard Bedford 演唱），皆入圍、未得獎。",
+      "src": "https://www.grammy.com/artists/above-beyond/19436/",
+      "src2": "https://en.wikipedia.org/wiki/Above_%26_Beyond_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Anjunabeats 的成立年：維基 Above & Beyond 條目寫 1999 年夏天（首張單曲〈Volume One〉）、維基 Anjunabeats 條目寫 2000 年（首張 12 吋〈Volume One〉）；兩者不一致，f 欄不寫廠牌成立年。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。同名檢查：卡池三張（Sirens of the Sea、Journey To ABGT250 (DJ Mix)、Group Therapy）皆為 Jono Grant／Tony McGuinness／Paavo Siljamäki 這個團，無混卡。注意 Journey To ABGT250 為 DJ mix 合輯（2017）、不是錄音室專輯（卡池性質由主線判斷，此層不列建議移除）。\n搜尋：維基主條 API（1）、WebSearch（2）、Miami New Times 2015 專訪（3）、Bandwagon 藝人頁（4）、WebSearch（5）、Grammy.com 藝人頁（6，WebFetch）、維基 Anjunabeats（7）。失敗請求 0。\n『非獨立』：W 與 AN 同站不同條目；Bandwagon 藝人頁內容疑似轉述維基舊版（寫節目為 Trance Around the World、稱 2012 年 DJ Magazine 第 8 名），視為弱獨立。Grammy.com 與 Miami New Times 為獨立來源。\nsound 第二條的 src2（Bandwagon）只證實《Trance Around the World》為每週節目，《Group Therapy Radio》2012 年接替與『推新藝人平台』出自維基主條；審稿時若要嚴格，可降為單源。\norigin 格偏薄、legacy 兩條偏事蹟，整體標 thin。\n單源未入 facts：(1) 維基稱 Grant 與 Siljamäki 在倫敦 Westminster 大學認識，McGuinness 當時是 Warner Music 行銷總監，經弟弟 Liam 得知 Grant 為 Yamaha 做的取樣庫而聯繫；(2) 維基稱團名取自一位也叫 Jono Grant 的美國勵志講師的口號，Grant 房間海報上有該句；(3) 維基稱他們的〈Home〉（Chakra）混音登上英國 club 榜第 1；(4) 維基稱 2002 年東京 DJ 首秀、現場 8000 人，與 Ferry Corsten、Tiësto 同台；(5) 維基稱 2009 年在 Virgin Galactic SpaceShipTwo 發表會演出；(6) 維基稱 2007 年底 Rio 海灘表演據稱約百萬人（『據稱』，且為人數類不收）；(7) Miami New Times：Jono Grant 自述 DJ set 要涵蓋多種舞曲風格、動態與情感、帶聽眾走一段旅程，旗下藝人含 Mat Zo、Andrew Bayer、Ilan Bluestone、Arty、Super8 & Tab、Kyau & Albert；(8) 維基稱 Tony McGuinness 說他們寫歌偏 acoustic，先寫成一首歌再把其中元素做成舞池版本（2014 年 Acoustic 專輯脈絡）；(9) 維基稱《Group Therapy》2011 年 iTunes 舞曲專輯榜第 1，DJ Magazine 與 Mixmag 的稱號、DJ Mag Top 100 名次、Billboard 評〈Sun & Moon〉等屬雜誌榜單或樂評，依規則不收；(10) 維基稱 Trance Around the World 每週聽眾達 3000 萬（30 million listeners in 35 countries，收聽規模數字，不收）；維基 Anjunabeats 條目稱廠牌名 Anjuna 取自印度果阿的海灘、2011 年起也發行 trance 味的 house（單源）。\nsound 第一條 src2（Miami New Times）只證實 Above & Beyond 經營 Anjunabeats，Anjunadeep 2005 年出自維基 Anjunabeats 條目（維基主條亦寫他們擁有 Anjunadeep）。\n專輯銷量、串流、DJ 排行名次依本批特注不寫。"
  }
 ]
