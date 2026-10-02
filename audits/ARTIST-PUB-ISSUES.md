@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 228 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 231 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -232,3 +232,6 @@
 | ar-b-030 | 陶喆 | I'm OK | 他以此拿下第十一屆金曲獎最佳唱片製作人獎 | 維基第 11 屆金曲獎頁與陶喆條目都寫第 11 屆該獎為『最佳專輯製作人獎』（維基第 9 屆頁則寫『最佳唱片製作人獎』），疑似該獎名在第 11 屆前後有更名；上線簡介的得獎事實本身與維基一致，只有獎項名稱待對官方資料確認，建議改寫成『最佳專輯製作人』或查金曲獎官網後定案 | https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E |
 | ar-b-030 | Astor Piazzolla | Adiós Nonino | 1959 年 10 月在紐約得知父親死訊後，不到一小時寫成 | 維基 Adiós Nonino 條目（僅見搜尋摘要，未開頁）與 Piazzolla 條目都說他是在波多黎各巡演時得知死訊；前者說幾天後在紐約寫成，後者說得知後不到一小時寫成，建議本機核對地點與『不到一小時』 | https://en.wikipedia.org/wiki/Adi%C3%B3s_Nonino |
 | ar-b-030 | Bernard Herrmann | Taxi Driver | 錄音完成數小時後他即於 1975 年 12 月 24 日過世 | Britannica 寫他 1975 年 12 月 24 日過世、是完成配樂的隔天；『數小時後』與之不一致（僅 Britannica 單源，建議本機再核） | https://www.britannica.com/biography/Bernard-Herrmann |
+| ar-b-030 | Jascha Heifetz | Korngold: Violin Concerto | 這是本曲的第一份錄音，往後很多年裡也是唯一的一份 | 英文維基 Korngold 小提琴協奏曲條目記 Heifetz 1947 年 2 月 15 日聖路易首演、1947 年 3 月 30 日 Carnegie Hall 演出有廣播轉錄盤；因此『第一份錄音』至少應限定為『第一份商業錄音』，『唯一』也沒有來源（僅查到維基，未能證實或推翻） | https://en.wikipedia.org/wiki/Violin_Concerto_(Korngold) |
+| ar-b-031 | Budapest String Quartet | Ravel: Quartet in F major / Debussy: Quartet in G minor | 此後三十五年他們為 Columbia 錄下 89 首作品 | 1940 年轉投 Columbia、1967 年解散，只有約 27 年；維基人物條目首段寫『from 1940 through 1967 it recorded for Columbia』，內文另有一句『Over 35 years the quartet recorded 89 individual works』，條目自己前後不一，建議改寫成『在 Columbia 期間錄下 89 首作品』並避開年數 | https://en.wikipedia.org/wiki/Budapest_String_Quartet |
+| ar-b-031 | Budapest String Quartet | Mozart: Haydn Quartets | 1939 年美方委託他們固定使用館藏五把史特拉底瓦里 | WETA 轉述的國會圖書館資料寫他們 1938 至 1962 年在該館演出，與維基的 1939 差一年，兩源不一致，建議改成『1930 年代末』 | https://weta.org/fm/classical-score/budapest-quartet-century-music-library-congress |

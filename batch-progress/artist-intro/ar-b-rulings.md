@@ -327,3 +327,13 @@ PR #16 已合併，分支自 main 重開。本段只做 ar-b-012（搖滾 40 位
 - g1 交件（QA 本組 0）。thin：Shabazz Palaces、Skepta（聲音 none）、Summer Walker（聲音 none）、The Game（聲音 none）。Shaggy、Skepta、The Game 失敗請求 5 次超限（超出部分未取得內容），照收。Skepta、The Game、Summer Walker 第二源偏弱（通俗傳記站、粉絲站、廠牌頁），評價不寫成定論。Timbaland《Indecent Proposal》是 Timbaland & Magoo 名義。pubIssues 0。
 - 029 w2 審稿（1 處）：Nelly 刪「首度」（無兩源的首次說法）。N.W.A 267、Queen Latifah 277 放寬照准；N.W.A 2024 年葛萊美終身成就獎、Queen Latifah「第一位獲甘迺迪中心榮譽的女饒舌歌手」皆屬廣泛報導的官方表述。Mýa〈Lady Marmalade〉主詞寫四人合唱。
 - **ar-b-029 上線**：40 位，reviewFixes 1。
+- 030 g2 交件（QA：Antal Doráti 搜尋 9 次超限 1 次，該次無事實）。全 full。Doráti 逝世年單源、樂團起訖年兩源不一，不寫；卡池《1812》為 1978 錄音，不得套 Mercury 版。Rubinstein 最後音樂會地點不寫。pubIssues 1（陶喆〈I'm OK〉第 11 屆金曲獎「最佳唱片製作人」與「最佳專輯製作人」獎名待核）→ 本機待核。w1（g1+g2）派出。
+- 030 g3 交件（QA：Eugen Jochum 搜尋 9 次超限 1 次，該次已撤）。全 full。任期年份兩源不一不寫（Colin Davis、Jochum）；Perlman 卡內基首演採 1963。Goldsmith AFI 名次屬榜單，不寫。pubIssues 3（Piazzolla《Adiós Nonino》得知父喪地點；Herrmann《Taxi Driver》過世與錄音時序；Heifetz《Korngold》「第一份錄音、多年唯一」有 1947 廣播轉錄反例）→ 本機待核。
+- 030 w1 審稿（2 處）：Skepta 刪「繼 Dizzee Rascal 之後第二位獲水星獎的 grime MC」（序數宣稱，比照 027 Dizzee 裁定）；玖壹壹 刪「創下該屆每分鐘最高收視率」（在世者最高級紀錄）。玖壹壹 2026-09-11 台中市榮譽獎章經主線 WebSearch 核實（台中市政府、自由時報）。Timbaland 2021《時代》百大屬推選名單，照准。Stormzy「首位在 Glastonbury 壓軸的英國饒舌歌手」屬廣泛報導，照准。
+- 030 g4 交件（QA 本組 0，四組齊）。thin：Karl Richter、Stars of the Lid、鷺巣詩郎（era none）、Arthur Grumiaux。Brian McBride 2023 年過世只寫年份；「ambient 傳奇」只准具名 NME。單源未收：Richter 影響 Harnoncourt／Gardiner、Grumiaux「少數真正偉大」。pubIssues 0。w2（g3+g4）派出。
+
+### ar-b-031
+- g1 交件（QA 本組 0）。全 full。衝突值不寫：Toscanini 紐約愛樂起年、Britten 奧爾德堡音樂節創辦年、Pärt 電台任職年、Giulini 離任年、Elfman 出生地、Lipatti 生日與最後獨奏會日期。Kleiber 人生細節只收兩源一致處；BBC Music Magazine 票選不收。Lipatti 疾病與死因不寫。pubIssues 2（Budapest String Quartet《Ravel/Debussy》「三十五年」與 1940–1967 不符；《Mozart: Haydn Quartets》國會圖書館樂器委託年 1938／1939）→ 本機待核。
+- 031 g2 交件（QA 本組 0）。thin：Frans Brüggen、Fritz Wunderlich（地位 none）。Georges Prêtre 失敗請求 5 次超限，照收。任期與日期不一致者不寫（Szell、Barbirolli、Ansermet）。du Pré 疾病、死因與過世年不寫。pubIssues 0。w1（g1+g2）派出。
+- 030 w2 審稿（2 處）：Jerry Goldsmith「1976 年拿下奧斯卡」改「以《The Omen》拿下」（該片 1976 年上映，頒獎在 1977 年）；鷺巣詩郎《新・哥吉拉》改台灣片名《正宗哥吉拉》。Herrmann AFI 名次比照 Goldsmith 不寫。Lloyd Webber 的《貓》《歌劇魅影》用台灣通行譯名，照准。
+- **ar-b-030 上線**：40 位，reviewFixes 4。
