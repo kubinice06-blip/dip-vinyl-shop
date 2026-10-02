@@ -642,5 +642,81 @@
   "failedFetches": 2,
   "status": "full",
   "notes": "事實庫 research 與 published 皆空，從零查。搜尋 6 次：維基 21 Savage、維基〈A Lot〉、WebSearch 一次、The Fader 2015、Fox 5 Atlanta、維基《Savage Mode》。失敗請求 2 次不計入：Britannica 404、Billboard 307 轉址（tollbit 付費牆，未再試）。⚠ 維基各條目互為『非獨立』；origin 第 1 條、legacy 各條搭配維基以外的 Fox 5 或 The Fader。依規則：Metro Boomin 的引述原文含不雅字眼，facts 只寫意譯；ICE 事件只收 ICE 與維基一致的中性層級（日期、簽證到期），未寫其聲明中的前科說法與後續聽證、取得綠卡等（單源）。單源未收（皆為英文維基 21 Savage）：Three 6 Mafia 影響（Billboard 與 WebSearch 摘要有相關標題，原頁因付費牆未取得）、表弟為 Young Nudy、母親來自多米尼克與父親來自聖文森、2013 年起開始 rap 的契機（涉及遭槍擊與友人過世，不收細節）、2019 年 2 月 13 日獲釋與 2023 年取得綠卡、『21 Savage Bank Account』理財教育與返校日活動；The Fader 單源：Gucci Mane 的影響、2015 年《The Slaughter Tape》、Old Fourth Ward 出生說（見 conflicts）；《Savage Mode》（2016）由 Metro Boomin 擔任執行製作（維基《Savage Mode》單源，製作陣容與樂評形容為媒體評價不收）；『連續四張專輯冠軍』屬榜單與在世者數字，不寫；Billboard 2019 年度歌曲榜第 6 名（榜單名次不收）。無同名混卡（poolAlbums 皆為 21 Savage 專輯）。"
+ },
+ {
+  "key": "6lack",
+  "name": "6LACK",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Ricardo Valdez Valentine Jr.，生於馬里蘭州巴爾的摩，後來定居喬治亞州亞特蘭大。",
+      "src": "https://en.wikipedia.org/wiki/6lack",
+      "src2": "https://www.apolaroidstory.com/2018/08/6lack-6rilliant/",
+      "from": "new"
+     },
+     {
+      "f": "他最初是 battle rapper，2011 年簽下第一紙唱片合約（Flo Rida 的 International Music Group），卻近五年沒有進展，之後離開。",
+      "src": "https://www.apolaroidstory.com/2018/08/6lack-6rilliant/",
+      "src2": "https://en.wikipedia.org/wiki/6lack",
+      "from": "new"
+     },
+     {
+      "f": "他在亞特蘭大結識 J.I.D、一度住在 EarthGang 的住處，之後加入橫跨亞特蘭大與巴爾的摩的團體 Spillage Village。",
+      "src": "https://www.apolaroidstory.com/2018/08/6lack-6rilliant/",
+      "src2": "https://en.wikipedia.org/wiki/Spillage_Village",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他既唱又 rap，寫的是失敗的感情與對生活困境的坦白；他做首張專輯時，白板上寫著「relatable（讓人有共鳴）」；英文維基也稱他的歌取材於個人經驗與感情，以心碎為主題。",
+      "src": "https://www.apolaroidstory.com/2018/08/6lack-6rilliant/",
+      "src2": "https://en.wikipedia.org/wiki/6lack",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張專輯《Free 6lack》入圍第 60 屆葛萊美最佳都會當代專輯，〈PRBLMS〉入圍最佳饒舌或演唱表演（入圍，兩項皆未得獎）。",
+      "src": "https://www.grammy.com/artists/6lack/186846/",
+      "src2": "https://www.apolaroidstory.com/2018/08/6lack-6rilliant/",
+      "from": "new"
+     },
+     {
+      "f": "《Since I Have a Lover》入圍第 66 屆葛萊美最佳前衛 R&B 專輯（入圍，未得獎）。",
+      "src": "https://www.grammy.com/artists/6lack/186846/",
+      "src2": "https://en.wikipedia.org/wiki/Since_I_Have_a_Lover",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Free 6lack》入圍第 60 屆葛萊美最佳都會當代專輯。",
+    "src": "https://www.grammy.com/artists/6lack/186846/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "加入 Spillage Village 年份：英文維基 6lack 條目寫 2015 年，維基 Spillage Village 條目寫 2014 年；兩源不一致，facts 不寫年份。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "事實庫 research 與 published 皆空，從零查。搜尋 8 次：維基 6lack、WebSearch 兩次（第 2、6 次，只看摘要）、A Polaroid Story、維基《Free 6lack》、維基 Spillage Village、Grammy 官網藝人頁、維基《Since I Have a Lover》。失敗請求 2 次不計入：Britannica 404、BET 文章頁回傳的是 BET 首頁內容而非文章（無資料）。legacy 第 1 條第二源為 Polaroid Story（兩項入圍皆有寫，維基《Free 6lack》只寫專輯一項）。⚠ 本位 legacy 偏薄：只有葛萊美入圍（官網加維基兩源，皆入圍未得獎），沒有後輩點名、名人堂類共識；origin 與 sound 的第二源多為維基（非獨立）。『Free 6lack』入圍條件依 Grammy 官網：2018 年第 60 屆最佳都會當代專輯、〈PRBLMS〉最佳饒舌或演唱表演；官網另列〈Pretty Little Fears〉（與 J. Cole）第 61 屆、〈Wholeheartedly〉（J.I.D、Ty Dolla $ign 與 6LACK）第 68 屆入圍，只有官網單源，未收。單源未收：1992 年 6 月 24 日出生、5 歲搬到亞特蘭大（維基單源，生卒年屬高風險類）；就讀 Stone Mountain 與 Newton 高中、輟學 Valdosta State University；受 Sade、T-Pain、The-Dream、Usher 影響（維基單源）；Billboard 稱他為 moody hip hop（維基轉述）；住房不穩甚至睡錄音室（Polaroid Story 單源，屬私人處境細節）；2019 年 MTV 影音獎最佳 R&B 影片、累計五次葛萊美入圍（在世者獎項數量不寫）；Spillage Village 在 Atlanta 與 Dreamville 脈絡的地位（維基單源）；AllMusic、Observer 對《Since I Have a Lover》的形容、Metacritic 分數（單一評論與評分不收）。無同名混卡（poolAlbums 皆為 6LACK 專輯）。"
  }
 ]
