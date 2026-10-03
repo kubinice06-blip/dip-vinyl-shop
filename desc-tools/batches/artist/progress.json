@@ -3459,8 +3459,6 @@
    "state": "published",
    "reviewFixes": 5,
    "skipped": [
-    "何欣穗",
-    "美狂乱",
     "舌頭"
    ]
   },
@@ -3515,10 +3513,7 @@
    ],
    "state": "published",
    "reviewFixes": 1,
-   "skipped": [
-    "蘇打綠",
-    "零與聲音解放組織"
-   ]
+   "skipped": []
   },
   {
    "batch": "ar-c-018",
@@ -10016,8 +10011,9 @@
     "蘇打綠",
     "零與聲音解放組織"
    ],
-   "state": "gap",
-   "note": "補查批：最終稿併回原批次 output 檔，本批不直接上架"
+   "state": "merged",
+   "note": "補查批：最終稿併回原批次 output 檔，本批不直接上架",
+   "reviewFixes": 2
   }
  ]
 }
