@@ -103,7 +103,8 @@ if (stage === 'gap') {
     // 2026-09-30 起新查事實必帶 src2，開第二源要多花請求：ar-a-008 起上限放寬到 8
     // 2026-10-03 ar-c-006 試行上限 5 次（失敗計入），thin 倍增；店主同日裁定 ar-c-007 起改回 8 次，只保留並行請求
     { const cap = /^ar-a-00[1-7]$|^ar-trial/.test(batch) ? 6 : batch === 'ar-c-006' ? 5 : /^ar-c-fix/.test(batch) ? 10 : 8
-      if (r.searches > cap) warn(r.name, `搜尋 ${r.searches} 次，超過上限 ${cap}`) }
+      // overCapOk：主線審過、超出的那次是重複查詢且未帶來獨有事實，記理由放行（寫進 rulings）
+      if (r.searches > cap && !r.overCapOk) warn(r.name, `搜尋 ${r.searches} 次，超過上限 ${cap}`) }
     if (!['full', 'thin'].includes(r.status)) warn(r.name, `status 不合法：${r.status}`)
     searches += Number(r.searches) || 0
     const LABEL = { identity: '身分', era: '年代', position: '位置', origin: '身世', sound: '貢獻', legacy: '地位' }
