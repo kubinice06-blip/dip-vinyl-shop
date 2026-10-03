@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 328 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 331 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -332,3 +332,6 @@
 | ar-c-017 | Curly Ray Cline | Why Me, Ralph? | Ralph Stanley 在 Cline 的葬禮上這樣說他——他拉提琴的方式，有點像我彈五弦琴的方式 | 英文維基只寫 Stanley 曾這樣評論他（remarked），並未說是在葬禮上；『葬禮』場合本層找不到出處，建議改成『Ralph Stanley 評他』或查證出處 | https://en.wikipedia.org/wiki/Curly_Ray_Cline |
 | ar-c-017 | Ewa Demarczyk | Live | 這是她的第三張：1967 年首張之後，1975 年那張只在蘇聯發行。 | 英文維基寫 1972 年離團『兩年後』發行第二張並在蘇聯賣數百萬張（約 1974），pl 維基作品目錄寫 1975 年、只在蘇聯發行；年份與『只在蘇聯』兩源不一致，建議店主對 Melodiya 目錄確認再決定是否保留年份。 | https://en.wikipedia.org/wiki/Ewa_Demarczyk |
 | ar-c-017 | Ewa Demarczyk | Ewa Demarczyk śpiewa piosenki Zygmunta Koniecznego | 「波蘭歌曲的黑天使」這個稱號，是一位主持人 Lucjan Kydryński 給的。 | dzieje.pl 與 encyklopediateatru 都把『Czarny Anioł』說成源自她全身黑衣的舞台形象，沒有提到由哪位主持人命名；兩種說法未必矛盾，但命名者一節本層查不到兩源，建議店主複核。 | https://dzieje.pl/kultura-i-sztuka/nie-zyje-ewa-demarczyk-czarny-aniol-polskiej-piosenki |
+| ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
+| ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
+| ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
