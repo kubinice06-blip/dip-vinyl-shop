@@ -77,3 +77,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 2 處：Katie Webster 中風與失能細節刪（比照 Arthur Alexander 健康私事先例）；Little Walter「該榜唯一登頂的口琴演奏曲」兩源疑同源，刪序數。
 - 預抓對錯頁照 warn 丟棄：American Football（美式足球）、Area（面積）、ANARCHY（影集）。
 - pubIssues 交本機：Hound Dog Taylor 生年、Jimmy Dawkins《All for Business》年份、Ma Rainey 錄音數、Lazy Lester 曲名亂碼、Burks BMA 入圍次數、Shemekia Copeland 首唱年紀、Tedeschi《Just Won't Burn》張次、Tampa Red 銷量、Area《Crac!》Stratos 死因（建議只寫 1979 年過世）、Andy Shauf 生年、-M-《Le Baptême》發行年。
+
+## ar-c-009（2026-10-03）
+
+- thin 11／40。Bad Company 卡池混了同名 drum and bass 團體（《Inside the Machine》2000），只寫英國搖滾樂團，拆卡記 pubIssues。
+- Buldožer 的 YU 100 票選是第 9 次搜尋（超上限）才湊到第二源，依「超出上限取得的事實要撤掉」不寫；Asturias 第 9 次搜尋同樣照實記。
+- 主線核實：Bad Company 2025 年入選搖滾名人堂、Mick Fleetwood 引介並稱 Rodgers 是搖滾歌手的北極星（Consequence、Ultimate Classic Rock）；Chuck Girard 2025-08-11 過世（Variety、Calvary Chapel Magazine）。
+- 審稿修 2 處：Bobbie Gentry 隱居地點刪（刻意退出公眾的在世者，住處不寫）；Charly García 在世者演出人數刪。
+- 待本機：Bad Company 拆卡；Big Brother 首張錄音地；Budka Suflera《Cień wielkiej góry》成軍年；Chico Science《Afrociberdelia》上線簡介寫了車禍死因。

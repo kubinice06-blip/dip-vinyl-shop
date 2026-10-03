@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 283 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 285 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -287,3 +287,5 @@
 | ar-c-008 | Area | Crac! | Stratos 1979 年因白血病去世 | 英文維基 Area (Italian band) 條目寫 Stratos 1979 年 6 月、34 歲因 aplastic anemia（再生不良性貧血）併發症過世，並非白血病；另依共同特注，死因不宜寫進介紹，簡介可改成只寫『1979 年過世』。 | https://en.wikipedia.org/wiki/Area_(Italian_band) |
 | ar-c-009 | Big Brother & The Holding Company | Big Brother & The Holding Company | 1966 年 12 月錄於洛杉磯（簡介寫法） | LoC 專文寫 Joplin 加入『數週後』樂團就趕進錄音室錄首張（Mainstream）；搜尋摘要又稱錄音在 1966 年 12 月進行。時序有出入但兩邊都有可能（可能分芝加哥與洛杉磯兩段場次），未能證實簡介錯誤，僅列請店主核對；本層不判定為錯。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/BigBrotherAndTheHoldingCompany.pdf |
 | ar-c-009 | Budka Suflera | Cień wielkiej góry | 樂隊 1969 年在 Lublin 成立 | 來源對成軍年份不一致：pl 維基與 ebilet 寫 1974 年，bibliotekapiosenki 寫 1973 年，en 維基首段兩種年份並陳（1969 是 Cugowski 早期同名前身團，1974 才是現行樂團成立）；建議改成不帶年份或寫「1970 年代前半」。 | https://pl.wikipedia.org/wiki/Budka_Suflera |
+| ar-c-010 | Dara Puspita | Jang Pertama | 1968 到 1971 年她們在西歐巡演三年 | 行程包含匈牙利（英文維基列出 West Germany、Hungary、England、France、Belgium、Netherlands、Spain）與土耳其、伊朗（Garage Hangover），不只西歐；起訖年份各源不一（1968 年 7 月出國，印尼文維基寫巡演到 1969 年 10 月，Groovie 寫 1969 至 1971 駐歐）。建議改為「1968 年起赴歐洲巡演，約三年後返國」。 | https://en.wikipedia.org/wiki/Dara_Puspita |
+| ar-c-010 | DEATH SIDE | Wasted Dream | 1989 年由 Selfish Records 發行，編號 BEL-12036，是 DEATH SIDE 目錄上最早的一張。 | 樂團的首張 EP《Satisfy the Instinct》1987 年已由 Selfish 發行（Maximum Rocknroll 稱其為該風格的奠基發行），比《Wasted Dream》早兩年；若簡介指「首張全長專輯」需另行查證，寫成「目錄上最早的一張」與 1987 年 EP 衝突。 | https://www.maximumrocknroll.com/band/death-side/ |
