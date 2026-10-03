@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "batch": "2026-10-03-add-ciacia-miss-perfect",
+  "batchNote": "店主單張指定（dip-card-create）。雲端段完成：身分、封面（Discogs 11294123）、研究／hook／寫作、prepare gate；本機段：listeners、試聽覆核（Apple 四店無）、KV／Firestore／seed 寫入與 published gate。",
+  "albums": [
+    {
+      "artist": "何欣穗",
+      "album": "完美小姐",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "b4703bbb-6597-4206-a935-2c7c90fa6e60",
+        "upc": "4719260990124",
+        "aliasesChecked": true,
+        "aliasReview": "盤名照 TW_INDIE_NAMING_RULINGS 規則 3：封面中英並列「miss perfect／完美小姐」，取中文；MB RG 標題 `Miss Perfect`、Discogs「Miss Perfect = 完美小姐」——`Miss Perfect` 為別名。掛名照池中先例 `何欣穗`（封面另印 [cia·cia]；別名 Ciacia／ciacia her／Patricia Ho／Her Sheen Sway）。年份 1999（MB、中文維基 1999-01-01、封面印字三方一致；Discogs 1998 不採）。池中同藝人另兩張《她的。發光搖擺》《She & Me》，非撞卡。曲名 MB〈十個汽球〉、維基〈十個氣球〉。"
+      },
+      "cover": {
+        "url": "https://i.discogs.com/FLfFCcWDAHX8hebPJ_OdQh2esyhrQDsOY4WKcqihLLY/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjk0/MTIzLTE2Mzk3NTE1/MDEtNDA5OS5qcGVn.jpeg",
+        "source": "discogs",
+        "discogsReleaseId": "11294123",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-03T12:44:26Z",
+        "note": "CAA 404、Apple tw/hk/us/jp 藝人目錄無本盤。Discogs release 11294123 條碼 4719260990124 與 MB release 6feea786 相同、廠牌喜樂音、11 軌逐軌對上；主線目視：人物側臉照，印「何欣穗 [cia·cia]」「miss perfect」「完美小姐」，左緣「1999 voice 1」。",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 4,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-10-03T12:44:26Z",
+        "note": "listeners 待本機（雲端擋 Last.fm）。錨點：金曲獎最佳新人與最佳專輯製作人（李欣芸）雙入圍、《台灣流行音樂 200 最佳專輯》新百佳第 46 名 → classic 4；從未數位化、只有 1999 一版 CD → obscurity 4（比池中同藝人《她的。發光搖擺》的 3 高一級）；李欣芸編曲的中文另類流行、易入耳 → accessibility 2。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "classic 4 未達殿堂門檻；obscurity 4 不到流亡；accessibility 2 非異端。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "同一首〈分心〉在盤上出現兩次，收尾那版的鋼琴是製作人彈的。李欣芸 1998 年進真言社任音樂總監，替新人何欣穗製作首張專輯，作曲七首、前十首編曲全歸她，詞多出自何欣穗。〈分心〉主版本 6 分 14 秒，是全盤最長的一軌，鋼琴版 2 分 32 秒，作曲同樣是她。1999 年由喜樂音發行，讓何欣穗受到注意的是〈自己餵狗〉。第 11 屆金曲獎，何欣穗入圍最佳新人、李欣芸入圍最佳專輯製作人，兩項都落空；後來《台灣流行音樂 200 最佳專輯》把它列在新百佳第 46 名。",
+        "sourceUrls": [
+          "https://www.discogs.com/release/11294123",
+          "https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%AC%A3%E8%8A%B8",
+          "https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124203",
+          "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+          "https://musicbrainz.org/release-group/b4703bbb-6597-4206-a935-2c7c90fa6e60"
+        ]
+      },
+      "preview": {
+        "status": "unavailable",
+        "source": "none",
+        "checkedAt": "2026-10-03T12:44:26Z",
+        "note": "Apple tw/hk/us/jp 藝人目錄（artistId 767258254）無本盤；YT Music 待本機覆核，查無則維持 unavailable。"
+      },
+      "published": {
+        "cardCatalog": false,
+        "descriptionKv": false,
+        "albumOverride": false,
+        "seedCards": false,
+        "apexPool": false
+      }
+    }
+  ]
+}
