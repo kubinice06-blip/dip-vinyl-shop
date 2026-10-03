@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 310 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 328 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -311,6 +311,24 @@
 | ar-c-014 | Stray Cats | Built for Speed | 十二首取自英國時期的《Stray Cats》與《Gonna Ball》，再加一首未發表的同名曲 | 英文維基《Built for Speed》條目寫：六首取自《Stray Cats》（1981 年 2 月）、五首取自《Gonna Ball》（1981 年 11 月），再加同名曲，共 11 加 1 等於 12 首；簡介『十二首取自…再加一首』會變成 13 首，疑似算錯。建議本機核對實際曲目表，再改成『十一首取自…再加一首同名曲』或『共十二首』。 | https://en.wikipedia.org/wiki/Built_for_Speed_(Stray_Cats_album) |
 | ar-c-014 | Taj Mahal Travellers | August 1974 | 一台廂型車從歐洲經中近東開到泰姬瑪哈陵，十一個月，沿路演奏 | Wire 小杉武久文章只說 1972 年 4 月在鹿特丹買福斯巴士、約一個月行經阿爾卑斯前往印度阿格拉；「十一個月」未在任何已開頁來源找到。建議店主核對原文或改成不寫長度（待核，非確定錯誤）。 | https://www.thewire.co.uk/in-writing/essays/p=14225 |
 | ar-c-014 | The Ethiopians | Engine 54 | 簡介寫「Leonard Dillon、Stephen Taylor 與 Aston Morrison 的三部和聲」 | 兩個獨立來源都寫成員名為 Aston Morris（非 Morrison）；建議以 Doctor Bird 原盤 credit 再核對後改為 Morris。 | https://bendbulletin.com/2011/10/03/reggae-pioneer-leonard-dillon-dies/ |
+| ar-c-015 | The Sensational Nightingales | The Best of the Sensational Nightingales | John Fogerty 寫〈Proud Mary〉時想召喚的男聲和聲，正是這一支。 | 英文維基原文是 Fogerty 想召喚的是男聲福音和聲，『以 Swan Silvertones、Sensational Nightingales、Five Blind Boys of Mississippi 這類團體為代表』，Nightingales 只是被舉例的幾支之一，不是『正是這一支』。建議改成『Fogerty 想召喚的那種男聲福音和聲，Nightingales 是代表之一』。 | https://en.wikipedia.org/wiki/Sensational_Nightingales |
+| ar-c-015 | The Sensational Nightingales | The Best of the Sensational Nightingales | 四重唱 1942 年由 Dixie Hummingbirds 出身的 Barney Parks 組成，1946 年 Julius「June」Cheeks 加入。 | 英文維基與 Journal of Gospel Music 作 1942 年 Parks 創團，但 Malaco 官方傳記寫前身為費城 Lamplighters、1949 年改名 Nightingale Quartet、Cheeks 1950 年才加入，來源不一致，Cheeks 加入年建議改為『四〇年代後期』或不寫年份。 | https://malaco.com/artist/gospel/the-sensational-nightingales/ |
 | ar-c-015 | The Weather Station | Ignorance | 《紐約時報》Lindsay Zoladz 稱其為刺人的新作 | 簡介點出樂評姓名與媒體，違反『來源平台與樂評姓名不進正文』規則，建議改為不具名或刪除 | https://www.climateone.org/people/tamara-lindeman |
 | ar-c-015 | Tim Hardin | Tim Hardin 2 | 全片僅 22 分 38 秒 | 『全片』不得用來指整張專輯（writer-base 文字節）；建議改為『整張專輯』或直接寫『22 分 38 秒』 | https://en.wikipedia.org/wiki/Tim_Hardin |
 | ar-c-015 | Tim Hardin | Tim Hardin 2 | AllMusic 的 Richie Unterberger 認為它大概是 Hardin 最好的單張 | 點名來源平台與樂評姓名，違反『來源平台與樂評姓名不進正文』規則（writer-base）；建議改成不具名或刪除 | https://en.wikipedia.org/wiki/Tim_Hardin |
+| ar-c-015 | Ton Steine Scherben | Warum geht es mir so dreckig? | 上線簡介寫「A 面四首、B 面五首」 | 英文維基專輯條目寫 Side 1 五首、Side 2 四首（並說 A 面是 1971 年 6 月 Mariannenplatz 活動的實況、B 面是錄音室精選）；與上線簡介的軌數分配相反。條目為單源、原盤實際分面待店主核對；其餘 1971 年 6 月 Mariannenplatz 活動與自發佔屋的說法與維基一致。 | https://en.wikipedia.org/wiki/Warum_geht_es_mir_so_dreckig%3F |
+| ar-c-016 | 五條人 | 縣城記 | 屬民謠大類，中國大陸多歸為「方言民謠」 | 店主用語規則（2026-09-29）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句改成「在中國多歸為方言民謠」。 | https://zh.wikipedia.org/zh-tw/%E4%BA%94%E6%9D%A1%E4%BA%BA |
+| ar-c-016 | 五條人 | 夢幻麗莎髮廊 | 屬民謠大類，中國大陸多歸為「方言民謠」 | 同上，用語規則：不寫「中國大陸」。 | https://zh.wikipedia.org/zh-tw/%E4%BA%94%E6%9D%A1%E4%BA%BA |
+| ar-c-016 | 唐朝樂隊 | 演義 | 創隊貝斯手在 1995 年車禍身故 | 店主特注：成員死亡只收年份，不收死因；這句帶了死因，建議改成『創隊貝斯手 1995 年過世』。 | https://zh.wikipedia.org/wiki/%E5%94%90%E6%9C%9D%E4%B9%90%E9%98%9F |
+| ar-c-016 | 唐朝樂隊 | 演義 | 五月十一日出事之後，同年七月由新人接任貝斯 | 日期寫成中文數字，違反『年月日一律用阿拉伯數字』；且五月十一日是死亡日期，與死因同屬案情細節，建議一併刪去，改寫為『同年 7 月由新人接任貝斯』。 | https://zh.wikipedia.org/wiki/%E5%94%90%E6%9C%9D%E4%B9%90%E9%98%9F |
+| ar-c-016 | 圖騰樂團 | 我在那邊唱 | 二○○五年拿下貢寮國際海洋音樂祭大賞、二○○六年四月由彎的音樂發行首張 | 年份寫成中文數字（二○○五）；規則是年月日用阿拉伯數字。事實本身與維基、ltn 相符。 | https://zh.wikipedia.org/zh-tw/%E5%9C%96%E9%A8%B0%E6%A8%82%E5%9C%98 |
+| ar-c-016 | 圖騰樂團 | 放羊的孩子 | 彎的音樂二○○九年九月發行、樂團二○○二年成軍 | 同樣是年份寫成中文數字（二○○九、二○○二）；二○○二年成軍與維基相符。 | https://zh.wikipedia.org/zh-tw/%E5%9C%96%E9%A8%B0%E6%A8%82%E5%9C%98 |
+| ar-c-017 | 陳珊妮 | 完美的呻吟 | 末曲翻唱薛岳〈你在煩惱些什麼？親愛的〉並收進詩人夏宇的口白 | 中文維基寫的曲名是〈你在煩惱什麼呢？親愛的〉，與上線簡介〈你在煩惱些什麼？親愛的〉不同；實際曲名請對照曲目表，「末曲」一說維基未提 | https://zh.wikipedia.org/wiki/%E9%99%B3%E7%8F%8A%E5%A6%AE |
+| ar-c-017 | Alela Diane | The Pirate's Gospel | 歌寫於一趟歐洲旅行 | 英文維基如此寫，但 Raise the Stakes 專訪（藝人本人說法）指最早的歌寫於 2002 至 2003 年搬到舊金山之後、標題曲來自露營划船，兩說不一，建議改成不指明寫作地點，或對照原始專訪後再定 | https://raisethestakeseditions.com/alela-diane/ |
+| ar-c-017 | Barbara | Barbara chante Barbara | 是第一張全部由自己寫詞寫曲的唱片 | 法文維基專輯條目寫該張除兩首與外人合作的曲目外，其餘由她自己寫（單源，建議改為『幾乎全部』或『主要由自己創作』）。 | https://fr.wikipedia.org/wiki/Barbara_chante_Barbara |
+| ar-c-017 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
+| ar-c-017 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
+| ar-c-017 | C.O.B. | Spirit of Love | 1970 年 CBS 的 12 吋原盤 | klofmag 悼文與搜尋摘要（維基 Clive Palmer 條目）都把《Spirit of Love》記為 1971 年；卡池年份為 1970，建議店主核對原盤年份（Discogs）後同步卡單與簡介。 | https://klofmag.com/2014/12/tribute-to-clive-palmer/ |
+| ar-c-017 | Curly Ray Cline | Why Me, Ralph? | Ralph Stanley 在 Cline 的葬禮上這樣說他——他拉提琴的方式，有點像我彈五弦琴的方式 | 英文維基只寫 Stanley 曾這樣評論他（remarked），並未說是在葬禮上；『葬禮』場合本層找不到出處，建議改成『Ralph Stanley 評他』或查證出處 | https://en.wikipedia.org/wiki/Curly_Ray_Cline |
+| ar-c-017 | Ewa Demarczyk | Live | 這是她的第三張：1967 年首張之後，1975 年那張只在蘇聯發行。 | 英文維基寫 1972 年離團『兩年後』發行第二張並在蘇聯賣數百萬張（約 1974），pl 維基作品目錄寫 1975 年、只在蘇聯發行；年份與『只在蘇聯』兩源不一致，建議店主對 Melodiya 目錄確認再決定是否保留年份。 | https://en.wikipedia.org/wiki/Ewa_Demarczyk |
+| ar-c-017 | Ewa Demarczyk | Ewa Demarczyk śpiewa piosenki Zygmunta Koniecznego | 「波蘭歌曲的黑天使」這個稱號，是一位主持人 Lucjan Kydryński 給的。 | dzieje.pl 與 encyklopediateatru 都把『Czarny Anioł』說成源自她全身黑衣的舞台形象，沒有提到由哪位主持人命名；兩種說法未必矛盾，但命名者一節本層查不到兩源，建議店主複核。 | https://dzieje.pl/kultura-i-sztuka/nie-zyje-ewa-demarczyk-czarny-aniol-polskiej-piosenki |

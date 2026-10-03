@@ -120,3 +120,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 主線核實：The Menzingers 第八張《Everything I Ever Saw》2026 年 7 月由 Epitaph 發行、Will Yip 製作（Consequence、WHYY）；Sinéad O'Connor 2024 年身後首度獲搖滾名人堂提名。
 - 審稿修 1 處：Socrates Drank the Conium「1970 年代希臘搖滾銷量最高」刪（在世成員，銷量類宣稱比照不寫）。
 - 待本機：Spacemen 3《Playing with Fire》卡池年份 1988 疑為 1989；Stray Cats、Socrates、Ethiopians、Taj Mahal Travellers 上線簡介各一處。
+
+## ar-c-015（2026-10-03）
+
+- thin 16／40（本工作階段 WebSearch 共用額度 200 次用盡，後段補洞只能開頁，Pogues、Rollies、Sensational Nightingales、Tom Petty、Toto、Алиса、ДДТ 等因此偏薄；列入補查名單）。Ty Segall 9 次、Uriah Heep 10 次超上限：額度用盡後改用開頁補源所致，照實記、事實保留。
+- 預抓對錯頁照 warn 丟棄：Ultima Thule（瑞典同名團）、Treatment（污水處理）。
+- 主線核實：Venom 的 Cronos（Conrad Lant）2026-10-01 過世（Decibel、Consequence）；Phoenix 的 Nicu Covaci 2024-08-02 過世（Agerpres、Europa Liberă）。
+- 審稿修 5 處：The Move 單曲進榜數、Stone Roses 演出人數、Wedding Present 進榜紀錄、Toto「一晚三大獎」、Wet Leg 提名數（在世者名次與座數規則）。
+- 待本機：Tim Hardin 上線簡介點名樂評人與 AllMusic；The Weather Station《Ignorance》上線簡介點名樂評人與《紐約時報》；Sensational Nightingales 兩處；Ton Steine Scherben 曲序。
