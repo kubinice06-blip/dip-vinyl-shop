@@ -1,0 +1,2901 @@
+[
+ {
+  "key": "negasphere",
+  "name": "Negasphere",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Castle in the Air",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Disadvantage",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c73-a",
+    "album": "Castle in the Air",
+    "facts": [
+     {
+      "f": "Discogs 的廠牌條目寫 LLE Label 是「Japanese prog, experimental, and new wave label」，1980 年代由 Marquee Moon 經營，主要工作人員之一 Yasuhiro Nakano 在 LLE 擔任導演與製作；parent label 欄即 Marquee Moon。",
+      "src": "https://www.discogs.com/label/127434"
+     },
+     {
+      "f": "Discogs 的廠牌條目寫 Arcàngelo 是日本廠牌，母公司為 DIW Products Group。",
+      "src": "https://www.discogs.com/label/60609"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c73-a",
+    "album": "Disadvantage",
+    "facts": [
+     {
+      "f": "2016 年的 Arcàngelo CD（release 9498969）做成 CD 尺寸紙封套原盤複刻附側標，把〈Empty And Meaningless Hot〉拆成 Part 1／2／3 三軌，並把 flexi 上的〈Change Your Fate (Different Version)〉收為 bonus；廠牌欄同時列 Arcàngelo 與 DIW，執行製作掛 Disk Union。",
+      "src": "https://www.discogs.com/release/9498969"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Castle in the Air",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "唱片一九八四年壓出來，下一個版本要等到二〇一六年。原盤是 LLE Label 的 LLE-1007，錄音在東京方南町的 Green Studio，一九八四年三月到六月。五個人分掛吉他兼人聲、貝斯、鼓、鍵盤與合成器。Discogs 的廠牌條目寫 LLE 做的是日本的 prog、實驗與 new wave，八〇年代由 Marquee Moon 經營。五軌裡最長的〈Holly Ground Ceremony〉十分五十一秒；二〇一六年那次做成紙封套複刻。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4076736",
+     "https://www.discogs.com/label/127434",
+     "https://www.discogs.com/master/1103915",
+     "https://www.discogs.com/release/9498923",
+     "https://www.discogs.com/label/60609",
+     "https://musicbrainz.org/release-group/bf05cec3-4f1e-4d36-8e4c-5c2265202e85"
+    ]
+   },
+   {
+    "album": "Disadvantage",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "唱片裡多夾了一張單面軟膠，收的是同一首歌的另一個版本。原盤是 DIW 的 DIW-5001，格式欄就這樣登記：一張黑膠加一張七吋軟膠，軟膠上那面是〈Change Your Fate〉，另附側標與歌詞內頁。錄音分兩處進行，鍵盤的基本軌一九八五年八月先由川崎馨在東京方南町的 Green Studio 錄下，其餘的到九月與十月才在四谷的 Studio Dig 完成。七軌裡 A 面五首從三分一秒到五分五秒，B 面第二首十七分四十一秒。著作權與經銷都掛 Disk Union。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3520952",
+     "https://www.discogs.com/master/1103918",
+     "https://www.discogs.com/release/9498969",
+     "https://musicbrainz.org/release-group/a89787d9-71f3-4bf6-8db9-78c73ce0a54d"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "neutral milk hotel",
+  "name": "Neutral Milk Hotel",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   1998
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "On Avery Island",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "In the Aeroplane Over the Sea",
+    "year": 1998,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "new york dolls",
+  "name": "New York Dolls",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "New York Dolls",
+    "year": 1973,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Too Much Too Soon",
+    "year": 1974,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "New York Dolls",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1973 年 4 月在紐約 Record Plant 錄成，Mercury 發行，製作人是流行品味細緻、對這團評價其實保留的 Todd Rundgren——但 Johansen 與 Sylvain 事後都說他抓對了他們現場的聲音。首任鼓手 Billy Murcia 前一年死於倫敦，Jerry Nolan 接手。封面五人上妝著女裝，〈Personality Crisis〉〈Trash〉〈Jet Boy〉把 Brill Building 的流行寫法疊在粗糙的 rock and roll 上。銷量慘澹，卻成了 1970 年代 punk 的直接上游。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/New_York_Dolls_(album)",
+     "https://musicbrainz.org/release-group/4cdd4c59-e38f-382b-b01c-e69829faa69c"
+    ]
+   },
+   {
+    "album": "Too Much Too Soon",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1974 年 1、2 月在紐約 A&R Studios 錄音。對首作聲音不滿的 Johansen 找來已對唱片業意興闌珊的資深製作人 Shadow Morton，Morton 反被這團的能量重新點燃，把它當成一次挑戰接下。新原創不足的部分靠翻唱與重錄舊 demo 補齊，Morton 加了大量錄音室音效與女聲和音，Johansen 唱那些 novelty 翻唱時還換上不同角色的口吻。Thunders 第一次擔任主唱，唱的是自己寫的〈Chatterbox〉。專輯只到美國榜第 167 名，樂團隨後被 Mercury 放掉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Too_Much_Too_Soon_(album)",
+     "https://musicbrainz.org/release-group/797f5c2f-d2ce-3b97-a761-0a946816d792"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "nic potter",
+  "name": "Nic Potter",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mountain Music",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sketches in Sound",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 19,
+   "researchRecords": 2,
+   "facts": 8,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c80-b",
+    "album": "Mountain Music",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 435536）記：1984 年英國盤，廠牌 Zomart Records、編號 ZOMART 001，Vinyl／LP／Album，壓片由 Orlake Records 代工；條目註記寫「**Recorded in London, November 1983**」。**℗ 與 © 兩欄掛的都是 Island Visual Arts Ltd.**",
+      "src": "https://www.discogs.com/release/435536-Nic-Potter-Mountain-Music"
+     },
+     {
+      "f": "MusicBrainz 的 release-group 3a8f7453-4478-4e50-bcd9-6c293ff8de13 記 first-release-date 1984、primary-type Album、secondary-types 空，**轄下只有一個 release**：1984 年 GB 的十二吋黑膠，廠牌 Zomart Records、編號 ZOMART 001、八軌。",
+      "src": "https://musicbrainz.org/release-group/3a8f7453-4478-4e50-bcd9-6c293ff8de13"
+     },
+     {
+      "f": "Discogs 的 Zomart Records 廠牌頁（label 43481）共四十六筆：1984 年的 ZOMART 001（本張）、1986 年的 ZOM 002／ZOMART 002《Sketches In Sound》、1992 年的 ZOM 003、1993 年起的 ZOMCD004 到 ZOMCD009，以及 2009 年一整批 VP479CD 到 VP488CD 的重製。",
+      "src": "https://www.discogs.com/label/43481-Zomart-Records"
+     },
+     {
+      "f": "**同一份廠牌目錄裡有一筆不是他自己的唱片**：1995 年的 ZOMCD007 是 Duncan Browne 的《Songs Of Love & War》。",
+      "src": "https://www.discogs.com/label/43481-Zomart-Records"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c80-b",
+    "album": "Sketches in Sound",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 1463982）記：1986 年英國盤，廠牌 Zomart Records、編號欄同時登了 ZOM 002 與 ZOMART 002，Vinyl／LP／Album；母帶在 Utopia Studios，**壓片由 Lyntone Recordings Ltd. 代工**（兩面的刻紋編號 LYN-17708／LYN-17709）。",
+      "src": "https://www.discogs.com/release/1463982-Nic-Potter-Sketches-In-Sound"
+     },
+     {
+      "f": "同一份條目抄下了封套上的文字，一共四句：「Recorded in London.」「**Essential ideas for a future: respect all forms of life, abolish nuclear power and weapons.**」「Special thanks to Richard Anderson and my good friends.」以及**廠牌的通訊地址「Zomart Records, 8 Russell Gardens, London W14 8EZ.」**，最後一句是「**Distributed by Revolver and the Cartel.**」",
+      "src": "https://www.discogs.com/release/1463982-Nic-Potter-Sketches-In-Sound"
+     },
+     {
+      "f": "MusicBrainz 的 release-group 6b39f7b2-18c2-41f5-82b0-8688f640ca54 記 first-release-date 1986、primary-type Album、secondary-types 空，**轄下只有一個 release**：1986 年 GB 的十二吋黑膠，廠牌 Zomart Records、編號 ZOMART 002、九軌，曲長與 Discogs 差在幾秒之內。",
+      "src": "https://musicbrainz.org/release-group/6b39f7b2-18c2-41f5-82b0-8688f640ca54"
+     },
+     {
+      "f": "Discogs 的 Zomart Records 廠牌頁（label 43481）顯示這家廠牌在 1984 到 1992 年之間只出了三個編號（ZOMART 001、ZOM 002、ZOM 003），1993 年起才改走 CD 的 ZOMCD 系列，2009 年一口氣以 VP479CD 到 VP488CD 十個編號把整批目錄重製一次。",
+      "src": "https://www.discogs.com/label/43481-Zomart-Records"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Mountain Music",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "八首歌裡有六首各請了一位客席：兩首加吉他、三首加打擊、一首換另一位吉他手。註記寫錄於倫敦、1983 年 11 月，℗ 與 © 兩欄掛的都是 Island Visual Arts Ltd.；廠牌 Zomart Records、編號 ZOMART 001，版本頁上同一個編號黑膠與卡帶都有。他自己包了貝斯、合成器、鋼琴、詞曲與製作，最長的〈Mountain Vision〉五分二十六秒。封面是攝影作品再手工上色，攝影 Sunao Masuda、上色 Yvette Anna。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/435536-Nic-Potter-Mountain-Music",
+     "https://www.discogs.com/master/319914-Nic-Potter-Mountain-Music",
+     "https://musicbrainz.org/release-group/3a8f7453-4478-4e50-bcd9-6c293ff8de13",
+     "https://www.discogs.com/label/43481-Zomart-Records",
+     "https://www.discogs.com/artist/326044-Nic-Potter",
+     "https://music.apple.com/gb/album/mountain-music/493542668"
+    ]
+   },
+   {
+    "album": "Sketches in Sound",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "尊重一切生命形式，廢除核電與核武——這句話印在封套上。同一面還印了錄音在倫敦、一句致謝、廠牌的通訊地址，以及配銷交給 Revolver 與 the Cartel。1986 年的 Zomart Records，編號欄同時登了 ZOM 002 與 ZOMART 002，九軌。〈Planet Of Paradise〉拆成三段，放在 B 面的第一、第四與第五軌，中間隔著兩首別的曲子。工程 John Ellis 同時是〈Purple Dawn〉的共同詞曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1463982-Nic-Potter-Sketches-In-Sound",
+     "https://musicbrainz.org/release-group/6b39f7b2-18c2-41f5-82b0-8688f640ca54",
+     "https://www.discogs.com/master/422463-Nic-Potter-Sketches-In-Sound",
+     "https://www.discogs.com/label/43481-Zomart-Records",
+     "https://www.discogs.com/artist/326044-Nic-Potter",
+     "https://coverartarchive.org/release-group/6b39f7b2-18c2-41f5-82b0-8688f640ca54/front"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "no brain",
+  "name": "No Brain",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2001
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "청년폭도맹진가",
+    "year": 2000,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Viva No Brain",
+    "year": 2001,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c105-b",
+    "album": "청년폭도맹진가",
+    "facts": [
+     {
+      "f": "韓文維基〈노브레인〉（樂團條目）：四人編制、以韓國 punk 特有的音色在 2000 年前後展示了 Joseon Punk（條目原文作《조선펑크》）的可能性，在守住既有 punk 精髓這一點上獲得高度評價；擔任吉他與主唱的 Cha Seung-woo 退團之後，樂團的旋律轉向加入大眾性的另一個局面。",
+      "src": "https://ko.wikipedia.org/wiki/%EB%85%B8%EB%B8%8C%EB%A0%88%EC%9D%B8"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c105-b",
+    "album": "Viva No Brain",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group a9cc5af5 的欄位：title「Viva No Brain」、artist-credit「No Brain」（藝人實體 8054694e，KR、Group）、first-release-date **2001-07-11**、primary-type Album、secondary-types **空**。轄下**只有 1 個 release**：KR 的 CD（**Official**，2001-07-11，14 軌，**label-info 為空陣列、沒有廠牌也沒有 catno**，無 barcode）。",
+      "src": "https://musicbrainz.org/ws/2/release-group/a9cc5af5-248c-442a-80b3-5742df1ecd73?fmt=json&inc=artist-credits+releases"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "청년폭도맹진가",
+    "manifest": "onboarding-manifest-c105-20260910.json",
+    "desc": "兩片十八軌七十二分鐘，第二片收尾是首九分半的混音組曲。唯一那筆韓國 CD 是雙片裝，第一片十軌 35 分 01 秒、第二片八軌 37 分 15 秒，全碟十八軌 72 分 16 秒，廠牌 Ponycanyon Korea、目錄號 PLCD 00009。第二片末軌〈전자펑크 리믹스메들리〉9 分 34 秒是全碟最長。第一片第 2 軌〈애국가〉0 分 59 秒最短，同名曲排在第 3 軌。這是他們的第一張正規盤，被放在 Joseon Punk 這條線上談。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6963aeb7-80f8-4592-aa71-db9961663ea0?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=6963aeb7-80f8-4592-aa71-db9961663ea0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=39695325&country=us&entity=album&limit=200",
+     "https://itunes.apple.com/search?term=%EC%B2%AD%EB%85%84%ED%8F%AD%EB%8F%84%EB%A7%B9%EC%A7%84%EA%B0%80&country=us&media=music&entity=album&limit=25",
+     "https://musicbrainz.org/ws/2/release-group?artist=8054694e-42d9-4cf9-b5db-5475dcc33bd6&fmt=json&limit=100&offset=0",
+     "https://ko.wikipedia.org/wiki/%EC%B2%AD%EB%85%84%ED%8F%AD%EB%8F%84%EB%A7%B9%EC%A7%84%EA%B0%80",
+     "https://ko.wikipedia.org/wiki/%EB%85%B8%EB%B8%8C%EB%A0%88%EC%9D%B8",
+     "https://musicbrainz.org/release-group/6963aeb7-80f8-4592-aa71-db9961663ea0"
+    ]
+   },
+   {
+    "album": "Viva No Brain",
+    "manifest": "onboarding-manifest-c105-20260910.json",
+    "desc": "十四首歌沒有一首超過五分鐘，五十一分鐘就收乾淨。唯一那筆韓國 CD 的十四軌全部落在 2 分 32 秒到 4 分 57 秒之間，全碟 51 分 19 秒，最短的〈거세〉2 分 32 秒、最長的〈어둠 속을 걷다〉4 分 57 秒。前一張是雙片七十二分鐘、末軌擺一首九分半的組曲，這一張反過來把每首都收在五分鐘以內。曲序自〈살아있는 시체들의 밤〉起，中段〈암중모색〉4 分 52 秒是另一個長段落，收在〈노브레인 만만세〉。十四軌全部保留諺文原題，是這團少見的一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/a9cc5af5-248c-442a-80b3-5742df1ecd73?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=a9cc5af5-248c-442a-80b3-5742df1ecd73&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1555676583&country=us&entity=song&limit=200",
+     "https://ko.wikipedia.org/wiki/Viva_NoBrain",
+     "https://musicbrainz.org/ws/2/release-group?artist=8054694e-42d9-4cf9-b5db-5475dcc33bd6&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=39695325&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/a9cc5af5-248c-442a-80b3-5742df1ecd73"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "novos baianos",
+  "name": "Novos Baianos",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1972,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Acabou Chorare",
+    "year": 1972,
+    "genres": [
+     "rock",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Novos Baianos F.C.",
+    "year": 1973,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Novos Baianos F.C.",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "離開 Som Livre 之後，Novos Baianos 一夥人住進 Jacarepaguá 的莊園，白天踢球晚上寫歌，索性把自己當成足球隊，1973 年替 Continental 錄下這批曲子。frevo、baião、choro、samba 與搖滾在同一張裡輪流當家，Pepeu Gomes 的電吉他和 Moraes Moreira 的嗓子把它們縫在一起，並翻唱 Dorival Caymmi 的〈O Samba da Minha Terra〉。同年德國電視台拍了同名紀錄片，記錄他們踢球、帶小孩、寫歌的日常。",
+    "sourceUrls": [
+     "https://pt.wikipedia.org/wiki/Novos_Baianos_F.C.",
+     "https://musicbrainz.org/release-group/0d10250d-04c9-3c4b-9d36-c3aaca5aaabb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "olivia rodrigo",
+  "name": "Olivia Rodrigo",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2021,
+   2026
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sour",
+    "year": 2021,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "you seem pretty sad for a girl so in love",
+    "year": 2026,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c112-a",
+    "album": "you seem pretty sad for a girl so in love",
+    "facts": [
+     {
+      "f": "22 筆 release 的載體與廠牌：**12 吋黑膠 8 筆**（US ×6、AU、GB／XE，多數 Gatefold Cover，另一筆 2026-06-26 的 US 壓片是 Plastic Sleeve 包裝）、**CD 5 筆**（US ×3、XE 199957737678、GB，Jewel Case 與 Gatefold 各有）、**卡帶 2 筆**（Cassette Case）、數位 7 筆。實體全部掛 Geffen Records，數位那幾筆的 label-info 掛的是「Olivia Rodrigo PS」。實體版一律 13 軌。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=4c4eee61-da1e-4115-8eb9-07e5b671fefe&fmt=json&inc=media+labels+recordings&limit=100"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "you seem pretty sad for a girl so in love",
+    "manifest": "onboarding-manifest-c112-20260910.json",
+    "desc": "第十軌唱和聲、彈貝斯與鋼琴、順手接下錄音工程的，是 The Cure 的 Robert Smith。那一軌叫〈what’s wrong with me〉，他在上頭連主唱與吉他都一起接了，也是整張碟唯一的客席。製作從頭到尾只有 Dan Nigro 一人，他同時掛全碟的錄音工程與十二軌的樂器，鼓交給 Sterling Laws 打了七軌。十三軌總長 51:02，收尾的〈cigarette smoke〉5:41，比其他任何一首都長一分半以上。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4c4eee61-da1e-4115-8eb9-07e5b671fefe?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4c4eee61-da1e-4115-8eb9-07e5b671fefe&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=979458609&entity=album&limit=200&country=us",
+     "https://en.wikipedia.org/wiki/You_Seem_Pretty_Sad_for_a_Girl_So_in_Love",
+     "https://musicbrainz.org/release-group/4c4eee61-da1e-4115-8eb9-07e5b671fefe"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "p.k.14",
+  "name": "P.K.14",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2004,
+   2005
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "誰誰誰和誰誰誰",
+    "year": 2004,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "白皮書",
+    "year": 2005,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c107-b",
+    "album": "誰誰誰和誰誰誰",
+    "facts": [
+     {
+      "f": "釘定的 release-group 19bd011d 欄位：title《谁谁谁和谁谁谁》（簡體建檔）、artist-credit《P.K.14》（藝人實體 05653c73，country CN、type Group、成軍 1997-11）、first-release-date **2004**、primary-type Album、secondary-types **空**、轄下 2 個 release。條目掛的風格標籤是 indie rock、noise pop、noise rock、post-punk、rock。",
+      "src": "https://musicbrainz.org/ws/2/release-group/19bd011d-3a9c-3ca6-af0e-c1a28334d17d?fmt=json&inc=artist-credits+genres+url-rels"
+     },
+     {
+      "f": "中文百科〈PK14〉：「P.K.14，**全稱爲the Public Kingdom for Teens（青春公共王國）**。音樂風格受新浪潮／後朋克的影響……**1997年11月，P.K.14成立於南京。**」條目在 2004 年項明寫：「**2004年10月，發表專輯《谁谁谁和谁谁谁》（廠牌：Badhead 中國）。專輯完成後，鼓手雷壇壇加入樂隊**」——與線上店面的 2004-10-13 相符。",
+      "src": "https://zh.wikipedia.org/wiki/PK14"
+     },
+     {
+      "f": "英文百科〈P.K. 14〉：「Formed in 1997 in Nanjing, **they moved to Beijing in 2001**……The band, which **sings exclusively in Mandarin Chinese**, has been praised for its 'sharp, post-punk' sound」；同條目記主唱楊海崧同時是製作人，替兵馬司（Maybe Mars）、摩登天空與 Genjing 等廠牌製作過 **Carsick Cars** 等樂隊的作品——**Carsick Cars 本批 b 組另收一張。**",
+      "src": "https://en.wikipedia.org/wiki/P.K._14"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c107-b",
+    "album": "白皮書",
+    "facts": [
+     {
+      "f": "釘定的 release-group 59355b12 欄位：title《白皮书》（簡體建檔）、artist-credit《P.K.14》（藝人實體 05653c73，country CN、type Group、成軍 1997-11）、first-release-date **2005-09**、primary-type Album、secondary-types **空**、轄下 2 個 release。條目掛的風格標籤是 art punk、dance-punk、garage rock revival、indie rock、post-punk、rock。",
+      "src": "https://musicbrainz.org/ws/2/release-group/59355b12-99cc-312c-b1d7-130e3c282f68?fmt=json&inc=artist-credits+genres+url-rels"
+     },
+     {
+      "f": "中文百科〈PK14〉：樂隊 1997 年 11 月成立於南京，全名是 the Public Kingdom for Teens；條目描述他們「從一開始就定下了歌詞深邃如詩、沉重嚴肅的風格」，作品《往往有着猛烈的和弦，阴暗的贝司低音以及躁动的鼓点》，並列出 Sonic Youth、the Pixies、Fugazi 等美國八〇年代獨立樂隊的影響。主唱楊海崧本人「並不在意對樂隊風格定義」，他說「如果硬是要加所謂的『風格』的話，那就是我們對社會的感受」。",
+      "src": "https://zh.wikipedia.org/wiki/PK14"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "誰誰誰和誰誰誰",
+    "manifest": "onboarding-manifest-c107-20260910.json",
+    "desc": "團名是 the Public Kingdom for Teens 的縮寫——青春公共王國。樂隊 1997 年 11 月成軍於南京，2001 年遷到北京，歌詞全部用普通話。十軌合計約 43 分，第四軌〈说话的伤口〉2 分 17 秒與第七軌〈拒绝参加游戏的人〉1 分 37 秒是兩首急曲，夾在中間的第六軌〈甜蜜的雨滴〉卻跑了 8 分 22 秒，比第二長的〈这辆红色的列车〉多出兩分半。2004 年 10 月出版，廠牌編號 B-023；鼓手是這張錄完之後纔進團的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/19bd011d-3a9c-3ca6-af0e-c1a28334d17d?fmt=json&inc=artist-credits+genres+url-rels",
+     "https://musicbrainz.org/ws/2/release?release-group=19bd011d-3a9c-3ca6-af0e-c1a28334d17d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1822759363&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/PK14",
+     "https://en.wikipedia.org/wiki/P.K._14",
+     "https://musicbrainz.org/ws/2/release-group?artist=05653c73-f8e9-44cf-8185-e569bc3274d4&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/19bd011d-3a9c-3ca6-af0e-c1a28334d17d"
+    ]
+   },
+   {
+    "album": "白皮書",
+    "manifest": "onboarding-manifest-c107-20260910.json",
+    "desc": "第九軌〈征兆〉跑了九分四十三秒，前面八軌加起來也才三十二分鐘。開場的〈陌生客人的来访〉2 分 23 秒、〈他们〉2 分 44 秒與第四軌〈暴风的中心〉2 分 42 秒都不到三分鐘，落差極大。登錄的風格標籤比前一張多了舞曲取向，把 art punk 與 dance-punk 一併列進後龐克之外；曲名以完整的短句為主——〈告诉孩子们〉〈什么样的风在吹〉〈有一个地方〉。2005 年 9 月出版，廠牌編號 B-028。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/59355b12-99cc-312c-b1d7-130e3c282f68?fmt=json&inc=artist-credits+genres+url-rels",
+     "https://musicbrainz.org/ws/2/release?release-group=59355b12-99cc-312c-b1d7-130e3c282f68&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1822757858&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/PK14",
+     "https://musicbrainz.org/ws/2/release-group?artist=05653c73-f8e9-44cf-8185-e569bc3274d4&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/59355b12-99cc-312c-b1d7-130e3c282f68"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pankrti",
+  "name": "Pankrti",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dolgcajt",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Državni ljubimci",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c54-b",
+    "album": "Dolgcajt",
+    "facts": [
+     {
+      "f": "盧比安納樂團 Pankrti 的首張長片，1980 年發行；MB 最早 release 記 1980 年 YU、廠牌 RTV Ljubljana、目錄號 LD 0581，全碟 14 首、全程斯洛維尼亞語。",
+      "src": "https://musicbrainz.org/release-group/3a5dcc73-3f94-43dc-b57b-60605d7f451d"
+     },
+     {
+      "f": "團名 Pankrti 在斯洛維尼亞語是「雜種」；樂團自稱是「鐵幕後的第一支龐克樂團」，也是最早在共產國家成立的龐克樂團之一。",
+      "src": "https://en.wikipedia.org/wiki/Pankrti"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-b",
+    "album": "Državni ljubimci",
+    "facts": [
+     {
+      "f": "1981 年盧比安納出現一個叫「第四帝國」的納粹龐克團體並遭當局逮捕受審之後，當局藉機把整個龐克運動貼上「顛覆」標籤；樂團的經紀人兼推手 Igor Vidmar 因為戴著 Dead Kennedys 的「Nazi Punks Fuck Off!」徽章（上面的卐字是被劃掉的）被誤判成納粹挑釁而遭拘留。",
+      "src": "https://en.wikipedia.org/wiki/Punk_rock_in_Yugoslavia"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dolgcajt",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "唱片的名字是一個從德語借來的斯洛維尼亞字：無聊。團名 Pankrti 則是「雜種」，樂團自稱是鐵幕後的第一支龐克樂團，1977 年成軍於盧比安納郊區。1980 年由 RTV Ljubljana 發行的這張首張長片是十四首短打，全程斯洛維尼亞語，速度快、副歌喊完就結束，重量在主唱 Peter Lovšin 的咬字上，〈Totalna revolucija〉是其中一首。2012 年《Dnevnik》的十張最佳斯洛維尼亞專輯收了這張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3a5dcc73-3f94-43dc-b57b-60605d7f451d",
+     "https://en.wikipedia.org/wiki/Pankrti",
+     "https://hr.wikipedia.org/wiki/Dolgcajt",
+     "https://sl.wikipedia.org/wiki/Najboljši_slovenski_albumi"
+    ]
+   },
+   {
+    "album": "Državni ljubimci",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "經紀人 Igor Vidmar 因為一枚徽章被拘留，徽章上的卐字是被劃掉的。那是 1981 年的事：納粹龐克團體遭審之後，龐克運動被貼上顛覆的標籤，戴 Dead Kennedys 徽章的他被誤判成挑釁。隔年由 ZKP RTVL 發行的這張唱片正常上市，還拿下 1982 年南斯拉夫的年度最佳專輯獎。曲名本身就是這張碟的語言：〈Za železno zaveso〉（在鐵幕後面）、〈Enotni in trdi〉（團結而堅定）。兩位鼓手輪替讓節奏比首作更有推力。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f4a3bc88-5990-41b0-b2ed-c6d376f6e1c7",
+     "https://sl.wikipedia.org/wiki/Državni_ljubimci",
+     "https://sl.wikipedia.org/wiki/Najboljši_slovenski_albumi",
+     "https://en.wikipedia.org/wiki/Punk_rock_in_Yugoslavia",
+     "https://en.wikipedia.org/wiki/Pankrti"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "panopticon",
+  "name": "Panopticon",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2012,
+   2014
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Roads to the North",
+    "year": 2014,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Kentucky",
+    "year": 2012,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "paraf",
+  "name": "Paraf",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "A dan je tako lijepo počeo",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Izleti",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 2,
+   "facts": 8,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c54-b",
+    "album": "A dan je tako lijepo počeo",
+    "facts": [
+     {
+      "f": "里耶卡樂團 Paraf 的首張長片，1980 年春天發行；MB 的最早 release 記 1980 年 YU、廠牌 RTV Ljubljana、目錄號 LD 0607（en 維基把同一家廠牌寫成 ZKP RTLJ）。",
+      "src": "https://musicbrainz.org/release-group/12358675-3477-4daa-82d1-d1a150072de1"
+     },
+     {
+      "f": "樂團 1976 年由三名中學生 Valter Kocijančić（吉他、主唱）、Zdravko Čabrijan（貝斯）與 Dušan Ladavac「Pjer」（鼓）組成，1976 年 12 月 31 日在里耶卡的 Belvedere 首演。",
+      "src": "https://en.wikipedia.org/wiki/Paraf"
+     },
+     {
+      "f": "唱完這張，主唱兼吉他手 Kocijančić 就離團，他的說法是「我要說的都在那張唱片上說完了」；接手的是藝名 Vim Cola 的女聲 Pavica Mijatović。",
+      "src": "https://hr.wikipedia.org/wiki/Paraf_(sastav)"
+     },
+     {
+      "f": "2015 年克羅埃西亞版《Rolling Stone》的「1955–2015 百大南斯拉夫專輯」把本作列第 77。",
+      "src": "https://sr.wikipedia.org/wiki/100_најбољих_југословенских_албума_од_1955._до_2015._по_избору_часописа_„Ролинг_стоун“"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-b",
+    "album": "Izleti",
+    "facts": [
+     {
+      "f": "首張之後主唱兼吉他手 Valter Kocijančić 離團，女聲 Pavica Mijatović（藝名 Vim Cola）接手主唱，再加上吉他手 Mladen Vičić「Riči」與鍵盤手 Raoul Varlen——樂團的風格也跟著從龐克轉向受 Gang of Four 與 Wire 影響的後龐克。",
+      "src": "https://en.wikipedia.org/wiki/Paraf"
+     },
+     {
+      "f": "en 維基把本作形容成一張「合成器很重」的第二張錄音室專輯，代表曲是〈Pobuna bubuljica〉（青春痘起義）、〈Nestašni đački izleti〉（頑皮的學生遠足）、〈Javna kupatila〉（公共浴場）與〈Federico u bačvi〉（桶子裡的 Federico），最後一首的靈感來自 Federico Fellini 的《Casanova》。",
+      "src": "https://en.wikipedia.org/wiki/Paraf"
+     },
+     {
+      "f": "樂團第三張《Zastave》(1984) 取自 Miroslav Krleža 的同名長篇小說，錄音期間 22 歲的吉他手 Robert Tičić 腦溢血過世；1986 年樂團解散。",
+      "src": "https://en.wikipedia.org/wiki/Paraf"
+     },
+     {
+      "f": "樂團 1979 年的首張單曲〈Rijeka〉其實是 Ramones〈Chinese Rocks〉的翻唱，Kocijančić 卻掛自己是作者，用來測試當時的南斯拉夫樂評；只有《Džuboks》的記者 Petar Luković 認了出來。",
+      "src": "https://en.wikipedia.org/wiki/Paraf"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "A dan je tako lijepo počeo",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "歌詞太挑釁，於是唱片被歸進「低俗品」，處理方式是加稅。里耶卡樂團 Paraf 1980 年春天由 RTV Ljubljana 發行的這張首張長片，即使事後改過歌詞、換過封面也沒能免掉，〈Narodna pjesma〉收在碟上的是刪改版。十四首多半很短的一級龐克，吉他刷得粗、鼓打得直，錄音刻意不修飾，〈Pritanga i vaza〉還拿當時全國最紅的 Bijelo Dugme 開玩笑。唱完這張，主唱兼吉他手 Valter Kocijančić 就離團。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/12358675-3477-4daa-82d1-d1a150072de1",
+     "https://en.wikipedia.org/wiki/Paraf",
+     "https://hr.wikipedia.org/wiki/Paraf_(sastav)",
+     "https://sr.wikipedia.org/wiki/100_најбољих_југословенских_албума_од_1955._до_2015._по_избору_часописа_„Ролинг_стоун“"
+    ]
+   },
+   {
+    "album": "Izleti",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "換了主唱、換了樂器，同一支團的第二張唱片像另一個團。Valter Kocijančić 離團後，主唱換成藝名 Vim Cola 的 Pavica Mijatović，樂團也從龐克轉向受 Gang of Four 與 Wire 影響的後龐克。1981 年由 ZKP RTVL 發行的這張第二張合成器很重：鍵盤取代了刷弦的重量，Vim Cola 平直不使勁的唱腔讓歌詞的怪異更明顯。最冷的是 cold wave 的〈Tužne uši〉，副歌唱的是仰躺著哭、眼淚流進耳朵裡。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/2a5933ec-3a54-4312-9ceb-cc373978ec6a",
+     "https://en.wikipedia.org/wiki/Paraf",
+     "https://hr.wikipedia.org/wiki/Paraf_(sastav)"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pentagram",
+  "name": "Pentagram",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1993,
+   1994
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Relentless",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Be Forewarned",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "perfect",
+  "name": "Perfect",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1981,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Perfect",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Unu",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c130-a",
+    "album": "Perfect",
+    "facts": [
+     {
+      "f": "這是 Perfect 的首張錄音室專輯，1981 年由 Polskie Nagrania „Muza” 以黑膠與卡帶發行、只在波蘭境內流通。錄音在 Muza 位於華沙 Okaryny 街 1 號的錄音室，分 1981 年 2 月、5 月與 6 月的兩段錄音期完成；Zbigniew Hołdys 在 1979 年初加入樂隊、認識詞作者 Bogdan Olewicz 之後寫下這批曲子。1980 年底 Muza 先邀樂隊錄了一張四首歌的小專輯（〈Chcemy być sobą〉〈Coś dzieje się w mej biednej głowie〉〈Bla, bla, bla〉〈Nie płacz Ewka〉），之後才是這張。估計銷量超過一百萬張，2013 年 12 月獲頒白金唱片認證。",
+      "src": "https://pl.wikipedia.org/wiki/Perfect_(album)"
+     },
+     {
+      "f": "樂隊 1977／1978 年之交在華沙成立，最初叫 Perfect Super Show and Disco Band，名字取自 Fleetwood Mac 鍵盤手 Christine Perfect-McVie 的姓；1980 年正式定名 Perfect，經典編制是 Zbigniew Hołdys、Zdzisław Zawadzki、鼓手 Piotr Szkudelski、吉他手 Ryszard Sygitowicz 與主唱 Grzegorz Markowski。〈Nie płacz Ewka〉〈Ale wkoło jest wesoło〉〈Chcemy być sobą〉〈Niewiele ci mogę dać〉都出自這張。",
+      "src": "https://pl.wikipedia.org/wiki/Perfect_(zesp%C3%B3%C5%82_muzyczny)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c130-a",
+    "album": "Unu",
+    "facts": [
+     {
+      "f": "《UNU》是 Perfect 第二張錄音室專輯，1982 年由 Tonpress 發行。盤名來自戒嚴期間波蘭街頭隨處可見的軍用車輛牌照——那批牌照的字母就是 UNU 開頭，專輯正是在戒嚴令生效期間錄的。錄音由 Wojciech Przybylski 與 Jarosław Regulski 負責。十首全部 Zbigniew Hołdys 作曲，其中〈Co za hałas – co za szum〉〈A kysz – biała mysz〉〈Nie bój się tego wszystkiego〉三首詞曲都是他，其餘七首歌詞出自 Bogdan Olewicz；〈Autobiografia〉4:33 收在 A 面第五軌。第一次 CD 版 1991 年由原廠 Tonpress 發行，2024 年首次出 SACD。",
+      "src": "https://pl.wikipedia.org/wiki/UNU_(album)"
+     },
+     {
+      "f": "錄音編制：Zbigniew Hołdys 吉他與主唱、Grzegorz Markowski 主唱、Andrzej Nowicki 貝斯、Piotr Szkudelski 鼓、Andrzej Urny 吉他。首張《Perfect》(1981) 走 Polskie Nagrania „Muza” SX 2114，這張隔年改走 Tonpress SX-T 17，同一套 SX-T 編號裡 SX-T 16 是 Brygada Kryzys 的同名盤。",
+      "src": "https://pl.wikipedia.org/wiki/Tonpress"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Perfect",
+    "manifest": "onboarding-manifest-c130-20260917.json",
+    "desc": "團名取自 Fleetwood Mac 鍵盤手的姓，首張只在波蘭境內發行，估計賣了超過一百萬張。那位鍵盤手是 Christine Perfect-McVie，樂隊 1980 年才把原本冗長的團名縮成一個字。錄音分 1981 年 2 月、5 月與 6 月三段在華沙的 Muza 錄音室完成，曲子由 Hołdys 寫、Olewicz 填詞，〈Nie płacz Ewka〉就收在這 9 軌裡。同年由 Muza 以 SX 2114 發行黑膠與卡帶，2013 年 12 月獲頒白金認證。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=878de174-c9d0-4e31-9373-5c362568324c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://pl.wikipedia.org/wiki/Perfect_(album)",
+     "https://pl.wikipedia.org/wiki/Perfect_(zesp%C3%B3%C5%82_muzyczny)",
+     "https://itunes.apple.com/lookup?id=988439006&country=pl&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/878de174-c9d0-4e31-9373-5c362568324c"
+    ]
+   },
+   {
+    "album": "Unu",
+    "manifest": "onboarding-manifest-c130-20260917.json",
+    "desc": "軍用車牌開頭的三個字母 UNU，被拿來當第二張的盤名。那批牌照在戒嚴期間的波蘭街頭隨處可見，這張專輯也正是在戒嚴令生效期間錄的。十首全部由 Hołdys 作曲，其中三首連詞也是他寫的，其餘七首的詞出自 Olewicz，〈Autobiografia〉收在 A 面第五軌。1982 年由 Tonpress 以 SX-T 17 發行；首張走的是 Muza，隔年就換了廠牌。編制五人，兩個主唱交替。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=aa580551-f69e-3531-b348-ccc4b40583d1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://pl.wikipedia.org/wiki/UNU_(album)",
+     "https://pl.wikipedia.org/wiki/Tonpress",
+     "https://itunes.apple.com/lookup?id=1485640089&country=pl&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/aa580551-f69e-3531-b348-ccc4b40583d1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "periphery",
+  "name": "Periphery",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2010,
+   2026
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Periphery",
+    "year": 2010,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Pale White Dot",
+    "year": 2026,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "peter bjorn and john",
+  "name": "Peter Bjorn and John",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2008,
+   2016
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Seaside Rock",
+    "year": 2008,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Breakin' Point",
+    "year": 2016,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "petra",
+  "name": "Petra",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1974,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Petra",
+    "year": 1974,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Come and Join Us",
+    "year": 1977,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 18,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c72-a",
+    "album": "Petra",
+    "facts": [
+     {
+      "f": "Scott Bachmann 2014 年 3 月 6 日刊於「100 Greatest CCM Albums of the '70s」的條目記載：Petra 1972 年成軍於印第安納州 Fort Wayne——吉他手 Bob Hartman 與貝斯手 John DeGroff 都在當地的 Christian Training Center 就讀，與同學 Greg Hough、Bill Glover 組成樂團；團名取自希臘文的「磐石」。他們成了 Adam's Apple 這個場地的常客，與 Honeytree、Mike Warnke、Phil Keaggy 等耶穌運動的人同台，**Myrrh Records 的創辦人 Billy Ray Hearn 就是在那裡看了他們的現場之後，親自製作了這張碟**。",
+      "src": "https://greatest70salbums.blogspot.com/2014/03/92-petra-by-petra-1974.html"
+     },
+     {
+      "f": "英文維基的專輯條目記載：這張首作走的是中西部的 roots rock'n'roll、country rock 與 southern rock，那是樂團最初幾年的招牌；它比後來的 Petra 專輯粗糙、沒有日後的製作水準，但吉他技術亮眼，大量的雙吉他 solo 讓人想起 Allman Brothers、Wishbone Ash、Thin Lizzy 那一路用和聲主奏的樂團。**與後來的 Petra 不同，主唱是由兩位吉他手 Bob Hartman 與 Greg Hough 分擔的。**",
+      "src": "https://en.wikipedia.org/wiki/Petra_(album)"
+     },
+     {
+      "f": "英文維基的樂團條目記載：Petra 1972 年成軍、2006 年正式解散，被視為基督教搖滾與當代基督教音樂的先驅，1980 年代到 1990 年代初曾被稱為「全世界最受歡迎的基督教搖滾樂團」；三十多年間出了二十張錄音室專輯，銷量將近一千萬張，獲十三次葛萊美提名、得四座，並是第一支入選 Gospel Music Hall of Fame 的搖滾樂團。條目並記載樂團最初的風格「折衷」，取材自 The Eagles、Lynyrd Skynyrd 與 Kansas，早期專輯的電吉他雙主奏讓人想起 Allman Brothers Band。",
+      "src": "https://en.wikipedia.org/wiki/Petra_(band)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Petra",
+    "manifest": "onboarding-manifest-c72-20260904.json",
+    "desc": "一千美元的預算、兩個星期的錄期，主唱由兩位吉他手分擔。1972 年成軍於印第安納州 Fort Wayne，Bob Hartman 與 John DeGroff 都在當地的 Christian Training Center 就讀，團名取自希臘文的「磐石」。他們是 Adam's Apple 那個場地的常客，Myrrh 的創辦人 Billy Ray Hearn 在那裡看過現場之後親自製作了這張碟。維基把碟上大量的雙吉他和聲主奏比作 Allman Brothers。",
+    "sourceUrls": [
+     "https://greatest70salbums.blogspot.com/2014/03/92-petra-by-petra-1974.html",
+     "https://en.wikipedia.org/wiki/Petra_(album)",
+     "https://www.discogs.com/release/4890618-Petra-Petra",
+     "https://en.wikipedia.org/wiki/Petra_(band)",
+     "https://www.discogs.com/master/213917-Petra-Petra",
+     "https://www.furious.com/perfect/christianrock.html",
+     "https://musicbrainz.org/release-group/dbf7be54-e20e-39d9-ac67-46b53fb82ba0"
+    ]
+   },
+   {
+    "album": "Come and Join Us",
+    "manifest": "onboarding-manifest-c72-20260904.json",
+    "desc": "廠牌否決了用那首歌當盤名——那首歌日後被 Kiss 翻唱過。〈God Gave Rock And Roll To You〉是 Russ Ballard 替 Argent 寫的，Bob Hartman 本來想拿它當盤名，Myrrh 認為不妥、逼他改掉；碟上它放在 A1，B4 又來一次。同一家廠牌還在發行前抽掉了〈Killing My Old Man〉，理由是主管擔心那個比喻會被誤解，母版刻號因此留著 -RE。九軌錄於 Golden Voice Studios。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2762474-Petra-9-Come-And-Join-Us",
+     "https://en.wikipedia.org/wiki/Come_and_Join_Us",
+     "https://www.discogs.com/master/352880-Petra-9-Come-And-Join-Us",
+     "https://musicbrainz.org/release-group/e7fb4f0a-c69d-36d4-9958-1de27837df2d"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "phil keaggy",
+  "name": "Phil Keaggy",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "What a Day",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Love Broke Thru",
+    "year": 1976,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 18,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c72-a",
+    "album": "What a Day",
+    "facts": [
+     {
+      "f": "Both Sides Now Publications 的 New Song 廠牌史記載：New Song Records 是廣播人 Scott Ross 1973 年在紐約州 Ithaca 創立的；Ross 在 Freeville 的 Love Inn 做節目，節目被吉他手 Phil Keaggy 聽見，Ross 於是先辦了 New Song Productions，再從中成立一家唱片公司，「好讓 Phil Keaggy 有機會做他想做的任何事」。",
+      "src": "https://www.bsnpubs.com/word/newsong/newsong.html"
+     },
+     {
+      "f": "同一份廠牌史記載：Keaggy 是在 New Song Records 還不存在之前的 1973 年 1 月錄下這張碟的，它後來成了這家廠牌的第一號發行（NS 001）；廠牌一共只出了六張（NS 001 到 NS 006，最後一張是 Keaggy 1978 年的《The Master & the Musician》），之後 Ross 把母帶賣掉，廠牌結束。",
+      "src": "https://www.bsnpubs.com/word/newsong/newsong.html"
+     },
+     {
+      "f": "英文維基的 Phil Keaggy 條目記載：他在俄亥俄州 Hubbard 的農場長大，四歲時被抽水機掉落的水龍頭壓斷右手中指的一半，接回失敗，「從小就用九根手指長大」；1968 年他與鼓手 John Sferra、貝斯手 Steve Markulin 組了 Glass Harp，該團後來與 Decca Records 簽下多張唱片的合約。",
+      "src": "https://en.wikipedia.org/wiki/Phil_Keaggy"
+     },
+     {
+      "f": "Bob Gersztyn 2021 年 6 月刊於 Perfect Sound Forever 的專文把 Keaggy 稱為「出色的吉他手」，記他先與 Glass Harp 在底特律一帶的場子演出，1970 年代初才轉為純粹的 Jesus rock 藝人。",
+      "src": "https://www.furious.com/perfect/christianrock.html"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "What a Day",
+    "manifest": "onboarding-manifest-c72-20260904.json",
+    "desc": "唱片先錄好，出版它的公司才成立。廣播人 Scott Ross 在紐約州 Freeville 的 Love Inn 做節目，Keaggy 聽見了；Ross 先辦 New Song Productions，再從中開了一家唱片公司，「好讓 Phil Keaggy 有機會做他想做的任何事」。這張碟錄於 1973 年 1 月，後來成了廠牌的第一號發行；New Song 前後只出六張，之後 Ross 把母帶賣掉、廠牌結束。碟上他一人包辦所有樂器與人聲。",
+    "sourceUrls": [
+     "https://www.bsnpubs.com/word/newsong/newsong.html",
+     "https://en.wikipedia.org/wiki/What_a_Day",
+     "https://www.discogs.com/release/1476722-Phil-Keaggy-What-A-Day",
+     "https://en.wikipedia.org/wiki/Phil_Keaggy",
+     "https://www.furious.com/perfect/christianrock.html",
+     "https://www.discogs.com/master/381252-Phil-Keaggy-What-A-Day",
+     "https://www.discogs.com/release/2292037-Nancy-Honeytree-The-Way-I-Feel",
+     "https://musicbrainz.org/release-group/1a95ab33-6972-44a8-be4b-3131c2e6f4e2"
+    ]
+   },
+   {
+    "album": "Love Broke Thru",
+    "manifest": "onboarding-manifest-c72-20260904.json",
+    "desc": "節奏組是 Leland Sklar 的貝斯與 Jim Gordon 的鼓，鍵盤是 Larry Knechtel。他自己掛的是「所有吉他」。十首歌裡有三首的詞不是為這張碟寫的：A3 用的是 C.S. Lewis 的同名詩，B2 的詞出自 Beatrice Clelland，A5 那首詩的作者則是誤植，實際出自 Laura Sophia Soole。連開場的同名曲也不是他寫的，詞曲出自 Keith Green 與 Randy Stonehill。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2077091-Phil-Keaggy-Love-Broke-Thru",
+     "https://en.wikipedia.org/wiki/Love_Broke_Thru",
+     "https://www.discogs.com/master/599586-Phil-Keaggy-Love-Broke-Thru",
+     "https://musicbrainz.org/release-group/d008062b-5c40-4e56-978d-19a37672a0c9"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "phoenix",
+  "name": "Phoenix",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2006,
+   2009
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Wolfgang Amadeus Phoenix",
+    "year": 2009,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "It's Never Been Like That",
+    "year": 2006,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "prefab sprout",
+  "name": "Prefab Sprout",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Steve McQueen",
+    "year": 1985,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Jordan: The Comeback",
+    "year": 1990,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "premiata forneria marconi",
+  "name": "Premiata Forneria Marconi",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1972,
+   1972
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Storia di un minuto",
+    "year": 1972,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Per un amico",
+    "year": 1972,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Storia di un minuto",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1970 年成軍的米蘭五人組首作，1972 年 1 月由 RCA 旗下 Numero Uno 發行，上市一週就登上義大利專輯榜冠軍——義大利榜此前從未有唱片做到。Mauro Pagani 的長笛與小提琴、Flavio Premoli 的 Mellotron 與 Minimoog、Franco Mussida 的十二弦吉他與 mandocello 疊出交響式的織體，〈Impressioni di settembre〉與〈La carrozza di Hans〉是先前那張單曲的重錄版，〈È festa〉後來改題〈Celebration〉在北美電台流通。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Storia_di_un_minuto",
+     "https://en.wikipedia.org/wiki/Premiata_Forneria_Marconi",
+     "https://musicbrainz.org/release-group/8a3ea51c-ea62-3ebb-9b05-624aec86fae5"
+    ]
+   },
+   {
+    "album": "Per un amico",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "第二張，1972 年 11 月由 Numero Uno 發行，改用十六軌錄音，五首曲子從七分多鐘的〈Appena un po'〉排到八分半的〈Il banchetto〉，長笛、大鍵琴與 Mellotron 的配置此後成了義大利 prog 的通用語法。Emerson, Lake & Palmer 在義大利巡演時注意到他們，把樂團簽進自家的 Manticore；1973 年 Peter Sinfield 為同一批曲目另寫英文詞、重錄成《Photos of Ghosts》打進 Billboard 200 第 180 名，把團名縮寫成 PFM 也是他的主意。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Per_un_amico",
+     "https://en.wikipedia.org/wiki/Premiata_Forneria_Marconi",
+     "https://musicbrainz.org/release-group/6b2b3082-974b-3e58-b473-a8f19fc60075"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "preoccupations",
+  "name": "Preoccupations",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2015,
+   2025
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ill at Ease",
+    "year": 2025,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Viet Cong",
+    "year": 2015,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "primus",
+  "name": "Primus",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1999,
+   2014
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Antipop",
+    "year": 1999,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Primus & the Chocolate Factory With the Fungi Ensemble",
+    "year": 2014,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "procol harum",
+  "name": "Procol Harum",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1967,
+   1969
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "A Salty Dog",
+    "year": 1969,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Procol Harum",
+    "year": 1967,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Procol Harum",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1967 年 4 到 6 月錄於倫敦 Olympic，Denny Cordell 製作。美版由 Deram 在九月發行，把已經賣爆的〈A Whiter Shade of Pale〉放在開場；英國 Regal Zonophone 十二月才發，照當年慣例不收該單曲。Gary Brooker 的鋼琴與嗓子對上 Matthew Fisher 的 Hammond，壓軸〈Repent Walpurgis〉整首由 Fisher 寫成，取材自 Widor 與巴哈。英版只發單聲道，原始多軌母帶至今下落不明，十首原曲的立體聲混音可能永遠做不出來。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Procol_Harum_(album)",
+     "https://musicbrainz.org/release-group/59c4b156-e1f6-374c-a5e6-ea0ccd51d433"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "protomartyr",
+  "name": "Protomartyr",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2017,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Relatives in Descent",
+    "year": 2017,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ultimate Success Today",
+    "year": 2020,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "psychic tv",
+  "name": "Psychic TV",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1982,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Force the Hand of Chance",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dreams Less Sweet",
+    "year": 1983,
+    "genres": [
+     "folk",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "public image ltd",
+  "name": "Public Image Ltd",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2015,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "End of World",
+    "year": 2023,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "What the World Needs Now…",
+    "year": 2015,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "radar",
+  "name": "Radar",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Trofee",
+    "year": 1985,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Baltic Coast",
+    "year": 1987,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c123-a",
+    "album": "Trofee",
+    "facts": [
+     {
+      "f": "release-group 6e2b0208 的欄位：title「Trofee」、artist-credit「Radar」（藝人實體 5a6b2909，Group／EE，disambiguation「Estonian band」，**life-span 1978–1988，ended=true**）、first-release-date **1985**、primary-type Album、secondary-types 空。轄下 **1 個 release**：cdaa0ada（1985／SU／Official、Мелодия **С60 21713 006**、**12\" Vinyl、8 軌**、script=Latn／lang=est）。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=6e2b0208-e86b-4a0e-87fe-5186ec6456ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "藝人 5a6b2909 的 member-of-band 關係（十八筆，全部有起訖年）：**Jaak Joala（lead vocals，original）1978–1984**、Sergei Pedersen（keyboard，original）1978–1988、Paap Kõlar（drums）1979–1988、Riho Lilje（guitar，original）1978–1982、Vladimir Šeripov（bass guitar，original）1978–1980、**Raul Vaigla（bass guitar）1982–1985**、Aare Põder（keyboard）1982–1985、Nevil Blumberg（guitar）1981–1985、**Valeri Belinov（guitar）1985–1987**、Paul Kikerpuu（bass guitar）1985–1988、Raivo Narits（keyboard）1985–1988、Ele Kõlar 與 Kaja Kõlar 1982–1984。**1985 這一年正好是三位成員區間的結束年、另外三位的起始年。**",
+      "src": "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c123-a",
+    "album": "Baltic Coast",
+    "facts": [
+     {
+      "f": "release-group 4215b661 的欄位：title「Baltic Coast」、artist-credit「Radar」（藝人實體 5a6b2909，Group／EE，1978–1988）、first-release-date **1987**、primary-type Album、secondary-types 空。轄下 **1 個 release**：84fcf30c（1987／SU／Official、Мелодия **С60 25125 006**、**12\" Vinyl、7 軌**、script=Latn／**lang=est**）。**盤名是英文，但語言欄與七個曲名都是愛沙尼亞語。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=4215b661-570a-4777-8906-56f27d31a5f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "藝人 5a6b2909 的 member-of-band 關係裡，**1987 這一年在區間內的是**：Sergei Pedersen（keyboard，original）1978–1988、Paap Kõlar（drums）1979–1988、Valeri Belinov（guitar）1985–1987、Paul Kikerpuu（bass guitar）1985–1988、Raivo Narits（keyboard）1985–1988。**1978 年那批原始成員裡，到 1987 年只剩 Sergei Pedersen 一位還在區間內。** 藝人端點全列 5 個 release-group，本張是名下第二張、也是最後一張蘇維埃時期的 Album。",
+      "src": "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Trofee",
+    "manifest": "onboarding-manifest-c123-20260910.json",
+    "desc": "中段四首都貼著五分鐘，第七軌 8:08 突出來。開場〈Tipptund kesklinnas〉4:46 之後接的是〈Promenaad〉5:00、〈Trofee〉5:10、〈Portree〉5:02，第七軌〈Konflikt〉8:08 是全片最長，末軌〈Mäng〉2:30 最短，兩端差了三倍多。盤面是 1985 年 Мелодия С60 21713 006、12 吋八軌。1985 這一年正好是三位團員在團區間的結束年，也是另外三位的起始年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6e2b0208-e86b-4a0e-87fe-5186ec6456ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=5a6b2909-7f30-48fd-8338-5fdce2dee4c5&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1796234879&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/6e2b0208-e86b-4a0e-87fe-5186ec6456ca"
+    ]
+   },
+   {
+    "album": "Baltic Coast",
+    "manifest": "onboarding-manifest-c123-20260910.json",
+    "desc": "盤名是英文的，七個曲名卻全是愛沙尼亞語。第四軌〈Balti kallas〉就是盤名的愛沙尼亞語直譯，其餘六首從轉彎、加急電報排到長路。全片的重心在第二、三軌：〈Suitsune valgus〉9:12 與〈Päiksepiste〉9:37 連放，合起來近十九分鐘，其餘五首都落在 3:30 到 7:00 之間。盤面是 1987 年 Мелодия С60 25125 006、12 吋七軌；到這一年，1978 年那批原始成員只剩一位還在區間內。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4215b661-570a-4777-8906-56f27d31a5f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=6e2b0208-e86b-4a0e-87fe-5186ec6456ca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/5a6b2909-7f30-48fd-8338-5fdce2dee4c5?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=860048158&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/release-group/4215b661-570a-4777-8906-56f27d31a5f1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "randy stonehill",
+  "name": "Randy Stonehill",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1976,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Welcome to Paradise",
+    "year": 1976,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Sky Is Falling",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 17,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c72-b",
+    "album": "Welcome to Paradise",
+    "facts": [
+     {
+      "f": "原盤 credit：Randy Stonehill 人聲與木吉他；Larry Norman 電吉他、鋼琴與和聲，並掛製作、編曲、攝影與專輯設計；Jon Linn 主奏吉他、Tim Ayres 貝斯、Mark Walker 鼓；Tony Harris 負責譜與指揮；工程 Andy Johns、共同工程 Tom Trefethen；字體設計 Joe Taylor；經紀 Street Level Artists Agency。",
+      "src": "https://www.discogs.com/release/3163046-Randy-Stonehill-Welcome-To-Paradise"
+     },
+     {
+      "f": "MusicBrainz release-group 4057d004 的 first-release-date 是 1976，轄下兩筆 release 都是 Official；MB 上另有 1973 年的《Get Me Out of Hollywood》（44d8433f）與 2021 年的《Born Twice [Deluxe]》（48ad626c，primary-type 為 null）兩個獨立的 release-group，與本張不是同一筆。",
+      "src": "https://musicbrainz.org/release-group/4057d004-a0e1-3b1d-a72a-2d4f77187b82"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Welcome to Paradise",
+    "manifest": "onboarding-manifest-c72-20260904.json",
+    "desc": "全部十首歌都是他寫的，彈電吉他、彈鋼琴、唱和聲的卻是製作人。碟出在 Solid Rock Records，Larry Norman 掛製作、編曲與專輯設計，工程是 Andy Johns。A4 的歌名就叫〈Lung Cancer〉；A5〈Puppet Strings〉是重錄，原版收在他 1973 年在倫敦錄的那張。2001 年的《CCM Presents: The 100 Greatest Albums in Christian Music》把它排第十三。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3163046-Randy-Stonehill-Welcome-To-Paradise",
+     "https://en.wikipedia.org/wiki/Welcome_to_Paradise_(album)",
+     "https://www.discogs.com/master/412593-Randy-Stonehill-Welcome-To-Paradise",
+     "https://musicbrainz.org/release-group/4057d004-a0e1-3b1d-a72a-2d4f77187b82"
+    ]
+   },
+   {
+    "album": "The Sky Is Falling",
+    "manifest": "onboarding-manifest-c72-20260904.json",
+    "desc": "製作人在同一張碟上彈了日本箏、鋼鼓、馬林巴和自鳴琴。Larry Norman 的樂器欄還有木吉他、電吉他、電貝斯、鋼琴與口琴，他同時還掛編曲、製作、專輯設計、美術與攝影，並在內頁寫了一篇短評。Andy Johns 的欄位則寫著「追加工程與嗅覺解體」。十首歌全部由 Stonehill 一人所寫，沒有一首短於四分鐘，最長的〈Venezuela〉六分五十秒。工程是 Ken Suesov，母帶交 Bernie Grundman 處理。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2011686-Randy-Stonehill-The-Sky-Is-Falling",
+     "https://en.wikipedia.org/wiki/The_Sky_Is_Falling_(album)",
+     "https://www.discogs.com/master/228069-Randy-Stonehill-The-Sky-Is-Falling",
+     "https://musicbrainz.org/release-group/596d91a2-ddae-3143-8dc1-4cbb8f6311a5"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rare earth",
+  "name": "Rare Earth",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1969,
+   1970
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Get Ready",
+    "year": 1969,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ecology",
+    "year": 1970,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Ecology",
+    "manifest": "onboarding-manifest-c38-soul-20260823.json",
+    "desc": "Motown 為進軍白人搖滾市場設立新廠牌時還沒想好名字，樂團開玩笑提議就叫 Rare Earth——公司真的採用了。掛名同名廠牌的 1970 年第三張專輯《Ecology》由 Norman Whitfield 與 Tom Baird 製作，核心是把 Temptations 的〈(I Know) I'm Losing You〉拉長到近十一分鐘的翻唱，另收〈Born to Wander〉與 Beatles 翻唱〈Eleanor Rigby〉。六人自寫自奏，鼓手 Pete Rivera 兼主唱，長篇即興與靈魂樂律動並置，是這支樂團最完整的一次錄音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ecology_(album)",
+     "https://musicbrainz.org/release-group/4683c6ee-6863-38be-b086-ef76b357fcfd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "refused",
+  "name": "Refused",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   1998
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Shape of Punk to Come",
+    "year": 1998,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Songs to Fan the Flames of Discontent",
+    "year": 1996,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-b",
+    "album": "Songs to Fan the Flames of Discontent",
+    "facts": [
+     {
+      "f": "1996 年瑞典原盤（MB release 68f3f5ba，Startracks、目錄號 STAR 438-2、barcode 8564649443823）是一張 12 軌 CD：〈Rather Be Dead〉〈Coup d’ètat〉〈Hook, Line and Sinker〉〈Return to the Closet〉〈Life Support Addiction〉〈It’s Not O.K…〉〈Crusader of Hopelessness〉〈Worthless Is the Freedom Bought…〉〈This Trust Will Kill Again〉〈Beauty〉〈Last Minute Pointer〉〈The Slayer〉。",
+      "src": "https://musicbrainz.org/release/68f3f5ba-f10b-3efe-9ae9-430d9c63fc1c"
+     },
+     {
+      "f": "該原盤的逐軌曲長：最短的〈It’s Not O.K…〉63 秒、〈Worthless Is the Freedom Bought…〉93 秒，最長的〈Return to the Closet〉229 秒，其餘各軌落在 139 到 195 秒之間。",
+      "src": "https://musicbrainz.org/release/68f3f5ba-f10b-3efe-9ae9-430d9c63fc1c"
+     },
+     {
+      "f": "英文維基〈Songs to Fan the Flames of Discontent〉記：1996 年 6 月 7 日發行，廠牌為美國 Victory Records、瑞典 Startrec、德國 We Bite，1995 年 12 月錄音，製作人 Pelle Gunnerfeldt，1997 年由 Burning Heart 與 Victory 再發、2004 年出重製版；全長 30:30。",
+      "src": "https://en.wikipedia.org/wiki/Songs_to_Fan_the_Flames_of_Discontent"
+     },
+     {
+      "f": "同一條目寫明這是 Refused 的第二張全長專輯，排在《This Just Might Be… the Truth》之後、《The Shape of Punk to Come》之前，並記載本作是樂團「尖叫式唱腔」取代先前吼腔的起點、帶有金屬影響，這些手法「發展成下一張《The Shape of Punk to Come》上聽到的東西」。",
+      "src": "https://en.wikipedia.org/wiki/Songs_to_Fan_the_Flames_of_Discontent"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Songs to Fan the Flames of Discontent",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "成員到 1998 年最後一場演出為止，全都是純素直刃。樂團 1991 年初成立於瑞典 Umeå，1995 年 12 月錄音，製作人 Pelle Gunnerfeldt，唱片隨附一本闡述政治主張的同人誌，盤名取自 1909 年版的 IWW 歌本。英文維基把本作記成尖叫唱腔取代吼腔的起點，這套手法後來長成下一張《The Shape of Punk to Come》。1996 年瑞典原盤十二軌，〈Rather Be Dead〉開場、〈The Slayer〉收尾。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/857ba0e6-3a30-31b0-938f-41e9b88adde1",
+     "https://musicbrainz.org/release/68f3f5ba-f10b-3efe-9ae9-430d9c63fc1c",
+     "https://en.wikipedia.org/wiki/Songs_to_Fan_the_Flames_of_Discontent",
+     "https://en.wikipedia.org/wiki/Refused",
+     "https://music.apple.com/us/album/1446751241"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "reo speedwagon",
+  "name": "REO Speedwagon",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1978,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Hi Infidelity",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "You Can Tune a Piano, but You Can't Tuna Fish",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "You Can Tune a Piano, but You Can't Tuna Fish",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1978 年的第七張，首次由主唱 Kevin Cronin 與吉他手 Gary Richrath 共同製作，也是 Bruce Hall 接替 Gregg Philbin 打貝斯的第一張。專輯衝到美國第 29 名、認證雙白金，是樂團首度打進前四十。〈Roll With the Changes〉從流動的鋼琴句進到全速搖滾，〈Time for Me to Fly〉單曲只到第 56 名，卻靠 FM 電台長年不墜，Dolly Parton 後來以 bluegrass 編制翻唱。魚頭插音叉的封面日後屢被列入最糟封面名單。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/You_Can_Tune_a_Piano,_but_You_Can%27t_Tuna_Fish",
+     "https://musicbrainz.org/release-group/d8eb8a0f-69d7-33b1-a582-9bbb8d2d1a6d"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "republika",
+  "name": "Republika",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1983,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Nowe sytuacje",
+    "year": 1983,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Nieustanne Tango",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c130-a",
+    "album": "Nowe sytuacje",
+    "facts": [
+     {
+      "f": "這是 Republika 的首張專輯，1983 年由 Polton 發行，在「Wawrzyszew Studio」與 Polskie Nagrania 的錄音室錄製。發行一個月內就賣出 26 萬張，儘管定價 700 茲羅提、是當時其他專輯約 160 茲羅提的四倍多。1984 年在英國以《1984》為名發行英語版。十首全部 Grzegorz Ciechowski 詞曲，只有〈My lunatycy〉的曲是 Ciechowski 與 Zbigniew Krzywański 合寫；編制是 Ciechowski 主唱、鋼琴、Moog、長笛，Sławomir Ciesielski 鼓，Krzywański 吉他，Paweł Kuczyński 貝斯。Polton 本身是 1983 年在華沙成立的唱片公司，與 Savitor、Arston 並列三家最知名的「波僑資本」廠牌（有海外波蘭裔資本參股的公司）。",
+      "src": "https://pl.wikipedia.org/wiki/Nowe_sytuacje"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c130-a",
+    "album": "Nieustanne Tango",
+    "facts": [
+     {
+      "f": "編制與首張相同：Grzegorz Ciechowski 主唱、鋼琴、Moog，Sławomir Ciesielski 鼓，Zbigniew Krzywański 吉他，Paweł Kuczyński 貝斯。1991 年 MMPP 與 1998 年 Sound-Pol 把它與《Nowe sytuacje》併成一張再發（少了〈Wielki hipnotyzer〉），2002 年 Pomaton EMI 把它與英語版《1984》併發——那是《1984》第一次在波蘭市場出現。",
+      "src": "https://pl.wikipedia.org/wiki/Nieustanne_tango"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Nowe sytuacje",
+    "manifest": "onboarding-manifest-c130-20260917.json",
+    "desc": "定價是別人專輯的四倍多，一個月仍賣掉 26 萬張。一張標 700 茲羅提，當時其他專輯大約 160。錄音在 1982 年 9 月的華沙完成，1983 年由 Polton 以 LPP-003 發行；Polton 是同年在華沙成立、有海外波蘭裔資本參股的公司。十首全部由 Grzegorz Ciechowski 包辦詞曲，只有一首的曲與吉他手合寫，他同時負責主唱、鋼琴、Moog 與長笛。1984 年這張在英國出了英語版《1984》。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=2473b55b-0817-3bc5-9c61-e35d70b46bfa&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://polskirock.eu/plyta/republika-nowe-sytuacje-lpp003/",
+     "https://pl.wikipedia.org/wiki/Nowe_sytuacje",
+     "https://itunes.apple.com/lookup?id=697064630&country=pl&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/2473b55b-0817-3bc5-9c61-e35d70b46bfa"
+    ]
+   },
+   {
+    "album": "Nieustanne Tango",
+    "manifest": "onboarding-manifest-c130-20260917.json",
+    "desc": "錄到一半廠牌換了總經理、退出合約，首版只壓 46000 張，樂隊告上法院還輸了。那個壓量大約是前一張的六分之一，封套品質也差。這張 1984 年由 Polton 以 LPP-012 發行，九首全部由 Grzegorz Ciechowski 詞曲，編制與首張相同。收尾的〈Poranna wiadomość〉在 1985 年由廠牌拿去國外宣傳。2002 年它與英語版《1984》併發，那是《1984》第一次在波蘭市場出現。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=ad3bbc45-2b8d-3988-b708-ec1f65c385f1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://pl.wikipedia.org/wiki/Nieustanne_tango",
+     "https://itunes.apple.com/lookup?id=905423796&country=pl&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/ad3bbc45-2b8d-3988-b708-ec1f65c385f1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ressurection",
+  "name": "Ressurection",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1991,
+   1994
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "I Refuse.",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ressurection",
+    "year": 1991,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "I Refuse.",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "同年的 CD 版比黑膠多出三十分四十秒，多出來的三軌一個曲名也沒有。那是 CD 版後面多接的三段無名內容，其中一段是二十二分半的現場錄音，演奏年沒有記。黑膠九軌從〈Build〉到〈Suffocate〉合計 28 分 38 秒，最長的〈Culture〉4:27、最短的〈Chains〉1:56。這張 12 吋出在 1994 年的美國 New Age，編號 NA 19；掛名比正確的拼法少一個字母。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2e9c01a6-5602-425c-a800-2e8a66398a99?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=2e9c01a6-5602-425c-a800-2e8a66398a99&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1222092191&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=6401b0cd-4e09-4e27-a46e-af80275d366b&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/2e9c01a6-5602-425c-a800-2e8a66398a99"
+    ]
+   },
+   {
+    "album": "Ressurection",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "中間兩軌的長度一秒不差，都是兩分零三秒。兩端則各自拉長：〈Blindside〉3:17 開場、〈Suffocate〉4:41 收尾，後者比中間那兩首長了兩分三十八秒，四軌合計 12 分 4 秒。四個曲名全是單詞或單一動作，沒有一個超過兩個字。四年後的 CD 版四軌同名同序、長度一秒不差地照搬，連目錄編號都沿用 NA10。廠牌欄寫的是 New Age Records。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/25770842-41a3-496d-818e-e56f0e9b6878?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=25770842-41a3-496d-818e-e56f0e9b6878&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=6401b0cd-4e09-4e27-a46e-af80275d366b&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=262535810&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/25770842-41a3-496d-818e-e56f0e9b6878",
+     "https://en.wikipedia.org/wiki/New_Age_Records"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "richard thompson",
+  "name": "Richard Thompson",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1972,
+   1991
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Henry the Human Fly",
+    "year": 1972,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Rumor and Sigh",
+    "year": 1991,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Henry the Human Fly",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Richard Thompson 離開 Fairport Convention 之後的首張個人作，1972 年由 Island 在英國、Reprise 在美國發行。Thompson 自陳它一度是華納目錄裡最滯銷的一張，日後卻被 Mojo 選入百大吉他專輯。〈Roll Over Vaughn Williams〉〈The New St. George〉把英格蘭傳統曲調和長號、薩克斯風、手風琴、提琴拼在一起；Sandy Denny 與 Ashley Hutchings 客串，不久後成為他妻子的 Linda Peters 在此獻聲和音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Henry_the_Human_Fly",
+     "https://musicbrainz.org/release-group/535803f2-0ed6-3178-aa2a-4794f6a477e7"
+    ]
+   },
+   {
+    "album": "Rumor and Sigh",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Richard Thompson 離開 Fairport Convention 後的第十三張作品，1991 年 5 月由 Capitol 發行，替他拿下 1992 年葛萊美最佳另類音樂專輯提名，也是他首度進入英國專輯榜前四十（第 32 名）。從未發行單曲的〈1952 Vincent Black Lightning〉成了他最常被點的曲子，2011 年入選《時代》All-TIME 100 Songs；〈I Feel So Good〉則是他在美國成績最好的單曲。專輯名取自 Archibald MacLeish 的詩句。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rumor_and_Sigh",
+     "https://musicbrainz.org/release-group/8b1166d9-6b5c-3496-8dbd-91d2529f13f0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ride",
+  "name": "Ride",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   1992
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Going Blank Again",
+    "year": 1992,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Nowhere",
+    "year": 1990,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "rina sawayama",
+  "name": "Rina Sawayama",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   2020,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sawayama",
+    "year": 2020,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Hold the Girl",
+    "year": 2022,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "roy harper",
+  "name": "Roy Harper",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1970,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Flat Baroque and Berserk",
+    "year": 1970,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Stormcock",
+    "year": 1971,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Flat Baroque and Berserk",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Roy Harper 的第四張錄音室作，1970 年 1 月由 Harvest 發行，Peter Jenner 製作、錄於 Abbey Road，是他首度進榜的唱片，登上英國專輯榜第 20 名。〈I Hate the White Man〉以毫不留情的詞句成為他最受爭議的作品；〈Another Day〉日後由 Kate Bush 與 Peter Gabriel 對唱、This Mortal Coil 收進《It'll End in Tears》。終曲〈Hell's Angels〉由 The Nice 伴奏，Keith Emerson 掌鍵盤。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Flat_Baroque_and_Berserk",
+     "https://musicbrainz.org/release-group/f6b8c04e-9222-3e51-824b-ea27d407adaa"
+    ]
+   },
+   {
+    "album": "Stormcock",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "1971 年 5 月由 Harvest 發行的 Roy Harper 第五張作品，全片只有四首長曲，David Bedford 的管風琴與管弦編寫托著 Harper 的六弦與十二弦木吉他。〈The Same Old Rock〉由 Jimmy Page 客串吉他，因合約緣故掛名 S. Flavius Mercurius；〈Hors d'Oeuvres〉取材自死囚 Caryl Chessman。唱片公司當年幾乎不作宣傳，Harper 自陳《Stormcock》就這樣滲了出去。2013 年 NME 五百大專輯榜將它列在第 377 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Stormcock_(album)",
+     "https://musicbrainz.org/release-group/22968837-c5c8-3fdc-b582-960b62a4b8bf"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "royal trux",
+  "name": "Royal Trux",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Twin Infinitives",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cats and Dogs",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51a-d",
+    "album": "Cats and Dogs",
+    "facts": [
+     {
+      "f": "這張是獨立圈比較消化得了的一張，也是促成他們被 Virgin Records 簽下的作品；1994 年的 Virgin 合約讓 Herrema 與 Hagerty 在維吉尼亞山區買下一座偏僻的農莊，一部分改建成錄音室。",
+      "src": "https://www.thelineofbestfit.com/reviews/albums/royal-trux-royal-trux-twin-infinitives-untitled-cats-and-dogs-44465"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Cats and Dogs",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "請來一組鼓和貝斯之後，這支團才終於長出搖滾的形狀。1990 年的雙專輯《Twin Infinitives》還走解構路線，這張補進吉他、鼓與打擊三名樂手，正規節奏組把原本鬆散的即興架構釘成了歌。11 首全由 Neil Hagerty 與 Jennifer Herrema 寫成，1993 年 6 月 21 日由 Drag City 發行。評價普遍甚高，也正是這張讓 Virgin 在 1994 年簽下他們，兩人用合約的錢在維吉尼亞山區買下一座農莊。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Cats_and_Dogs_(Royal_Trux_album)",
+     "https://www.thelineofbestfit.com/reviews/albums/royal-trux-royal-trux-twin-infinitives-untitled-cats-and-dogs-44465",
+     "https://musicbrainz.org/release-group/2e5c1b32-2762-3606-b724-7bde9d4d814f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ruja",
+  "name": "Ruja",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1971,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ruja",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Algus (Studio 1971-1975)",
+    "year": 1971,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c123-a",
+    "album": "Ruja",
+    "facts": [
+     {
+      "f": "藝人 bac75c73 的 member-of-band 關係（有起訖年）：**Urmas Alender 1971-09–1988**（跨完整團史）、**Rein Rannap 1971-09–1975 與 1980–1983 兩段**、Jaanus Nõgisto 1972–1988、Tiit Haagma 1972-02–1978 與 1980–1983、Margus Kappel（piano／synthesizer）1975–1980、Jaan Karp 1981–1983、Andrus Vaht 1971–1976 與 1977–1978、Raul Sepper 1971-09–1972-02。**1982 這一年落在 Alender／Rannap／Nõgisto／Haagma／Karp 的在團區間內。**",
+      "src": "https://musicbrainz.org/ws/2/artist/bac75c73-9d3b-4819-800c-0e1050eb8ff0?fmt=json&inc=artist-rels+annotation"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c123-a",
+    "album": "Algus (Studio 1971-1975)",
+    "facts": [
+     {
+      "f": "release-group 71cbc804 的欄位：title「Algus (Studio 1971-1975)」、artist-credit「Ruja」、first-release-date **2020-08-20**、primary-type Album、**secondary-types [Compilation]**。轄下只有 **1 個 release**（c5df899e、2020-08-20／**XW**／Official、**Digital Media 9 軌**、barcode 3616407775624、script=Latn／lang=est）。**label-info 是空的——這張在資料庫端沒有任何廠牌欄位值。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=71cbc804-92f3-4fd8-815c-75d63bc79567&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "同一天（2020-08-20）藝人名下另有 **8 個 Compilation**：《Algu (Live 1971-1974)》（secondary-types 是 Compilation+**Live**）、《Esimene》、《Teine (Ilmumata 1982)》、《Kirjanduslik I (1976-1977)》、《Kirjanduslik II (1978-1980)》、《Pop RUJA (1981-1982)》、《Rahvuslik Rokk (1980-1984)》、《Hiline i (1982-1985)》、《Hiline II (1986-1987)》。**本張是這批切法裡唯一標「Studio」且年份區間從樂團起點 1971 開始的一種。** 逐筆覆核《Algu (Live 1971-1974)》的九軌，與本張九軌**無一重疊**（全是不同曲名，且全標 (Live)）。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0"
+     },
+     {
+      "f": "資料庫端 Ruja 名下 1971–1975 這段沒有任何 release-group：最早的是 1979 年的 EP，最早的 Album 是 1982 年那張。**本張的 1971–1975 這個區間，來源是盤名本身的括號，不是欄位值。**",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Ruja",
+    "manifest": "onboarding-manifest-c123-20260910.json",
+    "desc": "同一張盤留下三套曲名，十個位置與十個長度完全相同。愛沙尼亞語、俄語與英語各一套，第三軌〈To Mr. Lennon〉是三套裡唯一拼寫一模一樣的一首。正式盤面是 1982 年 Мелодия С60-16885-6、12 吋十軌，另外兩筆掛同一個目錄號的，是同內容的翻譯盤面。那十軌從 1:49 到 4:51，最短的〈Eile nägin ma eestimaad!〉排在第九，最長的〈Siin oled sündinud〉收尾。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/release/7f57d7a7-f30a-449a-b67b-16769617b3b8?fmt=json&inc=annotation+artist-rels+recording-level-rels+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/bac75c73-9d3b-4819-800c-0e1050eb8ff0?fmt=json&inc=artist-rels+annotation",
+     "https://itunes.apple.com/lookup?id=1525882777&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release?release-group=f8c2cb64-0a06-44a4-b902-535796b8bceb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/release-group/c51a3b39-eda4-4c0c-bc5c-9f61b1e2b811"
+    ]
+   },
+   {
+    "album": "Algus (Studio 1971-1975)",
+    "manifest": "onboarding-manifest-c123-20260910.json",
+    "desc": "盤名標的錄音區間從 1971 起算，這九軌到 2020 年才成套出版。九軌只有數位一種形態，端上沒有登記任何廠牌，盤名括號裡的「Studio」是唯一寫明錄音室的地方。開場〈Zeppelini triumf〉6:15 比其餘八軌都長，後面收攏在 2:33 到 4:13 之間，最短的是〈Pajats〉2:33。同一天這個掛名一口氣出了九種切法，這一種是唯一標「Studio」、區間從 1971 起算的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=71cbc804-92f3-4fd8-815c-75d63bc79567&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1525889897&entity=song&country=ee&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=bac75c73-9d3b-4819-800c-0e1050eb8ff0&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/71cbc804-92f3-4fd8-815c-75d63bc79567",
+     "https://music.apple.com/ee/album/1525889897"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "saint etienne",
+  "name": "Saint Etienne",
+  "tier": "C",
+  "cards": 2,
+  "mainGenre": "rock",
+  "yearRange": [
+   1991,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Foxbase Alpha",
+    "year": 1991,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "So Tough",
+    "year": 1993,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ }
+]

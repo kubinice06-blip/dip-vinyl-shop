@@ -35,7 +35,7 @@ description: 跑 dip vinyl 藝人介紹產線（點藝人名跳出的小視窗�
 - 主線：派工只給路徑、代理回報限 10 行、進行中的 research／output 用 `.git/info/exclude` 暫時排除（驗收時 `git add -f`），避免 stop hook 逼出 checkpoint 回合。
   **主線上下文超過約 25 萬就開新工作階段**；狀態都在 progress.json、rulings 與 cache/，換場不丟東西。
 
-## 接力節奏（併行上限四支）
+## 接力節奏（併行不設上限，2026-10-03 店主指示）
 
 批 N 補洞交齊 → 派批 N 寫作 2 支 ＋ 批 N+1 補洞前 2 組；批 N 寫作交件 → 派批 N+1 補洞後 2 組，主線審批 N、上架批 N。
 上架嚴格照批號順序，一次只審一批。長接力用 `send_later` 排 25 分鐘自我 check-in。
