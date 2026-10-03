@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 258 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 263 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -262,3 +262,8 @@
 | ar-c-005 | ジョージ大塚トリオ | Page 1 | 三重奏是他 1966 年組起的第一支樂團 | 日文維基寫 1966 年組成；arban 訃報寫 1965 年起以ジョージ大塚トリオ走紅，年份來源不一致。建議改成『1960 年代中期』。 | https://www.arban-mag.com/article/52595 |
 | ar-c-005 | 張露 | 繁星點點 張露／百代中國時代曲名典13：張露 給我一個吻 | 1975 年退出歌壇（離 1973 年這張不到兩年） | zh／en 維基支持 1975 年；但 TVBS 與新浪的訃聞都寫她 1957 年婚後息影。兩說衝突、未能裁定（1973 年確有專輯，傾向 1975 年說法），請店主視需要把「退出歌壇」寫成「淡出」或保留 1975 說並知悉分歧。 | https://ent.sina.cn/music/ygangtai/2009-02-02/detail-icczmvun3359630.d.html |
 | ar-c-005 | 渋谷毅 | ドリーム | 高中時聽到 Erroll Garner 才轉向爵士 | ja 維基寫 Erroll Garner，但 oil-magazine 的本人訪談說是同學帶來 George Shearing 的唱片讓他大受衝擊；兩說不一，建議改成『高中時接觸爵士』或明寫出處。 | https://oil-magazine.claska.com/tokyoandme/97928/ |
+| ar-c-006 | Jazmine Sullivan | Heaux Tales | 〈Pick Up Your Feelings〉拿下第 64 屆葛萊美最佳 R&B 演唱 | 該獎項是與 Silk Sonic〈Leave the Door Open〉並列得獎（The FADER 報導）；原句未寫並列，不算錯但建議補上。 | https://www.thefader.com/2022/04/03/jazmine-sullivan-wins-best-rb-album-for-heaux-tales-at-the-2022-grammys |
+| ar-c-006 | L.T.D. | Togetherness | 專輯拿下 R&B 榜第 3、Billboard 200 第 18 | theseconddisc.com（The Second Disc 2018）摘要寫 Something to Love 與 Togetherness 皆為 R&B 專輯榜第 1；與簡介的第 3 名不一致。僅此單源、頁面為小模型摘要，可能誤讀，建議本機查 Billboard 專輯榜確認再決定要不要改。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ |
+| ar-c-006 | L.T.D. | Togetherness | 洛杉磯的九人編制放克／靈魂樂團 | theseconddisc.com 稱 L.T.D. 是 ten-piece band（十人編制）；簡介寫九人。編制隨年代增減，單源，建議本機核對 Togetherness 時期的實際人數。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ |
+| ar-c-006 | Maceo & All the King's Men | Funky Music Machine | 1975 年才正式發行（樂隊活動末期完成） | 維基 Maceo Parker 條目寫 Funky Music Machine 為 1972 年專輯；搜尋摘要稱 1971 年底錄製、1972 年由 Excello 發行（未開頁）。1975 年可能是再版年，建議本機核對 MusicBrainz／Discogs 的首發年與廠牌後改簡介與卡池年份。 | https://en.wikipedia.org/wiki/Maceo_Parker |
+| ar-c-006 | Marvin Gaye & Tammi Terrell | You're All I Need | 這批 1966–67 年錄音 | 維基 Tammi Terrell 條目寫兩人二重唱是 1967 年初才開始錄製，上線簡介的「1966–67 年」起點疑偏早；單源，建議本機核對後再決定是否改成 1967 年。 | https://en.wikipedia.org/wiki/Tammi_Terrell |
