@@ -190,3 +190,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Zach Bryan Michigan Stadium 觀眾數、好樂團 YouTube 觀看數、金門王與李炳輝首張銷量：必要例外各一處。
 - g4 補洞把 3 個 http 來源改寫成 https 未實際開頁，接受（同站同路徑）。
 - 待本機（上線簡介）：小河、李志的專輯簡介用了「中國大陸」，應改「中國」；Zach Bryan《American Heartbreak》「鄉村專輯最佳首週」無出處；Высоцкий《Баллады и песни》「生前只一張 12 吋」有誤；한대수 세시봉年份（1969）；Terry Allen「製作了 Wilco」應為參與首作；The Jayhawks 廠牌 Def American；かぐや姫〈神田川〉銷量；好樂團「募資」無出處；遠藤賢司〈カレーライス〉單曲版說法；蕭福德《希望轉去你身邊》與《華西街的一蕊花》是否同一張；潘麗麗《戲夢人生》入圍說法。
+
+## ar-c-020（2026-10-03，五批接力 020～024 第一批）
+
+- 齊豫搜尋 9 次：多的一次是重複查第 9 屆金曲獎得主、未帶來獨有事實，放行。qa-artist.mjs 新增逐位 `overCapOk` 欄（填理由）讓主線審過的超限不擋 QA；用法限「超出的請求沒有帶來獨有事實」。
+- 寫作 Opus 2 支；40 位全上（34 full、6 thin：Ebi、Grenadine、iri、Melanie Martinez、of Montreal、The Orchids）。
+- 審稿修 2 處：Harvey Williams 刪正文裡的媒體名（NME 當週單曲）；John Cale 的「買了的人都組了樂團」改為「名人堂介紹引述的名言」，不歸給名人堂本身（此語通常歸於 Brian Eno）。
+- NewJeans《TIME》Next Generation Leaders、Cyndi Lauper 首張四首前五、RAYE 全英音樂獎紀錄：視為權威榜單／核心成績，保留。
+- 待本機（上線簡介）：齊豫《橄欖樹》禁歌原因與〈歡顏〉得獎主詞；陳建年《大地》調蘭嶼年份；齊秦《冬雨》翻唱名單；BLACKPINK《THE ALBUM》「首張破百萬」主詞；S.H.E 第 14 屆獎名（最佳演唱組合 vs 最佳重唱組合）；卡池年份 The Blue Nile《A Walk Across the Rooftops》（1984）、g.o.d《Chapter 1》（1999）、Ebi《Tapesh》（1974）。
