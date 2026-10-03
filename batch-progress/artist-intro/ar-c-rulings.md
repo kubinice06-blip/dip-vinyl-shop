@@ -39,3 +39,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - w1 審稿（1 處）：Serge Chaloff 刪「曾深陷海洛因毒癮、後來戒除」（病況與私人健康細節，依 g2 裁定不收）。Ruth Brown 279 放寬照准；Bonnie Raitt 引介詞具名。Roy Hargrove、Roy Haynes 的 DownBeat 名人堂不寫，照准。Patty Waters《Sings》年份 1965／1966 未寫。
 - w2 審稿（1 處）：St Germain 刪《Tourist》Billboard 當代爵士專輯榜冠軍（在世者榜單名次）。矢部直（UFO）2024-07-25 過世經主線 WebSearch 核實（Electronic Groove、吉岡正晴），只寫年份。Vince Guaraldi Trio 寫 1965 原版。Thad Jones & Mel Lewis 不帶過世年。Buddy Rich、Herb Alpert、Blue Note 引語皆具名。
 - **ar-c-004 上線**：40 位，reviewFixes 2。**第七段（ar-b-027～032、ar-c-001～004）十批全部上線。**
+
+## ar-c-005（2026-10-03，省額度試行批）
+
+- 試行：補洞前先跑 `artist-wiki.mjs` 預抓英文／母語維基與 Wikidata；派工詞加必擋網域清單；寫作層改讀 `artist-digest.mjs` 摘要；派工詞只傳路徑。
+- 預抓對錯人的照 warn 丟棄：Аллегро（對到音樂術語）、Brick（對到建材條目）；生活向上委員会、Bootsy's Rubber Band 查無。
+- 主線核實：渋谷毅 2026-07-16 過世（natalie、日刊スポーツ）；猪俣猛 2024-10-04 過世（natalie、日刊スポーツ），「一生」可用；Wayne Lewis 2025-06-05 過世（Fox 26、SoulTracks）。
+- 審稿修 9 處：702、Atlantic Starr、Bootsy's Rubber Band 在世者榜單名次刪；Cerrone 獎項句刪；姚莉「唱片銷量居冠」刪；
+  Brides of Funkenstein「錄三張只發兩張」出自 notes 非 facts，刪；四人囃子「techno 原創者」只有自家唱片公司單源，改為兩源一致的「日本前衛搖滾先驅」；
+  Angie Stone「嘻哈史上第一個全女子饒舌團體」有反例，改為廠牌範圍的「Sugar Hill 簽下的第一個全女子團體」（兩源）。
+- pubIssues 交本機：張露退出歌壇年份、渋谷毅《ドリーム》的取法對象、Вапиров《Мистерия》罪名、Лундстрем 成軍年、ジョージ大塚 組團年；봄여름가을겨울 兩張卡疑為同一張 1988 首張。
