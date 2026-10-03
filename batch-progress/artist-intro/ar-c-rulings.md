@@ -198,3 +198,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 2 處：Harvey Williams 刪正文裡的媒體名（NME 當週單曲）；John Cale 的「買了的人都組了樂團」改為「名人堂介紹引述的名言」，不歸給名人堂本身（此語通常歸於 Brian Eno）。
 - NewJeans《TIME》Next Generation Leaders、Cyndi Lauper 首張四首前五、RAYE 全英音樂獎紀錄：視為權威榜單／核心成績，保留。
 - 待本機（上線簡介）：齊豫《橄欖樹》禁歌原因與〈歡顏〉得獎主詞；陳建年《大地》調蘭嶼年份；齊秦《冬雨》翻唱名單；BLACKPINK《THE ALBUM》「首張破百萬」主詞；S.H.E 第 14 屆獎名（最佳演唱組合 vs 最佳重唱組合）；卡池年份 The Blue Nile《A Walk Across the Rooftops》（1984）、g.o.d《Chapter 1》（1999）、Ebi《Tapesh》（1974）。
+
+## ar-c-021（2026-10-03）
+
+- 補洞 Sonnet 4 支＋寫作 Opus 2 支；40 位全上（36 full、4 thin：박효신、南西肯恩、潘秀瓊、目黒将司）。
+- 審稿修 9 處：韓文與漢字直接相鄰處一律補空格（「韓國歌手 김현식（金賢植）」「서태지 拒絕」），以腳本對 out-1 全檔處理，與 ar-c-019 的修法一致。之後各批寫作層特注加這條。
+- tUnE-yArDs 具名 Village Voice Pazz & Jop：視為權威票選（年度樂評人總投票，不是單一樂評），保留。
+- フランク永井 1985 年事件只寫「私人事件留下後遺症」，不寫細節；黃鶯鶯評審團引語內「臺」改「台」，接受。
+- 待本機（上線簡介）：藤井風《HELP EVER HURT NEVER》認證級別；陳百強《偏偏喜歡你》張數序；陳芬蘭《親愛的母親》成名年齡；黃鶯鶯《雪在燒》發行日；Ana Moura《Leva-me aos fados》Amália 獎年份與獎名；潘迪華〈Bengawan Solo〉錄音年齡；劉文正生死（來源衝突，上線簡介若有寫請核）。
