@@ -214,3 +214,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Juaneco y su Combo 1977 年墜機：樂團史的轉折，列必要例外，只寫事件層級。Ken Boothe〈Everything I Own〉英國冠軍、Jimmy Cliff 名人堂「僅有兩位牙買加人」：兩源、核心，保留。
 - Dillinger src 補了卡池上線卡片的 sourceUrls（CB 200 維基頁），接受。
 - 待本機（上線簡介）：Chavela Vargas《La Llorona》卡內基年齡（84 歲）與「首度」；Djivan Gasparyan 2 條；Dr Alimantado 2 條；E.T. Mensah 與 Armstrong 同台是 1956；Fanfare Ciocărlia「最暢銷」；Hugh Mundell《Blackman's Foundation》Shanachie 1988；Idir「七種語言」；Juaneco《El gran cacique》年份；Junior Murvin「全片」用語；Khaled Cheb 因果；Lee Perry Black Ark 燒毀年份；Lucky Dube《Slave》認證與禁令年份；Ibrahim Ferrer 葛萊美屆次；半形逗號 5 張（Idir、Ijahman、Israel Vibration、John Holt、Junior Murvin）；卡池年份 Jimmy Cliff《The Harder They Come》（1972）。
+
+## ar-c-023（2026-10-03）
+
+- YAS-KAZ 搜尋 9 次：超出的一次是開官方經紀頁（onbeat.co.jp）補身世核心，不是重複搜尋；超一次、取自一手來源，`overCapOk` 放行。`overCapOk` 的適用面因此放寬為：超出不多於一次，且多出的請求不是重複搜尋（重複搜尋的處理同齊豫）。
