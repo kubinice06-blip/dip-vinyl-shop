@@ -194,3 +194,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## ar-c-020（2026-10-03，五批接力 020～024 第一批）
 
 - 齊豫搜尋 9 次：多的一次是重複查第 9 屆金曲獎得主、未帶來獨有事實，放行。qa-artist.mjs 新增逐位 `overCapOk` 欄（填理由）讓主線審過的超限不擋 QA；用法限「超出的請求沒有帶來獨有事實」。
+- 寫作 Opus 2 支；40 位全上（34 full、6 thin：Ebi、Grenadine、iri、Melanie Martinez、of Montreal、The Orchids）。
+- 審稿修 2 處：Harvey Williams 刪正文裡的媒體名（NME 當週單曲）；John Cale 的「買了的人都組了樂團」改為「名人堂介紹引述的名言」，不歸給名人堂本身（此語通常歸於 Brian Eno）。
+- NewJeans《TIME》Next Generation Leaders、Cyndi Lauper 首張四首前五、RAYE 全英音樂獎紀錄：視為權威榜單／核心成績，保留。
+- 待本機（上線簡介）：齊豫《橄欖樹》禁歌原因與〈歡顏〉得獎主詞；陳建年《大地》調蘭嶼年份；齊秦《冬雨》翻唱名單；BLACKPINK《THE ALBUM》「首張破百萬」主詞；S.H.E 第 14 屆獎名（最佳演唱組合 vs 最佳重唱組合）；卡池年份 The Blue Nile《A Walk Across the Rooftops》（1984）、g.o.d《Chapter 1》（1999）、Ebi《Tapesh》（1974）。

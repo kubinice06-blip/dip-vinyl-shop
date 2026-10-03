@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 361 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 368 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -354,6 +354,13 @@
 | ar-c-019 | 小河 | 飛的高的鳥不落在跑不快的牛的背上 | 屬民謠大類，中國大陸慣稱「實驗民謠」（experimental folk） | 違反用語房規（2026-09-29 店主裁定）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句另屬自行補充的類別說明，本層所讀來源（界面新聞、澎湃、Bandcamp Daily）沒有一處稱「實驗民謠」是中國慣稱，建議整句改寫或刪除。 | https://www.jiemian.com/article/8926943.html |
 | ar-c-019 | 李志 | 被禁忌的遊戲 | 作品在中國大陸串流平台陸續下架；中國大陸慣稱「獨立民謠」 | 用語不符 2026-09-29 店主裁定：稱中國一律寫「中國」，不寫「中國大陸」。 | https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%BF%97 |
 | ar-c-019 | 遠藤賢司 | 満足できるかな | 〈カレーライス〉先在此作出現，1972 年另錄的單曲版賣出十萬張 | 待核：日文維基寫〈カレーライス〉1972 年「シングルカット」並達 10 万枚；「シングルカット」通常指從專輯曲目切成單曲，與上線簡介的「另錄的單曲版」可能不符，本位未能另開一手資料確認。 | https://ja.wikipedia.org/wiki/%E9%81%A0%E8%97%A4%E8%B3%A2%E5%8F%B8 |
+| ar-c-020 | 陳建年 | 大地 | 2000 年得獎，同年自願調往蘭嶼服勤 | 調往蘭嶼的年份兩源不一致：中文維基寫 2000 年 9 月，中央社（開箱老照片）寫 2001 年 2 月 20 日自願請調；「同年」不確定，建議改寫成「得獎後自願調往蘭嶼」。 | https://www.cna.com.tw/news/ahel/202502195002.aspx |
+| ar-c-020 | 齊豫 | 橄欖樹 | 〈橄欖樹〉因「我的故鄉在遠方」一句被當局列為禁歌 | 中央社（李泰祥逝世 10 周年）與 Yam（禁唱八年）都說，新聞局把歌裡的「流浪」解讀為流浪海外而列禁歌，齊豫自己的說法也是「流浪」，兩篇都沒提「我的故鄉在遠方」這一句；建議改成「歌中的『流浪』被解讀為流浪海外」。 | https://n.yam.com/Article/20140103027966 |
+| ar-c-020 | 齊豫 | 橄欖樹 | 齊豫並以〈歡顏〉拿下金馬獎最佳電影插曲 | 台大圖書館頁與金曲獎官方簡介只寫〈歡顏〉獲第 16 屆金馬獎最佳電影插曲／齊豫個人成就含電影金馬獎音樂獎項，沒說獎頒給誰；是否「齊豫拿下」本位未能查證，建議改成「〈歡顏〉獲第 16 屆金馬獎最佳電影插曲」。 | https://focus.lib.ntu.edu.tw/?q=zh-hant%2F%E5%8F%B0%E7%81%A3%E6%A0%A1%E5%9C%92%E6%B0%91%E6%AD%8C%2F%E5%A4%A9%E7%B1%9F%E4%B9%8B%E9%9F%B3-%E9%BD%8A%E8%B1%AB |
+| ar-c-021 | 潘迪華 | The Exciting Rebecca Pan 我的心．潘迪華 | 第十軌〈Bengawan Solo〉錄的時候她三十三歲 | 低優先：英文維基寫她 18 歲時錄，中英維基的生年又差一年（1930／1931），年齡說法不一；專輯為 1963 年，推算約 32 或 33 歲。建議確認錄音日期，或淡化成「三十出頭」。 | https://en.wikipedia.org/wiki/Bengawan_Solo_(song) |
+| ar-c-021 | 藤井風 | HELP EVER HURT NEVER | 日本唱片協會白金 | 英文維基 Fujii Kaze 條目導言寫該專輯 certified gold in Japan，與簡介的白金不一致，需查日本唱片協會認證資料庫後再改（待核，未確認哪邊錯） | https://en.wikipedia.org/wiki/Fujii_Kaze |
+| ar-c-021 | 陳百強 | 偏偏喜歡你 | 陳百強自任監製的第六張粵語大碟 | 英文維基寫前五張由譚國基監製、第六張《傾訴》起陳百強自己監製並與下一張《偏偏喜歡你》達五白金，與簡介「《偏偏喜歡你》是第六張」不一致；序數待核（未確認哪邊錯） | https://en.wikipedia.org/wiki/Danny_Chan |
+| ar-c-021 | 陳芬蘭 | 親愛的母親 | 她 8 歲就以〈孤女的願望〉一曲成名 | 中文維基寫 8 歲、中央社寫 9 歲、風傳媒寫 11 歲，來源不一；年齡待核，建議改成不寫年齡 | https://www.cna.com.tw/news/ahel/202402205002.aspx |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
 | ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
