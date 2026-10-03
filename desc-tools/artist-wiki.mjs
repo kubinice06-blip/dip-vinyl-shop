@@ -68,9 +68,10 @@ const GENRE_WORD = { jazz: 'jazz', soul: 'soul', rock: 'band', pop: 'singer', hi
 const LOCAL_JAZZ = { ru: 'джаз', ja: 'ジャズ', zh: '爵士', ko: '재즈' }
 const KANA = /[\u3040-\u30ff]/
 // 編制尾巴（トリオ、クァルテット、「とサウンド・リミテッド」⋯）：C 級以團長為主詞，查團長本人
-const variants = name => [...new Set([name, name.replace(/\s*(トリオ|クァルテット|カルテット|クインテット|セクステット|セプテット|オクテット|オーケストラ|と.+|trio|quartet|quintet|sextet|orchestra)$/i, '')])].filter(Boolean)
+// 「A & B」「A & the X」：兩人合名各查一次，樂團名義查領隊
+const variants = name => [...new Set([name, ...name.split(/\s+(?:&|and)\s+/i).filter(v => !/^the\s/i.test(v)), name.replace(/\s*(トリオ|クァルテット|カルテット|クインテット|セクステット|セプテット|オクテット|オーケストラ|と.+|trio|quartet|quintet|sextet|orchestra)$/i, '')])].filter(Boolean)
 const toks = s => new Set(norm(s).split(' ').filter(Boolean))
-const NONPERSON = /\((.*\b)?(album|song|single|ep|film|soundtrack)\)$/i
+const NONPERSON = /\((.*\b)?(album|song|single|ep|film|soundtrack)\)$|greatest hits|discography|\bbest of\b/i
 // exact：標題（去括號）與名字字詞完全相同；tokens：名字的字詞全在標題裡（俄文維基「姓, 名 父名」）；CJK 無空格時看包含
 function matchKind(title, v) {
   if (NONPERSON.test(title)) return null
