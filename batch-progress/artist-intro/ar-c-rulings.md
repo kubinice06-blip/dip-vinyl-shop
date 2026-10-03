@@ -206,3 +206,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - tUnE-yArDs 具名 Village Voice Pazz & Jop：視為權威票選（年度樂評人總投票，不是單一樂評），保留。
 - フランク永井 1985 年事件只寫「私人事件留下後遺症」，不寫細節；黃鶯鶯評審團引語內「臺」改「台」，接受。
 - 待本機（上線簡介）：藤井風《HELP EVER HURT NEVER》認證級別；陳百強《偏偏喜歡你》張數序；陳芬蘭《親愛的母親》成名年齡；黃鶯鶯《雪在燒》發行日；Ana Moura《Leva-me aos fados》Amália 獎年份與獎名；潘迪華〈Bengawan Solo〉錄音年齡；劉文正生死（來源衝突，上線簡介若有寫請核）。
+
+## ar-c-022（2026-10-03）
+
+- 補洞 Sonnet 4 支＋寫作 Opus 2 支；40 位全上（38 full、2 thin：Dillinger、Israel Vibration）。
+- 審稿修 3 處：Bhundu Boys 團員死因改中性（「多名團員相繼早逝」）；Keith Hudson 刪死因；Mongo Santamaría 葛萊美名人堂主詞改為〈Watermelon Man〉錄音。
+- Juaneco y su Combo 1977 年墜機：樂團史的轉折，列必要例外，只寫事件層級。Ken Boothe〈Everything I Own〉英國冠軍、Jimmy Cliff 名人堂「僅有兩位牙買加人」：兩源、核心，保留。
+- Dillinger src 補了卡池上線卡片的 sourceUrls（CB 200 維基頁），接受。
+- 待本機（上線簡介）：Chavela Vargas《La Llorona》卡內基年齡（84 歲）與「首度」；Djivan Gasparyan 2 條；Dr Alimantado 2 條；E.T. Mensah 與 Armstrong 同台是 1956；Fanfare Ciocărlia「最暢銷」；Hugh Mundell《Blackman's Foundation》Shanachie 1988；Idir「七種語言」；Juaneco《El gran cacique》年份；Junior Murvin「全片」用語；Khaled Cheb 因果；Lee Perry Black Ark 燒毀年份；Lucky Dube《Slave》認證與禁令年份；Ibrahim Ferrer 葛萊美屆次；半形逗號 5 張（Idir、Ijahman、Israel Vibration、John Holt、Junior Murvin）；卡池年份 Jimmy Cliff《The Harder They Come》（1972）。
