@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 396 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 400 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -383,12 +383,16 @@
 | ar-c-023 | Nass El Ghiwane | Nass El Ghiwane | 他們從前衛政治劇團走出來，第一件事是把班鳩琴帶進 chaabi | Aramco World 的班鳩琴專文指出，班鳩琴 1960 年代已出現在阿馬齊格民間表演與馬拉喀什 Jemaa el-Fnaa 廣場；Nass El Ghiwane 的貢獻是把它變成招牌聲響、帶進主流流行文化，不是最早。「把班鳩琴帶進 chaabi」可改寫為「讓班鳩琴成為樂團的招牌聲響」。英文維基「第一支引進班鳩琴等西方樂器」的說法有反例。 | https://www.aramcoworld.com/articles/2026/ja26/banjo-on-the-atlas |
 | ar-c-023 | Nass El Ghiwane | Nass El Ghiwane | 樂團 1969 年成立於卡薩布蘭卡 | 1969 年只見英文維基；維基資料庫作 1970，法文維基與 Aramco World 作 1970 年代初。建議改「約 1970 年前後」或不寫年。 | https://www.aramcoworld.com/articles/2024/nass-el-ghiwane-the-voice-of-morocco |
 | ar-c-023 | Natacha Atlas | Gedida | 1999 年由 Mantra Records 發行，Natacha Atlas 第三張個人專輯 | 英文維基藝人條目把《Gedida》列為 1998 年；卡單與簡介作 1999 年。發行年（各地區版本可能不同）待核，未開專輯頁確認。 | https://en.wikipedia.org/wiki/Natacha_Atlas |
+| ar-c-023 | Ofra Haza | Yemenite Songs | 唱的是十六世紀拉比 Shalom Shabazi 的葉門猶太詩作 | Shalom Shabazi 為十七世紀的詩人；Encyclopedia.com 與〈Im Nin'alu〉相關文章都作 17th century。建議改「十七世紀」或略去世紀。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ofra-haza |
+| ar-c-023 | Prince Far I | Psalms for I | 伴奏多半是 Bunny Lee 製作、The Aggrovators 演奏的既有 riddim | Perfect Sound Forever 稱這張 LP 是「為 Lloydie Slim 錄的」，製作歸屬與簡介所寫不同；Discogs 的致謝欄有 Lee Perry、Bunny Lee，但製作人是誰沒有確證。簡介的「Bunny Lee 製作」待核。 | https://www.furious.com/perfect/princefari.html |
 | ar-c-023 | Souad Massi | Raoui | 受死亡威脅後離開阿爾及利亞 | Massi 在 The Markaz Review 訪談中說「說她是因為死亡威脅離開，那是謊話」，1999 年是辭去工程師工作、受邀到巴黎演出後決定留下，因為她覺得自己在阿爾及利亞像「外星人」；維基與 The National 則寫成受威脅或遭極端分子針對。來源互相矛盾，建議改為中性寫法（Atakor 的政治歌詞使樂團成為目標、她 1999 年到巴黎演出後留下），不要寫成因死亡威脅離開。 | https://themarkaz.org/the-artist-at-work-a-conversation-with-souad-massi/ |
 | ar-c-023 | Souad Massi | Deb | 因伊斯蘭保守派的死亡威脅於 1999 年遷居巴黎 | 同上，Massi 本人在 The Markaz Review 否認自己是因死亡威脅離開，說是受邀演出後選擇留在巴黎；建議改為中性寫法。 | https://themarkaz.org/the-artist-at-work-a-conversation-with-souad-massi/ |
 | ar-c-023 | The Gladiators | Proverbial Reggae | Richard Branson 帶著 Johnny Rotten 到 Kingston 簽人，這是那條產線的第二號 | 待核：事實庫所引維基的 Front Line 條目只列 Prince Far I、Big Youth、Prince Hammer、Tappa Zukie、Sly Dunbar、The Twinkle Brothers 為那趟 Kingston 簽約行的人選，沒有 The Gladiators；維基與 Reggaeville 都稱 Gladiators 早在 1976 年就與 Virgin 簽約並發行《Trenchtown Mix Up》。簡介開頭把 Gladiators 寫成 Branson 與 Rotten 那趟簽人之行的產物，可能誤導；建議改為「Front Line 是 Virgin 1978 年成立的雷鬼子廠牌，Gladiators 已在 1976 年簽入 Virgin 旗下，本作是樂團的第二張、Front Line 的第二號目錄」。 | https://en.wikipedia.org/wiki/Front_Line_(record_label) |
 | ar-c-023 | The Meditations | Message from the Meditations | 上線簡介寫這是首作，1976 年由 Dobby Dobson 製作兼編曲、Double-D 發行 | 維基的專輯清單把《Message From The Meditations》列為 1977 年，卡池年份為 1976；發行年待本機以 Discogs 原盤核對，若為 1977 則簡介與卡年份皆須改 | https://en.wikipedia.org/wiki/The_Meditations |
 | ar-c-023 | Vicente Amigo | De mi corazón al aire | 師從 Manolo Sanlúcar 十年；1988 年在 La Unión 的 Festival Nacional del Cante de las Minas 拿下吉他首獎 | 「十年」只見維基單源，Córdoba Flamenca 記 1983 至 1988 年在 Sanlúcar 樂團（約五年）；La Unión 首獎年份 El Arte de Vivir el Flamenco 為 1988，Córdoba Flamenca 的年表寫成 1989；兩點兩源不一致，建議店主本機核對西班牙語官方傳記後再決定是否改 | https://cordobaflamenca.com/guitarristas/vicente-amigo/ |
 | ar-c-023 | Wailing Souls | Fire House Rock | 當時陣容還包含 Black Uhuru 創團成員 Rudolph「Garth」Dennis | 維基整頁與 Encyclopedia.com 都沒有 Garth Dennis 或 Black Uhuru 的連結；本層沒找到佐證，建議店主本機以專輯內頁或 Discogs 核對陣容；若無法佐證，建議刪除此句 | https://en.wikipedia.org/wiki/The_Wailing_Souls |
+| ar-c-024 | Carl Cox | F.A.C.T. | Mixmag 記述他同年在舞池『把三台唱盤拆了』的三盤手法，正是這份混音的底氣 | 讀到的 Mixmag 長文《Carl Cox: The Legend》摘要未見此句；Cox 以三唱盤成名的事件所有來源都記為 1988 年 Sunrise rave，不是 1995 年。引文出處建議回頭核對，找不到就改寫成 1988 年 Sunrise 的說法。 | https://mixmag.net/feature/carl-cox-the-legend |
+| ar-c-024 | Harold Budd & Brian Eno | Ambient 2: The Plateaux of Mirror | 1980 年於安大略省咸美頓錄成 | 英文維基 Ambient 2 條目寫 1979 年於 Hamilton 的 Grant Avenue Studio 錄音、1980 年 4 月發行；錄音年只有維基單一來源，需主線找第二源（如專輯內頁或 Eno 訪談）再決定是否改為 1979 年。 | https://en.wikipedia.org/wiki/Ambient_2:_The_Plateaux_of_Mirror |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
 | ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
