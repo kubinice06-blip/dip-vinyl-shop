@@ -92,3 +92,60 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 主線核實：G.I.S.M. 横山SAKEVI 過世（音楽ナタリー、ぴあ，2023 年 8 月 24 日）；Gorillaz《The Mountain》2026 年 2 月發行、收進 Bobby Womack 等六位已故合作者的人聲、起於兩人喪父後的印度之旅（The Fader、DJ Mag）。
 - 審稿修 3 處：Crowded House、Dara Puspita 的演出人數刪（成員在世，比照在世者座數規則）；Glassjaw 主唱健康問題刪（健康私事先例）。
 - 待本機：Curve《Doppelgänger》卡池年份 1991 疑為 1992；Eraserheads 上線簡介的白金與銷量數字未查證；DEATH SIDE、Dara Puspita 上線簡介各一處。
+
+## ar-c-011（2026-10-03）
+
+- thin 15／40。**Hope of Glory 不寫**：補洞三格全 none，封底團員與卡池客席名單不同、身分存疑；progress 記 `skipped`，交本機查身分後再補。
+- 主線核實：Jeff Buckley 2026 年首度入圍搖滾名人堂但未入選（Billboard、Relix）；Kim Gordon《PLAY ME》2026-03-13 發行，Dave Grohl 在〈Busy Bee〉打鼓（Stereogum、維基）；White Stripes 2025 年入選、Iggy Pop 引介。
+- 審稿修 3 處：Killswitch Engage 在世者葛萊美入圍次數刪；Hum 兩處空白。
+- 待本機：Hope of Glory 身分；Grönemeyer《Mensch》家人措辭；Hum 上線簡介的雜誌榜單名次；Jeff Buckley 上線簡介死亡地點（Wolf River 非密西西比河）；Khun Narin 上線簡介的影片出資段；Killswitch 錄音月份；La Düsseldorf 上線簡介兩處；Idoli 銷量說法。
+
+## ar-c-012（2026-10-03）
+
+- thin 9／40。
+- 主線核實：Mew 主唱 Jonas Bjerre 稱 2025 年是他在 Mew 的最後一年，樂團 2025 年辦告別演出（BrooklynVegan、NME）。
+- 審稿修 3 處：Locomotiv GT「唯一從歐陸前來的團體」序數刪；Marillion 在世者「最成功、最重要」改「代表」；Mission of Burma 耳鳴健康細節刪（健康私事先例）。
+- 待本機：Mr.Children《Atomic Heart》上線簡介獎名（ベストアルバム賞非最優秀）；Lady Pank、Linda Ronstadt、Litfiba 上線簡介銷量數字；Litfiba《El diablo》上線簡介寫了死因；Maher Shalal Hash Baz 上線簡介首發年。
+
+## ar-c-013（2026-10-03）
+
+- thin 9／40。Novos Baianos 的 Rolling Stone Brasil 票選名次不收（雜誌榜單先例）。
+- 主線核實：Olivia Rodrigo《You Seem Pretty Sad for a Girl So in Love》2026-06-12 發行（Deadline、Billboard）；Periphery《A Pale White Dot》2026-05-15 由自家 3DOT 發行（維基、Apple Music）；David Johansen 2025 年過世。
+- 審稿修 4 處：Olivia Rodrigo 在世者葛萊美座數改只寫最佳新人；Phil Keaggy 專輯數與「多次」得獎刪；Procol Harum 單曲銷量刪；Rare Earth「Motown 第一支成功白人搖滾團」兩源互引非獨立，刪序數。
+- 待本機：Negasphere《Disadvantage》人名「川崎馨／薫」；Perfect 上線簡介銷量句；Radar 兩張卡的成員起訖年；Rare Earth《Ecology》軼事查無來源。
+
+## ar-c-014（2026-10-03）
+
+- thin 7／40。預抓對錯頁照 warn 丟棄：Shelter（庇護所建築）。
+- 主線核實：The Menzingers 第八張《Everything I Ever Saw》2026 年 7 月由 Epitaph 發行、Will Yip 製作（Consequence、WHYY）；Sinéad O'Connor 2024 年身後首度獲搖滾名人堂提名。
+- 審稿修 1 處：Socrates Drank the Conium「1970 年代希臘搖滾銷量最高」刪（在世成員，銷量類宣稱比照不寫）。
+- 待本機：Spacemen 3《Playing with Fire》卡池年份 1988 疑為 1989；Stray Cats、Socrates、Ethiopians、Taj Mahal Travellers 上線簡介各一處。
+
+## ar-c-015（2026-10-03）
+
+- thin 16／40（本工作階段 WebSearch 共用額度 200 次用盡，後段補洞只能開頁，Pogues、Rollies、Sensational Nightingales、Tom Petty、Toto、Алиса、ДДТ 等因此偏薄；列入補查名單）。Ty Segall 9 次、Uriah Heep 10 次超上限：額度用盡後改用開頁補源所致，照實記、事實保留。
+- 預抓對錯頁照 warn 丟棄：Ultima Thule（瑞典同名團）、Treatment（污水處理）。
+- 主線核實：Venom 的 Cronos（Conrad Lant）2026-10-01 過世（Decibel、Consequence）；Phoenix 的 Nicu Covaci 2024-08-02 過世（Agerpres、Europa Liberă）。
+- 審稿修 5 處：The Move 單曲進榜數、Stone Roses 演出人數、Wedding Present 進榜紀錄、Toto「一晚三大獎」、Wet Leg 提名數（在世者名次與座數規則）。
+- 待本機：Tim Hardin 上線簡介點名樂評人與 AllMusic；The Weather Station《Ignorance》上線簡介點名樂評人與《紐約時報》；Sensational Nightingales 兩處；Ton Steine Scherben 曲序。
+
+## ar-c-016（2026-10-03）
+
+- thin 20／40（WebSearch 共用額度用盡，後段補洞只能開頁）。**不寫 3 位：何欣穗（三格全 none）、美狂乱（只剩一條事實）、舌頭（寫不到 100 字）**，progress 記 `skipped`，待新工作階段補查。
+- 預抓對錯頁照 warn 丟棄：太極（哲學）、張楚（秦末張楚國）。
+- 主線核實：松山千春 2026 年 9 月獲足寄町町民榮譽賞（北海道新聞、足寄町公所）。
+- 審稿修 5 處：들국화《京鄉新聞》評論家問卷名次刪（樂評榜單名次先例）；楊乃文入圍數與「入圍最多」刪；蔡健雅「得獎最多」與座數刪；草東沒有派對 樂評人馬世芳具名刪（樂評姓名不進正文），「最大贏家」刪。
+- 待本機：五條人上線簡介寫「中國大陸」兩處；唐朝《演義》上線簡介寫了車禍死因、中文數字日期；圖騰上線簡介中文數字年份。
+
+## ar-c-017（2026-10-03）
+
+- thin 約半數。**不寫 2 位：蘇打綠、零與聲音解放組織**（身世與貢獻格查無兩源，額度用盡），progress 記 `skipped`。
+- 特注更正：超載是北京的搖滾樂團（只有兩張唱片由台灣魔巖發行），不是台灣團；主線特注寫錯，撰稿已照正。
+- 主線核實：Gram Parsons 2026 年以 Early Influence 入選搖滾名人堂（MusicRow、AJC）；Bill Fay 2025-02-22 過世，81 歲（NME、Consequence）。
+- 審稿修 1 處：Buffy Sainte-Marie 身分爭議改寫成兩源中性層級，不點名調查媒體、不寫具體出生地結論。
+- 待本機：陳珊妮曲名；Alela Diane 寫作地點；Barbara、Buffy、C.O.B.、Curly Ray Cline、Ewa Demarczyk 上線簡介各一處。
+
+## 十批接力（ar-c-008～017）收尾補查名單（新工作階段、WebSearch 額度重算後補）
+
+- 未寫（skipped）：Hope of Glory（ar-c-011）、何欣穗／美狂乱／舌頭（ar-c-016）、蘇打綠／零與聲音解放組織（ar-c-017）。
+- 已上架但因額度用盡偏薄，宜補強：Tom Petty、Toto、The Pogues、Алиса、ДДТ（ar-c-015）；米津玄師、松山千春、蔡健雅（ar-c-016）；Christy Moore、Buffy Sainte-Marie（ar-c-017）。
