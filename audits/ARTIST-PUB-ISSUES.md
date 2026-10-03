@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 368 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 370 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -361,6 +361,8 @@
 | ar-c-021 | 藤井風 | HELP EVER HURT NEVER | 日本唱片協會白金 | 英文維基 Fujii Kaze 條目導言寫該專輯 certified gold in Japan，與簡介的白金不一致，需查日本唱片協會認證資料庫後再改（待核，未確認哪邊錯） | https://en.wikipedia.org/wiki/Fujii_Kaze |
 | ar-c-021 | 陳百強 | 偏偏喜歡你 | 陳百強自任監製的第六張粵語大碟 | 英文維基寫前五張由譚國基監製、第六張《傾訴》起陳百強自己監製並與下一張《偏偏喜歡你》達五白金，與簡介「《偏偏喜歡你》是第六張」不一致；序數待核（未確認哪邊錯） | https://en.wikipedia.org/wiki/Danny_Chan |
 | ar-c-021 | 陳芬蘭 | 親愛的母親 | 她 8 歲就以〈孤女的願望〉一曲成名 | 中文維基寫 8 歲、中央社寫 9 歲、風傳媒寫 11 歲，來源不一；年齡待核，建議改成不寫年齡 | https://www.cna.com.tw/news/ahel/202402205002.aspx |
+| ar-c-021 | 黃鶯鶯 | 雪在燒 | 一九八七年八月二十七日、黃鶯鶯生日當天由飛碟唱片推出 | 中文維基寫 8 月 29 日生日當天發行，英文維基與 wikidata 生日也是 8 月 29 日，簡介的「二十七日」可能寫錯（發行日第二源未找到，建議改成「八月、她生日當天」或核對後改 29 日） | https://zh.wikipedia.org/zh-tw/%E9%BB%83%E9%B6%AF%E9%B6%AF |
+| ar-c-021 | Ana Moura | Leva-me aos fados | 同年她獲 Amália 獎最佳藝人 | 英文維基寫 2008 年她獲 Prémio Amália 最佳演出者（Melhor Intérprete），Museu do Fado 寫是《Para Além da Saudade》獲 Amália Rodrigues 獎；簡介把獎項放在 2009 年並寫成「最佳藝人」，年份與類別對不上（待核） | https://en.wikipedia.org/wiki/Ana_Moura |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
 | ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
