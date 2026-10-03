@@ -157,3 +157,27 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 仍不寫：Hope of Glory（三格全 none、身分存疑）、舌頭（兩條事實寫不到 100 字）——交本機確認身分或補資料。
 - 審稿修 2 處：蔡健雅「得獎次數最多、超越張惠妹」刪（在世者座數）；Buffy Sainte-Marie 改為音樂在前、身分爭議中性收尾，不寫調查報導的血統結論。
 - 待本機：何欣穗上線簡介獎名（應為「華語流行樂傳媒大獎」）。
+
+## 品質衰減檢討與規則修訂（2026-10-03，店主：「禁寫規則不是禁寫 是避免」）
+
+- 量測：每位事實數 ar-a-001～007 約 16 條，ar-a-008 起掉到約 7 條；thin 比例 5% → 20–40%。主因是 9/30「每條事實都要 src2」把低風險的「人」（身世、聲音、風格、人物故事）擠進 notes；其次是 ar-c-015～017 搜尋額度用盡。
+- 改為**來源分級**：高風險（生卒、成員異動年份、出道、獎項、名次、「第一」、爭議、數字）仍要兩源；低風險一個可靠來源即可，標 `single: true`，寫作層以「據／被形容為」語氣處理。
+- 共同特注由「禁止」改為「**避免**」：在世者銷量／榜名、死因細節、媒體榜單名次預設不收；若正是此人份量或故事的核心，兩源收、notes 註明「必要例外」。
+- **thin 最低門檻**：第一句交代國籍與身分；至少一句寫聲音或風格；不得只剩瑣事。達不到就不寫。
+- 重寫名單 33 位（ar-c-fix2）：壞 21（何欣穗、無妄合作社、脆樂團、テルズ・シンフォニア、傻子與白痴、브로콜리 너마저、太極、左小祖咒、糯米糰、落差草原 WWWW、Mach One、Multi-Story、Ultima Thule、Curly Ray Cline、C.O.B.、Forest、Espers、Barbara、Toto、The Wake、The Rollies）；弱 12（Joe Bonamassa、Michael Burks、Snail Mail、The Breeders、Ash Ra Tempel、Abel Ganz、Bread、Haze、High on Fire、Perfect、REO Speedwagon、Brittany Howard）。
+- 流程比照 fix1：舊補洞稿當底（`cache/ar-c-fix2-prior.json`），終稿併回原批次 output、標 `fixedBy: ar-c-fix2`，本批記 `merged`。ar-c-018／019 暫停，fix2 完成後續跑。
+
+## ar-c-018（2026-10-03）
+
+- 補洞層在舊規則（全兩源）下完成，寫作 Opus 2 支；40 位全上（37 full、3 thin）。
+- 審稿修 16 處：14 位第一句補國籍與身分（Jack Rose、Jim Spencer、Jim Sullivan、John Denver、Judee Sill、Judy Collins、June Tabor、Karen Dalton、Lyle Lovett、Marissa Nadler、Labi Siffre、Marek Grechuta、Malicorne 等）；Norma Jean 依新規則補單源低風險的聲音句（受 Kitty Wells 影響、歌寫勞工階級女性），換掉藝名來由那句。
+- 輕微超長（251–254）接受，皆為補國籍所致。
+- fix2 補洞：重寫批以舊稿為底、要補的「人」比一般批多，搜尋上限放寬為 10（qa-artist.mjs 對 `ar-c-fix*` 生效）；何欣穗用了 9 次，放行。
+
+## ar-c-fix2 重寫批（2026-10-03）
+
+- 補洞 Sonnet 4 支（9／9／9／6）＋寫作 Opus 2 支，新規則（來源分級、單源低風險可用、thin 最低門檻）。補洞合計搜尋 193 次。
+- 結果：32 位重寫上線（29 full、3 thin：Mach One、Abel Ganz、テルズ・シンフォニア），併回原批次 output、標 `fixedBy: ar-c-fix2`；本批記 `merged`。
+- **Multi-Story 撤下**：聲音格查無（無維基、prog 資料站全擋），寫不出一句聲音特色，達不到 thin 最低門檻；照「達不到就不寫」從 ar-c-012 撤下舊稿，記入該批 skipped。
+- 審稿修 2 處：Brittany Howard 第一句補「美國歌手與吉他手」，刪領獎感言一句壓字數。姊姊病逝與眼癌屬「必要例外」（個人專輯以姊姊為名，是作品核心）。
+- Toto〈Africa〉冠軍列必要例外（核心成績）；REO Speedwagon「1981 年全美最暢銷專輯」同。何欣穗獎名在 notes 單源，正文未寫獎，不需更正。

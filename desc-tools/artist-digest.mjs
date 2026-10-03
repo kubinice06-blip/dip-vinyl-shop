@@ -25,7 +25,8 @@ for (const g of groups) {
     const b = bank.get(x.key) || {}
     const tag = t => {
       const m = []
-      if (t.from === 'new' && !t.src2) m.push('缺src2→視同單源')
+      if (t.single === true) m.push('單源・低風險')
+      else if (t.from === 'new' && !t.src2) m.push('缺src2→視同單源')
       return m.length ? `〔${m.join('；')}〕` : ''
     }
     out.push(`## ${x.name}　〔key: ${x.key}｜status: ${x.status}｜${b.tier || ''} 級 ${b.mainGenre || ''}〕`)

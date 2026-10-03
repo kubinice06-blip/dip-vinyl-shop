@@ -95,14 +95,14 @@ if (stage === 'gap') {
       if (/(查無|查不到|uncertain|推翻|主線|【)/.test(x.f)) warn(r.name, 'f 欄混入查證過程：', x.f.slice(0, 40))
     }
     // f 欄只放兩源都支持的內容（2026-09-30 起）：新查的格內事實缺 src2 就擋（事實庫帶來的 bank 條目不在此限）
-    { const no2 = SLOTS.flatMap(s => slots[s]?.facts || []).filter(x => x.from === 'new' && !isUrl(x.src2)).length
+    { const no2 = SLOTS.flatMap(s => slots[s]?.facts || []).filter(x => x.from === 'new' && !isUrl(x.src2) && !(x.single === true && isUrl(x.src))).length  // 2026-10-03 起低風險事實可單源（single: true）
       // ar-a-001～007 產出時格式還沒有 src2 欄，只列提示；ar-a-008 起硬擋
       if (no2) { if (/^ar-a-00[1-7]$/.test(batch)) notes.push(`${r.name}：${no2} 條新查事實沒記 src2（舊格式）`); else warn(r.name, `${no2} 條新查事實缺 src2（單源應移進 notes）`) } }
     const allBank = SLOTS.every(s => slots[s]?.status === 'bank')
     if (allBank && r.searches > 0) warn(r.name, `三格皆 bank 卻用了 ${r.searches} 次搜尋`)
     // 2026-09-30 起新查事實必帶 src2，開第二源要多花請求：ar-a-008 起上限放寬到 8
     // 2026-10-03 ar-c-006 試行上限 5 次（失敗計入），thin 倍增；店主同日裁定 ar-c-007 起改回 8 次，只保留並行請求
-    { const cap = /^ar-a-00[1-7]$|^ar-trial/.test(batch) ? 6 : batch === 'ar-c-006' ? 5 : 8
+    { const cap = /^ar-a-00[1-7]$|^ar-trial/.test(batch) ? 6 : batch === 'ar-c-006' ? 5 : /^ar-c-fix/.test(batch) ? 10 : 8
       if (r.searches > cap) warn(r.name, `搜尋 ${r.searches} 次，超過上限 ${cap}`) }
     if (!['full', 'thin'].includes(r.status)) warn(r.name, `status 不合法：${r.status}`)
     searches += Number(r.searches) || 0
