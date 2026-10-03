@@ -224,7 +224,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 ## ar-c-024（2026-10-03，五批接力收尾）
 
-- 補洞 Sonnet 4 支＋寫作 Opus 2 支；40 位全上（32 full、8 thin：Bobby V.、C.C.C.C.、Dorian Electra、Emancipator、Gorgon City、Jamie xx 等）。
+- 補洞 Sonnet 4 支＋寫作 Opus 2 支；40 位全上（34 full、6 thin：Bobby V.、C.C.C.C.、Dorian Electra、Emancipator、Gorgon City、Jamie xx）。
 - 審稿修 1 處：David Guetta 刪「不算圈內公認最酷」（單一樂評的評斷）。
 - Bobby V. 卡池誤標電子，照 R&B 寫；Dorian Electra 正文不用「他／她」。Bassnectar、Diplo、Derrick May 的指控皆不寫。
 - 待本機（上線簡介）：Aux 88《Is It Man or Machine?》出道成員與首作；Green Velvet《Constant Chaos》生年；Carl Cox《F.A.C.T.》三唱盤年份（1988 Sunrise）；Derrick May《Innovator》版本；C418「第二件入選國家錄音登錄」單源；Budd & Eno《Ambient 2》錄音年；卡池年份 Étienne de Crécy《Super Discount》。
