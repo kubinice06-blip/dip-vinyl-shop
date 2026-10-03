@@ -172,3 +172,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 補洞層在舊規則（全兩源）下完成，寫作 Opus 2 支；40 位全上（37 full、3 thin）。
 - 審稿修 16 處：14 位第一句補國籍與身分（Jack Rose、Jim Spencer、Jim Sullivan、John Denver、Judee Sill、Judy Collins、June Tabor、Karen Dalton、Lyle Lovett、Marissa Nadler、Labi Siffre、Marek Grechuta、Malicorne 等）；Norma Jean 依新規則補單源低風險的聲音句（受 Kitty Wells 影響、歌寫勞工階級女性），換掉藝名來由那句。
 - 輕微超長（251–254）接受，皆為補國籍所致。
+- fix2 補洞：重寫批以舊稿為底、要補的「人」比一般批多，搜尋上限放寬為 10（qa-artist.mjs 對 `ar-c-fix*` 生效）；何欣穗用了 9 次，放行。
