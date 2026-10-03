@@ -49,3 +49,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   Brides of Funkenstein「錄三張只發兩張」出自 notes 非 facts，刪；四人囃子「techno 原創者」只有自家唱片公司單源，改為兩源一致的「日本前衛搖滾先驅」；
   Angie Stone「嘻哈史上第一個全女子饒舌團體」有反例，改為廠牌範圍的「Sugar Hill 簽下的第一個全女子團體」（兩源）。
 - pubIssues 交本機：張露退出歌壇年份、渋谷毅《ドリーム》的取法對象、Вапиров《Мистерия》罪名、Лундстрем 成軍年、ジョージ大塚 組團年；봄여름가을겨울 兩張卡疑為同一張 1988 首張。
+
+## ar-c-006（2026-10-03）
+
+- **店主裁定（省額度）**：ar-c-006 起 C 級與 D 級補洞每位上限 5 次，失敗請求計入（`searches` 含失敗）；派工要求同一則訊息並行發多個 WebSearch／WebFetch。`qa-artist.mjs` 依批次套上限。
+  代價：thin 由前五批的每批 10–12 位升到 20 位（George Michael、Dua Lipa、Janelle Monáe、Harry Connick, Jr. 等地位或貢獻格湊不到兩源）。
+- 預抓對錯人照 warn 丟棄：Maceo & All the King's Men（同名小說）、Milton Wright（同名主教）。
+- 主線核實：Latimore 2026-08-22 過世，86 歲（SoulTracks、That Eric Alper）。
+- Loose Ends「第一支登上 Billboard R&B 榜冠軍的英國團體單曲」保留：兩源，且是國籍層面的歷史定位，不是在世者的名次炫耀。
+- 審稿修 3 處：George Clinton「被取樣最多之一」在世者最高級刪；James Carr 病名刪、留日本巡演事件；Milton Wright 原盤價格刪。
+- pubIssues 交本機：L.T.D.《Togetherness》榜位與編制（單源）、Maceo《Funky Music Machine》年份（卡池 1975、維基 1972）、Marvin Gaye & Tammi Terrell《You're All I Need》錄音年、Jazmine Sullivan《Heaux Tales》並列得獎。
