@@ -92,3 +92,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 主線核實：G.I.S.M. 横山SAKEVI 過世（音楽ナタリー、ぴあ，2023 年 8 月 24 日）；Gorillaz《The Mountain》2026 年 2 月發行、收進 Bobby Womack 等六位已故合作者的人聲、起於兩人喪父後的印度之旅（The Fader、DJ Mag）。
 - 審稿修 3 處：Crowded House、Dara Puspita 的演出人數刪（成員在世，比照在世者座數規則）；Glassjaw 主唱健康問題刪（健康私事先例）。
 - 待本機：Curve《Doppelgänger》卡池年份 1991 疑為 1992；Eraserheads 上線簡介的白金與銷量數字未查證；DEATH SIDE、Dara Puspita 上線簡介各一處。
+
+## ar-c-011（2026-10-03）
+
+- thin 15／40。**Hope of Glory 不寫**：補洞三格全 none，封底團員與卡池客席名單不同、身分存疑；progress 記 `skipped`，交本機查身分後再補。
+- 主線核實：Jeff Buckley 2026 年首度入圍搖滾名人堂但未入選（Billboard、Relix）；Kim Gordon《PLAY ME》2026-03-13 發行，Dave Grohl 在〈Busy Bee〉打鼓（Stereogum、維基）；White Stripes 2025 年入選、Iggy Pop 引介。
+- 審稿修 3 處：Killswitch Engage 在世者葛萊美入圍次數刪；Hum 兩處空白。
+- 待本機：Hope of Glory 身分；Grönemeyer《Mensch》家人措辭；Hum 上線簡介的雜誌榜單名次；Jeff Buckley 上線簡介死亡地點（Wolf River 非密西西比河）；Khun Narin 上線簡介的影片出資段；Killswitch 錄音月份；La Düsseldorf 上線簡介兩處；Idoli 銷量說法。

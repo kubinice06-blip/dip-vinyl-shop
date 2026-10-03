@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 290 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 307 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -294,3 +294,20 @@
 | ar-c-011 | Idoli | VIS Idoli | 這張賣了約 200000 張，是樂團銷量最高的一張 | 搜尋摘要（維基《Čokolada》專輯頁）稱 1983 年《Čokolada》『被視為南斯拉夫賣得最好的唱片之一』；若屬實，『VIS Idoli 是樂團銷量最高的一張』可能過頭。本層沒實讀該頁數字，只提醒店主在本機核對兩張的銷量出處，不確定就改成不比較。 | https://en.wikipedia.org/wiki/%C4%8Cokolada_(album) |
 | ar-c-011 | Jeff Buckley | Sketches for My Sweetheart the Drunk | 1997 年 5 月 29 日傍晚在密西西比河游泳時溺斃 | 英文維基寫的是 Wolf River，為密西西比河的支流；『在密西西比河』不精確，建議改為支流名稱或乾脆只寫年份 | https://en.wikipedia.org/wiki/Jeff_Buckley |
 | ar-c-011 | Khun Narin | Khun Narin's Electric Phin Band | 看到當地樂手上傳的演出影片後找上 Innovative Leisure，由廠牌出資飛往泰國 | 兩源（Newsweek、Bandcamp）都寫影片是在 Dangerous Minds 部落格流傳，Newsweek 並說樂隊本身網路曝光極少；『當地樂手上傳』與『由廠牌出資』查無來源，建議改成『網路上流傳的演出影片』 | https://www.newsweek.com/khun-narin-phin-sing-psychedelic-rock-band-discovered-remote-village-thailand-266649 |
+| ar-c-011 | Killswitch Engage | Alive or Just Breathing | 2001 年 11 月到 2002 年 2 月在麻州 Westfield 的 Zing Studios 錄音 | Loudwire 週年報導寫錄音期間是 2001 年 10 月到 2002 年 2 月；僅單源，建議店主對照維基專輯條目與專輯內頁後再決定是否改成「2001 年底到 2002 年 2 月」 | https://loudwire.com/killswitch-engage-alive-or-just-breathing-anniversary/ |
+| ar-c-011 | La Düsseldorf | La Düsseldorf | David Bowie 稱這個團是八〇年代的原聲帶 | 只有英文維基首段（與依它轉述的頁面）有這句；本層另開的 Electricity Club、Tiny Mix Tapes、維基 Klaus Dinger 頁都沒有，湊不到第二源。建議店主改寫成「被 Bowie 與 Eno 視為影響來源」或確認原始出處（維基該句的引用） | https://en.wikipedia.org/wiki/La_D%C3%BCsseldorf |
+| ar-c-011 | La Düsseldorf | La Düsseldorf | 他們後來用這張唱片的收益買下了自己的錄音室 | 本層讀到的來源（維基、Electricity Club、Tiny Mix Tapes）皆未提到，無法證實；建議店主確認原出處或刪除 | https://en.wikipedia.org/wiki/La_D%C3%BCsseldorf_(album) |
+| ar-c-012 | Lady Pank | Lady Pank | 這張黑膠也賣到百萬張、獲金唱片 | 團仍在活動；本批特注規定在世者／仍在活動團體的累計銷量不收，建議上線簡介日後改寫時拿掉銷量句。 | https://pl.wikipedia.org/wiki/Lady_Pank_(album) |
+| ar-c-012 | Linda Ronstadt | Simple Dreams | 一年內在美銷出逾三百五十萬張 | 事實本身與英文維基一致（不到一年在美國賣出逾 350 萬張），但依本批特注在世者累計銷量不收，建議日後改寫時拿掉。其餘（擠下已蟬聯 29 週的《Rumours》、自佔五週、兩首單曲同時進前五且為繼披頭四後首組、首位女歌手）經英文維基核對無誤。 | https://en.wikipedia.org/wiki/Simple_Dreams |
+| ar-c-012 | Litfiba | El diablo | 〈Il volo〉悼念樂團的鼓手，他因海洛因過量過世 | 依本批特注，成員死亡只收年份與公開層級、不收死因；建議日後改寫時拿掉死因。 | https://it.wikipedia.org/wiki/El_diablo_(album_Litfiba) |
+| ar-c-012 | Litfiba | El diablo | 約一年半內賣出四十萬張 | 團仍在活動；依本批特注在世者累計銷量不收，建議日後改寫時拿掉。 | https://it.wikipedia.org/wiki/El_diablo_(album_Litfiba) |
+| ar-c-012 | Mr.Children | Atomic Heart | 並獲第 36 屆日本唱片大賞最佳專輯獎 | 日本作曲家協會的第 36 回頁面，Atomic Heart 列在『ベストアルバム賞』，『最優秀アルバム賞』是桑田佳祐《孤独の太陽》；『最佳專輯獎』易被讀成最優秀專輯獎，建議改寫為『ベストアルバム賞（優秀作品獎之一）』。 | https://www.jacompa.or.jp/record/36.php |
+| ar-c-013 | Negasphere | Disadvantage | 鍵盤的基本軌由川崎馨在東京方南町的 Green Studio 錄下 | 日文維基與 Disk Union 的樂團頁把鍵盤手寫成「川崎薫」，上線簡介寫「川崎馨」。Discogs 製作名單可能用不同寫法，待店主對照原盤內頁確認。 | https://ja.wikipedia.org/wiki/Negasphere |
+| ar-c-013 | Perfect | Perfect | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl 維基估計超過一百萬張，兩源衝突；Perfect 仍在活動，銷量與認證類內容依規則本就不該寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 |
+| ar-c-013 | Radar | Trofee | 1985 這一年正好是三位團員在團區間的結束年，也是另外三位的起始年 | 這句的依據是 MusicBrainz 一家的成員起訖年；愛沙尼亞維基與 Jazzkaar 的年份與 MusicBrainz 有一年的落差（例：樂團存續 MB 為 1978 至 1988、愛沙尼亞維基為 1977 至 1987；首席吉他 Riho Lilje MB 1978 至 1982、愛沙尼亞維基 1977 至 1981），只有 Nevil Blumberg 1981 至 1985 兩邊一致。這種「剛好三進三出」的年份巧合建立在單一來源上，建議降級成較保守的寫法或刪句。 | https://et.wikipedia.org/wiki/Radar_(ansambel) |
+| ar-c-013 | Radar | Baltic Coast | 到這一年（1987），1978 年那批原始成員只剩一位還在區間內 | 「1978 年那批原始成員」同樣建立在 MusicBrainz 的起始年上；愛沙尼亞維基把起點寫 1977 年，且團在 1987 年解散，Sergei Pedersen 與 Paap Kõlar 到 1987 兩源都在團。Pedersen 是原始成員這點成立，但「只剩一位」的說法取決於把 1978 還是 1977 當起點，可信度低於單源年份的寫法，建議改成「創團鍵盤手 Pedersen 還在團裡」這類可驗證的說法。 | https://et.wikipedia.org/wiki/Radar_(ansambel) |
+| ar-c-013 | Rare Earth | Ecology | Motown 為進軍白人搖滾市場設立新廠牌時還沒想好名字，樂團開玩笑提議就叫 Rare Earth——公司真的採用了 | 本層開頁的底特律歷史協會、Motown 博物館、Louder、Michigan Rock and Roll Legends 皆只說廠牌「以團名命名／為紀念這支樂團而設」，團名早於廠牌（1968 年已改名），沒有一源提到「還沒想好名字」與「開玩笑提議」；這段軼事無法兩源驗證，建議刪或改成「廠牌以團名命名」。 | https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/rare-earth |
+| ar-c-014 | Socrates Drank the Conium | Phos | 希臘文維基記它賣出超過二十萬張 | 各源數字不一：希臘文維基 20 萬以上，rocktime.gr 寫超過 30 萬，rockmachine 只說 70 年代希臘搖滾銷量最冠；原句已標明『希臘文維基記』，屬轉述無誤，但建議店主考慮改成『被稱為 1970 年代希臘搖滾銷量最高的一張』以免數字爭議。 | https://rocktime.gr/articles/socrates-drank-the-conium-o-ellenikos-rok-muthos-pou-xetrellane-to-sumpan |
+| ar-c-014 | Stray Cats | Built for Speed | 十二首取自英國時期的《Stray Cats》與《Gonna Ball》，再加一首未發表的同名曲 | 英文維基《Built for Speed》條目寫：六首取自《Stray Cats》（1981 年 2 月）、五首取自《Gonna Ball》（1981 年 11 月），再加同名曲，共 11 加 1 等於 12 首；簡介『十二首取自…再加一首』會變成 13 首，疑似算錯。建議本機核對實際曲目表，再改成『十一首取自…再加一首同名曲』或『共十二首』。 | https://en.wikipedia.org/wiki/Built_for_Speed_(Stray_Cats_album) |
+| ar-c-014 | Taj Mahal Travellers | August 1974 | 一台廂型車從歐洲經中近東開到泰姬瑪哈陵，十一個月，沿路演奏 | Wire 小杉武久文章只說 1972 年 4 月在鹿特丹買福斯巴士、約一個月行經阿爾卑斯前往印度阿格拉；「十一個月」未在任何已開頁來源找到。建議店主核對原文或改成不寫長度（待核，非確定錯誤）。 | https://www.thewire.co.uk/in-writing/essays/p=14225 |
+| ar-c-014 | The Ethiopians | Engine 54 | 簡介寫「Leonard Dillon、Stephen Taylor 與 Aston Morrison 的三部和聲」 | 兩個獨立來源都寫成員名為 Aston Morris（非 Morrison）；建議以 Doctor Bird 原盤 credit 再核對後改為 Morris。 | https://bendbulletin.com/2011/10/03/reggae-pioneer-leonard-dillon-dies/ |
