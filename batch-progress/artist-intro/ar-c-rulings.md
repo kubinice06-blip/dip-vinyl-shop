@@ -221,3 +221,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 寫作 Opus 2 支；40 位全上（36 full、4 thin：Natacha Atlas、The Bush Chemists、Wailing Souls、Andrew Cox）。審稿 0 處修改。
 - 郭金發在敬老演唱會唱〈燒肉粽〉時倒下、送醫後過世：廣為人知且與代表曲直接相連，列必要例外，只寫事件層級。
 - 待本機（上線簡介）：Nass El Ghiwane「把班鳩琴帶進 chaabi」與成立年；Ofra Haza《Yemenite Songs》Shabazi 是十七世紀；Prince Far I《Psalms for I》製作人；Natacha Atlas《Gedida》年份；Souad Massi《Raoui》《Deb》離開阿爾及利亞原因改中性；The Meditations《Message from the Meditations》年份；Vicente Amigo 師從年數與 La Unión 年份；Wailing Souls Garth Dennis 陣容；The Gladiators《Proverbial Reggae》與 Front Line 之行；The Abyssinians《Arise》換團員；Rubén González 葛萊美入圍與 Billboard 名次未驗。
+
+## ar-c-024（2026-10-03，五批接力收尾）
+
+- 補洞 Sonnet 4 支＋寫作 Opus 2 支；40 位全上（34 full、6 thin：Bobby V.、C.C.C.C.、Dorian Electra、Emancipator、Gorgon City、Jamie xx）。
+- 審稿修 1 處：David Guetta 刪「不算圈內公認最酷」（單一樂評的評斷）。
+- Bobby V. 卡池誤標電子，照 R&B 寫；Dorian Electra 正文不用「他／她」。Bassnectar、Diplo、Derrick May 的指控皆不寫。
+- 待本機（上線簡介）：Aux 88《Is It Man or Machine?》出道成員與首作；Green Velvet《Constant Chaos》生年；Carl Cox《F.A.C.T.》三唱盤年份（1988 Sunrise）；Derrick May《Innovator》版本；C418「第二件入選國家錄音登錄」單源；Budd & Eno《Ambient 2》錄音年；卡池年份 Étienne de Crécy《Super Discount》。
+
+## 五批接力（ar-c-020～024）總結
+
+- 200 位全上，0 位略過；審稿共修 16 處。補洞層全程走來源分級新規則，未撞 WebSearch 上限（同時最多 6 支）。
+- 新增寫作特注：韓文與漢字相鄰補空格；QA 禁語「我／你」會誤擋含此字的曲名意譯與人名（我如古、〈그대에게〉意譯），寫作層改轉述即可，暫不改 QA。

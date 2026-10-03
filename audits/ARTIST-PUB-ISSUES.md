@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 400 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 403 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -391,7 +391,10 @@
 | ar-c-023 | The Meditations | Message from the Meditations | 上線簡介寫這是首作，1976 年由 Dobby Dobson 製作兼編曲、Double-D 發行 | 維基的專輯清單把《Message From The Meditations》列為 1977 年，卡池年份為 1976；發行年待本機以 Discogs 原盤核對，若為 1977 則簡介與卡年份皆須改 | https://en.wikipedia.org/wiki/The_Meditations |
 | ar-c-023 | Vicente Amigo | De mi corazón al aire | 師從 Manolo Sanlúcar 十年；1988 年在 La Unión 的 Festival Nacional del Cante de las Minas 拿下吉他首獎 | 「十年」只見維基單源，Córdoba Flamenca 記 1983 至 1988 年在 Sanlúcar 樂團（約五年）；La Unión 首獎年份 El Arte de Vivir el Flamenco 為 1988，Córdoba Flamenca 的年表寫成 1989；兩點兩源不一致，建議店主本機核對西班牙語官方傳記後再決定是否改 | https://cordobaflamenca.com/guitarristas/vicente-amigo/ |
 | ar-c-023 | Wailing Souls | Fire House Rock | 當時陣容還包含 Black Uhuru 創團成員 Rudolph「Garth」Dennis | 維基整頁與 Encyclopedia.com 都沒有 Garth Dennis 或 Black Uhuru 的連結；本層沒找到佐證，建議店主本機以專輯內頁或 Discogs 核對陣容；若無法佐證，建議刪除此句 | https://en.wikipedia.org/wiki/The_Wailing_Souls |
+| ar-c-024 | Aux 88 | Is It Man or Machine? | Tommy Hamilton（TomTom）與 William「BJ」Smith（Posatronix）1993 年以《Bass Magnetic》出道 | 早期成員是 Hamilton 與 Keith Tucker（XLR8R：Hamilton 與 Tucker 組成 Aux 88；Mutek Montreal：1993 年由兩人成軍、Tucker 1995 年離團後 Smith 才成為核心）；最早的發行是 EP《Technology》，接著才是雙 EP《Bass Magnetic》，維基則把《Bass Magnetic》寫成首張專輯。建議改成「Hamilton 與 Keith Tucker 1993 年前後以《Bass Magnetic》亮相，Smith 後來成為搭檔」，或拿掉具名成員。 | https://montreal.mutek.org/en/artists/aux-88 |
 | ar-c-024 | Carl Cox | F.A.C.T. | Mixmag 記述他同年在舞池『把三台唱盤拆了』的三盤手法，正是這份混音的底氣 | 讀到的 Mixmag 長文《Carl Cox: The Legend》摘要未見此句；Cox 以三唱盤成名的事件所有來源都記為 1988 年 Sunrise rave，不是 1995 年。引文出處建議回頭核對，找不到就改寫成 1988 年 Sunrise 的說法。 | https://mixmag.net/feature/carl-cox-the-legend |
+| ar-c-024 | Derrick May | Innovator | 這套雙 CD 結集…二十六軌收齊 Transmat 時期的〈Nude Photo〉〈It Is What It Is〉〈Kaotic Harmony〉 | RA 傳記寫 1995 年由 Sony Japan 編成『單碟』的《Innovator》；MusicBrainz 記 Innovator 的 release group 首發日 1996 年 4 月 21 日、共 8 個 release。碟數與軌數依版本而異，建議以卡池實際對應的 release 在 MusicBrainz 核對『雙 CD、26 軌』是否屬同一版本。 | https://ra.co/dj/derrickmay/biography |
+| ar-c-024 | Green Velvet | Constant Chaos | Curtis Alan Jones 1968 年生於芝加哥 | 生年各來源不一致：維基 1968-04-26、wikidata 1967-04-26、List 專訪摘要 1968；上線簡介的 1968 年未必錯，但建議主線核對一個權威來源（如 Billboard 或官方傳記）後再決定是否保留生年。 | https://www.wikidata.org/wiki/Q1544666 |
 | ar-c-024 | Harold Budd & Brian Eno | Ambient 2: The Plateaux of Mirror | 1980 年於安大略省咸美頓錄成 | 英文維基 Ambient 2 條目寫 1979 年於 Hamilton 的 Grant Avenue Studio 錄音、1980 年 4 月發行；錄音年只有維基單一來源，需主線找第二源（如專輯內頁或 Eno 訪談）再決定是否改為 1979 年。 | https://en.wikipedia.org/wiki/Ambient_2:_The_Plateaux_of_Mirror |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
