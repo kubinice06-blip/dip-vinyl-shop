@@ -3253,7 +3253,10 @@
     "national health"
    ],
    "state": "published",
-   "reviewFixes": 3
+   "reviewFixes": 3,
+   "skipped": [
+    "multi-story"
+   ]
   },
   {
    "batch": "ar-c-013",
@@ -10058,8 +10061,12 @@
     "テルズ・シンフォニア",
     "브로콜리 너마저"
    ],
-   "state": "gap",
-   "note": "重寫爛稿與偏弱稿（來源按風險分級新規則）；終稿併回原批次 output"
+   "state": "merged",
+   "note": "重寫爛稿與偏弱稿（來源按風險分級新規則）；終稿併回原批次 output",
+   "reviewFixes": 2,
+   "skipped": [
+    "multi-story"
+   ]
   }
  ]
 }

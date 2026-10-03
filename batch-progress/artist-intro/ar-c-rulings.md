@@ -173,3 +173,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 16 處：14 位第一句補國籍與身分（Jack Rose、Jim Spencer、Jim Sullivan、John Denver、Judee Sill、Judy Collins、June Tabor、Karen Dalton、Lyle Lovett、Marissa Nadler、Labi Siffre、Marek Grechuta、Malicorne 等）；Norma Jean 依新規則補單源低風險的聲音句（受 Kitty Wells 影響、歌寫勞工階級女性），換掉藝名來由那句。
 - 輕微超長（251–254）接受，皆為補國籍所致。
 - fix2 補洞：重寫批以舊稿為底、要補的「人」比一般批多，搜尋上限放寬為 10（qa-artist.mjs 對 `ar-c-fix*` 生效）；何欣穗用了 9 次，放行。
+
+## ar-c-fix2 重寫批（2026-10-03）
+
+- 補洞 Sonnet 4 支（9／9／9／6）＋寫作 Opus 2 支，新規則（來源分級、單源低風險可用、thin 最低門檻）。補洞合計搜尋 193 次。
+- 結果：32 位重寫上線（29 full、3 thin：Mach One、Abel Ganz、テルズ・シンフォニア），併回原批次 output、標 `fixedBy: ar-c-fix2`；本批記 `merged`。
+- **Multi-Story 撤下**：聲音格查無（無維基、prog 資料站全擋），寫不出一句聲音特色，達不到 thin 最低門檻；照「達不到就不寫」從 ar-c-012 撤下舊稿，記入該批 skipped。
+- 審稿修 2 處：Brittany Howard 第一句補「美國歌手與吉他手」，刪領獎感言一句壓字數。姊姊病逝與眼癌屬「必要例外」（個人專輯以姊姊為名，是作品核心）。
+- Toto〈Africa〉冠軍列必要例外（核心成績）；REO Speedwagon「1981 年全美最暢銷專輯」同。何欣穗獎名在 notes 單源，正文未寫獎，不需更正。

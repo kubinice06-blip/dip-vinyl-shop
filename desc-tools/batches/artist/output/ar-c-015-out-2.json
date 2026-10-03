@@ -33,16 +33,18 @@
  {
   "key": "toto",
   "name": "Toto",
-  "status": "thin",
-  "intro": "1977 年在洛杉磯成軍，成員原是替 Steely Dan 等人伴奏的錄音室樂手。第 25 屆葛萊美獎上，《Toto IV》獲年度專輯，〈Rosanna〉獲年度唱片，樂團另得非古典類年度製作人。Michael Jackson 的〈Human Nature〉也由成員 Steve Porcaro 作曲。",
+  "status": "full",
+  "intro": "美國搖滾樂團，1977 年在洛杉磯成軍，班底是替別人錄音伴奏的棚內樂手。據形容，他們協助發明了錄音室式光滑的流行搖滾：精準的棚內功力，配上帶顆粒感的吉他 riff 與高音和聲。〈Africa〉開場那段銅管般的旋律是鍵盤手用合成器寫的，他當時沒去過非洲，靠的是雜誌圖片與深夜紀錄片。1983 年的葛萊美獎，《Toto IV》拿下年度專輯，〈Rosanna〉得年度唱片。〈Africa〉登上美國單曲榜冠軍，2010 年代又因網路迷因再度走紅，Weezer 應網友請願翻唱。",
   "src": [
    "https://en.wikipedia.org/wiki/Toto_(band)",
+   "https://www.loudersound.com/features/the-secret-history-of-toto",
    "https://www.csmonitor.com/1983/0225/022519.html",
-   "https://www.971theriver.com/lsp/artist/bio/toto/",
+   "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/toto",
+   "https://en.wikipedia.org/wiki/Africa_(song)",
    "https://www.upi.com/Archives/1983/02/24/Toto-two-ballads-win-big-Grammy-awards/6121414910800/",
-   "https://en.wikipedia.org/wiki/Steve_Porcaro"
+   "https://consequence.net/2018/06/weezer-toto-africa-billboard-chart/"
   ],
-  "fixedBy": "ar-c-fix1"
+  "fixedBy": "ar-c-fix2"
  },
  {
   "key": "transsylvania phoenix",
@@ -99,13 +101,15 @@
  {
   "key": "ultima thule",
   "name": "Ultima Thule",
-  "status": "thin",
-  "intro": "Ultima Thule 1986 年在愛沙尼亞成軍，是一支搖滾樂團；Tõnis Mägi 在 1987 至 1989 年間擔任樂團早期的主唱。1991 年的《Eesti asi / Pro Estonia》交由芬蘭廠牌 Megamania 發行，走芬蘭的管道，不經蘇聯的發行系統。",
+  "status": "full",
+  "intro": "愛沙尼亞搖滾樂團，1980 年代後期在塔林成軍，由吉他手 Riho Sibul 帶領，早期主唱是 Tõnis Mägi。風格是帶機智歌詞的藍調搖滾，混入愛沙尼亞民謠，唱愛國又帶反諷的歌，據說這種口吻很合愛沙尼亞人的脾性；Mägi 曾說樂團的歌詞多層次，團員是國內最好的吉他手、貝斯手與鼓手。歌唱革命期間他們以這類歌曲走紅，1991 年的《Eesti asi / Pro Estonia》在芬蘭發行，不經蘇聯的發行系統。他們被視為 1980 與 1990 年代愛沙尼亞最重要、最有影響力的搖滾樂團之一。",
   "src": [
    "https://en.wikipedia.org/wiki/Ultima_Thule_(Estonian_band)",
-   "https://musicbrainz.org/ws/2/artist/a54f8952-adc3-4769-b805-0cfa48c0206e?fmt=json&inc=artist-rels+annotation",
+   "https://et.wikipedia.org/wiki/Ultima_Thule_(Eesti_ansambel)",
+   "https://kultuur.postimees.ee/4109237/kuula-ultima-thule-avaldas-uue-rahvuslik-kriitilise-loo-patrioot",
    "https://musicbrainz.org/ws/2/release?release-group=cef444ac-c2c4-455a-8143-7cdf98e8f8c1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
-  ]
+  ],
+  "fixedBy": "ar-c-fix2"
  },
  {
   "key": "univers zero",

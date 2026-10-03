@@ -58,13 +58,16 @@
  {
   "key": "브로콜리 너마저",
   "name": "브로콜리 너마저",
-  "status": "thin",
-  "intro": "브로콜리 너마저（Broccoli, You Too?）2005 年成軍，是韓國的獨立樂團，後來的陣容為三人編制。他們的〈보편적인 노래〉（普遍的歌）獲 2010 年第 7 屆韓國大眾音樂賞最佳 Modern Rock 歌曲，隔年〈졸업〉（畢業）又拿下第 8 屆的同一獎項，連續兩年以歌曲得獎。",
+  "status": "full",
+  "intro": "韓國的獨立樂團，2005 年由首爾大學的學生組成。主腦 윤덕원（Yoon Deok-won）聽著抒情歌手長大，大學進歌謠社才首次看到現場樂團；早期專輯都自己手工製作發行。他們以新鮮的歌詞與憂鬱的「青春之聲」受喜愛，有評論認為他們把哀愁寫成精煉平靜的旋律，確立了獨立音樂的一種傾向；윤덕원 想寫「聽很久也不會覺得害臊的歌」。〈보편적인 노래〉（普遍的歌）與〈졸업〉（畢業）連續兩年拿下韓國大眾音樂賞最優秀現代搖滾歌曲；代表曲〈앵콜요청금지〉（禁止要求安可）曾在音樂節安可時被觀眾齊唱，樂團卻照曲名不演。",
   "src": [
    "https://en.wikipedia.org/wiki/Broccoli%2C_You_Too%3F",
-   "https://musicbrainz.org/ws/2/artist/653d5235-52c8-4614-8ba1-81c11660798e?fmt=json",
-   "https://ko.wikipedia.org/wiki/%EB%B8%8C%EB%A1%9C%EC%BD%9C%EB%A6%AC_%EB%84%88%EB%A7%88%EC%A0%80"
-  ]
+   "https://www.hankookilbo.com/news/article/201207021118524785",
+   "https://www.weiv.co.kr/archives/7528",
+   "https://ko.wikipedia.org/wiki/%EB%B8%8C%EB%A1%9C%EC%BD%9C%EB%A6%AC_%EB%84%88%EB%A7%88%EC%A0%80",
+   "https://times.kaist.ac.kr/news/articleView.html?idxno=934"
+  ],
+  "fixedBy": "ar-c-fix2"
  },
  {
   "key": "시나위",
@@ -106,12 +109,14 @@
   "key": "テルズ・シンフォニア",
   "name": "テルズ・シンフォニア",
   "status": "thin",
-  "intro": "由吉他手平山照継領軍的日本樂團テルズ・シンフォニア（Teru's Symphonia），1983 年開始活動。他們的音樂屬於 symphonic prog，也就是交響前衛搖滾。1985 年樂團發行專輯《Symphonia》，1989 年又推出另一張專輯。",
+  "intro": "日本的交響前衛搖滾樂團，由 NOVELA 吉他手平山照継在 1983 年發起。音樂以女聲與鍵盤為主，被拿來和 Renaissance 相比：仙波基弦樂般的鍵盤與平山的吉他交織，曲子常超過十分鐘，以原創奇幻故事寫成概念專輯，主唱徳久恵美的歌聲被形容為自然而溫柔。據說作品很快絕版、成為收藏品，在歐洲人氣很高。",
   "src": [
+   "https://note.com/takashi_ikegami/n/nbddafedb9a1b",
+   "https://progreview.net/terus_symphonia/",
    "https://ja.wikipedia.org/wiki/TERU'S_SYMPHONIA",
-   "https://musicbrainz.org/ws/2/artist/a1f0a1ec-b466-4e03-acfc-240513467974?fmt=json",
-   "https://musicbrainz.org/ws/2/artist/?query=artist:%E3%83%86%E3%83%AB%E3%82%BA%E3%83%BB%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%82%A2&fmt=json"
-  ]
+   "https://musicbrainz.org/ws/2/artist/a1f0a1ec-b466-4e03-acfc-240513467974?fmt=json"
+  ],
+  "fixedBy": "ar-c-fix2"
  },
  {
   "key": "五條人",
@@ -127,15 +132,18 @@
  {
   "key": "傻子與白痴",
   "name": "傻子與白痴",
-  "status": "thin",
-  "intro": "台灣獨立搖滾樂團傻子與白痴 2015 年成軍；主唱蔡維澤與鼓手徐維均是新竹的高中同學，音樂從高中熱音社起步。2018 年蔡維澤在選秀節目《明日之子》第 2 季總決賽奪冠。樂團以首張專輯《夜長夢少》入圍第 10 屆金音創作獎最佳新人獎，第二張專輯則收了 6 首英文歌。",
+  "status": "full",
+  "intro": "台灣的獨立搖滾樂團，2015 年成軍，主唱蔡維澤與鼓手徐維均是新竹的高中同學。團名代表每個人心裡的兩面：傻子堅持做自己，白痴隨波逐流；後來他們說這種掙扎已經過時，更在乎每天做認為正確的事。早期以迷幻搖滾為主，風格被形容為陰冷潮濕，之後在民謠、電子、R&B 與搖滾之間流轉：第二張專輯改用英文寫「愛的萬物論」，第三張《姿態》轉向帶黑暗元素的電子搖滾。蔡維澤 2018 年在《明日之子》奪冠，導師吳青峰稱讚他的創作「沒有任何框架」。《姿態》讓樂團在金曲獎入圍年度專輯、最佳樂團等 5 項。",
   "src": [
+   "https://dailyview.tw/popular/detail/26681",
    "https://zh.wikipedia.org/zh-tw/%E5%82%BB%E5%AD%90%E8%88%87%E7%99%BD%E7%97%B4",
    "https://www.chinatimes.com/newspapers/20181001000165-260308",
+   "https://www.heavenraven.com/2022/03/29/fool-and-idiot-album-year-of-fate-interview/",
+   "https://dailyview.tw/popular/detail/2727",
    "https://www.marieclaire.com.tw/celebrity/news/38702",
-   "https://www.bamid.gov.tw/News_Content.aspx?n=3548&s=124331",
-   "https://www.chinatimes.com/realtimenews/20211026005034-260404"
-  ]
+   "https://zh.wikipedia.org/zh-tw/%E7%AC%AC35%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+  ],
+  "fixedBy": "ar-c-fix2"
  },
  {
   "key": "唐朝樂隊",
@@ -165,12 +173,14 @@
  {
   "key": "太極",
   "name": "太極",
-  "status": "thin",
-  "intro": "香港樂隊太極 1984 年成軍，原本只有 4 位成員，後來與 Trinity 樂隊合併成七人編制，由雷有曜、雷有輝兄弟擔任主音，實際編曲出自鄧建明與唐奕聰。1986 年以首張專輯出道，同年度獲十大中文金曲最有前途新人獎金獎，2016 年度又在第 39 屆十大中文金曲獲頒香港電台所設的金針獎。",
+  "status": "full",
+  "intro": "香港樂隊，1984 年成立，原本四人，後與 Trinity 樂隊合併成七人編制，由雷有曜、雷有輝兄弟主唱，編曲實際由吉他手鄧建明與鍵盤手唐奕聰負責。他們以搖滾見稱，早期作品風格較凌厲，八〇年代末轉向主流；〈紅色跑車〉〈留住我吧〉〈迷途〉等歌一響起，就喚起樂迷對「熱血沸騰的搖滾年代」的集體回憶。2016 年度十大中文金曲把香港樂壇最高榮譽金針獎頒給太極，頒獎人林子祥笑說是看著他們長大的，稱他們是「真的漢子」；那晚七人罕見同台，早已離團、人在加拿大的雷有曜特地返港，在〈迷途〉登台。",
   "src": [
    "https://zh.wikipedia.org/wiki/%E5%A4%AA%E6%A5%B5%E6%A8%82%E9%9A%8A",
-   "https://www.hk01.com/%E7%9C%BE%E6%A8%82%E8%BF%B7/63898/%E5%8D%81%E5%A4%A7%E4%B8%AD%E6%96%87%E9%87%91%E6%9B%B2-%E5%A4%AA%E6%A5%B5%E9%9B%B7%E6%9C%89%E6%9B%9C%E6%AD%B8%E9%9A%8A-%E6%9E%97%E5%AD%90%E7%A5%A5%E6%8D%B1%E7%9C%BC%E7%9E%93%E9%A0%92%E7%8D%8E-%E7%9D%87%E4%BD%8F%E4%BD%A2%E5%93%8B%E5%A4%A7"
-  ]
+   "https://www.hk01.com/%E7%9C%BE%E6%A8%82%E8%BF%B7/63898/%E5%8D%81%E5%A4%A7%E4%B8%AD%E6%96%87%E9%87%91%E6%9B%B2-%E5%A4%AA%E6%A5%B5%E9%9B%B7%E6%9C%89%E6%9B%9C%E6%AD%B8%E9%9A%8A-%E6%9E%97%E5%AD%90%E7%A5%A5%E6%8D%B1%E7%9C%BC%E7%9E%93%E9%A0%92%E7%8D%8E-%E7%9D%87%E4%BD%8F%E4%BD%A2%E5%93%8B%E5%A4%A7",
+   "https://www.mpweekly.com/entertainment/article/%E4%B8%80%E5%91%A8%E6%98%9F%E6%98%9F%EF%BD%9C%E5%A4%AA%E6%A5%B5%E6%A8%82%E9%9A%8A40%E5%B9%B4%E5%85%84%E5%BC%9F%E6%83%85%E9%9D%A0%E4%B8%80%E4%BB%B6%E4%BA%8B%E7%B6%AD%E7%B9%AB%E3%80%80%E5%9B%9E%E6%86%B6"
+  ],
+  "fixedBy": "ar-c-fix2"
  },
  {
   "key": "張楚",
@@ -211,11 +221,16 @@
  {
   "key": "左小祖咒",
   "name": "左小祖咒",
-  "status": "thin",
-  "intro": "左小祖咒本名吳紅巾，1970 年生於江蘇建湖。1993 年他從上海來到北京，在東郊參與建立前衛藝術家聚落「北京東村」，並與夜千組成 NO 樂隊，改名左小祖咒，擔任主唱、吉他手與詞曲作者。首張專輯《走失的主人》在 1998 年發行，隔年推出《廟會之旅》。",
+  "status": "full",
+  "intro": "中國的獨立音樂人，本名吳紅巾，1970 年生於江蘇建湖的船工家庭。1993 年從上海來到北京，參與建立前衛藝術家聚落「北京東村」，同時組 NO 樂隊、改名左小祖咒，擔任主唱並拉提琴。導演賈樟柯形容他「用非常變態的嗓音肢解美好的旋律」，歌詞被形容為犀利而富批判。Cowboy Junkies 的 Michael Timmins 稱他為「中國的 Leonard Cohen」，形容他是中國地下藝術圈備受尊敬、很有政治性的聲音，還請他替樂團一首歌寫詞並主唱；他也替艾未未的首張搖滾專輯《神曲》作曲並製作。",
   "src": [
    "https://zh.wikipedia.org/wiki/%E5%B7%A6%E5%B0%8F%E7%A5%96%E5%92%92",
-   "https://www.newton.com.tw/wiki/%E5%B7%A6%E5%B0%8F%E7%A5%96%E5%92%92"
-  ]
+   "https://www.newton.com.tw/wiki/%E5%B7%A6%E5%B0%8F%E7%A5%96%E5%92%92",
+   "https://cowboyjunkies.com/tag/zuoxiao-zuzhou/",
+   "https://en.wikipedia.org/wiki/Renmin_Park_(album)",
+   "https://zh.wikipedia.org/zh-tw/%E5%B7%A6%E5%B0%8F%E7%A5%96%E5%92%92",
+   "https://www.rfa.org/mandarin/yataibaodao/renquanfazhi/vt-03112013151507.html"
+  ],
+  "fixedBy": "ar-c-fix2"
  }
 ]

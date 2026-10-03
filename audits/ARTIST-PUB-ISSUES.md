@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 345 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 356 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -343,9 +343,20 @@
 | ar-c-018 | Nadia Reid | Preservation | 十四歲開始彈吉他 | 維基寫 14 歲，AudioCulture 與 North & South 都寫 15 歲左右；來源不一致，建議簡介改寫成「十幾歲」或不寫年紀。 | https://www.audioculture.co.nz/profile/nadia-reid |
 | ar-c-018 | Nadia Reid | Preservation | 2015 年以群眾募資完成首作起步 | 維基與 North & South 都寫首張《Listen to Formation, Look for the Signs》2014 年發行；簡介寫 2015 年，群眾募資一事本層沒有查到來源，建議核對。 | https://northandsouth.co.nz/2025/05/06/first-in-folk/ |
 | ar-c-018 | Taraf de Haïdouks | Dumbala Dumba | 比利時人 Stéphane Karo 與 Michel Winter 自 1980 年代末把他們帶進西歐 | Nonesuch 官方頁寫兩人 1990 年赴羅馬尼亞時發現樂團，Chicago Reader 寫樂團 1990 年代初組成；『1980 年代末』找不到來源支持，建議改為『1990 年代初』或『1990 年起』。 | https://www.nonesuch.com/artists/taraf-de-haidouks |
+| ar-c-019 | Terry Allen | Lubbock (On Everything) | Lloyd Maines「後來製作了 Wilco」 | 英文維基 Lloyd Maines 條目只寫他參與（鋼棒吉他）Wilco 首作《A.M.》等 alt-country 錄音；製作名單裡有 Uncle Tupelo、Chicks、Richard Buckner、Robert Earl Keen 等，沒有 Wilco。『製作了 Wilco』無據，建議改成『後來製作過 Uncle Tupelo、The Chicks 等』或『參與 Wilco 首作』。 | https://en.wikipedia.org/wiki/Lloyd_Maines |
+| ar-c-019 | The Jayhawks | Hollywood Town Hall | 1992 年 9 月由 American 發行 | 維基寫 1992 年發行時廠牌是 Def American（Rick Rubin 的廠牌，後來改名 American Recordings，約 1993 年），上線簡介寫『American』可能是用了日後的名稱；建議寫 Def American 或『American（原名 Def American）』。證據強度中，建議店主核對發行頁。 | https://en.wikipedia.org/wiki/The_Jayhawks |
+| ar-c-019 | Tír na nÓg | Tír na nÓg | 1969 年在都柏林組成 | Irish Rock 與 journalofmusic 都寫成軍約 1969 年底或 1970 年初（journalofmusic 寫 1970 年初）；維基寫 1969 年。來源互相不一致，非明確錯誤，建議店主視情況改為『約 1969–70 年』。 | https://www.irishrock.org/irodb/bands/tirnanog.html |
+| ar-c-019 | Zach Bryan | American Heartbreak | 首週締造 7.1 萬張專輯等效單位，是 2022 年鄉村專輯最佳首週成績 | 維基《American Heartbreak》只記首週 71,500 單位、Billboard 200 第 5、鄉村專輯榜冠軍，以及「當日 Spotify 與 Apple Music 鄉村專輯串流最高」；查不到「2022 年鄉村專輯最佳首週」的來源，建議改成只寫單位數與榜位，或補來源。 | https://en.wikipedia.org/wiki/American_Heartbreak |
+| ar-c-019 | Владимир Высоцкий（Vladimir Vysotsky） | Баллады и песни | 他生前在蘇聯只拿到過一張 12 吋長片，其餘全是 7 吋的小碟 | 1976 年 Мелодия 發行了二張 12 吋的《Алиса в Стране чудес》，歌曲全由他作詞作曲、他並演唱數個角色（俄文維基稱這是他第一次以作者身分在國家出版唱片上合法露面）。「只拿到過一張 12 吋長片」不成立；可改成「生前在蘇聯境內合法發行的 12 吋唱片極少」之類說法，或指明 1978 年這張是以他個人名義的長片。 | https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D1%81%D0%B0_%D0%B2_%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B5_%D1%87%D1%83%D0%B4%D0%B5%D1%81_(%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D0%BF%D1%8C%D0%B5%D1%81%D0%B0,_1976) |
+| ar-c-019 | かぐや姫 | かぐや姫さあど | 〈神田川〉最後賣出一百二十萬張以上 | 英文與日文維基首段皆寫 160 萬張；「120 萬以上」不算錯但偏保守，可考慮改成維基首段的約 160 萬張或加註各紀錄不一。 | https://en.wikipedia.org/wiki/Kaguyahime_(band) |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
 | ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
+| ar-c-fix2 | Barbara | Barbara chante Barbara | 是第一張全部由自己寫詞寫曲的唱片 | 法文維基專輯條目寫該張除兩首與外人合作的曲目外，其餘由她自己寫（單源，建議改為「幾乎全部」或「主要由自己創作」）。 | https://fr.wikipedia.org/wiki/Barbara_chante_Barbara |
+| ar-c-fix2 | C.O.B. | Spirit of Love | 1970 年 CBS 的 12 吋原盤 | 英文維基、klofmag 悼文與 At The Barrier 樂評都把《Spirit of Love》記為 1971 年（BGO 重發頁寫 1972 年）；卡池年份為 1970，建議店主核對原盤年份（Discogs）後同步卡單與簡介。 | https://atthebarrier.com/2021/04/21/c-o-b-spirit-of-love-album-review/ |
+| ar-c-fix2 | The Rollies | Dansa Yok Dansa | 樂團 1965 年成軍於萬隆 | 印尼文維基寫 1965 年，但 ANTARA 的印尼搖滾史報導寫 1967 年起在 Deddy Stanzah 領導下起步，兩說並存；建議改成「1960 年代中期」或加註兩說。 | https://www.antaranews.com/berita/1116114/histori-rock-indonesia-lahirnya-musisi-legenda |
+| ar-c-fix2 | Curly Ray Cline | Chicken Reel | Cline 十五歲時與堂兄 Ezra、哥哥 Ned 組了 Lonesome Pine Fiddlers | 親屬關係兩說：英文維基寫堂兄 Ezra 與哥哥 Ned，e-WV（Ivan M. Tribe）寫 Curly Ray、Charlie、Ned 是堂（表）兄弟；建議改成「與親族」。 | https://www.wvencyclopedia.org/entries/1401 |
 | ar-c-fix2 | Michael Burks | Make It Rain／Iron Man | 他生前五度入圍 Blues Music Award（Iron Man 簡介） | Alligator 官網寫入圍四次，維基寫五次，兩源不一致；建議改成『多次入圍』 | https://www.alligator.com/artists/Michael-Burks/ |
 | ar-c-fix2 | Perfect | Perfect | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl／en 維基稱約一百萬張，說法不一；Perfect 在世且仍有成員活動，銷量與認證類內容依規則不寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 |
 | ar-c-fix2 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
+| ar-c-fix2 | 脆樂團 | 有多少光就有多少黑 | 專輯裡十首歌各有一幅畫，其中五幅後來進了波隆那插畫展 | TiBE 台北國際書展的 2020 波隆那插畫展台灣入選頁，丁律妏名下只列《虛線．Déjà Vu》一件；『五幅』只見 zh 維基與搜尋摘要。建議把『五幅』改成『入選波隆那插畫展』，或確認件數再寫。 | https://www.tibe.org.tw/tw/show_detail/47/87/484 |
