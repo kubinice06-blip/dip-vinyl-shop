@@ -128,3 +128,24 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 主線核實：Venom 的 Cronos（Conrad Lant）2026-10-01 過世（Decibel、Consequence）；Phoenix 的 Nicu Covaci 2024-08-02 過世（Agerpres、Europa Liberă）。
 - 審稿修 5 處：The Move 單曲進榜數、Stone Roses 演出人數、Wedding Present 進榜紀錄、Toto「一晚三大獎」、Wet Leg 提名數（在世者名次與座數規則）。
 - 待本機：Tim Hardin 上線簡介點名樂評人與 AllMusic；The Weather Station《Ignorance》上線簡介點名樂評人與《紐約時報》；Sensational Nightingales 兩處；Ton Steine Scherben 曲序。
+
+## ar-c-016（2026-10-03）
+
+- thin 20／40（WebSearch 共用額度用盡，後段補洞只能開頁）。**不寫 3 位：何欣穗（三格全 none）、美狂乱（只剩一條事實）、舌頭（寫不到 100 字）**，progress 記 `skipped`，待新工作階段補查。
+- 預抓對錯頁照 warn 丟棄：太極（哲學）、張楚（秦末張楚國）。
+- 主線核實：松山千春 2026 年 9 月獲足寄町町民榮譽賞（北海道新聞、足寄町公所）。
+- 審稿修 5 處：들국화《京鄉新聞》評論家問卷名次刪（樂評榜單名次先例）；楊乃文入圍數與「入圍最多」刪；蔡健雅「得獎最多」與座數刪；草東沒有派對 樂評人馬世芳具名刪（樂評姓名不進正文），「最大贏家」刪。
+- 待本機：五條人上線簡介寫「中國大陸」兩處；唐朝《演義》上線簡介寫了車禍死因、中文數字日期；圖騰上線簡介中文數字年份。
+
+## ar-c-017（2026-10-03）
+
+- thin 約半數。**不寫 2 位：蘇打綠、零與聲音解放組織**（身世與貢獻格查無兩源，額度用盡），progress 記 `skipped`。
+- 特注更正：超載是北京的搖滾樂團（只有兩張唱片由台灣魔巖發行），不是台灣團；主線特注寫錯，撰稿已照正。
+- 主線核實：Gram Parsons 2026 年以 Early Influence 入選搖滾名人堂（MusicRow、AJC）；Bill Fay 2025-02-22 過世，81 歲（NME、Consequence）。
+- 審稿修 1 處：Buffy Sainte-Marie 身分爭議改寫成兩源中性層級，不點名調查媒體、不寫具體出生地結論。
+- 待本機：陳珊妮曲名；Alela Diane 寫作地點；Barbara、Buffy、C.O.B.、Curly Ray Cline、Ewa Demarczyk 上線簡介各一處。
+
+## 十批接力（ar-c-008～017）收尾補查名單（新工作階段、WebSearch 額度重算後補）
+
+- 未寫（skipped）：Hope of Glory（ar-c-011）、何欣穗／美狂乱／舌頭（ar-c-016）、蘇打綠／零與聲音解放組織（ar-c-017）。
+- 已上架但因額度用盡偏薄，宜補強：Tom Petty、Toto、The Pogues、Алиса、ДДТ（ar-c-015）；米津玄師、松山千春、蔡健雅（ar-c-016）；Christy Moore、Buffy Sainte-Marie（ar-c-017）。
