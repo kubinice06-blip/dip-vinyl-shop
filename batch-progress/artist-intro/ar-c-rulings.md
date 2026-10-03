@@ -99,3 +99,24 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 主線核實：Jeff Buckley 2026 年首度入圍搖滾名人堂但未入選（Billboard、Relix）；Kim Gordon《PLAY ME》2026-03-13 發行，Dave Grohl 在〈Busy Bee〉打鼓（Stereogum、維基）；White Stripes 2025 年入選、Iggy Pop 引介。
 - 審稿修 3 處：Killswitch Engage 在世者葛萊美入圍次數刪；Hum 兩處空白。
 - 待本機：Hope of Glory 身分；Grönemeyer《Mensch》家人措辭；Hum 上線簡介的雜誌榜單名次；Jeff Buckley 上線簡介死亡地點（Wolf River 非密西西比河）；Khun Narin 上線簡介的影片出資段；Killswitch 錄音月份；La Düsseldorf 上線簡介兩處；Idoli 銷量說法。
+
+## ar-c-012（2026-10-03）
+
+- thin 9／40。
+- 主線核實：Mew 主唱 Jonas Bjerre 稱 2025 年是他在 Mew 的最後一年，樂團 2025 年辦告別演出（BrooklynVegan、NME）。
+- 審稿修 3 處：Locomotiv GT「唯一從歐陸前來的團體」序數刪；Marillion 在世者「最成功、最重要」改「代表」；Mission of Burma 耳鳴健康細節刪（健康私事先例）。
+- 待本機：Mr.Children《Atomic Heart》上線簡介獎名（ベストアルバム賞非最優秀）；Lady Pank、Linda Ronstadt、Litfiba 上線簡介銷量數字；Litfiba《El diablo》上線簡介寫了死因；Maher Shalal Hash Baz 上線簡介首發年。
+
+## ar-c-013（2026-10-03）
+
+- thin 9／40。Novos Baianos 的 Rolling Stone Brasil 票選名次不收（雜誌榜單先例）。
+- 主線核實：Olivia Rodrigo《You Seem Pretty Sad for a Girl So in Love》2026-06-12 發行（Deadline、Billboard）；Periphery《A Pale White Dot》2026-05-15 由自家 3DOT 發行（維基、Apple Music）；David Johansen 2025 年過世。
+- 審稿修 4 處：Olivia Rodrigo 在世者葛萊美座數改只寫最佳新人；Phil Keaggy 專輯數與「多次」得獎刪；Procol Harum 單曲銷量刪；Rare Earth「Motown 第一支成功白人搖滾團」兩源互引非獨立，刪序數。
+- 待本機：Negasphere《Disadvantage》人名「川崎馨／薫」；Perfect 上線簡介銷量句；Radar 兩張卡的成員起訖年；Rare Earth《Ecology》軼事查無來源。
+
+## ar-c-014（2026-10-03）
+
+- thin 7／40。預抓對錯頁照 warn 丟棄：Shelter（庇護所建築）。
+- 主線核實：The Menzingers 第八張《Everything I Ever Saw》2026 年 7 月由 Epitaph 發行、Will Yip 製作（Consequence、WHYY）；Sinéad O'Connor 2024 年身後首度獲搖滾名人堂提名。
+- 審稿修 1 處：Socrates Drank the Conium「1970 年代希臘搖滾銷量最高」刪（在世成員，銷量類宣稱比照不寫）。
+- 待本機：Spacemen 3《Playing with Fire》卡池年份 1988 疑為 1989；Stray Cats、Socrates、Ethiopians、Taj Mahal Travellers 上線簡介各一處。

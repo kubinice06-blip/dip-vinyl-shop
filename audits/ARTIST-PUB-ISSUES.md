@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 307 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 310 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -311,3 +311,6 @@
 | ar-c-014 | Stray Cats | Built for Speed | 十二首取自英國時期的《Stray Cats》與《Gonna Ball》，再加一首未發表的同名曲 | 英文維基《Built for Speed》條目寫：六首取自《Stray Cats》（1981 年 2 月）、五首取自《Gonna Ball》（1981 年 11 月），再加同名曲，共 11 加 1 等於 12 首；簡介『十二首取自…再加一首』會變成 13 首，疑似算錯。建議本機核對實際曲目表，再改成『十一首取自…再加一首同名曲』或『共十二首』。 | https://en.wikipedia.org/wiki/Built_for_Speed_(Stray_Cats_album) |
 | ar-c-014 | Taj Mahal Travellers | August 1974 | 一台廂型車從歐洲經中近東開到泰姬瑪哈陵，十一個月，沿路演奏 | Wire 小杉武久文章只說 1972 年 4 月在鹿特丹買福斯巴士、約一個月行經阿爾卑斯前往印度阿格拉；「十一個月」未在任何已開頁來源找到。建議店主核對原文或改成不寫長度（待核，非確定錯誤）。 | https://www.thewire.co.uk/in-writing/essays/p=14225 |
 | ar-c-014 | The Ethiopians | Engine 54 | 簡介寫「Leonard Dillon、Stephen Taylor 與 Aston Morrison 的三部和聲」 | 兩個獨立來源都寫成員名為 Aston Morris（非 Morrison）；建議以 Doctor Bird 原盤 credit 再核對後改為 Morris。 | https://bendbulletin.com/2011/10/03/reggae-pioneer-leonard-dillon-dies/ |
+| ar-c-015 | The Weather Station | Ignorance | 《紐約時報》Lindsay Zoladz 稱其為刺人的新作 | 簡介點出樂評姓名與媒體，違反『來源平台與樂評姓名不進正文』規則，建議改為不具名或刪除 | https://www.climateone.org/people/tamara-lindeman |
+| ar-c-015 | Tim Hardin | Tim Hardin 2 | 全片僅 22 分 38 秒 | 『全片』不得用來指整張專輯（writer-base 文字節）；建議改為『整張專輯』或直接寫『22 分 38 秒』 | https://en.wikipedia.org/wiki/Tim_Hardin |
+| ar-c-015 | Tim Hardin | Tim Hardin 2 | AllMusic 的 Richie Unterberger 認為它大概是 Hardin 最好的單張 | 點名來源平台與樂評姓名，違反『來源平台與樂評姓名不進正文』規則（writer-base）；建議改成不具名或刪除 | https://en.wikipedia.org/wiki/Tim_Hardin |
