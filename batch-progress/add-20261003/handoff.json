@@ -18,8 +18,15 @@
   "reviewNotes": [
    "逐張人工審稿：金曲獎最佳專輯製作人入圍者是李欣芸（研究層第 8566 條推翻主線），正文已分開寫",
    "⚠ 池中《她的。發光搖擺》已上架簡介首句「何欣穗 1999 年以《完美小姐》出道，入圍金曲獎最佳新人與最佳專輯製作人」讀起來像她本人入圍製作人獎——建議本機改正文（例：「…入圍金曲獎最佳新人，製作人李欣芸也入圍最佳專輯製作人」）後重傳 KV",
-   "CURATION_WISHLIST.md 與 batch-progress/ctw3/held-cards.json 的《Miss Perfect》留置可結案（ctw3 寫 2001 年是錯的）"
+   "CURATION_WISHLIST.md 與 batch-progress/ctw3/held-cards.json 的《Miss Perfect》留置可結案（ctw3 寫 2001 年是錯的）",
+   "`tw-pop-artists.json` 目前沒有 何欣穗——跑 build-genre-tree 前補上，否則會落在「華語流行」而非「台灣流行」（ALBUM_ONBOARDING §10 第 7 點）"
   ]
  },
- "qa": { "research": "pass", "hooks": "pass", "out": "pass", "qa-check-research": "0", "fix-spacing": "0" }
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "qa-check-research": "0",
+  "fix-spacing": "0"
+ }
 }
