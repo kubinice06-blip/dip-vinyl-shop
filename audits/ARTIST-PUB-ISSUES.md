@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 252 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 258 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -256,3 +256,9 @@
 | ar-c-003 | Mina | Mina® (1974) | 義大利第一位自己開唱片公司的歌手 | 本層查到 PDU 是 Mina 與父親 Giacomo Mazzini 於 1967 年在 Lugano 創立（義大利文維基、搜尋摘要一致），但沒有任何來源把這件事寫成『義大利第一位自己開唱片公司的歌手』，『第一位』宣稱無出處，建議退成『與父親創立 PDU』 | https://it.wikipedia.org/wiki/Mina_(cantante) |
 | ar-c-004 | Rabih Abou-Khalil | Blue Camel | 在貝魯特隨 Georges Farah 學 oud | 英文維基支持 Georges Farah，但 Jazz in the Park 的簡介寫的是 Wadih El Safi，兩說並存；建議店主改成不點名老師，或另查官方傳記確認。 | https://jazzinthepark.ro/en/rabih-abou-khalil-a-unique-map-of-the-music/ |
 | ar-c-004 | Serge Chaloff | Boston Blow-Up! | 1955 年 4 月在紐約為 Capitol 錄下 | boppinbob 亦寫 1955 年 4 月錄《Boston Blow-Up!》、Stan Kenton 製作、Capitol；未見錄音地點的第二源，「在紐約」維持未驗證，建議店主複核。 | https://fromthevaults-boppinbob.blogspot.com/2022/11/serge-chaloff-born-24-november-1923.html |
+| ar-c-005 | Анатолий Вапиров | Мистерия | 他 1982 至 1983 年以「黑市投機」的罪名入獄。 | 俄文維基只寫『видимо（看來）за спекуляцию』，罪名並不確定；另有搜尋摘要稱 1982 年 8 月被判兩年、『私營企業』罪，提前獲釋。建議改成「1982 年入獄、次年獲釋」，不寫確切罪名。 | https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%2C_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D0%B9_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87 |
+| ar-c-005 | Оркестр Олега Лундстрема | Оркестр Олега Лундстрема | 一支 1935 年在哈爾濱成立的大樂團 | 成軍年來源不一致：英文維基與 worldofjazz 寫 1935，樂團官方介紹頁寫 1934（2024 年慶祝 90 週年）。建議改成「1930 年代中期」或查證官方說法。 | https://ruskeala-symphony.com/en/page/lundstrem |
+| ar-c-005 | 봄여름가을겨울 | 항상 기뻐하는 사람들 | 整張以春夏秋冬四首曲名構成、CD 版十一軌 | 卡池的《봄여름가을겨울》（1988）與《항상 기뻐하는 사람들》（1988）疑為同一張專輯：Bugs 的專輯頁《봄여름가을겨울》1988-06-15 發行、1989-03 CD 版、11 軌，曲序與《항상 기뻐하는 사람들》簡介所列完全相同（第 1 軌〈항상 기뻐하는 사람들〉標春、第 4 軌〈거리의 악사〉標夏、第 6 軌〈사람들은 모두 변하나봐〉標秋、第 10 軌〈12월 31일〉標冬）。建議店主查是否重複上架。 | https://music.bugs.co.kr/album/3976 |
+| ar-c-005 | ジョージ大塚トリオ | Page 1 | 三重奏是他 1966 年組起的第一支樂團 | 日文維基寫 1966 年組成；arban 訃報寫 1965 年起以ジョージ大塚トリオ走紅，年份來源不一致。建議改成『1960 年代中期』。 | https://www.arban-mag.com/article/52595 |
+| ar-c-005 | 張露 | 繁星點點 張露／百代中國時代曲名典13：張露 給我一個吻 | 1975 年退出歌壇（離 1973 年這張不到兩年） | zh／en 維基支持 1975 年；但 TVBS 與新浪的訃聞都寫她 1957 年婚後息影。兩說衝突、未能裁定（1973 年確有專輯，傾向 1975 年說法），請店主視需要把「退出歌壇」寫成「淡出」或保留 1975 說並知悉分歧。 | https://ent.sina.cn/music/ygangtai/2009-02-02/detail-icczmvun3359630.d.html |
+| ar-c-005 | 渋谷毅 | ドリーム | 高中時聽到 Erroll Garner 才轉向爵士 | ja 維基寫 Erroll Garner，但 oil-magazine 的本人訪談說是同學帶來 George Shearing 的唱片讓他大受衝擊；兩說不一，建議改成『高中時接觸爵士』或明寫出處。 | https://oil-magazine.claska.com/tokyoandme/97928/ |
