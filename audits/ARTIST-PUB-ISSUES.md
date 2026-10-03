@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 285 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 290 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -289,3 +289,8 @@
 | ar-c-009 | Budka Suflera | Cień wielkiej góry | 樂隊 1969 年在 Lublin 成立 | 來源對成軍年份不一致：pl 維基與 ebilet 寫 1974 年，bibliotekapiosenki 寫 1973 年，en 維基首段兩種年份並陳（1969 是 Cugowski 早期同名前身團，1974 才是現行樂團成立）；建議改成不帶年份或寫「1970 年代前半」。 | https://pl.wikipedia.org/wiki/Budka_Suflera |
 | ar-c-010 | Dara Puspita | Jang Pertama | 1968 到 1971 年她們在西歐巡演三年 | 行程包含匈牙利（英文維基列出 West Germany、Hungary、England、France、Belgium、Netherlands、Spain）與土耳其、伊朗（Garage Hangover），不只西歐；起訖年份各源不一（1968 年 7 月出國，印尼文維基寫巡演到 1969 年 10 月，Groovie 寫 1969 至 1971 駐歐）。建議改為「1968 年起赴歐洲巡演，約三年後返國」。 | https://en.wikipedia.org/wiki/Dara_Puspita |
 | ar-c-010 | DEATH SIDE | Wasted Dream | 1989 年由 Selfish Records 發行，編號 BEL-12036，是 DEATH SIDE 目錄上最早的一張。 | 樂團的首張 EP《Satisfy the Instinct》1987 年已由 Selfish 發行（Maximum Rocknroll 稱其為該風格的奠基發行），比《Wasted Dream》早兩年；若簡介指「首張全長專輯」需另行查證，寫成「目錄上最早的一張」與 1987 年 EP 衝突。 | https://www.maximumrocknroll.com/band/death-side/ |
+| ar-c-011 | Herbert Grönemeyer | Mensch | 期間他的兄長與其妻在幾天之內相繼過世 | 英文維基《Herbert Grönemeyer》條寫「his brother Wilhelm and his wife Anna」，Anna 是演員 Anna Henkel，即 Grönemeyer 自己的妻子（同條稍早寫他在片場認識「his later wife, the actress Anna Henkel」）；德文《Mensch (Album)》條也寫 Wilhelm 與妻子 Anna Henkel。上線簡介的「兄長與其妻」讀成兄長的妻子，疑為誤讀，應改為「他的哥哥與妻子」。兩源同屬維基家族，我只開了英文與德文維基，建議店主在本機覆核一個非維基來源。 | https://en.wikipedia.org/wiki/Herbert_Gr%C3%B6nemeyer |
+| ar-c-011 | Hum | Downward Is Heavenward | Pitchfork 1999 年的九〇年代百大把它排在第 81 | 屬實（英文維基《Downward Is Heavenward》條：Pitchfork 1999 年 Top 100 Albums of the 1990s 第 81），但這是樂評媒體榜單名次，依本批特注不收；另 Ned Raggett 的評語是單一樂評人的形容。是否保留請店主裁示。 | https://en.wikipedia.org/wiki/Downward_Is_Heavenward |
+| ar-c-011 | Idoli | VIS Idoli | 這張賣了約 200000 張，是樂團銷量最高的一張 | 搜尋摘要（維基《Čokolada》專輯頁）稱 1983 年《Čokolada》『被視為南斯拉夫賣得最好的唱片之一』；若屬實，『VIS Idoli 是樂團銷量最高的一張』可能過頭。本層沒實讀該頁數字，只提醒店主在本機核對兩張的銷量出處，不確定就改成不比較。 | https://en.wikipedia.org/wiki/%C4%8Cokolada_(album) |
+| ar-c-011 | Jeff Buckley | Sketches for My Sweetheart the Drunk | 1997 年 5 月 29 日傍晚在密西西比河游泳時溺斃 | 英文維基寫的是 Wolf River，為密西西比河的支流；『在密西西比河』不精確，建議改為支流名稱或乾脆只寫年份 | https://en.wikipedia.org/wiki/Jeff_Buckley |
+| ar-c-011 | Khun Narin | Khun Narin's Electric Phin Band | 看到當地樂手上傳的演出影片後找上 Innovative Leisure，由廠牌出資飛往泰國 | 兩源（Newsweek、Bandcamp）都寫影片是在 Dangerous Minds 部落格流傳，Newsweek 並說樂隊本身網路曝光極少；『當地樂手上傳』與『由廠牌出資』查無來源，建議改成『網路上流傳的演出影片』 | https://www.newsweek.com/khun-narin-phin-sing-psychedelic-rock-band-discovered-remote-village-thailand-266649 |
