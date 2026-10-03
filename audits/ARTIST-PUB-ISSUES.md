@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 263 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 272 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -267,3 +267,12 @@
 | ar-c-006 | L.T.D. | Togetherness | 洛杉磯的九人編制放克／靈魂樂團 | theseconddisc.com 稱 L.T.D. 是 ten-piece band（十人編制）；簡介寫九人。編制隨年代增減，單源，建議本機核對 Togetherness 時期的實際人數。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ |
 | ar-c-006 | Maceo & All the King's Men | Funky Music Machine | 1975 年才正式發行（樂隊活動末期完成） | 維基 Maceo Parker 條目寫 Funky Music Machine 為 1972 年專輯；搜尋摘要稱 1971 年底錄製、1972 年由 Excello 發行（未開頁）。1975 年可能是再版年，建議本機核對 MusicBrainz／Discogs 的首發年與廠牌後改簡介與卡池年份。 | https://en.wikipedia.org/wiki/Maceo_Parker |
 | ar-c-006 | Marvin Gaye & Tammi Terrell | You're All I Need | 這批 1966–67 年錄音 | 維基 Tammi Terrell 條目寫兩人二重唱是 1967 年初才開始錄製，上線簡介的「1966–67 年」起點疑偏早；單源，建議本機核對後再決定是否改成 1967 年。 | https://en.wikipedia.org/wiki/Tammi_Terrell |
+| ar-c-007 | Phyllis Hyman | Somewhere in My Lifetime | 「轉投 Arista 的首張專輯，1979 年 1 月發行」 | 英文維基藝人條目寫該專輯於 1978 年發行（Arista 首張，標題曲由 Barry Manilow 製作）；本層未取得專輯條目或第二源，無法判定哪邊對，待店主核對發行日 | https://en.wikipedia.org/wiki/Phyllis_Hyman |
+| ar-c-007 | The Angelic Gospel Singers | Songs From The Heart | 1949 年的〈Touch Me, Lord Jesus〉售出超過一百萬張 | 維基寫 sold over a million，Hymnology Archive 寫首次錄音 sold over 100,000 copies，兩源差十倍；建議改為「在節奏藍調電台走紅」或查到更可靠的銷量來源後再寫。 | https://www.hymnologyarchive.com/margaret-wells-allison |
+| ar-c-007 | The Angelic Gospel Singers | Songs From The Heart | 1947 年簽進費城的 Gotham | 維基寫 1947 年簽約 Gotham，Hymnology Archive 寫 1949 年 Gotham 依 Allison 編排的 Lucie Campbell 作品簽下她們；年份來源不一致，建議改寫「1940 年代後期」。 | https://www.hymnologyarchive.com/margaret-wells-allison |
+| ar-c-007 | The Fatback Band | Raising Hell | 鼓手 Bill Curtis 一九七〇年在紐約組成 Fatback Band | 維基資料庫寫 formed 1970，北卡羅來納音樂名人堂 Bill Curtis 頁寫 1971 年在紐約組成；來源不一致，建議改寫「一九七〇年代初」。 | https://northcarolinamusichalloffame.org/inductee-item/bill-fatback-curtis/ |
+| ar-c-007 | The Salsoul Orchestra | Salsoul Orchestra | 薩克斯風只保留上低音一支 | The Second Disc 的樂評稱 Salsoul 的薩克斯風編制是兩支（對照 MFSB 的五支），與上線簡介「一支」不一致；該評文字有銅管並用的說法，待核 | https://theseconddisc.com/2016/02/01/heat-it-up-groove-line-tells-the-salsoul-orchestra-story-40th-anniversary-collection/ |
+| ar-c-007 | The Soul Stirrers | Shine on Me | 1930 年代初 R. H. Harris 成為音樂主導者 | 德州州立歷史協會 Handbook of Texas 說 Harris 約在 1930 年代中期加入、約 1937 年起推出 swing lead；與「1930 年代初」有落差，待核 | https://www.tshaonline.org/handbook/entries/harris-rebert-h |
+| ar-c-007 | The Soul Stirrers | Shine on Me | 1950 年底他因不滿業界作風離團 | Handbook of Texas 的 Harris 條目寫他離團的原因是長年巡演的疲累（reportedly），與簡介的離團理由不一致，待核 | https://www.tshaonline.org/handbook/entries/harris-rebert-h |
+| ar-c-007 | Big Walter Horton | The Soul of Blues Harmonica | Walter Horton（1921–1981） | 出生年有 1917（wikidata）、1918（密西西比藍調步道標誌牌）、1921（維基與 Earwig）三說，簡介取 1921 屬其中一說，建議拿掉出生年或改寫成生年有爭議。 | https://msbluestrail.org/blues-trail-markers/big-walter-horton |
+| ar-c-007 | Blind Lemon Jefferson | King of the Country Blues | 是唱片工業裡第一位大量賣座的男聲鄉村藍調歌手 | TSHA 的說法是「第一位獲得全國聽眾的藍調自彈自唱歌手」，並明講他不是第一個錄音的人；「第一」類宣稱建議改成 TSHA 的限定說法或改成「最早的暢銷藍調歌手之一」。 | https://www.tshaonline.org/handbook/entries/jefferson-blind-lemon |
