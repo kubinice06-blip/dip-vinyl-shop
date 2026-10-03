@@ -591,9 +591,9 @@
         <div id="discogsSelected" style="display:none;border:1px solid var(--line);padding:12px;background:#fff;font-size:11px;margin-bottom:10px;">
           <div id="discogsTitle" style="font-weight:700;font-size:11px;margin-bottom:8px;"></div>
           <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">掛賣數量</span><span id="discogsCount"></span></div>
-          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">最低價</span><span id="discogsLow"></span></div>
-          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">中位數</span><span id="discogsMid"></span></div>
-          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">最高價</span><span id="discogsHigh"></span></div>
+          <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;"><span style="color:var(--gray);font-size:10px;text-transform:uppercase;">最低掛賣價</span><span id="discogsLow"></span></div>
+          <div style="color:var(--gray);font-size:10px;text-transform:uppercase;margin:10px 0 2px;">品相建議價（Discogs 估算，非成交價）</div>
+          <div id="discogsSuggest"></div>
           <div style="margin-top:8px;"><a id="discogsLink" href="#" target="_blank" rel="noopener" style="color:var(--black);font-size:10px;letter-spacing:0.06em;">→ 查看 Discogs 頁面</a></div>
         </div>
       </div>
@@ -2506,28 +2506,53 @@ ${discogs ? '- Discogs：' + discogs : ''}
     }
   });
 
+  // Discogs price_suggestions 的鍵 → 後台品相代碼
+  const DISCOGS_COND_KEYS = [
+    ['M', 'Mint (M)'], ['NM', 'Near Mint (NM or M-)'], ['VG+', 'Very Good Plus (VG+)'],
+    ['VG', 'Very Good (VG)'], ['G+', 'Good Plus (G+)'], ['G', 'Good (G)'],
+    ['F', 'Fair (F)'], ['P', 'Poor (P)'],
+  ];
+
+  async function renderDiscogsSuggest(sugRes) {
+    const el = document.getElementById('discogsSuggest');
+    const note = msg => { el.innerHTML = '<div style="font-size:10px;color:var(--gray);padding:4px 0;">' + msg + '</div>'; };
+    if (!sugRes) return note('建議價讀取失敗（網路錯誤，或 Worker 尚未部署新版）');
+    if (sugRes.status === 404) return note('建議價功能尚未部署（Worker 需更新）');
+    let data = null;
+    try { data = await sugRes.json(); } catch (e) {}
+    const rows = DISCOGS_COND_KEYS.filter(([, key]) => data && data[key] && typeof data[key].value === 'number');
+    if (!sugRes.ok || !rows.length) {
+      return note('無建議價：Discogs 需要 token 帳號先完成賣家設定' + (data && data.message ? '（' + String(data.message).replace(/</g, '&lt;') + '）' : ''));
+    }
+    el.innerHTML = rows.map(([code, key]) => {
+      const p = data[key];
+      const mine = code === selectedCondition;
+      return '<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:4px 0;' + (mine ? 'font-weight:700;background:#fff6dc;' : '') + '">' +
+        '<span style="color:var(--gray);font-size:10px;">' + code + (mine ? '　← 本張品相' : '') + '</span>' +
+        '<span>' + (p.currency || '') + ' ' + p.value.toFixed(2) + '</span></div>';
+    }).join('');
+  }
+
   async function loadDiscogsPrice(releaseId, releaseUrl, title) {
     try {
       document.getElementById('discogsResults').style.display = 'none';
 
-      // 抓掛賣價格
-      const res = await fetch(`${WORKER_URL}/discogs-price?releaseId=${encodeURIComponent(releaseId)}`, {
-        headers: { 'X-Admin-Key': adminKey() },
-      });
+      // 掛賣統計與品相建議價並行抓；建議價失敗不影響掛賣統計。
+      const rid = encodeURIComponent(releaseId);
+      const [res, sugRes] = await Promise.all([
+        fetch(`${WORKER_URL}/discogs-price?releaseId=${rid}`, { headers: { 'X-Admin-Key': adminKey() } }),
+        fetch(`${WORKER_URL}/discogs-suggest?releaseId=${rid}`, { headers: { 'X-Admin-Key': adminKey() } }).catch(() => null),
+      ]);
       if (res.status === 403) throw new Error('後台金鑰錯誤或未設定（主控台執行 clearAdminKey() 可重新輸入）');
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const stats = await res.json();
 
-      const lowest  = stats.lowest_price  ? 'USD ' + stats.lowest_price.value.toFixed(2)  : '—';
-      const median  = stats.median_price  ? 'USD ' + stats.median_price.value.toFixed(2)   : '—';
-      const highest = stats.highest_price ? 'USD ' + stats.highest_price.value.toFixed(2)  : '—';
-      const count   = stats.num_for_sale  || 0;
-
+      // Discogs marketplace/stats 只回 num_for_sale 與 lowest_price（目前在架的最低標價），沒有成交統計。
+      const fmtPrice = p => p && typeof p.value === 'number' ? (p.currency || 'USD') + ' ' + p.value.toFixed(2) : '—';
       document.getElementById('discogsTitle').textContent = title;
-      document.getElementById('discogsCount').textContent = count + ' 筆';
-      document.getElementById('discogsLow').textContent   = lowest;
-      document.getElementById('discogsMid').textContent   = median;
-      document.getElementById('discogsHigh').textContent  = highest;
+      document.getElementById('discogsCount').textContent = (stats.num_for_sale || 0) + ' 筆';
+      document.getElementById('discogsLow').textContent   = fmtPrice(stats.lowest_price);
+      renderDiscogsSuggest(sugRes);
       document.getElementById('discogsLink').href         = releaseUrl;
       document.getElementById('discogsSelected').style.display = 'block';
 
