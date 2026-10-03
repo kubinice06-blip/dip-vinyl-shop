@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 356 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 361 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -348,7 +348,12 @@
 | ar-c-019 | Tír na nÓg | Tír na nÓg | 1969 年在都柏林組成 | Irish Rock 與 journalofmusic 都寫成軍約 1969 年底或 1970 年初（journalofmusic 寫 1970 年初）；維基寫 1969 年。來源互相不一致，非明確錯誤，建議店主視情況改為『約 1969–70 年』。 | https://www.irishrock.org/irodb/bands/tirnanog.html |
 | ar-c-019 | Zach Bryan | American Heartbreak | 首週締造 7.1 萬張專輯等效單位，是 2022 年鄉村專輯最佳首週成績 | 維基《American Heartbreak》只記首週 71,500 單位、Billboard 200 第 5、鄉村專輯榜冠軍，以及「當日 Spotify 與 Apple Music 鄉村專輯串流最高」；查不到「2022 年鄉村專輯最佳首週」的來源，建議改成只寫單位數與榜位，或補來源。 | https://en.wikipedia.org/wiki/American_Heartbreak |
 | ar-c-019 | Владимир Высоцкий（Vladimir Vysotsky） | Баллады и песни | 他生前在蘇聯只拿到過一張 12 吋長片，其餘全是 7 吋的小碟 | 1976 年 Мелодия 發行了二張 12 吋的《Алиса в Стране чудес》，歌曲全由他作詞作曲、他並演唱數個角色（俄文維基稱這是他第一次以作者身分在國家出版唱片上合法露面）。「只拿到過一張 12 吋長片」不成立；可改成「生前在蘇聯境內合法發行的 12 吋唱片極少」之類說法，或指明 1978 年這張是以他個人名義的長片。 | https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D1%81%D0%B0_%D0%B2_%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B5_%D1%87%D1%83%D0%B4%D0%B5%D1%81_(%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D0%BF%D1%8C%D0%B5%D1%81%D0%B0,_1976) |
+| ar-c-019 | 한대수（韓大洙） | 멀고 먼-길 | 一九六八年帶著長髮和吉他回首爾，在세시봉唱自作曲 | 韓文維基與英文維基都記 1968 年回國、1969 年才在세시봉出道並辦남산드라마센터演出；簡介把세시봉演唱放在 1968 年，似乎提早一年。其餘（신세계레코드簽約金、錄音班底、八小時錄完）本層未查到來源，未覆核。 | https://ko.wikipedia.org/wiki/%ED%95%9C%EB%8C%80%EC%88%98_(%EA%B0%80%EC%88%98) |
 | ar-c-019 | かぐや姫 | かぐや姫さあど | 〈神田川〉最後賣出一百二十萬張以上 | 英文與日文維基首段皆寫 160 萬張；「120 萬以上」不算錯但偏保守，可考慮改成維基首段的約 160 萬張或加註各紀錄不一。 | https://en.wikipedia.org/wiki/Kaguyahime_(band) |
+| ar-c-019 | 好樂團 | 在遊蕩的路上學會寬容 | 成團七年才交出第一張專輯，而且是先向歌迷募到錢才錄的 | 本層讀到的 VERSE、中央社、美麗佳人、維基皆未提及募資；『先募資才錄』無法核實，建議店主回頭確認該簡介的募資出處，找不到就改寫。 | https://www.cna.com.tw/news/amov/202212110123.aspx |
+| ar-c-019 | 小河 | 飛的高的鳥不落在跑不快的牛的背上 | 屬民謠大類，中國大陸慣稱「實驗民謠」（experimental folk） | 違反用語房規（2026-09-29 店主裁定）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句另屬自行補充的類別說明，本層所讀來源（界面新聞、澎湃、Bandcamp Daily）沒有一處稱「實驗民謠」是中國慣稱，建議整句改寫或刪除。 | https://www.jiemian.com/article/8926943.html |
+| ar-c-019 | 李志 | 被禁忌的遊戲 | 作品在中國大陸串流平台陸續下架；中國大陸慣稱「獨立民謠」 | 用語不符 2026-09-29 店主裁定：稱中國一律寫「中國」，不寫「中國大陸」。 | https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%BF%97 |
+| ar-c-019 | 遠藤賢司 | 満足できるかな | 〈カレーライス〉先在此作出現，1972 年另錄的單曲版賣出十萬張 | 待核：日文維基寫〈カレーライス〉1972 年「シングルカット」並達 10 万枚；「シングルカット」通常指從專輯曲目切成單曲，與上線簡介的「另錄的單曲版」可能不符，本位未能另開一手資料確認。 | https://ja.wikipedia.org/wiki/%E9%81%A0%E8%97%A4%E8%B3%A2%E5%8F%B8 |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
 | ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
