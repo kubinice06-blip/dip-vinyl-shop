@@ -23,3 +23,6 @@ data/rawgenres-cache.json
 # 代理會解讀成 repo 相對路徑，這裡永遠不該進版控。
 scratchpad/
 dist/
+
+# 藝人介紹產線的維基預抓／撰稿摘要快取（artist-wiki.mjs、artist-digest.mjs 產生，可重抓）
+desc-tools/batches/artist/cache/
