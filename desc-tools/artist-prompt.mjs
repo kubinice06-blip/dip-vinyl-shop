@@ -16,7 +16,8 @@ const name = new Map(bank.map(x => [x.key, x.name]))
 const fill = (s, m) => s.replace(/\{\{([^}]+)\}\}/g, (_, k) => { if (!(k in m)) throw new Error(`缺填空：${k}`); return m[k] })
 
 if (layer === 'gap') {
-  const mine = keys.slice((n - 1) * 10, n * 10)
+  const G = Number(process.env.ARTIST_GROUP || 10)  // 補查批等小批可用 ARTIST_GROUP=4 改組大小
+  const mine = keys.slice((n - 1) * G, n * G)
   if (!mine.length) { console.error('這組沒有人'); process.exit(1) }
   process.stdout.write(fill(block(1), {
     批名: batch, 組號: String(n), 人數: String(mine.length), 首位鍵: mine[0],
@@ -24,6 +25,7 @@ if (layer === 'gap') {
   }))
 } else {
   const [a, b] = n === 1 ? [1, 2] : [3, 4]
-  const cnt = keys.slice((a - 1) * 10, b * 10).length
+  const G = Number(process.env.ARTIST_GROUP || 10)
+  const cnt = keys.slice((a - 1) * G, b * G).length
   process.stdout.write(fill(block(3), { 批名: batch, 組號: String(n), a: String(a), b: String(b), 人數: String(cnt) }))
 }
