@@ -218,3 +218,6 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## ar-c-023（2026-10-03）
 
 - YAS-KAZ 搜尋 9 次：超出的一次是開官方經紀頁（onbeat.co.jp）補身世核心，不是重複搜尋；超一次、取自一手來源，`overCapOk` 放行。`overCapOk` 的適用面因此放寬為：超出不多於一次，且多出的請求不是重複搜尋（重複搜尋的處理同齊豫）。
+- 寫作 Opus 2 支；40 位全上（36 full、4 thin：Natacha Atlas、The Bush Chemists、Wailing Souls、Andrew Cox）。審稿 0 處修改。
+- 郭金發在敬老演唱會唱〈燒肉粽〉時倒下、送醫後過世：廣為人知且與代表曲直接相連，列必要例外，只寫事件層級。
+- 待本機（上線簡介）：Nass El Ghiwane「把班鳩琴帶進 chaabi」與成立年；Ofra Haza《Yemenite Songs》Shabazi 是十七世紀；Prince Far I《Psalms for I》製作人；Natacha Atlas《Gedida》年份；Souad Massi《Raoui》《Deb》離開阿爾及利亞原因改中性；The Meditations《Message from the Meditations》年份；Vicente Amigo 師從年數與 La Unión 年份；Wailing Souls Garth Dennis 陣容；The Gladiators《Proverbial Reggae》與 Front Line 之行；The Abyssinians《Arise》換團員；Rubén González 葛萊美入圍與 Billboard 名次未驗。
