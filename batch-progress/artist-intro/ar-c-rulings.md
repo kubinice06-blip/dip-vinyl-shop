@@ -166,3 +166,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - **thin 最低門檻**：第一句交代國籍與身分；至少一句寫聲音或風格；不得只剩瑣事。達不到就不寫。
 - 重寫名單 33 位（ar-c-fix2）：壞 21（何欣穗、無妄合作社、脆樂團、テルズ・シンフォニア、傻子與白痴、브로콜리 너마저、太極、左小祖咒、糯米糰、落差草原 WWWW、Mach One、Multi-Story、Ultima Thule、Curly Ray Cline、C.O.B.、Forest、Espers、Barbara、Toto、The Wake、The Rollies）；弱 12（Joe Bonamassa、Michael Burks、Snail Mail、The Breeders、Ash Ra Tempel、Abel Ganz、Bread、Haze、High on Fire、Perfect、REO Speedwagon、Brittany Howard）。
 - 流程比照 fix1：舊補洞稿當底（`cache/ar-c-fix2-prior.json`），終稿併回原批次 output、標 `fixedBy: ar-c-fix2`，本批記 `merged`。ar-c-018／019 暫停，fix2 完成後續跑。
+
+## ar-c-018（2026-10-03）
+
+- 補洞層在舊規則（全兩源）下完成，寫作 Opus 2 支；40 位全上（37 full、3 thin）。
+- 審稿修 16 處：14 位第一句補國籍與身分（Jack Rose、Jim Spencer、Jim Sullivan、John Denver、Judee Sill、Judy Collins、June Tabor、Karen Dalton、Lyle Lovett、Marissa Nadler、Labi Siffre、Marek Grechuta、Malicorne 等）；Norma Jean 依新規則補單源低風險的聲音句（受 Kitty Wells 影響、歌寫勞工階級女性），換掉藝名來由那句。
+- 輕微超長（251–254）接受，皆為補國籍所致。

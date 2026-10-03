@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 331 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 345 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -332,6 +332,20 @@
 | ar-c-017 | Curly Ray Cline | Why Me, Ralph? | Ralph Stanley 在 Cline 的葬禮上這樣說他——他拉提琴的方式，有點像我彈五弦琴的方式 | 英文維基只寫 Stanley 曾這樣評論他（remarked），並未說是在葬禮上；『葬禮』場合本層找不到出處，建議改成『Ralph Stanley 評他』或查證出處 | https://en.wikipedia.org/wiki/Curly_Ray_Cline |
 | ar-c-017 | Ewa Demarczyk | Live | 這是她的第三張：1967 年首張之後，1975 年那張只在蘇聯發行。 | 英文維基寫 1972 年離團『兩年後』發行第二張並在蘇聯賣數百萬張（約 1974），pl 維基作品目錄寫 1975 年、只在蘇聯發行；年份與『只在蘇聯』兩源不一致，建議店主對 Melodiya 目錄確認再決定是否保留年份。 | https://en.wikipedia.org/wiki/Ewa_Demarczyk |
 | ar-c-017 | Ewa Demarczyk | Ewa Demarczyk śpiewa piosenki Zygmunta Koniecznego | 「波蘭歌曲的黑天使」這個稱號，是一位主持人 Lucjan Kydryński 給的。 | dzieje.pl 與 encyklopediateatru 都把『Czarny Anioł』說成源自她全身黑衣的舞台形象，沒有提到由哪位主持人命名；兩種說法未必矛盾，但命名者一節本層查不到兩源，建議店主複核。 | https://dzieje.pl/kultura-i-sztuka/nie-zyje-ewa-demarczyk-czarny-aniol-polskiej-piosenki |
+| ar-c-018 | Iwan Fals | Sarjana Muda | 收在 1981 年 9 月 3 日由 Musica Studio's 發行的這張個人出道專輯裡 | 英文維基《Sarjana Muda》只寫 1981 年發行、沒有月日；9 月 3 日同時是歌手生日與《Opini》（1982 年）的發行日，疑為誤植。建議改寫成「1981 年」。 | https://en.wikipedia.org/wiki/Sarjana_Muda |
+| ar-c-018 | Jack Rose | Luck in the Valley | 1999 年前後才專攻原音 | NPR Illinois 說他約 30 歲（約 2001 年）賣掉電吉他專心彈原音指彈；Bandcamp Daily 說 2000 年代初苦練後才轉向獨奏。1999 年沒有來源支持，建議改成「2000 年代初前後」。 | https://www.nprillinois.org/2010-02-19/remembering-dr-ragtime-guitarist-jack-rose |
+| ar-c-018 | Jan Dukes de Grey | Sorcerers | 1969 年 Decca 的 12 吋原盤 | 維基條目寫《Sorcerers》1969 年 10 月錄完、1970 年 1 月發行（1969 年是與 Decca 簽約與錄音年）；發行年有兩說，建議改寫成「1969 年錄音、Decca 發行」之類不點明發行年的說法。 | https://en.wikipedia.org/wiki/Jan_Dukes_de_Grey |
+| ar-c-018 | Jim Sullivan | Jim Sullivan | 車上留著一箱他沒賣掉的唱片。那一箱正是這張 1972 年的同名專輯 | 來源對車上唱片的描述不一：Ultimate Classic Rock 寫「Playboy 發行的 LP」、LARB 寫「一箱 Playboy 唱片」，另有搜尋摘要寫「兩張專輯各一箱」；沒有來源明指「正是這張同名專輯」。建議改成「一箱唱片」或「他自己的唱片」。 | https://ultimateclassicrock.com/missing-ufo-singer-songwriter/ |
+| ar-c-018 | Malicorne | Almanach | 銷量逾五十萬張，拿下金唱片與法國唱片學院大獎 | 來源互相矛盾：法文維基記 1977 年 11 月達雙金唱片（10 萬張），French Music 電子報寫 50 萬張；獎項部分，法文維基與搜尋摘要寫的是 Académie Charles Cros 的 Grand Prix du disque（另有摘要稱 Académie du disque français 亦有大獎），與簡介的「法國唱片學院」是否同一機構未能第二源確認。建議刪去銷量數字，獎項改查 Académie Charles Cros 官方得獎名單後再寫。 | https://fr.wikipedia.org/wiki/Malicorne_(groupe) |
+| ar-c-018 | Marissa Nadler | Songs III: Bird on the Water | 獲二〇〇七年 PLUG 獎最佳 Americana 專輯提名 | 維基 Songs III 條目的搜尋摘要寫該專輯入圍 2008 年 PLUG Independent Music Awards 的 Best Female Artist 與 Best Americana Record 兩項；PLUG 頒獎年與簡介的 2007 年可能對不上，且入圍不只一項。僅見搜尋摘要、未開頁，待店主本機核對。 | https://en.wikipedia.org/wiki/Songs_III:_Bird_on_the_Water |
+| ar-c-018 | Marlon Williams | Marlon Williams | 2016 年 2 月才透過 Caroline Australia 推向國際 | 英文維基人物條目寫 2015 年 9 月簽下美國獨立廠牌 Dead Oceans，2016 年 2 月 2 日由 Dead Oceans 在全球發行；簡介的廠牌寫法與此不同，本層未能用第二源判定，建議店主對照專輯條目與廠牌頁後再決定是否改。 | https://en.wikipedia.org/wiki/Marlon_Williams_(New_Zealand_musician) |
+| ar-c-018 | Martin Carthy & Dave Swarbrick | But Two Came By | 搭檔的提琴手生於 Surrey 的 Stoneleigh | 維基寫 Stoneleigh，Exclaim! 訃聞寫 New Malden，兩源不一致，簡介若要保守可只寫 Surrey 或不寫出生地。 | https://exclaim.ca/music/article/fairport_convention_fiddler_dave_swarbrick_dies_at_75 |
+| ar-c-018 | Nadia Reid | Preservation | 十四歲開始彈吉他 | 維基寫 14 歲，AudioCulture 與 North & South 都寫 15 歲左右；來源不一致，建議簡介改寫成「十幾歲」或不寫年紀。 | https://www.audioculture.co.nz/profile/nadia-reid |
+| ar-c-018 | Nadia Reid | Preservation | 2015 年以群眾募資完成首作起步 | 維基與 North & South 都寫首張《Listen to Formation, Look for the Signs》2014 年發行；簡介寫 2015 年，群眾募資一事本層沒有查到來源，建議核對。 | https://northandsouth.co.nz/2025/05/06/first-in-folk/ |
+| ar-c-018 | Taraf de Haïdouks | Dumbala Dumba | 比利時人 Stéphane Karo 與 Michel Winter 自 1980 年代末把他們帶進西歐 | Nonesuch 官方頁寫兩人 1990 年赴羅馬尼亞時發現樂團，Chicago Reader 寫樂團 1990 年代初組成；『1980 年代末』找不到來源支持，建議改為『1990 年代初』或『1990 年起』。 | https://www.nonesuch.com/artists/taraf-de-haidouks |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
 | ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
+| ar-c-fix2 | Michael Burks | Make It Rain／Iron Man | 他生前五度入圍 Blues Music Award（Iron Man 簡介） | Alligator 官網寫入圍四次，維基寫五次，兩源不一致；建議改成『多次入圍』 | https://www.alligator.com/artists/Michael-Burks/ |
+| ar-c-fix2 | Perfect | Perfect | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl／en 維基稱約一百萬張，說法不一；Perfect 在世且仍有成員活動，銷量與認證類內容依規則不寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 |
+| ar-c-fix2 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
