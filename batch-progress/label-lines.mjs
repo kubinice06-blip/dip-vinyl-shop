@@ -190,6 +190,8 @@ export const LINES = {
   c196: { lineType: '深掘', scene: '日本製作的外國爵士 1985–1989' },
   c197: { lineType: '深掘', scene: '日本製作的外國爵士・重篩（King／Paddle Wheel 紐約製作）' },
   c198: { lineType: '深掘', scene: '日本製作的外國爵士・重篩第二輪（Paddle Wheel／ProJazz／JVC 美國字標）' },
+  // 店主單張指定（dip-card-create 一句話入口）
+  'add-20261003': { lineType: '廣度', scene: '店主指定：台灣創作女聲' },
   // CBS/Sony・Polydor JP・Alfa・East Wind・Trio／Whynot・Denon・Nippon Crown・Kitty・Union・Frasco
   // ＋ DOMO・ALM・discomate・URC・KENWOOD（後五家 2026-09-24 才列舉）
 };
