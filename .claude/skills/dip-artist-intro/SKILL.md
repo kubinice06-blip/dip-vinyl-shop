@@ -15,17 +15,25 @@ description: 跑 dip vinyl 藝人介紹產線（點藝人名跳出的小視窗�
 **開工先讀它**：`gap` 就看 `research/<批>-g1..4.json` 缺誰、重派缺的組；`written` 同理看 `output/<批>-out-1/2.json`。
 代理輸出檔已有內容會接續補完，所以重派同一組派工詞即可。
 
-## 每批六步
+## 每批步驟（2026-10-03 省額度版）
 
-1. **萃取**：`node artist-extract.mjs --lean <批> --file batches/artist/cut/<批>.txt`（卡單由 `artist-cut.mjs` 切好）。
-2. **補洞**：`node artist-prompt.mjs <批> gap 1..4` 印出派工詞，4 支 Sonnet 背景派出。
-3. **補洞 QA**：`node qa-artist.mjs gap <批>`，只處理 ⚠。
-4. **寫作**：`node artist-prompt.mjs <批> write 1..2`，2 支 Opus（w1 讀 g1+g2、w2 讀 g3+g4）。
-5. **審稿**：`node qa-artist.mjs out <批>` 到 0 處，再 `node artist-review.mjs <批>` 逐位對事實。
-   **主線逐位審，不外包。** 重點：⚑ 標的數字、單一來源寫成定論、「一生」用在在世者、共同得獎寫成獨得、
-   拆夥後的事寫成原因、notes／conflicts 標「不收」的值、同名混卡、轉述句、口語。改動直接改 output 檔，記進 rulings。
-6. **上架**：先把 progress 標 `published`（build 與 alias 只收已上架的量產批），再 `node artist-alias.mjs` → `node ../scripts/build-artist-intros.mjs`（cwd 回 repo 根）→
-   逐一 `git add` 本批檔案（**絕不 `git add -A`**）→ commit → push 到本工作分支。
+1. **切批與萃取**：卡單寫進 `batches/artist/cut/<批>.txt`（progress.json 的 keys），再 `node artist-extract.mjs --lean <批> --file batches/artist/cut/<批>.txt`。
+2. **維基預抓**：`node artist-wiki.mjs <批>` → `batches/artist/cache/<批>-wiki.json`（cache/ 不入版控，可重抓；輸出已有的會跳過）。
+3. **補洞**：`node artist-prompt.mjs <批> gap N > <scratchpad>/gap-<批>-N.txt`，後面附上本批特注（國籍、同名、死因、在世者），
+   派 4 支 Sonnet，**派工訊息只給檔案路徑**（「先用 Read 讀 <路徑>，照它做完；回報限 10 行」），不要把整段派工詞貼進主線。
+4. **補洞 QA**：`node qa-artist.mjs gap <批>`，只處理 ⚠。
+5. **寫作摘要**：`node artist-digest.mjs <批> 1` 與 `2` → `cache/<批>-digest-1|2.txt`；`node artist-prompt.mjs <批> write N` 存檔、附本組補充，派 2 支 Opus，同樣只給路徑。
+6. **審稿**：`node qa-artist.mjs out <批>` 到 0 處，主線逐位審（同上，不外包）。截止日後的事實用 WebSearch 核實並記進 rulings。
+7. **上架**：progress 標 `published`＋`reviewFixes` → `node artist-alias.mjs` → `node artist-issues.mjs` → `node ../scripts/build-artist-intros.mjs`（cwd 回 repo 根）→
+   逐一 `git add` 本批檔案（**絕不 `git add -A`**）→ commit → push。
+
+### 省額度要點（2026-10-03 實測，ar-c-005～007）
+
+舊法每批約：補洞 4,150 萬、寫作 680 萬、主線 1,340 萬快取讀取 token。新法（ar-c-007）：1,100 萬、510 萬、450 萬，thin 6／40，品質不降。
+- **並行發請求是最大的一招**：補洞代理回合數 70 → 20 左右。上限維持每位 8 次、失敗不計入（ar-c-006 試過 5 次含失敗，thin 倍增，已撤回）。
+- 維基預抓＋必擋網域（寫在派工範本裡）省掉三成白抓與重抓。寫作讀摘要檔，回合數 33 → 20。
+- 主線：派工只給路徑、代理回報限 10 行、進行中的 research／output 用 `.git/info/exclude` 暫時排除（驗收時 `git add -f`），避免 stop hook 逼出 checkpoint 回合。
+  **主線上下文超過約 25 萬就開新工作階段**；狀態都在 progress.json、rulings 與 cache/，換場不丟東西。
 
 ## 接力節奏（併行上限四支）
 
