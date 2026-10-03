@@ -59,3 +59,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Loose Ends「第一支登上 Billboard R&B 榜冠軍的英國團體單曲」保留：兩源，且是國籍層面的歷史定位，不是在世者的名次炫耀。
 - 審稿修 3 處：George Clinton「被取樣最多之一」在世者最高級刪；James Carr 病名刪、留日本巡演事件；Milton Wright 原盤價格刪。
 - pubIssues 交本機：L.T.D.《Togetherness》榜位與編制（單源）、Maceo《Funky Music Machine》年份（卡池 1975、維基 1972）、Marvin Gaye & Tammi Terrell《You're All I Need》錄音年、Jazmine Sullivan《Heaux Tales》並列得獎。
+
+## ar-c-007（2026-10-03）
+
+- **店主裁定**：補洞上限改回 8 次（失敗請求不計入，failedFetches 上限 4），保留「同一則訊息並行發請求」與維基預抓。ar-c-006 的 5 次上限只適用該批。
+  結果：thin 6／40（前五批 10–12），補洞層用量仍比舊法少約七成。
+- 預抓對錯人照 warn 丟棄：Pleasure（哲學詞條）。
+- 補洞代理把兩個 http 來源改成 https 以過 QA：主線實測兩址皆可經 307 轉址開啟，保留。
+- 主線核實：Thelma Houston & Pressure Cooker《I've Got the Music in Me》入選 2025 年國家錄音登記簿（Library of Congress 部落格、grammy.com）。
+- 審稿修 2 處：The Persuaders RIAA 認證刪；Tim Maia 遭遣返原因（毒品案）刪，比照 Serge Chaloff 先例。
+- pubIssues 交本機：Tamia 卡池《Tamia》年份 1978 疑為 1998；Angelic Gospel Singers 銷量與簽約年；Fatback 成軍年；Phyllis Hyman 首張發行年；Salsoul 薩克斯風人數；Soul Stirrers Harris 接手年代與離團理由；Big Walter Horton 生年；Blind Lemon Jefferson「第一位大量賣座」。
