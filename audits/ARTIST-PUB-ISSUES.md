@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 272 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 283 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -276,3 +276,14 @@
 | ar-c-007 | The Soul Stirrers | Shine on Me | 1950 年底他因不滿業界作風離團 | Handbook of Texas 的 Harris 條目寫他離團的原因是長年巡演的疲累（reportedly），與簡介的離團理由不一致，待核 | https://www.tshaonline.org/handbook/entries/harris-rebert-h |
 | ar-c-007 | Big Walter Horton | The Soul of Blues Harmonica | Walter Horton（1921–1981） | 出生年有 1917（wikidata）、1918（密西西比藍調步道標誌牌）、1921（維基與 Earwig）三說，簡介取 1921 屬其中一說，建議拿掉出生年或改寫成生年有爭議。 | https://msbluestrail.org/blues-trail-markers/big-walter-horton |
 | ar-c-007 | Blind Lemon Jefferson | King of the Country Blues | 是唱片工業裡第一位大量賣座的男聲鄉村藍調歌手 | TSHA 的說法是「第一位獲得全國聽眾的藍調自彈自唱歌手」，並明講他不是第一個錄音的人；「第一」類宣稱建議改成 TSHA 的限定說法或改成「最早的暢銷藍調歌手之一」。 | https://www.tshaonline.org/handbook/entries/jefferson-blind-lemon |
+| ar-c-008 | Hound Dog Taylor and the HouseRockers | Natural Boogie | 1917 年生於密西西比 Natchez | 出生年有爭議：英文維基寫 1917 但註明有來源說 1915 或 1916，Alligator 官網與 Wikidata 為 1915；建議改寫「1917 年（一說 1915 年）」或略去年份 | https://en.wikipedia.org/wiki/Hound_Dog_Taylor |
+| ar-c-008 | Jimmy Dawkins | All for Business | 錄音 1971 年，要到 1973 年才由 Delmark 發行 | 英文維基寫 1971 年 Delmark 發行第二張專輯，American Blues Scene 也寫 All For Business (1971)；與上線簡介的 1973 不一致。請在本機對 Delmark 目錄或 Discogs 原盤欄位核對後定稿（本層未能開 Discogs 驗證） | https://en.wikipedia.org/wiki/Jimmy_Dawkins |
+| ar-c-008 | Lazy Lester | All Over You | 簡介引 Excello 時期，歌名「Hello Mary Lee�)」 | 上線簡介曲名「Hello Mary Lee�)」帶亂碼字元（應為 Hello Mary Lee），請在 KV 檢查修正 | https://www.alligator.com/artists/Lazy-Lester/ |
+| ar-c-008 | Ma Rainey | Mother of the Blues | 五年間錄下九十餘個曲目 | 英文維基與 Georgia Encyclopedia 都寫五年間錄了一百多首（more than 100 recordings），womenshistory.org 寫近百首；若「九十餘個曲目」指不同曲名數則無誤，請本機核對後決定是否改成「百餘首錄音」 | https://www.georgiaencyclopedia.org/articles/arts-culture/gertrude-ma-rainey-1886-1939/ |
+| ar-c-008 | Michael Burks | Iron Man | 他生前五度入圍 Blues Music Award | Alligator 官方介紹稱入圍 4 次（含 2012 年最佳吉他手），維基稱 5 次，兩源不一致，建議改成不寫次數或改寫「多次入圍」 | https://www.alligator.com/artists/Michael-Burks/ |
+| ar-c-008 | Shemekia Copeland | Turn the Heat Up | 她約十歲就在 Cotton Club 首度公開演唱 | 維基稱約 10 歲，Alligator 官方介紹與多篇報導稱 8 歲，兩源不一致；建議改成不寫年紀（『很小就在 Cotton Club 登台』） | https://www.alligator.com/artists/Shemekia-Copeland/ |
+| ar-c-008 | Susan Tedeschi | Just Won't Burn | 《Just Won't Burn》是她的『第二張個人作品』 | 維基稱 1995 年的《Better Days》是 Susan Tedeschi Band 名義發行，《Just Won't Burn》是首張以她個人名義發行的專輯；建議改成『她 1998 年的全國性出道作』或不寫序數 | https://en.wikipedia.org/wiki/Susan_Tedeschi |
+| ar-c-008 | Tampa Red | The Guitar Wizard | 與 Georgia Tom Dorsey 1928 年賣破百萬的 hokum 名曲〈(Honey) It's Tight Like That〉 | 維基稱賣了一百萬張，Encyclopedia.com 稱近百萬張，『破百萬』偏強；建議改成『據稱約百萬張』 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/tampa-red |
+| ar-c-008 | Area | Crac! | Stratos 1979 年因白血病去世 | 英文維基 Area (Italian band) 條目寫 Stratos 1979 年 6 月、34 歲因 aplastic anemia（再生不良性貧血）併發症過世，並非白血病；另依共同特注，死因不宜寫進介紹，簡介可改成只寫『1979 年過世』。 | https://en.wikipedia.org/wiki/Area_(Italian_band) |
+| ar-c-009 | Big Brother & The Holding Company | Big Brother & The Holding Company | 1966 年 12 月錄於洛杉磯（簡介寫法） | LoC 專文寫 Joplin 加入『數週後』樂團就趕進錄音室錄首張（Mainstream）；搜尋摘要又稱錄音在 1966 年 12 月進行。時序有出入但兩邊都有可能（可能分芝加哥與洛杉磯兩段場次），未能證實簡介錯誤，僅列請店主核對；本層不判定為錯。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/BigBrotherAndTheHoldingCompany.pdf |
+| ar-c-009 | Budka Suflera | Cień wielkiej góry | 樂隊 1969 年在 Lublin 成立 | 來源對成軍年份不一致：pl 維基與 ebilet 寫 1974 年，bibliotekapiosenki 寫 1973 年，en 維基首段兩種年份並陳（1969 是 Cugowski 早期同名前身團，1974 才是現行樂團成立）；建議改成不帶年份或寫「1970 年代前半」。 | https://pl.wikipedia.org/wiki/Budka_Suflera |
