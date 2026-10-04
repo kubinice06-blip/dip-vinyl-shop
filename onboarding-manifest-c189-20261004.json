@@ -1,0 +1,1232 @@
+{
+ "schemaVersion": 1,
+ "batch": "c189-20261004",
+ "albums": [
+  {
+   "artist": "NANIWA EXPRESS",
+   "album": "Wind Up",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c0a8260c-222d-4402-a08c-5cac42b579f4（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「WIND UP」、artist-credit 單一方（`NANIWA EXPRESS` c2cc5e23，Group、country `JP`、sort-name `Naniwa Express`）、first-release-date `1983`、primary-type Album、**secondary-types 空陣列**、**RG 層 tags 與 genres 兩欄都是空陣列**——**slice 的 `why` 欄逐字是空字串，曲風依據 100% 由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：**49c0a15d（1983 JP Official 12\" Vinyl 9 軌，CBS/Sony 28AH 1545——原壓，title 逐字 `Wind Up`）**、7ada138b（2016-02-17 **XW** Official Digital Media 9 軌，Sony Music Direct (Japan) Inc. 無 catno，title 逐字 `WIND UP`）。Discogs：`catno=28AH 1545` 與 `q=Naniwa Express Wind Up` 兩路、逐筆先讀 `type` 後取 **master 1818949**；`/masters/1818949/versions` 逐筆跑完 **2 版**；原壓整筆 credits 打的是 `releases/8352733`（`extraartists` 十六筆 ＋ `notes` 的團員樂器清單 ＋ 逐軌 `Written-By` 九軌）。⚠ **Discogs 藝人頁 `artists/3406984` 的 `members` 欄逐字六位**（多一位 `Kiyoshi Kamada`，**本盤 credits 上沒有他，不寫進 `why`**）。",
+    "rgMbid": "c0a8260c-222d-4402-a08c-5cac42b579f4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c0a8260c-222d-4402-a08c-5cac42b579f4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 15459,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=15459）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱片內頁印著經紀公司的地址：大阪市西區北堀江。S.D. Kansai 就設在那裡一棟大樓的三樓，樂團出身關西。1983 年 6 月 22 日黑膠與卡帶同步發出，黑膠印的是 28AH 1545，是他們在 CBS/Sony 的第三張。這一年他們上台一百六十場以上，定型成現場樂團；團長 清水興 1976 年在「8・8 ROCKDAY」拿過最優秀貝斯手獎。九軌都是演奏曲，說明欄寫明合成器獨奏全歸 中村建治，電鋼琴與鋼琴獨奏全歸 青柳誠。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%8B%E3%83%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9",
+     "https://www.discogs.com/release/8352733",
+     "https://ja.wikipedia.org/wiki/%E6%B8%85%E6%B0%B4%E8%88%88",
+     "https://www.discogs.com/master/1818949",
+     "https://musicbrainz.org/release-group/c0a8260c-222d-4402-a08c-5cac42b579f4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/66/e1/ee/66e1eef4-f170-7bb1-b48e-757013fdf4a2/mzaf_696401936419430812.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536955003",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE SQUARE",
+   "album": "うち水にRainbow",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b6057dae-41b7-49f1-b410-38a72680f915（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「うち水にRainbow」、artist-credit 單一方（`THE SQUARE` 0480ca1e，Group、country `JP`、**sort-name 逐字 `T‐SQUARE`（帶 U+2010）**）、first-release-date `1983-05-21`、primary-type Album、**secondary-types 空陣列**、RG 層 tags 與 genres 逐字只有 `jazz(1)`——**照第 1850-B 條只當線索；slice 的 `why` 欄是空字串，曲風依據由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **5 筆**：**d679037a（1983-05-21 JP Official 12\" Vinyl 10 軌，CBS/Sony 28AH 1527——原壓）**、5e04cd3c（1983 JP CD，38DH 38）、86ed03ad（1987-06-21 JP CD，32DH-739）、45f0629e（1990-09-15 JP CD，CSCL-1218）、1f4a8ade（2001-11-14 JP CD，VILLAGE VRCL 2007）。Discogs：`catno=28AH 1527` 一路、逐筆先讀 `type` 後取 **master 1248035**；`/masters/1248035/versions` 逐筆跑完 **7 版**；原壓整筆 credits 打的是 `releases/7698422`（`extraartists` 三十一筆，**`search` 摘要只回四筆**）。⚠ **Discogs 藝人頁逐名回打 8 個**（安藤正容／伊東毅／和泉宏隆／田中豊雪／長谷部徹／伊藤広規／松任谷由実／伊藤八十八）。",
+    "rgMbid": "b6057dae-41b7-49f1-b410-38a72680f915",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b6057dae-41b7-49f1-b410-38a72680f915/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 456,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=456）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第六軌由 松任谷由実 作曲並命名，詞要等兩年後才填上。〈黄昏で見えない〉在盤上是器樂版；後來她自己填詞、改題〈幻の魚たち〉，交給 小林麻美 唱，1985 年 5 月收在一首單曲的 B 面。盤上的總協調也是她。1983 年 5 月 21 日交由 CBS/Sony 發行時，唱片編成 28AH 1527，共十軌，首尾是 Beatles〈Hello Goodbye〉的完整版與 Reprise；這也是樂團最後一次把翻奏曲放進原創專輯。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%81%86%E3%81%A1%E6%B0%B4%E3%81%ABRainbow",
+     "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%9E%97%E9%BA%BB%E7%BE%8E",
+     "https://www.discogs.com/release/7698422",
+     "https://www.discogs.com/artist/1887663",
+     "https://www.discogs.com/master/1248035",
+     "https://musicbrainz.org/release-group/b6057dae-41b7-49f1-b410-38a72680f915"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f5/47/ed/f547ed3f-6e41-9e09-334a-136b2be824e0/mzaf_16680695454938044711.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1538797679",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "日野皓正",
+   "album": "New York Times",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2d89c78e-11ef-4a10-857e-85e81368680a（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「New York Times」、artist-credit 單一方（`日野皓正` 60d3fa1e，Person、country `JP`、sort-name `Hino, Terumasa`）、first-release-date `1983`、primary-type Album、**secondary-types 空陣列**、**RG 層 tags 與 genres 兩欄都是空陣列**——**slice 的 `why` 欄是空字串，曲風依據 100% 由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：**237b02e0（1983 JP Official 12\" Vinyl 9 軌，CBS/Sony 28AH 1588——原壓）**、c1bad4e3（2000-04-19 JP CD 9 軌，SME Records SRCS 9602）。Discogs：`catno=28AH 1588` 一路、逐筆先讀 `type` 後取 **master 1060167**；`/masters/1060167/versions` 逐筆跑完 **8 版**；原壓整筆 credits 打的是 `releases/1407269`（`extraartists` 二十八筆，**`search` 摘要只回四筆**），另讀過 `releases/9978678`（1983 CD，`released` 逐字 `1983-11-01`）與 `releases/11133063`（`30AH 1614`，`series` 逐字「Master Sound DM Digital Mastering」）。",
+    "rgMbid": "2d89c78e-11ef-4a10-857e-85e81368680a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2d89c78e-11ef-4a10-857e-85e81368680a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 22,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=22）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音在紐約，盤上的日本樂手只有領銜一人。日野皓正 一人掛短號、小號、富魯格號與墨西哥陶笛，九軌有七軌出自他的筆。1983 年 10 月 21 日面世，目錄號 28AH 1588；錄音室是 Record Plant，伴奏清一色是美方樂手。紐約班底的鍵盤是 Kenny Kirkland，A1、A3 的管樂由他倆合編，B3 則由 Phil Markowitz 編。盤名的片假名對譯寫「ニューヨーク・タイムズ」，A3 同名曲卻寫成「ニューヨーク・タイムス」。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1407269",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E7%9A%93%E6%AD%A3",
+     "https://www.discogs.com/artist/279707",
+     "https://www.discogs.com/artist/328883",
+     "https://www.discogs.com/master/1060167",
+     "https://www.discogs.com/release/11479112",
+     "https://musicbrainz.org/release-group/2d89c78e-11ef-4a10-857e-85e81368680a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Today's Latin Project",
+   "album": "Today's Latin Project",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group eabe921a-6866-488f-a5e3-4a15a04a6cd7（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Today’s Latin Project」（**U+2019**）、artist-credit 單一方（`Today’s Latin Project` 5c60d7ec，Group、country `JP`）、first-release-date `1983`、primary-type Album、**secondary-types 空陣列**、RG 層 tags 逐字 `electronic(1)`／`jazz(1)`／`latin(1)`——⚠ **slice 的 `why` 欄逐字是 `rg-tag`，照簡報第一節 (2) 在本線沒有證據力，曲風依據由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：**edb80223（1983 JP Official 12\" Vinyl 8 軌，discomate DSP-4008——原壓）**、6a5f0f14（2021-07-28 **XW** Official Digital Media 8 軌，`P‐VINE RECORDS`〔帶 U+2010〕，catno 欄逐字 `DSP-4008`）。Discogs：`catno=DSP-4008` 一路（⚠ 混著 1953 英國 Parlophone 兩筆，見 `label`）、逐筆先讀 `type` 後取 **master 968039**；`/masters/968039/versions` 逐筆跑完 **6 版**；**市售原壓 `releases/7128745` 的 credits 是空的，整份編制取自同號 Promo `releases/8209040`**（`extraartists` 二十五筆 ＋ 逐軌 `Written-By` 八軌），另讀過 2020 CD `releases/16166371`（credits 與 Promo 一致，另記錄音室與錄音師 `Seigen Ono`〔B 面〕／`Shozo Inomata`〔A 面〕）。⚠ **Discogs 藝人頁逐名回打 22 個**（含團名頁 4457654，其 `namevariations` 為空）。",
+    "selfTitledVerified": true,
+    "rgMbid": "eabe921a-6866-488f-a5e3-4a15a04a6cd7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eabe921a-6866-488f-a5e3-4a15a04a6cd7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 77,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=77）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "父親的拉丁大樂團散了三年，兒子坐上鼓椅重錄古巴老曲。見砂直照 組的東京キューバン・ボーイズ 1980 年解散，鼓手兼製作人 見砂和照 是他的三兒子。1983 年 discomate 出了這個名義唯一的一張，碟上印著 DSP-4008，八軌裡七軌是古巴與加勒比海老曲，其中〈Jungle Drums〉早在 1939 年就有 Artie Shaw 的 78 轉。B 面整面交給 清水靖晃：他編曲、吹多種管樂並彈鍵盤，末軌〈Pygmy Land〉也是他的新曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/16166371",
+     "https://ja.wikipedia.org/wiki/%E8%A6%8B%E7%A0%82%E5%92%8C%E7%85%A7",
+     "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%90%E3%83%B3%E3%83%BB%E3%83%9C%E3%83%BC%E3%82%A4%E3%82%BA",
+     "https://www.discogs.com/release/8209040",
+     "https://www.discogs.com/release/18550849",
+     "https://www.discogs.com/artist/620175",
+     "https://www.discogs.com/artist/2851452",
+     "https://www.discogs.com/master/968039",
+     "https://musicbrainz.org/release-group/eabe921a-6866-488f-a5e3-4a15a04a6cd7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6f/31/5b/6f315bf4-0920-3cb6-3be6-29dd3633d063/mzaf_17767497707871648023.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1576644155",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "真梨邑ケイ",
+   "album": "P.S. I Love You",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6f726f4a-2876-4aed-9bdd-d5daa2ef1a4a（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「P.S. I LOVE YOU」、artist-credit 單一方（`真梨邑ケイ` 1e406916，Person、country `JP`、sort-name `Marimura, Kei`）、first-release-date `1983`、primary-type Album、**secondary-types 空陣列**、RG 層 tags 逐字只有 `jazz(1)`——⚠ **slice 的 `why` 欄逐字是 `rg-tag`，照簡報第一節 (2) 沒有證據力，曲風依據由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **3 筆**：**f8d0037f（1983 JP Official 12\" Vinyl 10 軌，discomate DSP-5120——原壓）**、59c3d6a7（1984 JP CD，discomate CDP-1）、c03273d3（1986-12-05 JP CD，Continental 30CH-217）。Discogs：`catno=DSP-5120` 一路、逐筆先讀 `type` 後取 **master 1127903**；`/masters/1127903/versions` 逐筆跑完 **4 版**；原壓整筆 credits 打的是 `releases/6689134`，另讀過 `releases/9760356`（CDP-1）、`releases/24166238`（Continental，多兩行編曲）、`releases/21678817`（卡帶）。⚠ **Discogs 藝人頁逐名回打 15 個**（含領銜者 4381893）。",
+    "rgMbid": "6f726f4a-2876-4aed-9bdd-d5daa2ef1a4a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6f726f4a-2876-4aed-9bdd-d5daa2ef1a4a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=11）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "discomate 那條 CD 號段的第一號，就是這張碟。CDP-1 這個號 1984 年排給本盤，前六號裡五號是 真梨邑ケイ 的專輯。黑膠 1983 年由 discomate 發行，編目 DSP-5120，十軌多是標準曲，盤名曲出自 Gordon Jenkins 與 Johnny Mercer。前作請 Nelson Riddle 編曲、Harry James 吹小號，進了 Oricon 前十並獲頒金唱片。伴奏十五人裡八人來自 前田憲男 的 Wind-Breakers。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E7%9C%9F%E6%A2%A8%E9%82%91%E3%82%B1%E3%82%A4",
+     "https://www.discogs.com/release/6689134",
+     "https://www.discogs.com/release/24166238",
+     "https://www.discogs.com/artist/4199680",
+     "https://www.discogs.com/artist/870564",
+     "https://www.discogs.com/label/71114-Discomate",
+     "https://www.discogs.com/release/9760356",
+     "https://www.discogs.com/master/1127903",
+     "https://musicbrainz.org/release-group/6f726f4a-2876-4aed-9bdd-d5daa2ef1a4a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "カリオカ",
+   "album": "Dusk",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9cd45f66-f13a-457e-b184-d891a26d1e30（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Dusk」、artist-credit 單一方（`Carioca` 18c3632b，Group、country `JP`、sort-name `CARIOCA`）、first-release-date `1983`、primary-type Album、**secondary-types 空陣列**、**RG 層 tags 與 genres 兩欄都是空陣列**——**slice 的 `why` 欄是空字串，曲風依據 100% 由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：**f88095bc（1983 JP Official Vinyl 10 軌，Kitty Records 28MS 0035——原壓）**。Discogs：`catno=28MS 0035` 一路、逐筆先讀 `type` 後取 **master 995214**；`/masters/995214/versions` 逐筆跑完 **4 版**；原壓整筆 credits 打的是 `releases/4269929`，另讀過 Promo `releases/12476288`、`releases/8463548`（3133-6）、`releases/23600768`（2013）。⚠ **曲題反查用的是 `database/search?track=<曲題>&type=master`**（見第 6561 條）。",
+    "rgMbid": "9cd45f66-f13a-457e-b184-d891a26d1e30",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9cd45f66-f13a-457e-b184-d891a26d1e30/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=3）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第二軌是鍵盤手同一年替機器人動畫寫的片尾曲。〈Never Ending〉是《装甲騎兵ボトムズ》片尾曲〈いつもあなたが〉的另一種器樂編曲，那首歌作曲的正是 乾裕樹。片頭曲〈炎のさだめ〉也出自他手，兩首都由 TETSU 唱，是同一張單曲的正反面。1983 年 6 月 26 日，Kitty 把唱片發出，片號 28MS 0035，十軌全是器樂。錄這張時樂團只剩四人，創團成員 アントニオ石田 與 佐藤正美 都是 1983 年剛歸隊，貝斯手 植竹哲朗 也是那年加入。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AA%E3%82%AA%E3%82%AB%20(%E3%83%95%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://ja.wikipedia.org/wiki/%E8%A3%85%E7%94%B2%E9%A8%8E%E5%85%B5%E3%83%9C%E3%83%88%E3%83%A0%E3%82%BA",
+     "https://www.discogs.com/artist/1261725",
+     "https://www.discogs.com/master/153471",
+     "https://www.discogs.com/release/4269929",
+     "https://www.discogs.com/master/995214",
+     "https://musicbrainz.org/release-group/9cd45f66-f13a-457e-b184-d891a26d1e30"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "高中正義",
+   "album": "Can I Sing?",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f5eb5a16-f797-4eea-add2-67738b92ce1f（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「CAN I SING?」、artist-credit 單一方（`高中正義` facf743e，Person、country `JP`、sort-name `Takanaka, Masayoshi`）、first-release-date `1983-10-05`、primary-type Album、**secondary-types 空陣列**、RG 層 tags 十五項（`city pop(2)`／`electronic(2)`／`jazz(2)`／`rock(2)`／`jazz fusion(1)`／`jazz-funk(1)`⋯）——**照第 1850-B 條只當線索；slice 的 `why` 欄是空字串，曲風依據由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **6 筆**：**e9c29a64（1983-10-05 JP Official 12\" Vinyl 10 軌，Kitty Records 28MS 0045——原壓，title 逐字 `Can I Sing?`）**、19d5fc8e（1983-10-05 JP CD，3133-8 (35KT)）、c068f85a（1990-07-25 JP CD，KTCR-1022）、e4ab5649（1995-05-25 JP CD，KTCR-1552）、6aea5514（2013 **XW** Digital Media，USM JAPAN）、84e42dd3（Pseudo-Release，不計）。Discogs：`catno=28MS 0045` 一路、逐筆先讀 `type` 後取 **master 602763**；`/masters/602763/versions` 逐筆跑完 **10 版**；原壓整筆 credits 打的是 `releases/3021497`（整筆九筆 ＋ **逐軌 credits 十軌各四到七筆**——⚠ 主線第 1987-B 條「整筆與逐軌兩層」，本卡的伴奏全在逐軌那一層）。",
+    "rgMbid": "f5eb5a16-f797-4eea-add2-67738b92ce1f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f5eb5a16-f797-4eea-add2-67738b92ce1f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1095,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1095）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "音序器的程式，是一旁彈節奏吉他的 鳥山雄司 寫的。這是 高中正義 第一張大量用音序器打底的專輯，Linn 鼓機的編程也在 鳥山雄司 名下。1983 年 10 月 5 日以 LP 送上架，キティ 發的是 28MS 0045，Oricon 最高第 2 名。作曲、編曲與製作全掛 高中正義 一人，十軌都有他的電吉他；五軌有英語或日語詞，另五軌純器樂。全盤唯一掛名主唱在 B4〈Noon〉：詞出自 来生えつこ，唱的是她弟弟 来生たかお，姊弟一起客座。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/CAN_I_SING%3F",
+     "https://www.universal-music.co.jp/takanaka-masayoshi/products/upcy-9060/",
+     "https://www.discogs.com/release/3021497",
+     "https://www.discogs.com/artist/1044026",
+     "https://www.discogs.com/master/602763",
+     "https://musicbrainz.org/release-group/f5eb5a16-f797-4eea-add2-67738b92ce1f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/e2/6a/48/e26a48da-d015-fd1c-97d3-9bc77946c5b8/mzaf_2535001683958859628.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443880810",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Casiopea",
+   "album": "Down Upbeat",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fa3ee3c7-8ceb-39e5-8a06-e3565d91a18d（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Down Upbeat」、artist-credit 單一方（`Casiopea` b2853652，Group、country `JP`）、first-release-date `1984-10-25`、primary-type Album、**secondary-types 空陣列**、RG 層 tags 九項（`jazz fusion(2)`／`contemporary jazz(1)`／`jazz-funk(1)`／`smooth jazz(1)`⋯）——**照第 1850-B 條只當線索；slice 的 `why` 欄是空字串，曲風依據由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **6 筆**：01bf00db（1984 **GB** 12\" Vinyl，Sonet SNTF 926）、**5c55f7e3（1984-10-25 JP Official 12\" Vinyl 10 軌，ALFA ALR-28063——原壓）**、b12b2b69（1984 US 12\" Vinyl，Milestone M-9133，title 逐字 `Zoom`）、6d29af3c（1986 XE CD，Sonet SNTCD 926）、57ce1b8f（2002-01-01 JP CD，VILLAGE VRCL 2232）、6757c36e（**AF** Digital Media，Sony Music Direct (Japan) Inc.，無日期）。Discogs：`catno=ALR-28063` 一路、逐筆先讀 `type` 後取 **master 221546**；`/masters/221546/versions` 逐筆跑完 **21 版**；原壓整筆 credits 打的是 `releases/4509128`，另讀過英國 Sonet `releases/1397624` 與美國 Milestone `releases/1995622` 的 `notes`（℗／© 都指回 Alfa）。",
+    "rgMbid": "fa3ee3c7-8ceb-39e5-8a06-e3565d91a18d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fa3ee3c7-8ceb-39e5-8a06-e3565d91a18d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7484,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=7484）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "連最繁複的曲子，也是一口氣錄完、事後一軌不補。錄音從 7 月 24 日起在紐約 Secret Sound 展開，8 月 4 日收工。1984 年 10 月 25 日並出 LP 與 CD，LP 走 ALR-28063，Oricon 榜爬到第 13 名。美國 Milestone 發行時把盤名換成首軌曲名《Zoom》。1984 年首版 CD 有一批母帶瑕疵品，第三軌〈The Continental Way〉開頭第一聲小鼓漏掉了。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/DOWN_UPBEAT",
+     "https://www.discogs.com/release/4509128",
+     "https://artist.cdjournal.com/d/down-upbeat/3201120109",
+     "https://www.discogs.com/master/221546",
+     "https://www.discogs.com/release/7909999",
+     "https://musicbrainz.org/release-group/fa3ee3c7-8ceb-39e5-8a06-e3565d91a18d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/f5/d5/71f5d5a6-b4ac-7cd0-97a9-40307b44db42/mzaf_3573844241187649654.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1535034970",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "NANIWA EXPRESS",
+   "album": "Modern Beat",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 446697d1-a02d-47a5-9d06-464b6b2fd7e6（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「MODERN BEAT」、artist-credit 單一方（`NANIWA EXPRESS` c2cc5e23，Group、country `JP`）、first-release-date `1984`、primary-type Album、**secondary-types 空陣列**、**RG 層 tags 與 genres 兩欄都是空陣列**——**slice 的 `why` 欄是空字串，曲風依據 100% 由策展層自建**。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：**7519d47f（1984 JP Official 12\" Vinyl 9 軌，CBS/Sony 28AH 1749(KD)——原壓，title 逐字 `Modern Beat`）**、e2ea569e（1991-07-25 JP CD，Sony Records SRCL 1975）。Discogs：`catno=28AH 1749` 一路、逐筆先讀 `type` 後取 **master 1240910**；`/masters/1240910/versions` 逐筆跑完 **4 版**；原壓整筆 credits 打的是 `releases/7244259`，另讀過 `releases/10892288`（1984 CD）、`releases/10892078`（1991 CD，唯一帶時長與製作 credits 的一版）、`releases/16030270`（卡帶）。",
+    "rgMbid": "446697d1-a02d-47a5-9d06-464b6b2fd7e6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/446697d1-a02d-47a5-9d06-464b6b2fd7e6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 23465,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：正規廠牌但當年商業失敗或發行有限。機器值 3（listeners=23465）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鼓手的 credit 裡，有一項打擊樂器寫的是垃圾桶。東原力哉 那一欄依序是鼓、鈸、管鐘，最後一項逐字寫作「Gomi-can」；他 1956 年生於高松。1984 年 7 月 1 日首賣 LP 與卡帶，LP 掛 28AH 1749，九軌器樂。這一年樂團與 日野皓正 等人首度站上日本武道館，巡演時台上擺了三十台彩色螢幕，影像與演奏同步。其中 11 月 24 日名古屋那一場被錄成一卷非賣品的 Sony Beta Hi-Fi 示範帶，五首裡四首出自本盤。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%8B%E3%83%AF%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9",
+     "https://www.discogs.com/release/7244259",
+     "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8E%9F%E5%8A%9B%E5%93%89",
+     "https://ja.wikipedia.org/wiki/%E9%9D%92%E6%9F%B3%E8%AA%A0",
+     "https://www.discogs.com/release/25454080",
+     "https://www.discogs.com/release/10892078",
+     "https://www.discogs.com/master/1240910",
+     "https://musicbrainz.org/release-group/446697d1-a02d-47a5-9d06-464b6b2fd7e6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/42/4f/42/424f4291-ea32-7dd0-ef0f-6958825c38d0/mzaf_12009836313125879024.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536953583",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE SQUARE",
+   "album": "Adventures",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d5a18fe5-35f6-483f-8836-66547529d254（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「ADVENTURES」、artist-credit 單一方（credit 名 `THE SQUARE`，實體 0480ca1e **Group**、country 逐字 `JP`、name 與 sort-name 逐字 `T‐SQUARE`（帶 U+2010））、first-release-date 1984-04-01、primary-type Album、**secondary-types 空陣列**、tags 見 `why`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **8 筆**：acdcb6d4（無日期 JP 12\" Vinyl 9 軌，CBS/Sony 32AH-1620）、**dd90032f（1984-04-01 JP Official 12\" Vinyl 9 軌，CBS/Sony 28AH-1693——原壓）**、2b933f8b（1984-04-21 JP CD，38DH-79）、6e6ad08e（1987-06-21 JP CD，32DH-740）、aff528a2（1991-03-21 JP CD，CSCL-1681）、5d70d8fa（2001-12-21 JP CD，VILLAGE VRCL 2010）、2957c915／eacd60dc（2015-07-08 JP Digital Media 各 9 軌，Sony Music Direct）。Discogs：`q=T-Square Adventures&type=master` 與 `catno=28AH 1693` 兩路，逐筆先讀 `type` 取 **master 690169**；`/masters/690169/versions` 逐筆跑完 **13 版**（清單見 `label`）；原壓整筆打 `releases/13792836`（逐軌 `Composed By`），編制與錄音地打 `releases/8855388`（1984 CD）與 `releases/3771341`（2001 CD，`extraartists` 二十二筆，多出 `Arranged By [Rhythm Tracks]` 掛團名、和泉宏隆 的弦樂／管樂／合成器編曲）；父公司打 `labels/33078`（`CBS/Sony`，parent `Sony Music Entertainment Inc.`）。",
+    "rgMbid": "d5a18fe5-35f6-483f-8836-66547529d254",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d5a18fe5-35f6-483f-8836-66547529d254/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1229,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1229）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "排練那天薩克斯風手遲到，那首曲子就改成了鋼琴曲。〈Night Dreamer〉本該由 伊東たけし 吹主旋律，鍵盤手趁他到場前先用鋼琴代吹，大家聽了覺得好，整首便以鋼琴領奏。1984 年 4 月 1 日陳列的是一張九軌 LP，號數 28AH 1693，標題曲拆成頭尾兩段。〈Travelers〉等兩首被サントリーホワイト 的廣告選用，伊東たけし 拿著 Lyricon 出鏡。《超級瑪利歐兄弟》的作曲者 近藤浩治 2001 年說，地上關卡的配樂可能受到他們影響；他只點了團名。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/13792836-The-Square-Adventures",
+     "https://ja.wikipedia.org/wiki/ADVENTURES",
+     "https://www.discogs.com/release/8855388-The-Square-Adventures",
+     "https://ja.wikipedia.org/wiki/T-SQUARE",
+     "https://www.discogs.com/release/3771341-The-Square-Adventures",
+     "https://ja.wikipedia.org/wiki/TRAVELERS_(THE_SQUARE%E3%81%AE%E6%9B%B2)",
+     "https://www.gamesradar.com/tiktok-shows-surprising-inspiration-for-some-of-super-mario-bros-most-iconic-music/",
+     "https://www.discogs.com/master/690169-The-Square-Adventures",
+     "https://musicbrainz.org/release-group/d5a18fe5-35f6-483f-8836-66547529d254"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/a4/a4/92a4a484-ccb5-cfa9-ffbf-6237ed7cec92/mzaf_989897072665533455.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1538797579",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE SQUARE",
+   "album": "Stars and the Moon",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ee347cb7-ded6-33ad-b653-70797354b997（slice 給的 rgMbid，未改釘）。RG：title 逐字「Stars and the Moon」、artist-credit `THE SQUARE`（0480ca1e Group、country `JP`）、first-release-date 1984-12-01、Album、secondary-types 空陣列、tags `jazz(1)`／`jazz fusion(1)`。releases **6 筆**：**5ea3a256（1984-12-01 JP 12\" Vinyl 8 軌，CBS/Sony 28AH-1809——原壓）**、4df477f3（1984-12-01 JP CD，32DH-158）、6bad5686（1991-03-21 CSCL-1682）、57b46f95（2001-12-12 VILLAGE VRCL-2013）、137bc450／32f2ab15（兩筆 Pseudo-Release，一片假名一英文、無日期無廠牌——不計）。Discogs：`q=Square Stars and the Moon`（517 筆、第一筆即 master）與 `catno=28AH 1809` 兩路，先讀 `type` 取 **master 1248464**；`versions` 逐筆 9 版；原壓整筆打 `releases/7898719`，編制打 `releases/10966008`（1984 CD）與 `releases/25694164`（2001 CD，`extraartists` 二十八筆，與 1984 CD 同一份名單）。",
+    "rgMbid": "ee347cb7-ded6-33ad-b653-70797354b997",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ee347cb7-ded6-33ad-b653-70797354b997/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 542,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已在串流可得——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=542）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "以夏天出名的樂團，這一張刻意做給秋冬。此前貼在他們身上的是「度假音樂」「清爽的聲音」這類字眼，這回八軌裡過半是小調的抒情曲，封套則換成從公園仰望的冬季夜空。1984 年 12 月 1 日鋪貨，唱片號 28AH 1809，距同年 4 月的前作只隔八個月。鍵盤手 和泉宏隆 寫了其中三首，他說〈遠雷〉是想著夏天結束寫的，曲名借自美國畫家 Andrew Wyeth 的一幅畫。後來加入這支團、坐上鍵盤位子的 河野啓三，最早買來聽的就是它；他說前四首同一個調，乍聽樸素，越嚼越有味道。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7898719-The-Square-Stars-And-The-Moon",
+     "https://ja.wikipedia.org/wiki/Stars_and_the_Moon",
+     "https://ja.wikipedia.org/wiki/%E4%B9%85%E7%B1%B3%E5%A4%A7%E4%BD%9C",
+     "https://www.discogs.com/release/10966008-The-Square-Stars-And-The-Moon",
+     "https://www.discogs.com/release/11017209-The-Square-Stars-And-The-Moon",
+     "https://www.discogs.com/master/1248464-The-Square-Stars-And-The-Moon",
+     "https://musicbrainz.org/release-group/ee347cb7-ded6-33ad-b653-70797354b997"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ca/58/5b/ca585bf8-5d9b-3ba3-962a-d9651db4885f/mzaf_14768249305523330718.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1538799319",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "伊東たけし",
+   "album": "Dear Hearts",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b74f6d40-4a97-4fa6-bab5-7e2fcdc3fd71（slice 給的 rgMbid，未改釘）。RG：title「Dear Hearts」、artist-credit 單一方 `伊東たけし`（865087d6 Person、country `JP`、sort-name `Itō, Takeshi`）、first-release-date 1984-06-21、Album、secondary-types 空、tags `jazz(1)`。releases **4 筆**：**73d6dfad（1984-06-21 JP 12\" Vinyl 9 軌，CBS/Sony 28AH-1774——原壓號）**、9a088eb0（1984-06-21 JP CD，CBS/Sony 32DH-742——⚠ 見 `label`）、0e42ae61（1991-05-15 JP CD，Sony Records SRCL-1821）、ae003d13（2017-03-29 XW Digital Media，Sony Music Direct）。Discogs：`catno=28AH-1774` 一次命中（2 筆，先讀 `type` 取 **master 730761**）；`versions` 逐筆 7 版；原壓打 `releases/5419881`，逐軌作曲與編制打 `releases/15053710`（1984 CD）與 `releases/4757867`（2013 CD，`notes` 逐字「Recorded at One on One Studios, North Hollywood, CA」）——⚠ **兩版的逐軌 credits 一致**（`Composed By` vs `Written-By` 只是欄名差），照主線第 1987-B 條「整筆 credits 空白與逐軌 credits 空白是兩層」逐軌讀完。",
+    "rgMbid": "b74f6d40-4a97-4fa6-bab5-7e2fcdc3fd71",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b74f6d40-4a97-4fa6-bab5-7e2fcdc3fd71/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 646,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=646）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈Say It Again〉三年多後換人唱進了英國前十。這首本是既有的 R&B 歌，1988 年 1 月以 Jermaine Stewart 的版本登上英國第 7 名，那一版的製作群裡有 Aaron Zigman，他正是本盤開場曲的共同作者。1984 年 9 月 21 日亮相時，盤上標 28AH-1774，是 THE SQUARE 團員的個人首作。錄音跑到洛杉磯，貝斯交給 Nathan East。伊東たけし 早年讀了 渡辺貞夫 的自傳，才從長笛改吹中音薩克斯風。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5419881-Takeshi-Itoh-Dear-Hearts",
+     "https://www.discogs.com/release/4757867-Takeshi-Itoh-Dear-Hearts-",
+     "https://www.discogs.com/release/15053710-Takeshi-Itoh-Dear-Hearts",
+     "https://en.wikipedia.org/wiki/Say_It_Again_(Jermaine_Stewart_song)",
+     "https://ja.wikipedia.org/wiki/%E4%BC%8A%E6%9D%B1%E3%81%9F%E3%81%91%E3%81%97",
+     "https://www.discogs.com/artist/2061580-Akira-Yada",
+     "https://www.discogs.com/artist/229176-Larry-Williams",
+     "https://www.discogs.com/master/730761-Takeshi-Itoh-Dear-Hearts",
+     "https://musicbrainz.org/release-group/b74f6d40-4a97-4fa6-bab5-7e2fcdc3fd71"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4f/60/0f/4f600fd1-63ec-3429-6093-848ad4a76a83/mzaf_17531406884161050860.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537080812",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "井上敬三",
+   "album": "Boys, Be Ambitious!",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 00b8a822-3da0-430c-8608-9377752cd434（slice 給的 rgMbid，未改釘）。RG：title「Boys, Be Ambitious!」、artist-credit `Keizo Inoue`（1e7cf5f5 Person、country `JP`、disambiguation `Japanese free saxophonist`）、first-release-date 1984、Album、secondary-types 空、tags `free jazz(1)`／`fusion(1)`／`jazz(1)`。releases **1 筆**：355e4f0f（1984 JP 12\" Vinyl 6 軌，Domo 28MX 2504——原壓）。Discogs：`catno=28MX 2504` 一次命中（3 筆），先讀 `type` 取 **master 437373**；`versions` 4 版；原壓整筆打 `releases/3525642`；字標打 `labels/28290`。⚠ slice 的 `why` 逐字 `rg-tag`（照簡報第一節 (2) 本線沒有證據力，本卡曲風依據全部自建）。",
+    "rgMbid": "00b8a822-3da0-430c-8608-9377752cd434",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/00b8a822-3da0-430c-8608-9377752cd434/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=4）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "渡辺香津美 的字標那年只替別人出了這一張 LP。字標名叫 DOMO，1982 年隨他改投ポリドール 而誕生；1984 年 DOMO 給了本盤 28MX 2504 這個號，他自己在盤上掛製作。六軌全是新曲，錄音分成 1983 年 10 月與 1984 年 1 月兩段，兩首十三分鐘的長曲分踞 A、B 兩面。井上敬三 的樂器是中音薩克斯風與中音單簧管，身邊湊了一組單簧管聲部。盤名取自 William S. Clark 1877 年離開札幌農學校時，對學生喊的那句話。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3525642-Keizo-Inoue-Boys-Be-Ambitious",
+     "https://www.discogs.com/release/3612652-Keizo-Inoue-Boys-Be-Ambitious",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E9%A6%99%E6%B4%A5%E7%BE%8E",
+     "https://www.discogs.com/label/28290-DOMO",
+     "https://www.discogs.com/artist/770486-Keizo-Inoue",
+     "https://en.wikipedia.org/wiki/William_S._Clark",
+     "https://www.discogs.com/artist/880109-Tamio-Kawabata",
+     "https://www.discogs.com/master/437373-Keizo-Inoue-Boys-Be-Ambitious",
+     "https://musicbrainz.org/release-group/00b8a822-3da0-430c-8608-9377752cd434"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "高中正義",
+   "album": "夏・全・開",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b2c1852f-c032-41ff-a992-6e91b3a7618a（slice 給的 rgMbid，未改釘）。RG：title「夏・全・開」、artist-credit `Masayoshi Takanaka`（facf743e Person、country `JP`、disambiguation `guitarist`）、first-release-date 1984-07-10、Album、secondary-types 空、tags 見 `why`。releases **5 筆**：**4ce5b255（1984-07-10 JP 12\" Vinyl 10 軌，Kitty Records 28MS 0060——原壓）**、082904ab（1990-07-25 KTCR-1023）、5437841f（1995-05-25 KTCR-1553）、af9c9e06（2013-06-26 Universal UPCY-6723）、6bdbd60d（Pseudo-Release，羅馬字題，不計）。Discogs：`catno=28MS 0060` 一次命中（3 筆），先讀 `type` 取 **master 602773**；`versions` 逐筆 9 版；原壓整筆與逐軌 credits 打 `releases/4957658`；字標打 `labels/19271`。",
+    "rgMbid": "b2c1852f-c032-41ff-a992-6e91b3a7618a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b2c1852f-c032-41ff-a992-6e91b3a7618a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 557,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=557）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張只有一首由真人樂隊打，其餘幾乎全靠程式。〈Cuban Heels〉就是那一首：salsa 樂團 Orquesta Del Sol 裡有 高中正義 伴奏團的 森村献，編曲也歸他。1984 年 7 月 10 日出貨，號碼寫 28MS 0060，延續前作的程式化錄音。高中正義 為此買了 MIDI 化以前的 Oberheim 合成器、鼓機與音序器；他的 Kitty 時期也到這張為止。〈Summertime Blues〉與 Eddie Cochran 的名曲同名，作曲卻是他自己。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4957658-Masayoshi-Takanaka-%E5%A4%8F%E5%85%A8%E9%96%8B",
+     "https://ja.wikipedia.org/wiki/%E5%A4%8F%E3%83%BB%E5%85%A8%E3%83%BB%E9%96%8B",
+     "https://www.universal-music.co.jp/takanaka-masayoshi/products/upjy-9539/",
+     "https://www.discogs.com/master/602773-Masayoshi-Takanaka-%E5%A4%8F%E5%85%A8%E9%96%8B",
+     "https://musicbrainz.org/release-group/b2c1852f-c032-41ff-a992-6e91b3a7618a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/69/1a/eb/691aeb9f-8c72-bef9-294d-3eab7812c17c/mzaf_659139223753258308.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443279880",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "カリオカ",
+   "album": "Pale Moon",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 99112f2e-2048-4188-9d0f-6b262c87ce34（slice 給的 rgMbid，未改釘）。RG：title「Pale Moon」、artist-credit `カリオカ`（18c3632b Group、country `JP`、sort-name `CARIOCA`、disambiguation `Japanese fusion band`）、first-release-date 1984、Album、secondary-types 空、tags 逐字 `easy listening(1)`／`electronic(1)`／`jazz(1)`／`new age(1)`（count 全 1，第 1850-B 條只當線索）。releases **1 筆**：af5d2043（1984 JP Vinyl 8 軌，Kitty Records 25MS 0061——原壓）。Discogs：`catno=25MS 0061` 一次命中（3 筆），先讀 `type` 取 **master 1503308**；`versions` 3 版；市售打 `releases/10530976`（`extraartists` 0），編制與作曲打同號 Promo `releases/13230658`。",
+    "rgMbid": "99112f2e-2048-4188-9d0f-6b262c87ce34",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/99112f2e-2048-4188-9d0f-6b262c87ce34/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=5）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封套照片是 加納典明 拍的，同一個企劃還出了影像版。加納典明 1942 年生於名古屋，影像版也與他合作，做成影碟與錄影帶兩種；美術指導則是 井上嗣也。1984 年 9 月 1 日進店，Kitty 的貨號 25MS 0061，收八首器樂曲。團員新曲佔七軌，佐藤正美 四首、乾裕樹 三首；再發時幾首加了日文副題：〈Niño〉「子供の頃」、〈Ito〉「絃」、〈Chuva〉「雨」。同一組四人前後連錄三張，這是中間那張，要到 2001 年才第一次出 CD。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/13230658-Carioca-Pale-Moon",
+     "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AA%E3%82%AA%E3%82%AB_(%E3%83%95%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://www.discogs.com/artist/2251969-Tenmei-Kanoh",
+     "https://www.discogs.com/release/27396462-Carioca-Pale-Moon",
+     "https://musicbrainz.org/work/fcf1bf3c-5655-3c49-bd6c-e6bf590b1f43",
+     "https://www.discogs.com/artist/621285-Yukio-Eto",
+     "https://www.discogs.com/master/1503308-Carioca-Pale-Moon",
+     "https://musicbrainz.org/release-group/99112f2e-2048-4188-9d0f-6b262c87ce34"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Native Son",
+   "album": "Gumbo",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 75b70ada-1d56-467e-b40a-72bd0e2aec5d（slice 給的 rgMbid，未改釘）。RG：title「Gumbo」、artist-credit `NATIVE SON`（0d65bff6 Group、**country `null`**、sort-name `NATIVE SON`、disambiguation `japanese jazz fusion band`）、first-release-date 1984-11、Album、secondary-types 空、tags `jazz(1)`。releases **1 筆**：f0fb94ef（1984-11 JP CD 6 軌，Polydor 3113-35 (35PO)）——**原壓 LP `28MX 2505` 未建**。Discogs：`q=Native Son Gumbo`（9 筆）先讀 `type` 取 **master 1230197**；`versions` 6 版；原壓打 `releases/4015215`，逐軌作曲打 `releases/10881059`（1984 CD）、`releases/23702207`（2017）與 `releases/32173650`（1994）；字標打 `labels/1610`。",
+    "rgMbid": "75b70ada-1d56-467e-b40a-72bd0e2aec5d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/75b70ada-1d56-467e-b40a-72bd0e2aec5d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 41,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=41）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十四年前的舊曲，作者重錄成近十分鐘的 fusion。本田竹広 早年的兩首爵士曲在這裡換上 fusion 的編制：〈Lazy Dream〉初錄於他 1970 年的專輯，這回長 9 分 50 秒。1984 年 9 月 25 日歸 Polydor 發行，列為 28MX 2505；另一首〈Calypso Street〉初錄於 1977 年。節奏組換成兩位旅日美國樂手，貝斯 Gregg Lee、鼓 Cecil Monroe，開場的〈Sly Fox〉就出自 Gregg Lee。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4015215-Native-Son-Gumbo",
+     "https://www.discogs.com/artist/488375-Gregg-Lee",
+     "https://www.discogs.com/artist/314334-Cecil-Monroe",
+     "https://www.discogs.com/release/10881059-Native-Son-Gumbo",
+     "https://www.universal-music.co.jp/p/UPCY-9696/",
+     "https://musicbrainz.org/recording/07aec97f-3d1d-4268-9e49-61cf6c4cc511",
+     "https://musicbrainz.org/recording/e088ddd0-4385-42dc-bb27-3ce39dcfcc44",
+     "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%83%BB%E3%82%B5%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://www.discogs.com/master/1230197-Native-Son-Gumbo",
+     "https://musicbrainz.org/release-group/75b70ada-1d56-467e-b40a-72bd0e2aec5d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Casiopea",
+   "album": "Casiopea Live",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bc96c895-0693-3399-a496-7bfa44275088（slice 給的 rgMbid，未改釘）。RG：title「Casiopea Live」、artist-credit `Casiopea`（b2853652 Group、country `JP`、disambiguation `Japanese jazz fusion band`）、first-release-date 1985-12-21、Album、**secondary-types 逐字 `[\"Live\"]`**、tags `jazz fusion(2)`。releases **3 筆**：1c3a7bcd（無日期 AF Digital Media 9 軌，title `CASIOPEA LIVE`、無廠牌）、**e290f7be（1985-12-21 JP CD 9 軌，ALFA 32XA-48——原壓）**、8eb4c457（1994-08-31 JP ALCA-9014）。Discogs：`q=Casiopea Live&type=master`（22 筆，⚠ 混著《Thunder Live》《Perfect Live II》《World Live '88》與本場公演的 LD master 2885446，逐筆讀 `title`＋`format` 排除）取 **master 490671**；`versions` 7 版；原壓打 `releases/4023306`，再發打 `releases/5039920`（1992）、`releases/4023310`（2002 DSD）、`releases/28720114`（2002 紙套）——四版 `notes` 都沒寫場館；場館與日期打影像版 `masters/2885446` 與 `releases/16206348`（LD）；來源盤曲目打 `masters/221546`（Down Upbeat）、`masters/462281`（Jive Jive）、`masters/820769`（Photographs）、`masters/461805`（4×4）。",
+    "rgMbid": "bc96c895-0693-3399-a496-7bfa44275088",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bc96c895-0693-3399-a496-7bfa44275088/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9424,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 4（listeners=9424）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "新國技館落成不到四個月，他們就在那裡錄下一整場。4 月 27 日那一場辦在東京的兩國國技館，這座新館 1 月 9 日才剛啟用。演出先拍成影像，9 月出雷射影碟、10 月出錄影帶，音源到 1985 年 12 月 21 日只出 CD，號碼 32XA-48，九軌的作曲全歸 野呂一生。九首裡八首是舊曲，唯有〈Marine Blue〉是先上台、後進錄音室，錄音室版 9 月才初次發表。影像版多出鼓與貝斯兩段獨奏，CD 拿掉後剩 51 分 26 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4023306-Casiopea-Casiopea-Live",
+     "https://ja.wikipedia.org/wiki/CASIOPEA_LIVE",
+     "https://en.wikipedia.org/wiki/Ry%C5%8Dgoku_Kokugikan",
+     "https://www.discogs.com/release/16206348-Casiopea-Casiopea-Live",
+     "https://www.discogs.com/master/490671-Casiopea-Casiopea-Live",
+     "https://musicbrainz.org/release-group/bc96c895-0693-3399-a496-7bfa44275088"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/4b/45/c94b4534-4f90-a2c2-a312-24fc8fb13550/mzaf_17064230244862949097.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1535035229",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Casiopea",
+   "album": "Halle",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 175f1f25-e50e-3834-a667-f550cc1a1ee9（slice 給的 rgMbid，未改釘）。RG：title「Halle」、artist-credit `Casiopea`（b2853652 Group、country `JP`）、first-release-date 1985-09-10、Album、secondary-types 空、tags 見 `why`。releases **6 筆**：b695676a（無日期 XW Digital Media 11 軌，Sony Music Direct）、7044e062（「1985」XW Digital Media 11 軌，無廠牌——⚠ `titleCheck` 把它當最早 release，見 `risk`）、a8e3a231（1985-09-10 JP CD，ALFA 32XA-38）、**ea85e36c（1985-09-10 JP 12\" Vinyl 10 軌，ALFA ALR-28071——原壓）**、d45e211c（2002-03-13 JP CD，Village Records VRCL 2233）、be349359（無日期無國別 Official CD 11 軌，無廠牌）。Discogs：`catno=ALR-28071` 一次命中（5 筆），先讀 `type` 取 **master 375876**；`versions` 逐筆 17 版；原壓打 `releases/3103529` 與 `releases/16181907`（兩版 credits 相同），CD 打 `releases/6434418`（解說錄音期間、第 6 軌作曲欄空白），另核 `releases/14082418`（2002）與 `releases/31882108`（1992）兩版第 6 軌作曲欄同樣空白。",
+    "rgMbid": "175f1f25-e50e-3834-a667-f550cc1a1ee9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/175f1f25-e50e-3834-a667-f550cc1a1ee9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6477,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 4（listeners=6477）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "初版黑膠附一副要自己剪的撲克牌，鬼牌是四個團員。那副牌印在兩頁紙上、可以剪下，每張是他們十三張專輯之一的封面，花色換成樂器，品名叫「カシオペア特製ゲーム・カード」。1985 年 9 月 10 日讓 LP 與 CD 同天上市，黑膠十軌編為 ALR-28071。〈Marine Blue〉的錄音室版誕生前，4 月 27 日國技館那一場已演過它，那份現場錄音收進 12 月的實況盤。CD 多出的〈Matsuri-Bayashi〉出自 野呂一生；這張在日本拿到金唱片。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6434418-Casiopea-Halle",
+     "https://www.discogs.com/release/3103529-Casiopea-Halle",
+     "https://ja.wikipedia.org/wiki/HALLE",
+     "https://ja.wikipedia.org/wiki/CASIOPEA_LIVE",
+     "https://www.discogs.com/artist/2254115-Koichi-Inakoshi",
+     "https://www.discogs.com/master/375876-Casiopea-Halle",
+     "https://musicbrainz.org/release-group/175f1f25-e50e-3834-a667-f550cc1a1ee9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/08/f8/3d08f8f2-dac9-224c-8dac-1fd8ee11b358/mzaf_17727948872154079887.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1535034982",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

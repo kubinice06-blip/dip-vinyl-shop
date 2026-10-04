@@ -1,0 +1,1514 @@
+{
+ "schemaVersion": 1,
+ "batch": "c192-20261004",
+ "albums": [
+  {
+   "artist": "板橋文夫",
+   "album": "Nature",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2e161629-7d9f-493f-985e-f7a96143c5ed（slice 無 rgMbid；`release-group?query=releasegroup:\"Nature\" AND artist:\"Itabashi\"` 回的唯一一筆，本層回查後釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Nature」、first-release-date 2010-01-20、primary-type Album、secondary-types 空、artist-credit 單一方 `Fumio Itabashi`、tags 與 genres 皆空——**曲風依據由本層自建**。`release?release-group=<id>&inc=media+labels` 回 2 筆：2010-01-20 JP Official CD 5 軌 `BETTER DAYS COCB-53625`／`Columbia Music Entertainment COCB-53625`（e5cdf72c）、無日期無國別的 Pseudo-Release 5 軌（3258c401）——**1979 年的 LP 原壓 MB 沒有建**。Discogs：`q=Fumio Itabashi Nature` 回 master 700427，讀 `type` 後走 `/masters/700427/versions`（4 版），原壓 credits 打 `releases/4472899`，廠牌打 `labels/73854`。",
+    "rgMbid": "2e161629-7d9f-493f-985e-f7a96143c5ed",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2e161629-7d9f-493f-985e-f7a96143c5ed/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 689,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=689）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A 面三人撐場，翻到 B 面薩克斯風與鐵琴才進來。這個分法出自 2010 年初出 CD 的逐軌標示：高音薩克斯風 大友義雄、鐵琴 初山博，連同另一位貝斯手與另一位鼓手，只掛 B 面兩軌。板橋文夫 1979 年 3 月於コロムビア 自家的第一スタジオ 花三天錄成，五首皆為自作，B 面〈Macumba〉長 13 分 53 秒。Better Days 是コロムビア 1977 年設的子字標，本業前衛流行。2018 年，Mule Musiq 獲准在歐盟壓了限量 1000 張。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4472899",
+     "https://www.discogs.com/release/5810379",
+     "https://www.discogs.com/label/73854",
+     "https://www.discogs.com/release/11756782",
+     "https://www.discogs.com/release/36852688",
+     "https://www.discogs.com/artist/933948",
+     "https://www.discogs.com/artist/2048982",
+     "https://www.discogs.com/master/700427",
+     "https://music.apple.com/jp/album/1523585334",
+     "https://musicbrainz.org/release-group/2e161629-7d9f-493f-985e-f7a96143c5ed"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/f6/bb/b7/f6bbb712-01af-f7d6-da41-55fe31478169/mzaf_7963899838224642514.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1523585334",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "渡辺貞夫",
+   "album": "Bossa Nova Concert",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "（§1 人工身分，本欄刻意不放任何 MBID；主線第 2008-B 條。）MB 查無 1967 年 13 軌原盤：藝人實體 `渡辺貞夫`（Person、JP）名下 88 個 RG，同名的只有一個 1989 年 Denon CD `DC-8556`（18 軌、secondary-type `Compilation`）——**那是同場另一個選曲的合輯 CD，不是本盤**；1967 年的 RG 有《Jazz & Bossa》《Bossa Best Collection》《Iberian Waltz》等別張；`Sadao Watanabe Quintet` 實體 4 個 RG 裡的《Bossa Nova '67》是 Victor `SJV-274` 錄音室盤（Discogs master 797729），也不是本盤。原壓與三個再發目錄號 count=0（`JAZZ-9` 回的 2 筆是 Madness 與另一張合輯，不相干）。Discogs：master 949793 讀 `type` 後走 `/masters/949793/versions`（7 版），原壓 credits 打 `releases/14873328`。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Sadao Watanabe&limit=5 → score 100「渡辺貞夫」378278bf-9cdd-4b4a-b319-38eddab9f1b1（Person、JP，alias Sadao Watanabe）；score 99「Sadao Watanabe Quintet」233f37a1-e9e2-4327-8625-7c5a6d9d9db6（Group）",
+      "release-group?artist=378278bf-9cdd-4b4a-b319-38eddab9f1b1&limit=100&offset=0 → release-group-count=88；同名只有 c428c830「Bossa Nova Concert」first-release-date 1989、secondary-types [Compilation]；1967 年 RG 是 Jazz & Bossa、Bossa Best Collection、Iberian Waltz、Charlie Mariano & Sadao Watanabe、My Romance——無 1967 年 13 軌實況原盤",
+      "release?release-group=c428c830-d5ff-3f5e-b7b2-c1d8d9940910&inc=media+labels → release-count=1：e944ee13 1989 JP Official `DENON DC-8556` CD 18 軌——只有 1989 合輯 CD，1967 年 Takt JAZZ-9 LP 與 2000／2018 的 13 軌 CD 都沒有建",
+      "release-group?artist=233f37a1-e9e2-4327-8625-7c5a6d9d9db6&limit=100 → 4 筆，其中《Bossa Nova '67》4fb677bc（2007、12 軌）是 Victor SJV-274 錄音室盤（Discogs master 797729）——第 122 條「回了不相干的東西」形狀，已排除",
+      "release?query=catno:\"JAZZ-9\" → count=2（Madness〈(Waiting for) The Ghost-Train〉、Various《Greatest Jazz Recordings of All Time》，皆不相干）；catno:\"YS-7045-CT\" → 0；catno:\"COCB-31017\" → 0；catno:\"COCB-54254\" → 0（對照組：catno:\"TOT-9\" 回 2 筆、catno:\"COCB-53625\" 回 1 筆，證明欄位有效）"
+     ],
+     "checkedAt": "2026-09-28T05:10:00Z",
+     "conclusion": "MB 唯一同名 RG c428c830 只有一筆 1989 年 18 軌 Compilation CD（Denon DC-8556），不能代表 1967 年 Takt JAZZ-9 的 13 軌實況原盤（主線第 2008-B 條）；渡辺貞夫 名下 88 個 RG 與 Quintet 實體 4 個 RG 裡都沒有 1967 原盤，原壓與三個 13 軌再發目錄號也全部查無，並以已知存在的目錄號做過欄位對照。全部 HTTP 200（503 已退避重試），browse 走 limit=100 分頁端點，四種假形狀都已排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/14873328",
+     "https://www.discogs.com/master/949793",
+     "https://music.apple.com/jp/album/1868591470"
+    ],
+    "manualRuling": "主線第 2008-B 條：MB RG c428c830 只有 1989 年 18 軌 Compilation CD，不代表 1967 年原盤，改走 §1 人工身分（推翻 c-192 a 第 7254 條的釘選）；舉證依 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉逐條填（c-192 a 策展層 2026-09-28）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ff/a2/85/ffa285de-80e8-066c-1dda-6ab6c039a6c2/COKM-46212.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1868591470",
+    "note": "試聽探測釘定的 collectionId 1868591470（jp）：渡辺貞夫 — Bossa Nova Concert (Live, 1967)"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 23,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=23）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整晚多是巴西曲，佔時最久的卻是 007 電影主題曲。慶応義塾大学軽音楽鑑賞会 主辦，1967 年 7 月 4 日夜的東京厚生年金会館 就是現場，唱片歸入 Takt Jazz Series。十三軌以 Jobim 與 Edu Lobo 為主，那一軌是〈From Russia With Love〉，長 6 分 35 秒；B 面還有電影主題曲〈Emily〉。鋼琴 菊地雅章、吉他 中牟礼貞則、鼓 富樫雅彦 同台。封底解說出自 中村とうよう，他日後當上《ミュージック・マガジン》社長。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14873328",
+     "https://columbia.jp/artist-info/watanabesadao/discography/COCB-54254.html",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB",
+     "https://www.discogs.com/artist/879642",
+     "https://columbia.jp/artist-info/watanabesadao/discography/COCB-54258.html",
+     "https://www.discogs.com/release/4378242",
+     "https://www.discogs.com/release/8323205",
+     "https://www.discogs.com/master/949793",
+     "https://music.apple.com/jp/album/1868591470"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/19/6e/4a196e33-627d-42a2-97e6-1ea2b22a5364/mzaf_3642424194144377925.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1868591470",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ronnie Mathews",
+   "album": "Trip to the Orient",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "（§1 人工身分，本欄刻意不放任何 MBID。）MB 查無本盤：藝人實體 `Ronnie Mathews`（Person、US）名下 6 個 RG（1964《Doin' the Thang!》、1976《Ichi-Ban》、1977《At the Berliner Jazztage》、1979《Roots, Branches & Dances》、1980《Legacy》、2002 合輯），沒有本盤；另一個實體 `Ronnie Mathews & Group` 名下 0 個 RG；盤名查回的唯一一筆是不相干的《Gongs: An Audio-Mystical Trip to the Orient》（1971，Nesta Kerin Crain）——第 122 條「回了不相干的東西」形狀，已排除。Discogs：`q=Ronnie Mathews Trip To The Orient` 回 master 794206，讀 `type` 後走 `/masters/794206/versions`（5 版），原壓 credits 打 `releases/2726939`。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Ronnie Mathews&limit=5 → score 100「Ronnie Mathews」95493156-7000-41b6-bc34-c2d5d5613c56（Person、US，alias Ronnie Matthews）；score 74「Ronnie Mathews & Group」344f35a6-7765-4fd5-a5a6-85a1e5dcb592",
+      "release-group?artist=95493156-7000-41b6-bc34-c2d5d5613c56&limit=100&offset=0 → 6 筆（Doin' the Thang! 1964、Ichi-Ban 1976、At the Berliner Jazztage 1977、Roots, Branches & Dances 1979、Legacy 1980、2002 合輯），無本盤；release-group?artist=344f35a6-7765-4fd5-a5a6-85a1e5dcb592 → 0 筆",
+      "release-group?query=releasegroup:\"Trip to the Orient\" → count=1，回的是 Nesta Kerin Crain《Gongs: An Audio-Mystical Trip to the Orient》1971（不相干）；release?query=release:\"Trip to the Orient\" AND artist:\"Mathews\" → count=0",
+      "release?query=catno:\"EW-8018\" → count=0（對照組：catno:\"TOT-9\" 回《Hanky Panky》等 2 筆，證明欄位有效）"
+     ],
+     "checkedAt": "2026-09-28T03:55:00Z",
+     "conclusion": "MB 有 Ronnie Mathews 的藝人實體，但名下 6 個 RG 沒有這張 1975 年 East Wind 盤；盤名查回的唯一一筆是 1971 年別人的鑼音盤（第 122 條形狀，已排除），盤名＋藝人與原壓目錄號兩路 count=0，並以已知存在的目錄號做過欄位對照。全部 HTTP 200（503 已退避重試），browse 走 limit=100 分頁端點，四種假形狀都已排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/2726939",
+     "https://www.discogs.com/master/794206",
+     "https://music.apple.com/jp/album/trip-to-the-orient/1443864171"
+    ],
+    "manualRuling": "店主 2026-09-28「全開」核可補遺線 hoyi 第 1 堆（§1 人工身分）；依主線第 2007-B 條、CURATION-BRIEF-hoyi.md 第〇節與 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉逐條填（c-192 a 策展層 2026-09-28）。外國藝人的身分照第 4 堆規則（日本原盤即可，第 4106 條四項門檻不適用）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/36/82/02/368202fa-51a6-abc2-37c6-600546ad51c2/00028945030623.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443864171",
+    "note": "試聽探測釘定的 collectionId 1443864171（jp）：ロニー・マシューズ — Trip To the Orient"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 41,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=41）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一位紐約鋼琴手隔了十二年才再掛名錄音，出版方遠在東京。Ronnie Mathews 1975 年 7 月分兩天在 Vanguard Studio 錄成，East Wind 同一年推出；廠牌點出他出身 Jazz Messengers。開場〈Ichiban〉寫日本印象，前一版收進 1963 年 12 月 17 日替 Prestige 錄的首張領銜盤，這次改用快板。貝斯 鈴木良雄 帶來他的〈K's Waltz〉，Louis Hayes 打鼓；〈Linda〉由 Mathews 獨奏。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2726939",
+     "https://www.universal-music.co.jp/p/UCCJ-9148/",
+     "https://www.discogs.com/master/408240",
+     "https://en.wikipedia.org/wiki/Ronnie_Mathews",
+     "https://www.discogs.com/artist/257394",
+     "https://www.discogs.com/release/2752775",
+     "https://www.arban-mag.com/article/9094/4",
+     "https://www.discogs.com/master/794206",
+     "https://music.apple.com/jp/album/trip-to-the-orient/1443864171"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/e1/09/ed/e109ed68-fead-f449-1f11-b13a3d3ad918/mzaf_3147054930459421511.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443864171",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hank Jones",
+   "album": "Hanky Panky",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6a43dfac-0fe5-43a8-a650-475e53b6c6a1（`enum/jp-2.md`「MB 有 RG 但沒掛在本廠牌實體」那一格點名的；`release-group?query=releasegroup:\"Hanky Panky\" AND artist:\"Hank Jones\"` 回的唯一一筆）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Hanky Panky」、first-release-date 2005-09-13、primary-type Album、secondary-types 空、artist-credit 單一方 `Hank Jones`（80d610fe）、tags 逐字 `jazz(1)`（count 1，照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels` 回 1 筆：2005-09-13 US Official CD 9 軌 `Test of Time Records TOT-9`（dbb92265）——**1975 年 East Wind 原壓與 1979 年 Inner City 美國版 MB 都沒有建**。Discogs：`q=Hank Jones Hanky Panky` 回 master 794209，讀 `type` 後走 `/masters/794209/versions`（9 版），原壓 credits 打 `releases/6718173`。",
+    "rgMbid": "6a43dfac-0fe5-43a8-a650-475e53b6c6a1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6a43dfac-0fe5-43a8-a650-475e53b6c6a1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6064,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=6064）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "做了十六年電視台駐台鋼琴手，差事結束那年他錄了這張。Hank Jones 在 CBS 從 1959 待到 1975 年，少有個人錄音。本盤錄在 1975 年 7 月，搭檔 Ron Carter 與 Grady Tate，同名曲出自 Gary McFarland。兩首出自底特律出身的 Sara Cassey（1929–1966）：以寫譜為業、始終待在台下，替 Riverside 上班。封套由 石岡瑛子 與 成瀬始子 設計；前者 1938 年東京生，橫跨舞台、電影、廣告與平面。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6718173",
+     "https://www.discogs.com/artist/2364688",
+     "https://www.universal-music.co.jp/p/UCCJ-9151/",
+     "https://en.wikipedia.org/wiki/Hank_Jones",
+     "https://www.discogs.com/artist/45102",
+     "https://www.discogs.com/artist/347689",
+     "https://www.discogs.com/release/3220131",
+     "https://www.discogs.com/master/794209",
+     "https://musicbrainz.org/release-group/6a43dfac-0fe5-43a8-a650-475e53b6c6a1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/6a/13/c9/6a13c9ed-48c4-2a38-efcd-feb6de067d66/mzaf_40938146491704685.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443917150",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Great Jazz Trio",
+   "album": "Milestones",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "（§1 人工身分，本欄刻意不放任何 MBID。）MB 查無本盤：組合實體 `The Great Jazz Trio`（Group、US）名下 34 個 RG，有《At the Village Vanguard》1978、《At the Village Vanguard, Volume 2》2005、《At the Village Vanguard Again》2005、《Kindness, Joy, Love & Happiness》1978 等，**沒有《Milestones》**；鋼琴手 `Hank Jones`（Person、US）名下 106 個 RG（分兩頁 browse）也沒有。盤名＋掛名兩路、原壓與再發目錄號三路全部 count=0。Discogs：`q=Great Jazz Trio Milestones` 回 master 301512，讀 `type` 後走 `/masters/301512/versions`（10 版），原壓 credits 打 `releases/2095296`。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Great Jazz Trio&limit=5 → score 100「The Great Jazz Trio」dd6af85b-f886-43ff-aab0-65a24cff7c14（Group、US）；次名 score 51 是 The Kingston Trio（不相干）",
+      "release-group?artist=dd6af85b-f886-43ff-aab0-65a24cff7c14&limit=100&offset=0 → release-group-count=34，逐筆看過無《Milestones》（有 At the Village Vanguard 1978、Volume 2 2005、Again 2005、Kindness, Joy, Love & Happiness 1978 等）",
+      "release-group?artist=80d610fe-7771-4226-aa9b-950944791698&limit=100&offset=0 與 offset=100 → release-group-count=106（Hank Jones，Person、US），兩頁都無《Milestones》",
+      "release-group?query=releasegroup:\"Milestones\" AND artist:\"Great Jazz Trio\" → count=0；release-group?query=releasegroup:\"Milestones\" AND artist:\"Hank Jones\" → count=0",
+      "release?query=catno:\"EW-8062\" → count=0；catno:\"18PJ-1003\" → count=0；catno:\"IC 6030\" → count=0（對照組：catno:\"TOT-9\" 回 2 筆、catno:\"COCB-53625\" 回 1 筆，證明欄位有效）"
+     ],
+     "checkedAt": "2026-09-28T04:40:00Z",
+     "conclusion": "MB 有 The Great Jazz Trio 與 Hank Jones 兩個實體，名下合計 140 個 RG 都沒有這張 1978 年 East Wind 錄音室盤；盤名＋掛名兩路與原壓、日本再發、美國版三個目錄號全部 count=0，並以已知存在的目錄號做過欄位對照。全部 HTTP 200（503 已退避重試），browse 走 limit=100 分頁、106 筆那一個跑滿兩頁，四種假形狀都已排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/2095296",
+     "https://www.discogs.com/master/301512",
+     "https://music.apple.com/jp/album/milestones/1443514283"
+    ],
+    "manualRuling": "店主 2026-09-28「全開」核可補遺線 hoyi 第 1 堆（§1 人工身分）；依主線第 2007-B 條、CURATION-BRIEF-hoyi.md 第〇節與 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉逐條填（c-192 a 策展層 2026-09-28）。外國藝人的身分照第 4 堆規則（日本原盤即可，第 4106 條四項門檻不適用）。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/a2/14/1b/a2141bc5-9152-2355-7634-4c0caf457fa7/00044007965429.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443514283",
+    "note": "試聽探測釘定的 collectionId 1443514283（jp）：ザ・グレイト・ジャズ・トリオ — Milestones"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 31,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=31）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "貝斯手帶來的那首，十三年前他和鼓手替 Miles 錄過。〈Eighty-One〉由 Ron Carter 帶來，初錄於 Miles Davis 1965 年的《E.S.P.》，當時的鼓是 Anthony Williams。這一回 1978 年 4 月 5 日僅用一天錄完，四首爵士名曲之外，三位團員各帶一首。盤名也借自 Miles 的曲題。美國的 Inner City 1979 年才發，公司欄寫明向 East Wind 取得授權。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2095296",
+     "https://www.discogs.com/master/62363",
+     "https://www.universal-music.co.jp/the-great-jazz-trio/products/uccj-9189/",
+     "https://www.discogs.com/artist/1825852",
+     "https://www.discogs.com/release/2465221",
+     "https://www.discogs.com/master/301512",
+     "https://www.discogs.com/release/36070918",
+     "https://music.apple.com/jp/album/milestones/1443514283"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/c7/f7/ed/c7f7ed8f-8426-dd52-0621-47852b7aca90/mzaf_85863364195091694.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443514283",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Great Jazz Trio",
+   "album": "At the Village Vanguard Vol. 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5bc7ee05-ada4-43df-a81d-b77653a9f72f（`release-group?artist=dd6af85b-f886-43ff-aab0-65a24cff7c14&limit=100` 逐筆看過的 34 個 RG 裡唯一的 Volume 2）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「At the Village Vanguard, Volume 2」、first-release-date 2005-06-21、primary-type Album、secondary-types 逐字 `Live`、artist-credit 單一方 `The Great Jazz Trio`（dd6af85b）、tags 逐字 `jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels` 回 1 筆：2005-06-21 US Official CD 4 軌 `Test of Time Records TOT-6`（557500c9）——**1977 年 East Wind 原壓與 1978 年法國版 MB 都沒有建**。Vol.1 在 MB 是另一個 RG（83090b4d，1978、Live），池中 seed 已收。Discogs：master 794173 讀 `type` 後走 `/masters/794173/versions`（12 版），原壓 credits 打 `releases/7155044`。",
+    "rgMbid": "5bc7ee05-ada4-43df-a81d-b77653a9f72f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/00/db/6c/00db6c14-112b-46a9-2dc0-a723aec0593b/00044007945421.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1468068409",
+    "note": "試聽探測釘定的 collectionId 1468068409（jp）：ザ・グレイト・ジャズ・トリオ — At The Village Vanguard Vol.2"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 35,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=35）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "掛協同製作的，除了錄音師，還有當晚坐在琴前的人。協同製作欄並列 Hank Jones 本人與錄音師 David Baker。Village Vanguard 的錄音橫跨 1977 年 2 月 19、20 日。曲目有 Parker〈Confirmation〉與〈Nardis〉，收尾〈Lawra〉出自鼓手 Tony Williams；同檔期第一集收另外四首。〈Wind Flower〉Hank Jones 兩年前在自己的領銜盤錄過 5 分 28 秒，這晚拉到 8 分 16 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7155044",
+     "https://www.discogs.com/release/3220131",
+     "https://www.universal-music.co.jp/the-great-jazz-trio/products/uccu-6342/",
+     "https://www.discogs.com/release/6718173",
+     "https://www.discogs.com/artist/1588219",
+     "https://www.discogs.com/master/794173",
+     "https://musicbrainz.org/release-group/5bc7ee05-ada4-43df-a81d-b77653a9f72f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/85/3d/e5/853de592-6d5c-7dc2-f894-ac12d899b8c8/mzaf_14676426610092819832.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1468068409",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "大村憲司",
+   "album": "First Step",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "（§1 人工身分，本欄刻意不放任何 MBID。）MB 查無本盤：藝人實體 `大村憲司`（Person、JP，alias Kenji Omura／Kenji Ohmura）名下 7 個 RG（1977《Guitar Work Shop》、1978《Guitar Work Shop Vol. 2 Live》、1978《Concierto De Aranjuez》、1981《春がいっぱい》、1983《外人天国》、1987《Kenji Shock》、日期空白的《Spring is Nearly Here》），**沒有《First Step》**。盤名＋掛名兩路、原壓與 Express 再發兩個目錄號全部 count=0。Discogs：`q=Kenji Omura First Step` 回 master 545684，讀 `type` 後走 `/masters/545684/versions`（8 版），原壓 credits 打 `releases/4482764`。",
+    "identitySource": "manual",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Kenji Omura&limit=5 → score 100「大村憲司」b0d7d374-a9a6-4350-8f3c-d61c258e2035（Person、JP，alias Kenji Omura|Kenji Ohmura）；次名 score 53 是 Kenji Fujiwara（不相干）",
+      "release-group?artist=b0d7d374-a9a6-4350-8f3c-d61c258e2035&limit=100&offset=0 → release-group-count=7（Guitar Work Shop 1977、Guitar Work Shop Vol. 2 Live 1978、Concierto De Aranjuez 1978、春がいっぱい 1981、外人天国 1983、Kenji Shock 1987、Spring is Nearly Here），無本盤",
+      "release-group?query=releasegroup:\"First Step\" AND artist:\"Omura\" → count=0；release-group?query=releasegroup:\"First Step\" AND artist:\"大村憲司\" → count=0",
+      "release?query=catno:\"LF-91042\" → count=0；catno:\"ETJ-85019\" → count=0（對照組：catno:\"TOT-9\" 回 2 筆、catno:\"COCB-53625\" 回 1 筆，證明欄位有效）"
+     ],
+     "checkedAt": "2026-09-28T04:42:00Z",
+     "conclusion": "MB 有 大村憲司 的藝人實體，但名下 7 個 RG 沒有這張 1978 年東芝 EMI 首作；盤名以羅馬字與漢字掛名兩路查、原壓與 1979 年 Express 再發兩個目錄號查，全部 count=0，並以已知存在的目錄號做過欄位對照。全部 HTTP 200（503 已退避重試），browse 走 limit=100 分頁端點，四種假形狀都已排除。",
+     "checkedFalseShapes": [
+      "503",
+      "403",
+      "browse 25 筆上限",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/4482764",
+     "https://www.discogs.com/master/545684",
+     "https://music.apple.com/jp/album/first-step/720313988"
+    ],
+    "manualRuling": "店主 2026-09-28「全開」核可補遺線 hoyi 第 1 堆（§1 人工身分）；依主線第 2007-B 條、CURATION-BRIEF-hoyi.md 第〇節與 CURATION-BRIEF-c67plus.md 附錄〈§1 人工身分路線的舉證要件〉逐條填（c-192 a 策展層 2026-09-28）。廠牌由 slice 的 Alfa? 查實為東芝 EMI（Toshiba Records），屬四大廠。",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/54/5c/50/545c5091-d9c2-3b0f-5d42-1d4bf08c450b/00094631320057.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720313988",
+    "note": "試聽探測釘定的 collectionId 720313988（jp）：大村憲司 — First Step"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 73,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=73）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "隔年再版加進一首，打鼓的人裡有原本開場曲的作者。原版五軌，東芝EMI 1978 年 7 月 5 日貼上 Toshiba Records 字標問市；深町純 兼製作、鍵盤與編曲。1979 年改掛 Express 再版，A 面開頭多了 大村憲司 寫的〈Left-Handed Woman〉；鼓由兩人分擔，其一 Martin Willweber 寫了〈Boston Flight〉。原版 A 面節奏組是 坂本龍一、林立夫、浜口茂外也，末軌換 村上秀一、高水健司。錄音兼再混音 河田為雄。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4482764",
+     "https://www.discogs.com/release/2536672",
+     "https://www.discogs.com/release/2527946",
+     "https://www.discogs.com/release/27435771",
+     "https://music.apple.com/jp/album/720313988",
+     "https://www.discogs.com/release/29251180",
+     "https://www.discogs.com/master/545684",
+     "https://music.apple.com/jp/album/first-step/720313988"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8e/a9/38/8ea9387c-b04e-f91e-f948-92b86856c2cd/mzaf_1530535144503795367.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720313988",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "中村照夫",
+   "album": "Rising Sun",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f72e2ebb-7f85-4b02-a5cc-78d52ccf29e1（藝人實體 `中村照夫`（05d7c76c）名下逐筆 browse 找到的那一筆）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Rising Sun」、first-release-date 1976、primary-type Album、secondary-types 空、artist-credit 單一方 `中村照夫`（05d7c76c）、tags 逐字 `electronic(1)`、`jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels` 回 2 筆：1976 US Promotion Vinyl 6 軌 `Polydor PD-1-6097`（245752fb）與 1976 US Official 12\" Vinyl 6 軌 `Polydor PD-1-6097`（81a3ac79）——**日本 Kitty 原壓 MB 沒有建**。Discogs：master 336283 讀 `type` 後走 `/masters/336283/versions`（11 版），原壓 credits 打 `releases/16104365`，美國版授權字樣打 `releases/885139`。",
+    "rgMbid": "f72e2ebb-7f85-4b02-a5cc-78d52ccf29e1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f72e2ebb-7f85-4b02-a5cc-78d52ccf29e1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 20,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=20）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "人在紐約，他搖響的是高尾山的鈴和淺草的土鈴。1976 年 4 月，中村照夫 在 A&R Studio 分三天完成錄音，交 Kitty Records 出片，製作也掛他自己。那一段在 A3〈Morning Mist〉：兩種鈴由他親手搖，另有非洲鈴與印度吟誦鈴，岸田恵士 搖印度牛鈴還出了聲。同年美國 Polydor 也發，說明欄註明替 Kitty Music Corp. 製作；日本版那一軌前面多一段前奏。盤上連器材牌子都印出：Yamaha 鼓組，Korg、Arp 兩種合成器。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/16104365",
+     "https://www.discogs.com/release/885139",
+     "https://www.discogs.com/artist/256167",
+     "https://www.discogs.com/artist/133247",
+     "https://www.discogs.com/master/336283",
+     "https://musicbrainz.org/release-group/f72e2ebb-7f85-4b02-a5cc-78d52ccf29e1"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Great Jazz Trio",
+   "album": "Kindness, Joy, Love & Happiness",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6ccf6329-383a-49e5-ac1b-cb2d9269baae（`enum/jp-2.md`「MB 有 RG 但沒掛在 East Wind 實體」那一格點名的；也在 `release-group?artist=dd6af85b-f886-43ff-aab0-65a24cff7c14&limit=100` 的 34 筆裡）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Kindness, Joy, Love & Happiness」、first-release-date 1978、primary-type Album、secondary-types 空、artist-credit 單一方 `The Great Jazz Trio`（dd6af85b）、tags 空。`release?release-group=<id>&inc=media+labels` 回 1 筆：1978 US Official 12\" Vinyl 7 軌 `Inner City Records IC 6023`（0a358c6f）——**1977 年 East Wind 原壓 MB 沒有建**。Discogs：master 769608 讀 `type` 後走 `/masters/769608/versions`（10 版），原壓 credits 打 `releases/4773501`。",
+    "rgMbid": "6ccf6329-383a-49e5-ac1b-cb2d9269baae",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/53/05/d1/5305d192-74fa-e6c1-456b-975b418d4ee2/00044007965221.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443515718",
+    "note": "試聽探測釘定的 collectionId 1443515718（jp）：ザ・グレイト・ジャズ・トリオ — Kjlh"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 14,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=14）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音師十年前替 Sinatra 的一首歌拿過葛萊美。Lee Herschberg 在第九屆葛萊美（1967 年 3 月 2 日頒發）以 Sinatra〈Strangers in the Night〉拿下最佳工程錄音（非古典類）。1977 年 10 月初的兩天，三人進駐加州 Warner 的錄音棚錄下七軌，East Wind 當年推出。美國版封底說在日本刻片壓片，內圈刻字卻指向美國的 Presswell 與 Masterdisk 兩處。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4773501",
+     "https://en.wikipedia.org/wiki/9th_Annual_Grammy_Awards",
+     "https://www.discogs.com/release/5564437",
+     "https://www.universal-music.co.jp/the-great-jazz-trio/products/uccj-9185/",
+     "https://www.discogs.com/release/10078504",
+     "https://www.discogs.com/artist/546126",
+     "https://www.discogs.com/artist/347240",
+     "https://www.discogs.com/master/769608",
+     "https://musicbrainz.org/release-group/6ccf6329-383a-49e5-ac1b-cb2d9269baae"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/78/f8/f6/78f8f678-7505-2f7f-8b62-4783b8e87f67/mzaf_7197782820667829571.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443515718",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "松本英彦 / The Great Jazz Trio",
+   "album": "The Session / Sleepy Meets the Great Jazz Trio",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d2119a73-2cf2-4956-a9dd-afe544c3a749（**slice 的 `rgMbid` 欄是空的；本層以 `release-group?query=releasegroup:\"The Session\" AND artist:\"Hidehiko Matsumoto\"` 查出 count 1，就是本盤**；依 `CURATION-BRIEF-hoyi.md` 第〇節第 1 堆「MB 有 RG 的照一般路線釘 `rgMbid`」，不走 §1 人工）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「The Session / Sleepy Meets the Great Jazz Trio」、artist-credit 兩方（`Hidehiko Matsumoto`＝實體 `松本英彦` d4027a8f，Person、country `JP`；join 逐字 `, `；`The Great Jazz Trio` dd6af85b，Group、country `US`）、first-release-date 1980、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `jazz(1)`。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：d045dfb0（1980 JP Official 12\" Vinyl 7 軌，NEXT WAVE 25PJ-1004）。Discogs：`q=Hidehiko Matsumoto Session` 取 **master 902635**（先讀 `type`；另回 1964 King《Jazz Inter-session》master 1201589，逐筆讀 `title` 排除）；`/masters/902635/versions` 逐筆跑完 **3 版**；原壓整筆 credits 打 `releases/2240889`、Promo 打 `releases/34168174`、2009 CD 打 `releases/7630260`，字標打 `labels/262306`／`53101`／`213861`，領銜與幕後逐名打 `artists/<id>`（1263586／548364／569993／409230）。",
+    "rgMbid": "d2119a73-2cf2-4956-a9dd-afe544c3a749",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d2119a73-2cf2-4956-a9dd-afe544c3a749/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "坐鼓椅的，是 Miles 隱退那幾年少數仍與他往來的人。Al Foster 為 Miles 打鼓的年份是 1972 到 1985 年，那段隱退則從 1975 年延續到 1981 年。到了 1980 年，Hank Jones 在這團名號下的搭檔已換成 Eddie Gomez 與 Foster。作曲欄七首都掛 松本英彦，副題的 Sleepy 就是他的外號。Next Wave 發行；錄音地紐約，前後兩天：1980 年 6 月 30 日入棚、7 月 1 日續錄。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2240889",
+     "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6",
+     "https://en.wikipedia.org/wiki/Hank_Jones",
+     "https://www.discogs.com/artist/271001",
+     "https://www.discogs.com/artist/548364",
+     "https://www.discogs.com/artist/239637",
+     "https://www.discogs.com/label/262306",
+     "https://www.discogs.com/release/3652426",
+     "https://www.discogs.com/master/902635",
+     "https://musicbrainz.org/release-group/d2119a73-2cf2-4956-a9dd-afe544c3a749"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ottottrio",
+   "album": "Super Guitar Session: Red Live",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 957255a0-3a52-4659-b4ce-2ffa6c6138ab（**slice 的 `rgMbid` 欄是空的；本層以 `release-group?query=artist:\"Ottottrio\"` 查出 count 3：aa946c3e《Triptych》1998、957255a0《Super Guitar Session: Red Live》1988-07-01、2286252e《Super Guitar Session: Hot Live》1988-07-01——`releasegroup:\"Red Live\"` 查詢 count 12 裡也只有 957255a0 是本團**；依 `CURATION-BRIEF-hoyi.md` 第〇節第 1 堆「MB 有 RG 的照一般路線釘 `rgMbid`」）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Super Guitar Session: Red Live」、artist-credit 單一方（`Ottottrio` db57c495，**Group**、country `JP`）、first-release-date 1988-07-01、primary-type Album、**secondary-types 逐字 `[\"Live\"]`**、RG tags 空陣列。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：9745e457（1988-07-01 JP Official CD 6 軌，CBS/Sony 28DH5079）；另以 `release/9745e457-ac0f-4aac-a6e9-46376064be53?inc=recordings+work-rels+work-level-rels` 逐軌讀 work 關係——**六軌零 work**。Discogs：`catno=28DH5079` 取 **master 1565469**；`/masters/1565469/versions` 逐筆跑完 **4 版**；CD 整筆 credits 打 `releases/7847012`、LP 打 `releases/14412490`、Promo 的逐軌編曲打 `releases/16002362`、卡帶打 `releases/12718765`，七位樂手逐名打 `artists/<id>`；曲題反查打 `database/search?track=`，前作打 `releases/9094355`；ja 維基 `野呂一生`／`是方博邦` 以 `index.php?action=raw` 讀。",
+    "rgMbid": "957255a0-3a52-4659-b4ce-2ffa6c6138ab",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/957255a0-3a52-4659-b4ce-2ffa6c6138ab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=8）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場的〈Conga〉，兩年前才在東京音樂祭拿下大賞。它原是 Miami Sound Machine 1985 年的單曲。同一批演出 1988 年 7 月 1 日分由 CBS/Sony 與 Aura 各出一半，這張收六軌，兩邊曲目零重疊。編曲以 野呂一生 的三首最多，是方博邦 兩首，安藤まさひろ 只編〈Eyes of the Dragon〉，那首是他 1986 年個人碟的開場曲。收尾是 1962 年的節奏藍調〈Land of a Thousand Dances〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/9745e457-ac0f-4aac-a6e9-46376064be53",
+     "https://www.discogs.com/release/7847012",
+     "https://www.discogs.com/release/16002362",
+     "https://www.discogs.com/release/9094355",
+     "https://en.wikipedia.org/wiki/Conga_(song)",
+     "https://en.wikipedia.org/wiki/Tokyo_Music_Festival",
+     "https://en.wikipedia.org/wiki/Saving_All_My_Love_for_You",
+     "https://en.wikipedia.org/wiki/Land_of_a_Thousand_Dances",
+     "https://www.discogs.com/label/33078",
+     "https://www.discogs.com/master/1565469",
+     "https://musicbrainz.org/release-group/957255a0-3a52-4659-b4ce-2ffa6c6138ab"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "柳田ヒロ",
+   "album": "Milk Time",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 855248cd-c540-452f-9051-859d037f8675（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Milk Time」、artist-credit 單一方（`柳田ヒロ` 580cccd7，Person、country 逐字 `JP`）、first-release-date 1970、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `jazz(1)`／`rock(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：**c95b6ccd（1970 JP Official 12\" Vinyl 10 軌，LIBERTY LPC-8037）**、ca6ad383（1998-04-25 JP Official CD 10 軌，ALFA／P‐VINE RECORDS PCD-1585）。Discogs：`catno=LPC-8037` 取 **master 550136**（先讀 `type`，master 與 release 分開讀）；`/masters/550136/versions` 逐筆跑完 **4 版**；原壓整筆 credits 打 `releases/4515885`、Promo 打 `releases/8047579`、1998 CD 的時長與 `notes` 打 `releases/1087252`，字標打 `labels/13531`，七位樂手與幕後逐名打 `artists/<id>`（611660／729961／510380／510367／1830667／232502／536448）；ja 維基 `柳田ヒロ`／`MILK TIME` 兩個條目以 `index.php?action=raw` 讀。",
+    "rgMbid": "855248cd-c540-452f-9051-859d037f8675",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/855248cd-c540-452f-9051-859d037f8675/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 86,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=86）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "與盤名同題的曲子，只有二十七秒。與那 27 秒相對，兩首八分多鐘的長曲就佔掉全張一半。1970 年東芝音楽工業 以 Liberty 字標推出這張十軌 LP，企劃出自アルファミュージック，是 柳田ヒロ 個人名義的首作。腰帶印著「ロック、ジャズ、クラシックの結合!!」，他想以搖滾為基礎，把各種音樂收進來。十首曲子他一手寫成，編排與指揮也歸他；同年他與 Hiro Tsunoda 組 Food Brain 替《新宿マッド》錄配樂，貝斯也是 石川恵樹。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4515885",
+     "https://ja.wikipedia.org/wiki/MILK_TIME",
+     "https://ja.wikipedia.org/wiki/%E6%9F%B3%E7%94%B0%E3%83%92%E3%83%AD",
+     "https://www.discogs.com/artist/232502",
+     "https://www.discogs.com/release/1087252",
+     "https://www.discogs.com/release/10139597",
+     "https://www.discogs.com/master/550136",
+     "https://musicbrainz.org/release-group/855248cd-c540-452f-9051-859d037f8675"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e2/98/1d/e2981d5b-10af-d8ae-cae8-6e2fca0be6ec/mzaf_8780132257726270067.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1380883647",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "深町純 & 21st Century Band",
+   "album": "Rokuyu (六喩)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a649f350-545b-4005-aeb1-6452ecd07823（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Rokuyu (六喩)」、artist-credit 單一方（`Jun Fukamachi 21st Century Band` 5c783ebe，**Group**、country 逐字 `JP`）、first-release-date 1975、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `electronic(1)`／`funk(1)`／`jazz(1)`／`jazz rock(1)`／`rock(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **3 筆**：**3faeae25（1975 JP Official 12\" Vinyl 4 軌，EXPRESS ETP-72100）**、3ebcacd9（2010 JP Official CD 4 軌，GT music MHCL 1556）、c7c51fed（2009-09-09 XW Official Digital Media 4 軌，ALFA，title 逐字「六喩」）。Discogs：**master 1149900**（c-184 b 第 5748 條已記，本層重打）；`/masters/1149900/versions` 逐筆跑完 **3 版**；原壓整筆 credits 打 `releases/4686945`、Promo 打 `releases/20885167`、2009 CD 打 `releases/9959032`，樂手與幕後逐名打 `artists/<id>`（529935／520086／143934／552922／119482／1066862／1805714／917169／314328）。",
+    "rgMbid": "a649f350-545b-4005-aeb1-6452ecd07823",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a649f350-545b-4005-aeb1-6452ecd07823/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "B 面只一首長曲，英文題是 Metaphor Six。那首〈六喩〉長 18 分 40 秒；《金剛般若經》結尾，把一切有為法比作夢、幻、泡、影、露、電。1975 年 6 到 8 月間，錄音與重混都在アルファ 自有的 Studio A（港區芝浦），字標是東芝EMI 的 Express。掌鏡封套的是 Magnum 的 Dennis Stock，他 1955 年拍下 James Dean 雨中走過時代廣場。四首皆為 深町純 自寫自編；團員有 村上秀一、小原礼、大村憲司 等五人。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4686945",
+     "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89",
+     "https://ja.wikipedia.org/wiki/%E9%87%91%E5%89%9B%E8%88%AC%E8%8B%A5%E7%B5%8C",
+     "https://en.wikipedia.org/wiki/Dennis_Stock",
+     "https://www.discogs.com/release/9959032",
+     "https://www.discogs.com/master/1149900",
+     "https://musicbrainz.org/release-group/a649f350-545b-4005-aeb1-6452ecd07823"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e6/ff/4c/e6ff4c7c-68e7-970a-ca9e-3009305fb804/mzaf_6860179757402010326.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1542140659",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "佐藤允彦 Featuring Eddie Gomez & Steve Gadd",
+   "album": "As If…",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2500dd61-407c-443b-b530-d472917cbba4（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「As If…」、artist-credit 單一方（`Masahiko Satoh`＝實體 `佐藤允彦` 04bbec22，Person、country 逐字 `JP`）、first-release-date 1985、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `contemporary jazz(1)`／`jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：43d6938d（1985、國別空、status 空，CD 8 軌，DENON C38-7455——MB 把 CD 的製造商記成了廠牌，c-190 a 第 6602 條已記）。Discogs：`catno=YF-7100` 取 **master 672194**；`/masters/672194/versions` 逐筆跑完 **2 版**；LP 整筆 credits 打 `releases/5186977`、CD 的逐軌作曲打 `releases/5437864`，字標打 `labels/108958`；Apple 以 `lookup?id=1709903954&entity=song&country=jp` 核八軌。",
+    "rgMbid": "2500dd61-407c-443b-b530-d472917cbba4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/08/2f/ee/082fee64-e89a-195b-b8e0-c6a851e92799/COKM-44633.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1709903954",
+    "note": "試聽探測釘定的 collectionId 1709903954（us）：Masahiko Satoh, Eddie Gomez & Steve Gadd — As If..."
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "選曲多是 Evans 常彈的，而貝斯手跟過他十一年。1966 到 1977 年，Eddie Gomez 待在 Bill Evans 三重奏。〈Israel〉〈Nardis〉兩首，Evans 1961 年收進《Explorations》。佐藤允彦 自寫的曲另有三首。Gomez 與 Steve Gadd 當時同在 Manhattan Jazz Quintet 撐節奏。日本コロムビア 旗下的 Interface 讓黑膠七軌與 CD 八軌 1985 年 5 月 21 日齊發。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5437864",
+     "https://www.discogs.com/release/5186977",
+     "https://en.wikipedia.org/wiki/Explorations_(Bill_Evans_album)",
+     "https://en.wikipedia.org/wiki/Waltz_for_Debby_(1962_album)",
+     "https://en.wikipedia.org/wiki/How_My_Heart_Sings!",
+     "https://en.wikipedia.org/wiki/Eddie_G%C3%B3mez",
+     "https://en.wikipedia.org/wiki/Manhattan_Jazz_Quintet",
+     "https://www.discogs.com/artist/13712815",
+     "https://www.discogs.com/artist/2265672",
+     "https://www.discogs.com/master/672194",
+     "https://musicbrainz.org/release-group/2500dd61-407c-443b-b530-d472917cbba4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/5c/11/64/5c1164f9-50b2-8e57-9b02-f0edc9dceead/mzaf_15963752017064579784.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1709903954",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "喜多嶋修",
+   "album": "Dragon King",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c1b637ea-34e9-42c0-a054-95eadc079e1e（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Dragon King」、artist-credit 單一方（`Osamu Kitajima`＝實體 `喜多嶋修` 9fa54043，Person、country 逐字 `JP`）、first-release-date 1982、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `contemporary jazz(1)`／`fusion(2)`／`jazz(1)`／`jazz-funk(1)`／`neo soul(1)`／`pop(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：7dc614a4（1982 JP Official 12\" Vinyl 7 軌，ALFA ALR-28035）——**MB 沒有建美國原壓**。Discogs：`catno=AL 9570` 取 **master 442293**；`/masters/442293/versions` 逐筆跑完 **6 版**；美國原壓整筆與逐軌 credits 打 `releases/3648092`、日本盤打 `releases/2065495`（c-188 a 第 6408 條已記，本層重打）；Apple 以 `search?term=Osamu Kitajima Dragon King&country=us` 與 `country=jp` 核。",
+    "rgMbid": "c1b637ea-34e9-42c0-a054-95eadc079e1e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c1b637ea-34e9-42c0-a054-95eadc079e1e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 14,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=14）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "出身芝加哥 Cadet 唱片的製作搭檔，這回遇上箏與尺八。1960 年代，Richard Evans 在 Cadet 替 Ramsey Lewis、Marlena Shaw 做唱片，本盤由他共同製作兼編曲。1981 年 2 月錄於洛杉磯，美國 Arista 出版；喜多嶋修 在各軌換原聲與電吉他、箏、琵琶，四首有 松居和 的尺八。封套設計是 田中一光 與 木下勝弘；前者（1930–2002）替西武百貨、三宅一生 做過視覺，也奠定無印良品最初的品牌視覺。日本版遲至 1982 年。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3648092",
+     "https://www.discogs.com/artist/242317",
+     "https://www.discogs.com/artist/382930",
+     "https://en.wikipedia.org/wiki/Ikko_Tanaka",
+     "https://www.discogs.com/artist/326549",
+     "https://www.discogs.com/release/2065495",
+     "https://www.discogs.com/master/442293",
+     "https://musicbrainz.org/release-group/c1b637ea-34e9-42c0-a054-95eadc079e1e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c4/01/eb/c401eb3a-d56c-c1cd-ffbe-f6f07d2f72cd/mzaf_15280887322040551423.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1460599005",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "小曽根真",
+   "album": "After",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 43297c9d-7236-4f41-aa82-646142e0faa9（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「After」、artist-credit 單一方（`Makoto Ozone`＝實體 `小曽根真` 7693fefe，Person、country 逐字 `JP`）、first-release-date 1986、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `contemporary jazz(1)`／`jazz(1)`／`smooth jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：3efab69d（1986 US、status 空，12\" Vinyl 7 軌，Columbia FC 40240）、c7bd41b3（1986 JP Official CD 7 軌，CBS/Sony 32DP 446）。Discogs：**master 333617**（c-190 b 第 6627 條已記，本層重打）；`/masters/333617/versions` 逐筆跑完 **9 版**；美國原壓打 `releases/2865216`、日本 LP 的 ℗ 打 `releases/13302109`、錄音地與作曲欄打英國盤 `releases/1689860` 與 2007 CD `releases/9958642`；Apple 以 `search?term=小曽根真 After&country=jp` 核。",
+    "rgMbid": "43297c9d-7236-4f41-aa82-646142e0faa9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/43297c9d-7236-4f41-aa82-646142e0faa9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 32,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=32）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "前一年把他拉進四重奏的人，這回替他掛上製作。《Real Life Hits》是 Gary Burton 1984 年 11 月帶四重奏錄的，坐鋼琴的正是 小曽根真，而本盤曲子全由他寫。Clinton 錄音室位在紐約，1985 年 9 月進行錄製，1986 年歸美國 Columbia 發行。執行製作 George Butler 是 Columbia 的爵士 A&R，簽下過 Wynton Marsalis。最長的〈Kato's Revenge〉11 分 54 秒，幾乎佔掉半面。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9958642",
+     "https://en.wikipedia.org/wiki/Real_Life_Hits",
+     "https://www.discogs.com/artist/251849",
+     "https://www.discogs.com/release/2865216",
+     "https://www.discogs.com/release/1689860",
+     "https://en.wikipedia.org/wiki/Bill_Pierce_(saxophonist)",
+     "https://www.discogs.com/release/3139954",
+     "https://www.discogs.com/artist/487515",
+     "https://www.discogs.com/release/13302109",
+     "https://www.discogs.com/master/333617",
+     "https://musicbrainz.org/release-group/43297c9d-7236-4f41-aa82-646142e0faa9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/08/70/12/0870129f-2e65-5f8b-7f85-5efebe82681f/mzaf_10506238718778122596.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1450142999",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "小曽根真",
+   "album": "Now You Know",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 01462f0d-8f2c-4740-808f-daf1e6433ccc（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Now You Know」、artist-credit 單一方（`小曽根真` 7693fefe，Person、country 逐字 `JP`）、first-release-date 1987-10-21、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `contemporary jazz(1)`／`jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：14a2b0b1（1987-10-21 JP Official CD 7 軌，CBS/Sony 32DP 819）——**MB 沒有建美國原壓**。Discogs：**master 967786**（c-191 a 第 6661 條已記，本層重打）；`/masters/967786/versions` 逐筆跑完 **9 版**；美國原壓整筆與逐軌 credits 打 `releases/3486757`、日本 CD 打 `releases/13737668`；Apple 以 `search?term=Makoto Ozone&country=us` 與 `search?term=小曽根真 Now You Know&country=jp` 核。",
+    "rgMbid": "01462f0d-8f2c-4740-808f-daf1e6433ccc",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/01462f0d-8f2c-4740-808f-daf1e6433ccc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=13）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封底那張照片的拍攝者，拍過 Harlem 那張爵士大合照。Art Kane 1958 年 8 月 12 日受《Esquire》之託，在 Harlem 街頭拍下 57 位樂手。小曽根真 1987 年的這張美國 Columbia 盤，於 Clinton 錄音室以數位錄成，製作 Gary Burton。鼓手 Peter Erskine 與貝斯手 Marc Johnson 是搭檔，也同在 Johnson 1985 年錄的首作《Bass Desires》。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3486757",
+     "https://en.wikipedia.org/wiki/Bass_Desires",
+     "https://en.wikipedia.org/wiki/Peter_Erskine",
+     "https://en.wikipedia.org/wiki/Duane_Michals",
+     "https://en.wikipedia.org/wiki/A_Great_Day_in_Harlem",
+     "https://www.discogs.com/release/13737668",
+     "https://www.discogs.com/master/967786",
+     "https://musicbrainz.org/release-group/01462f0d-8f2c-4740-808f-daf1e6433ccc"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5e/25/9f/5e259fc9-550e-762e-afd7-9d14ca24b2fa/mzaf_9986982686606455934.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1373907241",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Eddie Daniels",
+   "album": "This Is New",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1aed5e0b-dfaa-4ae3-9c3e-70a97a204b07（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「This Is New」、artist-credit 單一方（`Eddie Daniels` f31b4a7b，Person、country 逐字 `US`）、first-release-date 1968、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：**07e88f42（1968 JP Official 12\" Vinyl 6 軌，Columbia XMS-10005-CT）**、0b7f6ddc（2000-08-19 JP Official CD 6 軌，Columbia COCB-31027，barcode 4988001453192）；兩筆逐軌毫秒相同。Discogs：`type=master&artist=Eddie Daniels&release_title=This Is New` 取 **master 931745**（先讀 `type`；另回同名不同碟的 1991 GRP《This Is Now》master 658714，逐筆讀 `title` 排除）；`/masters/931745/versions` 逐筆跑完 **5 版**；原壓整筆與逐軌 credits 打 `releases/7875628`、Test Pressing 打 `releases/34447279`、兩張 CD 的 `notes` 打 `releases/8869794`／`4429956`，五位樂手與解說逐名打 `artists/<id>`；Apple 以 `search?term=Eddie Daniels This Is New&country=jp` 核。",
+    "rgMbid": "1aed5e0b-dfaa-4ae3-9c3e-70a97a204b07",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/77/a8/0e/77a80ef2-50df-6467-6083-d9cdbb6dbc23/COKM-44706.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1721497129",
+    "note": "試聽探測釘定的 collectionId 1721497129（us）：Eddie Daniels — This Is New"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 43,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=43）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十八天後，同樣四人跟另一位次中音手，又錄出一張五重奏唱片。四人是 日野皓正、菊地雅章、稲葉國光、日野元彦，8 月 22、30 日由 村岡建 補上次中音，錄成《Hino=Kikuchi Quintet》。五重奏裡只有領銜者是美國人，Daniels 次中音與單簧管兩樣都吹，8 月 4 日錄完本盤。Takt Jazz Series 於 1968 年 11 月 25 日編入發行。同一年，《DownBeat》把單簧管新星獎頒給他。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7875628",
+     "https://www.discogs.com/release/4152088",
+     "https://en.wikipedia.org/wiki/Eddie_Daniels",
+     "https://en.wikipedia.org/wiki/Roland_Hanna",
+     "https://en.wikipedia.org/wiki/The_Yearling",
+     "https://www.discogs.com/release/34447279",
+     "https://www.discogs.com/master/931745",
+     "https://musicbrainz.org/release-group/1aed5e0b-dfaa-4ae3-9c3e-70a97a204b07"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f9/9e/f4/f99ef41e-8028-0e24-31f2-6465ce4cce09/mzaf_16592175265036016473.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1721497129",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Miles Davis",
+   "album": "Miles in Tokyo: Miles Davis Live in Concert",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9ca7315c-4ffb-3267-8ac9-c08d3bb696ad（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Miles in Tokyo」、artist-credit 單一方（`Miles Davis` 561d854a，Person、country 逐字 `US`）、first-release-date 1969-06、primary-type Album、**secondary-types 逐字 `[\"Live\"]`**、RG tags 逐字 `hard bop(1)`／`jazz(4)`／`post-bop(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **10 筆**：**c5bbfe5d（1969-06 JP Official 12\" Vinyl 7 軌，CBS/Sony SONX 60064，title 逐字「Miles in Tokyo: Miles Davis Live in Concert」）**、026f825e（1972 JP `SOPL 162`）、782c71a4（1996-09-21 JP `SRCS 9112`，5 軌）、4fd557ad（2005-03-15 US Legacy `COL 519508 2`）、533cfe91（2005 US `5190832`）、9f63fe0c（2005 XE `COL 519508 2`）、9e65d5ae（2006-09-27 JP `SICP 1213`）、c11e1903（2006 BR `2 093596`）、b29fbe30（2023-11-29 JP `SIJP-1087`）、d815f1b9（2019-12-25 JP `SIJP-1018`，**Cancelled**）。Discogs：`catno=SONX 60064` 取 **master 203649**；`/masters/203649/versions` 逐筆跑完 **45 版**；原壓整筆 credits 與 `notes` 打 `releases/3037983`、開盤帶打 `releases/7821193`；Apple 以 `search?term=Miles Davis Miles in Tokyo` 的 us／jp 兩個店面核。",
+    "rgMbid": "9ca7315c-4ffb-3267-8ac9-c08d3bb696ad",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9ca7315c-4ffb-3267-8ac9-c08d3bb696ad/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 86,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=86）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這場演出只錄給廣播用，五年後才壓成唱片，長年僅見於日本。1964 年 7 月 14 日演於東京厚生年金会館，屬第 1 回世界ジャズ・フェスティヴァル，Miles 為此初次來日。CBS/Sony 遲至 1969 年 6 月 6 日始把它製成唱片，美國到 2005 年才出 CD。次中音 Sam Rivers 只短暫在團，夾在 George Coleman 與 Wayne Shorter 之間，這段樣貌只留在本盤。松本英彦 也在同一天登上這個音樂節。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%83%AB%E3%82%B9%E3%83%BB%E3%82%A4%E3%83%B3%E3%83%BB%E3%83%88%E3%83%BC%E3%82%AD%E3%83%A7%E3%83%BC",
+     "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6",
+     "https://www.discogs.com/release/3037983",
+     "https://www.discogs.com/artist/1532853",
+     "https://en.wikipedia.org/wiki/Sam_Rivers_(jazz_musician)",
+     "https://en.wikipedia.org/wiki/Miles_in_Tokyo",
+     "https://www.discogs.com/master/203649",
+     "https://musicbrainz.org/release-group/9ca7315c-4ffb-3267-8ac9-c08d3bb696ad"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fc/c8/02/fcc802b3-3985-a8db-75c1-e2ac74473925/mzaf_2270493683245251832.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "159071869",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jack DeJohnette",
+   "album": "Have You Heard?",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 28e2b0a8-e1e5-4479-90cd-c0d9393aff96（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Have You Heard?」、artist-credit 單一方（`Jack DeJohnette` f2d13d28，Person、country 逐字 `US`）、first-release-date 1970、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `free jazz(1)`／`jazz(1)`（照第 1850-B 條只當線索）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：**26f04fa3（1970 JP Official 12\" Vinyl 4 軌，CBS/Sony SONP - 50282-J）**、45224cc7（1997-09-21 JP Official CD 4 軌，Sony SRCS 9335）。Discogs：**master 476359**（c-183 第 5662 條已記，本層重打）；`/masters/476359/versions` 逐筆跑完 **9 版**；原壓整筆與逐軌 credits 打 `releases/4349196`、美國 Milestone 版打 `releases/1246597`，幕後與市川秀男逐名打 `artists/<id>`；Apple 以 `search?term=Jack DeJohnette Have You Heard` 的 jp／us 兩個店面核。",
+    "rgMbid": "28e2b0a8-e1e5-4479-90cd-c0d9393aff96",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/28e2b0a8-e1e5-4479-90cd-c0d9393aff96/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 137,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=137）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音前八天，鼓與低音單簧管同在的一張雙 LP 剛在美國上市。Miles Davis 的《Bitches Brew》3 月 30 日美國上市，鼓手之一是 DeJohnette，低音單簧管是 Bennie Maupin。四首有兩首逾二十分鐘，盤名曲獨佔 A 面。1970 年 4 月 7 日假東京都市センターホール 錄下，交 CBS/Sony 出片。美國 Milestone 晚一年，重新轉錄、改以〈Neophilia〉開場，封套換上 DeJohnette 妻子 Lydia 的攝影。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4349196",
+     "https://www.discogs.com/artist/347689",
+     "https://www.discogs.com/artist/1489632",
+     "https://en.wikipedia.org/wiki/Bitches_Brew",
+     "https://en.wikipedia.org/wiki/The_DeJohnette_Complex",
+     "https://www.discogs.com/artist/15448",
+     "https://www.discogs.com/artist/1023864",
+     "https://www.discogs.com/release/1246597",
+     "https://www.discogs.com/master/476359",
+     "https://musicbrainz.org/release-group/28e2b0a8-e1e5-4479-90cd-c0d9393aff96"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

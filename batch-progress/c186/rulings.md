@@ -4336,3 +4336,9 @@ $ node fix-spacing.mjs batches/output/c186-out-2.json --field desc
 **本層一行既有內容都沒有動，只 append。**
 **輸出**：`desc-tools/batches/output/c186-out-2.json`（**11 筆，key 逐字同序同數量**）。
 **本層動過的檔只有那一個新檔與本檔的 append**（`desc-tools/jp-proper-names.json` 本批 0 個 append，`c186-out-1.json` 只讀未寫）。
+
+
+## 本機段補記（2026-10-04）
+
+- **カリオカ《Sunny Place Carnival》的 rgMbid 欄填的是藝人 MBID**（18c3632b… 是 カリオカ 這個 artist，以 release-group 查回 404）。正確的 release-group 是 5bf96a6c-abce-4bbe-9f00-a3079430c117（1978，Kitty MKF 1041 原壓）。prop-a／卡單／cand-all 三處已改；封面改用該 RG 的 CAA 圖。
+- 探測層配到的 Apple《Carioca》2025 是誤配，已降級，這張走固定無試聽。

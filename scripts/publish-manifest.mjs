@@ -132,6 +132,9 @@ const seedAdds = [], apexAdds = [], poolSkips = [];
 for (const a of albums) {
   if (existing.has(poolKeyOf(a.artist, a.album))) { poolSkips.push(`${a.artist} — ${a.album}`); continue; }
   const year = a.research?.suggestedYear ?? null;
+  // 年份欄是空的就不准上架。2026-10-04 雲端交來的單張 manifest 沒帶 research.suggestedYear，
+  // 何欣穗《完美小姐》因此以 year=null 進池（年代篩選抽不到它），事後才補。
+  if (WRITE_POOL && !Number.isInteger(year)) { console.error(`中止：${a.artist} — ${a.album} 沒有 research.suggestedYear，不寫卡池。`); process.exit(1); }
   const tier = a.apexAssessment?.eligible ? a.apexAssessment.tier : null;
   // 一般卡與王牌現在是同一種列，差別只在第 9 欄 tier：
   //   [artist, album, classic, obscurity, accessibility, genres[], year, composer|null, tier?]

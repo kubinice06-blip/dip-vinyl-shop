@@ -1,0 +1,2839 @@
+{
+ "schemaVersion": 1,
+ "batch": "c156-20261004",
+ "albums": [
+  {
+   "artist": "Joe Lovano & Greg Osby",
+   "album": "Friendly Fire",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bb0368cd-5388-3fcd-9923-1f3c81256cf4。回問 release-group 端點（inc=artist-credits+releases）：title「Friendly Fire」、artist-credit「Joe Lovano & Greg Osby」（f3f7cd82 Joe Lovano Person ＋ bbef05c0 Greg Osby Person）、first-release-date `1999-06-08`、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點（inc=media+labels+recordings+artist-credits）：af266d91（1999-06-08 US Official CD 9 軌，Blue Note 7243 4 99125 2 6，bc 724349912526）、a7e6fb72（1999-06-14 XE Official CD 9 軌，同目錄號同 barcode——**第 1364(4) 條「多國別條目共用同一個 barcode」的本批樣本**）。九軌：Geo J Lo／The Wild East／Serene／Broad Way Blues／Monk's Mood／Idris／Truth Be Told／Silenos／Alexander the Great。錄音 1998-12-15、16（Discogs 2390483 notes）；班底 Joe Lovano ts/ss/fl、Greg Osby as/ss、Jason Moran p、Cameron Brown b、Idris Muhammad d（Discogs credit 欄）。Discogs master 967438。",
+    "rgMbid": "bb0368cd-5388-3fcd-9923-1f3c81256cf4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bb0368cd-5388-3fcd-9923-1f3c81256cf4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 151,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=151，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九軌裡翻的三首全出自吹管人：Coleman、Monk，還有 Dolphy 的〈Serene〉。其餘六軌的作曲者在盤面上沒有登記。錄音是 1998 年 12 月 15、16 兩天做於紐約，五個人從頭到尾、沒有任何客座：Lovano 一人換次中音、高音與長笛，Osby 掛中音與高音，節奏組是當年 23 歲的 Jason Moran 與貝斯、鼓各一位。製作欄並列兩位領班的名字。廠牌 1999 年秋季的整版廣告替這張下的說法是兩位薩克斯手正面對決。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=bb0368cd-5388-3fcd-9923-1f3c81256cf4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2390483",
+     "https://musicbrainz.org/ws/2/work/76627a89-2bbd-3165-9e40-64314511a19b?inc=artist-rels&fmt=json",
+     "https://api.discogs.com/releases/21857965",
+     "https://api.discogs.com/releases/7439767",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf",
+     "https://itunes.apple.com/lookup?upc=724349912526&country=us",
+     "https://coverartarchive.org/release-group/bb0368cd-5388-3fcd-9923-1f3c81256cf4",
+     "https://musicbrainz.org/release-group/bb0368cd-5388-3fcd-9923-1f3c81256cf4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview62/v4/b4/d8/30/b4d8308a-04d5-5415-a0f8-95cd9479b736/mzaf_785656643732154109.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724535511",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Charlie Hunter / Leon Parker",
+   "album": "Duo",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 702e7944-a706-3a7d-a69c-01ebbdd4181a。回問 release-group 端點：title「Duo」、artist-credit「Charlie Hunter / Leon Parker」（a89487ab Charlie Hunter Person ＋ faa7b136 Leon Parker Person，US，1965-08-21）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：32e5b6b5（1999 US Official CD 10 軌，**label-info 有 Blue Note 但 catalog-number 欄空**，bc 724349918726）、3903ae51（1999 XE Official CD 10 軌，Blue Note 7243 4 99187 2 6，同 barcode）。十軌：Mean Streak／Belief／Do That Then／You Don't Know What Love Is／Recess／Don't Talk (Put Your Head on My Shoulder)／The Last Time／Dark Corner／The Spin Seekers／Calypso for Grampa。班底：Charlie Hunter 8-string guitar、Leon Parker d/perc（Discogs 2389507 credit 欄，全張只有這兩人）。MB 同字串 artist 反查：`Leon Parker` 單一實體 faa7b136（US Person），無同名分身。Discogs master 1059557。",
+    "rgMbid": "702e7944-a706-3a7d-a69c-01ebbdd4181a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/702e7944-a706-3a7d-a69c-01ebbdd4181a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2990,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2990，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩個人、十軌，低音線交給那把八弦吉他自己走。盤面上沒有貝斯手：鼓與打擊是 Leon Parker，低音與和聲全由 Hunter 一把琴走。封底註明整張幾乎是一次過彈完的，只有〈Mean Streak〉補錄了打擊。十軌裡六軌是 Hunter 寫的，一首出自 Parker，翻的〈Don't Talk (Put Your Head on My Shoulder)〉出自 Brian Wilson 與 Tony Asher。1999 年 4 月進爵士專輯榜第 10 名，連五期在榜。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=702e7944-a706-3a7d-a69c-01ebbdd4181a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2389507",
+     "https://api.discogs.com/releases/9785512",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-04-17.pdf",
+     "https://itunes.apple.com/lookup?upc=724349918726&country=us",
+     "https://api.discogs.com/masters/1059557/versions",
+     "https://musicbrainz.org/release-group/702e7944-a706-3a7d-a69c-01ebbdd4181a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/ab/c3/feabc3f4-d283-7ea5-dcd3-188b37a0c5e9/mzaf_3652148087463505440.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "738353763",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gonzalo Rubalcaba",
+   "album": "Inner Voyage",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c2b98cbb-54b1-3330-aeb4-653a00c9200c。回問 release-group 端點：title「Inner Voyage」、artist-credit「Gonzalo Rubalcaba」（70053535 Person）、first-release-date `1999-08-24`、primary-type Album、secondary-types 空，轄下 3 個 release。release 端點：d751a09f（1999-08-24 US Official CD 9 軌，Blue Note `7243 499241 2 3`——**目錄號中間少一個空格，是第 1250 條那種「同一個號兩種寫法」，反查時兩形都要試**，bc 724349924123）、9cef2a54（1999 XE Official CD 9 軌，`7243 4 99241 2 3`，同 barcode）、a6b309eb（**無日期**的 XW Digital 9 軌，bc `00724349924154`——13 位、非標準 UPC，第 1364(9) 條，不能拿來做 `lookup?upc=`）。九軌：Yolanda Anas／Promenade／The Hard One／Sandyken／Here's That Rainy Day／Caravan／Joan／Blues Lundvall／Joao。錄音 1998-11-23～25 Avatar Studios, NYC（Discogs 1341115 notes）。Discogs master 719516（`year` 空）。",
+    "rgMbid": "c2b98cbb-54b1-3330-aeb4-653a00c9200c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c2b98cbb-54b1-3330-aeb4-653a00c9200c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12721,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第 8 軌〈Blues Lundvall〉的曲名，來自簽下他的那位廠牌總裁。1998 年 11 月 23 到 25 日在紐約 Avatar Studios 連錄三天，主體是鋼琴三重奏九軌全程，貝斯與鼓各一位，製作也掛 Rubalcaba 自己。Michael Brecker 的薩克斯只出現在第 3 軌與第 8 軌，盤面把軌號印在他的名字後面，其餘七軌是純三重奏。翻的〈Here's That Rainy Day〉與〈Caravan〉各拉到十分鐘上下。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c2b98cbb-54b1-3330-aeb4-653a00c9200c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1341115",
+     "https://api.discogs.com/masters/719516/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf",
+     "https://itunes.apple.com/lookup?upc=724349924123&country=us",
+     "https://coverartarchive.org/release-group/c2b98cbb-54b1-3330-aeb4-653a00c9200c",
+     "https://api.discogs.com/releases/11531158",
+     "https://musicbrainz.org/release-group/c2b98cbb-54b1-3330-aeb4-653a00c9200c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fb/02/5d/fb025d47-12fd-c3bd-818a-d2fd3ad43a83/mzaf_9561415646928439177.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723510523",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Don Byron",
+   "album": "Romance with the Unseen",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c51c03ea-7d49-36a7-b572-c8b0df777cea。回問 release-group 端點：title「Romance with the Unseen」、artist-credit「Don Byron」（7478f0d5 Person）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：11d74d46（1999 **country 欄 null** Official CD 10 軌，Blue Note 7243 4 99545 2 6，bc 724349954526）。十軌：A Mural from Two Perspectives／Sad Twilight／Bernhard Goetz, James Ramseur, and Me／I'll Follow the Sun／'Lude／Homegoing／One Finger Snap／Basquiat／Perdido (Pegao)／Closer to Home。錄音與混音 1999 年 1 月與 3 月，Bearsville Studios, Bearsville, NY；母帶 Foothill Digital, New York（Discogs 678151 notes）。班底 Don Byron cl、Bill Frisell g、Drew Gress b、Jack DeJohnette d。製作 Don Byron ＋ Hans Wendl。Discogs master 607700。",
+    "rgMbid": "c51c03ea-7d49-36a7-b572-c8b0df777cea",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c51c03ea-7d49-36a7-b572-c8b0df777cea/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2566,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2566，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第三軌的曲名裡，並排著 1984 年紐約地鐵槍擊案的兩個當事人。那一軌叫〈Bernhard Goetz, James Ramseur, and Me〉。這支四重奏沒有鋼琴：Byron 的單簧管、Bill Frisell 的吉他、一把貝斯與 Jack DeJohnette 的鼓，盤面零客座。十軌裡他自己寫六首，另四首分屬 Ellington、Lennon-McCartney、Herbie Hancock 與 Juan Tizol。街頭日是 1999 年 9 月 21 日。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c51c03ea-7d49-36a7-b572-c8b0df777cea&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/678151",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-09-18.pdf",
+     "https://api.discogs.com/releases/15392310",
+     "https://itunes.apple.com/lookup?upc=724349954526&country=us",
+     "https://coverartarchive.org/release-group/c51c03ea-7d49-36a7-b572-c8b0df777cea",
+     "https://musicbrainz.org/release-group/c51c03ea-7d49-36a7-b572-c8b0df777cea"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/14/5e/42145e0f-0a5b-9f2d-ff9f-ddbd2c1dd25e/mzaf_2466990518520574771.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724720085",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Javon Jackson",
+   "album": "Pleasant Valley",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b900aa91-4fba-448c-8347-84ce6d883818。回問 release-group 端點：title「Pleasant Valley」、artist-credit「Javon Jackson」（9a6465be Person）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：aeb4f394（1999 US Official CD 9 軌，Blue Note 7243 4 99697 2 8，bc 724349969728）。九軌：Sun Swept Sunday／Pleasant Valley／Hippodelphia／Don't You Worry 'Bout a Thing／Jim Jam／In the Pocket／Brother \"G\"／Love and Happiness／For One Who Knows。錄音 1999-01-04 Sear Sound, NYC（Discogs 9497429 notes）；班底 Javon Jackson ts、Larry Goldings org、Dave Stryker g、Billy Drummond d；製作 Craig Street。Discogs master 880963。紙本：Billboard 1999-07-03 p4（目次）＋ p36（整篇專欄，街頭日 6/29）。",
+    "rgMbid": "b900aa91-4fba-448c-8347-84ce6d883818",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/2c/5f/5f/2c5f5f44-6542-ed5c-69e5-444999100437/13UABIM36991.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "738341753",
+    "note": "試聽探測釘定的 collectionId 738341753（us）：Javon Jackson — Pleasant Valley"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 210,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=210，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九軌從 Ellington 一路翻到 Stevie Wonder 與 Al Green。第 8 軌是 Al Green 的〈Love and Happiness〉，九軌裡 Jackson 自己只寫了四首。1999 年 1 月 4 日在紐約 Sear Sound 一天錄完，四個人、沒有貝斯手，低音由 Larry Goldings 的管風琴踏板走，製作人是 Craig Street。這是 Jackson 在 Blue Note 的第五張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b900aa91-4fba-448c-8347-84ce6d883818&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/9497429",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-07-03.pdf",
+     "https://api.discogs.com/masters/880963/versions",
+     "https://api.discogs.com/releases/3913317",
+     "https://itunes.apple.com/lookup?upc=724349969728&country=us",
+     "https://musicbrainz.org/release-group/b900aa91-4fba-448c-8347-84ce6d883818"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/dc/29/7adc2912-e11d-3aec-d747-cd17289817d8/mzaf_85072425707125723.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "738341753",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Eric Dolphy",
+   "album": "The Illinois Concert",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ef0c2191-6894-3584-abd0-5aa01cc94794。回問 release-group 端點：title「The Illinois Concert」、artist-credit「Eric Dolphy」（badda5cf Person）、first-release-date `1999-10-05`、primary-type Album、**secondary-types `[\"Live\"]`（MB 標對了）**、disambiguation 逐字「1963/03/10, University of Illinois, Champaign, IL」，轄下 2 個 release。release 端點：972c26f4（1999-10-05 US Official CD 7 軌，Blue Note 7243 4 99826 2 8，**bc `7243499826284` 13 位非標準 UPC**）、3371263f（1999 XE Official CD 7 軌，label-info 兩筆 `Blue Note=7243 4 99826 2 8` 與 `Blue Note=99826`，bc 724349982628）。七軌：Softly as in a Morning Sunrise／Something Sweet, Something Tender／God Bless the Child／South Street Exit／Iron Man／Red Planet／G.W.。錄音 1963-03-10 University of Illinois, Champaign, IL（Discogs 1414785 notes）；班底 Eric Dolphy as/fl/bcl、Herbie Hancock p、Eddie Khan b、J.C. Moses d；音樂會製作 John Garvey，發行製作 Michael Cuscuna，內頁 Vladimir Simosko。℗&© 1999 Capitol Records, Inc.。Discogs master 287333。",
+    "rgMbid": "ef0c2191-6894-3584-abd0-5aa01cc94794",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ef0c2191-6894-3584-abd0-5aa01cc94794/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 19531,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第六軌台上多了一個學生銅管團，第七軌再加一整支大樂團。那是 1963 年 3 月 10 日伊利諾大學香檳校區的一場音樂會，前五軌還是四重奏：Dolphy 在長笛、低音單簧管與中音薩克斯之間換，鋼琴是當年 22 歲的 Herbie Hancock。母帶由一位電台製作人留了下來，首次商業發行要等到 1999 年，由 Michael Cuscuna 整理。開場的〈Softly as in a Morning Sunrise〉拉到二十分鐘，第 2 軌只有一分半。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=ef0c2191-6894-3584-abd0-5aa01cc94794&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf",
+     "https://api.discogs.com/releases/2546770",
+     "https://api.discogs.com/releases/13981195",
+     "https://api.discogs.com/releases/1414785",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-30.pdf",
+     "https://itunes.apple.com/lookup?upc=724349982628&country=us",
+     "https://musicbrainz.org/release-group/ef0c2191-6894-3584-abd0-5aa01cc94794"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/27/59/84/275984de-13fa-215e-3c40-fc96aeb731ae/mzaf_6784080772314964456.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "738343378",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Renee Rosnes",
+   "album": "Art & Soul",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c9c0d5fe-3d3e-4cf4-8b14-4a781ec003d4。回問 release-group 端點：title「Art & Soul」、artist-credit「Renee Rosnes」（bff6007a Person）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：6d963bad（1999 **XE** Official CD 10 軌，**label-info 兩筆：`Blue Note=7243 4 99997-2 5` ＋ `EMI Music Canada=7243 4 99997-2 5`**，bc 724349999725）。十軌：Blues Connotation／With A Little Help From My Friends／Goodbye／Ancient Footprints／Fleurette Africaine／Romp／Lazy Afternoon／Little Spirit／Sanfona／Children's Song No.3。錄音 1999-02-16～18 於 Suffern, New York（Discogs 11720619 notes）；班底 Renee Rosnes p、Scott Colley b、Billy Drummond d ＋ Dianne Reeves voc（兩軌）、Richard Bona kalimba/perc。Discogs master 1332151。紙本：Billboard 1999-08-21 p6（目次）＋ p30（整篇專欄，街頭日 8/31）。",
+    "rgMbid": "c9c0d5fe-3d3e-4cf4-8b14-4a781ec003d4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c9c0d5fe-3d3e-4cf4-8b14-4a781ec003d4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5384,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十軌裡她自己只寫兩首，收尾的那一首出自 Bartók。那是〈Children's Song No.3〉；她自己的兩首是〈Romp〉與寫給兒子 Dylan 的〈Little Spirit〉，其餘八首從 Ornette Coleman、披頭四一路排到 Ellington。1999 年 2 月 16 到 18 日在紐約州 Suffern 連錄三天，固定三重奏十軌全程；兩位客座都只掛特定軌，打擊與卡林巴在第 4、5 軌，人聲在第 4、7 軌。街頭日是 8 月 31 日。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c9c0d5fe-3d3e-4cf4-8b14-4a781ec003d4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/11720619",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-08-21.pdf",
+     "https://api.discogs.com/releases/17268292",
+     "https://api.discogs.com/masters/1332151/versions",
+     "https://itunes.apple.com/lookup?upc=724349999725&country=us",
+     "https://coverartarchive.org/release-group/c9c0d5fe-3d3e-4cf4-8b14-4a781ec003d4",
+     "https://musicbrainz.org/release-group/c9c0d5fe-3d3e-4cf4-8b14-4a781ec003d4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music6/v4/ed/c6/45/edc6456a-7a18-8d50-56f0-e76969dbdd81/mzaf_6604499814631616660.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724402601",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jimmy Smith",
+   "album": "Six Views of the Blues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 336cb4ed-4ea4-3667-84f6-054194e752a1。回問 release-group 端點：title「Six Views of the Blues」、artist-credit「Jimmy Smith」（4f8a0d9b Person）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：8f88849a（1999 US Official CD 6 軌，Blue Note 7243 5 21435 2 8，bc 724352143528）、**6ba7027e（空殼：date/country/status/label-info/barcode 全空，媒體 CD 6 軌）**。六軌：St. Louis Blues／The Swingin' Shepherd Blues／Blues No. 1／Blues No. 3／Blues No. 4／Blues No. 2（**盤面順序就是 1-3-4-2，不是排序錯**）。錄音 1958-07-16 Van Gelder Studio, Hackensack, New Jersey（Discogs 3707794 notes）；班底 Jimmy Smith org、Kenny Burrell g、Cecil Payne bari、Art Blakey d、Donald Bailey d（**兩位鼓手，notes 未標軌號**）；原始製作 Alfred Lion、發行製作 Michael Cuscuna、24-bit 轉錄與母帶 Ron McMaster。Discogs master 450989。",
+    "rgMbid": "336cb4ed-4ea4-3667-84f6-054194e752a1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/336cb4ed-4ea4-3667-84f6-054194e752a1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3083,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四首〈Blues No. 1〉到〈No. 4〉，盤上按 1、3、4、2 的順序排。這四首藍調是 Smith 自己寫的，另外兩軌是翻的，開場是〈St. Louis Blues〉。六軌在 1958 年 7 月 16 日一個下午於 Van Gelder 錄音室錄完，管風琴、吉他與上低音薩克斯三人全程，鼓手卻換了兩位：前三軌是 Art Blakey，後三軌是 Donald Bailey。當年只有第 2 軌以 45 轉單曲發過，整張要到 1999 年才出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=336cb4ed-4ea4-3667-84f6-054194e752a1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/3707794",
+     "https://api.discogs.com/masters/450989/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-01-16.pdf",
+     "https://itunes.apple.com/lookup?upc=724352143528&country=us",
+     "https://musicbrainz.org/release-group/336cb4ed-4ea4-3667-84f6-054194e752a1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b5/94/38/b5943856-eb1f-d6f8-ce0d-33d7d458ede2/mzaf_11656023456943048915.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "738338124",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lou Donaldson",
+   "album": "A Man With a Horn",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 76c861f5-6543-45a4-adf5-68d3aea52a9b。回問 release-group 端點：title「A Man With a Horn [Connoisseur]」、artist-credit「Lou Donaldson」（db147d97 Person）、first-release-date `1999-10-19`、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：497c402b（1999 US Official CD 9 軌，Blue Note 7243 5 21436 2 7，bc 724352143627）、5ca6a318（1999-10-19 **XW** Official CD 9 軌，Blue Note `21436`，**無 barcode**）。九軌：Misty／Hippity Hop（Discogs 盤面印 `Hipty Hop`）／Please／My Melancholy Baby／Man With a Horn／Cherry Pink and Apple Blossom White／Prisoner of Love／Soul Meetin'／Stardust（Discogs 盤面印 `Star Dust`）。錄音 1961-09-25（#1,3,5,7,9）與 1963-06-07（#2,4,6,8），皆 Van Gelder Studio, Englewood Cliffs（Discogs 4006329 notes）；班底 Lou Donaldson as、Grant Green g、Brother Jack McDuff org、John Patton org、Joe Dukes d、Ben Dixon d、Irv Stokes tp。原始製作 Alfred Lion、發行製作 Michael Cuscuna、內頁 Ed Hamilton、24-bit 轉錄 Ron McMaster。Discogs master 1270711；日版 11003857 系列 `Blue Note Records Presents The Lost Sessions`。",
+    "rgMbid": "76c861f5-6543-45a4-adf5-68d3aea52a9b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/76c861f5-6543-45a4-adf5-68d3aea52a9b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 654,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=654，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "奇數軌是 1961 年那場，偶數軌是 1963 年那場，管風琴與鼓跟著換人。兩場都在 Van Gelder 錄音室，日期是 1961 年 9 月 25 日與 1963 年 6 月 7 日，管風琴從 Brother Jack McDuff 換成 John Patton，後面那場還多一支小號。兩場沒換的只有 Donaldson 的中音薩克斯與 Grant Green 的吉他。九軌幾乎全是老標準曲。當年僅第 6 軌在日本出過，整張要到 1999 年才首次發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=76c861f5-6543-45a4-adf5-68d3aea52a9b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/4006329",
+     "https://api.discogs.com/releases/11003857",
+     "https://api.discogs.com/masters/1270711/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf",
+     "https://itunes.apple.com/lookup?id=724533217&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/76c861f5-6543-45a4-adf5-68d3aea52a9b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/aa/5c/7aaa5c1d-3c3d-5550-ee11-d567aca9b078/mzaf_8106746292422103595.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724533217",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bobby Hutcherson",
+   "album": "The Kicker",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e45eb7e7-12e8-3ad4-9838-042c5140b421。回問 release-group 端點：title「The Kicker」、artist-credit「Bobby Hutcherson」（edbe5d7f Person）、first-release-date `1999-10-19`、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：c1576093（1999-10-19 US Official CD **6 軌**，Blue Note 7243 5 21437 2 6，bc 724352143726）、81439c2f（2020-08-28 XW Official 12\" Vinyl **5 軌**，Blue Note B0031654-01，bc 602508659256，disambiguation `Blue Note Tone Poet Series`）。CD 六軌：If Ever I Would Leave You／Mirrors／For Duke P.／The Kicker／Step Lightly／Bedouin（**黑膠版少第 1 軌**）。錄音 1963-12-29 Van Gelder Studio, Englewood Cliffs（Discogs 13459360 notes）；班底 Bobby Hutcherson vib、Joe Henderson ts、Duke Pearson p、Grant Green g、Bob Cranshaw b、Al Harewood d；原始製作 Alfred Lion、發行製作與內頁 Michael Cuscuna、24-bit 轉錄 Ron McMaster。Discogs master 336467。",
+    "rgMbid": "e45eb7e7-12e8-3ad4-9838-042c5140b421",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e45eb7e7-12e8-3ad4-9838-042c5140b421/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6893,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六軌裡他自己只寫一首，〈Mirrors〉出自當天不在場的 Joe Chambers。他寫的那首是〈For Duke P.〉，送給就坐在同一間錄音室裡的鋼琴手 Duke Pearson，另有兩首出自吹次中音的 Joe Henderson。1963 年 12 月 29 日在 Van Gelder 錄音室一天錄完，五重奏六軌全程，吉他只加在第 4 到 6 軌。托盤背面印著這些錄音全部未曾發行，首次出版是 1999 年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e45eb7e7-12e8-3ad4-9838-042c5140b421&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/13459360",
+     "https://api.discogs.com/releases/1007024",
+     "https://api.discogs.com/releases/15797945",
+     "https://api.discogs.com/masters/336467/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-01-09.pdf",
+     "https://musicbrainz.org/release-group/e45eb7e7-12e8-3ad4-9838-042c5140b421"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b2/1d/5a/b21d5aad-f498-f1d6-b782-f1125a74ed10/mzaf_4281979025660138256.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724539296",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Grant Green",
+   "album": "Blues For Lou",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 19b500cf-1f2b-3eb3-961e-f0c45407f07d。回問 release-group 端點：title「Blues For Lou」、artist-credit「Grant Green」（1a88b270 Person）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：4047480c（1999 **XE** Official CD 8 軌，Blue Note 7243 5 21438 2 5，bc 724352143825，disambiguation `Connoisseur Series`）。八軌：The Surrey with the Fringe on Top／Blues for Lou／Big John／Don't Let the Sun Catch You Crying／Look at That Girl／This Little Girl of Mine／Personality／Have You Ever Had the Blues。錄音 1963-02-20（#1, 3–8）與 1963-06-07（#2），皆 Van Gelder Studio, Englewood Cliffs（Discogs 12702226 notes）；班底 Grant Green g、John Patton org、Ben Dixon d；原始製作 Alfred Lion、發行製作 Michael Cuscuna、內頁 Ed Hamilton、24-bit 轉錄 Ron McMaster。Discogs master 1442774。",
+    "rgMbid": "19b500cf-1f2b-3eb3-961e-f0c45407f07d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/19b500cf-1f2b-3eb3-961e-f0c45407f07d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6369,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名那一首寫給 Lou Donaldson，也是八軌裡唯一另一天錄的。其餘七軌錄於 1963 年 2 月 20 日，〈Blues for Lou〉是同年 6 月 7 日補上的。三個人、沒有貝斯手，低音全交給 John Patton 的管風琴踏板，鼓是 Ben Dixon。八軌裡 Green 自己只寫了盤名這一首，團裡的 Patton 寫〈Big John〉、Dixon 寫〈Look at That Girl〉。整張擱到 1999 年才首次出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=19b500cf-1f2b-3eb3-961e-f0c45407f07d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/12702226",
+     "https://api.discogs.com/releases/4006329",
+     "https://api.discogs.com/releases/13186088",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-01-16.pdf",
+     "https://itunes.apple.com/lookup?upc=724352143825&country=us",
+     "https://musicbrainz.org/release-group/19b500cf-1f2b-3eb3-961e-f0c45407f07d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/90/13/91/90139103-47c0-5f12-9023-35dff398a3af/mzaf_12013883840119622790.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724746621",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Art Blakey",
+   "album": "Drums Around the Corner",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a82858a0-0e37-3d50-bcee-50b4fecd117e。回問 release-group 端點：title「Drums Around the Corner」、artist-credit「Art Blakey」（601e7466 Person）、first-release-date `1999-10-19`、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：d8908710（1999-10-19 US Official CD 8 軌，Blue Note 7243 5 21455 2 2，bc 724352145522）。八軌：Moose the Mooche／Blakey's Blues／Lee's Tune／Let's Take 16 Bars／Drums in the Rain／Lover／I've Got My Love to Keep Me Warm／What Is This Thing Called Love?。錄音 1958-11-02 Manhattan Towers, NYC（#1-6）與 1959-03-29 Van Gelder Studio, Hackensack（#7, 8）（Discogs 1773807 notes）；班底 Art Blakey d/timp、\"Philly\" Joe Jones d/timp、Roy Haynes d、Ray Barretto congas、Lee Morgan tp、Bobby Timmons p、Jymie Merritt b、Paul Chambers b；原始製作 Alfred Lion、發行製作 Michael Cuscuna、內頁 Kenny Washington、24-bit 轉錄 Ron McMaster。Discogs master 716987；日版 11772710 系列 `Blue Note Records Presents The Lost Sessions`。",
+    "rgMbid": "a82858a0-0e37-3d50-bcee-50b4fecd117e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a82858a0-0e37-3d50-bcee-50b4fecd117e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12299,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1958 年那晚台上擺了三套鼓，其中兩位鼓手還兼敲定音鼓。三位是 Blakey、Roy Haynes 與 Philly Joe Jones，再加上康加、小號、鋼琴與貝斯，八個人在 1958 年 11 月 2 日於紐約 Manhattan Towers 錄下前六軌。後兩軌是隔年 3 月 29 日在 Van Gelder 錄音室做的，盤面只掛兩個名字：Blakey 的鼓與 Paul Chambers 的貝斯。除了第 7 軌以外，這些母帶擱到 1999 年才出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a82858a0-0e37-3d50-bcee-50b4fecd117e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1773807",
+     "https://api.discogs.com/releases/11772710",
+     "https://api.discogs.com/releases/16149352",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf",
+     "https://itunes.apple.com/lookup?upc=724352145522&country=us",
+     "https://musicbrainz.org/release-group/a82858a0-0e37-3d50-bcee-50b4fecd117e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a3/92/f1/a392f171-da32-2e22-6899-d4838e889308/mzaf_3871074956393515399.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "738334090",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dizzy Reece",
+   "album": "Comin' On",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9be4b6a8-63ad-4caa-80d7-8f14394cf797。回問 release-group 端點：title「Comin' On」、artist-credit「Dizzy Reece」（cbde4132 Person）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：da4bf435（1999 US Official CD 9 軌，Blue Note 7243 5 22019 2 1，bc 724352201921）。九軌：Ye Olde Blues／The Case of the Frightened Lover／Tenderly／Achmet／The Story of Love／Sands／Comin' On／Goose Dance／The Things We Did Last Summer。錄音 1960-04-03（#1-5）與 1960-07-17（#6-9），皆 Van Gelder Studio, Englewood Cliffs（Discogs 2994108 notes）；班底 Dizzy Reece tp/congas（作曲亦是他）、Musa Kaleem ts/fl、Stanley Turrentine ts、Duke Jordan p、Bobby Timmons p、Sam Jones b、Jymie Merritt b、Al Harewood d、Art Blakey d；原始製作 Alfred Lion、發行製作與內頁 Michael Cuscuna、24-bit 轉錄 Ron McMaster。Discogs master 2094433。MB 同字串 artist 反查：`Dizzy Reece` 單一實體。",
+    "rgMbid": "9be4b6a8-63ad-4caa-80d7-8f14394cf797",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9be4b6a8-63ad-4caa-80d7-8f14394cf797/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 14567,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩場錄音之間留下來的，只有他的小號與 Stanley Turrentine 的次中音。九軌來自 1960 年 Van Gelder 錄音室的兩場：前五軌是 4 月 3 日，後四軌是 7 月 17 日，兩場的鋼琴、貝斯與鼓全部換人。4 月那天的錄音當年只取了一部分做成一張 LP，本張前五軌是剩下沒有收進去的。第 5 軌〈The Story of Love〉的原曲是巴拿馬作曲家寫的〈Historia de un amor〉。整張擱到 1999 年才出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9be4b6a8-63ad-4caa-80d7-8f14394cf797&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2994108",
+     "https://api.discogs.com/masters/2094433/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf",
+     "https://itunes.apple.com/lookup?upc=724352201921&country=us",
+     "https://musicbrainz.org/release-group/9be4b6a8-63ad-4caa-80d7-8f14394cf797"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/14/d5/9f14d597-361d-aa71-36e4-c88204128bfa/mzaf_13765497451161747128.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443266564",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ron Carter",
+   "album": "Orfeu",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4aa3ccb6-46e9-30e5-825a-dee9356416cb。回問 release-group 端點：title「Orfeu」、artist-credit「Ron Carter」（57db3f59 Person）、first-release-date `1999-11-02`、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：29380420（1999-11-02 US Official CD 7 軌，Blue Note 7243 5 22490 2 2，bc 724352249022）。七軌：Saudade／Manha De Carnaval／Por-do-sal（**MB 錯字，盤面是 Por-Do-Sol**）／Goin' Home／1:17 Special／Obrigado／Samba de Orfeu。錄音 1999 年 2 月（Discogs 9812452 notes，無日）；班底 Ron Carter b（兼製作與內頁）、Houston Person ts、Bill Frisell g、Stephen Scott p、Payton Crossley d、Steve Kroon perc；executive producer Hitoshi Namekata。Discogs master 1480204；日版 13179879 掛 `Somethin' Else TOCJ-68042`。",
+    "rgMbid": "4aa3ccb6-46e9-30e5-825a-dee9356416cb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4aa3ccb6-46e9-30e5-825a-dee9356416cb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2504,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2504，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "連續四年的每個一月，這組人一起飛巴西演出、泡夜店聽當地的音樂。那是 Carter 的貝斯、Stephen Scott 的鋼琴，加上鼓與打擊各一位；1999 年 2 月進棚時再添一支次中音薩克斯與 Bill Frisell 的吉他，六個人七軌全程。曲目有兩首取自電影《黑人奧菲斯》，其餘是 Carter 自己寫的，第 4 軌〈Goin' Home〉的旋律則來自德弗札克的《新世界》交響曲。製作與內頁解說都掛他的名字，美國的街頭日是 11 月 2 日。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4aa3ccb6-46e9-30e5-825a-dee9356416cb&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-11-13.pdf",
+     "https://api.discogs.com/releases/9812452",
+     "https://api.discogs.com/releases/13179879",
+     "https://api.discogs.com/masters/1480204/versions",
+     "https://itunes.apple.com/lookup?upc=724352249022&country=us",
+     "https://musicbrainz.org/release-group/4aa3ccb6-46e9-30e5-825a-dee9356416cb"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Patricia Barber",
+   "album": "Companion",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 323c32e6-f762-32fe-8979-d1f503ab3770。回問 release-group 端點：title「Companion」、artist-credit「Patricia Barber」（3e078819 Person）、first-release-date `1999`、primary-type Album、**secondary-types `[\"Live\"]`**，轄下 **10 個** release。release 端點（1999 年三筆）：3116a495（1999 US Official CD 8 軌，**label-info 只有 `Premonition Records=7243 5 22963 2 3`**，bc 724352296323）、52eec186（1999 US **status `Promotion`** CD 8 軌，label-info `Blue Note` ＋ `Premonition Records`，同 barcode）、7e73b09e（1999 US **status null** CD **7 軌**，label-info `Blue Note` ＋ `Premonition Records`，同 barcode）。其餘七筆皆為後續版本：39e60532（2004 KOCH KOC-CD-5739）、9eb2a5b8（2001 FIM XRCD 027）、32dd9da1（2003 MFSL UDSACD 2023 Hybrid SACD）、20b33889（2005 MFSL 2-45003 黑膠）、7baa7654（2013 Premonition 90762-1 黑膠 9 軌）、2d0086bd（2021 JP Impex IMP8327 24K 金碟）、5b1c4bec（2003-11-11 US，format null）。八軌：The Beat Goes On／Use Me／Like JT／Let It Rain／Touch of Trash／If This Isn't Jazz／Black Magic Woman／Announcement。錄音 1999-07-17～19 The Green Mill, Uptown Chicago（Discogs 9304271 notes）；班底 Patricia Barber p/voc/Hammond B-3、John McLean g、Michael Arnopol b、Eric Montzka d/perc、Ruben Alvarez perc；製作 Patricia Barber、executive producer Michael Friedman、錄音與混音 Jim Anderson。Discogs master 374522。紙本：Billboard 1999-07-17 p19 ＋ p34（合資案）、1999-10-09 p25（秋季廣告）。",
+    "rgMbid": "323c32e6-f762-32fe-8979-d1f503ab3770",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/323c32e6-f762-32fe-8979-d1f503ab3770/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 26556,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌廣告把賣點寫成一句話：七首歌，只收 EP 的價錢。這七軌是 1999 年 7 月 17 到 19 日在芝加哥 Green Mill 連錄三晚的現場，Barber 一個人兼鋼琴、人聲與 Hammond B-3，底下是四位樂手，唯一的客座只在第 5 軌現身。七軌裡她自己寫了四首，翻的包括 Sonny Bono 的〈The Beat Goes On〉，第 3 軌〈Like JT〉的 JT 是鋼琴家 Jacky Terrasson。同年的黑膠只收六軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=323c32e6-f762-32fe-8979-d1f503ab3770&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf",
+     "https://api.discogs.com/releases/9304271",
+     "https://api.discogs.com/releases/6376727",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-11-13.pdf",
+     "https://api.discogs.com/masters/374522/versions",
+     "https://itunes.apple.com/lookup?id=1679186284&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/323c32e6-f762-32fe-8979-d1f503ab3770"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/33/3e/44/333e447c-8dc3-204a-73ff-06c29eda140e/mzaf_6535011284415433917.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1679186284",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dr. John",
+   "album": "Duke Elegant",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b9419ca3-9b6e-3ca9-9744-b696457b8b69。回問 release-group 端點：title「Duke Elegant」、artist-credit「Dr. John」（fe0e1895 Person）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 5 個 release。release 端點：d92f45ef（1999 XE Official CD 12 軌，**Parlophone** 7243 5 23220 2 2，bc 724352322022）、864ccc96（1999 US Official CD 12 軌，**label-info `Parlophone`、無目錄號、無 barcode——Discogs 查無對應，疑為幽影版本**）、7056c25e（**2000** US Official CD 12 軌，**Blue Note** 7243 5 23220 2 2，同 barcode）、b4332a1e（2000 JP Official CD **13 軌**，Blue Note ＋ Parlophone `TOCP-65367`，bc 4988006777651，disambiguation「Japan with extra track」；**Discogs 15087660 把同一張日版的 `released` 記成 `1999-12-22`**）、1da8fc2b（**無日期** XW Digital 12 軌，bc 0724352322053）。十二軌：On the Wrong Side of the Railroad Tracks／I'm Gonna Go Fishin'／It Don't Mean a Thing (If It Ain't Got That Swing)／Perdido／Don't Get Around Much Anymore／Solitude／Satin Doll／Mood Indigo／Do Nothin' Till You Hear From Me／Things Ain't What They Used to Be／Caravan／Flaming Sword。錄音與混音 RPM Sound Studios, NYC；母帶 Sterling Sound（Discogs 2218592 notes）；班底 Dr. John p/B-3/voc、David Barard b、Herman Ernest III d、Bobby Broom g、Ronnie Cuber sax、Cyro Baptista perc；製作 Mac Rebennack，共同製作 The Lower 911，混音 Ray Bardani。Discogs master 468885。",
+    "rgMbid": "b9419ca3-9b6e-3ca9-9744-b696457b8b69",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b9419ca3-9b6e-3ca9-9744-b696457b8b69/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 14504,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首 Ellington 的曲目，出版年從 1931 一路排到 1959。盤面把年份逐軌印了出來，收在〈Flaming Sword〉上。Dr. John 彈鋼琴與 B3 並主唱，帶的是自己的樂隊 The Lower 911，貝斯、鼓與吉他三人同時兼和聲，另有薩克斯與打擊。製作欄掛的是他的本名 Mac Rebennack。歐版與日版 1999 年底先上架，美版隔年 2 月 1 日才出。這是他掛 Blue Note 的第一張、也是第 18 張領班盤。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b9419ca3-9b6e-3ca9-9744-b696457b8b69&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/3826258",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-01-22.pdf",
+     "https://api.discogs.com/releases/15087660",
+     "https://api.discogs.com/releases/2218592",
+     "https://api.discogs.com/masters/468885/versions",
+     "https://itunes.apple.com/lookup?upc=724352322022&country=us",
+     "https://musicbrainz.org/release-group/b9419ca3-9b6e-3ca9-9744-b696457b8b69"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/33/16/d6/3316d6fa-7a82-6547-c2a0-0225b0b09532/mzaf_12754903844953706999.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "695868256",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dianne Reeves",
+   "album": "Bridges",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0daa4493-5fe0-3de4-938e-fcf1d7037892。回問 release-group 端點：title「Bridges」、artist-credit「Dianne Reeves」（069c1f30 Person）、first-release-date `1999-05-04`、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：4598715f（1999-05-04 US Official CD 11 軌，**label-info 有 Blue Note 但 catalog-number 欄空**，bc 724383306022）、c92129c5（1999 XE Official CD 11 軌，Blue Note 7243 8 33060 2 2，同 barcode——**第 1364(4) 條「多國別條目共用同一個 barcode」的本批第二個樣本**）。十一軌：In Your Eyes／I Remember／Suzanne／Goodbye／Bridges／River／Olokun／Testify／Mista／1863／Make Someone Happy。製作 George Duke（Discogs 2442900）；班底逐軌變動，見 credit 欄：Kenny Garrett sax、Marcus Printup tp、Joe Locke vib/bass marimba、Romero Lubambo g、Billy Childs p、Mulgrew Miller p、Eduardo Del Barrio p、George Duke p/el-p、Stanley Clarke b、Reginald Veal b、Brian Blade d、Terri Lyne Carrington d、Munyungo Jackson perc、Manolo Badrena perc/bongos、Jimmy Z harmonica。Discogs master 1140995。紙本：Billboard 1999-04-10 p12（整篇專訪，街頭日 5/11）＋ 05-29／06-12／06-26／07-10／07-24／08-07／08-21 七期 `Top Jazz Albums` 榜位。",
+    "rgMbid": "0daa4493-5fe0-3de4-938e-fcf1d7037892",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0daa4493-5fe0-3de4-938e-fcf1d7037892/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 18569,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十九個樂手，光是鋼琴一個位置就換了四位。盤面把每個人出現在哪幾軌都標了出來，除了 Reeves 自己，十一軌裡沒有一個人全程在場：鼓由兩位對半分，貝斯只有〈Testify〉那一軌換人，四位鋼琴手裡有一位是製作人 George Duke，他另外也彈了其中兩軌的鍵盤。翻的四首沒有一首是爵士曲，分別出自 Peter Gabriel、Leonard Cohen、Milton Nascimento 與 Joni Mitchell。首發在日本，日版比美版早六天。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/2442900",
+     "https://api.discogs.com/releases/10999665",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-04-10.pdf",
+     "https://api.discogs.com/releases/16922481",
+     "https://itunes.apple.com/lookup?upc=724383306022&country=us",
+     "https://musicbrainz.org/release-group/0daa4493-5fe0-3de4-938e-fcf1d7037892"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/89/3c/ab/893cabb8-c393-e664-b924-0de141da1a5b/mzaf_14130657139572539145.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724937214",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cassandra Wilson",
+   "album": "Traveling Miles",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a5f6b597-4ea5-3a66-891f-925f6fbdf46d。回問 release-group 端點：title「Traveling Miles」、artist-credit「Cassandra Wilson」（eb6595d3 Person）、first-release-date `1999-03-03`、primary-type Album、secondary-types 空，轄下 7 個 release。release 端點：102bf300（1999-03-23 US Official CD 12 軌，Blue Note 7243 8 54123 2 5，bc 724385412325）、35cb47f3（**1999-03-03 登成 US** Official CD **13 軌**，Blue Note `TOCJ-66020(54123)`，**無 barcode——與日版重複建檔**）、e4f072ce（1999-03-03 JP Official CD 13 軌，Capitol Records `TOCJ-66020` ＋ Blue Note，bc 4988006764552）、9a791e4b（1999 AU CD 12 軌，同號同 barcode）、a31310b9（1999 XE CD 12 軌，同號同 barcode）、ae6701f8（2013-06-01 XW Digital 12 軌，bc 724385412356）、68632a45（2014 XW Digital 12 軌，bc 602537640942）。十二軌：Run the Voodoo Down／Traveling Miles／Right Here, Right Now／Time After Time／When the Sun Goes Down／Seven Steps／Someday My Prince Will Come／Never Broken (ESP)／Resurrection Blues (Tutu)／Sky and Sea (Blue in Green)／Piper／Voodoo Reprise。錄音 The Hit Factory, NYC 1997 年 12 月與 Bearsville Studios, NY 1998 年 5 月與 9 月，混音 1998 年 11 月，母帶 Sterling Sound（Discogs 492394 notes）；℗&© 1999 Capitol Records, Inc.。Discogs master 40918。紙本：Billboard 1999-03-06 封面導言＋p11 專訪（街頭日 3/23）＋p16（曲目與班底）、1999-04-03 p3（Regina Carter）、1999-04-10 p4／p19／p79（首次上榜）、1999-06-26／07-10 續榜、1999-11-20 p119（葛萊美提名作曲登記欄）。",
+    "rgMbid": "a5f6b597-4ea5-3a66-891f-925f6fbdf46d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a5f6b597-4ea5-3a66-891f-925f6fbdf46d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 101933,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Miles 掛作曲的那四軌，她掛的是作詞。整張是給 Miles Davis 的致敬盤，手法不是翻奏而是填詞，另外兩首的原曲分別出自 Wayne Shorter 與 Marcus Miller。班底逐軌換人：兩位低音提琴手分擔，三把吉他輪替，短號、中音薩克斯、小提琴與顫音琴各只上一兩軌；第 10 軌請來 Pat Metheny 的古典吉他，收尾那軌由 Angélique Kidjo 一起唱。首發在日本，日版比美版早二十天；同年的歐版雙片黑膠比美版 CD 多一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a5f6b597-4ea5-3a66-891f-925f6fbdf46d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/492394",
+     "https://api.discogs.com/releases/1669438",
+     "https://api.discogs.com/releases/3608461",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-04-17.pdf",
+     "https://itunes.apple.com/lookup?upc=724385412325&country=us",
+     "https://musicbrainz.org/release-group/a5f6b597-4ea5-3a66-891f-925f6fbdf46d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/dd/ae/acddaec4-c26a-8a07-61e2-8acfacc91b8c/mzaf_12926540631977086686.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443126397",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Richard Elliot",
+   "album": "Chill Factor",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8484adf6-2dc9-3f8a-9121-94ced1190d3f。回問 release-group 端點：title「Chill Factor」、artist-credit「Richard Elliot」（a64ccd0f Person）、first-release-date `1999-07-13`、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：9a2141f9（1999-07-13 US Official CD 11 軌，Blue Note 7243 8 57481 2 7，bc 724385748127）、62825a7c（1999 **country 欄 null** Official Digital Media 11 軌，**label-info 有 Blue Note、catalog-number 欄空**，bc 724385748158）。十一軌：Moomba／Chill Factor／Deep Touch／This Could Be Real／Who?／On the Fly／Adia／Like Butter／Kick It Up／Ain't Nothing Like the Real Thing／Mikayla's Smile。班底逐軌變動，見 Discogs 3109053 credit 欄：Richard Elliot sax、Peter White ac-g、Rick Braun flh、Tim Heintz kbd/org/p、Mitchel Forman kbd、Leon Bisquera kbd、Alex Al b、Little John Roberts d、Steve Dubin d/drum programming/producer、Lenny Castro perc、Luis Conte perc、吉他六位輪替。Discogs master 1697756（另有宣傳單曲 master 2489710）。紙本：Billboard 1999-08-07 p34（`Top Contemporary Jazz Albums` 第 8）、08-14 p14（`Heatseekers` 第 49 NEW）、10-09 p25（秋季全版廣告）、07-03 p45（Blue Note 全版藝人廣告列名）。",
+    "rgMbid": "8484adf6-2dc9-3f8a-9121-94ced1190d3f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8484adf6-2dc9-3f8a-9121-94ced1190d3f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 46578,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "真的貝斯只出現在四軌，六位吉他手每人彈一到兩軌。盤面逐人標了軌號，十一軌裡從頭在到尾的只有 Elliot 的薩克斯，鍵盤大半由一個人撐住，打擊由兩位分擔，兩位客座也各只現身一軌。翻的兩首是 Sarah McLachlan 的〈Adia〉與 Ashford & Simpson 的〈Ain't Nothing Like the Real Thing〉，十一軌裡唯一有人唱的是第 4 軌。製作人 Steve Dubin 一個人還兼了編程與其中一軌的鼓。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3109053",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-08-07.pdf",
+     "https://api.discogs.com/releases/27961743",
+     "https://api.discogs.com/masters/1697756/versions",
+     "https://itunes.apple.com/lookup?id=725841450&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/8484adf6-2dc9-3f8a-9121-94ced1190d3f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/f7/ef/f8f7ef04-d609-4a28-0230-46a20e441630/mzaf_3183516488087246544.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "725841450",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pieces of a Dream",
+   "album": "Ahead to the Past",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0bd6bea8-7366-39ac-ab9d-f2c9cd7276c5。回問 release-group 端點：title「Ahead to the Past」、artist-credit「Pieces of a Dream」（e958e595 **Group**）、first-release-date `1999`、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：537f4551（1999 US Official CD 12 軌，**Blue Note `98488`——緊縮形，不是完整目錄號**，**無 barcode**）。十二軌：Took So Long／Malibu Nights／Why Won't You Let Me Love You／Love You for Life／The Good Life／You and I／Philly High／It's You That I Want／Driving It Home／You／Bella Voce (Beautiful Voice)／Cry of the Lonely。**完整目錄號 `7243 4 98488 2 5` 出自 Discogs 4999526／18106942／8371460 與 master 943385；barcode 724349848825 出自 Apple `lookup?upc=` 命中。** 編制：**Discogs credit 欄與 notes 皆空、Apple 無資料、MB 無 recording credit——查不到。** 紙本：Billboard 1999-10-09 p25（秋季全版廣告）、1999-10-30 p30（`Top Contemporary Jazz Albums` 第 10）、1999-01-16 p55（六十週年特輯的全版藝人名單列名）。",
+    "rgMbid": "0bd6bea8-7366-39ac-ab9d-f2c9cd7276c5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0bd6bea8-7366-39ac-ab9d-f2c9cd7276c5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7468,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二軌全落在四分半到五分四十秒之間，像一份電台播放表。最短的四分二十五秒、最長的五分三十九秒，沒有一首跨過六分鐘。曲名在英文、西班牙文與義大利文之間來回，〈The Good Life (La Feliz Vida)〉與〈Bella Voce (Beautiful Voice)〉各帶一個副題。盤面另一側異常乾淨：五種版本的 credit 欄、內頁與作曲欄全部是空的，這張碟的樂手名單在現有的來源裡查不到。1999 年秋天上架，當代爵士榜連收三期，最高第 10 名。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4999526",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-30.pdf",
+     "https://api.discogs.com/masters/943385/versions",
+     "https://itunes.apple.com/lookup?id=738355232&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/0bd6bea8-7366-39ac-ab9d-f2c9cd7276c5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b3/e8/cb/b3e8cbe4-0092-b48c-a6e4-9eafbaa8044f/mzaf_7334873009562375975.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "738355232",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Benny Green",
+   "album": "These Are Soulful Days",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5e1b9fb6-0c25-3b7e-b20b-4cb633129131。回問 release-group 端點：title「These Are Soulful Days」、artist-credit「Benny Green」（28b5fcc9 Person）、first-release-date `1999-06-15`、primary-type Album、secondary-types 空，轄下 **1 個** release。release 端點：771a2264（1999-06-15 US Official CD 8 軌，**Blue Note `99527 2`——緊縮形**，bc 724349952720）。八軌：Virgo／Bellarosa／Summer Nights／Punjab／These Are Soulful Days／Ernie's Tune／Hocus-Pocus／Come on Home。錄音 1999-01-16、17 Avatar Studio, NYC（Discogs 4281427 notes）；班底 Benny Green p、Russell Malone g、Christian McBride b（**無鼓**）；錄音 Jim Anderson。完整目錄號 `7243 4 99527 2 0` 出自 Discogs 4281427／11717984／7434269 與 master 880947。MB 同字串 artist 反查：28b5fcc9（US jazz pianist，本卡）與 bded57f9（GB jazz saxophonist，1927–1998）兩個實體。紙本：Billboard 1999-07-03 p45（Blue Note Down Beat 年度廠牌全版廣告，列名）。",
+    "rgMbid": "5e1b9fb6-0c25-3b7e-b20b-4cb633129131",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5e1b9fb6-0c25-3b7e-b20b-4cb633129131/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10885,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八首曲子分屬七位爵士樂手，Horace Silver 一個人佔兩首。他的〈Virgo〉開場、〈Come On Home〉收尾，盤名那一首則是 Cal Massey 寫的，八軌裡沒有一首出自 Green 自己。編制是鋼琴、吉他與低音提琴三件，沒有鼓手，盤面零客座，1999 年 1 月 16、17 兩天在紐約 Avatar Studio 錄完。日本的東芝 EMI 先出，腰帶上印著 99-5-26，美國要到 6 月中才上架。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4281427",
+     "https://api.discogs.com/releases/12682473",
+     "https://api.discogs.com/masters/880947/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-07-03.pdf",
+     "https://itunes.apple.com/lookup?upc=724349952720&country=us",
+     "https://musicbrainz.org/release-group/5e1b9fb6-0c25-3b7e-b20b-4cb633129131"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/13/d6/e1/13d6e1ad-09fb-e84f-7af4-8089e33b6d71/mzaf_15286949603455369876.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723550137",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Flavio Boltro",
+   "album": "Road Runner",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b590d58b-a592-3ff2-afd4-e5add7d75605。release-group 端點（inc=artist-credits+releases+genres+tags）：title「Road Runner」、artist-credit「Flavio Boltro」（**fb7dacde Person／IT／1961-05-05**）、first-release-date 1999、primary-type Album、secondary-types 空、genres/tags 皆 `jazz`，轄下**只有 1 個 release**。release 端點（inc=media+labels+recordings+artist-credits）：7f212a23（1999、**無國別**、Official、CD 9 軌、label-info `Blue Note`／catno `F: PM 808`、**無 barcode**）。九軌：Matteo／Duo／Little Room／Flaviosphere／Hey Papa!／Vucceria／Tea in the Sahara／Ajo／Call（**Discogs 盤面作 Flaviosphère／Vucciria／Hey Papa !，MB 拼法有出入**）。MB 同字串 artist 反查（`artist?query=\"Flavio Boltro\"`）：fb7dacde（Person，本卡）＋四個群組 a7c0f41b `Flavio Boltro Quartet`／3634e41b `Flavio Boltro 5et`／79722647 `Flavio Boltro BBB Trio`／7bbf1445 `Fabrizio Bosso & Flavio Boltro Quintet`——**日後這些群組進池要與本卡的裸人名分清楚**。Discogs 7659190 是唯一一筆條目（無 master），credits 完整。",
+    "rgMbid": "b590d58b-a592-3ff2-afd4-e5add7d75605",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/49/fc/6c/49fc6c8a-4ecc-6f09-953a-3c278c60bca9/0724352334254_1404x1404_300dpi.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "695992109",
+    "note": "試聽探測釘定的 collectionId 695992109（gb）：Flavio Boltro — Road Runner"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 241,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=241，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張只在法國上架，九軌裡翻的那一首出自 Sting。義大利小號手 Flavio Boltro 1999 年在 EMI 法國旗下的 Blue Note 交出這張，只發了 CD。核心是四個人：他的小號與柔音號、Stefano Di Battista 的薩克斯、Eric Legnini 的鋼琴與鍵盤，再加一把吉他。貝斯由兩位分擔，鼓幾乎全程同一人，只有第 5 軌換手；另外兩位客座也各只待一軌，塔布拉鼓擺在第 6 軌。九軌裡六首掛他的名字。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/7659190",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-10-09.pdf",
+     "https://itunes.apple.com/lookup?id=695992109&country=fr&entity=song&limit=50",
+     "https://itunes.apple.com/search?term=Flavio%20Boltro%20Road%20Runner&country=jp&entity=album&limit=6",
+     "https://musicbrainz.org/ws/2/release?release-group=b590d58b-a592-3ff2-afd4-e5add7d75605&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/release-group/b590d58b-a592-3ff2-afd4-e5add7d75605"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b6/6f/45/b66f454c-f176-1106-4882-09242766e435/mzaf_961257582009237332.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "695992109",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bob Dorough",
+   "album": "Too Much Coffee Man",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f7979691-bd8d-32b5-ab05-29f7f7b3bdff。release-group 端點：title「Too Much Coffee Man」、artist-credit「Bob Dorough」（de81eacd Person）、first-release-date **2000**（無月日）、primary-type Album、secondary-types 空、**genres 與 tags 皆空**，轄下 1 個 release。release 端點：7c5e9d1d（2000、**無國別**、Official、CD 12 軌、label-info 廠牌 `Blue Note`／**catno 欄空**、bc 724349923928）。十二軌：The Coffee Song／Wake Up Sally, It's Saturday／There's Never Been a Day／I've Got Just About Everything／Oklahoma Toad／Too Much Coffee Man／Fish for Supper／Marilyn, Queen of Lies／Yesterday, I Made Your Breakfast／Where Is the Song?／Love (Webster's Definition)／Late in the Century（⚠ **Discogs 盤面第 1 軌作 `The Coffee Song (They've Got A Lot Of Coffee In Brazil)`、第 9 軌作 `Yesterday, I Made You Breakfast`（You 不是 Your）**）。Discogs master 2116969 轄下四筆：3006850（US 零售，`released` 2000-04-11）、25417801（US 促銷，`released` 2000-04）、18644311（US 先行宣傳 `7243 4 99239 2 8V`，notes 逐字 `Advance CD For Promotional Use Only - Not For Sale`，**第 1297 條：宣傳盤的日期只能當下界**）、29023141（Europe，模壓環帶 `F: PM 520`／`UK: 499 2392`）。錄音室與日期 Discogs 四筆皆未標。",
+    "rgMbid": "f7979691-bd8d-32b5-ab05-29f7f7b3bdff",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f7979691-bd8d-32b5-ab05-29f7f7b3bdff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 804,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=804，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二軌配了三組節奏組，各管四首。從頭在到尾的只有 Bob Dorough 一個人——他唱歌、彈鋼琴，還吹口哨。第 9 軌盤面上甚至沒有列節奏組。Phil Woods 的中音薩克斯只在四軌現身，三件銅管只出現在第 1、2、5 軌。十二首裡九首掛他自己的名字，翻的三首之一是 1946 年的老流行曲〈The Coffee Song〉。2000 年 4 月 11 日由 Blue Note 發行，製作人正是其中一組的鼓手。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3006850",
+     "https://api.discogs.com/masters/2116969/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-04-15.pdf",
+     "https://itunes.apple.com/lookup?upc=724349923928&country=us",
+     "https://musicbrainz.org/release-group/f7979691-bd8d-32b5-ab05-29f7f7b3bdff"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/f8/0e/69/f80e6945-83a7-bcd0-ab53-2e7c97957541/mzaf_1719119267153467222.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723471848",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dianne Reeves",
+   "album": "In the Moment",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a639773c-405f-3c01-8e68-b65cc4e30a53。release-group 端點：title「In the Moment」、artist-credit「Dianne Reeves」（069c1f30 Person）、first-release-date **2000-07-18**、primary-type Album、**secondary-types [\"Live\"]（標對 ✓）**、genres 與 tags 皆空，轄下 1 個 release。release 端點：8a759e23（**2000-07-18 US** Official CD 11 軌、label-info 廠牌 `Blue Note`／**catno 欄空**、bc 724352514120）。十一軌：Morning Has Broken／Afro Blue／The First Five Chapters／Triste／Bridges／Love for Sale／Come In／The Best Times (Grandma's Song)／Testify／Suzanne／Mista。Discogs master 1146186 轄下七筆（美版零售 2443132、促銷 10560023、Columbia House 19501996、BMG Direct 26977526、歐版 9930275、日版 TOCJ-66087 12596753、另一美版號 5166618）＋法國宣傳採樣 CDr 13335666（`Extraits De L'album \"In The Moment\"`，**第 1297 條：採樣盤不算發行**）。錄音 2000-01-20／21 Studio Instrument Rentals Sound Stage 1, Los Angeles；混音 Le Gonks West；製作 George Duke（George Duke Enterprises），錄音／混音 Erik Zobler，Design FX Remote Truck 出車。",
+    "rgMbid": "a639773c-405f-3c01-8e68-b65cc4e30a53",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a639773c-405f-3c01-8e68-b65cc4e30a53/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 471,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=471，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這場現場錄在洛杉磯一間音響器材公司的攝影棚裡。地點是 Studio Instrument Rentals 的第一號音響棚，2000 年 1 月 20、21 兩晚對著觀眾錄下十一軌。台上是她的巡演五人團，除吉他手以外全都兼和聲，打擊手跟了她十年。製作人 George Duke 以客座身分加鍵盤，第 4 軌〈Triste〉換他坐上鋼琴。7 月 18 日由 Blue Note 上街，隨後進了 Billboard 的 Top Jazz Albums 榜。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/2443132",
+     "https://api.discogs.com/releases/9930275",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-06-10.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-07-29.pdf",
+     "https://itunes.apple.com/lookup?id=738332243&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/a639773c-405f-3c01-8e68-b65cc4e30a53"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c0/af/51/c0af5153-6092-4c73-5d01-c1e07394618c/mzaf_16949922221379410176.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "738332243",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Everette Harp",
+   "album": "For the Love",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8161be5b-9cff-3fa4-893a-58a244ca85d8。release-group 端點：title「For the Love」、artist-credit「Everette Harp」（36888e42 Person）、first-release-date **2000**（無月日）、primary-type Album、secondary-types 空、genres 與 tags 皆 `jazz`，轄下 1 個 release。release 端點：4558c1ab（2000、**無國別**、Official、CD 10 軌、廠牌 `Blue Note`／**catno 欄空**、bc 724352132027）。十軌：So Automatic／I Just Can't Let Go／I Miss You With Me／I Can't Take It Anymore／Right Back at Ya／Love Conditionally／We Don't Have to Say Goodbye／Dancin' With You／Where Were You When I Needed You／Put It Where You Want It（**MB 用彎引號 `’`，Discogs 用直引號**）。Discogs master 961002 轄下五筆（11064776 美版零售、38030256 美版促銷、15020813 先行宣傳 `7243 5 21320 2 7V`、8137585 BMG Direct、6287632 歐版）；**錄音期間只有歐版 6287632 的 notes 有寫**（`Recorded January - May 2000`）。",
+    "rgMbid": "8161be5b-9cff-3fa4-893a-58a244ca85d8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/71/fd/f5/71fdf546-bf50-0854-2fdb-1bb2faaa008f/13ULAIM49083.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724760225",
+    "note": "試聽探測釘定的 collectionId 724760225（us）：Everette Harp — For the Love"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4066,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十軌其實是三批人各做各的，第七軌他還自己唱了主唱。六軌交給製作人 Steve Dubin，三軌由 Everette Harp 自己製作，第 4 軌則整個外包給另一組團隊、主唱換成 G. LaBeaud。收尾的〈Put It Where You Want It〉出自 Joe Sample。2000 年秋天由 Blue Note 發行，同年 11 月進 Billboard 的 Top Contemporary Jazz Albums 第 18 名。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/11064776",
+     "https://api.discogs.com/releases/3109053",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-09-16.pdf",
+     "https://itunes.apple.com/lookup?upc=724352132027&country=us",
+     "https://musicbrainz.org/release-group/8161be5b-9cff-3fa4-893a-58a244ca85d8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c5/9f/35/c59f3571-6637-3986-6fbc-c85308f0c55d/mzaf_7444501437245773321.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724760225",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark Shim",
+   "album": "Turbulent Flow",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cd41beee-29aa-373d-b3d5-2d037f6e09bf。release-group 端點：title「Turbulent Flow」、artist-credit「Mark Shim」（26dfe5ce Person／JM）、first-release-date **2000-03-28**、primary-type Album、secondary-types 空、**genres 與 tags 皆空**，轄下 1 個 release。release 端點：9648683c（**2000-03-28**、**無國別**、Official、CD 9 軌、廠牌 `Blue Note`／**catno 欄空**、**無 barcode**）。九軌：Turbulent Flow／Recorda Me／Christel Gazing／Survival Tactics／Don't Wake The Violent Baby／Dirty Bird／Scorpio／Jive Ones／Eminence (For Betty Carter)（⚠ **先行宣傳盤 14337172 把第 9 軌拼成 `Eminenece`**）。Discogs master 1570554 轄下六筆：13164156（US 零售，notes `Recorded February 3 and 4, 1999.`）、37235796（US 促銷）、14337172（US 先行宣傳 `…2 9V`，紙套）、21548233（BMG Direct）、3420633（Europe）、31585648（**JP TOCJ-66069，`released` 2000-03-23，notes 另記混音與母帶 1999-06-04**）。班底（Discogs credits 逐字）：Mark Shim ts／ss 兼製作、Edward Simon p／Rhodes、Drew Gress b、Eric Harland d、Stefon Harris vib／marimba；錄音 Joe Marciano、混音與母帶 James Nichols。",
+    "rgMbid": "cd41beee-29aa-373d-b3d5-2d037f6e09bf",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cd41beee-29aa-373d-b3d5-2d037f6e09bf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 589,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=589，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "顫音琴手只出現在三軌，其中兩軌他換成馬林巴。那位客座是 Stefon Harris；九軌全程的只有 Drew Gress 的低音提琴與 Eric Harland 的鼓。Mark Shim 自己也逐軌換樂器，七軌吹次中音、兩軌換高音。1999 年 2 月 3、4 兩天在布魯克林 Systems Two 錄完，同年 6 月才混音與做母帶，2000 年 3 月由 Blue Note 發行，首發在日本、日版早了五天。九軌裡他寫七首，另兩首出自 Joe Henderson 與鼓手。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/13164156",
+     "https://api.discogs.com/releases/31585648",
+     "https://api.discogs.com/releases/3420633",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-03-25.pdf",
+     "https://itunes.apple.com/lookup?upc=724382339229&country=us",
+     "https://musicbrainz.org/release-group/cd41beee-29aa-373d-b3d5-2d037f6e09bf"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/b7/1d/91/b71d91fa-f0a6-321b-e074-f1445438dcff/mzaf_6796646757016278949.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724777637",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jackie McLean",
+   "album": "Nature Boy",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cc64c879-e2f6-3484-bc2b-171fe3a3cff9。release-group 端點：title「Nature Boy」、artist-credit「Jackie McLean」（5b6993ef Person）、first-release-date **2000-02-01**、primary-type Album、secondary-types 空、genres／tags 皆 `jazz`，轄下 **1 個 release（MB 完全沒有建日版）**。release 端點：01fa6168（**2000-02-01 US** Official CD 8 軌、廠牌 `Blue Note`／catno **`5232732`（緊縮形，正盤是 `7243 5 23273 2 4`）**、bc 724352327324）。八軌：You Don't Know What Love Is／Nature Boy／I Can't Get Started With You／What Is This Thing Called Love／I Fall in Love Too Easily／Smoke Gets in Your Eyes／Star Eyes／A Nightingale Sang in Berkeley Square（**Discogs 三筆把第 3 軌作 `I Can't Get Started`，無 `With You`**）。Discogs master 1340374 七筆：12133379（**JP 1999 Somethin' Else TOCJ-68045**）、26273702（JP 1999 宣傳盤，同號）、11608787（US 2000，notes 逐字 `Recorded in New York City on June 12 & 13, 1999.`）、37619436（US 2000 促銷）、15412989（US 2000 先行宣傳 `…2 4V`）、5029549＋26582069（歐版 2000；**26582069 的模壓環帶 `F:PM 520`——與同批 Boltro 那筆 `F: PM 808` 同一種壓片代碼，不是目錄號**）。錄音 Avatar Studios, NYC 1999-06-12／13；製作 Hitoshi Namekata（東芝 EMI）＋McLean 共同製作。",
+    "rgMbid": "cc64c879-e2f6-3484-bc2b-171fe3a3cff9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cc64c879-e2f6-3484-bc2b-171fe3a3cff9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1529,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1529，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八首全是別人的老歌，盤名那一首拉到九分半。Jackie McLean 一首都沒寫，〈Nature Boy〉出自 Eden Ahbez。四個人從頭到尾、零客座：他的中音薩克斯，底下是 Cedar Walton 的鋼琴、David Williams 的低音提琴、Billy Higgins 的鼓。1999 年 6 月在紐約 Avatar Studios 錄音與混音；同年 9 月先以 Somethin' Else 的名義在日本上架，美歐版隔年 2 月才跟進。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/12133379",
+     "https://itunes.apple.com/lookup?upc=724352327324&country=us",
+     "https://api.discogs.com/releases/11608787",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-02-05.pdf",
+     "https://api.discogs.com/releases/26582069",
+     "https://itunes.apple.com/lookup?id=738336042&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/cc64c879-e2f6-3484-bc2b-171fe3a3cff9"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joe Lovano",
+   "album": "52nd Street Themes",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 898ef672-4c1b-3946-bdf5-58b204bbba64。release-group 端點：title「52nd Street Themes」、artist-credit **「Joe Lovano」**（f3f7cd82 Person）、first-release-date **2000-04-25**、primary-type Album、secondary-types 空、genres／tags 皆 `jazz`，轄下 2 個 release。release 端點：4d0ca043（**2000-04-25 US** Official CD 13 軌、`Blue Note 7243 4 96667 2 6`、bc 724349666726、**release credit 作 `Joe Lovano Nonet`**）、7db2da08（**2000-05-01 GB** Official CD 13 軌、同 catno、bc **0724349666726**、credit 同）。十三軌：If You Could See Me Now／On a Misty Night／Sippin' at Bells／Passion Flower／Deal／The Scene Is Clean／Whatever Possess'd Me／Charlie Chan／Theme for Ernie／Tadd's Delight／Abstractions on 52nd Street／52nd Street Theme／Embraceable You。Discogs master 666497 六筆＋加拿大版 37681245（無 master）。錄音（歐版 2635314 notes 逐字）：`Recorded at Avatar Studio A, Nov. 3 & 4, 1999 live to 2-track analog tape / Mastered November 8, 1999`。班底 credits：Lovano ts、George Garzone ts、Ralph Lalama ts、Steve Slagle as、Gary Smulyan bs、Conrad Herwig tb、Tim Hagans tp、John Hicks p、Dennis Irwin b、Lewis Nash d；Willie Smith 配器、James Farber 錄音、Greg Calbi 母帶、Michael Cuscuna 內頁、Judi Silvano 助理製作。",
+    "rgMbid": "898ef672-4c1b-3946-bdf5-58b204bbba64",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/898ef672-4c1b-3946-bdf5-58b204bbba64/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2833,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2833，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十三軌裡 Tadd Dameron 一個人就佔了五首。其餘從 Miles Davis 排到 Monk，Joe Lovano 自己只寫兩首。編制是十位樂手：五把薩克斯，加上小號與長號各一，底下是鋼琴、貝斯與鼓。1999 年 11 月 3、4 兩天在紐約 Avatar 的 A 棚錄完，而且是直接錄到兩軌類比盤帶上，四天後就做母帶。2000 年由 Blue Note 發行，5 月 13 日那期以新進之姿登上 Billboard 的 Top Jazz Albums 第 20 名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=898ef672-4c1b-3946-bdf5-58b204bbba64&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/14169539",
+     "https://api.discogs.com/releases/5141227",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-05-13.pdf",
+     "https://api.discogs.com/releases/37681245",
+     "https://itunes.apple.com/lookup?upc=724349666726&country=us",
+     "https://musicbrainz.org/release-group/898ef672-4c1b-3946-bdf5-58b204bbba64"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0a/59/92/0a5992b5-7ecb-bd48-cbe7-ce295ec8121e/mzaf_15953759938309194339.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723962028",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Greg Osby",
+   "album": "The Invisible Hand",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 75c78aac-38b6-32e6-a2a1-530ebf8a84ab。release-group 端點：title「The Invisible Hand」、artist-credit「Greg Osby」（bbef05c0 Person）、first-release-date **2000**（無月日）、primary-type Album、secondary-types 空、**genres 與 tags 皆空**，轄下 1 個 release。release 端點：39781ad7（2000 US Official CD 10 軌、`Blue Note 7243 5 20134 2 5`、bc 724352013425）。十軌：Ashes／Who Needs Forever／The Watcher／Jitterbug Waltz／Sanctus／Indiana／Nature Boy／Tough Love／With Son／The Watcher 2。Discogs master 1445900 五筆（4823757 美版零售、37117518 美版促銷、14337181 先行宣傳 `…2 5V`、11834804 歐版、12883526 無日期歐版再壓）。錄音與混音（美版 4823757 notes 逐字）：`Recorded at Systems Two, Brooklyn, NY 9/8/99 & 9/9/99 by Joseph Marciano / Mixed at Systems Two, Brooklyn, NY 10/1/99 & 10/2/99 / Mastered at Foothill Digital, NYC by Nicholas Prout`；製作 Greg Osby for Oztone Productions、共同製作 Kay Vaughn。",
+    "rgMbid": "75c78aac-38b6-32e6-a2a1-530ebf8a84ab",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/75c78aac-38b6-32e6-a2a1-530ebf8a84ab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 4523,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "台上的鋼琴手與吉他手各交出自己的曲，領班只寫了三首。寫〈Ashes〉與〈Tough Love〉的是鋼琴的 Andrew Hill，〈Sanctus〉出自吉他的 Jim Hall，兩位都比 Greg Osby 年長一輩。六人固定：Osby 的中音薩克斯兼單簧管、Gary Thomas 的長笛與次中音，底下是貝斯與鼓。1999 年 9 月 8、9 兩天在布魯克林 Systems Two 錄，2000 年才由 Blue Note 發行，只有 CD。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4823757",
+     "https://api.discogs.com/releases/10885950",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-09-16.pdf",
+     "https://itunes.apple.com/lookup?upc=724352013425&country=us",
+     "https://musicbrainz.org/release-group/75c78aac-38b6-32e6-a2a1-530ebf8a84ab"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8c/94/14/8c9414f8-79d5-2e53-5cbb-c3500c33cfe6/mzaf_1928816941235568416.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724207324",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ronny Jordan",
+   "album": "A Brighter Day",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 37b7f262-ec99-38c7-b5a1-674e196b6db2。release-group 端點：title「A Brighter Day」、artist-credit「Ronny Jordan」（50b3ef68 Person）、first-release-date **2000-02-16**、primary-type Album、secondary-types 空、genres／tags 四個（acid jazz／electronic／jazz／jazz-funk），轄下 2 個 release。release 端點：407b942d（**2000-02-16 JP** Official CD **15 軌**、`Blue Note TOCP-65391`、bc 4988006779167）、d3ac2211（**2000-03-14 US** Official CD 14 軌、`Blue Note 7243 5 20208 2 9`、bc 724352020829）。日版十五軌：A Brighter Day／Aftermath／Mackin／Why／Mystic Voyage／Breauxlude／London Lowdown／Two Worlds／Mambo Inn／Rio／New Delhi／Seeing Is Believing／5/8 In Flow／State of Grace／A Brighter Day (remix)。Discogs master 123939 十筆（含英國黑膠 600090、Jazz Heritage Society 版 32380191、先行宣傳 36653185）＋ master 294128 的 Rawkus remix 12 吋兩筆（185299／2602016，掛名 `Ronny Jordan Featuring Mos Def`）＋ master 1430827 的美國宣傳單曲 9674136（`7087 6 14607 2 8`）。錄音與混音細節見加拿大版 3378985 notes（Skyelab／Unique／DJ Spinna Studios／BMG／Sound On Sound／Masterdisk，1999 年 3–8 月）。",
+    "rgMbid": "37b7f262-ec99-38c7-b5a1-674e196b6db2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/37b7f262-ec99-38c7-b5a1-674e196b6db2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 27981,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第五軌翻的是 Roy Ayers 的曲，顫音琴也是他本人彈的。十四軌裡 Ronny Jordan 的吉他是唯一的定軸，底下逐軌換人，他自己還兼貝斯與鼓的編程。第 6 軌只有五十二秒，用的是已故吉他手 Zachary Breaux 的取樣。1999 年 3 月到 11 月分在四間紐約錄音室做完，2000 年由 Blue Note 發行，同時出了英國黑膠。當年春天起在 Billboard 的 Top Contemporary Jazz Albums 榜上待了六期。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6156696",
+     "https://api.discogs.com/releases/600090",
+     "https://api.discogs.com/releases/35569849",
+     "https://api.discogs.com/releases/3378985",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-04-01.pdf",
+     "https://itunes.apple.com/search?term=Ronny%20Jordan%20A%20Brighter%20Day&country=jp&entity=album&limit=6",
+     "https://musicbrainz.org/release-group/37b7f262-ec99-38c7-b5a1-674e196b6db2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/02/7f/4f027ff9-aa2f-1f89-664b-1cef6bbdf0d8/mzaf_7765275373818875210.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "725789804",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chucho Valdés",
+   "album": "Live at the Village Vanguard",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b8a51dc6-6b61-3739-a1fa-82b10e23b9cf。release-group 端點：title「Live at the Village Vanguard」、artist-credit「Chucho Valdés」（6999d571 Person）、first-release-date **2000**（無月日）、primary-type Album、**secondary-types [\"Live\"]（標對 ✓）**、genres／tags 四個（afro-cuban jazz／jazz／latin／latin jazz），轄下 1 個 release。release 端點：8b03681b（2000 US Official CD **9 軌**、`Blue Note 7243 5 20730 2 3`、bc 724352073023）。⚠ **MB 的 track-count 登 9、軌目列出 10 個標題**（Anabis／Son XXI／Punto cubano／My Funny Valentine／To Bud Powell／Drume negrita／Como traigo la yuca／Ponte la clave／Encore／Lorraine's Habenera）——**第 1364(8) 條「track-count 與軌目不一致」在本組的第一個樣本**；⚠ **`Lorraine's Habenera` 的正確拼法是 `Habanera`，MB 抄了盤面的錯**。Discogs master 862619 七筆：3480058（US 零售）、37702605（US 促銷）、14337168（US 先行宣傳 `…2 3V`）、8480648（BMG Direct）、7260837（歐版，**notes 逐字 `Recorded April 9 & 10, 1999.`，是七筆裡唯一寫錄音日的**）、18787333（加拿大 `CDP 520730`）、11496836（**日版宣傳 `TOCJ-66085`**）。**七筆的 credits 全部沒有樂手欄。**",
+    "rgMbid": "b8a51dc6-6b61-3739-a1fa-82b10e23b9cf",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b8a51dc6-6b61-3739-a1fa-82b10e23b9cf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6481,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "台上四個人，古巴的巴塔鼓與爵士鼓同時擺著。打宗教鼓的是 Roberto Vizcaíno，爵士鼓組交給 Raul Pineda Roque，Chucho Valdés 自己彈鋼琴，另有一把低音提琴。這九軌 1999 年 4 月 9、10 兩晚在紐約錄下，2000 年才由 Blue Note 發行。唯一有人聲的是第 6 軌的古巴搖籃曲〈Drume Negrita〉，唱的是他妹妹 Mayra Caridad Valdés。收尾那首盤面標成安可。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/3480058",
+     "https://api.discogs.com/releases/7260837",
+     "https://api.discogs.com/masters/862619/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-04-29.pdf",
+     "https://itunes.apple.com/lookup?upc=724352073023&country=us",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-01-22.pdf",
+     "https://musicbrainz.org/release-group/b8a51dc6-6b61-3739-a1fa-82b10e23b9cf"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c3/26/05/c3260581-d5b2-9615-949e-cb496bc6f481/mzaf_305873357343479516.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724342730",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Eliane Elias",
+   "album": "Everything I Love",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c4b0c79e-e59b-3d67-ad76-a0824833c092。release-group 端點：title「Everything I Love」、artist-credit「Eliane Elias」（9974cbc1 Person）、first-release-date **2000**（無月日）、primary-type Album、secondary-types 空、genres／tags 皆 `jazz`，轄下 1 個 release。release 端點：c68a4bb2（2000 US Official CD **track-count 13**、`Blue Note 7243 5 20827 2 8`、bc 724352082728）——**軌目卻有 16 筆**：Bowing to Bud／Nostalgia in Times Square／The Beat of My Heart／I Fall in Love Too Easily／Everything I Love／Introduction #1／If I Should Lose You／They Say It's Wonderful／I Love You／That's All It Was／Introduction #2／Alone Together／Woody 'n You／Blah Blah Blah／Introduction #3／Autumn Leaves。Discogs master 1536977 六筆（15521290 美版零售、14041330 美版促銷、15020763 先行宣傳（1999）、3833275 歐版、13413949 無日期歐版再壓、16922775 日版 TOCJ-66078）。班底 credits：Eliane Elias p、Marc Johnson b（兼共同製作）、Christian McBride b、Carl Allen d、Jack DeJohnette d；錄音與混音 Avatar Studios 1999 年 5／6 月，母帶 Greg Calbi（Sterling Sound）。",
+    "rgMbid": "c4b0c79e-e59b-3d67-ad76-a0824833c092",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c4b0c79e-e59b-3d67-ad76-a0824833c092/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 28171,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "有三首曲子前面掛了她自己寫的鋼琴引子。盤面把它們標成 Introduction #1 到 #3。這十三軌是鋼琴三重奏，節奏組卻分成兩組：Christian McBride 的貝斯與 Carl Allen 的鼓管頭尾四軌，Marc Johnson 的貝斯與 Jack DeJohnette 的鼓管中段與收尾。Eliane Elias 自己只在四軌開口唱。1999 年 5、6 月在紐約 Avatar Studios 錄完，2000 年由 Blue Note 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15521290",
+     "https://api.discogs.com/releases/3833275",
+     "https://api.discogs.com/releases/13413949",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-06-03.pdf",
+     "https://itunes.apple.com/lookup?upc=724352082728&country=us",
+     "https://musicbrainz.org/release-group/c4b0c79e-e59b-3d67-ad76-a0824833c092"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f4/eb/70/f4eb709b-83ad-3374-6ca2-5a8d9611e64e/mzaf_13867670266838086435.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "725830726",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kurt Elling",
+   "album": "Live in Chicago",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fc977779-48c0-3bd1-b71a-cbce55484d4a。release-group 端點：title「Live in Chicago」、artist-credit「Kurt Elling」（4d39b9be Person）、first-release-date **2000-01-11**、primary-type Album、**secondary-types [\"Live\"]（標對 ✓）**、genres／tags `jazz`＋`vocal jazz`，轄下 1 個 release。release 端點：7f543039（**2000-01-11 US** Official CD 14 軌、`Blue Note 7243 5 22211 2 7`、bc 724352221127）。十四軌：Downtown／My Foolish Heart／Smoke Gets in Your Eyes／Oh My God／Night Dream／(I Love You) for Sentimental Reasons／Intro: (Esperanto)／Esperanto／Don't Get Scared／Intro: (Goin' to Chicago)／Goin' to Chicago／Intro: (The Rent Party)／The Rent Party／Blues Cleaner。Discogs master 502751 五筆：4121220（**US，`released` 2000-01-11**）、3736099（UK，`year` 1999，catno `522 2112`，廠牌欄第二格 `Green Mill`）、8332171（Europe，`year` 1999）、10538492（Australia，`year` 1999，catno `5222112`）、16150326（US 先行宣傳 `…2 7V`，1999）。班底：Kurt Elling voc（兼製作）、Laurence Hobgood p（兼製作）、Rob Amster b、Michael Raynor d；客座 Von Freeman／Ed Petersen／Eddie Johnson ts、Kahil El'Zabar perc／voice、Jon Hendricks voc。",
+    "rgMbid": "fc977779-48c0-3bd1-b71a-cbce55484d4a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fc977779-48c0-3bd1-b71a-cbce55484d4a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4361,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "連錄三晚的那間店，正是他每週三駐唱的地方。1999 年 7 月 14 到 16 日在芝加哥 Green Mill 錄下十四軌。常態班底是 Laurence Hobgood 的鋼琴加上貝斯與鼓；美版盤面另把五位客座全標成特別來賓，三把次中音薩克斯，加上 vocalese 的 Jon Hendricks。2000 年 1 月 11 日由 Blue Note 上街，2 月 5 日那期進 Billboard 的 Top Jazz Albums 第 22 名。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/4121220",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-01-08.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-02-05.pdf",
+     "https://api.discogs.com/masters/502751/versions",
+     "https://itunes.apple.com/lookup?upc=724352221127&country=us",
+     "https://api.discogs.com/releases/11942922",
+     "https://musicbrainz.org/release-group/fc977779-48c0-3bd1-b71a-cbce55484d4a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/f1/e3/a3f1e364-e755-8869-b29a-680d772f3a36/mzaf_8734936727312039758.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723467420",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Medeski Martin & Wood",
+   "album": "The Dropper",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 61d35a8c-3ee0-346e-86d5-b20d218ea5db。release-group 端點：title「The Dropper」、artist-credit **「Medeski, Martin & Wood」（6eed1ed9 Group，帶逗號）**、first-release-date **2000-10-12**、primary-type Album、secondary-types 空、genres／tags `electronic`／`experimental`／`jazz-funk`，轄下 2 個 release。release 端點：182c81c7（**2000-10-24 US** Official CD 13 軌、label-info 兩筆（`Blue Note`／`22841` 與 `Blue Note`／`7243 5 22841 2 2`）、bc 724352284122）、5fd32fce（**2000-10-12 JP** Official CD **15 軌**、`東芝EMI 株式会社`／`TOCP-65587`、bc 4988006785915）。美版十三軌：We Are Rolling／Big Time／Fèlic／Partido Alto／Illinization／Bone Digger／Note Bleu／The Dropper／Philly Cheese Blunt／Sun Sleigh／Tsukemono／Shacklyn Knights／Norah 6。Discogs master 127975 十餘筆（含美歐黑膠、宣傳 12 吋、先行採樣、2021 VMP 再壓、2001 俄羅斯盜版）。錄音 Shacklyn（Brooklyn）、混音 Greene Street（NYC），皆標 `1999-2000`；母帶 Howie Weinberg（Masterdisk）。",
+    "rgMbid": "61d35a8c-3ee0-346e-86d5-b20d218ea5db",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/61d35a8c-3ee0-346e-86d5-b20d218ea5db/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2170,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2170，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七位客座各只待一兩軌，其中一位來自 Sun Ra Arkestra。Marshall Allen 與康加手 Eddie Bobé 一起擺在〈Partido Alto〉，Marc Ribot 的吉他掛在第 6 到 8 軌——盤面逐軌標了誰在哪裡。錄音在布魯克林自家的 Shacklyn、混音在 Greene Street，兩段都跨 1999 到 2000 兩年。2000 年 10 月 24 日由 Blue Note 發行，碟裝在六摺紙盒裡。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/14823855",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-09-16.pdf",
+     "https://api.discogs.com/masters/127975/versions",
+     "https://itunes.apple.com/lookup?upc=724352284122&country=us",
+     "https://musicbrainz.org/release-group/61d35a8c-3ee0-346e-86d5-b20d218ea5db"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/78/63/ea/7863ea3a-29b4-702a-38d7-3e7f6fb72aef/mzaf_2025737407890976847.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "725822638",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stefon Harris / Jason Moran / Greg Osby / Mark Shim",
+   "album": "New Directions",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a1ffde48-d5ea-4088-ac78-da7ada06549c。release-group 端點：title「New Directions」、artist-credit **「Stefon Harris」(a18b2895) / 「Jason Moran」(2f97f8ef) / 「Greg Osby」(bbef05c0) / 「Mark Shim」(26dfe5ce)**（四個 Person，join phrase ` / `）、first-release-date **2000**（無月日）、primary-type Album、secondary-types 空、genres／tags `contemporary jazz`／`hard bop`／`jazz`，轄下 1 個 release。release 端點：82bf3e61（2000 **XE** Official CD 13 軌、`Blue Note 7243 5 22978 2 5`、bc 724352297825）。十三軌：Theme From Blow Up／The Sidewinder／Ping Pong／Beatrice／No Room for Squares／Song for My Father／Tom Thumb／Commentary on Electrical Switches／Big Bertha／Recorda Me／Song of the Whispering Banshee／False Start／20 Questions。**日版 9 軌（Discogs 17897152）**：Theme From Blow Up／The Sidewinder／No Room For Squares／Ping Pong／Song For My Father／Tom Thumb／Big Bertha／Recorda-Me／20 Questions——**美歐版多出的四軌是 Beatrice／Commentary on Electrical Switches／Song of the Whispering Banshee／False Start**。錄音 1999-05-10／11 Van Gelder Studio（Discogs 美版寫 Hackensack、日版寫 Englewood Cliffs——**兩地名打架，以日版的 Englewood Cliffs 為準：Van Gelder 1959 年就搬離 Hackensack**）。",
+    "rgMbid": "a1ffde48-d5ea-4088-ac78-da7ada06549c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a1ffde48-d5ea-4088-ac78-da7ada06549c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 16,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=16，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九軌重做的是廠牌自己的老目錄，錄在 Van Gelder 的棚裡。收音與重混都由 Rudy Van Gelder 本人經手，翻的從〈The Sidewinder〉排到〈Song for My Father〉，十三軌裡自作只有三首。掛名的四位是 Stefon Harris 的顫音琴、Jason Moran 的鋼琴、Greg Osby 的中音、Mark Shim 的次中音；編制逐軌變動，〈Beatrice〉只剩顫音琴與鋼琴的二重奏。1999 年 5 月錄音，2000 年發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/12600373",
+     "https://api.discogs.com/releases/3226148",
+     "https://api.discogs.com/releases/17897152",
+     "https://itunes.apple.com/lookup?id=716409560&country=jp&entity=song&limit=200",
+     "https://coverartarchive.org/release-group/a1ffde48-d5ea-4088-ac78-da7ada06549c",
+     "https://musicbrainz.org/release-group/a1ffde48-d5ea-4088-ac78-da7ada06549c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/94/ad/a794ade3-37b3-91df-dd4f-c1fdc589efb4/mzaf_14980265006185734633.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "716409560",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bob Dorough & Dave Frishberg",
+   "album": "Who's on First?",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e103965e-7de5-3aa3-81cd-c37d31b0fc1d。release-group 端點：title「Who's on First?」、artist-credit「Bob Dorough」（de81eacd Person）＋ ` & ` ＋「Dave Frishberg」（83a0c20a Person）、first-release-date **2000-10-24**、primary-type Album、**secondary-types [\"Live\"]（標對 ✓）**、genres／tags `jazz`＋`pop`，轄下 1 個 release。release 端點：9d605e00（**2000-10-24 US** Official CD 17 軌、`Blue Note 7243 5 23403 2 3`、bc 724352340323）。十七軌：Rockin' in Rhythm／Who's on First?／Lookin' Good／Too Long in L.A.／You Are There／The Underdog (intro)／The Underdog／Where You At? (intro)／Where You At?／Health Food Nut／Devil May Care／Nothing Like You／Hong Kong Blues／I'm Hip (intro)／I'm Hip／At the Saturday Dance／Conjunction Junction。Discogs master 1708567 三筆：2595603（US 零售，**notes 逐字 `Recorded live November 5 - 7, 1999 in Los Angeles.`**，companies 欄有 `The Jazz Bakery`）、23319284（BMG Direct 俱樂部版，另掛 `Red Rock Recording`）、15020734（US 先行宣傳 `…2 3V`）。**三筆的 credits 都沒有樂手欄。**",
+    "rgMbid": "e103965e-7de5-3aa3-81cd-c37d31b0fc1d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e103965e-7de5-3aa3-81cd-c37d31b0fc1d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 74,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=74，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩台鋼琴、兩個人唱，盤面上沒有別的樂手。Bob Dorough 與 Dave Frishberg 各自鋼琴兼人聲，1999 年 11 月 5 到 7 日連三晚在洛杉磯錄下十七軌。曲目對半分：Frishberg 寫了盤名那首棒球歌，Dorough 這邊有〈Devil May Care〉，收尾的〈Conjunction Junction〉是他給《Schoolhouse Rock!》寫的文法歌。2000 年 10 月 24 日由 Blue Note 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/2595603",
+     "https://api.discogs.com/releases/23319284",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-09-16.pdf",
+     "https://itunes.apple.com/search?term=Bob%20Dorough%20Dave%20Frishberg%20Who%27s%20on%20First&country=us&entity=album&limit=6",
+     "https://api.discogs.com/masters/1708567/versions",
+     "https://coverartarchive.org/release-group/e103965e-7de5-3aa3-81cd-c37d31b0fc1d",
+     "https://musicbrainz.org/release-group/e103965e-7de5-3aa3-81cd-c37d31b0fc1d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/e2/35/13/e23513ef-61a3-0e27-d26c-a06c9c038ad1/mzaf_4279949887596608611.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723535815",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brian Blade Fellowship",
+   "album": "Perceptual",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 70e88a86-1b9e-39eb-8c44-cab9c14d9384。release-group 端點：title「Perceptual」、artist-credit「Brian Blade Fellowship」（ad45a94c Group）、first-release-date **2000-04-11**、primary-type Album、secondary-types 空、genres／tags `contemporary jazz`／`jazz`／`modern creative`／`post-bop`，轄下 2 個 release。release 端點：a1f99704（**2000 XE**（無月日）Official CD 9 軌、`Blue Note 7243 5 23571 2 3`、bc 724352357123）、b4cdbacb（**2000-04-11 US** Official CD 9 軌、廠牌 `Blue Note`／**catno 欄空**、**同一個 barcode**）。九軌：Perceptual／Evinrude-Fifty (Trembling)／Reconciliation／Crooked Creek／Patron Saint of Girls／The Sunday Boys (Improvisation)／Variations of a Bloodline／Steadfast／Trembling。Discogs master 753585 九筆（24102905 美版、683390 無日期美版再壓（notes 最完整：`Recorder September 1999 at Avatar Studios, NYC / Mixed at River Sound, NYC / Mastered at Sterling Studio, NYC`）、29415952 Columbia House、10875898 歐版、16150361 先行宣傳（1999）、17836915 日版 TOCJ-66096、6427714 2014 美版黑膠、6262388 2014 歐版黑膠（format 欄帶 `Misprint`）、32268261 2022 日版 UCCU-5969）。",
+    "rgMbid": "70e88a86-1b9e-39eb-8c44-cab9c14d9384",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/70e88a86-1b9e-39eb-8c44-cab9c14d9384/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2139,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2139，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第八軌唱歌的是 Joni Mitchell，吉他是 Daniel Lanois。那一軌〈Steadfast〉與收尾的〈Trembling〉都是另外補錄的，Lanois 在前者彈一把金頂 Les Paul、在後者換踏板鋼棒吉他。本體是 Brian Blade 的七人團：他的鼓、Jon Cowherd 的鍵盤、兩把薩克斯、吉他、低音提琴與踏板鋼棒吉他。九軌全出自團裡兩個人的筆下。2000 年 4 月 11 日由 Blue Note 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/683390",
+     "https://api.discogs.com/releases/10875898",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-04-08.pdf",
+     "https://api.discogs.com/releases/6262388",
+     "https://itunes.apple.com/lookup?upc=724352357123&country=us",
+     "https://musicbrainz.org/release-group/70e88a86-1b9e-39eb-8c44-cab9c14d9384"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/34/35/d2/3435d271-2684-efaa-d3ce-40865c21d185/mzaf_2708719892258384301.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442982990",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jason Moran",
+   "album": "Facing Left",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e6d7d0e8-e85b-36d4-a897-093f66b3faa0。release-group 端點：title「Facing Left」、artist-credit「Jason Moran」（2f97f8ef Person）、first-release-date **2000**（無月日）、primary-type Album、secondary-types 空、genres／tags `contemporary jazz`／`jazz`／`post-bop`，轄下 1 個 release。release 端點：7602a6fc（2000、**無國別**、Official、CD 13 軌、`Blue Note 7243 5 23884 2 4`、bc 724352388424）。十三軌：Later／Thief Without Loot／Joga／Wig Wise／Yojimbo／Another One／Lies Are Sold／Murder of Don Fanucci／Twelve／Three of the Same From Two Different／Fragment of a Necklace／Battle of the Cattle Acts／Gangsterism on Wood（⚠ **第 3 軌 Björk 原曲作 `Jóga`，MB 與 Discogs 都去掉了重音**）。Discogs master 1451232 三筆（2385046 美版零售、37486914 美版促銷、13275224 先行宣傳 `…2 4V`）。錄音與後製（美版 notes 逐字）：`Recorded at Systems Two, Brooklyn, N.Y. 1/15/00 & 1/16/00 / Mixed … 1/22/00 to 1/23/00 / Mastered at Foothill Digital, NYC 1/25/00`；製作 Greg Osby、錄音與混音 Joe Marciano、母帶 Allan Tucker。",
+    "rgMbid": "e6d7d0e8-e85b-36d4-a897-093f66b3faa0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e6d7d0e8-e85b-36d4-a897-093f66b3faa0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 5091,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "作曲名單裡同時有 Ellington、Björk 與《教父第二集》的配樂。十三軌的來源橫跨五個世界：Ellington 兩首、Björk 與 Sjón 的〈Jóga〉、佐藤勝給黑澤明《用心棒》寫的主題、Carmine Coppola 一首，Jason Moran 自己寫六首。三人固定、零客座。2000 年 1 月在布魯克林 Systems Two 錄，十天內連混音與母帶都做完；6 月 27 日上街，製作人是他當時所屬樂團的團長 Greg Osby。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/2385046",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-07-01.pdf",
+     "https://api.discogs.com/masters/1451232/versions",
+     "https://api.discogs.com/releases/12600373",
+     "https://itunes.apple.com/lookup?upc=724352388424&country=us",
+     "https://musicbrainz.org/ws/2/release-group/e6d7d0e8-e85b-36d4-a897-093f66b3faa0?inc=artist-credits+releases+genres+tags&fmt=json",
+     "https://musicbrainz.org/release-group/e6d7d0e8-e85b-36d4-a897-093f66b3faa0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/66/27/f9/6627f90c-74a9-b8ce-ac06-942ef7285bfa/mzaf_6018191995025050302.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724790121",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Three Sounds",
+   "album": "Live at the \"It Club\", Volume 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2456d256-466f-35ac-9e1d-20d063d6842f。release-group 端點：title「Live at the \"It Club\", Volume 2」、artist-credit「Gene Harris & The Three Sounds」（**群組 9b58e361**，c-141 b 第 563 條與 c-153 b 已記過這個 id）、first-release-date **2000**、primary-type Album、**secondary-types [\"Live\"]（標對 ✓）**、genres／tags `jazz`＋`soul jazz`，轄下 2 個 release。release 端點：40ce3a2d（2000 US Official CD 9 軌、`Blue Note 7243 5 23997 2 7`、bc 724352399727）、c29cb3a6（**2000 GB，media format 為 null、9 軌、無廠牌、無 barcode**——**第 1364(6) 條的空殼 release**）。九軌：I'm in Love／Put on Train／Down Home／Girl Talk／Black Fox／Apollo 21／Eleanor Rigby／Get Back／Come Together。Discogs master 768668 三筆：6398890（US，**notes 是判 (甲) 的關鍵**）、4879595（歐版，format 帶 `Remastered`，`Written-By` 欄列 Lennon-McCartney／Neal Hefti／Monk Higgins／Gene Harris／Bernyece Leena）、31516760（美版另一號 `5179613`）。⚠ **另有一筆 2016 年的 Blue Break Beats Vol. 4 數位合輯（19446199）收〈Sittin' Duck〉——那是第一批（1996 年那張）的軌，不是本張。**",
+    "rgMbid": "2456d256-466f-35ac-9e1d-20d063d6842f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2456d256-466f-35ac-9e1d-20d063d6842f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "最後三軌全是披頭四，〈Eleanor Rigby〉拉到十分四十一秒。這九軌錄於 1970 年 3 月 6 日好萊塢 It Club 的同一晚，是當晚的第二批母帶：八軌從未發行，只有第 8 軌先前收在一張 Blue Note 合輯上，擱了三十年才在 2000 年首次商業發行。台上三個人、零客座：Gene Harris 的鋼琴、Henry Franklin 的貝斯、Carl Burnett 的鼓。前三首與第 5 軌出自當晚的製作人 Monk Higgins。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6398890",
+     "https://api.discogs.com/releases/4879595",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-06-03.pdf",
+     "https://itunes.apple.com/lookup?id=724784140&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/2456d256-466f-35ac-9e1d-20d063d6842f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4c/f8/30/4cf83024-5b3e-e3a2-5c84-eb9006d8d0f9/mzaf_1158372517532965285.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724784140",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Medeski Martin & Wood",
+   "album": "Tonic",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2f90454b-f354-3d08-9fc9-da44cf857ccd。release-group 端點：title「Tonic」、artist-credit「Medeski, Martin & Wood」（6eed1ed9 Group）、first-release-date **2000-04-25**、primary-type Album、**secondary-types [\"Live\"]（標對 ✓）**、genres／tags `jazz`，轄下 2 個 release。release 端點：3e839b51（**2000-04-25 CA** Official CD 8 軌、`Blue Note CDP 525271`、bc 777495363919）、f124a320（**2000-04-25 US** Official CD 8 軌、`Blue Note 7243 5 2527120`（**MB 把 catno 寫成無空格的緊縮形**）、bc 724352527120）。八軌：Invocation／Afrique／Seven Deadlies／Your Lady／Rise Up／Buster Rides Again／Thaw／Hey Joe。Discogs master 616708 十餘筆（美加歐日阿根廷各版、先行宣傳 `…2 0V` 14730174、Columbia House、BMG Direct、2026 Classic Vinyl 黑膠 36838144）。錄音（美版 notes 逐字）：`Recorded Live at Tonic, NYC, March 16-20 and 23-26 1999 / Mastered at Sony Mastering`。",
+    "rgMbid": "2f90454b-f354-3d08-9fc9-da44cf857ccd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/bf/f6/8a/bff68a0d-8d90-b6a1-2003-0517d9f1b416/00724352527151.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720644094",
+    "note": "試聽探測釘定的 collectionId 720644094（us）：Medeski, Martin & Wood — Tonic"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8158,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名就是那間店的名字，他們在那裡連駐了九個晚上。1999 年 3 月在紐約下東城的 Tonic 錄下這八軌，三個人、零客座，而且是少見的原音配置：John Medeski 只彈平台鋼琴與口風琴、不碰 Hammond，Chris Wood 拉低音提琴，Billy Martin 的鼓與打擊另加一把姆指琴。八軌對半分，四首團體共寫，翻的四首從 Lee Morgan 的〈Afrique〉排到收尾的〈Hey Joe〉。2000 年 4 月 25 日由 Blue Note 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5076476",
+     "https://api.discogs.com/releases/908686",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-05-13.pdf",
+     "https://api.discogs.com/masters/616708/versions",
+     "https://itunes.apple.com/lookup?upc=724352527120&country=us",
+     "https://musicbrainz.org/release-group/2f90454b-f354-3d08-9fc9-da44cf857ccd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/51/9e/6c/519e6c1d-bff3-0fb8-5609-544d8fa0b921/mzaf_7816490061353312698.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "720644094",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Charlie Hunter",
+   "album": "Charlie Hunter",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 13878888-8a16-344f-8edf-2bce5dfbe01c。release-group 端點：title「Charlie Hunter」、artist-credit「Charlie Hunter」（**a89487ab Person／US／1967-05-23**）、first-release-date **2000**（無月日）、primary-type Album、secondary-types 空、genres／tags `jazz`，轄下 3 個 release。release 端點：3cbada4c（2000 US Official CD 9 軌、`Blue Note 7243 5 25450 2 5`、bc 724352545025）、de978230（2000 **XE** Official CD 9 軌、**同 catno 同 barcode**）、e5a569da（**2006-10-27 US** Official CD 9 軌、廠牌 `Blue Note`、**無 catno、無 barcode**）。九軌：Rendezvous Avec la Vérité／Two for Bleu／Al Green／Nothin' but Trouble／Cloud Splitter／Epistrophy／Flau Flau／Dersu (A Slight Return)／Someday We'll All Be Free。MB 同字串 artist 反查（`artist?query=\"Charlie Hunter\"`）：a89487ab（Person，本卡）＋ 87c0023c `Charlie Hunter Trio`／60c02ac7 `Charlie Hunter Quartet`／1359cbfe `Charlie Hunter Quintet`／3539b6ea `Charlie Hunter Duo`／1d908ca0 `Charlie Hunter & Scott Amendola`／37226ed1 `Charlie Hunter & Lucy Woodward`／4a38384b `Charlie Hunter & Pound For Pound`——**七個群組實體，池中已用其中三個**。Discogs master 481248 六筆（1116034 美版零售、3951216 美版促銷、11547543 先行宣傳、17354194 `CDP 525450`、13388809 歐版、12329047 日版 TOCJ-66086）。",
+    "selfTitledVerified": true,
+    "rgMbid": "13878888-8a16-344f-8edf-2bce5dfbe01c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/13878888-8a16-344f-8edf-2bce5dfbe01c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 22544,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Leon Parker 九軌都在，每一軌敲的東西都不一樣。康加、鼓、打擊、三角鐵輪著上，另外兩位打擊手各補幾軌。Charlie Hunter 的八弦吉他九軌全程，一把琴同時走低音線與和聲，所以這張同名盤照樣沒有貝斯手；管樂只在四軌，次中音薩克斯與長號各一。九軌裡七首自寫，翻的是〈Epistrophy〉與收尾只剩吉他獨奏的〈Someday We'll All Be Free〉。2000 年 1 月在紐約 Avatar Studios 錄完並混音。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/1116034",
+     "https://api.discogs.com/releases/13388809",
+     "https://itunes.apple.com/lookup?id=724776917&country=fr&entity=song&limit=200",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-07-08.pdf",
+     "https://musicbrainz.org/release-group/13878888-8a16-344f-8edf-2bce5dfbe01c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a7/ba/80/a7ba8090-61d6-f7fa-ddfa-913296cdb9a2/mzaf_17047297713808900358.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724776917",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kurt Elling",
+   "album": "Live in Chicago - Out Takes",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 18c22bdf-ec66-441c-bd52-44f6a76b7bb9。release-group 端點：title「Live in Chicago - Out Takes」、artist-credit「Kurt Elling」（4d39b9be Person，**與正盤同一個 id**）、first-release-date **2000**（無月日）、primary-type Album、**secondary-types 空（正盤標了 Live、本張沒標——第 397 條）**、**genres 與 tags 皆空**，轄下 1 個 release。release 端點：cf47fee2（2000 **AU** Official CD **6 軌**、`Blue Note 7243 5 25494 2 9`、bc 724352549429）。六軌：Resolution／What I Meant To Say Was.../Moon and Sand (Inspired by Keith Jarrett)／Dolores Dream (including An Extemporaneous Prolegomenon to Any Future Extraneous Thought on The Subject of Mirrors)／Renaissance of the Resistance／Senor Blues 2000 (The Alien Version) (Studio Recording)。Discogs master 1477660 兩筆：11942922（**AU 2000，唯一的零售條目**）、9645159（無日期、無廠牌的自營再版）。credits：Kurt Elling voice／producer、Laurence Hobgood p／producer、Rob Amster acoustic bass、Michael Raynor d、Kahil El'Zabar perc／voice、Matthew Backer arranger／producer（第 6 軌）、Danny Leake 混音與母帶、Eddie Krakaur 錄音。",
+    "rgMbid": "18c22bdf-ec66-441c-bd52-44f6a76b7bb9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/18c22bdf-ec66-441c-bd52-44f6a76b7bb9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 42,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=42，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他替《A Love Supreme》的第二樂章填了詞，擺在開場。那一軌〈Resolution〉領著六首曲子，全是正盤《Live in Chicago》剪剩下的母帶，只在澳洲上架。前五軌出自 1999 年 7 月芝加哥 Green Mill 的同一批錄音：Kurt Elling 的人聲、Laurence Hobgood 的鋼琴，加上低音提琴、鼓與 Kahil El'Zabar 的打擊。第 6 軌是另一回事，在紐約錄的錄音室版。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/11942922",
+     "https://api.discogs.com/releases/9645159",
+     "https://itunes.apple.com/lookup?upc=724352549429&country=us",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2000/BB-2000-08-05.pdf",
+     "https://coverartarchive.org/release-group/18c22bdf-ec66-441c-bd52-44f6a76b7bb9",
+     "https://musicbrainz.org/release-group/18c22bdf-ec66-441c-bd52-44f6a76b7bb9"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,2648 @@
+{
+ "schemaVersion": 1,
+ "batch": "c169-20261004",
+ "albums": [
+  {
+   "artist": "Supergenerous",
+   "album": "Supergenerous",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e0011ef5-a323-3579-9ec8-d5a9df549300。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Supergenerous」、first-release-date 2000-09-12、primary-type Album、secondary-types 空陣列、**genres 與 tags 都是空的**（這正是列舉層讀錯層級的那一批，第 1557 條）、artist-credit 逐字 `Supergenerous`（4044ccb7-2912-4442-b375-427ee2f31cac，Group，member 欄：Cyro Baptista、Kevin Breit）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：fdc951bd（2000-09-12 US Official CD 13 軌，Blue Note [713c4a95] 24633，barcode 724352463329）。",
+    "selfTitledVerified": true,
+    "rgMbid": "e0011ef5-a323-3579-9ec8-d5a9df549300",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/73/e5/92/73e59252-51e7-032d-23fb-320041b27cf7/24UMGIM96049.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1767694092",
+    "note": "試聽探測釘定的 collectionId 1767694092（us）：Supergenerous — Supergenerous"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 141,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=141，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩個人在紐澤西的車庫裡寫曲，構想是替一部並不存在的電影配樂。吉他手 Kevin Breit 與打擊樂手 Cyro Baptista 是在一場 Town Hall 的演出上結識的，那間車庫則是 Baptista 的住處。1999 年 12 月兩人進紐約的 Joe Music 錄音，製作人是 Craig Street，第 4 軌〈Home On The Range〉找了 Cassandra Wilson 來唱。唱片 2000 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11366318",
+     "https://www.bluenote.com/artist/supergenerous/",
+     "https://musicbrainz.org/release-group/e0011ef5-a323-3579-9ec8-d5a9df549300"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/17/fe/1017fe58-6f48-119c-ccf2-329d9d718c49/mzaf_6217721387854511567.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1767694092",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Thierry Lang",
+   "album": "Guide Me Home",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0069c57c-02e1-3eea-8ac0-ab2b5f18da79。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Guide Me Home」、first-release-date 2000-10-16、primary-type Album、secondary-types 空陣列、genres 逐字 `easy listening`／`jazz`、tags 同、artist-credit 逐字 `Thierry Lang`（aa3a0a69-749d-4e64-a9c0-d774d024713e，Person／CH）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：8c6ec4cb（2000-10-16 CH Official，**兩片 CD：第一片 9 軌、第二片 4 軌**，Blue Note [713c4a95] 02743 5297222 7，barcode 724352972227）。正盤 9 軌：Prelude to Sadness／In Your Own Sweet Way／Guide Me Home／The Days of Wine and Roses／Tender Awakening／Invitation／It Never Entered My Mind／Tango De Rio／Irish。",
+    "rgMbid": "0069c57c-02e1-3eea-8ac0-ab2b5f18da79",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/dF-l5deYhQxP2wcqUixzV70seYiQ-PScwwdPp8cojrU/rs:fit/g:sm/q:90/h:170/w:170/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NzQ3/NTItMTQyMDEzNjc5/Ni04MzIwLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "6474752"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2276,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2276，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Queen 的經紀人替一位瑞士鋼琴家敲開 Blue Note 的門。1996 年美國巡演途中，Thierry Lang 認識了 Jim Beach，對方隨後成了他的經紀人；同一年他簽下藝人合約，是第一個進這家廠牌的瑞士人。正盤 1999 年 12 月錄於奧斯陸的 Rainbow Studio，Beach 掛名執行製作。原壓是雙 CD，第二片 4 軌收的是一部 Freddie Mercury 紀錄片的音樂。唱片 2000 年發行。",
+    "sourceUrls": [
+     "https://www.thierrylang.ch/biographie/",
+     "https://www.discogs.com/release/3987761",
+     "https://secondhandsongs.com/work/123094/all",
+     "https://www.discogs.com/release/6474752",
+     "https://musicbrainz.org/release-group/0069c57c-02e1-3eea-8ac0-ab2b5f18da79"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Booster",
+   "album": "Loop in Release",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4e3babe9-1a5b-386a-9616-2f18bf419e57。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Loop in Release」、first-release-date 2001-09-10、primary-type Album、secondary-types 空陣列、genres 逐字 `acid jazz`／`electronic`／`free jazz`／`hip hop`／`jazz`／`soul jazz`、tags 同、artist-credit 逐字 `Booster`（32fbb6e4-c355-4d00-ba57-3db5c227aaee，Person／FR，disambiguation `FR jazz artist Olivier Armbuster`）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：bd97b7a9（2001-09-10 FR Official CD 10 軌，Blue Note [713c4a95] 7243 5 31576 2 3，barcode 724353157623）。",
+    "rgMbid": "4e3babe9-1a5b-386a-9616-2f18bf419e57",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4e3babe9-1a5b-386a-9616-2f18bf419e57/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3121,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "整張碟在他 Bougival 的家裡做完，客人名單卻是半個法國爵士圈。Booster 是法國音樂家 Olivier Armbruster 的化名，他 2000 年先替 Blue Note 編了兩卷目錄混音帶，這回換成自己的碟。錄音與混音都由他一人在 2000 至 2001 年間完成，10 軌裡有四首超過 9 分鐘；來的客人包括薩克斯風手 Julien Lourau 與歌手 Malia。取樣與循環當地基，上面疊真的管樂與自由即興。唱片 2001 年發行。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/Booster_(musicien)",
+     "https://www.discogs.com/release/718356",
+     "https://musicbrainz.org/release-group/4e3babe9-1a5b-386a-9616-2f18bf419e57"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/0a/17/420a1759-6d96-5224-32f9-e577c09de652/mzaf_7207048744606065983.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "693636945",
+    "storefront": "FR"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Trio Focan feat. Mika Mylläri & Mikko Helevä",
+   "album": "standard a'la Turc",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1df7f7a5-7a69-4468-a66c-10dfec8dd022。release-group 端點（inc=artist-credits+genres+tags+releases）：title「standard a'la Turc」、first-release-date 2001（只有年份）、primary-type Album、secondary-types 空陣列、**genres 與 tags 都是空的**（第 1557 條那一批）、artist-credit 三格串接逐字 `Trio Focan feat. Mika Mylläri & Mikko Helevä`（Trio Focan 5ee6a1bd-498f-4174-89b8-a3f74ebad68d，Group／TR，member：Önder Focan 吉他、Nezih Yeşilnil 貝斯、Cengiz Baysal 鼓｜Mika Mylläri c5f85b3b-c77e-4b96-9217-01d4e4ab9b0e，Person／FI｜Mikko Helevä a58449e3-753a-4849-aba8-d1d6b8eb3db1，Person／FI）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：cb7d3764（2001 TR Official CD 10 軌 69 分，Blue Note [713c4a95] CD 5378282，barcode 0724353782825）。",
+    "rgMbid": "1df7f7a5-7a69-4468-a66c-10dfec8dd022",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1df7f7a5-7a69-4468-a66c-10dfec8dd022/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=0，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一個替 Blue Note 錄音的土耳其人，把自家流行歌當標準曲吹。Önder Focan 1998 年開了這條線，本作是同一條線的第三張，10 軌全是土耳其歌謠改寫成的三重奏版本，〈Şımarık〉的原唱是 Tarkan。收音在赫爾辛基做的，客座是小號手 Mika Mylläri 與管風琴手 Mikko Helevä。同一年他在伊斯坦堡開了 Nardis Jazz Club，店名取自 Miles Davis。溫暖的半空心吉他音色領隊，搖擺不重。唱片 2002 年發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/%C3%96nder_Focan",
+     "https://www.discogs.com/release/14930583",
+     "https://en.wikipedia.org/wiki/%C5%9E%C4%B1mar%C4%B1k",
+     "https://tr.wikipedia.org/wiki/Zindan%C4%B1_Ta%C5%9Ftan_Oyarlar",
+     "https://musicbrainz.org/release-group/1df7f7a5-7a69-4468-a66c-10dfec8dd022"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/71/54/67/715467b5-6a19-e156-fa58-0bf15592930c/mzaf_12955070312839566041.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1457831663",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "U-Street All Stars",
+   "album": "Helsinki Sessions",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 537e3c2c-a546-3427-8028-d0e2ae519132。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Helsinki Sessions」、first-release-date 2002-06、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`、tags 逐字 `jazz`、artist-credit 逐字 `U-Street All Stars`（eccdde08-83f7-43b0-a8e4-36dead6c8829，Group／FI，disambiguation `Finnish jazz band`）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：b8a4a090（2002-06 FI Official CD 9 軌 51 分，Blue Note [713c4a95] 7243 5 40052 2 0，barcode 724354005220）。",
+    "rgMbid": "537e3c2c-a546-3427-8028-d0e2ae519132",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/49/55/41/495541d7-c1c0-86ad-740d-27d6540dbf9a/00602547560766.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442310371",
+    "note": "試聽探測釘定的 collectionId 1442310371（gb）：U-Street All Stars — Helsinki Sessions"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 789,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=789，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "團名裡的那個 U，指的是他們排練的那條街。U-Street All Stars 2000 年秋天在赫爾辛基組成，排練地點在 Uudenmaankatu，兩年後他們在 Blue Note 出了第一張，9 首全是團員自作。錄音在 Hitsville IV、混音在 Liiteri，都由 Esa Santonen 負責，製作人是 J-P Virtanen，母帶工程之一是芬蘭戰後爵士的元老 Otto Donner。唱片 2002 年發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/U-Street_All_Stars",
+     "https://www.discogs.com/release/3021477",
+     "https://musicbrainz.org/release-group/537e3c2c-a546-3427-8028-d0e2ae519132"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bd/ce/c2/bdcec2f5-ea10-c8b1-72cc-b987665b6c55/mzaf_7194464503232070778.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442310371",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Scolohofo",
+   "album": "Oh!",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ed15ede9-7628-3043-b47a-8cab259ab3ed。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Oh!」、**first-release-date 2003-01-30（⚠ 不採，見 `risk`）**、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`、tags 逐字 `jazz`、artist-credit 逐字 `Scolohofo`（0d1f449a-dbff-4972-b65c-5b5498c84ea3，Group，member 欄：Al Foster 鼓、Dave Holland、Joe Lovano、John Scofield）、轄下 3 個 release。release 端點（inc=media+labels+recordings+artist-credits）：a0fba138（2003 US Official CD 11 軌，Blue Note 7243 5 42081 2 6）、b7ae9977（2003-01-30 DE Official CD 11 軌，同目錄號，barcode 724354208126）、01cdc37a（2023-01-06 XW Official 兩片 12\" Vinyl 5＋6 軌，Blue Note B0033844-01，barcode 602438145928，Tone Poet 再發）。⚠ **MB 沒有建日版**——`TOCJ-66204`（2002-12-26 JP，barcode 4988006807631，11 軌）只在 Discogs 15672011（零售）／24174836（宣傳）。",
+    "rgMbid": "ed15ede9-7628-3043-b47a-8cab259ab3ed",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ed15ede9-7628-3043-b47a-8cab259ab3ed/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2715,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2715，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩天進錄音室，四個人直接錄到兩軌母帶。團名取的是四位成員姓氏的前兩個字母：John Scofield、Joe Lovano、Dave Holland、Al Foster。這個組合 1999 年在蒙特婁爵士節成形，兩度巡演之後才走進紐約的 Sear Sound，時間是 2002 年 7 月，11 軌的作曲四人平分。碟是日本先發，東芝 EMI 版 2002 年 12 月 26 日上市，美國版要到 2003 年 1 月 27 日才發。",
+    "sourceUrls": [
+     "https://www.bluenote.com/artist/scolohofo/",
+     "https://www.discogs.com/release/412945",
+     "https://www.discogs.com/release/15672011",
+     "https://en.wikipedia.org/wiki/Oh!_(ScoLoHoFo_album)",
+     "https://musicbrainz.org/release-group/ed15ede9-7628-3043-b47a-8cab259ab3ed"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/89/f7/be/89f7be43-54c1-ad10-65a8-83665d9d582e/mzaf_960095346850117945.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1454547323",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Θάνος Μικρούτσικος",
+   "album": "Music Stories",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d6957935-74f8-4384-a5bb-b490e710c768。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Music Stories」、first-release-date 2003（只有年份）、primary-type Album、secondary-types 空陣列、genres 逐字 `classical`／`contemporary jazz`／`jazz`、tags 同、artist-credit 逐字 `Θάνος Μικρούτσικος`（1ba86abf-ba1f-42fd-be34-0aad3df7628b，Person／GR）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：b4adf518（2003 GR Official CD 9 軌 53 分，Blue Note [713c4a95] 7243 5 84777 2 6，barcode 724358477726）。軌目：Music Stories: Introduction／Ballet Story／Song／Largo Dramatico／On a Travel／Rythmos and Rhythm ＋ Duo: Moderato／Largo／Presto。Discogs 3264997 的 credits 欄：Gary Burton＝Vibraphone、Alexandre Myrat＝Conductor、Kamerata Orchestra Of The Friends Of Music＝Orchestra、David Lynch (3)＝Alto Saxophone、Giorgos Fakanas＝Electric Bass、Nikos Guinos＝Clarinet、Dimitris Desyllas＝Percussion、Thanos Mikroutsikos＝Composed By。",
+    "rgMbid": "d6957935-74f8-4384-a5bb-b490e710c768",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d6957935-74f8-4384-a5bb-b490e710c768/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 10,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=10，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "當過希臘文化部長的作曲家，替 Gary Burton 的顫音琴寫了一套組曲。Θάνος Μικρούτσικος 1994 至 1996 年出任這個職位，碟的第 1 至 6 軌就是那套〈Music Stories〉，2001 年 11 月錄於雅典，Burton 的獨奏只涵蓋這六軌。第 7 至 9 軌是 1985 年的錄音，三樂章的〈Duo〉只有中音薩克斯風與電貝斯兩件樂器，這套二重奏最早以 1986 年的希臘盤問世。唱片 2003 年發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Thanos_Mikroutsikos",
+     "https://www.discogs.com/release/3264997",
+     "https://www.discogs.com/release/9204561",
+     "https://jazzlibrary.gr/en/artists/fakanas-yiorgos",
+     "https://musicbrainz.org/release-group/d6957935-74f8-4384-a5bb-b490e710c768"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/01/b3/14/01b3143d-3c83-bbe6-d619-a2883162c07a/mzaf_12590312703093911893.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1383518011",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jackie Allen",
+   "album": "Tangled",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cd95b93c-8f1e-4715-a723-b3d0c34b909c。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Tangled」、**first-release-date 2003 無、frd 逐字 2004**、primary-type Album、secondary-types 空陣列、genres 逐字 `folk`／`folk rock`／`jazz`／`pop`／`rock`、tags 同、artist-credit 逐字 `Jackie Allen`（13d4fb5a-5424-4442-9359-ad79ec402d31，Person／US）、轄下 3 個 release。release 端點（inc=media+labels+recordings+artist-credits）：5d797c5e（**2004 GB** Official CD 12 軌，Blue Note [713c4a95] 0946 3 30081 2 0，barcode 094633008120）、8aa161ea（2006-05-26 US Official CD 12 軌，Blue Note 0946 3 30080 2 1，barcode 094633008021）、10f7f4c0（2006-05-23 US Official Digital Media 12 軌，無 label-info）。**本卡 `year` 不採 MB frd，理由見 `risk`。**",
+    "rgMbid": "cd95b93c-8f1e-4715-a723-b3d0c34b909c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cd95b93c-8f1e-4715-a723-b3d0c34b909c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4920,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "美國歌本只留下兩首，其餘全換成 Van Morrison 與 Donald Fagen。Jackie Allen 1959 年生於密爾瓦基，父親吹狄西蘭低音號，她先學法國號，後來才主修聲樂與爵士。12 首的曲庫刻意避開標準曲，留下的兩首出自 Rodgers 與 Hart，Fagen 那首〈Do Wrong Shoes〉則極少被人翻唱。她只在 Blue Note 出過這一張，貼麥克風的中低音域不做花腔，歌詞的字義先於旋律。唱片 2006 年發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Jackie_Allen_(musician)",
+     "https://www.discogs.com/release/2270010",
+     "https://www.amazon.com/Tangled-Jackie-Allen/dp/B000FC2FWO",
+     "https://www.discogs.com/release/10798559",
+     "https://musicbrainz.org/release-group/cd95b93c-8f1e-4715-a723-b3d0c34b909c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2d/92/52/2d9252f6-dca9-4858-1ab0-84b89a69211d/mzaf_11070686839974905764.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "716517015",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "U-Street All Stars",
+   "album": "Bowling",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1da381c2-c45e-461c-85e6-1a2351ce333d。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Bowling」、first-release-date 2004-02-02、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`／`swing`、tags 同、artist-credit 逐字 `U-Street All Stars`（eccdde08-83f7-43b0-a8e4-36dead6c8829，Group／FI，**與本組第 5 筆同一實體**）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：f931c921（2004-02-02 FI Official CD 9 軌 50 分，Blue Note [713c4a95] 7243 595727 2 7，barcode 724359572727）。",
+    "rgMbid": "1da381c2-c45e-461c-85e6-1a2351ce333d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/03/34/cd/0334cdd5-67d5-3ac1-c641-fc0f2c6349c7/00724359572758.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723900032",
+    "note": "試聽探測釘定的 collectionId 723900032（gb）：U-Street All Stars — Bowling!"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1528,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1528，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第二張把錄音、混音與母帶全搬進同一間錄音室。那間是赫爾辛基的 Finnvox，錄音與混音仍由 Esa Santonen 負責，母帶則換成 Pauli Saastamoinen。9 首依舊全是團員自作，中音薩克斯風手 Markus Holkko 寫了其中四首。這也是貝斯手 Timo Tuppurainen 待在團裡的最後一年，而碟本身是 U-Street All Stars 在 Blue Note 的最後一張。唱片 2004 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3015236",
+     "https://en.wikipedia.org/wiki/U-Street_All_Stars",
+     "https://musicbrainz.org/release-group/1da381c2-c45e-461c-85e6-1a2351ce333d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/34/e4/42/34e442c8-5074-7fda-d653-18e4bb362a38/mzaf_4980569602363572222.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723900032",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Anna-Mari Kähärän Orkesteri",
+   "album": "Anna-Mari Kähärän Orkesteri",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c5283489-a7b4-33b6-a634-1a6238be0a77。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Anna-Mari Kähärän Orkesteri」、first-release-date 2005（只有年份）、primary-type Album、secondary-types 空陣列、**genres 與 tags 都是空的**、artist-credit 逐字 `Anna-Mari Kähärän Orkesteri`（2210a5a3-ce8d-41aa-89a4-8190ec7b96c3，Group／FI，member 欄只有 Anna-Mari Kähärä）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：b5080a26（2005 FI Official CD 7 軌 46 分，Blue Note [713c4a95] 7243 873846 2 0，barcode 724387384620）。軌目：Requiem 6:46／A lynmouth window 7:01／I hear drums 6:48／Love is in your heart 7:02／Dead love 6:06／War 5:10／So this is love 7:23。",
+    "selfTitledVerified": true,
+    "rgMbid": "c5283489-a7b4-33b6-a634-1a6238be0a77",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/2jsz2hoR2QVN8Q_tYFM-KkUwMj_rfs1xRzvv5aWgRCM/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0MzQz/MzUtMTYwODE5Mjk5/OC04MTMxLmpwZWc.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "8434335"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 22,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=22，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七首的曲是她寫的，詞全部借自英語詩人。Anna-Mari Kähärä 1963 年生於芬蘭，是作曲家、歌手兼鋼琴家，這是她的第一張個人專輯，借來的文本裡 Robert Louis Stevenson 與 Charles Bukowski 各出一首。小提琴家 Pekka Kuusisto 全程參與，掛的是小提琴、電小提琴與曼陀林，還參與人聲。7 軌總長 46 分 16 秒，每一首都在六到七分半之間從容展開。唱片 2005 年發行。",
+    "sourceUrls": [
+     "https://fi.wikipedia.org/wiki/Anna-Mari_K%C3%A4h%C3%A4r%C3%A4",
+     "https://www.discogs.com/release/8434335",
+     "https://jazzfinland.fi/band/anna-mari-kaharan-orkesteri/biography",
+     "https://musicbrainz.org/release-group/c5283489-a7b4-33b6-a634-1a6238be0a77"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brisa Roché",
+   "album": "The Chase",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2f2dd40b-6fd2-3db1-af14-f9442f1747f8。release-group 端點（inc=artist-credits+genres+tags+releases）：title「The Chase」、first-release-date 2005-10-24、primary-type Album、secondary-types 空陣列、genres 逐字 `cool jazz`／`jazz`／`jazz rock`、tags 同、artist-credit 逐字 `Brisa Roché`（26183789-dc29-4a33-ab82-3b6c991d946c，Person／FR）、轄下 4 個 release。release 端點（inc=media+labels+recordings+artist-credits）：bd10e348（2005 FR，status 空，CD 18 軌 48 分，EMI Music France [d2d352a2] 0946 3346982 2，barcode 094633593022）、c1f18271（2005 US Official CD 17 軌 50 分，Blue Note [713c4a95] 0946 3 35930 2 2，同 barcode）、e29352ca（2005 FR Official CD 18 軌 53 分，barcode 094633469822，無 label-info）、df737ff0（2005-10-24 XW Official Digital Media 21 軌 56 分，Parlophone France [0b81e41d]）。",
+    "rgMbid": "2f2dd40b-6fd2-3db1-af14-f9442f1747f8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2f2dd40b-6fd2-3db1-af14-f9442f1747f8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13774,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十八歲在巴黎地鐵賣唱，後來在同一座城市簽進 Blue Note。Brisa Roché 1976 年生於加州 Arcata，童年住在一間沒有電的小屋，父親過世後才搬到法國。發掘她的是 Glazart 俱樂部的創辦人，之後她在聖日耳曼德佩的爵士俱樂部演出。本作是她第一張大廠專輯，2005 年 10 月在巴黎發行，製作與編曲是 Daniel Yvinec，第 13 軌〈Coco〉的小號則是 Erik Truffaz。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Brisa_Roch%C3%A9",
+     "https://www.discogs.com/release/1285705",
+     "https://www.discogs.com/release/36180364",
+     "https://musicbrainz.org/release-group/2f2dd40b-6fd2-3db1-af14-f9442f1747f8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/9c/f2/3e9cf27d-15f5-4dde-7319-c9f1bacd492b/mzaf_14971051824840202132.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "693750621",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Paolo Fresu Quintet",
+   "album": "Kosmopolites",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c9f31697-6535-301d-96b2-d56ee7059469。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Kosmopolites」、first-release-date 2005-01-21、primary-type Album、secondary-types 空陣列、genres 逐字 `contemporary jazz`／`jazz`、tags 同、**artist-credit 兩格：`Paolo Fresu Quintet`（8799705f-b51f-42f0-83a1-77fdf6fcea8c，Group／IT，credited-name 逐字 `Paolo Fresu 5et`）＋ joinphrase 逐字 ` Plays the music of ` ＋ `Roberto Cipelli`（ecf0246e-02f1-4649-a7e7-44d209413ade，Person／IT）**、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：64d9ef7d（2005-01-21 IT Official CD 15 軌 64 分，Blue Note [713c4a95] 7243 875870 2 1，barcode 724387587021）。對照：c-160 b 已收的《Rosso, verde, giallo e blu》RG 48da0c29，同一個 8799705f、同一個 joinphrase、掛名已判 `Paolo Fresu Quintet`。",
+    "rgMbid": "c9f31697-6535-301d-96b2-d56ee7059469",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c9f31697-6535-301d-96b2-d56ee7059469/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 104,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=104，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五重奏決定輪流讓每個團員當一整張碟的作曲者，從鋼琴手開始。Paolo Fresu 1961 年生於薩丁尼亞，1980 年代初在 Siena 的研習營被 Enrico Rava 注意到，之後才組起自己的五重奏。這套企劃一共五張、計畫橫跨三年，本作分配到的是鋼琴手 Roberto Cipelli 的作品，唯一的例外是收尾的〈Lascia Ch'io Pianga〉，那是 Händel 的詠嘆調。小號走中音域的長句，低音與鼓幾乎不推。唱片 2005 年發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Paolo_Fresu",
+     "https://www.discogs.com/release/3412494",
+     "https://www.debaser.it/paolo-fresu-quintet/kosmopolites/recensione",
+     "https://musicbrainz.org/release-group/c9f31697-6535-301d-96b2-d56ee7059469"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1c/40/74/1c40746f-f890-600e-3446-904dde4e6b68/mzaf_4361434350032174003.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713684432",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joona Toivanen Trio",
+   "album": "Frost",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 954953b4-176b-3072-82e1-cbffe5a9ac3f。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Frost」、first-release-date 2006-01-18、primary-type Album、secondary-types 空陣列、**genres 與 tags 都是空的**（第 1557 條那一批）、artist-credit 逐字 `Joona Toivanen Trio`（bc719e76-8abd-483f-8330-df51368e655a，Group／FI，member 欄：Joona Toivanen（eponymous/original）、Tapani Toivanen、Olavi Louhivuori）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：516d979e（2006-01-18 FI Official CD 8 軌 46 分，Blue Note [713c4a95]，**catno 欄逐字 `094635209921`＝barcode**，barcode 094635209921）。",
+    "rgMbid": "954953b4-176b-3072-82e1-cbffe5a9ac3f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/954953b4-176b-3072-82e1-cbffe5a9ac3f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 467,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=467，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兄弟倆加一個童年玩伴，十幾歲組團，第三張碟出在 Blue Note。鋼琴手 Joona Toivanen、彈貝斯的弟弟 Tapani 與鼓手 Olavi Louhivuori 是在 Jyväskylä 認識的。8 首的作曲一人一半，前四軌歸 Louhivuori、後四軌歸 Toivanen。錄音在瑞典 Kållered 的 Nilento Studio，混音與母帶也在瑞典，全由 Johannes Lundberg 一手完成。唱片 2006 年發行。",
+    "sourceUrls": [
+     "https://wejazzrecords.bandcamp.com/album/both-only",
+     "https://www.discogs.com/release/1024748",
+     "https://musicbrainz.org/release-group/954953b4-176b-3072-82e1-cbffe5a9ac3f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview19/v4/c2/ab/96/c2ab96f5-7b2b-163a-3c8c-c4be9c084d16/mzaf_3105095734020210017.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "723969575",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Paolo Fresu Quintet",
+   "album": "Thinking",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ed889e2a-4438-3dc2-89f7-0d07b8758d84。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Thinking」、first-release-date 2006（只有年份）、primary-type Album、secondary-types 空陣列、genres 逐字 `contemporary jazz`／`jazz`、tags 同、**artist-credit 兩格：`Paolo Fresu Quintet`（8799705f-b51f-42f0-83a1-77fdf6fcea8c，credited-name 逐字 `Paolo Fresu 5et`）＋ joinphrase 逐字 ` Plays the music of ` ＋ `Ettore Fioravanti`（3e8e8b57-60fa-4e0d-b2fc-83eafb1ce565，Person／IT）**、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：0e0f805c（2006 IT Official CD 12 軌 60 分，Blue Note [713c4a95] 0946-377514-2-8，barcode 094637751428）。",
+    "rgMbid": "ed889e2a-4438-3dc2-89f7-0d07b8758d84",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ed889e2a-4438-3dc2-89f7-0d07b8758d84/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 38,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=38，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "輪到鼓手交出一整張碟的曲子，第 10 軌卻讓柴可夫斯基插了隊。整張的曲子出自五重奏的鼓手 Ettore Fioravanti，那一軌的曲名逐字是〈Danza Della Fata Dei Confetti〉，也就是《胡桃鉗》裡的〈糖梅仙子之舞〉。錄音在 2004 年 10 月 7 至 9 日，混音是同月 28 與 29 日，兩年後才發行。12 軌約 60 分鐘，五重奏的成員與前一張完全相同；鼓的份量明顯加重，主題常由鼓的節奏動機帶出。唱片 2006 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5148183",
+     "https://musicbrainz.org/release-group/ed889e2a-4438-3dc2-89f7-0d07b8758d84",
+     "https://www.debaser.it/paolo-fresu-quintet/kosmopolites/recensione",
+     "https://en.wikipedia.org/wiki/Paolo_Fresu"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/55/ee/a1/55eea1dc-8d06-9970-ce5c-c20828c1799d/mzaf_5363330029848841647.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "714246276",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alice Ricciardi",
+   "album": "Comes Love",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 79855039-b059-4389-add1-d3cfc7f6e633。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Comes Love」、first-release-date 2008（只有年份）、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`、tags 逐字 `jazz`、artist-credit 逐字 `Alice Ricciardi`（d30aa77d-27cd-405b-ae19-b611c75dce17，Person／IT）、轄下 **1** 個 release。release 端點（inc=media+labels+recordings+artist-credits）：3e48ed76（2008，**country 欄空**，Official CD 14 軌 59 分，Blue Note [713c4a95] TOCJ-66445，無 barcode）。**MB 沒有義版**——義版資料來自 Discogs 5973930／38237157／31184011（catno 50999-512842-2-0／-2-9，barcode 5099951284220）。",
+    "rgMbid": "79855039-b059-4389-add1-d3cfc7f6e633",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/4f/46/64/4f46648f-4ae4-ee1c-1f32-6a507db8c3c5/05099951284251.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713066337",
+    "note": "試聽探測釘定的 collectionId 713066337（us）：Alice Ricciardi — Comes Love"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1296,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1296，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Montreux 的歌唱比賽她拿了第二名，換來一張 Blue Note 首作。Alice Ricciardi 1975 年生於米蘭，先學小提琴與樂理，1999 年從當地的 Civici Corsi di Jazz 畢業，那場國際人聲大賽則是 2005 年 7 月的事。碟有一部分在紐約錄製，曲目以美國歌本為主，只有收尾的〈Le Tue Mani〉唱義大利語，那首 1950 年代由 Lucia Mannucci 唱紅。人聲低音量、貼麥克風、幾乎不抖音。唱片 2008 年發行。",
+    "sourceUrls": [
+     "https://win.jazzitalia.net/Artisti/alicericciardi.asp",
+     "https://www.discogs.com/release/5973930",
+     "https://www.rockol.it/news-91950/alice-ricciardi-nuova-voce-jazz-debutta-blue-note",
+     "https://www.discogs.com/release/12227249",
+     "https://musicbrainz.org/release-group/79855039-b059-4389-add1-d3cfc7f6e633"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ce/f4/c2/cef4c27d-80a1-eaff-3238-d63f09aee8e5/mzaf_3828868944715685315.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713066337",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Franco D’Andrea Quartet",
+   "album": "The Siena Concert",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 63bf308a-b38f-4bc8-8e04-2128cd689ed4。release-group 端點（inc=artist-credits+genres+tags+releases）：title「The Siena Concert」、first-release-date 2008（只有年份）、primary-type Album、**secondary-types 逐字 `[\"Live\"]`**、genres 逐字 `contemporary jazz`／`jazz`、tags 同、artist-credit 逐字 `Franco D’Andrea Quartet`（8145fd7d-1967-4275-afce-fb778a240d49，Group／IT，掛名含 U+2019）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：413cce49（2008 IT Official CD 6 軌 77 分，Blue Note [713c4a95] 50999-520334-2-1，barcode 5099952033421）。",
+    "rgMbid": "63bf308a-b38f-4bc8-8e04-2128cd689ed4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/b2/45/e3/b245e3d3-2602-aff2-4a2c-3995cbc08a34/05099952033452.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713545183",
+    "note": "試聽探測釘定的 collectionId 713545183（gb）：Franco D'Andrea Quartet — The Siena Concert (Live)"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六個編號、七十七分鐘，底下其實是十七首曲子串成的六段連奏。碟記錄的是 2006 年 7 月 26 日在錫耶納 Enoteca Italiana 的整場音樂會，主辦是 Siena Jazz 基金會。曲子幾乎全是 D'Andrea 自己的，外來的 Charles Mingus〈Goodbye Pork Pie Hat〉只佔 1 分鐘。鋼琴的左手當節奏引擎、右手拆解主題，薩克斯風在上面接話，一段話說二十七分鐘不換氣。唱片 2008 年發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Franco_D%27Andrea",
+     "https://www.discogs.com/release/2936002",
+     "https://musicbrainz.org/release-group/63bf308a-b38f-4bc8-8e04-2128cd689ed4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/c5/0f/eb/c50febee-d87e-eb32-6534-2e19917aa02a/mzaf_5813694664723027061.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713545183",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "High Five Quintet",
+   "album": "Five for Fun",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7def3aa8-6986-41cb-aa3b-53cb288b8c53。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Five for Fun」、first-release-date 2008-11-19、primary-type Album、secondary-types 空陣列、**genres 與 tags 都是空的**（第 1557 條那一批）、artist-credit 逐字 `High Five Quintet`（6e062659-af60-438b-8c99-9b9a412e98c0，Group／IT，member 欄：Fabrizio Bosso 小號／柔音號、Daniele Scannapieco 次中音、Luca Mannutza 鋼琴、Pietro Ciancaglini 低音提琴、Lorenzo Tucci 鼓）、轄下 **1** 個 release。release 端點（inc=media+labels+recordings+artist-credits）：5a296e60（2008-11-19 JP Official CD 12 軌 77 分，Blue Note [713c4a95] TOCJ-66462，barcode 4988006868045）。**MB 沒有義版**——義版資料來自 Discogs 16217874（catno 50999-227843-2-2，barcode 5099922784322）。",
+    "rgMbid": "7def3aa8-6986-41cb-aa3b-53cb288b8c53",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/49/4c/81/494c8151-8658-5a9c-8f94-f9e8eb0e910d/05099924228251.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "712304144",
+    "note": "試聽探測釘定的 collectionId 712304144（gb）：High Five — Five for Fun"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 227,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=227，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標題曲的作者欄掛了五個名字，那是全碟唯一一首集體創作。其餘的曲子由團員分頭寫，外來的只有兩首：〈Ojos De Rojo〉是 Cedar Walton 的曲子，〈Inception〉出自 McCoy Tyner。小號手 Fabrizio Bosso 五歲學小號、十五歲就從 Verdi 音樂院畢業，而這是他們第一張出在 Blue Note 的碟。小號與次中音的雙管前線主題齊奏乾淨俐落，節奏組推得緊。唱片 2008 年發行。",
+    "sourceUrls": [
+     "https://www.fabriziobosso.eu/bio?lang=en",
+     "https://www.discogs.com/release/16217874",
+     "https://www.discogs.com/release/4149843",
+     "https://musicbrainz.org/release-group/7def3aa8-6986-41cb-aa3b-53cb288b8c53"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a6/6c/68/a66c683f-9769-8dd0-4f6f-218a89cd5fe4/mzaf_95736207541041759.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "712304144",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Musica Nuda",
+   "album": "55/21",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0e0c7e5a-ed3f-378e-a2c6-1ede52ab81bd。release-group 端點（inc=artist-credits+genres+tags+releases）：title「55/21」、first-release-date 2008-06、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`／`pop`、tags 同、artist-credit 逐字 `Musica Nuda`（b7840712-9e9a-4acb-a40a-8e337bd060f3，Group／IT，disambiguation 逐字 `Petra Magoni & Ferruccio Spinetti`，member 欄：Petra Magoni 主唱、Ferruccio Spinetti 低音提琴）、轄下 2 個 release。release 端點（inc=media+labels+recordings+artist-credits）：86716ef4（**2008-06 FR** Official CD 17 軌 55 分，Blue Note [713c4a95] 509992137732 7，barcode 5099921377327）、3f5ea478（2012 IT Official CD 17 軌，Blue Note 50999 644242 2 4，barcode 5099964424224，**再發**）。",
+    "rgMbid": "0e0c7e5a-ed3f-378e-a2c6-1ede52ab81bd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0e0c7e5a-ed3f-378e-a2c6-1ede52ab81bd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2906,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2906，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開演當天吉他手病倒，她臨時找了一位低音提琴手頂替。那趟托斯卡尼的巡演在 2003 年，頂替的 Ferruccio Spinetti 就此留了下來，Musica Nuda 從此只有 Petra Magoni 的人聲與他的低音提琴兩件樂器。本作是這個企劃的第五張錄音室專輯，也破了自己的規矩：Stefano Bollani 彈了兩軌鋼琴。盤名指向那不勒斯的解夢數字。唱片 2008 年發行。",
+    "sourceUrls": [
+     "https://it.wikipedia.org/wiki/Musica_Nuda",
+     "https://it.wikipedia.org/wiki/Ferruccio_Spinetti",
+     "https://barattelli.it/artisti/petra-magoni-e-ferruccio-spinetti/",
+     "https://www.mescalina.it/musica/recensioni/petra-magoni--ferruccio-spinetti-5521",
+     "https://www.discogs.com/release/3387869",
+     "https://musicbrainz.org/release-group/0e0c7e5a-ed3f-378e-a2c6-1ede52ab81bd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/e4/28/4be42896-36c1-b660-a79a-e2cfa5bde5a8/mzaf_17989488738267191872.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "332543854",
+    "storefront": "DE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Juliano Rossi",
+   "album": "Free Runner",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8adf251d-a5eb-3328-b2a9-6d4fc39efa2f。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Free Runner」、first-release-date 2009-02-27、primary-type Album、secondary-types 空陣列、genres 逐字 `jazz`、tags 逐字 `jazz`、artist-credit 逐字 `Juliano Rossi`（72ee0d29-9c1b-494d-bf9a-5eb9c4407f19，Person，country 欄空）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：9a74eb81（2009-02-27 DE Official CD 13 軌，Blue Note [713c4a95]，**catalog-number 欄空**，barcode 5099969316623；**13 軌的 length 全部為空**）。",
+    "rgMbid": "8adf251d-a5eb-3328-b2a9-6d4fc39efa2f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/61/b3/c5/61b3c57d-a0c9-1e07-14b7-ac224f63b97b/05099969316852.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "716215950",
+    "note": "試聽探測釘定的 collectionId 716215950（us）：Juliano Rossi — Free Runner"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 356,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=356，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "漢諾威搖滾團的主唱改了個義大利名字，唱起搖擺樂。Juliano Rossi 的本名是 Oliver Perau，1970 年生，這個藝名是他 2003 年前後才用的。十七歲那年他創了 Terry Hoax，樂團 1988 年成立、1996 年解散，翻唱的〈Policy of Truth〉曾是 MTV 上播放最多的德國樂團錄影帶。本作由他自己製作，曲子與 Lutz Krajenski 合寫、歌詞也出自他手，在同一座城市的錄音室完成。唱片 2009 年發行。",
+    "sourceUrls": [
+     "https://laut.de/Juliano-Rossi",
+     "https://de.wikipedia.org/wiki/Terry_Hoax",
+     "https://www.discogs.com/release/8203661",
+     "https://www.laut.de/Juliano-Rossi/Alben/Free-Runner-38159",
+     "https://musicbrainz.org/release-group/8adf251d-a5eb-3328-b2a9-6d4fc39efa2f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview62/v4/1b/74/88/1b7488c8-f2ea-dc17-e634-dcc5e12478fd/mzaf_6681945284871658135.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "716215950",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kitty Hoff & Forêt-Noire",
+   "album": "Zuhause",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 43a7648f-52d4-45d3-910e-f6f1666a9ac2。release-group 端點（inc=artist-credits+genres+tags+releases）：title「Zuhause」、first-release-date 2009-04-24、primary-type Album、secondary-types 空陣列、**genres 與 tags 都是空的**（第 1557 條那一批）、artist-credit 逐字 `Kitty Hoff & Forêt-Noire`（117b1d13-4b80-44b4-b353-2be284de52ac，Group／DE，member 欄：Kitty Hoff（original）、Phil Marone、Florian Achatzy、Mark Wenzel、Moe Jaksch）、轄下 1 個 release。release 端點（inc=media+labels+recordings+artist-credits）：8bba1524（2009-04-24 DE Official CD 14 軌 50 分，Blue Note [713c4a95]，**catalog-number 欄空**，barcode 5099969662324）。",
+    "rgMbid": "43a7648f-52d4-45d3-910e-f6f1666a9ac2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/58/d7/ae/58d7aed2-96c6-8ae2-44e3-0d5448659050/05099969662355.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713057677",
+    "note": "試聽探測釘定的 collectionId 713057677（gb）：Kitty Hoff & Forêt-Noire — Zuhause"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 807,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=807，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "除了唱歌，她在盤面的樂器欄上還掛著一把鋸琴。手風琴也列在同一欄裡。Kitty Hoff 本名 Kathrin Kim，1972 年生於明斯特，本作是她的第三張專輯，前兩張都在 EMI，這一張轉到了 Blue Note Germany，發行前一年她拿下 Lale Andersen 獎。14 軌以德語為主，第 7 軌〈Près De Moi〉唱法語；曲名多是具體的小場景，〈Frau Auf Der Brücke〉就是橋上的女人。唱片 2009 年發行。",
+    "sourceUrls": [
+     "https://de.wikipedia.org/wiki/Kitty_Hoff",
+     "https://www.discogs.com/release/5688942",
+     "https://musicbrainz.org/release-group/43a7648f-52d4-45d3-910e-f6f1666a9ac2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5b/3b/7a/5b3b7a78-8bb9-76a3-f1ce-9d043559bb35/mzaf_328188261390778874.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713057677",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Blue Note 7",
+   "album": "Mosaic: A Celebration Of Blue Note Records",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **7edc4d0d-d04e-36dc-a94b-0a4390c3c273**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Mosaic: A Celebration Of Blue Note Records」、artist-credit 單一成分 `The Blue Note 7`（`6a8f2262-3874-4810-9fb8-9d26c815df5a` **Group** US，life-span.begin 逐字 `2008`、ended false）、first-release-date **2009-01-12**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres`／`tags` 逐字皆空（**這正是列舉腳本把它丟進 unknown 的原因之一，但曲風在 Discogs 是 `Jazz`／style `Bop, Post Bop, Hard Bop`**）。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`e4480f14-5875-448f-ae1c-43bf00c8d25e`（2009-01-12 GB Official，CD **8 軌**，Blue Note `713c4a95` catno `2281232`，barcode 空，AC 逐字 `The Blue Note 7`）。八軌與時長：Mosaic 8:32／Inner Urge 7:35／Search For Peace 8:00／Little B's Poem 6:27／Criss Cross 6:55／Dolphin Dance 7:08／Idle Moments 6:36／The Outlaw 6:29。八軌 recording MBID：8c9c925b／2cc3aa7a／fae7c884／1d785531／dd0bf2de／1f7b2e4f／e6e39798／12c258d2。**刻意不釘：`770967e1-03cc-4fcf-8312-82d816049f45`《Mosaic: A Celebration of Blue Note Records》（同一張碟的美版 2 CD Special Edition，MB 重複建檔；frd 2009-01-13、secondary-types `Compilation`；轄下 release `c6eb2f30-d2ae-4476-bd42-041300b831ec`，medium 2 `The Original Sessions` 是八首原版母帶，recording `edfe8650`／`1c891e0c`／`89345c1a`／`8cf58584`／`fdc2b441`／`ea03a433`／`a742306c`／`dc8f3cac`）。** 藝人 `6a8f2262` 名下 release-group 共 2 個，就是上述這兩個。 ⚠ **MB 缺口（第二種 Discogs 掃描查出）**：**MB 完全沒有建日版**——Discogs 有 `TOCJ-66466`（零售 `17285473` ＋ 宣傳 `16099799`）與 `TOCJ-90007·08`（2 CD HQCD 零售 `17955550` ＋ 宣傳 `11429270`）四筆，`released` 欄逐字 `2008-12-26`。**本卡的年份改判就是靠這一批**（第 2196 條）。",
+    "rgMbid": "7edc4d0d-d04e-36dc-a94b-0a4390c3c273",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/53/06/54/53065437-6c8c-eaaf-e7cc-998875867b75/05099922812353.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715806227",
+    "note": "試聽探測釘定的 collectionId 715806227（us）：The Blue Note 7 — Mosaic: A Celebration of Blue Note Records"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2040,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2040，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌七十歲生日，七位現役樂手組成一團，重錄自家八首舊曲。召集令是 Blue Note 自己發的：2008 年從現役名冊裡挑出這七個人，音樂總監交給鋼琴手 Bill Charlap，曲子全部取自 1950 到 1960 年代的自家目錄，編曲原則是一人一首。七個人裡當時只有 Charlap 是這個廠牌的領班藝人。歐美版要到 2009 年 1 月才上架，日本 2008 年 12 月 26 日就先出了。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mosaic:_A_Celebration_of_Blue_Note_Records",
+     "https://www.bluenote.com/artist/the-blue-note-7/",
+     "https://www.discogs.com/release/3235910-The-Blue-Note-7-Mosaic-A-Celebration-Of-Blue-Note",
+     "https://downbeat.com/news/detail/blue-note-7-celebrates-labels-70-years-with-new-releases-and-tour",
+     "https://www.discogs.com/release/17285473-The-Blue-Note-7-Mosaic-A-Celebration-Of-Blue-Note",
+     "https://www.discogs.com/release/4339923-The-Blue-Note-7-Mosaic-A-Celebration-Of-Blue-Note-Records",
+     "https://www.bluenote.com/music/mosaic-a-celebration-of-blue-note-records/",
+     "https://musicbrainz.org/release-group/7edc4d0d-d04e-36dc-a94b-0a4390c3c273"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/32/fb/4d/32fb4d87-95e2-3c3b-7599-842643d20b00/mzaf_7389992262974460128.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715806227",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ruben Hein",
+   "album": "Loose Fit",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **83e74fa6-b150-483c-9d23-ff32d2b53cbb**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Loose Fit」、artist-credit 單一成分 `Ruben Hein`（`347bd1f6-…` **Person** NL）、first-release-date **2010-10-29**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres`／`tags` 逐字皆空。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`b53f9b8a-139c-465d-811d-c1592f54148c`（2010-10-29 NL Official，CD **12 軌**，barcode `5099991747426`，label-info 逐字 `Blue Note` `713c4a95`、catalog-number 欄空）。十二軌：Elephants 3:33／Somebody to Love 3:49／Traffic Jam 2:55／Rosie 3:43／Say Bye 4:20／Stand Up, Speak Out! 4:04／Fear 4:18／Modest Man 4:29／That's Not Life 3:51／If Friends Is All 3:16／Lazy Afternoon 4:35／Deaf, Dumb, Exposed 3:40。**刻意不釘：無對照 RG**（MB 上 `Ruben Hein` 名下沒有第二個同名 RG）。Apple 兩個 collectionId `724901487`（12 軌，gb）／`715942743`（16 軌 Bonus Track Version，nl）**都不是 MB 實體**，僅供店面比對。",
+    "rgMbid": "83e74fa6-b150-483c-9d23-ff32d2b53cbb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/83e74fa6-b150-483c-9d23-ff32d2b53cbb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10351,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "阿姆斯特丹的爵士鋼琴科畢業生，把首張碟錄在瑞典，弦樂接自布拉格。Ruben Hein 2008 年拿到那張文憑，2010 年夏天與 Blue Note 簽約，同年 10 月 29 日這張碟就上市。主錄音落在瑞典 Malmö 的 Gula Studion，弦樂段落則由 The City of Prague Philharmonic Orchestra 在布拉格的 Barrandov 錄好再接上去。人聲爵士的骨架外面包了一層流行歌的皮，弦樂與銅管在後面墊出電影感。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ruben_Hein",
+     "https://www.discogs.com/release/2983088-Ruben-Hein-Loose-Fit",
+     "https://musicbrainz.org/release-group/83e74fa6-b150-483c-9d23-ff32d2b53cbb"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music3/v4/99/95/01/999501b7-0f13-959e-62df-0fb93b898035/mzaf_8705852019220436731.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "913316637",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Emma Salokoski & UMO",
+   "album": "Rytmihyrrä / Rytmyra",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **f905568f-d4b3-4ffd-968f-8c65bc9f1080**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Rytmihyrrä / Rytmyra」、artist-credit **兩個成分**——`Emma Salokoski`（`1d804fc5-…` Person FI，joinphrase 逐字 ` & `）＋`UMO`（`dec63f48-…` **Orchestra** FI，joinphrase 空），串接結果逐字 `Emma Salokoski & UMO`；first-release-date **2011-03-11**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres`／`tags` 逐字皆空。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 2 筆）：`084f4989-d544-415a-851e-b4e7f603e707`（2011-03-11 FI Official，**Digital Media 21 軌 + Digital Media 21 軌**，barcode 空，label-info 逐字 `EMI Finland` `4c418bbc`）；`0a1506ea-…`（2011-03-16 FI Official，**CD 21 軌 + CD 21 軌**，barcode `5099909794320`，label-info 逐字 `Blue Note` `713c4a95`）。第一片（芬蘭語）21 軌：Alkusoitto／Sirkusapina／Biisoni kävelyllä／Colliekoira／Sottainen possu／Hai／Saavi punkka／Pingviinisamba／Korvameduusa／Viisi tiikeriä／Leijona／Jättipanda／Korkotiili-limerikki／Skorpioni／Sinivalaat／Undulaattienkeli／Flamingo／Kekoblues／Rotan rokki／Sarvijaakko／Loppusoitto；第二片（瑞典語）為同序的對譯版（Uvertyr／Cirkusapan／Bison på promenad……Slutmusik）。**刻意不釘：無對照 RG。** 藝人 `1d804fc5`（Emma Salokoski）與 `dec63f48`（UMO）各自名下的其他 RG 皆非本線範圍。",
+    "rgMbid": "f905568f-d4b3-4ffd-968f-8c65bc9f1080",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f905568f-d4b3-4ffd-968f-8c65bc9f1080/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一批動物歌錄了兩次，一片芬蘭語、一片瑞典語。2011 年出的兩片 CD 收的是同樣二十一首曲子，唱的是 Emma Salokoski，伴奏是芬蘭的職業大樂團 UMO；樂團自己的唱片頁寫明，用一國的兩種官方語言把同一批歌各錄一次，據信以前沒有人做過。曲子全部由 Kirmo Lintinen 作曲並指揮，瑞典語是原詞，出自 Mayvor Fridlund-Lintinen，芬蘭語則是童書作家 Hannele Huovi 的翻譯。",
+    "sourceUrls": [
+     "https://umohelsinki.fi/album/emma-salokoski-umo-rytmihyrra-elainlauluja-lapsille-rytmyra-djursanger-for-barn/",
+     "https://en.wikipedia.org/wiki/Emma_Salokoski",
+     "https://en.wikipedia.org/wiki/UMO_Jazz_Orchestra",
+     "https://www.discogs.com/release/10832336-Emma-Salokoski-UMO-Rytmihyrr%C3%A4-Rytmyra",
+     "https://musicbrainz.org/release-group/f905568f-d4b3-4ffd-968f-8c65bc9f1080"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b1/5c/a5/b15ca573-d89b-486f-9a87-e4d604780fac/mzaf_16109410986971293013.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "713954121",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Musica Nuda",
+   "album": "Complici",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **d1a7b1c1-f995-49e5-a63d-d25d4808df59**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Complici」、artist-credit 單一成分 `Musica Nuda`（`b7840712-…` **Group** IT）、first-release-date **2011-03-15**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `jazz:1, pop:1`、`tags` 逐字 `jazz, pop`。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 3 筆）：`c8ca85e1-…`（2011-03-15 IT Official，CD 14 軌，barcode `5099902600321`，label-info 逐字 `Blue Note` `713c4a95` catno `5099902600321`）；`6841ac94-25c0-44bc-869e-1edb9ea466d3`（2011-03-28 FR Official，CD 14 軌，barcode `3149028001020`，label-info 逐字 `Bonsaï Music` `627abd8b`）；`21f91d83-…`（2011 IT Official，CD 14 軌，barcode `4029759122555`，label-info 逐字 `edel` `e7f93668` catno `0212255MGO`）。十四軌與時長：Vado giù 3:23／Una notte disperata 2:50／Complici 2:46／Lei colorerà 4:16／Sentieri, strade, saluti 2:54／Mirza 2:40／When I Drink 2:59／Rimando 2:58／I giorni di festa 4:04／Bach Aire 3:10／Professionalità 3:33／Mon amour 1:57／Cinema 2:43／Felicità 6:01。**刻意不釘：無對照 RG**（同批《Banda larga》`5a7bfe83-c73c-40bd-987b-8d0a56ac47a1` 是另一張碟、另一張卡，不是本卡的對照組）。藝人 `b7840712`。",
+    "rgMbid": "d1a7b1c1-f995-49e5-a63d-d25d4808df59",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d1a7b1c1-f995-49e5-a63d-d25d4808df59/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2723,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2723，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一支麥克風、一把低音提琴，這回外找了六組人替他們寫歌。Musica Nuda 是主唱 Petra Magoni 與低音提琴手 Ferruccio Spinetti 的二重奏，招牌一直是把別人的名曲剝到只剩這兩件；2006 年的《Musica nuda 2》替他們拿下該年 Premio Tenco 的詮釋者獎。2011 年的這一張把翻唱減到四首，其餘都是外面的作者替他們新寫的，標題曲由 Bruno Lauzi 與 Carlo Marrale 合寫。",
+    "sourceUrls": [
+     "https://it.wikipedia.org/wiki/Musica_Nuda",
+     "https://www.discogs.com/release/3215014-Musica-Nuda-Petra-Magoni-Ferruccio-Spinetti-Complici",
+     "https://musicbrainz.org/release-group/d1a7b1c1-f995-49e5-a63d-d25d4808df59"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/54/c7/42/54c7428f-d437-91fd-9277-ea1cd3168ab0/mzaf_8279889131039263486.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "440255891",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Erik Truffaz Quartet",
+   "album": "El tiempo de la revolución",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **7d2a8628-c92d-4e7d-be3e-a2feb75e84e9**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「El tiempo de la revolución」、artist-credit 單一成分逐字 **`Erik Truffaz Quartet`**（`54da4dfb-…` **Group** CH）、first-release-date **2012-10-26**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `contemporary jazz:1, electronic:1, jazz:1`、`tags` 逐字 `contemporary jazz, electronic, jazz`。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 3 筆）：`7928f99e-f7ba-4e32-b5c4-f6cfa02a9128`（2012-10-26 FR Official，CD **10 軌**，barcode `5099997903925`，label-info 逐字 `Blue Note` `713c4a95` ＋ `Foufino Productions` `31f59d88`）；`9567f097-…`（2012-10-29 FR Official，**CD 10 軌 ＋ DVD-Video 9 軌**，barcode `5099997903628`，label-info 逐字 `Blue Note`）；`900dd1dd-…`（2012-10-29 XW Official，Digital Media 10 軌，barcode `5099941623053`，label-info 逐字 `Parlophone France` `0b81e41d`）。CD 十軌與時長：El tiempo de la revolución 5:05／Istanbul Tango 6:47／Blue Movie 4:21／African Mist 7:35／La luna mentirosa 5:34／A Better Heart 4:00／Un souffle qui passe 4:53／Mr K. 5:57／Blow Away 3:32／Revolution of Time 11:08。DVD 九軌（**刻意不寫進正文**）：The Secret of the Dead Sea／Miss Kaba／In Between／Mechanic Cosmetic／Fujin／BC One／Dirge／Let Me Go／Lost in Bogota。**刻意不釘：無對照 RG**（MB 上沒有第二個同名 RG；池中 12 張 Truffaz 卡各有自己的 RG，皆非本卡對照組）。藝人 `54da4dfb`（Erik Truffaz Quartet，Group）與 Truffaz 個人實體在 MB 上是兩個 artist，**本卡採前者的 credit、後者的池中字串**。",
+    "rgMbid": "7d2a8628-c92d-4e7d-be3e-a2feb75e84e9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7d2a8628-c92d-4e7d-be3e-a2feb75e84e9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1032,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1032，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "吹了十幾年裸名唱片，他第一次把樂團名放上封面。Erik Truffaz 1960 年生於瑞士，小時候在父親的舞廳樂隊裡吹小號，十六歲聽到《Kind of Blue》才轉向爵士；1996 年與法國 EMI 簽約之後，他的碟一直只掛自己的名字。碟在 2012 年上市，四重奏是他加上 Marcello Giuliani、Marc Erbetta 與 Benoît Corboz，瑞士歌手 Anna Aaron 在三軌獻聲，那三首的詞也是她寫的。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Erik_Truffaz",
+     "https://www.bluenote.com/artist/erik-truffaz-2/",
+     "https://www.discogs.com/release/4052391-Erik-Truffaz-Quartet-El-Tiempo-De-La-Revoluci%C3%B3n",
+     "https://www.discogs.com/release/8788248-Erik-Truffaz-Quartet-El-Tiempo-De-La-Revoluci%C3%B3n",
+     "https://musicbrainz.org/release-group/7d2a8628-c92d-4e7d-be3e-a2feb75e84e9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/7d/ab/137dabb4-42b6-4100-902c-2cb2b89e3a9b/mzaf_7553493278669384304.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1842136702",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Northern Governors",
+   "album": "This Is the Northern Governors",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **d9fd6375-4747-4429-bb98-5ad7a10dae60**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「This Is the Northern Governors」、artist-credit 單一成分 `The Northern Governors`（`136468a7-…` **Group** FI）、first-release-date **2012-03-16**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `jazz:1, jazz-funk:1, soul:1`、`tags` 逐字 `jazz, jazz-funk, soul`。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 2 筆）：`aabecf85-db5c-4f09-a6c9-5ba77f65aa7d`（2012-03-16 FI Official，Digital Media 12 軌，barcode 空，label-info 逐字 `Blue Note` `713c4a95`）；`2aa3e86d-…`（2012-03-21 FI Official，CD 12 軌，barcode `5099932724028`，label-info 逐字 `Blue Note` catno `5099932724028`）。十二軌與時長：Zero Point 5:16／Trash Man 4:45／Hela huti 7:58／It Is What It Is 4:53／When You Came in to My Life 1:34／Safari Spots 5:41／R ja B 1:18／Broken Radio 0:33／What Is IF to You, Sweety? 6:59／Happy Souls 3:25／Set Me Free 4:12／The Thing 6:25。**刻意不釘：無對照 RG。** 藝人 `136468a7` 名下在 MB 只有本 RG。",
+    "rgMbid": "d9fd6375-4747-4429-bb98-5ad7a10dae60",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d9fd6375-4747-4429-bb98-5ad7a10dae60/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1694,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1694，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這支芬蘭放克團的成員，全是同一個家族的後代。七個人幾乎都是親戚：團長 J.K. Louhivuori 與 Tuomo Prättälä 是 Osmo Ikonen 的表親，而他們都是 Marjatta Pokela 與 Martti Pokela 的後代——前者寫過許多傳唱至今的芬蘭兒歌，後者是坎特勒琴大師。這個家族第一次合奏，就是在 Martti Pokela 的紀念音樂會上。2012 年發行的這張，重頭戲〈Hela Huti〉是向 Fela Kuti 致敬的曲子。",
+    "sourceUrls": [
+     "https://finland.fi/arts-culture/finnish-soul-jazz-supergroup-rules/",
+     "https://www.discogs.com/release/3573660-The-Northern-Governors-This-Is-The-Northern-Governors",
+     "https://musicbrainz.org/release-group/d9fd6375-4747-4429-bb98-5ad7a10dae60"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/fb/24/42fb24bc-d973-a10e-e8b9-6998defbcc11/mzaf_3903279726529026547.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "714050287",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jon Cowherd",
+   "album": "Mercy",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **744d6336-773e-4f33-8c83-50598e784433**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Mercy」、artist-credit 單一成分 `Jon Cowherd`（`2130c778-…` **Person** US）、first-release-date **2013**（僅年份精度）、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `contemporary jazz:1, jazz:1`、`tags` 逐字 `contemporary jazz, jazz`。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`ecc4100e-…`（2013 US Official，CD **11 軌**，barcode 空，label-info 兩格逐字 `ArtistShare` `0a497a28` catno `ASBN-0126` ＋ `Blue Note` `713c4a95` catno `ASBN-0126`）。十一軌與時長：The Columns 4:58／Mercy Suite Part One 6:22／Mercy Suite Part Two (Grace) 5:25／Mercy Suite Part Three (Mercy Wind) 4:44／Postlude 8:13／Baltica 5:41／Surrender's Song 4:06／Newsong 6:30／Seconds 2:38／Lowertown 6:29／Four Rivers 5:23。**刻意不釘：無對照 RG**（MB 上 `Jon Cowherd` 名下無第二個同名 RG；池中兩張同名盤 `Armand Hammer —《Mercy》`／`Don Covay —《Mercy!》` 是不同掛名的別碟，不是本卡的對照組）。",
+    "rgMbid": "744d6336-773e-4f33-8c83-50598e784433",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/af/90/fd/af90fdd2-83e3-61f5-448a-2b86d165465d/Cowherd_Mercy_cover.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "739960265",
+    "note": "試聽探測釘定的 collectionId 739960265（us）：Jon Cowherd — Mercy"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 141,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=141，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "樂迷先掏了錢，這張碟才錄得成。Jon Cowherd 到紐奧良的 Loyola University 跟 Ellis Marsalis 唸爵士鋼琴，後來與鼓手 Brian Blade 共同創立了 Brian Blade Fellowship，那支團的碟也是 Blue Note 發的。這張碟 2013 年做成，走的是 ArtistShare 的樂迷集資，贊助者出錢換到錄音現場的影片與內頁署名；目錄號同時掛 ArtistShare 與 Blue Note 兩個廠牌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Jon_Cowherd",
+     "https://www.joncowherd.com/music",
+     "https://www.discogs.com/release/5449947-Jon-Cowherd-Mercy",
+     "https://www.artistshare.com/Projects/Experience/334/449/1/Jon-Cowherd-Mercy",
+     "https://musicbrainz.org/release-group/744d6336-773e-4f33-8c83-50598e784433"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b7/bb/0a/b7bb0add-78da-45e6-89d0-ddaad5195601/mzaf_16439411522803487002.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "739960265",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Musica Nuda",
+   "album": "Banda larga",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **5a7bfe83-c73c-40bd-987b-8d0a56ac47a1**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Banda larga」、artist-credit 單一成分 `Musica Nuda`（`b7840712-…` **Group** IT）、first-release-date **2013-01-29**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `classical:1, jazz:1, pop:1`、`tags` 逐字 `classical, jazz, pop`。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 2 筆）：`38025bba-5e93-423a-b814-c0001a084c46`（2013-01-29 IT Official，Digital Media **21 軌**，barcode 空，label-info 逐字 `Blue Note` `713c4a95`）；`aed263bb-…`（2013-01-29 IT Official，CD **20 軌**，barcode `5099990388125`，label-info 逐字 `Blue Note`）。數位 21 軌與時長：Preludio (Aria c'è) 0:50／Aria c'è 3:08／Des ronds dans l'eau 2:43／Preludio (Qui tra poco pioverà) 1:18／Qui tra poco pioverà 3:30／Game of Taking Chances 2:52／Libera 3:46／Preludio (Um outro olhar) 1:01／Um outro olhar 4:17／Spina dorsale 3:55／Luele 1:11／Carica erotica 3:32／Preludio (Lirico lirica) 1:17／Lirico lirica 3:23／Le cose 3:47／Japan 0:58／Luna suadente 3:03／Preludio (Tu, la prima volta di tutto) 1:11／Tu, la prima volta di tutto 2:26／Les Tam-tam du paradis 4:30／**I ricordi della sera 2:25（僅數位版有，CD 20 軌無此軌）**。**刻意不釘：無對照 RG**（同批《Complici》`d1a7b1c1-f995-49e5-a63d-d25d4808df59` 是另一張碟、另一張卡）。藝人 `b7840712`。",
+    "rgMbid": "5a7bfe83-c73c-40bd-987b-8d0a56ac47a1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5a7bfe83-c73c-40bd-987b-8d0a56ac47a1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1231,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1231，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "成軍十年，這對只有人聲與低音提琴的搭檔請來一整個樂團。2013 年，Petra Magoni 與 Ferruccio Spinetti 把 Orchestra da camera delle Marche 請進來一起演奏，編曲與指揮交給與 Paolo Conte 合作多年的 Daniele Di Gregorio。二十軌裡有五首是 Di Gregorio 寫的器樂前奏曲，每一首各接一首歌；〈Le Cose〉則由 Magoni 和她的孩子一起唱。",
+    "sourceUrls": [
+     "https://it.wikipedia.org/wiki/Banda_larga_(album)",
+     "https://it.wikipedia.org/wiki/Musica_Nuda",
+     "https://www.discogs.com/release/9820411-Musica-Nuda-Banda-Larga",
+     "https://www.discogs.com/release/6600079-Musica-Nuda-Banda-Larga",
+     "https://www.discogs.com/release/5203271-Musica-Nuda-Banda-Larga",
+     "https://musicbrainz.org/release-group/5a7bfe83-c73c-40bd-987b-8d0a56ac47a1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/77/f4/69/77f469b3-c6ac-00c5-102a-6b00b418afa6/mzaf_7390016535091095592.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "655443969",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Otis Brown III",
+   "album": "The Thought of You",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **4dec69b3-1b73-409d-91f9-515da4a0034d**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「The Thought of You」、artist-credit 單一成分 `Otis Brown III`（`741eb270-…` **Person**，country 欄空）、first-release-date **2014**（僅年份精度）、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `jazz:1`、`tags` 逐字 `jazz`。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`98be0808-…`（2014 XE Official，CD **11 軌**，barcode `602537877003`，label-info 逐字 `Blue Note` `713c4a95` catno `0602537877003`）。十一軌與時長：The Way (Truth & Life) 7:47／The Thought of You - Part I 4:11／Interlude I - Truth 1:29／Stages of Thought 7:19／The Two Become One (For Paula) 6:51／You're Still the One 5:03／The Thought of You - Part II 3:15／I Love You Lord/We Exalt Thee/In the Beginning 8:20／The Thought of You - Part III 5:27／I Am Your Song 5:10／Interlude II - Life 2:04。**刻意不釘：無對照 RG**（MB 上 `Otis Brown III` 名下無第二個同名 RG；美版 Discogs `21548755` 在 MB 沒有對應 release，**不是另一個 RG**）。",
+    "rgMbid": "4dec69b3-1b73-409d-91f9-515da4a0034d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5b/12/af/5b12af11-0c53-747d-76c9-3e42d7486744/00602537877027.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443197408",
+    "note": "試聽探測釘定的 collectionId 1443197408（us）：Otis Brown III — The Thought of You"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6788,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一首曲子裡放進了他自己婚禮上的說話聲。那是〈The Two Become One (For Paula)〉裡的口白，說話的就是曲名獻給的人。Otis Brown III 是紐澤西人，父親帶爵士大樂團，母親後來當上 Newark 藝術高中的校長；他在大學裡遇上駐校的 Donald Byrd，Byrd 勸他別只想著當音樂老師，直接去紐約。唱片 2014 年問世，Gretchen Parlato 唱的是 Shania Twain 的〈You’re Still the One〉。",
+    "sourceUrls": [
+     "https://www.bluenote.com/artist/otis-brown-iii/",
+     "https://www.discogs.com/release/7832057-Otis-Brown-III-The-Thought-Of-You",
+     "https://www.bluenote.com/music/the-thought-of-you/",
+     "https://musicbrainz.org/release-group/4dec69b3-1b73-409d-91f9-515da4a0034d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/da/8d/4f/da8d4f5a-aeb4-6fad-adfa-32eeca540153/mzaf_14564590142866227694.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443197408",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kendrick Scott Oracle",
+   "album": "We Are the Drum",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **44174123-b12d-44a0-bf55-42352fd0ac54**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「We Are the Drum」、artist-credit **單一成分**、credited-name 與 `artist.name` 逐字皆為 **`Kendrick Scott Oracle`**（`71d3da26-…` **Group** US）、first-release-date **2015-09-15**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `jazz:1`、`tags` 逐字 `jazz`。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`168e453c-6fca-46a1-b3d0-8e7e228128ad`（2015-09-15 US Official，**Digital Media 11 軌**，barcode 空，label-info 逐字 `Blue Note` `713c4a95`、catalog-number 欄空）。十一軌與時長：We Are the Drum 5:38／Make Believe 8:09／This Song in Me 4:53／Mantra 7:52／The Long Shadow 5:26／Never Catch Me 5:59／Touched by an Angel (For Maya) 4:57／Milton 7:43／Lotus 5:15／Synchrony 4:59／Touched by an Angel 4:44。**刻意不釘：`9cc6d662-ac45-4099-b994-b4403f39e730`《Corridors》(2023)（c-166 a 組已建卡，掛名是 `Kendrick Scott, Reuben Rogers, Walter Smith III` 的三人並列 credit，是另一張碟、另一個掛名主體，列在此處只為留下第 1539 條的判讀軌跡）。** 實體版（美 `B002334502`／歐 `0602547351531`／日 `UCCQ-1047`）在 MB **沒有對應 release**，資料取自 Discogs `8550212`／`10307891`／`19119046`。",
+    "rgMbid": "44174123-b12d-44a0-bf55-42352fd0ac54",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/44174123-b12d-44a0-bf55-42352fd0ac54/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4376,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他唸的那所休士頓高中，也送出了 Robert Glasper 與 Beyoncé。Kendrick Scott 生於休士頓的音樂家庭，唸的是當地的表演與視覺藝術高中，後來替 Herbie Hancock 與 Terence Blanchard 巡演過。Oracle 是他自己樂團的名字；碟 2015 年出，十一軌裡有一首翻的是 Flying Lotus 的〈Never Catch Me〉。吉他與 Rhodes 交疊出帶混響的中景，重心在織體而不在獨奏長度。",
+    "sourceUrls": [
+     "https://www.bluenote.com/artist/kendrick-scott/",
+     "https://www.discogs.com/release/10307891-Kendrick-Scott-Oracle-We-Are-The-Drum",
+     "https://www.discogs.com/release/8550212-Kendrick-Scott-Oracle-We-Are-The-Drum",
+     "https://musicbrainz.org/release-group/44174123-b12d-44a0-bf55-42352fd0ac54"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/05/7d/54/057d54a2-d5e5-1efa-1b52-34ff42fb77d4/mzaf_5060444223547622336.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443240528",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sunaga t Experience",
+   "album": "STE",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **ccd52722-eb2d-4a10-a24a-b1a389bc188e**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「STE」、artist-credit 單一成分逐字 `Sunaga t Experience`（`6f9c7a65-…` **Person**，country 欄空）、first-release-date **2015-05-20**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres`／`tags` 逐字皆空。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 2 筆）：`952eaa21-…`（2015-05-20 JP Official，CD **11 軌**，barcode `4988005885999`，label-info 逐字 `Blue Note` `713c4a95` catno `UCCJ-2123`）；`77e41601-…`（**2022-04-23** JP Official，**12\" Vinyl 5 軌 + 12\" Vinyl 6 軌**，barcode `4988031479995`，label-info 逐字 `Blue Note` catno `PROZ-7910/1`）。CD 十一軌與時長：犬神家の一族 〜愛のバラード〜 4:24／色彩のブルース 7:15／Kind of 0:40／Ventura Highway 4:24／moderno 〜keep going,Tokyo〜 6:40／a.S.S. 〜dedicate to Hermeto Pascoal〜 0:39／Kiev no Sora (キエフの空) 6:11／新千歳空港 5:31／DIRTY30 5:37／20:00_20号線 4:21／Slumber 5:02。逐軌來源實查：recording `f3d09f82`（〈犬神家の一族 〜愛のバラード〜〉，credit 逐字 `Sunaga t Experience`，frd 逐字 `2015-05-20`，另出現在 2016-05-23 的《須永辰緒の夜ジャズ・外伝2〜All the young dudes〜すべての若き野郎ども》與 2022 黑膠上）、`b6053689`（〈色彩のブルース〉，credit 逐字 `Sunaga t Experience` ＋ `chihiRo`，frd 逐字 `2015-05-20`，只出現在本盤兩版上）。**刻意不釘：無對照 RG**；**2016 年的《須永辰緒の夜ジャズ・外伝2》是集結盤、不在本線清單上，本卡不釘也不收。**",
+    "rgMbid": "ccd52722-eb2d-4a10-a24a-b1a389bc188e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/38/1d/7f/381d7f26-60ac-65fb-687a-224f6f16be2c/00600406592774.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442847639",
+    "note": "試聽探測釘定的 collectionId 1442847639（gb）：Sunaga t Experience — STE"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 459,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=459，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "放了三十年唱片的 DJ，把一路上有淵源的人全找回來錄一張碟。Sunaga t Experience 是日本 DJ 須永辰緒的個人企劃，這張 2015 年的碟是他 DJ 生涯三十週年的紀念專輯；他在日本有「レコード番長」的稱號，長年監修「須永辰緒の夜ジャズ」系列。找齊的人不分曲風也不分國界——〈DIRTY30〉由六位日本嘻哈場景的 MC 接力上麥，開場翻的則是大野雄二為 1976 年電影《犬神家の一族》寫的〈愛のバラード〉。",
+    "sourceUrls": [
+     "https://www.universal-music.co.jp/sunaga-t-experience/products/uccj-2123/",
+     "https://www.discogs.com/release/7058519-Sunaga-T-Experience-STE",
+     "https://musicbrainz.org/release-group/ccd52722-eb2d-4a10-a24a-b1a389bc188e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c5/ed/cd/c5edcd40-97f2-6262-eb6f-47fee53d14c3/mzaf_632833856129461058.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442847639",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Logan Richardson",
+   "album": "Shift",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **66e686e9-abc3-43aa-a65f-554871faba74**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Shift」、artist-credit 單一成分 `Logan Richardson`（`7208ea2f-…` **Person** US）、first-release-date **2016-02-26**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `jazz:1`、`tags` 逐字 `jazz`。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 2 筆）：`0f2e8ede-e3ef-45dd-8e43-3fcbb31df0f6`（2016-02-26 XW Official，Digital Media 11 軌，barcode 空，label-info 逐字 `Universal Music` `13a464dc`）；`fbc46fa1-…`（2016-02-26 US Official，CD 11 軌，barcode `600406671585`，label-info 逐字 `Blue Note` `713c4a95` catno `B002446902`）。十一軌與時長：Mind Free 6:34／Creeper 8:31／In Your Next Life 7:07／Locked Out of Heaven 6:45／Slow 7:38／When I Wake 1:14／Imagine 4:44／Alone 6:13／In Between 0:27／Time 2:30／Untitled 7:52。錄音 **2013-12-04／05，Sear Sound Recording Studios, New York**（Discogs `9590844` notes 逐字）。**刻意不釘：無對照 RG**；**Discogs `8444720`（2016 RU，`formats` descriptions 逐字含 `Unofficial Release`）刻意不採為版本來源。** ⚠ **MB 缺口（第二種 Discogs 掃描查出）**：**MB 沒有建日版 `UCCQ-1044`（SHM-CD 13 軌，Discogs `7658280`，`released` 逐字 `2015-10-14`）**——本卡的年份改判靠這一筆（第 2196 條）。",
+    "rgMbid": "66e686e9-abc3-43aa-a65f-554871faba74",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/66e686e9-abc3-43aa-a65f-554871faba74/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2781,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2781，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄完兩年多碟才上架，而且日本比歐美早了四個月。Logan Richardson 生於堪薩斯市；1997 年 2 月，十六歲的他受邀與堪薩斯市交響樂團同台，他說那場演出改變了他的人生。這張的錄音是 2013 年 12 月 4 日與 5 日兩天，陣容有 Pat Metheny 的吉他與 Jason Moran 的鋼琴。日版 SHM-CD 2015 年 10 月 14 日先上市，多收兩首、共十三軌；歐美版 2016 年 2 月才出，十一軌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Logan_Richardson",
+     "https://www.discogs.com/release/7658280-Logan-Richardson-Shift",
+     "https://musicbrainz.org/release-group/66e686e9-abc3-43aa-a65f-554871faba74"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bf/02/9f/bf029f6b-6010-3e73-9c92-080c98399bfd/mzaf_14568917119536393073.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443599374",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aron Ottignon",
+   "album": "Team Aquatic",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **48ad7e15-ba5f-4026-af63-b9f08b9ccc65**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Team Aquatic」、artist-credit 單一成分 `Aron Ottignon`（`96bbc7f4-…` **Person**，country 欄空）、first-release-date **2017-10-13**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres`／`tags` 逐字皆空。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`169f67c9-…`（2017-10-13 FR Official，CD **11 軌**，barcode `602557768206`，label-info 逐字 `Blue Note` `713c4a95` catno `577682-0`）。十一軌與時長：Starfish 4:07／Waterfalls 3:13／Waves 3:28／The Jungle 7:16／Ocean 4:54／Team Aquatic 3:46／Hot Tub 4:42／Rivers 3:47／Stonefish 4:47／The Nile 3:40／Rothesay Bay 2:37。**刻意不釘：無對照 RG。** ⚠ Apple `1442272798` 的 `trackCount` 逐字 14，**不是 MB 實體**，僅供店面比對。",
+    "rgMbid": "48ad7e15-ba5f-4026-af63-b9f08b9ccc65",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/ee/28/27/ee28270e-19f8-cda5-fe48-5e69cae64be5/00602567009580.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442272798",
+    "note": "試聽探測釘定的 collectionId 1442272798（us）：Aron Ottignon — Team Aquatic"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 8230,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "從 Starfish 到 The Nile，整張碟的曲名都泡在水裡。Aron Ottignon 生於紐西蘭，十六歲就已被視為南半球最好的爵士鋼琴手之一；碟由 Blue Note France 在 2017 年推出，十一軌裡有十軌是他與紐西蘭製作人 Rodi Kirkcaldy 共同作曲與製作的。鋼琴以外最搶耳的音色是鋼鼓，Samuel Dubois 在其中七軌上打 steel pan。收尾的〈Rothesay Bay〉只剩他一個人彈鋼琴。",
+    "sourceUrls": [
+     "https://www.loop.co.nz/artists/aron-ottignon/",
+     "https://en.wikipedia.org/wiki/Aronas_(band)",
+     "https://www.discogs.com/release/11122914-Aron-Ottignon-Team-Aquatic",
+     "https://musicbrainz.org/release-group/48ad7e15-ba5f-4026-af63-b9f08b9ccc65"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c7/fa/77/c7fa774c-186a-0ff9-674f-b461a92c1dfc/mzaf_6200379728764421073.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442272798",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Blue Note All-Stars",
+   "album": "Our Point of View",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **a4a548d6-57e2-4f7d-8fe2-ff014b667ad1**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Our Point of View」、artist-credit 單一成分、credited-name 與 `artist.name` 逐字皆為 **`Blue Note All‐Stars`（U+2010 HYPHEN）**，artist 實體 **`a475738b-d51d-4a0d-9de2-724e909435c3`**（**Group**，country 欄空，disambiguation 逐字 `formed in 2014 for Blue Note's 75th anniversary, ft. Robert Glasper`）；first-release-date **2017-09-29**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `jazz:1`、`tags` 逐字 `jazz`。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`055a7f13-1cea-4bd7-a3ce-8aef82c58435`（2017-09-29 US Official，**CD 6 軌 + CD 5 軌**，barcode `602557774917`，label-info 逐字 `Blue Note` `713c4a95` catno `B002709202JK02`）。第一片：Bruce's Vibe 1:32／Cycling Through Reality 8:41／Meanings 9:01／Henya 4:23／**Witch Hunt 17:42**／Second Light 5:41；第二片：**Masquelero 9:25**／Bayyinah 13:42／Message of Hope 7:08／Freedom Dance 10:58／Bruce, The Last Dinosaur 2:24。**MB 同字串 artist 反查（`artist?query=\"Blue Note All Stars\"`）共四個實體，刻意不採的三個：`232efc20`（`The Blue Note All Stars`，即 c-168 slice 的《Blue Spirit》1996 那一團）、`2f32fbfb`（`Blue Note All-Stars`，life-span 逐字 1976-06-28 單日）、`8cbffb8c`（`Blue Spirit: The Blue Note All Stars`）。** **刻意不釘：`b4072123-3200-3aef-a11d-2e2ab779e876`《Blue Spirit》(1996)（c-168 a 組的碟，不同團、不同碟，列在此處只為留下同名實體的判讀軌跡）。**",
+    "rgMbid": "a4a548d6-57e2-4f7d-8fe2-ff014b667ad1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a4a548d6-57e2-4f7d-8fe2-ff014b667ad1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12636,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "開場曲裡傳出前任社長的聲音，那是他在頒獎台上的一段講話。〈Bruce’s Vibe〉收進的是 Bruce Lundvall 2011 年的領獎錄音。這支六人團 2014 年為 Blue Note 七十五週年成立，碟到 2017 年才出，整張獻給 2015 年辭世的他——1984 年讓休眠的廠牌重新活過來的就是這個人。收尾是 Akinmusire 寫的一首輓歌，Wayne Shorter 與 Herbie Hancock 則在〈Masquelero〉同台。",
+    "sourceUrls": [
+     "https://www.bluenote.com/music/our-point-of-view/",
+     "https://www.discogs.com/release/15843970-Blue-Note-All-Stars-Our-Point-Of-View",
+     "https://musicbrainz.org/release-group/a4a548d6-57e2-4f7d-8fe2-ff014b667ad1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/23/05/3f/23053ff2-8369-1db7-42ad-0c79248912e4/mzaf_461193783525730495.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440885750",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chris Dave and The Drumhedz",
+   "album": "Chris Dave and The Drumhedz",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **79503be3-f865-4561-a030-fee7a06d7b88**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Chris Dave and The Drumhedz」、artist-credit 單一成分逐字 `Chris Dave and The Drumhedz`（`87e23315-…` **Group** US）、first-release-date **2018-01-26**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `hip hop:1, jazz:1`、`tags` 逐字 `hip hop, jazz`。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 2 筆）：`b8546901-e896-4ae7-a37a-c43638ca7906`（2018-01-26 US Official，Digital Media 15 軌，barcode 空，**label-info 逐字空陣列**）；`0ee4f08a-…`（2018 US Official，CD 15 軌，barcode `602537794409`，label-info 兩格逐字 `Blue Note` `713c4a95` catno `B002705302` ＋ `GLOW365` `3534a284` catno `B002705302`）。十五軌與時長：Rocks Crying 2:21／Universal Language 3:40／Dat Feelin' 3:39／Black Hole 4:34／2N1 1:02／Spread Her Wings 5:23／Whatever 2:17／Sensitive Granite 3:42／Cosmic Intercourse 5:44／Atlanta, Texas 3:45／Destiny N Stereo 3:49／Clear View 6:27／Job Well Done 4:37／Lady Jane 5:39／Trippy Tipsy 2:26。**刻意不釘：無對照 RG。** Apple 兩個 collectionId `1442962527`／`1440881381` **都不是 MB 實體**，僅供店面比對（同一 UPC 回兩筆）。",
+    "selfTitledVerified": true,
+    "rgMbid": "79503be3-f865-4561-a030-fee7a06d7b88",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/79503be3-f865-4561-a030-fee7a06d7b88/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 39290,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他們在倫敦訂的那場演出賣光時，手上一張唱片都還沒有。那時樂團還叫 Chris Dave and Friends。Chris Dave 三歲想替哥哥的放克團打鼓被拒絕，先在教會打打擊樂；後來進霍華德大學拿全額獎學金，一學期後輟學，向 Jimmy Jam 自我推薦，Mint Condition 就找他當鼓手。2009 到 2012 年他參與的三張唱片各自在不同曲風拿下葛萊美，Drumhedz 的班底就從那份名單長出來，2018 年才交出這張同名專輯。",
+    "sourceUrls": [
+     "https://www.bluenote.com/artist/chris-dave-and-the-drumhedz/",
+     "https://www.discogs.com/release/11558379-Chris-Dave-And-The-Drumhedz-Chris-Dave-And-The-Drumhedz",
+     "https://www.bluenote.com/blue-note-61st-grammy-nominations/",
+     "https://musicbrainz.org/release-group/79503be3-f865-4561-a030-fee7a06d7b88"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/31/52/b1/3152b122-835e-ce5b-8f5b-e8e4b65269b0/mzaf_6648370357721699243.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440881381",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kenny Barron Quintet",
+   "album": "Concentric Circles",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **498a3292-43f3-44a1-a0b2-c152e183fe82**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Concentric Circles」、artist-credit 單一成分逐字 **`Kenny Barron Quintet`**（`28d91e80-…` **Group**，country 欄空）、first-release-date **2018-05-04**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `jazz:1`、`tags` 逐字 `jazz`。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 3 筆）：`0f58c549-…`（2018-05-04 XE Official，CD 11 軌，barcode `602567478973`，label-info 逐字 `Blue Note` `713c4a95` catno `6747897`）；`af6e8674-b057-4f31-beeb-2e34c175a14f`（2018-05-04 US Official，Digital Media 11 軌，barcode 空，**label-info 逐字空陣列**）；`d3d623c2-…`（2018-05-04 US Official，CD 11 軌，barcode `602567478973`，label-info 逐字 `Blue Note` catno `B002832502`）。十一軌與時長：DPW 4:51／Concentric Circles 7:26／Blue Waters 5:39／A Short Journey 5:28／Aquele Frevo Axe 8:15／Von Hangman 4:43／In the Dark 7:00／Baile 5:16／L's Bop 5:54／I'm Just Sayin' 6:51／Reflections 4:44。錄音 **2017-03-19／20，Brooklyn, New York**（Discogs `11973964` notes 逐字）。**刻意不釘：無對照 RG**（池中 seed 的 `Kenny Barron —《Scratch》(1985)`／《What If?》(1986) 是他 Enja 時期的別碟，不是本卡的對照組）。",
+    "rgMbid": "498a3292-43f3-44a1-a0b2-c152e183fe82",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/498a3292-43f3-44a1-a0b2-c152e183fe82/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11439,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1967 年他就在這個廠牌的唱片上彈琴，當時的身分是側手。Kenny Barron 1943 年生於費城，十九歲搬到紐約，與 Dizzy Gillespie 合作過；替 Bobby Hutcherson 那一輩人彈的琴，當年就留在 Blue Note 的目錄裡。2018 年他過七十五歲生日、錄音生涯滿五十年，這張才是他在這個廠牌的第一張領班作。前兩張是二重奏與三重奏，這回他把編制擴回五人，理由是人多他才有得寫。",
+    "sourceUrls": [
+     "https://www.bluenote.com/music/concentric-circles/",
+     "https://www.discogs.com/release/11973964-Kenny-Barron-Quintet-Concentric-Circles",
+     "https://musicbrainz.org/release-group/498a3292-43f3-44a1-a0b2-c152e183fe82"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3c/a1/30/3ca130d1-b9d1-fd16-04eb-bffa3368bb00/mzaf_15764900244193790507.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1353873537",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "R+R=NOW",
+   "album": "Collagically Speaking",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **bfe6a431-eab0-41f3-8390-c7566980687d**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Collagically Speaking」、artist-credit **單一成分**、credited-name 與 `artist.name` 逐字皆為 `R+R=NOW`（`88e39d68-…` **Group** US）、first-release-date **2018-06-15**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `contemporary jazz:2, hip hop:1, jazz:1`、`tags` 逐字 `contemporary jazz, hip hop, jazz`。release 端點（`inc=media+labels+recordings+artist-credits`，**轄下 8 筆，date 逐字全部 2018-06-15**）：`dc62d186-…`（US Official，CD 11 軌，barcode `602567554318`，Blue Note catno `B002836002`）；`109a6e79-…`（XE Official，CD 11 軌，barcode `602567554318`，Blue Note catno `00602567554318`）；`48a3ed16`／`6d77dc1b`／`ad455797`（Digital Media 11 軌，barcode `00602567554349`／`00602567554363`／`00602567554356`，Blue Note catno 逐字 `[none]`）；`25aeef17`／`a2d4ed44`／`bd48bf5f`（**JP** Digital Media **12 軌**，barcode `00602567717324`／`00602567720706`／`00602567720713`，Blue Note catno 逐字 `[none]`）。十一軌與時長（取自日本版前十一軌，與 CD 同序）：Change of Tone 7:33／Awake to You 8:15／By Design 5:27／Resting Warrior 9:51／Needed You Still 6:10／Colors in the Dark 4:49／The Night in Question 7:41／Reflect Reprise 6:42／HER=NOW 6:45／Respond 5:22／Been on My Mind 4:50；**日本版第 12 軌 Reflect Reprise (MC Rob G version) 6:40 不計入本卡軌序。** 錄音 **Henson Recording Studios, Los Angeles**（維基逐字）。**刻意不釘：無對照 RG**；**c-170 slice 的《R+R=NOW Live》(2021) 是另一張碟、另一批的事。**",
+    "rgMbid": "bfe6a431-eab0-41f3-8390-c7566980687d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bfe6a431-eab0-41f3-8390-c7566980687d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 22152,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "團名是一道算式：Reflect 加 Respond 等於 NOW。這個念頭來自 Nina Simone——被質問為何不閉嘴唱歌時，她的回答是藝術家的責任就是反映所處的時代。Robert Glasper 召集的這支六人團是 2017 年 SXSW 的產物：一場沒有排練的全明星演出好到他決定把同一批人搬進錄音室。錄音只花四天，曲子在錄音室現場寫、一次錄成，碟在 2018 年上架；合成器與 vocoder 鋪出厚霧，小號在霧裡開路。",
+    "sourceUrls": [
+     "https://www.bluenote.com/music/collagically-speaking/",
+     "https://www.discogs.com/release/12200875-RRNow-Collagically-Speaking",
+     "https://musicbrainz.org/release-group/bfe6a431-eab0-41f3-8390-c7566980687d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/e1/57/b0e15764-b71b-7a86-2620-cf6155fa2e23/mzaf_5625863046887244053.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1383057057",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Charles Lloyd New Quartet",
+   "album": "Passin' Thru",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **f02473c5-5dd1-40a0-b365-e2f91fec135c**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Passin’ Thru」（**U+2019 撇號**）、artist-credit 單一成分逐字 **`The Charles Lloyd New Quartet`**（`c5c626e3-…` **Group**，country 欄空）、**first-release-date 逐字 `2018-07-14`（⚠ 本卡改判 2017，見 risk）**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**、`genres` 逐字 `jazz:1`、`tags` 逐字 `jazz`。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`32d3efe0-fa7f-42d2-8f56-4a030c8082fb`（date 逐字 `2018-07-14`、US Official，CD **7 軌**，barcode `602557649888`，label-info 逐字 `Blue Note` `713c4a95` catno `B002681502`）。七軌與時長：Dream Weaver 17:46／Part 5, Ruminations 11:55／Nu Blues 11:51／How Can I Tell You 9:46／Tagore on the Delta 7:45／Passin' Thru 7:22／Shiva Prayer 8:25（**與 Discogs master `1211978` 的 tracklist 逐秒相符**）。班底（維基 Personnel 段逐字）：Charles Lloyd 次中音薩克斯風與長笛、Jason Moran 鋼琴、Reuben Rogers 貝斯、Eric Harland 鼓。錄音：**〈Dream Weaver〉2016-06-30 Montreux Jazz Festival，其餘六軌 The Lensic, Santa Fe, NM**（bluenote.com 本盤頁逐字）。**刻意不釘：無對照 RG**（MB 上 `The Charles Lloyd New Quartet` 名下無第二個同名 RG；維基消歧義頁列的 James Gang (1972)／Chico Hamilton (1962) 兩張同名盤是別的藝人的碟，**池中皆無**）。",
+    "rgMbid": "f02473c5-5dd1-40a0-b365-e2f91fec135c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f02473c5-5dd1-40a0-b365-e2f91fec135c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=19，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五十年前他寫的那首曲子，這回在台上被拉成十七分多鐘。開場的〈Dream Weaver〉是 Charles Lloyd 1966 年那張四重奏專輯的同名曲，也是那趟巡演的第一首。2017 年的這張現場碟紀念的是他 2007 年 4 月組成的 New Quartet 成軍十週年；他的說法是，那些曲子像他的孩子，離家之後又回來了。七軌剪自 2016 年夏天的兩場演出：Montreux 一軌，聖塔菲的 The Lensic 六軌。",
+    "sourceUrls": [
+     "https://www.bluenote.com/music/passin-thru/",
+     "https://www.discogs.com/release/10745067-Charles-Lloyd-New-Quartet-Passin-Thru",
+     "https://musicbrainz.org/release-group/f02473c5-5dd1-40a0-b365-e2f91fec135c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/8b/20/018b2039-36a4-265e-7937-e874dc83db3c/mzaf_10245160723275261444.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440884105",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sarah McCoy",
+   "album": "Blood Siren",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **b3c0cddb-da9d-490a-87ba-0bc8b3838c08**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Blood Siren」、artist-credit 單一成分 `Sarah McCoy`（`1db39276-…` **Person** US）、first-release-date **2019-01-25**、primary-type `Album`、**secondary-types 逐字空陣列**、`genres` 逐字 `jazz:1`、`tags` 逐字 `jazz`。release 端點（`inc=media+labels+recordings+artist-credits`）：**轄下只有 1 筆**——`f4940eda-1b6e-46a8-9828-53f811be1239`（2019-01-25 XW Official，CD **13 軌**，barcode `0602567685777`，label-info 逐字 `Blue Note` `713c4a95`、**catalog-number 欄空**）。十三軌與時長：New Orleans 5:16／Boogieman 2:58／Hot Shot 3:29／Pistol Whipped 4:07／Someday 4:41／Mamma's Song 4:13／The Death of a Blackbird 2:19／I Miss Her 4:03／Fearless 3:07／Red Hot 2:22／Ugly Dog 3:32／Devil's Prospects 2:52／Show's Over 3:27。製作 **Chilly Gonzales ＋ Renaud Letang**，錄音與混音 **Studios Ferber, Paris, 2018 年 2 月**（Discogs `13318607` credits／notes 逐字）。**刻意不釘：無對照 RG**；黑膠 `13133002` 與宣傳 CDr `17641252` 在 MB **沒有對應 release**，資料取自 Discogs。",
+    "rgMbid": "b3c0cddb-da9d-490a-87ba-0bc8b3838c08",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b3c0cddb-da9d-490a-87ba-0bc8b3838c08/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6928,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "父親與祖母在幾天內相繼過世，接住她的是一架別人留下的鋼琴。Sarah McCoy 生於紐約州的小鎮 Pine Plains，母親是還俗的修女；全家搬到 Charleston 不久就遇上那兩場喪事，那架琴是家族友人的亡妻留下的，她從此上古典鋼琴課並開始寫歌。2011 年她去了紐奧良，在法國區的 Spotted Cat 有固定時段；2017 年 4 月她在巴黎替 Chilly Gonzales 暖場，當晚就進了錄音室，2019 年這張碟才成形。",
+    "sourceUrls": [
+     "https://www.universal-music.de/sarah-mccoy/biografie",
+     "https://www.universal-music.de/sarah-mccoy/musik/blood-siren-470836",
+     "https://www.discogs.com/release/13318607-Sarah-McCoy-Blood-Siren",
+     "https://musicbrainz.org/release-group/b3c0cddb-da9d-490a-87ba-0bc8b3838c08"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ae/21/41/ae214170-2789-044b-7305-3dc525ce24db/mzaf_6410474574885560244.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1437499632",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The James Carter Organ Trio",
+   "album": "Live From Newport Jazz",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **5dc6ef4a-b21e-43b2-ae3b-f8c155390e01**。release-group 端點（`inc=artist-credits+releases+genres+tags`）：title 逐字「Live From Newport Jazz」、artist-credit 單一成分逐字 **`The James Carter Organ Trio`**（`9f82bfc6-…` **Group**，country 欄空）、first-release-date **2019-08-30**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**、`genres` 逐字 `avant-garde jazz:1, jazz:1, post-bop:1, soul jazz:1`、`tags` 逐字同。release 端點（`inc=media+labels+recordings+artist-credits`，轄下 3 筆）：`1741d187-…`（2019-08-30 US Official，Digital Media 6 軌，barcode 空，**label-info 逐字空陣列**，AC 逐字 `The James Carter Organ Trio`，**軌名全帶 `(Live)` 後綴**）；`af1b1863-88da-475d-b428-30574504ffdf`（2019 XE Official，CD 6 軌，barcode `602508009594`，Blue Note catno `00602508009594`，**AC 逐字 `James Carter Organ Trio`（無定冠詞）**，⚠ **第 4 軌 recording 指錯、時長 701 秒有誤**）；`f98ef244-…`（2019 US Official，CD 6 軌，barcode `602508009594`，Blue Note catno `B003079802`，AC 逐字 `The James Carter Organ Trio`）。**軌序與時長以美版 `f98ef244` 為準**：Le Manoir De Mes Reves 11:29／Melodie au Crepuscule 10:47／Anouman 10:06／La Valse Des Niglos 7:12／Pour Que Ma Vie Demeure 6:27／Fleche d'Or 8:32。班底（Discogs `34510462` credits 逐字）：James Carter 中音／高音／次中音薩克斯風、Gerard Gibbs Hammond B-3、Alex White 鼓；製作 Don Was；錄音 **2018-08-05 Newport Jazz Festival, Newport, RI**。**刻意不釘：無對照 RG。**",
+    "rgMbid": "5dc6ef4a-b21e-43b2-ae3b-f8c155390e01",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5dc6ef4a-b21e-43b2-ae3b-f8c155390e01/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=6，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六首 Django Reinhardt，交給一支管風琴三重奏。James Carter 是底特律的薩克斯風手，這張 2019 年的碟錄的是 2018 年 8 月的 Newport Jazz Festival 現場，同台的 Gerard Gibbs 與 Alexander White 也是底特律人。曲目全部是 Reinhardt 寫的或與他有關的作品，Carter 的說法是要給吉普賽爵士一張街區通行證。六軌裡他換了三支管，開場那首十一分二十九秒。",
+    "sourceUrls": [
+     "https://www.bluenote.com/james-carter-live-from-newport-jazz-blue-note-80-tour/",
+     "https://www.discogs.com/release/15428645-James-Carter-Organ-Trio-Live-From-Newport-Jazz",
+     "https://www.bluenote.com/artist/james-carter/",
+     "https://musicbrainz.org/release-group/5dc6ef4a-b21e-43b2-ae3b-f8c155390e01"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9d/ca/f6/9dcaf621-9101-63e4-7492-28c757090668/mzaf_13855321948884650370.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1474274232",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

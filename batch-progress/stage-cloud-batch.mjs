@@ -48,7 +48,13 @@ if (fs.existsSync(`${dir}/apple-art.json`)) {
 for (const c of cards) put(c.artist, c.album, c.cover);
 // 沒封面的也要留一列（cover: null）——itunes-covers／fill-covers 兩支補救腳本
 // 是靠「covers.json 裡 cover 為空的列」找工作的，只寫命中的等於讓它們無事可做。
-const coverRows = cards.map(c => covers.get(c.artist + '|' + c.album)
+// 重跑轉檔時不要洗掉本機已經補好的封面（Apple／Spotify／iTunes／Discogs 四層寫回的都在 covers.json 裡）。
+// 2026-10-04 c-187 為了更新一張試聽重跑轉檔，四張補好的封面被洗回空的。雲端沒給封面、本機補過的那幾列照舊保留。
+const prevCovers = new Map();
+if (fs.existsSync(`${dir}/covers.json`)) {
+  try { for (const x of arrOf(rd(`${dir}/covers.json`))) if (x && x.cover && x.cover.url) prevCovers.set(x.artist + '|' + x.album, x); } catch { /* 舊檔壞了就當沒有 */ }
+}
+const coverRows = cards.map(c => covers.get(c.artist + '|' + c.album) || prevCovers.get(c.artist + '|' + c.album)
   || { artist: c.artist, album: c.album, cover: null });
 fs.writeFileSync(`${dir}/covers.json`, JSON.stringify(coverRows, null, 1));
 
