@@ -6,11 +6,11 @@
 //
 // 更新流程：
 //   1. 由 Claude 以 Notion MCP 查表，覆寫 data/shop/notion-snapshot.json
-//      ——只留公開欄位（頁面 id、品名、演出者、年份、品相、售價）；成本、利潤、抽成、群組不進 repo。
+//      ——只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵→poolKey）；成本、利潤、抽成、群組不進 repo。
 //   2. node scripts/sync-shop-inventory.mjs           （乾跑，只報告）
 //      node scripts/sync-shop-inventory.mjs --write   （寫入 inventory.json）
 //
-// 對應規則：先看 OVERRIDES（Notion 頁面 id → 卡池 [藝人, 專輯]），再自動比對
+// 對應規則：先看 Notion「卡池鍵」欄（poolKey），再看 OVERRIDES（Notion 頁面 id → 卡池 [藝人, 專輯]），再自動比對
 // （品名去掉「2LP」後與盤名正規化全等，且藝人名互相包含）。
 // 對不到的列：在 PENDING_NEW 裡的記為 pending_card（等新卡上架），其餘一律報錯、exit 1。
 // 快照裡消失的列不刪，改記 sold ＋ soldAt，舊連結與統計才不會斷。
@@ -71,10 +71,13 @@ for (const row of snap.rows) {
   if (!row.id || !row.title) continue;                 // Notion 空白列
   seen.add(row.id);
   let card = null, how = null;
-  if (OVERRIDES[row.id]) {
-    card = byKey.get(key(...OVERRIDES[row.id]));
-    how = 'override';
-    if (!card) errors.push(`OVERRIDE 指向卡池不存在的卡：${row.id} → ${OVERRIDES[row.id].join('｜')}`);
+  // Notion「卡池鍵」欄（藝人|專輯，卡池原字）優先；其次 OVERRIDES，最後自動比對
+  const pinned = row.poolKey ? row.poolKey.split('|') : OVERRIDES[row.id]
+  if (row.poolKey && row.poolKey.split('|').length !== 2) errors.push(`卡池鍵格式錯（要「藝人|專輯」）：${row.poolKey}`)
+  if (pinned) {
+    card = byKey.get(key(...pinned));
+    how = row.poolKey ? 'notion' : 'override';
+    if (!card) errors.push(`卡池鍵指向卡池不存在的卡：${row.id} → ${pinned.join('｜')}`);
   } else {
     const hits = autoMatch(row);
     if (hits.length === 1) { card = hits[0]; how = 'auto'; }

@@ -4,7 +4,7 @@
 
 | 檔案 | 用途 |
 |---|---|
-| `notion-snapshot.json` | Notion 表的公開欄位快照（頁面 id、品名、演出者、年份、品相、售價）。**成本、利潤、水星抽成、群組不進 repo**——這是公開站。 |
+| `notion-snapshot.json` | Notion 表的公開欄位快照（頁面 id、品名、演出者、年份、品相、售價、卡池鍵）。**成本、利潤、水星抽成、群組不進 repo**——這是公開站。 |
 | `inventory.json` | **其他功能讀這份。** 每筆有 `status`（`in_stock`／`pending_card`／`sold`）、`cardKey`（＝`scripts/pool-keys.mjs` 的 `key(artist, album)`）、卡池原字 `artist`／`album`、店內標示名、壓片年、品相、售價。 |
 
 ## 讀法
@@ -25,7 +25,8 @@ const inShop = new Set(inv.items.filter(i => i.status === 'in_stock').map(i => i
    卡池沒有 → 走 `dip-card-create` 新建，期間放 `PENDING_NEW`。
 4. 從 Notion 消失的列不刪，記為 `sold`＋`soldAt`。
 
-卡池鍵沒有寫回 Notion（2026-10-04 加欄被權限擋下），對應關係以 Notion 頁面 id 存在本 repo。
+Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字），2026-10-04 已填 23 筆；快照存成 `poolKey`，同步時優先採用。
+新進貨在 Notion 填好卡池鍵即可；空白的才走自動比對。
 
 ## 待本機補記 PROJECT_MEMORY（雲端不碰該檔）
 
