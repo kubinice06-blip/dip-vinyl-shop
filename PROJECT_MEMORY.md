@@ -1,5 +1,71 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-04｜dip-vinyl-shop｜兩張線上簡介是退件說明的卡補齊：Coleman Hawkins《Body and Soul》、Odyssey《Odyssey》
+
+同日第二筆。店主：「那兩張退件說明現在先處理」。第二輪佇列的 B1 區因此歸零。
+
+## 一、查下來不是「綁錯碟」，是「重配之後只做了一半」
+
+兩張的線上簡介都寫著「本卡配到的 release group 不對、建議退回重配」，所以原本預期要重新配對身分與封面。
+實查 MusicBrainz 才發現 **release-group 與封面在 08-23 就已經重配正確**：
+
+- Coleman Hawkins：`card_catalog.rgMbid` 是 34c9b8b8（MB 註記 Bluebird compilation released in 1986），
+  封面是同 RG 的 1986 歐版 CD。最初誤配的 2001 年法國拼盤是 42543962。
+- Odyssey：`rgMbid` 是 a31a5339（Lopez Sisters 起家的紐約三重唱，首發 1977，RCA Victor APL1-2204），
+  試聽也已改配 Apple 411443144。最初誤配的 1972 年 Mowest 同名團是 41f63bbd。
+
+**沒跟上的是其他所有欄位**——它們當時是對「配錯的那張碟」寫的，manifest 自己註明「評分僅為佔位」：
+
+| | Coleman Hawkins《Body and Soul》 | Odyssey《Odyssey》 |
+|---|---|---|
+| 簡介 | 退件說明 → 249 字 | 退件說明 → 267 字 |
+| 三軸 | 3/3/2 → **4/3/2**（rare → uncommon） | 2/4/2 → **3/3/1**（維持 rare） |
+| 年份 | 2001 → **1986** | 1977 不變 |
+| 曲風 | jazz＋soul → **jazz** | rock → **soul** |
+| 子曲風 | jazz/swing 不變 | rock/metal/prog-metal → **soul/disco** |
+| UPC | 法國拼盤的 → 同 RG 歐版 CD | Mowest 再發的 → 同 RG 的 Sony 數位版 |
+
+Odyssey 的曲風錯得最離譜：`mapgenre3` 的 rawGenres 是 `Progressive metal`——那是**第三個**同名團（法國前衛金屬）的 Last.fm 標籤，
+所以這張 disco 首作在類型挑片裡一直被歸在「金屬／前衛金屬」。
+
+## 二、評分怎麼定
+
+比照池中同形狀的卡，理由寫在 manifest 的 `ratings.note`：
+- Odyssey 3/3/1：同期 disco 專輯 Tavares《Sky High!》4/3/1、Evelyn "Champagne" King《Smooth Talk》4/3/1、The Emotions《Flowers》3/3/1。
+- Hawkins 4/3/2：權威結集 Benny Goodman《The Complete RCA Victor Small Group Recordings》4/3/3、
+  Charlie Christian《The Genius of the Electric Guitar》3/4/2；這套收有 1939 年〈Body and Soul〉（2004 年入選美國國家錄音登錄）。
+  §5.6 的合輯例外理由與證據網址一併補上（原本那欄寫的是「整筆退回」）。
+
+## 三、簡介查證時刻意不寫的
+
+- Hawkins：1956 年場次的錄音地點兩源不一（Webster Hall／RCA Studios）；雙 LP 28 軌、CD 23 軌曲數不同。兩樣都不寫。
+- Odyssey：Tony Reynolds 何時加入兩源不一；Frankie Valli 同年也錄過〈Native New Yorker〉但誰先誰後兩源相反。兩樣都不寫。
+- Hawkins 的試聽維持 `unavailable`：Apple 四個店面都沒有這套 1986 結集，最接近的是 1996 年 RCA Victor 的另一套，依 §6 不收疑似配對。
+
+## 四、驗證
+
+KV（desc2、mapgenre3 各 2 鍵）與 `card_catalog` 2 筆回讀一致；兩張單獨過 `verify-album-onboarding --published`
+都是 **0 error、0 warning**；c-37、c-39 兩份 manifest 的對應條目已改成現況（否則日後重跑 gate 會因簡介不符而失敗）。
+`build-pub-fix-queue.mjs` 重掃全池，B1（退件說明）**0 則**。
+
+⚠ **同形狀的卡可能還有**：08-23 那一輪重配過身分、但簡介與評分沒重做的。全池已掃不到退件字樣，
+但「評分僅為佔位」這種只留在 manifest 裡、線上看不出來。線索是 manifest 的 `ratings.note`／`exceptionReason` 含「佔位」「退回」。
+
+**掃 manifest 得到的候選 17 張（只是字樣命中，未逐張核對）**——`ratings.note`／`exceptionReason`／`yearNote` 含
+「佔位」「不是同一張」「與策展年不符」，而且卡在池中：
+Eddie "Flashin" Fowlkes《Black Technosoul》（c-118）、Dariush《Cheshme Man》（c-124）、Various Artists《The Crying Princess: 78rpm Records From Burma》（c-129）、
+Joe Williams《Worth Waiting For...》（c-142）、Ana Moura《Desfado》、John Holt《1000 Volts of Holt》、Malavoi《La Case à Lucie》（c-31）、
+Bo Diddley《His Best》（c-33）、Steve Miller Band《Fly Like an Eagle》（c-34）、Musiq Soulchild《Juslisen》（c-38）、
+Derrick Carter《Squaredancing in a Roundhouse》（c-40）、譚詠麟《愛情陷阱》（c-41）、서태지와 아이들《서태지와 아이들 IV》（c-43）、
+George Winston《December》（c-46）、Los Prisioneros《La Voz de los '80》（c-47）、蔡琴《蔡琴老歌》（c-49）、Joy Division《Still》（c-93）。
+其中多數可能只是「listeners 查不到、評分人工佔位」這種無害註記，要逐張看線上現值才知道。
+
+## 主要檔案
+
+`audits/pub-fix/round2-b1.json`（新稿、來源、裁定理由）、`audits/pub-fix/round2-b1-apply.mjs`、
+`audits/pub-fix/{README.md,ROUND2-QUEUE.md,ROUND2-QUEUE.json}`、`seed_cards.json`（2 列）、`card-subgenres.json`（1 鍵）、
+`onboarding-manifest-c37-jazz-20260823.json`、`onboarding-manifest-c39-funk-20260823.json`。
+
 ### 2026-10-04｜dip-vinyl-shop｜已上線簡介第一輪修正：修正包 274 則＋半形標點 824 則＋卡片 28 張，第二輪排入
 
 另一個工作區（藝人介紹線）回報「已上線簡介約 40 處要改」。核對後**點名的五件都屬實，但規模低估很多**：

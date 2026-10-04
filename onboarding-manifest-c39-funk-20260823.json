@@ -7983,9 +7983,9 @@
       "identity": {
         "releaseType": "Album",
         "rgMbid": "a31a5339-3968-47e5-9466-e60f98edd625",
-        "upc": "602567950776",
+        "upc": "884977875904",
         "aliasesChecked": true,
-        "aliasReview": "MB credit 為 Odyssey，字面與卡片一致，但實體不同：本 RG 是 1972 年 Mowest 廠的同名團體，非 1977 年 RCA 的 disco 三重唱（Lillian／Louise Lopez）。同名團體混淆即本列退回主因。非日韓藝人，無跨文字系統寫法問題。",
+        "aliasReview": "MB 上同名的 Odyssey 至少四組：本卡是 6efbfc07（Lopez Sisters 起家的紐約 disco 三重唱），RG a31a5339 首發 1977、最早 release 是 RCA Victor APL1-2204。另有 1972 年 Mowest 的 soul 團（RG 41f63bbd，最初誤配的就是它）、法國前衛金屬團、波蘭電子製作人，皆已排除。",
         "selfTitledVerified": true
       },
       "cover": {
@@ -7996,27 +7996,30 @@
         "note": "重釘後的 RG a31a5339（primary-type=Album、無 secondary、first-release-date 1977；MB artist disambiguation 為 originally US family act Lopez Sisters）最早 release aa11cb14 是 1977 US RCA Victor APL1-2204，8 軌、第 1 軌 Native New Yorker。CAA release-group front 為原盤插畫封面：白底上一幅拼貼插畫，三位團員（兩名編辮女聲與一名男聲）疊在紐約市景與飛鳥、雛菊之上，左下角有 ONE WAY 單行道路牌，左上紫色 ODYSSEY 字樣；無 MOWEST 廠標、無再版貼紙。已下載 covers-fix/rgfront-odyssey.jpg（607x600, 156941 bytes）以 Read 實看確認，確定不是原先誤配 41f63bbd 的 1972 Mowest 綠色海灘封套。"
       },
       "ratings": {
-        "classic": 2,
-        "obscurity": 4,
-        "accessibility": 2,
+        "classic": 3,
+        "obscurity": 3,
+        "accessibility": 1,
         "listeners": null,
         "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；所配 RG 實為 1972 年 Mowest 同名盤，與策展設定的 1977 年 RCA disco 三重唱首作不是同一張，評分僅為佔位。"
+        "checkedAt": "2026-10-04T00:00:00Z",
+        "note": "原評分 2/4/2 是對 1972 年 Mowest 同名盤打的佔位值（manifest 自註）。改評 1977 RCA 首作：比照池中同期 disco 專輯 Tavares《Sky High!》4/3/1、Evelyn \"Champagne\" King《Smooth Talk》4/3/1、The Emotions《Flowers》3/3/1，取 3/3/1。"
       },
       "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
-        "reason": "身分配對錯誤，須先更換 release-group 才談得上頂點資格評估；listeners 亦不可得。",
+        "reason": "classic 3，未達殿堂門檻；非 obscurity 5、非 accessibility 5。",
         "evidenceUrls": []
       },
       "description": {
-        "text": "策展意圖指向的是紐約三重唱 Odyssey 1977 年在 RCA 發行的首作，其中收錄〈Native New Yorker〉，該曲進告示牌 Hot 100 第 21 名、英國單曲榜第 5 名；團體由 Lopez 姊妹起家，菲律賓裔貝斯手兼歌手 Tony Reynolds 在單曲走紅後加入，首作之後即由 William McEachern 接替。但本列所配的 release-group 首發於 1972 年、廠標為 Motown 子廠 Mowest，是另一個同名團體的唱片，兩者不可混為一談。",
+        "text": "〈Native New Yorker〉裡那段次中音薩克斯風獨奏是 Michael Brecker 吹的。Odyssey 的前身是康乃狄克的家族組合 Lopez Sisters，兩姊妹加上菲律賓裔貝斯手兼歌手 Tony Reynolds，1977 年在 RCA 交出這張八軌首作，Sandy Linzer 與 Charlie Calello 製作。單曲打進 Billboard Hot 100 第 21 名、英國榜第 5 名，專輯到 Billboard 200 第 36 名。歌裡的紐約客世故而帶點倦意，不是一味催人跳舞的 disco。",
         "sourceUrls": [
+          "https://musicbrainz.org/release-group/a31a5339-3968-47e5-9466-e60f98edd625",
           "https://en.wikipedia.org/wiki/Odyssey_(band)",
-          "https://musicbrainz.org/release-group/41f63bbd-1091-3de3-baa4-865048bf516f"
-        ]
+          "https://en.wikipedia.org/wiki/Native_New_Yorker_(song)",
+          "https://www.allmusic.com/album/odyssey-mw0001278719"
+        ],
+        "lengthReviewed": true
       },
       "preview": {
         "status": "ready",
@@ -8028,11 +8031,11 @@
       },
       "research": {
         "suggestedYear": 1977,
-        "yearNote": "策展年 1977 指 RCA 首作；所配 RG 的 first-release-date 為 1972，兩者不符，即誤配佐證。",
+        "yearNote": "2026-10-04 重寫：身分於 08-23 重配後，年份、三軸、簡介補齊。Tony Reynolds 何時加入兩源不一（一說組團時找來、一說單曲走紅後才加入），正文只寫他是這張時期的成員、之後離團。 Frankie Valli 同年也錄過〈Native New Yorker〉，但誰先誰後兩源相反，正文不寫。 曲風原標 rock、mapgenre3 的 rawGenres 是 Progressive metal——那是法國前衛金屬團 Odyssey 的 Last.fm 標籤。",
         "mbTitle": "Odyssey",
         "mbArtist": "Odyssey",
-        "mbFirstRelease": "1972",
-        "upcNote": "Odyssey (2018-08-31 AF)",
+        "mbFirstRelease": "1977",
+        "upcNote": "884977875904",
         "curatorWhy": "disco:Native New Yorker 所在,紐約 disco 世故面代表",
         "curatorRisk": "同名專輯多,注意 RCA 1977 盤"
       },

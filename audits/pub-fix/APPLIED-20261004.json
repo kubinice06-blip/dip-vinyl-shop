@@ -9592,5 +9592,111 @@
    "previewUrl": "https://music.youtube.com/playlist?list=OLAK5uy_lGSE86n4LlxB9EGDmSDGs__6fVOKeJqUQ",
    "previewStatus": "ready"
   }
- ]
+ ],
+ "round2B1": {
+  "note": "兩張退件說明的卡；詳見 round2-b1.json",
+  "kv": [
+   {
+    "key": "desc2:coleman hawkins|body and soul",
+    "oldValue": "{\"desc\":\"Coleman Hawkins 一九三九年的〈Body and Soul〉錄音是次中音薩克斯風即興藝術的分水嶺文獻，幾乎整曲不直陳主旋律而以和聲變奏行進。不過本卡配到的 MB release group 為二〇〇一年法國發行的單一版本合輯，並非店主策展指定的一九八六年 RCA Bluebird 權威結集，Apple 端亦僅配到單曲，建議退回重配。\"}",
+    "newValue": "{\"desc\":\"兩段即興幾乎沒把旋律吹出來，卻成了他生涯最大的熱門。1939 年 10 月，旅歐五年剛回美國的 Coleman Hawkins 替 Bluebird 錄下〈Body and Soul〉，主題只在開頭點到，其餘全是順著和弦走的變奏。這套 1986 年的 Bluebird 結集把他在 Victor 體系的錄音從那一場排到 1956 年：1940 年的全明星八重奏、1947 年有 Max Roach 打鼓的 bebop 場次，最後是 Billy Byers 編寫的弦樂伴奏，同一首歌隔十七年再吹一次。\"}"
+   },
+   {
+    "key": "mapgenre3:coleman hawkins|body and soul",
+    "oldValue": "{\"genres\":[\"jazz\",\"soul\"],\"rawGenres\":[\"Coleman Hawkins\",\"jazz\",\"Body and Soul\",\"saxophone\",\"coleman hawkins-body and soul\",\"saxo\",\"swing\",\"Modernjazz\",\"classic\",\"classic jazz\"]}",
+    "newValue": "{\"genres\":[\"jazz\"],\"rawGenres\":[\"Coleman Hawkins\",\"jazz\",\"Body and Soul\",\"saxophone\",\"coleman hawkins-body and soul\",\"saxo\",\"swing\",\"Modernjazz\",\"classic\",\"classic jazz\"]}"
+   },
+   {
+    "key": "desc2:odyssey|odyssey",
+    "oldValue": "{\"desc\":\"策展意圖指向的是紐約三重唱 Odyssey 1977 年在 RCA 發行的首作，其中收錄〈Native New Yorker〉，該曲進告示牌 Hot 100 第 21 名、英國單曲榜第 5 名；團體由 Lopez 姊妹起家，菲律賓裔貝斯手兼歌手 Tony Reynolds 在單曲走紅後加入，首作之後即由 William McEachern 接替。但本列所配的 release-group 首發於 1972 年、廠標為 Motown 子廠 Mowest，是另一個同名團體的唱片，兩者不可混為一談。\"}",
+    "newValue": "{\"desc\":\"〈Native New Yorker〉裡那段次中音薩克斯風獨奏是 Michael Brecker 吹的。Odyssey 的前身是康乃狄克的家族組合 Lopez Sisters，兩姊妹加上菲律賓裔貝斯手兼歌手 Tony Reynolds，1977 年在 RCA 交出這張八軌首作，Sandy Linzer 與 Charlie Calello 製作。單曲打進 Billboard Hot 100 第 21 名、英國榜第 5 名，專輯到 Billboard 200 第 36 名。歌裡的紐約客世故而帶點倦意，不是一味催人跳舞的 disco。\"}"
+   },
+   {
+    "key": "mapgenre3:odyssey|odyssey",
+    "oldValue": "{\"genres\":[\"rock\"],\"rawGenres\":[\"Progressive metal\"]}",
+    "newValue": "{\"genres\":[\"soul\"],\"rawGenres\":[\"disco\",\"soul\",\"funk\"]}"
+   }
+  ],
+  "seed": [
+   {
+    "before": [
+     "Coleman Hawkins",
+     "Body and Soul",
+     3,
+     3,
+     2,
+     [
+      "jazz",
+      "soul"
+     ],
+     2001
+    ],
+    "after": [
+     "Coleman Hawkins",
+     "Body and Soul",
+     4,
+     3,
+     2,
+     [
+      "jazz"
+     ],
+     1986
+    ]
+   },
+   {
+    "before": [
+     "Odyssey",
+     "Odyssey",
+     2,
+     4,
+     2,
+     [
+      "rock"
+     ],
+     1977
+    ],
+    "after": [
+     "Odyssey",
+     "Odyssey",
+     3,
+     3,
+     1,
+     [
+      "soul"
+     ],
+     1977
+    ]
+   }
+  ],
+  "cardCatalog": [
+   {
+    "id": "coleman hawkins|body and soul",
+    "before": {
+     "classic": 3,
+     "rarity": "rare",
+     "upc": "3460503672123"
+    },
+    "after": {
+     "classic": 4,
+     "rarity": "uncommon",
+     "upc": "0035628571724"
+    }
+   },
+   {
+    "id": "odyssey|odyssey",
+    "before": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "upc": "602567950776"
+    },
+    "after": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 1,
+     "upc": "884977875904"
+    }
+   }
+  ]
+ }
 }

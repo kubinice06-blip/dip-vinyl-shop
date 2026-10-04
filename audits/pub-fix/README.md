@@ -48,8 +48,16 @@
 
 `scripts/build-pub-fix-queue.mjs` 產生，對的是第一輪套用**之後**的 KV 現值。優先序：
 
-1. **B1 退件說明 2 則**（客人看得到）：Coleman Hawkins《Body and Soul》、Odyssey《Odyssey》。
-   兩張的簡介自己寫著綁錯了 release-group——要**重新配對身分、封面與年份**，不只是重寫簡介（比照 Lou Rawls 那張的做法）。
+1. ~~**B1 退件說明 2 則**~~ **已於 2026-10-04 本機處理完**（`round2-b1.json`／`round2-b1-apply.mjs`）：Coleman Hawkins《Body and Soul》、Odyssey《Odyssey》。
+   兩張的 release-group 與封面其實 08-23 就重配正確了，沒跟上的是簡介、三軸、年份、曲風與 UPC——
+   那些欄位當時是對「配錯的那張碟」寫的佔位值。**同形狀的卡（重配過身分、其他欄位沒重做）可能還有**，
+   線索是 manifest 的 `ratings.note` 或 `exceptionReason` 裡寫著「佔位」「退回」。
+   用這個線索掃 manifest 得到**候選 17 張**（只是字樣命中，未逐張核對，多數可能無害）：
+   Eddie "Flashin" Fowlkes《Black Technosoul》（c-118）、Dariush《Cheshme Man》（c-124）、Various Artists《The Crying Princess: 78rpm Records From Burma》（c-129）、
+   Joe Williams《Worth Waiting For...》（c-142）、Ana Moura《Desfado》、John Holt《1000 Volts of Holt》、Malavoi《La Case à Lucie》（c-31）、
+   Bo Diddley《His Best》（c-33）、Steve Miller Band《Fly Like an Eagle》（c-34）、Musiq Soulchild《Juslisen》（c-38）、
+   Derrick Carter《Squaredancing in a Roundhouse》（c-40）、譚詠麟《愛情陷阱》（c-41）、서태지와 아이들《서태지와 아이들 IV》（c-43）、
+   George Winston《December》（c-46）、Los Prisioneros《La Voz de los '80》（c-47）、蔡琴《蔡琴老歌》（c-49）、Joy Division《Still》（c-93）。
 2. **C 人工補記 6 則**：Ofra Haza、Khaled、Souad Massi 兩張、齊豫《橄欖樹》（只有 desc4，建議直接寫一則 desc2）、Fabrizio De André。
 3. **A 事實更正 268 條／234 張卡**：補洞層記下、第一輪還沒定案的。其中 55 條的原句在線上已經找不到，派工前先看「原句還在」欄。
 4. **B1b「本卡」版本說明 7 則**、**B2 正文點名出處候選 786 則**（Discogs 263、AllMusic 240、維基 226、MusicBrainz 115）——
