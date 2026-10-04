@@ -100,7 +100,9 @@ for (const a of ready) {
 const STATUS_FILE = path.join(ROOT, 'card-preview-status.js');
 const statusRaw = fs.readFileSync(STATUS_FILE, 'utf8');
 const negAdds = negative
-  .filter(a => !statusRaw.includes(`"${cardIdOf(a.artist, a.album)}"`))
+  // 用 JSON.stringify 比對：鍵裡有雙引號（《Sunrise From West Sea "Live"》）時，檔案裡存的是跳脫過的寫法，
+  // 直接夾引號比對會永遠找不到，每重跑一次就多寫一行重複的鍵（2026-10-04）。
+  .filter(a => !statusRaw.includes(JSON.stringify(cardIdOf(a.artist, a.album)) + ":"))
   .map(a => [cardIdOf(a.artist, a.album), a.preview.status]);
 
 // --- 3. seed_cards / apex_pool（上架開關）------------------------------------

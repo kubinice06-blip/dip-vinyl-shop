@@ -424,10 +424,12 @@
     "jazz"
    ],
    "cover": {
-    "url": "https://coverartarchive.org/release-group/823b61c2-8402-4f27-a611-d95806fd703c/front",
-    "source": "caa",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/73/09/b5/7309b516-7e4f-c3ba-0cfe-e0ca062cb50c/13ULAIM49406.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
     "httpStatus": 200,
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724573895",
+    "note": "試聽探測釘定的 collectionId 724573895（jp）：ジャッキー・マクリーン — Hat Trick / Jackie McLean Meets Junko Onishi。2026-10-04 改用：原本的 CAA 圖（https://coverartarchive.org/release-group/823b61c2-8402-4f27-a611-d95806fd703c/front）在 archive.org 連續三輪回 500。"
    },
    "ratings": {
     "classic": 3,
@@ -733,13 +735,9 @@
     ]
    },
    "preview": {
-    "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/f1/8f/73/f18f73c4-3deb-a24c-eb69-44d0652466a1/mzaf_5061062350694244265.plus.aac.p.m4a",
-    "source": "apple",
-    "httpStatus": 200,
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "appleCollectionId": "318290260",
-    "storefront": "US"
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。（原探測配到同名的別張碟，2026-10-04 本機降級）"
    },
    "published": {
     "cardCatalog": true,

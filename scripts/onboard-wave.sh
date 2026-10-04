@@ -26,8 +26,11 @@ else
 fi
 
 echo "########## 3. prepare gate ##########"
+# 重跑時卡已經在池裡，prepare gate 一定會報「已存在卡池」——那是它該報的，不是錯。重跑就略過，改由 published gate 把關。
+[ -n "$RERUN" ] && echo "（RERUN=1，略過 prepare gate）"
 GATE_FAIL=0
-for b in $BS; do f=onboarding-manifest-$b-$STAMP.json; [ -f "$f" ] || continue; r=$(node scripts/verify-album-onboarding.mjs $f 2>&1); echo "$b: $(echo "$r" | tail -1)"; echo "$r" | grep -q "：0 error" || { GATE_FAIL=1; echo "$r" | grep -E "^ERROR" | head -12; }; done
+[ -n "$RERUN" ] && BS_GATE="" || BS_GATE="$BS"
+for b in $BS_GATE; do f=onboarding-manifest-$b-$STAMP.json; [ -f "$f" ] || continue; r=$(node scripts/verify-album-onboarding.mjs $f 2>&1); echo "$b: $(echo "$r" | tail -1)"; echo "$r" | grep -q "：0 error" || { GATE_FAIL=1; echo "$r" | grep -E "^ERROR" | head -12; }; done
 if [ "$GATE_FAIL" = 1 ]; then echo "✘ prepare gate 有 error，這一波停在這裡（還沒寫任何線上資料）"; exit 1; fi
 
 echo "########## 4. 產 card_catalog payload ##########"

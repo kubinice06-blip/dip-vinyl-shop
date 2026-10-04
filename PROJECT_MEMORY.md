@@ -1,5 +1,114 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-04｜dip-vinyl-shop｜c-148 至 c-198 與 add-20261003 上架 1,390 張，卡池 17,248 → 18,638
+
+同日第五筆。雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（621 筆提交）合併進 main，
+唯一的衝突是 `desc-tools/qa-batch.mjs`（兩邊各加了一段 out 檢查，兩段都保留）。
+**候選 1,423 張、上架 1,390 張、留置 33 張（全部缺封面）、頂點 0 張。**
+52 道 prepare gate 0 error；card_catalog 1,390／1,390；**KV 1,769 個鍵 bulk get 逐字回讀一致**；
+published gate 的資料面全過，剩下的 error 全是封面圖床 archive.org 當下回 500（見第六節）。
+
+| 線 | 批 | 候選 | 上架 | 留置 |
+|---|---|---:|---:|---:|
+| 藍調之音 1985 年後（重啟到 2026） | c-148～c-172 | 839 | 831 | 8 |
+| jp-1 日本爵士四大廠 1958–1989 | c-173～c-182 | 242 | 233 | 9 |
+| jp-2 日本爵士獨立廠牌 1961–1989 | c-183～c-191 | 204 | 194 | 10 |
+| hoyi 補遺（§1／跨線／美日互為原盤） | c-192～c-198 | 137 | 131 | 6 |
+| 何欣穗《完美小姐》 | add-20261003 | 1 | 1 | 0 |
+
+試聽 ready 1,106／unavailable 284。稀有度 epic 95、uncommon 741、rare 544、common 9。
+
+## 一、封面：81% → 98%
+
+雲端交來 1,151／1,422。Apple collectionId 直查 +187 → Spotify／Bandcamp +17 → iTunes +2 → Discogs +42，
+逐張覆核退回 12 張後是 **1,389／1,422**，留置 33 張。最終來源：CAA 1,131、`apple-verified-collection` 200、
+`discogs` 44（名單累計 239 筆）、spotify 11、bandcamp 2、manual 1。撞圖檢查 0 組。
+
+**這一輪抓到自己腳本的一個洞**：`apple-cover-from-preview.mjs` 只看探測條目有沒有 `collectionId`，沒看狀態。
+雲端把配錯的條目降級（`status: unavailable`＋`downgradedBy`）時 collectionId 還留著當紀錄——
+結果**被降級的那一筆正好是「事後證明是別張碟」的那一筆**，5 張卡拿到別張唱片的封面
+（Gil Evans《Farewell》拿到同系列第一張的圖、池田芳夫 & 高瀬アキ《Esprit》拿到《AKI》、Art Blakey《Dr. Jeckyle》拿到《One by One》…）。
+撞圖檢查只抓到其中一組，回頭對探測狀態才找齊。腳本已改成只認 `status === 'ready'` 且沒有 `downgradedBy` 的條目。
+
+**模糊層補來的 22 張逐張對了實際專輯頁，退回 7 張**（`batch-progress/cover-rejects-20261004.json`）：
+GAP《GAP》配到 Del Water Gap、Ron Carter《Friends》配到 Houston Person《Just Between Friends》、
+Jimmy Smith《The Master》配到續集《ザ・マスターII》、Prism《Prism Live》的 Bandcamp 是另一個團 Veritas Prism。
+Spotify 的對法是開 `/embed/album/<id>` 讀 `__NEXT_DATA__` 的掛名與盤名——**worker 回的只有圖，不看頁面不知道配到誰**。
+
+## 二、試聽：本機降級 22 筆
+
+雲端的探測有四道防呆，都是「單張卡 vs 單筆結果」。這一輪另外用三種全檔回掃抓到它們擋不到的：
+
+1. **同一個 collectionId 被多張卡引用**（雲端的 `dup-collection.mjs` 只報不擋）：
+   **渡辺貞夫九張不同的專輯全配到 1961 年 King 的首作《SADAO WATANABE》**——Apple 盤名等於藝人名，標題比對因此放行。
+   Prism《Prism Live》配到錄音室專輯《Prism》。
+2. **Apple 的「藝人名」等於我們的盤名**（同名樂團的同名專輯）：Musica Nuda《Banda larga》配到巴西樂團 Banda Larga、
+   Ruben Hein《Loose Fit》配到樂團 Loose Fit、Gonzalo Rubalcaba《The Trio》配到福音團 The Trio。
+   **這三張第一輪已經帶著錯試聽上架**，重跑時才抓到，已改回固定無試聽。
+3. **Apple 掛名與我們的掛名沒有任何共同字詞**（102 筆，絕大多數是日文／羅馬字互換，逐筆看過）：
+   Mal Waldron & 山下洋輔《Piano Duo Live at Pit Inn》配到佐藤允彦 & 山下洋輔 1974 年的《Piano Duo》。
+
+另有幾筆是盤名、年份都對不上的疑似配對（《Standard Collection, Vol. 2》、《African Rock》、《After You've Gone》），依 §6 不收。
+**凡是降級的，連帶檢查那張卡的封面是不是取自同一個 collectionId。**
+
+順手修了一張線上舊卡：c-131 Bobby Hutcherson《Oblique》的試聽原本播的是藝人 Oblique 的《Oblique E.P.》
+（雲端主線回測抓到、記在 `audits/preview-downgrades.md`），改配 Apple 716323685（RVG 版六軌）。
+
+## 三、身分：一張卡的 rgMbid 欄填的是藝人 MBID
+
+c-186 カリオカ《Sunny Place Carnival》的 `rgMbid` 是 `18c3632b…`——那是カリオカ這個 **artist** 的 id，
+以 release-group 查回 404；雲端的 mbNote 自己都寫著「18c3632b… 的 artist」。格式一樣是 UUID，驗證器只看格式。
+CAA 因此查無圖、Apple 探測也配錯。正確的 RG 是 `5bf96a6c…`（1978，Kitty MKF 1041）。
+新增 `batch-progress/verify-rgmbid.mjs`：CAA 沒圖的 264 張逐張回查 MB，**不是 RG 的只有這一張**，另 9 張是標題的文字系統不同。
+
+## 四、三軸
+
+- **冷門軸**：日本爵士 26 批（c-173～c-198）與 c-168 套 §0.8 depth 錨點（listeners 中位數 2～151，機器值幾乎全是 5，已塌成常數）。
+  藍調之音線的其餘 24 批中位數 215～11,480，照 09-17 的先例保留機器值。
+  **錨點 5 分提案 6 張，複核只留 1 張**：South Wind Section《South Wind》（Discogs 註明「Private press limited to 500 copies」，
+  Polydor 的 `MI` 號段是委託壓片）。退回的 5 張都是關鍵字誤中——「自製」指日本唱片公司的自製企畫、「無廠牌」指 MB 上某一筆再版條目。
+- **經典／硬蕊**：AI 基線逐張看 5 分與 1 分的，改 6 張（檔案盤與補遺性質的不給 5；99.99《99.99》是自我同名短名的誤判）。
+  `build-manifest` 補上把改判理由帶進 `ratings.note`（§2「人工修正必須在 manifest 留下理由」原本沒帶）。
+
+## 五、子曲風表
+
+上架後照 §10 重建，並把缺標籤的卡分五段預熱（`scripts/warm-album-genres.mjs --from／--limit`，2,610 張、Spotify 零異常）：
+**有子曲風 15,249 → 17,225（92.4%）**，仍有 1,413 張未落位——530 張查不到標籤，883 張有標籤但規則沒命中，
+其中爵士 692 張（多半是標籤只有 `jazz`、`japanese` 這種分不出子類型的）。要補 `genre-artist-map.json`。
+
+## 六、封面圖床 archive.org 當天不穩
+
+published gate 的 error 全是 `coverUrl: 實際 HTTP 500`，而且**每一輪壞的不是同一批**：
+CAA 的網址會轉到 archive.org，那邊同一張圖的不同尺寸隨機成敗（front-500 過、front-250 不過，下一輪反過來）。
+抽上個月上架的舊卡 70 張也有 1 張，是圖床當天的狀況不是這批資料的問題。
+**連續三輪都壞、而且卡上有 ready 的 Apple 試聽的 21 張，改用 Apple 的官方封面**（`batch-progress/cover-swaps-20261004.json`）；
+其餘的沒動。備忘錄早有「CAA 壞圖要整批多輪掃、別逐張追」，這次是同一回事。
+
+## 七、管線補的
+
+- **上架流程腳本收進 repo**：`scripts/onboard-wave.sh`（原本只存在暫存目錄，上一輪跑完就不見了，這次是從對話紀錄挖回來的）、
+  `scripts/run-gates.sh`、`scripts/verify-wave-kv.mjs`。
+  實測**寫入很快（558 張 93 秒），慢的是 published gate**（逐張打封面與試聽網址）——所以拆成 `SKIP_GATE=1` 先寫、gate 併行補跑。
+  `RERUN=1` 會略過「濾掉已在池中的卡」與 prepare gate（重跑時這兩步一定誤判）。
+- `publish-manifest.mjs`：年份為空就不准寫卡池（何欣穗那張的 manifest 沒帶 `research.suggestedYear`，以 `year=null` 進池後才補）；
+  負面試聽狀態的「已存在」比對改用 `JSON.stringify`（鍵裡有雙引號時每重跑一次就多寫一行重複鍵）。
+- `stage-cloud-batch.mjs`：重跑轉檔不再洗掉本機補好的封面。
+
+## 主要檔案
+
+`seed_cards.json`（18,638 列）、`card-preview-status.js`、`card-subgenres.json`、`genre-tree.json`、`tw-pop-artists.json`、
+`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、
+52 份 `onboarding-manifest-*-20261004.json`、51 批的 `batch-progress/c1*/{cand-all,covers,previews.local,ratings,obscurity-anchor,held}.json`、
+`batch-progress/probe/previews.json`、`batch-progress/{cover-rejects,cover-swaps,cover-http}-20261004.json`、`batch-progress/rgmbid-check.json`。
+
+## 尚未處理
+
+- **留置 33 張全部缺封面**（日野皓正 4 張、国府弘子 2 張等），連同先前的 146 張，全專案未上架 179 張。
+- 雲端交接點名、這次沒做的：池中 `The Great Jazz Trio《At the Village Vanguard》` 年份疑為 1977、
+  《Chet Baker Live in Tokyo》是否換成原盤身分、幾組互指句（c-174《Music Break》↔ c-192《Bossa Nova Concert》等）。
+- 子曲風未落位 1,413 張；新增的 9 個拆卡藝人名與這批新藝人都還沒有藝人介紹。
+- 第二輪簡介修正佇列（`audits/pub-fix/ROUND2-QUEUE.md`）照舊。
+
 ### 2026-10-04｜dip-vinyl-shop｜核對出來的五樣小修、子曲風表重建（13,885 → 15,249 張）、拆卡的曲風善後
 
 同日第四筆。店主對核對結果裁示：「1、2 都做，3 排進去」。

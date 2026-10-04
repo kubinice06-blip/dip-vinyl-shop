@@ -2859,4 +2859,8 @@ window.DipPreviewStatus = Object.freeze({
   "oscar castro-neves|brazilian scandals": "unavailable",
   "jeff baxter, buzzy feiten, james harrah, teddy castellucci|guitar workshop in l.a.": "unavailable",
   "何欣穗|完美小姐": "unavailable",
+  "ruben hein|loose fit": "unavailable",
+  "musica nuda|banda larga": "unavailable",
+  "gonzalo rubalcaba|the trio": "unavailable",
+  "mal waldron & 山下洋輔|piano duo live at pit inn": "unavailable",
 });
