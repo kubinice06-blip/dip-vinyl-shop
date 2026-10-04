@@ -23,6 +23,7 @@ tar -c \
   --exclude=./batch-progress \
   --exclude=./desc-tools \
   --exclude=./publish-stage \
+  --exclude=./audits \
   --exclude='./onboarding-manifest-*.json' \
   --exclude='./*.backup-*.json' \
   --exclude='./seed_cards.backup*.json' \

@@ -1,5 +1,109 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-04｜dip-vinyl-shop｜已上線簡介第一輪修正：修正包 274 則＋半形標點 824 則＋卡片 28 張，第二輪排入
+
+另一個工作區（藝人介紹線）回報「已上線簡介約 40 處要改」。核對後**點名的五件都屬實，但規模低估很多**：
+主清單 `audits/ARTIST-PUB-ISSUES.md` 是 403 條，而且 `audits/pub-fix/` 早有一包 9/30 定案的修正包沒人套用。
+店主裁示：「1、2 都做，3 排進去」——套用修正包、半形標點機械替換、剩下的排進第二輪。
+
+## 一、簡介：1,074 個 KV 鍵
+
+| 來源 | 則數 |
+|---|---:|
+| `APPLY-desc.json`（更正 133＋去出處 163＋整段重寫 2，合併後 274） | 274 |
+| 半形標點 → 全形 | 824 |
+| `need-local.json`（雲端沒有全文、只給改法） | 2 |
+| 兩者重疊（修正包的新稿自己帶半形逗號） | −26 |
+| **實際寫入的鍵** | **1,074** |
+
+修正包 274 則**全數命中 oldDesc、零跳過**。KV bulk get 逐字回讀 1,074/1,074；腳本再乾跑一次是 0 改動。
+
+**半形標點的規則**（`scripts/apply-pub-fix-desc.mjs` 的 `normalizePunct`）：
+- 《》〈〉裡是原文標題，一個字都不動——全池掃完仍有半形標點貼著中日韓文字的 29 則**全部在書名號裡**
+  （〈힘내! (Way To Go)〉《衝啦!》〈一扇门,一堵墙,一座坟〉），那是標題自己的寫法。
+- 逗號後面有空白、前後都是拉丁字的留著（`Earth, Wind & Fire`、`Russell Thompkins, Jr.`）；沒有空白的一律當中文逗號。
+- **千分位只認「逗號後剛好三位數」**。第一版寫成「數字,數字就留著」，漏掉 `DLP-75,1962 年`、`第 65,1997 年`、
+  `(BT 1072,1992)` 三處——逗號後面是四位數的年份。改完保留的 67 處逐一看過，全是原文曲名與專名。
+- 整篇沒有任何「貼著中文」的半形標點就整篇不碰，所以不會去動純英文段落。
+
+**desc4 只處理「沒有 desc2 的卡」**（1,644 個裡的 592 個）：worker 的讀取順序是 desc2 → CURATED_DESCS → desc4，
+有 desc2 的卡 desc4 根本不會被讀到，改了也是白改。
+
+`need-local` 兩則都不在 audit 寫的那個藝人名下：《Here 'Tis》的卡掛 Lou Donaldson（audit 記在 Grant Green），
+Casanova 的卡名是《Il Casanova di Federico Fellini》。用專輯名回頭找才對得到。
+
+## 二、卡片：28 張
+
+**年份 12 張**：Metallica 黑專輯 1998→1991、Gong《You》2021→1974、《Green Onions》1979→1962、
+Lester Young with the Oscar Peterson Trio 1997→1954、Lou Rawls《Lou Rawls Live!》1978→1966 等。
+Lou Rawls 那張的 release-group 與封面早在 08-28 就改綁 1966 Capitol 版了，池中只剩年份沒跟上，
+線上簡介則一直是當時的退件說明——這次兩樣一起補齊。
+
+**拆卡 16 張**（同名不同人）：Steve Lacy (The Internet) ×3、Placebo (Belgium) ×2、Caravan (Thailand)、
+Ghost (Sweden) ×2、Wings (Malaysia)、Air (US jazz trio) ×4、John Williams (guitarist)、
+Mother Earth (Tracy Nelson)、Supershy（原掛 Tom Misch；曲風順手由 jazz 改 electronic）。
+
+六處同步（`scripts/apply-pub-fix-cards.mjs`）：`seed_cards.json` 28 列、KV 搬 41 個鍵
+（desc2 16／mapgenre3 12／cover6 6／rating4 6／bc2 1）、Firestore `card_catalog` 16 筆搬移、
+`card-preview-status.js` 4 鍵、`data/apple-audio-map-v1.json` 9 鍵（runtime 檔重建，13,068 筆不變）、
+`card-subgenres.json` 14 鍵。回讀：KV 新鍵 41/41 逐字一致、舊鍵殘留 0；Firestore 16 筆逐筆相符、舊文件刪除 16。
+卡池 17,248 列不變、重複鍵 0。
+
+⚠ **拆卡後有三樣還沒補**：
+1. **三張的固定試聽要店主在後台重貼**——`album_overrides` 是管理員寫入保護，腳本搬不動：
+   Air (US jazz trio)《Air Song》《Air Mail》、John Williams (guitarist)《Rodrigo: Concierto de Aranjuez》。
+   三個 YouTube Music 網址存在 `audits/pub-fix/APPLIED-20261004.json` 的 `albumOverridesToReset`。
+2. 九個新藝人名還沒有藝人介紹（按鈕不會再跳出錯的人，但目前是空的）。
+3. 已經擁有這 16 張卡的玩家，卡冊裡存的是舊掛名（卡冊文件自帶 artist／album，不會消失，但不會跟著改名）。
+   與 08-11 掛名更動、09-10 簡轉繁同一個已知後果。
+
+## 三、第二輪排入：`audits/pub-fix/ROUND2-QUEUE.md`
+
+`scripts/build-pub-fix-queue.mjs` 對**套用後**的 KV 現值重掃：
+
+| 區 | 內容 | 數量 |
+|---|---|---:|
+| B1 | 退件說明（客人看得到，最優先） | 2 則 |
+| C | 人工補記 | 6 則 |
+| A | 事實更正，需研究後改寫 | 268 條／234 張卡 |
+| B1b | 正文以「本卡」當主詞的版本說明 | 7 則 |
+| B2 | 正文點名出處的候選 | 786 則 |
+
+**B1 兩則是這次全池掃描才掃到的，任何清單都沒列**：Coleman Hawkins《Body and Soul》
+（「本卡配到的 MB release group…並非店主策展指定的…建議退回重配」）與 Odyssey《Odyssey》
+（「本列所配的 release-group…是另一個同名團體的唱片」）。兩張都要重新配對身分與封面，不只是重寫簡介。
+
+C 區收了另一個工作區點名、逐條查證過的：Shabazi 是十七世紀（1619–約 1720）；Khaled 的 Cheb 是少年時期就用的稱號、
+1985 年得到的是「raï 之王」、1992 年拿掉 Cheb；Souad Massi 本人否認因死亡威脅離開阿爾及利亞；
+齊豫《橄欖樹》的禁歌原因只寫了次要的那句（新聞局主要針對「流浪」），且「齊豫以〈歡顏〉拿下金馬獎」主詞錯
+（第 16 屆得獎人是作曲的李泰祥）——**這張只有 desc4、沒有產線稿**，建議直接寫一則 desc2。
+
+A 區 268 條裡有 55 條的原句在線上已經找不到（被第一輪的去出處改寫順手改掉），派工前先看「原句還在」欄。
+B2 是候選不是定案——「樂評人當故事角色可具名」那條規則之下有些是合法的。
+
+## 四、兩個教訓
+
+1. **KV bulk get 在寫入後約 10–30 秒內會讀到舊值。** 這次撞到兩次：bulk put 之後立刻回讀，1,072 個鍵裡 4 個不符；
+   bulk delete 舊鍵之後立刻回讀，41 個**剛驗過一致**的新鍵有 27 個讀成空值。兩次都是等二十幾秒再讀就全數一致，
+   單鍵直讀（`/values/<key>`）也是 200。**回讀不符先等半分鐘再讀一次，不要當場重寫**——值其實已經寫進去了。
+   （08 月那次「每次不同的假分岔」真因是 Buffer 拼接，與這個不同；這次用的是 fetch，是真的延遲。）
+2. **`audits/` 一直跟著網站部署上 CDN**，沒有任何頁面讀它。這次的前後對照檔有 1.1 MiB，
+   順手把 `./audits` 加進 `scripts/pages-build.sh` 的排除清單。
+
+## 主要檔案
+
+`scripts/apply-pub-fix-desc.mjs`、`scripts/apply-pub-fix-cards.mjs`、`scripts/build-pub-fix-queue.mjs`（三支皆新）、
+`scripts/pages-build.sh`、`seed_cards.json`、`card-preview-status.js`、`card-subgenres.json`、
+`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、
+`audits/pub-fix/{README.md,APPLIED-20261004.json,ROUND2-QUEUE.md,ROUND2-QUEUE.json,need-local-apply.mjs}`。
+
+## 尚未處理
+
+- 第二輪佇列（上表）交藝人介紹線／雲端寫稿，本機套用。
+- c-148～c-198 與 add-20261003 共 **1,423 張**還在 `claude/remote-runbook-album-onboarding-mszieh`（領先 main 621 筆），未合併未上架。
+- 藝人介紹 D 級 116 批 4,605 位、C 級尾 9 批 323 位未做。
+- 舊帳照舊：146 張缺封面未上架、14 組藝人名寫法分裂、4 組重複卡、c-117 五張卡帶盤、`REMOTE_RUNBOOK` 的 25 MiB 條款。
+
 ### 2026-10-01｜dip-vinyl-shop｜Apple Music 按鈕第二修：改用含名稱段的正式專輯網址（短網址 App 不認）
 
 **症狀**：09-28 修正上線後店主實測，點 Apple Music 仍只打開 App 首頁。
