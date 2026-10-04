@@ -43,3 +43,9 @@
 - **8628** 《High Hope!》曲名只舉〈Chips〉〈Crazy〉，避開 A2 的兩種寫法（研究 8599）；《Down Beat》專訪是 note 指定的主故事，寫的是他抱怨的內容，不是評價，不寫〈Bitter Hope〉標題和「唯一重要專訪」。
 - **8629** 《You Are My Sunshine》把 1966 年第一個三重奏和 1974 年本盤分開寫：只沿用鋼琴（市川秀男），貝斯換成宮本直介；照「只寫上列各項」，不點名寺川正興。The New George Otsuka Trio 只當全名出現，卡片藝人欄的字串不改。
 - **8630** QA：`qa-batch out` 3 張 233–238、`qa-check-research` 標記 0、`fix-spacing` 待補 0。
+
+## 主線收尾（不佔條號）
+- 三軸一律 3/4/2（rare），比照池中同藝人與同編制卡；listeners 留本機。頂點 0。
+- 試聽：Hope 兩張 Apple jp 642094766／642032306 逐軌（曲名＋秒數）對上原盤，判 ready；大塚 Apple 無，unavailable。
+- 大塚封面改用 Discogs 4358997 第二張圖（primary 帶日本側標）。
+- 簡介 3 張主線逐張審過，未改字。

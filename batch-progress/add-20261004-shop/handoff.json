@@ -1,0 +1,32 @@
+{
+ "batch": "add-20261004-shop",
+ "cards": 3,
+ "purpose": "店內販售區（data/shop/inventory.json 的 pending_card）缺卡 3 張",
+ "albums": [
+  "Elmo Hope《Hope Meets Foster》1956（Prestige PRLP 7021，rgMbid 5ad91c4b）",
+  "Elmo Hope《High Hope!》1961（Beacon LP 401，rgMbid 93100622）",
+  "ジョージ大塚トリオ《You Are My Sunshine》1974（Three Blind Mice TBM-35，§1 人工身分）"
+ ],
+ "manifest": "batch-progress/add-20261004-shop/onboarding-manifest.json（prepare gate 0 error／4 warning：upc 空 ×3、§1 人工 ×1）",
+ "desc": {
+  "cards": "desc-tools/batches/cards/add-20261004-shop-cards.json",
+  "research": "desc-tools/batches/research/add-20261004-shop-a.json",
+  "hooks": "desc-tools/batches/hooks/add-20261004-shop-hooks-a.json",
+  "input": "desc-tools/batches/input/add-20261004-shop-writer-1.json",
+  "output": "desc-tools/batches/output/add-20261004-shop-out-1.json（233／238／237 字，主線已逐張審）"
+ },
+ "pendingLocal": {
+  "covers": "兩張 Hope 走 CAA（front-250 實抓 200、主線目視）；大塚走 Discogs 4358997 不帶側標的第二張圖，已登錄 registry（reviewed ok）。本機只需 HTTP 覆核",
+  "previews": "Hope 兩張 Apple jp ready（642094766／642032306，逐軌對上），本機覆核；大塚 unavailable，YT Music 覆核",
+  "listeners": "全部",
+  "apexEvidence": [],
+  "reviewNotes": [
+   "年份兩處可逆：《Hope Meets Foster》取 1956（MB 1955 是錄音年）、《High Hope!》取 1961（英文維基專頁寫 1962）",
+   "大塚那張掛名照池中先例 ジョージ大塚トリオ，The New George Otsuka Trio 列 queryAlias；與池中《Page 1》《Page 2》同字串但不同編制",
+   "上架後：scripts/sync-shop-inventory.mjs 的 PENDING_NEW 清掉、Notion 這 3 列補填「卡池鍵」、重跑同步（預期 in_stock 26）",
+   "藝人介紹：ジョージ大塚トリオ 已有稿；Elmo Hope 已有稿——不需補",
+   "PROJECT_MEMORY 待補一筆：店內販售區資料層＋ar-d-117＋本批（內容見 data/shop/README.md 末段，另加 ar-d-117 與本批）"
+  ]
+ },
+ "qa": { "research": "pass", "hooks": "pass", "out": "pass", "qa-check-research": "0", "fix-spacing": "0", "prepareGate": "0 error" }
+}
