@@ -442,6 +442,82 @@ Billboard 全部 `BB-YYYY-MM-DD.pdf`、Cash Box 全部 `CB-YYYY-MM-DD.pdf`，
 4. **第 879 條：本層的三份檔案是命中頁不是全文**——需要完整上下文時，
    1984-09 以後請優先用 `cashbox-bn-1984-85-ocr.txt`（c-140 b 掃，存的是整期全文）。
 
+## 2026-09-18 追加（c-149 b 掃的，**命中頁不是全文**）
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1990-ocr.txt`（4.4 MB） | Billboard | **1990-01-06 → 1990-12-15，50 期的命中頁（436 頁）** | c-149 b 掃；缺 **1990-12-22／12-29**（年終合刊週，第 874 條那組缺期的同一形狀） |
+| `cashbox-bn-1990-ocr.txt`（1.2 MB） | Cash Box | **1990-01-20 → 1990-12-29，49 期的命中頁（155 頁）** | c-149 b 掃；缺 **1990-01-06／01-13／07-14** |
+
+**紙本至此的覆蓋：Billboard 1955→1985-06 ＋ 1990 全年、Cash Box 1960-11→1985-06 ＋ 1990 全年。
+⚠ 1985-07 → 1989-12 這四年半仍然沒有人掃**（c-148／c-149 a 若補上請在本節後再 append）。
+
+格式同前：每期以 `######## BB-YYYY-MM-DD pages=N hits=M`／`######## CB-…` 分隔，頁內以
+`===== PAGE n ===== hits=[…]` 分隔並**列出該頁命中的關鍵字**（這一份比前幾份多印了命中詞，grep 命中詞即可定位）。
+換行已摺成空白（第 636 條）。關鍵字表＝c-149 b 組的 24 個目錄號 ＋ 48 個盤名／人名／廠牌詞
+（含 `manhattan records`／`intima records`／`verabra`／`jazz city`／`somethin' else` 四個「疑似他廠」偵測詞）。
+
+### c-149 b 對 1990 這一年的三點實測
+
+1. **`BB-`／`CB-` 兩形在 1990 都直接命中，三形備援一次都沒用上**——第 821 條訂正版（`Billboard%20` 只存在 1977–79）
+   在 1990 仍然成立；`Billboard-1990-…`／`Cash-Box-1990-…` 實測皆 404。
+2. **缺期一樣是規律的**（BB 年終合刊兩週、CB 三週），**不是檔名問題**（第 789／821 條判準續成立）。
+3. ⚠ **1990 年的 Billboard 有兩張爵士榜**（`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`），
+   Cash Box 同樣分 `JAZZ` 與 `CONTEMPORARY JAZZ`——**同一張碟只會上其中一張**
+   （本組實例：McCoy Tyner／Tony Williams／Bobby Watson 上 Jazz，Lou Rawls／Dianne Reeves／Stanley Jordan 上 Contemporary Jazz）。
+   **查不到不要只查一張榜。**
+
+---
+
+## c-148 a 組自抓（2026-09-18）：**Billboard／Cash Box 1985-07 → 1987-12，兩刊共 251 期**
+
+| 檔案 | 刊 | 涵蓋 | 期數 | 缺期 |
+|---|---|---|---|---|
+| `batch-progress/enum/billboard-bn-1985h2-1987-ocr.txt.gz`（9.9 MB） | Billboard | **1985-07-06 → 1987-12-26 的命中頁** | **127** | 1986-01-04／1986-04-26／1987-01-03 |
+| `batch-progress/enum/cashbox-bn-1985h2-1987-ocr.txt`（5.2 MB） | Cash Box | **1985-07-06 → 1987-12-26 的命中頁** | **124** | 1986-01-04／1986-03-29／1986-07-05／1986-07-19／1987-01-03／1987-01-10 |
+
+- 格式同第 879 條：每期 `######## BB-YYYY-MM-DD pages=N hits=M`／`######## CB-…`，頁內 `===== PAGE n ===== [命中的關鍵字]`，
+  換行已摺成空白（第 636 條）。**兩刊 1985–87 的 PDF 文字層都完整，`pymupdf` 直接讀，不需要 OCR**；六路並行 260 期約 9 分鐘。
+- **關鍵字表**：23 位本批藝人 ＋ `bruce lundvall`／`cuscuna`；19 個盤名；
+  目錄號 `BT[-. ]?851\d\d`／`BST[-. ]?84\d\d\d`／`BNJ[-. ]?\d\d\d\d`／`BLJ[-. ]?469`／`CDP 7 46\d\d\d`；通配 `blue note`／`manhattan records`。
+  **單獨命中 `blue note` 的頁不收**（1985 後這個字樣在紙本上太常見，全收會把檔案撐大三倍）。
+- ⚠ **訂正第 879／821 條的檔名結論**：第 879 條說「1980 年起 Billboard 全部是 `BB-`，備援形狀一次都沒用上」。
+  **本層實測：1985–86 確實全部 `BB-`，但 1987 年整年改成 `Billboard-YYYY-MM-DD.pdf`**
+  （`https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/Billboard-1987-05-09.pdf`，`BB-` 形 404）。
+  **→ `Billboard-` 這一形不是只在 1977–79 出現，1987 年起又回來了；第 705／797 條的「一律備援形狀都試」在這一段是必要的，不是保險。**
+  Cash Box 1985–87 則全部是 `CB-`，備援 `Cash-Box-`／`CB%20` 一次都沒用上。
+- ⚠ **缺期九則的分佈**：Cash Box 1987-01-03／01-10 與兩刊的 1986-01-04、1987-01-03 是**年終／年初合刊那一週**（第 879 條同形）；
+  BB-1986-04-26、CB-1986-03-29、CB-1986-07-05、CB-1986-07-19 是**單期缺檔**，三形檔名各試兩輪皆 404。
+
+---
+
+## 2026-09-18 再追加（**c-149 a 組掃的，1985-07 之後的第一段**）
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1987-ocr.txt`（2.5 MB） | Billboard | **1987-01-10 → 1987-12-26，51 期的命中頁（272 頁）** | c-149 a 掃；缺 1987-01-03（年終合刊週） |
+| `billboard-bn-1988-1989-ocr.txt`（5.1 MB） | Billboard | **1988-01-09 → 1989-12-23，102 期的命中頁（559 頁）** | c-149 a 掃；缺 1988-01-02／1988-12-31／1989-12-30（皆年終合刊週） |
+| `cashbox-bn-1987-ocr.txt`（1.1 MB） | Cash Box | **1987-01-17 → 1987-12-26，50 期的命中頁（133 頁）** | c-149 a 掃；缺 1987-01-03／01-10 |
+| `cashbox-bn-1988-1989-ocr.txt`（2.1 MB） | Cash Box | **1988-01-16 → 1989-12-30，100 期的命中頁（264 頁）** | c-149 a 掃；缺 1988-01-02／01-09／**1988-06-04**／1989-01-07／01-14 |
+
+**c-149 a 收工時（2026-09-18）並行棒次已另外落地 `billboard/cashbox-bn-1985h2-1987-ocr.txt`
+與 `billboard/cashbox-bn-1990-ocr.txt`——`1985-07 → 1986-12` 那十八個月的洞補上了。
+合計覆蓋：Billboard 1955→1990、Cash Box 1960-11→1990。**
+⚠ **1987 那一年有兩份重疊**（本層的 `*-bn-1987-ocr.txt` vs `*-bn-1985h2-1987-ocr.txt`）：
+**關鍵字集不同、命中頁也不同**——合併時先比對命中頁清單再決定留哪一份，**不要直接刪掉其中一份**。
+
+格式同前：每期以 `######## BB-YYYY-MM-DD pages=N`／`######## CB-…` 分隔，頁內以 `===== PAGE n =====` 分隔，
+換行已摺成空白（第 636 條），末尾一行 `######## MISSING <日期清單>`。**存的是命中頁不是全文**（第 879 條）。
+
+### ⚠ 第 821／852 條在 1987–89 的續測：**檔名三形的備援仍然沒有用上**
+
+c-149 a 實測 1987-01 → 1989-12，兩刊各 156 個週六：
+**Billboard 全部 `BB-YYYY-MM-DD.pdf`、Cash Box 全部 `CB-YYYY-MM-DD.pdf`**，
+`Billboard%20`／`Billboard-`／`Cash-Box-`／`CB%20` 四種備援一次都沒有命中。
+→ **第 705／797 條的備援仍要寫，但 1980 年起實際不需要**（與 c-146 在 1982–85 的結論一致）。
+→ **缺期九則裡有八則落在年終雙數合刊那一週**（1987-01-03、1987-01-10、1988-01-02、1988-01-09、
+1988-12-31、1989-01-07、1989-01-14、1989-12-30），**唯一的例外是 Cash Box 1988-06-04**
+——**缺得規律 → 不是檔名問題**（第 789／821 條的判準在 1987–89 仍然成立）。
 ---
 
 ## ⚠ 1977–1979 兩份 OCR 改存 `.txt.gz`（2026-09-17）
@@ -461,3 +537,988 @@ c-126～c-147 那 798 張卡因此卡在線上更新不了。cashbox 那份 24.4
 **日後做 OCR 時請直接寫成 `.gz`**，不要在這個 repo 裡留下任何超過 25 MiB 的單檔——
 `.assetsignore` 對 Pages 的 git 整合**沒有用**（2026-09-17 實測：加了之後
 同一個 25 MiB 檢查照樣擋下來，那個檢查發生在上傳之前）。
+
+## 2026-09-18：**又壓了四份，並把規則定死**
+
+除了 2026-09-17 壓的 1977–79 兩份，**主線再把這四份改成 `.txt.gz`**（都是 10 MiB 以上、離 25 MiB 上限不夠遠）：
+`billboard-bn-1980-1981-ocr.txt`（18.8→8.1 MiB）、`billboard-bn-1971h2-1975-ocr.txt`（11.5 MiB）、
+`cashbox-bn-1980-1981-ocr.txt`（10.9 MiB）、`billboard-bn-1970-72-ocr.txt`（10.8 MiB）。
+
+**規則（後續批次一律照辦）**：
+1. **這個 repo 就是 Cloudflare Pages 的部署來源，單檔上限 25 MiB，`.assetsignore` 對 git 整合沒有用**
+   ——那道檢查發生在讀清單之前。
+2. **新掃的 OCR 若超過 8 MiB，直接寫成 `.txt.gz`**（`gzip -9`），不要先寫 `.txt` 再想起來壓。
+3. **讀法**：`gzip -dc <檔>.gz | grep -n "…"`，或直接 `zgrep`／`zless`。**內容與原檔逐字相同。**
+4. 派工信引用紙本檔時，**檔名要帶 `.gz`**（已壓的那幾份）。
+
+**目前 repo 內最大的單檔是 15.2 MiB**（`billboard-bn-1977-1979-ocr.txt.gz`），離上限還有餘裕。
+
+- 2026-09-18 收尾：`billboard-bn-1985h2-1987-ocr.txt`（10.4 MiB）已壓成 `.txt.gz`（1.6 MiB），本檔內所有引用一併改名。讀法 `zgrep`／`gzip -dc … | grep`。
+
+## 2026-09-18 追加（c-150 b 掃的，**命中頁不是全文**，且**直接寫成 `.txt.gz`**）
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1991-1992-ocr.txt.gz`（9.1 MiB） | Billboard | **1991-01-05 → 1992-12-26，102 期的命中頁（2,243 頁）** | c-150 b 掃；缺 **BB-1991-12-28**（年終合刊週）與 **BB-1992-08-08**（檔案館該期沒掃到，三種檔名皆 404） |
+| `cashbox-bn-1991-1992-ocr.txt.gz`（2.1 MiB） | **Cash Box** | **1991-01-19 → 1992-12-26，100 期的命中頁（651 頁）** | c-150 b 掃；缺 **CB-1991-01-05／01-12／1992-01-04／01-11**，四則全是年終合刊週 |
+
+**格式**：每期以 `######## BB-YYYY-MM-DD pages=N src=<url>`／`######## CB-…` 分隔，頁內以 `===== PAGE n ===== hits=[…]` 分隔
+（`hits` 是該頁命中的關鍵詞清單，grep 命中詞即可定位），換行已摺成空白（第 636 條），末尾一行 `######## MISSING <日期清單>`。
+**關鍵字集**＝c-150 b 組的 23 個目錄號 ＋ 57 個盤名／人名／廠牌詞（含 `blue note`／`capitol jazz`／`jazz albums`）——**查別的碟要重抓或放寬關鍵字。**
+
+**讀法**：`gzip -dc batch-progress/enum/billboard-bn-1991-1992-ocr.txt.gz | grep -n "…"`，或 `zgrep`／`zless`。
+**依 2026-09-18 定下的規則，超過 8 MiB 的新 OCR 直接寫成 `.txt.gz`，沒有留過 `.txt`。**
+
+### c-150 b 的三點實測
+
+1. **檔名三形的備援在 1991–92 仍然沒用上**：Billboard 全部 `BB-YYYY-MM-DD.pdf`、Cash Box 全部 `CB-YYYY-MM-DD.pdf`，
+   `Billboard%20`／`Billboard-`／`Cash-Box-`／`CB%20` 四種備援一次都沒命中（與第 821／852 條在 1980–89 的結論一致）。
+   ⚠ **1990 年代的 Billboard 路徑是 `.../Billboard/90s/<年>/`、Cash Box 是 `.../Cash-Box/90s/<年>/`。**
+2. **缺期六則裡五則落在年終合刊週**（第 704／789／821 條的判準續成立）；**唯一的例外是 BB-1992-08-08**——**缺得規律 → 不是檔名問題。**
+3. ⚠ **第 879 條在 1991–92 全段成立**：兩刊各有 **TOP JAZZ ALBUMS** 與 **TOP CONTEMPORARY JAZZ ALBUMS** 兩張榜，
+   **同一張碟只會上其中一張**（c-150 b 實測：Ellis Marsalis Trio／Joe Lovano／Jack DeJohnette／Rick Margitza／Gonzalo Rubalcaba 上 Jazz 榜；
+   Michel Petrucciani／Eliane Elias／Everette Harp 上 Contemporary Jazz 榜）。**查不到不要只查一張榜。**
+
+**到此合計覆蓋：Billboard 1955→1992，Cash Box 1960-11→1992**（1961 與 1964–66 部分為抽查段，見上文）。
+
+---
+
+## 2026-09-18 再追加（**c-150 a 組掃的，1991 這一年開工時還沒有人掃**）
+
+| 檔案 | 來源 | 實際涵蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1991-1992q1-ocr.txt.gz`（4.5 MB） | Billboard | **1991-01-05 → 1992-03-28，64 期的命中頁（505 頁）** | c-150 a 掃；缺 **1991-12-28**（年終合刊週） |
+| `cashbox-bn-1991-1992q1-ocr.txt.gz`（0.96 MB） | Cash Box | **1991-01-19 → 1992-03-28，61 期的命中頁（137 頁）** | c-150 a 掃；缺 1991-01-05／01-12／1992-01-04／1992-01-11（皆年初合刊週） |
+
+⚠ **這兩份與上一節 c-150 b 掃的 `billboard/cashbox-bn-1991-1992-ocr.txt.gz` 在 1991-01 → 1992-03 這一段重疊**
+（兩棒同時在跑，c-150 b 的檔案在本棒寫到一半時落地）。**關鍵字集完全不同、命中頁也不同**——
+c-150 b 用的是它自己那 23 個目錄號 ＋ 57 個詞；**本節這兩份用的是 c-150 a 的 24 個目錄號 ＋ 50 個盤名／人名詞
+（含 `top jazz albums`／`contemporary jazz`）**。**依 1987 年那一段的前例：合併時先比對命中頁清單再決定留哪一份，不要直接刪掉其中一份。**
+⚠ **涵蓋範圍也不同**：c-150 b 那兩份到 **1992-12-26**（較長），本節這兩份只到 **1992-03-28**；
+**查 1992 年 4 月之後的碟請用 c-150 b 的 `.gz` 那兩份。**
+
+**多掃 1992 年第一季是刻意的**：c-150 a 有七張 1991 年下半的碟，評介與榜位會落到隔年 1–3 月。
+實測有用——**Billboard 1992-01-18 p15 的葛萊美入圍名單**是 Charlie Haden《Dream Keeper》唯一的獎項證據。
+**合計覆蓋：Billboard 1955→1992-03、Cash Box 1960-11→1992-03。**
+
+格式同 c-149 b：每期以 `######## BB-YYYY-MM-DD pages=N hits=M src=<url>` 分隔，
+頁內以 `===== PAGE n ===== hits=[…]` 分隔（**`hits=` 後面是該頁命中的關鍵詞清單，grep 命中詞即可定位**），
+換行已摺成空白（第 636 條），末尾一行 `######## MISSING <日期清單>`。**存的是命中頁不是全文**（第 879 條）。
+**兩份都在 8 MiB 以下，依「新掃的 OCR 若超過 8 MiB 才寫成 `.txt.gz`」的規則存成純 `.txt`。**
+
+### ⚠ 第 821／852 條在 1991–1992q1 的續測：**檔名備援仍然沒有用上**
+
+1991-01 → 1992-03 兩刊各 65 個週六，**Billboard 全部 `BB-YYYY-MM-DD.pdf`、Cash Box 全部 `CB-YYYY-MM-DD.pdf`**，
+`Billboard-`／`Billboard%20`／`Cash-Box-`／`CB%20` 四種備援一次都沒有命中。
+→ 與 c-146（1982–85）、c-149（1987–89）一致：**1980 年起實際不需要備援形**；
+**但 c-148 在 1987 那一年實測過 `Billboard-` 形**（見上一節），**所以規則仍要寫、只是這幾段用不上。**
+→ **缺期五則全部落在年終／年初合刊那一週，缺得規律 → 不是檔名問題**（第 789／821 條判準續成立）。
+
+### ⚠ 兩條 1990–91 專屬的操作結論（c-150 a 第 1026／1037 條）
+
+1. **1991 年底起 Blue Note 的美國目錄號前綴從 `B2-`／`B4-` 換成 `C2-`／`C4-`**
+   （Billboard 1991-11-30 p55：「STANLEY JORDAN Stolen Moments CD Capitol/Blue Note **C2-97159** CA **C4-97159**」）。
+   **1991 年底之後查紙本，`B2-` 查不到要改試 `C2-`。**
+2. **第 879 條的兩張爵士榜在 1991 分野很清楚**：直線爵士上 `TOP JAZZ ALBUMS`
+   （Time on My Hands 曾連三週 No.1、Eliane Elias Plays Jobim、Meant to Be、Discovery: Live at Montreux、Straight to My Heart），
+   有 R&B／流行成分的上 `TOP CONTEMPORARY JAZZ ALBUMS`（It's Supposed to Be Fun、Acoustic Moments、Stolen Moments）。
+   **同一張碟只會上其中一張，查不到不要只查一張榜。**
+3. **OCR 形變再記一則**：Billboard **1990-11-10 p87** 的 Contemporary Jazz 榜把 Lou Rawls 的 `93841` 讀成 **`9384`（掉尾數）**，
+   同一張碟在 1990-11-24 p92 讀對——**單期 OCR 掉字元，不是紙本誤植**（第 998 條三種形變之外的第四種）。
+
+- 2026-09-18 主線裁定：1991–92 有**兩套獨立掃檔**（c-150 b 的 `*-bn-1991-1992-ocr.txt.gz` 與 c-150 a 的 `*-bn-1991-1992q1-ocr.txt.gz`，關鍵字表不同、期別互有增減）。**兩套都留**，查不到先換另一套再說「紙本沒有」（第 704 條）。a 組那兩份原為未壓縮 .txt，已一併 `gzip -9`。
+
+---
+
+## 2026-09-18：**c-151 a 補上 1992–1993 兩刊（Billboard 103 期、Cash Box 101 期）**
+
+| 檔 | 刊 | 覆蓋 | 備註 |
+|---|---|---|---|
+| `billboard-bn-1992-1993-ocr.txt.gz`（4.3 MiB 壓縮／9.6 MiB 原文） | **Billboard** | **1992-01-04 → 1993-12-25，103 期的命中頁（1,019 頁）** | c-151 a 掃；**1992 年 52 期全有**，**1993 年缺 `BB-1993-01-02`**（年初合刊週） |
+| `cashbox-bn-1992-1993-ocr.txt.gz`（1.9 MiB） | **Cash Box** | **1992-01-18 → 1993-12-31，101 期的命中頁（300 頁）** | c-151 a 掃；缺 `CB-1992-01-04／01-11／1993-01-02／01-09`（**四則全是年初合刊週**），另**多一期 `CB-1993-12-31`（週五不是週六）** |
+
+**格式**：每期以 `######## <basename> pages=N` 分隔（basename 即 PDF 檔名去副檔名，例如 `Billboard-1992-05-02`／`BB-1993-06-05`／`CB-1993-07-24`），
+頁內以 `===== PAGE n ===== hits=[…]` 分隔（`hits` 是該頁命中的關鍵詞清單，**grep 命中詞即可定位到頁**），
+換行已摺成空白（第 636 條），末尾一行 `######## MISSING <日期清單>`。**存的是命中頁不是全文**（第 879 條）。
+**關鍵字集**＝c-151 a 組的 23 個目錄號 ＋ 53 個盤名／人名／欄名詞（含 `blue note`／`top jazz albums`／`contemporary jazz`／`bruce lundvall`）
+——**查別的碟要重抓或放寬關鍵字。**
+
+**讀法**：`gzip -dc batch-progress/enum/billboard-bn-1992-1993-ocr.txt.gz | grep -n "…"`，或 `zgrep`／`zless`；Cash Box 那份是純文字可直接 grep。
+**依 2026-09-18 定下的規則，Billboard 那份（9.6 MiB > 8 MiB）直接寫成 `.txt.gz`，沒有留過 `.txt`；Cash Box 那份 1.9 MiB 保留 `.txt`。**
+
+### ⚠ c-151 a 的四點實測（**其中第 1 點推翻了前四批「備援沒用上」的結論**）
+
+1. ⚠⚠ **檔名形在 1992 與 1993 之間換了一次，而且同一年之內沒有混用**：
+   - **1992 全年 52 期都是 `Billboard-YYYY-MM-DD.pdf`**（`BB-1992-01-04.pdf` 直接回 **404**）；
+   - **1993 全年 51 期都是 `BB-YYYY-MM-DD.pdf`**（`Billboard-1993-01-09.pdf` 回 **404**；
+     1993 目錄裡唯一的 `Billboard-` 檔是年鑑 `Billboard-1993-International-Recording-Directory.pdf`，不是週刊）；
+   - **Cash Box 兩年都是 `CB-YYYY-MM-DD.pdf`**。
+   → **第 705／797／821 條的檔名備援不能省。**c-148 a／c-149 a（1985–89）與 c-150 b（1991–92）都結論「備援沒用上」，
+   **那個結論到 1992–93 就失效了**——**1992 與 1993 各用一種形。**
+2. ⚠ **最可靠的抓法（建議後批一律照辦）**：
+   **先 `curl -sSL "https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm"`
+   （與 `.../Cash-Box-Magazine.htm`）把索引頁抓下來，直接從 HTML 裡 grep 出當年的 `.pdf` 相對路徑清單，不要自己按週六日期拼檔名。**
+   ⚠ **目錄列表（`.../Billboard/90s/1992/`）回 403**；⚠ **`Billboard-Magazine.htm` 不加 `-L` 會回 301**（舊路徑 `/Billboard-Magazine.htm` 轉到 `/Archive-All-Music/…`）。
+   路徑：Billboard `Billboard/90s/<年>/`、Cash Box `Cash-Box/90s/<年>/`。
+3. ⚠ **第 879 條在 1992–93 續成立**：兩刊各有 **TOP JAZZ ALBUMS** 與 **TOP CONTEMPORARY JAZZ ALBUMS** 兩張榜。
+   **c-151 a 的二十張收件裡上榜的十張全部上 Jazz 榜、沒有一張上 Contemporary Jazz 榜**
+   （1992–93 的 Contemporary 榜被 Fourplay／Miles Davis《Doo-Bop》／Al Jarreau／Spyro Gyra／Najee 這類佔滿）。**查不到不要只查一張榜。**
+4. ⚠ **OCR 形變：第 998 條的三種全中，另加第四種**。
+   (a) **字母數字互讀**：`98170` 讀成 `96170`／`9817O`；(b) **空格被吃掉**：`98636 2` 讀成 `986362`；
+   (c) **紙本自己誤植**；**(d) 新增——`Jazz` 被讀成 `Jall`／`JAll`（本段最普遍，`grep "TOP JAZZ ALBUMS"` 會漏掉一半的榜頁，
+   要一併 grep `TOP JAll ALBUMS`），`Blue Note` 被讀成 `SLUE NOTE`／`Blue Nolo`。**
+   ⚠ **五位數目錄號在 1990 年代撞「單曲號」的機率比撞郵遞區號還高**（第 968 條的 1990 年代版）：
+   c-151 a 的四處假陽性——`80902`＝Quantum Leap 錄影帶商品號、`98636`＝Simply Red〈Stars〉的 `4-98636`、
+   `98635`＝College Boyz 的 Virgin 單曲號、`80054`＝Todd Rundgren 錄影帶的 `72333-80054-3`。**命中後一定要看上下文是不是爵士榜／新片欄。**
+
+⚠ **1992 年有兩份重疊**：本節的 `*-bn-1992-1993-*` 與 c-150 b 的 `*-bn-1991-1992-*`
+——**關鍵字集不同、命中頁也不同**，**合併時先比對命中頁清單再決定留哪一份，不要直接刪掉其中一份**（同第 910 條對 1987 那一年的處理）。
+
+**到此合計覆蓋：Billboard 1955→1993，Cash Box 1960-11→1993。**
+
+- 2026-09-18 收尾：`cashbox-bn-1992-1993-ocr.txt` 亦已 `gzip -9`（0.8 MiB），本檔引用同步改名。**1992 全年是 `Billboard-YYYY-MM-DD.pdf`、1993 全年是 `BB-YYYY-MM-DD.pdf`，兩年換一次形**（c-151 a 實測，推翻前四批「1987 年起一律 Billboard- 形」的結論）。
+
+## 2026-09-18 追加（c-149 a **研究層**，**沒有新掃 OCR，只訂正一個檔名形**）
+
+**本棒沒有新增任何 OCR 檔**（1984–1990 兩刊八份既有檔已夠用），但**逐一驗證了本棒引用的 77 個 PDF 網址**，
+發現上文「c-149 a 實測 1987-01 → 1989-12，**Billboard 全部 `BB-YYYY-MM-DD.pdf`**」那一句**在 1987 年那一段是錯的**：
+
+| 年 | Billboard 實際檔名形 | Cash Box 實際檔名形 |
+|---|---|---|
+| 1984／1985／1986 | `BB-YYYY-MM-DD.pdf` ✓ | `CB-YYYY-MM-DD.pdf` ✓ |
+| **1987** | **`Billboard-YYYY-MM-DD.pdf`**（`BB-` 形全部 404） | `CB-YYYY-MM-DD.pdf` ✓ |
+| 1988／1989 | `BB-YYYY-MM-DD.pdf` ✓ | `CB-YYYY-MM-DD.pdf` ✓ |
+| 1990 | `BB-YYYY-MM-DD.pdf` ✓（路徑 `/Billboard/90s/1990/`） | `CB-YYYY-MM-DD.pdf` ✓（路徑 `/Cash-Box/90s/1990/`） |
+
+**實測樣本**：1987 年逐一試過 02-07／03-07／03-28／04-04／04-11／04-25／05-09／06-27／10-17／12-05／12-26 共十一期，
+**`BB-` 形十一期全部 404、`Billboard-` 形十一期全部 206**；`Billboard%20` 形十一期也全部 404。
+1988–1990 逐一試過四十二期，**`BB-` 形全部命中，一次都沒用上備援形。**
+
+⚠ **給後批的操作結論**：**1987 這一年是 Billboard 檔名的孤島**——前後年都是 `BB-`，只有它是 `Billboard-`。
+**第 705／797／821 條「備援形都試」在 1980 年代其實只有 1987 用得上，但那一年非用不可。**
+（上文 c-149 a 策展層那一句是掃描腳本自己帶備援重試、沒有記錄實際命中形造成的，**本段只做訂正，不改上面的段落。**）
+
+## 2026-09-18 追加（c-151 **b 組**策展層自抓：**1994 全年兩刊 ＋ 1995 年第一季 Billboard**）
+
+**本棒開工時 `enum/` 最晚只到 1993，1994 沒有人掃過**，因此自抓兩份（**皆 `.txt.gz`，`gzip -9`**）：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1994-1995q1-ocr.txt.gz` | **4.0 MiB 壓縮 / 9.1 MiB 原文** | **1994-01-08 → 1995-03-25，共 63 期**（1994 年 **51 期**、1995 年第一季 **12 期**） | **889** | **BB-1994-01-01／BB-1994-12-31**（索引頁沒有這兩個檔） |
+| `cashbox-bn-1994-ocr.txt.gz` | **0.8 MiB 壓縮 / 1.8 MiB 原文** | **1994-01-22 → 1994-12-31，共 49 期** | **297** | **CB-1994-01-01／01-08／01-15** |
+
+- **格式與前幾份相同**：每期 `######## <basename> pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白（第 636 條）、末行 `######## MISSING …`。**存的是命中頁不是全文。**
+- **關鍵字集＝本組 25 個目錄號**（84020／84081／80590／80597／84467／89050／89548／99031／99586／99786／99787／89280／28264／30028／80589／89297／27327／28719／29223／30451／27879／31363／28265／4020／4081）**＋ 62 個盤名／人名／欄名詞**
+  （含 `blue note`／`slue note`／`blue nolo`／`top jazz albums`／`top jall albums`／`contemporary jazz`／`contemporary jall`／`bruce lundvall`／`somethin' else`／`cuscuna`）——**查別的碟要重抓或放寬關鍵字。**
+- ⚠ **缺期全部落在年終／年初合刊週**（第 704／789／821 條的判準到 1994 仍然成立）——**缺得規律 → 不是檔名問題。**
+
+⚠ ⚠ **1994 年的 Billboard 檔名是「同一年內混用」的第一個年份，前三年的規律到這裡失效**：
+
+| 年 | Billboard 檔名形 |
+|---|---|
+| 1992 | 全年 `Billboard-YYYY-MM-DD.pdf`（c-151 a 實測） |
+| 1993 | 全年 `BB-YYYY-MM-DD.pdf`（c-151 a 實測） |
+| **1994** | **`BB-YYYY-MM-DD.pdf` 與 `BB-YYYY-MM-DD-N.pdf` 混用，同一年內隨期別交替**（另有 `BB-1994-05-07-R.pdf`、`BB-1994-10-15-P.pdf` 兩個單獨的尾碼形） |
+| 1995 第一季 | `BB-YYYY-MM-DD.pdf` |
+| 1994 Cash Box | 全年 `CB-YYYY-MM-DD.pdf` |
+
+→ **按週六日期拼檔名在 1994 年會漏掉將近一半的期別**（`-N`／`-R`／`-P` 尾碼無法預測）。
+**本棒照 c-151 a 第 1091 條的建議先抓索引頁再 grep 檔名，112 期一次全中、零 FETCH-FAIL**：
+```
+curl -sSL https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm
+curl -sSL https://www.worldradiohistory.com/Archive-All-Music/Cash-Box-Magazine.htm
+```
+（⚠ 不加 `-L` 會回 301；目錄列表本身回 403。）**這是第 705／797／821 條「三種檔名都試」在 1990 年代中期唯一可行的作法。**
+
+**到此合計覆蓋：Billboard 1955→1995Q1，Cash Box 1960-11→1994。**
+
+## 2026-09-18 再追加（c-152 **a 組**策展層自抓：**1995 年 Q2–Q4 ＋ 1996 年全年，兩刊**）
+
+**本棒開工時 `enum/` 的 Billboard 只到 1995-03-25（c-151 b 掃的 1995 Q1）、Cash Box 只到 1994**，
+1995 年第二季以後與 1996 年全年沒有人掃過，因此自抓四份（**皆 `.txt.gz`，`gzip -9`**）：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1995q2-q4-ocr.txt.gz` | **2.8 MiB 壓縮 / 6.3 MiB 原文** | **1995-04-01 → 1995-12-23，共 39 期** | **627** | **BB-1995-12-30**（索引頁沒有；年終合刊週） |
+| `cashbox-bn-1995-ocr.txt.gz` | **0.9 MiB 壓縮 / 1.9 MiB 原文** | **1995-01-21 → 1995-12-30，共 50 期** | **264** | **CB-1995-01-07／01-14**（年初合刊週） |
+| `billboard-bn-1996-ocr.txt.gz` | **3.5 MiB 壓縮 / 8.0 MiB 原文** | **1996-01-06 → 1996-12-28，共 52 期，零缺期** | **785** | 無 |
+| `cashbox-bn-1996-ocr.txt.gz` | **0.5 MiB 壓縮 / 1.0 MiB 原文** | **1996-01-20 → 1996-11-16，共 39 期** | **141** | 1996-01-06／01-13 兩期，**以及 1996-11-16 以後全部（停刊）** |
+
+- **格式與前幾份相同**：每期 `######## <basename> pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白（第 636 條）。**存的是命中頁不是全文。**
+- **關鍵字集＝c-152 a 組的 25 個目錄號**（31139／80591／89662／89679／89680／27765／27014／27838／28243／28423／28885／29268／30082／30133／30490／30494／31886／55466／29511／29266／31676／4142／4145／28447／30132）
+  **＋ 62 個盤名／人名／欄名詞**（含 `blue note`／`slue note`／`blue nolo`／`blue nole`／`top jazz albums`／`top jall albums`／`contemporary jazz`／`contemporary jall`／`somethin' else`／`bruce lundvall`／`cuscuna`／`pacific jazz`）——**查別的碟要重抓或放寬關鍵字。**
+
+⚠ ⚠ **檔名規律（接續第 1127 條那張表）**：
+
+| 年 | Billboard 檔名形 | Cash Box 檔名形 |
+|---|---|---|
+| 1994 | `BB-` 與 `BB-…-N` 混用，另有 `-R`／`-P` | 全年 `CB-YYYY-MM-DD.pdf`（週六） |
+| **1995** | **全年回到單純的 `BB-YYYY-MM-DD.pdf`，51 期零例外** | **`CB-YYYY-MM-DD.pdf`，週六，1995-01-21 起** |
+| **1996** | **`BB-YYYY-MM-DD.pdf`，只有 `BB-1996-02-10-**O**.pdf` 一期帶尾碼** | **`CB-YYYY-MM-DD.pdf`** |
+
+→ **1994 是目前唯一一個「同一年內混用」的年份**；**1995／1996 兩年按週六日期拼檔名幾乎全中**，
+**但本棒仍照第 1091／1127 條先抓索引頁 grep 檔名（`Billboard-Magazine.htm`／`Cash-Box-Magazine.htm`，要加 `-L`）**，
+**180 期一次全中、零 FETCH-FAIL、零 PARSE-FAIL。**
+
+⚠ ⚠ **Cash Box 的停刊在檔案上長這樣**（簡報預告的「1995 起期別變薄」已實測）：
+**1996 年 1 月至 9 月仍是週刊，10 月起變成雙週**（`CB-1996-10-05`／`10-19`／`11-02`／`11-16`），
+**`CB-1996-11-16` 是檔案館裡最後一期**。**1996-11 以後只剩 Billboard 可查。**
+
+⚠ **1996 年 Billboard 的爵士欄仍分兩張榜**（第 879 條續成立）：`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+**OCR 形變 `Jazz → Jall／JAll` 到 1996 年仍然普遍**，關鍵字表已一併收。
+
+**到此合計覆蓋：Billboard 1955→1996 全年，Cash Box 1960-11→1996-11（停刊）。**
+
+- ⚠ 2026-09-18（c-150 研究 a 組實測）：**`billboard-bn-1991-1992q1-ocr.txt.gz` 只寫了一個 `########` 標頭**，後面 64 期的頁全部串在一起、**無法逐期定位**。**要逐期引用請改用 `billboard-bn-1991-1992-ocr.txt.gz`（103 個標頭，格式正確）**；q1 那份仍可當第二套關鍵字表用（第 704 條）。
+
+## 2026-09-18 再追加（c-150 **b 組**研究層自抓：**Billboard 2002 年全年**）
+
+**本棒有一張碟的年份被策展層從 1992 改判到 2002**（Duke Ellington《1969 All-Star White House Tribute》，
+Blue Note `7243 5 35249 2 0`），**repo 裡 2002 年兩刊都沒有**（Cash Box 1996-11 停刊，Billboard 只掃到 1996），
+因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2002-ocr.txt.gz` | **1.7 MiB 壓縮 / 3.8 MiB 原文** | **2002-01-12 → 2002-12-28，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **397** | **BB-2002-01-05（索引頁沒有這一期，2002 年第一期就是 01-12）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、
+  換行摺成空白。**存的是命中頁不是全文。** 末行有 `######## MISSING …`。
+- **檔案雖然只有 3.8 MiB（低於 8 MiB 的壓縮門檻），仍存成 `.txt.gz`**，與 `enum/` 裡其他 1990 年代的檔一致。
+- **關鍵字集只有 16 個詞**（`blue note`／`35249`／`white house tribute`／`all-star white house`／`duke ellington`／
+  `ellington`／`top jazz albums`／`top jall albums`／`traditional jazz`／`contemporary jazz`／`bill kirchner`／
+  `clark terry`／`michael cuscuna`／`blue nole`／`slue note`／`jazz albums`）
+  ——**是為了一張碟抓的，查別的 2002 年碟一定要重抓或放寬關鍵字。**
+
+⚠ ⚠ **2002 年的路徑與檔名（本棒實測）**：
+**目錄是 `Billboard/00s/2002/`（不是 `2000s/`）**，檔名**全年單純 `BB-YYYY-MM-DD.pdf`，51 期零例外**，
+`Billboard-`／`BB-…-N` 兩種備援一次都沒命中。**索引頁仍照第 1091／1127 條先抓**
+（`https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm`，**要加 `-L`**）。
+
+⚠ **2002 年 Billboard 的爵士欄仍分兩張榜**（第 879 條到 2002 仍成立）：`TOP JAZZ ALBUMS` 與
+`TOP CONTEMPORARY JAZZ ALBUMS`，**`Jazz → Jall` 的 OCR 形變到 2002 年還在**（`TOP JAll ALBUMS`），
+且 **2002 年的榜是 Nielsen SoundScan 銷售榜、名次欄的數字 OCR 幾乎讀不出來**——
+**判在不在榜可以，判第幾名要人工數列。**
+
+**到此合計覆蓋：Billboard 1955→1996 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-153 **b 組**策展層自抓：**Billboard 1997 年全年**）
+
+**本棒 22 筆裡有 7 筆的年份落在 1997**（Art Blakey《Orgy In Rhythm》、Bob Dorough《Right On My Way Home》、
+Charlie Parker & Dizzy Gillespie《Diz 'n Bird at Carnegie Hall》、Chet Baker《Jazz Profile》、
+Don Grolnick《Complete Blue Note Recordings》、Jimmy McGriff《Tribute to Basie》、Önder Focan《Beneath the Stars》），
+**而此前 repo 的覆蓋是「Billboard 1955→1996 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）」——1997 兩刊都沒有**，因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1997-ocr.txt.gz` | **3.2 MiB 壓縮 / 7.3 MiB 原文** | **1997-01-11 → 1997-12-27，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **701** | **1997-01-04（索引頁上沒有這一期，1997 年第一期就是 01-11）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、
+  換行摺成空白。**存的是命中頁不是全文。**
+- **原文 7.3 MiB 雖低於 8 MiB 的壓縮門檻，仍存成 `.txt.gz`**，與 `enum/` 裡其他 1990 年代的檔一致。
+
+⚠ ⚠ **1997 年的路徑與檔名（本棒實測，照第 1091／1127 條先抓索引頁 grep，沒有按日期硬拼）**：
+**目錄是 `Billboard/90s/1997/`**；**全年 50 期是 `Billboard-YYYY-MM-DD.pdf`，只有 `BB-1997-04-12.pdf` 一期用 `BB-` 形**
+——**與 1996 年恰好相反**（1996 全年 `BB-`、只有 `BB-1996-02-10-O.pdf` 一期帶尾碼）。
+**→ 1997 年是繼 1994 之後第二個「同一年內混用」的年份，而且主形換成了 `Billboard-`。**
+⚠ **同目錄下另有 `BB1997.pdf` 與 `Billboard-Disco-Source-Book-1997.pdf` 兩個非週刊檔**，**抓的時候要排掉。**
+
+⚠ **關鍵字集是為 c-153 b 的 22 筆量身配的**（69 個詞 ＋ 19 個目錄號片段：`34813`／`35220`／`35338`／`36490`／
+`37101`／`37302`／`37319`／`37630`／`38098`／`38297`／`53354`／`53422`／`64644`／`57061`／`57729`／`56586`／
+`57197`／`55772`／`100301`，另含 `blue note`／`blue nole`／`slue note`／`capitol jazz`／`jazz albums`／`top jazz`／
+`top jall`／`jall albums`／`contemporary jazz`／`rare groove`／`toshiba emi`／`roost` 等通用詞）
+——**查別的 1997 年碟一定要重抓或放寬關鍵字。**
+
+⚠ **1997 年 Billboard 的爵士欄仍分兩張榜**（第 879 條到 1997 仍成立）：`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+**`Jazz → Jall／JAll` 的 OCR 形變到 1997 年還在**（關鍵字表已含 `top jall`／`jall albums`）。
+
+⚠ **本棒實測的一個 OCR 坑**：**專文的第一頁可能一個關鍵字都不中**——
+**Billboard 1997-09-27 的 Bob Dorough 專文（標題「JAZZ VETERAN BOB DOROUGH MAKES BLUE NOTE DEBUT」）第一頁是 p11，沒有被命中；
+只抓到 p17 的續頁，頁首逐字「(Continued from prige il)」＝`page 11` 的 OCR 形變。**
+**「只存命中頁」的策略會漏掉「關鍵字在標題圖上、內文沒出現」的第一頁**——**引用專文時要記得去翻續頁指向的那一頁。**
+
+**到此合計覆蓋：Billboard 1955→1997 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。1998 年起兩刊都還沒有人掃。**
+
+## 2026-09-18 再追加（c-154 **b 組**策展層自抓：**Billboard 1998 年全年**）
+
+**本棒 22 筆裡有 12 筆的年份落在 1998**（Greg Osby《Banned in New York》與《Zero》、Jacky Terrasson《Alive》、
+Lena Horne《Being Myself》、Mark Shim《Mind Over Matter》、Prysm《Second Rhythm》、Sherman Irby《Big Mama's Biscuits》、
+José Luis Cortés《Veneno》、Stan Kenton《Standards in Silhouette》、The Dave Pell Octet《I Had the Craziest Dream》、
+Johnny Mandel & Bill Holman《Theme Music From "The James Dean Story"》等），
+**而此前 repo 的覆蓋是「Billboard 1955→1997 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）」——1998 年沒有人掃過**
+（c-153 b 第 1243 條末句點名的那一格），因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1998-ocr.txt.gz` | **2.2 MiB 壓縮 / 5.0 MiB 原文** | **1998-01-10 → 1998-12-26，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **517** | **1998-01-03（索引頁上沒有這一期，1998 年第一期就是 01-10）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、
+  換行摺成空白。**存的是命中頁不是全文。**
+- **原文 5.0 MiB 雖低於 8 MiB 的壓縮門檻，仍存成 `.txt.gz`**，與 `enum/` 裡其他 1990 年代的檔一致。
+
+⚠ ⚠ **1998 年的路徑與檔名（本棒實測，照第 1091／1127 條先抓索引頁 grep，沒有按日期硬拼）**：
+**目錄是 `Billboard/90s/1998/`**；**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`**
+——**與 1997 年（50 期 `Billboard-` ＋ 只有 04-12 一期 `BB-`）相反，回到 1996 年的形狀。**
+⚠ **同目錄下另有 `BB1998.pdf` 與 `Billboard-Buyer´s-Guide-1998.pdf` 兩個非週刊檔**
+（**後者的檔名帶一個非 ASCII 的 `´`**），**抓的時候要排掉。**
+
+⚠ **關鍵字集是為 c-154 b 的 22 筆量身配的**（70 個詞 ＋ 目錄號片段 `49686`／`96860`／`93760`／`57302`／`57184`／
+`56586`／`55817`／`56680`／`57150`／`54876`／`55330`／`53068`／`95445`／`94503`／`98164`／`23545` 等，
+另含 `blue note`／`blue nole`／`slue note`／`bine note`／`capitol jazz`／`top jazz`／`top jall`／`jall albums`／
+`jazz albums`／`contemporary jazz`／`traditional jazz`／`michael cuscuna`／`bruce lundvall`／`toshiba emi`／`tocj` 等通用詞）
+——**查別的 1998 年碟一定要重抓或放寬關鍵字。**
+
+⚠ **1998 年 Billboard 的爵士欄仍分兩張榜**（第 879 條到 1998 仍成立）：`TOP JAZZ ALBUMS` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+**`Jazz → Jall／JAll／Jail` 的 OCR 形變到 1998 年還在**（本棒實見 `Top Jail Albums`）。
+
+⚠ ⚠ **本棒實測的一個新查詢坑**：**查 `osby` 會得到 218 則命中，其中絕大多數是 `Crosby`／`Cosby`（Bing Crosby、David Crosby、Bill Cosby）**
+——**短姓氏是別人的子字串時，一定要用全名查**（`greg osby`）。
+
+**到此合計覆蓋：Billboard 1955→1998 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。1999 年起兩刊都還沒有人掃。**
+
+## 2026-09-18 再追加（c-154 **a 組研究層**自抓：**Billboard 1999 年全年**）
+
+**本棒 21 筆裡有 1 筆的年份落在 1999**（`Lee Konitz —《Another Shade of Blue》`，策展層第 1262 條把它從 1997 改判 1999），
+**而此前 repo 的覆蓋是「Billboard 1955→1998 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）」——1999 年沒有人掃過**
+（c-154 b 第 1301 條末句點名的那一格），因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1999-ocr.txt.gz` | **1.3 MiB 壓縮 / 3.0 MiB 原文** | **1999-01-09 → 1999-12-25，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **338** | **1999-01-02（該日的 PDF 在檔案館上不存在，1999 年第一期就是 01-09）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、
+  換行摺成空白。**存的是命中頁不是全文。**
+
+⚠ ⚠ **1999 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/90s/1999/`**；
+**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`**——**與 1998 年同形、與 1997 年（主形 `Billboard-`）相反。**
+⚠ **1999 年的目錄頁抓不到**：`Archive-All-Music/Billboard/90s/1999/` 回 **403**、
+`Billboard-Magazine-1999.htm` 回 **404**——**本棒改用「週六日期逐一 HEAD 探測」補上索引**
+（1999 年的 Billboard 仍是週六；`Billboard-1999-*.pdf` 形 52 個全部 404，`BB-1999-*.pdf` 形 51 個 200）。
+**→ 給後批：索引頁抓不到時，「兩種檔名 × 全年週六」共 104 次 HEAD 就能把期別表補齊，比猜檔名可靠。**
+
+⚠ **這一份的文字層不是 OCR 圖層、是 PDF 內嵌文字**，用 `pypdf` 逐頁 `extract_text()` 取出
+（容器內 `pip install pypdf`；**`pdftotext` 不在映像裡、`cryptography` 需先 `pip install -U cffi`**）。
+**每期約 6 秒、全年 51 期含下載約 8 分鐘。**
+
+⚠ **關鍵字集（本棒配的，約四十個詞；入庫的這一份另帶幾個通用詞，命中頁 338）**：`blue note`／`blue nole`／`slue note`／`bine note`／`bkie note`／
+`capitol jazz`／`pacific jazz`／`top jazz`／`top jall`／`top jail`／`jazz albums`／`jall albums`／
+`contemporary jazz`／`contemporary jall`／`traditional jazz`／`michael cuscuna`／`bruce lundvall`／
+`toshiba emi`／`tocj`／`somethin' else`／`vital reissues`／`rvg edition`／`blue notes by`，
+另含本棒專用的 `konitz`／`lee konitz`／`another shade`／`98222`／`jazz bakery`／`brad mehldau`／
+`charlie haden`／`56543`／`57150`——**查別的 1999 年碟一定要重抓或放寬關鍵字。**
+
+⚠ ⚠ **本棒靠這份檔拿到的關鍵證據（第 1262 條的續筆）**：
+**Billboard 1999-11-13 p20 的 JAZZ 評介欄逐字：「LEE KONITZ / CHARLIE HADEN / BRAD MEHLDAU — Another Shade Of Blue
+／PRODUCERS: Lee Konitz, Charlie Haden／Blue Note 7243-4-98222／**Culled from the same Los Angeles live dates
+that yielded the '97 set "Alone Together"**」**
+——**(1) 年份 1999 成立**（評介週 1999-11、目錄號逐字對上）；
+**(2) ⚠ 它與 c-154 b 的《Alone Together》是同一批現場母帶**，
+**因此《Another Shade of Blue》盤面印的「12/21/1997」不可能對**
+（《Alone Together》1997-10-23 就發行了，錄音不可能在 1997 年 12 月）——
+**真正的錄音日是 Discogs 在《Alone Together》上注的「December 21 & 22 (1996?)」那兩晚。**
+**→ 這是「同期紙本推翻盤面日期」在本段的第一個樣本。**
+
+⚠ ⚠ **後記（同日稍晚）：c-155 b 組策展層在同一天平行抓了同一年，本節與下一節講的是同一個檔。**
+**兩棒各自跑了一次（本棒 329 命中頁、c-155 b 338 命中頁，差在關鍵字集寬窄），入庫的是命中頁較多的那一份。**
+**→ 給主線：1999 這一年被抓了兩次，建議日後派工前先看本檔末段有沒有人已經在抓。**
+
+**到此合計覆蓋：Billboard 1955→1999 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。2000–2001 年兩刊都還沒有人掃。**
+
+## 2026-09-18 再追加（c-155 **b 組**策展層自抓：**Billboard 1999 年全年**）
+
+**c-155 b 組 22 筆裡有 12 筆的年份落在 1999**（Stefon Harris《Black Action Figure》、Jacky Terrasson《What It Is》、
+Chucho Valdés《Briyumba Palo Congo》、Cæcilie Norby《Queen of Bad Excuses》、Erik Truffaz《Bending New Corners》、
+James Hurt《Dark Grooves, Mystical Rhythms》、Tim Hagans《Animation / Imagination》、Stéphane Huchard《Tribal Traquenard》、
+Jean-Pierre Como《Empreinte》、Önder Focan《Tunes Sung by the Vocalists》等），
+**而同批 a 組（c-155 rulings 第 1333 條）已經點名「1999 年的缺口第一次真的擋到路」**（兩張改判到 1999 拿不到街頭日），因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-1999-ocr.txt.gz` | **1.3 MiB 壓縮 / 3.0 MiB 原文** | **1999-01-09 → 1999-12-25，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **338** | **1999-01-02（探測回 404，1999 年第一期就是 01-09）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- **原文 3.0 MiB 低於 8 MiB 的壓縮門檻，仍存成 `.txt.gz`**，與 `enum/` 裡其他 1990 年代的檔一致（repo 是 Cloudflare Pages 部署來源）。
+
+⚠ **1999 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/90s/1999/`**，**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`（週六）**——**與 1998 年同形。**
+
+⚠ ⚠ **索引頁現在抓不到了，抓取方法要換**：
+**`https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/` 回 `403 Forbidden`（1998 那個目錄現在也回 403）**
+——**此前幾棒用的「先抓索引頁 grep 檔名」（第 1091／1127 條）在 2026-09-18 這一天已經失效。**
+**本棒改用「逐日 HEAD 探測」：枚舉 1999 年全部 52 個週六，以 `Range: bytes=0-64` 逐一探測，52 個裡 51 個回 `206`、只有 `1999-01-02` 回 404。**
+**成本 52 次請求、幾秒鐘，而且不必解析 HTML。**
+**→ 給後批：索引頁 403 時改用這個方法；先用已知年份（1998）驗證檔名形狀，再跑目標年份。**
+
+⚠ **關鍵字集是為 c-155 b 的 22 筆量身配的**（約 100 個詞 ＋ 目錄號片段
+`21431`／`33114`／`95050`／`93155`／`93676`／`21281`／`23108`／`23211`／`59509`／`98239`／`99908`／`27544`／
+`99546`／`95104`／`95198`／`98756`／`98917`／`522123`／`5223422`／`100318`，
+另含通用詞 `blue note`／`blue nole`／`slue note`／`bine note`／`blue nate`／`top jazz`／`top jall`／`top jail`／
+`jazz albums`／`jall albums`／`contemporary jazz`／`contemporary jall`／`traditional jazz`／`bruce lundvall`／`lundvall`／
+`michael cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／`metro blue`／`somethin' else`）
+——**查別的 1999 年碟一定要重抓或放寬關鍵字。**
+
+⚠ ⚠ **1999 年最大的一筆收穫是 `BB-1999-01-16`**：**那一期是 Billboard 給 Blue Note 六十週年的整本 TRIBUTE 特輯**，
+**單期命中 23 頁，是全年最多的一期**。內含 **p48 與 p62 的 Bruce Lundvall 兩段專訪**、**p50 的 Vital Reissues 專文**、
+**p55 的全版藝人名單**（Bob Belden／Eliane Elias／Tim Hagans／Stefon Harris／Charlie Hunter／Joe Lovano／Jason Moran／
+Greg Osby／Marcus Printup／Jacky Terrasson／Chucho Valdés……）、**p99 的第 41 屆葛萊美完整提名名單**。
+**→ 查 1999 年任何 Blue Note 藝人的背景，先翻這一期。**
+
+⚠ **1999 年 Billboard 的爵士欄仍分兩張榜**（第 879／1068 條到 1999 仍成立）：`Top Jazz Albums` 與 `TOP CONTEMPORARY JAll ALBUMS`，
+**兩張榜在 1999 年是隔週刊登**（全年只出現 39 次 `Top Jazz Albums`），**`Jazz → Jall／Jail` 的 OCR 形變到 1999 年還在**。
+
+⚠ **本棒實測的兩個查詢坑**（第 1301 條「短字串是別人的子字串」的續筆）：
+**查 `george howard` 在 1999 年命中的全是 Rykodisc 的新任總裁（同名不同行業，薩克斯手 1998-03-22 已過世）**；
+**查 `norby` 命中的是經紀人 Norby Walters。**
+
+**到此合計覆蓋：Billboard 1955→1999 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。2000–2001 年兩刊都還沒有人掃。**
+
+## 2026-09-18 再追加（c-156 **b 組**策展層自抓：**Billboard 2000 年全年**）
+
+**c-156 b 組 22 筆裡有 21 筆的年份落在 2000**（Dianne Reeves《In the Moment》、Kurt Elling《Live in Chicago》、
+Medeski Martin & Wood《The Dropper》與《Tonic》、Brian Blade Fellowship《Perceptual》、Jason Moran《Facing Left》、
+Joe Lovano《52nd Street Themes》、Greg Osby《The Invisible Hand》、Charlie Hunter 同名盤、Ronny Jordan《A Brighter Day》、
+Chucho Valdés《Live at the Village Vanguard》、Everette Harp《For the Love》等），
+**而此前 repo 的覆蓋是「Billboard 1955→1999 全年 ＋ 2002 全年」——2000 與 2001 兩年都沒有人掃**（c-155 b 第 1362 條末段已點名），因此自抓一份：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2000-ocr.txt.gz` | **2.1 MiB 壓縮 / 4.9 MiB 原文** | **2000-01-08 → 2000-12-30，共 52 期，零 FETCH-FAIL、零 PARSE-FAIL** | **500** | **2000-01-01（探測回 404，2000 年第一期就是 01-08）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- **文字層是 PDF 內嵌文字，用 `pypdf`（容器內已有 6.16.2）逐頁 `extract_text()`；4 shard 並行，全年含下載約十分鐘。**
+
+⚠ **2000 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/00s/2000/`（與 2002 年同形，不是 `90s/`）**，
+**全年 52 期毫無例外都是 `BB-YYYY-MM-DD.pdf`（週六）**。
+**抓法沿用 c-155 b（第 1362 條）的「枚舉當年所有週六 ＋ `Range: bytes=0-64` 探測」**——
+**索引頁仍然回 403，本棒沒有再試**；**枚舉 2000 年全部 53 個週六，52 個回 `206`、只有 `2000-01-01` 回 404**，
+**並先用已知的 `BB-1999-01-16` 驗證過檔名形狀才跑目標年。**
+⚠ **2000 年是 52 期（1999 年是 51 期、1997 是 51、1998 是 51）——每年都要自己數。**
+
+⚠ ⚠ **關鍵字集要分兩級，這是本棒踩到並修掉的坑**：
+**第一版把 `elling`／`tonic`／`moran`／`shim`／`for the love` 這類短字串與通用詞平等對待，命中頁一口氣衝到 2,030 頁、原文 20 MB**
+（`elling` 命中 `selling`／`telling`，`tonic` 命中大量無關字）。
+**改成兩級之後降到 500 頁**：
+- **A 級（直接收）**：`blue note` 與五種 OCR 形變（`blue nole`／`slue note`／`bine note`／`blue nate`／`bkie note`）、
+  `top jazz`／`top jall`／`top jail`／`jazz albums`／`jall albums`／`contemporary jazz`／`contemporary jall`／`traditional jazz`、
+  `lundvall`／`cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／`metro blue`／`somethin' else`、
+  **人名全名**（`boltro`／`dorough`／`dianne reeves`／`everette harp`／`mark shim`／`three sounds`／`jackie mclean`／`joe lovano`／`lovano`／
+  `greg osby`／`\bosby\b`／`ronny jordan`／`chucho`／`vald[eé]s`／`eliane elias`／`kurt elling`／`medeski`／`stefon harris`／`jason moran`／
+  `frishberg`／`brian blade`／`gene harris`／`charlie hunter`）、
+  **盤名中較獨特的那些**（`village vanguard`／`turbulent flow`／`invisible hand`／`52nd street themes`／`too much coffee`／`brighter day`／
+  `facing left`／`the dropper`／`it club`／`live in chicago`）、
+  **目錄號片段**（`96667`／`20134`／`20208`／`20730`／`20827`／`22211`／`22841`／`22978`／`23403`／`23571`／`23884`／`23997`／
+  `25271`／`25450`／`25494`／`5232732`／`65391`／`525271`／`523342`／`33422`）。
+- **B 級（同頁另有 `blue note` 或爵士榜名才收）**：`road runner`／`for the love`／`in the moment`／`nature boy`／`new directions`／
+  `perceptual`／`who's on first`／`everything i love`／`out takes`／`tonic`／`lighthouse`。
+**→ 給後批：抓完先看命中頁的量級。1999 年 338 頁、2000 年 500 頁；若出現四位數，就是關鍵字太鬆。**
+
+⚠ **2000 年的 Billboard 仍然分兩張爵士榜**（第 879／1068 條到 2000 年仍成立）：`Top Jazz Albums` 與 `TOP CONTEMPORARY JAZZ ALBUMS`，
+**`Jazz → Jall／Jail` 的 OCR 形變到 2000 年還在。**
+
+⚠ **本棒靠這份檔拿到的關鍵證據**：
+**BB-2000-01-08 p32 的 `BLUE NOTES` 專欄（Kurt Elling《Live in Chicago》逐字 `due Jan. 11`，並列出 Von Freeman／Ed Petersen／Kahil El'Zabar／Jon Hendricks 等客座）**、
+**BB-2000-02-05 p40 的 Jackie McLean《Nature Boy》評介（逐字 `PRODUCERS: Hitoshi Namekata, Jackie McLean Blue Note 23273`）**、
+**BB-2000-04-08 p38 的 Brian Blade 整篇專欄（逐字 `\"Perceptual\" (Blue Note, April 11)` ＋七人團員名單＋Lanois 與 Joni Mitchell 參與；⚠ 同期 p4 的目錄把盤名印成 `Perpetual`）**、
+**BB-2000-06-10 p16 的 Dianne Reeves 專文與 07-29 p22 的 SPOTLIGHT 評介**、
+**BB-2000-07-01 p16 的 Jason Moran《Facing Left》街頭日（逐字 `due Tuesday (27)`）**、
+**BB-2000-09-16 p92 的 ALBUM FORECAST（同一段逐字給了《Who's on First?》與《The Dropper》的 `Oct. 24` 與 Everette Harp 的第四季檔期）**、
+**BB-2000-11-04 p26 的 MMW《The Dropper》評介（`Blue Note 22841`）**，
+**以及七張碟在 `Top Jazz`／`TOP CONTEMPORARY JAZZ`／Heatseekers／Top Independent 四張榜上的逐期名次。**
+
+⚠ **本棒實測的紙本誤讀**（第 1301 條的續筆）：**查 `dorough` 在 2000 年命中的絕大多數是 Backstreet Boys 的 Howie Dorough**；
+**查 `everything i love` 命中的是 George Strait 單曲的出版商欄（同名的音樂出版公司）**；
+**`Stefon Harris` 在 2000-04-22 p12 被印成 `Stefan Harris`。**
+
+**到此合計覆蓋：Billboard 1955→2000 全年 ＋ 2002 全年，Cash Box 1960-11→1996-11（停刊）。**
+⚠ **2001 年**：本棒收工時（2026-09-18 18:47）工作區已出現 `billboard-bn-2001-ocr.txt.gz`（**8.4 MiB，另一個並行工作階段正在抓**）——**本棒沒有動它，那一份的期數、命中頁與關鍵字集由抓它的那一棒自己 append。**
+
+## 2026-09-18 再追加（c-157 **a 組**策展層自抓：**Billboard 2001 年全年**）
+
+**c-157 a 組 23 筆裡有 13 筆的年份落在 2001**（Mose Allison《The Mose Chronicles Vol. 1》、Pat Martino《Live at Yoshi's》、
+Kurt Elling《Flirting With Twilight》、Rodney Jones《Soul Manifesto》、Don Byron《You Are #6》、Stefon Harris & Jacky Terrasson《Kindred》、
+Chucho Valdés《Solo Live in New York》、Bebo Valdés《El arte del sabor》、Charlie Parker《The Washington Concerts》、
+Paul Jackson, Jr.《The Power of the String》、Lonnie Plaxico《Melange》、Prysm《On Tour》、Johnny Smith 那張退件），
+**而派工信逐字寫「Billboard 在 repo 裡覆蓋到 1999（＋2002 一年），2000／2001 沒人掃」**——
+**2000 年在本棒開工時已由主線／並行的一棒寫進 `billboard-bn-2000-ocr.txt.gz`（52 期），2001 年則由本棒自抓**：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2001-ocr.txt.gz` | **8.1 MiB 壓縮 / 19.3 MiB 原文** | **2001-01-13 → 2001-12-29，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **1,992** | **2001-01-06（探測回 404，2001 年第一期就是 01-13）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- ⚠ **原文 19.3 MiB 遠超過 8 MiB 門檻，依派工信的寫檔規則存成 `.txt.gz`**（壓後 8.1 MiB，低於 Cloudflare Pages 的 25 MiB 單檔上限）。
+
+⚠ **2001 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/00s/2001/`**，**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`（週六）**
+——**與派工信說的 2002 年（`Billboard/00s/2002/`、檔名全年單純 `BB-`）同形**。
+
+⚠ ⚠ **索引頁仍然 403；上一段（1999 年那一棒）立的「枚舉當年週六＋`Range: bytes=0-64` 探測」在 2001 年第二次生效**：
+**枚舉 2001 年全部 52 個週六逐一探測，51 個回 `206`、只有 `2001-01-06` 回 404。成本 52 次請求、幾秒鐘，不必解析 HTML。**
+**→ 這個方法現在有兩個成功樣本（1999、2001），可以當成 2026-09-18 之後的標準做法。**
+
+⚠ **關鍵字集是為 c-157 a 的 23 筆量身配的**（約 110 個詞 ＋ 目錄號片段
+`26801`／`27290`／`27291`／`27637`／`30754`／`36710`／`28417`／`29743`／`30499`／`31113`／`32231`／`5351932`／
+`93456`／`99749`／`22626`／`9223`／`9229`／`9230`／`31569`／`31570`／`97472`，
+另含通用詞 `blue note`／`blue nole`／`slue note`／`bine note`／`blue nate`／`bhre note`／`top jazz`／`top jall`／`top jail`／
+`jazz albums`／`jall albums`／`contemporary jazz`／`contemporary jall`／`traditional jazz`／`bruce lundvall`／`lundvall`／
+`michael cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／`metro blue`／`somethin' else`）
+——**查別的 2001 年碟一定要重抓或放寬關鍵字。**
+
+⚠ ⚠ **2001 年最有用的兩期**：
+**`BB-2001-06-09` p53 是 Blue Note 的全版廣告**，逐字列出兩欄「LOOK FOR NEW ALBUMS LATER IN 2001 FROM」名單
+（BOBBY MCFERRIN／KURT ELLING／GREG OSBY／JASON MORAN／PAT MARTINO／**JACKY TERRASSON & STEFON HARRIS**／RENEE ROSNES／DIANNE REEVES；
+CHARLIE HUNTER／RODNEY JONES／RONNY JORDAN／DR. JOHN／CALLE 54 soundtrack／GONZALO RUBALCABA），同頁有 `THE FINEST IN LATIN JAZZ SINCE 1939` 與該年葛萊美得獎標記；
+**`BB-2001-02-10` p81 是再發專欄**，逐字給出 Charlie Parker《Washington Concerts》(April 10)、Django Reinhardt《All Star Sessions》(June 5)、
+Count Basie《Breakfast Dance And Barbecue》與 Sarah Vaughan《Sweet & Sassy》(July 3) 的街頭日。
+**另 `BB-2001-01-13` p84 是第 43 屆葛萊美完整提名名單。**
+
+⚠ **2001 年 Billboard 的爵士欄仍分兩張榜**：`Top Jazz Albums` 與 `Top Contemporary Jazz Albums`（**隔週刊登**），**`Jazz → Jall／Jail` 的 OCR 形變到 2001 年還在**。
+
+⚠ **本棒實測的五個查詢坑**：查 `martino` 命中 Ewa Martinoff／Mike Martinovich／捷克作曲家 Bohuslav Martinů；
+查 `kindred` 七處裡六處是 `kindred spirit` 或 R&B 二人組 Kindred；查 `melange` 命中的是評介裡當普通名詞用的 `melange`；
+查 `elling` 大量命中 `selling`；查 `don byron` 命中鄉村製作人 `Byron Gallimore`。
+
+**到此合計覆蓋：Billboard 1955→2002 全年（2000 與 2001 補齊後已無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-158 **a 組**策展層自抓：**Billboard 2003 年全年**）
+
+**c-158 a 組 23 筆裡有 8 筆的年份落在 2003**（Norah Jones《Live in New Orleans》、Ron Carter《The Golden Striker》、
+Stefon Harris《The Grand Unification Theory》、Flavio Boltro《40°》、Chucho Valdés《New Conceptions》、
+Paul Jackson, Jr.《Still Small Voice》、Emmanuel Pahud & Jacky Terrasson《Into the Blue》、
+＋年份改判成 2003 的 Soulive 同名現場盤），**而派工信逐字寫「紙本在 repo 裡覆蓋 Billboard 1955→2002 全年無缺口（2003 沒人掃）」**
+——2003 年由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2003-ocr.txt.gz` | **3.2 MiB 壓縮 / 7.3 MiB 原文** | **2003-01-11 → 2003-12-27，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **763** | **2003-01-04（探測回 404，2003 年第一期就是 01-11——與 1999／2001 同形）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- 原文 7.3 MiB 未達 8 MiB 門檻，**仍依既有慣例存成 `.txt.gz`**（壓後 3.2 MiB）。
+
+⚠ **2003 年的路徑與檔名（本棒實測）**：**目錄是 `Billboard/00s/2003/`**，**全年 51 期毫無例外都是 `BB-YYYY-MM-DD.pdf`（週六）**
+——**與 2001／2002 完全同形，派工信說的「2003 要自己抓時可比照試」成立。**
+⚠ ⚠ **索引頁仍然 403，「枚舉當年週六＋`Range: bytes=0-64` 探測」第三次生效**（前兩次是 1999、2001）：
+**枚舉 2003 年全部 52 個週六逐一探測，51 個回 `206`、只有 `2003-01-04` 回 404，總量 644.7 MiB。成本 52 次請求、數秒。**
+**→ 這個方法現在有三個成功樣本，維持標準做法。**
+
+⚠ **關鍵字集是為 c-158 a 的 23 筆配的**（約 75 個詞 ＋ 目錄號片段
+`90832`／`32498`／`41820`／`40496`／`92602`／`57257`／`42805`／`90084`／`311340`／`80609`／`5806092`／`90431`／
+`35985`／`39838`／`40668`／`57189`／`38564`／`35072`／`35869`／`35870`／`35986`／`34595`／`40622`／`40537`／`35565`／
+`5425782`／`557422`，另含通用詞 `blue note`／`blue nole`／`slue note`／`bine note`／`blue nate`／`bhre note`／
+`top jazz`／`top jall`／`top jail`／`jazz albums`／`jall albums`／`contemporary jazz`／`contemporary jall`／
+`traditional jazz`／`bruce lundvall`／`lundvall`／`michael cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／
+`metro blue`／`somethin' else`／`connoisseur`）——**查別的 2003 年碟前先確認關鍵字夠不夠；通用詞 `blue note` 一條就吃下大半命中頁。**
+
+⚠ ⚠ **2003 年最有用的兩期**：
+**`BB-2003-05-31` p75 是 Blue Note 的全版廣告**（社史口吻的整頁文案），逐字分成兩欄——
+「OUT NOW... SCOLOHOFO／SOULIVE／DIANNE REEVES *A Little Moonlight*／**RON CARTER *Golden Striker***／
+ERIK TRUFFAZ *The Walk of the Giant Turtle*／KURT ELLING *Man in the Air*」與
+「AND ON THE HORIZON, NEW ALBUMS FROM... **STEFON HARRIS *The Grand Unification Theory***／GREG OSBY *St. Louis Shoes*／
+**JACKY TERRASSON *Smile***／MARTIAL SOLAL／JOE LOVANO *On This Day*／NORAH JONES／CASSANDRA WILSON／VAN MORRISON／
+TERENCE BLANCHARD／PAT MARTINO／**CHUCHO VALDÉS**／**PAUL JACKSON, JR. *Still Small Voice***／JASON MORAN／MADLIB *Shades of Blue*」，
+同頁逐字寫該年「received nine GRAMMYs」與 Down Beat／JazzTimes 的 LABEL OF THE YEAR；
+**`BB-2003-04-19` p30 是爵士評介頁**，逐字給出 Soulive 同名盤的 `Blue Note 7243 5 42805 0 4 RELEASE DATE: April 8`。
+**另 `BB-2003-04-26` p17 是 EMI 集團（Angel／Manhattan／Blue Note 三家合打）的整頁藝人名單廣告**——
+⚠ **那一頁只列藝人不列專輯、而且混了 Perlman／Domingo 等古典藝人，不能拿來當「Blue Note 把某張碟當自家發行」的證據**（第1445條）。
+
+⚠ **2003 年 Billboard 的爵士欄仍分兩張榜**（`Top Jazz Albums` 與 `Top Contemporary Jazz Albums`），
+**`Jazz → Jall／Jail` 的 OCR 形變到 2003 年還在**；**另有 `Top Music Videos` 榜**（本棒靠它判掉 Norah Jones 的純影音 DVD，見 c-158 rulings 第1504條）。
+
+⚠ **本棒實測的查詢坑**：查 `doky` 在 2003-04-05 p50 命中的是 **Niels Lan Doky**（Chris Minh Doky 的兄長）與 Gino Vannelli 的合作報導；
+查 `ron carter` 大量命中 **Aaron Carter**（`aaron carter` 內含 `ron carter`）；查 `ferrell` 命中的多半是作曲人欄的 `E. Ferrell`；
+查 `boltro`／`perko`／`huchard`／`pahud`（本碟）皆 0 頁。
+
+**到此合計覆蓋：Billboard 1955→2003 全年（2003 補齊後仍無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+---
+
+## `billboard-bn-2004-ocr.txt.gz`（c-158 b 組 2026-09-18 新抓）
+
+- **範圍**：Billboard 2004 全年，**枚舉 52 個週六逐一 `Range: bytes=0-64` 探測**，
+  **51 期回 206、只有 `BB-2004-01-03` 回 404**（與 2003 年缺 `2003-01-04`、2001 年缺 `2001-01-06` 同一個形狀：**元旦那週的第一期在 worldradiohistory 上普遍不存在**）。
+- **目錄與檔名**：`Billboard/00s/2004/`，**全年檔名單純 `BB-YYYY-MM-DD.pdf`**，與 2001／2002／2003 同形。
+  **→「枚舉當年週六＋Range 探測」現在有 1999／2001／2003／2004 四個成功樣本，可視為標準做法。**
+- **命中頁 2,524 頁**，解壓後 22 MB，**已依規定存成 `.txt.gz`（`gzip -9`，9.4 MB）**。
+- **⚠ 抽文字不是 OCR**：本棒用 **`pymupdf`（`pdftotext` 這台機器沒有）** 逐頁 `get_text()`，
+  **2004 年的 Billboard PDF 本身就帶文字層，抽出來比掃描 OCR 乾淨得多**（`Jazz → Jall／Jail` 那種形變在 2004 年幾乎不見了）。
+  **整年 51 期下載＋抽文字不到一分鐘**，成本遠低於預期——**2005 以後要抓可以比照**。
+- **關鍵字集**（約 90 個）：通用詞（`blue note` 與六種形變／`top jazz`／`jazz albums`／`contemporary jazz`／
+  `bruce lundvall`／`michael cuscuna`／`toshiba emi`／`tocj`／`capitol jazz`／`somethin' else`／`metro blue`）
+  ＋ c-158 b 的藝人名 ＋ **目錄號片段 `97683`／`97684`／`866472`／`873370`／`4738192`／`94807`／`94808`／`73344`／`73345`／`41779`／`95966`／`66225` 等**。
+  **查別的 2004 年碟要重抓或放寬關鍵字。**
+- **⚠ 2004 年最有用的四處**：
+  **`BB-2004-01-17` p29 的 VITAL REISSUES** 給出 Miles Davis《Birdland 1951》的 `RELEASE DATE: Jan. 27` 與逐字
+  「two of the three sets as bootlegs… is **officially issued for the first time**」（本棒第 1553 條的判準依據）；
+  **`BB-2004-02-21` p22 的爵士專欄**逐字給出 Bill Charlap《Somewhere》的街頭日「which **streets March 23**」
+  並報導 Greg Osby 在 Jazz Standard 錄現場盤；
+  **`BB-2004-06-05` p29** 給出 Greg Osby《Public》的 `RELEASE DATE: June 1` 與逐軌編制線索；
+  **`BB-2004-10-23` p57 的 Global Music Pulse** 逐字「**Blue Note/EMI released** the electro-jazz pio[neer's]…」寫 Marc Moulin。
+- **⚠ 查無也要記**：`marc moulin` 只有 2 頁、`trio toykeat` **全年 0 命中**、`nicola conte` 只出現在
+  **Hits of the World 義大利榜，且廠牌欄寫 `EMI` 不是 Blue Note**（Billboard 國際榜一律寫當地公司，**不可拿來推翻零售盤廠牌欄**）。
+
+**到此合計覆蓋：Billboard 1955→2004 全年（2003 由 c-158 a 抓、2004 由 c-158 b 抓，已無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-159 **a 組**策展層自抓：**Billboard 2005 年全年**）
+
+**c-159 a 組 23 筆裡有 10 筆的年份落在 2005**（Stan Kenton《Viva Kenton!》、Rudy van Gelder 精選、Ayşe Tütüncü Trio《Panayır》、
+Booker Ervin《Tex Book Tenor》、Thelonious Monk Quartet with John Coltrane《At Carnegie Hall》、Gianluca Petrella《Indigo 4》、
+Erik Truffaz《Saloua》、Tania Maria《Intimidade》、Trio Töykeät《Wake》＋**年份改判成 2005 的 Jason Moran《Same Mother》**），
+**而 c-158 b 入庫 2004 之後的缺口正好是 2005**——由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2005-ocr.txt.gz` | **2.1 MiB 壓縮 / 4.9 MiB 原文** | **2005-01-08 → 2005-12-24，共 50 期，零 FETCH-FAIL、零 PARSE-FAIL** | **524** | **`2005-01-01`（404，與 1999／2001／2003／2004 同形：年初第一期不在站上）、`2005-12-31`（404）、⚠ `2005-03-26`（404，本棒另試 `Billboard-2005-03-26.pdf` 也 404，前後兩期 03-19／04-02 都在——**這是一期真的缺檔，不是命名問題**）** |
+
+- **格式與前幾份相同**：每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- ⚠ **依第 1542 條用 `pymupdf` 抽文字層、沒有跑 OCR**：**2004 年起的 Billboard PDF 自帶文字層**，全年 50 期下載＋抽字**不到一分鐘**。
+- 目錄是 `Billboard/00s/2005/`、檔名一律 `BB-YYYY-MM-DD.pdf`（**週六**；2005 年的週六是 01-01、01-08…12-31）。
+  ⚠ **索引頁仍 403，「枚舉當年週六＋`Range: bytes=0-64` 探測」第四次生效**（前三次是 1999／2001／2003，c-158 b 的 2004 是第四次，本棒是第五次）。
+
+⚠ **關鍵字集是為 c-159 a 的 23 筆配的**（約 90 個詞 ＋ 目錄號片段 `71780`／`71781`／`76852`／`77102`／`78213`／`78215`／`78602`／
+`81832`／`91717`／`91950`／`95633`／`97353`／`97354`／`5788252`／`597756`／`5977562`／`875248`／`39698`／`079921`／`11439`／`11440`／
+`35173`／`35174`／`39277`／`46446`／`51935`／`335939`／`67365`／`84314`，另含通用詞 `blue note` 的六種 OCR 形變、
+`top jazz`／`top jall`／`top jail`／`jazz albums`／`contemporary jazz`／`traditional jazz`／`lundvall`／`cuscuna`／`tocj`／
+`somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／`rudy van gelder`／`van gelder`／`tone poet`）
+——**查別的 2005 年碟前先確認關鍵字夠不夠**。
+
+⚠ ⚠ **2005 年最有用的三處**：
+**`BB-2005-10-01` p64 的爵士評介**逐字給出 Monk／Coltrane 卡內基廳盤的
+「Producers: T.S. Monk, Michael Cuscuna Blue Note/Thelonious Records **Release Date: Sept. 27** ... **Discovered only recently, this 1957 concert**」；
+**`BB-2005-08-27` p11 的 BET Jazz 全版廣告**逐字「**In January of this year, a landmark Jazz discovery was made when tapes of the seminal
+Carnegie Hall performance were found in the Library of Congress**」（**判 (甲) 未發行的決定性一句**）；
+**`BB-2005-02-05` p31 的爵士評介**逐字「JASON MORAN Same Mother PRODUCER: Jason Moran Blue Note 7243 5 71780 **RELEASE DATE: Feb. 1**」，
+同年 `BB-2005-01-08` p17 的前瞻與 `BB-2005-02-19` p10 的專訪各再給一次（**把 MB／Discogs 的 2004 改判成 2005**）。
+
+⚠ ⚠ **本棒在 2004 那一份上抓到一個掃描層面的坑，寫在這裡給所有後批**：
+**`BB-2004-05-22.pdf` 的頁數是 136（一般一期約 72–100 頁），實際是兩期合訂**——
+**約第 73 頁起是 2004 年 10 月 23 日那一期**（p81 與 p124 的榜頭逐字印 `OCTOBER 2004 ... 23`，內容是 9 月新發行的唱片）。
+**`BB-2004-10-23.pdf` 另有獨立檔（80 頁）**。**→ 引用 `BB-2004-05-22` 的高頁碼時，日期要改寫成 2004-10-23，否則會把 9 月發行的碟寫成 5 月就上榜。**
+
+⚠ **2005 年 Billboard 的爵士欄仍分兩張榜**（`Top Jazz Albums` 與 `Top Contemporary Jazz Albums`），`Jazz → Jall／Jail` 的 OCR 形變仍在。
+⚠ **本棒實測的查詢坑**：查 `carnegie hall` 大量命中 Jussi Björling 的 1955 獨奏會復刻與波蘭榜的 `Adam Makowicz & Leszek Możdżer Live at Carnegie Hall`；
+查 `coltrane` 常命中 **Ravi Coltrane**；查 `wake` 命中 Bright Eyes《I'm Wide Awake》；查 `paseo` 命中哥倫比亞 vallenato 的次類型名與巴塞隆納的街名。
+⚠ **查無也要記**：`toykeat`／`tania maria`／`intimidade`／`tutuncu`／`panayir`／`perko`／`booker ervin`／`tex book`／`viva kenton`／`central park north`
+**在 2004／2005 兩年皆 0 命中**；`rubalcaba` 兩年只有兩則側手報導、`petrella` 只有一則音樂節現場報導——**這幾張的正文不得引用任何榜位或評介。**
+
+**到此合計覆蓋：Billboard 1955→2005 全年（2003 由 c-158 a、2004 由 c-158 b、2005 由 c-159 a 抓，仍無斷點；⚠ 2005-03-26 一期站上缺檔），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-159 **b 組**策展層自抓：**Billboard 2006 年全年**）
+
+**c-159 b 組 22 筆裡有 15 筆的年份落在 2006**，而 a 組入庫 2005 之後的缺口正好是 2006——由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2006-ocr.txt.gz` | **1.1 MiB 壓縮 / 2.6 MiB 原文** | **2006-01-07 → 2006-12-23，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **303** | **只有 `2006-12-30`（404）——與 2003 缺 01-04、2004 缺 01-03、2005 缺 01-01／12-31 同形** |
+
+- **格式、目錄與檔名與前幾份完全相同**：`Billboard/00s/2006/`、`BB-YYYY-MM-DD.pdf`（週六）；
+  每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+- ⚠ **照第 1542 條用 `pymupdf` 抽文字層、沒有跑 OCR**（**這台機器沒有 `pdftotext`，不要白試**）；
+  **索引頁仍 403，「枚舉當年週六＋`Range: bytes=0-64` 探測」在本棒是第六次生效**（1999／2001／2003／2004／2005／2006）。
+  **全年 51 期下載＋抽字不到一分鐘。**
+- **⚠ 本棒也獨立跑了一次 2005 全年**，探測結果與 a 組完全相同（**50 期 206、`2005-01-01`／`2005-03-26`／`2005-12-31` 三期 404**；
+  另試過 `BB-2005-03-26-OCR.pdf`／`Billboard-2005-03-26.pdf`／`BB-2005-03-26a.pdf` 三種檔名變體皆 404，**確認是站上真的缺檔**）。
+  **本棒用到的 2005 年八處證據逐一在 a 組的 `billboard-bn-2005-ocr.txt.gz` 裡 `zgrep` 得到**
+  （`Release Date: May 10`／`Release Date: Aug. 2`／`FLOW BLUE NOTE`／`HOUSE OF TRIBES`／`Everything's OK` 皆命中）
+  ——**故本棒沒有另存第二份 2005 檔，既有檔一字未動。**
+- **關鍵字集**（約 110 個）：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／
+  `contemporary jazz`／`traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`toshiba emi`／`somethin' else`／`capitol jazz`／
+  `metro blue`／`connoisseur`／`manhattan records`／`emi music canada`）
+  ＋ c-159 b 的 22 個藝人名與盤名
+  ＋ **目錄號片段 `46808`／`52340`／`78274`／`78273`／`63405`／`63406`／`74584`／`74585`／`60671`／`60672`／`77132`／`77133`／
+  `11226`／`55885`／`31260`／`55534`／`41090`／`41092`／`41094`／`43120`／`55535`／`54541`／`55643`／`63398`／`55876`／
+  `58290`／`58291`／`58296`／`58297`／`59564`／`356688`／`668932`／`52995`／`56311`／`50251`／`50254`／`67606`／`66266`／
+  `66279`／`66298`／`67885`／`67904`／`67975`**。
+  ⚠ **查別的 2006 年碟要重抓或放寬關鍵字。**
+- ⚠ ⚠ **2006 年最有用的五處，全部在 Reviews 欄的 `Release Date:` 行**——**這一段的街頭日幾乎只出在這裡**：
+  **`BB-2006-04-15` p59**（Cassandra Wilson《Thunderbird》，`Producer: T Bone Burnett｜Blue Note｜Release Date: April 4`）、
+  **`BB-2006-05-27` p50**（Dr. John《Mercernary: The Songs of Johnny Mercer》，`Blue Note｜Release Date: May23`
+  ——⚠ **這一篇印在 `POP` 欄不是 `JAZZ` 欄**）、
+  **`BB-2006-07-22` p47**（Jane Bunnett《Radio Guantanamo》，`Producer: Larry Cramer｜Blue Note /EMI｜Release Date: July 18`
+  ——⚠ **那是美版街頭日，加版早一年，見 c-159 rulings 第 1596 條**）、
+  **`BB-2006-08-05` p50**（Joe Lovano《Streams of Expression》，`Release Date: Aug. 1`）、
+  **`BB-2006-08-26` p35 的 Jazz Notes 整篇專欄**（Patricia Barber《Mythologies》，逐字「It was released as "Mythologies" **Aug. 15** on Blue Note」
+  ＋古根漢獎助的來龍去脈；⚠ **同一篇在 `BB-2006-12-16` p99 原樣重刊，不是第二個來源**）。
+  另 **`BB-2006-10-21` p87 的 Jazz Notes** 逐字給出 Stefon Harris《African Tarantella》的「released **Oct. 3** on Blue Note」與副標、三套組曲來源與卡內基廳 Zankel Hall 開季日；
+  **`BB-2005-12-17` p55** 是 2006 年葛萊美爵士類入圍名單（Blanchard《Flow》與 Marsalis《House of Tribes》同時列名）。
+- ⚠ ⚠ **這兩年 Blue Note 沒有全版廣告**：2005＋2006 兩年 724 頁命中頁裡，`www.bluenote.com` 只出現 1 次、
+  `BLUE NOTE RECORDS` 的整頁廠牌廣告 **0 次**——**c-158 b 交接的第 3 句（「每年先去找 Blue Note 的全版廣告」）在這一段失效**，
+  **2001／2003 那種一頁解掉十張的廣告頁不再出現，街頭日改到 Reviews 欄去找**（2005–06 兩年合計撈到 **7 個街頭日**）。
+- ⚠ **數字形變要注意**：`Thunderbird BLUE NOTE 63398` 在 `BB-2006-11-11` p95 被讀成 **`63390`**（8→0）；
+  `Jazz → Jall／Jail` 在 2006 年仍偶有。
+- ⚠ **查無也要記（2005＋2006 兩年皆 0 命中）**：`wood brothers`／`ways not to lose`／`george robert`／
+  `holiday for skins`／`manhattan project`／`do the boomerang`／`junior walker`／`radio guantanamo`（2005 年 0、2006 年 1）；
+  **`wingspan` 在 2005 年的 4 次命中全部是 Paul McCartney 的《Wingspan (Hits and History)》**（盤名假陽性，第 1250 條）；
+  **`rubalcaba` 兩年只有 2 頁、且都是 Ignacio Berroa《Codes》的評介（他在那裡是製作人）**；
+  **`marc moulin` 唯一 1 頁（`BB-2006-03-11` p47）寫的是 Telex 的《How Do You Dance?》，不是《Placebo Years 1971-1974》**；
+  **`boomerang` 唯一 1 次命中是 `BB-2006-08-05` p49 Gainsbourg 致敬盤裡的〈Boomerang 2005〉。**
+- ⚠ **2006 年 Billboard 的榜單廠牌欄開始統一加通路碼 `/BLG`**（The Blue Note Label Group），
+  例如 `MYTHOLOGIES BLUE NOTE 59564 /BLG`、`MERCERNARY BLUE NOTE 54541 /BLG`、`AFRICAN TARANTELLA BLUE NOTE 41090/BLG`
+  ——**那是通路代碼，不是第 1540 條說的「國際榜當地公司欄」，不影響 (戊) 前置閘。**
+
+**到此合計覆蓋：Billboard 1955→2006 全年（2005 由 c-159 a 抓、2006 由 c-159 b 抓；2005 缺 3 期、2006 缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-160 **a 組**策展層自抓：**Billboard 2007 年全年**）
+
+**c-160 a 組 23 筆裡有 12 筆的年份落在 2007**，而 c-159 b 入庫 2006 之後的缺口正好是 2007——由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2007-ocr.txt.gz` | **1.8 MiB 壓縮 / 4.2 MiB 原文** | **2007-01-06 → 2007-12-22，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **510** | **只有 `2007-12-29`（404）——與 2003 缺 01-04、2004 缺 01-03、2005 缺 01-01／03-26／12-31、2006 缺 12-30 同形** |
+
+- **格式、目錄與檔名與前幾份完全相同**：`Billboard/00s/2007/`、`BB-YYYY-MM-DD.pdf`（週六）；
+  每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁不是全文。**
+  ⚠ **但存的是命中頁的「全文」**——任何印了 `BLUE NOTE` 的榜單或評介頁都會整頁收進去，所以查關鍵字集以外的 2007 年藝人仍有機會命中。
+- ⚠ **照第 1542 條用 `pymupdf` 抽文字層、沒有跑 OCR**（**這台機器沒有 `pdftotext`，不要白試**）；
+  **索引頁仍 403，「枚舉當年週六＋`Range: bytes=0-64` 探測」在本線是第七次生效**（1999／2001／2003／2004／2005／2006／2007）。
+  **全年 51 期下載＋抽字約四分鐘。單檔 1.8 MiB，遠低於 Cloudflare Pages 的 25 MiB 上限。**
+- **⚠ 2006 年沒有重抓**（第 1280 條）：c-159 b 已入庫 `billboard-bn-2006-ocr.txt.gz`。
+  **本棒直接 `zgrep` 既有檔，本組 11 張 2006 年的碟只有 Andrew Hill《Time Lines》有命中（街頭日＋兩期榜位＋一篇專訪），
+  其餘 10 張與 6 個目錄號片段全部 0——那是真的 0，不是關鍵字集的問題（既有檔存的是命中頁全文）。既有檔一字未動。**
+- **關鍵字集**（約 120 個）：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／`contemporary jazz`／
+  `traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`toshiba emi`／`somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／
+  `manhattan records`／`emi music canada`／**`blue note label group`／`/blg`／`emi jazz`**）
+  ＋ c-160 a 的 23 個藝人名與盤名 ＋ c-159 b 的藝人名（供交叉驗證）
+  ＋ **目錄號片段 `62711`／`63522`／`70491`／`74516`／`74625`／`82035`／`82162`／`76839`／`84420`／`69284`／`70532`／`70562`／
+  `35170`／`94943`／`503258`／`494265`／`92730`／`556112`／`91185`／`70281`／`75544`／`85190`／`85192`／`70171`／`66674`**。
+  ⚠ **查別的 2007 年碟要重抓或放寬關鍵字。**
+- ⚠ ⚠ **2007 年對本線的產出比 2006 年更差，要先講清楚**：**c-160 a 收下的 18 張只有 3 張從紙本拿到證據（2 個街頭日都出在 2006 那一格，
+  12 張 2007 年的碟只有 1 張有命中）。**`Reviews` 欄與 `Release Date:` 行每週都在（例 `BB-2007-01-13` 逐字
+  `CHARLES TOLLIVER With Love Producers: Charles Tolliver, Michael Cuscuna Blue Note Release Date: Jan. 16`），
+  **但版位被當年主推盤佔滿，歐洲分支／Connoisseur 限量線／smooth jazz／數位限定的碟一張都沒被評介到。**
+- ⚠ ⚠ **2007 年最有用的四處全部是榜單，不是評介**：
+  **`BB-2007-02-17` p42 The Billboard 200 逐字 `NORAH JONES BLUE NOTE 74516/BLG` ＋ `#1 3WKS`**（《Not Too Late》2007 全年 23 期在榜，
+  是 c-160 a 唯一的年份改判 2006→2007 的關鍵證據之一）；
+  **`BB-2007-04-28` p87／`05-12` p49／`05-26` p53／`06-09` p73／`07-21` p55／`08-04` p53／`08-18` p59 的 Top Contemporary Jazz Albums
+  逐字 `JEFF LORBER HE HAD A HAT BLUE NOTE 55611 /BLG`**（7 期）；
+  ⚠ **`BB-2007-11-24` p69 逐字 `DAVE KOZ MEMORIES OF A WINTER'S NIGHT **CAPITOL 05961**`**——**這一行證明該碟 2007 年的實體盤是 Capitol 不是 Blue Note**；
+  ⚠ **`BB-2007-09-22` p86／`10-06` p56／`10-20` p98／`11-03` p66 的 Top World Albums 逐字
+  `ANOUSHKA SHANKAR /KARSH KALE BREATHING UNDER WATER **MANHATTAN 09539 /BLG**`**——**這一行證明該碟的 imprint 是 Manhattan Records，c-160 a 據此退件。**
+- **另有 Andrew Hill 的兩處身後紀錄**：**`BB-2007-05-12` p17 的 Boosey & Hawkes 悼念廣告逐字
+  「We mourn the loss of our friend and colleague ANDREW HILL jazz pianist and composer 1931 - 2007」**、
+  **同期 p54 的訃聞逐字「Andrew Hill, 75, jazz artist, died of lung cancer April 20 at his home in Jersey City, N.J. ...
+  From the first significant album in his discography (\"Black Fire,\" 1963) to the last (\"Time Lines,\" 2006)」。**
+- ⚠ **查無也要記（2006＋2007 兩年皆 0 命中）**：`artist in residence`／`grant green`／`mozambique`／`minh doky`／`nomad diaries`／
+  `traincha`／`oosterhuis`／`paolo fresu`／`uri caine`／`truffaz`／`face a face`／`zaryan`／`picking up the pieces`／`gwyneth`／`wardrobe`／
+  `lena horne`／`seasons of a life`／`hank jones`／`dizzy's club`／`music for lovers`／`straight life`／`jimmy smith`／`alsmann`／`geheimnis`／
+  `live at birdland`／`dee barton`；
+  **`kuhn` 唯一 1 次命中是 Bill Charlap 的側寫（講 2007 年 3 月的另一檔 Birdland 駐演，不是那張 2006 年 7 月錄音的碟）**；
+  **`terrasson` 唯一 1 次命中是一篇爵士節現場評，不是《Mirror》**；
+  **`lovano` 唯一 1 次命中是 Top Jazz Albums 上的 `PAUL MOTIAN /BILL FRISELL /JOE LOVANO TIME AND TIME AGAIN ECM 008585`（別家廠牌的別張碟）**；
+  **`between me and the` 唯一 1 次命中是 Glen Hansard 的訪談句「they'll draw a line between me and the band」**（第 1250 條的盤名假陽性）。
+- ⚠ **`/BLG`（The Blue Note Label Group）在 2007 年的榜單廠牌欄已經是常態**，而且**同部門的其他 imprint 也照樣掛它**
+  （`MANHATTAN 09539 /BLG`、`NARADA JAll 37331 /BLG`）——**它是通路碼，不是 imprint，看到它不代表那張碟是 Blue Note**（c-160 rulings 第 1631／1633 條）。
+
+**到此合計覆蓋：Billboard 1955→2007 全年（2005 由 c-159 a、2006 由 c-159 b、2007 由 c-160 a 抓；2005 缺 3 期、2006 缺 1 期、2007 缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+## 2026-09-18 再追加（c-161 **a 組**策展層自抓：**Billboard 2008 年全年**）
+
+**c-161 a 組 23 筆裡有 22 筆的年份落在 2008**，而 c-160 a 入庫 2007 之後的缺口正好是 2008——由本棒自抓：
+
+| 檔 | 大小 | 期別 | 命中頁 | 缺期 |
+|---|---|---|---|---|
+| `billboard-bn-2008-ocr.txt.gz` | **1.8 MiB 壓縮 / 4.1 MiB 原文** | **2008-01-05 → 2008-12-20，共 51 期，零 FETCH-FAIL、零 PARSE-FAIL** | **505** | **只有 `2008-12-27`（404）——與 2003 缺 01-04、2004 缺 01-03、2005 缺 3 期、2006 缺 12-30、2007 缺 12-29 同形** |
+
+- **格式、目錄與檔名與前幾份完全相同**：`BB-YYYY-MM-DD.pdf`（週六）；每期 `######## BB-YYYY-MM-DD pages=N src=<url>`、
+  頁內 `===== PAGE n ===== hits=[…]`、換行摺成空白。**存的是命中頁的全文**（任何印了 `BLUE NOTE` 的榜單或評介頁都整頁收進去）。
+- ⚠ **URL 路徑在 2008 這一段改過**：`https://worldradiohistory.com/Archive-Billboard/00s/2008/BB-…` 會回 **301**，
+  **實際位置是 `https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2008/BB-YYYY-MM-DD.pdf`**——**用 `curl -L` 或跟著 redirect 抓即可，不要因為 301 就判缺期。**
+- ⚠ 照第 1542 條用 `pymupdf` 抽文字層、沒有跑 OCR（**這台機器沒有 `pdftotext`**）；「枚舉當年週六＋`Range: bytes=0-64` 探測」**在本線是第八次生效**。全年 51 期下載＋抽字約四分鐘。
+- **⚠ 2007 沒有重抓**（第 1280 條）：c-160 a 已入庫 `billboard-bn-2007-ocr.txt.gz`，本棒只 `zgrep` 既有檔（查 Kenny Burrell 與目錄號 `74906`，**0 命中**），**既有檔一字未動**。
+- **關鍵字集**（約 100 個）：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／`contemporary jazz`／
+  `traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`toshiba emi`／`somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／
+  `manhattan records`／`emi music canada`／`blue note label group`／`/blg`／`emi jazz`）＋ c-161 a 的 23 個藝人名與盤名
+  ＋ 目錄號片段 `74906`／`87848`／`89658`／`96365`／`98070`／`84185`／`07699`／`264287`／`15363`／`26225`／`28104`／`35066`／
+  `214817`／`01468`／`02465`／`04454`／`11795`／`17462`／`17465`／`2911223`／`4372626`／`09011`／`380928`。
+  ⚠ **查別的 2008 年碟要重抓或放寬關鍵字。**
+- ⚠ ⚠ **2008 年對本線的產出遠好於 2007，而且原因是國別不是年份**（第 1664 條的驗證）：**c-161 a 收下的 19 張命中 10 張，
+  十張全部是美國盤；六張歐陸盤（Buscemi、Bosso & Girotto、Alsmann、Trijntje、Truffaz、Ron Carter 日本企劃）全部 0 命中。**
+  **`Reviews` 欄的 `Release Date:` 行在 2008 年回來了**：本批就撈到四個街頭日
+  （Rubalcaba `Feb. 5`、Cassandra Wilson `June 10`、Eliane Elias `Jan. 15`、Willie Nelson & Wynton Marsalis `June 8`⚠誤植）
+  ＋ 一個發行預告（Lionel Loueke `due March 25`）。
+- ⚠ ⚠ **2008 年最有用的五處**：
+  **`BB-2008-02-23` p55 的 Chart Beat 逐字「Fifty years after it was recorded, Horace Silver's "Live at Newport Jazz '58" debuts on
+  Top Jazz Albums at No. 9, the first top 10 title for the 79-year-old jazz pioneer since 1993. The album is on Blue Note,
+  Silver's label home from 1952 to 1980.」**（**本批 (甲) 判定的第三層證據**）；
+  **`BB-2008-02-16` p65 的 JAZZ 評介逐字「GONZALO RUBALCABA Avatar｜Producer: Gonzalo Rubalcaba｜Blue Note｜Release Date: Feb. 5」**
+  （**壓過 Discogs 美版標的 `2008-05-02`**）；
+  **`BB-2008-01-12` p39 逐字「ELIANE ELIAS Something for You… Blue Note Release Date: Jan. 15」**（**美版街頭日；日版早三個月，本批據此改判年份 2008→2007**）；
+  **`BB-2008-07-26` p60 逐字「Debuting at No. 20 on the Billboard 200, "Two Men With the Blues" (Blue Note) represents Nelson's
+  highest-charting album of the Nielsen SoundScan era and Marsalis' best-charting album of his career」**；
+  **`BB-2008-02-09` p64 的 Lionel Loueke 專文逐字「Maiden Voyage: Loueke Meets His Idols On Blue Note Debut … Blue Note debut, "Karibu," due March 25」。**
+- ⚠ **榜單廠牌欄的 `/BLG` 在 2008 年仍是常態**（`BLUE NOTE 87848/BLG`、`BLUE NOTE 89658/BLG`、`BLUE NOTE 07699/BLG`、
+  `BLUE NOTE 96365 /BLG`、`BLUE NOTE 01468 /BLG`、`BLUE NOTE 98070/BLG`、`BLUE NOTE 84185 BLG`、`BLUE NOTE 11795/BLG`）
+  ——**通路碼，不是 imprint**（第 1631／1633 條）。⚠ **同一批的 Smooth Jazz 電台榜另有 `BLUE NOTE/CAPITOL` 的寫法**（Eric Darius），**同樣是通路寫法。**
+- ⚠ **查無也要記（2008 全年 0 命中）**：`burrell`（連 2007 一起查，兩年皆 0）／`buscemi`／`bisceglia`／`jazz works`／`fabrizio bosso`／`girotto`／
+  `alsmann`／`geheimnis`／`trijntje`／`oosterhuis`／`amuedo`／`ken je mij`／`truffaz`／`sly johnson`／`turrentine`／`art farmer`／`brass shout`／
+  `aztec suite`／`invisible cinema`／`jazz & bossa`；
+  **`symphonica` 的命中全部是 Hits of the World 荷蘭榜的 `PAUL DE LEEUW SYMPHONICA IN ROSSO 2007 UNIVERSAL`**；
+  **`aaron parks` 的 2 次命中是別張碟的評介句「Pianist Aaron Parks and guitarist Matthew Stevens deliver lovingly phrased solos」**；
+  **`nascimento` 的 2 次命中是別人翻唱他的〈Ponta de Areia〉**（三者皆第 1250 條的人名／盤名假陽性）。
+
+**到此合計覆蓋：Billboard 1955→2008 全年（2005 由 c-159 a、2006 由 c-159 b、2007 由 c-160 a、2008 由 c-161 a 抓；2005 缺 3 期、2006／2007／2008 各缺 1 期，其餘無斷點），Cash Box 1960-11→1996-11（停刊）。**
+
+---
+
+## 2026-09-18 再追加（c-161 **b 組**策展層自抓：**Billboard 2009 年全年**）
+
+- **檔案**：`batch-progress/enum/billboard-bn-2009-ocr.txt.gz`（**1.2 MiB 壓縮／2.7 MiB 原文**，**50 期**、**309 命中頁**、**零 PARSE-FAIL**）。
+- **格式、目錄與檔名與 2003–2008 那幾份完全相同**：`Billboard/00s/2009/`、`BB-YYYY-MM-DD.pdf`（週六）。
+- **缺 2 期**：`BB-2009-01-03`（404，**元旦那週的第一期在 worldradiohistory 上普遍不存在**，與 2001／2003／2004 同形）與 `BB-2009-12-26`（404）。
+- **抽字法**：照第 1542 條用 `pymupdf` 抽文字層，**沒有跑 OCR**；「枚舉當年週六 ＋ `Range: bytes=0-64` 探測」在本線是**第九次**生效。全年 50 期下載＋抽字約**三分半鐘**。
+- ⚠ ⚠ **本棒同時推翻了策展簡報第二節的一句話**：簡報逐字寫「**Billboard 的 worldradiohistory 檔案到 2000 年代初就不完整**」、c-161 的派工信逐字寫「2008 以後沒人抓過……主線判斷不值得為這一組抓」。
+  **實測四次 `Range: bytes=0-64` 探測，`BB-2008-08-16`／`BB-2009-03-28`／`BB-2009-09-05`／`BB-2010-01-16` 全部回 `206`**
+  ——**2008／2009／2010 的 PDF 都還在，URL 形狀與 2003–07 完全相同。**⚠ **2008 已由 c-161 a 入庫（見上一節）；2010 年以後還沒有人抓。**
+- **關鍵字集（約 90 個）**：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／`contemporary jazz`／`traditional jazz`／
+  `lundvall`／`cuscuna`／`tocj`／`toshiba emi`／`emi music japan`／`somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／
+  `blue note label group`／`/blg`／`blg`／`emi jazz`）＋ c-161 b 的 22 個藝人名與盤名
+  ＋ 目錄號片段（`10331`／`67197`／`84802`／`87102`／`91528`／`28103`／`36957`／`09878`／`93125`／`83362`／`65180`／`93875`／`49170`／`98911`／
+  `26657`／`26916`／`09172`／`49378`／`08278`／`72500`／`27906`／`46199`）。
+  ⚠ **查別的 2009 年碟要重抓或放寬關鍵字**（與 2003–08 那幾份相同的限制）。
+- ⚠ ⚠ **2009 年對本線的產出比 2007 年好得多，但差別不在年份而在國別**：**c-161 b 收下的 18 張裡 7 張有命中（5 個街頭日、4 組榜位、3 篇專文／預告／新聞），
+  而 5 張美國盤是 100% 命中、13 張歐陸／日本盤只有 1 張有命中（而且講的是別的碟）。**第 1664 條「先數清單裡有幾張美國盤，再決定要不要花時間」在本組第三次成立。**
+- ⚠ **2009 年最有用的五處**：
+  **`BB-2009-06-20` p36 的 Reviews 欄逐字「FREDDIE HUBBARD｜Without a Song: Live in Europe 1969｜Producers: Sonny Lester, Michael Cuscuna｜Blue Note｜Release Date: June 2」
+  ＋ 同頁正文逐字「the **previously unreleased** "Without a Song: Live in Europe 1969" ... **Resurrected last year from the Blue Note vaults**」**（**c-161 b 唯一一筆 (甲) 的第一層證據，rulings 第 1731 條**）；
+  **`BB-2009-03-28` p29 逐字「WYNTON MARSALIS｜He and She｜Producer: Jeff Jones｜Blue Note｜Release Date: March 24」**（另有 Top Jazz Albums 三期，廠牌欄逐字 `HE AND SHE BLUE NOTE 10331 /BLG`）；
+  **`BB-2009-06-13` p34 逐字「JOE LOVANO US FIVE｜Folk Art｜Producer: Joe Lovano｜Blue Note｜Release Date: May 19」＋「his 21st Blue Note CD」**（另有 `06-06` p61 的榜位逐字 `FOLK ART BLUE NOTE 91528 /BLG`）；
+  **`BB-2009-08-22` p32 逐字「WILLIE NELSON｜American Classic｜Producer: Tommy LiPuma｜Blue Note Records｜Release Date: Aug. 25」**
+  （另有 `BB-2009-05-23` p33 的發行預告逐字 `AUG. 25`、`BB-2009-08-29` p49 的整段分析、**Billboard 200 最高第 43 名**、Top Country Albums 四期，廠牌欄逐字 `SHANGRI-LA/BLUE NOTE 67197/BLG (17.98)`）；
+  **`BB-2009-01-17` p33 逐字「ELIANE ELIAS｜Bossa Nova Stories｜Producers: Eliane Elias, Steve Rodby｜Blue Note｜Release Date: Jan. 13」**
+  （另有 Top Jazz Albums 七期，逐字 `BOSSA NOVA STORIES BLUE NOTE 28103 /BLG`，其中 `02-28` p45 逐字 `RE-ENTRY`；⚠ **那是美版街頭日，該碟的真正首發是 2008-05-28 的日版 TOCJ-68081，見 rulings 第 1696 條**）。
+- ⚠ **查無也要記（2009 全年 0 命中）**：`onishi`／`musical moments`／`china moses`／`oosterhuis`／`traincha`／`never can say goodbye`（命中的全是 Gloria Gaynor 與 Jackson 5 的舊條目）／
+  `alsmann`／`engel oder teufel`／`fresu`／`uri caine`／`avishai`／`quasimode`／`mode of blue`／`daybreak`／`hindi zahra`／`handmade`／`this is the season`／`plays live`／`bags & suitcases`；
+  **`starke` 唯一 1 次命中是 `BB-2009-04-04` p12 的荷蘭 Edison 獎新聞逐字「EMI/Blue Note R&B singer/songwriter Sabrina Starke was best new artist」——講的是她 2009 年的前一張碟，不是 2010 年的《Bags & Suitcases》**；
+  **`chano` 唯一 1 次命中是 `BB-2009-07-04` p39 的 JVC 爵士節節目表逐字「JUNE 30: Stevie Wonder, Wynton Marsalis and the Jazz at Lincoln Center Orchestra with pianist Chano Dominguez」——講的是一場演出，不是那張 2010 年的碟**（第 1250 條「查得到人、查不到碟」）；
+  **`36957`（Freddie Hubbard 的目錄號）全年 0 命中——那張碟有評介、沒有榜位。**
+- **到此合計覆蓋：Billboard 1955→2009 全年**（2005 缺 3 期、2006／2007／2008 各缺 1 期、**2009 缺 2 期**，其餘無斷點）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2010 以後尚未抓。**
+
+---
+
+## 2026-09-19 再追加（c-162 **a 組**策展層自抓：**Billboard 2010／2011／2012 三整年**）
+
+- **檔案**：`batch-progress/enum/billboard-bn-2010-2012-ocr.txt.gz`（**3.8 MiB 壓縮／8.8 MiB 原文**，**148 期**、**939 命中頁**、**零 FETCH-FAIL、零 PARSE-FAIL**）。
+  **三年併成一個檔**（與 2003–2009 一年一檔不同），每期以 `######## BB-YYYY-MM-DD ########` 分隔。
+- ⚠ ⚠ **派工信給的 URL 是錯的，這一條要改掉**。派工信逐字寫
+  `www.worldradiohistory.com/Archive-All-Music/Billboard/10s/<年>/`——**那個目錄不存在，2010／2011／2012 三年全部回 404**。
+  **正確的目錄是 `Billboard/00s/<年>/`**：**worldradiohistory 把 2010–2019 全部放在 `00s/` 底下**
+  （實測 `00s/2010/`～`00s/2019/` 都有內容）。**c-161 b 那一節末尾寫的 `BB-2010-01-16` 探測回 206，用的就是 `00s/`，只是當時沒寫出目錄名。**
+- ⚠ ⚠ **而且 2010 年以後不能再用「枚舉當年週六」**（第 1542 條那套在 2003–2009 生效九次的方法**在這裡會漏**）：
+  **2011 只有 46 期、2012 只有 48 期，而且 2013 起檔名改成 `Billboard-BB-2013-03-09.pdf`、2014–15 起變成
+  `BB-2014-49-12-20--Double-Issue.pdf` 這種帶期號與 `Double-Issue` 的形狀。**
+  **本棒改用「抓 `https://www.worldradiohistory.com/Billboard-Magazine.htm` 這一頁的索引、用正則把 `href="Billboard/00s/201[0-2]/…pdf"` 全部撈出來」**
+  ——**148 個 URL 一次到齊、零 404。給後批：2010 年以後一律走索引頁，不要枚舉日期。**
+- **每年期數**：**2010 = 50 期、2011 = 46 期、2012 = 48 期**（另含 `BB-2010.pdf` 年終合輯、`BB-2011-BBMA.pdf`、`BB-2011-Charts.pdf`
+  與 `Billboard-Intl-Talent-Guide-2010.pdf` 等專刊，一併收進本檔）。
+- **抽字法**：照第 1542 條用 `pymupdf` 抽文字層，**沒有跑 OCR**。⚠ **148 期下載＋抽字實測不到一分鐘**
+  （比 2003–2009 的「一年約三分半鐘」快得多——**本棒六支並行、且 2010 年代的 PDF 有完整文字層**）。
+- **關鍵字集（約 70 個）**：通用詞（`blue note` 與五種 OCR 形變／`/blg`／`top jazz`／`top jall`／`top jail`／`jazz albums`／
+  `contemporary jazz`／`traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`toct`／`toshiba emi`／`emi music japan`／
+  `somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／`emi jazz`／**`capitol vaults`／`mosaic select`**）
+  ＋ c-162 a 的 23 個藝人名與盤名 ＋ 目錄號片段（`57186`／`58320`／`27560`／`88508`／`62682`／`08278`／`91739`／`94954`／
+  `62975`／`07145`／`07146`／`71106`／`79125`／`26725`／`96388`／`01565`／`05861`／`95601`／`67994`／`90020`／`49549`／`41572`／
+  `40725`／`57615`／`79559`）。⚠ **查別的 2010–12 年碟要重抓或放寬關鍵字。**
+- ⚠ ⚠ **產出：c-162 a 收下的 18 張裡 7 張有命中**（**不是 6 張**——見 rulings 第 1749／1752 條）。
+  **7 張全部是美國盤或美國發行的碟，11 張歐陸／以色列／日本／芬蘭／波蘭盤 100% 零命中**
+  ——**第 1664 條「先數清單裡有幾張美國盤，再決定要不要花時間」在本組第四次成立。**
+- ⚠ **2010–2012 年最有用的五處**：
+  **`BB-2011-04-16` p26 Reviews 欄逐字「AMBROSE AKINMUSIRE｜When the Heart Emerges Glistening｜Producers: Ambrose Akinmusire, Jason Moran｜Blue Note Records｜Release Date: April 5」**
+  （**第 1487 條的正例：紙本直接給出街頭日**；另有 `BB-2010-07-17` 的整頁人物特寫逐字「will "tour right into the studio" this fall to record Akinmusire's major-label debut for EM l's Blue Note Records」
+  ＋ Top Jazz Albums `04-23` 逐字 `WHEN THE HEART EMERGES GLISTEN BLUE NOTE 70619/BLG` 空降第 3、`04-30` 第 4）；
+  **Jason Moran《Ten》Top Jazz Albums 逐字 `TEN BLUE NOTE 57186/BLG`**（`BB-2010-07-10`／`07-17`／`07-24`／`07-31`／`08-07` 五期，另 `BB-2011-04-30` 回榜）；
+  **Cassandra Wilson《Silver Pony》逐字 `SILVER PONY OJAH /BLUE NOTE 29752/BLG`**（`BB-2010-11-27`／`BB-2011-01-29`／`02-05`，另 `BB-2010.pdf` 年終榜；⚠ **廠牌欄第一格是 `OJAH`——她自己的 imprint，`Blue Note` 在第二格**）；
+  **Stacey Kent《Raconte-moi…》逐字 `RACONTE-MOI... TOKEN /BLUE NOTE 26823/BLG`**（`BB-2010-04-10`／`06-19`／`06-26`、`BB-2011-06-25`／`07-02`／`07-09` 共六期；⚠ **第一格是 `TOKEN`＝Token Productions，另一期逐字 `TOKEN /BLUE NOTE DIGITAL EX/BLG`**）；
+  **Joe Lovano Us Five《Bird Songs》逐字 `BIRD SONGS BLUE NOTE 05861 /BLG`**（`BB-2011-01-29`／`02-05`／`02-19`，另 `BB-2012-01-07` p45 的年度樂評選逐字「Bird Songs｜Joe Lovano/Us Five｜Blue Note」）。
+  **另有 Willie Nelson & Wynton Marsalis《Here We Go Again》逐字 `HERE WE GO AGAIN BLUE NOTE 96388/BLG`**（`BB-2011-04-16`→`09-24` 十餘期，掛名欄逐字 `FT. NORAH JONES`）
+  與 **Lionel Loueke《Mwaliko》逐字 `MWALIKO BLUE NOTE 88508/BLG`**（`BB-2010-03-27`／`04-03`）。
+- ⚠ **查無也要記（2010–2012 三年 0 命中）**：`charlap`（唯一 1 次是 `Billboard-Intl-Talent-Guide-2010` 的經紀名錄逐字「BILL CHARLAP TRIO Label: Blue Note. BA:Ted Kurland Associates」，**不是碟**）／
+  `rosnes`／`double portrait`／`truffaz`／`avishai`（唯一 1 次同樣是 Intl Talent Guide 名錄）／`seven seas`（5 次命中全是 Sammy Kaye 1949 年的歌與日本 King Record 的 `Seven Seas` 廠牌）／`duende`／`hershkovits`／
+  `zaryan`／`luminous things`／`trijntje`／`oosterhuis`／`sundays in new york`／`alsmann`／`gare du nord`／`lilywhite`／`quasimode`／`magic ensemble`／`dreamer in concert`／`mwaliko`（盤名本身 OCR 成 `Mi,tAl..llO`／`MWJILl•O`，**只有目錄號 `88508` 抓得到**）；
+  **`perko` 的 2 次命中都是 `RON PERKOV` 這個別人的名字**（第 1250 條的假陽性）。
+- ⚠ ⚠ **三筆退件的紙本全部 0**：**`capitol vaults`／`mosaic select`／`music for lovers`／`big john patton`／`hutcherson`（唯一 1 次是別的碟）三年皆 0**
+  ——**第 1741 條那兩套「數位庫藏套裝」在 Billboard 上完全沒有痕跡，紙本這一層對它們無效。**
+- **到此合計覆蓋：Billboard 1955→2012**（2005 缺 3 期、2006／2007／2008 各缺 1 期、2009 缺 2 期；**2010–2012 以索引頁為準、無缺**）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2013 以後尚未抓，且檔名形狀已變，見上。**
+
+## Billboard 2013 全年（2026-09-19，c-162 策展 b 新抓入庫）
+
+- **檔案**：`batch-progress/enum/billboard-bn-2013-ocr.txt.gz`（**1.19 MiB 壓縮／2.6 MiB 原文**，**50 期、384 命中頁、零 FETCH-FAIL、零 PARSE-FAIL**）。
+- **目錄仍是 `Billboard/00s/2013/`**（照 c-162 a 第 1749 條的訂正；派工信與策展簡報寫的 `10s/<年>/` 不存在，全回 404）。
+- ⚠ ⚠ **2013 的檔名有三種形，一次抓不齊，必須走索引頁**：
+  - **常態 47 期**：`Billboard-2013-MM-DD.pdf`
+  - ⚠ **`Billboard-BB-2013-03-09.pdf`**（多一段 `BB-`）
+  - ⚠ ⚠ **`Billboard--2013-08-31.pdf`（連續兩個連字號）**
+  **本棒第一輪枚舉週六只拿到 48 期，靠索引頁 `https://www.worldradiohistory.com/Billboard-Magazine.htm`
+  正則撈 `Billboard/00s/2013/…pdf` 才發現另外兩個異形檔名，補齊到 50。**
+  **→ 給後批：照 c-162 a 第 1749 條走索引頁，並且不要假設檔名前綴只有一種。**
+- **2013 真的只有 50 期**：**索引頁的 2013 清單共 50 檔，不含 `2013-07-13` 與 `2013-12-28`**
+  （`12-14` 是年終雙期號）。檔內以 `### NOT-PUBLISHED-IN-ARCHIVE` 兩行標明，**不是抓失敗。**
+- **抽字法**：`pymupdf` 抽文字層，**沒有跑 OCR**（2010 年代的 PDF 文字層完整）。**50 期下載＋抽字約三分鐘。**
+- **關鍵字集（約 100 個）**：通用詞（`blue note` 與六種 OCR 形變／`top jazz`／`top jall`／`top jail`／`jazz albums`／
+  `contemporary jazz`／`traditional jazz`／`lundvall`／`cuscuna`／`tocj`／`tocp`／`toshiba emi`／`emi music japan`／
+  `somethin' else`／`capitol jazz`／`metro blue`／`connoisseur`／`blue note label group`／`/blg`／`emi jazz`）
+  ＋ **c-162 b 的 22 個藝人名與盤名**＋目錄號片段（`27742`／`97880`／`79323`／`63638`／`23087`／`79453`／`18937`／
+  `50277`／`50302`／`28047`／`29063`／`05980`／`71459`／`46051`／`88190`／`87500`／`23489`／`38761`／`03354`／
+  `79516`／`85730`／`86610`／`88040`／`84770`／`1874802`／`1875002`／`B00185`／`B00186`／`B00188`／`UCCQ`／`059802`）。
+  ⚠ **查別的 2013 年碟要重抓或放寬關鍵字**（與前幾份相同的限制）。
+- ⚠ ⚠ **2013 是本線目前紙本產出最好的一年**：**c-162 b 收下的 18 張裡 11 張有命中**
+  （**街頭日 5 個：Aaron Neville `Jan.22`／José James `Jan. 22`／Elvis Costello & The Roots `Sept. 17`／
+  Robert Glasper `Oct. 29`／Gov't Mule `Sept. 24`；另加 Thelonious Monk `Nov. 25`＝6 個**），
+  **而 2013 年那 11 張全部是美國盤**——**第 1664 條在本組第五次成立。**
+- ⚠ **2013 年最有用的六處**：
+  **`BB-2013-11-30` p47 逐字「THELONIOUS MONK｜Paris 1969｜Producer: Don Was｜LABEL: Blue Note records｜RELEASE DATE: Nov. 25」**
+  ＋內文逐字「A CD/DVD package of a Paris performance… ofers a compelling look at Monk just two years before he stopped recording」
+  （**(甲) 判定的第三層證據，rulings 第 1766 條**）；
+  **`BB-2013-09-28` p41 的 Robert Glasper 整版專文，資料框逐字「ALBuM: Black Radio 2｜LABEL: Blue Note｜RELEASE DATE: Oct. 29」
+  ＋ CHART HISTORY 逐字「Black Radio (2012), No. 15 Billboard 200, No. 1 Traditional Jazz Albums, 92,000」**
+  （**推翻 MB 的 frd `2013-05-13`，rulings 第 1767 條**）；
+  **`BB-2013-08-31` p24–25 的 Warren Haynes 專訪逐字「The new Shout! arrives on Blue Note Records Sept. 24… sporting a bonus CD
+  with those same tracks rearranged and resung by guest vocalists」**（**街頭日＋雙碟企劃一次到手**）；
+  **`BB-2013-01-12` p25 的整版專文標題逐字「NEW BLUE｜Singer/songwriter Jose James and Blue Note strive for genre-bending crossover success」
+  ＋內文逐字「No Beginning No End, James' independently recorded Blue Note debut due Jan. 22」＋「Don Was, head of EMI-owned Blue Note Records」**；
+  **`BB-2013-01-26` p55 逐字「AARON NEVILLE｜My True Story｜Producers: Don Was, Keith Richards｜Label: Blue Note｜Release Date: Jan.22」**；
+  **`BB-2013-09-28` p43 逐字「ELVIS COSTELLO & THE ROOTS｜Wise Up Ghost｜Producers: Steven Mandel, Elvis Costello, Ahmir "?uestlove" Thompson｜LABEL: blue Note｜RELEASE DATE: Sept. 17」**。
+  **另有 `BB-2013-10-05` p8 的產業新聞逐字「Blue Note Records signed a licensing deal with Panasonic… whose artists range from
+  Thelonius Monk to Norah Jones and Gov't Mule」——三個名字裡有兩個在本組。**
+- ⚠ **查無也要記（2013 全年 0 命中）**：`gare du nord`／`lifesexy`／`perko`／`streamline jazztet`／`chano`／`flamenco sketches`／
+  `quasimode`／`soul cookin`／`four pieces`／`turrentine`／`jazz inspiration`／`loueke`（2013 全年 0，2012 才有）；
+  ⚠ ⚠ **`magnetic` 回 73 次命中，但絕大多數是 `Edward Sharpe & The Magnetic Zeros` 與 Goo Goo Dolls 同名的《Magnetic》**
+  ——**同年三張同名碟同時在榜，盤名反查一定要綁掛名**（第 1250 條）。
+- ⚠ **四筆退件的紙本全部 0**：`jazz inspiration`／`new time shuffle`／`ain't no way`／`four pieces`／`turrentine` 全年皆 0
+  ——**與 c-162 a 第 1749 條那句同形：庫藏系列與精選重包在 Billboard 上沒有痕跡，紙本這一層對它們無效。**
+- **到此合計覆蓋：Billboard 1955→2013**（2005 缺 3 期、2006／2007／2008 各缺 1 期、2009 缺 2 期；
+  **2010–2012 以索引頁為準、無缺；2013 全 50 期到齊**）**，Cash Box 1960-11→1996-11（停刊）。⚠ 2014 以後尚未抓，
+  且 2014–15 的檔名形狀再變（`BB-2014-49-12-20--Double-Issue.pdf`，見 c-162 a 第 1749 條）。**
+
+---
+
+## Billboard 2014／2015（c-163 策展 a 新抓入庫，2026-09-19）
+
+- **檔案**：`billboard-bn-2014-ocr.txt.gz`（**43 期**、2.42 MiB 壓縮／5.75 MiB 原文）、
+  `billboard-bn-2015-ocr.txt.gz`（**40 期**、1.87 MiB 壓縮／4.35 MiB 原文）。
+  **合計 83 期、1,586 命中頁、零 FETCH-FAIL、零 PARSE-FAIL。**
+- ⚠ ⚠ **索引頁的網址在 2026-09-19 改了**：c-162 a／b 寫的
+  `https://www.worldradiohistory.com/Billboard-Magazine.htm` **現在回 301**，
+  **正確位置是 `https://www.worldradiohistory.com/Archive-All-Music/Billboard-Magazine.htm`**
+  （PDF 本身仍在 `Archive-All-Music/Billboard/00s/<年>/`）。**`curl -L` 就能跟過去，但正則要對新頁面跑。**
+- ⚠ ⚠ **2014–15 的檔名形狀與 2013 以前完全不同**，枚舉週六在這兩年**完全無效**：
+  **2014 一律 `BB-2014-<期號>-<月>-<日>.pdf`**（期號是刊期序號不是週次，`BB-2014-01-01-18.pdf`＝第 1 期 1 月 18 日），
+  **另有兩種異形**：`BB-2014-05-17.pdf`（**缺期號**）、`BB-2014-49-12-20--Double-Issue.pdf`／`BB-2014-53-01-04--Grammy-Issue.pdf`；
+  **2015 再加三種尾綴**：`-Issue-NN`（`BB-2015-24-07-25-Issue-21.pdf`）、`-Double-Issue-NN`、`-(2)`（`BB-2015-04-02-07-(2).pdf`），
+  **而且有一檔用舊前綴 `Billboard-2015-02-14.pdf`。**
+  **→ 這兩年一定要走索引頁撈 URL，不可能用日期枚舉猜到。**
+- **檔數**：**2014 年 43 期、2015 年 40 期**（Billboard 2014 起改成每年約 43–45 期的刊期制，
+  雙期號與 Grammy 特刊各算一期）。**索引頁上就只有這些，不是抓失敗。**
+- **抽字法**：`pymupdf` 抽文字層、**沒有跑 OCR**（六支並行，83 期下載＋抽字約四分鐘）。
+- **關鍵字集（41 個）**：通用詞 `blue note`
+  ＋ **c-163 a 組的 23 個掛名與盤名片段**（`elvin jones`／`chico hamilton`／`horace silver`／`turrentine`／`grant green`／
+  `quasimode`／`julia kadel`／`leon russell`／`tim hagans`／`alsmann`／`annie lennox`／`almazan`／`jason moran`／`kuroda`／
+  `akinmusire`／`jose james`／`josé james`／`hutcherson`／`sanborn`／`defrancesco`／`billy hart`／`yamanaka`／`jazztronik`／
+  `sphères`／`spheres`／`vintage trouble`／`charles lloyd`／`rising son`／`wild man dance`／`hopeful rd`／`life journey`／
+  `nostalgia`／`rhizome`／`enjoy the view`／`imagined savior`／`while you were sleeping`／`fats waller`／
+  `audible architecture`／`somethin`／`vamos la`／`im vertrauen`／`am broadway`／`soul delivery`）。
+  ⚠ ⚠ **這一份的關鍵字集比 2010–2013 那幾份窄**（沒有收 `top jazz`／`/blg`／`tocj` 這類通用榜單詞），
+  **因為 2014 起 Billboard 的榜單廠牌欄已不再印 `/BLG` 尾碼**；
+  **b 組與 c-164 以後若要查別的碟，放寬關鍵字重抓即可——PDF 不必重新下載的做法對這兩年不成立**
+  （本批只保留了命中頁，沒有留整份 PDF）。
+- ⚠ **2014／2015 兩年的 Blue Note 在 Billboard 上的能見度明顯低於 2013**：
+  **c-163 a 的 17 張收件裡有 8 張命中，但只有 1 個明確的街頭日**（Annie Lennox；詳見 `batch-progress/c163/rulings.md` 第 1786 條）。
+  ⚠ **命中率下滑的主因有二，都不是抓漏**：**(a) Billboard 2014 起改版，Reviews 欄那種帶 `RELEASE DATE:` 的資料框幾乎不再出現**
+  （2013 年靠那個框拿到六個街頭日，2014／2015 一個都沒有）；**(b) 本份的關鍵字集只有 41 個。**
+- **到此合計覆蓋：Billboard 1955→2015**，Cash Box 1960-11→1996-11（停刊）。
+  ⚠ **2016 以後尚未抓**；**索引頁上 2016 起的檔名再變一次，後批一樣要先撈索引頁。**

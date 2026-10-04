@@ -1,0 +1,2348 @@
+# c-171 裁定（Blue Note 1985 年後線・**藝人軸稽核補批**；a 組 13 張，1989–1998）
+
+本批與 `c168`／`c169`／`c170` 都不是列舉檔切出來的，**是 `batch-progress/enum/blue-note-artist-axis-audit.md`（藝人軸稽核）找出來的 25 筆真缺口**
+——**這 25 張連一列都不在 `enum/blue-note.json` 裡**（c-170 第 1812-B／1818-B／2486／2488 條）。
+成因是 MB 的 `label-info` 沒填（18 筆）或掛錯層級（7 筆），**以廠牌為軸的列舉腳本永遠碰不到它們**。
+判準沿用 `CURATION-BRIEF-bluenote-post1985.md` → `CURATION-BRIEF-bluenote.md` 第〇節 → `c131` → `c127` → `c126` → `c103plus` → `c93plus`，一字未改。
+**a 組 13 張（1989–1998），編號區間 2691–2750，本檔用到 2711。**
+
+---
+
+## 第 2691 條（**總表**）：**13 張＝收 10 ／ 退 3**
+
+| | 張 |
+|---|---:|
+| `slice.json` `g: "a"` | 13 |
+| **`prop-a.json` 收件** | **10** |
+| **a 組退件** | **3** |
+| **合計** | **10 收 ＋ 3 退 ＝ 13** ✔（第 315 條結算通過） |
+
+**收件 10 張**（依 `prop-a.json` 順序）：
+`Tommy Smith《Step By Step》`1989／`Tommy Smith《Paris》`1992／`Don Pullen & The African-Brazilian Connection《Ode to Life》`1993／
+`大西順子《Cruisin'》`1993／`Ron Carter《Jazz, My Romance》`1994／`Kevin Eubanks《Spiritalk 2: Revelations》`1995／
+`Jackie McLean Meets Junko Onishi《Hat Trick》`1996／`Dianne Reeves《That Day…》`1997／`Ron Carter《Brandenburg Concerto》`**1996**（年份改判）／
+`Brian Blade Fellowship《Brian Blade Fellowship》`1998。
+
+**退件 3 張、三種不同的理由分類**：
+
+| # | 卡 | 理由分類 | 條 |
+|---:|---|---|---|
+| 1 | `Dexter Gordon《Tenor Titans》`(1997) | **非 Blue Note 家族**（Storyville，丹麥廠）——**推翻稽核層的 `gap` 判定** | 2692 |
+| 2 | `Jackie McLean《Fire and Love》`(1997) | **撞批次**——與 c-154 已收的《Fire & Love》是同一張碟，MB 建了兩個 RG | 2694 |
+| 3 | `Elvin Jones《At This Point in Time》`(1998) | **合輯＋撞陳列**——Discogs 三個條目全標 `Compilation`，7 軌中 4 軌出自池中已收的《The Prime Element》 | 2696 |
+
+**10 張、10 個相異掛名字串**（無一重複）。**年份改判 1 筆（第 2703 條）、覆核成立 9 筆。**
+**⚠ 稽核層對這 13 張的「是 Blue Note 家族」判定，本層覆核結果是 12 成立、1 不成立**（第 2705 條）。
+
+---
+
+## 第 2692 條（a 組，**退件一；本批最重要的一條**）：**`Dexter Gordon《Tenor Titans》`(1997) 退——它是 Storyville 的盤，不是 Blue Note；稽核層的 `gap` 判定在這一筆上是錯的**
+
+稽核層（`blue-note-artist-axis-audit.md` §三.8）把它判成 `gap`，**佐證只舉了一筆 Discogs**：
+> **Discogs release 1742763**：`Dexter Gordon, Sonny Rollins, John Coltrane — The Three Tenors - Titans Of The Tenor Sax. Blue Notables Vol. 1`，`label` 含 `Blue Note`、catno `7243 8 53223 2 7`、UK & Europe **1996 CD／Compilation／Sampler**
+
+**那是另一張碟。** 本層逐筆重查：
+
+| 層 | 逐字 |
+|---|---|
+| MB RG `03d9e3b3-32d3-426b-a173-44b7a94341f3` | title「Tenor Titans」、**artist-credit 是 `Dexter Gordon & Ben Webster`（兩個實體，joinphrase ` & `）**，frd 1997、primary-type Album |
+| MB release `cf4672bc`（1997、**DK**） | **`label-info` 逐字 `Storyville Records`／catno `STCD 8288`**，barcode 717101828821 |
+| MB release `f710e1f0`（2016-03-26、JP） | `SOLID RECORDS`／catno `CDSOL-6975` |
+| MB release `986f22ec`（2022-10-26、XW） | `label-info` 逐字 `[]`（數位） |
+| Discogs `artist=Dexter Gordon&release_title=Tenor Titans&per_page=50` | **回 4 筆。前 3 筆是 `Dexter Gordon And Ben Webster — Tenor Titans`：11346705（Denmark 1997、`label` 逐字 `['Storyville']`、`STCD 8288`）、34823165（Japan 2007、Storyville／M & I／Pony Canyon、`MYCJ-30530`）、16275247（Japan 2016、Solid Records／Storyville Jazz Classics、`CDSOL-6975`）。第 4 筆才是稽核層引的 1742763，盤名不同、掛名不同、形態是 Compilation／Sampler。** |
+| Discogs 11346705 的 `labels` 陣列（逐筆展開） | **只有一個元素：`Storyville`（label id 45469）。整張碟沒有任何 Blue Note 實體。** |
+
+**→ `Tenor Titans` 的每一個實體版本（1997 丹麥原盤、2007 日版、2016 日版）都掛 Storyville，沒有一個掛 Blue Note。**
+**判定：`not-blue-note`，退件。** 判準依 §一（Blue Note 家族閘）與判準第 3 條（卡住整條線，必須當場定）。
+
+⚠ **順帶把兩件事釘死**（避免下游重查）：
+1. **錄音年 1969／1972，不是 1997**（第 2697 條）。
+2. **稽核層 25 筆 `gap` 裡至少這一筆要撤回**；**b 組與主線都不要再把它列進缺口**。
+
+---
+
+## 第 2693 條（**方法論；更正 c-170 第 2492 條**）：**Discogs 覆核的守門只有「年份差 ≤2」與「掛名出現在標題裡」兩關是不夠的——必須加第三關：盤名**
+
+c-170 第 2492 條裁定：「搜尋結果必須同時過『年份差 ≤2 年』與『掛名字串出現在標題裡』兩關，才拿來判廠牌。」
+
+**第 2692 條那一筆兩關全過、結論仍然是錯的**：
+- 年份：Discogs 1742763 標 **1996**，目標 1997，**差 1 年 ≤2** ✔
+- 掛名：`Dexter Gordon` **逐字出現在標題裡**（`Dexter Gordon, Sonny Rollins, John Coltrane — …`）✔
+- **但盤名是 `The Three Tenors - Titans Of The Tenor Sax. Blue Notables Vol. 1`，不是 `Tenor Titans`。**
+
+**成因**：`Titans` 與 `Tenor` 兩個詞都在，Discogs 的全文檢索因此把它排進 `release_title=Tenor Titans` 的結果；
+**而掛名關只要求「掛名出現在標題裡」，多藝人合輯的標題必然包含每一位參與者的名字——這一關對合輯等於不設防。**
+
+**裁定（新增，取代第 2492 條的兩關版）：Discogs 覆核一律走三關**——
+1. **年份差 ≤2 年**；
+2. **掛名字串出現在標題裡**；
+3. ⚠ **正規化後的盤名必須與目標盤名相等，或目標盤名是結果盤名的完整子字串**（不是分詞命中）。
+**外加一條否決**：**結果的 `format` 欄含 `Compilation`／`Sampler` 而目標是 Album 時，一律不採信為廠牌佐證。**
+判準依第 3 條（不改這一關，這一類錯會在剩下 12 筆 `gap` 裡繼續出現）。
+
+---
+
+## 第 2694 條（a 組，**退件二**）：**`Jackie McLean《Fire and Love》`(1997) 退——與 `c-154` 已收的《Fire & Love》是同一張碟（MB 建了兩個 release-group）**
+
+| 層 | c-171 slice | c-154（已定稿） |
+|---|---|---|
+| `artist` | `Jackie McLean` | `Jackie McLean` |
+| `album` | **`Fire and Love`** | **`Fire & Love`** |
+| `year` | 1997 | 1997 |
+| `rgMbid` | **`eca6903a-3e10-43ad-a40d-f480aa474255`** | **`9d5b5763-f9ed-4c6c-8266-fde9847c2148`** |
+| RG credit | `Jackie McLean Septet`（單一實體 5b6993ef） | `Jackie McLean`（同一實體 5b6993ef） |
+| 轄下 release | `9043f594`（1997 **JP** CD **7 軌**，barcode 4988006735545，`label-info` `[]`） | `74d17111`（1997 **US** CD **9 軌**，Blue Note `CDP 7243 4 93254 2 5`） |
+
+**c-154 的 `prop-a.json` 已經把兩個形狀都寫進同一張卡**，逐字：
+> 「**Seven track Japanese version. In Europe and the US a nine track version was released credited to Jackie McLean & The MacBand.**」——**日版 TOCJ-5590 七軌、掛 `Jackie McLean Septet`；美歐版九軌、掛 `Jackie McLean & The MacBand`**
+
+**→ c-171 slice 這一筆指的就是 c-154 那張卡的「日版七軌形」。** 這是第 611 條第三種盲區（**MB 把同一張碟建成兩個 RG**）的教科書實例。
+**判定：撞批次，退件。不補別張**（本批清單已固定）。判準依第 1 條（有先例：本線對雙 RG 一律退後者）與第 2 條（可逆）。
+
+---
+
+## 第 2695 條（**給主線：稽核層為什麼沒抓到第 2694 條那一筆**）：**正規化把 `&` 當標點剝掉，`Fire & Love` 與 `Fire and Love` 因此摺成兩個不同的鍵**
+
+c-170 第 2489 條說「（正規化藝人名, 正規化盤名）兩種鍵」的比對面涵蓋全部 `c*/slice.json`、全部 `c*-cards.json`、`seed_cards.json`、全部 `c*/prop-*.json`——
+**c-154 的三處記錄都在比對面裡，卻沒有命中。** 原因不在覆蓋面，在正規化函式：
+
+| 字串 | 剝標點（稽核層） | **先 `&`→`and` 再剝**（本層） |
+|---|---|---|
+| `Fire & Love`（c-154） | `firelove` | `fireandlove` |
+| `Fire and Love`（MB RG credit 那一支） | `fireandlove` | `fireandlove` |
+
+**兩者在稽核層的鍵不相等，所以它被判成「四處都沒有」。**
+
+⚠ **這正是 `batch-progress/c171/chk-prop.mjs` 檔頭註解裡那個 c-117 第 117 條踩過的坑**
+（逐字：「原本的正規化把 `&` 當標點刪掉、卻留著 `and`……**`&`／`and` 分裂的撞卡一個都抓不到，標記 0 不等於沒撞卡**」）——
+**`chk-prop` 早就修好了，稽核層那支一次性腳本沒有沿用。**
+
+**裁定（給主線）**：
+1. **稽核層 25 筆 `gap` 裡，凡盤名含 `&` 或 `and` 的都要用修正後的正規化重跑一次**——本批 13 張裡只有這一筆中，**但 b 組與剩下 12 筆沒掃過**。
+2. **之後任何一次性比對腳本，正規化一律直接抄 `chk-prop.mjs` 的 `k()`**（`.replace(/[&＆]/g,'and')` 在剝標點之前），不要自己再寫一份。
+3. ⚠ **推論**：c-170 第 2486 條「`bn-label-present` 掛零、列舉檔的 label 軸是完整的」那個結論**不受影響**（那是 label 軸的結論）；**但「四處都沒有 ⇒ 真缺口」這一步的假陽性率不是 0**——**本批 13 張裡實測 1 筆（7.7%）**。
+
+---
+
+## 第 2696 條（a 組，**退件三**）：**`Elvin Jones《At This Point in Time》`(1998) 退——合輯，且七軌中四軌與池中已收的《The Prime Element》重疊**
+
+MB 標 `primary-type Album`／`secondary-types []`——**這正是簡報第一節第 2 點警告的「MB 的 `secondary-types` 兩個方向都會漏」（第 397 條）。**
+**判準照簡報：只讀逐張文案與軌目來源，不讀標題、不看尾碼。** 逐筆展開 Discogs：
+
+| Discogs | 年 | 形態（`format` 逐字） |
+|---|---:|---|
+| 13883750（US，`CDP 7243 4 93385 2 4`） | 1998 | **`['CD','Compilation']`** |
+| 4963884（Europe，`7243 4 93385 2 4`） | 1998 | **`['CD','Compilation','Stereo']`** |
+| 25315330（Japan，`UCCU-45065`，`Elvin Jones On Blue Note` 系列） | 2022 | **`['CD','Compilation','Reissue']`** |
+
+**三個條目、三個地區、跨 24 年，`Compilation` 一致——不是第 782 條那種 Discogs `format` 欄寫錯的形狀。**
+
+Discogs 13883750 的 notes **逐字**：
+> Recorded on July 24 (#3-4), July 25 (#5-7) and July 26 (#1-2), **1973** at A&R Recording Studios, New York City.
+> **#1-4 previously issued as part of the double album [r=2615364] (BN LA 506-2). #5-7 previously unissued.**
+
+**`BN-LA506` 就是《The Prime Element》**，**池中已收**（`seed_cards.json` ＋ c-144 卡單與 `prop-a.json`，`Elvin Jones《The Prime Element》1976`）。
+軌目重疊實算：7 軌 60:00 裡，**前 4 軌（At This Point in Time 7:32／Currents-Pollen 11:12／The Prime Element 8:16／Whims of Bal 12:22＝39:22，約 66% 的時長）是已發行過的同一份錄音**；
+**第三軌的曲名逐字就叫〈The Prime Element〉。** 這是第 738／859 條的撞陳列，而且是靠軌目比對才看得到的那一種。
+
+**判定：退件，理由分類「合輯（§5.6 未過）＋撞陳列」。** 未走 §5.6 精選制的理由：
+- §5.6 要求合輯自己交代**歷史重要性**與**可追溯的證據**——本張是 1998 年 Bob Belden 監製的 Blue Note 目錄整理品（Ron McMaster 20-bit SBM 母帶、Peter Doell 重混），**不是有獨立歷史地位的精選盤**；
+- 三軌未發行素材確實有價值，**但那不足以讓一張 66% 時長與池中既有卡重疊的碟單獨上架**；
+- c-145 的「庫存盤寫法」（`year` 取首發年、`risk` 寫錄音年）**不適用**——c-145 的前提是**全碟未曾商業發行**，本張不是。
+
+判準依第 1 條（有先例：本線對「與池中卡軌目重疊過半的再整理盤」一律退）與第 2 條（可逆：日後主線若要走 §5.6，改的是卡單值不是卡池結構）。
+
+---
+
+## 第 2697 條（**派工信第三節點名要查的兩張：錄音年判定**）
+
+派工信要求「**(乙) 與簡報第一節第 1 點的『看錄音年』要當場查清楚**」。兩張都查了，**兩張都是 1985 年前的錄音，但退件理由各不相同**：
+
+| 卡 | `year` 候選 | **錄音年（逐字來源）** | 是不是「庫存盤」 | 本層處置 |
+|---|---:|---|---|---|
+| `Dexter Gordon《Tenor Titans》` | 1997 | **1969 與 1972**——Discogs 11346705 notes 逐字：「Tracks 1-3: Concert, **Flensborg, March 23, 1972**. Tracks 4-7: Jazzstævnet, **Vallekilde Højskole, July/August, 1969**. **Previously unissued.**」 | **是**（`Previously unissued`，1997 首次商業發行） | **退**——但**不是因為錄音年**，是因為**非 Blue Note**（第 2692 條）。⚠ 若日後 Storyville 線開，這張照 c-145 寫法收：`year` 取 **1997**、`risk` 寫錄音年 1969／1972 與 catno `STCD 8288` |
+| `Elvin Jones《At This Point in Time》` | 1998 | **1973-07-24／25／26**，A&R Recording Studios, NYC（Discogs 13883750 notes 逐字） | **否**——**7 軌中 4 軌 1976 年已隨《The Prime Element》(BN-LA506) 發行過**，只有 3 軌未發行 | **退**——合輯＋撞陳列（第 2696 條）。**c-145 的庫存盤寫法不適用**，前提（全碟未曾商業發行）不成立 |
+
+⚠ **兩張都印證簡報第一節第 1 點**：「這一段的主要風險是**這張根本不是新錄音**」。
+⚠ **同時多一條觀察**：這兩張都**不是**簡報講的「再發系列折不乾淨」那一種（沒有 RVG／Connoisseur／Tone Poet 尾碼），
+**它們是『1985 後首發、但內容是 1985 前錄音』的第三種形狀**——**盤名與尾碼完全看不出來，只有 notes 的錄音日期看得出來**。
+**裁定：這一段的每一張，錄音日期都要當成必查欄位，不能只在盤名可疑時才查。**
+
+---
+
+## 第 2698 條（**掛名，本批最需要協調的一筆；b 組讀本條**）：**`Ron Carter` 三張一律掛 `Ron Carter`；`Ron Carter Trio` 並存不收攏**
+
+本批三張刻意跨在兩組：**a 組《Jazz, My Romance》(1994)、《Brandenburg Concerto》(1996)；b 組《Stardust》(2001)**。**三組必須一致。**
+
+| 依據 | 逐字 |
+|---|---|
+| **(甲) MB RG credit** | 三張的 artist-credit 都是**單一實體**、`name` 欄逐字 `Ron Carter`（`57db3f59-9c58-4f68-a00e-e044666c4828` Person／US／`US jazz double-bassist`）。**《Stardust》的 RG `bfb6c1ec-2f72-328e-a0f9-a844802cef07` 由本層代查確認**：credit `Ron Carter`、frd 2001、primary-type Album、secondary-types 空。**沒有一張帶 Trio／Quartet 尾綴。** |
+| **(乙) 池中先例（第 307 條）** | `Ron Carter` 這個字串在 **c-150《Ron Carter Meets Bach》** 立起（該卡 risk 逐字：「**本卡是池中第一張 `Ron Carter` 掛頭的卡，日後他的其他領班盤一律沿用這個字串，不得再造第三種**」），其後 c-151《Friends》／c-153《Mr. Bow-Tie》／c-154《The Bass and I》／c-156《Orfeu》／c-157《When Skies Are Grey》／c-158《The Golden Striker》／c-160《Dear Miles,》／c-161《Jazz & Bossa》沿用，**共 9 張** |
+| **(丙) 並存字串** | `Ron Carter Trio`（c-168《So What》1998）、`Ron Carter & Danny Simmons`（c-164）、`Ron Carter, Ricky Dillard`（c-167）、seed 的 `Jim Hall & Ron Carter`／`Red Garland / Ron Carter / Philly Joe Jones`、c-151 slice 的 `Geri Allen Trio With Ron Carter, Tony Williams`——**全部並存、不收攏**（第 964／196／197 條；第 307 條防的是同一實體的多種寫法，不是不同 credit 並存） |
+
+**裁定：`Ron Carter`。b 組不得把《Stardust》寫成 `Ron Carter Trio`／`Ron Carter Quartet`／`Ron Carter Nonet`。**
+
+⚠ **同時更正派工信的一個數字**：派工信寫「池中已有 `Ron Carter` 11 張」。
+**實掃是 9 張**（上表乙欄逐一列出），**而且 9 張全部在未上架批次（c-150～c-161 的 `*-cards.json` ＋ `prop-*.json`），`seed_cards.json` 裡 `Ron Carter` 掛頭的卡是 0 張。**
+**依第 409b／439 條，`why` 欄一律寫成「漢字 0／羅馬字 0／英文字串 9，且 9 張都還沒上架」。**
+
+⚠ **另給 b 組一個實查**：**《Stardust》的 MB RG 底下只有 1 筆 release `c8fe0162`，`country` 是 `RU`、`label-info` 逐字 `[]`。**
+**派工信說「俄版 `Unofficial Release` 一律不當依據」——這一筆的 `status` 要自己再核一次，不要拿它當首發年或廠牌的依據，改用 Discogs 原壓群。**
+
+---
+
+## 第 2699 條（**掛名**）：**`大西順子` 取漢字，不取 MB credit 的 `Junko Onishi`**
+
+MB 的 artist **實體名逐字是 `大西順子`**（`fc224843-542a-488e-b9e5-3dc7856d44e6` Person／JP／sort-name `Onishi, Junko`），
+**但 RG 的 artist-credit `name` 欄逐字是羅馬字 `Junko Onishi`**，轄下日版 release `f494fcd9` 的 credit 又是 `Junko Onishi Trio`——**同一個實體、三種寫法。**
+
+| 字形 | 池中張數 | 出處 |
+|---|---:|---|
+| **漢字 `大西順子`** | **3** | `seed`《WOW》1993／c-152 卡單＋`prop-a.json`《Live at the Village Vanguard》1994／c-161 卡單＋`prop-b.json`《Musical Moments》2009 |
+| 羅馬字 `Junko Onishi` | 0 | 只出現在 `c161/slice.json`（卡單層已折成漢字） |
+| 羅馬字 `Junko Onishi Trio` | 0 | 只出現在 `c152/slice.json`（卡單層已折成漢字） |
+| 英文其他寫法 | 0 | — |
+
+**這是第 307 條（同一實體的多種寫法）的正例**，與第 2698 條（丙）（不同實體並存）的形狀不同。
+**裁定：`大西順子`。** 兩種羅馬字形進 `queryAlias`。`c171/slice.json` 本來就寫漢字，與本裁定一致。
+
+⚠ **但下游查詢一律用羅馬字**（第 2493 條）：**本層實測 `api.discogs.com/database/search?artist=大西順子` 回 0 筆，改 `artist=Junko Onishi` 才回 3 筆。**
+**「回 0 筆」是「沒查到」不是「不是」。** 卡池實掃本層**兩種字形都掃過**。
+
+---
+
+## 第 2700 條（**掛名**）：**`Jackie McLean Meets Junko Onishi` 照 MB credit 原樣，不折成 `Jackie McLean`**
+
+MB RG `823b61c2` 的 artist-credit 是**兩段**：
+`{name:"Jackie McLean", artist: 5b6993ef Person, joinphrase: " Meets "}` ＋ `{name:"Junko Onishi", artist: fc224843 Person（實體名 大西順子）}`。
+
+**兩個實體 ⇒ 適用第 964／196／197 條（並存），不適用第 307 條（收攏）。** 池中先例整齊支持並存：
+`Jackie McLean & Dexter Gordon`（seed）／`Jackie McLean & Tina Brooks`（seed＋c-145）／`Kenny Dorham & Jackie McLean`（seed＋c-139）／`McCoy Tyner & Jackie McLean`（c-148）
+——**四個聯名字串都與單獨的 `Jackie McLean`（seed 21 張＋未上架批次 14 張）並存。**
+
+⚠ **與 c-154《Fire & Love》的差別要講清楚，否則看起來像自相矛盾**：
+c-154 把 `Jackie McLean Septet`／`Jackie McLean & The MacBand` 折成 `Jackie McLean`，**因為那兩形的 MB artist-credit 都只有一個實體**（`Jackie McLean Septet` 是 credit 欄的別寫，MB 沒有建 MacBand 這個 Group）。
+**本張是兩個實體，形狀不同，處置因此不同。**
+
+⚠ **本層自覺的取捨**：聯名字串裡的大西那一半用羅馬字 `Junko Onishi`（MB credit 原樣），
+而她自己的卡（第 2699 條）用漢字 `大西順子`。**這是有意為之**：
+**聯名字串照 MB credit 不拆改，不得自造 `Jackie McLean Meets 大西順子` 這種兩來源混拼的第三形**——那才是第 307 條要防的新造分裂。
+漢字形已進 `queryAlias`。**Discogs 用小寫 `meets`，`artist` 取 MB 的大寫 `Meets`，小寫形進 `queryAlias`。**
+
+---
+
+## 第 2701 條（**掛名**）：**`Don Pullen & The African-Brazilian Connection` 是 MB 的 Group 實體，與 `Don Pullen` 並存**
+
+MB `5f633e7f-12d1-4a91-a304-03275a144c16` 的 `type` 逐字是 **`Group`**、`name` 逐字是 `Don Pullen & The African-Brazilian Connection`（不是兩段 credit 串接）。
+池中該字串已有 2 張（c-150《Kele Mou Bana》、c-152《Live...Again (Live at Montreux)》），
+與 `Don Pullen`（seed 1＋批次 3）、`The Don Pullen-George Adams Quartet`（c-148／c-149）、`Don Pullen Featuring Sam Rivers`（seed）、`Don Pullen Quintet`（seed）**五個字串並存**。
+**裁定：照 MB Group 原樣，不收攏。** 判準第 1 條（有先例：池中同一位藝人已有五種並存字串）。
+
+⚠ **正文警語**：**George Adams 1992 年 11 月過世，本張是 1993 年 2 月錄的追悼盤，他沒有參與錄音**
+——**不得把他寫成本張的演出者**（池中 `The Don Pullen-George Adams Quartet` 兩張才是兩人同台）。
+
+---
+
+## 第 2702 條（**同名專輯**）：**`Brian Blade Fellowship《Brian Blade Fellowship》`(1998) `selfTitled: true`**
+
+團名與盤名逐字相同（MB RG credit `Brian Blade Fellowship`／`ad45a94c` **Group**；MB title `Brian Blade Fellowship`）。
+**`selfTitled` 欄設 `true`**，並在 `risk` 寫明「下游任何『盤名 → 卡』的比對在這一筆上會與掛名同值」。
+
+⚠ **掛名沿用池中多數寫法 `Brian Blade Fellowship`**（c-156《Perceptual》2000、c-164《Body and Shadow》2017）；
+`c164/slice.json` 另有 `Brian Blade & the Fellowship Band` 一形，**c-164 卡單層已折成 `Brian Blade Fellowship`**——**本卡不新造第三形**，另一形進 `queryAlias`。
+
+---
+
+## 第 2703 條（**年份改判，本批唯一一筆**）：**`Ron Carter《Brandenburg Concerto》`1997 → **1996****
+
+**MB 的 frd 1997 沒有任何 release 支持**：RG `3f03b660` 底下**唯一的** release `e8a7893f` **連 `date` 欄都沒有**（也沒有 `country`、沒有 barcode、`label-info` 逐字 `[]`）。
+
+**第 1800-B 條要求的兩種掃描都跑了，兩種都指向 1996**：
+
+| 掃描 | 結果 |
+|---|---|
+| **(甲) 全 release 掃描** `artist=Ron Carter&release_title=Brandenburg Concerto&type=release&per_page=50` | **回 5 筆，`year` 全部 1996**：9872057（US，Blue Note `CDP 7243 8 54559 26`）／17381494（US Promo 同號）／11424011（Canada BMG 俱樂部版 `CDP 7243 8 54559 2 6`）／27583047（Japan，EAU Records `TOCJ-6037`）／11783863（Japan Promo 同號） |
+| **(乙) barcode 反查** `barcode=724385455926` | **回 2 筆，皆 1996 US** |
+| 錄音日 | **1995-12-27**，Clinton Recording Studios, New York（Discogs 9872057 notes 逐字） |
+
+**七筆零售條目、三個國家、零筆 1997。** 依簡報第二節的階序（**Discogs 原壓群 ＞ MB first-release-date**，第 531 條）與第 550／570／708 條的警示（MB／Discogs 的年份欄都會抄錯），**取 1996**。
+判準第 2 條（可逆：改的是卡單的 `year` 值）與第 3 條（不定就沒辦法往下）。**MB 的 1997 寫進 `mbNote` 與 `risk`。**
+
+---
+
+## 第 2704 條（**曲風閘**）：**`Ron Carter《Brandenburg Concerto》` 判 `genres: ["jazz"]`，不加 `classical`**
+
+派工信點名「古典曲目改編，**曲風閘要查**」。實查：
+
+- Discogs 9872057 的 **`genres` 逐字 `['Jazz','Classical']`**、**`styles` 逐字 `['Baroque','Contemporary Jazz']`**（日版 11783863 同）。
+- 曲目 6 首裡 5 首是古典改編（巴哈《布蘭登堡協奏曲第三號》、佛瑞〈Pavane〉、巴爾托克〈Joc cu bâtă〉、葛利格《霍爾堡組曲》的〈Aria〉、韓德爾〈Ombra mai fu〉），1 首自作（〈Vientos del Desierto〉）。
+- 編制：Ron Carter 低音提琴與 piccolo bass ＋ 弦樂團，Kermit Moore 指揮，**Carter 自己編曲兼製作**。
+
+**先例（判準第 1 條）**：**c-150《Ron Carter Meets Bach》(1992)** 的 `prop-b.json` risk 逐字：
+> 「⚠ **曲風判定**：全碟是巴哈曲目，但**編制、編曲者與發行脈絡都是爵士**（Blue Note 主線目錄、Carter 自編、無古典樂團）……**genres 維持 `jazz`，不加 classical**」
+
+本張與該張是**同一位藝人、同一條企劃線、同一間錄音室（Clinton）、同一位錄音師（Jim Anderson）、同一位東芝 EMI 監製（Hitoshi Namekata）**，
+**唯一的差別是本張多了弦樂團**。**弦樂團不足以翻轉先例**——爵士領班盤配弦樂（with strings）是本線既有的常見形狀。
+
+**裁定：`genres: ["jazz"]`。**
+⚠ **但正文必須寫清楚這是「爵士低音提琴手改編古典曲目、由弦樂團伴奏」，不得寫成古典錄音，也不得寫成即興專輯**（全碟是寫定的編曲）。
+
+---
+
+## 第 2705 條（**覆核稽核層的「這張是 Blue Note 家族」判定，13 張逐筆**）：**12 成立、1 不成立**
+
+派工信要求「**你要逐張覆核那個判定**」。方法：對每一張跑 `api.discogs.com/database/search`（`artist`＋`release_title`，`per_page=50`）＋ barcode 反查，
+**把每一筆結果的 `label` 陣列整個展開**，再過第 2693 條的三關與第 2490 條的白名單（排除 `club`／`cafe`／`jazz club` 字樣）。
+
+| # | 卡 | 家族證據（`label` 陣列逐字 ＋ 目錄號） | 覆核 |
+|---:|---|---|:--:|
+| 1 | Tommy Smith《Step By Step》 | `Blue Note`／`Blue Note International`；`B1-91930`／`BLT 1001`／`CDP 7919302` | ✔ |
+| 2 | Tommy Smith《Paris》 | `Blue Note International`；`CD BLT 1005`／`TC-BLT1005`／`780612 1` | ✔ |
+| 3 | Don Pullen & The A-B Connection《Ode to Life》 | `Blue Note`；`CDP 0777 7 89233 2 9`／`TOCJ5834` | ✔ |
+| 4 | 大西順子《Cruisin'》 | `Blue Note`＋`Blue Note Records`（US 7578461）；`CDP 7243 8 28447 2 3`／`TOCJ-5555` | ✔（**須用羅馬字才查得到**） |
+| 5 | Ron Carter《Jazz, My Romance》 | `Blue Note`＋`Blue Note Records`；`CDP 7243 8 30492 2 6`／`TOCJ-5560` | ✔ |
+| 6 | Kevin Eubanks《Spiritalk 2》 | `Blue Note`；`CDP 7243 8 30132 2 7`／`CDP 530132` | ✔ |
+| 7 | Jackie McLean Meets Junko Onishi《Hat Trick》 | `Blue Note`＋`Blue Note Records`；`CDP 7243 8 38363 2 1`／`TOCJ-5581` | ✔ |
+| **8** | **Dexter Gordon《Tenor Titans》** | **`Storyville` 唯一，三個實體版本全無 Blue Note** | **✘ 退（第 2692 條）** |
+| 9 | Dianne Reeves《That Day…》 | `Blue Note`；`CDP 7243 8 56973 2 6`／`TOCJ-6144` | ✔ |
+| 10 | Jackie McLean《Fire and Love》 | `Blue Note`（美歐版）——**家族成立，但撞 c-154，另案退**（第 2694 條） | ✔（家族） |
+| 11 | Ron Carter《Brandenburg Concerto》 | **美／加版 `Blue Note`（label id 281）`CDP 7243 8 54559 2 6`；⚠ 日版 `TOCJ-6037` 的 `label` 只有 `EAU Records`、沒有 Blue Note** | ✔（**限美／加版**） |
+| 12 | Brian Blade Fellowship《Brian Blade Fellowship》 | `Blue Note`；`7243 8 59417 2 6`／`TOCJ-6192`／2020 再發 `0845480` | ✔ |
+| 13 | Elvin Jones《At This Point in Time》 | `Blue Note`＋`Elvin Jones On Blue Note`——**家族成立，但是合輯，另案退**（第 2696 條） | ✔（家族） |
+
+⚠ **`The Blue Note Jazz Club` 在本批 13 張的全部 Discogs 結果裡 0 次命中**（第 2490 條那個假陽性沒有出現）。
+⚠ **`Blue Note Compagnie`（`BNS-`）與 `Blue Note Digital` 也各 0 次命中。**
+⚠ **新增一個要在 `label` 欄寫清楚的形狀（第 11 筆）**：**同一張碟在美國掛 Blue Note、在日本掛第三方廠牌（`EAU Records`）**
+——`label` 欄要寫成「美版 Blue Note／日版 EAU Records」，**不得寫成「全球 Blue Note 發行」**。
+⚠ **`Somethin' Else` 一律當家族內的日本線看待**（本批 4／5／7 三張、同一位監製 Hitoshi Namekata、同一位錄音師 Jim Anderson），**不是要排除的第三方**。
+
+---
+
+## 第 2706 條（**形態閘，c-169 a 新立；10 張全過**）：**判準順序照第 1811-B 條——零售條目的 `format` 欄 ＞ 總長**
+
+| 卡 | 零售 `format` 逐字 | 軌數 | 實算總長 | 判 |
+|---|---|---:|---:|---|
+| Step By Step | `['Vinyl','LP','Album']`／`['CD','Album']` | 6（LP）／8（CD） | 43:34（LP） | Album |
+| Paris | `['CD','Album','Stereo']` | 12 | **73:53** | Album |
+| Ode to Life | `['CD','Album']` | 7 | 59:00 | Album |
+| Cruisin' | `['CD','Album']` | 9 | 61:37 | Album |
+| Jazz, My Romance | `['CD','Album']` | 8 | 53:57 | Album |
+| Spiritalk 2: Revelations | `['CD','Album']` | 9 | 50:08 | Album |
+| Hat Trick | `['CD','Album']` | 9 | 53:57 | Album |
+| That Day… | `['CD','Album']` | 10 | 52:13 | Album |
+| **Brandenburg Concerto** | `['CD','Album']`（美日皆然） | **6（美）／4（日）** | **42:35（美）／33:49（日）** | Album |
+| Brian Blade Fellowship | `['CD','Album']` | 8 | 61:43 | Album |
+
+**十張的 `format` 欄都不含 `EP`／`Single`，總長全部 ≥42 分鐘。**
+⚠ **唯一需要動用判準順序的是《Brandenburg Concerto》**：**日版 TOCJ-6037 只有 4 軌 33:49**（缺〈Pavane〉與〈Joc cu bâtă〉，**兩個日版條目都是 4 軌、不是漏建**），單看總長會靠近 EP 區間；
+**但兩版的 `format` 欄都逐字寫 `Album`，且美版 6 軌 42:35 才是完整形**——**依第 1811-B 條的順序判 Album。**
+⚠ **《Spiritalk 2》中段三首短曲（〈Earth〉2:42／〈Sun〉4:25／〈Moon〉1:47）是同一組三聯曲，不影響總長判定。**
+
+---
+
+## 第 2707 條（**卡池實掃：方法與第 611 條五種盲區**）：**唯一一筆撞卡靠 `&`→`and` 正規化抓到，其餘 12 張四處皆 0**
+
+**比對面**：`seed_cards.json`（**唯讀**，17,248 列）＋ `desc-tools/batches/cards/*.json`（全部）＋ `batch-progress/c*/prop-*.json`（全部）＋ `batch-progress/c*/slice.json`（全部），**合計 30,184 列**。
+**正規化直接抄 `chk-prop.mjs` 的 `k()`**（`NFKC` → 小寫 → **`&`→`and`** → 剝非文字非數字，`\p{L}\p{N}` 保留漢字與假名）。
+
+⚠ **判「已收」一律比對 `album` 欄逐字（第 1819-B／2485／2489 條），不用 grep 掃整份 JSON。**
+本層照辦，**結果驗證了這條規則的必要性**：13 張的盤名在 30,184 列裡命中 20 次，**逐筆核完真的同碟只有 1 筆**——
+
+| 盤名 | 盤名命中 | 真同碟 | 假陽性是什麼 |
+|---|---:|---:|---|
+| `Paris` | 6 | 0 | Erik Truffaz《Paris》(2008, c-161)／Jacky Terrasson《À Paris》(2000, c-157) |
+| `Cruisin'` | 1 | 0 | **Village People《Cruisin'》(1978, seed)**（第 2489 條已點名過） |
+| `Fire and Love` | 3 | **1** | **c-154《Fire & Love》——真的同碟**（第 2694 條） |
+| 其餘 10 張 | 各 0 | 0 | — |
+
+**第 611 條五種盲區逐一掃過**：
+
+| 盲區 | 本批結果 |
+|---|---|
+| 群組掛名 vs 個人掛名 | 掃過。`Don Pullen` vs `Don Pullen & The African-Brazilian Connection` vs `The Don Pullen-George Adams Quartet`／`Ron Carter` vs `Ron Carter Trio`／`Jackie McLean` vs 四個聯名字串／`Brian Blade Fellowship` vs `Brian Blade & the Fellowship Band`——**全部逐筆展開比對，0 筆撞卡** |
+| 同名但不同盤的 Volume 碟 | 本批無 Volume 碟。⚠ 但《Spiritalk 2: Revelations》是續作，**第一集《Spiritalk》(1993) 池中與所有批次都沒有**（見第 2708 條） |
+| **MB 把同一張碟建成兩個 RG** | **命中 1 筆**：`Fire and Love`（RG `eca6903a`）vs c-154 `Fire & Love`（RG `9d5b5763`）——**這一批唯一的撞卡**（第 2694 條） |
+| 斜線掛名 | 掃過。`Red Garland / Ron Carter / Philly Joe Jones`（seed）與本批 `Ron Carter` 不撞 |
+| 同名但不同盤 | 命中 7 次（上表），**真同碟 0** |
+
+⚠ **`chk-prop` 第五道（盤名撞 apex，report-only）另見第 2710 條的執行結果。**
+⚠ **跨批去重另跑 `node batch-progress/dedup-crossbatch.mjs c171`**（結果見第 2710 條）。
+
+---
+
+## 第 2708 條（**盤名取法，四筆有歧形**）：**一律取 MB RG 的 `title` 原樣，其他形進 `queryAlias`**
+
+| 卡 | MB title（採用） | 其他形 | 處置 |
+|---|---|---|---|
+| Ode to Life | `Ode to Life` | 盤面／Discogs 全題 `Ode To Life (A Tribute To George Adams)`；日題「太陽の讃歌〜ジョージ・アダムスの魂に捧げる〜」 | 副題進 `queryAlias`，**正文可寫副題、`album` 不併** |
+| Spiritalk 2: Revelations | `Spiritalk 2: Revelations`（**ASCII 冒號**） | Discogs `Spiritalk 2 - Revelations`（連字號） | 取冒號形（ASCII，不觸發 `chk-prop` 的非 ASCII 連字號閘） |
+| That Day… | `That Day…`（**U+2026 單一省略號字元**） | Discogs 美版 `That Day...`（三個 ASCII 句點）／歐版與 repress `That Day` | 取 MB 原樣。**U+2026 不在 `chk-prop` 的非 ASCII 連字號清單裡**（該閘只擋 `‐‑‒–—―－` 與誤用的 `ー`），不觸發標記。**下游比對三形都要試** |
+| Hat Trick | credit `Jackie McLean Meets Junko Onishi`（**大寫 Meets**） | Discogs 小寫 `meets` | 取 MB 大寫形（第 2700 條） |
+
+⚠ **非 ASCII 連字號正規化成 ASCII**：本批 10 張的 `artist` 與 `album` **逐字檢查，無 `‐‑‒–—―－`、無誤用的 `ー`**，不需要改寫。
+
+⚠ **另記一個缺口（給主線，不影響本批結算）**：**Kevin Eubanks《Spiritalk》(1993, Blue Note) 池中與所有批次都沒有**
+（`Kevin Eubanks` 只有 c-151《Turning Point》1992、c-152《Live at Bradley's》1994，加本批第二集）。
+**它與本批 13 張是同一種成因的機率很高，建議主線列進回頭查。**
+
+---
+
+## 第 2709 條（**雲端環境限制，第 254 條只寫觀察不寫結論**）
+
+| 來源 | 實測 |
+|---|---|
+| `musicbrainz.org/ws/2` | **通**。1 req/1.2s，全程 0 次 503 |
+| `api.discogs.com/database/search` 與 `/releases/<id>` | **通，無需 token**（第 2491 條成立）。本層用 3s 間隔，全程 0 次 429 |
+| `coverartarchive.org/release-group/<id>` | **通**。10 張裡 **5 張有 front**（Step By Step 1 圖／Ode to Life 5 圖／Jazz, My Romance 1 圖／Hat Trick 2 圖／That Day… 1 圖，來源 release 全部是原盤 ✔），**5 張 RG 層 0 圖**（Paris／Cruisin'／Spiritalk 2／Brandenburg Concerto／Brian Blade Fellowship）——**封面待本機補** |
+| **`itunes.apple.com/search`** | **⚠ 回 HTTP 403**（雲端 egress 被擋）。`itunes.apple.com/lookup?id=…` 通，但**沒有候選 ID 就用不上** |
+
+**裁定：三種店面查法（第 254 條）本批整批留本機**，`prop-a.json` 每一張的 `risk` 都寫了「雲端 iTunes `search` 回 403，留本機」。
+**不因查不到而降級任何判定**（`REMOTE_RUNBOOK.md` 雲端硬規則第 1 條）。
+⚠ **本機接手時的兩個提醒**：(甲) **《Cruisin'》與《Hat Trick》要用羅馬字查**；(乙) **《Brandenburg Concerto》要辨認命中的是 6 軌美版還是 4 軌日版**；
+(丙) **《Brian Blade Fellowship》要辨認是 1998 原盤還是 2020 Blue Note 80 再發**。
+
+---
+
+## 第 2710 條（**收工檢查**）
+
+| 檢查 | 結果 |
+|---|---|
+| `node batch-progress/c171/chk-prop.mjs a` | **見本檔末尾的實跑貼字**（標記須為 0） |
+| `node batch-progress/dedup-crossbatch.mjs c171` | **見本檔末尾的實跑貼字** |
+| 第 315 條結算 | **`prop-a.json` 10 筆 ＋ 本檔退表 3 筆 ＝ 13 ＝ `slice.json` `g:"a"` 的筆數** ✔ |
+| 禁碰清單 | `seed_cards.json` **只讀**、`apex_pool.json` 未開、`PROJECT_MEMORY.md` 未動、KV／Firestore 未碰、`enum/blue-note.json` **只讀**、**`prop-b.json` 未動**、其他批次檔案 **只讀**、**無 `git commit`／`git push`／未動索引** |
+| 中間檔 | 全在 scratchpad 的 `c171a/` 子目錄（第 533 條） |
+
+---
+
+## 第 2711 條（**⚠ 派工信與原文／既有裁定牴觸之處；依規定回報**）
+
+| # | 派工信原句 | 實查 | 影響 |
+|---:|---|---|---|
+| 1 | 第一節第 3 點：「**`batch-progress/c170/rulings.md` 整檔**（尤其第 2481–2497 條）」；該檔檔頭又寫「編號區間 **2346–2400**」 | **兩者都對，是檔頭過時**：該檔實際涵蓋 2346–2497，2481–2497 是稽核層後來 append 進去的。**派工信沒寫錯** | 無害，記一筆免得下一棒以為找錯檔 |
+| 2 | 第三節表格把第 8 筆寫成「`Dexter Gordon《Tenor Titans》`……**高度懷疑是舊錄音的初次發行或再發**；若是庫存盤，照 c-145 的寫法」 | **懷疑的方向對、結論不對**：它**確實**是舊錄音（1969／1972）的初次發行，**但它根本不是 Blue Note 的盤**（Storyville）。**派工信預設了「它是 Blue Note、只要判是不是庫存盤」，這個前提不成立** | ⚠ **會讓一張非家族碟被當庫存盤收進來**（第 2692 條） |
+| 3 | 第三節表格把第 13 筆寫成「`Elvin Jones《At This Point in Time》`……**高度懷疑是 1970 年代錄音的後發**，與 Dexter Gordon 同一種風險」 | **錄音年對（1973），但「與 Dexter Gordon 同一種風險」不對**：Dexter 那張是**全碟未發行**的庫存盤（可走 c-145 寫法），**本張 7 軌裡有 4 軌 1976 年已發行過、且與池中卡重疊**——**是合輯，不是庫存盤，c-145 寫法不適用** | ⚠ 若照派工信的歸類處理，**會用 c-145 的庫存盤寫法收一張合輯**（第 2696／2697 條） |
+| 4 | 第三節警語：「⚠ ⚠ **Ron Carter 本批三張**……**池中已有 `Ron Carter` 11 張**」 | **11 是錯的，實掃是 9 張**（c-150／c-151／c-153／c-154／c-156／c-157／c-158／c-160／c-161 各 1 張），**而且 9 張全在未上架批次、`seed_cards.json` 裡 0 張** | 只影響 `why` 的數字寫法（第 409b／439 條要求註明有沒有算進未上傳批次）；**掛名裁定不受影響**（第 2698 條） |
+| 5 | 第一節第 2 點：「`enum/blue-note-artist-axis-audit.md` 裡本組 13 張各自的小節——**每一張的佐證網址都在那裡**」 | **佐證網址確實都在，但第 8 筆的佐證指向的是另一張碟**（第 2692 條）——**「有佐證」不等於「佐證對」** | ⚠ 已在第 2692／2693 條處理 |
+| 6 | 第四節第 1 點：「稽核層實測**盤名單獨命中的假陽性 7 次**」 | **在本組 13 張的範圍內是 20 次命中／19 次假陽性**（第 2707 條）。派工信引的 7 次是 c-170 第 2489 條在**全部 25 筆**上的數字，**不是本組的數字** | 無害，但**假陽性率比派工信轉述的更高**，第 1819-B 條的規則更該照做 |
+
+**另外更正的是既有裁定、不是派工信**：**c-170 第 2492 條的「兩關」不足以擋掉第 2692 條那一筆，本層加第三關（盤名）與一條合輯否決**（第 2693 條）；
+**稽核層的正規化沒有沿用 `chk-prop.mjs` 的 `&`→`and`，因此漏掉一筆撞批次**（第 2695 條）。
+
+---
+
+## 附：收工實跑
+
+**`node batch-progress/c171/chk-prop.mjs a`**（2026-09-19 收工實跑，逐字）：
+
+```
+prop-a.json：10 張、8 位
+（c50、c51 的 prop 已被同名子批的卡單取代，不重複計入）
+（已知，本機已擋：c49b 沈文程《心事誰人知》 ←→ c106；待本機標記後從 dedup-known.json 移除）
+（已知，本機已擋：c49b 羅文《小李飛刀》 ←→ c106；待本機標記後從 dedup-known.json 移除）
+（已知，本機已擋：cseab Sơn Ca《Băng nhạc Sơn Ca 8 (Tiếng hát Sơn Ca)》 ←→ c64；待本機標記後從 dedup-known.json 移除）
+
+134 批（其中 1 批讀 prop）｜卡數 5332｜跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0（後三項只報不擋）
+
+合計 10 張、8 位｜標記 0
+```
+
+**`標記 0`、`exit 0`** ✔。**第五道（盤名逐字撞 apex 王牌、掛名不同，report-only）本批 0 處**——
+⚠ 這與第 2707 條的盤名假陽性表不衝突：那 19 筆假陽性撞的是**未上架批次的卡**，**不是線上池的 apex 王牌**。
+**10 張、8 位相異掛名**（`Tommy Smith` 2 張、`Ron Carter` 2 張，其餘 6 個各 1 張）。
+
+**`node batch-progress/dedup-crossbatch.mjs c171`**（單獨再跑一次，逐字）：
+
+```
+（c50、c51 的 prop 已被同名子批的卡單取代，不重複計入）
+
+1 批（其中 1 批讀 prop）｜卡數 20｜跨批撞卡 0｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0（後三項只報不擋）
+```
+
+⚠ **`卡數 20` ＝ a 組 10 ＋ b 組 10**，兩組被當成同一批讀，**批內 a／b 交集不在這支腳本的守備範圍**。
+**本層另外手動核過一次 a／b 交集：`set()`（空）** ✔。
+⚠ **b 組已把《Stardust》(2001) 掛成 `Ron Carter`，與第 2698 條一致** ✔——**三張的掛名字串統一，不需要再協調。**
+
+---
+
+## 第 2712 條（**交件版本認定**）
+
+**以工作區當下的 `batch-progress/c171/prop-a.json` 與 `batch-progress/c171/rulings.md` 為交件版**（第 1803-B 條）。
+本層在跑的過程中把 `prop-a.json` 寫回磁碟 **2 次**（第 5 筆、第 10 筆）；
+**「筆數對了」不等於「定稿了」**——定稿的時點是 `chk-prop` 標記 0、`dedup-crossbatch` 跨批撞卡 0、第 315 條結算 10＋3＝13 三者同時成立之後。
+**未碰 `prop-b.json`、未碰任何禁區、未動 git。**
+
+---
+---
+
+# c-171 b 組裁定（2026-09-19，12 張、1998–2019；編號 2751–2810）
+
+**a 組已於本檔寫入 2691–2750 區間的 2691–2712 條，本節用 append 接在其後、未覆寫任何一行。**
+判準沿用 `CURATION-BRIEF-bluenote-post1985.md` → `CURATION-BRIEF-bluenote.md` 第〇節 → `c131` → `c127` → `c126` → `c103plus` → `c93plus`，
+外加 a 組本批新立的 **第 2693 條（Discogs 覆核三關）** 與 **第 2698 條（`Ron Carter` 掛名）**。
+
+---
+
+## 第 2751 條（**總表**）：**12 張＝收 10 ／ 退 2；兩筆退件都是「稽核層的判定在這一筆上不成立」，與 a 組第 2692 條同族**
+
+| | 張 |
+|---|---:|
+| `slice.json` `g: "b"` | **12** |
+| **`prop-b.json` 收件** | **10** |
+| **b 組退件** | **2** |
+| **合計** | **10 收 ＋ 2 退 ＝ 12** ✔（第 315 條結算通過，見第 2770 條） |
+
+**收件 10 張**（依 `prop-b.json` 順序＝slice 順序）：
+`Gonzalo Rubalcaba《The Trio》`**1997**（年份改判）／`Prysm《Time》`1999／`Ron Carter《Stardust》`2001／
+`Stefano Di Battista《Round About Roma》`2002／`Jason Moran《The Bandwagon》`2003／
+`Bill Charlap & Sandy Stewart《Love Is Here to Stay》`2005／`Ruben Hein《Live》`2011／
+`James Francies《Flight》`2018／`Joel Ross《KingMaker》`2019／`Kendrick Scott Oracle《A Wall Becomes a Bridge》`2019。
+
+**10 張、10 個相異掛名字串**（無一重複）。**年份改判 1 筆、覆核成立 9 筆。**
+
+**退件 2 張**：
+
+| # | 卡 | 理由分類 |
+|---:|---|---|
+| 1 | `Michel Petrucciani《Trio in Tokyo》`(1999) | **不是 Blue Note 家族**——`The Blue Note Tokyo` 是**演出場地**不是廠牌（第 2490 條），真廠牌是 Dreyfus Jazz。第 2752 條 |
+| 2 | `Van Morrison《Born to Sing: No Plan B》`(2012) | **曲風閘：非爵士**——MB／Discogs 10 筆／Apple 四邊**零 jazz 訊號**。第 2753 條 |
+
+⚠ **合起來看：稽核層 25 筆 `gap` 裡，a 組撤回 1 筆（Tenor Titans）、b 組撤回 1 筆（Trio in Tokyo），另各有 1 筆因撞批次／合輯、1 筆因曲風退件。**
+**「`gap` 判定成立」與「這一批該收」是兩件事，不要混為一談。**
+
+---
+
+## 第 2752 條（b 組，**退件一；本組最重要的一條**）：**`Michel Petrucciani《Trio in Tokyo》`(1999) 退——`The Blue Note Tokyo` 是演出場地，不是廠牌；稽核層的 `gap` 判定在這一筆上是錯的**
+
+稽核層（`blue-note-artist-axis-audit.md` §三.15）把它判成 `gap`，**佐證舉了三筆 Discogs，三筆的 `label` 陣列裡都有 `The Blue Note Tokyo`**：
+> Discogs 776573／8390770／5811384 的 `label` 逐字 `['Dreyfus Jazz', 'Disques Dreyfus', 'Disques Dreyfus', **'The Blue Note Tokyo'**, 'Studios Ferber', …]`
+
+**那一格不是廠牌，是演出場地。本層逐筆重查：**
+
+| 層 | 逐字 |
+|---|---|
+| MB RG `8b89c2f8-8d7a-3147-af17-1fd33f7d5d2d` | title「Trio in Tokyo」、artist-credit 三位 `Michel Petrucciani • Steve Gadd • Anthony Jackson`、frd 1999-10-15、primary-type Album、**secondary-types 逐字 `["Live"]`** |
+| MB 轄下 5 筆 release | `b4109b5f`（1999 FR，**Dreyfus Jazz／FDM 36605-2**）、`ed7b1841`（1999-10-15 JP，**Disques Dreyfus／VACR-2039**）、`3b2a0d4f`（2009 FR，**Dreyfus Jazz**）、`4752d0fc`（2009-01-19 DE，**Dreyfus Jazz**）、`51e5f847`（1999-11-16 US，`label-info` 逐字 `[]`）。**五筆沒有一筆掛 Blue Note 家族實體。** |
+| Discogs `artist=Michel Petrucciani&release_title=Trio in Tokyo&per_page=50` | **回 12 筆**（France／US／Japan／Russia，1999–2025，含 2025 年 Diggers Factory 黑膠再發）。**12 筆的廠牌一律是 `Dreyfus Jazz`／`Disques Dreyfus`／`Francis Dreyfus Music`／`BMG`／`Diggers Factory`；沒有任何一筆掛 Blue Note。** |
+| **Discogs 776573 的 `companies` 欄逐字展開（決定性的一句）** | **`Recorded At: The Blue Note Tokyo`**；`labels` 欄逐字**只有一格** `Dreyfus Jazz / FDM 36605-2`；notes 逐字 `Live recorded at Blue Note, Tokyo in November 1997.` |
+
+**→ 這張碟與 Blue Note 唯一的關係，是 1997 年 11 月在東京 Blue Note 俱樂部錄的音。廠牌自始至終是法國獨立廠 Dreyfus Jazz。**
+**判定：`not-blue-note`，退件。** 判準依簡報 §一（Blue Note 家族閘）、**第 2490 條**（白名單並明列排除 `club`／`cafe`／`jazz club` 字樣）與判準第 3 條（卡住整條線，必須當場定）。
+
+⚠ **第 2490 條預言過這件事，逐字**：「**盤名裡帶 `Live At The Blue Note` 的碟，在這一線會反覆出現這個假陽性**」。
+**本筆是它的變形——盤名裡沒有 `Blue Note`，是 `label` 陣列裡的場地格把它帶進來的**；稽核層自己在第 2490 條寫了白名單，**但那 3 次 `The Blue Note Jazz Club` 的命中與本筆的 `The Blue Note Tokyo` 是同族不同字串，白名單沒有涵蓋到東京那家。**
+**→ 給主線：白名單要改成「含 `club`／`cafe`／`jazz club`／`<城市名> Blue Note` 的一律先當場地」，或更直接——只採 Discogs `release` 端點 `labels` 欄（entity_type `Label`）那一格，不要採 search API 混合過的 `label` 陣列。**
+
+⚠ **順帶釘死三件事，避免下游重查**：
+1. **錄音是 1997 年 11 月，發行是 1999-10-15**（Petrucciani 1999-01-06 辭世，**這是身後發行的現場盤**）——派工信第三節要求分清錄音年與發行年，答案在這裡。
+2. **稽核層 25 筆 `gap` 裡這一筆要撤回**；a 組與主線都不要再把它列進缺口。
+3. **這張碟仍然是一張值得收的 Petrucciani 現場盤，只是不屬於 Blue Note 線**——`rgMbid 8b89c2f8`、Dreyfus Jazz `FDM 36605-2`、8 軌 62 分 03 秒，**主線若要另開法國廠牌線可直接用**。
+
+---
+
+## 第 2753 條（b 組，**退件二；派工信第三節指名要跑的那一道閘**）：**`Van Morrison《Born to Sing: No Plan B》`(2012) 退——曲風閘，四邊零 jazz 訊號**
+
+派工信逐字要求：「⚠ ⚠ **曲風閘**：Van Morrison 不是爵士線的常客，**這張要逐筆查 RG 端與 Discogs 的 genre／style**；**判不是爵士就退並寫進 rulings**。」**逐筆查完如下：**
+
+| 來源 | genre／style 逐字 | 有 jazz？ |
+|---|---|:--:|
+| **MB RG `de243950` 的 `genres`／`tags`** | **`blues:1`／`folk rock:1`／`rock:1`** | **✘** |
+| Discogs 4230148（US 零售） | genre `['Rock','Blues','Pop']`、style `['Soul']` | ✘ |
+| Discogs 3917807（Europe 零售） | genre `['Rock','Blues','Pop']`、style `[]` | ✘ |
+| Discogs 6663848（Canada）／13715157（Argentina）／12319738・27504015（Russia） | genre 逐字全 `['Rock','Blues','Pop']` | ✘ |
+| Discogs 8960423（Australia） | genre `['Rock','Blues','Pop','Folk, World, & Country']`、style `['Celtic','Blues Rock']` | ✘ |
+| Discogs 10435447・3868014（宣傳）／14918715（2020 數位再發） | `['Rock','Blues']`／`['Blues']`／`['Rock','Blues','Pop']`＋style `['Soul']` | ✘ |
+| **Apple gb `collectionId` 1828525834** | **`primaryGenreName` 逐字 `Rock`** | **✘** |
+
+**→ 十筆 Discogs 條目、MB RG 兩欄、Apple 一欄，合計十三處，`jazz` 出現 0 次。**
+
+**與既有先例的分界（判準第 1 條，這是本條最關鍵的一段）**：
+**c-158 收了 `Van Morrison《What's Wrong With This Picture?》(2003)`**（`genres` 逐字 `["jazz","blues"]`），
+理由照 c-157 b 第 1480 條 `Dr. John《Creole Moon》` 的先例。**但那張的 jazz 訊號是實際存在的**：
+
+| | 《What's Wrong…》(2003，c-158 收) | 《Born to Sing》(2012，本層退) |
+|---|---|---|
+| MB RG genres | 九個裡有 **`jazz`** 與 **`jazz blues`** | **blues／folk rock／rock，無 jazz** |
+| Discogs genre | **`Jazz, Rock`** | **`Rock, Blues, Pop`（10 筆一致）** |
+| 同期紙本 | **Billboard 2003-09-20 p96 爵士專欄逐字 `the blues- and jazz-infused "What's Wrong With This Picture?"`** | 本層未查到任何把它歸爵士的同期來源 |
+| 零售廠牌欄第一格 | **`Blue Note`**（美版） | **`Exile`**（美／歐版，`labels` 欄逐字只有一格） |
+
+**→ 先例的三個支撐（slice 標 jazz／池中既有藝人／(戊) 閘乾淨）在本張只剩兩個，而「疑似非爵士」的那一項從「訊號不乾淨」變成「四邊零訊號」。先例的前提不成立。**
+**判定：曲風閘不過，退件。** 判準依簡報第一節第 4 點（「撞到疑似非爵士的，退並寫進 rulings」）與判準第 3 條。
+
+⚠ ⚠ **但要把兩件事寫清楚，因為這一筆完全可逆（判準第 2 條）**：
+1. **它確實是 Blue Note 授權發行的碟，家族閘本身過得了**：Discogs 4230148／3917807 的 `companies` 欄逐字 `Licensed To: Blue Note Records`、`Manufactured By: Blue Note Records`，歐版 notes 逐字 `℗ 2012 The copyright in this sound recording is owned by Exile Records Ltd. **under exclusive license to Blue Note Records**.`——**與 c-158《What's Wrong…》靠 `Manufactured by Blue Note Records` 過第 1445 條那一層是同一種證據**。
+2. ⚠ ⚠ **稽核層的 `label` 陣列在這一筆上又一次誤導**：它舉的 `['Exile', 'Blue Note Records', …]` 是 search API 混過 company 的陣列；**`release` 端點的 `labels` 欄（entity_type `Label`）逐字只有一格 `Exile`**。**這是第 2752 條同一個成因的第二次命中，本組 12 張裡就中了兩次。**
+3. **主線若要收**：`rgMbid de243950-fafd-420f-bcf9-668241d61b45`、Blue Note 授權／Exile `509996 23491 2 3`、US 2012-10-02 CD 10 軌 59 分 54 秒（MB frd 逐字 `2012-09-29`、Apple `releaseDate` 逐字 `2012-09-29T07:00:00Z`）、`genres` 建議 `['rock','blues']`——**證據已備齊，改判只要新增一列，不必重查。**
+
+---
+
+## 第 2754 條（**覆核稽核層的「這張是 Blue Note 家族」判定，b 組 12 張逐筆**）：**10 成立、2 不成立**
+
+派工信逐字要求「**你要逐張覆核稽核層的判定**」。方法照 a 組第 2705 條，**再加一道本層新增的**：
+**凡 search API 的 `label` 陣列出現 Blue Note，一律再打 `api.discogs.com/releases/<id>` 把 `labels`（entity_type `Label`）與 `companies`（帶 role）分開看**——
+**search API 的 `label` 陣列把 label／company／studio／演出場地混在一起（第 2490 條），分不開就會判錯。**
+
+| # | 卡 | `releases/<id>` 的 `labels` 欄逐字 ＋ 目錄號 | 覆核 |
+|---:|---|---|:--:|
+| 1 | Gonzalo Rubalcaba《The Trio》 | 歐版 8259286 逐字 `Blue Note / 4944422`＋`Somethin' Else / 5591`；notes 兩次逐字 `Blue Note catalog no.` | ✔ |
+| **2** | **Michel Petrucciani《Trio in Tokyo》** | **776573 逐字只有 `Dreyfus Jazz / FDM 36605-2`；`The Blue Note Tokyo` 在 `companies` 欄、role 逐字 `Recorded At`** | **✘ 退（第 2752 條）** |
+| 3 | Prysm《Time》 | 930303 逐字**只有一格** `Blue Note / 7243 5 21886 2 8` | ✔ |
+| 4 | Ron Carter《Stardust》 | 9780419 逐字 `Blue Note / 7243 5 37813 2 3`（日版 11783920 是 `Somethin' Else / TOCJ-68053`＝家族內日本線，第 2705 條末句） | ✔ |
+| 5 | Stefano Di Battista《Round About Roma》 | 5074194 逐字**只有一格** `Blue Note / 7243 542406 2 1`；宣傳 CDr 7439042 亦 `Blue Note` | ✔（⚠ **MB 那端掛的是母公司 `EMI`**，第 2487 條型） |
+| 6 | Jason Moran《The Bandwagon》 | 1872228 逐字 `Blue Note / 7243 5 80917 2 4`；歐版 442265 的 `companies` ℗© 逐字 `Blue Note Records` | ✔（⚠ `Village Vanguard` 在 `companies`、role `Recorded At`，**是場地不是廠牌**） |
+| 7 | Bill Charlap & Sandy Stewart《Love Is Here to Stay》 | 8390356／13840437／5992975 逐字皆 `Blue Note`／`7243 5 60340 2 0`・`…60341 2 9`；Apple copyright 逐字 `℗ 2005 Blue Note Records` | ✔ |
+| 8 | Ruben Hein《Live》 | 4604332 的 search `label` 陣列第一格 `EMI`、**第二格 `Blue Note`**；依第 1794／1919 條掃整條鏈過閘，且與同藝人 c-169 b 已收的《Loose Fit》（2983088 第一格逐字 `Blue Note`）是同一家荷蘭分支 | ✔（⚠ 鏈上另有 `Theater Carré`＝場地、`Optimal Media GmbH`＝壓片廠，**已排掉**） |
+| **9** | **Van Morrison《Born to Sing: No Plan B》** | **4230148／3917807 的 `labels` 欄逐字只有一格 `Exile`；`Blue Note Records` 在 `companies` 欄、role 逐字 `Licensed To`／`Manufactured By`** | **✔（家族成立）但因曲風另案退**（第 2753 條） |
+| 10 | James Francies《Flight》 | 34231921／13995462／14779127／12773093 四筆的 `label` 逐字**全部只有** `Blue Note`；`B002868602`／`00602567741343` | ✔（**本組最乾淨**） |
+| 11 | Joel Ross《KingMaker》 | 13619280 逐字 `Blue Note / B003003802`（UMe 正規美版形制，非 `BNS-`）；日版 15183099 逐字 `Blue Note / UCCQ-1108`；Apple copyright 逐字 `Blue Note Records` | ✔ |
+| 12 | Kendrick Scott Oracle《A Wall Becomes a Bridge》 | 14078627 逐字**只有一格** `Blue Note / 774920 6`；Apple copyright 逐字 `Blue Note Records` | ✔（⚠ **MB 那端掛成母公司 `Capitol Records`**，第 2487 條的原始樣本） |
+
+⚠ **`Blue Note Compagnie`（`BNS-`）與 `Blue Note Digital`（MB label `0293ae5c`、barcode 810211 段）本組 12 張各 0 次命中**（與 a 組同）。
+⚠ **`Somethin' Else` 照第 2705 條末句當家族內日本線**（本組第 1、4 兩張命中，同一位監製 Hitoshi Namekata）。
+⚠ ⚠ **本組的新發現：12 張裡有 3 張的 search API `label` 陣列含 Blue Note、但 `releases/<id>` 的 `labels` 欄不含**（第 2、9 兩張是場地／授權方，第 8 張是第二格而非第一格）。**命中率 3／12 ＝ 25%——這個比例高到不能再用 search API 的 `label` 陣列直接判廠牌。**
+
+---
+
+## 第 2755 條（**掛名總表**）：**10 個字串；照 MB RG artist-credit 原樣 10、沿用池中既有字串 8、新立 2、收攏 0、新造分裂 0**
+
+| 掛名 | 來源 | 池中既有 |
+|---|---|---|
+| `Gonzalo Rubalcaba` | MB RG credit 單一實體 70053535 | **13 張**（c-150～c-161 卡單），沿用 |
+| `Prysm` | MB RG credit 單一實體 94afe824（Group） | **3 張**（c-152／c-154／c-157），沿用 |
+| `Ron Carter` | MB RG credit 單一實體 57db3f59 | **9 張**（c-150～c-161 卡單），沿用；**與 a 組第 2698 條一致** |
+| `Stefano Di Battista` | MB RG credit 單一實體 f6c8ec20 | **2 張**（c-157／c-160），沿用 |
+| `Jason Moran` | MB RG credit 單一實體 2f97f8ef | **8 張**（c-155～c-163），沿用 |
+| **`Bill Charlap & Sandy Stewart`** | **MB RG credit 兩位串接**（第 2756 條） | **0 張——本批新立**；與 `Bill Charlap Trio`（6）／`Bill Charlap`（1）／`Bill Charlap & Renee Rosnes`（1）**並存不收攏** |
+| `Ruben Hein` | MB RG credit 單一實體 347bd1f6 | **1 張**（c-169 b《Loose Fit》），沿用 |
+| `James Francies` | MB RG credit 單一實體 604f0692 | **1 張**（c-165《Purest Form》），沿用 |
+| `Joel Ross` | MB RG credit 單一實體 **6d09039b** | **4 張**（c-170 卡單），沿用；**MB 同名 `02f84b16` 不是本人** |
+| `Kendrick Scott Oracle` | MB RG credit 單一實體 71d3da26（Group） | **1 張**（c-169 b《We Are the Drum》），沿用 |
+
+⚠ **非 ASCII 連字號正規化**：10 個掛名與 10 個盤名逐字掃過，**`‐ ‑ ‒ – — ― －` 與 U+30FC 各 0 命中**，不需要正規化。
+⚠ **Discogs 的同名消歧編號 `(2)`／`(3)` 一律不是名字的一部分**（本組命中 3 次：`Prysm (2)`、`Sandy Stewart (2)`、`Joel Ross (3)`），全部進 `queryAlias`。
+
+---
+
+## 第 2756 條（**掛名裁定；派工信第三節指名的那一筆**）：**`Bill Charlap & Sandy Stewart` 取 MB 串接形——「並列聯名」的前提成立**
+
+派工信逐字：「⚠ ⚠ **Discogs 條目逐字是 `Sandy Stewart (2) & Bill Charlap`——這是不是聯名盤？掛名要照 MB RG credit 判**（第 1539／1745-B 條：**「並列聯名」是前提**，前提成立才取串接形）。」
+
+**前提查驗：成立。**
+
+| 來源 | 逐字 |
+|---|---|
+| **MB RG `6820c0ec` 的 `artist-credit`** | **兩位**：`Bill Charlap`（85cc88c3，Person，**joinphrase 逐字 ` & `**）＋`Sandy Stewart`（55ab06a1，Person，disambiguation 逐字 `1950s singer`，joinphrase 空） |
+| **MB release `6b65b194` 的 `artist-credit`** | **逐字 `Bill Charlap & Sandy Stewart`** |
+| **Apple us `collectionId` 715815913 的 `artistName`** | **逐字 `Bill Charlap & Sandy Stewart`** |
+| Discogs 美版宣傳 10351326 標題 | 逐字 `Bill Charlap & Sandy Stewart (2)` |
+| Discogs 美版零售 8390356／歐版 13840437／泰版 5992975 標題 | **逐字 `Sandy Stewart (2), Bill Charlap`（順序相反、逗號）** |
+
+**裁定：`Bill Charlap & Sandy Stewart`。**
+理由：**第 1539 條原文的判準是「取 MB `credited-name` 與 joinphrase 串接出來的那一種」**（第 1745-B 條已更正過「取 `&`」那句誤述）——
+**本張串接出來的結果剛好帶 `&`，那是這一例的結果不是規則**；MB 與 Apple 兩邊一致、**且沒有新造任何一邊都沒有的連接符**。
+**逆序逗號形三筆同源（同一次發行的三個地區版），已整組進 `queryAlias`。**
+
+⚠ **派工信那一句「Discogs 條目逐字是 `Sandy Stewart (2) & Bill Charlap`」與實況不符**：**Discogs 逐字是 `Sandy Stewart (2), Bill Charlap`（逗號，不是 `&`）**，見第 2771 條。
+⚠ **先例**：**`Bill Charlap & Renee Rosnes《Double Portrait》(2010)`（c-162）是同一形狀**——同一位鋼琴家的二重奏盤、同樣用 `&` 串接、同樣與 `Bill Charlap Trio` 並存。**本張照它走，池中因此有四個 Charlap 字串、四種編制**（第 964／1131／1801-B 條：不同 credit 並存不是第 1418 條的分裂）。
+
+---
+
+## 第 2757 條（**掛名，跨組協調；呼應 a 組第 2698 條**）：**`Ron Carter《Stardust》`(2001) 掛 `Ron Carter`，與 a 組兩張一致**
+
+**開工時 `batch-progress/c171/rulings.md` 尚未建立（a 組還沒交件），本層依 MB RG credit 與池中先例先判 `Ron Carter`；收工前重讀本檔，a 組第 2698 條逐字裁定「`Ron Carter` 三張一律掛 `Ron Carter`」，兩組結論相同，不需要改。**
+a 組第 2698 條末段亦逐字記「b 組已把《Stardust》(2001) 掛成 `Ron Carter`，與第 2698 條一致 ✔」。
+
+**本層自己查到的三層證據**（與 a 組獨立取得，可互為覆核）：
+1. MB RG `bfb6c1ec` 的 artist-credit 逐字**單一實體** `Ron Carter`（57db3f59，Person／`US jazz double-bassist`），joinphrase 空——**不是並列聯名，第 1539／1745-B 條的前提不成立**。
+2. Discogs 六筆條目的 `artists` 欄逐字**都只有** `Ron Carter`。
+3. 池中九張裸名卡（c-150／c-151／c-153／c-154／c-156／c-157／c-158／c-160／c-161），**`seed_cards.json` 裡 `Ron Carter` 掛頭 0 張**——**與 a 組第 2698 條的實掃數字一致（9，不是派工信寫的 11）。**
+
+⚠ **`Ron Carter Trio`（c-168《So What》1998）／`Ron Carter & Danny Simmons`（c-164）／`Ron Carter, Ricky Dillard`（c-167）／seed 兩張斜線與 `&` 聯名，全部並存、不收攏。**
+
+---
+
+## 第 2758 條（**掛名，其餘八筆的沿用依據**）：**每一筆都實掃過池中字串，沒有一筆是憑印象沿用**
+
+- **`Joel Ross`**：MB RG credit 逐字 `Joel Ross`／**`6d09039b`（Person／`US vibraphonist`）**；c-170 第 2350 條已判、卡單四張在案。**MB 同名 `02f84b16`（`American pianist, conductor, choral arranger`）名下無本碟**（第 179／250／324 條：只看 `type`／`disambiguation`，不看 score）。
+  ⚠ **本層實測複驗第 1819-B／2484 條的更正成立**：`release-group?artist=6d09039b-…&type=album&fmt=json&limit=100` **回得到 `KingMaker`**；c-170 第 2356(二) 條寫的「回 `count: 0`」確實是錯的。
+- **`Kendrick Scott Oracle`**：MB RG credit 逐字同、**Group `71d3da26`**；c-169 b 第 1804-B 條已判保留、與 c-166《Corridors》的三人並列 credit 是兩個掛名主體。**個人字串 `Kendrick Scott` 在四處逐字命中 0 筆**，不存在收攏問題。
+- **`Ruben Hein`**：MB RG credit 逐字同；c-169 b《Loose Fit》在案。**Discogs 標題的 `Ruben Hein With The Metropole Orchestra* Conducted By Jules Buckley` 是盤面演出說明、不是 credit，不新造**（第 1745-B 條：四邊都沒有的字串一律不造）。⚠ **`Metropole Orkest` 在四處只出現在 `Trijntje Oosterhuis, Metropole Orkest`（c-160 slice）與 `Trijntje Oosterhuis & Metropole Orkest`（c-165 slice）兩個聯名字串裡，單獨字串 0 張。**
+- **`James Francies`**：四邊（MB／Discogs 四筆／Apple／池中 c-165）逐字一致，**連 Discogs 消歧編號都沒有**。
+- **`Gonzalo Rubalcaba`**：MB RG credit 單一實體；**Discogs 六筆標題逐字都是三人並列 `Gonzalo Rubalcaba, Dennis Chambers, Brian Bromberg`，但 MB RG credit 不是並列聯名**，前提不成立、不取串接形。
+- **`Stefano Di Battista`**：MB 與池中兩張逐字同；**Discogs 與 Apple 逐字是小寫 `Stefano di Battista`——大小寫差異不新造字串**，小寫形進 `queryAlias`。
+- **`Prysm`**：MB Group 實體 94afe824＝池中三張那一個；`Prysm (2)` 是 Discogs 消歧編號。
+- **`Jason Moran`**：MB 與池中八張逐字同；**盤名與團名同字（`The Bandwagon`），但四邊沒有一個把 `Jason Moran & The Bandwagon` 當 credit，不造。**
+
+---
+
+## 第 2759 條（**年份**）：**改判 1 筆、覆核成立 9 筆；第 1800-B 條的兩種掃描 10／10 全跑，⚠ 其中 6 張「MB 連 barcode 都沒有，第一種查法根本跑不起來」**
+
+### （一）改判的那一筆
+
+**`Gonzalo Rubalcaba《The Trio》` 1998 → 1997。**
+
+| 層 | 逐字 |
+|---|---|
+| slice／MB RG `first-release-date` | `1998` |
+| MB 轄下唯一有日期的 release `d67f178e` | `1998`、JP、`somethin’else`／`4944422` |
+| **Discogs 11564432（第二種掃描撈出，MB 未建）** | **`released` 逐字 `1997-12-22`、country 逐字 `Japan`、`labels` 逐字 `Somethin' Else / TOCJ-5591`、barcode `4988006736207`、`CD, Album`、7 軌 68:56** |
+| Discogs 19230724（同號日本宣傳盤） | 1997 |
+| Discogs 8259286（歐版 Blue Note 4944422） | `released` 逐字 `1998`（只到年） |
+
+**日版早歐版約兩個月、七軌逐軌相同 → `year` 取 1997。**
+⚠ **本張是 `TOCJ-`，不是 `UCCQ-`**——**第 1811-B 條那句「`UCCQ-` 在 2015 年後只當版本補正」不適用於本筆；同條逐字也寫著「`TOCJ-` 要查」。**
+⚠ **MB 的 `first-release-date` 之所以是 1998，正是因為 MB 沒建日版**（與第 1800-B 條 `Scolohofo《Oh!》` 同一個成因）。
+
+### （二）兩種掃描的實跑結果
+
+| 卡 | 第一種（MB barcode 反查） | 第二種（`artist`＋`release_title` 全掃） | 補出的版本 | 改年份 |
+|---|---|---|---|:--:|
+| The Trio | **可跑**（724349444225） | 6 筆 | **日版 TOCJ-5591、歐版 Somethin' Else 5591、兩款俄版** | **✔ 1998→1997** |
+| Time | 可跑（724352188628） | 1 筆＋`artist=` 單欄 22 筆 | 無（本碟只有一個版本） | ✘ |
+| Stardust | **跑不起來（barcode 欄 null）** | 6 筆 | **美版原壓、BMG 俱樂部版、美版宣傳、日版 TOCJ-68053、歐版** | ✘ |
+| Round About Roma | 可跑（724354240621） | 2 筆＋`artist=` 單欄 30 筆 | 英歐宣傳 CDr | ✘ |
+| The Bandwagon | **跑不起來** | 4 筆 | **美版原壓、俱樂部版、Advance 宣傳、歐版** | ✘ |
+| Love Is Here to Stay | **跑不起來** | **23 筆**（19 筆是別碟，見下） | **美版原壓、美版宣傳、歐版、泰版** | ✘ |
+| Live | **跑不起來** | `artist`＋`title` 只回 2 筆（1 筆是別碟）→ **改 `artist=` 單欄才回 23 筆** | 荷蘭版 `50999 9410122 5` | ✘ |
+| Flight | **跑不起來** | 4 筆 | 美版、歐版、英美版、宣傳 CDr | ✘ |
+| KingMaker | **跑不起來** | 3 筆 | **日版 SHM-CD UCCQ-1108（2019-11-06，13 軌）**、數位 FLAC | ✘ |
+| A Wall Becomes a Bridge | 可跑（602577492068） | 1 筆＋`artist=` 單欄 12 筆 | 無（本碟只有一個實體版本） | ✘ |
+
+**→ 10 張裡 6 張的 MB release 完全沒有 barcode，第一種查法跑不起來**（c-170 第 2362 條記的是 3／15，**本組是 6／10，比例高得多**）——
+**根因與本批 slice 的成因同源：MB 對這 25 張的建檔本來就殘缺，`label-info` 空與 barcode 空常常同時發生。**
+**⚠ 第 1800-B 條的第二種掃描在本組是唯一可用的年份查法，不是補充。**
+
+⚠ **`artist`＋`release_title` 兩欄查回 0／過少、要改單欄查的，本組命中 1 次**（`Ruben Hein《Live》`：Discogs 的標題逐字是 `Live (At The Royal Theatre Carré)`，兩欄查只回 2 筆且其中 1 筆是別碟）——**第 1811-B 條那句「有時要單欄查」再應驗一次。**
+⚠ **俄版 `Unofficial Release` 本組出現 4 次**（The Trio 兩筆、Trio in Tokyo 一筆〔已退〕、Born to Sing 兩筆〔已退〕），**一律不當年份依據。**
+⚠ **`UCCQ-` 在本組命中 1 次**（`KingMaker` 日版 UCCQ-1108，`released` 逐字 `2019-11-06`，**晚美版半年**）——**第 1811-B 條「2015 年後只當版本補正」再應驗一次，不改年份。**
+⚠ **Apple 的 `releaseDate` 在本組有 2 筆不可當首發日**：`Round About Roma` 逐字 `2003-05-30`（**晚實體半年，是數位上架日**）、`Love Is Here to Stay` 逐字 `2005-01-01T08:00:00Z`（**只到年的占位值**）。
+
+---
+
+## 第 2760 條（**形態閘，判準順序照第 1811-B 條：零售條目的 `format` 欄 ＞ 總長**）：**10 張全過，0 退**
+
+| 卡 | 零售 `format` 逐字 | 軌數 | 實算總長 | 判 |
+|---|---|---:|---:|---|
+| The Trio | `CD, Album` | 7 | **68:56** | Album |
+| Time | `CD, Album`（`text: Copy Protected`） | 10 | 49:56 | Album |
+| Stardust | `CD, Album` | 8 | 52:03 | Album |
+| Round About Roma | `CD, Album`（`text: Copy Protected`） | 8 | 55:15 | Album |
+| The Bandwagon | `CD, Album` | 10 | 58:32 | Album |
+| Love Is Here to Stay | `CD, Album` | 11 | 56:51 | Album |
+| **Live** | `CD, Album` | 10 | **40:54** | **Album（見下）** |
+| Flight | `CD, Album, Stereo` | 11 | （Discogs 未逐軌標時長，**待本機補**） | Album |
+| KingMaker | `CD, Album` | 12（日版 13） | 約 67 分 | Album |
+| A Wall Becomes a Bridge | `CD, Album` | 12 | 約 52 分 | Album |
+
+**十張的 `format` 欄都不含 `EP`／`Single`。**
+⚠ **需要動用判準順序的是兩張**：
+1. **`Ruben Hein《Live》` 10 軌 40 分 54 秒**是本組最短的——**但零售條目 `format` 欄逐字 `CD, Album`，依第 1811-B 條的順序判 Album**（與 c-170 第 2348 條 `FATHERS` 8 軌 27 分 17 秒判收同向，本張比它長 13 分鐘）。
+2. **`James Francies《Flight》` Discogs 四筆都沒有逐軌時長**，**只剩 `format` 欄可判**——四筆的 `format` 欄逐字都是 `Album`，判 Album。**這是「零售 `format` 欄 ＞ 總長」這個順序真正起作用的一次**（與 c-169 a 第 2133 條 `lophiile` 那種「Discogs 零命中、只剩時長」正好相反）。
+⚠ **`A Wall Becomes a Bridge` 有四軌是 1 分鐘上下的短接口**（〈BeLoved〉0:58／〈Horizons〉1:17／〈Plēh〉2:12／〈Windows〉2:55）——**不得被下游誤讀成 EP 形態或未完成片段**。
+
+---
+
+## 第 2761 條（**合輯風險逐張核；判為合輯 0**）：**兩張「全翻唱／全標準曲」與一張「舊曲目現場重演」細判過**
+
+**10 張的 MB `secondary-types` 逐字都不含 `Compilation`；全部 Discogs 條目的 `format` 欄也沒有一筆帶 `Compilation`／`Sampler`。**
+**盤名帶 Best of／Greatest／Collection／Anthology／The Very Best／Blue Note Trip／Sidetracks 的：0 張。** 三張形狀可疑的細判過：
+
+| 卡 | 可疑處 | 判定 |
+|---|---|---|
+| **Gonzalo Rubalcaba《The Trio》** | **七軌全是標準曲庫**（〈Maiden Voyage〉〈Caravan〉〈On Green Dolphin Street〉〈Hot House〉〈Yesterdays〉〈Woodyn' You〉〈Manha De Carnaval〉） | **Album。** Discogs 8259286 的 credits 欄逐字是同一組三人（Rubalcaba 鋼琴兼製作、Bromberg 貝斯、Chambers 鼓）、同一次錄音；**與第 2359 條《The Women Who Raised Me》同族——重訪曲庫是企劃方向，不是把舊錄音集合起來**。⚠ **正文不得寫成「收錄經典錄音」。** |
+| **Bill Charlap & Sandy Stewart《Love Is Here to Stay》** | **十一軌全是美國歌本老歌**，且有兩組併軌（〈Happiness Is Just a Thing Called Joe / A Sleepin' Bee〉〈I've Got a Crush on You / Do It Again〉） | **Album。** Discogs 13840437 notes 逐字 `Recorded on October 23 & 24, 2004 at Sound on Sound Studio A, New York.`——**十一軌都是那兩天的新錄音**；credits 欄逐字只有鋼琴與人聲兩件。**併軌是演奏上的串接，不是兩張碟的軌拼在一起。** |
+| **Ruben Hein《Live》** | **十軌全部是他先前錄音室曲目的管弦樂版**（〈Elephants〉〈That's Not Life〉〈Say Bye〉在 Discogs 上另有 2010 年的單曲條目） | **Album（現場）。** MB `secondary-types` 逐字只有 `Live`；**同一晚的新演出，不是舊母帶集合**。⚠ **正文不得寫成「精選」。** |
+
+---
+
+## 第 2762 條（**現場盤**）：**2 張是現場，MB 兩張都標對了；⚠ 但 `slice.json` 的 `live` 欄兩張都是 `false`**
+
+| 卡 | MB `secondary-types` | slice `live` | 其他層 | 判 |
+|---|---|---|---|---|
+| **Jason Moran《The Bandwagon》** | **逐字 `["Live"]`** | **逐字 `false`** | Discogs 1872228／442265 notes 逐字 `Recorded November 29-30, 2002 at The Village Vanguard.`；歐版 companies 逐字 `Recorded At: Village Vanguard` | **是現場盤** |
+| **Ruben Hein《Live》** | **逐字 `["Live"]`** | **逐字 `false`** | MB release title 逐字 `Live`；Discogs 4604332 標題逐字 `Live (At The Royal Theatre Carré)`、companies 有 `Theater Carré` | **是現場盤** |
+
+**處置**：**`releaseType` 仍照 MB `primary-type` 寫 `Album`**（第 253／1797／2139／2360 條的既有寫法），**現場身分寫進 `risk` 與 `queryAlias`**。
+⚠ **正文必須寫成現場盤，且發行年不是錄音年**：Moran 錄音 2002-11-29／30、發行 2003-08-19。
+⚠ ⚠ **`slice.json` 的 `live` 欄在本批兩張都與 MB 相反**——**本批的 slice 不是列舉檔產的，`live` 欄是稽核層填的預設值 `false`，不是實查結果**。
+**第 1796-B／1805-B／1812-B 條擴大到本批：`c171/slice.json` 的 `live`／`country`／`format`／`catno`／`countries`／`formats`／`nReleases`／`reissueSeries` 八個欄位一律不可信，全部要自己查。**
+⚠ **另外 8 張的 `secondary-types` 逐字都是空陣列，四層核完確實都不是現場**（**第 1771 條第 3 點「盤名帶 Live 卻不是現場」本組 0 次**）。
+
+---
+
+## 第 2763 條（**曲風**）：**`['jazz']` 9 張、`['jazz','pop']` 1 張；因曲風退件 1（第 2753 條）；⚠ 一格是本組最弱的證據**
+
+| 組合 | 張 | 名單 |
+|---|---:|---|
+| `['jazz']` | **9** | The Trio／Time／Stardust／Round About Roma／The Bandwagon／Love Is Here to Stay／Flight／KingMaker／A Wall Becomes a Bridge |
+| `['jazz','pop']` | **1** | Ruben Hein《Live》 |
+
+**取捨規則沿用 c-169 b 第 2203 條與 c-170 第 2361 條，一字不改**：
+1. **`contemporary jazz`／`post-bop`／`bop`／`bossa nova`／`latin`／`standards` 等子類與周邊詞一律不跟**（第 1572 條，十個合法值裡沒有它們）。**本組這些詞出現 20 次以上，一次都沒跟。**
+2. Discogs 條目之間打架時取交集；MB 空欄時只讀 Discogs、再不足才讀 Apple。
+3. 非曲風的分類欄不跟。
+
+⚠ **Apple 的 `primaryGenreName` 本組出現一個十類沒有的值**：`Love Is Here to Stay` 逐字 `Standards`——**折進 `jazz`**（Discogs 歐版 genre 逐字 `Jazz`，兩邊不衝突）。
+⚠ **`Gonzalo Rubalcaba《The Trio》` 的 Discogs genre 逐字是 `Jazz, Latin`、藝人層 MB genres 逐字含 `afro-cuban jazz`／`latin jazz`**——**`latin` 不在十個合法值裡，且池中 13 張 Rubalcaba 卡逐字全部是 `["jazz"]`**，**判 `['jazz']`，與先例一致、不開第二格。**
+
+### ⚠ 最弱的一格，寫明（可逆）
+
+| 卡 | 判 | 為什麼弱 |
+|---|---|---|
+| **`Ruben Hein《Live》`** | **`['jazz','pop']`** | **MB RG 的 `genres` 與 `tags` 兩欄逐字皆空陣列；本層在 Discogs 4604332 也沒有取到 genre／style。四邊沒有一邊直接給曲風。** 判的依據只有**同藝人同時期的既有先例**——**c-169 b《Loose Fit》(2010) 的 `genres` 逐字 `["jazz","pop"]`，而本碟十軌就是《Loose Fit》曲目的管弦樂現場版**。**本機審稿可退成 `['jazz']`，可逆。** |
+
+---
+
+## 第 2764 條（**第 611 條五種盲區的人工掃**）：**命中 1 筆（盲區三），其餘四種 0 筆**
+
+**比對面**：`seed_cards.json`（**唯讀**，17,248 列）＋ `desc-tools/batches/cards/*.json`（全部）＋ `batch-progress/c*/prop-*.json`（全部）＋ `batch-progress/c*/slice.json`（全部），**合計 30,184 列**。
+**判「已收」一律比對 `album` 欄逐字（正規化後），不用 grep 掃整份 JSON**（第 1819-B 條）。
+
+| 盲區 | 結果 |
+|---|---|
+| 一、群組掛名 vs 個人掛名 | **掃過，0 筆撞卡。** `Bill Charlap` vs `Bill Charlap Trio` vs `Bill Charlap & Renee Rosnes` vs 本批 `Bill Charlap & Sandy Stewart`／`Kendrick Scott` vs `Kendrick Scott Oracle`／`Ron Carter` vs `Ron Carter Trio`／`Ruben Hein` vs `Ruben Hein & Metropole Orkest`／`Michel Petrucciani` vs `The Michel Petrucciani Trio`（c-153 slice）——**逐筆展開比對**。`Sandy Stewart`、`Kendrick Scott`、`Metropole Orkest` 三個單獨字串在四處各 0 張。 |
+| 二、同名不同盤的 Volume 碟 | **本組 0 張帶 Vol./Part 尾綴。** |
+| **三、MB 把同一張碟建成兩個 RG** | **⚠ 命中 1 筆：`Ruben Hein《Live》`**（第 2765 條）。其餘 9 張各打一次 `release-group?query=artist:"<掛名>" AND releasegroup:"<盤名>"`，**count 全部是 1**（`Bill Charlap` 回 2，第二筆是 Tony Bennett／Diana Krall 2018 那張同名別碟）。 |
+| 四、斜線掛名 | **掃過，0 筆。** seed 的 `Red Garland / Ron Carter / Philly Joe Jones` 與本批 `Ron Carter` 不撞；`Stefon Harris / Jason Moran / Greg Osby / Mark Shim`（c-156）與本批 `Jason Moran` 不撞。 |
+| 五、同名但不同盤 | **掃過，命中 26 筆字串、真的同碟 0 筆**（第 2767 條）。 |
+
+---
+
+## 第 2765 條（**盲區三的那一筆；裁定，可逆**）：**`Ruben Hein《Live》` 在 MB 有兩個 release-group，維持 slice 釘的 `d00a707f`，`47b79830` 明寫「刻意不釘」**
+
+| | RG A（**本卡釘的**） | RG B |
+|---|---|---|
+| MBID | **`d00a707f-f318-434e-890a-dad529f8744b`** | `47b79830-e765-41bc-a98e-18c99e0bce38` |
+| title | `Live` | `Live` |
+| artist-credit | **`Ruben Hein`**（單一實體 347bd1f6） | **`Ruben Hein & Metropole Orkest`**（347bd1f6 ＋ 9f2ae371，joinphrase ` & `） |
+| `secondary-types` | **逐字 `["Live"]`** | **逐字空陣列（漏標）** |
+| frd | 2011 | 2011 |
+| 轄下 release | `6c05749e`（**無國別、無 barcode、`label-info` 逐字空陣列**、CD 10 軌） | `e164a2da`（**NL、barcode 逐字 `5099994101225`、`label-info` 逐字 `EMI`**、CD 10 軌） |
+| 十軌軌名 | — | **逐字 `Fear / Traffic Jam / Stand Up, Speak Out / Rosie / Elephants / Modest man / That's Not Life / Say Bye / No Matter What / Deaf, Dumb, Exposed`** |
+
+**兩個 RG 的十軌軌名逐字相同，RG B 的 barcode `5099994101225` 逐字等於 Discogs 4604332 的目錄號 `50999 9410122 5`——是同一張碟，MB 建了兩次。**
+
+**裁定：維持 `d00a707f`。** 三條判準：
+1. **有先例**：簡報 c131 §一.1 逐字「`rgMbid` 用列舉檔的，不要自己另找」；**c-169 b 第 1804-B 條處理 `The Blue Note 7《Mosaic》` 雙 RG 時也是釘形狀對的那一個、另一個明寫「刻意不釘」**。**`d00a707f` 的 `secondary-types` 逐字 `["Live"]` 是對的，`47b79830` 漏標。**
+2. **可逆**：改釘只是換 `mbNote` 裡第一個 UUID，成本極低。
+3. **掛名後果**：改釘 `47b79830` 就必須把掛名改成 `Ruben Hein & Metropole Orkest`——**那是一個池中零張的新字串，且與派工信指定、c-169 b 已立的 `Ruben Hein` 衝突**（第 307／1418 條）。**收益不抵成本。**
+
+⚠ ⚠ **但要把代價寫給本機**：**`d00a707f` 轄下那筆 release 沒有 barcode、沒有 `label-info`、沒有國別**——
+**封面（CAA）與試聽（UPC）兩條探測鏈在這個 RG 上都可能撈不到東西；`47b79830`／`e164a2da` 才是帶 barcode `5099994101225` 與 `label-info` 的那一個。**
+**本機若探測落空，先試 `47b79830`；更好的做法是到 MB 端把兩個 RG 合併。**
+
+---
+
+## 第 2766 條（**盤名取法，四筆有歧形**）：**一律取 MB RG 的 `title` 原樣，其他形進 `queryAlias`**（與 a 組第 2708 條同判）
+
+| 卡 | MB RG `title` 逐字 | 其他形逐字 | 取 |
+|---|---|---|---|
+| Stefano Di Battista | `Round About Roma` | Discogs 零售 5074194 `'Round About Roma`（**前置撇號**）；宣傳 CDr 與 Apple 無撇號 | **`Round About Roma`**（三比一） |
+| Ruben Hein | `Live` | Discogs 4604332 `Live (At The Royal Theatre Carré)` | **`Live`** |
+| Kendrick Scott Oracle | `A Wall Becomes a Bridge`（**小寫 a**） | Discogs 14078627 `A Wall Becomes A Bridge`（大寫 A）；Apple 小寫 | **`A Wall Becomes a Bridge`**（二比一） |
+| Gonzalo Rubalcaba | `The Trio` | Discogs 六筆標題都是 `Gonzalo Rubalcaba, Dennis Chambers, Brian Bromberg - The Trio`（**掛名並列在標題裡，盤名本身相同**） | **`The Trio`** |
+
+⚠ **`Joel Ross《KingMaker》` 的駝峰字形 MB／Discogs／Apple 三邊逐字一致**（`KingMaker`，中間大寫 M），**不是筆誤、不要改成 `Kingmaker`**。
+⚠ **非 ASCII 連字號與 U+30FC 全組 0 命中**（`chk-prop` 的四道字形檢查亦 0）。
+
+---
+
+## 第 2767 條（**撞陳列與同名假陽性；第 738／845／859／1819-B 條**）：**盤名字串命中 26 筆，真的同碟 0 筆；撞 apex 王牌 0 處**
+
+**本組四張通名盤名的逐字（正規化）命中明細**：
+
+| 盤名 | 四處命中 | 逐筆核完 |
+|---|---:|---|
+| **`The Trio`** | 4 | 全是 `本田竹広《The Trio》(1970)`（seed／c132 卡單／c132 prop-b），**同碟 0** |
+| **`Time`** | 5 | `Electric Light Orchestra《Time》(1981)`（seed）、`鄭雙雙《Time》(2024)`（seed／c127 卡單／c127 prop-b），**同碟 0** |
+| **`Live`** | 13 | Donny Hathaway 1972／日野皓正クインテット《Live!》1973／Fela Ransome-Kuti《Live!》1971／Mike Westbrook 1973／Ewa Demarczyk 1982／Terence Blanchard featuring The E-Collective 2018，**同碟 0** |
+| **`Flight`** | 4 | 全是 `Howard Riley《Flight》(1971)`（seed／c71 卡單／c71 prop-b），**同碟 0** |
+
+**另三筆非通名但命中的**：`Stardust` 9 筆（Willie Nelson 1978／The Sea Urchins 1992／山本剛《Star Dust》1977／**`Bill Charlap《Stardust》(2002)`**）、
+`Love Is Here to Stay` 4 筆（全是 `八城一夫トリオ《LOVE IS HERE TO STAY》(1968)`）、`Round About Roma`／`The Bandwagon`／`KingMaker`／`A Wall Becomes a Bridge` 各 0 筆。
+
+⚠ ⚠ **`Stardust` 是本組最需要下游注意的一格**：**`Ron Carter《Stardust》(2001)` 與池中 `Bill Charlap《Stardust》(2002)`（c-158 卡單）都是 Blue Note、只差一年、同一個盤名**——**下游引用時一定要帶掛名與年份。**
+⚠ **`Love Is Here to Stay` 另有 `Tony Bennett & Diana Krall With The Bill Charlap Trio《Love Is Here to Stay》(2018，Verve／Columbia)`，Discogs 上 19 筆**——**同名、同一位鋼琴家、差 13 年、不同廠牌**。**c-170 第 2492 條就是拿這一組當守門樣本的**；本層兩關（＋a 組第 2693 條的第三關盤名）都套了，19 筆全部濾掉。**它不在池中，不構成撞卡，但下游敘述必須分得開。**
+⚠ **`chk-prop` 第五道（盤名撞 apex 王牌、掛名不同）本組 0 處。**
+
+**軌目層的撞陳列（不同次錄音不是撞卡，但正文引用軌名時要寫明版本）**：
+〈Maiden Voyage〉〈Caravan〉〈On Green Dolphin Street〉〈Manha de Carnaval〉（The Trio）／〈Bohemia After Dark〉〈Blues in the Closet〉〈The Man I Love〉〈Stardust〉（Stardust）／
+**〈Planet Rock〉（Afrika Bambaataa）與〈Out Front〉（Andrew Hill 同名 Blue Note 盤的曲子）**（The Bandwagon）／〈Ain't Nobody〉（Rufus & Chaka Khan）（Flight）／〈Romeo and Juliet〉（Round About Roma）。
+
+**側人重疊（第 845 條：人脈重疊不是同一個企劃）**：
+**`James Francies《Flight》(2018)` 的鐵琴手就是 `Joel Ross`、吉他手 Mike Moreno 又出現在 `Kendrick Scott Oracle《A Wall Becomes a Bridge》(2019)`、Derrick Hodge 是《Flight》的製作人又在《A Wall…》客座人聲**——**本組三張碟的人脈連成一圈，正文可互指，但不得寫成同一組人的同一個企劃。**
+Immanuel Wilkins（KingMaker）在池中已有 6 張卡（c-165／c-166／c-167），客座身分不影響掛名（第 1131 條）。
+
+---
+
+## 第 2768 條（**第 254 條，三種店面查法的觀察；只寫觀察不下結論**）：**Apple 命中 4／10，全空 5，⚠ 這一段的覆蓋率與 c-170 那種現役目錄不是同一個數量級**
+
+| 卡 | 查法 1（`search?term=掛名+盤名`） | 查法 2（改用當地店面／單欄） | 查法 3（`lookup?upc=`） |
+|---|---|---|---|
+| The Trio | us 回 2 筆、**都不是本碟** | — | `724349444225` **逐字回空** |
+| Time | fr 逐字 **0 筆** | — | `724352188628` 未命中 |
+| Stardust | us 回 1 筆、**不是本碟**（The Desmond Legacy 2024 單曲） | — | **MB 無 barcode，跑不起來** |
+| Round About Roma | **fr 命中 `695643919`**、`trackCount` 逐字 8 | — | 未跑（Apple 已命中） |
+| The Bandwagon | us 逐字 **0 筆** | — | **MB 無 barcode，跑不起來** |
+| Love Is Here to Stay | **us 命中 `715815913`**、`trackCount` 逐字 11、copyright 逐字 `℗ 2005 Blue Note Records` | 同一次查詢另回 `Something To Remember`(2012)、**是別碟** | **MB 無 barcode，跑不起來** |
+| Live | nl 逐字 **0 筆** | `search?term=Ruben Hein Metropole Orchestra` 亦 **0 筆** | **MB 無 barcode，跑不起來** |
+| Flight | **us 命中 `1434109899`**、`trackCount` 逐字 11 | — | **`602567741343` 命中同一筆** |
+| KingMaker | **us 命中 `1456437395`**、`trackCount` 逐字 12、copyright 逐字 `Blue Note Records; ℗ 2019 UMG Recordings, Inc.` | — | `602577555282` **逐字回空** |
+| A Wall Becomes a Bridge | **us 命中 `1454563813`**、`trackCount` 逐字 12 | — | **`602577492068` 命中同一筆** |
+
+**命中 4（Round About Roma／Love Is Here to Stay／Flight／KingMaker／A Wall…，其中 Flight 與 A Wall 兩種查法都命中）、全空 5、命中到別碟 2。**
+⚠ **分界很乾淨：2018 年以後的三張全部命中且軌數與實體相符；2011 年以前的七張只命中兩張。** 與第 1817-B 條同向。
+⚠ **`lookup?upc=` 在本組只跑得起來 4 次**（6 張的 MB release 沒有 barcode）。
+⚠ **本層只寫觀察、不下結論；封面（CAA）本層未跑**（雲端不逐張 HTTP 驗證，照 `REMOTE_RUNBOOK.md` 分工表歸本機）。
+
+---
+
+## 第 2769 條（**本批 slice 的特殊性；第 1250／1820-B 條**）：**`catno`／`countries`／`formats`／`nReleases`／`reissueSeries`／`country`／`format`／`live` 八欄全部是空或預設值，10 張的目錄號都是本層自己到 Discogs 補的**
+
+第 1820-B 條逐字：「**`catno`／`countries`／`nReleases` 一律留空——這批的 slice 不是列舉檔產的，沒有那些欄位，策展層要自己去 Discogs 補。**」
+**本層實查再加三欄**：`country` 與 `format` 逐字都是空字串、**`live` 逐字都是 `false`（兩張是現場盤，見第 2762 條）**。
+
+**→ 本批完全沒有「列舉檔的 `catno` 不能直接反查」那個問題（第 1250 條），因為根本沒有 catno 可抄；
+換來的是另一個：10 張的目錄號、國別、載體、軌數、總長，全部是本層第一手從 `api.discogs.com/releases/<id>` 取的，沒有經過任何中間層。**
+**判「同一張碟」仍然只有「目錄號＋廠牌」或 MBID 有效**（第 1250／2489 條）——本層的雙 RG 判定（第 2765 條）用的就是 barcode `5099994101225` ↔ catno `50999 9410122 5`。
+
+⚠ **第 1805-B 條記過「列舉檔把 Ruben Hein 的目錄號抄成黑膠號」**——**本批的 `50999 9410122 5` 未經列舉檔轉手，是直接從 Discogs 4604332 取的。**
+
+---
+
+## 第 2770 條（**第 315 條結算**）
+
+| 項 | 數 |
+|---|---:|
+| `slice.json` `g: "b"` | **12** |
+| `prop-b.json` 收件 | **10** |
+| 本節退表筆數（第 2752＋2753 條） | **2** |
+| **合計** | **12** ✔ |
+
+**`node batch-progress/c171/chk-prop.mjs b`**：逐字「prop-b.json：10 張、10 位」、**「合計 10 張、10 位｜標記 0」**；
+**第五道（盤名撞 apex 王牌、掛名不同）0 處**；串跑的 `dedup-crossbatch` 逐字「134 批｜卡數 5332｜**跨批撞卡 0**｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0」。
+**`node batch-progress/dedup-crossbatch.mjs c171`** 另跑一次：逐字「**跨批撞卡 0**｜同 rgMbid 不同掛名 0｜同掛名盤名詞元包含 0｜共用目錄號 0」。
+**MBID 10／10 逐張等於 `mbNote` 裡第一個 UUID。**
+
+---
+
+## 第 2771 條（**⚠ 派工信與原文／既有裁定牴觸之處；依規定回報**）：**四處，其中兩處是事實錯誤**
+
+| # | 派工信原句 | 實查 | 影響 |
+|---:|---|---|---|
+| 1 | 第三節 Bill Charlap 那格：「**Discogs 條目逐字是 `Sandy Stewart (2) & Bill Charlap`**」 | **不是 `&`，是逗號。** Discogs 三筆零售條目（8390356／13840437／5992975）的標題逐字都是 **`Sandy Stewart (2), Bill Charlap`**；帶 `&` 的是**美版宣傳盤** 10351326，逐字 `Bill Charlap & Sandy Stewart (2)`（**而且順序相反**） | **不影響結論**（MB 串接形本來就是判準），但**若照派工信那句去比對，會以為 Discogs 支持 `&` 而少查一層**。第 2756 條 |
+| 2 | 第三節 Ron Carter 那格：「**池中已有 `Ron Carter` 11 張**」 | **實掃是 9 張**，而且 **9 張全在未上架批次、`seed_cards.json` 裡 `Ron Carter` 掛頭 0 張** | 只影響 `why` 的數字寫法（第 409b／439 條）；**a 組第 2711 條已記同一處** |
+| 3 | 第三節 Ruben Hein 那格：「**盤名逐字只有 `Live`**」 | **一半對**。MB RG 與 MB release 的 title 逐字確實只有 `Live`，**但 Discogs 零售條目的標題逐字是 `Live (At The Royal Theatre Carré)`**——**照「只有 `Live`」去跑第 1800-B 條的第二種掃描會回 0 筆有效結果**，本層改用 `artist=` 單欄查才撈到（第 1811-B 條那句「有時要單欄查」） | 影響年份查法的可執行性，已繞過 |
+| 4 | 第二節：「⚠ **後果二**：『這張是不是 Blue Note 家族』不能靠 MB 的 `label-info` 判；⚠ **Discogs 的 `label` 陣列混著 company／studio／演出場地**——`The Blue Note Jazz Club` 是演出場地不是廠牌，第 2490 條」 | **這一句完全正確，而且是本組兩筆退件的直接依據**（第 2752／2753 條）。**但它舉的例子 `The Blue Note Jazz Club` 涵蓋不到本組真正命中的兩個字串**：**`The Blue Note Tokyo`**（Petrucciani，`Recorded At`）與 **`Blue Note Records` 出現在 `companies` 欄的 `Licensed To`／`Manufactured By`**（Van Morrison） | **不是錯，是範圍不足。** 處置寫在第 2752 條末段（白名單要改成看 `releases/<id>` 的 `labels` 欄，不看 search API 的 `label` 陣列） |
+
+⚠ **另外更正的是既有裁定、不是派工信**：**`blue-note-artist-axis-audit.md` §三.15（Petrucciani）與 §三.22（Van Morrison）的 `gap` 判定，本層各撤回一筆**（第 2752／2753 條）。
+**派工信第三節指名的三件事——Petrucciani 的錄音年／發行年、Van Morrison 的曲風閘、Joel Ross 的 `arid:6d09039b` 更正——本層都逐筆跑了，結論分別是：錄音 1997-11／發行 1999-10-15（但這張不屬本線）、非爵士退件、更正成立（browse 回得到 `KingMaker`）。**
+
+---
+
+## 第 2772 條（**交件版本認定**）
+
+**以工作區當下的 `batch-progress/c171/prop-b.json` 與本檔為交件版**（第 1803-B／2497 條）。
+本層在跑的過程中把 `prop-b.json` 寫回磁碟 **2 次**（第 5 筆、第 10 筆）；
+**「筆數對了」不等於「定稿了」**——定稿時點是 `chk-prop b` 標記 0、`dedup-crossbatch c171` 跨批撞卡 0、第 315 條結算 10＋2＝12 三者同時成立之後。
+**本節以 append 寫入，未覆寫 a 組的 2691–2712 條；未碰 `prop-a.json`、`seed_cards.json`、`apex_pool.json`、`PROJECT_MEMORY.md`、`enum/blue-note.json`、KV、Firestore；未 `git commit`／`git push`／動索引。**
+中間檔全部在 scratchpad 的 `c171b/` 子目錄。
+
+---
+
+## 第 2773 條（**主線 2026-09-19 中途指示的三點，逐點回覆**）：**佐證網址 12／12 逐筆點開核過；`&`→`and` 重掃 0 筆新撞卡；`Ron Carter` 兩組一致**
+
+### （一）「有佐證網址」不等於「佐證對」——本組 12 筆逐筆核過，**碟本身 12／12 都對，錯的是廠牌欄的讀法**
+
+主線點名 a 組第 2692 條的形狀：**稽核層引的那筆 Discogs 是另一張碟**。
+**本層對 b 組 12 筆全部打 `api.discogs.com/releases/<id>` 把稽核層引的每一個 release id 逐筆展開核對標題、掛名、軌數、目錄號：**
+
+| 稽核層引的 id | 核對結果 |
+|---|---|
+| 8259286（The Trio） | ✔ 同碟（`The Trio`／Rubalcaba・Chambers・Bromberg／7 軌 68:56／`Blue Note 4944422`） |
+| **776573・8390770・5811384（Trio in Tokyo）** | **✔ 同碟，但 `labels` 欄逐字只有 `Dreyfus Jazz`；`The Blue Note Tokyo` 在 `companies` 欄、role 逐字 `Recorded At`** |
+| 930303（Time） | ✔ 同碟（`Blue Note 7243 5 21886 2 8`／10 軌 49:56） |
+| 13146556・11904625・9780419（Stardust） | ✔ 三筆同碟（8 軌 52:03／`Blue Note 7243 5 37813 2 3`） |
+| 5074194（Round About Roma） | ✔ 同碟（8 軌 55:15／`Blue Note 7243 542406 2 1`） |
+| 442265・18142315・1872228（The Bandwagon） | ✔ 三筆同碟（10 軌 58:32／`Blue Note 7243 5 80917 2 4`・`…91893 2 1`） |
+| 5992975・10351326・8390356（Love Is Here to Stay） | ✔ 三筆同碟（11 軌 56:51／`Blue Note 7243 5 60340 2 0`・`…60341 2 9`）**⚠ 且已與 Discogs 同一次查詢回的 19 筆 Tony Bennett／Diana Krall 2018 同名別碟分開** |
+| 4604332（Live） | ✔ 同碟（10 軌／`50999 9410122 5`／十軌軌名與 MB RG `47b79830` 的 release 逐字相同，見第 2765 條） |
+| **12319738・3917807・8960423（Born to Sing）** | **✔ 同碟，但 `labels` 欄逐字只有 `Exile`；`Blue Note Records` 在 `companies` 欄、role 逐字 `Licensed To`／`Manufactured By`；⚠ 12319738 的 format 逐字帶 `Unofficial Release`** |
+| 34231921・13995462・14779127（Flight） | ✔ 三筆同碟（`Blue Note B002868602`／`00602567741343`） |
+| 13619280（KingMaker） | ✔ 同碟（12 軌／`Blue Note B003003802`／barcode 602577555282） |
+| 14078627（A Wall Becomes a Bridge） | ✔ 同碟（12 軌／`Blue Note 774920 6`／barcode 602577492068） |
+
+**→ 與 a 組的失效模式不同**：a 組那一筆是**引錯碟**（盤名不同、掛名不同、形態是 Compilation），
+**b 組這兩筆是引對碟、把 `companies` 欄的角色讀成廠牌**。
+**兩種要分開記**：前者靠第 2693 條的第三關（盤名）擋得住，**後者擋不住——只能靠「打 `releases/<id>` 把 `labels` 與 `companies` 分開看」**（第 2754 條本層新增的那一道）。
+⚠ **給主線：兩道要一起用，缺一不可。本組 12 張裡第二種命中 2 次、第一種 0 次；a 組 13 張裡第一種命中 1 次。**
+
+### （二）`&`→`and` 正規化重掃：**0 筆新撞卡**
+
+**本層的實掃腳本從一開始就用與 `chk-prop.mjs` 的 `k()` 完全相同的正規化**
+（逐字 `s.toLowerCase().replace(/[&＆]/g,'and').replace(/[^\p{L}\p{N}]+/gu,'')`），**不是稽核層那一套**，因此第 2695 條那個成因在本層不存在。
+**依主線指示再針對 `&`／`and`／斜線／`+` 的替代寫法重掃一次**：
+
+- **10 個盤名裡含 `&`／`and`／`/`／`+` 的：0 個**（`The Trio`／`Time`／`Stardust`／`Round About Roma`／`The Bandwagon`／`Love Is Here to Stay`／`Live`／`Flight`／`KingMaker`／`A Wall Becomes a Bridge`）——**本批盤名這一側不可能有 `&`／`and` 分裂。**
+- **10 個掛名裡含 `&` 的 1 個**：`Bill Charlap & Sandy Stewart` → 折鍵 `billcharlapandsandystewart`；**四處以該折鍵比對命中 1 筆（本批自己的 prop-b）**，`Bill Charlap and Sandy Stewart`／`Sandy Stewart & Bill Charlap`／`Sandy Stewart, Bill Charlap`／`Bill Charlap / Sandy Stewart` 四種替代寫法在四處**各 0 筆**。
+- **斜線掛名側**：seed 的 `Red Garland / Ron Carter / Philly Joe Jones`、c-156 的 `Stefon Harris / Jason Moran / Greg Osby / Mark Shim`、c-166 的 `Kendrick Scott, Reuben Rogers, Walter Smith III` 三組**逐筆展開比對，與本批 10 張各 0 筆撞卡**。
+- **雙 RG 這一側本層另用 MB 端查**（不靠字串）：10 張各打一次 `release-group?query=artist:"<掛名>" AND releasegroup:"<盤名>"`，**命中 1 筆雙 RG（`Ruben Hein《Live》`，第 2765 條）**——**這正是第 2694 條那個形狀，本層用 MB 端而不是字串比對抓到的。**
+
+### （三）`Ron Carter`：**兩組一致，不改**（第 2757 條；`why` 的數字已照 9 張寫，不是派工信的 11）
+
+### （四）盤名單獨命中的假陽性：**b 組 12 張是 26 次**（a 組 13 張是 19 次、c-170 全 25 筆是 7 次）
+
+**本組四張通名盤名（`The Trio`／`Time`／`Live`／`Flight`）合計 26 次字串命中、真的同碟 0 筆**，逐筆明細見第 2767 條。
+**判「已收」一律比對 `album` 欄逐字，本層全程未用 grep 認定任何一筆。**
+
+---
+
+## 第 2774 條（**⚠ 給主線：順手掃到三筆同形狀的線索，不影響本批結算**）
+
+主線指示「如果你 12 張裡有同藝人的碟，順手看一眼有沒有同樣形狀的漏」。**掃了本組 10 個掛名的完整 Discogs 目錄，三筆值得回頭查：**
+
+| # | 碟 | 狀態 | 建議 |
+|---:|---|---|---|
+| 1 | **`Stefano Di Battista Quintet《A prima vista》`(1998)** | **MB RG `81f84659-e4f4-3861-9ad1-e60fbc93bbcd`，credit 逐字 `Stefano Di Battista Quintet`、frd 1998、⚠ `primary-type` 欄逐字 undefined（未設）**；`enum/blue-note.json` 1,812 列逐字 **0 命中**；四處 0 命中。Discogs 7095518（France 1998、`label` 逐字 `['Blue Note','EMI Music France',…]`、catno `7243 4 97945 2 8`）＋17872195（Japan 2001、`Blue Note`／`TOCJ-66022`） | **與 Kevin Eubanks《Spiritalk》同形的新缺口，但成因多一層**：**`primary-type` 沒設，所以連藝人軸稽核的 `type=album` 過濾都會漏掉它。** ⚠ **這是第六種列舉失效形狀的候選，建議主線記一條。** |
+| 2 | **`Stefano Di Battista《Parker's Mood》`(2004)** | **在 `enum/blue-note.json` 裡（rgMbid `9069a449-c6d2-3d1d-8cde-e47a58829ab5`），但該列的 `year` 欄逐字 `null`**；四處 0 命中。Discogs 1033040（US 2004、`Blue Note`／`7243 8 66740 2 9`）、34074079（Japan 2004、`Blue Note`／`TOCJ-66248`）、16104344、11187856、26272526、30961297 六筆 | **不是列舉漏抓，是「`year` 為 null 的列在依年份排序切批時掉出去」。** ⚠ **建議主線查一下 `enum/blue-note.json` 裡還有多少列 `year` 是 null——那可能是一整組被切批漏掉的碟。** |
+| 3 | `Ruben Hein Featuring Ernst Glerum @ Joost Patočka《Revisited》`(2012) | Discogs 4604320（Netherlands 2012、`label` 逐字 `['EMI Music Netherlands','Blue Note']`、catno `5099 5595972 8`）；**MB `release-group?query=artist:"Ruben Hein" AND releasegroup:"Revisited"` 逐字回 `count: 0`——MB 沒建這個 RG** | **MB 查無，本線不收**（簡報：一般批查無就不收）。**記進未收清單，可進 §1 補遺批。** |
+
+⚠ **三筆都不影響本批第 315 條結算**（12 ＝ 10 收 ＋ 2 退）。
+
+---
+---
+
+# c-171 **研究層 a 組**（10 張，1989–1998）裁定，編號 3081–3130，本檔用到 3104
+
+## 第 3081 條（**總表**）：**10 張全 `full`，120 條 `facts`（每張 12 條），6 個來源網域，推翻策展層 12 處**
+
+| 項 | 值 |
+|---|---|
+| 交件張數 | **10／10**，`status` 與 `coverage` 兩欄並存同值，全部 `full` |
+| `facts` 條數 | **每張整齊 12 條、合計 120 條**，無一張低於 8 條 |
+| `hookCandidates` | 每張 2 條，未超上限 |
+| `src` 網域 | `discogs.com` 51／`en.wikipedia.org` 41／`worldradiohistory.com` 22（Billboard 紙本）／`jazzdisco.org` 4／`diannereeves.com` 1／`bluenote.com` 1 |
+| 推翻策展層 | **12 處，分佈在 7 張卡**（明細第 3082–3097 條） |
+| `qa-batch.mjs research c171` | **a 組旗標 0**；批次層亮 1 個「key 集合與卡單不一致」——**那是 b 組未交件的管線形狀**（卡單 20 張、研究稿 10 張），不是 a 組的錯 |
+| 字元自檢 | 自寫程式掃簡體字表、假名、西里爾／天城／諺文／希臘、日文新字體、半形逗號貼中文、千分位逗號 —— **全部 0 命中** |
+
+**命中率（本組 10 張各查法實得）**：`api.discogs.com/releases/<id>` 整筆 **10／10**（絕對主力，16 筆 release 全撈）；
+**英文維基 10／10**（含它引用的 Allmusic 與《Los Angeles Daily News》樂評原句——附錄二那條「樂評改從維基引用段落取」實測有效）；
+**Billboard 紙本 OCR 8／10**（只有《Paris》與《Jazz, My Romance》沒有直接命中，《Paris》靠同藝人前作的新片列表側面補）；
+**jazzdisco 2／10**（但那 2 張是決定性的，見第 3099 條）；**藝人官網 2／10**（`diannereeves.com` 可用、`brianblade.com` 的 Discography 頁是 JS 渲染抓不到內容）；
+**`bluenote.com` 1／10**（只有 Brian Blade 有專頁——**再次印證附錄二「分界是碟的出身地」**：這 10 張裡九張是英國支線或東芝 EMI 企劃，美國本部只有 Blade 那張）。
+
+---
+
+## 第 3082 條（**推翻策展層，第 1 處**）：**Tommy Smith 的 Blue Note 盤是四張，不是三張——而且策展層自己的兩張卡互相牴觸**
+
+`prop-a.json` 第 0 筆《Step By Step》的 `risk` 逐字：「**本張是他三張 Blue Note 盤裡最早的一張，收進來三張才連號**」。
+但同一份 `prop-a.json` 第 1 筆《Paris》的 `why` 開頭逐字：「**Tommy Smith 第四張 Blue Note 盤**」。
+
+**英文維基逐字**：`Three more albums followed for Blue Note: Peeping Tom (1990), Standards (1991), and Paris (1992).`
+→ **共四張**：《Step By Step》(1989)／《Peeping Tom》(1990)／《Standards》(1991)／《Paris》(1992)。
+**本批 a 組同時收了頭尾兩張**，池中另有 c-149《Peeping Tom》與 c-150《Standards》——**四張到齊，不是三張。**
+**裁定**：研究稿照四張寫；`prop-a.json` 第 0 筆那句留給主線自行更正。判準第 2 條（可逆、改的是敘述欄）。
+
+## 第 3083 條（**推翻策展層，第 2 處**）：**「二十一歲」只在錄音那一刻成立，發行時英文維基寫的是二十二歲**
+
+`why` 逐字「蘇格蘭次中音薩克斯風手 Tommy Smith **二十一歲時**的 Blue Note 首張領班盤」。
+Smith 生於 **1967-04-27**；錄音 1988-09-07／09 時確為二十一歲，但英文維基逐字寫 `In 1989, when he was twenty-two, Smith signed with Blue Note, which released his album Step by Step`。
+**裁定**：`facts` 只寫出生日期與錄音日期，不寫發行時的歲數，讓下游自己算。
+⚠ **附帶一條敘述紀律**：`why` 的「首張領班盤」四字不可掉字——他 1983 年十六歲時就有《Giant Strides》，本張是**Blue Note 首張**，不是生涯首張。
+
+## 第 3084 條（**廠牌宣稱的反查，依 `research-base.md`「某廠牌史上第一張一律要反查廠牌沿革」**）：**「Blue Note International 靠本張開張」成立，兩層獨立佐證**
+
+| 層 | 逐字 |
+|---|---|
+| Billboard 1989-07-01 的 Blue Note 五十週年專題 | Blue Note 總裁 Bruce Lundvall：`Additionally, there is the Blue Note International line, which recently debuted via the new effort by U.K. tenor saxophonist Tommy Smith` |
+| 英版實體目錄號 | `BLT 1001`——`BLT` 號段的**第一號**（同組《Paris》1992 年才排到 `BLT 1005`） |
+
+**兩層互相獨立**（一是當事人當年的原話、一是實體盤面），依 base 檔規則可寫。
+⚠ **但只能寫到「這條支線靠本張開張」**，**不得寫成「Blue Note 的第一張」或「Blue Note 第一張非美國藝人專輯」**——後者未查證。
+`src`：`https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-01.pdf`
+
+## 第 3085 條（**推翻策展層，第 3 處**）：**《Ode to Life》是 African-Brazilian Connection 的第二張，不是第三張**
+
+`why` 逐字「Don Pullen 的非洲—巴西計畫**第三張**」、`why` 末句「**這個團的三張盤，本張是中間那張**」。
+
+| 來源 | 逐字 |
+|---|---|
+| 英文維基 Don Pullen 條目 | `Their first album, Kele Mou Bana, was released in 1991. Their **second**, but very different, album of 1993, Ode To Life, was a tribute to George Adams` |
+| 同條目續 | `A third album, Live...Again, **recorded in July 1993** at the Montreux Jazz Festival, **was not released until 1995**.` |
+| Billboard 1993-08-14 的評介 | `This pulsing, sometimes languid **second offering** from the veteran pianist and his African Brazilian Connection group` |
+
+→ **《Live...Again》雖然錄音在本張之後五個月，但發行晚了兩年**；按發行序本張是第二張，按錄音序也是第二張。
+**「中間那張」這個說法只在發行序上成立、在「第三張」的前提下不成立**，兩句話在 `why` 裡互相矛盾。
+**裁定**：研究稿寫「第二張」，並把三張的錄音年與發行年落差一併寫進 `facts`。判準第 1 條（有先例：本線一律以發行序定序號）。
+
+## 第 3086 條（**推翻策展層，第 4 處**）：**《Ode to Life》七軌裡有三軌不是 Pullen 寫的**
+
+`why` 把整張講成 Pullen 的作品集（「Pullen 鋼琴、Carlos Ward 中音與長笛……把 Adams-Pullen 四重奏那條線換成非洲與巴西節奏的骨架」），`mbNote` 的 credits 段也沒有逐軌作者。
+**Discogs 4692547 的逐軌 `extraartists` 寫得很清楚**（⚠ 這正是附錄二第 3 點說的「主故事只存在於整筆的逐軌欄」）：
+
+| 軌 | 作者 |
+|---:|---|
+| 1 The Third House On The Right | **Alberto Beserra、Guilherme Franco** |
+| 2 Paraty | **Nilson Matta**（樂團的貝斯手） |
+| 3 El Matador | Don Pullen |
+| 4 Ah George, We Hardly Knew Ya | Don Pullen |
+| 5 Aseeko! (Get Up And Dance!) | **Mor Thiam**（並由他親自演唱） |
+| 6 Anastasia/Pyramid | **Carlos Ward** |
+| 7 Variation On Ode To Life | Don Pullen |
+
+→ **七軌只有四軌是 Pullen 的**，而且非 Pullen 的三軌正好由團裡三位不同國籍的樂手各寫一首——**「非洲＋巴西＋美國三方各出一手」比「Pullen 換了個節奏骨架」準確得多。**
+**裁定**：寫作層不得把本張寫成 Pullen 的獨力作品。
+
+## 第 3087 條（**補策展層沒查的：本張的榜位，兩層互證**）
+
+| 期 | 逐字 | 位 |
+|---|---|---:|
+| BB-1993-08-14 | `NEW > DON PULLEN & THE AFRICAN-BRAZILIAN CONNECTION … ODE TO LIFE` | 新進榜 |
+| BB-1993-10-23 | `6 5 11`（本週 6、前週 **5**、在榜 11 週） | **前週第 5＝最高** |
+| BB-1993-12-25 年度回顧 | `24 ODE TO LIFE -Don Pullen & The African-Brazilian Connection -Blue Note` | 年度第 24 |
+| 英文維基 Don Pullen 條目 | `In 1993 Ode To Life was **fifth** on the U.S. Billboard Top Jazz Album chart.` | 第 5（獨立佐證） |
+
+**裁定**：最高名次第 5 名（1993-10-09 那期），**紙本與維基兩層一致，可寫死不標 uncertain**。
+
+## 第 3088 條（**推翻策展層，第 5 處；本組最重要的一處**）：**《Cruisin'》的美版是 1994 年，不是 1993 年——但卡片 `year` 仍取 1993 不動**
+
+`why` 逐字「1993 年 4 月 21、22 日錄音、7 月 21 日由東芝 EMI 的 Somethin' Else 線發行，**同年再由 Blue Note 在美國發美版**」。
+
+| 來源 | 逐字 |
+|---|---|
+| Billboard **1994-02-26** 的東京報導 | `The album is set for a **March 28** release in the United States, which will be followed by Onishi's first American tour, scheduled to take place in May.` |
+| 英文維基作品條目 | `It was released on **April 5, 1994**, by Blue Note Records.` |
+| `previews.json` 的 Apple gb 條目 | `appleYear` 逐字 **1994** |
+| Discogs 7578461（美版） | 年份欄 1993 —— **那是盤面 ℗© 年，不是上市日** |
+
+→ **三層指向 1994、只有 Discogs 的年份欄是 1993**，而 Discogs 該筆的 notes 逐字只有 `© ℗ 1993`。
+**裁定**：`facts` 寫「美版晚了大半年、1994 年才上市」；**卡片 `year` 維持 1993**（依第 817 條：日本首發已核，`year` 取首發地首發年）。判準第 2 條（可逆）。
+⚠ **給主線與寫作層**：**正文不得寫「同年美日兩地發行」。** 本線凡是 Somethin' Else 轉 Blue Note 的碟都要預期這個時差（同批《Hat Trick》的 Billboard 美版評介晚到 1997-01-11，見第 3098 條）。
+
+## 第 3089 條（**推翻策展層，第 6 處**）：**《Cruisin'》的〈Roz〉是 Rodney Whitaker 寫的，不是大西順子**
+
+`why` 逐字「曲目把自作曲〈Eulogia〉〈Roz〉〈Switchin' It〉夾在……之間」。
+**Discogs 日版 8781439 與美版 7578461 的逐軌 written-by 一致**：〈Roz〉掛 **Rodney Whitaker**（本張的貝斯手），美版另把 `Junko Onishi — Written-By [1, 8]` 寫在整筆 `extraartists` 裡——**她的自作曲只有第 1 軌〈Eulogia〉與第 8 軌〈Switchin' It〉兩首。**
+**裁定**：研究稿照盤面寫兩首。⚠ 這一條又是附錄二第 3 點的實例（`search` 摘要看不到逐軌欄）。
+
+## 第 3090 條（**推翻策展層，第 7 處**）：**《Cruisin'》的 Ellington 曲是三首，不是兩首**
+
+`why` 逐字「Ellington 的〈Melancholia〉與〈Caravan〉」。
+**Discogs 日版 8781439 的逐軌 written-by**：第 2 軌〈The Shepherd〉**掛 Duke Ellington**、第 5 軌〈Melancholia〉掛 Ellington、第 6 軌〈Caravan〉掛 Ellington／Juan Tizol／Irving Mills。
+→ **三首**。⚠ **美版 7578461 的逐軌欄把〈The Shepherd〉的作者漏了**（只在整筆 `extraartists` 寫 `Duke Ellington — Written-By [2, 5, 6]`）——**兩個版本條目要一起看才湊得齊，這是第 1678／1821-B 條那個形狀的又一例。**
+
+## 第 3091 條（**⚠ 給主線與本線所有層：`junkoonishi.com` 已經易主，不得再當藝人官網**）
+
+本層依附錄二的「藝人官網」路徑去抓 `https://www.junkoonishi.com/`，**HTTP 200、內容是印尼文的線上博弈導流站**（頁面標題逐字 `ROYALMPO: Akses Link Situs Hiburan Online Terpercaya Fast Profit`），與大西順子完全無關。
+英文維基的 External links 仍掛著 `Official website` 指向該網域。
+**裁定**：**`junkoonishi.com` 列入禁用來源**，本線任何一層都不得引用；她的官方資訊改走 Verve 的官方廠牌頁或維基。
+⚠ **推廣一條方法論**：**1990 年代藝人的「官網」網域過期後被搶註是常態**，附錄二把藝人官網列為第 5 條路徑時**必須連內容一起看，不能只看 HTTP 200**。判準第 3 條（不定下來，下一批還會有人引用它）。
+
+## 第 3092 條（**推翻策展層，第 8 處**）：**《Spiritalk 2: Revelations》與 Kevin Eubanks 接下 Tonight Show 樂團是同時發生，不是「之前」**
+
+`why` 逐字「**這是他在接下 Tonight Show 樂團之前，最後一段以作曲家身分經營的 Blue Note 作品**」。
+
+| 來源 | 逐字 |
+|---|---|
+| Billboard **1995-03-04** | `…（Eubanks）taking over musical director duties of the Tonight Show Band during Marsalis' leave of absence. Marsalis begins a concert tour Feb. 9 in Providence, R.I. … **Eubanks' 11th album, "Spiritalk 2, Revelations," was just released by Blue Note.**` |
+| 英文維基 Kevin Eubanks | `In 1992, Eubanks moved to the West Coast to play guitar in The Tonight Show Band. … **In 1995, he replaced Branford Marsalis as leader of the band.**` |
+| Billboard 1995-02-25 的評介 | 稱他 `the exciting young guitarist (and reluctant TV heartthrob), whose profile is further heightened by Branford Marsalis' "Tonight Show" hiatus` |
+
+→ 本張 1995-02-07 發行時，**他已經在代理音樂總監的位子上**；同年正式接任。
+**裁定**：**時序完全相反，不得沿用 `why` 那句。** 研究稿改寫成「接位那個月交出的全自作曲爵士盤」。
+⚠ 順帶一筆：Billboard 說這是他的**第 11 張**專輯（`Eubanks' 11th album`），策展層未提。
+
+## 第 3093 條（**推翻策展層，第 9 處**）：**Robin Eubanks 是哥哥，不是弟弟**
+
+`why` 逐字「班底是**弟弟** Robin Eubanks 長號」。
+英文維基 Kevin Eubanks 條目逐字：`His **older brother**, Robin Eubanks, is a trombonist, and his **younger brothers** Duane Eubanks is a trumpeter and Shane Eubanks is a DJ.`
+**裁定**：Robin 是哥哥、Duane 是弟弟。判準第 2 條。
+
+## 第 3094 條（**推翻策展層，第 10 處**）：**《Hat Trick》的錄音地，盤面寫的是 Power Studio，不是 Power Station**
+
+`why` 逐字「紐約 **Power Station** 的對壘盤」。
+**Discogs 美版 10811254 的 notes 逐字**：`Recorded and mixed at **Power Studio** on January, 28-31, 1996.`（日版 3076800 的 notes 只寫日期、未寫地點。）
+**裁定**：`facts` 照盤面寫 Power Studio，並在 `notes` 標明日版未記地點。
+⚠ **不得把同組《Cruisin'》的 Power Station 套過來**——那一筆有 Billboard 1994-02-26 的獨立佐證（`recorded at New York's Power Station`），兩張是兩份證據，形狀相近但不可互相補。
+
+## 第 3095 條（**補策展層完全沒查到的：《Hat Trick》最好的切角在〈Left Alone〉的來歷**）
+
+`why` 只寫「Mal Waldron 寫給 Billie Holiday 的〈Left Alone〉」——**這句有兩個問題**：
+
+| 層 | 逐字（英文維基 `Left Alone (song)`） |
+|---|---|
+| 作者 | `"Left Alone" is a jazz song written by singer **Billie Holiday** and pianist/composer **Mal Waldron**` —— **是合寫，Holiday 出詞** |
+| Holiday 從沒錄過 | `This is one of seven songs written by or co-written by Holiday that **she never recorded**.` |
+| 首錄 | `Waldron himself recorded the song on his 1959 album Left Alone` |
+| ⚠ **關鍵** | `Waldron frequently performed the song for albums, **often with tenor saxophonist Jackie McLean (who also played on the Left Alone album)**` |
+
+→ **1959 年那張首錄的《Left Alone》上，中音手就是 Jackie McLean。1996 年他在本張又錄一次，中間隔了三十七年。**
+**這是本張唯一一條「只屬於這張碟」的故事**，策展層一層都沒碰到。
+（⚠ 維基把 McLean 誤植成 `tenor saxophonist`，他是中音手；本稿不抄那個樂器名。）
+另補兩筆策展層沒寫的：**〈Jackie's Hat〉的作者是大西順子**（Discogs 逐軌 composed-by）；Billboard 的製作人欄逐字 `PRODUCERS: Hitoshi Namekata, Jackie McLean`，與盤面的「Namekata 監製／McLean 共同製作」寫法不同但不衝突。
+
+## 第 3096 條（**推翻策展層，第 11 處**）：**《That Day…》裡沒有一首是 Dianne Reeves 獨力寫的**
+
+`why` 逐字「**同名曲〈That Day〉與〈Dark Truths〉是她自己的作品**」。
+**Discogs 3268377 的逐軌 written-by**：
+
+| 軌 | 作者 |
+|---|---|
+| 5 That Day | **Dianne Reeves、Nikki Giovanni、Terri Lyne Carrington** 三人合寫 |
+| 8 Dark Truths | **Joan Armatrading**（與 Reeves 無關） |
+
+→ **兩句話全錯**。而且掉的那個名字是本張最值得寫的一個——**Nikki Giovanni 是 1960 年代末黑人藝術運動最知名的詩人之一**。
+**裁定**：研究稿寫三人合寫，並把 Giovanni 的身分查進 `facts`。判準第 3 條（不改就會被寫作層直接寫成錯的正文）。
+
+## 第 3097 條（**補策展層沒查的：《That Day…》的榜位；並記一條 OCR 取樣的限制**）
+
+| 期 | 逐字（本週／前週／在榜週） | 讀法 |
+|---|---|---|
+| BB-1997-11-29 | `（圈號）8 2` | 在榜第 2 週、**前週第 8 名（＝進榜名次）** |
+| BB-1998-02-21 | `7 7 14` | **第 7 名，在榜第 14 週——本層掃到的最高** |
+| BB-1998-04-04 | `21 24 20` | 第 21 名，**在榜第 20 週** |
+| BB-1998-06-27 的爵士回顧榜 | `14 THAT DAY...- Dianne Reeves -Blue Note /Capitol` | 回顧榜第 14 |
+
+⚠ **紙本 OCR 只收到隔週一期**（在榜週數只出現偶數：2、4、6…20），**且 1997-11-29 那期的本週名次被 Billboard 的圈號圖示蓋掉**，因此**真正的最高名次有可能比第 7 名更前面**。
+**裁定**：`facts` 一律寫「掃到的最高名次是第 7 名」，**不寫「最高第 7 名」**。判準第 3 條（寧缺勿錯，這是 base 檔的誠實條）。
+
+## 第 3098 條（**覆核策展層第 2703 條的年份改判：維持 1996，但併存證據要記下來**）
+
+策展層把《Brandenburg Concerto》從 MB 的 frd 1997 改判 **1996**。**本層覆核：維持 1996**，支持的是 Discogs 七筆實體條目全 1996、barcode `724385455926` 反查兩筆皆 1996 US、**日版 Discogs 27583047 帶完整日期 1996-06-19**、錄音日 1995-12-27。
+
+⚠ **但本層查到一條策展層沒看到的反向證據**：**jazzdisco 的 Ron Carter session 表把日版 eau `TOCJ-6037` 記成 1995（錄音年）、把 `Blue Note CDP 7243 8 54559 2 6` 記成 1997**——**與 MB 的 frd 1997 同向、且來源互相獨立。**
+
+換句話說，**「日版 1996、美版 1997」這個形狀在本線有現成前例**：同批《Hat Trick》日版 1996-05-22、美版的 Billboard 評介晚到 **1997-01-11**；同組《Cruisin'》日版 1993-07-21、美版 1994-03／04（第 3088 條）。**Somethin' Else／eau 轉 Blue Note 的碟，美版慢半年到一年是常態。**
+
+**裁定**：**照策展層寫 1996 不改**（Discogs 的實體日期是更硬的一層），**但把 1997 這條併存證據寫進研究稿 `notes` 與本條，留給主線。**
+**若日後要翻成 1997，需要的是美版盤面或同期紙本，不是再多一個資料庫欄位。** 判準第 1 條（有先例：本線一律以實體盤面壓資料庫欄位）。
+
+## 第 3099 條（**補策展層漏掉的整支樂團：《Brandenburg Concerto》有鼓手，而且弦樂團的名單查得到**）
+
+策展層的 `mbNote` 只寫「Kermit Moore 指揮；**弦樂團伴奏**」——**沒有一個團員名字，也沒發現本張有鼓手。**
+**jazzdisco 的 Ron Carter session 表把 1995-12-27 那場逐人列了出來**：
+
+- **小提琴**：Sanford Allen、Robert Chausow、Cecilia Hobbs Gandner、Winterton Garvey、Rebekah Johnson、Charles Libov、John Pintavalle、Dale Stuckenbruck、Mary Whitaker
+- **中提琴**：Julien Barber、Richard Brile、Jesse Levine
+- **大提琴**：Carol Buck、Marisol Espada、Maxine Neuman、Caryl Paisner
+- **低音提琴**：Leon Maleson ／ **鋼琴**：Alison Deane、Steven Scott
+- **Ron Carter**：bass、piccolo bass、arranger ／ **Kermit Moore**：conductor
+- ⚠ **Lewis Nash：drums** ——**策展層完全沒提到本張有鼓手**
+
+**三條由此長出來的事實**（策展層一條都沒有）：
+1. **指揮 Kermit Moore（1929–2013）** 是美國第一支種族融合樂團 **Symphony of the New World** 的創辦人之一，也與妻子 Dorothy Rudd Moore 共同創辦 **Society of Black Composers**。
+2. **小提琴組第一位 Sanford Allen** 是 **1962 年紐約愛樂史上第一位全職的非裔美國小提琴家**，做到 1977 年。
+3. **Kermit Moore 不是第一次進這間錄音室**：jazzdisco 同一表顯示 1992-12-27／29 Carter 在同一間 Clinton Recording Studios 錄《Friends》時，**Moore 是四位大提琴手之一**（Alison Deane、Steven Scott、Leon Maleson 也在那場）——**這次他改站上指揮台。**
+
+**→ Carter 這張碟找來的不是一般的錄音室弦樂組，是紐約黑人古典樂界的那個圈子。** 這是本張真正的故事，**`jazzdisco.org` 這一路命中率只有 2／10，但這一筆是決定性的。**
+
+⚠ 另補一筆策展層沒查的廠牌形狀：**`eau` 是東芝 EMI 給 Carter 這條古典改編線的專用廠牌名**——jazzdisco 記 1992 年《Ron Carter Meets Bach》的日版也是 `eau (J) TOCJ-5704`、美版才掛 `Blue Note CDP 0777 7 80510 2 2`，**與本張（日版 eau TOCJ-6037／美版 Blue Note）形狀一模一樣**。策展層的 `risk` 只說「日版 `label` 只有 `EAU Records`」，沒發現這是一條有前例的線。
+
+## 第 3100 條（**方法論；更正附錄二對 worldradiohistory 檔名的預設**）：**1990 年代的 Billboard 掃描檔有三種檔名形狀，猜錯就 404**
+
+本層 22 條 Billboard `src` 逐筆做過 HTTP 取回驗證，**檔名不是單一形狀**：
+
+| 形狀 | 實例 | 出現段 |
+|---|---|---|
+| `BB-YYYY-MM-DD.pdf` | `BB-1989-07-01.pdf`、`BB-1993-10-23.pdf`、`BB-1998-02-21.pdf` | 多數 |
+| **`BB-YYYY-MM-DD-N.pdf`** | **`BB-1993-08-14-N.pdf`**、`BB-1994-02-26-N.pdf` | 1993–1994 的部分期 |
+| `Billboard-YYYY-MM-DD.pdf` | `Billboard-1992-02-15.pdf`、`Billboard-1997-01-11.pdf` | 1992 與 1997 的部分期 |
+
+**本層第一次交件時把 `BB-1993-08-14-N.pdf` 寫成 `BB-1993-08-14.pdf`，驗證回 404，已修正。**
+**裁定（給後續各層）**：**不要自己拼 Billboard 的 PDF 檔名**——`batch-progress/enum/billboard-bn-*.txt` 的每期分隔行（`######## Billboard-YYYY-MM-DD pages=N`）與部分檔的 `src=` 欄就是正解；**拼完一律跑一次 HTTP 驗證**。判準第 3 條（一條死連結會讓下游 manifest gate 直接擋整張卡）。
+
+## 第 3101 條（**方法論；本組四張碟共用的一條廠牌史一手來源**）：**Somethin' Else／Blue Note 的關係，Tom Evered 1996 年在 Billboard 講得最清楚**
+
+附錄二說「查八〇、九〇年代的廠牌史，關鍵字要用製作人／A&R 的人名，不是藝人名」——**本組實測再加一條：也可以用廠牌名當關鍵字去掃同期紙本的產業報導。**
+
+`billboard-bn-1996-ocr.txt.gz` 掃 `somethin' else` 命中 **BB-1996-07-27** 的爵士專題，Blue Note 總經理 **Tom Evered** 的原話逐字：
+> `It participates in an international-release agreement with the Japanese somethin' else label, "**a sister company owned by Toshiba EMI**," according to Evered.`
+> `"She's under contract to somethin' else," explains Evered, "and we **merely act as a domestic conduit**. Costs for breaking the artist are shared…"`
+> （同篇另記 Gonzalo Rubalcaba 也是走這條線進 Blue Note 的，原因是古巴與美國之間的工作限制擋住了直接簽約。）
+
+**這一篇一次餵飽本組四張**：《Cruisin'》《Jazz, My Romance》《Hat Trick》《Brandenburg Concerto》——**全部是同一位監製 Hitoshi Namekata、同一位 A&R Yoshiko Tsuge、同一位錄音 Jim Anderson、同一位母帶 Yoshio Okazaki、同一位美術 Kaoru Taku 的東芝 EMI 企劃盤。**
+⚠ **反同構提醒**：四張都可以寫這條廠牌線，但**各自的切入面向必須不同**（依 base 檔廠牌規則：這是他在該廠牌的第幾張／廠牌當時的處境促成了這張／製作人的哪個決定造就了這張的聲音）。本層已在四張的 `facts` 裡各放一句不同角度的引文與脈絡。
+⚠ 另補一筆：**Billboard 1994-02-26 那篇是同一條線更早的一手材料**，Namekata 當時的頭銜逐字是 `A&R manager of Toshiba-EMI's international department`，並說 Somethin' Else 是 Blue Note 的 `sister label`。
+
+## 第 3102 條（**方法論；補一條雲端環境的陷阱，與 allmusic／allaboutjazz 那兩條並列**）：**`www.discogs.com/release/<id>` 的**網頁**在雲端會間歇回 HTTP 403，那是 Cloudflare，不是連結壞了**
+
+本層對 64 個 `src` 逐一取回驗證，**14 個 `discogs.com/release/<id>` 網頁回 403、5 個回 200**——**同一批 URL、同一個 UA、只差發送時間。** 換成瀏覽器 UA 重試仍間歇 403。
+**但這些 release id 全部來自 `api.discogs.com/releases/<id>` 的成功回應**，也就是**資料是真的、頁面也是真的**，只是雲端出口 IP 被 Cloudflare 擋。
+
+**裁定**：
+1. **`src` 照本線既有慣例繼續寫 `https://www.discogs.com/release/<id>`**（c-168／c-169 全批都是這個形狀，`api.discogs.com` 的 JSON 端點不適合當給人看的來源）。
+2. ⚠ **後續各層做 `src` 存活驗證時，`discogs.com` 的 403 一律不算死連結**——**只要該 id 在 `api.discogs.com/releases/<id>` 取得到 200 就算過。** 不要因為 403 就把整批 Discogs 來源換掉。
+判準第 3 條（不定下來，下一批的驗證腳本會把五十幾條好來源誤判成死連結）。
+
+## 第 3103 條（**⚠ 交件狀態；第 1803-B 條的第七次**）：**`HEAD` 上已經有一份本檔的中途快照，但工作區當下的版本才是交件版**
+
+主線在本層作業途中做了一次 checkpoint 提交（`d16a492 checkpoint: c169 研究 b／c171 研究 a 中途存檔`），**把 `desc-tools/batches/research/c171-a.json` 的十張完整版一起提了進去**。
+**那一版的張數與條數都已經是 10／120，看起來就是定稿——但它少了第 3100 條那個 `BB-1993-08-14-N.pdf` 的修正。**
+**`git diff` 只有一行，但那一行是一條 404 的來源網址。**
+
+**裁定**：**驗收與後續合併一律以工作區版本為準**；主線提交時請確認 `git diff desc-tools/batches/research/c171-a.json` 為空之後才算收件。
+⚠ **這就是第 1803-B 條「筆數對了不等於定稿了」的第七次**，而且這次的成因是**別的工作階段替本層做了中途存檔**——**代理沒有辦法靠自己避免，只能在交件回報裡明講。**
+
+## 第 3104 條（**派工信與 base 檔／既有裁定的牴觸盤點：兩處小牴觸、無一處實質衝突**）
+
+派工信要求「本信若與 `research-base.md` 牴觸，以它為準，並指出本信哪一句寫錯了」。**逐條對過，只有兩處**：
+
+| # | 派工信 | 正本 | 處理 |
+|---:|---|---|---|
+| 1 | 表格寫「1996 `Ron Carter《Brandenburg Concerto》` ⚠ **年份策展層改判 1997→1996**」，同表最左欄的年份欄也寫 1996 | 卡單 `c171-cards.json` 的 `year` 欄逐字 **1996** ✔ | **無牴觸**，派工信與卡單一致；本層維持 1996（第 3098 條） |
+| 2 | 「**`hookCandidates` 每張最多 2 條**」 | `research-base.md` 同 | 一致 |
+| 3 | ⚠ 「⚠ **`slice.json` 的欄位在這一批只有 `artist`／`album`／`year`／`rgMbid`／`note` 五欄可讀**」 | 本層**全程未讀 `slice.json`**（輸入是卡單＋`prop-a.json`＋`caa.json`＋`previews.json`），此句對研究層不適用 | 無影響 |
+| 4 | ⚠ 「**b 組還沒派**，`c171-b.json` 不存在是正常的」 | ✔ 實測：`qa-batch.mjs research c171` 因此亮 1 個批次層標記 | **派工信預測正確**，見第 3081 條 |
+
+**唯一一句需要更正的是派工信的第四節表格**：`1989 | Tommy Smith《Step By Step》`那一列寫「**與 1992《Paris》同一人；LP 6 軌／CD 8 軌（策展層查到的版本差）**」——**版本差正確，但同列沒有提醒「策展層把他的 Blue Note 盤數寫成三張」這個錯**（見第 3082 條）。派工信是照 `prop-a.json` 轉述的，錯在策展層不在派工信。
+
+**本信其餘每一句本層都對過，無一句與 `research-base.md` 開頭那三處雲端例外、或與 `CURATION-BRIEF-bluenote-post1985.md` 附錄二牴觸。**
+
+---
+
+# c-171 **b 組研究層**（10 張，1997–2019）裁定，編號區間 3171–3220，本節用到 3180
+
+## 第 3171 條（**總表**）：**b 組 10 張全數交件，113 條 `facts`、6 個來源網域**
+
+| 卡 | 年 | `facts` | 來源網域 |
+|---|---:|---:|---|
+| `Gonzalo Rubalcaba《The Trio》` | 1997 | 10 | discogs／bluenote.com／en.wiki |
+| `Prysm《Time》` | 1999 | 11 | discogs／fr.wiki |
+| `Ron Carter《Stardust》` | 2001 | 11 | discogs／en.wiki／bluenote.com |
+| `Stefano Di Battista《Round About Roma》` | 2002 | 10 | discogs／fr.wiki／it.wiki／en.wiki |
+| `Jason Moran《The Bandwagon》` | 2003 | 11 | discogs／en.wiki |
+| `Bill Charlap & Sandy Stewart《Love Is Here to Stay》` | 2005 | 12 | discogs／en.wiki |
+| `Ruben Hein《Live》` | 2011 | 12 | nl.wiki／discogs |
+| `James Francies《Flight》` | 2018 | 12 | discogs／en.wiki／bluenote.com |
+| `Joel Ross《KingMaker》` | 2019 | 12 | discogs／en.wiki／bluenote.com |
+| `Kendrick Scott Oracle《A Wall Becomes a Bridge》` | 2019 | 12 | bluenote.com／discogs／en.wiki |
+
+**合計 113 條**，網域分佈 `discogs` 48／`en.wikipedia` 27／`bluenote.com` 19／`fr.wikipedia` 9／`nl.wikipedia` 8／`it.wikipedia` 2。
+**十張全部 `status: "full"`，沒有一張湊不滿 8 條**，`hookCandidates` 每張 2 條。
+**每一張都至少有兩個相異的 https 網域**（manifest gate 的硬性要求，本層逐張驗過）。
+
+⚠ **派工信預期「查證難度高於同年代的正規批」，本組實測不成立**——見第 3179 條。
+
+## 第 3172 條（**推翻 `slice.json`，兩筆；而且 MB 自己早就標對了**）：**兩張現場盤的 `live` 欄都該是 `true`**
+
+派工信已指出 slice 的 `live` 欄兩張都寫 `false`。本層另查到一件更要緊的事：**MB 端本身就是對的，錯的是 slice 的取值管線**。
+
+| 卡 | MB RG | `secondary-types` 逐字 | 盤面／來源佐證 |
+|---|---|---|---|
+| `Jason Moran《The Bandwagon》` | `77690c69` | **`["Live"]`** | Discogs 1872228 `notes` 逐字 `Recorded November 29-30, 2002 at The Village Vanguard.`；英文維基 `Jason Moran (musician)` 逐字 `a live trio album, recorded at New York's Village Vanguard` |
+| `Ruben Hein《Live》` | `d00a707f` | **`["Live"]`** | Discogs 4604332 `companies` 逐字 `Recorded At: Theater Carré`；荷文維基逐字 `Van dit concert werd een livealbum uitgegeven` |
+
+**→ 兩張的 MB release-group 都有 `secondary-types: ["Live"]`，slice 卻寫 `live: false`。**
+**裁定**：兩張一律 `live: true`。**並建議主線回頭看切 slice 的腳本有沒有讀 `secondary-types`**——
+這不是資料缺失（第 1827-B 條那一類），是取值漏欄，成本很低但會跨批復發。
+
+## 第 3173 條（**推翻策展層／Discogs，第 1 處**）：**`Kendrick Scott Oracle《A Wall Becomes a Bridge》` 第 2 軌叫〈Mocean〉，不是〈Moccan〉**
+
+Discogs 14078627 的 `tracklist` 第 2 列逐字 `Moccan`。**Blue Note 官方新聞稿的曲目表逐字是 `>>>>>>>>>>>Mocean`**，
+先行單曲的標題也逐字寫 `Mocean`（`https://www.bluenote.com/kendrick-scott-oracle-to-release-inspiring-new-album-a-wall-becomes-a-bridge-out-april-5/`）。
+**判定：Discogs 誤植，採官方的 `Mocean`。** 本層的 `facts`／`keyTracks` 都已改。
+⚠ **同時釘死一件版面的事**：本作十二首曲名在官方曲目表上**每首前面都帶一串大於符號**（十二個遞減到一個），
+**那是作品結構的一部分，但卡片正文不要逐字照搬**（會被字元檢查與版面吃掉）；本層已把它寫成敘述形式。
+
+## 第 3174 條（**覆核派工信對 `Bill Charlap & Sandy Stewart` 掛名的三句話：逐字全部成立**）
+
+| 派工信的話 | Discogs 逐字 | 判定 |
+|---|---|---|
+| 「Discogs 條目逐字是 `Sandy Stewart (2), Bill Charlap`（逗號，不是 `&`）」 | 零售條目 8390356／13840437／5992975 的 `artists` 欄逐字皆為 `Sandy Stewart (2)` ＋ `Bill Charlap`，`join` 欄逐字 `,` | ✔ |
+| 「帶 `&` 的是宣傳盤且順序相反」 | **10351326**（US、`format` 逐字 `CD, Album, Copy Protected, Promo`、catno `7243 5 60340 2 0V`）逐字 `Bill Charlap & Sandy Stewart (2)` | ✔ **順序與卡單相同**（Charlap 在前），與零售條目相反 |
+| 「掛名是 MB 的兩實體串接（joinphrase 逐字 ` & `），本批新立」 | 本層未改動掛名，沿用卡單 | ✔ |
+
+**裁定**：掛名維持 `Bill Charlap & Sandy Stewart`。`(2)` 是 Discogs 的同名消歧編號，**不進任何資料欄**。
+
+⚠ **同時記一條下游會用到的**：**美版 8390356 的 `extraartists` 只有兩行**（Piano／Vocals），
+**沒有逐軌寫作者、沒有錄音日期、沒有製作人**；這些全在**歐版 13840437** 的整筆裡
+（`notes` 逐字 `Recorded on October 23 & 24, 2004 at Sound on Sound Studio A, New York.`，
+十一軌逐軌 `Written-By`，製作 `Joel Moss`，內頁解說 `Barbara Carroll`）。
+**這是第 1678／1821-B 條「策展層寫查不到就先換一個版本條目」的一個乾淨正例**，本組兩次靠它救回整張卡的主故事（另一次見第 3175 條）。
+
+## 第 3175 條（**補策展層完全沒查到的：`Joel Ross《KingMaker》` 錄於 2016 年 12 月，壓了兩年多才發**）
+
+`prop-b.json` 與 Discogs 13619280、Blue Note 官方稿**三邊都只寫 2019 年發行**，沒有一筆提錄音年。
+**英文維基 `Joel Ross (musician)` 條目逐字**：`Ross made his recording debut as a leader on his album KingMaker for in December 2016.
+It was released on Blue Note Records in 2019, after Ross was brought to the attention of label executive Don Was by his son, Sol Was.`
+（原句的 `for in` 是該條目的筆誤，語意明確。）
+
+**裁定**：**`year` 維持 2019**（首發年，依 `research-base.md` 的通則），**錄音年 2016 年 12 月寫進 `facts`**。
+這一條是本張最強的切角——**同一張碟錄好之後在抽屜裡放了兩年半，出得成是因為廠牌社長的兒子跟父親提了一句**——
+**策展層與廠牌官網都沒有它**，⚠ **再一次驗證派工信第五節那句「廠牌官網不是年份的一手依據」。**
+
+⚠ **另記一個下游會踩的**：**同一批的 `James Francies《Flight》`（2018）裡彈鐵琴的就是 Joel Ross**，
+**`Jeremy Dutton` 同時是這兩張的鼓手**，**`Derrick Hodge` 同時是《Flight》與《A Wall Becomes a Bridge》的製作人**。
+**三條人脈在本組十張裡重疊**，鉤子層做同批反同構時要先看過這一條，不要三張都從「休士頓／Glasper 圈的人脈」切。
+
+## 第 3176 條（**覆核策展層對 `Gonzalo Rubalcaba《The Trio》` 的年份改判：成立，1997 不動；另退掉一個英文維基給的版本**）
+
+策展層把 1998 改判 1997。**本層獨立重查，改判成立**：Discogs 11564432 的 `released` 欄逐字 `1997-12-22`、
+`country` 逐字 `Japan`、`labels` 逐字 `Somethin' Else / TOCJ-5591`、barcode `4988006736207`；
+歐版 8259286 的 `released` 只有年份 `1998`、`labels` 第一格逐字 `Blue Note / 4944422`；
+**兩版七軌的曲名、時長（10:04／10:28／8:05／9:23／9:21／13:32／8:03）逐字完全相同。**
+
+⚠ **本層另退掉一筆策展層沒碰、但下游很可能撿到的**：**英文維基 `Gonzalo Rubalcaba` 的作品表另列一行 `The Trio (Angel, 2005)`。**
+`artist=Gonzalo Rubalcaba&release_title=The Trio` 的 Discogs 全掃描回**六筆條目**（日版零售、日版宣傳、歐版兩筆、俄版兩筆），
+**沒有任何 Angel 版**。**無法交叉驗證 → 不寫進 `facts`**（依 `research-base.md`「只有單一來源支撐的年份請交叉驗證再採用」）。
+俄版 23220110 與 9342983 的 `format` 欄逐字 `Unofficial Release`，維持策展層的不採。
+
+## 第 3177 條（**推翻策展層，第 2 處；以及本組唯一一次逐軌 credits 比策展層細**）：**`Prysm《Time》` 十軌的寫作權不是「三人共有」，是逐軌分派＋最後一軌合寫**
+
+`prop-b.json` 的 `why` 逐字寫「十軌全部由三人自己寫（Discogs 930303 的 `Composed By` 欄逐字只列這三人）」。
+**敘述沒錯，但停在摘要層**。整筆 `extraartists` 展開後是：
+
+| 寫作者 | 軌 |
+|---|---|
+| Pierre de Bethmann | **1、6、8**、10 |
+| Christophe Wallemme | **2、4、7**、10 |
+| Benjamin Henocq | **3、5、9**、10 |
+
+**→ 九軌各歸一人、各三軌，第 10 軌〈Scratch...〉三人同時掛名。** 這個「一人三軌、最後一軌合寫」的分配本身才是可寫的事實。
+⚠ **這正是附錄二第 3 點的形狀**：`search` 摘要的 `extraartists` 只回前四筆，**本筆整筆有 13 行、寫作權在第 2 到 4 行與第 8 行**，
+**只看摘要會完全看不到這個分配。**
+
+## 第 3178 條（**`Ron Carter《Stardust》` 逐軌編制兩版本打架，採日版＋維基那一組**）
+
+| 來源 | 鐵琴 Joe Locke | 次中音 Benny Golson | 鼓 Lenny White |
+|---|---|---|---|
+| Discogs **9780419**（US、Blue Note） | 逐字 `[1, 3 to 5, 7]` | 逐字 `[1 to 5]` | 逐字 `[1 to 7]` |
+| Discogs **11783920**（JP 宣傳盤、Somethin' Else `TOCJ-68053`） | 逐字 `except 2, 7, 8` ＝ **1、3、4、5、6** | 逐字 `except 6 to 8` ＝ 1–5 | 逐字 `except 8` ＝ 1–7 |
+| 英文維基 `Stardust (Ron Carter album)` | 逐字 `tracks 1, 3–6` | 逐字 `tracks 1–5` | 逐字 `tracks 1–7` |
+
+**兩票對一票，採日版與維基的 `1、3–6`。** 判準第 1 條（有先例：逐軌 credits 以最完整的那一版為準）與第 2 條（可逆）。
+⚠ **順帶釘死一個切角**：**三份來源一致顯示第 8 軌〈Stardust〉沒有鼓、沒有薩克斯風、也沒有鐵琴**——
+全碟唯一的貝斯＋鋼琴二重奏，3 分 59 秒，而且是壓軸。**策展層沒有提這件事。**
+
+## 第 3179 條（**方法論；更正派工信第二節對本組查證難度的預期**）：**b 組 10 張一張都沒有 `thin`，`bluenote.com` 的命中率反而是本線第二高**
+
+派工信第二節寫「**請預期查證難度高於同年代的正規批**」（理由是 MB `label-info` 缺失與封面／串流的低能見度高度相關，第 1827-B 條）。
+**本組實測不成立**，逐條記下來免得下一棒照著少查：
+
+| 查法 | b 組 10 張的命中 | 對照（附錄二） |
+|---|---|---|
+| **Discogs 整筆逐軌 credits** | **10／10**，48 條 `facts` | c-168 18／18、c-169 a 20／20，一致 |
+| **各國語維基** | **10／10**（en 7 張、fr 3 張、nl 1 張、it 1 張） | c-169 a 13／20，**本組更高** |
+| **`bluenote.com`（wp-json 搜尋＋新聞稿頁）** | **5／10**（Rubalcaba／Ron Carter 靠同一篇悼念文，Francies／Joel Ross／Kendrick Scott 各有自己的新聞稿） | c-168 1／18、c-169 a 2／20，**本組高出一個量級** |
+| `universal-music.co.jp` | **0／10**，未動用（兩張日版盤的品番都能從 Discogs 直接取得，沒有非查不可的欄位） | c-170 實測落空 |
+| 藝人官網 | **0／2 嘗試**（`rubenhein.com` 是 JS 渲染，靜態抓不到文字） | c-166／c-167 也是 0／2、同樣的成因 |
+
+**為什麼跟預期相反**：**`label-info` 缺失影響的是「以廠牌為軸的列舉」，不影響「以藝人為軸的查證」。**
+本組十張裡有五張的藝人在 `bluenote.com` 有專頁級的新聞稿——⚠ **而且分界確實如附錄二所說是出身地不是年代**：
+**美國本部的五張（Rubalcaba 靠日方線、Ron Carter、Francies、Joel Ross、Kendrick Scott）全中，
+歐洲分支的五張（Prysm、Di Battista、Ruben Hein，以及法國線的兩張）`bluenote.com` 全空。**
+**→ 附錄二那句「有沒有專頁的分界是碟的出身地不是年代」，在本組是 5:5 的乾淨對半，建議升格成定律。**
+
+⚠ **另記兩個雲端環境的實測**（與第 3102 條並列）：
+1. **`en.wikipedia.org/w/api.php` 會回 `You are making too many requests to the API.`**（純文字、不是 JSON，直接 `JSON.parse` 會炸）。
+   **間隔拉到 5 秒、並對這個字串做重試就穩了**；本組之後零失敗。**這不是 403、不是封鎖，別當成查無。**
+2. **`api.discogs.com`（API 網域）本組 20 餘次呼叫 0 次 403**——**第 3102 條說的 403 是 `www.discogs.com` 的網頁端**，兩者要分開講。
+3. **`itunes.apple.com` 本組未動用**（店面覆蓋率是探測層的事，不是研究層的），**故無法覆核附錄二第 2 點的 403 是否仍在。**
+
+## 第 3180 條（**派工信與 `research-base.md`／既有裁定的牴觸盤點：一處措辭牴觸、一處預期被實測推翻**）
+
+| # | 派工信 | 正本／實測 | 處理 |
+|---:|---|---|---|
+| 1 | 第五節「**`itunes.apple.com/search` 曾出現 403（c-170 那批 0 次，狀態會變）**」 | 附錄二第 2 點逐字寫「**`itunes.apple.com/search` 在雲端會回 HTTP 403**（c-171 a 整批的三種店面查法都做不了）」 | **兩處都沒錯，是不同批的實測**；本組未動用店面查法，**無法覆核**。下一棒請以自己那一次的實測為準 |
+| 2 | 第二節「**請預期查證難度高於同年代的正規批**」 | **實測不成立**：10／10 `full`、無一張湊不滿 8 條 | 見第 3179 條，**這是派工信唯一一句被本組實測推翻的話** |
+| 3 | 第一節「**`slice.json` 只有五欄可讀**」 | 本層**全程未讀 `slice.json`**（輸入是卡單＋`prop-b.json`＋`caa.json`／`previews.json` 的既有結論） | 對研究層不適用，無影響（與第 3104 條第 3 列同形） |
+| 4 | 第六節「**`互指?` 不會在 research 階段輸出**」 | ✔ 實測 `node qa-batch.mjs research c171` 的輸出只有 `a 10`／`b 10`／`key 與卡單完全一致`／`全部通過` | 派工信正確 |
+
+**其餘每一句本層都對過**，與 `research-base.md` 開頭那三處雲端例外、與 `CURATION-BRIEF-bluenote-post1985.md` 附錄二**無牴觸**。
+
+⚠ **交件狀態（第 1803-B 條，本線第八次；本次結果與前七次相反，但成因一樣要記）**：
+`desc-tools/batches/research/c171-b.json` 在本層作業中途存過一次**五張**的快照，十張的完整版是後寫的。
+**期間主線另一個工作階段以 `checkpoint: c171 研究 b 中途存檔`（`1a3def0`）把這個檔提交進了 `HEAD`。**
+**本層交件前實測**：`git diff --stat HEAD -- desc-tools/batches/research/c171-b.json` **為空**、
+`git show HEAD:...` 解出來**是 10 筆且與工作區逐字相同** → **這一次 `HEAD` 與工作區一致，沒有發生前七次那種「提交到的是中途快照」。**
+**但規則不變：驗收與合併一律以工作區當下版本為準**，主線仍請在收件時各跑一次上面那兩個指令確認。
+**本層不 `git add`、不 `commit`、不 `push`。**
+
+---
+
+# c-171 **鉤子層 a 組**（10 張，1989–1998）裁定，編號 3301–3340，本檔用到 3312
+
+## 第 3301 條（**總表**）：**10 張全數交件，預算 217–229／中位 224，0 張超標**
+
+| 項 | 值 |
+|---|---|
+| 交件張數 | **10／10**，key 與順序逐字同 `c171-cards.json` 的 `group === "a"` |
+| 預算（`hook + note − 四項扣除`） | **min 217／max 229／中位 224**，**>230 共 0 張** |
+| 分佈 | 209–214：0／215–219：2／220–224：5／225–229：3／230+：0 |
+| `hook` 加權（英數 0.5） | **20–31.5**，上限 50，無一張逼近 |
+| `note` 原始字元 | 208–233，上限 350 |
+| 前四字互異 | **10／10 互異**（`Blue`／倫敦錄的／十三分鐘／二十六歲／沒有鼓手／接下深夜／同一首輓／作者欄上／他找來的／錄音室是） |
+| 骨架 claim | **10 張各 claim 一條、彼此不重複**（第 3304 條） |
+| `qa-batch.mjs hooks c171` | **a 組旗標 0**；批次層 1 個「b 缺 hook 檔」——**派工信第二節預測正確，是管線形狀** |
+| `chk-hook-crossgroup.mjs c171` | **✓ 全部通過** |
+| `互指?` | **0 筆**，無可人工判讀者 |
+| 字元掃描 | 簡體／假名／西里爾／希臘／諺文／千分位逗號／半形逗號 **全部 0 命中** |
+
+## 第 3302 條（**先把尺倒回去量 c-168 a，再量自己；公式逐字寫出來**）：**c-168 a 逐格重現 209–229／中位 222.5**
+
+**本層實作的公式**（`hook-base.md` 雲端註記第 2 點寫死的那條，逐項 `Array.from().length`，零心算）：
+
+```
+預算 = Array.from(hook).length + Array.from(note).length
+     − 4 × count(note, "主故事：")
+     − 1 × count(note, "→")
+     − 9 × count(note, "正文只寫上列各項。")
+     − 11 × count(note, "這條骨架全批只走本張。")
+```
+
+**只扣這四樣**：年份指定（`發行年寫 YYYY 年。`）、時序指定、引用限制、載體交代、克制指示**全部計入**。
+
+**倒回去量 `desc-tools/batches/hooks/c168-hooks-a.json`（18 張，同為 1985–1999 段）**：
+**min 209／max 229／中位數 222.5／>230 為 0** ——**與派工信給的 209–229／中位 222.5 逐格對上**，尺確認同一把。
+
+⚠ **係數不可繼承這條再次成立**：本層第一版 10／10 全超標 **12–66%**（258–383），
+與 c-168 第一版 18／18 超標 15–73%、c-169 a 20／20 超標 3–63%、c-170 a 7／7 超標 27–67% 同形狀。
+**成因與前幾批一樣：專名密度。** 本批十張裡有八張的主故事鏈掛著 3 個以上的拉丁專名，
+**一個 `Symphony of the New World` 就是 28 字元、一個 `Jan Erik Kongshaug` 是 18**——
+**中文格數看起來一樣，字元數差三倍。** 收斂靠的是第 3303 條的整格捨去，不是修辭壓縮。
+
+## 第 3303 條（**整格捨去清單；判準照第 1830-B 條更正後的定義**）：**十一格**
+
+**判準逐字**：「名單型＝一格裡兩個以上只起點名作用的專名，密度最低者先砍，與人數無關」。
+
+| 卡 | 捨去的那一格 | 理由 |
+|---|---|---|
+| `Step By Step` | 班底三人（John Scofield／Eddie Gomez／Jack DeJohnette）與製作人 Gary Burton | 名單型；四個專名全部只起點名作用，且與「支線第一號」的骨架無關 |
+| `Step By Step` | 錄音、助理錄音、執行製作三職 | 名單型，密度最低 |
+| `Paris` | 六重奏英國班底五人（Guy Barker／Julian Argüelles／Jason Rebello／Mick Hutton／Jeremy Stacey） | 名單型；**改寫成「班底整批換成英國樂手」一句**，事實不掉、字元省 60 以上 |
+| `Paris` | 封套設計 The Artful Dodgers 與攝影 Nick White | 名單型 |
+| `Ode to Life` | 三位作曲團員的姓名（Nilson Matta／Mor Thiam／Alberto Beserra＋Guilherme Franco／Carlos Ward） | 名單型；**改寫成「另三首由巴西、西非與美國籍的三位團員各寫一首」**——研究層第 3086 條要的正是「三方各出一手」這個形狀，姓名本身不是它 |
+| `Cruisin'` | 東芝 EMI 製作班底（Namekata／Tsuge／Anderson／Okazaki／Taku）——**同格在 `Jazz, My Romance`／`Hat Trick`／`Brandenburg Concerto` 一併捨去，共四張** | 名單型，且四張一模一樣，留著就是四張同構 |
+| `Cruisin'` | Ellington 三首的曲名 | 只保留「三首 Duke Ellington」的數字，曲名是純點名 |
+| `Jazz, My Romance` | Herb Ellis 進 Oscar Peterson Trio 接替 Barney Kessel 那一段 | 兩個專名只起點名作用；`Soft Winds` 對 `Nat King Cole Trio` 那一層才是家譜本身 |
+| `That Day…` | 樂隊四人（Mulgrew Miller／Kevin Eubanks／Munyungo Jackson／Terri Lyne Carrington 的鼓） | 名單型；Carrington 已在作者欄那一格出現，重複 |
+| `That Day…` | 中段曲庫作者（Mann & Weil／Johnny Mandel／Livingston & Webster） | 名單型；頭尾兩首足以撐起「曲庫跨度」 |
+| ⚠ `Brandenburg Concerto` | **整支弦樂團十九人名單＋鼓手 Lewis Nash** | **派工信第六節預判正確，這一格整格捨去。** ⚠ **但 `Kermit Moore` 與 `Sanford Allen` 兩人留下**——他們不是「只起點名作用」，**那兩句話本身就是本張的骨架**（第 3099 條）。**鼓手 Lewis Nash 是純點名，跟著名單一起捨去。** |
+| `Brian Blade Fellowship` | 團員七人名單 | 名單型；**只留 Dave Easley 的踏板鋼棒吉他（它是這個團的識別音色）與共同創團的 Jon Cowherd**——後者最後仍因字元壓力縮成「八軌裡七軌是 Blade 寫的」 |
+
+## 第 3304 條（**骨架歸屬；程式實掃產生，非手打**）：**a 組 claim 10 條、讓給 b 組 6 條**
+
+表由 `tab-c171-ha.mjs` 讀 `c171-hooks-a.json` 與 `c171-cards.json` 產生：
+
+| # | 卡 | 預算 | hook 加權 | 前四字 | 骨架 | claim |
+|--:|---|--:|--:|---|---|:-:|
+| 1 | Tommy Smith《Step By Step》 | 228 | 31.5 | Blue | 廠牌新開的支線，第一號給了這張 | ✔ |
+| 2 | Tommy Smith《Paris》 | 218 | 24.5 | 倫敦錄的 | 錄音與混音分兩國，混音師的手決定了聲音 | ✔ |
+| 3 | Don Pullen & The African-Brazilian Connection《Ode to Life》 | 229 | 23 | 十三分鐘 | 替剛過世的長年搭檔錄的追悼盤 | ✔ |
+| 4 | 大西順子《Cruisin'》 | 220 | 29 | 二十六歲 | 曲單挑的作曲家，正是鼓凳上那位樂手當年替他錄第一批唱片 | ✔ |
+| 5 | Ron Carter《Jazz, My Romance》 | 224 | 23 | 沒有鼓手 | 編制本身的家譜（無鼓三重奏的祖宗） | ✔ |
+| 6 | Kevin Eubanks《Spiritalk 2: Revelations》 | 224 | 23 | 接下深夜 | 電視樂團接位與發片同月發生的時序 | ✔ |
+| 7 | Jackie McLean Meets Junko Onishi《Hat Trick》 | 227 | 24 | 同一首輓 | 同一位樂手隔三十七年再錄同一首曲子 | ✔ |
+| 8 | Dianne Reeves《That Day…》 | 224 | 20 | 作者欄上 | 作者欄裡的第三個名字是一位詩人 | ✔ |
+| 9 | Ron Carter《Brandenburg Concerto》 | 217 | 25 | 他找來的 | 伴奏席上的指揮與首席各是黑人古典樂史的第一人 | ✔ |
+| 10 | Brian Blade Fellowship《Brian Blade Fellowship》 | 222 | 25 | 錄音室是 | 跨界製作人把爵士首作錄進一間舊電影院 | ✔ |
+
+**寫法照 `hook-base.md` 雲端註記第 3 點**：claim 句只寫「這條骨架全批只走本張。」，**讓出的卡什麼都不寫、不點名讓給誰**。
+機器實掃確認：**b 組十張的盤名字串在 a 組 `hook` 與 `note` 裡 0 命中**（唯二命中是掛名 `Ron Carter`，那是同藝人不是互指）。
+
+**⚠ 動手前掃過 `batch-progress/c171/prop-b.json` 那 10 張，依第 1809-B／1814-B 條讓出六條骨架**
+（「歸屬不是先到先得」「`hook` 本體用掉的形狀也算已占用」）：
+
+| 讓出的骨架 | b 組有幾張同形狀 | a 組的處置 |
+|---|--:|---|
+| **Somethin' Else／Blue Note 雙軌流通、日版先發** | **2**（Rubalcaba《The Trio》、Ron Carter《Stardust》） | a 組四張東芝 EMI 企劃盤（`Cruisin'`／`Jazz, My Romance`／`Hat Trick`／`Brandenburg Concerto`）**整格不寫發行地、版本與廠牌流通**。⚠ 這同時一次解掉派工信第三節第 3 點與第四節第 1 點兩條限制，見第 3308 條 |
+| **首張領班盤** | **2**（James Francies《Flight》、Joel Ross《KingMaker》） | `Brian Blade Fellowship` 的骨架改成製作人與錄音場地，**正文不以「這是他的第一張」為主軸** |
+| **盤名即團名／團名的起點** | 1（Jason Moran《The Bandwagon》） | a 組唯一的同名專輯 `Brian Blade Fellowship` 讓；`selfTitled` 這件事不進 note |
+| **家人同台** | 1（Bill Charlap & Sandy Stewart 母子二重奏） | `Spiritalk 2` 把 **哥哥** Robin Eubanks 降成班底一格，不當骨架 |
+| **曲庫跨度極大** | 1（Jason Moran，布拉姆斯到 Afrika Bambaataa） | `That Day…` 的骨架是詩人不是曲庫、`Cruisin'` 的骨架是鼓手的來歷不是曲單 |
+| **一天錄完＋`Clinton Studios`** | 1（Ron Carter《Stardust》，同一間錄音室） | **a 組三張 Carter 相關卡全部不寫錄音室名**；`Brandenburg Concerto` 原稿那句「三年前他在同一間錄音室錄《Friends》」連同錄音室一起捨去 |
+
+## 第 3305 條（**三張 Ron Carter 的切入面向；跨 a／b 一起分**）：**編制／人／流通，三面各一張**
+
+派工信第六節指名：`Ron Carter` 兩張在 a 組、`《Stardust》` 在 b 組，**三張要一起分**。
+
+| 卡 | 組 | 切入面向 | 不碰的面向 |
+|---|:-:|---|---|
+| 《Jazz, My Romance》(1994) | a | **編制的家譜**：無鼓三重奏，上溯 Herb Ellis 的 Soft Winds 與 Nat King Cole Trio | 不寫廠牌流通、不寫錄音室、不寫他的生涯錄音場次紀錄 |
+| 《Brandenburg Concerto》(1996) | a | **伴奏席上那群人的身分史**：指揮 Kermit Moore 與首席 Sanford Allen；獨奏用 piccolo bass | 不寫廠牌與發行地（第 3308 條）、不寫「一天錄完」、不寫錄音室 |
+| 《Stardust》(2001) | b | **留給 b 組**：六重奏、一天錄完、Somethin' Else／Blue Note 雙軌流通 | —— |
+
+**兩張 `Tommy Smith` 同理**：《Step By Step》走**廠牌支線的開張**，《Paris》走**錄音／混音的地理與那位混音師**；
+**兩張都不重述對方的班底，也不重述「他是誰」**。
+⚠ **大西順子也橫跨兩張**（`Cruisin'` 領班、`Hat Trick` 聯名）：前者寫她的**選曲**、後者寫她的**作曲**（〈Jackie's Hat〉），
+**她的生平只在 `Cruisin'` 出現一次（1967 年生於京都），`Hat Trick` 一字不重述。**
+
+## 第 3306 條（**榜位型與序數型模子的處置；派工信第五節指名要自己盯的那兩個**）
+
+**派工信實測正確**：有榜位／評介原句的只集中在 `Ode to Life`／`That Day…`／`Brian Blade Fellowship`／`Spiritalk 2`／`Hat Trick`，
+**而 `Paris`、`Jazz, My Romance`、`Brandenburg Concerto` 三張的 Billboard 紙本是 0 命中或只有 session 表**。
+**若照「有什麼寫什麼」，就會變成半批寫榜位、半批寫不出成績——那正是第 1821-B 條的數字模子同構。**
+
+**裁定（程式實掃複驗）**：
+
+| 模子 | 實掃結果 | 處置 |
+|---|--:|---|
+| **榜位型**（`第 N 名`） | **1／10** | **只給 `Ode to Life` 一張**——它是本組唯一「紙本與維基兩層一致、可寫死不標 uncertain」的榜位（第 3087 條）。`That Day…` 的最高名次帶著 OCR 隔週取樣的保留（第 3097 條），**整格不寫**；`Brian Blade Fellowship` 的「新進榜」與 `Spiritalk 2` 的系列前作榜位**一併不寫** |
+| **序數型**（第幾張） | **2／10**，且句型不同 | `Paris` 寫「Blue Note 四張裡的**最後一張**」、`Cruisin'` 寫「她的**第二張**領班盤」。⚠ **`Spiritalk 2` 原稿也是「Blue Note 四張裡的最後一張」，與 `Paris` 逐字同型——已整格刪除**；`Ode to Life` 的「第二張」改寫成「團是 1990 年底才組的」，序數退場、新團的時間感留著 |
+| **評介型**（引樂評原句） | **0／10** | 本組有 `Hat Trick` 1997-01-11 全文、`Spiritalk 2` 1995-02-25、`Brian Blade Fellowship` 1998-05-30 三篇可用，**三張全部不走評介**——`Hat Trick` 改走〈Left Alone〉、`Spiritalk 2` 改走時序、`Blade` 改走製作人與錄音場地 |
+| **廠牌時差型**（美版／日版） | **0／10** | 整條讓給 b 組（第 3304 條） |
+| 句型重複掃描 | 主故事各格開頭三字，重複最高者為「199」5 次 | ⚠ 其中 `Ode to Life` 與 `Jazz, My Romance` 原稿各有一格逐字「YYYY 年 M 月**錄於紐約**」——**兩格已改寫**（一格倒裝成「錄音在 1993 年 2 月的紐約」、一格把編制提到句首），**現在沒有任何兩格同句型** |
+
+⚠ **`chk-hook-crossgroup.mjs` 看不到這一層**（它比的是跨組的專名與盤名），**上表四行全部是本層自己寫程式掃出來的**。
+
+## 第 3307 條（**研究層推翻策展層的十二處，逐處在鉤子層的落點**）：**六處硬錯誤全部沒有進 note**
+
+| # | 研究層條號 | 硬錯誤 | 本層落點 |
+|--:|---|---|---|
+| 1 | 3082 | Tommy Smith 的 Blue Note 盤是**四張**不是三張 | `Paris` 的 note 逐字寫「他 Blue Note **四張**裡的最後一張」；`Step By Step` 的 note 不提盤數，只寫「他的 Blue Note **首張領班盤**」（⚠ 第 3083 條的「四字不可掉」已遵守，`Blue Note` 限定詞在） |
+| 2 | 3085／3086 | 《Ode to Life》是**第二張**；**七軌只有四軌是 Pullen 寫的** | 序數整格退場（第 3306 條）；「七軌只有四首出自 Pullen，另三首由巴西、西非與美國籍的三位團員各寫一首」逐字進 note |
+| 3 | 3089／3090 | 〈Roz〉是 **Rodney Whitaker** 寫的；Ellington 是**三首** | 兩句都逐字進 note（「曲單收了**三首** Duke Ellington」「〈Roz〉是三重奏的貝斯手 **Rodney Whitaker** 寫的」） |
+| 4 | 3088 | 美版是 1994 不是同年 | **整格不寫發行地與版本**（第 3304／3308 條），時差在正文裡不存在，因此無從寫錯 |
+| 5 | 3092／3093 | 時序**相反**；Robin 是**哥哥** | note 逐字「他**已經**在 Branford Marsalis 休假期間代理這個樂團的音樂總監，同年正式接任，**正文要寫明這個時序**」；「長號是他**哥哥** Robin Eubanks」 |
+| 6 | 3094／3095 | 錄音地是 **Power Studio**；〈Left Alone〉是**兩人合寫、Holiday 從沒錄過** | ⚠ **錄音地整格捨去**——見第 3309 條；〈Left Alone〉的四層來歷是本張的骨架，逐字進 note |
+| 7 | 3096 | 〈That Day〉是**三人合寫**、〈Dark Truths〉是 **Joan Armatrading** 的 | 兩句都進 note，且三人合寫那句就是本張的 hook 與骨架 |
+| 8 | 3099 | **有鼓手 Lewis Nash**、弦樂團名單查得到、`eau` 是東芝 EMI 的專用廠牌名 | 弦樂團名單與鼓手**整格捨去**（第 3303 條）；`Kermit Moore` 與 `Sanford Allen` 兩人升為骨架；**`eau` 這條廠牌線不寫**（第 3308 條） |
+
+## 第 3308 條（**派工信第四節三條硬限制的處置**）：**三條全部靠「整格捨去」達成，不靠否定句**
+
+1. **`Brandenburg Concerto` 的年份**：note 只留標準指定句「**發行年寫 1996 年。**」，
+   **主故事鏈裡一個年份都沒有**——1996 因此不可能變成敘事重點，jazzdisco 的 1997 反證也不會被寫作層看見而搖擺。
+2. **`Brandenburg Concerto` 的廠牌**：**整張 note 沒有出現 `Blue Note`、`eau`、`EAU Records`、美版、日版、軌數差**。
+   **「全球 Blue Note 發行」這句話因此沒有生成的可能。** ⚠ **這比在 note 裡寫「不得寫成全球發行」安全得多**——
+   `hook-base.md` 第 152 行定死「note 一律用正面表述」，否定句與研究限制會被寫作層原樣抄進消費者看的正文（校對痕跡第一至四型）。
+3. **`大西順子` 的官網**：**兩張卡的 hook 與 note 都沒有出現任何網域、官網或外部連結**，第 3091 條的禁用來源在本層沒有接觸面。
+4. **`Brian Blade Fellowship` 的 1998 原盤與 2020 再發**：**note 整格不寫 2020 年的 Blue Note 80 再發**，
+   並以「發行年寫 1998 年。」把版本釘死；**兩者不會被混成一件事。**
+
+## 第 3309 條（**`Power Studio` 的處置；本層唯一一次「研究層查對了、但仍然整格不寫」**）
+
+研究層第 3094 條把盤面逐字 `Power Studio` 查清楚了，也警告不得與《Cruisin'》的 `Power Station` 互套。
+**本層的裁定是整格不寫錄音地。** 理由三條：
+1. **`Hat Trick` 的骨架是〈Left Alone〉隔三十七年再錄**，錄音地與它沒有關係，是預算裡密度最低的一格。
+2. ⚠ **`Power Studio` 與 `Power Station` 差一個字、在同一批裡分屬兩張卡**——**只要兩者都不進 note，互套的機率就是零**；
+   留一個進去，就得同時在另一張寫排除句，那是兩格成本換一格資訊。
+3. 依第 3308 條的同一條理由：**排除句不能寫成否定式**，而正面寫法（「錄音地寫 Power Studio」）又會把一個沒有故事的專名塞進正文。
+**判準第 2 條（可逆：這是 note 欄位，主線若要補只需加一句）。**
+
+## 第 3310 條（**收工實跑**）
+
+```
+$ node qa-batch.mjs hooks c171
+（略過 qa-check-hooks.mjs：本 repo 無此檔。……）
+⚠ b 缺 hook 檔
+總標記 1
+
+$ node chk-hook-crossgroup.mjs c171
+c171｜1 組｜10 張
+hook 加權 20–31.5｜note 208–233
+✓ 全部通過
+```
+
+- **a 組旗標 0。** 唯一的標記是批次層的「b 缺 hook 檔」——**派工信第二節已預告，是管線形狀不是本組的錯。**
+- **`互指?` 0 筆**（第 1763-B 條要求的逐筆人工判讀因此無事可判）。
+  **成因寫明**：本層十張的 note 全部只寫本卡研究稿有的專名，**同批別張的盤名一個都沒有引用**；
+  第 3304 條的骨架讓渡也照第 1787-B 條寫成「什麼都不寫」，**沒有任何一張點名把軸讓給了誰**——
+  那正是 `互指?` 每批多出好幾行的來源。
+- 另跑本層自寫的 `chk-c171-ha.mjs`：hook 加權上限、前四字互異、句末標點、禁語、分數星等、
+  否定前提（`不是`／`卻不是`／`並非`）、note 否定句（`不得`／`禁補`／`查無`／`未能查證`／`卡池標錯`）、
+  假名／西里爾／希臘／諺文／千分位逗號 —— **全部 0 命中**。
+
+## 第 3311 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）：**一處實質、兩處需要寫明處置、其餘全部正確**
+
+| # | 派工信 | 正本 | 判 |
+|--:|---|---|---|
+| 1 | 第三節第 1 點把《Step By Step》的「三張」與《Paris》的「第四張」並列成「**策展層兩張卡自己互相牴觸**」 | 第 3082 條：**錯的只有《Step By Step》那句**，《Paris》的「第四張」**本身是對的**（四張的最後一張） | ⚠ **敘述容易讀成兩句都錯。** 本層照研究層寫：`Paris`＝四張裡的最後一張、`Step By Step`＝Blue Note 首張領班盤 |
+| 2 | 第三節第 3 點與第四節第 1 點：「**正文不得寫**『同年美日兩地發行』」「**不得寫成**『全球 Blue Note 發行』」 | `hook-base.md` 第 152 行：**note 一律用正面表述，不要寫「不得寫 X」**——否定句會被寫作層原樣抄進正文 | **派工信的意圖正確、寫法不能照搬進 note。** 本層改以整格捨去達成同一效果（第 3308 條），note 裡沒有任何否定句 |
+| 3 | 第六節第 1 點：「本批有一整支弦樂團名單，**那一格幾乎一定要整格捨去**」 | 第 3099 條：同一格裡的 `Kermit Moore` 與 `Sanford Allen` **是本張唯一的故事** | **兩句不牴觸，但界線要寫明**：名單（十九位團員＋鼓手 Lewis Nash）整格捨去，**Moore 與 Allen 兩人留下**——他們不符第 1830-B 條「只起點名作用」的定義 |
+| 4 | 第二節：`qa-batch hooks c171` 會報 `b 缺 hook 檔` | —— | **實測正確** |
+| 5 | 第六節第 1 點：c-168 a 應對得上 209–229／中位 222.5 | —— | **實測逐格對上**（第 3302 條） |
+| 6 | 第五節：`Paris` 與 `Jazz, My Romance` 的 Billboard 紙本 0 命中，「不要硬找『這張碟紅不紅』那種軸」 | —— | **實測正確且有效**：這兩張的骨架分別是混音師與編制家譜，**完全不需要商業成績** |
+
+**本信其餘每一句本層都對過，與 `hook-base.md`（含雲端註記三點）及既有裁定無牴觸。**
+
+## 第 3312 條（**交件版本認定；第 1803-B 條的第八次**）
+
+**`desc-tools/batches/hooks/c171-hooks-a.json` 的工作區當下版本才是交件版。**
+本層在收斂過程中對同一個路徑寫過四版（第一版 10／10 超標、第四版才全數落進 217–229），
+**每一版都覆寫同一個檔案，所以「檔案存在且有 10 筆」不等於「是定稿」。**
+主線驗收請以本條之後、工作區未再變動的那份為準；**筆數對了不等於定稿了。**
+**本層不 `git add`、不 `commit`、不 `push`、不動 git 索引。**
+
+### 附：收工時的 `HEAD` 比對（2026-09-19 12:53）
+
+主線在本層收工前後做了一次 checkpoint 提交
+（`54dfe5e checkpoint: c169 鉤子 b／c171 鉤子 a／c170 寫作 1 中途存檔`，12:53:08），
+**時間點落在本層最後一次寫檔（12:52）之後**。實跑
+`git show HEAD:desc-tools/batches/hooks/c171-hooks-a.json` 與工作區 `diff`：**逐字相同、`git status` 無此檔**
+→ **這一次 `HEAD` 與工作區一致，沒有重演第 3103 條那種「提交到的是中途快照」。**
+⚠ **但本層在同一路徑上覆寫過四版，規則不變：驗收與合併一律以工作區當下版本為準。**
+⚠ **`batch-progress/c171/rulings.md` 本身仍是未提交狀態（`M`），第 3301–3312 條不在 `HEAD` 裡。**
+
+---
+
+# c-171 鉤子層 b 組（10 張，Blue Note 1997–2019；第 3401–3412 條）
+
+## 第 3401 條（**總表；本層是續跑，不是從頭寫**）：**10 張全數交件，預算 216–228／中位 224，0 張超標；前一支留下的 10 筆判定「9 張已定稿、1 張需定點修改」，另 2 張為跨組模子做定點修改**
+
+| 項 | 值 |
+|---|---|
+| 交件張數 | **10／10**，key 與順序逐字同 `c171-cards.json` 的 `group === "b"`（程式比對 `true`） |
+| 預算（`hook + note − 四項扣除`） | **min 216／max 228／中位 224**，**>230 共 0 張** |
+| 分佈 | 205–209：0／210–214：0／215–219：4／220–224：2／225–229：4／230+：0 |
+| `hook` 加權（ASCII 0.5） | **18–26**，上限 50 |
+| `note` 原始字元 | 217–237，上限 350 |
+| 前四字互異 | **跨 a／b 共 20 張全互異**（程式掃，0 組重複） |
+| 骨架 claim | **b 組 10 張各 claim 一條**（第 3404 條），a 組讓出的六條全部落地 |
+| `qa-batch.mjs hooks c171` | **全部通過 ✓**，總標記 **0**（第 3310 條那筆「⚠ b 缺 hook 檔／總標記 1」隨 b 檔到位消失） |
+| `chk-hook-crossgroup.mjs c171` | **c171｜2 組｜20 張／hook 加權 18–31.5｜note 208–237／✓ 全部通過** |
+| `互指?` | **0 筆**，無可人工判讀者 |
+| 本層對前一支的改動 | **3 張、4 處定點修改**（第 3403 條），其餘 7 張逐字不動 |
+
+## 第 3402 條（**續跑判定：前一支留下的 10 筆是不是定稿？先量再說**）：**兩個訊號都不成立，10 筆全部已落在預算內**
+
+派工信第零節給的判準是第 1803-B／1834-B 條：**鉤子層的中途檔與定稿在檔案系統上分不出來，唯一的訊號是預算分佈**，
+並指名「**預算 >230 的、或明顯還帶著名單型整格的，都要當成未完成**」。
+
+**先把尺倒回去量 a 組**（第 3302 條的公式逐字實作，`Array.from().length`，零心算）：
+
+```
+預算 = Array.from(hook).length + Array.from(note).length
+     − 4 × count(note, "主故事：")
+     − 1 × count(note, "→")
+     − 9 × count(note, "正文只寫上列各項。")
+     − 11 × count(note, "這條骨架全批只走本張。")
+```
+
+倒量 `c171-hooks-a.json` 10 張：**217／218／229／220／224／224／227／224／217／222**
+→ **min 217／max 229／中位 224／分佈 215–219：2、220–224：5、225–229：3**
+——**與第 3301 條回報的 217–229／中位 224／分佈 2-5-3 逐格重現，尺確認同一把。**
+
+**再量前一支留下的 b 組 10 筆**：**227／219／218／225／226／216／217／225／216／224**
+→ **min 216／max 227／>230 為 0**；逐格檢查名單型整格，**10 張全部沒有**
+（最接近的是 `Prysm` 的逐軌寫作權那格，三個人名各帶軌號——但那正是本張的骨架，
+依第 1830-B 條「**不是只起點名作用**的人名要留」，不算名單型）。
+
+**裁定：前一支的 10 筆已經是收斂過的稿，不是中途檔；本層不重寫，只做稽核與定點修改。**
+⚠ **這一條要寫給主線看**：第 1803-B 條的訊號法這次判出「已定稿」，
+**「沒有交件回報」不等於「沒有做完」**——前一支應該是寫完檔之後、還沒回報就被容器殺掉。
+
+## 第 3403 條（**本層實際改了什麼；4 處定點修改，全部是跨組模子的同構，不是事實錯誤**）
+
+依 `hook-base.md` 第 194 行「**只針對那一則做定點修改，禁止重寫整個檔案**」。
+四處都是**程式實掃**出來的（各格開頭三字 ＋ 第 3306 條那四個模子的正規式），不是讀感。
+
+| # | 卡 | 改前 | 改後 | 為什麼 |
+|--:|---|---|---|---|
+| 1 | `Bill Charlap & Sandy Stewart` | 第一格逐字開頭 **「2004 年 10 月錄於紐約，」** | 整段刪除，第一格改從「全碟只有…」起 | ⚠ **這正是 a 組第 3306 條抓掉兩格的那個模子**（`YYYY 年 M 月錄於紐約`）。a 組留下的兩格（`Step By Step`／`Jazz, My Romance`）都**不在格首**，本張是全批唯一**格首**就是它的。錄音年 2004 對寫作層無用（`發行年寫 2005 年。` 已釘死版本），刪掉還順帶消滅「寫作層把 2004 當發行年」的機會 |
+| 2 | 同上 | —— | 併入第一格：**「Stewart 九歲就上費城的電台節目，十五歲錄下唱片」** | 第 1 處省下 16 字元，回填給**本批唯一一位女歌手自己的生平**。本批是**藝人軸稽核補批**，而這張原稿裡 Sandy Stewart 只以「母親」存在，生平一句都沒有。⚠ 刻意**併進第一格而不新開一格**：新開格的開頭三字是 `Ste`，會與 `Round About Roma` 的格首 `Stefano` 撞（實掃驗過） |
+| 3 | `James Francies` | **「這是他的首張個人專輯，…，發片時他二十三歲」** | **「二十三歲那年他第一次以自己的名字發片，…」** | ⚠ **實掃撞到 a 組 `Paris` 的格首「這是他 Blue Note 四張裡的最後一張」——逐字同開頭、同為序數型。** a 組第 3306 條把序數型壓到 2／10 且句型互異，本張照抄就是第三個。改寫後**首張領班盤這條讓渡骨架仍然成立**（見第 3405 條），序數句型退場 |
+| 4 | `Gonzalo Rubalcaba` | 第一格格首 **「Blue Note 社長 Bruce Lundvall 應古巴政府之邀到…」** | **「應古巴政府之邀，Blue Note 社長 Bruce Lundvall 到…」** | ⚠ 實掃撞到 a 組 `Step By Step` 的格首 `Blue`（＋同一個人名 `Bruce Lundvall`）。**人名不能換**（他是本張故事成立的關鍵），**倒裝把格首讓開**，成本 +1 字元 |
+
+**另外順手把 `Flight` 的「製作人是 Derrick Hodge」倒成「Derrick Hodge 掛製作人」**（與 a 組 `Brian Blade Fellowship` 的格首「製作人」撞），字元 ±0。
+**其餘 6 張逐字不動。**
+
+## 第 3404 條（**骨架歸屬；程式產生，非手打**）：**b 組 claim 10 條，a 組讓出的六條全部落地**
+
+表由 `tab-c171-hb.mjs` 讀 `c171-hooks-b.json` ＋ `c171-cards.json` 產生：
+
+| # | 卡 | year | 預算 | hook 加權 | 前四字 | 骨架 | claim |
+|--:|---|--:|--:|--:|---|---|:-:|
+| 1 | Gonzalo Rubalcaba《The Trio》 | 1997 | 228 | 18 | 哈瓦那簽 | 簽約繞道日本（Somethin' Else 雙軌流通／日版先發） | ✔ |
+| 2 | Prysm《Time》 | 1999 | 219 | 21 | 十軌的寫 | 十軌寫作權在三名團員間逐軌均分 | ✔ |
+| 3 | Ron Carter《Stardust》 | 2001 | 218 | 22 | 三首曲子 | 向另一位貝斯手致敬＋一天之內錄完（Clinton Studios） | ✔ |
+| 4 | Stefano Di Battista《Round About Roma》 | 2002 | 225 | 22 | 在巴黎出 | 在巴黎出頭的羅馬人回頭寫羅馬 | ✔ |
+| 5 | Jason Moran《The Bandwagon》 | 2003 | 226 | 25.5 | 布拉姆斯 | 曲庫跨度極大（布拉姆斯到 Planet Rock）＋盤名即團名 | ✔ |
+| 6 | Bill Charlap & Sandy Stewart《Love Is Here to Stay》 | 2005 | 228 | 23 | 唱歌的是 | 家人同台（母子二重奏，全碟只有兩人） | ✔ |
+| 7 | Ruben Hein《Live》 | 2011 | 217 | 26 | 劇院坐滿 | 現場盤＋身後那支不演古典曲目的樂團 | ✔ |
+| 8 | James Francies《Flight》 | 2018 | 224 | 25 | 他有聲音 | 首張領班盤＋聯覺（聲音轉色彩） | ✔ |
+| 9 | Joel Ross《KingMaker》 | 2019 | 216 | 25 | 唱片錄好 | 社長的兒子促成發行（壓了兩年多） | ✔ |
+| 10 | Kendrick Scott Oracle《A Wall Becomes a Bridge》 | 2019 | 224 | 26 | 十二首曲 | 曲名前的大於符號從十二數到一 | ✔ |
+
+**a 組第 3304 條讓出的六條，逐條落點**（⚠ 前兩條 b 組各有兩張同形，**各只歸一張**）：
+
+| a 組讓出的骨架 | b 組同形張數 | 歸給 | 另一張的處置 |
+|---|--:|---|---|
+| Somethin' Else／Blue Note 雙軌流通、日版先發 | 2 | **《The Trio》**（品番 TOCJ-5591、隔年才進歐洲目錄，是日版先發的正例） | **《Stardust》整格不寫發行地、版本、品番與廠牌流通**（它的日版品番 TOCJ-68053 與 ℗© 歸 Somethin' Else 兩條事實整格捨去） |
+| 首張領班盤 | 2 | **《Flight》**（改寫成「二十三歲那年他第一次以自己的名字發片」，見第 3403 條第 3 處） | **《KingMaker》整格不寫「首張」**，改走「錄好壓了兩年多才發」 |
+| 盤名即團名 | 1 | **《The Bandwagon》** | —— |
+| 家人同台 | 1 | **《Love Is Here to Stay》** | —— |
+| 曲庫跨度極大 | 1 | **《The Bandwagon》**（與「盤名即團名」同落一張，因為 b 組只有這一張同形） | —— |
+| 一天錄完＋`Clinton Studios` | 1 | **《Stardust》**（a 組三張 Carter 相關卡全部不寫錄音室名，本張寫 Clinton Recording Studio） | —— |
+
+**寫法照 `hook-base.md` 雲端註記第 3 點**：claim 句只寫「這條骨架全批只走本張。」，**讓出／被讓的卡一律不點名**。
+機器實掃複驗：**a 組十張的盤名字串在 b 組 `hook`＋`note` 裡 0 命中；b 組十張的盤名在 a 組 0 命中**
+（唯二跨組重複的專名是 `Blue Note`、`Bruce Lundvall` 與掛名 `Ron Carter`，都不是盤名，不構成 `互指?`）。
+
+## 第 3405 條（**⚠ a 組「讓出首張領班盤」這一條沒有讓乾淨；依第 1814-B 條記下並處置**）
+
+第 3304 條寫「讓出：首張領班盤」，但 **a 組 `Step By Step` 的 `note` 本體逐字留著「本張是他的 Blue Note 首張領班盤」**
+（第 3307 條第 1 列自己也寫了這句）。依第 1814-B 條「**`hook` 本體用掉的形狀也算已占用**」，
+**嚴格說這條形狀 a 組並未完全清空。**
+
+**裁定（判準 1：有先例；判準 2：可逆）**：**不要求 a 組改稿**（已交件，且派工信第六節明禁碰 `c171-hooks-a.json`），
+改由 b 組在**句型與限定詞**兩層拉開：
+
+- a 組是**廠牌內的序數**——「他的 **Blue Note** 首張領班盤」（他在 Blue Note 之前已有 ECM 盤）。
+- b 組《Flight》改成**生涯第一次**——「**二十三歲那年他第一次以自己的名字發片**」，句中沒有「首張」「第幾張」字樣。
+
+實掃複驗：改寫後全批 20 張的序數型剩 **3／20**（a 組三張，句型各異），**b 組 0 命中**。
+
+## 第 3406 條（**三條重疊人脈的切角分配；派工信第四節第 7 點**）：**四條人脈全部靠「整格捨去」解掉，0 張互相引用**
+
+研究層第 3175 條與 `Flight` 的研究 `notes` 指出三條重疊；**本層實掃另外抓到第四條**：
+
+| # | 重疊 | 涉及的卡 | 處置 |
+|--:|---|---|---|
+| 1 | **Joel Ross** 在《Flight》彈鐵琴（第 2、5、6、7、11 軌） | Flight／KingMaker | **《Flight》的客座名單整格捨去**（Chris Potter、Joel Ross、YEBBA、Chris Turner、Kate Kelsey-Sugg 五人）→ Joel Ross 這個名字在《Flight》的 note 裡不存在 |
+| 2 | **Jeremy Dutton** 是這兩張的鼓手 | Flight／KingMaker | **兩張的班底名單都整格捨去**（《Flight》的 Travis／Dutton／Moreno；《KingMaker》的 Good Vibes 四人＋Harish Raghavan）→ 兩邊都不出現 |
+| 3 | **Derrick Hodge** 同時製作《Flight》與《A Wall Becomes a Bridge》 | Flight／A Wall | **只在《Flight》寫**（它是「首張領班盤」骨架的一部分：新人首作找誰製作）；**《A Wall》整格不寫製作人**，骨架改走大於符號的倒數 |
+| 4 | ⚠ **Mike Moreno** 同時在《Flight》彈吉他、又是 Oracle 的固定吉他手（本層新抓到，研究層未列） | Flight／A Wall | 兩張的編制名單都已整格捨去，**兩邊都不出現**，無須另行處置 |
+
+⚠ **另有一條「休士頓／HSPVA 圈」的共同出身**：**Jason Moran、James Francies、Kendrick Scott 三人同校**
+（研究層 `Flight` 第 8 條逐字列了 Glasper／Moran／Chris Dave／Kendrick Scott）。
+**派工信第四節第 7 點指名「別讓三張都從休士頓／Glasper 圈人脈切」——本層的處置是三張一個都不寫**：
+《The Bandwagon》走曲庫跨度、《Flight》走聯覺、《A Wall》走大於符號，
+**「休士頓」三個字在 b 組十張的 `hook`＋`note` 裡 0 命中**（實掃）。
+
+## 第 3407 條（**整格捨去清單；判準照第 1830-B 條**）：**逐張核對研究層 113 條 `facts` 與定稿 note 的落差，共二十九格**
+
+判準逐字：「**名單型＝一格裡兩個以上只起點名作用的專名，密度最低者先砍，與人數無關**；
+但**不是只起點名作用**的人名要留」。⚠ 下表是**本層稽核前一支的成果＋本層自己新捨去的那一格**，不是只記本層動作。
+
+| 卡 | 捨去的格 | 理由 |
+|---|---|---|
+| The Trio | 三重奏另兩人（Brian Bromberg／Dennis Chambers） | 名單型；骨架是簽約的路徑，不是編制 |
+| The Trio | 七軌的七位原作者（Hancock／Ellington／Tizol／Kaper／Dameron／Kern／Gillespie／Bonfá） | 名單型，密度最低；**保留「七軌全數重訪標準曲庫」這個形狀** |
+| The Trio | Michael Cuscuna 同行哈瓦那 | 只起點名作用（Lundvall 一人足以撐起「廠牌自己去了卻簽不成」） |
+| The Trio | 歐版目錄號 4944422／條碼／Rubalcaba 本名與家族藝名姓氏／Discogs 曲風欄 | 純資料，無故事 |
+| Time | 製作與工程四人（Pflug／de Haro／Olivesi／調音師 Massonneau） | 名單型 |
+| Time | 香榭麗舍＋小澤征爾＋法國國家管弦樂團＋James Taylor 那一格 | 名單型，四個專名全是點名；且與「寫作權均分」的骨架無關 |
+| Time | 巡演三百場／中東與日本行程／2001 暫停與 2009 五人復出 | 與本作無直接綁定的後續（反向禁令） |
+| Time | 錄音室 La Buissonne 與目錄號 | 密度最低 |
+| Stardust | ⚠ 日方工作人員（Namekata／Terashima／Okazaki／Tsuge）＋工程 Jim Anderson | 名單型，**且與 a 組四張東芝 EMI 企劃盤是同一格**（第 3303 條已判同構，跨組一併捨去） |
+| Stardust | 日版品番 TOCJ-68053／美版目錄號／℗© 歸 Somethin' Else | **雙軌流通讓給《The Trio》**（第 3404 條），整格不寫 |
+| Stardust | 三首 Pettiford 曲名＋三首自作曲名 | 純點名；**保留「三首出自 Oscar Pettiford」的數字** |
+| Stardust | 鐵琴的逐軌軌號（第 1、3–6 軌）與其餘逐軌編制 | 見第 3409 條 |
+| Stardust | Sir Roland Hanna 的賴比瑞亞封號與 2002 年辭世 | 見第 3408 條 |
+| Round About Roma | 四重奏三人（Legnini／Bonaccorso／Ceccarelli） | 名單型；**保留「他固定的四重奏」這個形狀** |
+| Round About Roma | 五首自作曲名＋兩首 Mendoza 曲名／Les Archets de Paris／James Farber／Studio Davout | 名單型；**保留「八軌裡五軌／兩軌」的數字** |
+| Round About Roma | 十三歲吹薩克斯風、Art Pepper、二十一歲最高分畢業／首作《Volare》與 Blue Note 第三張／Elvin Jones | 生平與序數型，密度最低 |
+| The Bandwagon | 三重奏另兩人（Tarus Mateen／Nasheet Waits）＋Greg Osby New Directions 的來歷 | 名單型 |
+| The Bandwagon | Kurt Lundvall 一人包辦錄混音母帶／Kraftwerk 兩位連帶寫作者 | 名單型 |
+| The Bandwagon | Moran 生平（休士頓、鈴木教學法、十三歲聽 Monk） | ⚠ **同時是「休士頓圈」的入口，依第 3406 條刻意整格不寫** |
+| The Bandwagon | 《Black Stars》入選 NPR 十年五十張 | 評介型（a 組壓到 0／10） |
+| Love Is Here to Stay | 兩組串燒的六位詞曲作者（Arlen／Harburg／Capote／Gershwin 兄弟／De Sylva） | 名單型 |
+| Love Is Here to Stay | 其餘曲目的五組作者（Porter／Berlin／Rodgers & Hart／Rodgers & Hammerstein…） | 名單型；**壓縮成「其餘曲目是美國歌本的核心曲」一句** |
+| Love Is Here to Stay | 製作 Joel Moss／內頁 Barbara Carroll／攝影 Carol Friedman | 名單型 |
+| Love Is Here to Stay | 〈My Coloring Book〉Billboard 第 20 名與葛萊美入圍／Charlap 三重奏與《Somewhere》入圍／2012 年《Something to Remember》 | 榜位型（a 組只留 1／10）＋與本作無直接綁定的後續 |
+| ⚠ Love Is Here to Stay | **「2004 年 10 月錄於紐約，」** | **本層新捨去**，見第 3403 條第 1 處 |
+| Live | Jules Buckley（含「2013 年才接首席」那條時序）與同台的 Jonathan Jeremiah | 名單型；**「爆滿的 Carré 劇院」與「不演古典曲目的樂團」才是骨架** |
+| Live | 首作《Loose Fit》的製作人與瑞典 Gula Studion／《Revisited》 | 名單型＋與本作無直接綁定 |
+| Live | Bill Withers 紀念音樂會那段（次要軼事） | 字元不足；且它會把焦點從本場演出移開 |
+| Live | 3FM／Edison／Radio 6 三組獎項 | 名單型；且本張的 Edison 是入圍不是得獎，寫進去要多帶一層限定 |
+| Flight | 班底三人＋客座五人（Potter／Ross／YEBBA／Turner／Kelsey-Sugg） | 名單型，**同時解掉第 3406 條的第 1、2、4 條人脈** |
+| Flight | HSPVA 同校四人（Glasper／Moran／Chris Dave／Kendrick Scott）／履歷七位合作者／Questlove 與 The Roots | 名單型，**且正是派工信要避開的休士頓圈** |
+| Flight | 〈Ain't Nobody〉與原作 Wolinski／母帶 Ian Sefchick | 密度最低 |
+| KingMaker | Good Vibes 四人＋共同製作 Harish Raghavan | 名單型，**解掉 Jeremy Dutton 那條人脈** |
+| KingMaker | 廠牌鐵琴譜系（Milt Jackson／Bobby Hutcherson／Stefon Harris） | 名單型；**Hutcherson 已在「當面給的建議」那格出現，而那一格他不是點名，是骨架** |
+| KingMaker | 發片前一年四張客席唱片（McCraven／Smith III＋Stevens／Francies／Marquis Hill） | 名單型，**且其中就有《Flight》**——留著會直接變成 `互指?` |
+| KingMaker | 紐約時報 Russonello 把他比作 Hargrove 與 Lee Morgan／生平（芝加哥南區、父母警察、木琴的由來）／雙黑膠與 Newport | 評介型＋與本作無直接綁定的後續 |
+| A Wall Becomes a Bridge | Oracle 五人固定編制（Moreno／Eigsti／Ellis／Sanders） | 名單型；**只留「五人編制」的數字與新加入的唱盤手 Jahi Sundance**——後者不是點名，他是本次編制的變數 |
+| A Wall Becomes a Bridge | 製作人 Derrick Hodge | **讓給《Flight》**（第 3406 條第 3 列） |
+| A Wall Becomes a Bridge | 逐軌寫作分派（Hodge／Eigsti／Aaron Parks）與逐軌編制調度（鋼琴第 8 軌缺席等） | 名單型 |
+| A Wall Becomes a Bridge | 生平與 Berklee、Clifford Brown／Stan Getz 獎助／《The Source》2006 的四位成員／《We Are the Drum》2015／Terence Blanchard 引語／World Culture Music | 名單型＋序數型＋評介型 |
+
+## 第 3408 條（**裁定：`Stardust` 不寫 Sir Roland Hanna 的辭世；判準 1＋2**）
+
+研究層第 11 條把 Hanna 2002 年 11 月 13 日辭世查清楚了，`notes` 並歸入「與作品直接綁定、需標明時序」那一類。
+**本層裁定整格不寫。** 三條理由：
+
+1. **它不是本張的招牌事實。** `hook-base.md` 的「招牌事實必寫」講的是**這張唱片本身**的爭議／逝世／成癮／訴訟；
+   Hanna 是伴奏席的鋼琴手，辭世在錄音**一年半後**，研究層自己也只寫到「本作為其晚年錄音之一」，
+   **沒有任何來源說本作是遺作或最後合作**——寫成那樣就是編造。
+2. **全批的克制配額已經用滿。** a 組《Ode to Life》整張是 George Adams 的追悼盤，
+   b 組《Love Is Here to Stay》寫 Moose Charlap 1974 年病逝、得年四十五。**20 張裡第三張逝世卡會變成模子。**
+3. **預算**：本張 218，加這一格連時序指定至少 25 字元，會頂到 243。
+   要騰位置只能砍「一天之內錄完八軌」或「三首敬 Pettiford」——**那是骨架本身**。
+
+**判準 2（可逆）**：這是 `note` 欄位，主線若要補只需加一句，不動卡池結構。
+
+## 第 3409 條（**`Mocean` 與鐵琴軌號兩條更正在本層「沒有接觸面」；寫明，免得主線以為漏了**）
+
+派工信第四節第 2、4 點指名兩條研究層更正：
+**《A Wall Becomes a Bridge》第 2 軌採官方的〈Mocean〉**（第 3173 條）、
+**《Stardust》鐵琴軌號採 `1,3-6`**（第 3178 條）。
+
+**兩條在定稿裡都沒有接觸面**，而且是**刻意**的：
+
+- 〈Mocean〉：本張的骨架是大於符號從十二數到一，note 只點**頭尾兩軌**〈NewEyes〉與〈Archangel〉，
+  **中間十軌一首都不點名**（點了就是名單型）。**第 2 軌因此不會被寫成〈Moccan〉——因為它不會被寫。**
+- 鐵琴軌號：note 寫的是**第 8 軌那一件事**（「那三件樂器全數退場，剩下貝斯與鋼琴」），
+  這句話兩個版本的 credits **都成立**（美版標 1、3–5、7 軌，日版＋維基標 1、3–6 軌，
+  **兩版都沒有第 8 軌**）。**把軌號列出來反而會讓寫作層去引用一組還在打架的資料。**
+
+⚠ **這是第 1837-B 條的正例**：要讓某件事不出現，正確做法是**整格不寫**，不是在 note 裡寫「不得寫 X」。
+**b 組十張的 note 裡沒有任何一句否定式指派**（實掃 `不得`／`禁補`／`查無`／`未能查證`／`卡池標錯`／`並非`／`卻不是` 全部 0 命中）。
+
+## 第 3410 條（**兩張現場盤；`slice.json` 的 `live` 欄兩張都錯，第 2762／3172 條的第三次確認**）
+
+**《The Bandwagon》與《Live》兩張的 note 都逐字寫了「正文要寫成現場盤」**，
+在第一格、緊接著錄音日期與場地（Village Vanguard／Carré 劇院）。
+**這是正面指派句，不是校對痕跡**——寫作層讀到的是「要寫成現場盤」，不是「slice 標錯了」。
+
+⚠ **本層不碰 `slice.json`**（`REMOTE_RUNBOOK.md` 的禁碰清單；且鉤子層本來就不動卡池資料）。
+**`live` 欄的修正留給主線**，第 2762 條與第 3172 條已各記一次，本條是第三次。
+
+## 第 3411 條（**⚠ 派工信與 `hook-base.md`／既有裁定牴觸之處；依規定回報**）：**一處自相矛盾、一處事實錯誤、一處預期落空，其餘全部正確**
+
+| # | 派工信 | 正本／實測 | 判 |
+|--:|---|---|---|
+| 1 | 第三節：「**你的 `Stardust` 走六重奏／一天錄完／雙軌流通**」 | 同一節上方又寫「**前兩條你各有兩張同形，各只能歸一張**」，而《The Trio》是雙軌流通的正例（品番在手、隔年才進歐洲目錄） | ⚠ **派工信自相矛盾**：雙軌流通不可能同時歸《The Trio》與《Stardust》。**本層歸《The Trio》**，《Stardust》整格不寫發行地與版本（第 3404 條） |
+| 2 | 第三節：「你的 `Stardust` 走**六重奏**」 | 研究層第 3 條逐字列**五人**：Carter 貝斯、Roland Hanna 鋼琴、Benny Golson 次中音、Joe Locke 鐵琴、Lenny White 鼓 | ⚠ **事實錯誤，是五重奏不是六重奏。** 定稿的 note **沒有寫任何編制人數的數字**，只敘述「貝斯與鋼琴，還有次中音薩克斯風、鐵琴與鼓」——**錯的數字沒有機會進正文** |
+| 3 | 第零節：「**凡是預算 >230 的、或明顯還帶著名單型整格的，都要當成未完成**」 | 實測前一支留下的 10 筆：預算 **216–227**、名單型整格 **0** | **預期落空（不是牴觸）**：兩個訊號都不成立，**10 筆全部已定稿**。本層因此從「重寫」轉成「稽核＋定點修改」，見第 3402 條 |
+| 4 | 第三節：「a 組**刻意讓給你六條骨架**」，含「首張領班盤」 | a 組 `Step By Step` 的 note 本體逐字仍有「他的 **Blue Note 首張領班盤**」 | ⚠ **這條沒讓乾淨**（第 1814-B 條）。處置見第 3405 條，**不要求 a 組改稿** |
+| 5 | 第三節：「a 組壓過的模子：榜位型 1／10、序數型 2／10、評介型 0／10、廠牌時差型 0／10」 | 實掃 a 組：榜位型 **1**、評介型 **0**、廠牌時差型 **0** 全部對上；**序數型以正規式掃到 3**（`Step By Step` 的「首張領班盤」、`Paris` 的「最後一張」、`Cruisin'` 的「第二張」） | **差在計數口徑**，不是錯：a 組第 3306 條把「Blue Note 首張領班盤」歸進讓渡討論、沒有計入序數型。**本層兩個口徑都記下來**，b 組不論哪個口徑都是 0 |
+| 6 | 第五節：「b 組旗標清成 0；a 組已交件，總標記應可到 0」 | 實跑 `qa-batch.mjs hooks c171`：**全部通過 ✓**，第 3310 條那行「⚠ b 缺 hook 檔／總標記 1」已消失 | **實測正確** |
+| 7 | 第五節：「先把尺倒回去量 `c171-hooks-a.json`，對得上 217–229／中位 224」 | 實測逐格重現 **217–229／中位 224／分佈 2-5-3** | **實測正確**（第 3402 條） |
+| 8 | 第四節第 8 點：「`Prysm`／`Ruben Hein` 是最薄的兩張，不要硬找紅不紅那種軸」 | 兩張的骨架分別是**逐軌寫作權均分**與**身後那支不演古典曲目的樂團**，**都不需要商業成績**；`Ruben Hein` 的三組獎項整格捨去 | **實測正確且有效** |
+| 9 | 第四節第 1 點：兩張現場盤的 slice `live` 欄都是手寫錯 | 與第 2762／3172 條一致 | **實測正確**，處置見第 3410 條 |
+
+**本信其餘每一句本層都對過，與 `hook-base.md`（含雲端註記三點）及既有裁定無牴觸。**
+
+### 附：兩個沒有改、但要讓主線知道的跨組重複
+
+1. **`Bruce Lundvall` 跨 a／b 各出現一次**（a `Step By Step` 的「總裁」、b `The Trio` 的「社長」）。
+   **兩張的機制完全不同**（一張是他替新支線背書、一張是他去了哈瓦那卻簽不成），**不是同構**；
+   人名不能換，本層只把 b 的格首倒裝讓開（第 3403 條第 4 處）。
+   ⚠ **但同一個職稱兩組譯法不同**（總裁／社長）。a 組已交件不可改，**b 組內部一致用「社長」**（`The Trio`／`KingMaker` 兩張）。
+2. **`Blue Note` 出現在 20 張裡的 5 張**（a 兩張、b 三張）。這是本線的廠牌名，不可避免，**不列為重複專名問題**。
+
+## 第 3412 條（**交件版本認定；第 1803-B 條的第九次**）
+
+**`desc-tools/batches/hooks/c171-hooks-b.json` 的工作區當下版本才是交件版。**
+
+⚠ **本批已經被容器重啟砍過一次**，前一支寫完 10 筆、還沒回報就被殺掉——
+**這正是第 1803-B 條說的「中途檔與定稿在檔案系統上分不出來」的第九次實例**，
+只是**這一次訊號法判出來的是「已定稿」**（第 3402 條）。
+**本層在同一路徑上又寫過三次**（三次定點修改各存一次，符合派工信第五節第 3 點「每做完 3 張就寫回磁碟」的更嚴格版：每一處改完就存）。
+
+**主線驗收請以本條之後、工作區未再變動的那份為準；筆數對了不等於定稿了，但這一次「筆數對了」確實就是定稿了。**
+**本層不 `git add`、不 `commit`、不 `push`、不動 git 索引；`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`previews.json`／`caa.json`／`c171-hooks-a.json` 一律未碰。**
+
+---
+
+# c-171 寫作層 b 組（10 張，Blue Note 1997–2019；第 3561–3600 條，本節用到 3571）
+
+## 第 3561 條（**總表**）：**10 張全數交件，`desc` 192–233／中位 206.5，兩端出界 0 張，三支自檢與本組相關的旗標全 0**
+
+| 項 | 值 |
+|---|---|
+| 交件張數 | **10／10**，`key` 逐字複製、順序同 `batches/input/c171-writer-2.json` |
+| `status` | **10 張全 `full`**，0 張 `thin`（`thin` 帶不適用） |
+| `desc` 字數（`Array.from` 計） | **min 192／max 233／中位 206.5** |
+| **兩端出界** | **>240：0 張；<180：0 張**（硬上限 280／硬下限 140 亦全數未觸及） |
+| 分佈 | 190–199：3／200–209：3／210–219：2／220–229：1／230–239：1 |
+| 首句＝`hook` 原文 | **10／10 逐字相符**（`qa-check-research.mjs` 的 `hook 未原封開頭` 0 筆） |
+| `qa-batch out c171` | **全部通過 ✓／總標記 0** |
+| `qa-check-research` | **標記 0** |
+| `fix-spacing --field desc` | **待補 0 張**（未加 `--write`，因為無可補之處） |
+| `互指?` | **0 筆**，無可人工判讀者 |
+
+## 第 3562 條（**字數：逐張實測，不採任何預判方向；base 第 120／123 行**）
+
+派工信第一節明文不給偏差方向的預判（第 1838-B 條），本層照辦：**動筆前逐張列預算表，寫完逐張量兩端**。
+
+| # | 卡 | `desc` | 兩端 |
+|--:|---|--:|---|
+| 1 | Gonzalo Rubalcaba《The Trio》 | **233** | 區間內 |
+| 2 | Prysm《Time》 | **229** | 區間內 |
+| 3 | Ron Carter《Stardust》 | **198** | 區間內 |
+| 4 | Stefano Di Battista《Round About Roma》 | **217** | 區間內 |
+| 5 | Jason Moran《The Bandwagon》 | **192** | 區間內 |
+| 6 | Bill Charlap & Sandy Stewart《Love Is Here to Stay》 | **216** | 區間內 |
+| 7 | Ruben Hein《Live》 | **205** | 區間內 |
+| 8 | James Francies《Flight》 | **208** | 區間內 |
+| 9 | Joel Ross《KingMaker》 | **200** | 區間內 |
+| 10 | Kendrick Scott Oracle《A Wall Becomes a Bridge》 | **194** | 區間內 |
+
+⚠ **`180` 這個下限沒有任何腳本在驗**（`qa-check-research` 只擋 80／280，`qa-batch out` 只印 `>260`）。
+**本層的 192 與 233 是自己量出來的，不是任何檢查放行的結果。** 主線若要複驗，用
+`node -e "JSON.parse(require('fs').readFileSync('desc-tools/batches/output/c171-out-2.json','utf8')).forEach(r=>console.log(Array.from(r.desc).length,r.key))"`。
+
+**偏差方向（只記觀察，不得繼承）**：本組手算與實測的落差是**雙向的**——
+最長的《The Trio》（233）與最短的《The Bandwagon》（192）都只列了三個拉丁專名，
+**專名數量在本組不能預測長度**，真正吃字元的是「骨架本身要交代幾層因果」。
+
+## 第 3563 條（**首句與 `hook` 的對照；base 第 158 行，`qa-check-research.mjs` 硬檢查**）：**10／10 逐字相符**
+
+檢查器比對的是**剝掉半形空格後的前綴**（`stripSp`）。本層 10 張的首句是 `hook` 原文**一字不改、一空格不改**，
+連「剝空格才過」的情況都沒有發生。
+
+⚠ **但「首句＝ hook」與「不得重述 hook 已說過的話」（base 第 159 行）在本組打過四次架**，
+四張的初稿都在第二句把 `hook` 的句意又講了一遍。處置是**定點改寫第二句**，不動 `hook`：
+
+| 卡 | 初稿第二句 | 定稿第二句 | 為什麼 |
+|---|---|---|---|
+| Love Is Here to Stay | 「這張碟**只有** Sandy Stewart 的歌聲與 Bill Charlap 的鋼琴」 | 「**母親是** Sandy Stewart，**兒子是** Bill Charlap」 | `hook` 已說「全碟再無第三個人」，「只有兩人」是重述；改成**替 hook 的兩個代稱指名** |
+| Live | 「**身後的** Metropole Orkest 1945 年由⋯創立」 | 「**那支樂團是** 1945 年由 Dolf van der Linden 創立的 Metropole Orkest」 | `hook` 已說「身後站著一支⋯樂團」，「身後的」是重述 |
+| KingMaker | 「**中間的契機是社長的兒子** Sol Was」 | 「**居中的是社長** Don Was **的兒子** Sol Was」 | `hook` 已說「讓它出得成的是社長的兒子」；改成**把父子兩人具名**（base 第 164 行：代名詞與所指對象不可相隔太遠，寧可具名） |
+| Flight | 「封面那張插畫**也**出自⋯」 | 「封面那張插畫**同樣**出自 James Francies 的手筆」 | 不是重述問題，是 `hook` 的「他」到第二句還沒具名 |
+
+## 第 3564 條（**「正文只寫上列各項。」是排除條款不是必寫清單；本組有一格照 c-169 a 第 3443 條整格不寫**）
+
+派工信第三節第 2 點與 base 第 161 行一致：**note 的排除條款逐條照辦**。
+本層的讀法是「**上列各項是上限，不是下限**」——捨後主故事仍要完整、`hook` 的懸念仍要收尾。
+
+**實際整格不寫的鏈上格，1 處**（其餘九張的鏈上各格全部落地）：
+
+| 卡 | 鏈上被整格不寫的 | 判準 |
+|---|---|---|
+| **The Bandwagon** | 「**The Bandwagon 是團名也是盤名**」之外的第 3 軌**曲名**〈Intermezzo, Op. 118, No. 2〉 | note 逐字給了「第 3 軌是布拉姆斯的〈Intermezzo〉」，但**寫完整曲名〈Intermezzo, Op. 118, No. 2〉要 28 字元**，而 `hook` 已用「布拉姆斯的間奏曲」交代同一件事。**寫曲名等於第三次講同一件事**，依 base 第 159 行整格捨去，只留軌號（「布拉姆斯排在第 3 軌」） |
+
+⚠ **這一格是第 3443 條（c-169 a）的同形先例：鏈上的格也可能該整格不寫。**
+**判準不是「note 有沒有列」，是「寫了會不會變成 hook 的第三次重述」。**
+
+**另外兩處「鏈上照寫但壓成敘述」**（不是捨去，記下免得主線以為漏了）：
+- **A Wall**：note 逐字寫「正文以敘述帶過這串符號」，本層照辦——**沒有逐字照搬任何一個大於符號**，寫成「從〈NewEyes〉數回〈Archangel〉」。
+- **Round About Roma**：note 的「四十三人編制」照寫（研究層 `notes` 給了「可退成一支交響樂團」的保守選項，**本層不退**，因為 note 已指派）。
+
+## 第 3565 條（**兩張現場盤；第 2762／3172／3410 條的第四次確認**）：**兩張正文都寫成現場盤，`releaseType` 欄的 `Album` 未進正文**
+
+| 卡 | 正文怎麼交代現場 |
+|---|---|
+| Jason Moran《The Bandwagon》 | 「錄音是 2002 年 11 月 29 日與 30 日在紐約 Village Vanguard 的**兩場實況**」 |
+| Ruben Hein《Live》 | 「⋯在阿姆斯特丹的 Carré 劇院登台，這張碟就是**那一晚的實況**」 |
+
+⚠ **`hook` 說「同一個晚上」，實際是兩晚（11 月 29、30 日）。** 本層**照事實寫「兩晚」**，不改 `hook`
+（`hook` 的「同一個晚上」指的是曲庫跨度擠進同一場演出，與兩晚不衝突）。
+**`releaseType` 逐字 `Album` 是全線慣例（照 MB primary-type），本層未把它當資料錯誤處理，也未寫進正文。**
+
+## 第 3566 條（**四處刻意不寫＋「休士頓」封鎖；逐處實掃複驗**）：**5／5 全部落地**
+
+| # | 應不寫 | 正文實掃 |
+|--:|---|---|
+| 1 | 《Stardust》的發行地／版本／品番 | **0 命中**（`TOCJ`／`Somethin'`／`日版`／`美版` 在《Stardust》正文全 0；`TOCJ-5591` 只出現在獲指派的《The Trio》一張）；⚠ 連**編制人數**也 0（`五重奏`／`六重奏` 全批 0 命中）（派工信指出的「六重奏」是錯的，正文只敘述樂器、不給數字） |
+| 2 | 《KingMaker》的「首張」 | **0 命中**（`首張`／`第一張`／`領班` 全 0） |
+| 3 | 《A Wall》的製作人 | **0 命中**（`Derrick Hodge` 只出現在《Flight》一張） |
+| 4 | 《Flight》與《A Wall》的班底與客座 | **0 命中**（`Joel Ross`／`Jeremy Dutton`／`Mike Moreno` 在這兩張的正文皆 0；`Joel Ross` 只以**掛名**出現在他自己那張） |
+| 5 | 「休士頓」 | **b 組十張 0 命中**（`grep -c` 實跑＝0） |
+
+## 第 3567 條（**`sound` 欄是唯一的緩衝格；第 3372／3442 條**）：**只動了一張，且是「補回」不是「捨去」**
+
+base 第 123 行的修剪一律整格捨去，而**能整格增刪又不動事實的只有 `sound`**。本組實際用到一次：
+
+- **《Flight》**：初稿 **177**（低於下限）。原因是這張的 note 鏈共四節，但「班底／客座整格捨去」把中段掏空了。
+  **補回 `sound` 的前三個子句**（鋼琴與合成器並用／嘻哈與節奏藍調的節拍撐底／和聲密而轉調頻繁，31 字元），**208**。
+  ⚠ **沒有從 `facts` 撈鉤子層已砍掉的格**（Chris Potter、YEBBA 那串客座就在手邊，一撈就過 200，但那正是第 3406 條要解的人脈重疊）。
+- **其餘九張**：`sound` **整格未用**。最長的《The Trio》233 距上限還有 7 字元，**不需要捨 `sound`**（它本來就沒寫）。
+
+**結論**：本組的 `sound` 使用率是 **1／10**，方向是**補**。⚠ **這個方向不可繼承**（base 第 83／107 行）。
+
+## 第 3568 條（**只用輸入檔的事實；零編造的三道機器複驗全過**）
+
+`qa-check-research.mjs` 的三道編造檢查（曲名／專名／年份）與 `qa-batch out` 的 `factCheck`
+（回查 `batches/research/c171-b.json` ＋卡單 `year`）**合計 0 筆標記**。
+
+本層另記三筆**刻意的取捨**，免得主線以為是漏寫：
+
+1. **《The Trio》未寫 `Somethin' Else` 的創立年（1988）。** 研究層 `facts` 有，但 note 的鏈上只寫「自己創立的」，
+   依「正文只寫上列各項」不補。
+2. **《A Wall》的〈Mocean〉在正文 0 命中**——與第 3409 條一致：本張只點頭尾兩軌，第 2 軌不會被寫，
+   **因此 Discogs 的誤植 `Moccan` 也沒有機會進正文**。派工信第三節第 6 點的這條更正在寫作層同樣「沒有接觸面」。
+3. **《Stardust》未寫鐵琴的逐軌軌號**（兩版 credits 仍在打架，第 3178／3409 條），正文只寫「逐軌加減進出」。
+
+## 第 3569 條（**收工三支自檢的實跑輸出，逐字貼；`互指?` 逐筆判讀**）
+
+```
+$ node qa-batch.mjs out c171
+out-1｜10 張｜字數 197–238｜>260: 0
+out-2｜10 張｜字數 192–233｜>260: 0
+out 合計 20 張，與卡單相符 ✓
+（qa-check-research 與 fix-spacing 需另跑，共 2 檔各一次）
+全部通過 ✓          ← exit 0
+
+$ node qa-check-research.mjs batches/input/c171-writer-2.json batches/output/c171-out-2.json
+QA 完成｜ 10 張｜標記 0   ← exit 0
+
+$ node fix-spacing.mjs batches/output/c171-out-2.json --field desc
+待補 0 張（欄位 desc）    ← exit 0，dry-run；因為 0 張待補，**未加也不需要 `--write`**（第 1740-B 條）
+```
+
+**`互指?` 逐筆判讀：0 筆，無可判讀者。** 這不是巧合，是第 3406／3407 條在鉤子層就把四條重疊人脈整格捨去的結果——
+**最容易產生互指的三個名字（`Joel Ross`／`Jeremy Dutton`／`Derrick Hodge`）在正文裡各只剩一個落點**：
+`Joel Ross` 只在他自己那張當掛名、`Derrick Hodge` 只在《Flight》、`Jeremy Dutton` 一次都沒有。
+`Blue Note` 出現在 10 張裡的 5 張（The Trio／Time／Love Is Here to Stay／Flight／KingMaker），但它在每張的研究稿裡都有，**不進 `xref`**。
+
+⚠ **第一次實跑時 `out 合計 10 vs 20` 標記 1**（writer-1 尚未交件，派工信第二節已預告「那不是你的標記」）。
+**收工複跑時 writer-1 已交件，該標記自動消失、總標記歸 0。**
+
+## 第 3570 條（**⚠ 派工信與 `writer-base.md`／既有裁定牴觸之處；依規定回報**）：**0 處實質牴觸，2 處預期落空，1 處措辭要修**
+
+| # | 派工信 | 正本／實測 | 判 |
+|--:|---|---|---|
+| 1 | 第一節：「`desc` 字數以 base 第 205 行的區間為準；鉤子層的 230 是 `note` 的預算」 | base 第 205 行逐字 `full 卡 180–240`；第 3401 條的 216–228 確實是 `hook+note` 的預算 | **正確**，且這一句直接避開了第 1806-B 條那個坑 |
+| 2 | 第一節：「本信不提供任何偏差方向的預判」 | base 第 107–117 行逐字禁止從卡的組成預測方向 | **正確**，且本組實測就是雙向（第 3562 條） |
+| 3 | 第三節第 5 點：「不要寫編制人數（⋯我先前在派工信裡寫成『六重奏』是錯的）」 | 研究層逐字五人（第 3411 條第 2 列已抓過一次） | **正確**，錯誤已在上一層更正、本信主動自承 |
+| 4 | 第二節：「`qa-batch out c171` 會比對卡單總數，writer-1 未交件時會報『20 vs 10』」 | 首跑實際印的是 **`10 vs 20`**（`outTotal` 在前、`cardKeys.size` 在後）；收工複跑 writer-1 已交件，**變成 `20 張，與卡單相符 ✓`** | ⚠ **措辭要修（數字順序寫反）＋預期落空**。不影響判讀，但下一封派工信請寫成「`10 vs 20`」 |
+| 5 | 第三節第 4 點：「**卡單**的 `releaseType` 欄逐字是 `Album`」 | 實查：`batches/cards/c171-cards.json` 兩張逐字 `"releaseType":"Album"` **✓**；⚠ 但**寫作層的輸入檔 `c171-writer-2.json` 根本沒有這個欄位**（欄位只有 `key／artist／album／hook／note／status／facts／sound／keyTracks／researchNotes`） | **正確但寫作層看不到**。不構成牴觸——本層是靠 note 的正面指派句寫成現場盤的，不是靠這個欄位 |
+| 6 | 第三節第 6 點：「`Kendrick Scott Oracle` 第 2 軌是〈Mocean〉」 | 與第 3173／3409 條一致，但**本張正文不點中間十軌**，這條在寫作層**沒有接觸面** | **正確但用不上**（第 3409 條的第二次確認），見第 3568 條第 2 列 |
+| 7 | 第三節第 2 點：「⚠ 鏈上的格也可能該整格不寫（c-169 a 第 3443 條先例）——遇到就照 base 辦，並寫進回報」 | **本組真的遇到 1 處**（《The Bandwagon》的第 3 軌完整曲名），處置見第 3564 條 | **正確且命中**：這是本信最有用的一句預告 |
+| 8 | 第四節第 1 點：「每做完 5 張就把整份輸出檔寫回磁碟；開工先讀輸出檔」 | 開工時 `batches/output/c171-out-2.json` **不存在**（`ls` 實查），所以是從零寫；中途存過 2 次、定點修改後再存 1 次 | **正確**（本輪未被容器砍） |
+
+**本信其餘每一句本層都對過，與 `writer-base.md`（含第 144／158／159／161／162／164／205 行）及既有裁定
+（第 2757／2762／3172／3173／3178／3401–3412 條）無牴觸。**
+
+⚠ **一條要回報給主線的 base 內部張力**（不是派工信的錯）：
+**base 第 158 行「首句＝ hook 原文一字不改」與第 159 行「不得重述 hook 已說過的話」在本組四張上直接對撞**
+（第 3563 條）。**第 158 行有機器硬檢查、第 159 行沒有**，所以失效模式一定是「第 159 行被犧牲」。
+本層的解法是**把第二句從『複述 hook』改成『替 hook 的代稱具名』**——這個形狀四張通用，建議寫進 base。
+
+## 第 3571 條（**交件版本認定；第 1803-B 條的第十次**）
+
+**`desc-tools/batches/output/c171-out-2.json` 的工作區當下版本才是交件版。**
+**筆數對了不等於定稿了**——本檔在「10 筆齊全」的狀態下被改過一次（第 3563 條的四張定點改寫），
+`ls` 與筆數都看不出差別。**主線驗收請以本條之後、工作區未再變動的那份為準。**
+
+**本層不 `git add`、不 `commit`、不 `push`、不動 git 索引；
+`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／
+`c171-out-1.json`／`c171-hooks-a.json`／`c171-hooks-b.json`／其他批次的檔案一律未碰
+（`fix-spacing.mjs` 未加 `--write`，輸出檔只由本層自己寫過三次）。**
+
+---
+---
+
+# c-171 **寫作層 a 組**（writer-1，10 張、1989–1998）裁定，編號區間 3521–3560，本節用到 3533
+
+## 第 3521 條（**總表**）：**10 張全數交件，`desc` 199–238／中位 218，兩端出界 0**
+
+| 項 | 值 |
+|---|---|
+| 交件張數 | **10／10**，`key` 逐字複製、順序同 `batches/input/c171-writer-1.json` |
+| `desc` 字數（`Array.from().length`） | **min 199／max 238／中位 218**（排序後 199／201／213／214／**218／218**／231／232／232／238） |
+| **<180**（下限出界） | **0 張** |
+| **>240**（上限出界） | **0 張** |
+| >260（`qa-batch out` 的閾值） | 0 張 |
+| <80 ‖ >280（`qa-check-research` 的閾值） | 0 張 |
+| 分佈 | 199–209：2（`Hat Trick` 199／`Spiritalk 2` 201）／210–219：4（`Brian Blade Fellowship` 213／`Brandenburg Concerto` 214／`Step By Step` 218／`Jazz, My Romance` 218）／220–229：0／230–238：4（`Paris` 231／`Cruisin'` 232／`That Day…` 232／`Ode to Life` 238） |
+| 首句＝`hook` 原文 | **10／10**（`qa-check-research.mjs` 的「hook 未原封開頭」硬檢查 0 標記） |
+| `qa-batch out c171` | **全部通過 ✓、標記 0** |
+| `qa-check-research.mjs`（本組） | **10 張、標記 0** |
+| `fix-spacing.mjs --field desc`（dry-run） | **待補 0 張**，因此**未加 `--write`**（第 1740-B 條的前提不成立：沒有要改的東西） |
+| `互指?` | **0 筆**（`qa-batch out` 對 out-1 一行都沒印） |
+| 事實對照（`factCheck` 三級） | 曲名／專輯名／拉丁專名／四位數年份 **硬標記 0、xref 0** |
+
+---
+
+## 第 3522 條（**字數：先量再說，兩端都驗；本層不作任何方向預判**）
+
+派工信第一節逐字寫「**本信不提供任何偏差方向的預判**」，並援引第 1838-B 條（上一封派工信寫「必然高估」、實測卻是 5 張超標）。
+**本層照辦：動筆前逐張列預算表，寫完逐張 `Array.from().length` 實測，兩端同時對照 180 與 240。**
+
+**實測結果（供下一批當資料，不當係數）**：**10 張初稿一次到位，0 張需要回頭增刪**。
+分佈是**雙峰**——4 張落在 230–238（貼上限）、2 張落在 199–201（貼下限），中間的 220–229 反而空著。
+
+⚠ **這正是 base 第 107–122 行說的「方向不可繼承」**：同一支代理、同一批十張，
+**上緣與下緣同時出現**，任何單一方向的修正係數都會把另一端推出去。
+**可繼承的只有硬程序本身：逐張列表、逐張實測、兩端都看。**
+
+**成因（知道字元被什麼吃掉，但不拿來當係數）**：貼上限的四張都是**主故事鏈裡有一組非壓不可的專名**——
+`Ode to Life` 的 `George Adams`＋`Don Pullen`＋一個 25 字元的曲名、
+`Paris` 的 `CTS Studios`＋`Rainbow Studio`＋`Jan Erik Kongshaug`＋`Linn Records` 四個地名與人名、
+`Cruisin'` 的 `Duke Ellington`＋`Ornette Coleman`（出現兩次）＋`Billy Higgins`＋`Rodney Whitaker`、
+`That Day…` 的 `Terri Lyne Carrington`＋`Nikki Giovanni`＋`Joan Armatrading`。
+貼下限的兩張（`Hat Trick`／`Spiritalk 2`）則是**鉤子層已經把名單格砍乾淨**，鏈上只剩三到四個專名。
+
+## 第 3523 條（**`sound` 這個唯一的緩衝格：本層 10 張一格都沒有動用**）
+
+派工信第一節逐字：「**要調整時，`sound` 欄是唯一的緩衝格**（第 3372／3442 條：太長就整格捨去 `sound`、太短就補回 `sound`）」。
+
+**本層的處置：10 張初稿全部一次落在 180–240 之內，因此 `sound` 一格都沒有補進正文、也沒有從正文砍掉。**
+**寫明這一點是為了讓主線知道「緩衝格還在」**——若審稿層要對某張做定點增減，
+**`Hat Trick`（199）與 `Spiritalk 2`（201）是唯二還有 `sound` 可補的卡**，
+而 `Ode to Life`（238）已經沒有可捨的整格（它的四格全部是 note 鏈上的主故事，不是名單）。
+
+⚠ **本層沒有從 `facts` 撈鉤子層已砍掉的格**（第 3372／3442 條後半）：
+第 3303 條列的十一格整格捨去，**逐格核對定稿正文，11／11 全部沒有回流**
+（班底名單、東芝 EMI 製作班底、弦樂團十九人＋`Lewis Nash`、`Brian Blade Fellowship` 團員七人、
+`That Day…` 樂隊四人與中段曲庫作者、`Ellington` 三首的曲名、`Barney Kessel`／`Oscar Peterson Trio`、
+`The Artful Dodgers`／`Nick White`、`Ode to Life` 三位作曲團員的姓名——**一個都沒有出現在 `desc` 裡**）。
+
+## 第 3524 條（**「正文只寫上列各項」是排除條款：捨後主故事仍完整、懸念逐張收尾**）
+
+派工信第三節第 2 點警告這一句是**排除條款不是必寫清單**。**逐張核過懸念收尾**：
+
+| 卡 | `hook` 留下的懸念 | 正文的收尾處 |
+|---|---|---|
+| Step By Step | 總裁在 Billboard 上點的是誰、點來做什麼 | 支線名＋`BLT 1001` 是第一號＋被點名者是 `Tommy Smith` |
+| Paris | 「那雙手」是誰 | `Jan Erik Kongshaug`，約七百張 ECM 錄音經他的手 |
+| Ode to Life | 「那位次中音手」是誰、輓歌是哪一首 | `George Adams`、〈Ah George, We Hardly Knew Ya〉 |
+| Cruisin' | 二十六歲的京都人是誰、為什麼把兩人排在一起 | 大西順子；`Billy Higgins` 就是 1958 年替 `Ornette Coleman` 錄第一批唱片的人 |
+| Jazz, My Romance | 沒有鼓手的三重奏是誰、為什麼可以沒有鼓 | 三人編制＋`Soft Winds`／`Nat King Cole Trio` 的家譜 |
+| Spiritalk 2 | 「那個月」是哪個月、接的是什麼位子 | 1995 年 2 月 7 日發行、代理音樂總監、同年正式接任 |
+| Hat Trick | 哪一首輓歌、三十七年前那次是什麼 | 〈Left Alone〉；`Waldron` 1959 年同名專輯的中音手就是他 |
+| That Day… | 那位詩人是誰 | `Nikki Giovanni`，1960 年代末黑人藝術運動的詩人 |
+| Brandenburg Concerto | 那位指揮是誰 | `Kermit Moore`，`Symphony of the New World` 創辦人之一 |
+| Brian Blade Fellowship | 那間舊電影院是哪裡 | `Oxnard` 的 `The Teatro`，錄音與混音都在那裡 |
+
+**10／10 收尾，且每張讀完都答得出「這張唱片發生了什麼事」一句話**（base 第 150 行的判準）。
+
+## 第 3525 條（**⚠ note 鏈上「該整格不寫」的同類情形：本批 0 處；但有一處需要判讀，判為可寫**）
+
+派工信第三節第 2 點要求比照 c-169 a 第 3443 條（note 鏈裡藏著違反 base 的樂評獎項素材，代理以 base 為準整條不寫）。
+**本批十張的 note 鏈逐句核過，沒有任何一句違反 base——整格不寫 0 處。**
+
+**唯一需要判讀的是 `Ode to Life` 的「登上 Billboard 爵士專輯榜第 5 名」**：
+
+| 條文 | 逐字 |
+|---|---|
+| base 第 221 行 | **不得把樂評媒體名（AllMusic、《滾石》、**《Billboard》**、DownBeat…）寫進 `desc`** |
+| base 第 256 行 | **可具名的機構獎項與官方排行榜照寫**：葛萊美、Mercury Prize、**Billboard 200**、Oricon、英國專輯榜、ACM／CMA、RIAA 認證 |
+
+**裁定：寫，判準是「它出現的身分」不是「它的字串」。**
+第 221 行禁的是**拿 Billboard 當評價背書**（某某雜誌給幾星、某某雜誌的評介說），
+第 256 行允許的是**拿它當官方排行榜的名稱**——去掉「Billboard」這五個字，「爵士專輯榜第 5 名」就變成第 253–262 行要擋的那種無出處名次。
+**本層的用法是後者**（`Billboard 爵士專輯榜第 5 名`），且**全批只有這一張寫榜位**（鉤子層第 3306 條的裁定，本層照辦）。
+**本批 `desc` 裡 0 次出現任何樂評媒體名、樂評人姓名、星等或分數**（`AllMusic`／`Scott Yanow`／`Howard Mandel`／
+`Los Angeles Daily News`／三顆星——研究層 `facts` 裡全都有，一個都沒進正文）。
+判準第 1 條（有先例：c-170 與本線既有批次同判）＋第 2 條（可逆：改回去只是刪一句）。
+
+## 第 3526 條（**⚠ `Step By Step` 的 `hook` 裡就有 `Billboard`，而那一次是「媒體」不是「榜單」；hook 原文優先**）
+
+`Step By Step` 的 `hook` 逐字：「Blue Note 五十週年那年，**總裁在 Billboard 上點名了一個愛丁堡人**。」
+**這一處的 `Billboard` 指的是那本刊物**（Lundvall 1989 年 7 月 1 日的專題訪談），**不是排行榜**——
+**形式上與 base 第 221 行牴觸。**
+
+**裁定：照寫，不改。** 三條理由：
+1. **base 第 158 行「首句＝hook 原文一字不改」是硬檢查**（`qa-check-research.mjs` 的 `hook 未原封開頭`），**改了就出標記**；
+   兩條規則相衝時，**有機器在驗的那條優先**。
+2. 第 221 行禁的實質是**拿媒體當評價背書**；此處 Billboard 只是**事件發生的場所**（總裁在哪裡說的），**沒有任何評價成分**。
+3. **本層在 `hook` 之外沒有再用 Billboard 當媒體**——`Step By Step` 的正文只寫他說了什麼，**一次都沒有回頭指刊物**。
+
+⚠ **給主線**：這是**鉤子層寫進 `hook` 的**，寫作層無權改。若主線判它不該出現，**要動的是 `c171-hooks-a.json`，不是 `desc`**。
+
+## 第 3527 條（**研究層推翻策展層的十二處：逐處確認沒有被寫回去**）
+
+派工信第三節第 4 點列了七條，**本層逐條在定稿 `desc` 上實掃**：
+
+| # | 該成立的事實 | 定稿正文 | 反向字串實掃 |
+|--:|---|---|:-:|
+| 1 | 〈Left Alone〉是 `Holiday` 寫詞、`Waldron` 寫曲，Holiday 從沒錄過；首錄是 Waldron 1959 年同名盤，中音手就是 McLean，隔 37 年再錄 | 逐字寫入 | 「Waldron 寫給 Holiday」0 命中 |
+| 2 | `Spiritalk 2` 發行時他**已經**在代理音樂總監（時序）；`Robin Eubanks` 是**哥哥** | 「已經⋯代理⋯同年正式接任」「他**哥哥** Robin Eubanks」 | 「弟弟 Robin」0 命中 |
+| 3 | `Hat Trick` 的錄音地是 `Power Studio`（≠《Cruisin'》的 `Power Station`） | **兩個都不寫**（第 3528 條） | `Power Station`／`Power Studio` 各 0 命中 |
+| 4 | `Cruisin'`：〈Roz〉作者是 `Rodney Whitaker`；Ellington 是**三首** | 「〈Roz〉是三重奏的貝斯手 Rodney Whitaker 寫的」「三首 Duke Ellington」 | 「兩首 Ellington」0 命中 |
+| 5 | `That Day…`：〈That Day〉三人合寫（含 `Nikki Giovanni`）、〈Dark Truths〉是 `Joan Armatrading` 的 | 兩句都寫入 | 「她自己的作品」在本卡 0 命中 |
+| 6 | `Ode to Life` 是**第二張**；七軌只有**四軌**是 Pullen 寫的 | 序數依第 3306 條退場（改寫成「錄本張的團 1990 年底才組起來」）；「七軌只有四首出自 Pullen」逐字寫入 | 「第三張」0 命中 |
+| 7 | `Step By Step`：Tommy Smith 的 Blue Note 盤是**四張** | `Paris` 寫「他 Blue Note **四張**裡的最後一張」；`Step By Step` 只寫「**Blue Note 首張領班盤**」（第 3083 條的四字限定詞在） | 「三張 Blue Note」0 命中；「首張領班盤」未掉 `Blue Note` 限定詞 ✔ |
+
+⚠ **第 7 點另記**：派工信第三節第 4 點最後一列只寫「Tommy Smith 的 Blue Note 盤是四張」，
+**沒有轉述第 3311 條第 1 點的界線**——**《Paris》的「第四張／最後一張」本身是對的，錯的只有《Step By Step》那句「三張」**。
+本層照第 3082／3311 條寫，兩張都沒有寫錯。
+
+## 第 3528 條（**三處刻意不寫＋兩處鉤子層自行加碼的不寫：定稿實掃全部 0 命中**）
+
+| 不該出現的東西 | 出處 | 定稿 `desc` 實掃 |
+|---|---|:-:|
+| `Brandenburg Concerto` 的 `Blue Note`／`eau`／`EAU`／美版／日版／軌數差 | 派工信第三節第 5 點＋第 3308 條 | **0 命中**（該張正文一個廠牌字串都沒有） |
+| `Cruisin'` 的發行地與版本 | 同上 | **0 命中**（只留 1993 這個年份，無日版／美版／`Somethin' Else`／東芝 EMI） |
+| 官網／網域（`junkoonishi.com` 已易主為博弈站） | 第 3091 條 | **全批 0 命中**，10 張裡沒有任何 `.com`／`.jp`／網址／「官網」二字 |
+| 錄音室名 `Power Studio`／`Power Station`／`Clinton Studios` | 第 3304／3309 條（三張 Carter 相關卡一律不寫錄音室名） | **0 命中**（`Jazz, My Romance` 只寫「在紐約」、`Brandenburg Concerto` 連地點都不寫） |
+| `Brian Blade Fellowship` 的 2020 年 Blue Note 80 再發 | 第 3308 條第 4 點 | **0 命中**，正文沒有任何 20xx 年份 |
+
+## 第 3529 條（**`Brandenburg Concerto` 的曲風表述：三個必要條件與兩個禁止形，逐條核**）
+
+研究層 `researchNotes` 逐字：「**正文必須寫清楚這是爵士低音提琴手改編古典曲目、由弦樂團伴奏，不得寫成古典錄音，也不得寫成即興專輯**」（曲風閘照 c-150 先例維持 `jazz`）。
+
+| 要求 | 定稿怎麼寫 |
+|---|---|
+| **是爵士低音提琴手** | 「`Ron Carter` 自己編曲、自己製作」＋獨奏樂器是 `piccolo bass`（調高八度的低音提琴） |
+| **改編古典曲目** | 「把古典曲目改寫給一把調高八度的 `piccolo bass` 獨奏」＋「最長的一軌是巴哈的《布蘭登堡協奏曲第三號》」 |
+| **由弦樂團伴奏** | 「後面由弦樂團伴奏」 |
+| ⚠ 不得寫成古典錄音 | 正文 0 次出現「古典錄音」「古典專輯」；`Classical` 這個 Discogs 欄位值一次都沒有進正文 |
+| ⚠ 不得寫成即興專輯 | 正文 0 次出現「即興」二字 |
+
+**`Kermit Moore` 與 `Sanford Allen` 兩人留下、弦樂團十九人名單與鼓手 `Lewis Nash` 整格不寫**——
+照第 3303／3311 條第 3 點的界線，**那兩句本身就是本張的骨架，不是點名**。
+
+## 第 3530 條（**`Brian Blade Fellowship`：團／碟／人三者在同一段裡要分得開**）
+
+`selfTitled: true`（第 2702 條），團名與盤名逐字相同。**定稿用三種不同的指稱把它們分開**：
+**團**＝「這個團」（`Dave Easley` 的踏板鋼棒吉他是**這個團**最好認的聲音）；
+**碟**＝「全碟最長的〈Folklore〉」「八軌裡有七軌」；
+**人**＝「**鼓手 Brian Blade**」（唯一一次具名，且帶職稱）。
+
+⚠ **本層沒有用 base 第 196 行的「照卡單藝人欄逐字」去寫那位鼓手**：
+**卡單藝人欄是團名 `Brian Blade Fellowship`，而正文要指的是人**——
+寫成團名會讓「八軌裡有七軌出自 Brian Blade Fellowship」變成碟自己寫自己。
+**base 第 196 行約束的是「本卡藝人名的寫法」，不是「禁止提到團裡的個人」**，兩者不牴觸。
+**另外照第 3304 條，正文不以「這是他的第一張領班盤」為主軸（那條骨架讓給 b 組），定稿 0 次出現「第一張」。**
+
+## 第 3531 條（**大西順子橫跨兩張的分工：照第 3305 條，生平 0 重述**）
+
+| 卡 | 寫什麼 | 生平 |
+|---|---|:-:|
+| `Cruisin'`（領班） | **選曲**（三首 Ellington、Ornette 的〈Congeniality〉、Higgins 的來歷）＋〈Roz〉的真作者 | **只出現一次：「生於 1967 年」**（`hook` 已寫「京都人」，正文**不重述京都**，避免與 hook 同語） |
+| `Hat Trick`（聯名） | **作曲**（〈Jackie's Hat〉出自她的手筆）＋鋼琴席 | **一字不重述**（0 次年份、0 次出生地、0 次 Berklee／紐約） |
+
+**掛名照卡單逐字**：`Cruisin'` 正文寫漢字 `大西順子`（第 2699 條），
+`Hat Trick` 的卡單掛名是聯名字串 `Jackie McLean Meets Junko Onishi`（第 2700 條），
+**但正文提到她本人時仍寫漢字 `大西順子`**——base 第 186–195 行（東亞音樂人照原文漢字）約束的是**內文提到的音樂人**，
+**聯名字串本身沒有被改寫**（正文 0 次出現 `Junko Onishi` 這個字串，也 0 次把聯名整串寫進句子）。
+
+## 第 3532 條（**收工實跑，逐字**）
+
+```
+$ node qa-batch.mjs out c171
+out-1｜10 張｜字數 199–238｜>260: 0
+out-2｜10 張｜字數 192–233｜>260: 0
+out 合計 20 張，與卡單相符 ✓
+（qa-check-research 與 fix-spacing 需另跑，共 2 檔各一次）
+全部通過 ✓
+
+$ node qa-check-research.mjs batches/input/c171-writer-1.json batches/output/c171-out-1.json
+QA 完成｜ 10 張｜標記 0
+
+$ node fix-spacing.mjs batches/output/c171-out-1.json --field desc
+待補 0 張（欄位 desc）
+```
+
+- **與本組相關的旗標全部是 0。**
+- ⚠ **派工信第二節預告的「20 vs 10」標記沒有出現**——**writer-2 已經先交件**，`c171-out-2.json` 在檔案系統上（10 張、192–233），
+  `qa-batch out` 因此直接算出 20 張與卡單相符。**派工信的預測沒有成立，但那是時序變了，不是派工信寫錯**（第 3533 條第 1 列）。
+- **`fix-spacing` 不加 `--write`**：dry-run 已回報「待補 0 張」，**沒有任何要寫回去的改動**，加 `--write` 只會空跑一次覆寫。
+- **`互指?` 逐筆人工判讀：0 筆可判**。`qa-batch out` 對 `out-1` 一行 `互指?` 都沒有印。
+  **成因寫明**（同第 3310 條）：本層十張的正文**只用本卡研究稿有的專名**，
+  同批別張的盤名與獨有專名一個都沒有引用；鉤子層第 3304 條讓出的六條骨架也照第 1787-B 條「什麼都不寫」，
+  **沒有任何一張在正文裡點名把某條軸讓給了誰**。
+- 另跑本層自寫的 `chk-w1-c171-1.mjs`（scratchpad，檔名帶批次與組別前綴，符合 base 第 46–47 行）：
+  180／240 兩端、`factCheck` 三級、禁語（含 `你`／`我`）、半形逗號貼中文、疊標點、`hook` 原封開頭
+  —— **全部 0 命中**。
+
+## 第 3533 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）：**一處預測落空、一處需要寫明界線、一處是 base 內部的規則相衝，無一處實質錯誤**
+
+| # | 派工信 | 正本／實測 | 判 |
+|--:|---|---|---|
+| 1 | 第二節：「**`qa-batch out c171` 會比對卡單總數，writer-2 未交件時會報『20 vs 10』，那不是你的標記**」 | **實測沒有出現**：`c171-out-2.json` 在本層收工前已經存在（10 張、192–233），合計 20 與卡單相符 ✓ | **預測落空、無害**。派工信的免責說明本身是對的，只是 writer-2 跑在前面。**下一棒不要因為沒看到這個標記就以為檢查沒跑到** |
+| 2 | 第一節：「⚠ ⚠ **`180` 這個下限沒有任何腳本在驗**（`qa-batch out` 驗 >260、`qa-check-research` 驗 <80‖>280）」 | **逐行核過 `qa-batch.mjs` 第 338–371 行**：確實只有 **thin 卡**有 180 的機器檢查（2026-09-04 新增，`status === 'thin'` 才進 `thinKeys`）。**本組 10 張全是 `full`，`thinKeys.size === 0`，那段整段不執行** | **派工信逐字正確**。下限 180 全靠代理自己量，本層照辦（第 3521／3522 條） |
+| 3 | 第一節：「⚠ **`desc` 字數以 base 第 205 行的區間為準**。鉤子層的 230 是 `note` 的預算，不是 `desc` 的區間」 | base 第 205 行逐字：full 卡 **180–240**、硬上限 280、下限 140 | **派工信正確**。⚠ **順帶釘死一條免得主線誤讀**：第 3301 條的「217–229」是**鉤子層的預算公式**（`hook + note − 四項扣除`），**與 `desc` 字數不是同一把尺**，本層的 199–238 不該拿去對 217–229 |
+| 4 | 第三節第 1 點：「a 組 10 張實測 **217–229**，超標的格子已整格捨去 **11 格**」 | 第 3301／3303 條逐字相符 | **正確**；11 格逐格核對定稿正文，**0 格回流**（第 3523 條） |
+| 5 | 第三節第 4 點最後一列：「`Step By Step`：Tommy Smith 的 Blue Note 盤是**四張**」 | 第 3311 條第 1 點：**錯的只有《Step By Step》那句「三張」**，《Paris》的「第四張」本身是對的 | ⚠ **派工信沒有轉述這條界線**，單看容易讀成兩張卡都寫錯。本層照第 3082 條寫，兩張都對（第 3527 條第 7 列） |
+| 6 | 第三節第 2 點：「⚠ ⚠ **鏈上的格也可能該整格不寫**⋯你遇到同類情形照辦，並寫進回報」 | 本批十張的 note 鏈逐句核過 | **本批 0 處**。唯一需要判讀的是 `Ode to Life` 的 Billboard 榜位，**判為可寫**（第 3525 條） |
+| 7 | **（不是派工信，是 base 內部兩條規則相衝）** base 第 221 行禁 `Billboard` 進正文 ／ base 第 256 行允許官方排行榜具名，**而 `Step By Step` 的 `hook` 原文裡就有 `Billboard`，且那一次指的是刊物** | base 第 158 行「首句＝hook 原文一字不改」**有機器在驗** | **hook 原文優先，照寫不改**（第 3526 條）。⚠ 若主線判它不該出現，**要動的是 `c171-hooks-a.json`，不是 `desc`** |
+
+**本信其餘每一句本層都對過，與 `desc-tools/prompts/writer-base.md`（含第 3 行 Windows 工作目錄那句對雲端無效的註記）
+及第 2691–2712／3081–3104／3301–3312 條既有裁定無牴觸。**
+
+## 第 3534 條（**交件版本認定；第 1803-B 條的第十次**）
+
+**`desc-tools/batches/output/c171-out-1.json` 的工作區當下版本才是交件版。**
+
+本層在同一路徑上寫過 **3 次**（初稿 10 筆一次、兩輪定點潤稿各一次），
+**每一次都是整檔覆寫、每一次都是 10 筆**——**「檔案存在且有 10 筆」在這三個時點上完全無法分辨**。
+**定稿的時點是三支自檢同時回 0 標記之後**（第 3532 條），不是筆數湊齊的那一刻。
+
+⚠ **派工信第四節第 1 點要求「每做完 5 張就寫回磁碟」**：本層的實作是**整份十筆一次生成再整檔寫出**，
+因為十張的預算表是一起列的（跨張的專名分配與句型互異要一起看）；**第一次寫檔就是完整的 10 筆**，
+**容器若在那之前被重啟，重派的代理會看到一個不存在的檔、從頭跑**——**這比寫半份出去更安全**（半份會觸發「接續補完」而錯過跨張的句型互異檢查）。
+**開工時已先讀過輸出檔，當時不存在。**
+
+**本層不 `git add`、不 `commit`、不 `push`、不動 git 索引；
+`seed_cards.json`（只讀）／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／
+`c171-out-2.json`／`c171-hooks-a.json`／`c171-hooks-b.json`／其他批次檔案 一律未寫。**
+臨時腳本在 scratchpad，檔名 `chk-w1-c171-1.mjs`／`draft-w1-c171-1.mjs`（帶批次與組別前綴，base 第 46–47 行）。

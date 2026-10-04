@@ -35,6 +35,29 @@ const protectedTokens = (() => {
     const rows = Array.isArray(raw) ? raw : Object.values(raw).flat();
     for (const r of rows) for (const s of [r[0], r[1]]) if (typeof s === 'string' && adjacent.test(s)) out.add(s);
   }
+  // 2026-09-21（c-174 writer-2 抓到，主線第 1889-B 條）：**保護清單漏了「本批自己的卡」。**
+  // 清單只從 `seed_cards.json` 抓，而正在寫的這一批**還沒進池**，於是
+  // `山下洋輔トリオとブラス12` 被建議拆成 `ブラス 12`——卡單藝人欄逐字就是無空格，
+  // 補了會讓標題與簡介對不上。**卡進池後這筆會自動消失，但在那之前每一批都會中。**
+  // 因此把 `desc-tools/batches/cards/*-cards.json` 的掛名與盤名一併納入保護。
+  try {
+    const cdir = new URL('./batches/cards/', import.meta.url);
+    for (const f of fs.readdirSync(cdir)) {
+      if (!/^c\d+-cards\.json$/.test(f)) continue;
+      let cards; try { cards = JSON.parse(fs.readFileSync(new URL(f, cdir), 'utf-8')); } catch { continue; }
+      for (const c of (Array.isArray(cards) ? cards : Object.values(cards)))
+        for (const s of [c.artist, c.album]) if (typeof s === 'string' && adjacent.test(s)) out.add(s);
+    }
+  } catch { /* 目錄不存在（本機路徑不同）就略過 */ }
+  // 2026-09-22（c-176 writer-1 抓到，主線第 1914-B 條）：**`jp-proper-names.json` 也該進保護清單。**
+  // 那個檔本來是給 `qa-batch` 的簡體掃描當白名單用的，但它裝的正是
+  // 「日文專名與逐字引用的官方原句」——`ドラム・ブレイクが炸裂する国内外のDJ人気曲`
+  // 這種句子裡的 `DJ` 被這支腳本要求補空格，而那是日文原句，補了就改壞引用。
+  // **同一份名單同時服務兩個檢查是對的：它記的就是「這串字不要動」。**
+  try {
+    const raw = JSON.parse(fs.readFileSync(new URL('./jp-proper-names.json', import.meta.url), 'utf-8'));
+    for (const s of raw) if (typeof s === 'string' && adjacent.test(s)) out.add(s);
+  } catch { /* 檔不存在就略過 */ }
   // 長的先比，避免短字串先咬掉長專名的一半
   return [...out].sort((a, b) => b.length - a.length);
 })();
@@ -44,8 +67,13 @@ const protectedRx = protectedTokens.length ? new RegExp(`(${protectedTokens.map(
 // 《》〈〉裡是專輯名與曲名，原文怎麼寫就怎麼留——〈SAKURAドロップス〉不該變成
 // 〈SAKURA ドロップス〉。CJK 批次幾乎每張都有這種拉丁夾假名的曲名，
 // 不豁免就會每批都跳一堆不能套用的建議。（2026-08-11 cjk-03 實測）
+// 2026-09-22（c-176 writer-2 抓到，主線第 1916-B 條）：**`「」` 裡的逐字引用同樣不該動。**
+// jp-1 線的正文常引日本廠牌官方頁的原句（`「スタンダード5曲とオリジナル作品5曲」`、
+// `「編曲は、1曲を除き鈴木宏昌が手掛け」`、`「70's名盤選10タイトル」`），
+// 那是**引文**，插了空格就是改掉引文本身。與 `《》〈〉` 同一個理由，只是括號換了一種。
+// ⚠ 只豁免成對的 `「」`；單邊出現不當引用處理（避免把半篇正文吃掉）。
 export function spacer(s) {
-  return String(s).split(/(《[^》]*》|〈[^〉]*〉)/)
+  return String(s).split(/(《[^》]*》|〈[^〉]*〉|「[^」]*」)/)
     .map((seg, i) => (i % 2 ? seg : protectSpans(seg)))
     .join('')
     .trim();

@@ -1,0 +1,139 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "queryAlias": "Soul Eyes (Deluxe)（Apple jp 1442724249，14 軌）；Soul Eyes（日本盤 UCCQ-1063，15 軌）；キャンディス・スプリングス（Apple jp artistName）",
+  "artist": "Kandace Springs",
+  "album": "Soul Eyes",
+  "year": 2016,
+  "label": "Blue Note B002500402（US 2016-06-24 CD 11 軌，第二格 SRP Records 同號；barcode 602547873705；MB 640d1b36；Discogs 美版 10921636、加版 8687325）；XE CD 00602547889317（MB 79f58f6b，2016-07-01；Discogs 8747760）／EU CD 00602547873705（Discogs 23650682，released 逐字 2016-07-01）／東南亞 CD 4787370（9201229）；US LP B002518801（Discogs 9024849，barcode 602547873767）／EU LP 0602547873767（9438659）；⚠ 日本盤 Blue Note UCCQ-1063（Discogs 10467233，released 逐字 2016-07-01，15 軌，barcode 4988031158920，**MB 未建**）；數位 00602547873729（MB 4d0fdaae）／00602547873736（6c4b718f）／00602547887818（ef408339）／GB 00602547889300（75c27f4f）；宣傳 CDr 四筆（歐 11272567、法 18002932、日 27250632／35450521）",
+  "why": "Kandace Springs 的 Blue Note 首張正規專輯，2016-06-24 發行，Larry Klein 製作、Carl Sturken 與 Evan Rogers 監製；Terence Blanchard 小號、Vinnie Colaiuta 鼓、Dean Parks 與 Jesse Harris 吉他、Dan Lutz 貝斯、Pete Kuzma 管風琴與電鋼琴（Discogs 23650682 credits 欄）。十一軌以 Mal Waldron 作曲、Coltrane 傳世的〈Soul Eyes〉為題，其餘多為 Springs 與 Harris 等人的新作，另翻唱 War 的〈The World Is a Ghetto〉。她是 Prince 2014 年聽到她翻唱 Sam Smith〈Stay With Me〉後親自延攬到 Paisley Park 的歌手，也是 Blue Note 在 Norah Jones 之後最明確的一次「鋼琴女歌手」押注（bluenote.com 藝人頁逐字：「a voice that could melt snow」）。**實掃卡池：`Kandace Springs` 在 seed 17,248 列 0 命中、在 `desc-tools/batches/cards/` 全部卡單與各批 `prop-*.json`（含尚未上架的 c148–c169）亦 0 命中——她整條 Blue Note 線在本店一張卡都沒有**，本批三張（2016／2018／2020）是她全部的 Blue Note 目錄。",
+  "risk": "⚠ 年份：MB frd 2016-06-24、Discogs 十二筆原壓群全 2016（美版 06-24／歐版與日版 07-01）、Apple us 1440835098 releaseDate 逐字 `2016-06-24T07:00:00Z`、℗ 欄逐字 `℗ 2016 Blue Note Records`——三層一致，**取 2016**。**第 1800-B 條的第二種掃描（`artist=Kandace+Springs&release_title=Soul+Eyes`）另補出 MB 沒建的日本盤 UCCQ-1063、美歐兩款黑膠、加拿大版、東南亞版與四張宣傳 CDr，但日本盤 released 逐字 2016-07-01，晚於美版，不改年份。**⚠ 軌數三形：原盤 11 軌（43 分）／日本盤 15 軌（Discogs 10467233，加〈The Windmills of Your Mind〉〈Stay With Me〉等，57 分）／Apple jp 另有 `Soul Eyes (Deluxe)` 14 軌（1442724249）——**正文與試聽比對一律以 11 軌原盤為準，bonus 不得寫成原盤曲目**。⚠ 掛名：MB RG artist-credit 逐字單一 Person 實體 `Kandace Springs`（03c36fe6，US），Discogs 十二筆與 Apple 三店逐字相同，MB 同名反查只有這一個實體——四邊無分歧。⚠ 曲風：MB RG genres 逐字 `jazz:2, r&b:1`，Discogs genre `Jazz`、style `Soul-Jazz, Smooth Jazz`（日本盤另標 `Electronic/Jazz/Pop`）——`r&b` 與 `soul-jazz` 依第 1572 條折進 `soul`，判 `['jazz','soul']`。⚠ 撞陳列（第 845 條，不同次錄音不是撞卡）：〈Soul Eyes〉是 Mal Waldron 寫給 John Coltrane 的曲子，池中 Coltrane 相關卡多張；〈The World Is a Ghetto〉原唱 War。⚠ 店面（第 254 條，只寫觀察）：Apple us／gb／jp 三店皆命中（us 1440835098 11 軌、gb 1442347415 11 軌 releaseDate 2016-07-01、jp 兩個 collectionId 1440835098 與 1442809246 同 11 軌、另有 14 軌 Deluxe）；`lookup?upc=602547873705` 亦命中 1440835098。CAA release-group 層 2 圖，**來源 release 逐字是 640d1b36（美版 CD 原壓）**。",
+  "mbNote": "釘 release-group 875f7055-72d8-4f25-87a9-20b97e25c5c9。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Soul Eyes」、artist-credit 單一成分 `Kandace Springs`（artist 03c36fe6-ec96-402b-8366-5038f08c75db，Person／US）、first-release-date 2016-06-24、primary-type Album、**secondary-types 逐字空陣列**、genres `jazz:2`／`r&b:1`、tags `jazz`／`r&b`。回問 `release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 6 筆 release，全部 11 軌 43 分、label-info 逐字 `Blue Note [713c4a95-6616-442b-9cf6-14e1ddfd5946]`（正規 imprint，非部門名 `2eb19785`）——640d1b36（2016-06-24 US CD，B002500402＋SRP Records 5664c7ca 同號，barcode 602547873705）／79f58f6b（2016-07-01 XE CD，00602547889317）／4d0fdaae・6c4b718f・ef408339（XW 數位）／75c27f4f（2016-07-01 GB 數位）。**MB 未建日本盤 UCCQ-1063 與兩款黑膠。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "queryAlias": "Indigo（日本盤 UCCQ-1087，14 軌含 bonus〈Cold Summer〉）；キャンディス・スプリングス（Apple jp artistName）",
+  "artist": "Kandace Springs",
+  "album": "Indigo",
+  "year": 2018,
+  "label": "Blue Note B002872002（US 2018-09-07 CD 13 軌；MB c2d8a9ae，**MB 的 barcode 欄整格空**；Discogs 美版 14347365，barcode 602567218791）；EU CD 00602567218791（Discogs 12494537，notes 逐字 `Made in the EU. Issued in a gatefold card case`）；⚠ 日本盤 Blue Note UCCQ-1087（Discogs 12919209，released 逐字 2018-09-07，14 軌，notes 逐字 `Track 14 is a bonus track`，barcode 4988031294543，**MB 未建**）；EU LP 00602567218784（12598239）／美加 LP B002872101（12500626，廠牌鏈 Capitol Records, LLC）；波蘭版 00602567958437(86)（12493383）／辛巴威版（13169214）；宣傳 CDr 兩筆（法 13213111、13181184 型 12910184）；XW 數位 88cb382c（MB）",
+  "why": "Kandace Springs 的第二張 Blue Note 盤，2018-09-07 發行，**主體由 Karriem Riggins 製作**（bluenote.com 藝人頁逐字：「Her second album Indigo (2018) was mostly produced by Karriem Riggins」；維基逐字「combines the vocal jazz tradition with modern R&B influences and a trumpet solo by Roy Hargrove」）。十三軌裡除了〈Don't Need the Real Thing〉〈Fix Me〉〈Piece of Me〉等自寫曲，另翻唱 The Stylistics〈People Make the World Go 'Round〉與 Ewan MacColl／Roberta Flack〈The First Time Ever I Saw Your Face〉，是她三張 Blue Note 盤裡最靠 hip-hop 節奏那一側的一張。Roy Hargrove 的小號獨奏是他 2018 年 11 月辭世前留下的最後幾份錄音之一。**實掃卡池：`Kandace Springs` 在 seed 與全部待上架批次皆 0 命中**（見同批《Soul Eyes》）；`Karriem Riggins`／`Roy Hargrove` 為側人，不影響掛名。",
+  "risk": "⚠ 年份：MB frd 2018-09-07、Discogs 九筆原壓群全 2018（含日本盤 UCCQ-1087 released 逐字 2018-09-07，與美歐同日）、Apple us 1414681591 releaseDate 逐字 `2018-09-07T07:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2018 UMG Recordings, Inc.`——三層一致，**取 2018**；第 1800-B 條第二種掃描補出七個 MB 沒建的版本，**沒有任何一版早於 2018-09-07**。⚠ 軌數三形：美版 CD 13 軌（48 分）／日本盤 14 軌（第 14 軌〈Cold Summer〉是日本 bonus）／**Apple jp 1415047230 亦 14 軌，Apple us／gb 1414681591 是 13 軌**——正文不得把〈Cold Summer〉寫成原盤曲目。⚠ **MB 只建了兩筆 release（美版 CD 與美版數位），且兩筆的 barcode 欄都整格空**——歐版、日版、兩款黑膠、波蘭版、辛巴威版與宣傳盤全靠 Discogs 第二種掃描補；**第 1250 條的變形：MB 這張連 barcode 都沒有，barcode 反查根本跑不起來**。⚠ 掛名同《Soul Eyes》，四邊一致。⚠ 曲風：MB RG genres 逐字 `jazz:1, r&b:1`，Discogs genre `Jazz`、style 逐字 `Cool Jazz, Soul-Jazz`——`r&b` 折進 `soul`，判 `['jazz','soul']`，與同組另兩張一致（第 1418 條）。⚠ 撞陳列：〈The First Time Ever I Saw Your Face〉與〈People Make the World Go 'Round〉都是池中 soul 名曲的翻唱，**不同次錄音，不是撞卡**（第 845 條）。⚠ 店面（第 254 條）：Apple us／gb／jp 三店皆命中，`lookup?upc=602567218791` 亦命中。CAA release-group 層 1 圖，**來源 release 逐字是 88cb382c（美版數位），不是 CD 原壓**——研究層與封面層看版式要回 Discogs 14347365。",
+  "mbNote": "釘 release-group db2101b1-0477-4305-84fc-e77bae9913e3。`release-group?inc=artist-credits+genres+tags`：title「Indigo」、artist-credit 單一 `Kandace Springs`（03c36fe6，Person／US）、first-release-date 2018-09-07、primary-type Album、secondary-types 逐字空陣列、genres `jazz:1`／`r&b:1`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條的第二種端點組合已跑過）：**轄下只有 2 筆 release**——88cb382c（2018-09-07 US Digital Media，13 軌 48 分，barcode 欄空，label-info 逐字 `Blue Note [713c4a95]`）與 c2d8a9ae（2018-09-07 US CD，13 軌 48 分，catalog-number 逐字 `B002872002`，barcode 欄空，同一個 label id）。**MB 未建歐版、日版 UCCQ-1087、兩款黑膠與所有宣傳盤。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz",
+   "electronic"
+  ],
+  "queryAlias": "_by.ALEXANDER（Discogs artists 欄小寫 by）；000 Channel Black（Discogs 2024 黑膠條目的大小寫）；Alex da Kid（MB artist 實體主名）；Alexander Grant（本名）",
+  "artist": "_BY.ALEXANDER",
+  "album": "000 CHANNEL BLACK",
+  "year": 2020,
+  "label": "Blue Note／_by.ALEXANDER records.（2020-08-27 數位首發，barcode 602435091563，Universal 602 序列；MB dc0d7e17，label-info 逐字 `Blue Note [713c4a95]`；Discogs 32272356 的廠牌鏈逐字 `Blue Note Records` ＋ `_by.ALEXANDER records.`，format 逐字 `File (FLAC/WAV)`，11 軌 45 分）；**2024-08-27 美加黑膠 Blue Note 3509156**（Discogs 32972946，format 逐字 `Vinyl (LP/Album/Stereo)`，同 11 軌，A 面六軌 B 面五軌）",
+  "why": "製作人 Alex da Kid（Alexander Grant，Imagine Dragons〈Radioactive〉、Eminem〈Love the Way You Lie〉的作者）以 `_BY.ALEXANDER` 這個化名做的爵士企劃，2020-08-27 由 Blue Note 正規 imprint 發行，同時搭配他自創的精品時裝線。十一軌以鋼琴為主體、原音低音提琴與鼓組打底，電子聲響與取樣鋪在底層；客座含 070 Shake（〈Trumpets〉）、Tanerélle 與 Rainsford（Rainey Qualley）。這是 Blue Note 在 Don Was 任內把製作人身分的音樂家拉進目錄的其中一步，與同線的 R+R=NOW、Chris Dave and The Drumhedz、lophiile、FATHERS 屬同一條脈絡。**實掃卡池：`_BY.ALEXANDER`／`_by.ALEXANDER`／`Alex da Kid`／`Alexander Grant` 四種字形在 seed 17,248 列、`desc-tools/batches/cards/` 全部卡單與各批 `prop-*.json` 皆 0 命中**；`000 CHANNEL BLACK`／`CHANNEL BLACK` 盤名反查亦 0。",
+  "risk": "⚠ ⚠ 掛名是本組唯一一筆「MB 的 artist 實體名與 RG credited-name 不同」的碟：**MB RG artist-credit 的 `name`（credited-name）逐字是 `_BY.ALEXANDER`，但底下的 artist 實體 `0d40af7f` 主名逐字是 `Alex da Kid`（Person／GB，disambiguation 逐字 `UK musician, record producer, songwriter, record executive & fashion designer`）。依第 2078 條「掛名照 MB RG artist-credit 原樣寫」取 `_BY.ALEXANDER`**；Apple 的 artistName 逐字也是 `_BY.ALEXANDER`（全大寫 BY，見 1525818189〈TRUMPETS (feat. 070 Shake)〉與 1525815464），**只有 Discogs 用小寫 `_by.ALEXANDER`**——二比一取大寫形，小寫形與 `Alex da Kid` 都進 `queryAlias`。⚠ **日後若 Alex da Kid 的流行／製作人身分作品進池，兩個字串並存、不得事後合併**（第 964／196／197 條）。⚠ 年份：MB frd 2020-08-27、Discogs 32272356 年份欄 2020、**2024 黑膠 32972946 的 released 欄逐字 `2024-08-27`（整整四年後的同一天，是再版不是首發）**、Apple 上同期兩支單曲〈TRUMPETS〉〈le merveilleux résumé〉releaseDate 逐字 `2020-08-06`（專輯前三週的先行單曲）——**取 2020**；第 1800-B 條第二種掃描（`artist=_by.ALEXANDER`）只補出那張 2024 黑膠。⚠ **MB 的 `country` 欄逐字是 `AF`（阿富汗）**——顯然是建檔誤值，實際是 XW 全球數位發行；**`slice.json` 的 `country: \"AF\"` 照抄了它，下游不得據以寫發行地**。⚠ **MB 的 catalog-number 欄整格空、`genres` 與 `tags` 兩欄都是空陣列**（第 1557 條那批「RG 端也空」的碟，第 2135 條末段同形）——曲風改讀 Discogs。⚠ 曲風是本組證據最弱的一格：**Discogs 兩筆條目的 genre 欄逐字都只有 `Jazz`、style 欄整格空**，`electronic` 取自 slice 的人工判定（逐字「modern jazz／electronic」）＋第三方樂評（hypebeast／INFINIT 逐字描述電子元素）＋同藝人另一張 Discogs 條目 35705428 的 genre 逐字 `Electronic, Hip Hop, Jazz`。**本機審稿可退成 `['jazz']`，可逆。**⚠ 店面（第 254 條）：**三種查法都做過，Apple 上找不到這張專輯**——`Kandace`／盤名查法回的是 Alexander Kowalski 的〈Black Channel〉（完全不同碟，**絕對不得採用**）；`attribute=artistTerm=_by.ALEXANDER` 的 us／gb 兩店只回兩支 2020 單曲與一張 2026 單曲，**專輯本身不在 Apple us／gb 目錄**（Apple ca 有 1528271227，本層未取 ca 店為主）。`lookup?upc=602435091563` 回 0。CAA release-group 層 1 圖，來源 release 逐字 dc0d7e17（唯一版本）。",
+  "mbNote": "釘 release-group 5c6fb4ce-7bf5-4818-b5e3-df0f3f927459。`release-group?inc=artist-credits+genres+tags`：title 逐字「000 CHANNEL BLACK」、**artist-credit 一個成分，credited-name 逐字 `_BY.ALEXANDER`、底層 artist 實體逐字 `Alex da Kid`（0d40af7f-…，Person／GB）**、first-release-date 2020-08-27、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條的第二種組合已跑）：**轄下只有 1 筆 release** dc0d7e17（2020-08-27，country 欄逐字 `AF`，Digital Media 11 軌 45 分，barcode 602435091563，catalog-number 欄空，label-info 逐字 `Blue Note [713c4a95]`）。**MB 未建 2024 年的 Blue Note 黑膠 3509156。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "ジョエル・ロス（Apple jp artistName）；Joel Ross (3)（Discogs 的同名消歧編號，不是掛名的一部分）",
+  "artist": "Joel Ross",
+  "album": "Who Are You?",
+  "year": 2020,
+  "label": "Blue Note B003222702（US 2020-10-23 CD 15 軌 70 分；Discogs 16150240，released 逐字 2020-10-23，notes 逐字 `Issued in a gatefold digisleeve`，barcode 602507127497）；XE CD 00602507127497（MB c21b8c9f，同 barcode；Discogs 16126992）；**US LP B0032228-01**（Discogs 16262503，barcode 602507127503，**MB 未建**）；XW 數位 00602507127466（MB ef0d0334）",
+  "why": "顫音琴手 Joel Ross 的第二張 Blue Note 領班盤（前一張是 2019 年的《KingMaker》，見 risk），2020-10-23 發行，由他自己與次中音手 Walter Smith III 共同製作，Good Vibes 班底：Immanuel Wilkins 中音薩克斯風、Jeremy Corren 鋼琴、Kanoa Mendenhall 貝斯、Jeremy Dutton 鼓，另有人聲客座。十五軌含四段一分鐘上下的間奏（〈Calling〉〈Kings Loop〉〈Harmonee〉），主體是〈Home〉9:08 與〈Vartha〉10:35 兩首長曲，另收 Coltrane〈After the Rain〉。Ross 是 Blue Note 2019 年後最核心的新生代之一——本批四張（2020／2022／2024／2026）之外，他同時是 b 組《Motion I》《Motion II》那支 Out Of/Into 五重奏的顫音琴手。**實掃卡池：`Joel Ross` 在 seed 17,248 列 0 命中、在全部卡單與各批 `prop-*.json` 亦 0 命中——他整條線在本店一張卡都沒有**；盤名 `Who Are You?` 折鍵後撞到 seed 的 `The Who —《Who Are You》(1978)`，**掛名不同、不是同碟**（第 179／250 條）。",
+  "risk": "⚠ 年份：MB frd 2020-10-23、Discogs 三筆原壓群（美版 CD／歐版 CD／美版黑膠）released 逐字全 2020-10-23、**Apple us／gb／jp 同一 id 1528266505 的 releaseDate 逐字卻是 `2020-11-23T08:00:00Z`（晚一個月）**、℗ 欄逐字 `Blue Note Records; ℗ 2020 UMG Recordings, Inc.`——**二比一取 2020-10-23，年份不受影響**；第 1800-B 條第二種掃描只補出美版黑膠一筆，沒有日版、沒有更早的版本。⚠ 盤名撞卡：`Who Are You?`／`Who Are You` 在 seed 撞 The Who 1978 年那張（非 apex 王牌），**`chk-prop` 的複合鍵不會亮**（掛名不同）；**下游引用這個盤名務必帶掛名與年份**。⚠ ⚠ **`Joel Ross` 在 MB 有第二個同名實體 `02f84b16`（Person／US，disambiguation 逐字 `American pianist, conductor, choral arranger`）**——本卡釘的是 `6d09039b`（Person／US，disambiguation 逐字 `US vibraphonist`）。依第 179／250／324 條核 type／area／disambiguation、不看 score。**池中目前 0 張，沒有分裂風險；日後那位合唱指揮進池要帶消歧。**⚠ **`KingMaker`（2019）是他的 Blue Note 首作，不在本批、也不在本線任何一批**——見交件回報的第三項發現。⚠ 撞陳列（第 845 條）：〈After the Rain〉是 Coltrane 1963 年的曲子，與池中 Coltrane 各卡是不同次錄音。⚠ 曲風：MB RG genres 逐字 `jazz:2`、Discogs 三筆 genre 逐字全 `Jazz`（style 欄空）——判 `['jazz']`。⚠ 店面（第 254 條）：Apple us／gb／jp 三店同一 id 1528266505、15 軌與實體相符；`lookup?upc=602507127497` 亦命中。CAA release-group 層 1 圖，**來源 release 逐字是 ef0d0334（XW 數位），不是 CD 原壓**。",
+  "mbNote": "釘 release-group 225706eb-e6af-4574-a1f2-7298aa661cdf。`release-group?inc=artist-credits+genres+tags`：title 逐字「Who Are You?」（**帶問號**）、artist-credit 單一 `Joel Ross`（artist 6d09039b，Person／US，disambiguation 逐字 `US vibraphonist`）、first-release-date 2020-10-23、primary-type Album、secondary-types 逐字空陣列、genres `jazz:2`、tags `jazz`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 2 筆——c21b8c9f（2020-10-23 XE CD，15 軌 70 分，barcode 602507127497，catalog-number 逐字 `00602507127497`）與 ef0d0334（2020-10-23 XW Digital Media，15 軌 70 分，barcode 00602507127466），**兩筆 label-info 逐字皆 `Blue Note [713c4a95]`**。**MB 未建美版 CD B003222702 與美版黑膠 B0032228-01。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Women Who Raised Me（日本盤 UCCQ-1118，15 軌）；キャンディス・スプリングス（Apple jp artistName）",
+  "artist": "Kandace Springs",
+  "album": "The Women Who Raised Me",
+  "year": 2020,
+  "label": "Blue Note B00316902（US 2020-03-27 CD 12 軌 53 分，第二格 SRP Records；MB a5698104；Discogs 15005394，barcode 602508633881）；EU CD 00602508633881（Discogs 15233380）；⚠ 日本盤 Blue Note／SRP Records UCCQ-1118（Discogs 15041298，released 逐字 2020-03-27，**15 軌 63 分**，notes 逐字 `Includes 20-page booklet with liner notes in Japanese` ＋ `Additional recording on track 14 at Lab Recorders, Tokyo`，barcode 4988031372777，另有同號宣傳盤 19809778，**MB 未建**）；US LP B003159701（15026323，barcode 602508626708）／EU LP 00602508626708（15004441）；XW 數位 0602508626692（MB 3227545b）／US 數位 f267f3de",
+  "why": "Kandace Springs 的第三張 Blue Note 盤，2020-03-27 發行，Larry Klein 製作，十二軌全部是向女性爵士與靈魂歌手致敬的翻唱：Diana Krall（〈Devil May Care〉）、Ella Fitzgerald（〈Angel Eyes〉）、Nina Simone（〈I Put a Spell on You〉）、Sade（〈Pearls〉）、Lauryn Hill（〈Ex-Factor〉）、Bonnie Raitt（〈I Can't Make You Love Me〉——她當年就是用這首在 Don Was 面前拿到合約的）、Astrud Gilberto（〈Gentle Rain〉）、Billie Holiday（〈Solitude〉〈Strange Fruit〉）、Roberta Flack（〈Killing Me Softly with This Song〉）。班底 Steve Cardenas 吉他、Scott Cooley 貝斯、Clarence Penn 鼓，Bernie Grundman 母帶。**實掃卡池：`Kandace Springs` 在 seed 與全部待上架批次皆 0 命中**（同批另兩張同判）；盤名 `The Women Who Raised Me` 反查 0。",
+  "risk": "⚠ ⚠ **這是一張全翻唱盤，但不是合輯**：十二軌全部是 2019 年 Springs 自己的新錄音（Discogs 15005394 credits 欄逐字列出同一組班底與同一位製作人），**MB primary-type 逐字 `Album`、secondary-types 逐字空陣列，Discogs 七筆條目的 format 欄逐字全是 `CD, Album`／`Vinyl, LP, Album`，沒有一筆帶 `Compilation`**。判準照簡報第一節第 2 點「只讀逐張文案與軌目來源」，與第 2092 條（《Superblue 2》重訪自家曲庫仍判 Album）、第 2187 條（The Blue Note 7 翻奏盤判 Album）同向。**正文不得寫成「收錄爵士名伶的經典錄音」——那會把讀者導向合輯。**⚠ 年份：MB frd 2020-03-27、Discogs 七筆原壓群 released 逐字全 2020-03-27（含日本盤同日）、Apple us 1494215118 releaseDate 逐字 `2020-03-27T07:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2020 Capitol Records, LLC`——三層一致，**取 2020**；第二種掃描補出四個 MB 沒建的版本，無一早於 2020-03-27。⚠ 軌數兩形：原盤 12 軌（53 分）／**日本盤 15 軌（63 分，第 14 軌另在東京 Lab Recorders 補錄）、Apple jp 1497181017 是 14 軌**——bonus 不得寫成原盤曲目。⚠ ⚠ **imprint 閘要記一格**：XW 數位 release `3227545b` 的 label-info 逐字是 **`Blue Note Records [d3865f1e-ae0c-4a97-99b9-016966d49cb5]`**，不是平常的 `Blue Note [713c4a95]`。實查 `d3865f1e`：**type 逐字 `Holding`、disambiguation 逐字 `this is the record company; for release labels use its imprint “Blue Note”`**——**是同一家公司的控股實體，不是第 1631 條點名的部門名 `Blue Note Label Group [2eb19785]`，也不是簡報附錄的 `Blue Note Compagnie`／`Blue Note Digital`。同 RG 另兩筆 release 逐字就是 `Blue Note [713c4a95]`，過閘。**⚠ 撞陳列（第 845 條）：〈Strange Fruit〉〈Angel Eyes〉〈Solitude〉〈Killing Me Softly〉〈Ex-Factor〉〈I Put a Spell on You〉都是池中既有卡上的曲子，**全部是不同次錄音，一筆都不是撞卡**；下游正文要寫清楚是翻唱。⚠ 曲風：MB RG genres 逐字 `jazz:1`、Discogs 七筆 genre 逐字全 `Jazz`（style 欄空）——**與同人前兩張的 `['jazz','soul']` 不同，本張判 `['jazz']`**，理由是這一張的軌目與編制整體回到人聲爵士，`r&b` 標記在四邊都不存在。⚠ 店面（第 254 條）：Apple us 1494215118（12 軌）與 jp 1497181017（14 軌）皆命中，`lookup?upc=602508633881` 亦命中。CAA release-group 層 1 圖，**來源 release 逐字是 f267f3de（美版數位），不是 CD 原壓**。",
+  "mbNote": "釘 release-group 778eb3a5-184c-44b8-920e-72cd3eb06ea8。`release-group?inc=artist-credits+genres+tags`：title 逐字「The Women Who Raised Me」、artist-credit 單一 `Kandace Springs`（03c36fe6，Person／US）、first-release-date 2020-03-27、primary-type Album、**secondary-types 逐字空陣列**、genres `jazz:1`、tags `jazz`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 3 筆，全部 12 軌 53 分——3227545b（2020-03-27 XW Digital Media，barcode 0602508626692，**label-info 逐字 `Blue Note Records [d3865f1e]`＝控股實體**）／a5698104（2020-03-27 US CD，catalog-number 逐字 `B00316902`，barcode 欄空，`Blue Note [713c4a95]`）／f267f3de（2020-03-27 US Digital Media，`Blue Note [713c4a95]`）。**MB 未建歐版 CD、日本盤 UCCQ-1118 與兩款黑膠。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "queryAlias": "Live（Discogs 六筆條目的 title 欄逐字只有 `Live`）；R+R=Now Live (Live) [feat. Christian Scott aTunde Adjuah, Derrick Hodge, Taylor McFerrin & Justin Tyson]（Apple 1548059327 的 collectionName）；R+R=Now（Discogs 部分條目的 artists 欄大小寫）；R+R=NOW, Robert Glasper & Terrace Martin（Apple artistName）",
+  "artist": "R+R=NOW",
+  "album": "R+R=NOW Live",
+  "year": 2021,
+  "label": "Blue Note B003327402（US 2021-02-12 CD 7 軌 72 分，digisleeve；MB 29311337，barcode 602435461625；Discogs 17547175）；EU CD 00602435461625（Discogs 17400898，notes 逐字 `Recorded at Blue Note Club, New York, NY. Mixed at Flying Dread Studios, Los Angeles, CA. Mastered at Capitol Mastering, Hollywood, CA.`）；⚠ 日本盤 Blue Note UCCQ-1132（Discogs 19786213，released 逐字 2021-02-12，7 軌，barcode 4988031412114，另有同號宣傳盤 20103823，**MB 未建**）；US LP B003327501（18731329，barcode 602435461649，另有白標試壓 19117921）／EU LP 00602435461649（18735841）；US 數位 60c6c9e5（MB）",
+  "why": "Robert Glasper、Terrace Martin、Christian Scott aTunde Adjuah、Derrick Hodge、Taylor McFerrin、Justin Tyson 六人組 R+R=NOW（Reflect ＋ Respond ＝ NOW）2018 年 10 月在紐約 Blue Note 俱樂部駐演的現場盤，2021-02-12 發行，六人同列製作。七軌 72 分，含 Kendrick Lamar〈How Much a Dollar Cost〉的改編與 25 分 21 秒的〈Resting Warrior〉。**這是本店的 R+R=NOW 第二張**：c-169 b 已建《Collagically Speaking》(2018) 的卡單（`desc-tools/batches/cards/c169-cards.json` 逐字有該筆），**掛名字串一字不改沿用 `R+R=NOW`**（第 307／1418 條）。實掃卡池：`R+R=NOW` 精確命中 2 列（c169-cards.json 與 c169/prop-b.json 的同一張《Collagically Speaking》），**盤名不同、不是同碟**；六位成員的既有字串（`Robert Glasper` 11 列、`Christian Scott aTunde Adjuah` 6 列 seed、`Derrick Hodge` 6 列、`Terrace Martin`／`Taylor McFerrin`／`Justin Tyson` 各 0 列）**一律不動**（第 1131 條）。",
+  "risk": "⚠ ⚠ **現場盤，但 MB 漏標**：MB RG 的 `secondary-types` 逐字是**空陣列**，`slice.json` 的 `live` 欄也逐字 `false`——**但盤名逐字帶 `Live`、Discogs 歐版 17400898 的 notes 逐字 `Recorded at Blue Note Club, New York, NY`、Apple 1548059327 的 collectionName 逐字帶 `(Live)`、七軌總長 72 分且帶現場氛圍**。**這是第 397／1771 條「`secondary-types` 兩個方向都會漏」的一次應驗，而且是第 1771 條第 1 點（是現場卻沒標）。`releaseType` 仍照 MB 原值寫 `Album`（第 1797／2139 條的既有寫法），現場身分寫在本欄與 `queryAlias`；正文必須寫成現場盤。**⚠ 盤名字形：**MB RG title 逐字 `R+R=NOW Live`，Discogs 六筆條目的 title 欄逐字卻只有 `Live`（artists 欄帶 `R+R=NOW`／`R+R=Now`），Apple 的 collectionName 逐字 `R+R=Now Live (Live) [feat. …]`**——依第 6／70／120 條取 MB 形 `R+R=NOW Live`（單獨一個 `Live` 當盤名在卡池裡毫無識別度），另兩形進 `queryAlias`。⚠ ⚠ **店面探測鏈會落空**：`+` 與 `=` 這兩個字元 Apple 的 `search` 端點吃不下——`R+R=NOW Live`／`R R NOW Live`／`RRNOW Live`／`Robert Glasper R+R=NOW Live` 在 us／jp 兩店**全部 0 命中或回完全無關的碟**，`lookup?upc=602435461625` **也回 0**。**是第三種查法（`lookup?id=1378738213&entity=album` 拉 R+R=NOW 的藝人目錄）才救回 1548059327**（7 軌，releaseDate 逐字 `2021-02-12T08:00:00Z`，℗ 欄逐字 `Blue Note Records; ℗ 2021 Capitol Records, LLC`）。**這是第 1605 條救援在本線的又一次成立，形狀與 c-169 b 第 2204 條記的那一筆完全相同。**⚠ 年份：MB frd 2021-02-12、Discogs 六筆（含日本盤 UCCQ-1132）released 逐字全 2021-02-12、Apple 同日——三層一致，**取 2021**；第 1800-B 條第二種掃描（改用 `artist=R+R=NOW` 單欄查，`release_title` 帶 `Live` 會回 0）補出日本盤、兩款黑膠與白標試壓，無一更早。**錄音年是 2018，正文不得寫成發行年。**⚠ 曲風：MB RG genres 逐字 `contemporary jazz:2, hip hop:1, jazz:1`、Discogs 六筆 genre 逐字 `Hip Hop, Jazz, Funk / Soul`、style 逐字 `Contemporary Jazz`——依第 1572 條 `contemporary jazz` 不跟，依第 2203 條第 2 點 Glasper 圈的 hip hop 折進 `soul`、不開 `hiphop`，**判 `['jazz','soul']`，與 c-169 b《Collagically Speaking》那張逐字相同**（第 1418 條）。⚠ 撞陳列（第 845 條）：〈How Much a Dollar Cost〉原收於 Kendrick Lamar《To Pimp a Butterfly》；〈Change of Tone〉〈Perspectives/Postpartum〉〈Needed You Still〉三軌的錄音室版就在 c-169 b 那張《Collagically Speaking》上——**同一批曲子的不同次演出，兩張卡的 `risk` 應互指**。⚠ CAA release-group 層 1 圖，**來源 release 逐字是 60c6c9e5（美版數位），不是 CD 原壓**。",
+  "mbNote": "釘 release-group 784dccdb-76f3-4ecc-bfe8-c016fef81d10。`release-group?inc=artist-credits+genres+tags`：title 逐字「R+R=NOW Live」、artist-credit 單一 Group 實體 `R+R=NOW`（88e39d68，Group／US，**與 c-169 b《Collagically Speaking》釘的是同一個實體**）、first-release-date 2021-02-12、primary-type Album、**secondary-types 逐字空陣列（漏標，見 risk）**、genres `contemporary jazz:2`／`hip hop:1`／`jazz:1`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 2 筆——29311337（2021-02-12 US CD，7 軌 72 分，catalog-number 逐字 `B003327402`，barcode 602435461625）與 60c6c9e5（2021-02-12 US Digital Media，7 軌 72 分，barcode 欄空），**兩筆 label-info 逐字皆 `Blue Note [713c4a95]`**。**MB 未建歐版 CD、日本盤 UCCQ-1132 與兩款黑膠。**"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "selfTitled": false,
+  "reissuedBy": "",
+  "g": "a",
+  "genres": [
+   "jazz"
+  ],
+  "queryAlias": "The Parable Of The Poet（Discogs／Apple 的全大寫詞首形）；ジョエル・ロス（Apple jp artistName）；Joel Ross (3)（Discogs 同名消歧編號）",
+  "artist": "Joel Ross",
+  "album": "The Parable of the Poet",
+  "year": 2022,
+  "label": "Blue Note B003467502（US 2022-04-15 CD 7 軌 51 分；MB 23f83f73，barcode 602438918188；Discogs 22989956，notes 逐字 `℗© 2022 UMG Recordings, Inc. Blue Note Records, 1750 North Vine Street, Hollywood, CA 90028.`）；XE CD 00602438918188（MB efe8e061；Discogs 23015405）；US LP B003467601（Discogs 23444312，barcode 602438918195，**MB 未建**）／限量 LP B003467701（22929917，barcode 602438918201）／EU LP 3891819（23301974）／試壓 23088056；XW 數位 099a8837（602445522293）／510720cf（602438918171）／afc01857（602438918157）",
+  "why": "Joel Ross 的第三張 Blue Note 領班盤，2022-04-15 發行，把 Good Vibes 五重奏擴成八人的 Parables 編制：Immanuel Wilkins 中音、Maria Grand 次中音、Marquis Hill 小號、Kalia Vandever 長號、Gabrielle Garo 長笛、Sean Mason 鋼琴、Rick Rosato 貝斯、Craig Weinrib 鼓（Discogs 22989956 credits 欄逐字）。七軌 51 分全部是 Ross 的原創，曲名一路排成禮拜儀式的次序——〈Prayer〉〈Guilt〉〈Choices〉〈Wail〉〈The Impetus (To Be and Do Better)〉〈Doxology (Hope)〉〈Benediction〉——bluenote.com 藝人頁逐字稱這張是他「exploring new, more expansive territory with his eight-piece Parables band」。**實掃卡池：`Joel Ross` 在 seed 17,248 列、全部卡單與各批 `prop-*.json` 皆 0 命中**（同批另三張同判）；盤名 `The Parable of the Poet`／`Parable` 反查 0。",
+  "risk": "⚠ 年份：MB frd 2022-04-15、Discogs 七筆原壓群 released 逐字全 2022-04-15、Apple us／gb／jp 同一 id 1607017410 releaseDate 逐字 `2022-04-15T07:00:00Z`、℗ 欄逐字 `Blue Note Records; ℗ 2022 UMG Recordings, Inc.`——三層一致，**取 2022**；第 1800-B 條第二種掃描補出三款黑膠與一張試壓，**沒有日版、沒有更早的版本**。⚠ 盤名字形：MB RG title 逐字 `The Parable of the Poet`（介系詞小寫），**Discogs 七筆與 Apple 三店逐字都是 `The Parable Of The Poet`（全大寫詞首）**——依第 6／70／120 條取 MB 形，店面形進 `queryAlias`。⚠ 掛名同批一致 `Joel Ross`（MB 6d09039b Person／US）；**MB 另有同名的合唱指揮 `02f84b16`，本卡不是那位**（第 179／250／324 條，核 disambiguation 不看 score）。⚠ 軌數單一，四邊全部 7 軌 51 分，無分歧。⚠ 曲風：MB RG genres 逐字 `jazz:3, post-bop:1`、Discogs genre `Jazz`、style 逐字 `Post Bop`——`post-bop` 不在十個合法值裡（第 1572 條），收斂成 `['jazz']`。⚠ ⚠ **側人重疊要記**：Immanuel Wilkins 在池中已有 6 張卡（c-165《Omega》《The 7th Hand》、c-166《Blues Blood》、c-167《Live at the Village Vanguard》Vol. 1／2／3），**本卡是他的客座身分，不影響掛名，也不是撞卡**（第 1131 條）；下游寫作不得把他寫成共同領班。⚠ 店面（第 254 條）：Apple us／gb／jp 三店同一 id、7 軌與實體相符；`lookup?upc=602438918188` 亦命中。CAA release-group 層 **3 圖**，**來源 release 逐字是 efe8e061（歐版 CD），不是美版原壓**——封面層看版式要回 Discogs 22989956。",
+  "mbNote": "釘 release-group 785d3b72-d1c7-4de2-bde4-c094f3675e91。`release-group?inc=artist-credits+genres+tags`：title 逐字「The Parable of the Poet」、artist-credit 單一 `Joel Ross`（6d09039b，Person／US）、first-release-date 2022-04-15、primary-type Album、secondary-types 逐字空陣列、genres `jazz:3`／`post-bop:1`、tags 另含 `jazzthing.de`／`ph_temp_checken`（**雜誌與維護標記，不是曲風**）。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 5 筆，全部 7 軌 51 分、label-info 逐字 `Blue Note [713c4a95]`——23f83f73（2022-04-15 US CD，`B003467502`，barcode 602438918188）／efe8e061（2022-04-15 XE CD，`00602438918188`）／099a8837・510720cf・afc01857（XW 數位，barcode 602445522293／602438918171／602438918157）。**MB 未建三款黑膠與試壓盤。**"
+ }
+]

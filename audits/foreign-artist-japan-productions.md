@@ -1,0 +1,70 @@
+# 「外國藝人在日本錄的本土企劃盤」登記簿
+
+**這一支是什麼**：日本廠牌**自己企劃、自己錄音、日本唯一（或最早）發行**，
+而掛名／演奏側是外國樂手的盤。**兩條線（jp-1 四大廠、jp-2 十五家）都不收它**
+——不是因為「是日本壓片」（那個理由在這一支身上不成立，它們**沒有外國原盤**），
+而是因為兩條線的範圍逐字都是「**日本樂手的**本土爵士盤」，
+而簡報第一節逐字寫著這一類「**要不要另立一線待主線裁定**」。
+
+**這份檔案是什麼**：起點是 c-174 a 第 3787 條末段那一句「兩組都記在這裡供調度」。
+**候選原本散在各批的 `rulings.md` 裡**（c-174／c-183／c-184 各有），
+**主線第 1961-B 條（2026-09-25）把它收成一份，往後的批次登記到這裡**，
+在批內的 `rulings.md` 只留一行索引。
+
+⚠ **這份檔案只是登記簿，不是裁定**：要不要另立一線仍未定。
+⚠ **登記在這裡不等於退件理由成立**——每一筆的退件依據都是 c-176 第 4106 條四項（領銜／作曲／企劃／原盤發行）
+**≥ 3/4 才收**（門檻見 c-183 第 5685 條），逐筆依據在各批 `rulings.md`。
+
+## 甲族：外國樂團來日演出／錄音，日本廠牌做成全世界唯一的原盤
+
+| 目錄號 | 盤 | 年 | 廠牌 | 四項 | 依據 |
+|---|---|---:|---|---:|---|
+| `Columbia 45PX-2008-AX` | `Roy Ayers Quartet —《Comin' Home Baby》`（盤面全題帶 `Herbie Mann Presents`⋯`1`） | 1969 | 日本コロムビア | — | c-174 a 第 3787 條（**這一支的起點**） |
+| `Columbia YS-2276-AX` | 同一套 45 轉直刻系列的另一張 | 1969 | 日本コロムビア | — | c-174 b 第 3804 條 |
+| `Columbia YS-2400-AX` | `Everything Is Everything —《Just Flash in the Cosmic Pan》`（盤面另有 `New York All-Stars`） | 1970 | 日本コロムビア | — | c-174 a 第 3788 條（⚠ **錄音在紐約 Upsurge Studio**，嚴格說是第三種：日本企劃、外國錄音） |
+| `CBS/Sony SOPL-20-XJ` | `Circle —《Circle 2: Gathering》` | 1971 | CBS/Sony | 演奏側 0/4 | c-183 a 第 5691 條（⚠ **同樣錄在 Upsurge Studio**；1996 年才有 Stretch 的 CD，本盤是日本首發、日本唯一原盤） |
+| ⚠ `Trio Records PA-3004〜5` | `Cecil Taylor Unit —《Akisakila: Cecil Taylor Unit in Japan》` | 1973 | Trio | **2/4**、演奏側 **0/3** | c-184 a 第 5721／5743 條（⚠ ⚠ **目前最強的一筆**：全世界唯一原盤、最早的他國版是 1992 年德國 Konnex 的 CD、Discogs 13 版、連刻片與壓片都在 JVC） |
+
+## 乙族：長住日本的外國藝人 ＋ 日本編曲／企劃
+
+⚠ ⚠ **這一族與甲族的第 4106 條四項分佈不同，所以分開列**（c-184 a 第 5743 條 (1) 的建議）。
+⚠ ⚠ **這一族在 jp-2 是一整族**（`enum/jp-2.md` 的 217 張外國藝人盤裡有一批屬之），
+**而且他們的 MB `country` 常常就是 `JP`**（主線第 1959-B 條：`country`／`area` 會是居住國）
+——**`domestic` 這個機器欄位對這一族完全沒有分辨力，一律落到人工判。**
+
+| 目錄號 | 盤 | 年 | 廠牌 | 四項 | 依據 |
+|---|---|---:|---|---:|---|
+| `Sony YFSC-21` | `Sonia Rosa With Yuji Ohno —《Spiced With Brazil》` | 1974 | CBS/Sony | **2/4** | c-184 a 第 5723／5743 條（Discogs profile 逐字「Brazilian singer … living in Japan」） |
+| `CBS/Sony 28AH 1376` | `Marlene —《JUST LIKE FIRST LOVE》` | 1981 | CBS/Sony | **2/4** | c-187 b 第 6058 條 |
+| `CBS/Sony 28AH 1507` | `Marlene —《My Favorite Songs》` | 1982 | CBS/Sony | **2/4** | c-188 a 第 6410 條 |
+| `CBS/Sony 28AH 1455` | `Marlene with Seawind —《Summer Nights》` | 1982 | CBS/Sony | **2/4** | c-188 a 第 6411 條 |
+| `CBS/Sony 28AH 1514` | `Marlene —《Déjà Vu》` | 1983 | CBS/Sony | **2/4** | c-189 a 第 6538 條 |
+| `CBS/Sony 28AH 1577` | `Marlene —《It’s Magic》` | 1983 | CBS/Sony | **2/4** | c-189 a 第 6539 條 |
+| `CBS/Sony 28AH 1855` | `Marlene —《Be・Pop》` | 1985 | CBS/Sony | **2/4** | c-189 b 第 6574 條 |
+| `CBS/Sony 28AH 1962` | `Marlene —《SOFTLY, AS IN A MORNING SUNRISE》` | 1985 | CBS/Sony | **2/4** | c-190 a 第 6597 條 |
+
+### 這一族已知的成員（尚未進批、或已判成本土留在 slice 裡）
+
+⚠ **以下只是點名，不是退件**：`domesticRecheck.bornOutside` 標出來的 12 筆
+（`Marlene` 8 張／`Sonia Rosa` 1 張／`朝比奈マリア` 1 張／`加藤登紀子` 1 張，c-186…c-191），
+**`domestic` 全部維持 `true`，身分由策展層逐張按第 4106 條四項判**（主線第 1959-B 條）。
+⚠ **`加藤登紀子` 出身地是 Harbin 而她是日本人**——**這一欄只是註記，不是族別。**
+
+## 相關但不屬於這一支
+
+- **「日本壓片、有外國原盤」**（Miles Davis 在 CBS/Sony、Archie Shepp 在 Denon⋯）
+  ——**jp-1 已正確剔掉 412 張，jp-2 的 `domestic` 重算剔掉 216 張**。**這一類的身分歸原盤，不是本支。**
+- **「領銜是日本人、演奏側幾乎全是美國人」**（c-171 第 5179 條六張、c-183 a #17、c-184 a #16）
+  ——**四項多半 3/4，收**。見 c-183 第 5680 條。
+
+## 補遺線（hoyi）的處置（2026-09-28 起，主線第 2007-B 條：第 4106 條四項門檻取消、「日本是原盤」是硬門檻）
+
+| 盤 | 舊退件 | 補遺線 |
+|---|---|---|
+| `The Pentagon —《The Pentagon》` | c-185 第 5882 條（四項 2/4） | **c-193 b 收**（唯一的退件理由是四項） |
+| `Steve Lacy Sextet —《The Wire》` | c-185 第 5909 條（四項 2/4） | **c-193 b 收** |
+| `Saundra Hewitt —《Saundra》` | c-185 第 5880 條（四項 1/4） | **c-193 b 維持退，理由改寫**：第 5701 條甲 0/6 ＋ 第 1923-B 條（演奏主體是主唱） |
+| `Buster Williams Trio —《Tokudo》` | （slice 預標「不明」） | **c-196 b 收**（日本 Denon 原盤 1978） |
+| `Chet Baker —《Memories》`／`《Four》` | — | **c-196 b 退：撞池**（池中 seed《Chet Baker Live in Tokyo》2000 是這兩張的雙 CD 合輯；是否把池中那張改成原盤身分交本機） |
+| `Gil Evans《Live at Sweet Basil》`（Electric Bird `K23P 6355~56`）、`Ronnie Cuber《Passion Fruit》`（`K28P 6347`）、`Art Blakey《Hard Champion》`（Paddle Wheel `K32Y 6209`）、`Mal Waldron & Jackie McLean《Left Alone '86》`（`K32Y6167`）、`The Great Jazz Trio《Great Standards Vol. 2》`（Alfa Jazz `28R1-12`）、`《Eric Dolphy & Booker Little Remembered Live at Sweet Basil Vol. II》`（`K28P 6476`，1987） | 開線初篩判「乙」剔除（MB 日期精度錯，主線第 2010-B 條） | **c-197 a 收**（重篩批） |
+| `French Toast —《French Toast》`（King 1984） | c-180 第 4870 條（四項） | **c-195 b 收**；⚠ 研究層第 7881 條：同一藝人實體下有一筆 1984-03-16 的非官方實況，早於 King 錄音——「King 企劃團／唯一一張碟」降為 uncertain，「日本是原盤」不受影響 |

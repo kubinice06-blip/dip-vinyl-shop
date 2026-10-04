@@ -1,0 +1,2148 @@
+# c-170 裁定（Blue Note 1985 年後線・列舉漏切補批之三；a 組 8 張＋b 組 8 張，兩組同一棒）
+
+本批與 `c168`／`c169` 都不是原始列舉切出來的，是 **2026-09-18 查出列舉腳本曲風判錯層級**之後的補批。
+共用背景見 **`batch-progress/c169/rulings.md` 第 1557／1558／1559／1560-AD／1560-AE 條**
+與 `batch-progress/CURATION-BRIEF-bluenote-post1985.md` 的 2026-09-18 附錄。
+判準沿用 `CURATION-BRIEF-bluenote-post1985.md` → `CURATION-BRIEF-bluenote.md` 第〇節
+→ `c131` → `c127` → `c126` → `c103plus` → `c93plus`，一字未改。
+**本批是本線最小的一批（16 張，2020 年以後，唯一例外是 Kandace Springs 整組移進來的 2016／2018 兩張），兩組由同一棒做完。編號區間 2346–2400。**
+
+---
+
+## 第 2346 條（**總表**）：**16 張＝收 15 ／ 退 1；退的那一張是 c-169 a 第 2127 條已經先判好的**
+
+| | 張 |
+|---|---:|
+| `slice.json` `g: "a"` | 8 |
+| **`prop-a.json` 收件** | **7** |
+| **a 組退件** | **1**（lophiile《The Good Days Between》，**非 Album 形態（EP）**） |
+| `slice.json` `g: "b"` | 8 |
+| **`prop-b.json` 收件** | **8** |
+| **b 組退件** | **0** |
+| **合計** | **15 收 ＋ 1 退 ＝ 16** ✔（第 315 條結算通過，見第 2399 條） |
+
+**a 組收件 7 張**（依 `prop-a.json` 順序）：Kandace Springs《Soul Eyes》2016／《Indigo》2018／`_BY.ALEXANDER`《000 CHANNEL BLACK》2020／Joel Ross《Who Are You?》2020／Kandace Springs《The Women Who Raised Me》2020／R+R=NOW《R+R=NOW Live》2021／Joel Ross《The Parable of the Poet》2022。
+
+**b 組收件 8 張**（依 `prop-b.json` 順序）：Joel Ross《nublues》2024／Out Of/Into《Motion I》2024／Maya Delilah《The Long Way Round》2025／Nate Mercereau, Josh Johnson & Carlos Niño《Openness Trio》2025／Out Of/Into《Motion II》2025／Paul Cornish《You're Exaggerating!》2025／FATHERS《FATHERS》2026／Joel Ross《Gospel Music》2026。
+
+**15 張、9 個掛名字串**（`Kandace Springs` 3 張、`Joel Ross` 4 張、`Out Of/Into` 2 張，其餘 6 個各 1 張）。
+**年份改判 0 筆、覆核成立 15 筆**（理由見第 2352 條）。
+
+---
+
+## 第 2347 條（a 組，**退件；照 c-169 a 第 2127 條執行，不重查、不翻案**）：**`lophiile《The Good Days Between》`（2023）退——非 Album 形態（EP），未落在 §5.5 白名單**
+
+第 1560-AE 條把「收不收 EP」下放給 c-169 策展層，並要求「兩張一起決定」；**c-169 a 第 2127 條已判「EP 一律不收」，並在該條末段逐字指名：「`lophiile《The Good Days Between》`（2023，8 軌 17 分鐘）依同一判準退，理由分類相同。17 分鐘比本張還短，**不必再重查一次，照本條執行**」。** 本層照辦。
+
+**本層只做一次形狀覆核（不是重查判準，是確認 slice 的數字沒有寫錯）**：
+
+| 層 | 逐字 |
+|---|---|
+| **MB**（RG `5d29475f`，`release?release-group=…&inc=media+recordings`） | **轄下唯一一筆 release `2bf484bb`（2023-06-09 XW Digital Media），8 軌，逐軌 length 相加＝1,077,397 ms＝17 分 57 秒**（八軌逐字〈Player Shit〉〈On My 1's〉〈Off 2 Heaven〉〈Couldn't Let U Go〉〈Goldfoil〉〈In Some Way〉〈Red Giant〉〈Truth (outro)〉）；primary-type `Album`、secondary-types 空陣列；label-info 逐字 `Blue Note [713c4a95]` ＋ `No Tricks [cc2500ee]` |
+| **Discogs**（`artist=lophiile` 全 release 掃描，第 1800-B 條的第二種查法） | **這張零命中**；同藝人只有一筆 2019 年的 **`Blue Note EP-LO-001-19`《To Forgive》，format 欄逐字 `CDr, EP, Promo`** |
+| **Apple** | `lookup?upc=602455253248` 命中 **1688250303**，`trackCount` 逐字 8、releaseDate 逐字 `2023-06-09T07:00:00Z`、℗ 欄逐字 `No Tricks/Blue Note Records; ℗ 2023 UMG Recordings, Inc.`；**collectionName 沒有 `- EP` 尾碼** |
+
+**判：退。理由分類：非 Album 形態（EP），未落在 §5.5 白名單（`electronic`／`hardcore-7inch`／`asia-mini-album`）。**
+
+- **第 2127 條已預先處理掉唯一的反向訊號**：該條逐字寫「若 c-170 查到它的 Discogs `format` 欄逐字是 `Album` 而非 `EP`，**以時長為準仍判 EP**（17 分鐘沒有任何一條前例把它當 Album 收過）」。**本層查到的是更弱的情形——Discogs 上根本沒有這張碟的條目、Apple 也沒有 `- EP` 尾碼，也就是說「format 欄逐字 `EP`」這個訊號兩邊都取不到，只剩時長。17 分 57 秒。判 EP。**
+- ⚠ **本批另一張 8 軌的碟（`FATHERS《FATHERS》`，27 分 17 秒）判的是 Album**——**分界在時長與 `format` 欄，不在軌數**（第 2127 條原文）。兩張的差別逐項見第 2348 條。
+- ⚠ **退這張不傷本線的目錄深度**：lophiile 在池中 0 張、在 MB 的 Blue Note 目錄裡也只有這一張與 2019 年那張宣傳 EP，**本線因此不新立 `lophiile` 這個掛名字串**。若日後他有正規長度的專輯進批次，掛名照 MB RG credit 的全小寫 `lophiile`（MB `3320ab5f`，Person／US）。
+
+---
+
+## 第 2348 條（b 組，**裁定；可逆**）：**`FATHERS《FATHERS》`（8 軌 27 分 17 秒）判 Album 收下——形態閘的兩個訊號都不在 EP 那一側**
+
+c-169 a 第 2133 條末段新立的「形態閘」要求「六句判準之前先看零售條目 `format` 欄有無 `EP`／`Single` 並實算總長」。**本張逐項跑過：**
+
+| 訊號 | 本張（FATHERS） | 對照組：第 2127 條退掉的 Dr. John《Sippiana Hericane》 | 對照組：本批退掉的 lophiile |
+|---|---|---|---|
+| 軌數 | 8 | 7 | 8 |
+| **實算總長** | **27 分 17 秒**（MB 逐軌 length 相加＝1,636,788 ms） | **25 分 25 秒** | **17 分 57 秒**（1,077,397 ms） |
+| **Discogs `format` 欄** | **`CD (Album)`（37859667）／`Vinyl (LP/Album/Stereo)`（37844577）／`Vinyl (LP/Album/Limited Edition)`（37909314）——三筆都沒有 `EP`** | **逐字 `CD, EP`** | **Discogs 上沒有條目** |
+| MB primary-type | Album | Album（第 2127 條已指出這一格與盤面不一致） | Album |
+| 實體壓片 | **CD ＋ 兩款黑膠 LP** | CD | **無（純數位）** |
+
+**判：收，`releaseType` 寫 `Album`。** 三個理由：
+
+1. **第 2127 條原文的分界句逐字是「分界在時長與 `format` 欄，不在軌數」**——本張的 `format` 欄三筆全 `Album`、時長 27 分落在 Album 區間（該條的對照組 `Anna-Mari Kähärän Orkesteri` 同名盤是 7 軌 46 分判 Album，`Franco D'Andrea Quartet` 是 6 軌 77 分判 Album；**EP 那一側的兩個實例是 25 分帶 `EP` 欄、17 分無零售條目**）。
+2. **有實體 LP 壓片**：兩款黑膠的 format 欄逐字都帶 `LP` 與 `Album`。**EP 不會壓成 LP。**
+3. **可逆**：退回去只要把這一筆從 `prop-b.json` 移進退表，不動卡池結構。
+
+⚠ **本條與第 2127 條不牴觸，是同一條規則的另一側。** 本層把三張並列記下來，是為了讓後批不必再把「8 軌算不算 EP」重算一次：**軌數不是判準，27 分是目前本線判 Album 的最短實例、25 分是判 EP 的最長實例。**
+
+---
+
+## 第 2349 條（**掛名總表**）：**9 個字串；照 MB RG artist-credit 原樣 9、沿用池中既有字串 1、收攏 0、新造分裂 0**
+
+規則照 **c-168 第 2078 條**（本線 2026-09-19 的統一規則，明文適用於 c-168／c-169／c-170）：
+**掛名照 MB RG artist-credit 原樣寫；當 MB 的群組實體與池中既有的個人字串是兩個不同實體時，兩個字串並存，不收攏、不合併。**
+上游是 c-149 a 第 964 條、c-150 a 第 196／197 條，與 c-169 a 第 2128／2129 條、c-169 b 第 2188 條同向。
+⚠ **派工信第三節第 6 點已把這一點寫對了**（逐字「個人字串與群組字串並存、不收攏；第 307 條『絕不新造分裂』防的是同一實體的多種寫法，不是不同實體的並存」）——**本批因此沒有出現 c-168／c-169 那種「派工信把第 307 條寫窄」的牴觸。**
+
+| 掛名 | MB 實體 | 池中既有 | 處理 | 條 |
+|---|---|---|---|---|
+| **`Kandace Springs`** | `03c36fe6` **Person**／US | **0** | 新字串，本批三張共用（第 2350 條） | 2350 |
+| **`Joel Ross`** | `6d09039b` **Person**／US（disambiguation 逐字 `US vibraphonist`） | **0** | 新字串，本批四張共用（第 2350 條） | 2350 |
+| **`_BY.ALEXANDER`** | credited-name 逐字 `_BY.ALEXANDER`；**底層 artist 實體 `0d40af7f` 主名逐字 `Alex da Kid`**（Person／GB） | 0（四種字形都掃過） | **取 credited-name**（第 2351 條） | 2351 |
+| **`R+R=NOW`** | `88e39d68` **Group**／US | **2 列 1 張**（c-169 b《Collagically Speaking》2018，卡單已建） | **一字不改沿用**（第 307 條） | 2349 |
+| **`Out Of/Into`** | `897b9986` **Group**（area 欄空） | 0 | 新字串，本批兩張共用；**斜線是團名的一部分，不是斜線串接** | 2349 |
+| **`Maya Delilah`** | `6b0d2727` **Person** | 0 | 新字串；MB 同名反查唯一實體 | — |
+| **`Nate Mercereau, Josh Johnson & Carlos Niño`** | `900efa6c` ＋ joinphrase `, ` ＋ `37b60764` ＋ joinphrase ` & ` ＋ `f6e8d274`（三個 Person） | 0（三人個別字串亦 0） | **真並列聯名，依第 1539／1745-B 條取串接形**（第 2353 條） | 2353 |
+| **`Paul Cornish`** | `104721c5` **Person**／US | 0 | 新字串；MB 同名反查唯一實體 | — |
+| **`FATHERS`** | `8bda4e58` **Group**（disambiguation 逐字 `Nate Smith, Kiefer, CARRTOONS & Kenny Beats`） | 0 | 新字串；⚠ **MB 上另有四個同族 `Fathers` 實體**（第 2354 條） | 2354 |
+
+### （一）`chk-prop` 的 `&`／`and` 盲區（第 611 條）已逐字串手查
+
+`Out Of Into`、`Out of / Into`、`Nate Mercereau, Josh Johnson and Carlos Niño`、`Nate Mercereau & Josh Johnson & Carlos Niño`、`R+R=Now`、`RR=NOW`、`_by.ALEXANDER`、`Alex da Kid`、`Alexander Grant`、`Fathers`、`The Fathers`、`Nate Smith` 十二種替代寫法**在 seed 17,248 列、`desc-tools/batches/cards/` 全部卡單與各批 `prop-*.json`（含尚未上架的 c148–c169）皆 0 精確命中。**
+
+### （二）新造分裂 0；收攏 0
+
+**本批沒有任何一張出現「MB 的群組實體 vs 池中的個人字串」那種相撞**（c-168 第 2080 條的 `Ron Carter Trio`、c-169 b 第 2193／2194／2195 條的三筆）——**九個字串裡有八個在池中是全新的、第九個（`R+R=NOW`）逐字沿用**。
+
+---
+
+## 第 2350 條（**反同構條款與掛名判定，兩人各做一次；第 1558 條指定本批一次做完**）：**`Kandace Springs` 三張、`Joel Ross` 四張，各判一個字串**
+
+第 1558 條把 Kandace Springs 整組移進本批，理由逐字是「她與 Joel Ross 是本線**卡池裡一張卡都沒有**的兩條線，整條落在同一批，**反同構條款與掛名判定各只需做一次**，也避開第 1418 條『同一位藝人被兩批各判一次掛名』的風險」。**本層照辦，兩人的掛名字串在此一次定完。**
+
+### （一）`Kandace Springs` —— 四邊逐字一致，判 `Kandace Springs`
+
+| 來源 | 逐字 |
+|---|---|
+| **MB RG artist-credit**（三張 RG 皆同） | 單一 Person 實體 `Kandace Springs`（`03c36fe6-ec96-402b-8366-5038f08c75db`，US）；**MB 同名反查只有這一個實體** |
+| **Discogs**（三張合計 28 筆條目） | `artists` 欄逐字全是 `Kandace Springs`，無 anv、無消歧編號 |
+| **Apple**（us／gb） | `artistName` 逐字 `Kandace Springs`；⚠ **jp 三店逐字是 `キャンディス・スプリングス`** |
+| **slice.json** | `Kandace Springs` |
+
+**判 `Kandace Springs`。** 片假名形進三張卡的 `queryAlias`。
+⚠ **2026-08-11 東亞藝人名裁定（有漢字照漢字）不適用**：她是美國人，片假名是 Apple 日本店的音譯，不是本名（同 c-169 b 第 2197 條第 3 點的處理方向）。
+⚠ **她 2022 年後的碟（《My Name Is Sheba》Subplay Creative、《Run Your Race》與《Lady in Satin》SRP Records）不是 Blue Note 發行，不在本線範圍**；2014 年那張同名 EP 依第 2347 條的 EP 規則不收。**→ 本批三張就是她完整的 Blue Note 目錄。**
+
+### （二）`Joel Ross` —— 四邊逐字一致，判 `Joel Ross`；⚠ MB 有第二個同名實體
+
+| 來源 | 逐字 |
+|---|---|
+| **MB RG artist-credit**（四張 RG 皆同） | 單一 Person 實體 `Joel Ross`（`6d09039b`，US，**disambiguation 逐字 `US vibraphonist`**） |
+| ⚠ **MB 同名反查** | **另有 `02f84b16`（Person／US，disambiguation 逐字 `American pianist, conductor, choral arranger`）與 `aa237e30`（`Joel Ross-Adjie`，澳洲）**——依第 179／250／324 條核 type／area／disambiguation、**不看 score**，本批四張全部釘 `6d09039b` |
+| **Discogs**（四張合計 18 筆條目） | `artists` 欄逐字全是 **`Joel Ross (3)`**——**括號裡的 `(3)` 是 Discogs 的同名消歧編號，不是掛名的一部分**（與 c-169 a 第 2128 條 `Jackie Allen (2)`、本批 `Josh Johnson (13)`／`Fathers (6)` 同形） |
+| **Apple**（us／gb） | `artistName` 逐字 `Joel Ross`；⚠ jp 逐字 `ジョエル・ロス` |
+
+**判 `Joel Ross`。** `Joel Ross (3)` 與片假名形進四張卡的 `queryAlias`。
+⚠ **第 2 個同名實體是本批最容易誤判的一格**：那位是合唱指揮／編曲者，而本批第四張的盤名剛好是《Gospel Music》。**四張已逐字核過 artist id，全部是 `6d09039b`。日後那位進池要帶消歧。**
+⚠ **反向適用**：Joel Ross 同時是 b 組《Motion I》《Motion II》那支 **`Out Of/Into`** 五重奏的顫音琴手——**那兩張的掛名是團名，不得收攏成 `Joel Ross`，`Joel Ross` 也不得因此改寫**（第 1131 條：不同編制各自成立）。
+
+---
+
+## 第 2351 條（a 組，**裁定；可逆；本批唯一一筆「MB 實體名 ≠ RG credited-name」**）：**`_BY.ALEXANDER` 取 RG credited-name，不取實體主名 `Alex da Kid`**
+
+| 層 | 逐字 |
+|---|---|
+| **MB RG `5c6fb4ce` 的 artist-credit** | **成分的 `name`（credited-name）逐字 `_BY.ALEXANDER`**；**底下的 `artist.name` 逐字 `Alex da Kid`**（`0d40af7f`，Person／GB，disambiguation 逐字 `UK musician, record producer, songwriter, record executive & fashion designer`） |
+| **Apple**（us／gb，`attribute=artistTerm`） | `artistName` 逐字 **`_BY.ALEXANDER`**（全大寫 BY）——見 1525818189〈TRUMPETS (feat. 070 Shake)〉、1525815464〈le merveilleux résumé〉、6776416122 |
+| ⚠ **Discogs**（32272356／32972946／35705428） | `artists` 欄逐字 **`_by.ALEXANDER`**（小寫 by） |
+| **slice.json** | `_BY.ALEXANDER` |
+
+**判 `_BY.ALEXANDER`。** 三個理由：
+
+1. **第 2078 條的規則句逐字是「掛名照 MB RG artist-credit 原樣寫」——`artist-credit` 指的就是 credit 那一層，不是底下的實體主名。** c-169 a 第 2129 條處理 `Paolo Fresu 5et` 時之所以**反過來**取實體名，是因為那裡的 credited-name 串接後會與**池中已建的卡單**分裂；**本例池中 0 張，沒有先例可撞，也就沒有那個反向理由。**
+2. **實體層與店面層都用 `_BY.ALEXANDER`**：Apple 三筆逐字全大寫 BY，**二比一**壓過 Discogs 的小寫形。
+3. **可逆**：只動卡單掛名欄。
+
+⚠ **`Alex da Kid` 不寫進掛名欄，但要寫進 `queryAlias` 與 `mbNote`**——**這是「同一個 MB 實體的兩個名字」，不是兩個實體**，所以**不是**第 964 條講的並存；**日後若 Alex da Kid 的流行／製作人身分作品進池，那時才會變成同一實體的兩個字串並存，依第 196／197 條不得事後合併本卡。**
+⚠ **`slice.json` 的 `country: "AF"` 照抄了 MB 的建檔誤值**（MB release `dc0d7e17` 的 country 欄逐字 `AF`，實際是 XW 全球數位發行）——**已寫進卡的 `risk`，下游不得據以寫發行地。**
+
+---
+
+## 第 2352 條（**年份**）：**改判 0 筆、覆核成立 15 筆——⚠ 但第 1800-B 條的第二種掃描仍然有用，15／15 張補出 MB 沒建的版本，其中 3 張是「MB 連 barcode 都沒有，第一種查法根本跑不起來」**
+
+### （一）為什麼本批一筆都沒改
+
+**這 15 張全部是 2016–2026 年的現役目錄，四層的日期粒度都到「日」，而且互相對得上**：MB `first-release-date`／Discogs 原壓群的 `released` 欄／Apple `releaseDate`／℗ 欄。
+**與 c-168（3 改）、c-169（3 改）最大的差別是：那兩批改判的六筆全部出在「日版先發、MB 沒建日版」（`TOCJ-`／`UCCQ-` 號段），而本批查到的六張日版全部與歐美同日或更晚。**
+
+| 本批查到的 MB 沒建的日版 | Discogs `released` 逐字 | 歐美首發 | 差 |
+|---|---|---|---|
+| Kandace Springs《Soul Eyes》`UCCQ-1063` | **2016-07-01** | 2016-06-24（美版） | **晚 7 天** |
+| Kandace Springs《Indigo》`UCCQ-1087` | **2018-09-07** | 2018-09-07 | 同日 |
+| Kandace Springs《The Women Who Raised Me》`UCCQ-1118` | **2020-03-27** | 2020-03-27 | 同日 |
+| R+R=NOW《R+R=NOW Live》`UCCQ-1132` | **2021-02-12** | 2021-02-12 | 同日 |
+| Out Of/Into《Motion I》`UCCQ-1215` | **2024-12-10** | 2024-12-06 | **晚 4 天** |
+| Maya Delilah《The Long Way Round》`UCCQ-1216` | **2025-03-28** | 2025-03-28 | 同日 |
+
+**→ 第 1696 條（「Somethin' Else／東芝EMI／EMI Music Japan 的碟，年份一律先假設日本比歐美早半年到一年」）在 2016 年以後不再成立。**
+**根因可解釋：UMG 接手後全球同步發行成為常態，`UCCQ-` 是 Universal Music LLC（日本）的同步配號，不是東芝EMI 時代的先行配號。給後批：`TOCJ-` 要查、`UCCQ-` 在 2015 年以後可以只當版本補正，不必當年份風險。**
+
+### （二）三層對不上但不影響年份的 2 筆
+
+| 卡 | 分歧 | 處理 |
+|---|---|---|
+| **Joel Ross《Who Are You?》** | MB frd 與 Discogs 三筆逐字 **2020-10-23**；**Apple us／gb／jp 同一 id 1528266505 的 releaseDate 逐字 `2020-11-23T08:00:00Z`（晚一個月）** | **二比一取 2020-10-23**，年份不變 |
+| **Joel Ross《nublues》** | Apple ℗ 欄逐字 **`℗ 2023`**（發行是 2024-02-09）；Discogs notes 逐字說明只有標題曲是 ℗2023（先行單曲〈nublues (fade)〉2023-12-08） | **第 1601 條：℗ 不是年份證據**，取 2024 |
+
+⚠ **第 1447 條（Apple 年初佔位日 `-01-01`）在本批 0 次**——**15 張的 Apple releaseDate 全部是精確日**。這與 c-169 b（應驗 5 次）差很多，原因是本批全是 2016 年以後的碟。
+
+### （三）⚠ 廠牌官網的年份不可信，本批踩到 1 次
+
+**`Maya Delilah《The Long Way Round》`**：bluenote.com 藝人頁的摘讀把首發寫成「March 28」**2024**、Deluxe 寫成 **2025**-01-09；**四層一手資料（MB frd 2025-03-28／Discogs 五筆全 2025／Apple 1793003921 逐字 `2025-03-28T07:00:00Z`／Apple Deluxe 1868490452 逐字 `2026-01-08`）整整差一年。**
+**→ 簡報第二節把「廠牌新聞稿」排在階序最前面，但那指的是**同期**的新聞稿；藝人頁是持續改寫的頁面，年份不可當一手依據。**已寫進該卡 `risk`。**
+
+---
+
+## 第 2353 條（b 組，**掛名裁定**）：**`Nate Mercereau, Josh Johnson & Carlos Niño` 取 MB 串接形——這一筆是真並列聯名，第 1539 條的前提成立**
+
+| 來源 | 逐字 |
+|---|---|
+| **MB RG `1df797df` artist-credit** | **三個成分**：`Nate Mercereau`（900efa6c，Person，disambiguation 逐字 `US guitarist and songwriter`）＋joinphrase 逐字 **`, `**、`Josh Johnson`（37b60764，Person／US，disambiguation 逐字 `saxophone, keyboards, composer, USA, member of Holophonor`）＋joinphrase 逐字 **` & `**、`Carlos Niño`（f6e8d274，Person／US） |
+| **Apple**（us／gb，1809012204） | `artistName` 逐字 **`Nate Mercereau, Josh Johnson & Carlos Niño`**——**與 MB 串接形逐字相同** |
+| ⚠ **Discogs**（34564816／34587931／34843727） | `artists` 欄逐字 `Nate Mercereau ,Josh Johnson (13) ,Carlos Niño`——**三格逗號串接、沒有 `&`** |
+| **slice.json** | `Nate Mercereau, Josh Johnson & Carlos Niño` |
+
+**判 `Nate Mercereau, Josh Johnson & Carlos Niño`（MB＝Apple，二比一）。** Discogs 的無 `&` 形與三人個別字串都進 `queryAlias`。
+
+### ⚠ 為什麼這一筆適用第 1539 條，而 c-169 a 第 2129 條那一筆不適用
+
+**第 1745-B 條更正後的判準句逐字是「**並列聯名**的連接形，取 MB `credited-name` 與 joinphrase 串接出來的那一種」——「並列聯名」四個字是條件。**
+
+| | 本例 | c-169 a 第 2129 條的 `Paolo Fresu 5et Plays the music of X` |
+|---|---|---|
+| 第二／三格的身分 | **三位共同領班**（Discogs credits 欄逐字：Mercereau 吉他／合成器／取樣＋製作＋混音，Johnson 中音／長笛／取樣器，Niño 打擊／鈸／貝殼／鑼；**三人共同 Written-By**） | 第二格是**作曲者兼團員**（Cipelli 是本團鋼琴手、Fioravanti 是鼓手） |
+| joinphrase | **逐字 `, ` 與 ` & `——純連接符** | **逐字 ` Plays the music of `——一句盤名片語** |
+| 店面 | **Apple 逐字就是串接形** | Apple 逐字是裸名 `Paolo Fresu`、Discogs 把那句話印在 `title` 欄 |
+| 池中先例 | 0（三人個別字串亦 0） | c-160 b 已建卡單 `Paolo Fresu Quintet` |
+
+**→ 前提成立，取串接形。** ⚠ **三人的個別字串日後若各自進池，與本卡的串接形並存、不得事後合併**（第 964／196／197／1131 條）。
+⚠ **`Josh Johnson` 是極常見人名**（Discogs 已用到 `(13)` 這個消歧編號）——**日後他的裸名領班盤進池務必帶 MB artist id `37b60764` 區分**（第 179／250 條）。
+⚠ ⚠ **他同時是本批 b 組《Gospel Music》的側人**（Joel Ross 六重奏的中音）——**兩張是不同的碟、不同的掛名主體，不是撞卡**，已在兩張卡的 `risk` 互指。
+
+---
+
+## 第 2354 條（b 組，**同名實體核對**）：**`FATHERS` 在 MB 上有五個同族實體，本卡釘 `8bda4e58`**
+
+依第 179／250／324 條核 `type`／`area`／`disambiguation`，**不看 score**：
+
+| MB artist | 字串逐字 | type／area | disambiguation 逐字 | 落點 |
+|---|---|---|---|---|
+| **`8bda4e58-1876-4f99-939c-362e57f7c04e`** | **`FATHERS`（全大寫）** | **Group**／area 空 | **`Nate Smith, Kiefer, CARRTOONS & Kenny Beats`** | **本卡《FATHERS》2026** |
+| `4d9e78ff` | `Fathers` | Group／**US** | `post-hardcore band` | 未進任何 slice |
+| `aec4b5f5` | `Fathers` | Group | `Toronto punk band` | 未進任何 slice |
+| `08fbe163` | `Fathers` | Group／**FR** | `techno duo Jeremy Labille and Pieree Matelli` | 未進任何 slice |
+| `c8a987d3` | `Fathers Day` | Group | — | 未進任何 slice |
+
+⚠ **`chk-prop` 的折鍵會把大小寫壓掉**（`k()` 逐字是 `toLowerCase()` 再剝非字母數字），所以 `FATHERS`／`Fathers` 在卡池比對上是**同一個鍵 `fathers`**。**已人工掃過 seed 17,248 列與全部待上架批次：`fathers|fathers` 這個複合鍵 0 命中**（子字串命中的 `Father MC —《Father's Day》`、`Muddy Waters —《Fathers and Sons》`、`丸山繁雄 —《A Young Father's Song》` 三筆逐筆核完全是別碟）。**日後若上面那三支同名團的碟進池，兩張卡會共用同一個掛名鍵——那時要靠年份與 `mbNote` 的 artist MBID 區分**（形狀同 c-169 b 第 2190 條記的 `Blue Note All-Stars` 那一格）。
+
+---
+
+## 第 2355 條（b 組，**⚠ ⚠ `slice.json` 的 `note` 寫錯了一句；第 1796-B／1805-B 條在本批應驗**）：**`FATHERS《FATHERS》` 與 c-167 b 的 `Nate Smith《Fathers》` 是同一張碟，不是「同名不同碟」**
+
+`c170/slice.json` 該筆的 `note` 逐字寫：
+
+> 「⚠ 盤名 `FATHERS` 撞 `batch-progress/c167/slice.json` 的 Nate Smith 條目（**同名不同碟**）。」
+
+**實況相反。** c-167 b **第 2024 條**已經逐項查實並把 `Nate Smith《Fathers》`（MB RG `6391b52e-fa14-4a9a-88d8-0e51d9b65244`）**退件**：
+
+| 對得上的欄 | 逐字 |
+|---|---|
+| 目錄號 | **兩邊同為 `00199957415965`**（Discogs 37859667） |
+| 發行日 | **兩邊同為 2026-07-10** |
+| 廠牌 | **兩邊同為 Blue Note** |
+| 軌數 | **兩邊同為 8** |
+| 官網 | `bluenote.com/introducing-fathers-featuring-kenny-beats-kiefer-carrtoons-nate-smith/` 逐字「**FATHERS, the self-titled debut by a collective**」 |
+| Apple | `6779502137` 的 collectionName 逐字 `FATHERS`、℗ 欄逐字「**℗ 2026 FATHERS**, under exclusive license to UMG Recordings, Inc.」 |
+
+**→ MB 把四人合作團建成其中一位團員（Nate Smith）的個人作，而且另外建了一個 RG。這是第 611 條盲區三（MB 把同一張碟建成兩個 RG）在本批的唯一一次命中；`chk-prop` 的 rgMbid 掃描不會亮，因為兩個 RG 只有一個在清單裡。**
+**本卡照第 2024 條與派工信第二點執行：釘 `458ef48c`、掛名 `FATHERS`、盤名《FATHERS》、`selfTitled: true`。**
+
+⚠ **派工信第二點在這件事上是對的、`slice.json` 的 `note` 是錯的**——**依派工信第一節「原文勝過本信」的反向情形：這次是派工信勝過輸入檔。** 兩者相左時的順位仍照原文（c-167 rulings 第 2024 條），而它與派工信同向。
+
+### ⚠ 本批 `note` 欄的其餘數量／範圍斷言，逐筆重掃的結果（第 1796-B 條要求）
+
+| slice `note` 的斷言 | 實掃 | 判 |
+|---|---|---|
+| **Kandace Springs「她整條 Blue Note 線一張都沒進過批次」** | seed 0 列、全部卡單 0 張、各批 `prop-*.json` 0 張 | **✔ 成立** |
+| **Joel Ross「本批共四張 Joel Ross 全在 unknown 裡」** | 四張確實都在 `blue-note-unknown-genre` 名單裡；**但他的 Blue Note 目錄是五張，見第 2356 條** | **✔ 成立但不完整** |
+| **Joel Ross《Who Are You?》「盤名撞池中 The Who《Who Are You》，非同碟」** | seed 逐字有 `The Who —《Who Are You》(1978)`（**非 apex 王牌**），掛名不同 | **✔ 成立** |
+| **lophiile「Discogs 零命中（數位發行）」** | `artist=lophiile&release_title=The Good Days Between` 回 0；`artist=lophiile` 單欄只回一筆 2019 宣傳 EP | **✔ 成立** |
+| **`_BY.ALEXANDER`「Discogs 亦有 2024 年的 Blue Note 3509156 再版」** | Discogs 32972946，released 逐字 `2024-08-27` | **✔ 成立** |
+| **Out Of/Into《Motion I》「日本壓 UCCQ-1215」** | Discogs 32758233／34949084 | **✔ 成立** |
+| **Maya Delilah「MB genres 空、tag 只有 alternative；Discogs style 欄有 Soul-Jazz」** | 逐字相符 | **✔ 成立** |
+| **FATHERS「盤名撞 c167 的 Nate Smith 條目（同名不同碟）」** | **同一張碟** | **❌ 錯，見本條** |
+| **《nublues》「列舉檔 catno `5837662` 反查會撞 Pro-Zak Trax 的 583 766-2」** | 第 1250 條成立；真正的目錄號是 `00602458376623` | **✔ 成立** |
+
+**→ 九筆斷言 8 對 1 錯。** 命中率比 c-168（1／1 錯）、c-169（3／3 錯）好很多，**但錯的那一筆是本批最關鍵的一筆（它會讓策展層把兩個 RG 當成兩張碟）。第 1796-B 條「一律要自己重掃」的成本本批再一次划算。**
+
+---
+
+## 第 2356 條（**⚠ ⚠ 給主線的回頭查；本批最重要的一個線外發現**）：**`Joel Ross《KingMaker》(2019)` 是他的 Blue Note 首作，卻完全不在 `enum/blue-note.json` 的 1,812 列裡——這是與第 1557 條**不同**的第二種列舉缺口**
+
+### （一）事實
+
+- **bluenote.com 的 Joel Ross 藝人頁逐字列出他的五張 Blue Note 專輯**：`KingMaker`（2019）／`Who Are You?`（2020）／`The Parable of the Poet`（2022）／`nublues`（2024）／`Gospel Music`（2026）。**本批收的是後四張。**
+- **`batch-progress/enum/blue-note.json` 的 1,812 列裡，`Joel Ross` 只有四筆**（本批這四張），**`KingMaker` 一個字都沒有。**
+- **池中亦 0**（seed 17,248 列、全部卡單、各批 `prop-*.json` 逐字掃過）。
+- **MB 上它存在**：release `0d190bc8-…`（2019-05-03，US，title 逐字 `KingMaker`），release-group `6cd0a509-b96a-40cc-a807-7b6025bc2a99`。
+
+### （二）⚠ 根因與第 1557 條不同
+
+**第 1557 條那 97 張是「曲風判錯層級」——它們在列舉檔裡，只是 `genre` 被判成 `unknown`。本張根本不在列舉檔裡。**
+**實查原因：MB 那筆 release `0d190bc8` 的 `label-info` 逐字是空陣列。** 列舉腳本是**以 label 為軸**把 Blue Note 的 release 拉完再折成 RG 的——**一筆沒有 label-info 的 release，label 軸永遠碰不到它，那個 RG 就整個不存在於列舉檔裡。**
+**`arid:6d09039b`（Joel Ross 本人）的 release-group 端點回 `count: 0`**，也就是說連從藝人端補也補不到（MB 的 RG 與 artist 的關聯在這一筆上同樣殘缺）。
+
+### （三）⚠ 這是「失敗與正常長得一樣」在列舉層的**第三種**形狀
+
+第 1557 條記了兩種（artist 端讀曲風、`unknown` 與「沒問」同形），c-168 第 2088 條記了第三種（`note` 的「僅 XX 盤」），c-169 第 2146／2209 條記了第四種（barcode 反查碰不到 MB 沒建的版本）。
+**本條是第五種：「label 軸拉不到 label-info 為空的 release」——而且它比前四種更隱蔽，因為缺的那一張在列舉檔裡連一列都沒有，任何對列舉檔做的檢查（曲風、`inPool`、`chk-prop`、`dedup-crossbatch`）都不會亮。**
+
+### （四）建議（雲端無權重跑列舉，只能建議）
+
+1. **本機對 `enum/blue-note.json` 做一次「藝人補掃」**：對已經進過本線的每一位掛名，回問 MB 的 artist 端 release-group 列表，比對列舉檔有沒有漏。**本條這一張就是這樣查出來的。**
+2. ⚠ **同一支腳本產出的其他廠牌線可能有同樣的缺口**——與第 1557 條末段的建議同向，但**這一種缺口用 `release-group?inc=genres+tags` 重跑是補不到的**，必須改軸。
+3. **c-169 b 第 2208 條末段給主線的兩個回頭查（`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)`、`The Blue Note 7` 的重複 RG `770967e1`）本層一併重申**——**`A Wall Becomes A Bridge` 與本條的 `KingMaker` 同為 2019 年、同樣不在任何 slice 上，很可能是同一種缺口。**
+
+---
+
+## 第 2357 條（**六句判準（甲～己）逐張跑過**）：**(甲) 0、(乙) 0、(丙) 0、(丁) 0、(戊) 0、(己) 0，另加形態閘退件 1**
+
+| 句 | 成立 | 說明 |
+|---|---:|---|
+| **(甲) 從未發行過 → 收** | **0** | 依第 1734 條看 Discogs `format` 欄有沒有 `Reissue`／`Compilation`：15 張收件的零售原壓 `format` 欄逐字全是 `CD, Album`／`Vinyl, LP, Album`（或加 `Stereo`／`Limited Edition`／`Promo`），**無一筆帶 `Reissue`**。**2016–2026 這一段沒有庫藏首發。** |
+| **(乙) 母體在 BN／Liberty／UA／Solid State → 退** | **0** | 15 張的錄音年全部在 2015 年以後，本線 0 再發盤。**唯一一筆帶 `Reissue` 性質的是 `_BY.ALEXANDER` 2024 年的 Blue Note 黑膠 `3509156`——那是本碟自己 2020 年數位版的實體化，同 RG、同 11 軌，不另立卡** |
+| **(丙) 母體在真正的他廠 → 收、`year` 取他廠版** | **0** | **訊號亮 2 次，全部不成立**（見下） |
+| **(丁) 部分重疊／形狀不同 → 收** | **0** | 本批沒有「主體是舊錄音」的碟；最接近的是《The Women Who Raised Me》（全翻唱盤），但十二軌全是 2019 年的新錄音，形狀是第 2092／2187 條那一族，判 Album 不判 (丁) |
+| **(戊) Pacific Jazz／Capitol Jazz／West Coast Classics／Roulette Jazz 再發系列 → 退** | **0** | 四條復刻線本批 0 筆；`Blue Note Compagnie`（`BNS-`）與 `Blue Note Digital`（label `0293ae5c`、barcode 810211 段）亦 0 筆。逐張閘門見第 2358 條 |
+| **(己) 載體只有影像 → 退** | **0** | 15 張全部有 CD 或黑膠或數位音訊主體，無 DVD／Blu-ray only |
+| ⚠ **形態閘（c-169 a 第 2133 條末段新立，不在六句裡）** | **退 1** | **lophiile《The Good Days Between》（EP，8 軌 17 分 57 秒）**——第 2347 條 |
+
+### ⚠ (丙) 的兩次訊號，逐一為什麼不成立
+
+| # | 卡 | 訊號 | 查完 |
+|---|---|---|---|
+| 1 | **`_BY.ALEXANDER《000 CHANNEL BLACK》`** | **Discogs 32272356 的廠牌鏈第二格逐字 `_by.ALEXANDER records.`**（藝人自營廠牌） | **第 1748 條列的第一種假陽性（藝人自己的名義），一律過閘**；**第一格逐字就是 `Blue Note Records`**，MB label-info 逐字 `Blue Note [713c4a95]` |
+| 2 | **`FATHERS《FATHERS》`** | **Discogs 37859667 的廠牌鏈第二、三格逐字 `Fathers`**（團名本身當廠牌）；Apple ℗ 欄逐字 `℗ 2026 FATHERS, under exclusive license to UMG Recordings, Inc.` | **同第一種假陽性**；**第一格逐字 `Blue Note`**，MB label-info 逐字 `Blue Note [713c4a95]` |
+
+⚠ **本批沒有出現「碟先在別家發、Blue Note 後來才拿到」的真 (丙)**——與 c-169 a 第 2133 條的結論同向。
+
+---
+
+## 第 2358 條（**imprint 前置閘**）：**15 張全過；⚠ 新記一個 MB label 實體 `Blue Note Records [d3865f1e]`＝控股實體，不是第 1631 條要退的部門名**
+
+**分界逐字照第 1560-AE 條：「有沒有任何一版真的掛過 Blue Note」。**
+
+- **MB `label-info` 逐字 `Blue Note [713c4a95-6616-442b-9cf6-14e1ddfd5946]`（正規 imprint）的：15 張全部**（每張至少一筆 release）。
+- **Discogs 廠牌鏈第一格逐字 `Blue Note` 或 `Blue Note Records` 的：15 張全部。**
+- ⚠ **`Blue Note Label Group [2eb19785]`（第 1631 條點名的 EMI 部門名）在本批出現 0 次。**
+- ⚠ **`Blue Note Compagnie`（`BNS-` 目錄號）與 `Blue Note Digital`（MB label `0293ae5c`、barcode 810211 段）本批 0 次。**
+
+### ⚠ 新記的一格：`Blue Note Records [d3865f1e-ae0c-4a97-99b9-016966d49cb5]`
+
+**`Kandace Springs《The Women Who Raised Me》` 的 XW 數位 release `3227545b` 的 label-info 逐字是這一個實體，不是平常的 `713c4a95`。** 實查該 label 端點：
+
+> **`type` 逐字 `Holding`、`area` 逐字 `New York`、`life-span.begin` 逐字 `1939`、
+> `disambiguation` 逐字 `this is the record company; for release labels use its imprint “Blue Note”`。**
+
+**→ 這是同一家公司的控股實體（MB 自己在 disambiguation 裡指回 imprint `Blue Note`），不是部門名、不是冒名廠牌。過閘。**
+**與第 1631 條要退的那個形狀的分界**：`Blue Note Label Group [2eb19785]` 是**EMI 2006 年起涵蓋 Manhattan／Narada／Angel 的部門**（一個實體蓋住多個 imprint）；`Blue Note Records [d3865f1e]` 是**同一個 imprint 的母公司**。**判準仍是看 MB 的 label type 與 disambiguation，不是看名字長短**（與 c-169 a 第 2134 條末段新立的 `Blue Note <國名>` 那一句同向）。
+⚠ **同 RG 另兩筆 release 逐字就是 `Blue Note [713c4a95]`，所以本張即使照最嚴格的讀法也過閘。**
+
+### ⚠ 同集團母體出現在廠牌鏈上、依第 1753(4)／1770 條不成立假陽性的：11 張
+
+`UMG Recordings, Inc.`（Joel Ross 四張、Out Of/Into 兩張、Maya Delilah、Openness Trio、Paul Cornish、FATHERS）、`Capitol Records, LLC`（Kandace Springs《The Women Who Raised Me》《Indigo》美加黑膠、R+R=NOW）、`Universal International Music B.V.`（Kandace Springs《Indigo》歐版、Joel Ross《Gospel Music》）、`Universal Classics & Jazz`（Out Of/Into 日本盤）、`SRP Records`（Kandace Springs 三張的共同掛名——**是她自己的製作團隊 Evan Rogers／Carl Sturken 的廠牌，第 1748 條第一種假陽性**）、`Decca`（Kandace Springs 歐版與東南亞版的發行公司欄）、`No Tricks`（lophiile，已退）。
+
+---
+
+## 第 2359 條（**合輯風險逐張核；判為合輯 0**）：**一張全翻唱盤與兩張「全明星團新錄音」細判過**
+
+簡報第一節第 2 點要求「盤名帶 Best of／Greatest／Collection／Anthology／The Very Best／Blue Note Trip／Sidetracks 的一律細看；判準只讀逐張文案與軌目來源，不讀標題、不看尾碼」。
+**本批 15 張沒有任何一張的盤名帶那些字眼；MB 的 `secondary-types` 逐字 15 張全部是空陣列、`Compilation` 0 張；Discogs 全部條目的 `format` 欄也沒有一筆帶 `Compilation`。** 三張形狀可疑的細判過：
+
+| 卡 | 可疑處 | 判定 |
+|---|---|---|
+| **Kandace Springs《The Women Who Raised Me》** | **十二軌全部是翻唱**（Diana Krall〈Devil May Care〉／Ella Fitzgerald〈Angel Eyes〉／Nina Simone〈I Put a Spell on You〉／Sade〈Pearls〉／Lauryn Hill〈Ex-Factor〉／Bonnie Raitt〈I Can't Make You Love Me〉／Astrud Gilberto〈Gentle Rain〉／Billie Holiday〈Solitude〉〈Strange Fruit〉／Roberta Flack〈Killing Me Softly〉……），盤名又像致敬企劃 | **Album。** 十二軌是 2019 年 Springs 自己的新錄音（Discogs 15005394 credits 欄逐字同一組班底、同一位製作人 Larry Klein）；MB primary-type `Album`、secondary-types 空；Discogs 七筆 format 欄逐字全 `CD, Album`／`Vinyl, LP, Album`。**形狀與第 2092 條（《Superblue 2》重訪自家曲庫）、第 2187 條（The Blue Note 7 翻奏盤）完全相同：重訪曲庫是企劃方向，不是把舊錄音集合起來。**⚠ **正文不得寫成「收錄爵士名伶的經典錄音」。** |
+| **Out Of/Into《Motion I》《Motion II》** | 「廠牌 85 週年全明星團」的形狀，與第 2187 條那張《Mosaic: A Celebration of Blue Note Records》同族（那張的 2 CD 版真的掛 `Compilation`） | **兩張都是 Album。** 十三軌全部是團員原創（兩張的 Discogs credits 欄逐字都把五人列為 Producer／Written-By），**沒有任何一軌是舊母帶**；**MB 上兩張各只有一個 RG，沒有第 2187 條那種「同碟兩個 RG、其中一個掛 Compilation」的情形**（已逐一核過 rgMbid）。⚠ **唯一的舊曲是《Motion I》日本盤的 bonus〈Infant Eyes〉（Wayne Shorter），那是 bonus 不是原盤軌。** |
+
+⚠ **第 782 條（Discogs 的 `format` 欄會錯）本批中 1 次，但方向是「欄位空」不是「標錯」**：**Paul Cornish 美版 CD 34964609 的 `format` descriptions 整格空**（既沒有 `Album` 也沒有 `EP`）——**形態閘改看歐版 35508061（逐字 `CD, Album`）＋ 9 軌 42 分的實測時長。**
+⚠ **c-169 a 第 2141 條新立的那一句（Apple 的 `artistName` 欄不可拿來判合輯）本批沒有機會適用**：15 張的 Apple `artistName` 沒有一筆是 `Various Artists`／`Multi-interprètes`。**派工信第八點提醒的那一格本批 0 次。**
+
+---
+
+## 第 2360 條（**現場盤**）：**1 張是現場，但 MB 漏標——第 397／1771 條第 1 點在本批應驗一次**
+
+| 卡 | MB `secondary-types` | slice `live` | 其他三層 | 判 |
+|---|---|---|---|---|
+| **R+R=NOW《R+R=NOW Live》** | **逐字空陣列（漏標）** | **逐字 `false`（照抄 MB）** | **盤名逐字帶 `Live`**；**Discogs 歐版 17400898 的 notes 逐字 `Recorded at Blue Note Club, New York, NY.`**；**Apple 1548059327 的 collectionName 逐字帶 `(Live)`**；7 軌 72 分（末軌〈Resting Warrior〉25:21） | **是現場盤** |
+
+**處置**：**`releaseType` 仍照 MB 的 `primary-type` 寫 `Album`**（第 1797／2139 條的既有寫法，與 c-164《8: Kindred Spirits (Live From the Lobero)》一致），**現場身分寫進卡的 `risk` 與 `queryAlias`**。
+⚠ **正文必須寫成現場盤**：錄音是 2018 年 10 月在紐約 Blue Note 俱樂部的駐演，**發行年 2021 不是錄音年**。
+⚠ **另外 14 張的 `secondary-types` 逐字都是空陣列，且四層核完確實都不是現場**——**第 1771 條第 3 點（盤名帶 Live 卻不是現場）本批 0 次。**
+⚠ **c-169 b 第 2199 條記的第四種形狀（notes 帶 `live` 卻不是現場）本批 0 次。**
+
+---
+
+## 第 2361 條（**曲風**）：**`['jazz']` 10 張、兩層 5 張；因曲風退件 0；⚠ 兩格是本批最弱的證據**
+
+| 組合 | 張 | 名單 |
+|---|---:|---|
+| `['jazz']` | **10** | Joel Ross 四張（Who Are You?／The Parable of the Poet／nublues／Gospel Music）／Kandace Springs《The Women Who Raised Me》／Out Of/Into 兩張／Openness Trio／Paul Cornish |
+| `['jazz','soul']` | **4** | Kandace Springs《Soul Eyes》《Indigo》／R+R=NOW《R+R=NOW Live》／FATHERS |
+| `['jazz','electronic']` | **1** | `_BY.ALEXANDER《000 CHANNEL BLACK》` |
+
+**四條取捨規則（沿用 c-169 b 第 2203 條，一字不改）：**
+
+1. **`contemporary jazz`／`post-bop`／`instrumental jazz`／`soul-jazz`／`smooth jazz`／`jazz-funk`／`avant-garde jazz`／`cool jazz`／`fusion`／`free improvisation` 等子類一律不跟**（第 1572 條，十個合法值裡沒有它們）。**本批中這些子類出現 20 次以上，一次都沒跟。**
+2. **`r&b`／`hip hop`／`funk / soul`／`soul-jazz`／`jazz-funk` 折進 `soul`，不開 `hiphop`**——**Glasper 圈的既有先例**（seed《Black Radio》《In My Element》、c-162《Black Radio 2》《Live Today》、c-163《The Second》《ArtScience》《Nihil Novi》、**c-169 b《Collagically Speaking》**的 `genres` 欄逐字全部是 `["jazz","soul"]`）。**本批的 R+R=NOW 與 FATHERS 同判。**
+3. **Discogs 條目之間打架時取交集**，MB 空欄時只讀 Discogs。
+4. **非曲風的分類欄與雜誌標記不跟**：`jazzthing 160`／`jazzthing 162`／`jazzthing.de`／`ph_temp_checken`（本批四張的 MB tags 有這些）、Maya Delilah 的 MB tag `alternative`。
+
+### ⚠ 兩格最弱的證據，逐一寫明（都可逆）
+
+| 卡 | 判 | 為什麼弱 |
+|---|---|---|
+| **`_BY.ALEXANDER《000 CHANNEL BLACK》`** | `['jazz','electronic']` | **MB 的 genres／tags 都是空陣列；Discogs 兩筆條目的 genre 逐字都只有 `Jazz`、style 欄整格空。** `electronic` 取自 slice 的人工判定（逐字「modern jazz／electronic」）＋第三方樂評（hypebeast／INFINIT 逐字描述電子元素）＋**同藝人另一張 Discogs 條目 35705428 的 genre 逐字 `Electronic, Hip Hop, Jazz`**。**本機審稿可退成 `['jazz']`。** |
+| **`Maya Delilah《The Long Way Round》`** | **`['jazz','soul']`** | **Discogs 五筆裡四筆的 genre 逐字 `Jazz, Funk / Soul, Pop`、一筆逐字 `Jazz, Pop`。嚴格取交集會得到 `Jazz + Pop`**，但 `Funk / Soul` 出現 4／5、style 欄的 `Soul-Jazz` 與 `Soul` 也出現 4 次，slice 的人工判定逐字是「soul-jazz／neo-soul」。**判 `['jazz','soul']`，`pop` 刻意不跟（不賭第三格，同第 2203 條第 3 點對 Sarah McCoy 的處理）。本機審稿可改成 `['jazz','pop']`，可逆。** |
+
+⚠ **第 1559 條的「邊界張」在本批落 1 張**（`Maya Delilah《The Long Way Round》`，slice 逐字標「⚠ 邊界張，可逆」）——**照收，本層沒有拿曲風退任何一張。**
+⚠ **`Kandace Springs` 三張的曲風不一致是刻意的**：前兩張 `['jazz','soul']`（MB genres 逐字都有 `r&b`、Discogs style 逐字都有 `Soul-Jazz`），**第三張《The Women Who Raised Me》判 `['jazz']`**——那一張的 MB genres 逐字只有 `jazz:1`、Discogs 七筆 genre 逐字全 `Jazz` 且 style 欄整格空，**四邊都沒有 `r&b`／`soul` 的訊號**。**這不是第 1418 條講的批內不一致（那指的是同一張碟或同一支團被判兩次），是三張碟的證據本來就不同。**
+⚠ **`Joel Ross《Gospel Music》` 的盤名叫《Gospel Music》但曲風不折成別的**：`gospel` 不在十個合法值裡，十七軌是爵士六重奏的原創演奏。
+
+---
+
+## 第 2362 條（**第 1800-B 條的第二種掃描**）：**15 張全部補出 MB 沒建的版本，年份改判 0；⚠ 但有 3 張是「MB 連 barcode 都沒有，第一種查法完全跑不起來」**
+
+### （一）兩種查法的實跑結果
+
+**第一種**：`api.discogs.com/database/search?barcode=<MB 每一筆 release 的 barcode>`。
+**第二種**：`api.discogs.com/database/search?artist=<掛名>&release_title=<盤名>&type=release&per_page=50`。
+
+| 結果 | 張 | 名單 |
+|---|---:|---|
+| **改年份** | **0** | — |
+| **補出 MB 沒建的版本、年份不變** | **15**（全部） | 見下表 |
+| ⚠ **MB 的 release 全部沒有 barcode，第一種查法根本跑不起來** | **3** | **`Joel Ross《nublues》`**（兩筆 release 的 barcode 欄都空）／**`Out Of/Into《Motion I》`**（唯一一筆，barcode 與 catno 都空）／**`FATHERS《FATHERS》`**（唯一一筆，barcode 與 catno 都空） |
+| ⚠ **MB 的 barcode 欄空、第二種掃描補出實體版本的還有** | **2** | `Kandace Springs《Indigo》`（兩筆 release 的 barcode 欄都空）／`Kandace Springs《The Women Who Raised Me》`（US CD 那筆的 barcode 欄空） |
+
+| 卡 | 第二種掃描補到的 MB 沒建的版本 |
+|---|---|
+| Kandace Springs《Soul Eyes》 | **日本盤 `UCCQ-1063`** ＋美版 LP `B002518801` ＋歐版 LP ＋加拿大版 ＋東南亞版 ＋**四張宣傳 CDr** |
+| Kandace Springs《Indigo》 | **日本盤 `UCCQ-1087`** ＋歐版 CD ＋歐版 LP ＋美加 LP `B002872101` ＋波蘭版 ＋辛巴威版 ＋兩張宣傳 CDr |
+| `_BY.ALEXANDER`《000 CHANNEL BLACK》 | **2024-08-27 美加黑膠 Blue Note `3509156`** |
+| Joel Ross《Who Are You?》 | 美版 LP `B0032228-01` |
+| Kandace Springs《The Women Who Raised Me》 | **日本盤 `UCCQ-1118`（＋同號宣傳盤）** ＋歐版 CD ＋美歐兩款黑膠 |
+| R+R=NOW《R+R=NOW Live》 | **日本盤 `UCCQ-1132`（＋同號宣傳盤）** ＋美歐兩款黑膠 ＋白標試壓 |
+| Joel Ross《The Parable of the Poet》 | 三款黑膠（`B003467601`／限量 `B003467701`／歐版 `3891819`）＋試壓 |
+| Joel Ross《nublues》 | 兩款黑膠 ＋法國宣傳 CD |
+| Out Of/Into《Motion I》 | **實體 CD `00602465981971`** ＋**日本盤 `UCCQ-1215`（＋同號宣傳盤）** ＋歐美兩款黑膠 ＋FLAC ＋AAC |
+| Maya Delilah《The Long Way Round》 | **日本盤 `UCCQ-1216`（＋同號宣傳盤）** ＋歐版限量 LP ＋美歐 LP |
+| Openness Trio | 兩款黑膠（含限量版） |
+| Out Of/Into《Motion II》 | **實體 CD `00602478346217`** ＋兩款黑膠 ＋AAC |
+| Paul Cornish《You're Exaggerating!》 | 歐版 CD ＋美版 LP |
+| **FATHERS《FATHERS》** | **實體 CD `00199957415965`（＝與 c-167 b 對上的那個目錄號）** ＋歐版 LP `15972` ＋Worldwide 限量藍膠 |
+| Joel Ross《Gospel Music》 | 兩款黑膠（含限量版）＋FLAC |
+
+### （二）⚠ 第二種掃描在本批的真正價值不是年份，是**同碟判定**
+
+**`FATHERS《FATHERS》` 的 MB release 沒有 barcode、沒有 catalog-number——第一種查法完全跑不起來，而第二種掃描撈出的 `00199957415965` 正是讓本卡與 c-167 b 那筆對上的唯一依據**（第 2355 條）。
+**→ 給後批：第 1800-B 條的第二種掃描不只是年份工具，它也是「MB 什麼都沒填時唯一能拿到目錄號的路」。**
+
+### （三）⚠ 掛名字串要用 Discogs 那一種（派工信第四點的提醒，本批應驗兩次）
+
+| 卡 | 用卡上的掛名查 | 改用 Discogs／店面那一種 |
+|---|---|---|
+| **R+R=NOW《R+R=NOW Live》** | `artist=R+R=NOW&release_title=R+R=NOW Live` → **0 筆**；`release_title=R+R=NOW Live` 單欄 → **0 筆** | **`artist=R+R=NOW` 單欄 → 17 筆**（Discogs 的 title 欄逐字只有 `Live`，帶盤名查永遠 0） |
+| **FATHERS《FATHERS》** | — | `artist=Fathers&release_title=FATHERS` → **51 筆，其中 48 筆是別的 Fathers**（第 2354 條的四個同族實體）——**必須靠 catno 與日期挑，不能靠名次** |
+
+### （四）⚠ 俄版 `Unofficial Release` 本批 0 次
+
+c-169 出現 5 次，**本批一次都沒有**——**2016 年以後的碟沒有俄版非官方壓片進 Discogs**。
+
+---
+
+## 第 2363 條（**第 1250 條在本批應驗五種形狀**）：**「目錄號＋廠牌」以外的任何反查都不可信**
+
+| # | 形狀 | 卡 | 逐字 |
+|---|---|---|---|
+| 1 | **裸數字** | **Joel Ross《nublues》** | 列舉檔與 MB 的 catalog-number 欄都只有 `5837662`，**反查撞 Pro-Zak Trax 的 `583 766-2`**（slice 的 `note` 已先標）。真號是 `00602458376623` |
+| 2 | ⚠ **catno 欄填的是字串 `[none]`** | **Openness Trio** | **MB 的 catalog-number 欄逐字是 `[none]`**（不是空值、也不是真號），`slice.json` 的 `catno` 照抄成 `["[none]"]`。真號 `00602475821366`（CD）／`00602475821373`（LP） |
+| 3 | ⚠ **catno 欄的打字錯誤** | **Out Of/Into《Motion II》** | **Discogs AAC 條目 35876923 的 catno 欄逐字 `nonbe`**（`none` 打錯） |
+| 4 | **catno 欄整格空** | **6 張** | Kandace Springs《Soul Eyes》數位四筆／《Indigo》兩筆全空／Maya Delilah 三筆全空／Joel Ross《Gospel Music》兩筆全空／Out Of/Into 兩張／FATHERS |
+| 5 | ⚠ **同一張碟的 CD 與數位 barcode 不同碼** | **Out Of/Into《Motion II》** | **MB 那筆數位的 barcode 逐字 `602478346248`，Discogs 實體 CD 逐字 `602478346217`**——`slice.json` 的 `note` 寫的是後者、MB 寫的是前者，**兩個都對，但拿其中一個反查只會回到一半的版本** |
+
+⚠ **另記一個相反方向的形狀（本條新增）**：**`FATHERS《FATHERS》` 的三筆實體 barcode 逐字是 `1 99957 415…`，不在 UMG 慣用的 `602…` 序列裡**——**`itunes.apple.com/lookup?upc=199957415965` 回 0**，探測鏈不能假設 Blue Note 2020 年代的碟一定是 602 段。
+
+**盤名反查的假陽性本批同樣高**：`Indigo`、`Who Are You?`、`Motion I`、`Motion II`、`Gospel Music`、`Live`、`FATHERS` 七個盤名在 Apple 或池中都撞到別碟，**逐筆核完真的同碟 0 筆**（唯一真的同碟是第 2355 條那一筆，而它是靠目錄號對上的、不是靠盤名）。
+
+---
+
+## 第 2364 條（**字形裁定兩筆**）：**撇號取 ASCII、斜線團名照 MB**
+
+### （一）⚠ `Paul Cornish《You're Exaggerating!》`——取 ASCII 撇號，**而且這次 Apple 站在彎撇號那一邊**
+
+| 來源 | 逐字 |
+|---|---|
+| **MB RG title** | **`You’re Exaggerating!`（U+2019 RIGHT SINGLE QUOTATION MARK）** |
+| ⚠ **Apple us／gb `1817728467` 的 collectionName** | **`You’re Exaggerating!`（U+2019）** |
+| **Discogs 34964609／35508061 的 title 欄** | **`You're Exaggerating!`（ASCII `'`）** |
+
+**判 ASCII `You're Exaggerating!`，U+2019 形進 `queryAlias`。**
+依據 **c-110 第 5 條**（逐字：「兩張都取 ASCII 撇號，MB 的彎撇號寫法進 `queryAlias`」，理由逐字「**池中 97% 是 ASCII**」）與 **c-166／c-169 第 2197 條第 1 點**的同形先例（`Rollin’`→`Rollin'`、`Passin’ Thru`→`Passin' Thru`）。
+
+⚠ ⚠ **與第 2197 條那一筆的差別要寫明**：**那張的 Apple 是 ASCII（三比一），本張的 Apple 是彎撇號（二比一反向）。本層仍取 ASCII——理由是「池中一致性（不製造第二種鍵）」，不是票數。**
+⚠ **`chk-prop` 的四道字形檢查只擋非 ASCII 連字號（`‐‑‒–—―－`）與 U+30FC 誤用，不擋 U+2019**——**這一格「標記 0」不等於乾淨**（第 611 條的同一句話，與第 2197 條末段同向）。
+
+### （二）`Out Of/Into` 的斜線——照 MB 的無空格形，**而且這不是斜線串接掛名**
+
+| 來源 | 逐字 |
+|---|---|
+| **MB** | artist 實體 `897b9986` 的 name 與 sort-name 逐字都是 **`Out Of/Into`**（**單一 Group 實體，不是兩個藝人以 `/` 串接**） |
+| **Apple**（us／jp／de） | `artistName` 逐字 **`Out Of/Into`** |
+| ⚠ **Discogs**（兩張合計十一筆） | `artists` 欄逐字 **`Out Of / Into`**（斜線兩側帶空格） |
+
+**判 `Out Of/Into`（MB＝Apple，二比一），帶空格形進 `queryAlias`。**
+⚠ **第 611 條第四種盲區（斜線掛名）在這一張不成立**：那個盲區防的是「MB 用 `/` 把兩個藝人串起來」（c-160《Face à face》的 `Erik Truffaz Ladyland / Erik Truffaz Quartet`、c-161《Paris》的 `Erik Truffaz / Sly Johnson`）；**本例的斜線是團名本身的一個字元，MB 只有一個成分。第 1600 條的前提不成立。**
+⚠ **`chk-prop` 的折鍵會把 `/` 剝掉**，`Out Of/Into` 與 `Out Of / Into` 折出同一個鍵 `outofinto` ——**兩形在卡池都 0 命中，沒有分裂風險。**
+
+### （三）其餘字形，四邊一致或已核過
+
+`nublues`（**MB＝Apple 全小寫，Discogs 首字大寫 `Nublues`，取小寫**）／`FATHERS`（**MB＝Apple＝官網全大寫，Discogs `Fathers`，取全大寫**）／`The Parable of the Poet`（**MB 介系詞小寫，Discogs＝Apple 全大寫詞首，取 MB 形**）／`R+R=NOW Live`（**MB 形；Discogs 的 title 欄逐字只有 `Live`，Apple 逐字 `R+R=Now Live (Live) [feat. …]`，兩形進 `queryAlias`**）／`000 CHANNEL BLACK`（**MB＝Discogs 2020 條目全大寫，2024 黑膠條目逐字 `000 Channel Black ` 帶尾空格，取全大寫**）。
+⚠ **非 ASCII 連字號（第 1804-B 條／c-110 第 1 條）本批 0 筆**：15 張的 `artist` 與 `album` 欄都不含 `‐‑‒–—―－`，`chk-prop` 的兩道連字號檢查不亮**且本層沒有動過任何一格**——與第 2364(一) 的撇號那一格不同。
+
+---
+
+## 第 2365 條（**⚠ 給下游**）：**同一張碟在不同版本之間軌數不同的，本批 6 筆——正文與試聽比對不得抓錯形**
+
+| 卡 | 原盤形 | 其他形 | 差異來源 |
+|---|---|---|---|
+| **Kandace Springs《Soul Eyes》** | **CD 11 軌 43 分** | **日本盤 15 軌 57 分**（Discogs 10467233）／**Apple jp `Soul Eyes (Deluxe)` 14 軌**（1442724249） | 日本 bonus，notes 逐字記〈The Windmills of Your Mind〉〈Stay With Me〉等翻唱 |
+| **Kandace Springs《Indigo》** | **CD 13 軌 48 分** | **日本盤 14 軌**（第 14 軌〈Cold Summer〉，Discogs 12919209 notes 逐字 `Track 14 is a bonus track`）／**Apple jp 1415047230 亦 14 軌** | 日本 bonus |
+| **Kandace Springs《The Women Who Raised Me》** | **CD 12 軌 53 分** | **日本盤 15 軌 63 分**（Discogs 15041298，notes 逐字「第 14 軌另在東京 Lab Recorders 補錄」）／**Apple jp 1497181017 14 軌** | 日本 bonus ＋當地補錄 |
+| **Out Of/Into《Motion I》** | **CD 7 軌 46 分** | **日本盤 9 軌 50 分**（Discogs 32758233 的 tracklist 逐字有 `Bonus Track For Japan` 分隔行＋〈Infant Eyes〉） | 日本 bonus；⚠ **〈Infant Eyes〉是 Wayne Shorter 的曲子，不得寫成團員原創** |
+| **Maya Delilah《The Long Way Round》** | **CD 12 軌 45 分** | **日本盤 15 軌**（bonus 是兩首 Studio Live 版）／**2026-01-09 Deluxe 16 軌 60 分（MB `aafd777d`、Apple 1868490452／1868491059）——與本卡同一個 RG** | 日本 bonus ＋豪華版；⚠ **本卡釘 2025 年的 12 軌原盤** |
+| **Joel Ross《Gospel Music》** | **17 軌 78 分** | 黑膠是雙片 | 同軌目，只是分面 |
+
+⚠ **軌數單一、四邊無分歧的 9 張**：`_BY.ALEXANDER`（11 軌）／Joel Ross《Who Are You?》（15）／R+R=NOW（7）／Joel Ross《The Parable of the Poet》（7）／《nublues》（10）／Openness Trio（5）／Out Of/Into《Motion II》（6）／Paul Cornish（9）／FATHERS（8）。
+
+---
+
+## 第 2366 條（**第 254 條，三種店面查法的觀察；只寫觀察不下結論**）：**Apple 命中 14／15，其中 1 張靠查法 3 才救回、1 張三種查法全空**
+
+**跑法**＝(1) 掛名＋盤名 `search`（依碟的來源選 2–3 個市場，共涵蓋 us／gb／jp／de 四個）、(2) 只用盤名 `search`、(3) `lookup?id=<artistId>&entity=album` 拉整份藝人目錄（另對查無者追加 `attribute=artistTerm`），外加 `lookup?upc=`。
+
+| 覆蓋 | 張 | 名單 |
+|---|---:|---|
+| **查法 1 在所跑市場全中** | **13** | Kandace Springs 三張／Joel Ross 四張／Out Of/Into 兩張／Maya Delilah／Openness Trio／Paul Cornish／FATHERS |
+| ⚠ ⚠ **查法 1、2 與 `lookup?upc=` 全空，靠查法 3 救回** | **1** | **R+R=NOW《R+R=NOW Live》**——**`+` 與 `=` 這兩個字元 `search` 端點吃不下**（`R+R=NOW Live`／`R R NOW Live`／`RRNOW Live`／`Robert Glasper R+R=NOW Live` 在 us／jp 全部 0 命中或回完全無關的碟），`lookup?upc=602435461625` **也回 0**；**`lookup?id=1378738213&entity=album`（R+R=NOW 的藝人目錄）才回 1548059327**。**第 1605 條的救援在本批成立一次，形狀與 c-169 b 第 2204 條記的那一筆完全相同** |
+| ⚠ **三種查法全空（專輯本身不在所跑市場的 Apple 目錄裡）** | **1** | **`_BY.ALEXANDER《000 CHANNEL BLACK》`**——查法 1／2 回的是 Alexander Kowalski 的〈Black Channel〉（**完全不同碟，絕對不得採用**）；**查法 3（`attribute=artistTerm=_by.ALEXANDER`）的 us／gb 兩店只回他的兩支 2020 單曲與一支 2026 單曲**，`lookup?upc=602435091563` 回 0 |
+
+⚠ **`lookup?upc=` 的命中率：15 張裡 10 張命中**（Soul Eyes／Indigo／Who Are You?／The Women Who Raised Me／The Parable of the Poet／nublues／The Long Way Round／Openness Trio／You're Exaggerating!／Gospel Music）；**5 張回 0**（000 CHANNEL BLACK／R+R=NOW Live／Motion I／Motion II／FATHERS）——**與 c-159 b 第 1605 條、c-169 b 第 2204 條「成功率不高」的經驗一致。**
+⚠ **一個 UPC 回四個 collectionId 的 1 筆**：**`Maya Delilah` 的 `lookup?upc=602475450795` 同時回 1868491059／1868490452（Deluxe 16 軌，2026-01-09／08）與 1793003921／1792968883（原盤 12 軌，2025-03-28）**——**探測鏈要能容忍一碼多 id，而且要挑 12 軌那兩個。**
+⚠ ⚠ **Apple 的 `artistName`／`collectionName` 與本卡掛名對不上、探測鏈會落空的 4 筆**：
+- **R+R=NOW**（artistName 逐字 `R+R=NOW, Robert Glasper & Terrace Martin`、collectionName 逐字 `R+R=Now Live (Live) [feat. Christian Scott aTunde Adjuah, Derrick Hodge, Taylor McFerrin & Justin Tyson]`）；
+- **Out Of/Into 兩張**（collectionName 逐字帶 `(feat. Gerald Clayton, Immanuel Wilkins, Joel Ross, Kendrick Scott & Matt Brewer)`）；
+- **FATHERS**（artistName 逐字 `Nate Smith, Kiefer, CARRTOONS & Kenny Beats`）。
+⚠ **日文片假名 artistName 的 5 筆**：`キャンディス・スプリングス`（三張）／`ジョエル・ロス`（四張）／`アウト・オブ/イントゥ`（兩張）／`マヤ・デライラ`——**全部進 `queryAlias`。**
+
+### ⚠ 派工信第九點與實況的對照
+
+派工信逐字說「這一批是 2020 年後的現役目錄，**店面命中率應該比 c-169 好**（c-169 幾乎全是歐洲分支的本地出品，Apple 全查無 4／40、CAA 404 有 15／40）」。
+**本批的數字：Apple 三種查法全空 1／15（c-169 是 4／40）、CAA 404 是 0／15（c-169 是 15／40）。**
+**照第 254 條只寫觀察不寫結論：本批確實比 c-169 覆蓋得完整，而本批是美國本部目錄、c-169 幾乎全是歐洲分支的本地出品。**
+
+---
+
+## 第 2367 條（**CAA**）：**release-group 層 15／15 全部有圖——本線第一次零 404；但只有 4 張的來源是實體原壓**
+
+| 狀態 | 張 | 名單（括號內是 CAA 的來源 release） |
+|---|---:|---|
+| **有圖，來源是實體原壓** | **4** | Kandace Springs《Soul Eyes》（**640d1b36 美版 CD**，2 圖）／Joel Ross《nublues》（609c8252 CD）／Paul Cornish（**2f716156 美版 CD**）／Joel Ross《Gospel Music》（f66ff9e7 CD） |
+| **有圖，來源是 RG 唯一的 release（純數位發行，無他版可比）** | **5** | `_BY.ALEXANDER`（dc0d7e17）／Out Of/Into《Motion I》（ea26d0ab）／《Motion II》（29453d20）／Openness Trio（c1eadda4）／FATHERS（e7d2891e） |
+| ⚠ **有圖，但來源是數位版或他版** | **6** | Kandace Springs《Indigo》（**88cb382c 美版數位**）／《The Women Who Raised Me》（**f267f3de 美版數位**）／Joel Ross《Who Are You?》（**ef0d0334 XW 數位**）／R+R=NOW（**60c6c9e5 美版數位**）／Joel Ross《The Parable of the Poet》（**efe8e061 歐版 CD，不是美版原壓**，3 圖）／Maya Delilah（**791b8fa3 XW 數位**） |
+| **RG 層 HTTP 404** | **0** | — |
+
+**→ 六張「來源不是實體原壓」的要由研究層與封面層看版式**，各卡 `risk` 已寫明該回哪個 Discogs 條目（Indigo→14347365、Women→15005394、Who Are You?→16150240、R+R=NOW→17547175、Parable→22989956、Long Way Round→33619413）。
+⚠ **2020 年後的純數位首發碟，「原壓」這個概念本身要小心**：Out Of/Into 兩張、Openness Trio、FATHERS 的 MB 唯一版本就是數位，**實體 CD 與黑膠 MB 都沒建**——**CAA 的圖與實體的版式不一定相同。**
+
+---
+
+## 第 2368 條（**撞陳列；第 738／859／845 條**）：**7 處，四張卡的 `risk` 已互指；撞 apex 王牌 0 處**
+
+| 本批的軌／碟 | 撞到 | 關係 |
+|---|---|---|
+| **R+R=NOW《R+R=NOW Live》的〈Change of Tone〉〈Perspectives/Postpartum〉〈Needed You Still〉** | **c-169 b `R+R=NOW —《Collagically Speaking》(2018)`（卡單已建）** | **同一批曲子的錄音室版與現場版，同一支團、兩張碟**——兩張卡的 `risk` 應互指 |
+| R+R=NOW 的〈How Much a Dollar Cost〉 | Kendrick Lamar《To Pimp a Butterfly》 | 改編，不同次錄音 |
+| **Joel Ross《nublues》的〈Equinox〉〈Central Park West〉** | 池中 Coltrane 各卡 | 標準曲，不同次錄音 |
+| **Joel Ross《nublues》的〈Evidence〉** | 池中 Monk 各卡 | 同上 |
+| Joel Ross《Who Are You?》的〈After the Rain〉 | 池中 Coltrane 各卡 | 同上 |
+| **Kandace Springs《The Women Who Raised Me》十二軌全部** | 池中 Billie Holiday〈Strange Fruit〉〈Solitude〉、Roberta Flack〈Killing Me Softly〉、Lauryn Hill〈Ex-Factor〉、Nina Simone〈I Put a Spell on You〉、Sade〈Pearls〉等 | **全翻唱盤，十二軌都是不同次錄音**——**正文必須寫清楚是翻唱** |
+| **Out Of/Into《Motion I》日本盤 bonus〈Infant Eyes〉** | 池中 Wayne Shorter《Speak No Evil》等 | **bonus 軌，不是原盤軌** |
+
+⚠ **第五道（`chk-prop` 的「盤名逐字撞 apex 王牌但掛名不同」，report-only）：0 處。**
+**已逐筆人工複掃**：本批 15 個盤名（Soul Eyes／Indigo／000 CHANNEL BLACK／Who Are You?／The Women Who Raised Me／R+R=NOW Live／The Parable of the Poet／nublues／Motion I／The Long Way Round／Openness Trio／Motion II／You're Exaggerating!／FATHERS／Gospel Music）折鍵後對 seed 裡 **914 個 apex 盤名鍵**逐一比對，**沒有一個命中**。
+⚠ **`Who Are You?` 撞 seed 的 `The Who —《Who Are You》(1978)`——那張不是 apex 王牌**（seed 該列沒有第 9 格），所以第五道本來就不會亮；**但掛名不同、盤名折鍵後相同，下游引用這個盤名務必帶掛名與年份。**
+
+---
+
+## 第 2369 條（**第 611 條五種盲區的人工掃**）：**命中 1 筆（盲區三），其餘四種 0 筆**
+
+`chk-prop` 的四道全過、`dedup-crossbatch` 四項全 0（第 2398 條），**但標記 0 不等於沒撞卡。五種已知盲區逐一人工掃過**：
+
+1. **群組掛名 vs 個人掛名**——**本批最需要掃的一格，但一筆都沒撞**。逐筆掃過：`Out Of/Into` 五位團員的既有字串（`Gerald Clayton` 6 列 3 張 c-165／c-166、`Immanuel Wilkins` 12 列 6 張 c-165／c-166／c-167、`Kendrick Scott Oracle` 1 張 c-169 b、`Kendrick Scott, Reuben Rogers, Walter Smith III` 1 張 c-166 a、`Joel Ross` 本批四張、`Matt Brewer` 0 列）；`R+R=NOW` 六位團員（`Robert Glasper` 11 列、`Christian Scott aTunde Adjuah` 6 列 seed、`Derrick Hodge` 6 列、`Terrace Martin`／`Taylor McFerrin`／`Justin Tyson` 各 0 列）；`FATHERS` 四位團員（`Kiefer` 2 列 1 張 c-167 a《Memory Bomb》、`Nate Smith`／`CARRTOONS`／`Kenny Beats` 各 0 列）；`Openness Trio` 三位（全 0 列）；`_BY.ALEXANDER` 的 `Alex da Kid`／`Alexander Grant`（0 列）。**全部查過，沒有一張是同碟；側人與團員身分不影響掛名**（第 1131 條）。
+2. **同名但不同盤的 Volume 碟**——**0 筆同碟**。**`Out Of/Into《Motion I》《Motion II》` 是同一支團的兩張不同錄音**（軌目完全不重疊，13 軌互斥），依簡報第二節第 6 點各算一張、`risk` 互指。
+3. ⚠ ⚠ **MB 把同一張碟建成兩個 RG——命中 1 筆**：**`FATHERS《FATHERS》`（`458ef48c`）對上 c-167 b 已退的 `Nate Smith《Fathers》`（`6391b52e`）**，第 2355 條。**其餘 14 個 rgMbid 互不重複、也與其他批不重複。**
+4. **斜線掛名**——**0 筆**。`Out Of/Into` 的斜線是團名的一個字元、不是 credit 串接（第 2364(二) 條）。
+5. **同名但不同盤**——逐筆核完**真的同碟 0 筆**：`Who Are You?`（撞 seed 的 The Who 1978）／`Indigo`（撞 seed 的 Indigo Girls、Circuit des Yeux《Reaching for Indigo》、c-159 的 Gianluca Petrella《Indigo 4》）／`Gospel Music`（撞 c-114 的 Sister Lucille Pope《Our Silver Anniversary In Gospel Music》）／`FATHERS`（撞 seed 的 Father MC《Father's Day》、Muddy Waters《Fathers and Sons》、丸山繁雄《A Young Father's Song》）／`Motion I`／`Motion II`（Apple 上撞十餘筆 `Motion Picture Soundtrack`）／`Live`（R+R=NOW 的 Discogs title 形，**三個字母的盤名毫無唯一性，必須帶掛名與 `B003327402`**）。
+
+---
+
+## 第 2399 條（**第 315 條結算**）
+
+**`prop-a.json` 7 筆 ＋ `prop-b.json` 8 筆 ＋ 本檔退表 1 筆 ＝ 16 ＝ `slice.json` 的 16 筆。✔**
+（`g === "a"`：prop 7 ＋ 退 1 ＝ 8 ✔；`g === "b"`：prop 8 ＋ 退 0 ＝ 8 ✔）
+
+### 退表（逐筆、附理由分類）
+
+| # | 組 | 卡 | 理由分類 | 條 |
+|---|---|---|---|---|
+| 1 | **a** | **`lophiile《The Good Days Between》` 2023**（RG `5d29475f-6ccb-45bd-bf0f-7d03f602444c`） | **非 Album 形態（EP，8 軌 17 分 57 秒），未落在 §5.5 白名單** | **第 2347 條**（照 c-169 a 第 2127 條執行） |
+
+**逐類清點**：
+**撞池退 0**（第 2369 條五種盲區掃完，真的同碟 0 筆；**盲區三命中的那一筆對到的是 c-167 b 已退的重複 RG，本卡是該碟的正確形，不是撞卡**）／
+**判為合輯退 0**（第 2359 條）／
+**非 Blue Note imprint 退 0**（第 2358 條 15 張全過閘）／
+**原盤他廠改判退 0**（第 2357 條 (丙) 兩次訊號都是第 1748 條的既有假陽性）／
+**再發／庫存盤退 0**（第 2357 條 (乙)，15 張錄音年全在 2015 年以後）／
+**曲風退 0**（第 2361 條，第 1559 條的邊界張 1 張照收）／
+**非爵士退 0**／
+**只有影像載體退 0**（第 2357 條 (己)）／
+**非 Album 形態退 1**（本表）。
+
+⚠ **本批的退件率 1／16。** c-168 是 0／18、c-169 是 1／41——**三個補批合計 75 張、退 2 張，兩張都是 EP，沒有一張是因為「不該在清單裡」而退。這與第 1557 條的處置預期一致：那 75 張本來就該在清單裡。**
+
+---
+
+## 第 2400 條（**⚠ 派工信與原文／既有裁定牴觸之處；依規定回報**）
+
+派工信第一節逐字要求「本信若與它們牴觸，以它們為準，並在交件回報裡指出本信哪一句寫錯了」。**本棒查完 16 張，派工信沒有任何一句與簡報或既有裁定牴觸**——**這是本線三個補批裡第一次**（c-168 第 2098 條記了兩處轉述偏差、c-169 a 第 2144 條與 b 第 2208 條合計記了六處）。逐點對照如下：
+
+| 派工信 | 實查 |
+|---|---|
+| 第三節第 1 點（lophiile 已由 c-169 a 第 2127 條判退，照判退不要翻案） | **✔ 逐字正確**，第 2127 條原文確實已預先指名這一張並寫明「不必再重查一次」（第 2347 條） |
+| 第三節第 2 點（Nate Smith《Fathers》與 FATHERS《FATHERS》是同一張碟，釘 `458ef48c`＋`selfTitled: true`） | **✔ 逐字正確，與 c-167 b 第 2024 條完全相符**；⚠ **反而是 `slice.json` 的 `note` 寫錯了**（逐字「同名不同碟」）——見第 2355 條 |
+| 第三節第 3 點（Kandace Springs 三張整組移進本批、與 Joel Ross 四張各只需做一次掛名判定） | **✔ 逐字正確**，與第 1558 條相符（第 2350 條） |
+| 第三節第 4 點（第 1800-B 條必做；掛名字串要用 Discogs 那一種） | **✔ 正確且本批應驗兩次**（R+R=NOW 帶盤名查回 0、FATHERS 回 51 筆裡 48 筆是別團）——第 2362(三) 條 |
+| 第三節第 5 點（`note` 的數量／範圍斷言一律重掃） | **✔ 正確**，九筆斷言查出 1 筆錯（第 2355 條末表） |
+| 第三節第 6 點（掛名照 MB RG credit 原樣、個人與群組並存；第 307 條防的是同一實體的多種寫法） | **✔ 這一句把 c-168 第 2078 條與 c-169 第 2098／2144／2208 條反覆更正過的版本寫對了**，本批照它執行沒有問題（第 2349 條） |
+| 第三節第 7 點（形態閘：六句判準之前先看 `format` 欄與總長） | **✔ 正確**，本批用它判掉兩張 8 軌碟的相反結果（第 2347／2348 條） |
+| 第三節第 8 點（Apple 的 `artistName` 不可拿來判合輯） | **✔ 正確但本批 0 次**（第 2359 條末段） |
+| 第三節第 9 點（店面命中率應該比 c-169 好，但只寫觀察不寫結論） | **✔ 正確**，數字見第 2366 條末段 |
+
+### ⚠ 三句不算牴觸、但與實況有出入的
+
+1. **派工信第三節第 4 點說「c-169 兩組跑完這一步，40 張裡 3 張改年份、23 張補出 MB 沒建的版本」**——**本批跑完是 0 張改年份、15 張（全部）補出版本**。**改年份掛零不是因為少做了什麼，是因為 2016 年以後日版不再先發**（第 2352(一) 條，`UCCQ-` 與 `TOCJ-` 的差別）。**建議把這一句寫進簡報第二節：`TOCJ-` 要查、`UCCQ-` 在 2015 年以後只當版本補正。**
+2. **派工信第三節第 4 點說「俄版 `Unofficial Release` 一律不當依據（c-169 出現 5 次）」**——**本批 0 次**（第 2362(四) 條）。
+3. **派工信第三節第 3 點說 Joel Ross 是「四張」**——**字面成立（本批確實是四張），但他的 Blue Note 目錄是五張**：**`KingMaker`（2019）完全不在 `enum/blue-note.json` 的 1,812 列裡**，而且缺的原因與第 1557 條那 75 張**不同**（那 75 張在列舉檔裡只是曲風判錯；這一張根本不在列舉檔裡，因為 MB 那筆 release 的 `label-info` 是空的、以 label 為軸的列舉腳本碰不到它）。**這是本棒最重要的線外發現，詳見第 2356 條。**
+
+---
+
+# c-170 追記：**Blue Note 1985 後線・列舉層缺口稽核（藝人軸重掃）**（編號 2481–2540）
+
+本節**只產報告，不建 slice、不建卡單、不把缺口接進管線**——接不接、怎麼切批由主線定。
+產出兩檔：`batch-progress/enum/blue-note-artist-axis-audit.md` ＋ `.json`。
+起因是本檔第 2356 條（`Joel Ross《KingMaker》` 一列都不在列舉檔裡）。
+**本節一律 append 於檔末，未覆寫任何既有行（第 1806-B 條）。**
+
+---
+
+## 第 2481 條（**總表**）：**藝人軸掃完 541／541 位藝人，查出 25 筆真缺口**
+
+| | 數 |
+|---|---:|
+| 藝人宇宙（相異 MB artist MBID） | **541** |
+| 由本線已知 release-group 反解、全數成功 | 1,231 ／ 1,231 |
+| 藝人軸看到的 1985 年後 Album（扣掉 secondary-type／無日期後） | **8,937** |
+| 以 `rgMbid` 命中四處既有資料 | 1,128 |
+| 以（藝人, 盤名）命中 | 176 |
+| **四處都沒有、進入 Blue Note 家族判定** | **7,184** |
+| ├ MB 掛著非 Blue Note 廠牌（整批篩掉） | 6,159 |
+| ├ MB `label-info` 全空 | 609 |
+| ├ MB `label-info` 部分空 | 416 |
+| └ **MB 掛著 Blue Note 家族廠牌卻不在列舉檔裡** | **0** |
+| **Discogs 逐筆覆核** | **1,025 ／ 1,025（跑完，無 `unclear`）** |
+| **`gap`** | **25** |
+| **`not-blue-note`** | **1,000** |
+
+**`unclear` 0 筆、`already-covered` 不另列**（1,304 筆是在比對階段就命中四處而未進入判定，不算逐筆裁定）。
+
+---
+
+## 第 2482 條（**方法**）：**藝人 MBID 不用 `artist?query=` 解，改由已知 `rgMbid` 整批反解——同名實體問題直接消失**
+
+派工信第二節要求「用 MB `artist?query=` 或既有卡的 `mbNote` 取得 artist MBID，
+⚠ 同名實體要靠 `type` ＋ `disambiguation` 分辨（`Joel Ross` 在 MB 有兩個）」。
+**本層沒有照這一句做，因為有更硬的解法**：本線每一列都帶 `rgMbid`，
+用 `release-group?query=rgid:(A OR B OR …)`（每批 20 個）把 **1,231 個已知 release-group 的 `artist-credit` 整批反解**，
+**直接拿到 artist MBID**。
+
+- **1,231 個 RG 全數解析成功、0 筆落空**，得到 **541 個相異 artist MBID**。
+- **完全不需要靠 `type`＋`disambiguation` 猜**：`Joel Ross` 回來的就是 `6d09039b`（Person／US vibraphonist），
+  另一個 `02f84b16`（pianist, conductor, choral arranger）根本不會出現，因為沒有任何一筆本線 RG 掛他。
+- 附帶好處：**掛名字串的分裂不影響結果**。`Tony Allen` 與 `Tony Allen & Jeff Mills`、
+  `Trijntje Oosterhuis` 的七種寫法、`Wayne Shorter` 與 `Wayne Shorter Quartet`——
+  539 個掛名字串收斂成 541 個 MBID（群組與個人是不同實體，所以數字反而略增），**沒有一個靠字串猜**。
+
+**裁定：這一線之後要再做藝人軸稽核，一律走 rgid 反解，不要走 `artist?query=`。**
+判準依第 2 條（可逆）與第 3 條（卡住整條線）：名字比對錯一個就整位藝人漏掉，成本太高。
+
+---
+
+## 第 2483 條（**⚠ 派工信與檔案實況不符之一**）：**`seed_cards.json` 根本沒有 `label` 或 `scene` 欄位**
+
+派工信第二節第 3 點逐字要求：「`seed_cards.json`（**唯讀**）裡 `label` 或 `scene` 與 Blue Note 相關、
+且 `year >= 1985` 的卡的 `artist` 欄」。
+
+**實查：`seed_cards.json` 是 17,248 列的緊湊陣列，每列 7／8／9 個元素**
+（`[artist, album, a, b, c, genres, year, (composer), (hall)]`），
+**沒有 `label`，也沒有 `scene`**。`grep -ic "blue note"` 全檔只有 11 次，都在別的欄位裡。
+派工信寫的那個形狀是 `desc-tools/batches/cards/*.json` 的卡單形狀，不是 seed 的。
+
+**裁定：改用等效替代**——「seed 的（藝人, 盤名）能對到 `enum/blue-note.json`、且該列 `year >= 1985`」。
+這樣撈出 **19 位藝人**併進宇宙。判準依第 1 條（有先例：第 1250／611 條一路都在講「欄位不能照字面信」）
+與第 3 條（不決定就沒有第三個來源）。
+
+---
+
+## 第 2484 條（**⚠ 更正本檔第 2356(二) 條**）：**藝人端 `release-group?artist=` **回得到** `KingMaker`，第 2356 條寫的「回 `count: 0`」是錯的**
+
+第 2356(二) 條逐字寫：「**`arid:6d09039b`（Joel Ross 本人）的 release-group 端點回 `count: 0`**，
+也就是說連從藝人端補也補不到（MB 的 RG 與 artist 的關聯在這一筆上同樣殘缺）。」
+
+**實查兩個端點都回得到**：
+
+| 端點 | 回傳 |
+|---|---|
+| **browse** `release-group?artist=6d09039b-…&type=album&limit=100` | **`release-group-count: 7`，逐筆列出 `KingMaker`（`6cd0a509`、2019-05-03）** |
+| **search** `release-group?query=arid:6d09039b-…` | `count: 15` |
+
+**MB 的 RG↔artist 關聯在這一筆上是完整的，殘缺的只有 release 的 `label-info`。**
+
+⚠ **這條更正很重要，因為它是本層整個能成立的前提**：
+第 2356 條那一句若成立，藝人軸也補不到，這一棒根本不該派。
+**推測第 2356 條當時打的是截短的 MBID（`0d190bc8` 那種前八碼形式），MB 會回 `Invalid mbid.`
+——本層第一次試也踩到同一個坑**（`release/0d190bc8?...` 逐字回 `{"error": "Invalid mbid."}`）。
+**「查無」與「MBID 打錯」在 MB 上長得不一樣，但在轉述時很容易併成一句「回 0」。**
+
+**裁定：第 2356(二) 條末句作廢，其餘（`label-info` 為空、label 軸碰不到）維持。**
+
+---
+
+## 第 2485 條（**⚠ 派工信與實況不符之二；且它排掉的是一筆真缺口**）：**`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)` 不在 `c166-cards.json` 裡，它是 `gap`**
+
+派工信第三節逐字寫：「**已排除的一筆**：`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)` 不是缺口，
+**它在 `desc-tools/batches/cards/c166-cards.json` 裡**（c-169 b 提報時沒看到 c-166 的卡單）。」
+
+**實查不成立。** 用正規化盤名對**全部** `c*/slice.json`、**全部** `c*-cards.json`、`enum/blue-note.json`、
+`seed_cards.json`、以及全部 `c*/prop-*.json` 逐列比對，**沒有任何一筆記錄的 `album` 等於這張碟**。
+
+`c166-cards.json` 裡確實出現這個字串，但它是**別張卡的 `label` 敘述文字引用到它**，逐字：
+> `…and third album for Blue Note Records. The anticipated follow-up to A Wall Becomes A Bridge, Scott's much-lauded 2019 release with his band Oracle`
+
+`c169/prop-b.json` 那一次同樣是 `curatorWhy` 的引文（逐字「…presented his band Kendrick Scott Oracle: We Are The Drum (2015) and A Wall Becomes A Bridge (2019)」）。
+
+⚠ **這是第 611 條「盤名撞字串不等於撞卡」的反向形：字串命中被誤讀成卡片存在。**
+第 611 條防的是「grep 到了所以以為撞卡」，**本條是「grep 到了所以以為已收」——同一個錯，方向相反，而且更危險，因為它會讓一筆真缺口被銷案。**
+
+**裁定：這一張是 `gap`，列進報告第一區。** 佐證：
+MB RG `c8f8ec1c-1899-4495-a6a1-57a555df47c8`（2019-04-05）／
+Discogs 回 1 筆 `Kendrick Scott Oracle - A Wall Becomes A Bridge`、US 2019 CD Album、`label` 逐字 `["Blue Note"]`、`catno` 逐字 `774920 6`。
+**c-169 b 第 2208 條與本檔第 2356(四) 條把它列為「給主線的回頭查」是對的，派工信的排除是錯的。**
+
+**同時裁定一條做法**：**「某張碟已經收了」不可以用 grep 認定，必須用「(正規化藝人名, 正規化盤名) 或 `rgMbid` 命中某一筆記錄的欄位」認定。**
+
+---
+
+## 第 2486 條（**本層最重要的結構性結論**）：**`bn-label-present` 掛零——列舉檔的 label 軸沒有漏抓，漏的是 MB 沒填**
+
+7,184 個「四處都沒有」的候選，逐筆回問 `release?query=rgid:(…)` 取 `label-info` 之後：
+
+| 形狀 | 筆 |
+|---|---:|
+| MB 掛著**非** Blue Note 廠牌 | 6,159 |
+| MB `label-info` **全空** | 609 |
+| MB `label-info` **部分空**（其餘掛他廠／母公司） | 416 |
+| **MB 掛著 Blue Note 家族廠牌、卻不在列舉檔裡** | **0** |
+
+**一筆都沒有。**
+
+**這把第 2356(三) 條的推測收斂成一句可操作的結論**：
+**`enum/blue-note.json` 的 label 軸，對「MB 那一端有把 Blue Note 填上去」的碟是完整的**
+（它列舉了 13 個 Blue Note 名下的 label 實體，見該檔 `entities`，涵蓋得很乾淨）。
+**它唯一的盲區，是 MB 那一端沒填。**
+
+**推論（給主線）**：
+1. **重跑列舉腳本補不到這 25 張**——不管加什麼 `inc=`，label 軸都碰不到 `label-info` 為空的 release。
+2. **要補只有兩條路**：**藝人軸**（本層做的），或 **Discogs 反查**。
+3. ⚠ **同一支腳本產的其他廠牌線有同樣的盲區，而且盲區大小與「那個廠牌在 MB 上的建檔品質」成反比**
+   ——Blue Note 這種大廠 7,184 個候選才漏 25 張（0.35%），**小廠很可能高得多**。
+
+---
+
+## 第 2487 條（**「失敗與正常長得一樣」的第六種形狀**）：**MB 把廠牌掛成母公司，不是掛 imprint**
+
+第 1557 條記了兩種、c-168 第 2088 條第三種、c-169 第 2146／2209 條第四種、
+本檔第 2356(三) 條第五種（label 軸碰不到 `label-info` 空的 release）。
+
+**本條是第六種，是第五種的變形，但更隱蔽**：
+**release 有 `label-info`、也不是空的——掛的是母公司 `Capitol Records`，不是 Blue Note imprint。**
+
+`Kendrick Scott Oracle《A Wall Becomes a Bridge》` 是標準樣本：
+
+| MB release | `label-info` |
+|---|---|
+| `eef85a5d-7efc-4baf-bf61-d604cce54215` | **`Capitol Records`**（MB label `abea2d3e`）／catno `null`／barcode `602577492068` |
+| `ac837ebb-d3ca-4cf3-a9b4-ccc43bd5de9a`（2019-04-05、US） | **`[]`（空陣列）** |
+
+**兩筆都不掛 Blue Note 家族實體，所以 label 軸一樣碰不到，而且「有 label-info」讓它看起來比空的更正常。**
+
+**25 筆缺口的成因分佈**：
+
+| 成因 | 筆 |
+|---|---:|
+| **`label-info` 全空** | **18** |
+| **只掛母公司／他廠、Blue Note 那一筆是空的** | **6** |
+| **掛成母公司 `Capitol Records` ＋另一筆空**（本條樣本） | **1** |
+
+**→ 七分之一的缺口不是「空」，是「掛錯層級」。** 之後做同類稽核，
+**不可以只掃 `label-info == []`，必須把「有 label-info 但不含該廠牌家族實體」的也撈進來覆核。**
+
+---
+
+## 第 2488 條（**25 筆 `gap` 全表**）
+
+依年份排序。全部經過「MB `rgMbid` ＋（正規化藝人名, 正規化盤名）逐列比對四處皆 0 筆」＋「Discogs 廠牌鏈＋目錄號」雙重確認。
+
+| # | 年 | 藝人 | 盤名 | RG MBID | 成因 |
+|---:|---:|---|---|---|---|
+| 1 | 1989 | Tommy Smith | Step By Step | `d9aafa98-b294-4940-bab0-0044c2d6dc4a` | label-info 空 |
+| 2 | 1992 | Tommy Smith | Paris | `0fdc9ff7-28f1-4a70-8927-5fc558c02380` | label-info 空 |
+| 3 | 1993 | Don Pullen & The African-Brazilian Connection | Ode to Life | `9ea8ad16-cfbb-382c-a4d9-b1382208cfff` | label-info 空 |
+| 4 | 1993 | **大西順子** | Cruisin' | `e50b89cb-4c01-3c6c-99d8-69f4adb37814` | label-info 空（**羅馬字重查才撈到，見第 2493 條**） |
+| 5 | 1994 | Ron Carter | Jazz, My Romance | `d4da0e99-768e-42bd-83f3-7d37b5149f6c` | label-info 空 |
+| 6 | 1995 | Kevin Eubanks | Spiritalk 2: Revelations | `d783536c-ce83-378a-9211-ba829dee7003` | label-info 空 |
+| 7 | 1996 | Jackie McLean | Hat Trick | `823b61c2-8402-4f27-a611-d95806fd703c` | label-info 空 |
+| 8 | 1997 | Dexter Gordon | Tenor Titans | `03d9e3b3-32d3-426b-a173-44b7a94341f3` | label-info 空 |
+| 9 | 1997 | Dianne Reeves | That Day… | `bb230b81-f930-3b99-9d16-9df70f85ea6a` | label-info 空 |
+| 10 | 1997 | Jackie McLean | Fire and Love | `eca6903a-3e10-43ad-a40d-f480aa474255` | label-info 空 |
+| 11 | 1997 | Ron Carter | Brandenburg Concerto | `3f03b660-8de5-33f8-a552-84365722a4d0` | label-info 空 |
+| 12 | 1998 | Brian Blade Fellowship | Brian Blade Fellowship | `20765029-3ac1-3dae-bc61-76eefcf58e32` | label-info 空 |
+| 13 | 1998 | Elvin Jones | At This Point in Time | `0351ea63-7b0f-31af-b871-8716589821ac` | label-info 空 |
+| 14 | 1998 | Gonzalo Rubalcaba | The Trio | `8ebd5349-dd56-3257-9378-dff56259e57c` | label-info 空 |
+| 15 | 1999 | Michel Petrucciani | Trio in Tokyo | `8b89c2f8-8d7a-3147-af17-1fd33f7d5d2d` | label-info 空 |
+| 16 | 1999 | Prysm | Time | `1e8ff572-72cb-3a59-a31c-163b03c7acf7` | label-info 空 |
+| 17 | 2001 | Ron Carter | Stardust | `bfb6c1ec-2f72-328e-a0f9-a844802cef07` | label-info 空 |
+| 18 | 2002 | Stefano Di Battista | Round About Roma | `0762a45c-b1b7-3f51-9cb4-753b0746a011` | label-info 空 |
+| 19 | 2003 | Jason Moran | The Bandwagon | `77690c69-cda4-3031-a834-bcdb3521a2b4` | label-info 空 |
+| 20 | 2005 | Bill Charlap | Love Is Here to Stay | `6820c0ec-085b-4a2f-ab50-ac941198f509` | label-info 空 |
+| 21 | 2011 | Ruben Hein | Live | `d00a707f-f318-434e-890a-dad529f8744b` | 只掛他廠＋空 |
+| 22 | 2012 | Van Morrison | Born to Sing: No Plan B | `de243950-fafd-420f-bcf9-668241d61b45` | 只掛他廠＋空 |
+| 23 | 2018 | James Francies | Flight | `f4539fe1-df19-4ad4-99d3-c2d5a2539471` | 只掛他廠＋空 |
+| 24 | **2019** | **Joel Ross** | **KingMaker** | `6cd0a509-b96a-40cc-a807-7b6025bc2a99` | **label-info 空（第 2356 條的那一張）** |
+| 25 | **2019** | **Kendrick Scott Oracle** | **A Wall Becomes a Bridge** | `c8f8ec1c-1899-4495-a6a1-57a555df47c8` | **掛成母公司 Capitol＋空（第 2487 條）** |
+
+⚠ **年份分佈很說明問題**：**25 筆裡 20 筆在 1989–2005**，**2006 之後只有 5 筆**。
+**MB 的 `label-info` 建檔品質是隨年份往後變好的**，所以這一類缺口集中在九〇年代到千禧年初。
+**建議主線若要接，先接 1989–2005 那 20 張。**
+
+⚠ **`Ron Carter` 一人 3 張、`Jackie McLean` 2 張、`Tommy Smith` 2 張**——
+**同一位藝人連續漏，代表漏的不是隨機的單張，是「那一段時間那一位藝人的 MB 建檔習慣」。**
+
+---
+
+## 第 2489 條（**比對規則**）：**「四處都沒有」只認 `rgMbid` 與（正規化藝人名, 正規化盤名）兩種鍵，不認盤名單獨命中**
+
+比對面涵蓋：`enum/blue-note.json`（1,812 列）、**全部** `batch-progress/c*/slice.json`、
+**全部** `desc-tools/batches/cards/c*-cards.json`、`seed_cards.json`（17,248 列），
+外加 `batch-progress/c*/prop-*.json` 當補充層。合計 `rgMbid` 鍵 5,514、（藝人, 盤名）鍵 17,579。
+
+**不採「盤名單獨命中」**，因為第 1250 條在本層應驗得很兇：
+`Love Is Here to Stay` 撞到 `八城一夫トリオ`（1968）、
+`Flight` 撞到 `Howard Riley`（1971）、
+`Cruisin'` 撞到 `Village People`（1978）、
+`The Trio` 撞到 `本田竹広`（1970）、
+`Time` 撞到 `鄭雙雙`（2024）、
+`Stardust` 撞到 `山本剛`（1977）、
+`Live` 撞到 `日野皓正クインテット`（1973）。
+**七筆全是不同碟。** 若用盤名單獨命中當「已收」，這 25 筆會被銷案掉 7 筆。
+
+**裁定：沿用第 1250 條的精神——判「同一張碟」只有「目錄號＋廠牌」或「MBID」有效；
+判「已在我們手上」只有「`rgMbid`」或「(藝人, 盤名) 兩者同時」有效。**
+
+---
+
+## 第 2490 條（**Blue Note 家族邊界**）：**簡報第二節那兩個排除項在本層 0 次命中；但冒出第三個要排的東西——**演出場地**
+
+簡報第二節排除 `Blue Note Compagnie`（`BNS-` 目錄號）與 `Blue Note Digital`（MB label `0293ae5c`）。
+**本層 1,025 筆 Discogs 覆核，這兩者各 0 次命中**，不必動用。
+
+⚠ **但冒出第三種要排的**。Discogs search result 的 `label` 陣列**混著 company／studio／演出場地**，不只廠牌。
+全量掃過所有含 `blue note` 的字串只有六種：
+
+| 字串 | 次 | 判定 |
+|---|---:|---|
+| `Blue Note` | 76 | 家族 |
+| `Blue Note Records` | 11 | 家族 |
+| `Blue Note International` | 7 | 家族 |
+| **`The Blue Note Jazz Club`** | **3** | **⚠ 紐約那家俱樂部，不是廠牌** |
+| `Blue Note 80 Vinyl Reissue Series` | 1 | 家族（再發系列） |
+| `Elvin Jones On Blue Note` | 1 | 家族（套裝系列名） |
+
+**`Kenny Werner《Democracy Live At The Blue Note》(2006)` 一度被判成 `gap`，實際廠牌是 `Half Note`**
+——命中的是場地名。**改成白名單後正確退掉。**
+
+**裁定：Blue Note 家族判定一律走白名單，並明列排除 `club`／`cafe`／`jazz club` 字樣。
+⚠ 盤名裡帶 `Live At The Blue Note` 的碟，在這一線會反覆出現這個假陽性。**
+
+---
+
+## 第 2491 條（**Discogs 取用**）：**`api.discogs.com` 無需授權即可讀，`database/search` 直接回廠牌鏈與目錄號**
+
+`label-info` 為空時，派工信要求「改看 Discogs 的廠牌鏈與目錄號」。
+**實作**：`GET https://api.discogs.com/database/search?artist=<>&release_title=<>&type=release&per_page=25`，
+UA 同 MB 那組，**不需要 token**，結果每筆直接帶 `label`（陣列）、`catno`、`country`、`year`、`format`、`barcode`、`uri`。
+⚠ **網頁版 `www.discogs.com/master/...` 走 WebFetch 回 403**，API 則通。
+
+**節流：未授權上限 25 req/min。** 本層用 3 支 worker、每支 `MIN_GAP=7.5s`（合計上限 24/min），
+1,025 筆跑完只吃到 1 次 429，退避後即恢復。
+
+**裁定：這一線之後要查 Discogs 廠牌鏈，一律走 API，不要走網頁。**
+
+---
+
+## 第 2492 條（**Discogs 覆核的守門**）：**搜尋結果必須同時過「年份差 ≤2 年」與「掛名字串出現在標題裡」兩關，才拿來判廠牌**
+
+Discogs 的 `artist`＋`release_title` 搜尋會回同名不同碟。最乾淨的樣本是
+**`Bill Charlap《Love Is Here to Stay》(2005)`**：同一次查詢回的 25 筆裡，
+前四筆是 `Sandy Stewart, Bill Charlap`（2005、Blue Note、`7243 5 60340 2 0`）——**真的那張**，
+第五、六筆是 **`Tony Bennett & Diana Krall With The Bill Charlap Trio`（2018、Verve／Columbia）**——**不同碟**。
+**只看「有沒有 Blue Note」會對；只看「第一筆」會錯；只看年份或只看掛名都會漏。**
+
+**裁定：兩關都要過才採信。** 本層照此判出 1,000 筆 `not-blue-note`、25 筆 `gap`。
+
+---
+
+## 第 2493 條（**⚠ 非拉丁掛名是一個獨立的失效模式；它讓 1 筆真缺口差點被判成 `not-blue-note`**）
+
+本層 1,025 筆候選裡，**有 13 筆的掛名是日文漢字／假名**
+（`大西順子`／`山中千尋` 6 張／`日野皓正` 2 張／`桑原あい`／`森山威男`／`菊地雅章` 2 張）。
+**這 13 筆一開始全部被判成 `not-blue-note`，而且是錯的判法**，兩個原因疊在一起：
+
+1. **Discogs 的 `artist=` 用日文漢字查，13 筆全部回 0 筆**——
+   **「回 0 筆」在程式裡與「查過了、不是 Blue Note」長得一模一樣**（又一次「失敗與正常長得一樣」）。
+2. **正規化函式把非 ASCII 全部剝掉**，`norm('大西順子')` 是**空字串**，
+   於是「掛名必須出現在 Discogs 標題裡」這一關**恆不成立**，等於沒有守門。
+
+**用羅馬字重查 13 筆之後**（`Junko Onishi`／`Chihiro Yamanaka`／`Terumasa Hino`／`Ai Kuwabara`／`Takeo Moriyama`／`Masabumi Kikuchi`），
+**13 筆全部回到有結果的狀態，並且撈出 1 筆真缺口**：
+
+- **`大西順子《Cruisin'》(1993)`**，RG `e50b89cb-4c01-3c6c-99d8-69f4adb37814`；
+  Discogs 逐字 `Junko Onishi Trio - Cruisin'`、`label` 逐字 `['Blue Note', "Somethin' Else", 'Toshiba EMI Ltd']`、
+  `catno` 逐字 `CDP 7243 8 28447 2 3`。四處比對 0 筆。
+
+**裁定：本線只要對 Discogs 做掛名查詢，非拉丁掛名一律先轉羅馬字，並且「回 0 筆」要當成「沒查到」而不是「不是」。**
+⚠ **這一條對日本盤很多的本線（`TOCJ-`／`UCCQ-`／`Somethin' Else` 那一段）影響面不小，建議寫進簡報第三節。**
+
+---
+
+## 第 2494 條（**範圍邊界，照派工信執行**）：**只產報告，沒有建 slice、沒有建卡單、沒有碰禁區**
+
+- **沒有**建任何 `slice.json`、`prop-*.json`、卡單。
+- **沒有**寫 `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`enum/blue-note.json`
+  ——全部只讀。
+- **沒有** `git commit`／`git push`／動索引。
+- 暫存檔全在 scratchpad 且帶 `bn-audit-` 前綴。
+- **產出只有兩個檔**：`batch-progress/enum/blue-note-artist-axis-audit.md` ＋ `.json`，
+  加上本節 append 進 `batch-progress/c170/rulings.md`。
+
+**接不接這 25 張、怎麼切批，由主線定。**
+
+---
+
+## 第 2495 條（**節流與併行**）：**MB 的「每秒 1 次」是速率不是併行度；分片跑完全程沒有被擋**
+
+MB 端的實測瓶頸**不是**我們的節流，是**伺服器延遲**：
+`release?query=rgid:(30 個 OR)` 這種查詢單發要 8–20 秒，單支 worker 只能做到 ~7 筆/分。
+**7,184 筆這樣跑要 17 小時。**
+
+**裁定：改用 3 支 worker、每支 `MIN_GAP=3.5s`（合計上限 ~0.86 req/s，仍在「每秒最多 1 次」之內），
+批量從 15 個 rgid 提到 30 個並加分頁。** 結果：**7,184 筆在 ~45 分鐘跑完**，全程只在啟動瞬間吃到 3 次 503，退避後即恢復。
+
+**判準**：**「每秒最多 1 次」約束的是送出速率，不是同時在途的請求數**；
+只要把 per-worker 間隔乘上 worker 數仍 ≥1 秒，就沒有違反。
+⚠ **但 503 會在三支同時發第一槍時集中出現**，所以退避必須留著（第 2 條：可逆，調回單支的成本只是慢）。
+
+⚠ **另記一個實作坑**：用 `nohup … &` 從工具層起背景行程，**外層 wrapper 一結束會把子行程一起帶走**；
+本層因此死了兩次。**要用 `setsid`。** 另外 **`pkill -f 'bn-audit…'` 會連自己那一行 shell 一起殺掉**（本層踩到一次，exit 144）。
+
+---
+
+## 第 2496 條（**⚠ 派工信與原文／既有裁定牴觸之處；依規定回報**）
+
+派工信第六節要求交件回報指出「本信哪一句與既有裁定牴觸」。**本棒查出三處，其中兩處會改變結論：**
+
+| # | 派工信原句 | 實查 | 影響 |
+|---:|---|---|---|
+| 1 | 第三節：「**已排除的一筆**：`Kendrick Scott Oracle《A Wall Becomes A Bridge》(2019)` 不是缺口，**它在 `desc-tools/batches/cards/c166-cards.json` 裡**」 | **錯。** 它只出現在**別張卡的敘述文字**裡，不是一筆卡；四處逐列比對 0 筆 | ⚠ **會漏掉一筆真缺口**（第 2485 條） |
+| 2 | 第二節第 3 點：「`seed_cards.json` 裡 `label` 或 `scene` 與 Blue Note 相關…的卡的 `artist` 欄」 | **錯。** 該檔是緊湊陣列，**沒有 `label`，也沒有 `scene`** | 第三個來源無法照字面執行，改用等效替代（第 2483 條） |
+| 3 | 第二節：「⚠ 同名實體要靠 `type` ＋ `disambiguation` 分辨」 | **本身沒錯，但本層用 rgid 反解後這一步完全不需要** | 無害；記為更好的做法（第 2482 條） |
+
+**另外更正的是既有裁定、不是派工信**：**本檔第 2356(二) 條「藝人端回 `count: 0`」是錯的**（第 2484 條）。
+⚠ **這一條若沒更正，這一棒本來不該存在**——派工信是對的，被更正的是它引用的那條裁定。
+
+---
+
+## 第 2497 條（**交件版本認定**）
+
+**以工作區當下的 `batch-progress/enum/blue-note-artist-axis-audit.md` 與 `.json` 為交件版**
+（第 1803-B 條：本線曾三次被中途檢查點撈走未定稿的版本）。
+本層在跑的過程中把這兩檔**寫回磁碟四次**（種子 1 筆 → 藝人軸掃完 → 廠牌判定跑完 → Discogs 覆核跑完），
+**中途版本的 `unclear` 數字會隨覆核進度變動，只有最後一版是 0。**
+**「筆數對了」與「定稿了」在本棒是同一個時點：`Discogs 覆核 1,025／1,025`、`unclear 0`。**
+
+---
+
+# c-170 追記：**研究層（a 組 7 張＋b 組 8 張，同一棒）**（編號 2931–2990）
+
+**本節一律 append 於檔末，未覆寫任何既有行（第 1806-B 條）。**
+產出兩檔：`desc-tools/batches/research/c170-a.json`（7 筆）＋ `c170-b.json`（8 筆）。
+
+---
+
+## 第 2931 條（**⚠ 推翻派工信第三節第 7 點；兩張 2026 盤都已經發行**）
+
+派工信逐字寫：「**兩張尚未發行**（`FATHERS` 與 `Joel Ross《Gospel Music》` 都是 2026）
+——若官方發行日在今天之後，`notes` 開頭要寫明未發行與官方預定日期（c-167 的做法）。」
+
+**實查兩張都已上市**，今天是 2026-09-19：
+
+| 卡 | MB first-release-date | Discogs `released` | Apple `releaseDate` | 廠牌新聞稿 | 距今 |
+|---|---|---|---|---|---|
+| **`FATHERS《FATHERS》`** | **2026-07-10** | **2026-07-10**（37859667） | **2026-07-10**（6779502137） | 2026-06-17 稿逐字「the July 10 release of FATHERS」 | 已發行 71 天 |
+| **`Joel Ross《Gospel Music》`** | **2026-01-30** | **2026-01-30**（36507067） | **2026-01-30**（1853728278） | 2025-12-10 稿逐字「On January 30… will release his 5th Blue Note album」 | 已發行 232 天 |
+
+**裁定：兩張都不套「未發行卡」的寫法**（research-base 的 2026-08-02 常設裁定只適用於「已宣布但尚未上市」）。
+兩張的 `notes` 改成明講**已發行＋官方發行日**，讓寫作層不要寫成「即將推出」。
+判準依第 1 條（有先例：c-167 的做法本身就是「日期在今天之後才寫未發行」）與第 2 條（可逆）。
+⚠ **給後批**：派工信寫「2026 年＝未發行」是把年份當成狀態。**2026 年的碟在 2026 年 9 月已經過了大半，狀態要逐張用官方日期判，不能用年份判。**
+
+---
+
+## 第 2932 條（**⚠ 推翻本檔第 2366 條的一格**）：**`_BY.ALEXANDER《000 CHANNEL BLACK》` 在 Apple 查得到，不是「三種查法全空」**
+
+第 2366 條逐字寫本張「**三種查法全空**（專輯本身不在所跑市場的 Apple 目錄裡）」，並說查法 3 的
+`attribute=artistTerm` 只回兩支 2020 單曲與一支 2026 單曲。
+
+**本層用 `lookup?id=1525815469&entity=album&limit=60&country=US`（藝人目錄）查到本作**：
+
+> **`collectionId` 1528271227、`collectionName` 逐字 `000 CHANNEL BLACK`、`trackCount` 11、
+> `releaseDate` 逐字 `2020-08-27T07:00:00Z`、℗ 欄逐字
+> `℗ 2020 _by.ALEXANDER records., Distributed by Blue Note Records, a division of UMG Recordings, Inc.`**
+
+再以 `lookup?id=1528271227&entity=song` 拉逐軌，**撈出 Discogs 沒有的全部客座名單**：
+〈TRUMPETS〉feat. 070 Shake／〈STALLING〉feat. Tanerélle／〈BLOOM IN PARIS〉feat. Charles Bukowski／
+〈THE CHEF & THE DJ〉feat. Michèle Lamy／〈My Margaret〉feat. Rainsford／〈THE MONSTER & THE MUSE〉feat. Irina Shayk。
+**這是本張唯一能取得客座名單的來源**——Discogs 的 `extraartists` 整格空、MB 也沒有。
+
+**裁定：第 2366 條該格改判為「查法 1、2 與 `lookup?upc=` 全空，靠查法 3 的藝人目錄端點救回」**，
+與同條記的 `R+R=NOW` 那一筆同形。**第 2366 條的差別在於它跑的是 `attribute=artistTerm` 的 search，
+不是 `lookup?id=<artistId>&entity=album`——兩者都叫「查法 3」，但只有後者會回整份專輯目錄。**
+⚠ **給後批：`attribute=artistTerm` 與 `lookup?id=&entity=album` 要分開記成兩種查法。**
+
+---
+
+## 第 2933 條（**⚠ 更正第 2365 條三筆日本盤軌數**）：**Discogs 的 `tracks` 計數把「Bonus Tracks For Japan」那一列標題也算進去**
+
+第 2365 條逐字記「Kandace Springs《Soul Eyes》日本盤 **15 軌**」「《The Women Who Raised Me》日本盤 **15 軌** 63 分」
+「Maya Delilah《The Long Way Round》日本盤 **15 軌**」。**逐筆拉整筆 release 的 tracklist 之後，三筆都是 14 軌。**
+
+| 卡 | Discogs release | `tracklist` 陣列長度 | **有編號的實際軌** | 差額來源 |
+|---|---|---:|---:|---|
+| Soul Eyes | 10467233 | 15 | **14**（11＋3） | 第 12 列 `position` 為空、`title` 逐字 `Bonus Tracks For Japan` |
+| The Women Who Raised Me | 15041298 | 15 | **14**（12＋2） | 同上，逐字 `Japan Edition Bonus Tracks` |
+| The Long Way Round | 35121977 | 15 | **14**（12＋2） | 同上 |
+| Motion I | 32758233 | 9 | **8**（7＋1） | 同上，逐字 `Bonus Track For Japan`（此筆第 2365 條沒有寫錯） |
+
+**日本限定曲逐筆**：Soul Eyes ＝〈The Windmills of Your Mind〉〈Too Good to Last (Shacho From Soil & "Pimp" Sessions Remix)〉〈Stay With Me〉；
+Women ＝〈Lush Life〉〈You've Got a Friend〉（第 14 軌另在東京 Lab Recorders 補錄）；
+Long Way Round ＝〈Look at the State of Me Now (Studio Live)〉〈Maya, Maya, Maya (Studio Live)〉；
+Indigo ＝第 14 軌〈Cold Summer〉（12919209，這筆的 tracklist 沒有標題列，第 2365 條寫的 14 軌正確）。
+
+**裁定：本線之後引用 Discogs 軌數，一律數 `position` 非空的列，不要用陣列長度。**
+判準依第 2 條（可逆：只改 `notes` 的數字）。⚠ **這是「失敗與正常長得一樣」的又一形狀：標題列與真軌在同一個陣列裡，長度看起來完全正常。**
+
+---
+
+## 第 2934 條（**人名更正**）：**`The Women Who Raised Me` 的貝斯手是 `Scott Colley`，Discogs 印成 `Scott Cooley`**
+
+Discogs 15005394 的 credits 欄逐字 `Scott Cooley – Bass`；
+**廠牌新聞稿逐字是「bassist Scott Colley (Carmen McRae)」**，而該張的選角邏輯正是「班底與被致敬的歌手有淵源」，
+Colley 確為 Carmen McRae 的貝斯手。**facts 採 `Scott Colley`。**
+⚠ 依 research-base 的 2026-08-15 條，樂手名一律寫拉丁原文，不寫中文音譯。
+
+---
+
+## 第 2935 條（**同一人的兩個名字**）：**FATHERS 的製作人 `Kenny Beats` ＝本名 `Kenneth Blume`，facts 兩名並列**
+
+⚠ **廠牌新聞稿的標題逐字是「INTRODUCING FATHERS FEATURING KIEFER • CARRTOONS • NATE SMITH • KENNETH BLUME」——
+標題用本名、內文用藝名**（逐字「FATHERS' producer is Kenneth Blume — better known as Kenny Beats」）；
+`bluenote.com/artist/fathers/` 逐字則寫「FATHERS' **creative director** is the producer Kenneth Blume」。
+**Discogs 37859667 的 credits 欄與作曲欄一律用 `Kenneth Blume`。**
+**裁定：facts 以「Kenny Beats，本名 Kenneth Blume」並列寫一次**，避免寫作層把兩個名字當成兩個人。
+⚠ 同形的還有 `Kiefer` ＝ `Kiefer Shackelford`、`CARRTOONS` ＝ `Ben Carr`（Discogs 作曲欄逐字 `Benjamin Eric Carr`）。
+
+---
+
+## 第 2936 條（**獎項逐項分開查；本批 1 筆得獎、2 筆只到決選**）
+
+research-base 的 2026-08-08 條要求逐項寫明屆次／類別／入圍或得獎。**本批只有三筆獎項訊號：**
+
+| # | 對象 | 查完 | 處理 |
+|---|---|---|---|
+| 1 | **Nate Smith《Live-Action》** | **得獎，兩座**：類別逐字是 Best Alternative Jazz Album 與 Best Arrangement, Instrumental and Vocals，2026 年頒發 | 寫進 `FATHERS` 的 facts，**類別逐項寫明、寫「拿下」** |
+| 2 | **Paul Cornish** | **只到決選**：`bluenote.com/artist/paul-cornish/` 逐字「He **was a finalist** in the 2023 American Pianists Awards and the Herbie Hancock International Jazz Piano Competition」 | facts 逐字寫「兩項都是入圍決選，不是得獎」 |
+| 3 | **Anderson .Paak《Ventura》**（Kiefer 的側人資歷） | **得獎**：2020 年葛萊美最佳節奏藍調專輯 | 寫進 `FATHERS` 的 facts |
+
+**第 1 筆是雙來源核對過的**：`bluenote.com/artist/fathers/` 逐字「In 2026, he won two GRAMMY Awards for LIVE-ACTION」
+＋ `en.wikipedia.org/wiki/Nate_Smith_(drummer)` 逐字「Live-Action (2025), won two Grammy Awards for
+Best Alternative Jazz Album and Best Arrangement, Instrumental and Vocals」。**兩邊都說「得獎」且座數相同，類別由後者補齊。**
+⚠ **派工信第三節第 1 點警告的「藝人頁把只入圍的作品寫成得獎作」（c-167 的 Kiefer）本批沒有重演**，
+但**第 2 筆正是那個形狀的反面**：藝人頁自己就寫了 `finalist`，沒有膨脹。**本批的獎項風險 0 筆。**
+⚠ **本批 15 張沒有任何一張的專輯本身有獎項**（`nublues`／`Gospel Music`／`Motion I` 等在 bluenote.com 的
+葛萊美相關貼文裡 0 命中），**正文不得替任何一張加獎項。**
+
+---
+
+## 第 2937 條（**③ 來源層命中率實測；派工信第四節的五條路徑逐條回報**）
+
+| 查法 | 跑法 | 命中 |
+|---|---|---|
+| **(1) `bluenote.com/wp-json/wp/v2/posts?search=`** | 藝人名放最前面，17＋12 次查詢 | **14／15 張有專屬新聞稿**，合計取回 **25 篇全文**（`slug=` ＋ `_fields=content` 一次一篇）。**唯一 0 命中的是 `_BY.ALEXANDER`**（四種寫法：`BY.ALEXANDER`／`000 Channel Black`／`070 Shake`／`Alexander Grant` 全 0） |
+| **(2) `/artist/<slug>/`** | 8 個 slug | **6 個 200、2 個 404**（`_by-alexander`／`by-alexander`）。**200 的六個都有決定性素材**：Joel Ross 的成長史與五張目錄、Kandace Springs 的 Prince 段落與 Norah Jones 段落、Paul Cornish 的學經歷與獎項、Maya Delilah 的 BRIT School 與兩張自資 EP、Out Of/Into 的團名解釋、FATHERS 的四人小傳與 Nate Smith 的葛萊美 |
+| **(3) `?s=`** | **本層 0 次動用** | 查法 1 已足夠；第 2366 條記「三批合計 1 次 0 命中」，不再重跑 |
+| **(4) `universal-music.co.jp/<藝人 slug>/products/<品番>/`** | 7 個路徑 | **5 個 200、2 個 404**。⚠ **落空的兩個是藝人 slug 猜錯，不是品番錯**：`UCCQ-1132` 用 `/r-r-now/` 與 `/r-rnow/` 都 404，**改用 `/rrnow/` 與 `/robert-glasper/` 都回 200**；`UCCQ-1215` 用 `/out-of-into/`／`/outofinto/`／`/gerald-clayton/` 三種都 404，未找到正確 slug |
+| **(5) 藝人官網** | **本層 0 次動用** | 第 2366 條已記命中 0／2 |
+| ⚠ **(6) `api.discogs.com/releases/<id>` 整筆** | **18 筆整筆** | **決定性**：逐軌 credits、錄音室鏈、℗ 欄、日本盤的 bonus 分隔列全部只在整筆裡。`search` 摘要完全取不到 |
+| ⚠ **(7) `itunes.apple.com`** | `lookup?upc=` 15 次、`search`／`lookup?id=&entity=album` 6 次 | **`lookup?upc=` 命中 10／15、`search` 與藝人目錄補回 5 張，最終 15／15 全部拿到 collectionId。⚠ 派工信第五節第 6 點警告的 HTTP 403 本批 0 次**，`/search` 與 `/lookup` 都正常回 200 |
+| ⚠ **(8) `en.wikipedia.org/w/api.php`** | 4 次 | 只用於**獎項與人物生卒的交叉驗證**（Nate Smith 兩座葛萊美的類別、`Ventura` 的葛萊美、Prince 的卒年由 MB 取得）。**不用於音樂事實本身** |
+
+**裁定：`universal-music.co.jp` 落空時，先換藝人 slug 再說**（把團名的符號拔掉試 `rrnow`、或改用團內最知名成員的個人 slug），
+**不要當成「日本盤不存在」**。這是第 1678／1821-B 條（「查不到先換一個條目」）在店面層的同一個形狀。
+
+---
+
+## 第 2938 條（**曲名字形**）：**`facts` 與 `keyTracks` 的曲名一律採 ASCII 撇號，MB 的彎撇號不進研究稿**
+
+MB 的軌名用 U+2019（`Leavin’`／`Gabaldon’s Glide`／`Don’t Need the Real Thing`／`King’s Loop`），
+Discogs 與 Apple 多為 ASCII。**本層一律寫 ASCII**，理由與第 2364(一) 條相同（池中一致性，不製造第二種鍵），
+不是票數。**本批兩檔的 U+2019 出現次數 0**，以程式掃過（第 1808-B 條：字元類自檢不用眼睛）。
+⚠ **`3-1-2`（`Who Are You?` 末軌）MB 逐字用的是 U+2010 HYPHEN**，本層改寫成 ASCII 連字號。
+⚠ **U+2014 EM DASH 保留**：那是行文的中文破折號，不是連字號，兩檔合計 20 次，全部在 `facts`／`notes` 的散文裡，
+**`artist`／`album`／`key` 三個欄位 0 次**（已程式驗過）。
+
+---
+
+## 第 2939 條（**來源打架；可逆**）：**`Openness Trio` 的錄音地點採廠牌新聞稿的五個戶外場次，`Studio Tujunga` 只當製作與混音基地**
+
+| 來源 | 逐字 |
+|---|---|
+| **廠牌新聞稿**（2025-05-28） | 「**five recordings from five different sessions** all around Los Angeles and Ventura County」——Ojai 山丘（望見 Topatopa 山脈）／Elysian Park 的客廳／Ojai `Churchill Orchard` 的 Oak Tree Cathedral／Echo Park 某戶院子的 `Garden of Electronics`／Topanga Canyon `Elsewhere` 的胡椒樹下 |
+| ⚠ **Discogs 34564816 的公司欄** | **`Produced At`／`Mixed At`／`Recorded At` 三格逐字都是 `Studio Tujunga`**，`Mastered At` 逐字 `Cosmic Zoo` |
+
+**判：facts 寫新聞稿的五個場次，Discogs 的 `Studio Tujunga` 寫成製作與混音基地，不寫成錄音地點。**
+三個理由：(1) 新聞稿是同期一手稿且三位團員各有引言佐證那幾個地點（Josh Johnson 逐字提到「2021 年初在 Ojai 的果園」）；
+(2) Discogs 的公司欄把三種角色填成同一個值，是條目填寫的常見偷懶形；(3) 可逆，只改一條 fact。
+**已在該卡 `notes` 寫明分歧。**
+
+---
+
+## 第 2940 條（**`Motion I`／`Motion II` 不是現場盤**）：**「在巡演途中錄下」不等於現場錄音**
+
+兩張的新聞稿逐字都寫曲子「thoroughly explored and developed during **nearly 40 live engagements**」，
+**但兩張都不是現場盤**：`Motion II` 的 Discogs 35975692 公司欄逐字 `Recorded At: Eastwest Studios`（洛杉磯的錄音室），
+`Recorded By` 逐字 `Qmillion`；`Motion I` 的 MB `secondary-types` 與 Discogs `format` 欄都沒有 `Live`，
+兩張的 Apple `collectionName` 也都不帶 `(Live)`——**與本批真正的現場盤 `R+R=NOW Live`（Discogs notes 逐字
+`Recorded at Blue Note Club, New York, NY.`、Apple collectionName 帶 `(Live)`）三個訊號全部相反。**
+**裁定：兩張的 `notes` 逐字寫明「曲子在巡演中發展、錄音另外進行」，正文不得寫成現場盤。**
+⚠ **這一格很容易錯**，因為新聞稿的主句就是在講巡演。
+
+---
+
+## 第 2941 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）
+
+| # | 派工信原句 | 實查 | 影響 |
+|---:|---|---|---|
+| 1 | 第三節第 7 點：「**兩張尚未發行**（`FATHERS` 與 `Joel Ross《Gospel Music》` 都是 2026）」 | **錯。** 兩張分別在 2026-07-10 與 2026-01-30 上市，都早於今天 | ⚠ **會讓兩張的 `notes` 開頭寫上不存在的「未發行」**（第 2931 條） |
+| 2 | 第四節：「⚠ **`previews.json` 尚未定案**，不要據此下無來源的結論」 | **✔ 照辦**：本層全程未讀 `previews.json`、未寫串流覆蓋率 | 無 |
+| 3 | 第二節：「`caa.json`（⚠ 有圖 15／15）」 | **✔ 正確**，但本層未動該檔（禁碰清單） | 無 |
+| 4 | 第五節第 6 點：「⚠ 雲端的 `itunes.apple.com/search` 最近出現 HTTP 403」 | **本批 0 次 403**，`/search` 與 `/lookup` 全程 200 | 無害；記為狀態已恢復（第 2937 條） |
+| 5 | 第一節：「`research-base.md` 的原文勝過本信」 | **✔ 三處例外節照走**：產出寫進 repo、每張 8–12 條 facts、`key` 逐字複製、`status` 與 `coverage` 並存 | 無 |
+
+**另外更正的是既有裁定、不是派工信**：本檔**第 2366 條**（`_BY.ALEXANDER` 三種查法全空，第 2932 條）
+與**第 2365 條**（三筆日本盤軌數，第 2933 條）。**兩條都是策展層自己的觀察被更精細的查法推翻，不影響任何一張的收退。**
+
+⚠ **策展層的 `why`／`risk`／`mbNote` 被本層推翻的只有上述兩條**；其餘 15 張的年份、掛名、曲風、imprint、
+合輯與現場判定**逐張核過皆成立**，本層沒有任何一張要求改判。
+
+---
+
+## 第 2942 條（**交件版本認定**）
+
+**以工作區當下的 `desc-tools/batches/research/c170-a.json`（7 筆）與 `c170-b.json`（8 筆）為交件版**（第 1803-B 條）。
+本層在跑的過程中把兩檔**分四次寫回磁碟**（a 組 3 筆 → a 組 7 筆 → b 組 4 筆 → b 組 8 筆），
+**最後另做過一次數值更正**（第 2933 條的三筆日本盤軌數、`000 CHANNEL BLACK` 的全長由「約四十二分鐘」改為「約四十四分鐘」）。
+**「筆數對了」不等於定稿**：7＋8 這個數字在更正之前就已經成立。
+**定稿的時點是 `node qa-batch.mjs research c170` 回「全部通過 ✓」且字元自檢 0 標記之後。**
+⚠ **`互指?` 不會在 research 階段輸出**（第 1807-B 條），本層沒有把它的沉默當成通過。
+
+---
+
+## 第 2943 條（**⚠ ⚠ 第 1803-B 條在本棒第六次應驗，而且這次真的被撈走了**）：**主線的 `probe(c171)` 提交把本層做到一半的 `c170-a.json`（3 筆）掃進 HEAD**
+
+**實況**：本層照派工信第五節第 3 點「每做完 3 張就把輸出檔整份寫回磁碟」，在 a 組第 3 張之後存了一次檔。
+**在本層還在做第 4 到第 7 張的期間，主線提交了 `6cec6d8 probe(c171): 探測鏈跑完，封面 14/20、串流 13/20，7 張待回撈`，
+`desc-tools/batches/research/c170-a.json` 被一併帶進那一筆提交。**
+
+| | 張數 | 內容 |
+|---|---:|---|
+| **`git show HEAD:desc-tools/batches/research/c170-a.json`** | **3** | Soul Eyes／Indigo／000 CHANNEL BLACK |
+| **工作區（＝交件版）** | **7** | 上列三張＋Who Are You?／The Women Who Raised Me／R+R=NOW Live／The Parable of the Poet |
+
+**兩個版本的差別不只是張數**：HEAD 那份的三張裡，`Soul Eyes` 的日本盤軌數與 `000 CHANNEL BLACK` 的全長
+**都是第 2933 條更正之前的舊值**。
+
+**裁定：以工作區為準，HEAD 那份作廢。** 本層不 `git commit`、不動索引（派工信第六節），**請主線提交時直接以工作區版本覆蓋。**
+⚠ **根因是 `git add -A` 那一類的全域暫存**——`CLAUDE.md` 的 Git 檢查節逐字禁止（「**絕不 `git add -A` / `git add .`**，
+會掃走其他工作階段未提交的改動」）。**本次被掃走的不是別人的改動，是同一條線上一支還在跑的代理的半成品，後果相同。**
+⚠ **給主線：研究層跑到一半的 `batches/research/<批>-<組>.json` 在檔案系統上與定稿長得完全一樣**
+（合法 JSON、`status` 全 `full`、`qa-batch` 也會過，因為它只驗有出現的那幾筆的 `key` 在不在卡單裡）——
+**唯一能分辨的是張數要對得上卡單的分組數，以及研究層自己的交件回報。**
+
+---
+
+# c-170 追記：**鉤子層 a 組（7 張，Blue Note 2016–2022）**（編號 3131–3170）
+
+**本節一律 append 於檔末，未覆寫任何既有行（第 1806-B 條）。**
+產出一檔：`desc-tools/batches/hooks/c170-hooks-a.json`（7 筆）。
+
+---
+
+## 第 3131 條（**字元預算：先倒回去量 c-167 a 對尺，再量本組**）：**c-167 a 逐格重現 217–227／中位 225／分佈 0-2-5-0**
+
+本層用的公式逐字（`hook-base.md` 雲端註記第 2 點＋第 1793-B 條＋第 1802-B 條的補項）：
+
+> **預算 ＝ `Array.from(hook).length` ＋ `Array.from(note).length`
+> − `主故事：` − 所有 `→` − `正文只寫上列各項。` − `這條骨架全批只走本張。`**
+> ——**只扣這四樣，其餘一律計入**（年份指定、時序指定、引用限制、載體交代、克制指示全部算）。
+
+**倒尺結果**：把這把尺套回 `c167-hooks-a.json` 7 張，逐格量出
+**217／227／225／220／225／226／217，min 217、max 227、中位 225、四格分佈 0-2-5-0**
+——**與第 1815-B 條（217–227）與第 1816-B 條（min 217／max 227／中位 225／分佈 0-2-5-0）逐格相同，確認同尺。**
+
+**本組實測（程式產生，未手算、未手動歸格；第 1814-B 條）**：
+
+| 卡 | 預算 | hook 加權 | note |
+|---|---:|---:|---:|
+| Kandace Springs《Soul Eyes》 | 228 | 32.5 | 218 |
+| Kandace Springs《Indigo》 | 226 | 26 | 216 |
+| `_BY.ALEXANDER《000 CHANNEL BLACK》` | 228 | 23 | 231 |
+| Joel Ross《Who Are You?》 | 229 | 24 | 221 |
+| Kandace Springs《The Women Who Raised Me》 | 227 | 23 | 230 |
+| R+R=NOW《R+R=NOW Live》 | 228 | 32.5 | 217 |
+| Joel Ross《The Parable of the Poet》 | 224 | 26 | 225 |
+
+**min 224／max 229／中位 228／四格分佈 0-0-7-0／超標 0。**
+
+⚠ **第一版草稿 7／7 全部超標，落在 293–385（超 27–67%）**——**與 c-168（18／18 超 15–73%）同一個量級，
+與 c-167 a（第一版即達標）相反。第 1793-B 條「係數不可繼承」在本組再一次應驗，
+而且本組是「同一條 Blue Note 線、隔一批」就翻轉。** 根因可解釋：**本組專名密度特別高**
+（Kandace Springs 三張的班底、客座與致敬名單，R+R=NOW 的六人編制，Parables 的八人編制），
+**而拉丁專名每個字元都算一格。**
+
+---
+
+## 第 3132 條（**整格捨去清單；全部在鉤子層砍完，零張留給寫作層**）
+
+捨去優先序照第 1809-B 條：**先砍名單型 → 再砍與主故事鏈無關的第二層軼事 → 最後才動鏈上的格。**
+
+| 卡 | 整格捨去 |
+|---|---|
+| **Soul Eyes** | 2014 年同名 EP 的 R&B／嘻哈路線與轉向決定（Carl Sturken、Evan Rogers 那一格）／`Purple Rain` 三十週年演出／父親 Scat Springs／Norah Jones《Come Away with Me》的啟蒙／日本盤 |
+| **Indigo** | 《Black Orchid》EP 那一格／錄音室清單（Fantasy、Electric Lady、Record Plant 等六間）／2018 年暖場巡演／〈6 8〉與 Gabriel Garzón-Montano、Elena Pinderhughes 那一整串／日本盤第十四軌 |
+| **000 CHANNEL BLACK** | **六位客座砍成三位**（〈STALLING〉Tanerélle 與〈My Margaret〉Rainsford 整格拿掉）／**客座那一格的曲名全部拿掉，只留人名與身分**（第 1814-B 條的手法，省 30–45 字元）／曲名大小寫分兩組那一格／2024 年黑膠／最長最短曲長 |
+| **Who Are You?** | Good Vibes 四人完整編制砍成一位（Jeremy Corren／Kanoa Mendenhall／Jeremy Dutton 拿掉）／特別來賓 Brandee Younger／〈Calling〉與〈Dream〉／內頁攝影／錄音室與母帶鏈／《KingMaker》的年終名單／他的成長史（被哥哥佔走鼓、Stefon Harris 重建技法） |
+| **The Women Who Raised Me** | **十一位致敬對象的名單整格拿掉**（最貴的一格）／末軌〈Strange Fruit〉／現場同步錄音那一格／Larry Klein／其餘五位逐軌客座（McBride、Sanborn、Avishai Cohen、Pinderhughes、Potter）／Jazz Standard 四晚／日本盤 |
+| **R+R=NOW Live** | **六人編制整格拿掉**（單這一格約 90 字元）／團名的 Nina Simone 算式來歷（同時也是讓給 b 組，見第 3134 條）／〈How Much a Dollar Cost〉與 Kendrick Lamar／Omari Hardwick／後製鏈／**三首返場曲的曲名**（只留「其中三首」與出處盤名） |
+| **The Parable of the Poet** | 七個樂章標題砍到只留頭尾兩個／〈GUILT〉與〈BENEDICTION〉的共同掛名細節／錄音室與母帶鏈／封面插畫與內頁文字／三款黑膠／最長軌長 |
+
+⚠ **本組沒有任何一張靠潤飾句子壓下來**，與 c-166 a（第 1809-B 條）同一個做法。
+
+---
+
+## 第 3133 條（**骨架歸屬表；程式實掃 `c170-hooks-a.json` 的歸屬句產生，不以本表為準**）：**claim 5 ／ 讓 2**
+
+依第 1802-B 條，**歸屬一律以檔案裡帶「這條骨架全批只走本張。」的卡為準**；本表只是把它抄出來給主線與 b 組看。
+
+| 卡 | 骨架一句話 | 歸屬 |
+|---|---|---|
+| **Soul Eyes** | 大人物在網路上聽見一段翻唱 → 收為門生 → 在這張碟上市前兩個月辭世 | **claim** |
+| **Indigo** | 鼓手在別人的巡演路上一站一站錄下自己的鼓，回頭剪碎重接成一張碟 | **讓（不 claim）** |
+| **000 CHANNEL BLACK** | 客座名單整個跨出音樂圈（時尚人物、模特兒、詩人各佔一軌） | **claim** |
+| **Who Are You?** | 盤名是一個問句，答案是這支同輩樂團本身 | **讓（不 claim）** |
+| **The Women Who Raised Me** | 全翻唱盤，班底是照著被翻唱的原唱者挑出來的 | **claim** |
+| **R+R=NOW Live** | 一個月的俱樂部駐演，把錄音室曲目在台上推成另一種長度 | **claim** |
+| **The Parable of the Poet** | 幾乎原封不動的即興被回頭寫成譜，再交給擴編的樂團重演 | **claim** |
+
+**程式實掃結果：帶歸屬句 5 張（Soul Eyes／000 CHANNEL BLACK／The Women Who Raised Me／R+R=NOW Live／The Parable of the Poet），
+未帶 2 張（Indigo／Who Are You?），與本表逐張一致。**
+
+---
+
+## 第 3134 條（**讓出的三條，理由逐條；第 1809-B 條「歸屬不是先到先得」**）
+
+動手前掃過 `desc-tools/batches/research/c170-b.json` 8 張，讓出：
+
+1. ⚠ **「團名的意思就是這支團的宣言」**——**b 組有兩張同形**：`Out Of/Into《Motion I》`（鼓手 Kendrick Scott 逐字解釋團名是廠牌與聲音的演進）與 `Openness Trio`（Mercereau 逐字說 Openness 這個字就是這裡正在發生的事）。
+   **a 組的 `R+R=NOW Live` 本來要走「Nina Simone 那句話寫成 R 加 R 等於 NOW」，整格捨去，改走駐演現場。**
+   ⚠ **這一條正是第 1809-B 條講的那種情形：b 有兩張，a 若鎖住等於一次卡死兩張。**
+2. **「在巡演途中把材料錄下來」**——**b 組有兩張同形**（`Motion I`／`Motion II` 的曲子都在近四十場巡演裡磨出形狀）。
+   **`Indigo` 的骨架（Riggins 在 Diana Krall 巡演路上錄自己的鼓、回頭剪碎重接）與它相鄰但不同形**，
+   **本層照樣不 claim**，把巡演那半句壓到最小，重心放在「切開重組」這個製作法。
+3. **「軌目的排序本身就是一條敘事弧線」**——**b 組 `Joel Ross《Gospel Music》` 十七軌依序對應創造、墮落與救贖，內頁附經文。**
+   **`Who Are You?` 的「十五軌分兩半、前七軌立人物後八軌翻轉」與它同形**，
+   **本層把它降級成 note 裡的一格，hook 與主骨架改走「盤名是一個問句，答案是這支團」，並不 claim。**
+
+⚠ **第 1814-B 條的反向檢查（`hook` 本體用掉的形狀也算已占用）本層逐張跑過**：
+**讓出的兩張，其 `hook` 本體都沒有用到讓出的那個模子**——
+`Indigo` 的 hook 寫的是「剪碎重接」（製作法），`Who Are You?` 的 hook 寫的是「盤名是一個問號」（自問），
+**巡演與敘事弧線兩個模子在 a 組的 hook 本體裡 0 次**。**這一條讓得出去，不是第 1816-B 條那種讓不掉的空頭讓步。**
+
+---
+
+## 第 3135 條（**同藝人連續作的切入面向；`Kandace Springs` 三張、`Joel Ross` 四張各不重複**）
+
+⚠ **本組七張裡有五張是同兩位藝人的連續作，句型同構的風險最高，`chk-hook-crossgroup` 對這一層一次都不會亮**（第 1816-B／1821-B 條）。
+
+**`Kandace Springs` 三張（三個面向、零共用句構）：**
+
+| 卡 | 面向 |
+|---|---|
+| **《Soul Eyes》2016** | **她是怎麼被找到的**——網路上的一段翻唱、Paisley Park 的師徒關係、導師在碟上市前兩個月辭世 |
+| **《Indigo》2018** | **這張碟是怎麼做出來的**——鼓手兼製作人在路上錄鼓、回頭剪碎重接，以及她自己出的那道命題 |
+| **《The Women Who Raised Me》2020** | **這張碟在向誰交代**——十二軌全是她本人重唱的翻唱，班底照被致敬的原唱者挑 |
+
+**→ 三張都沒有把「Prince 發掘她」當主故事鏈**（那條只在第一張，且是那張的全部）。
+
+**`Joel Ross` 四張（本組兩張＋b 組兩張，四組人一起分）：**
+
+| 卡 | 組 | 面向 |
+|---|---|---|
+| **《Who Are You?》2020** | **a** | **樂團**——盤名的自問，答案是 New School 組起的 Good Vibes |
+| **《The Parable of the Poet》2022** | **a** | **作曲法**——即興被原樣寫成譜，編制擴到八人的 Parables |
+| **《nublues》2024** | b | **藍調功課**（研究層已指定） |
+| **《Gospel Music》2026** | b | **信仰與十七軌的敘事弧線**（研究層已指定） |
+
+**→ a 組兩張都沒有寫「顫音琴手的成長史」**（被哥哥佔走鼓、Stefon Harris 重建技法那一整條整格捨去，見第 3132 條）
+——**那條在四張裡誰都沒用，留給 b 組或後批。**
+
+---
+
+## 第 3136 條（**句型層自檢；機器看不到的那一層**）
+
+第 1764-B／1816-B 條要求逐句讀過、比對句子的骨架而不是開頭四字。本層自檢三項：
+
+1. ⚠ **「數字模子」**：草稿一度有三張帶數量詞開頭（「十二首全是…」「錄音室首作裡的三首曲子…」「再交給八個人…」），
+   **其中兩張（`R+R=NOW Live` 與 `The Parable of the Poet`）的句子骨架是同一個——「舊素材被搬到新場合，變成另一個樣子」。**
+   **改寫 `R+R=NOW Live` 的 hook，從「轉化型」換成「場景型」**（駐演的一個月裡有一首曲子被推到二十五分鐘），
+   **同一個模子壓到 1 次。**
+2. **開頭前四字 7 張互異**（程式驗）：`Prin`／`鼓在巡演`／`客座名單`／`盤名是一`／`十二首全`／`紐約 B`／`幾乎原封`。
+3. **四型輪換**：人物定調（Soul Eyes）／斷言（Indigo、The Women Who Raised Me）／懸疑（000 CHANNEL BLACK）／
+   自問（Who Are You?）／場景（R+R=NOW Live）／過程斷言（The Parable of the Poet）。
+
+---
+
+## 第 3137 條（**派工信指定的四件必寫／必不寫，逐條落點**）
+
+| 派工信 | 落點 |
+|---|---|
+| **《The Women Who Raised Me》十二軌全翻唱但是她 2019 年的新錄音，不得寫成「收錄爵士名伶的經典錄音」** | note 第一格逐字寫「十二軌全是她 2019 年新唱的翻唱」，末尾另加正面指派句「正文寫明都是她本人重唱。」**沒有寫成否定句**（第 1809-B 條末段：排除性更正要嘛整格不寫、要嘛改寫成正面指派） |
+| **《R+R=NOW Live》必寫現場、錄音 2018 年 10 月紐約 Blue Note 俱樂部、發行年 2021 不是錄音年** | note 第一格寫駐演與錄音來源，末尾指派句逐字「正文寫成現場盤，錄音年 2018 年、發行年寫 2021 年。」 |
+| **`_BY.ALEXANDER` 掛名取 credited-name、客座名單只有 Apple 藝人目錄查得到** | 掛名逐字 `_BY.ALEXANDER`；`Alex da Kid` 以「底下是英國製作人」的寫法帶一次；客座取三位（Michèle Lamy／Irina Shayk／Charles Bukowski）＋070 Shake |
+| **本批 15 張專輯本身 0 獎項，正文不得替任何一張加獎項** | **程式實掃 `獎`／`葛萊美`／`Grammy` 在本組 7 張的 hook 與 note 合計 0 命中**——**以沉默＋「正文只寫上列各項。」封口，沒有寫成禁令**（第 1815-B 條的做法） |
+| **日本盤軌數（第 2933 條更正為 14 軌）** | **本組 7 張的 note 一律不提日本盤**（程式實掃「日本」0 命中）——**整格不寫，寫作層拿不到素材寫錯** |
+
+---
+
+## 第 3138 條（**兩支腳本的結果**）
+
+- **`node qa-batch.mjs hooks c170`**（cwd `desc-tools`）：**a 組旗標 0**；
+  **唯一一項是 `⚠ b 缺 hook 檔`，那是管線形狀不是旗標**（第 1815-B 條末段，b 組鉤子尚未派）。
+  **`互指?` 0 行**——七張的 hook 與 note 的曲名、專輯名、拉丁專名與年份全部命中本卡研究稿，
+  **沒有任何一筆落到「本卡沒有、同批別張有」那一級**（第 1763-B 條那種「整段內容來自同批另一張卡」的污染，本組 0 筆）。
+- **`node chk-hook-crossgroup.mjs c170`**：**✓ 全部通過**，
+  開頭前四字 0、同構骨架關鍵詞 0、校對痕跡 0、分數星等 0、hook 禁語 0、句末標點 0、否定句 0、長度 0；
+  印出 `hook 加權 23–32.5｜note 216–231`。
+  ⚠ **note 231 那一張（`000 CHANNEL BLACK`）沒有超標**：`note` 的硬上限是 350，231 是原始字元數；
+  **預算（扣掉四樣之後）是 228。兩個數字不是同一把尺，不要混用。**
+
+---
+
+## 第 3139 條（**交件版本認定**）：**工作區當下的 `desc-tools/batches/hooks/c170-hooks-a.json` 才是交件版**
+
+第 1803-B 條在本線已六次應驗（最近一次是第 2943 條，研究層做到一半的 3 筆被 `probe(c171)` 提交掃進 HEAD）。
+本層照派工信「每做完 5 張就整份寫回磁碟」，**實際是在七張全部定稿後一次寫入、再做兩次定點修改**
+（`R+R=NOW Live` 的 hook 從轉化型改成場景型；`Indigo` 與 `000 CHANNEL BLACK` 用回收的字元額度各補回一格客座事實）。
+
+⚠ **「筆數對了」不等於「定稿了」**：**7 這個數字在上述兩次修改之前就已經成立。**
+**定稿的時點是 `qa-batch hooks c170` a 組旗標 0 ＋ `chk-hook-crossgroup c170` ✓ 全部通過 ＋ 預算 7／7 ≤230 三者同時成立之後。**
+**本層不 `git commit`、不 `git push`、不動索引；請主線提交時以工作區版本為準。**
+
+---
+
+## 第 3140 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）：**查完 7 張，本信 0 處牴觸；1 處數字要更正、1 處用語要收緊**
+
+| # | 派工信原句 | 實查 |
+|---:|---|---|
+| 1 | 第一節：`hook-base.md` 含雲端註記，原文勝過本信 | **✔ 照走**：產出寫進 repo、不 commit、公式照雲端註記第 2 點寫死、歸屬照第 3 點只在擁有的卡寫 |
+| 2 | 第二節：`qa-batch hooks c170` 會報 `b 缺 hook 檔`，那是管線形狀不是旗標 | **✔ 逐字正確**（第 3138 條） |
+| 3 | 第三節第 1 點：五張要五個不同的切入面向 | **✔ 照辦**（第 3135 條）；⚠ **但它說的是「`Kandace Springs` 三張與 `Joel Ross` 兩張」五張，實際要分的是七張**——**`Joel Ross` 全批四張，第五節自己也寫對了「四組人一起分」。第三節那句的量詞收窄了。** |
+| 4 | 第三節第 2、3 點（全翻唱盤／現場盤） | **✔ 逐字正確，與第 2359／2360 條相符**（第 3137 條） |
+| 5 | 第三節第 4 點（`_BY.ALEXANDER` 四種寫法全 0 命中，客座名單從 Apple 藝人目錄撈出） | **✔ 正確，與第 2932 條相符**；⚠ **它說的「`bluenote.com` 四種寫法全 0 命中」是研究層第 2937 條的數字，不是第 2366 條的 Apple 那一格**——**兩件事在派工信裡併成了一句，但兩邊都成立，不影響落點。** |
+| 6 | 第三節第 5 點（本批 15 張 0 獎項） | **✔ 正確，與第 2936 條末段相符**（第 3137 條） |
+| 7 | 第三節第 6 點（日本盤 `Soul Eyes`／`The Women Who Raised Me` 都是 14 軌不是 15 軌） | **✔ 正確，與第 2933 條相符**；本組整格不寫日本盤，這一條沒有機會寫錯 |
+| 8 | 第四節第 1 點（不要沿用任何一批的係數） | **✔ 本組再一次應驗**：第一版 7／7 超標 27–67%（第 3131 條） |
+| 9 | 第四節第 3 點（兩支腳本都要跑） | **✔ 照辦**（第 3138 條） |
+| 10 | 第五節：禁碰清單 | **✔ 全程未讀寫 `apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`previews.json`／`caa.json`／`c170-hooks-b.json`／其他批次檔案；`seed_cards.json` 未讀。暫存檔全在 scratchpad 且帶 `c170a` 字樣。** |
+
+**→ 本信沒有任何一句與 `hook-base.md` 或既有裁定牴觸**（與第 2400 條、第 2941 條同向，本線第三封）。
+**兩處只是轉述精度：第 3 點的量詞（五張 vs 七張）與第 4 點把兩條裁定的來源併成一句。**
+
+---
+
+# c-170 追記：**鉤子層 b 組（8 張，Blue Note 2024–2026）**（編號 3221–3260）
+
+**本節一律 append 於檔末，未覆寫任何既有行（第 1806-B 條）。**
+產出一檔：`desc-tools/batches/hooks/c170-hooks-b.json`（8 筆）。
+
+---
+
+## 第 3221 條（**字元預算：先把尺倒回去量 a 組對尺，再量本組**）：**a 組逐格重現 224–229／中位 228／分佈 0-0-7-0**
+
+本層用的公式逐字（`hook-base.md` 雲端註記第 2 點＋第 1793-B 條，與 a 組第 3131 條同一把尺）：
+
+> **預算 ＝ `Array.from(hook).length` ＋ `Array.from(note).length`
+> − `主故事：` − 所有 `→` − `正文只寫上列各項。` − `這條骨架全批只走本張。`**
+> ——**只扣這四樣，其餘一律計入**（年份指定、版本指定、時序指定、克制指示、字形指示全部算）。
+
+**倒尺結果**：把這把尺套回 `c170-hooks-a.json` 7 張，逐格量出
+**228／226／228／229／227／228／224，min 224、max 229、中位 228、四格分佈 0-0-7-0**
+——**與派工信與第 3131 條逐格相同，確認同尺。**
+
+⚠ **`hook` 加權那一欄本層一開始量出 33／34，與 a 組回報的 32.5 差 0.5。**
+根因是加權的字元集：**`chk-hook-crossgroup.mjs` 第 103 行逐字是 `/[\x00-\x7F]/`，也就是「全部 ASCII 算 0.5」，
+半形空格也在內**，不是「只有英數算 0.5」。改用同一個判準後 7 格全部重現。
+**裁定：hook 加權一律以 `chk-hook-crossgroup.mjs` 第 103 行的 `w()` 為準，不要自行寫一版 `[A-Za-z0-9]`。**
+（預算那把尺不受影響——預算用的是 `Array.from().length` 原始字元數，兩者本來就不是同一把尺。）
+
+**本組實測（程式產生，未手算、未手動歸格）**：
+
+| 卡 | 預算 | hook 加權 | note |
+|---|---:|---:|---:|
+| Joel Ross《nublues》 | 228 | 32 | 224 |
+| Out Of/Into《Motion I》 | 225 | 37 | 207 |
+| Maya Delilah《The Long Way Round》 | 225 | 28 | 224 |
+| 《Openness Trio》 | 229 | 34 | 222 |
+| Out Of/Into《Motion II》 | 230 | 31 | 226 |
+| Paul Cornish《You're Exaggerating!》 | 225 | 33.5 | 213 |
+| FATHERS《FATHERS》 | 227 | 28 | 226 |
+| Joel Ross《Gospel Music》 | 228 | 29 | 227 |
+
+**min 225／max 230／中位 227.5／四格分佈 0-0-8-0／超標 0。**
+
+⚠ **第一版草稿 8／8 全部超標，落在 285–395（超 24–72%）**——**與 a 組（7／7 超 27–67%）幾乎同一個量級。
+第 1793-B 條「係數不可繼承」本次的觀察反而是反向的**：**同一批、隔一組，偏差幅度幾乎一樣**。
+**但這不構成「可以繼承」的理由**——本組是照公式逐格實測才確認的，
+**若當初憑 a 組的幅度反推去寫，落點仍然會散在 285–395 之間，一樣要重砍。**
+根因與 a 組同源：本組專名密度同樣高（五人團兩張的編制與作曲分配、三人組的器材清單、
+FATHERS 四人的雙名並列、Openness Trio 的五個地名），**拉丁專名每個字元都算一格。**
+
+---
+
+## 第 3222 條（**整格捨去清單；全部在鉤子層砍完，零張留給寫作層**）
+
+捨去優先序照第 1809-B 條：**先砍名單型 → 再砍與主故事鏈無關的第二層軼事 → 最後才動鏈上的格。**
+
+| 卡 | 整格捨去 |
+|---|---|
+| **nublues** | Good Vibes 五人編制與 Gabrielle Garo 客座整格／〈bach (God the Father in Eternity)〉與〈nublues〉兩支先行曲的釋出日／錄音室與母帶鏈（The Bunker、Cycle、Sterling Sound）／製作掛名與內頁文字／〈chant〉的兩人編制／**三首標準曲的曲名全部拿掉，只留 Coltrane 與 Monk 兩個人名**（第 1814-B 條的手法） |
+| **Motion I** | **五人編制名單整格拿掉**（單這一格約 75 字元，最貴）／廠牌歷來全明星團的沿革清單（Out of the Blue、Superblue、Blue Note All-Stars 等，約 66 字元）／七軌的作曲分配與逐首曲名／兩支先行曲／最長最短曲長／**日本盤整格**（含〈Infant Eyes〉） |
+| **The Long Way Round** | BRIT School 的校友名單（Adele、Amy Winehouse、FKA twigs）／兩張自資 EP 與串流數／製作群與參與者名單（Peter Miles 等九人）／**錄音三地整格**（Devon 穀倉、洛杉磯家庭錄音室、倫敦）／三支先行單曲／Fender Next 與 Spotify 的選入／〈Begin Again〉的副歌／盤名由來的引言／**日本盤整格**／**Capitol 聯名那半格**／〈Harvest Moon〉的曲名（只留「重唱一曲」） |
+| **Openness Trio** | **五個場次的完整點名砍成兩處**（Ojai 的橡樹教堂果園與 Topanga Canyon 的胡椒樹下，其餘三處只留「五個戶外場次」）／Mercereau 對 Openness 這個字的引言（**同時也是讓給 Motion I 的骨架，見第 3223 條**）／Josh Johnson 的 2021 年果園回憶／三人各自的合作名單（André 3000 等六位）／兩支先行曲／Niño 的信任引言／母帶鏈／**Studio Tujunga 那一格**（第 2939 條的分歧整格不寫，寫作層拿不到素材寫錯） |
+| **Motion II** | 工程鏈（Qmillion、Logan Taylor、David Darlington、Bass Hit）／五位團員全部掛製作／Joel Ross 兼打馬林巴／DownBeat 與 MOJO 對前作的兩段評語／兩支先行曲／最長最短曲長／兩款黑膠 |
+| **You're Exaggerating!** | 三重奏成員名單（Joshua Crumbly、Jonathan Pinson，只留「鋼琴三重奏」與 Jeff Parker 客座一軌）／**休士頓那所高中與校友名單整格**（Jason Moran、Glasper、Kendrick Scott 等七位）／**兩項大賽整格**（決選資格，第 3225 條）／Herbie Hancock 爵士學院的碩士／Joshua Redman 的側人資歷／〈Queen Geri〉的靈感出處《Twenty One》與〈Drummer's Song〉／錄音與刻片鏈／四種版本／曲名清單 |
+| **FATHERS** | **四人的側人資歷整格**（Vince Staples、Denzel Curry、IDLES、George Clinton、Roy Ayers、Anderson .Paak《Ventura》，約 85 字元，最貴）／**Nate Smith 兩座葛萊美與《Ventura》的葛萊美**（第 3225 條）／Kiefer 與 CARRTOONS 的本名／客座三人（Nicole McCabe、Genevieve Artadi、Yasmeen Al-Mazeedi）／錄音混音母帶鏈／曲名全部大寫／最長最短曲長 |
+| **Gospel Music** | 六重奏的完整分工（Jeremy Corren、Kanoa Mendenhall、Jeremy Dutton 拿掉，只留兩支薩克斯風）／鋼片琴／他的兩段引言（好消息、替每個人留空間）／第二支單曲〈Be Patient〉／錄音與母帶鏈與封面畫作／**十七軌的神學曲名砍到只留〈Calvary〉一個** |
+
+⚠ **本組沒有任何一張靠潤飾句子壓下來**，與 a 組（第 3132 條）、c-166 a（第 1809-B 條）同一個做法。
+
+---
+
+## 第 3223 條（**骨架歸屬表；程式實掃兩檔的歸屬句產生，不以本表為準**）：**b 組 claim 8 ／ 讓 0；全批 claim 13 ／ 讓 2**
+
+依第 1802-B 條，**歸屬一律以檔案裡帶「這條骨架全批只走本張。」的卡為準**；本表只是把程式掃出來的結果抄給主線看。
+
+| 組 | 卡 | 骨架一句話 | 歸屬 |
+|---|---|---|---|
+| a | Soul Eyes | 大人物在網路上聽見一段翻唱 → 收為門生 → 在這張碟上市前兩個月辭世 | claim |
+| a | Indigo | 鼓手在別人的巡演路上錄下自己的鼓，回頭剪碎重接 | 讓 |
+| a | 000 CHANNEL BLACK | 客座名單整個跨出音樂圈 | claim |
+| a | Who Are You? | 盤名是一個問句，答案是這支同輩樂團本身 | 讓 |
+| a | The Women Who Raised Me | 全翻唱盤，班底照被翻唱的原唱者挑 | claim |
+| a | R+R=NOW Live | 一個月的俱樂部駐演 | claim |
+| a | The Parable of the Poet | 即興被回頭寫成譜，再交給擴編的樂團重演 | claim |
+| **b** | **nublues** | **演出停擺 → 回學校修完學位 → 一門課重寫了他對一個曲風的定義** | **claim** |
+| **b** | **Motion I** | **團名的意思就是這支團的宣言**（⚠ a 讓出的第 1 條） | **claim** |
+| **b** | **The Long Way Round** | **封城斷了接案工作 → 自己用手機累積聽眾 → 五年後在大廠發首作** | **claim** |
+| **b** | **Openness Trio** | **一張碟的每一軌各錄在一個不同的戶外場所** | **claim** |
+| **b** | **Motion II** | **曲子在近四十場巡演裡磨出形狀，最後才進錄音室錄**（⚠ a 讓出的第 2 條） | **claim** |
+| **b** | **You're Exaggerating!** | **一首曲子獻給已故的前輩，連帶提出一個關於這個行業的問題** | **claim** |
+| **b** | **FATHERS** | **四個平常在幕後做製作的人組成一支團，自己下場演奏** | **claim** |
+| **b** | **Gospel Music** | **軌目的排序本身就是一條敘事弧線**（⚠ a 讓出的第 3 條） | **claim** |
+
+**程式實掃結果：a 組帶歸屬句 5 張、未帶 2 張；b 組帶歸屬句 8 張、未帶 0 張。全批 13 claim ／ 2 讓，與本表逐張一致。**
+
+**a 組讓出的三條各歸了哪一張（第七節要求回報）**：
+1. **「團名的意思＝這支團的宣言」→ `Out Of/Into《Motion I》`**（Kendrick Scott 的解釋）。
+   ⚠ **派工信警告「你有兩張同形，只能歸一張」——另一張 `Openness Trio` 的 Mercereau 引言整格捨去**（第 3222 條），
+   改走「五軌各錄在一個不同的戶外場所」，**兩張的 hook 與 note 都沒有再出現團名釋義的模子。**
+2. **「在巡演途中把材料錄下來」→ `Out Of/Into《Motion II》`**。
+   ⚠ **`Motion I` 的 note 整格不提巡演**（程式實掃：`Motion I` 的 hook＋note 內「巡演」0 次），
+   **同形只剩一張。**
+3. **「軌目排序本身就是敘事弧線」→ `Joel Ross《Gospel Music》`**（十七軌依序對應創造、墮落、救贖）。
+
+⚠ **第 1814-B 條的反向檢查（`hook` 本體用掉的形狀也算已占用）本層逐張跑過 a 組七張的 hook 本體**：
+a 組的七句 hook 分別走「人物發掘」「製作法（剪碎重接）」「客座名單」「盤名自問」「全翻唱＋選角」「駐演現場」「即興寫成譜」，
+**與本組八句的八個模子 0 重疊**；a 組讓出的三個模子在其 hook 本體裡也確實 0 次（與第 3134 條末段一致，本層實掃覆核成立）。
+
+---
+
+## 第 3224 條（**同藝人／同團連續作的切入面向；兩張 `Motion` 與兩張 `Joel Ross` 的句型層自查**）
+
+⚠ **`chk-hook-crossgroup` 對「同一句型三次以上」這一層一次都不會亮**（第 1816-B／1821-B 條），本層逐句讀過比對骨架。
+
+**`Out Of/Into` 兩張：**
+
+| 卡 | 面向 | hook 型 | hook 句子骨架 |
+|---|---|---|---|
+| **《Motion I》2024** | **這支團是什麼**——廠牌八十五週年組起、原名 Blue Note Quintet、改名後團名成了宣言 | **人物定調**（引述鼓手） | 「某人說，X 講的是 A，也是 B。」 |
+| **《Motion II》2025** | **這批曲子怎麼來的**——近四十場巡演磨出形狀，錄音另外在錄音室進行 | **過程斷言** | 「A 把 B 磨出形狀，最後才在 C 做 D。」 |
+
+**→ 兩張的 note 也刻意錯開**：`Motion I` 寫團名與改名、音樂總監；`Motion II` 寫巡演、錄音室與引言。
+**編制名單只在 `Motion I` 出現過一次（且已整格砍掉），`Motion II` 只點 Wilkins 與 Clayton 兩人，沒有第二份名單。**
+⚠ **作曲分配的模子（「某人一個人寫了其中 N 首」）本來兩張都有，本層把 `Motion I` 那一格砍掉，壓到 1 次。**
+⚠ **`一人包辦` 這個字串（`chk-hook-crossgroup` 的 SKELETON 清單第 27 項）兩張都避開了**，改寫成「寫了其中三首」。
+
+**`Joel Ross` 全批四張（a 兩張＋b 兩張，四個面向）：**
+
+| 卡 | 組 | 面向 | hook 型 |
+|---|---|---|---|
+| 《Who Are You?》2020 | a | 樂團——盤名自問，答案是 Good Vibes | 自問 |
+| 《The Parable of the Poet》2022 | a | 作曲法——即興寫成譜、八人 Parables | 過程斷言 |
+| **《nublues》2024** | **b** | **藍調功課——停演、回學校、一門課改了他對藍調的定義** | **過程／人物** |
+| **《Gospel Music》2026** | **b** | **信仰與敘事弧線——十七軌依序走過創造、墮落與救贖** | **斷言** |
+
+**→ 四張零重疊。`Good Vibes` 這個團名在 b 組兩張裡都沒有出現**（`nublues` 的編制整格砍掉、
+`Gospel Music` 只寫「樂團在這張是六重奏」），**因此不會與 a 組《Who Are You?》那張以樂團為主軸的卡撞面向。**
+**→ ⚠ 「顫音琴手的成長史」（被哥哥佔走鼓、Stefon Harris 重建技法）四張裡誰都沒用，本組照派工信整格留著。**
+
+**開頭前四字（程式驗，全批 15 張）**：
+`Prin`／`鼓在巡演`／`客座名單`／`盤名是一`／`十二首全`／`紐約 B`／`幾乎原封`／
+**`演出停擺`／`鼓手 K`／`封城砍掉`／`五首曲子`／`近四十場`／`第八軌獻`／`四個平常`／`十七首依`**
+——**相異 15／15。**
+
+⚠ **本層另外壓下兩個跨組的相鄰模子**：
+1. **「網路讓她被聽見」**：a 的《Soul Eyes》是「大人物在網路上聽見一段翻唱 → 收為門生」，
+   b 的《The Long Way Round》是「封城斷了接案 → 她自己用手機累積聽眾」。
+   **前者的主詞是發掘者、後者的主詞是她本人，且本組這張沒有導師、沒有辭世那一段。判不同形。**
+2. **「編制擴編」**：a 的《The Parable of the Poet》是「擴到八人並命名為 Parables」，
+   b 的《Gospel Music》原稿寫「Good Vibes 擴成六重奏」。**本層改寫成「樂團在這張是六重奏」，把「擴」這個動作拿掉，壓到 1 次。**
+
+---
+
+## 第 3225 條（**派工信第四節七條必寫／必不寫，逐條落點；含兩條「整格不寫」的處理**）
+
+| 派工信 | 落點 |
+|---|---|
+| **1. `Motion I`／`Motion II` 都不是現場盤** | `Motion II` 的 note 逐字寫「錄音另外在洛杉磯的 EastWest Studios 進行」，末尾正面指派句逐字「正文寫成錄音室作品。」；**`Motion I` 的 note 整格不提巡演**，因此沒有誤讀成現場的入口。**程式實掃：本組 8 張的 hook＋note 內「現場」0 次。** |
+| **2. `Motion I` 日本盤 bonus〈Infant Eyes〉是 Wayne Shorter 的曲子** | **日本盤整格不寫**（程式實掃「日本」0 次、「Infant Eyes」0 次）——**寫作層拿不到素材，就不會寫成團員原創**（與 a 組第 3137 條末列同一個做法） |
+| **3. `Maya Delilah` 釘 2025 年十二軌原盤，Deluxe 曲目不得寫進來** | note 首格逐字寫「十二軌」，末尾正面指派句逐字「正文寫 2025 年的十二軌版本。」**沒有寫成「不得寫 Deluxe」**（第 1809-B 條末段：排除性更正改寫成正面指派）。**程式實掃「Deluxe」0 次。** |
+| **4. `FATHERS` 與 `Gospel Music` 都已發行，不是未發行卡** | 兩張的 note 各寫完整發行日（2026 年 7 月 10 日／2026 年 1 月 30 日）＋逐字「本作已上市。」**正面表述，沒有出現「未發行」「即將推出」任何一種。** |
+| **5. 本批 15 張專輯本身 0 獎項；`Paul Cornish` 的兩個大賽只到決選** | **程式實掃：`獎`／`葛萊美`／`Grammy`／`得獎`／`入圍`／`決選` 在本組 8 張的 hook 與 note 合計 0 命中。** 做法是**整格不寫**：`FATHERS` 砍掉 Nate Smith 兩座葛萊美與《Ventura》的葛萊美，`You're Exaggerating!` 砍掉兩項大賽整格。**以沉默＋「正文只寫上列各項。」封口，沒有寫成禁令**（第 1815-B 條的做法） |
+| **6. `Openness Trio` 的錄音地點採新聞稿的五個戶外場次** | note 逐字寫「五軌錄自洛杉磯與 Ventura 郡的五個戶外場次」，末尾指派句逐字「錄音地點寫戶外場次。」**`Studio Tujunga` 整格不寫**（程式實掃「Tujunga」0 次）——**分歧不外漏成校對痕跡** |
+| **7. `You're Exaggerating!` 的撇號取 ASCII；U+2019 全批 0 次** | note 末尾正面指派句逐字「盤名的撇號寫半形。」**程式實掃本組 U+2019 × 0**（第 1808-B 條：字元類自檢不用眼睛） |
+
+---
+
+## 第 3226 條（**兩支腳本的結果與 `互指?` 判讀**）
+
+- **`node qa-batch.mjs hooks c170`**（cwd `desc-tools`）：**回「全部通過 ✓」，總旗標 0。**
+  ⚠ **a 組交件時唯一的那一項 `⚠ b 缺 hook 檔`（第 3138 條）本次消失**——**那確實是管線形狀不是旗標，b 組檔一補就歸零，與第 1815-B 條末段一致。**
+  **`互指?` 0 行**——八張的 hook 與 note 裡的曲名、專輯名、拉丁專名與年份全部命中本卡研究稿，
+  **沒有任何一筆落到「本卡沒有、同批別張有」那一級**（第 1763-B 條那種污染，本組 0 筆）。
+  ⚠ **唯一一個「跨卡出現」的字串是 `Motion II` note 裡的《Motion I》**，
+  **那是本卡自己 `facts` 第 2 條逐字就有的續作關係（研究稿 `notes` 逐字「兩張互指」），不是污染**，`qa-batch` 也沒有把它判成 `互指?`。
+- **`node chk-hook-crossgroup.mjs c170`**（⚠ 派工信要求必跑，本次它同時看 a、b 兩組共 15 張）：**✓ 全部通過**，
+  開頭前四字 0、同構骨架關鍵詞 0、校對痕跡 0、分數星等 0、hook 禁語 0、句末標點 0、否定句 0、長度 0。
+  印出 **`c170｜2 組｜15 張`／`hook 加權 23–37｜note 207–231`**。
+  ⚠ **note 231 那一張是 a 組的 `000 CHANNEL BLACK`，不是本組**；本組的 note 原始字元數是 207–227。
+  **`note` 的硬上限 350 與預算 230 不是同一把尺，不要混用**（第 3138 條末段已記，本層覆核成立）。
+  ⚠ **`chk-hook-crossgroup` 的 SKELETON 清單本組逐項掃過皆 0**；
+  **它看不到的那一層（同一句型三次以上）由第 3224 條人工自查。**
+
+---
+
+## 第 3227 條（**⚠ hook 加權的字元集；本層新記一格，給後批**）：**ASCII 全算 0.5，不是「只有英數算 0.5」**
+
+`hook-base.md` 第 2 點逐字寫「全形計 ≤50 字（**英數算 0.5**）」，
+**但 `chk-hook-crossgroup.mjs` 第 103 行的實作逐字是 `/[\x00-\x7F]/.test(c) ? 0.5 : 1`——半形空格、半形括號、`+`、`=`、`.` 全部算 0.5。**
+
+本層倒尺時因此與 a 組回報的數字差了 0.5（`Soul Eyes` 與 `R+R=NOW Live` 兩張本層先量成 33／34，a 組回報 32.5）。
+**改用 `chk-hook-crossgroup` 的判準後 7 格全部重現。**
+
+**裁定：hook 加權一律以 `chk-hook-crossgroup.mjs` 的 `w()` 為準。**
+判準依第 1 條（有先例：第 1808-B 條「字元類自檢不用眼睛、以程式為準」）與第 2 條（可逆）。
+⚠ **這一格與預算那把尺無關**（預算用 `Array.from().length` 原始字元數），
+**但它是第 1815-B 條「光報數字沒有意義、要把公式寫出來」的另一個實例：同一個名詞、兩種實作、差 0.5。**
+
+---
+
+## 第 3228 條（**交件版本認定**）：**工作區當下的 `desc-tools/batches/hooks/c170-hooks-b.json` 才是交件版**
+
+第 1803-B 條在本線已七次應驗（最近一次是第 2943 條：研究層做到一半的 3 筆被 `probe(c171)` 提交掃進 HEAD）。
+本層照派工信「每做完 5 張就整份寫回磁碟」，**實際是八張一起成稿後整份寫入，再做四輪定點修改**
+（第一版 8／8 超標 285–395 → 整格捨去 → 兩張微調 → `Gospel Music` 補回一個曲名後回頭再砍 10 字元）。
+
+⚠ **「筆數對了」不等於「定稿了」**：**8 這個數字在上述四輪修改之前就已經成立，而且四輪之間的檔案每一次都是合法 JSON、`qa-batch` 每一次都會過。**
+**定稿的時點是三者同時成立之後**：**`qa-batch hooks c170` 回「全部通過 ✓」＋ `chk-hook-crossgroup c170` ✓ 全部通過 ＋ 預算 8／8 ≤230。**
+
+**本層不 `git commit`、不 `git push`、不動索引**（派工信第六節）；**請主線提交時以工作區版本為準。**
+⚠ **本層開工時工作區已有別人未提交的變更**（`c169/rulings.md`、`c169-b.json`、`c169-hooks-a.json`、`c171-a.json` 等），
+**本層只寫 `c170-hooks-b.json` 與本檔，其餘一律未碰。**
+
+---
+
+## 第 3229 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）：**查完 8 張，本信 0 處牴觸；1 處數字要更正**
+
+| # | 派工信原句 | 實查 |
+|---:|---|---|
+| 1 | 第一節：`hook-base.md` 含雲端註記，原文勝過本信 | **✔ 照走**：產出寫進 repo、不 commit、公式照雲端註記第 2 點寫死、歸屬照第 3 點只在擁有的卡寫「這條骨架全批只走本張。」、讓出的卡不點名 |
+| 2 | 第三節：a 組 claim 5、讓 2，歸屬表在第 3133 條，**請自己實掃覆核** | **✔ 實掃覆核成立**（第 3223 條）：a 組帶歸屬句 5 張、未帶 2 張，與第 3133 條逐張一致 |
+| 3 | 第三節：a 組依第 1809-B 條讓出三條骨架 | **✔ 三條全部落地**，各歸一張（第 3223 條末段）；**⚠ 第 1 條的「你有兩張，只能歸一張」逐字正確**，本層把 `Openness Trio` 那一格整格捨去 |
+| 4 | 第三節：`Joel Ross` 全批四張，a 已分走樂團與作曲法，建議 b 走藍調功課與信仰敘事 | **✔ 照辦**（第 3224 條）；成長史四張皆未用 |
+| 5 | 第四節 1–3、6、7 點（兩張 Motion 非現場／〈Infant Eyes〉／Maya 釘 2025 十二軌／Openness 錄音地點／ASCII 撇號） | **✔ 逐字正確，與第 2939／2940 條及研究稿 `notes` 相符**（第 3225 條） |
+| 6 | 第四節第 4 點（`FATHERS` 與 `Gospel Music` 都已發行） | **✔ 逐字正確，與第 2931 條相符**；⚠ **本點與同一封信的上游（c-170 研究層派工信第三節第 7 點）相反，但那一封已被第 2931 條推翻，本信寫的是更正後的版本——不是牴觸，是已經改對了** |
+| 7 | 第四節第 5 點（本批 15 張 0 獎項；Cornish 兩項只到決選） | **✔ 正確，與第 2936 條末段相符**（第 3225 條） |
+| 8 | 第五節第 1 點（先倒回去量 a 組，對得上 224–229／中位 228 再量自己） | **✔ 逐格重現 228／226／228／229／227／228／224，min 224、max 229、中位 228**（第 3221 條） |
+| 9 | 第五節第 1 點（a 組第一版 7／7 超標 293–385，係數不可繼承） | **✔ 本組第一版 8／8 超標 285–395**，量級相同但仍逐格實測；⚠ **派工信寫的是「293–385」，第 3131 條原文寫的是「293–385（超 27–67%）」，兩者一致，無誤** |
+| 10 | 第五節第 3 點（兩支腳本都要跑，b 組旗標清成 0、總標記應該可以到 0） | **✔ 逐字正確**：`qa-batch` 總旗標 0（a 組交件時的 `⚠ b 缺 hook 檔` 已消失）、`chk-hook-crossgroup` ✓ 全部通過（第 3226 條） |
+| 11 | 第六節：禁碰清單 | **✔ 全程未寫 `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`previews.json`／`caa.json`／`c170-hooks-a.json`／其他批次檔案；`c170-hooks-a.json` 只讀未寫。暫存檔全在 scratchpad 且帶 `c170b` 字樣。** |
+
+**→ 本信沒有任何一句與 `hook-base.md` 或既有裁定牴觸**（與第 2400、2941、3140 條同向，本線第四封）。
+
+**⚠ 唯一一處要更正的數字，是 `hook-base.md` 本身、不是派工信**：
+**第 2 點逐字寫「英數算 0.5」，實作是「ASCII 全算 0.5」**（第 3227 條）。
+**這不影響任何一張的合格與否**（本組 hook 加權 28–37，離 50 還遠），
+**但它會讓兩組互相倒尺時差 0.5 而以為對不上尺。**
+
+---
+
+## 第 3230 條（**⚠ ⚠ 第 1803-B 條在本線第八次應驗；本次 `c170-hooks-b.json` 被兩筆 checkpoint 各撈走一版，其中一版是 6／8 超標的草稿**）
+
+**實況**：本層照派工信第五節第 2 點把整份輸出檔寫回磁碟，**在本層還在做定點修改的期間，主線連下兩筆 checkpoint 提交，兩次都把當下的 `desc-tools/batches/hooks/c170-hooks-b.json` 帶了進去。**
+
+| 提交 | 時間 | 該版預算分佈 | 是不是定稿 |
+|---|---|---|---|
+| `b942c13 checkpoint: c171 研究 a 裁定／c170 鉤子 b 中途存檔` | 12:36:20 | **min 197／max 298／分佈 1-0-1-6／超標 6** | **否——8 筆齊全但 6 張超標** |
+| `c5ef33c checkpoint: c170 鉤子 b／c171 研究 b 中途存檔` | 12:40:12 | min 225／max 230／分佈 0-0-8-0／超標 0 | **是（恰好撞上）** |
+| 工作區（＝交件版） | 12:39:55 | 同上 | **是** |
+
+**本次沒有造成損失**（最後一筆 checkpoint 的內容與工作區逐字相同，程式比對 8／8 差異 0），
+**但這是運氣，不是流程**：`b942c13` 那一版**筆數同樣是 8、同樣是合法 JSON、`qa-batch` 同樣會回「全部通過 ✓」**
+——**只有預算那把尺量得出它是草稿。** 若主線在 12:36 到 12:39 之間收件，收到的就是 6 張超標的稿。
+
+**裁定：以工作區為準**（本層交件時工作區與 HEAD 一致，主線不需要另外處理）。
+⚠ **給主線：鉤子層的中途檔與定稿在檔案系統上完全分不出來**（第 2943 條對研究層的同一句，本條是鉤子層版本）。
+**鉤子層唯一能分辨的訊號，是「預算逐格 ≤230」——`qa-batch` 與 `chk-hook-crossgroup` 兩支都驗不到這一格**
+（`chk-hook-crossgroup` 只驗 `note` 的硬上限 350，`b942c13` 那一版最長的 `note` 是 333，照樣過）。
+**代理的交件回報寫「預算 min／max／分佈／超標 0」那一行，才是收件的依據。**
+
+---
+
+# c-170 追記：**寫作層 a 組（7 張，Blue Note 2016–2022）**（編號 3341–3370）
+
+**本節一律 append 於檔末，未覆寫任何既有行（第 1806-B 條）。**
+產出一檔：`desc-tools/batches/output/c170-out-1.json`（7 筆）。
+
+---
+
+## 第 3341 條（**字元預算：本組是「高估」那一側，而且是一版到位**）：**成品 197–215／中位 206／超標 0／撞下限 0**
+
+**逐張實測（`Array.from(desc).length`，程式產生，未手算）：**
+
+| 卡 | 字數 |
+|---|---:|
+| Kandace Springs《Soul Eyes》 | 206 |
+| Kandace Springs《Indigo》 | 202 |
+| `_BY.ALEXANDER《000 CHANNEL BLACK》` | 202 |
+| Joel Ross《Who Are You?》 | 206 |
+| Kandace Springs《The Women Who Raised Me》 | 215 |
+| R+R=NOW《R+R=NOW Live》 | 206 |
+| Joel Ross《The Parable of the Poet》 | 197 |
+
+**min 197／max 215／中位 206／>240 為 0／<180 為 0。**
+
+⚠ **初稿七張落在 175–215，偏差方向是單向高估（手算比實測高），與派工信警告的兩個方向都不同**：
+**七張沒有任何一張超過 240，反而有一張（`The Parable of the Poet` 175）掉到下限以下，回頭補一整格才進區間**
+（補的是 note 鏈上「七個樂章各對應他自己的一次情緒決定或經驗」那一格，照 base 第 82 行的補寫順序）。
+**`Soul Eyes` 初稿 190 亦偏低，補回「十一軌」與盤名曲〈Soul Eyes〉兩個小格到 206。**
+
+**根因可解釋，而且與鉤子層相反**：**鉤子層第 3131 條的第一版 7／7 超標 27–67%，是因為 note 要把整條鏈與所有名單都寫下來；
+本層拿到的 note 已經是整格砍完的版本（第 3132 條），鏈上只剩 3–4 格，照 base 第 60 行列預算表反而會高估。**
+**→ 給後批：鉤子層砍得越乾淨，寫作層越容易撞下限，不是越容易超標。第 1814-B 條「偏差是雙向的」在本組應驗於下限那一側。**
+
+⚠ **本層不繼承任何係數**（第 1793-B／base 第 107–117 行），上述只是實測記錄。
+
+---
+
+## 第 3342 條（**鉤子層「零張留給寫作層」實測成立；本層整格捨去 0 格**）
+
+第 3132 條逐字寫「整格捨去清單；**全部在鉤子層砍完，零張留給寫作層**」。**本層覆核成立：七張都不需要再砍任何一格。**
+**反而有兩張要往回補**（第 3341 條）。**補的一律是 note 鏈上原本就有、被本層第一稿漏掉的格，不是從 `facts` 撈新素材。**
+
+⚠ **`正文只寫上列各項。` 依 c-166 b 第 2606 條讀成排除條款，本層 7／7 都落在 note 的鏈上，沒有動用排除權。**
+⚠ **`這條骨架全批只走本張。` 5 張帶、2 張未帶（`Indigo`／`Who Are You?`），本層對這兩張照樣寫該張自己的故事，
+沒有因為「讓出骨架」而縮寫**——**讓出的是骨架歸屬，不是題材**（base 第 25–37 行：配額已取消，反同構條款限制的是故事骨架）。
+**實際落點：`Indigo` 的正文重心在製作法（Riggins 切開重組），`Who Are You?` 的正文重心在樂團（Good Vibes 的成形），
+兩張都沒有走 b 組拿走的「巡演途中錄材料」與「軌目排序＝敘事弧線」兩個模子。**
+
+---
+
+## 第 3343 條（**首句與 `hook` 的對照；base 第 158 行，`qa-check-research.mjs` 硬檢查**）：**7／7 原文一字不改**
+
+`qa-check-research.mjs` 第 29 行逐字以 `stripSp(r.desc).startsWith(stripSp(src.hook))` 硬檢查（忽略半形空格差異）。
+**本層另以獨立腳本用未剝空格的 `startsWith` 覆核一次，7／7 通過**（連半形空格都逐字相同）。
+
+**七張的首句前四字相異**：`Prin`／`鼓在巡演`／`客座名單`／`盤名是一`／`十二首全`／`紐約 B`／`幾乎原封`
+——**與第 3136 條記的 hook 前四字逐格相同**（必然如此，首句即 hook 原文）。
+
+**hook 懸念的收尾落點逐張**（base 第 159 行：懸念必須收尾、不得重述 hook 已說過的話）：
+
+| 卡 | hook 留下的懸念 | 正文的收尾 |
+|---|---|---|
+| Soul Eyes | 那段翻唱是什麼、師徒關係怎麼開始 | 2014 年的 Sam Smith〈Stay With Me〉→ Paisley Park → 導師 → 辭世日期 |
+| Indigo | 誰在錄那些鼓、為什麼在路上 | 鼓手兼製作人 Karriem Riggins，那趟巡演跟的是 Diana Krall |
+| 000 CHANNEL BLACK | 那三位是誰 | 逐一具名三人＋〈TRUMPETS〉的第四位 |
+| Who Are You? | 那支團是哪一支 | Good Vibes，New School 之後組的 |
+| The Women Who Raised Me | 「照原唱者挑」是怎麼挑的 | 三位班底逐一對上被致敬的歌手 |
+| R+R=NOW Live | 被推到二十五分鐘的是哪一首 | 末軌〈Resting Warrior〉，二十五分二十一秒 |
+| The Parable of the Poet | 那些即興從哪裡來、八個人是誰 | 2017 年與 Sergio Tabanico 的創作聚會；八人編制取名 Parables 樂團 |
+
+⚠ **七張都沒有重述 hook 已說過的話**（例：`R+R=NOW Live` 的正文不再寫「紐約 Blue Note 俱樂部」，
+`Indigo` 的正文不再寫「剪碎重接」，兩者都只在 hook 裡出現一次）。
+
+---
+
+## 第 3344 條（**三支自檢的結果；⚠ 唯一一項標記不是本組的**）
+
+cwd `desc-tools`：
+
+| 腳本 | 結果 |
+|---|---|
+| `node qa-batch.mjs out c170` | **`out-1｜7 張｜字數 197–215｜>260: 0`**；**`總標記 1`，該筆逐字是 `⚠ 輸出總張數與卡單不符 7 vs 15`** |
+| `node qa-check-research.mjs batches/input/c170-writer-1.json batches/output/c170-out-1.json` | **`QA 完成｜ 7 張｜標記 0`**（exit 0） |
+| `node fix-spacing.mjs batches/output/c170-out-1.json --field desc` | **`待補 0 張（欄位 desc）`**——**0 張待補，因此沒有動用 `--write`**（第 1740-B 條：預設 dry-run，要改檔才加 `--write`；本次沒有要改的） |
+
+⚠ **`7 vs 15` 是 writer-2 尚未交件的管線形狀，不是本組的標記**（派工信第二節已預告，實況逐字相符）。
+**與本組相關的旗標全部為 0**：`key 不在卡單` 0、`未具名出處?` 0、`desc →` 事實比對 0、`>260` 0、`編造曲名／專名／年份` 0、
+`禁語` 0、`hook 未原封開頭` 0、`半形標點貼中文` 0、`格式(換行/markdown/entity)` 0。
+
+⚠ **`thin 卡` 那一段本批不觸發**：7 張的 `status` 逐字全是 `full`，`thinKeys.size` 為 0，腳本安靜略過。
+**這一格「沒有印出來」不等於通過**（第 611 條的同一句話）——**本層另以程式確認 7／7 的 `status` 都是 `full`，
+所以適用的是 180–240 那一帶，不是 120–180。**
+
+---
+
+## 第 3345 條（**`互指?` 逐筆人工判讀；第 1763-B 條**）：**0 行，無可判讀**
+
+`qa-batch.mjs` 的 `互指?` 是「本卡研究稿沒有、同批別張有」那一級的污染標記（`out` 區塊第 332 行）。
+**本次輸出 0 行，`descXref` 為 0，`desc 互指 N 處` 那一行整句沒有印出。**
+
+⚠ **本組是全批最容易出現互指的一組**，因為七張裡有五張是同兩位藝人的連續作
+（`Kandace Springs` 三張、`Joel Ross` 兩張），而且三組事實高度相鄰：
+
+| 相鄰的事實 | 為什麼沒有變成互指 |
+|---|---|
+| `Diana Krall` 同時出現在《Indigo》（Riggins 跟她巡演）與《The Women Who Raised Me》（Clarence Penn 跟過她） | **兩張的研究稿 `facts` 各自都有這個名字**，不是從對方那裡借來的 |
+| `Larry Klein` 同時是《Soul Eyes》與《The Women Who Raised Me》的製作人 | **本層只在《Soul Eyes》寫他**，《The Women Who Raised Me》整格不寫製作人（第 3132 條已砍） |
+| `Blue Note` 七張全部出現 | 各張 `facts` 逐字都有 |
+| `Good Vibes`／`Parables` 兩個團名 | 各只出現在自己那張 |
+
+**→ 0 行不是「腳本沒看」，是七張的專名都落在本卡研究稿內。逐筆判讀的結論：無待判項。**
+
+---
+
+## 第 3346 條（**派工信第三節的必寫／必不寫，逐條落點**）
+
+| 派工信 | 落點 |
+|---|---|
+| **4.《R+R=NOW Live》必寫現場、錄音 2018 年 10 月紐約 Blue Note 俱樂部、發行年 2021 不是錄音年** | 正文逐字寫「駐演在 2018 年 10 月」「錄下來的現場在 2021 年 2 月 12 日發行」「在台上被拉成另一個樣子」；**現場身分由「駐演／現場／台上」三處承載，兩個年份分屬錄音與發行、沒有混用** |
+| **5.《The Women Who Raised Me》十二軌全翻唱但是她 2019 年的新錄音** | 正文逐字寫「十二軌都是她 2019 年自己重新唱一次的版本」；**沒有出現「收錄」「經典錄音」任何一種**（程式實掃 0 命中） |
+| **6. 本批 15 張專輯本身 0 獎項** | **程式實掃 `獎`／`葛萊美`／`Grammy` 在本組 7 張的 `desc` 合計 0 命中** |
+| **7. 日本盤軌數全批整格不寫** | **程式實掃「日本」0 命中**——note 本來就沒給素材（第 3137 條末列），本層沒有回頭去 `facts` 撈 |
+| **8. 五個切入面向** | **逐張落地**：Soul Eyes ＝她是怎麼被找到的／Indigo ＝這張碟是怎麼做出來的／The Women Who Raised Me ＝這張碟在向誰交代／Who Are You? ＝樂團／The Parable of the Poet ＝作曲法。**「顫音琴手的成長史」7 張 0 命中**（程式實掃「哥哥」「Stefon Harris」「木琴」皆 0） |
+| **`_BY.ALEXANDER` 掛名** | 正文逐字 `_BY.ALEXANDER`（第 2351 條），`Alex da Kid` 以「底下是英國製作人」帶一次，**沒有寫成「簽進 Blue Note」**（第 2351 條的 `researchNotes` 警告），寫的是「出自他自營的廠牌，交由 Blue Note 發行」 |
+| **《Who Are You?》提到盤名時帶掛名與年份**（note 的指派句，第 2364／2368 條的下游要求） | 正文逐字「Joel Ross 2020 年 10 月 23 日發行的《Who Are You?》」——**掛名與年份都帶上了**，不會與 seed 的 The Who《Who Are You》(1978) 混淆 |
+
+⚠ **另記一格本層自己守的**：**`_BY.ALEXANDER` 那張的 `slice.json` `country` 欄 `AF` 是 MB 誤值（第 2351 條）
+——正文整格不寫發行地，只寫「以數位形式問世」。**
+
+---
+
+## 第 3347 條（**拉丁專名密度；base 第 265–289 行的上限在本組守不住，但沒有造成超標**）
+
+base 第 271／280 行要求「動筆前把拉丁專名壓到 4 個以內（CJK 批壓到 3 個）」。
+**本組七張的實際專名數是 3–8 個（程式逐張掃出，含 hook 內的、含曲名與盤名、相異計），有五張超過 4 個**：
+
+| 卡 | 正文的相異拉丁專名數 | 逐字 | 字數 |
+|---|---:|---|---:|
+| Soul Eyes | **8** | Prince／Sam Smith／Stay With Me／Paisley Park／Blue Note／Larry Klein／Mal Waldron／Soul Eyes | 206 |
+| Indigo | **6** | Karriem Riggins／Diana Krall／Blue Note／Nina Simone／Unsophisticated／Roy Hargrove | 202 |
+| 000 CHANNEL BLACK | **8** | Michèle Lamy／Irina Shayk／Charles Bukowski／TRUMPETS／070 Shake／`_BY.ALEXANDER`／Alex da Kid／Blue Note | 202 |
+| Who Are You? | **6** | Good Vibes／New School／Immanuel Wilkins／Joel Ross／Who Are You?／Walter Smith III | 206 |
+| The Women Who Raised Me | **8** | Steve Cardenas／Norah Jones／Scott Colley／Carmen McRae／Clarence Penn／Diana Krall／Blue Note／Angel Eyes | 215 |
+| R+R=NOW Live | **4** | Blue Note（在 hook 內）／Resting Warrior／Robert Glasper／Collagically Speaking | 206 |
+| The Parable of the Poet | **3**（最低） | Sergio Tabanico／Parables／PRAYER | 197 |
+
+**七張全部落在區間內，專名最多的三張（各 8 個）分別是 206、202 與 215。
+⚠ 專名數與字數在本組幾乎不相關**（8 個的那三張是 202–215，3 個的那張是 197）
+——**原因是被砍掉的名單型專名本來就會連著整個子句一起走，剩下的專名個個都嵌在鏈上的句子裡。**
+
+**為什麼守不住卻沒事**：**超標那幾張的專名全部是 hook 懸念的收尾本身**
+——《The Women Who Raised Me》的懸念逐字是「班底卻是照著原唱者挑來的」，
+**收尾就必須把三位樂手與三位被致敬的歌手兩兩對上，六個名字一個都不能砍**；
+《000 CHANNEL BLACK》的懸念是「有時尚人物、有模特兒，也有一位詩人」，**收尾就是具名那三位**。
+**砍掉任何一個，懸念就收不了尾（base 第 159 行），那比超過專名上限嚴重。**
+
+**裁定：專名上限是壓字數的手段，不是目的。**
+**當某個專名是 hook 懸念的唯一收尾時，該專名不受第 271／280 行的上限約束；
+要壓的是「主故事後續」與「成績或聲音」兩格裡的名單型專名。**
+**本組實際被壓掉的正是後者**（《Soul Eyes》不寫 The Village／The Parlor／Tim Palmer／Bernie Grundman 四個錄音鏈專名、
+《The Women Who Raised Me》不寫 Larry Klein 與五位逐軌客座、《Who Are You?》不寫 GSI Studios 與 David Darlington）。
+判準依第 1 條（有先例：base 第 126–128 行已經替「hook 指向一個超長專名」開過同樣的例外，本條是它的一般化）
+與第 2 條（可逆：只改卡單的 `desc` 值）。
+
+---
+
+## 第 3348 條（**交件版本認定**）：**工作區當下的 `desc-tools/batches/output/c170-out-1.json` 才是交件版**
+
+第 1803-B 條在本線已八次應驗（第 2943 條研究層被 `probe(c171)` 掃走、第 3230 條鉤子 b 被兩筆 checkpoint 各撈走一版）。
+**本層照派工信第四節「每做完 5 張就整份寫回磁碟」，實際是七張一起成稿後一次寫入，再做一次定點修改**
+（`The Parable of the Poet` 175 → 197、`Soul Eyes` 190 → 206 兩張補格）。
+
+⚠ **「筆數對了」不等於「定稿了」**：**7 這個數字在那次補格之前就已經成立，而且那一版同樣是合法 JSON、
+`qa-batch out` 同樣只會印出 `7 vs 15` 這一項、`qa-check-research` 同樣回標記 0**
+——**唯一分辨得出它是草稿的訊號，是字數下限那一格（那一版 min 175 < 180，而三支腳本沒有任何一支在驗 180 這個下限）。**
+⚠ **`qa-batch out` 驗的是 `>260`、`qa-check-research` 驗的是 `<80 || >280`，`thin` 那一段只在有 thin 卡時才驗 180**
+——**full 卡的 180–240 這一帶，三支腳本合起來只擋得住 280 與 260 兩條線，180 那條下限機器完全看不到。**
+**代理的交件回報寫「min／max／中位／超標 0／撞下限 0」那一行，才是收件的依據**（同第 3230 條對鉤子層的結論，本條是寫作層版本）。
+
+**定稿的時點是三者同時成立之後**：`qa-batch out c170` 與本組相關的旗標 0 ＋ `qa-check-research` 標記 0 ＋
+`fix-spacing` 待補 0 ＋ 字數 7／7 落在 180–240。
+
+**本層不 `git commit`、不 `git push`、不動索引**（派工信第五節）；**請主線提交時以工作區版本為準。**
+⚠ **本層開工時工作區已有別人未提交的變更**（`desc-tools/batches/research/c171-b.json` 逐字 ` M`），
+**本層只寫 `c170-out-1.json` 與本檔，其餘一律未碰。**
+
+---
+
+## 第 3349 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）：**查完 7 張，本信 0 處牴觸；2 處數字要更正**
+
+| # | 派工信原句 | 實查 |
+|---:|---|---|
+| 1 | 第一節：`writer-base.md` 原文勝過本信 | **✔ 照走**：產出寫進 repo、不 commit、字數以 base 第 205 行為準 |
+| 2 | 第一節：**`writer-base.md` 第 3 行的 Windows 工作目錄對雲端無效** | **✔ 逐字正確**：第 3 行逐字是 `工作目錄一律 C:\Users\User\dip-vinyl-home\desc-restyle`。⚠ **但同一行的「不動任何 git repo、不動 PROJECT_MEMORY.md、不上網」三句對雲端仍然有效，本層照守**（派工信說「只描述本機產線」，指的是路徑那半句） |
+| 3 | 第一節：**第 158 行是首句與 `hook` 的關係，`qa-check-research.mjs` 會硬檢查** | **✔ 逐字正確**：base 第 158 行逐字是「- 首句＝**hook 原文一字不改**。」；`qa-check-research.mjs` 第 29 行確實硬檢查（第 3343 條） |
+| 4 | 第一節：**`desc` 字數以 base 第 205 行的區間為準；230 是 `note` 的預算不是 `desc` 的區間** | **✔ 逐字正確**：base 第 205 行逐字是「full 卡 **180–240 字**（Array.from 計、含空格），硬上限 280、下限 140；thin 卡 **120–180 字**」（第 1806-B 條） |
+| 5 | 第三節第 1 點：**a 組 7 張鉤子層實測 224–229、第一版 7／7 超標 27–67%** | **✔ 與第 3131／3221 條逐格相符**（228／226／228／229／227／228／224；第一版 293–385） |
+| 6 | 第三節第 2 點：`正文只寫上列各項。` 是排除條款（c-166 b 第 2606 條） | **✔ 正確**，本組 0 次動用（第 3342 條） |
+| 7 | 第三節第 3 點：**a 組 5 張帶骨架歸屬句、2 張讓出** | **✔ 實掃覆核成立**：帶歸屬句的是 Soul Eyes／000 CHANNEL BLACK／The Women Who Raised Me／R+R=NOW Live／The Parable of the Poet，未帶的是 Indigo／Who Are You?，與第 3133／3223 條逐張一致 |
+| 8 | 第三節第 4–8 點（現場盤／全翻唱／0 獎項／日本盤／切入面向） | **✔ 逐字正確，與第 2360／2359／2936／2933／3135 條相符**（第 3346 條） |
+| 9 | 第二節：`qa-batch out c170` 會報「輸出總張數與卡單不符」，那不是本組的標記 | **✔ 逐字正確**，實際印出的是 `7 vs 15`（第 3344 條） |
+| 10 | 第四節第 2 點：`fix-spacing.mjs` 預設 dry-run，要改檔必須加 `--write` | **✔ 正確**；本組待補 0 張，沒有要改的，因此未加 `--write` |
+| 11 | 第五節：禁碰清單 | **✔ 全程未讀寫 `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`c170-out-2.json`／`c170-hooks-*.json`／其他批次的檔案。暫存檔全在 scratchpad 且帶 `c170w1` 前綴**（base 第 46–47 行） |
+
+**→ 本信沒有任何一句與 `writer-base.md` 或既有裁定牴觸**（與第 2400、2941、3140、3229 條同向，本線第五封）。
+
+### ⚠ 兩處要更正的數字（都在派工信第一節的「偏差是雙向的」那一段，都不影響本組的做法）
+
+1. **派工信逐字寫「c-166 寫作層零超標、五張撞破下限」**——
+   **實測成品 `c166-out-1.json` 是 189–230（23 張）、`c166-out-2.json` 是 184–214（22 張），
+   兩組合計 `<180` 為 0 張、`>240` 為 0 張。** 「五張撞破下限」應是**初稿**階段的數字，不是成品。
+2. **派工信逐字寫「c-168 寫作層第一版零超標、最低 186」**——
+   **實測成品 `c168-out-1.json` 是 195–236（18 張），最低 195 不是 186。** 同樣是初稿與成品的差別。
+   （**第三筆「c-167 則是成品 213–233」是對的**：`c167-out-1.json` 逐格實測正是 213–233，`c167-out-2.json` 是 197–220。）
+
+⚠ **這兩處為什麼值得記**：派工信把「初稿分佈」與「成品分佈」混在同一句裡列舉，
+**後批若照字面把它當成品區間拿去對尺，會以為前幾批的成品普遍貼著下限**，
+而實際的成品分佈是 **c-166 184–230／c-167 197–233／c-168 195–236／本組 197–215**——**四批都沒有任何一張出界。**
+**建議後批的派工信把兩種數字分開寫，並註明是哪一種**（同第 1815-B 條「光報數字沒有意義、要把公式與階段寫出來」）。
+
+
+---
+
+## 第 3350 條（**⚠ 第 1803-B 條在本線第九次應驗；本次 `c170-out-1.json` 被 `54dfe5e` 撈走一版，恰好是定稿**）
+
+**實況**：本層把整份輸出檔寫回磁碟之後、跑三支自檢與寫本節的期間，
+**主線下了 `54dfe5e checkpoint: c169 鉤子 b／c171 鉤子 a／c170 寫作 1 中途存檔`（12:53:08），
+把當下的 `desc-tools/batches/output/c170-out-1.json` 帶了進去。**
+
+| | 字數分佈 | 是不是定稿 |
+|---|---|---|
+| **`git show HEAD:desc-tools/batches/output/c170-out-1.json`** | **197／202／202／206／206／206／215，min 197／max 215／超標 0／撞下限 0** | **是** |
+| **工作區（＝交件版）** | 同上 | **是** |
+
+**程式逐張比對 7／7 差異 0，本次沒有造成損失。**
+
+⚠ **這次是真的沒有風險，而且原因與第 3230 條那次不同**：
+**本層只把輸出檔寫回磁碟過一次，而且是在兩張補格（第 3341 條）都做完之後才寫**
+——**磁碟上從來沒有存在過 `min 175` 的那一版**，所以任何時點的 checkpoint 撈到的都是定稿。
+**第 3230 條那次是「寫了四輪、運氣好撞上最後一輪」，本次是「只寫一輪、沒有草稿可撈」。**
+
+⚠ **但這個做法與派工信第四節第 1 點（「每做完 5 張就把整份輸出檔寫回磁碟」）是有取捨的**：
+**它換到的是「磁碟上永遠是定稿」，付出的是「容器重啟就整批重來」。**
+**本組 7 張、單次寫入的總工時短，這個取捨划算；張數多的組不該這樣做。**
+**裁定：寫回磁碟的頻率照派工信，但\*\*每一次寫回之前先把字數量過\*\*——
+與其寫一版草稿上去、指望驗收端重算，不如每次寫回的都是當下已經進區間的版本。**
+判準依第 1 條（有先例：第 3230 條末段「唯一能分辨的訊號是預算逐格 ≤230」，本條是把那個訊號提前到寫檔前）
+與第 2 條（可逆：只是多跑一次量尺腳本）。
+
+**交件版仍以工作區為準**（本層交件時工作區與 HEAD 對 `c170-out-1.json` 逐字相同，
+**主線不需要為這一檔另外處理；`batch-progress/c170/rulings.md` 則是工作區較新，尚未提交**）。
+
+---
+
+# c-170 追記：**寫作層 b 組（8 張，Blue Note 2024–2026）**（編號 3371–3400）
+
+**本節一律 append 於檔末，未覆寫任何既有行（第 1806-B 條）。**
+產出一檔：`desc-tools/batches/output/c170-out-2.json`（8 筆）。
+
+---
+
+## 第 3371 條（**字元預算：本組與 a 組同方向——高估那一側，而且撞的是下限**）：**成品 196–220／中位 204／超標 0／撞下限 0**
+
+**逐張實測（`Array.from(desc).length`，程式產生，未手算）：**
+
+| 卡 | 初稿 | 成品 |
+|---|---:|---:|
+| Joel Ross《nublues》 | 188 | **203** |
+| Out Of/Into《Motion I》 | 183 | **196** |
+| Maya Delilah《The Long Way Round》 | **167** | **204** |
+| 《Openness Trio》 | 216 | **220** |
+| Out Of/Into《Motion II》 | 202 | **202** |
+| Paul Cornish《You're Exaggerating!》 | 192 | **208** |
+| FATHERS《FATHERS》 | 207 | **207** |
+| Joel Ross《Gospel Music》 | 204 | **204** |
+
+**min 196／max 220／中位 204／>240 為 0／<180 為 0。**
+
+⚠ **初稿八張落在 167–216，八張沒有任何一張超過 240，反而有一張（`The Long Way Round` 167）掉破下限**
+——**與 a 組第 3341 條同方向（單向高估），根因也同源**：
+**鉤子層第 3222 條把整格砍乾淨之後，note 鏈上只剩 3–4 格，照 base 第 60 行列預算表必然高估。**
+**→ 覆核第 3341 條末段那句給後批的話成立：「鉤子層砍得越乾淨，寫作層越容易撞下限，不是越容易超標。」
+這是本線第二組獨立測到同一件事**（a 組 7／7、b 組 8／8，兩組合計 15 張，超標 0、初稿撞下限 2）。
+
+⚠ **但這不構成可繼承的係數**（第 1793-B 條、base 第 107–117 行）：
+**第 3221 條記的鉤子層恰恰相反（同一批、同一組卡，第一版 8／8 超標 24–72%）。
+同一批的同一組卡在鉤子層單向超標、在寫作層單向高估——偏差方向連「跨層」都不可繼承，只有「驗區間」本身可繼承。**
+
+---
+
+## 第 3372 條（**裁定；可逆**）：**撞下限時補的那一格取 `sound` 欄，不從 `facts` 撈鉤子層已經砍掉的格**
+
+**問題**：三張初稿偏低（167／183／188／192 四張在 200 以下），按 base 第 82 行的補寫順序
+「主故事後續的第二個事實 → 一筆成績 → 聲音描述」，**但前兩項在本組取不到**：
+note 鏈上的格已經全部寫進正文（第 3373 條），而**本批 15 張專輯本身 0 獎項**（第 2936／3225 條），沒有成績可補。
+
+**判：補 `sound` 欄。** 四張各補一句（`nublues` 慢板與藍調語彙的五重奏／`Motion I` 五個同世代領班平起平坐、
+鋼琴與顫音琴互相讓位／`The Long Way Round` 以吉他為核心的靈魂流行樂、底下混著鄉村與藍調的紋理／
+`You're Exaggerating!` 句子長、和聲密，吉他切進來打破對稱）。三個理由：
+
+1. **base 的預算表第四格逐字就是「一筆成績**或聲音**」**（base 第 66 行），`sound` 是輸入檔的正式欄位，不是外部知識。
+2. **不牴觸「正文只寫上列各項。」**：該句依 c-166 b 第 2606 條讀成**排除條款**（排除 `facts` 裡被鉤子層整格捨去的素材），
+   **而 `sound` 不是被捨去的格，它從來不在 note 的鏈上，是另一個欄位。**
+   ⚠ **反過來說，補格時絕對不可以回頭去撈 `facts`**——那才是排除條款真正要擋的動作
+   （本組若從 `facts` 補，撈到的會正好是第 3222 條砍掉的編制名單、日本盤與獎項）。
+3. **可逆**：只改卡單的 `desc` 值。
+
+判準依第 1 條（有先例：a 組第 3342 條「補的一律是 note 鏈上原本就有、不是從 `facts` 撈新素材」——
+**本條是它的延伸：note 鏈補完了還不夠時，下一順位是 `sound`，仍然不是 `facts`**）與第 2 條（可逆）。
+
+---
+
+## 第 3373 條（**鉤子層「零張留給寫作層」實測成立；本層整格捨去 0 格、往回補 4 格**）
+
+第 3222 條逐字寫「整格捨去清單；**全部在鉤子層砍完，零張留給寫作層**」。**本層覆核成立：八張都不需要再砍任何一格。**
+**反而有四張要往回補**（第 3372 條）。
+
+⚠ **`這條骨架全批只走本張。` b 組 8／8 全部帶歸屬句**（第 3223 條），**本層八張各走自己的骨架，0 張需要避讓。**
+⚠ **`正文只寫上列各項。` 依 c-166 b 第 2606 條讀成排除條款**：本層 8／8 的主故事都落在 note 鏈上，
+**排除權只在補格時動用過一次——動用的方向是「不去 `facts` 撈」，不是「捨去 note 的格」。**
+
+---
+
+## 第 3374 條（**首句與 `hook` 的對照；base 第 158 行，`qa-check-research.mjs` 硬檢查**）：**8／8 原文一字不改**
+
+**程式驗（`r.desc.startsWith(src.hook)` 完全相等比對，不是 `qa-check-research` 那個忽略半形空格的寬鬆版）：8／8 通過。**
+**逐張的 hook 懸念收尾落點：**
+
+| 卡 | hook 留下的懸念 | 正文的收尾 |
+|---|---|---|
+| nublues | 「一門課重寫了藍調的定義」——哪一門課、改成什麼 | 開課者與主題，以及他改後的定義（不只十二小節的形式，是感覺、精神或能量） |
+| Motion I | 「團名講的是廠牌那個故事的演進」——為什麼團名等於那個故事 | 原名 Blue Note Quintet、為八十五週年而組、後來改名 |
+| The Long Way Round | 「對著手機彈吉他」——彈給誰看、後來怎樣 | 轉去做直播與 TikTok 累積出聽眾 → 2022 年替《Blue Note Re:imagined II》重唱一曲 → 2025 年首張完整專輯 |
+| Openness Trio | 五個戶外「在哪裡」「這三人是誰」 | 場次散在洛杉磯與 Ventura 郡，果園與胡椒樹各具名一處；三人分工逐人寫出 |
+| Motion II | 「洛杉磯的錄音室」——哪一間 | EastWest Studios，並寫成錄音室作品（第 2940／3225 條） |
+| You're Exaggerating! | 「最被忽略的頭腦是誰」——這是一個問句 | 他自己給的答案是女性 |
+| FATHERS | 「四個平常在幕後做製作的人」——是哪四個 | 四人逐一具名，各自既是演奏者也是製作人 |
+| Gospel Music | 「十七首依序走過創造、墮落與救贖」——為什麼這樣排 | 對聖經故事的詮釋、也是對自己信仰的探索 |
+
+⚠ **8／8 都沒有重述 hook 已說過的話**（base 第 159 行）：
+`FATHERS` 初稿的「八軌全由四人共同作曲」與 hook 的「八首歌」重了一次軌數，**成品改寫成「曲子全部由四人共同作曲」**。
+
+---
+
+## 第 3375 條（**三支自檢的結果；⚠ `qa-batch out` 這次沒有「不是本組」的標記**）
+
+| 腳本 | 結果 |
+|---|---|
+| `node qa-batch.mjs out c170` | **「全部通過 ✓」，總標記 0。** `out-1｜7 張｜字數 197–215｜>260: 0`／`out-2｜8 張｜字數 196–220｜>260: 0`／`out 合計 15 張，與卡單相符 ✓`。⚠ **派工信預告的「writer-1 若還沒交件會報輸出總張數與卡單不符」本次沒有發生——`c170-out-1.json` 在本層開工前就已經在工作區（第 3348 條），15 ＝ 15 一次就對上。** |
+| `node qa-check-research.mjs batches/input/c170-writer-2.json batches/output/c170-out-2.json` | **`QA 完成｜ 8 張｜標記 0`**（字數／禁語／開頭／hook 前綴／格式／半形標點貼中文／編造曲名／編造專名／編造年份全過） |
+| `node fix-spacing.mjs batches/output/c170-out-2.json --field desc` | **`待補 0 張（欄位 desc）`**。⚠ **本層是 dry-run 跑的，且結果為 0，因此全程沒有動用 `--write`**（第 1740-B 條的陷阱在本組不成立，但本層確認過預設就是 dry-run） |
+
+**另外逐項程式掃過（第 1808-B 條：字元類自檢不用眼睛）**：
+簡體字 0／非拉丁污染 0／U+2019 彎撇號 0（`You're Exaggerating!` 逐字 ASCII 撇號，第 2938／3225 條）／
+千分位逗號 0／半形逗號貼中文 0／中英之間漏空格 0／禁語 0（`傑作`／`必聽`／`里程碑`／`獨樹一格`／
+`融合多種元素`／`具有代表性`／`層次豐富`／`全片`／`全曲`／`你`／`我` 皆 0 命中）。
+
+---
+
+## 第 3376 條（**`互指?` 逐筆人工判讀；第 1763-B 條**）：**0 行，無可判讀**
+
+`qa-batch out` 對 `out-2` 八張的 `desc` 逐張跑完 `factCheck`，**`互指? out-2 …` 一行都沒有印出**，
+`desc 互指 N 處` 那一行也沒有出現（`descXref` 為 0）。**八張正文裡的曲名、專輯名、拉丁專名與四位數年份全部命中本卡自己的研究稿。**
+
+⚠ **派工信第四節第 2 點預告的那一筆（`Motion II` 的正文提到《Motion I》）本層實測不會進 `互指?` 那一級**：
+`Motion II` 的 `facts` 第 2 條逐字就有「素材與 2024 年的《Motion I》來自同一批錄音」，
+**`factBlob` 收 `facts`，所以《Motion I》與 `2024` 兩個字串都是「命中本卡研究稿」那一級，機器直接放行，不需要人判。**
+（鉤子層第 3226 條對 `note` 得到同一個結果，本層對 `desc` 覆核成立。）
+
+⚠ **同名不同卡的兩處，本層另外人工看過一次，兩處都不是污染**：
+`Josh Johnson` 同時出現在《Openness Trio》（共同領班）與《Gospel Music》（側人），
+**兩張各自的 `facts` 都逐字有他**，兩邊都是第一級命中；
+`Gerald Clayton` 同時出現在《Motion I》與《Motion II》，**同理**。
+
+---
+
+## 第 3377 條（**拉丁專名密度；覆核 a 組第 3347 條的裁定，本組 8 張裡 3 張超過上限**）
+
+base 第 271 行要求「動筆前把拉丁專名壓到 4 個以內」。**本組逐張掃出的相異專名數（含 hook 內的、含曲名與盤名）：**
+
+| 卡 | 專名數 | 字數 |
+|---|---:|---:|
+| nublues | 4 | 203 |
+| Motion I | 4 | 196 |
+| The Long Way Round | 4 | 204 |
+| **Openness Trio** | **7** | 220 |
+| Motion II | 4 | 202 |
+| **You're Exaggerating!** | **5** | 208 |
+| **FATHERS** | **6** | 207 |
+| Gospel Music | 5 | 204 |
+
+**八張全部落在區間內，專名最多的《Openness Trio》（7 個）是 220、最少的四張是 196–204。**
+
+⚠ **超出上限的三張，全部符合第 3347 條開的那個例外**（「當某個專名是 hook 懸念的唯一收尾時，該專名不受上限約束」）：
+- **`Openness Trio` 的 hook 懸念是「五個不同的戶外」與「這三人是誰」**，
+  收尾必須同時具名兩處地點（Ojai／Topanga Canyon）與三位成員——**掛名字串本身就是三個人名並列**，一個都砍不掉。
+- **`FATHERS` 的 hook 懸念逐字是「四個平常在幕後做製作的人」**，收尾就是具名那四位。
+- **`You're Exaggerating!` 的 hook 已含 `Geri Allen`**，收尾要接上〈Queen Geri〉與廠牌首作的編制。
+
+**本層被壓掉的仍然是名單型專名**（`nublues` 不寫 Good Vibes 五人編制與三首標準曲的曲名、
+`Motion I` 不寫五人編制與歷來全明星團清單、`FATHERS` 不寫四人的側人資歷與本名並列、
+`Gospel Music` 不寫六重奏的節奏組三人）——**與第 3347 條末段的做法逐項相同，本層覆核該條成立，不另立新裁定。**
+
+---
+
+## 第 3378 條（**交件版本認定**）：**工作區當下的 `desc-tools/batches/output/c170-out-2.json` 才是交件版**
+
+第 1803-B 條在本線已九次應驗（最近一次是第 3350 條）。本層照派工信第四節第 1 點「每做完 5 張就整份寫回磁碟」，
+**實際是八張一起成稿後整份寫入，再做一輪定點補格**（四張補 `sound`，第 3372 條）。
+
+⚠ **「筆數對了」不等於「定稿了」**：**8 這個數字在補格之前就已經成立，而且那一版同樣是合法 JSON、
+`qa-batch out` 同樣回「全部通過 ✓」、`qa-check-research` 同樣回標記 0**
+——**因為 `qa-check-research` 的字數關卡逐字是 `n < 80 || n > 280`，`qa-batch` 只印區間不設下限，
+兩支都攔不到 167 那一張。** **180–240 那把尺只寫在 base 第 205 行，沒有任何機器在看。**
+
+**裁定（給主線的收件訊號）：寫作層的中途檔與定稿在檔案系統上分不出來，
+唯一能分辨的是交件回報裡「字數 min／max／中位／<180 為 0／>240 為 0」那一行。**
+判準依第 1 條（有先例：第 3230 條對鉤子層、第 3350 條對寫作層 a 組，同一個結論）與第 2 條（可逆）。
+
+**本層不 `git commit`、不 `git push`、不動索引**（派工信第五節）；**請主線提交時以工作區版本為準。**
+⚠ **本層開工時工作區已有別人未提交的變更**（`batch-progress/c171/rulings.md`、`desc-tools/batches/hooks/c169-hooks-b.json`，
+以及 a 組剛寫進本檔的第 3341–3350 條）——**本層只寫 `desc-tools/batches/output/c170-out-2.json` 與本檔，其餘一律未碰；
+`c170-out-1.json` 只讀未寫。** 暫存腳本全在 scratchpad 且帶 `c170-w2` 字樣（base 第 45 行）。
+
+---
+
+## 第 3379 條（**⚠ 派工信與 base 檔／既有裁定牴觸之處；依規定回報**）：**查完 8 張，本信 0 處牴觸；1 處預告未發生**
+
+| # | 派工信原句 | 實查 |
+|---:|---|---|
+| 1 | 第一節：`writer-base.md` 原文勝過本信；第 3 行的 Windows 工作目錄對雲端無效 | **✔ 照走**：產出寫進 repo、不 commit、其餘各節逐條照辦 |
+| 2 | 第一節：base 第 158 行（首句與 `hook`）`qa-check-research.mjs` 會硬檢查 | **✔ 逐字正確**：第 158 行是「首句＝**hook 原文一字不改**」，該腳本的 `stripSp(r.desc).startsWith(stripSp(src.hook))` 確實硬檢查（8／8 通過，第 3374 條） |
+| 3 | 第一節：`desc` 字數以 base 第 205 行的區間為準，230 是 `note` 的預算不是 `desc` 的區間 | **✔ 逐字正確**：第 205 行是 `full 卡 180–240 字`，本組 8／8 落在 196–220 |
+| 4 | 第一節：偏差是雙向的，兩端都要驗，不要預留上浮也不要假設會超標 | **✔ 這一句在本組是決定性的**：初稿 8 張無一超標、**一張 167 撞破下限**（第 3371 條）。**若照鉤子層的 8／8 超標經驗預留上浮，這一張會更低。** |
+| 5 | 第三節第 1 點：b 組字元預算已在鉤子層結清，實測 225–230 | **✔ 與第 3221 條逐格相符**；**那是 `hook`＋`note` 的預算尺，與 `desc` 的 180–240 不是同一把尺**（派工信第一節已經寫對了這一點） |
+| 6 | 第三節第 2 點：`正文只寫上列各項。` 是排除條款、不是必寫清單 | **✔ 與 c-166 b 第 2606 條相符**；本層據此把補格的來源限定在 `sound`、不回頭撈 `facts`（第 3372 條） |
+| 7 | 第三節第 4 點：兩張 `Motion` 都不是現場盤；`Motion I` 的 note 實掃「巡演」0 次、不要補回來 | **✔ 逐字正確，與第 2940／3225 條相符**。**成品實掃：`Motion I` 的 `desc` 內「巡演」0 次、全組「現場」0 次** |
+| 8 | 第三節第 5 點：`Motion I` 日本盤整格捨去，「日本」與「Infant Eyes」全批 0 命中 | **✔ 正確**。成品實掃兩者皆 0 |
+| 9 | 第三節第 6 點：`Maya Delilah` 釘 2025 年十二軌原盤，`Deluxe` 0 命中 | **✔ 正確**。成品逐字寫「2025 年 3 月 28 日」「十二軌」，`Deluxe` 0 命中 |
+| 10 | 第三節第 7 點：本批 15 張 0 獎項；`Paul Cornish` 的兩個大賽是決選且整格捨去 | **✔ 正確，與第 2936／3225 條相符**。成品實掃 `獎`／`葛萊美`／`Grammy`／`得獎`／`入圍`／`決選` 全組 0 命中。⚠ **這一點同時是第 3372 條的成因**：沒有成績可補，補格才落到 `sound` |
+| 11 | 第三節第 8 點：`Studio Tujunga` 全批 0 命中，不要補 | **✔ 正確**。成品實掃「Tujunga」0 次 |
+| 12 | 第三節第 9 點：`Good Vibes` 與「顫音琴手的成長史」四張都不要補 | **✔ 正確，與第 3224 條相符**。成品實掃「Good Vibes」全組 0 次 |
+| 13 | 第三節第 10 點：兩張 2026 盤都已發行，`FATHERS` 是同名專輯 | **✔ 正確，與第 2931 條相符**。兩張的正文都寫成已發行的事實陳述，`FATHERS` 逐字寫「同名首作」 |
+| 14 | 第二節：`qa-batch out c170` 會同時驗 out-1／out-2，writer-1 未交件時會報總張數不符 | **✔ 預告正確但本次未發生**：`c170-out-1.json` 在本層開工前已在工作區，一次就對上 15 ＝ 15（第 3375 條） |
+| 15 | 第四節第 2 點：`fix-spacing.mjs` 預設 dry-run，要改檔要加 `--write` | **✔ 正確**；本組 `待補 0 張`，未動用 `--write` |
+| 16 | 第五節：禁碰清單 | **✔ 全程未寫 `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore／`c170-out-1.json`／`c170-hooks-*.json`／其他批次檔案；未 commit、未 push、未動索引** |
+
+**→ 本信沒有任何一句與 `writer-base.md` 或既有裁定牴觸**（與第 2400、2941、3140、3229、3349 條同向，本線第六封）。
+
+---
+
+## 第 3380 條（**⚠ 第 1803-B 條在本線第十次應驗；本次 `c170-out-2.json` 被 `be1c777` 撈走一版，恰好是定稿**）
+
+**實況**：本層照派工信第四節第 1 點把整份輸出檔寫回磁碟之後，**主線下了 `be1c777 checkpoint: c171 鉤子 a 裁定／c169 鉤子 b／c170 寫作 2 中途存檔`，
+把當下的 `desc-tools/batches/output/c170-out-2.json` 帶了進去**（該檔在此之前是 `??` 未追蹤，這一筆之後成為已追蹤檔）。
+
+**程式比對：`git show HEAD:desc-tools/batches/output/c170-out-2.json` 與工作區逐字相同（8 筆，196–220），本次 0 損失。**
+
+⚠ **但這是運氣，不是流程**——與第 3230 條（鉤子層 b）、第 3350 條（寫作層 a）同一句話：
+**本層在「八張齊全但四張尚未補格」那一版與「補完格」那一版之間，兩份檔案都是 8 筆、都是合法 JSON、
+`qa-batch out` 與 `qa-check-research` 兩支都會通過**（第 3378 條已說明兩支腳本都攔不到 167 那一張）。
+**若 checkpoint 落在補格之前，主線收到的會是一張 167 字、撞破 base 第 205 行下限的稿，而且三支自檢全綠。**
+
+**裁定：以工作區為準**（本次工作區與 HEAD 一致，主線不需要另外處理）。
+**收件仍以交件回報的字數分佈那一行為準，不以「檔案在不在 HEAD 裡」為準。**

@@ -52,17 +52,61 @@ const catalogueOf = async (artist, alias, front) => {
   let items = [];
   for (const term of [artist, alias].filter(Boolean)) {
     const s = await get(`https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=musicArtist&limit=10&country=${front}`);
-    await sleep(700);
+    await sleep(1200);
     const arts = ((s && s.results) || []).filter(a => artistOk(term, a.artistName) || looseArtistOk(term, a.artistName));
     for (const a of arts.slice(0, 3)) {
       const l = await get(`https://itunes.apple.com/lookup?id=${a.artistId}&entity=album&limit=200&country=${front}`);
-      await sleep(700);
+      await sleep(1200);
       items.push(...((l && l.results) || []).filter(x => x.wrapperType === 'collection'));
     }
     if (items.length) break;
   }
   catalogue.set(ck, items);
   return items;
+};
+
+// ── 第三條路：盤名直接查 `entity=album`（2026-09-21，第 1859-B 條）────────────
+// c-173 回撈層實證：上面那條「掛名→目錄」在日本盤會整條斷掉，兩個原因——
+//   (1) `catalogueOf` 用 `artistOk`/`looseArtistOk` 過濾 `entity=musicArtist`，
+//       **日文掛名對上羅馬字店面掛名過不了**，artistId 當場被丟；
+//   (2) 更根本的是**新成因第 7 種**：店面把「盤名的片假名轉寫」當成掛名，
+//       樂團名在整筆資料裡完全消失（`The Original Big Four` 的 `artistName`
+//       逐字是 `オリジナル・ビッグ・フォア`）——**這種盤從掛名那端永遠找不到。**
+// 所以補一條不經過掛名的路：拿盤名（與 queryAlias）直接打 `entity=album`。
+// ⚠ 只在第一條路**一個候選都沒有**時才跑，且**必須盤名對得上**——
+// 只靠年份會把那一年的所有專輯都收進來。
+// 2026-09-21 追加（c-174 回撈層，第 1875-B 條）：**`queryAlias` 的括號內容要保留著查一次。**
+// `match-lib.mjs` 的 `aliasParts()` 會把括號說明剝掉，於是 `Music Break (Live, 1967)`
+// 這種**店面題逐字就是 alias** 的情形，探測鏈既查不到也比不上
+// （比對那端 `digitResidual()` 會因為 `1967` 把它擋掉）。
+// 這裡不動共用的 match-lib（它被一百多批共用，改了風險太大），
+// 只在回撈這條路上：① 把帶括號的 alias 原字串也當查詢詞；② 店面題與 alias **逐字相同**就採用。
+const aliasRaw = c => String(c.queryAlias || '').split(/[；;]/).map(x => x.trim()).filter(x => Array.from(x).length >= 2);
+const albumSearch = async (c, front) => {
+  const terms = [...new Set([c.album, ...aliasRaw(c), `${c.album} ${c.artist}`].filter(Boolean))];
+  const out = [];
+  for (const term of terms) {
+    const s2 = await get(`https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=album&limit=25&country=${front}`);
+    await sleep(1200);
+    for (const it of ((s2 && s2.results) || [])) {
+      const aliasExact = aliasRaw(c).some(a => norm(a) === norm(it.collectionName));
+      const tOk = aliasExact
+        || titleOk(c.album, it.collectionName, c.selfTitled)
+        || looseTitleOk(c.album, it.collectionName, c.selfTitled);
+      if (!tOk) continue;                       // 盤名對不上就不收，年份不足以單獨成立
+      const y = Number(String(it.releaseDate || '').slice(0, 4));
+      // ⚠ 2026-09-22（主線第 1935-B 條）：這條路**只驗盤名、不驗掛名**，
+      // 所以候選裡混著「盤名對、掛名是另一個人」的碟（c-179 九個候選零成立，抬頭全是「盤名直查」）。
+      // 這裡不擋——擋掉就失去「盤名直查」這條路的意義——**改成把掛名那一關的結果逐筆標出來**，
+      // 讓覆核的人一眼看見哪幾筆連掛名都沒過。
+      const aOk = artistOk(c.artist, it.artistName || '') || looseArtistOk(c.artist, it.artistName || '');
+      out.push({ front, id: it.collectionId, name: it.collectionName, art: it.artistName || '', y, tr: it.trackCount,
+        why: (c.year && y && Math.abs(y - c.year) <= 1) ? '盤名直查＋年份' : '盤名直查',
+        artGate: aOk ? '掛名也過' : '**掛名沒過**' });
+    }
+    if (out.length) break;
+  }
+  return out;
 };
 
 const lines = [];
@@ -83,14 +127,20 @@ for (const c of todo) {
       const y = Number(String(it.releaseDate || '').slice(0, 4));
       const near = c.year && y && Math.abs(y - c.year) <= 1;
       const tOk = titleOk(c.album, it.collectionName, c.selfTitled) || looseTitleOk(c.album, it.collectionName, c.selfTitled);
-      if (tOk || near) found.push({ front, id: it.collectionId, name: it.collectionName, y, tr: it.trackCount, why: tOk ? (near ? '盤名＋年份' : '盤名') : '年份' });
+      if (tOk || near) found.push({ front, id: it.collectionId, name: it.collectionName, art: it.artistName || '', y, tr: it.trackCount, why: tOk ? (near ? '盤名＋年份' : '盤名') : '年份', artGate: '走藝人目錄' });
     }
     if (found.length) break;
+  }
+  if (!found.length) {                          // 第一條路全空 → 走盤名直查
+    for (const front of FRONTS) {
+      found.push(...await albumSearch(c, front));
+      if (found.length) break;
+    }
   }
   const uniq = [...new Map(found.map(f => [f.id, f])).values()].slice(0, 8);
   if (uniq.length) hit++;
   lines.push(`## ${c.artist}《${c.album}》${c.year || ''}${uniq.length ? '' : ' — **目錄裡找不到**'}`);
-  for (const f of uniq) lines.push(`- \`${f.id}\` ${f.front}｜《${f.name}》${f.y || '?'}｜${f.tr} 軌｜依據：${f.why}`);
+  for (const f of uniq) lines.push(`- \`${f.id}\` ${f.front}｜《${f.name}》／${f.art || '?'}｜${f.y || '?'}｜${f.tr} 軌｜依據：${f.why}｜${f.artGate || ''}`);
   lines.push('');
   console.log(`[${n}/${todo.length}] ${c.artist}《${c.album}》→ ${uniq.length} 個候選`);
   if (n % 3 === 0) flush();

@@ -3,20 +3,26 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **194** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 193、已核可 0、已退回 1）。
+共 **195** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 193、已核可 1、已退回 1）。
 最後更新：2026-09-17T11:47:06.245Z
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
 那些網址帶簽名、可能失效——留著 release id 就是為了日後能整批重抓或改成自存。
 
+## add-20261003（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 何欣穗 《完美小姐》 | [#11294123](https://www.discogs.com/release/11294123) | 1998 | Keboyin Music | KM-99012 | 條碼 4719260990124（與 MB release 6feea786 相同）、廠牌 喜樂音（Keboyin Music，中文維基作品表）、曲目 11 軌、曲名與曲長逐軌對上 MB | ok |
+
 ## c49（3 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | 劉文正 《三月裡的小雨》 | [#10991467](https://www.discogs.com/release/10991467) | 1981 | Tony 東尼機構 | TONY LP-546A | 年份 1981、廠牌 Tony 東尼機構 | pending |
-| 鄭秀文 《放不低》 | [#6766152](https://www.discogs.com/release/6766152) | 1996 | Warner Music Hong Kong | 0630-15257-2 | 年份 1996、廠牌 Warner Music Hong Kong、目錄號 0630-15257-2 | pending |
 | 羅文 《小李飛刀》 | [#6583209](https://www.discogs.com/release/6583209) | 1978 | Crown Records | CST-12-31 | 年份 1978、廠牌 Crown Records、目錄號 CST-12-31 | pending |
+| 鄭秀文 《放不低》 | [#6766152](https://www.discogs.com/release/6766152) | 1996 | Warner Music Hong Kong | 0630-15257-2 | 年份 1996、廠牌 Warner Music Hong Kong、目錄號 0630-15257-2 | pending |
 
 ## c50（2 張）
 
@@ -91,11 +97,11 @@
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
-| 生活向上委員会 《Live in Masuda》 | [#9761821](https://www.discogs.com/release/9761821) | 1978 | Aketa's Disk | AD-6 | 年份 1978、廠牌 Aketa's Disk | pending |
+| Yoshimi Ueno Bestrio 《Live in Otsuchi》 | [#20161765](https://www.discogs.com/release/20161765) | 1981 | Otsuchi Jazz Fan Club | OJFC-001 | 年份 1981、廠牌 Otsuchi Jazz Fan Club、目錄號 OJFC-001 | pending |
 | 吉沢元治 《割れた鏡 または 化石の鳥》 | [#1015317](https://www.discogs.com/release/1015317) | 1975 | ALM Records | AL-6 | 年份 1975、廠牌 ALM Records | pending |
 | 武田和命 《Gentle November》 | [#7143651](https://www.discogs.com/release/7143651) | 1979 | Frasco | FS-7030 | 年份 1979、廠牌 Frasco、目錄號 FS-7030 | pending |
 | 渋谷毅 《Shibuyan》 | [#10214280](https://www.discogs.com/release/10214280) | 1983 | Aketa's Disk | AD-13 | 年份 1983、廠牌 Aketa's Disk、目錄號 AD-13 | pending |
-| Yoshimi Ueno Bestrio 《Live in Otsuchi》 | [#20161765](https://www.discogs.com/release/20161765) | 1981 | Otsuchi Jazz Fan Club | OJFC-001 | 年份 1981、廠牌 Otsuchi Jazz Fan Club、目錄號 OJFC-001 | pending |
+| 生活向上委員会 《Live in Masuda》 | [#9761821](https://www.discogs.com/release/9761821) | 1978 | Aketa's Disk | AD-6 | 年份 1978、廠牌 Aketa's Disk | pending |
 
 ## c68（1 張）
 
@@ -230,12 +236,6 @@
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
-| 小栗均トリオ 《みどりいろの渓流》 | [#11844039](https://www.discogs.com/release/11844039) | 1981 | Johnny's Disk Record | JD-06 | 年份 1981、廠牌 Johnny's Disk Record、目錄號 JD-06 | pending |
-| 中村ヨシミツ 《魂のギター》 | [#15944151](https://www.discogs.com/release/15944151) | 1984 | Johnny's Disk Record | JD-10 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-10 | pending |
-| 平岡睦男とナチュラル・ブギー 《ジョニー・マイ・ハウス》 | [#12434389](https://www.discogs.com/release/12434389) | 1984 | Johnny's Disk Record | JD-11 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-11 | pending |
-| 板倉克行 《海猫の島》 | [#11716782](https://www.discogs.com/release/11716782) | 1982 | Johnny's Disk Record | JD-07 | 年份 1982、廠牌 Johnny's Disk Record、目錄號 JD-07 | pending |
-| 板倉克行トリオ 《ハニー・サンバ》 | [#9265825](https://www.discogs.com/release/9265825) | 1984 | Johnny's Disk Record | JD-12 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-12 | pending |
-| 園田まゆみ 《午後3時の秋》 | [#8826798](https://www.discogs.com/release/8826798) | 1982 | Johnny's Disk Record | JD-08 | 年份 1982、廠牌 Johnny's Disk Record、目錄號 JD-08 | pending |
 | Akira Ohmori 《To Be Young and Foolish》 | [#21235555](https://www.discogs.com/release/21235555) | 1983 | Union Jazz | ULP-5508 | 年份 1983、廠牌 Union Jazz、目錄號 ULP-5508 | pending |
 | Fumio Watanabe Quintet 《Groovin' High》 | [#12244873](https://www.discogs.com/release/12244873) | 1982 | Union Jazz | ULP-5506 | 年份 1982、廠牌 Union Jazz、目錄號 ULP-5506 | pending |
 | Hidehiko Matsumoto 《Hot Jazz》 | [#6342409](https://www.discogs.com/release/6342409) | 1983 | Union Jazz | ULP-7005 | 年份 1983、廠牌 Union Jazz、目錄號 ULP-7005 | pending |
@@ -244,6 +244,12 @@
 | Yoshino Yanagihara 《Summer Rain》 | [#10375628](https://www.discogs.com/release/10375628) | 1982 | Union Jazz | ULP-5507 | 年份 1982、廠牌 Union Jazz、目錄號 ULP-5507 | pending |
 | キングコングパラダイス 《あつさもさむさも》 | [#7458106](https://www.discogs.com/release/7458106) | 1984 | Johnny's Disk Record | JD-09 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-09 | pending |
 | リー・ウォンヒーイ＋菊他コージ 《グロー》 | [#3828868](https://www.discogs.com/release/3828868) | 1985 | Johnny's Disk Record | JD-13 | 年份 1985、廠牌 Johnny's Disk Record、目錄號 JD-13 | pending |
+| 中村ヨシミツ 《魂のギター》 | [#15944151](https://www.discogs.com/release/15944151) | 1984 | Johnny's Disk Record | JD-10 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-10 | pending |
+| 園田まゆみ 《午後3時の秋》 | [#8826798](https://www.discogs.com/release/8826798) | 1982 | Johnny's Disk Record | JD-08 | 年份 1982、廠牌 Johnny's Disk Record、目錄號 JD-08 | pending |
+| 小栗均トリオ 《みどりいろの渓流》 | [#11844039](https://www.discogs.com/release/11844039) | 1981 | Johnny's Disk Record | JD-06 | 年份 1981、廠牌 Johnny's Disk Record、目錄號 JD-06 | pending |
+| 平岡睦男とナチュラル・ブギー 《ジョニー・マイ・ハウス》 | [#12434389](https://www.discogs.com/release/12434389) | 1984 | Johnny's Disk Record | JD-11 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-11 | pending |
+| 板倉克行 《海猫の島》 | [#11716782](https://www.discogs.com/release/11716782) | 1982 | Johnny's Disk Record | JD-07 | 年份 1982、廠牌 Johnny's Disk Record、目錄號 JD-07 | pending |
+| 板倉克行トリオ 《ハニー・サンバ》 | [#9265825](https://www.discogs.com/release/9265825) | 1984 | Johnny's Disk Record | JD-12 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-12 | pending |
 
 ## c89（4 張）
 
@@ -265,10 +271,10 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | 夾子電動大樂隊 《地下人》 | [#8269115](https://www.discogs.com/release/8269115) | 2012 | Hove | CLIPS-12001 | 年份 2012、廠牌 Hove、目錄號 CLIPS-12001 | pending |
-| 花生隊長 《Oh my god》 | [#11465264](https://www.discogs.com/release/11465264) | 2002 | Sony Music Taiwan | IMD0220 | 年份 2002、廠牌 Sony Music Taiwan、目錄號 IMD0220 | pending |
-| 趙一豪 《把我自己收回來》 | [#9586868](https://www.discogs.com/release/9586868) | 1989 | 水晶唱片 | CIRD 0005-2 | 年份 1989、廠牌 水晶唱片 | rejected |
 | 潘麗麗 《畫眉》 | [#19665379](https://www.discogs.com/release/19665379) | 1994 | 水晶唱片 | CIRD1018-2 | 年份 1994、廠牌 水晶唱片 | pending |
 | 潘麗麗 《春雨》 | [#23578109](https://www.discogs.com/release/23578109) | 1992 | 水晶唱片 | CIRD 1036-2 | 年份 1992、廠牌 水晶唱片 | pending |
+| 花生隊長 《Oh my god》 | [#11465264](https://www.discogs.com/release/11465264) | 2002 | Sony Music Taiwan | IMD0220 | 年份 2002、廠牌 Sony Music Taiwan、目錄號 IMD0220 | pending |
+| 趙一豪 《把我自己收回來》 | [#9586868](https://www.discogs.com/release/9586868) | 1989 | 水晶唱片 | CIRD 0005-2 | 年份 1989、廠牌 水晶唱片 | rejected |
 
 ## c103（3 張）
 
@@ -282,24 +288,24 @@
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
+| 夏韶聲 《童年時》 | [#13101846](https://www.discogs.com/release/13101846) | 1979 | Bang Bang Records | BBLP7643 | 年份 1979、廠牌 Bang Bang Records、目錄號 BBLP7643 | pending |
 | 太極 《沉默風暴》 | [#11763705](https://www.discogs.com/release/11763705) | 1989 | WEA | 2292-56863-1 | 年份 1989、廠牌 WEA | pending |
 | 沈文程 《心事誰人知》 | [#18524635](https://www.discogs.com/release/18524635) | 1982 | Ailia | A-6002 | 年份 1982、廠牌 Ailia、目錄號 A-6002 | pending |
-| 夏韶聲 《童年時》 | [#13101846](https://www.discogs.com/release/13101846) | 1979 | Bang Bang Records | BBLP7643 | 年份 1979、廠牌 Bang Bang Records、目錄號 BBLP7643 | pending |
 | 甄妮 《海上花》 | [#29380765](https://www.discogs.com/release/29380765) | 1986 | 喜瑪拉雅 | HPR-7508 | 年份 1986、廠牌 喜瑪拉雅、目錄號 HPR-7508 | pending |
 
 ## c113（9 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
+| 古謝美佐子 《島美らさ》 | [#15374759](https://www.discogs.com/release/15374759) | 1992 | Disc Akabana | ASCD-2002 | 年份 1992、目錄號 ASCD-2002 | pending |
+| 嘉手苅林昌 《潮騒のリズム 独演！嘉手苅林昌[I]》 | [#12094296](https://www.discogs.com/release/12094296) | 1975 | Victor | SJV-2028 | 年份 1975、目錄號 SJV-2028 | pending |
 | 大工哲弘 《伝いやり 風便り唄便り》 | [#15485276](https://www.discogs.com/release/15485276) | 2001 | Disc Akabana | ASCD-2010 | 年份 2001、目錄號 ASCD-2010 | pending |
 | 山里勇吉 《八重山書生節》 | [#15534966](https://www.discogs.com/release/15534966) | 1997 | Disc Akabana | ASCD-2007 | 年份 1997、目錄號 ASCD-2007 | pending |
-| 古謝美佐子 《島美らさ》 | [#15374759](https://www.discogs.com/release/15374759) | 1992 | Disc Akabana | ASCD-2002 | 年份 1992、目錄號 ASCD-2002 | pending |
+| 普久原恒勇 《だんじゅかりゆし 琉球三味線》 | [#13386343](https://www.discogs.com/release/13386343) | 1978 | Columbia | FZ-7205 | 年份 1978、目錄號 FZ-7205 | pending |
+| 照屋林助 《うちな～ゆんたく 沖縄の笑い芸》 | [#11975306](https://www.discogs.com/release/11975306) | 1981 | CBS/Sony | 25AG 765 | 年份 1981、廠牌 CBS/Sony | pending |
+| 登川誠仁 《美ら弾き》 | [#10364858](https://www.discogs.com/release/10364858) | 1991 | Victor | VICG-5164 | 年份 1991、目錄號 VICG-5164 | pending |
 | 知名定男 《酒に交われば…》 | [#12302235](https://www.discogs.com/release/12302235) | 1979 | F-Label | C25A0055 | 年份 1979、廠牌 F-Label | pending |
 | 知名定男 《島や唄遊び》 | [#12717123](https://www.discogs.com/release/12717123) | 1992 | Disc Akabana | ASCD-2003 | 年份 1992、目錄號 ASCD-2003 | pending |
-| 普久原恒勇 《だんじゅかりゆし 琉球三味線》 | [#13386343](https://www.discogs.com/release/13386343) | 1978 | Columbia | FZ-7205 | 年份 1978、目錄號 FZ-7205 | pending |
-| 登川誠仁 《美ら弾き》 | [#10364858](https://www.discogs.com/release/10364858) | 1991 | Victor | VICG-5164 | 年份 1991、目錄號 VICG-5164 | pending |
-| 照屋林助 《うちな～ゆんたく 沖縄の笑い芸》 | [#11975306](https://www.discogs.com/release/11975306) | 1981 | CBS/Sony | 25AG 765 | 年份 1981、廠牌 CBS/Sony | pending |
-| 嘉手苅林昌 《潮騒のリズム 独演！嘉手苅林昌[I]》 | [#12094296](https://www.discogs.com/release/12094296) | 1975 | Victor | SJV-2028 | 年份 1975、目錄號 SJV-2028 | pending |
 
 ## c114（30 張）
 
@@ -389,8 +395,8 @@
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
-| 日野元彦 《First Album》 | [#8895683](https://www.discogs.com/release/8895683) | 1971 | Columbia | XMS-10029-CT | 年份 1971、廠牌 Columbia | pending |
 | 前田憲男とオール・スターズ 《Rock Communication》 | [#9984048](https://www.discogs.com/release/9984048) | 1970 | Teichiku Records | SL-1329 | 年份 1970、目錄號 SL-1329 | pending |
+| 日野元彦 《First Album》 | [#8895683](https://www.discogs.com/release/8895683) | 1971 | Columbia | XMS-10029-CT | 年份 1971、廠牌 Columbia | pending |
 
 ## c135（1 張）
 
