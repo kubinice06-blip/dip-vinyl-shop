@@ -645,7 +645,6 @@ window.DipPreviewStatus = Object.freeze({
   "t.p. orchestre poly-rythmo|the vodoun effect: funk and sato from benin's obscure label": "unavailable",
   "victor uwaifo|guitar boy superstar 1970-76": "unavailable",
   "various artists|the roots of chicha: psychedelic cumbias from peru": "unavailable",
-  "queen|greatest hits": "unavailable",
   "abba|greatest hits": "unavailable",
   "abba|the album": "unavailable",
   "billy joel|the nylon curtain": "unavailable",

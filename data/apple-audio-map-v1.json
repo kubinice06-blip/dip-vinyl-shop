@@ -84,6 +84,21 @@
    "matchedAt": "2026-07-19T02:16:35.924Z",
    "collectionViewUrl": "https://music.apple.com/tw/album/with-fear-i-kiss-the-burning-darkness/1189329071"
   },
+  "queen\u0000greatesthits": {
+   "artist": "Queen",
+   "album": "Greatest Hits",
+   "pool": "seed",
+   "status": "matched",
+   "storefront": "TW",
+   "collectionId": "6781080300",
+   "collectionName": "Greatest Hits",
+   "previewTrackCount": 17,
+   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/29/40/c3294027-644c-ca9d-ea2a-68a498431c8f/mzaf_1930657702308615235.plus.aac.p.m4a",
+   "matchedAt": "2026-10-04T00:00:00.000Z",
+   "source": "manual-verify",
+   "note": "2026-10-04 補配。08-21 時 Apple 只配到三碟套裝《The Platinum Collection》而降級為 unavailable；現在 TW／US／GB 三店面都有單張正版 6781080300（17 軌、1981-10-26、notExplicit、℗ 1981 Queen Productions／Hollywood），曲目 Bohemian Rhapsody／Another One Bites the Dust／Killer Queen…We Will Rock You／We Are the Champions，是 1981 年 EMI 版的十七軌。取第 1 軌，實測 HTTP 206 audio/x-m4p。",
+   "collectionViewUrl": "https://music.apple.com/tw/album/greatest-hits/6781080300"
+  },
   "synanthesia\u0000synanthesia": {
    "artist": "Synanthesia",
    "album": "Synanthesia",
@@ -161376,13 +161391,14 @@
    "pool": "seed",
    "status": "matched",
    "storefront": "TW",
-   "collectionId": "1114507022",
-   "collectionName": "",
-   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/00/00/7c00006e-fd9c-1319-943b-951e13659c3e/mzaf_16476204873667332768.plus.aac.p.m4a",
-   "matchedAt": "2026-08-31T06:09:27.853Z",
-   "source": "onboarding-manifest",
-   "note": "",
-   "collectionViewUrl": "https://music.apple.com/tw/album/%E8%94%A1%E7%90%B4%E8%80%81%E6%AD%8C/1114507022"
+   "collectionId": "993111862",
+   "collectionName": "蔡琴老歌 (Remastered)",
+   "previewTrackCount": 10,
+   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b4/70/7c/b4707caf-729d-cb74-6f6a-d2387edd8d3c/mzaf_18363374181948631617.plus.aac.p.m4a",
+   "matchedAt": "2026-10-04T00:00:00.000Z",
+   "source": "manual-verify",
+   "note": "2026-10-04 改配。原配 1114507022 是 2003 年鄉城唱片的 32 軌《蔡琴老歌》（不了情／懷念／夢中人…），與本卡 1985 年飛碟 10 軌一首都不重疊。993111862 為 ℗ 2015 華納（飛碟的後身）的重製版，10 軌曲序與 MB release d23ad463／efb3ba51 逐首相符：癡癡的等／寒雨曲／落花流水／是夢是真／總有一天等到你／三年／訴衷情／紅淚／一年又一年／恨不相逢未嫁時。取第 1 軌，實測 HTTP 206 audio/x-m4p。",
+   "collectionViewUrl": "https://music.apple.com/tw/album/%E8%94%A1%E7%90%B4%E8%80%81%E6%AD%8C-remastered/993111862"
   },
   "陳明章\u0000戀戀風塵電影原聲帶": {
    "artist": "陳明章",
