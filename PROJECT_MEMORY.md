@@ -1,5 +1,37 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-04｜dip-vinyl-shop｜「重配後只做一半」候選 19 張逐張核對：沒有第三張，另對出兩個資料錯誤
+
+同日第三筆。店主：「那 17 張候選逐張核對」。**這筆只做核對與記錄，沒有改任何線上資料。**
+
+每張對五樣：池中那一列、`card_catalog`（rgMbid／封面／UPC／三軸）、MusicBrainz release-group、線上簡介、固定試聽。
+字樣命中的 17 張之外，改用較準的條件（manifest 的 cover／preview 註記有「改釘、重配」**且**其他欄位留著負面字樣）
+多掃到 Queen《Greatest Hits》與 Johnny Dodds《Blue Clarinet Stomp》，合計 19 張。
+
+**結論：沒有第三張 Hawkins／Odyssey 那種卡。** 13 張完全沒事——「佔位」多半指 MusicBrainz 只有年份、月日補 01-01 的日期，
+「不是同一張」是在排除近名的別張碟。有事的六張：
+
+| 卡 | 問題 |
+|---|---|
+| 蔡琴《蔡琴老歌》 | **固定試聽配到另一張選輯**：Apple 1114507022 是 2003 年鄉城 32 軌，與 1985 飛碟 10 軌一首都不重疊。正確的是 993111862（10 軌、曲序逐首相符）。manifest 當時寫了「本機請務必覆核」，沒人覆核 |
+| Ana Moura《Desfado》 | 曲風標成 jazz（子曲風 jazz/vocal），實為 fado，該是 world |
+| Queen《Greatest Hits》 | `card_catalog.upc` 還是最初誤配的俄羅斯盜版條碼；試聽 unavailable 但 Apple 有正版（6781080300）；頂點資格重配後沒補評 |
+| The Crying Princess（c-129） | 簡介以「這張沒有試聽來源。」收尾——**c-129 整批 11 則都這樣** |
+| 서태지와 아이들 IV | 正文夾諺文（한국공연윤리위원회、서태지）；全池正文有諺文的 72 則 |
+| Dariush《Cheshme Man》 | 身分、封面、試聽都對，但簡介用資料庫口吻（「這個條目底下的三張碟」「另外兩筆」）；全池 93 則 |
+
+逐張結果在 `audits/pub-fix/round2-rebind-check.md`。
+
+## 核對時順便看到的
+
+- **池中 3,377 張卡沒有子曲風**（兩成）。`card-subgenres.json` 最後一次重建是 09-04，之後上架的批次都沒進去
+  ——09-10、09-17 兩輪上架我都漏了 §10 的 `build-genre-tree`。這些卡抽得到，但「類型挑片」第二層選不到。
+- Apple 搜尋 API 從這台機器打得通了。**中文關鍵字要用 node 的 `fetch`，bash 的 curl 會回 0 筆**（編碼問題，與 worker 那條同一個坑）。
+
+## 主要檔案
+
+`audits/pub-fix/round2-rebind-check.md`（新）、`audits/pub-fix/README.md`。
+
 ### 2026-10-04｜dip-vinyl-shop｜兩張線上簡介是退件說明的卡補齊：Coleman Hawkins《Body and Soul》、Odyssey《Odyssey》
 
 同日第二筆。店主：「那兩張退件說明現在先處理」。第二輪佇列的 B1 區因此歸零。
