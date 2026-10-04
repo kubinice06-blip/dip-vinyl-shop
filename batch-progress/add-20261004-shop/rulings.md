@@ -35,3 +35,11 @@
 - **8603** 《You Are My Sunshine》TBM 2014 破產與 Think! Records 再發屬與本盤無直接綁定的後續事件，不進 facts，僅在 notes 備查。
 - **8604** hookCandidates 各兩條、避開同批同構：Hope 兩張一為「同編號紅封面改名」「一次錄音兩種編制」，一為「兩組節奏組」「Bitter Hope 專訪與搬回紐約」；Otsuka 取「新三重奏找回市川秀男」與「TBM 錄音品質＋四首長曲」。
 - **8605** QA：`qa-batch research add-20261004-shop` 0 error。
+
+## 寫作層（8626–8640）
+
+- **8626** 兩張 Hope 卡的引入法分開配：《Hope Meets Foster》用「日期領句＋Elmo Hope 的鋼琴／Frank Foster 的次中音」（樂器所有格），《High Hope!》用身分「領銜的 Elmo Hope」＋A 面／翻面兩段式；兩張第二句句型不同。
+- **8627** 《Hope Meets Foster》第二句把 hook 的「小號」具名為 Freeman Lee，不重述哪三首；照「正文只寫上列各項」不寫 John Ore／Art Taylor 與 Basie 背景；紅色封面版只寫「少見」，不寫年份或原因（研究 8598）。
+- **8628** 《High Hope!》曲名只舉〈Chips〉〈Crazy〉，避開 A2 的兩種寫法（研究 8599）；《Down Beat》專訪是 note 指定的主故事，寫的是他抱怨的內容，不是評價，不寫〈Bitter Hope〉標題和「唯一重要專訪」。
+- **8629** 《You Are My Sunshine》把 1966 年第一個三重奏和 1974 年本盤分開寫：只沿用鋼琴（市川秀男），貝斯換成宮本直介；照「只寫上列各項」，不點名寺川正興。The New George Otsuka Trio 只當全名出現，卡片藝人欄的字串不改。
+- **8630** QA：`qa-batch out` 3 張 233–238、`qa-check-research` 標記 0、`fix-spacing` 待補 0。
