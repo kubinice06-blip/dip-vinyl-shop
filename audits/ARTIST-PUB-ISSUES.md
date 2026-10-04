@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 403 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 407 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -407,3 +407,7 @@
 | ar-c-fix2 | Perfect | Perfect | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl／en 維基稱約一百萬張，說法不一；Perfect 在世且仍有成員活動，銷量與認證類內容依規則不寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 |
 | ar-c-fix2 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
 | ar-c-fix2 | 脆樂團 | 有多少光就有多少黑 | 專輯裡十首歌各有一幅畫，其中五幅後來進了波隆那插畫展 | TiBE 台北國際書展的 2020 波隆那插畫展台灣入選頁，丁律妏名下只列《虛線．Déjà Vu》一件；『五幅』只見 zh 維基與搜尋摘要。建議把『五幅』改成『入選波隆那插畫展』，或確認件數再寫。 | https://www.tibe.org.tw/tw/show_detail/47/87/484 |
+| ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
+| ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
+| ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
+| ar-d-117 | Black Eyed Peas | Elephunk | 〈Where Is the Love?〉在十五個國家奪冠 | 英文維基首段寫 peaked atop music charts in 13 countries；數字待核，建議改 13 或去掉數字。 | https://en.wikipedia.org/wiki/Black_Eyed_Peas |
