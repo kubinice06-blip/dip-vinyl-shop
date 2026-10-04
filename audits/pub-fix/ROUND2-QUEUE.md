@@ -6,6 +6,8 @@
 |---|---|---:|
 | B1 | 退件說明／管線字樣——**客人看得到，最優先** | 0 則 |
 | B1b | 正文以「本卡」當主詞的版本說明（非退件，次優先） | 7 則 |
+| B3 | 資料庫口吻——把條目結構講給客人聽（2026-10-04 店主裁示改寫） | 176 則 |
+| B4 | 正文夾諺文（機構名、人名沒譯） | 71 則 |
 | C | 人工補記（含另一個工作區點名的五件） | 6 則 |
 | A | 事實更正，需研究後改寫 | 268 條／234 張卡 |
 | B2 | 正文點名出處的**候選**（維基／MusicBrainz／Discogs／AllMusic…），逐則判斷要不要改成不具名敘述 | 786 則 |
@@ -25,6 +27,263 @@ A 區有 55 條的原句在線上已經找不到（多半被第一輪的去出�
 | `desc2:various artists／laos: lam saravane / musique pour le khène` | 二。這份錄音 1978 年先以雙 LP 由法國國家電台出版，本卡是 1989 年的 Ocora CD 版，六軌約七十分鐘。開頭那首長篇由兩位歌者 |
 | `desc2:wanda landowska／bach: goldberg variations` | -la-Forêt 為 HMV 錄下二十世紀第一份此曲唱片；本卡則是 1945 年 3 月至 6 月在紐約 RCA Victor 第一錄音室的重 |
 | `desc2:新寶島康樂隊／第3輯` | 目，一筆把這一軌算了進去記成 12 軌，另一筆記 11 軌。本卡採的是十二軌那筆，1995 年滾石唱片、一片 CD，開場〈歡聚歌〉2:22，最短 |
+
+## B3　資料庫口吻
+
+| 鍵 | 前後文 |
+|---|---|
+| `desc2:9와 숫자들／9와 숫자들` | 、3、4。這張出道盤的碟名與掛名同形，只留下一筆建檔——單片十三軌的韓國 CD，廠牌 Tunetable Mov |
+| `desc2:a witness／i am john's pancreas` | ON1 排到 ZRON34，其中整張 LP 只有五筆。 |
+| `desc2:airbridge／paradise moves` | -Up Records 的目錄只有四個編號，另外三筆都是七吋與十二吋，這張是它唯一的 LP。英文維基的樂團條目說 |
+| `desc2:akbar golpaygani, elaheh, mahmoodi khansari & hayedeh／golhaye rangarang 539 & 540` | 端上記的日期是 1976 年 4 月 16 日，那一筆載體記成數位媒體，廠牌記 Caltex Records、沒有 |
+| `desc2:akira yamaoka／silent hill 2 original soundtracks` | -100，同一天上市。MusicBrainz 記兩筆都在 2001 年 10 月 3 日出、都是單片 30 軌， |
+| `desc2:akmu／개화` | 、由 YG PLUS 發行、編號 YP0829，兩筆數位掛的是二人組自己的廠牌。這是第四張錄音室專輯。 |
+| `desc2:alan braufman／valley of search` | :00。逐軌曲長只有 MusicBrainz 那兩筆填了，最短的一軌 0:21。維基條目說，這家廠牌由 Bob  |
+| `desc2:antis／kažkas atsitiko` | 12-31 到 1990-11，這五年多裡名下的三筆碟連著三年。 |
+| `desc2:antis／ša!` | 分半。1988 那筆的廠牌與形態欄都是空的，這個條目底下唯一掛得出廠牌的，是 2003 年那筆數位版的。 |
+| `desc2:argo／discophonia` | 各擺在一面的開頭，合計約三十八分半。1981 年兩筆原壓都是 Мелодия、目錄號 С 60—15173-4、 |
+| `desc2:bigbang／always` | 軌的詞由四位團員合寫，曲與編曲交給 Perry。四筆建檔同一天、同為六軌，韓國實體只有一筆。 |
+| `desc2:black brothers／terima kaseh` | 。這支樂團出自查亞普拉，1975 年遷到雅加達。資料庫端登記在案的只有一筆：1978 年馬來西亞 EMI 的壓片、編 |
+| `desc2:brigada víctor jara／eito fora` | 碟上也出現過，其中一個只差一個母音。1977 年那一筆發行的國別欄與廠牌欄都是空的，也沒有再版。 |
+| `desc2:bts／dark&wild` | ，中間的主體前重後輕。全碟 51 分 32 秒，三筆建檔同一天，同為十四軌。 |
+| `desc2:c.c.c.c.／cosmic coincidence control center` | 1，也是他們名下第一筆非現場作品——排在它前面的兩筆都帶著現場標記。 |
+| `desc2:carlos do carmo／um homem na cidade` |  那筆標的是宣傳片，1980 那筆才是正式發行。兩筆的編號完全相同，都是 Trova 的 MOV. 7005。十 |
+| `desc2:cecilia／un ramito de violetas` | 軌；同名曲另有一筆 1974 年的單曲條目，分開建檔。黑膠的欄位沒有登錄長度，1992 年那張曲序相同的 CD  |
+| `desc2:chain of strength／true till death` | 兩筆同規格的壓片裡，只有一筆記下了六軌的長度。六軌合計 13 分 8 秒，第三軌3:02  |
+| `desc2:charles dodge／earth's magnetic field` | 曲名，一面十四分四秒、另一面十五分十四秒。版本頁五筆全是 Nonesuch 同一個編號的壓次，沒有第三方廠牌碰過 |
+| `desc2:credo／melnais kliedziens` | 行國別則從 LV 換成 SU，俄語那版的盤名是。兩筆的六軌都沒有登錄長度，能看的只有寫法：第一與第五軌的軌名都是 |
+| `desc2:crying nut／crying nut` | 貨架上這張碟叫，那其實是第 3 軌的英譯。海外那一筆連十三軌的諺文曲名都換成了英文題——Epitaph、Seag |
+| `desc2:crying nut／서커스 매직 유랑단` | 002 年那張DMK144-2，三張都掛在底下。三筆建檔同在 1999 年 11 月 5 日、全是十三軌。全碟  |
+| `desc2:dariush／cheshme man` | 同一個條目底下的三張碟，只有一軌是共同的。三筆的曲目幾乎不重疊，可以逐軌寫的是十二軌那一筆，合計 1:01 |
+| `desc2:dzeltenie pastnieki／bolderājas dzelzceļš` | 發才有廠牌與編號 IBCD 201，那個人名正是五筆成員關係之一。末軌把樂團名字改了一個字。 |
+| `desc2:earth crisis／firestorm` | 長度一模一樣，換的只有國別、廠牌名與編號。所釘的這一筆是 CD，廠牌欄掛 Victory Europe、編號記為  |
+| `desc2:ebi／khalij` | ；末軌3:37 最短，十軌合計 48:30。這個條目底下只有一筆發行，廠牌與載體兩欄都是空的，剩下的只有年份、發行地 |
+| `desc2:elaheh, aref & emad raam／elaheh, vol 5` | 唯一可得的日期是 1972 年 8 月 1 日，那一筆的廠牌欄由兩家合掛、兩家都沒有編號。Aref 名下十五個條目 |
+| `desc2:elaheh, mohammad-reza shajarian & jalil shahnaz／golhaye tazeh no. 23: abu ata` | rchestra 都在裡面，第三軌另外還多一位。這一筆的著作權欄把兩個年份分開記著：℗ 年是 1975、持有者記的 |
+| `desc2:električni orgazam／električni orgazam` | 創性，PGP-RTB 則對其中兩首的歌詞有意見，兩筆都是編輯判斷；唱片最後在 1981 年 5 月由 Jugot |
+| `desc2:fausto／madrugada dos trapeiros` | 。開場的4:07 就落在偏長的一側。1977 年這一筆是名下唯一的發行，廠牌欄與載體欄都是空白的。掛名的別名記著  |
+| `desc2:fin.k.l／white` | 同一天建檔的兩筆，數位那筆掛 DSP、CD 那筆掛 DAEYOUNG AV。 |
+| `desc2:fix／värviline maailm` | 的起始年 1968 隔了十一年。成員關係多達四十四筆，其中一位原始成員的區間分成兩段，1979 剛好落在空檔裡。 |
+| `desc2:foje／geltoni krantai` | 寫的是卡帶盒。廠牌、編號與條碼三欄全空，整張只有這一筆建檔、沒有再發，九軌卻全部有長度。第五軌8:42 最長，三軌 |
+| `desc2:franco & le tpok jazz／20ème anniversaire 6 juin 1956 - 6 juin 1976, volume 2` | 383。Discogs 那筆的備註只有一句，同站另一筆 360.082/83 就是那張雙唱片，本張五軌正是它的 C |
+| `desc2:fritz wunderlich／salzburger liederabend` | 高音與鋼琴 Hubert Giesen 兩個人。兩筆 Discogs 條目各自直記同一場：1965 年 8 月  |
+| `desc2:gary burton & chick corea／crystal silence: the ecm recordings 1972–79` | 跨七年的三筆錄音收進一個盒子，兩首現場曲首度數位化。2009 年 ECM |
+| `desc2:geoff mann／chants would be a fine thing` | dios——廠牌名與錄音室名是同一個字。廠牌頁十三筆多半是本地樂團的七吋單曲，本捲是裡面唯一不用 TRS 編號的 |
+| `desc2:googoosh／akharin khabar` | 八軌全部關在一分三十三秒寬的帶子裡。取數位那一筆來看，最長的5:28 與最短的3:55 就是帶子的兩端，與盤 |
+| `desc2:googoosh／mordaab` | 短與最長差了將近三倍。端上釘住的是 1990 年那一筆發行，一張 CD、十四軌，發行國與廠牌兩欄都是空的。這個掛名 |
+| `desc2:googoosh／persian music: googoosh 3, dou mahi` | 標題只寫作，帶著卷號的長盤名只存在於上一層。端上那一筆是一張 CD、十四軌，廠牌記 Caltex Records、 |
+| `desc2:guadalcanal diary／walking in the shadow of the big man` | 內戰神話，以及人體自燃。版本頁上 1984 年的四筆全掛 DB Recs，1985 年起的全掛 Elektra  |
+| `desc2:h.o.t.／resurrection` | 在最前面兩格，中段的5 分 20 秒是全碟最長。三筆建檔都是十四軌。 |
+| `desc2:h.o.t.／wolf and sheep` | 內頁的團員名字都走塗鴉字，出自洛杉磯的美術團隊。三筆建檔都是單片九軌，每軌的諺文原題後面都附一個英文副題。 |
+| `desc2:hayedeh／sogand` |  Mahasti 是手足，兩人生年相差四年。這個條目底下只有一筆發行，載體記的是數位媒體，廠牌欄一個字都沒填。 |
+| `desc2:helen reddy／i am woman` | 製想借歌，Reddy 開出的價碼是重錄一次、外加三筆婦女中心捐款。原是 1971 年出道專輯裡一個她並不滿意的版 |
+| `desc2:hitoshi okano／double image` | 曲長，也沒有替任何一軌登錄作曲者，版本頁底下只有兩筆，都是 1982 年的黑膠。川端民生 1947 年生於北海道 |
+| `desc2:i mean us／into innerverse` | 上發行公司。兩種實體共用編號 IMU003，黑膠那一筆的廠牌欄寫的就是樂團自主發行，CD 那筆才填上公司名。這張碟 |
+| `desc2:imants kalniņš／4. simfonija` | 個速度術語，三次壓片都沒有登錄長度。四軌依序是，三筆盤面都是十二吋、四軌、紙套，差別只在編號與國別：1974 年 |
+| `desc2:imrat khan／ragas marva · sudda saranga` | ao Popatkar；Discogs 底下只有三筆版位，此後沒有再發。Marva 用 tivra Ma 與 k |
+| `desc2:incapacitants／eternal paralysis` |  PT-1 是那家卡帶廠的創廠第一號，同期的另外四筆同樣全是卡帶；美川俊治在大阪起手時，這還是他在樂團之外的個人 |
+| `desc2:incapacitants／repo` | 四十七分鐘。在這張之前，美川俊治與小堺文雄名下的四筆全是卡帶，這是他們第一次把聲音壓進黑膠，1989 年由 Al |
+| `desc2:inside out／no spiritual surrender` | 28 秒。1990 年那張黑膠之外，這批錄音還有三筆版本，目錄編號在四筆上寫成四種樣子，所釘的這一筆記為 REV |
+| `desc2:integrity／those who fear tomorrow` | 美國 Overkill，只出過 CD 一種載體，那一筆的廠牌欄有名字、編號欄卻是空的，本張也是名下最早的一張長篇。 |
+| `desc2:iu／chat-shire` | 數位版七軌，實體多的那兩首只印在光碟上。數位那三筆是七軌，晚四天的韓國實體 CD 則是九軌，多出來的與只印在光 |
+| `desc2:jah free／breaking out` | MB 上這張 CD 有兩筆紀錄，日期、廠牌、編號與軌數全部相同，只有條碼不同。黑膠條目 |
+| `desc2:jalil shahnaz, abdolvahhab shahidi, asqar bahari, faramarz payvar, hasan nahid & hoseyn tehrani／musique persane` | 式的名字。那兩個長度是 1971 年法國盤上的，這一筆掛 Ocora、編號 OCR 57。並列在每一軌欄位上的六個 |
+| `desc2:jarcha／libertad sin ira` | NLX-1.070 是一張 12 吋、十軌，名下兩筆發行都是西班牙盤、都是十軌，曲序也相同。這個掛名底下一共只有 |
+| `desc2:jimmy riley／majority rule` | Discogs 版本欄裡美國 Makossa 那兩筆寫、Camille 那筆寫。十個曲位以開場、以收尾。 |
+| `desc2:john gordon／erotica suite` |  Records, Inc.；2021 年英國那兩筆，廠牌欄掛的則是 Strata-East 自己。 |
+| `desc2:jumprava／pilsēta` | 欄只寫、沒有登錄尺寸。成員關係欄裡，三位團員的那三筆在同一天結束：1991-12-15。 |
+| `desc2:k2／the rust` | 版每一面剛好放一段。草深公秀在 1983 年出過兩筆之後，隔了整整十年才有下一張，要到 1993 年起才密集起來 |
+| `desc2:katedra／mors ultima ratio` |  С60 30149 009、12 吋九軌，這個條目底下就這一筆，沒有再發。成員關係欄完全空白，名下只有四個發行品， |
+| `desc2:krakdown／krakdown` | ause，編號記為 NR-18183，名下就只有這一筆。 |
+| `desc2:lard free／gilbert artman's lard free` | 的 291 筆名單上，樂團與 Artman 分列兩筆。 |
+| `desc2:lluís llach／com un arbre nu` | ay 的 S-30031 是一張 12 吋，名下四筆發行都是九軌。九個曲名裡有三個不是加泰隆尼亞語。 |
+| `desc2:los bravos／black is black` | 二個曲名清一色英語，一個西班牙語曲名都沒有。目前建檔的只有兩筆發行：1966 年美國 Press Records |
+| `desc2:los destellos／destellantes` | 與，1974 年這個團名下就只有這張碟與那張單曲兩筆。十一軌全部擠在 2:23 到 3:28 之間，最長與最短只 |
+| `desc2:m83／junk` | 路公開徵選進來的。2016 年 4 月 8 日的五筆發行版本全部 15 軌，總長 55 分 40 秒，製作是 A |
+| `desc2:mahasti／bigane` | 兩軌差到三分鐘。首軌的拼法比盤名多一個 h。這個條目底下只有一筆發行，十六軌合計 1:16:42，載體記數位媒體，廠 |
+| `desc2:menuets／dzeguzes balss` | ，末軌那一段的長度是同名曲的三倍多；這組時間取自兩筆 1979 原壓裡有登長度的那一筆，另一筆八軌一格都沒填。盤 |
+| `desc2:mohsen namjoo／toranj` | 長與第二長的兩軌，分別站在第一軌與第九軌。以端上那一筆計，與盤名同字的首軌6:35 與末軌6:21 把中間七軌整個 |
+| `desc2:montage／anthropologie` | 期於澀谷開過唱片行 Paris-Peking。第三筆 credit 是 Akira Yamamichi，作曲、混 |
+| `desc2:multi-story／chimes` | 接填團名，Discogs 上那個廠牌實體整頁只有這一筆；七軌，錄音在格溫特郡凱爾利恩的 Loco Studios， |
+| `desc2:noir désir／666.667 club` | 版與更正版同時在市面上。11 月 11 日發出的兩筆 CD 用同一個品號，區別只寫在附註上，一筆標更正、一筆標印 |
+| `desc2:noir désir／veuillez rendre l'âme (à qui elle appartient)` | 風欄記 rock alternatif。前一張的四筆壓片全部只有 6 軌。 |
+| `desc2:o-hum／nahal-e heyrat` | 兩個十一軌版之間逐軌只差 0 到 8 秒。取重製那一筆來看，與盤名同字的第四軌 6:06 是全張最長的一軌，第八軌 |
+| `desc2:owen gray／forward on the scene` | ，以及加拿大 Monica's Records 那一筆，released 欄是 0。曲目從開場。 |
+| `desc2:pain jerk／aktion bruit` | 13；光那一年，五味浩平名下就有八筆，隔年再添十四筆，兩年合計二十二筆，這張只是其中之一。 |
+| `desc2:pari zanganeh／the series of music for young adults: iranian folk songs` | 的與末軌5:08，十一軌加起來約三十七分鐘。端上兩筆發行都缺著欄位：一筆沒有日期，一筆沒有狀態，其中一筆連廠牌實 |
+| `desc2:parálisis permanente／el acto` |  12 吋、十三軌，A 面六首、B 面七首，名下兩筆發行都是十三軌。這個掛名底下的十筆條目裡只有這一張是專輯，另 |
+| `desc2:pete seeger／american favorite ballads, vol. 1` | 的。Discogs 記 1963 與 1965 兩筆再壓才印出 Volume One，1968 年的立體聲版又拿 |
+| `desc2:phil pratt／star wars dub` | 、2024 與 2025 各出過一次，2024 那一筆的標題欄還多打了一個 s。條目本身卻很薄：credit 欄只 |
+| `desc2:phương tâm／magical nights: saigon surf, twist & soul (1964-1966)` |  Mark Gergis 把這批失散的錄音找回來建檔；1975 年之前的越南既沒母帶也沒有文件。Sublime  |
+| `desc2:raimon／per destruir aquell qui l'ha desert` | R. 30 是一張 12 吋、十二軌，這張碟只有這一筆發行，沒有再版也沒有 CD 版。名下在 1976 年之前的錄 |
+| `desc2:riow arai／mind edit` | D，編號回到廠牌主線，前一張走的是子廠牌那一條。三筆 release 逐版比對下來，十一軌的曲名與曲序完全相同， |
+| `desc2:robert calvert／hype` |  Discogs 實體底下只有 IF 0311 這一筆發行，圓標上還印著 Made in France。錄音在倫敦 |
+| `desc2:rufus featuring chaka khan／rufus featuring chaka khan` | 的名字排進了團名裡。MusicBrainz 收的這一筆，每一軌的 artist-credit 都與盤名同字。由 K |
+| `desc2:ruja／ruja` | одия С60-16885-6、12 吋十軌，另外兩筆掛同一個目錄號的，是同內容的翻譯盤面。那十軌從 1:49 到 |
+| `desc2:s.e.s.／sea & eugene & shoo` | 同一張碟，封面上印過三個不同的標題。四筆韓國版分別題，目錄號 KSC-8087 與條碼卻同屬一組。三 |
+| `desc2:sergiu celibidache／tchaikovsky: symphony no. 5` | ，第五軌就是那段掌聲；MusicBrainz 上這一筆並沒有給它現場標記。英文維基記，他在世時斷然拒絕把演出發成商 |
+| `desc2:shahram nazeri／atashi dar neyestan` | 8，第五軌反過來從 8:05 拉到 13:38。四筆發行分屬三家廠牌，1991 年的兩筆都掛 Caltex Re |
+| `desc2:siavash ghomayshi／farangis` | 的第四軌 5:48，兩軌緊挨著。那兩個數字是端上這一筆登錄的長度，後來上架的版本把第三軌記成 4:57，兩端差了將 |
+| `desc2:side by side／you're only young once...` |  26 秒。廠牌欄寫的是 Revelation，兩筆壓片的編號分別記成 5 與 REVELATION:5。 |
+| `desc2:sisa／qualsevol nit pot sortir el sol` | ste 兩家合掛同一個目錄編號 UM 2021，三筆發行都是八軌，也都是西班牙盤。這是 1971 年之後的第二張 |
+| `desc2:smash／glorieta de los lotos` | 行西班牙盤，唱片本身沒有留下目錄編號，名下也只有這一筆發行。純 Album 一共三張，這是最早的一張。 |
+| `desc2:suzukiski／waiting` | tastic Explosion。credit 三筆，當事人掛 Written-By、Mixed By 與 Pr |
+| `desc2:tagomago／flower instrumental` | 一次，逐軌只差一兩秒。MusicBrainz 的兩筆 release 掛同一個目錄編號 ZGV-007：1996 |
+| `desc2:tamaru／fuyu ni katarite` | 21、12:04、11:00。credit 只有三筆，當事人掛 Producer、Written-By 與 Mi |
+| `desc2:tamaru／夢の途中` | ，本張是三張裡唯一記成整數的。credit 只有三筆：當事人掛 Producer，Kazunao Nagata  |
+| `desc2:temdendam suay／sounzer paranoun (sound tracks of some films)` | Treatment]。本張 credit 欄只有四筆，Discogs 條目上也沒有 ℗／© 的登錄。內註一行寫著 |
+| `desc2:the argo singers／the soul of the argo singers` | 出 Richard Simpson。英國與法國那兩筆的立體聲是電子模擬的。 |
+| `desc2:the awakening／mirage` | 51 秒：Discogs 記 5:08，MB 那四筆全記 5:59。A1 反過來是 Discogs 記 5:37 |
+| `desc2:the black skirts／don't you worry baby (i'm only swimming)` | 創作歌手 Jo Hyu-il 一個人的單人樂團。兩筆建檔都是韓國正式盤、都掛 Doggy Rich，CD 的目錄 |
+| `desc2:the black skirts／team baby` | 持的廠牌 HIGHGRND 簽約，隔年這張碟留下兩筆同日建檔，一筆掛 Doggy Rich、目錄號 YP 000 |
+| `desc2:the icemen／rest in peace e.p.` | 最長，收在只有 2:20 的。這個掛名名下就只有這一筆碟，而實體記著的存在期橫跨 1982 到 1992 年，它落 |
+| `desc2:the roberta martin singers／prayer meeting` | 張碟後來由 Kenwood 沿用同一組編號再版，那一筆沒有登記年份。 |
+| `desc2:the third eye foundation／ghost` | ie Parsons 的另一個掛名。廠牌欄英國那兩筆是 Domino 的 WIGCD32 與 WIGLP32，美 |
+| `desc2:third quadrant／seeing yourself as you really are` | 個實體的 Discogs 簡介只有一句，底下只有兩筆。四個人的分工這次固定，不再一軌一換。第五軌兩邊對不上：Di |
+| `desc2:third quadrant／voyage to pluto` | 個站上是個獨立實體，底下只有 CSC 0001 這一筆。credit 只有三個人，而且分軌換手：Chris Dun |
+| `desc2:titiek puspa／sok teu` | 八軌 20 分 22 秒，1970 年之後她在資料庫端空白了十六年。這張由印尼 J&B Records 以 JBL |
+| `desc2:uno naissoo／mälestusi kodust` | 同一張碟四年後又壓了一次，那一筆連目錄號都沒有登記。1978 年那筆是 Мелодия С6 |
+| `desc2:various artists／băng nhạc shotguns 7 (yêu)` | 名。1970 一整年這個帶名發了九捲，本捲是十月那一筆：十五軌裡 Thái Thanh 唱三首、全捲最多，壓在開頭 |
+| `desc2:various artists／guitars of the golden triangle: folk and pop music of myanmar, volume 2` | shio Thein Aung 四軌；來源卡帶在資料庫端沒有可對應的原盤。當年的樂評形容這批電吉他沒有 power  |
+| `desc2:various artists／laos - l'art du khène` | 二十二秒，最短的正是那段二重奏，只有兩分十三秒。資料庫端以 Laos 為題的盤裡，這張建檔年代最早。 |
+| `desc2:various artists／princess nicotine: folk and pop music of myanmar (burma), vol. 1` | 。收的是橫跨約五十年的錄音，來源卡帶與廣播母帶在資料庫端沒有對應的原盤，整張因此以合輯建檔。2011 年黑膠再版、2 |
+| `desc2:various artists／shadow music of thailand` | P.M. 占八軌，其餘三組分走九軌，參與的樂隊在資料庫端只有軌級登記。錄音全在 1960 年代中的曼谷，選輯與設計出 |
+| `desc2:various artists／thai beat a go-go, volume 1` | 。是衝浪吉他，那一軌改用泰國樂器奏，參與的樂隊在資料庫端只有軌級登記。2009 年的黑膠版只收十三軌，選曲也換過。 |
+| `desc2:various artists／zabriskie point` | 盤的盤名，後來的版本一路把它縮短。1970 年那三筆黑膠的標題欄寫的是，1990 年那幾筆 CD 只剩，1997 |
+| `desc2:various artists／赤聲搖滾第一集：scum` | 中四組在 MusicBrainz 留下的錄音只有這一筆。 |
+| `desc2:walter bishop, jr.'s 4th cycle／keeper of my soul` | scogs 一致用團名。版本欄裡的日本授權盤排了五筆，從 1973 年的 YX-6090、2005 年的 P-V |
+| `desc2:world standard／country gazette` | t 欄是空的，整份 credit 只出現在美國盤那一筆：Larry Campbell 掛班鳩、多布羅、曼陀林與踏板 |
+| `desc2:zeni geva／nai-ha` | 三筆實體版本全部出在美國，沒有日本版。六軌總長約三十二分鐘，最短 |
+| `desc2:zigmars liepiņš & opus／pēc likuma` | 團 1982 至 1989 的存續年完全重合，有五筆從頭到尾都在。 |
+| `desc2:zodiac／in memoriam` | 同一個編號底下的兩筆原壓，一種盤面七軌、一種八軌。俄語那套把 9:06 的開場拆 |
+| `desc2:zodiac／music in the universe` | одия С60-18365-6、12 吋七軌，四筆實體盤共用同一個編號，建檔的字串卻沒有兩筆一模一樣。七軌長度 |
+| `desc2:чернавский/матецкий проджект／банановые острова` | 成為 1987 年電影的核心角色。1983 年那兩筆發行沒有廠牌登錄，最早帶廠牌的是 1995 年 APEX R |
+| `desc2:คาราวาน／คนตีเหล็ก` | 同一張碟三種曲序：卡帶 A、B 面各五首，資料庫端那版多了一個演奏版。多出來的末軌是的演奏版，這首 3 分半也 |
+| `desc2:ထူးအိမ်သင်／မှော်ဆရာအိပ်မက်` | asis 錄音室出版，這張隔年二月接上，十六軌，資料庫端只留下軌數與曲目，載體欄是空的。曲長從 2 分 35 秒到  |
+| `desc2:လေးဖြူ／ပါဝါ ၅၄` | 年代中期的第二張個人盤，與名下最早那張隔了兩年；資料庫端只登記 1996 年的緬甸 CD 一筆，沒有任何再版。十二軌 |
+| `desc2:ほうむず／朝日に向かって` | MusicBrainz 兩邊都只有 1978 年那一筆。 |
+| `desc2:ハナタラシ／ハナタラシ` | ，羅馬字拼法裡的 i 就被拿掉了。在此之前名下的四筆全是卡帶，1985 年這張才是第一張黑膠，出在 Alchem |
+| `desc2:不失者／allegorical misunderstanding` | ，也是不失者名下第一筆非現場作品——排在它前面的三筆都帶著現場標記。 |
+| `desc2:伍佰 & china blue／太空彈` | 隔年又錄了一次，資料庫把兩個版本記成兩筆錄音。這張碟上的那一版 5:18，上的那一版 5:27。十軌 |
+| `desc2:伍佰 & china blue／無盡閃亮的哀愁` |  軌，開場的同名曲 4:01，也在其中。紀錄上有兩筆發行：2013 年 12 月 13 日的數位版，以及同年台灣 |
+| `desc2:佐藤允彦／trinity` | 什麼樂器的紀錄，只有 Peter Warren 那一筆的註記寫著低音提琴與大提琴。這張 12 吋 1971 年由  |
+| `desc2:原田依幸／無明 [mu-myo]` | 分鐘。掛名是原田依幸與松風鉱一兩人平列，其中松風那一筆的註記寫著薩克斯風與長笛。 |
+| `desc2:大支／暗網` | 體加一位道長，第十軌的客座欄寫的是。2018 年兩筆都掛 AsiaMuse，數位先行、實體晚七天。 |
+| `desc2:大支／硬` | 兩軌在盤上記了客座。盤名只有一個字。2016 年那一筆台灣發行的載體欄是空的，也沒有掛廠牌，條碼 47129315 |
+| `desc2:大支／音政樂治` | 一位創作者 2016 與 2018 那兩張都短。這一筆發行沒有掛廠牌。2020 年 12 月的台灣盤是一張 CD、 |
+| `desc2:大谷幸／新機動戦記ガンダムw operation 1` | 軌裡有二十軌不到兩分鐘，最短的只有四十秒。MB 四筆 release 一致記大谷幸這張單片 40 軌，那首四十秒 |
+| `desc2:天野正道／ジャイアントロボ the animation -地球が静止する日- original sound track i` | LLON BCCM-18 名下，單片 19 軌，四筆 release 軌數一致；盤名有三種：日本原盤的長標題、德 |
+| `desc2:宇宙人／一萬小時` | 獎；另外兩張台灣 CD 標的是英文盤名，只有數位那一筆用中文。 |
+| `desc2:小栗均トリオ／みどりいろの渓流` | 的廠牌回顧輯選走的則是另一軌。Discogs 的建檔者說曲名照他手上那張原盤抄、拼字一個都沒改，條目上因此留著  |
+| `desc2:崎元仁／final fantasy xii original soundtrack` | rainz 記 2006 年 5 月 31 日那兩筆 CD 的廠牌欄同時掛 Aniplex 與 SQUARE E |
+| `desc2:崎元仁／vagrantstory original soundtrack` | 連寫、分寫、片假名。MusicBrainz 底下三筆 Official 各用一種：2000 年 DigiCube |
+| `desc2:川井憲次／patlabor 2 the movie` | -84206，川井憲次這張單片 13 軌，MB 五筆 release 軌數一致。曲名全是英文短詞——outset |
+| `desc2:巴奈／愛，不到` | 盤名自己也帶一個逗號。2020 年的台灣 CD，這一筆發行沒有掛廠牌，也沒有條碼與目錄編號。 |
+| `desc2:康士坦的變化球 constant & change／擱淺的人` | 長到十七個字，落差就是這張碟的節奏。他們名下只有三筆發行，三張全是專輯，一張 EP 與一首單曲都沒有。團名則出自 |
+| `desc2:康士坦的變化球 constant & change／眠月線` | CD 9 月 2 日跟上，編號 KFK2309，兩筆共用同一個條碼。 |
+| `desc2:新寶島康樂隊／第3輯` | 名叫。那個玩笑在紀錄上留下一組雙胞胎：資料庫裡有兩筆標題、年份、藝人、廠牌與條碼都相同的條目，一筆把這一軌算了進 |
+| `desc2:新寶島康樂隊／第二輯` | CD，開場4:22。Discogs 把它建在這個條目底下，原盤條目的標題則印成 New Formosa Band V |
+| `desc2:李英宏／台北直直撞` | 9 兩軌，兩位的名字寫在軌級掛名上。2016 年那一筆發行掛顏社，條碼欄是空的，這也是名下最早的一張長篇。 |
+| `desc2:李英宏／水哥 2020` | 者四年前那張十二軌，只有兩軌有客座。2020 年這一筆掛顏社，條碼 4712862000260，是名下最晚的一張長 |
+| `desc2:林強／千禧曼波 電影原聲帶` | 內附三張電影劇照明信片。CD 版本十軌，紀錄上的兩筆數位發行只有九軌，少掉的是第 6 軌那首 remix，收的是 |
+| `desc2:林生祥／林生祥童謠專輯: 頭擺頭擺` | 9、條碼 4713012741903。名下九筆有五筆是原聲帶，扣掉之後四張長篇裡本張最晚。 |
+| `desc2:植松伸夫／final fantasy vii: original soundtrack` | sicBrainz 的 release 清單把這四筆都標成 Bootleg——笙美 A&G-007〜010、K- |
+| `desc2:滅火器／家和萬事興` | 行、編號 FIREON-0141，10 軌。成績兩筆都入圍未得獎：2024 年第 35 屆金曲獎的年度專輯獎、最 |
+| `desc2:滅火器／進擊下半場` | 同日發了台灣的 CD 與數位版，同條碼、同曲序，兩筆都掛火氣音樂。 |
+| `desc2:無妄合作社／二十一世紀的破青年` | 五分鐘以上，八軌一位客座都沒有。2019 年留下三筆發行：台灣的 CD（編號 AR-012）、一筆數位版，再加一 |
+| `desc2:煙雨飄渺／霧島` | 所全都收在同一間公司底下，還辦起自己的音樂祭。的兩筆發行與實體編號，走的就是這一整套自己蓋起來的產線——2023 |
+| `desc2:百合花 lilium／不是路` | 的最佳專輯製作人獎。同年第 13 屆金音創作獎的兩筆也都是入圍未得獎：最佳現場演出獎，與的最佳搖滾歌曲獎。樂團的 |
+| `desc2:竇唯／幻聽` |  02 秒。中國首版 1999 年出，線上流通的那一筆標的則是 2001 年的臺灣版。 |
+| `desc2:舒米恩／bondada` | 03 到 4:22，一位客座都沒有。2019 年三筆發行的載體全部是數位，兩筆同日的版本共用同一個條碼，十天後那 |
+| `desc2:落差草原 wwww／泥土 soil` | 計約六十七分鐘，一位客座都沒有。2015 年同日兩筆發行的盤名寫法不同：數位版中間是一條斜線，實體 CD 中間只 |
+| `desc2:董事長樂團／真的假的!?` | 一個句點，之後的第二十軌才是4:04。同一組底下另一筆只登錄到第十二軌，兩筆同編號 CMD204、同是 2006  |
+| `desc2:血肉果汁機 flesh juicer／深海童話` | 單上的報名單位卻是另一個名字，好球娛樂有限公司。兩筆成績都是入圍未得獎：2019 年第 30 屆金曲獎最佳樂團獎 |
+| `desc2:豬頭皮／人生半百古來嘻` | 場那一軌 6:26，最長的11:12。同一年另有兩筆單曲規格的實體出版，其中一筆的曲名就是碟上的7:08，另一筆 |
+| `desc2:鄭宜農／水逆` |  CD（編號 FIREON-0074）與數位版，兩筆都掛火氣音樂。 |
+| `desc2:閃靈／台灣大凱旋` | ；三軌帶客座，收尾那一位的名字是全張唯一的漢字。兩筆發行都是數位版，一筆掛 Wind Music。 |
+| `desc2:閃靈／台灣閃閃爍 megaport 2021` |  8:46 的。第三軌之後的七軌都掛同一位客座。三筆發行的盤名不一樣：數位版印完整的漢字加英文，兩張台灣實體 C |
+| `desc2:閃靈／武德殿不插電演唱會實況` | 4 差了五分鐘以上，中段還有壓得很短的1:51。這一筆的藝人掛名寫的是漢字，十二項的軌級掛名也都是漢字。唯一一筆發 |
+| `desc2:閃靈／演武` | 五筆發行的載體全部是 DVD-Video，其中一筆另附一張十軌的 |
+| `desc2:閃靈／醒靈寺大決戰` | 四筆發行裡三筆是兩張 CD 加一張 DVD，第四筆是單張藍光。四十個項目一律沒有留下長度。兩張 CD 分成十軌 |
+| `desc2:陳小霞／老翅膀` | 7 日由華研國際發行，收十軌，紀錄上一筆是數位、另一筆是同年的黑膠；最短的3:50，最長的一軌 5:05。她 19 |
+| `desc2:브로콜리 너마저／보편적인 노래` |  22 秒明顯拉長，收尾的2 分 38 秒最短。兩筆建檔同一天，實體是韓國 CD、廠牌 Luova Factor |
+| `desc2:장기하와 얼굴들／장기하와 얼굴들` | 第 9 軌才開始拉長，全碟 44 分 29 秒。兩筆建檔同一天，CD 掛、目錄號 BGF-012。這張碟拿下 2 |
+
+## B4　正文夾諺文
+
+| 鍵 | 前後文 |
+|---|---|
+| `desc2:bigbang／remember` |  Noeul，中文常譯）翻唱自 이문세（Lee Moon-se）的原曲。第 17 屆首 |
+| `desc2:boa／no.1` | 보아（BoA）的韓國第二張正規盤，2002 年 4  |
+| `desc2:brown eyed soul／soul free` | 2003 年 9 月 17 日，나얼（Naul）、정엽（Jungyup）、성훈（Su |
+| `desc2:f(x)／pink tape` |  Gaon 與世界專輯榜冠軍；在멜론與한겨레邀四十七位樂評選出的韓國名盤一百張中列第 |
+| `desc2:girls' generation／oh!` | 소녀시대的第二張正規盤，2010 年 1 月 28 日由 |
+| `desc2:h.o.t.／we hate all kinds of violence` | ，通常被算作韓國偶像工業的起點。이수만事前對首爾的高中生做問卷，依調查結果組出문희준、 |
+| `desc2:hyukoh／23` | 혁오（HYUKOH）由主唱兼吉他手오혁領軍，2014 |
+| `desc2:iu／modern times` | 아이유（IU）的第三張正規盤，2013 年 10 月由 |
+| `desc2:iu／palette` | 아이유（IU）2017 年的第四張正規盤，詞曲絕大多數 |
+| `desc2:jambinai／différance` | 2009 年於首爾組成的잠비나이，以奚琴(haegeum)、篳篥(piri)與玄 |
+| `desc2:jay park／everything you wanted` | 박재범（Jay Park）第四張個人正規盤，2016  |
+| `desc2:n.ex.t／the return of n.ex.t part 1: the being` | 신해철 因 1993 年大麻案沉潛後，帶 N.EX.T |
+| `desc2:nell／healing process` | 넬（NELL）在後離開서태지컴퍼니，轉往울림 엔터테인먼트推出 2006 年 9  |
+| `desc2:newjeans／get up` | NewJeans（뉴진스）的第二張 EP，2023 年 7 月由 ADO |
+| `desc2:parannoul／to see the next part of the dream` | 파란노을（Parannoul）是首爾一位匿名獨立音樂人， |
+| `desc2:samulnori／record of changes` | 1978 年由金德洙(김덕수)與金龍培、李光洙、崔鍾實等人創始的四物놀이，把 |
+| `desc2:say sue me／where we were together` | 세이수미（Say Sue Me）2012 年組於釜山，第 |
+| `desc2:shin joong hyun／beautiful rivers and mountains: the psychedelic rock sound of south korea's shin joong hyun 1958-1974` | 韓國搖滾教父申重鉉（신중현）一九五七年自美軍第八軍團樂隊出身，一九六四年組 |
+| `desc2:silica gel／power andre 99` | 실리카겔 2013 年成軍於서울예술대학교，以사이키델릭 록為底，把合成器、取樣與 VJ  |
+| `desc2:the black skirts／201` | 검정치마是조휴일的個人名義；他十二歲移居美國、2006 年返韓後 |
+| `desc2:twice／eyes wide open` | 曲以 retro 為軸。主打由 박진영 與 심은지 作詞、Melanie Fontan |
+| `desc2:yerin baek／every letter i sent you.` | 백예린（Yerin Baek）與 JYP 約滿後自立廠 |
+| `desc2:가리온／가리온` | 純韓文寫饒舌，1998 年組成 가리온（Garion）。團名取自朝鮮傳說中一種棲息白頭 |
+| `desc2:박효신／second story` | 約 44 萬張後，第二張他找來 윤상（Yoon Sang）掌舵。這位製作人把抒情底子 |
+| `desc2:부활／부활 vol.1` | sbourne。走前者路線的是 부활，對面那支是 시나위，而 부활 正式成軍也就在同 |
+| `desc2:산울림／산울림 3집 (내 마음)` | 張白底抽象畫出自團裡吉他手之手，산울림 早期各張的封面都用他自己的畫。 |
+| `desc2:시인과 촌장／숲` | ，上頭的字也是他寫的。他學過畫，시인과 촌장的封面因此沒有假手他人。十軌總長約 39  |
+| `desc2:신촌블루스／신촌 blues ii` | 一張碟上輪流換人唱，김현식、한영애 各自負責不同曲目。除了這兩位，還有第三位歌手也 |
+| `desc2:윤상／윤상 1집` | 前他的身分是作曲家與樂手，當過 김완선 後場樂團的貝斯手，也替 변진섭 做過樂手。19 |
+| `desc2:이승철／이승철 part 1` | 裡只剩兩分二十四秒。那個樂團是 부활，他離開之後才有這張 1980 年代末的個人盤。 |
+| `desc2:이찬혁／eros` | 實是第 3 軌；全碟的詞都出自 이찬혁，作曲固定掛他與另外兩人。2025 年 7 月  |
+| `desc2:한영애／바라본다` | ，同去的幾位樂手與她組成的團叫 신촌블루스。她名下第二張的這一碟九軌約 40 分，同名的5 |
+| `desc4:bts／love yourself 轉 'tear'` | 방탄소년단（BTS）的第三張韓語正規盤，2018 年 5  |
+| `desc4:drunken tiger／위대한 탄생` | 타이거 JK 與 DJ 샤인 的드렁큰 타이거 正規二輯，2000 年 3 月 29  |
+| `desc4:hwang byungki／침향무` | 伽倻琴宗師黃秉冀(황병기，1936–2018)自作曲集，是其系列第一輯， |
+| `desc4:leenalchi／수궁가` | 이날치是 2019 年成軍的판소리流行樂團，團名取自 1880 年代的판소리名家李 |
+| `desc4:mid-air thief／무너지기` | 공중도둑（Mid-Air Thief）是韓國匿名音樂人， |
+| `desc4:se so neon／여름깃` | 새소년（SE SO NEON）2016 年於붕가붕가레 |
+| `desc4:tablo／열꽃` | Epik High 主腦타블로（Tablo）在學歷爭議停工一年八個月後交出的首 |
+| `desc4:tvxq!／"o"-正.反.合.` | 동방신기的韓語第三張正規盤，2006 年 9 月 29  |
+| `desc4:verbal jint／누명` | 버벌진트（Verbal Jint，本名김진태）在 SNP |
+| `desc4:김광석／네 번째` | 김광석（金光石，一九九六年一月過世）一九九四年六月由킹 |
+| `desc4:김광석／다시 부르기 ii` | 김광석 1995 年的第二張重唱盤，由 조동익 製作， |
+| `desc4:김두수／자유혼` | 김두수在一九九一年之後隔了十一年才交出的第四張作品，二 |
+| `desc4:김추자／늦기전에` | 一九六九年十月，十八歲的김추자以申重鉉作編曲集出道。前半走 soul 的節奏與 |
+| `desc4:김현식／김현식 3집` | 김현식（金賢植）1986 年的第三張正規盤，掛名義錄成 |
+| `desc4:델리스파이스／deli spice` | 델리스파이스 1995 年由 PC 通訊하이텔的모던록同好會 |
+| `desc4:들국화／들국화 1집 (행진)` | 一九八五年九月由서라벌레코드發行、樂團自任製作，在서울스튜디오錄成。전인권近 |
+| `desc4:봄여름가을겨울／봄여름가을겨울` | 김종진 與 전태관 離開 김현식 的伴奏樂隊後自組的雙人編制，1988 年由 송 |
+| `desc4:빛과 소금／빛과 소금 vol.1` | 장기호、박성식、한경훈 三人組的首作，1990 年由 동아기획 發行。 |
+| `desc4:산울림／산울림 1집 (아니 벌써)` | 김창완、김창훈、김창익三兄弟一九七七年十二月由서라벌레코드推出的出道盤 |
+| `desc4:산울림／산울림 2집 (내 마음에 주단을 깔고)` | 一九七八年五月由서라벌레코드發行、방기남製作。標題曲以六分餘的長度讓吉他緩慢 |
+| `desc4:서태지와 아이들／서태지와 아이들` | 金屬樂隊 시나위 貝斯手出身的 서태지 帶著 양현석、이주노 於 1992 年推出的首 |
+| `desc4:시인과 촌장／푸른 돛` | 하덕규 包辦全部詞曲、함춘호 擔任吉他的二人編制，1986 年錄於한국음반스 |
+| `desc4:신중현과 엽전들／신중현과 엽전들 1집` | 申重鉉一九七二年與貝斯手이남이、鼓手김호식組成엽전들（葉錢們），一九七四年由지 |
+| `desc4:양희은／양희은 고운노래 모음` | 양희은（楊姬銀，一九五二年生）大學一年級時的首張個人專 |
+| `desc4:어떤날／어떤날 i` | 조동익（1960 年生）與 이병우（1965 年生）的雙人組首作，封面上那組數字就 |
+| `desc4:어떤날／어떤날 ii` | 어떤날 的完結作，1989 年錄於서울 스튜디오。조동 |
+| `desc4:언니네 이발관／가장 보통의 존재` | 언니네이발관第五張正規，2008 年 8 月 8 日經쌈넷發 |
+| `desc4:유재하／사랑하기 때문에` | 유재하出身漢陽大學作曲系，一九八四年曾任조용필과 위대 |
+| `desc4:이문세／이문세 4집` | 이영훈 包辦全碟詞曲並任製作，1987 年由 서라벌레 |
+| `desc4:자우림／purple heart` | 자우림（紫雨林）1997 年以電影原聲帶裡的出道，同年 |
+| `desc4:잔나비／전설` | 잔나비（Jannabi）第二張正規2019 年 3 月 |
+| `desc4:장기하와 얼굴들／별일 없이 산다` | 장기하 包辦製作與詞曲編曲，錄音多半在 나잠 수 位於 |
+| `desc4:정태춘／시인의 마을` | 정태춘（鄭泰春，一九五四年生於京畿道平澤）一九七五至七 |
+| `desc4:조동진／조동진 1집 (행복한 사람)` | 조동진一九六七年以미8군 재즈록 밴드 쉐그린的吉他手兼主唱出道，十二年後才發表 |
+| `desc4:조용필／조용필 10집 part.1` | 奧運閉幕的電視轉播中放送而傳開，조용필受訪時說寫這首歌是因為他料想奧運結束後社會會轉為 |
+| `desc4:조용필／조용필 1집 (창밖의 여자)` | 조용필一九七七年因大麻파동被迫停止活動，解禁後於一九七九年組成위대한 탄생 |
+| `desc4:펄 시스터즈／님아` | 배인순、배인숙姊妹一九六八年的出道盤，全輯由申重鉉作曲編曲，封 |
+| `desc4:한대수／고무신` | 한대수第二張，一九七五年由 Four Season 發 |
+| `desc4:한대수／멀고 먼-길` | 한대수（韓大洙，一九四八年生）在釜山與紐約哈林區之間往 |
 
 ## C　人工補記
 

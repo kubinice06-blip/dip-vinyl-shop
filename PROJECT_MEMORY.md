@@ -1,5 +1,74 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-04｜dip-vinyl-shop｜核對出來的五樣小修、子曲風表重建（13,885 → 15,249 張）、拆卡的曲風善後
+
+同日第四筆。店主對核對結果裁示：「1、2 都做，3 排進去」。
+
+## 一、五樣小修（`audits/pub-fix/round2-smallfix-apply.mjs`）
+
+| 卡 | 修了什麼 |
+|---|---|
+| 蔡琴《蔡琴老歌》 | 固定試聽 Apple 1114507022（2003 鄉城 32 軌選輯）→ **993111862**（10 軌重製版，曲序逐首相符）。單獨過 published gate 0 error |
+| Queen《Greatest Hits》 | 補固定試聽（Apple 6781080300，17 軌、1981-10-26）；UPC 從俄羅斯盜版條碼換成同 RG 的 2011 重製 CD；頂點資格補評——**不列殿堂**，Queen 的席次已由三張原始專輯代表，精選輯不重複佔位 |
+| Ana Moura《Desfado》 | 曲風 jazz → world（fado） |
+| c-129 的十則 | 刪掉結尾的「這張沒有試聽來源。」（核對時估 11 則，其中一則沒上架，實際 10 則）。manifest 與批次輸出檔同步改 |
+| 서태지와 아이들 IV | 「한국공연윤리위원회」→「韓國公演倫理委員會」、「서태지」→「徐太志」。這張只有 desc4 |
+
+## 二、子曲風表重建
+
+09-04 之後上架的批次一直沒進 `card-subgenres.json`（09-10、09-17 兩輪上架都漏了 §10 的 `build-genre-tree`）。
+
+| | 有子曲風 | 沒有 |
+|---|---:|---:|
+| 重建前 | 13,885 | 3,377 |
+| 第一次重建（`--pull --write`） | 15,117 | 2,131 |
+| 補了一部分標籤後再重建 | **15,249** | **1,999** |
+
+剩下的 1,999 張裡 1,572 張是 KV 還沒有曲風標籤（`mapgenre3`）——標籤平常是玩家抽到卡時 worker 才去 Spotify／Last.fm 取的，
+新批次沒人抽過就沒有。新增 `scripts/warm-album-genres.mjs` 可以主動預熱（worker 只在有對應到曲風時才寫 KV，失敗或查無都不會污染）。
+
+⚠ **預熱只跑了 230／1,779 張就被停掉**：我把它放在背景跑（預估 74 分鐘），撞到背景工作的時限被系統終止；
+時限已經是上限，依規定沒有重啟。跑過的那 230 張命中率約七成、Spotify 零異常（間隔 1.6 秒）。
+**剩下的要在自己的終端機跑**：`node scripts/warm-album-genres.mjs`（已取過的會直接跳過），跑完再
+`node scripts/build-genre-tree.mjs --pull --write`。另有 427 張是有標籤但規則沒命中，要補 `genre-artist-map.json`。
+
+## 三、拆卡的曲風善後（`audits/pub-fix/split-genre-fix.mjs`）
+
+今天拆出來的 16 張卡，KV 鍵是整個搬過去的，所以**帶著另一個同名藝人的標籤**——那些標籤當初就是用舊掛名查來的。
+重建子曲風表時才看出來：泰國的 Caravan 被歸在前衛搖滾（英國坎特伯里那團的標籤）、比利時 Placebo《1973》在獨立另類（britpop）、
+古典吉他手 John Williams 在電影配樂（Star Wars／harry potter）、Air《Air Mail》的標籤是法國電子二人組。
+
+改了六張的 `mapgenre3`，其中三張的池中曲風也是錯的：
+Caravan (Thailand) rock → folk＋world、Placebo (Belgium)《1973》rock → jazz＋soul、Mother Earth (Tracy Nelson) jazz＋soul → rock＋blues。
+`genre-artist-map.json` 補三個落點（John Williams (guitarist)、Caravan (Thailand)、Wings (Malaysia)）。
+重建後落點：world-folk／jazz-fusion／classic rock／20 世紀古典／free jazz／house。
+
+**教訓：改藝人欄時 `mapgenre3` 不該照搬**——它是「用這個名字查到的標籤」，名字換了就該重查或人工指定。
+`scripts/apply-pub-fix-cards.mjs` 目前是照搬，下次用之前要改。
+
+## 四、第 3 項排入
+
+`ROUND2-QUEUE` 新增 **B3 資料庫口吻候選 176 則**（核心約 90 則，其餘是「兩筆成績」這類正常句子）與 **B4 正文夾諺文 71 則**，
+改寫方向寫在 `audits/pub-fix/README.md` 第 5 點。
+
+## 五、兩個坑
+
+1. **背景工作有時限，而且已經是上限的就不能重啟。** 超過十分鐘的長工作不要丟背景硬跑；要嘛切成能在前景一次跑完的小段，要嘛交給店主在終端機跑。
+2. **改 `apple-audio-map-v1.json` 不要整份重排鍵。** 第一版新增一筆後用 `localeCompare` 排序，diff 變成 14 萬行（原檔不是那個順序）。
+   改成「插在第一個比它大的鍵之前」，diff 只有 23 行。
+
+## 驗證
+
+KV：五樣小修 12 個鍵、拆卡標籤 6 個鍵回讀一致；c-129 線上 43 則無一含那一句、且與 manifest 逐字相同。
+線上：子曲風表 15,249 鍵、試聽地圖 13,069 筆（Queen 6781080300、蔡琴 993111862）、卡池 17,248 列。
+
+## 主要檔案
+
+`audits/pub-fix/{round2-smallfix-apply.mjs,split-genre-fix.mjs,round2-rebind-check.md,README.md,ROUND2-QUEUE.*,APPLIED-20261004.json}`、
+`scripts/warm-album-genres.mjs`（新）、`scripts/build-pub-fix-queue.mjs`、`seed_cards.json`、`card-subgenres.json`、`genre-tree.json`、
+`genre-artist-map.json`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`card-preview-status.js`、
+c-34／c-49／c-129 三份 manifest、`desc-tools/batches/output/c129-out-1.json`。
+
 ### 2026-10-04｜dip-vinyl-shop｜「重配後只做一半」候選 19 張逐張核對：沒有第三張，另對出兩個資料錯誤
 
 同日第三筆。店主：「那 17 張候選逐張核對」。**這筆只做核對與記錄，沒有改任何線上資料。**

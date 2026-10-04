@@ -88,11 +88,20 @@ const WORKFLOW = /本筆|此筆|本卡配到|本列所配|應退回|建議退回
 // 「本卡是 1989 年的 CD 版」這種版本說明：不是退件，但把卡池當主詞講給客人聽，另列一區
 const CARDTALK = /本卡/u;
 const SOURCE = /維基|Wikipedia|MusicBrainz|\bMB\b|Discogs|AllMusic|RateYourMusic|\bRYM\b|release[- ]group/iu;
-const B1 = [], B1b = [], B2 = [];
+// 資料庫口吻：把 MusicBrainz 的條目結構講給客人聽（「這個條目底下的三張碟」「另外兩筆連日期都沒有」）。
+// 2026-10-04 店主裁示排進第二輪改寫。集中在 c-9x 之後資料稀薄的卡。
+const DBTALK = /條目底下|這一筆|那一筆|另外兩筆|另一筆|[兩三四五]筆|一筆記|建檔|資料庫端/u;
+// 正文夾諺文：機構名、人名沒譯（書名號與引號內的原文標題不算）
+const HANGUL = /\p{Script=Hangul}{2,}/u;
+const stripTitles = t => t.replace(/《[^》]*》|〈[^〉]*〉|「[^」]*」/g, '');
+const B1 = [], B1b = [], B2 = [], B3 = [], B4 = [];
 for (const [key, text] of live) {
   const w = text.match(new RegExp(WORKFLOW.source, 'gu'));
   if (w) { B1.push({ key, hits: [...new Set(w)], desc: text }); continue; }
   if (CARDTALK.test(text)) B1b.push({ key, context: (text.match(/.{0,30}本卡.{0,40}/u) || [''])[0] });
+  const body = stripTitles(text);
+  if (DBTALK.test(body)) B3.push({ key, context: (body.match(new RegExp('.{0,24}(?:' + DBTALK.source + ').{0,30}', 'u')) || [''])[0] });
+  if (HANGUL.test(body)) B4.push({ key, context: (body.match(new RegExp('.{0,16}(?:' + HANGUL.source + ').{0,24}', 'u')) || [''])[0] });
   const s = text.match(new RegExp(SOURCE.source, 'giu'));
   if (s) B2.push({ key, hits: [...new Set(s.map(x => x.toLowerCase()))] });
 }
@@ -114,8 +123,8 @@ const out = {
   generatedAt: new Date().toISOString().slice(0, 10),
   note: '第二輪待修。A＝事實更正（需要研究後改寫）；B1＝退件說明／管線字樣（最優先，客人看得到）；B2＝正文點名出處（改成不具名敘述）；C＝人工補記。',
   counts: { A_rows: A.length, A_cards: cards.size, A_unresolved: A.filter(x => !x.key).length, A_claimGone: A.filter(x => x.claimFound === false).length,
-    B1: B1.length, B1b: B1b.length, B2: B2.length, C: MANUAL.length },
-  A, B1, B1b, B2, C: MANUAL,
+    B1: B1.length, B1b: B1b.length, B2: B2.length, B3: B3.length, B4: B4.length, C: MANUAL.length },
+  A, B1, B1b, B2, B3, B4, C: MANUAL,
 };
 fs.writeFileSync('audits/pub-fix/ROUND2-QUEUE.json', JSON.stringify(out, null, 1));
 
@@ -126,6 +135,8 @@ const md = [
   `| 區 | 內容 | 數量 |`, `|---|---|---:|`,
   `| B1 | 退件說明／管線字樣——**客人看得到，最優先** | ${B1.length} 則 |`,
   `| B1b | 正文以「本卡」當主詞的版本說明（非退件，次優先） | ${B1b.length} 則 |`,
+  `| B3 | 資料庫口吻——把條目結構講給客人聽（2026-10-04 店主裁示改寫） | ${B3.length} 則 |`,
+  `| B4 | 正文夾諺文（機構名、人名沒譯） | ${B4.length} 則 |`,
   `| C | 人工補記（含另一個工作區點名的五件） | ${MANUAL.length} 則 |`,
   `| A | 事實更正，需研究後改寫 | ${A.length} 條／${cards.size} 張卡 |`,
   `| B2 | 正文點名出處的**候選**（維基／MusicBrainz／Discogs／AllMusic…），逐則判斷要不要改成不具名敘述 | ${B2.length} 則 |`, '',
@@ -133,6 +144,8 @@ const md = [
   '## B1　退件說明／管線字樣', '',
   ...B1.flatMap(b => [`### \`${b.key}\`　命中：${b.hits.join('、')}`, '', '> ' + b.desc, '']),
   '## B1b　「本卡」版本說明', '', '| 鍵 | 前後文 |', '|---|---|', ...B1b.map(b => `| \`${cell(b.key)}\` | ${cell(b.context)} |`), '',
+  '## B3　資料庫口吻', '', '| 鍵 | 前後文 |', '|---|---|', ...B3.map(b => `| \`${cell(b.key)}\` | ${cell(b.context)} |`), '',
+  '## B4　正文夾諺文', '', '| 鍵 | 前後文 |', '|---|---|', ...B4.map(b => `| \`${cell(b.key)}\` | ${cell(b.context)} |`), '',
   '## C　人工補記', '', '| 鍵 | 問題 |', '|---|---|', ...MANUAL.map(m => `| \`${cell(m.key)}\` | ${cell(m.note)} |`), '',
   '## A　事實更正', '', '| 批次 | 卡 | 上線寫法 | 問題 | 依據 | 原句還在 |', '|---|---|---|---|---|---|',
   ...A.map(x => `| ${x.batch} | ${cell(x.artist)}《${cell(x.album)}》 | ${cell(x.claim)} | ${cell(x.problem)} | ${cell(x.src)} | ${x.claimFound === null ? '對不到卡' : (x.claimFound ? '是' : '否')} |`), '',

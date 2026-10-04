@@ -9698,5 +9698,154 @@
     }
    }
   ]
+ },
+ "round2SmallFix": {
+  "note": "round2-rebind-check.md 核對出來的五樣小修。還原 c-129 那十則：在簡介結尾補回「這張沒有試聽來源。」。",
+  "descTailRemoved": [
+   "desc2:various artists|princess nicotine: folk and pop music of myanmar (burma), vol. 1",
+   "desc2:various artists|guitars of the golden triangle: folk and pop music of myanmar, volume 2",
+   "desc2:various artists|folk and pop music of myanmar (burma) vol. 3: music of nat pwe",
+   "desc2:various artists|radio myanmar (burma)",
+   "desc2:various artists|the crying princess: 78rpm records from burma",
+   "desc2:လေးဖြူ|ပင်လယ်အော်သံ",
+   "desc2:လေးဖြူ|ပါဝါ ၅၄",
+   "desc2:လွှမ်းမိုး|ရန်ကုန်သားလေးကျနော်ပါ",
+   "desc2:various artists|laos - l'art du khène",
+   "desc2:various artists|ethnic minority music of southern laos"
+  ],
+  "descHangul": {
+   "key": "desc4:서태지와 아이들|서태지와 아이들 iv",
+   "replaced": [
+    [
+     "遭한국공연윤리위원회 判定",
+     "遭韓國公演倫理委員會判定"
+    ],
+    [
+     "서태지 不改詞",
+     "徐太志不改詞"
+    ]
+   ]
+  },
+  "mapgenre3": [
+   {
+    "key": "mapgenre3:ana moura|desfado",
+    "genresBefore": [
+     "jazz"
+    ],
+    "genresAfter": [
+     "world"
+    ]
+   }
+  ],
+  "seed": [
+   {
+    "before": [
+     "Ana Moura",
+     "Desfado",
+     4,
+     2,
+     1,
+     [
+      "jazz"
+     ],
+     2012
+    ],
+    "after": [
+     "Ana Moura",
+     "Desfado",
+     4,
+     2,
+     1,
+     [
+      "world"
+     ],
+     2012
+    ]
+   }
+  ],
+  "preview": [
+   {
+    "card": "蔡琴|蔡琴老歌",
+    "before": "TW 1114507022",
+    "after": "TW 993111862"
+   },
+   {
+    "card": "Queen|Greatest Hits",
+    "before": "unavailable",
+    "after": "TW 6781080300"
+   }
+  ],
+  "cardCatalog": [
+   {
+    "id": "queen|greatest hits",
+    "before": {
+     "upc": "4607147861714"
+    },
+    "after": {
+     "upc": "602527583648"
+    }
+   }
+  ]
+ },
+ "splitGenreFix": {
+  "note": "拆卡善後：六張卡的 mapgenre3 原本是另一個同名藝人的標籤。目標值與依據寫在 split-genre-fix.mjs 的 FIX 表。",
+  "seed": [
+   {
+    "card": "Caravan (Thailand)|คนกับควาย",
+    "before": [
+     "rock"
+    ],
+    "after": [
+     "folk",
+     "world"
+    ]
+   },
+   {
+    "card": "Placebo (Belgium)|1973",
+    "before": [
+     "rock"
+    ],
+    "after": [
+     "jazz",
+     "soul"
+    ]
+   },
+   {
+    "card": "Mother Earth (Tracy Nelson)|Living with the Animals",
+    "before": [
+     "jazz",
+     "soul"
+    ],
+    "after": [
+     "rock",
+     "blues"
+    ]
+   }
+  ],
+  "mapgenre3Before": {
+   "caravan (thailand)|คนกับควาย": "rock｜Progressive rock, Canterbury Scene…",
+   "placebo (belgium)|1973": "rock｜alternative rock, britpop…",
+   "mother earth (tracy nelson)|living with the animals": "jazz,soul｜acid jazz, nu jazz…",
+   "john williams (guitarist)|rodrigo: concierto de aranjuez": "classical｜Soundtrack, Star Wars, harry potter…",
+   "air (us jazz trio)|air mail": "electronic,rock｜ambient, french, trip-hop…",
+   "supershy|happy music": "rock,jazz｜soul, Hip-Hop, indie, jazz…"
+  },
+  "genreArtistMap": [
+   [
+    "classical",
+    "John Williams (guitarist)",
+    "modern"
+   ],
+   [
+    "folk",
+    "Caravan (Thailand)",
+    "world-folk"
+   ],
+   [
+    "rock",
+    "Wings (Malaysia)",
+    "jrock-asia"
+   ]
+  ]
  }
 }

@@ -9,6 +9,9 @@ Coleman Hawkins《Body and Soul》與 Odyssey《Odyssey》是同一種病：rele
 每張都對了五樣：池中那一列、`card_catalog`（rgMbid／封面／UPC／三軸）、MusicBrainz 的 release-group
 （標題、掛名、首發年、類型、轄下 release）、線上簡介、固定試聽。
 
+> **處理結果（同日，店主「1、2 都做，3 排進去」）**：下表前五列已修（`round2-smallfix-apply.mjs`）；
+> 子曲風表已重建；Dariush 那種資料庫口吻與其餘夾諺文的簡介排進 `ROUND2-QUEUE.md` 的 B3、B4 區。
+
 ## 有問題的
 
 | 卡 | 問題 | 建議 |
