@@ -40,14 +40,26 @@ const OVERRIDES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': ['Kenny Burrell & John Coltrane', 'Kenny Burrell & John Coltrane'],
   // Notion 用新字體「浜田」，卡池為「濱田」
   '3ee0ad0255ff81668a74d3448af000fe': ['濱田金吾', 'Mugshot'],
-  // 封面印 The New George Otsuka Trio；卡池照池中先例掛日文團名（add-20261004-shop 第 8592 條）
-  '3ee0ad0255ff8175b3c8f5f06e26186c': ['ジョージ大塚トリオ', 'You Are My Sunshine'],
 };
 const NOTES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': '1976 Prestige 雙 LP 再版',
 };
 // 卡池尚無、走 dip-card-create 新建中的列。上架後移到 OVERRIDES 或讓自動比對接手。
-const PENDING_NEW = new Set([]);
+const PENDING_NEW = new Set([
+  // 2026-10-05 進貨，卡池尚無
+  '3f00ad0255ff801aba1cf344d7dded98', // John Coltrane《Bellaphon》（Bellaphon 是德國廠牌名，實際盤名待確認）
+  '3f00ad0255ff805dab62ce2cf1c59625', // Tete Montoliu《Tete!》
+  '3f00ad0255ff801d80efd2749b256f8f', // Sonny Criss《Saturday Morning》
+  '3f00ad0255ff80a4925cd52cdcd52c5a', // モア《モア》
+  '3f00ad0255ff80918ab9cdb1b140b38a', // Jonny Holtzman《The Bronx Nightingale》
+  '3f00ad0255ff80aeb3cfc690a280157b', // Tom Waits《Heartattack and Vine》
+  '3f00ad0255ff8077ad7ed244edf6792b', // 下田逸郎《陽のあたる翼》
+  '3f00ad0255ff801a82e6d36027faadfa', // 今田勝《誘われてシーサイド》
+  '3f00ad0255ff8003b6e1c2427c01a236', // Miles Davis《Directions》
+  '3f00ad0255ff806182f4c53b96fdbaf1', // 下田逸郎《飛べない鳥、飛ばない鳥》
+  '3f00ad0255ff80b7bac6d97d94cf1922', // Neil Young & The Bluenotes《This Note's for You》
+  '3ef0ad0255ff803f8228ee791b32cb17', // Elmo Hope《Here's Hope!》
+]);
 
 const pool = JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8'));
 const byKey = new Map(pool.map(r => [key(r[0], r[1]), r]));

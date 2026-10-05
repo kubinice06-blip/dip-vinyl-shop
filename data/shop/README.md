@@ -43,12 +43,22 @@ const inShop = new Set(inv.items.filter(i => i.status === 'in_stock').map(i => i
 Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字），2026-10-04 已填 23 筆；快照存成 `poolKey`，同步時優先採用。
 新進貨在 Notion 填好卡池鍵即可；空白的才走自動比對。
 
-## 現況（2026-10-05）
+## 現況（2026-10-05 晚間重掃）
 
-26 筆全部 `in_stock`。缺卡的 3 張（Elmo Hope《Hope Meets Foster》《High Hope!》、ジョージ大塚トリオ《You Are My Sunshine》）已由 add-20261004-shop 上架；
-大塚那張封面印的是 The New George Otsuka Trio，對應寫在腳本的 `OVERRIDES`。Notion 這 3 列的「卡池鍵」還沒填，填了之後可以把那筆 override 拿掉。
+Notion 42 筆 → **in_stock 30、pending_card 12**。10-04 之後新進 16 筆：4 筆已在卡池（《Filles de Kilimanjaro》Notion 寫成《De Kilimanjaro》、
+《Miles in the Sky》、Cannibale《Not Easy To Cook》、Sonny Rollins《The Bridge》），卡池鍵已回填 Notion；
+12 筆卡池沒有、列在腳本 `PENDING_NEW`，要走 `dip-card-create`：
+Coltrane《Bellaphon》（Bellaphon 是德國廠牌，實際盤名待店主確認）、Tete Montoliu《Tete!》、Sonny Criss《Saturday Morning》、モア《モア》、
+Jonny Holtzman《The Bronx Nightingale》、Tom Waits《Heartattack and Vine》、下田逸郎《陽のあたる翼》《飛べない鳥、飛ばない鳥》、
+今田勝《誘われてシーサイド》、Miles Davis《Directions》、Neil Young & The Bluenotes《This Note's for You》、Elmo Hope《Here's Hope!》。
+下田逸郎《陽のあたる翼》在 Notion 沒有售價。
+舊 26 筆的卡池鍵全部已填，大塚那筆 `OVERRIDES` 已拿掉（輸出逐列比對不變）。
 
 ## 待本機補記 PROJECT_MEMORY（雲端不碰該檔）
 
 > 2026-10-05｜dip-vinyl-shop＋dip-vinyl-worker｜後台「實體店庫存」加「↻ 從 Notion 重新整理」：Worker 新增 `/shop-inventory`（管理員金鑰、NOTION_TOKEN，只回公開欄位），
 > 後台比對新增／移除／改價後存 Firestore `settings/shopInventory`。驗證：Worker 路由以模擬 Notion 回應測 200／403／503 與分頁；後台 Playwright 模擬刪 1 增 2 改價 1，差異清單正確。待本機：設 NOTION_TOKEN、部署 Worker。
+
+> 2026-10-05｜dip-vinyl-shop｜店內庫存重掃：Notion 26 → 42 筆（新進 16、無售出），in_stock 26 → 30、pending_card 12。
+> 4 筆已在卡池者回填 Notion 卡池鍵；12 筆列入 `PENDING_NEW` 待 `dip-card-create`；`OVERRIDES` 拿掉大塚一筆（已有卡池鍵）。
+> 主要檔案：`data/shop/{notion-snapshot.json,inventory.json,README.md}`、`scripts/sync-shop-inventory.mjs`。驗證：同步乾跑 0 error；拿掉 override 前後 inventory 的 cardKey／status 逐列相同。
