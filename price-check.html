@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex, nofollow">
+  <title>dip vinyl — Discogs 查價</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #111; --gray: #888; --line: #ddd; --bg: #f7f7f7;
+      --mono: 'Space Mono', monospace; --green: #2d8a4e; --red: #c0392b; --hi: #fff6dc;
+    }
+    body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; min-height: 100vh; }
+    header { background: #fff; border-bottom: 1px solid var(--line); padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    header h1 { font-size: 13px; letter-spacing: 0.08em; }
+    header a, .link-btn { background: none; border: none; color: var(--gray); font-family: var(--mono); font-size: 10px; cursor: pointer; text-decoration: underline; }
+    main { max-width: 760px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    .card { background: #fff; border: 1px solid var(--line); padding: 14px; }
+    .label { color: var(--gray); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+    .field label { display: block; color: var(--gray); font-size: 10px; margin-bottom: 4px; }
+    input, select { width: 100%; border: 1px solid var(--line); background: #fff; padding: 8px 9px; font-family: var(--mono); font-size: 11px; outline: none; }
+    input:focus, select:focus { border-color: var(--black); }
+    .wide { grid-column: 1 / -1; }
+    .btn { background: var(--black); color: #fff; border: 1px solid var(--black); font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; padding: 10px 14px; cursor: pointer; width: 100%; margin-top: 12px; }
+    .btn:disabled { opacity: 0.5; cursor: wait; }
+    .hint { color: var(--gray); font-size: 10px; line-height: 1.7; margin-top: 8px; }
+    .msg { font-size: 10px; padding: 8px 10px; border: 1px solid var(--line); }
+    .msg.error { color: var(--red); border-color: var(--red); background: #fdf1ef; }
+    .row { display: flex; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    .row:last-child { border-bottom: none; }
+    .result { cursor: pointer; }
+    .result:hover { background: var(--bg); }
+    .thumb { width: 44px; height: 44px; object-fit: cover; background: var(--line); flex-shrink: 0; }
+    .grow { flex: 1; min-width: 0; }
+    .title { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sub { color: var(--gray); font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .pick { border: 1px solid var(--line); background: none; font-family: var(--mono); font-size: 10px; padding: 4px 10px; cursor: pointer; flex-shrink: 0; }
+    .kv { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+    .kv span:first-child { color: var(--gray); font-size: 10px; }
+    .num { text-align: right; white-space: nowrap; }
+    .num small { color: var(--gray); font-size: 10px; display: block; }
+    .mine { background: var(--hi); font-weight: 700; }
+    .up { color: var(--green); } .down { color: var(--red); }
+    .links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; }
+    .links a { color: var(--black); font-size: 10px; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>DISCOGS 查價</h1>
+  <div style="display:flex;gap:12px;">
+    <a href="/admin">← 後台</a>
+    <button class="link-btn" id="btnResetKey">更換金鑰</button>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <div class="label">搜尋條件</div>
+    <div class="grid">
+      <div class="field wide">
+        <label>專輯名稱，或直接貼 Discogs 版本網址／release ID</label>
+        <input id="qName" placeholder="例：Kind of Blue　或　https://www.discogs.com/release/249504-…">
+      </div>
+      <div class="field"><label>藝人</label><input id="qArtist" placeholder="例：Miles Davis"></div>
+      <div class="field"><label>年份</label><input id="qYear" type="number" min="1900" max="2099" placeholder="不限"></div>
+      <div class="field"><label>產地</label>
+        <select id="qCountry">
+          <option value="">不限</option><option>Japan</option><option>US</option><option>UK</option>
+          <option>Europe</option><option>Germany</option><option>France</option><option>Taiwan</option>
+        </select>
+      </div>
+      <div class="field"><label>我的品相</label>
+        <select id="qCond">
+          <option value="">未指定</option><option>M</option><option selected>NM</option><option>VG+</option>
+          <option>VG</option><option>G+</option><option>G</option><option>F</option><option>P</option>
+        </select>
+      </div>
+      <div class="field"><label>我的售價 NT$（選填）</label><input id="qMyPrice" type="number" min="0" placeholder="用來比對建議價"></div>
+      <div class="field"><label>匯率 USD→TWD</label><input id="qRate" type="number" step="0.01" min="1"></div>
+    </div>
+    <button class="btn" id="btnSearch">查詢</button>
+    <div class="hint">查的是 Discogs「目前在架」的掛賣資料與依品相的建議價，<b>不是成交價</b>；Discogs 沒有開放成交紀錄的 API，成交價請點結果裡的「銷售紀錄」連結到 Discogs 網站看（需登入）。</div>
+  </section>
+
+  <div class="msg error" id="msg" hidden></div>
+
+  <section class="card" id="resultsCard" hidden>
+    <div class="label">選擇版本（同一張專輯不同壓片價差很大，請對 Cat# 與產地）</div>
+    <div id="results"></div>
+  </section>
+
+  <section class="card" id="detailCard" hidden>
+    <div class="row" style="padding-top:0;">
+      <img class="thumb" id="dThumb" alt="">
+      <div class="grow"><div class="title" id="dTitle"></div><div class="sub" id="dSub"></div></div>
+    </div>
+    <div class="kv"><span>目前掛賣數量</span><span class="num" id="dCount"></span></div>
+    <div class="kv"><span>最低掛賣價</span><span class="num" id="dLow"></span></div>
+    <div class="label" style="margin-top:14px;">品相建議價（Discogs 估算，非成交價）</div>
+    <div id="dSuggest"></div>
+    <div id="dCompare" class="hint"></div>
+    <div class="links">
+      <a id="dLink" target="_blank" rel="noopener">→ Discogs 版本頁</a>
+      <a id="dSales" target="_blank" rel="noopener">→ 銷售紀錄（成交價，需登入）</a>
+      <a id="dMarket" target="_blank" rel="noopener">→ 目前在架清單</a>
+    </div>
+  </section>
+
+  <section class="card" id="historyCard" hidden>
+    <div class="label" style="display:flex;justify-content:space-between;">最近查過 <button class="link-btn" id="btnClearHist">清除</button></div>
+    <div id="history"></div>
+  </section>
+</main>
+
+<script>
+  const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // 瀏覽器儲存可能被封鎖（無痕、隱私設定），讀寫一律包起來，失敗就當沒存。
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+    del(k) { try { localStorage.removeItem(k); } catch (e) {} },
+  };
+
+  // 與後台共用同一把 Worker ADMIN_KEY（同一個 localStorage 鍵）。
+  function adminKey() {
+    let k = store.get('dipAdminKey', '');
+    if (!k) {
+      k = (prompt('請輸入後台金鑰（Worker 的 ADMIN_KEY）：') || '').trim();
+      if (k) store.set('dipAdminKey', k);
+    }
+    return k;
+  }
+  $('btnResetKey').onclick = () => { store.del('dipAdminKey'); alert('金鑰已清除，下次查詢會重新詢問。'); };
+
+  $('qRate').value = store.get('dipUsdTwd', '32.5');
+  $('qRate').onchange = () => store.set('dipUsdTwd', $('qRate').value);
+
+  const CONDS = [
+    ['M', 'Mint (M)'], ['NM', 'Near Mint (NM or M-)'], ['VG+', 'Very Good Plus (VG+)'],
+    ['VG', 'Very Good (VG)'], ['G+', 'Good Plus (G+)'], ['G', 'Good (G)'],
+    ['F', 'Fair (F)'], ['P', 'Poor (P)'],
+  ];
+
+  function showMsg(text) { $('msg').textContent = text; $('msg').hidden = !text; }
+
+  async function call(path) {
+    const key = adminKey();
+    if (!key) throw new Error('沒有輸入後台金鑰');
+    let res;
+    try {
+      res = await fetch(WORKER_URL + path, { headers: { 'X-Admin-Key': key } });
+    } catch (e) {
+      // CORS 擋下或網路斷線都會走到這裡；Worker 只允許 dipvinyl.tw 與 dip-vinyl-shop.pages.dev 呼叫。
+      throw new Error('連不到 Worker（網路問題，或目前網域不在 Worker 允許名單內）');
+    }
+    if (res.status === 403) throw new Error('後台金鑰錯誤（按右上「更換金鑰」重新輸入）');
+    let data = null;
+    try { data = await res.json(); } catch (e) {}
+    return { res, data };
+  }
+
+  // 台幣換算：只換 USD；其他幣別照原樣顯示。
+  function money(p) {
+    if (!p || typeof p.value !== 'number') return '—';
+    const cur = p.currency || 'USD';
+    const rate = parseFloat($('qRate').value);
+    const twd = cur === 'USD' && rate > 0 ? '<small>≈ NT$ ' + Math.round(p.value * rate).toLocaleString() + '</small>' : '';
+    return esc(cur) + ' ' + p.value.toFixed(2) + twd;
+  }
+
+  async function search() {
+    showMsg('');
+    $('detailCard').hidden = true;
+    const raw = $('qName').value.trim();
+    // 貼網址或純數字 → 直接查該版本，跳過搜尋
+    const m = raw.match(/discogs\.com\/(?:[a-z-]+\/)?release\/(\d+)/i) || raw.match(/^\[?r?(\d{3,})\]?$/i);
+    if (m) return loadRelease({ id: m[1], title: 'Release ' + m[1], uri: '/release/' + m[1] });
+    if (!raw) return showMsg('請輸入專輯名稱');
+
+    const params = new URLSearchParams({ q: [raw, $('qArtist').value.trim()].filter(Boolean).join(' ') });
+    if ($('qYear').value) params.append('year', $('qYear').value);
+    if ($('qCountry').value) params.append('country', $('qCountry').value);
+
+    const btn = $('btnSearch');
+    btn.disabled = true; btn.textContent = '搜尋中…';
+    try {
+      const { res, data } = await call('/discogs-search?' + params);
+      if (!res.ok) throw new Error('Discogs 搜尋失敗（HTTP ' + res.status + '）');
+      const list = (data && data.results) || [];
+      $('resultsCard').hidden = false;
+      $('results').innerHTML = list.length ? list.map((r, i) =>
+        '<div class="row result" data-i="' + i + '">' +
+          (r.thumb ? '<img class="thumb" src="' + esc(r.thumb) + '" alt="">' : '<div class="thumb"></div>') +
+          '<div class="grow"><div class="title">' + esc(r.title) + '</div>' +
+          '<div class="sub">' + esc([r.year, r.country, (r.format || []).join(', ')].filter(Boolean).join(' · ')) + '</div>' +
+          '<div class="sub">' + esc([(r.label || [])[0], r.catno].filter(Boolean).join(' · ')) + '</div></div>' +
+          '<button class="pick">選擇</button></div>'
+      ).join('') : '<div class="hint">找不到符合的版本，試著拿掉年份或產地。</div>';
+      $('results').onclick = e => {
+        const row = e.target.closest('.result');
+        if (row) loadRelease(list[+row.dataset.i]);
+      };
+    } catch (e) {
+      showMsg(e.message);
+    } finally {
+      btn.disabled = false; btn.textContent = '查詢';
+    }
+  }
+
+  async function loadRelease(r) {
+    showMsg('');
+    const id = String(r.id).replace(/\D/g, '');
+    try {
+      const [stats, sug] = await Promise.all([
+        call('/discogs-price?releaseId=' + id),
+        call('/discogs-suggest?releaseId=' + id).catch(e => ({ error: e.message })),
+      ]);
+      if (!stats.res.ok) throw new Error('讀取掛賣資料失敗（HTTP ' + stats.res.status + '）');
+      const s = stats.data || {};
+      const url = 'https://www.discogs.com' + (r.uri || '/release/' + id);
+
+      $('dThumb').src = r.thumb || '';
+      $('dThumb').hidden = !r.thumb;
+      $('dTitle').textContent = r.title || ('Release ' + id);
+      $('dSub').textContent = [r.year, r.country, (r.label || [])[0], r.catno].filter(Boolean).join(' · ');
+      $('dCount').textContent = (s.num_for_sale || 0) + ' 筆' + (s.blocked_from_sale ? '（此版本禁止販售）' : '');
+      $('dLow').innerHTML = money(s.lowest_price);
+      last = { lowest: s.lowest_price, sug };
+      $('dLink').href = url;
+      $('dSales').href = 'https://www.discogs.com/sell/history/' + id;
+      $('dMarket').href = 'https://www.discogs.com/sell/release/' + id;
+      renderSuggest(sug);
+      $('detailCard').hidden = false;
+      $('detailCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      saveHistory({ id, title: r.title, thumb: r.thumb, uri: r.uri, year: r.year, country: r.country, catno: r.catno, label: r.label });
+    } catch (e) {
+      showMsg(e.message);
+    }
+  }
+
+  // 改品相、售價或匯率時直接用上次的結果重算，不必重打 Discogs。
+  let last = null;
+  ['qCond', 'qMyPrice', 'qRate'].forEach(id => $(id).addEventListener('input', () => {
+    if (!last || $('detailCard').hidden) return;
+    $('dLow').innerHTML = money(last.lowest);
+    renderSuggest(last.sug);
+  }));
+
+  function renderSuggest(sug) {
+    const el = $('dSuggest'), cmp = $('dCompare');
+    cmp.textContent = '';
+    const note = t => { el.innerHTML = '<div class="hint">' + esc(t) + '</div>'; };
+    if (sug.error) return note('建議價讀取失敗：' + sug.error);
+    if (sug.res.status === 404) return note('建議價功能尚未部署（Worker 需更新）');
+    const d = sug.data || {};
+    const rows = CONDS.filter(([, k]) => d[k] && typeof d[k].value === 'number');
+    if (!sug.res.ok || !rows.length) {
+      return note('無建議價：Discogs 需要 token 帳號先完成賣家設定' + (d.message ? '（' + d.message + '）' : ''));
+    }
+    const mine = $('qCond').value;
+    el.innerHTML = rows.map(([code, k]) =>
+      '<div class="kv' + (code === mine ? ' mine' : '') + '"><span>' + code + (code === mine ? '　← 我的品相' : '') + '</span>' +
+      '<span class="num">' + money(d[k]) + '</span></div>'
+    ).join('');
+
+    // 跟自己的售價比：只在品相有對應建議價、且是 USD（才換得了台幣）時比較
+    const myPrice = parseFloat($('qMyPrice').value);
+    const rate = parseFloat($('qRate').value);
+    const ref = mine && d[(CONDS.find(([c]) => c === mine) || [])[1]];
+    if (myPrice > 0 && ref && ref.currency === 'USD' && rate > 0) {
+      const refTwd = ref.value * rate;
+      const diff = (myPrice - refTwd) / refTwd * 100;
+      cmp.innerHTML = '你的售價 NT$ ' + myPrice.toLocaleString() + ' 比 ' + esc(mine) + ' 建議價（≈ NT$ ' + Math.round(refTwd).toLocaleString() + '）' +
+        '<b class="' + (diff >= 0 ? 'up' : 'down') + '">' + (diff >= 0 ? '高 ' : '低 ') + Math.abs(diff).toFixed(0) + '%</b>' +
+        '。建議價未含國際運費與關稅，買家實際比價時會加上。';
+    }
+  }
+
+  // 最近查過：只存在本機瀏覽器，最多 10 筆
+  function loadHistory() { try { return JSON.parse(store.get('dipPriceHistory', '[]')) || []; } catch (e) { return []; } }
+  function saveHistory(item) {
+    const list = [item, ...loadHistory().filter(h => h.id !== item.id)].slice(0, 10);
+    store.set('dipPriceHistory', JSON.stringify(list));
+    renderHistory();
+  }
+  function renderHistory() {
+    const list = loadHistory();
+    $('historyCard').hidden = !list.length;
+    $('history').innerHTML = list.map((h, i) =>
+      '<div class="row result" data-i="' + i + '">' +
+        (h.thumb ? '<img class="thumb" src="' + esc(h.thumb) + '" alt="">' : '<div class="thumb"></div>') +
+        '<div class="grow"><div class="title">' + esc(h.title) + '</div><div class="sub">' + esc([h.year, h.country, h.catno].filter(Boolean).join(' · ')) + '</div></div></div>'
+    ).join('');
+    $('history').onclick = e => {
+      const row = e.target.closest('.result');
+      if (row) loadRelease(list[+row.dataset.i]);
+    };
+  }
+  $('btnClearHist').onclick = () => { store.del('dipPriceHistory'); renderHistory(); };
+
+  $('btnSearch').onclick = search;
+  ['qName', 'qArtist', 'qYear'].forEach(id => $(id).addEventListener('keydown', e => { if (e.key === 'Enter') search(); }));
+  renderHistory();
+</script>
+</body>
+</html>
