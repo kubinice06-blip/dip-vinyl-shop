@@ -59,3 +59,16 @@
 - **8698** 封面：CAA RG 端點實測 307（有圖）待本機看圖；Apple 待本機。MB 同名《Blue Marine》另有 Krystian Shek（2007）、RSK（2018），不同藝人，已寫進 curatorRisk。
 - **8699** 《Let's Do It》（Jonny Holtzman）走 §1 人工 thin：MB 六個方向皆 0／不相干（唯一撞名為 Kadenza 同名盤），非 503；證據三條 https（Discogs release 10080644、Discogs 藝人頁 3000951、英文維基 Widespread Depression Orchestra）。IMDb 傳記（Bronx Nightingale 由來、5 張專輯、Swingbeans 六重奏）只見搜尋摘要、頁面 403，全部不入 facts；Discogs 無人員／備註，樂手編制不得寫；Discogs 風格「Free Jazz」與傳記描述不符，寫作層不點。年份 1982 取 Discogs，卡單 genre 取 jazz。
 - **8700** hookCandidates 兩條：「改名 Widespread Jazz Orchestra 同期、創團主唱帶綽號離團的首張個人自製盤」「John Hammond Sr. 自願寫內頁文＋Discogs 僅 15 人收藏」；與 b 組モア（私製盤小故事）異構。keyTracks 取 Let's Do It／Just One Of Those Things／Laster Leaps。
+
+## 鉤子層（a、b 組 10 張，2026-10-05）
+
+- **8677** 預算公式照 hook-base 1793-B：`Array.from(hook).length + Array.from(note).length − 「主故事：」(5) − 所有「→」 − 「正文只寫上列各項。」(9) − 「這條骨架全批只走本張。」(11)`；full ≤230、thin ≤170。結果：Here's Hope! 228、Directions 228、Saturday Morning 225、Tete! 223、More Lasting Than Bronze 230、This Note's For You 224、Heartattack and Vine 222、飛べない鳥 229、陽のあたる翼 167（thin）、モア 166（thin）。初稿全批超標（最高 420），以整格捨去收斂。
+- **8678** 兩張 Miles／Coltrane 合輯配死：《Directions》骨架＝「倉底未發表錄音首度問世＋收錄時期分布＋Columbia 空窗期最後一張整理輯」，hook 引入法＝副標（掛名欄），第二句以整理輯身分領句；《More Lasting Than Bronze》骨架＝「兩張已出版舊作的雙 LP 合併、為何併（同為 1957–58 Van Gelder 的 Prestige 錄音）」，hook 引入法＝載體（雙 LP），第二句以《Coltrane》領句、「是」句型；note 明定「正文寫合併本身，兩張原作各一句」。兩張各寫「這條骨架全批只走本張」。
+- **8679** 《Directions》為壓預算捨去 1968-11-27 三首陣容與〈Song of Our Country〉日期，改留「最早一首出自《Sketches of Spain》錄音期、多數 1967–1970 轉型期」以承載「收錄時期」軸（派工指定軸優先於樂手名單）。
+- **8680** 《More Lasting Than Bronze》發行年只寫在 hook（1972），note 不出現 1973；Bellaphon 版、24000 系列字樣（不在 facts）不寫；「首場以領銜身分的錄音」照 facts 措辭，避開掃描骨架「第一張領銜」。
+- **8681** 兩張下田逸郎配死：1973《飛べない鳥、飛ばない鳥》骨架＝「A 日文／B 英文＋Marci Sutin＋歐洲漂泊後赴紐約」，hook 引入法＝生年與出生地（宮崎、2 歲遷東京），第二句「由」句型交代 Marci Sutin；1974《陽のあたる翼》骨架＝「第三張個人專輯：Philips→Polydor 的目錄位置＋據唱片行說明的錄音室樂手」，hook 引入法＝廠牌關係，第二句「是」句型交代第三張。兩張 hook 只有一張出現本名（1974 用「他」），避免 hook 間 4-gram。1973 卡照研究稿不寫「在紐約錄音」，只寫「自紐約歸來後」。
+- **8682** 《陽のあたる翼》thin：樂手名單只有 omimi 單一來源，note 寫「據唱片行說明」＋「正文只列名字」（不點樂器）；放克搖滾的描述同屬該說明，用「同一說明稱」承接。
+- **8683** モア thin：凡 IG 來源（三天錄完、一週混音、業餘者、Saturn Records 為此而設只發一張、緣起願望）一律掛「據店家介紹」，hook 本身也以「據店家介紹」領句；作曲只寫 Discogs 列的石井英樹與杉島篤彦，Masaru Sato 只寫 Discogs 掛名（音樂總監與內頁解說），「佐藤勝」這個身分整格不進 note（同一人未證實，寫了容易被讀成作曲者）。
+- **8684** 《Saturday Morning》hook 為懸疑型（領銜者在 B 面讓出一首），note g2 收尾：〈My Heart Stood Still〉是 Barry Harris 的三重奏、Criss 未參與；第二句以 Barry Harris 領句。Xanadu「首批」不寫。
+- **8685** 《This Note's For You》壓預算後回核 hook 抓到一處事實錯：初稿寫「Crazy Horse 的節奏組只在〈One Thing〉留下」，但該曲貝斯是暫代的 George Whitsell，Crazy Horse 原班只剩鼓手 Ralph Molina——hook 改成「鼓手」，note g2 補「只有〈One Thing〉留著 Ralph Molina 的鼓」。Harold Melvin 法律行動與改署單名（單一來源、無年份）、Julien Temple、榜位、發行月份皆因預算整格捨去；MTV 年度最佳錄影帶亦捨去（避免被寫成專輯得獎）。
+- **8686** 跨批引入法排除：已上架《Hope Meets Foster》《High Hope!》《You Are My Sunshine》《完美小姐》頭兩句已掃；《Here's Hope!》不走 High Hope! 的 A/B 面換節奏組與 Down Beat 訪談軸，改走「六首自作、27 分鐘、Yanow 評語、與 Informal Jazz 的舊同台」。原 hook「鋼琴手自己寫的」與同批 c 組《Blue Marine》hook 撞 4-gram，已改為「領銜人親手寫成」。QA：`qa-batch.mjs hooks` 全過；`chk-hook-crossgroup.mjs` 唯一一項為 c 組《Blue Marine》hook 否定句（非本代理負責範圍，交主線／c 組處理）。
