@@ -7,6 +7,11 @@
 | `notion-snapshot.json` | Notion 表的公開欄位快照（頁面 id、品名、演出者、年份、品相、售價、卡池鍵）。**成本、利潤、水星抽成、群組不進 repo**——這是公開站。 |
 | `inventory.json` | **其他功能讀這份。** 每筆有 `status`（`in_stock`／`pending_card`／`sold`）、`cardKey`（＝`scripts/pool-keys.mjs` 的 `key(artist, album)`）、卡池原字 `artist`／`album`、店內標示名、壓片年、品相、售價。 |
 
+## 後台
+
+`admin.html` 的「🏪 實體店庫存」分頁讀這份檔，照前台「我的唱片櫃」的卡片樣式排列（稀有度框色、售價、品相、壓片年）；
+點卡片開詳情，介紹優先序同前台：`album_overrides.desc` → `/album-desc`。待上架的卡標「待上架」、不顯示介紹。
+
 ## 讀法
 
 ```js
@@ -35,3 +40,5 @@ Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字
 > 人工對應 4 筆（三上寛 零狐徒、濱田金吾、Red Garland《Crossings》、Kenny Burrell & John Coltrane 1976 再版）。
 > 待新建卡：Elmo Hope《Hope Meets Foster》《High Hope!》、The New George Otsuka Trio《You Are My Sunshine》。
 > 驗證：sync 0 error、重跑輸出逐位元相同。
+> 2026-10-05｜dip-vinyl-shop｜後台新增「🏪 實體店庫存」分頁（admin.html）：讀 data/shop/inventory.json＋seed_cards.json 算稀有度，
+> 封面 card_catalog → /spotify-search，點卡開詳情（album_overrides.desc → /album-desc）。驗證：Playwright 實測 26 張卡、23 張稀有度、詳情介紹正常。

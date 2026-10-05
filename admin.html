@@ -225,6 +225,43 @@
     .site-layout.no-left { grid-template-columns: 1fr; }
     .site-layout.no-left .left { display: none; }
 
+    /* 實體店庫存：照前台「我的唱片櫃」的卡片排列（稀有度框色、等級字、藝人／專輯） */
+    .shop-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .shop-count { font-size: 11px; color: var(--gray); }
+    .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .shop-card { position: relative; background: #fff; padding: 14px; cursor: pointer; text-align: left; font-family: var(--mono); }
+    .shop-card:hover { background: #fafafa; }
+    .shop-card:focus-visible { outline: 2px solid #111; outline-offset: -4px; }
+    .shop-thumb { position: relative; aspect-ratio: 1; background: #f0f0f0; overflow: hidden; margin-bottom: 10px; }
+    .shop-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .shop-nocover { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--line); }
+    .shop-price { position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,0.8); color: #fff; font-size: 10px; padding: 2px 7px; border-radius: 10px; }
+    .shop-pending { position: absolute; left: 6px; top: 6px; background: #b26a00; color: #fff; font-size: 9px; letter-spacing: 0.08em; padding: 2px 6px; border-radius: 3px; }
+    .shop-rarity { font-size: 9px; letter-spacing: 0.12em; margin-bottom: 5px; font-weight: 700; color: var(--gray); }
+    .shop-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
+    .shop-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
+    .shop-meta { font-size: 10px; color: var(--gray); margin-top: 4px; }
+    .shop-card.rarity-hall { box-shadow: inset 0 0 0 4px #a9b0b7; }
+    .shop-card.rarity-pearl { box-shadow: inset 0 0 0 4px #8a5a2b; }
+    .shop-card.rarity-heresy { box-shadow: inset 0 0 0 4px #a3122a; }
+    .shop-card.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
+    .shop-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
+    .shop-card.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
+    .shop-card.rarity-rare { box-shadow: inset 0 0 0 2px #3a7bd5; }
+    .rarity-hall .shop-rarity { color: #6f777f; }
+    .rarity-pearl .shop-rarity { color: #8a5a2b; }
+    .rarity-heresy .shop-rarity { color: #a3122a; }
+    .rarity-legendary .shop-rarity { color: #d4791a; }
+    .rarity-epic .shop-rarity { color: #7a3fb0; }
+    .rarity-uncommon .shop-rarity { color: #259643; }
+    .rarity-rare .shop-rarity { color: #3a7bd5; }
+    .shop-detail-cover { width: 100%; max-width: 320px; aspect-ratio: 1; object-fit: cover; display: block; margin: 0 auto 16px; background: #f0f0f0; border: 1px solid var(--line); }
+    .shop-detail-rarity { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 6px; }
+    .shop-detail-album { font-size: 16px; font-weight: 700; line-height: 1.4; }
+    .shop-detail-artist { font-size: 12px; color: var(--gray); margin: 2px 0 12px; }
+    .shop-detail-meta { font-size: 11px; color: var(--black); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 8px 0; margin-bottom: 14px; line-height: 1.8; }
+    .shop-detail-desc { font-size: 13px; line-height: 1.9; white-space: pre-wrap; }
+
     /* 卡牌校正：彈出編輯 modal */
     .ov-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: flex-start; justify-content: center; z-index: 9000; overflow-y: auto; padding: 40px 16px; }
     .ov-modal.open { display: flex; }
@@ -366,6 +403,7 @@
   <button class="tab-btn" data-tab="sort">商品排序</button>
   <button class="tab-btn" data-tab="content">內容管理</button>
   <button class="tab-btn" data-tab="cards">🎴 卡牌管理</button>
+  <button class="tab-btn" data-tab="shop">🏪 實體店庫存</button>
   <button class="tab-btn" data-tab="game">🎮 遊戲設定</button>
   <button class="tab-btn" data-tab="members">會員管理</button>
   <button class="tab-btn" data-tab="usage">設定</button>
@@ -760,6 +798,27 @@
         <div id="archiveList" style="border:1px solid var(--line);min-height:60px;"></div>
       </div>
       </div><!-- end sub-archive -->
+    </div>
+  </div>
+
+  <!-- 實體店庫存（data/shop/inventory.json，來源 Notion 售價表）-->
+  <div class="right-panel" id="panel-shop">
+    <div style="max-width:1100px;">
+      <div class="section">
+        <div class="shop-head">
+          <div class="section-label" style="margin:0;">實體店庫存（點卡片看專輯介紹）</div>
+          <span class="shop-count" id="shopCount"></span>
+        </div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">清單來自 Notion「唱片庫存售價表（販售中）」同步出的 <b>data/shop/inventory.json</b>，排列方式比照前台「我的唱片櫃」。右下角是售價；「待上架」是卡池還沒有、正在建卡的唱片。Notion 改了之後要重跑同步（scripts/sync-shop-inventory.mjs）這裡才會更新。</p>
+        <div id="shopGrid" style="font-size:12px;color:var(--gray);">尚未載入</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ov-modal" id="shopModal">
+    <div class="ov-modal-box">
+      <button class="ov-modal-close" id="shopModalClose" aria-label="關閉">×</button>
+      <div id="shopModalBody"></div>
     </div>
   </div>
 
@@ -1206,6 +1265,7 @@
     document.querySelector('.site-layout').classList.toggle('no-left', tab !== 'edit');
     if (tab === 'sort') loadSortList();
     if (tab === 'members') loadMembers();
+    if (tab === 'shop') loadShopInventory();
     if (tab === 'usage') { loadUsage(); loadBanner(); }
     // 合併分頁：載入目前 active 的子分頁
     const activeSub = panel.querySelector('.subpanel.active');
@@ -3410,6 +3470,137 @@ ${discogs ? '- Discogs：' + discogs : ''}
       });
     } catch (e) { list.className = ''; list.textContent = '載入清單失敗：' + (e.message || e); }
   }
+
+  // ───────── 實體店庫存（data/shop/inventory.json）─────────
+  // 排列比照前台「我的唱片櫃」：稀有度框色＋等級字＋藝人／專輯。稀有度算法與前台 rarityFromRatings 相同
+  //（經典＋硬蕊＋冷門滿 5 加 1），seed_cards.json 第 9 欄有 tier 的是頂點卡。
+  // 封面：card_catalog 校正圖優先，沒有才退 worker /spotify-search（與前台 resolveCardAssets 同序）。
+  // 介紹：album_overrides.desc（後台校正）優先，沒有才退 /album-desc（KV 預生成）。
+  const SHOP_TIER_LABEL = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
+  function shopRarityOf(row) {
+    if (!row) return null;
+    if (row[8] && SHOP_TIER_LABEL[row[8]]) return { tier: row[8], label: SHOP_TIER_LABEL[row[8]] };
+    const score = (Number(row[2]) || 0) + (Number(row[4]) || 0) + ((Number(row[3]) || 0) >= 5 ? 1 : 0);
+    if (score >= 10) return { tier: 'legendary', label: '傳奇' };
+    if (score >= 8) return { tier: 'epic', label: '史詩' };
+    if (score >= 6) return { tier: 'uncommon', label: '獨特' };
+    if (score >= 4) return { tier: 'rare', label: '稀有' };
+    return { tier: 'common', label: '普通' };
+  }
+  let shopItems = [];
+  let shopLoadToken = 0;
+  async function shopCoverOf(it) {
+    try {
+      const s = await getDoc(doc(db, 'card_catalog', ovCardId(it.artist, it.album)));
+      if (s.exists() && s.data().coverUrl) return s.data().coverUrl;
+    } catch (e) {}
+    try {
+      const r = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(it.artist)}&album=${encodeURIComponent(it.album)}`);
+      if (r.ok) return (await r.json()).imageUrl || '';
+    } catch (e) {}
+    return '';
+  }
+  function shopCardHtml(it, i) {
+    const r = it.rarity;
+    const cover = it.coverUrl ? `<img src="${esc(it.coverUrl)}" alt="" loading="lazy">` : `<div class="shop-nocover">♪</div>`;
+    const price = it.priceNT ? `<span class="shop-price">NT$${Number(it.priceNT)}</span>` : '';
+    const pending = it.status === 'pending_card' ? `<span class="shop-pending">待上架</span>` : '';
+    const meta = [it.condition, it.pressingYear ? `${it.pressingYear} 壓` : ''].filter(Boolean).join('・');
+    return `<article class="shop-card${r ? ' rarity-' + r.tier : ''}" data-shop-idx="${i}" role="button" tabindex="0">
+      <div class="shop-thumb">${cover}${pending}${price}</div>
+      <div class="shop-rarity">${r ? esc(r.label) : '—'}</div>
+      <div class="shop-artist">${esc(it.artist || it.listedArtist)}</div>
+      <div class="shop-album">${esc(it.album || it.listedTitle)}</div>
+      ${meta ? `<div class="shop-meta">${esc(meta)}</div>` : ''}
+    </article>`;
+  }
+  async function loadShopInventory() {
+    const grid = document.getElementById('shopGrid');
+    if (!grid) return;
+    const token = ++shopLoadToken;
+    grid.className = ''; grid.textContent = '載入中…';
+    try {
+      const [inv, pool] = await Promise.all([
+        fetch('data/shop/inventory.json?v=' + Date.now()).then(r => { if (!r.ok) throw new Error('inventory.json HTTP ' + r.status); return r.json(); }),
+        fetch('seed_cards.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+      ]);
+      if (token !== shopLoadToken) return;
+      const byId = new Map(pool.map(row => [ovCardId(row[0], row[1]), row]));
+      shopItems = (inv.items || []).filter(it => it.status !== 'sold').map(it => {
+        const row = it.artist ? byId.get(ovCardId(it.artist, it.album)) : null;
+        return { ...it, row, rarity: shopRarityOf(row), year: row ? row[6] : null, coverUrl: '' };
+      });
+      // 已上架的在前、待上架的在後；同組照藝人名排
+      shopItems.sort((a, b) => (a.status === 'pending_card') - (b.status === 'pending_card') || String(a.artist || a.listedArtist).localeCompare(String(b.artist || b.listedArtist)));
+      const ready = shopItems.filter(it => it.status === 'in_stock').length;
+      document.getElementById('shopCount').textContent = `在售 ${shopItems.length} 張・卡池已有 ${ready} 張・待上架 ${shopItems.length - ready} 張`;
+      if (!shopItems.length) { grid.textContent = '清單是空的。'; return; }
+      grid.className = 'shop-grid';
+      grid.innerHTML = shopItems.map(shopCardHtml).join('');
+      // 封面背景分批補（6 張一組），補到就換掉 ♪
+      for (let start = 0; start < shopItems.length && token === shopLoadToken; start += 6) {
+        await Promise.allSettled(shopItems.slice(start, start + 6).map(async (it, k) => {
+          if (!it.artist) return;
+          const url = await shopCoverOf(it);
+          if (token !== shopLoadToken || !url) return;
+          it.coverUrl = url;
+          const thumb = grid.querySelector(`.shop-card[data-shop-idx="${start + k}"] .shop-thumb`);
+          const img = document.createElement('img');
+          img.src = url; img.alt = ''; img.loading = 'lazy';
+          thumb?.querySelector('img, .shop-nocover')?.replaceWith(img);
+        }));
+      }
+    } catch (e) { grid.className = ''; grid.textContent = '載入失敗：' + (e.message || e); }
+  }
+  const shopModal = document.getElementById('shopModal');
+  const closeShopModal = () => shopModal.classList.remove('open');
+  document.getElementById('shopModalClose').addEventListener('click', closeShopModal);
+  shopModal.addEventListener('click', e => { if (e.target === shopModal) closeShopModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && shopModal.classList.contains('open')) closeShopModal(); });
+  let shopDetailToken = 0;
+  async function openShopDetail(i) {
+    const it = shopItems[i];
+    if (!it) return;
+    const token = ++shopDetailToken;
+    const r = it.rarity;
+    const meta = [
+      `店內標示：${it.listedArtist}《${it.listedTitle}》`,
+      [it.pressingYear ? `壓片年 ${it.pressingYear}` : '', it.condition ? `品相 ${it.condition}` : '', it.priceNT ? `售價 NT$${Number(it.priceNT)}` : ''].filter(Boolean).join('・'),
+      it.note || '',
+    ].filter(Boolean).map(esc).join('<br>');
+    document.getElementById('shopModalBody').innerHTML = `
+      ${it.coverUrl ? `<img class="shop-detail-cover" src="${esc(it.coverUrl)}" alt="">` : ''}
+      <div class="shop-detail-rarity${r ? ' rarity-' + r.tier : ''}"><span class="shop-rarity" style="font-size:10px;">${r ? esc(r.label) : (it.status === 'pending_card' ? '待上架' : '—')}</span></div>
+      <div class="shop-detail-album">${esc(it.album || it.listedTitle)}</div>
+      <div class="shop-detail-artist">${esc(it.artist || it.listedArtist)}${it.year ? `・${Number(it.year)}` : ''}</div>
+      <div class="shop-detail-meta">${meta}</div>
+      <div class="shop-detail-desc" id="shopDetailDesc">${it.status === 'pending_card' ? '這張還沒上架到卡池，介紹會在上架後出現。' : '載入介紹…'}</div>`;
+    shopModal.classList.add('open');
+    if (it.status === 'pending_card' || !it.artist) return;
+    let desc = '';
+    try {
+      const s = await getDoc(doc(db, 'album_overrides', ovCardId(it.artist, it.album)));
+      if (s.exists()) desc = (s.data().desc || '').trim();
+    } catch (e) {}
+    if (!desc) {
+      try {
+        const res = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(it.artist)}&album=${encodeURIComponent(it.album)}`);
+        if (res.ok) desc = ((await res.json()).desc || '').trim();
+      } catch (e) {}
+    }
+    if (token !== shopDetailToken) return;
+    const el = document.getElementById('shopDetailDesc');
+    if (el) el.textContent = desc || '（暫無介紹）';
+  }
+  document.getElementById('shopGrid').addEventListener('click', e => {
+    const card = e.target.closest('.shop-card[data-shop-idx]');
+    if (card) openShopDetail(Number(card.dataset.shopIdx));
+  });
+  document.getElementById('shopGrid').addEventListener('keydown', e => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const card = e.target.closest('.shop-card[data-shop-idx]');
+    if (card) { e.preventDefault(); openShopDetail(Number(card.dataset.shopIdx)); }
+  });
 
   // ───────── 頂級牌管理（apex_pool：殿堂/異端/流亡 固定卡池）─────────
   const APEX_INFO = {
