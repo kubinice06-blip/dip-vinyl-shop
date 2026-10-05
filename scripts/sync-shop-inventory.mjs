@@ -40,6 +40,12 @@ const OVERRIDES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': ['Kenny Burrell & John Coltrane', 'Kenny Burrell & John Coltrane'],
   // Notion 用新字體「浜田」，卡池為「濱田」
   '3ee0ad0255ff81668a74d3448af000fe': ['濱田金吾', 'Mugshot'],
+  // Notion 寫綽號 The Bronx Nightingale；店主 2026-10-05 確認實物是 1982 自製盤《Let's Do It》
+  '3f00ad0255ff80918ab9cdb1b140b38a': ['Jonny Holtzman', "Let's Do It"],
+  // 今田勝 7 吋宣傳單曲《誘われてシーサイド》（TD-117），兩曲出自 1982《Blue Marine》，掛專輯卡
+  '3f00ad0255ff801a82e6d36027faadfa': ['今田勝', 'Blue Marine'],
+  // 店主 2026-10-05 確認：Notion「Bellaphon」是德國 Bellaphon 版《More Lasting Than Bronze》
+  '3f00ad0255ff801aba1cf344d7dded98': ['John Coltrane', 'More Lasting Than Bronze'],
   // 封面印 The New George Otsuka Trio；卡池照池中先例掛日文團名（add-20261004-shop 第 8592 條）
   '3ee0ad0255ff8175b3c8f5f06e26186c': ['ジョージ大塚トリオ', 'You Are My Sunshine'],
 };
@@ -89,7 +95,7 @@ for (const row of snap.rows) {
   if (pinned) {
     card = byKey.get(key(...pinned));
     how = row.poolKey ? 'notion' : 'override';
-    if (!card) errors.push(`卡池鍵指向卡池不存在的卡：${row.id} → ${pinned.join('｜')}`);
+    if (!card && !PENDING_NEW.has(row.id)) errors.push(`卡池鍵指向卡池不存在的卡：${row.id} → ${pinned.join('｜')}`);
   } else {
     const hits = autoMatch(row);
     if (hits.length === 1) { card = hits[0]; how = 'auto'; }
