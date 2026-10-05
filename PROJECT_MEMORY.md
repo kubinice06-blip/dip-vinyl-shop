@@ -26,6 +26,9 @@ Notion「唱片庫存售價表（販售中）」26 筆 → `data/shop/notion-sna
 Notion 表有「卡池鍵」欄，雲端已填 23 筆，同步時優先採用。這次三張上架後 `PENDING_NEW` 清空、大塚那張加一筆 `OVERRIDES`，**in_stock 26／26**。
 Notion 那 3 列的卡池鍵還沒填（要動店主的 Notion，沒有自己去寫）。
 同批另有藝人介紹 ar-d-117 上架（店內販售區 9 位＋別名 1，提交 `a93f3227`）。
+10-05 另一個工作階段在 `admin.html` 加了「🏪 實體店庫存」分頁（提交 `c553dedc`、`7779ba7d`，對方不碰本檔，在此補記）：
+讀 inventory＋卡池算稀有度，照唱片櫃樣式排列，點卡看介紹；對方自述 Playwright 實測 26 張卡、23 張有稀有度。
+那時 3 張還待上架，這次上架後應該 26 張都有，沒有另外實測。
 
 **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、
 `card-subgenres.json`、`genre-tree.json`、`data/shop/{inventory.json,README.md}`、`scripts/sync-shop-inventory.mjs`、
