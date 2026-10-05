@@ -31,7 +31,11 @@
     .archive-del { background:none; border:1px solid var(--line); color:var(--red); font-family:var(--mono); font-size:10px; padding:2px 8px; cursor:pointer; margin-left:auto; flex-shrink:0; }
 
     /* TABS */
-    .tab-bar { display: flex; border-bottom: 1px solid var(--line); background: #fff; }
+    /* 分頁多到手機放不下：橫向捲動、按鈕不縮不換行（原本會被擠成直排、後面幾顆跑出畫面外） */
+    .tab-bar { display: flex; border-bottom: 1px solid var(--line); background: #fff; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .tab-bar::-webkit-scrollbar { display: none; }
+    .tab-bar .tab-btn { flex: 0 0 auto; white-space: nowrap; }
+    @media (max-width: 768px) { .tab-bar .tab-btn { padding: 0 14px; } }
     .tab-btn { background: none; border: none; border-bottom: 2px solid transparent; padding: 0 24px; height: 44px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .tab-btn.active { color: var(--black); border-bottom-color: var(--black); }
 
