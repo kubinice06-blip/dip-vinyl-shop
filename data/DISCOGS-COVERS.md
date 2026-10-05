@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **240** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 2、已退回 1）。
-最後更新：2026-10-04T16:48:23Z
+共 **243** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 5、已退回 1）。
+最後更新：2026-10-05T16:17:12Z
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -21,6 +21,14 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | ジョージ大塚トリオ 《You Are My Sunshine》 | [#4358997](https://www.discogs.com/release/4358997) | 1974 | Three Blind Mice | TBM-35 | 目錄號 TBM-35、年份 1974、廠牌 Three Blind Mice | ok |
+
+## add-20261005-shop（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Jonny Holtzman 《Let's Do It》 | [#10080644](https://www.discogs.com/release/10080644) | 1982 | Not On Label | CX1038 | 目錄號 CX1038、年份 1982 | ok |
+| モア 《モア》 | [#20594359](https://www.discogs.com/release/20594359) | 1983 | Saturn Records | ST-1001-24L | 目錄號 ST-1001-24L、年份 1983 | ok |
+| 今田勝 《Blue Marine》 | [#1938858](https://www.discogs.com/release/1938858) | 1982 | Full House | PAP-25026 | 目錄號 PAP-25026、年份 1982 | ok |
 
 ## c49（3 張）
 

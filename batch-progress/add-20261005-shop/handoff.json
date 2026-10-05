@@ -1,0 +1,31 @@
+{
+ "batch": "add-20261005-shop",
+ "cards": 12,
+ "purpose": "店內販售區第二波（Notion 2026-10-05 新進 16 張，其中 12 張缺卡）",
+ "manifest": "batch-progress/add-20261005-shop/onboarding-manifest.json（prepare gate 0 error／14 warning：upc 空、§1 人工 ×2）",
+ "desc": {
+  "cards": "desc-tools/batches/cards/add-20261005-shop-cards.json（a 5／b 5／c 1／d 1）",
+  "research": "desc-tools/batches/research/add-20261005-shop-{a,b,c,d}.json",
+  "hooks": "desc-tools/batches/hooks/add-20261005-shop-hooks-{a,b,c,d}.json",
+  "input": "desc-tools/batches/input/add-20261005-shop-writer-1.json",
+  "output": "desc-tools/batches/output/add-20261005-shop-out-1.json（主線逐張審，改 1 處）"
+ },
+ "shopMapping": {
+  "John Coltrane「Bellaphon」": "More Lasting Than Bronze（店主確認；Bellaphon 為德國再版廠牌）",
+  "今田勝《誘われてシーサイド》7 吋宣傳單曲 TD-117": "今田勝《Blue Marine》1982 PAP-25026（店主確認）",
+  "Jonny Holtzman《The Bronx Nightingale》": "《Let's Do It》1982 CX1038（店主確認，Bronx Nightingale 是綽號）"
+ },
+ "pendingLocal": {
+  "covers": "CAA 9 張、Discogs 3 張（モア 20594359、Holtzman 10080644、Blue Marine 1938858，已登錄 registry reviewed ok）；本機只需 HTTP 覆核",
+  "previews": "Apple jp ready 6 張（Here's Hope!、Directions、Tete!、Heartattack and Vine、飛べない鳥、Blue Marine），逐軌對上；其餘 6 張 unavailable，YT Music 覆核",
+  "listeners": "全部",
+  "apexEvidence": [],
+  "reviewNotes": [
+   "《More Lasting Than Bronze》＝池中《Coltrane》1957＋《Lush Life》1961 的雙 LP 合併、無獨有曲目；依 §5.6 本應不收，因店主指定保留（可逆）",
+   "モア、Holtzman 證據薄（§1 人工、Discogs＋單一佐證），簡介已依規限縮",
+   "上架後：sync-shop-inventory.mjs 的 PENDING_NEW 清掉、OVERRIDES 已預放 3 筆對應；Notion 這 12 列補填卡池鍵；後台按「↻ 從 Notion 重新整理」→「套用並存檔」",
+   "藝人介紹 ar-d-118 已上架 5 位（モア 單源跳過）"
+  ]
+ },
+ "qa": { "research": "pass", "hooks": "pass", "out": "pass", "qa-check-research": "0", "fix-spacing": "0", "prepareGate": "0 error" }
+}

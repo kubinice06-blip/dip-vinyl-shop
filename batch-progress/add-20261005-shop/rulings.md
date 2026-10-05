@@ -72,3 +72,21 @@
 - **8684** 《Saturday Morning》hook 為懸疑型（領銜者在 B 面讓出一首），note g2 收尾：〈My Heart Stood Still〉是 Barry Harris 的三重奏、Criss 未參與；第二句以 Barry Harris 領句。Xanadu「首批」不寫。
 - **8685** 《This Note's For You》壓預算後回核 hook 抓到一處事實錯：初稿寫「Crazy Horse 的節奏組只在〈One Thing〉留下」，但該曲貝斯是暫代的 George Whitsell，Crazy Horse 原班只剩鼓手 Ralph Molina——hook 改成「鼓手」，note g2 補「只有〈One Thing〉留著 Ralph Molina 的鼓」。Harold Melvin 法律行動與改署單名（單一來源、無年份）、Julien Temple、榜位、發行月份皆因預算整格捨去；MTV 年度最佳錄影帶亦捨去（避免被寫成專輯得獎）。
 - **8686** 跨批引入法排除：已上架《Hope Meets Foster》《High Hope!》《You Are My Sunshine》《完美小姐》頭兩句已掃；《Here's Hope!》不走 High Hope! 的 A/B 面換節奏組與 Down Beat 訪談軸，改走「六首自作、27 分鐘、Yanow 評語、與 Informal Jazz 的舊同台」。原 hook「鋼琴手自己寫的」與同批 c 組《Blue Marine》hook 撞 4-gram，已改為「領銜人親手寫成」。QA：`qa-batch.mjs hooks` 全過；`chk-hook-crossgroup.mjs` 唯一一項為 c 組《Blue Marine》hook 否定句（非本代理負責範圍，交主線／c 組處理）。
+
+## 寫作（8687–8694）
+- **8687** 輸出 `batches/output/add-20261005-shop-out-1.json` 12 張：full 9 張 216–240、thin 3 張 148–167。首句逐字照抄 hook；note 的「正文只寫上列各項」逐張照辦（目錄號、樂手、曲名只寫 note 列出的）。正文不點名 Discogs／樂評人／媒體：《Here's Hope!》Yanow 評語寫成「樂評唯一挑剔的是篇幅太短」；Waits 的 Record 雜誌寫成「1983 年的一次雜誌訪問」；下田 1973 寫「有樂評部落格」。
+- **8688** モア：店家來源（三天錄完、業餘者、想做一張唱片的願望、Saturn Records 為此而設只發一張）全掛「據店家介紹」；作曲只寫石井英樹與杉島篤彦，Masaru Sato 只寫掛名音樂總監與內頁解說，「佐藤勝」不出現。直接引語「想做一張唱片」轉間接敘述。
+- **8689** 《陽のあたる翼》：樂手名單掛「據唱片行說明」、不點樂器；民謠／放克搖滾用「同一份說明稱」承接。第二句「是」句型交代第三張；1973《飛べない鳥》第二句「由」句型交代 Marci Sutin，兩張頭兩句異構。1973 卡只寫「自紐約歸來後」，不寫在紐約錄音。
+- **8690** 《Saturday Morning》：B 面〈My Heart Stood Still〉寫成 Barry Harris 的鋼琴三重奏、Criss 沒有出聲；其餘曲目寫回四重奏。Xanadu 不寫「首批」。
+- **8691** 《More Lasting Than Bronze》主體＝「這套雙 LP 把《Coltrane》與《Lush Life》以原始單聲道併在一起」（Prestige 發行、Fantasy 經銷、PR 24014），兩張原盤各一句，不展開原盤陣容；年份只寫 1972。《Directions》為壓字數捨去副標全文（hook 已點副標），兩張合輯頭兩句異構（副標＋整理輯身分 vs 載體＋「是」句型）。
+- **8692** 《Blue Marine》年份只寫 1982；錄音地東京 Sound Inn／紐約 Secret Sound Studio 用來替 hook 的「東京與紐約」具名，〈Secret Sounds〉作曲 Grover Washington Jr. 替 hook 的「客席薩克斯風手」具名；Witness Band、Tom Browne 不寫（不在 note）。
+- **8693** 跨張 4-gram 合掃（本批＋add-20261004-shop）拆掉四條：`最後一張`（Directions／Waits → Waits 改「錄音也到此為止」）、`年月日在`（Saturday Morning／Tete! → Tete 改「日期是…」收句尾）、`六首全是`（Tete!／舊批 High Hope! → 改「整張六首都挑」）、`貝斯換成`（This Note's／舊批 You Are My Sunshine → 改「Rick Rosas 接下貝斯」）。剩餘命中只有樂器名（中音薩克斯風，含 hook 原文）與藝人名下田逸郎，依規不算。
+- **8694** QA：`qa-batch.mjs out` 全部通過、`qa-check-research` 標記 0、`fix-spacing` 待補 0。未 git commit／push，未碰 PROJECT_MEMORY.md。
+
+## 主線審稿（不佔條號）
+- 12 張逐張審過；改 1 處：《陽のあたる翼》第二句與 hook 重複「第三張」，改寫成曲數＋距首張三年。
+- モア：Masaru Sato 掛名 Music Director 是 Discogs 人員欄（有 src），保留；不寫佐藤勝作曲。
+- Holtzman 卡：John Hammond Sr. 單源不寫。
+- 三軸（manual:pool-peers）：Here's Hope! 3/4/2、Directions 3/3/3、Saturday Morning 3/4/2、Tete! 3/4/2、More Lasting Than Bronze 3/3/2、This Note's For You 3/2/1、Heartattack and Vine 4/2/2、飛べない鳥 3/4/3、陽のあたる翼 2/4/2、モア 1/5/2、Blue Marine 3/4/1、Let's Do It 1/5/1；頂點 0。
+- Blue Marine 封面改用 Discogs 1938858 原盤圖（CAA 只有 1992 CD 再版）。
+- 試聽 Apple jp ready 6 張，逐軌核對。
