@@ -7,6 +7,16 @@
 | `notion-snapshot.json` | Notion 表的公開欄位快照（頁面 id、品名、演出者、年份、品相、售價、卡池鍵）。**成本、利潤、水星抽成、群組不進 repo**——這是公開站。 |
 | `inventory.json` | **其他功能讀這份。** 每筆有 `status`（`in_stock`／`pending_card`／`sold`）、`cardKey`（＝`scripts/pool-keys.mjs` 的 `key(artist, album)`）、卡池原字 `artist`／`album`、店內標示名、壓片年、品相、售價。 |
 
+## 即時來源（2026-10-05 起）
+
+**Firestore `settings/shopInventory` 是即時清單**（所有人可讀、只有管理員可寫），格式同 `inventory.json`（`items[]`，含 `status`／`cardKey`）。
+後台「🏪 實體店庫存」按「↻ 從 Notion 重新整理」→ Worker `/shop-inventory`（帶 X-Admin-Key、Worker 持有 `NOTION_TOKEN`，只回公開欄位）
+→ 列出新增／移除（記 sold）／改價／對不上卡池 → 「套用並存檔」寫回 Firestore。
+其他功能要讀店內在售：**先讀 Firestore `settings/shopInventory`，讀不到才退 `data/shop/inventory.json`**（repo 快照，靠 `scripts/sync-shop-inventory.mjs` 更新）。
+
+一次性設定（本機）：Notion 建 internal integration → 把「唱片庫存售價表（販售中）」分享給它 →
+`cd dip-vinyl-worker && npx wrangler secret put NOTION_TOKEN` → `npm run deploy`。
+
 ## 後台
 
 `admin.html` 的「🏪 實體店庫存」分頁讀這份檔，照前台「我的唱片櫃」的卡片樣式排列（稀有度框色、售價、品相、壓片年）；
@@ -33,12 +43,12 @@ const inShop = new Set(inv.items.filter(i => i.status === 'in_stock').map(i => i
 Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字），2026-10-04 已填 23 筆；快照存成 `poolKey`，同步時優先採用。
 新進貨在 Notion 填好卡池鍵即可；空白的才走自動比對。
 
+## 現況（2026-10-05）
+
+26 筆全部 `in_stock`。缺卡的 3 張（Elmo Hope《Hope Meets Foster》《High Hope!》、ジョージ大塚トリオ《You Are My Sunshine》）已由 add-20261004-shop 上架；
+大塚那張封面印的是 The New George Otsuka Trio，對應寫在腳本的 `OVERRIDES`。Notion 這 3 列的「卡池鍵」還沒填，填了之後可以把那筆 override 拿掉。
+
 ## 待本機補記 PROJECT_MEMORY（雲端不碰該檔）
 
-> 2026-10-04｜dip-vinyl-shop｜店內販售區資料層：Notion 售價表 26 筆 → `data/shop/inventory.json`
-> （in_stock 23、pending_card 3）。新增 `scripts/sync-shop-inventory.mjs`、`data/shop/`。
-> 人工對應 4 筆（三上寛 零狐徒、濱田金吾、Red Garland《Crossings》、Kenny Burrell & John Coltrane 1976 再版）。
-> 待新建卡：Elmo Hope《Hope Meets Foster》《High Hope!》、The New George Otsuka Trio《You Are My Sunshine》。
-> 驗證：sync 0 error、重跑輸出逐位元相同。
-> 2026-10-05｜dip-vinyl-shop｜後台新增「🏪 實體店庫存」分頁（admin.html）：讀 data/shop/inventory.json＋seed_cards.json 算稀有度，
-> 封面 card_catalog → /spotify-search，點卡開詳情（album_overrides.desc → /album-desc）。驗證：Playwright 實測 26 張卡、23 張稀有度、詳情介紹正常。
+> 2026-10-05｜dip-vinyl-shop＋dip-vinyl-worker｜後台「實體店庫存」加「↻ 從 Notion 重新整理」：Worker 新增 `/shop-inventory`（管理員金鑰、NOTION_TOKEN，只回公開欄位），
+> 後台比對新增／移除／改價後存 Firestore `settings/shopInventory`。驗證：Worker 路由以模擬 Notion 回應測 200／403／503 與分頁；後台 Playwright 模擬刪 1 增 2 改價 1，差異清單正確。待本機：設 NOTION_TOKEN、部署 Worker。

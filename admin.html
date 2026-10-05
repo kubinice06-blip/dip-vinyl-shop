@@ -259,6 +259,10 @@
     .rarity-epic .shop-rarity { color: #7a3fb0; }
     .rarity-uncommon .shop-rarity { color: #259643; }
     .rarity-rare .shop-rarity { color: #3a7bd5; }
+    .shop-diff { border: 1px solid var(--line); background: #fbfbf7; padding: 12px 14px; margin-bottom: 14px; font-size: 11px; line-height: 1.9; }
+    .shop-diff b { font-weight: 700; }
+    .shop-diff .add { color: #245c3a; } .shop-diff .del { color: #a3122a; } .shop-diff .chg { color: #8a5a00; } .shop-diff .warn { color: #b26a00; }
+    .shop-diff-actions { margin-top: 10px; display: flex; gap: 8px; }
     .shop-detail-cover { width: 100%; max-width: 320px; aspect-ratio: 1; object-fit: cover; display: block; margin: 0 auto 16px; background: #f0f0f0; border: 1px solid var(--line); }
     .shop-detail-rarity { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 6px; }
     .shop-detail-album { font-size: 16px; font-weight: 700; line-height: 1.4; }
@@ -813,7 +817,12 @@
           <div class="section-label" style="margin:0;">實體店庫存（點卡片看專輯介紹）</div>
           <span class="shop-count" id="shopCount"></span>
         </div>
-        <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">清單來自 Notion「唱片庫存售價表（販售中）」同步出的 <b>data/shop/inventory.json</b>，排列方式比照前台「我的唱片櫃」。右下角是售價；「待上架」是卡池還沒有、正在建卡的唱片。Notion 改了之後要重跑同步（scripts/sync-shop-inventory.mjs）這裡才會更新。</p>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px;">
+          <button class="gbtn" id="shopRefreshBtn" type="button">↻ 從 Notion 重新整理</button>
+          <span id="shopSource" style="font-size:10px;color:var(--gray);"></span>
+        </div>
+        <div id="shopDiff" class="shop-diff" hidden></div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">清單存在 Firestore <b>settings/shopInventory</b>（前台與其他功能讀這份）；還沒存過時退回 repo 的 data/shop/inventory.json。按「↻ 從 Notion 重新整理」會即時讀 Notion「唱片庫存售價表（販售中）」，列出<b>新增／移除／改價</b>，確認後按「套用並存檔」才會寫入。Notion 上消失的列記為已售出（保留紀錄、不再顯示）。對不上卡池的列標「待上架」：已在卡池的請到 Notion 填「卡池鍵」（藝人|專輯）；卡池沒有的要走建卡。</p>
         <div id="shopGrid" style="font-size:12px;color:var(--gray);">尚未載入</div>
       </div>
     </div>
@@ -3543,32 +3552,39 @@ ${discogs ? '- Discogs：' + discogs : ''}
       ${meta ? `<div class="shop-meta">${esc(meta)}</div>` : ''}
     </article>`;
   }
-  async function loadShopInventory() {
+  // 卡池鍵正規化：與 scripts/pool-keys.mjs / sync-shop-inventory.mjs 相同
+  const shopNorm = v => String(v || '').toLowerCase().replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
+  const shopKey = (a, b) => shopNorm(a) + '|' + shopNorm(b);
+  const SHOP_DOC = () => doc(db, 'settings', 'shopInventory');
+  let shopPool = null;          // seed_cards.json 原始列
+  let shopPoolByKey = null;     // shopKey → 列
+  let shopBase = [];            // 目前存檔的完整清單（含 sold）
+  let shopPending = null;       // 從 Notion 算出、尚未存檔的新清單
+  async function ensureShopPool() {
+    if (shopPool) return;
+    shopPool = await fetch('seed_cards.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []);
+    shopPoolByKey = new Map(shopPool.map(row => [shopKey(row[0], row[1]), row]));
+  }
+  function renderShopGrid(items, token) {
     const grid = document.getElementById('shopGrid');
-    if (!grid) return;
-    const token = ++shopLoadToken;
-    grid.className = ''; grid.textContent = '載入中…';
-    try {
-      const [inv, pool] = await Promise.all([
-        fetch('data/shop/inventory.json?v=' + Date.now()).then(r => { if (!r.ok) throw new Error('inventory.json HTTP ' + r.status); return r.json(); }),
-        fetch('seed_cards.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
-      ]);
-      if (token !== shopLoadToken) return;
-      const byId = new Map(pool.map(row => [ovCardId(row[0], row[1]), row]));
-      shopItems = (inv.items || []).filter(it => it.status !== 'sold').map(it => {
-        const row = it.artist ? byId.get(ovCardId(it.artist, it.album)) : null;
-        return { ...it, row, rarity: shopRarityOf(row), year: row ? row[6] : null, coverUrl: '' };
-      });
-      // 已上架的在前、待上架的在後；同組照藝人名排
-      shopItems.sort((a, b) => (a.status === 'pending_card') - (b.status === 'pending_card') || String(a.artist || a.listedArtist).localeCompare(String(b.artist || b.listedArtist)));
-      const ready = shopItems.filter(it => it.status === 'in_stock').length;
-      document.getElementById('shopCount').textContent = `在售 ${shopItems.length} 張・卡池已有 ${ready} 張・待上架 ${shopItems.length - ready} 張`;
-      if (!shopItems.length) { grid.textContent = '清單是空的。'; return; }
-      grid.className = 'shop-grid';
-      grid.innerHTML = shopItems.map(shopCardHtml).join('');
-      // 封面背景分批補（6 張一組），補到就換掉 ♪
+    const byId = new Map(shopPool.map(row => [ovCardId(row[0], row[1]), row]));
+    shopItems = items.filter(it => it.status !== 'sold').map(it => {
+      const row = it.artist ? byId.get(ovCardId(it.artist, it.album)) : null;
+      return { ...it, row, rarity: shopRarityOf(row), year: row ? row[6] : null, coverUrl: '' };
+    });
+    // 已上架的在前、待上架的在後；同組照藝人名排
+    shopItems.sort((a, b) => (a.status === 'pending_card') - (b.status === 'pending_card') || String(a.artist || a.listedArtist).localeCompare(String(b.artist || b.listedArtist)));
+    const ready = shopItems.filter(it => it.status === 'in_stock').length;
+    const sold = items.filter(it => it.status === 'sold').length;
+    document.getElementById('shopCount').textContent = `在售 ${shopItems.length} 張・卡池已有 ${ready} 張・待上架 ${shopItems.length - ready} 張${sold ? `・已售出紀錄 ${sold} 張` : ''}`;
+    if (!shopItems.length) { grid.className = ''; grid.textContent = '清單是空的。'; return; }
+    grid.className = 'shop-grid';
+    grid.innerHTML = shopItems.map(shopCardHtml).join('');
+    // 封面背景分批補（6 張一組），補到就換掉 ♪
+    (async () => {
       for (let start = 0; start < shopItems.length && token === shopLoadToken; start += 6) {
-        await Promise.allSettled(shopItems.slice(start, start + 6).map(async (it, k) => {
+        const batch = shopItems.slice(start, start + 6);
+        await Promise.allSettled(batch.map(async (it, k) => {
           if (!it.artist) return;
           const url = await shopCoverOf(it);
           if (token !== shopLoadToken || !url) return;
@@ -3579,8 +3595,135 @@ ${discogs ? '- Discogs：' + discogs : ''}
           thumb?.querySelector('img, .shop-nocover')?.replaceWith(img);
         }));
       }
+    })();
+  }
+  async function loadShopInventory() {
+    const grid = document.getElementById('shopGrid');
+    if (!grid) return;
+    const token = ++shopLoadToken;
+    grid.className = ''; grid.textContent = '載入中…';
+    try {
+      await ensureShopPool();
+      let saved = null;
+      try { const snap = await getDoc(SHOP_DOC()); if (snap.exists()) saved = snap.data(); } catch (e) {}
+      if (token !== shopLoadToken) return;
+      if (saved && Array.isArray(saved.items)) {
+        shopBase = saved.items;
+        document.getElementById('shopSource').textContent = `來源：Firestore（上次從 Notion 存檔 ${saved.syncedAt ? new Date(saved.syncedAt).toLocaleString('zh-TW') : '—'}）`;
+      } else {
+        const inv = await fetch('data/shop/inventory.json?v=' + Date.now()).then(r => { if (!r.ok) throw new Error('inventory.json HTTP ' + r.status); return r.json(); });
+        if (token !== shopLoadToken) return;
+        shopBase = inv.items || [];
+        document.getElementById('shopSource').textContent = `來源：repo 快照 data/shop/inventory.json（${inv.snapshotAt || '—'}）；按重新整理並存檔後改用 Firestore`;
+      }
+      renderShopGrid(shopBase, token);
     } catch (e) { grid.className = ''; grid.textContent = '載入失敗：' + (e.message || e); }
   }
+  // Notion 列 → 卡池卡：①Notion「卡池鍵」②舊清單同一頁面已對上的卡 ③品名（去掉 2LP）＋演出者互含的唯一卡
+  function shopMatch(row, prev) {
+    if (row.poolKey) {
+      const [a, b] = row.poolKey.split('|');
+      const hit = b != null ? shopPoolByKey.get(shopKey(a, b)) : null;
+      return hit ? { row: hit, how: 'notion' } : { row: null, how: 'badkey' };
+    }
+    if (prev?.artist) {
+      const hit = shopPoolByKey.get(shopKey(prev.artist, prev.album));
+      if (hit) return { row: hit, how: prev.match || 'prev' };
+    }
+    const t = shopNorm(String(row.title || '').replace(/\s*\b\d?LP\b\s*$/i, '')), a = shopNorm(row.artist);
+    if (t && a) {
+      const hits = shopPool.filter(r => shopNorm(r[1]) === t && (shopNorm(r[0]).includes(a) || a.includes(shopNorm(r[0]))));
+      if (hits.length === 1) return { row: hits[0], how: 'auto' };
+    }
+    return { row: null, how: null };
+  }
+  async function refreshShopFromNotion() {
+    const btn = document.getElementById('shopRefreshBtn');
+    const box = document.getElementById('shopDiff');
+    btn.disabled = true; btn.textContent = '讀取 Notion…';
+    try {
+      await ensureShopPool();
+      const res = await fetch(`${WORKER_URL}/shop-inventory`, { headers: { 'X-Admin-Key': adminKey() } });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || ('HTTP ' + res.status));
+      const today = new Date().toISOString().slice(0, 10);
+      const prevById = new Map(shopBase.map(it => [it.id, it]));
+      const seen = new Set();
+      const next = [], added = [], changed = [], unmatched = [], badKeys = [];
+      for (const row of data.rows || []) {
+        seen.add(row.id);
+        const prev = prevById.get(row.id);
+        const m = shopMatch(row, prev && prev.status !== 'sold' ? prev : null);
+        if (m.how === 'badkey') badKeys.push(row);
+        const card = m.row;
+        const it = {
+          id: row.id, status: card ? 'in_stock' : 'pending_card',
+          cardKey: card ? shopKey(card[0], card[1]) : null, artist: card ? card[0] : null, album: card ? card[1] : null,
+          match: card ? m.how : null, listedTitle: row.title, listedArtist: row.artist,
+          pressingYear: row.year ?? null, condition: row.condition ?? null, priceNT: row.priceNT ?? null,
+          note: prev?.note || null, firstSeen: (prev && prev.status !== 'sold' && prev.firstSeen) || today,
+        };
+        next.push(it);
+        if (!card) unmatched.push(it);
+        if (!prev || prev.status === 'sold') added.push(it);
+        else {
+          const diffs = [];
+          if ((prev.priceNT ?? null) !== it.priceNT) diffs.push(`售價 ${prev.priceNT ?? '—'} → ${it.priceNT ?? '—'}`);
+          if ((prev.condition ?? null) !== it.condition) diffs.push(`品相 ${prev.condition ?? '—'} → ${it.condition ?? '—'}`);
+          if ((prev.cardKey || null) !== (it.cardKey || null)) diffs.push(it.cardKey ? `對上卡池 ${it.artist}《${it.album}》` : '卡池對應消失');
+          if (prev.listedTitle !== it.listedTitle || prev.listedArtist !== it.listedArtist) diffs.push('品名／演出者改了');
+          if (diffs.length) changed.push({ it, diffs });
+        }
+      }
+      const removed = [];
+      for (const old of shopBase) {
+        if (seen.has(old.id)) continue;
+        if (old.status === 'sold') { next.push(old); continue; }
+        const soldIt = { ...old, status: 'sold', soldAt: today };
+        next.push(soldIt); removed.push(soldIt);
+      }
+      shopPending = { items: next, fetchedAt: data.fetchedAt, source: data.source };
+      const name = it => esc(`${it.listedArtist}《${it.listedTitle}》`);
+      const lines = [];
+      if (added.length) lines.push(`<div class="add"><b>新增 ${added.length}</b>：${added.map(name).join('、')}</div>`);
+      if (removed.length) lines.push(`<div class="del"><b>移除（記為已售出）${removed.length}</b>：${removed.map(name).join('、')}</div>`);
+      if (changed.length) lines.push(`<div class="chg"><b>變更 ${changed.length}</b>：${changed.map(c => `${name(c.it)}（${esc(c.diffs.join('；'))}）`).join('、')}</div>`);
+      if (unmatched.length) lines.push(`<div class="warn"><b>對不上卡池 ${unmatched.length}</b>（顯示為待上架）：${unmatched.map(name).join('、')}</div>`);
+      if (badKeys.length) lines.push(`<div class="warn"><b>Notion 卡池鍵在卡池裡找不到 ${badKeys.length}</b>：${badKeys.map(r => esc(`${r.title}（${r.poolKey}）`)).join('、')}</div>`);
+      const dirty = added.length || removed.length || changed.length;
+      box.hidden = false;
+      box.innerHTML = `<div>Notion 共 ${(data.rows || []).length} 列（${esc(new Date(data.fetchedAt).toLocaleString('zh-TW'))} 讀取）。</div>`
+        + (dirty ? lines.join('') : `<div>與目前清單一致，沒有新增或移除。</div>${lines.join('')}`)
+        + `<div class="shop-diff-actions">${dirty || !shopBase.length ? '<button class="gbtn" id="shopApplyBtn" type="button">套用並存檔</button>' : ''}<button class="gbtn" id="shopDiffClose" type="button" style="background:#fff;color:var(--black);border:1px solid var(--line);">關閉</button></div>`;
+    } catch (e) {
+      box.hidden = false;
+      box.innerHTML = `<div class="del">讀取 Notion 失敗：${esc(e.message || String(e))}</div><div style="color:var(--gray);">403＝後台金鑰不對（主控台執行 clearAdminKey() 重輸）；503＝Worker 還沒設 NOTION_TOKEN；Notion 404＝這張表還沒分享給 Notion integration。</div>`;
+    } finally {
+      btn.disabled = false; btn.textContent = '↻ 從 Notion 重新整理';
+    }
+  }
+  async function applyShopPending() {
+    if (!shopPending) return;
+    const btn = document.getElementById('shopApplyBtn');
+    if (btn) { btn.disabled = true; btn.textContent = '存檔中…'; }
+    try {
+      const payload = { v: 1, source: shopPending.source, syncedAt: Date.now(), notionFetchedAt: shopPending.fetchedAt, count: shopPending.items.length, items: shopPending.items };
+      await setDoc(SHOP_DOC(), JSON.parse(JSON.stringify(payload)));
+      shopPending = null;
+      const box = document.getElementById('shopDiff');
+      box.innerHTML = '<div class="add">✓ 已存檔到 Firestore settings/shopInventory。</div>';
+      setTimeout(() => { box.hidden = true; }, 4000);
+      await loadShopInventory();
+    } catch (e) {
+      if (btn) { btn.disabled = false; btn.textContent = '套用並存檔'; }
+      alert('存檔失敗：' + (e.message || e));
+    }
+  }
+  document.getElementById('shopRefreshBtn').addEventListener('click', refreshShopFromNotion);
+  document.getElementById('shopDiff').addEventListener('click', e => {
+    if (e.target.id === 'shopApplyBtn') applyShopPending();
+    if (e.target.id === 'shopDiffClose') { shopPending = null; e.currentTarget.hidden = true; }
+  });
   const shopModal = document.getElementById('shopModal');
   const closeShopModal = () => shopModal.classList.remove('open');
   document.getElementById('shopModalClose').addEventListener('click', closeShopModal);

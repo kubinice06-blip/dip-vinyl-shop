@@ -40,16 +40,14 @@ const OVERRIDES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': ['Kenny Burrell & John Coltrane', 'Kenny Burrell & John Coltrane'],
   // Notion 用新字體「浜田」，卡池為「濱田」
   '3ee0ad0255ff81668a74d3448af000fe': ['濱田金吾', 'Mugshot'],
+  // 封面印 The New George Otsuka Trio；卡池照池中先例掛日文團名（add-20261004-shop 第 8592 條）
+  '3ee0ad0255ff8175b3c8f5f06e26186c': ['ジョージ大塚トリオ', 'You Are My Sunshine'],
 };
 const NOTES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': '1976 Prestige 雙 LP 再版',
 };
 // 卡池尚無、走 dip-card-create 新建中的列。上架後移到 OVERRIDES 或讓自動比對接手。
-const PENDING_NEW = new Set([
-  '3ee0ad0255ff800c8c2fc98c21d16165', // Elmo Hope《Hope Meets Foster》
-  '3ee0ad0255ff80ce9526dcb15aecb696', // Elmo Hope《High Hope!》
-  '3ee0ad0255ff8175b3c8f5f06e26186c', // The New George Otsuka Trio《You Are My Sunshine》
-]);
+const PENDING_NEW = new Set([]);
 
 const pool = JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8'));
 const byKey = new Map(pool.map(r => [key(r[0], r[1]), r]));

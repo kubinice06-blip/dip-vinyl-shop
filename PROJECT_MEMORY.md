@@ -1,5 +1,42 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-05｜dip-vinyl-shop｜add-20261004-shop 上架 3 張（卡池 18,638 → 18,641）、44 張爵士卡誤標古典改回、店內販售區資料層補記
+
+**一、新卡 3 張**（店內販售區缺的卡，雲端段已做完身分／封面／試聽／簡介，prepare gate 0 error）：
+Elmo Hope《Hope Meets Foster》1956、Elmo Hope《High Hope!》1961、ジョージ大塚トリオ《You Are My Sunshine》1974，三軸皆 3/4/2（rare），頂點 0。
+本機覆核：封面三張抓圖看過（盤名與編號相符；兩張 CAA front-250／500 皆 200、大塚走 Discogs 4358997 第二張圖）；
+Apple 642094766／642032306 以 lookup 逐軌對過（jp、tw 都有，掛名 Elmo Hope，沒有別張卡引用同一個 collectionId）；
+Last.fm listeners 198／17／查無。機器冷門值兩張 Hope 是 5，依 §0.8 維持人工 4（有授權再版與串流，不是私壓）。
+大塚那張維持固定無試聽。寫入：card_catalog 3／3、KV 4 鍵逐字回讀一致、靜態試聽 2＋負面狀態 1、卡池 3 列；**published gate 0 error**。
+manifest：`onboarding-manifest-add-20261004-shop-20261005.json`（雲端原檔在 `batch-progress/add-20261004-shop/`）。
+三張的標籤直接打 `/album-genres` 預熱後重建子曲風表：17,225 → 17,233／18,641。
+
+**二、查重時撞見的舊問題：44 張爵士卡被標成 classical。**
+worker `musicMapGenres` 的古典規則有 `chamber`，Last.fm 標籤「paul chambers」「joe chambers」（貝斯手、鼓手的名字）因此算一票古典。
+標籤少的卡直接變成單標 classical（《Round About Midnight》《Leeway》《Whistle Stop》《Informal Jazz》等 8 張），其餘 36 張是 `jazz＋classical`。
+`audits/pub-fix/chambers-classical-fix.mjs` 只動「排除 chambers 這個姓之後沒有任何標籤命中古典規則」的列——
+chamber jazz、orchestral jazz、third stream 命中的不動。卡池 44 列拿掉 classical，KV `mapgenre3` 44 鍵的 `genres` 同步更正（rawGenres 原樣保留）。
+前後紀錄在 `audits/pub-fix/chambers-classical-fix-20261005.json`。卡池 classical 1,560 → 1,516。
+**worker 那條規則還沒改**：改法是 `chamber` → `chamber(?!s)`（本機測過六種標籤），但 `wrangler deploy` 被自動模式擋下，工作區已還原，等店主核可後再改再部署。
+沒修之前，新卡只要標籤帶到 Chambers 這個姓還是會被判成古典——**上架後看一眼新卡的曲風欄**。
+
+**三、店內販售區資料層（雲端 10-04 做的，雲端不碰本檔，在此補記）**：
+Notion「唱片庫存售價表（販售中）」26 筆 → `data/shop/notion-snapshot.json`（只留公開欄位，成本／利潤／抽成不進 repo）
+→ `scripts/sync-shop-inventory.mjs` → `data/shop/inventory.json`。其他功能要知道「哪些卡店裡有賣」讀 inventory 的 `status === 'in_stock'`。
+Notion 表有「卡池鍵」欄，雲端已填 23 筆，同步時優先採用。這次三張上架後 `PENDING_NEW` 清空、大塚那張加一筆 `OVERRIDES`，**in_stock 26／26**。
+Notion 那 3 列的卡池鍵還沒填（要動店主的 Notion，沒有自己去寫）。
+同批另有藝人介紹 ar-d-117 上架（店內販售區 9 位＋別名 1，提交 `a93f3227`）。
+10-05 另一個工作階段在 `admin.html` 加了「🏪 實體店庫存」分頁（提交 `c553dedc`、`7779ba7d`，對方不碰本檔，在此補記）：
+讀 inventory＋卡池算稀有度，照唱片櫃樣式排列，點卡看介紹；對方自述 Playwright 實測 26 張卡、23 張有稀有度。
+那時 3 張還待上架，這次上架後應該 26 張都有，沒有另外實測。
+
+**主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、
+`card-subgenres.json`、`genre-tree.json`、`data/shop/{inventory.json,README.md}`、`scripts/sync-shop-inventory.mjs`、
+`audits/pub-fix/chambers-classical-fix.mjs`、`audits/pub-fix/chambers-classical-fix-20261005.json`。
+
+**尚未處理**：worker 古典規則（見二）；Notion 3 列卡池鍵；《High Hope!》年份 1961 對 1962 沒有找到新證據，維持 1961；
+c-96 Jill Scott《The Light of the Sun》manifest 寫 soul＋hiphop、卡池只有 soul（掃 manifest 與卡池曲風不一致時唯一的一筆，沒動）。
+
 ### 2026-10-04｜dip-vinyl-shop｜c-148 至 c-198 與 add-20261003 上架 1,390 張，卡池 17,248 → 18,638
 
 同日第五筆。雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（621 筆提交）合併進 main，
