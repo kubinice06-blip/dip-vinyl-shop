@@ -113,6 +113,112 @@ for (const [, v] of seen) {
 for (const d of dupMbid)
   console.log(`⚠ 同 rgMbid 不同掛名：${d.b} ${d.c.artist}《${d.c.album}》 ←→ ${d.prev.b} ${d.prev.c.artist}《${d.prev.c.album}》（${d.id}）`);
 
+// 2026-09-18（c-148 b 組第 936 條）：**上面兩道都是「鍵相等」或「rgMbid 相等」，
+// 對「同一張碟被寫成兩個不同盤名字串」完全無感**。c-148 b 那批 `chk-prop` 標記 0，
+// 實際卻有四筆撞到已在池中或已進卡單的碟——
+// 《State of the Tenor Vol. 1》對上 seed 裡寫法不同的同一張、
+// 《Cafe Bohemia Vol. I》對上 seed 的 BLP 1524、
+// 《The Song of Singing》對上 c-143 卡單（MB 為同一張碟建了兩個 RG，rgMbid 也不同）。
+// 這裡補第三道：**同一個掛名底下，兩個盤名的實詞互相包含就報**。
+// 只報不擋，而且**只看還在策展中的批次（prop 來源）那一側**——
+// 已定稿的卡單彼此比對會把 Vol. 1／Vol. 2 這類正常系列整批印出來，淹掉真的。
+// 第一版用「盤名互為子字串」，對真正的案例無效：
+// seed 是《'Round About Midnight at the Cafe Bohemia》、提案是《Cafe Bohemia Vol. I》，
+// 剝完標點後 `cafebohemiavoli` 不是前者的子字串（卡在 `voli` 那個尾巴）。
+// 改成**詞元包含**：短的那個盤名的「實詞」若全都出現在長的那個裡面就報。
+// 實詞＝長度 ≥4 的詞，**扣掉卷次詞與序數**（vol／volume／part／one…、純數字與羅馬數字）
+// ——正是這些尾巴讓字串比對失效的。至少要有兩個實詞才報，否則同掛名同主題的碟會整片亮。
+const STOP = new Set(['vol', 'volume', 'part', 'pt', 'live', 'the', 'and', 'with', 'complete',
+  'one', 'two', 'three', 'four', 'five', 'first', 'second', 'third', 'sessions', 'session']);
+const ROMAN = /^[ivxlcdm]+$/;
+const tokens = s => String(s || '')
+  .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase().split(/[^\p{L}\p{N}]+/u)
+  .filter(w => w && !STOP.has(w) && !/^\d+$/.test(w) && !ROMAN.test(w) && Array.from(w).length >= 4);
+const liveRows = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'))
+    .map(r => ({ artist: r[0], album: r[1], b: '線上池' })); } catch { return []; }
+})();
+const propSide = [...seen.values()].filter(v => propBatches.includes(v.b) && !cardBatches.includes(v.b))
+  .map(v => ({ artist: v.c.artist, album: v.c.album, b: v.b }));
+const otherSide = [...[...seen.values()].map(v => ({ artist: v.c.artist, album: v.c.album, b: v.b })), ...liveRows];
+const byArtist = new Map();
+for (const r of otherSide) {
+  const a = strip(r.artist);
+  if (!a) continue;
+  if (!byArtist.has(a)) byArtist.set(a, []);
+  byArtist.get(a).push(r);
+}
+const subHits = [];
+for (const r of propSide) {
+  const a = strip(r.artist), t = strip(r.album), tt = tokens(r.album);
+  if (tt.length < 2) continue;
+  for (const o of byArtist.get(a) || []) {
+    const u = strip(o.album);
+    if (!u || u === t) continue;                 // 完全相等的那道上面已經報過
+    const ut = tokens(o.album);
+    if (ut.length < 2) continue;
+    const [short, long] = tt.length <= ut.length ? [tt, ut] : [ut, tt];
+    if (short.every(w => long.includes(w)))
+      subHits.push(`⚠ 同掛名盤名詞元包含（只報不擋）：${r.b} ${r.artist}《${r.album}》 ←→ ${o.b} ${o.artist}《${o.album}》`);
+  }
+}
+
+// 2026-09-18（c-154 a 抓到，主線補第四道）：**前三道都抓不到「同一張碟、掛名字串不同、MB 又建了兩個 RG」**。
+// 實例：c-154 a 的 `Jimmy Smith Trio featuring Kenny Burrell《The Master II》` 與 c-152 的
+// `Jimmy Smith《The Master II》`——**六軌逐字相同、同 catno `7243 8 55466 2`**，
+// 但掛名字串不同（鍵比對過）、rgMbid 不同（第二道過）、盤名相同所以詞元包含那道也只會報一筆偽陽性。
+// **策展層是用 Discogs catno 反查才抓到的。** 這裡把它變成機器檢查：**從 `label` 抽目錄號，共用就報**。
+// 只報不擋，一樣只看還在策展中的批次那一側。
+// 2026-09-21（c-175 a 抓到，主線第 1872-B 條）：**「國別碼＋發行日」後面接載體尺寸時，
+// 這條的 `$` 錨點就失效了。** 本線 `label` 欄的寫法逐字是
+// `Columbia JDX-7006（JP 1972-10-25 12 吋 Vinyl …）`——抽出來的 token 是 `JP1972102512`
+// （末尾那個 `12` 來自「12 吋」），比日期多三碼，於是整段被當成目錄號，
+// 把 Columbia JDX-7006 與 JDX-7007 兩張**同日連號的姊妹盤**報成共用目錄號。
+// 兩手都補：① 尾端允許多餘數字；② 抽取前先把「兩碼國別碼＋年（可帶月日）」整段剝掉。
+const COUNTRYDATE = /^[A-Z]{0,5}(19|20)\d{2}(\d{2}(\d{2})?)?\d{0,3}$/;   // 國別碼＋日期（可再接載體尺寸），不是目錄號
+const CDATE = /\b[A-Z]{2}\s?(19|20)\d{2}([-\/]?\d{2}){0,2}\b/g;
+const NOTCAT = /^(MB|BC|RG|ISBN|UPC|EAN)/;
+// 2026-09-19（c-166 a 抓到，主線第 1760-B 條）：**美國郵遞區號會被當成目錄號。**
+// Blue Note 版權行的地址 `Hollywood, CA 90028` 逐字出現在多張卡的 `label` 欄，
+// 被字母前綴型那條抓成 `CA90028`，於是「共用目錄號」報出四張毫無關係的卡
+// （c162 Derrick Hodge／c165 Immanuel Wilkins／c166 ARTEMIS／c166 Norah Jones）。
+// **先把「兩個大寫字母＋五位數（可帶 -四位）」整段剝掉再抽**——真正的目錄號前綴
+// 幾乎都不是恰好兩碼字母配恰好五位數字，而美國地址一定是這個形狀。
+const ZIP = /\b[A-Z]{2}\s?\d{5}(-\d{4})?\b/g;
+const catnos = s => {
+  const out = new Set();
+  const txt = String(s || '').replace(ZIP, ' ').replace(CDATE, ' ');
+  // 字母前綴型：CDP 7 84353 2、BLP 1595、TOCJ-5526、B1-92894、BNJ-61013、LT-1089
+  for (const m of txt.matchAll(/\b([A-Z]{1,5})[\s-]?(\d[\d\s-]{2,14}\d)\b/g)) {
+    const tok = (m[1] + m[2]).replace(/[^A-Z0-9]/gi, '').toUpperCase();
+    if (tok.length >= 6 && !NOTCAT.test(tok) && !COUNTRYDATE.test(tok)) out.add(tok);
+  }
+  // EMI／Capitol 數字型：7243 8 55466 2、0946 3 …、00602 …
+  for (const m of txt.matchAll(/\b(7243|72435|0946|00602)\s+\d[\d\s]{4,14}\d\b/g))
+    out.add(m[0].replace(/\s+/g, ''));
+  return [...out];
+};
+const labelOf = c => c.label || c.mbNote || '';
+const catIndex = new Map();
+for (const v of seen.values())
+  for (const c of catnos(labelOf(v.c))) {
+    if (!catIndex.has(c)) catIndex.set(c, []);
+    catIndex.get(c).push(v);
+  }
+const catHits = [];
+for (const [cat, list] of catIndex) {
+  const uniq = [...new Map(list.map(x => [strip(x.c.artist) + '|' + strip(x.c.album), x])).values()];
+  if (uniq.length < 2) continue;
+  // 只在其中一側還在策展中時才報（已定稿的卡單彼此共用目錄號多半是 Volume 1／2 的雙片 CD，是正常的）
+  if (!uniq.some(x => propBatches.includes(x.b) && !cardBatches.includes(x.b))) continue;
+  catHits.push(`⚠ 共用目錄號 ${cat}（只報不擋）：` +
+    uniq.map(x => `${x.b} ${x.c.artist}《${x.c.album}》`).join('  ←→  '));
+}
+for (const line of [...new Set(catHits)]) console.log(line);
+
+for (const line of [...new Set(subHits)]) console.log(line);
+
 for (const d of dupKnown)
   console.log(`（已知，本機已擋：${d.b} ${d.c.artist}《${d.c.album}》 ←→ ${d.prev.b}；待本機標記後從 dedup-known.json 移除）`);
 for (const d of dup)
@@ -123,5 +229,5 @@ if (skipped.length) {
   console.log(`  若該批正在被策展代理覆寫，這是併行寫入的半成品，重跑一次即可；`);
   console.log(`  若沒有代理在跑，那就是 prop 檔真的壞了，要去看。`);
 }
-console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}｜同 rgMbid 不同掛名 ${dupMbid.length}（只報不擋）`);
+console.log(`\n${batches.length} 批（其中 ${fromProp} 批讀 prop）｜卡數 ${seen.size + dup.length}｜跨批撞卡 ${dup.length}｜同 rgMbid 不同掛名 ${dupMbid.length}｜同掛名盤名詞元包含 ${new Set(subHits).size}｜共用目錄號 ${new Set(catHits).size}（後三項只報不擋）`);
 process.exit(dup.length ? 1 : 0);

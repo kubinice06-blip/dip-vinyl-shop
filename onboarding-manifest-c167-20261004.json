@@ -1,0 +1,949 @@
+{
+ "schemaVersion": 1,
+ "batch": "c167-20261004",
+ "albums": [
+  {
+   "artist": "Charles Pasi",
+   "album": "Adamas",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "7e7e304a-575a-4d52-af0e-16e55d667f5a（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2025`、`genres` 與 `tags` 兩欄逐字皆空）；轄下 2 筆 release：28e72db0-33e1-44cd-971f-fb2f2f8decf8（FR `12\" Vinyl` 9 軌、barcode `602465726473`、label-info 逐字 `Blue Note`／`713c4a95`、catno `6572647`）、da4ebc58-ab0e-431c-85aa-e300bdbdc66c（country 空、CD 9 軌、barcode `602465726466`、catno 逐字 `6575646`）。artist MBID `b73e9e46-e71e-4815-8aca-54d286815489`（Person）。",
+    "rgMbid": "7e7e304a-575a-4d52-af0e-16e55d667f5a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "blues"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7e7e304a-575a-4d52-af0e-16e55d667f5a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 877,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=877，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩首歌的曲名是兩個人名，唱的人與他們同姓。法國口琴手兼歌手 Charles Pasi 在 Blue Note 的第三張碟 2025 年問世，九軌的詞曲與製作全掛他一人，他自己主唱並吹口琴。CD 內頁寫明整張獻給 Nino Pasi 與 Maurice Suissa，第 2 軌與第 5 軌就以這兩個名字為題，獻聲的分別是 Nina Pasi 與 Lisa Suissa。錄音在巴黎的 Studio Pigalle 與 Studio Saint Germain 完成。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/33346586-Charles-Pasi-Adamas",
+     "https://musicbrainz.org/artist/b73e9e46-e71e-4815-8aca-54d286815489/releases",
+     "https://www.discogs.com/release/35500924-Charles-Pasi-Adamas",
+     "https://music.apple.com/us/album/adamas/1788298119",
+     "https://musicbrainz.org/release-group/7e7e304a-575a-4d52-af0e-16e55d667f5a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/df/20/8edf208f-df65-5620-37c9-20608b6bba83/mzaf_14603803156390240909.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1788298119",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gabrielle Cavassa",
+   "album": "Diavola",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "9086b912-f339-4133-ae73-e0a39bcf3969（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-05-01`、`genres` 逐字 `[\"jazz\"]`、`tags` 逐字 `[\"jazz\",\"jazzthing.de\"]`）；轄下 2 筆 release：12adfd55-bd9e-4adb-b8e8-8a63bbb0e4b5（XW `Digital Media` 10 軌、barcode `602478065576`）、b1550870-b33d-492f-a6ab-2fcf33e63780（country 空、CD 10 軌、barcode `602478065538`），兩筆 `label-info` 逐字皆 `Blue Note`／`713c4a95`、catno 為 null。artist MBID `7120c991-558d-42bf-b810-ba1e8db80916`（Person）。",
+    "rgMbid": "9086b912-f339-4133-ae73-e0a39bcf3969",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9086b912-f339-4133-ae73-e0a39bcf3969/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 5692,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一天放出的兩首歌，一首走向光，一首從天使的位置崩壞。那是〈Angelo〉與同名曲，2026 年 3 月 13 日以雙 A 面單曲一起發表。Gabrielle Cavassa 生於加州，2017 年移居紐奧良，2021 年在 Sarah Vaughan 國際爵士人聲大賽奪冠，那是該賽九屆以來第一次出現並列冠軍；Joshua Redman 的經紀人在紐奧良一場婚禮上聽見她唱歌，這張 Blue Note 首作便由 Redman 與廠牌社長 Don Was 共同製作。",
+    "sourceUrls": [
+     "https://www.bluenote.com/gabrielle-cavassa-makes-her-blue-note-debut-with-diavola/",
+     "https://jazz.fm/sarah-vaughan-international-jazz-vocal-competition-2021-winners/",
+     "https://www.bluenote.com/artist/gabrielle-cavassa/",
+     "https://www.bluenote.com/gabrielle-cavassa-releases-double-single-angelo-diavola/",
+     "https://www.discogs.com/release/37243101-Gabrielle-Cavassa-Diavola",
+     "https://musicbrainz.org/release-group/9086b912-f339-4133-ae73-e0a39bcf3969"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/d2/8e/b4d28e27-46f4-1368-0f58-7b7f20045776/mzaf_3673383383153369237.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1871668983",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Immanuel Wilkins",
+   "album": "Live at the Village Vanguard Vol. 1",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "c533ae9b-7bdd-4ae0-a8bd-ce131f45f366（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-03-20`、`genres` 逐字空陣列、`tags` 逐字 `[\"live\"]`、**RG title 逐字 `Live at the Village Vanguard Vol. 1`**）；⚠ **本 RG 的 `artist-credit` 逐字是 Group 實體 `Immanuel Wilkins Quartet`／`38fcd6ee-b90e-406a-8b88-014892c956b4`，與 Vol. 2（`5d331ed7`）、Vol. 3（`94816801`）的 Person 實體 `61112049-cba4-409b-a4dc-a5f5a4d7c62e` 不同——MB 三卷自己不一致，本棒統一取 Person 裸名**；轄下 1 筆 release：65419002-6d3f-4d9a-8aa0-8ebae42dd32a（XW `Digital Media` 4 軌、barcode `602488170987`、label-info `Blue Note`／`713c4a95`、catno null）。",
+    "rgMbid": "c533ae9b-7bdd-4ae0-a8bd-ce131f45f366",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c533ae9b-7bdd-4ae0-a8bd-ce131f45f366/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 13,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=13，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三卷之中只有這一卷壓成實體，而那張實體只收四首。Immanuel Wilkins 四重奏 2025 年 5 月 15 與 16 日兩晚的演出分成三卷發行，《Live at the Village Vanguard, Vol. 1》2026 年 3 月 20 日打頭陣，CD 與 2LP 收的都是本卷自己的四軌，2LP 一面一軌。第 3 軌〈CHARANAM〉出自 Alice Coltrane，是整套三卷唯一一首外來曲。這也是 Wilkins 生涯第一張現場專輯。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/36858649-Immanuel-Wilkins-Quartet-Live-At-The-Village-Vanguard-Vol-1",
+     "https://www.bluenote.com/immanuel-wilkins-releases-live-at-the-village-vanguard-vol-3/",
+     "https://www.discogs.com/release/37337043-Immanuel-Wilkins-Quartet-Live-At-The-Village-Vanguard-Vol-1",
+     "https://www.bluenote.com/announcing-immanuel-wilkins-quartet-live-at-the-village-vanguard/",
+     "https://www.bluenote.com/spotlight/immanuel-wilkins-quartet-live-at-the-village-vanguard/",
+     "https://www.bluenote.com/artist/immanuel-wilkins/",
+     "https://musicbrainz.org/release-group/c533ae9b-7bdd-4ae0-a8bd-ce131f45f366"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/72/bb/8c72bb48-db64-56db-b8f0-7905841f4822/mzaf_13396625350358827010.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1872550960",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Immanuel Wilkins",
+   "album": "Live at the Village Vanguard Vol. 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "5d331ed7-9ff6-4a3d-8f8d-e5da8c58713b（release-group，`primary-type` 逐字 `Album`、**`secondary-types` 逐字空陣列**——⚠ 與 Vol. 3 的 `[\"Live\"]` 不一致，MB 三卷建檔不統一；`first-release-date` 逐字 `2026-04-17`、`genres` 與 `tags` 兩欄逐字皆空、RG title 逐字 `Live at the Village Vanguard Vol. 2`、`artist-credit` 逐字 `Immanuel Wilkins`／Person `61112049-cba4-409b-a4dc-a5f5a4d7c62e`）；轄下 1 筆 release：315c2dbc-c688-4d0c-87cc-25a09b5f7c68（XW `Digital Media` 5 軌、barcode `199957244091`、label-info `Blue Note`／`713c4a95`、catno null）。",
+    "rgMbid": "5d331ed7-9ff6-4a3d-8f8d-e5da8c58713b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5d331ed7-9ff6-4a3d-8f8d-e5da8c58713b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 13,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=13，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一次駐場拆成三卷連載，中間這一棒收了五軌。Immanuel Wilkins 四重奏的《Live at the Village Vanguard, Vol. 2》2026 年 4 月 17 日發行，夾在 3 月的第一卷與 5 月的第三卷中間，三卷各隔約四週。本卷只出數位，是三卷裡唯一收五軌的一卷，五軌全是 Wilkins 的原創，開場〈THE BIG COUNTRY〉就長十六分零一秒。四重奏上 NPR Tiny Desk 時，取自這套現場盤的曲目點名的正是本卷。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/5d331ed7-9ff6-4a3d-8f8d-e5da8c58713b",
+     "https://www.bluenote.com/immanuel-wilkins-releases-live-at-the-village-vanguard-vol-2/",
+     "https://www.discogs.com/release/36858649-Immanuel-Wilkins-Quartet-Live-At-The-Village-Vanguard-Vol-1",
+     "https://music.apple.com/us/album/immanuel-wilkins-quartet-live-at-the-village-vanguard/1890295355",
+     "https://musicbrainz.org/release/315c2dbc-c688-4d0c-87cc-25a09b5f7c68",
+     "https://www.bluenote.com/immanuel-wilkins-releases-live-at-the-village-vanguard-vol-3/",
+     "https://www.bluenote.com/artist/immanuel-wilkins/"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/bd/79/36bd7964-2c91-b72f-73b7-2766b7d3bae5/mzaf_5704687611591467707.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1890295355",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Immanuel Wilkins",
+   "album": "Live at the Village Vanguard Vol. 3",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "94816801-5e0b-45fa-bfcf-eda8738c602d（release-group，`primary-type` 逐字 `Album`、**`secondary-types` 逐字 `[\"Live\"]`**——⚠ 與 Vol. 2 的空陣列不一致；`first-release-date` 逐字 `2026-05-15`、`genres` 與 `tags` 兩欄逐字皆空、**RG title 逐字 `Immanuel Wilkins Quartet: Live at the Village Vanguard Vol. 3`（帶團名前綴，本棒去掉）**、`artist-credit` 逐字 `Immanuel Wilkins`／Person `61112049-cba4-409b-a4dc-a5f5a4d7c62e`）；轄下 1 筆 release：ceaade16-fa22-4b5b-a3e7-984698802117（country 空、`Digital Media` 4 軌、barcode `00199957244190`、label-info `Blue Note`／`713c4a95`、catno null）。",
+    "rgMbid": "94816801-5e0b-45fa-bfcf-eda8738c602d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/94816801-5e0b-45fa-bfcf-eda8738c602d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 4,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=4，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "完結篇的發行日，正好是第一個錄音夜的整整一年後。兩晚的錄音發生在 2025 年 5 月 15 與 16 日，Immanuel Wilkins 四重奏的《Live at the Village Vanguard, Vol. 3》則挑 2026 年 5 月 15 日收尾，只出數位、四軌，全長六十一分二十五秒。第 2 軌〈COMPOSITION IX〉長二十三分五十一秒，是整套三卷十三軌裡最長的一軌，出自他以 Bach《平均律鍵盤曲集》為模型寫的十二首無標題作品。",
+    "sourceUrls": [
+     "https://www.bluenote.com/immanuel-wilkins-releases-live-at-the-village-vanguard-vol-3/",
+     "https://www.discogs.com/release/36858649-Immanuel-Wilkins-Quartet-Live-At-The-Village-Vanguard-Vol-1",
+     "https://musicbrainz.org/release-group/94816801-5e0b-45fa-bfcf-eda8738c602d",
+     "https://www.bluenote.com/spotlight/immanuel-wilkins-quartet-live-at-the-village-vanguard/",
+     "https://www.discogs.com/release/37337043-Immanuel-Wilkins-Quartet-Live-At-The-Village-Vanguard-Vol-1",
+     "https://music.apple.com/us/album/immanuel-wilkins-quartet-live-at-the-village-vanguard/1895320634",
+     "https://musicbrainz.org/release/ceaade16-fa22-4b5b-a3e7-984698802117",
+     "https://www.bluenote.com/artist/immanuel-wilkins/"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/76/cd/d076cddb-aa0a-0b5b-299b-329944e70634/mzaf_11723172267093766711.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1895320634",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kiefer",
+   "album": "Memory Bomb",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "c69d502a-a0a1-4896-b2b5-6f23223df84d（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-09-25`、`genres` 與 `tags` 兩欄逐字皆空、RG title 逐字 `Memory Bomb`、`artist-credit` 逐字 `Kiefer`／Person `a2252be6-2f4f-40d2-a54d-da93c9dfb649`）；轄下 1 筆 release：7ef920dd-f613-4909-a765-bffef1b5c5b3（US `Digital Media` 13 軌、barcode null、label-info `Blue Note`／`713c4a95`、catno null）。",
+    "rgMbid": "c69d502a-a0a1-4896-b2b5-6f23223df84d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c69d502a-a0a1-4896-b2b5-6f23223df84d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3786,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他替自己的做法取的那個名字，後來變成一個音樂節。鍵盤手本名 Kiefer Shackelford，藝名只取單名，同時簽在 Stones Throw 與 Blue Note 兩家廠牌；他把爵士即興架在嘻哈打拍上的做法叫做 Over The Breaks，發片前就用這個名字在洛杉磯的 Lodge Room 辦了一個新音樂節。這張碟定在 2026 年 9 月 25 日發行，是他在 Blue Note 的首張領班作，由他與 CARRTOONS、Shibo 共同製作。",
+    "sourceUrls": [
+     "https://www.bluenote.com/kiefer-announces-blue-note-debut-memory-bomb/",
+     "https://www.bluenote.com/kiefer-shares-new-single-busyforya/",
+     "https://www.bluenote.com/artist/kiefer/",
+     "https://www.bluenote.com/kiefer-shares-new-single-memory-bomb/",
+     "https://musicbrainz.org/release-group/c69d502a-a0a1-4896-b2b5-6f23223df84d",
+     "https://www.bluenote.com/introducing-fathers-featuring-kenny-beats-kiefer-carrtoons-nate-smith/"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/4c/ea/814cea5d-c159-13f8-a69c-599602f8591e/mzaf_3302212169240763448.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "6789770938",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Meshell Ndegeocello",
+   "album": "Synonym",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "7e3caf4d-30f5-42d7-b550-7187a0f4a682（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-10-02`、`genres` 與 `tags` 兩欄逐字皆空、RG title 逐字 `Synonym`、`artist-credit` 逐字 `Meshell Ndegeocello`／Person `55a8b485-1cbf-47ee-ae15-d106200fafe8`）；轄下 1 筆 release：98c936fe-2c7d-46db-80a4-80ffe2649404（US `Digital Media` 15 軌、barcode null、label-info `Blue Note`／`713c4a95`、catno null）。",
+    "rgMbid": "7e3caf4d-30f5-42d7-b550-7187a0f4a682",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7e3caf4d-30f5-42d7-b550-7187a0f4a682/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1930,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1930，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十五首全是別人的老歌，每一首找不同的人來對唱。這是 Meshell Ndegeocello 在 Blue Note 的第三張，定在 2026 年 10 月 2 日發行，也讓她與 David Gamson 重逢——那是她 1993 年與 1996 年兩張經典的製作人。末軌翻的是 Bob Dylan 的〈With God On Our Side〉，她說原版歌詞裡的攻擊性比編曲多得多；她解釋盤名：同一種語言裡意思相同的另一個字。",
+    "sourceUrls": [
+     "https://www.bluenote.com/meshell-ndegeocello-announces-new-album-synonym/",
+     "https://www.bluenote.com/meshell-ndegeocello-lianne-la-havas-cover-dont-look-any-further/",
+     "https://www.bluenote.com/meshell-ndegeocello-bill-callahan-chris-thile-reimagine-bob-dylans-with-god-on-our-side/",
+     "https://www.bluenote.com/meshell-ndegeocello-cat-power-cover-dont-you-want-me/",
+     "https://en.wikipedia.org/wiki/Meshell_Ndegeocello",
+     "https://musicbrainz.org/release-group/7e3caf4d-30f5-42d7-b550-7187a0f4a682"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/b3/d9/b3b3d96d-c2f1-ded7-54d2-3cd2d3871a4a/mzaf_2830053182098217043.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "6789433556",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Minyo Crusaders",
+   "album": "From Japan With Love",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "4fce4f47-9fa2-42c0-b646-f53bc1fc274b（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-06-26`、`genres` 與 `tags` 兩欄逐字皆空、RG title 逐字 `From Japan With Love`）；⚠ **`artist-credit` 的 `name`（credited-name）逐字 `Minyo Crusaders`，但 artist 實體的 `name` 逐字是 `民謡クルセイダーズ`**（Group，MBID `1b33c057-e909-49e5-b0ea-6410019b5b70`）；轄下 1 筆 release：c3eadbb7-8fb1-4ab7-96a8-7e1ba719e76f（XW `Digital Media` 8 軌、barcode null、label-info `Blue Note`／`713c4a95`、catno null）。",
+    "rgMbid": "4fce4f47-9fa2-42c0-b646-f53bc1fc274b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4fce4f47-9fa2-42c0-b646-f53bc1fc274b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 677,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=677，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "美軍基地旁的一棟住宅裡，組起一支唱日本民謠的拉丁大樂團。成軍的地點是東京福生，橫田基地所在的西東京小鎮。十人編制的大樂團把日本各地的 min'yō 接上拉丁、非洲與加勒比海的節奏，Ry Cooder 說他們是他這麼多年來聽過最好的樂團。2026 年的這一張是樂團第一次在完整錄音室專輯裡放進客座：元ちとせ獻聲並彈三味線，哥倫比亞的 Frente Cumbiero 也進來。八首全是傳統曲，樂團做的是編曲。",
+    "sourceUrls": [
+     "https://www.universal-music.co.jp/minyo-crusaders/products/ucjj-9059/",
+     "https://www.universal-music.co.jp/minyo-crusaders/biography/",
+     "https://www.bluenote.com/artist/minyo-crusaders/",
+     "https://www.bluenote.com/minyo-crusaders-announce-new-album-from-japan-with-love/",
+     "https://www.discogs.com/release/37893342-Minyo-Crusaders-%E6%B0%91%E8%AC%A0%E3%82%AF%E3%83%AB%E3%82%BB%E3%82%A4%E3%83%80%E3%83%BC%E3%82%BA-From-Japan-With-Love-%E6%97%A5%E6%9C%AC%E6%B0%91%E8%AC%A0%E3%82%88%E3%82%8A%E6%84%9B%E3%82%92%E3%81%93%E3%82%81%E3%81%A6",
+     "https://musicbrainz.org/release-group/4fce4f47-9fa2-42c0-b646-f53bc1fc274b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/84/42/1e8442f6-e6f4-e3a0-2771-576a2b3d35c7/mzaf_13873805770841790848.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1892928459",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nduduzo Makhathini",
+   "album": "The Myth We Choose",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "d7934d3e-cb4b-4a18-9e15-304aabf56984（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-06-26`、`genres` 與 `tags` 兩欄逐字皆空、RG title 逐字 `The Myth We Choose`、`artist-credit` 逐字 `Nduduzo Makhathini`／Person `75a9a46c-f01c-4be5-af07-91a4e17385ad`）；轄下 1 筆 release：c34694f3-ac2e-41e1-852a-583296a03b78（XW `Digital Media` 16 軌、barcode `00199957431132`、label-info `Blue Note`／`713c4a95`、catno null）。",
+    "rgMbid": "d7934d3e-cb4b-4a18-9e15-304aabf56984",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d7934d3e-cb4b-4a18-9e15-304aabf56984/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2290,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2290，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "共同製作人是他十八歲的兒子，碟上的電子聲響全是那個少年的主意。那個少年叫 Thingo Makhathini；這位南非鋼琴家還說，那些大家不太會聯想到他的節奏，同樣出自兒子之手。2026 年發行的這張是他的第四張 Blue Note 專輯，十六軌裡有四首 reprise 散在盤上，整張被排成一個會回頭引用自己的循環。他把 Wayne Shorter 的話當創作準則：照自己希望世界成為的樣子去演奏與寫作。",
+    "sourceUrls": [
+     "https://www.bluenote.com/nduduzo-makhathini-expands-his-soundworld-on-the-myth-we-choose/",
+     "https://www.bluenote.com/nduduzo-makhathini-shares-new-single-video-for-unembeza/",
+     "https://www.discogs.com/release/37856328-Nduduzo-Makhathini-The-Myth-We-Choose",
+     "https://musicbrainz.org/release-group/d7934d3e-cb4b-4a18-9e15-304aabf56984",
+     "https://www.bluenote.com/nduduzo-makhathini-shares-new-single-imvunge-kantu/",
+     "https://www.bluenote.com/nduduzo-makhathini-shabaka-hutchings-liyoze-line-nangakithi/"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/75/a4/cb/75a4cb34-bfdc-4a11-9131-2bb5e91d6571/mzaf_360558777189052353.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1887405172",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ron Carter, Ricky Dillard",
+   "album": "Sweet, Sweet Spirit",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "36f48c02-5499-4f27-ade8-7aafe023e75e（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-02-06`、`genres` 與 `tags` 兩欄逐字皆空、RG title 逐字 `Sweet, Sweet Spirit`）；**`artist-credit` 兩格逐字 `Ron Carter`（Person `57db3f59-9c58-4f68-a00e-e044666c4828`，joinphrase 逐字 `, `）＋ `Ricky Dillard`（Person `fb1273ea-f8e8-4808-bb5c-a8df2973d2e8`）**；轄下 1 筆 release：11e9aa23-dab8-454c-9652-5b5b1932e9fe（country 空、`Digital Media` 10 軌、barcode null、`status` 逐字 null、label-info 兩格 `Blue Note`／`713c4a95` ＋ `Motown Gospel`／`91dc7f68`）。",
+    "rgMbid": "36f48c02-5499-4f27-ade8-7aafe023e75e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/36f48c02-5499-4f27-ade8-7aafe023e75e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 77,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=77，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "近三十年前錄給母親聽的那十首歌，如今成了一張唱片。當年 Ron Carter 的母親搬進全日照護機構，姊妹們請他把她最愛的十首聖詩編曲錄下來，那是一份私人的禮物，不是一張要發行的作品。2026 年這十軌重做成碟，找上福音合唱指揮 Ricky Dillard 與他那支 New-G 合唱團合作：合唱團成為樂器，貝斯成為敘事者。整張紀念的是他已故的母親 Mrs. Willie O. Carter。",
+    "sourceUrls": [
+     "https://www.bluenote.com/ron-carter-ricky-dillard-sweet-sweet-spirit/",
+     "https://www.bluenote.com/jazz-legend-ron-carter-gospel-icon-ricky-dillard-unite-for-sweet-sweet-spirit/",
+     "https://musicbrainz.org/release-group/36f48c02-5499-4f27-ade8-7aafe023e75e",
+     "https://www.bluenote.com/artist/ron-carter/",
+     "https://www.discogs.com/release/37296477-Ron-Carter-Ricky-Dillard-Sweet-Sweet-Spirit"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/00/25/dd/0025dd0f-a886-d6f7-5211-e696aa92622d/mzaf_15286082645567302651.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1852544234",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bill Frisell",
+   "album": "In My Dreams",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "a5ed1349-4e1b-40c3-af50-00fea8fafe29（release-group，`primary-type` 逐字 `Album`、**`secondary-types` 逐字 `[\"Live\"]`**〔⚠ 見 risk 的 live 實況〕、`first-release-date` 逐字 `2026-02-27`、`genres` 逐字空陣列、`tags` 逐字 `[\"jazzthing.de\"]`、RG title 逐字 `In My Dreams`、`artist-credit` 逐字 `Bill Frisell`／Person `a21318db-f228-4a4d-8bce-6947a62985a5`）；轄下 2 筆 release：7ddcadbf-ae78-49ae-bfce-0c3dadb2b56e（US `Digital Media` 12 軌、barcode null、⚠ label-info 逐字 `UMG Recordings, Inc.`／`ee9d7dfa-1fe9-4e0c-bf94-4b43eb53dd20`）、878a5daf-ffd1-4bb7-8671-bab7fb0ce68f（XE CD 12 軌、barcode `602488137669`、label-info `Blue Note`／`713c4a95`、catno `00602488137669`）。",
+    "rgMbid": "a5ed1349-4e1b-40c3-af50-00fea8fafe29",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a5ed1349-4e1b-40c3-af50-00fea8fafe29/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2800,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2800，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩個舊團合成一個六重奏，這六個人從沒有以這個組合同台過。一邊是這位吉他手自己的三重奏，一邊是二十年前在《Richter 858》就以整體登場過的那組弦樂。2026 年發行的第五張 Blue Note 專輯共十二軌，核心軌錄自 2025 年的三場音樂會，部分曲目再由 Adam Muñoz 在柏克萊的 Opus Studios 補上整段樂句與音景。他在 2026 年 3 月 18 日滿七十五歲，發片後排了一系列生日音樂會。",
+    "sourceUrls": [
+     "https://www.bluenote.com/bill-frisell-new-album-in-my-dreams/",
+     "https://www.discogs.com/release/36431494-Bill-Frisell-In-My-Dreams",
+     "https://www.bluenote.com/bill-frisell-shares-isfahan-from-new-album-in-my-dreams/",
+     "https://www.discogs.com/release/36628024-Bill-Frisell-In-My-Dreams",
+     "https://musicbrainz.org/release-group/a5ed1349-4e1b-40c3-af50-00fea8fafe29"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/fe/05/e1fe053f-d903-9c96-5ea6-06077619a653/mzaf_17478019685774239472.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1861062312",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Walter Smith III",
+   "album": "Twio Vol. 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "8c7c44aa-af8e-49a4-bec8-9a9060e70254（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-03-06`、`genres` 逐字空陣列、`tags` 逐字 `[\"jazzthing.de\"]`、RG title 逐字 `Twio Vol. 2`、`artist-credit` 逐字 `Walter Smith III`／Person `0da19599-974e-4030-ae9e-7a62fd948935`）；轄下 2 筆 release：18c36811-c31c-4e37-8126-208ebdba6ede（US `Digital Media` 10 軌、barcode null、⚠ label-info 逐字 `UMG Recordings, Inc.`／`ee9d7dfa-1fe9-4e0c-bf94-4b43eb53dd20`）、3e5b3855-5775-47a5-b9f6-9c399f5b43bc（US CD 10 軌、barcode `602488137966`、label-info `Blue Note`／`713c4a95`、catno `00602488137966`）。",
+    "rgMbid": "8c7c44aa-af8e-49a4-bec8-9a9060e70254",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8c7c44aa-af8e-49a4-bec8-9a9060e70254/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3008,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標準曲目裡沒人天天彈的那幾首，才是他要挑的。他要找的是那些曲子旁邊的曲子，好讓他們照自己的方式彈、不用刻意傳統。2026 年發行的這張是這位次中音薩克斯風手的第三張 Blue Note 專輯，十軌，接的是 2018 年《Twio》的同一個企劃，核心是一個沒有鋼琴的三重奏。Ron Carter 進了其中五軌，Branford Marsalis 出現在兩軌；Carter 在錄音現場要他別只彈自己想彈的，先聽對方在做什麼。",
+    "sourceUrls": [
+     "https://www.bluenote.com/walter-smith-iii-to-release-twio-vol-2/",
+     "https://www.bluenote.com/walter-smith-iii-releases-casual-lee-featuring-branford-marsalis-ron-carter-kendrick-scott/",
+     "https://www.discogs.com/release/36705625-Walter-Smith-III-Twio-Vol2",
+     "https://www.bluenote.com/walter-smith-iii-plays-carla-bley-with-new-single-lawns/",
+     "https://musicbrainz.org/release-group/8c7c44aa-af8e-49a4-bec8-9a9060e70254"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/15/23/ac1523d8-53a0-44a9-f5c0-2fa69da0686a/mzaf_1741485810261347275.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1866779538",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Melissa Aldana",
+   "album": "Filin",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "de1516e1-9ac7-4c82-bd8a-f7e736efcb3f（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-02-13`、`genres` 逐字 `[\"jazz\"]`、`tags` 逐字 `[\"jazz\",\"jazzthing.de\"]`、RG title 逐字 `Filin`、`artist-credit` 逐字 `Melissa Aldana`／Person `faa21ccf-f0d3-4a84-95d4-ae596aa40744`）；轄下 2 筆 release：1bdcfc0e-ac9b-442d-ac89-6b5925400036（country 空、CD 8 軌、barcode `602488228220`、catno `00602488228220`）、6a9ec13e-22fd-4c7f-9c63-e4f18bd5039f（XW `Digital Media` 8 軌、barcode null、catno null），兩筆 label-info 逐字皆 `Blue Note`／`713c4a95`。",
+    "rgMbid": "de1516e1-9ac7-4c82-bd8a-f7e736efcb3f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/de1516e1-9ac7-4c82-bd8a-f7e736efcb3f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7467,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名那個字，是古巴人唸英文 feeling 的方式。filin 指的是 1940 年代末到 1960 年代初在古巴盛行、編曲豐富的浪漫歌曲傳統，八軌裡有六首出自這個傳統。題目不是她想出來的：她想做一張抒情曲專輯、想找鋼琴家 Gonzalo Rubalcaba 合作，這位她心目中的英雄建議她去彈他故鄉古巴的 filin。2026 年發行，是這位智利出身的次中音薩克斯風手第三張 Blue Note 領班作，由廠牌總裁 Don Was 製作。",
+    "sourceUrls": [
+     "https://www.bluenote.com/melissa-aldana-announces-filin-ballads-album/",
+     "https://www.bluenote.com/melissa-aldana-covers-hermeto-pascoal-with-stunning-little-church/",
+     "https://www.bluenote.com/artist/melissa-aldana/",
+     "https://www.discogs.com/release/36511741-Melissa-Aldana-Filin",
+     "https://musicbrainz.org/release-group/de1516e1-9ac7-4c82-bd8a-f7e736efcb3f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/9b/8f/939b8fe5-6720-6a83-a252-439ee582f85d/mzaf_12380234458835738812.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1859098064",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Julian Lage",
+   "album": "Scenes From Above",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ac691de4-2fd1-4e71-ba4e-ce415929a880（release-group，`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、`first-release-date` 逐字 `2026-01-23`、**`genres` 逐字 `[\"contemporary folk\",\"contemporary jazz\",\"instrumental jazz\",\"jazz\",\"jazz fusion\",\"post-bop\",\"soul jazz\"]`**、`tags` 另含 `chamber jazz`／`hammond b3`／`organ`、RG title 逐字 `Scenes From Above`、`artist-credit` 逐字 `Julian Lage`／Person `c116b504-ce24-4264-96dc-d10a7458236f`）；轄下 3 筆 release：336e369b-ede6-4258-bbed-0ac6fa377f60（XW `Digital Media` 9 軌、barcode `00602478932137`、catno null）、a42a0d43-f727-4943-95d3-0b517eceeb39（**JP `SHM-CD` 10 軌**、barcode `4988031828878`、catno `UCCQ-1228`）、e4903bc4-e3b0-48da-b4b6-b9e23d947a52（country 空、CD 9 軌、barcode `602478932007`、catno `602478932007`），三筆 label-info 逐字皆 `Blue Note`／`713c4a95`。",
+    "rgMbid": "ac691de4-2fd1-4e71-ba4e-ce415929a880",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ac691de4-2fd1-4e71-ba4e-ce415929a880/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7894,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四重奏的九軌裡，有五軌底下藏著第五位樂手。那是 Patrick Warren，他在那五軌鋪 dulcitone、Chamberlin、鐘與弦樂。台面上的四重奏是全新組合：鍵盤手 John Medeski、貝斯手 Jorge Roeder、鼓手 Kenny Wollesen。九首曲子全是這位吉他手自己的作品，寫在一次衝刺裡——他把計時器設成二十分鐘，寫一首、錄一遍，然後重來。2026 年發行，是他的第五張 Blue Note 專輯。",
+    "sourceUrls": [
+     "https://www.bluenote.com/julian-lage-announces-scenes-from-above-featuring-john-medeski-jorge-roeder-kenny-wollesen/",
+     "https://www.bluenote.com/julian-lage-shares-new-single-talking-drum-featuring-john-medeski-jorge-roeder-kenny-wollesen/",
+     "https://www.discogs.com/release/36365092-Julian-Lage-Scenes-From-Above",
+     "https://www.bluenote.com/julian-lage-shares-night-shade-single-live-video/",
+     "https://www.universal-music.co.jp/julian-lage/products/uccq-1228/",
+     "https://musicbrainz.org/release-group/ac691de4-2fd1-4e71-ba4e-ce415929a880"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/9b/06/919b0625-39d1-d2c0-20e6-0e90a5278f3b/mzaf_18009872043176803526.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1849593147",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

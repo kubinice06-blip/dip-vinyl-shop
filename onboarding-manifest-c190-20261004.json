@@ -1,0 +1,1376 @@
+{
+ "schemaVersion": 1,
+ "batch": "c190-20261004",
+ "albums": [
+  {
+   "artist": "NANIWA EXPRESS",
+   "album": "Silent Savanna",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fb367e58-6840-4bc8-8d29-f14eb964d83e（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「SILENT SAVANNA」、first-release-date `1985`、primary-type Album、**secondary-types 空陣列**、artist-credit 單一方（`NANIWA EXPRESS`，實體本名逐字 `Naniwa Express`，c2cc5e23、Group、country `JP`）、tags／genres 逐字 `jazz(1)`。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **2 筆**：**1985 JP Official 12\" Vinyl 8 軌 `CBS/Sony 28AH1913`（9bcd321e＝原壓，title 逐字 `Silent Savanna`）**、2016-02-17 XW Digital Media 8 軌 `Sony Music Direct (Japan) Inc.`（a8acedd0）。Discogs：先讀 `type` 後取 **master 1222302**；`/masters/1222302/versions` 逐筆跑完 **4 版**；原壓整筆 credits 與逐軌作曲欄打 `releases/4796682`。",
+    "rgMbid": "fb367e58-6840-4bc8-8d29-f14eb964d83e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fb367e58-6840-4bc8-8d29-f14eb964d83e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4298,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=4298）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "下一張原創專輯，要等到十八年後。樂團 1986 年在大阪的バナナホール 通宵演出後解散，這張就成了散團前最後一份錄音室作品，再出原創已是 2003 年。母帶 1985 年 5 到 7 月錄成，9 月 21 日鋪貨，黑膠列作 28AH 1913，八首都是器樂曲。日野皓正 客席兩軌：〈The Lady Of Toledo〉吹短號，〈Hi-Land〉改吹 flugelhorn，後者的作者是 青柳誠。前者後來成了フェザー 剃刀的電視廣告曲，1986 年 3 月切成 12 吋單曲。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%83%8B%E3%83%AF%E3%82%A8%E3%82%AD%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9",
+     "https://www.discogs.com/release/4796682",
+     "https://www.discogs.com/release/8061499",
+     "https://music.apple.com/jp/album/silent-savanna/1536953873",
+     "https://www.discogs.com/master/1222302",
+     "https://musicbrainz.org/release-group/fb367e58-6840-4bc8-8d29-f14eb964d83e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e5/69/2f/e5692fd2-628f-756b-fdb6-59202e1685ab/mzaf_3635233562373785337.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1536953873",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "本田竹曠, 井野信義, 森山威男",
+   "album": "In a Sentimental Mood",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3ed3cde5-c353-45fb-8e95-c595912af770（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「In a Sentimental Mood」、first-release-date 1985-06-21、primary-type Album、**secondary-types 空陣列**、artist-credit **三方**（`Takehiro Honda`→實體 `本田竹広` b90d79a5、joinphrase `, `；`Nobuyoshi Ino`→`井野信義` 1a5004a4、joinphrase `, `；`Takeo Moriyama`→`森山威男` f80dfb12，disambiguation 逐字 `drummer`），三個實體都是 Person、country `JP`；tags／genres 逐字 `jazz(1)`。`release?release-group=<id>` 回 **1 筆**：**1985-06-21 JP Official CD 8 軌 `CBS/Sony 32DH 232`（b70d82d4＝原壓）**。Discogs：先讀 `type` 後取 **master 1062774**；`/masters/1062774/versions` 逐筆跑完 **2 版**；原壓整筆 credits 打 `releases/3900741`。",
+    "rgMbid": "3ed3cde5-c353-45fb-8e95-c595912af770",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3ed3cde5-c353-45fb-8e95-c595912af770/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一年，鼓手搬到妻子的故鄉，此後幾乎停演四年。森山威男 落腳的是岐阜県可児市，到 1989 年才重新開始活動。盤上就三個人、零客席：本田竹曠 鋼琴、井野信義 貝斯、森山威男 鼓，八首全是爵士標準曲。三人 1985 年 4 月 3、4 兩日進信濃町數位錄音，首發只有 CD 一種，規格號 32DH 232。井野信義 1950 年生於群馬、在東京長大，1971 年遇上吉他手 高柳昌行 才走進爵士，此後錄過大量唱片。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3900741",
+     "https://en.wikipedia.org/wiki/Mr._P.C.",
+     "https://en.wikipedia.org/wiki/In_a_Sentimental_Mood",
+     "https://en.wikipedia.org/wiki/Once_I_Loved",
+     "https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E7%AB%B9%E5%BA%83",
+     "https://ja.wikipedia.org/wiki/%E6%A3%AE%E5%B1%B1%E5%A8%81%E7%94%B7",
+     "https://www.discogs.com/artist/615266",
+     "https://www.discogs.com/master/1062774",
+     "https://musicbrainz.org/release-group/3ed3cde5-c353-45fb-8e95-c595912af770"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Players",
+   "album": "Live - At Roppongi Pit Inn",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9128fcb8-cb8a-41e8-9485-a4352ec7928d（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Live - At Roppongi Pit Inn」、first-release-date `1985`、primary-type Album、**secondary-types 逐字 `[\"Live\"]`**、artist-credit 單一方（`The Players`，004c67c6、Group、country `JP`、disambiguation 逐字「Japanese jazz, fusion band」）、tags／genres 逐字 `jazz(1)`。`release?release-group=<id>` 回 **1 筆**：**1985 JP Official CD 9 軌 `CBS/Sony 32DH279`（0e42602d）**——⚠ **MB 沒建 LP `28AH 1918`**。Discogs：先讀 `type` 後取 **master 1563263**；`/masters/1563263/versions` 逐筆跑完 **3 版**；整筆 credits 打 `releases/13752767`、`releases/12194076`、`releases/16181362`。",
+    "rgMbid": "9128fcb8-cb8a-41e8-9485-a4352ec7928d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9128fcb8-cb8a-41e8-9485-a4352ec7928d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=2）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "現場九首裡，有七首是回頭演自己的舊作。七軌分屬 1979、1980、1981 與 1983 年的四張前作，1982、1984 年那兩張零入選。The Players 1985 年 8 月 2 日起連兩晚錄在六本木 Pit Inn，CD 圓標上是 32DH279。〈Wonderful Guy〉出自 鈴木宏昌 之手，原版在 1980 年那張；樂團共出七張，到這張收山。薩克斯風手 中村誠一 當時固定上《今夜は最高!》，據說 タモリ 的「ハナモゲラ」語源自他 1972 年的把戲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/13752767",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%AE%8F%E6%98%8C",
+     "https://www.discogs.com/artist/207",
+     "https://www.discogs.com/release/7260317",
+     "https://www.discogs.com/release/2785176",
+     "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E8%AA%A0%E4%B8%80_(%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%B7%E3%83%A3%E3%83%B3)",
+     "https://www.discogs.com/artist/623519",
+     "https://www.discogs.com/release/16181362",
+     "https://musicbrainz.org/release-group/9128fcb8-cb8a-41e8-9485-a4352ec7928d"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE SQUARE",
+   "album": "The Square Live",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c4ceec96-e143-4faa-b5c1-4478dff99b1b（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「The Square Live」、first-release-date 1985-08-25、primary-type Album、**secondary-types 逐字 `[\"Live\"]`**、artist-credit 單一方（**credit 字串逐字 `The Square`、實體本名逐字 `T‐SQUARE`——U+2010**，0480ca1e、Group、country `JP`）、tags 逐字 `fusion(1)`／`jazz(1)`／`smooth jazz(1)`。`release?release-group=<id>` 回 **1 筆**：**1985-08-25 JP Official CD 9 軌 `CBS/Sony 32DH 278`（b1e17bca）**——⚠ **MB 沒建 LP `28AH 1907`**。Discogs：`catno=28AH 1907` 反查、先讀 `type` 後取 **master 1317782**；`/masters/1317782/versions` 逐筆跑完 **4 版**；原壓整筆 credits 打 `releases/7898993`、CD 逐軌時長與作曲欄打 `releases/9338322`。",
+    "rgMbid": "c4ceec96-e143-4faa-b5c1-4478dff99b1b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/eb/96/6e/eb966ec1-29cc-8d24-c718-2e963878ef03/jacket_MHXX00877B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1538801454",
+    "note": "試聽探測釘定的 collectionId 1538801454（jp）：THE SQUARE — THE SQUARE LIVE"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 179,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=179）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "正式節目壓軸那首，是一首只在舞台上演的曲子。〈Japanese Soul Brothers〉這一版長 14 分 42 秒，演完就進安可。盤上收錄 1985 年 6 月下旬大阪與名古屋兩場，出自 4 月起跑、共五十場的全國巡演；黑膠分到 28AH 1907，只容四軌，CD 補足九軌。現場把長度拉開：組曲串起 1984 年那張的五首，〈Prime〉從錄音室的 4 分 19 秒拉成 8 分 30 秒，安可就從它接到抒情的〈Forgotten Saga〉收尾。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/THE_SQUARE_LIVE",
+     "https://www.discogs.com/release/9338322",
+     "https://www.discogs.com/release/7898993",
+     "https://ja.wikipedia.org/wiki/T-SQUARE",
+     "https://ja.wikipedia.org/wiki/OMENS_OF_LOVE",
+     "https://www.discogs.com/master/1317782",
+     "https://musicbrainz.org/release-group/c4ceec96-e143-4faa-b5c1-4478dff99b1b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/92/e9/d5/92e9d56e-0771-f63e-6ec4-a3c46ffa6e06/mzaf_856065907002352937.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1538801454",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE SQUARE",
+   "album": "R·E·S·O·R·T",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group dbd08fd9-fb01-4d18-a44c-57fbcb457444（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「R·E·S·O·R·T」（U+00B7）、first-release-date 1985-04-01、primary-type Album、**secondary-types 空陣列**、artist-credit 單一方（credit 字串逐字 `THE SQUARE`、實體本名 `T‐SQUARE`，0480ca1e）、tags／genres 逐字 `jazz(1)`。`release?release-group=<id>` 回 **5 筆**：**1985-04-01 JP CD `CBS/Sony 32DH-194`（d311b82f）**、**1985-04-01 JP 12\" Vinyl `CBS/Sony 28AH-1845`（f918376d＝原壓）**、1991-03-21 JP CD `CBS/Sony CSCL-1683`（7932dda9，⚠ MB 獨有）、1996-04-01 JP CD `Sony Records SRCL-3524`（3f729acc）、2001-12-12 JP CD `VILLAGE VRCL-2014`（9aaef096，title 逐字 `R・E・S・O・R・T`）。Discogs：`catno=28AH-1845` 反查、先讀 `type` 後取 **master 1248920**；`/masters/1248920/versions` 逐筆跑完 **8 版**；原壓整筆 credits 打 `releases/5716435`、CD 的錄音地與日期打 `releases/10967442`。",
+    "rgMbid": "dbd08fd9-fb01-4d18-a44c-57fbcb457444",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dbd08fd9-fb01-4d18-a44c-57fbcb457444/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 51,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=51）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音室在夏威夷，遠方一打雷，錄音機就停下來。團長 安藤まさひろ 回憶，一到先得修混音台，打雷時送電不穩，牛排吃膩了還四處找日本料理。錄音室狹小，節奏組三、四天錄完就跑去海邊，和泉宏隆 一個人留在室內疊合成器。這趟 1985 年 2 月錄了十八天，4 月 1 日問市，LP 這一版是 28AH 1845。開場〈Omens Of Love〉被 松本隆 填詞成〈ウィンク・キラー〉，同年 7 月成了 野村宏伸 出道單曲另一面，小泉今日子 同月也唱了另一版詞。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/R%E3%83%BBE%E3%83%BBS%E3%83%BBO%E3%83%BBR%E3%83%BBT",
+     "https://www.discogs.com/release/5716435",
+     "https://ja.wikipedia.org/wiki/OMENS_OF_LOVE",
+     "https://www.discogs.com/master/1248920",
+     "https://musicbrainz.org/release-group/dbd08fd9-fb01-4d18-a44c-57fbcb457444"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/a0/de/f3a0de39-31e4-a6c9-7265-0d907418ced6/mzaf_4446469015808326604.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1538799719",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "伊東たけし",
+   "album": "El Seven",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1ce745b1-64c0-4f7e-a2c3-59d8257c9a85（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「El Seven」、first-release-date 1985-11-21、primary-type Album、**secondary-types 空陣列**、artist-credit 單一方（`伊東たけし`，865087d6、Person、country `JP`）、tags 逐字 `jazz(1)`／`smooth jazz(1)`。`release?release-group=<id>` 回 **4 筆**：**1985-11-21 JP 12\" Vinyl `CBS/Sony 28AH-1943`（afb80bcb＝原壓）**、1985-11-21 JP CD `CBS/Sony 32DH-292`（fc1b9fee）、1991-05-15 JP CD `Sony Records SRCL-1822`（480477b9，逐軌 relation 有 `producer: 伊藤八十八` 與 `producer (co): Randy Fredrix／Philippe Saisse`、`arranger: Doppelganger`、逐軌 work 的 composer）、2017-03-29 XW Digital Media（dfc8c014）。Discogs：`catno=28AH-1943` 反查、先讀 `type` 後取 **master 1333451**；`/masters/1333451/versions` 逐筆跑完 **7 版**；原壓 credits 打 `releases/6654890`、錄音地打 `releases/15053738`。",
+    "rgMbid": "1ce745b1-64c0-4f7e-a2c3-59d8257c9a85",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1ce745b1-64c0-4f7e-a2c3-59d8257c9a85/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 95,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=95）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標題曲做了兩個版本，一個叫東京版，一個叫紐約版。LP、CD 與單曲 1985 年 11 月 21 日一併發行，單曲 A 面放東京版、B 面放紐約版；LP 印號 28AH 1943，錄音則分在紐約兩間錄音室完成。製作與編曲交給 Doppelganger：Randy Fredrix 彈吉他、Philippe Saisse 彈鍵盤。Saisse 1962 年生於馬賽，父親是法國 CBS/Columbia 駐廠製作人，他讀完巴黎音樂院後進 Berklee，發片時二十三歲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/13736210",
+     "https://www.discogs.com/release/15053738",
+     "https://www.discogs.com/artist/254963",
+     "https://www.discogs.com/release/6654890",
+     "https://www.discogs.com/release/24409832",
+     "https://ja.wikipedia.org/wiki/%E4%BC%8A%E6%9D%B1%E3%81%9F%E3%81%91%E3%81%97",
+     "https://ja.wikipedia.org/wiki/T-SQUARE",
+     "https://music.apple.com/jp/album/el-seven/1537080990",
+     "https://www.discogs.com/master/1333451",
+     "https://musicbrainz.org/release-group/1ce745b1-64c0-4f7e-a2c3-59d8257c9a85"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/30/e2/28/30e22843-8838-5cc6-944f-4bddbddaffcc/mzaf_758746196557956142.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537080990",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "日野皓正",
+   "album": "Trans-Blue",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2ccaa318-0016-4bdd-b0c1-9d6658ce1123（slice 給的 rgMbid，未改釘；c-132 a 的 mbNote 早就點名「2ccaa318《Trans-Blue》1985 本批未動，留給後續批」）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Trans-Blue」、first-release-date `1985`、primary-type Album、**secondary-types 空陣列**、artist-credit 單一方（`日野皓正`，60d3fa1e、Person、country `JP`）、**tags 與 genres 兩欄都是空陣列**。`release?release-group=<id>` 回 **3 筆**：**1985 JP 12\" Vinyl 9 軌 `CBS/Sony 28AH 1835`（e3a31074＝原壓；⚠ MB 記 9 軌、Discogs LP 記 8 軌——MB 那一筆可能混入 CD 的曲目）**、2000-04-19 JP CD `SME Records SRCS 9603`（b8231689）、無日期無廠牌 SACD 9 軌（f67bd44b）。Discogs：先讀 `type` 後取 **master 1060169**；`/masters/1060169/versions` 逐筆跑完 **9 版**；整筆 credits 打 `releases/5078190`、錄音地打 `releases/28380571`。",
+    "rgMbid": "2ccaa318-0016-4bdd-b0c1-9d6658ce1123",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2ccaa318-0016-4bdd-b0c1-9d6658ce1123/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 34,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：機器提案 5，逐張複核退回 4——CBS/Sony 28AH 1835，大廠正規發行；關鍵字命中的是 MB 上一筆「無廠牌」的再版條目。5 分的第一個要件是原盤私壓或極小廠。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤上三十位樂手，光弦樂就佔了十四把。紐約弦樂組是小提琴九、中提琴三、大提琴二，首席 David Nadien。Jim Hall 當時是 Concord Records 的簽約藝人，盤面註明他經該公司同意才來客席。製作人一欄掛的是領銜的短號手自己，同年他還演了 TBS 的特別劇。〈Alone, Alone And Alone〉1965 年就有錄音、作曲欄也掛他，1967 年又成了他出道盤的同名曲，這裡是二十年後的新錄；唱片 1985 年上櫃，黑膠配號 28AH 1835。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/33194034",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E7%9A%93%E6%AD%A3",
+     "https://www.discogs.com/release/5078190",
+     "https://www.discogs.com/master/346409",
+     "https://en.wikipedia.org/wiki/Hold_My_Hand_(1953_song)",
+     "https://www.discogs.com/master/1060169",
+     "https://musicbrainz.org/release-group/2ccaa318-0016-4bdd-b0c1-9d6658ce1123"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "村松健",
+   "album": "緑の想い",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group dde45a5b-9ac9-4731-9f19-2ecf93d5783b（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「緑の想い」、first-release-date 1985-06-21、primary-type Album、**secondary-types 空陣列**、artist-credit 單一方（`村松健`，8210f900、Person、country `JP`、disambiguation 逐字 `pianist/composer`）、tags／genres 逐字 `ambient(1)`／`electronic(1)`／`jazz(1)`／`new age(1)`。`release?release-group=<id>` 回 **1 筆**：**1985-06-21 JP Official CD 8 軌 `CBS/Sony 32DH 236`（cdd593b9）**——⚠ **MB 沒建 LP `28AH 1876`**。Discogs：`q=Ken Muramatsu` 取 **master 1219795**；`/masters/1219795/versions` 逐筆跑完 **5 版**；原壓整筆 credits 打 `releases/7653549`、錄音期間打 `releases/10618285`。",
+    "rgMbid": "dde45a5b-9ac9-4731-9f19-2ecf93d5783b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dde45a5b-9ac9-4731-9f19-2ecf93d5783b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 80,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=80）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鋼琴、鍵盤、鼓、打擊與貝斯，全掛在領銜者一人名下。錄音時他二十二歲，八軌從作曲到編曲也全在他名下，製作則與 黒田日出良 共掛。前一張是他一個人對著 Steinway 錄的獨奏盤；這張擴成吉他、貝斯、低音提琴、豎琴、打擊加弦樂。CD 1985 年 6 月 21 日開賣，LP 標記為 28AH 1876；2 月開錄、4 月完成，場地是信濃町與六本木。客席打擊手 岡部洋一 與 村松健 同為 1962 年東京出生；八個曲題全用日文寫畫面。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10618285",
+     "https://ja.wikipedia.org/wiki/%E6%9D%91%E6%9D%BE%E5%81%A5",
+     "https://www.discogs.com/release/10618762",
+     "https://www.discogs.com/release/7653549",
+     "https://www.discogs.com/artist/462832",
+     "https://music.apple.com/jp/album/%E7%B7%91%E3%81%AE%E6%83%B3%E3%81%84/1537111630",
+     "https://www.discogs.com/master/1219795",
+     "https://musicbrainz.org/release-group/dde45a5b-9ac9-4731-9f19-2ecf93d5783b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3e/a5/3a/3ea53ae8-2c27-e679-f674-53162c55290d/mzaf_8226332044526354927.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537111630",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "渡辺香津美",
+   "album": "Mobo Live",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a6aefcd7-1420-4f93-be4a-4b9b1f293c31（slice 給的 rgMbid，未改釘；c-181 第 4959 條退過同一個 RG）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Mobo Live」、first-release-date `1985`、primary-type Album、**secondary-types 逐字 `[\"Live\"]`**、artist-credit 單一方（credit 字串逐字 `Kazumi Watanabe`、實體本名 `渡辺香津美`，9a93b39f、Person、country `JP`）、tags／genres 逐字 `avant-garde jazz(1)`／`contemporary jazz(1)`／`jazz(1)`／`jazz rock(1)`。`release?release-group=<id>` 回 **1 筆**：**1985 JP Official 12\" Vinyl 8 軌 `Domo 28MX 2519`（3a3a803a＝原壓）**。Discogs：先讀 `type` 後取 **master 959299**；`/masters/959299/versions` 逐筆跑完 **5 版**；原壓整筆 credits 打 `releases/6239236`、2016 復刻逐軌時長打 `releases/8208611`；字標沿革打 `labels/28290`。",
+    "rgMbid": "a6aefcd7-1420-4f93-be4a-4b9b1f293c31",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a6aefcd7-1420-4f93-be4a-4b9b1f293c31/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一張現場盤掛了五位鼓手，有幾軌同時掛著兩位。村上秀一 從第二軌打到末軌，仙波清彦 在 A3 到 B2 加入，青山純 只上末軌，レイチ 與 横沢龍太郎 只列名字。1985 年 DOMO 推出這張八軌現場盤，LP 對應 28MX 2519，盤上錄音地只寫厚生年金会館。管樂客席各一兩軌：坂田明 只在〈危険がいっぱい〉，末軌〈風連〉同時站著 梅津和時 與 沢村満 兩支中音。名單上有一格舞台燈光；1990 年 CD 再發補進原盤之外的〈Good Vibration〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6239236",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E9%A6%99%E6%B4%A5%E7%BE%8E",
+     "https://www.discogs.com/artist/119483",
+     "https://www.discogs.com/artist/92180",
+     "https://www.discogs.com/release/13657382",
+     "https://www.universal-music.co.jp/watanabe-kazumi/products/uccj-4115/",
+     "https://www.discogs.com/master/959299",
+     "https://musicbrainz.org/release-group/a6aefcd7-1420-4f93-be4a-4b9b1f293c31"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/79/27/72/7927722e-cc0f-9101-4a24-b65a9d45c048/mzaf_3682414021574657705.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443716666",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "近藤等則",
+   "album": "Metal Position",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0412c82e-fcf5-4642-a0b1-a6a7a1aa8122（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Metal Position」、first-release-date `1985`、primary-type Album、**secondary-types 空陣列**、artist-credit **兩方**（`Toshinori Kondo`→實體 `近藤等則` 2e0f7014、Person、country `JP`、joinphrase ` & `；`IMA` 0fc576b5、Group、country `null`、disambiguation 逐字 `Toshinori Kondo & IMA`）、tags 逐字 `abstract(1)`／`electronic(1)`／`experimental(1)`／`jazz(1)`／`jazz-rock(1)`。`release?release-group=<id>` 回 **1 筆**：**1985 JP Official CD 8 軌 `Polydor H33P 20026`（f0036023）**——⚠ **MB 沒建 LP `28MX2520`**。Discogs：先讀 `type` 後取 **master 123555**；`/masters/123555/versions` 逐筆跑完 **6 版**；原壓整筆 credits 打 `releases/4689661`。",
+    "rgMbid": "0412c82e-fcf5-4642-a0b1-a6a7a1aa8122",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/bbURHuPYTxdIBWBYV4Q9Qz2JkjbUBbcyUflkKx__IyE/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2ODk2/NjEtMTYxNDgxMzM3/MS03Mzc4LnBuZw.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "4689661"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=3）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唯一一首外來曲，最有名的版本招牌是一段小號滑音。〈Cerezo Rosa〉這個西文題取自 Pérez Prado 樂團那一版，滑音出自小號手 Billy Regis。原曲由 Louiguy 寫於 1950 年，Prado 那一版 1953 年在墨西哥發行。LP 註記 28MX2520，1985 年 7 月 1 日落在ポリドール 名下，八首裡 近藤等則 寫了七首。吉他手 Reck 是東京龐克樂團 Friction 的核心，1977 年去紐約參加過 no wave 樂團。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4689661",
+     "https://ja.wikipedia.org/wiki/%E8%BF%91%E8%97%A4%E7%AD%89%E5%89%87",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://en.wikipedia.org/wiki/Cherry_Pink_(and_Apple_Blossom_White)",
+     "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%B2%A2%E6%96%B0%E4%B8%80",
+     "https://www.discogs.com/release/1205882",
+     "https://www.discogs.com/master/123555",
+     "https://musicbrainz.org/release-group/0412c82e-fcf5-4642-a0b1-a6a7a1aa8122"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "カリオカ",
+   "album": "Kartik",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a9f66df3-cde6-4669-88da-8a2813c161f4（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「KARTIK」、first-release-date 1985-12-01、primary-type Album、**secondary-types 空陣列**、artist-credit 單一方（`カリオカ`，18c3632b、Group、country `JP`）、tags 逐字 `jazz(1)`／`jazz-funk(1)`／`latin(1)`／`latin jazz(1)`。`release?release-group=<id>` 回 **3 筆**：**1985-12-01 JP CD 10 軌 `Polydor P33P 20027`（aafe0828，title 逐字 `Kartik`）**、2013-06-26 JP SHM-CD 9 軌 `Universal Music UPCY-6736`（2101a2ac）、**無日期 JP 12\" Vinyl 9 軌 `Polydor 28MM 0466`（00015c5f＝原壓）**。Discogs：先讀 `type` 後取 **master 2207968**；`/masters/2207968/versions` 逐筆跑完 **5 版**；原壓整筆 credits 打 `releases/7622793`、CD 的第 6 軌註記打 `releases/19450909`。",
+    "rgMbid": "a9f66df3-cde6-4669-88da-8a2813c161f4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a9f66df3-cde6-4669-88da-8a2813c161f4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 42,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=42）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤上只有四個人，九首全是團員的新曲。アントニオ石田 鼓、佐藤正美 吉他、乾裕樹 鋼琴、植竹哲朗 貝斯；佐藤 與 乾 的曲各佔四軌，開場曲出自石田。他們 1978 年出道起一直在キティ，這是改掛ポリドール 後的第一張，LP 1985 年發售，唱片刻號 28MM 0466，編曲、製作兩欄都掛樂團。石田 1972 年當過ニューブリード 的首任鼓手。CD 到 12 月 1 日才上市，第六軌多出〈Clair De Lune〉，是初版 CD 獨有。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7622793",
+     "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AA%E3%82%AA%E3%82%AB_(%E3%83%95%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://www.discogs.com/release/19450909",
+     "https://www.discogs.com/master/2207968",
+     "https://musicbrainz.org/release-group/a9f66df3-cde6-4669-88da-8a2813c161f4"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Casiopea",
+   "album": "Sun Sun",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c721bf15-77a0-48fc-9897-0b895df5deb6（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Sun Sun」、artist-credit 單一方（`Casiopea` b2853652，Group、country 逐字 `JP`、disambiguation 逐字 `Japanese jazz fusion band`）、first-release-date 1986-09-10、primary-type Album、**secondary-types 空陣列**、RG tags 十項（見 `why`，count 1–2，照第 1850-B 條只當線索；slice 的 `why` 欄逐字是空字串，曲風依據由策展層自建）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **5 筆**：**2f54d88a（1986-09-10 JP Official 12\" Vinyl 11 軌，ALFA ALR-28085——原壓）**、ef2d9642（1986-09-10 JP CD 14 軌，ALFA 32XA-90）、723b5ab6（2002-03-13 JP CD 14 軌，Village Records VRCL-2235）、9ab135c3（無日期 XW Digital Media 14 軌，Sony Music Direct (Japan)）、da6e0f9a（無日期 AF Digital Media 14 軌）。Discogs：`q=Casiopea Sun Sun` 與 `catno=ALR-28085` 兩路各查一次、逐筆先讀 `type` 後取 **master 462628**（⚠ `search` 結果混著同名單曲 master 1211693、《Casiopea Perfect Live II》master 922757 與 2009 年盒裝，逐筆讀 `type` ＋ `title` ＋ `format` 排除）；`/masters/462628/versions` 逐筆跑完 **15 版**（清單見 `label`）；原壓整筆 credits 打的是 `releases/3276011`（**不是 `search` 摘要**），另逐筆讀過 `releases/3800433`（同日 CD，多兩位解說者 Nobuaki Onuki／Shunsuke Miyazumi）、`releases/21239722`（2002 CD）與 `labels/37570`。",
+    "rgMbid": "c721bf15-77a0-48fc-9897-0b895df5deb6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c721bf15-77a0-48fc-9897-0b895df5deb6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 16157,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=16157）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "製作人請來 David Bowie 的吉他手。這是 Casiopea 第二度叩關美國市場，瞄準流行類別，接下製作的 Carlos Alomar 從 1970 年代中期起就在 Bowie 身邊。1986 年 9 月 10 日亮相時，LP 登記作 ALR-28085，6 月的三週都耗在紐約。一軌請來 John Waite 主唱，兩年前他的〈Missing You〉剛登上 Billboard 榜首。原壓 LP 的 B 面結尾刻了一道鎖槽，唱針停在那裡，會反覆播出一段聲音迴圈。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3276011-Casiopea-Sun-Sun",
+     "https://ja.wikipedia.org/wiki/SUN_SUN",
+     "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%B7%E3%82%AA%E3%83%9A%E3%82%A2_(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://en.wikipedia.org/wiki/Carlos_Alomar",
+     "https://en.wikipedia.org/wiki/John_Waite",
+     "https://www.discogs.com/artist/417792-The-Borneo-Horns",
+     "https://www.discogs.com/master/462628-Casiopea-Sun-Sun",
+     "https://musicbrainz.org/release-group/c721bf15-77a0-48fc-9897-0b895df5deb6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b7/99/8e/b7998efa-c35c-405c-9351-c2f61d6dc546/mzaf_7653210888063361794.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1535035066",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "北村英治",
+   "album": "Swingin' Street",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a13e92a8-019a-478c-8c8c-8380af36d8d0（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Swingin' Street」、artist-credit 單一方（credit 名逐字 `Eiji Kitamura`、實體 `北村英治` 233359be，Person、country 逐字 `JP`、disambiguation 逐字 `reeds`）、first-release-date 1986-11-01、primary-type Album、**secondary-types 空陣列**、RG 層 tags 與 genres 兩欄都是空的（slice 的 `why` 欄逐字是空字串，曲風依據 100% 由策展層自建）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：**8ebcd12d（1986-11-01 JP Official 12\" Vinyl 10 軌，CBS/Sony 28AH 2093——原壓）**。Discogs：`q=Eiji Kitamura Swingin' Street` 與 `catno=28AH 2093` 兩路各查一次、逐筆先讀 `type` 後取 **master 2772989**（⚠ `search` 結果混著《Swingin' Age Part 1》master 2501584 與一張 `master_id` 為 0 的 `平岡精二 ＋ 北村英治クインテット《Swingin Vib. & Clarinet》`，逐筆讀 `title` 排除）；`/masters/2772989/versions` 逐筆跑完 **3 版**（清單見 `label`）；原壓整筆 credits 打的是 `releases/24417380`（**不是 `search` 摘要**），另逐筆讀過 `releases/13316930`（同日 CD）。",
+    "rgMbid": "a13e92a8-019a-478c-8c8c-8380af36d8d0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a13e92a8-019a-478c-8c8c-8380af36d8d0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一天、同一班人、同一段錄音期，一口氣發了三張。另外兩張是《Swingin' Life》與《Swingin' Season》，錄音室、製作人與盤上那一行錄音記錄，三張逐項相符。1986 年 11 月 1 日當天，十軌 LP 以 28AH 2093 上架，4、5、8 月錄於信濃町。前線是 北村英治 的單簧管加上 尾田悟 與 田辺信男 兩支次中音，他本人另有兩首改吹次中音。尾田悟 1927 年生於福岡，1943 年進海軍軍樂隊，錄音前一年剛上過 Montreux 爵士音樂節。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/24417380-Eiji-Kitamura-Swingin-Street",
+     "https://www.discogs.com/release/13316815-Eiji-Kitamura-Swingin-Life",
+     "https://www.discogs.com/release/13316930-Eiji-Kitamura-Swingin-Street",
+     "https://ja.wikipedia.org/wiki/%E5%B0%BE%E7%94%B0%E6%82%9F",
+     "https://www.discogs.com/artist/1016020-Takeshi-Watanabe-2",
+     "https://www.discogs.com/artist/383525-Keiichi-Nakamura",
+     "https://en.wikipedia.org/wiki/On_the_Alamo",
+     "https://en.wikipedia.org/wiki/Body_and_Soul_(1930_song)",
+     "https://www.discogs.com/master/1830947",
+     "https://www.discogs.com/master/2772989-Eiji-Kitamura-Swingin-Street",
+     "https://musicbrainz.org/release-group/a13e92a8-019a-478c-8c8c-8380af36d8d0"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mal Waldron & 山下洋輔",
+   "album": "Piano Duo Live at Pit Inn",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9c4bf6a4-5998-45b4-a768-5dc87421d3fd（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Piano Duo Live at Pit Inn」、artist-credit **兩方**（`Mal Waldron` 3f658e7f Person country `US` disambiguation 逐字 `American jazz pianist`；**joinphrase 逐字 ` & `**；`山下洋輔` 55a95705 Person country `JP` disambiguation 逐字 `jazz pianist`）、first-release-date 1986-03-21、primary-type Album、**secondary-types 逐字 `[\"Live\"]`**、RG 層 tags 與 genres 都是空的（slice 的 `why` 欄逐字是空字串、`note` 逐字 `Live`）。⚠ **slice 的 `domesticRecheck` 逐字「artist country=JP」——那是第二方 `山下洋輔` 的國別，第一方 `Mal Waldron` 是 `US`；本層照第 4106 條四項自行判過（見 `risk`）。** `release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：**8f63327d（1986-03-21 JP Official CD 3 軌，CBS/Sony 32DH 360——原壓）**。Discogs：`q=Mal Waldron Yosuke Yamashita Piano Duo` 與 `catno=32DH 360` 兩路各查一次、逐筆先讀 `type` 後取 **master 867756**（`search` 結果另混一張 2017 年德國盒裝《New Jazz Festival Balver Höhle》，`master_id` 0，逐筆讀 `title` 排除）；`/masters/867756/versions` 逐筆跑完 **2 版**；原壓整筆 credits 打的是 `releases/7193012`（**不是 `search` 摘要**），另逐筆讀過 `releases/5715838`（1998 Village 版）。",
+    "rgMbid": "9c4bf6a4-5998-45b4-a768-5dc87421d3fd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9c4bf6a4-5998-45b4-a768-5dc87421d3fd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1）僅供對照。"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩架鋼琴、一個晚上，第二段即興彈了整整二十八分鐘。對坐的兩人，Mal Waldron 這晚剛滿 60 歲，山下洋輔 43 歲。1985 年 9 月 17 日晚上，新宿 Pit Inn 做了這場數位實況錄音，隔年只出 CD，款號 32DH 360。三軌約 64 分鐘，兩段即興由兩人合掛作曲，末軌是標準曲〈My Old Flame〉。Waldron 1970 年首度來日，八〇年代初他說每年替日本留兩個月；山下洋輔 則在 1973 年就與 佐藤允彦 合錄過一張雙鋼琴盤。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7193012-Mal-Waldron-Yosuke-Yamashita-Piano-Duo-Live-At-Pit-Inn-",
+     "https://en.wikipedia.org/wiki/My_Old_Flame",
+     "https://en.wikipedia.org/wiki/Mal_Waldron",
+     "https://www.discogs.com/artist/260727-Mal-Waldron",
+     "https://ja.wikipedia.org/wiki/%E5%B1%B1%E4%B8%8B%E6%B4%8B%E8%BC%94",
+     "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%AE%BF%E3%83%94%E3%83%83%E3%83%88%E3%83%BB%E3%82%A4%E3%83%B3",
+     "https://www.discogs.com/master/867756-Mal-Waldron-Yosuke-Yamashita-Piano-Duo-Live-At-Pit-Inn-",
+     "https://musicbrainz.org/release-group/9c4bf6a4-5998-45b4-a768-5dc87421d3fd"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。（原探測配到同名的別張碟，2026-10-04 本機降級）"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE SQUARE",
+   "album": "S·P·O·R·T·S",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4ccaddc5-b241-4c66-bfb4-511e57f8cf32（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「S·P·O·R·T·S」、artist-credit 單一方（credit 名逐字 `THE SQUARE`、實體 `T‐SQUARE` 0480ca1e，Group、country 逐字 `JP`）、first-release-date 1986-03-05、primary-type Album、**secondary-types 空陣列**、RG tags 逐字 `jazz(1)`／`jazz fusion(1)`（照第 1850-B 條只當線索；slice 的 `why` 欄逐字是空字串）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **5 筆**：**05a35950（1986-03-05 JP Official CD 9 軌，CBS/Sony 32DH-354——MB 最早的一筆）**、87148a93（1991-03-21 JP CD，CBS/Sony CSCL-1684）、fbffa767（1996-04-01 JP CD，Sony Records SRCL-3525）、79d8613d（2001-12-12 JP CD，VILLAGE VRCL-2017）、b164145d（Pseudo-Release，title 逐字 `スポーツ`，不計入版本數）——**MB 沒有建 LP 原壓 `28AH 1996`**。Discogs：`q=The Square S.P.O.R.T.S.` 與 `catno=28AH 1996` 兩路各查一次、逐筆先讀 `type` 後取 **master 1248921**（`search` 結果混著二十餘筆與本盤無關的 `Sports` 字串碟，逐筆讀 `title` 排除）；`/masters/1248921/versions` 逐筆跑完 **8 版**（清單見 `label`）；原壓整筆 credits 打的是 `releases/7898830`（**不是 `search` 摘要**），另逐筆讀過 `releases/10967739`（同日 CD，雙題 `S･P･O･R･T･S = スポーツ`，逐軌欄改記 `Music By`）。",
+    "rgMbid": "4ccaddc5-b241-4c66-bfb4-511e57f8cf32",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4ccaddc5-b241-4c66-bfb4-511e57f8cf32/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 62,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=62）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "B 面第二軌改成吹奏樂之後，樂譜一個月就賣光。那首是 和泉宏隆 寫的〈宝島〉。1986 年 3 月 5 日兩種載體齊發，LP 定為 28AH 1996。真島俊夫 改編的吹奏樂譜 1987 年出版，把中板改成拉丁打擊的森巴快板，鋼琴的獨奏段換成中音薩克斯風；指揮 岩井直溥 說，聽說有年輕人以為那是改編者自己寫的。曲名多取自運動術語，〈Hit And Run〉來自棒球，〈Drop Goal〉來自橄欖球。鼓手 則竹裕之 從這張加入，當時才 21 歲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7898830-The-Square-SPORTS",
+     "https://ja.wikipedia.org/wiki/S%E3%83%BBP%E3%83%BBO%E3%83%BBR%E3%83%BBT%E3%83%BBS",
+     "https://www.discogs.com/artist/814155-Hiroyuki-Noritake",
+     "https://www.discogs.com/master/1248921-The-Square-SPORTS",
+     "https://musicbrainz.org/release-group/4ccaddc5-b241-4c66-bfb4-511e57f8cf32"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a7/9d/f0/a79df073-03a4-ff3e-b5de-db93ba072a96/mzaf_2566887680465516423.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1538800822",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "加古隆",
+   "album": "いにしえの響き -パウル・クレーの絵のように-",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3fff5a51-f677-4de0-bff0-88ea3d881c58（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「いにしえの響き -パウル・クレーの絵のように-」、artist-credit 單一方（`加古隆` 36286c52，Person、country 逐字 `JP`）、first-release-date 1986-08-01、primary-type Album、**secondary-types 空陣列**、RG 層 tags 與 genres 都是空的（slice 的 `why` 欄逐字是空字串，曲風依據 100% 由策展層自建）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：6ae187c0（1986-08-01 JP Official CD 12 軌，CBS/Sony 32DH-495）——**MB 沒有建 LP `28AH 2075`**。Discogs：`q=Takashi Kako` 與 `catno=28AH 2075` 兩路各查一次、逐筆先讀 `type` 後取 **master 1037740**（`search` 結果裡 加古隆 另有 Trio 1976–77 四張、Baybridge 1984《L'Aube》、1985《Solo Concert》、1986《Poésie》（`28AH 2110`）、1987《Scrawl》（`28AH 2220`）與 c-187 已收的《Valencia》——**《Poésie》與本盤同年同廠、號段相鄰，逐筆讀 `title` 與 `catno` 排除，是別張碟**）；`/masters/1037740/versions` 逐筆跑完 **6 版**；原壓整筆 credits 另打 `releases/35915320`、`releases/30273974`、`releases/15079352`（2003 版給出逐軌時長 1:42–5:50）。",
+    "rgMbid": "3fff5a51-f677-4de0-bff0-88ea3d881c58",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3fff5a51-f677-4de0-bff0-88ea3d881c58/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首鋼琴獨奏，曲名全借自 Paul Klee 的畫。每首都並列德文原畫題與日文譯名，credits 裡 Klee 還掛了 Painting 一欄。1986 年 4 月 24、25 日把十二首錄進東京的 Sun Pearl Arakawa，LP 取號 28AH 2075。三篇解說出自 三善晃、浅田彰 與 野口久光，其中 三善晃 是 加古隆 在東京藝術大學作曲科的老師。野口久光 前一年勸他挑一段誰都知道的旋律來彈，他由此寫出以〈Greensleeves〉為動機的〈ポエジー〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/30273974",
+     "https://www.discogs.com/release/35915320",
+     "https://itunes.apple.com/lookup?id=1771360784&country=jp&entity=song",
+     "https://ja.wikipedia.org/wiki/%E5%8A%A0%E5%8F%A4%E9%9A%86",
+     "https://www.discogs.com/artist/416575-Takashi-Kako",
+     "https://www.discogs.com/release/9251413-Takashi-Kako-Klee",
+     "https://www.discogs.com/master/1037740",
+     "https://musicbrainz.org/release-group/3fff5a51-f677-4de0-bff0-88ea3d881c58"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/de/b7/c7deb752-3662-782b-3ff0-ba0c27536fb1/mzaf_4682042941183238172.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1771360784",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "安藤まさひろ",
+   "album": "Melody Book",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b6017b05-6ea4-425d-877b-86575033deb1（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Melody Book」、artist-credit 單一方（**credit 名逐字 `安藤まさひろ`**、實體 `安藤正容` 4c32614a，Person、country 逐字 `JP`）、first-release-date 1986-06-21、primary-type Album、**secondary-types 空陣列**、RG 層 tags 與 genres 都是空的（slice 的 `why` 欄逐字是空字串，曲風依據 100% 由策展層自建）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **3 筆**：bbc3e050（1986-06-21 JP Official CD 9 軌，CBS/Sony 32DH-454）、e0e11100（標 1986 JP CD 9 軌，CBS/Sony CSCL 1688——號段是 1990 年代再發）、c3249841（Pseudo-Release，title 逐字 `メロディー・ブック`，不計）——**MB 沒有建 LP 原壓 `28AH 2055`**。Discogs：⚠ **`q=安藤まさひろ` 回 344 筆雜訊（Marlene／THE SQUARE／郷ひろみ／浜田省吾⋯的碟），改以 `q=Masahiro Andoh Melody Book` 與 `catno=32DH-454` 兩路各查一次**，逐筆先讀 `type` 後取 **master 1063147**；`/masters/1063147/versions` 逐筆跑完 **4 版**；原壓整筆 credits 打的是 `releases/7705036`（**不是 `search` 摘要**），另逐筆讀過 `releases/9094355`（同年 CD，逐軌欄改記 `Composed By`／`Lyrics By`）與 `artists/1887667`。",
+    "rgMbid": "b6017b05-6ea4-425d-877b-86575033deb1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/60/12/ed/6012edf5-56e8-5ca7-9e89-f82915647755/jacket_MHXX02302B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537081100",
+    "note": "試聽探測釘定的 collectionId 1537081100（jp）：安藤正容 — MELODY BOOK"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 115,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=115）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤上的名字是平假名，二十二年後才改回本名。從 1980 年到 2007 年，他的署名都是「安藤まさひろ」；2008 年出道三十週年起，換成本名「安藤正容」，今天的數位版因此掛這個名字。他是 THE SQUARE 的創團吉他手兼首任團長，這是他的個人首作。LP 在 1986 年發行，標作 28AH 2055；CD 於 6 月 21 日另出，九首的作曲欄只有他一個名字。〈Harlequin〉由 Carl Moore 與 Cindy 對唱；首尾是同一首曲子的前奏版與完整版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9094355-Masahiro-Andoh-Melody-Book",
+     "https://ja.wikipedia.org/wiki/%E5%AE%89%E8%97%A4%E6%AD%A3%E5%AE%B9",
+     "https://www.discogs.com/release/7705036-Masahiro-Andoh-Melody-Book",
+     "https://www.discogs.com/artist/278703-Masanori-Sasaji",
+     "https://www.discogs.com/artist/547646-Jun-Aoyama",
+     "https://www.discogs.com/artist/3036474-Cindy-26",
+     "https://www.discogs.com/artist/27702-Eve",
+     "https://www.discogs.com/master/1063147-Masahiro-Andoh-Melody-Book",
+     "https://musicbrainz.org/release-group/b6017b05-6ea4-425d-877b-86575033deb1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/40/8d/93/408d935f-46a4-9e94-a675-f6e8194a084a/mzaf_11718507649730556673.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537081100",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "笠井紀美子",
+   "album": "My One And Only Love",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 570d99e3-140a-4693-9778-1214fc2cecf3（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「My One And Only Love」、artist-credit 單一方（`笠井紀美子` 8da40f85，Person、country 逐字 `JP`）、first-release-date `1986`（只給到年）、primary-type Album、**secondary-types 空陣列**、RG 層 tags 與 genres 都是空的（slice 的 `why` 欄逐字是空字串，曲風依據 100% 由策展層自建）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：**bb18450c（1986 JP Official 12\" Vinyl 9 軌，CBS/Sony 28AH 1992——原壓）**。Discogs：`q=Kimiko Kasai My One And Only Love` 與 `catno=28AH 1992` 兩路各查一次、逐筆先讀 `type` 後取 **master 1830947**（`search` 結果混著兩筆合輯與一張法國非正式發行的 `Rare Funk & Disco 21`，逐筆讀 `type` ＋ `formats` 排除）；`/masters/1830947/versions` 逐筆跑完 **4 版**；原壓整筆 credits 打的是 `releases/11354024`（**不是 `search` 摘要**），另逐筆讀過 `releases/29896789`（同年 CD，整筆 `extraartists` 是空的）。",
+    "rgMbid": "570d99e3-140a-4693-9778-1214fc2cecf3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/570d99e3-140a-4693-9778-1214fc2cecf3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=12）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一年前在新宿替她伴奏的鋼琴手，這回在紐約又坐上琴椅。Cedar Walton 陪 笠井紀美子 把 1974 年那張實況唱過的兩首再錄一遍。1986 年 4 月 2 日登場，LP 品番 28AH 1992；錄音則是 1985 年 10 月赴紐約做的。Michael Brecker 的次中音五軌、Mike Stern 的吉他四軌，兩人各佔各的軌。標題曲問世於 1953 年，器樂版向來以次中音為主；這一軌是人聲配 Brecker 的次中音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11354024",
+     "https://www.discogs.com/release/16134738-Kimiko-Kasai-My-One-And-Only-Love",
+     "https://www.discogs.com/artist/271001-Al-Foster",
+     "https://www.discogs.com/artist/276062-Mike-Stern",
+     "https://www.discogs.com/release/5434034",
+     "https://en.wikipedia.org/wiki/My_One_and_Only_Love",
+     "https://www.discogs.com/release/24417380-Eiji-Kitamura-Swingin-Street",
+     "https://www.discogs.com/artist/1825852-Yozo-Iwanami",
+     "https://www.discogs.com/master/1830947",
+     "https://musicbrainz.org/release-group/570d99e3-140a-4693-9778-1214fc2cecf3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/2c/9a/962c9ad0-f58d-59ed-7ea5-e33f82a011e9/mzaf_7566463730966989712.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "6791228263",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "L.A. Transit",
+   "album": "De Novo",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f9d4f3cd-ae5e-4426-b71f-206c067a4dce（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「De Novo」、artist-credit 單一方（`L.A. Transit` 056c4bd0，Group、country 逐字 `JP`、disambiguation 逐字 `Japanese studio concept`）、first-release-date 1986-07-01、primary-type Album、**secondary-types 空陣列**、RG tags 五項各 1 票（見 `why`，照第 1850-B 條只當線索；slice 的 `why` 欄逐字是空字串）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：67f0b73f（1986-07-01 JP Official CD 10 軌，label-info 兩筆「Interface 33CY-1004」「DENON CY-1004」）——**MB 沒有建 LP 原壓 `YF-7119`**；**slice 的 `house` 逐字 `Denon`，來自這筆 CD 的第二個 label 實體**。Discogs：`q=L.A. Transit De Novo` 與 `catno=YF-7119` 兩路各查一次、逐筆先讀 `type` 後取 **master 1216400**（`search` 結果混著義大利團 Compagnia Dell'Asino Che Porta La Croce 的《Virtus Asinaria》三筆與 1986 年《Denon Jazz Sampler Volume 1》，逐筆讀 `title` 排除）；`/masters/1216400/versions` 逐筆跑完 **6 版**；原壓整筆 credits 打的是 `releases/10635888`（**不是 `search` 摘要**），另逐筆讀過 `releases/4565976`、`releases/18499201`、`labels/108958`、`labels/65996`、`artists/3290784`，並為第 5701 條的甲乙判定打了 `masters/260681`（Dizzy Gillespie）與 `masters/186030`（Oscar Peterson Trio）。",
+    "rgMbid": "f9d4f3cd-ae5e-4426-b71f-206c067a4dce",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f9d4f3cd-ae5e-4426-b71f-206c067a4dce/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 372,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=372）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四年後的墨西哥授權版，把致敬對象寫進了盤名。那張 1990 年的 LP 在盤名後多了一句：向 Sérgio Mendes 致敬。1986 年 7 月 1 日頂著 Interface 字標出 LP，編列 YF-7119，同日的 CD 廠牌欄另印 Denon。這是日本企劃的錄音室計畫：巴西經典七首加新寫三首，編曲全交 横倉裕，由洛杉磯錄音室班底演奏。新曲〈Summer Without You〉由 横倉裕 與 Brasil '66 的原主唱 Lani Hall 合寫。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10635888-LATransit-De-Novo",
+     "https://www.discogs.com/artist/3290784-LA-Transit",
+     "https://www.discogs.com/artist/630291-Kazuo-Yoshida",
+     "https://www.discogs.com/master/1216400-LATransit-De-Novo",
+     "https://www.discogs.com/artist/300303-Gracinha-Leporace",
+     "https://www.discogs.com/artist/296479-Oscar-Castro-Neves",
+     "https://en.wikipedia.org/wiki/Lani_Hall",
+     "https://en.wikipedia.org/wiki/Mas_que_nada",
+     "https://www.discogs.com/artist/69621-Tom-Scott",
+     "https://musicbrainz.org/release-group/f9d4f3cd-ae5e-4426-b71f-206c067a4dce"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/c4/ea/42/c4ea427e-0d9a-cff4-37ed-afaea774db6f/mzaf_14676955328967530022.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1561577033",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "カリオカ",
+   "album": "Virgin Islands",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 90489e50-3a7c-4f7d-b874-1f01aad91333（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Virgin Islands」、artist-credit 單一方（credit 名逐字 `Carioca`、實體 `カリオカ` 18c3632b，Group、country 逐字 `JP`、disambiguation 逐字 `Japanese fusion band`）、first-release-date `1986`、primary-type Album、**secondary-types 空陣列**、RG 層 tags 與 genres 都是空的（slice 的 `why` 欄逐字是空字串，曲風依據 100% 由策展層自建）。`release?release-group=<id>&inc=media+labels+artist-credits` 回 **1 筆**：**9dbdb257（1986 JP Official Vinyl 8 軌，Polydor 28MX 2533——原壓）**。Discogs：`q=Carioca Virgin Islands` 與 `catno=28MX 2533` 兩路各查一次、逐筆先讀 `type` 後取 **master 3070028**（`search` 結果混著 Casiopea 與 Native Son 的 Polydor 雷射影碟、Edmundo Ros 的合輯，逐筆讀 `title` 排除）；`/masters/3070028/versions` 逐筆跑完 **2 版**；原壓整筆 credits 打的是 `releases/3647780`（**不是 `search` 摘要**），另逐筆讀過 `releases/26668622`（同年 CD，整筆 `extraartists` 空白）與 `artists/2579454`（`namevariations` 逐字 `Samba Calioca`／`カリオカ`）。",
+    "rgMbid": "90489e50-3a7c-4f7d-b874-1f01aad91333",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/90489e50-3a7c-4f7d-b874-1f01aad91333/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩把小提琴、一把中提琴，大提琴手兼寫弦樂編曲。拉琴的四人依序是 斉藤ネコ、栄田嘉彦、久保田明弘 與 溝口肇。這張 1986 年 11 月 1 日接棒推出，LP 序號 28MX 2533，八首器樂。新鍵盤手 永田一郎 1985 年入團，一進來就寫了八首裡的三首；他 1976 年在學時就替 松任谷由実 伴奏。貝斯手 早川哲也 1960 年生於大阪，高中畢業上京拜 井野信義 為師，1986 年入團，與 溝口肇 同年出生。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3647780-Carioca-5-Virgin-Islands",
+     "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AA%E3%82%AA%E3%82%AB_(%E3%83%95%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://www.discogs.com/artist/663531-Yuji-Imamura",
+     "https://www.discogs.com/artist/408793-Hajime-Mizoguchi",
+     "https://tower.jp/item/3238431",
+     "https://musicbrainz.org/release-group/90489e50-3a7c-4f7d-b874-1f01aad91333"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

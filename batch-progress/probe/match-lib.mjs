@@ -3,7 +3,17 @@
 // 比對邏輯留在主程式頂層時測不到。這裡不做網路請求、不讀檔案，test-match.mjs 直接 import。
 import { fold } from '../lib.mjs';
 
-export const norm = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
+// ⚠ 2026-09-25（主線第 1977-B 條）：**異體字要先摺**。
+// c-185 有兩張碟的 Apple 條目只因為異體字而配不上：
+// `古沢良治郎カルテット` vs Apple 的 `古澤良治郎カルテット`（`沢`／`澤`）——兩張都是主線人工回撈救回的。
+// 只收「同一個字的新舊字體」這一類，不做任何語意上的合併。
+const KVAR = {
+  '澤': '沢', '邊': '辺', '邉': '辺', '﨑': '崎', '齋': '斉', '齊': '斉', '濱': '浜',
+  '眞': '真', '國': '国', '學': '学', '廣': '広', '瀧': '滝', '嶋': '島', '桒': '桑',
+  '槇': '槙', '棈': '柏', '髙': '高', '圖': '図', '晉': '晋', '藪': '薮', '曉': '暁',
+};
+export const kfold = s => Array.from(String(s || '')).map(ch => KVAR[ch] || ch).join('');
+export const norm = s => kfold(fold(s)).replace(/[^\p{L}\p{N}]+/gu, '');
 
 // 標題與掛名的比對。寬鬆到能吃掉副標與掛名後綴，嚴格到不會配到同名的別張。
 // Apple 會把單曲與 EP 的條目標成「某某 - Single」「某某 - EP」。摺疊後那個後綴
@@ -129,9 +139,15 @@ export const looseTitleOk = (want, got, selfTitled = false) => {
   if (volToken(want) !== volToken(got)) return false;  // 卷號殘餘：兩道都要擋，否則 T() 那一關會漏
   return (a.includes(b) || b.includes(a)) && Math.abs(a.length - b.length) <= 8;
 };
+// ⚠ 2026-09-28（c-192 b 研究第 7637 條，主線第 2011-B 條）：`Jack DeJohnette《Have You Heard?》` 被配到 `CCK《Have You Heard (Live)》`——
+// `canon('CCK')` 摺疊重字母後只剩 `ck`，落在 `jackdejohnete` 裡面，子字串包含成立。
+// 與 `artistOk` 的 AKA 那一條同一家族：**短的那一邊（canon 後 ≤4 字）只接受完全相等。**
 export const looseArtistOk = (want, got) => {
   const a = canon(want), b = canon(got);
-  return !!a && !!b && (a === b || a.includes(b) || b.includes(a));
+  if (!a || !b) return false;
+  if (a === b) return true;
+  if (Math.min(a.length, b.length) <= 4) return false;
+  return a.includes(b) || b.includes(a);
 };
 
 // 一張卡要試的查詢字串，依序：原文 → 別名＋原盤名 → 全轉寫。重複的去掉。
@@ -142,14 +158,44 @@ export const looseArtistOk = (want, got) => {
 // 而正解 collectionId 1443093435 在 gb 上好端端地擺著。
 // **`queryAlias` 的語意本來就是「外部服務認得的字串」（第 25 條），沒有規定是掛名還是盤名。**
 // 所以兩種都試：當掛名用、也當盤名用。多一兩個查詢字串的成本遠低於漏掉一張。
+// 2026-09-18（c-159 探測層 12/34 unavailable 查出，裁定第 1610 條）：
+// Blue Note 1985 年後線的策展層把 `queryAlias` 寫成**散文**——多個別名用「；」隔開、
+// 每個別名後面還跟著括號說明，例如：
+//   `Wynton Marsalis《The Magic Hour》（Apple 與 Billboard 榜欄形）；The Magic Hour（2004 Blue Note CD，8 軌）；ウィントン・マルサリス`
+// 整串被當成一個查詢字串送進 Apple `search`，四個 term 裡有三個是垃圾，
+// 只有第一個 `${artist} ${album}` 是乾淨的。掛名帶了「Quartet」之類的擴充形時那一個也會落空，
+// 於是整張判成 unavailable——**而 `tried` 記的是乾淨的 `us:0→0`，與「真的沒有」長得一模一樣。**
+// → 先把 alias 拆成一個個乾淨的候選字串再組 term。
+export function aliasParts(alias) {
+  if (!alias) return [];
+  return String(alias)
+    .split(/[；;]/)                                   // 多個別名
+    .map(x => x
+      .replace(/（[^（）]*）/g, ' ')                   // 全形括號說明
+      .replace(/\([^()]*\)/g, ' ')                    // 半形括號說明
+      .replace(/[《》「」『』]/g, ' ')                  // 書名號
+      .replace(/\s*[—–-]\s*/g, ' ')                   // 破折號連接的掛名＋盤名
+      .replace(/\s+/g, ' ').trim())
+    .filter(x => x && Array.from(x).length >= 2);
+}
 export function termsFor(c) {
   const list = [`${c.artist} ${c.album}`];
-  if (c.queryAlias) {
-    list.push(`${c.queryAlias} ${c.album}`);   // alias 當掛名
-    list.push(`${c.artist} ${c.queryAlias}`);  // alias 當盤名
-    list.push(`${c.queryAlias}`);              // alias 本身就是完整查詢字串的情形
+  // ⚠ 2026-09-25（主線第 1977-B 條）：**片假名掛名的中黑要兩種都查**。
+  // c-185 的 `宮間利之とニューハード` 在 Apple 上逐字是 `ニュー・ハード`——
+  // 差的只有一個 `・`，而搜尋那一端不會自己摺掉它（比對那一端 `norm` 早就摺了）。
+  const dotVariants = x => {
+    const out = [];
+    if (x.includes('・')) out.push(x.replace(/・/g, ''));
+    return out;
+  };
+  for (const v of dotVariants(c.artist)) list.push(`${v} ${c.album}`);
+  for (const v of dotVariants(c.album)) list.push(`${c.artist} ${v}`);
+  for (const a of aliasParts(c.queryAlias)) {
+    list.push(`${a} ${c.album}`);   // alias 當掛名
+    list.push(`${c.artist} ${a}`);  // alias 當盤名
+    list.push(a);                   // alias 本身就是完整查詢字串的情形
   }
   if (hasNonLatin(c.artist) || hasNonLatin(c.album))
-    list.push(`${c.queryAlias || translit(c.artist)} ${translit(c.album)}`);
+    list.push(`${aliasParts(c.queryAlias)[0] || translit(c.artist)} ${translit(c.album)}`);
   return [...new Set(list.map(x => x.trim()).filter(Boolean))];
 }

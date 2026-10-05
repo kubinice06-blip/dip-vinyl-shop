@@ -100,7 +100,9 @@ for (const a of ready) {
 const STATUS_FILE = path.join(ROOT, 'card-preview-status.js');
 const statusRaw = fs.readFileSync(STATUS_FILE, 'utf8');
 const negAdds = negative
-  .filter(a => !statusRaw.includes(`"${cardIdOf(a.artist, a.album)}"`))
+  // 用 JSON.stringify 比對：鍵裡有雙引號（《Sunrise From West Sea "Live"》）時，檔案裡存的是跳脫過的寫法，
+  // 直接夾引號比對會永遠找不到，每重跑一次就多寫一行重複的鍵（2026-10-04）。
+  .filter(a => !statusRaw.includes(JSON.stringify(cardIdOf(a.artist, a.album)) + ":"))
   .map(a => [cardIdOf(a.artist, a.album), a.preview.status]);
 
 // --- 3. seed_cards / apex_pool（上架開關）------------------------------------
@@ -132,6 +134,9 @@ const seedAdds = [], apexAdds = [], poolSkips = [];
 for (const a of albums) {
   if (existing.has(poolKeyOf(a.artist, a.album))) { poolSkips.push(`${a.artist} — ${a.album}`); continue; }
   const year = a.research?.suggestedYear ?? null;
+  // 年份欄是空的就不准上架。2026-10-04 雲端交來的單張 manifest 沒帶 research.suggestedYear，
+  // 何欣穗《完美小姐》因此以 year=null 進池（年代篩選抽不到它），事後才補。
+  if (WRITE_POOL && !Number.isInteger(year)) { console.error(`中止：${a.artist} — ${a.album} 沒有 research.suggestedYear，不寫卡池。`); process.exit(1); }
   const tier = a.apexAssessment?.eligible ? a.apexAssessment.tier : null;
   // 一般卡與王牌現在是同一種列，差別只在第 9 欄 tier：
   //   [artist, album, classic, obscurity, accessibility, genres[], year, composer|null, tier?]

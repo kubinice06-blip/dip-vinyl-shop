@@ -1,0 +1,1011 @@
+{
+ "schemaVersion": 1,
+ "batch": "c170-20261004",
+ "albums": [
+  {
+   "artist": "Kandace Springs",
+   "album": "Soul Eyes",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 875f7055-72d8-4f25-87a9-20b97e25c5c9。回問 `release-group/<id>?inc=artist-credits+genres+tags`：title 逐字「Soul Eyes」、artist-credit 單一成分 `Kandace Springs`（artist 03c36fe6-ec96-402b-8366-5038f08c75db，Person／US）、first-release-date 2016-06-24、primary-type Album、**secondary-types 逐字空陣列**、genres `jazz:2`／`r&b:1`、tags `jazz`／`r&b`。回問 `release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 6 筆 release，全部 11 軌 43 分、label-info 逐字 `Blue Note [713c4a95-6616-442b-9cf6-14e1ddfd5946]`（正規 imprint，非部門名 `2eb19785`）——640d1b36（2016-06-24 US CD，B002500402＋SRP Records 5664c7ca 同號，barcode 602547873705）／79f58f6b（2016-07-01 XE CD，00602547889317）／4d0fdaae・6c4b718f・ef408339（XW 數位）／75c27f4f（2016-07-01 GB 數位）。**MB 未建日本盤 UCCQ-1063 與兩款黑膠。**",
+    "rgMbid": "875f7055-72d8-4f25-87a9-20b97e25c5c9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/875f7055-72d8-4f25-87a9-20b97e25c5c9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 24322,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Prince 在網路上聽見一段翻唱，兩年後她首作上市，他已經走了兩個月。那段影片是 2014 年她唱的 Sam Smith〈Stay With Me〉，他聽完把她找進 Paisley Park，此後以導師自居，2016 年 4 月 21 日辭世。這張十一軌的碟在同年 6 月 24 日由 Blue Note 發行，製作人是 Larry Klein，盤名取自 Mal Waldron 作曲的〈Soul Eyes〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10921636-Kandace-Springs-Soul-Eyes",
+     "https://www.bluenote.com/kandace-springs-debut-soul-eyes/",
+     "https://www.bluenote.com/artist/kandace-springs/",
+     "https://musicbrainz.org/artist/070d193a-845c-479f-980e-bef15710653e",
+     "https://www.discogs.com/release/10467233-Kandace-Springs-Soul-Eyes",
+     "https://musicbrainz.org/release-group/875f7055-72d8-4f25-87a9-20b97e25c5c9"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dd/33/d8/dd33d8f5-efdf-9855-08ad-790322325a9c/mzaf_4606171844810956034.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440835098",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kandace Springs",
+   "album": "Indigo",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group db2101b1-0477-4305-84fc-e77bae9913e3。`release-group?inc=artist-credits+genres+tags`：title「Indigo」、artist-credit 單一 `Kandace Springs`（03c36fe6，Person／US）、first-release-date 2018-09-07、primary-type Album、secondary-types 逐字空陣列、genres `jazz:1`／`r&b:1`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條的第二種端點組合已跑過）：**轄下只有 2 筆 release**——88cb382c（2018-09-07 US Digital Media，13 軌 48 分，barcode 欄空，label-info 逐字 `Blue Note [713c4a95]`）與 c2d8a9ae（2018-09-07 US CD，13 軌 48 分，catalog-number 逐字 `B002872002`，barcode 欄空，同一個 label id）。**MB 未建歐版、日版 UCCQ-1087、兩款黑膠與所有宣傳盤。**",
+    "rgMbid": "db2101b1-0477-4305-84fc-e77bae9913e3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/db2101b1-0477-4305-84fc-e77bae9913e3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 20283,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鼓在巡演路上一站一站錄下，回頭剪碎，重接成一張專輯。動手的是鼓手兼製作人 Karriem Riggins，本作十三軌除兩軌之外都由他製作，那趟巡演他跟的是 Diana Krall。2018 年 9 月 7 日由 Blue Note 發行的第二張正規專輯，她給自己出的命題是：如果 Nina Simone 有今天的技術，她會怎麼做。〈Unsophisticated〉由 Roy Hargrove 客座小號。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14347365-Kandace-Springs-Indigo",
+     "https://www.bluenote.com/kandace-springs-announces-new-album-indigo/",
+     "https://www.bluenote.com/kandace-springs-releases-new-single-6-8/",
+     "https://www.bluenote.com/kandace-springs-releases-black-orchid-ep/",
+     "https://www.bluenote.com/kandace-springs-daryl-hall-john-oates/",
+     "https://www.discogs.com/release/12919209-Kandace-Springs-Indigo",
+     "https://music.apple.com/us/album/indigo/1414681591",
+     "https://musicbrainz.org/release-group/db2101b1-0477-4305-84fc-e77bae9913e3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/87/ad/aa87ad5f-d5c0-6ff7-c45b-222890f9ff28/mzaf_2739560770618454724.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1414681591",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "_BY.ALEXANDER",
+   "album": "000 CHANNEL BLACK",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5c6fb4ce-7bf5-4818-b5e3-df0f3f927459。`release-group?inc=artist-credits+genres+tags`：title 逐字「000 CHANNEL BLACK」、**artist-credit 一個成分，credited-name 逐字 `_BY.ALEXANDER`、底層 artist 實體逐字 `Alex da Kid`（0d40af7f-…，Person／GB）**、first-release-date 2020-08-27、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條的第二種組合已跑）：**轄下只有 1 筆 release** dc0d7e17（2020-08-27，country 欄逐字 `AF`，Digital Media 11 軌 45 分，barcode 602435091563，catalog-number 欄空，label-info 逐字 `Blue Note [713c4a95]`）。**MB 未建 2024 年的 Blue Note 黑膠 3509156。**",
+    "rgMbid": "5c6fb4ce-7bf5-4818-b5e3-df0f3f927459",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5c6fb4ce-7bf5-4818-b5e3-df0f3f927459/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 95383,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "客座名單上有時尚人物、有模特兒，也有一位詩人。三個人分別是 Michèle Lamy、Irina Shayk 與 Charles Bukowski，各佔一軌，〈TRUMPETS〉另外找來 070 Shake。十一軌掛名 _BY.ALEXANDER，底下是英國製作人 Alex da Kid，2020 年 8 月 27 日以數位形式問世，出自他自營的廠牌，交由 Blue Note 發行，全長約四十四分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/5c6fb4ce-7bf5-4818-b5e3-df0f3f927459",
+     "https://music.apple.com/us/album/000-channel-black/1528271227",
+     "https://www.discogs.com/release/32272356-_byALEXANDER-000-CHANNEL-BLACK",
+     "https://music.apple.com/us/album/trumpets-feat-070-shake-single/1525818189",
+     "https://www.discogs.com/release/32972946-_byALEXANDER-000-Channel-Black-"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/61/17/2c6117ff-0ce1-7ba0-5b0a-3fe4e6d993b4/mzaf_69113334972059271.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1528271227",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joel Ross",
+   "album": "Who Are You?",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 225706eb-e6af-4574-a1f2-7298aa661cdf。`release-group?inc=artist-credits+genres+tags`：title 逐字「Who Are You?」（**帶問號**）、artist-credit 單一 `Joel Ross`（artist 6d09039b，Person／US，disambiguation 逐字 `US vibraphonist`）、first-release-date 2020-10-23、primary-type Album、secondary-types 逐字空陣列、genres `jazz:2`、tags `jazz`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 2 筆——c21b8c9f（2020-10-23 XE CD，15 軌 70 分，barcode 602507127497，catalog-number 逐字 `00602507127497`）與 ef0d0334（2020-10-23 XW Digital Media，15 軌 70 分，barcode 00602507127466），**兩筆 label-info 逐字皆 `Blue Note [713c4a95]`**。**MB 未建美版 CD B003222702 與美版黑膠 B0032228-01。**",
+    "rgMbid": "225706eb-e6af-4574-a1f2-7298aa661cdf",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/225706eb-e6af-4574-a1f2-7298aa661cdf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12511,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名是一個問號，他要答的是這支團長成了什麼樣子。那支團叫 Good Vibes，是他轉學到 New School 之後組起來的，Immanuel Wilkins 吹中音薩克斯風。Joel Ross 2020 年 10 月 23 日發行的《Who Are You?》是第二張，與 Walter Smith III 共同製作，十五軌刻意分成兩半，前七軌鋪設場景與人物，後八軌是情節轉折。他給的註腳是整支團成熟的結果。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/16150240-Joel-Ross-3-Who-Are-You",
+     "https://www.bluenote.com/joel-ross-who-are-you-out-oct-23/",
+     "https://www.bluenote.com/artist/joel-ross/",
+     "https://musicbrainz.org/release-group/225706eb-e6af-4574-a1f2-7298aa661cdf"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7d/42/08/7d420835-efcf-f92a-ef13-e04790f2757e/mzaf_9377670076882774284.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1528266505",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kandace Springs",
+   "album": "The Women Who Raised Me",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 778eb3a5-184c-44b8-920e-72cd3eb06ea8。`release-group?inc=artist-credits+genres+tags`：title 逐字「The Women Who Raised Me」、artist-credit 單一 `Kandace Springs`（03c36fe6，Person／US）、first-release-date 2020-03-27、primary-type Album、**secondary-types 逐字空陣列**、genres `jazz:1`、tags `jazz`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 3 筆，全部 12 軌 53 分——3227545b（2020-03-27 XW Digital Media，barcode 0602508626692，**label-info 逐字 `Blue Note Records [d3865f1e]`＝控股實體**）／a5698104（2020-03-27 US CD，catalog-number 逐字 `B00316902`，barcode 欄空，`Blue Note [713c4a95]`）／f267f3de（2020-03-27 US Digital Media，`Blue Note [713c4a95]`）。**MB 未建歐版 CD、日本盤 UCCQ-1118 與兩款黑膠。**",
+    "rgMbid": "778eb3a5-184c-44b8-920e-72cd3eb06ea8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/778eb3a5-184c-44b8-920e-72cd3eb06ea8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 16962,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首全是別人的歌，班底卻是照著原唱者挑來的。吉他 Steve Cardenas 來自 Norah Jones 的團，貝斯 Scott Colley 跟過 Carmen McRae，鼓手 Clarence Penn 跟過 Diana Krall。十二軌都是她 2019 年自己重新唱一次的版本，2020 年 3 月 27 日由 Blue Note 發行，Norah Jones 本人也來了，在〈Angel Eyes〉裡合唱並彈琴。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15005394-Kandace-Springs-The-Women-Who-Raised-Me",
+     "https://www.bluenote.com/kandace-springs-announces-new-album-the-women-who-raised-me-out-mar-27-1st-single-pearls-out-now/",
+     "https://www.bluenote.com/kandace-springs-shares-new-single-video-for-solitude-in-tribute-to-carmen-mccrae/",
+     "https://www.universal-music.co.jp/kandace-springs/products/uccq-1118/",
+     "https://musicbrainz.org/release-group/778eb3a5-184c-44b8-920e-72cd3eb06ea8"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/70/f8/de/70f8deb0-35cc-1226-b5e8-121f63d5ce43/mzaf_13130701331601369538.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1494215118",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "R+R=NOW",
+   "album": "R+R=NOW Live",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 784dccdb-76f3-4ecc-bfe8-c016fef81d10。`release-group?inc=artist-credits+genres+tags`：title 逐字「R+R=NOW Live」、artist-credit 單一 Group 實體 `R+R=NOW`（88e39d68，Group／US，**與 c-169 b《Collagically Speaking》釘的是同一個實體**）、first-release-date 2021-02-12、primary-type Album、**secondary-types 逐字空陣列（漏標，見 risk）**、genres `contemporary jazz:2`／`hip hop:1`／`jazz:1`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 2 筆——29311337（2021-02-12 US CD，7 軌 72 分，catalog-number 逐字 `B003327402`，barcode 602435461625）與 60c6c9e5（2021-02-12 US Digital Media，7 軌 72 分，barcode 欄空），**兩筆 label-info 逐字皆 `Blue Note [713c4a95]`**。**MB 未建歐版 CD、日本盤 UCCQ-1132 與兩款黑膠。**",
+    "rgMbid": "784dccdb-76f3-4ecc-bfe8-c016fef81d10",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/784dccdb-76f3-4ecc-bfe8-c016fef81d10/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6061,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "紐約 Blue Note 俱樂部駐演的一個月裡，有一首曲子被推到二十五分鐘。那是末軌〈Resting Warrior〉，二十五分二十一秒。駐演在 2018 年 10 月，Robert Glasper 這支六人團上了其中數晚，錄下來的現場在 2021 年 2 月 12 日發行，七軌合計約七十二分鐘；其中三首原本收在 2018 年的錄音室首作《Collagically Speaking》，在台上被拉成另一個樣子。",
+    "sourceUrls": [
+     "https://www.bluenote.com/rrnow-to-release-live-album/",
+     "https://www.discogs.com/release/17547175-RRNOW-Live",
+     "https://www.universal-music.co.jp/rrnow/products/uccq-1132/",
+     "https://musicbrainz.org/release-group/784dccdb-76f3-4ecc-bfe8-c016fef81d10"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/49/ce/07/49ce07c6-53de-777f-9b34-aef1f2cab797/mzaf_9236890612802091989.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1548059327",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joel Ross",
+   "album": "The Parable of the Poet",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 785d3b72-d1c7-4de2-bde4-c094f3675e91。`release-group?inc=artist-credits+genres+tags`：title 逐字「The Parable of the Poet」、artist-credit 單一 `Joel Ross`（6d09039b，Person／US）、first-release-date 2022-04-15、primary-type Album、secondary-types 逐字空陣列、genres `jazz:3`／`post-bop:1`、tags 另含 `jazzthing.de`／`ph_temp_checken`（**雜誌與維護標記，不是曲風**）。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 5 筆，全部 7 軌 51 分、label-info 逐字 `Blue Note [713c4a95]`——23f83f73（2022-04-15 US CD，`B003467502`，barcode 602438918188）／efe8e061（2022-04-15 XE CD，`00602438918188`）／099a8837・510720cf・afc01857（XW 數位，barcode 602445522293／602438918171／602438918157）。**MB 未建三款黑膠與試壓盤。**",
+    "rgMbid": "785d3b72-d1c7-4de2-bde4-c094f3675e91",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/785d3b72-d1c7-4de2-bde4-c094f3675e91/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 28695,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "幾乎原封不動的即興被寫成譜，再交給八個人重新演一次。那些即興最早可追到 2017 年他與薩克斯風手 Sergio Tabanico 的創作聚會，先錄下來，再回頭寫成譜，盡量不動和聲。八人編制取名 Parables 樂團，2022 年 4 月 15 日發行的第三張是一首七樂章組曲，七軌約五十一分鐘，除〈PRAYER〉外的六個樂章都由他與團員共同掛名，每一個樂章各對應他自己的一次情緒決定或經驗。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/22989956-Joel-Ross-3-The-Parable-Of-The-Poet",
+     "https://www.bluenote.com/vibraphonist-joel-ross-returns-with-the-parable-of-the-poet/",
+     "https://www.bluenote.com/vibraphonist-joel-ross-unveils-new-single-doxology-hope/",
+     "https://www.discogs.com/release/23301974-Joel-Ross-3-The-Parable-Of-The-Poet",
+     "https://musicbrainz.org/release-group/785d3b72-d1c7-4de2-bde4-c094f3675e91"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/c5/e0/63c5e0cb-cdd2-e238-780d-778440d9b394/mzaf_3554208730935597341.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1607017410",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joel Ross",
+   "album": "nublues",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 80bf36ec-d228-4bc3-8550-d523471024f6。`release-group?inc=artist-credits+genres+tags`：title 逐字「nublues」（全小寫）、artist-credit 單一 `Joel Ross`（6d09039b，Person／US，disambiguation 逐字 `US vibraphonist`）、first-release-date 2024-02-09、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆逐字空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條第二種組合已跑）：轄下 2 筆，皆 10 軌 68 分、label-info 逐字 `Blue Note [713c4a95]`——609c8252（2024-02-09 XW CD，catalog-number 逐字 `5837662`，**barcode 欄整格空**）與 92f5c4e0（2024-02-09 XW Digital Media，barcode 欄亦空）。**MB 未建兩款黑膠與法國宣傳盤；且因兩筆都沒有 barcode，第一種（barcode 反查）查法在本張完全跑不起來。**",
+    "rgMbid": "80bf36ec-d228-4bc3-8550-d523471024f6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/80bf36ec-d228-4bc3-8550-d523471024f6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 20220,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "演出停擺的那段時間，他回學校把學位唸完，一門課重寫了藍調的定義。開課的是中音薩克斯風手 Darius Jones，主題是藍調的歷史；上完那門課他改口說，藍調不只是十二小節的形式，而是一種感覺、一種精神或能量。2024 年 2 月 9 日由 Blue Note 發行的第四張專輯共十軌，其中三首取自 John Coltrane 與 Thelonious Monk，曲名一律小寫，慢板與藍調語彙撐起整支五重奏。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/29869387-Joel-Ross-3-Nublues",
+     "https://www.bluenote.com/joel-ross-announces-ballads-blues-album-nublues/",
+     "https://www.bluenote.com/joel-ross-shares-new-single-bach-god-the-father-in-eternity/",
+     "https://musicbrainz.org/release-group/80bf36ec-d228-4bc3-8550-d523471024f6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/d0/ec/27d0ec00-d0c6-ac2e-a51c-ac466e5c06e7/mzaf_16621746642438103029.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1718894439",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Out Of/Into",
+   "album": "Motion I",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5f487b0c-82b4-4d4b-b9e1-8b22e0b3c596。`release-group?inc=artist-credits+genres+tags`：title 逐字「Motion I」、**artist-credit 單一成分，credited-name 與 artist.name 逐字都是 `Out Of/Into`（897b9986，type Group，country 欄 null）**、first-release-date 2024-12-06、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條第二種組合已跑，仍然只有一筆）：ea26d0ab（2024-12-06，country 欄空，Digital Media 7 軌 46 分，**barcode 與 catalog-number 兩欄皆空**，label-info 逐字 `Blue Note [713c4a95]`）。**MB 未建 CD、兩款黑膠、日本盤 UCCQ-1215 與宣傳盤。**",
+    "rgMbid": "5f487b0c-82b4-4d4b-b9e1-8b22e0b3c596",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5f487b0c-82b4-4d4b-b9e1-8b22e0b3c596/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3389,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鼓手 Kendrick Scott 說，團名講的是廠牌那個故事的演進，也是他們聲音的演進。這支五人團原本就叫 Blue Note Quintet，是 2024 年為廠牌八十五週年組起來的，後來才改名 Out Of/Into。同年 12 月 6 日發行的七軌全部出自團員之手，音樂總監是鋼琴手 Gerald Clayton；五個同世代的領班平起平坐，鋼琴與顫音琴互相讓位，段落推進靠整團一起轉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/32557383-Out-Of-Into-Motion-I",
+     "https://www.bluenote.com/announcing-motion-i-by-out-of-into/",
+     "https://www.bluenote.com/artist/out-of-into/",
+     "https://www.discogs.com/release/32758233-Out-Of-Into-Motion-I",
+     "https://www.bluenote.com/out-of-into-new-single-gabaldons-glide/",
+     "https://music.apple.com/us/album/motion-i-feat-gerald-clayton-immanuel-wilkins-joel/1772812035",
+     "https://musicbrainz.org/release-group/5f487b0c-82b4-4d4b-b9e1-8b22e0b3c596"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/9d/ac/4f9daced-ee2b-8447-212c-e97fc60ac93a/mzaf_1827086273041669673.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1772812035",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Maya Delilah",
+   "album": "The Long Way Round",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a8e4489d-27dd-4ba1-a55c-987f174d137b。`release-group?inc=artist-credits+genres+tags`：title 逐字「The Long Way Round」、artist-credit 單一 `Maya Delilah`（6b0d2727，Person，country 欄 null）、first-release-date 2025-03-28、primary-type Album、secondary-types 逐字空陣列、**genres 逐字空陣列、tags 只有 `alternative`**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 3 筆，label-info 逐字皆 `Blue Note [713c4a95]`——0485085a（date 欄逐字只有 `2025`，XW CD 12 軌 45 分，barcode 602475450795，**status 欄逐字 null**）／791b8fa3（2025-03-28 XW Digital Media，12 軌 45 分，barcode 602475808909，status Official）／**aafd777d（2026-01-09 XW Digital Media，16 軌 60 分＝Deluxe，本卡刻意不釘）**。**三筆的 catalog-number 欄全空；MB 未建日本盤 UCCQ-1216、兩款黑膠與宣傳盤。**",
+    "rgMbid": "a8e4489d-27dd-4ba1-a55c-987f174d137b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a8e4489d-27dd-4ba1-a55c-987f174d137b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11480,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封城砍掉了接案的工作，她盤腿坐在地板上，對著手機彈吉他。這位倫敦北區出身、唸過 BRIT School 的歌手兼吉他手就此轉去做直播與 TikTok，靠素樸的影片累積出聽眾；2022 年她替《Blue Note Re:imagined II》重唱一曲，與廠牌的關係由此開始。2025 年 3 月 28 日，十二軌的首張完整專輯由 Blue Note 發行，以吉他為核心的靈魂流行樂，底下混著鄉村與藍調的紋理。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/33619413-Maya-Delilah-The-Long-Way-Round",
+     "https://www.bluenote.com/artist/maya-delilah/",
+     "https://www.bluenote.com/maya-delilah-announces-debut-album-the-long-way-round/",
+     "https://www.bluenote.com/maya-maya-maya-new-single-by-maya-delilah-out-now/",
+     "https://www.bluenote.com/maya-delilah-releases-debut-album-the-long-way-round/",
+     "https://www.universal-music.co.jp/maya-delilah/products/uccq-1216/",
+     "https://musicbrainz.org/release-group/a8e4489d-27dd-4ba1-a55c-987f174d137b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/66/68/a7666802-157c-a357-c61a-d53a32fff479/mzaf_13052319650372325958.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1792968883",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nate Mercereau, Josh Johnson & Carlos Niño",
+   "album": "Openness Trio",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1df797df-d373-42da-9b53-187e44a72ba5。`release-group?inc=artist-credits+genres+tags`：title 逐字「Openness Trio」、**artist-credit 三個成分**——`Nate Mercereau`（900efa6c，Person，disambiguation 逐字 `US guitarist and songwriter`）＋joinphrase 逐字 `, `、`Josh Johnson`（37b60764，Person／US）＋joinphrase 逐字 ` & `、`Carlos Niño`（f6e8d274，Person／US，disambiguation 逐字 `Californian music producer, percussionist, and composer`）——first-release-date 2025-07-11、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條第二種組合已跑）：**轄下只有 1 筆** c1eadda4（2025-07-11 XW Digital Media，5 軌 37 分 59 秒，barcode 0602475821403，**catalog-number 欄逐字 `[none]`**，label-info 逐字 `Blue Note [713c4a95]`，release 層 artist-credit 逐字 `Nate Mercereau, Josh Johnson & Carlos Niño`）。**MB 未建實體 CD 與兩款黑膠。**",
+    "rgMbid": "1df797df-d373-42da-9b53-187e44a72ba5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1df797df-d373-42da-9b53-187e44a72ba5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 323,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=323，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五首曲子錄在五個不同的戶外：橡樹下、果園裡、院子中，還有一棵胡椒樹。五個場次散在洛杉磯與 Ventura 郡，果園是 Ojai 一處被稱作橡樹教堂的地方，胡椒樹長在 Topanga Canyon。三人分別是吉他手 Nate Mercereau、薩克斯風手 Josh Johnson 與打擊樂手 Carlos Niño，Niño 那一份裡有鈸、貝殼、鑼、植物的聲音與呼吸聲。五軌在 2025 年 7 月 11 日由 Blue Note 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/34564816-Nate-Mercereau-Josh-Johnson-13-Carlos-Ni%C3%B1o-Openness-Trio",
+     "https://www.bluenote.com/nate-mercereau-josh-johnson-carlos-nino-openness-trio/",
+     "https://www.bluenote.com/nate-mercereau-josh-johnson-carlos-nino-share-new-single-openness/",
+     "https://musicbrainz.org/release-group/1df797df-d373-42da-9b53-187e44a72ba5",
+     "https://music.apple.com/us/album/openness-trio/1809012204"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/02/e1/1e/02e11e37-d83d-abf1-55f8-e7d3490d8851/mzaf_5090509609939317434.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1809012204",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Out Of/Into",
+   "album": "Motion II",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a58f8f86-6edf-43e4-bd3c-11bfc4a68eaa。`release-group?inc=artist-credits+genres+tags`：title 逐字「Motion II」、artist-credit 單一 Group 實體 `Out Of/Into`（897b9986，**與《Motion I》同一個實體**）、first-release-date 2025-12-05、primary-type Album、secondary-types 逐字空陣列、**genres 逐字空陣列**、tags 逐字 `jazzthing 162`／`ph_temp_checken`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：**轄下只有 1 筆** 29453d20（2025-12-05 XW Digital Media，6 軌 40 分，barcode 602478346248，catalog-number 欄空，label-info 逐字 `Blue Note [713c4a95]`）。**MB 未建實體 CD 00602478346217 與兩款黑膠。**",
+    "rgMbid": "a58f8f86-6edf-43e4-bd3c-11bfc4a68eaa",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a58f8f86-6edf-43e4-bd3c-11bfc4a68eaa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3157,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "近四十場巡演把六首曲子磨出形狀，最後才在洛杉磯的錄音室錄下來。那間錄音室是 EastWest Studios，那趟路是廠牌八十五週年的巡演；中音薩克斯風手 Immanuel Wilkins 說，在路上待這麼久，能把手伸得越遠越好。這是這支五人團繼 2024 年《Motion I》之後的第二張，2025 年 12 月 5 日發行，六軌約三十九分鐘全是團員原創，Gerald Clayton 寫了其中三首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/35975692-Out-Of-Into-Motion-II",
+     "https://www.bluenote.com/out-of-into-to-release-motion-ii/",
+     "https://www.bluenote.com/out-of-into-share-new-single-familiar-route/",
+     "https://music.apple.com/us/album/motion-ii-feat-gerald-clayton-immanuel-wilkins-joel/1840031776",
+     "https://www.discogs.com/release/36156640-Out-Of-Into-Motion-II",
+     "https://musicbrainz.org/release-group/a58f8f86-6edf-43e4-bd3c-11bfc4a68eaa"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b4/58/d5/b458d507-ee72-0205-595d-bfb3244ca616/mzaf_5725995240048777297.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1840031776",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Paul Cornish",
+   "album": "You're Exaggerating!",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9caf6f3b-df86-42ad-bb4b-0429b4ffc3e2。`release-group?inc=artist-credits+genres+tags`：**title 逐字「You’re Exaggerating!」（U+2019；本卡的 `album` 欄已正規化成 ASCII 撇號，見 risk）**、artist-credit 單一 `Paul Cornish`（104721c5，Person／US）、first-release-date 2025-08-22、primary-type Album、secondary-types 逐字空陣列、genres `instrumental jazz:1`／`jazz:1`、tags 另含 `jazzthing 160`／`jazzthing.de`／`ph_temp_checken`（雜誌與維護標記）。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 2 筆，皆 9 軌 42 分、label-info 逐字 `Blue Note [713c4a95]`——2f716156（2025-08-22 US CD，catalog-number 逐字 `602475855149`，barcode 602475855149）與 fe46e7d7（2025-08-22 XW Digital Media，barcode 602475855187）。**MB 未建歐版 CD 與美版黑膠。**",
+    "rgMbid": "9caf6f3b-df86-42ad-bb4b-0429b4ffc3e2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9caf6f3b-df86-42ad-bb4b-0429b4ffc3e2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 35,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=35，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第八軌獻給 Geri Allen，附帶一個提問：這個音樂裡最被忽略的頭腦是誰。他自己給的答案是女性，那一軌叫〈Queen Geri〉；談起這位已故的前輩，他說她會把更冒險的精神帶進比較傳統的場合，反過來也一樣。2025 年 8 月 22 日由 Blue Note 發行的九軌，是鋼琴手 Paul Cornish 的廠牌首作，編制是鋼琴三重奏，句子長、和聲密，吉他手 Jeff Parker 客座一軌，切進來打破對稱。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/35508061-Paul-Cornish-Youre-Exaggerating",
+     "https://www.bluenote.com/paul-cornish-shares-new-single-palindrome-featuring-jeff-parker/",
+     "https://www.bluenote.com/artist/paul-cornish/",
+     "https://www.bluenote.com/paul-cornish-pays-tribute-to-geri-allen-with-new-single-queen-geri/",
+     "https://www.discogs.com/release/34904078-Paul-Cornish-Youre-Exaggerating",
+     "https://music.apple.com/us/album/youre-exaggerating/1817728467",
+     "https://musicbrainz.org/release-group/9caf6f3b-df86-42ad-bb4b-0429b4ffc3e2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/61/40/fd61408e-e552-714d-3c1a-9571ca1461b0/mzaf_16566136531409663417.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1817728467",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "FATHERS",
+   "album": "FATHERS",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 458ef48c-0ccb-4fb8-9d34-b8fdf0edbfe7（**依 c-167 b 第 2024 條指定**）。`release-group?inc=artist-credits+genres+tags`：title 逐字「FATHERS」（全大寫）、artist-credit 單一 Group 實體 `FATHERS`（8bda4e58-1876-4f99-939c-362e57f7c04e，type Group，country 欄 null，**disambiguation 逐字 `Nate Smith, Kiefer, CARRTOONS & Kenny Beats`**）、first-release-date 2026-07-10、primary-type Album、secondary-types 逐字空陣列、**genres 與 tags 皆空陣列**。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`（第 642 條第二種組合已跑）：**轄下只有 1 筆** e7d2891e（2026-07-10，country 欄空，Digital Media 8 軌，**barcode 與 catalog-number 兩欄皆空**，label-info 逐字 `Blue Note [713c4a95]`）。逐軌 length 逐字：EYE LEVEL 189173／PATCHWORK 158107／PEARL 231067／STUB 163707／THE LEAK 257587／TOMORROW, AGAIN 132387／FRONT YARD 230853／FIGURE 8 273907 ms，**合計 1,636,788 ms＝27 分 17 秒**。⚠ **刻意不釘的重複 RG：`6391b52e-fa14-4a9a-88d8-0e51d9b65244`（MB 把本碟建成 `Nate Smith` 的個人作、盤名寫成 `Fathers`），已由 c-167 b 第 2024 條退件。** MB 未建歐版 CD 00199957415965 與兩款黑膠。",
+    "selfTitledVerified": true,
+    "rgMbid": "458ef48c-0ccb-4fb8-9d34-b8fdf0edbfe7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/458ef48c-0ccb-4fb8-9d34-b8fdf0edbfe7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 129,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=129，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個平常在幕後做製作的人組了一支團，八首歌，二十七分鐘。四個人是製作人 Kenny Beats、鍵盤手 Kiefer、貝斯手 CARRTOONS 與鼓手 Nate Smith，各自既是演奏者也是製作人，曲子全部由四人共同作曲。同名首作在 2026 年 7 月 10 日由 Blue Note 發行，先行單曲〈PEARL〉6 月 17 日隨團體消息一起釋出，廠牌形容那首像一張失落的巴西流行爵士唱片被打上現代的光澤。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/37859667-Fathers-6-Fathers",
+     "https://www.bluenote.com/introducing-fathers-featuring-kenny-beats-kiefer-carrtoons-nate-smith/",
+     "https://en.wikipedia.org/wiki/Ventura_(Anderson_.Paak_album)",
+     "https://en.wikipedia.org/wiki/Nate_Smith_(drummer)",
+     "https://musicbrainz.org/release-group/458ef48c-0ccb-4fb8-9d34-b8fdf0edbfe7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/95/31/5b95319f-ff7f-f330-2e51-211e28b1ff0f/mzaf_976646995684736818.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "6779502137",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joel Ross",
+   "album": "Gospel Music",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f1e43e36-2209-41f4-9897-cf2fef11da83。`release-group?inc=artist-credits+genres+tags`：title 逐字「Gospel Music」、artist-credit 單一 `Joel Ross`（6d09039b，Person／US，disambiguation 逐字 `US vibraphonist`）、first-release-date 2026-01-30、primary-type Album、secondary-types 逐字空陣列、genres `instrumental jazz:1`／`jazz:2`／`post-bop:1`、tags 另含 `jazzthing 162`。`release?release-group=<id>&inc=media+labels+recordings+artist-credits&limit=100`：轄下 2 筆，皆 17 軌 78 分、label-info 逐字 `Blue Note [713c4a95]`、**catalog-number 欄皆空**——0c2567be（2026-01-30 XW Digital Media，barcode 602488058322）與 f66ff9e7（2026-01-30 CD，country 欄空，barcode 602488058292）。**MB 未建兩款黑膠與 FLAC 版。**",
+    "rgMbid": "f1e43e36-2209-41f4-9897-cf2fef11da83",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f1e43e36-2209-41f4-9897-cf2fef11da83/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3855,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十七首依序走過創造、墮落與救贖，內頁印著每一首對應的經文。他把這張做成對聖經故事的一次詮釋，也是對自己信仰的探索，曲名多半直接取自神學語彙，例如〈Calvary〉。2026 年 1 月 30 日由 Blue Note 發行的第五張專輯長約七十八分鐘，樂團在這張是六重奏，Josh Johnson 與 Maria Grand 兩支薩克斯風並置，他自己除顫音琴外還彈鐘琴，開場曲題獻給 Barry Harris。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/36507067-Joel-Ross-3-Gospel-Music",
+     "https://www.bluenote.com/joel-ross-delivers-a-message-of-hope-love-on-his-new-album-gospel-music/",
+     "https://www.bluenote.com/joel-ross-shares-new-single-be-patient/",
+     "https://musicbrainz.org/release-group/f1e43e36-2209-41f4-9897-cf2fef11da83",
+     "https://music.apple.com/us/album/gospel-music/1853728278"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/0f/df/ab0fdf1a-16c2-b368-1a5b-9d63e523acd0/mzaf_1026513466153956148.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1853728278",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

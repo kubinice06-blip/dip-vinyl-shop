@@ -1,0 +1,238 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-04-add-shop-pending",
+ "batchNote": "店內販售區（data/shop/inventory.json pending_card）3 張。雲端段完成：身分、封面、試聽配對（Apple 兩張 ready）、研究／hook／寫作、prepare gate；本機段：listeners、試聽覆核、KV／Firestore／seed 寫入與 published gate。",
+ "albums": [
+  {
+   "artist": "Elmo Hope",
+   "album": "Hope Meets Foster",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5ad91c4b-635d-4bf7-8d22-69102e6e30c1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 年份：MB RG first-release-date 與英文維基都寫 1955，但 1955 是錄音年（10 月 4 日）。Discogs 原版 PRLP 7021（release 6386994）與 master 582202 寫 1956；jazzdisco Prestige 7000 系列表列 PRLP 7021 為 1956，同表 PRLP 7018 錄於 1955-11-25、PRLP 7020 錄於 1955-12-02，皆列 1956，7021 不可能早於它們。依 ONBOARDING「年份取原盤首發」取 1956，MB 的 1955 是錯的，rgMbid 不受影響。⚠ 掛名：MB credit「Elmo Hope Quartet and Elmo Hope Quintet feat. Frank Foster」，店主表寫「Elmo Hope Quartet and Quintet」；依 c-135 第 363 條與池中先例（`Elmo Hope Quintet, Volume 2` 收攏為 `Elmo Hope`）掛 `Elmo Hope`，編制與 Foster 進 queryAlias，不新造字串。池中 Frank Foster 另有《Manhattan Fever》《Shiny Stockings》等卡，本盤封面主名是 Hope，Foster 為 featuring，不掛合名。⚠ 同一 RG 內另收一筆 1956 release 題「Wail Frank Wail」掛 Frank Foster（Discogs 13858978：同編號 PRLP 7021 的少見紅封面替代版，強調 Foster），同曲目同曲序，是同一張唱片的另一個封面，不是另一張碟，不另建卡。⚠ 店主表未登錄壓片年份與版本，本卡只釘作品身分，不釘店內那一張實體。⚠ MB 另一筆 release（a636f57c，1991 OJCCD-1703-2）是 CD 再版。CAA 有圖。Apple 是否有本盤待本機試聽配對。｜queryAlias：Elmo Hope Quartet and Quintet；Elmo Hope Quartet and Quintet featuring Frank Foster；Elmo Hope and Frank Foster；Wail Frank Wail"
+   },
+   "research": {
+    "suggestedYear": 1956,
+    "yearNote": "MB／英文維基 1955 是錄音年（1955-10-04）；Discogs 原版、master 與 jazzdisco 皆 1956，取 1956（研究層裁定，可逆）。"
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5ad91c4b-635d-4bf7-8d22-69102e6e30c1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "note": "CAA front-250 實抓 200，主線目視：藍色石版畫風封面、印「HOPE meets FOSTER」「elmo hope quartet and quintet」「Prestige LP 7021」。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "note": "listeners 待本機。對照池中同藝人：《Homecoming!》3/4/2、《Elmo Hope Trio》4/4/2；本盤 AllMusic 評語屬「bop 樂迷會滿意」的中段 → classic 3；Prestige 單聲道、OJC 再版仍在收藏圈 → obscurity 4；標準 hard bop → accessibility 2。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一場錄音分成兩種編制：四重奏錄三首，小號加入後的五重奏再錄三首。1955 年 10 月 4 日，Elmo Hope 的鋼琴與 Frank Foster 的次中音薩克斯風在 Van Gelder 錄音室撐起全場，小號則出自 Freeman Lee。Foster 獨力寫了三首，〈Zarou〉則與 Hope 合寫。唱片編號 Prestige PRLP 7021，錄完隔年才在 1956 年上市；同一編號另有一版少見的紅色封面，題名改成《Wail Frank Wail》。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6386994",
+     "https://www.jazzdisco.org/prestige-records/catalog-7000-series/",
+     "https://en.wikipedia.org/wiki/Hope%20Meets%20Foster",
+     "https://en.wikipedia.org/wiki/Frank%20Foster%20(jazz%20musician)",
+     "https://en.wikipedia.org/wiki/Elmo%20Hope",
+     "https://www.discogs.com/release/13858978",
+     "https://musicbrainz.org/release-group/5ad91c4b-635d-4bf7-8d22-69102e6e30c1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d9/89/87/d98987a0-3481-a8bf-ea5c-738da5f1eedf/mzaf_18007705726698061649.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "appleCollectionId": "642094766",
+    "storefront": "JP",
+    "note": "Apple jp 642094766（2013 Smith & Co. 再發）6 軌曲名與曲長逐軌對上 PRLP 7021；同店另有 6786111687 等同內容版本。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elmo Hope",
+   "album": "High Hope!",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "93100622-a970-4ac2-83f0-56a93b2e1918",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 年份未定：MB first-release-date 1961、Discogs master 703689 與原版 release 5680558 寫 1961、英文維基 Elmo Hope 條目盤單與內文寫 1961，但英文維基 High Hope! 條目資訊框寫 released 1962、recorded 1961。取三源一致的 1961；若本機找到 Beacon 1962 的實證再改，可逆。⚠ 掛名：MB credit 是群組實體「Elmo Hope Trio」，池中已有 `Elmo Hope`《Elmo Hope Trio》（1960，RG e860d63a，Hifijazz 那張，Jimmy Bond／Frank Butler）——掛名「Elmo Hope」，不新造 `Elmo Hope Trio` 字串；兩張同藝人、盤名不同（《Elmo Hope Trio》是自我同名風格的盤名，本盤是《High Hope!》），不是撞卡。⚠ 曲名版本差異：Discogs 原版標 A2〈Hot Sauce〉，V.S.O.P. 再版與維基寫〈Happy Hour〉（時間皆約 3 分半至 4 分，A2 與 Here's Hope!〈Hot Sauce〉疑為同曲異題，本卡不採信曲名下結論），寫作層只用〈Chips〉〈Moe's Bluff〉〈Mo Is On〉〈Maybe So〉〈Crazy〉。⚠ 編制：全盤不是單一三重奏——兩面不同的貝斯與鼓。⚠ 店主表未登錄壓片年份，只釘作品身分。CAA 有圖。Apple 是否有本盤待本機試聽配對。｜queryAlias：Elmo Hope Trio；Elmo Hope Trio High Hope；High Hope"
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": "MB／Discogs／維基盤單 1961；英文維基專頁資訊框 released 1962，取 1961（可逆，待本機補證）。"
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/93100622-a970-4ac2-83f0-56a93b2e1918/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "note": "CAA front-250 實抓 200，主線目視：Hope 坐鋼琴前的照片、印「HIGH HOPE!」「BEACON JAZZ SERIES」與 A/B 面兩組節奏組名單。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "note": "listeners 待本機。小廠 Beacon 單一版本、日本再版限量 → obscurity 4；Yanow 評價高但流通窄，比照《Homecoming!》→ classic 3；全自作 hard bop 三重奏 → accessibility 2。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A 面與 B 面換了整組節奏組，坐在鋼琴前的始終是同一個人。領銜的 Elmo Hope 在 A 面搭 Paul Chambers 與 Philly Joe Jones，翻面換成 Butch Warren 與 Granville T. Hogan。六首全是 Hope 自作，如〈Chips〉〈Crazy〉。1961 年 1 月的《Down Beat》專訪裡，他抱怨洛杉磯缺好樂手與演出場地；同年稍後搬回紐約，這張就錄於紐約，Beacon 以 LP 401 在 1961 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5680558",
+     "https://en.wikipedia.org/wiki/High%20Hope!",
+     "https://www.discogs.com/release/3675000",
+     "https://musicbrainz.org/release-group/173ebe91-f70b-4323-9db7-76dcd59a75c4",
+     "https://en.wikipedia.org/wiki/Elmo%20Hope",
+     "https://www.discogs.com/master/703689",
+     "https://musicbrainz.org/release-group/93100622-a970-4ac2-83f0-56a93b2e1918"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/f7/5b/f6/f75bf644-28f8-4e10-ce03-f85c11c41f43/mzaf_7272115582904331117.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "appleCollectionId": "642032306",
+    "storefront": "JP",
+    "note": "Apple jp 642032306「High Hope - EP」（2013 Smith & Co.）6 軌〈Chips〉〈Moe's Bluff〉〈Happy Hour〉〈Mo Is On〉〈Maybe So〉〈Crazy〉與 Beacon LP 401 逐軌對上；Apple 因總長 26 分標為 EP。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ジョージ大塚トリオ",
+   "album": "You Are My Sunshine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ MB 無此 RG（見 mbNote），走 §1 人工身分，rgMbid 留空、封面不可走 CAA，改走 Discogs 版本級封面（release 4358997 或 24846998，需目錄號 TBM-35／年份 1974／廠牌 Three Blind Mice 三項對上）或 TBM／Think! Records 官方頁，本機逐張看圖。⚠ 掛名裁定：封面與 Discogs 印的是拉丁字 The New George Otsuka Trio，但池中既有ジョージ大塚各編制卡一律用日文「ジョージ大塚＋編制片假名」（c-131 第 354 條：ジョージ大塚クインテット／ジョージ大塚トリオ），日文維基個人條目作品表也把這張列為「ユー・アー・マイ・サンシャイン／ジョージ大塚トリオ 1974年」，TBM 條目列「ジョージ大塚 Trio」。依 c-131 第 358 條（同一位個人多編制 → 池中多數寫法；MB Trio 實體 1a76165d 是英文 George Otsuka Trio），掛 `ジョージ大塚トリオ`，與《Page 1》《Page 2》同字串；「New」不進掛名，The New George Otsuka Trio 進 queryAlias。代價：1967 與 1974 兩個三重奏的樂手不同（Page 系列是市川秀男＋寺川正興），掛名相同；卡片盤名不同不會撞卡，簡介要寫清楚是 1974 年的新版。⚠ 這張在 Apple jp／us 以 ジョージ大塚トリオ 和 ニュー・ジョージ大塚トリオ 搜尋都沒有（只有 Page 1、Page 2、Last Summer／Page 3），試聽預估 unavailable。⚠ 年份：Discogs 原版與 master 1974、日文維基 1974、店主表 1974，一致；1978（TBM-2535，Discogs 標 The Trio）與 1996、2001 是再發。⚠ 曲名：Discogs 標〈Hot Cha〉，未查到其他曲名寫法。｜queryAlias：ジョージ大塚；George Otsuka；George Ohtsuka；George Otsuka Trio；The New George Otsuka Trio；The Trio",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=releasegroup:\"You Are My Sunshine\" AND (artist:otsuka OR artist:大塚) → count=0",
+      "release-group?query=releasegroup:\"You Are My Sunshine\" AND primarytype:album → count=9，無大塚",
+      "release?query=catno:\"TBM-35\" → count=0",
+      "artist?query=artist:\"New George Otsuka\" → count=0",
+      "release-group?artist=1a76165d-5819-4390-9357-ddc47a308064（George Otsuka Trio）→ 3 個 RG：Page 1／Page 2／Last Summer - Page 3",
+      "release-group?artist=60110097-805b-4a8c-a097-86ef56072e10（George Otsuka Quintet）→ 5 個 RG：Physical Structure／Loving You George／Go On'／Sea Breeze／Now's the Time"
+     ],
+     "checkedAt": "2026-10-04",
+     "conclusion": "MB 的 George Otsuka Trio 與 Quintet 兩個實體名下都沒有 You Are My Sunshine，catno TBM-35 與 The New George Otsuka 名義也查無，盤名交叉查 count=0 或不含大塚。六次查詢皆 HTTP 200，非傳輸錯誤。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/548819",
+     "https://www.discogs.com/release/4358997",
+     "https://ja.wikipedia.org/wiki/スリー・ブラインド・マイス"
+    ],
+    "manualRuling": "§1 人工身分：add-20261004-shop 策展層第 8586–8594 條裁定（MB 六次查詢皆無，Discogs master 548819／release 4358997 與日文維基 TBM 目錄互證）；依 CLAUDE.md 裁定權下放由主線核定。",
+    "coverSourceHint": "discogs"
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/odqUzHZkRK0UT2vq3eUE9azBGDs8LeIiSg_FjvQIXi0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNTg5/OTctMTU1ODMwNDc1/NC00MDA0LmpwZWc.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "4358997",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "note": "CAA 不適用（§1 人工）。Discogs release 4358997（TBM-35、1974 JP 原壓）第二張圖：不帶側標的正面，主線目視：彩虹與三人漫畫、上緣印「YOU ARE MY SUNSHINE」「The new GEORGE OTSUKA TRIO ・ tbm-35」、下緣「Featuring Hideo Ichikawa & Nao Miyamoto」。primary 圖帶日本側標，不採。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "note": "listeners 待本機。比照池中《Page 1》《Page 2》《Sea Breeze》皆 3/4/2：TBM 發燒錄音、無串流 → obscurity 4；標準曲三重奏 → accessibility 2。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封面上的團名多了 New 這個字，鋼琴手卻是八年前第一個三重奏的老班底。全名 The New George Otsuka Trio 的這一組，鋼琴手市川秀男在 1966 年 12 月加入鼓手ジョージ大塚的第一個三重奏。1974 年編制已不同，貝斯換成宮本直介，10 月 31 日在東京 Aoi Studio 錄音，製作人藤井武。出版的是以音質見稱的 Three Blind Mice，編號 TBM-35。四首都超過 7 分半，含標題曲與〈Over the Rainbow〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4358997",
+     "https://www.discogs.com/artist/3261502",
+     "https://www.discogs.com/master/548819",
+     "https://ja.wikipedia.org/wiki/%E5%B8%82%E5%B7%9D%E7%A7%80%E7%94%B7",
+     "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E5%A4%A7%E5%A1%9A",
+     "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%96%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%89%E3%83%BB%E3%83%9E%E3%82%A4%E3%82%B9"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-04T16:48:23Z",
+    "note": "Apple jp／us 以大塚與盤名搜尋皆無本盤；YT Music 待本機覆核，查無則維持 unavailable。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

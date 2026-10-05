@@ -128,6 +128,72 @@ export const LINES = {
   c145: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
   c146: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1967–84）', b: 'Blue Note 目錄補齊（1967–84）' } },
   c147: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（§5.6 合輯正典）', b: 'Blue Note 目錄補齊（§5.6 合輯正典）' } },
+  c148: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c149: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c150: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c151: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c152: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c153: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c154: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c155: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c156: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c157: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c158: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c159: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c160: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c161: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c162: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c163: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c164: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c165: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c166: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c167: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  // c168／c169／c170 是列舉層讀錯曲風層級後的補批（第 1557 條），同一條線。c168 只有 a 組。
+  c168: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）' } },
+  c169: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  c170: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  // c171 是藝人軸稽核補批（第 1812-B 條）：MB 的 label-info 沒填或掛錯層級，廠牌軸列舉永遠碰不到的 25 張。
+  c171: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）', b: 'Blue Note 目錄補齊（1985 後）' } },
+  // c172 是本線最後的補遺：列舉失效的第六種（primary-type 未設）與第七種（enum 該列 year 為 null）各一張。
+  c172: { lineType: '深掘', scene: { a: 'Blue Note 目錄補齊（1985 後）' } },
+  // 2026-09-21 店主指示「Jp1 先開 切批次 先做 10 批」。
+  // jp-1 ＝ Victor／JVC、東芝 EMI／Express、日本コロムビア／Better Days／Takt、King／Paddle Wheel。
+  // c-173～c-182 切的是「本土爵士盤、1989 年前」那 408 張，依年份排序平均分批，
+  // 所以每批橫跨四家、scene 用單一字串標年代段，不分 a／b。
+  c173: { lineType: '深掘', scene: '日本爵士四大廠 1958–1969' },
+  c174: { lineType: '深掘', scene: '日本爵士四大廠 1969–1971' },
+  c175: { lineType: '深掘', scene: '日本爵士四大廠 1971–1973' },
+  c176: { lineType: '深掘', scene: '日本爵士四大廠 1973–1977' },
+  c177: { lineType: '深掘', scene: '日本爵士四大廠 1977–1979' },
+  c178: { lineType: '深掘', scene: '日本爵士四大廠 1979–1981' },
+  c179: { lineType: '深掘', scene: '日本爵士四大廠 1981–1982' },
+  c180: { lineType: '深掘', scene: '日本爵士四大廠 1982–1984' },
+  c181: { lineType: '深掘', scene: '日本爵士四大廠 1984–1987' },
+  c182: { lineType: '深掘', scene: '日本爵士四大廠 1987–1989' },
+  // jp-2 線（2026-09-24 起）：四大廠之外的日本爵士獨立廠牌十五家
+  // CBS/Sony・Polydor JP・Alfa・East Wind・Trio／Whynot・Denon・Nippon Crown・Kitty・Union・Frasco
+  // ＋ DOMO・ALM・discomate・URC・KENWOOD（後五家 2026-09-24 才列舉）
+  c183: { lineType: '深掘', scene: '日本爵士獨立廠牌 1966–1972' },
+  c184: { lineType: '深掘', scene: '日本爵士獨立廠牌 1972–1976' },
+  c185: { lineType: '深掘', scene: '日本爵士獨立廠牌 1976–1978' },
+  c186: { lineType: '深掘', scene: '日本爵士獨立廠牌 1978–1979' },
+  c187: { lineType: '深掘', scene: '日本爵士獨立廠牌 1979–1981' },
+  c188: { lineType: '深掘', scene: '日本爵士獨立廠牌 1981–1983' },
+  c189: { lineType: '深掘', scene: '日本爵士獨立廠牌 1983–1985' },
+  c190: { lineType: '深掘', scene: '日本爵士獨立廠牌 1985–1986' },
+  c191: { lineType: '深掘', scene: '日本爵士獨立廠牌 1986–1989' },
+  // 補遺線 hoyi（2026-09-28 起，店主「全開」）：§1 人工身分／兩線之間漏掉的／日本藝人的美國原盤／外國藝人的日本原盤
+  c192: { lineType: '深掘', scene: '日本爵士補遺（§1／跨線／美國原盤）' },
+  c193: { lineType: '深掘', scene: '日本製作的外國爵士 1970–1978' },
+  c194: { lineType: '深掘', scene: '日本製作的外國爵士 1978–1981' },
+  c195: { lineType: '深掘', scene: '日本製作的外國爵士 1981–1985' },
+  c196: { lineType: '深掘', scene: '日本製作的外國爵士 1985–1989' },
+  c197: { lineType: '深掘', scene: '日本製作的外國爵士・重篩（King／Paddle Wheel 紐約製作）' },
+  c198: { lineType: '深掘', scene: '日本製作的外國爵士・重篩第二輪（Paddle Wheel／ProJazz／JVC 美國字標）' },
+  // 店主單張指定（dip-card-create 一句話入口）
+  'add-20261003': { lineType: '廣度', scene: '店主指定：台灣創作女聲' },
+  // CBS/Sony・Polydor JP・Alfa・East Wind・Trio／Whynot・Denon・Nippon Crown・Kitty・Union・Frasco
+  // ＋ DOMO・ALM・discomate・URC・KENWOOD（後五家 2026-09-24 才列舉）
 };
 
 // 給 make-cards-generic 用：查某批某組的類型標示。

@@ -3671,7 +3671,9 @@
     "the orchids",
     "the zombies"
    ],
-   "state": "cut"
+   "state": "published",
+   "reviewFixes": 2,
+   "skipped": []
   },
   {
    "batch": "ar-c-021",
@@ -3722,7 +3724,9 @@
     "ana moura",
     "ananda shankar"
    ],
-   "state": "cut"
+   "state": "published",
+   "reviewFixes": 9,
+   "skipped": []
   },
   {
    "batch": "ar-c-022",
@@ -3772,7 +3776,9 @@
     "miguel bosé",
     "mongo santamaría"
    ],
-   "state": "cut"
+   "state": "published",
+   "reviewFixes": 3,
+   "skipped": []
   },
   {
    "batch": "ar-c-023",
@@ -3823,7 +3829,9 @@
     "akufen",
     "andrew cox"
    ],
-   "state": "cut"
+   "state": "published",
+   "reviewFixes": 0,
+   "skipped": []
   },
   {
    "batch": "ar-c-024",
@@ -3873,7 +3881,9 @@
     "james blake",
     "jamie xx"
    ],
-   "state": "cut"
+   "state": "published",
+   "reviewFixes": 1,
+   "skipped": []
   },
   {
    "batch": "ar-c-025",
@@ -4564,7 +4574,6 @@
     "john scofield",
     "john stevens / trevor watts / barry guy",
     "john taylor",
-    "john wright",
     "johnny coles",
     "johnny dodds",
     "johnny dyani quartet"
@@ -4602,7 +4611,6 @@
     "keith tippett's ark",
     "kellee patterson",
     "ken vandermark",
-    "kenny burrell & john coltrane",
     "kenny clarke & francy boland",
     "kenny dorham & jackie mclean",
     "kenny garrett",
@@ -4750,7 +4758,6 @@
     "ray brown",
     "ray brown trio",
     "ray charles & betty carter",
-    "red garland / ron carter / philly joe jones",
     "richie beirach",
     "rien djamain",
     "riz ortolani",
@@ -4813,7 +4820,6 @@
     "stefano torossi",
     "stefon harris, david sánchez, christian scott",
     "steve beresford",
-    "steve kuhn",
     "steve lacy & michael smith",
     "steve lacy trio",
     "steven halpern",
@@ -6369,8 +6375,7 @@
     "pekinška patka",
     "pērkons",
     "peter frampton",
-    "petrus castrus",
-    "phew"
+    "petrus castrus"
    ],
    "state": "cut"
   },
@@ -7965,7 +7970,6 @@
     "辛曉琪",
     "鄭怡",
     "鄭秀文",
-    "間宮貴子",
     "關正傑",
     "關淑怡",
     "阿杜",
@@ -8416,7 +8420,6 @@
     "caterina barbieri",
     "cecil leuter",
     "charles dodge",
-    "charles webster",
     "chase & status",
     "cheb khaled & safy boutella",
     "chez damier",
@@ -8864,7 +8867,6 @@
     "the beloved",
     "the bug",
     "the crystal method",
-    "the detroit experiment",
     "the dust brothers",
     "the field",
     "the gaslamp killer",
@@ -8972,7 +8974,6 @@
     "big pun",
     "billy ocean",
     "biz markie",
-    "black eyed peas",
     "black milk",
     "black moon"
    ],
@@ -10069,6 +10070,27 @@
    "skipped": [
     "multi-story"
    ]
+  },
+  {
+   "batch": "ar-d-117",
+   "tier": "D",
+   "genres": [
+    "shop"
+   ],
+   "keys": [
+    "john wright",
+    "steve kuhn",
+    "red garland / ron carter / philly joe jones",
+    "kenny burrell & john coltrane",
+    "the detroit experiment",
+    "charles webster",
+    "black eyed peas",
+    "phew",
+    "間宮貴子"
+   ],
+   "state": "published",
+   "note": "店內販售區（data/shop/inventory.json）缺介紹的藝人，自原 D 批抽出優先跑（2026-10-04）",
+   "reviewFixes": 0
   }
  ]
 }

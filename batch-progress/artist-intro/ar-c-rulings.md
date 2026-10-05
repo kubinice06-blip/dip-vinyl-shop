@@ -190,3 +190,46 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Zach Bryan Michigan Stadium 觀眾數、好樂團 YouTube 觀看數、金門王與李炳輝首張銷量：必要例外各一處。
 - g4 補洞把 3 個 http 來源改寫成 https 未實際開頁，接受（同站同路徑）。
 - 待本機（上線簡介）：小河、李志的專輯簡介用了「中國大陸」，應改「中國」；Zach Bryan《American Heartbreak》「鄉村專輯最佳首週」無出處；Высоцкий《Баллады и песни》「生前只一張 12 吋」有誤；한대수 세시봉年份（1969）；Terry Allen「製作了 Wilco」應為參與首作；The Jayhawks 廠牌 Def American；かぐや姫〈神田川〉銷量；好樂團「募資」無出處；遠藤賢司〈カレーライス〉單曲版說法；蕭福德《希望轉去你身邊》與《華西街的一蕊花》是否同一張；潘麗麗《戲夢人生》入圍說法。
+
+## ar-c-020（2026-10-03，五批接力 020～024 第一批）
+
+- 齊豫搜尋 9 次：多的一次是重複查第 9 屆金曲獎得主、未帶來獨有事實，放行。qa-artist.mjs 新增逐位 `overCapOk` 欄（填理由）讓主線審過的超限不擋 QA；用法限「超出的請求沒有帶來獨有事實」。
+- 寫作 Opus 2 支；40 位全上（34 full、6 thin：Ebi、Grenadine、iri、Melanie Martinez、of Montreal、The Orchids）。
+- 審稿修 2 處：Harvey Williams 刪正文裡的媒體名（NME 當週單曲）；John Cale 的「買了的人都組了樂團」改為「名人堂介紹引述的名言」，不歸給名人堂本身（此語通常歸於 Brian Eno）。
+- NewJeans《TIME》Next Generation Leaders、Cyndi Lauper 首張四首前五、RAYE 全英音樂獎紀錄：視為權威榜單／核心成績，保留。
+- 待本機（上線簡介）：齊豫《橄欖樹》禁歌原因與〈歡顏〉得獎主詞；陳建年《大地》調蘭嶼年份；齊秦《冬雨》翻唱名單；BLACKPINK《THE ALBUM》「首張破百萬」主詞；S.H.E 第 14 屆獎名（最佳演唱組合 vs 最佳重唱組合）；卡池年份 The Blue Nile《A Walk Across the Rooftops》（1984）、g.o.d《Chapter 1》（1999）、Ebi《Tapesh》（1974）。
+
+## ar-c-021（2026-10-03）
+
+- 補洞 Sonnet 4 支＋寫作 Opus 2 支；40 位全上（36 full、4 thin：박효신、南西肯恩、潘秀瓊、目黒将司）。
+- 審稿修 9 處：韓文與漢字直接相鄰處一律補空格（「韓國歌手 김현식（金賢植）」「서태지 拒絕」），以腳本對 out-1 全檔處理，與 ar-c-019 的修法一致。之後各批寫作層特注加這條。
+- tUnE-yArDs 具名 Village Voice Pazz & Jop：視為權威票選（年度樂評人總投票，不是單一樂評），保留。
+- フランク永井 1985 年事件只寫「私人事件留下後遺症」，不寫細節；黃鶯鶯評審團引語內「臺」改「台」，接受。
+- 待本機（上線簡介）：藤井風《HELP EVER HURT NEVER》認證級別；陳百強《偏偏喜歡你》張數序；陳芬蘭《親愛的母親》成名年齡；黃鶯鶯《雪在燒》發行日；Ana Moura《Leva-me aos fados》Amália 獎年份與獎名；潘迪華〈Bengawan Solo〉錄音年齡；劉文正生死（來源衝突，上線簡介若有寫請核）。
+
+## ar-c-022（2026-10-03）
+
+- 補洞 Sonnet 4 支＋寫作 Opus 2 支；40 位全上（38 full、2 thin：Dillinger、Israel Vibration）。
+- 審稿修 3 處：Bhundu Boys 團員死因改中性（「多名團員相繼早逝」）；Keith Hudson 刪死因；Mongo Santamaría 葛萊美名人堂主詞改為〈Watermelon Man〉錄音。
+- Juaneco y su Combo 1977 年墜機：樂團史的轉折，列必要例外，只寫事件層級。Ken Boothe〈Everything I Own〉英國冠軍、Jimmy Cliff 名人堂「僅有兩位牙買加人」：兩源、核心，保留。
+- Dillinger src 補了卡池上線卡片的 sourceUrls（CB 200 維基頁），接受。
+- 待本機（上線簡介）：Chavela Vargas《La Llorona》卡內基年齡（84 歲）與「首度」；Djivan Gasparyan 2 條；Dr Alimantado 2 條；E.T. Mensah 與 Armstrong 同台是 1956；Fanfare Ciocărlia「最暢銷」；Hugh Mundell《Blackman's Foundation》Shanachie 1988；Idir「七種語言」；Juaneco《El gran cacique》年份；Junior Murvin「全片」用語；Khaled Cheb 因果；Lee Perry Black Ark 燒毀年份；Lucky Dube《Slave》認證與禁令年份；Ibrahim Ferrer 葛萊美屆次；半形逗號 5 張（Idir、Ijahman、Israel Vibration、John Holt、Junior Murvin）；卡池年份 Jimmy Cliff《The Harder They Come》（1972）。
+
+## ar-c-023（2026-10-03）
+
+- YAS-KAZ 搜尋 9 次：超出的一次是開官方經紀頁（onbeat.co.jp）補身世核心，不是重複搜尋；超一次、取自一手來源，`overCapOk` 放行。`overCapOk` 的適用面因此放寬為：超出不多於一次，且多出的請求不是重複搜尋（重複搜尋的處理同齊豫）。
+- 寫作 Opus 2 支；40 位全上（36 full、4 thin：Natacha Atlas、The Bush Chemists、Wailing Souls、Andrew Cox）。審稿 0 處修改。
+- 郭金發在敬老演唱會唱〈燒肉粽〉時倒下、送醫後過世：廣為人知且與代表曲直接相連，列必要例外，只寫事件層級。
+- 待本機（上線簡介）：Nass El Ghiwane「把班鳩琴帶進 chaabi」與成立年；Ofra Haza《Yemenite Songs》Shabazi 是十七世紀；Prince Far I《Psalms for I》製作人；Natacha Atlas《Gedida》年份；Souad Massi《Raoui》《Deb》離開阿爾及利亞原因改中性；The Meditations《Message from the Meditations》年份；Vicente Amigo 師從年數與 La Unión 年份；Wailing Souls Garth Dennis 陣容；The Gladiators《Proverbial Reggae》與 Front Line 之行；The Abyssinians《Arise》換團員；Rubén González 葛萊美入圍與 Billboard 名次未驗。
+
+## ar-c-024（2026-10-03，五批接力收尾）
+
+- 補洞 Sonnet 4 支＋寫作 Opus 2 支；40 位全上（34 full、6 thin：Bobby V.、C.C.C.C.、Dorian Electra、Emancipator、Gorgon City、Jamie xx）。
+- 審稿修 1 處：David Guetta 刪「不算圈內公認最酷」（單一樂評的評斷）。
+- Bobby V. 卡池誤標電子，照 R&B 寫；Dorian Electra 正文不用「他／她」。Bassnectar、Diplo、Derrick May 的指控皆不寫。
+- 待本機（上線簡介）：Aux 88《Is It Man or Machine?》出道成員與首作；Green Velvet《Constant Chaos》生年；Carl Cox《F.A.C.T.》三唱盤年份（1988 Sunrise）；Derrick May《Innovator》版本；C418「第二件入選國家錄音登錄」單源；Budd & Eno《Ambient 2》錄音年；卡池年份 Étienne de Crécy《Super Discount》。
+
+## 五批接力（ar-c-020～024）總結
+
+- 200 位全上，0 位略過；審稿共修 16 處。補洞層全程走來源分級新規則，未撞 WebSearch 上限（同時最多 6 支）。
+- 新增寫作特注：韓文與漢字相鄰補空格；QA 禁語「我／你」會誤擋含此字的曲名意譯與人名（我如古、〈그대에게〉意譯），寫作層改轉述即可，暫不改 QA。

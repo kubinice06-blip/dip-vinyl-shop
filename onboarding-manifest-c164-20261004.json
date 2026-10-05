@@ -1,0 +1,2684 @@
+{
+ "schemaVersion": 1,
+ "batch": "c164-20261004",
+ "albums": [
+  {
+   "artist": "Ben l'Oncle Soul",
+   "album": "Under My Skin",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `cba46dcb-b751-4625-8158-19dadc085c01`。release-group 端點（inc=artist-credits+genres+tags）：title 逐字「Under My Skin」、**artist-credit 逐字「Ben l’Oncle Soul」（U+2019；Person 實體、FR、MBID `2dbdbbad-9427-4360-b6c7-13a2f7214627`）**、first-release-date **2016-11-04**、primary-type `Album`、**secondary-types 逐字 `[]`（非現場、非合輯）**、genres 逐字 `contemporary r&b`／`jazz`／`soul jazz`。release 端點（inc=labels+media+artist-credits，limit=100）：**共 2 筆**——`0357064d-cfb0-4000-b5e2-7265958bbffe`（2016-11-04 **FR** Official CD **11 軌**，Digipak，barcode `602557177947`，**label-info 逐字 `Mercury Music Group [67ca3fec]` catno `5717794`**）、`0e3c9c3a-...`（2016-12-07 **JP** Official CD **13 軌**，barcode `4988031196786`，**label-info 逐字 `Blue Note [713c4a95]` catno `UCCM-1239`**）。⚠ **MB 沒有數位 release**，第 1721 條那個偵測訊號（只有 Digital Media＋catno 空＋country XW）本張不亮。barcode 取用照第 1674 條：日版 `4988031196786`（MB release 的 `barcode` 欄）優先於 slice 的 `catno`。",
+    "rgMbid": "cba46dcb-b751-4625-8158-19dadc085c01",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cba46dcb-b751-4625-8158-19dadc085c01/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 36096,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟上那首〈My Way〉，作者欄是三個法國名字。掛的是 Claude François、Jacques Revaux 與 Gilles Thibaut，Paul Anka 掛在改編那一格。這是他向 Frank Sinatra 致敬的一張碟，2016 年 11 月 4 日發行，十一軌全是別人的歌，盤名取自第 10 軌〈I've Got You Under My Skin〉的後半截。班底極小：吉他兼貝斯一人、鍵盤兼程式編寫一人、管樂一人，他自己兼唱與鍵盤。日版另收兩首原聲版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9667423-Ben-LOncle-Soul-Under-My-Skin",
+     "https://www.discogs.com/release/12090319-Ben-LOncle-Soul-Under-My-Skin",
+     "https://musicbrainz.org/release-group/cba46dcb-b751-4625-8158-19dadc085c01",
+     "https://music.apple.com/us/album/under-my-skin/1442850987"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/48/52/9f485203-5a78-d205-89f5-5a6abfbc8c0b/mzaf_7117106473822750911.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442850987",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ambrose Akinmusire",
+   "album": "A Rift in Decorum: Live at the Village Vanguard",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `f6dc266b-bb0e-459d-967c-9311fbf761ff`。release-group 端點（inc=artist-credits+genres+tags）：title 逐字「A Rift In Decorum」、artist-credit 逐字「Ambrose Akinmusire」（Person 實體、單一 credit、無 joinphrase）、first-release-date **2017-06-09**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**、genres 逐字 `jazz`。release 端點（inc=labels+media+artist-credits，limit=100）：**只有 1 筆**——`4d8c9b57-...`（2017-06-09 **US** Official，**CD 16 軌**，barcode `602557649703`，label-info 逐字 `Blue Note [713c4a95]`、**catno 欄為 null**）。⚠ **MB 端沒有建數位 release，也沒有日版**；Discogs 端的 2CD 軌目（10552827）與 MB 的 16 軌逐序相同：碟一 Maurice & Michael (Sorry I Didn't Say Hello)／Response／Moment In Between The Rest (To Curve An Ache)／Brooklyn (ODB)／A Song To Exhale To (Diver Song)／Purple (Intermezzo)／Trumpet Sketch (Milky Pete)，碟二 Taymoor's World／First Page (Shabnam's Poem)／H.A.M.S. (in The Spirit Of Honesty)／Piano Sketch (Sam Intro)／Piano Sketch (Beyond Enclosure)／Condor (Harish Intro)／Condor／Withered／Umteyo。barcode 取用照第 1674 條：MB release 的 `barcode` 欄 `602557649703`。",
+    "rgMbid": "f6dc266b-bb0e-459d-967c-9311fbf761ff",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f6dc266b-bb0e-459d-967c-9311fbf761ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5921,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他說那個場子裡，像被裡面的靈抱住。那個場子是紐約的 Village Vanguard，這張 2017 年 6 月 9 日發行的現場盤，兩張碟十六軌都錄在那裡，四重奏是跟了他很久的同一批人。他還說，這種時候有一個仍照原樣存在的地方很難得。盤名由他自己拆開解釋：rift 是去查探單一的一個瞬間，decorum 連著他對當下的感受，也連著台上那面紅色布幕。開場那首十二分二十八秒的曲子，寫的是他在通勤列車上遇見高中舊識、當下沒有打招呼。",
+    "sourceUrls": [
+     "https://www.bluenote.com/akinmusire-live-village-vanguard-album/",
+     "https://www.discogs.com/release/10552827-Ambrose-Akinmusire-A-Rift-In-Decorum-Live-At-The-Village-Vanguard",
+     "https://musicbrainz.org/release-group/f6dc266b-bb0e-459d-967c-9311fbf761ff",
+     "https://music.apple.com/us/album/a-rift-in-decorum-live-at-the-village-vanguard/1440890965"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1d/8c/99/1d8c9945-c8b7-e23a-e1e7-35962a8eda67/mzaf_12007039116759264497.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440890965",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Charles Pasi",
+   "album": "Bricks",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `752d8622-4573-4193-bfac-1bc3b5d138e3`。release-group 端點：title 逐字「Bricks」、artist-credit 逐字「Charles Pasi」（Person 實體、單一 credit）、first-release-date **2017-09-29**、primary-type `Album`、**secondary-types 逐字 `[]`**、**genres 與 tags 都是空陣列**。release 端點（inc=labels+media+artist-credits）：**2 筆**——`5d05fc17-...`（2017 **FR** Official CD **11 軌**，barcode `602557700978`，label-info 逐字 `Blue Note [713c4a95]`、catno 欄 null）、`7b2489a8-...`（2017-09-29 **XW** Official **Digital Media 11 軌**，barcode `602557701029`，label-info 逐字 `Decca Records France [6900cc9e]`、catno 欄 null）。⚠ **第 1721 條的偵測訊號部分亮（數位那筆是 XW＋catno 空）但不成立**：同一個 RG 另有實體 CD 且 frd 就是數位那天，不是「只建數位再發把 frd 拉晚」的形狀。barcode 依第 1674 條取 MB release 欄 `602557700978`。",
+    "rgMbid": "752d8622-4573-4193-bfac-1bc3b5d138e3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/752d8622-4573-4193-bfac-1bc3b5d138e3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 16358,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一個人掛了七個欄位，包含口琴與木吉他。那七格是作曲、作詞、主唱、口琴、木吉他、製作與編曲，全掛在 Charles Pasi 自己身上，另一位製作人則兼吉他與鍵盤。錄音從 2016 年 9 月跑到 2017 年 1 月，分在法國與比利時的六間錄音室，碟在 2017 年 9 月 29 日發行。十一軌裡只有〈Love Me Or Leave Me〉的作曲作詞欄掛別人的名字，末軌則是第 2 軌〈Shoot Somebody〉脫掉編曲的原聲版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11008562-Charles-Pasi-Bricks",
+     "https://www.discogs.com/release/10991845-Charles-Pasi-Bricks",
+     "https://musicbrainz.org/release-group/752d8622-4573-4193-bfac-1bc3b5d138e3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/db/1d/fd/db1dfd4b-0ee7-aaac-d551-36063418845e/mzaf_3882127706900508896.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442261012",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brian Blade Fellowship",
+   "album": "Body and Shadow",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `d4639a9b-d8f7-4df8-8046-75bdbea58e47`。release-group 端點：title 逐字「Body and Shadow」、**artist-credit 兩格逐字「Brian Blade」＋joinphrase「 & 」＋「the Fellowship Band」**、first-release-date **2017-11-10**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `contemporary jazz`／`jazz`／`modern creative`／`post-bop`。release 端點：**只有 1 筆**——`23126c65-...`（2017-11-10、**country 欄為 null**、Official、**CD 9 軌**、**barcode 欄為 null**、label-info 逐字 `Blue Note [713c4a95]` catno `002732602`）。⚠ **MB 端沒有日版與歐版**，那三筆只在 Discogs（11291364 歐版 LP／11538232 歐版 CD／12960190 日版 SHM-CD `UCCQ-1076`）。**barcode 依第 1674 條退到 Discogs：歐版 CD 的 `00602557921717`。**",
+    "rgMbid": "d4639a9b-d8f7-4df8-8046-75bdbea58e47",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d4639a9b-d8f7-4df8-8046-75bdbea58e47/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 10,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=10，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一首聖詩在碟上出現兩次：先獨奏，再整團。那首是〈Have Thine Own Way, Lord〉，獨奏版由 Jon Cowherd 編，樂團版由 Brian Blade 編。這是樂團成軍二十週年的第五張專輯，九軌、主題是明與暗的沉思，2017 年 11 月 10 日發行，另有三軌共用盤名、只在括號裡換成 Noon、Morning 與 Night。錄音在 Providence 一座老戲院 Columbus Theatre，他說那讓他想起當年在一間舊電影院錄樂團首作的那次。",
+    "sourceUrls": [
+     "https://www.bluenote.com/brian-blade-the-fellowship-band-celebrate-a-2/",
+     "https://www.discogs.com/release/11538232-Brian-Blade-The-Fellowship-Band-Body-And-Shadow",
+     "https://musicbrainz.org/release-group/d4639a9b-d8f7-4df8-8046-75bdbea58e47"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/57/81/18/57811893-6eff-2093-3288-1b31f972811c/mzaf_17921174245993535499.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1445882915",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Trombone Shorty",
+   "album": "Parking Lot Symphony",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `dd689388-baa2-414c-8c58-fc23dbb15061`。release-group 端點：title 逐字「Parking Lot Symphony」、artist-credit 逐字「Trombone Shorty」（單一 credit）、first-release-date **2017-04-28**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `jazz`／`jazz-funk`。release 端點：**3 筆**——`111fa978`（2017-04-28 US Official CD 12 軌，barcode `602557431148`，Blue Note catno `B002652502`）、`1856135a`（2017 XE Official CD 12 軌，同 barcode，Blue Note catno `00602557431148`）、`cedd32c1`（2017-04-28 US Official **Digital Media 12 軌**，barcode null，Blue Note catno null）。⚠ **數位那筆的 country 是 `US` 不是 `XW`，且同 RG 有兩筆實體**，第 1721 條的偵測訊號不亮。barcode 依第 1674 條取 MB release 欄 `602557431148`。",
+    "rgMbid": "dd689388-baa2-414c-8c58-fc23dbb15061",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dd689388-baa2-414c-8c58-fc23dbb15061/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 34719,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他接下紐奧良爵士節最重的那個壓軸場次。那是 2017 年的 New Orleans Jazz & Heritage Festival，而同年 4 月 28 日，他在 Blue Note 發了自己的第一張專輯。十二軌收十首新歌加上兩首翻唱，一首來自 Allen Toussaint、一首來自 The Meters，兩邊都是紐奧良自己的老本。整張碟以同一個葬禮進行曲的題名開場與收尾，把十二軌包成一個首尾呼應的框。",
+    "sourceUrls": [
+     "https://www.bluenote.com/trombone-shorty-blue-note-debut/",
+     "https://www.discogs.com/release/10207033-Trombone-Shorty-Parking-Lot-Symphony",
+     "https://musicbrainz.org/release-group/dd689388-baa2-414c-8c58-fc23dbb15061",
+     "https://music.apple.com/us/album/parking-lot-symphony/1440886408"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/69/b0/c169b0a6-ff40-a015-e5de-060961bf12c9/mzaf_246475234643463722.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440886408",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "山中千尋",
+   "album": "Monk Studies",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `c964f20f-dc0a-43ba-8cb3-4a8ed7803cae`。release-group 端點：title 逐字「Monk Studies」、artist-credit 逐字「Chihiro Yamanaka」（Person 實體、單一 credit；**MB 端用羅馬字，本卡依第 1672 條折成漢字**）、first-release-date **2017-06-21**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `contemporary jazz`／`jazz`。release 端點：**5 筆**——`07db3d67`（2017-06-21 JP **SHM-CD 10 軌** barcode `4988031224205` Blue Note `UCCQ-1070`）、`039ae8c0`（2017-06-21 JP **HQCD 10 軌＋DVD-Video 3 軌** barcode `4988031224199`，**label-info 三格 `UCBX-1210`／`UCCQ-9303`／`UCCX-1341`**）、`ed9c2cac`（2017-07-26 JP **12\" Vinyl 10 軌** barcode `4988031224212` `UCJJ-9008`）、`b2deca5d`（2017-06-21 **XW** Digital Media 10 軌 barcode `602557582420` catno null）、`fb3575b9`（2017-06-21 JP Digital Media 10 軌 barcode `602557582482` catno `00602557582482`，**title 逐字 `モンク・スタディーズ`**）。⚠ **`slice.json` 的 `catno` 欄逐字 `00602557582482`／`UCBX-1210`／`UCCQ-1070`／`UCCQ-9303`，與 MB 對得上。** barcode 依第 1674 條取 SHM-CD 那筆的 `4988031224205`。",
+    "rgMbid": "c964f20f-dc0a-43ba-8cb3-4a8ed7803cae",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c964f20f-dc0a-43ba-8cb3-4a8ed7803cae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 51,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=51，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "末軌的作曲欄與編曲欄，各站著一位姓 Monk 的人。那一軌是〈Abide With Me〉，作曲掛 William Henry Monk、編曲掛 Thelonious Monk。這是為 Thelonious Monk 誕生一百週年而做的致敬碟，2017 年 6 月 21 日發行。重新詮釋 Monk 的念頭在她心裡放了很久，直到遇上能把它實現的節奏組才啟動——鼓手來自 The Mars Volta、貝斯手是 The Roots 的固定班底；十軌裡有三首是她自己寫的原創曲。",
+    "sourceUrls": [
+     "https://www.universal-music.co.jp/chihiro-yamanaka/products/uccq-1070/",
+     "https://www.discogs.com/release/11353474-Chihiro-Yamanaka-Monk-Studies",
+     "https://musicbrainz.org/release-group/c964f20f-dc0a-43ba-8cb3-4a8ed7803cae",
+     "https://music.apple.com/us/album/monk-studies/1440890874"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/32/fa/1b32fa25-8183-50ab-96b2-36999984f45e/mzaf_3605477269786586922.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440890874",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yaron Herman",
+   "album": "Y",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `189846d2-eb82-4532-90b8-4e33f06fc36f`。release-group 端點：title 逐字「Y」、artist-credit 逐字「Yaron Herman」（Person 實體、單一 credit）、first-release-date **2017-03-17**、primary-type `Album`、**secondary-types 逐字 `[]`**、**genres 與 tags 都是空陣列**。release 端點：**只有 1 筆**——`49b2f9f1-...`（2017-03-17 **FR** Official **CD 12 軌**，barcode `602557430035`，label-info 逐字 `Blue Note [713c4a95]` catno `5743003`）。⚠ **MB 端沒有建 2LP 與數位**，2LP 只在 Discogs 10004741（`5739812`）。barcode 依第 1674 條取 MB release 欄 `602557430035`。",
+    "rgMbid": "189846d2-eb82-4532-90b8-4e33f06fc36f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/189846d2-eb82-4532-90b8-4e33f06fc36f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3172,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "客座的名字被直接寫進了曲名裡。這樣做的有三軌：法國歌手 -M- 佔一軌，另兩軌分別配上 Dream Koala 與 Hugh Coltman，其餘九軌的曲名沒有客座標記。Yaron Herman 這張 2017 年的《Y》在 3 月 17 日發行，實體十二軌，同一批曲目另發了一套跨頁封套、內袋印刷的雙張黑膠。他 2008 年拿過 Victoire du Jazz 的年度新人獎，全碟最長的一軌是六分四十二秒的〈Spark〉。",
+    "sourceUrls": [
+     "https://yaronherman.com/biography/",
+     "https://yaronherman.com/discography/",
+     "https://www.discogs.com/release/10107246-Yaron-Herman-Y",
+     "https://www.discogs.com/release/10004741-Yaron-Herman-Y",
+     "https://musicbrainz.org/release-group/189846d2-eb82-4532-90b8-4e33f06fc36f"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Götz Alsmann",
+   "album": "In Rom",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `b750a8d0-2ee0-44ad-b3f6-f94144926764`。release-group 端點：title 逐字「In Rom」、artist-credit 逐字「Götz Alsmann」（Person 實體、DE、單一 credit）、first-release-date **2017-09-15**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `jazz`／`swing`。release 端點：**3 筆**——`7c961cbc`（2017-09-15 **DE** Official **CD 18 軌** barcode `0602557633191` Blue Note `5763319`）、`1e07f67a`（2017 DE Official **Vinyl 10 軌＋Vinyl 8 軌** barcode `0602557633238` Blue Note `5763323`）、`091f3ab8`（2017-09-15 DE Official **Digital Media 18 軌**，barcode null，**label-info 為空陣列**）。⚠ **數位那筆的 country 是 `DE` 不是 `XW`、且同 RG 有兩筆實體**，第 1721 條的偵測訊號不亮。barcode 依第 1674 條取 CD 那筆的 `0602557633191`。",
+    "rgMbid": "b750a8d0-2ee0-44ad-b3f6-f94144926764",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b750a8d0-2ee0-44ad-b3f6-f94144926764/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1020,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1020，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十八首義大利歌，全部改用德語唱。這是他城市三部曲的第三站，前兩站是巴黎與紐約，作法都一樣：到那座城市有歷史的老錄音室，用當地的音樂配上德語歌詞。這一站錄在羅馬的 Forum Music Village，製作人是 Régis Ceccarelli，2017 年 9 月 15 日發行，十八軌裡有六軌的德語詞由他自己翻譯。第 16 軌〈Der Troubadour〉的作曲欄掛著 Giuseppe Verdi，是碟上唯一一首作曲者來自歌劇的曲子。",
+    "sourceUrls": [
+     "https://goetz-alsmann.de/",
+     "https://www.discogs.com/release/11120013-G%C3%B6tz-Alsmann-In-Rom",
+     "https://musicbrainz.org/release-group/b750a8d0-2ee0-44ad-b3f6-f94144926764",
+     "https://music.apple.com/de/album/in-rom/1440889585"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/76/27/78/76277863-bb48-50c4-786f-07efe9ad4b3b/mzaf_1604355462767386070.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440889585",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tony Allen",
+   "album": "The Source",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `f0838fc2-7e83-4bde-9196-13b80d043c70`。release-group 端點：title 逐字「The Source」、artist-credit 逐字「Tony Allen」（Person 實體、單一 credit）、first-release-date **2017-09-08**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `afrobeat`／`jazz`／`post-bop`。release 端點：**5 筆**——`19a4f218`（2017-09-08 US Official CD 11 軌 barcode `602557810912` Blue Note `B002721402`）、`60da33da`（2017-09-08 XE Official CD 11 軌 同 barcode Blue Note `5781091`）、`8e958111`（2017-09-08 XE Official **12\" Vinyl 6 軌＋5 軌** barcode `602557683363` Blue Note `5768336`）、`1b8b7304`（2017-09-08 US Official Digital Media 11 軌，barcode null，**label-info 空陣列**）、`c105c7ca`（2017-09-08 country null Official Digital Media 11 軌 barcode `0602557848922` Blue Note catno null）。barcode 依第 1674 條取 `602557810912`。",
+    "rgMbid": "f0838fc2-7e83-4bde-9196-13b80d043c70",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f0838fc2-7e83-4bde-9196-13b80d043c70/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10761,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "動筆之前，兩人先互相放自己最愛的爵士唱片。那是這位奈及利亞鼓手與長期合作的薩克斯風手，Charles Mingus 那幾張碟成了指南針。這是他在 Blue Note 的第一張全長專輯，在它之前只有一張四軌 EP，2017 年 9 月 8 日發行，十一軌全是兩人合寫的演奏曲，每一軌推一件樂器到前面，第 4 軌〈On Fire〉推的是 Jean-Philippe Dary 的鋼琴。1964 年他認識 Fela Kuti，此後十五年替他打鼓，Afrobeat 就是在那時長出來的。",
+    "sourceUrls": [
+     "https://www.bluenote.com/tony-allen-blue-note-debut-the-source/",
+     "https://www.discogs.com/release/10834147-Tony-Allen-The-Source",
+     "https://musicbrainz.org/release-group/f0838fc2-7e83-4bde-9196-13b80d043c70"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/02/11/a6/0211a6da-4447-4713-a8ce-d6085ae37aed/mzaf_2588489271745724778.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442214381",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "José James",
+   "album": "Love in a Time of Madness",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `523f5035-687e-4639-bffa-bde274760f6b`。release-group 端點：title 逐字「Love in a Time of Madness」、**artist-credit 逐字「José James」（Person 實體、帶重音、單一 credit）**、first-release-date **2017-02-24**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `jazz`。release 端點：**只有 1 筆**——`da6a2019-...`（2017-02-24 **US** Official **CD 12 軌**，barcode `602557259605`，label-info 逐字 `Blue Note [713c4a95]` catno `B002604702`）。⚠ **MB 端沒有建 LP、歐版與數位**，那三筆只在 Discogs（9896548 美版 LP `B002604801`／10033875 歐版 CD `00602557259605`／18413254 阿根廷版 `5742704`）。barcode 依第 1674 條取 MB release 欄 `602557259605`。",
+    "rgMbid": "523f5035-687e-4639-bffa-bde274760f6b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/523f5035-687e-4639-bffa-bde274760f6b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9003,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "原本要做成雙張，一面愛、一面街上的瘋狂。後來那一半被他放掉了：瘋狂的那面越來越失控、殺戮一直發生，讓人吃不消，於是他把重量全押到能帶來療癒的另一半上，碟在 2017 年 2 月 24 日發行。他同時離開前幾張的樂團編制，改和寫主旋律的作者與製作人合作，十二軌裡有九軌的製作與混音由 Antario Holmes 一人包辦。真的管樂組與真的鼓，只出現在第 7 軌〈Ladies Man〉。",
+    "sourceUrls": [
+     "https://www.bluenote.com/jose-james-love-in-a-time-of-madness/",
+     "https://www.discogs.com/release/10033875-Jos%C3%A9-James-Love-In-A-Time-Of-Madness",
+     "https://musicbrainz.org/release-group/523f5035-687e-4639-bffa-bde274760f6b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/01/a7/04/01a70473-67f4-ec16-94c1-4d2556208779/mzaf_13196557255892763021.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440888609",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Louis Hayes",
+   "album": "Serenade for Horace",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `970db458-3efe-4418-b083-a7580eecff70`。release-group 端點：title 逐字「Serenade For Horace」、artist-credit 逐字「Louis Hayes」（Person 實體、單一 credit）、**first-release-date 逐字 `2017`（只有年、沒有月日）**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `jazz`。release 端點：**只有 1 筆**——`c9c9db0f-...`（**date 欄逐字 `2017`、country 欄 null**、Official、**CD 11 軌**，barcode `602557617825`，label-info 逐字 `Blue Note [713c4a95]` catno `B002674702`）。⚠ **MB 端沒有建歐版與數位**；街頭日 `2017-05-26` 來自 Apple 與 Discogs 兩層。barcode 依第 1674 條取 MB release 欄 `602557617825`。",
+    "rgMbid": "970db458-3efe-4418-b083-a7580eecff70",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e4/df/99/e4df9915-e07a-e62a-b75f-6800e8c01429/00602557617849.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442907864",
+    "note": "試聽探測釘定的 collectionId 1442907864（us）：Louis Hayes — Serenade for Horace"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7586,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Horace 病中對他說的那句話，成了這張碟的起點。Horace Silver 身體不好時他去探望，對方說他是自己歷史的一部分，他就從那裡開始想，該怎麼把這批音樂帶向未來。這是這位鼓手以領班身分在 Blue Note 的第一張作品，2017 年 5 月 26 日發行；他 1956 年十九歲搬到紐約，進的正是 Silver 的五重奏。十一軌重訪十首 Silver 的曲子，外加他新寫的一首、獻給家鄉底特律，唯一有人聲的一軌由 Gregory Porter 客串。",
+    "sourceUrls": [
+     "https://www.bluenote.com/louis-hayes-to-release-serenade-for-horace-52/",
+     "https://www.bluenote.com/drummer-louis-hayes-signs-with-blue-note/",
+     "https://www.discogs.com/release/11426899-Louis-Hayes-Serenade-For-Horace",
+     "https://musicbrainz.org/release-group/970db458-3efe-4418-b083-a7580eecff70",
+     "https://music.apple.com/us/album/serenade-for-horace/1442907864"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/21/11/ef/2111ef9e-21a7-2057-18d2-8045c22f17e1/mzaf_11100464999745118968.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1442907864",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kyoto Jazz Sextet",
+   "album": "Unity",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `48f18f8d-4211-44cf-bbc2-01351809c448`。release-group 端點：title 逐字「Unity」、artist-credit 逐字「Kyoto Jazz Sextet」（Group 實體、單一 credit）、first-release-date **2017-06-14**、primary-type `Album`、**secondary-types 逐字 `[]`**、**genres 與 tags 都是空陣列**。release 端點：**只有 1 筆**——`df05cc14-...`（2017-06-14 **JP** Official **CD 9 軌**，**barcode 欄為 null**，label-info 逐字 `Blue Note [713c4a95]` catno `UCCJ-2143`）。⚠ **MB 端沒有建 2LP 與數位。barcode 依第 1674 條退到 Discogs 與 slice：`slice.json` 的 `catno` 欄逐字只有 `UCCJ-2143`，Discogs 12015250 的 `identifiers` 亦未提供條碼**——**UPC 依 `ALBUM_ONBOARDING.md` §1「盡力而為、不當硬門檻」，本張留空待本機補。**",
+    "rgMbid": "48f18f8d-4211-44cf-bbc2-01351809c448",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/48f18f8d-4211-44cf-bbc2-01351809c448/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10186,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這支六人團的起點，是一位 DJ 的原音爵士企劃。啟動它的是 Kyoto Jazz Massive 的沖野修也，時間是 2015 年，概念是以 1960 年代 Blue Note 的新主流派調式爵士為核心，再以它為動機去表現爵士的現在。這是隔了兩年的第二張，前作是一張名曲翻唱集，這次九軌全部新寫，並把靈性爵士與嘻哈兩翼往外推，2017 年 6 月 14 日發行。最長的一軌十三分零二秒，在上頭吹次中音薩克斯風的是 Pharoah Sanders 的兒子。",
+    "sourceUrls": [
+     "https://www.universal-music.co.jp/kyoto-jazz-sextet/products/uccj-2143/",
+     "https://www.discogs.com/release/12015250-Kyoto-Jazz-Sextet-Unity",
+     "https://www.discogs.com/release/11154764-Kyoto-Jazz-Sextet-Unity",
+     "https://musicbrainz.org/release-group/48f18f8d-4211-44cf-bbc2-01351809c448"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/de/e8/37/dee8375c-b1d5-5bcb-91e6-6f28c47b7edf/mzaf_9089298867488525094.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440897383",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dave McMurray",
+   "album": "Music Is Life",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `c8ef4b92-29a4-4653-882b-72a60e0e2bc7`。release-group 端點：title 逐字「Music Is Life」、artist-credit 逐字「Dave McMurray」（Person 實體、單一 credit）、first-release-date **2018-05-18**、primary-type `Album`、**secondary-types 逐字 `[]`**、**genres 與 tags 都是空陣列**。release 端點（inc=labels+media+artist-credits，limit=100）：**2 筆，兩筆都是 `XW`／`Digital Media` 12 軌／catno 欄 null**——`a7a575c1-...`（barcode `00602567502425`）與 `fcb37890-...`（barcode `00602567502418`），**label-info 兩筆逐字都是 `Blue Note [713c4a95]`**。⚠ ⚠ **這是主線第 1721 條偵測訊號的完整形狀（只有 Digital Media＋catno 空＋country XW），但年份覆核成立、不改判，理由逐條寫在 `risk`。** barcode 依第 1674 條取 MB release 欄 `00602567502425`（⚠ 兩筆 barcode 不同，本機挑固定試聽時要一併核）。",
+    "rgMbid": "c8ef4b92-29a4-4653-882b-72a60e0e2bc7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c8ef4b92-29a4-4653-882b-72a60e0e2bc7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 875,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=875，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌總裁只說了一句：去做。說這句話的是 Don Was，簽約時他沒有給這位薩克斯風手任何方向上的指令。兩人都是底特律人，淵源要從 1981 年 Was (Not Was) 的同名首作算起，那支樂團此後每一張專輯他都有份。這是他在 Blue Note 的第一張作品，2018 年 5 月 18 日發行，選的是自己的原創曲加上幾首搖滾與節奏藍調常備曲，軌目上對得起來的有〈Seven Nation Army〉與〈Atomic Dog〉兩首。",
+    "sourceUrls": [
+     "https://www.bluenote.com/saxophonist-dave-mcmurray-music-is-life/",
+     "https://music.apple.com/us/album/music-is-life/1369411347",
+     "https://musicbrainz.org/release-group/c8ef4b92-29a4-4653-882b-72a60e0e2bc7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/81/8f/6c/818f6c0d-f5d4-a0d2-08e2-019d82e0e4b1/mzaf_2444633205881953029.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1369411347",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gregory Porter",
+   "album": "One Night Only: Live At The Royal Albert Hall",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `fa3b0114-10e5-469d-baad-6b35b6bd9a33`。release-group 端點：title 逐字「One Night Only: Live At The Royal Albert Hall」、artist-credit 逐字「Gregory Porter」（Person 實體、單一 credit）、first-release-date **2018-11-30**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**、genres 逐字 `jazz`。release 端點：**3 筆**——`4be43f95`（2018-11-30 **XE** Official **CD 19 軌＋DVD-Video 20 軌**，barcode `602567801696`，**title 逐字 `One Night Only: Live at the Royal Albert Hall`（小寫 at the，release 層題法）**）、`1cc4a2d9`（2018-11-30 FR Official Digital Media 19 軌 barcode `00602567971153`）、`e5fa6499`（2018-11-30 XW Official Digital Media 19 軌 barcode `0602567971146`）；三筆的 label-info 逐字都是 `Blue Note [713c4a95]`、catno 欄皆 null。⚠ **美加版單 CD `002941000`（2019-01-11）只在 Discogs 13011962，MB 未建。** barcode 依第 1674 條取實體那筆的 `602567801696`。",
+    "rgMbid": "fa3b0114-10e5-469d-baad-6b35b6bd9a33",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fa3b0114-10e5-469d-baad-6b35b6bd9a33/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 164,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=164，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四人樂團旁邊，站著七十個人的管弦樂團。那是 The London Studio Orchestra，指揮兼編曲的是 Vince Mendoza。這是他生涯第一張現場作品，錄的是當年稍早在倫敦 Royal Albert Hall 三場售罄演出裡的開幕那一場，2018 年 11 月 30 日發行。選曲以他當時最新的《Nat King Cole & Me》為主，另外加進兩首歌迷愛曲。十九軌裡他自己寫的只有兩首，其餘各軌的作者欄掛的都是老歌本那一輩的名字。",
+    "sourceUrls": [
+     "https://www.bluenote.com/gregory-porter-to-release-one-night-only/",
+     "https://www.discogs.com/release/12988484-Gregory-Porter-One-Night-Only-Live-At-The-Royal-Albert-Hall",
+     "https://www.discogs.com/release/13011962-Gregory-Porter-One-Night-Only-Live-At-The-Royal-Albert-Hall",
+     "https://music.apple.com/us/album/one-night-only-live-at-the-royal-albert-hall-02-april-2018/1437630474",
+     "https://musicbrainz.org/release-group/fa3b0114-10e5-469d-baad-6b35b6bd9a33"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/07/f9/2107f9c2-6dfe-96e1-50bc-d2f1168decec/mzaf_12312222917144584006.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1437630474",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tony Allen & Jeff Mills",
+   "album": "Tomorrow Comes The Harvest",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `00989272-6ce0-46eb-883d-2ff14628297c`。release-group 端點：title 逐字「Tomorrow Comes the Harvest」、**artist-credit 兩格逐字「Tony Allen」＋joinphrase「, 」＋「Jeff Mills」**、first-release-date **2018-09-28**、**primary-type 逐字 `Album`**、**secondary-types 逐字 `[]`**、genres 逐字 `afrobeat`／`electronic`／`jazz`。release 端點：**4 筆，全部 Digital Media 10 軌**——`e9a71eed`（2018-09-28 XW Official barcode `602567786313`，Blue Note catno null，title 逐字 `Tomorrow Comes The Harvest`）、`200710a3`（2018-09-28 XE Official barcode null，Blue Note catno null）、`12dda946`（2018-09-28 US Official barcode null，**label-info 空陣列**）、`cffa354f`（**2024-04-18**，country null，barcode `00602567786320`，**label-info 逐字 `Universal Music Division Decca Records France [9c314019]`**）。⚠ ⚠ **MB 端沒有建那張 10\" 實體**（只在 Discogs 12557764，`Blue Note Lab` `778630 6`）；**第 1721 條的偵測訊號（只有 Digital Media＋catno 空＋country XW）在 MB 端亮，但實體版存在於 Discogs、且 frd 與 Apple／Discogs 的 2018-09-28 逐日相符，年份不改判。** barcode 依第 1674 條取 MB release 欄 `602567786313`。",
+    "rgMbid": "00989272-6ce0-46eb-883d-2ff14628297c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/00989272-6ce0-46eb-883d-2ff14628297c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 17627,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "黑膠四軌與數位十軌，只有三首是共有的。〈Altitudes〉只出現在十吋黑膠上、〈The Night Watcher〉只出現在數位版上，兩個版本並不是包含關係。這是一位 Afrobeat 鼓手與一位底特律電音製作人的聯名碟，2018 年 9 月 28 日發行，錄音在巴黎的 CBE Studio 現場錄下、混音在紐約完成。掛名寫的是兩個人，作曲與編曲其實是三個，第三位是鍵盤手 Jean-Phi Dary；數位版唯一有人聲的那首，另收了一個純演奏版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12557764-Tony-Allen-Jeff-Mills-Tomorrow-Comes-The-Harvest",
+     "https://www.discogs.com/release/12590967-Tony-Allen-Jeff-Mills-Tomorrow-Comes-The-Harvest",
+     "https://musicbrainz.org/release-group/00989272-6ce0-46eb-883d-2ff14628297c",
+     "https://music.apple.com/us/album/tomorrow-comes-the-harvest/1403295920",
+     "https://www.discogs.com/release/10834147-Tony-Allen-The-Source"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/50/78/e7/5078e744-c35a-5314-4900-bb64041097a8/mzaf_17895041349060815380.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1403295920",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wayne Shorter",
+   "album": "Emanon",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `450e28a4-bbca-4b6f-a05c-e2b322596259`。release-group 端點：title 逐字「Emanon」、artist-credit 逐字「Wayne Shorter」（Person 實體、單一 credit）、first-release-date **2018-09-14**、primary-type `Album`、**secondary-types 逐字 `[]`**、**genres 與 tags 都是空陣列**。release 端點：**2 筆**——`9b53be5a-...`（**2018-09-14 US Official，media 逐字 `CD 4 軌 ＋ CD 2 軌 ＋ CD 4 軌`，barcode 欄 null，label-info 逐字 `Blue Note [713c4a95]`、catno 欄 null**）、`b399fdf8-...`（**date 欄為空字串**，XW Official，media 逐字 `Digital Media 4 軌 ＋ 2 軌 ＋ 4 軌`，barcode `602577402975`，**title 逐字 `EMANON`**）。⚠ **日版 3×SHM-CD `UCCQ-9403` 只在 Discogs 14326876，MB 未建。** 十軌（Discogs 14326876 逐字，兩段）：*The Wayne Shorter Quartet With Orpheus Chamber Orchestra* — Pegasus／Prometheus Unbound／Lotus／The Three Marias；*The Wayne Shorter Quartet Live In London* — The Three Marias／Lost And Orbits Medley／Lotus／She Moves Through The Fair／Adventures Aboard The Golden Mean／Prometheus Unbound。barcode 依第 1674 條取 MB 數位那筆的 `602577402975`（**實體那筆 MB 的 barcode 欄是 null**）。",
+    "rgMbid": "450e28a4-bbca-4b6f-a05c-e2b322596259",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/450e28a4-bbca-4b6f-a05c-e2b322596259/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 10089,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三張碟配一本圖像小說，一開始只出實體。數位版要到 2019 年 2 月 11 日才上線。這是他自 2013 年《Without A Net》以來的第一張作品，2018 年 9 月 14 日發行：第一碟是他的四重奏與三十四人的 Orpheus Chamber Orchestra 在錄音室錄的，第二、三碟是同一組四重奏在倫敦的現場，整套是一個半現場的三碟企劃。本作在第 61 屆葛萊美獎拿下最佳爵士演奏專輯。",
+    "sourceUrls": [
+     "https://www.bluenote.com/wayne-shorter-to-release-emanon/",
+     "https://www.bluenote.com/wayne-shorters-grammy-winning-album-emanon-available-now-digitally/",
+     "https://www.discogs.com/release/14326876-Wayne-Shorter-Emanon",
+     "https://musicbrainz.org/release-group/450e28a4-bbca-4b6f-a05c-e2b322596259",
+     "https://music.apple.com/us/album/emanon/1449097210"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/30/e1/8f/30e18fe0-e592-c36c-2ad5-223cba138d05/mzaf_16031007953832573930.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1449097210",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Nels Cline 4",
+   "album": "Currents, Constellations",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `837c8c41-aa59-4316-b080-4ec407e0710f`。release-group 端點：title 逐字「Currents, Constellations」、**artist-credit 逐字「The Nels Cline 4」（單一 credit、無 joinphrase）**、first-release-date **2018-04-13**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `jazz`。release 端點：**6 筆，全部 2018-04-13**——`6038819b`（US Official CD 8 軌 barcode `602567429104` Blue Note `B002811702`）、`69fb81ba`（US Official **12\" Vinyl 8 軌** barcode `602567403913` Blue Note `B002806401`）、`d98524d0`（XE Official CD 8 軌 同 barcode Blue Note `00602567429104`）、`73dc9938`／`9cc3748b`／`b08a608e`（**三筆 XW Official Digital Media 8 軌，barcode 分別 `00602567429074`／`00602567429050`／`00602567429098`，catno 欄逐字都是 `[none]`**）。⚠ **`slice.json` 的 `catno` 欄逐字含 `[none]` 這個字串，是 MB 的佔位值、不是真目錄號。** barcode 依第 1674 條取 CD 那筆的 `602567429104`。",
+    "rgMbid": "837c8c41-aa59-4316-b080-4ec407e0710f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/837c8c41-aa59-4316-b080-4ec407e0710f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2095,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=2095，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩把吉他玩了幾年，後來真的找來了節奏組。那是 2016 年，他在紐約一處小場地駐場期間找來一組貝斯與鼓試，他的說法是自己帶了幾個主題進去、大家就這麼幹起來了。這支新團的第一張碟 2018 年 4 月發行，底子仍是他與吉他手 Julian Lage 多年的雙吉他合作；八軌裡只有第 6 軌〈Temporarily〉的作者欄掛 Carla Bley，其餘七軌都由他自己寫。比起 2016 年那張大編制的《Lovers》，這次的編制更稀疏，也更有稜角。",
+    "sourceUrls": [
+     "https://www.bluenote.com/the-nels-cline-4-currents-constellations/",
+     "https://www.discogs.com/release/11862405-The-Nels-Cline-4-Currents-Constellations",
+     "https://www.discogs.com/release/11863071-The-Nels-Cline-4-Currents-Constellations",
+     "https://musicbrainz.org/release-group/837c8c41-aa59-4316-b080-4ec407e0710f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/15/55/84/1555849a-1212-9a86-688c-3e8531805800/mzaf_9468056975250281995.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1353209642",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Terence Blanchard featuring The E-Collective",
+   "album": "Live",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `64107abd-f360-469b-90ad-80e7356805d4`。release-group 端點：title 逐字「Live」、**artist-credit 兩格逐字「Terence Blanchard」＋joinphrase「 & 」＋「The E‐Collective」（⚠ 第二格的連字號是 U+2010，本卡已折成 ASCII）**、**first-release-date 逐字 `2018`（只有年）**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**、**genres 與 tags 都是空陣列**。release 端點：**只有 1 筆**——`ceb58d31-...`（**date 逐字 `2018`、country `NL`**、Official、**CD 7 軌**，barcode `602567462545`，**label-info 逐字 `Blue Note Records [d3865f1e]` catno `00602567462545`**——⚠ 那是唱片公司層實體、不是 imprint，逐條查證見 `risk`）。⚠ **美版 `B002818102` 只在 Discogs 12767092，MB 未建。** 街頭日 `2018-04-20` 來自 Apple 五地區。barcode 依第 1674 條取 MB release 欄 `602567462545`。",
+    "rgMbid": "64107abd-f360-469b-90ad-80e7356805d4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/64107abd-f360-469b-90ad-80e7356805d4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 18,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=18，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三場演出，都選在衝突升高的那幾個社區。明尼亞波利斯、克里夫蘭與達拉斯，近年執法者與非裔市民的衝突都在那裡升高。七軌全是那三場現場錄下的，2018 年 4 月 20 日發行，接的是樂團 2015 年那張入圍葛萊美的《Breathless》。他說組這支團起初只是想彈能鼓舞年輕人的音樂，是巡演期間接連發生的槍擊讓他覺得必須表態，兩年過去也沒辦法就這樣放手。末軌〈Choices〉十七分十秒最長，一段口白掛 Cornel West。",
+    "sourceUrls": [
+     "https://www.bluenote.com/terence-blanchard-e-collective-live/",
+     "https://www.discogs.com/release/12767092-Terence-Blanchard-Featuring-The-E-Collective-Live",
+     "https://musicbrainz.org/release-group/64107abd-f360-469b-90ad-80e7356805d4",
+     "https://music.apple.com/us/album/live-feat-the-e-collective/1358522378"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/54/c2/d3/54c2d322-fca9-ebd6-b154-b757913cd7a7/mzaf_10949104485161818316.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1358522378",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "山中千尋",
+   "album": "Utopia",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `9b8d8301-e1f3-4877-a288-59d3dab8c106`。release-group 端點：title 逐字「Utopia」、artist-credit 逐字「Chihiro Yamanaka」（Person 實體；**MB 端用羅馬字，本卡依第 1672 條折成漢字**）、first-release-date **2018-06-20**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `classical`／`contemporary jazz`／`jazz`。release 端點：**6 筆**——`3312bd8d`（2018-06-20 JP **SHM-CD 12 軌** barcode `4988031277621` Blue Note `UCCJ-2157`）、`3876e319`（2018-06-20 JP **HQCD 12 軌＋DVD-Video 3 軌** barcode `4988031277652` Blue Note `UCCJ-9215`）、`4cea6d51`（**2018-11-03** JP **12\" Vinyl 10 軌** barcode `4988031298527` Blue Note `UCJJ-9015`）、`81ee5a42`（XW Digital Media 12 軌 barcode `602567694878`）、`dabb3795`（JP Digital Media 12 軌 barcode `602567694861` catno `00602567694861`，**title 逐字 `ユートピア`**）、`e3a4e3a1`（XW Digital Media 12 軌 barcode `602567694854`，**title 逐字 `ユートピア`**）。⚠ **LP 版的 MB media 逐字是 10 軌、CD 是 12 軌**（黑膠刪了兩軌，本機配固定試聽時要用 CD 那一版）。barcode 依第 1674 條取 SHM-CD 那筆的 `4988031277621`。",
+    "rgMbid": "9b8d8301-e1f3-4877-a288-59d3dab8c106",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9b8d8301-e1f3-4877-a288-59d3dab8c106/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 45,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=45，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "古典名曲進了她的三重奏，速度整個往前推。選曲扣著 Gershwin 誕生一百二十週年與 Bernstein 誕生一百週年，廠牌的說法是以出色的改編與充滿速度感的演奏，把這批曲目表現成當代爵士。CD 十二軌，2018 年 6 月 20 日發行，開場的同名曲作曲欄掛她自己，官方點名的代表曲之一是〈I Loves You, Porgy〉。錄音在 2018 年三、四月，與她前一年那張碟同一間錄音室、同一位錄音師，換掉的是整組節奏組。",
+    "sourceUrls": [
+     "https://www.universal-music.co.jp/chihiro-yamanaka/products/uccj-2157/",
+     "https://www.discogs.com/release/12153960-Chihiro-Yamanaka-Utopia",
+     "https://www.discogs.com/release/11353474-Chihiro-Yamanaka-Monk-Studies",
+     "https://musicbrainz.org/release-group/9b8d8301-e1f3-4877-a288-59d3dab8c106"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/88/af/1288af4e-bd42-c386-7529-afc6f7000c16/mzaf_13485302313136183166.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1384328786",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "José James",
+   "album": "Lean On Me",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `9c8e3dee-d175-41a6-839c-92682670536d`。release-group 端點：title 逐字「Lean on Me」、**artist-credit 逐字「José James」（Person 實體、帶重音、單一 credit）**、first-release-date **2018-09-28**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `contemporary r&b`／`jazz`／`jazz-funk`／`r&b`／`soul jazz`。release 端點：**3 筆**——`71f5e8e9`（2018-09-28 **US** Official **CD 12 軌** barcode `602567737353` Blue Note catno `00602567737353`，title 逐字 `Lean on Me`）、`c89ffac5`（2018-09-28 XW Official Digital Media 12 軌 barcode `602567737322` Blue Note catno null，title 逐字 `Lean on Me`）、`3e0536d7`（2018-09-28 **JP** Official Digital Media **14 軌** barcode `602567951865` Blue Note catno null，**title 逐字 `Lean On Me`（大寫 On）**）。⚠ **日版實體 SHM `UCCQ-1088` 與美版 `8002867402` 只在 Discogs（16019288／16416795），MB 未建。** barcode 依第 1674 條取 US CD 那筆的 `602567737353`。",
+    "rgMbid": "9c8e3dee-d175-41a6-839c-92682670536d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9c8e3dee-d175-41a6-839c-92682670536d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 33518,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "定好歌單之後，他去了好萊塢一間老餐館。坐在對面的是 Bill Withers 本人，飯局透過廠牌總裁 Don Was 約成，Withers 看過那份歌單，當面給了祝福。這張致敬碟收十二首 Withers 的歌，扣著他八十歲生日那一年，2018 年 9 月 28 日發行。起點是 José James 在現場一首一首把這些歌加進歌單，最後累積成一段很長的串燒；他要的作法是帶一支很強的樂團進 Capitol 的錄音室、把帶子跑起來。",
+    "sourceUrls": [
+     "https://www.bluenote.com/jose-james-pays-tribute-to-bill-withers/",
+     "https://www.discogs.com/release/12589453-Jos%C3%A9-James-Lean-On-Me",
+     "https://musicbrainz.org/release-group/9c8e3dee-d175-41a6-839c-92682670536d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/c9/cb/ccc9cbfb-7e2d-0c8a-277e-b23f69eb1b00/mzaf_14909371912228755787.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1426749854",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "GoGo Penguin",
+   "album": "A Humdrum Star",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `de5e3956-f770-4734-a205-d91cbaccf76c`。release-group 端點：title 逐字「A Humdrum Star」、artist-credit 逐字「GoGo Penguin」（Group 實體、單一 credit、**駝峰式無空格**）、first-release-date **2018-02-09**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `electronic`／`jazz`／`techno`。release 端點：**6 筆，全部 2018-02-09**——`284d3aa2`（XE Official CD 9 軌 barcode `602567176732`，**label-info 兩格 `Blue Note` ＋ `Universal Music France`，catno 皆 `06025 6716732`**）、`90fe08ef`（XE Official CD 9 軌 barcode `602567164319`，同樣兩格、catno `06025 67164319`）、`d51b1e06`（XE Official **12\" Vinyl 5 軌＋4 軌** barcode `0602567164302` Blue Note `06025 6716430 2`）、`ec92f963`（**JP** Official **CD 12 軌** barcode `4988031262504` Blue Note `UCCQ-1080`）、`51e7e25b`（**IE** Official Digital Media **11 軌**，barcode null，Blue Note catno null）、`4638c0fb`（**XW** Official Digital Media 9 軌，barcode null，**label-info 逐字 `Decca Records [f18f3b31]`**）。⚠ **軌數在 MB 端就有 9／11／12 三種**，本機配固定試聽要逐軌核。barcode 依第 1674 條取歐版 CD 的 `602567176732`。",
+    "rgMbid": "de5e3956-f770-4734-a205-d91cbaccf76c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/de5e3956-f770-4734-a205-d91cbaccf76c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 52479,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名來自一位天文學家在電視影集裡說的一句話。Carl Sagan 在 1980 年的《Cosmos》裡說，人類住在一顆平凡無奇的恆星旁邊那顆微不足道的行星上；而他們是先把曲序全部定完，才決定用這個名字。這支曼徹斯特三人團的底子來自電子樂愛好、古典學院與爵士樂團，作法是把原音與電子合在一起，九軌在 2018 年 2 月 9 日發行。曲子有兩種來源，一種是鼓手用 Logic 與 Ableton 寫出草稿再由三人一起發展，另一種直接在鋼琴上寫成。",
+    "sourceUrls": [
+     "https://www.bluenote.com/gogo-penguin-new-album-a-humdrum-star/",
+     "https://www.discogs.com/release/28404286-GoGo-Penguin-A-Humdrum-Star",
+     "https://musicbrainz.org/release-group/de5e3956-f770-4734-a205-d91cbaccf76c",
+     "https://music.apple.com/us/album/a-humdrum-star/1440905311"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/94/15/fa/9415facb-d134-d124-9604-5c484f866731/mzaf_1952192207105315874.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440905311",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marcus Miller",
+   "album": "Laid Black",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group `d9a2acde-6916-49ec-a48b-a8dbd3f99217`。release-group 端點：title 逐字「Laid Black」、artist-credit 逐字「Marcus Miller」（Person 實體、單一 credit）、first-release-date **2018-06-01**、primary-type `Album`、**secondary-types 逐字 `[]`**、genres 逐字 `contemporary jazz`／`jazz`／`jazz-funk`。release 端點：**6 筆，全部 2018-06-01**——**兩筆 Official**：`85c1c18e`（**US** Official CD 9 軌 barcode `602567645900`，**label-info 兩格 `Blue Note [713c4a95]` catno `8505802` ＋ `Universal Music Group [19d052fa]` catno `B00285802`**）、`6b74e70d`（**XE** Official CD 9 軌 同 barcode，**兩格 `Blue Note` ＋ `Universal Music France [c9b33d46]`、catno 皆 `0602567645900`**）；**四筆 `Withdrawn`**：`1723c3cb`／`9b3291ea`／`be6165d1`（Digital Media 9 軌，label-info 逐字 `Decca Records [f18f3b31]`、catno `[none]`）與 `d835109c`（FR Digital Media 9 軌 barcode `0602567645900`，label-info 逐字 `Blue Note`、catno `[none]`）。⚠ **`slice.json` 的 `catno` 欄逐字含 `[none]` 與 `B00285802`**（後者比 Discogs 的 `B002850802` 少一個 0，**是 MB 端的鍵入差異，本機補 UPC 時以 Discogs 34187608 的 `B002850802` 為準**）。barcode 依第 1674 條取 MB release 欄 `602567645900`。",
+    "rgMbid": "d9a2acde-6916-49ec-a48b-a8dbd3f99217",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d9a2acde-6916-49ec-a48b-a8dbd3f99217/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 27096,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "上一張沿著祖先的路線走，這一張拉回當下。他把《Afrodeezia》形容成一趟穿過自身歷史的航行，沿途與西非、北非、南美與加勒比海的樂手合作；這一次他改用今天都會音樂裡正在發生的元素，碟上因此聽得到嘻哈、trap、靈魂樂與放克。隔了三年，2018 年 6 月 1 日發行，九軌大部分是他和自己的樂團在紐約錄的。客座裡 Trombone Shorty 在〈7-T's〉吹長號獨奏，比利時歌手 Selah Sue 唱了〈Que Sera Sera〉的主唱。",
+    "sourceUrls": [
+     "https://www.bluenote.com/marcus-miller-returns-with-laid-black/",
+     "https://www.discogs.com/release/34187608-Marcus-Miller-Laid-Black",
+     "https://musicbrainz.org/release-group/d9a2acde-6916-49ec-a48b-a8dbd3f99217"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/66/80/7f/66807fcb-4e49-f3a8-587f-c4cf42b3d71a/mzaf_15361675359400071018.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1403663799",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Thomas Dutronc & Les Esprits Manouches",
+   "album": "Live Is Love",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f3e44cd5-1708-48f3-bf48-54cb24b1fe56。release-group 端點（inc=artist-credits+genres+tags+releases）：title 逐字「Live Is Love」、artist-credit 逐字兩格「Thomas Dutronc」（Person 83ec24f9）＋ joinphrase ` & ` ＋「Les Esprits Manouches」（**Group 實體 70593c54**）、first-release-date **2018-09-07**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**、**genres 逐字空陣列**、轄下 **1** 個 release。release 端點（inc=media+labels+recordings+artist-credits）：**0309fc04（2018-09-07 FR Official CD 15 軌，Blue Note[713c4a95] catno=`677950-3`，barcode `602567795032`）**，release 層 artist-credit 逐字亦為 `Thomas Dutronc & Les Esprits Manouches`。15 軌（Discogs 12560916 逐字，與 MB 同序）：Billets Doux／Comme Un Manouche Sans Guitare／Mademoiselle／Aragon／J'Me Fous De Tout／Rocky Blues／J'Suis Pas D'Ici／La Traviata／Love／Que Reste-t-il De Nos Amours?／Viens Dans Mon Île／Swing Gitan／Nasdaq／Rocking Chair／J'Aime Plus Paris。",
+    "rgMbid": "f3e44cd5-1708-48f3-bf48-54cb24b1fe56",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f3e44cd5-1708-48f3-bf48-54cb24b1fe56/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 23,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=23，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "曲單上有 Verdi，也有 John Lennon。十五軌全部是 2018 年巡演途中的現場錄音，軌名逐一標著法國各地的城鎮與年份；班底六人，兩把吉他、低音提琴、兩把小提琴與一支高音薩克斯風，全程原音。曲目的跨度極大，〈La Traviata〉只有兩分零九秒；〈Aragon〉把詩人 Louis Aragon 的文字譜成曲，作曲欄掛的是團裡的低音提琴手。2018 年 9 月 7 日由 Blue Note 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12836644",
+     "https://music.apple.com/fr/album/1420613594",
+     "https://musicbrainz.org/release-group/f3e44cd5-1708-48f3-bf48-54cb24b1fe56"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/44/dc/c0/44dcc053-9cf5-5884-f9d2-f893d8e5ba03/mzaf_3243925293159237147.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1420613594",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ambrose Akinmusire",
+   "album": "Origami Harvest",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 199d3e56-64f8-4b06-a792-61822f99c7a2。release-group 端點：title 逐字「Origami Harvest」、artist-credit 逐字「Ambrose Akinmusire」（**單一 Person 實體 2d3f545f**）、first-release-date **2018-10-12**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `hip hop`(1)／`jazz`(1)、轄下 **4** 個 release。release 端點：**505c6988（2018-10-12 US Official CD 6 軌，Blue Note[713c4a95] catno=`B002866202`，barcode `602567737414`）** ＋ 3f6a4d66（2018-10-12 MX Official Digital Media 6 軌，barcode `0602567737384`）＋ 5228e746（2018-10-12 MX Official Digital Media 6 軌，barcode `602567737377`）＋ 363d8a6c（2018-10-18 XW Official Digital Media 6 軌，barcode `0602567737391`），**四筆的 label-info 逐字都是 `Blue Note [713c4a95]`**。6 軌（Discogs 12676639 逐字）：A Blooming Bloodfruit In A Hoodie 12:57／Miracle And Streetfight 15:05／Americana / The Garden Waits For You To Match Her Wildness 10:41／Particle / Spectra 8:04／Free, White, And 21 3:06／The Lingering Velocity Of The Dead's Ambitions 9:55。",
+    "rgMbid": "199d3e56-64f8-4b06-a792-61822f99c7a2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/199d3e56-64f8-4b06-a792-61822f99c7a2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8707,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "弦樂四重奏、饒舌與一支小號，被並排放在同一張碟上。起點是一份委託：兩位策展人找上他，要他提出手上最瘋的點子。他的答案是做一個關於極端的計畫，把看起來相反的東西直接擺在一起；六軌的長度落差因此極大，最長的十五分零五秒、最短的三分零六秒。盤名的兩個字他自己解釋過，Origami 指黑人尤其是黑人男性折疊自己的種種方式，寫這批曲子期間他生了兒子，於是接上 Harvest。2018 年 10 月 12 日發行。",
+    "sourceUrls": [
+     "https://www.bluenote.com/ambrose-akinmusire-new-album-origami-harvest/",
+     "https://www.discogs.com/release/12676639",
+     "https://music.apple.com/us/album/origami-harvest/1434927808",
+     "https://musicbrainz.org/release-group/199d3e56-64f8-4b06-a792-61822f99c7a2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9e/79/8b/9e798b76-0edb-1ea2-076e-ed3e7cc6210b/mzaf_18432509029852958035.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1434927808",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark Knopfler",
+   "album": "Down the Road Wherever",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9f553358-71d1-4f0e-b182-b34ccdb1dfab。release-group 端點：title 逐字「Down the Road Wherever」（**`the` 小寫**）、artist-credit 逐字「Mark Knopfler」（**單一 Person 實體 e49f69da**）、first-release-date **2018-11-06**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `folk rock`(1)／`jazz`(1)／`rock`(2)／`soft rock`(2)、轄下 **10** 個 release。release 端點（**只列兩筆帶 Blue Note 的**）：**758bb6ad（2018-11-16 US Official CD 16 軌，label-info 兩格逐字 `Blue Note [713c4a95] catno=B002913602` ＋ `British Grove Records [d65abd9f] catno=B002913602`，barcode `602567940425`）** ＋ **d9e39e66（2018-11-16 US Official CD 13 軌，label-info 兩格逐字 `Blue Note [713c4a95] catno=B002920602` ＋ `British Grove Records [d65abd9f] catno=B002920602`，barcode `602577051401`）**；其餘八筆（77e2020d GB CD 14 軌 Virgin `CDV3214`／ce1fde04 XE CD 16 軌／4483b215 XE Digital 19 軌／b8a9a7ac、3394d468、cf16d5f9 XW Digital／f4e5338b GB 12\" Vinyl／c2ac1142 US Vinyl 箱組）**皆不掛 Blue Note**。13 軌（Discogs 12821424 逐字）：Trapper Man／Back On The Dance Floor／Nobody's Child／Just A Boy Away From Home／When You Leave／Good On You Son／My Bacon Roll／Nobody Does That／One Song At A Time／Floating Away／Slow Learner／Heavy Up／Matchstick Man。",
+    "rgMbid": "9f553358-71d1-4f0e-b182-b34ccdb1dfab",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9f553358-71d1-4f0e-b182-b34ccdb1dfab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8231,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一個利物浦球迷，午夜之後走在 Newcastle 街上。〈Just A Boy Away From Home〉寫的就是這個人，那一軌裡還用進了〈You'll Never Walk Alone〉的一段。這是他的第九張個人錄音室專輯，2018 年 11 月 16 日發行，發片時列出的題材裡就有這個在陌生城鎮走散的足球迷。盤名那句話來自老友 Chet Atkins，說自己是一次一首歌，從窮困裡彈出來的。",
+    "sourceUrls": [
+     "https://www.bluenote.com/mark-knopfler-down-the-road-wherever/",
+     "https://www.discogs.com/release/13349442",
+     "https://www.discogs.com/release/12821424",
+     "https://music.apple.com/us/album/1434070952",
+     "https://musicbrainz.org/release-group/9f553358-71d1-4f0e-b182-b34ccdb1dfab"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/63/9e/b7/639eb74f-5676-ed4b-b1d1-d86c1c1cd9a5/mzaf_5255425197153285846.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1434835233",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lonnie Smith",
+   "album": "All in My Mind",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ada76719-95c3-4ff9-bbdc-73c798d7fe22。release-group 端點：title 逐字「All in My Mind」（**`in`／`My`／`Mind` 的大小寫如此**）、artist-credit 逐字「Dr. Lonnie Smith」（**單一 Person 實體 58c2a0ee，本卡依第 1815 條寫成 `Lonnie Smith`**）、first-release-date **2018-01-12**、primary-type `Album`、**secondary-types 逐字空陣列**（⚠ **MB 沒有標 Live，但這確實是 Jazz Standard 的現場錄音——Discogs 11994944 的 companies 欄逐字 `Mixed At: Systems Two`，2020 Tone Poet 版 15188414 的廠牌鏈逐字帶 `Jazz Standard`**）、genres 逐字 `contemporary jazz`(1)／`jazz`(1)／`post-bop`(1)、轄下 **3** 個 release。release 端點：**6e0db6bc（`2018-01-12` AF Official Digital Media 7 軌，Blue Note[713c4a95] catno=null，barcode `602567218739`）** ＋ **346000b7（`2018-01-19` FR Official CD 7 軌，Blue Note[713c4a95] catno=null，barcode `602567218722`）** ＋ ⚠ **0e28fcb7（`2020-04-24` XW Official 12\" Vinyl **5 軌**，Blue Note[713c4a95] catno=`B0031576-01`，barcode `602508600395`——這一筆就是 Tone Poet 復刻，本卡不取）**。7 軌（Discogs 11994944 逐字）：Juju 8:18／Devika 6:55／50 Ways To Leave Your Lover 9:27／On A Misty Night 7:44／Alhambra 9:51／All In My Mind 8:20／Up Jumped Spring 5:57。",
+    "rgMbid": "ada76719-95c3-4ff9-bbdc-73c798d7fe22",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ada76719-95c3-4ff9-bbdc-73c798d7fe22/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 45,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=45，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七十五歲生日那一場，三個人在台上錄完了一整張。地點是紐約一家俱樂部，時間是 2017 年夏天，七軌全是那晚的現場。這張被接在 2016 年《Evolution》之後——那張標誌他重回這個廠牌，他當年就是在這裡以靈魂爵士唱片打出名號，中間離開了四十六年。開場翻的是 Wayne Shorter 的〈Juju〉，八分十八秒；Paul Simon 那首則被拉到九分二十七秒。2018 年 1 月 12 日發行。",
+    "sourceUrls": [
+     "https://www.bluenote.com/dr-lonnie-smith-new-album-all-in-my-mind/",
+     "https://www.discogs.com/release/11994944",
+     "https://music.apple.com/us/album/1440907508",
+     "https://musicbrainz.org/release-group/ada76719-95c3-4ff9-bbdc-73c798d7fe22"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/66/f3/2e/66f32e66-ee6a-ebcb-9d83-f37ac4e32c6a/mzaf_17767681606201992785.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1440907508",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jacky Terrasson",
+   "album": "53",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5dfa9b7d-ffab-457c-b3b1-fc7041ac8e96。release-group 端點：title 逐字「53」、artist-credit 逐字「Jacky Terrasson」（**單一 Person 實體 be3142ae**）、first-release-date **2019-09-27**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `jazz`(1)、轄下 **2** 個 release（⚠ **slice 的 `nReleases: 1` 已過期**）。release 端點：**7d27c191（2019-09-27 XW Official Digital Media 16 軌，Blue Note[713c4a95] catno=null，barcode `602508082016`）** ＋ **75384baf（`2019` 無國別 Official CD 16 軌，label-info 逐字空陣列、barcode null——資料較薄，廠牌與目錄號取 Discogs 14200033 的 `Blue Note 0808196`）**。16 軌（Discogs 14200033 逐字）：The Call 4:03／Alma 4:20／Mirror 1:49／Jump! 3:02／Kiss Jannett For Me 7:13／Palindrome 3:31／La Part Des Anges 3:36／Babyplum 3:13／What Happenes Au 6ème 1:45／My Lys 6:28／Lacrimosa - Mozart: Requiem In D Minor 1:24／Nausica 3:38／This Is Mine 4:45／La Part Des Anges - Reprise 2:04／Blues En Femmes Majeures 2:06／Resillience 3:19。",
+    "rgMbid": "5dfa9b7d-ffab-457c-b3b1-fc7041ac8e96",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5dfa9b7d-ffab-457c-b3b1-fc7041ac8e96/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 28433,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五十三歲那一年，他錄下這批曲子，盤名就寫那個數字。他說人到這個歲數會開始覺得抵達了某種成熟、正處在高點，因而能拉開一點距離，把事情看得更清楚。他刻意回到鋼琴、貝斯、鼓的三重奏，說那是最自由、也最能在個人表達與集體互動之間發揮的格式；原本打算整張用同一組新的節奏組，後來改成找三組搭檔輪流上陣，十六軌因此在三種底下換位。別人的曲子只有〈Lacrimosa〉一首，一分二十四秒，作曲欄逐字 Mozart。2019 年 9 月 27 日發行。",
+    "sourceUrls": [
+     "https://www.bluenote.com/jacky-terrasson-returns-to-blue-note-with-his-new-album-53-out-9-27/",
+     "https://www.discogs.com/release/14200033",
+     "https://musicbrainz.org/release-group/5dfa9b7d-ffab-457c-b3b1-fc7041ac8e96"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ea/87/41/ea874166-1532-bc97-d142-a83a6dbeb081/mzaf_15302290379676192858.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1475485221",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bill Frisell",
+   "album": "Harmony",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2640a4e0-f2e0-4736-81d7-b33018ccc847。release-group 端點：title 逐字「Harmony」、artist-credit 逐字「Bill Frisell」（**單一 Person 實體 a21318db**）、first-release-date **2019-10-04**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `contemporary jazz`(1)／`jazz`(1)、轄下 **4** 個 release。release 端點：**fead3451（2019-10-04 XE Official CD 14 軌，Blue Note[713c4a95] catno=`00602508001635`，barcode `602508001635`）** ＋ 9ba63fb5／f0e7fc85／395a05dc（三筆 2019-10-04 XW Official Digital Media 14 軌，Blue Note[713c4a95] **catno 逐字都是 `[none]`**，barcode 分別 `00602508001581`／`00602508001598`／`00602508001604`）。14 軌（Discogs 14251354 逐字，與 MB 同序）：Everywhere／God's Wing'd Horse／Fifty Years／Hard Times／Deep Dead Blue／There Is A Dream／Lonesome／On The Street Where You Live／How Many Miles?／Lush Life／Honest Man／Red River Valley／Curiosity／Where Have All The Flowers Gone?。",
+    "rgMbid": "2640a4e0-f2e0-4736-81d7-b33018ccc847",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2640a4e0-f2e0-4736-81d7-b33018ccc847/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4403,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個人裡有三個開口唱，樂隊裡一面鼓都沒有。這支無鼓四重奏本身就叫 Harmony，Bill Frisell 2019 年的《Harmony》指的正是這個團：人聲、大提琴、木吉他與上低音吉他，加上他自己的吉他。四重奏 2016 年在舊金山首演，他說幾乎到最後一刻才發現每個人都會唱，聽他們唱過幾首之後就知道成了。這是他掛自己名字在 Blue Note 發的第一張碟，2019 年 10 月 4 日發行，而他與這個廠牌的關係已經將近三十年，起點是 1992 年一張別人的唱片。",
+    "sourceUrls": [
+     "https://www.bluenote.com/bill-frisell-to-release-blue-note-debut-harmony-oct-4/",
+     "https://www.discogs.com/release/14251354",
+     "https://music.apple.com/us/album/1475040569",
+     "https://musicbrainz.org/release-group/2640a4e0-f2e0-4736-81d7-b33018ccc847"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0f/7c/41/0f7c4175-0a97-44da-092a-afe7f37f07b9/mzaf_3410361184497796743.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1475040569",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Norah Jones",
+   "album": "Begin Again",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c43f36d2-c6d2-44bd-b361-b76c461ec7a0。release-group 端點：title 逐字「Begin Again」、artist-credit 逐字「Norah Jones」（**單一 Person 實體 985c709c**）、first-release-date **2019-04-12**、primary-type `Album`、**secondary-types 逐字空陣列**（⚠ **Discogs 標 Compilation、MB 沒標，見 `risk`**）、genres 逐字 `contemporary jazz`(2)／`jazz`(4)／`jazz fusion`(1)／`singer-songwriter`(1)／`vocal jazz`(2)、轄下 **8** 個 release。release 端點：**36c4f173（2019-04-12 US Official CD 7 軌，Blue Note[713c4a95] catno=`B002978602`，barcode `602577440410`）** ＋ b1d179fb（XE CD 7 軌 catno `00602577440410`）＋ 66bcde08（JP SHM-CD 7 軌 catno `UCCQ-1097`，barcode `4988031325117`）＋ f6053f8c（XE 12\" Vinyl 7 軌 catno `00602577440403`）＋ 7b405d0b（US 12\" Vinyl 7 軌 catno `B002978701`）＋ 9dc50f8e／f1bf4d60／df29c0c4（三筆 XW Digital Media 7 軌），**八筆的 label-info 逐字全部是 `Blue Note [713c4a95]`**。7 軌（Discogs 13491053 逐字）：My Heart Is Full 3:06／Begin Again 3:49／It Was You 5:30／A Song With No Name 4:03／Uh Oh 3:37／Wintertime 3:48／Just A Little Bit 5:02。",
+    "rgMbid": "c43f36d2-c6d2-44bd-b361-b76c461ec7a0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c43f36d2-c6d2-44bd-b361-b76c461ec7a0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 54924,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七首歌分給三組搭檔：合成器、木吉他，與管風琴加銅管。這七軌多半是她過去一年間陸續錄下並發表的單曲，再添幾首先前未發表的歌湊成一張，2019 年 4 月 12 日發行。背景是 2016 年那趟巡演結束後，她刻意離開既有的發片節奏，回到錄音室找不同的朋友做幾天短的、多半即興的錄音。兩軌是鋼琴、鍵盤與合成器，兩軌由 Jeff Tweedy 製作、他兒子打鼓，另外三軌是 Brian Blade 的鼓配 Hammond B-3 與銅管。她說每次錄音的點子都是為那幾位樂手想的。",
+    "sourceUrls": [
+     "https://www.bluenote.com/norah-jones-begin-again-new-singles-collection-out-now/",
+     "https://www.discogs.com/release/13491053",
+     "https://music.apple.com/us/album/1451698947",
+     "https://musicbrainz.org/release-group/c43f36d2-c6d2-44bd-b361-b76c461ec7a0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/f1/db/5df1db77-85e6-1797-b600-653752d70fe4/mzaf_2229054416460560908.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1451698947",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yaron Herman Trio",
+   "album": "Songs of the Degrees",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 393ec8e5-35f3-4958-b932-caa723f83f1e。release-group 端點：title 逐字「Songs of the Degrees」（**`of the` 小寫**）、artist-credit 逐字「Yaron Herman Trio」（**Group 實體 50bb373d，與《Everyday》的 Person 實體不同**）、first-release-date **2019-02-15**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `jazz`(1)、轄下 **1** 個 release。release 端點：**7457aefc（2019-02-15 XW Official CD 11 軌，Blue Note[713c4a95] catno=`773094-0`，barcode `602577309403`）**。11 軌（Discogs 13513150 逐字，與 MB 同序）：Our Love 4:07／Kinship 6:58／Song of the Degrees 6:28／Still Awake 5:35／Upside Down 6:08／Traveling Light 5:22／The Hero with a Thousand Faces 5:13／From the Sun 3:39／Shadow Walk 6:58／Crazy Cat 3:03／Just Being 4:16。",
+    "rgMbid": "393ec8e5-35f3-4958-b932-caa723f83f1e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/393ec8e5-35f3-4958-b932-caa723f83f1e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4276,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三個人、十一軌、一間錄音室，沒有任何客席。那間錄音室叫 Studio Besco，全碟就在這裡錄完，2019 年 2 月 15 日發行。盤名是複數，碟裡對應的那一軌卻是單數——第 3 軌的軌名逐字寫著〈Song of the Degrees〉，六分二十八秒。混音欄掛的是貝斯手 Sam Minaie 自己，製作人欄掛的是鋼琴手。十一軌全部落在三到七分鐘之間，最長的兩軌並列六分五十八秒，最短的〈Crazy Cat〉三分零三秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/13513150",
+     "https://musicbrainz.org/release-group/393ec8e5-35f3-4958-b932-caa723f83f1e",
+     "https://music.apple.com/fr/album/1447099462"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ac/c7/65/acc76556-769c-7890-4480-6ad113a345dd/mzaf_10918497805643574703.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1447099462",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ron Carter & Danny Simmons",
+   "album": "The Brown Beatnik Tomes (Live at BRIC House)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4ae7fb09-fe64-423d-9b93-80678e832bbe。release-group 端點：title 逐字「The Brown Beatnik Tomes (Live at BRIC House)」（**`at` 小寫、`BRIC` 全大寫**）、artist-credit 逐字兩格「Ron Carter」（Person 57db3f59）＋ joinphrase `, ` ＋「Danny Simmons」（**MB 端 type 為 null 的實體 55402c70**）、first-release-date **2019-06-07**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**、genres 逐字 `beat poetry`(1)／`jazz`(1)／`spoken word`(1)、轄下 **2** 個 release。release 端點：**88e88653（2019-06-07 US Official CD 9 軌，Blue Note[713c4a95] catno=`b002998802`（**MB 端目錄號是小寫 `b`**），barcode `602577524547`）** ＋ ea413d57（2019-06-07 US Official Digital Media 9 軌，label-info 逐字空陣列、barcode null）。9 軌（Discogs 21969445 逐字）：For A Pistol 2:19／The Final Stand Of Two Dick Willie 1:22／Feeling It Coming On 1:48／Tender 2:40／Here's To Oscar 2:52／Where Do I Begin 7:10／There Will Never Be Another You 2:07／The Jigaboo Waltz 8:10／The Brown Beatlink Tomes 2:45（**末軌盤面錯字，見 `risk`**）。",
+    "rgMbid": "4ae7fb09-fe64-423d-9b93-80678e832bbe",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4ae7fb09-fe64-423d-9b93-80678e832bbe/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=6，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "先是一本書，然後是一場活動，最後成了一張唱片。書名就叫《Brown Beatnik Tomes》，Simmons 的畫與詩本來就並置在裡面，演出當晚那些畫被投影在他身後。錄的是布魯克林 BRIC House 的一個秋夜，2019 年 6 月 7 日發行。Simmons 說他寫這批東西時想像自己是 1950 年代的垮世代詩人，也說那個場景大多在講黑人的經驗、裡面卻沒有黑人。Carter 活過那個年代，他說自己沒有參與那場運動，當時投身黑人社群，跟民謠歌手一起演奏。",
+    "sourceUrls": [
+     "https://www.bluenote.com/ron-carter-and-danny-simmons-to-release-the-brown-beatnik-tomes-live-at-bric-house-on-june-7/",
+     "https://www.discogs.com/release/21969445",
+     "https://music.apple.com/us/album/1458903206",
+     "https://musicbrainz.org/release-group/4ae7fb09-fe64-423d-9b93-80678e832bbe"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/32/36/a2/3236a20e-f21e-8632-b187-00f637808b03/mzaf_12838516623170093272.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1458533935",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "山中千尋",
+   "album": "Prima del Tramonto",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4cd51ecb-50a7-47ff-baba-397512ccb4e8。release-group 端點：title 逐字「Prima del Tramonto」（**`del` 小寫**）、artist-credit 逐字「Chihiro Yamanaka」（**背後實體 1b2eafe8 的名稱逐字是 `山中千尋`，type `Person`；本卡依主線第 1672 條寫成 `山中千尋`**）、first-release-date **2019-06-26**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `contemporary jazz`(1)／`jazz`(2)、轄下 **4** 個 release。release 端點：**194aceb7（2019-06-26 JP Official SHM-CD 10 軌，Blue Note[713c4a95] catno=`UCCJ-2167`，barcode `4988031333747`）** ＋ 11d62022（2019-06-26 JP Official HQCD 10 軌＋DVD-Video 3 軌，catno `UCCJ-9218`，barcode `4988031333730`）＋ ⚠ **0ef390fc（2019-06-26 XW Official Digital Media 10 軌，catno=null，barcode `602577822339`，**artist-credit 逐字是漢字 `山中千尋`**）** ＋ 0a9223d6（2019-10-09 JP Official 12\" Vinyl 10 軌，catno `UCJJ-9017`，barcode `4988031345238`），**四筆的 label-info 逐字全部是 `Blue Note [713c4a95]`**。10 軌（Discogs 13802015 逐字）：Gennarino 5:01／Pasolini 5:22／Thinking Of You 5:39／Never 5:04／Cherokee 4:22／Sweet Love Of Mine 5:08／Looking Up 6:37／Blue Minor 4:02／Solitude / C Jam Blues 4:41／Prima Del Tramonto 3:13。",
+    "rgMbid": "4cd51ecb-50a7-47ff-baba-397512ccb4e8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4cd51ecb-50a7-47ff-baba-397512ccb4e8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 42,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=42，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩個週年疊在同一張碟上：廠牌八十歲，他走了二十年。前者是 Blue Note 在 2019 年滿八十，後者是 Michel Petrucciani 逝世二十年，官方把這兩個題目並列在商品頁上。對應前一條的是兩首取自廠牌舊目錄的曲子，Sonny Clark 與 Woody Shaw 各一首；對應後一條的是第 7 軌〈Looking Up〉，作曲欄逐字掛著那位鋼琴家的名字，六分三十七秒，也是全碟最長的一軌。2019 年 6 月 26 日發行。",
+    "sourceUrls": [
+     "https://www.universal-music.co.jp/chihiro-yamanaka/products/uccj-2167/",
+     "https://www.discogs.com/release/13802015",
+     "https://musicbrainz.org/release-group/4cd51ecb-50a7-47ff-baba-397512ccb4e8",
+     "https://music.apple.com/jp/album/1468029791"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/a7/3a/eaa73ad8-6a7e-08aa-099d-063c48beb5ff/mzaf_14996540046787401797.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1468029791",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Charles Lloyd",
+   "album": "8: Kindred Spirits (Live From the Lobero)",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cdb92bc4-6ac2-4331-aebf-0f33960dd138。release-group 端點：title 逐字「8: Kindred Spirits (Live From the Lobero)」、artist-credit 逐字「Charles Lloyd」（**單一 Person 實體 b9b579ad**）、first-release-date **2020-02-14**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**、genres 逐字 `jazz`(1)、轄下 **4** 個 release。release 端點：0c4c48c6（2020-02-14 US Official Digital Media 4 軌，label-info 逐字空陣列、barcode null）＋ **40a34ddb（2020-02-28 XE Official CD 4 軌，Blue Note[713c4a95] catno=null，barcode `602508001543`）** ＋ c75b045b（2020-02-28 FR Official CD 4 軌＋DVD-Video 4 軌，Blue Note[713c4a95]，barcode `602508001543`）＋ ⚠ **d869d262（無日期無國別 Official CD **12 軌**，label-info 逐字空陣列——這是加長版的曲目：Dream Weaver／Requiem／La Llorona／Part 5, Ruminations／Abide With Me／Song For Charles／Island Blues／Shenandoah／Sombrero Sam／Green Onions／Forest Flower／You Are So Beautiful**）。零售 4 軌（Discogs 15708318 逐字）：Dream Weaver 21:05／Requiem 11:32／La Llorona 9:03／Part 5, Ruminations 18:07。",
+    "rgMbid": "cdb92bc4-6ac2-4331-aebf-0f33960dd138",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cdb92bc4-6ac2-4331-aebf-0f33960dd138/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13045,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "台上有位吉他手三十一歲，請上來的客人七十四歲。錄的是 2018 年 3 月 15 日他八十歲生日那一場，地點是 Lobero Theatre，盤名開頭那個 8 就是這個歲數。那晚的人選橫跨世代：代表未來的是三十四歲的鋼琴手，以及那位十二歲時就與他同台過的吉他手；代表過去的是與他同樣出身 Memphis 的 Booker T. Jones，在那之前從未與他合作。標準版收的是當晚第一組曲目的四軌，2020 年 2 月 28 日發行。",
+    "sourceUrls": [
+     "https://www.bluenote.com/charles-lloyd-to-release-8-kindred-spirits-live-from-the-lobero-on-feb-14/",
+     "https://www.discogs.com/release/15708318",
+     "https://www.bluenote.com/artist/charles-lloyd/",
+     "https://music.apple.com/us/album/1491270957",
+     "https://musicbrainz.org/release-group/cdb92bc4-6ac2-4331-aebf-0f33960dd138"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/fe/b8/0afeb870-92c6-5c1c-315a-1d08a7e5aa44/mzaf_11438178831379241939.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1491270957",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Derrick Hodge",
+   "album": "COLOR OF NOIZE",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1287c4cd-d391-494c-99c3-5654f9625b94。release-group 端點：title 逐字「COLOR OF NOIZE」（**全大寫**）、artist-credit 逐字「Derrick Hodge」（**單一 Person 實體 f3b66b77**）、first-release-date **2020-06-26**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `jazz`(1)、轄下 **2** 個 release。release 端點：**8952b32e（2020-06-26 US Official CD 11 軌，Blue Note[713c4a95] catno=null，barcode `602508926259`）** ＋ 74596926（2020-06-26 XW Official Digital Media 11 軌，Blue Note[713c4a95] catno=null，barcode `602508926235`）。11 軌（Discogs 15575039 逐字）：The Cost／Not Right Now／Little Tone Poem／You Could Have Stayed／Color Of Noize／19／Fall／Looking At You／Heartbeats／New Day／You Could Have Stayed（**第 4 與第 11 軌同名，見 `why`**）。",
+    "rgMbid": "1287c4cd-d391-494c-99c3-5654f9625b94",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1287c4cd-d391-494c-99c3-5654f9625b94/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12948,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "樂隊第一次一起演奏，就是這場錄音。這也是他第一次整張用現場樂隊錄，那些人當天才第一次聽到他為這場錄音寫的歌：他先在鋼琴上把每首曲子快速彈過一遍，然後就讓他們放手，帶進錄音間的那點材料當場學、當場錄。名單是兩台鍵盤、兩套鼓、一組唱盤，加上他自己的貝斯、鍵盤、吉他與人聲，兩位鼓手多數時候是同時上的。他還第一次找了共同製作人，對方形容現場像回到一九六○年代中期一場錄音的地板上。2020 年 6 月 26 日發行。",
+    "sourceUrls": [
+     "https://www.bluenote.com/derrick-hodge-returns-with-a-new-band-concept-album-color-of-noize-out-june-26/",
+     "https://www.discogs.com/release/15575039",
+     "https://music.apple.com/us/album/1511790333",
+     "https://musicbrainz.org/release-group/1287c4cd-d391-494c-99c3-5654f9625b94"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c3/cb/14/c3cb149c-22d4-e095-e9db-40df8d3caa19/mzaf_17311439434154297602.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1511790333",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "GoGo Penguin",
+   "album": "Live from Studio 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7c84fbc9-56d9-47fc-82a8-7d7baa57c841。release-group 端點：title 逐字「Live from Studio 2」（**`from` 小寫**）、artist-credit 逐字「GoGo Penguin」（**Group 實體 b328de0e**）、first-release-date **2020-11-27**、primary-type `Album`、**secondary-types 逐字 `[\"Live\"]`**（⚠ **Discogs 那一側標 `EP`，見 `risk`**）、genres 逐字 `contemporary jazz`(2)／`jazz`(1)、轄下 **1** 個 release。release 端點：**656d7cc4（2020-11-27 XW Official Digital Media 7 軌，Blue Note[713c4a95] catno=null，barcode `00602435337210`）**。7 軌（Discogs 37556118 逐字，與 MB 同序）：Totem 3:52／Petit_a 4:12／Bardo 6:00／Atomised 4:41／F Maj Pixie 6:07／Kora 5:41／Protest 4:45。",
+    "rgMbid": "7c84fbc9-56d9-47fc-82a8-7d7baa57c841",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7c84fbc9-56d9-47fc-82a8-7d7baa57c841/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4600,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一棟錄音室建築，他們在這裡錄下第二份現場。更早那一次的成品是一張 EP，這一回是只有數位版的現場錄音，七軌全部錄在 Abbey Road Studios 的第二錄音室，2020 年 11 月 27 日上線。七軌都是自己既有曲目的重奏，四首出自 2020 年的同名專輯，2018 年與 2016 年那兩張各出一首。全碟約三十五分鐘，最長的一軌六分零七秒，最短的三分五十二秒。隔年他們把同一批曲子交給外部製作人重混成另一張碟。",
+    "sourceUrls": [
+     "https://music.apple.com/gb/album/1538151286",
+     "https://www.discogs.com/release/16278491",
+     "https://musicbrainz.org/release-group/7c84fbc9-56d9-47fc-82a8-7d7baa57c841",
+     "https://www.bluenote.com/gogo-penguin-release-live-at-abbey-road-ep-ma/",
+     "https://www.bluenote.com/artist/gogo-penguin/",
+     "https://www.bluenote.com/gogo-penguin-announce-new-remix-album-ggp-rmx-out-may-7/"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/38/e0/da/38e0da02-4380-b9bd-f521-d2b8c8cde97c/mzaf_1365780260185531826.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1538151286",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rick Margitza",
+   "album": "Hope",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b997a7b7-46b2-4aa8-9575-523c94cfd360。release-group 端點：title 逐字「Hope」、artist-credit 逐字「Rick Margitza」（**單一 Person 實體 fc171442**）、**first-release-date 逐字 `2020-04-10`（⚠ 這是 MB 的數位再發日，不是本碟的發行年，見 `risk`；本卡 `year` 判 1991）**、primary-type `Album`、**secondary-types 逐字空陣列**、**genres 逐字空陣列**、轄下 **1** 個 release。release 端點：**6070288c（2020-04-10 XW Official Digital Media 11 軌，Blue Note[713c4a95] catno=null，barcode `602508924392`）**——⚠ **MB 沒有為 1991 年的任何一筆實體建 release**。1991 年的實體（Discogs 逐字）：**美版 CD `CDP7948582`（1749772，barcode `077779485826`）／美版卡帶 `B4-94858`（11567938）／美版宣傳卡帶（16029789）／Columbia House CD `CDP-594858`（38010000）／日版 CD `TOCJ-5285`（21540820，東芝 EMI）**。11 軌（Discogs 1749772 逐字，與 MB 2020 數位版同序同名）：The Journey 6:55／Song Of Hope 5:59／Stepping Stone 8:46／The Princess 5:05／Walls 6:49／Mother's Day 1:23／Recess 4:41／Heritage 5:28／The Old Country 8:40／We The People 4:01／Cornfed 8:15。",
+    "rgMbid": "b997a7b7-46b2-4aa8-9575-523c94cfd360",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b997a7b7-46b2-4aa8-9575-523c94cfd360/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 60,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=60，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "薩克斯風後面站著雙簧管、大提琴，還有一組唱歌的小孩。那組童聲出現在第 7 軌〈Recess〉，四分四十一秒，名單上是四個名字加一位指揮。這是他的第二張個人專輯，1991 年由 Blue Note 發行，十一軌全部由他一個人作曲。當年的樂評說這位年輕的薩克斯風手在這張碟上施展的是帶靈魂感、令人想起早期 John Coltrane 的風格。這張碟進了 Billboard 的當代爵士專輯榜，1991 年 4 月 27 日那期排到第 11 名。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1749772",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-02-02.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-04-27.pdf",
+     "https://www.bluenote.com/artist/rick-margitza/",
+     "https://music.apple.com/us/album/1506295924",
+     "https://musicbrainz.org/release-group/b997a7b7-46b2-4aa8-9575-523c94cfd360"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/2f/91/85/2f918503-cefb-cafc-09e3-1a3389d70f4c/mzaf_15030236469789661748.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1506295924",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Götz Alsmann",
+   "album": "L.I.E.B.E.",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group adf9a0eb-7c51-4caf-b784-7684750884ff。release-group 端點：title 逐字「L.I.E.B.E.」（**全大寫、五個 ASCII 句點**）、artist-credit 逐字「Götz Alsmann」（**單一 Person 實體 f07ceb71，`ö` U+00F6**）、first-release-date **2020-11-17**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `easy listening`(1)／`jazz`(1)、轄下 **3** 個 release。release 端點：**f6fe40c0（2020-11-17 DE Official CD **20 軌**，Blue Note[713c4a95] catno=`00602507188702`，barcode `0602507188702`）** ＋ **25ccbdd3（2020-11-27 DE Official CD **18 軌**，Blue Note[713c4a95] catno=null，barcode `0602507188672`）** ＋ ⚠ **3569d778（`2020` DE Official CD 18 軌，label-info 逐字 `ROOF Music [3065c043]` catno=`00602507188665`，barcode `0602507188665`——這一筆不掛 Blue Note）**。18 軌（Discogs 17206627 逐字）：L.I.E.B.E.／So Einen Jungen Mann／Man Müsste Klavier Spielen Können／Unter Den Tausend Laternen／Musik Liegt In Der Luft／Was Ich Dir Sagen Will／Gestern Abend Ging Ich Aus／Der Sommerwind／Ganz Leis' Erklingt Musik／Amigo／Nur Eine Schlechte Kopie／Mein Herz Hat Heut' Premiere／Sag' Mir Nie Wieder \"Je t'aime\"／Du Darfst Mir Nie Mehr Rote Rosen Schenken／Zauberlied／Liebe Ist Doch Kein Ringelreih'n／Wo?／Die Kleine Stadt Will Schlafen Geh'n；**20 軌版另加〈Bim Bam〉與〈An Einem Abend Im April〉**（Discogs 19188928 逐字）。",
+    "rgMbid": "adf9a0eb-7c51-4caf-b784-7684750884ff",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/adf9a0eb-7c51-4caf-b784-7684750884ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 202,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=202，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標題曲的德語詞，是後來另外找人補上去的。那一軌的名單分成三格：作曲欄 Bert Kaempfert、作詞欄 Milt Gabler，德語填詞者另外掛一格。同樣的事發生在第 2 軌，作曲作詞欄是一對巴西兄弟，德語詞另掛一個名字。整張是一本德語流行歌本，十六首曲子的作詞作曲欄全是德語流行歌的名字，2020 年 11 月 27 日發行。固定班底四人撐底，七首曲子另加一支管弦樂團；他自己在這張碟上掛了八件樂器加人聲，另掛音樂總監與編曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/17206627",
+     "https://musicbrainz.org/release-group/adf9a0eb-7c51-4caf-b784-7684750884ff",
+     "https://music.apple.com/de/album/1535625211"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3d/41/9a/3d419ab7-11bc-9976-750b-e6cc1bdd234b/mzaf_15078005058621949257.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1535625211",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Nels Cline Singers",
+   "album": "Share the Wealth",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 53208d9b-7119-4524-ba40-f9da01b7cfa4。release-group 端點：title 逐字「Share the Wealth」（**`the` 小寫**）、artist-credit 逐字「The Nels Cline Singers」（**Group 實體 fd23ad56**）、first-release-date **2020-11-13**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `contemporary jazz`(1)／`free improvisation`(1)／`jazz`(1)／`jazz fusion`(1)／`jazz rock`(1)／`rock`(1)、轄下 **3** 個 release。release 端點：**0df93568（2020-11-13 US Official CD 10 軌，label-info 兩格逐字 `The Alstro Imprint [5b03301c] catno=00602507370794` ＋ `Blue Note [713c4a95] catno=B003244802`，barcode `602507370794`）** ＋ 7ace6da2（2020-11-13 XE Official CD 10 軌，同樣兩格，barcode `602507370794`）＋ 24a9a398（2020-11-13 XW Official Digital Media 10 軌，Blue Note[713c4a95] catno=null，barcode `602507370763`）。10 軌（Discogs 19744789 逐字，與 MB 同序）：Segunda 6:39／Beam/Spiral 8:48／Nightstand 4:24／Stump The Panel 17:18／Headdress 5:23／Princess Phone 5:23／The Pleather Patrol 8:13／Ashcan Treasure 2:33／A Place On The Moon 15:59／Passed Down 4:03。",
+    "rgMbid": "53208d9b-7119-4524-ba40-f9da01b7cfa4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/53208d9b-7119-4524-ba40-f9da01b7cfa4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 407,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=407，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他本來要把這些即興剪碎重拼，聽完之後一刀都沒剪。原先的目標是一張迷幻的剪貼唱片；回頭聽的時候他太喜歡那些段落，決定整段保留，還說最讓人吃驚的幾個轉折靠的不是剪接，是那幾段長即興在錄音室裡當場發生的。這一次的編制是擴編版，薩克斯風、鍵盤、貝斯、鼓之外再加一位巴西打擊樂手，整張只在布魯克林一間錄音室錄了兩天。成品是十軌的雙專輯，兩首超過十五分鐘，最長的十七分十八秒，2020 年 11 月 13 日發行。",
+    "sourceUrls": [
+     "https://www.bluenote.com/the-nels-cline-singers-to-release-new-album-share-the-wealth-on-nov-13/",
+     "https://www.discogs.com/release/19744789",
+     "https://www.bluenote.com/the-nels-cline-singers-cover-caetano-veloso-with-new-single-segunda/",
+     "https://musicbrainz.org/release-group/53208d9b-7119-4524-ba40-f9da01b7cfa4"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5d/58/d7/5d58d7db-5776-5e38-f6b0-4ca076a04d29/mzaf_8063824307640341956.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1531002091",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gregory Porter",
+   "album": "All Rise",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 630bad48-2f57-46df-8248-2ce172e07327。release-group 端點：title 逐字「All Rise」、artist-credit 逐字「Gregory Porter」（**單一 Person 實體 7ac1e33f**）、first-release-date **2020-08-28**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `jazz`(1)、轄下 **12** 個 release。release 端點（**只列實體與代表性數位**）：**104614ec（2020-08-28 US Official CD 13 軌，label-info 兩格逐字 `Blue Note [713c4a95] catno=B003164502` ＋ `Verve [99a24d71] catno=B003164502`，barcode `602508619786`）** ＋ 3abd0147（2020-08-28 GB Official CD 13 軌，`Blue Note` ＋ `Decca Records [f18f3b31]`，catno `00602508620355`，barcode `602508620355`）＋ e9a61140（2020-08-28 XE Official CD **15 軌**，catno `08620353`，barcode `602508620539`）＋ 2c4d0b25（`2020` XE Official CD 13 軌，`Decca Records` catno=`0861978` ＋ `Blue Note` catno=null）＋ 9b7541df／684186e2／d75046f8／fd48631c（四筆 Digital Media **16 軌**）＋ be8947f7／062b4956／42d089cd（三筆 Digital Media **14 軌**）＋ ⚠ ec3842cb（**2021-07-02** XW Digital Media **18 軌**，隔年加值版），**十二筆的 label-info 逐字全部含 `Blue Note [713c4a95]`**。13 軌（Discogs 15934398 逐字）：Concorde 3:55／Dad Gone Thing 5:02／Revival Song 3:33／If Love Is Overrated 5:54／Faith In Love 4:56／Merchants Of Paradise 6:00／Long List Of Troubles 4:15／Mister Holland 3:24／Modern Day Apprentice 2:54／Everything You Touch Is Gold 6:00／Phoenix 4:45／Merry Go Round 5:26／Thank You 5:20。",
+    "rgMbid": "630bad48-2f57-46df-8248-2ce172e07327",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/630bad48-2f57-46df-8248-2ce172e07327/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5844,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "先行單曲的錄影帶開頭，向 Freddie Gray 致意。那支先行單曲是〈Revival〉，錄影帶由一位導演執導、一位舞者主演，開頭那一段指向巴爾的摩，他說要它也帶一個重要的政治訊息。談那首歌他講得很直：這就是純福音，是他在教會裡聽到的東西，有人被聖靈觸動時節奏就是這樣。盤名他自己解釋過，這句話一般是總統或法官走進房間時才聽得到，但他想的是所有人都起立，是大家一起被愛抬起來。這是他的第六張錄音室專輯，2020 年 8 月 28 日發行。",
+    "sourceUrls": [
+     "https://www.bluenote.com/gregory-porter-releases-lead-single-revival-from-new-album-all-rise-out-april-17/",
+     "https://www.discogs.com/release/15934398",
+     "https://music.apple.com/gb/album/1494284390",
+     "https://music.apple.com/gb/album/1493816720",
+     "https://musicbrainz.org/release-group/630bad48-2f57-46df-8248-2ce172e07327"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/2a/81/e52a81f7-ae3b-c3a6-dcd8-5c858cd5e2b6/mzaf_5601727879720091389.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1493816720",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Art Blakey & The Jazz Messengers",
+   "album": "Just Coolin'",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 95431cc6-5efc-4d66-a250-d6ac60ce90ae。release-group 端點：title 逐字「Just Coolin’」（**MB 端是 U+2019 彎撇號；本卡依 ②＋④ 與池中慣例寫成 ASCII `Just Coolin'`，見 `risk`**）、artist-credit 逐字「Art Blakey & The Jazz Messengers」（**Group 實體 209ddf15，sort-name 逐字 `Blakey, Art & The Jazz Messengers`**）、first-release-date **2020-07-17**、primary-type `Album`、**secondary-types 逐字空陣列**（⚠ **MB 沒有標 Live——正確，這是錄音室 session**）、genres 逐字 `hard bop`(3)、轄下 **4** 個 release。release 端點：**19f31efe（2020-07-17 US Official CD 6 軌，label-info 兩格逐字 `Blue Note [713c4a95] catno=B003164102` ＋ `Blue Note [713c4a95] catno=ST-64102`，barcode `602508650222`）** ＋ 0fff9e5e（2020-07-17 US Official 12\" Vinyl 6 軌，catno `ST-64201`，barcode `602508650239`）＋ 79fd297c（2020-07-17 XW Official Digital Media 6 軌，catno=null，barcode `602508650208`）＋ fe160ea5（`2020` XE Official CD 6 軌，catno `00602508650222`＋`ST-64102`）。6 軌（Discogs 15639198 逐字，與 MB 同序）：Hipsippy Blues 6:40／Close Your Eyes 6:26／Jimerick 6:22／Quick Trick 4:43／M&M 5:59／Just Coolin' 8:43。",
+    "rgMbid": "95431cc6-5efc-4d66-a250-d6ac60ce90ae",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/95431cc6-5efc-4d66-a250-d6ac60ce90ae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 63576,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這批母帶在架上躺了六十一年。錄音是 1959 年 3 月 8 日在 Van Gelder 位於紐澤西的自宅錄音室做的，六軌當年一軌未發。同年 4 月 15 日樂團在紐約 Birdland 的一場現場，又演了那六首裡的四首，那是兩次不同的演出；廠牌最後選擇發行的是那套現場的兩卷本，錄音室這一份就此被蓋過去。那天在場的是一組短命的編制：Lee Morgan、Hank Mobley 與一位鋼琴手，六軌裡有三軌是 Mobley 寫的。2020 年首次發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15639198",
+     "https://www.bluenote.com/art-blakey-jazz-messengers-just-coolin/",
+     "https://musicbrainz.org/release-group/95431cc6-5efc-4d66-a250-d6ac60ce90ae"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/ce/50/8dce505b-bf07-8f32-5934-452a443cf737/mzaf_5271295064150496309.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1500694273",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Norah Jones",
+   "album": "Pick Me Up Off the Floor",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ec35b59b-2f3c-414e-9225-6c8e93f3dbfa。release-group 端點：title 逐字「Pick Me Up Off the Floor」（**`the` 小寫**）、artist-credit 逐字「Norah Jones」（**單一 Person 實體 985c709c**）、first-release-date **2020-06-12**、primary-type `Album`、**secondary-types 逐字空陣列**、genres 逐字 `contemporary jazz`(3)／`jazz`(7)／`singer-songwriter`(1)／`vocal jazz`(3)、轄下 **12** 個 release。release 端點（**只列實體與代表性數位**）：**d33feec8（2020-06-12 US Official CD 11 軌，Blue Note[713c4a95] catno=`B003179402`，barcode `602508748844`）** ＋ 1f350112（US CD **13 軌** catno `B003179702`，barcode `602508748851`）＋ 89d045c7（AU CD 11 軌 catno `0874884`）＋ 9cb50338（XE CD 13 軌 catno `00602508914263`）＋ 03d19edd（`2020` XE CD 11 軌 catno `00602508748844`）＋ fb9d0699（JP SHM-CD 13 軌＋DVD-Video 4 軌，catno `UCCQ-9571`，barcode `4988031380154`）＋ 1369d288／d2185661／cb067094（三筆 XW Digital Media **30 軌**）＋ d712a517／9cc26fa2／47e530bf（三筆 XW Digital Media 11 軌），**十二筆的 label-info 逐字全部是 `Blue Note [713c4a95]`**。11 軌（Discogs 15462055 逐字）：How I Weep 4:42／Flame Twin 3:21／Hurts To Be Alone 3:26／Heartbroken, Day After 4:12／Say No More 4:58／This LIfe 2:38（**盤面逐字如此，大寫 `I`**）／To Live 4:29／I'm Alive 4:17／Were You Watching? 5:17／Stumble On My Way 3:53／Heaven Above 4:16。",
+    "rgMbid": "ec35b59b-2f3c-414e-9225-6c8e93f3dbfa",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ec35b59b-2f3c-414e-9225-6c8e93f3dbfa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 51085,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "沒發表的歌攢了兩年，自己長成了一張專輯。2016 年那趟巡演結束後她改成做一連串短的錄音，每次換不同的合作者，陸續放出單曲；她說每一次錄音都有多出來的、沒發表的歌，就這樣一路收著。她把粗混放在手機裡、遛狗時聽，後來發現它們之間有一條超現實的線串著，那條線她形容成一場發燒的夢，發生在神、魔鬼、心、國家、星球與她自己之間。整張的骨架來自與固定鼓手 Brian Blade 的一次特別順的錄音。這是她的第七張個人錄音室專輯，2020 年 6 月 12 日發行。",
+    "sourceUrls": [
+     "https://www.bluenote.com/norah-jones-announces-new-album-pick-me-up-off-the-floor-1st-single-im-alive-out-now/",
+     "https://www.discogs.com/release/15462055",
+     "https://www.bluenote.com/norah-jones-releases-hurts-to-be-alone-video-pick-me-up-off-the-floor-digital-deluxe-out-oct-16/",
+     "https://musicbrainz.org/release-group/ec35b59b-2f3c-414e-9225-6c8e93f3dbfa"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/31/f7/ca31f7d4-d07e-5c7d-fb7e-514ad918ca93/mzaf_15943916388019226609.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1500509397",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

@@ -29,7 +29,7 @@ const DIR = path.join(ROOT, 'batch-progress/probe');
 const BATCHES = process.argv.slice(2).length ? process.argv.slice(2)
   : ['c51a', 'c51b', 'c51c', 'c51d', 'cseaa', 'cseab', 'cseac'];
 
-import { norm, SUFFIX, titleOk, artistOk, hasNonLatin, translit, DECO, canon, looseTitleOk, looseArtistOk, termsFor } from './match-lib.mjs';
+import { norm, SUFFIX, titleOk, artistOk, hasNonLatin, translit, DECO, canon, looseTitleOk, looseArtistOk, termsFor, aliasParts } from './match-lib.mjs';
 // 比對規則已抽到 match-lib.mjs（裁定第 90 條），改規則請先跑 test-match.mjs。
 // c-SEA 三批先試在地目錄再回退國際；c-51 是西方與東亞盤，us 命中率最高。
 const SEA = ['id', 'ph', 'th', 'vn', 'my', 'sg', 'us', 'gb', 'jp'];
@@ -124,6 +124,13 @@ const FRA = ['fr', 'be', 'ch', 'ca', 'us', 'gb', 'de', 'nl'];
 const DEIT = ['de', 'it', 'at', 'gb', 'ch', 'us', 'fr', 'nl'];
 // 新譜（c-111／c-112）：發行權全球同步，用最寬的一組；tw／kr 補在後面接華語與韓語那半。
 const NEW = ['us', 'gb', 'jp', 'de', 'fr', 'tw', 'kr', 'ca', 'au'];
+
+// BN2K：Blue Note 1985 年後線（c159 起）。2026-09-18 裁定第 1560-C 條——
+// 原本的八市場（us/gb/jp/de/fr/nl/ca/tw）漏掉北歐與南歐：
+// Jukka Perko《Kaanaanmaa》八市場全 0 命中，只有 fi 店面有軌（9/9 都回得到 preview）。
+// 本線大量是 Blue Note 歐洲／北歐分部發的碟（芬蘭、丹麥、義大利、法國），因此補上 fi/se/no/dk/it/es/pl。
+const BN2K = ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw', 'fi', 'se', 'no', 'dk', 'it', 'es', 'pl'];
+
 const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB, c73: JPN, c74: UKB, c75: USB,
   c76: JPN, c77: UKB, c78: USB, c79: JPN, c80: UKB, c81: USB, c82: JPN, c83: UKB, c84: USB, c85: UKB, c86: USB,
   c87: JPN, c88: OST,
@@ -165,7 +172,41 @@ const LINE_FRONTS = { c67: JPN, c68: UKB, c69: USB, c70: JPN, c71: UKB, c72: USB
   c144: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
   c145: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
   c146: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
-  c147: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'] };
+  c147: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c148: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c149: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c150: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c151: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c152: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c153: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c154: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c155: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c156: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c157: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c158: ['us', 'gb', 'jp', 'de', 'fr', 'nl', 'ca', 'tw'],
+  c159: BN2K,
+  c160: BN2K,
+  c161: BN2K,
+  c162: BN2K,
+  c163: BN2K,
+  c164: BN2K,
+  c165: BN2K,
+  c166: BN2K,
+  c167: BN2K,
+  c168: BN2K,
+  c169: BN2K,
+  c170: BN2K,
+  // ⚠ 2026-09-22（主線第 1943-B 條）：**jp-1 線（日本爵士四大廠）十批一直沒登記，整條線都落到 `GEN`**
+  // （`GEN` 是 `us` 先、`jp` 排第三）。實測後果兩面都有：
+  //   精準度——`MALTA《Malta》` 在 gb 配到瑞典流行團 Malta 的同名碟（℗1973 Parlophone Sweden、曲目全是瑞典文），
+  //            `Native Son《Coast to Coast》` 配到蘇格蘭廠牌、`富樫雅彦〜高柳昌行` 配到美國歌手 JoJo；
+  //   召回率——`阿川泰子《Night Line》` 的 2016 ビクター 數位版在 jp 與 us 都有，卻先在 us 配到別張二合一。
+  // 這是**日本國內盤的線**，`jp` 必須排第一。
+  c173: JPN, c174: JPN, c175: JPN, c176: JPN, c177: JPN,
+  c178: JPN, c179: JPN, c180: JPN, c181: JPN, c182: JPN,
+  // jp-2 線（日本爵士獨立廠牌十五家）：同樣是日本國內盤，`jp` 必須排第一（第 1943-B 條）。
+  c183: JPN, c184: JPN, c185: JPN, c186: JPN, c187: JPN,
+  c188: JPN, c189: JPN, c190: JPN, c191: JPN };
 
 const cards = [];
 for (const b of BATCHES)
@@ -292,8 +333,45 @@ for (const c of cards) {
     // 比對用的候選名：原文與轉寫都算數，否則轉寫查到了也會被 titleOk 擋掉。
     // queryAlias 可能是盤名的別名（見 match-lib 的 termsFor 註解），比對時也要算進候選盤名，
     // 否則字串查到了、titleOk 這一關還是會把它擋掉。
-    const albumCands = [c.album, translit(c.album), c.queryAlias].filter(Boolean);
-    const artistCands = [c.artist, c.queryAlias, translit(c.artist)].filter(Boolean);
+    // ⚠ 2026-09-21（c-176 回撈層抓到，主線第 1900-B 條）：**這兩行原本把整串 `queryAlias`
+    // 當成一個候選名**，而 `queryAlias` 是用 `；` 串起來的多個別名
+    // （逐字例：`Story Of Wind Behind Left；Story of Wind Behind Left；風の遺した物語；Masahiko Togashi；…`）。
+    // `termsFor()` 那一端是用 `aliasParts()` 切開才送出去查的，**查得到，卻在這一關被擋掉**
+    // ——`titleOk(整串, 'Story of Wind Behind Left')` 永遠 false。
+    // 本批 6 張救回有 4 張是這個形狀（翻譯型盤名、平假名掛名），**`queryAlias` 裡本來就寫著命中的寫法**。
+    // 改成與 `termsFor()` 同樣用 `aliasParts()` 切開後逐段比對。
+    // ⚠ 2026-09-22（c-179 回撈層抓到，主線第 1935-B 條）：上面那一版把 `aparts` **同時**倒進
+    // 兩個候選桶，於是**盤名的別名被當成掛名候選**——`Native Son《Coast to Coast (Live in USA)》`
+    // 的 `queryAlias` 第一段逐字就是 `Coast to Coast`，它讓 de 店面一筆
+    // `artistName "Coast To Coast"／collectionName "Coast To Coast"／2007／℗ Athens Of The North`
+    // 的蘇格蘭放克考古盤兩關同時過，整筆判成 ready。
+    // **`queryAlias` 的語意是「外部服務認得的字串」，沒有規定是掛名還是盤名**（第 25 條），
+    // 所以兩種都試是對的；錯的是**同一段別名可以同時充當兩邊**。
+    // → 倒進掛名桶之前先剔掉「長得像本張盤名」的段，倒進盤名桶之前先剔掉「長得像本張掛名」的段。
+    // ⚠ 自我同名卡（掛名＝盤名）整個跳過這道，否則兩桶會被剔空。
+    const aparts = aliasParts(c.queryAlias);
+    const selfNamed = !!c.selfTitled || canon(c.artist) === canon(c.album);
+    const albumLike  = a => titleOk(a, c.album, !!c.selfTitled)  || looseTitleOk(a, c.album, !!c.selfTitled);
+    const artistLike = a => artistOk(a, c.artist) || looseArtistOk(a, c.artist);
+    const albumParts  = selfNamed ? aparts : aparts.filter(a => !artistLike(a));
+    const artistParts = selfNamed ? aparts : aparts.filter(a => !albumLike(a));
+    const albumCands = [c.album, translit(c.album), ...albumParts].filter(Boolean);
+    const artistCands = [c.artist, translit(c.artist), ...artistParts].filter(Boolean);
+    // ⚠ 第二道（同一條裁定的後半）：**盤名那一關與掛名那一關不准靠同一段別名過。**
+    // 只剔掉「盤名形的別名」還漏得掉另一種形狀——**掛名側的綽號同時頂過兩關**：
+    // `富樫雅彦〜高柳昌行《パルセーション》` 的 alias 裡有高柳的綽號 `Jojo`，
+    // 它既不像本張盤名（所以留在掛名桶）、也留在盤名桶，於是 `JoJo /《JoJo》2004` 兩關同時過。
+    // → 命中的條件改成「存在一組**不同**的證人各自過一關」。
+    // ⚠ 自我同名卡（掛名＝盤名）豁免這一道，否則它永遠不可能有兩個不同的證人。
+    const pairOk = (gotT, gotA) => {
+      const TW = albumCands.filter(a => titleOk(a, gotT, !!c.selfTitled));
+      if (looseTitleOk(c.album, gotT, !!c.selfTitled)) TW.push(c.album);
+      const AW = artistCands.filter(a => artistOk(a, gotA));
+      if (looseArtistOk(c.artist, gotA)) AW.push(c.artist);
+      if (!TW.length || !AW.length) return false;
+      if (selfNamed) return true;
+      return TW.some(t => AW.some(a => canon(t) !== canon(a)));
+    };
     let hits = [];
     let raw = 0;
     // 2026-09-05：`raw` 的初值 0 會讓「每個 term 都 HTTP 失敗」印成 `front:0→0`，
@@ -309,11 +387,7 @@ for (const c of cards) {
       if (j._http || j._err) { rec.tried.push(`${front}:${j._http || j._err}`); continue; }
       okQueries++;
       raw = (j.results || []).length;
-      hits = (j.results || []).filter(r =>
-        (albumCands.some(a => titleOk(a, r.collectionName || '', !!c.selfTitled)) ||
-         looseTitleOk(c.album, r.collectionName || '', !!c.selfTitled)) &&
-        (artistCands.some(a => artistOk(a, r.artistName || '')) ||
-         looseArtistOk(c.artist, r.artistName || '')));
+      hits = (j.results || []).filter(r => pairOk(r.collectionName || '', r.artistName || ''));
       // 年份不再當門檻（裁定第 77 條）：Apple 記的常是數位重製日不是原盤年。
       // 主閘是藝人＋盤名的粗形比對；年份只用來排序與標記。
       if (hits.length) break;                           // 命中就不再試下一種寫法
@@ -331,9 +405,11 @@ for (const c of cards) {
         artistCands.some(a => artistOk(a, x.artistName || '')) || looseArtistOk(c.artist, x.artistName || ''));
       for (const a of artists.slice(0, 2)) {
         const list = await artistAlbums(a.artistId, front);
-        const found = list.filter(x =>
-          albumCands.some(al => titleOk(al, x.collectionName || '', !!c.selfTitled)) ||
-          looseTitleOk(c.album, x.collectionName || '', !!c.selfTitled));
+        // ⚠ 2026-09-22（主線第 1935-B 條）：這條路原本**只驗盤名**，於是上面那兩道防呆全被繞過——
+        // `富樫雅彦〜高柳昌行《パルセーション》` 的別名裡有高柳的綽號 `Jojo`，
+        // 它把 Apple 上的藝人 `JoJo` 找出來，再拿同一段 `Jojo` 去比中該藝人的同名專輯《JoJo》。
+        // → 這條路也走 `pairOk`，兩關要有不同的證人。
+        const found = list.filter(x => pairOk(x.collectionName || '', x.artistName || ''));
         if (found.length) { hits = found; rec.tried.push(`${front}:artistPage→${found.length}`); break; }
       }
     }
@@ -348,10 +424,74 @@ for (const c of cards) {
     // remaster／deluxe／expanded／edition／anniversary／bonus tracks／version，
     // 之前只拿來判「年份不計」，現在讓它進排序：**同樣配得上的候選，素面的那個先。**
     const deco = x => { DECO.lastIndex = 0; const r = DECO.test(x?.collectionName || ''); DECO.lastIndex = 0; return r ? 1 : 0; };
-    const drift = x => (c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0);
+    // ⚠ 2026-09-22（c-182 回撈層抓到，主線第 1947-B 條）：**同一位藝人底下多筆共用同一個上架日時，
+    // 那個日期不是發行日，是「這一批一起上架」的日子**——`国府弘子` 有七筆再發被壓成同一個
+    // `2006-08-02`，原始年份整個丟失。**年份本來就不是門檻（裁定第 77 條），但它還在排序裡**，
+    // 壓扁的日期會讓排序誤以為某張「年份最接近」。→ 這種日期一律當成沒有年份（drift 0 不參與排序）。
+    const dateCount = new Map();
+    for (const x of hits) {
+      const k = `${x.artistId || '?'}|${String(x.releaseDate || '').slice(0, 10)}`;
+      dateCount.set(k, (dateCount.get(k) || 0) + 1);
+    }
+    const collapsed = x => (dateCount.get(`${x.artistId || '?'}|${String(x.releaseDate || '').slice(0, 10)}`) || 0) >= 3;
+    const drift = x => (c.year && !collapsed(x) ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0);
     const rank = x => ({ explicit: 0, notExplicit: 1, cleaned: 2 }[x?.collectionExplicitness] ?? 1);
     hits.sort((x, y) => (deco(x) - deco(y)) || (drift(x) - drift(y)) || (rank(x) - rank(y)));
+
+    // ⚠ 2026-09-22 第二版（主線第 1942-B 條）：第三、四道原本寫在「選完 best、查完 lookup」之後，
+    // 退掉就 `continue` 換下一個 storefront——**於是同一個 storefront 剩下的候選一起被丟掉。**
+    // c-179 `阿川泰子《Night Line》` 在 jp 有四筆候選、正解就在裡面，
+    // 卻因為排序後的第一筆（`Sunglow/Yasuko, Love-Bird` 那張二合一）被退而整批放棄。
+    // → 改成**排序後當過濾器**：退掉的那筆剔除、換下一筆，整批都被剔除才換 storefront。
+    // 這兩道只需要 search 結果就有的三個欄位，所以也省掉一次 lookup。
+    const coreTitles = new Set([canon(c.album), canon(translit(c.album))]);
+    const judge = x => {
+      const gt = x.collectionName || '', ga = x.artistName || '';
+      const tw = albumCands.filter(a => titleOk(a, gt, !!c.selfTitled));
+      if (looseTitleOk(c.album, gt, !!c.selfTitled)) tw.push(c.album);
+      const aliasOnly = tw.length > 0 && tw.every(t => !coreTitles.has(canon(t)));
+      const sameNameEntry = canon(gt) === canon(ga) && canon(c.artist) !== canon(ga);
+      // ⚠ ⚠ 2026-09-27（c-189 a 研究層抓到，主線第 1997-B 條）：**「盤名＝掛名」的同名條目，本卡又不是同名盤 → 一律退，不只 aliasOnly 那一支**。
+      // `日野皓正《New York Times》1983` → Apple 的 `New York Times《New York Times》2007`（5 軌、漂移 24）：
+      // 盤名逐字是核心題（不是 alias 衍生），所以舊寫法在上一行就放行了；而掛名那一關是靠 `queryAlias`
+      // 裡的盤名字串過的——**一個藝人名剛好等於我們的盤名，他的同名專輯就會兩關全過。**
+      // ⚠ 但**要搭年份漂移 ≥10**：回測全池 ready 八筆同形，`Clifford Jordan《Cliff Jordan》1957`、
+      // `New Directions《New Directions》1999` 那幾筆是真的（Apple 把聯名／化名團當掛名），漂移都是 0；
+      // 誤命中的三筆（New York Times 24／Pyramid 44／Kyo 20+）漂移都 ≥20。
+      const ydS = c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0;
+      if (sameNameEntry && !c.selfTitled && ydS >= 10) return { ok: false, aliasOnly, why: `盤名掛名同名條目（本卡不是同名盤）＋年份漂移 ${ydS} 年` };
+      if (!aliasOnly) return { ok: true, aliasOnly };
+      const yd = c.year ? Math.abs(Number(String(x.releaseDate || '').slice(0, 4)) - c.year) : 0;
+      const fragment = tw.every(t => canon(t) !== canon(gt) && canon(gt).includes(canon(t)));
+      if (sameNameEntry) return { ok: false, aliasOnly, why: 'aliasOnlyTitle＋盤名掛名同名' };
+      if (fragment && yd > 3) return { ok: false, aliasOnly, why: 'aliasOnlyTitle＋證人只是片段＋年份漂移' };
+      // ⚠ ⚠ 2026-09-25（主線第 1980-B 條）：**`aliasOnlyTitle` ＋ 年份漂移 ≥ 20 年一律退**。
+      // c-186 兩組各自抓到一筆誤命中，兩筆都是這個形狀而上面三道都放行：
+      //   `カリオカ《Sunny Place Carnival》1978` → Apple 的 `Samba《Carioca》2025`（漂移 47）
+      //   `The Players Featuring 鈴木宏昌《Galaxy》1979` → `C-Money and the Players Inc《Players》2006`（漂移 27）
+      // **證人只來自 alias 衍生的題（最弱的證據），而年份差二十年以上時，那是另一張碟的機率遠高於再發。**
+      if (yd >= 20) return { ok: false, aliasOnly, why: `aliasOnlyTitle＋年份漂移 ${yd} 年（≥20）` };
+      return { ok: true, aliasOnly };
+    };
+    const dropped = [];
+    const kept = [];
+    for (const x of hits) {
+      const v = judge(x);
+      if (v.ok) { kept.push({ x, aliasOnly: v.aliasOnly }); continue; }
+      dropped.push({ why: v.why, collectionId: x.collectionId, appleTitle: x.collectionName,
+                     appleArtist: x.artistName, appleYear: String(x.releaseDate || '').slice(0, 4) });
+    }
+    if (!kept.length) {
+      // ⚠ 2026-09-22（c-182 回撈層提出，主線第 1947-B 條）：原本只記第一筆，
+      // 於是「`jp:8→1` 之後被退掉」的那幾張，另外七個候選下一位回撈層完全看不到、得重打一次。
+      // 改成整批記下來。
+      if (dropped.length) rec.rejectedMatch = dropped;
+      rec.tried.push(`${front}:第1935-B條退${dropped.length}筆`);
+      continue;
+    }
+    hits = kept.map(k => k.x);
     let best = hits[0];
+    const bestAliasOnly = kept[0].aliasOnly;
     // 排序後最好的還是 cleaned → 回藝人頁找同名同軌數的 explicit 雙胞胎（見上方註解）。
     if (best?.collectionExplicitness === 'cleaned') {
       const tw = await explicitTwin(best, front, albumCands, !!c.selfTitled);
@@ -377,6 +517,11 @@ for (const c of cards) {
     DECO.lastIndex = 0;                                 // 全域旗標的正規式要自己歸零
     const yd = c.year ? Math.abs(Number(rec.appleYear) - c.year) : 0;
     if (yd > 3) { rec.yearDrift = yd; rec.reissueTitle = isReissue; }
+    // ⚠ 只報不擋的旗標：盤名那一關**沒有任何「卡片本身的盤名」當證人**、整個靠 `queryAlias` 的某一段過關。
+    // 真的再發（`The Good Bad Girl+6`、`IQ-179`、`Anokoro`）也會中，**所以不擋**；
+    // 它只提示研究層回查。擋人的是上面那兩道，寫在排序之後、lookup 之前。
+    if (bestAliasOnly) rec.aliasOnlyTitle = true;
+    if (collapsed(best)) rec.collapsedDate = String(best.releaseDate || '').slice(0, 10);
     rec.status = rec.previewUrl ? 'ready' : 'no-preview';
     // 同一張碟在不同 storefront 的試聽授權不一樣（2026-09-02，c-53 實測）：
     // Матвеева《Какой большой ветер》的 collectionId 1509982713 在 de 有 .m4a、在 us 沒有。

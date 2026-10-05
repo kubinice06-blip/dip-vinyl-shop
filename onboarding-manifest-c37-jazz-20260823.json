@@ -14320,14 +14320,14 @@
       "identity": {
         "releaseType": "Compilation",
         "rgMbid": "34c9b8b8-c1db-38fd-bf46-9fd56a4ae8c5",
-        "upc": "3460503672123",
-        "exceptionReason": "策展意圖（1939 年名演所在的權威結集）成立，但本 rg 實為 2001 年法國拼盤，不符合輯例外標準，故整筆退回。",
+        "upc": "0035628571724",
+        "exceptionReason": "RCA Bluebird 1986 年數位重製的權威結集，涵蓋 Hawkins 1939–1956 年全部 Victor 體系場次，核心是 1939 年 10 月 11 日的〈Body and Soul〉——2004 年入選美國國會圖書館國家錄音登錄的那一份錄音。",
         "exceptionEvidenceUrls": [
-          "https://en.wikipedia.org/wiki/Body_and_Soul_(1930_song)",
-          "https://musicbrainz.org/release-group/42543962-0784-370a-9eb5-b5fe8eb4d34e"
+          "https://musicbrainz.org/release-group/34c9b8b8-c1db-38fd-bf46-9fd56a4ae8c5",
+          "https://en.wikipedia.org/wiki/Body_and_Soul_(1930_song)"
         ],
         "aliasesChecked": true,
-        "aliasReview": "同名排查即問題所在：Body and Soul 名下有標準曲、多藝人專輯與無數結集；本 rg 經 MB API 查證僅含 2001-11-21 法國發行（barcode 3460503672123），與策展意圖的 1986 年 RCA 結集不符。"
+        "aliasReview": "Body and Soul 名下有標準曲、多藝人專輯與十多種同名結集。本卡釘在 RG 34c9b8b8（MB 註記 Bluebird compilation released in 1986）：雙 LP 5658-1-RB、CD 5717-2-RB、歐版 CD ND85717。最初誤配的是 2001 年法國拼盤（RG 42543962），1996 年 RCA Victor 的同名結集（RG 96462ad6）是另一套，皆已排除。"
       },
       "cover": {
         "url": "https://coverartarchive.org/release/ed379a99-bbc5-4cdf-bc56-8988a75bfb37/front",
@@ -14338,41 +14338,46 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
         "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1939 年名演本身是樂史核心，但本 rg 為 2001 年法國單一版本拼盤，非權威結集"
+        "checkedAt": "2026-10-04T00:00:00Z",
+        "note": "原評分是對 2001 年法國拼盤打的佔位值（manifest 自註）。改評 1986 Bluebird 權威結集：收有 1939 年〈Body and Soul〉（2004 年入選美國國家錄音登錄），classic 4；比照池中同形狀的 Benny Goodman《The Complete RCA Victor Small Group Recordings》4/3/3、Charlie Christian《The Genius of the Electric Guitar》3/4/2。"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
-        "reason": "配到的 release group 非權威文獻版本，不具頂點評估基礎",
+        "reason": "classic 4，未達殿堂 classic=5 的最低門檻；非 obscurity 5、非 accessibility 5。",
         "evidenceUrls": []
       },
       "description": {
-        "text": "Coleman Hawkins 一九三九年的〈Body and Soul〉錄音是次中音薩克斯風即興藝術的分水嶺文獻，幾乎整曲不直陳主旋律而以和聲變奏行進。不過本卡配到的 MB release group 為二〇〇一年法國發行的單一版本合輯，並非店主策展指定的一九八六年 RCA Bluebird 權威結集，Apple 端亦僅配到單曲，建議退回重配。",
+        "text": "兩段即興幾乎沒把旋律吹出來，卻成了他生涯最大的熱門。1939 年 10 月，旅歐五年剛回美國的 Coleman Hawkins 替 Bluebird 錄下〈Body and Soul〉，主題只在開頭點到，其餘全是順著和弦走的變奏。這套 1986 年的 Bluebird 結集把他在 Victor 體系的錄音從那一場排到 1956 年：1940 年的全明星八重奏、1947 年有 Max Roach 打鼓的 bebop 場次，最後是 Billy Byers 編寫的弦樂伴奏，同一首歌隔十七年再吹一次。",
         "sourceUrls": [
+          "https://musicbrainz.org/release-group/34c9b8b8-c1db-38fd-bf46-9fd56a4ae8c5",
+          "https://api.discogs.com/releases/1125619",
+          "https://api.discogs.com/releases/4555085",
           "https://en.wikipedia.org/wiki/Body_and_Soul_(1930_song)",
-          "https://musicbrainz.org/release-group/42543962-0784-370a-9eb5-b5fe8eb4d34e"
-        ]
+          "https://en.wikipedia.org/wiki/The_Hawk_in_Hi_Fi",
+          "https://swingandbeyond.com/2016/11/01/body-and-soul-1939-coleman-hawkins/"
+        ],
+        "lengthReviewed": true
       },
       "preview": {
         "status": "unavailable",
         "url": "",
         "source": "none",
-        "note": "Apple 條目經人工核對非本作（Apple 配到 Body and Soul (Remastered) 單曲（Single），非合輯本體），已降級；留待店主本機補 YouTube 或維持 unavailable"
+        "note": "Apple US／GB／JP／FR 四店面都沒有這套 1986 Bluebird 結集；最接近的 298551031 是 1996 年 RCA Victor 的另一套（19 軌），依 §6 不收疑似配對，維持 unavailable。"
       },
       "research": {
-        "suggestedYear": 2001,
-        "yearNote": "MB release group 僅一筆 2001-11-21 法國發行；策展年 1986 與此 rg 不符",
+        "suggestedYear": 1986,
+        "yearNote": "2026-10-04 重寫：身分於 08-23 重配後，年份、三軸、簡介補齊。場次日期取自 Discogs 1125619 的版面附註：1939-10-11／1940-01-03／1946-02-27／1947-12-11／1956-01-17、18、20。 1956 年場次的錄音地點兩源不一（維基寫 Webster Hall、Discogs 版面附註寫 RCA Studios），正文不寫地點。 雙 LP（5658-1-RB）28 軌、CD（5717-2-RB）23 軌，曲數不同，正文不寫曲數。 試聽維持 unavailable：Apple 四個店面都沒有這套 1986 結集，最接近的 298551031 是 1996 年 RCA Victor 的另一套（19 軌），依 §6 不收疑似配對。",
         "mbTitle": "Body and Soul",
         "mbArtist": "Coleman Hawkins",
-        "mbFirstRelease": "2001-11-21",
-        "upcNote": "Body and Soul (2001-11-21 FR)",
+        "mbFirstRelease": "1986",
+        "upcNote": "0035628571724",
         "curatorWhy": "Body and Soul 名演為核心的 RCA 權威結集",
         "curatorRisk": ""
       },

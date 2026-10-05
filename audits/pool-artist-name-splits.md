@@ -489,3 +489,32 @@ KV（`desc2`／`rating4`）、Firestore `card_catalog`。
 
 **卡片一律用原文形**（裁定 187）。`ちあきなおみ` 另適用裁定 189：
 沒有官方羅馬字藝名，純拼音轉寫不算，**保留假名不羅馬化**。
+
+## 2026-09-18（c-151 a 回報，主線第 1131 條裁定）：`Benny Green` ／ `The Benny Green Trio`
+
+| 字串 | MB 實體 | 用在哪幾張 |
+|---|---|---|
+| `Benny Green` | **28b5fcc9 Person**（「jazz pianist」） | c-150 a《Lineage》、c-152 a《The Place to Be》 |
+| `The Benny Green Trio` | **4afdbd4a Group** | c-151 a《Testifyin'!》、c-151 b《That's Right!》 |
+
+**兩個都留，各卡照自己的 artist-credit。** 池中原本 0 張、無先例可照；
+MB 是兩個不同實體，兩刊榜單對後兩張逐字印 THE BENNY GREEN TRIO。
+**同形狀先例**：`Bobby Watson & Horizon`（第 997 條）、`Art Blakey and the Jazz Messengers`（池中 19 張）。
+**這不是分裂**——要防的是「同一個 credit 被寫成兩種字串」（`&` vs `and`、有無 `The`）。
+
+## `本田竹広`／`本田竹彦`／`本田竹曠`（2026-09-25，c-183 b 組研究層）
+
+**這三個不是異體字分裂，是他三個時期實際用過的藝名**（本名 `本田昂`）。
+⚠ **不要當成「同一個 credit 被寫成三種字串」去收斂**——**各卡照自己盤面上印的那一個。**
+jp-1 線 c-178 已為同一人做過一次人名改判（`本田竹広`／`本田竹曠` 兩個字串並存），
+**那次的判斷是對的，理由現在補上了。**
+
+## `Steve Lacy`（2026-09-22，jp-1 線收尾時記下、尚未處理）
+
+⚠ **池中這一個字串握著兩個不同的人**——**待本機分開。**
+
+## `Roland Hanna Trio` ／ `Sir Roland Hanna Trio`（2026-09-25，c-185 a 第 5888 條；主線第 1967-B 條維持）
+
+**同一個人**（Roland Hanna，1978 年受封 Sir）。**池中已有 `Sir Roland Hanna Trio`，c-185 新立 `Roland Hanna Trio`。**
+**兩串並存**（第 1131 條：兩串都在盤面上出現過，不是異體字分裂）——**留給本機統一，雲端不動。**
+⚠ **統一的方向要按盤面**：受封前的碟印的是無 Sir 的形，受封後才有 Sir，**不是同一個字串的兩種寫法。**

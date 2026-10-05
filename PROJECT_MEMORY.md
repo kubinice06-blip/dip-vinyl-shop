@@ -1,5 +1,385 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-04｜dip-vinyl-shop｜c-148 至 c-198 與 add-20261003 上架 1,390 張，卡池 17,248 → 18,638
+
+同日第五筆。雲端分支 `claude/remote-runbook-album-onboarding-mszieh`（621 筆提交）合併進 main，
+唯一的衝突是 `desc-tools/qa-batch.mjs`（兩邊各加了一段 out 檢查，兩段都保留）。
+**候選 1,423 張、上架 1,390 張、留置 33 張（全部缺封面）、頂點 0 張。**
+52 道 prepare gate 0 error；card_catalog 1,390／1,390；**KV 1,769 個鍵 bulk get 逐字回讀一致**；
+published gate 的資料面全過，剩下的 error 全是封面圖床 archive.org 當下回 500（見第六節）。
+
+| 線 | 批 | 候選 | 上架 | 留置 |
+|---|---|---:|---:|---:|
+| 藍調之音 1985 年後（重啟到 2026） | c-148～c-172 | 839 | 831 | 8 |
+| jp-1 日本爵士四大廠 1958–1989 | c-173～c-182 | 242 | 233 | 9 |
+| jp-2 日本爵士獨立廠牌 1961–1989 | c-183～c-191 | 204 | 194 | 10 |
+| hoyi 補遺（§1／跨線／美日互為原盤） | c-192～c-198 | 137 | 131 | 6 |
+| 何欣穗《完美小姐》 | add-20261003 | 1 | 1 | 0 |
+
+試聽 ready 1,106／unavailable 284。稀有度 epic 95、uncommon 741、rare 544、common 9。
+
+## 一、封面：81% → 98%
+
+雲端交來 1,151／1,422。Apple collectionId 直查 +187 → Spotify／Bandcamp +17 → iTunes +2 → Discogs +42，
+逐張覆核退回 12 張後是 **1,389／1,422**，留置 33 張。最終來源：CAA 1,131、`apple-verified-collection` 200、
+`discogs` 44（名單累計 239 筆）、spotify 11、bandcamp 2、manual 1。撞圖檢查 0 組。
+
+**這一輪抓到自己腳本的一個洞**：`apple-cover-from-preview.mjs` 只看探測條目有沒有 `collectionId`，沒看狀態。
+雲端把配錯的條目降級（`status: unavailable`＋`downgradedBy`）時 collectionId 還留著當紀錄——
+結果**被降級的那一筆正好是「事後證明是別張碟」的那一筆**，5 張卡拿到別張唱片的封面
+（Gil Evans《Farewell》拿到同系列第一張的圖、池田芳夫 & 高瀬アキ《Esprit》拿到《AKI》、Art Blakey《Dr. Jeckyle》拿到《One by One》…）。
+撞圖檢查只抓到其中一組，回頭對探測狀態才找齊。腳本已改成只認 `status === 'ready'` 且沒有 `downgradedBy` 的條目。
+
+**模糊層補來的 22 張逐張對了實際專輯頁，退回 7 張**（`batch-progress/cover-rejects-20261004.json`）：
+GAP《GAP》配到 Del Water Gap、Ron Carter《Friends》配到 Houston Person《Just Between Friends》、
+Jimmy Smith《The Master》配到續集《ザ・マスターII》、Prism《Prism Live》的 Bandcamp 是另一個團 Veritas Prism。
+Spotify 的對法是開 `/embed/album/<id>` 讀 `__NEXT_DATA__` 的掛名與盤名——**worker 回的只有圖，不看頁面不知道配到誰**。
+
+## 二、試聽：本機降級 22 筆
+
+雲端的探測有四道防呆，都是「單張卡 vs 單筆結果」。這一輪另外用三種全檔回掃抓到它們擋不到的：
+
+1. **同一個 collectionId 被多張卡引用**（雲端的 `dup-collection.mjs` 只報不擋）：
+   **渡辺貞夫九張不同的專輯全配到 1961 年 King 的首作《SADAO WATANABE》**——Apple 盤名等於藝人名，標題比對因此放行。
+   Prism《Prism Live》配到錄音室專輯《Prism》。
+2. **Apple 的「藝人名」等於我們的盤名**（同名樂團的同名專輯）：Musica Nuda《Banda larga》配到巴西樂團 Banda Larga、
+   Ruben Hein《Loose Fit》配到樂團 Loose Fit、Gonzalo Rubalcaba《The Trio》配到福音團 The Trio。
+   **這三張第一輪已經帶著錯試聽上架**，重跑時才抓到，已改回固定無試聽。
+3. **Apple 掛名與我們的掛名沒有任何共同字詞**（102 筆，絕大多數是日文／羅馬字互換，逐筆看過）：
+   Mal Waldron & 山下洋輔《Piano Duo Live at Pit Inn》配到佐藤允彦 & 山下洋輔 1974 年的《Piano Duo》。
+
+另有幾筆是盤名、年份都對不上的疑似配對（《Standard Collection, Vol. 2》、《African Rock》、《After You've Gone》），依 §6 不收。
+**凡是降級的，連帶檢查那張卡的封面是不是取自同一個 collectionId。**
+
+順手修了一張線上舊卡：c-131 Bobby Hutcherson《Oblique》的試聽原本播的是藝人 Oblique 的《Oblique E.P.》
+（雲端主線回測抓到、記在 `audits/preview-downgrades.md`），改配 Apple 716323685（RVG 版六軌）。
+
+## 三、身分：一張卡的 rgMbid 欄填的是藝人 MBID
+
+c-186 カリオカ《Sunny Place Carnival》的 `rgMbid` 是 `18c3632b…`——那是カリオカ這個 **artist** 的 id，
+以 release-group 查回 404；雲端的 mbNote 自己都寫著「18c3632b… 的 artist」。格式一樣是 UUID，驗證器只看格式。
+CAA 因此查無圖、Apple 探測也配錯。正確的 RG 是 `5bf96a6c…`（1978，Kitty MKF 1041）。
+新增 `batch-progress/verify-rgmbid.mjs`：CAA 沒圖的 264 張逐張回查 MB，**不是 RG 的只有這一張**，另 9 張是標題的文字系統不同。
+
+## 四、三軸
+
+- **冷門軸**：日本爵士 26 批（c-173～c-198）與 c-168 套 §0.8 depth 錨點（listeners 中位數 2～151，機器值幾乎全是 5，已塌成常數）。
+  藍調之音線的其餘 24 批中位數 215～11,480，照 09-17 的先例保留機器值。
+  **錨點 5 分提案 6 張，複核只留 1 張**：South Wind Section《South Wind》（Discogs 註明「Private press limited to 500 copies」，
+  Polydor 的 `MI` 號段是委託壓片）。退回的 5 張都是關鍵字誤中——「自製」指日本唱片公司的自製企畫、「無廠牌」指 MB 上某一筆再版條目。
+- **經典／硬蕊**：AI 基線逐張看 5 分與 1 分的，改 6 張（檔案盤與補遺性質的不給 5；99.99《99.99》是自我同名短名的誤判）。
+  `build-manifest` 補上把改判理由帶進 `ratings.note`（§2「人工修正必須在 manifest 留下理由」原本沒帶）。
+
+## 五、子曲風表
+
+上架後照 §10 重建，並把缺標籤的卡分五段預熱（`scripts/warm-album-genres.mjs --from／--limit`，2,610 張、Spotify 零異常）：
+**有子曲風 15,249 → 17,225（92.4%）**，仍有 1,413 張未落位——530 張查不到標籤，883 張有標籤但規則沒命中，
+其中爵士 692 張（多半是標籤只有 `jazz`、`japanese` 這種分不出子類型的）。要補 `genre-artist-map.json`。
+
+## 六、封面圖床 archive.org 當天不穩
+
+published gate 的 error 全是 `coverUrl: 實際 HTTP 500`，而且**每一輪壞的不是同一批**：
+CAA 的網址會轉到 archive.org，那邊同一張圖的不同尺寸隨機成敗（front-500 過、front-250 不過，下一輪反過來）。
+抽上個月上架的舊卡 70 張也有 1 張，是圖床當天的狀況不是這批資料的問題。
+**連續三輪都壞、而且卡上有 ready 的 Apple 試聽的 21 張，改用 Apple 的官方封面**（`batch-progress/cover-swaps-20261004.json`）；
+其餘的沒動。備忘錄早有「CAA 壞圖要整批多輪掃、別逐張追」，這次是同一回事。
+
+## 七、管線補的
+
+- **上架流程腳本收進 repo**：`scripts/onboard-wave.sh`（原本只存在暫存目錄，上一輪跑完就不見了，這次是從對話紀錄挖回來的）、
+  `scripts/run-gates.sh`、`scripts/verify-wave-kv.mjs`。
+  實測**寫入很快（558 張 93 秒），慢的是 published gate**（逐張打封面與試聽網址）——所以拆成 `SKIP_GATE=1` 先寫、gate 併行補跑。
+  `RERUN=1` 會略過「濾掉已在池中的卡」與 prepare gate（重跑時這兩步一定誤判）。
+- `publish-manifest.mjs`：年份為空就不准寫卡池（何欣穗那張的 manifest 沒帶 `research.suggestedYear`，以 `year=null` 進池後才補）；
+  負面試聽狀態的「已存在」比對改用 `JSON.stringify`（鍵裡有雙引號時每重跑一次就多寫一行重複鍵）。
+- `stage-cloud-batch.mjs`：重跑轉檔不再洗掉本機補好的封面。
+
+## 主要檔案
+
+`seed_cards.json`（18,638 列）、`card-preview-status.js`、`card-subgenres.json`、`genre-tree.json`、`tw-pop-artists.json`、
+`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、
+52 份 `onboarding-manifest-*-20261004.json`、51 批的 `batch-progress/c1*/{cand-all,covers,previews.local,ratings,obscurity-anchor,held}.json`、
+`batch-progress/probe/previews.json`、`batch-progress/{cover-rejects,cover-swaps,cover-http}-20261004.json`、`batch-progress/rgmbid-check.json`。
+
+## 尚未處理
+
+- **留置 33 張全部缺封面**（日野皓正 4 張、国府弘子 2 張等），連同先前的 146 張，全專案未上架 179 張。
+- 雲端交接點名、這次沒做的：池中 `The Great Jazz Trio《At the Village Vanguard》` 年份疑為 1977、
+  《Chet Baker Live in Tokyo》是否換成原盤身分、幾組互指句（c-174《Music Break》↔ c-192《Bossa Nova Concert》等）。
+- 子曲風未落位 1,413 張；新增的 9 個拆卡藝人名與這批新藝人都還沒有藝人介紹。
+- 第二輪簡介修正佇列（`audits/pub-fix/ROUND2-QUEUE.md`）照舊。
+
+### 2026-10-04｜dip-vinyl-shop｜核對出來的五樣小修、子曲風表重建（13,885 → 15,249 張）、拆卡的曲風善後
+
+同日第四筆。店主對核對結果裁示：「1、2 都做，3 排進去」。
+
+## 一、五樣小修（`audits/pub-fix/round2-smallfix-apply.mjs`）
+
+| 卡 | 修了什麼 |
+|---|---|
+| 蔡琴《蔡琴老歌》 | 固定試聽 Apple 1114507022（2003 鄉城 32 軌選輯）→ **993111862**（10 軌重製版，曲序逐首相符）。單獨過 published gate 0 error |
+| Queen《Greatest Hits》 | 補固定試聽（Apple 6781080300，17 軌、1981-10-26）；UPC 從俄羅斯盜版條碼換成同 RG 的 2011 重製 CD；頂點資格補評——**不列殿堂**，Queen 的席次已由三張原始專輯代表，精選輯不重複佔位 |
+| Ana Moura《Desfado》 | 曲風 jazz → world（fado） |
+| c-129 的十則 | 刪掉結尾的「這張沒有試聽來源。」（核對時估 11 則，其中一則沒上架，實際 10 則）。manifest 與批次輸出檔同步改 |
+| 서태지와 아이들 IV | 「한국공연윤리위원회」→「韓國公演倫理委員會」、「서태지」→「徐太志」。這張只有 desc4 |
+
+## 二、子曲風表重建
+
+09-04 之後上架的批次一直沒進 `card-subgenres.json`（09-10、09-17 兩輪上架都漏了 §10 的 `build-genre-tree`）。
+
+| | 有子曲風 | 沒有 |
+|---|---:|---:|
+| 重建前 | 13,885 | 3,377 |
+| 第一次重建（`--pull --write`） | 15,117 | 2,131 |
+| 補了一部分標籤後再重建 | **15,249** | **1,999** |
+
+剩下的 1,999 張裡 1,572 張是 KV 還沒有曲風標籤（`mapgenre3`）——標籤平常是玩家抽到卡時 worker 才去 Spotify／Last.fm 取的，
+新批次沒人抽過就沒有。新增 `scripts/warm-album-genres.mjs` 可以主動預熱（worker 只在有對應到曲風時才寫 KV，失敗或查無都不會污染）。
+
+⚠ **預熱只跑了 230／1,779 張就被停掉**：我把它放在背景跑（預估 74 分鐘），撞到背景工作的時限被系統終止；
+時限已經是上限，依規定沒有重啟。跑過的那 230 張命中率約七成、Spotify 零異常（間隔 1.6 秒）。
+**剩下的要在自己的終端機跑**：`node scripts/warm-album-genres.mjs`（已取過的會直接跳過），跑完再
+`node scripts/build-genre-tree.mjs --pull --write`。另有 427 張是有標籤但規則沒命中，要補 `genre-artist-map.json`。
+
+## 三、拆卡的曲風善後（`audits/pub-fix/split-genre-fix.mjs`）
+
+今天拆出來的 16 張卡，KV 鍵是整個搬過去的，所以**帶著另一個同名藝人的標籤**——那些標籤當初就是用舊掛名查來的。
+重建子曲風表時才看出來：泰國的 Caravan 被歸在前衛搖滾（英國坎特伯里那團的標籤）、比利時 Placebo《1973》在獨立另類（britpop）、
+古典吉他手 John Williams 在電影配樂（Star Wars／harry potter）、Air《Air Mail》的標籤是法國電子二人組。
+
+改了六張的 `mapgenre3`，其中三張的池中曲風也是錯的：
+Caravan (Thailand) rock → folk＋world、Placebo (Belgium)《1973》rock → jazz＋soul、Mother Earth (Tracy Nelson) jazz＋soul → rock＋blues。
+`genre-artist-map.json` 補三個落點（John Williams (guitarist)、Caravan (Thailand)、Wings (Malaysia)）。
+重建後落點：world-folk／jazz-fusion／classic rock／20 世紀古典／free jazz／house。
+
+**教訓：改藝人欄時 `mapgenre3` 不該照搬**——它是「用這個名字查到的標籤」，名字換了就該重查或人工指定。
+`scripts/apply-pub-fix-cards.mjs` 目前是照搬，下次用之前要改。
+
+## 四、第 3 項排入
+
+`ROUND2-QUEUE` 新增 **B3 資料庫口吻候選 176 則**（核心約 90 則，其餘是「兩筆成績」這類正常句子）與 **B4 正文夾諺文 71 則**，
+改寫方向寫在 `audits/pub-fix/README.md` 第 5 點。
+
+## 五、兩個坑
+
+1. **背景工作有時限，而且已經是上限的就不能重啟。** 超過十分鐘的長工作不要丟背景硬跑；要嘛切成能在前景一次跑完的小段，要嘛交給店主在終端機跑。
+2. **改 `apple-audio-map-v1.json` 不要整份重排鍵。** 第一版新增一筆後用 `localeCompare` 排序，diff 變成 14 萬行（原檔不是那個順序）。
+   改成「插在第一個比它大的鍵之前」，diff 只有 23 行。
+
+## 驗證
+
+KV：五樣小修 12 個鍵、拆卡標籤 6 個鍵回讀一致；c-129 線上 43 則無一含那一句、且與 manifest 逐字相同。
+線上：子曲風表 15,249 鍵、試聽地圖 13,069 筆（Queen 6781080300、蔡琴 993111862）、卡池 17,248 列。
+
+## 主要檔案
+
+`audits/pub-fix/{round2-smallfix-apply.mjs,split-genre-fix.mjs,round2-rebind-check.md,README.md,ROUND2-QUEUE.*,APPLIED-20261004.json}`、
+`scripts/warm-album-genres.mjs`（新）、`scripts/build-pub-fix-queue.mjs`、`seed_cards.json`、`card-subgenres.json`、`genre-tree.json`、
+`genre-artist-map.json`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`card-preview-status.js`、
+c-34／c-49／c-129 三份 manifest、`desc-tools/batches/output/c129-out-1.json`。
+
+### 2026-10-04｜dip-vinyl-shop｜「重配後只做一半」候選 19 張逐張核對：沒有第三張，另對出兩個資料錯誤
+
+同日第三筆。店主：「那 17 張候選逐張核對」。**這筆只做核對與記錄，沒有改任何線上資料。**
+
+每張對五樣：池中那一列、`card_catalog`（rgMbid／封面／UPC／三軸）、MusicBrainz release-group、線上簡介、固定試聽。
+字樣命中的 17 張之外，改用較準的條件（manifest 的 cover／preview 註記有「改釘、重配」**且**其他欄位留著負面字樣）
+多掃到 Queen《Greatest Hits》與 Johnny Dodds《Blue Clarinet Stomp》，合計 19 張。
+
+**結論：沒有第三張 Hawkins／Odyssey 那種卡。** 13 張完全沒事——「佔位」多半指 MusicBrainz 只有年份、月日補 01-01 的日期，
+「不是同一張」是在排除近名的別張碟。有事的六張：
+
+| 卡 | 問題 |
+|---|---|
+| 蔡琴《蔡琴老歌》 | **固定試聽配到另一張選輯**：Apple 1114507022 是 2003 年鄉城 32 軌，與 1985 飛碟 10 軌一首都不重疊。正確的是 993111862（10 軌、曲序逐首相符）。manifest 當時寫了「本機請務必覆核」，沒人覆核 |
+| Ana Moura《Desfado》 | 曲風標成 jazz（子曲風 jazz/vocal），實為 fado，該是 world |
+| Queen《Greatest Hits》 | `card_catalog.upc` 還是最初誤配的俄羅斯盜版條碼；試聽 unavailable 但 Apple 有正版（6781080300）；頂點資格重配後沒補評 |
+| The Crying Princess（c-129） | 簡介以「這張沒有試聽來源。」收尾——**c-129 整批 11 則都這樣** |
+| 서태지와 아이들 IV | 正文夾諺文（한국공연윤리위원회、서태지）；全池正文有諺文的 72 則 |
+| Dariush《Cheshme Man》 | 身分、封面、試聽都對，但簡介用資料庫口吻（「這個條目底下的三張碟」「另外兩筆」）；全池 93 則 |
+
+逐張結果在 `audits/pub-fix/round2-rebind-check.md`。
+
+## 核對時順便看到的
+
+- **池中 3,377 張卡沒有子曲風**（兩成）。`card-subgenres.json` 最後一次重建是 09-04，之後上架的批次都沒進去
+  ——09-10、09-17 兩輪上架我都漏了 §10 的 `build-genre-tree`。這些卡抽得到，但「類型挑片」第二層選不到。
+- Apple 搜尋 API 從這台機器打得通了。**中文關鍵字要用 node 的 `fetch`，bash 的 curl 會回 0 筆**（編碼問題，與 worker 那條同一個坑）。
+
+## 主要檔案
+
+`audits/pub-fix/round2-rebind-check.md`（新）、`audits/pub-fix/README.md`。
+
+### 2026-10-04｜dip-vinyl-shop｜兩張線上簡介是退件說明的卡補齊：Coleman Hawkins《Body and Soul》、Odyssey《Odyssey》
+
+同日第二筆。店主：「那兩張退件說明現在先處理」。第二輪佇列的 B1 區因此歸零。
+
+## 一、查下來不是「綁錯碟」，是「重配之後只做了一半」
+
+兩張的線上簡介都寫著「本卡配到的 release group 不對、建議退回重配」，所以原本預期要重新配對身分與封面。
+實查 MusicBrainz 才發現 **release-group 與封面在 08-23 就已經重配正確**：
+
+- Coleman Hawkins：`card_catalog.rgMbid` 是 34c9b8b8（MB 註記 Bluebird compilation released in 1986），
+  封面是同 RG 的 1986 歐版 CD。最初誤配的 2001 年法國拼盤是 42543962。
+- Odyssey：`rgMbid` 是 a31a5339（Lopez Sisters 起家的紐約三重唱，首發 1977，RCA Victor APL1-2204），
+  試聽也已改配 Apple 411443144。最初誤配的 1972 年 Mowest 同名團是 41f63bbd。
+
+**沒跟上的是其他所有欄位**——它們當時是對「配錯的那張碟」寫的，manifest 自己註明「評分僅為佔位」：
+
+| | Coleman Hawkins《Body and Soul》 | Odyssey《Odyssey》 |
+|---|---|---|
+| 簡介 | 退件說明 → 249 字 | 退件說明 → 267 字 |
+| 三軸 | 3/3/2 → **4/3/2**（rare → uncommon） | 2/4/2 → **3/3/1**（維持 rare） |
+| 年份 | 2001 → **1986** | 1977 不變 |
+| 曲風 | jazz＋soul → **jazz** | rock → **soul** |
+| 子曲風 | jazz/swing 不變 | rock/metal/prog-metal → **soul/disco** |
+| UPC | 法國拼盤的 → 同 RG 歐版 CD | Mowest 再發的 → 同 RG 的 Sony 數位版 |
+
+Odyssey 的曲風錯得最離譜：`mapgenre3` 的 rawGenres 是 `Progressive metal`——那是**第三個**同名團（法國前衛金屬）的 Last.fm 標籤，
+所以這張 disco 首作在類型挑片裡一直被歸在「金屬／前衛金屬」。
+
+## 二、評分怎麼定
+
+比照池中同形狀的卡，理由寫在 manifest 的 `ratings.note`：
+- Odyssey 3/3/1：同期 disco 專輯 Tavares《Sky High!》4/3/1、Evelyn "Champagne" King《Smooth Talk》4/3/1、The Emotions《Flowers》3/3/1。
+- Hawkins 4/3/2：權威結集 Benny Goodman《The Complete RCA Victor Small Group Recordings》4/3/3、
+  Charlie Christian《The Genius of the Electric Guitar》3/4/2；這套收有 1939 年〈Body and Soul〉（2004 年入選美國國家錄音登錄）。
+  §5.6 的合輯例外理由與證據網址一併補上（原本那欄寫的是「整筆退回」）。
+
+## 三、簡介查證時刻意不寫的
+
+- Hawkins：1956 年場次的錄音地點兩源不一（Webster Hall／RCA Studios）；雙 LP 28 軌、CD 23 軌曲數不同。兩樣都不寫。
+- Odyssey：Tony Reynolds 何時加入兩源不一；Frankie Valli 同年也錄過〈Native New Yorker〉但誰先誰後兩源相反。兩樣都不寫。
+- Hawkins 的試聽維持 `unavailable`：Apple 四個店面都沒有這套 1986 結集，最接近的是 1996 年 RCA Victor 的另一套，依 §6 不收疑似配對。
+
+## 四、驗證
+
+KV（desc2、mapgenre3 各 2 鍵）與 `card_catalog` 2 筆回讀一致；兩張單獨過 `verify-album-onboarding --published`
+都是 **0 error、0 warning**；c-37、c-39 兩份 manifest 的對應條目已改成現況（否則日後重跑 gate 會因簡介不符而失敗）。
+`build-pub-fix-queue.mjs` 重掃全池，B1（退件說明）**0 則**。
+
+⚠ **同形狀的卡可能還有**：08-23 那一輪重配過身分、但簡介與評分沒重做的。全池已掃不到退件字樣，
+但「評分僅為佔位」這種只留在 manifest 裡、線上看不出來。線索是 manifest 的 `ratings.note`／`exceptionReason` 含「佔位」「退回」。
+
+**掃 manifest 得到的候選 17 張（只是字樣命中，未逐張核對）**——`ratings.note`／`exceptionReason`／`yearNote` 含
+「佔位」「不是同一張」「與策展年不符」，而且卡在池中：
+Eddie "Flashin" Fowlkes《Black Technosoul》（c-118）、Dariush《Cheshme Man》（c-124）、Various Artists《The Crying Princess: 78rpm Records From Burma》（c-129）、
+Joe Williams《Worth Waiting For...》（c-142）、Ana Moura《Desfado》、John Holt《1000 Volts of Holt》、Malavoi《La Case à Lucie》（c-31）、
+Bo Diddley《His Best》（c-33）、Steve Miller Band《Fly Like an Eagle》（c-34）、Musiq Soulchild《Juslisen》（c-38）、
+Derrick Carter《Squaredancing in a Roundhouse》（c-40）、譚詠麟《愛情陷阱》（c-41）、서태지와 아이들《서태지와 아이들 IV》（c-43）、
+George Winston《December》（c-46）、Los Prisioneros《La Voz de los '80》（c-47）、蔡琴《蔡琴老歌》（c-49）、Joy Division《Still》（c-93）。
+其中多數可能只是「listeners 查不到、評分人工佔位」這種無害註記，要逐張看線上現值才知道。
+
+## 主要檔案
+
+`audits/pub-fix/round2-b1.json`（新稿、來源、裁定理由）、`audits/pub-fix/round2-b1-apply.mjs`、
+`audits/pub-fix/{README.md,ROUND2-QUEUE.md,ROUND2-QUEUE.json}`、`seed_cards.json`（2 列）、`card-subgenres.json`（1 鍵）、
+`onboarding-manifest-c37-jazz-20260823.json`、`onboarding-manifest-c39-funk-20260823.json`。
+
+### 2026-10-04｜dip-vinyl-shop｜已上線簡介第一輪修正：修正包 274 則＋半形標點 824 則＋卡片 28 張，第二輪排入
+
+另一個工作區（藝人介紹線）回報「已上線簡介約 40 處要改」。核對後**點名的五件都屬實，但規模低估很多**：
+主清單 `audits/ARTIST-PUB-ISSUES.md` 是 403 條，而且 `audits/pub-fix/` 早有一包 9/30 定案的修正包沒人套用。
+店主裁示：「1、2 都做，3 排進去」——套用修正包、半形標點機械替換、剩下的排進第二輪。
+
+## 一、簡介：1,074 個 KV 鍵
+
+| 來源 | 則數 |
+|---|---:|
+| `APPLY-desc.json`（更正 133＋去出處 163＋整段重寫 2，合併後 274） | 274 |
+| 半形標點 → 全形 | 824 |
+| `need-local.json`（雲端沒有全文、只給改法） | 2 |
+| 兩者重疊（修正包的新稿自己帶半形逗號） | −26 |
+| **實際寫入的鍵** | **1,074** |
+
+修正包 274 則**全數命中 oldDesc、零跳過**。KV bulk get 逐字回讀 1,074/1,074；腳本再乾跑一次是 0 改動。
+
+**半形標點的規則**（`scripts/apply-pub-fix-desc.mjs` 的 `normalizePunct`）：
+- 《》〈〉裡是原文標題，一個字都不動——全池掃完仍有半形標點貼著中日韓文字的 29 則**全部在書名號裡**
+  （〈힘내! (Way To Go)〉《衝啦!》〈一扇门,一堵墙,一座坟〉），那是標題自己的寫法。
+- 逗號後面有空白、前後都是拉丁字的留著（`Earth, Wind & Fire`、`Russell Thompkins, Jr.`）；沒有空白的一律當中文逗號。
+- **千分位只認「逗號後剛好三位數」**。第一版寫成「數字,數字就留著」，漏掉 `DLP-75,1962 年`、`第 65,1997 年`、
+  `(BT 1072,1992)` 三處——逗號後面是四位數的年份。改完保留的 67 處逐一看過，全是原文曲名與專名。
+- 整篇沒有任何「貼著中文」的半形標點就整篇不碰，所以不會去動純英文段落。
+
+**desc4 只處理「沒有 desc2 的卡」**（1,644 個裡的 592 個）：worker 的讀取順序是 desc2 → CURATED_DESCS → desc4，
+有 desc2 的卡 desc4 根本不會被讀到，改了也是白改。
+
+`need-local` 兩則都不在 audit 寫的那個藝人名下：《Here 'Tis》的卡掛 Lou Donaldson（audit 記在 Grant Green），
+Casanova 的卡名是《Il Casanova di Federico Fellini》。用專輯名回頭找才對得到。
+
+## 二、卡片：28 張
+
+**年份 12 張**：Metallica 黑專輯 1998→1991、Gong《You》2021→1974、《Green Onions》1979→1962、
+Lester Young with the Oscar Peterson Trio 1997→1954、Lou Rawls《Lou Rawls Live!》1978→1966 等。
+Lou Rawls 那張的 release-group 與封面早在 08-28 就改綁 1966 Capitol 版了，池中只剩年份沒跟上，
+線上簡介則一直是當時的退件說明——這次兩樣一起補齊。
+
+**拆卡 16 張**（同名不同人）：Steve Lacy (The Internet) ×3、Placebo (Belgium) ×2、Caravan (Thailand)、
+Ghost (Sweden) ×2、Wings (Malaysia)、Air (US jazz trio) ×4、John Williams (guitarist)、
+Mother Earth (Tracy Nelson)、Supershy（原掛 Tom Misch；曲風順手由 jazz 改 electronic）。
+
+六處同步（`scripts/apply-pub-fix-cards.mjs`）：`seed_cards.json` 28 列、KV 搬 41 個鍵
+（desc2 16／mapgenre3 12／cover6 6／rating4 6／bc2 1）、Firestore `card_catalog` 16 筆搬移、
+`card-preview-status.js` 4 鍵、`data/apple-audio-map-v1.json` 9 鍵（runtime 檔重建，13,068 筆不變）、
+`card-subgenres.json` 14 鍵。回讀：KV 新鍵 41/41 逐字一致、舊鍵殘留 0；Firestore 16 筆逐筆相符、舊文件刪除 16。
+卡池 17,248 列不變、重複鍵 0。
+
+⚠ **拆卡後有三樣還沒補**：
+1. **三張的固定試聽要店主在後台重貼**——`album_overrides` 是管理員寫入保護，腳本搬不動：
+   Air (US jazz trio)《Air Song》《Air Mail》、John Williams (guitarist)《Rodrigo: Concierto de Aranjuez》。
+   三個 YouTube Music 網址存在 `audits/pub-fix/APPLIED-20261004.json` 的 `albumOverridesToReset`。
+2. 九個新藝人名還沒有藝人介紹（按鈕不會再跳出錯的人，但目前是空的）。
+3. 已經擁有這 16 張卡的玩家，卡冊裡存的是舊掛名（卡冊文件自帶 artist／album，不會消失，但不會跟著改名）。
+   與 08-11 掛名更動、09-10 簡轉繁同一個已知後果。
+
+## 三、第二輪排入：`audits/pub-fix/ROUND2-QUEUE.md`
+
+`scripts/build-pub-fix-queue.mjs` 對**套用後**的 KV 現值重掃：
+
+| 區 | 內容 | 數量 |
+|---|---|---:|
+| B1 | 退件說明（客人看得到，最優先） | 2 則 |
+| C | 人工補記 | 6 則 |
+| A | 事實更正，需研究後改寫 | 268 條／234 張卡 |
+| B1b | 正文以「本卡」當主詞的版本說明 | 7 則 |
+| B2 | 正文點名出處的候選 | 786 則 |
+
+**B1 兩則是這次全池掃描才掃到的，任何清單都沒列**：Coleman Hawkins《Body and Soul》
+（「本卡配到的 MB release group…並非店主策展指定的…建議退回重配」）與 Odyssey《Odyssey》
+（「本列所配的 release-group…是另一個同名團體的唱片」）。兩張都要重新配對身分與封面，不只是重寫簡介。
+
+C 區收了另一個工作區點名、逐條查證過的：Shabazi 是十七世紀（1619–約 1720）；Khaled 的 Cheb 是少年時期就用的稱號、
+1985 年得到的是「raï 之王」、1992 年拿掉 Cheb；Souad Massi 本人否認因死亡威脅離開阿爾及利亞；
+齊豫《橄欖樹》的禁歌原因只寫了次要的那句（新聞局主要針對「流浪」），且「齊豫以〈歡顏〉拿下金馬獎」主詞錯
+（第 16 屆得獎人是作曲的李泰祥）——**這張只有 desc4、沒有產線稿**，建議直接寫一則 desc2。
+
+A 區 268 條裡有 55 條的原句在線上已經找不到（被第一輪的去出處改寫順手改掉），派工前先看「原句還在」欄。
+B2 是候選不是定案——「樂評人當故事角色可具名」那條規則之下有些是合法的。
+
+## 四、兩個教訓
+
+1. **KV bulk get 在寫入後約 10–30 秒內會讀到舊值。** 這次撞到兩次：bulk put 之後立刻回讀，1,072 個鍵裡 4 個不符；
+   bulk delete 舊鍵之後立刻回讀，41 個**剛驗過一致**的新鍵有 27 個讀成空值。兩次都是等二十幾秒再讀就全數一致，
+   單鍵直讀（`/values/<key>`）也是 200。**回讀不符先等半分鐘再讀一次，不要當場重寫**——值其實已經寫進去了。
+   （08 月那次「每次不同的假分岔」真因是 Buffer 拼接，與這個不同；這次用的是 fetch，是真的延遲。）
+2. **`audits/` 一直跟著網站部署上 CDN**，沒有任何頁面讀它。這次的前後對照檔有 1.1 MiB，
+   順手把 `./audits` 加進 `scripts/pages-build.sh` 的排除清單。
+
+## 主要檔案
+
+`scripts/apply-pub-fix-desc.mjs`、`scripts/apply-pub-fix-cards.mjs`、`scripts/build-pub-fix-queue.mjs`（三支皆新）、
+`scripts/pages-build.sh`、`seed_cards.json`、`card-preview-status.js`、`card-subgenres.json`、
+`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、
+`audits/pub-fix/{README.md,APPLIED-20261004.json,ROUND2-QUEUE.md,ROUND2-QUEUE.json,need-local-apply.mjs}`。
+
+## 尚未處理
+
+- 第二輪佇列（上表）交藝人介紹線／雲端寫稿，本機套用。
+- c-148～c-198 與 add-20261003 共 **1,423 張**還在 `claude/remote-runbook-album-onboarding-mszieh`（領先 main 621 筆），未合併未上架。
+- 藝人介紹 D 級 116 批 4,605 位、C 級尾 9 批 323 位未做。
+- 舊帳照舊：146 張缺封面未上架、14 組藝人名寫法分裂、4 組重複卡、c-117 五張卡帶盤、`REMOTE_RUNBOOK` 的 25 MiB 條款。
+
 ### 2026-10-01｜dip-vinyl-shop｜Apple Music 按鈕第二修：改用含名稱段的正式專輯網址（短網址 App 不認）
 
 **症狀**：09-28 修正上線後店主實測，點 Apple Music 仍只打開 App 首頁。

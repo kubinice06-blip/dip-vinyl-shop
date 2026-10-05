@@ -3,20 +3,32 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **194** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 193、已核可 0、已退回 1）。
-最後更新：2026-09-17T11:47:06.245Z
+共 **240** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 2、已退回 1）。
+最後更新：2026-10-04T16:48:23Z
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
 那些網址帶簽名、可能失效——留著 release id 就是為了日後能整批重抓或改成自存。
+
+## add-20261003（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 何欣穗 《完美小姐》 | [#11294123](https://www.discogs.com/release/11294123) | 1998 | Keboyin Music | KM-99012 | 條碼 4719260990124（與 MB release 6feea786 相同）、廠牌 喜樂音（Keboyin Music，中文維基作品表）、曲目 11 軌、曲名與曲長逐軌對上 MB | ok |
+
+## add-20261004-shop（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| ジョージ大塚トリオ 《You Are My Sunshine》 | [#4358997](https://www.discogs.com/release/4358997) | 1974 | Three Blind Mice | TBM-35 | 目錄號 TBM-35、年份 1974、廠牌 Three Blind Mice | ok |
 
 ## c49（3 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | 劉文正 《三月裡的小雨》 | [#10991467](https://www.discogs.com/release/10991467) | 1981 | Tony 東尼機構 | TONY LP-546A | 年份 1981、廠牌 Tony 東尼機構 | pending |
-| 鄭秀文 《放不低》 | [#6766152](https://www.discogs.com/release/6766152) | 1996 | Warner Music Hong Kong | 0630-15257-2 | 年份 1996、廠牌 Warner Music Hong Kong、目錄號 0630-15257-2 | pending |
 | 羅文 《小李飛刀》 | [#6583209](https://www.discogs.com/release/6583209) | 1978 | Crown Records | CST-12-31 | 年份 1978、廠牌 Crown Records、目錄號 CST-12-31 | pending |
+| 鄭秀文 《放不低》 | [#6766152](https://www.discogs.com/release/6766152) | 1996 | Warner Music Hong Kong | 0630-15257-2 | 年份 1996、廠牌 Warner Music Hong Kong、目錄號 0630-15257-2 | pending |
 
 ## c50（2 張）
 
@@ -91,11 +103,11 @@
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
-| 生活向上委員会 《Live in Masuda》 | [#9761821](https://www.discogs.com/release/9761821) | 1978 | Aketa's Disk | AD-6 | 年份 1978、廠牌 Aketa's Disk | pending |
+| Yoshimi Ueno Bestrio 《Live in Otsuchi》 | [#20161765](https://www.discogs.com/release/20161765) | 1981 | Otsuchi Jazz Fan Club | OJFC-001 | 年份 1981、廠牌 Otsuchi Jazz Fan Club、目錄號 OJFC-001 | pending |
 | 吉沢元治 《割れた鏡 または 化石の鳥》 | [#1015317](https://www.discogs.com/release/1015317) | 1975 | ALM Records | AL-6 | 年份 1975、廠牌 ALM Records | pending |
 | 武田和命 《Gentle November》 | [#7143651](https://www.discogs.com/release/7143651) | 1979 | Frasco | FS-7030 | 年份 1979、廠牌 Frasco、目錄號 FS-7030 | pending |
 | 渋谷毅 《Shibuyan》 | [#10214280](https://www.discogs.com/release/10214280) | 1983 | Aketa's Disk | AD-13 | 年份 1983、廠牌 Aketa's Disk、目錄號 AD-13 | pending |
-| Yoshimi Ueno Bestrio 《Live in Otsuchi》 | [#20161765](https://www.discogs.com/release/20161765) | 1981 | Otsuchi Jazz Fan Club | OJFC-001 | 年份 1981、廠牌 Otsuchi Jazz Fan Club、目錄號 OJFC-001 | pending |
+| 生活向上委員会 《Live in Masuda》 | [#9761821](https://www.discogs.com/release/9761821) | 1978 | Aketa's Disk | AD-6 | 年份 1978、廠牌 Aketa's Disk | pending |
 
 ## c68（1 張）
 
@@ -230,12 +242,6 @@
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
-| 小栗均トリオ 《みどりいろの渓流》 | [#11844039](https://www.discogs.com/release/11844039) | 1981 | Johnny's Disk Record | JD-06 | 年份 1981、廠牌 Johnny's Disk Record、目錄號 JD-06 | pending |
-| 中村ヨシミツ 《魂のギター》 | [#15944151](https://www.discogs.com/release/15944151) | 1984 | Johnny's Disk Record | JD-10 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-10 | pending |
-| 平岡睦男とナチュラル・ブギー 《ジョニー・マイ・ハウス》 | [#12434389](https://www.discogs.com/release/12434389) | 1984 | Johnny's Disk Record | JD-11 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-11 | pending |
-| 板倉克行 《海猫の島》 | [#11716782](https://www.discogs.com/release/11716782) | 1982 | Johnny's Disk Record | JD-07 | 年份 1982、廠牌 Johnny's Disk Record、目錄號 JD-07 | pending |
-| 板倉克行トリオ 《ハニー・サンバ》 | [#9265825](https://www.discogs.com/release/9265825) | 1984 | Johnny's Disk Record | JD-12 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-12 | pending |
-| 園田まゆみ 《午後3時の秋》 | [#8826798](https://www.discogs.com/release/8826798) | 1982 | Johnny's Disk Record | JD-08 | 年份 1982、廠牌 Johnny's Disk Record、目錄號 JD-08 | pending |
 | Akira Ohmori 《To Be Young and Foolish》 | [#21235555](https://www.discogs.com/release/21235555) | 1983 | Union Jazz | ULP-5508 | 年份 1983、廠牌 Union Jazz、目錄號 ULP-5508 | pending |
 | Fumio Watanabe Quintet 《Groovin' High》 | [#12244873](https://www.discogs.com/release/12244873) | 1982 | Union Jazz | ULP-5506 | 年份 1982、廠牌 Union Jazz、目錄號 ULP-5506 | pending |
 | Hidehiko Matsumoto 《Hot Jazz》 | [#6342409](https://www.discogs.com/release/6342409) | 1983 | Union Jazz | ULP-7005 | 年份 1983、廠牌 Union Jazz、目錄號 ULP-7005 | pending |
@@ -244,6 +250,12 @@
 | Yoshino Yanagihara 《Summer Rain》 | [#10375628](https://www.discogs.com/release/10375628) | 1982 | Union Jazz | ULP-5507 | 年份 1982、廠牌 Union Jazz、目錄號 ULP-5507 | pending |
 | キングコングパラダイス 《あつさもさむさも》 | [#7458106](https://www.discogs.com/release/7458106) | 1984 | Johnny's Disk Record | JD-09 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-09 | pending |
 | リー・ウォンヒーイ＋菊他コージ 《グロー》 | [#3828868](https://www.discogs.com/release/3828868) | 1985 | Johnny's Disk Record | JD-13 | 年份 1985、廠牌 Johnny's Disk Record、目錄號 JD-13 | pending |
+| 中村ヨシミツ 《魂のギター》 | [#15944151](https://www.discogs.com/release/15944151) | 1984 | Johnny's Disk Record | JD-10 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-10 | pending |
+| 園田まゆみ 《午後3時の秋》 | [#8826798](https://www.discogs.com/release/8826798) | 1982 | Johnny's Disk Record | JD-08 | 年份 1982、廠牌 Johnny's Disk Record、目錄號 JD-08 | pending |
+| 小栗均トリオ 《みどりいろの渓流》 | [#11844039](https://www.discogs.com/release/11844039) | 1981 | Johnny's Disk Record | JD-06 | 年份 1981、廠牌 Johnny's Disk Record、目錄號 JD-06 | pending |
+| 平岡睦男とナチュラル・ブギー 《ジョニー・マイ・ハウス》 | [#12434389](https://www.discogs.com/release/12434389) | 1984 | Johnny's Disk Record | JD-11 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-11 | pending |
+| 板倉克行 《海猫の島》 | [#11716782](https://www.discogs.com/release/11716782) | 1982 | Johnny's Disk Record | JD-07 | 年份 1982、廠牌 Johnny's Disk Record、目錄號 JD-07 | pending |
+| 板倉克行トリオ 《ハニー・サンバ》 | [#9265825](https://www.discogs.com/release/9265825) | 1984 | Johnny's Disk Record | JD-12 | 年份 1984、廠牌 Johnny's Disk Record、目錄號 JD-12 | pending |
 
 ## c89（4 張）
 
@@ -265,10 +277,10 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | 夾子電動大樂隊 《地下人》 | [#8269115](https://www.discogs.com/release/8269115) | 2012 | Hove | CLIPS-12001 | 年份 2012、廠牌 Hove、目錄號 CLIPS-12001 | pending |
-| 花生隊長 《Oh my god》 | [#11465264](https://www.discogs.com/release/11465264) | 2002 | Sony Music Taiwan | IMD0220 | 年份 2002、廠牌 Sony Music Taiwan、目錄號 IMD0220 | pending |
-| 趙一豪 《把我自己收回來》 | [#9586868](https://www.discogs.com/release/9586868) | 1989 | 水晶唱片 | CIRD 0005-2 | 年份 1989、廠牌 水晶唱片 | rejected |
 | 潘麗麗 《畫眉》 | [#19665379](https://www.discogs.com/release/19665379) | 1994 | 水晶唱片 | CIRD1018-2 | 年份 1994、廠牌 水晶唱片 | pending |
 | 潘麗麗 《春雨》 | [#23578109](https://www.discogs.com/release/23578109) | 1992 | 水晶唱片 | CIRD 1036-2 | 年份 1992、廠牌 水晶唱片 | pending |
+| 花生隊長 《Oh my god》 | [#11465264](https://www.discogs.com/release/11465264) | 2002 | Sony Music Taiwan | IMD0220 | 年份 2002、廠牌 Sony Music Taiwan、目錄號 IMD0220 | pending |
+| 趙一豪 《把我自己收回來》 | [#9586868](https://www.discogs.com/release/9586868) | 1989 | 水晶唱片 | CIRD 0005-2 | 年份 1989、廠牌 水晶唱片 | rejected |
 
 ## c103（3 張）
 
@@ -282,24 +294,24 @@
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
+| 夏韶聲 《童年時》 | [#13101846](https://www.discogs.com/release/13101846) | 1979 | Bang Bang Records | BBLP7643 | 年份 1979、廠牌 Bang Bang Records、目錄號 BBLP7643 | pending |
 | 太極 《沉默風暴》 | [#11763705](https://www.discogs.com/release/11763705) | 1989 | WEA | 2292-56863-1 | 年份 1989、廠牌 WEA | pending |
 | 沈文程 《心事誰人知》 | [#18524635](https://www.discogs.com/release/18524635) | 1982 | Ailia | A-6002 | 年份 1982、廠牌 Ailia、目錄號 A-6002 | pending |
-| 夏韶聲 《童年時》 | [#13101846](https://www.discogs.com/release/13101846) | 1979 | Bang Bang Records | BBLP7643 | 年份 1979、廠牌 Bang Bang Records、目錄號 BBLP7643 | pending |
 | 甄妮 《海上花》 | [#29380765](https://www.discogs.com/release/29380765) | 1986 | 喜瑪拉雅 | HPR-7508 | 年份 1986、廠牌 喜瑪拉雅、目錄號 HPR-7508 | pending |
 
 ## c113（9 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
+| 古謝美佐子 《島美らさ》 | [#15374759](https://www.discogs.com/release/15374759) | 1992 | Disc Akabana | ASCD-2002 | 年份 1992、目錄號 ASCD-2002 | pending |
+| 嘉手苅林昌 《潮騒のリズム 独演！嘉手苅林昌[I]》 | [#12094296](https://www.discogs.com/release/12094296) | 1975 | Victor | SJV-2028 | 年份 1975、目錄號 SJV-2028 | pending |
 | 大工哲弘 《伝いやり 風便り唄便り》 | [#15485276](https://www.discogs.com/release/15485276) | 2001 | Disc Akabana | ASCD-2010 | 年份 2001、目錄號 ASCD-2010 | pending |
 | 山里勇吉 《八重山書生節》 | [#15534966](https://www.discogs.com/release/15534966) | 1997 | Disc Akabana | ASCD-2007 | 年份 1997、目錄號 ASCD-2007 | pending |
-| 古謝美佐子 《島美らさ》 | [#15374759](https://www.discogs.com/release/15374759) | 1992 | Disc Akabana | ASCD-2002 | 年份 1992、目錄號 ASCD-2002 | pending |
+| 普久原恒勇 《だんじゅかりゆし 琉球三味線》 | [#13386343](https://www.discogs.com/release/13386343) | 1978 | Columbia | FZ-7205 | 年份 1978、目錄號 FZ-7205 | pending |
+| 照屋林助 《うちな～ゆんたく 沖縄の笑い芸》 | [#11975306](https://www.discogs.com/release/11975306) | 1981 | CBS/Sony | 25AG 765 | 年份 1981、廠牌 CBS/Sony | pending |
+| 登川誠仁 《美ら弾き》 | [#10364858](https://www.discogs.com/release/10364858) | 1991 | Victor | VICG-5164 | 年份 1991、目錄號 VICG-5164 | pending |
 | 知名定男 《酒に交われば…》 | [#12302235](https://www.discogs.com/release/12302235) | 1979 | F-Label | C25A0055 | 年份 1979、廠牌 F-Label | pending |
 | 知名定男 《島や唄遊び》 | [#12717123](https://www.discogs.com/release/12717123) | 1992 | Disc Akabana | ASCD-2003 | 年份 1992、目錄號 ASCD-2003 | pending |
-| 普久原恒勇 《だんじゅかりゆし 琉球三味線》 | [#13386343](https://www.discogs.com/release/13386343) | 1978 | Columbia | FZ-7205 | 年份 1978、目錄號 FZ-7205 | pending |
-| 登川誠仁 《美ら弾き》 | [#10364858](https://www.discogs.com/release/10364858) | 1991 | Victor | VICG-5164 | 年份 1991、目錄號 VICG-5164 | pending |
-| 照屋林助 《うちな～ゆんたく 沖縄の笑い芸》 | [#11975306](https://www.discogs.com/release/11975306) | 1981 | CBS/Sony | 25AG 765 | 年份 1981、廠牌 CBS/Sony | pending |
-| 嘉手苅林昌 《潮騒のリズム 独演！嘉手苅林昌[I]》 | [#12094296](https://www.discogs.com/release/12094296) | 1975 | Victor | SJV-2028 | 年份 1975、目錄號 SJV-2028 | pending |
 
 ## c114（30 張）
 
@@ -389,8 +401,8 @@
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
-| 日野元彦 《First Album》 | [#8895683](https://www.discogs.com/release/8895683) | 1971 | Columbia | XMS-10029-CT | 年份 1971、廠牌 Columbia | pending |
 | 前田憲男とオール・スターズ 《Rock Communication》 | [#9984048](https://www.discogs.com/release/9984048) | 1970 | Teichiku Records | SL-1329 | 年份 1970、目錄號 SL-1329 | pending |
+| 日野元彦 《First Album》 | [#8895683](https://www.discogs.com/release/8895683) | 1971 | Columbia | XMS-10029-CT | 年份 1971、廠牌 Columbia | pending |
 
 ## c135（1 張）
 
@@ -426,6 +438,170 @@
 | Edmond Hall / Art Hodes 《Original Blue Note Jazz, Volume 1》 | [#3599683](https://www.discogs.com/release/3599683) | 1969 | Blue Note | B-6504 | 年份 1969、廠牌 Blue Note、目錄號 B-6504 | pending |
 | James Moody / George Wallington 《The Beginning and End of Bop》 | [#2040078](https://www.discogs.com/release/2040078) | 1969 | Blue Note | B 6503 | 年份 1969、廠牌 Blue Note、目錄號 B 6503 | pending |
 | Sidney Bechet 《Port of Harlem Six》 | [#4107676](https://www.discogs.com/release/4107676) | 1952 | Blue Note | LP 7022 | 年份 1952、廠牌 Blue Note、目錄號 LP 7022 | pending |
+
+## c149（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Dianne Reeves 《The Nearness of You》 | [#3909394](https://www.discogs.com/release/3909394) | 1988 | Blue Note | CJ32-5020 | 年份 1988、廠牌 Blue Note、目錄號 CJ32-5020 | pending |
+| Don Grolnick 《Weaver of Dreams》 | [#5139884](https://www.discogs.com/release/5139884) | 1990 | Blue Note | CDP 7 94591 2 | 年份 1990、廠牌 Blue Note | pending |
+
+## c151（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Gonzalo Rubalcaba 《Suite 4 y 20》 | [#9457766](https://www.discogs.com/release/9457766) | 1992 | Somethin' Else | TOCJ-5545 | 年份 1992、廠牌 Somethin' Else、目錄號 TOCJ-5545 | pending |
+| The Bob Belden Ensemble 《Puccini's Turandot》 | [#11362304](https://www.discogs.com/release/11362304) | 1993 | Blue Note | TOCJ-5731 | 年份 1993、廠牌 Blue Note、目錄號 TOCJ-5731 | pending |
+
+## c152（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Stan Tracey 《Live at the QEH》 | [#1786358](https://www.discogs.com/release/1786358) | 1994 | Blue Note International | 7243 8 31139 2 7 | 年份 1994、廠牌 Blue Note International | pending |
+
+## c153（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Geri Allen 《Eyes... in the Back of Your Head》 | [#806089](https://www.discogs.com/release/806089) | 1997 | Blue Note | 7243 8 38297 2 9 | 年份 1997、廠牌 Blue Note | pending |
+| Paul Jackson, Jr. 《Never Alone - Duets》 | [#3780032](https://www.discogs.com/release/3780032) | 1996 | Blue Note | CDP 7243 8 37630 2 3 | 年份 1996、廠牌 Blue Note | pending |
+
+## c159（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Trio Töykeät 《Wake》 | [#574399](https://www.discogs.com/release/574399) | 2005 | Blue Note | 0946 3 35939 2 3 | 年份 2005、廠牌 Blue Note | pending |
+
+## c161（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Sabrina Starke 《Bags & Suitcases》 | [#2640372](https://www.discogs.com/release/2640372) | 2010 | Blue Note | 50999 9091722 6 | 年份 2010、廠牌 Blue Note | pending |
+
+## c168（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Ralph Peterson Fo'tet 《Ornettology》 | [#12615736](https://www.discogs.com/release/12615736) | 1991 | Blue Note | CDP 7 98290 2 | 年份 1991、廠牌 Blue Note | pending |
+
+## c169（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Anna-Mari Kähärän Orkesteri 《Anna-Mari Kähärän Orkesteri》 | [#8434335](https://www.discogs.com/release/8434335) | 2005 | Blue Note | 7243 873846 2 0 | 年份 2005、廠牌 Blue Note | pending |
+| Thierry Lang 《Guide Me Home》 | [#6474752](https://www.discogs.com/release/6474752) | 2000 | Blue Note | TOCJ-66099 | 年份 2000、廠牌 Blue Note、目錄號 TOCJ-66099 | pending |
+
+## c171（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Kevin Eubanks 《Spiritalk 2: Revelations》 | [#14842193](https://www.discogs.com/release/14842193) | 1995 | Blue Note | CDP 530132 | 年份 1995、廠牌 Blue Note、目錄號 CDP 530132 | pending |
+| Ron Carter 《Brandenburg Concerto》 | [#11783863](https://www.discogs.com/release/11783863) | 1996 | EAU Records | TOCJ-6037 | 年份 1996、廠牌 EAU Records、目錄號 TOCJ-6037 | pending |
+
+## c176（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 浅川マキ 《流れを渡る》 | [#1922246](https://www.discogs.com/release/1922246) | 1977 | Express | ETP-72230 | 年份 1977、廠牌 Express、目錄號 ETP-72230 | pending |
+| 花柳幻舟 《残・曽根崎心中》 | [#9807168](https://www.discogs.com/release/9807168) | 1975 | Columbia | CD-7150 | 年份 1975、廠牌 Columbia、目錄號 CD-7150 | pending |
+
+## c177（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 浅川マキ 《寂しい日々》 | [#2266638](https://www.discogs.com/release/2266638) | 1978 | Express | ETP-80051 | 年份 1978、廠牌 Express、目錄號 ETP-80051 | pending |
+
+## c180（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 浅川マキ 《Who's Knocking On My Door》 | [#21258763](https://www.discogs.com/release/21258763) | 2021 | Express | PROT-7150 | 廠牌 Express、目錄號 PROT-7150 | pending |
+
+## c181（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 浅川マキ 《Some Years Parst》 | [#5494847](https://www.discogs.com/release/5494847) | 1985 | Eastworld | WTP-90319 | 年份 1985、廠牌 Eastworld、目錄號 WTP-90319 | pending |
+
+## c182（6 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| John Kaizan Neptune 《Tokyosphere》 | [#4520441](https://www.discogs.com/release/4520441) | 1988 | JVC | JD-3316 | 年份 1988、廠牌 JVC、目錄號 JD-3316 | pending |
+| 浅川マキ 《Underground》 | [#21878587](https://www.discogs.com/release/21878587) | 2022 | Eastworld | PROT-7154 | 廠牌 Eastworld、目錄號 PROT-7154 | pending |
+| 浅川マキ 《こぼれる黄金の砂 -What it be like-》 | [#9797532](https://www.discogs.com/release/9797532) | 1987 | Eastworld | WTP-90451 | 年份 1987、廠牌 Eastworld、目錄號 WTP-90451 | pending |
+| 浅川マキ 《Stranger's Touch》 | [#8093948](https://www.discogs.com/release/8093948) | 1989 | Eastworld | TOCT-5604 | 年份 1989、廠牌 Eastworld、目錄號 TOCT-5604 | pending |
+| 浅川マキ 《夜のカーニバル》 | [#9756274](https://www.discogs.com/release/9756274) | 1989 | Eastworld | CT32-5421 | 年份 1989、廠牌 Eastworld | pending |
+| 浅川マキ・本多俊之 《幻の女たち》 | [#8417766](https://www.discogs.com/release/8417766) | 1988 | Eastworld | RT28-5147 | 年份 1988、廠牌 Eastworld | pending |
+
+## c183（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 村岡実 & 沢井忠夫 《尺八＆琴 男の世界 <ボサ・ノヴァ編>》 | [#13283520](https://www.discogs.com/release/13283520) | 1971 | Union Records | ULP-1010 | 年份 1971、廠牌 Union Records、目錄號 ULP-1010 | pending |
+
+## c184（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 土取利行・高木元輝 《Origination》 | [#4016128](https://www.discogs.com/release/4016128) | 1975 | Alm Records | AL-4 | 年份 1975、廠牌 Alm Records | pending |
+| 坂田明トリオ 《Counter Clockwise Trip》 | [#7910096](https://www.discogs.com/release/7910096) | 1975 | Frasco | FS-7001 | 年份 1975、廠牌 Frasco | pending |
+
+## c187（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 山下洋輔トリオ 《Hot Menu》 | [#3240407](https://www.discogs.com/release/3240407) | 1979 | Frasco | FS-7028 | 年份 1979、廠牌 Frasco、目錄號 FS-7028 | pending |
+
+## c190（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 近藤等則 《Metal Position》 | [#4689661](https://www.discogs.com/release/4689661) | 1985 | Polydor | 28MX2520 | 年份 1985、廠牌 Polydor | pending |
+
+## c191（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 近藤等則 《337》 | [#32884479](https://www.discogs.com/release/32884479) | 1987 | Epic/Sony | 15・6H-214 | 年份 1987、廠牌 Epic/Sony | pending |
+
+## c193（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 'Hannibal' Marvin Peterson 《Naima》 | [#1355521](https://www.discogs.com/release/1355521) | 1978 | Eastworld | EWLF-98004 | 年份 1978、廠牌 Eastworld、目錄號 EWLF-98004 | pending |
+| Mal Waldron & Jackie McLean 《Like Old Times》 | [#5974022](https://www.discogs.com/release/5974022) | 1976 | Victor | SMJ-6137 | 年份 1976、廠牌 Victor、目錄號 SMJ-6137 | pending |
+| Mal Waldron & Steve Lacy 《Journey Without End》 | [#4349185](https://www.discogs.com/release/4349185) | 1972 | Victor World Group | SMJX-10134 | 年份 1972、廠牌 Victor World Group、目錄號 SMJX-10134 | pending |
+| Miroslav Vitous 《Purple》 | [#2069284](https://www.discogs.com/release/2069284) | 1970 | CBS/Sony | SOPC 57101-J | 年份 1970、廠牌 CBS/Sony | pending |
+
+## c194（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Lee Ritenour 《Friendship》 | [#2931459](https://www.discogs.com/release/2931459) | 1978 | JVC | VIJ-4010 | 年份 1978、廠牌 JVC、目錄號 VIJ-4010 | pending |
+| Mal Waldron 《Meditations (Mal Waldron Live At Dug)》 | [#7944329](https://www.discogs.com/release/7944329) | 1972 | Victor | SMJX-10147 | 年份 1972、廠牌 Victor、目錄號 SMJX-10147 | pending |
+
+## c195（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Marlene 《My Favorite Songs》 | [#6793339](https://www.discogs.com/release/6793339) | 1982 | CBS/Sony | 28AH 1507 | 年份 1982、廠牌 CBS/Sony | pending |
+| The Great Jazz Trio 《Threesome》 | [#11369125](https://www.discogs.com/release/11369125) | 1983 | Eastworld | TEC 2016 | 年份 1983、廠牌 Eastworld、目錄號 TEC 2016 | pending |
+| The Great Jazz Trio 《N.Y. Sophisticate: A Tribute to Duke Ellington》 | [#4657946](https://www.discogs.com/release/4657946) | 1984 | Denon | YF-7084 | 年份 1984、廠牌 Denon、目錄號 YF-7084 | pending |
+| The Great Jazz Trio 《Monk's Moods》 | [#8383271](https://www.discogs.com/release/8383271) | 1984 | Interface | YF-7095 | 年份 1984、廠牌 Interface | pending |
+
+## c196（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Marlene 《SOFTLY, AS IN A MORNING SUNRISE》 | [#8476750](https://www.discogs.com/release/8476750) | 1985 | CBS/Sony | 28AH 1962 | 年份 1985、廠牌 CBS/Sony | pending |
+
+## c197（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Gil Evans 《Farewell - Live at Sweet Basil》 | [#2047335](https://www.discogs.com/release/2047335) | 1988 | Electric Bird | K28P 6486 | 年份 1988、廠牌 Electric Bird | pending |
+| The Great Jazz Trio 《Great Standards Vol. 2》 | [#6493512](https://www.discogs.com/release/6493512) | 1988 | Alfa Jazz | 28R1-12 | 年份 1988、廠牌 Alfa Jazz | pending |
 
 ## csea（2 張）
 
