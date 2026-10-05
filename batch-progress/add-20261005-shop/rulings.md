@@ -51,3 +51,9 @@
 - **8672** 《Heartattack and Vine》：Levi's 官司（1993）、Ishiguro 評語（1989）、Springsteen 合唱（1981）、Godard（1983）皆屬「作品流傳、與作品直接綁定」，可寫但須標時序；Ishiguro 為長引文轉述，不得逐字。卡單曾想寫「Bones Howe 合作終站」未查證，已刪。
 - **8673** hookCandidates 各兩條且避開同批同構（a 組為何另算）：Neil 取「節奏組換人＋樂隊名遭異議」「被 MTV 禁播的標題曲錄影帶」；Waits 取「刀叉湯匙轉型：鼓棒與失真吉他」「四條流傳線」；下田 1973 取「A 日文 B 英文＋Marci Sutin」「彼岸感 acid folk」；下田 1974 取「樂手陣容（據說明）」「第一張 Philips、第二張起 Polydor」；モア取「私製盤小故事」「為這一張成立的廠牌」。
 - **8674** QA：臨時副本合併 a、b 卡單後 `node qa-batch.mjs research add-20261005-shop` → a、b 兩組皆 0 error 0 警告，key 與卡單完全一致。（正式路徑因主線尚未建立合併卡單 `add-20261005-shop-cards.json`，需主線合併後再跑。）
+
+## 研究 c（8695–8698）
+- **8695** 《今田勝《Blue Marine》》身分：MB RG `68ddda65`（個人實體 今田勝 b9d2be2a，Album）走 pinned；Discogs master 1097058／release 1938858（Full House PAP-25026，1982 JP）互證。店內單曲 TD-117（Discogs 13662250，A〈誘われてシーサイド / Blue Marine〉、B〈憂いの炎 / Secret Sounds〉）掛到這張卡。掛名 `今田勝`，照《Andalusian Breeze》《Carnival》先例。
+- **8696** 年份取 1982，不取 MB 的 1992：MB 轄下唯一 release 是 Alfa Jazz ALCR-182（1992 CD 再發），原盤 1982（Discogs、Tower、Groovenut 一致）。第一型（資料庫端只有再發），rgMbid 不受影響。
+- **8697** 研究稿 12 條 facts 皆附 https src，status full。已記入 notes：Grover 薩克斯風種類兩源不一致只寫 Discogs 版；Witness Band 只有 Tower 單一來源；〈Secret Sounds〉作曲 Grover 僅 Discogs（部落格相符）；TD-117 無年份不寫；樂評／榜位／紐約錄音緣由查無不寫。hookCandidates 兩條。
+- **8698** 封面：CAA RG 端點實測 307（有圖）待本機看圖；Apple 待本機。MB 同名《Blue Marine》另有 Krystian Shek（2007）、RSK（2018），不同藝人，已寫進 curatorRisk。

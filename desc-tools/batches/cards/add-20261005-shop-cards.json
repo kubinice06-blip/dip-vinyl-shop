@@ -315,5 +315,33 @@
   ],
   "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB 五個方向皆查無且確認非 503；改以 Discogs release 20594359 的廠牌 Saturn Records、目錄號 ST-1001-24L、年份 1983、曲目 13 軌與人員，加店主 IG 貼文互證。兩條 https 證據，薄但成立。",
   "coverSourceHint": "discogs"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "c",
+  "lineType": "深掘",
+  "scene": "店內販售區待上架（Notion 售價表 2026-10-05）",
+  "republic": "",
+  "cover": null,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "key": "desc4:今田勝|Blue Marine",
+  "artist": "今田勝",
+  "album": "Blue Marine",
+  "year": 1982,
+  "label": "Full House PAP-25026（Japan 1982 12 吋黑膠 8 軌；Trio Records 系；日文副題《誘われてシーサイド》；1982-05/06 東京 Sound Inn 與紐約 Secret Sound Studio 錄音）",
+  "rgMbid": "68ddda65-1fa2-4e9b-abf2-b2156028801c",
+  "identitySource": "pinned",
+  "curatorWhy": "店內在售的是今田勝 7 吋日本 Promo 單曲《誘われてシーサイド》（Full House TD-117，A 面〈Blue Marine〉、B 面〈Secret Sounds〉，Discogs release 13662250）；單曲不收卡，依主線裁定改收兩曲所出自的專輯，店內單曲掛到這張卡。專輯為今田勝（鋼琴、合成器）與 Steve Khan（吉他）、Anthony Jackson（貝斯）、Steve Jordan（鼓、B1 人聲）、Manolo Badrena（打擊）的紐約陣容，加 Grover Washington Jr.（薩克斯風）與 Tom Browne（小號，僅 B1）客席，八首、約 38 分鐘（Discogs release 1938858；Tower CDSOL-1769 曲長合計 37:45）。池中今田勝已有《Andalusian Breeze》1980、《Carnival》1981 等，本張補他 1982 年紐約錄音的一段，非撞卡。",
+  "curatorRisk": "⚠ 年份：MB RG first-release-date 是 1992-06-21（轄下唯一 release 是 Alfa Jazz ALCR-182 的 1992 年日本 CD 再發），**不是原盤年**；原盤 Full House PAP-25026 在 Discogs release 1938858 與 master 1097058 皆為 1982，Tower／Disk Union／Groovenut 也都寫 1982，錄音與混音在 1982 年 5–7 月（Discogs 14531174 備註）；year 取 1982，rgMbid 不受影響（年份第一型：資料庫端只有再發）。⚠ 掛名：MB RG credit 是個人實體「今田勝」（b9d2be2a，Person，credit 名義 Masaru Imada），池中先例 `今田勝`《Andalusian Breeze》《Carnival》同形，直接用，不用 Trio 實體。⚠ 盤名：封面與 Discogs 主標 Blue Marine，日本盤副題《誘われてシーサイド》，卡單取 Blue Marine，日文名進 queryAlias；MB 另有同名《Blue Marine》Krystian Shek（2007）與 RSK（2018），皆不同藝人，勿混。⚠ 單曲關係：TD-117 單曲 A 面標〈誘われてシーサイド / Blue Marine〉（即專輯 A1）、B 面〈憂いの炎 / Secret Sounds〉（即 A4），店內實物是單曲，不是 LP；簡介不得寫成店內有這張 LP。⚠ 〈Secret Sounds〉作曲掛 Grover Washington Jr.（Discogs），其餘七首今田勝作曲，簡介不可寫成全盤今田勝作曲。⚠ 版本：另有 1984 Polydor 25MX 2508、1992 Alfa Jazz、2017 Solid UHQCD、2020 Ultra-Vybe 等多種再發，卡只釘作品。CAA RG 端點實測 307（有圖）待本機看圖。Apple 是否有本盤待本機配對。",
+  "mbNote": "釘 release-group 68ddda65-1fa2-4e9b-abf2-b2156028801c。回問 RG（inc=artist-credits+releases）：title「Blue Marine」、primary-type Album、secondary-types 空、first-release-date 1992-06-21、artist-credit 名義 Masaru Imada、實體 今田勝（b9d2be2a-1d31-4371-a2b6-3f69ebcd5386，Person，jazz pianist，JP）。轄下 1 筆 release 226f1c8c-a35a-4e1b-98ec-82b8259dda32（1992-06-21 JP Official，Alfa Jazz ALCR-182，8 軌，曲名與曲序同 LP：Blue Marine／Street Dancer／Angelfish／Secret Sounds／Jumpin' Dolphin／Tropical Butterfly／Dear Lili／Smile For You）。搜尋 releasegroup:\"Blue Marine\" 共 3 筆 RG，只有 68ddda65 是今田勝；catno:PAP-25026 在 MB 為 0（原盤 LP 未建）。去重：池中今田勝無 Blue Marine。",
+  "queryAlias": "誘われてシーサイド；Masaru Imada Blue Marine；Masaru Imada；今田勝 Blue Marine Full House"
  }
 ]
