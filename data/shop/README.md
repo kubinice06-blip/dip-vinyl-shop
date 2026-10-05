@@ -28,10 +28,7 @@ const inShop = new Set(inv.items.filter(i => i.status === 'in_stock').map(i => i
 Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字），2026-10-04 已填 23 筆；快照存成 `poolKey`，同步時優先採用。
 新進貨在 Notion 填好卡池鍵即可；空白的才走自動比對。
 
-## 待本機補記 PROJECT_MEMORY（雲端不碰該檔）
+## 現況（2026-10-05）
 
-> 2026-10-04｜dip-vinyl-shop｜店內販售區資料層：Notion 售價表 26 筆 → `data/shop/inventory.json`
-> （in_stock 23、pending_card 3）。新增 `scripts/sync-shop-inventory.mjs`、`data/shop/`。
-> 人工對應 4 筆（三上寛 零狐徒、濱田金吾、Red Garland《Crossings》、Kenny Burrell & John Coltrane 1976 再版）。
-> 待新建卡：Elmo Hope《Hope Meets Foster》《High Hope!》、The New George Otsuka Trio《You Are My Sunshine》。
-> 驗證：sync 0 error、重跑輸出逐位元相同。
+26 筆全部 `in_stock`。缺卡的 3 張（Elmo Hope《Hope Meets Foster》《High Hope!》、ジョージ大塚トリオ《You Are My Sunshine》）已由 add-20261004-shop 上架；
+大塚那張封面印的是 The New George Otsuka Trio，對應寫在腳本的 `OVERRIDES`。Notion 這 3 列的「卡池鍵」還沒填，填了之後可以把那筆 override 拿掉。

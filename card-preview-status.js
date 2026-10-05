@@ -2863,4 +2863,5 @@ window.DipPreviewStatus = Object.freeze({
   "musica nuda|banda larga": "unavailable",
   "gonzalo rubalcaba|the trio": "unavailable",
   "mal waldron & 山下洋輔|piano duo live at pit inn": "unavailable",
+  "ジョージ大塚トリオ|you are my sunshine": "unavailable",
 });
