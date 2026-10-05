@@ -3620,6 +3620,11 @@ ${discogs ? '- Discogs：' + discogs : ''}
       await ensureShopPool();
       const res = await fetch(`${WORKER_URL}/shop-inventory`, { headers: { 'X-Admin-Key': adminKey() } });
       const data = await res.json().catch(() => ({}));
+      if (res.status === 403) {
+        // 金鑰不對：清掉本機存的那把，下次按會重新詢問（不必開主控台）
+        localStorage.removeItem('dipAdminKey');
+        throw new Error('後台金鑰不對，已清除。再按一次「↻ 從 Notion 重新整理」會重新詢問——請輸入 Worker 的 ADMIN_KEY（後台金鑰），不是 Notion 金鑰。');
+      }
       if (!res.ok) throw new Error(data.error || ('HTTP ' + res.status));
       const today = new Date().toISOString().slice(0, 10);
       const prevById = new Map(shopBase.map(it => [it.id, it]));
@@ -3672,7 +3677,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         + `<div class="shop-diff-actions">${dirty || !shopBase.length ? '<button class="gbtn" id="shopApplyBtn" type="button">套用並存檔</button>' : ''}<button class="gbtn" id="shopDiffClose" type="button" style="background:#fff;color:var(--black);border:1px solid var(--line);">關閉</button></div>`;
     } catch (e) {
       box.hidden = false;
-      box.innerHTML = `<div class="del">讀取 Notion 失敗：${esc(e.message || String(e))}</div><div style="color:var(--gray);">403＝後台金鑰不對（主控台執行 clearAdminKey() 重輸）；503＝Worker 還沒設 NOTION_TOKEN；Notion 404＝這張表還沒分享給 Notion integration。</div>`;
+      box.innerHTML = `<div class="del">讀取 Notion 失敗：${esc(e.message || String(e))}</div><div style="color:var(--gray);">503＝Worker 還沒設 NOTION_TOKEN；Notion 401＝NOTION_TOKEN 不對；Notion 404＝這張表還沒在 Notion「連線」給 integration。</div>`;
     } finally {
       btn.disabled = false; btn.textContent = '↻ 從 Notion 重新整理';
     }
