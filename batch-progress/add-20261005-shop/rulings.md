@@ -57,3 +57,5 @@
 - **8696** 年份取 1982，不取 MB 的 1992：MB 轄下唯一 release 是 Alfa Jazz ALCR-182（1992 CD 再發），原盤 1982（Discogs、Tower、Groovenut 一致）。第一型（資料庫端只有再發），rgMbid 不受影響。
 - **8697** 研究稿 12 條 facts 皆附 https src，status full。已記入 notes：Grover 薩克斯風種類兩源不一致只寫 Discogs 版；Witness Band 只有 Tower 單一來源；〈Secret Sounds〉作曲 Grover 僅 Discogs（部落格相符）；TD-117 無年份不寫；樂評／榜位／紐約錄音緣由查無不寫。hookCandidates 兩條。
 - **8698** 封面：CAA RG 端點實測 307（有圖）待本機看圖；Apple 待本機。MB 同名《Blue Marine》另有 Krystian Shek（2007）、RSK（2018），不同藝人，已寫進 curatorRisk。
+- **8699** 《Let's Do It》（Jonny Holtzman）走 §1 人工 thin：MB 六個方向皆 0／不相干（唯一撞名為 Kadenza 同名盤），非 503；證據三條 https（Discogs release 10080644、Discogs 藝人頁 3000951、英文維基 Widespread Depression Orchestra）。IMDb 傳記（Bronx Nightingale 由來、5 張專輯、Swingbeans 六重奏）只見搜尋摘要、頁面 403，全部不入 facts；Discogs 無人員／備註，樂手編制不得寫；Discogs 風格「Free Jazz」與傳記描述不符，寫作層不點。年份 1982 取 Discogs，卡單 genre 取 jazz。
+- **8700** hookCandidates 兩條：「改名 Widespread Jazz Orchestra 同期、創團主唱帶綽號離團的首張個人自製盤」「John Hammond Sr. 自願寫內頁文＋Discogs 僅 15 人收藏」；與 b 組モア（私製盤小故事）異構。keyTracks 取 Let's Do It／Just One Of Those Things／Laster Leaps。
