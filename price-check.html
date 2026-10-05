@@ -47,6 +47,11 @@
     .up { color: var(--green); } .down { color: var(--red); }
     .links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; }
     .links a { color: var(--black); font-size: 10px; }
+    .searchbar { display: flex; gap: 8px; }
+    .searchbar input { flex: 1; min-width: 0; font-size: 13px; padding: 10px 11px; }
+    .searchbar .btn { width: auto; margin-top: 0; flex-shrink: 0; }
+    .adv { margin-top: 10px; }
+    .adv summary { color: var(--gray); font-size: 10px; cursor: pointer; }
     [hidden] { display: none !important; }
   </style>
 </head>
@@ -61,31 +66,23 @@
 
 <main>
   <section class="card">
-    <div class="label">搜尋條件</div>
-    <div class="grid">
-      <div class="field wide">
-        <label>專輯名稱，或直接貼 Discogs 版本網址／release ID</label>
-        <input id="qName" placeholder="例：Kind of Blue　或　https://www.discogs.com/release/249504-…">
-      </div>
-      <div class="field"><label>藝人</label><input id="qArtist" placeholder="例：Miles Davis"></div>
-      <div class="field"><label>年份</label><input id="qYear" type="number" min="1900" max="2099" placeholder="不限"></div>
-      <div class="field"><label>產地</label>
-        <select id="qCountry">
-          <option value="">不限</option><option>Japan</option><option>US</option><option>UK</option>
-          <option>Europe</option><option>Germany</option><option>France</option><option>Taiwan</option>
-        </select>
-      </div>
-      <div class="field"><label>我的品相</label>
-        <select id="qCond">
-          <option value="">未指定</option><option>M</option><option selected>NM</option><option>VG+</option>
-          <option>VG</option><option>G+</option><option>G</option><option>F</option><option>P</option>
-        </select>
-      </div>
-      <div class="field"><label>我的售價 NT$（選填）</label><input id="qMyPrice" type="number" min="0" placeholder="用來比對建議價"></div>
-      <div class="field"><label>匯率 USD→TWD</label><input id="qRate" type="number" step="0.01" min="1"></div>
+    <div class="searchbar">
+      <input id="q" type="search" autofocus autocomplete="off" placeholder="專輯、藝人、Cat#、條碼，或貼 Discogs 網址">
+      <button class="btn" id="btnSearch">查詢</button>
     </div>
-    <button class="btn" id="btnSearch">查詢</button>
-    <div class="hint">查的是 Discogs「目前在架」的掛賣資料與依品相的建議價，<b>不是成交價</b>；Discogs 沒有開放成交紀錄的 API，成交價請點結果裡的「銷售紀錄」連結到 Discogs 網站看（需登入）。</div>
+    <details class="adv">
+      <summary>篩選（年份／產地）</summary>
+      <div class="grid" style="margin-top:10px;">
+        <div class="field"><label>年份</label><input id="qYear" type="number" min="1900" max="2099" placeholder="不限"></div>
+        <div class="field"><label>產地</label>
+          <select id="qCountry">
+            <option value="">不限</option><option>Japan</option><option>US</option><option>UK</option>
+            <option>Europe</option><option>Germany</option><option>France</option><option>Taiwan</option>
+          </select>
+        </div>
+      </div>
+    </details>
+    <div class="hint">打任何一個關鍵字就能搜，停手會自動查詢。查的是 Discogs「目前在架」的掛賣資料與品相建議價，<b>不是成交價</b>；成交價請點結果裡的「銷售紀錄」到 Discogs 網站看（需登入）。</div>
   </section>
 
   <div class="msg error" id="msg" hidden></div>
@@ -102,6 +99,16 @@
     </div>
     <div class="kv"><span>目前掛賣數量</span><span class="num" id="dCount"></span></div>
     <div class="kv"><span>最低掛賣價</span><span class="num" id="dLow"></span></div>
+    <div class="grid" style="margin-top:14px;">
+      <div class="field"><label>我的品相</label>
+        <select id="qCond">
+          <option value="">未指定</option><option>M</option><option selected>NM</option><option>VG+</option>
+          <option>VG</option><option>G+</option><option>G</option><option>F</option><option>P</option>
+        </select>
+      </div>
+      <div class="field"><label>我的售價 NT$</label><input id="qMyPrice" type="number" min="0" placeholder="選填，用來比價"></div>
+      <div class="field"><label>匯率 USD→TWD</label><input id="qRate" type="number" step="0.01" min="1"></div>
+    </div>
     <div class="label" style="margin-top:14px;">品相建議價（Discogs 估算，非成交價）</div>
     <div id="dSuggest"></div>
     <div id="dCompare" class="hint"></div>
@@ -179,13 +186,17 @@
   async function search() {
     showMsg('');
     $('detailCard').hidden = true;
-    const raw = $('qName').value.trim();
+    const raw = $('q').value.trim();
     // 貼網址或純數字 → 直接查該版本，跳過搜尋
     const m = raw.match(/discogs\.com\/(?:[a-z-]+\/)?release\/(\d+)/i) || raw.match(/^\[?r?(\d{3,})\]?$/i);
     if (m) return loadRelease({ id: m[1], title: 'Release ' + m[1], uri: '/release/' + m[1] });
-    if (!raw) return showMsg('請輸入專輯名稱');
+    if (!raw) return showMsg('請輸入任一關鍵字');
+    // 同一組條件剛查過就不重打（自動搜尋與按 Enter 可能前後觸發兩次）
+    const sig = [raw, $('qYear').value, $('qCountry').value].join('|');
+    if (sig === lastSig && !$('resultsCard').hidden) return;
+    lastSig = sig;
 
-    const params = new URLSearchParams({ q: [raw, $('qArtist').value.trim()].filter(Boolean).join(' ') });
+    const params = new URLSearchParams({ q: raw });
     if ($('qYear').value) params.append('year', $('qYear').value);
     if ($('qCountry').value) params.append('country', $('qCountry').value);
 
@@ -307,7 +318,14 @@
   $('btnClearHist').onclick = () => { store.del('dipPriceHistory'); renderHistory(); };
 
   $('btnSearch').onclick = search;
-  ['qName', 'qArtist', 'qYear'].forEach(id => $(id).addEventListener('keydown', e => { if (e.key === 'Enter') search(); }));
+  // 停手 700ms 自動搜尋；至少 2 個字，避免打一個字就耗 Discogs 額度（每分鐘 60 次）
+  let lastSig = '', timer = null;
+  $('q').addEventListener('input', () => {
+    clearTimeout(timer);
+    if ($('q').value.trim().length >= 2) timer = setTimeout(search, 700);
+  });
+  $('q').addEventListener('keydown', e => { if (e.key === 'Enter') { clearTimeout(timer); search(); } });
+  ['qYear', 'qCountry'].forEach(id => $(id).addEventListener('change', () => { if ($('q').value.trim()) search(); }));
   renderHistory();
 </script>
 </body>
