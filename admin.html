@@ -3618,13 +3618,12 @@ ${discogs ? '- Discogs：' + discogs : ''}
     btn.disabled = true; btn.textContent = '讀取 Notion…';
     try {
       await ensureShopPool();
-      const res = await fetch(`${WORKER_URL}/shop-inventory`, { headers: { 'X-Admin-Key': adminKey() } });
+      // 用後台的 Google 登入當身分（Worker 驗證 Firebase token），不必另外輸入金鑰
+      const idToken = auth.currentUser ? await auth.currentUser.getIdToken() : '';
+      if (!idToken) throw new Error('請先用 Google 登入後台。');
+      const res = await fetch(`${WORKER_URL}/shop-inventory`, { headers: { 'Authorization': 'Bearer ' + idToken } });
       const data = await res.json().catch(() => ({}));
-      if (res.status === 403) {
-        // 金鑰不對：清掉本機存的那把，下次按會重新詢問（不必開主控台）
-        localStorage.removeItem('dipAdminKey');
-        throw new Error('後台金鑰不對，已清除。再按一次「↻ 從 Notion 重新整理」會重新詢問——請輸入 Worker 的 ADMIN_KEY（後台金鑰），不是 Notion 金鑰。');
-      }
+      if (res.status === 403) throw new Error('Worker 不認得這個登入（只接受店家本人的 Google 帳號）；若剛更新過，請確認 Worker 已重新部署。');
       if (!res.ok) throw new Error(data.error || ('HTTP ' + res.status));
       const today = new Date().toISOString().slice(0, 10);
       const prevById = new Map(shopBase.map(it => [it.id, it]));
