@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **243** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 5、已退回 1）。
-最後更新：2026-10-05T16:17:12Z
+共 **248** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 10、已退回 1）。
+最後更新：2026-10-06T17:30:00Z
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -29,6 +29,16 @@
 | Jonny Holtzman 《Let's Do It》 | [#10080644](https://www.discogs.com/release/10080644) | 1982 | Not On Label | CX1038 | 目錄號 CX1038、年份 1982 | ok |
 | モア 《モア》 | [#20594359](https://www.discogs.com/release/20594359) | 1983 | Saturn Records | ST-1001-24L | 目錄號 ST-1001-24L、年份 1983 | ok |
 | 今田勝 《Blue Marine》 | [#1938858](https://www.discogs.com/release/1938858) | 1982 | Full House | PAP-25026 | 目錄號 PAP-25026、年份 1982 | ok |
+
+## add-20261006-shop（5 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Red Mitchell 《Rejoice!》 | [#4540470](https://www.discogs.com/release/4540470) | 1961 | Pacific Jazz | PJ-22 | 目錄號 PJ-22、年份 1961、廠牌 Pacific Jazz | ok |
+| 明田川荘之 《This Here´ Is Aketa Vol. 2》 | [#3955896](https://www.discogs.com/release/3955896) | 1975 | Offbeat Records (2) | ORLP-1004 | 目錄號 ORLP-1004、年份 1975、廠牌 Offbeat Records | ok |
+| 桃井かおり 《おもしろ遊戯》 | [#7633932](https://www.discogs.com/release/7633932) | 1982 | Momoi Kaori | 28AH 1401 | 目錄號 28AH 1401、年份 1982、廠牌 Momoi Kaori（CBS/Sony 體系）、曲目 10 軌逐軌對上 Apple jp 1536986860 | ok |
+| 梅津和時 《竹の村》 | [#8381375](https://www.discogs.com/release/8381375) | 1980 | Next Wave | 25PJ-1003 | 目錄號 25PJ-1003、年份 1980、廠牌 Next Wave、MB RG e63df681 同盤（CAA 無圖） | ok |
+| 梅津和時 & Mal Waldron 《Another Step》 | [#7262688](https://www.discogs.com/release/7262688) | 1982 | Union Jazz | ULP-5004 | 目錄號 ULP-5004、年份 1982、廠牌 Union Jazz | ok |
 
 ## c49（3 張）
 

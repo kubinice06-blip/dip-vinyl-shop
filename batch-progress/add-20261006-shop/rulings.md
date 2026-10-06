@@ -93,3 +93,15 @@
 - **8758** 新規「開頭兩句讓不懂的人知道是誰」：hook 只帶人名的兩張，第二句補類型——Horns 補「小樂團錄音」、オーエス 補「唱作鋼琴手、以鋼琴與合成器為底」；其餘補樂種（西岸爵士現場、輕快偏流行的爵士、bebop 鋼琴三重奏、民謠風歌謠、歌謠曲、靈魂與放克、沒有鋼琴的編制）。「唱作鋼琴手」是由 sound 欄與自作曲推得的描述，非研究稿原詞，可逆。
 - **8759** 研究層禁區照辦：Rejoice! Mitchell 只寫大提琴；Breakin' 不寫發行月與〈Bluesy〉〈S R O〉作者、寫「1958 年 7 月 31 日…錄成」；Horns 不逐首對單曲出處；Another Step 不寫合作緣由與 Hayakawa／Kikuchi 背景（兩名整格捨去）；O.M.Y. 只具名細江慎治、不寫化名；噫無情不連電影；カルメン・マキ 身世不加強、1970 轉搖滾一句（寫「隔年她轉往搖滾」）、不寫 OZ；竹の村不寫富樫在本盤用的樂器；オーエス 不寫專輯曲數（避開 LP／CD 版本差）。
 - **8760** 竹の村第二句「以富樫的傷領句」：hook 已說「只用雙手」，第二句改寫成「1970 年 1 月的一次受傷讓富樫雅彦下半身癱瘓，他從此改變了演奏方式」，避免複述 hook。
+
+## 雲端 manifest 段（8771–8780）
+- **8771** 輸出 `onboarding-manifest.json`（batch `2026-10-06-add-shop-wave3`，13 張）、`handoff.json`、`album_overrides-repaste-add-20261006-shop.json`。description 只放研究稿 facts 的 src 去重，text 留空待主線。prepare gate：除 13 項「description 空白」外 0 error、16 warning（upc 空 12、§1 人工 4）。
+- **8772** 封面 CAA 8 張：9 張 pinned 逐一實抓 release-group front（307→200 image/jpeg），只有《竹の村》e63df681 回 404。逐張查 CAA 圖所屬 MB release，皆為原盤（O.M.Y. 原盤本來就是 CD、矢野為同日 CD 38JC-101，封面同 LP）並看圖核對。Horns 的圖是 OJC 版掃描（右下 OJC 標），封面設計同 PRLP 7025，照收。噫無情 CAA 圖無字，比對 Discogs 5416259 原版帶側標圖為同一張畫。
+- **8773** 封面 Discogs 5 張（Rejoice! 4540470、Aketa Vol. 2 3955896、Another Step 7262688、おもしろ遊戯 7633932、竹の村 8381375）：API 取 primary image、實抓 200、逐張看圖，目錄號／年份／廠牌三項皆對上；登錄 `data/discogs-cover-registry.json`（reviewed ok，共 248 筆）並重產 `DISCOGS-COVERS.md`。竹の村雖為 pinned，CAA 無圖，§4 允許 discogs。
+- **8774** 試聽 Apple ready 9 張，逐軌對原盤：Rainy Day jp 1582277913（12/12）、Breakin' It Up jp 1447414494（UMG 官方 8/8；Smith & Co. 903102397 非官方不採）、O.M.Y. jp 6807276757（2024 再發 12/12，〈異論反論〉＝MB〈I've Got an Objection Myself〉）、噫無情 jp 1642726952（13/13）、おもしろ遊戯 jp 1536986860（10/10）、Push jp 1622901354（BBE 6/6）。全部 notExplicit，previewUrl 實抓 200。
+- **8775** 試聽版本差照收三張：(1) Horns 取 **us** 1443277180（Fantasy ℗1989 OJC，9 軌＝原盤 8 首＋〈Blue Room〉alt take，與 MB release 9 軌一致）；jp 只有 2016 Concord 版，不採。(2) 真夜中詩集 jp 1537211393 第 1–11 軌對上原盤、第 12 軌義大利語版為增收。(3) オーエス jp 1405887205 11 軌＝CD 10 軌＋LP 附贈 7 吋〈Assemblée〉，取〈ラーメンたべたい〉。
+- **8776** 試聽 unavailable 4 張：Rejoice!（Apple 只有 2010 Red Mitchell 現場合輯收同名曲的別場錄音，不是本盤）、Aketa Vol. 2（Apple 明田川 8 筆皆非本盤）、Another Step、竹の村（盤名、藝人名、曲名三向 jp／us 皆查無）。YT Music 交本機覆核。
+- **8777** 三軸一律 `manual:depth-rubric`（13 張 lineType 全為深掘），冷門照 §0.8 錨點、經典與硬蕊比照池中同藝人／同期卡：Rejoice! 3/4/2、Rainy Day 2/3/1、Horns 3/3/2、Breakin' It Up 3/4/2、Aketa Vol. 2 2/5/3、Another Step 3/4/3、O.M.Y. 2/4/2、真夜中詩集 3/3/2、噫無情 3/4/3、おもしろ遊戯 2/4/2、オーエス 4/3/2、Push 3/4/2、竹の村 3/5/3。rarity：common 1、rare 7、uncommon 5。
+- **8778** 冷門 5 只給兩張「小廠原盤、無 CD／串流再發」的（Aketa Vol. 2 Offbeat、竹の村 Next Wave）；池中明田川其他卡已在 2019 年上串流故為 4，本盤沒有，所以分數不同。Rejoice!（Pacific Jazz）、Another Step（Union Jazz／Teichiku）是正規廠牌但沒進串流，比照池中同期卡給 4，不給 5。可逆。
+- **8779** 頂點：13 張全列一般卡（無 classic 5、無 accessibility 5）。Aketa Vol. 2、竹の村 obscurity=5，pearl 要 listeners 有效值 <300 且有遺珠級證據；雲端拿不到 listeners，不判 pearl 也不因查不到降級，列進 handoff `pearlListenersCheck` 交本機。
+- **8780** identity 照卡單：aliasReview＝curatorRisk＋queryAlias；§1 四張帶 mbAbsenceProof／manualEvidenceUrls／manualRuling／coverSourceHint；Horns 帶 §5.6 exceptionReason／evidence。O.M.Y. 補 upc 4949168101005（MB 原盤 SCDC-00081 條碼），其餘查無留空。未碰 seed／apex／PROJECT_MEMORY／KV／Firestore，未 git add。
