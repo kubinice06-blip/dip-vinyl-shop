@@ -44,3 +44,18 @@
 - O.M.Y. 掛 `Oriental Magnetic Yellow`、カルメン・マキ 個人名義與團名分開、`宮本典子・鈴木勲`、`梅津和時 & Mal Waldron`：照策展層，均有池中先例。
 - 曲風照策展層（矢野 pop+electronic、Push jazz+soul），可逆。
 - 桃井かおり／梅津兩張羅馬字人名（Togashi 等）漢字形由研究層確認，未確認前不寫漢字。
+
+## 研究 a 組（8721–8732）
+- **8721** 研究 a 組 6 張全數 full、facts 10–12 條、全 https。未推翻策展層的身分與掛名裁定；**補了策展層缺的資料**：Red Mitchell《Rejoice!》錄音 1960 年 10 月（Fresh Sound 頁）、Kai Winding 錄音場次（jazzdisco：1965-01-14 Webster Hall、02-27／03-22 A&R Studios；維基另載 1964-12-14）、Barry Harris 錄音 1958-07-31 芝加哥。
+- **8722** ⚠ Barry Harris《Breakin' It Up》**年份疑義**：MB RG first-release-date 與 Discogs master／原版皆 1958，英文維基與 Stryker 筆記（Iverson 網站轉引）寫 released 1959；錄音 1958-07-31 確定。卡單 year 1958 保留，寫作層寫『1958 年錄音』；是否改 1959 請主線決定（可逆，改 year 欄即可）。
+- **8723** Barry Harris 曲目作者：〈Bluesy〉〈S R O〉是否 Harris 自作，Discogs 無作者欄、維基摘要未列，facts 不寫作者（策展層寫自作，未獲第二來源）；寫作層勿寫『Harris 自作』。Parker 兩首（Ornithology、Passport）有維基支撐。
+- **8724** Red Mitchell 樂器：Discogs 與 Fresh Sound 皆標 Mitchell 在本盤拉 cello；維基稱他 1966 年才把貝斯改成大提琴調弦，兩者不衝突。facts 只寫 cello；Discogs 掛名製作的 Jim Dickson 是否即日後 Byrds 經理那位未證實，facts 只寫掛名。
+- **8725** Miles Davis《Miles Davis and Horns》§5.6 研究層查證支持收錄：PRLP 154（10 吋 Al Cohn 專輯，僅四首）、PRLP 113（多人合輯）、Prestige 734（78 轉）皆對得上，7025 為首度集中。曲數取 Discogs 8 首（維基頁面摘要寫 9 首未採）。〈Blue Room〉最初出處維基（Blue Period）與 Discogs（PRLP 113 不含此曲、734 為 78 轉）不一致，facts 只寫 Discogs 能對到者，寫作層不逐首對出處。
+- **8726** Miles 時序：1953 場落在海洛因成癮加深期、1954-02 戒除、1954-04《Walkin'》，列為『與錄音同期的背景』可寫；1954 以後不寫。『1951 簽約因 Weinstock 迷上九重奏』單一來源（維基 Miles Davis 條），寫作層寫『1951 年起在 Prestige 錄音』即可。
+- **8727** Kai Winding《Rainy Day》：Hot 100 第 8 名（1963《Mondo Cane》主題曲，唯一上榜）寫進生平 facts，屬他與 Creed Taylor 在 Verve 同期。〈The Umbrellas Of Cherbourg〉facts 使用台灣常見片名『秋水伊人』，未另查證譯名，寫作層可改寫英文原題。鼓手／吉他未分軌，不得對到某首。
+- **8728** 明田川荘之 Vol. 2：確認為純鋼琴獨奏（Discogs 只列 Aketagawa 鋼琴）；1975 年一年三張（3 月 AD-1 アケタの店、6 月 Vol. 1 赤坂錄音室、7 月 Vol. 2 美術館）。『Bridgestone 美術館』錄音地為 Discogs 備註單一來源；美術館沿革取維基 Artizon，不寫美術館辦過音樂會。人名依 8709 只用羅馬字。
+- **8729** 明田川：Offbeat 目錄脈絡只寫『Discogs 登錄的』，不寫『廠牌最早的幾張／第一張』（廠牌沿革未另查，依第一張反查規則退一層）。〈Theme For Tomosan〉與池中 AD-1 版為不同錄音，撞池檢查維持策展層 8706 結論。藝人 2024 年辭世屬單一來源且與作品無綁定，不寫。
+- **8730** 梅津和時 & Mal Waldron《Another Step》：本盤細節全部單一來源（Discogs 原版），維基無條目、jazzmusicarchives／forcedexposure 403；合作緣由查無，寫作層不編。Hayakawa／Kikuchi 無生平可查，不寫背景。人的故事以兩位主角背景承擔（梅津：1949 仙台、國立音樂大學、生活向上委員會 1980 出道；Waldron：Billie Holiday 伴奏 1957–59、1963 成癮事件、長居歐洲、1970 起常赴日）。
+- **8731** 梅津和時漢字：ja 維基頁面摘要稱『Kokuritsu College of Music』，寫作層寫『國立音樂大學』即可；b 組《竹の村》中 Togashi 是否即富樫雅彦本研究未涉（a 組沒有 Togashi），交 b 組研究層。
+- **8732** Waldron『每年兩個月日本巡演』出自維基且無年代起點，寫作層寫『後來』，不寫成 1982 年當年事實；2002 年辭世屬發行後生平不寫。本組未用 Discogs 以外的 MB 新查（Barry Harris RG 2 筆再版確認）；WebSearch 使用 6 次。
+- （主線）8722 Barry Harris《Breakin' It Up》年份維持 1958（MB、Discogs 兩庫一致；維基 1959 為單源發行年說法），正文寫「1958 年錄音」即可、不寫發行月。可逆。
