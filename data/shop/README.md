@@ -52,3 +52,13 @@ Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字
 
 > 2026-10-05｜dip-vinyl-shop＋dip-vinyl-worker｜後台「實體店庫存」加「↻ 從 Notion 重新整理」：Worker 新增 `/shop-inventory`（管理員金鑰、NOTION_TOKEN，只回公開欄位），
 > 後台比對新增／移除／改價後存 Firestore `settings/shopInventory`。驗證：Worker 路由以模擬 Notion 回應測 200／403／503 與分頁；後台 Playwright 模擬刪 1 增 2 改價 1，差異清單正確。待本機：設 NOTION_TOKEN、部署 Worker。
+
+## 門市版介紹（2026-10-06 店主定案）
+
+- **只給實體店用**（後台「🏪 實體店庫存」分頁、日後印出來給客人看），**不進卡池、不寫 KV、不取代卡牌遊戲版簡介**。
+- 寫作規則：`SHOP_DESC_RULES.md`（給完全不懂音樂的人看；禁樂器解說、禁「也就是」式注解、禁「據…」轉述）。
+- 預設稿：`descs.json`（`node scripts/build-shop-descs.mjs <草稿.json>` 合併，會擋禁語與字數）。
+  每筆 `key` = 卡池鍵正規化；待上架的另有 `ids`（Notion 頁面 id）讓後台對得上。
+- 店主在後台按「編輯」改過的版本存 Firestore `settings/shopDescs.byKey[key]`，優先於預設稿；
+  按「還原預設稿」或存成和預設稿一樣的內容就會刪掉改過的版本。
+- 新進庫存：照規則寫門市版、跑合併腳本，跟卡池上架是兩條線。

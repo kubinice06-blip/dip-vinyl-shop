@@ -269,6 +269,11 @@
     .shop-detail-artist { font-size: 12px; color: var(--gray); margin: 2px 0 12px; }
     .shop-detail-meta { font-size: 11px; color: var(--black); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 8px 0; margin-bottom: 14px; line-height: 1.8; }
     .shop-detail-desc { font-size: 13px; line-height: 1.9; white-space: pre-wrap; }
+    .shop-desc-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-size: 11px; margin-bottom: 8px; }
+    .shop-desc-head span, .shop-desc-foot > span:first-child { color: var(--gray); font-size: 10px; }
+    .shop-desc-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+    .shop-desc-input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13px; line-height: 1.8; padding: 10px; border: 1px solid var(--line); resize: vertical; }
+    .gbtn.shop-desc-ghost { background: #fff; color: var(--black); border: 1px solid var(--line); }
 
     /* 卡牌校正：彈出編輯 modal */
     .ov-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: flex-start; justify-content: center; z-index: 9000; overflow-y: auto; padding: 40px 16px; }
@@ -3488,7 +3493,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   // 排列比照前台「我的唱片櫃」：稀有度框色＋等級字＋藝人／專輯。稀有度算法與前台 rarityFromRatings 相同
   //（經典＋硬蕊＋冷門滿 5 加 1），seed_cards.json 第 9 欄有 tier 的是頂點卡。
   // 封面：card_catalog 校正圖優先，沒有才退 worker /spotify-search（與前台 resolveCardAssets 同序）。
-  // 介紹：album_overrides.desc（後台校正）優先，沒有才退 /album-desc（KV 預生成）。
+  // 介紹：門市版（見下方 shopDescFor），不用卡牌遊戲的簡介。
   const SHOP_TIER_LABEL = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
   function shopRarityOf(row) {
     if (!row) return null;
@@ -3708,7 +3713,72 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('shopModalClose').addEventListener('click', closeShopModal);
   shopModal.addEventListener('click', e => { if (e.target === shopModal) closeShopModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && shopModal.classList.contains('open')) closeShopModal(); });
+  // 門市版介紹：只給實體店用（日後印出來放唱片旁），與卡牌遊戲的簡介（KV／album_overrides）分開，不進卡池。
+  // 預設稿 data/shop/descs.json（規則 data/shop/SHOP_DESC_RULES.md）；店主在這裡改過的存 Firestore
+  // settings/shopDescs.byKey[key]，優先於預設稿。key = 卡池鍵正規化；待上架的靠預設稿的 ids（Notion 頁面 id）找。
+  const SHOP_DESC_DOC = () => doc(db, 'settings', 'shopDescs');
+  let shopDescDefaults = null;   // { byKey: Map, byId: Map }
+  let shopDescEdits = null;      // Firestore byKey
+  async function ensureShopDescs(force) {
+    if (!shopDescDefaults) {
+      const d = await fetch('data/shop/descs.json?v=' + Date.now()).then(r => r.ok ? r.json() : { items: [] }).catch(() => ({ items: [] }));
+      const byKey = new Map(), byId = new Map();
+      for (const it of d.items || []) { byKey.set(it.key, it); for (const id of it.ids || []) byId.set(id, it); }
+      shopDescDefaults = { byKey, byId };
+    }
+    if (!shopDescEdits || force) {
+      try { const s = await getDoc(SHOP_DESC_DOC()); shopDescEdits = s.exists() ? (s.data().byKey || {}) : {}; }
+      catch (e) { shopDescEdits = shopDescEdits || {}; }
+    }
+  }
+  function shopDescFor(it) {
+    const def = shopDescDefaults.byId.get(it.id) || (it.cardKey ? shopDescDefaults.byKey.get(it.cardKey) : null);
+    const key = def?.key || it.cardKey || ('id:' + it.id);
+    const edit = shopDescEdits[key];
+    return { key, def: def?.text || '', edit: edit?.text || '', editedAt: edit?.updatedAt || 0,
+      artist: def?.artist || it.artist || it.listedArtist, album: def?.album || it.album || it.listedTitle };
+  }
   let shopDetailToken = 0;
+  let shopDetailCur = null;
+  function renderShopDesc() {
+    const box = document.getElementById('shopDetailDescBox');
+    if (!box || !shopDetailCur) return;
+    const d = shopDetailCur;
+    const text = d.edit || d.def;
+    const src = d.edit ? `已在後台改過（${new Date(d.editedAt).toLocaleString('zh-TW')}）` : (d.def ? '預設稿' : '還沒有門市版');
+    box.innerHTML = `
+      <div class="shop-desc-head"><b>門市版介紹</b><span>只用於店內，不影響卡池</span></div>
+      <div class="shop-detail-desc">${text ? esc(text) : '（還沒有門市版介紹，按「編輯」自己寫）'}</div>
+      <div class="shop-desc-foot"><span>${esc(src)}${text ? `・${[...text].length} 字` : ''}</span>
+        <span><button class="gbtn" type="button" data-shop-desc="edit">編輯</button>${d.edit && d.def ? ' <button class="gbtn shop-desc-ghost" type="button" data-shop-desc="reset">還原預設稿</button>' : ''}</span></div>`;
+  }
+  function renderShopDescEditor() {
+    const box = document.getElementById('shopDetailDescBox');
+    const d = shopDetailCur;
+    box.innerHTML = `
+      <div class="shop-desc-head"><b>編輯門市版介紹</b><span>只用於店內，不影響卡池</span></div>
+      <textarea class="shop-desc-input" id="shopDescInput" rows="10">${esc(d.edit || d.def)}</textarea>
+      <div class="shop-desc-foot"><span id="shopDescCount"></span>
+        <span><button class="gbtn" type="button" data-shop-desc="save">儲存</button> <button class="gbtn shop-desc-ghost" type="button" data-shop-desc="cancel">取消</button></span></div>`;
+    const ta = document.getElementById('shopDescInput');
+    const cnt = () => { document.getElementById('shopDescCount').textContent = `${[...ta.value.trim()].length} 字`; };
+    ta.addEventListener('input', cnt); cnt(); ta.focus();
+  }
+  async function saveShopDesc(reset) {
+    const d = shopDetailCur;
+    if (!d) return;
+    const text = reset ? '' : (document.getElementById('shopDescInput')?.value || '').trim();
+    if (reset && !confirm('還原成預設稿？你改過的文字會刪掉。')) return;
+    try {
+      await ensureShopDescs(true);   // 先讀最新，避免蓋掉別的裝置剛存的
+      // 空白或和預設稿一樣＝刪掉改過的版本，回到預設稿
+      const val = (!text || text === d.def) ? deleteField() : { text, artist: d.artist, album: d.album, updatedAt: Date.now() };
+      await setDoc(SHOP_DESC_DOC(), { byKey: { [d.key]: val } }, { merge: true });
+      await ensureShopDescs(true);
+      Object.assign(d, shopDescFor({ id: d.itemId, cardKey: d.cardKey, artist: d.artist, album: d.album }));
+      renderShopDesc();
+    } catch (e) { alert('存檔失敗：' + (e.message || e)); }
+  }
   async function openShopDetail(i) {
     const it = shopItems[i];
     if (!it) return;
@@ -3725,24 +3795,22 @@ ${discogs ? '- Discogs：' + discogs : ''}
       <div class="shop-detail-album">${esc(it.album || it.listedTitle)}</div>
       <div class="shop-detail-artist">${esc(it.artist || it.listedArtist)}${it.year ? `・${Number(it.year)}` : ''}</div>
       <div class="shop-detail-meta">${meta}</div>
-      <div class="shop-detail-desc" id="shopDetailDesc">${it.status === 'pending_card' ? '這張還沒上架到卡池，介紹會在上架後出現。' : '載入介紹…'}</div>`;
+      <div id="shopDetailDescBox"><div class="shop-detail-desc">載入介紹…</div></div>`;
     shopModal.classList.add('open');
-    if (it.status === 'pending_card' || !it.artist) return;
-    let desc = '';
-    try {
-      const s = await getDoc(doc(db, 'album_overrides', ovCardId(it.artist, it.album)));
-      if (s.exists()) desc = (s.data().desc || '').trim();
-    } catch (e) {}
-    if (!desc) {
-      try {
-        const res = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(it.artist)}&album=${encodeURIComponent(it.album)}`);
-        if (res.ok) desc = ((await res.json()).desc || '').trim();
-      } catch (e) {}
-    }
+    shopDetailCur = null;
+    await ensureShopDescs(true);
     if (token !== shopDetailToken) return;
-    const el = document.getElementById('shopDetailDesc');
-    if (el) el.textContent = desc || '（暫無介紹）';
+    shopDetailCur = { itemId: it.id, cardKey: it.cardKey, ...shopDescFor(it) };
+    renderShopDesc();
   }
+  document.getElementById('shopModalBody').addEventListener('click', e => {
+    const act = e.target.closest('[data-shop-desc]')?.dataset.shopDesc;
+    if (!act) return;
+    if (act === 'edit') renderShopDescEditor();
+    if (act === 'cancel') renderShopDesc();
+    if (act === 'save') saveShopDesc(false);
+    if (act === 'reset') saveShopDesc(true);
+  });
   document.getElementById('shopGrid').addEventListener('click', e => {
     const card = e.target.closest('.shop-card[data-shop-idx]');
     if (card) openShopDetail(Number(card.dataset.shopIdx));
