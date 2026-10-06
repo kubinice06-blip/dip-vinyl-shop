@@ -1,6 +1,6 @@
 {
   "source": "notion:401f0a5c4871448783385c78f6a3ac39",
-  "fetchedAt": "2026-10-05",
+  "fetchedAt": "2026-10-06",
   "note": "只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵）。成本、利潤、抽成、群組一律不進 repo。",
   "rows": [
     {
@@ -379,6 +379,240 @@
       "year": null,
       "condition": null,
       "priceNT": 1000,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff8026bae0d0dde11ed3c6",
+      "title": "乙女の儚夢",
+      "artist": "あがた森魚",
+      "year": 1972,
+      "condition": null,
+      "priceNT": 1400,
+      "poolKey": "あがた森魚|乙女の儚夢"
+    },
+    {
+      "id": "3f10ad0255ff8058842fd9ecdd571873",
+      "title": "弱気なぼくら",
+      "artist": "O.M.Y.",
+      "year": null,
+      "condition": null,
+      "priceNT": 1200,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff80b49db3f5bb0ec296b6",
+      "title": "Rejoice!",
+      "artist": "Red Mitchell",
+      "year": null,
+      "condition": null,
+      "priceNT": 1200,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff80679cdff9a5e6f69470",
+      "title": "真夜中詩集 －ろうそくの消えるまで",
+      "artist": "Carmen Maki",
+      "year": 1969,
+      "condition": null,
+      "priceNT": 2500,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff802fab77e511d729ac00",
+      "title": "噫無情",
+      "artist": "あがた森魚",
+      "year": 1974,
+      "condition": null,
+      "priceNT": 600,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff800fa960ff764af0dc23",
+      "title": "おもしろ遊戯",
+      "artist": "桃井かおり",
+      "year": 1982,
+      "condition": null,
+      "priceNT": 600,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff806888eaca9373bcb06a",
+      "title": "オーエス オーエス",
+      "artist": "矢野顕子",
+      "year": null,
+      "condition": null,
+      "priceNT": 1000,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff80a9aa62ed1aa5a9b602",
+      "title": "Rainy Day",
+      "artist": "Kai Winding",
+      "year": null,
+      "condition": null,
+      "priceNT": 800,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff80cf8ee0e417a5784dde",
+      "title": "This Here´ Is Aketa Vol. 2",
+      "artist": "明田川荘之",
+      "year": null,
+      "condition": null,
+      "priceNT": 1600,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff80e7bd17edee59a4221e",
+      "title": "Miles Davis and Horns",
+      "artist": "Miles Davis",
+      "year": null,
+      "condition": null,
+      "priceNT": 1000,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff807688e9e869ed9b55fb",
+      "title": "Pictures At An Exhibition",
+      "artist": "Emerson, Lake & Palmer",
+      "year": null,
+      "condition": null,
+      "priceNT": 1280,
+      "poolKey": "Emerson, Lake & Palmer|Pictures at an Exhibition"
+    },
+    {
+      "id": "3f10ad0255ff8059aa49da71d0df331f",
+      "title": "Breakin’ It Up",
+      "artist": "Barry Harris Trio",
+      "year": 1975,
+      "condition": null,
+      "priceNT": 1000,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff8064a6a5c4f4f4b7dba4",
+      "title": "Erroll Garner Plays Misty",
+      "artist": "Erroll Garner",
+      "year": null,
+      "condition": null,
+      "priceNT": 800,
+      "poolKey": "Erroll Garner|Erroll Garner Plays Misty"
+    },
+    {
+      "id": "3f10ad0255ff8040af83fca5d008b0f0",
+      "title": "Push",
+      "artist": "宮本典子 & 鈴木勲",
+      "year": null,
+      "condition": null,
+      "priceNT": 2000,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff80f0bf40e71aae69c281",
+      "title": "Everybody Knows This Is Nowhere",
+      "artist": "Neil Young With Crazy Horse",
+      "year": 1971,
+      "condition": null,
+      "priceNT": 2000,
+      "poolKey": "Neil Young & Crazy Horse|Everybody Knows This Is Nowhere"
+    },
+    {
+      "id": "3f10ad0255ff80a1a234d6d2edc7d8bd",
+      "title": "Cat Nap",
+      "artist": "浅川マキ",
+      "year": null,
+      "condition": null,
+      "priceNT": 3000,
+      "poolKey": "浅川マキ|Cat Nap"
+    },
+    {
+      "id": "3f10ad0255ff805c8822d7ecc7f7151c",
+      "title": "Horace Silver And The Jazz Messengers",
+      "artist": "Horace Silver And The Jazz Messengers",
+      "year": null,
+      "condition": null,
+      "priceNT": 1600,
+      "poolKey": "Horace Silver And The Jazz Messengers|Horace Silver And The Jazz Messengers"
+    },
+    {
+      "id": "3f10ad0255ff802683fae74b2aee59e8",
+      "title": "竹の村",
+      "artist": "梅津和時",
+      "year": null,
+      "condition": null,
+      "priceNT": 1280,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff80ca88bbd5bfa858fbba",
+      "title": "But Not For Me",
+      "artist": "菊地雅章",
+      "year": null,
+      "condition": null,
+      "priceNT": 1280,
+      "poolKey": "菊地雅章|But Not For Me"
+    },
+    {
+      "id": "3f10ad0255ff80f0b0bde0c773102aef",
+      "title": "Palladium",
+      "artist": "佐藤允彥 Trio",
+      "year": null,
+      "condition": null,
+      "priceNT": 1280,
+      "poolKey": "佐藤允彦トリオ|Palladium"
+    },
+    {
+      "id": "3f10ad0255ff80ef9e9ed84e274dfbc7",
+      "title": "Art Official Intelligence: Mosaic Thump",
+      "artist": "De La Soul",
+      "year": null,
+      "condition": null,
+      "priceNT": 1280,
+      "poolKey": "De La Soul|Art Official Intelligence: Mosaic Thump"
+    },
+    {
+      "id": "3f10ad0255ff8067a895d536274aee16",
+      "title": "Another Step",
+      "artist": "Mal Waldron / 梅津和時",
+      "year": null,
+      "condition": null,
+      "priceNT": 1600,
+      "poolKey": null
+    },
+    {
+      "id": "3f10ad0255ff8000bfeede229f1004a3",
+      "title": "Luminessence",
+      "artist": "Keith Jarrett / Jan Garbarek",
+      "year": null,
+      "condition": null,
+      "priceNT": 900,
+      "poolKey": "Keith Jarrett|Luminessence"
+    },
+    {
+      "id": "3f10ad0255ff804f9711e741187ad09f",
+      "title": "Tuttie Flutie",
+      "artist": "Toshiko Akiyoshi Trio & Flute Quartet",
+      "year": null,
+      "condition": null,
+      "priceNT": 900,
+      "poolKey": "秋吉敏子トリオ & Flute Quartet|Tuttie Flutie"
+    },
+    {
+      "id": "3f10ad0255ff8033ad58c3daf57be996",
+      "title": "Portishead",
+      "artist": "Portishead",
+      "year": null,
+      "condition": null,
+      "priceNT": 4000,
+      "poolKey": "Portishead|Portishead"
+    },
+    {
+      "id": "3f10ad0255ff804ba972c1e0fb194f4f",
+      "title": "Bull Trout",
+      "artist": "宮沢昭",
+      "year": null,
+      "condition": null,
+      "priceNT": 1200,
       "poolKey": null
     }
   ]
