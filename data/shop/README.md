@@ -62,3 +62,10 @@ Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字
 - 店主在後台按「編輯」改過的版本存 Firestore `settings/shopDescs.byKey[key]`，優先於預設稿；
   按「還原預設稿」或存成和預設稿一樣的內容就會刪掉改過的版本。
 - 新進庫存：照規則寫門市版、跑合併腳本，跟卡池上架是兩條線。
+
+## 第三波（2026-10-06）雲端完成、待本機
+- Notion 新進 26 張：卡池已有 12 張＋宮沢昭《Bull Trout》＝池中《いわな》（卡池鍵已回寫 Notion）；新建卡 13 張（`batch-progress/add-20261006-shop/`，prepare gate 0 error，交接見 handoff.json）。
+- 門市版介紹：在售 68 張全數有預設稿（`descs.json`）。
+- 藝人介紹 ar-d-119 上架 7 位（桃井かおり 素材不足略過），分片 3087 位。
+- 本機待辦：add-20261006-shop 照 handoff.json 上架（KV／Firestore／album_overrides repaste／seed／published gate）；上架後 Notion 13 列補卡池鍵、PENDING_NEW 清掉、重跑同步腳本；池卡《いわな》queryAlias 補 Bull Trout。
+- PROJECT_MEMORY.md 待本機補一筆：2026-10-06 dip-vinyl-shop 店內販售區第三波＋門市版介紹機制（descs.json／SHOP_DESC_RULES.md／後台可編輯，Firestore settings/shopDescs）。
