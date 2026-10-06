@@ -1,0 +1,143 @@
+[
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "a",
+  "lineType": "深掘",
+  "scene": "店內販售區待上架（Notion 售價表 2026-10-06）",
+  "republic": "",
+  "cover": null,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "key": "desc2:Red Mitchell|Rejoice!",
+  "artist": "Red Mitchell",
+  "album": "Rejoice!",
+  "year": 1961,
+  "label": "Pacific Jazz PJ-22（US 1961 12 吋黑膠 Mono 6 軌；World Pacific 旗下；1962 英國 Vogue LAE 12286、2007 西班牙 LPTime LPT 1002、2013 Jazz Workshop JW-038 再版）",
+  "rgMbid": "",
+  "identitySource": "manual",
+  "curatorWhy": "店主售價表在賣的一張（Notion 未填年份與廠牌）。Red Mitchell 在這張不拉貝斯、改拉大提琴領銜，貝斯交給 Jimmy Bond，加上 Jim Hall（吉他）、Frank Strazzeri（鋼琴）、Frank Butler（鼓），在好萊塢 The Renaissance 俱樂部現場錄音（Discogs release 4540470 人員欄與備註）。六首：Jim Hall 的〈Jim's Blues〉、Mitchell 自作標題曲〈Rejoice!〉、Oscar Pettiford〈Black Eyed Peas〉與〈Night In Tunisia〉等。池中 Red Mitchell 只有聯名盤（Lee Konitz & Red Mitchell《I Concentrate on You》、Bill Evans／Hank Jones／Red Mitchell《Moods Unlimited》），沒有他的個人名義領銜作，本張補西岸 Pacific Jazz 這一段。",
+  "curatorRisk": "⚠ §1 人工身分：MB 沒有 1961 原盤的 release-group，只有 2016 西班牙 Fresh Sound 的三合一 CD《Rejoice! + Good Friday Blues + Jazz Guitar》（RG 32eefcf7，Album＋Compilation，掛 Red Mitchell / Jim Hall），那是把三張舊作併成一張的再版，不能拿來釘本卡（見 mbAbsenceProof）。⚠ 掛名：Discogs master 552734 與原版 4540470 都掛 `Red Mitchell` 單名；池中無 `Red Mitchell` 個人名義卡，只有兩張聯名，本卡照封面掛單名，非新造分裂（池中聯名卡本來就是不同作品的不同掛名）。⚠ 樂器：本盤 Mitchell 掛 Cello（Discogs），寫作層不得寫成他在本盤拉貝斯。⚠ 年份 1961：Discogs master 與原版皆 1961；錄音日期 Discogs 未載，不寫。⚠ 同名撞車：池中有 The Emotions《Rejoice》、Albert Ayler《Spirits Rejoice》、Louis Moholo Octet《Spirits Rejoice!》，皆不同藝人不同作品。⚠ 封面：無 RG、CAA 走不通，走 §4 discogs（release 4540470，目錄號 PJ-22／年份 1961／廠牌 Pacific Jazz 三項可對），須登錄 discogs-cover-registry 並看圖；Apple 是否有本盤待本機配對（可能只有 Fresh Sound 合併版，那不能當本卡試聽）。⚠ 店內實物版本未知（Notion 無目錄號），本卡釘作品身分。",
+  "mbNote": "MusicBrainz 無 1961 原盤 release-group，見 mbAbsenceProof。",
+  "queryAlias": "Rejoice；Red Mitchell Rejoice；Pacific Jazz PJ-22",
+  "notionId": "3f10ad0255ff80b49db3f5bb0ec296b6",
+  "mbAbsenceProof": {
+   "queries": [
+    "release-group?query=artist:\"Red Mitchell\" AND releasegroup:Rejoice → count=1，為 32eefcf7《Rejoice! + Good Friday Blues + Jazz Guitar Album》（2016，Album＋Compilation，Red Mitchell / Jim Hall），三合一再版 CD，非 1961 原盤",
+    "release?query=release:Rejoice AND (artist:\"Red Mitchell\" OR catno:PJ-22) → count=1，為 bdd39a5a（2016 ES，Fresh Sound FSRCD 908），同上",
+    "release?query=catno:\"PJ-22\" → count=0",
+    "release-group?artist=3a4376e4（Red Mitchell，jazz double-bassist）browse 55 筆，1966 年前只有 Happy Minors、Presenting Red Mitchell、Jazz Mainstream、Pal Joey、Four!、The Light Fantastic、Bob Brookmeyer…，無 Rejoice!"
+   ],
+   "checkedAt": "2026-10-06T14:40:00Z",
+   "conclusion": "MB 上沒有 1961 年 Pacific Jazz PJ-22《Rejoice!》的獨立 release-group，只有 2016 年三合一再版 CD；查詢全部回 HTTP 200 正常 JSON，非 503。Discogs 有 master 552734／原版 release 4540470，故走 §1 人工身分。",
+   "checkedFalseShapes": [
+    "回了合併再版（2016 三合一 CD）"
+   ]
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/552734",
+   "https://www.discogs.com/release/4540470",
+   "https://www.discogs.com/release/4016655"
+  ],
+  "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB 無原盤 RG（唯一相關 RG 是 2016 三合一再版），改以 Discogs master 552734、原版 release 4540470（Pacific Jazz PJ-22、1961、6 軌、人員與錄音地備註）及 1962 英國 Vogue 版 4016655 互證。三條 https，身分成立。",
+  "coverSourceHint": "discogs"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "a",
+  "lineType": "深掘",
+  "scene": "店內販售區待上架（Notion 售價表 2026-10-06）",
+  "republic": "",
+  "cover": null,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "key": "desc2:Kai Winding|Rainy Day",
+  "artist": "Kai Winding",
+  "album": "Rainy Day",
+  "year": 1965,
+  "label": "Verve V-8620（Mono）／V6-8620（Stereo）（US 1965 12 吋黑膠 12 軌；Creed Taylor 製作；2005 日本 Verve UCCU-3005 CD 再版）",
+  "rgMbid": "3b659363-d69d-4ee6-8b35-c8851f7d159b",
+  "identitySource": "pinned",
+  "curatorWhy": "店主售價表在賣的一張（Notion 未填年份與廠牌）。長號手 Kai Winding 在 Verve、Creed Taylor 製作下的主題概念盤：12 首都跟雨有關——〈Here's That Rainy Day〉〈Singin' In The Rain〉〈April Showers〉〈Pennies From Heaven〉〈Over The Rainbow〉，加上 Winding 自作〈We Fell In Love In The Rain〉〈Puddles〉，收尾是 Herbie Hancock〈Watermelon Man〉；每首 2–4 分鐘，Winding 兼編曲，Kenny Burrell、Bucky Pizzarelli、Roger Kellaway、Grady Tate 等錄音室班底，和聲人聲 The Prevailing Winds（Discogs release 2837082）。池中 Kai Winding 只有與 J.J. Johnson 聯名的《The Great Kai & J.J.》，本張補他個人名義、60 年代中期 Verve 輕爵士／流行取向的一面。",
+  "curatorRisk": "⚠ 掛名：MB RG 與 Discogs master 450971 皆掛 `Kai Winding` 單名；池中只有 `J.J. Johnson & Kai Winding`（聯名不同作品），本卡掛單名非新造分裂。⚠ 曲風：本盤是短曲、和聲人聲、流行化的 Verve 輕爵士（Discogs 無風格標籤），寫作層不要寫成 hard-bop 或硬派長號演奏；genre 仍取 jazz。⚠ 年份 1965：MB first-release-date 與 Discogs master 一致。⚠ 目錄號：Mono V-8620、Stereo V6-8620 並存，店內實物不知哪一版；2005 日本 CD 與 MB 1985 JP release 皆再版。⚠ 同名撞車：Discogs 另有 7 吋單曲〈Here's That Rainy Day〉（Kai Winding And The Prevailing Winds，VK 10348，master 3153309），單曲不收；池中 Peter Walker《Rainy Day Raga》不同作品。⚠ A5 曲名 Discogs 拼作「Umrellas」（原文誤植），寫作層引用曲名須寫正確的 The Umbrellas Of Cherbourg。⚠ 鼓手 Discogs 列 Al Harewood、Grady Tate、Sol Gubin 三位、吉他四位，未分軌，寫作層不要把某人對到某首。CAA 有無圖待本機，備援 Discogs 2837082。",
+  "mbNote": "釘 release-group 3b659363-d69d-4ee6-8b35-c8851f7d159b。回問 RG（inc=artist-credits+releases+url-rels）：title「Rainy Day」、primary-type Album、secondary-types 空、first-release-date 1965、artist-credit Kai Winding（d9566c72-7ad1-410f-9f26-f42ad7cebf1e）。轄下 2 筆 release：9ba98a6c（1965 US Official）、a6cbaae8（1985 JP Official）；url-rels 僅 wikidata Q25097134。搜尋 artist:\"Kai Winding\" AND releasegroup:\"Rainy Day\" count=1，無同名重錄。Discogs master 450971 轄下 1965 US Verve V-8620／V6-8620（release 2837082、12666513、12615380、3707649、promo 7278243）與 2005 JP UCCU-3005。去重：池中 seed 無「Rainy Day」同名盤。",
+  "queryAlias": "Kai Winding Rainy Day；Verve V6-8620；Here's That Rainy Day",
+  "notionId": "3f10ad0255ff80a9aa62ed1aa5a9b602"
+ },
+ {
+  "releaseType": "Compilation",
+  "exceptionReason": "Prestige 1956 年 12 吋 LP 7025，把 Miles Davis 1951 年 1 月 17 日（Sonny Rollins、Bennie Green、John Lewis、Percy Heath、Roy Haynes）與 1953 年 2 月 19 日（Al Cohn、Zoot Sims、Sonny Truitt、John Lewis、Leonard Gaskin、Kenny Clarke）兩場分散在 10 吋 LP、多人合輯與 78 轉的錄音首度集中成一張，是這兩場錄音在 12 吋 LP 時代的標準載體，此後以 Early Miles 1951 & 1953（PRLP 7168）、OJC-053 持續再版。",
+  "exceptionEvidenceUrls": [
+   "https://www.discogs.com/master/199013",
+   "https://musicbrainz.org/release-group/12dbaae5-338f-3386-89cc-d3575fcfdabf",
+   "https://en.wikipedia.org/wiki/Miles_Davis_and_Horns",
+   "https://www.discogs.com/release/2811539"
+  ],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "a",
+  "lineType": "深掘",
+  "scene": "店內販售區待上架（Notion 售價表 2026-10-06）",
+  "republic": "",
+  "cover": null,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "key": "desc2:Miles Davis|Miles Davis and Horns",
+  "artist": "Miles Davis",
+  "album": "Miles Davis and Horns",
+  "year": 1956,
+  "label": "Prestige PRLP 7025（US 1956 12 吋黑膠 Mono 8 軌；Rudy Van Gelder 母帶、Ira Gitler 內頁文、Don Martin 封面；1959 改題 Early Miles 1951 & 1953 以 PRLP 7168 再版、1983 OJC-053）",
+  "rgMbid": "12dbaae5-338f-3386-89cc-d3575fcfdabf",
+  "identitySource": "pinned",
+  "curatorWhy": "店主售價表在賣的一張（Notion 未填年份與廠牌）。Prestige 進入 12 吋 LP 時代後，把 Miles 早期兩場錄音整理成一張：A 面到 B1 是 1953-02-19 Al Cohn 寫曲與編曲的場次（Cohn、Zoot Sims 雙次中音、Sonny Truitt 長號、John Lewis、Leonard Gaskin、Kenny Clarke），原收在 10 吋《Miles Davis Plays the Compositions of Al Cohn》（PRLP 154）；B2–B5 是 1951-01-17 與 Sonny Rollins、Bennie Green 的場次（John Lewis、Percy Heath、Roy Haynes），原散在多人合輯 10 吋《Modern Jazz Trumpets》（PRLP 113）、78 轉 Prestige 734 等（Discogs master 199013 備註、原版 2811539 錄音日期；英文維基條目）。池中 Miles 的 Prestige 線有《Blue Haze》《Blue Moods》《Walkin'》《Bags Groove》與四張 '-in' 等，但沒有 1951 與 1953 這兩場，非撞卡。",
+  "curatorRisk": "⚠ §5.6：MB primary-type Album、secondary Compilation；依上一批《Directions》《More Lasting Than Bronze》同形先例 releaseType 填 Compilation 並附 exceptionReason／證據。判斷收錄：這兩場錄音在 10 吋時代被拆在單人 10 吋、多人合輯與 78 轉，PRLP 7025 是它們第一次集中、也是此後六十年的標準版本（PRLP 7168、OJC-053、各國 CD 皆沿此曲目），不是 greatest-hits 重複包裝；池中無任何一張收這兩場。⚠ 來源差異：英文維基說 B 面〈Blue Room〉原收《Blue Period》（PRLP 140）、又說第 3 軌是〈Morpheus〉單曲 B 面，但 Discogs 78 轉 8907120 顯示 Prestige 734 是〈Morpheus〉／〈Blue Room〉；兩源對『哪首先出在哪張 10 吋』不一致，寫作層只寫『原先散在 10 吋 LP 與 78 轉』，不逐首對出處。⚠ Sonny Truitt 據維基只在〈Floppy〉吹奏，Discogs 未分軌，寫作層不要寫他全場都在。⚠ 年份 1956：MB、Discogs master、維基一致；錄音年 1951／1953 與發行年分開寫。⚠ 盤名：原版標籤寫 Miles Davis And Horns（Discogs 註記另有標籤變體 With Horns），卡面取 MB 的 `Miles Davis and Horns`。⚠ 店內實物版本未知（可能是 OJC 或日本再版），本卡釘作品身分。CAA 待本機，備援 Discogs 2811539。",
+  "mbNote": "釘 release-group 12dbaae5-338f-3386-89cc-d3575fcfdabf。回問 RG（inc=artist-credits+releases+url-rels）：title「Miles Davis and Horns」、primary-type Album、secondary-types [Compilation]、first-release-date 1956、artist-credit Miles Davis（561d854a-6a28-4aa7-8c99-323e6ce46c2a）。轄下 10 筆 release，最早 3a3231e9（1956 US Official），其餘 1983、1996 JP、1999 JP、2001 US、2006 JP、2006 XE、2016、2017 US 再版。url-rels：discogs master 199013、allmusic mw0000654773、wikidata Q374360。搜尋 artist:\"Miles Davis\" AND releasegroup:Horns 另一筆是 1960 Down Beat 讀者票選 EP（baecdfd9），無關。Discogs master 199013 版本 50 餘筆：1956 US PRLP 7025（2811539 等）、1959／1964 PRLP 7168、1961 英國 Esquire 32-118、1969 PR 7674、1972 德國 Bellaphon BJS 40161、1973／1976 日本、1983 OJC-053 起各國 CD。來源 10 吋：PRLP 154（3846946，1953）、PRLP 113（3675042，1951）、78 轉 Prestige 734（8907120，錄音 1951-01-17 Apex Studios）。",
+  "queryAlias": "Miles Davis And Horns；Miles Davis with Horns；Early Miles 1951 & 1953；Prestige 7025",
+  "notionId": "3f10ad0255ff80e7bd17edee59a4221e"
+ },
+ {
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "a",
+  "lineType": "深掘",
+  "scene": "店內販售區待上架（Notion 售價表 2026-10-06）",
+  "republic": "",
+  "cover": null,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "key": "desc2:Barry Harris|Breakin' It Up",
+  "artist": "Barry Harris",
+  "album": "Breakin' It Up",
+  "year": 1958,
+  "label": "Argo LP-644（US 1958 12 吋黑膠 Mono 8 軌，另有 Stereo LP-644-S；1975 日本 Cadet MJ-1012 限定再版、1984 Cadet ULS-6112-BC、日本 Universal 多次 CD 再版）",
+  "rgMbid": "dc17a42e-c723-4fc2-9945-535e8a0622d4",
+  "identitySource": "pinned",
+  "curatorWhy": "店主售價表在賣的一張（Notion 年份寫 1975，應是店內實物的日本再版年：Discogs master 547647 轄下 1975 年唯一版本是日本 Cadet MJ-1012 限定再版）。Barry Harris 的首張專輯，1958 年 Argo 錄音發行，三重奏編制：Harris（鋼琴）、William Austin（貝斯）、Frank Gant（鼓）；八首含兩首 Charlie Parker（〈Ornithology〉〈Passport〉）、Denzil Best〈Allen's Alley〉與自作〈Bluesy〉〈SRO〉（英文維基 Breakin' It Up 條目、Discogs 原版 4166328）。池中 Harris 已有《At the Jazz Workshop》（1960）、《Preminado》（1961）、《Magnificent!》、《Plays Tadd Dameron》，本張是起點，補上 Riverside 之前的 Argo 首作。",
+  "curatorRisk": "⚠ 年份：卡片取原盤 1958（MB RG first-release-date、Discogs master、維基一致），不取 Notion 的 1975；1975 是日本 Cadet MJ-1012 再版（Discogs 6984763），店內實物多半是這張——主線若要在門市版標版本，可請店主看封底目錄號。⚠ 掛名：MB 與 Discogs 原版皆掛群組實體『Barry Harris Trio』（MB 85335d36）；依 add-20261005 第 8641 條（《Here's Hope!》收攏為 Elmo Hope）與池中 Barry Harris 四張皆掛 `Barry Harris` 的先例，掛 `Barry Harris`，Barry Harris Trio 進 queryAlias，不新造字串。⚠ 同名 RG：MB 另有 33396cce（2007，Album＋Compilation，The Barry Harris Trio，XE），對應 Discogs 9028772 的 Jazz Beat JAZZBEAT 507（Unofficial Release，加收別張），不是本卡。⚠ 錄音日期 Discogs 與維基皆未載，不寫。⚠ AllMusic 評語（Jason Ankeney，4 星）只見維基轉引，寫作層若用須標樂評、不要逐字。CAA 有無圖待本機，備援 Discogs 4166328。",
+  "mbNote": "釘 release-group dc17a42e-c723-4fc2-9945-535e8a0622d4。回問 RG（inc=artist-credits+releases+url-rels）：title「Breakin' It Up」（直引號）、primary-type Album、secondary-types 空、first-release-date 1958、artist-credit Barry Harris Trio（85335d36-aba4-4ac9-a628-093e94b676dc）。轄下 3 筆 release：98529766（1958 US Official）、382311bd（2007-07-11 JP）、22ba0946（2021-11-04 JP）。搜尋 artist:\"Barry Harris\" AND releasegroup:Breakin 另一筆 33396cce（2007 Compilation，非官方歐洲 CD），排除。Discogs master 547647：1958 US Argo LP-644（Mono 4166328、Stereo 12234781、Promo 10979725）、1975 JP Cadet MJ-1012（6984763）、1983 Baybridge、1984 Cadet、日本 CD 1997–2024 多版。去重：池中 seed 無 Breakin' It Up（只有 Fred & The New J.B.'s《Breakin’ Bread》等不相干盤）。",
+  "queryAlias": "Barry Harris Trio；The Barry Harris Trio；Breakin’ It Up；Breakin It Up；Cadet MJ-1012",
+  "notionId": "3f10ad0255ff8059aa49da71d0df331f"
+ }
+]
