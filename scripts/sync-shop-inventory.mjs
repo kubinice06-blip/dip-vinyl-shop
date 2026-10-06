@@ -42,7 +42,7 @@ const OVERRIDES = {
   '3ee0ad0255ff81668a74d3448af000fe': ['濱田金吾', 'Mugshot'],
   // Notion 寫綽號 The Bronx Nightingale；店主 2026-10-05 確認實物是 1982 自製盤《Let's Do It》
   '3f00ad0255ff80918ab9cdb1b140b38a': ['Jonny Holtzman', "Let's Do It"],
-  // 今田勝 7 吋宣傳單曲《誘われてシーサイド》（TD-117），兩曲出自 1982《Blue Marine》，掛專輯卡
+  // 今田勝 1982《Blue Marine》（日文副題《誘われてシーサイド》）；店主 2026-10-06 確認店內實物是專輯，Notion 品名已改正
   '3f00ad0255ff801a82e6d36027faadfa': ['今田勝', 'Blue Marine'],
   // 店主 2026-10-05 確認：Notion「Bellaphon」是德國 Bellaphon 版《More Lasting Than Bronze》
   '3f00ad0255ff801aba1cf344d7dded98': ['John Coltrane', 'More Lasting Than Bronze'],
