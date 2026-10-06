@@ -13,3 +13,34 @@
 - Miles Davis《Miles Davis and Horns》是 Prestige 把早期場次併成的 LP，判斷是否走 ALBUM_ONBOARDING §5.6 合輯例外。
 - 明田川荘之 Notion 寫「This Here´ Is Aketa Vol. 2」，正式盤名待查（池中已有明田川四張）。
 - 卡池已有同藝人：あがた森魚（乙女の儚夢、日本少年、乗物図鑑）、矢野顕子（Japanese Girl、ごはんができたよ）、宮沢昭（いわな、山女魚…）、鈴木勲（多張，皆掛鈴木勲＋編制）、カルメン・マキ&OZ（團名）、Mal Waldron（多張）、Red Mitchell（聯名兩張）、J.J. Johnson & Kai Winding。掛名照池中先例。
+
+## 策展 a 組（8701–8710）
+- **8701** 本組收 6 退 1：卡單 `desc-tools/batches/cards/add-20261006-shop-a-cards.json` 6 張（pinned 3、§1 人工 3）；宮沢昭《Bull Trout》撞池退件（見 8707）。未用 WebSearch，全走 MB／Discogs API 與英文維基 API。
+- **8702** Red Mitchell《Rejoice!》走 §1 人工：MB 只有 2016 Fresh Sound 三合一 CD 的 RG 32eefcf7（Album＋Compilation，Rejoice! + Good Friday Blues + Jazz Guitar），不能釘 1961 原盤；以 Discogs master 552734／原版 4540470（Pacific Jazz PJ-22，1961）為證。掛 `Red Mitchell` 單名（封面如此；池中兩張是不同作品的聯名，非分裂）。本盤 Mitchell 拉大提琴、貝斯是 Jimmy Bond，寫作層不得寫成他拉貝斯。
+- **8703** Kai Winding《Rainy Day》釘 RG 3b659363（1965，Verve V-8620／V6-8620，Creed Taylor 製作）。掛 `Kai Winding` 單名。12 首雨主題短曲＋和聲人聲 The Prevailing Winds，屬 Verve 輕爵士／流行取向，寫作層不寫成硬派長號演奏；同名 7 吋單曲（master 3153309）不收。
+- **8704** Miles Davis《Miles Davis and Horns》走 §5.6 收錄：釘 RG 12dbaae5（MB Album＋Compilation，1956，Prestige PRLP 7025）。理由：1951-01-17（Rollins、Bennie Green）與 1953-02-19（Al Cohn、Zoot Sims）兩場原本散在 10 吋 PRLP 154、多人合輯 PRLP 113 與 78 轉 Prestige 734，7025 是它們第一次集中、也是此後 PRLP 7168（Early Miles 1951 & 1953）、OJC-053 沿用的標準形態；池中無這兩場，非重複包裝。releaseType 照上一批《Directions》《More Lasting Than Bronze》先例填 Compilation 並附 4 個證據網址。維基與 Discogs 對〈Blue Room〉／〈Morpheus〉單曲出處說法不一，寫作層不逐首對出處。
+- **8705** Barry Harris《Breakin' It Up》年份 1958（MB、Discogs master 547647、維基一致；Argo LP-644）。Notion 的 1975 是日本 Cadet MJ-1012 限定再版年（Discogs 6984763，該 master 1975 年唯一版本），店內實物多半是它。掛名依 8641 先例與池中 Barry Harris 四張收攏為 `Barry Harris`，Barry Harris Trio 進 queryAlias。MB 另一筆 2007 RG 33396cce 是非官方歐洲 CD，排除。
+- **8706** 明田川荘之那張的正式盤名就是 **《This Here´ Is Aketa Vol. 2》**（Discogs master 3401536／release 3955896，Offbeat Records ORLP-1004，1975；日文副題 ディズ ヒア' イズ アケタ），´ 是盤面原字元，卡面保留、queryAlias 收直引號與無符號寫法；若前端正規化出問題主線可改 '（可逆）。內容是 1975-07-10 東京 Bridgestone 美術館的鋼琴獨奏現場。MB 查無，走 §1 人工。與池中《Aketa's Erotical Piano Solo & Grotesque Piano Trio》（1975-03 アケタの店錄音，AD-1）同有一首〈Theme For Tomosan〉但為不同錄音，非撞卡。Vol. 1（ORLP-1003，三重奏）是另一張碟，店內沒有，不出卡。
+- **8707** ⚠ **宮沢昭《Bull Trout》退件：撞池**。Bull Trout 就是池中已有的 `宮沢昭《いわな》`（1969）——Discogs master 644576 標題「Bull Trout = いわな」、原版 6408475 目錄號 SMJX-10068，與 c131 卡單 `desc4:宮沢昭|いわな`（RG 9bd1426e，VICTOR WORLD GROUP SMJX-10068）同一張碟（英文盤名是封面副題）。**主線處理**：Notion 這列卡池鍵回寫 `desc4:宮沢昭|いわな`；池卡 queryAlias 補 `Bull Trout`（目前只有 Iwana 等，沒有 Bull Trout）；這張改列「卡池已有」，門市版介紹沿用池卡研究。
+- **8708** Mal Waldron／梅津和時《Another Step》掛名裁為 **`梅津和時 & Mal Waldron`**：依 c175《Reminicent Suite》先例「次序照盤面、外國人一方用池中既有羅馬字 Mal Waldron、日本人一方用漢字本名、用 & 連接」；Discogs 四個版本盤面皆梅津在前（Kazutoki Umezu / Mal Waldron），梅津也是製作人，Notion 的 Waldron 在前不採，收進 queryAlias。key `desc4:`。MB 有兩位藝人但無本盤，走 §1 人工（Discogs master 1653300／release 7262688，Union Jazz ULP-5004，1982-08-21，錄音 1982-04-21／22）。**b 組《竹の村》須用同一字串 `梅津和時`**。
+- **8709** 人名漢字：Discogs 只登羅馬字的樂手（明田川 Vol. 1／Vol. 2 的 Koichi Yamazaki、Takashi Miyasaka、Makoto Shiraishi；《Another Step》的 Takeharu Hayakawa、Takashi Kikuchi）卡單一律寫羅馬字，研究／寫作層不得自行轉成漢字，除非另有來源。
+- **8710** 封面：三張人工身分卡（Rejoice! 4540470、Aketa Vol. 2 3955896、Another Step 7262688）走 §4 discogs，目錄號／年份／廠牌三項皆可對，須登錄 discogs-cover-registry 並看圖；三張 pinned 卡 CAA 待本機，備援 Discogs（Rainy Day 2837082、Horns 2811539、Breakin' It Up 4166328）。試聽全部待本機。
+
+## 策展 b 組（8711–8720）
+- **8711** O.M.Y.《弱気なぼくら》身分已釘：MB RG `8c7fa870`（Album，2001-06-06，Scitron SCDC-00081），盤名原盤為『弱気なぼくら / ナーヴァス』（前五軌「弱気なぼくら」＋後七軌「Nervous」兩段，皆 2001 首度發表，非舊作合併，不走 §5.6）；店內實物多半是 2024 Cassetron CTN-40 首度黑膠化，年份取原盤 2001。掛名裁為 MB／Discogs 實體正名 **`Oriental Magnetic Yellow`**（Apple 2024 再版藝人欄同），盤面縮寫 O.M.Y. 進 queryAlias——理由：該團 1995–1997 作品皆掛全名，用縮寫會讓同團日後分裂成兩串（照 8641「credit 收攏到實體名」先例）。key 含假名走 `desc4:`。
+- **8712** Carmen Maki《真夜中詩集》掛名裁為個人名 **`カルメン・マキ`**：MB 實體 eba9a947 正名カルメン・マキ（個人，非 OZ 團）；照 §0.5 日文名、照池中「個人名義與團名／編制串並存、不合併」先例（`今田勝` vs `今田勝トリオ`、`鈴木勲` vs `鈴木勲トリオ`），不併入 `カルメン・マキ&OZ`、不用羅馬字。釘 RG `35eadca6`（MB 以英譯『Poems in the Midnight (’Til the Candle Goes Out)』建題），盤名取原盤 Discogs 寫法『真夜中詩集 －ろうそくの消えるまで－』，MB 1991 形〈〜〉、Apple 形、英譯全進 queryAlias（可逆）。1969，CBS/Sony SOND 66010。
+- **8713** あがた森魚《噫無情》釘 RG `9e91e6a6`，盤名照 MB／Discogs 原盤『噫無情（レ・ミゼラブル）』（全形括號），1974-03-25，Bellwood OFL-22。Discogs 原版 credits 僅設計一項，伴奏與製作人寫作層不得寫，除非研究層另有來源。
+- **8714** 桃井かおり《おもしろ遊戯》走 §1 人工：MB 有藝人實體 a485d750 但 RG 表只有 2003 年後 5 筆，盤名／目錄號 28AH 1401／羅馬字＋年份皆 0（中途一次 503 已重試）；證據 Discogs release 7633932＋master 3435347＋Apple jp 1536986860（10 軌逐首相符、℗1982）。1982-02-25，Momoi Kaori 28AH 1401。credits 只有羅馬字（Ryudo Uzaki、Kyohei Tsutsumi、Yoko Aki、Tadanori Yokoo…），照 8709 不轉漢字。`coverSourceHint: discogs`。
+- **8715** 矢野顕子《オーエス オーエス》釘 RG `564ca909`，1984-06-25，Japan Record 28JAL-10（LP＋附贈 7 吋 28JALS-10）。版本差：LP 本體 9 軌＋7 吋 2 軌，CD 38JC-101 為 10 軌、無〈Assemblée〉，寫作層寫曲數須指明版本。共同製作 Ryuichi Sakamoto，genres 取 pop＋electronic（池中矢野另兩張為 pop＋jazz，可逆）。
+- **8716** 宮本典子 & 鈴木勲《Push》身分已釘：MB RG `44a1a0ca`（credit『宮本ノリコ & 鈴木勲』＝實體 宮本典子 5f96637e ＋ 鈴木勲 cf594e51，後者即池中鈴木勲），Discogs master 866074 掛『Noriko Miyamoto With Isao Suzuki』、藝人頁正名宮本典子；1978，Yupiteru YJ25-7002，宮本典子首張專輯，2022 BBE 再版。掛名照 c-179 第 4641／3874 條（兩位日本個人、皆無中黑 → `・`）裁為 **`宮本典子・鈴木勲`**，與池中 `富樫雅彦・鈴木勲`、`鈴木勲・山本剛` 同形；不用 MB 片假名 credit 名ノリコ。B2〈Cadillac Woman〉與池中 `鈴木勲`《Cadillac Woman》(1977) 同名曲、不同專輯，非撞卡。
+- **8717** 年份全部取原盤首發：O.M.Y. 2001（非 2024 黑膠）、カルメン・マキ 1969、あがた 1974、桃井 1982、矢野 1984、Push 1978、梅津 1980；與 MB first-release-date 及 Discogs 原版皆一致，本組無「資料庫只有再發」的情形。
+- **8718** 梅津和時《竹の村》釘 RG `e63df681`（MB 題『Bamboo Village』，credit『Kazutoki "Kappo" Umezu』→ 實體 梅津和時 a0becf99）；掛名照 a 組 8708 同字串 **`梅津和時`**。盤名取 MB RG 純拉丁題 **`Bamboo Village`**（Discogs 原版『Bamboo Village = 竹の村』英文在前），『竹の村』進 queryAlias；主線若要改日文題屬可逆。Next Wave 25PJ-1003，1980-03-21／22 Onkio Haus 錄音，三重奏（Umezu／David Friesen／Masahiko Togashi）；Togashi 是否即池中富樫雅彦交研究層確認後才寫漢字。
+- **8719** 撞池掃描：seed 唯讀比對 7 張盤名與等價形（噫無情／Les Misérable、真夜中詩集／Poems in the Midnight、オーエス／Oh Hisse、Push、竹の村／Bamboo Village、弱気なぼくら／Nancy Boys、おもしろ遊戯）全無命中；同藝人池中盤皆不同碟。本組 **收 7、退 0**，無合輯、無 §5.6。
+- **8720** 封面／試聽皆待本機：pinned 6 張 CAA 待測，備援 Discogs（O.M.Y. 2562059、カルメン・マキ 3955729、あがた 5416259、矢野 3248498、Push 1263679、梅津 8381375）；桃井走 §4 discogs 7633932。Apple jp 候選：カルメン・マキ 1537211393（12 軌，較原盤多 1 軌）、あがた 1642726952、桃井 1536986860、矢野 1405887205、Push 1622901354、O.M.Y. 6807276757／1774686480（2024 再版）；梅津 iTunes 查無，預期 unavailable。本組未用 WebSearch（MB／Discogs／iTunes／維基 API）。
+
+## 主線驗收策展（不佔條號）
+- 收 13、退 1：宮沢昭《Bull Trout》＝池中《いわな》（同目錄號 SMJX-10068，8708 前後 a 組裁定）。Notion 卡池鍵回寫 `宮沢昭|いわな`、從 PENDING_NEW 移除；池卡 queryAlias 補 `Bull Trout` 交本機（seed 單行壓縮檔，雲端不碰）。
+- 梅津和時《竹の村》：盤名取日文《竹の村》（與店內品名、日本原盤一致），MB 英文題 Bamboo Village 進 queryAlias。可逆。
+- O.M.Y. 掛 `Oriental Magnetic Yellow`、カルメン・マキ 個人名義與團名分開、`宮本典子・鈴木勲`、`梅津和時 & Mal Waldron`：照策展層，均有池中先例。
+- 曲風照策展層（矢野 pop+electronic、Push jazz+soul），可逆。
+- 桃井かおり／梅津兩張羅馬字人名（Togashi 等）漢字形由研究層確認，未確認前不寫漢字。

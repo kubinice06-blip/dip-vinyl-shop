@@ -44,6 +44,8 @@ const OVERRIDES = {
   '3f00ad0255ff80918ab9cdb1b140b38a': ['Jonny Holtzman', "Let's Do It"],
   // 今田勝 1982《Blue Marine》（日文副題《誘われてシーサイド》）；店主 2026-10-06 確認店內實物是專輯，Notion 品名已改正
   '3f00ad0255ff801a82e6d36027faadfa': ['今田勝', 'Blue Marine'],
+  // 宮沢昭《Bull Trout》＝池中《いわな》（同目錄號 SMJX-10068，add-20261006-shop 策展裁定）
+  '3f10ad0255ff804ba972c1e0fb194f4f': ['宮沢昭', 'いわな'],
   // 店主 2026-10-05 確認：Notion「Bellaphon」是德國 Bellaphon 版《More Lasting Than Bronze》
   '3f00ad0255ff801aba1cf344d7dded98': ['John Coltrane', 'More Lasting Than Bronze'],
   // 封面印 The New George Otsuka Trio；卡池照池中先例掛日文團名（add-20261004-shop 第 8592 條）
@@ -81,7 +83,6 @@ const PENDING_NEW = new Set([
   '3f10ad0255ff8040af83fca5d008b0f0',
   '3f10ad0255ff802683fae74b2aee59e8',
   '3f10ad0255ff8067a895d536274aee16',
-  '3f10ad0255ff804ba972c1e0fb194f4f',
 ]);
 
 const pool = JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8'));
