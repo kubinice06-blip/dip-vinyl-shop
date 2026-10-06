@@ -90,3 +90,8 @@
 - 三軸（manual:pool-peers）：Here's Hope! 3/4/2、Directions 3/3/3、Saturday Morning 3/4/2、Tete! 3/4/2、More Lasting Than Bronze 3/3/2、This Note's For You 3/2/1、Heartattack and Vine 4/2/2、飛べない鳥 3/4/3、陽のあたる翼 2/4/2、モア 1/5/2、Blue Marine 3/4/1、Let's Do It 1/5/1；頂點 0。
 - Blue Marine 封面改用 Discogs 1938858 原盤圖（CAA 只有 1992 CD 再版）。
 - 試聽 Apple jp ready 6 張，逐軌核對。
+
+## 店主退件重寫（2026-10-06，不佔條號）
+- 店主指示：Here's Hope!、Saturday Morning、下田兩張重寫，寫給完全不懂的人；Here's Hope! 寫三重奏的情誼；Saturday Morning 寫復出；禁「同一篇文章」「據唱片行說明」這類轉述引導詞。
+- 連帶修 モア 的「據店家介紹」（同一禁令）。hook 首句同步改。writer-base.md 補禁令與「寫給不懂的人」兩條。
+- Sonny Criss「休息八年」：店主讀到封底解說這樣寫；可查證來源（英文維基《Saturday Morning》條目）寫的是「1969 年後的第一張新錄音」＝六年。正文暫寫六年，待店主拍封底原文確認。
