@@ -287,3 +287,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## D 級開跑（ar-d-001 起）
 
 - 依 ARTIST_INTRO_PLAN §356 定案：D 級照常寫、素材不足自動落 thin，不另立規則。編制掛名（X Trio、X & Y）主詞照名冊，寫該編制或該張唱片的特色；同領隊多個掛名不互抄。
+
+## ar-c-031（2026-10-07，C 級最後一批）
+
+- 34 位全上（32 full、2 thin：Roberto Cacciapaglia、澤野弘之）。審稿修 1 處：Aimard 的獎名改用原文 Ernst von Siemens（原稿用了日文中點）。
+- Myung-Whun Chung 第 9 次搜尋只重複確認、無獨有事實：比照齊豫放行。
+- Menuhin & Shankar（277）、武満徹（278）用放寬額度：雙人卡兩人都要寫、武満徹的「間」與國際化故事缺一不可，接受。
+- 待本機（上線簡介）：Roberto Cacciapaglia《Sei Note in Logica》「Jim O'Rourke、Fennesz 列為影響」（僅再版廠牌文案）與「很快轉向流行」不實；卡池疑點 Marian Anderson《The Lady From Philadelphia》是歷史錄音選輯、Feldman《Rothko Chapel》2009 年標 electronic。
+- **C 級全部完成**（ar-c-001～031）。
