@@ -251,3 +251,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - QA 新增：「」內含假名的日文專名（芸能山城組前身「ハトの会」）不判簡體。
 - TOKiMONSTA 的 Moyamoya 病與康復、The KLF 燒掉百萬英鎊：作品與生涯核心，列必要例外。50 Cent 的槍擊與逮捕照特注未寫。
 - 待本機（上線簡介）：日向敏文《Sarah's Crime》「雙城分校」（應為 Duluth 或只寫明尼蘇達大學）；阿爆《vavayan. 女人》2003 年「最佳重唱組合」查無（第 14 屆得主是 S.H.E）、第 28 屆最佳專輯製作人獎主詞是荒井十一；The Irresistible Force 2 條；Wagon Christ《Throbbing Pouch》年份。
+
+## ar-c-027（2026-10-07）
+
+- 40 位全上（33 full、7 thin）。審稿修 2 處：DOUBLE 刪姊姊的死因；Earl King 修語句。
+- E SENS 服刑期間發行《The Anecdote》、Dave 哥哥入獄、Binary Star 在懲教所成團：作品與團史核心，只寫事件層級，不寫案由。
+- QA 禁語「我」會誤擋「自我」等詞，寫作層一律改寫；暫不改 QA（改了要逐一界定詞表，風險大於效益）。
+- 待本機：Blue Lab Beats《Xover》卡池年份（2018）。
