@@ -386,3 +386,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 新近事實：Ralph Towner 2026 年 1 月在羅馬過世（KNKX、維基、ECM 三源）。
 - Rashied Ali 三卡分寫：補洞摘要把部分 Ali 事實排在搭檔名下，寫作層已歸回 Ali，三篇切入點不同。Philip Cohran 卡池 2013 疑為再版（原作 1967–68），正文不寫年份。
 - 待本機（上線簡介）：Paul Rutherford《The Gentle Harm of the Bourgeoisie》「史上第一張長號獨奏自由即興唱片」不實（Mangelsdorff 1972《Trombirds》更早），宜改「他個人名義的首張」；Rien Djamain《Api Asmara》年份（1975／1976）與 Rolling Stone Indonesia 名次待核；Pat Metheny Group 卡池 1977（實為 1978）；Ronnie Boykins 卡池 2002 疑為再版年。
+
+## ar-d-012（2026-10-07）
+
+- 38 位上架（28 full、10 thin：Sal Salvador、Shakatak、Shamek Farrah、Sheila Jordan & Arild Andersen、Shintaro Quintet、Shirley Horn Trio、Solomon Ilori、Sphere、Stan Sulzmann、Stefano Torossi），1 位不寫：Sadayasu Fujii（只有 Discogs 一源，聲音與地位兩格查無）。審稿修 1 處：Steven Halpern 刪「最早的新世紀藝人」（序數宣稱）。thin 比例高於前幾批：本批多冷門私壓盤與雙掛名的第二張卡。
+- 身分更正：Sphere 是底特律 Larry Nozero 的團（Strata，1970 年現場、1974 年發行），不是 Charlie Rouse 的同名 Monk 致敬團；Shintaro Quintet 維基預抓為漫畫家，作廢；Steve Lacy 兩卡的維基預抓為 1998 年生同名吉他手，作廢。
+- 搜尋超限放行：Sumiko Yoseyama 9 次（開沖繩專題頁補出生地等第二源）。日文名「与世山澄子」依台灣字形寫成與世山澄子（研究稿同步改字，避開 QA 簡體誤判），小浜島寫小濱島。
+- 待本機（上線簡介）：Savina Yannatou《Sumiglia》「轉入 ECM 後第一張」不實（ECM 首作是 2003《Terra Nostra》）、樂團成軍年待核；Shadowfax 葛萊美類別應為 Best New Age Performance；SOIL & "PIMP" SESSIONS《Pimp Master》非首張全長作（首張是 2004《Pimpin'》）；Sona Jobarteh「堂兄 Toumani Diabaté」宜改「表親」；Sir Roland Hanna Trio 卡池專輯名全名為《Milano, Paris, New York: Finding John Lewis》；Salah Ragab《Egyptian Jazz》發行年（2006／2017）待核。

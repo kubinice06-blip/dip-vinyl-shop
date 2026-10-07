@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 488 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 497 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -487,7 +487,16 @@
 | ar-d-010 | Paolo Conte | Paolo Conte (1984) | 也是他與 CGD 二十年合作關係的起點 | 義大利維基專輯條目只寫這是他在 CGD 的第一張、也是與經理人兼製作人 Renzo Fantini 合作的開端，沒有「二十年合作」的出處；建議核對或改寫成「他在 CGD 的第一張」 | https://it.wikipedia.org/wiki/Paolo_Conte_(album_1984) |
 | ar-d-011 | Paul Rutherford | The Gentle Harm of the Bourgeoisie | 這是史上第一張長號獨奏的自由即興唱片。 | 找不到任何來源把本盤稱為史上第一張；維基專輯頁只說它是 Rutherford 以個人名義的首張發行、是長號獨奏的重要錄音（1974 年錄、1976 年 Emanem 發行）。維基 Albert Mangelsdorff 條目記他 1972 年在 MPS 錄了第一張長號獨奏專輯《Trombirds》，比本盤早四年（該專輯偏爵士、是否算自由即興可議，但『史上第一張長號獨奏』站不住）。建議改成「他以個人名義的首張發行」或「長號獨奏的重要錄音」。 | https://en.wikipedia.org/wiki/Albert_Mangelsdorff |
 | ar-d-011 | Rien Djamain | Api Asmara | 這張 1975 年由萬隆的 Hidayat 唱片公司發行 | id.wikipedia 把《Api Asmara》列為 1976 年，kumparan 與 MusicBrainz 寫 1975；年份待核，建議店主以實體盤或 Discogs 版次確認。 | https://id.wikipedia.org/wiki/Rien_Djamain |
+| ar-d-012 | Savina Yannatou & Primavera en Salonico | Sumiglia | 2005年發行，是她轉入ECM後的第一張 | ECM 官方頁面：Primavera en Salonico 的 ECM 首作是 2003 年 1 月發行的現場專輯《Terra Nostra》（ECM 1856）；《Sumiglia》（ECM 1903，2005 年 3 月）是第一張 ECM 錄音室專輯與她和 Manfred Eicher 的首次合作，應改寫為『第一張 ECM 錄音室專輯』 | https://ecmrecords.com/product/sumiglia-savina-yannatou-primavera-en-salonico/ |
+| ar-d-012 | Savina Yannatou & Primavera en Salonico | Sumiglia | 與1990年代中期組成的樂隊Primavera en Salonico合作 | World Music Central 寫樂團 1990 年代初由她與塞薩洛尼基的樂手合組，1994 年已發行首張同名專輯（猶太歌謠）；與維基的『1990 年代中期』不一致，建議改成『1990 年代』或略去起點；僅單一獨立來源，待核 | https://worldmusiccentral.org/?p=64782 |
+| ar-d-012 | Shadowfax | Folksongs for a Nuclear Village | 隔年拿下葛萊美最佳新世紀專輯 | 葛萊美該類別在第 31 屆（1989 年）名稱是 Best New Age Performance，1992 年起才改稱 Best New Age Album，『最佳新世紀專輯』是後來的名稱；建議改為『最佳新世紀演出』或『葛萊美新世紀類別』；兩源（維基樂團條目與維基葛萊美類別條目）屬同一家族，非獨立，grammy.com 查不到頁面 | https://en.wikipedia.org/wiki/Grammy_Award_for_Best_New_Age_Album |
+| ar-d-012 | SOIL & "PIMP" SESSIONS | Pimp Master | 東京六人編制 2005 年 2 月的首張全長作由 Victor 發行 | 英文維基《Pimp Master》寫發行日是 2005 年 6 月 23 日、是第二張錄音室專輯（前一張為 2004 年《Pimpin'》）；《Pimpoint》條目的專輯序列（Pimp Master 2005、Pimp of the Year 2006、Pimpoint 2007 為第四張）與之一致。月份與「首張」皆需改，建議本機再核對 Victor 官方或 Discogs。 | https://en.wikipedia.org/wiki/Pimp_Master |
 | ar-d-012 | Sona Jobarteh | Fasiya | 堂兄為 Toumani Diabaté | 維基與 Mail & Guardian 只寫 cousin，且兩人姓氏不同（Jobarteh 與 Diabaté），『堂兄』指同姓父系，與來源不符；宜改寫為表親或堂表親。 | https://en.wikipedia.org/wiki/Sona_Jobarteh |
+| ar-d-013 | Syrius | Devil's Masquerade | 英文歌詞由 Charlie Fischer 寫 | 開頁讀到的來源（匈牙利文 Origo、英文維基 Orszaczky 條）都拼作 Fisher，Fischer 拼法待核；若以 Discogs 製作欄或原盤封底為準則維持，請店主對照原盤 | https://www.origo.hu/kultura/2008/02/az-elfeledett-legenda-orszaczky-jackie-es-a-syrius-tortenete |
+| ar-d-013 | The Modest Jazz Trio | Good Friday Blues | 團名只用過這一次，三個人對等：Jim Hall 的吉他，加兩把低音，沒有鼓。兩位低音手 Red Mitchell 與 Red Kelly 都叫 Red。 | Red Mitchell 在這張彈的是鋼琴，貝斯是 Red Kelly 一人；Blue Note Tone Poet 頁寫 Jim Hall 吉他、Red Mitchell 鋼琴、Red Kelly 貝斯，MusicBrainz 的團體成員關係也記 Mitchell 為 piano、Kelly 為 bass。簡介的『加兩把低音』與『兩位低音手』須改為吉他、鋼琴、貝斯。 | https://shop.udiscovermusic.com/products/modest-jazz-trio-good-friday-blues-tone-poet-vinyl-series-lp |
+| ar-d-013 | The Muddy Basin Ramblers | Formosa Medicine Show | 這是 2003 年由住在台北的美籍與英籍外僑組成的 jug band 第二張專輯 | 英文維基《The Muddy Basin Ramblers》寫 formed in 2002，《Taipei Times》2015 年 2 月報導寫樂團 2002 年由外僑成立；兩源皆為 2002 年，簡介的 2003 年應改為 2002 年。維基《Formosa Medicine Show》條目寫 2003 年，與同家族的樂團條目互相不一致。 | https://www.taipeitimes.com/News/feat/archives/2015/02/02/2003610619 |
+| ar-d-013 | The Mystery Kindaichi Band | 金田一耕助の冒険 | 一張虛構的電影原聲帶 | 來源（Wewantsounds 文案轉載）寫的是以橫溝正史小說為本的 imaginary soundtrack、並非任何官方電影或電視配樂；1977 年 LP 早於 1979 年的同名東映電影，也與之無關。「電影原聲帶」易讓人誤會是某部電影的配樂，建議改成「以小說為題的想像原聲帶」。 | https://goodtasterecords.com/collections/lp-albums/products/mystery-kindaichi-band-the-adventures-of-kindaichi-kosuke-vinyl-lp |
+| ar-d-013 | The Piano Choir | Handscapes | 全碟錄於 1972 年 10 月 28 日 | 英文維基專輯條目寫錄音有兩場，1972 年 6 月 18 日與 10 月 28 日，皆在紐約 The Public Theater；Substack 專文也說現場錄音橫跨 1972 年 6 至 10 月。 | https://en.wikipedia.org/wiki/Handscapes |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
