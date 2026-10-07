@@ -378,3 +378,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Oscar Peterson Trio《Tristeza on Piano》班底為 Sam Jones 與 Bobby Durham（主線特注猜 NHØP，補洞層依維基與 MusicBrainz 推翻）。Old and New Dreams 卡池為 1977 年 Black Saint 版，與 1979 年 ECM 同名專輯分開。
 - Nara Leão 276 字（bossa nova 公寓、《Opinião》、提攜 Bethânia、Drummond 辯護），接受。
 - 待本機（上線簡介）：Nara Leão《Dez Anos Depois》「一度宣布退出歌壇」無出處；Original Dixieland Jazz Band《The 75th Anniversary》Victor 18255 發行月日（3 月／5 月）待核；Paolo Conte「CGD 二十年合作」無出處；Nucleus《We'll Talk About It Later》班底少列 Brian Smith、John Marshall，Jenkins 樂器待核；Mulgrew Miller《Grew's Tune》卡池 2012 為錄音年（2013 發行）。
+
+## ar-d-011（2026-10-07）
+
+- 37 位上架（33 full、4 thin：Richie Beirach、Rien Djamain、Riz Ortolani、Robby Krieger），2 位不寫：Roma Trio（國籍未證實、聲音格空）、Roland Haynes（facts 無國籍、聲音只有編制，寫作層勉強成稿但違反 thin 第一句國籍硬規則，主線撤下）。審稿修 1 處：Roy Porter Sound Machine 補中英空格。
+- 搜尋超限放行：Ray Brown Trio 12 次（含 5 次 MusicBrainz／Discogs API，依慣例不計，實計 7）。
+- 新近事實：Ralph Towner 2026 年 1 月在羅馬過世（KNKX、維基、ECM 三源）。
+- Rashied Ali 三卡分寫：補洞摘要把部分 Ali 事實排在搭檔名下，寫作層已歸回 Ali，三篇切入點不同。Philip Cohran 卡池 2013 疑為再版（原作 1967–68），正文不寫年份。
+- 待本機（上線簡介）：Paul Rutherford《The Gentle Harm of the Bourgeoisie》「史上第一張長號獨奏自由即興唱片」不實（Mangelsdorff 1972《Trombirds》更早），宜改「他個人名義的首張」；Rien Djamain《Api Asmara》年份（1975／1976）與 Rolling Stone Indonesia 名次待核；Pat Metheny Group 卡池 1977（實為 1978）；Ronnie Boykins 卡池 2002 疑為再版年。
