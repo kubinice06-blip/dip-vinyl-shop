@@ -86,6 +86,7 @@
 - `CLAUDE.md` 風險操作那節列的（`git reset` / `git revert` / `winget install`）仍要先問。
 - `REMOTE_RUNBOOK.md` 禁止雲端碰的（`seed_cards.json`／`apex_pool.json`／
   `PROJECT_MEMORY.md`／KV／Firestore）仍然不碰——那不是「我不敢決定」，是雲端沒有那個權限。
+  唯一例外是 Firestore `card_catalog`：店主點名的單張修正（換封面等）雲端可直接改，規則見 `REMOTE_RUNBOOK.md`（2026-10-07）。
 
 ### 容器會不定時重啟——代理要能續跑（2026-09-02 實測）
 

@@ -66,7 +66,16 @@
    first-release-date 與類型，把裁定理由寫進候選檔的 `versionNote`。
    本機逐張人工重查的成本最高，這步偷懶整批交接都會卡住。
 
-另：雲端**不動** seed_cards.json / apex_pool.json / PROJECT_MEMORY.md，不碰 KV 與 Firestore。
+另：雲端**不動** seed_cards.json / apex_pool.json / PROJECT_MEMORY.md，不碰 KV，Firestore 只可寫 `card_catalog`。
+
+**例外：Firestore `card_catalog`（2026-10-07 店主同意開放）。**
+這個集合本來就是「形狀驗證的公開寫入」（見 `firestore.rules`），用網頁端同一把公開 API key 即可寫，雲端連得到。
+店主點名的單張修正（換封面、改介紹等卡片欄位）雲端可以直接 PATCH：
+- **一律帶 `updateMask`**，只動要改的欄位，不整筆覆蓋；`updatedAt` 照現有慣例寫毫秒整數（`Date.now()`）。
+- 寫完**讀回比對**，欄位數不能變。
+- 換封面的照 ALBUM_ONBOARDING §4 的來源規則：Discogs 來源要登錄 `data/discogs-cover-registry.json`。
+- 整批上架照舊走本機（published gate、KV、seed_cards 都在本機）。
+- 其他集合（`settings`、`album_overrides`、`items` 等）仍要管理員登入，雲端沒有權限，也不設服務帳戶。
 
 ## 交接格式
 
