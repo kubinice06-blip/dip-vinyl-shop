@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 510 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 520 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -510,6 +510,16 @@
 | ar-d-015 | Эдди Рознер | Караван | 1933 年在波蘭組建仿美式編制的大樂團 | 定居與組團的年份有三種說法（英文維基 1933、ORT 專頁 1935 年底抵華沙、俄文維基波蘭時期 1934 至 1939 年），單寫 1933 年不夠穩，建議改成「納粹上台後到波蘭組建」不帶年份。 | https://holocaustmusic.ort.org/resistance-and-exile/eddie-rosner/ |
 | ar-d-015 | 中村ヨシミツ | 魂のギター | 他在 1979 至 1985 年間替山崎ハコ、高橋ていこ、石黒ケイ伴奏 | 三次搜尋（含山崎ハコ英文維基）與 Discogs 藝人頁都找不到這句的來源，也無法確認這位中村ヨシミツ就是那位伴奏吉他手；建議在 KV 簡介確認出處，沒有就刪。 | https://api.discogs.com/artists/4609269 |
 | ar-d-015 | 坂田明 | Pochi | 離開待了八年的三重奏 | 日文維基、jazz.com 皆寫 1972 至 1979 年，serai 訪談寫『7 年間』，約七年；『八年』是把 1972 到 1980 當成整年算，建議改『待了七年』或直接寫年份。 | https://serai.jp/?p=364762 |
+| ar-d-016 | 日野元彦クアルテット | TOKO: Motohiko Hino Quartet at Nemu Jazz Inn | 電吉他是當時才二十二歲的 渡辺香津美（錄音 1975 年 7 月） | MusicBrainz 記渡辺香津美生於 1953-10-14，1975 年 7 月 20 日錄音時應為 21 歲（同年 10 月才滿 22）；若簡介是以發行年算則不一致，建議改成「二十一歲」或「才二十出頭」。單源（MusicBrainz），店主改前建議再用日文維基渡辺香津美條目核一次。 | https://musicbrainz.org/artist/9a93b39f-d227-44d9-94df-965a0b52804a |
+| ar-d-016 | 白木秀雄クインテット＆スリー琴ガールズ | Sakura Sakura | 日本要到 1970 年才有代理盤，題名還換成了《Japan Meets Jazz》 | jazz.com 的白木條目把《Japan Meets Jazz》列為 1968 年作品，與簡介的 1970 年不符；可能是不同版本或不同年份，建議店主在本機核對日本盤實際年份後再決定是否改簡介（本層查不到該日本盤的第二來源）。 | https://jazz.com/encyclopedia/shiraki-hideo |
+| ar-d-016 | 秋吉敏子カルテット | Meditation | 1971 年原盤把曲子剪短了，1976 年再發才放回完整版；〈Straight No Chaser〉12 分半、〈What Now My Love〉12 分 16 秒 | microgroove 只說 1976 年版音質較佳且〈Straight No Chaser〉換了 take、鋼琴獨奏較長，沒有說原盤剪短；英文維基列的曲長是 11:55 與 10:16，與簡介數字不同（維基未說明列的是哪一版）。建議店主在本機對照實際盤面再決定是否改。 | https://microgroove.jp/2006/04/meditation_toshiko_akiyoshi_quartet/ |
+| ar-d-017 | 100 Proof (Aged in Soul) | Somebody's Been Sleeping in My Bed | Holland-Dozier-Holland 1969 年離開 Motown、在底特律另起 Hot Wax | 搜尋結果摘要複述英文維基寫 Holland-Dozier-Holland 是 1968 年離開 Motown（Hot Wax 1969 年成立後簽下此團）；我只開頁讀到『1969 年成立 Hot Wax』，離開 Motown 的年份未逐頁核對，建議店主複核後再決定是否改成『1968 年離開 Motown、1969 年另起 Hot Wax』。 | https://en.wikipedia.org/wiki/100_Proof_(Aged_in_Soul) |
+| ar-d-017 | Al Wilson | Show and Tell | 標題曲銷量突破兩百萬張 | 英文維基寫單曲賣得遠超過一百萬張（well over one million）、1973 年 12 月獲 RIAA 金唱片；我開頁讀到的來源都沒有兩百萬這個數字，建議店主複核出處，沒有就改為『破百萬』。 | https://en.wikipedia.org/wiki/Al_Wilson_(singer) |
+| ar-d-017 | Baby Washington | That's How Heartaches Are Made | 聽得出夜總會歌手底子帶來的咬字 | 查到的傳記（維基、WBGO、popdose、waybackattack）都沒有提到夜總會歌手背景，她的出身是 Hearts 等女子團體與 Neptune、Sue 廠牌；此句查無來源，建議刪除或改寫。 | https://waybackattack.com/washingtonbaby.html |
+| ar-d-017 | Baby Washington | That's How Heartaches Are Made | 中段還插進爵士曲〈Doodlin'〉 | 本層未找到曲目表來源能核對這一點，建議店主對照實物曲目表確認。 | https://en.wikipedia.org/wiki/Baby_Washington |
+| ar-d-017 | Barbara Mason | Yes, I'm Ready | 公認是費城之聲的前史起點 | 讀到的來源（WAMC／NPR）只說 Arctic Records 是日後 Philadelphia International 的前身基礎、Gamble 與 Huff 在此開始合寫，並沒有「公認」這個說法；此句偏重，建議改成有出處的版本。 | https://www.wamc.org/2013-06-10/arctic-records-drafting-a-blueprint-for-the-philly-sound |
+| ar-d-017 | Bassekou Kouyaté & Ngoni Ba | Segu Blue | 2006 年在德國 Out Here Records 錄下首張領銜作 | 來源只證實專輯 2007 年 3 月 26 日經 Out Here Records 國際發行，錄音在馬利 Bamako 的 Studio Bogolan；「2006 年」與「德國」兩點查無來源，建議改成 2007 年發行、Bamako 錄音。 | https://worldmusiccentral.org/?p=2818 |
+| ar-d-017 | Bassekou Kouyaté & Ngoni Ba | Segu Blue | 並收有一首悼念 Ali Farka Touré 的器樂曲 | 本層讀到的來源（WMC、Hot Press、維基）只寫他參與 Ali Farka Touré 遺作《Savane》，沒有提到《Segu Blue》收有悼念曲，建議店主對照曲目表或樂評確認。 | https://www.hotpress.com/music/bassekou-kouyate-to-play-dublin-4525115 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
