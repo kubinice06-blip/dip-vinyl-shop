@@ -244,3 +244,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - **Lamb 同名混卡**：卡池《Lamb》（1996）是曼徹斯特二人組，《Lamb III》（1976）是美國彌賽亞猶太教團體 Lamb。介紹只寫曼徹斯特二人組；待本機把《Lamb III》的藝人鍵拆開（例如 Lamb (US)），否則該卡會掛到錯的介紹。
 - Leo Smith 是 Wadada Leo Smith，卡池《Divine Love》標 electronic 疑誤。Loreena McKennitt 1998 年未婚夫船難：作品空白期的原因，列必要例外。
 - 待本機（上線簡介）：Loreena McKennitt《The Visit》「安大略出身」（生於曼尼托巴）；Michael Stearns《Encounter》「第一張太空主題」；Kerri Chandler《Atmosphere E.P.》「長年駐場 Zanzibar」；Kevin Drumm《Imperial Distortion》存檔年份與兩點未證。
+
+## ar-c-026（2026-10-07）
+
+- 38 位上架（30 full、8 thin），2 位不寫：Suzukiski（只有本名一條、無聲音事實）、B2K（聲音格查無）——皆過不了 thin 最低門檻。審稿 0 處修改。
+- QA 新增：「」內含假名的日文專名（芸能山城組前身「ハトの会」）不判簡體。
+- TOKiMONSTA 的 Moyamoya 病與康復、The KLF 燒掉百萬英鎊：作品與生涯核心，列必要例外。50 Cent 的槍擊與逮捕照特注未寫。
+- 待本機（上線簡介）：日向敏文《Sarah's Crime》「雙城分校」（應為 Duluth 或只寫明尼蘇達大學）；阿爆《vavayan. 女人》2003 年「最佳重唱組合」查無（第 14 屆得主是 S.H.E）、第 28 屆最佳專輯製作人獎主詞是荒井十一；The Irresistible Force 2 條；Wagon Christ《Throbbing Pouch》年份。
