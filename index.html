@@ -3687,7 +3687,7 @@
       });
       daHandoffTo('#quizContent');
       const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
-      let desc = (assets.ov?.desc || '').trim();
+      let desc = (await shopDescOf(card.artist, card.album)) || (assets.ov?.desc || '').trim();
       for (let attempt = 0; attempt < 2 && !desc; attempt++) {
         try {
           const res = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
@@ -4121,7 +4121,7 @@ ${seenList}
     if (_albumIntroCache.has(key)) return _albumIntroCache.get(key);
     let desc = '';
     const ov = await getAlbumOverride(cardIdOf(artist, album));
-    desc = (ov?.desc || '').trim() || (neoclassicOf({ artist, album })?.desc || '').trim();
+    desc = (await shopDescOf(artist, album)) || (ov?.desc || '').trim() || (neoclassicOf({ artist, album })?.desc || '').trim();
     // /album-desc 偶爾回空（KV 剛好在生成中），與 fillGpDesc 一樣重試一次
     for (let attempt = 0; attempt < 2 && !desc; attempt++) {
       try {
@@ -4566,7 +4566,7 @@ ${seenList}
                 <span class="history-item-toggle">▾</span>
               </div>
               <div class="history-item-detail">
-                ${r.reason ? `<div class="history-item-reason">${r.reason}</div>` : ''}
+                ${r.reason || SHOP_MODE ? `<div class="history-item-reason"${SHOP_MODE ? ` data-shop-key="${escapeCollectionHtml(shopKeyOf(r.artist, r.album))}"` : ''}>${r.reason || ''}</div>` : ''}
                 ${historyMusicLinks(r.artist, r.album)}
                 <button class="quiz-collect-btn" style="margin-top:12px;" data-history-collect data-artist="${(r.artist || '').replace(/"/g, '&quot;')}" data-album="${(r.album || '').replace(/"/g, '&quot;')}">＋ 收進唱片櫃</button>
               </div>
@@ -4583,6 +4583,14 @@ ${seenList}
       row.addEventListener('click', () => row.closest('.history-item').classList.toggle('expanded'));
     });
     containerEl.appendChild(section);
+    // 店內挖寶：紀錄裡存的是當時的介紹（可能是卡池版），顯示時一律換成門市版
+    if (SHOP_MODE) loadShopDescs().then(map => {
+      section.querySelectorAll('.history-item-reason[data-shop-key]').forEach(el => {
+        const t = map.get(el.dataset.shopKey);
+        if (t) el.textContent = t;
+        else if (!el.textContent.trim()) el.remove();
+      });
+    }).catch(() => {});
   }
 
   // ⚠ 2026-08-16 起這份手寫名單只是「卡池還沒載入時」的冷啟動備援與八類的 label 來源。
@@ -4817,6 +4825,27 @@ ${seenList}
     if (it.condition) bits.push(`品相 ${it.condition}`);
     if (it.pressingYear) bits.push(`${it.pressingYear} 年壓片`);
     return `<div class="shop-result-line">${bits.join('・')}</div>`;
+  }
+  // 店內挖寶的介紹一律用門市版（給完全不懂音樂的客人看；data/shop/descs.json，
+  // 後台改過的存 Firestore settings/shopDescs.byKey，優先），門市版沒有才退回卡池版。
+  let _shopDescPromise = null;
+  function loadShopDescs() {
+    if (!_shopDescPromise) _shopDescPromise = (async () => {
+      const map = new Map();
+      const d = await fetch('data/shop/descs.json').then(r => r.ok ? r.json() : null).catch(() => null);
+      for (const it of d?.items || []) if (it.key && it.text) map.set(it.key, it.text);
+      try {
+        const snap = await getDoc(doc(db, 'settings', 'shopDescs'));
+        const by = snap.exists() ? (snap.data().byKey || {}) : {};
+        for (const [k, v] of Object.entries(by)) if (v && v.text) map.set(k, v.text);
+      } catch (e) {}
+      return map;
+    })();
+    return _shopDescPromise;
+  }
+  async function shopDescOf(artist, album) {
+    if (!SHOP_MODE) return '';
+    try { return (await loadShopDescs()).get(shopKeyOf(artist, album)) || ''; } catch (e) { return ''; }
   }
 
   // ── IG reel 也當正式卡看待：封面／三軸／試聽全走現成資料 ────────────────
@@ -5375,7 +5404,7 @@ ${seenList}
   // 後台校正 > 殿堂神作人工簡介 > 店家/IG 自寫介紹 > /album-desc（KV 預生成、與卡片詳情同一套）
   async function fillGpDesc(card, ov, presetDesc = '') {
     const el = document.querySelector('#' + gpResultHost + ' .quiz-result-reason');
-    let desc = (ov?.desc || '').trim() || (neoclassicOf(card)?.desc || '') || (presetDesc || '').trim();
+    let desc = (await shopDescOf(card.artist, card.album)) || (ov?.desc || '').trim() || (neoclassicOf(card)?.desc || '') || (presetDesc || '').trim();
     for (let attempt = 0; attempt < 2 && !desc; attempt++) {
       try {
         const res = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
