@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 554 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 562 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -554,6 +554,14 @@
 | ar-d-022 | Spencer Wiggins | The Goldwax Years | 1964 年被 Goldwax 廠主 Quinton Claunch 發掘後只出過單曲、從未有正規專輯 | 維基記他 2003 年由 Tavette Records 發行福音專輯《Keys to the Kingdom》，1977 年日本 Vivid 也出過收他 Goldwax 錄音的彙編專輯；「從未有正規專輯」過於絕對，限定在 Goldwax 時期較準。 | https://en.wikipedia.org/wiki/Spencer_Wiggins |
 | ar-d-023 | The Chantels | We Are the Chantels | 2019 年入選搖滾名人堂單曲類 | The Chantels 至今未入選搖滾名人堂（2001、2009 年進最終名單未獲通過）；2019 年的榮譽是布朗克斯一個街角以團命名。 | https://amsterdamnews.com/news/2026/08/06/from-the-bronx-to-the-world-legendary-singer-arlene-smith-of-the-chantels-passes-at-84/ |
 | ar-d-023 | The Dells | There Is | 〈Stay in My Corner〉重錄成六分十四秒的慢板長篇 | VGHOF 寫單曲版為六分十秒；六分十四秒若是專輯版長度，簡介應註明版本，否則與單曲長度矛盾（小疑點，不確定）。 | https://vocalgroup.org/?p=709 |
+| ar-d-023 | The Highway QC's | Oh Lord I Pray | Sam Cooke 十四歲進團、1950 年離開 | 離團年與 Journal of Gospel Music 歷史文章吻合；但該文寫 Cooke 1947 年進團（當時約 16 歲），與『十四歲』（事實庫引 Guralnick）不合，進團年齡兩說並存，建議改寫成『少年時期進團』。 | https://journalofgospelmusic.com/quartet/rise-chicagos-highway-q-c-s-gospels-golden-era-1947-1964/ |
+| ar-d-023 | The Masqueraders | Everybody Wanna Live On | Hayes 一人兼製作、編曲、鍵盤與重混工程 | Soul Source 的團史文章寫這張專輯的管絃編曲出自 Lester Snell，與『編曲由 Hayes 一人包辦』不合；建議核對 Discogs 製作名單後再決定是否改成『製作與重混』。 | https://www.soul-source.co.uk/articles/soul-articles/hof-the-masqueraders-male-group-inductee-r3077/ |
+| ar-d-023 | The Mohawks | The Champ | 被超過八百首歌取樣或模仿 | Electronic Sound 引 WhoSampled 的統計是 663 次後續使用，Hawkshaw 訃聞只說數百首；上線簡介的『八百首』找不到來源支持，建議改成『數百首』。 | https://www.electronicsound.co.uk/?p=8909 |
+| ar-d-023 | The Pilgrim Travelers | Look Up! | 團 1936 年成軍於休士頓，1942 年才遷洛杉磯 | 遷居洛杉磯的年份兩源不一致：維基寫 1942，Crossrhythms 寫 1947；建議改為不寫遷居年或標明說法不一 | https://www.crossrhythms.co.uk/articles/music/The_Pilgrim_Travelers_The_pioneering_quartet_dubbed_gospels_first_showmen_/46379/p1 |
+| ar-d-023 | The Rance Allen Group | A Soulful Experience | 整張把搖滾與靈魂樂手法嫁接到黑人福音的做法，比 Andrae Crouch、The Winans 的跨界成功早了好些年 | 這句只有維基一句 prefigured 為據，Andrae Crouch 在 1960 年代末至 1970 年代初也已有跨界作品，「早了好些年」缺獨立來源，建議降級措辭或刪除 | https://en.wikipedia.org/wiki/The_Rance_Allen_Group |
+| ar-d-023 | The Sunset Travelers | On Jesus' Program | 1956 年他還在唸高中就進團 | 加入年份兩源不一致：維基與 Journal of Gospel Music 的一段寫 1956，同文另一段與經理 Blake 招人的敘述寫 1957 年初；建議改為「還在唸高中時」 | https://journalofgospelmusic.com/gospel/on-jesus-program-the-gospel-soul-of-o-v-wright/ |
+| ar-d-023 | The Three Degrees | The Three Degrees | 1965 年成軍、輾轉多家廠牌 | 維基與 Qobuz 小傳都寫成軍於 1963 年前後（維基單頁寫創始成員回憶「約 63 年、高中最後一年」）；1965 年是首張單曲〈Gee Baby (I'm Sorry)〉在 Swan Records 發行的年份，簡介把出片年當成軍年。 | https://www.qobuz.com/ca-en/interpreter/the-three-degrees/93162 |
+| ar-d-023 | The Trammps | Disco Inferno | 1977 年收入電影《Saturday Night Fever》原聲帶後重發，攻上 Hot 100 第 11 名 | 原聲帶是 1977 年，單曲重發與登上 Hot 100 第 11 名是 1978 年（維基寫 re-released in 1978，peaking at number 11）；簡介的語序容易讓人讀成 1977 年登上 Hot 100。 | https://en.wikipedia.org/wiki/The_Trammps |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

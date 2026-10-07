@@ -489,3 +489,19 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 同名作廢：Ripple（電子學）、Roger（人名）、Silk（蠶絲）、Spirit of Love（Con Funk Shun 專輯）的維基預抓。
 - 新近事實：Ruby Andrews 2026 年 8 月過世（維基＋entertainmentnow），正文只寫年份。
 - 待本機（上線簡介）：Sandra Phillips「名下唯一一張專輯」不成立、「1970 年由 Canyon 發行」應註明當年未流通；Sam Dees「個人專輯一停十四年」與維基衝突；Sharon Redd〈Never Give You Up〉英國第 20 名與「全張輪番舞曲榜冠軍」無出處；Skull Snaps「Stezo 率先取樣」（Dooley-O 更早，宜改「最早發行」）；Spencer Wiggins「從未有正規專輯」（2003 年有福音專輯）；Ripple「十人編制」無出處。
+
+## ar-d-023（2026-10-07）
+
+- 37 位上架（34 full、3 thin：The Crowns of Glory、The Natural Four、The Undisputed Truth），3 位不寫：The Morning Stars of Savannah, Georgia（聲音與地位格查無，身分也只見團名與電台節目標題）；The Politicians（聲音句只有領隊寫過的曲名，且無證據收在卡池那張）；The Sensational Williams Brothers（聲音只有「傳統黑人福音」類型歸屬；比照 d-022 Soul for Real）。
+- 審稿修 11 處：最高級、序數刪改——The Chantels「率先打進主流之一」改「早期」、The Crystals「最好的成果之一」、The Edwin Hawkins Singers「最早在流行榜成功的聖詩之一」、The Five Blind Boys of Mississippi「最早進 R&B 榜的福音唱片之一」、The Moments「最甜的抒情團之一」、The Rance Allen Group「Stax 福音廠牌最早簽下」與「預示 Crouch、Winans 跨界」（維基單源）、The Roberta Martin Singers「芝加哥最大葬禮之一」、Southwest Michigan State Choir 的 Clark Sisters「最具影響力之一」、The Swan Silvertones「首屈一指」；The Manhattans「病逝」改「過世」。
+- 保留：The Dells 與 The Supremes 的搖滾名人堂官方評語（權威機構可具名）；The Dixie Hummingbirds 278 字（NEA 傳統藝術最高榮譽、葛萊美、Stevie Wonder 評語為份量主體，已故者為主）。
+- 搜尋超限放行：The Supremes & The Four Tops 9（雙團卡，多出一次為 Ross 離團與合錄的第二源）。
+- 新近事實：Arlene Smith（The Chantels）2026 年過世（WTOP 美聯社稿＋維基），只寫年份。
+- 重疊處理：The Moments、The Last Poets、The J.B.'s Reunion、Todd Terje 分別避開 d-021 Ray, Goodman & Brown、d-020 Lightnin' Rod、d-019 Fred Wesley 三卡、d-020 Lindstrøm & Prins Thomas 已用過的句子與角度。
+- 同名作廢：The Masqueraders（1928 年小說）、The Moments（菲律賓談話節目）、The Politicians（紐西蘭同名團）的維基預抓。
+- 待本機（上線簡介）：The Chantels「2019 年入選搖滾名人堂單曲類」不成立（只進過最終名單，2019 年是布朗克斯街角命名）；The Highway QC's Sam Cooke「十四歲進團」與 1947 年進團說法不合；The Masqueraders「Hayes 一人兼編曲」（另有 Lester Snell）；The Mohawks〈The Champ〉「超過八百首取樣」無出處（宜改「數百首」）；The Pilgrim Travelers 遷居洛杉磯 1942／1947；The Rance Allen Group「比 Crouch、Winans 早了好些年」僅維基；The Sunset Travelers O.V. Wright 入團 1956／1957；The Three Degrees「1965 年成軍」（實約 1963，1965 為首張單曲）；The Trammps〈Disco Inferno〉第 11 名為 1978 年。
+
+## 第三輪十批接力收尾（ar-d-014～023）
+
+- 合計 388 位上架（320 full、68 thin），12 位不寫：Yoshimi Ueno Bestrio、初山博、和田直、和田直カルテット、リー・ウォンヒーイ＋菊他コージ、Black Heat、Garland Green、Mighty Ryeders、Soul for Real、The Morning Stars of Savannah, Georgia、The Politicians、The Sensational Williams Brothers。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」清單的上線簡介勘誤（改 KV）。
