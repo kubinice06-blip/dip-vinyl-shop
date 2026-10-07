@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 441 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 449 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -439,7 +439,15 @@
 | ar-d-002 | Billy Parker's Fourth World | Freedom of Speech | 兩家是兄妹自己的 Bridgewater Publishing 與樂團的 Fourth World Publishing | Dee Dee Bridgewater 是 Cecil Bridgewater 的妻子（1970 年代婚姻，後來離婚），不是他與 Ron 的姊妹；Cecil 與 Ron 才是兄弟。簡介的「兄妹」與「Bridgewater 家的三個人」要改成「Bridgewater 夫婦與 Cecil 的弟弟 Ron」之類的寫法。 | https://en.wikipedia.org/wiki/Cecil_Bridgewater |
 | ar-d-002 | Billy Parker's Fourth World | Freedom of Speech | 兩家是兄妹自己的 Bridgewater Publishing | Dee Dee Bridgewater 條目寫她與 Cecil Bridgewater 結婚、後來離婚，並非兄妹關係。 | https://en.wikipedia.org/wiki/Dee_Dee_Bridgewater |
 | ar-d-002 | Black Renaissance | Body, Mind and Spirit | 錄音是 1976 年 6 月 15 日在紐約的 Sound Ideas 完成的 | Aquarium Drunkard 與 Village Voice 兩源皆寫錄音日為 1976 年 1 月 15 日（馬丁路德金恩 47 歲冥誕），地點同為 Sound Ideas；6 月 15 日與兩源不符，建議改為 1 月 15 日。 | https://aquariumdrunkard.com/2024/07/03/on-harry-whitakers-black-renaissance/ |
+| ar-d-003 | Bunk Johnson | Bunk Johnson and His Superior Jazz Band | 1931 年他在路易斯安那州 Rayne 的舞會上因為打架掉了小號與門牙 | 維基寫 1931 年、丟了小號與門牙；Syncopated Times 寫 1930 年 11 月的舞會鬥毆、他掉牙並弄壞樂器，同團小號手 Evan Thomas 當場遇害。年份與樂器是遺失或損壞兩說並存，建議年份改『1930 或 1931 年』或略去，樂器寫『小號出事』 | https://syncopatedtimes.com/bunk-johnson-out-of-the-shadows/ |
+| ar-d-003 | Bunny Berigan | The Pied Piper 1934-1940 | Berigan 1942 年因肝硬化死於三十三歲，錄音幾乎全部集中在這六年 | 維基與 Sherman Jazz Museum 都寫他 1930 至 1931 年起就是紐約搶手的錄音室樂手，在數百張商業唱片中擔任伴奏；他最早的錄音獨奏更在 1930 年的 Hal Kemp 樂團。『錄音集中在 1934 至 1940 這六年』不成立，建議改成『領銜錄音集中在 1930 年代後半』或略去 | https://en.wikipedia.org/wiki/Bunny_Berigan |
+| ar-d-003 | Cab Calloway | The Early Years 1930-1934 | 〈Minnie the Moocher〉…成為第一張賣破百萬的爵士唱片 | 國會圖書館與 Britannica 只寫這張唱片賣破百萬張，沒有『第一張』的說法；維基的『第一』指的是 Calloway 是第一位賣破百萬張唱片的非裔美國音樂人，主體不同。『第一張賣破百萬的爵士唱片』查不到來源，建議改成『賣破百萬張』 | https://en.wikipedia.org/wiki/Cab_Calloway |
+| ar-d-003 | Carmell Jones | The Remarkable Carmell Jones | 貝斯是 Gary Peacock——十年後他會是 Keith Jarrett 三重奏的一半 | 維基 Gary Peacock 條目載他 1977 年才首次與 Keith Jarrett 錄音（《Tales of Another》，與 Jack DeJohnette），這組三重奏 1983 年才以《Standards, Vol. 1》推出標準曲系列；從 1961 年算起是十六年與二十二年，不是十年。建議改成『十六年後他會是 Keith Jarrett 三重奏的一半』或略去年數 | https://en.wikipedia.org/wiki/Gary_Peacock |
 | ar-d-003 | Cassandra Wilson | New Moon Daughter | 1996 年出版，爵士榜以 NEW 直接進第 1 | 英文維基新專輯條目寫 1995 年由 Blue Note 發行（Billboard Top Jazz Albums 第 1 是 1996 年的事）；EWN 的葛萊美敘述亦稱「1995 年專輯」。上線簡介的「1996 年出版」可能是上榜年，建議複核實際發行日。 | https://en.wikipedia.org/wiki/New_Moon_Daughter |
+| ar-d-003 | Charles Brackeen | Rhythm X | 他 1940 年生於奧克拉荷馬州 Eufaula | 出生年有 1938（WMBR）與 1940（維基、MusicBrainz）兩說，出生地維基寫 Eufaula、wikidata 寫 Oklahoma City；高風險生年單靠維基家族，建議複核或改寫成「生於奧克拉荷馬州」。 | https://wmbr.mit.edu/cgi-bin/events?e=12526 |
+| ar-d-003 | Chester Thompson | Powerhouse | 「這張 1971 年 12 月由 Black Jazz 發行的首作是四人編制加一支長號」 | Discogs 的人員欄只有四位演奏者：風琴 Chester Thompson、鼓 Raymond Pounds、薩克斯風 Rudolph Johnson、長號 Al Hall；長號手就在四人之內，不是四人之外再加一支。建議改成「風琴、鼓、薩克斯風與長號的四人編制」。 | https://www.discogs.com/release/1186448 |
+| ar-d-003 | Chet Baker & Art Pepper | Playboys | 「領著一支六重奏進棚，另加一支次中音與三人節奏組」 | 維基列的人員是 Chet Baker、Art Pepper、次中音 Phil Urso、鋼琴 Carl Perkins、貝斯 Curtis Counce、鼓 Larance Marable，共六人，次中音與三人節奏組已含在內；原句讀起來像六人再加四人。建議改成「六人編制，兩支管樂之外還有次中音與三人節奏組」。 | https://en.wikipedia.org/wiki/Playboys_(Chet_Baker_and_Art_Pepper_album) |
+| ar-d-003 | Chet Baker Quartet | Singin' in the Midnight | 「三天的荷蘭錄音……其餘曲目，荷蘭 Timeless 遲至 1989、1990 年才分兩張出版」 | 維基《As Time Goes By》（同一四重奏 Baker／Danko／Burr／Riley）寫 1986 年 12 月 17 至 18 日在荷蘭 Monster 的 Studio 44 錄音（兩天）、1987 年由 Timeless 發行雙 LP（SJP 251/252）。與上線簡介的「三天」及「1989、1990 年」不一致；是否同一批錄音待核對 Discogs 的 Polydor 與 Timeless 版本。 | https://en.wikipedia.org/wiki/As_Time_Goes_By_(Chet_Baker_album) |
 | ar-d-003 | Chick Webb | Spinnin' the Webb: The Original Decca Recordings | Webb 1939 年病逝，得年三十四 | Webb 出生年份有爭議：維基與 jazz.com、PAS 採 1905（得年 34）；當年 DownBeat 與墓碑寫 1909（得年 30），紐約時報寫 1907。『得年三十四』只在 1905 說成立，建議改寫成只寫病逝年份，或加『據多數資料』。 | https://en.wikipedia.org/wiki/Chick_Webb |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
