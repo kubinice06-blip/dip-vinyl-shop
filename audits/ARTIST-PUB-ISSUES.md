@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 469 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 471 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -469,6 +469,8 @@
 | ar-d-005 | George Coleman | Amsterdam After Dark | 標題曲是 Coleman 獻給阿姆斯特丹的小調主題，日後成為他的保留曲目 | 英文維基專輯條目明說該條沒有關於標題曲的創作背景或靈感；錄音地點是紐約而不是阿姆斯特丹。「小調」「獻給阿姆斯特丹」「保留曲目」三項均查無來源，建議刪除或改寫為可查證的版本。 | https://en.wikipedia.org/wiki/Amsterdam_After_Dark |
 | ar-d-005 | George Coleman | Amsterdam After Dark | 他以領袖身分最廣被引述的錄音多半從這張數起 | 查無任何來源支持這個說法（維基只記 AllMusic 與 Rolling Stone Jazz Record Guide 各給四星）；屬無出處的評價句，建議刪除。 | https://en.wikipedia.org/wiki/Amsterdam_After_Dark |
 | ar-d-005 | Getatchew Mekuria | Éthiopiques 14: Negus of Ethiopian Sax | 五〇年代初在未接觸西方自由爵士的情況下自行長出近似的吹法 | 來源只說他獨立於西方自由爵士之外發展、不熟悉 Ornette Coleman 與 Albert Ayler，沒有「五〇年代初」這個時間點；他 1955 年才轉進 Haile Selassie I 劇院樂團，shellela 薩克斯風獨奏的成形時間未見來源。建議刪去「五〇年代初」。 | https://en.wikipedia.org/wiki/Getatchew_Mekurya |
+| ar-d-006 | Glenn Miller | The Complete Glenn Miller 1938-1942 | 〈In the Mood〉2002 年入選美國國家錄音資料登記 | 維基 In the Mood 條目寫 1983 年入選葛萊美名人堂、2004 年入選國家錄音資料登記；搜尋結果摘要也寫 2004。本層只讀到維基一個來源（loc.gov 清單 403），建議店主在 loc.gov 核對後再改。 | https://en.wikipedia.org/wiki/In_the_Mood |
+| ar-d-006 | Hiromi | Another Mind | 翌年拿下日本金唱片大獎的年度海外爵士專輯 | imidas 與 renote 兩源只寫日本金唱片大獎的『Jazz Album of the Year』（年間ジャズアルバム大賞），沒有『海外』的限定語；頒獎年份兩源也不一致（2003 或 2004）。『海外』二字與『翌年』建議店主確認或刪去。 | https://renote.net/articles/329258 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

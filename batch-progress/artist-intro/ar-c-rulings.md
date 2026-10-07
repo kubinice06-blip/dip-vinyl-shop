@@ -329,3 +329,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超限放行：Don Byas 9 次（多出的是 MusicBrainz 查專輯身分，API 查詢依慣例不計）；Duke Ellington & John Coltrane 9 次（佐證查詢無獨有事實，比照齊豫）。
 - Company：《Company 1》四位演奏者只見英文維基一源，但與上線簡介一致、屬低風險，接受寫入。Dexter Gordon Quartet《The Shadow of Your Smile》為 1971 年斯德哥爾摩錄音（jazzdisco 單源，與上線簡介不衝突），卡池 1985 為發行年。
 - 待本機（上線簡介）：Curtis Amy & Dupree Bolton《Katanga!》「一生只留下兩張唱片」宜改「主要唱片只有兩張」；Dakota Staton「出道即大賣」時序不符（1954 已發單曲）；David Mancuso 漏共同製作人 Colleen "Cosmo" Murphy；Dodo Marmarosa《Dodo's Back!》芝加哥拋錨／Feather 引語無出處、「幾近銷聲匿跡」不實；Debashish & Brozman「第一份滑棒吉他教程」與榜單單源；Dick Griffin Konnex CD 年份（1994／1995）；Doris Day《Day by Day》兩處說法無來源。
+
+## ar-d-005（2026-10-07）
+
+- 40 位全上（33 full、7 thin：Ensemble Muntu、Estelle Perrault、Fred Jackson、Fumio Itabashi Trio、Fumio Watanabe Quintet、Galaxy 2 Galaxy、Georges Arvanitas）。審稿修 3 處：François de Roubaix 刪潛水過世經過（死因避免）；Elton Dean Quartet 首句補主詞為四重奏掛名；Ernie Henry 的 Monk 英文原話改中文。
+- 雙人卡放寬額度 4 篇（Elis & Jobim 277、Ella & Basie 271、Elvin Jones & Richard Davis 268、Parker & Lytton 263）：兩人各需身世、聲音、地位，接受。Gigi Gryce 267（退出爵士、改名任教的人物故事），比照 Jutta Hipp。
+- Estelle Perrault（張婷雅）：台法混血爵士歌手，2025 年作品，生平以中央社兩篇報導為兩源；地位偏薄落 thin。
+- Esbjörn Svensson Trio 的 DownBeat 封面宣稱：具名會撞「樂評媒體名不進正文」、不具名又含糊，整條不寫。
+- Fumio Watanabe Quintet：英文維基預抓為同名演員渡辺文雄，作廢；鼓手渡辺文男身分以日文維基與班底對上，生卒年單源不寫。
+- 待本機（上線簡介）：Eliades Ochoa 接掌 Cuarteto Patria 年份（1978→1982）與葛萊美類別；Elton Dean Quartet Ogun 編號（OG 410／OG400）；Fats Sadi 發行年（1954／1955）；Fred Jackson「一生只留下這一張領銜錄音」不實；Frank Loesser 東尼獎項數待核；George Coleman《Amsterdam After Dark》為紐約錄音，標題曲與「最廣被引述」兩句無出處；Getatchew Mekuria「五〇年代初」時間點無出處；George Shearing「原始三軌母帶」待核。
