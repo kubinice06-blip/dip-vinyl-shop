@@ -402,3 +402,106 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分更正：The Oscar Peterson Trio With Herb Ellis《Hello Herbie》班底為 Sam Jones、Bobby Durham（非 Ray Brown／Ed Thigpen）；The Mystery Kindaichi Band 是以橫溝正史小說為本的想像原聲帶，與 1979 年同名電影無關；THE SQUARE 維基預抓為幾何條目，作廢。
 - 待本機（上線簡介）：The Golden Gate Quartet 首次 Bluebird 錄音日（8/4 或 8/14）、「首組在憲法廳獻唱」無出處、轉入 OKeh 年份；The Greyboy Allstars「Fred Wesley 全程參與、共同掛名」不實（特別來賓）；The Modest Jazz Trio「兩位低音手」不實（Red Mitchell 彈鋼琴）；The Muddy Basin Ramblers 成立年應為 2002；The Mystery Kindaichi Band「虛構的電影原聲帶」宜改「想像原聲帶」；The Piano Choir《Handscapes》為兩場錄音；Syrius「Charlie Fischer」拼法待核；Tenório Jr 上線簡介含遺體、槍傷與下葬細節，建議刪減。
 - **再十批接力完成**（ar-d-004～013）。
+
+## 第三輪十批接力（ar-d-014～023，2026-10-07 起）
+
+## ar-d-014（2026-10-07）
+
+- 39 位上架（36 full、3 thin：Tõnu Naissoo Trio、Tosca、Yoshino Yanagihara），1 位不寫：Yoshimi Ueno Bestrio（三格查無，只有私壓盤一條；同名鼓手無來源可連結）。審稿修 2 處：Waters 刪「Blue Note 簽下的第一個人聲團體」（序數宣稱，研究層未逐一排除反例）；Tuts Washington 刪辭世場合。
+- 搜尋超限放行：Tõnu Naissoo Trio 9 次（官網確認獎項，地位格唯一外部評價）；Toshinori Kondo / DJ Krush 9 次（雙人卡，查合作緣由）；Vi Redd 10 次（兩次皆為高風險事實補第二源：錄音陣容衝突、逝世年）。
+- 身分：Tosca 是奧地利 downtempo 二人組（維基預抓的普契尼歌劇作廢）；Waters 是洛杉磯家族人聲團（非 Muddy／Roger Waters）。Yussef Dayes 三卡（本名、Yussef Kamaal、Tom Misch & Yussef Dayes）生平措辭分開。
+- Tom Misch & Yussef Dayes 英國專輯榜第 4 名列必要例外（在世者核心成績）。
+- 待本機（上線簡介）：Tony Oxley《February Papers》Ronnie Scott's 駐店年（1966／1967）宜改「1960 年代中期」；Tony Oxley Quintet《The Baptised Traveller》編制漏 Evan Parker、「四個曲名」與曲目表三軌不符；Tosca《Opera》〈Chocolate Elvis〉年份（1994／1995）；Vi Redd《Bird Call》發行年應為 1962；Yves Montand《À l'Étoile》「十年前在這座劇院把政治唱進主流舞台」無出處。
+
+## ar-d-015（2026-10-07）
+
+- 36 位上架（24 full、12 thin），4 位不寫：初山博（只有一條合錄紀錄）、和田直 與 和田直カルテット（聲音格查無）、リー・ウォンヒーイ＋菊他コージ（兩人皆無國籍與聲音素材）。本批為俄文與日文冷門名冊，thin 比例最高。審稿修 5 處：Вагиф Мустафазаде、Георгий Гаранян 刪辭世場合（演出中倒下、巡演途中）；上野好美 兩處代名詞「他」改寫名字（性別無來源）；今田勝カルテット 刪單源的 2026 年致敬專輯。
+- 俄文名冊：正文第一次提到寫原文加拉丁轉寫，國籍寫今天的國家；QA 非拉丁字元檢查只放行本卡名與卡池專輯名，其他俄國樂手一律拉丁轉寫。
+- 國籍推斷：上野好美、中村ヨシミツ、チコ本田 facts 未明寫國籍，以漢字名、日本廠牌與共演者推定為日本，接受（可逆）。
+- 搜尋超限放行：チコ本田 11 次、つのだひろと体力バンド 9 次（多出的皆為無關頁，無獨有事實，比照齊豫）。
+- Эдди Рознер 280 字（古拉格勞改與營區巡演是故事主體），接受。
+- 待本機（上線簡介）：Вагиф Мустафазаде「jazz mugham 的開創者」宜改「奠基者之一」；Эдди Рознер「1933 年在波蘭組建大樂團」年份三源不一；中村ヨシミツ「替山崎ハコ等伴奏」查無出處；坂田明《Pochi》「待了八年」應約七年（1972–1979）。
+
+## ar-d-016（2026-10-07）
+
+- 40 位全上（28 full、12 thin）。審稿修 3 處：板倉克行トリオ 刪與本名卡重複的合作與 Club Ornette 句，改補內頁執筆者與廠牌回顧輯（原稿刪後低於 full 下限）；浅川マキ 刪辭世場合（巡演途中）；另順手更正 d-006 已上線的 Hidehiko Matsumoto：1963 年是蒙特利爵士節（蒙特勒 1967 年才創辦）。
+- 搜尋超限放行：明田川荘之トリオ 11、本田竹曠 11、松岡直也 10、板倉克行 11（含 MusicBrainz／Discogs API，依慣例不計，且多出者無獨有事實）；森山威男 11、植松孝夫 9（找第二源未果，無獨有事實）；王若琳 10（金曲獎第二源）；白虹 10（找 1934 奪冠第二源未果），皆比照齊豫。
+- 新近事實：大野雄二 2026 年 5 月過世（日文維基、熊日、Daily 三源）；石橋英子 2025《Antigone》與 2022 配樂獎（兩源）。
+- 身分與國籍：板倉克行 生於日治時期的台灣（Wikidata 誤記 China）；森山浩二 + 山本剛トリオ 的《Smile》是歌手森山浩二專輯，非森山威男《スマイル》；王若琳 是台灣歌手；白虹 寫「中國歌手」，1934 奪冠只寫「據維基」。宮本直介、寺川秀保、小栗均 國籍以東京錄音與日本廠牌推定（可逆）。
+- QA 簡體偵測會誤判日本新字體（国、与），研究稿與正文改寫為台灣字形。
+- 待本機（上線簡介）：日野元彦クアルテット《TOKO》渡辺香津美「二十二歲」應為 21 歲（MusicBrainz 單源，待核）；白木秀雄《Sakura Sakura》「1970 年才有日本盤《Japan Meets Jazz》」與 jazz.com 1968 不符；秋吉敏子カルテット《Meditation》「原盤剪短、1976 再發完整版」無出處；福村博《Morning Flight》卡池 1973 與 LITA 1971 不一；秋吉敏子《Top Of The Gate》發行年（1968／1969）。
+
+## ar-d-017（2026-10-07）
+
+- 40 位全上（28 full、12 thin）。前 10 位日本爵士、後 30 位轉入 soul／R&B／流行。審稿修 1 處：Arthur Conley 刪 Otis Redding 的死因（墜機）。
+- 搜尋超限放行：金井英人クインテット 10、鈴木勲セクステット 10（多出者文不對題、無獨有事實）；高木元輝＝加古隆カルテット 15、高柳昌行 / 阿部薫 10（雙人卡，兩人各自在上限內）。
+- 新近事實：鈴木良雄 2026 年 9 月過世（共同通信訃報＋日文維基），正文用過去式、不寫死因。
+- Arthur Conley 279 字：改名 Lee Roberts 與移居荷蘭是故事主體；同志身分歸給 Ed Ward 的說法、口吻克制，接受。
+- 在世者榜單獎項各留一處核心成績（Barbara Mason 流行榜第 5、Barbara Lewis R&B 冠軍、Barry Manilow 詞曲作者名人堂、BeBe & CeCe Winans 卡池專輯葛萊美、Bassekou Kouyaté BBC 年度專輯、?te 金曲最佳新人）。
+- 同名作廢：A Taste of Honey（Shelagh Delaney 劇本）、Alice Clark（英國歷史學家）的維基預抓。
+- 待本機（上線簡介）：100 Proof「HDH 1969 年離開 Motown」（1968 說待核）；Al Wilson《Show and Tell》「突破兩百萬張」來源只寫破百萬；Bassekou Kouyaté《Segu Blue》「2006 年在德國 Out Here 錄下」無出處（實為 Bamako 錄音、2007 發行）；Barbara Mason「公認是費城之聲前史起點」無出處；Baby Washington「夜總會歌手底子」無出處，〈Doodlin'〉待核；Archie Bell「Rolling Stone 五百大第 265 名」僅維基單源。
+
+## ar-d-018（2026-10-07）
+
+- 39 位上（36 full、3 thin：Black Merda、Carl Thomas、Charles May & Annette May Thomas），略 1 位：Black Heat（國籍、出身城市查無，過不了 thin 門檻）。全批轉入 soul／R&B／放克／巴西。
+- 審稿修 9 處：Bernie Worrell 刪「最早…之一」；Billy Stewart 刪「1960 年代獨一無二」；Brenton Wood 刪「告別巡演途中住院」（死亡情境）；Bobby Byrd 刪 James Brown 入感化院原因；Charles Wright 刪「取樣最多之一」；Chris Kenner 刪「最被低估之一」；Crown Heights Affair 只留一處榜單；D Train 刪「最易辨認的採樣之一」；Deniece Williams 刪「最偉大的靈魂嗓音之一」（單源）。
+- 放寬字數：Cassiano 265、D Train 246（修後）、Don Covay 270，人物故事與影響事實為主體，接受。
+- 新近事實：Dexter Wansel 2026 年過世（Far Out＋Entertainment Now 兩篇訃聞），只寫年份；Dijon《Baby》與《Swag》葛萊美入圍兩源。
+- 同名作廢：Chocolate Milk（飲品）的維基預抓。
+- 待本機（上線簡介）：D Train 舞曲榜冠軍年 1981／1982 不一；Da Brat「Billboard 200 第十一名」維基措辭不清；Dennis Coffey 三把吉他 vs 12 把吉他說法；Chocolate Milk「在紐奧良成立」（另說 Memphis 創團）。
+
+## ar-d-019（2026-10-07）
+
+- 39 位上架（36 full、3 thin：Donell Jones、Eric Benét、GQ），1 位不寫：Garland Green（聲音與做法無可靠描述，寫作層只能拿「受過聲樂鋼琴訓練」充數，過不了 thin 門檻）。
+- 審稿修 12 處：單源最高級刪 6 處（Doris Duke「史上最好的 deep soul」、Double Exposure「最老練的人聲組」、Eddie Hazel「史上最偉大的獨奏」、Eddie Hinton「頂尖」、Fred & The New J.B.'s「最有影響力」、Fred Hammond「最受歡迎」）；Gyedu-Blay Ambolley「迦納最早的 rap」改「早期例證」；Hi-Tension 刪「最早屬於黑人英國人的音樂運動」；Fuzzy Haskins 刪名人堂入選人數；Howard Tate 女兒死因改「痛失」；Freeez 兩處榜單只留一處；另 d-018 Cassiano 刪與 Hyldon 篇重複的「三大先驅」句（已另提交）。
+- 放寬字數：Fantastic Negrito 273、Howard Tate 270（人生故事為主體）。
+- 搜尋超限放行：Gary Bartz NTU Troop 10（多出兩次為 NEA Jazz Master 2024 與 hip-hop 取樣的第二源）。Elaine Brown、Experience Unlimited 失敗請求 5 次（同篇文章兩個網址皆 403／猜網址 404），不影響事實，放行。
+- 同名作廢：Harlem River Drive（曼哈頓高速公路）的維基預抓。
+- 待本機（上線簡介）：Elaine Brown 委託錄音「1968 年」（另說 1969 年 1 月後）；Doris Duke「唱片打進 R&B 榜第 7 名」實為單曲〈To the Other Woman〉；Experience Unlimited《Free Yourself》簡介通篇講資料庫欄位；Fantastic Negrito 車禍年 1999／2000；Faze-O「只留下這張首作」（實出三張）；Gwen Guthrie〈Peek-A-Boo〉由 Compass Point All Stars 操刀無出處；Howard Tate 發行月份 1967／1966；GQ《Disco Nights》「全張白金」無出處。
+
+## ar-d-020（2026-10-07）
+
+- 40 位全上（35 full、5 thin：Jean Carn、King James Version、Linx、Major Harris、Margie Joseph）。
+- 審稿修 5 處：James & Bobby Purify 榜單與葛萊美提名只留榜單；James Cleveland 刪「史上最偉大的福音歌手之一」；Lindstrøm & Prins Thomas 刪「最受稱道的搭檔」並把「挪威最早的 house 俱樂部之一」改「早期」；Marva Whitney 刪「最生猛、最嘹亮之一」。
+- Little Willie John 保留搖滾名人堂官方評語（權威機構可具名）。Margie Joseph 研究層只有維基一源，寫作層以卡單 MusicBrainz release-group 作第二 src（僅佐證 Atlantic／Arif Mardin），接受。
+- 新近事實：Jimmy Hughes 2026 年過世（維基＋Times Daily）；Jalen Ngonda 2025 Jazz FM 年度靈魂藝人（UK Jazz News＋Music Week）。
+- 身分：Junei 查明是印第安納州 Gary 的吉他手 Willie Lee（卡池 2014 年為重發，〈Let's Ride〉原錄 1985）；Lightnin' Rod 即 Jalal Mansur Nuriddin。
+- 同名作廢：Junior（影集角色）、King James Version（聖經欽定本）、Light of the World（經文）、Major Harris（美式足球員）的維基預抓。
+- 待本機（上線簡介）：James Cleveland《Peace Be Still》「逾百萬張」（另說約 80 萬）；Jimmy Hughes「FAME 錄下的第一支單曲」不成立；Jody Watley「美國賣出兩百萬張」無認證；Junior〈Mama Used to Say〉「先在美國打開局面」待核；Lenine「入圍 2000 年首屆拉丁葛萊美」無佐證；Los Kjarkas「憑 GEMA 登記提告勝訴」無出處（維基為法國法院）；Major Harris《My Way》1974／1975。
+
+## ar-d-021（2026-10-07）
+
+- 39 位上架（32 full、7 thin：Mel & Tim、Modern Talking、Ollie & The Nightingales、One Way、Otis G. Johnson、Parlet、Ralph Tresvant），1 位不寫：Mighty Ryeders（來源只有商品頁與版權拍賣頁，國籍無出處、邁阿密出身未取得頁面，第一句交代不了國籍；比照 d-018 Black Heat）。
+- 審稿修 7 處：Mary Wells「Motown 的首位女性巨星」改「早期的女性巨星」；Meditation Singers 刪「1960 年代最硬派之一」；Mighty Clouds of Joy 刪「最具影響力之一」與「第一個登上《Soul Train》的福音團」；P-Funk All Stars 刪與 d-019 Fuzzy Haskins 篇重疊的名人堂評語；Patti LaBelle 兩項榮譽只留 Apollo 名人堂；Pointer Sisters 刪「第一組登上 Grand Ole Opry 的黑人女子團體」（來源為官方或轉述，未獨立查證）；Purple Image 刪「克里夫蘭最頂尖」。
+- 放寬字數：Natalie Cole 258（九座葛萊美與父女對唱為主體，已故）。
+- 搜尋超限放行：Ray, Goodman & Brown 9（多出一次確認〈Empire State of Mind〉取樣）。Modern Talking、Otis G. Johnson 失敗請求 5 次，未取得內容，不影響事實。
+- 身分：Napoleon Brown 即 Nappy Brown（Discogs 另有同名福音鋼琴手，非本人）；Meditation Singers 1971 年 Jewel 專輯身分為推定，正文未提該張。
+- 同名作廢：Ollie（人名消歧義）、Mutiny（叛變）的維基預抓。
+- 待本機（上線簡介）：Mighty Clouds of Joy「1959 年組於洛杉磯」（1955／1950 年代後期各說）；Musique〈In the Bush〉「Prelude 史上最大熱門」無依據；Nino Nardini / Roger Roger「Debussy 替他取名」（Discogs 說是父親取的）；Quazar「Brailey 把專輯做完」與「兩人同在 1978 年離開 P-Funk」（Goins 1977 離開）；RAMP「1976 年由 Ayers 籌組」（前身 1975 年 Saturday Night Special）；Ray, Goodman & Brown「The Moments 在紐澤西成軍」（實為華盛頓特區）；Purple Image 替 Steppenwolf 與 Aretha Franklin 暖場無可靠來源。
+
+## ar-d-022（2026-10-07）
+
+- 39 位上架（31 full、8 thin：Reverend Bernard Avant & The St. James Gospel Choir、Ruby Andrews、Shira Small、Skyy、Sons of Truth、Starcrost、Sweat Band、The Brief Encounter），1 位不寫：Soul for Real（聲音格只有「歸在 SWV、New Edition、112 這一脈」的類型歸屬，不是聲音或做法；比照 d-019 Garland Green）。
+- 審稿修 9 處：Sharon Jones 刪「抗癌期間仍在巡演」（暗示死因）與「最醒目的聲音」；Sharon Redd 刪「Prelude 最成功」；Sheila E. 刪「同代最偉大之一」；在世者成績只留一處：Shirley Bassey 刪 2024 年 Companion of Honour（只留 Dame）、Shirley Caesar 刪葛萊美終身成就獎、Silver Convention 刪葛萊美、Soul II Soul 刪英國冠軍（留 Ivor Novello）、Tavares 刪名人堂（留街名）、Terence Trent D'Arby 刪葛萊美（留英國登頂）。
+- 具名引語保留：Robert Finley（Dan Auerbach）、Roger（Chromeo 的 Dave 1）的最高級評語皆為具名音樂人，比照 Clinton 引語先例。
+- 搜尋超限放行：Ron Banks & The Dramatics 9、Sandra Phillips 9（身分核對第二源）、Shira Small 9（多出一次零售頁截斷、無事實）。
+- 身分：Sandra Phillips 即百老匯演員 Sandra Reaves-Phillips；Sandra Wright 為孟斐斯靈魂歌手，不同人。
+- 同名作廢：Ripple（電子學）、Roger（人名）、Silk（蠶絲）、Spirit of Love（Con Funk Shun 專輯）的維基預抓。
+- 新近事實：Ruby Andrews 2026 年 8 月過世（維基＋entertainmentnow），正文只寫年份。
+- 待本機（上線簡介）：Sandra Phillips「名下唯一一張專輯」不成立、「1970 年由 Canyon 發行」應註明當年未流通；Sam Dees「個人專輯一停十四年」與維基衝突；Sharon Redd〈Never Give You Up〉英國第 20 名與「全張輪番舞曲榜冠軍」無出處；Skull Snaps「Stezo 率先取樣」（Dooley-O 更早，宜改「最早發行」）；Spencer Wiggins「從未有正規專輯」（2003 年有福音專輯）；Ripple「十人編制」無出處。
+
+## ar-d-023（2026-10-07）
+
+- 37 位上架（34 full、3 thin：The Crowns of Glory、The Natural Four、The Undisputed Truth），3 位不寫：The Morning Stars of Savannah, Georgia（聲音與地位格查無，身分也只見團名與電台節目標題）；The Politicians（聲音句只有領隊寫過的曲名，且無證據收在卡池那張）；The Sensational Williams Brothers（聲音只有「傳統黑人福音」類型歸屬；比照 d-022 Soul for Real）。
+- 審稿修 11 處：最高級、序數刪改——The Chantels「率先打進主流之一」改「早期」、The Crystals「最好的成果之一」、The Edwin Hawkins Singers「最早在流行榜成功的聖詩之一」、The Five Blind Boys of Mississippi「最早進 R&B 榜的福音唱片之一」、The Moments「最甜的抒情團之一」、The Rance Allen Group「Stax 福音廠牌最早簽下」與「預示 Crouch、Winans 跨界」（維基單源）、The Roberta Martin Singers「芝加哥最大葬禮之一」、Southwest Michigan State Choir 的 Clark Sisters「最具影響力之一」、The Swan Silvertones「首屈一指」；The Manhattans「病逝」改「過世」。
+- 保留：The Dells 與 The Supremes 的搖滾名人堂官方評語（權威機構可具名）；The Dixie Hummingbirds 278 字（NEA 傳統藝術最高榮譽、葛萊美、Stevie Wonder 評語為份量主體，已故者為主）。
+- 搜尋超限放行：The Supremes & The Four Tops 9（雙團卡，多出一次為 Ross 離團與合錄的第二源）。
+- 新近事實：Arlene Smith（The Chantels）2026 年過世（WTOP 美聯社稿＋維基），只寫年份。
+- 重疊處理：The Moments、The Last Poets、The J.B.'s Reunion、Todd Terje 分別避開 d-021 Ray, Goodman & Brown、d-020 Lightnin' Rod、d-019 Fred Wesley 三卡、d-020 Lindstrøm & Prins Thomas 已用過的句子與角度。
+- 同名作廢：The Masqueraders（1928 年小說）、The Moments（菲律賓談話節目）、The Politicians（紐西蘭同名團）的維基預抓。
+- 待本機（上線簡介）：The Chantels「2019 年入選搖滾名人堂單曲類」不成立（只進過最終名單，2019 年是布朗克斯街角命名）；The Highway QC's Sam Cooke「十四歲進團」與 1947 年進團說法不合；The Masqueraders「Hayes 一人兼編曲」（另有 Lester Snell）；The Mohawks〈The Champ〉「超過八百首取樣」無出處（宜改「數百首」）；The Pilgrim Travelers 遷居洛杉磯 1942／1947；The Rance Allen Group「比 Crouch、Winans 早了好些年」僅維基；The Sunset Travelers O.V. Wright 入團 1956／1957；The Three Degrees「1965 年成軍」（實約 1963，1965 為首張單曲）；The Trammps〈Disco Inferno〉第 11 名為 1978 年。
+
+## 第三輪十批接力收尾（ar-d-014～023）
+
+- 合計 388 位上架（320 full、68 thin），12 位不寫：Yoshimi Ueno Bestrio、初山博、和田直、和田直カルテット、リー・ウォンヒーイ＋菊他コージ、Black Heat、Garland Green、Mighty Ryeders、Soul for Real、The Morning Stars of Savannah, Georgia、The Politicians、The Sensational Williams Brothers。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」清單的上線簡介勘誤（改 KV）。

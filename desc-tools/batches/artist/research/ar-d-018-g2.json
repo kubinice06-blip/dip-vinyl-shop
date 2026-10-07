@@ -1,0 +1,967 @@
+[
+  {
+    "key": "bloodstone",
+    "name": "Bloodstone",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bloodstone 是美國靈魂與放克團體，1962 年在密蘇里州堪薩斯市成軍，前身是高中時期的 doo-wop 團 the Sinceres。",
+            "src": "https://en.wikipedia.org/wiki/Bloodstone_(band)",
+            "src2": "https://popdose.com/soul-serenade-bloodstone-natural-high/",
+            "from": "new"
+          },
+          {
+            "f": "團員後來搬到洛杉磯學樂器、成為能自己演奏的樂隊，再到倫敦與 Decca 簽約；1973 年的《Natural High》由 Mike Vernon 製作。",
+            "src": "https://en.wikipedia.org/wiki/Bloodstone_(band)",
+            "src2": "https://popdose.com/soul-serenade-bloodstone-natural-high/",
+            "from": "new"
+          },
+          {
+            "f": "堪薩斯市的 The Pitch 記錄，這個團最早在 Central High School 成形，起初的和聲是向 Temptations 學的，成員 Harry Williams 回憶倫敦首演是為 Al Green 開場。",
+            "src": "https://www.thepitchkc.com/?p=53070",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Popdose 形容 Bloodstone 把 doo-wop 和聲、迷幻搖滾與放克揉進同一套聲音，並借鏡 Jimi Hendrix 與 Isley Brothers。",
+            "src": "https://popdose.com/soul-serenade-bloodstone-natural-high/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "維基稱 Bloodstone 在 1970 年代的「黑人搖滾」與放克風潮裡扮演重要角色，部分暢銷曲還帶著拉丁音樂色彩。",
+            "src": "https://en.wikipedia.org/wiki/Bloodstone_(band)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Natural High〉在 1997 年被 Quentin Tarantino 收進電影《Jackie Brown》的原聲帶（第 7 軌），讓這首 1973 年的歌重新接觸到新一代聽眾。",
+            "src": "https://en.wikipedia.org/wiki/Jackie_Brown_(soundtrack)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "團在 1980 年代初靠專輯《We Go a Long Way Back》（1982 年）小幅回溫，Popdose 指這段回溫發生在 Isley Brothers 的 T-Neck 廠牌時期。",
+            "src": "https://en.wikipedia.org/wiki/Bloodstone_(band)",
+            "src2": "https://popdose.com/soul-serenade-bloodstone-natural-high/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "上線簡介寫〈Natural High〉Hot 100 第 10 名、靈魂單曲榜第 10 名；英文維基 Bloodstone 條與 Popdose 都只寫流行榜第 10 名，英文維基專輯條的搜尋摘要卻寫靈魂榜第 10、流行榜第 4（疑似顛倒）。榜單名次兩源不一致，本層不收任何名次，列入 pubIssues 待店主核對。",
+      "堪薩斯 The Pitch 寫 1968 年搬洛杉磯、〈Natural High〉登上 R&B 榜第 1；英文維基與 Popdose 說法不同（維基專輯 Top 10、單曲流行榜第 10），兩處皆不收。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Natural High",
+        "claim": "攻上 Hot 100 第 10 名、靈魂單曲榜第 10 名，把專輯推上靈魂專輯榜第 2 名",
+        "problem": "英文維基專輯條（搜尋摘要，未開頁）寫單曲靈魂榜第 10、流行榜第 4，與上線簡介和 Bloodstone 條（流行榜第 10）互相顛倒；Billboard 站被擋，無法在雲端核對。建議店主本機對照 Billboard 榜單紀錄再決定要不要改；此條屬待核，不是已證實錯誤。",
+        "src": "https://en.wikipedia.org/wiki/Natural_High_(Bloodstone_album)"
+      }
+    ],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 只有《Natural High》（1973），與 Bloodstone 條吻合，無同名混卡。搜尋 6 次：1 次綜合搜尋、Popdose、The Pitch KC、維基《Jackie Brown》原聲帶、第二篇 Popdose（與第一篇同站，無新增）、1 次《Jackie Brown》專查；undertheradarmag 403 失敗不計。未收：《Natural High》銷量百萬與 RIAA 金唱片（維基與 Popdose 都寫，但屬認證與銷量，團體仍在演出，依規避免）；2019 年 National R&B Music Society 終身成就獎（只見維基單源）；成員生卒年（維基單源，且逝者多）；Tarantino 在片中如何使用該曲的場景描述（兩處皆沒有可開頁的來源，搜尋摘要來源不明）。Jackie Brown 收錄只有維基原聲帶頁開頁讀到，標 single；上線簡介同樣寫了這件事。The Pitch 與 Popdose 對搬洛杉磯、倫敦首演細節各說各話，facts 只收 The Pitch 具名回憶，標單源。"
+  },
+  {
+    "key": "bobby byrd",
+    "name": "Bobby Byrd",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bobby Byrd 生於喬治亞州 Toccoa，出身虔誠的教會家庭，先在教會詩班唱歌，後來加入福音團 the Gospel Starlighters；他彈鋼琴與管風琴，也是主唱。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Byrd",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "那個福音團在教會長輩不認同世俗音樂的年代，轉到南卡羅來納以 R&B 團的名義演出，幾度改名，最後定名為 the Flames，後來的 Famous Flames；Byrd 是創團者。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Byrd",
+            "src2": "https://www.inquirer.com/philly/obituaries/20070916_Bobby_Byrd___Soul_musician__73.html",
+            "from": "new"
+          },
+          {
+            "f": "James Brown 年輕時因闖車門被關進喬治亞北部的少年感化院，Byrd 的家人把他接進家裡，Byrd 也邀他加入自己的福音團。",
+            "src": "https://www.inquirer.com/philly/obituaries/20070916_Bobby_Byrd___Soul_musician__73.html",
+            "src2": "https://acerecords.co.uk/help-for-my-brother-the-pre-funk-singles-1963-68",
+            "from": "new"
+          },
+          {
+            "f": "Byrd 2007 年 9 月在喬治亞州 Loganville 的住處過世，享年 73 歲，比 James Brown 晚離世不到一年。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Byrd",
+            "src2": "https://www.inquirer.com/philly/obituaries/20070916_Bobby_Byrd___Soul_musician__73.html",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "費城《Inquirer》訃聞稱 Byrd 是 Brown 招牌聲音的主要建築師之一，Brown 早期靈魂曲目與奠定放克的名曲都有他的貢獻；〈Get Up (I Feel Like Being a) Sex Machine〉裡反覆的「Get on up」就是他唱的。",
+            "src": "https://www.inquirer.com/philly/obituaries/20070916_Bobby_Byrd___Soul_musician__73.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1960 年代 Byrd 替 Federal、Smash 與 King 錄了一系列由 Brown 製作的單曲，Ace Records 的重編輯盤說這些錄音是理解 James Brown 音樂如何發展的「失落環節」。",
+            "src": "https://acerecords.co.uk/help-for-my-brother-the-pre-funk-singles-1963-68",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1970 年 Brown 的樂團在演出前集體離開，Byrd 當場找來 Bootsy Collins、Catfish Collins 兄弟和他們的班底頂替，演出後一起進錄音室錄下〈Get Up (I Feel Like Being a) Sex Machine〉。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Byrd",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Byrd 2012 年以 Famous Flames 成員身分入選搖滾名人堂（表演者類別，由 Smokey Robinson 引介），他是名人堂牌匾上簽名的四位成員之一。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Byrd",
+            "src2": "https://www.rockhall.com/inductees/famous-flames",
+            "from": "new"
+          },
+          {
+            "f": "Byrd 1971 年的放克單曲〈I Know You Got Soul〉後來被 Eric B. & Rakim 等嘻哈團體取樣；Ace Records 說他 1970 年代初的放克作品，聲音出現在 Stone Roses、Eric B & Rakim 和 Jay-Z 的暢銷歌背後。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Byrd",
+            "src2": "https://acerecords.co.uk/help-for-my-brother-the-pre-funk-singles-1963-68",
+            "from": "new"
+          },
+          {
+            "f": "1973 年 Byrd 離開 Brown 的班底，結束了約 21 年的合作；維基列出的原因包括部分 Brown 暢銷曲的作曲沒有掛他的名，以及他想成家。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Byrd",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 只有《I Need Help》（1970），身分是 James Brown 夥伴 Bobby Byrd，無同名混卡。搜尋 5 次：綜合搜尋、Inquirer 訃聞、搖滾名人堂官網、Peace and Rhythm 部落格（商店部落格，不當來源，只用來核對）、Ace Records 重編輯盤頁；Washington Times 403 失敗不計。名人堂官方（可具名單源）：搖滾名人堂 Famous Flames 頁寫他們是「the lifeblood of the magnificent spectacle that was James Brown live in concert」，網址 https://www.rockhall.com/inductees/famous-flames ；寫作層可寫成「搖滾名人堂稱 Famous Flames 是 James Brown 現場演出的命脈」。未收：1998 年 Rhythm and Blues Foundation Pioneer Award、2020 年 National Rhythm and Blues Hall of Fame（只見維基單源）；2003 年與 Brown 及 Universal 的版稅官司（官司避免）；Byrd 自稱寫了 Brown 多數暢銷曲（維基寫明是他本人聲稱，不收）；Peace and Rhythm 說 Byrd 在獄中棒球賽認識 Brown，與 Inquirer 的版本不同，facts 取 Inquirer 加 Ace Records；年份上，Ace 說 1953 年相識，與維基的團名沿革無衝突但不寫年份。出生年月日 1934-08-15 只有維基與商店部落格，兩者皆不獨立，故 facts 不寫出生年，只寫過世年與享年（維基加 Inquirer）。"
+  },
+  {
+    "key": "bobby caldwell",
+    "name": "Bobby Caldwell",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bobby Caldwell 生於紐約曼哈頓、在邁阿密長大；父母主持地方電視綜藝節目《Suppertime》，他從小聽 Frank Sinatra 與 Ella Fitzgerald，12 歲起學鋼琴與吉他。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+            "src2": "https://www.opb.org/article/2023/03/16/bobby-caldwell-singer-of-what-you-won-t-do-for-love-dies-at-71/",
+            "from": "new"
+          },
+          {
+            "f": "1960 年代末他在邁阿密組了 Katmandu 樂團，被 Little Richard 看中而一起遷往洛杉磯；樂團解散後他當過 Little Richard 的節奏吉他手，才轉為單飛，在洛杉磯待了六年才拿到唱片合約。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他簽給邁阿密的 TK Records 後，首張專輯錄完時老闆們覺得少一首熱門曲，他回錄音室兩天就寫出〈What You Won't Do for Love〉。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他 2023 年 3 月過世，享年 71 歲。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+            "src2": "https://www.opb.org/article/2023/03/16/bobby-caldwell-singer-of-what-you-won-t-do-for-love-dies-at-71/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "TK 當時主要面向黑人聽眾，老闆們想隱瞞 Caldwell 是白人，首張專輯封面只放他的剪影；他與 Natalie Cole 巡演時，台下多是黑人聽眾，不少人到現場才知道他是白人。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+            "src2": "https://www.opb.org/article/2023/03/16/bobby-caldwell-singer-of-what-you-won-t-do-for-love-dies-at-71/",
+            "from": "new"
+          },
+          {
+            "f": "Questlove 談這件事時說，那是唱片主管想把臉藏在專輯封面後面的年代。",
+            "src": "https://www.opb.org/article/2023/03/16/bobby-caldwell-singer-of-what-you-won-t-do-for-love-dies-at-71/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他的唱片橫跨 R&B、靈魂、爵士與成人當代，以靈魂味重又多變的嗓音見長；1996 年的《Blue Condition》起，他轉向 Great American Songbook，用大樂團編曲唱 Frank Sinatra 一路的老歌。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈What You Won't Do for Love〉被 Boyz II Men 與 Michael Bolton 翻唱，Tupac Shakur 的〈Do for Love〉取樣了它；The Notorious B.I.G. 也取樣過 Caldwell 的歌，OPB 還列出 Common、Lil Nas X 與 Chance the Rapper 取樣過他的作品。",
+            "src": "https://www.opb.org/article/2023/03/16/bobby-caldwell-singer-of-what-you-won-t-do-for-love-dies-at-71/",
+            "src2": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+            "from": "new"
+          },
+          {
+            "f": "唱片公司 TK 關門後，Boz Scaggs 勸他替別人寫歌；他寫了〈The Next Time I Fall〉給 Amy Grant 與 Peter Cetera，也替 Boz Scaggs、Roy Ayers、Chicago、Natalie Cole、Neil Diamond、Roberta Flack 與 Al Jarreau 寫過歌。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1978 年首張同名專輯收錄〈What You Won't Do for Love〉，該曲登上 Hot 100 第 9 名、Hot Selling Soul Singles 榜第 6 名。",
+        "src": "https://en.wikipedia.org/wiki/Bobby_Caldwell",
+        "src2": "https://www.opb.org/article/2023/03/16/bobby-caldwell-singer-of-what-you-won-t-do-for-love-dies-at-71/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 3,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "同名檢查：維基預抓標 warn 是因為專輯名就叫《Bobby Caldwell》；維基明寫 1978 年自名首張專輯，與 poolAlbums（Bobby Caldwell，1978，soul／jazz）吻合，確認是 Mister AOR 的那位 Bobby Caldwell，無同名混卡。搜尋 3 次：綜合搜尋、OPB（AP 稿轉載）、日本人氣與影響搜尋；Miami New Times 403 失敗不計。OPB 的 AP 稿與維基不同源。未收：日本稱他「Mister AOR」、1992 年日本年度大獎（只在搜尋摘要，來源網頁沒開頁，兩源不足）；〈The Next Time I Fall〉登上 Hot 100 冠軍（維基單源）；OPB 與維基對過世日期不同（3 月 14 或 15 日），facts 只寫 3 月；死因不寫。Caldwell 已故，首張專輯名次列為 milestones（核心成績、兩源）。"
+  },
+  {
+    "key": "bobby patterson",
+    "name": "Bobby Patterson",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bobby Patterson 1944 年 3 月 13 日生於德州達拉斯，是歌手、詞曲作者兼製作人。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Patterson_(musician)",
+            "src2": "https://www.bear-family.com/patterson-bobby-soul-of-the-man-cd.html",
+            "from": "bank"
+          },
+          {
+            "f": "他出身愛聽藍調的家庭，先組了 Royal Rockers 樂團，在本地 Future 廠牌錄過音，再到洛杉磯為 Liberty Records 錄單曲。",
+            "src": "https://www.bear-family.com/patterson-bobby-soul-of-the-man-cd.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他的起點是 John Abdnor Sr. 的 Abnak 與 Jetstar 廠牌，與六人伴奏班底 the Mustangs 一起錄音，同時學著做詞曲與製作。",
+            "src": "https://www.bear-family.com/patterson-bobby-soul-of-the-man-cd.html",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "KUTX 的介紹把他的硬朗靈魂唱法拿來和 Wilson Pickett、Otis Redding 相比，同時說他走出了自己的路。",
+            "src": "https://kutx.org/?p=217481",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Bear Family 的介紹說他的聲音混合 Joe Tex 的鄉土風味與 Luther Ingram 的南方滑順，錄音多是幽默的快板，也常用自己的歌回應當紅的靈魂唱片。",
+            "src": "https://www.bear-family.com/patterson-bobby-soul-of-the-man-cd.html",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Albert King 錄了 Patterson 共同寫的〈That's What the Blues Is All About〉（收在《I Wanna Get Funky》）；1995 年 Golden Smog 錄了他與 Strickland 合寫的〈She Don't Have to See You〉，由 Wilco 的 Jeff Tweedy 演出。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Patterson_(musician)",
+            "src2": "https://kutx.org/?p=217481",
+            "from": "new"
+          },
+          {
+            "f": "他替 Fontella Bass、Little Johnny Taylor、Ted Taylor 等人製作過唱片，也在自己的 Soul Power 廠牌發掘了靈魂歌手 Tommie Young。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Patterson_(musician)",
+            "src2": "https://www.bear-family.com/patterson-bobby-soul-of-the-man-cd.html",
+            "from": "new"
+          },
+          {
+            "f": "他在達拉斯 KKDA 730 AM 主持經典 R&B 節目多年，靠說故事式的串場累積大批聽眾，2012 年 5 月與多數主持人一起被電台資遣。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Patterson_(musician)",
+            "src2": "https://kutx.org/?p=217481",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "事實庫研究稿只有出生地與生日一條；其餘取自 Bear Family、KUTX 與維基。上線簡介與本層事實無衝突（Albert King、KKDA 皆一致）。"
+    ],
+    "pubIssues": [],
+    "searches": 3,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 為《It's Just a Matter of Time》（1972，Paula Records）；維基預抓標 warn 是因頁面沒列這張，但事實庫研究稿與上線簡介都確認是達拉斯的 Bobby Patterson，Bear Family 與 KUTX 的介紹也吻合（Paula、Albert King、KKDA），無同名混卡。搜尋 3 次：綜合搜尋、KUTX、Bear Family；Dallas Observer 403、Austin Chronicle 429 失敗不計。他在世，榜單名次一概不收（Bear Family 提到的 1967 年〈T.C.B. or T.Y.A.〉R&B 榜名次略過）。Bear Family 是重發廠牌的專輯文案，歸為廠牌頁，單源只用於身世與聲音這類低風險內容。"
+  },
+  {
+    "key": "brenda holloway",
+    "name": "Brenda Holloway",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Brenda Holloway 1946 年生於加州 Atascadero，在洛杉磯 Watts 長大，受過古典訓練。",
+            "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/holloway-brenda",
+            "src2": "https://classic.motown.com/artist/brenda-holloway/",
+            "from": "new"
+          },
+          {
+            "f": "她從小學小提琴、長笛與鋼琴，在教會詩班唱歌，也愛上古典樂；14 歲起替洛杉磯的 R&B 歌手錄 demo、唱和聲。",
+            "src": "https://en.wikipedia.org/wiki/Brenda_Holloway",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1962 年她 16 歲時就錄過 Ed Cobb 寫的〈Every Little Bit Hurts〉（Del-Fi 版）；1963 年底她在洛杉磯一場 DJ 派對上對嘴唱 Mary Wells 的歌，打動在場的 Berry Gordy。",
+            "src": "https://en.wikipedia.org/wiki/Brenda_Holloway",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "她 17 歲簽進 Motown，是廠牌第一位西岸簽約藝人。",
+            "src": "https://en.wikipedia.org/wiki/Brenda_Holloway",
+            "src2": "https://faroutmagazine.co.uk/brenda-motown-alienated-powerful-voice/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Motown 官方介紹說她的嗓音動態範圍大、靈魂感深，是 Mary Wells 1964 年離團後廠牌的女性門面。",
+            "src": "https://classic.motown.com/artist/brenda-holloway/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "〈You've Made Me So Very Happy〉是她與姊妹 Patrice 共同寫的，1967 年她在 Motown 錄過，後來由 Blood, Sweat & Tears 翻唱成 Top 10 名曲。",
+            "src": "https://en.wikipedia.org/wiki/Brenda_Holloway",
+            "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/holloway-brenda",
+            "from": "new"
+          },
+          {
+            "f": "Far Out 雜誌寫她想自己寫、自己錄原創歌，但人留在洛杉磯、離廠牌核心很遠，演唱風格也曾招來 Motown 內部的嘲笑。",
+            "src": "https://faroutmagazine.co.uk/brenda-motown-alienated-powerful-voice/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1965 年她擔任披頭四美國巡演的開場藝人。",
+            "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/holloway-brenda",
+            "src2": "https://faroutmagazine.co.uk/brenda-motown-alienated-powerful-voice/",
+            "from": "new"
+          },
+          {
+            "f": "1968 年她離開 Motown，那年 22 歲，之後大半退出樂壇，直到 1990 年代中期才重回舞台。",
+            "src": "https://en.wikipedia.org/wiki/Brenda_Holloway",
+            "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/holloway-brenda",
+            "from": "new"
+          },
+          {
+            "f": "她的錄音在英國 Northern soul 與 Mod 圈成為崇拜對象，這也是她在 1990 年代被重新記起的背景。",
+            "src": "https://en.wikipedia.org/wiki/Brenda_Holloway",
+            "src2": "https://classic.motown.com/artist/brenda-holloway/",
+            "from": "new"
+          },
+          {
+            "f": "Far Out 雜誌認為她的離開是 Motown 最大的錯失之一，她的演唱力道與寫歌本事，本可以讓她成為廠牌最知名的歌手之一。",
+            "src": "https://faroutmagazine.co.uk/brenda-motown-alienated-powerful-voice/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Alicia Keys 2005 年翻唱〈Every Little Bit Hurts〉，讓更多人重新注意到 Holloway。",
+            "src": "https://classic.motown.com/artist/brenda-holloway/",
+            "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/holloway-brenda",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "維基 Brenda Holloway 條內文同時寫 6 月 21 日與 6 月 26 日出生，Encyclopedia.com 與 Motown 官方都寫 6 月 21 日；facts 只寫 1946 年，不寫日。",
+      "簽約年各說各話：Far Out 寫 1963 年、Encyclopedia.com 寫 1964 年，維基寫 1963 年底受邀後簽下；facts 只寫「17 歲簽進」。",
+      "Encyclopedia.com 說她 14 歲錄的第一支單曲是〈Do the Del Viking〉，維基說 1962 年首支單曲是〈Hey Fool〉；兩者不一致，facts 不收首支單曲。",
+      "上線簡介寫〈Every Little Bit Hurts〉1964 年夏天由 Tamla 發成單曲、流行榜第十三名：Encyclopedia.com 同樣寫 1964 年、第 13 名；她在世，名次不收。"
+    ],
+    "pubIssues": [],
+    "searches": 4,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 為《Every Little Bit Hurts》（1964），身分確認為 Motown 的 Brenda Holloway，無同名混卡。搜尋 4 次：綜合搜尋、Encyclopedia.com、Far Out 雜誌、Motown 官方頁。她在世，榜單名次與銷量一概不收。未收：她就 Blood, Sweat & Tears 版稅控告 Motown 的官司（官司避免）；結婚與育女（私事）；Motown 官方頁另寫她 1965 年 8 月在 Shea Stadium 為披頭四開場、披頭四是她的歌迷（單源）；Joe Cocker 〈With a Little Help from My Friends〉的和聲演出、Clash 與 Funkadelic 翻唱她的歌（只見 Encyclopedia.com 單源，屬具名合作，必要時可補）；1980 年福音專輯與 1999 年《It's a Woman's World》。Motown 官方頁是廠牌自家介紹，歸為官方網站來源；Encyclopedia.com 條目引自書籍資料庫，與維基各自獨立。"
+  },
+  {
+    "key": "brenton wood",
+    "name": "Brenton Wood",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Brenton Wood 本名 Alfred Jesse Smith，1941 年生於路易斯安那州 Shreveport，小時候舉家搬到洛杉磯。",
+            "src": "https://en.wikipedia.org/wiki/Brenton_Wood",
+            "src2": "https://bestclassicbands.com/brenton-wood-oogum-boogum-gimme-little-sign-obituary-1-3-25/",
+            "from": "new"
+          },
+          {
+            "f": "他 1950 年代末先在 the Quotations 與 Little Freddy and the Rockets 等人聲團體唱歌，solo 初期賣座有限，當技師賺的錢比唱歌多；鋼琴是自學的。",
+            "src": "https://craftrecordings.com/blogs/permanent-record/brenton-wood-oogum-boogum",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他的影響來源是 Jesse Belvin 與 Sam Cooke，藝名 Brenton Wood 可能取自洛杉磯的 Brentwood 區。",
+            "src": "https://en.wikipedia.org/wiki/Brenton_Wood",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Wood 2025 年 1 月過世，享年 83 歲。",
+            "src": "https://en.wikipedia.org/wiki/Brenton_Wood",
+            "src2": "https://www.fox32chicago.com/news/brenton-wood-death-oogum-boogum-song",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Craft Recordings 形容他在錄音室裡有種悠閒的自信，專輯《Oogum Boogum》是帶著陽光味、旋律抓耳的 R&B。",
+            "src": "https://craftrecordings.com/blogs/permanent-record/brenton-wood-oogum-boogum",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "〈The Oogum Boogum Song〉是他把〈Casting My Spell on You〉改寫出來的一首歌。",
+            "src": "https://craftrecordings.com/blogs/permanent-record/brenton-wood-oogum-boogum",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1967 年他連推〈The Oogum Boogum Song〉、〈Gimme Little Sign〉與〈Baby You Got It〉三首 Hot 100 單曲，其中〈Gimme Little Sign〉最高到第 9 名。",
+            "src": "https://en.wikipedia.org/wiki/Brenton_Wood",
+            "src2": "https://bestclassicbands.com/brenton-wood-oogum-boogum-gimme-little-sign-obituary-1-3-25/",
+            "from": "new"
+          },
+          {
+            "f": "Craft Recordings 說製作人 J Dilla 取樣過他的作品；Wood 的聽眾既有靈魂樂迷，也有反主流文化的年輕人。",
+            "src": "https://craftrecordings.com/blogs/permanent-record/brenton-wood-oogum-boogum",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "〈The Oogum Boogum Song〉多年後出現在電影《Almost Famous》與《Don't Worry Darling》、影集《The Umbrella Academy》裡，讓新一代聽眾認識他。",
+            "src": "https://www.fox32chicago.com/news/brenton-wood-death-oogum-boogum-song",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他過世前正進行告別巡演「Catch You on the Rebound: The Last Tour」，後來因住院暫停；他留給歌迷的最後一句話借用了自己歌名裡的「rebound」。",
+            "src": "https://www.fox32chicago.com/news/brenton-wood-death-oogum-boogum-song",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Wood 的就讀學校：維基寫 East Los Angeles College，Fox 稿寫 Compton College；兩處不一致，facts 不收就學。",
+      "〈The Oogum Boogum Song〉名次：維基與 bestclassicbands 為 Hot 100 第 34 名，Fox 稿與 bestclassicbands 為 R&B 榜第 19 名；是不同榜，facts 只寫三首都進 Hot 100 與〈Gimme Little Sign〉第 9 名。",
+      "上線簡介寫「在 1967 年連發三首打進 Hot 100 的單曲，專輯收齊其中兩首」，與維基一致。"
+    ],
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 為《Oogum Boogum》（1967），身分是 Alfred Jesse Smith，無同名混卡。搜尋 5 次：兩次綜合搜尋（訃聞與取樣）、Fox 訃聞、Craft Recordings、bestclassicbands。〈The Oogum Boogum Song〉由〈Casting My Spell on You〉改寫，只見 Craft 頁單源，標 single；原曲作者與年份未核對，寫作層不要補。J Dilla 取樣的是哪一首，搜尋摘要寫〈Gimme Little Sign〉、Craft 頁寫 the track，兩處不一致，facts 不寫曲名。Fox 稿死因（自然原因）不收。"
+  },
+  {
+    "key": "camille yarbrough",
+    "name": "Camille Yarbrough",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Camille Yarbrough 1934 年生，在芝加哥南區長大。",
+            "src": "https://en.wikipedia.org/wiki/Camille_Yarbrough",
+            "src2": "https://southsideweekly.com/remember-to-praise-the-praise-singer/",
+            "from": "new"
+          },
+          {
+            "f": "她年輕時成為 Katherine Dunham 舞團的舞者，隨團巡演各國，演出海地、巴西、非洲與美國南方的舞蹈；她把這段經歷稱為一堂文化課。",
+            "src": "https://southsideweekly.com/remember-to-praise-the-praise-singer/",
+            "src2": "https://aalbc.com/authors/article.php?id=1918",
+            "from": "new"
+          },
+          {
+            "f": "她後來轉往戲劇，參與過 Lorraine Hansberry 的《To Be Young, Gifted and Black》演出，也在電影《Shaft》演過一個小角色。",
+            "src": "https://southsideweekly.com/remember-to-praise-the-praise-singer/",
+            "src2": "https://aalbc.com/authors/article.php?id=1918",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《The Iron Pot Cooker》是她 1975 年在 Vanguard 的首張專輯，內容脫胎自她 1971 年把獨角口語演出《Tales and Tunes of an African American Griot》搬上舞台的版本；她在 1970 與 1980 年代帶著這齣戲全國巡演。",
+            "src": "https://en.wikipedia.org/wiki/Camille_Yarbrough",
+            "from": "bank"
+          },
+          {
+            "f": "這張專輯是配上音樂的口語詩；談到標題時她說自己視己為療癒者，所以「我也是那個煮鐵鍋的人」。",
+            "src": "https://aalbc.com/authors/article.php?id=1918",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "維基引《Billboard》對這張專輯的評語：她的唱念帶有 Nina Simone 與 Gil Scott-Heron 的影子，卻有自己的唱法與朗誦方式，歌詞發人深省。",
+            "src": "https://en.wikipedia.org/wiki/Camille_Yarbrough",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她說〈Take Yo' Praise〉是為「所有走過黑人民權運動、為真理、正義與正確挺身而出的人」而寫，因為「人需要更多地讚美與尊重彼此」。",
+            "src": "https://en.wikipedia.org/wiki/Camille_Yarbrough",
+            "from": "bank"
+          },
+          {
+            "f": "Fatboy Slim 1999 年的〈Praise You〉大幅取用了〈Take Yo' Praise〉開頭的人聲；2021 年她接受 WhoSampled 訪問時說她喜歡這首歌，覺得 Norman Cook 留住了原曲的精神。",
+            "src": "https://en.wikipedia.org/wiki/Camille_Yarbrough",
+            "src2": "https://southsideweekly.com/remember-to-praise-the-praise-singer/",
+            "from": "new"
+          },
+          {
+            "f": "〈Praise You〉那段取樣出現在電影、廣告與 MTV 影像大獎上，她說在好幾十年幾乎沒有商業回報之後，版稅才開始進帳；南區週報 2015 年採訪時她 81 歲、住在紐約，正在寫自傳。",
+            "src": "https://southsideweekly.com/remember-to-praise-the-praise-singer/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《Spin》稱她是「hip-hop 的先母」；記者 Kevin Powell 寫過，《The Iron Pot Cooker》無疑是 Lauryn Hill 《The Miseducation of Lauryn Hill》的先驅。",
+            "src": "https://en.wikipedia.org/wiki/Camille_Yarbrough",
+            "src2": "https://aalbc.com/authors/article.php?id=1918",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "出生年：維基文字寫 1934 年，Wikidata 寫 1938-01-08；南區週報也寫 1934，facts 取 1934。",
+      "手足：維基寫「seventh and youngest」，AALBC 寫「seventh of eight children」；不一致，facts 不寫排行。",
+      "Dunham 舞團：維基寫「in her teens」，南區週報寫 20 歲加入，AALBC 寫 1955 年入團、待約五年；facts 只寫「年輕時」。",
+      "上線簡介與本層事實無衝突。Kevin Powell 引句中的專輯名維基原文為「Mis-Education [sic]」，facts 照正名寫。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 為《The Iron Pot Cooker》（1975，Vanguard），確認是這位 Camille Yarbrough，無同名混卡。搜尋 7 次：綜合搜尋、南區週報、AALBC 第一次（307 重導失敗不計）、訃聞搜尋（兩次檢索，未見任何過世消息，推定仍在世，但無官方來源證實）、AALBC 重試、Cornrows 獎項搜尋、ALA 獎項頁。她在世，榜單與銷量一概不收。未收：《Cornrows》1980 年 Coretta Scott King 獎——ALA 頁只寫「得獎」，沒寫類別，搜尋摘要稱是插畫類（得主應為插畫家 Carole Byard），獎項主詞無法確認，寫作層不得寫成 Yarbrough 得獎；Parent's Choice 獎（AALBC 單源）；被迦納 Ga 族冊封 Queen Mother、City College 教非洲舞十二年（AALBC 單源）；1961 年《Kwamina》百老匯首演（AALBC 單源）。Dunham 舞團、戲劇資歷兩源（南區週報、AALBC）細節不一致處已略去。"
+  },
+  {
+    "key": "carl bean and universal love",
+    "name": "Carl Bean and Universal Love",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Carl Bean 1944 年生於巴爾的摩，16 歲左右離家到紐約。",
+            "src": "https://en.wikipedia.org/wiki/Carl_Bean",
+            "src2": "https://www.nme.com/news/music/i-was-born-this-way-singer-carl-bean-has-died-at-77-3041235",
+            "from": "new"
+          },
+          {
+            "f": "他到紐約後唱福音：在 Bishop William Morris O'Neil 於哈林 Christian Tabernacle 的詩班唱過，錄過 Calvin White 的 Gospel Wonders 的歌，也在 Atlantic 旗下的 Gospel Chimes 唱過，並與福音領袖 Alex Bradford 巡演。",
+            "src": "https://www.udiscovermusic.com/stories/peacock-records-gospel-feature/",
+            "single": true,
+            "from": "bank"
+          },
+          {
+            "f": "1970 年代初他搬到洛杉磯，與 O'Neil 詩班的指揮 Alahaundra Romeo 和 Craig Pearson 組成 Universal Love；團唯一一張 Peacock 專輯就是《All We Need Is Love》。",
+            "src": "https://www.udiscovermusic.com/stories/peacock-records-gospel-feature/",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "uDiscover Music 形容《All We Need Is Love》轉向進步靈魂，是一組瞄準一般市場的訊息歌，沒有打進大眾。",
+            "src": "https://www.udiscovermusic.com/stories/peacock-records-gospel-feature/",
+            "single": true,
+            "from": "bank"
+          },
+          {
+            "f": "1977 年 Bean 為 Motown 錄了迪斯可曲〈I Was Born This Way〉；這首歌由 Chris Spierer 與 Bunny Jones 寫，原先由 Valentino 唱過，Bean 的版本成為最廣為人知的版本。",
+            "src": "https://www.nme.com/news/music/i-was-born-this-way-singer-carl-bean-has-died-at-77-3041235",
+            "src2": "https://qspirit.net/carl-bean-black-lgbtq-church/",
+            "from": "new"
+          },
+          {
+            "f": "uDiscover 說，那之後是 Motown 的主管 Young 想起了 Bean，促成他錄下這首同志迪斯可單曲。",
+            "src": "https://www.udiscovermusic.com/stories/peacock-records-gospel-feature/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Lady Gaga 2011 年的歌曲與專輯《Born This Way》受〈I Was Born This Way〉啟發；Bean 2021 年過世時，Gaga 寫道：「感謝你數十年不懈的愛、勇氣，以及一個讓人歌唱的理由。」",
+            "src": "https://en.wikipedia.org/wiki/Carl_Bean",
+            "src2": "https://www.nme.com/news/music/i-was-born-this-way-singer-carl-bean-has-died-at-77-3041235",
+            "from": "new"
+          },
+          {
+            "f": "1982 年 Bean 受封為牧師，在洛杉磯南區創立 Unity Fellowship Church，明確歡迎黑人 LGBTQ 信徒；教會後來成為遍及美國與牙買加的教派運動，約有 17 個會眾。",
+            "src": "https://www.nme.com/news/music/i-was-born-this-way-singer-carl-bean-has-died-at-77-3041235",
+            "src2": "https://qspirit.net/carl-bean-black-lgbtq-church/",
+            "from": "new"
+          },
+          {
+            "f": "1985 年他在洛杉磯創辦 Minority AIDS Project，服務南洛杉磯低收入的非裔與拉丁裔 HIV 感染者，該機構至今仍在運作。",
+            "src": "https://www.nme.com/news/music/i-was-born-this-way-singer-carl-bean-has-died-at-77-3041235",
+            "src2": "https://qspirit.net/carl-bean-black-lgbtq-church/",
+            "from": "new"
+          },
+          {
+            "f": "Metropolitan Community Churches 創辦人 Troy Perry 在悼文中寫道：Carl 真的是上帝的聖徒，而他很少用這個詞。",
+            "src": "https://qspirit.net/carl-bean-black-lgbtq-church/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Bean 2021 年 9 月 7 日過世，享年 77 歲；以他為題的紀錄片《I Was Born This Way》2025 年 6 月 5 日在 Tribeca 影展首映，導演為 Daniel Junge 與 Sam Pollard。",
+            "src": "https://en.wikipedia.org/wiki/Carl_Bean",
+            "src2": "https://qspirit.net/carl-bean-black-lgbtq-church/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "事實庫研究稿（引英文維基）與上線簡介都寫 Bean 1975 年在洛杉磯創立 Unity Fellowship Church；NME 與 QSpirit 兩處獨立來源都寫 1982 年。facts 採 1982 年，不收 1975。",
+      "NME 稱 Bean 在洛杉磯組了 Carl Bean and the Universal Love 後引起 Motown 注意；uDiscover 寫 Universal Love 先在 Peacock 出了這張專輯，之後才是 Motown 的 Young 促成單曲。facts 依 uDiscover 的先後寫。",
+      "事實庫的 Discogs 版本條（1974 年美國三筆版本、之後無再發）屬發行資訊，不收。"
+    ],
+    "pubIssues": [
+      {
+        "album": "All We Need Is Love",
+        "claim": "1975 年他在洛杉磯創立 Unity Fellowship Church",
+        "problem": "NME（2021 年訃聞）與 QSpirit 兩處都寫 Unity Fellowship Church 創立於 1982 年（該年 Bean 受封為牧師）；1975 年是英文維基 Carl Bean 條的寫法，與來源不符。建議改成 1982 年。",
+        "src": "https://www.nme.com/news/music/i-was-born-this-way-singer-carl-bean-has-died-at-77-3041235"
+      }
+    ],
+    "searches": 5,
+    "failedFetches": 5,
+    "status": "full",
+    "notes": "同名檢查：poolAlbums 為《All We Need Is Love》（1974，Peacock），身分是 Carl Bean 與其團 Universal Love，與 Carl Bean 維基條人物相同（事實庫研究稿已用 uDiscover 確認），無同名混卡。搜尋 5 次：綜合搜尋、NME、教會創立年搜尋、QSpirit、uDiscover 專文；失敗 5 次（DJ Mag 403、LA Sentinel 403 兩次、QVoice 403、UFCM 404），超出 failedFetches 上限 4 一次，因為創立年需要第二個可開頁來源。私事不寫：成長經歷中的創傷與家庭關係（NME 提到）、感情與公開出櫃的細節。未收：1987 年與他人共同創辦 National Minority AIDS Council（只有維基單源）；〈I Was Born This Way〉Billboard 名次（QSpirit 寫第 15 名，單源且屬榜單）；1992 年 AIDS Healthcare Foundation 以他命名安寧中心（維基單源）；自傳《I Was Born This Way》2010 年出版（維基單源）；Unity Fellowship 是「全美第一間歡迎 LGBT 的黑人教會」的說法（只見搜尋摘要，且屬『第一』類）。2025 年紀錄片首映有維基與 QSpirit 兩處。"
+  },
+  {
+    "key": "carl thomas",
+    "name": "Carl Thomas",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Carl Thomas 生於伊利諾州 Aurora，先在芝加哥一帶唱歌，加入過名為 The Fourmula 的團；後來到紐約，在俱樂部的開放麥克風夜演唱，被 Sean Combs 看中。",
+            "src": "https://en.wikipedia.org/wiki/Carl_Thomas_(singer)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Thomas 1997 年簽進 Combs 的 Bad Boy，2000 年 4 月 18 日發行首張專輯《Emotional》。",
+            "src": "https://en.wikipedia.org/wiki/Carl_Thomas_(singer)",
+            "src2": "https://www.okayplayer.com/amp/carl-thomas-emotional-album-making-2659553630",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Thomas 說他的啟發來自 Isley Brothers、Smokey Robinson、Marvin Gaye 與 Teddy Pendergrass。",
+            "src": "https://www.okayplayer.com/amp/carl-thomas-emotional-album-making-2659553630",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他談寫歌時說，一首歌要有好故事，脆弱帶來的衝擊比讓人跳起來更強；談〈I Wish〉時他說那是許多人都經歷過的處境。",
+            "src": "https://www.okayplayer.com/amp/carl-thomas-emotional-album-making-2659553630",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《Emotional》的製作人分軌處理：Mike City 製作〈I Wish〉與〈You Ain't Right〉，Heavy D 與 Warren Campbell 製作〈Summer Rain〉。",
+            "src": "https://en.wikipedia.org/wiki/Carl_Thomas_(singer)",
+            "src2": "https://www.okayplayer.com/amp/carl-thomas-emotional-album-making-2659553630",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Okayplayer 稱《Emotional》是 Bad Boy 進入新千年後第一張主要的 R&B 錄音室專輯，當時 Combs 因檔期壓力催著趕工。",
+            "src": "https://www.okayplayer.com/amp/carl-thomas-emotional-album-making-2659553630",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Jay-Z 在 2000 年專輯《The Dynasty: Roc La Familia》的〈I Just Wanna Love U (Give It 2 Me)〉裡改寫了〈I Wish〉的旋律。",
+            "src": "https://en.wikipedia.org/wiki/Carl_Thomas_(singer)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "上線簡介寫 Rolling Stone 把《Emotional》列入 2000 年度五十大專輯，並引其評語；rollingstone.com 在雲端被擋，無法核對，本層不收。",
+      "上線簡介寫製作群有 Sean Combs、Mario Winans、Chucky Thompson；本層只核到 Mike City、Heavy D、Warren Campbell，未核到前三位，不收。"
+    ],
+    "pubIssues": [],
+    "searches": 3,
+    "failedFetches": 3,
+    "status": "thin",
+    "notes": "同名檢查：poolAlbums 為《Emotional》（2000，Bad Boy），身分是伊利諾州 Aurora 的 R&B 歌手 Carl Thomas，無同名混卡。搜尋 3 次：綜合搜尋、後續搜尋、Okayplayer 專文（先前正式網址 404，改開 AMP 版成功）；Okayplayer 一般網址 404、MTV 頁內容無關、Afro 403 皆不計。他在世，榜單、銷量、認證一概不收（包含〈I Wish〉榜首週數、白金認證）。死因與案情避免：2004 年其兄遇害及之後的休息期（維基提及）不收。未收：2006 年葛萊美提名（獎項，單源）；第一位 Bad Boy 男 R&B 獨唱歌手（『第一』類，只見搜尋摘要）；Okayplayer 說專輯大量取樣 Stevie Wonder 與 Sting（摘要出自小模型，未逐曲核對）。素材偏薄，地位格只有 Okayplayer 評述與 Jay-Z 改寫兩條，判定整體 thin。"
+  },
+  {
+    "key": "cassiano",
+    "name": "Cassiano",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Cassiano 本名 Genival Cassiano dos Santos，1943 年 9 月 16 日生於巴西 Paraíba 州的 Campina Grande，小時候舉家搬到里約熱內盧。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "src2": "https://www.agazeta.com.br/entretenimento/cultura/morre-cassiano-aos-77-anos-icone-da-musica-soul-brasileira-0521",
+            "from": "new"
+          },
+          {
+            "f": "他在里約當過泥水助手，父親教了他曼陀林與吉他的第一批和弦；他家與 Jackson do Pandeiro 的交情，是他少數記得的 Campina Grande 往事。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他先在 Bossa Trio 當吉他手，後來與哥哥 Camarão 和朋友 Amaro 另組深受美國靈魂樂影響的 Os Diagonais。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "src2": "https://auniao.pb.gov.br/noticias/caderno_cultura/icone-longe-dos-holofotes",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Cassiano 與 Tim Maia 一樣迷 Marvin Gaye、Otis Redding 與 Stevie Wonder，是把美國靈魂與放克帶進巴西流行樂的先驅之一。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "src2": "https://www.agazeta.com.br/entretenimento/cultura/morre-cassiano-aos-77-anos-icone-da-musica-soul-brasileira-0521",
+            "from": "new"
+          },
+          {
+            "f": "這是 Cassiano 的第三張錄音室專輯；他 1971 年的首張《Imagem e Som》就帶有 Stevie Wonder 與 Otis Redding 的影響。",
+            "src": "https://pt.wikipedia.org/wiki/Cuban_Soul:_18_Kilates",
+            "from": "bank"
+          },
+          {
+            "f": "英文維基說《Imagem e Som》是 bossa、samba、靈魂與放克的細膩混合，發行當時沒有受到太多注意，後來才獲得肯定。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "巴西媒體指出〈Onda〉裡貝斯手 Paulo César Barros 的低音線與鼓一起撐起整首歌的搖擺感。",
+            "src": "https://rollingstone.com.br/musica/como-2024-se-tornou-o-ano-da-musica-brasileira-nos-samples/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基稱 Cassiano 與 Tim Maia、Hyldon 是巴西流行樂接納美國放克與靈魂影響的三大先驅。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "src2": "https://www.agazeta.com.br/entretenimento/cultura/morre-cassiano-aos-77-anos-icone-da-musica-soul-brasileira-0521",
+            "from": "new"
+          },
+          {
+            "f": "他替 Tim Maia 1970 年的首張專輯彈吉他，並合寫〈Primavera (Vai Chuva)〉與〈Eu Amo Você〉；A Gazeta 的訃聞說，Tim Maia 要是沒有錄〈Primavera (Vai Chuva)〉，也許不會成為那麼大的名字。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "src2": "https://www.agazeta.com.br/entretenimento/cultura/morre-cassiano-aos-77-anos-icone-da-musica-soul-brasileira-0521",
+            "from": "new"
+          },
+          {
+            "f": "〈A Lua e Eu〉與〈Coleção〉（皆與 Paulo Zdanowski 合寫）是他自己唱紅的代表曲，分別靠 Rede Globo 連續劇《O Grito》與《Locomotivas》的配樂打開了巴西聽眾。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "src2": "https://www.correiobraziliense.com.br/diversao-e-arte/2021/05/4923049-cassiano-mestre-do-soul-brasileiro-morre-vitima-da-covid-19-no-rio.html",
+            "from": "new"
+          },
+          {
+            "f": "〈Onda〉被巴西饒舌團體 Racionais MC's 取樣，用在 2002 年專輯《Nada Como um Dia Após o Outro Dia》的〈Da Ponte pra Cá〉；Rolling Stone 巴西版還寫到 NxWorries 在 2015 年、Folie's 在 2024 年取樣〈Onda〉，J. Cole 在 2024 年取樣〈Castiçal〉。",
+            "src": "https://rollingstone.com.br/musica/como-2024-se-tornou-o-ano-da-musica-brasileira-nos-samples/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Cassiano 1978 年前後因嚴重的呼吸道問題切除了部分肺臟，唱歌變得困難，CBS 也放棄發行他的第四張專輯；他到 1984 年才謹慎復出，之後約三十年幾乎隱居。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "src2": "https://www.correiobraziliense.com.br/diversao-e-arte/2021/05/4923049-cassiano-mestre-do-soul-brasileiro-morre-vitima-da-covid-19-no-rio.html",
+            "from": "new"
+          },
+          {
+            "f": "晚年他拒絕接受媒體採訪；一位記者回憶，上門時被告知「這裡沒有 Cassiano」。Rolling Stone 巴西版稱，沒有 Cassiano，巴西與世界的黑人音樂不會是現在的樣子，他卻沒有在任何音樂節上露面。",
+            "src": "https://auniao.pb.gov.br/noticias/caderno_cultura/icone-longe-dos-holofotes",
+            "src2": "https://rollingstone.com.br/musica/como-2024-se-tornou-o-ano-da-musica-brasileira-nos-samples/",
+            "from": "new"
+          },
+          {
+            "f": "1991 年他最後一張錄音室專輯《Cedo ou Tarde》請來 Sandra de Sá、Ed Motta、Claudio Zoli 等受他影響的藝人，以及 Djavan、Luiz Melodia 與 Marisa Monte。",
+            "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "Cassiano 2021 年 5 月 7 日過世，享年 77 歲。",
+        "src": "https://en.wikipedia.org/wiki/Cassiano_(singer)",
+        "src2": "https://www.correiobraziliense.com.br/diversao-e-arte/2021/05/4923049-cassiano-mestre-do-soul-brasileiro-morre-vitima-da-covid-19-no-rio.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "英文維基把專輯名寫成「Cuban Soul - 14 Kilates」，葡文維基與卡池為「18 Kilates」；採 18 Kilates。",
+      "Tim Maia 首張專輯年：維基、A Gazeta、Correio 為 1970，A União 為 1969；採 1970。",
+      "〈A Lua e Eu〉與〈Coleção〉的走紅年份：維基寫 1975 年起、Correio 分別寫 1976 與 1977；facts 不寫年份。",
+      "肺疾：維基寫嚴重呼吸道問題、Correio 寫肺結核、A Gazeta 寫失去一側肺；facts 只寫「呼吸道問題、切除部分肺臟」，病名不收。",
+      "上線簡介與本層事實無衝突。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "同名檢查：維基預抓標 warn 是因英文頁把專輯寫成 14 kilates；人物（Paraíba 的 Cassiano，Polydor 1976）與卡池吻合，無同名混卡。搜尋 7 次：綜合搜尋（含 Racionais 取樣，兩次檢索）、Correio Braziliense 訃聞、A União、A Gazeta、Rolling Stone 巴西版、英文維基《Nada Como um Dia Após o Outro Dia》專輯條（確認 Racionais 取樣：該頁寫〈Da Ponte pra Cá〉取樣 Cassiano 與 Paulo Zdanowski 的〈Onda〉；與葡文維基同屬維基家族，非獨立，故取樣事實標 single 並以 Rolling Stone 巴西版為來源）。死因不寫：A Gazeta 寫心律不整、Correio 與搜尋摘要寫 COVID-19，來源互相矛盾。Cassiano 已故，過世日期兩源。未收：Rolling Stone 巴西版說他在郊區公立醫院過世（死亡情境）；A União 提到他 2026 年獲帕拉伊巴音樂節追思表揚（年份不明）；他女兒 Melissa 形容他為「單純又多疑的人」（私人敘述）。"
+  }
+]
