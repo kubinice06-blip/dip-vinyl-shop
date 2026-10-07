@@ -458,3 +458,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超限放行：Gary Bartz NTU Troop 10（多出兩次為 NEA Jazz Master 2024 與 hip-hop 取樣的第二源）。Elaine Brown、Experience Unlimited 失敗請求 5 次（同篇文章兩個網址皆 403／猜網址 404），不影響事實，放行。
 - 同名作廢：Harlem River Drive（曼哈頓高速公路）的維基預抓。
 - 待本機（上線簡介）：Elaine Brown 委託錄音「1968 年」（另說 1969 年 1 月後）；Doris Duke「唱片打進 R&B 榜第 7 名」實為單曲〈To the Other Woman〉；Experience Unlimited《Free Yourself》簡介通篇講資料庫欄位；Fantastic Negrito 車禍年 1999／2000；Faze-O「只留下這張首作」（實出三張）；Gwen Guthrie〈Peek-A-Boo〉由 Compass Point All Stars 操刀無出處；Howard Tate 發行月份 1967／1966；GQ《Disco Nights》「全張白金」無出處。
+
+## ar-d-020（2026-10-07）
+
+- 40 位全上（35 full、5 thin：Jean Carn、King James Version、Linx、Major Harris、Margie Joseph）。
+- 審稿修 5 處：James & Bobby Purify 榜單與葛萊美提名只留榜單；James Cleveland 刪「史上最偉大的福音歌手之一」；Lindstrøm & Prins Thomas 刪「最受稱道的搭檔」並把「挪威最早的 house 俱樂部之一」改「早期」；Marva Whitney 刪「最生猛、最嘹亮之一」。
+- Little Willie John 保留搖滾名人堂官方評語（權威機構可具名）。Margie Joseph 研究層只有維基一源，寫作層以卡單 MusicBrainz release-group 作第二 src（僅佐證 Atlantic／Arif Mardin），接受。
+- 新近事實：Jimmy Hughes 2026 年過世（維基＋Times Daily）；Jalen Ngonda 2025 Jazz FM 年度靈魂藝人（UK Jazz News＋Music Week）。
+- 身分：Junei 查明是印第安納州 Gary 的吉他手 Willie Lee（卡池 2014 年為重發，〈Let's Ride〉原錄 1985）；Lightnin' Rod 即 Jalal Mansur Nuriddin。
+- 同名作廢：Junior（影集角色）、King James Version（聖經欽定本）、Light of the World（經文）、Major Harris（美式足球員）的維基預抓。
+- 待本機（上線簡介）：James Cleveland《Peace Be Still》「逾百萬張」（另說約 80 萬）；Jimmy Hughes「FAME 錄下的第一支單曲」不成立；Jody Watley「美國賣出兩百萬張」無認證；Junior〈Mama Used to Say〉「先在美國打開局面」待核；Lenine「入圍 2000 年首屆拉丁葛萊美」無佐證；Los Kjarkas「憑 GEMA 登記提告勝訴」無出處（維基為法國法院）；Major Harris《My Way》1974／1975。
