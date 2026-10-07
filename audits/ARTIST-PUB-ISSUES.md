@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 430 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 439 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -430,6 +430,15 @@
 | ar-c-fix2 | Perfect | Perfect | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl／en 維基稱約一百萬張，說法不一；Perfect 在世且仍有成員活動，銷量與認證類內容依規則不寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 |
 | ar-c-fix2 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
 | ar-c-fix2 | 脆樂團 | 有多少光就有多少黑 | 專輯裡十首歌各有一幅畫，其中五幅後來進了波隆那插畫展 | TiBE 台北國際書展的 2020 波隆那插畫展台灣入選頁，丁律妏名下只列《虛線．Déjà Vu》一件；『五幅』只見 zh 維基與搜尋摘要。建議把『五幅』改成『入選波隆那插畫展』，或確認件數再寫。 | https://www.tibe.org.tw/tw/show_detail/47/87/484 |
+| ar-d-001 | Adelaide Hall | The Adelaide Hall Collection: 1927-60 | 第一軌是 1927 年與 Duke Ellington 錄的〈Creole Love Call〉……那也是 Ellington 首次讓女歌手參與錄音 | 「首次讓女歌手參與錄音」找不到任何來源；英國遺產機構與維基只稱她的無歌詞人聲運用是創新，並說這錄音成為兩人的首支國際熱門。「第一／首次」類宣稱無雙源，建議店主在本機改成可查證的說法（無歌詞人聲當樂器、成為 Ellington 與她的首個國際熱門）或刪去。 | https://www.english-heritage.org.uk/visit/blue-plaques/adelaide-hall/ |
+| ar-d-001 | Adele Sebastian | Desert Fairy Princess | 長笛乾淨少顫音，情緒明亮而不激烈 | Active Listening 形容她的長笛音色為 equally lush and piercing（既豐潤又尖銳），與「乾淨少顫音、不激烈」方向不同；找不到支持「少顫音」的來源，建議改成有出處的描述或刪去。 | https://activelistening.substack.com/p/adele-sebastian-was-a-quiet-force |
+| ar-d-001 | Akira Ohmori | To Be Young and Foolish | Mingus《Me Myself An Eye》的薩克斯部門裡，有他的名字……那是 1979 年 | 錄音是 1978 年 1 月（18、19、23 日，紐約），《Me, Myself an Eye》1979 年才發行；他也同列於 1980 年發行的《Something Like a Bird》。若「那是 1979 年」要指錄音年則有誤，建議改成「1978 年錄音、1979 年發行」並可補《Something Like a Bird》。 | https://jazzdisco.org/atlantic-records/discography-1978 |
+| ar-d-001 | Andy Williams | Moon River & Other Great Movie Themes | 收的是前一個十年的電影主題曲 | 曲目含〈As Time Goes By〉（出自 1942 年《北非諜影》）與〈Never on Sunday〉（1960 年電影），並非全是 1950 年代的片子；建議改成『收的是 1950 年代前後的電影主題曲』或刪去年代斷語 | https://en.wikipedia.org/wiki/Moon_River_and_Other_Great_Movie_Themes |
+| ar-d-001 | Angela Bofill | Angie | 上線簡介全文使用半形逗號與冒號（『Bofill 的首張,1978 年』『編制往爵士靠:』『編制』段落） | 中文行文不應用半形逗號與冒號，與站內規則不符；內容事實查證無誤，只需改全形標點 | https://en.wikipedia.org/wiki/Angie_(Angela_Bofill_album) |
+| ar-d-002 | Basil Kirchin | Worlds Within Worlds | Evan Parker 吹高音薩克斯風，Derek Bailey 彈吉他卻沒列名（1971 年 Columbia SCX 6463） | 英文維基 Basil Kirchin 條目寫 Parker 與 Bailey 參與的是第二集（1974 年 Island HELP 18），未明說 1971 版也有；搜尋摘要卻說第一集含 Parker 與 Bailey；證據互相矛盾，建議店主對照原盤 credit 或 Discogs 後再決定是否保留。另該簡介寫「動物園的叫聲與自閉症孩童的說話聲放慢」，維基只寫錄下聲音，「放慢」一說本層未查到出處。 | https://en.wikipedia.org/wiki/Basil_Kirchin |
+| ar-d-002 | Billy Parker's Fourth World | Freedom of Speech | 兩家是兄妹自己的 Bridgewater Publishing 與樂團的 Fourth World Publishing | Dee Dee Bridgewater 是 Cecil Bridgewater 的妻子（1970 年代婚姻，後來離婚），不是他與 Ron 的姊妹；Cecil 與 Ron 才是兄弟。簡介的「兄妹」與「Bridgewater 家的三個人」要改成「Bridgewater 夫婦與 Cecil 的弟弟 Ron」之類的寫法。 | https://en.wikipedia.org/wiki/Cecil_Bridgewater |
+| ar-d-002 | Billy Parker's Fourth World | Freedom of Speech | 兩家是兄妹自己的 Bridgewater Publishing | Dee Dee Bridgewater 條目寫她與 Cecil Bridgewater 結婚、後來離婚，並非兄妹關係。 | https://en.wikipedia.org/wiki/Dee_Dee_Bridgewater |
+| ar-d-002 | Black Renaissance | Body, Mind and Spirit | 錄音是 1976 年 6 月 15 日在紐約的 Sound Ideas 完成的 | Aquarium Drunkard 與 Village Voice 兩源皆寫錄音日為 1976 年 1 月 15 日（馬丁路德金恩 47 歲冥誕），地點同為 Sound Ideas；6 月 15 日與兩源不符，建議改為 1 月 15 日。 | https://aquariumdrunkard.com/2024/07/03/on-harry-whitakers-black-renaissance/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

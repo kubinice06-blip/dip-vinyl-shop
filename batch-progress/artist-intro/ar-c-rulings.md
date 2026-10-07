@@ -295,3 +295,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Menuhin & Shankar（277）、武満徹（278）用放寬額度：雙人卡兩人都要寫、武満徹的「間」與國際化故事缺一不可，接受。
 - 待本機（上線簡介）：Roberto Cacciapaglia《Sei Note in Logica》「Jim O'Rourke、Fennesz 列為影響」（僅再版廠牌文案）與「很快轉向流行」不實；卡池疑點 Marian Anderson《The Lady From Philadelphia》是歷史錄音選輯、Feldman《Rothko Chapel》2009 年標 electronic。
 - **C 級全部完成**（ar-c-001～031）。
+
+## ar-d-001（2026-10-07，D 級第一批）
+
+- 39 位上架（38 full、1 thin），1 位不寫：Akira Ohmori（聲音格查無，且 Discogs 條目與 Mingus 錄音名單上的同名者無來源可連成同一人）。審稿修 1 處：Abdullah Ibrahim Trio 刪掉與 Ekaya 篇重複的 Cape jazz／〈Mannenberg〉句。
+- D 級第一批 full 比例遠高於計畫預估（計畫預期相當比例 thin），單張卡藝人多半是爵士史上有名有姓的樂手，素材夠。
+- Archie Shepp And The Full Moon Ensemble、Arooj Aftab 各 9 次（補第二源）放行；Andrew Hill 的 NEA Jazz Master 以頒獎單位官網為單一權威來源，接受。
+- 待本機（上線簡介）：Adelaide Hall「Ellington 首次讓女歌手錄音」無出處；Adele Sebastian「長笛乾淨少顫音」與來源不符；Akira Ohmori 簡介的 Mingus 錄音年（1978 錄、1979 發）與身分推定；Andy Williams《Moon River》「前一個十年的電影主題」不準；Angela Bofill《Angie》半形標點。
