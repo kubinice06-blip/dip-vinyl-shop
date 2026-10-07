@@ -355,3 +355,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 同名作廢：James Mason（英國演員）、Jeff Phelps（體育主播）、John Gordon（英國作家）、John Taylor（Duran Duran 貝斯手）的維基預抓。
 - 放寬額度：James Moody / George Wallington 273（雙人卡）、Jimmy Scott 272（人物故事），接受。
 - 待本機（上線簡介）：Jimmie Lunceford「師範出身」應為 Fisk University；Jimmy Raney《A》發行年（1957／1958）待核；Joe McPhee《Nation Time》編制漏鋼琴與貝斯。
+
+## ar-d-008（2026-10-07）
+
+- 39 位全上（34 full、5 thin：Kalaparusha Maurice McIntyre、Kalaparusha Maurice McIntyre Quartet、Kellee Patterson、Kočani Orkestar、Le Trio Camara）。審稿修 3 處：Johnny Smith 刪妻兒死因（改「妻子過世後」）；Kenny Garrett 刪單源「繼 Parker 之後最受敬重」；Keith Mansfield / John Cameron 整篇重寫——原稿與 d-007 Cameron 本名卡（酒吧彈琴、〈Whole Lotta Love〉）及本批 Mansfield 本名卡（《Grandstand》、Madlib 取樣）大段重疊，改寫 KPM 匿名、CCS 後「自己抄自己」與〈Hyde Park〉巴西片頭故事（258 字，雙人卡）。
+- 身分更正：Le Trio Camara 是流亡巴黎的三位巴西樂手，不是法國團；Jupiter & Okwess 維基預抓為行星，作廢；Joyce 的 Cravo Albin 條目同名者（Joyce Alane）排除。
+- Julie Tippetts〈This Wheel's on Fire〉英國榜第 5 名列必要例外（在世者核心成績，Official Charts＋維基兩源）。
+- 待本機（上線簡介）：Kočani Orkestar「樂隊因《Borat》與片方興訟」與來源不符（提告的是 Esma Redžepova 與前領軍，獲賠者僅 Redžepova），另有中英空格與半形逗號；Keith Mansfield / John Cameron《Voices in Harmony》「那個編曲」指代不清；Kenny Clarke & Francy Boland《The Golden Eight》寫八人只列七位；Lee Konitz & Red Mitchell 卡池年 1976，錄音為 1974 年 7 月；Johnny Hodges《Back to Back》genres 標 classical 疑誤。
