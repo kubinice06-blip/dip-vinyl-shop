@@ -723,10 +723,13 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：classic 1、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 8），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "店主 2026-10-07 指定為流亡卡（pearl）。門檻符合：obscurity 5（自費壓製的私製盤）、Last.fm listeners 8，低於 300。",
+    "evidenceUrls": [
+     "https://www.discogs.com/release/20594359",
+     "https://www.discogs.com/artist/10134358"
+    ]
    },
    "description": {
     "text": "モア是一群業餘樂手組成的日本樂團，這張 1983 年的同名唱片是自己出錢壓製的私製盤，網路上幾乎查不到任何音源與背景。乍聽像一張普通的 80 年代民歌專輯，翻開內頁，才發現作曲家佐藤勝寫下的一則小故事：一切源於一個單純的願望，「我們想做一張唱片」。成員都是業餘者，仍然滿懷誠意，三天錄完、一週混音，靠的不是技術，而是製作人口中的「歌心」。不完美，卻無比真實；它的重要不在市場，而在於它本身就是一段快樂時光的證據。",
@@ -749,8 +752,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

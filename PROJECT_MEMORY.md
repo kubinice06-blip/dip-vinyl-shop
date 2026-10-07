@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-07｜dip-vinyl-shop｜モア《モア》改為流亡卡（pearl）
+
+同日第二筆。店主點名把當天上架的モア《モア》（1983，自費壓製的私製盤）升為流亡卡。
+門檻符合 `ALBUM_ONBOARDING` §3：obscurity 5、Last.fm listeners 8（低於 300）；三軸 1/5/2 不變。
+- `seed_cards.json`：該列補第 8、9 欄 `null, "pearl"`。卡池 18,666 張不變，流亡 108 → **109**（一般 17,748／殿堂 693／異端 116）。
+- `onboarding-manifest-add-20261005-shop-20261007.json`：`apexAssessment` 改為 eligible／pearl，附兩個 Discogs 證據網址；`published` 改記 `apexPool`。
+- `batch-progress/add-20261005-shop/local-20261007.json` 加 `apex` 欄，`shop-localize.mjs` 支援它（重跑轉檔不會洗掉）。
+- `album_overrides` 沒有這張的文件，前台的級別讀卡池第 9 欄，不需要經後台。`card_catalog` 的稀有度照公式仍是 rare，沒動。
+- 驗證：published gate 該批 12 張 0 error。
+
 ### 2026-10-07｜dip-vinyl-shop｜店內販售區第二、三波新卡 25 張上架（卡池 18,641 → 18,666），卡片簡介改用門市版
 
 **店主 2026-10-07 指示（往後照辦）：卡池沒有的店內專輯，建卡時卡片簡介直接用店內版（門市版）介紹，不另外研究與寫作。**
