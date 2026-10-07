@@ -99,8 +99,8 @@ header { font-size: 5pt; }
 .artist { font-size: 7pt; margin-bottom: 1mm; }
 h1 { font-size: 13pt; }
 .axes { padding: 1.5mm 0; } .ax em { font-size: 5.2pt; } .st { font-size: 7.6pt; }
-.text { margin-top: 2.4mm; font-size: 7.9pt; line-height: 1.72; }
-.long .text { font-size: 7.6pt; line-height: 1.68; }
+.text { margin-top: 2.4mm; font-size: 9pt; line-height: 1.5; }
+.long .text { font-size: 9pt; line-height: 1.5; }
 footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }` : ''}
 </style></head><body>
 ${rows.map(card).join('\n')}
