@@ -279,3 +279,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超限放行：György Kurtág 10 次（多出兩次是 Wolf 基金會頁 503、Boosey PDF 不可讀後的替代第二源，視同失敗請求補位）；Ensemble Organum 9 次（替 thin 稿補 legacy）。補洞層自行填 `overCapOk: true` 的一律由主線改寫為理由字串；之後派工提醒補洞層不得自行放行。
 - István Kertész 1973 年游泳溺斃：與維也納愛樂無指揮錄完 Brahms 致意的故事相連，列必要例外。Hauschka、Hildur 的奧斯卡等皆兩源。
 - 待本機（上線簡介）：Emerson String Quartet《Bartók》葛萊美年份（第 32 屆、1990）；傅聰《Chopin: Nocturnes (1978)》「第一位在國際比賽獲獎的中國音樂家」宜改「最早之一」。
+
+## ar-c-031 補洞（2026-10-07）
+
+- René Jacobs、Riccardo Chailly 各 9 次：多開的是補第二源的頁面、非重複搜尋，`overCapOk` 放行。派工 common-gap 加一句：補洞層不得自行填 overCapOk。
+
+## D 級開跑（ar-d-001 起）
+
+- 依 ARTIST_INTRO_PLAN §356 定案：D 級照常寫、素材不足自動落 thin，不另立規則。編制掛名（X Trio、X & Y）主詞照名冊，寫該編制或該張唱片的特色；同領隊多個掛名不互抄。
