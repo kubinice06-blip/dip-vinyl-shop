@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **248** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 10、已退回 1）。
-最後更新：2026-10-06T17:30:00Z
+共 **249** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 11、已退回 1）。
+最後更新：2026-10-07
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -620,6 +620,12 @@
 |---|---|---:|---|---|---|---|
 | Gil Evans 《Farewell - Live at Sweet Basil》 | [#2047335](https://www.discogs.com/release/2047335) | 1988 | Electric Bird | K28P 6486 | 年份 1988、廠牌 Electric Bird | pending |
 | The Great Jazz Trio 《Great Standards Vol. 2》 | [#6493512](https://www.discogs.com/release/6493512) | 1988 | Alfa Jazz | 28R1-12 | 年份 1988、廠牌 Alfa Jazz | pending |
+
+## cover-fix-20261007（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 佐藤允彦トリオ 《Palladium》 | [#6446139](https://www.discogs.com/release/6446139) | 1969 | Express | EP-8004 | 目錄號 EP-8004（封面四角印同號）、年份 1969、廠牌 Express、MB RG c1be243a 同盤（CAA 只有 2005 年 BRIDGE-043 再版帶側標的照片） | ok |
 
 ## csea（2 張）
 
