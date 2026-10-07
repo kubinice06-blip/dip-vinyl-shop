@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 497 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 501 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -493,6 +493,10 @@
 | ar-d-012 | SOIL & "PIMP" SESSIONS | Pimp Master | 東京六人編制 2005 年 2 月的首張全長作由 Victor 發行 | 英文維基《Pimp Master》寫發行日是 2005 年 6 月 23 日、是第二張錄音室專輯（前一張為 2004 年《Pimpin'》）；《Pimpoint》條目的專輯序列（Pimp Master 2005、Pimp of the Year 2006、Pimpoint 2007 為第四張）與之一致。月份與「首張」皆需改，建議本機再核對 Victor 官方或 Discogs。 | https://en.wikipedia.org/wiki/Pimp_Master |
 | ar-d-012 | Sona Jobarteh | Fasiya | 堂兄為 Toumani Diabaté | 維基與 Mail & Guardian 只寫 cousin，且兩人姓氏不同（Jobarteh 與 Diabaté），『堂兄』指同姓父系，與來源不符；宜改寫為表親或堂表親。 | https://en.wikipedia.org/wiki/Sona_Jobarteh |
 | ar-d-013 | Syrius | Devil's Masquerade | 英文歌詞由 Charlie Fischer 寫 | 開頁讀到的來源（匈牙利文 Origo、英文維基 Orszaczky 條）都拼作 Fisher，Fischer 拼法待核；若以 Discogs 製作欄或原盤封底為準則維持，請店主對照原盤 | https://www.origo.hu/kultura/2008/02/az-elfeledett-legenda-orszaczky-jackie-es-a-syrius-tortenete |
+| ar-d-013 | The Golden Gate Quartet | Swing Down, Chariot | 1937 年 8 月 14 日的首次 Bluebird 錄音兩小時內錄完十四首 | 日期來源不一：維基寫 8 月 14 日，encyclopedia.com 與（搜尋摘要所述）UCSB 唱片錄音史資料庫寫 8 月 4 日；建議簡介改寫「1937 年 8 月」或只寫 1937 年 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/golden-gate-quartet |
+| ar-d-013 | The Golden Gate Quartet | Swing Down, Chariot | 1941 年在羅斯福就職典禮獻唱，成為首組在憲法廳獻唱的黑人團體 | 開得到的來源（encyclopedia.com）只寫他們在 1941 年羅斯福就職晚會於 Constitution Hall 演出，沒有「首組黑人團體」的說法；這句只見搜尋摘要，屬「第一」類宣稱，建議簡介刪去「首組」或找到兩源 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/golden-gate-quartet |
+| ar-d-013 | The Golden Gate Quartet | Swing Down, Chariot | 1940 年轉入 Columbia 旗下的 OKeh | Cross Rhythms 寫 1939 年起為 Columbia 錄音，與簡介的 1940 年與 OKeh 不同；未見 OKeh 的來源，建議核對 | https://www.crossrhythms.co.uk/articles/music/Gospel_Roots/9265/p1/ |
+| ar-d-013 | The Greyboy Allstars | West Coast Boogaloo | James Brown 班底的長號手 Fred Wesley 全程參與、共同掛名 | DownBeat 樂評寫 Wesley 在「數首曲子」裡獨奏，Whopperjaw 與維基都稱他是首張的特別來賓（special guest）；「全程參與、共同掛名」與這些來源不符，建議改為「特別來賓、在數首曲子裡獨奏」，除非有封面或唱片標佐證 | https://downbeat.com/reviews/detail/west-coast-boogaloo |
 | ar-d-013 | The Modest Jazz Trio | Good Friday Blues | 團名只用過這一次，三個人對等：Jim Hall 的吉他，加兩把低音，沒有鼓。兩位低音手 Red Mitchell 與 Red Kelly 都叫 Red。 | Red Mitchell 在這張彈的是鋼琴，貝斯是 Red Kelly 一人；Blue Note Tone Poet 頁寫 Jim Hall 吉他、Red Mitchell 鋼琴、Red Kelly 貝斯，MusicBrainz 的團體成員關係也記 Mitchell 為 piano、Kelly 為 bass。簡介的『加兩把低音』與『兩位低音手』須改為吉他、鋼琴、貝斯。 | https://shop.udiscovermusic.com/products/modest-jazz-trio-good-friday-blues-tone-poet-vinyl-series-lp |
 | ar-d-013 | The Muddy Basin Ramblers | Formosa Medicine Show | 這是 2003 年由住在台北的美籍與英籍外僑組成的 jug band 第二張專輯 | 英文維基《The Muddy Basin Ramblers》寫 formed in 2002，《Taipei Times》2015 年 2 月報導寫樂團 2002 年由外僑成立；兩源皆為 2002 年，簡介的 2003 年應改為 2002 年。維基《Formosa Medicine Show》條目寫 2003 年，與同家族的樂團條目互相不一致。 | https://www.taipeitimes.com/News/feat/archives/2015/02/02/2003610619 |
 | ar-d-013 | The Mystery Kindaichi Band | 金田一耕助の冒険 | 一張虛構的電影原聲帶 | 來源（Wewantsounds 文案轉載）寫的是以橫溝正史小說為本的 imaginary soundtrack、並非任何官方電影或電視配樂；1977 年 LP 早於 1979 年的同名東映電影，也與之無關。「電影原聲帶」易讓人誤會是某部電影的配樂，建議改成「以小說為題的想像原聲帶」。 | https://goodtasterecords.com/collections/lp-albums/products/mystery-kindaichi-band-the-adventures-of-kindaichi-kosuke-vinyl-lp |

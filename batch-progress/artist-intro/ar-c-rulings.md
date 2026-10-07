@@ -393,3 +393,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分更正：Sphere 是底特律 Larry Nozero 的團（Strata，1970 年現場、1974 年發行），不是 Charlie Rouse 的同名 Monk 致敬團；Shintaro Quintet 維基預抓為漫畫家，作廢；Steve Lacy 兩卡的維基預抓為 1998 年生同名吉他手，作廢。
 - 搜尋超限放行：Sumiko Yoseyama 9 次（開沖繩專題頁補出生地等第二源）。日文名「与世山澄子」依台灣字形寫成與世山澄子（研究稿同步改字，避開 QA 簡體誤判），小浜島寫小濱島。
 - 待本機（上線簡介）：Savina Yannatou《Sumiglia》「轉入 ECM 後第一張」不實（ECM 首作是 2003《Terra Nostra》）、樂團成軍年待核；Shadowfax 葛萊美類別應為 Best New Age Performance；SOIL & "PIMP" SESSIONS《Pimp Master》非首張全長作（首張是 2004《Pimpin'》）；Sona Jobarteh「堂兄 Toumani Diabaté」宜改「表親」；Sir Roland Hanna Trio 卡池專輯名全名為《Milano, Paris, New York: Finding John Lewis》；Salah Ragab《Egyptian Jazz》發行年（2006／2017）待核。
+
+## ar-d-013（2026-10-07，再十批接力最後一批）
+
+- 38 位上架（31 full、7 thin：Svein Finnerud Trio、Takashi Furuya、Takashi Miyasaka Quintet、The Bad Plus、The John Betsch Society、The Music Improvisation Company、The Mystery Kindaichi Band），1 位不寫：The Ensemble Al-Salaam（三格查無，只有廠牌與目錄號）。審稿修 2 處：Sun Ra & Walt Dickerson 刪與 Solar-Myth 篇重複的「自稱來自土星、Afrofuturism 先驅」句；The Modest Jazz Trio 刪與 d-007 Jim Hall & Ron Carter 重複的 Metheny／Frisell 影響句。
+- Tenório Jr（272）：1976 年在布宜諾斯艾利斯失蹤是故事主體，只寫失蹤情境與 2025 年法醫小組以指紋確認身分（兩源），不寫遺體、槍傷、下葬。Terje Rypdal & Vitous & DeJohnette（278，三人卡）接受。
+- The Bad Plus 2026 年宣布解散（兩源）寫一處。人聲團體名人堂評語比照搖滾名人堂，可具名。
+- 身分更正：The Oscar Peterson Trio With Herb Ellis《Hello Herbie》班底為 Sam Jones、Bobby Durham（非 Ray Brown／Ed Thigpen）；The Mystery Kindaichi Band 是以橫溝正史小說為本的想像原聲帶，與 1979 年同名電影無關；THE SQUARE 維基預抓為幾何條目，作廢。
+- 待本機（上線簡介）：The Golden Gate Quartet 首次 Bluebird 錄音日（8/4 或 8/14）、「首組在憲法廳獻唱」無出處、轉入 OKeh 年份；The Greyboy Allstars「Fred Wesley 全程參與、共同掛名」不實（特別來賓）；The Modest Jazz Trio「兩位低音手」不實（Red Mitchell 彈鋼琴）；The Muddy Basin Ramblers 成立年應為 2002；The Mystery Kindaichi Band「虛構的電影原聲帶」宜改「想像原聲帶」；The Piano Choir《Handscapes》為兩場錄音；Syrius「Charlie Fischer」拼法待核；Tenório Jr 上線簡介含遺體、槍傷與下葬細節，建議刪減。
+- **再十批接力完成**（ar-d-004～013）。
