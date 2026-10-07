@@ -70,3 +70,8 @@ Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字
 - 門市版介紹：在售 68 張全數有預設稿（`descs.json`）。
 - 藝人介紹 ar-d-119 上架 7 位（桃井かおり 素材不足略過），分片 3087 位。
 - 以上各項已補記 `PROJECT_MEMORY.md`（2026-10-07 那一筆）。
+
+## 曲風分區（2026-10-07）
+- 曲風以 Notion「曲風」多選欄為準（Jazz、Soul、R&B、Hip-Hop、Rock、Folk、City Pop、Pop、Electronic、Soundtrack；Hip-Hop／R&B／Pop 為 2026-10-07 新增）。
+- 快照與 inventory.json 帶 `genres`；Worker /shop-inventory 回傳 `genres`（需本機重新部署 Worker 才生效）。
+- 後台「實體店庫存」依第一個曲風分區，每張卡下方顯示曲風標籤；Firestore 舊存檔沒有曲風時先用 repo 快照補，按「從 Notion 重新整理 → 套用並存檔」後改用 Notion 的值。

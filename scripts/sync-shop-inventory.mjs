@@ -6,7 +6,7 @@
 //
 // 更新流程：
 //   1. 由 Claude 以 Notion MCP 查表，覆寫 data/shop/notion-snapshot.json
-//      ——只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵→poolKey）；成本、利潤、抽成、群組不進 repo。
+//      ——只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵→poolKey、曲風→genres）；成本、利潤、抽成、群組不進 repo。
 //   2. node scripts/sync-shop-inventory.mjs           （乾跑，只報告）
 //      node scripts/sync-shop-inventory.mjs --write   （寫入 inventory.json）
 //
@@ -104,6 +104,7 @@ for (const row of snap.rows) {
     pressingYear: row.year ?? null,
     condition: row.condition ?? null,
     priceNT: row.priceNT ?? null,
+    genres: Array.isArray(row.genres) ? row.genres : [],
     note: NOTES[row.id] || null,
     firstSeen: old?.firstSeen || today,
   });
