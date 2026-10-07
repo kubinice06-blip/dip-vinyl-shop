@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 531 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 535 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -531,6 +531,10 @@
 | ar-d-019 | GQ | Disco Nights | 全張獲 RIAA 白金認證 | 維基只寫〈Disco Nights (Rock-Freak)〉單曲在美國賣破百萬張，本層兩個來源都沒有專輯白金認證的記載；建議主線核對 RIAA 資料庫，查不到就改寫成單曲銷量或刪去。 | https://en.wikipedia.org/wiki/GQ_(band) |
 | ar-d-019 | Gwen Guthrie | Gwen Guthrie | 開場〈Peek-A-Boo〉由 Compass Point All Stars 操刀 | Jamaica Observer 與 encyclopedia.com 都只說 1982 年這張專輯由 Sly & Robbie 製作；Compass Point All Stars 與〈Peek-A-Boo〉的歸屬僅見於搜尋摘要（說〈Peek-A-Boo〉是〈Padlock〉的後續單曲），無法確認是否為這張專輯開場曲，待查曲目表 | https://jamaicaobserver.com/2013/02/14/gwen-guthries-reggae-moments |
 | ar-d-019 | Howard Tate | Get It While You Can | 1967 年 4 月在 Verve 發行《Get It While You Can》 | Inquirer 訃聞與 xpn 都寫這張專輯是 1966 年的 Verve 首張，與上線簡介的 1967 年 4 月不一致；可能是單曲與專輯年份混用，待用 Discogs 或 Verve 目錄核對發行日 | https://www.inquirer.com/philly/obituaries/20111207_Howard_Tate__72__talented_soul_singer.html |
+| ar-d-020 | Junior | Ji | 〈Mama Used to Say〉先在美國打開局面 | 維基《Ji》頁寫 1981 年單曲、1982 年英國榜第 7，未見先在美國打開局面的說法；建議本機核對發行順序後決定是否改寫 | https://en.wikipedia.org/wiki/Ji_(album) |
+| ar-d-020 | Lenine | Na Pressão | 本作入圍 2000 年首屆拉丁葛萊美最佳 MPB 專輯 | 補查未找到佐證：維基 Lenine 條目只列 2015 年《Carbono》入圍第 16 屆拉丁葛萊美最佳 MPB 專輯，第 1 屆拉丁葛萊美頁取不到；請本機核對官方提名名單 | https://en.wikipedia.org/wiki/Lenine_(musician) |
+| ar-d-020 | Los Kjarkas | Canto a la Mujer de Mi Pueblo | 樂團憑德國 GEMA 登記提告勝訴 | en 維基寫法院為法國、確認著作權屬於 Los Kjarkas，未提 GEMA；本層查不到 GEMA 說法的來源，待核 | https://en.wikipedia.org/wiki/Los_Kjarkas |
+| ar-d-020 | Major Harris | My Way | 1975 年由 Atlantic 發行的首張個人專輯 | en 維基歌手條目寫《My Way》為 1974 年專輯，與卡池標示的 1975 年不一致，單源待核 | https://en.wikipedia.org/wiki/Major_Harris_(singer) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

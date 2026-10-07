@@ -449,3 +449,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 新近事實：Dexter Wansel 2026 年過世（Far Out＋Entertainment Now 兩篇訃聞），只寫年份；Dijon《Baby》與《Swag》葛萊美入圍兩源。
 - 同名作廢：Chocolate Milk（飲品）的維基預抓。
 - 待本機（上線簡介）：D Train 舞曲榜冠軍年 1981／1982 不一；Da Brat「Billboard 200 第十一名」維基措辭不清；Dennis Coffey 三把吉他 vs 12 把吉他說法；Chocolate Milk「在紐奧良成立」（另說 Memphis 創團）。
+
+## ar-d-019（2026-10-07）
+
+- 39 位上架（36 full、3 thin：Donell Jones、Eric Benét、GQ），1 位不寫：Garland Green（聲音與做法無可靠描述，寫作層只能拿「受過聲樂鋼琴訓練」充數，過不了 thin 門檻）。
+- 審稿修 12 處：單源最高級刪 6 處（Doris Duke「史上最好的 deep soul」、Double Exposure「最老練的人聲組」、Eddie Hazel「史上最偉大的獨奏」、Eddie Hinton「頂尖」、Fred & The New J.B.'s「最有影響力」、Fred Hammond「最受歡迎」）；Gyedu-Blay Ambolley「迦納最早的 rap」改「早期例證」；Hi-Tension 刪「最早屬於黑人英國人的音樂運動」；Fuzzy Haskins 刪名人堂入選人數；Howard Tate 女兒死因改「痛失」；Freeez 兩處榜單只留一處；另 d-018 Cassiano 刪與 Hyldon 篇重複的「三大先驅」句（已另提交）。
+- 放寬字數：Fantastic Negrito 273、Howard Tate 270（人生故事為主體）。
+- 搜尋超限放行：Gary Bartz NTU Troop 10（多出兩次為 NEA Jazz Master 2024 與 hip-hop 取樣的第二源）。Elaine Brown、Experience Unlimited 失敗請求 5 次（同篇文章兩個網址皆 403／猜網址 404），不影響事實，放行。
+- 同名作廢：Harlem River Drive（曼哈頓高速公路）的維基預抓。
+- 待本機（上線簡介）：Elaine Brown 委託錄音「1968 年」（另說 1969 年 1 月後）；Doris Duke「唱片打進 R&B 榜第 7 名」實為單曲〈To the Other Woman〉；Experience Unlimited《Free Yourself》簡介通篇講資料庫欄位；Fantastic Negrito 車禍年 1999／2000；Faze-O「只留下這張首作」（實出三張）；Gwen Guthrie〈Peek-A-Boo〉由 Compass Point All Stars 操刀無出處；Howard Tate 發行月份 1967／1966；GQ《Disco Nights》「全張白金」無出處。
