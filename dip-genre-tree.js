@@ -7,7 +7,9 @@
  * 兩份都是 scripts/build-genre-tree.mjs 產生的靜態檔，走瀏覽器快取，抽卡零 API。
  *
  * 用法（index.html 接線）：
- *   DipGenreTree.configure({ host, loadCardPool, onResult, onError });
+ *   DipGenreTree.configure({ host, loadCardPool, onResult, onError, topOnly, backHref });
+ *   topOnly：只選大類、選了就抽（店內挖寶用，2026-10-07 店主：「只需大分類就好，細分不用」），
+ *            大類只列卡池裡有卡的，按鈕附張數。backHref：第一層「回上一頁」要去的頁面。
  *   DipGenreTree.start();
  *
  * onResult 收到 { artist, album, path, pathZh, ratings } 後，由呼叫端沿用既有的
@@ -17,7 +19,7 @@
   'use strict';
 
   const DATA = { tree: null, cards: null, promise: null };
-  let cfg = { host: null, loadCardPool: null, onResult: null, onError: null };
+  let cfg = { host: null, loadCardPool: null, onResult: null, onError: null, topOnly: false, backHref: 'find.html' };
   let seen = new Set();          // 本次 session 抽過的卡，跨層保留
   let path = [];                 // 目前選到的節點 [{id, zh}]
   let pool = null;               // seed 卡池（由 loadCardPool 提供）
@@ -59,7 +61,12 @@
   function draw() {
     const all = candidates();
     if (!all.length) return null;
-    const fresh = all.filter(c => !seen.has(`${c.artist}|${c.album}`.toLowerCase()));
+    let fresh = all.filter(c => !seen.has(`${c.artist}|${c.album}`.toLowerCase()));
+    // 店內挖寶（topOnly）一類常只有幾張，抽光就把這一類的紀錄清掉重來，不讓客人卡在錯誤頁
+    if (!fresh.length && cfg.topOnly) {
+      for (const c of all) seen.delete(`${c.artist}|${c.album}`.toLowerCase());
+      fresh = all;
+    }
     const list = fresh.length ? fresh : null;   // 抽完就回報，不自動重來
     if (!list) return { exhausted: true };
     const c = list[Math.floor(Math.random() * list.length)];
@@ -76,10 +83,17 @@
     if (el) el.innerHTML = html;
   }
 
-  function chips(items, back) {
+  // 大類 → 卡池內主類型張數（topOnly 用）
+  function topCounts() {
+    const n = {};
+    for (const c of (pool?.cards || [])) { const g = c.genres[0]; if (g) n[g] = (n[g] || 0) + 1; }
+    return n;
+  }
+
+  function chips(items, back, counts) {
     return `
       <div class="gt-chips">
-        ${items.map(x => `<button class="gt-chip" data-gt-pick="${esc(x.id)}">${esc(x.zh)}</button>`).join('')}
+        ${items.map(x => `<button class="gt-chip" data-gt-pick="${esc(x.id)}">${esc(x.zh)}${counts ? ` <span class="gt-chip-n">${counts[x.id]}</span>` : ''}</button>`).join('')}
       </div>
       <div class="gt-nav">
         ${path.length ? `<button class="gt-any" data-gt-any>這一層隨便挑 →</button>` : ''}
@@ -100,6 +114,16 @@
     const { node, children } = path.length ? currentNode() : { node: null, children: DATA.tree.genres };
     // 沒有下一層可選就直接抽
     if (path.length && !children.length) return pick();
+    if (!path.length && cfg.topOnly) {
+      const n = topCounts();
+      render(`
+        <div class="gt-head">
+          <div class="quiz-question">想聽哪一類？</div>
+          <div class="gt-sub">選一個大類，從店裡現有的唱片抽一張。</div>
+        </div>
+        ${chips(DATA.tree.genres.filter(g => n[g.id]), '↩ 回上一頁', n)}`);
+      return;
+    }
     if (!path.length) {
       render(`
         <div class="gt-head">
@@ -165,13 +189,19 @@
         const id = pickBtn.dataset.gtPick;
         const { children } = path.length ? currentNode() : { children: DATA.tree.genres };
         const node = children.find(x => x.id === id);
-        if (node) { path.push({ id: node.id, zh: node.zh }); renderStep(); }
+        if (node) { path.push({ id: node.id, zh: node.zh }); if (cfg.topOnly) pick(); else renderStep(); }
         return;
       }
       if (e.target.closest('[data-gt-any]')) { pick(); return; }
       if (e.target.closest('[data-gt-back]')) {
+        // topOnly 只有一層：大類選單上的「回上一頁」離開；錯誤頁的「換一層」回大類選單
+        if (cfg.topOnly) {
+          if (e.target.closest('.gt-nav')) location.href = cfg.backHref;
+          else { path = []; renderStep(); }
+          return;
+        }
         if (path.length) { path.pop(); renderStep(); }
-        else location.href = 'find.html';
+        else location.href = cfg.backHref;
         return;
       }
       if (e.target.closest('[data-gt-again]')) { pick(); return; }
