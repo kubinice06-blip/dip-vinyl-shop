@@ -347,3 +347,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Jackie McLean & Dexter Gordon《Montmartre Summit 1973》查無專輯條目，推定為 1973 年 7 月哥本哈根 Montmartre 同場錄音的後來版本，正文只寫同台現場。Howard Riley 的維基預抓為足球員，作廢。
 - Hailu Mergia & Dahlak Band 278 字（人物故事為主體），接受。
 - 待本機（上線簡介）：Glenn Miller〈In the Mood〉國家錄音登記年（2002／2004）；Harold Arlen「1956 年 LP 才第一次成為唱片」不實（1939 已有 Decca 歌聲專輯）；Hailu Mergia 點名的〈Bati Bati〉〈Yene Nesh Wey〉查無；Hiromi《Another Mind》「年度海外爵士專輯」與頒獎年待核。
+
+## ar-d-007（2026-10-07）
+
+- 39 位全上（35 full、4 thin：James Mason、Jeff Phelps、Joe Bonner、John Gordon）。審稿修 4 處：Scofield、John Taylor 刪單一來源的「同世代最具影響力／最偉大」評價；Jemeel Moondoc & Muntu 的成團地點改為與 d-005 Ensemble Muntu 一致（1971 年在大學與同伴組成，1972 年後移居紐約，d-005 稿兩源）；Jimmy Scott 母親死因改「喪母」。
+- 搜尋超限放行：John Cameron 9 次（同頁重開，糾正「得獎」誤讀為入圍，無新事實）。
+- 同名作廢：James Mason（英國演員）、Jeff Phelps（體育主播）、John Gordon（英國作家）、John Taylor（Duran Duran 貝斯手）的維基預抓。
+- 放寬額度：James Moody / George Wallington 273（雙人卡）、Jimmy Scott 272（人物故事），接受。
+- 待本機（上線簡介）：Jimmie Lunceford「師範出身」應為 Fisk University；Jimmy Raney《A》發行年（1957／1958）待核；Joe McPhee《Nation Time》編制漏鋼琴與貝斯。

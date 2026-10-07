@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 476 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 477 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -476,6 +476,7 @@
 | ar-d-007 | Jimmie Lunceford | Lunceford Special | Lunceford 是師範出身的樂團訓練者 | Lunceford 讀的是納許維爾的 Fisk University（Britannica 稱取得學位，另在紐約市立學院念過研究所課程），並非師範學院出身；他當過孟菲斯高中的音樂與體育老師，『師範出身』容易讀成讀過師範學校，建議改成『曾任高中老師、Fisk 大學出身』 | https://www.britannica.com/print/article/351395 |
 | ar-d-007 | Jimmy Raney | A | 1958 年由 Prestige 以單字母《A》為題發行 | 英文維基《A》專輯頁寫 1957 年由 Prestige 發行（PR 7089）；卡池年份欄為 1958，與維基不一致，單源，待本機以 Discogs 或 Prestige 目錄核對 | https://en.wikipedia.org/wiki/A_(Jimmy_Raney_album) |
 | ar-d-007 | Joe McPhee | Nation Time | 身後是風琴、電吉他與兩位打擊樂手 | 維基專輯頁列的陣容核心是 Mike Kull（鋼琴與電鋼琴）、Tyrone Crabb（貝斯與電貝斯）與兩位打擊樂手，風琴（Herbie Lehman）與吉他（Dave Jones）、中音薩克斯風（Otis Greene）只在部分曲目出現；簡介只列風琴、電吉他與打擊樂，漏了鋼琴與貝斯，可能讓讀者以為沒有節奏組。建議改寫或補上。 | https://en.wikipedia.org/wiki/Nation_Time |
+| ar-d-008 | Keith Mansfield / John Cameron | Voices in Harmony | 「John Cameron 替 Donovan 編了美國冠軍單曲〈Sunshine Superman〉；那個編曲是他的樂團 CCS 為 Led Zeppelin 的〈Whole Lotta Love〉做的器樂版」 | 「那個編曲」緊接在〈Sunshine Superman〉之後，讀起來像是說〈Sunshine Superman〉的編曲就是 CCS 的〈Whole Lotta Love〉；實際上兩件事不同：維基寫 Cameron 與 Spike Heatley 共同為 Donovan 的〈Sunshine Superman〉編曲，而〈Whole Lotta Love〉器樂版是 Top of the Pops 主題曲的來源。建議拆成兩句、補明「Top of the Pops 主題曲」。 | https://en.wikipedia.org/wiki/John_Cameron_(musician) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
