@@ -370,3 +370,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 新近事實：Mike Westbrook 2026 年 4 月過世（維基、The Jazz Mann、UK Jazz News 三源）；Louis Moholo 2025 年 6 月過世（Songlines、Jazz Journal）。
 - Masao Nakajima 的漢字「中島政雄」無來源，正文只寫拼音；Masahiko Togashi 受傷不寫肇因。
 - 待本機（上線簡介）：Makoto Terashita《Topology》錄音年（1984／原版 1983 首發）待核；Maria Bethânia《Álibi》銷量口徑（90 萬對破百萬）待核。
+
+## ar-d-010（2026-10-07）
+
+- 39 位上架（33 full、6 thin：Milton Marsh、Mitsuaki Katayama Trio、Mixed Bag、Moriyama Takeo Percussion Ensemble、Nate Morgan、Painkiller），1 位不寫：Muriel Winston（身世、聲音、地位三格查無，國籍與聲音皆無出處，過不了 thin 門檻；Bill Lee 是否 Spike Lee 之父無來源，不寫）。審稿修 2 處：Nat Adderley 的英文戲稱改中文；Nucleus 刪單一樂評的「這些島嶼對現代音樂真正的貢獻」。
+- Mitsuaki Katayama：可能即バイソン片山，但無來源寫明本名或這張是他的作品，正文只寫拼音名與廠牌脈絡，不寫漢字與身分連結。
+- Oscar Peterson Trio《Tristeza on Piano》班底為 Sam Jones 與 Bobby Durham（主線特注猜 NHØP，補洞層依維基與 MusicBrainz 推翻）。Old and New Dreams 卡池為 1977 年 Black Saint 版，與 1979 年 ECM 同名專輯分開。
+- Nara Leão 276 字（bossa nova 公寓、《Opinião》、提攜 Bethânia、Drummond 辯護），接受。
+- 待本機（上線簡介）：Nara Leão《Dez Anos Depois》「一度宣布退出歌壇」無出處；Original Dixieland Jazz Band《The 75th Anniversary》Victor 18255 發行月日（3 月／5 月）待核；Paolo Conte「CGD 二十年合作」無出處；Nucleus《We'll Talk About It Later》班底少列 Brian Smith、John Marshall，Jenkins 樂器待核；Mulgrew Miller《Grew's Tune》卡池 2012 為錄音年（2013 發行）。

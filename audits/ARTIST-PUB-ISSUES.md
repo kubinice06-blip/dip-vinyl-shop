@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 481 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 487 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -481,6 +481,12 @@
 | ar-d-008 | Kočani Orkestar | L'Orient est rouge | 「北馬其頓Kočani的羅姆銅管樂隊,2000年前由小號手Naat Veliov領軍」整段 | 格式不合房規：中文與英數之間沒有空格、中文行文用了半形逗號「,」，且「Borat」「Siki siki baba」等處同樣缺空格；屬格式問題，不是事實錯誤。 | https://en.wikipedia.org/wiki/Ko%C4%8Dani_Orkestar |
 | ar-d-009 | Makoto Terashita | Topology | 1984 年 6 月 11 日錄於 Victor Studio，Aketa's Disk 的 AD-16 | BBE 與 Audiopile 都寫原版 1983 年於 Aketa's Disk 發行；若 1983 年屬實，簡介的 1984 年錄音日期與卡池年份 1984 需主線核對 Discogs 版次。簡介本身只寫錄音日，未寫發行年，故僅提示。 | https://bbemusic.com/product/topology |
 | ar-d-009 | Maria Bethânia | Álibi | 第一張賣到九十萬張的巴西女歌手唱片，單曲〈Álibi〉本身售出逾七十八萬張 | 兩個來源（Brasil de Fato 2025、維基）都寫《Álibi》1978 年賣破一百萬張、是第一位達此門檻的巴西女歌手；九十萬與單曲七十八萬可能是另一種口徑（例：特定認證或統計時點），需主線核對上線簡介的出處再決定是否改口 | https://www.brasildefato.com.br/2025/02/14/60-curiosidades-e-informacoes-sobre-os-60-anos-de-carreira-de-maria-bethania/ |
+| ar-d-010 | Nara Leão | Dez Anos Depois | 1969 年在軍政府壓力下移居巴黎，「一度對外宣布退出歌壇」 | 來源只寫她 1970 年代為家庭暫離音樂、不想再要那種事業的喧囂，查不到她對外「宣布退出」的出處；「二十四首」也未能在專輯條目核對 | https://en.wikipedia.org/wiki/Nara_Le%C3%A3o |
+| ar-d-010 | Nucleus | We'll Talk About It Later | 碟上是 Carr 的小號、Karl Jenkins 的上低音薩克斯風與雙簧管、Chris Spedding 的吉他與布祖基琴、Jeff Clyne 的貝斯 | Be With Records 商品頁列的班底還有 Brian Smith（薩克斯風）與 John Marshall（鼓），上線簡介的名單少兩人；同頁把 Jenkins 列為電鍵盤，與簡介寫的上低音薩克斯風與雙簧管不一致。建議用 Discogs 或原盤背面核對。 | https://www.bewithrecords.com/products/nucleus-well-talk-about-it-later-lp |
+| ar-d-010 | Original Dixieland Jazz Band | The 75th Anniversary | 同年 3 月 7 日以 Victor 18255 發行 | 發行日各來源不一致：維基〈Livery Stable Blues〉寫 1917 年 3 月 7 日，維基樂團條目與 earlyjas.org 寫 1917 年 5 月；建議改寫成不帶日期的版本，或核對 Victor 目錄 | https://earlyjas.org/Personalities/FirstJazzRecording.html |
+| ar-d-010 | Paolo Conte | Paolo Conte (1984) | 也是他與 CGD 二十年合作關係的起點 | 義大利維基專輯條目只寫這是他在 CGD 的第一張、也是與經理人兼製作人 Renzo Fantini 合作的開端，沒有「二十年合作」的出處；建議核對或改寫成「他在 CGD 的第一張」 | https://it.wikipedia.org/wiki/Paolo_Conte_(album_1984) |
+| ar-d-011 | Paul Rutherford | The Gentle Harm of the Bourgeoisie | 這是史上第一張長號獨奏的自由即興唱片。 | 找不到任何來源把本盤稱為史上第一張；維基專輯頁只說它是 Rutherford 以個人名義的首張發行、是長號獨奏的重要錄音（1974 年錄、1976 年 Emanem 發行）。維基 Albert Mangelsdorff 條目記他 1972 年在 MPS 錄了第一張長號獨奏專輯《Trombirds》，比本盤早四年（該專輯偏爵士、是否算自由即興可議，但『史上第一張長號獨奏』站不住）。建議改成「他以個人名義的首張發行」或「長號獨奏的重要錄音」。 | https://en.wikipedia.org/wiki/Albert_Mangelsdorff |
+| ar-d-011 | Rien Djamain | Api Asmara | 這張 1975 年由萬隆的 Hidayat 唱片公司發行 | id.wikipedia 把《Api Asmara》列為 1976 年，kumparan 與 MusicBrainz 寫 1975；年份待核，建議店主以實體盤或 Discogs 版次確認。 | https://id.wikipedia.org/wiki/Rien_Djamain |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
