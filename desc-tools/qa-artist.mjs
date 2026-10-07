@@ -33,7 +33,8 @@ function allowFor(e) {
     .sort((a, b) => b.length - a.length)
 }
 function stripLegit(s, e) {
-  let t = String(s).replace(/《[^》]*》/g, '').replace(/〈[^〉]*〉/g, '')
+  // 「」內含假名的是日文專名（ハトの会），新字體「会」不算簡體（2026-10-07 芸能山城組）
+  let t = String(s).replace(/《[^》]*》/g, '').replace(/〈[^〉]*〉/g, '').replace(/「[^」]*[\u3040-\u30ff][^」]*」/g, '')
   for (const a of allowFor(e)) t = t.split(a).join('')
   return t
 }

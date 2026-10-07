@@ -233,3 +233,90 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 200 位全上，0 位略過；審稿共修 16 處。補洞層全程走來源分級新規則，未撞 WebSearch 上限（同時最多 6 支）。
 - 新增寫作特注：韓文與漢字相鄰補空格；QA 禁語「我／你」會誤擋含此字的曲名意譯與人名（我如古、〈그대에게〉意譯），寫作層改轉述即可，暫不改 QA。
+
+## 十批接力（ar-c-025～031、ar-d-001～003，2026-10-07 起）
+
+- 國籍改由補洞層照來源判定，主線不再預填國籍表（ar-c-020～024 主線預填有出錯風險，且省主線回合）；共同提醒放在 notes/common-gap、common-write。
+
+## ar-c-025（2026-10-07）
+
+- 40 位全上（37 full、3 thin：Julianna Barwick、Pharmakon、Riow Arai）。審稿修 2 處：Paul Kalkbrenner 補主詞；Nocturnal Emissions 拿掉 Fact 雜誌名與名次（單一媒體榜單），改寫「入選 1980 年代百大專輯榜單」。
+- **Lamb 同名混卡**：卡池《Lamb》（1996）是曼徹斯特二人組，《Lamb III》（1976）是美國彌賽亞猶太教團體 Lamb。介紹只寫曼徹斯特二人組；待本機把《Lamb III》的藝人鍵拆開（例如 Lamb (US)），否則該卡會掛到錯的介紹。
+- Leo Smith 是 Wadada Leo Smith，卡池《Divine Love》標 electronic 疑誤。Loreena McKennitt 1998 年未婚夫船難：作品空白期的原因，列必要例外。
+- 待本機（上線簡介）：Loreena McKennitt《The Visit》「安大略出身」（生於曼尼托巴）；Michael Stearns《Encounter》「第一張太空主題」；Kerri Chandler《Atmosphere E.P.》「長年駐場 Zanzibar」；Kevin Drumm《Imperial Distortion》存檔年份與兩點未證。
+
+## ar-c-026（2026-10-07）
+
+- 38 位上架（30 full、8 thin），2 位不寫：Suzukiski（只有本名一條、無聲音事實）、B2K（聲音格查無）——皆過不了 thin 最低門檻。審稿 0 處修改。
+- QA 新增：「」內含假名的日文專名（芸能山城組前身「ハトの会」）不判簡體。
+- TOKiMONSTA 的 Moyamoya 病與康復、The KLF 燒掉百萬英鎊：作品與生涯核心，列必要例外。50 Cent 的槍擊與逮捕照特注未寫。
+- 待本機（上線簡介）：日向敏文《Sarah's Crime》「雙城分校」（應為 Duluth 或只寫明尼蘇達大學）；阿爆《vavayan. 女人》2003 年「最佳重唱組合」查無（第 14 屆得主是 S.H.E）、第 28 屆最佳專輯製作人獎主詞是荒井十一；The Irresistible Force 2 條；Wagon Christ《Throbbing Pouch》年份。
+
+## ar-c-027（2026-10-07）
+
+- 40 位全上（33 full、7 thin）。審稿修 2 處：DOUBLE 刪姊姊的死因；Earl King 修語句。
+- E SENS 服刑期間發行《The Anecdote》、Dave 哥哥入獄、Binary Star 在懲教所成團：作品與團史核心，只寫事件層級，不寫案由。
+- QA 禁語「我」會誤擋「自我」等詞，寫作層一律改寫；暫不改 QA（改了要逐一界定詞表，風險大於效益）。
+- 待本機：Blue Lab Beats《Xover》卡池年份（2018）。
+
+## ar-c-028（2026-10-07）
+
+- 40 位全上（32 full、8 thin）。審稿 0 處修改。
+- Pete Rock & C.L. Smooth 搜尋 9 次（雙人組兩人都查、多出的是 Trouser Press）、Madlib 搜尋 10 次（Stones Throw 頁內容不可用改列失敗請求後為 9，多出的是補 Earl Sweatshirt 第二源）：`overCapOk` 放行。
+- slowthai 在 Mercury 典禮拿出首相假人頭：公開舞台行為、非指控，保留。Key Glock 母親入獄、Project Pat 談成長環境：家庭背景層級，保留。
+- 卡池曲風待本機：Johnny Gill《Johnny Gill》（1983）、Khalid 標 hiphop，實為 R&B。
+
+## ar-c-029（2026-10-07）
+
+- 40 位全上（32 full、8 thin）。審稿 0 處修改。
+- **舐達麻是日本（埼玉縣北部）嘻哈團體**，主線特注誤列台灣；寫作層照來源寫日本，正確。之後主線特注只標「照來源判定」，不再臆測國籍。
+- XXXTENTACION 只寫音樂與生卒年；Westside Gunn 提到 Conway 遭槍擊只作出道緣由，不寫案情。
+- 待本機（上線簡介）：Verbal Jint《Go Easy》首張迷你專輯名（應為《Modern Rhymes》，《누명》是 2008 年）；Ultramagnetic《Critical Beatdown》機型（SP-12）與 Public Enemy 一句；Westside Gunn《FLYGOD》客串名單；李英宏《水哥 2020》非最晚一張（2025 年有《東方美人》）；Alban Berg Quartett 組團年（1971）；Cortot「第一份電氣錄音」；Cluytens「同年該團解散」；卡池曲風 Troop（R&B）。
+
+## ar-c-030（2026-10-07）
+
+- 40 位全上（33 full、7 thin）。審稿修 2 處：Barenboim 補明「被 Furtwängler 稱為奇才」的說話者；Saariaho 刪「訃文寫道後輩受影響」（單一訃文作者判斷，QA 也擋轉述句）。
+- 搜尋超限放行：György Kurtág 10 次（多出兩次是 Wolf 基金會頁 503、Boosey PDF 不可讀後的替代第二源，視同失敗請求補位）；Ensemble Organum 9 次（替 thin 稿補 legacy）。補洞層自行填 `overCapOk: true` 的一律由主線改寫為理由字串；之後派工提醒補洞層不得自行放行。
+- István Kertész 1973 年游泳溺斃：與維也納愛樂無指揮錄完 Brahms 致意的故事相連，列必要例外。Hauschka、Hildur 的奧斯卡等皆兩源。
+- 待本機（上線簡介）：Emerson String Quartet《Bartók》葛萊美年份（第 32 屆、1990）；傅聰《Chopin: Nocturnes (1978)》「第一位在國際比賽獲獎的中國音樂家」宜改「最早之一」。
+
+## ar-c-031 補洞（2026-10-07）
+
+- René Jacobs、Riccardo Chailly 各 9 次：多開的是補第二源的頁面、非重複搜尋，`overCapOk` 放行。派工 common-gap 加一句：補洞層不得自行填 overCapOk。
+
+## D 級開跑（ar-d-001 起）
+
+- 依 ARTIST_INTRO_PLAN §356 定案：D 級照常寫、素材不足自動落 thin，不另立規則。編制掛名（X Trio、X & Y）主詞照名冊，寫該編制或該張唱片的特色；同領隊多個掛名不互抄。
+
+## ar-c-031（2026-10-07，C 級最後一批）
+
+- 34 位全上（32 full、2 thin：Roberto Cacciapaglia、澤野弘之）。審稿修 1 處：Aimard 的獎名改用原文 Ernst von Siemens（原稿用了日文中點）。
+- Myung-Whun Chung 第 9 次搜尋只重複確認、無獨有事實：比照齊豫放行。
+- Menuhin & Shankar（277）、武満徹（278）用放寬額度：雙人卡兩人都要寫、武満徹的「間」與國際化故事缺一不可，接受。
+- 待本機（上線簡介）：Roberto Cacciapaglia《Sei Note in Logica》「Jim O'Rourke、Fennesz 列為影響」（僅再版廠牌文案）與「很快轉向流行」不實；卡池疑點 Marian Anderson《The Lady From Philadelphia》是歷史錄音選輯、Feldman《Rothko Chapel》2009 年標 electronic。
+- **C 級全部完成**（ar-c-001～031）。
+
+## ar-d-001（2026-10-07，D 級第一批）
+
+- 39 位上架（38 full、1 thin），1 位不寫：Akira Ohmori（聲音格查無，且 Discogs 條目與 Mingus 錄音名單上的同名者無來源可連成同一人）。審稿修 1 處：Abdullah Ibrahim Trio 刪掉與 Ekaya 篇重複的 Cape jazz／〈Mannenberg〉句。
+- D 級第一批 full 比例遠高於計畫預估（計畫預期相當比例 thin），單張卡藝人多半是爵士史上有名有姓的樂手，素材夠。
+- Archie Shepp And The Full Moon Ensemble、Arooj Aftab 各 9 次（補第二源）放行；Andrew Hill 的 NEA Jazz Master 以頒獎單位官網為單一權威來源，接受。
+- 待本機（上線簡介）：Adelaide Hall「Ellington 首次讓女歌手錄音」無出處；Adele Sebastian「長笛乾淨少顫音」與來源不符；Akira Ohmori 簡介的 Mingus 錄音年（1978 錄、1979 發）與身分推定；Andy Williams《Moon River》「前一個十年的電影主題」不準；Angela Bofill《Angie》半形標點。
+
+## ar-d-002（2026-10-07）
+
+- 40 位全上（34 full、6 thin：Baroque Jazz Trio、Bhaskara、Billy Parker's Fourth World、Bong Peñera、Boogaloo Joe Jones、Boozoo Bajou）。審稿修 2 處：Blood, Sweat & Tears 的英文原句引語改中文轉述；Bill Evans Trio 的「LaFaro 死於車禍」改「意外過世」（死因避免，事件本身是專輯故事核心，保留）。
+- 搜尋超限放行：Blood, Sweat & Tears 9 次（第三源補 1970 東歐巡演與回國風波，爭議事件需兩源，非重複）。Ben Webster & Don Byas、Bill Charlap Trio 另用 MusicBrainz API 補第二源，不計入搜尋次數（API 查詢非 WebSearch／WebFetch，比照既有定義）。
+- Bill Evans 三個掛名（Trio 1961 年 Village Vanguard 現場、& Jim Hall《Undercurrent》、& Bob Brookmeyer《The Ivory Hunters》雙鋼琴）分寫各自編制；Arthur Blythe／Black Arthur Blythe 同一人分寫。
+- Boogaloo Joe Jones：維基與 wikidata 寫 2026 年過世但無獨立訃聞，新近事實單源，正文避開在世／已故用語。Billy Parker、Boogaloo Joe Jones 國籍以紐約廠牌（Strata-East、Prestige）推定為美國，接受。
+- Bix Beiderbecke 本卡為 1990 年 Columbia 選輯，此點出自補洞層 notes、未進 facts，寫作層照派工寫入；可逆，接受。
+- 待本機（上線簡介）：Black Renaissance《Body, Mind and Spirit》錄音日應為 1976 年 1 月 15 日（上線寫 6 月 15 日，兩源）；Bhaskara「第一支登上 North Sea Jazz 的印尼樂團」與約 7.5 萬捲卡帶僅維基單源；Bong Peñera 上線簡介的 1977 年、CBS／Sony 與錄音月份查無來源。
+
+## ar-d-003（2026-10-07，十批接力最後一批）
+
+- 40 位全上（34 full、6 thin：Charles Brackeen、Charles Kynard、Charles Sullivan、Charles Tyler、Chester Thompson、Chick Corea, Dave Holland, Barry Altschul）。審稿修 3 處：Cassandra Wilson 去掉《Time》刊名（媒體名不進正文）與無共識的過世地點；Carlos Garnett 1982 年息演的「憂鬱與藥物」改「陷入低潮」（私人狀況避免）。
+- Cassandra Wilson 2026 年 9 月過世：DownBeat、EWN、維基等多源，日期 1／2／3 日不一，只寫年月。Chucho Valdés 2025 NEA Jazz Master 以 NEA 官網與芝加哥交響樂團頁兩源。
+- Chester Thompson 確認為風琴手 Chester D. Thompson（Black Jazz《Powerhouse》、後入 Tower of Power），非 Genesis／Zappa 鼓手，維基預抓作廢。Chet Baker Trio 維基預抓為《Chet Baker Sings and Plays》，作廢，改查《Daybreak》。
+- Chet Baker 四個掛名、Charlie Haden 兩個、Clifford Jordan 兩個分寫各自編制；生平來源共用，搜尋次數記在其中一個掛名。Dave Holland 維基回消歧頁視同失敗請求不計。
+- 待本機（上線簡介）：Bunk Johnson「1931 年掉了小號與門牙」（來源為 1930 年 11 月）；Bunny Berigan「錄音幾乎全部集中在這六年」不實；Cab Calloway「第一張賣破百萬的爵士唱片」（來源只支持賣破百萬）；Carmell Jones「十年後是 Jarrett 三重奏的一半」年距不符；Cassandra Wilson《New Moon Daughter》應為 1995 年；Charles Brackeen「1940 年生於 Eufaula」生年與出生地有爭議；Chester Thompson《Powerhouse》「四人編制加一支長號」（長號含在四人內）；Chet Baker & Art Pepper《Playboys》「六重奏另加次中音與三人節奏組」（六人已含在內）；Chet Baker Quartet《Singin' in the Midnight》錄音與發行年待核對；Chick Webb《Spinnin' the Webb》「得年三十四」生年有爭議，宜只寫過世年份。
+- **十批接力完成**（ar-c-025～031、ar-d-001～003）。
