@@ -43,19 +43,20 @@ const inShop = new Set(inv.items.filter(i => i.status === 'in_stock').map(i => i
 Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字），2026-10-04 已填 23 筆；快照存成 `poolKey`，同步時優先採用。
 新進貨在 Notion 填好卡池鍵即可；空白的才走自動比對。
 
-## 現況（2026-10-05）
+## 現況（2026-10-07）
 
-26 筆全部 `in_stock`。缺卡的 3 張（Elmo Hope《Hope Meets Foster》《High Hope!》、ジョージ大塚トリオ《You Are My Sunshine》）已由 add-20261004-shop 上架；
-大塚那張封面印的是 The New George Otsuka Trio，對應寫在腳本的 `OVERRIDES`。Notion 這 3 列的「卡池鍵」還沒填，填了之後可以把那筆 override 拿掉。
+68 筆全部 `in_stock`、全部由 Notion「卡池鍵」對上卡池（`PENDING_NEW` 已清空）。
+三波缺卡共 28 張都已上架：add-20261004-shop 3 張、add-20261005-shop 12 張、add-20261006-shop 13 張。
+`OVERRIDES` 裡的幾筆現在都被卡池鍵蓋過，留著只是備援。
+後台「↻ 從 Notion 重新整理」要等 Worker 設好 `NOTION_TOKEN` 並部署才能用（本機部署被自動模式擋下，要店主自己跑）。
 
-## 待本機補記 PROJECT_MEMORY（雲端不碰該檔）
+## 門市版介紹（2026-10-06 店主定案；2026-10-07 修訂）
 
-> 2026-10-05｜dip-vinyl-shop＋dip-vinyl-worker｜後台「實體店庫存」加「↻ 從 Notion 重新整理」：Worker 新增 `/shop-inventory`（管理員金鑰、NOTION_TOKEN，只回公開欄位），
-> 後台比對新增／移除／改價後存 Firestore `settings/shopInventory`。驗證：Worker 路由以模擬 Notion 回應測 200／403／503 與分頁；後台 Playwright 模擬刪 1 增 2 改價 1，差異清單正確。待本機：設 NOTION_TOKEN、部署 Worker。
-
-## 門市版介紹（2026-10-06 店主定案）
-
-- **只給實體店用**（後台「🏪 實體店庫存」分頁、日後印出來給客人看），**不進卡池、不寫 KV、不取代卡牌遊戲版簡介**。
+- **2026-10-07 店主修訂：卡池沒有的店內專輯，建卡時卡片簡介直接用門市版**，不另外做卡牌版的研究與寫作。
+  新卡批的雲端段因此只要做身分、封面、試聽、三軸與門市版；本機段用 `batch-progress/shop-localize.mjs <批> <stamp>`
+  把門市版填進 manifest（撞到卡片禁語時在 `local-<stamp>.json` 的 `descReplace` 只改卡片那一份）。
+  卡池原本就有的卡，卡牌版簡介照舊、不被門市版取代。
+- 門市版本身仍然**給實體店用**（後台「🏪 實體店庫存」分頁、日後印出來給客人看）；店主在後台改過的版本只影響門市，不會回寫卡片。
 - 寫作規則：`SHOP_DESC_RULES.md`（給完全不懂音樂的人看；禁樂器解說、禁「也就是」式注解、禁「據…」轉述）。
 - 預設稿：`descs.json`（`node scripts/build-shop-descs.mjs <草稿.json>` 合併，會擋禁語與字數）。
   每筆 `key` = 卡池鍵正規化；待上架的另有 `ids`（Notion 頁面 id）讓後台對得上。
@@ -63,9 +64,9 @@ Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字
   按「還原預設稿」或存成和預設稿一樣的內容就會刪掉改過的版本。
 - 新進庫存：照規則寫門市版、跑合併腳本，跟卡池上架是兩條線。
 
-## 第三波（2026-10-06）雲端完成、待本機
-- Notion 新進 26 張：卡池已有 12 張＋宮沢昭《Bull Trout》＝池中《いわな》（卡池鍵已回寫 Notion）；新建卡 13 張（`batch-progress/add-20261006-shop/`，prepare gate 0 error，交接見 handoff.json）。
+## 第二、三波（2026-10-05／06 進貨，2026-10-07 本機上架完成）
+- 第二波 12 張（add-20261005-shop）、第三波 13 張（add-20261006-shop）已上架，published gate 0 error；Notion 25 列卡池鍵已填。
+- 宮沢昭《Bull Trout》＝池中《いわな》（卡池鍵已在 Notion）。卡池列沒有別名欄，「queryAlias 補 Bull Trout」沒有地方可寫，未做。
 - 門市版介紹：在售 68 張全數有預設稿（`descs.json`）。
 - 藝人介紹 ar-d-119 上架 7 位（桃井かおり 素材不足略過），分片 3087 位。
-- 本機待辦：add-20261006-shop 照 handoff.json 上架（KV／Firestore／album_overrides repaste／seed／published gate）；上架後 Notion 13 列補卡池鍵、PENDING_NEW 清掉、重跑同步腳本；池卡《いわな》queryAlias 補 Bull Trout。
-- PROJECT_MEMORY.md 待本機補一筆：2026-10-06 dip-vinyl-shop 店內販售區第三波＋門市版介紹機制（descs.json／SHOP_DESC_RULES.md／後台可編輯，Firestore settings/shopDescs）。
+- 以上各項已補記 `PROJECT_MEMORY.md`（2026-10-07 那一筆）。

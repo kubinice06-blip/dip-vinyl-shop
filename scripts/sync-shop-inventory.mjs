@@ -55,35 +55,7 @@ const NOTES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': '1976 Prestige 雙 LP 再版',
 };
 // 卡池尚無、走 dip-card-create 新建中的列。上架後移到 OVERRIDES 或讓自動比對接手。
-const PENDING_NEW = new Set([
-  // add-20261005-shop（2026-10-05 Notion 新進 12 張）
-  '3f00ad0255ff801aba1cf344d7dded98',
-  '3f00ad0255ff805dab62ce2cf1c59625',
-  '3f00ad0255ff801d80efd2749b256f8f',
-  '3f00ad0255ff80a4925cd52cdcd52c5a',
-  '3f00ad0255ff80918ab9cdb1b140b38a',
-  '3f00ad0255ff80aeb3cfc690a280157b',
-  '3f00ad0255ff8077ad7ed244edf6792b',
-  '3f00ad0255ff801a82e6d36027faadfa',
-  '3f00ad0255ff8003b6e1c2427c01a236',
-  '3f00ad0255ff806182f4c53b96fdbaf1',
-  '3f00ad0255ff80b7bac6d97d94cf1922',
-  '3ef0ad0255ff803f8228ee791b32cb17',
-  // 2026-10-06 Notion 第三波新進 14 張（卡池無）
-  '3f10ad0255ff8058842fd9ecdd571873',
-  '3f10ad0255ff80b49db3f5bb0ec296b6',
-  '3f10ad0255ff80679cdff9a5e6f69470',
-  '3f10ad0255ff802fab77e511d729ac00',
-  '3f10ad0255ff800fa960ff764af0dc23',
-  '3f10ad0255ff806888eaca9373bcb06a',
-  '3f10ad0255ff80a9aa62ed1aa5a9b602',
-  '3f10ad0255ff80cf8ee0e417a5784dde',
-  '3f10ad0255ff80e7bd17edee59a4221e',
-  '3f10ad0255ff8059aa49da71d0df331f',
-  '3f10ad0255ff8040af83fca5d008b0f0',
-  '3f10ad0255ff802683fae74b2aee59e8',
-  '3f10ad0255ff8067a895d536274aee16',
-]);
+const PENDING_NEW = new Set([]);
 
 const pool = JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8'));
 const byKey = new Map(pool.map(r => [key(r[0], r[1]), r]));
