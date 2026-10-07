@@ -320,3 +320,85 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Chet Baker 四個掛名、Charlie Haden 兩個、Clifford Jordan 兩個分寫各自編制；生平來源共用，搜尋次數記在其中一個掛名。Dave Holland 維基回消歧頁視同失敗請求不計。
 - 待本機（上線簡介）：Bunk Johnson「1931 年掉了小號與門牙」（來源為 1930 年 11 月）；Bunny Berigan「錄音幾乎全部集中在這六年」不實；Cab Calloway「第一張賣破百萬的爵士唱片」（來源只支持賣破百萬）；Carmell Jones「十年後是 Jarrett 三重奏的一半」年距不符；Cassandra Wilson《New Moon Daughter》應為 1995 年；Charles Brackeen「1940 年生於 Eufaula」生年與出生地有爭議；Chester Thompson《Powerhouse》「四人編制加一支長號」（長號含在四人內）；Chet Baker & Art Pepper《Playboys》「六重奏另加次中音與三人節奏組」（六人已含在內）；Chet Baker Quartet《Singin' in the Midnight》錄音與發行年待核對；Chick Webb《Spinnin' the Webb》「得年三十四」生年有爭議，宜只寫過世年份。
 - **十批接力完成**（ar-c-025～031、ar-d-001～003）。
+
+## 再十批接力（ar-d-004～013，2026-10-07 起）
+
+## ar-d-004（2026-10-07）
+
+- 40 位全上（34 full、6 thin：Creative Arts Ensemble、Curtis Counce、Danalogue x Alabaster dePlume、Derek Smith Trio、Doug Hammond & David Durrah、Eddie "Lockjaw" Davis）。審稿修 4 處：Doug Hammond & David Durrah 主詞改為「鼓手 Hammond 與搭檔 Durrah」（原句讀來像兩人都是鼓手）；Eddie Harris 刪 R&B 專輯榜名次（已有單曲大賣與《Swiss Movement》暢銷，一處足夠）；Dupree Bolton 的「毒癮相關罪行」改「大半時間在獄中」、Frank Butler 刪「海洛因成癮」（私人狀況與刑案避免，入獄本身是 Bolton 謎樣形象核心，留事件層級）。
+- 搜尋超限放行：Don Byas 9 次（多出的是 MusicBrainz 查專輯身分，API 查詢依慣例不計）；Duke Ellington & John Coltrane 9 次（佐證查詢無獨有事實，比照齊豫）。
+- Company：《Company 1》四位演奏者只見英文維基一源，但與上線簡介一致、屬低風險，接受寫入。Dexter Gordon Quartet《The Shadow of Your Smile》為 1971 年斯德哥爾摩錄音（jazzdisco 單源，與上線簡介不衝突），卡池 1985 為發行年。
+- 待本機（上線簡介）：Curtis Amy & Dupree Bolton《Katanga!》「一生只留下兩張唱片」宜改「主要唱片只有兩張」；Dakota Staton「出道即大賣」時序不符（1954 已發單曲）；David Mancuso 漏共同製作人 Colleen "Cosmo" Murphy；Dodo Marmarosa《Dodo's Back!》芝加哥拋錨／Feather 引語無出處、「幾近銷聲匿跡」不實；Debashish & Brozman「第一份滑棒吉他教程」與榜單單源；Dick Griffin Konnex CD 年份（1994／1995）；Doris Day《Day by Day》兩處說法無來源。
+
+## ar-d-005（2026-10-07）
+
+- 40 位全上（33 full、7 thin：Ensemble Muntu、Estelle Perrault、Fred Jackson、Fumio Itabashi Trio、Fumio Watanabe Quintet、Galaxy 2 Galaxy、Georges Arvanitas）。審稿修 3 處：François de Roubaix 刪潛水過世經過（死因避免）；Elton Dean Quartet 首句補主詞為四重奏掛名；Ernie Henry 的 Monk 英文原話改中文。
+- 雙人卡放寬額度 4 篇（Elis & Jobim 277、Ella & Basie 271、Elvin Jones & Richard Davis 268、Parker & Lytton 263）：兩人各需身世、聲音、地位，接受。Gigi Gryce 267（退出爵士、改名任教的人物故事），比照 Jutta Hipp。
+- Estelle Perrault（張婷雅）：台法混血爵士歌手，2025 年作品，生平以中央社兩篇報導為兩源；地位偏薄落 thin。
+- Esbjörn Svensson Trio 的 DownBeat 封面宣稱：具名會撞「樂評媒體名不進正文」、不具名又含糊，整條不寫。
+- Fumio Watanabe Quintet：英文維基預抓為同名演員渡辺文雄，作廢；鼓手渡辺文男身分以日文維基與班底對上，生卒年單源不寫。
+- 待本機（上線簡介）：Eliades Ochoa 接掌 Cuarteto Patria 年份（1978→1982）與葛萊美類別；Elton Dean Quartet Ogun 編號（OG 410／OG400）；Fats Sadi 發行年（1954／1955）；Fred Jackson「一生只留下這一張領銜錄音」不實；Frank Loesser 東尼獎項數待核；George Coleman《Amsterdam After Dark》為紐約錄音，標題曲與「最廣被引述」兩句無出處；Getatchew Mekuria「五〇年代初」時間點無出處；George Shearing「原始三軌母帶」待核。
+
+## ar-d-006（2026-10-07）
+
+- 39 位上架（35 full、4 thin：Groove Collective、H-Town、Hideto Sasaki, Toshiyuki Sekine Quartet + 1、J. R. Monterose），1 位不寫：Hitoshi Okano（聲音與地位兩格查無，僅 Discogs 一條身分資料，過不了 thin 門檻）。審稿修 6 處：Tijuana Brass 刪〈The Lonely Bull〉前十與「賣得比 The Beatles 多」（在世者榜單銷量只留年度榜冠軍一處）；Howard Riley 刪單一部落格的「英國自由爵士地標」；Houston Person 去機構名並修語法；Indra Lesmana 刪官方自述來源的「印尼爵士象徵人物」。
+- 搜尋超限放行：Hideto Sasaki 9 次（BBE 專訪無獨有事實，比照齊豫）；Ivan Lins 9 次（開專輯條目補年度專輯第二源）；Jackie McLean & Dexter Gordon 9 次（雙人卡，開《The Meeting》條目確認同場）。
+- 新近事實：Hermeto Pascoal 2025 年過世、Howard Riley 2025 年過世（維基＋Jazz Journal 訃聞）、Jack DeJohnette 2025 年過世與 Ivan Lins 2025 拉丁錄音學院終身成就獎（巴西兩家媒體轉述新聞稿，獨立性有限但屬低風險榮譽），Gunter Hampel 2026 年 5 月過世（維基＋Free Jazz Blog）。
+- Jackie McLean & Dexter Gordon《Montmartre Summit 1973》查無專輯條目，推定為 1973 年 7 月哥本哈根 Montmartre 同場錄音的後來版本，正文只寫同台現場。Howard Riley 的維基預抓為足球員，作廢。
+- Hailu Mergia & Dahlak Band 278 字（人物故事為主體），接受。
+- 待本機（上線簡介）：Glenn Miller〈In the Mood〉國家錄音登記年（2002／2004）；Harold Arlen「1956 年 LP 才第一次成為唱片」不實（1939 已有 Decca 歌聲專輯）；Hailu Mergia 點名的〈Bati Bati〉〈Yene Nesh Wey〉查無；Hiromi《Another Mind》「年度海外爵士專輯」與頒獎年待核。
+
+## ar-d-007（2026-10-07）
+
+- 39 位全上（35 full、4 thin：James Mason、Jeff Phelps、Joe Bonner、John Gordon）。審稿修 4 處：Scofield、John Taylor 刪單一來源的「同世代最具影響力／最偉大」評價；Jemeel Moondoc & Muntu 的成團地點改為與 d-005 Ensemble Muntu 一致（1971 年在大學與同伴組成，1972 年後移居紐約，d-005 稿兩源）；Jimmy Scott 母親死因改「喪母」。
+- 搜尋超限放行：John Cameron 9 次（同頁重開，糾正「得獎」誤讀為入圍，無新事實）。
+- 同名作廢：James Mason（英國演員）、Jeff Phelps（體育主播）、John Gordon（英國作家）、John Taylor（Duran Duran 貝斯手）的維基預抓。
+- 放寬額度：James Moody / George Wallington 273（雙人卡）、Jimmy Scott 272（人物故事），接受。
+- 待本機（上線簡介）：Jimmie Lunceford「師範出身」應為 Fisk University；Jimmy Raney《A》發行年（1957／1958）待核；Joe McPhee《Nation Time》編制漏鋼琴與貝斯。
+
+## ar-d-008（2026-10-07）
+
+- 39 位全上（34 full、5 thin：Kalaparusha Maurice McIntyre、Kalaparusha Maurice McIntyre Quartet、Kellee Patterson、Kočani Orkestar、Le Trio Camara）。審稿修 3 處：Johnny Smith 刪妻兒死因（改「妻子過世後」）；Kenny Garrett 刪單源「繼 Parker 之後最受敬重」；Keith Mansfield / John Cameron 整篇重寫——原稿與 d-007 Cameron 本名卡（酒吧彈琴、〈Whole Lotta Love〉）及本批 Mansfield 本名卡（《Grandstand》、Madlib 取樣）大段重疊，改寫 KPM 匿名、CCS 後「自己抄自己」與〈Hyde Park〉巴西片頭故事（258 字，雙人卡）。
+- 身分更正：Le Trio Camara 是流亡巴黎的三位巴西樂手，不是法國團；Jupiter & Okwess 維基預抓為行星，作廢；Joyce 的 Cravo Albin 條目同名者（Joyce Alane）排除。
+- Julie Tippetts〈This Wheel's on Fire〉英國榜第 5 名列必要例外（在世者核心成績，Official Charts＋維基兩源）。
+- 待本機（上線簡介）：Kočani Orkestar「樂隊因《Borat》與片方興訟」與來源不符（提告的是 Esma Redžepova 與前領軍，獲賠者僅 Redžepova），另有中英空格與半形逗號；Keith Mansfield / John Cameron《Voices in Harmony》「那個編曲」指代不清；Kenny Clarke & Francy Boland《The Golden Eight》寫八人只列七位；Lee Konitz & Red Mitchell 卡池年 1976，錄音為 1974 年 7 月；Johnny Hodges《Back to Back》genres 標 classical 疑誤。
+
+## ar-d-009（2026-10-07）
+
+- 40 位全上（34 full、6 thin：Linda Hill、Makoto Terashita、Manhattan Jazz Orchestra、Masao Nakajima Quartet、Maulawi、Michael White）。審稿修 3 處：Michał Urbaniak 英文原句改中文轉述；Maria Bethânia 刪單源「巴西音樂獎得獎最多」與獎數；Louis Moholo Octet 末句改明確寫 2025 年辭世（原句「最後辭世」語意不清）。
+- 搜尋超限放行：Max Roach & Anthony Braxton 9 次（雙人卡，核對獎項年份）。
+- 新近事實：Mike Westbrook 2026 年 4 月過世（維基、The Jazz Mann、UK Jazz News 三源）；Louis Moholo 2025 年 6 月過世（Songlines、Jazz Journal）。
+- Masao Nakajima 的漢字「中島政雄」無來源，正文只寫拼音；Masahiko Togashi 受傷不寫肇因。
+- 待本機（上線簡介）：Makoto Terashita《Topology》錄音年（1984／原版 1983 首發）待核；Maria Bethânia《Álibi》銷量口徑（90 萬對破百萬）待核。
+
+## ar-d-010（2026-10-07）
+
+- 39 位上架（33 full、6 thin：Milton Marsh、Mitsuaki Katayama Trio、Mixed Bag、Moriyama Takeo Percussion Ensemble、Nate Morgan、Painkiller），1 位不寫：Muriel Winston（身世、聲音、地位三格查無，國籍與聲音皆無出處，過不了 thin 門檻；Bill Lee 是否 Spike Lee 之父無來源，不寫）。審稿修 2 處：Nat Adderley 的英文戲稱改中文；Nucleus 刪單一樂評的「這些島嶼對現代音樂真正的貢獻」。
+- Mitsuaki Katayama：可能即バイソン片山，但無來源寫明本名或這張是他的作品，正文只寫拼音名與廠牌脈絡，不寫漢字與身分連結。
+- Oscar Peterson Trio《Tristeza on Piano》班底為 Sam Jones 與 Bobby Durham（主線特注猜 NHØP，補洞層依維基與 MusicBrainz 推翻）。Old and New Dreams 卡池為 1977 年 Black Saint 版，與 1979 年 ECM 同名專輯分開。
+- Nara Leão 276 字（bossa nova 公寓、《Opinião》、提攜 Bethânia、Drummond 辯護），接受。
+- 待本機（上線簡介）：Nara Leão《Dez Anos Depois》「一度宣布退出歌壇」無出處；Original Dixieland Jazz Band《The 75th Anniversary》Victor 18255 發行月日（3 月／5 月）待核；Paolo Conte「CGD 二十年合作」無出處；Nucleus《We'll Talk About It Later》班底少列 Brian Smith、John Marshall，Jenkins 樂器待核；Mulgrew Miller《Grew's Tune》卡池 2012 為錄音年（2013 發行）。
+
+## ar-d-011（2026-10-07）
+
+- 37 位上架（33 full、4 thin：Richie Beirach、Rien Djamain、Riz Ortolani、Robby Krieger），2 位不寫：Roma Trio（國籍未證實、聲音格空）、Roland Haynes（facts 無國籍、聲音只有編制，寫作層勉強成稿但違反 thin 第一句國籍硬規則，主線撤下）。審稿修 1 處：Roy Porter Sound Machine 補中英空格。
+- 搜尋超限放行：Ray Brown Trio 12 次（含 5 次 MusicBrainz／Discogs API，依慣例不計，實計 7）。
+- 新近事實：Ralph Towner 2026 年 1 月在羅馬過世（KNKX、維基、ECM 三源）。
+- Rashied Ali 三卡分寫：補洞摘要把部分 Ali 事實排在搭檔名下，寫作層已歸回 Ali，三篇切入點不同。Philip Cohran 卡池 2013 疑為再版（原作 1967–68），正文不寫年份。
+- 待本機（上線簡介）：Paul Rutherford《The Gentle Harm of the Bourgeoisie》「史上第一張長號獨奏自由即興唱片」不實（Mangelsdorff 1972《Trombirds》更早），宜改「他個人名義的首張」；Rien Djamain《Api Asmara》年份（1975／1976）與 Rolling Stone Indonesia 名次待核；Pat Metheny Group 卡池 1977（實為 1978）；Ronnie Boykins 卡池 2002 疑為再版年。
+
+## ar-d-012（2026-10-07）
+
+- 38 位上架（28 full、10 thin：Sal Salvador、Shakatak、Shamek Farrah、Sheila Jordan & Arild Andersen、Shintaro Quintet、Shirley Horn Trio、Solomon Ilori、Sphere、Stan Sulzmann、Stefano Torossi），1 位不寫：Sadayasu Fujii（只有 Discogs 一源，聲音與地位兩格查無）。審稿修 1 處：Steven Halpern 刪「最早的新世紀藝人」（序數宣稱）。thin 比例高於前幾批：本批多冷門私壓盤與雙掛名的第二張卡。
+- 身分更正：Sphere 是底特律 Larry Nozero 的團（Strata，1970 年現場、1974 年發行），不是 Charlie Rouse 的同名 Monk 致敬團；Shintaro Quintet 維基預抓為漫畫家，作廢；Steve Lacy 兩卡的維基預抓為 1998 年生同名吉他手，作廢。
+- 搜尋超限放行：Sumiko Yoseyama 9 次（開沖繩專題頁補出生地等第二源）。日文名「与世山澄子」依台灣字形寫成與世山澄子（研究稿同步改字，避開 QA 簡體誤判），小浜島寫小濱島。
+- 待本機（上線簡介）：Savina Yannatou《Sumiglia》「轉入 ECM 後第一張」不實（ECM 首作是 2003《Terra Nostra》）、樂團成軍年待核；Shadowfax 葛萊美類別應為 Best New Age Performance；SOIL & "PIMP" SESSIONS《Pimp Master》非首張全長作（首張是 2004《Pimpin'》）；Sona Jobarteh「堂兄 Toumani Diabaté」宜改「表親」；Sir Roland Hanna Trio 卡池專輯名全名為《Milano, Paris, New York: Finding John Lewis》；Salah Ragab《Egyptian Jazz》發行年（2006／2017）待核。
+
+## ar-d-013（2026-10-07，再十批接力最後一批）
+
+- 38 位上架（31 full、7 thin：Svein Finnerud Trio、Takashi Furuya、Takashi Miyasaka Quintet、The Bad Plus、The John Betsch Society、The Music Improvisation Company、The Mystery Kindaichi Band），1 位不寫：The Ensemble Al-Salaam（三格查無，只有廠牌與目錄號）。審稿修 2 處：Sun Ra & Walt Dickerson 刪與 Solar-Myth 篇重複的「自稱來自土星、Afrofuturism 先驅」句；The Modest Jazz Trio 刪與 d-007 Jim Hall & Ron Carter 重複的 Metheny／Frisell 影響句。
+- Tenório Jr（272）：1976 年在布宜諾斯艾利斯失蹤是故事主體，只寫失蹤情境與 2025 年法醫小組以指紋確認身分（兩源），不寫遺體、槍傷、下葬。Terje Rypdal & Vitous & DeJohnette（278，三人卡）接受。
+- The Bad Plus 2026 年宣布解散（兩源）寫一處。人聲團體名人堂評語比照搖滾名人堂，可具名。
+- 身分更正：The Oscar Peterson Trio With Herb Ellis《Hello Herbie》班底為 Sam Jones、Bobby Durham（非 Ray Brown／Ed Thigpen）；The Mystery Kindaichi Band 是以橫溝正史小說為本的想像原聲帶，與 1979 年同名電影無關；THE SQUARE 維基預抓為幾何條目，作廢。
+- 待本機（上線簡介）：The Golden Gate Quartet 首次 Bluebird 錄音日（8/4 或 8/14）、「首組在憲法廳獻唱」無出處、轉入 OKeh 年份；The Greyboy Allstars「Fred Wesley 全程參與、共同掛名」不實（特別來賓）；The Modest Jazz Trio「兩位低音手」不實（Red Mitchell 彈鋼琴）；The Muddy Basin Ramblers 成立年應為 2002；The Mystery Kindaichi Band「虛構的電影原聲帶」宜改「想像原聲帶」；The Piano Choir《Handscapes》為兩場錄音；Syrius「Charlie Fischer」拼法待核；Tenório Jr 上線簡介含遺體、槍傷與下葬細節，建議刪減。
+- **再十批接力完成**（ar-d-004～013）。
