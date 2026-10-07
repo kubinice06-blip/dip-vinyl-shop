@@ -440,3 +440,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 在世者榜單獎項各留一處核心成績（Barbara Mason 流行榜第 5、Barbara Lewis R&B 冠軍、Barry Manilow 詞曲作者名人堂、BeBe & CeCe Winans 卡池專輯葛萊美、Bassekou Kouyaté BBC 年度專輯、?te 金曲最佳新人）。
 - 同名作廢：A Taste of Honey（Shelagh Delaney 劇本）、Alice Clark（英國歷史學家）的維基預抓。
 - 待本機（上線簡介）：100 Proof「HDH 1969 年離開 Motown」（1968 說待核）；Al Wilson《Show and Tell》「突破兩百萬張」來源只寫破百萬；Bassekou Kouyaté《Segu Blue》「2006 年在德國 Out Here 錄下」無出處（實為 Bamako 錄音、2007 發行）；Barbara Mason「公認是費城之聲前史起點」無出處；Baby Washington「夜總會歌手底子」無出處，〈Doodlin'〉待核；Archie Bell「Rolling Stone 五百大第 265 名」僅維基單源。
+
+## ar-d-018（2026-10-07）
+
+- 39 位上（36 full、3 thin：Black Merda、Carl Thomas、Charles May & Annette May Thomas），略 1 位：Black Heat（國籍、出身城市查無，過不了 thin 門檻）。全批轉入 soul／R&B／放克／巴西。
+- 審稿修 9 處：Bernie Worrell 刪「最早…之一」；Billy Stewart 刪「1960 年代獨一無二」；Brenton Wood 刪「告別巡演途中住院」（死亡情境）；Bobby Byrd 刪 James Brown 入感化院原因；Charles Wright 刪「取樣最多之一」；Chris Kenner 刪「最被低估之一」；Crown Heights Affair 只留一處榜單；D Train 刪「最易辨認的採樣之一」；Deniece Williams 刪「最偉大的靈魂嗓音之一」（單源）。
+- 放寬字數：Cassiano 265、D Train 246（修後）、Don Covay 270，人物故事與影響事實為主體，接受。
+- 新近事實：Dexter Wansel 2026 年過世（Far Out＋Entertainment Now 兩篇訃聞），只寫年份；Dijon《Baby》與《Swag》葛萊美入圍兩源。
+- 同名作廢：Chocolate Milk（飲品）的維基預抓。
+- 待本機（上線簡介）：D Train 舞曲榜冠軍年 1981／1982 不一；Da Brat「Billboard 200 第十一名」維基措辭不清；Dennis Coffey 三把吉他 vs 12 把吉他說法；Chocolate Milk「在紐奧良成立」（另說 Memphis 創團）。

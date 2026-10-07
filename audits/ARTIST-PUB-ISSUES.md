@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 520 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 531 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -520,6 +520,17 @@
 | ar-d-017 | Barbara Mason | Yes, I'm Ready | 公認是費城之聲的前史起點 | 讀到的來源（WAMC／NPR）只說 Arctic Records 是日後 Philadelphia International 的前身基礎、Gamble 與 Huff 在此開始合寫，並沒有「公認」這個說法；此句偏重，建議改成有出處的版本。 | https://www.wamc.org/2013-06-10/arctic-records-drafting-a-blueprint-for-the-philly-sound |
 | ar-d-017 | Bassekou Kouyaté & Ngoni Ba | Segu Blue | 2006 年在德國 Out Here Records 錄下首張領銜作 | 來源只證實專輯 2007 年 3 月 26 日經 Out Here Records 國際發行，錄音在馬利 Bamako 的 Studio Bogolan；「2006 年」與「德國」兩點查無來源，建議改成 2007 年發行、Bamako 錄音。 | https://worldmusiccentral.org/?p=2818 |
 | ar-d-017 | Bassekou Kouyaté & Ngoni Ba | Segu Blue | 並收有一首悼念 Ali Farka Touré 的器樂曲 | 本層讀到的來源（WMC、Hot Press、維基）只寫他參與 Ali Farka Touré 遺作《Savane》，沒有提到《Segu Blue》收有悼念曲，建議店主對照曲目表或樂評確認。 | https://www.hotpress.com/music/bassekou-kouyate-to-play-dublin-4525115 |
+| ar-d-018 | Black Heat | Black Heat | 七人編制裡鍵盤、吉他、貝斯、康加與木管各據一角 | 英文維基專輯頁列出的固定樂手是 Johnell Gray、Naamon Jones、Bradley Owens、Esco Cromer、Phil Guilbeau、King Raymond Green 六位，加上客席薩克斯風手 David「Fathead」Newman；「七人」可能把客席算進去，且小號手 Guilbeau 沒被提到，建議店主對照原盤內頁確認編制。 | https://en.wikipedia.org/wiki/Black_Heat_(album) |
+| ar-d-018 | Bloodstone | Natural High | 攻上 Hot 100 第 10 名、靈魂單曲榜第 10 名，把專輯推上靈魂專輯榜第 2 名 | 英文維基專輯條（搜尋摘要，未開頁）寫單曲靈魂榜第 10、流行榜第 4，與上線簡介和 Bloodstone 條（流行榜第 10）互相顛倒；Billboard 站被擋，無法在雲端核對。建議店主本機對照 Billboard 榜單紀錄再決定要不要改；此條屬待核，不是已證實錯誤。 | https://en.wikipedia.org/wiki/Natural_High_(Bloodstone_album) |
+| ar-d-018 | Carl Bean and Universal Love | All We Need Is Love | 1975 年他在洛杉磯創立 Unity Fellowship Church | NME（2021 年訃聞）與 QSpirit 兩處都寫 Unity Fellowship Church 創立於 1982 年（該年 Bean 受封為牧師）；1975 年是英文維基 Carl Bean 條的寫法，與來源不符。建議改成 1982 年。 | https://www.nme.com/news/music/i-was-born-this-way-singer-carl-bean-has-died-at-77-3041235 |
+| ar-d-019 | Doris Duke | I'm a Loser | 唱片打進 R&B 榜第 7 名，然後發行它的公司倒了 | R&B 榜第 7 名是單曲〈To the Other Woman (I'm the Other Woman)〉的成績，不是專輯；開頭的「唱片」容易被讀成專輯上榜，建議改寫成「單曲」。 | https://en.wikipedia.org/wiki/Doris_Duke_(soul_singer) |
+| ar-d-019 | Elaine Brown | Seize the Time - Black Panther Party | 起點是 1968 年黑豹黨參謀長 David Hilliard 委託 Elaine Brown 錄下她自己寫的歌 | 委託的時間來源不一致：Red Bull Music Academy（Pat Thomas，2016）與 Active Listening 都把它放在 1969 年 1 月 Bunchy Carter 與 John Huggins 遇害之後；維基與 Encyclopedia.com 則寫 1968 年。專輯也是 1969 年發行，建議簡介拿掉年份，改寫成「David Hilliard 聽過她演唱後，要她錄下自己寫的歌」。 | https://daily.redbullmusicacademy.com/2016/05/poetry-proto-rap-and-soul-the-sounds-of-the-black-power-revolution/ |
+| ar-d-019 | Experience Unlimited | Free Yourself | 「三個資料庫把團名與它的簡稱擺在不同的欄位上……credit 欄的 Bass 寫 Gregory "Sugar Bear" Eliot，anv 欄的姓氏卻多一個 t；演奏與人聲 credit 十三條，其中一條的 tracks 欄只寫 A3」 | 整段在講資料庫欄位與 credit 數量，沒有寫到這支華盛頓 go-go 樂團或這張 1977 年爵士放克專輯的聲音與位置；建議改寫：1977 年 Black Fire 廠牌、爵士放克取向、Sugar Bear 當時已是團長兼貝斯手、標題曲三人合寫、2019 年 Now-Again 與 Vinyl Me, Please 重發。 | https://www.nowagainrecords.com/?s=experience+unlimited |
+| ar-d-019 | Fantastic Negrito | The Last Days of Oakland | 「1999 年一場車禍讓他昏迷三週」 | 車禍年份兩源不一致：維基寫 1999，Interview 雜誌 2016 年專訪與其他報導寫 2000；建議簡介改成不寫年份，或標示約 1999 至 2000 年。 | https://www.interviewmagazine.com/music/fantastic-negrito |
+| ar-d-019 | Faze-O | Riding High | 「Faze-O 只留下這張 1977 年首作」 | 樂團在 She Records 共發了三張專輯：《Riding High》《Good Thang》（1978）與《Breakin' the Funk》（1979），Buckeye Beat 與維基皆載；建議改成「首作」，刪去「只留下」。 | https://www.buckeyebeat.com/fazeo.html |
+| ar-d-019 | GQ | Disco Nights | 全張獲 RIAA 白金認證 | 維基只寫〈Disco Nights (Rock-Freak)〉單曲在美國賣破百萬張，本層兩個來源都沒有專輯白金認證的記載；建議主線核對 RIAA 資料庫，查不到就改寫成單曲銷量或刪去。 | https://en.wikipedia.org/wiki/GQ_(band) |
+| ar-d-019 | Gwen Guthrie | Gwen Guthrie | 開場〈Peek-A-Boo〉由 Compass Point All Stars 操刀 | Jamaica Observer 與 encyclopedia.com 都只說 1982 年這張專輯由 Sly & Robbie 製作；Compass Point All Stars 與〈Peek-A-Boo〉的歸屬僅見於搜尋摘要（說〈Peek-A-Boo〉是〈Padlock〉的後續單曲），無法確認是否為這張專輯開場曲，待查曲目表 | https://jamaicaobserver.com/2013/02/14/gwen-guthries-reggae-moments |
+| ar-d-019 | Howard Tate | Get It While You Can | 1967 年 4 月在 Verve 發行《Get It While You Can》 | Inquirer 訃聞與 xpn 都寫這張專輯是 1966 年的 Verve 首張，與上線簡介的 1967 年 4 月不一致；可能是單曲與專輯年份混用，待用 Discogs 或 Verve 目錄核對發行日 | https://www.inquirer.com/philly/obituaries/20111207_Howard_Tate__72__talented_soul_singer.html |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
