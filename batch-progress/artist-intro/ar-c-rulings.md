@@ -402,3 +402,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分更正：The Oscar Peterson Trio With Herb Ellis《Hello Herbie》班底為 Sam Jones、Bobby Durham（非 Ray Brown／Ed Thigpen）；The Mystery Kindaichi Band 是以橫溝正史小說為本的想像原聲帶，與 1979 年同名電影無關；THE SQUARE 維基預抓為幾何條目，作廢。
 - 待本機（上線簡介）：The Golden Gate Quartet 首次 Bluebird 錄音日（8/4 或 8/14）、「首組在憲法廳獻唱」無出處、轉入 OKeh 年份；The Greyboy Allstars「Fred Wesley 全程參與、共同掛名」不實（特別來賓）；The Modest Jazz Trio「兩位低音手」不實（Red Mitchell 彈鋼琴）；The Muddy Basin Ramblers 成立年應為 2002；The Mystery Kindaichi Band「虛構的電影原聲帶」宜改「想像原聲帶」；The Piano Choir《Handscapes》為兩場錄音；Syrius「Charlie Fischer」拼法待核；Tenório Jr 上線簡介含遺體、槍傷與下葬細節，建議刪減。
 - **再十批接力完成**（ar-d-004～013）。
+
+## 第三輪十批接力（ar-d-014～023，2026-10-07 起）
+
+## ar-d-014（2026-10-07）
+
+- 39 位上架（36 full、3 thin：Tõnu Naissoo Trio、Tosca、Yoshino Yanagihara），1 位不寫：Yoshimi Ueno Bestrio（三格查無，只有私壓盤一條；同名鼓手無來源可連結）。審稿修 2 處：Waters 刪「Blue Note 簽下的第一個人聲團體」（序數宣稱，研究層未逐一排除反例）；Tuts Washington 刪辭世場合。
+- 搜尋超限放行：Tõnu Naissoo Trio 9 次（官網確認獎項，地位格唯一外部評價）；Toshinori Kondo / DJ Krush 9 次（雙人卡，查合作緣由）；Vi Redd 10 次（兩次皆為高風險事實補第二源：錄音陣容衝突、逝世年）。
+- 身分：Tosca 是奧地利 downtempo 二人組（維基預抓的普契尼歌劇作廢）；Waters 是洛杉磯家族人聲團（非 Muddy／Roger Waters）。Yussef Dayes 三卡（本名、Yussef Kamaal、Tom Misch & Yussef Dayes）生平措辭分開。
+- Tom Misch & Yussef Dayes 英國專輯榜第 4 名列必要例外（在世者核心成績）。
+- 待本機（上線簡介）：Tony Oxley《February Papers》Ronnie Scott's 駐店年（1966／1967）宜改「1960 年代中期」；Tony Oxley Quintet《The Baptised Traveller》編制漏 Evan Parker、「四個曲名」與曲目表三軌不符；Tosca《Opera》〈Chocolate Elvis〉年份（1994／1995）；Vi Redd《Bird Call》發行年應為 1962；Yves Montand《À l'Étoile》「十年前在這座劇院把政治唱進主流舞台」無出處。

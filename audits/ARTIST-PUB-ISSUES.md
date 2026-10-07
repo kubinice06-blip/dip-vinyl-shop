@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 501 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 510 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -501,6 +501,15 @@
 | ar-d-013 | The Muddy Basin Ramblers | Formosa Medicine Show | 這是 2003 年由住在台北的美籍與英籍外僑組成的 jug band 第二張專輯 | 英文維基《The Muddy Basin Ramblers》寫 formed in 2002，《Taipei Times》2015 年 2 月報導寫樂團 2002 年由外僑成立；兩源皆為 2002 年，簡介的 2003 年應改為 2002 年。維基《Formosa Medicine Show》條目寫 2003 年，與同家族的樂團條目互相不一致。 | https://www.taipeitimes.com/News/feat/archives/2015/02/02/2003610619 |
 | ar-d-013 | The Mystery Kindaichi Band | 金田一耕助の冒険 | 一張虛構的電影原聲帶 | 來源（Wewantsounds 文案轉載）寫的是以橫溝正史小說為本的 imaginary soundtrack、並非任何官方電影或電視配樂；1977 年 LP 早於 1979 年的同名東映電影，也與之無關。「電影原聲帶」易讓人誤會是某部電影的配樂，建議改成「以小說為題的想像原聲帶」。 | https://goodtasterecords.com/collections/lp-albums/products/mystery-kindaichi-band-the-adventures-of-kindaichi-kosuke-vinyl-lp |
 | ar-d-013 | The Piano Choir | Handscapes | 全碟錄於 1972 年 10 月 28 日 | 英文維基專輯條目寫錄音有兩場，1972 年 6 月 18 日與 10 月 28 日，皆在紐約 The Public Theater；Substack 專文也說現場錄音橫跨 1972 年 6 至 10 月。 | https://en.wikipedia.org/wiki/Handscapes |
+| ar-d-014 | Tony Oxley | February Papers | 他 1966 年起在 Ronnie Scott's 當駐店鼓手 | 英文維基寫 1966 年搬到倫敦，International Times 與 Drumming News Network 的訃聞寫 1967 年，來源不一致，建議改成「1960 年代中期」或再查一源 | https://internationaltimes.it/tony-oxley-1938-2023/ |
+| ar-d-014 | Tony Oxley Quintet | The Baptised Traveller | Tony Oxley 掛鼓與編曲，另有 Kenny Wheeler 的小號、Derek Bailey 的吉他與 Jeff Clyne 的貝斯 | 編制是五重奏，漏列 Evan Parker（次中音薩克斯風）；維基專輯條目與 Tony Oxley 條目都列 Parker | https://en.wikipedia.org/wiki/The_Baptised_Traveller |
+| ar-d-014 | Tony Oxley Quintet | The Baptised Traveller | 內頁文字把四個曲名解成一趟想像的旅程 | 維基曲目表只有三軌（〈Crossing / Arrival〉、〈Stone Garden〉、〈Preparation〉），其中 Crossing 與 Arrival 併為一軌；若簡介所指是內頁的四段說明可保留，建議核對 | https://en.wikipedia.org/wiki/The_Baptised_Traveller |
+| ar-d-014 | Tosca | Opera | 1994 年兩人以 Tosca 之名在 G-Stone 發行十二吋〈Chocolate Elvis〉 | 年份兩源不一致：英文維基與 ruperthuber.com 寫 1994，Resident Advisor 的 Dorfmeister 簡介寫 1995（兩人重聚的年份）。建議在確認前改寫成不帶年份。 | https://ja.ra.co/dj/richarddorfmeister/biography |
+| ar-d-014 | Vi Redd | Bird Call | 1963 年以 United Artists Jazz UAJ 14016 發行 | 英文維基、jazzdisco（UAJ 14016 與 UAJS 15016，錄音 1962 年 5 月 21 至 22 日、發行 1962）、MusicBrainz 都記 1962 年；上線簡介寫 1963 年。研究稿 c139-a 曾判定 MusicBrainz 的 1962-05-22 只是 session 日，但 jazzdisco 與維基的發行年仍是 1962，建議本機再用 Billboard 或 Cash Box 查證上市月份後決定是否改簡介。 | https://www.jazzdisco.org/vi-redd/discography/ |
+| ar-d-015 | Вагиф Мустафазаде | Джазовые Композиции | 他被視為 jazz mugham 的開創者 | 英文維基〈Azerbaijani jazz〉把 jazz mugham 的成形歸功於 Rafig Babayev 與他的 Gaya Quartet 和 Vagif Mustafazadeh 兩方，azer.com 與 azertag 摘要則稱 Mustafazadeh 創立這個運動；『開創者』不是唯一，建議改成『jazz mugham 的奠基者之一』或加上 Babayev。 | https://en.wikipedia.org/wiki/Azerbaijani_jazz |
+| ar-d-015 | Эдди Рознер | Караван | 1933 年在波蘭組建仿美式編制的大樂團 | 定居與組團的年份有三種說法（英文維基 1933、ORT 專頁 1935 年底抵華沙、俄文維基波蘭時期 1934 至 1939 年），單寫 1933 年不夠穩，建議改成「納粹上台後到波蘭組建」不帶年份。 | https://holocaustmusic.ort.org/resistance-and-exile/eddie-rosner/ |
+| ar-d-015 | 中村ヨシミツ | 魂のギター | 他在 1979 至 1985 年間替山崎ハコ、高橋ていこ、石黒ケイ伴奏 | 三次搜尋（含山崎ハコ英文維基）與 Discogs 藝人頁都找不到這句的來源，也無法確認這位中村ヨシミツ就是那位伴奏吉他手；建議在 KV 簡介確認出處，沒有就刪。 | https://api.discogs.com/artists/4609269 |
+| ar-d-015 | 坂田明 | Pochi | 離開待了八年的三重奏 | 日文維基、jazz.com 皆寫 1972 至 1979 年，serai 訪談寫『7 年間』，約七年；『八年』是把 1972 到 1980 當成整年算，建議改『待了七年』或直接寫年份。 | https://serai.jp/?p=364762 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
