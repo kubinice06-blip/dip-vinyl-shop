@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 538 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 552 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -538,6 +538,20 @@
 | ar-d-020 | Lenine | Na Pressão | 本作入圍 2000 年首屆拉丁葛萊美最佳 MPB 專輯 | 補查未找到佐證：維基 Lenine 條目只列 2015 年《Carbono》入圍第 16 屆拉丁葛萊美最佳 MPB 專輯，第 1 屆拉丁葛萊美頁取不到；請本機核對官方提名名單 | https://en.wikipedia.org/wiki/Lenine_(musician) |
 | ar-d-020 | Los Kjarkas | Canto a la Mujer de Mi Pueblo | 樂團憑德國 GEMA 登記提告勝訴 | en 維基寫法院為法國、確認著作權屬於 Los Kjarkas，未提 GEMA；本層查不到 GEMA 說法的來源，待核 | https://en.wikipedia.org/wiki/Los_Kjarkas |
 | ar-d-020 | Major Harris | My Way | 1975 年由 Atlantic 發行的首張個人專輯 | en 維基歌手條目寫《My Way》為 1974 年專輯，與卡池標示的 1975 年不一致，單源待核 | https://en.wikipedia.org/wiki/Major_Harris_(singer) |
+| ar-d-021 | Mighty Clouds of Joy | Live!... At the Apollo | 團體 1959 年組於洛杉磯 | 成立年各來源不一致：維基寫 1959 年，encyclopedia.com 寫 1955 年（Ligon 高中時期），Christian Post 寫 1950 年代後期起。建議改成「1950 年代」或標註年份有出入。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/mighty-clouds-joy |
+| ar-d-021 | Nino Nardini / Roger Roger | Jungle Obsession | 據說 Debussy 憑一時興起，替他取了 Roger 這個名字 | 命名由來各源不一：維基寫據說是 Debussy 取的，Discogs Roger Roger 藝人頁寫是父親 Edmond Roger 一時興起取的，Space Age Pop 寫雙名是父親的私人玩笑。簡介已用「據說」，建議改寫成較保守說法或刪掉這句。 | https://www.discogs.com/artist/44313-Roger-Roger |
+| ar-d-021 | Quazar | Quazar | 領隊在唱片做完之前過世，替他收尾的是同年離團的鼓手；Brailey 進來把專輯做完 | 來源不一致：維基兩條目寫 Brailey 協助完成，但 Rock and Roll Globe 引 Arista A&R 主管 Vernon Gibbs 稱 Goins 過世時專輯已經完成；建議刪掉『替他收尾』的因果寫法或改成『專輯由 Brailey 協助完成（說法不一）』。 | https://rockandrollglobe.com/funk/arista-records-and-the-p-funk-multiverse/ |
+| ar-d-021 | Quazar | Quazar | 他（Goins）與 Brailey 同在 1978 年離開 P-Funk | Goins 離團年份兩源（georgeclinton.com 官方傳記、維基 Glenn Goins）皆為 1977；1978 只見維基 Jerome Brailey 條目，且該條說的是 Brailey 的離團年。建議改成『Goins 1977 年離開 P-Funk』。 | https://georgeclinton.com/?p=2219 |
+| ar-d-021 | RAMP | Come Into Knowledge | RAMP 是 Roy Ayers Music Productions 的縮寫，1976 年由 Ayers 在辛辛那提籌組 | 樂團前身是辛辛那提的翻唱樂團 Saturday Night Special，由 Landy Shores 與 John Manuel 先成立；Ayers 是在 Cincinnati Gardens 聽到他們開場後帶去紐約錄音並建議改名 RAMP。維基『1976 年由 Ayers 創立』是簡化說法；建議改成『Ayers 發現辛辛那提的本地樂團並為其命名製作』（CityBeat 單源，搜尋摘要的 JazzRockSoul 亦同說法）。 | https://www.citybeat.com/?p=159284 |
+| ar-d-021 | Ray, Goodman & Brown | Ray, Goodman & Brown | 紐澤西甜靈魂老將 The Moments 於 1978 年改以三位成員姓氏 Ray, Goodman & Brown 重新出發 | The Moments 是 1960 年代在華盛頓特區成軍，紐澤西是 Stang／All Platinum 所在地與 Harry Ray 的家鄉；改名年份各來源 1978（維基）與 1979（PopMatters、Bear Family 的 Polydor 簽約年）不一致。建議把『紐澤西』改為『All Platinum／Stang 旗下』或刪地名，改名年份改寫成『1970 年代末』。 | https://www.kickmag.net/2016/02/14/throwback-momentsray-goodman-brown-sexy-mama/ |
+| ar-d-022 | Ripple | Ripple | 樂團後來搬到亞特蘭大重組、替 Parliament-Funkadelic 的巡演暖過場 | 維基僅說在 Mothership Connection 巡演中為 George Clinton 與 Parliament Funkadelic 暖場，並未說明是替「巡演」整體；措辭可接受，僅供店主參考。上線簡介「十人編制」：維基稱九位樂手，部落格稱核心六人，兩者皆非十人，需人工確認出處。 | https://en.wikipedia.org/wiki/Ripple_(band) |
+| ar-d-022 | Sam Dees | The Show Must Go On | 個人專輯一停就是十四年 | 維基導言稱 Dees 在 1970 年代、1980 年代與 1990 年代皆有發行專輯，與『1975 至 1989 年個人專輯中斷』的說法可能不合；本層未查到 1980 年代專輯的確切年份，請本機對 Discogs 核對後再決定是否改寫。 | https://en.wikipedia.org/wiki/Sam_Dees |
+| ar-d-022 | Sandra Phillips | Too Many People in One Bed | 這是她名下唯一一張專輯 | iforcolor.org 的個人簡介寫她曾簽 Epic、並完成過一張向 Mahalia Jackson 致敬的 CD；Ace 選輯頁也提到她後來為 Okeh 錄音。『唯一一張專輯』不成立，建議改為『她早年唯一的南方靈魂專輯』或刪除。 | https://iforcolor.org/sandra-reaves-phillips/ |
+| ar-d-022 | Sandra Phillips | Too Many People in One Bed | 1970 年由 Canyon Records 發行 | BroadwayWorld 與 PopMatters 都說 Canyon 倒閉，專輯當年只出貨少量、從未正式流通，2013 年才由 Alive Naturalsound 首度重發；『發行』一詞建議加註。 | https://www.broadwayworld.com/bwwmusic/article/New-LPS-from-WOLFMOON-SANDRA-PHILLIPS-Out-Today-20130930 |
+| ar-d-022 | Sharon Redd | Redd Hott | 〈Never Give You Up〉在英國單曲榜第 20 名 | 維基 Sharon Redd 條目只寫 1992 年與 DNA 重錄的〈Can You Handle It〉進英國前 20；〈Never Give You Up〉的英國名次本層未查到來源，建議本機對 Official Charts 核對。 | https://en.wikipedia.org/wiki/Sharon_Redd |
+| ar-d-022 | Sharon Redd | Redd Hott | 1982 年 10 月全張曲目輪番登上告示牌舞曲榜冠軍各一週 | 本層查到的是《Redd Hott》登上舞曲專輯榜首；『每首歌輪流登頂各一週』沒有找到來源，建議核對或改寫成『專輯登上舞曲專輯榜榜首』。 | https://jointzoftheday.substack.com/p/sharon-redd-october-19-1945-may-1 |
+| ar-d-022 | Skull Snaps | Skull Snaps | 收尾曲〈It's a New Day〉的無伴奏開場鼓拍在 1989 年被 Stezo 的〈It's My Turn〉率先取樣 | Dooley-O 與 Chris 在 1980 年代末已拿這段鼓做暫停鍵節拍（〈Watch My Moves〉，2002 年才由 Stones Throw 發行）；Stezo 是最早『發行』的取樣，建議改寫為『最早廣傳／最早發行』 | https://microchop.substack.com/p/511-songs-sampled-the-skull-snaps |
+| ar-d-022 | Spencer Wiggins | The Goldwax Years | 1964 年被 Goldwax 廠主 Quinton Claunch 發掘後只出過單曲、從未有正規專輯 | 維基記他 2003 年由 Tavette Records 發行福音專輯《Keys to the Kingdom》，1977 年日本 Vivid 也出過收他 Goldwax 錄音的彙編專輯；「從未有正規專輯」過於絕對，限定在 Goldwax 時期較準。 | https://en.wikipedia.org/wiki/Spencer_Wiggins |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

@@ -468,3 +468,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Junei 查明是印第安納州 Gary 的吉他手 Willie Lee（卡池 2014 年為重發，〈Let's Ride〉原錄 1985）；Lightnin' Rod 即 Jalal Mansur Nuriddin。
 - 同名作廢：Junior（影集角色）、King James Version（聖經欽定本）、Light of the World（經文）、Major Harris（美式足球員）的維基預抓。
 - 待本機（上線簡介）：James Cleveland《Peace Be Still》「逾百萬張」（另說約 80 萬）；Jimmy Hughes「FAME 錄下的第一支單曲」不成立；Jody Watley「美國賣出兩百萬張」無認證；Junior〈Mama Used to Say〉「先在美國打開局面」待核；Lenine「入圍 2000 年首屆拉丁葛萊美」無佐證；Los Kjarkas「憑 GEMA 登記提告勝訴」無出處（維基為法國法院）；Major Harris《My Way》1974／1975。
+
+## ar-d-021（2026-10-07）
+
+- 39 位上架（32 full、7 thin：Mel & Tim、Modern Talking、Ollie & The Nightingales、One Way、Otis G. Johnson、Parlet、Ralph Tresvant），1 位不寫：Mighty Ryeders（來源只有商品頁與版權拍賣頁，國籍無出處、邁阿密出身未取得頁面，第一句交代不了國籍；比照 d-018 Black Heat）。
+- 審稿修 7 處：Mary Wells「Motown 的首位女性巨星」改「早期的女性巨星」；Meditation Singers 刪「1960 年代最硬派之一」；Mighty Clouds of Joy 刪「最具影響力之一」與「第一個登上《Soul Train》的福音團」；P-Funk All Stars 刪與 d-019 Fuzzy Haskins 篇重疊的名人堂評語；Patti LaBelle 兩項榮譽只留 Apollo 名人堂；Pointer Sisters 刪「第一組登上 Grand Ole Opry 的黑人女子團體」（來源為官方或轉述，未獨立查證）；Purple Image 刪「克里夫蘭最頂尖」。
+- 放寬字數：Natalie Cole 258（九座葛萊美與父女對唱為主體，已故）。
+- 搜尋超限放行：Ray, Goodman & Brown 9（多出一次確認〈Empire State of Mind〉取樣）。Modern Talking、Otis G. Johnson 失敗請求 5 次，未取得內容，不影響事實。
+- 身分：Napoleon Brown 即 Nappy Brown（Discogs 另有同名福音鋼琴手，非本人）；Meditation Singers 1971 年 Jewel 專輯身分為推定，正文未提該張。
+- 同名作廢：Ollie（人名消歧義）、Mutiny（叛變）的維基預抓。
+- 待本機（上線簡介）：Mighty Clouds of Joy「1959 年組於洛杉磯」（1955／1950 年代後期各說）；Musique〈In the Bush〉「Prelude 史上最大熱門」無依據；Nino Nardini / Roger Roger「Debussy 替他取名」（Discogs 說是父親取的）；Quazar「Brailey 把專輯做完」與「兩人同在 1978 年離開 P-Funk」（Goins 1977 離開）；RAMP「1976 年由 Ayers 籌組」（前身 1975 年 Saturday Night Special）；Ray, Goodman & Brown「The Moments 在紐澤西成軍」（實為華盛頓特區）；Purple Image 替 Steppenwolf 與 Aretha Franklin 暖場無可靠來源。
