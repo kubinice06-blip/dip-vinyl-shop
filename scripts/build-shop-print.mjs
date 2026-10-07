@@ -8,8 +8,9 @@ import { fileURLToPath } from 'node:url';
 
 const R = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const arg = k => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
-const OUT = path.resolve(R, arg('--out') || 'data/shop/print/shop-a6.html');
+const OUT = path.resolve(R, arg('--out') || `data/shop/print/shop-${(arg('--size') || 'a6').toLowerCase()}.html`);
 const pick = arg('--ids') ? new Set(arg('--ids').split(',')) : null;
+const SIZE = (arg('--size') || 'a6').toLowerCase();   // a6 105×148mm（預設）｜a7 74×105mm
 
 const descs = JSON.parse(fs.readFileSync(path.join(R, 'data/shop/descs.json'), 'utf8'));
 const inv = JSON.parse(fs.readFileSync(path.join(R, 'data/shop/inventory.json'), 'utf8'));
@@ -87,6 +88,21 @@ footer { display: flex; justify-content: space-between; align-items: flex-end; b
 .sub { font-family: "IBM Plex Mono", "Noto Sans TC", monospace; font-size: 6.5pt; color: #6d675e; }
 .price { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 16pt; letter-spacing: .02em; }
 @media print { html, body { background: none; } .card { margin: 0; } }
+${SIZE === 'a7' ? `
+/* A7 74×105mm：同版面等比縮小，內文字級另調到可讀下限 */
+@page { size: 74mm 105mm; margin: 0; }
+.card { width: 74mm; height: 105mm; padding: 6mm 5.8mm 5.5mm; }
+header { font-size: 5pt; }
+.g { font-size: 5.6pt; padding: .3mm 1.4mm; border-radius: 2mm; } .g i { font-size: 4.4pt; margin-left: .7mm; }
+.apexbadge { font-size: 5.6pt; padding: .4mm 1.4mm; margin-left: 1.6mm; } .apexbadge i { font-size: 4.4pt; }
+.title { margin-top: 5mm; padding-bottom: 2.4mm; }
+.artist { font-size: 7pt; margin-bottom: 1mm; }
+h1 { font-size: 13pt; }
+.axes { padding: 1.5mm 0; } .ax em { font-size: 5.2pt; } .st { font-size: 7.6pt; }
+.text { margin-top: 2.4mm; font-size: 7.9pt; line-height: 1.72; }
+.long .text { font-size: 7.6pt; line-height: 1.68; }
+footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }
+.apex { box-shadow: inset 0 0 0 1.1mm var(--apex); }` : ''}
 </style></head><body>
 ${rows.map(card).join('\n')}
 </body></html>`;
