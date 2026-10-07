@@ -1,6 +1,6 @@
 {
   "source": "notion:401f0a5c4871448783385c78f6a3ac39",
-  "fetchedAt": "2026-10-06",
+  "fetchedAt": "2026-10-07",
   "note": "只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵）。成本、利潤、抽成、群組一律不進 repo。",
   "rows": [
     {
@@ -10,7 +10,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1200,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff80ce9526dcb15aecb696",
@@ -19,7 +22,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1000,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff811384acfaa789257db2",
@@ -28,7 +34,10 @@
       "year": 1972,
       "condition": "NM",
       "priceNT": 1200,
-      "poolKey": "Miles Davis|Round About Midnight"
+      "poolKey": "Miles Davis|Round About Midnight",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff811386dac1f6fdbe5a76",
@@ -37,7 +46,10 @@
       "year": 1966,
       "condition": "NM",
       "priceNT": 1000,
-      "poolKey": "Oscar Peterson|Blues Etude"
+      "poolKey": "Oscar Peterson|Blues Etude",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81149ff3d195232423af",
@@ -46,7 +58,10 @@
       "year": 1965,
       "condition": "VG+",
       "priceNT": 1200,
-      "poolKey": "Roy Haynes|We Three"
+      "poolKey": "Roy Haynes|We Three",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81218b15db0d702808fb",
@@ -55,7 +70,10 @@
       "year": 2016,
       "condition": "VG+",
       "priceNT": 2500,
-      "poolKey": "The Black Eyed Peas|Monkey Business"
+      "poolKey": "The Black Eyed Peas|Monkey Business",
+      "genres": [
+        "Hip-Hop"
+      ]
     },
     {
       "id": "3ee0ad0255ff8130b3aacbe9b193b612",
@@ -64,7 +82,10 @@
       "year": 1964,
       "condition": "NM",
       "priceNT": 1480,
-      "poolKey": "Oscar Peterson|Night Train"
+      "poolKey": "Oscar Peterson|Night Train",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81368bbec643884d8766",
@@ -73,7 +94,11 @@
       "year": 2003,
       "condition": "NM",
       "priceNT": 4000,
-      "poolKey": "The Detroit Experiment|The Detroit Experiment"
+      "poolKey": "The Detroit Experiment|The Detroit Experiment",
+      "genres": [
+        "Jazz",
+        "Electronic"
+      ]
     },
     {
       "id": "3ee0ad0255ff814c8cd7d6b0305fcb15",
@@ -82,7 +107,11 @@
       "year": 1987,
       "condition": "VG+",
       "priceNT": 3500,
-      "poolKey": "達明一派|石頭記"
+      "poolKey": "達明一派|石頭記",
+      "genres": [
+        "Pop",
+        "Electronic"
+      ]
     },
     {
       "id": "3ee0ad0255ff8150aae7d1fff94122fd",
@@ -91,7 +120,11 @@
       "year": 1972,
       "condition": "NM",
       "priceNT": 1290,
-      "poolKey": "三上寛|1972／コンサートライブ零狐徒"
+      "poolKey": "三上寛|1972／コンサートライブ零狐徒",
+      "genres": [
+        "Folk",
+        "Rock"
+      ]
     },
     {
       "id": "3ee0ad0255ff815b969fd2c4d2c92fe4",
@@ -100,7 +133,10 @@
       "year": 1968,
       "condition": "VG+",
       "priceNT": 2000,
-      "poolKey": "Lonnie Smith|Think!"
+      "poolKey": "Lonnie Smith|Think!",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81668a74d3448af000fe",
@@ -109,7 +145,11 @@
       "year": 1983,
       "condition": "NM",
       "priceNT": 1280,
-      "poolKey": "濱田金吾|Mugshot"
+      "poolKey": "濱田金吾|Mugshot",
+      "genres": [
+        "City Pop",
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81748952c0026e26a0b1",
@@ -118,7 +158,10 @@
       "year": 2003,
       "condition": "NM",
       "priceNT": 1650,
-      "poolKey": "Charles Webster|Remixed on the 24th of July"
+      "poolKey": "Charles Webster|Remixed on the 24th of July",
+      "genres": [
+        "Electronic"
+      ]
     },
     {
       "id": "3ee0ad0255ff8175b3c8f5f06e26186c",
@@ -127,7 +170,10 @@
       "year": 1974,
       "condition": "NM",
       "priceNT": 4000,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81849a0fea1b561abf8d",
@@ -136,7 +182,10 @@
       "year": 1977,
       "condition": "NM",
       "priceNT": 1280,
-      "poolKey": "Art Blakey and the Jazz Messengers|Moanin'"
+      "poolKey": "Art Blakey and the Jazz Messengers|Moanin'",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81858495edf6222e6b67",
@@ -145,7 +194,10 @@
       "year": 1975,
       "condition": "NM",
       "priceNT": 1480,
-      "poolKey": "Keith Jarrett|El Juicio (The Judgement)"
+      "poolKey": "Keith Jarrett|El Juicio (The Judgement)",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff818d9739f99eaedfed65",
@@ -154,7 +206,10 @@
       "year": 1981,
       "condition": "NM",
       "priceNT": 1580,
-      "poolKey": "Bill Evans|You Must Believe in Spring"
+      "poolKey": "Bill Evans|You Must Believe in Spring",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff818ea397ce3304a96cf6",
@@ -163,7 +218,10 @@
       "year": 1962,
       "condition": "NM",
       "priceNT": 1280,
-      "poolKey": "John Wright|Mr. Soul"
+      "poolKey": "John Wright|Mr. Soul",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff818f924dd849be3239b1",
@@ -172,7 +230,10 @@
       "year": 1978,
       "condition": "NM",
       "priceNT": 1000,
-      "poolKey": "Red Garland / Ron Carter / Philly Joe Jones|Crossings"
+      "poolKey": "Red Garland / Ron Carter / Philly Joe Jones|Crossings",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff8192872ed5eb6f055cf3",
@@ -181,7 +242,10 @@
       "year": null,
       "condition": "VG+",
       "priceNT": 2350,
-      "poolKey": "Aaliyah|Aaliyah"
+      "poolKey": "Aaliyah|Aaliyah",
+      "genres": [
+        "R&B"
+      ]
     },
     {
       "id": "3ee0ad0255ff8193870cd2da6d9eeb17",
@@ -190,7 +254,11 @@
       "year": null,
       "condition": "NM",
       "priceNT": 1000,
-      "poolKey": "荒井由実|Misslim"
+      "poolKey": "荒井由実|Misslim",
+      "genres": [
+        "City Pop",
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff8198b2cae1385339dc52",
@@ -199,7 +267,10 @@
       "year": 1978,
       "condition": "NM",
       "priceNT": 880,
-      "poolKey": "Red Garland|When There Are Grey Skies"
+      "poolKey": "Red Garland|When There Are Grey Skies",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81ada877f8662c37c7ac",
@@ -208,7 +279,10 @@
       "year": null,
       "condition": "NM",
       "priceNT": 2880,
-      "poolKey": "Phew|Phew"
+      "poolKey": "Phew|Phew",
+      "genres": [
+        "Electronic"
+      ]
     },
     {
       "id": "3ee0ad0255ff81c4a812fbdc9cd7b6d8",
@@ -217,7 +291,10 @@
       "year": 2014,
       "condition": "NM",
       "priceNT": 4000,
-      "poolKey": "間宮貴子|Love Trip"
+      "poolKey": "間宮貴子|Love Trip",
+      "genres": [
+        "City Pop"
+      ]
     },
     {
       "id": "3ee0ad0255ff81d2bf41fdd906461b64",
@@ -226,7 +303,10 @@
       "year": 1976,
       "condition": "VG",
       "priceNT": 990,
-      "poolKey": "Kenny Burrell & John Coltrane|Kenny Burrell & John Coltrane"
+      "poolKey": "Kenny Burrell & John Coltrane|Kenny Burrell & John Coltrane",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ee0ad0255ff81d5ac89e7189702697c",
@@ -235,7 +315,10 @@
       "year": 1970,
       "condition": "NM",
       "priceNT": 1000,
-      "poolKey": "Steve Kuhn|Watch What Happens!"
+      "poolKey": "Steve Kuhn|Watch What Happens!",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff800a85f2f8600986605e",
@@ -244,7 +327,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1000,
-      "poolKey": "Miles Davis|Filles de Kilimanjaro"
+      "poolKey": "Miles Davis|Filles de Kilimanjaro",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff80308f13cd8f2c540b79",
@@ -253,7 +339,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1000,
-      "poolKey": "Miles Davis|Miles in the Sky"
+      "poolKey": "Miles Davis|Miles in the Sky",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff801aba1cf344d7dded98",
@@ -262,7 +351,10 @@
       "year": null,
       "condition": null,
       "priceNT": 2400,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff805dab62ce2cf1c59625",
@@ -271,7 +363,10 @@
       "year": null,
       "condition": null,
       "priceNT": 900,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff801d80efd2749b256f8f",
@@ -280,7 +375,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1000,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff80a4925cd52cdcd52c5a",
@@ -289,7 +387,10 @@
       "year": null,
       "condition": null,
       "priceNT": 800,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Folk"
+      ]
     },
     {
       "id": "3f00ad0255ff80918ab9cdb1b140b38a",
@@ -298,7 +399,10 @@
       "year": null,
       "condition": null,
       "priceNT": 800,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff80bd8477c6a65328388c",
@@ -307,7 +411,10 @@
       "year": null,
       "condition": null,
       "priceNT": 800,
-      "poolKey": "Cannibale|Not Easy To Cook"
+      "poolKey": "Cannibale|Not Easy To Cook",
+      "genres": [
+        "Rock"
+      ]
     },
     {
       "id": "3f00ad0255ff80aeb3cfc690a280157b",
@@ -316,7 +423,10 @@
       "year": null,
       "condition": null,
       "priceNT": 900,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Rock"
+      ]
     },
     {
       "id": "3f00ad0255ff8077ad7ed244edf6792b",
@@ -325,7 +435,10 @@
       "year": null,
       "condition": null,
       "priceNT": null,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Folk"
+      ]
     },
     {
       "id": "3f00ad0255ff801a82e6d36027faadfa",
@@ -334,7 +447,10 @@
       "year": null,
       "condition": null,
       "priceNT": 900,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff8003b6e1c2427c01a236",
@@ -343,7 +459,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1500,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f00ad0255ff806182f4c53b96fdbaf1",
@@ -352,7 +471,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1480,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Folk"
+      ]
     },
     {
       "id": "3f00ad0255ff80b7bac6d97d94cf1922",
@@ -361,7 +483,10 @@
       "year": null,
       "condition": null,
       "priceNT": 900,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Rock"
+      ]
     },
     {
       "id": "3f00ad0255ff80bab54ade4c774f129a",
@@ -370,7 +495,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1280,
-      "poolKey": "Sonny Rollins|The Bridge"
+      "poolKey": "Sonny Rollins|The Bridge",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3ef0ad0255ff803f8228ee791b32cb17",
@@ -379,7 +507,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1000,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff8026bae0d0dde11ed3c6",
@@ -388,7 +519,10 @@
       "year": 1972,
       "condition": null,
       "priceNT": 1400,
-      "poolKey": "あがた森魚|乙女の儚夢"
+      "poolKey": "あがた森魚|乙女の儚夢",
+      "genres": [
+        "Folk"
+      ]
     },
     {
       "id": "3f10ad0255ff8058842fd9ecdd571873",
@@ -397,7 +531,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1200,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Electronic"
+      ]
     },
     {
       "id": "3f10ad0255ff80b49db3f5bb0ec296b6",
@@ -406,7 +543,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1200,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff80679cdff9a5e6f69470",
@@ -415,7 +555,10 @@
       "year": 1969,
       "condition": null,
       "priceNT": 2500,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Folk"
+      ]
     },
     {
       "id": "3f10ad0255ff802fab77e511d729ac00",
@@ -424,7 +567,11 @@
       "year": 1974,
       "condition": null,
       "priceNT": 600,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Folk",
+        "Rock"
+      ]
     },
     {
       "id": "3f10ad0255ff800fa960ff764af0dc23",
@@ -433,7 +580,10 @@
       "year": 1982,
       "condition": null,
       "priceNT": 600,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "City Pop"
+      ]
     },
     {
       "id": "3f10ad0255ff806888eaca9373bcb06a",
@@ -442,7 +592,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1000,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Pop"
+      ]
     },
     {
       "id": "3f10ad0255ff80a9aa62ed1aa5a9b602",
@@ -451,7 +604,10 @@
       "year": null,
       "condition": null,
       "priceNT": 800,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff80cf8ee0e417a5784dde",
@@ -460,7 +616,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1600,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff80e7bd17edee59a4221e",
@@ -469,7 +628,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1000,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff807688e9e869ed9b55fb",
@@ -478,7 +640,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1280,
-      "poolKey": "Emerson, Lake & Palmer|Pictures at an Exhibition"
+      "poolKey": "Emerson, Lake & Palmer|Pictures at an Exhibition",
+      "genres": [
+        "Rock"
+      ]
     },
     {
       "id": "3f10ad0255ff8059aa49da71d0df331f",
@@ -487,7 +652,10 @@
       "year": 1975,
       "condition": null,
       "priceNT": 1000,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff8064a6a5c4f4f4b7dba4",
@@ -496,7 +664,10 @@
       "year": null,
       "condition": null,
       "priceNT": 800,
-      "poolKey": "Erroll Garner|Erroll Garner Plays Misty"
+      "poolKey": "Erroll Garner|Erroll Garner Plays Misty",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff8040af83fca5d008b0f0",
@@ -505,7 +676,11 @@
       "year": null,
       "condition": null,
       "priceNT": 2000,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz",
+        "Soul"
+      ]
     },
     {
       "id": "3f10ad0255ff80f0bf40e71aae69c281",
@@ -514,7 +689,10 @@
       "year": 1971,
       "condition": null,
       "priceNT": 2000,
-      "poolKey": "Neil Young & Crazy Horse|Everybody Knows This Is Nowhere"
+      "poolKey": "Neil Young & Crazy Horse|Everybody Knows This Is Nowhere",
+      "genres": [
+        "Rock"
+      ]
     },
     {
       "id": "3f10ad0255ff80a1a234d6d2edc7d8bd",
@@ -523,7 +701,10 @@
       "year": null,
       "condition": null,
       "priceNT": 3000,
-      "poolKey": "浅川マキ|Cat Nap"
+      "poolKey": "浅川マキ|Cat Nap",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff805c8822d7ecc7f7151c",
@@ -532,7 +713,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1600,
-      "poolKey": "Horace Silver And The Jazz Messengers|Horace Silver And The Jazz Messengers"
+      "poolKey": "Horace Silver And The Jazz Messengers|Horace Silver And The Jazz Messengers",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff802683fae74b2aee59e8",
@@ -541,7 +725,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1280,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff80ca88bbd5bfa858fbba",
@@ -550,7 +737,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1280,
-      "poolKey": "菊地雅章|But Not For Me"
+      "poolKey": "菊地雅章|But Not For Me",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff80f0b0bde0c773102aef",
@@ -559,7 +749,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1280,
-      "poolKey": "佐藤允彦トリオ|Palladium"
+      "poolKey": "佐藤允彦トリオ|Palladium",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff80ef9e9ed84e274dfbc7",
@@ -568,7 +761,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1280,
-      "poolKey": "De La Soul|Art Official Intelligence: Mosaic Thump"
+      "poolKey": "De La Soul|Art Official Intelligence: Mosaic Thump",
+      "genres": [
+        "Hip-Hop"
+      ]
     },
     {
       "id": "3f10ad0255ff8067a895d536274aee16",
@@ -577,7 +773,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1600,
-      "poolKey": null
+      "poolKey": null,
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff8000bfeede229f1004a3",
@@ -586,7 +785,10 @@
       "year": null,
       "condition": null,
       "priceNT": 900,
-      "poolKey": "Keith Jarrett|Luminessence"
+      "poolKey": "Keith Jarrett|Luminessence",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff804f9711e741187ad09f",
@@ -595,7 +797,10 @@
       "year": null,
       "condition": null,
       "priceNT": 900,
-      "poolKey": "秋吉敏子トリオ & Flute Quartet|Tuttie Flutie"
+      "poolKey": "秋吉敏子トリオ & Flute Quartet|Tuttie Flutie",
+      "genres": [
+        "Jazz"
+      ]
     },
     {
       "id": "3f10ad0255ff8033ad58c3daf57be996",
@@ -604,7 +809,10 @@
       "year": null,
       "condition": null,
       "priceNT": 4000,
-      "poolKey": "Portishead|Portishead"
+      "poolKey": "Portishead|Portishead",
+      "genres": [
+        "Electronic"
+      ]
     },
     {
       "id": "3f10ad0255ff804ba972c1e0fb194f4f",
@@ -613,7 +821,10 @@
       "year": null,
       "condition": null,
       "priceNT": 1200,
-      "poolKey": "宮沢昭|いわな"
+      "poolKey": "宮沢昭|いわな",
+      "genres": [
+        "Jazz"
+      ]
     }
   ]
 }

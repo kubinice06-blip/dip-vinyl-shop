@@ -232,6 +232,11 @@
     /* 實體店庫存：照前台「我的唱片櫃」的卡片排列（稀有度框色、等級字、藝人／專輯） */
     .shop-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
     .shop-count { font-size: 11px; color: var(--gray); }
+    .shop-sections { display: grid; gap: 22px; }
+    .shop-genres { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+    .shop-genre { font-size: 9px; letter-spacing: 0.04em; padding: 1px 6px; border: 1px solid var(--line); border-radius: 8px; color: var(--black); background: #fafafa; }
+    .shop-section-head { display: flex; align-items: baseline; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; margin: 0 0 8px; }
+    .shop-section-head span { font-size: 10px; font-weight: 400; color: var(--gray); letter-spacing: 0; }
     .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
     .shop-card { position: relative; background: #fff; padding: 14px; cursor: pointer; text-align: left; font-family: var(--mono); }
     .shop-card:hover { background: #fafafa; }
@@ -3495,6 +3500,9 @@ ${discogs ? '- Discogs：' + discogs : ''}
   // 封面：card_catalog 校正圖優先，沒有才退 worker /spotify-search（與前台 resolveCardAssets 同序）。
   // 介紹：門市版（見下方 shopDescFor），不用卡牌遊戲的簡介。
   const SHOP_TIER_LABEL = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
+  const SHOP_GENRE_ORDER = ['Jazz', 'Soul', 'R&B', 'Hip-Hop', 'Rock', 'Folk', 'City Pop', 'Pop', 'Electronic', 'Soundtrack'];
+  const SHOP_GENRE_LABEL = { 'Jazz': '爵士 Jazz', 'Soul': '靈魂 Soul', 'R&B': '節奏藍調 R&B', 'Hip-Hop': '嘻哈 Hip-Hop', 'Rock': '搖滾 Rock', 'Folk': '民謠 Folk',
+    'City Pop': '城市流行 City Pop', 'Pop': '流行 Pop', 'Electronic': '電子 Electronic', 'Soundtrack': '原聲帶 Soundtrack', '未分類': '未分類（Notion 曲風欄空白）' };
   function shopRarityOf(row) {
     if (!row) return null;
     if (row[8] && SHOP_TIER_LABEL[row[8]]) return { tier: row[8], label: SHOP_TIER_LABEL[row[8]] };
@@ -3524,12 +3532,14 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const price = it.priceNT ? `<span class="shop-price">NT$${Number(it.priceNT)}</span>` : '';
     const pending = it.status === 'pending_card' ? `<span class="shop-pending">待上架</span>` : '';
     const meta = [it.condition, it.pressingYear ? `${it.pressingYear} 壓` : ''].filter(Boolean).join('・');
+    const genres = (it.genres || []).map(g => `<span class="shop-genre">${esc(SHOP_GENRE_LABEL[g] || g)}</span>`).join('');
     return `<article class="shop-card${r ? ' rarity-' + r.tier : ''}" data-shop-idx="${i}" role="button" tabindex="0">
       <div class="shop-thumb">${cover}${pending}${price}</div>
       <div class="shop-rarity">${r ? esc(r.label) : '—'}</div>
       <div class="shop-artist">${esc(it.artist || it.listedArtist)}</div>
       <div class="shop-album">${esc(it.album || it.listedTitle)}</div>
       ${meta ? `<div class="shop-meta">${esc(meta)}</div>` : ''}
+      ${genres ? `<div class="shop-genres">${genres}</div>` : ''}
     </article>`;
   }
   // 卡池鍵正規化：與 scripts/pool-keys.mjs / sync-shop-inventory.mjs 相同
@@ -3552,14 +3562,21 @@ ${discogs ? '- Discogs：' + discogs : ''}
       const row = it.artist ? byId.get(ovCardId(it.artist, it.album)) : null;
       return { ...it, row, rarity: shopRarityOf(row), year: row ? row[6] : null, coverUrl: '' };
     });
-    // 已上架的在前、待上架的在後；同組照藝人名排
-    shopItems.sort((a, b) => (a.status === 'pending_card') - (b.status === 'pending_card') || String(a.artist || a.listedArtist).localeCompare(String(b.artist || b.listedArtist)));
     const ready = shopItems.filter(it => it.status === 'in_stock').length;
     const sold = items.filter(it => it.status === 'sold').length;
     document.getElementById('shopCount').textContent = `在售 ${shopItems.length} 張・卡池已有 ${ready} 張・待上架 ${shopItems.length - ready} 張${sold ? `・已售出紀錄 ${sold} 張` : ''}`;
     if (!shopItems.length) { grid.className = ''; grid.textContent = '清單是空的。'; return; }
-    grid.className = 'shop-grid';
-    grid.innerHTML = shopItems.map(shopCardHtml).join('');
+    // 依 Notion「曲風」第一個標籤分區（多標籤的卡只放在第一個曲風底下，標籤列照樣全顯示）
+    const genreOf = it => (it.genres && it.genres[0]) || '未分類';
+    const order = SHOP_GENRE_ORDER;
+    const rank = g => { const i = order.indexOf(g); return i < 0 ? order.length : i; };
+    shopItems.sort((a, b) => rank(genreOf(a)) - rank(genreOf(b)) || genreOf(a).localeCompare(genreOf(b))
+      || (a.status === 'pending_card') - (b.status === 'pending_card') || String(a.artist || a.listedArtist).localeCompare(String(b.artist || b.listedArtist)));
+    const groups = [];
+    shopItems.forEach((it, i) => { const g = genreOf(it); if (!groups.length || groups[groups.length - 1].g !== g) groups.push({ g, idx: [] }); groups[groups.length - 1].idx.push(i); });
+    grid.className = 'shop-sections';
+    grid.innerHTML = groups.map(({ g, idx }) => `<section class="shop-section"><h3 class="shop-section-head">${esc(SHOP_GENRE_LABEL[g] || g)}<span>${idx.length} 張</span></h3>
+      <div class="shop-grid">${idx.map(i => shopCardHtml(shopItems[i], i)).join('')}</div></section>`).join('');
     // 封面背景分批補（6 張一組），補到就換掉 ♪
     (async () => {
       for (let start = 0; start < shopItems.length && token === shopLoadToken; start += 6) {
@@ -3595,6 +3612,15 @@ ${discogs ? '- Discogs：' + discogs : ''}
         if (token !== shopLoadToken) return;
         shopBase = inv.items || [];
         document.getElementById('shopSource').textContent = `來源：repo 快照 data/shop/inventory.json（${inv.snapshotAt || '—'}）；按重新整理並存檔後改用 Firestore`;
+      }
+      // Firestore 舊存檔沒有曲風欄：用 repo 快照補（下次「從 Notion 重新整理」存檔後就會帶 Notion 的曲風）
+      if (shopBase.some(it => !Array.isArray(it.genres))) {
+        try {
+          const inv = await fetch('data/shop/inventory.json?v=' + Date.now()).then(r => r.ok ? r.json() : { items: [] });
+          const g = new Map((inv.items || []).map(it => [it.id, it.genres || []]));
+          shopBase = shopBase.map(it => Array.isArray(it.genres) ? it : { ...it, genres: g.get(it.id) || [] });
+        } catch (e) {}
+        if (token !== shopLoadToken) return;
       }
       renderShopGrid(shopBase, token);
     } catch (e) { grid.className = ''; grid.textContent = '載入失敗：' + (e.message || e); }
@@ -3645,6 +3671,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
           cardKey: card ? shopKey(card[0], card[1]) : null, artist: card ? card[0] : null, album: card ? card[1] : null,
           match: card ? m.how : null, listedTitle: row.title, listedArtist: row.artist,
           pressingYear: row.year ?? null, condition: row.condition ?? null, priceNT: row.priceNT ?? null,
+          genres: Array.isArray(row.genres) ? row.genres : (prev?.genres || []),
           note: prev?.note || null, firstSeen: (prev && prev.status !== 'sold' && prev.firstSeen) || today,
         };
         next.push(it);
@@ -3654,6 +3681,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
           const diffs = [];
           if ((prev.priceNT ?? null) !== it.priceNT) diffs.push(`售價 ${prev.priceNT ?? '—'} → ${it.priceNT ?? '—'}`);
           if ((prev.condition ?? null) !== it.condition) diffs.push(`品相 ${prev.condition ?? '—'} → ${it.condition ?? '—'}`);
+          if ((prev.genres || []).join('/') !== it.genres.join('/')) diffs.push(`曲風 ${(prev.genres || []).join('、') || '—'} → ${it.genres.join('、') || '—'}`);
           if ((prev.cardKey || null) !== (it.cardKey || null)) diffs.push(it.cardKey ? `對上卡池 ${it.artist}《${it.album}》` : '卡池對應消失');
           if (prev.listedTitle !== it.listedTitle || prev.listedArtist !== it.listedArtist) diffs.push('品名／演出者改了');
           if (diffs.length) changed.push({ it, diffs });
@@ -3787,6 +3815,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     const meta = [
       `店內標示：${it.listedArtist}《${it.listedTitle}》`,
       [it.pressingYear ? `壓片年 ${it.pressingYear}` : '', it.condition ? `品相 ${it.condition}` : '', it.priceNT ? `售價 NT$${Number(it.priceNT)}` : ''].filter(Boolean).join('・'),
+      (it.genres || []).length ? `曲風 ${it.genres.map(g => SHOP_GENRE_LABEL[g] || g).join('、')}` : '',
       it.note || '',
     ].filter(Boolean).map(esc).join('<br>');
     document.getElementById('shopModalBody').innerHTML = `

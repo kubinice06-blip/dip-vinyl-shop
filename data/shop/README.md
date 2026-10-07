@@ -69,3 +69,8 @@ Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字
 - 藝人介紹 ar-d-119 上架 7 位（桃井かおり 素材不足略過），分片 3087 位。
 - 本機待辦：add-20261006-shop 照 handoff.json 上架（KV／Firestore／album_overrides repaste／seed／published gate）；上架後 Notion 13 列補卡池鍵、PENDING_NEW 清掉、重跑同步腳本；池卡《いわな》queryAlias 補 Bull Trout。
 - PROJECT_MEMORY.md 待本機補一筆：2026-10-06 dip-vinyl-shop 店內販售區第三波＋門市版介紹機制（descs.json／SHOP_DESC_RULES.md／後台可編輯，Firestore settings/shopDescs）。
+
+## 曲風分區（2026-10-07）
+- 曲風以 Notion「曲風」多選欄為準（Jazz、Soul、R&B、Hip-Hop、Rock、Folk、City Pop、Pop、Electronic、Soundtrack；Hip-Hop／R&B／Pop 為 2026-10-07 新增）。
+- 快照與 inventory.json 帶 `genres`；Worker /shop-inventory 回傳 `genres`（需本機重新部署 Worker 才生效）。
+- 後台「實體店庫存」依第一個曲風分區，每張卡下方顯示曲風標籤；Firestore 舊存檔沒有曲風時先用 repo 快照補，按「從 Notion 重新整理 → 套用並存檔」後改用 Notion 的值。
