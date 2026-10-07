@@ -118,6 +118,14 @@ const cnt = s => items.filter(i => i.status === s).length;
 console.log(`快照 ${snap.rows.length} 列 → in_stock ${cnt('in_stock')}、pending_card ${cnt('pending_card')}、sold ${cnt('sold')}`);
 for (const i of items.filter(i => i.match === 'override')) console.log(`  人工：${i.listedArtist}《${i.listedTitle}》→ ${i.artist}《${i.album}》`);
 for (const i of items.filter(i => i.status === 'pending_card')) console.log(`  待上架：${i.listedArtist}《${i.listedTitle}》`);
+// 店內挖寶・心情選歌的卡 → 心情對照（data/shop/mood-map.json）。沒列到的卡前端會用三軸＋曲風粗估，
+// 能跑但不準，所以只提醒、不擋。
+const MOODS = path.join(R, 'data/shop/mood-map.json');
+if (fs.existsSync(MOODS)) {
+  const moodMap = JSON.parse(fs.readFileSync(MOODS, 'utf8')).map || {};
+  const noMood = items.filter(i => i.status === 'in_stock' && !moodMap[i.cardKey]);
+  for (const i of noMood) console.log(`  ⚠ 心情未配：${i.artist}《${i.album}》（${i.cardKey}）→ 補進 data/shop/mood-map.json`);
+}
 if (errors.length) { console.error(errors.map(e => '✗ ' + e).join('\n')); process.exit(1); }
 
 if (WRITE) {
