@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 552 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 554 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -552,6 +552,8 @@
 | ar-d-022 | Sharon Redd | Redd Hott | 1982 年 10 月全張曲目輪番登上告示牌舞曲榜冠軍各一週 | 本層查到的是《Redd Hott》登上舞曲專輯榜首；『每首歌輪流登頂各一週』沒有找到來源，建議核對或改寫成『專輯登上舞曲專輯榜榜首』。 | https://jointzoftheday.substack.com/p/sharon-redd-october-19-1945-may-1 |
 | ar-d-022 | Skull Snaps | Skull Snaps | 收尾曲〈It's a New Day〉的無伴奏開場鼓拍在 1989 年被 Stezo 的〈It's My Turn〉率先取樣 | Dooley-O 與 Chris 在 1980 年代末已拿這段鼓做暫停鍵節拍（〈Watch My Moves〉，2002 年才由 Stones Throw 發行）；Stezo 是最早『發行』的取樣，建議改寫為『最早廣傳／最早發行』 | https://microchop.substack.com/p/511-songs-sampled-the-skull-snaps |
 | ar-d-022 | Spencer Wiggins | The Goldwax Years | 1964 年被 Goldwax 廠主 Quinton Claunch 發掘後只出過單曲、從未有正規專輯 | 維基記他 2003 年由 Tavette Records 發行福音專輯《Keys to the Kingdom》，1977 年日本 Vivid 也出過收他 Goldwax 錄音的彙編專輯；「從未有正規專輯」過於絕對，限定在 Goldwax 時期較準。 | https://en.wikipedia.org/wiki/Spencer_Wiggins |
+| ar-d-023 | The Chantels | We Are the Chantels | 2019 年入選搖滾名人堂單曲類 | The Chantels 至今未入選搖滾名人堂（2001、2009 年進最終名單未獲通過）；2019 年的榮譽是布朗克斯一個街角以團命名。 | https://amsterdamnews.com/news/2026/08/06/from-the-bronx-to-the-world-legendary-singer-arlene-smith-of-the-chantels-passes-at-84/ |
+| ar-d-023 | The Dells | There Is | 〈Stay in My Corner〉重錄成六分十四秒的慢板長篇 | VGHOF 寫單曲版為六分十秒；六分十四秒若是專輯版長度，簡介應註明版本，否則與單曲長度矛盾（小疑點，不確定）。 | https://vocalgroup.org/?p=709 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

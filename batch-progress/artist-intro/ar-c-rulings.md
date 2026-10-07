@@ -478,3 +478,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Napoleon Brown 即 Nappy Brown（Discogs 另有同名福音鋼琴手，非本人）；Meditation Singers 1971 年 Jewel 專輯身分為推定，正文未提該張。
 - 同名作廢：Ollie（人名消歧義）、Mutiny（叛變）的維基預抓。
 - 待本機（上線簡介）：Mighty Clouds of Joy「1959 年組於洛杉磯」（1955／1950 年代後期各說）；Musique〈In the Bush〉「Prelude 史上最大熱門」無依據；Nino Nardini / Roger Roger「Debussy 替他取名」（Discogs 說是父親取的）；Quazar「Brailey 把專輯做完」與「兩人同在 1978 年離開 P-Funk」（Goins 1977 離開）；RAMP「1976 年由 Ayers 籌組」（前身 1975 年 Saturday Night Special）；Ray, Goodman & Brown「The Moments 在紐澤西成軍」（實為華盛頓特區）；Purple Image 替 Steppenwolf 與 Aretha Franklin 暖場無可靠來源。
+
+## ar-d-022（2026-10-07）
+
+- 39 位上架（31 full、8 thin：Reverend Bernard Avant & The St. James Gospel Choir、Ruby Andrews、Shira Small、Skyy、Sons of Truth、Starcrost、Sweat Band、The Brief Encounter），1 位不寫：Soul for Real（聲音格只有「歸在 SWV、New Edition、112 這一脈」的類型歸屬，不是聲音或做法；比照 d-019 Garland Green）。
+- 審稿修 9 處：Sharon Jones 刪「抗癌期間仍在巡演」（暗示死因）與「最醒目的聲音」；Sharon Redd 刪「Prelude 最成功」；Sheila E. 刪「同代最偉大之一」；在世者成績只留一處：Shirley Bassey 刪 2024 年 Companion of Honour（只留 Dame）、Shirley Caesar 刪葛萊美終身成就獎、Silver Convention 刪葛萊美、Soul II Soul 刪英國冠軍（留 Ivor Novello）、Tavares 刪名人堂（留街名）、Terence Trent D'Arby 刪葛萊美（留英國登頂）。
+- 具名引語保留：Robert Finley（Dan Auerbach）、Roger（Chromeo 的 Dave 1）的最高級評語皆為具名音樂人，比照 Clinton 引語先例。
+- 搜尋超限放行：Ron Banks & The Dramatics 9、Sandra Phillips 9（身分核對第二源）、Shira Small 9（多出一次零售頁截斷、無事實）。
+- 身分：Sandra Phillips 即百老匯演員 Sandra Reaves-Phillips；Sandra Wright 為孟斐斯靈魂歌手，不同人。
+- 同名作廢：Ripple（電子學）、Roger（人名）、Silk（蠶絲）、Spirit of Love（Con Funk Shun 專輯）的維基預抓。
+- 新近事實：Ruby Andrews 2026 年 8 月過世（維基＋entertainmentnow），正文只寫年份。
+- 待本機（上線簡介）：Sandra Phillips「名下唯一一張專輯」不成立、「1970 年由 Canyon 發行」應註明當年未流通；Sam Dees「個人專輯一停十四年」與維基衝突；Sharon Redd〈Never Give You Up〉英國第 20 名與「全張輪番舞曲榜冠軍」無出處；Skull Snaps「Stezo 率先取樣」（Dooley-O 更早，宜改「最早發行」）；Spencer Wiggins「從未有正規專輯」（2003 年有福音專輯）；Ripple「十人編制」無出處。
