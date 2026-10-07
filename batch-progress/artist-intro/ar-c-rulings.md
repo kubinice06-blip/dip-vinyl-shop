@@ -302,3 +302,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - D 級第一批 full 比例遠高於計畫預估（計畫預期相當比例 thin），單張卡藝人多半是爵士史上有名有姓的樂手，素材夠。
 - Archie Shepp And The Full Moon Ensemble、Arooj Aftab 各 9 次（補第二源）放行；Andrew Hill 的 NEA Jazz Master 以頒獎單位官網為單一權威來源，接受。
 - 待本機（上線簡介）：Adelaide Hall「Ellington 首次讓女歌手錄音」無出處；Adele Sebastian「長笛乾淨少顫音」與來源不符；Akira Ohmori 簡介的 Mingus 錄音年（1978 錄、1979 發）與身分推定；Andy Williams《Moon River》「前一個十年的電影主題」不準；Angela Bofill《Angie》半形標點。
+
+## ar-d-002（2026-10-07）
+
+- 40 位全上（34 full、6 thin：Baroque Jazz Trio、Bhaskara、Billy Parker's Fourth World、Bong Peñera、Boogaloo Joe Jones、Boozoo Bajou）。審稿修 2 處：Blood, Sweat & Tears 的英文原句引語改中文轉述；Bill Evans Trio 的「LaFaro 死於車禍」改「意外過世」（死因避免，事件本身是專輯故事核心，保留）。
+- 搜尋超限放行：Blood, Sweat & Tears 9 次（第三源補 1970 東歐巡演與回國風波，爭議事件需兩源，非重複）。Ben Webster & Don Byas、Bill Charlap Trio 另用 MusicBrainz API 補第二源，不計入搜尋次數（API 查詢非 WebSearch／WebFetch，比照既有定義）。
+- Bill Evans 三個掛名（Trio 1961 年 Village Vanguard 現場、& Jim Hall《Undercurrent》、& Bob Brookmeyer《The Ivory Hunters》雙鋼琴）分寫各自編制；Arthur Blythe／Black Arthur Blythe 同一人分寫。
+- Boogaloo Joe Jones：維基與 wikidata 寫 2026 年過世但無獨立訃聞，新近事實單源，正文避開在世／已故用語。Billy Parker、Boogaloo Joe Jones 國籍以紐約廠牌（Strata-East、Prestige）推定為美國，接受。
+- Bix Beiderbecke 本卡為 1990 年 Columbia 選輯，此點出自補洞層 notes、未進 facts，寫作層照派工寫入；可逆，接受。
+- 待本機（上線簡介）：Black Renaissance《Body, Mind and Spirit》錄音日應為 1976 年 1 月 15 日（上線寫 6 月 15 日，兩源）；Bhaskara「第一支登上 North Sea Jazz 的印尼樂團」與約 7.5 萬捲卡帶僅維基單源；Bong Peñera 上線簡介的 1977 年、CBS／Sony 與錄音月份查無來源。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 439 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 441 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -439,6 +439,8 @@
 | ar-d-002 | Billy Parker's Fourth World | Freedom of Speech | 兩家是兄妹自己的 Bridgewater Publishing 與樂團的 Fourth World Publishing | Dee Dee Bridgewater 是 Cecil Bridgewater 的妻子（1970 年代婚姻，後來離婚），不是他與 Ron 的姊妹；Cecil 與 Ron 才是兄弟。簡介的「兄妹」與「Bridgewater 家的三個人」要改成「Bridgewater 夫婦與 Cecil 的弟弟 Ron」之類的寫法。 | https://en.wikipedia.org/wiki/Cecil_Bridgewater |
 | ar-d-002 | Billy Parker's Fourth World | Freedom of Speech | 兩家是兄妹自己的 Bridgewater Publishing | Dee Dee Bridgewater 條目寫她與 Cecil Bridgewater 結婚、後來離婚，並非兄妹關係。 | https://en.wikipedia.org/wiki/Dee_Dee_Bridgewater |
 | ar-d-002 | Black Renaissance | Body, Mind and Spirit | 錄音是 1976 年 6 月 15 日在紐約的 Sound Ideas 完成的 | Aquarium Drunkard 與 Village Voice 兩源皆寫錄音日為 1976 年 1 月 15 日（馬丁路德金恩 47 歲冥誕），地點同為 Sound Ideas；6 月 15 日與兩源不符，建議改為 1 月 15 日。 | https://aquariumdrunkard.com/2024/07/03/on-harry-whitakers-black-renaissance/ |
+| ar-d-003 | Cassandra Wilson | New Moon Daughter | 1996 年出版，爵士榜以 NEW 直接進第 1 | 英文維基新專輯條目寫 1995 年由 Blue Note 發行（Billboard Top Jazz Albums 第 1 是 1996 年的事）；EWN 的葛萊美敘述亦稱「1995 年專輯」。上線簡介的「1996 年出版」可能是上榜年，建議複核實際發行日。 | https://en.wikipedia.org/wiki/New_Moon_Daughter |
+| ar-d-003 | Chick Webb | Spinnin' the Webb: The Original Decca Recordings | Webb 1939 年病逝，得年三十四 | Webb 出生年份有爭議：維基與 jazz.com、PAS 採 1905（得年 34）；當年 DownBeat 與墓碑寫 1909（得年 30），紐約時報寫 1907。『得年三十四』只在 1905 說成立，建議改寫成只寫病逝年份，或加『據多數資料』。 | https://en.wikipedia.org/wiki/Chick_Webb |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
