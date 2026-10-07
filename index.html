@@ -781,10 +781,10 @@
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
-    <!-- 店內挖寶（2026-10-07）：同四個選片遊戲，只從店內在售挑；圖示暫借唱片櫃 -->
+    <!-- 店內挖寶（2026-10-07）：同四個選片遊戲，只從店內在售挑 -->
     <button class="homehub-card homehub-solo" data-go="shop">
       <div>
-        <div class="homehub-card-name"><span class="hub-ico-wrap" data-hubico="crate">店內挖寶</span></div>
+        <div class="homehub-card-name"><span class="hub-ico-wrap" data-hubico="shopcrate">店內挖寶</span></div>
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
@@ -2681,6 +2681,22 @@
       '......k....................k....', '................................', '................................',
       '................................', '................................',
     ],
+    // 唱片箱（店內挖寶）：45 度等角的木頭唱片箱，裡面插滿直立唱片，照店主 2026-10-07 手繪草圖。
+    // 木色四階（o 亮面、b 高光、n 暗面、m 深木輪廓／接縫／提把孔）；唱片黑封套＋灰頂邊與書背，金、紅各一張點綴。
+    // 由 scripts/icons/gen-shopcrate.py 用等角投影產生，改圖請改生成器再貼回。
+    shopcrate: [
+      '................................', '................................', '................................',
+      '................................', '................................', '................................',
+      '............kkdkd...............', '........kd..rrkkdkd.............', '........gkkddrrrkkdkd...........',
+      '........gggkkddrrrkkdkd.........', '......kdgggggkkddrrrkkdkd.......', '......kkkdgggggkkddrrrkkdkd.....',
+      '.....mkkkkkdgggggkkddrrrdkd.....', '...mm.kkkkkkkdgggggkdkdrdkd.....', '...mb.kkkkkkkkkdggggdkdrdkdmm...',
+      '...mobbkkkkkkkkkkdggdkdrdkdoom..', '...mooobbkkkkkkkkkdgdkdrdoonnm..', '...mooooobbkkkkkkkdgdkdoonnnnm..',
+      '...mnoooooobbkkkkkdgdoonnnnnnm..', '...monnoooooobbkkkdoonnmmnnmmm..', '...mooonnoooooobboonnmmnnmmnnm..',
+      '...mooooonnoooooomnnnnnmmnnnnm..', '...mmoooooonnoooomnnnmmnnnnnnm..', '.....mmoooooonnoomnmmnnnnnnmmm..',
+      '.......mmoooooonnmmnnnnnnmm.....', '.........mmoooooomnnnnnmm.......', '...........mmoooomnnnmm.........',
+      '.............mmoomnmm...........', '...............mmmm.............', '.................m..............',
+      '................................', '................................',
+    ],
     // 放大鏡（搜尋專輯）：刻意畫小一圈——墨水佔滿畫布時，跟其他圖示並排會顯得特別大
     lens: [
       '................................', '................................', '................................',
@@ -2697,7 +2713,8 @@
     ],
   };
   function hubPixSvg(rows, size) {
-    const pal = { k: 'currentColor', g: '#b8860b', s: '#e8b48c', r: '#c11628', w: '#fff', d: '#888', e: '#d8d8d8' };
+    // o／b／n／m：唱片箱的木色（亮面／高光／暗面／深木），2026-10-07
+    const pal = { k: 'currentColor', g: '#b8860b', s: '#e8b48c', r: '#c11628', w: '#fff', d: '#888', e: '#d8d8d8', o: '#c08a52', b: '#e0b480', n: '#8f5f32', m: '#5c3a1c' };
     const w = rows[0].length, h = rows.length;
     let rects = '';
     rows.forEach((row, y) => {
