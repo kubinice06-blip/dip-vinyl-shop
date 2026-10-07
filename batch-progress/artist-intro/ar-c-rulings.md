@@ -362,3 +362,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分更正：Le Trio Camara 是流亡巴黎的三位巴西樂手，不是法國團；Jupiter & Okwess 維基預抓為行星，作廢；Joyce 的 Cravo Albin 條目同名者（Joyce Alane）排除。
 - Julie Tippetts〈This Wheel's on Fire〉英國榜第 5 名列必要例外（在世者核心成績，Official Charts＋維基兩源）。
 - 待本機（上線簡介）：Kočani Orkestar「樂隊因《Borat》與片方興訟」與來源不符（提告的是 Esma Redžepova 與前領軍，獲賠者僅 Redžepova），另有中英空格與半形逗號；Keith Mansfield / John Cameron《Voices in Harmony》「那個編曲」指代不清；Kenny Clarke & Francy Boland《The Golden Eight》寫八人只列七位；Lee Konitz & Red Mitchell 卡池年 1976，錄音為 1974 年 7 月；Johnny Hodges《Back to Back》genres 標 classical 疑誤。
+
+## ar-d-009（2026-10-07）
+
+- 40 位全上（34 full、6 thin：Linda Hill、Makoto Terashita、Manhattan Jazz Orchestra、Masao Nakajima Quartet、Maulawi、Michael White）。審稿修 3 處：Michał Urbaniak 英文原句改中文轉述；Maria Bethânia 刪單源「巴西音樂獎得獎最多」與獎數；Louis Moholo Octet 末句改明確寫 2025 年辭世（原句「最後辭世」語意不清）。
+- 搜尋超限放行：Max Roach & Anthony Braxton 9 次（雙人卡，核對獎項年份）。
+- 新近事實：Mike Westbrook 2026 年 4 月過世（維基、The Jazz Mann、UK Jazz News 三源）；Louis Moholo 2025 年 6 月過世（Songlines、Jazz Journal）。
+- Masao Nakajima 的漢字「中島政雄」無來源，正文只寫拼音；Masahiko Togashi 受傷不寫肇因。
+- 待本機（上線簡介）：Makoto Terashita《Topology》錄音年（1984／原版 1983 首發）待核；Maria Bethânia《Álibi》銷量口徑（90 萬對破百萬）待核。
