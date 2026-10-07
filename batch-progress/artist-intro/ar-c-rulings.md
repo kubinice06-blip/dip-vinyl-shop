@@ -265,3 +265,33 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Pete Rock & C.L. Smooth 搜尋 9 次（雙人組兩人都查、多出的是 Trouser Press）、Madlib 搜尋 10 次（Stones Throw 頁內容不可用改列失敗請求後為 9，多出的是補 Earl Sweatshirt 第二源）：`overCapOk` 放行。
 - slowthai 在 Mercury 典禮拿出首相假人頭：公開舞台行為、非指控，保留。Key Glock 母親入獄、Project Pat 談成長環境：家庭背景層級，保留。
 - 卡池曲風待本機：Johnny Gill《Johnny Gill》（1983）、Khalid 標 hiphop，實為 R&B。
+
+## ar-c-029（2026-10-07）
+
+- 40 位全上（32 full、8 thin）。審稿 0 處修改。
+- **舐達麻是日本（埼玉縣北部）嘻哈團體**，主線特注誤列台灣；寫作層照來源寫日本，正確。之後主線特注只標「照來源判定」，不再臆測國籍。
+- XXXTENTACION 只寫音樂與生卒年；Westside Gunn 提到 Conway 遭槍擊只作出道緣由，不寫案情。
+- 待本機（上線簡介）：Verbal Jint《Go Easy》首張迷你專輯名（應為《Modern Rhymes》，《누명》是 2008 年）；Ultramagnetic《Critical Beatdown》機型（SP-12）與 Public Enemy 一句；Westside Gunn《FLYGOD》客串名單；李英宏《水哥 2020》非最晚一張（2025 年有《東方美人》）；Alban Berg Quartett 組團年（1971）；Cortot「第一份電氣錄音」；Cluytens「同年該團解散」；卡池曲風 Troop（R&B）。
+
+## ar-c-030（2026-10-07）
+
+- 40 位全上（33 full、7 thin）。審稿修 2 處：Barenboim 補明「被 Furtwängler 稱為奇才」的說話者；Saariaho 刪「訃文寫道後輩受影響」（單一訃文作者判斷，QA 也擋轉述句）。
+- 搜尋超限放行：György Kurtág 10 次（多出兩次是 Wolf 基金會頁 503、Boosey PDF 不可讀後的替代第二源，視同失敗請求補位）；Ensemble Organum 9 次（替 thin 稿補 legacy）。補洞層自行填 `overCapOk: true` 的一律由主線改寫為理由字串；之後派工提醒補洞層不得自行放行。
+- István Kertész 1973 年游泳溺斃：與維也納愛樂無指揮錄完 Brahms 致意的故事相連，列必要例外。Hauschka、Hildur 的奧斯卡等皆兩源。
+- 待本機（上線簡介）：Emerson String Quartet《Bartók》葛萊美年份（第 32 屆、1990）；傅聰《Chopin: Nocturnes (1978)》「第一位在國際比賽獲獎的中國音樂家」宜改「最早之一」。
+
+## ar-c-031 補洞（2026-10-07）
+
+- René Jacobs、Riccardo Chailly 各 9 次：多開的是補第二源的頁面、非重複搜尋，`overCapOk` 放行。派工 common-gap 加一句：補洞層不得自行填 overCapOk。
+
+## D 級開跑（ar-d-001 起）
+
+- 依 ARTIST_INTRO_PLAN §356 定案：D 級照常寫、素材不足自動落 thin，不另立規則。編制掛名（X Trio、X & Y）主詞照名冊，寫該編制或該張唱片的特色；同領隊多個掛名不互抄。
+
+## ar-c-031（2026-10-07，C 級最後一批）
+
+- 34 位全上（32 full、2 thin：Roberto Cacciapaglia、澤野弘之）。審稿修 1 處：Aimard 的獎名改用原文 Ernst von Siemens（原稿用了日文中點）。
+- Myung-Whun Chung 第 9 次搜尋只重複確認、無獨有事實：比照齊豫放行。
+- Menuhin & Shankar（277）、武満徹（278）用放寬額度：雙人卡兩人都要寫、武満徹的「間」與國際化故事缺一不可，接受。
+- 待本機（上線簡介）：Roberto Cacciapaglia《Sei Note in Logica》「Jim O'Rourke、Fennesz 列為影響」（僅再版廠牌文案）與「很快轉向流行」不實；卡池疑點 Marian Anderson《The Lady From Philadelphia》是歷史錄音選輯、Feldman《Rothko Chapel》2009 年標 electronic。
+- **C 級全部完成**（ar-c-001～031）。
