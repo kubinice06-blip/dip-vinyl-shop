@@ -44,7 +44,7 @@ const card = ({ i, d }) => {
   const sub = [i.pressingYear ? `${i.pressingYear} 年壓片` : '', i.condition ? `品相 ${i.condition}` : ''].filter(Boolean).join('　');
   const len = [...d.text].length;
   return `<section class="card${len > 225 ? ' long' : ''}${apex ? ' apex apex-' + row[8] : ''}">
-  <header><span class="shop">dip vinyl${apex ? `<span class="apexbadge">${apex.label}卡<i>${apex.en}</i></span>` : ''}</span><span class="genres">${genres}</span></header>
+  <header><span class="shop">dip vinyl${apex ? `<span class="apexbadge">${apex.label}<i>${apex.en}</i></span>` : ''}</span><span class="genres">${genres}</span></header>
   <div class="title"><p class="artist">${esc(d.artist)}</p><h1>${esc(d.album)}</h1></div>
   ${axes ? `<div class="axes">${axes}</div>` : ''}
   <p class="text">${esc(d.text)}</p>
