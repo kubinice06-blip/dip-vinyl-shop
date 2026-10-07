@@ -295,3 +295,28 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Menuhin & Shankar（277）、武満徹（278）用放寬額度：雙人卡兩人都要寫、武満徹的「間」與國際化故事缺一不可，接受。
 - 待本機（上線簡介）：Roberto Cacciapaglia《Sei Note in Logica》「Jim O'Rourke、Fennesz 列為影響」（僅再版廠牌文案）與「很快轉向流行」不實；卡池疑點 Marian Anderson《The Lady From Philadelphia》是歷史錄音選輯、Feldman《Rothko Chapel》2009 年標 electronic。
 - **C 級全部完成**（ar-c-001～031）。
+
+## ar-d-001（2026-10-07，D 級第一批）
+
+- 39 位上架（38 full、1 thin），1 位不寫：Akira Ohmori（聲音格查無，且 Discogs 條目與 Mingus 錄音名單上的同名者無來源可連成同一人）。審稿修 1 處：Abdullah Ibrahim Trio 刪掉與 Ekaya 篇重複的 Cape jazz／〈Mannenberg〉句。
+- D 級第一批 full 比例遠高於計畫預估（計畫預期相當比例 thin），單張卡藝人多半是爵士史上有名有姓的樂手，素材夠。
+- Archie Shepp And The Full Moon Ensemble、Arooj Aftab 各 9 次（補第二源）放行；Andrew Hill 的 NEA Jazz Master 以頒獎單位官網為單一權威來源，接受。
+- 待本機（上線簡介）：Adelaide Hall「Ellington 首次讓女歌手錄音」無出處；Adele Sebastian「長笛乾淨少顫音」與來源不符；Akira Ohmori 簡介的 Mingus 錄音年（1978 錄、1979 發）與身分推定；Andy Williams《Moon River》「前一個十年的電影主題」不準；Angela Bofill《Angie》半形標點。
+
+## ar-d-002（2026-10-07）
+
+- 40 位全上（34 full、6 thin：Baroque Jazz Trio、Bhaskara、Billy Parker's Fourth World、Bong Peñera、Boogaloo Joe Jones、Boozoo Bajou）。審稿修 2 處：Blood, Sweat & Tears 的英文原句引語改中文轉述；Bill Evans Trio 的「LaFaro 死於車禍」改「意外過世」（死因避免，事件本身是專輯故事核心，保留）。
+- 搜尋超限放行：Blood, Sweat & Tears 9 次（第三源補 1970 東歐巡演與回國風波，爭議事件需兩源，非重複）。Ben Webster & Don Byas、Bill Charlap Trio 另用 MusicBrainz API 補第二源，不計入搜尋次數（API 查詢非 WebSearch／WebFetch，比照既有定義）。
+- Bill Evans 三個掛名（Trio 1961 年 Village Vanguard 現場、& Jim Hall《Undercurrent》、& Bob Brookmeyer《The Ivory Hunters》雙鋼琴）分寫各自編制；Arthur Blythe／Black Arthur Blythe 同一人分寫。
+- Boogaloo Joe Jones：維基與 wikidata 寫 2026 年過世但無獨立訃聞，新近事實單源，正文避開在世／已故用語。Billy Parker、Boogaloo Joe Jones 國籍以紐約廠牌（Strata-East、Prestige）推定為美國，接受。
+- Bix Beiderbecke 本卡為 1990 年 Columbia 選輯，此點出自補洞層 notes、未進 facts，寫作層照派工寫入；可逆，接受。
+- 待本機（上線簡介）：Black Renaissance《Body, Mind and Spirit》錄音日應為 1976 年 1 月 15 日（上線寫 6 月 15 日，兩源）；Bhaskara「第一支登上 North Sea Jazz 的印尼樂團」與約 7.5 萬捲卡帶僅維基單源；Bong Peñera 上線簡介的 1977 年、CBS／Sony 與錄音月份查無來源。
+
+## ar-d-003（2026-10-07，十批接力最後一批）
+
+- 40 位全上（34 full、6 thin：Charles Brackeen、Charles Kynard、Charles Sullivan、Charles Tyler、Chester Thompson、Chick Corea, Dave Holland, Barry Altschul）。審稿修 3 處：Cassandra Wilson 去掉《Time》刊名（媒體名不進正文）與無共識的過世地點；Carlos Garnett 1982 年息演的「憂鬱與藥物」改「陷入低潮」（私人狀況避免）。
+- Cassandra Wilson 2026 年 9 月過世：DownBeat、EWN、維基等多源，日期 1／2／3 日不一，只寫年月。Chucho Valdés 2025 NEA Jazz Master 以 NEA 官網與芝加哥交響樂團頁兩源。
+- Chester Thompson 確認為風琴手 Chester D. Thompson（Black Jazz《Powerhouse》、後入 Tower of Power），非 Genesis／Zappa 鼓手，維基預抓作廢。Chet Baker Trio 維基預抓為《Chet Baker Sings and Plays》，作廢，改查《Daybreak》。
+- Chet Baker 四個掛名、Charlie Haden 兩個、Clifford Jordan 兩個分寫各自編制；生平來源共用，搜尋次數記在其中一個掛名。Dave Holland 維基回消歧頁視同失敗請求不計。
+- 待本機（上線簡介）：Bunk Johnson「1931 年掉了小號與門牙」（來源為 1930 年 11 月）；Bunny Berigan「錄音幾乎全部集中在這六年」不實；Cab Calloway「第一張賣破百萬的爵士唱片」（來源只支持賣破百萬）；Carmell Jones「十年後是 Jarrett 三重奏的一半」年距不符；Cassandra Wilson《New Moon Daughter》應為 1995 年；Charles Brackeen「1940 年生於 Eufaula」生年與出生地有爭議；Chester Thompson《Powerhouse》「四人編制加一支長號」（長號含在四人內）；Chet Baker & Art Pepper《Playboys》「六重奏另加次中音與三人節奏組」（六人已含在內）；Chet Baker Quartet《Singin' in the Midnight》錄音與發行年待核對；Chick Webb《Spinnin' the Webb》「得年三十四」生年有爭議，宜只寫過世年份。
+- **十批接力完成**（ar-c-025～031、ar-d-001～003）。
