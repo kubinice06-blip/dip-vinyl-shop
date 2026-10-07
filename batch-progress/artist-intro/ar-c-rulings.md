@@ -233,3 +233,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 200 位全上，0 位略過；審稿共修 16 處。補洞層全程走來源分級新規則，未撞 WebSearch 上限（同時最多 6 支）。
 - 新增寫作特注：韓文與漢字相鄰補空格；QA 禁語「我／你」會誤擋含此字的曲名意譯與人名（我如古、〈그대에게〉意譯），寫作層改轉述即可，暫不改 QA。
+
+## 十批接力（ar-c-025～031、ar-d-001～003，2026-10-07 起）
+
+- 國籍改由補洞層照來源判定，主線不再預填國籍表（ar-c-020～024 主線預填有出錯風險，且省主線回合）；共同提醒放在 notes/common-gap、common-write。
+
+## ar-c-025（2026-10-07）
+
+- 40 位全上（37 full、3 thin：Julianna Barwick、Pharmakon、Riow Arai）。審稿修 2 處：Paul Kalkbrenner 補主詞；Nocturnal Emissions 拿掉 Fact 雜誌名與名次（單一媒體榜單），改寫「入選 1980 年代百大專輯榜單」。
+- **Lamb 同名混卡**：卡池《Lamb》（1996）是曼徹斯特二人組，《Lamb III》（1976）是美國彌賽亞猶太教團體 Lamb。介紹只寫曼徹斯特二人組；待本機把《Lamb III》的藝人鍵拆開（例如 Lamb (US)），否則該卡會掛到錯的介紹。
+- Leo Smith 是 Wadada Leo Smith，卡池《Divine Love》標 electronic 疑誤。Loreena McKennitt 1998 年未婚夫船難：作品空白期的原因，列必要例外。
+- 待本機（上線簡介）：Loreena McKennitt《The Visit》「安大略出身」（生於曼尼托巴）；Michael Stearns《Encounter》「第一張太空主題」；Kerri Chandler《Atmosphere E.P.》「長年駐場 Zanzibar」；Kevin Drumm《Imperial Distortion》存檔年份與兩點未證。
