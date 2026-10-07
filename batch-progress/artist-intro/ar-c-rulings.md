@@ -272,3 +272,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - **舐達麻是日本（埼玉縣北部）嘻哈團體**，主線特注誤列台灣；寫作層照來源寫日本，正確。之後主線特注只標「照來源判定」，不再臆測國籍。
 - XXXTENTACION 只寫音樂與生卒年；Westside Gunn 提到 Conway 遭槍擊只作出道緣由，不寫案情。
 - 待本機（上線簡介）：Verbal Jint《Go Easy》首張迷你專輯名（應為《Modern Rhymes》，《누명》是 2008 年）；Ultramagnetic《Critical Beatdown》機型（SP-12）與 Public Enemy 一句；Westside Gunn《FLYGOD》客串名單；李英宏《水哥 2020》非最晚一張（2025 年有《東方美人》）；Alban Berg Quartett 組團年（1971）；Cortot「第一份電氣錄音」；Cluytens「同年該團解散」；卡池曲風 Troop（R&B）。
+
+## ar-c-030（2026-10-07）
+
+- 40 位全上（33 full、7 thin）。審稿修 2 處：Barenboim 補明「被 Furtwängler 稱為奇才」的說話者；Saariaho 刪「訃文寫道後輩受影響」（單一訃文作者判斷，QA 也擋轉述句）。
+- 搜尋超限放行：György Kurtág 10 次（多出兩次是 Wolf 基金會頁 503、Boosey PDF 不可讀後的替代第二源，視同失敗請求補位）；Ensemble Organum 9 次（替 thin 稿補 legacy）。補洞層自行填 `overCapOk: true` 的一律由主線改寫為理由字串；之後派工提醒補洞層不得自行放行。
+- István Kertész 1973 年游泳溺斃：與維也納愛樂無指揮錄完 Brahms 致意的故事相連，列必要例外。Hauschka、Hildur 的奧斯卡等皆兩源。
+- 待本機（上線簡介）：Emerson String Quartet《Bartók》葛萊美年份（第 32 屆、1990）；傅聰《Chopin: Nocturnes (1978)》「第一位在國際比賽獲獎的中國音樂家」宜改「最早之一」。

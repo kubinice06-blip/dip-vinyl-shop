@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 426 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 430 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -415,6 +415,10 @@
 | ar-c-029 | Alban Berg Quartett | Beethoven: The Late String Quartets | 四位維也納音樂學院的年輕教授 1970 年組團 | 成軍年不一致：維基首段寫 1970 年，wikidata 與 PCMS 小傳寫 1971 年，Pichler 訪談只確認 1971 年秋天首演。建議改寫成「1971 年秋天首演」較穩，或保留 1970 並註明維基說法。 | https://www.pcmsconcerts.org/?p=13565 |
 | ar-c-029 | Alfred Cortot | Victor Recordings of 1919-1926 | 他錄下史上第一份古典電氣錄音 | 「第一」只見英文維基單源（寫成商業電氣古典錄音的世界第一），其他搜尋結果是轉述同一句；上線簡介少了「商業」限定。建議改成「維基記為 Victor 最早的商業電氣古典錄音之一」或限縮為「他最早的一批電氣錄音」。 | https://en.wikipedia.org/wiki/Alfred_Cortot |
 | ar-c-029 | André Cluytens | Fauré: Requiem (1962) | 他 1967 年 6 月過世，同年該團由法國政府決定解散 | 本層查證 Cluytens 過世年月（1967 年 6 月）有兩源，但「同年該團由法國政府決定解散」未在本層開過的任何頁面找到佐證，建議店主核實該句來源。 | https://en.wikipedia.org/wiki/Andr%C3%A9_Cluytens |
+| ar-c-030 | Emerson String Quartet | Bartók: The 6 String Quartets | 英文維基記，這套 1989 年同時拿下葛萊美的最佳室內樂演奏與最佳古典專輯 | grammy.com 把 Bartók 全集的兩項得獎列在 1990 年（第 32 屆）；維基用 1989（作品年度）。簡介若寫『1989 年拿下葛萊美』，與官方典禮年份差一年，建議改成『1989 年度的葛萊美』或改用 1990 年。 | https://grammy.com/artists/emerson-string-quartet/14683 |
+| ar-c-030 | Fou Ts'ong 傅聰 | Chopin: Nocturnes (1978) | 1955 年…是第一位在國際性鋼琴比賽獲獎的中國音樂家 | 英文維基寫他 1953 年已在 George Enescu 國際比賽拿第三名，『第一位』易被反駁；來源 Violin Channel 與 Eloquence 只寫『最早獲國際聲譽的中國鋼琴家之一』。建議改成『最早在國際鋼琴比賽獲獎的中國音樂家之一』，或加上蕭邦大賽的限定。 | https://en.wikipedia.org/wiki/Fou_Ts%27ong |
+| ar-c-031 | Roberto Cacciapaglia | Sei Note in Logica | 日後 Jim O'Rourke、Fennesz 等人把這批早期錄音列為影響來源 | 唯一來源是再版廠牌 Superior Viaduct 的文案，只寫「影響可以在 Jim O'Rourke、Fennesz 與 Ben Vida 的作品中聽到」，沒有後輩自己點名；建議改成「再版廠牌稱…」或刪掉。 | https://www.superiorviaduct.com/products/roberto-cacciapaglia-sei-note-in-logica-lp |
+| ar-c-031 | Roberto Cacciapaglia | Sei Note in Logica | 他自己的路線則很快轉向流行與鋼琴 | 義大利維基與本人官方簡介的年表顯示 1980 年代之後仍有實驗電子與 Ricordi／Fonit Cetra 的作品，新古典與商業成功要到 2000 年代；「很快轉向」缺依據，Superior Viaduct 頁面本層也沒讀到這句。 | https://it.wikipedia.org/wiki/Roberto_Cacciapaglia |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
 | ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
