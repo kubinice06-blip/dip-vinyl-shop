@@ -258,3 +258,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - E SENS 服刑期間發行《The Anecdote》、Dave 哥哥入獄、Binary Star 在懲教所成團：作品與團史核心，只寫事件層級，不寫案由。
 - QA 禁語「我」會誤擋「自我」等詞，寫作層一律改寫；暫不改 QA（改了要逐一界定詞表，風險大於效益）。
 - 待本機：Blue Lab Beats《Xover》卡池年份（2018）。
+
+## ar-c-028（2026-10-07）
+
+- 40 位全上（32 full、8 thin）。審稿 0 處修改。
+- Pete Rock & C.L. Smooth 搜尋 9 次（雙人組兩人都查、多出的是 Trouser Press）、Madlib 搜尋 10 次（Stones Throw 頁內容不可用改列失敗請求後為 9，多出的是補 Earl Sweatshirt 第二源）：`overCapOk` 放行。
+- slowthai 在 Mercury 典禮拿出首相假人頭：公開舞台行為、非指控，保留。Key Glock 母親入獄、Project Pat 談成長環境：家庭背景層級，保留。
+- 卡池曲風待本機：Johnny Gill《Johnny Gill》（1983）、Khalid 標 hiphop，實為 R&B。
