@@ -1,0 +1,1041 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-06-add-shop-wave3",
+ "batchNote": "店內販售區第三波（Notion 2026-10-06 新進 26 張中缺卡 14 張，收 13、退 1：宮沢昭《Bull Trout》＝池中《いわな》）。雲端段完成：身分、封面（CAA 8／Discogs 5）、試聽配對（Apple ready 9／unavailable 4）、三軸、頂點評估、prepare gate；簡介由主線補入；本機段：listeners、試聽覆核、KV／Firestore／seed 寫入與 published gate。",
+ "albums": [
+  {
+   "artist": "Red Mitchell",
+   "album": "Rejoice!",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ §1 人工身分：MB 沒有 1961 原盤的 release-group，只有 2016 西班牙 Fresh Sound 的三合一 CD《Rejoice! + Good Friday Blues + Jazz Guitar》（RG 32eefcf7，Album＋Compilation，掛 Red Mitchell / Jim Hall），那是把三張舊作併成一張的再版，不能拿來釘本卡（見 mbAbsenceProof）。⚠ 掛名：Discogs master 552734 與原版 4540470 都掛 `Red Mitchell` 單名；池中無 `Red Mitchell` 個人名義卡，只有兩張聯名，本卡照封面掛單名，非新造分裂（池中聯名卡本來就是不同作品的不同掛名）。⚠ 樂器：本盤 Mitchell 掛 Cello（Discogs），寫作層不得寫成他在本盤拉貝斯。⚠ 年份 1961：Discogs master 與原版皆 1961；錄音日期 Discogs 未載，不寫。⚠ 同名撞車：池中有 The Emotions《Rejoice》、Albert Ayler《Spirits Rejoice》、Louis Moholo Octet《Spirits Rejoice!》，皆不同藝人不同作品。⚠ 封面：無 RG、CAA 走不通，走 §4 discogs（release 4540470，目錄號 PJ-22／年份 1961／廠牌 Pacific Jazz 三項可對），須登錄 discogs-cover-registry 並看圖；Apple 是否有本盤待本機配對（可能只有 Fresh Sound 合併版，那不能當本卡試聽）。⚠ 店內實物版本未知（Notion 無目錄號），本卡釘作品身分。｜queryAlias：Rejoice；Red Mitchell Rejoice；Pacific Jazz PJ-22",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=artist:\"Red Mitchell\" AND releasegroup:Rejoice → count=1，為 32eefcf7《Rejoice! + Good Friday Blues + Jazz Guitar Album》（2016，Album＋Compilation，Red Mitchell / Jim Hall），三合一再版 CD，非 1961 原盤",
+      "release?query=release:Rejoice AND (artist:\"Red Mitchell\" OR catno:PJ-22) → count=1，為 bdd39a5a（2016 ES，Fresh Sound FSRCD 908），同上",
+      "release?query=catno:\"PJ-22\" → count=0",
+      "release-group?artist=3a4376e4（Red Mitchell，jazz double-bassist）browse 55 筆，1966 年前只有 Happy Minors、Presenting Red Mitchell、Jazz Mainstream、Pal Joey、Four!、The Light Fantastic、Bob Brookmeyer…，無 Rejoice!"
+     ],
+     "checkedAt": "2026-10-06T14:40:00Z",
+     "conclusion": "MB 上沒有 1961 年 Pacific Jazz PJ-22《Rejoice!》的獨立 release-group，只有 2016 年三合一再版 CD；查詢全部回 HTTP 200 正常 JSON，非 503。Discogs 有 master 552734／原版 release 4540470，故走 §1 人工身分。",
+     "checkedFalseShapes": [
+      "回了合併再版（2016 三合一 CD）"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/552734",
+     "https://www.discogs.com/release/4540470",
+     "https://www.discogs.com/release/4016655"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB 無原盤 RG（唯一相關 RG 是 2016 三合一再版），改以 Discogs master 552734、原版 release 4540470（Pacific Jazz PJ-22、1961、6 軌、人員與錄音地備註）及 1962 英國 Vogue 版 4016655 互證。三條 https，身分成立。",
+    "coverSourceHint": "discogs"
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/fwisFL2BrYTV7-Q7noD97gwpXt0V7ezZOquB_nNDdGM/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NDA0/NzAtMTQ2MDg1MDI2/Mi02OTU1LmpwZWc.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "4540470",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "Discogs release 4540470（Pacific Jazz PJ-22、1961、US），主線目視：上方「REJOICE!」、左欄「RED MITCHELL CELLO DEBUT at the RENAISSANCE」、持大提琴的 Mitchell 照片、下緣 PACIFIC JAZZ RECORDS。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：Pacific Jazz 正規廠牌、原盤只有黑膠再版與 2016 三合一 CD、Apple 無本盤；比照池中同期西岸 Hampton Hawes《For Real!》2/4/2、Jim Hall 系卡；Mitchell 首張大提琴領銜作，經典 3。｜本機 2026-10-07：Last.fm listeners 8"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "貝斯手 Red Mitchell 1961 年的現場專輯，1960 年 10 月在好萊塢錄成，西岸爵士底子、節奏組輕盈，六首曲子都拉得很長。這次他改拉大提琴，貝斯交給 Jimmy Bond，吉他是 Jim Hall。Mitchell 生於紐約，1950 年代初轉往西岸，也在洛杉磯的電視與電影錄音室工作。曲目有 Hall 寫的〈Jim's Blues〉與 Gillespie 的〈Night In Tunisia〉，廠方形容這是一場「西岸爵士王室」的演出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4540470",
+     "https://www.freshsoundrecords.com/red-mitchell-jim-hall-albums/6490-rejoice-good-friday-blues-jazz-guitar-3-lp-on-2-cd-bonus-track.html",
+     "https://en.wikipedia.org/wiki/Red_Mitchell",
+     "https://en.wikipedia.org/wiki/Hear_Ye!",
+     "https://www.discogs.com/master/552734"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "Apple jp／us 以盤名、曲名〈Jim's Blues〉〈Rejoice!〉查無 1961 原盤；只有 2010 年 Red Mitchell 現場合輯《Basslines in Color》《Under the Red Light》收同名曲的別場現場版，非本盤，不採。YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kai Winding",
+   "album": "Rainy Day",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3b659363-d69d-4ee6-8b35-c8851f7d159b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 掛名：MB RG 與 Discogs master 450971 皆掛 `Kai Winding` 單名；池中只有 `J.J. Johnson & Kai Winding`（聯名不同作品），本卡掛單名非新造分裂。⚠ 曲風：本盤是短曲、和聲人聲、流行化的 Verve 輕爵士（Discogs 無風格標籤），寫作層不要寫成 hard-bop 或硬派長號演奏；genre 仍取 jazz。⚠ 年份 1965：MB first-release-date 與 Discogs master 一致。⚠ 目錄號：Mono V-8620、Stereo V6-8620 並存，店內實物不知哪一版；2005 日本 CD 與 MB 1985 JP release 皆再版。⚠ 同名撞車：Discogs 另有 7 吋單曲〈Here's That Rainy Day〉（Kai Winding And The Prevailing Winds，VK 10348，master 3153309），單曲不收；池中 Peter Walker《Rainy Day Raga》不同作品。⚠ A5 曲名 Discogs 拼作「Umrellas」（原文誤植），寫作層引用曲名須寫正確的 The Umbrellas Of Cherbourg。⚠ 鼓手 Discogs 列 Al Harewood、Grady Tate、Sol Gubin 三位、吉他四位，未分軌，寫作層不要把某人對到某首。CAA 有無圖待本機，備援 Discogs 2837082。｜queryAlias：Kai Winding Rainy Day；Verve V6-8620；Here's That Rainy Day"
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3b659363-d69d-4ee6-8b35-c8851f7d159b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "CAA release-group front 實抓 307→200 image/jpeg；MB release 9ba98a6c（1965 US Verve V6-8620 12 吋）front，封面：黑傘群中穿黃雨衣吹長號、印「rainy day / kai winding」與 Verve 標。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 94,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：Verve 正規流通但屬 Creed Taylor 時期輕爵士主題盤，非 Winding 代表作；比照池中 J.J. Johnson & Kai Winding《The Great Kai & J.J.》4/3/2，本盤經典降一級；雨主題標準曲與流行曲短奏，硬蕊 1。｜本機 2026-10-07：Last.fm listeners 94；三軸 2/3/1 → 2/4/1；冷門軸照聽眾數（94）取 4"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 2、obscurity 4、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "長號手 Kai Winding 1965 年在 Verve 的專輯，十二首都和雨或天氣有關，每首都很短，輕快、甜而帶點時髦，和聲人聲由 The Prevailing Winds 擔任。他生於丹麥，參與過《Birth of the Cool》，1954 年起與 J.J. Johnson 組雙長號搭檔。1960 年代他在 Verve 與 Creed Taylor 合作，1963 年《Mondo Cane》主題曲打進 Hot 100 第 8 名，兩年後做了這張雨天唱片。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2837082",
+     "https://en.wikipedia.org/wiki/Rainy_Day_(album)",
+     "https://www.jazzdisco.org/verve-records/discography-1965/",
+     "https://www.discogs.com/master/3153309",
+     "https://en.wikipedia.org/wiki/Kai_Winding"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1a/be/81/1abe81f6-1b39-19f3-da88-f12cf3b2c73a/mzaf_5509030025658672426.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1582277913",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1582277913（Verve／UMG，℗1965）12 軌逐軌對上 MB 原盤 V6-8620，取 A1〈Half A Crown〉。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Miles Davis",
+   "album": "Miles Davis and Horns",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "12dbaae5-338f-3386-89cc-d3575fcfdabf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ §5.6：MB primary-type Album、secondary Compilation；依上一批《Directions》《More Lasting Than Bronze》同形先例 releaseType 填 Compilation 並附 exceptionReason／證據。判斷收錄：這兩場錄音在 10 吋時代被拆在單人 10 吋、多人合輯與 78 轉，PRLP 7025 是它們第一次集中、也是此後六十年的標準版本（PRLP 7168、OJC-053、各國 CD 皆沿此曲目），不是 greatest-hits 重複包裝；池中無任何一張收這兩場。⚠ 來源差異：英文維基說 B 面〈Blue Room〉原收《Blue Period》（PRLP 140）、又說第 3 軌是〈Morpheus〉單曲 B 面，但 Discogs 78 轉 8907120 顯示 Prestige 734 是〈Morpheus〉／〈Blue Room〉；兩源對『哪首先出在哪張 10 吋』不一致，寫作層只寫『原先散在 10 吋 LP 與 78 轉』，不逐首對出處。⚠ Sonny Truitt 據維基只在〈Floppy〉吹奏，Discogs 未分軌，寫作層不要寫他全場都在。⚠ 年份 1956：MB、Discogs master、維基一致；錄音年 1951／1953 與發行年分開寫。⚠ 盤名：原版標籤寫 Miles Davis And Horns（Discogs 註記另有標籤變體 With Horns），卡面取 MB 的 `Miles Davis and Horns`。⚠ 店內實物版本未知（可能是 OJC 或日本再版），本卡釘作品身分。CAA 待本機，備援 Discogs 2811539。｜queryAlias：Miles Davis And Horns；Miles Davis with Horns；Early Miles 1951 & 1953；Prestige 7025",
+    "exceptionReason": "Prestige 1956 年 12 吋 LP 7025，把 Miles Davis 1951 年 1 月 17 日（Sonny Rollins、Bennie Green、John Lewis、Percy Heath、Roy Haynes）與 1953 年 2 月 19 日（Al Cohn、Zoot Sims、Sonny Truitt、John Lewis、Leonard Gaskin、Kenny Clarke）兩場分散在 10 吋 LP、多人合輯與 78 轉的錄音首度集中成一張，是這兩場錄音在 12 吋 LP 時代的標準載體，此後以 Early Miles 1951 & 1953（PRLP 7168）、OJC-053 持續再版。",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/master/199013",
+     "https://musicbrainz.org/release-group/12dbaae5-338f-3386-89cc-d3575fcfdabf",
+     "https://en.wikipedia.org/wiki/Miles_Davis_and_Horns",
+     "https://www.discogs.com/release/2811539"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1956,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/12dbaae5-338f-3386-89cc-d3575fcfdabf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "CAA release-group front 實抓 307→200 image/jpeg；MB release 3a3231e9（1956 US Prestige PRLP 7025）front；圖為 OJC 再版掃描（右下 OJC 標），封面設計與原盤相同：紅底機器人群、印「miles davis and horns」與 PRESTIGE LP 7025。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 42611,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：Prestige 早期場次整理輯，OJC 長年流通；比照池中 Miles 1951–53 Prestige／Blue Note 卡（Blue Haze 5/2/3、Young Man With a Horn 4/5/2、Birdland 1951 4/4/2），合輯形態且非核心作，經典 3；bebop 小編制，硬蕊 2。｜本機 2026-10-07：Last.fm listeners 42611"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Miles Davis 1956 年在 Prestige 的 LP，把相隔兩年的兩場小編制錄音湊成一張，小號旁疊著次中音薩克斯風與長號。1951 年那場有 Sonny Rollins，聲音偏紮實；1953 年那場有 Al Cohn 與 Zoot Sims，四首全是 Cohn 寫的，聲音偏柔順。1953 年正是 Miles 海洛因成癮加深、開始影響演奏的時期，到 1954 年 2 月才戒掉。封面由後來以《Mad》雜誌漫畫聞名的 Don Martin 設計。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2811539",
+     "https://www.discogs.com/release/3846946",
+     "https://www.discogs.com/release/3675042",
+     "https://www.discogs.com/release/8907120",
+     "https://en.wikipedia.org/wiki/Miles_Davis",
+     "https://en.wikipedia.org/wiki/Miles_Davis_and_Horns"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/99/c4/7a/99c47aeb-33d2-b6d4-c56a-0049f424eefc/mzaf_1125477181579644274.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1443277180",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1443277180（Fantasy ℗1989，OJC 版）9 軌＝Discogs 原盤 PRLP 7025 的 8 首＋〈Blue Room〉alternate take（OJC 增收），與 MB release 3a3231e9 的 9 軌一致；jp storefront 無此條目（jp 只有 2016 Concord 1445748406），故取 us。取〈Tasty Pudding〉。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Barry Harris",
+   "album": "Breakin' It Up",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dc17a42e-c723-4fc2-9945-535e8a0622d4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 年份：卡片取原盤 1958（MB RG first-release-date、Discogs master、維基一致），不取 Notion 的 1975；1975 是日本 Cadet MJ-1012 再版（Discogs 6984763），店內實物多半是這張——主線若要在門市版標版本，可請店主看封底目錄號。⚠ 掛名：MB 與 Discogs 原版皆掛群組實體『Barry Harris Trio』（MB 85335d36）；依 add-20261005 第 8641 條（《Here's Hope!》收攏為 Elmo Hope）與池中 Barry Harris 四張皆掛 `Barry Harris` 的先例，掛 `Barry Harris`，Barry Harris Trio 進 queryAlias，不新造字串。⚠ 同名 RG：MB 另有 33396cce（2007，Album＋Compilation，The Barry Harris Trio，XE），對應 Discogs 9028772 的 Jazz Beat JAZZBEAT 507（Unofficial Release，加收別張），不是本卡。⚠ 錄音日期 Discogs 與維基皆未載，不寫。⚠ AllMusic 評語（Jason Ankeney，4 星）只見維基轉引，寫作層若用須標樂評、不要逐字。CAA 有無圖待本機，備援 Discogs 4166328。｜queryAlias：Barry Harris Trio；The Barry Harris Trio；Breakin’ It Up；Breakin It Up；Cadet MJ-1012"
+   },
+   "research": {
+    "suggestedYear": 1958,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dc17a42e-c723-4fc2-9945-535e8a0622d4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "CAA release-group front 實抓 307→200 image/jpeg；MB release 98529766（1958 US Argo LP-644）front，封面：磚牆門框中站立的 Harris、印「barry harris trio / breakin' it up」與 ARGO LP 644。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1534,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：Argo 正規廠牌、首張領銜；比照池中 Barry Harris《At the Jazz Workshop》3/3/2、《Preminado》3/4/2 取 3/4/2。｜本機 2026-10-07：Last.fm listeners 1534"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "底特律鋼琴手 Barry Harris 的第一張個人名義專輯，1958 年在芝加哥錄音，鋼琴三重奏 8 首，約 32 分鐘。他的鋼琴帶 Bud Powell 一脈的 bop 語法，貝斯、鼓手與製作人都是底特律同鄉。Harris 四歲起跟當教堂鋼琴手的母親學琴，家裡是年輕樂手的即興聚會點，bebop 多半靠耳朵學來。曲目有 Charlie Parker 的〈Ornithology〉〈Passport〉；AllMusic 給四星，說它以貼近靈魂感的方式詮釋 bop。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Breakin%27_It_Up",
+     "https://ethaniverson.com/2021/12/10/mark-strykers-barry-harris-playlist/",
+     "https://www.discogs.com/release/6984763",
+     "https://en.wikipedia.org/wiki/Barry_Harris"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1f/b6/85/1fb68548-7068-997a-b214-908db6b5d39f/mzaf_15712350128092727590.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1447414494",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1447414494（Geffen／UMG ℗1958 官方）8 軌逐軌對上 MB 原盤 Argo LP-644（日文片假名曲名）；同店另有 Smith & Co. 903102397 等非官方條目不採。取 A1〈All the Things You Are〉。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "明田川荘之",
+   "album": "This Here´ Is Aketa Vol. 2",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ §1 人工身分：MB 藝人 明田川荘之（80da10fb）名下 10 個 RG，無 This Here´ Is Aketa 任一冊；盤名、目錄號 ORLP-1004 搜尋皆 0（見 mbAbsenceProof）。⚠ 撞池檢查：池中《Aketa's Erotical Piano Solo & Grotesque Piano Trio》同為 1975 年、也有一首〈Theme For Tomosan〉（B1），但那是 1975-03-30／31 在『アケタの店』（Discogs：Aketa No Mise）錄的另一場（Discogs master 1642979，Aketa's Disk AD-1），本盤是 7 月 10 日ブリヂストン美術館的獨奏，曲目其餘不重疊，不是同一錄音，非撞卡；寫作層不要把兩張的〈Theme For Tomosan〉寫成同一版。⚠ 盤名寫法：Discogs 與 Notion 都是『This Here´ Is Aketa Vol. 2』（´ 為盤面原字元，日文副題寫成 ディズ ヒア' イズ アケタ），卡面照盤面保留 ´；若前端或 KV 正規化對 ´ 有問題，主線可改直引號 '，queryAlias 已收各寫法。⚠ Vol. 1 與 Vol. 2 是兩張不同的碟（不同日期、不同編制），店內只有 Vol. 2，只出 Vol. 2 一張卡。⚠ 錄音地『ブリヂストン美術館』是 Discogs 英文備註 Bridgestone Museum of Art 的日文對譯，寫作層可寫『東京的 Bridgestone 美術館』；封面誤拼一事只有 Discogs 備註單一來源。⚠ Discogs 對 Vol. 2 原版 release 3955896 只標 LP, Stereo（未標 Album），曲數 7、總長約 33 分，判為正規專輯。⚠ community have 14／want 50，證據不厚但版本欄位完整。⚠ 封面：無 RG、CAA 走不通，走 §4 discogs（release 3955896，目錄號 ORLP-1004／年份 1975／廠牌 Offbeat 三項對上），須登錄 registry 並看圖；Apple 預期無，試聽預計 unavailable。｜queryAlias：This Here Is Aketa Vol. 2；This Here' Is Aketa Vol. 2；This Here´ Is Aketa Vol.2；ディズ ヒア' イズ アケタ；Shoji Aketagawa；明田川荘之 ソロ ブリヂストン美術館；Offbeat ORLP-1004",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=releasegroup:Aketa AND (artist:明田川荘之 OR artist:\"Shoji Aketagawa\" OR artist:明田川) → count=1，為池中已有的 03dbc0ae《Aketa's Erotical Piano Solo & Grotesque Piano Trio》（1975），非本盤",
+      "release?query=catno:\"ORLP-1004\" OR catno:ORLP1004 → count=0",
+      "release?query=release:\"This Here\" AND release:Aketa → count=0",
+      "release-group?artist=80da10fb（明田川荘之）browse → 10 筆（Erotical、アローン・イン・徳山、Yamazaki Blues、アット・ザ・バベル２nd、野尻の黄昏、I Didn't Know About You、風の人、大勘定、パーカッシブ・ロマン、Isoshigi），無 This Here´ Is Aketa"
+     ],
+     "checkedAt": "2026-10-06T14:50:00Z",
+     "conclusion": "MB 上沒有《This Here´ Is Aketa》任一冊：盤名、目錄號與藝人 RG 清單三個方向都查無；查詢皆 HTTP 200 正常 JSON，非 503。Discogs 有 master 3401536／原版 release 3955896，故走 §1 人工身分。",
+     "checkedFalseShapes": [
+      "回了同藝人不同作品（Erotical）"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/3955896",
+     "https://www.discogs.com/master/3401536",
+     "https://www.discogs.com/release/29865310"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB 查無；以 Discogs master 3401536、原版 release 3955896（Offbeat Records ORLP-1004、1975、7 軌、1975-07-10 Bridgestone 美術館錄音備註、人員）與同號 Promo 29865310 互證。三條 https，身分成立。",
+    "coverSourceHint": "discogs"
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/qzgDQQ7byaNlveC5iLOeaUrZ5SYEvhqBEKXNXoi9pss/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NTU4/OTYtMTM1MDQyNzQz/OS0zOTk1LmpwZWc.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "3955896",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "Discogs release 3955896（Offbeat Records ORLP-1004、1975、JP），主線目視：黑底「This Here´ Is AKETA Vol.2 ORLP-1004 Offbeat Records」、譜紙與玩具鋼琴照片。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：Offbeat 小廠、只有原盤黑膠、無 CD／串流再發（Apple 只有 2019 上架的其他明田川作品）→ 5；比照池中明田川《Aketa's Erotical Piano Solo…》2/4/4、《Yamazaki Blues》2/4/2（皆已進串流故 4）；美術館鋼琴獨奏現場，含自作怪奇曲與標準曲，硬蕊 3。｜本機 2026-10-07：Last.fm listeners 查無；自家小廠、無再發，5 分錨點成立；沒有遺珠級證據，不列 pearl"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 2、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "東京爵士鋼琴手明田川荘之 1975 年的鋼琴獨奏現場專輯，24 歲那年夏天在東京的 Bridgestone 美術館一個人彈完。七首裡五首是自己寫的，旋律偏自由、帶點即興，另兩首標準曲走抒情路線。他同時經營西荻窪的爵士俱樂部「アケタの店」，店裡擺著撿來的家具和原始風格壁畫，演出偏前衛。1975 年他連錄三張：3 月在自己店裡，6 月錄三重奏的 Vol. 1，7 月這張改成獨奏。內頁文字也由他自己執筆。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3955896",
+     "https://en.wikipedia.org/wiki/Artizon_Museum",
+     "https://www.discogs.com/artist/864278-Shoji-Aketagawa",
+     "https://www.jazzinjapan.com/clubs-and-venues/aketanomise",
+     "https://www.discogs.com/release/3955887",
+     "https://www.discogs.com/label/91996-Offbeat-Records-2",
+     "https://www.discogs.com/release/10040018"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "Apple jp／us 明田川荘之共 8 筆（2019 上架），無《This Here´ Is Aketa Vol. 2》；曲名〈Strange Me-Ro〉查無。YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "梅津和時 & Mal Waldron",
+   "album": "Another Step",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 掛名：依池中聯名先例（c175《Reminicent Suite》裁定『次序照盤面』、外國人一方取池中既有羅馬字 `Mal Waldron`、日本人一方取漢字本名）掛 `梅津和時 & Mal Waldron`——**Discogs 盤面掛名是梅津在前**（Kazutoki Umezu / Mal Waldron = 梅津和時, マル・ウォルドロン；原版、Promo、1991 CD、再版四筆皆梅津在前），梅津也是製作人；Notion 的 Waldron 在前不採。Waldron 在前的寫法收進 queryAlias。key 依 §0.5 走 desc4。⚠ b 組同批《竹の村》掛 梅津和時，本卡用同一漢字字串，兩邊須一致。⚠ §1 人工身分：MB 有藝人 梅津和時（a0becf99），但 RG 搜尋、目錄號 ULP-5004、盤名＋1982 皆 0（見 mbAbsenceProof）。⚠ 年份 1982：Discogs 原版 released 1982-08-21、錄音 1982-04-21／22（備註）。⚠ 曲名〈Hole In Stomach Woman〉照 Discogs；日文曲名未登錄，寫作層不自行翻譯成日文原題。⚠ Discogs 風格標 Contemporary Jazz、Modal、Free Jazz，曲目含兩首標準曲與 Monk，寫作層不要整張寫成自由爵士。⚠ 封面：走 §4 discogs（release 7262688，目錄號 ULP-5004／年份 1982／廠牌 Union Jazz 三項對上），須登錄 registry 並看圖；Apple 是否有 1991 CD 的串流待本機。｜queryAlias：Mal Waldron & 梅津和時；Mal Waldron / 梅津和時；Kazutoki Umezu / Mal Waldron；Kazutoki Umezu；梅津和時；マル・ウォルドロン；アナサー・ステップ；Union Jazz ULP-5004",
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=releasegroup:\"Another Step\" AND (artist:Waldron OR artist:梅津和時 OR artist:Umezu) → count=0",
+      "release?query=catno:\"ULP-5004\" OR (release:\"Another Step\" AND date:1982) → count=0",
+      "artist?query=artist:梅津和時 OR artist:\"Kazutoki Umezu\" → score 100 為 a0becf99（梅津和時，Japanese saxophonist and clarinetist），實體存在但無本盤"
+     ],
+     "checkedAt": "2026-10-06T14:55:00Z",
+     "conclusion": "MB 有梅津和時與 Mal Waldron 兩位藝人，但沒有《Another Step》的 release-group 或 release；查詢皆 HTTP 200 正常 JSON，非 503。Discogs 有 master 1653300／原版 release 7262688，故走 §1 人工身分。",
+     "checkedFalseShapes": []
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/7262688",
+     "https://www.discogs.com/master/1653300",
+     "https://www.discogs.com/release/15598431"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB 查無；以 Discogs master 1653300、原版 release 7262688（Union Jazz ULP-5004、1982-08-21、5 軌、錄音日期與人員）及 1991 CD 再版 15598431 互證。三條 https，身分成立。",
+    "coverSourceHint": "discogs"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/nxZVG4APbQNoJpVaWxkC0hyD5lxUn9fMq3vofkwixMA/rs:fit/g:sm/q:90/h:419/w:419/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNjI2/ODgtMTQzNzQ3Mjkx/MS0yMDY2LmpwZWc.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "7262688",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "Discogs release 7262688（Union Jazz ULP-5004、1982、JP），主線目視：「ANOTHER STEP / KAZUTOKI UMEZU/MAL WALDRON」、兩人合照、帶側標「アナザー・ステップ」。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：Union Jazz（Teichiku）正規廠牌、日本以外幾乎無人知、未進串流；比照池中 Mal Waldron & 日野皓正《Reminicent Suite》3/4/3、Waldron 日本錄音卡 3–4/4/3；標準曲為主但梅津偏自由語法，硬蕊 3。｜本機 2026-10-07：Last.fm listeners 5"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "中音薩克斯風手梅津和時與鋼琴手 Mal Waldron 1982 年合作的四重奏專輯，五首都是長曲，全盤約 41 分鐘。曲目有標準曲、Monk 的〈'Round Midnight〉，以及兩人各自帶來的作品。梅津生於仙台，讀國立音樂大學時就職業演出，在紐約對自由爵士開竅，1980 年帶著生活向上委員會正式出道。Waldron 生於紐約，曾是 Billie Holiday 的固定伴奏，後來長居歐洲，1970 年起在日本極受歡迎，每年固定來日巡演兩個月。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7262688",
+     "https://www.discogs.com/master/1653300",
+     "https://ja.wikipedia.org/wiki/梅津和時",
+     "https://en.wikipedia.org/wiki/Mal_Waldron",
+     "https://www.discogs.com/label/136308"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "Apple jp／us 以盤名、雙方藝人名、曲名〈Hole In Stomach Woman〉查無本盤。YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Oriental Magnetic Yellow",
+   "album": "弱気なぼくら / ナーヴァス",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8c7fa870-ff63-4550-b865-8a8055ecd8c1",
+    "upc": "4949168101005",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 掛名：盤面與 MB credit 都印縮寫 O.M.Y.，但 MB 藝人實體（ca82f38e）與 Discogs 藝人頁（2025422）正名都是 Oriental Magnetic Yellow，Apple 2024 再版的藝人欄也是 Oriental Magnetic Yellow；早期作品（1995《Oriental Magnetic Yellow》、1996《養殖 XO BREEDS》、1997《Sonic Skate Surveyor》）掛全名。為避免日後同團分裂成兩個字串，掛實體正名 `Oriental Magnetic Yellow`，O.M.Y. 進 queryAlias（裁定 8711）。⚠ 盤名：原盤 2001 CD 為『弱気なぼくら / ナーヴァス』（MB、Discogs 一致）；2024 再版改印『弱気なぼくら / Nervous』『Nancy Boys / Nervous』，取原盤寫法，其餘進 queryAlias。key 含假名，前綴 desc4。⚠ 類型：MB primary Album、無 secondary；雖分兩段標題（2024 LP 標『From 弱気なぼくら』A1–A5、『From Nervous』A6–B6），兩段都是 2001 年這張首度發表，非舊作合併，不走 §5.6。⚠ 年份 2001：MB first-release 2001-06-06、Discogs master 3432278 一致；店內實物很可能是 2024 Cassetron LP（Notion 未登錄版本），卡片取原盤年。⚠「仿《浮気なぼくら》」『Nancy Boys』仿『Naughty Boys』只是盤名比對推論，無來源明載，寫作層要寫須研究層另找出處。「最後一張原創專輯」只依 MB RG 表與 Discogs 藝人頁『活動至 2001』推得。⚠ 戲仿團的成員名是化名，寫作層只能寫 Discogs 作曲編程欄的四個羅馬字名，不轉漢字、不寫成 YMO 成員本人參與。⚠ Discogs data quality「Needs Vote」、community 17／32，資料偏薄；樂評地位查無，三軸冷門軸照 §0.8 錨點制。CAA 有無圖待本機，備援 Discogs 2562059（原盤 CD）；Apple 有 2024 再版 6807276757／1774686480 待本機核對哪個是原曲序。｜queryAlias：O.M.Y.；OMY；オリエンタル・マグネチック・イエロー；弱気なぼくら；弱気なぼくら / Nervous；Nancy Boys / Nervous；Nancy Boys"
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8c7fa870-ff63-4550-b865-8a8055ecd8c1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "CAA release-group front 實抓 307→200 image/jpeg；MB release ceba3638（2001-06-06 JP Scitron SCDC-00081 CD）front，封面：淺綠底三人半身像、印「O.M.Y.」「NANCY BOYS」（英文副題，見 aliasReview）。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 28,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：2001 Scitron 小規模 CD，2024 才有授權再發進串流 → 4；YMO 諧仿團，非正典；比照池中 YMO 卡（硬蕊 1–2）取電子流行硬蕊 2。｜本機 2026-10-07：Last.fm listeners 28"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Oriental Magnetic Yellow 2001 年的最後一張專輯，電子合成器與節奏機的 techno-pop，刻意模仿 YMO 又帶著玩笑。四位成員包括細江慎治，成軍時都是 Namco 的遊戲音樂作曲家。1993 年看了重組 YMO 的演唱會，沒聽到想聽的 80 年代曲子，他們乾脆自己寫。團名與化名都在諧仿 YMO，本家的大型 Moog 被戲稱「衣櫃」，他們就擺一個寫著「noog」的衣櫃。Tower Records 形容這張兼具音樂性與幽默，詞曲轉向演歌式寫法。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2562059",
+     "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AA%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%BB%E3%83%9E%E3%82%B0%E3%83%8D%E3%83%81%E3%83%83%E3%82%AF%E3%83%BB%E3%82%A4%E3%82%A8%E3%83%AD%E3%83%BC",
+     "https://api.discogs.com/releases/2562059",
+     "https://api.discogs.com/releases/32567190",
+     "https://tower.jp/article/feature_item/2024/01/23/0702",
+     "https://ja.wikipedia.org/wiki/%E7%B4%B0%E6%B1%9F%E6%85%8E%E6%B2%BB"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/8d/31/f48d3118-a68f-97bc-9808-f57aa9fcf4ce/mzaf_3714953044944714161.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "6807276757",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 6807276757（2024 再發，題『弱気なぼくら / NERVOUS』）12 軌逐軌對上 MB 原盤 SCDC-00081（〈異論反論〉＝MB〈I've Got an Objection Myself〉）；另一條 Cassetron 1774686480『NANCY BOYS/NERVOUS』同內容備援。取第 1 軌〈僕に、胸キュソ。〉。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "カルメン・マキ",
+   "album": "真夜中詩集 －ろうそくの消えるまで－",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "35eadca6-8a30-4363-9752-cbba599f939f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 掛名：池中只有團名 `カルメン・マキ&OZ`；本盤是個人名義（MB 實體 eba9a947 正名カルメン・マキ、Discogs 盤面『Carmen Maki = カルメン・マキ』），不是 OZ 的作品。依 §0.5 日籍藝人用日文名、依池中 `今田勝` vs `今田勝トリオ`、`鈴木勲` vs `鈴木勲トリオ` 的並存先例，掛個人名 `カルメン・マキ`，不併入團名、也不改用羅馬字 Carmen Maki（進 queryAlias）（裁定 8712）。⚠ 盤名：原盤 Discogs 寫『真夜中詩集 －ろうそくの消えるまで－』（全形破折號），MB 1991／2016 release 寫『真夜中詩集〜ろうそくの消えるまで〜』，MB RG 主標題用英譯『Poems in the Midnight (’Til the Candle Goes Out)』，Apple 2016 再版寫『カルメン・マキ真夜中詩集-ろうそくの消えるまで-』。卡單取原盤 Discogs 寫法，其餘全進 queryAlias；主線若要與 Apple／串流對齊可改，屬可逆。⚠ 年份 1969：MB、Discogs master 481864、原版 release 3955729（1969-08）一致。⚠ 寺山修司的角色 Discogs 記為『Lyrics By, Producer［構成］』，但曲目層未細分作詞，寫作層不得寫成『全部由寺山作詞』，只寫構成／製作。⚠ 同年另有《Adam And Eve》（SOND 66013）也是 1969 年專輯，非本盤；〈かもめ〉另有 1969 年 7 吋 EP（SONB 76006），勿混。CAA 有無圖待本機，備援 Discogs 3955729；Apple jp 1537211393 待本機核對曲序（12 軌，比原盤多 1 軌）。｜queryAlias：Carmen Maki；カルメンマキ；真夜中詩集；真夜中詩集〜ろうそくの消えるまで〜；真夜中詩集-ろうそくの消えるまで-；Poems in the Midnight ('Til the Candle Goes Out)；Poems In The Midnight: Till The Candle Goes Out"
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/35eadca6-8a30-4363-9752-cbba599f939f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "CAA release-group front 實抓 307→200 image/jpeg；MB release 69a6f3f0（1969 JP CBS/Sony SOND 66010）front，封面：夕陽海邊回眸的カルメン・マキ、左上小字「カルメン・マキ真夜中詩集」「CARMEN MAKI POEMS IN THE MIDNIGHT」。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "地區錨點（日語圈尺度）：CBS/Sony 正規首張，〈時には母のない子のように〉大熱但專輯本身在日本以外少人知 → 3；比照池中 カルメン・マキ&OZ 4/3/3，本盤為朗讀與民謠小品，經典 3、硬蕊 2。｜本機 2026-10-07：Last.fm listeners 3；聽眾數低是日文盤名在 Last.fm 的統計問題；出道作含百萬單曲，冷門軸照區域錨點維持 3"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "カルメン・マキ 1969 年的專輯，由寺山修司擔任整體構成，低沉早熟的少女歌聲唱哀愁的民謠風歌謠，像一本照順序翻閱的詩集。她生於鎌倉，父親是美國人，1968 年高中輟學，看了寺山的劇團天井桟敷公演後入團。同年首次登台就被 CBS 索尼簽下，隔年單曲〈時には母のない子のように〉賣破百萬，登上紅白。寺山把她包裝成天涯孤獨的少女，其實她母親健在。1970 年她聽了 Janis Joplin 的唱片受到衝擊，轉向搖滾。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3955729",
+     "https://api.discogs.com/releases/3955729",
+     "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AB%E3%83%A1%E3%83%B3%E3%83%BB%E3%83%9E%E3%82%AD",
+     "https://ja.wikipedia.org/wiki/%E6%99%82%E3%81%AB%E3%81%AF%E6%AF%8D%E3%81%AE%E3%81%AA%E3%81%84%E5%AD%90%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB",
+     "https://ja.wikipedia.org/wiki/%E5%AF%BA%E5%B1%B1%E4%BF%AE%E5%8F%B8"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/c1/ed/c7c1edba-9154-48c3-4737-dcd6d6b7d9e4/mzaf_17786583541933162513.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1537211393",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1537211393（Sony Japan ℗1969）12 軌：第 1–11 軌對上 MB 原盤 11 軌（第 11 軌標 short version＝原盤收尾的〈時には母のない子のように〉），第 12 軌意大利語版為增收。取第 1 軌〈時には母のない子のように〉。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "あがた森魚",
+   "album": "噫無情（レ・ミゼラブル）",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9e91e6a6-cbf4-4b38-b64d-d2eeddeb2bb6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 盤名：MB 與 Discogs 原版皆『噫無情（レ・ミゼラブル）』（全形括號），1990／1995 CD 另印『噫無情 (レ・ミゼラブル) = Les Misérable』，Apple 題『Ah Mujou Les Miserables』；卡單照原盤，Notion 的『噫無情』與英題進 queryAlias。⚠ 年份 1974：MB first-release-date 1974-03-25、Discogs master 533981 與原版 release 5416259 一致。⚠ Discogs 原版 credits 只有設計 Heiquiti Harata，製作人、伴奏樂團（はちみつぱい 等）均未登錄；寫作層不得寫伴奏陣容或製作人，除非研究層另找到可追溯來源。〈はいからはくち〉是否即はっぴいえんど同名曲的翻唱亦未查證，不寫。⚠ 1974 年同期他自製電影《僕は天使ぢゃないよ》（日文維基 あがた森魚 條目），與本盤是否有關未證實，不寫。CAA 有無圖待本機，備援 Discogs 5416259；Apple jp 1642726952（13 軌）待本機核對。｜queryAlias：噫無情；噫無情 (レ・ミゼラブル)；Les Misérable；Les Miserables；Ah Mujou Les Miserables；Morio Agata"
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9e91e6a6-cbf4-4b38-b64d-d2eeddeb2bb6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "CAA release-group front 實抓 307→200 image/jpeg；MB release 525faf1b（1974-03-25 JP Bellwood OFL-22）front，封面：戴帽女子肖像畫、無字；與 Discogs 原版 5416259（帶側標「あがた森魚の噫無情」）同一張畫，主線目視一致。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 33,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "地區錨點：Bellwood 正規但當年商業失敗 → 比照池中あがた森魚《乙女の儚夢》4/4/3、《日本少年》4/4/3、《乗物図鑑》4/4/2，本盤非代表作，經典 3；大正浪漫歌謠拼貼，硬蕊 3。｜本機 2026-10-07：Last.fm listeners 33；三軸 3/4/3 → 4/4/3；池中同藝人三張（乙女の儚夢、日本少年、乗物図鑑）皆 4，本盤是同一時期的代表作，經典改 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 4、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "あがた森魚 1974 年的專輯，はっぴいえんど前鼓手松本隆製作，帶著昭和電影院與老歌謠氣味的民謠搖滾。Bellwood 在 45 週年再版時稱它是他最好的一張、令人聯想到電影的概念專輯。他生於北海道，高二聽了 Bob Dylan 的〈Like a Rolling Stone〉開始寫歌。1972 年他成為 Bellwood 第一位簽約藝人，單曲〈赤色エレジー〉賣出 50 萬張。1974 年他也用版稅自編自導拍了電影《僕は天使ぢゃないよ》，商業失敗，花了十多年還債。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5416259",
+     "https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%8C%E3%81%9F%E6%A3%AE%E9%AD%9A",
+     "https://www.billboard-japan.com/goods/detail/561510",
+     "https://www.discogs.com/master/1372483",
+     "https://api.discogs.com/masters/533981/versions"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/6c/d6/4f/6cd64fb1-8697-9b07-e1fd-a9a5dda5218b/mzaf_13277965120426712735.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1642726952",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1642726952（King Record ℗1974，題『Ah Mujou Les Miserables』）13 軌逐軌對上 MB 原盤 OFL-22。取 A1〈蒲田行進曲'74〉。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "桃井かおり",
+   "album": "おもしろ遊戯",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 身分走 §1 人工：MB 有藝人實體（桃井かおり a485d750），但其 RG 表只有 2003 年以後的五筆（GOLDEN☆BEST、ベスト・スタンダード〜夢で逢えたら 等），沒有本盤；見 mbAbsenceProof。證據為 Discogs master 3435347／release 7633932 與 Apple jp 1536986860（10 軌曲目逐首與 Discogs 一致、℗ 1982 Sony Music Entertainment (Japan)）。⚠ credit 漢字未核：Discogs 只給羅馬字（Ryudo Uzaki、Kyohei Tsutsumi、Yoko Aki、Tadanori Yokoo 等），寫作層要轉漢字須研究層另有來源；且 Discogs 未逐曲標作曲者，不得寫『某曲由某人作曲』。⚠ 廠牌欄『Momoi Kaori』是 Discogs 記法，實際是 CBS/Sony 體系內的個人品牌，研究層宜再確認。⚠ B5 曲名 Discogs『プライベートタイム午前三時』、Apple『プライベイトタイム午前三時』，B4 Discogs『La La La La』、Apple『LA la la la』，寫作層照 Apple 或避開。⚠ 年份 1982：Discogs 原版 1982-02-25、Apple ℗1982 一致。封面走 §4 discogs（release 7633932，目錄號／年份／廠牌三項對上）或 Apple 1536986860（§4 apple-verified-collection），待本機看圖。｜queryAlias：Kaori Momoi；Momoi Kaori；桃井 かおり；Omoshiro Yugi；おもしろ遊戲",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=artist:\"桃井かおり\" → count=1，score 100 為 a485d750-51b5-4ff0-a19d-ea20a21c4877（桃井かおり，JP）",
+      "release-group?artist=a485d750（browse，limit 100）→ 5 筆：2003-03-19 GOLDEN☆BEST、2003-06-25 ベスト・スタンダード〜夢で逢えたら、2004-02-25 ゴールデン☆ベスト シングルス・アンド・モア、2007-07-04 宮崎駿の雑想ノート6「多砲塔の出番」、2016-06-15 Kaori Sings The Lady；無 1982 年作品",
+      "release-group?query=releasegroup:\"おもしろ遊戯\" → count=0",
+      "release-group?query=artist:\"桃井かおり\" AND (releasegroup:おもしろ OR releasegroup:Omoshiro) → count=0",
+      "release?query=catno:\"28AH 1401\" → count=0",
+      "release?query=release:\"おもしろ遊戯\" → count=0",
+      "release?query=artist:\"Kaori Momoi\" AND date:1982 → count=0"
+     ],
+     "checkedAt": "2026-10-06T00:00:00Z",
+     "conclusion": "MB 有桃井かおり的藝人實體但沒有本盤的 release-group 或 release：藝人 browse、盤名、目錄號 28AH 1401、羅馬字＋年份四個方向皆空。中途 release 查詢有一次 503，已間隔重試取得 HTTP 200 正常回應。Discogs 與 Apple 皆有此盤，走 §1 人工身分。",
+     "checkedFalseShapes": [
+      "503",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/7633932",
+     "https://www.discogs.com/master/3435347",
+     "https://music.apple.com/jp/album/1536986860"
+    ],
+    "manualRuling": "依 ALBUM_ONBOARDING §1 人工身分路線：MB 只有藝人實體、無本盤；以 Discogs release 7633932（Momoi Kaori 28AH 1401、1982-02-25、10 軌、credits）與 Apple jp collectionId 1536986860（10 軌曲目逐首相符、℗1982）互證。三條 https 證據。",
+    "coverSourceHint": "discogs"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/e7/4f/d1e74fd1-01f6-82d6-46a4-3ea089ceef4d/jacket_MHXX01865B00Z_550.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1536986860",
+    "visuallyVerified": true,
+    "note": "改用 Apple 官方圖（試聽釘定的 collectionId 1536986860，jp：桃井 かおり — おもしろ遊戯），雲端的 Discogs 圖帶側標；本機看圖與原盤封面相同（雲端原圖：discogs 7633932）"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 32,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "地區錨點：演員歌手作品、CBS/Sony 體系正規發行但專輯本身查無評價 → 4；經典 2；宇崎竜童／阿木燿子系歌謠，硬蕊 2。｜本機 2026-10-07：Last.fm listeners 32"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "演員桃井かおり 1982 年的歌唱專輯，歌謠曲架構配上都會流行與爵士感的編曲，她用慵懶的語氣唱成熟女性的情歌。作詞是阿木燿子，作曲有宇崎竜童等人，這對夫妻是歌謠曲界的知名搭檔；開場〈口説いてくれて〉先在 1 月以單曲發行。她生於東京，從小學芭蕾，赴英國留學受挫後改學演戲，1971 年以電影出道。1981 年她突然隻身前往紐約，回國後一度想退出演藝圈，是編劇早坂暁來電邀演《花へんろ》才回到戲裡。1982 年她以《疑惑》拿下報知電影獎最佳女主角，同年推出這張唱片。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7633932",
+     "https://api.discogs.com/releases/7633932",
+     "https://ja.wikipedia.org/wiki/%E9%98%BF%E6%9C%A8%E7%87%BF%E5%AD%90",
+     "https://www.discogs.com/release/17656891",
+     "https://ja.wikipedia.org/wiki/%E6%A1%83%E4%BA%95%E3%81%8B%E3%81%8A%E3%82%8A",
+     "https://api.discogs.com/artists/2846294/releases",
+     "https://music.apple.com/jp/album/1536986860"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/08/e9/a8/08e9a84e-27bc-ee37-d310-908e119fed56/mzaf_10935577796732563835.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1536986860",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1536986860（Sony Japan ℗1982）10 軌逐軌對上 Discogs 原版 7633932。取 A1〈口説いてくれて〉。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "矢野顕子",
+   "album": "オーエス オーエス",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "564ca909-a18f-4425-b6ff-f02c1237141c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 盤名：MB、Discogs、Apple 皆『オーエス オーエス』（半形空格），法文意譯『Oh Hisse Oh Hisse』見 Discogs 備註與 MB 2016 release 題名，進 queryAlias。⚠ 版本差異：原版 LP 本體 9 軌＋附贈 7 吋 2 軌（〈終わりの季節〉在 7 吋 C 面）；CD 38JC-101 則 10 軌、〈終わりの季節〉排第 8、無〈Assemblée〉。寫作層寫曲數要指明版本，或避開曲數。⚠ 年份 1984：MB first-release 1984-06-25、Discogs 原版 1984-06-25 一致。⚠ 曲風：池中矢野另兩張標 pop＋jazz；本張由坂本龍一共同製作、偏電子編曲，genres 取 pop＋electronic（可逆）。⚠〈Simon Smith…〉原作者為 Randy Newman、〈Greenfields〉原唱等翻唱來歷 Discogs 未逐曲標註，寫作層要寫須研究層另找來源。CAA 有無圖待本機，備援 Discogs 3248498；Apple jp 1405887205（11 軌，2016 再版）待本機核對曲序。｜queryAlias：Akiko Yano；Oh Hisse Oh Hisse；オーエスオーエス；OS OS"
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/564ca909-a18f-4425-b6ff-f02c1237141c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "CAA release-group front 實抓 307→200 image/jpeg；MB release 10beb261（1984-06-25 JP Japan Record 38JC-101 CD）front，封面：白圓領黑衣的矢野顕子、右上印「矢野顕子 オーエス オーエス」；LP 28JAL-10 同一封面設計。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 591,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "地區錨點：Japan Record 正規流通、含〈ラーメンたべたい〉；比照池中矢野顕子《Japanese Girl》4/4/2、《ごはんができたよ》4/3/2 取 4/3/2。｜本機 2026-10-07：Last.fm listeners 591；區域錨點維持 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "矢野顕子 1984 年的第 7 張錄音室專輯，以鋼琴與合成器為底，唱腔俏皮跳躍，從童謠、日常小曲到英文歌都放在一起。她與 1982 年結婚的坂本龍一共同製作，細野晴臣、高橋幸宏也參與。開場翻唱童謠〈おもちゃのチャチャチャ〉；自己寫的〈ラーメンたべたい〉，十年後的 1994 年被收進高中國語教科書。LP 附一張 7 吋，收細野晴臣的〈終わりの季節〉；封面由篠山紀信拍攝，她說是「葬式用」的照片。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3248498",
+     "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%82%A8%E3%82%B9%20%E3%82%AA%E3%83%BC%E3%82%A8%E3%82%B9",
+     "https://api.discogs.com/releases/3248498",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A2%E9%87%8E%E9%A1%95%E5%AD%90"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2b/32/99/2b329998-6659-14f2-3cdc-8c33e92ae384/mzaf_7989075173563476034.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1405887205",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1405887205（2016 MIDI 再發）11 軌＝CD 38JC-101 的 10 軌＋LP 附贈 7 吋的〈Assemblée〉，對上 MB 原盤；取〈ラーメンたべたい〉（第 6 軌）。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮本典子・鈴木勲",
+   "album": "Push",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "44a1a0ca-decd-4a50-be50-2909b1550135",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 身分（任務指示待查）已釘：MB RG 44a1a0ca 的 credit 是兩個實體『宮本ノリコ & 鈴木勲』→ 宮本典子（5f96637e，credit 名寫片假名ノリコ）與 鈴木勲（cf594e51，與池中鈴木勲同一人）；Discogs master 866074 掛『Noriko Miyamoto With Isao Suzuki』，藝人頁 1292853 正名宮本典子（變名 Noriko \"MIMI\" Miyamoto 等），Apple 掛『宮本典子 & 鈴木 勲』。⚠ 掛名：依 c-179 第 4641 條／第 3874 條（兩位日本個人、名字都不含中黑 → 用 `・`），與池中 `富樫雅彦・鈴木勲`、`鈴木勲・山本剛` 同形，掛 `宮本典子・鈴木勲`；不用 MB 片假名 credit 名ノリコ（實體正名與 Discogs、Apple 皆為典子）（裁定 8716）。若主線認為鈴木勲只是伴奏製作、應單掛 `宮本典子`，屬可逆。⚠ 撞名不撞卡：本盤 B2〈Cadillac Woman〉與池中 `鈴木勲`《Cadillac Woman》（1977）同名曲，兩張是不同專輯；寫作層不得寫成同一錄音。⚠ 曲序：原版 LP A 面 Monologue／Stella By Starlight／Everything I Have Is Yours、B 面 Push／Cadillac Woman／My Life；卡帶 CJ25-1 曲序不同、2022 BBE 2LP 也重排（C 面 Stella、D 面 Cadillac Woman），寫作層寫曲序只照原版。⚠ 年份 1978：MB first-release 1978、Discogs master 一致。⚠ 曲風 jazz＋soul 為策展判斷（池中鈴木勲各張只標 jazz），可逆。CAA 有無圖待本機，備援 Discogs 1263679；Apple jp 1622901354（2022 再版，6 軌）待本機核對。｜queryAlias：宮本典子 & 鈴木勲；宮本ノリコ & 鈴木勲；Noriko Miyamoto With Isao Suzuki；Noriko Miyamoto & Isao Suzuki；宮本典子 & 鈴木 勲；宮本典子；プッシュ"
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0c/51/28/0c51285f-9784-b985-9908-bcfd1ed0e4b5/196626311719.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1622901354",
+    "visuallyVerified": true,
+    "note": "改用 Apple 官方圖（試聽釘定的 collectionId 1622901354，jp：宮本典子 & 鈴木 勲 — Push），雲端的 CAA 圖帶側標；本機看圖與原盤封面相同（雲端原圖：caa ）"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：Yupiteru 小廠原盤、2022 BBE 授權再發進串流 → 4；比照池中鈴木勲《Cadillac Woman》2/4/2、《My Spare Time》3/4/2 取 3/4/2。｜本機 2026-10-07：Last.fm listeners 查無"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "靈魂歌手宮本典子與爵士貝斯手鈴木勲 1978 年合作的專輯，爵士底子的靈魂與放克人聲，電貝斯與吉他合成器帶著迪斯可年代的律動。鈴木勲親自彈貝斯並共同製作，標題曲〈Push〉由兩人共同署名。宮本典子生於銀座，當迪斯可舞者時看了 Tina Turner 的演出，決心當靈魂歌手，後來當上放克樂團 Three Cheers & Congratulation 的主唱。1977 年鈴木勲看中她，找進自己的樂團 Soul Family，她就此正式出道。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1263679",
+     "https://api.discogs.com/releases/1263679",
+     "https://ja.wikipedia.org/wiki/Mimi%20%28%E6%AD%8C%E6%89%8B%29",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%8B%B2",
+     "https://bbemusic.com/product/noriko-miyamoto-push"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/a5/65/90/a5659067-c003-2451-54fb-3574d4438b0d/mzaf_6782336847393677792.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "appleCollectionId": "1622901354",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1622901354（BBE 2022／1978 Yupiteru 授權）6 軌逐軌對上 MB 原盤 YJ25-7002。取 A1〈Monologue〉。 本機 2026-10-07 覆核：lookup 掛名與盤名相符、試聽檔在曲目內、HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "梅津和時",
+   "album": "竹の村",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e63df681-4d85-41cc-8fd5-e060af8900a2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 盤名：MB RG 標題『Bamboo Village』，Discogs 原版『Bamboo Village = 竹の村』（英文在前），Notion 寫『竹の村』。依 MB RG 純拉丁標題取 `Bamboo Village`，『竹の村』進 queryAlias（裁定 8718）；若主線偏好日文題（池中富樫雅彦多張用日文片假名題）可改，屬可逆。key 因掛名為漢字走 desc4。⚠ 掛名：MB credit『Kazutoki \"Kappo\" Umezu』→ 實體 梅津和時（a0becf99）；Discogs 盤面『Kazutoki \"Kappo\" Umezu = 梅津和時』。依 §0.5 用漢字本名 `梅津和時`，綽號 Kappo 進 queryAlias。⚠ 樂手漢字：Discogs 只給羅馬字 Masahiko Togashi，與池中『富樫雅彦』應為同一人，但寫作層要寫漢字須研究層確認；製作 Kiyoshi Koyama、插畫 Yasue Yokoo 的漢字同樣未核，不轉寫。⚠ 年份 1980：MB first-release 1980、Discogs 原版 ℗&© 1980、錄音 1980-03-21／22 一致。⚠ Discogs master 只有原版與 promo 兩筆，未見 CD 化或串流（iTunes jp 搜尋無），試聽預期 unavailable；CAA 有無圖待本機，備援 Discogs 8381375。Discogs community 50／107。｜queryAlias：Bamboo Village；Bamboo Village = 竹の村；Kazutoki Umezu；梅津和時 竹の村"
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/C61tBoKZwOIwiQIixTQ2RI72n39Ss8m_JYnP-gtsfwg/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgzODEz/NzUtMTQ2MDQ5NzYy/Ni04MzYxLmpwZWc.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "8381375",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "Discogs release 8381375（Next Wave 25PJ-1003、1980、JP），主線目視：竹與鶴的日本畫、印「竹の村」「Bamboo Village」「Kazutoki-kappo-Umezu」。CAA release-group/e63df681 實抓 404（無圖），改走 Discogs。 本機 2026-10-07 覆核：HTTP 200、看圖與盤名相符。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "深掘錨點：Next Wave 小廠、無 CD 化與串流（研究 b 8741）→ 5；比照池中富樫雅彥同期卡 4/4/3，本盤為梅津個人名義首作，經典 3；自由傾向的三重奏，硬蕊 3。｜本機 2026-10-07：Last.fm listeners 0；小廠、無 CD 與串流，5 分錨點成立；沒有遺珠級證據，不列 pearl"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 0），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "薩克斯風手梅津和時 1980 年的第一張個人名義專輯，薩克斯風、貝斯與打擊的三重奏，沒有鋼琴，自由爵士色彩與節奏感並存。貝斯是美國的 David Friesen，打擊樂是富樫雅彦；四首裡三首梅津自作，B 面 14 分多鐘的〈How Are You〉出自富樫。梅津生於仙台，大學時就職業演出，在紐約對自由爵士開竅；同年他所屬的生活向上委員會大管弦樂團也正式出道。富樫 1970 年因傷下半身癱瘓，之後自己設計鼓組，改成只用雙手演奏。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8381375",
+     "https://api.discogs.com/releases/8381375",
+     "https://ja.wikipedia.org/wiki/%E6%A2%85%E6%B4%A5%E5%92%8C%E6%99%82",
+     "https://ja.wikipedia.org/wiki/%E5%AF%8C%E6%A8%AB%E9%9B%85%E5%BD%A6",
+     "https://api.discogs.com/artists/863918",
+     "https://en.wikipedia.org/wiki/David_Friesen",
+     "https://organicmusic.jp/en/products/hozan-friesen-1-s-t-2"
+    ],
+    "cardVersionReplaced": true,
+    "note": "採用門市版介紹（data/shop/descs.json，店主 2026-10-07 指示：卡池沒有的店內專輯直接用店內版，不另研究寫作）。雲端寫的卡牌版留在 batch-progress/add-20261006-shop/onboarding-manifest.json。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-07T00:25:05Z",
+    "note": "Apple jp／us 以『竹の村』『Bamboo Village』、曲名〈Jumpin' Sambo〉查無；研究 b 8741 亦載未 CD 化、未上串流。YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

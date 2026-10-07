@@ -1,5 +1,57 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-07｜dip-vinyl-shop｜モア《モア》改為流亡卡（pearl）
+
+同日第二筆。店主點名把當天上架的モア《モア》（1983，自費壓製的私製盤）升為流亡卡。
+門檻符合 `ALBUM_ONBOARDING` §3：obscurity 5、Last.fm listeners 8（低於 300）；三軸 1/5/2 不變。
+- `seed_cards.json`：該列補第 8、9 欄 `null, "pearl"`。卡池 18,666 張不變，流亡 108 → **109**（一般 17,748／殿堂 693／異端 116）。
+- `onboarding-manifest-add-20261005-shop-20261007.json`：`apexAssessment` 改為 eligible／pearl，附兩個 Discogs 證據網址；`published` 改記 `apexPool`。
+- `batch-progress/add-20261005-shop/local-20261007.json` 加 `apex` 欄，`shop-localize.mjs` 支援它（重跑轉檔不會洗掉）。
+- `album_overrides` 沒有這張的文件，前台的級別讀卡池第 9 欄，不需要經後台。`card_catalog` 的稀有度照公式仍是 rare，沒動。
+- 驗證：published gate 該批 12 張 0 error。
+
+### 2026-10-07｜dip-vinyl-shop｜店內販售區第二、三波新卡 25 張上架（卡池 18,641 → 18,666），卡片簡介改用門市版
+
+**店主 2026-10-07 指示（往後照辦）：卡池沒有的店內專輯，建卡時卡片簡介直接用店內版（門市版）介紹，不另外研究與寫作。**
+這修訂了 10-06「門市版不進卡池、不寫 KV」那條；卡池原本就有的卡不受影響。規則寫進 `data/shop/README.md`。
+
+**一、上架**：add-20261005-shop 12 張＋add-20261006-shop 13 張，全部是 Notion「唱片庫存售價表（販售中）」10-05／10-06 新進、卡池沒有的。
+雲端段已做完身分、封面、試聽配對、三軸與兩套簡介（卡牌版＋門市版）。本機段：
+- **簡介**：25 張都改填門市版（`data/shop/descs.json`），來源網址沿用同一份建卡研究稿。雲端寫的卡牌版留在 `batch-progress/<批>/onboarding-manifest.json` 沒動，
+  要換回去跑 `node batch-progress/shop-localize.mjs <批> <stamp> --card-desc` 再重推 KV。
+  唯一動到字的是あがた森魚《噫無情》：門市版引 Bellwood 的「最高傑作」，「傑作」是卡片禁語，卡片這一份改成「稱它是他最好的一張」，門市版原文不動。
+- **封面**：25 張逐張抓圖看過，都是對的唱片。5 張改用 Apple 官方圖（`apple-verified-collection`，取自已釘定的試聽 collectionId，看過與原盤同圖）：
+  Tete Montoliu《Tete!》（CAA 圖是 CD 盒翻拍）、下田逸郎《飛べない鳥、飛ばない鳥》、今田勝《Blue Marine》、桃井かおり《おもしろ遊戯》、宮本典子・鈴木勲《Push》（四張帶側標）。
+  梅津和時 & Mal Waldron《Another Step》也帶側標，但沒有別的來源，維持 Discogs 圖。最終：CAA 14、Apple 5、Discogs 6。
+- **試聽**：ready 15、unavailable 10。15 筆以 Apple lookup 逐筆對過掛名、盤名、曲目，試聽檔都在曲目內；沒有任何 collectionId 被別張卡引用。
+  兩筆盤名不同但確認是同一張：下田逸郎那張 Apple 題名是封面上的英文題《Love Songs And Lamentations》；今田勝那張是日文副題《誘われてシーサイド》。
+- **三軸**：補齊 Last.fm listeners（22 張有值、3 張查無）。改 4 處：Miles Davis《Directions》冷門 3→4（8,379）、John Coltrane《More Lasting Than Bronze》冷門 3→4（24）、
+  Kai Winding《Rainy Day》冷門 3→4（94）、あがた森魚《噫無情》經典 3→4（池中同藝人三張皆 4）。機器值因聽眾數給 5 的一律依 §0.8 壓回 4；
+  冷門 5 只有 4 張：モア《モア》與 Jonny Holtzman《Let's Do It》（自費私壓）、明田川荘之《This Here´ Is Aketa Vol. 2》與梅津和時《竹の村》（小廠、無再發）。
+  後兩張雲端列為 pearl 待查：listeners 查無／0，但沒有遺珠級證據，**不列 pearl**。頂點 0 張。稀有度 uncommon 8、rare 15、common 2。
+- **寫入與驗證**：prepare gate 兩批 0 error；card_catalog 25／25；KV 38 鍵 bulk get 逐字一致；靜態試聽 15＋負面狀態 10；卡池 25 列；**published gate 兩批 0 error**。
+  標籤預熱 25 張（21 張有標籤）後重建子曲風表：17,233 → 17,253／18,666。
+- manifest：`onboarding-manifest-add-2026100{5,6}-shop-20261007.json`；本機覆核值在各批的 `local-20261007.json`。
+- `album_overrides` 的 repaste 檔沒有貼：試聽已走靜態對照表與負面狀態檔，不需要再經後台。
+
+**二、店內販售區**：Notion 25 列「卡池鍵」已由本工作階段填入（另 3 列先前已有人補上），快照同步，`PENDING_NEW` 清空，
+`data/shop/inventory.json` **in_stock 68／68，全部由卡池鍵對上**。
+
+**三、雲端這幾天做的、依交接在此補記**（雲端不碰本檔）：
+- 10-05：後台「🏪 實體店庫存」加「↻ 從 Notion 重新整理」；Worker 新增 `/shop-inventory`（後改為接受後台 Google 登入驗證，並回傳 Notion 曲風欄供後台分區），
+  比對新增／移除／改價後存 Firestore `settings/shopInventory`。**要店主在本機設 `NOTION_TOKEN` 並部署 Worker 才能用**；目前 `settings/shopInventory` 還不存在（讀回 404）。
+- 10-06：門市版介紹機制——`data/shop/SHOP_DESC_RULES.md`、`data/shop/descs.json`（68 張全有預設稿，原在售 30 張改由研究稿重寫）、
+  `scripts/build-shop-descs.mjs`；店主在後台改的版本存 Firestore `settings/shopDescs.byKey`。
+- Notion 第二波 16 張、第三波 26 張入庫；品名更正 8 筆；宮沢昭《Bull Trout》＝池中《いわな》。
+- 藝人介紹 ar-d-118、ar-d-119 上架（第三波 7 位；桃井かおり素材不足略過），分片 3,087 位。
+
+**主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`card-subgenres.json`、`genre-tree.json`、
+`data/shop/{inventory.json,notion-snapshot.json,README.md}`、`scripts/sync-shop-inventory.mjs`、`batch-progress/shop-localize.mjs`（新）、
+兩批的 `local-20261007.json` 與根目錄 manifest。
+
+**尚未處理**：Worker 兩件事都卡在部署（`/shop-inventory` 的 `NOTION_TOKEN`、古典規則 `chamber(?!s)`）；
+《いわな》補別名 Bull Trout 沒有地方可寫（卡池列沒有別名欄）；10 張無試聽的卡若要掛 YouTube 來源得走後台。
+
 ### 2026-10-05｜dip-vinyl-shop｜add-20261004-shop 上架 3 張（卡池 18,638 → 18,641）、44 張爵士卡誤標古典改回、店內販售區資料層補記
 
 **一、新卡 3 張**（店內販售區缺的卡，雲端段已做完身分／封面／試聽／簡介，prepare gate 0 error）：

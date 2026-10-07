@@ -1,0 +1,375 @@
+[
+ {
+  "key": "今田勝",
+  "name": "今田勝",
+  "tier": "D",
+  "cards": 3,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1980,
+   1982
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Andalusian Breeze",
+    "year": 1980,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Carnival",
+    "year": 1981,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c187-b",
+    "album": "Andalusian Breeze",
+    "facts": [
+     {
+      "f": "原壓 `labels` 欄印的字標逐字是「Full House (3) — PAP-9234」而不是 Trio Records，而 Discogs 廠牌頁的 `parent_label` 逐字是 Trio-Kenwood Corporation——`Full House` 是 Trio 的子字標，號段用的也是 Trio 自己的 `PAP-`。",
+      "src": "https://www.discogs.com/label/509748-Full-House-3"
+     },
+     {
+      "f": "末軌〈Nowin〉後來變成一支樂團的名字：1984 年 今田勝 組了 fusion 樂團「NOWIN（ナウイン）」，在 Polydor 留下五張專輯。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BB%8A%E7%94%B0%E5%8B%9D"
+     },
+     {
+      "f": "今田勝 1932 年生於東京，年輕時學古典鋼琴，明治大學在學時在學生樂團彈爵士，畢業後先當了一年上班族才決定走職業路；1953 年起成為單簧管手 北村英治 樂團的一員，1964 年才開始帶自己的三重奏。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%BB%8A%E7%94%B0%E5%8B%9D"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c188-a",
+    "album": "Carnival",
+    "facts": [
+     {
+      "f": "打擊手 今村祐司 1939 年 3 月 30 日生於東京，待過 日野皓正 的五重奏，也是 今田勝 自己四重奏的成員。",
+      "src": "https://www.discogs.com/artist/663531"
+     },
+     {
+      "f": "貝斯手 岡沢章 1951 年 3 月 23 日生於東京，是 The Players 與 Jiro Inagaki & Soul Media 的成員。",
+      "src": "https://www.discogs.com/artist/546128"
+     },
+     {
+      "f": "製作是 稲岡邦弥（盤面署名 Ken Inaoka），1943 年 4 月 12 日生於兵庫県伊丹；製作協調 丸茂正樹，解說 山口弘滋。",
+      "src": "https://www.discogs.com/artist/851867"
+     },
+     {
+      "f": "六軌是〈Carnival〉7:08、〈Ripple In Recife〉4:51、〈Sea Weeds〉8:47、〈Surf Dance〉3:47、〈Sunset Walk〉6:42、〈Gentle Breeze〉8:27；曲風欄逐字是 Jazz 與 Latin，樣式欄是 Fusion 與 Latin Jazz。",
+      "src": "https://www.discogs.com/release/2377295"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Andalusian Breeze",
+    "manifest": "onboarding-manifest-c187-20261004.json",
+    "desc": "六首曲子全出自他一人，吉他卻請了別人來彈。吉他那一欄寫著 渡辺香津美，而他與打擊手 今村祐司 早在 1975 年的一張碟上就同時在場，五年後兩人一起回到 今田勝 這一張。1980 年 9 月 3 日到隔天錄於 音響ハウス，屬「Trio Jazz Mania」系列。原壓的字標欄印的是子字標 Full House，號段用的是母廠自己的 PAP-9234。末軌〈Nowin〉四年後變成一支樂團的名字：1984 年 今田勝 組的 fusion 樂團就用它，留下五張專輯。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3678676-Masaru-Imada-Andalusian-Breeze",
+     "https://www.discogs.com/label/509748-Full-House-3",
+     "https://ja.wikipedia.org/wiki/%E4%BB%8A%E7%94%B0%E5%8B%9D",
+     "https://www.discogs.com/master/802893-Masaru-Imada-Andalusian-Breeze",
+     "https://music.apple.com/jp/album/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%AB%E3%82%B7%E3%82%A2%E3%81%AE%E9%A2%A8-1-remaster/1493918236",
+     "https://music.apple.com/jp/album/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%AB%E3%82%B7%E3%82%A2%E3%81%AE%E9%A2%A8/1329374471",
+     "https://musicbrainz.org/release-group/6fbb4ca7-85b4-4c75-ab22-29e53657047a"
+    ]
+   },
+   {
+    "album": "Carnival",
+    "manifest": "onboarding-manifest-c188-20261004.json",
+    "desc": "原盤只掛鋼琴手一人，三年後再發多了一對兄弟。1984 年 Polydor 再發黑膠時，掛名改成 Masaru Imada Featuring The Brecker Brothers。Randy Brecker 的 flugelhorn 只在兩軌，Michael Brecker 的次中音在另外兩軌。原盤出自 1981 年，號碼印成 PAP-25009；錄音分三天，橫跨六週，最後一天錄完當天就混音。今田勝 自己彈鋼琴與 Fender Rhodes 電鋼琴。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2377295",
+     "https://www.discogs.com/release/13871040",
+     "https://www.discogs.com/release/6706380",
+     "https://www.discogs.com/artist/663531",
+     "https://www.discogs.com/artist/546128",
+     "https://www.discogs.com/artist/851867",
+     "https://www.discogs.com/master/833560",
+     "https://musicbrainz.org/release-group/94ee938c-34fd-462d-ad1e-ca2c2b65abc5"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "tete montoliu",
+  "name": "Tete Montoliu",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Songs for Love",
+    "year": 1973,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261005-shop-a",
+    "album": "Tete!",
+    "facts": [
+     {
+      "f": "陣容是 Tete Montoliu（鋼琴）、Niels-Henning Ørsted Pedersen（貝斯）與 Albert Heath（鼓）組成的三重奏。",
+      "src": "https://en.wikipedia.org/wiki/Tete!"
+     },
+     {
+      "f": "Tete Montoliu 1933 年生於巴塞隆納，天生失明，7 歲開始學點字樂譜，風格從 hard bop 到 Afro-Cuban、post bop 都有。",
+      "src": "https://en.wikipedia.org/wiki/Tete_Montoliu"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": []
+ },
+ {
+  "key": "下田逸郎",
+  "name": "下田逸郎",
+  "tier": "D",
+  "cards": 2,
+  "mainGenre": "folk",
+  "yearRange": [
+   1973,
+   1974
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 21,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261005-shop-b",
+    "album": "飛べない鳥、飛ばない鳥",
+    "facts": [
+     {
+      "f": "下田逸郎 1948 年 5 月 12 日生於宮崎縣、2 歲隨家人搬到東京，1968 年與同期的斉藤ノブ組成シモンサイ，同年 9 月以作曲與音樂總監身分參與東由多加領軍的東京キッドブラザース創團，1970 年以シモンサイ名義的單曲出道。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%B8%8B%E7%94%B0%E9%80%B8%E9%83%8E"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "add-20261005-shop-b",
+    "album": "陽のあたる翼",
+    "facts": [
+     {
+      "f": "下田逸郎也為其他歌手創作：為淺川マキ作曲〈眠るのがこわい〉，為八代亜紀作詞作曲〈魅惑〉，為桑名正博、松原みき、山下久美子、小柳ルミ子等人作詞。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%B8%8B%E7%94%B0%E9%80%B8%E9%83%8E"
+     },
+     {
+      "f": "下田 1968 年與斉藤ノブ組成シモンサイ，同年參與東京キッドブラザース創團並擔任作曲與音樂總監，1970 年以シモンサイ名義單曲出道。",
+      "src": "https://ja.wikipedia.org/wiki/%E4%B8%8B%E7%94%B0%E9%80%B8%E9%83%8E"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": []
+ },
+ {
+  "key": "モア",
+  "name": "モア",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "folk",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261005-shop-b",
+    "album": "モア",
+    "facts": [
+     {
+      "f": "Discogs 登錄的 release 20594359：《モア》，日本 1983 年 12 吋黑膠，廠牌 Saturn Records，目錄號 ST-1001-24L，備註寫明是私製盤（Private Press = Jishuban）。",
+      "src": "https://www.discogs.com/release/20594359"
+     },
+     {
+      "f": "店主在 Instagram 介紹這張私製盤時說，它起初聽來像一張普通的 1980 年代民歌專輯，翻開內頁才發現作曲家佐藤勝寫下的一則小故事：製作緣起於『我們想做一張唱片』的單純願望，成員都是業餘者，卻用三天錄完、一週混音。",
+      "src": "https://www.instagram.com/p/DM0GKQsPD7X/"
+     },
+     {
+      "f": "據同則貼文，Saturn Records 是為這張專輯特別成立的廠牌，只發過這一張；貼文給出的年份是 1983 年，錄音於當年 3 月。",
+      "src": "https://www.instagram.com/p/DM0GKQsPD7X/"
+     },
+     {
+      "f": "被店主稱為作曲家的佐藤勝（1928 年 5 月 29 日至 1999 年 12 月 5 日）是日本電影配樂作曲家，1955 年藉由接手早坂文雄遺留的配樂成為黑澤明電影的固定作曲家約十年，在東寶 44 年間寫了逾 300 部電影配樂。",
+      "src": "https://en.wikipedia.org/wiki/Masaru_Sat%C5%8D"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": []
+ },
+ {
+  "key": "cannibale",
+  "name": "Cannibale",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2018,
+   2018
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Not Easy To Cook",
+    "year": 2018,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Not Easy To Cook",
+    "manifest": "onboarding-manifest-c36-reels-20260822.json",
+    "desc": "一支很特別的法國樂團，成員組團時全是四十多歲的大叔，但早在成團前已在音樂圈打滾二十多年，曾為主流歌手當伴奏、始終紅不起來，這次像是放手一搏。樂團根基於法國諾曼第郊區、含乳牛大約只有 300 人的小鎮，那片風景與他們的音樂氛圍完美契合。風格是毛邊十足的 garage rock，揉進熱帶律動與迷幻聲響，非常容易入耳。",
+    "sourceUrls": [
+     "https://www.instagram.com/p/DMNTh3zvQg7/",
+     "https://musicbrainz.org/release-group/42a3dd17-c896-4fd5-8aa7-7245357893ce",
+     "https://fr.wikipedia.org/wiki/Born_Bad_Records"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jonny holtzman",
+  "name": "Jonny Holtzman",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ }
+]

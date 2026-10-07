@@ -4846,7 +4846,6 @@
     "teddy wilson",
     "tenório jr",
     "terje rypdal & miroslav vitous & jack dejohnette",
-    "tete montoliu",
     "the alan skidmore quintet",
     "the bad plus",
     "the boswell sisters",
@@ -5749,7 +5748,6 @@
     "campo di marte",
     "canarios",
     "candlebox",
-    "cannibale",
     "carl perkins",
     "carroll thompson",
     "carsick cars",
@@ -10091,6 +10089,50 @@
    "state": "published",
    "note": "店內販售區（data/shop/inventory.json）缺介紹的藝人，自原 D 批抽出優先跑（2026-10-04）",
    "reviewFixes": 0
+  },
+  {
+   "batch": "ar-d-118",
+   "tier": "D",
+   "genres": [
+    "shop"
+   ],
+   "keys": [
+    "今田勝",
+    "tete montoliu",
+    "下田逸郎",
+    "モア",
+    "cannibale",
+    "jonny holtzman"
+   ],
+   "state": "published",
+   "note": "店內販售區第二波（add-20261005-shop）缺介紹的藝人；今田勝／下田逸郎／モア 2026-10-05 補進名冊（新卡尚未上架）；モア 只有店家單源、無音樂面事實，依規則不寫（skipped）",
+   "reviewFixes": 1,
+   "skipped": [
+    "モア"
+   ]
+  },
+  {
+   "batch": "ar-d-119",
+   "tier": "D",
+   "genres": [
+    "shop"
+   ],
+   "keys": [
+    "red mitchell",
+    "kai winding",
+    "梅津和時",
+    "梅津和時 & mal waldron",
+    "oriental magnetic yellow",
+    "カルメン・マキ",
+    "桃井かおり",
+    "宮本典子・鈴木勲"
+   ],
+   "state": "published",
+   "note": "店內販售區第三波（add-20261006-shop）缺介紹的藝人；8 位 2026-10-06 補進名冊（新卡尚未上架）；桃井かおり 素材無音樂面特色、未達 thin 門檻，依規則不寫（skipped）",
+   "reviewFixes": 0,
+   "skipped": [
+    "桃井かおり"
+   ]
   }
  ]
 }

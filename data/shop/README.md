@@ -43,22 +43,35 @@ const inShop = new Set(inv.items.filter(i => i.status === 'in_stock').map(i => i
 Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字），2026-10-04 已填 23 筆；快照存成 `poolKey`，同步時優先採用。
 新進貨在 Notion 填好卡池鍵即可；空白的才走自動比對。
 
-## 現況（2026-10-05 晚間重掃）
+## 現況（2026-10-07）
 
-Notion 42 筆 → **in_stock 30、pending_card 12**。10-04 之後新進 16 筆：4 筆已在卡池（《Filles de Kilimanjaro》Notion 寫成《De Kilimanjaro》、
-《Miles in the Sky》、Cannibale《Not Easy To Cook》、Sonny Rollins《The Bridge》），卡池鍵已回填 Notion；
-12 筆卡池沒有、列在腳本 `PENDING_NEW`，要走 `dip-card-create`：
-Coltrane《Bellaphon》（Bellaphon 是德國廠牌，實際盤名待店主確認）、Tete Montoliu《Tete!》、Sonny Criss《Saturday Morning》、モア《モア》、
-Jonny Holtzman《The Bronx Nightingale》、Tom Waits《Heartattack and Vine》、下田逸郎《陽のあたる翼》《飛べない鳥、飛ばない鳥》、
-今田勝《誘われてシーサイド》、Miles Davis《Directions》、Neil Young & The Bluenotes《This Note's for You》、Elmo Hope《Here's Hope!》。
-下田逸郎《陽のあたる翼》在 Notion 沒有售價。
-舊 26 筆的卡池鍵全部已填，大塚那筆 `OVERRIDES` 已拿掉（輸出逐列比對不變）。
+68 筆全部 `in_stock`、全部由 Notion「卡池鍵」對上卡池（`PENDING_NEW` 已清空）。
+三波缺卡共 28 張都已上架：add-20261004-shop 3 張、add-20261005-shop 12 張、add-20261006-shop 13 張。
+`OVERRIDES` 裡的幾筆現在都被卡池鍵蓋過，留著只是備援。
+後台「↻ 從 Notion 重新整理」要等 Worker 設好 `NOTION_TOKEN` 並部署才能用（本機部署被自動模式擋下，要店主自己跑）。
 
-## 待本機補記 PROJECT_MEMORY（雲端不碰該檔）
+## 門市版介紹（2026-10-06 店主定案；2026-10-07 修訂）
 
-> 2026-10-05｜dip-vinyl-shop＋dip-vinyl-worker｜後台「實體店庫存」加「↻ 從 Notion 重新整理」：Worker 新增 `/shop-inventory`（管理員金鑰、NOTION_TOKEN，只回公開欄位），
-> 後台比對新增／移除／改價後存 Firestore `settings/shopInventory`。驗證：Worker 路由以模擬 Notion 回應測 200／403／503 與分頁；後台 Playwright 模擬刪 1 增 2 改價 1，差異清單正確。待本機：設 NOTION_TOKEN、部署 Worker。
+- **2026-10-07 店主修訂：卡池沒有的店內專輯，建卡時卡片簡介直接用門市版**，不另外做卡牌版的研究與寫作。
+  新卡批的雲端段因此只要做身分、封面、試聽、三軸與門市版；本機段用 `batch-progress/shop-localize.mjs <批> <stamp>`
+  把門市版填進 manifest（撞到卡片禁語時在 `local-<stamp>.json` 的 `descReplace` 只改卡片那一份）。
+  卡池原本就有的卡，卡牌版簡介照舊、不被門市版取代。
+- 門市版本身仍然**給實體店用**（後台「🏪 實體店庫存」分頁、日後印出來給客人看）；店主在後台改過的版本只影響門市，不會回寫卡片。
+- 寫作規則：`SHOP_DESC_RULES.md`（給完全不懂音樂的人看；禁樂器解說、禁「也就是」式注解、禁「據…」轉述）。
+- 預設稿：`descs.json`（`node scripts/build-shop-descs.mjs <草稿.json>` 合併，會擋禁語與字數）。
+  每筆 `key` = 卡池鍵正規化；待上架的另有 `ids`（Notion 頁面 id）讓後台對得上。
+- 店主在後台按「編輯」改過的版本存 Firestore `settings/shopDescs.byKey[key]`，優先於預設稿；
+  按「還原預設稿」或存成和預設稿一樣的內容就會刪掉改過的版本。
+- 新進庫存：照規則寫門市版、跑合併腳本，跟卡池上架是兩條線。
 
-> 2026-10-05｜dip-vinyl-shop｜店內庫存重掃：Notion 26 → 42 筆（新進 16、無售出），in_stock 26 → 30、pending_card 12。
-> 4 筆已在卡池者回填 Notion 卡池鍵；12 筆列入 `PENDING_NEW` 待 `dip-card-create`；`OVERRIDES` 拿掉大塚一筆（已有卡池鍵）。
-> 主要檔案：`data/shop/{notion-snapshot.json,inventory.json,README.md}`、`scripts/sync-shop-inventory.mjs`。驗證：同步乾跑 0 error；拿掉 override 前後 inventory 的 cardKey／status 逐列相同。
+## 第二、三波（2026-10-05／06 進貨，2026-10-07 本機上架完成）
+- 第二波 12 張（add-20261005-shop）、第三波 13 張（add-20261006-shop）已上架，published gate 0 error；Notion 25 列卡池鍵已填。
+- 宮沢昭《Bull Trout》＝池中《いわな》（卡池鍵已在 Notion）。卡池列沒有別名欄，「queryAlias 補 Bull Trout」沒有地方可寫，未做。
+- 門市版介紹：在售 68 張全數有預設稿（`descs.json`）。
+- 藝人介紹 ar-d-119 上架 7 位（桃井かおり 素材不足略過），分片 3087 位。
+- 以上各項已補記 `PROJECT_MEMORY.md`（2026-10-07 那一筆）。
+
+## 曲風分區（2026-10-07）
+- 曲風以 Notion「曲風」多選欄為準（Jazz、Soul、R&B、Hip-Hop、Rock、Folk、City Pop、Pop、Electronic、Soundtrack；Hip-Hop／R&B／Pop 為 2026-10-07 新增）。
+- 快照與 inventory.json 帶 `genres`；Worker /shop-inventory 回傳 `genres`（需本機重新部署 Worker 才生效）。
+- 後台「實體店庫存」依第一個曲風分區，每張卡下方顯示曲風標籤；Firestore 舊存檔沒有曲風時先用 repo 快照補，按「從 Notion 重新整理 → 套用並存檔」後改用 Notion 的值。

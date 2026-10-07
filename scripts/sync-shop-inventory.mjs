@@ -6,7 +6,7 @@
 //
 // 更新流程：
 //   1. 由 Claude 以 Notion MCP 查表，覆寫 data/shop/notion-snapshot.json
-//      ——只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵→poolKey）；成本、利潤、抽成、群組不進 repo。
+//      ——只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵→poolKey、曲風→genres）；成本、利潤、抽成、群組不進 repo。
 //   2. node scripts/sync-shop-inventory.mjs           （乾跑，只報告）
 //      node scripts/sync-shop-inventory.mjs --write   （寫入 inventory.json）
 //
@@ -40,26 +40,22 @@ const OVERRIDES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': ['Kenny Burrell & John Coltrane', 'Kenny Burrell & John Coltrane'],
   // Notion 用新字體「浜田」，卡池為「濱田」
   '3ee0ad0255ff81668a74d3448af000fe': ['濱田金吾', 'Mugshot'],
+  // Notion 寫綽號 The Bronx Nightingale；店主 2026-10-05 確認實物是 1982 自製盤《Let's Do It》
+  '3f00ad0255ff80918ab9cdb1b140b38a': ['Jonny Holtzman', "Let's Do It"],
+  // 今田勝 1982《Blue Marine》（日文副題《誘われてシーサイド》）；店主 2026-10-06 確認店內實物是專輯，Notion 品名已改正
+  '3f00ad0255ff801a82e6d36027faadfa': ['今田勝', 'Blue Marine'],
+  // 宮沢昭《Bull Trout》＝池中《いわな》（同目錄號 SMJX-10068，add-20261006-shop 策展裁定）
+  '3f10ad0255ff804ba972c1e0fb194f4f': ['宮沢昭', 'いわな'],
+  // 店主 2026-10-05 確認：Notion「Bellaphon」是德國 Bellaphon 版《More Lasting Than Bronze》
+  '3f00ad0255ff801aba1cf344d7dded98': ['John Coltrane', 'More Lasting Than Bronze'],
+  // 封面印 The New George Otsuka Trio；卡池照池中先例掛日文團名（add-20261004-shop 第 8592 條）
+  '3ee0ad0255ff8175b3c8f5f06e26186c': ['ジョージ大塚トリオ', 'You Are My Sunshine'],
 };
 const NOTES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': '1976 Prestige 雙 LP 再版',
 };
 // 卡池尚無、走 dip-card-create 新建中的列。上架後移到 OVERRIDES 或讓自動比對接手。
-const PENDING_NEW = new Set([
-  // 2026-10-05 進貨，卡池尚無
-  '3f00ad0255ff801aba1cf344d7dded98', // John Coltrane《Bellaphon》（Bellaphon 是德國廠牌名，實際盤名待確認）
-  '3f00ad0255ff805dab62ce2cf1c59625', // Tete Montoliu《Tete!》
-  '3f00ad0255ff801d80efd2749b256f8f', // Sonny Criss《Saturday Morning》
-  '3f00ad0255ff80a4925cd52cdcd52c5a', // モア《モア》
-  '3f00ad0255ff80918ab9cdb1b140b38a', // Jonny Holtzman《The Bronx Nightingale》
-  '3f00ad0255ff80aeb3cfc690a280157b', // Tom Waits《Heartattack and Vine》
-  '3f00ad0255ff8077ad7ed244edf6792b', // 下田逸郎《陽のあたる翼》
-  '3f00ad0255ff801a82e6d36027faadfa', // 今田勝《誘われてシーサイド》
-  '3f00ad0255ff8003b6e1c2427c01a236', // Miles Davis《Directions》
-  '3f00ad0255ff806182f4c53b96fdbaf1', // 下田逸郎《飛べない鳥、飛ばない鳥》
-  '3f00ad0255ff80b7bac6d97d94cf1922', // Neil Young & The Bluenotes《This Note's for You》
-  '3ef0ad0255ff803f8228ee791b32cb17', // Elmo Hope《Here's Hope!》
-]);
+const PENDING_NEW = new Set([]);
 
 const pool = JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8'));
 const byKey = new Map(pool.map(r => [key(r[0], r[1]), r]));
@@ -87,7 +83,7 @@ for (const row of snap.rows) {
   if (pinned) {
     card = byKey.get(key(...pinned));
     how = row.poolKey ? 'notion' : 'override';
-    if (!card) errors.push(`卡池鍵指向卡池不存在的卡：${row.id} → ${pinned.join('｜')}`);
+    if (!card && !PENDING_NEW.has(row.id)) errors.push(`卡池鍵指向卡池不存在的卡：${row.id} → ${pinned.join('｜')}`);
   } else {
     const hits = autoMatch(row);
     if (hits.length === 1) { card = hits[0]; how = 'auto'; }
@@ -108,6 +104,7 @@ for (const row of snap.rows) {
     pressingYear: row.year ?? null,
     condition: row.condition ?? null,
     priceNT: row.priceNT ?? null,
+    genres: Array.isArray(row.genres) ? row.genres : [],
     note: NOTES[row.id] || null,
     firstSeen: old?.firstSeen || today,
   });
