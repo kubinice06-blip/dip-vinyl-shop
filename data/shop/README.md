@@ -75,3 +75,22 @@ Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字
 - 曲風以 Notion「曲風」多選欄為準（Jazz、Soul、R&B、Hip-Hop、Rock、Folk、City Pop、Pop、Electronic、Soundtrack；Hip-Hop／R&B／Pop 為 2026-10-07 新增）。
 - 快照與 inventory.json 帶 `genres`；Worker /shop-inventory 回傳 `genres`（需本機重新部署 Worker 才生效）。
 - 後台「實體店庫存」依第一個曲風分區，每張卡下方顯示曲風標籤；Firestore 舊存檔沒有曲風時先用 repo 快照補，按「從 Notion 重新整理 → 套用並存檔」後改用 Notion 的值。
+
+## 店內挖寶（選片遊戲，2026-10-07）
+
+入口 `shop.html`（首頁 hub「店內挖寶」），四張卡連到 `/?shop=1#quiz|genre|artist|random`。
+`index.html` 看到 `?shop=1` 就把抽卡範圍換成店內在售（`loadShopPool()`：Firestore `settings/shopInventory` 的 `in_stock`，讀不到退本目錄 `inventory.json`），四個遊戲的規則不變。
+
+- **直接來一張／猜你喜歡**：從店內卡抽；猜你喜歡的口味畫像仍查完整卡池（錨點藝人多半不在店裡），類型選單只列店裡有貨的類型、附張數。
+- **類型挑片**：只選大類（店主：細分不用），大類只列有貨的、附張數；某類抽光自動重來。
+- **心情選歌**：題目與心情判定照舊；卡從店內挑「接得住這個心情」的，對照表是 `mood-map.json`（cardKey → 心情）。
+  結果頁放「今天的你：…」一句＋門市版專輯簡介（心情段落是逐張人工寫的，店內卡沒有）。
+- 王牌（殿堂／流亡／異端）在店內模式併進一般抽卡，結果頁照 tier 顯示王牌樣式。
+- 結果頁多一行「店內在售・售價・品相・壓片年」；不做「我要這張」按鈕（店主 2026-10-07）。
+
+**新進貨要做的**：上架（`dip-card-create`）→ 後台從 Notion 重新整理 → **在 `mood-map.json` 補這張的心情**。
+`node scripts/sync-shop-inventory.mjs` 會列出「⚠ 心情未配」的卡；沒補也能玩（前端用三軸＋曲風粗估成 balance／drift 等），只是心情選歌比較不準。
+
+> 待本機補記 PROJECT_MEMORY：2026-10-07｜dip-vinyl-shop｜店內挖寶：`shop.html`＋`index.html` 的 `?shop=1` 模式（四個選片遊戲只抽店內在售）、
+> `dip-genre-tree.js` 加 `topOnly`／`backHref`（v=2）、`data/shop/mood-map.json` 68 張配心情、同步腳本提醒心情未配。
+> 驗證：Playwright（正式網域攔截本機檔）四個遊戲店內模式各抽多次全在店內清單、售價行正確、類型抽光自動重來；一般模式四個遊戲回歸正常。
