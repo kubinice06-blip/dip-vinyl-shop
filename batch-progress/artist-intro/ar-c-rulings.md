@@ -430,3 +430,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分與國籍：板倉克行 生於日治時期的台灣（Wikidata 誤記 China）；森山浩二 + 山本剛トリオ 的《Smile》是歌手森山浩二專輯，非森山威男《スマイル》；王若琳 是台灣歌手；白虹 寫「中國歌手」，1934 奪冠只寫「據維基」。宮本直介、寺川秀保、小栗均 國籍以東京錄音與日本廠牌推定（可逆）。
 - QA 簡體偵測會誤判日本新字體（国、与），研究稿與正文改寫為台灣字形。
 - 待本機（上線簡介）：日野元彦クアルテット《TOKO》渡辺香津美「二十二歲」應為 21 歲（MusicBrainz 單源，待核）；白木秀雄《Sakura Sakura》「1970 年才有日本盤《Japan Meets Jazz》」與 jazz.com 1968 不符；秋吉敏子カルテット《Meditation》「原盤剪短、1976 再發完整版」無出處；福村博《Morning Flight》卡池 1973 與 LITA 1971 不一；秋吉敏子《Top Of The Gate》發行年（1968／1969）。
+
+## ar-d-017（2026-10-07）
+
+- 40 位全上（28 full、12 thin）。前 10 位日本爵士、後 30 位轉入 soul／R&B／流行。審稿修 1 處：Arthur Conley 刪 Otis Redding 的死因（墜機）。
+- 搜尋超限放行：金井英人クインテット 10、鈴木勲セクステット 10（多出者文不對題、無獨有事實）；高木元輝＝加古隆カルテット 15、高柳昌行 / 阿部薫 10（雙人卡，兩人各自在上限內）。
+- 新近事實：鈴木良雄 2026 年 9 月過世（共同通信訃報＋日文維基），正文用過去式、不寫死因。
+- Arthur Conley 279 字：改名 Lee Roberts 與移居荷蘭是故事主體；同志身分歸給 Ed Ward 的說法、口吻克制，接受。
+- 在世者榜單獎項各留一處核心成績（Barbara Mason 流行榜第 5、Barbara Lewis R&B 冠軍、Barry Manilow 詞曲作者名人堂、BeBe & CeCe Winans 卡池專輯葛萊美、Bassekou Kouyaté BBC 年度專輯、?te 金曲最佳新人）。
+- 同名作廢：A Taste of Honey（Shelagh Delaney 劇本）、Alice Clark（英國歷史學家）的維基預抓。
+- 待本機（上線簡介）：100 Proof「HDH 1969 年離開 Motown」（1968 說待核）；Al Wilson《Show and Tell》「突破兩百萬張」來源只寫破百萬；Bassekou Kouyaté《Segu Blue》「2006 年在德國 Out Here 錄下」無出處（實為 Bamako 錄音、2007 發行）；Barbara Mason「公認是費城之聲前史起點」無出處；Baby Washington「夜總會歌手底子」無出處，〈Doodlin'〉待核；Archie Bell「Rolling Stone 五百大第 265 名」僅維基單源。
