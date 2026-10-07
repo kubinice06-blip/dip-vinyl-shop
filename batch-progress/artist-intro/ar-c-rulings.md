@@ -320,3 +320,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Chet Baker 四個掛名、Charlie Haden 兩個、Clifford Jordan 兩個分寫各自編制；生平來源共用，搜尋次數記在其中一個掛名。Dave Holland 維基回消歧頁視同失敗請求不計。
 - 待本機（上線簡介）：Bunk Johnson「1931 年掉了小號與門牙」（來源為 1930 年 11 月）；Bunny Berigan「錄音幾乎全部集中在這六年」不實；Cab Calloway「第一張賣破百萬的爵士唱片」（來源只支持賣破百萬）；Carmell Jones「十年後是 Jarrett 三重奏的一半」年距不符；Cassandra Wilson《New Moon Daughter》應為 1995 年；Charles Brackeen「1940 年生於 Eufaula」生年與出生地有爭議；Chester Thompson《Powerhouse》「四人編制加一支長號」（長號含在四人內）；Chet Baker & Art Pepper《Playboys》「六重奏另加次中音與三人節奏組」（六人已含在內）；Chet Baker Quartet《Singin' in the Midnight》錄音與發行年待核對；Chick Webb《Spinnin' the Webb》「得年三十四」生年有爭議，宜只寫過世年份。
 - **十批接力完成**（ar-c-025～031、ar-d-001～003）。
+
+## 再十批接力（ar-d-004～013，2026-10-07 起）
+
+## ar-d-004（2026-10-07）
+
+- 40 位全上（34 full、6 thin：Creative Arts Ensemble、Curtis Counce、Danalogue x Alabaster dePlume、Derek Smith Trio、Doug Hammond & David Durrah、Eddie "Lockjaw" Davis）。審稿修 4 處：Doug Hammond & David Durrah 主詞改為「鼓手 Hammond 與搭檔 Durrah」（原句讀來像兩人都是鼓手）；Eddie Harris 刪 R&B 專輯榜名次（已有單曲大賣與《Swiss Movement》暢銷，一處足夠）；Dupree Bolton 的「毒癮相關罪行」改「大半時間在獄中」、Frank Butler 刪「海洛因成癮」（私人狀況與刑案避免，入獄本身是 Bolton 謎樣形象核心，留事件層級）。
+- 搜尋超限放行：Don Byas 9 次（多出的是 MusicBrainz 查專輯身分，API 查詢依慣例不計）；Duke Ellington & John Coltrane 9 次（佐證查詢無獨有事實，比照齊豫）。
+- Company：《Company 1》四位演奏者只見英文維基一源，但與上線簡介一致、屬低風險，接受寫入。Dexter Gordon Quartet《The Shadow of Your Smile》為 1971 年斯德哥爾摩錄音（jazzdisco 單源，與上線簡介不衝突），卡池 1985 為發行年。
+- 待本機（上線簡介）：Curtis Amy & Dupree Bolton《Katanga!》「一生只留下兩張唱片」宜改「主要唱片只有兩張」；Dakota Staton「出道即大賣」時序不符（1954 已發單曲）；David Mancuso 漏共同製作人 Colleen "Cosmo" Murphy；Dodo Marmarosa《Dodo's Back!》芝加哥拋錨／Feather 引語無出處、「幾近銷聲匿跡」不實；Debashish & Brozman「第一份滑棒吉他教程」與榜單單源；Dick Griffin Konnex CD 年份（1994／1995）；Doris Day《Day by Day》兩處說法無來源。
