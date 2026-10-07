@@ -338,3 +338,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Esbjörn Svensson Trio 的 DownBeat 封面宣稱：具名會撞「樂評媒體名不進正文」、不具名又含糊，整條不寫。
 - Fumio Watanabe Quintet：英文維基預抓為同名演員渡辺文雄，作廢；鼓手渡辺文男身分以日文維基與班底對上，生卒年單源不寫。
 - 待本機（上線簡介）：Eliades Ochoa 接掌 Cuarteto Patria 年份（1978→1982）與葛萊美類別；Elton Dean Quartet Ogun 編號（OG 410／OG400）；Fats Sadi 發行年（1954／1955）；Fred Jackson「一生只留下這一張領銜錄音」不實；Frank Loesser 東尼獎項數待核；George Coleman《Amsterdam After Dark》為紐約錄音，標題曲與「最廣被引述」兩句無出處；Getatchew Mekuria「五〇年代初」時間點無出處；George Shearing「原始三軌母帶」待核。
+
+## ar-d-006（2026-10-07）
+
+- 39 位上架（35 full、4 thin：Groove Collective、H-Town、Hideto Sasaki, Toshiyuki Sekine Quartet + 1、J. R. Monterose），1 位不寫：Hitoshi Okano（聲音與地位兩格查無，僅 Discogs 一條身分資料，過不了 thin 門檻）。審稿修 6 處：Tijuana Brass 刪〈The Lonely Bull〉前十與「賣得比 The Beatles 多」（在世者榜單銷量只留年度榜冠軍一處）；Howard Riley 刪單一部落格的「英國自由爵士地標」；Houston Person 去機構名並修語法；Indra Lesmana 刪官方自述來源的「印尼爵士象徵人物」。
+- 搜尋超限放行：Hideto Sasaki 9 次（BBE 專訪無獨有事實，比照齊豫）；Ivan Lins 9 次（開專輯條目補年度專輯第二源）；Jackie McLean & Dexter Gordon 9 次（雙人卡，開《The Meeting》條目確認同場）。
+- 新近事實：Hermeto Pascoal 2025 年過世、Howard Riley 2025 年過世（維基＋Jazz Journal 訃聞）、Jack DeJohnette 2025 年過世與 Ivan Lins 2025 拉丁錄音學院終身成就獎（巴西兩家媒體轉述新聞稿，獨立性有限但屬低風險榮譽），Gunter Hampel 2026 年 5 月過世（維基＋Free Jazz Blog）。
+- Jackie McLean & Dexter Gordon《Montmartre Summit 1973》查無專輯條目，推定為 1973 年 7 月哥本哈根 Montmartre 同場錄音的後來版本，正文只寫同台現場。Howard Riley 的維基預抓為足球員，作廢。
+- Hailu Mergia & Dahlak Band 278 字（人物故事為主體），接受。
+- 待本機（上線簡介）：Glenn Miller〈In the Mood〉國家錄音登記年（2002／2004）；Harold Arlen「1956 年 LP 才第一次成為唱片」不實（1939 已有 Decca 歌聲專輯）；Hailu Mergia 點名的〈Bati Bati〉〈Yene Nesh Wey〉查無；Hiromi《Another Mind》「年度海外爵士專輯」與頒獎年待核。

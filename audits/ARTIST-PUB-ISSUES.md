@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 471 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 476 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -470,7 +470,12 @@
 | ar-d-005 | George Coleman | Amsterdam After Dark | 他以領袖身分最廣被引述的錄音多半從這張數起 | 查無任何來源支持這個說法（維基只記 AllMusic 與 Rolling Stone Jazz Record Guide 各給四星）；屬無出處的評價句，建議刪除。 | https://en.wikipedia.org/wiki/Amsterdam_After_Dark |
 | ar-d-005 | Getatchew Mekuria | Éthiopiques 14: Negus of Ethiopian Sax | 五〇年代初在未接觸西方自由爵士的情況下自行長出近似的吹法 | 來源只說他獨立於西方自由爵士之外發展、不熟悉 Ornette Coleman 與 Albert Ayler，沒有「五〇年代初」這個時間點；他 1955 年才轉進 Haile Selassie I 劇院樂團，shellela 薩克斯風獨奏的成形時間未見來源。建議刪去「五〇年代初」。 | https://en.wikipedia.org/wiki/Getatchew_Mekurya |
 | ar-d-006 | Glenn Miller | The Complete Glenn Miller 1938-1942 | 〈In the Mood〉2002 年入選美國國家錄音資料登記 | 維基 In the Mood 條目寫 1983 年入選葛萊美名人堂、2004 年入選國家錄音資料登記；搜尋結果摘要也寫 2004。本層只讀到維基一個來源（loc.gov 清單 403），建議店主在 loc.gov 核對後再改。 | https://en.wikipedia.org/wiki/In_the_Mood |
+| ar-d-006 | Hailu Mergia & Dahlak Band | Wede Harer Guzo | 〈Bati Bati〉與〈Yene Nesh Wey〉是常被引用的段落 | 本層讀到的四個來源（維基、okayafrica、pan-african-music 兩篇）只點名〈Sintayehu〉與〈Anchin Kfu Ayinkash〉（後者維基稱串流破千萬），沒有出現〈Bati Bati〉與〈Yene Nesh Wey〉；曲名未能核實，建議店主對照 Discogs 曲目表後再決定保留與否。 | https://www.okayafrica.com/hailu-mergia-wede-harer-guzo-reissue/ |
+| ar-d-006 | Harold Arlen | The Wizard of Oz | 1939 年的電影配樂，等到 1956 年 LP 問世才第一次成為唱片 | 維基原聲帶條目寫 1956 年的 MGM Records LP 是電影原聲帶的首度發行，但 1956 年之前已有 1939 年 Decca 發行的專輯（Judy Garland 與 Ken Darby Singers 專門錄製，只有歌聲、不是電影音軌）。上線簡介同一段又寫 1939 年 Decca 版〈Over the Rainbow〉，建議把『第一次成為唱片』改成『電影原音的第一次發行』。 | https://en.wikipedia.org/wiki/The_Wizard_of_Oz_(soundtrack) |
 | ar-d-006 | Hiromi | Another Mind | 翌年拿下日本金唱片大獎的年度海外爵士專輯 | imidas 與 renote 兩源只寫日本金唱片大獎的『Jazz Album of the Year』（年間ジャズアルバム大賞），沒有『海外』的限定語；頒獎年份兩源也不一致（2003 或 2004）。『海外』二字與『翌年』建議店主確認或刪去。 | https://renote.net/articles/329258 |
+| ar-d-007 | Jimmie Lunceford | Lunceford Special | Lunceford 是師範出身的樂團訓練者 | Lunceford 讀的是納許維爾的 Fisk University（Britannica 稱取得學位，另在紐約市立學院念過研究所課程），並非師範學院出身；他當過孟菲斯高中的音樂與體育老師，『師範出身』容易讀成讀過師範學校，建議改成『曾任高中老師、Fisk 大學出身』 | https://www.britannica.com/print/article/351395 |
+| ar-d-007 | Jimmy Raney | A | 1958 年由 Prestige 以單字母《A》為題發行 | 英文維基《A》專輯頁寫 1957 年由 Prestige 發行（PR 7089）；卡池年份欄為 1958，與維基不一致，單源，待本機以 Discogs 或 Prestige 目錄核對 | https://en.wikipedia.org/wiki/A_(Jimmy_Raney_album) |
+| ar-d-007 | Joe McPhee | Nation Time | 身後是風琴、電吉他與兩位打擊樂手 | 維基專輯頁列的陣容核心是 Mike Kull（鋼琴與電鋼琴）、Tyrone Crabb（貝斯與電貝斯）與兩位打擊樂手，風琴（Herbie Lehman）與吉他（Dave Jones）、中音薩克斯風（Otis Greene）只在部分曲目出現；簡介只列風琴、電吉他與打擊樂，漏了鋼琴與貝斯，可能讓讀者以為沒有節奏組。建議改寫或補上。 | https://en.wikipedia.org/wiki/Nation_Time |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
