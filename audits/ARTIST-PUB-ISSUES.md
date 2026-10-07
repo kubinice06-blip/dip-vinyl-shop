@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 407 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 418 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -396,6 +396,17 @@
 | ar-c-024 | Derrick May | Innovator | 這套雙 CD 結集…二十六軌收齊 Transmat 時期的〈Nude Photo〉〈It Is What It Is〉〈Kaotic Harmony〉 | RA 傳記寫 1995 年由 Sony Japan 編成『單碟』的《Innovator》；MusicBrainz 記 Innovator 的 release group 首發日 1996 年 4 月 21 日、共 8 個 release。碟數與軌數依版本而異，建議以卡池實際對應的 release 在 MusicBrainz 核對『雙 CD、26 軌』是否屬同一版本。 | https://ra.co/dj/derrickmay/biography |
 | ar-c-024 | Green Velvet | Constant Chaos | Curtis Alan Jones 1968 年生於芝加哥 | 生年各來源不一致：維基 1968-04-26、wikidata 1967-04-26、List 專訪摘要 1968；上線簡介的 1968 年未必錯，但建議主線核對一個權威來源（如 Billboard 或官方傳記）後再決定是否保留生年。 | https://www.wikidata.org/wiki/Q1544666 |
 | ar-c-024 | Harold Budd & Brian Eno | Ambient 2: The Plateaux of Mirror | 1980 年於安大略省咸美頓錄成 | 英文維基 Ambient 2 條目寫 1979 年於 Hamilton 的 Grant Avenue Studio 錄音、1980 年 4 月發行；錄音年只有維基單一來源，需主線找第二源（如專輯內頁或 Eno 訪談）再決定是否改為 1979 年。 | https://en.wikipedia.org/wiki/Ambient_2:_The_Plateaux_of_Mirror |
+| ar-c-025 | Kerri Chandler | Atmosphere E.P. | 他長年駐場的 Newark 的 Club Zanzibar | 駐場說法只見維基單源；RBMA 傳記寫他成長於 Zanzibar 與其駐場 DJ Tony Humphries 的年代，Zanzibar 的駐場 DJ 是 Humphries。建議改成「成長於 Newark 的 Club Zanzibar 那個年代」，或補第二源證實他曾駐場。 | https://www.redbullmusicacademy.com/lectures/kerri-chandler-a-basement-a-red-light-and-a-feeling |
+| ar-c-025 | Kevin Drumm | Imperial Distortion | 改用 1995 到 2008 年間的存檔錄音 | Quietus 2025 年訪談以編註寫「Imperial Distortion 的曲子錄於 1997–2008 年」，與簡介的 1995 年起點不同；同篇也未提到簡介中「原本要做 fuzz 效果器實驗」與「Dominick Fernow 說服他保留原名」，訪談只說他原在替 Hospital Productions 做別的東西、進行不順才回頭挑舊錄音。這兩點未能驗證，建議改成可驗證的版本。 | https://thequietus.com/?p=257497 |
+| ar-c-025 | Loreena McKennitt | The Visit | 安大略出身的她自此打開國際市場 | 她生於曼尼托巴省 Morden、在 Winnipeg 求學，1981 年才搬到安大略省 Stratford；不是安大略出身，可改寫成「現居安大略 Stratford 的她」或刪去出身。 | https://thecanadianencyclopedia.ca/en/article/loreena-mckennitt |
+| ar-c-025 | Michael Stearns | Encounter | 這是他第一張主題明確指向太空的作品：先前的錄音聲響同樣空曠，卻不以太空為題 | 他 1981 年的《Planetary Unfolding》被 Echoes 與維基稱為 ambient／太空氛圍電子樂的經典；『第一張主題指向太空』屬『第一』類宣稱，未找到來源支持，可能有反例，建議改寫或刪去。（未證實為錯，僅提請複核。） | https://echoes.org/2022/04/07/echoes-podcast-michael-stearns/ |
+| ar-c-026 | The Irresistible Force | Global Chillage | 1987 年起另用 The Irresistible Force 發表錄音 | 英文維基 Mixmaster Morris 條目寫他 1987 年起與 Des de Moor 合作，首支單曲〈I Want To〉1988 年才發行；Boiler Room 專文說他 1988 年採用這個名義。「1987 年起發表錄音」把合作起點寫成發行起點，建議改「1987 年起」為「1988 年起」或改寫成「1987 年起以此名義合作」。 | https://en.wikipedia.org/wiki/Mixmaster_Morris |
+| ar-c-026 | The Irresistible Force | Flying High | 這張是他從 DJ 轉向製作的起點 | 維基記他 1988 年已發行首支單曲〈I Want To〉，並在 1985 年起做混音（Coldcut〈Autumn Leaves〉等），《Flying High》是首張專輯而不是他開始製作的起點；建議改成「首張專輯」。 | https://en.wikipedia.org/wiki/Mixmaster_Morris |
+| ar-c-026 | Wagon Christ | Throbbing Pouch | 1993 年應 Rising High 之邀以 Wagon Christ 名義交出一張環境音樂唱片 | 英文維基 Throbbing Pouch 條目寫首張《Phat Lab Nightmare》為 1994 年（Rising High），Luke Vibert 條目的作品表同為 1994，正文卻寫 1993；來源互相不一致，建議把年份改成『1990 年代前期』或查 Discogs 後再定。 | https://en.wikipedia.org/wiki/Throbbing_Pouch |
+| ar-c-026 | 日向敏文 | Sarah's Crime | 1978 年再轉到明尼蘇達大學雙城分校，主修古典鋼琴四年 | 日向敏文官方年表與英文維基寫 1978 年 8 月轉入 University of Minnesota Duluth（杜魯斯校區），只有日文維基寫雙城分校；校區有爭議，建議改成「明尼蘇達大學」 | https://toshifumihinata.com/jp/time-line/ |
+| ar-c-026 | 阿爆 | vavayan. 女人 | 2003 年以阿爆＆Brandy 拿下金曲最佳重唱組合 | 中文維基〈第14屆金曲獎〉（2003 年）最佳重唱組合得獎者是 S.H.E，入圍為動力火車與 B.A.D，頁面沒有阿爆&Brandy；阿爆條目雖寫此獎，屆次或獎項可能有誤。建議在查到原始得獎紀錄前改寫成「2003 年以阿爆&Brandy 出道」。 | https://zh.wikipedia.org/wiki/%E7%AC%AC14%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E |
+| ar-c-026 | 阿爆 | vavayan. 女人 | 2017 年第 28 屆金曲獎拿下最佳原住民語專輯獎與最佳專輯製作人獎 | 最佳原住民語專輯獎是阿爆得獎；最佳專輯製作人獎的得獎者是製作人荒井十一（入圍作品《Vavayan 女人》），不是阿爆本人。句子主詞是阿爆，易讀成她得製作人獎，建議寫明「荒井十一以該專輯獲最佳專輯製作人獎」。 | https://zh.wikipedia.org/wiki/%E7%AC%AC28%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E |
+| ar-c-027 | Earl King | Sexual Telepathy | 〈Come On〉與〈Big Chief〉的作者自 1960 年代中期起幾乎只在幕後寫歌製作 | 英文維基載 King 1972 年錄製專輯《Street Parade》（1981 年才由 Charly 發行）、1977 年 Sonet 發行《That Good Old New New Orleans Rock 'n Roll》，並在 1976 年爵士節專輯露面，1960 年代中期後並非「幾乎只在幕後」；《Glazed》簡介「長年沒有唱片合約」同理，建議改成「1960 年代起主要在幕後，間有零星錄音」。 | https://en.wikipedia.org/wiki/Earl_King |
 | ar-c-fix1 | Buffy Sainte-Marie | It's My Way! | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ |
 | ar-c-fix1 | Buffy Sainte-Marie | Illuminations | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations |
 | ar-c-fix1 | 何欣穗 | 她的。發光搖擺 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 |
