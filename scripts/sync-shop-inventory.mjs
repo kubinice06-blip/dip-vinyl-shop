@@ -55,7 +55,31 @@ const NOTES = {
   '3ee0ad0255ff81d2bf41fdd906461b64': '1976 Prestige 雙 LP 再版',
 };
 // 卡池尚無、走 dip-card-create 新建中的列。上架後移到 OVERRIDES 或讓自動比對接手。
-const PENDING_NEW = new Set([]);
+const PENDING_NEW = new Set([
+  // 2026-10-08 進貨，卡池尚無（走 dip-card-create）
+  '3f30ad0255ff80ac8b80cc8ad54df6cc', // Joe Sample / Ray Brown / Shelly Manne《The Three》
+  '3f30ad0255ff800b850adf07be4ce9b7', // Santana《Silver Dreams Golden Reality》
+  '3f30ad0255ff809da307c5c2629f4b90', // Yufu《To My Pan Pal》
+  '3f30ad0255ff800c9fb8ca4bc56ede28', // 破地獄《芒神》
+  '3f30ad0255ff806bacb1d559ca3d707b', // 坂本龍一《Playing The Piano 12122020》
+  '3f30ad0255ff8097bfeffc24858f6187', // りりィ《Love Letter》
+  '3f30ad0255ff80ad82f2dc21ab9aeb4e', // 渡辺真知子《Fog Lamp》
+  '3f30ad0255ff80789940f55bc3a0d13b', // キャンディーズ《その気にさせないで》
+  '3f30ad0255ff802fa892d580db9d2073', // Phoebe Snow《Phoebe Snow》
+  '3f30ad0255ff807b9d96f5f1f98f0202', // 小坂明子《あなた》
+  '3f30ad0255ff8074b6efdc0dedfc072b', // 真芽正恵《真芽正恵と小さな詩》
+  '3f30ad0255ff80f087d5d2cb9b9bfcc4', // 吉田拓郎《元気です》
+  '3f30ad0255ff8004bf51dfb45e22944c', // 高田真樹子《First》
+  '3f30ad0255ff802e925fc4d31d8b6539', // かぐや姫《Live》
+  '3f30ad0255ff8037abbdc7f8218b44fa', // 太田裕美《思い出を置く 君を置く》
+  '3f30ad0255ff80039521dc56ffac1c8d', // 桃井かおり《Four》
+  '3f30ad0255ff8032a06dc6dcec72d0f0', // ゴールデン・ハーフ《ゴールデン・ハーフでーす》
+  '3f30ad0255ff801384dcfa684e1fb033', // 伊武雅刀《Mon-jah》
+  '3f30ad0255ff80c3be66f4b8556b81b0', // 高橋真梨子《Triad》
+  '3f30ad0255ff8057af4fdc81d4f60a46', // Culture Club《It's a Miracle / Miss Me Blind》（單曲）
+  '3f30ad0255ff803aaf93fb4c4814d49e', // Marlene《It's Magic》
+  '3f30ad0255ff800a8aa6cbeafa8de620', // 小柳ルミ子《愛に甦える》
+]);
 
 const pool = JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8'));
 const byKey = new Map(pool.map(r => [key(r[0], r[1]), r]));
