@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 687 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 689 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -687,6 +687,8 @@
 | ar-d-037 | Igra Staklenih Perli | Igra Staklenih Perli | 〈Pečurka〉是寫給 Can 的致敬曲 | 事實庫稱此說法取自英文維基，本層讀到的 Danas 與 Psychedelic Baby 只提到團員愛聽 Can（以及 Tangerine Dream、Pink Floyd、Popol Vuh），沒有證實〈Pečurka〉是致敬曲。待核。 | https://psychedelicbabymag.com/?p=2885 |
 | ar-d-037 | Il Paese dei Balocchi | Il Paese dei Balocchi | 吉他手回憶這張唱片壓了 1800 張，用來試市場 | italianprog.com 原文是『Sandro Laudadio si ricorda che il nostro primo LP è stato stampato in 1800 copie per saggiare il mercato』，說這句話的是鼓手 Laudadio，不是吉他手 Fabiani；『吉他手回憶』應改為『鼓手回憶』。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
 | ar-d-037 | Il Paese dei Balocchi | Il Paese dei Balocchi | 有幾段人聲，是借羅馬一座教堂的自然殘響錄下來的 | italianprog.com 證實部分合唱在羅馬 S. Euclide 教堂內利用殘響錄製（含〈Vanità dell'intuizione fantastica〉的人聲），與上線簡介一致；另補充教堂下方 Ortophonic 錄音室的管風琴用在末曲。簡介無誤，僅供補充。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
+| ar-d-037 | Indiscreet Music | Dubious Collaberations | 年份落在 1971 到 1976——那是素材錄下的年份，碟本身是 1979 年的 | LTM 寫素材是 1971 至 1975 年的家庭即興；賣家頁曲目表則標到 1976 年（Manchester、Chester）。兩源對上限不一致，建議簡介改寫成『落在 1971 到 1976 年』時標明依據曲目表，或略去上限。簡介寫 A 面十段、B 面十四段與賣家頁一致（A1–A10、B1–B14）。 | https://ltmrecordings.com/auteur_labels_object_music_ltmcd2527.html |
+| ar-d-038 | Jambinai | Différance | 2012 年在 GMC Records 發行首作《차연》 | 2010 年已有自名 EP（Korea Herald 列為 2010 年 8 月），《차연》是首張錄音室專輯，「首作」宜改成「首張專輯」；GMC Records 這個發行廠牌本層沒查到可靠來源（只見 Progarchives 摘要把 GMC Records 掛在自名 EP 上），建議核對 | https://m.koreaherald.com/view.php?RURL=&ud=20160609000677 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

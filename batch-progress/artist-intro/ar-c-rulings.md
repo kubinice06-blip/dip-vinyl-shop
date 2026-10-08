@@ -640,3 +640,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 卡池年份存疑：Gila 卡池 1967，各源皆 1969 成軍、首作 1971。
 - 同名作廢：Giant Step（紐約活動公司）的維基預抓。
 - 待本機（上線簡介）：Gianna Nannini「Antonioni 拍〈Ballami〉」「最早由電影作者拍 MV 之一」「〈Kolossal〉走紅」無據；Giant Step「印尼電台繞開了它」因果無據；Gombloh 簡介用了 Rolling Stone Indonesia 名次（單源）；Grannie「1971 年進錄音室、Janet Chandler 長笛」（多源 1970、樂器不一）；Grow-Up「吉他手 John Bisset-Smith」（LTM 為貝斯，吉他是 Roger Blackburn）；Guruh Gipsy「自資」（資金來自 Pontjo Sutowo）與「從未再版」（2006 Shadoks 重發）；Harry Roesli Gang「雅加達錄音」「新加坡 Lion Records」（團員稱萬隆錄音，廠牌存疑）；Grandaddy「NME 十年榜第 34」無據。
+
+## ar-d-037（2026-10-08）
+
+- 40 位全上（34 full、6 thin：Henry's Dress、Icecross、Il Paese dei Balocchi、Indiscreet Music、Into Another、Iron Cross）。Iron Cross 聲音格查無，以編制（主奏吉他、貝斯、鍵盤、鼓＋多位主唱輪替）當做法句，比照 Deja-Vu 編制先例。
+- 研究層放行：Hunters & Collectors 超額 2 次（ARIA 名人堂與致敬專輯第二源；名人堂仍只有單源，正文不寫）；hush! 超額 1 次（未得事實，齊豫先例）。
+- 審稿修 13 處：最高級刪改——Hoola Bandoola Band「最知名」「最具影響力之一／最大的兩團」、Hootie「最受歡迎的團」、Humble Pie「最早的一批」、Hunters & Collectors「澳洲最受歡迎現場樂團之一」、Icecross「冰島最吵」改「吵得出名」、Ideal「NDW 最知名之一」、Illés「最大的團體之一」、Immolation「美國最具影響力之一」、Irish Coffee「最受歡迎之一」；新近事實單源刪除——Horslips 2026 Choice Music Prize、Hozier 2025《時代》百大；跨卡重複——Incantation 的「紐約死亡金屬領頭團體之一」與 Immolation 撞句，改「被歸入紐約死亡金屬場景」。
+- 保留：Iggy and The Stooges 的搖滾名人堂評語；Icecross 的 Jello Biafra 評語（具名樂手）；J.J. Cale 的 Neil Young 評語；Illés 創辦人的 Kossuth 獎（國家級權威獎項）。
+- 身分修正：Iron Cross 是緬甸仰光的團（特注原疑為華盛頓 DC oi 團，錯）；Irish Coffee 是比利時 Aalst；Indiscreet Music 是曼徹斯特 Object Music 的 Steve Solamar 圈子；Horrific Child 是法國 Jean-Pierre Massiera 的計畫；Hello Nico、hush! 為台灣樂團。
+- 同名作廢：hush!（小說 Hush, Hush）、Ideal（荷蘭支付系統 iDEAL）、Indian Summer（氣象詞）、Irish Coffee（調酒）的維基預抓。
+- 待本機（上線簡介）：Hi-STANDARD 銷量與白金認證無據、「恆岡章」應為「恒岡章」；Hoola Bandoola Band「十個月 25000 張、最高第 7 名」無據；Horrific Child「Eurodisc 發行」無據；hush!「2015 年結束」（多源 2014）、《X》發行日與「由海邊的卡夫卡發碟」不符；Igra Staklenih Perli「學生文化中心免費場」「〈Pečurka〉致敬 Can」無據；Il Paese dei Balocchi「吉他手回憶壓了 1800 張」（實為鼓手 Laudadio）；Indiscreet Music 素材年份上限 1975／1976 兩說；Iron Butterfly「美國第一張白金唱片」（RIAA 白金 1976 年才設，若簡介有此說應改）。
