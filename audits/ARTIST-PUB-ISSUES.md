@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 689 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 706 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -689,6 +689,23 @@
 | ar-d-037 | Il Paese dei Balocchi | Il Paese dei Balocchi | 有幾段人聲，是借羅馬一座教堂的自然殘響錄下來的 | italianprog.com 證實部分合唱在羅馬 S. Euclide 教堂內利用殘響錄製（含〈Vanità dell'intuizione fantastica〉的人聲），與上線簡介一致；另補充教堂下方 Ortophonic 錄音室的管風琴用在末曲。簡介無誤，僅供補充。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
 | ar-d-037 | Indiscreet Music | Dubious Collaberations | 年份落在 1971 到 1976——那是素材錄下的年份，碟本身是 1979 年的 | LTM 寫素材是 1971 至 1975 年的家庭即興；賣家頁曲目表則標到 1976 年（Manchester、Chester）。兩源對上限不一致，建議簡介改寫成『落在 1971 到 1976 年』時標明依據曲目表，或略去上限。簡介寫 A 面十段、B 面十四段與賣家頁一致（A1–A10、B1–B14）。 | https://ltmrecordings.com/auteur_labels_object_music_ltmcd2527.html |
 | ar-d-038 | Jambinai | Différance | 2012 年在 GMC Records 發行首作《차연》 | 2010 年已有自名 EP（Korea Herald 列為 2010 年 8 月），《차연》是首張錄音室專輯，「首作」宜改成「首張專輯」；GMC Records 這個發行廠牌本層沒查到可靠來源（只見 Progarchives 摘要把 GMC Records 掛在自名 EP 上），建議核對 | https://m.koreaherald.com/view.php?RURL=&ud=20160609000677 |
+| ar-d-038 | Jonathan Larson | Rent | 1996 年 1 月 25 日夜裡辭世，隔天正是首場公開預演 | 維基記他是 1 月 25 日凌晨約 0 點 30 分從製作會議返家後倒下，約 3 點被發現；首場公開預演是 25 日當天（Playbill 也寫他在預演開始前數小時過世）。簡介的「25 日夜裡」與「隔天預演」差了一天，應改為「首場預演當天凌晨」或「預演前數小時」。 | https://en.wikipedia.org/wiki/Jonathan_Larson |
+| ar-d-038 | Josefus | Dead Man | 他們最後一場演出是休士頓的一場汽車展 | 維基寫的是樂團當年最後一場演出在汽車展，但樂團之後 1978 年、1990 年先後重組並錄音，2004 年還有現場錄音發行，2011 年仍有演出；簡介沒有時序限定，會讓人以為樂團就此終結，應改為「樂團當年的最後一場演出」之類。 | https://en.wikipedia.org/wiki/Josefus |
+| ar-d-038 | Julieta Venegas | Sí | 2004 年 9 月 1 日的第 5 屆拉丁葛萊美，本輯獲最佳搖滾女歌手專輯獎 | 第 5 屆拉丁葛萊美（2004 年 9 月 1 日，洛杉磯 Shrine Auditorium）的類別是 Best Rock Solo Vocal Album（最佳搖滾個人演唱專輯），不分性別，其他入圍者還有 Charly García、Alejandra Guzmán 等男性；『女歌手』的說法有誤，應改為『個人演唱專輯』。 | https://en.wikipedia.org/wiki/5th_Annual_Latin_Grammy_Awards |
+| ar-d-038 | Junip | Fields | 先出過《Straight Lines》《Black Refuge》兩張 EP | 《Straight Lines》是 2000 年的 7 吋單曲（瑞典維基與 FMA 都寫 7 吋），只有《Black Refuge》（2006）是 EP | https://sv.wikipedia.org/wiki/Junip |
+| ar-d-038 | Junip | Fields | 早在 1998 年就以 Junip 名義活動 | 成軍年各源不一（Last.fm 1998、瑞典維基與 Wikidata 1999、FMA 1990 年代末），建議改「1990 年代末」 | https://freemusicarchive.org/music/Junip/bio |
+| ar-d-038 | Junipher Greene | Friendship | 換來挪威第一張雙專輯 | SNL 寫「挪威搖滾的第一張雙專輯」，Dagbladet 寫「第一張收錄自家創作的雙專輯」，建議加限定語（搖滾／原創曲目） | https://www.dagbladet.no/kultur/karet-til-norges-beste/74460167 |
+| ar-d-038 | Junoon | Azadi | 1998 年他們在 Channel V 音樂獎拿下最佳國際團體，同場演出的還有 Sting 與 The Prodigy | Daily Star 寫該獎頒於 1999 年 11 月的新德里典禮，同場演出者還有 Def Leppard；簡介的 1998 年疑有誤，需主線再核（頒獎年可查 Channel [V] Music Awards 歷屆） | https://archive.thedailystar.net/2006/10/05/d610051403119.htm |
+| ar-d-038 | Justin Hinds & The Dominoes | Jezebel | 1972年離開Duke Reid後與製作人Jack Ruby合作 | 維基與 NTS、Roots Archives 一致寫 1972 年離開 Reid，但 Perfect Sound Forever 寫他專為 Reid 錄音直到 1974 年 Reid 過世，各源不一，簡介年份可考慮拿掉 | https://www.furious.com/perfect/justinhinds.html |
+| ar-d-039 | Kalacakra | Crawling to Lhasa | 只過了一年樂團就結束 | Psychedelic Baby 訪談稱樂團只演過兩場，其中替 Moondog 開場是 1975 年，距 1972 年首發已三年；「只過一年就結束」與此不合，且「Martin 經營賣樂器與印度古董的店」「封面是白底黑色曼陀羅」本次均找不到出處，訪談說封面是一位美國藝術家 Dave 的手繪 | https://www.psychedelicbabymag.com/?p=8067 |
+| ar-d-039 | Kantata Takwa | Kantata Takwa | 買一卷卡帶就附一張門票 | Tirto 與 KapanLagi 都沒有提到卡帶附門票的做法，本次找不到出處；另外 6 月 23 日只有 Tirto 單源，KapanLagi 寫 1 月 23 日，Antara 與 GoodStats 寫 1991 年 | https://tirto.id/kantata-takwa-supergrup-indonesia-terbesar-sepanjang-masa-deLg |
+| ar-d-039 | Katarina II | Katarina II | 這批曲子原本在貝爾格勒錄過一次，器材條件不足、整批不能用，樂團才改到盧比安納重錄 | 塞爾維亞語維基只寫貝爾格勒開錄後遇到許多問題（多半與工作條件不佳有關），專輯改在斯洛維尼亞廠牌完成並發行；「整批不能用」「重錄」的說法比來源強，建議改為「在貝爾格勒開錄後因條件不佳，改到盧比安納完成」 | https://sr.wikipedia.org/wiki/Катарина_II_(албум) |
+| ar-d-039 | Kebnekajse | Kebnekaise II | 甘比亞打擊樂手 Hassan Bah | inrock 稱 Bah 來自幾內亞（並說《Ljus från Afrika》取材幾內亞歌曲），另有敘述稱他來自幾內亞比索，與簡介的甘比亞不一致；原盤 Discogs 頁只列名字與樂器，建議改寫成「打擊樂手 Hassan Bah」，不點國籍 | https://inrock.ru/english/kebnekajse_en |
+| ar-d-039 | Keenan Nasution | Di Batas Angan Angan | 那首歌由他自己作 | 英文維基記〈Nuansa Bening〉由 Keenan Nasution 與 Rudi Pekerti 共同寫成，簡介寫成他自己作；建議改為「他與 Rudi Pekerti 合寫」 | https://en.wikipedia.org/wiki/Keenan_Nasution |
+| ar-d-039 | Keenan Nasution | Di Batas Angan Angan | 在 Rolling Stone 的 150 大歌曲排第 27 名，專輯排第 44 名 | 歌曲第 27 名有搜尋摘要支持（Rolling Stone 印尼版，2009 年 12 月），但專輯第 44 名找不到任何出處，且歌曲榜與專輯榜是不同年份的兩份榜（專輯榜 2007 年 12 月、歌曲榜 2009 年 12 月）；請店主核對原榜 | https://en.wikipedia.org/wiki/Rolling_Stone_Indonesia%27s_150_Greatest_Indonesian_Albums_of_All_Time |
+| ar-d-039 | Kenneth Higney | Attic Demonstration | 當年印了 1000 份封套，卻只壓 500 張，剩下的封套等到 1985 年才裝上第二批 500 張 | 英文維基只寫「約壓了 1000 張，但只發行 500 張」，其他資料只說限量 500 張，沒有任何一處提到「封套 1000 份」與「1985 年第二批」；來源說法與簡介相反（維基是唱片多、發行少，簡介是封套多、唱片少），建議店主核對該句出處 | https://en.wikipedia.org/wiki/Kenneth_Higney |
+| ar-d-039 | Kenny Wayne Shepherd Band | Trouble Is... | 創下 Billboard 藍調榜在榜最久的紀錄 | 僅英文維基 Kenny Wayne Shepherd 條目單源（holds the record for the longest-running album on the Billboard Blues chart）；專輯條目沒寫，搜尋摘要的 Nashville Scene 只寫在榜 104 週、其中 30 週居 Blues Albums 第 1，找不到獨立來源稱為紀錄，建議改成較保守寫法或補上來源 | https://en.wikipedia.org/wiki/Kenny_Wayne_Shepherd |
+| ar-d-039 | Kim Carnes | Mistaken Identity | Val Garay 與鍵盤手 Bill Cuomo 用 Prophet-5 合成器重寫節奏骨架 | pophistorydig 轉述 Carnes 的說法只講 Cuomo 是她的合成器手、改了和弦與整體感覺；本層讀到的來源都沒有提到 Prophet-5 這個型號，也沒說他「重寫節奏骨架」，建議改成較保守寫法或補上有出處的型號 | https://pophistorydig.com/topics/2008/06/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

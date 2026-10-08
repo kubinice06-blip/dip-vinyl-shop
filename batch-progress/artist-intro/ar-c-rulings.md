@@ -650,3 +650,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分修正：Iron Cross 是緬甸仰光的團（特注原疑為華盛頓 DC oi 團，錯）；Irish Coffee 是比利時 Aalst；Indiscreet Music 是曼徹斯特 Object Music 的 Steve Solamar 圈子；Horrific Child 是法國 Jean-Pierre Massiera 的計畫；Hello Nico、hush! 為台灣樂團。
 - 同名作廢：hush!（小說 Hush, Hush）、Ideal（荷蘭支付系統 iDEAL）、Indian Summer（氣象詞）、Irish Coffee（調酒）的維基預抓。
 - 待本機（上線簡介）：Hi-STANDARD 銷量與白金認證無據、「恆岡章」應為「恒岡章」；Hoola Bandoola Band「十個月 25000 張、最高第 7 名」無據；Horrific Child「Eurodisc 發行」無據；hush!「2015 年結束」（多源 2014）、《X》發行日與「由海邊的卡夫卡發碟」不符；Igra Staklenih Perli「學生文化中心免費場」「〈Pečurka〉致敬 Can」無據；Il Paese dei Balocchi「吉他手回憶壓了 1800 張」（實為鼓手 Laudadio）；Indiscreet Music 素材年份上限 1975／1976 兩說；Iron Butterfly「美國第一張白金唱片」（RIAA 白金 1976 年才設，若簡介有此說應改）。
+
+## ar-d-038（2026-10-08）
+
+- 40 位全上（32 full、8 thin：Jesu、Joe Jackson、John Davis、Julian's Treatment、June of 44、Junip、Kahvas Jute、Kaiser Chiefs）。
+- 審稿修 7 處：Jason Isbell 刪「當代最優秀的詞曲創作者之一」；Jean-Jacques Goldman《D'eux》「史上最暢銷法語專輯」改「極暢銷」；Jerry Lee Lewis「把琴點火」改「據說」（單源）、刪「最狂野的現場專輯之一」；Junipher Greene 刪「挪威史上最佳專輯之一」；Junoon 刪「巴基斯坦最大的搖滾樂團」；Justin Hinds「最受歡迎的歌手」改「當家歌手」。寫作層已自行去掉 Josefus、JUN SKY WALKER(S)、Kaizers Orchestra 的「最早」。
+- 保留：Jimi Hendrix「最偉大也最具影響力的吉他手之一」（多源共識，非單源）；Joe Cocker 2025 年身後入選搖滾名人堂（名人堂官方，具名）；John Trudell 的 Bob Dylan 評語、Jim Ford 的 Sly Stone 與 Nick Lowe 說法（具名樂手）；José Cid 的歐洲歌唱大賽只寫參加不寫名次，不算第二處成績。
+- 身分：John Davis 是 Folk Implosion 成員（維基預抓為 Milli Vanilli 幕後歌手，同名作廢）；John Cougar Mellencamp 第一句交代改名經過；Joan of Arc 為 Tim Kinsella 的樂團；Kaka de Luxe 卡池 1983 為解散後出版的 demo 合輯。
+- 待本機（上線簡介）：Jambinai「發行首作《차연》」（之前已有自名 EP）與 GMC Records 無據；Joaquín Sabina《19 días y 500 noches》「Sony 社長」與「BMG／Ariola」並存；Jonathan Larson「1 月 25 日夜裡辭世、隔天首場預演」差一天；Josefus「最後一場演出」（之後多次重組）；Julieta Venegas「最佳搖滾女歌手專輯」（類別不分性別）；Junip〈Straight Lines〉為 7 吋單曲非 EP、成軍年各源不一；Junipher Greene「挪威第一張雙專輯」需限定語；Junoon Channel V 獎年份 1998／1999；Justin Hinds「1972 年離開 Duke Reid」（另說錄到 1974）。
