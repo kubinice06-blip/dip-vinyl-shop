@@ -607,3 +607,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 合計 391 位上架（324 full、67 thin），8 位不寫：8mm Sky、A Band Called Doris、Alone in a Crowd / Inside Out、Asylum、Ataraxia、Bastard、Big Bag、Blast Off Country Style（皆為聲音或身分查無、或只有曲風標籤）。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」清單的上線簡介勘誤（改 KV）；卡池年份存疑（10,000 Maniacs、Bastille、Buddy Holly、Bikini Kill / Huggy Bear、Death of Samantha、Cannon's Jug Stompers、Charlie Musselwhite、Caedmon）。
+
+## 第五輪十批接力（ar-d-034～043，2026-10-08 起）
+
+- 範圍：搖滾段 E 字頭起。沿用第三、四輪的審稿規則與 thin 門檻（第一句交代國籍與身分＋至少一句聲音或做法；只有曲風標籤不算，編制可算做法）。
