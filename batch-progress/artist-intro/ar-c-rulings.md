@@ -658,3 +658,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Jimi Hendrix「最偉大也最具影響力的吉他手之一」（多源共識，非單源）；Joe Cocker 2025 年身後入選搖滾名人堂（名人堂官方，具名）；John Trudell 的 Bob Dylan 評語、Jim Ford 的 Sly Stone 與 Nick Lowe 說法（具名樂手）；José Cid 的歐洲歌唱大賽只寫參加不寫名次，不算第二處成績。
 - 身分：John Davis 是 Folk Implosion 成員（維基預抓為 Milli Vanilli 幕後歌手，同名作廢）；John Cougar Mellencamp 第一句交代改名經過；Joan of Arc 為 Tim Kinsella 的樂團；Kaka de Luxe 卡池 1983 為解散後出版的 demo 合輯。
 - 待本機（上線簡介）：Jambinai「發行首作《차연》」（之前已有自名 EP）與 GMC Records 無據；Joaquín Sabina《19 días y 500 noches》「Sony 社長」與「BMG／Ariola」並存；Jonathan Larson「1 月 25 日夜裡辭世、隔天首場預演」差一天；Josefus「最後一場演出」（之後多次重組）；Julieta Venegas「最佳搖滾女歌手專輯」（類別不分性別）；Junip〈Straight Lines〉為 7 吋單曲非 EP、成軍年各源不一；Junipher Greene「挪威第一張雙專輯」需限定語；Junoon Channel V 獎年份 1998／1999；Justin Hinds「1972 年離開 Duke Reid」（另說錄到 1974）。
+
+## ar-d-039（2026-10-08）
+
+- 36 位上架（27 full、9 thin：Katedra、Kenny Wayne Shepherd Band、Kevin Morby、Kiosk、Kitchens of Distinction、Kollektiv、Kylesa、Labradford、Lard Free），4 位不寫：Kaseke（聲音句只有曲風標籤）、Kenneth Higney（全部事實單源、聲音查無，寫作層放棄）、Krakdown（卡池版本與身分只是推論）、L'Arc〜en〜Ciel（聲音格查無，只剩編制與視覺系出身，比照 Gorgoroth 不寫）。
+- 研究層放行：L'Arc〜en〜Ciel 超額 1 次（未得可收事實，齊豫先例）。
+- 審稿修 13 處：最高級刪改——Katarina II 刪 Šarlo Akrobata「最重要之一」與 Ekatarina Velika「最有影響力之一」、Klaus Mitffoch 三重最高級改「波蘭搖滾的經典」、Koes Bersaudara「最受歡迎之一」改「人氣樂團」、Korni Grupa 刪「第一張搖滾長片」（兩源同屬維基家族）與「最成功／最具影響力之一」並以事實補回字數、Lačni Franz「最重要之一」改「代表之一」；Keiji Haino 刪 2026 威尼斯金獅獎（尚未頒發、新近事實）；King Gnu 刪東京巨蛋人數（在世者只留紅白一處）。
+- 保留：Klaus Renft Combo 的德國歷史博物館評語（權威機構具名）；L7 的 Reading 音樂節事件（樂團核心形象，非刑案）；L. Voag 遭警方粗暴對待致唇傷（直接塑造專輯人聲，屬「與聲音相關」例外）。
+- 身分：Kiosk 為伊朗樂團；Katedra 為立陶宛維爾紐斯；Kollektiv 為 1970 年代德國 Krefeld 的團（非瑞士同名團）；Klaus Mitffoch 為波蘭 Wrocław；L. Voag 為 The Homosexuals 的 Jim Welton。
+- 卡池年份存疑：Keiji Haino 卡池 2017 為 1981 年原作的黑膠重發。
+- 同名作廢：Kaseke（姓氏消歧頁）的維基預抓。
+- 待本機（上線簡介）：Kebnekajse「甘比亞打擊樂手 Hassan Bah」國籍各說不一；Keenan Nasution〈Nuansa Bening〉作者（與 Rudi Pekerti 合寫）與專輯榜第 44 名無據；Kantata Takwa「買卡帶附門票」無據；Katarina II「錄音整批不能用」過強；Kenneth Higney「印 1000 份封套、只壓 500 張」與維基相反、「一年就結束」不合；Kenny Wayne Shepherd「藍調榜在榜最久紀錄」單源；Kim Carnes「Prophet-5」無據；Kitchens of Distinction「因出櫃沒拿到市場位置」單源因果；Klaus Mitffoch「唱片拿獎」（實為樂團 1983 比賽第二名）；Klaus Renft 禁令起因不只 Pannach；Koes Bersaudara「首作」「三兄弟被捕」；Korni Grupa「那年初才進來」「6 月 Montreux」；Krzysztof Klenczon 編號 XL 0799 疑為 XL 0779。

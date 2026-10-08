@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 706 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 717 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -706,6 +706,17 @@
 | ar-d-039 | Kenneth Higney | Attic Demonstration | 當年印了 1000 份封套，卻只壓 500 張，剩下的封套等到 1985 年才裝上第二批 500 張 | 英文維基只寫「約壓了 1000 張，但只發行 500 張」，其他資料只說限量 500 張，沒有任何一處提到「封套 1000 份」與「1985 年第二批」；來源說法與簡介相反（維基是唱片多、發行少，簡介是封套多、唱片少），建議店主核對該句出處 | https://en.wikipedia.org/wiki/Kenneth_Higney |
 | ar-d-039 | Kenny Wayne Shepherd Band | Trouble Is... | 創下 Billboard 藍調榜在榜最久的紀錄 | 僅英文維基 Kenny Wayne Shepherd 條目單源（holds the record for the longest-running album on the Billboard Blues chart）；專輯條目沒寫，搜尋摘要的 Nashville Scene 只寫在榜 104 週、其中 30 週居 Blues Albums 第 1，找不到獨立來源稱為紀錄，建議改成較保守寫法或補上來源 | https://en.wikipedia.org/wiki/Kenny_Wayne_Shepherd |
 | ar-d-039 | Kim Carnes | Mistaken Identity | Val Garay 與鍵盤手 Bill Cuomo 用 Prophet-5 合成器重寫節奏骨架 | pophistorydig 轉述 Carnes 的說法只講 Cuomo 是她的合成器手、改了和弦與整體感覺；本層讀到的來源都沒有提到 Prophet-5 這個型號，也沒說他「重寫節奏骨架」，建議改成較保守寫法或補上有出處的型號 | https://pophistorydig.com/topics/2008/06/ |
+| ar-d-039 | Kitchens of Distinction | Strange Free World | Fitzgerald 是公開出櫃的同志、歌詞也常寫此事，樂團因此始終沒拿到同代 shoegaze 團的市場位置 | 這個因果是英文維基的單源說法（did not attain the commercial success… as Fitzgerald was openly gay），並非公認事實；Fitzgerald 本人反對被貼上「gay band」標籤。建議改成「維基這樣解釋」或「當時媒體傾向以此定位」，避免寫成確定的原因 | https://en.wikipedia.org/wiki/Kitchens_of_Distinction |
+| ar-d-039 | Klaus Mitffoch | Klaus Mitffoch | 唱片當年替樂團拿下獎項 | 英文維基只寫專輯「received several awards」，沒有年份也沒有獎名；波蘭文維基記載的獎是 1983 年 6 月在全國青年才藝賽（Ogólnopolski Turniej Młodych Talentów）與 Azyl P. 並列第二，獎品是 Tonpress 錄音室的錄音時段，那是樂團得獎、在專輯之前，不是專輯當年得獎，建議改寫或拿掉 | https://pl.wikipedia.org/wiki/Klaus_Mitffoch |
+| ar-d-039 | Klaus Renft Combo | Renft | 1975 年當局下令解散樂團，起因是 Gerulf Pannach 為第三張寫的歌詞 | de 維基寫第三張專輯的多首歌被退回（含談建築兵役與談逃離東德失敗的歌），DHM 另列不合規範的舞台形象；起因並非 Pannach 單人的歌詞。建議改成「因歌詞與舞台形象被禁」。 | https://de.wikipedia.org/wiki/Klaus_Renft_Combo |
+| ar-d-039 | Koes Bersaudara | To The So Called The Guilties | 坐完牢後他們錄下這張首作 | 樂團此前已有專輯（Rolling Stone Indonesia 榜單列有 1964 年《Koes Bersaudara》，garagehangover 寫首張專輯在 1961 或 1962 年）；這張是出獄後的第一張。建議改成「出獄後的第一張專輯」。 | https://en.wikipedia.org/wiki/Koes_Bersaudara |
+| ar-d-039 | Koes Bersaudara | To The So Called The Guilties | 五天後三兄弟被捕，未經審判關了三個月 | 各來源對被關人數不一：id 維基寫三人被捕、Nomo 自首，CNN Indonesia 與 garagehangover 寫四兄弟被關。建議只寫「兄弟」。 | https://www.cnnindonesia.com/hiburan/20160310080131-227-116442/koes-bersaudara-rela-masuk-bui-demi-indonesia |
+| ar-d-039 | Korni Grupa | Korni Grupa | 錄音時的主唱 Zlatko Pejaković 那年初才進來 | sr 維基寫 Pejaković 1971 至 1974 年擔任主唱，en 維基寫 1972 年初加入；兩個維基不一致。建議改成「錄音時的主唱 Zlatko Pejaković」，不寫加入時間。 | https://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8_%D0%B3%D1%80%D1%83%D0%BF%D0%B0 |
+| ar-d-039 | Korni Grupa | Korni Grupa | 樂團同年 6 月登上 Montreux Jazz Festival | 只見 en 維基單源；搜尋、n1info、Danas 與 sr 維基都沒提到蒙特勒。建議店主在本機另找第二來源，否則刪除。 | https://en.wikipedia.org/wiki/Korni_Grupa |
+| ar-d-039 | Krzysztof Klenczon | Krzysztof Klenczon i Trzy Korony | 單聲道 XL 0799 與立體聲 SXL 0779 並列 | 研究稿引 pl 維基專輯頁寫 XL/SXL 0779（單聲道與立體聲共用 0779 這個數字），簡介的 0799 疑為誤植；本層未再開 Discogs 驗證，建議店主在本機核對再改。 | https://pl.wikipedia.org/wiki/Krzysztof_Klenczon_i_Trzy_Korony |
+| ar-d-040 | Laughing Hyenas | You Can't Pray a Lie | 吉他手 Larissa Strickland 先前在 L7（引《Trouser Press》） | 她先前的樂團應為底特律的 L-Seven（Third Man 重發文與 Ann Arbor 地方報導都寫 L-Seven）；L7 是洛杉磯的另一支團，簡介若寫 L7 會讓讀者誤認。建議改為 L-Seven。Trouser Press 原文寫的確實是 L7，屬該條目本身的誤植。 | https://pulp.aadl.org/comment/140528 |
+| ar-d-040 | Leeway | Born to Expire | 1988 年的 12 吋編號 PRO-1257、同年的 CD 版 | 英文維基《Born to Expire》與 No Echo 的 Michael Gibbons 訪談都說 1987 年 11 月錄音、延到 1989 年（維基記 1 月 21 日）才發行；1988 年是 MusicBrainz 與 Apple Music 的記法。簡介若把 1988 當首發年可能需改為 1989，或改寫為「1987 年錄音」。卡池年份 1988 同理可能需主線裁定。 | https://en.wikipedia.org/wiki/Born_to_Expire |
+| ar-d-040 | LOUDNESS | Thunder in the East | 專輯在 Billboard 榜停留 23 週、最高第 74 名，是日本樂團首度打進美國百名以內 | 『日本樂團首度打進美國百名以內』是『第一』類宣稱，目前只有日文維基與 Billboard JAPAN 商品頁（促銷性質，原文是『日本人ロック・バンド初のビルボードTOP100への連続チャートイン』）支持，未見獨立第二源，也未排除其他日本團體早於 1985 年進榜的反例；建議改成不帶『首度』的寫法，或由店主本機再查證。『23 週』本層未查到來源。 | https://www.billboard-japan.com/goods/detail/504769 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
