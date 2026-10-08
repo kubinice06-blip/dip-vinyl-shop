@@ -509,3 +509,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## 第四輪十批接力（ar-d-024～033，2026-10-08 起）
 
 - 範圍：d-024 前半 soul、後半轉入藍調；d-025～027 藍調；d-027 後半起轉入搖滾。沿用第三輪的審稿規則與 thin 門檻（第一句交代國籍與身分＋至少一句聲音或做法；只有類型歸屬不算）。
+
+## ar-d-024（2026-10-08）
+
+- 40 位全上（32 full、8 thin：Vivian Green、Watchhouse、Wayne Davis、鄭雙雙、Ana Popović、Ben Harper & Charlie Musselwhite、Beth Hart & Joe Bonamassa、Bo Carter）。
+- 審稿修 12 處：在世者成績只留一處——Tweet 刪羅徹斯特名人堂、Yarbrough & Peoples 刪德州眾議院決議、Yolanda Adams 刪福音名人堂、B.B. King & Eric Clapton 刪「唯一三度入選搖滾名人堂」（序數）；最高級刪改——Victor Uwaifo「非洲第一張金唱片」改「拿下金唱片」、Willie Mae Ford Smith「二十世紀最重要之一」、Alvin Youngblood Hart「世上最出色之一」（兩源非獨立）、Clapton「最大號召」、Bo Carter「最受歡迎之一」；사랑과 평화 刪報社名；Billy Boy Arnold「猝逝」改「過世」；Wayne Davis 首句改寫。
+- 放寬字數：Willie Mae Ford Smith 256（NEA 傳統藝術最高榮譽、提攜 Mahalia Jackson 為主體，已故）。
+- 身分：鄭雙雙推定為台灣歌手（輔大、政大、三立選秀、台北駐唱），首句以「台灣選秀舞台與台北飯店駐唱」交代，未直書國籍；VST & Company 為菲律賓 Manila Sound；Wayne Davis（維基預抓為美式足球員，作廢）。
+- 待本機（上線簡介）：Van Hunt「2005 年入圍葛萊美」（第 48 屆為 2006 年頒獎）；Victor Uwaifo「1965 年金唱片」無據、收錄時期實為 Ekassa；Vivian Green「Jill Scott 之後最常被點名」無出處；Wayne Davis 製作人（Strut 頁為 Jimmy Watkins 與 Bob Dawson）；William DeVaughn「OutKast 取樣」無出處；Willie Mae Ford Smith「一輩子避開錄音室」「直到 1982 年才被主流認識」皆過滿；Albert Ammons & Meade Lux Lewis《The First Day》「十八軌」（實 19 首）與〈The Blues〉段數；《Showdown!》「Collins 提攜 Copeland」（實為同輩）與「17.5 萬張」（Alligator 稱逾 31 萬）；Ana Popović「赴荷蘭修爵士吉他」（自述念平面設計）；Billy Boy Arnold「1960 年代中期發行」（實 1963）；Blind Blake「破產後行蹤成謎」已過時。
