@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 649 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 654 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -649,6 +649,11 @@
 | ar-d-031 | CIV | Set Your Goals | 碟出在 1995 年 8 月的美國 Lava | 英文維基《Set Your Goals》專輯條目寫 1995 年 10 月在 Lava Records 發行；請店主在本機對 Discogs 美國 Lava 92603-2 的發行日核實，確認前不要改。另上線簡介『全張合計 31 分 21 秒』，維基專輯條目寫總長 31:13，差 8 秒，可能是各軌秒數加總誤差，也請順便核對。 | https://en.wikipedia.org/wiki/Set_Your_Goals_(album) |
 | ar-d-032 | Company Caine | A Product of a Broken Reality | 進了 Kent Music Report 榜前四十名 | 維基寫前四十名，Bang a Gong 單曲頁（搜尋摘要）寫 1972 年 3 月 6 日入榜、最高第 49 名，與前四十名牴觸；Kent Music Report（David Kent《Australian Chart Book》）原始資料未取得。建議簡介改成「進了 Kent Music Report 專輯榜」不寫名次區間，或查到原始資料再定。 | https://bangagong.com.au/trixie-stonewall%ca%bcs-wayward-home-for-young-women-company-caine/ |
 | ar-d-032 | Confuse | Indignation | 十三年後由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD | 搜尋摘要（NTS 引 Discogs）只見 1984 年 Violent Party Records 的卡帶與 1987 年的 Confuse Records 單曲，Sorry State 稱黑膠把整張卡帶與 Nuclear Addicts flexi 等合輯；未能證實「十三年後」「黑膠與 CD」「Anarchy Centre 聯名」。建議店主對 Discogs 的 Indignation 條目逐項核對。 | https://nts.live/artists/89568-confuse |
+| ar-d-032 | Craig David | Born to Do It | 兩人先寫完錄完才簽進 Wildstar | 維基記 Wildstar 在他十七歲左右聽到〈Walking Away〉就先給了發展約，聽到〈7 Days〉才把合約升級成專輯約；『先錄完才簽約』與順序不合，建議改寫成『發展約之後升級成專輯約』。 | https://en.wikipedia.org/wiki/Craig_David |
+| ar-d-032 | Craig David | Born to Do It | 全球約售出 750 萬張 | 銷量各處不一：encyclopedia.com 寫 500 萬至 700 萬張，Music Week 引唱片公司稱逾 1300 萬張（指涉不明）；單一數字無共識，建議改成不帶數字或註明各方說法。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/david-craig |
+| ar-d-032 | Credo | Melnais kliedziens | 掛名的別名欄登錄的是利耶帕亞火柴廠與一間企業的合奏團名 | LSM 與拉脫維亞語維基都寫樂團 1979 年前的前身是木材加工廠 Baltija 的聲樂器樂團；『火柴廠』與此不符。若 MusicBrainz 別名欄確實寫的是火柴廠，是 MB 資料與史料不一致，建議本機對照 MB 後改寫成『某企業的合奏團名』或刪去工廠名。 | https://www.lsm.lv/raksts/kultura/izklaide/nedelas-nogale-izskanes-grupas-credo-45-jubilejas-koncerts.a318428/ |
+| ar-d-032 | Décima Víctima | Décima Víctima | 1982 年 12 月 Grabaciones Accidentales 的 GA-007 是這張碟唯一的一筆發行 | 這張首作後來有 Munster Records 的 LP 再版（Maximum Rocknroll 第 499 期評的就是這版），並收進 2010 年 Munster 的全集黑膠盒；「唯一的一筆發行」不成立，至多能說「原盤只發過這一版」 | https://www.maximumrocknroll.com/review/mrr-499/decima-victima-lp-reissue/ |
+| ar-d-033 | Diaframma | Siberia | 全碟詞曲都出自主唱一人 | Fiumani 是吉他手兼詞曲作者；《Siberia》時期的主唱是 Miro Sassolini（接替 Nicola Vannini），Fiumani 要到 1989 年的 Gennaio EP 前後才兼任主唱。改成「全碟詞曲都出自吉他手 Federico Fiumani」。 | https://www.rockit.it/articolo/siberia-diaframma |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

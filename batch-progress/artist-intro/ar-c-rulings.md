@@ -585,3 +585,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Carl Perkins 是 1958 年過世的美國爵士鋼琴手，不是 rockabilly 歌手；Caedmon 是愛丁堡大學的基督教民謠搖滾團（卡池 1994 為 1978 年原版的重發）；Chrissy Zebby Tembo 為 Ngozi Family 的鼓手兼歌手。
 - 同名作廢：Campo di Marte（文學雜誌）、City（城市）、Cirkus（丹麥馬戲團）的維基預抓。
 - 待本機（上線簡介）：Burn《Do or Die》「二十五年前」「1992 年同名 EP」（實為 1992 年試聽帶、約 2002 年發 EP）；Carl Perkins「1956 年錄音」（1955 錄、1956 發行）與「funky hard bop 先行者」無據；Carroll Thompson「倫敦出身」（生於 Letchworth）與「全球賣過百萬張」；Catapilla「三種薩克斯風」（人員表只列兩種）；Cervello「1970 年成立」各源不一；CIV《Set Your Goals》發行月份與總長待核。
+
+## ar-d-032（2026-10-08）
+
+- 40 位全上（28 full、12 thin：Concrete Rubber Band、Confuse、Corte dei Miracoli、Cos、Crow、Crumb、D.R. Hooker、Danielle Dax、Darius、Das Damen、Debris'、Deerfield）。
+- 審稿修 5 處：Company Caine 刪「比當時幾乎任何一團都更開闊」；Confuse 刪「被盜版最多的日本樂團」（唱片行文案單源）；Cressida 刪「Vertigo swirl 最偉大的兩個時刻」；Czerwone Gitary 刪「波蘭史上最受歡迎之一」；Dark 刪 NME 與 Record Collector 刊名（榜單保留、不具名）。
+- 寫作層處理：Concrete Rubber Band 研究層只有一篇部落格，第二 src 以卡單 Discogs 原盤頁補（只佐證唱片存在），接受；Condition Green「沖繩搖滾開路者」歸給縣知事追悼語；CSNY 的名人堂與 James Taylor 評語具名；Damon 與 Damon & Naomi 分寫、Damon 成癮與 Dane Donohue 詐欺案不寫。
+- 卡池年份存疑：Death of Samantha《Strungout on Jargon》卡池 1985，維基與 Trouser Press 皆 1986。
+- 同名作廢：Complex（布袋寅泰與吉川晃司的日本二人組）、Conflict（亞利桑那同名團）、Credo（信經）、Crow（烏鴉）、Darius（姓氏消歧義）的維基預抓。
+- 待本機（上線簡介）：Company Caine「Kent 榜前四十名」（另說最高 49 名）；Confuse「十三年後由 Anarchy Centre 與 Confuse Records 聯名重壓」無據（Discogs 為 1984 Violent Party Records）；Craig David「先寫完錄完才簽 Wildstar」與「全球 750 萬張」；Credo「利耶帕亞火柴廠」（史料為木材加工廠 Baltija）；Czerwone Gitary「2008 年金唱片」（波蘭維基為銀唱片）；Dead Boys「hardcore 世代翻唱最多」「Billboard 200 第 189 名」〈Hey Little Girl〉收錄細節皆未驗；Décima Víctima「唯一的一筆發行」已過時（2024 Munster 再版）；D.R. Hooker 原盤廠牌 On Records 與 spaceritual 說法不一。
