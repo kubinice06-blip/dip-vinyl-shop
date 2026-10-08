@@ -535,3 +535,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 新近事實：Ruthie Foster 2025 年第 67 屆葛萊美最佳當代藍調專輯（官網＋維基）。
 - 搜尋失敗超限：Mississippi Sheiks 失敗請求 5 次（多一次為無結果的 Britannica 網址），不影響事實。
 - 待本機（上線簡介）：Kenny Wayne Shepherd「藍調榜停留二十週」應為第一名 20 週；Lil' Ed「舅舅 J.B. Hutto」來源只寫 uncle；Magic Slim「1970 年起與弟弟組成 The Teardrops」年份有爭議；Memphis Jug Band「1926 年起成形」宜改 1920 年代中期、「卡祖笛當主奏」無出處；Mississippi Sheiks「核心成員含 Bo Carter」（1930 首錄為 Vinson 與 Lonnie Chatmon）與國家錄音登記簿年度（2017，非 2018）；Otha Turner「90 歲錄成」（錄音時約 84 至 90 歲）；Reverend Robert Wilkins「1936 年目睹兇殺、1950 年受任」僅維基；Robert Lockwood Jr.「唯一直接向 Robert Johnson 學琴」僅維基；Ruthie Foster「婉拒 Atlantic」（實為開發約因母病中止）、「三度入圍葛萊美」已過時、專輯年 2007／2008；Stevie Ray Vaughan《In Step》「Reese Wynans 首度列入正式編制」（1985 年起即為團員）；T-Model Ford「隨 R.L. Burnside 巡演」與報紙年度第三佳無出處。
+
+## ar-d-027（2026-10-08）
+
+- 38 位上架（28 full、10 thin：Washboard Sam、平岡睦男とナチュラル・ブギー、127、A Perfect Circle、A Silver Mt. Zion、Aardvark、Abbhama、Adnan Othman、Air Miami、Alan Licht），2 位不寫：8mm Sky（三格查無，可開頁來源一個都不涉及本團）；A Band Called Doris（只有 Discogs、MusicBrainz 的唱片紀錄，寫不出聲音或做法）。藍調段收尾、搖滾段開始。
+- 審稿修 4 處：Thomas A. Dorsey 妻兒死因改「妻兒相繼過世後」、「那個年代最大熱門之一」改「大熱門」；A Certain Ratio 刪「最早一批之一」；Aimee Mann 刪「在世最佳詞曲創作者之林」（榜單式評價）。
+- 放寬字數：Thomas A. Dorsey 260（藍調轉福音、改寫聖詩、訓練第一代福音歌手、〈Precious Lord〉為份量主體）。
+- 搜尋超限放行：三上寛・古澤良治郎 9（雙人卡，多出一次為古澤過世年份第二源）。
+- 寫作層處理：Agape 的「第一支迷幻福音硬搖滾團」單源不寫，改用兩源的「Jesus music 最早三組先驅之一」；Alan Hawkshaw / Keith Mansfield 避開 d-003、d-008 Mansfield 卡與 d-023 The Mohawks 已用的素材（〈The Champ〉、Hyde Park、Countdown、印刷廠）。
+- 卡池年份存疑：10,000 Maniacs《In My Tribe》卡池 1986，三源皆 1987。
+- 同名作廢：Aardvark（動物）、Abaddon（聖經）、Absolution、Agape（神學）、Airplay（蘋果 AirPlay）的維基預抓。
+- 待本機（上線簡介）：Washington Phillips「Corcoran 於 2016 年翻出 1907 年報導」無出處（2002 年即發表）；Absolution EP 年份 1988／1989；Adnan Othman「來自登嘉樓」無來源；Abbhama「2014 年才第一次壓成黑膠」待核 Discogs；Airbridge 廠牌（實為 Red Lightnin'）、「唯一 LP」與年份；Alaska y los Pegamoides《Grandes éxitos》發行月份 4 月／5 月。

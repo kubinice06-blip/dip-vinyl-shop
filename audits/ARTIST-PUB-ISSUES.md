@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 613 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 618 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -613,6 +613,11 @@
 | ar-d-027 | Absolution | Absolution | 同一年同樣尺寸的 7 吋，有的塞了六首唱八分鐘、有的塞了七首唱十一分半（以這張是 1989 年為前提） | Big Takeover 記這張 EP 於 1988 年 11 月 12 日在 Combined Effort Records 發行，No Echo 則說 7 吋是 1989 年；發行年兩說不一，「同一年」的比較需先確認這張的年份。 | https://bigtakeover.com/interviews/absolution-the-more-things-change |
 | ar-d-027 | Adnan Othman | Bershukor: A Retrospective of Hits by a Malaysian Pop Yeh Yeh Legend | Adnan Othman 來自登嘉樓 | Sublime Frequencies 的 Bandcamp 頁面全文沒有出生地，Forced Exposure、Soundohm 等零售頁也沒有，目前沒有任何開頁讀到的來源支持登嘉樓；建議確認出處，查不到可考慮改成不點明家鄉。 | https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend |
 | ar-d-027 | Airbridge | Paradise Moves | 廠牌 Carve-Up Records 的目錄只有四個編號，這張是它唯一的 LP | Bedini 訪談說專輯是被姊夫賣給 Red Lightnin' Records，MusicBrainz 同樣把廠牌記 Red Lightnin'；維基與 Louder 記專輯 1983 年而非 1982。廠牌與年份有爭議，建議簡介改成較保守寫法或查證後再定。 | https://www.psychedelicbabymag.com/?p=33062 |
+| ar-d-027 | Alaska y los Pegamoides | Grandes éxitos | 1982 年 4 月 Hispavox 同月發了黑膠 S 60.722 與卡帶 C 60.722 | 西班牙文維基寫專輯 1982 年 5 月發行，MusicBrainz 為 4 月，月份不一致；建議簡介改為『1982 年』或確認月份後再寫。 | https://es.wikipedia.org/wiki/Alaska_y_los_Pegamoides |
+| ar-d-028 | Alcione | A Voz do Samba | 她九歲起吹小號與豎笛 | 英文維基與 encyclopedia.com 寫 13 歲左右才學豎笛與小號，葡文維基的「九歲」是首次在電台演唱；年齡說法不一，建議刪去年齡或改核對後的版本。 | https://en.wikipedia.org/wiki/Alcione_Nazareth |
+| ar-d-028 | Alcione | A Voz do Samba | Discoteca Básica 五百大第 293 名 | 本層未能開到 Discoteca Básica 名單頁，無法核對名次；若要保留請在本機核對來源。 | https://pt.wikipedia.org/wiki/Alcione_(cantora) |
+| ar-d-028 | Älgarnas Trädgård | Framtiden är ett svävande skepp, förankrat i forntiden | 後來拿到 Grammis 提名 | 只見於 Söderqvist 本人在訪談裡「被提名 Grammy」的回憶，搜尋瑞典 Grammis 名單查不到；建議在本機核對 Grammis 官方歷屆名單，查不到就刪。 | https://psychedelicbabymag.com/?p=67377 |
+| ar-d-028 | Archers of Loaf | Icky Mettle | 在 Caleb Southern 的 Kraptone 錄音室七天內錄完混完 | 待核：Bandcamp 專文稱錄音約一個月、場地是 Cat's Cradle 俱樂部；Bachmann 在 Portland Mercury 說樂團凌晨 3:30 左右進 Cat's Cradle 錄音，Johnson 對 The Stranger 說記不得總共幾天。維基（七天、Kraptone）與上線簡介一致，但與兩篇訪談描述不合，建議店主決定是否把『七天內錄完混完』改成較保守的寫法。 | https://daily.bandcamp.com/features/archers-of-loaf-album-guide |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
