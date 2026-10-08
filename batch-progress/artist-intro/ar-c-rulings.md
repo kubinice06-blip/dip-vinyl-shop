@@ -505,3 +505,105 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 合計 388 位上架（320 full、68 thin），12 位不寫：Yoshimi Ueno Bestrio、初山博、和田直、和田直カルテット、リー・ウォンヒーイ＋菊他コージ、Black Heat、Garland Green、Mighty Ryeders、Soul for Real、The Morning Stars of Savannah, Georgia、The Politicians、The Sensational Williams Brothers。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」清單的上線簡介勘誤（改 KV）。
+
+## 第四輪十批接力（ar-d-024～033，2026-10-08 起）
+
+- 範圍：d-024 前半 soul、後半轉入藍調；d-025～027 藍調；d-027 後半起轉入搖滾。沿用第三輪的審稿規則與 thin 門檻（第一句交代國籍與身分＋至少一句聲音或做法；只有類型歸屬不算）。
+
+## ar-d-024（2026-10-08）
+
+- 40 位全上（32 full、8 thin：Vivian Green、Watchhouse、Wayne Davis、鄭雙雙、Ana Popović、Ben Harper & Charlie Musselwhite、Beth Hart & Joe Bonamassa、Bo Carter）。
+- 審稿修 12 處：在世者成績只留一處——Tweet 刪羅徹斯特名人堂、Yarbrough & Peoples 刪德州眾議院決議、Yolanda Adams 刪福音名人堂、B.B. King & Eric Clapton 刪「唯一三度入選搖滾名人堂」（序數）；最高級刪改——Victor Uwaifo「非洲第一張金唱片」改「拿下金唱片」、Willie Mae Ford Smith「二十世紀最重要之一」、Alvin Youngblood Hart「世上最出色之一」（兩源非獨立）、Clapton「最大號召」、Bo Carter「最受歡迎之一」；사랑과 평화 刪報社名；Billy Boy Arnold「猝逝」改「過世」；Wayne Davis 首句改寫。
+- 放寬字數：Willie Mae Ford Smith 256（NEA 傳統藝術最高榮譽、提攜 Mahalia Jackson 為主體，已故）。
+- 身分：鄭雙雙推定為台灣歌手（輔大、政大、三立選秀、台北駐唱），首句以「台灣選秀舞台與台北飯店駐唱」交代，未直書國籍；VST & Company 為菲律賓 Manila Sound；Wayne Davis（維基預抓為美式足球員，作廢）。
+- 待本機（上線簡介）：Van Hunt「2005 年入圍葛萊美」（第 48 屆為 2006 年頒獎）；Victor Uwaifo「1965 年金唱片」無據、收錄時期實為 Ekassa；Vivian Green「Jill Scott 之後最常被點名」無出處；Wayne Davis 製作人（Strut 頁為 Jimmy Watkins 與 Bob Dawson）；William DeVaughn「OutKast 取樣」無出處；Willie Mae Ford Smith「一輩子避開錄音室」「直到 1982 年才被主流認識」皆過滿；Albert Ammons & Meade Lux Lewis《The First Day》「十八軌」（實 19 首）與〈The Blues〉段數；《Showdown!》「Collins 提攜 Copeland」（實為同輩）與「17.5 萬張」（Alligator 稱逾 31 萬）；Ana Popović「赴荷蘭修爵士吉他」（自述念平面設計）；Billy Boy Arnold「1960 年代中期發行」（實 1963）；Blind Blake「破產後行蹤成謎」已過時。
+
+## ar-d-025（2026-10-08）
+
+- 40 位全上（38 full、2 thin：Buffalo Nichols、Chicken Shack）。
+- 審稿修 8 處：Little Walter 刪「二十世紀後期最具影響力之一」（Britannica 單源）；John Hammond 刪「最早的白人藍調專輯之一」；Jo Ann Kelly 刪「唯一贏得美國藝人敬重的英國歌手」；Josh White 刪父親遭毆與死於療養院（死亡情境）；Jontavious Willis 英文引語「my Wonderboy」改中文；兩張 Chess 明星合作卡（《Super Blues》與《Super Super Blues Band》）刪 Muddy「北上改用電吉他」與 Bo Diddley beat 的重疊句；Cannon's Jug Stompers 刪與 Gus Cannon 篇重複的〈Walk Right In〉翻唱冠軍。
+- 新近事實：John Hammond（John P. Hammond）2026 年 2 月過世（維基、Wikidata、Boston Globe 訃聞），本批特注原列為在世者，照已故處理，只寫年月。
+- 卡池年份存疑（不改卡池，記錄待本機）：Cannon's Jug Stompers 卡池 1989，MusicBrainz 首發 1990-06-27；Charlie Musselwhite 卡池 1967，首作 1966 年發行。
+- 同名作廢：Eddie Taylor 的維基預抓是兒子 Eddie Taylor Jr.。
+- 待本機（上線簡介）：Bobby Rush「八十三歲」（生年 1933／1935／1936 三說）；Cannon's Jug Stompers「35 軌」（維基 34 首）；Imarhan「Sadam 是 Eyadou 的姪子」（實為表親）與「英文維基列為 Tinariwen 影響下的新一代」無此句；Guitar Slim「Ray Charles 製作」說法不一；Homesick James「Elmore James 表親」為自稱、「享壽 96 歲」無定論；Gus Cannon 錄音年 1929／1930；Hank Ballard「遭 FCC 禁播」僅維基；Honeyboy Edwards 把 Robert Johnson 之死寫成定論；Eddie Boyd「1970 年落腳赫爾辛基」與「R&B 榜冠軍」；Eddie Taylor「1948 年搬到芝加哥」；J.B. Lenoir 製作人應為 Willie Dixon；Jessie Mae Hemphill 鈴鼓是中風後才改；John Hammond《So Many Roads》錄音年 1964；Johnny Shines「戰後落腳芝加哥」（1941）與發行年 1970；Josh White「遭封殺」（從未正式列黑名單）；Fenton Robinson 簡介引 AllMusic 評語無法查證。
+
+## ar-d-026（2026-10-08）
+
+- 40 位全上（38 full、2 thin：Juke Boy Bonner、Little Sonny）。
+- 審稿修 5 處：Juke Boy Bonner 刪胃部手術（健康）；Memphis Minnie 刪「最早改用電吉他之一」；Otis Taylor 刪曾祖父遭私刑（親屬死亡情境）；Scrapper Blackwell「那年最暢銷」改「暢銷」；Lil' Ed 的 J.B. Hutto 拼法統一（uncle 未定舅或叔，寫「長輩親戚」）。
+- 保留：LaVern Baker 對白人翻唱提告一事（為她反對白人翻唱 R&B 的代表性核心，不寫判決細節以外的私事）；Robert Pete Williams 在 Angola 監獄被錄音、經民俗學者陳情獲釋（為他被發現的經過，未寫罪名）。
+- 新近事實：Ruthie Foster 2025 年第 67 屆葛萊美最佳當代藍調專輯（官網＋維基）。
+- 搜尋失敗超限：Mississippi Sheiks 失敗請求 5 次（多一次為無結果的 Britannica 網址），不影響事實。
+- 待本機（上線簡介）：Kenny Wayne Shepherd「藍調榜停留二十週」應為第一名 20 週；Lil' Ed「舅舅 J.B. Hutto」來源只寫 uncle；Magic Slim「1970 年起與弟弟組成 The Teardrops」年份有爭議；Memphis Jug Band「1926 年起成形」宜改 1920 年代中期、「卡祖笛當主奏」無出處；Mississippi Sheiks「核心成員含 Bo Carter」（1930 首錄為 Vinson 與 Lonnie Chatmon）與國家錄音登記簿年度（2017，非 2018）；Otha Turner「90 歲錄成」（錄音時約 84 至 90 歲）；Reverend Robert Wilkins「1936 年目睹兇殺、1950 年受任」僅維基；Robert Lockwood Jr.「唯一直接向 Robert Johnson 學琴」僅維基；Ruthie Foster「婉拒 Atlantic」（實為開發約因母病中止）、「三度入圍葛萊美」已過時、專輯年 2007／2008；Stevie Ray Vaughan《In Step》「Reese Wynans 首度列入正式編制」（1985 年起即為團員）；T-Model Ford「隨 R.L. Burnside 巡演」與報紙年度第三佳無出處。
+
+## ar-d-027（2026-10-08）
+
+- 38 位上架（28 full、10 thin：Washboard Sam、平岡睦男とナチュラル・ブギー、127、A Perfect Circle、A Silver Mt. Zion、Aardvark、Abbhama、Adnan Othman、Air Miami、Alan Licht），2 位不寫：8mm Sky（三格查無，可開頁來源一個都不涉及本團）；A Band Called Doris（只有 Discogs、MusicBrainz 的唱片紀錄，寫不出聲音或做法）。藍調段收尾、搖滾段開始。
+- 審稿修 4 處：Thomas A. Dorsey 妻兒死因改「妻兒相繼過世後」、「那個年代最大熱門之一」改「大熱門」；A Certain Ratio 刪「最早一批之一」；Aimee Mann 刪「在世最佳詞曲創作者之林」（榜單式評價）。
+- 放寬字數：Thomas A. Dorsey 260（藍調轉福音、改寫聖詩、訓練第一代福音歌手、〈Precious Lord〉為份量主體）。
+- 搜尋超限放行：三上寛・古澤良治郎 9（雙人卡，多出一次為古澤過世年份第二源）。
+- 寫作層處理：Agape 的「第一支迷幻福音硬搖滾團」單源不寫，改用兩源的「Jesus music 最早三組先驅之一」；Alan Hawkshaw / Keith Mansfield 避開 d-003、d-008 Mansfield 卡與 d-023 The Mohawks 已用的素材（〈The Champ〉、Hyde Park、Countdown、印刷廠）。
+- 卡池年份存疑：10,000 Maniacs《In My Tribe》卡池 1986，三源皆 1987。
+- 同名作廢：Aardvark（動物）、Abaddon（聖經）、Absolution、Agape（神學）、Airplay（蘋果 AirPlay）的維基預抓。
+- 待本機（上線簡介）：Washington Phillips「Corcoran 於 2016 年翻出 1907 年報導」無出處（2002 年即發表）；Absolution EP 年份 1988／1989；Adnan Othman「來自登嘉樓」無來源；Abbhama「2014 年才第一次壓成黑膠」待核 Discogs；Airbridge 廠牌（實為 Red Lightnin'）、「唯一 LP」與年份；Alaska y los Pegamoides《Grandes éxitos》發行月份 4 月／5 月。
+
+## ar-d-028（2026-10-08）
+
+- 39 位上架（30 full、9 thin：Alice Donut、ALL、Alpha Stone、Amp、Androids of Mu、Annexus Quam、Aphrodite、Arcadium、Ariesta Birawa Group），1 位不寫：Alone in a Crowd / Inside Out（素材無任何聲音描述，只有「straight edge 的 youth crew 路線」這種曲風定位；比照 d-022 Soul for Real）。
+- 審稿修 5 處：Alcione 刪 2024 年 Mangueira 嘉年華主題（在世者榮譽只留拉丁葛萊美）；Ash 刪白金認證（留英國榜首）；Alusa Fallax 刪「最被低估之一」；Amebix「拆得比同時代任何作品都徹底」改平述；Arzachel「最搶手也最昂貴之一」改平述。
+- 放寬字數：All Saved Freak Band 271（三位團員相繼過世、Markko 觸電後病床上聽成品、Schwartz 被「解除洗腦」為主體；死因與途中細節未寫）。
+- 寫作層處理：American Music Club 的 Eitzel 年度詞曲作者出自雜誌，不具名就成無出處頭銜，整條不寫；Arch Enemy、Antisect 的「最早」類宣稱不寫；Antony and the Johnsons 首句交代主唱現名 ANOHNI、代名詞用「她」。
+- 同名作廢：Aphrodite（希臘女神）、Arzachel（月球環形山）的維基預抓；Antony 的預抓為 Unthanks 合輯條目，改開 Anohni；Alone in a Crowd / Inside Out 的 Inside Out 不是 Zack de la Rocha 的同名團。
+- 待本機（上線簡介）：Alcione「九歲起吹小號與豎笛」（實約 13 歲）與 Discoteca Básica 第 293 名未核；Älgarnas Trädgård「Grammis 提名」僅本人回憶；All Saved Freak Band「死在赴演出的路上」宜改「死於交通事故」；Aphrodite「1999 年首作由 V2 發行」待核 Discogs；Archers of Loaf《Icky Mettle》「Kraptone 七天錄完」（實約一個月、在 Cat's Cradle）；Ariesta Birawa Group「唯一一張」（1965 年已出過 Djoko Tarub）與「官方正推 dangdut」；Artful Dodger 發行廠牌 FFRR／London，〈Movin' Too Fast〉主唱是 Romina Johnson 不是 Craig David。
+
+## ar-d-029（2026-10-08）
+
+- 36 位上架（28 full、8 thin：Atlas Sound、Azitis、Babyshambles、Bananarians、Bat for Lashes、Batushka、Bellaphon、Best Coast），4 位不寫：Ataraxia（日本前衛團，聲音與地位查無）、Bastard（日本硬蕊團，只有一條身分事實）、Asylum（聲音只有「positive punk 路線」的曲風歸類）、Big Bag（緬甸龐克團，聲音句只能靠曲目長度與曲名語言；比照 d-023 The Politicians）。
+- 審稿修 9 處：在世者成績只留一處——Asia 刪「年度第一名專輯」、Bachman-Turner Overdrive 刪加拿大名人堂、Barenaked Ladies 刪「加拿大第一張白金獨立發行」（序數）與名人堂；最高級刪改——Aunt Sally 刪 Vanity「日本最早的獨立廠牌之一」、Benny Soebardja 刪「群島上最前衛之一」、Big Boys 刪「最早的 skate rock 樂團之一」；Big Boys 英文口號改中文；Beefeater 補半形空格。
+- 身分推翻：Ataraxia 不是派工詞寫的義大利團，是日本 prog 團（MusicBrainz、Made in Japan 廠牌）。
+- 新近事實：Ayreon 的 Arjen Lucassen 2025 年 4 月獲荷蘭授勳騎士（nieuws.nl＋維基）。
+- 寫作層處理：Bark Psychosis 具名樂評人 Simon Reynolds（首創 post-rock 一詞的故事角色）；Beulah 的 Magnet 單一刊物評價不寫；Asia 首句避開被 QA 判為口語的「超級團體」。
+- 卡池年份存疑：Bastille《Bad Blood》卡池 2012，實為 2013 年 3 月。
+- 同名作廢：Asia（洲名）、Aunt Sally（英國遊戲）、Bastard（漫畫）、Big Bag（兒童木偶節目）的維基預抓；Bellaphon 另有同名德國廠牌。
+- 待本機（上線簡介）：ASIAN KUNG-FU GENERATION〈リライト〉「樂團最大單曲」無出處；Aunt Sally 成員名單（Bikke 等）與 The Vinyl Factory 不合；Azitis「沒有鼓組」為推論；Bananarians 的藤井義之與 credit 上的 Sansuke Fujii 未證實同一人；Batmobile「第一支登上 Klub Foot 的非英國樂隊」僅維基單源；Bellaphon「1996 年 Musea 授權盤」未證實。
+
+## ar-d-030（2026-10-08）
+
+- 39 位上架（36 full、3 thin：Big Sleep、Bodkin、Bring Me the Horizon），1 位不寫：Blast Off Country Style（聲音與地位兩格查無，只有 Discogs 的「indie rock」標籤）。
+- 審稿修 7 處：Bix 刪「在西方最知名的波羅的海樂團」與「立陶宛搖滾史上可能最出名」改平述；Black Tambourine 刪「最具影響力的美國樂團之一」（維基單源）；Bobak, Jons, Malone「最搶手的黑膠之一」改平述；Bryan Adams 在世者榮譽只留加拿大勳章（刪鑽石認證序數與 Walk of Fame）；Brygada Kryzys 刪「最重要、最具影響力之一」並補半形空格；boygenius 刪多餘空格。
+- 放寬字數：Buddy Holly 272（搖滾名人堂首批、確立樂團編制、Beatles 團名與 Stones 翻唱為份量主體，已故）。
+- 新近事實：Billy Idol 與 Steve Stevens 2026 年入選搖滾名人堂（維基＋名人堂官網）；Bonnie Tyler 2026 年 7 月過世（維基＋Louder Sound＋Radio X）。
+- 卡池年份存疑：Buddy Holly 卡池 1962，原版 1957 年 11 月；Bikini Kill / Huggy Bear 分享盤卡池 1992，英文維基三頁與 Trouser Press 皆寫 1993、英國版廠牌 Catcall。
+- 同名作廢：Big Dipper（北斗七星）、Bodkin（2024 年影集）、Bram Stoker（小說家）的維基預抓。
+- 待本機（上線簡介）：Biglietto per l'Inferno「1994 年發願成為本篤會修士」（1994 退隱、1990 年代末才成修士）；Bogshed「John Peel 說是往水源下毒的音樂版本」出處不明；Brain Failure 日版發行年 2002／2003；Brainticket「數個國家遭禁」只找到「據稱在美國被禁」；Breakdown 的 Eyeball 所在地與成立年；Brygada Kryzys「銷毀名單」僅波蘭維基；Buffalo 封面與唱片行拒進貨無出處；Bulldog Breed「三名核心成員組成 T2」（實為 Cross 與 Jinks 兩人）。
+
+## ar-d-031（2026-10-08）
+
+- 39 位全上（30 full、9 thin：Campo di Marte、Castanarc、Catapilla、Cause for Alarm、Cave In、Chavez、Chrissy Zebby Tembo、Clark-Hutchinson、Collective Soul）。本批名冊原為 39 位。
+- 審稿修 8 處：英文歌詞引語改中文（Candlebox 團名出處）；最高級刪除——Carroll Thompson「同時代最受喜愛也最具影響力之一」、Carsick Cars「中國最知名、最受推崇之一」、Catherine Wheel「那個年代最偉大的失落樂團之一」、Char「日本最偉大的吉他手之一」（維基單源）、Chavez「最好的新搖滾樂團之一」、Children of Bodom「芬蘭史上最暢銷之一」、Circuit des Yeux「沒有第二人這樣唱」。
+- 保留：Burnin Red Ivanhoe「丹麥第一張雙 LP」（兩源）；City〈Am Fenster〉在 radioeins 百人票選列東德最佳歌曲（具名票選）；Close Lobsters 具名 NME 的 C86 合輯（為事件本身，不是評價來源）；Coloured Balls「媒體指責鼓勵暴力」為樂團解散核心，非官司。
+- 身分：Carl Perkins 是 1958 年過世的美國爵士鋼琴手，不是 rockabilly 歌手；Caedmon 是愛丁堡大學的基督教民謠搖滾團（卡池 1994 為 1978 年原版的重發）；Chrissy Zebby Tembo 為 Ngozi Family 的鼓手兼歌手。
+- 同名作廢：Campo di Marte（文學雜誌）、City（城市）、Cirkus（丹麥馬戲團）的維基預抓。
+- 待本機（上線簡介）：Burn《Do or Die》「二十五年前」「1992 年同名 EP」（實為 1992 年試聽帶、約 2002 年發 EP）；Carl Perkins「1956 年錄音」（1955 錄、1956 發行）與「funky hard bop 先行者」無據；Carroll Thompson「倫敦出身」（生於 Letchworth）與「全球賣過百萬張」；Catapilla「三種薩克斯風」（人員表只列兩種）；Cervello「1970 年成立」各源不一；CIV《Set Your Goals》發行月份與總長待核。
+
+## ar-d-032（2026-10-08）
+
+- 40 位全上（28 full、12 thin：Concrete Rubber Band、Confuse、Corte dei Miracoli、Cos、Crow、Crumb、D.R. Hooker、Danielle Dax、Darius、Das Damen、Debris'、Deerfield）。
+- 審稿修 5 處：Company Caine 刪「比當時幾乎任何一團都更開闊」；Confuse 刪「被盜版最多的日本樂團」（唱片行文案單源）；Cressida 刪「Vertigo swirl 最偉大的兩個時刻」；Czerwone Gitary 刪「波蘭史上最受歡迎之一」；Dark 刪 NME 與 Record Collector 刊名（榜單保留、不具名）。
+- 寫作層處理：Concrete Rubber Band 研究層只有一篇部落格，第二 src 以卡單 Discogs 原盤頁補（只佐證唱片存在），接受；Condition Green「沖繩搖滾開路者」歸給縣知事追悼語；CSNY 的名人堂與 James Taylor 評語具名；Damon 與 Damon & Naomi 分寫、Damon 成癮與 Dane Donohue 詐欺案不寫。
+- 卡池年份存疑：Death of Samantha《Strungout on Jargon》卡池 1985，維基與 Trouser Press 皆 1986。
+- 同名作廢：Complex（布袋寅泰與吉川晃司的日本二人組）、Conflict（亞利桑那同名團）、Credo（信經）、Crow（烏鴉）、Darius（姓氏消歧義）的維基預抓。
+- 待本機（上線簡介）：Company Caine「Kent 榜前四十名」（另說最高 49 名）；Confuse「十三年後由 Anarchy Centre 與 Confuse Records 聯名重壓」無據（Discogs 為 1984 Violent Party Records）；Craig David「先寫完錄完才簽 Wildstar」與「全球 750 萬張」；Credo「利耶帕亞火柴廠」（史料為木材加工廠 Baltija）；Czerwone Gitary「2008 年金唱片」（波蘭維基為銀唱片）；Dead Boys「hardcore 世代翻唱最多」「Billboard 200 第 189 名」〈Hey Little Girl〉收錄細節皆未驗；Décima Víctima「唯一的一筆發行」已過時（2024 Munster 再版）；D.R. Hooker 原盤廠牌 On Records 與 spaceritual 說法不一。
+
+## ar-d-033（2026-10-08）
+
+- 40 位全上（36 full、4 thin：Deja-Vu、Discus、Dump、Earthen Vessel）。Deja-Vu 的聲音句以編制（無吉他的鍵盤三重奏、貝斯手與鼓手兼主唱）當做法，比照 d-024 Wayne Davis 的編制先例，接受。
+- 審稿修 8 處：最高級刪改——Deicide「成形期最好之一」、Demon Fuzz「最常被盜版與取樣之一」、Derek and the Dominos「Clapton 最偉大的作品」改「代表作」、Discordance Axis 刪 Decibel 刊名與「史上最好之一」、Dr. Z「最稀有之一」改平述；Disciplina Kičme 刪單一樂評的「無可爭議的經典」（保留作家 Jergović 具名說法）；Dion & the Belmonts 刪 Buddy Holly 包機與空難細節（只留同台巡演）並改兩句年份開頭。
+- 保留：Drop Nineteens 具名 Melody Maker 單曲週選（事件本身）；Drakkar 兩位團員在赤柬時期失蹤（歷史脈絡，非死因細節）。
+- 同名作廢：Deja-Vu（心理現象）、Discus（壓縮演算法）、Drakkar（義大利 power metal 團）的維基預抓。
+- 待本機（上線簡介）：Dennis the Fox「2006 年被 DJ Shadow 取樣進〈Funky Skunk〉」（該混音專輯 2005 年發行）；Desmond Dekker「第一張進英國前二十的牙買加製作唱片」（Millie Small 為反例）；Diaframma「全碟詞曲出自主唱一人」（詞曲是吉他手 Fiumani、主唱是 Sassolini）；Discus 海外音樂節年份無據；Dr. Z「詞曲製作人聲同一人」（製作人為 Campbell-Lyons）；Drakkar「1970 年夏天重組」（1970／1971）；East「1983 年英語重錄」（另說 1982）。
+
+## 第四輪十批接力收尾（ar-d-024～033）
+
+- 合計 391 位上架（324 full、67 thin），8 位不寫：8mm Sky、A Band Called Doris、Alone in a Crowd / Inside Out、Asylum、Ataraxia、Bastard、Big Bag、Blast Off Country Style（皆為聲音或身分查無、或只有曲風標籤）。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」清單的上線簡介勘誤（改 KV）；卡池年份存疑（10,000 Maniacs、Bastille、Buddy Holly、Bikini Kill / Huggy Bear、Death of Samantha、Cannon's Jug Stompers、Charlie Musselwhite、Caedmon）。
