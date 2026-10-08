@@ -5,3 +5,4 @@
 - 產生：`node scripts/build-shop-print.mjs`（全部在售，依曲風排序）或 `--ids <Notion 頁面 id,…> --out <檔名>`。
 - 轉 PDF：用 Chrome 開 HTML → 列印 → 紙張選 A6、邊界「無」、勾「背景圖形」；或用 Playwright `page.pdf({ width: '105mm', height: '148mm', printBackground: true })`。
 - 後台改過的門市版文字存在 Firestore，不在 descs.json；要印改過的版本，先把改動同步回 descs.json。
+- Illustrator 可編輯版：`shop-a7.jsx`／`shop-a6.jsx`（`node scripts/build-shop-print-ai.mjs --size a7|a6` 從對應 HTML 量版面產生）。Illustrator → 檔案 → 指令碼 → 其他指令碼… 選 .jsx，會開新文件、一張卡一個工作區域（CMYK），介紹是一個可直接改字、自動換行的區域文字框，其餘是點文字、線條、色塊。先裝字型（Google Fonts 免費）：Noto Serif TC、Noto Sans TC、IBM Plex Mono；沒裝會改用思源宋體／黑體 TC，再沒有就用預設字並在結束時列出缺哪些。介紹文字若改到框內放不下，結束訊息會列出是哪幾張。
