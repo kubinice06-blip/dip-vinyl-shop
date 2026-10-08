@@ -55,3 +55,4 @@
 - **8887** Yufu《To My Pan Pal》（策展 a 組退件，8781–8790）：退件理由是卡池 EP 白名單（§5.5 不含台灣），屬卡池收錄閘門；門市版只為店內實物寫介紹，不受該閘門限制，照收進研究 r10（盤名照正名《To My Pen Pal》）。卡單維持退件，日後要上卡池再議。
 - **8888** Culture Club〈It's a Miracle / Miss Me Blind〉：兩曲皆在池中《Colour by Numbers》（a 組查證），Notion 卡池鍵填 `Culture Club|Colour by Numbers`、移出 PENDING_NEW、NOTES 標「單曲」，mood-map 補 crowd＋flame；店內遊戲即刻可抽。門市版寫的是這張單曲本身（研究 r10 末筆），不是母專輯。
 - **8889** 研究分組：r8＝池中 6 張、r9＝b 組 7 張、r10＝a 組 6 張＋Yufu＋Culture Club 單曲、r11＝c 組 7 張；合計 28 份門市版。
+- **8890**（推翻 8888）店主 2026-10-08：「Culture Club 單曲就是單曲不是專輯」。撤回掛《Colour by Numbers》：Notion 卡池鍵清空、放回 PENDING_NEW（註明單曲不掛專輯卡）、mood-map 撤回、inventory 回 pending_card。店內遊戲不抽它；門市版照寫單曲本身（r10 末筆，key 用單曲名，ids 掛 Notion 頁面 id）。
