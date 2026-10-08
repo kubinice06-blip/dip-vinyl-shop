@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 731 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 732 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -731,6 +731,7 @@
 | ar-d-042 | Music Emporium | Music Emporium | 壓 300 張 | 張數只見英文維基單源，Cosby 訪談沒有提到；建議降成較不具體的說法（極少量自壓）或保留但視為單源 | https://en.wikipedia.org/wiki/Music_Emporium |
 | ar-d-042 | Mystic Siva | Mystic Siva | 四人編制含 Mark Heckert | Psychedelic Baby 與 Concreteweb 兩處都拼 Marc Heckert；名字拼法可能應為 Marc，低信心，建議店主核對專輯封底 | https://www.psychedelicbabymag.com/2014/02/mystic-siva-mystic-siva-19702014-review.html |
 | ar-d-043 | Odyssey | Odyssey | 前身是康乃狄克的家族組合 Lopez Sisters | 來源不一：維基與 everyuknumber1 說來自康乃狄克，barrypopik 說三姊妹生於美屬維京群島、紐約長大；建議店主改成不點出生地 | https://barrypopik.com/blog/native_new_yorker_1977 |
+| ar-d-043 | Paul Roland | Burnt Orchids | 1985 年的 SCOOP 2，Aftermath Records 發行，八軌，同一家 Aftermath 的 AFT 1 是 Robyn Hitchcock 的專輯 | Paul Roland 官方傳記寫他『回到 Armageddon Records 發行迷你專輯《Burnt Orchids》』；Discogs 記 Aftermath Records、SCOOP 2、LP。廠牌與是否為迷你專輯兩邊對不上（可能是 Armageddon 旗下或發行關係，未驗證），建議在本機核對原盤封套與 Discogs 條目後再決定是否改。 | https://www.paulroland.info/biography.html |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

@@ -697,3 +697,18 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Mk.gee 的 Eric Clapton 評語、Natalie Merchant 的 Michael Stipe 說法、N.E.R.D 的 Virgil Abloh 與 Tyler, the Creator 說法（具名人物）；Neil Young 搖滾名人堂（在世者唯一一處）；New Found Glory 不寫 Chad Gilbert 過世（新近且不必要）。
 - 身分：Moolah 是紐約二人組 Walter Burns 與 Maurice Roberson；Mountain 是 Leslie West 的團（維基預抓山岳條目作廢）；Murphy's Law（維基預抓格言條目作廢）；Nausea 是紐約 crust punk；Nothing Painted Blue 與 d-035 Franklin Bruno 已比對無撞句。
 - 待本機（上線簡介）：Murple「1973 年成立」（另說 1971）；Music Emporium「被 Liberty 開除」「壓 300 張」單源；Mystic Siva「Mark Heckert」應為 Marc；Necros「第一個替 Touch and Go 錄音」單源。
+
+## ar-d-043（2026-10-08）
+
+- 39 位全上（30 full、9 thin：Pablo Cruise、Pablo Picasso、Pale Saints、Papa Roach、Parameter、Passenger、Passion Pit、Paul Clark、Petrus Castrus）。
+- 審稿修 14 處：最高級刪改——Oberon「最稀有最昂貴之一」、Opus Avantra「最受海外喜愛之一」、Ought「最受矚目之一」、Overkill「最成功的東岸 thrash 之一」、P.O.D.「最長壽名曲之一」、Partibrejkers「最受好評之一」、Pau Riba 刪「最宇宙、最嬉皮」引語、Paul Weller「最具影響力」改「代表」、Pekinška Patka「最突出最有影響力」與「第一張龐克專輯」（兩源不獨立）、Pērkons「最重要之一」、Petrus Castrus「最早的交響搖滾之一」；健康細節——Oddział Zamknięty 刪離團原因、P.O.D. 刪母親罹癌；新近事實——Partibrejkers 刪 2025 年展覽（單源）；媒體名——Pau Riba 的 Enderrock 改「樂評票選」。
+- 保留：Pat Benatar、Peter Frampton 的搖滾名人堂評語（在世者唯一一處）；Paul Weller 的 Brit Awards 傑出貢獻獎（唯一一處）；Paul Roland 的 Robyn Hitchcock 評語（具名樂手）；Parálisis Permanente 只寫 Benavente 二十歲過世、不寫死因。
+- 身分修正：Parameter 是英國團（Lancashire 的 Deroy 壓製；特注原寫美國私壓，錯）；Odyssey 是紐約 Lopez 姊妹的三人組（維基預抓荷馬史詩作廢）；Oberon 是 Radley College 學生團（維基預抓莎翁角色作廢）；Pablo Picasso 是日本野村誠的團（維基預抓畫家作廢）；Pages 是 Richard Page 的團（維基預抓蘋果軟體作廢）；Outburst（維基預抓採礦用語作廢）。
+- 待本機（上線簡介）：Odyssey「康乃狄克的家族組合」（出生地兩說）；Oddział Zamknięty 金唱片與 2022 白金無據；Osanna《Palepoli》1972／1973；Paul Roland《Burnt Orchids》廠牌（官網為 Armageddon、迷你專輯）。
+
+## 第五輪十批接力收尾（ar-d-034～043）
+
+- 合計 391 位上架（311 full、80 thin），8 位不寫：Gorgoroth、Kaseke、Kenneth Higney、Krakdown、L'Arc〜en〜Ciel、Light、Lightyears Away / Thundermother、Maximum Penalty（聲音查無或只剩曲風標籤／錄音地點、身分只是推論、全部事實單源）。
+- 本輪新增的裁定形狀：thin 聲音句若只剩演出名單、曲長或錄音地點即不寫（Gorgoroth、L'Arc〜en〜Ciel、Lightyears Away 一致處理）；但直接塑造聲音的錄音做法可算（Movietone 海灘現場收音）。超額 2 次放行兩例（Gunnar Graps、Hunters & Collectors），皆為高風險事實的第二源。QA 千分位誤報（10,000 Maniacs）照專名保留。
+- 特注身分錯誤由研究層更正 8 處（Grow-Up、Haikara、Iron Cross、Menuets、Parameter 等），皆已照研究層改寫。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；卡池年份存疑（Gila 1967→1971、Keiji Haino 2017 為重發、Leeway 1988、Lizard 1985／1986）。
