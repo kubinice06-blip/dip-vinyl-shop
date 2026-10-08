@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 626 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 633 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -626,6 +626,13 @@
 | ar-d-028 | Artful Dodger | It's All About the Stragglers | Craig David 唱的〈Re-Rewind〉與〈Movin' Too Fast〉新版都收在內 | 待核：〈Movin' Too Fast〉的主唱是 Romina Johnson，Craig David 只唱〈Re-Rewind〉（英文維基兩條目）。若簡介原意是『兩首都收在內』則句子容易被讀成 David 唱兩首，建議改寫。 | https://en.wikipedia.org/wiki/Movin'_Too_Fast |
 | ar-d-029 | ASIAN KUNG-FU GENERATION | ソルファ | 第二首〈リライト〉……成為樂團最大單曲 | 未找到支持『最大單曲』的來源；英文維基只記〈Rewrite〉2004 年 Oricon 單曲榜最高第 4 名、當年賣近 15 萬張，無法證明是樂團最大單曲，建議改成較保守說法（如『最廣為人知的單曲』仍需來源）或刪除。 | https://en.wikipedia.org/wiki/Rewrite_(song) |
 | ar-d-029 | Aunt Sally | Aunt Sally | Bikke 吉他兼主唱、中岡義雄貝斯、丸山隆打鼓 | The Vinyl Factory 的成員名單是 Phew、Mayu、Takashi Maruyama、Yasuko Mori、Yoshio Nakaoka，不含 Bikke；若 Bikke 與 Yasuko Mori 是同一人，名單可保留，否則需重核成員與樂器分工。 | https://www.thevinylfactory.com/news/japanese-post-punk-aunt-sallys-debut-album-reissued |
+| ar-d-029 | Azitis | Help | 沒有鼓組，推進力來自鍵盤與貝斯 | Discogs 只登錄 Steve Nelson 為 percussion（打擊樂），沒有說明有無鼓組；「沒有鼓組」是從 credit 推論，找不到來源直接證實，建議改成「打擊樂由 Steve Nelson 一人負責」或刪去推論。 | https://www.discogs.com/release/5033032-Azitis-Help |
+| ar-d-029 | Bananarians | Boner | 原盤 credit 上藤井義之掛人聲、吉他與鍵盤 | Discogs 的《Boner》credit 寫的是 Sansuke Fujii（人聲、吉他、鍵盤），Discogs 團體成員欄另有「藤井義之」，兩者在 Discogs 上是各自獨立的條目，沒有資料證明是同一人；簡介把 credit 直接寫成藤井義之，建議改寫成「藤井（Sansuke Fujii）」或查證後再用。 | https://www.discogs.com/master/1323163-Bananarians-Boner |
+| ar-d-029 | Batmobile | Hard Hammer Hits | 1986 年成為第一支登上倫敦 Klub Foot 的非英國樂隊 | 『第一支非英國樂隊』只有維基 Batmobile 條目單源，樂團官網傳記與維基 Klub Foot 條目都沒有這個說法，屬『第一』類高風險宣稱，建議退成『1986 年首度到倫敦 Klub Foot 演出』；原句不一定錯，但目前湊不到第二源。 | https://en.wikipedia.org/wiki/Klub_Foot |
+| ar-d-030 | Biglietto per l'Inferno | Biglietto per l'Inferno | 主唱 1994 年發願成了本篤會修士 | Il Giorno 記載 Canali 1994 年是退隱到 Minucciano 的隱修院，1999 年才成為本篤會修士；Rockit 記為 1990 年代末發永願。『1994 年發願』與兩源不符（Il Giorno 該頁的 1994 年與『38 歲』也互相矛盾，年份宜只寫『1990 年代末』）。 | https://www.ilgiorno.it/lecco/cronaca/morto-fra-claudio-canali-1.4111408 |
+| ar-d-030 | Bikini Kill / Huggy Bear | Yeah Yeah Yeah Yeah / Our Troubled Youth | 1992 年錄音；由 Kill Rock Stars 發行 | 英文維基三頁與 Trouser Press 皆寫此分享盤 1993 年發行（維基載 1993 年 3 月 8 日），且英國版廠牌是 Catcall、Kill Rock Stars 為美國版；『1992 年錄音』查不到來源。卡片年份 1992 也與發行年 1993 不符，宜由店主決定是否改年份。 | https://en.wikipedia.org/wiki/Our_Troubled_Youth |
+| ar-d-030 | Blues Creation | 悪魔と11人の子供達 | 同年 7 月在日本コロムビア推出第二作 | 英文維基《Demon & Eleven Children》條目與 Creation 條目均寫 1971 年 8 月（前者明載 8 月 25 日，由日本コロムビア旗下 Denon 發行，與《Carmen Maki/Blues Creation》同日）；日文維基未載月份。建議把「7 月」改為「8 月」。 | https://en.wikipedia.org/wiki/Demon_%26_Eleven_Children |
+| ar-d-030 | Bogshed | Brutal | John Peel 說，那是往水源下毒的音樂版本 | 維基只寫『2022 年被形容為』並引 Marsden 的文章，未寫是 Peel 所說；上線簡介與事實庫的 Guardian 摘要寫 Peel。Guardian 原文在雲端被擋，待在本機核對該句的說話者。 | https://en.wikipedia.org/wiki/Bogshed |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

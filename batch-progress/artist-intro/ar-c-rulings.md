@@ -555,3 +555,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 寫作層處理：American Music Club 的 Eitzel 年度詞曲作者出自雜誌，不具名就成無出處頭銜，整條不寫；Arch Enemy、Antisect 的「最早」類宣稱不寫；Antony and the Johnsons 首句交代主唱現名 ANOHNI、代名詞用「她」。
 - 同名作廢：Aphrodite（希臘女神）、Arzachel（月球環形山）的維基預抓；Antony 的預抓為 Unthanks 合輯條目，改開 Anohni；Alone in a Crowd / Inside Out 的 Inside Out 不是 Zack de la Rocha 的同名團。
 - 待本機（上線簡介）：Alcione「九歲起吹小號與豎笛」（實約 13 歲）與 Discoteca Básica 第 293 名未核；Älgarnas Trädgård「Grammis 提名」僅本人回憶；All Saved Freak Band「死在赴演出的路上」宜改「死於交通事故」；Aphrodite「1999 年首作由 V2 發行」待核 Discogs；Archers of Loaf《Icky Mettle》「Kraptone 七天錄完」（實約一個月、在 Cat's Cradle）；Ariesta Birawa Group「唯一一張」（1965 年已出過 Djoko Tarub）與「官方正推 dangdut」；Artful Dodger 發行廠牌 FFRR／London，〈Movin' Too Fast〉主唱是 Romina Johnson 不是 Craig David。
+
+## ar-d-029（2026-10-08）
+
+- 36 位上架（28 full、8 thin：Atlas Sound、Azitis、Babyshambles、Bananarians、Bat for Lashes、Batushka、Bellaphon、Best Coast），4 位不寫：Ataraxia（日本前衛團，聲音與地位查無）、Bastard（日本硬蕊團，只有一條身分事實）、Asylum（聲音只有「positive punk 路線」的曲風歸類）、Big Bag（緬甸龐克團，聲音句只能靠曲目長度與曲名語言；比照 d-023 The Politicians）。
+- 審稿修 9 處：在世者成績只留一處——Asia 刪「年度第一名專輯」、Bachman-Turner Overdrive 刪加拿大名人堂、Barenaked Ladies 刪「加拿大第一張白金獨立發行」（序數）與名人堂；最高級刪改——Aunt Sally 刪 Vanity「日本最早的獨立廠牌之一」、Benny Soebardja 刪「群島上最前衛之一」、Big Boys 刪「最早的 skate rock 樂團之一」；Big Boys 英文口號改中文；Beefeater 補半形空格。
+- 身分推翻：Ataraxia 不是派工詞寫的義大利團，是日本 prog 團（MusicBrainz、Made in Japan 廠牌）。
+- 新近事實：Ayreon 的 Arjen Lucassen 2025 年 4 月獲荷蘭授勳騎士（nieuws.nl＋維基）。
+- 寫作層處理：Bark Psychosis 具名樂評人 Simon Reynolds（首創 post-rock 一詞的故事角色）；Beulah 的 Magnet 單一刊物評價不寫；Asia 首句避開被 QA 判為口語的「超級團體」。
+- 卡池年份存疑：Bastille《Bad Blood》卡池 2012，實為 2013 年 3 月。
+- 同名作廢：Asia（洲名）、Aunt Sally（英國遊戲）、Bastard（漫畫）、Big Bag（兒童木偶節目）的維基預抓；Bellaphon 另有同名德國廠牌。
+- 待本機（上線簡介）：ASIAN KUNG-FU GENERATION〈リライト〉「樂團最大單曲」無出處；Aunt Sally 成員名單（Bikke 等）與 The Vinyl Factory 不合；Azitis「沒有鼓組」為推論；Bananarians 的藤井義之與 credit 上的 Sansuke Fujii 未證實同一人；Batmobile「第一支登上 Klub Foot 的非英國樂隊」僅維基單源；Bellaphon「1996 年 Musea 授權盤」未證實。
