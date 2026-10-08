@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 580 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 599 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -580,6 +580,25 @@
 | ar-d-025 | Bobby Rush | Porcupine Meat | 當時他已八十三歲 | Bobby Rush 的出生年各來源不一致（1933／1935／1936），2017 年 2 月領獎時的年齡從 80 到 83 歲都有說法，上線簡介寫死 83 歲不穩；建議刪去年齡或改成『年過八旬』。 | https://64parishes.org/?p=59838 |
 | ar-d-025 | Cannon's Jug Stompers | The Complete Works: 1927-1930 | 35 軌分四面 | 維基 Cannon's Jug Stompers 與 Gus Cannon 條目都寫 Cannon 1927 至 1930 年共錄 34 首；上線簡介的 35 軌可能是版本多收一軌，建議核對 Yazoo 1082/3 實際曲目表，查不到就改成不寫曲數。 | https://en.wikipedia.org/wiki/Cannon%27s_Jug_Stompers |
 | ar-d-025 | David "Honeyboy" Edwards | The World Don't Owe Me Nothing | 也是 Johnson 中毒身亡當晚的在場見證者 | Robert Johnson 的死因與當晚經過是 Edwards 本人的說法（維基稱其為流傳最廣的版本、earlyblues 稱 best-known version），並非定論；上線簡介寫成確定事實，建議改為「他說自己是 Johnson 過世那晚的在場者」並去掉「中毒」。 | https://en.wikipedia.org/wiki/David_%22Honeyboy%22_Edwards |
+| ar-d-025 | Eddie Boyd | 7936 South Rhodes | 1970 年落腳赫爾辛基 | 各源不一：維基寫 1970，芬蘭藍調協會寫自 1971 年起長居赫爾辛基；建議改為「1970 年代初」。 | https://www.bluesnews.fi/eddieboyd/ |
+| ar-d-025 | Eddie Taylor | I Feel So Bad | 1948 年他搬到芝加哥 | 各源不一致：維基寫 1948，blues-sessions 寫約 1948 至 1949，MojoHand 寫 1949；建議改為「1940 年代末」。 | https://blues-sessions.com/eddietaylor.php |
+| ar-d-025 | Guitar Slim | Sufferin' Mind | 〈The Things That I Used to Do〉由年輕的 Ray Charles 製作 | 來源不一：維基歌曲條目寫 Charles 編曲並製作，toppermost 寫該場 Charles 受聘彈鋼琴、製作人為 Johnny Vincent。建議改寫為「Ray Charles 在同場彈鋼琴」，製作人一句拿掉或標明說法不一。 | https://www.toppermost.co.uk/guitar-slim/ |
+| ar-d-025 | Gus Cannon | Walk Right In | 1929 年 Cannon's Jug Stompers 錄的那首歌 | 錄音年份來源不一：維基寫 1929，waybackattack 寫 1930（Victor）；另有來源說 Victor 發行在 1930。建議改成「1929 或 1930 年前後」或不寫年。 | https://www.waybackattack.com/rooftopsingers.html |
+| ar-d-025 | Hank Ballard & the Midnighters | Sexy Ways: The Best of Hank Ballard & the Midnighters | 前段是遭 FCC 禁播的 Annie 系列 | 「FCC 禁播」只見維基 Midnighters 條目；Britannica 寫的是電台節目主管反對露骨歌詞。建議改為「部分電台拒播」。 | https://www.britannica.com/biography/Hank-Ballard |
+| ar-d-025 | Homesick James | Blues on the South Side | 他是 Elmore James 的表親 | 維基寫的是 Homesick 自稱年長的表親、曾買吉他並教 Elmore 滑管，並註明部分說法未獲證實；建議改成「自稱／據說是表親」。 | https://en.wikipedia.org/wiki/Homesick_James |
+| ar-d-025 | Homesick James | Blues on the South Side | 一路活到 2006 年、享壽 96 歲 | 訃聞稱享年 96，但他的出生年份沒有定論（本人說過 1905、1910、1914，工會紀錄 1924），『享壽 96』建議改成『訃聞稱享年 96 歲』或只寫 2006 年過世。 | https://earlyblues.org/?p=5609 |
+| ar-d-025 | Imarhan | Imarhan | 主唱 Iyad Moussa Ben Abderahmane(Sadam)是 Tinariwen 貝斯手 Eyadou Ag Leche 的姪子 | The Quietus 訪談明寫 Eyadou 是 Sadam 的 cousin、不是 uncle；Songlines 評論同寫 cousin。應改為『表親』。 | https://thequietus.com/?p=19620 |
+| ar-d-025 | Imarhan | Imarhan | 英文維基把 Imarhan 列為 Tinariwen 影響下成長的新一代圖阿雷格搖滾樂團 | 本層讀到的英文維基導言只寫『阿爾及利亞圖阿雷格 desert rock 五人樂團，2006 年在 Tamanrasset 成軍』，沒有提到 Tinariwen；這句說法建議改引 Songlines 或 The Quietus 的 Tinariwen 關聯，不要掛維基。 | https://en.wikipedia.org/wiki/Imarhan |
+| ar-d-025 | J.B. Lenoir | Alabama Blues | 製作人是德國人 Horst Lippmann | 維基（J. B. Lenoir 條）寫 1965 至 1966 年 Willie Dixon 錄下他與 Fred Below 的演奏、Lippmann 負責發行；Blues Foundation 入選頁寫 Dixon 製作這批錄音。Lippmann 較像發行與策劃方，製作人是否同時掛名需對 LP 內頁核實，建議改寫成「Willie Dixon 製作、Horst Lippmann 發行」或查內頁再定。 | https://www.blues.org/award-search/j-b-lenoir-never-achieved-the-le |
+| ar-d-025 | Jessie Mae Hemphill | Feelin' Good | 電吉他自彈自唱配鈴鼓的單人律動是其標誌 | 維基與 earlyblues 訃聞只說她 1993 年中風、無法再彈吉他之後才改打鈴鼓，沒有來源說她《Feelin' Good》時期自彈自唱同時配鈴鼓；建議查證或改寫。 | https://earlyblues.org/?p=5644 |
+| ar-d-025 | John Hammond | So Many Roads | 1965 年在 Vanguard 錄下 | 維基專輯條目寫 1964 年錄音（單一場三小時）、1965 年發行；建議改成「1965 年發行」或確認錄音年份。另一說法（Peter Stone Brown）稱 1965 年一天錄完，兩說不一致。 | https://en.wikipedia.org/wiki/So_Many_Roads_(John_P._Hammond_album) |
+| ar-d-025 | Johnny Shines | Standing at the Crossroads | 戰後落腳芝加哥 | 維基寫他 1941 年定居芝加哥，1946 年才首次錄音；「戰後」落腳與維基年份不合（encyclopedia.com 寫 1946 年為 Columbia 錄音、J.O.B. 在 1953 年）。 | https://en.wikipedia.org/wiki/Johnny_Shines |
+| ar-d-025 | Johnny Shines | Standing at the Crossroads | 1971 年在 Testament 發行 | audaud 評論寫錄音於 1970 年 11 月、編號 Testament T-2221（1970）；Apple Music 標 1971。來源不一致，建議查原盤或改寫成「1970 年錄音」。 | https://www.audaud.com/johnny-shines-standing-at-the-crossroads-testament-1970-pure-pleasure-vinyl/ |
+| ar-d-025 | Josh White | Josh at Midnight | 因民權立場在紅色恐慌年代遭封殺打壓 | encyclopedia.com 寫他「從未被正式封殺」，只是被《Red Channels》點名、爭議拖慢事業；維基寫被麥卡錫主義者騷擾。「封殺」一詞偏強，建議改成「被點名、事業受損」。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/white-josh |
+| ar-d-026 | Kenny Wayne Shepherd | Ledbetter Heights | 在 Billboard 藍調榜停留二十週 | 維基與 Relix 都寫該專輯在 Billboard 藍調榜『第一名』待了 20 週；簡介寫成『停留二十週』語意偏弱，可改為『在藍調榜榜首待了二十週』。 | https://en.wikipedia.org/wiki/Ledbetter_Heights |
+| ar-d-026 | Lil' Ed & The Blues Imperials | Roughhousin' | Lil' Ed Williams 的滑棒吉他學自舅舅 J. B. Hutto | 英文維基、Earwig 與 Alligator 都只寫 uncle，沒有指明是母方的舅舅；『舅舅』屬過度具體，可改寫成『叔舅輩的 J. B. Hutto』或直接寫 uncle。 | https://earwigmusic.com/earwig-artists/lil-ed-williams/ |
+| ar-d-026 | Reverend Robert Wilkins | Memphis Gospel Singer | 1936 年因在演出場合目睹兇殺而棄藍調入教會，1950 年受任牧職 | 此說法只見於英文維基（1936 年、目睹兇殺、1950 年受任）；NPS 只說多年後一場 Hernando 派對演變成暴力，Cross Rhythms 說 1935 年妻子重病許願、無確切受任年份，culturecatch 說家鄉派對鬥毆。建議改成較寬的寫法（厭倦派對暴力後入教會當牧師），或去掉「目睹兇殺」「1936」「1950」三個具體值。 | https://www.nps.gov/locations/lowermsdeltaregion/rev-robert-timothy-wilkins.htm |
+| ar-d-026 | Robert Lockwood Jr. | Steady Rollin' Man | Lockwood 是唯一直接向 Robert Johnson 學過琴的吉他手 | 『唯一』只見於英文維基與一份參考資料，blues.org 與 UPI 等訃聞只說他向 Johnson 學琴、被稱為其繼子，沒有人把話說死；同輩的 Johnny Shines 也與 Johnson 同行。建議改成「少數直接向 Johnson 學過琴的人」或「常被稱為 Johnson 的傳人」。 | https://www.blues.org/award-search/though-he-traveled-side-by-side- |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

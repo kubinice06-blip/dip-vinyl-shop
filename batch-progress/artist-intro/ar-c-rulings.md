@@ -517,3 +517,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 放寬字數：Willie Mae Ford Smith 256（NEA 傳統藝術最高榮譽、提攜 Mahalia Jackson 為主體，已故）。
 - 身分：鄭雙雙推定為台灣歌手（輔大、政大、三立選秀、台北駐唱），首句以「台灣選秀舞台與台北飯店駐唱」交代，未直書國籍；VST & Company 為菲律賓 Manila Sound；Wayne Davis（維基預抓為美式足球員，作廢）。
 - 待本機（上線簡介）：Van Hunt「2005 年入圍葛萊美」（第 48 屆為 2006 年頒獎）；Victor Uwaifo「1965 年金唱片」無據、收錄時期實為 Ekassa；Vivian Green「Jill Scott 之後最常被點名」無出處；Wayne Davis 製作人（Strut 頁為 Jimmy Watkins 與 Bob Dawson）；William DeVaughn「OutKast 取樣」無出處；Willie Mae Ford Smith「一輩子避開錄音室」「直到 1982 年才被主流認識」皆過滿；Albert Ammons & Meade Lux Lewis《The First Day》「十八軌」（實 19 首）與〈The Blues〉段數；《Showdown!》「Collins 提攜 Copeland」（實為同輩）與「17.5 萬張」（Alligator 稱逾 31 萬）；Ana Popović「赴荷蘭修爵士吉他」（自述念平面設計）；Billy Boy Arnold「1960 年代中期發行」（實 1963）；Blind Blake「破產後行蹤成謎」已過時。
+
+## ar-d-025（2026-10-08）
+
+- 40 位全上（38 full、2 thin：Buffalo Nichols、Chicken Shack）。
+- 審稿修 8 處：Little Walter 刪「二十世紀後期最具影響力之一」（Britannica 單源）；John Hammond 刪「最早的白人藍調專輯之一」；Jo Ann Kelly 刪「唯一贏得美國藝人敬重的英國歌手」；Josh White 刪父親遭毆與死於療養院（死亡情境）；Jontavious Willis 英文引語「my Wonderboy」改中文；兩張 Chess 明星合作卡（《Super Blues》與《Super Super Blues Band》）刪 Muddy「北上改用電吉他」與 Bo Diddley beat 的重疊句；Cannon's Jug Stompers 刪與 Gus Cannon 篇重複的〈Walk Right In〉翻唱冠軍。
+- 新近事實：John Hammond（John P. Hammond）2026 年 2 月過世（維基、Wikidata、Boston Globe 訃聞），本批特注原列為在世者，照已故處理，只寫年月。
+- 卡池年份存疑（不改卡池，記錄待本機）：Cannon's Jug Stompers 卡池 1989，MusicBrainz 首發 1990-06-27；Charlie Musselwhite 卡池 1967，首作 1966 年發行。
+- 同名作廢：Eddie Taylor 的維基預抓是兒子 Eddie Taylor Jr.。
+- 待本機（上線簡介）：Bobby Rush「八十三歲」（生年 1933／1935／1936 三說）；Cannon's Jug Stompers「35 軌」（維基 34 首）；Imarhan「Sadam 是 Eyadou 的姪子」（實為表親）與「英文維基列為 Tinariwen 影響下的新一代」無此句；Guitar Slim「Ray Charles 製作」說法不一；Homesick James「Elmore James 表親」為自稱、「享壽 96 歲」無定論；Gus Cannon 錄音年 1929／1930；Hank Ballard「遭 FCC 禁播」僅維基；Honeyboy Edwards 把 Robert Johnson 之死寫成定論；Eddie Boyd「1970 年落腳赫爾辛基」與「R&B 榜冠軍」；Eddie Taylor「1948 年搬到芝加哥」；J.B. Lenoir 製作人應為 Willie Dixon；Jessie Mae Hemphill 鈴鼓是中風後才改；John Hammond《So Many Roads》錄音年 1964；Johnny Shines「戰後落腳芝加哥」（1941）與發行年 1970；Josh White「遭封殺」（從未正式列黑名單）；Fenton Robinson 簡介引 AllMusic 評語無法查證。
