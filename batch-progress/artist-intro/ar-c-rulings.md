@@ -566,3 +566,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 卡池年份存疑：Bastille《Bad Blood》卡池 2012，實為 2013 年 3 月。
 - 同名作廢：Asia（洲名）、Aunt Sally（英國遊戲）、Bastard（漫畫）、Big Bag（兒童木偶節目）的維基預抓；Bellaphon 另有同名德國廠牌。
 - 待本機（上線簡介）：ASIAN KUNG-FU GENERATION〈リライト〉「樂團最大單曲」無出處；Aunt Sally 成員名單（Bikke 等）與 The Vinyl Factory 不合；Azitis「沒有鼓組」為推論；Bananarians 的藤井義之與 credit 上的 Sansuke Fujii 未證實同一人；Batmobile「第一支登上 Klub Foot 的非英國樂隊」僅維基單源；Bellaphon「1996 年 Musea 授權盤」未證實。
+
+## ar-d-030（2026-10-08）
+
+- 39 位上架（36 full、3 thin：Big Sleep、Bodkin、Bring Me the Horizon），1 位不寫：Blast Off Country Style（聲音與地位兩格查無，只有 Discogs 的「indie rock」標籤）。
+- 審稿修 7 處：Bix 刪「在西方最知名的波羅的海樂團」與「立陶宛搖滾史上可能最出名」改平述；Black Tambourine 刪「最具影響力的美國樂團之一」（維基單源）；Bobak, Jons, Malone「最搶手的黑膠之一」改平述；Bryan Adams 在世者榮譽只留加拿大勳章（刪鑽石認證序數與 Walk of Fame）；Brygada Kryzys 刪「最重要、最具影響力之一」並補半形空格；boygenius 刪多餘空格。
+- 放寬字數：Buddy Holly 272（搖滾名人堂首批、確立樂團編制、Beatles 團名與 Stones 翻唱為份量主體，已故）。
+- 新近事實：Billy Idol 與 Steve Stevens 2026 年入選搖滾名人堂（維基＋名人堂官網）；Bonnie Tyler 2026 年 7 月過世（維基＋Louder Sound＋Radio X）。
+- 卡池年份存疑：Buddy Holly 卡池 1962，原版 1957 年 11 月；Bikini Kill / Huggy Bear 分享盤卡池 1992，英文維基三頁與 Trouser Press 皆寫 1993、英國版廠牌 Catcall。
+- 同名作廢：Big Dipper（北斗七星）、Bodkin（2024 年影集）、Bram Stoker（小說家）的維基預抓。
+- 待本機（上線簡介）：Biglietto per l'Inferno「1994 年發願成為本篤會修士」（1994 退隱、1990 年代末才成修士）；Bogshed「John Peel 說是往水源下毒的音樂版本」出處不明；Brain Failure 日版發行年 2002／2003；Brainticket「數個國家遭禁」只找到「據稱在美國被禁」；Breakdown 的 Eyeball 所在地與成立年；Brygada Kryzys「銷毀名單」僅波蘭維基；Buffalo 封面與唱片行拒進貨無出處；Bulldog Breed「三名核心成員組成 T2」（實為 Cross 與 Jinks 兩人）。

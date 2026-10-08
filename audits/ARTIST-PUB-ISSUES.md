@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 633 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 644 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -633,6 +633,17 @@
 | ar-d-030 | Bikini Kill / Huggy Bear | Yeah Yeah Yeah Yeah / Our Troubled Youth | 1992 年錄音；由 Kill Rock Stars 發行 | 英文維基三頁與 Trouser Press 皆寫此分享盤 1993 年發行（維基載 1993 年 3 月 8 日），且英國版廠牌是 Catcall、Kill Rock Stars 為美國版；『1992 年錄音』查不到來源。卡片年份 1992 也與發行年 1993 不符，宜由店主決定是否改年份。 | https://en.wikipedia.org/wiki/Our_Troubled_Youth |
 | ar-d-030 | Blues Creation | 悪魔と11人の子供達 | 同年 7 月在日本コロムビア推出第二作 | 英文維基《Demon & Eleven Children》條目與 Creation 條目均寫 1971 年 8 月（前者明載 8 月 25 日，由日本コロムビア旗下 Denon 發行，與《Carmen Maki/Blues Creation》同日）；日文維基未載月份。建議把「7 月」改為「8 月」。 | https://en.wikipedia.org/wiki/Demon_%26_Eleven_Children |
 | ar-d-030 | Bogshed | Brutal | John Peel 說，那是往水源下毒的音樂版本 | 維基只寫『2022 年被形容為』並引 Marsden 的文章，未寫是 Peel 所說；上線簡介與事實庫的 Guardian 摘要寫 Peel。Guardian 原文在雲端被擋，待在本機核對該句的說話者。 | https://en.wikipedia.org/wiki/Bogshed |
+| ar-d-030 | Brain Failure | Turn On the Distortion! | 日版是 2003 年 6 月 21 日由 Bad News Records 出的十四軌 | 中文維基寫首張專輯 2002 年由日本 Bad News 發行（限日本），搜尋所見的 Apple Music 簡介同寫 2002 年；上線簡介沿用 MusicBrainz 的 2003-06-21。年份待核：可能 MB 日期是日版再發或登錄晚於實際發行。 | https://zh.wikipedia.org/wiki/%E8%84%91%E6%B5%8A%E4%B9%90%E9%98%9F |
+| ar-d-030 | Brainticket | Cottonwoodhill | 唱片也在數個國家遭禁 | 本層讀到的可靠來源只有 Vandroogenbroeck 本人訪談說「據稱在美國被禁」，未找到「數個國家」的出處；建議改成「據稱在美國遭禁」或刪去。 | https://www.psychedelicbabymag.com/2019/04/brainticket-interview.html |
+| ar-d-030 | Breakdown | Blacklisted | 廠牌 Eyeball 登記在 New Jersey、1994 年起 | 英文維基 Eyeball Records 條目寫該廠牌 1995 年由 Alex Saavedra 與 Vincent Li 在紐約市（14 街與 A 大道的公寓）創立，後來才搬到 New Jersey 的 Kearny；MusicBrainz 則記 area 為 New Jersey、life-span 1994。成立地與年份兩源不一致，建議簡介刪去廠牌所在地與成立年。 | https://en.wikipedia.org/wiki/Eyeball_Records |
+| ar-d-030 | Brygada Kryzys | Brygada Kryzys | 成品後來一度被列入銷毀名單 | 只有波蘭維基專輯條目寫「據信一部分庫存被銷毀，也有人質疑」，本層讀到的 Trójka 文章與英文維基都沒有，其餘搜尋摘要也找不到出處；建議改寫成「據說」或刪去。 | https://pl.wikipedia.org/wiki/Brygada_Kryzys_(album) |
+| ar-d-030 | Buffalo | Volcanic Rock | 封面把女性的身體畫成一座正在來月經的火山，有連鎖唱片行乾脆拒絕進貨 | Tice 訪談把封面歸給攝影師 Nick Van der Lay（未提禁售）；Decibel 只寫對開封套的血腥圖像「反應不佳」，未提唱片行拒絕進貨。「畫成」與「連鎖唱片行拒絕進貨」本層沒找到出處，簡介說法待核。 | https://www.psychedelicbabymag.com/?p=2938 |
+| ar-d-030 | Bulldog Breed | Made in England | 後期的三名核心成員組成了下一支團，那就是 T2 | Discogs 的 T2 條目與 Louder 都只說 Bulldog Breed 的 Keith Cross 與 Bernard Jinks 兩人，與 Peter Dunton 會合組成 T2；Discogs T2 條目並寫 Dunton 原本在另一支團、並非這團的成員，不過 Discogs 的 Bulldog Breed 條目又把 Dunton 列為相關成員。「三名核心成員」寫法待核。 | https://www.discogs.com/artist/421988-T2-3 |
+| ar-d-031 | Burn | Do or Die | 第七軌的曲名，二十五年前是這支團另一張唱片的標題；1992 年那張同名的 EP 是另一個實體 | Last Great Sea 是 1992 年錄製的試聽帶，Revelation 約十年後（2002 年）才以 EP 發行，所以「1992 年的 EP」與「二十五年前的標題」都不準確；建議改成「1992 年錄成試聽帶、2002 年才發行的 Last Great Sea EP」 | https://thehundreds.com/blogs/content/burn-interview |
+| ar-d-031 | Carl Perkins | Introducing... Carl Perkins | 一九五六年在 Dootone 與 Leroy Vinnegar、Lawrence Marable 錄下的三重奏 | 英文維基專輯條目：1955 年於洛杉磯錄音、1956 年由 Dootone 發行；鼓手拼法為 Larance Marable。 | https://en.wikipedia.org/wiki/Introducing_Carl_Perkins |
+| ar-d-031 | Carl Perkins | Introducing... Carl Perkins | 後世把他列為 funky 派 hard bop 鋼琴的先行者 | 維基原文是 Tanner、Gerow、Megill 把他列為最好的 funky（hard bop）鋼琴手之一，並說他早逝使他未能留下影響；『先行者』是上線簡介的推演，來源不支持。 | https://en.wikipedia.org/wiki/Carl_Perkins_(pianist) |
+| ar-d-031 | Carroll Thompson | Hopelessly in Love | 倫敦出身、牙買加裔的 Carroll Thompson | 英文維基專輯條目與 Wikidata 的出生地為赫特福德郡 Letchworth（專輯條目稱她在當地最早的牙買加移民家庭之一長大）；說她倫敦出身沒有來源。 | https://en.wikipedia.org/wiki/Hopelessly_in_Love |
+| ar-d-031 | Carroll Thompson | Hopelessly in Love | 全球賣過百萬張 | 來源互相衝突：維基人物條目無出處地寫 over a million，維基專輯條目寫 1983 年約 25,000 至 30,000 張、最終逾 35,000 張，Oye 寫逾 50 萬張；沒有可靠來源支持『百萬』，建議刪除或改成不寫銷量。 | https://en.wikipedia.org/wiki/Hopelessly_in_Love |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
