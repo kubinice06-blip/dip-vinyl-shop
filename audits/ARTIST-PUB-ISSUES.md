@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 717 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 725 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -716,7 +716,15 @@
 | ar-d-039 | Krzysztof Klenczon | Krzysztof Klenczon i Trzy Korony | 單聲道 XL 0799 與立體聲 SXL 0779 並列 | 研究稿引 pl 維基專輯頁寫 XL/SXL 0779（單聲道與立體聲共用 0779 這個數字），簡介的 0799 疑為誤植；本層未再開 Discogs 驗證，建議店主在本機核對再改。 | https://pl.wikipedia.org/wiki/Krzysztof_Klenczon_i_Trzy_Korony |
 | ar-d-040 | Laughing Hyenas | You Can't Pray a Lie | 吉他手 Larissa Strickland 先前在 L7（引《Trouser Press》） | 她先前的樂團應為底特律的 L-Seven（Third Man 重發文與 Ann Arbor 地方報導都寫 L-Seven）；L7 是洛杉磯的另一支團，簡介若寫 L7 會讓讀者誤認。建議改為 L-Seven。Trouser Press 原文寫的確實是 L7，屬該條目本身的誤植。 | https://pulp.aadl.org/comment/140528 |
 | ar-d-040 | Leeway | Born to Expire | 1988 年的 12 吋編號 PRO-1257、同年的 CD 版 | 英文維基《Born to Expire》與 No Echo 的 Michael Gibbons 訪談都說 1987 年 11 月錄音、延到 1989 年（維基記 1 月 21 日）才發行；1988 年是 MusicBrainz 與 Apple Music 的記法。簡介若把 1988 當首發年可能需改為 1989，或改寫為「1987 年錄音」。卡池年份 1988 同理可能需主線裁定。 | https://en.wikipedia.org/wiki/Born_to_Expire |
+| ar-d-040 | Lombard | Śmierć dyskotece | 唱片還沒上市，波蘭廣播第三台就先收到〈Przeżyj to sam〉的禁播令 | 波蘭文維基與 Notes from Poland 都寫這首歌曾播出（波蘭文維基：第三台開播日播出、兩天後被審查者撤下），並非上市前就先收到禁播令；建議改成「播出後不久被審查者撤下」，或核對原始出處 | https://notesfrompoland.com/2023/06/27/veteran-rock-band-criticises-polish-opposition-for-its-using-anti-communist-anthem-at-rally/ |
 | ar-d-040 | LOUDNESS | Thunder in the East | 專輯在 Billboard 榜停留 23 週、最高第 74 名，是日本樂團首度打進美國百名以內 | 『日本樂團首度打進美國百名以內』是『第一』類宣稱，目前只有日文維基與 Billboard JAPAN 商品頁（促銷性質，原文是『日本人ロック・バンド初のビルボードTOP100への連続チャートイン』）支持，未見獨立第二源，也未排除其他日本團體早於 1985 年進榜的反例；建議改成不帶『首度』的寫法，或由店主本機再查證。『23 週』本層未查到來源。 | https://www.billboard-japan.com/goods/detail/504769 |
+| ar-d-040 | Måneskin | Teatro d'ira, Vol. I | 唱片出來之後，〈Zitti e buoni〉拿下當年 Sanremo 音樂節冠軍，樂團隨後代表義大利參加同年的 Eurovision 歌唱大賽並奪冠 | 先後順序疑有誤：義大利文維基記《Teatro d'ira: Vol. I》2021 年 3 月 19 日發行，Il Post 記樂團是 2021 年 3 月贏得 Sanremo；第 71 屆 Sanremo 的決賽日（本層憑印象為 3 月 6 日，未開頁驗證）早於專輯發行日，簡介『唱片出來之後』拿 Sanremo 冠軍恐倒果為因，建議店主核對 Sanremo 決賽日後改成『專輯出版的同一個月，〈Zitti e buoni〉拿下 Sanremo 冠軍』或拿掉先後。〈Zitti e buoni〉在 Sanremo 前已發行為單曲。 | https://www.ilpost.it/2021/05/23/i-maneskin-hanno-vinto-leurovision-song-contest/ |
+| ar-d-041 | Manowar | Kings of Metal | 創團吉他手 Ross the Boss 與鼓手 Scott Columbus 在團的最後一張 | 《Kings of Metal》確是 Ross the Boss 在團的最後一張；但 Columbus 離團後於 1996 年《Louder Than Hell》回歸並待到 2008 年，對他只有『第一段在團時期的最後一張』成立。建議改成只講 Ross the Boss，或註明 Columbus 後來回團。 | https://en.wikipedia.org/wiki/Kings_of_Metal |
+| ar-d-041 | MASS OF THE FERMENTING DREGS | 祝おう | 前作是 2018 年的《No New World》，同樣是 FLAKES 編號 | 日文維基的專輯表在 2018 年之後還有《NAKED ALBUM》（2020 年）、《Awakening:Sleeping》（2022 年）與《LIVE IN JAPAN》（2024 年），『前作』的說法需改成『再起後第四張專輯』或另查最近一張；事實庫引用的專輯表停在 2020 年，是上線簡介當時漏看。 | https://ja.wikipedia.org/wiki/MASS_OF_THE_FERMENTING_DREGS |
+| ar-d-041 | Maximum Joy | Station M.X.J.Y. | Y Records 是 The Slits 的經理人 Disc O'Dell 開的 | Bandcamp 專文寫創辦人為 Dick O'Dell（The Pop Group 與 The Slits 的經理人）；Discogs 寫成 Disc O'Dell，疑為綽號或誤植，待店主核對 | https://daily.bandcamp.com/features/maximum-joy-feature |
+| ar-d-041 | Maxophone | Maxophone | 成員全部受過音樂院訓練 | 英文維基寫一半成員受過古典訓練、其餘有搖滾樂團經驗；Record Collector 寫三位創團成員受過古典訓練；與簡介的「全部」不一致，建議改成「成員多有古典訓練」或刪去 | https://en.wikipedia.org/wiki/Maxophone |
+| ar-d-041 | Michal Prokop & Framus Five | Město ER | 也被稱為第一張捷克 art rock 專輯 | 本層搜尋一次、開 Echo24 一頁，只見『完整地把 art rock 帶進捷克樂壇』的說法，沒有找到『第一張』的出處；建議改寫成 Echo24 的說法，或由主線確認出處。 | https://echo24.cz/a/SpQyD/do-sine-slavy-hudebnich-cen-andel-vstoupil-michal-prokop |
+| ar-d-041 | Michel Berger | Starmania | 唱片後來登上法國排行榜第 4 名，並拿下逾 100 萬張的鑽石認證 | 各來源不一：英文維基專輯條目寫第 4 名與鑽石認證；Chartmasters（搜尋摘要，未開頁）寫原版首度只到第 16 名；法文來源有只寫金唱片、有寫逾 220 萬張。建議核對 SNEP 或 InfoDisc 後再決定保留或刪掉。 | https://chartmasters.org/?p=739 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

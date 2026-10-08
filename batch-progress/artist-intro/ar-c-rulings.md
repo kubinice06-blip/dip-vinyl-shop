@@ -669,3 +669,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 卡池年份存疑：Keiji Haino 卡池 2017 為 1981 年原作的黑膠重發。
 - 同名作廢：Kaseke（姓氏消歧頁）的維基預抓。
 - 待本機（上線簡介）：Kebnekajse「甘比亞打擊樂手 Hassan Bah」國籍各說不一；Keenan Nasution〈Nuansa Bening〉作者（與 Rudi Pekerti 合寫）與專輯榜第 44 名無據；Kantata Takwa「買卡帶附門票」無據；Katarina II「錄音整批不能用」過強；Kenneth Higney「印 1000 份封套、只壓 500 張」與維基相反、「一年就結束」不合；Kenny Wayne Shepherd「藍調榜在榜最久紀錄」單源；Kim Carnes「Prophet-5」無據；Kitchens of Distinction「因出櫃沒拿到市場位置」單源因果；Klaus Mitffoch「唱片拿獎」（實為樂團 1983 比賽第二名）；Klaus Renft 禁令起因不只 Pannach；Koes Bersaudara「首作」「三兄弟被捕」；Korni Grupa「那年初才進來」「6 月 Montreux」；Krzysztof Klenczon 編號 XL 0799 疑為 XL 0779。
+
+## ar-d-040（2026-10-08）
+
+- 38 位上架（32 full、6 thin：Lazy Smoke、Lemon Kittens、Limbus 4、Local H、Madame Edwarda、Main），2 位不寫：Light（貢獻與地位皆查無，寫作層放棄）、Lightyears Away / Thundermother（聲音格查無，只剩錄音地點，比照 L'Arc〜en〜Ciel 不寫）。
+- 審稿修 10 處：最高級刪改——Laurie Anderson「美國最知名的表演藝術家之一」、Limbus 4「Ohr 最具冒險性之一」改平述、Little River Band「澳洲最重要之一」、Līvi「最知名」改「知名」、Los Bravos「最國際化」、Los Brincos「最成功之一」、Luna 刪英文標語（單源最高級）、Machine Head 刪「改寫 1990 年代金屬」與廠牌銷量；Måneskin 英文引語譯中文；Long Fin Killie 刪車禍傷勢細節。
+- 保留：Los Lobos 的美國國家藝術基金會評語與國家傳統藝術獎（國家級機構，在世者唯一一處）；Mahogany Brain 的 William S. Burroughs 評語、Laughing Hyenas 的 Thurston Moore 評語（具名人物）；Lombard 約 40 萬張（在世者唯一一處）。
+- 身分：Late! 是 Dave Grohl 的化名卡帶；Lefthanded 是馬來西亞新山的團；Lizard 是東京 LIZARD；Lorelei 是華盛頓 Slumberland 的團；Los Shakers 是烏拉圭團；Madame Edwarda 是東京哥德團（團名是否取自 Bataille 研究稿與特注不一，正文不提）。
+- 同名作廢：Light（物理的光）、Lizard（爬蟲類）、Lorelei（萊茵河岩石）的維基預抓。
+- 待本機（上線簡介）：Laughing Hyenas「Strickland 先前在 L7」（實為底特律 L-Seven）；Leeway 首發年（1987 錄、1989 發，卡池 1988 亦存疑）；Lombard「還沒上市就收到禁播令」（實為播出後撤下）；LOUDNESS「日本樂團首度打進美國百名」單源；Måneskin「唱片出來之後拿下 Sanremo」先後待核；Lizard《彼岸の王国》1985／1986 兩說。
