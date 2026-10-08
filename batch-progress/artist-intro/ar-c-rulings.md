@@ -594,3 +594,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 卡池年份存疑：Death of Samantha《Strungout on Jargon》卡池 1985，維基與 Trouser Press 皆 1986。
 - 同名作廢：Complex（布袋寅泰與吉川晃司的日本二人組）、Conflict（亞利桑那同名團）、Credo（信經）、Crow（烏鴉）、Darius（姓氏消歧義）的維基預抓。
 - 待本機（上線簡介）：Company Caine「Kent 榜前四十名」（另說最高 49 名）；Confuse「十三年後由 Anarchy Centre 與 Confuse Records 聯名重壓」無據（Discogs 為 1984 Violent Party Records）；Craig David「先寫完錄完才簽 Wildstar」與「全球 750 萬張」；Credo「利耶帕亞火柴廠」（史料為木材加工廠 Baltija）；Czerwone Gitary「2008 年金唱片」（波蘭維基為銀唱片）；Dead Boys「hardcore 世代翻唱最多」「Billboard 200 第 189 名」〈Hey Little Girl〉收錄細節皆未驗；Décima Víctima「唯一的一筆發行」已過時（2024 Munster 再版）；D.R. Hooker 原盤廠牌 On Records 與 spaceritual 說法不一。
+
+## ar-d-033（2026-10-08）
+
+- 40 位全上（36 full、4 thin：Deja-Vu、Discus、Dump、Earthen Vessel）。Deja-Vu 的聲音句以編制（無吉他的鍵盤三重奏、貝斯手與鼓手兼主唱）當做法，比照 d-024 Wayne Davis 的編制先例，接受。
+- 審稿修 8 處：最高級刪改——Deicide「成形期最好之一」、Demon Fuzz「最常被盜版與取樣之一」、Derek and the Dominos「Clapton 最偉大的作品」改「代表作」、Discordance Axis 刪 Decibel 刊名與「史上最好之一」、Dr. Z「最稀有之一」改平述；Disciplina Kičme 刪單一樂評的「無可爭議的經典」（保留作家 Jergović 具名說法）；Dion & the Belmonts 刪 Buddy Holly 包機與空難細節（只留同台巡演）並改兩句年份開頭。
+- 保留：Drop Nineteens 具名 Melody Maker 單曲週選（事件本身）；Drakkar 兩位團員在赤柬時期失蹤（歷史脈絡，非死因細節）。
+- 同名作廢：Deja-Vu（心理現象）、Discus（壓縮演算法）、Drakkar（義大利 power metal 團）的維基預抓。
+- 待本機（上線簡介）：Dennis the Fox「2006 年被 DJ Shadow 取樣進〈Funky Skunk〉」（該混音專輯 2005 年發行）；Desmond Dekker「第一張進英國前二十的牙買加製作唱片」（Millie Small 為反例）；Diaframma「全碟詞曲出自主唱一人」（詞曲是吉他手 Fiumani、主唱是 Sassolini）；Discus 海外音樂節年份無據；Dr. Z「詞曲製作人聲同一人」（製作人為 Campbell-Lyons）；Drakkar「1970 年夏天重組」（1970／1971）；East「1983 年英語重錄」（另說 1982）。
+
+## 第四輪十批接力收尾（ar-d-024～033）
+
+- 合計 391 位上架（324 full、67 thin），8 位不寫：8mm Sky、A Band Called Doris、Alone in a Crowd / Inside Out、Asylum、Ataraxia、Bastard、Big Bag、Blast Off Country Style（皆為聲音或身分查無、或只有曲風標籤）。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」清單的上線簡介勘誤（改 KV）；卡池年份存疑（10,000 Maniacs、Bastille、Buddy Holly、Bikini Kill / Huggy Bear、Death of Samantha、Cannon's Jug Stompers、Charlie Musselwhite、Caedmon）。

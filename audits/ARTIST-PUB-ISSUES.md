@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 654 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 660 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -653,7 +653,13 @@
 | ar-d-032 | Craig David | Born to Do It | 全球約售出 750 萬張 | 銷量各處不一：encyclopedia.com 寫 500 萬至 700 萬張，Music Week 引唱片公司稱逾 1300 萬張（指涉不明）；單一數字無共識，建議改成不帶數字或註明各方說法。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/david-craig |
 | ar-d-032 | Credo | Melnais kliedziens | 掛名的別名欄登錄的是利耶帕亞火柴廠與一間企業的合奏團名 | LSM 與拉脫維亞語維基都寫樂團 1979 年前的前身是木材加工廠 Baltija 的聲樂器樂團；『火柴廠』與此不符。若 MusicBrainz 別名欄確實寫的是火柴廠，是 MB 資料與史料不一致，建議本機對照 MB 後改寫成『某企業的合奏團名』或刪去工廠名。 | https://www.lsm.lv/raksts/kultura/izklaide/nedelas-nogale-izskanes-grupas-credo-45-jubilejas-koncerts.a318428/ |
 | ar-d-032 | Décima Víctima | Décima Víctima | 1982 年 12 月 Grabaciones Accidentales 的 GA-007 是這張碟唯一的一筆發行 | 這張首作後來有 Munster Records 的 LP 再版（Maximum Rocknroll 第 499 期評的就是這版），並收進 2010 年 Munster 的全集黑膠盒；「唯一的一筆發行」不成立，至多能說「原盤只發過這一版」 | https://www.maximumrocknroll.com/review/mrr-499/decima-victima-lp-reissue/ |
+| ar-d-033 | Dennis the Fox | Mother Trucker | 〈Piledriver〉2006 年被 DJ Shadow 取樣進〈Funky Skunk〉 | 英文維基《Funky Skunk》條目寫該混音專輯 2005 年夏末發行，並把 Dennis The Fox 的〈Piledriver〉列為取樣來源；《Funky Skunk》也是混音專輯而非單曲。上線簡介的『2006 年』若來自 Dennis The Fox 維基條目的 2006 年（維基預抓文字被截斷，未能核對），兩個條目互相矛盾，建議改為 2005 年或刪去年份，並把〈Funky Skunk〉標成混音專輯。 | https://en.wikipedia.org/wiki/Funky_Skunk |
+| ar-d-033 | Desmond Dekker & The Aces | 007 Shanty Town | 是第一張進入英國前二十的牙買加製作唱片 | 本層開頁的維基、uDiscover 與 Roots Archives 只寫〈007 (Shanty Town)〉是英國前十五熱門（維基），沒有『第一張進入英國前二十的牙買加製作唱片』的說法；維基另寫 Millie Small 1964 年已以牙買加風格的歌曲在國際走紅，屬明顯反例。『第一』類宣稱建議刪去或改成『英國前十五的熱門』。 | https://en.wikipedia.org/wiki/Desmond_Dekker |
 | ar-d-033 | Diaframma | Siberia | 全碟詞曲都出自主唱一人 | Fiumani 是吉他手兼詞曲作者；《Siberia》時期的主唱是 Miro Sassolini（接替 Nicola Vannini），Fiumani 要到 1989 年的 Gennaio EP 前後才兼任主唱。改成「全碟詞曲都出自吉他手 Federico Fiumani」。 | https://www.rockit.it/articolo/siberia-diaframma |
+| ar-d-033 | Discus | 1st | 2001 至 2007 年間他們登上舊金山與紐約的前衛音樂節 | 印尼維基只列 ProgNight（舊金山）、Knitting Factory（紐約，是演出場地不是音樂節）與 ProgDay（北卡羅來納），沒有給這三處的年份；有年份的只有 BajaProg（墨西哥，2001）、Progsol 與 FreakShow（2005）以及預定的 2007 年 Zappalane（德國）。2001 至 2007 與舊金山、紐約的對應查不到依據，建議改成較保守的寫法或查出各場年份 | https://id.wikipedia.org/wiki/Discus_(grup_musik) |
+| ar-d-033 | Dr. Z | Three Parts to My Soul | 詞曲、製作、人聲都是同一個人（Keith Keyes） | recordcollector.org 的商品頁與搜尋摘要引述的 Prog Archives 系文字都記製作人是 Patrick Campbell-Lyons（另一說是執行製作），與簡介「製作」歸 Keyes 不符；需對照唱片實際署名後再決定是否改成「詞曲與人聲」 | https://www.recordcollector.org/the-collection/dr-z-three-parts-to-my-soul-vertigo.html |
+| ar-d-033 | Drakkar | Drakkar 74 | 1970 年夏天他重組樂團 | 重組年份兩源不一致（維基 1970，另有 1971 的說法），上線簡介單用 1970 且寫『夏天』，來源只有事實庫那一份英文維基摘要；建議改成不帶年份。 | https://en.wikipedia.org/wiki/Drakkar_(band) |
+| ar-d-033 | East | Játékok | 1983 年這批曲子以英語重錄成《Blue Paradise》 | Infostart（2014）把《Blue Paradise》寫成 1982 年的英語版，與上線簡介的 1983 不一致；1983 可能是日本 King Record 的發行年，不是錄製年。建議店主核對後改成不帶年份或改為 1982。 | https://infostart.hu/kultura/2014/07/12/obudai-nyar---ismet-east-koncert-a-progrock-rajongoinak-651865 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
