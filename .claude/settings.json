@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Notion__notion-fetch",
+      "mcp__Notion__notion-search",
+      "mcp__Notion__notion-query-data-sources",
+      "mcp__Notion__notion-query-multiple-data-sources",
+      "mcp__Notion__notion-get-comments",
+      "mcp__Notion__notion-get-users",
+      "mcp__Notion__notion-get-teams",
+      "mcp__Notion__notion-get-tool-access",
+      "mcp__Notion__notion-get-async-task",
+      "mcp__Notion__notion-get-file-download-urls",
+      "mcp__Notion__notion-list-recent-pages",
+      "mcp__Notion__notion-list-favorite-pages",
+      "mcp__Notion__notion-list-shared-pages",
+      "mcp__Notion__notion-list-private-pages",
+      "mcp__Notion__notion-memory-search"
+    ]
+  }
+}
