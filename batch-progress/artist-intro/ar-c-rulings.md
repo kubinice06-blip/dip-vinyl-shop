@@ -526,3 +526,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 卡池年份存疑（不改卡池，記錄待本機）：Cannon's Jug Stompers 卡池 1989，MusicBrainz 首發 1990-06-27；Charlie Musselwhite 卡池 1967，首作 1966 年發行。
 - 同名作廢：Eddie Taylor 的維基預抓是兒子 Eddie Taylor Jr.。
 - 待本機（上線簡介）：Bobby Rush「八十三歲」（生年 1933／1935／1936 三說）；Cannon's Jug Stompers「35 軌」（維基 34 首）；Imarhan「Sadam 是 Eyadou 的姪子」（實為表親）與「英文維基列為 Tinariwen 影響下的新一代」無此句；Guitar Slim「Ray Charles 製作」說法不一；Homesick James「Elmore James 表親」為自稱、「享壽 96 歲」無定論；Gus Cannon 錄音年 1929／1930；Hank Ballard「遭 FCC 禁播」僅維基；Honeyboy Edwards 把 Robert Johnson 之死寫成定論；Eddie Boyd「1970 年落腳赫爾辛基」與「R&B 榜冠軍」；Eddie Taylor「1948 年搬到芝加哥」；J.B. Lenoir 製作人應為 Willie Dixon；Jessie Mae Hemphill 鈴鼓是中風後才改；John Hammond《So Many Roads》錄音年 1964；Johnny Shines「戰後落腳芝加哥」（1941）與發行年 1970；Josh White「遭封殺」（從未正式列黑名單）；Fenton Robinson 簡介引 AllMusic 評語無法查證。
+
+## ar-d-026（2026-10-08）
+
+- 40 位全上（38 full、2 thin：Juke Boy Bonner、Little Sonny）。
+- 審稿修 5 處：Juke Boy Bonner 刪胃部手術（健康）；Memphis Minnie 刪「最早改用電吉他之一」；Otis Taylor 刪曾祖父遭私刑（親屬死亡情境）；Scrapper Blackwell「那年最暢銷」改「暢銷」；Lil' Ed 的 J.B. Hutto 拼法統一（uncle 未定舅或叔，寫「長輩親戚」）。
+- 保留：LaVern Baker 對白人翻唱提告一事（為她反對白人翻唱 R&B 的代表性核心，不寫判決細節以外的私事）；Robert Pete Williams 在 Angola 監獄被錄音、經民俗學者陳情獲釋（為他被發現的經過，未寫罪名）。
+- 新近事實：Ruthie Foster 2025 年第 67 屆葛萊美最佳當代藍調專輯（官網＋維基）。
+- 搜尋失敗超限：Mississippi Sheiks 失敗請求 5 次（多一次為無結果的 Britannica 網址），不影響事實。
+- 待本機（上線簡介）：Kenny Wayne Shepherd「藍調榜停留二十週」應為第一名 20 週；Lil' Ed「舅舅 J.B. Hutto」來源只寫 uncle；Magic Slim「1970 年起與弟弟組成 The Teardrops」年份有爭議；Memphis Jug Band「1926 年起成形」宜改 1920 年代中期、「卡祖笛當主奏」無出處；Mississippi Sheiks「核心成員含 Bo Carter」（1930 首錄為 Vinson 與 Lonnie Chatmon）與國家錄音登記簿年度（2017，非 2018）；Otha Turner「90 歲錄成」（錄音時約 84 至 90 歲）；Reverend Robert Wilkins「1936 年目睹兇殺、1950 年受任」僅維基；Robert Lockwood Jr.「唯一直接向 Robert Johnson 學琴」僅維基；Ruthie Foster「婉拒 Atlantic」（實為開發約因母病中止）、「三度入圍葛萊美」已過時、專輯年 2007／2008；Stevie Ray Vaughan《In Step》「Reese Wynans 首度列入正式編制」（1985 年起即為團員）；T-Model Ford「隨 R.L. Burnside 巡演」與報紙年度第三佳無出處。
