@@ -76,7 +76,7 @@ const PENDING_NEW = new Set([
   '3f30ad0255ff8032a06dc6dcec72d0f0', // ゴールデン・ハーフ《ゴールデン・ハーフでーす》
   '3f30ad0255ff801384dcfa684e1fb033', // 伊武雅刀《Mon-jah》
   '3f30ad0255ff80c3be66f4b8556b81b0', // 高橋真梨子《Triad》
-  '3f30ad0255ff8057af4fdc81d4f60a46', // Culture Club《It's a Miracle / Miss Me Blind》（單曲）
+  '3f30ad0255ff8057af4fdc81d4f60a46', // Culture Club《It's a Miracle / Miss Me Blind》：單曲，店主 2026-10-08：單曲就是單曲，不掛專輯卡
   '3f30ad0255ff803aaf93fb4c4814d49e', // Marlene《It's Magic》
   '3f30ad0255ff800a8aa6cbeafa8de620', // 小柳ルミ子《愛に甦える》
 ]);
