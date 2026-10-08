@@ -56,3 +56,5 @@
 - **8888** Culture Club〈It's a Miracle / Miss Me Blind〉：兩曲皆在池中《Colour by Numbers》（a 組查證），Notion 卡池鍵填 `Culture Club|Colour by Numbers`、移出 PENDING_NEW、NOTES 標「單曲」，mood-map 補 crowd＋flame；店內遊戲即刻可抽。門市版寫的是這張單曲本身（研究 r10 末筆），不是母專輯。
 - **8889** 研究分組：r8＝池中 6 張、r9＝b 組 7 張、r10＝a 組 6 張＋Yufu＋Culture Club 單曲、r11＝c 組 7 張；合計 28 份門市版。
 - **8890**（推翻 8888）店主 2026-10-08：「Culture Club 單曲就是單曲不是專輯」。撤回掛《Colour by Numbers》：Notion 卡池鍵清空、放回 PENDING_NEW（註明單曲不掛專輯卡）、mood-map 撤回、inventory 回 pending_card。店內遊戲不抽它；門市版照寫單曲本身（r10 末筆，key 用單曲名，ids 掛 Notion 頁面 id）。
+- **8891** 店主 2026-10-08：破地獄《芒神》店內實物是**黑膠**＝2018 WV 025 版（研究 r10：2016 首版是日本 Guruguru Brain 卡帶、未見台灣 CD，兩版曲目不同）。門市版以 2018 黑膠為主體。卡單 8781–8790 的「2016 台灣 CD」說法存疑，日後上卡池時回頭核。
+- **8892** Culture Club 店內實物＝日本 VIP-5916 12 吋 45 轉來日記念盤（1984，店主提供封面照）：A 面兩曲接成的 U.S. Remix、B 面兩首現場。推翻 8783 的 UK VS 662-12 推定。
