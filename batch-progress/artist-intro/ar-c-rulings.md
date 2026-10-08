@@ -678,3 +678,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Late! 是 Dave Grohl 的化名卡帶；Lefthanded 是馬來西亞新山的團；Lizard 是東京 LIZARD；Lorelei 是華盛頓 Slumberland 的團；Los Shakers 是烏拉圭團；Madame Edwarda 是東京哥德團（團名是否取自 Bataille 研究稿與特注不一，正文不提）。
 - 同名作廢：Light（物理的光）、Lizard（爬蟲類）、Lorelei（萊茵河岩石）的維基預抓。
 - 待本機（上線簡介）：Laughing Hyenas「Strickland 先前在 L7」（實為底特律 L-Seven）；Leeway 首發年（1987 錄、1989 發，卡池 1988 亦存疑）；Lombard「還沒上市就收到禁播令」（實為播出後撤下）；LOUDNESS「日本樂團首度打進美國百名」單源；Måneskin「唱片出來之後拿下 Sanremo」先後待核；Lizard《彼岸の王国》1985／1986 兩說。
+
+## ar-d-041（2026-10-08）
+
+- 39 位上架（33 full、6 thin：Marconi Notaro、Mary See the Future、MASS OF THE FERMENTING DREGS、Mehrpouya、Mgła、Minxus），1 位不寫：Maximum Penalty（全部事實出自一篇 1996 年樂評，湊不到兩源）。
+- 審稿修 7 處：Master Wilburn Burchette 264 字壓回 250（非雙卡，不適用放寬）；Matching Mole 刪 Wyatt 墜樓癱瘓細節（改「意外受傷、從此無法打鼓」）；最高級刪改——Maxophone「頂尖之一」改「代表之一」、Mazhar ve Fuat 刪 MFÖ「最老牌最知名之一」、Medicine「最接近」、Metamorfosi「最常尋找之一」改「搶手」；Menswear 英文稱號譯中文。
+- 保留：Mark Knopfler 的搖滾名人堂評語、Midnight Oil 的 ARIA 名人堂評語（權威名人堂具名）；Menswear 登上《Melody Maker》封面（事件本身，比照 Drop Nineteens）；Mercury Rev 年度專輯不具名刊物。
+- 身分修正：Menuets 是拉脫維亞 Jūrmala 的團（特注原寫希臘，錯）；Mess 是愛沙尼亞 Sven Grünberg 的團；Mehrpouya 是伊朗西塔琴手 Abbas Mehrpouya；Mary See the Future 是台灣先知瑪莉；Midas 是大阪的團。
+- 同名作廢：Midas（弗里吉亞國王）、Mess（軍事用語）的維基預抓。
+- 待本機（上線簡介）：Manowar「Ross the Boss 與 Columbus 的最後一張」（Columbus 1996 年回團）；MASS OF THE FERMENTING DREGS「前作是 2018 年《No New World》」已過時；Maximum Joy「Disc O'Dell」應為 Dick O'Dell；Maxophone「全部成員受過音樂院訓練」；Michel Berger《Starmania》名次與鑽石認證對不上；Michal Prokop「第一張捷克 art rock 專輯」無據；Metró「1963 年第一屆 beat 音樂節與 Illés、Omega 同台」無據。

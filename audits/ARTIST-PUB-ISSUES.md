@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 725 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 729 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -723,8 +723,12 @@
 | ar-d-041 | MASS OF THE FERMENTING DREGS | 祝おう | 前作是 2018 年的《No New World》，同樣是 FLAKES 編號 | 日文維基的專輯表在 2018 年之後還有《NAKED ALBUM》（2020 年）、《Awakening:Sleeping》（2022 年）與《LIVE IN JAPAN》（2024 年），『前作』的說法需改成『再起後第四張專輯』或另查最近一張；事實庫引用的專輯表停在 2020 年，是上線簡介當時漏看。 | https://ja.wikipedia.org/wiki/MASS_OF_THE_FERMENTING_DREGS |
 | ar-d-041 | Maximum Joy | Station M.X.J.Y. | Y Records 是 The Slits 的經理人 Disc O'Dell 開的 | Bandcamp 專文寫創辦人為 Dick O'Dell（The Pop Group 與 The Slits 的經理人）；Discogs 寫成 Disc O'Dell，疑為綽號或誤植，待店主核對 | https://daily.bandcamp.com/features/maximum-joy-feature |
 | ar-d-041 | Maxophone | Maxophone | 成員全部受過音樂院訓練 | 英文維基寫一半成員受過古典訓練、其餘有搖滾樂團經驗；Record Collector 寫三位創團成員受過古典訓練；與簡介的「全部」不一致，建議改成「成員多有古典訓練」或刪去 | https://en.wikipedia.org/wiki/Maxophone |
+| ar-d-041 | Metró | Metro | 1963 年第一屆 beat 音樂節上，樂團與 Illés、Omega 同台 | 查不到來源：匈牙利維基只寫 1967 年電影《Ezek a fiatalok》、Táncdalfesztivál 與 Ki mit tud?；樂團 1960 年才成立為 Zenith、1961 年才改名 Metro，1963 年的說法無依據，建議核對或刪除 | https://hu.wikipedia.org/wiki/Metro_%28egy%C3%BCttes%29 |
 | ar-d-041 | Michal Prokop & Framus Five | Město ER | 也被稱為第一張捷克 art rock 專輯 | 本層搜尋一次、開 Echo24 一頁，只見『完整地把 art rock 帶進捷克樂壇』的說法，沒有找到『第一張』的出處；建議改寫成 Echo24 的說法，或由主線確認出處。 | https://echo24.cz/a/SpQyD/do-sine-slavy-hudebnich-cen-andel-vstoupil-michal-prokop |
 | ar-d-041 | Michel Berger | Starmania | 唱片後來登上法國排行榜第 4 名，並拿下逾 100 萬張的鑽石認證 | 各來源不一：英文維基專輯條目寫第 4 名與鑽石認證；Chartmasters（搜尋摘要，未開頁）寫原版首度只到第 16 名；法文來源有只寫金唱片、有寫逾 220 萬張。建議核對 SNEP 或 InfoDisc 後再決定保留或刪掉。 | https://chartmasters.org/?p=739 |
+| ar-d-042 | Murple | Io sono Murple | 樂團 1973 年成立於羅馬 | 義大利文維基寫 1973 年，Record Collector 與 Vea Music 的商品說明寫 1971 年，兩說不一致、沒有第三源，建議簡介避開成軍年或改為不具年份的寫法 | https://www.recordcollector.org/the-collection/murple-io-sono-murple.html |
+| ar-d-042 | Music Emporium | Music Emporium | 剛被 Liberty 開除的 Jack Ames | 英文維基寫 Ames 被 Liberty 開除；Cosby 2015 年訪談只說 Ames 是 Liberty 的共同創辦人、剛離開該廠牌，沒有說被開除。『開除』只有維基單源，建議改成『剛離開 Liberty』 | https://www.psychedelicbabymag.com/2015/04/music-emporium-interview-with-willia.html |
+| ar-d-042 | Music Emporium | Music Emporium | 壓 300 張 | 張數只見英文維基單源，Cosby 訪談沒有提到；建議降成較不具體的說法（極少量自壓）或保留但視為單源 | https://en.wikipedia.org/wiki/Music_Emporium |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
