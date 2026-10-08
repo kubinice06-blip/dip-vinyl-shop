@@ -611,3 +611,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## 第五輪十批接力（ar-d-034～043，2026-10-08 起）
 
 - 範圍：搖滾段 E 字頭起。沿用第三、四輪的審稿規則與 thin 門檻（第一句交代國籍與身分＋至少一句聲音或做法；只有曲風標籤不算，編制可算做法）。
+
+## ar-d-034（2026-10-08）
+
+- 40 位全上（30 full、10 thin：El Hombre Trajeado、Elf Power、Eloy、Emtidi、envy、Errata Corrige、Essential Logic、Eve 6、Everclear、Far East Family Band）。
+- 研究層放行：El Hombre Trajeado 超額 1 次（找獨立樂評、未得事實，齊豫先例）。
+- 審稿修 8 處：Edip Akbayram 刪 Dostlar「最早之一」；Eggs「最獨特之一」改「相當獨特」；Elastica 刪「最快售出首張專輯紀錄」；Električni Orgazam 刪樂評「最令人興奮的非英國樂團之一」；English Teacher 英文引語譯中文；Enrique Morente & Lagartija Nick 刪「或許是最具影響力的當代佛朗明哥歌手」；Eric Burdon and War 刪「英倫入侵辨識度最高之一」；ESG〈UFO〉「史上被取樣最多之一」改「被大量取樣」。
+- 雙卡額度：Enrique Morente & Lagartija Nick、Eric Burdon and War 篇幅超過單卡上限，沿用雙卡放寬。
+- 待本機（上線簡介）：Električni Orgazam NME／Rough Trade 先後次序；Enrique Morente「Morente 找上 Lagartija Nick」方向（實為 Jesús Arias 提案）與 Primavera Sound 2008 重演說法未驗。
