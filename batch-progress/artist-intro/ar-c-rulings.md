@@ -546,3 +546,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 卡池年份存疑：10,000 Maniacs《In My Tribe》卡池 1986，三源皆 1987。
 - 同名作廢：Aardvark（動物）、Abaddon（聖經）、Absolution、Agape（神學）、Airplay（蘋果 AirPlay）的維基預抓。
 - 待本機（上線簡介）：Washington Phillips「Corcoran 於 2016 年翻出 1907 年報導」無出處（2002 年即發表）；Absolution EP 年份 1988／1989；Adnan Othman「來自登嘉樓」無來源；Abbhama「2014 年才第一次壓成黑膠」待核 Discogs；Airbridge 廠牌（實為 Red Lightnin'）、「唯一 LP」與年份；Alaska y los Pegamoides《Grandes éxitos》發行月份 4 月／5 月。
+
+## ar-d-028（2026-10-08）
+
+- 39 位上架（30 full、9 thin：Alice Donut、ALL、Alpha Stone、Amp、Androids of Mu、Annexus Quam、Aphrodite、Arcadium、Ariesta Birawa Group），1 位不寫：Alone in a Crowd / Inside Out（素材無任何聲音描述，只有「straight edge 的 youth crew 路線」這種曲風定位；比照 d-022 Soul for Real）。
+- 審稿修 5 處：Alcione 刪 2024 年 Mangueira 嘉年華主題（在世者榮譽只留拉丁葛萊美）；Ash 刪白金認證（留英國榜首）；Alusa Fallax 刪「最被低估之一」；Amebix「拆得比同時代任何作品都徹底」改平述；Arzachel「最搶手也最昂貴之一」改平述。
+- 放寬字數：All Saved Freak Band 271（三位團員相繼過世、Markko 觸電後病床上聽成品、Schwartz 被「解除洗腦」為主體；死因與途中細節未寫）。
+- 寫作層處理：American Music Club 的 Eitzel 年度詞曲作者出自雜誌，不具名就成無出處頭銜，整條不寫；Arch Enemy、Antisect 的「最早」類宣稱不寫；Antony and the Johnsons 首句交代主唱現名 ANOHNI、代名詞用「她」。
+- 同名作廢：Aphrodite（希臘女神）、Arzachel（月球環形山）的維基預抓；Antony 的預抓為 Unthanks 合輯條目，改開 Anohni；Alone in a Crowd / Inside Out 的 Inside Out 不是 Zack de la Rocha 的同名團。
+- 待本機（上線簡介）：Alcione「九歲起吹小號與豎笛」（實約 13 歲）與 Discoteca Básica 第 293 名未核；Älgarnas Trädgård「Grammis 提名」僅本人回憶；All Saved Freak Band「死在赴演出的路上」宜改「死於交通事故」；Aphrodite「1999 年首作由 V2 發行」待核 Discogs；Archers of Loaf《Icky Mettle》「Kraptone 七天錄完」（實約一個月、在 Cat's Cradle）；Ariesta Birawa Group「唯一一張」（1965 年已出過 Djoko Tarub）與「官方正推 dangdut」；Artful Dodger 發行廠牌 FFRR／London，〈Movin' Too Fast〉主唱是 Romina Johnson 不是 Craig David。

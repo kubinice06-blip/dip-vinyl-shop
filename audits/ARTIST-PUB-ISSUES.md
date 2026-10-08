@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 618 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 626 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -617,7 +617,15 @@
 | ar-d-028 | Alcione | A Voz do Samba | 她九歲起吹小號與豎笛 | 英文維基與 encyclopedia.com 寫 13 歲左右才學豎笛與小號，葡文維基的「九歲」是首次在電台演唱；年齡說法不一，建議刪去年齡或改核對後的版本。 | https://en.wikipedia.org/wiki/Alcione_Nazareth |
 | ar-d-028 | Alcione | A Voz do Samba | Discoteca Básica 五百大第 293 名 | 本層未能開到 Discoteca Básica 名單頁，無法核對名次；若要保留請在本機核對來源。 | https://pt.wikipedia.org/wiki/Alcione_(cantora) |
 | ar-d-028 | Älgarnas Trädgård | Framtiden är ett svävande skepp, förankrat i forntiden | 後來拿到 Grammis 提名 | 只見於 Söderqvist 本人在訪談裡「被提名 Grammy」的回憶，搜尋瑞典 Grammis 名單查不到；建議在本機核對 Grammis 官方歷屆名單，查不到就刪。 | https://psychedelicbabymag.com/?p=67377 |
+| ar-d-028 | All Saved Freak Band | My Poor Generation | 三個團員就死在赴演出的路上 | 英文維基寫三人都在前往演出途中的車禍中喪生，Cross Rhythms 寫 Brett Hill 是 1971 年初新年夜禮拜後返家途中身亡、Tom Miller 與 Randy Markko 同年另一場車禍；「赴演出」一詞兩源不完全一致，建議改成「死於交通事故」。 | https://crossrhythms.co.uk/articles/music/All_Saved_Freak_Band__Jesus_Music_Pioneers/24845/p1/ |
+| ar-d-028 | Aphrodite | Aphrodite | 1999 年的同名首作由 V2 發行 | 英文維基寫 1999 年同名專輯屬 V2 Recordings，但 Shazam 簡介（AllMusic 類資料）寫 2002 年《Aftershock》才是他與 V2 發行協議下的第一張專輯，同名專輯是美國首作、收舊曲與新混音；兩源不一致，請店主在 Discogs 核對 1999 年版本的廠牌，不一致前建議簡介改寫成不點名廠牌。 | https://www.shazam.com/artist/-/6505582 |
 | ar-d-028 | Archers of Loaf | Icky Mettle | 在 Caleb Southern 的 Kraptone 錄音室七天內錄完混完 | 待核：Bandcamp 專文稱錄音約一個月、場地是 Cat's Cradle 俱樂部；Bachmann 在 Portland Mercury 說樂團凌晨 3:30 左右進 Cat's Cradle 錄音，Johnson 對 The Stranger 說記不得總共幾天。維基（七天、Kraptone）與上線簡介一致，但與兩篇訪談描述不合，建議店主決定是否把『七天內錄完混完』改成較保守的寫法。 | https://daily.bandcamp.com/features/archers-of-loaf-album-guide |
+| ar-d-028 | Ariesta Birawa Group | Ariesta Birawa Group, Vol. 1 | 唱片是這支團唯一的一張 | 早期陣容（Mus Mulyadi、Soenata Tanjung）1965 年已用同一團名發行過 Djoko Tarub（Wasted Rockers 稱 EP 或 10 吋；CNN Indonesia 稱 Jaka Tarub 專輯），Wasted Rockers 把 Vol. 1 寫成首張全長專輯；建議改成『首張全長專輯』或不寫唯一。 | https://www.cnnindonesia.com/hiburan/20190411111224-234-385270/mus-mulyadi-sang-buaya-keroncong-indonesia |
+| ar-d-028 | Ariesta Birawa Group | Ariesta Birawa Group, Vol. 1 | 官方那時正推 dangdut | 待核：PopMatters 只寫政府鼓勵本土傳統音樂、dangdut 在 1970 年代崛起（Rhoma Irama 的〈Begadang〉比這張晚兩年），沒有寫官方在 1973 年推 dangdut；建議改成較保守的寫法。 | https://popmatters.com/ariesta-birawa-group-vol-1-indonesia-2495753530.html |
+| ar-d-028 | Artful Dodger | It's All About the Stragglers | 2000 年 11 月由 FFRR 發行 | 待核：英文維基專輯條目寫發行方為 London Recordings（Sire Records 並列），單曲條目寫 Public Demand 與 Relentless Records；本層沒有取得 Discogs（403）所以無法確認 FFRR 是否為實際印在盤面的廠牌，建議店主對照盤面。 | https://en.wikipedia.org/wiki/It's_All_About_the_Stragglers |
+| ar-d-028 | Artful Dodger | It's All About the Stragglers | Craig David 唱的〈Re-Rewind〉與〈Movin' Too Fast〉新版都收在內 | 待核：〈Movin' Too Fast〉的主唱是 Romina Johnson，Craig David 只唱〈Re-Rewind〉（英文維基兩條目）。若簡介原意是『兩首都收在內』則句子容易被讀成 David 唱兩首，建議改寫。 | https://en.wikipedia.org/wiki/Movin'_Too_Fast |
+| ar-d-029 | ASIAN KUNG-FU GENERATION | ソルファ | 第二首〈リライト〉……成為樂團最大單曲 | 未找到支持『最大單曲』的來源；英文維基只記〈Rewrite〉2004 年 Oricon 單曲榜最高第 4 名、當年賣近 15 萬張，無法證明是樂團最大單曲，建議改成較保守說法（如『最廣為人知的單曲』仍需來源）或刪除。 | https://en.wikipedia.org/wiki/Rewrite_(song) |
+| ar-d-029 | Aunt Sally | Aunt Sally | Bikke 吉他兼主唱、中岡義雄貝斯、丸山隆打鼓 | The Vinyl Factory 的成員名單是 Phew、Mayu、Takashi Maruyama、Yasuko Mori、Yoshio Nakaoka，不含 Bikke；若 Bikke 與 Yasuko Mori 是同一人，名單可保留，否則需重核成員與樂器分工。 | https://www.thevinylfactory.com/news/japanese-post-punk-aunt-sallys-debut-album-reissued |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
