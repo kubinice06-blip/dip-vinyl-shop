@@ -619,3 +619,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 8 處：Edip Akbayram 刪 Dostlar「最早之一」；Eggs「最獨特之一」改「相當獨特」；Elastica 刪「最快售出首張專輯紀錄」；Električni Orgazam 刪樂評「最令人興奮的非英國樂團之一」；English Teacher 英文引語譯中文；Enrique Morente & Lagartija Nick 刪「或許是最具影響力的當代佛朗明哥歌手」；Eric Burdon and War 刪「英倫入侵辨識度最高之一」；ESG〈UFO〉「史上被取樣最多之一」改「被大量取樣」。
 - 雙卡額度：Enrique Morente & Lagartija Nick、Eric Burdon and War 篇幅超過單卡上限，沿用雙卡放寬。
 - 待本機（上線簡介）：Električni Orgazam NME／Rough Trade 先後次序；Enrique Morente「Morente 找上 Lagartija Nick」方向（實為 Jesús Arias 提案）與 Primavera Sound 2008 重演說法未驗。
+
+## ar-d-035（2026-10-08）
+
+- 40 位全上（31 full、9 thin：Filter、Fireworks、Fix、Foghat、Franklin Bruno、Fresh Blueberry Pancake、G-Schmitt、Gentle Faith、Gerard）。
+- 研究層放行：Gai 超額 1 次（福岡、1981 年與改名時間的第二個日文來源，高風險身分事實第二源先例）。
+- 審稿修 13 處：Fikret Kızılok 首句補「土耳其歌手兼詞曲作者」並刪金唱片數與折 saz 傳說（壓回 250 內）；Film 刪「最具代表之一」改「代表團體之一」、刪 Stublić「最重要的詞曲作者之一」；Flying Saucer Attack「前所未有的嘈雜」改「極度嘈雜」；Foster the People「最受歡迎之一」改「大熱門」；Fraction 刪「迷幻地下圈最受推崇之一」；Frankie Goes to Hollywood 刪「最早」；Fehlfarben 刪「影響難以高估」；Freddie McGregor 英文引語譯中文、「受勳章」改「獲頒」；Geese 刪「2025 年評價最高之一」（單源）。
+- 保留：Feeder 的 Kerrang! 名人堂（事件本身，在世者唯一一處成績）；Gary Moore 的 Bob Geldof 悼念語（具名樂手）；Frankie Lymon 的搖滾名人堂評語（權威名人堂）。
+- 身分：Gai 為福岡硬蕊團，與 The Swankys 同一團不同時期名字（先後兩說衝突，不寫）；Fix 為愛沙尼亞塔爾圖的團；Fireworks 為納許維爾基督教流行搖滾團；Gerard 為永川敏郎的日本前衛團；Gentle Faith 國籍由 Calvary Chapel／Maranatha! 推定美國。George Brigman 貝斯手之死只寫「樂團解散後淡出」。Gary Glitter 只寫音樂。
+- 同名作廢：Fireworks（煙火）、Fraction（數學）、Fuchsia（植物）、Galliard（舞曲）的維基預抓。
+- 待本機（上線簡介）：Fresh Blueberry Pancake「1970 年自資發行」（另說 1971 錄、1971 年 8 月登記著作權）；Galliard「1968 年成軍、1971 年解散」（1968／1969 兩說，解散年單源）；Fraction「兩百張」「藍領工人」「專輯名取自啟示錄」「十多年後被挖掘」「介於 The Doors 與 Black Sabbath」皆無據。

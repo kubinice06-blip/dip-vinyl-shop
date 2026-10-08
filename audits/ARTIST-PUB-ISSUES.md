@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 665 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 672 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -663,8 +663,15 @@
 | ar-d-034 | Električni Orgazam | Električni orgazam | 那句評語出自記者 Chris Bohn，樂團因此談成 Rough Trade 的英國通路合約 | 英文維基只寫 Gojković 在倫敦把唱片寄給 NME、樂團簽 Rough Trade 做英國通路，並未載明評論先於合約；『因此』的因果為推斷，建議改成並列。 | https://en.wikipedia.org/wiki/Elektri%C4%8Dni_Orgazam |
 | ar-d-034 | Enrique Morente & Lagartija Nick | Omega | Granada 的 cante 名家 Enrique Morente 找上同城噪音搖滾團 Lagartija Nick | Público 的經過是 Jesús Arias 想錄 Lorca 詩作混龐克與佛朗明哥，1995 年 8 月先找 Raúl Alcover、再與 Morente 見面，Morente 把方向調整後 Lagartija Nick 才加入；『Morente 找上樂團』與此不符，建議改為『Morente 與 Lagartija Nick 合作』。 | https://www.publico.es/culturas/disco-rompio-flamenco.html |
 | ar-d-034 | Enrique Morente & Lagartija Nick | Omega | 2008 年重新發行並在 Primavera Sound 重演 | Público 該文寫這張專輯『再也沒有在現場演出過』，與簡介的 Primavera Sound 重演衝突；該文的刊出年份本層未能確定，建議店主在本機核對 2008 年重演是否屬實後再決定改不改。 | https://www.publico.es/culturas/disco-rompio-flamenco.html |
+| ar-d-035 | Fraction | Moon Blood | 僅壓製兩百張 | The Vinyl Guide 寫 200 張，midheaven 與 Norman Records 搜尋摘要寫『幾百張』，數字並不確定，建議改寫成『只壓了極少量』。 | https://midheaven.com/item/fraction/moon-blood |
+| ar-d-035 | Fraction | Moon Blood | 一群北好萊塢的藍領工人組成 Fraction | 來源只說團員有白天的正職、在北好萊塢排練，沒有說他們是藍領，也沒有說樂團組成於北好萊塢（Beach 說是透過洛杉磯各處朋友認識）。 | https://midheaven.com/item/fraction/moon-blood |
+| ar-d-035 | Fraction | Moon Blood | 專輯名取自《啟示錄》「滿月變紅像血」 | 查到的資料都沒有說明專輯名由來，搜尋結果也沒有證實與《啟示錄》的連結，只有樂評說宗教主題帶有末世與疑惑的氣氛；建議改為不下定論的寫法。 | https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood |
+| ar-d-035 | Fraction | Moon Blood | 十多年後才被挖掘出土；樂風介於 The Doors 的陰冷迷幻與 Black Sabbath 的沉重之間 | 來源說 1980 與 1990 年代就有收藏家在找，翻版不斷，正式重發則在 1999 年與 2010 年之後；沒有查到『十多年後被挖掘』的說法。比較對象的來源是 The Doors、The Stooges 與 MC5，沒有 Black Sabbath。 | https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood |
 | ar-d-035 | Fresh Blueberry Pancake | Heavy | 1970 年自資發行 | Psychedelic Baby 2023 專文稱 demo 是 1971 年錄的，搜尋摘要稱 MetalMusicArchives 曲目頁載明 1971 年 8 月 18 日向美國國會圖書館登記著作權；Discogs 與 NTS 寫 1970，來源不一致，建議店主本機核對 Discogs 條目後決定是否改年份（待核，非確定錯誤） | https://www.psychedelicbabymag.com/2023/02/fresh-blueberry-pancake-the-legendary-underground-heavy-psych-classic-gets-an-official-reissue.html |
 | ar-d-035 | Galliard | Strange Pleasure | 1968 年成軍、1971 年解散 | 成軍年有 1968（Birmingham Music Archive）與 1969（Esoteric 再發說明）兩說，1971 年解散只見 Discogs 單源；建議退成不寫年份，或標明來源不一致。 | https://old.birminghammusicarchive.com/tag/john-smith/ |
+| ar-d-036 | Gianna Nannini | Puzzle | 兩支單曲的錄影帶，都是電影導演 Michelangelo Antonioni 拍的。〈Fotoromanza〉與〈Ballami〉的影像都由他執導 | 來源只證實〈Fotoromanza〉的錄影帶由 Antonioni 執導（4 分鐘彩色，KVIFF 影展 2012 年 Antonioni 致敬單元列有此片）；〈Ballami〉只見於專輯曲目表，查不到它是單曲或有 Antonioni 執導的影片 | https://en.wikipedia.org/wiki/Puzzle_(Gianna_Nannini_album) |
+| ar-d-036 | Gianna Nannini | Puzzle | 是義大利最早由電影作者來拍音樂錄影帶的案例之一；不過在義大利，第二首真正走紅的單曲是〈Kolossal〉 | 「最早由電影作者拍 MV 的案例之一」與「第二首走紅的單曲是〈Kolossal〉」兩句都找不到來源；來源只把〈Kolossal〉列為專輯第一軌（3:58），沒有單曲或榜單資料 | https://en.wikipedia.org/wiki/Puzzle_(Gianna_Nannini_album) |
+| ar-d-036 | Giant Step | Giant on the Move! | 最後一軌用八分鐘唱空氣污染，印尼電台於是繞開了它 | Kamarmusik 只說樂團編曲複雜、歌難上排行榜，唯一的大力播放來自經紀人 Gandjar Suwargani 自營的 Radio Oz Bandung，並說環保議題在當時不討喜；沒有來源說電台因〈Air Pollution〉而拒播，「於是繞開了它」的因果句缺依據 | https://kamarmusik.id/spirit-tampil-beda-giant-step/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
