@@ -505,3 +505,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 合計 388 位上架（320 full、68 thin），12 位不寫：Yoshimi Ueno Bestrio、初山博、和田直、和田直カルテット、リー・ウォンヒーイ＋菊他コージ、Black Heat、Garland Green、Mighty Ryeders、Soul for Real、The Morning Stars of Savannah, Georgia、The Politicians、The Sensational Williams Brothers。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」清單的上線簡介勘誤（改 KV）。
+
+## 第四輪十批接力（ar-d-024～033，2026-10-08 起）
+
+- 範圍：d-024 前半 soul、後半轉入藍調；d-025～027 藍調；d-027 後半起轉入搖滾。沿用第三輪的審稿規則與 thin 門檻（第一句交代國籍與身分＋至少一句聲音或做法；只有類型歸屬不算）。
