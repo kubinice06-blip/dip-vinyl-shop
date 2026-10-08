@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 644 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 649 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -644,6 +644,11 @@
 | ar-d-031 | Carl Perkins | Introducing... Carl Perkins | 後世把他列為 funky 派 hard bop 鋼琴的先行者 | 維基原文是 Tanner、Gerow、Megill 把他列為最好的 funky（hard bop）鋼琴手之一，並說他早逝使他未能留下影響；『先行者』是上線簡介的推演，來源不支持。 | https://en.wikipedia.org/wiki/Carl_Perkins_(pianist) |
 | ar-d-031 | Carroll Thompson | Hopelessly in Love | 倫敦出身、牙買加裔的 Carroll Thompson | 英文維基專輯條目與 Wikidata 的出生地為赫特福德郡 Letchworth（專輯條目稱她在當地最早的牙買加移民家庭之一長大）；說她倫敦出身沒有來源。 | https://en.wikipedia.org/wiki/Hopelessly_in_Love |
 | ar-d-031 | Carroll Thompson | Hopelessly in Love | 全球賣過百萬張 | 來源互相衝突：維基人物條目無出處地寫 over a million，維基專輯條目寫 1983 年約 25,000 至 30,000 張、最終逾 35,000 張，Oye 寫逾 50 萬張；沒有可靠來源支持『百萬』，建議刪除或改成不寫銷量。 | https://en.wikipedia.org/wiki/Hopelessly_in_Love |
+| ar-d-031 | Catapilla | Catapilla | Robert Calvert 一人吹中音、次中音與高音三種薩克斯風 | 英文維基專輯條目的人員表只列 Calvert 吹 alto（中音）與 tenor（次中音）薩克斯風，沒有 soprano（高音）；『三種』沒有來源支持。 | https://en.wikipedia.org/wiki/Catapilla_(album) |
+| ar-d-031 | Cervello | Melos | 樂團 1970 年成立於那不勒斯 | 成軍年份各源不一致：義大利文維基 1970，Rustici 本人受訪說 1971，另有來源寫 1972；建議改成『1970 年代初』或拿掉年份。 | https://backgroundmagazine.nl/Specials/InterviewCervello.html |
+| ar-d-031 | CIV | Set Your Goals | 碟出在 1995 年 8 月的美國 Lava | 英文維基《Set Your Goals》專輯條目寫 1995 年 10 月在 Lava Records 發行；請店主在本機對 Discogs 美國 Lava 92603-2 的發行日核實，確認前不要改。另上線簡介『全張合計 31 分 21 秒』，維基專輯條目寫總長 31:13，差 8 秒，可能是各軌秒數加總誤差，也請順便核對。 | https://en.wikipedia.org/wiki/Set_Your_Goals_(album) |
+| ar-d-032 | Company Caine | A Product of a Broken Reality | 進了 Kent Music Report 榜前四十名 | 維基寫前四十名，Bang a Gong 單曲頁（搜尋摘要）寫 1972 年 3 月 6 日入榜、最高第 49 名，與前四十名牴觸；Kent Music Report（David Kent《Australian Chart Book》）原始資料未取得。建議簡介改成「進了 Kent Music Report 專輯榜」不寫名次區間，或查到原始資料再定。 | https://bangagong.com.au/trixie-stonewall%ca%bcs-wayward-home-for-young-women-company-caine/ |
+| ar-d-032 | Confuse | Indignation | 十三年後由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD | 搜尋摘要（NTS 引 Discogs）只見 1984 年 Violent Party Records 的卡帶與 1987 年的 Confuse Records 單曲，Sorry State 稱黑膠把整張卡帶與 Nuclear Addicts flexi 等合輯；未能證實「十三年後」「黑膠與 CD」「Anarchy Centre 聯名」。建議店主對 Discogs 的 Indignation 條目逐項核對。 | https://nts.live/artists/89568-confuse |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

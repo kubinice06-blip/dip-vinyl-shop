@@ -576,3 +576,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 卡池年份存疑：Buddy Holly 卡池 1962，原版 1957 年 11 月；Bikini Kill / Huggy Bear 分享盤卡池 1992，英文維基三頁與 Trouser Press 皆寫 1993、英國版廠牌 Catcall。
 - 同名作廢：Big Dipper（北斗七星）、Bodkin（2024 年影集）、Bram Stoker（小說家）的維基預抓。
 - 待本機（上線簡介）：Biglietto per l'Inferno「1994 年發願成為本篤會修士」（1994 退隱、1990 年代末才成修士）；Bogshed「John Peel 說是往水源下毒的音樂版本」出處不明；Brain Failure 日版發行年 2002／2003；Brainticket「數個國家遭禁」只找到「據稱在美國被禁」；Breakdown 的 Eyeball 所在地與成立年；Brygada Kryzys「銷毀名單」僅波蘭維基；Buffalo 封面與唱片行拒進貨無出處；Bulldog Breed「三名核心成員組成 T2」（實為 Cross 與 Jinks 兩人）。
+
+## ar-d-031（2026-10-08）
+
+- 39 位全上（30 full、9 thin：Campo di Marte、Castanarc、Catapilla、Cause for Alarm、Cave In、Chavez、Chrissy Zebby Tembo、Clark-Hutchinson、Collective Soul）。本批名冊原為 39 位。
+- 審稿修 8 處：英文歌詞引語改中文（Candlebox 團名出處）；最高級刪除——Carroll Thompson「同時代最受喜愛也最具影響力之一」、Carsick Cars「中國最知名、最受推崇之一」、Catherine Wheel「那個年代最偉大的失落樂團之一」、Char「日本最偉大的吉他手之一」（維基單源）、Chavez「最好的新搖滾樂團之一」、Children of Bodom「芬蘭史上最暢銷之一」、Circuit des Yeux「沒有第二人這樣唱」。
+- 保留：Burnin Red Ivanhoe「丹麥第一張雙 LP」（兩源）；City〈Am Fenster〉在 radioeins 百人票選列東德最佳歌曲（具名票選）；Close Lobsters 具名 NME 的 C86 合輯（為事件本身，不是評價來源）；Coloured Balls「媒體指責鼓勵暴力」為樂團解散核心，非官司。
+- 身分：Carl Perkins 是 1958 年過世的美國爵士鋼琴手，不是 rockabilly 歌手；Caedmon 是愛丁堡大學的基督教民謠搖滾團（卡池 1994 為 1978 年原版的重發）；Chrissy Zebby Tembo 為 Ngozi Family 的鼓手兼歌手。
+- 同名作廢：Campo di Marte（文學雜誌）、City（城市）、Cirkus（丹麥馬戲團）的維基預抓。
+- 待本機（上線簡介）：Burn《Do or Die》「二十五年前」「1992 年同名 EP」（實為 1992 年試聽帶、約 2002 年發 EP）；Carl Perkins「1956 年錄音」（1955 錄、1956 發行）與「funky hard bop 先行者」無據；Carroll Thompson「倫敦出身」（生於 Letchworth）與「全球賣過百萬張」；Catapilla「三種薩克斯風」（人員表只列兩種）；Cervello「1970 年成立」各源不一；CIV《Set Your Goals》發行月份與總長待核。
