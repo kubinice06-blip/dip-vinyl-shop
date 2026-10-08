@@ -687,3 +687,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分修正：Menuets 是拉脫維亞 Jūrmala 的團（特注原寫希臘，錯）；Mess 是愛沙尼亞 Sven Grünberg 的團；Mehrpouya 是伊朗西塔琴手 Abbas Mehrpouya；Mary See the Future 是台灣先知瑪莉；Midas 是大阪的團。
 - 同名作廢：Midas（弗里吉亞國王）、Mess（軍事用語）的維基預抓。
 - 待本機（上線簡介）：Manowar「Ross the Boss 與 Columbus 的最後一張」（Columbus 1996 年回團）；MASS OF THE FERMENTING DREGS「前作是 2018 年《No New World》」已過時；Maximum Joy「Disc O'Dell」應為 Dick O'Dell；Maxophone「全部成員受過音樂院訓練」；Michel Berger《Starmania》名次與鑽石認證對不上；Michal Prokop「第一張捷克 art rock 專輯」無據；Metró「1963 年第一屆 beat 音樂節與 Illés、Omega 同台」無據。
+
+## ar-d-042（2026-10-08）
+
+- 40 位全上（31 full、9 thin：Moolah、Mother Gong、Move D、Movietone、Murple、Mustard Seed Faith、Necros、Nic Potter & Guy Evans、Non Band）。Movietone 的聲音句以「海灘上兩支麥克風現場收音」的錄音做法當做法句，接受（與 Lightyears Away 只寫錄音室地點不同，這句直接描述聲音的形成）。
+- 研究層放行：N.E.R.D 超額 1 次（《In Search Of...》雙版本第二源）。
+- QA 誤報放行：Natalie Merchant 正文的「10,000 Maniacs」觸發千分位逗號警告，屬團名專名，照原樣保留。
+- 審稿修 13 處：最高級刪改——Mon Laferte 刪「得獎最多的智利表演者」與歌曲節（在世者只留五座拉丁葛萊美）、Motorpsycho 刪 Spellemannprisen（只留 Rockheim）、Museo Rosenbach「最好之一」改「經典」、Mother Love Bone 刪「唯一」、MX-80 Sound「最徹底」改「很徹底」、Ngozi Family「最早一批」改「早期」、Nihilist Spasm Band 刪「持續最久」、Novalis「最成功」改平述；英文詞譯中文——MJ Cole「coffee-table garage」、Mother Gong「space whispers」；健康細節——Neil Young 刪小兒麻痺；語意不明——Nazareth 刪 Axl Rose 悼念句；重複——Nothing Painted Blue 刪與前句重疊的詞曲形容。
+- 保留：Mk.gee 的 Eric Clapton 評語、Natalie Merchant 的 Michael Stipe 說法、N.E.R.D 的 Virgil Abloh 與 Tyler, the Creator 說法（具名人物）；Neil Young 搖滾名人堂（在世者唯一一處）；New Found Glory 不寫 Chad Gilbert 過世（新近且不必要）。
+- 身分：Moolah 是紐約二人組 Walter Burns 與 Maurice Roberson；Mountain 是 Leslie West 的團（維基預抓山岳條目作廢）；Murphy's Law（維基預抓格言條目作廢）；Nausea 是紐約 crust punk；Nothing Painted Blue 與 d-035 Franklin Bruno 已比對無撞句。
+- 待本機（上線簡介）：Murple「1973 年成立」（另說 1971）；Music Emporium「被 Liberty 開除」「壓 300 張」單源；Mystic Siva「Mark Heckert」應為 Marc；Necros「第一個替 Touch and Go 錄音」單源。
