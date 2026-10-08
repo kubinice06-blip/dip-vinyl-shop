@@ -58,3 +58,4 @@
 - **8890**（推翻 8888）店主 2026-10-08：「Culture Club 單曲就是單曲不是專輯」。撤回掛《Colour by Numbers》：Notion 卡池鍵清空、放回 PENDING_NEW（註明單曲不掛專輯卡）、mood-map 撤回、inventory 回 pending_card。店內遊戲不抽它；門市版照寫單曲本身（r10 末筆，key 用單曲名，ids 掛 Notion 頁面 id）。
 - **8891** 店主 2026-10-08：破地獄《芒神》店內實物是**黑膠**＝2018 WV 025 版（研究 r10：2016 首版是日本 Guruguru Brain 卡帶、未見台灣 CD，兩版曲目不同）。門市版以 2018 黑膠為主體。卡單 8781–8790 的「2016 台灣 CD」說法存疑，日後上卡池時回頭核。
 - **8892** Culture Club 店內實物＝日本 VIP-5916 12 吋 45 轉來日記念盤（1984，店主提供封面照）：A 面兩曲接成的 U.S. Remix、B 面兩首現場。推翻 8783 的 UK VS 662-12 推定。
+- **8893** 門市版 28 張完成（r8 池中 6、r9 b 組 7、r10 a 組 6＋Yufu＋Culture Club 單曲、r11 c 組 7）：研究（Sonnet）→ 寫作（Opus）→ 主線逐句審。審稿改動：宇多田銷量句改「累計銷量是日本專輯史上第一」（避免讀成首週紀錄）；Yufu 去掉代名詞（研究稿無性別來源）；桃井「用編號當標題」改「多用」（WATASHI 等非編號）。合併：`data/shop/research/merge-20261008.json`（ids＝Notion 頁面 id、sources＝研究稿 src）→ `build-shop-descs.mjs`，descs.json 68→96 張，在售＋待上架 97 列全有介紹。印刷 A6／A7 HTML 與 .jsx 重出（97 張，無溢框）。
