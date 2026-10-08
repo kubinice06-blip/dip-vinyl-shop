@@ -95,9 +95,9 @@ ${SIZE === 'a7' ? `
 header { font-size: 5pt; }
 .g { font-size: 5.6pt; padding: .3mm 1.4mm; border-radius: 2mm; } .g i { font-size: 4.4pt; margin-left: .7mm; }
 .apexbadge { font-size: 5.6pt; padding: .4mm 1.4mm; margin-left: 1.6mm; } .apexbadge i { font-size: 4.4pt; }
-.title { margin-top: 5mm; padding-bottom: 2.4mm; }
-.artist { font-size: 7pt; margin-bottom: 1mm; }
-h1 { font-size: 13pt; }
+.title { margin-top: 3mm; padding-bottom: 1.8mm; }
+.artist { font-size: 6.5pt; margin-bottom: .6mm; }
+h1 { font-size: 10.5pt; line-height: 1.25; }
 .axes { padding: 1.5mm 0; } .ax em { font-size: 5.2pt; } .st { font-size: 7.6pt; }
 .text { margin-top: 2.4mm; font-size: 9pt; line-height: 1.5; }
 .long .text { font-size: 9pt; line-height: 1.5; }
