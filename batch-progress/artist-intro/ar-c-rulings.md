@@ -629,3 +629,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Gai 為福岡硬蕊團，與 The Swankys 同一團不同時期名字（先後兩說衝突，不寫）；Fix 為愛沙尼亞塔爾圖的團；Fireworks 為納許維爾基督教流行搖滾團；Gerard 為永川敏郎的日本前衛團；Gentle Faith 國籍由 Calvary Chapel／Maranatha! 推定美國。George Brigman 貝斯手之死只寫「樂團解散後淡出」。Gary Glitter 只寫音樂。
 - 同名作廢：Fireworks（煙火）、Fraction（數學）、Fuchsia（植物）、Galliard（舞曲）的維基預抓。
 - 待本機（上線簡介）：Fresh Blueberry Pancake「1970 年自資發行」（另說 1971 錄、1971 年 8 月登記著作權）；Galliard「1968 年成軍、1971 年解散」（1968／1969 兩說，解散年單源）；Fraction「兩百張」「藍領工人」「專輯名取自啟示錄」「十多年後被挖掘」「介於 The Doors 與 Black Sabbath」皆無據。
+
+## ar-d-036（2026-10-08）
+
+- 39 位上架（31 full、8 thin：Gilla Band、Ginhouse、Gone、Gray Matter、Grow-Up、Guadalcanal Diary、Haikara、Harvest Flight），1 位不寫：Gorgoroth（素材只剩曲長與演出名單，沒有任何聲音描述，過不了 thin 門檻；題材本身也高風險）。
+- 研究層放行：Gombloh 超額 1 次（PAPPRI 獎與銅像第二源）；Gunnar Graps ja Magnetic Band 超額 2 次（1980 年提比里斯音樂節首獎第二源；超 2 次為例外，因屬高風險事實、且第二源確實取得）。
+- 審稿修 11 處：Gila 刪 NTS「最好的 Krautrock 之一」；God Bullies 刪廠牌自述「最受歡迎之一」；Golden Earring 刪 Kooymans 病情；Graham Parker 刪 Village Voice／Pazz & Jop 刊名（票選保留、不具名）；Grand Funk Railroad 刪「比披頭四還快」；Grannie 刪重複的 99 張與《Record Collector》「最值錢 100 張」（來源為賣家頁）；Group 1850 刪「最具創意之一」；Gun Club「最早之一」改「很早就」；Gunnar Graps 刪「蘇聯最受歡迎之一」；Harry Roesli Gang「印尼最難找之一」改平述。
+- 保留：Hall & Oates 的搖滾名人堂評語（權威名人堂，與入選同句算一處成績）；Guruh Gipsy 不寫 Rolling Stone Indonesia 名次，改「被視為關鍵之作」。
+- 身分修正：Grow-Up 是英國曼徹斯特 Object Music 旗下的團（特注原疑為日本團，錯）；Haikara 是芬蘭拉赫蒂的團（特注原疑為英國，錯）；Giant Step、Harry Roesli Gang 為印尼萬隆；Gone 為 Greg Ginn 的器樂團。
+- 卡池年份存疑：Gila 卡池 1967，各源皆 1969 成軍、首作 1971。
+- 同名作廢：Giant Step（紐約活動公司）的維基預抓。
+- 待本機（上線簡介）：Gianna Nannini「Antonioni 拍〈Ballami〉」「最早由電影作者拍 MV 之一」「〈Kolossal〉走紅」無據；Giant Step「印尼電台繞開了它」因果無據；Gombloh 簡介用了 Rolling Stone Indonesia 名次（單源）；Grannie「1971 年進錄音室、Janet Chandler 長笛」（多源 1970、樂器不一）；Grow-Up「吉他手 John Bisset-Smith」（LTM 為貝斯，吉他是 Roger Blackburn）；Guruh Gipsy「自資」（資金來自 Pontjo Sutowo）與「從未再版」（2006 Shadoks 重發）；Harry Roesli Gang「雅加達錄音」「新加坡 Lion Records」（團員稱萬隆錄音，廠牌存疑）；Grandaddy「NME 十年榜第 34」無據。

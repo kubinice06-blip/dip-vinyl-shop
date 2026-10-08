@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 672 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 687 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -672,6 +672,21 @@
 | ar-d-036 | Gianna Nannini | Puzzle | 兩支單曲的錄影帶，都是電影導演 Michelangelo Antonioni 拍的。〈Fotoromanza〉與〈Ballami〉的影像都由他執導 | 來源只證實〈Fotoromanza〉的錄影帶由 Antonioni 執導（4 分鐘彩色，KVIFF 影展 2012 年 Antonioni 致敬單元列有此片）；〈Ballami〉只見於專輯曲目表，查不到它是單曲或有 Antonioni 執導的影片 | https://en.wikipedia.org/wiki/Puzzle_(Gianna_Nannini_album) |
 | ar-d-036 | Gianna Nannini | Puzzle | 是義大利最早由電影作者來拍音樂錄影帶的案例之一；不過在義大利，第二首真正走紅的單曲是〈Kolossal〉 | 「最早由電影作者拍 MV 的案例之一」與「第二首走紅的單曲是〈Kolossal〉」兩句都找不到來源；來源只把〈Kolossal〉列為專輯第一軌（3:58），沒有單曲或榜單資料 | https://en.wikipedia.org/wiki/Puzzle_(Gianna_Nannini_album) |
 | ar-d-036 | Giant Step | Giant on the Move! | 最後一軌用八分鐘唱空氣污染，印尼電台於是繞開了它 | Kamarmusik 只說樂團編曲複雜、歌難上排行榜，唯一的大力播放來自經紀人 Gandjar Suwargani 自營的 Radio Oz Bandung，並說環保議題在當時不討喜；沒有來源說電台因〈Air Pollution〉而拒播，「於是繞開了它」的因果句缺依據 | https://kamarmusik.id/spirit-tampil-beda-giant-step/ |
+| ar-d-036 | Grannie | Grannie | 1971 年進錄音室時多了 Janet Chandler 的長笛 | 存疑，不確定誰對：riffrelevant 與 recordcollector.org 兩頁都寫專輯 1970 年錄音、1971 年發行；另有來源（Discogs、psychedelicbabymag）寫 1971。名字多數來源寫 Jan Chandler，樂器則 riffrelevant 寫長笛、psychedelicbabymag 寫 Mellotron。建議簡介改成不帶錄音年份，樂器只寫其一或略去。 | https://www.riffrelevant.com/2020/06/07/oldschool-sunday-grannie/ |
+| ar-d-036 | Grow-Up | The Best Thing | 吉他手 John Bisset-Smith | LTM 傳記頁寫 Bisset-Smith 在 Grow Up 改彈貝斯，吉他手是 Roger Blackburn；Bisset-Smith 是在前一個團 Spherical Objects 彈吉他。建議簡介改成『成員 John Bisset-Smith』或『貝斯手與作曲 John Bisset-Smith』。 | https://www.ltmrecordings.com/grow_up.html |
+| ar-d-036 | Guruh Gipsy | Guruh Gipsy | Guruh Soekarnoputra 自資製作 | 印尼文維基與 Tirto 都寫錄音資金來自 Pontjo Sutowo（Gipsy 創團成員），並說另向贊助者籌款，不是 Guruh 自掏腰包；「自資」宜改為「籌資自製」。 | https://id.wikipedia.org/wiki/Guruh_Gipsy |
+| ar-d-036 | Guruh Gipsy | Guruh Gipsy | 只壓五千張，此後從未再版 | 英文維基寫 2006 年德國 Shadoks Music 未經授權重發黑膠後撤回；印尼報導則說「從未再發行」。「從未再版」若指正式再版成立，建議改寫為「從未正式再版」。 | https://en.wikipedia.org/wiki/Guruh_Gipsy |
+| ar-d-036 | Harry Roesli Gang | Philosophy Gang | 錄音在雅加達的 Musica Studio's，掛的卻是新加坡的 Lion Records | 2017 年《Jakarta Post》報導團員說錄音在萬隆，且重發主辦方找不到 Lion Records 與製作人 Robert Wong Junior，團員甚至認為廠牌可能是 Harry 自己編的。上線簡介把兩點寫成定論，建議改為「據唱片標示」或刪去；錄音地點兩說並存，需主線裁定。 | https://www.thejakartapost.com/life/2017/03/24/harry-roesli-returns |
+| ar-d-037 | Hi-STANDARD | MAKING THE ROAD | 國內外合計逾百萬張，日本唱片協會認定白金 | 各源口徑不一：日文維基與 Fat Wreck 寫逾 100 萬張，Oricon 專題寫 65.3 萬張，英文維基專輯條目寫逾 65 萬；『日本唱片協會認定白金』本層未讀到來源。建議改成不帶數字，或標明口徑。 | https://www.oricon.co.jp/special/49414/ |
+| ar-d-037 | Hi-STANDARD | MAKING THE ROAD | 難波章浩、橫山健、恆岡章的三人編制 | 鼓手本名為「恒岡章」（日文維基與報導的字形），上線簡介寫成「恆岡章」，專名字形不符。 | https://ja.wikipedia.org/wiki/Hi-STANDARD |
+| ar-d-037 | Hoola Bandoola Band | Vem kan man lita på? | 十個月賣掉 25000 張，最高到第 7 名 | 本層未在讀到的來源中找到這組銷量與名次，無法驗證；請店主回看原研究稿來源。 | https://sv.wikipedia.org/wiki/Hoola_Bandoola_Band |
+| ar-d-037 | Horrific Child | L'Étrange Mr Whinster | 1976 年由 Eurodisc 發行 | 法文維基、英文維基與 Red Bull Music Academy 都沒寫發行廠牌，Eurodisc 本層未能驗證；請店主對照原研究稿的 Discogs 版本表。 | https://en.wikipedia.org/wiki/Jean-Pierre_Massiera |
+| ar-d-037 | hush! | X | 團在 2015 年結束，一生只留下兩張錄音室專輯 | 中文維基正文、英文維基 Hush (singer)、Qobuz 均稱 2014 年解散（2014 年貝斯手與鼓手相繼離團）；2015 年 1 月的《Everyone's gonna miss you》是解散後的實況專輯。『2015 年結束』應改為 2014 年解散，或寫『2015 年初推出最後的實況專輯』。 | https://zh.wikipedia.org/zh-hant/Hush_(%E6%AD%8C%E6%89%8B) |
+| ar-d-037 | hush! | X | 兩年後由那家店發碟（《X》發行日 2012 年 10 月 20 日） | 中文維基專輯列表記《X》為 2012-12-01 發行、發行者 re:public studio，與 MusicBrainz 的 2012-10-20 不同，也沒有『海邊的卡夫卡』發行唱片的記載；『由那家店發碟』與日期兩處皆待核。 | https://zh.wikipedia.org/zh-hant/Hush! |
+| ar-d-037 | Igra Staklenih Perli | Igra Staklenih Perli | 他們長期在貝爾格勒學生文化中心演免費場 | 本層找不到樂團與貝爾格勒學生文化中心（SKC）的關聯；Psychedelic Baby 訪談只說『多數是免費場、人潮越來越多』，搜尋摘要提到的場地是貝爾格勒牙醫學院。待核。 | https://psychedelicbabymag.com/?p=2885 |
+| ar-d-037 | Igra Staklenih Perli | Igra Staklenih Perli | 〈Pečurka〉是寫給 Can 的致敬曲 | 事實庫稱此說法取自英文維基，本層讀到的 Danas 與 Psychedelic Baby 只提到團員愛聽 Can（以及 Tangerine Dream、Pink Floyd、Popol Vuh），沒有證實〈Pečurka〉是致敬曲。待核。 | https://psychedelicbabymag.com/?p=2885 |
+| ar-d-037 | Il Paese dei Balocchi | Il Paese dei Balocchi | 吉他手回憶這張唱片壓了 1800 張，用來試市場 | italianprog.com 原文是『Sandro Laudadio si ricorda che il nostro primo LP è stato stampato in 1800 copie per saggiare il mercato』，說這句話的是鼓手 Laudadio，不是吉他手 Fabiani；『吉他手回憶』應改為『鼓手回憶』。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
+| ar-d-037 | Il Paese dei Balocchi | Il Paese dei Balocchi | 有幾段人聲，是借羅馬一座教堂的自然殘響錄下來的 | italianprog.com 證實部分合唱在羅馬 S. Euclide 教堂內利用殘響錄製（含〈Vanità dell'intuizione fantastica〉的人聲），與上線簡介一致；另補充教堂下方 Ortophonic 錄音室的管風琴用在末曲。簡介無誤，僅供補充。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
