@@ -14,7 +14,8 @@ const R = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const arg = k => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
 const SIZE = (arg('--size') || 'a7').toLowerCase();
 const HTML = path.resolve(R, arg('--html') || `data/shop/print/shop-${SIZE}.html`);
-const OUT = path.resolve(R, arg('--out') || HTML.replace(/\.html$/, '.jsx'));
+const SHEET = (arg('--sheet') || '').toLowerCase();   // a4：每張 A4 橫式拼 8 張 A7（4 × 2），卡緣畫淺灰虛線裁切線
+const OUT = path.resolve(R, arg('--out') || HTML.replace(/\.html$/, SHEET ? `-${SHEET}.jsx` : '.jsx'));
 
 let chromium;
 try { ({ chromium } = await import('playwright')); } catch { ({ chromium } = await import('/opt/node22/lib/node_modules/playwright/index.mjs')); }
@@ -157,13 +158,24 @@ function style(tf, it) {
   try { p.kinsoku = '\\u5f37\\u3044'; } catch (e) { try { p.kinsoku = 'Hard'; } catch (e2) {} }  // 禁則：強
 }
 
-var first = CARDS[0], N = CARDS.length;
-var doc = app.documents.add(DocumentColorSpace.CMYK, first.w, first.h, N, DocumentArtboardLayout.GridByRow, 24, Math.min(N, 8));
+var SHEET = ${SHEET === 'a4' ? '{ w: 841.89, h: 595.28, cols: 4, rows: 2 }' : 'null'};   // A4 橫式 297×210mm
+var first = CARDS[0], N = CARDS.length, PER = SHEET ? SHEET.cols * SHEET.rows : 1, PAGES = Math.ceil(N / PER);
+var doc = SHEET
+  ? app.documents.add(DocumentColorSpace.CMYK, SHEET.w, SHEET.h, PAGES, DocumentArtboardLayout.Column, 36, 1)
+  : app.documents.add(DocumentColorSpace.CMYK, first.w, first.h, N, DocumentArtboardLayout.GridByRow, 24, Math.min(N, 8));
 var overflow = [];
 for (var n = 0; n < N; n++) {
-  var cd = CARDS[n], ab = doc.artboards[n], R = ab.artboardRect, L = R[0], T = R[1];
-  ab.name = cd.name;
+  var cd = CARDS[n], ab = doc.artboards[Math.floor(n / PER)], R = ab.artboardRect, L = R[0], T = R[1];
+  if (SHEET) {   // 整頁置中，第 n 張落在第 (n % 8) 格
+    var slot = n % PER, col = slot % SHEET.cols, row = Math.floor(slot / SHEET.cols);
+    L += (SHEET.w - SHEET.cols * cd.w) / 2 + col * cd.w; T -= (SHEET.h - SHEET.rows * cd.h) / 2 + row * cd.h;
+    if (slot === 0) ab.name = 'A4 ' + (Math.floor(n / PER) + 1);
+  } else ab.name = cd.name;
   var grp = doc.groupItems.add(); grp.name = cd.name;
+  if (SHEET) {   // 裁切線：卡片外框，淺灰虛線
+    var cut = grp.pathItems.rectangle(T, L, cd.w, cd.h);
+    cut.filled = false; cut.stroked = true; cut.strokeWidth = 0.28; cut.strokeDashes = [2, 2]; cut.strokeColor = color('rgb(201, 195, 184)'); cut.name = 'cut';
+  }
   for (var j = 0; j < cd.items.length; j++) {
     var it = cd.items[j], o;
     if (it.k === 'line') {
@@ -200,4 +212,4 @@ alert(msg);
 })();
 `;
 fs.writeFileSync(OUT, jsx);
-console.log(`寫出 ${path.relative(R, OUT)}：${cards.length} 張`);
+console.log(`寫出 ${path.relative(R, OUT)}：${cards.length} 張${SHEET === 'a4' ? `，${Math.ceil(cards.length / 8)} 頁 A4` : ''}`);

@@ -8,7 +8,8 @@ import { fileURLToPath } from 'node:url';
 
 const R = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const arg = k => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
-const OUT = path.resolve(R, arg('--out') || `data/shop/print/shop-${(arg('--size') || 'a6').toLowerCase()}.html`);
+const SHEET = (arg('--sheet') || '').toLowerCase();   // a4：A7 卡 8 張拼一張 A4 橫式（4 欄 × 2 列）
+const OUT = path.resolve(R, arg('--out') || `data/shop/print/shop-${(arg('--size') || 'a6').toLowerCase()}${SHEET ? '-' + SHEET : ''}.html`);
 const pick = arg('--ids') ? new Set(arg('--ids').split(',')) : null;
 const SIZE = (arg('--size') || 'a6').toLowerCase();   // a6 105×148mm（預設）｜a7 74×105mm
 
@@ -105,9 +106,19 @@ h1 { font-size: 10.5pt; line-height: 1.25; }
 .text { margin-top: 2.4mm; font-size: 9pt; line-height: 1.5; }
 .long .text { font-size: 9pt; line-height: 1.5; }
 footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }` : ''}
+${SHEET === 'a4' ? `
+/* A4 橫式 297×210mm 拼 8 張 A7（4 × 2，左右各留 0.5mm）；卡緣畫淺灰虛線當裁切線 */
+@page { size: 297mm 210mm; margin: 0; }
+.sheet { width: 297mm; height: 210mm; margin: 6mm auto; background: #fbfaf6; display: grid;
+  grid-template-columns: repeat(4, 74mm); grid-template-rows: repeat(2, 105mm); justify-content: center; align-content: center;
+  break-after: page; page-break-after: always; }
+.sheet .card { margin: 0; break-after: auto; page-break-after: auto; outline: .1mm dashed #c9c3b8; outline-offset: -.05mm; }
+@media print { .sheet { margin: 0; } }` : ''}
 </style></head><body>
-${rows.map(card).join('\n')}
+${SHEET === 'a4'
+  ? Array.from({ length: Math.ceil(rows.length / 8) }, (_, i) => `<div class="sheet">\n${rows.slice(i * 8, i * 8 + 8).map(card).join('\n')}\n</div>`).join('\n')
+  : rows.map(card).join('\n')}
 </body></html>`;
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, html);
-console.log(`寫出 ${path.relative(R, OUT)}：${rows.length} 張`);
+console.log(`寫出 ${path.relative(R, OUT)}：${rows.length} 張${SHEET === 'a4' ? `，${Math.ceil(rows.length / 8)} 頁 A4` : ''}`);
