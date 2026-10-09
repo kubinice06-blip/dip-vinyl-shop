@@ -1,6 +1,6 @@
 {
   "source": "notion:401f0a5c4871448783385c78f6a3ac39",
-  "fetchedAt": "2026-10-08",
+  "fetchedAt": "2026-10-09T02:00:00Z",
   "note": "只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵）。成本、利潤、抽成、群組一律不進 repo。",
   "rows": [
     {
@@ -85,32 +85,6 @@
       "poolKey": "Oscar Peterson|Night Train",
       "genres": [
         "Jazz"
-      ]
-    },
-    {
-      "id": "3ee0ad0255ff81368bbec643884d8766",
-      "title": "The Detroit Experiment 2LP",
-      "artist": "The Detroit Experiment",
-      "year": 2003,
-      "condition": "NM",
-      "priceNT": 4000,
-      "poolKey": "The Detroit Experiment|The Detroit Experiment",
-      "genres": [
-        "Jazz",
-        "Electronic"
-      ]
-    },
-    {
-      "id": "3ee0ad0255ff814c8cd7d6b0305fcb15",
-      "title": "石頭記",
-      "artist": "達明一派",
-      "year": 1987,
-      "condition": "VG+",
-      "priceNT": 3500,
-      "poolKey": "達明一派|石頭記",
-      "genres": [
-        "Pop",
-        "Electronic"
       ]
     },
     {
@@ -1095,6 +1069,141 @@
       "year": null,
       "condition": null,
       "priceNT": 300,
+      "poolKey": null
+    },
+    {
+      "id": "3f30ad0255ff80b4aa5fc5bc90942ee4",
+      "title": "弘田三枝子の世界",
+      "artist": "弘田三枝子",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f30ad0255ff8024b8add7dcb03fb4f0",
+      "title": "京のにわか雨",
+      "artist": "小柳ルミ子",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f30ad0255ff8075ae57dd12e1836e8e",
+      "title": "パーティー",
+      "artist": "朱里エイコ",
+      "year": null,
+      "condition": null,
+      "priceNT": 800,
+      "poolKey": null
+    },
+    {
+      "id": "3f30ad0255ff806bba99dbb9211b1367",
+      "title": "Laff",
+      "artist": "Carmen Maki & Laff",
+      "year": null,
+      "condition": null,
+      "priceNT": 600,
+      "poolKey": null
+    },
+    {
+      "id": "3f30ad0255ff8056b3fdf57bb2922c3a",
+      "title": "Leftover Wine",
+      "artist": "Melanie",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f30ad0255ff8037a062f543a301b7db",
+      "title": "Rhapsody",
+      "artist": "松尾和子",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff8007a04cff125319e75e",
+      "title": "14番目の月",
+      "artist": "荒井由実",
+      "year": null,
+      "condition": null,
+      "priceNT": 600,
+      "poolKey": "荒井由実|14番目の月"
+    },
+    {
+      "id": "3f40ad0255ff8055b641d54aba84bfa7",
+      "title": "Lilycism",
+      "artist": "りりィ Lily",
+      "year": null,
+      "condition": null,
+      "priceNT": 600,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff806a85f2e2c4bfbc4f74",
+      "title": "スーパー・デラックス",
+      "artist": "Cherish",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80e48464ef925fe09e0c",
+      "title": "徬徨",
+      "artist": "小椋佳",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff802fa99ae529051a4953",
+      "title": "人間なんて",
+      "artist": "吉田拓郎",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80128c9bc90461078c67",
+      "title": "タッチ・ミー",
+      "artist": "小川知子",
+      "year": null,
+      "condition": null,
+      "priceNT": 600,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80259c1bc6632ab37b95",
+      "title": "希望の旅",
+      "artist": "平山三紀",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80f19b5dc9f7d87f375b",
+      "title": "Hot Baby",
+      "artist": "尾崎亜美",
+      "year": null,
+      "condition": null,
+      "priceNT": 600,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff8044b48cedc56b25742e",
+      "title": "Little Concert",
+      "artist": "太田裕美",
+      "year": null,
+      "condition": null,
+      "priceNT": 400,
       "poolKey": null
     }
   ]

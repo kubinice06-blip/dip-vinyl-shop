@@ -79,12 +79,26 @@ const PENDING_NEW = new Set([
   '3f30ad0255ff8057af4fdc81d4f60a46', // Culture Club《It's a Miracle / Miss Me Blind》：單曲，店主 2026-10-08：單曲就是單曲，不掛專輯卡
   '3f30ad0255ff803aaf93fb4c4814d49e', // Marlene《It's Magic》
   '3f30ad0255ff800a8aa6cbeafa8de620', // 小柳ルミ子《愛に甦える》
+  // 2026-10-08 晚／10-09 進貨，卡池尚無（先做門市版，卡池上架另議）
+  '3f30ad0255ff80b4aa5fc5bc90942ee4', // 弘田三枝子《弘田三枝子の世界》
+  '3f30ad0255ff8024b8add7dcb03fb4f0', // 小柳ルミ子《京のにわか雨》
+  '3f30ad0255ff8075ae57dd12e1836e8e', // 朱里エイコ《パーティー》
+  '3f30ad0255ff806bba99dbb9211b1367', // Carmen Maki & Laff《Laff》
+  '3f30ad0255ff8056b3fdf57bb2922c3a', // Melanie《Leftover Wine》
+  '3f30ad0255ff8037a062f543a301b7db', // 松尾和子《Rhapsody》
+  '3f40ad0255ff8055b641d54aba84bfa7', // りりィ《Lilycism》
+  '3f40ad0255ff806a85f2e2c4bfbc4f74', // チェリッシュ《スーパー・デラックス》
+  '3f40ad0255ff80e48464ef925fe09e0c', // 小椋佳《徬徨》
+  '3f40ad0255ff802fa99ae529051a4953', // 吉田拓郎《人間なんて》
+  '3f40ad0255ff80128c9bc90461078c67', // 小川知子《タッチ・ミー》
+  '3f40ad0255ff80259c1bc6632ab37b95', // 平山三紀《希望の旅》
+  '3f40ad0255ff80f19b5dc9f7d87f375b', // 尾崎亜美《Hot Baby》
+  '3f40ad0255ff8044b48cedc56b25742e', // 太田裕美《Little Concert》
 ]);
 
 // 店主說已下架、但 Notion 還沒刪的列：當成已售出（Notion 刪掉之後這裡可清掉）。
 const DELISTED = new Set([
-  '3ee0ad0255ff81368bbec643884d8766', // The Detroit Experiment 2LP（店主 2026-10-07：已下架）
-  '3ee0ad0255ff814c8cd7d6b0305fcb15', // 達明一派《石頭記》（店主 2026-10-07：已下架）
+  // （2026-10-09：石頭記、The Detroit Experiment 已從 Notion 刪除，清空）
 ]);
 
 const pool = JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8'));
