@@ -1,6 +1,6 @@
 {
   "source": "notion:401f0a5c4871448783385c78f6a3ac39",
-  "fetchedAt": "2026-10-09T02:00:00Z",
+  "fetchedAt": "2026-10-09T03:40:00Z",
   "note": "只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵）。成本、利潤、抽成、群組一律不進 repo。",
   "rows": [
     {
@@ -1204,6 +1204,51 @@
       "year": null,
       "condition": null,
       "priceNT": 400,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80d38f49c150961f2860",
+      "title": "流線形",
+      "artist": "松任谷由実",
+      "year": null,
+      "condition": null,
+      "priceNT": 1000,
+      "poolKey": "松任谷由実|流線形'80"
+    },
+    {
+      "id": "3f40ad0255ff80c493d6e390cf76669d",
+      "title": "Words of Wisdom",
+      "artist": "Dennis Brown",
+      "year": null,
+      "condition": null,
+      "priceNT": 1000,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80c9a755c815c402b418",
+      "title": "Olive",
+      "artist": "松任谷由実",
+      "year": null,
+      "condition": null,
+      "priceNT": 600,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80989ef2c640c92910c7",
+      "title": "悲しいほどお天気",
+      "artist": "松任谷由実",
+      "year": null,
+      "condition": null,
+      "priceNT": 300,
+      "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80008265d7c859171aa3",
+      "title": "デラックス・ダブル",
+      "artist": "奥村チヨ",
+      "year": null,
+      "condition": null,
+      "priceNT": 300,
       "poolKey": null
     }
   ]
