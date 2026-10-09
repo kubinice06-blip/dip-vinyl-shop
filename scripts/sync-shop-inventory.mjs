@@ -94,6 +94,10 @@ const PENDING_NEW = new Set([
   '3f40ad0255ff80259c1bc6632ab37b95', // 平山三紀《希望の旅》
   '3f40ad0255ff80f19b5dc9f7d87f375b', // 尾崎亜美《Hot Baby》
   '3f40ad0255ff8044b48cedc56b25742e', // 太田裕美《Little Concert》
+  '3f40ad0255ff80c493d6e390cf76669d', // Dennis Brown《Words of Wisdom》
+  '3f40ad0255ff80c9a755c815c402b418', // 松任谷由実《OLIVE》
+  '3f40ad0255ff80989ef2c640c92910c7', // 松任谷由実《悲しいほどお天気》
+  '3f40ad0255ff80008265d7c859171aa3', // 奥村チヨ《デラックス・ダブル》
 ]);
 
 // 店主說已下架、但 Notion 還沒刪的列：當成已售出（Notion 刪掉之後這裡可清掉）。
