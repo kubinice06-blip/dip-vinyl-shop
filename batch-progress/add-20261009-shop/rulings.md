@@ -10,3 +10,4 @@
 - **8908** 店主 10-09 再貼 5 張：松任谷由実《流線形》＝池中《流線形'80》（Notion 卡池鍵已填、mood-map 補 drift＋crowd，店內遊戲可抽）；其餘 4 張（Dennis Brown《Words of Wisdom》、松任谷由実《OLIVE》《悲しいほどお天気》、奥村チヨ《デラックス・ダブル》）列待上架，研究 r14（5 張）。
 - **8909** r14 研究→寫作→審稿：奥村チヨ「和製西爾維・瓦爾丹」改「和製 Sylvie Vartan」（音樂人用拉丁原文）並刪一處編曲形容壓字數。descs.json 111→116，印刷檔 115 張。ZH 曲風補 Reggae（雷鬼）。
 - **8910** 店主 10-09：店內商品封面全部換成無側標。逐張看過 115 張，帶側標或破圖 25 張；從同 master 各版本 Discogs 照片找到無側標版 14 張（卡池 4 張改 card_catalog 並登錄 discogs-cover-registry：三上寛、乙女の儚夢、いわな〔原 CAA 破圖〕、陽水II；待上架 10 張改 pending-meta）。找不到無側標照片 9 張：竹の村、Another Step、Tuttie Flutie、ラヴ・レター、フォグ・ランプ、思い出を置く 君を置く、ゴールデンハーフでーす、愛に甦える、タッチ・ミー。
+- **8911** 店主 10-09：待上架 40 張補三軸（店內暫定值，存 pending-meta.axes）。/album-rating 取機器基線；日文、台灣等非英語圈的冷門軸照 ALBUM_ONBOARDING §0.8 錨點制以該語言圈為尺度人工定（策展 8790／8810 有建議者照建議），英語圈兩張（Leftover Wine、Words of Wisdom）沿用 Last.fm 分級；經典、硬蕊多沿用基線，少數微調（小坂明子 4→3、Culture Club 單曲 4→3、LAFF 4→3、彷徨 3→4、Mon-jah 硬蕊 2→3）。所有唱片頁與印刷卡都顯示三軸與稀有度；A7 版 OLIVE 因多一列三軸溢框，正文刪一句壓到 230 字。上卡池時可沿用。

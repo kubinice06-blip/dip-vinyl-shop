@@ -193,8 +193,9 @@
       album: it.album || def?.album || it.listedTitle || '',
       year: (row && Number(row[6])) || m.year || null,
       genres,
-      rarity: rarityOf(row),
-      axes: row ? [row[2], row[3], row[4]].map(Number) : null,
+      // 卡池還沒有的待上架唱片：三軸讀 pending-meta 的店內暫定值（同一套稀有度公式）
+      rarity: rarityOf(row || (m.axes ? [0, 0, m.axes.classic, m.axes.obscurity, m.axes.accessibility] : null)),
+      axes: row ? [row[2], row[3], row[4]].map(Number) : m.axes ? [m.axes.classic, m.axes.obscurity, m.axes.accessibility] : null,
       text: (edit?.text || def?.text || '').trim(),
       price: it.priceNT || null, condition: it.condition || null, pressingYear: it.pressingYear || null,
       firstSeen: it.firstSeen || '',
