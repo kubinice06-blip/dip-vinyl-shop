@@ -1,5 +1,5 @@
 {
- "_note": "店內「所有唱片」頁用：卡池還沒有的待上架唱片（2026-10-08、10-09 進貨）的封面、年份、曲風。封面是 Discogs 圖（盡量取無側標的那張），上架進卡池後以 card_catalog 為準、本檔可刪。",
+ "_note": "店內「所有唱片」頁用：卡池還沒有的待上架唱片（2026-10-08、10-09 進貨）的封面、年份、曲風、三軸（axes：店內用暫定值，冷門軸照 ALBUM_ONBOARDING §0.8 錨點制人工定，machine 是 /album-rating 原值）。封面是 Discogs 圖（盡量取無側標的那張），上架進卡池後以 card_catalog 為準、本檔可刪。",
  "items": {
   "3f30ad0255ff80ac8b80cc8ad54df6cc": {
    "year": 1976,
@@ -7,7 +7,19 @@
     "Jazz"
    ],
    "cover": "https://i.discogs.com/DeCUF3siLHDEALsV3SWDNlvKl7IlT-uCMT1V75XuhWU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTQ5/ODItMTQ1Mzk2MTE2/MS00MzA3LmpwZWc.jpeg",
-   "coverSrc": "discogs:2314982#1"
+   "coverSrc": "discogs:2314982#1",
+   "axes": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 20
+    }
+   }
   },
   "3f30ad0255ff800b850adf07be4ce9b7": {
    "year": 1979,
@@ -16,7 +28,19 @@
     "Rock"
    ],
    "cover": "https://i.discogs.com/ohzCdnrwcB4kNnzaq8s24zxvBa1tM5wNF--gV3-2Ruk/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTc5/NDItMTM0MzMyMTI0/NC0xMjE1LmpwZWc.jpeg",
-   "coverSrc": "discogs:1317942#0"
+   "coverSrc": "discogs:1317942#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 4
+    }
+   }
   },
   "3f30ad0255ff800c9fb8ca4bc56ede28": {
    "year": 2016,
@@ -25,7 +49,19 @@
     "Electronic"
    ],
    "cover": "https://i.discogs.com/lrwAgcHW9k94y9pXvPKgm-IAxvv0rEtN8F3jtvVFERY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTgz/MDE0LTE1NDU4NjQx/NTUtNzc5Mi5qcGVn.jpeg",
-   "coverSrc": "discogs:12983014#0"
+   "coverSrc": "discogs:12983014#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "listeners": 9
+    }
+   }
   },
   "3f30ad0255ff806bacb1d559ca3d707b": {
    "year": 2021,
@@ -33,7 +69,19 @@
     "Classical"
    ],
    "cover": "https://i.discogs.com/tm8n8mJKO-sQqs9760Quz8WWBjWrPgzTKjypfJoIjyY/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMzQy/ODgzLTE2NDEyMDg1/MTMtMTkyMS5qcGVn.jpeg",
-   "coverSrc": "discogs:21342883#0"
+   "coverSrc": "discogs:21342883#0",
+   "axes": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 1613
+    }
+   }
   },
   "3f30ad0255ff802fa892d580db9d2073": {
    "year": 1974,
@@ -42,7 +90,19 @@
     "Folk"
    ],
    "cover": "https://i.discogs.com/DMNysgiXHb9aiQDGFiml6wpPKSJoBE9tt-J-SncsyCI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0Mjg2/ODItMTMwMDU5NzIy/NS5qcGVn.jpeg",
-   "coverSrc": "discogs:1428682#0"
+   "coverSrc": "discogs:1428682#0",
+   "axes": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "listeners": 24184
+    }
+   }
   },
   "3f30ad0255ff803aaf93fb4c4814d49e": {
    "year": 1983,
@@ -51,7 +111,19 @@
     "Soul"
    ],
    "cover": "https://i.discogs.com/8PSIynaI8LpR2MQ4CQzMT347xTKyOJUkkJLtuB2c_CU/rs:fit/g:sm/q:90/h:200/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Mjcy/ODgyLTE1ODkwMTQ0/ODEtOTUwMC5qcGVn.jpeg",
-   "coverSrc": "discogs:15272882#0"
+   "coverSrc": "discogs:15272882#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 130
+    }
+   }
   },
   "3f30ad0255ff8097bfeffc24858f6187": {
    "year": 1975,
@@ -60,7 +132,19 @@
     "Soul"
    ],
    "cover": "https://i.discogs.com/TtOf40nJFlUz9MGyEK2JZG7xbTFu4dpXxYBisjoKPvY/rs:fit/g:sm/q:90/h:580/w:580/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3NjEx/OTctMTQwMTkxMjk1/OS03NDI1LmpwZWc.jpeg",
-   "coverSrc": "discogs:5761197#0"
+   "coverSrc": "discogs:5761197#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 28
+    }
+   }
   },
   "3f30ad0255ff80ad82f2dc21ab9aeb4e": {
    "year": 1978,
@@ -68,7 +152,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/SpuyqunT9-rOt-OG4FSbSbpuAQ_kGoKuepwVOBh1gCY/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4ODYz/MDctMTQyODg0ODM1/OC0yMjkwLmpwZWc.jpeg",
-   "coverSrc": "discogs:6886307#0"
+   "coverSrc": "discogs:6886307#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 244
+    }
+   }
   },
   "3f30ad0255ff80789940f55bc3a0d13b": {
    "year": 1975,
@@ -76,7 +172,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/vUzqkt-8ARv7WhgpOxUoNV1lT6hPO8ZhhJhhoX1jWqk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczMjEy/OTEtMTY0MjYwMDIy/OC01NDE5LnBuZw.jpeg",
-   "coverSrc": "discogs:7321291#0"
+   "coverSrc": "discogs:7321291#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "listeners": 206
+    }
+   }
   },
   "3f30ad0255ff807b9d96f5f1f98f0202": {
    "year": 1974,
@@ -85,7 +193,19 @@
     "Folk"
    ],
    "cover": "https://i.discogs.com/Ug8yKtl-bAqqkUiH8GJAOS74CMc6h58PAVI_pNONOUU/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDAy/Mjc3LTE2NTg1NjEz/NDgtMTQ4My5qcGVn.jpeg",
-   "coverSrc": "discogs:10402277#1"
+   "coverSrc": "discogs:10402277#1",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 2
+    }
+   }
   },
   "3f30ad0255ff8074b6efdc0dedfc072b": {
    "year": 1971,
@@ -94,7 +214,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/erlQeSSugxHrCLaXqOHgB_o41G-tVOMVLKpU62PEdos/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjI0/ODIyLTE3MzA4MjQy/NjUtMzc3MS5qcGVn.jpeg",
-   "coverSrc": "discogs:12624822#2"
+   "coverSrc": "discogs:12624822#2",
+   "axes": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 4
+    }
+   }
   },
   "3f30ad0255ff80f087d5d2cb9b9bfcc4": {
    "year": 1972,
@@ -103,7 +235,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/dAVGmKYRVbkqzXyCHl3KSm08qLIEBw7DeGuh3y1Cmrc/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxOTcy/NDgtMTQ3NjUwMzI5/Ny02NTk0LmpwZWc.jpeg",
-   "coverSrc": "discogs:9197248#1"
+   "coverSrc": "discogs:9197248#1",
+   "axes": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 1437
+    }
+   }
   },
   "3f30ad0255ff8004bf51dfb45e22944c": {
    "year": 1974,
@@ -112,7 +256,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/sBxJzxaqoYGJaGnrbTyd7AHpBpm-RYYVTUInsqPqdBA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNjE3/MDctMTQ0MjQ5MDQ4/OC01MDMzLmpwZWc.jpeg",
-   "coverSrc": "discogs:5361707#0"
+   "coverSrc": "discogs:5361707#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 73
+    }
+   }
   },
   "3f30ad0255ff802e925fc4d31d8b6539": {
    "year": 1974,
@@ -121,7 +277,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/gSCRh5o67r_80S3xT3YlN45I_nSGogVvImNofq0fqQc/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NjU3/MTctMTY2NDQ2Njk2/OS05MTgzLmpwZWc.jpeg",
-   "coverSrc": "discogs:4765717#1"
+   "coverSrc": "discogs:4765717#1",
+   "axes": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 77
+    }
+   }
   },
   "3f30ad0255ff8037abbdc7f8218b44fa": {
    "year": 1980,
@@ -129,7 +297,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/mpkVvpqe4R6pDhovLWqaLZSaOkJzq9CJZjD8rOsdVCs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTg4/MzAyLTE1NTcwNDcx/MDktNjMxNC5qcGVn.jpeg",
-   "coverSrc": "discogs:13588302#0"
+   "coverSrc": "discogs:13588302#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 45
+    }
+   }
   },
   "3f30ad0255ff80039521dc56ffac1c8d": {
    "year": 1980,
@@ -137,7 +317,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/qsyTVLUBvIa_jK0131qvzbI4QuAnslr0kzcCqZxFFDg/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczNTQw/NjUtMTQzOTc5NzEy/MC01ODMyLmpwZWc.jpeg",
-   "coverSrc": "discogs:7354065#0"
+   "coverSrc": "discogs:7354065#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 1
+    }
+   }
   },
   "3f30ad0255ff8032a06dc6dcec72d0f0": {
    "year": 1971,
@@ -145,7 +337,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/g1aRnX6UeqKGm_i4JsGpUEWUxdFVp-wO7thXc2ioYm0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjc4/MDUwLTE1NTg4NTEx/MDgtMTIyNC5qcGVn.jpeg",
-   "coverSrc": "discogs:13678050#0"
+   "coverSrc": "discogs:13678050#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 7
+    }
+   }
   },
   "3f30ad0255ff801384dcfa684e1fb033": {
    "year": 1983,
@@ -153,7 +357,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/DFsncoN7nFZanKWH4T8Sg4Zb2ePMFm2uLzR2fal-6W0/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjMx/ODI3LTE3ODU0OTk2/NTQtNDQ5NC5qcGVn.jpeg",
-   "coverSrc": "discogs:13231827#1"
+   "coverSrc": "discogs:13231827#1",
+   "axes": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 87
+    }
+   }
   },
   "3f30ad0255ff80c3be66f4b8556b81b0": {
    "year": 1984,
@@ -162,7 +378,19 @@
     "Soul"
    ],
    "cover": "https://i.discogs.com/-zpArKcQmSSQ-SUYL3wd8B9IDYykgBQ9B-wDkZwaYfg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NzA2/ODktMTM3NDk5Nzc4/OS0yMTExLmpwZWc.jpeg",
-   "coverSrc": "discogs:4770689#1"
+   "coverSrc": "discogs:4770689#1",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 156
+    }
+   }
   },
   "3f30ad0255ff800a8aa6cbeafa8de620": {
    "year": 1977,
@@ -170,7 +398,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/V8cHX_BYit9dlQSvzt1QRWEkQtsHAYM0ynTRlIiFiS8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MDI4/ODcxLTE1ODU3MjM0/NTgtNzMzOC5qcGVn.jpeg",
-   "coverSrc": "discogs:15028871#0"
+   "coverSrc": "discogs:15028871#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 3
+    }
+   }
   },
   "3f30ad0255ff8057af4fdc81d4f60a46": {
    "year": 1984,
@@ -178,7 +418,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/NcaVfig-xjfvg8wkKCDdmiQDyGQYvMwWmxOAoqhUbXM/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NjE2/ODEtMTQ5MTQwODc1/Ni04Mzc4LmpwZWc.jpeg",
-   "coverSrc": "discogs:1961681#1"
+   "coverSrc": "discogs:1961681#1",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "listeners": 10
+    }
+   }
   },
   "3f30ad0255ff809da307c5c2629f4b90": {
    "year": 2021,
@@ -186,7 +438,19 @@
     "Soul"
    ],
    "cover": null,
-   "coverSrc": null
+   "coverSrc": null,
+   "axes": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "listeners": null
+    }
+   }
   },
   "3f30ad0255ff8037a062f543a301b7db": {
    "year": 1975,
@@ -194,7 +458,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/2NzVPaqQJO-z83oHyKrKf7Otjm2NYEIy_groC4j7YZc/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNTYw/MTI5LTE2MzY1Nzc5/OTktMjY0NC5qcGVn.jpeg",
-   "coverSrc": "discogs:20560129#0"
+   "coverSrc": "discogs:20560129#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 1
+    }
+   }
   },
   "3f40ad0255ff8055b641d54aba84bfa7": {
    "year": 1977,
@@ -202,7 +478,19 @@
     "Folk"
    ],
    "cover": "https://i.discogs.com/8S7E178acEhCcVzmEj_bjYIoydMeSH-pKfQjG4pB7Ek/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMzEx/OTctMTQzNjcxMDcz/MC03MDI4LmpwZWc.jpeg",
-   "coverSrc": "discogs:7231197#1"
+   "coverSrc": "discogs:7231197#1",
+   "axes": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 18
+    }
+   }
   },
   "3f40ad0255ff806a85f2e2c4bfbc4f74": {
    "year": 1973,
@@ -210,7 +498,19 @@
     "Folk"
    ],
    "cover": "https://i.discogs.com/ah10bOkUc8ve0BwmzzSGqZdRftvbsHyLvD7jItxGk4A/rs:fit/g:sm/q:90/h:495/w:498/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5MTkw/MTQtMTQ3MTQ2MjAx/Mi03NTU2LnBuZw.jpeg",
-   "coverSrc": "discogs:8919014#1"
+   "coverSrc": "discogs:8919014#1",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "listeners": null
+    }
+   }
   },
   "3f40ad0255ff80e48464ef925fe09e0c": {
    "year": 1972,
@@ -218,7 +518,19 @@
     "Folk"
    ],
    "cover": "https://i.discogs.com/lSGV9t6C-ADj2GFiF_1XSZ4YOooMWU25Qb-gAOVL4Mw/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2MzYz/MjktMTczMzE4NDE1/Mi01ODUzLmpwZWc.jpeg",
-   "coverSrc": "discogs:8636329#0"
+   "coverSrc": "discogs:8636329#0",
+   "axes": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 86
+    }
+   }
   },
   "3f40ad0255ff802fa99ae529051a4953": {
    "year": 1971,
@@ -226,7 +538,19 @@
     "Folk"
    ],
    "cover": "https://i.discogs.com/0auVbuWiQOe_PS2T1MiS5tI65NMSJwPLFXb2dKICpiw/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxOTcw/MDQtMTQ3NjUwMzIz/My0xOTMwLmpwZWc.jpeg",
-   "coverSrc": "discogs:9197004#1"
+   "coverSrc": "discogs:9197004#1",
+   "axes": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 521
+    }
+   }
   },
   "3f40ad0255ff80128c9bc90461078c67": {
    "year": 1973,
@@ -234,7 +558,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/-QkuNNmpYxcinwR4lEUURZNSPuBKFOJuz-VBk3wEEwc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NTA2/OTg1LTE2NzE0MzE0/MjAtNjI2OC5qcGVn.jpeg",
-   "coverSrc": "discogs:25506985#0"
+   "coverSrc": "discogs:25506985#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 0
+    }
+   }
   },
   "3f40ad0255ff80259c1bc6632ab37b95": {
    "year": 1972,
@@ -242,7 +578,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/f9NK8_z7zE1MZ2q2a4bsF72I4UQLoa3o_pnayjHSDaQ/rs:fit/g:sm/q:90/h:482/w:482/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk4ODkw/NDEtMTQ4ODAxNzM5/OC05NDAzLmdpZg.jpeg",
-   "coverSrc": "discogs:9889041#0"
+   "coverSrc": "discogs:9889041#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 21
+    }
+   }
   },
   "3f40ad0255ff80f19b5dc9f7d87f375b": {
    "year": 1981,
@@ -250,7 +598,19 @@
     "City Pop"
    ],
    "cover": "https://i.discogs.com/oh0K1xaoVTT6K4WrFUn11fls62Ue2eyNhby11KxhiwU/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5MTYw/MTgtMTQyOTQ1MTYz/OC05NjcwLmpwZWc.jpeg",
-   "coverSrc": "discogs:6916018#0"
+   "coverSrc": "discogs:6916018#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 405
+    }
+   }
   },
   "3f40ad0255ff8044b48cedc56b25742e": {
    "year": 1979,
@@ -258,7 +618,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/abhpqQPPQ82ooFunMp0qwj8oHdy_1L7nIPb_e6bcWsg/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMTI1/ODYtMTQ1NzI0ODY5/NC00OTIzLmpwZWc.jpeg",
-   "coverSrc": "discogs:8212586#0"
+   "coverSrc": "discogs:8212586#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 83
+    }
+   }
   },
   "3f30ad0255ff80b4aa5fc5bc90942ee4": {
    "year": 1972,
@@ -266,7 +638,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/2osFiEMT3sdOTycykJbw4zu0MK85gjHlIqrGXzxg7BU/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjA2/ODkwLTE2MDUyNzgz/MTktMTg1MC5qcGVn.jpeg",
-   "coverSrc": "discogs:16206890#0"
+   "coverSrc": "discogs:16206890#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 0
+    }
+   }
   },
   "3f30ad0255ff8024b8add7dcb03fb4f0": {
    "year": 1972,
@@ -274,7 +658,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/ipVCU1RvsM9cqcxNE-T6GzRqg-bzcoQpzPXIS6JdIV0/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3OTM5/NTY3LTE2OTE5ODk0/NTgtODk0MC5qcGVn.jpeg",
-   "coverSrc": "discogs:27939567#0"
+   "coverSrc": "discogs:27939567#0",
+   "axes": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 144
+    }
+   }
   },
   "3f30ad0255ff8075ae57dd12e1836e8e": {
    "year": 1973,
@@ -282,7 +678,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/eAzfNrP7iI1hCN5HvOIkRIAkxwuS4Q8AiUbd5ipRm4s/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDY4/OTIxLTE1NDc0OTM3/MjItNDU4MS5qcGVn.jpeg",
-   "coverSrc": "discogs:13068921#0"
+   "coverSrc": "discogs:13068921#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 9
+    }
+   }
   },
   "3f30ad0255ff806bba99dbb9211b1367": {
    "year": 1980,
@@ -290,7 +698,19 @@
     "Rock"
    ],
    "cover": "https://i.discogs.com/KErDgIBU39M5GuiBQOB5VQbz_03J3K0oZPsKCnrxLr0/rs:fit/g:sm/q:90/h:225/w:225/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjAz/MDE4LTE3MDQwODkz/OTItMTM0MC5qcGVn.jpeg",
-   "coverSrc": "discogs:12603018#0"
+   "coverSrc": "discogs:12603018#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "listeners": 12
+    }
+   }
   },
   "3f30ad0255ff8056b3fdf57bb2922c3a": {
    "year": 1970,
@@ -298,7 +718,19 @@
     "Folk"
    ],
    "cover": "https://i.discogs.com/5NVPq11RBBMdHVjwfoIbShlS-1o-zGJIgnj9WtyHBSE/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODQ2/MTktMTI4OTE3ODQx/Ny5qcGVn.jpeg",
-   "coverSrc": "discogs:1884619#0"
+   "coverSrc": "discogs:1884619#0",
+   "axes": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "source": "album-rating（lastfm）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "listeners": 3520
+    }
+   }
   },
   "3f40ad0255ff80c493d6e390cf76669d": {
    "year": 1979,
@@ -306,7 +738,19 @@
     "Reggae"
    ],
    "cover": "https://i.discogs.com/jTGnP11-zx5VvRG2iShRons-T-tja7THhsvhBsGZ9FA/rs:fit/g:sm/q:90/h:320/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDA2/NjEtMTI1NDM4OTQ3/Mi5qcGVn.jpeg",
-   "coverSrc": "discogs:1300661#0"
+   "coverSrc": "discogs:1300661#0",
+   "axes": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "album-rating（lastfm）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "listeners": 37467
+    }
+   }
   },
   "3f40ad0255ff80c9a755c815c402b418": {
    "year": 1979,
@@ -314,7 +758,19 @@
     "City Pop"
    ],
    "cover": "https://i.discogs.com/riVqfJ2tZyAcna414RPYA4XtbmHMTRfnkk0f0TbQPPo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1MDg5/MDAtMTM5NTE5MzUz/OS05NzE1LmpwZWc.jpeg",
-   "coverSrc": "discogs:5508900#1"
+   "coverSrc": "discogs:5508900#1",
+   "axes": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 1401
+    }
+   }
   },
   "3f40ad0255ff80989ef2c640c92910c7": {
    "year": 1979,
@@ -322,7 +778,19 @@
     "City Pop"
    ],
    "cover": "https://i.discogs.com/h80-qHWH6Yfg2LmO3GOGBNbdvS7jG88fhk8uzaYy0Sw/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NTEw/MjItMTMzODkwOTY1/OC0zNjMwLmpwZWc.jpeg",
-   "coverSrc": "discogs:3651022#2"
+   "coverSrc": "discogs:3651022#2",
+   "axes": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 2875
+    }
+   }
   },
   "3f40ad0255ff80008265d7c859171aa3": {
    "year": 1970,
@@ -330,7 +798,19 @@
     "Pop"
    ],
    "cover": "https://i.discogs.com/Y8jeq305JfS1MIvPBfEOZJKeogTvTSxqumnc58VyQ-0/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NTU0/OTQtMTU3OTQ5NTMz/OC0xNjYzLmpwZWc.jpeg",
-   "coverSrc": "discogs:6755494#1"
+   "coverSrc": "discogs:6755494#1",
+   "axes": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "source": "manual:regional-rubric（§0.8）",
+    "machine": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "listeners": 7
+    }
+   }
   }
  }
 }

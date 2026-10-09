@@ -20,6 +20,7 @@ const norm = s => String(s || '').toLowerCase().replace(/[\u2010-\u2015\uff0d]/g
 const seed = new Map(JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8')).map(r => [norm(r[0]) + '|' + norm(r[1]), r]));
 // 與前台 SPECIAL_TIERS 相同：頂點卡的對應軸固定滿 7 顆星
 const APEX = { hall: { label: '殿堂', en: 'Hall of Fame', dim: 2 }, pearl: { label: '流亡', en: 'Exile', dim: 3 }, heresy: { label: '異端', en: 'Heresy', dim: 4 } };
+const pendingMeta = (() => { try { return JSON.parse(fs.readFileSync(path.join(R, 'data/shop/pending-meta.json'), 'utf8')).items || {}; } catch { return {}; } })();
 const byId = new Map(); descs.items.forEach(i => (i.ids || []).forEach(id => byId.set(id, i)));
 const ORDER = ['Jazz', 'Soul', 'R&B', 'Hip-Hop', 'Rock', 'Folk', 'City Pop', 'Pop', 'Electronic', 'Soundtrack'];
 const ZH = { Jazz: '爵士', Soul: '靈魂', 'R&B': '節奏藍調', 'Hip-Hop': '嘻哈', Rock: '搖滾', Folk: '民謠', 'City Pop': '城市流行', Pop: '流行', Electronic: '電子', Soundtrack: '原聲帶', Classical: '古典', Reggae: '雷鬼' };
@@ -34,7 +35,9 @@ rows.sort((a, b) => rk(a) - rk(b) || a.d.artist.localeCompare(b.d.artist));
 
 const stars = (n, total) => { n = Math.max(0, Math.min(total, Math.round(Number(n) || 0))); return '<b>' + '★'.repeat(n) + '</b>' + '☆'.repeat(total - n); };
 const card = ({ i, d }) => {
-  const row = i.cardKey ? seed.get(i.cardKey) : null;
+  // 待上架（卡池還沒有）的三軸讀 data/shop/pending-meta.json 的店內暫定值
+  const ax = pendingMeta[i.id]?.axes;
+  const row = i.cardKey ? seed.get(i.cardKey) : ax ? [0, 0, ax.classic, ax.obscurity, ax.accessibility] : null;
   const apex = row && APEX[row[8]] ? APEX[row[8]] : null;
   const axes = row ? [['經典度', 2], ['冷門度', 3], ['硬蕊度', 4]].map(([label, k]) => {
     const hit = apex && apex.dim === k;
