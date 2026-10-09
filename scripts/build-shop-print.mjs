@@ -23,7 +23,7 @@ const seed = new Map(JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'),
 const APEX = { hall: { label: '殿堂', en: 'Hall of Fame', dim: 2 }, pearl: { label: '流亡', en: 'Exile', dim: 3 }, heresy: { label: '異端', en: 'Heresy', dim: 4 } };
 const pendingMeta = (() => { try { return JSON.parse(fs.readFileSync(path.join(R, 'data/shop/pending-meta.json'), 'utf8')).items || {}; } catch { return {}; } })();
 const byId = new Map(); descs.items.forEach(i => (i.ids || []).forEach(id => byId.set(id, i)));
-const ORDER = ['Jazz', 'Soul', 'R&B', 'Hip-Hop', 'Rock', 'Folk', 'City Pop', 'Pop', 'Electronic', 'Soundtrack'];
+const ORDER = ['Jazz', 'Soul', 'R&B', 'Hip-Hop', 'Reggae', 'Rock', 'Folk', 'City Pop', 'Pop', 'Electronic', 'Classical', 'Soundtrack'];
 const ZH = { Jazz: '爵士', Soul: '靈魂', 'R&B': '節奏藍調', 'Hip-Hop': '嘻哈', Rock: '搖滾', Folk: '民謠', 'City Pop': '城市流行', Pop: '流行', Electronic: '電子', Soundtrack: '原聲帶', Classical: '古典', Reggae: '雷鬼' };
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 

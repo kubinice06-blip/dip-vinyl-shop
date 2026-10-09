@@ -3500,9 +3500,9 @@ ${discogs ? '- Discogs：' + discogs : ''}
   // 封面：card_catalog 校正圖優先，沒有才退 worker /spotify-search（與前台 resolveCardAssets 同序）。
   // 介紹：門市版（見下方 shopDescFor），不用卡牌遊戲的簡介。
   const SHOP_TIER_LABEL = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
-  const SHOP_GENRE_ORDER = ['Jazz', 'Soul', 'R&B', 'Hip-Hop', 'Rock', 'Folk', 'City Pop', 'Pop', 'Electronic', 'Soundtrack'];
-  const SHOP_GENRE_LABEL = { 'Jazz': '爵士 Jazz', 'Soul': '靈魂 Soul', 'R&B': '節奏藍調 R&B', 'Hip-Hop': '嘻哈 Hip-Hop', 'Rock': '搖滾 Rock', 'Folk': '民謠 Folk',
-    'City Pop': '城市流行 City Pop', 'Pop': '流行 Pop', 'Electronic': '電子 Electronic', 'Soundtrack': '原聲帶 Soundtrack', '未分類': '未分類（Notion 曲風欄空白）' };
+  const SHOP_GENRE_ORDER = ['Jazz', 'Soul', 'R&B', 'Hip-Hop', 'Reggae', 'Rock', 'Folk', 'City Pop', 'Pop', 'Electronic', 'Classical', 'Soundtrack'];
+  const SHOP_GENRE_LABEL = { 'Jazz': '爵士 Jazz', 'Soul': '靈魂 Soul', 'R&B': '節奏藍調 R&B', 'Hip-Hop': '嘻哈 Hip-Hop', 'Reggae': '雷鬼 Reggae', 'Rock': '搖滾 Rock', 'Folk': '民謠 Folk',
+    'City Pop': '城市流行 City Pop', 'Pop': '流行 Pop', 'Electronic': '電子 Electronic', 'Classical': '古典 Classical', 'Soundtrack': '原聲帶 Soundtrack', '未分類': '未分類（Notion 曲風欄空白）' };
   function shopRarityOf(row) {
     if (!row) return null;
     if (row[8] && SHOP_TIER_LABEL[row[8]]) return { tier: row[8], label: SHOP_TIER_LABEL[row[8]] };
