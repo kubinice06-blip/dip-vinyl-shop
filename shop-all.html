@@ -128,6 +128,7 @@
     <div class="cd-body" id="cd"></div>
   </div>
 
+<script src="dip-player.js?v=44"></script>
 <script>
 (async () => {
   const FS = 'https://firestore.googleapis.com/v1/projects/price-manager-e8846/databases/(default)/documents';
@@ -236,14 +237,15 @@
   const thumbOf = u => /coverartarchive\.org\/.*\/front$/.test(u) ? u + '-500' : u;
   const coverHtml = (r, big) => `<div class="nocover"><b>${esc(r.album)}</b><span>${esc(r.artist)}</span></div>`
     + (r.cover ? `<img src="${esc(big ? r.cover : thumbOf(r.cover))}" alt="${esc(r.artist)}《${esc(r.album)}》封面" data-full="${esc(r.cover)}" loading="lazy" referrerpolicy="no-referrer" onerror="if(this.src!==this.dataset.full){this.src=this.dataset.full}else{this.remove()}">` : '');
-  // 四種串流：Apple／Spotify／YT Music 先給搜尋連結（一定按得到），背景向 worker 換成專輯直連；
-  // Bandcamp 只給直連，查不到就維持灰色（搜尋多半找不到）——規則同 index.html
+  // 四種串流（規則同 index.html 的 streamingBtnsHtml）：
+  //   Apple Music／Spotify／Bandcamp 查到專輯直連才啟用，查不到維持灰色（店主 2026-10-09）；
+  //   Apple 的直連由 dip-player.js 依試聽索引自動換上（data-apple-strict）；YT Music 沒直連就給搜尋連結。
   const WORKER = 'https://dip-vinyl-worker.kubinice06.workers.dev';
   const streamingHtml = r => {
     const q = encodeURIComponent(`${r.artist} ${r.album}`.trim());
     return '<div class="streaming-btns">'
-      + `<a class="streaming-btn" data-platform="apple" href="https://music.apple.com/tw/search?term=${q}" target="_blank" rel="noopener">Apple Music</a>`
-      + `<a class="streaming-btn" data-platform="spotify" href="https://open.spotify.com/search/${q}" target="_blank" rel="noopener">Spotify</a>`
+      + `<a class="streaming-btn" data-platform="apple" data-apple-strict data-apple-fallback="https://music.apple.com/tw/search?term=${q}" data-apple-artist="${esc(r.artist)}" data-apple-album="${esc(r.album)}" target="_blank" rel="noopener" disabled>Apple Music</a>`
+      + `<a class="streaming-btn" data-platform="spotify" disabled>Spotify</a>`
       + `<a class="streaming-btn" data-platform="yt" href="https://music.youtube.com/search?q=${q}" target="_blank" rel="noopener">YT Music</a>`
       + `<a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>`
       + '</div>';
@@ -252,8 +254,8 @@
   const getJ = (path, r) => fetch(`${WORKER}/${path}?artist=${encodeURIComponent(r.artist)}&album=${encodeURIComponent(r.album)}`, { signal: AbortSignal.timeout(9000) }).then(x => x.ok ? x.json() : {}).catch(() => ({}));
   async function resolveLinks(r, at) {
     const k = r.artist + '|' + r.album;
-    if (!linkCache.has(k)) linkCache.set(k, Promise.all([getJ('spotify-album-link', r), getJ('yt-music-link', r), getJ('bandcamp-search', r)])
-      .then(([sp, yt, bc]) => ({ spotify: sp?.url, yt: yt?.url, bandcamp: bc?.bandcampUrl })));
+    if (!linkCache.has(k)) linkCache.set(k, Promise.all([getJ('spotify-search', r), getJ('yt-music-link', r), getJ('bandcamp-search', r)])
+      .then(async ([sp, yt, bc]) => ({ spotify: sp?.spotifyUrl || (await getJ('spotify-album-link', r))?.url, yt: yt?.url, bandcamp: bc?.bandcampUrl })));
     const l = await linkCache.get(k);
     if (cur !== at || !overlay.classList.contains('open')) return;   // 使用者已關掉或換了一張
     const set = (p, u) => { const a = cd.querySelector(`.streaming-btn[data-platform="${p}"]`); if (a && u) { a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.removeAttribute('disabled'); } };

@@ -81,6 +81,12 @@ const PENDING_NEW = new Set([
   '3f30ad0255ff800a8aa6cbeafa8de620', // 小柳ルミ子《愛に甦える》
 ]);
 
+// 店主說已下架、但 Notion 還沒刪的列：當成已售出（Notion 刪掉之後這裡可清掉）。
+const DELISTED = new Set([
+  '3ee0ad0255ff81368bbec643884d8766', // The Detroit Experiment 2LP（店主 2026-10-07：已下架）
+  '3ee0ad0255ff814c8cd7d6b0305fcb15', // 達明一派《石頭記》（店主 2026-10-07：已下架）
+]);
+
 const pool = JSON.parse(fs.readFileSync(path.join(R, 'seed_cards.json'), 'utf8'));
 const byKey = new Map(pool.map(r => [key(r[0], r[1]), r]));
 const snap = JSON.parse(fs.readFileSync(SNAP, 'utf8'));
@@ -99,6 +105,7 @@ const items = [], errors = [];
 const seen = new Set();
 for (const row of snap.rows) {
   if (!row.id || !row.title) continue;                 // Notion 空白列
+  if (DELISTED.has(row.id)) continue;                   // 已下架：不算在 seen，下面會記為 sold
   seen.add(row.id);
   let card = null, how = null;
   // Notion「卡池鍵」欄（藝人|專輯，卡池原字）優先；其次 OVERRIDES，最後自動比對

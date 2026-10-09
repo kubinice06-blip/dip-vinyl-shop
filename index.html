@@ -1010,7 +1010,7 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=43"></script>
+<script src="dip-player.js?v=44"></script>
 <script src="dip-draw-anim.js?v=2"></script>
 <script src="dip-genre-tree.js?v=2"></script>
 <script src="dip-artist-intro.js?v=2"></script>
@@ -1815,12 +1815,12 @@
         .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = d.desc || '（暫無介紹）'; })
         .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
     }
-    // 已有固定試聽或已人工確認無來源：直接用 Firestore 結果，不再因每次開介紹
-    // 重新打 Spotify／Bandcamp API。平台搜尋按鈕本身只是連結，使用者點擊才會開啟。
+    // 已有固定試聽或已人工確認無來源：直接用 Firestore 結果，不再因每次開介紹重新打 Bandcamp。
+    // Spotify 仍要查（2026-10-09 起查不到直連就灰），/spotify-search 有 KV 永久快取，只有第一次會打 API。
     const streamEl = document.getElementById('cdStreaming');
     if (c.previewUrl || c.previewUnavailable) {
       const fixedYoutube = /(?:youtu\.be|youtube\.com)/i.test(c.previewUrl || '') ? c.previewUrl : '';
-      if (streamEl) streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube);
+      if (streamEl) { streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube); resolveSpotifyBtn(c.artist, c.album, streamEl); }
       return;
     }
     // 尚未人工覆核的舊卡維持原本行為：取 Spotify 直連，其餘搜尋連結保證可點。
@@ -2606,9 +2606,9 @@
     const streamEl = document.getElementById('cdStreaming');
     const fixedPreview = c.previewUrl || albumOv?.previewUrl || '';
     if (fixedPreview || c.previewUnavailable) {
-      // 已有固定試聽或人工確認無來源：不再打 Spotify API（與唱片櫃詳情同規則）
+      // 已有固定試聽或人工確認無來源：不打 Bandcamp；Spotify 仍查（查不到直連就灰，與唱片櫃詳情同規則）
       const fixedYoutube = /(?:youtu\.be|youtube\.com)/i.test(fixedPreview) ? fixedPreview : '';
-      if (streamEl) streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube);
+      if (streamEl) { streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube); resolveSpotifyBtn(c.artist, c.album, streamEl); }
       return;
     }
     fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
@@ -4372,12 +4372,13 @@ ${seenList}
     }
   }
 
-  // 串流按鈕：三個平台都用「一定可點」的連結（手機也保證能按）
-  // Spotify 若有 /spotify-search 回傳的專輯直連就用，否則用搜尋；Apple/YT 一律用搜尋連結
+  // 串流按鈕（2026-10-09 店主：Spotify／Apple Music 沒有的話也要顯示灰色）：
+  //   Apple Music：試聽索引查得到專輯才啟用成直連，查不到維持灰色（dip-player.js 的 data-apple-strict）
+  //   Spotify：有 /spotify-search 的專輯直連才啟用；未知時先灰，由 resolveSpotifyBtn 背景查實
+  //   YT Music：維持「一定可點」，沒有直連就給搜尋連結
   function streamingBtnsHtml(artist, album, spotifyUrl, bandcampUrl, ytUrl) {
     const q = encodeURIComponent(`${artist || ''} ${album || ''}`.trim());
-    const apple = `https://music.apple.com/tw/search?term=${q}`;
-    const spotify = spotifyUrl || `https://open.spotify.com/search/${q}`;
+    const appleSearch = `https://music.apple.com/tw/search?term=${q}`;
     const yt = ytUrl || `https://music.youtube.com/search?q=${q}`;
     // Bandcamp 只連「直連專輯頁」；沒有就灰掉、不能按（不退回搜尋，因為搜尋多半找不到）。
     // bandcampUrl 未知時先渲染成灰色 placeholder，由 resolveBandcampBtn 背景查實後再決定啟用或維持灰。
@@ -4385,8 +4386,10 @@ ${seenList}
       ? `<a class="streaming-btn" href="${bandcampUrl}" target="_blank" rel="noopener" data-platform="bandcamp">Bandcamp</a>`
       : `<a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>`;
     return '<div class="streaming-btns">'
-      + `<a class="streaming-btn" href="${apple}" data-apple-artist="${escapeCollectionHtml(artist || '')}" data-apple-album="${escapeCollectionHtml(album || '')}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>`
-      + `<a class="streaming-btn" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
+      + `<a class="streaming-btn" data-apple-strict data-apple-fallback="${appleSearch}" data-apple-artist="${escapeCollectionHtml(artist || '')}" data-apple-album="${escapeCollectionHtml(album || '')}" target="_blank" rel="noopener" data-platform="apple" disabled>Apple Music</a>`
+      + (spotifyUrl
+        ? `<a class="streaming-btn" href="${spotifyUrl}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
+        : `<a class="streaming-btn" data-platform="spotify" disabled>Spotify</a>`)
       + `<a class="streaming-btn" href="${yt}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>`
       + bandcampBtn
       + '</div>';
@@ -4394,8 +4397,25 @@ ${seenList}
 
   // 背景補上 Bandcamp 直連：查到就啟用按鈕，查不到就維持灰色不能按。
   // （streamingBtnsHtml 在 bandcampUrl 未知時會先給灰色 placeholder，這裡才去問 Bandcamp。）
+  // 背景補上 Spotify 直連。兩支端點都有快取，同一張卡只有第一次會真的打 Spotify API：
+  //   /spotify-search（KV 永久快取，能比對日文／韓文名）；但封面改走 CAA 的卡，快取裡不會有 spotifyUrl
+  //   /spotify-album-link（邊緣快取）補上前者沒有的；它只比對拉丁字母藝人名
+  async function resolveSpotifyBtn(artist, album, containerEl) {
+    if (!containerEl) return;
+    const btn = containerEl.querySelector('.streaming-btn[data-platform="spotify"]');
+    if (!btn || btn.hasAttribute('href')) return;
+    const q = `artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`;
+    const get = path => fetch(`${WORKER_URL}/${path}?${q}`).then(x => x.ok ? x.json() : {}).catch(() => ({}));
+    let url = (await get('spotify-search')).spotifyUrl;
+    if (!url) url = (await get('spotify-album-link')).url;
+    if (url && btn.isConnected) {
+      btn.href = url; btn.target = '_blank'; btn.rel = 'noopener'; btn.removeAttribute('disabled');
+    }
+  }
+
   async function resolveBandcampBtn(artist, album, containerEl) {
     if (!containerEl) return;
+    resolveSpotifyBtn(artist, album, containerEl);
     const btn = containerEl.querySelector('.streaming-btn[data-platform="bandcamp"]');
     if (!btn || btn.hasAttribute('href')) return; // 已是直連就不用查
     try {

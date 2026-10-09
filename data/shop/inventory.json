@@ -131,44 +131,6 @@
    "firstSeen": "2026-10-04"
   },
   {
-   "id": "3ee0ad0255ff81368bbec643884d8766",
-   "status": "in_stock",
-   "cardKey": "thedetroitexperiment|thedetroitexperiment",
-   "artist": "The Detroit Experiment",
-   "album": "The Detroit Experiment",
-   "match": "notion",
-   "listedTitle": "The Detroit Experiment 2LP",
-   "listedArtist": "The Detroit Experiment",
-   "pressingYear": 2003,
-   "condition": "NM",
-   "priceNT": 4000,
-   "genres": [
-    "Jazz",
-    "Electronic"
-   ],
-   "note": null,
-   "firstSeen": "2026-10-04"
-  },
-  {
-   "id": "3ee0ad0255ff814c8cd7d6b0305fcb15",
-   "status": "in_stock",
-   "cardKey": "達明一派|石頭記",
-   "artist": "達明一派",
-   "album": "石頭記",
-   "match": "notion",
-   "listedTitle": "石頭記",
-   "listedArtist": "達明一派",
-   "pressingYear": 1987,
-   "condition": "VG+",
-   "priceNT": 3500,
-   "genres": [
-    "Pop",
-    "Electronic"
-   ],
-   "note": null,
-   "firstSeen": "2026-10-04"
-  },
-  {
    "id": "3ee0ad0255ff8150aae7d1fff94122fd",
    "status": "in_stock",
    "cardKey": "三上寛|1972コンサートライブ零狐徒",
@@ -1705,6 +1667,46 @@
    "genres": [],
    "note": null,
    "firstSeen": "2026-10-08"
+  },
+  {
+   "id": "3ee0ad0255ff81368bbec643884d8766",
+   "status": "sold",
+   "cardKey": "thedetroitexperiment|thedetroitexperiment",
+   "artist": "The Detroit Experiment",
+   "album": "The Detroit Experiment",
+   "match": "notion",
+   "listedTitle": "The Detroit Experiment 2LP",
+   "listedArtist": "The Detroit Experiment",
+   "pressingYear": 2003,
+   "condition": "NM",
+   "priceNT": 4000,
+   "genres": [
+    "Jazz",
+    "Electronic"
+   ],
+   "note": null,
+   "firstSeen": "2026-10-04",
+   "soldAt": "2026-10-09"
+  },
+  {
+   "id": "3ee0ad0255ff814c8cd7d6b0305fcb15",
+   "status": "sold",
+   "cardKey": "達明一派|石頭記",
+   "artist": "達明一派",
+   "album": "石頭記",
+   "match": "notion",
+   "listedTitle": "石頭記",
+   "listedArtist": "達明一派",
+   "pressingYear": 1987,
+   "condition": "VG+",
+   "priceNT": 3500,
+   "genres": [
+    "Pop",
+    "Electronic"
+   ],
+   "note": null,
+   "firstSeen": "2026-10-04",
+   "soldAt": "2026-10-09"
   }
  ]
 }
