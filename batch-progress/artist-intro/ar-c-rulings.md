@@ -607,3 +607,108 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 合計 391 位上架（324 full、67 thin），8 位不寫：8mm Sky、A Band Called Doris、Alone in a Crowd / Inside Out、Asylum、Ataraxia、Bastard、Big Bag、Blast Off Country Style（皆為聲音或身分查無、或只有曲風標籤）。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」清單的上線簡介勘誤（改 KV）；卡池年份存疑（10,000 Maniacs、Bastille、Buddy Holly、Bikini Kill / Huggy Bear、Death of Samantha、Cannon's Jug Stompers、Charlie Musselwhite、Caedmon）。
+
+## 第五輪十批接力（ar-d-034～043，2026-10-08 起）
+
+- 範圍：搖滾段 E 字頭起。沿用第三、四輪的審稿規則與 thin 門檻（第一句交代國籍與身分＋至少一句聲音或做法；只有曲風標籤不算，編制可算做法）。
+
+## ar-d-034（2026-10-08）
+
+- 40 位全上（30 full、10 thin：El Hombre Trajeado、Elf Power、Eloy、Emtidi、envy、Errata Corrige、Essential Logic、Eve 6、Everclear、Far East Family Band）。
+- 研究層放行：El Hombre Trajeado 超額 1 次（找獨立樂評、未得事實，齊豫先例）。
+- 審稿修 8 處：Edip Akbayram 刪 Dostlar「最早之一」；Eggs「最獨特之一」改「相當獨特」；Elastica 刪「最快售出首張專輯紀錄」；Električni Orgazam 刪樂評「最令人興奮的非英國樂團之一」；English Teacher 英文引語譯中文；Enrique Morente & Lagartija Nick 刪「或許是最具影響力的當代佛朗明哥歌手」；Eric Burdon and War 刪「英倫入侵辨識度最高之一」；ESG〈UFO〉「史上被取樣最多之一」改「被大量取樣」。
+- 雙卡額度：Enrique Morente & Lagartija Nick、Eric Burdon and War 篇幅超過單卡上限，沿用雙卡放寬。
+- 待本機（上線簡介）：Električni Orgazam NME／Rough Trade 先後次序；Enrique Morente「Morente 找上 Lagartija Nick」方向（實為 Jesús Arias 提案）與 Primavera Sound 2008 重演說法未驗。
+
+## ar-d-035（2026-10-08）
+
+- 40 位全上（31 full、9 thin：Filter、Fireworks、Fix、Foghat、Franklin Bruno、Fresh Blueberry Pancake、G-Schmitt、Gentle Faith、Gerard）。
+- 研究層放行：Gai 超額 1 次（福岡、1981 年與改名時間的第二個日文來源，高風險身分事實第二源先例）。
+- 審稿修 13 處：Fikret Kızılok 首句補「土耳其歌手兼詞曲作者」並刪金唱片數與折 saz 傳說（壓回 250 內）；Film 刪「最具代表之一」改「代表團體之一」、刪 Stublić「最重要的詞曲作者之一」；Flying Saucer Attack「前所未有的嘈雜」改「極度嘈雜」；Foster the People「最受歡迎之一」改「大熱門」；Fraction 刪「迷幻地下圈最受推崇之一」；Frankie Goes to Hollywood 刪「最早」；Fehlfarben 刪「影響難以高估」；Freddie McGregor 英文引語譯中文、「受勳章」改「獲頒」；Geese 刪「2025 年評價最高之一」（單源）。
+- 保留：Feeder 的 Kerrang! 名人堂（事件本身，在世者唯一一處成績）；Gary Moore 的 Bob Geldof 悼念語（具名樂手）；Frankie Lymon 的搖滾名人堂評語（權威名人堂）。
+- 身分：Gai 為福岡硬蕊團，與 The Swankys 同一團不同時期名字（先後兩說衝突，不寫）；Fix 為愛沙尼亞塔爾圖的團；Fireworks 為納許維爾基督教流行搖滾團；Gerard 為永川敏郎的日本前衛團；Gentle Faith 國籍由 Calvary Chapel／Maranatha! 推定美國。George Brigman 貝斯手之死只寫「樂團解散後淡出」。Gary Glitter 只寫音樂。
+- 同名作廢：Fireworks（煙火）、Fraction（數學）、Fuchsia（植物）、Galliard（舞曲）的維基預抓。
+- 待本機（上線簡介）：Fresh Blueberry Pancake「1970 年自資發行」（另說 1971 錄、1971 年 8 月登記著作權）；Galliard「1968 年成軍、1971 年解散」（1968／1969 兩說，解散年單源）；Fraction「兩百張」「藍領工人」「專輯名取自啟示錄」「十多年後被挖掘」「介於 The Doors 與 Black Sabbath」皆無據。
+
+## ar-d-036（2026-10-08）
+
+- 39 位上架（31 full、8 thin：Gilla Band、Ginhouse、Gone、Gray Matter、Grow-Up、Guadalcanal Diary、Haikara、Harvest Flight），1 位不寫：Gorgoroth（素材只剩曲長與演出名單，沒有任何聲音描述，過不了 thin 門檻；題材本身也高風險）。
+- 研究層放行：Gombloh 超額 1 次（PAPPRI 獎與銅像第二源）；Gunnar Graps ja Magnetic Band 超額 2 次（1980 年提比里斯音樂節首獎第二源；超 2 次為例外，因屬高風險事實、且第二源確實取得）。
+- 審稿修 11 處：Gila 刪 NTS「最好的 Krautrock 之一」；God Bullies 刪廠牌自述「最受歡迎之一」；Golden Earring 刪 Kooymans 病情；Graham Parker 刪 Village Voice／Pazz & Jop 刊名（票選保留、不具名）；Grand Funk Railroad 刪「比披頭四還快」；Grannie 刪重複的 99 張與《Record Collector》「最值錢 100 張」（來源為賣家頁）；Group 1850 刪「最具創意之一」；Gun Club「最早之一」改「很早就」；Gunnar Graps 刪「蘇聯最受歡迎之一」；Harry Roesli Gang「印尼最難找之一」改平述。
+- 保留：Hall & Oates 的搖滾名人堂評語（權威名人堂，與入選同句算一處成績）；Guruh Gipsy 不寫 Rolling Stone Indonesia 名次，改「被視為關鍵之作」。
+- 身分修正：Grow-Up 是英國曼徹斯特 Object Music 旗下的團（特注原疑為日本團，錯）；Haikara 是芬蘭拉赫蒂的團（特注原疑為英國，錯）；Giant Step、Harry Roesli Gang 為印尼萬隆；Gone 為 Greg Ginn 的器樂團。
+- 卡池年份存疑：Gila 卡池 1967，各源皆 1969 成軍、首作 1971。
+- 同名作廢：Giant Step（紐約活動公司）的維基預抓。
+- 待本機（上線簡介）：Gianna Nannini「Antonioni 拍〈Ballami〉」「最早由電影作者拍 MV 之一」「〈Kolossal〉走紅」無據；Giant Step「印尼電台繞開了它」因果無據；Gombloh 簡介用了 Rolling Stone Indonesia 名次（單源）；Grannie「1971 年進錄音室、Janet Chandler 長笛」（多源 1970、樂器不一）；Grow-Up「吉他手 John Bisset-Smith」（LTM 為貝斯，吉他是 Roger Blackburn）；Guruh Gipsy「自資」（資金來自 Pontjo Sutowo）與「從未再版」（2006 Shadoks 重發）；Harry Roesli Gang「雅加達錄音」「新加坡 Lion Records」（團員稱萬隆錄音，廠牌存疑）；Grandaddy「NME 十年榜第 34」無據。
+
+## ar-d-037（2026-10-08）
+
+- 40 位全上（34 full、6 thin：Henry's Dress、Icecross、Il Paese dei Balocchi、Indiscreet Music、Into Another、Iron Cross）。Iron Cross 聲音格查無，以編制（主奏吉他、貝斯、鍵盤、鼓＋多位主唱輪替）當做法句，比照 Deja-Vu 編制先例。
+- 研究層放行：Hunters & Collectors 超額 2 次（ARIA 名人堂與致敬專輯第二源；名人堂仍只有單源，正文不寫）；hush! 超額 1 次（未得事實，齊豫先例）。
+- 審稿修 13 處：最高級刪改——Hoola Bandoola Band「最知名」「最具影響力之一／最大的兩團」、Hootie「最受歡迎的團」、Humble Pie「最早的一批」、Hunters & Collectors「澳洲最受歡迎現場樂團之一」、Icecross「冰島最吵」改「吵得出名」、Ideal「NDW 最知名之一」、Illés「最大的團體之一」、Immolation「美國最具影響力之一」、Irish Coffee「最受歡迎之一」；新近事實單源刪除——Horslips 2026 Choice Music Prize、Hozier 2025《時代》百大；跨卡重複——Incantation 的「紐約死亡金屬領頭團體之一」與 Immolation 撞句，改「被歸入紐約死亡金屬場景」。
+- 保留：Iggy and The Stooges 的搖滾名人堂評語；Icecross 的 Jello Biafra 評語（具名樂手）；J.J. Cale 的 Neil Young 評語；Illés 創辦人的 Kossuth 獎（國家級權威獎項）。
+- 身分修正：Iron Cross 是緬甸仰光的團（特注原疑為華盛頓 DC oi 團，錯）；Irish Coffee 是比利時 Aalst；Indiscreet Music 是曼徹斯特 Object Music 的 Steve Solamar 圈子；Horrific Child 是法國 Jean-Pierre Massiera 的計畫；Hello Nico、hush! 為台灣樂團。
+- 同名作廢：hush!（小說 Hush, Hush）、Ideal（荷蘭支付系統 iDEAL）、Indian Summer（氣象詞）、Irish Coffee（調酒）的維基預抓。
+- 待本機（上線簡介）：Hi-STANDARD 銷量與白金認證無據、「恆岡章」應為「恒岡章」；Hoola Bandoola Band「十個月 25000 張、最高第 7 名」無據；Horrific Child「Eurodisc 發行」無據；hush!「2015 年結束」（多源 2014）、《X》發行日與「由海邊的卡夫卡發碟」不符；Igra Staklenih Perli「學生文化中心免費場」「〈Pečurka〉致敬 Can」無據；Il Paese dei Balocchi「吉他手回憶壓了 1800 張」（實為鼓手 Laudadio）；Indiscreet Music 素材年份上限 1975／1976 兩說；Iron Butterfly「美國第一張白金唱片」（RIAA 白金 1976 年才設，若簡介有此說應改）。
+
+## ar-d-038（2026-10-08）
+
+- 40 位全上（32 full、8 thin：Jesu、Joe Jackson、John Davis、Julian's Treatment、June of 44、Junip、Kahvas Jute、Kaiser Chiefs）。
+- 審稿修 7 處：Jason Isbell 刪「當代最優秀的詞曲創作者之一」；Jean-Jacques Goldman《D'eux》「史上最暢銷法語專輯」改「極暢銷」；Jerry Lee Lewis「把琴點火」改「據說」（單源）、刪「最狂野的現場專輯之一」；Junipher Greene 刪「挪威史上最佳專輯之一」；Junoon 刪「巴基斯坦最大的搖滾樂團」；Justin Hinds「最受歡迎的歌手」改「當家歌手」。寫作層已自行去掉 Josefus、JUN SKY WALKER(S)、Kaizers Orchestra 的「最早」。
+- 保留：Jimi Hendrix「最偉大也最具影響力的吉他手之一」（多源共識，非單源）；Joe Cocker 2025 年身後入選搖滾名人堂（名人堂官方，具名）；John Trudell 的 Bob Dylan 評語、Jim Ford 的 Sly Stone 與 Nick Lowe 說法（具名樂手）；José Cid 的歐洲歌唱大賽只寫參加不寫名次，不算第二處成績。
+- 身分：John Davis 是 Folk Implosion 成員（維基預抓為 Milli Vanilli 幕後歌手，同名作廢）；John Cougar Mellencamp 第一句交代改名經過；Joan of Arc 為 Tim Kinsella 的樂團；Kaka de Luxe 卡池 1983 為解散後出版的 demo 合輯。
+- 待本機（上線簡介）：Jambinai「發行首作《차연》」（之前已有自名 EP）與 GMC Records 無據；Joaquín Sabina《19 días y 500 noches》「Sony 社長」與「BMG／Ariola」並存；Jonathan Larson「1 月 25 日夜裡辭世、隔天首場預演」差一天；Josefus「最後一場演出」（之後多次重組）；Julieta Venegas「最佳搖滾女歌手專輯」（類別不分性別）；Junip〈Straight Lines〉為 7 吋單曲非 EP、成軍年各源不一；Junipher Greene「挪威第一張雙專輯」需限定語；Junoon Channel V 獎年份 1998／1999；Justin Hinds「1972 年離開 Duke Reid」（另說錄到 1974）。
+
+## ar-d-039（2026-10-08）
+
+- 36 位上架（27 full、9 thin：Katedra、Kenny Wayne Shepherd Band、Kevin Morby、Kiosk、Kitchens of Distinction、Kollektiv、Kylesa、Labradford、Lard Free），4 位不寫：Kaseke（聲音句只有曲風標籤）、Kenneth Higney（全部事實單源、聲音查無，寫作層放棄）、Krakdown（卡池版本與身分只是推論）、L'Arc〜en〜Ciel（聲音格查無，只剩編制與視覺系出身，比照 Gorgoroth 不寫）。
+- 研究層放行：L'Arc〜en〜Ciel 超額 1 次（未得可收事實，齊豫先例）。
+- 審稿修 13 處：最高級刪改——Katarina II 刪 Šarlo Akrobata「最重要之一」與 Ekatarina Velika「最有影響力之一」、Klaus Mitffoch 三重最高級改「波蘭搖滾的經典」、Koes Bersaudara「最受歡迎之一」改「人氣樂團」、Korni Grupa 刪「第一張搖滾長片」（兩源同屬維基家族）與「最成功／最具影響力之一」並以事實補回字數、Lačni Franz「最重要之一」改「代表之一」；Keiji Haino 刪 2026 威尼斯金獅獎（尚未頒發、新近事實）；King Gnu 刪東京巨蛋人數（在世者只留紅白一處）。
+- 保留：Klaus Renft Combo 的德國歷史博物館評語（權威機構具名）；L7 的 Reading 音樂節事件（樂團核心形象，非刑案）；L. Voag 遭警方粗暴對待致唇傷（直接塑造專輯人聲，屬「與聲音相關」例外）。
+- 身分：Kiosk 為伊朗樂團；Katedra 為立陶宛維爾紐斯；Kollektiv 為 1970 年代德國 Krefeld 的團（非瑞士同名團）；Klaus Mitffoch 為波蘭 Wrocław；L. Voag 為 The Homosexuals 的 Jim Welton。
+- 卡池年份存疑：Keiji Haino 卡池 2017 為 1981 年原作的黑膠重發。
+- 同名作廢：Kaseke（姓氏消歧頁）的維基預抓。
+- 待本機（上線簡介）：Kebnekajse「甘比亞打擊樂手 Hassan Bah」國籍各說不一；Keenan Nasution〈Nuansa Bening〉作者（與 Rudi Pekerti 合寫）與專輯榜第 44 名無據；Kantata Takwa「買卡帶附門票」無據；Katarina II「錄音整批不能用」過強；Kenneth Higney「印 1000 份封套、只壓 500 張」與維基相反、「一年就結束」不合；Kenny Wayne Shepherd「藍調榜在榜最久紀錄」單源；Kim Carnes「Prophet-5」無據；Kitchens of Distinction「因出櫃沒拿到市場位置」單源因果；Klaus Mitffoch「唱片拿獎」（實為樂團 1983 比賽第二名）；Klaus Renft 禁令起因不只 Pannach；Koes Bersaudara「首作」「三兄弟被捕」；Korni Grupa「那年初才進來」「6 月 Montreux」；Krzysztof Klenczon 編號 XL 0799 疑為 XL 0779。
+
+## ar-d-040（2026-10-08）
+
+- 38 位上架（32 full、6 thin：Lazy Smoke、Lemon Kittens、Limbus 4、Local H、Madame Edwarda、Main），2 位不寫：Light（貢獻與地位皆查無，寫作層放棄）、Lightyears Away / Thundermother（聲音格查無，只剩錄音地點，比照 L'Arc〜en〜Ciel 不寫）。
+- 審稿修 10 處：最高級刪改——Laurie Anderson「美國最知名的表演藝術家之一」、Limbus 4「Ohr 最具冒險性之一」改平述、Little River Band「澳洲最重要之一」、Līvi「最知名」改「知名」、Los Bravos「最國際化」、Los Brincos「最成功之一」、Luna 刪英文標語（單源最高級）、Machine Head 刪「改寫 1990 年代金屬」與廠牌銷量；Måneskin 英文引語譯中文；Long Fin Killie 刪車禍傷勢細節。
+- 保留：Los Lobos 的美國國家藝術基金會評語與國家傳統藝術獎（國家級機構，在世者唯一一處）；Mahogany Brain 的 William S. Burroughs 評語、Laughing Hyenas 的 Thurston Moore 評語（具名人物）；Lombard 約 40 萬張（在世者唯一一處）。
+- 身分：Late! 是 Dave Grohl 的化名卡帶；Lefthanded 是馬來西亞新山的團；Lizard 是東京 LIZARD；Lorelei 是華盛頓 Slumberland 的團；Los Shakers 是烏拉圭團；Madame Edwarda 是東京哥德團（團名是否取自 Bataille 研究稿與特注不一，正文不提）。
+- 同名作廢：Light（物理的光）、Lizard（爬蟲類）、Lorelei（萊茵河岩石）的維基預抓。
+- 待本機（上線簡介）：Laughing Hyenas「Strickland 先前在 L7」（實為底特律 L-Seven）；Leeway 首發年（1987 錄、1989 發，卡池 1988 亦存疑）；Lombard「還沒上市就收到禁播令」（實為播出後撤下）；LOUDNESS「日本樂團首度打進美國百名」單源；Måneskin「唱片出來之後拿下 Sanremo」先後待核；Lizard《彼岸の王国》1985／1986 兩說。
+
+## ar-d-041（2026-10-08）
+
+- 39 位上架（33 full、6 thin：Marconi Notaro、Mary See the Future、MASS OF THE FERMENTING DREGS、Mehrpouya、Mgła、Minxus），1 位不寫：Maximum Penalty（全部事實出自一篇 1996 年樂評，湊不到兩源）。
+- 審稿修 7 處：Master Wilburn Burchette 264 字壓回 250（非雙卡，不適用放寬）；Matching Mole 刪 Wyatt 墜樓癱瘓細節（改「意外受傷、從此無法打鼓」）；最高級刪改——Maxophone「頂尖之一」改「代表之一」、Mazhar ve Fuat 刪 MFÖ「最老牌最知名之一」、Medicine「最接近」、Metamorfosi「最常尋找之一」改「搶手」；Menswear 英文稱號譯中文。
+- 保留：Mark Knopfler 的搖滾名人堂評語、Midnight Oil 的 ARIA 名人堂評語（權威名人堂具名）；Menswear 登上《Melody Maker》封面（事件本身，比照 Drop Nineteens）；Mercury Rev 年度專輯不具名刊物。
+- 身分修正：Menuets 是拉脫維亞 Jūrmala 的團（特注原寫希臘，錯）；Mess 是愛沙尼亞 Sven Grünberg 的團；Mehrpouya 是伊朗西塔琴手 Abbas Mehrpouya；Mary See the Future 是台灣先知瑪莉；Midas 是大阪的團。
+- 同名作廢：Midas（弗里吉亞國王）、Mess（軍事用語）的維基預抓。
+- 待本機（上線簡介）：Manowar「Ross the Boss 與 Columbus 的最後一張」（Columbus 1996 年回團）；MASS OF THE FERMENTING DREGS「前作是 2018 年《No New World》」已過時；Maximum Joy「Disc O'Dell」應為 Dick O'Dell；Maxophone「全部成員受過音樂院訓練」；Michel Berger《Starmania》名次與鑽石認證對不上；Michal Prokop「第一張捷克 art rock 專輯」無據；Metró「1963 年第一屆 beat 音樂節與 Illés、Omega 同台」無據。
+
+## ar-d-042（2026-10-08）
+
+- 40 位全上（31 full、9 thin：Moolah、Mother Gong、Move D、Movietone、Murple、Mustard Seed Faith、Necros、Nic Potter & Guy Evans、Non Band）。Movietone 的聲音句以「海灘上兩支麥克風現場收音」的錄音做法當做法句，接受（與 Lightyears Away 只寫錄音室地點不同，這句直接描述聲音的形成）。
+- 研究層放行：N.E.R.D 超額 1 次（《In Search Of...》雙版本第二源）。
+- QA 誤報放行：Natalie Merchant 正文的「10,000 Maniacs」觸發千分位逗號警告，屬團名專名，照原樣保留。
+- 審稿修 13 處：最高級刪改——Mon Laferte 刪「得獎最多的智利表演者」與歌曲節（在世者只留五座拉丁葛萊美）、Motorpsycho 刪 Spellemannprisen（只留 Rockheim）、Museo Rosenbach「最好之一」改「經典」、Mother Love Bone 刪「唯一」、MX-80 Sound「最徹底」改「很徹底」、Ngozi Family「最早一批」改「早期」、Nihilist Spasm Band 刪「持續最久」、Novalis「最成功」改平述；英文詞譯中文——MJ Cole「coffee-table garage」、Mother Gong「space whispers」；健康細節——Neil Young 刪小兒麻痺；語意不明——Nazareth 刪 Axl Rose 悼念句；重複——Nothing Painted Blue 刪與前句重疊的詞曲形容。
+- 保留：Mk.gee 的 Eric Clapton 評語、Natalie Merchant 的 Michael Stipe 說法、N.E.R.D 的 Virgil Abloh 與 Tyler, the Creator 說法（具名人物）；Neil Young 搖滾名人堂（在世者唯一一處）；New Found Glory 不寫 Chad Gilbert 過世（新近且不必要）。
+- 身分：Moolah 是紐約二人組 Walter Burns 與 Maurice Roberson；Mountain 是 Leslie West 的團（維基預抓山岳條目作廢）；Murphy's Law（維基預抓格言條目作廢）；Nausea 是紐約 crust punk；Nothing Painted Blue 與 d-035 Franklin Bruno 已比對無撞句。
+- 待本機（上線簡介）：Murple「1973 年成立」（另說 1971）；Music Emporium「被 Liberty 開除」「壓 300 張」單源；Mystic Siva「Mark Heckert」應為 Marc；Necros「第一個替 Touch and Go 錄音」單源。
+
+## ar-d-043（2026-10-08）
+
+- 39 位全上（30 full、9 thin：Pablo Cruise、Pablo Picasso、Pale Saints、Papa Roach、Parameter、Passenger、Passion Pit、Paul Clark、Petrus Castrus）。
+- 審稿修 14 處：最高級刪改——Oberon「最稀有最昂貴之一」、Opus Avantra「最受海外喜愛之一」、Ought「最受矚目之一」、Overkill「最成功的東岸 thrash 之一」、P.O.D.「最長壽名曲之一」、Partibrejkers「最受好評之一」、Pau Riba 刪「最宇宙、最嬉皮」引語、Paul Weller「最具影響力」改「代表」、Pekinška Patka「最突出最有影響力」與「第一張龐克專輯」（兩源不獨立）、Pērkons「最重要之一」、Petrus Castrus「最早的交響搖滾之一」；健康細節——Oddział Zamknięty 刪離團原因、P.O.D. 刪母親罹癌；新近事實——Partibrejkers 刪 2025 年展覽（單源）；媒體名——Pau Riba 的 Enderrock 改「樂評票選」。
+- 保留：Pat Benatar、Peter Frampton 的搖滾名人堂評語（在世者唯一一處）；Paul Weller 的 Brit Awards 傑出貢獻獎（唯一一處）；Paul Roland 的 Robyn Hitchcock 評語（具名樂手）；Parálisis Permanente 只寫 Benavente 二十歲過世、不寫死因。
+- 身分修正：Parameter 是英國團（Lancashire 的 Deroy 壓製；特注原寫美國私壓，錯）；Odyssey 是紐約 Lopez 姊妹的三人組（維基預抓荷馬史詩作廢）；Oberon 是 Radley College 學生團（維基預抓莎翁角色作廢）；Pablo Picasso 是日本野村誠的團（維基預抓畫家作廢）；Pages 是 Richard Page 的團（維基預抓蘋果軟體作廢）；Outburst（維基預抓採礦用語作廢）。
+- 待本機（上線簡介）：Odyssey「康乃狄克的家族組合」（出生地兩說）；Oddział Zamknięty 金唱片與 2022 白金無據；Osanna《Palepoli》1972／1973；Paul Roland《Burnt Orchids》廠牌（官網為 Armageddon、迷你專輯）。
+
+## 第五輪十批接力收尾（ar-d-034～043）
+
+- 合計 391 位上架（311 full、80 thin），8 位不寫：Gorgoroth、Kaseke、Kenneth Higney、Krakdown、L'Arc〜en〜Ciel、Light、Lightyears Away / Thundermother、Maximum Penalty（聲音查無或只剩曲風標籤／錄音地點、身分只是推論、全部事實單源）。
+- 本輪新增的裁定形狀：thin 聲音句若只剩演出名單、曲長或錄音地點即不寫（Gorgoroth、L'Arc〜en〜Ciel、Lightyears Away 一致處理）；但直接塑造聲音的錄音做法可算（Movietone 海灘現場收音）。超額 2 次放行兩例（Gunnar Graps、Hunters & Collectors），皆為高風險事實的第二源。QA 千分位誤報（10,000 Maniacs）照專名保留。
+- 特注身分錯誤由研究層更正 8 處（Grow-Up、Haikara、Iron Cross、Menuets、Parameter 等），皆已照研究層改寫。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；卡池年份存疑（Gila 1967→1971、Keiji Haino 2017 為重發、Leeway 1988、Lizard 1985／1986）。

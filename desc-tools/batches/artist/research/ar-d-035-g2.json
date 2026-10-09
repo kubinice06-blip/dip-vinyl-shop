@@ -1,0 +1,1184 @@
+[
+  {
+    "key": "fix",
+    "name": "Fix",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fix 是愛沙尼亞的搖滾樂團，1968 年在塔爾圖（Tartu）成軍，早期以 beat 風格演奏舞曲。",
+            "src": "https://et.wikipedia.org/wiki/Fix",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1976 年 Fix 成為隸屬塔爾圖 Vanemuine 劇院的職業樂團，並參與數齣劇院製作。",
+            "src": "https://et.wikipedia.org/wiki/Fix",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Väino Land 在 1974 年底起著手組成新陣容，1978 年離團另組樂團，1981 年回到 Fix。",
+            "src": "https://et.wikipedia.org/wiki/Fix",
+            "src2": "https://musicbrainz.org/ws/2/artist/85d2e6bd-6bd4-4878-a9e3-1d5ad95db40a?fmt=json&inc=artist-rels+annotation",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團的作曲主力是 Vello Toomemets 與 Priit Pihlap，最知名的作詞者是 Juhan Sütt，鍵盤手 Evald Raidma 兼任編曲與主唱；歌手包括 Silvi Vrait 與 Viljo Tamm。",
+            "src": "https://et.wikipedia.org/wiki/Fix",
+            "src2": "https://news.err.ee/107690/silvi-vrait-first-eurovision-finalist-dead-at-62",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1979 年 Fix 前往古巴，在聖地牙哥與哈瓦那演出。",
+            "src": "https://et.wikipedia.org/wiki/Fix",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1979 年 Fix 出版名下最早的發行品《Värviline maailm》。",
+            "src": "https://et.wikipedia.org/wiki/Fix",
+            "src2": "https://musicbrainz.org/ws/2/release-group?artist=85d2e6bd-6bd4-4878-a9e3-1d5ad95db40a&fmt=json&limit=100&offset=0",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1968 年在塔爾圖成軍。",
+        "src": "https://et.wikipedia.org/wiki/Fix",
+        "single": true,
+        "from": "new"
+      },
+      {
+        "f": "1976 年成為隸屬 Vanemuine 劇院的職業樂團。",
+        "src": "https://et.wikipedia.org/wiki/Fix",
+        "single": true,
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "任務特注說 Fix 是卡池 1979 年作品、先確認國籍：poolAlbums 為《Värviline maailm》1979，事實庫 MusicBrainz 與愛沙尼亞文維基都對上愛沙尼亞樂團 Fix，確認身分。",
+      "搜尋摘要中的俄文資料庫說 Fix 是塔爾圖文化館的學生樂團，愛沙尼亞文維基只說 1968 年塔爾圖成軍；採愛沙尼亞文維基。",
+      "Silvi Vrait 的在團年份：ERR 訃聞寫 1975 至 1984，MusicBrainz 寫 1976 至 1983，兩源不一致，facts 不寫她的在團年份。",
+      "Last.fm 一類目錄寫樂團存續 1968 至 2003，但愛沙尼亞文維基顯示 2020 年仍有活動、MusicBrainz 成員到 2011，facts 不採 2003。",
+      "上線簡介與事實庫相符，未動。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "thin",
+    "pubIssues": [],
+    "notes": "搜尋用了 8 次：WebSearch 5 次（英文查樂團史、愛沙尼亞文查樂團史、查 2020 年獎項、查 50 週年與創團、查創團與獎項）、WebFetch 3 次（愛沙尼亞文維基、英文維基 Rock music in Estonia 未提到 Fix、ERR 訃聞）。失敗 1 次：俄文維基 404。素材偏薄：愛沙尼亞文維基是唯一能開的完整頁面，英文維基與預抓皆無 Fix 條目，所以 origin 與 sound 多為單源低風險事實，legacy 查無。未收（單源高風險或無法證實）：(a) 愛沙尼亞文維基寫〈Kuninganna〉1980 年在 Arne Oidi 歌曲比賽得第一名；(b) 愛沙尼亞文維基寫 Fix 在 2020 年愛沙尼亞音樂獎獲「對愛沙尼亞音樂的貢獻」獎，兩次搜尋都找不到第二源確認，不收；(c) 團名由 Mart Helme 取（Postimees 搜尋摘要也提到他早期在 Fix 彈貝斯，未開頁），涉及政治人物，不收；(d) Viktor Vassiljev 2026 年 2 月 28 日過世只見俄文新聞摘要，不收。Land 的『領隊』身分：1989 年 Melodiya 唱片的愛沙尼亞檔案登錄寫 Land 為 juht，但愛沙尼亞文維基未稱他為領隊，facts 只寫其離團與回團。事實庫的 MusicBrainz 條目為 API 連結，已當作 Land 區間與最早發行品的第二源。『第一張』：MusicBrainz 只登錄 1979 年為最早的 release-group，故 facts 寫『名下最早的發行品』而非『出道作』。"
+  },
+  {
+    "key": "fläsket brinner",
+    "name": "Fläsket Brinner",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fläsket Brinner 是斯德哥爾摩的瑞典器樂搖滾樂團，1970 年 5 月成軍，成員為 Per Bruun（貝斯）、Bengt Dahlén（吉他）、Sten Bergman（風琴）、Gunnar Bergsten（薩克斯風）與 Erik Dahlbäck（鼓），多人先前同在 Atlantic Ocean 樂團；首演在現代美術館（Moderna museet）的花園。",
+            "src": "https://sv.wikipedia.org/wiki/Fl%C3%A4sket_brinner",
+            "single": true,
+            "from": "bank"
+          },
+          {
+            "f": "團名在瑞典文裡大致是『豬肉在燒』的意思，所以他們的專輯封面常見豬的圖像。",
+            "src": "https://dprp.net/reviews/2016/063",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Frank Zappa 是樂團最主要的啟發來源，他們在斯德哥爾摩音樂廳替 Zappa 暖場。",
+            "src": "https://sv.wikipedia.org/wiki/Fl%C3%A4sket_brinner",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們以器樂為主，把爵士、民謠與迷幻搖滾揉在一起，並留下大段即興。",
+            "src": "https://sv.wikipedia.org/wiki/Fl%C3%A4sket_brinner",
+            "src2": "https://dprp.net/reviews/2016/063",
+            "from": "new"
+          },
+          {
+            "f": "樂評形容他們的聲音是旋律性的器樂融合，有失真吉他、風琴，以及薩克斯風與長笛的對答，曲子常以斯堪地那維亞傳統民謠旋律為底，再展開冗長的迷幻即興。",
+            "src": "https://dprp.net/reviews/2016/063",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "薩克斯風手 Gunnar Bergsten 把土耳其民謠帶進現場曲目。",
+            "src": "https://sv.wikipedia.org/wiki/Fl%C3%A4sket_brinner",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "DPRP 的樂評寫道，許多瑞典樂團把 Fläsket Brinner 列為影響，包括 Grovjobb 與 Anekdoten。",
+            "src": "https://dprp.net/reviews/2016/063",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Bo Hansson 曾在團裡彈風琴，現場曲目包含他自己的作品，其中有後來收進《Ur trollkarlens hatt》的曲子。",
+            "src": "https://sv.wikipedia.org/wiki/Fl%C3%A4sket_brinner",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "樂團所在的 Silence 廠牌是瑞典 progg 運動的一支，被政治性最強的一派批評音樂『太飄』、缺乏明確政治訊息。",
+            "src": "https://sv.wikipedia.org/wiki/Silence_Records",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2003 年出版四碟的《Swedish Radio Recordings 1970–1975》，收錄樂團 1970 至 1975 年的廣播現場錄音。",
+            "src": "https://sv.wikipedia.org/wiki/Fl%C3%A4sket_brinner",
+            "src2": "https://dprp.net/reviews/2016/063",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1970 年 5 月在斯德哥爾摩成軍。",
+        "src": "https://sv.wikipedia.org/wiki/Fl%C3%A4sket_brinner",
+        "single": true,
+        "from": "bank"
+      },
+      {
+        "f": "2003 年出版四碟廣播錄音集《Swedish Radio Recordings 1970–1975》。",
+        "src": "https://sv.wikipedia.org/wiki/Fl%C3%A4sket_brinner",
+        "src2": "https://dprp.net/reviews/2016/063",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "DPRP 樂評寫樂團出過兩張專輯、年份為 1970 與 1971；瑞典文維基與上線簡介都是 1971 首作、1972 年《Fläsket》雙 LP，採瑞典文維基，不採 DPRP 的年份。",
+      "任務特注說 Fläsket Brinner 是瑞典前衛／爵士搖滾，來源證實：瑞典文維基稱瑞典器樂前衛搖滾。",
+      "上線簡介與事實庫相符，未動。"
+    ],
+    "searches": 8,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "搜尋用了 8 次：WebSearch 3 次（樂團背景、影響與重發、Anekdoten 影響），WebFetch 5 次（瑞典文維基、DPRP 樂評、Force Exposure 內容為空、英文維基 Anekdoten、betreutesproggen 訪談）。失敗 1 次：Progarchives 403。legacy 薄：『許多瑞典樂團受其影響（Grovjobb、Anekdoten）』只有 DPRP 一位樂評人的陳述，標單源；Progarchives 評論搜尋摘要另有兩位評論者說讀到 Anekdoten 列其為影響，但頁面 403 無法開頁，英文維基 Anekdoten 條目與一則 Anekdoten 訪談都沒有提到 Fläsket Brinner，故寫作層若採用應具名為『一篇樂評』而不是共識。Bo Hansson 在團的年份（瑞典文維基：1971 年夏接替 Bergman 彈風琴、1972 年初離開風琴位）只有單一來源，高風險成員異動，不收年份。解散年（1981）與 2003 年重聚只見瑞典文維基與搜尋摘要，不收。Silence 廠牌批評一條取自事實庫瑞典文維基 Silence Records 條目，說的是廠牌被批評而非樂團本身，寫作層引用時要寫成『廠牌所屬的那一支』。"
+  },
+  {
+    "key": "flipper",
+    "name": "Flipper",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Flipper 是 1979 年在舊金山成軍的美國龐克樂團，創始成員來自本地樂團：Will Shatter（貝斯）與 Steve DePace（鼓）出自 Negative Trend，Ted Falconi（吉他）出自 Rad Command，原主唱 Ricky Williams 出自 Sleepers。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "src2": "https://www.kqed.org/arts/10870683/influential-punks-flipper-reuniting-with-jesus-lizard-singer",
+            "from": "new"
+          },
+          {
+            "f": "Ricky Williams 取了團名，但在樂團留下任何錄音之前就被開除；接替他的 Bruce Loose（本名 Bruce Calderwood）與 Shatter 輪流分擔貝斯與主唱，兩人常常上台各背一把貝斯，一人彈貝斯時另一人唱。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "吉他手 Ted Falconi 是越戰退伍軍人，以獨特的失真吉他音色聞名。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Flipper 把龐克放慢，走貝斯領軍、重度失真的路線；在舊金山當地龐克圈快節奏的硬蕊潮流裡，這種緩慢吵鬧的做法讓不少同行惱火。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "src2": "https://www.kqed.org/arts/10870683/influential-punks-flipper-reuniting-with-jesus-lizard-singer",
+            "from": "new"
+          },
+          {
+            "f": "Trouser Press 形容 Flipper 是在讓人不安的慢速下演奏本來可能很典型的硬蕊音樂，帶著回授噪音的笨重吉他與嘶吼的人聲。",
+            "src": "https://trouserpress.com/?p=514",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "〈Sex Bomb〉1981 年以單曲發行，A 面很長、歌詞極少，封面全由手工製作，讓樂團在龐克圈出了名；1982 年的專輯收了新版本。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Mark Arm 在 2006 年紀錄片《American Hardcore》裡說，Flipper 的魅力在於能惹毛觀眾、又同時抓住他們全部的注意力與好奇。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基百科首段稱 Flipper 影響了多支 grunge、龐克與 noise rock 樂團，他們放慢、貝斯領軍、重度失真的龐克被認為啟發了 Melvins 與 Nirvana。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "src2": "https://www.kqed.org/arts/10870683/influential-punks-flipper-reuniting-with-jesus-lizard-singer",
+            "from": "new"
+          },
+          {
+            "f": "Kurt Cobain 穿著自製的 Flipper T 恤，出現在 Nirvana《In Utero》的內頁照片、1992 年《Saturday Night Live》首演與〈Come as You Are〉的音樂錄影帶；Cobain 與 Krist Novoselic 都曾把 Flipper 列為影響。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "KQED 稱 Flipper 後來被稱為 grunge 教父，Cobain 被拍到穿自製 Flipper T 恤，讓外界重新注意到這團；製作人 Rick Rubin 是他們的大樂迷，把他們簽進 Def American。",
+            "src": "https://www.kqed.org/arts/10870683/influential-punks-flipper-reuniting-with-jesus-lizard-singer",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "樂迷在舊金山各處，後來擴散到世界各地，噴漆寫上『Flipper Rules』。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Nirvana 的貝斯手 Krist Novoselic 在 2000 年代加入 Flipper，並在 2009 年的第四張錄音室專輯《Love》中演奏。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Henry Rollins 形容 Flipper 就是『重』，比你重、比任何東西都重。",
+            "src": "https://www.kqed.org/arts/10870683/influential-punks-flipper-reuniting-with-jesus-lizard-singer",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1979 年底，Flipper 的首批錄音收進新成立的 Subterranean 廠牌的《SF Underground》7 吋 EP。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "src2": "https://trouserpress.com/?p=514",
+            "from": "new"
+          },
+          {
+            "f": "1982 年，Flipper 在 Subterranean 發行第一張全長專輯《Album – Generic Flipper》，錄製歷時約一年。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "src2": "https://trouserpress.com/?p=514",
+            "from": "new"
+          },
+          {
+            "f": "1987 年 Will Shatter 過世，Flipper 隨後進入休團。",
+            "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+            "src2": "https://trouserpress.com/?p=514",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1979 年在舊金山成軍。",
+        "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+        "src2": "https://www.kqed.org/arts/10870683/influential-punks-flipper-reuniting-with-jesus-lizard-singer",
+        "from": "new"
+      },
+      {
+        "f": "1982 年發行首張全長專輯《Album – Generic Flipper》。",
+        "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+        "src2": "https://trouserpress.com/?p=514",
+        "from": "new"
+      },
+      {
+        "f": "1992 年 Kurt Cobain 穿著自製 Flipper T 恤上《Saturday Night Live》。",
+        "src": "https://en.wikipedia.org/wiki/Flipper_(band)",
+        "single": true,
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫對 Flipper 無任何研究稿與上線簡介（poolAlbums 為《Album - Generic Flipper》1982，與英文維基專輯年份一致，確認身分）。",
+      "Novoselic 加入年份：英文維基寫 2000 年代，搜尋摘要寫 2006 至 2009 或 2008 兩種，facts 只寫『2000 年代』與專輯年份 2009（維基），不寫更細年份。"
+    ],
+    "searches": 4,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "搜尋用了 4 次：WebSearch 兩次（樂團背景與影響、Generic Flipper 與 Shatter 逝世年）、WebFetch KQED、Trouser Press。Shatter 死因（海洛因過量）英文維基與 Trouser Press 都有，依特注只留年份，不寫死因。Novoselic 加入屬成員異動，只有英文維基一源，標單源並只寫模糊年代，高風險，寫作層可略。Cobain 穿 T 恤上 SNL 的年份 1992 只見英文維基。Rick Rubin 簽約年份（搜尋摘要寫 1991）、1992 或 1993 年《American Grafishy》各源年份不一，皆不收。Henry Rollins 的話出自 KQED 引述，標單源。KQED 文章也稱『grunge 教父』但未標明是誰說的，寫作層若用要寫成『KQED 稱』。"
+  },
+  {
+    "key": "flux of pink indians",
+    "name": "Flux of Pink Indians",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Flux of Pink Indians 是英格蘭赫特福德郡 Bishop's Stortford 的龐克樂團，1980 年由 The Epileptics 的剩餘成員重組而成，主唱 Colsk Latter、貝斯 Derek Birkett。",
+            "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+            "src2": "https://trouserpress.com/reviews/flux-of-pink-indians/",
+            "from": "new"
+          },
+          {
+            "f": "The Epileptics 在 1979 年上半年因英國癲癇協會寄信抗議而改名 Epi-X，Flux 就是從這個團的班底長出來的。",
+            "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "樂團 1981 年簽進 Crass Records，首張 EP《Neu Smell》由 Crass 發行，收有獨立榜熱門曲〈Tube Disasters〉；之後他們自創 Spiderleg 廠牌出版自己的專輯。",
+            "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+            "src2": "https://trouserpress.com/reviews/flux-of-pink-indians/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Trouser Press 把 Flux 歸入那批『半知識分子、政治立場強烈』的樂團，用精簡的吉他龐克表達左派或無政府主義觀點；鼓點乾脆準確、吉他和弦失真，主唱則像教官在吼。",
+            "src": "https://trouserpress.com/reviews/flux-of-pink-indians/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1986 年的第三張專輯《Uncarved Block》由 Adrian Sherwood 製作，找來 On-U Sound 廠牌的多位成員參與，曲風從龐克轉向工業聲響，混合中速搖滾與自由即興的氛圍段落；這張出版時團名縮短為 Flux。",
+            "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+            "src2": "https://trouserpress.com/reviews/flux-of-pink-indians/",
+            "from": "new"
+          },
+          {
+            "f": "《Strive to Survive Causing Least Suffering Possible》以包裝講究出名，附 12 頁小冊子和對開封套。",
+            "src": "https://trouserpress.com/reviews/flux-of-pink-indians/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Flux 的貝斯手 Derek Birkett 把經營 Spiderleg 的經驗帶去創辦 One Little Indian Records，這家廠牌後來成為 Björk 與 Sugarcubes 的出版公司。",
+            "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+            "src2": "https://en.wikipedia.org/wiki/One_Little_Independent_Records",
+            "from": "new"
+          },
+          {
+            "f": "2009 年饒舌歌手 Professor Green 在單曲〈Hard Night Out〉採樣了 Flux〈Tube Disasters〉的貝斯線。",
+            "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1987 年 Flux 解散；2007 年他們為替前 Crass 主唱 Steve Ignorant 的演出暖場而重組，反應良好後在 2008 年又演了三場。",
+            "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1981 年簽進 Crass Records，發行首張 EP《Neu Smell》。",
+        "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+        "src2": "https://trouserpress.com/reviews/flux-of-pink-indians/",
+        "from": "new"
+      },
+      {
+        "f": "出版自己的專輯《Strive to Survive Causing Least Suffering Possible》，由自家 Spiderleg 廠牌發行。",
+        "src": "https://en.wikipedia.org/wiki/Flux_of_Pink_Indians",
+        "src2": "https://trouserpress.com/reviews/flux-of-pink-indians/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫對 Flux of Pink Indians 無研究稿與上線簡介；poolAlbums 為《Strive to Survive Causing Least Suffering Possible》1982，與英文維基、Trouser Press 的專輯名一致，確認身分。",
+      "《Strive to Survive》的發行年：英文維基寫 1983，Trouser Press 寫 1982，卡池為 1982，各源不一致，facts 不寫該專輯的發行年。",
+      "英文維基寫 1980 至 1986 活躍、Wikidata 寫 1980 至 1987 解散，facts 只寫 1987 解散（維基內文：Flux disbanded in 1987），單源，標 single。"
+    ],
+    "searches": 5,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "搜尋用了 5 次：WebSearch 3 次（專輯與 Crass 影響、Birkett 與 One Little Indian、Neurosis 影響）、WebFetch 2 次（Trouser Press、One Little Independent Records 維基）。失敗 1 次：Under the Radar 專輯評論 403。英文維基 Flux 條目、Spiderleg 條目、One Little Independent Records 條目屬同一來源家族，非獨立；Birkett 創辦 One Little Indian 一條的兩個來源即是如此，且創辦年份（搜尋摘要寫 1985，另有說法為樂團解散後）不一致，故 facts 不寫年份。未收：(a) 英文維基稱 2016 年《衛報》訪談把 Flux 與其他英國 anarcho-punk 樂團列為美國 Neurosis 的影響，衛報被擋、Neurosis 相關訪談也查不到 Flux，不收；(b) Martin Freeman 在 2019 年《Telegraph》談哥哥聽 Flux，只見維基單源，且屬軼聞，不收；(c) 第二張專輯《The Fucking Cunts Treat Us Like Pricks》被零售商拒賣、曼徹斯特警方查扣的事件（含猥褻物品起訴），涉及爭議與法律程序，非音樂份量核心，不收；(d) 專輯在獨立榜第一等榜單名次，依特注避免。Epi-X 改名一條取自英文維基，標單源。Trouser Press 對音樂評價偏負（稱單調、令人麻木），facts 只取其對編制與形式的描述。"
+  },
+  {
+    "key": "flying saucer attack",
+    "name": "Flying Saucer Attack",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Flying Saucer Attack 是來自英格蘭布里斯托的樂團，由詞曲作者 David Pearce 主導；Movietone 的 Rachel Brook 是早期成員，其他參與錄音與演出的樂手包括 Rocker、Matt Elliott（Third Eye Foundation）與 Sam Jones（Crescent）。",
+            "src": "https://en.wikipedia.org/wiki/Flying_Saucer_Attack",
+            "src2": "https://trouserpress.com/?p=521",
+            "from": "new"
+          },
+          {
+            "f": "Pearce 在 Farnham 藝術學院認識幾位朋友並組了 The Secret Garden；後來在布里斯托唱片行 Revolver 工作，同事是 Matt Elliott，也短暫加入過 Linda's Strange Vacation。",
+            "src": "https://factmag.com/2015/08/18/flying-saucer-attack-guide",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "樂團自行發行的首張單曲〈Soaring High〉在 1993 年問世，接著發行同名首張專輯。",
+            "src": "https://factmag.com/2015/08/18/flying-saucer-attack-guide",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們把自己的土法聲音稱為『rural psychedelia』（鄉野迷幻），取材自 krautrock、民謠與 dream pop，被歸入同時期的 post-rock 與 shoegaze 場景；大部分作品在家裡錄成，避開錄音室。",
+            "src": "https://en.wikipedia.org/wiki/Flying_Saucer_Attack",
+            "src2": "https://thequietus.com/?p=13788",
+            "from": "new"
+          },
+          {
+            "f": "Gravenhurst 的 Nick Talbot 在 The Quietus 寫道，這個團的首張專輯把 lo-fi 推到前所未有的嘈雜，並讓受限的臥室業餘錄音技術成為『鄉野迷幻』獨特聲音的一部分；他還提到 Pearce 用電吉他、螺絲起子、失真器和延遲效果器模仿合唱。",
+            "src": "https://thequietus.com/?p=13788",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "FACT 的樂團導覽把首張專輯粗糙飽和的 4 軌聲音，連到 Pearce 欣賞的紐西蘭 Xpressway 廠牌；Pearce 本人說他想要的是『腦中那些我始終做不出來的聲音』。",
+            "src": "https://factmag.com/2015/08/18/flying-saucer-attack-guide",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Trouser Press 稱《Further》是一張適合戴耳機聽的專輯，人聲埋在音牆裡，聽感近似 My Bloody Valentine 與 The Jesus and Mary Chain，沒有典型搖滾的慣例。",
+            "src": "https://trouserpress.com/?p=521",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "圍繞 Pearce 的布里斯托圈子還有 Movietone、Third Eye Foundation（Matt Elliott）等團；FACT 與 Trouser Press 都把這幾組人放在同一個脈絡裡談，FACT 另列 Crescent、Amp、Light 與 Clear Horizon。",
+            "src": "https://factmag.com/2015/08/18/flying-saucer-attack-guide",
+            "src2": "https://trouserpress.com/?p=521",
+            "from": "new"
+          },
+          {
+            "f": "Gravenhurst 的 Nick Talbot 說，Flying Saucer Attack 的做法成了他自己音樂聲音的基本手法，而 Planet 唱片行、Revolver 一帶那個圈子，包括 Matt Elliott，讓他從『試聽帶』的心態裡走出來、開始發行自己的作品。",
+            "src": "https://thequietus.com/?p=13788",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "FACT 寫道，Pearce 2015 年帶著新專輯回歸，讓人重新注意他早期七年的音樂，以及圍繞他的那一圈樂團；FACT 還說 Jessica Bailiff 早期的專輯明顯受 Flying Saucer Attack 影響，Pearce 後來與她合作了 2003 年的《Clear Horizon》。",
+            "src": "https://factmag.com/2015/08/18/flying-saucer-attack-guide",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團把早期稱為『第一階段』：專輯《Chorus》的內套文字寫著它標誌 FSA 第一階段的結束。",
+            "src": "https://thequietus.com/?p=13788",
+            "src2": "https://trouserpress.com/?p=521",
+            "from": "new"
+          },
+          {
+            "f": "Pearce 在 2000 年的訪談裡說《Further》是一張『困難的專輯』，因為它讓他想起很糟的一段時期。",
+            "src": "https://factmag.com/2015/08/18/flying-saucer-attack-guide",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年自行發行首張單曲〈Soaring High〉與同名首張專輯。",
+        "src": "https://factmag.com/2015/08/18/flying-saucer-attack-guide",
+        "single": true,
+        "from": "new"
+      },
+      {
+        "f": "1995 年 4 月 17 日由 Drag City 發行《Further》，1994 年錄製。",
+        "src": "https://en.wikipedia.org/wiki/Further_(Flying_Saucer_Attack_album)",
+        "from": "new",
+        "single": true
+      }
+    ],
+    "conflicts": [
+      "事實庫對 Flying Saucer Attack 無研究稿與上線簡介；poolAlbums 為《Further》1995，與英文維基專輯條目一致，確認身分。",
+      "成軍年：英文維基 Wikidata 寫 1992，FACT 與 Stranded Records 摘要為 1993 年首張單曲，來源不一致，facts 不寫成軍年，只寫 1993 年單曲。",
+      "《Further》年份：FACT 寫 1994，英文維基專輯條目寫 1994 年錄製、1995 年 4 月 17 日發行，卡池年份 1995 是發行年；facts 兩者分開寫。"
+    ],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "搜尋用了 6 次：WebSearch 2 次（家庭錄音與鄉野迷幻、影響與地位）、WebFetch 4 次（FACT 樂團導覽、Quietus 首張專輯二十週年文章、Trouser Press、《Further》維基條目）。legacy 的『影響』多為同圈音樂人 Talbot 與 FACT 作者 Jon Dale 的具名說法，標單源；沒有找到機構級的共識評價或名人堂，如實不補。評論分數與名次（AllMusic、Pitchfork 的 2016 年 shoegaze 專輯榜第 26 名）依特注避免，不收。Record Collector 稱樂團帶領布里斯托一個通常只被記成 trip-hop 的場景（搜尋摘要，未開頁）不收。Pearce 2000 年訪談那句話轉自 FACT 導覽，標單源。《Further》的 1995 年發行日只見英文維基專輯條目，標單源。"
+  },
+  {
+    "key": "foetus",
+    "name": "Foetus",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Foetus 是澳洲音樂人 JG Thirlwell 的個人計畫，他生長於墨爾本、學過美術，1978 年移居英格蘭，在倫敦的 Virgin 唱片行當獨立廠牌採購，並在後龐克團 pragVEC 彈合成器。",
+            "src": "https://daily.bandcamp.com/lists/suck-on-this-squarehead-a-guide-to-foetus",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Thirlwell 離開 pragVEC 是因為覺得團太民主，決定自己進錄音室演奏所有樂器；他想做出『沒有臉附在上面的物件』，所以不用本名，而用各種含 Foetus 字樣的名稱與化名，如 Frank Want、Phillip Toss、Clint Ruin。",
+            "src": "https://thequietus.com/?p=28130",
+            "src2": "https://en.wikipedia.org/wiki/Foetus_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Thirlwell 1983 年起定居紐約。",
+            "src": "https://daily.bandcamp.com/lists/suck-on-this-squarehead-a-guide-to-foetus",
+            "src2": "https://thequietus.com/?p=28130",
+            "from": "new"
+          },
+          {
+            "f": "他是在那年萬聖節與 Lydia Lunch 在 Danceteria 的演出之後決定留在紐約，他說：『我就是愛紐約，從此沒離開過。』",
+            "src": "https://daily.bandcamp.com/lists/suck-on-this-squarehead-a-guide-to-foetus",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp Daily 形容 Foetus 是拼貼式的搖滾，把 no wave 與後龐克，加上磁帶為本的電子作曲和早期嘻哈拼在一起，取材範圍涵蓋大樂團、異國風情音樂、古典、disco、金屬與具體音樂。",
+            "src": "https://daily.bandcamp.com/lists/suck-on-this-squarehead-a-guide-to-foetus",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "早期唱片以便宜的方式在 Lavender Sound 錄成，用了預置鋼琴，以及圖釘、鱷魚夾和膠帶之類的物件；聲音靠磁帶循環、變速與早期取樣一層層疊出厚度，Thirlwell 說《Nail》裡有大量 Fairlight 取樣器。",
+            "src": "https://thequietus.com/?p=28130",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Trouser Press 的樂評人 Ira Robbins 形容 Foetus 的唱片是『感官過載』，把聲音一層疊一層、傷害疊上侮辱，稱《Nail》是『走進 Foetus 狂熱世界的另一趟奇異旅程』。",
+            "src": "https://trouserpress.com/?p=522",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp Daily 稱 Foetus 對 industrial 這個類型有『極大影響』，但也說他的音樂太扭曲、不可預測、有機，跟那種金屬加音序器的美學不能混為一談。",
+            "src": "https://daily.bandcamp.com/lists/suck-on-this-squarehead-a-guide-to-foetus",
+            "src2": "https://en.wikipedia.org/wiki/Foetus_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Trouser Press 寫道，Ministry、Nine Inch Nails、Cop Shoot Cop 與所有在同一片洶湧水域航行的人，都欠這位勇敢的革新者一份人情。",
+            "src": "https://trouserpress.com/?p=522",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Thirlwell 的合作對象包括 Nick Cave、Marc Almond、Lydia Lunch、Coil、Nurse With Wound、The The、Swans 與 Einstürzende Neubauten；The Quietus 稱他把 Neubauten 介紹給柏林以外的聽眾，並說他的影響像『一條金線』穿過大西洋兩岸的獨立音樂。",
+            "src": "https://thequietus.com/?p=28130",
+            "src2": "https://daily.bandcamp.com/lists/suck-on-this-squarehead-a-guide-to-foetus",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1983 年 11 月，Foetus 與 Marc Almond、Nick Cave、Lydia Lunch 組成短命的 The Immaculate Consumptive 巡演。",
+            "src": "https://en.wikipedia.org/wiki/Foetus_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1985 年 10 月 Thirlwell 做出《Nail》，維基稱它是 Foetus 史上最受歡迎的一張。",
+            "src": "https://en.wikipedia.org/wiki/Foetus_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Thirlwell 後來也替《The Venture Bros.》與《Archer》配樂。",
+            "src": "https://daily.bandcamp.com/lists/suck-on-this-squarehead-a-guide-to-foetus",
+            "src2": "https://thequietus.com/?p=28130",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1981 年 pragVEC 解散後開始以 Foetus Under Glass 之名做個人計畫，從《Thaw》之後名稱固定為 Foetus。",
+        "src": "https://en.wikipedia.org/wiki/Foetus_(band)",
+        "single": true,
+        "from": "new"
+      },
+      {
+        "f": "1985 年做出被稱為 Foetus 最受歡迎專輯的《Nail》。",
+        "src": "https://en.wikipedia.org/wiki/Foetus_(band)",
+        "single": true,
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫對 Foetus 無研究稿與上線簡介；poolAlbums 為《Nail》1985，與英文維基、Trouser Press 對上，確認身分。",
+      "移居紐約年份：Bandcamp Daily 與 Quietus 都寫 1983，搜尋摘要另有來源寫 1984，採兩源一致的 1983。",
+      "移居倫敦年份：Bandcamp Daily 寫 1978，Quietus 只說墨爾本一代人在 1980 年代初移往倫敦、未指他本人的年份，採 Bandcamp 的 1978（單源，標 single）。",
+      "英文維基寫『1981 年 PragVEC 解散後』開始 Foetus Under Glass，Wikidata 成立年 1981，屬同源，標單源。"
+    ],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "搜尋用了 5 次：WebSearch 2 次（背景與 Nail、影響與合作）、WebFetch 3 次（Bandcamp Daily 導覽、Trouser Press、The Quietus 專訪側寫）。主詞說明：名冊的 Foetus 是 Thirlwell 的個人計畫，『成員』皆是他的化名，寫作層應以 Thirlwell 為主詞。《Nail》當時的掛名（Scraping Foetus Off the Wheel）只見搜尋摘要，未開頁，facts 不寫。Trouser Press 的『Ministry、Nine Inch Nails 欠他人情』是評論人具名說法，標單源；搜尋找不到 Reznor 或 Nine Inch Nails 自己點名 Foetus，Thirlwell 本人也說不認為自己是 industrial 教父，寫作層不可寫成共識或本人承認。未收：Gash（1995）讓音樂媒體承認其在 industrial 發展中的角色，只見英文維基單句，且已被上一條涵蓋；Nail 在倫敦錄製的說法無法證實。"
+  },
+  {
+    "key": "foghat",
+    "name": "Foghat",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Foghat 是英國搖滾樂團，1971 年在倫敦成軍，以電滑音吉他聞名。",
+            "src": "https://en.wikipedia.org/wiki/Foghat",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Lonesome Dave Peverett 與 Roger Earl 原是英國藍調樂團 Savoy Brown 的成員，在 1970 年代之初離開、另組 Foghat；Redbeard 稱 Foghat 是 Savoy Brown 這棵『家族樹』上在北美最成功的分支。",
+            "src": "https://www.inthestudio.net/online-only-interviews/foghat-fool-for-the-city-lonesome-dave-peverett-rod-price/",
+            "src2": "https://www.classicrockhistory.com/top-10-foghat-albums-you-must-own/",
+            "from": "new"
+          },
+          {
+            "f": "1972 年的首張專輯由 Dave Edmunds 製作，用八軌錄音機在威爾斯的一座穀倉錄成；Rod Price 回憶，翻唱 Willie Dixon 的〈I Just Want to Make Love to You〉是在威爾斯的『牛棚』裡錄的。",
+            "src": "https://www.inthestudio.net/online-only-interviews/foghat-fool-for-the-city-lonesome-dave-peverett-rod-price/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Foghat 以電滑音吉他為招牌，AllMusic 把他們的風格歸為『boogie-blues』，說是簡單、硬調的藍調搖滾；Redbeard 稱他們是『倫敦的 boogie 男人』，Rod Price 是滑音吉他手。",
+            "src": "https://en.wikipedia.org/wiki/Foghat",
+            "src2": "https://www.inthestudio.net/online-only-interviews/foghat-fool-for-the-city-lonesome-dave-peverett-rod-price/",
+            "from": "new"
+          },
+          {
+            "f": "Classic Rock History 的作者形容 Peverett『唱起來像在彈吉他』、Rod Price 的吉他『強烈到像兩個吉他手』，節奏組 Roger Earl 與 Tony Stevens 的貝斯線帶著藍調味。",
+            "src": "https://www.classicrockhistory.com/top-10-foghat-albums-you-must-own/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1975 年 9 月發行的《Fool for the City》是樂團的突破作，同名曲與〈Slow Ride〉在 1975 至 1976 年主宰了美國 FM 電台。",
+            "src": "https://www.inthestudio.net/online-only-interviews/foghat-fool-for-the-city-lonesome-dave-peverett-rod-price/",
+            "src2": "https://www.classicrockhistory.com/top-10-foghat-albums-you-must-own/",
+            "from": "new"
+          },
+          {
+            "f": "Classic Rock History 稱〈Slow Ride〉『足以輕易定義何謂 Classic Rock』，並稱 Foghat 是『古典搖滾時代最會硬搖的藍調 boogie 樂團之一』；Rod Price 被形容為古典搖滾時期最被低估的藍調搖滾吉他手之一。",
+            "src": "https://www.classicrockhistory.com/top-10-foghat-albums-you-must-own/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Redbeard 把〈Drivin' Wheel〉與〈Stone Blue〉等歌列為樂團留給 1970 年代搖滾電台的經典。",
+            "src": "https://www.inthestudio.net/online-only-interviews/foghat-fool-for-the-city-lonesome-dave-peverett-rod-price/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Rod Price 在 1991 年 3 月的訪談裡說，演奏〈I Just Want to Make Love to You〉這類歌，今天的年輕聽眾和當年一樣受用。",
+            "src": "https://www.inthestudio.net/online-only-interviews/foghat-fool-for-the-city-lonesome-dave-peverett-rod-price/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1971 年在倫敦成軍。",
+        "src": "https://en.wikipedia.org/wiki/Foghat",
+        "single": true,
+        "from": "new"
+      },
+      {
+        "f": "1975 年發行《Fool for the City》，〈Slow Ride〉成為樂團最知名的歌。",
+        "src": "https://en.wikipedia.org/wiki/Foghat",
+        "src2": "https://www.inthestudio.net/online-only-interviews/foghat-fool-for-the-city-lonesome-dave-peverett-rod-price/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫對 Foghat 無研究稿與上線簡介；poolAlbums 為《Fool for the City》1975，與英文維基、inthestudio 的專輯年份一致，確認身分。",
+      "離開 Savoy Brown 的年份：inthestudio 寫 1970 年底，Classic Rock History 寫 1970 年代之初，搜尋摘要則 1970 與 1971 兩說並存；facts 不寫離團年份，只寫英文維基的 1971 年成軍。"
+    ],
+    "searches": 4,
+    "failedFetches": 0,
+    "status": "thin",
+    "pubIssues": [],
+    "notes": "搜尋用了 4 次：WebSearch 2 次（樂團成員與成軍、傳記與遺產）、WebFetch 2 次（inthestudio 訪談頁、Classic Rock History）。legacy 是這位最薄的一格：兩個可開的來源一個是樂評編輯（Redbeard）的頁面、一個是榜單式部落格，沒有名人堂、後輩點名或權威票選；故整體標 thin。未收：(a) 銷量與認證（維基稱八張金唱片、一張白金、一張雙白金現場專輯；inthestudio 稱現場專輯賣超過兩百萬張；《Fool for the City》登 Billboard 專輯榜第 20 名），依特注避免，且認證倍數搜尋摘要查不到第二源；(b) Nick Jameson 接任貝斯與製作、Tony Stevens 1974 年離團、Rod Price 與 Peverett 離世年份（2005、2000，各源一致但屬死亡細節，只在此備註），依特注不寫；(c) Rod Price 來自 Black Cat Bones、團名來自拼字遊戲：只見搜尋摘要，未開頁，不收；(d) VH1 2009 年硬搖滾歌曲榜名次，依特注避免。Redbeard 對 Price 加入時機的敘述（說 Simmonds 與 Youlden 離團後 Price 加入）與其他資料不合，不收。"
+  },
+  {
+    "key": "foster the people",
+    "name": "Foster the People",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Foster the People 是 2009 年在洛杉磯成軍的美國 indie pop 樂團，由主唱兼主要詞曲作者 Mark Foster 創立。",
+            "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "src2": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+            "from": "new"
+          },
+          {
+            "f": "Mark Foster 在俄亥俄州克里夫蘭一帶長大，後來搬到洛杉磯追音樂，一開始打零工、付不起房租。",
+            "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "src2": "https://www.nbcsandiego.com/sounddiego/pumped-for-foster-the-people/1909708/",
+            "from": "new"
+          },
+          {
+            "f": "Foster 2002 年從俄亥俄州 Macedonia 的 Nordonia 高中畢業，在父親鼓勵下搬到洛杉磯 Sylmar 投靠叔叔，闖蕩好萊塢山的社交圈。",
+            "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他在洛杉磯待了好幾年的潦倒日子，2008 年到 Mophonics 寫商業廣告歌；他說這份工作讓他學到什麼在商業上行得通，也找回演出的信心。",
+            "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "src2": "https://www.nbcsandiego.com/sounddiego/pumped-for-foster-the-people/1909708/",
+            "from": "new"
+          },
+          {
+            "f": "Foster 說他當時寫的歌什麼都有，一首是嘻哈、一首是重電子、一首像靈歌、一首是古典鋼琴曲，花了六年才把這些元素揉在一起；他在一個場地駐唱電子音樂時只有他和一台筆電，覺得糟透了，才明白自己需要一個樂團。",
+            "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂評形容《Torches》是舞曲感很重的流行旋律，配上有想法的歌詞：陽光般的和聲、沉重的節拍，和反諷地陰暗的歌詞，混合嘻哈、舞曲、80 年代流行與獨立搖滾。",
+            "src": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+            "src2": "https://www.nbcsandiego.com/sounddiego/pumped-for-foster-the-people/1909708/",
+            "from": "new"
+          },
+          {
+            "f": "維基把他們的風格寫為 indie pop，帶有合成器流行、舞曲流行、另類搖滾、新迷幻與迷幻流行的成分。",
+            "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2010 年初 Foster 把〈Pumped Up Kicks〉放在自己的網站免費下載，《Nylon》雜誌拿它做時裝秀的線上廣告，部落格接力傳開；2010 年 5 月樂團簽下 Columbia 旗下的 Startime International。",
+            "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "src2": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+            "from": "new"
+          },
+          {
+            "f": "〈Pumped Up Kicks〉2010 年 9 月成為樂團的第一支電台單曲，在現代搖滾、另類與 Top 40 電台輪播，成為 2011 年最受歡迎的歌曲之一。",
+            "src": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+            "src2": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "from": "new"
+          },
+          {
+            "f": "第 54 屆葛萊美獎（2012 年），《Torches》入圍最佳另類音樂專輯，〈Pumped Up Kicks〉入圍最佳流行二重唱／團體演出，兩項均入圍未得獎。",
+            "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "src2": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+            "from": "new"
+          },
+          {
+            "f": "〈Pumped Up Kicks〉的歌詞寫一個疏離少年的復仇；Foster 多年後說，這首歌對聽眾而言已成為『痛苦的觸發點』，那不是他做音樂的原因，並考慮不再於現場演出。",
+            "src": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+            "src2": "https://www.nbcsandiego.com/sounddiego/pumped-for-foster-the-people/1909708/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《Torches》2011 年 5 月 23 日發行；樂團之後的專輯是 2014 年的《Supermodel》與 2017 年的《Sacred Hearts Club》。",
+            "src": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+            "src2": "https://en.wikipedia.org/wiki/Foster_the_People",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2009 年在洛杉磯成軍。",
+        "src": "https://en.wikipedia.org/wiki/Foster_the_People",
+        "src2": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+        "from": "new"
+      },
+      {
+        "f": "2011 年發行首張專輯《Torches》，同年〈Pumped Up Kicks〉成為跨界電台熱門。",
+        "src": "https://www.audacy.com/national/music/run-that-back-foster-the-people-torches-10-years-anniversary",
+        "src2": "https://en.wikipedia.org/wiki/Foster_the_People",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫對 Foster the People 無研究稿與上線簡介；poolAlbums 為《Torches》2011，與維基、Audacy 一致，確認身分。",
+      "Mark Foster 的成長地：搜尋摘要有出現加州聖荷西與俄亥俄兩說，維基寫俄亥俄州 Macedonia（克里夫蘭—阿克倫近郊）畢業於 Nordonia 高中，NBC San Diego 寫自克里夫蘭搬到洛杉磯，採兩源一致的克里夫蘭近郊；不寫出生地。"
+    ],
+    "searches": 4,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "搜尋用了 4 次：WebSearch 1 次、WebFetch 3 次（Audacy 十週年文章、英文維基全文、NBC San Diego）。依特注，〈Pumped Up Kicks〉的榜單名次（Hot 100 第 3 名、另類歌曲榜冠軍）、專輯認證（雙白金）與首週銷量都不收；葛萊美提名因屬該團核心成績且兩源齊備而收一處。維基另有第 55 屆葛萊美〈Houdini〉最佳短篇音樂錄影帶提名，只見維基，不收。〈Pumped Up Kicks〉歌詞主題與 Foster 的後來說法涉及校園槍擊聯想，facts 已用克制說法，寫作層請勿加描述。Rolling Stone 2011 年側寫被擋，未用。維基稱 Foster 年輕時曾與毒癮搏鬥，屬成癮細節，依特注不收。Mark Pontius、Sean Cimino 的離團年份屬成員異動，只見維基單源，不收。"
+  },
+  {
+    "key": "fraction",
+    "name": "Fraction",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Fraction 是洛杉磯的樂團，成員有 Jim Beach（主唱）、Don Swanson（主奏吉他）、Curt Swanson（鼓）、Victor Hemme（貝斯）與 Robert Meinel（節奏吉他）；Beach 說他們是透過洛杉磯各自認識的朋友湊在一起。",
+            "src": "https://midheaven.com/item/fraction/moon-blood",
+            "src2": "https://www.theingroove.com/products/fraction-moon-blood-lp",
+            "from": "new"
+          },
+          {
+            "f": "團員都有白天的工作，Beach 說：『我們都有正職，所以能做多少算多少』；他們在北好萊塢的一間小錄音室排練，有時清晨 4 點半就開始。",
+            "src": "https://midheaven.com/item/fraction/moon-blood",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《Moon Blood》的內容帶有基督教主題。",
+            "src": "https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Beach 的低沉男中音被拿來和 Jim Morrison 比，痛苦的嘶吼常拖進回音裡；Don Swanson 帶 wah-wah 的模糊失真吉他，被認為幫忙定義了『stoner rock』或『acid punk』的聲音。",
+            "src": "https://midheaven.com/item/fraction/moon-blood",
+            "src2": "https://www.theingroove.com/products/fraction-moon-blood-lp",
+            "from": "new"
+          },
+          {
+            "f": "《Moon Blood》1971 年初在格倫代爾（Glendale）的 Whitney's Studio 錄成，五個人一起現場演奏、每首一次錄完、沒有疊錄與效果，全部不到三小時。",
+            "src": "https://midheaven.com/item/fraction/moon-blood",
+            "src2": "https://www.theingroove.com/products/fraction-moon-blood-lp",
+            "from": "new"
+          },
+          {
+            "f": "The Vinyl Guide 的節目介紹說 The Doors 對 Fraction 影響很深，並說包裝也可能受 The Doors《L.A. Woman》影響；唱片商的介紹則把他們比作底特律的 The Stooges 與 MC5。",
+            "src": "https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood",
+            "src2": "https://midheaven.com/item/fraction/moon-blood",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Moon Blood》1971 年的私人壓片數量極少，只有幾百張以內，當時幾乎無人注意。",
+            "src": "https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood",
+            "src2": "https://midheaven.com/item/fraction/moon-blood",
+            "from": "new"
+          },
+          {
+            "f": "這張唱片的原版如今價格上看數千美元，也被翻版大量流通。",
+            "src": "https://midheaven.com/item/fraction/moon-blood",
+            "src2": "https://www.theingroove.com/products/fraction-moon-blood-lp",
+            "from": "new"
+          },
+          {
+            "f": "The In Groove 稱它是迷幻與 acid rock 地下圈『最受推崇的唱片之一』；The Vinyl Guide 稱它數十年來讓唱片收藏家著迷，1980 與 1990 年代就有收藏家在找它，後來由 RidingEasy 與 Mexican Summer 正式重發。",
+            "src": "https://www.theingroove.com/products/fraction-moon-blood-lp",
+            "src2": "https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood",
+            "from": "new"
+          },
+          {
+            "f": "The Vinyl Guide 稱這些樂手之後沒有任何其他公開的音樂署名，關於 Fraction 的資料極少，反而加深了這張唱片的神祕感。",
+            "src": "https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1971 年初在 Whitney's Studio 錄成《Moon Blood》。",
+        "src": "https://midheaven.com/item/fraction/moon-blood",
+        "src2": "https://www.theingroove.com/products/fraction-moon-blood-lp",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基上的 Fraction 是數學條目（預抓 warn），不是這位樂手；已依 poolAlbums《Moon Blood》1971 改查唱片商頁面與 The Vinyl Guide，確認身分為洛杉磯的 Fraction。",
+      "壓片數量：The Vinyl Guide 寫 200 張，midheaven 寫幾百張，來源不一致，facts 不寫確切張數，只寫『幾百張以內』。上線簡介寫『兩百張』，列入 pubIssues。"
+    ],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "pubIssues": [
+      {
+        "album": "Moon Blood",
+        "claim": "僅壓製兩百張",
+        "problem": "The Vinyl Guide 寫 200 張，midheaven 與 Norman Records 搜尋摘要寫『幾百張』，數字並不確定，建議改寫成『只壓了極少量』。",
+        "src": "https://midheaven.com/item/fraction/moon-blood"
+      },
+      {
+        "album": "Moon Blood",
+        "claim": "一群北好萊塢的藍領工人組成 Fraction",
+        "problem": "來源只說團員有白天的正職、在北好萊塢排練，沒有說他們是藍領，也沒有說樂團組成於北好萊塢（Beach 說是透過洛杉磯各處朋友認識）。",
+        "src": "https://midheaven.com/item/fraction/moon-blood"
+      },
+      {
+        "album": "Moon Blood",
+        "claim": "專輯名取自《啟示錄》「滿月變紅像血」",
+        "problem": "查到的資料都沒有說明專輯名由來，搜尋結果也沒有證實與《啟示錄》的連結，只有樂評說宗教主題帶有末世與疑惑的氣氛；建議改為不下定論的寫法。",
+        "src": "https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood"
+      },
+      {
+        "album": "Moon Blood",
+        "claim": "十多年後才被挖掘出土；樂風介於 The Doors 的陰冷迷幻與 Black Sabbath 的沉重之間",
+        "problem": "來源說 1980 與 1990 年代就有收藏家在找，翻版不斷，正式重發則在 1999 年與 2010 年之後；沒有查到『十多年後被挖掘』的說法。比較對象的來源是 The Doors、The Stooges 與 MC5，沒有 Black Sabbath。",
+        "src": "https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood"
+      }
+    ],
+    "notes": "同名混卡檢查：維基 Fraction 是數學條目，唱片商與 Vinyl Guide 的 Fraction 對上《Moon Blood》1971，卡池只有這一張，確認為洛杉磯樂團。搜尋用了 6 次：WebSearch 2 次、WebFetch 4 次（Vinyl Guide、In Groove、Mexican Summer 頁面與該團無關、midheaven）。失敗 1 次：Norman Records 403（其內容以搜尋摘要見於 notes：樂團在 1971 年初錄音、三小時內完成，但未開頁，不入 facts）。這張唱片的來源幾乎全是唱片商文案與一個播客節目介紹，品質不及主流媒體，且資訊有限；Vinyl Guide 頁面只列題目，沒有訪談內容，只用其明列的陳述。1999 年 CD 加三首 bonus 曲、2010 年重發只見搜尋摘要，未收。era 格留空。『Jim Beach 不太想參與重發』只見 Vinyl Guide 的節目說明，涉及個人意願，不收。"
+  },
+  {
+    "key": "frankie goes to hollywood",
+    "name": "Frankie Goes to Hollywood",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Frankie Goes to Hollywood 是來自利物浦的英國流行樂團，成員為 Holly Johnson（主唱）、Paul Rutherford（和聲）、Mark O'Toole（貝斯）、Brian Nash（吉他）與 Peter Gill（鼓）。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "src2": "https://attitude.co.uk/culture/film-tv/frankie-goes-to-hollywood-reaches-peak-pleasure-in-welcome-to-the-pleasuredome-2-404141",
+            "from": "new"
+          },
+          {
+            "f": "樂團 1983 年簽進 ZTT Records，首張專輯由 Trevor Horn 製作。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Holly Johnson 與 Paul Rutherford 是最早公開出櫃的流行歌手之列，樂團把同志權益與性當成音樂與演出的主題。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Relax〉的錄音室版只有 Johnson 一人演奏，樂團在最紅的時候也沒有巡演，外界因此傳言他們不會彈樂器；Johnson 說媒體低估了他們對唱片的貢獻。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Trevor Horn 後來說英國音樂媒體誤解了錄音室的運作，樂團『比外界給的評價好』，並舉〈The Power of Love〉、〈Born to Run〉與〈Krisco Kisses〉為樂團自己在《Welcome to the Pleasuredome》裡演奏的例子。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Attitude 稱這張專輯翻唱了 Bruce Springsteen 與 The Temptations 的歌，發行時被批評原創曲目不足。",
+            "src": "https://attitude.co.uk/culture/film-tv/frankie-goes-to-hollywood-reaches-peak-pleasure-in-welcome-to-the-pleasuredome-2-404141",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Relax〉因歌詞的性暗示被 BBC 與幾家英國商業電台禁播，DJ John Peel 仍繼續播放，Radio 1 的 DJ Mike Read 則拒播；樂團起初說歌是關於『動力』，後來承認是關於同志性愛。",
+            "src": "https://www.thecurrent.org/feature/2014/01/27/today-in-music-history-relax-hits-number-one",
+            "src2": "https://attitude.co.uk/culture/film-tv/frankie-goes-to-hollywood-reaches-peak-pleasure-in-welcome-to-the-pleasuredome-2-404141",
+            "from": "new"
+          },
+          {
+            "f": "出道的前三支單曲〈Relax〉、〈Two Tribes〉與〈The Power of Love〉全數登上英國單曲榜冠軍；BBC 的禁播反而替他們招來更多注意。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "src2": "https://attitude.co.uk/culture/film-tv/frankie-goes-to-hollywood-reaches-peak-pleasure-in-welcome-to-the-pleasuredome-2-404141",
+            "from": "new"
+          },
+          {
+            "f": "音樂記者 Paul Lester 2014 年寫道，沒有哪個樂團像 Frankie 在 1984 年那樣主宰了一整年，他們是『可以說最後一個偉大的英國流行現象』，卻很少被其他樂團點名為影響，因為他們無法複製。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Paul Morley 認為，Frankie 改變了商業流行音樂的行銷方式，用更有藝術感、更『美』的包裝和音樂錄影帶；導演 Bernard Rose（執導第一支〈Relax〉MV）說他們『引發了一場衝擊波』。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Attitude 稱這張首作『為 Pet Shop Boys 以及後來的 Years & Years 鋪了路』，並說他們在酷兒音樂史裡常被忽略。",
+            "src": "https://attitude.co.uk/culture/film-tv/frankie-goes-to-hollywood-reaches-peak-pleasure-in-welcome-to-the-pleasuredome-2-404141",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1986 年的第二張專輯《Liverpool》賣得不如首作，樂團在 1987 年不歡而散地解散。",
+            "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+            "src2": "https://attitude.co.uk/culture/film-tv/frankie-goes-to-hollywood-reaches-peak-pleasure-in-welcome-to-the-pleasuredome-2-404141",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1983 年簽進 ZTT Records。",
+        "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+        "single": true,
+        "from": "new"
+      },
+      {
+        "f": "1984 年發行首作《Welcome to the Pleasuredome》，前三支單曲全數登上英國單曲榜冠軍。",
+        "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+        "src2": "https://attitude.co.uk/culture/film-tv/frankie-goes-to-hollywood-reaches-peak-pleasure-in-welcome-to-the-pleasuredome-2-404141",
+        "from": "new"
+      },
+      {
+        "f": "1987 年解散。",
+        "src": "https://en.wikipedia.org/wiki/Frankie_Goes_to_Hollywood",
+        "src2": "https://attitude.co.uk/culture/film-tv/frankie-goes-to-hollywood-reaches-peak-pleasure-in-welcome-to-the-pleasuredome-2-404141",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫無研究稿，只有上線簡介；簡介的『出道雙碟』『預購超過一百萬張』『冠軍單曲三首』與維基一致，首週銷量約二十五萬張與 Attitude 一致，未發現衝突，亦無需修改上線簡介。",
+      "成軍年與 Rutherford 加入年：英文維基寫 1980 年成軍，搜尋摘要另有來源寫 1982 年 8 月成軍、Rutherford 加入年也有 1980 與 1982 兩說，facts 不寫成軍年與加入年。",
+      "Bernard Rose 稱樂團是『第一個公開出櫃的大型流行團體』：維基首段只寫『最早公開出櫃的流行歌手之列』，且 1984 年前後已有 Tom Robinson、Bronski Beat（Jimmy Somerville）等明顯反例，facts 採維基的『之列』說法，Rose 的『第一個』只在 notes。"
+    ],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "full",
+    "pubIssues": [],
+    "notes": "搜尋用了 5 次：WebSearch 3 次（團史與 BBC 禁播、團名與成軍、獎項）、WebFetch 2 次（The Current、Attitude）；維基為預抓全文，視同已讀，不計次。未收（單源高風險）：(a) 1984 年 Ivor Novello 最佳詞曲獎（Johnson、Gill、O'Toole 三人因〈Two Tribes〉得獎，得獎主詞是三位詞曲作者，不是整團）與 1985 年 Brit Awards 最佳英國新人（British Breakthrough Act，樂團得獎）、格萊美與 MTV 最佳新人提名，只見維基與其鏡像，無獨立第二源；(b) 團名來自 Guy Peellaert 畫作上 Frank Sinatra 與『Frankie Goes Hollywood』假報紙標題，只見串流平台簡介搜尋摘要，未開頁；(c) Holly Johnson 曾在利物浦龐克團 Big in Japan，同樣只見搜尋摘要；(d) Johnson 告 ZTT 解約與團名之爭、2004 年與 2023 年重聚，非音樂份量核心，不收；(e) 榜單週數（Two Tribes 九週冠軍、Relax 五週）、銷量（Relax 超過兩百萬張）、預購數字依特注避免。BBC 禁播誰禁的有出入：The Current 寫 BBC 與數家商業電台，Attitude 寫 Radio 1 DJ Mike Read 拒播，facts 兩者並列，不指單一機構。Paul Morley 為 ZTT 共同創辦人，維基只寫 Morley，身分『ZTT 共同創辦人之一』來自常識，未於預抓文字中出現，寫作層引用時只寫『Paul Morley』。「樂團的 Rutherford」只是『和聲』，維基列為 backing vocals。"
+  }
+]
