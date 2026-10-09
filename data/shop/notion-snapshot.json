@@ -1,6 +1,6 @@
 {
   "source": "notion:401f0a5c4871448783385c78f6a3ac39",
-  "fetchedAt": "2026-10-09T03:40:00Z",
+  "fetchedAt": "2026-10-09T04:00:00Z",
   "note": "只留公開欄位（頁面 id、品名、演出者、年份、品相、售價、卡池鍵）。成本、利潤、抽成、群組一律不進 repo。",
   "rows": [
     {
@@ -1250,6 +1250,18 @@
       "condition": null,
       "priceNT": 300,
       "poolKey": null
+    },
+    {
+      "id": "3f40ad0255ff80089d6bd54dc37af4fc",
+      "title": "オーエス オーエス",
+      "artist": "矢野顕子",
+      "year": null,
+      "condition": null,
+      "priceNT": 1000,
+      "poolKey": "矢野顕子|オーエス オーエス",
+      "genres": [
+        "Pop"
+      ]
     }
   ]
 }
