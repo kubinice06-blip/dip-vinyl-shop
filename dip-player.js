@@ -801,14 +801,25 @@
 
   // 頁面只要在 Apple Music 按鈕帶上 data-apple-artist／data-apple-album，
   // 渲染後就會被自動換成專輯直連；不必改各處 innerHTML 的時序。
+  //
+  // 帶 data-apple-strict 的按鈕（卡池牌的串流列，店主 2026-10-09：「沒有的話也要顯示灰色」）
+  // 一開始是灰色、沒有 href：索引查得到才啟用成專輯直連，查不到維持灰色；
+  // 索引本身載不到（離線、網路錯誤）就退回 data-apple-fallback 的搜尋連結，不讓按鈕無端變灰。
   function upgradeAppleLinks(scope) {
     if (!scope?.querySelectorAll) return;
     const links = [...scope.querySelectorAll('a[data-apple-artist]')];
     if (scope.matches?.('a[data-apple-artist]')) links.push(scope);
     if (!links.length) return;
-    loadAppleAudioMap().then(() => links.forEach(link => {
+    loadAppleAudioMap().then(map => links.forEach(link => {
       const url = appleAlbumUrl(link.dataset.appleArtist, link.dataset.appleAlbum);
-      if (url && link.getAttribute('href') !== url) link.setAttribute('href', url);
+      const strict = link.hasAttribute('data-apple-strict');
+      if (url) {
+        if (link.getAttribute('href') !== url) link.setAttribute('href', url);
+        if (strict) link.removeAttribute('disabled');
+      } else if (strict) {
+        if (map) { link.removeAttribute('href'); link.setAttribute('disabled', ''); }
+        else if (link.dataset.appleFallback) { link.setAttribute('href', link.dataset.appleFallback); link.removeAttribute('disabled'); }
+      }
     }));
   }
 

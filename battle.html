@@ -575,7 +575,7 @@
 </div>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=43"></script>
+<script src="dip-player.js?v=44"></script>
 <script src="dip-draw-anim.js?v=2"></script>
 <script src="dip-character.js?v=2"></script>
 <script>
@@ -667,7 +667,7 @@ function syncBattleMusicToggle(){
   const mini=document.getElementById('battleMiniPlayer');
   if(mini){ mini.classList.toggle('muted',!live); mini.classList.toggle('playing',live&&battlePlayerState.status==='playing'); mini.classList.toggle('loading',live&&battlePlayerState.status==='loading'); mini.setAttribute('aria-pressed',String(live)); mini.setAttribute('aria-label',live?'關閉對戰音樂':'開啟對戰音樂'); }
   const apple=document.querySelector('#recBody .streaming-btn[data-platform="apple"]');
-  if(apple && battlePlayerState.storeUrl) apple.href=battlePlayerState.storeUrl;
+  if(apple&&battlePlayerState.storeUrl){ apple.href=battlePlayerState.storeUrl; apple.target='_blank'; apple.rel='noopener'; apple.removeAttribute('disabled'); }
 }
 function setBattleMusic(enabled){
   // 關閉時 DipPlayer 會徹底釋放音訊（停試聽、停 keep-alive、拆媒體卡片、suspend
@@ -1690,12 +1690,12 @@ function cardDetailHtml(card){
     <button class="battle-mini-player${battleMusicLive()?'':' muted'}" id="battleMiniPlayer" type="button" aria-label="${battleMusicLive()?'關閉':'開啟'}對戰音樂" aria-pressed="${battleMusicLive()}"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>
     <div class="cd2-desc load" id="cd2Desc">載入簡介…</div>${stream}</div>`;
 }
-// 與首頁抽專輯卡相同：Apple／Spotify／YT Music 保證可點，Bandcamp 查到正式專輯頁才啟用。
+// 與首頁抽專輯卡相同：Apple／Spotify 查到專輯直連才啟用、否則灰色（2026-10-09），YT Music 保證可點，Bandcamp 查到正式專輯頁才啟用。
 function streamingBtnsHtml(c){
   const q=encodeURIComponent(`${c.artist||''} ${c.album||''}`.trim());
   return `<div class="streaming-btns">
-    <a class="streaming-btn" href="https://music.apple.com/tw/search?term=${q}" data-apple-artist="${String(c.artist||'').replace(/[&<>"']/g,ch=>`&#${ch.charCodeAt(0)};`)}" data-apple-album="${String(c.album||'').replace(/[&<>"']/g,ch=>`&#${ch.charCodeAt(0)};`)}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>
-    <a class="streaming-btn" href="https://open.spotify.com/search/${q}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>
+    <a class="streaming-btn" data-apple-strict data-apple-fallback="https://music.apple.com/tw/search?term=${q}" disabled data-apple-artist="${String(c.artist||'').replace(/[&<>"']/g,ch=>`&#${ch.charCodeAt(0)};`)}" data-apple-album="${String(c.album||'').replace(/[&<>"']/g,ch=>`&#${ch.charCodeAt(0)};`)}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>
+    <a class="streaming-btn" data-platform="spotify" disabled>Spotify</a>
     <a class="streaming-btn" href="https://music.youtube.com/search?q=${q}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>
     <a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>
   </div><div class="stream-attribution">Preview provided courtesy of iTunes</div>`;
@@ -1707,11 +1707,13 @@ async function hydrateStreamingLinks(container, card){
     fetch(`${WORKER_URL}/spotify-search?${query}`).then(r=>r.ok?r.json():{}),
     fetch(`${WORKER_URL}/bandcamp-search?${query}`).then(r=>r.ok?r.json():{})
   ]);
-  const spotifyUrl=spotify.status==='fulfilled'&&spotify.value?.spotifyUrl;
+  let spotifyUrl=spotify.status==='fulfilled'&&spotify.value?.spotifyUrl;
+  // /spotify-search 的快取若是 CAA 封面就沒有 spotifyUrl，再問 /spotify-album-link（查不到才灰）
+  if(!spotifyUrl) spotifyUrl=(await fetch(`${WORKER_URL}/spotify-album-link?${query}`).then(r=>r.ok?r.json():{}).catch(()=>({}))).url;
   const bandcampUrl=bandcamp.status==='fulfilled'&&bandcamp.value?.bandcampUrl;
   const spotifyBtn=container.querySelector('[data-platform="spotify"]');
   const bandcampBtn=container.querySelector('[data-platform="bandcamp"]');
-  if(spotifyBtn&&spotifyUrl) spotifyBtn.href=spotifyUrl;
+  if(spotifyBtn&&spotifyUrl){spotifyBtn.href=spotifyUrl;spotifyBtn.target='_blank';spotifyBtn.rel='noopener';spotifyBtn.removeAttribute('disabled');}
   if(bandcampBtn&&bandcampUrl){ bandcampBtn.href=bandcampUrl; bandcampBtn.target='_blank'; bandcampBtn.rel='noopener'; bandcampBtn.removeAttribute('disabled'); }
 }
 // 打折花車雜牌是虛構合輯 → 不打 /album-desc（免得 AI 瞎掰），給店長吐槽即可
