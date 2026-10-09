@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **251** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 13、已退回 1）。
+共 **255** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 17、已退回 1）。
 最後更新：2026-10-09
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -638,6 +638,15 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | Kenny Burrell & John Coltrane 《Kenny Burrell & John Coltrane》 | [#23321384](https://www.discogs.com/release/23321384) | 1976 | Prestige | P-24059 | 目錄號 P-24059（封面左側印同號、SPECIALLY PRICED TWO-RECORD SET）、1976 Prestige 雙 LP＝店內實物（sync-shop-inventory NOTES）、MB release 3d9e7b55 的 discogs 連結 | ok |
+
+## cover-fix-20261009-obi（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| あがた森魚 《乙女の儚夢》 | [#6209457](https://www.discogs.com/release/6209457) | 1972 | Bellwood Records | OFL-5 | 同一 Discogs master 的版本（250286）、封面圖案與原卡一致，取無側標的照片 | ok |
+| 三上寛 《1972／コンサートライブ零狐徒》 | [#1589244](https://www.discogs.com/release/1589244) | 1980 | URC | SM20-4143 | 同一 Discogs master 的版本（56766）、封面圖案與原卡一致，取無側標的照片 | ok |
+| 井上陽水 《陽水II センチメンタル》 | [#14803656](https://www.discogs.com/release/14803656) | 2019 | Universal Music | UPCY-7587 | 同一 Discogs master 的版本（1249722）、封面圖案與原卡一致，取無側標的照片 | ok |
+| 宮沢昭 《いわな》 | [#6408475](https://www.discogs.com/release/6408475) | 1969 | Victor World Group | SMJX-10068 | 同一 Discogs master 的版本（null）、封面圖案與原卡一致，取無側標的照片 | ok |
 
 ## csea（2 張）
 
