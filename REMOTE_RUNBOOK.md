@@ -82,8 +82,15 @@
    設好之後**開工第一件事是實測**：叫代理抓一個 MB release-group 與一個維基頁面，
    確認真的通得到再派工。不通就退回「查不到標 pending-local」規則。
 
-3. **KV 的 token（要寫 KV 才需要）**：在 Cloud environment 的環境變數設 `CLOUDFLARE_API_TOKEN`
-   （權限要含 Workers KV Storage 的 Edit）。**token 的值永遠不印出來、不寫進任何檔案或 commit。**
+3. **KV 的 token（要寫 KV 才需要）**：在 Cloud environment 的環境變數（齒輪對話框的 Environment variables，一行一個）設兩行：
+
+   ```
+   CLOUDFLARE_API_TOKEN=<權限含 Workers KV Storage Edit 的 API 權杖>
+   CLOUDFLARE_ACCOUNT_ID=3a23f905e8f31d91c85050f2ed304321
+   ```
+
+   帳戶 ID 不是機密（腳本裡本來就寫著）；**token 的值永遠不印出來、不寫進任何檔案或 commit。**
+   環境裡沒設 `CLOUDFLARE_ACCOUNT_ID` 時，指令前面自己帶：`CLOUDFLARE_ACCOUNT_ID=3a23f905e8f31d91c85050f2ed304321 npx -y wrangler@4 …`。
 
 4. **skill 走 repo 內的 `.claude/skills/`**。雲端只讀 repo 內的 project skill，不會帶本機個人 skill 過去。
 
@@ -133,9 +140,11 @@ node scripts/kv-token-check.mjs      # 會寫一個測試鍵、讀回、刪掉�
 - **exit 0 → 雲端自己寫**：
   ```bash
   node scripts/kv-from-manifest.mjs <manifest.json> publish-stage/kv-<批>-<stamp>.json
-  npx wrangler kv bulk put publish-stage/kv-<批>-<stamp>.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote
+  npx -y wrangler@4 kv bulk put publish-stage/kv-<批>-<stamp>.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote
   node scripts/verify-wave-kv.mjs <stamp> <批…>
   ```
+  **一定要寫 `wrangler@4`**：`--remote` 是 v4 的旗標，雲端沒有預裝 wrangler，裸的 `npx wrangler` 可能抓到 v3 而直接報錯
+  （2026-10-10 雲端實跑 add-20261003 時踩到）。wrangler 還需要 `CLOUDFLARE_ACCOUNT_ID`（見前置設定第 3 點）。
   `--remote` 不能省（不加會寫到本機模擬區、照樣印 Success）；輸出不要截斷，要親眼看到 `Success!`。
   寫完 10–30 秒內回讀可能拿到舊值，第一次不符先等半分鐘再讀，**不要當場重寫**。
   回讀要逐字一致才往下寫 seed。驗證刪除一律用 bulk get，**不要用 `/album-desc`**（會觸發重新生成並回寫）。

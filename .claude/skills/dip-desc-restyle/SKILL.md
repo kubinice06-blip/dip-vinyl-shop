@@ -228,7 +228,7 @@ for n in 1 2; do node fix-spacing.mjs batches/output/w2-0XX-out-$n.json --write;
 
 ```bash
 node build-final.mjs w2-0XX
-npx wrangler kv bulk put batches/w2-0XX-kv.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote
+npx -y wrangler@4 kv bulk put batches/w2-0XX-kv.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote
 node verify-kv.mjs w2-0XX 2>&1 | grep -E "一致|不符|驗"
 ```
 

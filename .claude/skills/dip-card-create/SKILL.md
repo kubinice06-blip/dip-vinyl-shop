@@ -112,7 +112,7 @@ node fix-spacing.mjs batches/output/… [--write]
 ```bash
 node dip-vinyl-shop/scripts/verify-album-onboarding.mjs <manifest> # prepare gate，0 error
 node dip-card-pool-expand/scripts/4-prewarm-covers.mjs … --dry     # card_catalog 預熱（先乾跑）
-npx wrangler kv bulk put batches/add-…-kv.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote
+npx -y wrangler@4 kv bulk put batches/add-…-kv.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote
 node verify-kv.mjs add-YYYYMMDD          # 逐字回讀；wrangler 要親眼看到 Success!
 # seed_cards.json / apex_pool.json 最後才寫（曝光開關；單行壓縮格式用字串替換，勿 re-stringify）
 node dip-vinyl-shop/scripts/build-seed-genres.mjs
