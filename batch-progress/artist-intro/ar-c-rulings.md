@@ -808,3 +808,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搖滾段已寫到 Y 字頭；卡池剩 63 批、2481 位未寫（rock 160、folk 480、pop 359、world 280、electronic 517、hiphop 279、classical 605）。
 - 本輪沿用第五輪的裁定形狀，無新增；超額放行一例（Vast & Hazy，第二源先例）。特注身分錯誤由研究層更正多處（Poll 是希臘團、Salada de Frutas 是葡萄牙團、Sweet Charity 是新加坡團、Steel Mill 是英國團、Sunforest 是在倫敦的美國人、Tilt 是波蘭團等），皆照研究層改寫。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；The Alarm 的 Mike Peters 據兩源 2025 年過世，上線簡介若寫成在世需改；卡池年份存疑（Roy Orbison《Mystery Girl》1989、The Head and the Heart 2010／2011、Sweet《Desolation Boulevard》1974 RCA 版、The Appleseed Cast 1999／2000、Trouble《Psalm 9》首發 1984）。
+
+## 第七輪十批接力（ar-d-054～063，2026-10-10 起）
+
+- 範圍：搖滾段末（韓文、日文、中文名藝人）與民謠段 A 至 R。沿用第三至六輪的審稿規則、thin 門檻與裁定形狀。
