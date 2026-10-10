@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 862 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 874 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -862,6 +862,18 @@
 | ar-d-060 | Jerry Jeff Walker | ¡Viva Terlingua! | 簡介使用半形逗號與半形分號貼著中文（例：1973 年 8 月,Jerry Jeff Walker 帶⋯、搖滾與 norteño、Tejano 口音;） | 標點格式：中文行文應用全形逗號與分號，本批 QA 會擋半形逗號貼中文。 | https://www.tshaonline.org/handbook/entries/walker-jerry-jeff |
 | ar-d-060 | Jesse Fuller | Jazz, Folk Songs, Spirituals & Blues | 簡介使用半形逗號、分號與括號貼著中文（例：62 歲那年(1958)為 Good Time Jazz 錄下這份專輯,曲目從⋯） | 標點格式：中文行文應用全形逗號與括號，本批 QA 會擋半形逗號貼中文。 | https://en.wikipedia.org/wiki/Jesse_Fuller |
 | ar-d-060 | Joe Val and The New England Bluegrass Boys | One Morning in May | 這張碟是 Rounder 的第一張藍草專輯，錄於 1971 年春天 | 維基、IBMA 與 MMOne 都把這張首作的年份寫成 1972 年；Bluegrass Hall of Fame 官網則寫錄於 1971 年春天。是「錄音 1971、發行 1972」還是來源有誤，沒有第二個原始來源可確認，請店主核對母帶或 Rounder 目錄。 | https://ibma.org/press-releases/special-halloffame-inductions/ |
+| ar-d-061 | Josephine Foster | Hazel Eyes, I Will Lead You | 2005 年這張個人第二作 | 維基只說她先有在家自錄的《There Are Eyes Above》（2000）、兒歌《Little Life》（2001）及與 The Supposed 合作的《All the Leaves Are Gone》（2004），之後才有包括本張在內的一連串個人專輯；另有簡介把本張稱為首張個人錄音室專輯。『第二作』無法證實，建議拿掉序數。 | https://en.wikipedia.org/wiki/Josephine_Foster |
+| ar-d-061 | Karine Polwart | Traces | 入圍 2013 年 BBC Folk Awards 年度專輯 | Cadogan Hall 與 Hudson 官方簡介只寫《Traces》入圍 BBC Radio 2 民謠獎年度專輯，未寫年份；2013 年這個年份本層沒查到來源 | https://hudsonrecords.co.uk/artist/karine-polwart-2 |
+| ar-d-061 | Karine Polwart | Traces | 她首張進榜英國前 75 的唱片 | 本層讀到的來源（維基、Cadogan Hall、Hudson 簡介）都沒提到《Traces》的英國榜名次，Hudson 只寫 2019 年《Scottish Songbook》進英國前 40；此說法本層無法證實 | https://hudsonrecords.co.uk/artist/karine-polwart-2 |
+| ar-d-061 | Kate & Anna McGarrigle | Kate & Anna McGarrigle | Anna 寫的〈Heart Like a Wheel〉先讓 Linda Ronstadt 拿去當 1974 年專輯標題曲，這裡是作者版本 | 維基專輯條目（引專輯內頁）寫這首歌 1972 年已由 McKendree Spring 錄過，Ronstadt 是 1974 年版；「先讓 Ronstadt 拿去」若指首度被錄則不精確，可改成「Ronstadt 的 1974 年版先成名」 | https://en.wikipedia.org/wiki/Kate_%26_Anna_McGarrigle_(album) |
+| ar-d-061 | Kayhan Kalhor | Scattering Stars Like Dust | Kalhor 生於克爾曼沙赫 | 出生地各來源不一致：維基與 Apple Music 簡介寫出身克爾曼沙赫省庫德家庭（Apple 補「在德黑蘭長大」），芝加哥大學簡介與 wikidata 寫生於德黑蘭；建議改寫成「出身克爾曼沙赫省的庫德家庭」 | https://classical.music.apple.com/us/artist/7180580 |
+| ar-d-061 | Kelly Joe Phelps | Roll Away the Stone | 曾登上 Billboard Top Blues Albums 榜第 10 名 | 本層只在英文維基專輯條目的搜尋摘要見到此名次，未讀到 Billboard 原始榜單或第二個來源；名次屬高風險事實，建議本機核對 Billboard 榜單後再留用 | https://en.wikipedia.org/wiki/Roll_Away_the_Stone_(album) |
+| ar-d-061 | Kembara | Kembara | 這支同年成軍的五人團 | 馬來語維基與 NST 都寫創團是 M. Nasir、A. Ali、S. Sahlan 三人（最初加入的 Abby、Eddie Ali 兄弟初期離開），1984 年後才到五人編制；「1981 年成軍的五人團」與來源不符 | https://ms.wikipedia.org/wiki/Kembara_(kumpulan_muzik) |
+| ar-d-061 | Kembara | Kembara | 在馬來西亞與新加坡由 Polygram 推出；是這支同年成軍的五人團的首作 | 樂團實為新加坡成軍（NST、馬來語維基），簡介前段沒交代這點，可補一句 | https://www.nst.com.my/amp/news/2015/09/32458/kembara-new-journey |
+| ar-d-061 | Kenny Knight | Crossroads | 包辦全部詞曲、人聲、節奏與主奏吉他、貝斯與鼓 | Paradise of Bachelors 官方頁、Stereogum 與 Westword 都記載表親 Sylvia 製作、Sandy Dodge 彈 pedal steel、另有長笛手與 Knight 自學的班鳩；他是否獨自包辦人聲與全部樂器，來源沒有證實 | https://paradiseofbachelors.com/kenny-knight |
+| ar-d-061 | Keola & Kapono Beamer | Honolulu City Lights | 兄長 Keola 1973 年寫出第一本滑鍵吉他教本 | 維基寫 1973 年出版 First Method for the Hawaiian Slack Key Guitar 並稱為該技法第一本教本，Encyclopedia.com 寫 1977 年教學書；兩源年份不一致，「第一本」亦只有維基 | https://encyclopedia.com/education/news-wires-white-papers-and-books/beamer-keola |
+| ar-d-061 | Keola & Kapono Beamer | Honolulu City Lights | 家系可上溯卡美哈梅哈王室 | 本層讀到的來源（維基、Encyclopedia.com）只寫「有夏威夷王室血統」，沒有指到卡美哈梅哈 | https://encyclopedia.com/education/news-wires-white-papers-and-books/beamer-keola |
+| ar-d-061 | Khánh Ly | Sơn Ca 7 | Khánh Ly 1964 年在大叻結識鄭公山 | 首次見面地點各來源不一致：英文維基與 Eric Brightwell 寫 Bảo Lộc，VnExpress 與 RFA 寫大叻；建議簡介只寫「1964 年結識」 | https://vnexpress.net/thoi-xuan-sac-cua-khanh-ly-5048726.html |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

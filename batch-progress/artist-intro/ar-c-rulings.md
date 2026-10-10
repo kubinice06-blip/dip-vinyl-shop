@@ -866,3 +866,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Francesco Guccini 2026 年 8 月過世（Euronews、La Sicilia 兩源；名冊原列在世，錯）；Ed Askew 2025 年過世（兩源）；Faramarz Aslani、Fausto 2024 年過世；Ewan MacColl 葛萊美與 Prix Italia；Daniel Viglietti 的 Rubén Rada 說法與「曾被監禁、流亡」背景一句；Connie Converse 1974 年下落不明（兩源）。
 - 身分：Dulcimer 是英國 Cotswolds 三人組（維基預抓樂器頁作廢）；Fausto 是 Fausto Bordalo Dias（預抓消歧頁）；Extradition 是雪梨民謠團；Ewan MacColl & A.L. Lloyd 卡池這張（Folkways FG 3510）署名只有 MacColl，照掛名寫兩人但不寫成合唱。
 - 待本機（上線簡介）：Conway Twitty「1966 年轉入鄉村」應為 1965；Domenico Modugno「第一支登頂的非美加英語系單曲」無出處；Dulcimer「1970 年原盤」應為 1971；Egschiglen《Zazal》年份與錄音地；Eleftheria Arvanitaki 加入樂團年份；Emmanuelle Parrenin「1970 年 7 月魁北克」無出處；Eric Andersen《Blue River》榜次與編制只見部落格；Esma 出生年 1943／1945；MacColl & Lloyd「Folkways 重發」「最直接的曲目來源」無出處；Faramarz Aslani「中間十七年空白」錯（1978 年另有一張）；Fausto「名下唯一發行」錯（共 12 張）。
+
+## ar-d-060（2026-10-10）
+
+- 39 位上架（31 full、8 thin：Haley Heynderickx、Homayun Sakhi、I'm With Her、Ingrid Michaelson、Ithaca、Jim Eanes、Jimmy Arnold、Jimmy Carter and Dallas County Green），1 位不寫：J. T. Perkins（貢獻與地位查無，只有廠牌頁一個來源）。
+- 超額放行：Gurrumul 第 9 次查入選紀錄，頁面未提及、無新事實（齊豫先例）。
+- 審稿修 11 處：最高級刪改——Fuxan os Ventos「最具代表性之一」、Hazel Dickens & Alice Gerrard「最早由女性錄製之一」改「早期」、Israel Kamakawiwoʻole「最偉大之一」與「第一張白金」、Jewel「史上最暢銷的首張之一」、Jim Reeves「最具辨識度也最成功之一」、Jimmy Arnold 廠牌稿「最有天分之一」、Joe Val「Rounder 第一個／第一張」、Joey Ayala「最具代表性之一」；在世者多重成績——Ian & Sylvia 刪加拿大勳章（留名人堂）、Jarcha 刪票選與街名（留自治區獎章）；藥物——Honeytree 刪「被藥物文化吸引」。
+- 保留：Jackson C. Frank 的水牛城音樂名人堂說法（官方）；James Blunt「英國官方排行榜列為 2000 年代最暢銷專輯」（官方榜，唯一一處）；Gabby Pahinui 國會圖書館「最早的現代 slack-key 錄音之一」（官方）；Jimmie Rodgers 搖滾名人堂說法；Jarcha〈Libertad sin ira〉「轉型期非官方國歌」與審查（歷史背景一句）。
+- 身分：Gary Higgins、Jimmy Arnold、Jimmy Carter and Dallas County Green（前總統）、J. T. Perkins（摔角手）、Ithaca（希臘島）的維基預抓皆對錯，已作廢；Jimmy Carter and Dallas County Green 照來源寫 country rock（名冊原寫 bluegrass）；Jimmie Rodgers 是 1920 年代的「歌唱的煞車手」。
+- 待本機（上線簡介）：Gabby Pahinui〈Hiʻilawe〉首錄 1946／1947；Gryphon「皇家音樂學院畢業生」不確（Gulland 第二年離校）；Gurrumul 專輯發行月份與加入 Yothu Yindi 年齡；Harry Taussig「只留下一份錄音」已過時；Homayun Sakhi 移居美國 2001／2002；Israel Kamakawiwoʻole《Facing Future》廠牌與德國銷量；Jerry Jeff Walker〈London Homesick Blues〉是「主題曲」不是片尾曲，簡介半形逗號；Jesse Fuller 簡介半形標點；Joe Val 首作 1971 春／1972；J. T. Perkins 廠牌所在地 Clarksville 無據。
