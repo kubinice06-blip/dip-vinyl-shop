@@ -40,6 +40,7 @@ const albums = spec.map(s => {
   for (const k of ['genreException', 'exceptionReason', 'exceptionEvidenceUrls', 'mbAbsenceProof', 'manualEvidenceUrls', 'manualRuling', 'coverSourceHint'])
     if (c[k] && (!Array.isArray(c[k]) || c[k].length) && c[k] !== '') identity[k] = c[k];
   if (identity.identitySource !== 'manual') delete identity.coverSourceHint;
+  Object.assign(identity, o.identityExtra || {});
   const ratings = {
     classic: ax.classic, obscurity: ax.obscurity, accessibility: ax.accessibility,
     listeners: Number.isInteger(r._listeners) ? r._listeners : null, source: ax.source, checkedAt: NOW,

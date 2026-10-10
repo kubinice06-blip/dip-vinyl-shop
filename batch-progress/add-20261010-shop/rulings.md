@@ -31,3 +31,13 @@
 - **8927** 頂點 0 張：無 classic 5、無 accessibility 5；obscurity 5 只有真芽正恵（listeners 4），沒有遺珠級證據（單一 Discogs 條目、無評論），不列 pearl。
 
 ## 試聽（8928–）
+- **8928** 試聽 ready 26、unavailable 11（`preview-picks.json`，產生腳本 `build-picks.mjs`）。ready 逐張以 Apple lookup 對 Discogs 曲目表：全部 notExplicit、試聽檔 HTTP 206、collectionId 與現有靜態地圖無重複。版本差照收：Phoebe Snow（us 723387453，多 1 軌單曲 B 面）、朱里エイコ（2011 Remaster +1）、尾崎亜美（+單曲版與 B 面 2 軌）、Melanie（Happy Birthday 談話與歌合一軌）、かぐや姫（〈妹〉〈海〉medley 與原盤同）。小坂明子第 1 軌標 Single Version，改取第 2 軌。
+- **8929** unavailable 11：The Three、芒神、It's Magic、To My Pen Pal、真芽正恵と小さな詩、Four、Mon-jah、弘田三枝子の世界、LAFF、タッチ・ミー、希望の旅。後三張的 Apple 只有收錄部分曲目的精選輯，不當本盤試聽。YouTube 來源要掛得走後台 album_overrides（雲端寫不進），未做。
+
+## 寫入與驗收（8930–8935）
+- **8930** prepare gate 0 error（47 warning：upc 空、§1 人工 6 張）。修兩處後過：Phoebe Snow 補 `selfTitledVerified`（pinned＋ready 試聽）；Yufu pending-meta 沒有封面，改用 Discogs 34313131（8924）。
+- **8931** 寫入順序照 §8：card_catalog 37/37（`publish-stage/…/card-catalog-patches.json`）→ KV 67 鍵（CJK 30 張 desc2＋desc4、拉丁 7 張 desc2；wrangler v4 `Success!`，`verify-wave-kv 20261010 add-20261010-shop` 67/67 逐字一致）→ 靜態試聽 26＋負面狀態 11 → seed 37 列（18,666 → 18,703）→ build-seed-genres → **published gate 0 error**。
+- **8932** 門市版 `元気です。` 只有一個來源（日文維基），manifest 的 sourceUrls 補 Discogs 原版 5493966 湊足兩個（`overrides.json`），門市版本身不動。37 張門市版皆無卡片禁語，未用 descReplace。
+- **8933** 子曲風：直接打 worker /album-genres 預熱這 37 張（標籤 35、查無 2；`data/rawgenres-cache.json` 是本機快取、雲端沒有，所以沒用 warm-album-genres.mjs），`build-genre-tree.mjs --pull --write` 重建：card-subgenres 17,253 → 17,282（新卡落位 29/37）。
+- **8934** 店內對接：Notion 37 列「卡池鍵」以 Notion MCP 寫入；`notion-snapshot.json` 同步 poolKey；`sync-shop-inventory.mjs` 的 PENDING_NEW 只留不建卡的 3 張；inventory 在售 113、待上架 3、售出 2；`mood-map.json` 補 37 張心情；`pending-meta.json` 刪掉已上架的 37 筆（留 3 筆）。
+- **8935** 破地獄改名《芒神》後，`descs.json` 該筆 key 由 `破地獄|godofsilvergrass` 改為 `破地獄|芒神`（後台以卡池鍵對門市版）。Firestore `settings/shopDescs.byKey` 有一筆舊鍵的店主存檔，內容與預設稿一字不差，留著不影響（雲端寫不進 settings，無法搬）。Yufu 的店主存檔也與預設稿相同。

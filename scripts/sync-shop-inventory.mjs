@@ -56,48 +56,10 @@ const NOTES = {
 };
 // 卡池尚無、走 dip-card-create 新建中的列。上架後移到 OVERRIDES 或讓自動比對接手。
 const PENDING_NEW = new Set([
-  // 2026-10-08 進貨，卡池尚無（走 dip-card-create）
-  '3f30ad0255ff80ac8b80cc8ad54df6cc', // Joe Sample / Ray Brown / Shelly Manne《The Three》
-  '3f30ad0255ff800b850adf07be4ce9b7', // Santana《Silver Dreams Golden Reality》
-  '3f30ad0255ff809da307c5c2629f4b90', // Yufu《To My Pan Pal》
-  '3f30ad0255ff800c9fb8ca4bc56ede28', // 破地獄《芒神》
-  '3f30ad0255ff806bacb1d559ca3d707b', // 坂本龍一《Playing The Piano 12122020》
-  '3f30ad0255ff8097bfeffc24858f6187', // りりィ《Love Letter》
-  '3f30ad0255ff80ad82f2dc21ab9aeb4e', // 渡辺真知子《Fog Lamp》
-  '3f30ad0255ff80789940f55bc3a0d13b', // キャンディーズ《その気にさせないで》
-  '3f30ad0255ff802fa892d580db9d2073', // Phoebe Snow《Phoebe Snow》
-  '3f30ad0255ff807b9d96f5f1f98f0202', // 小坂明子《あなた》
-  '3f30ad0255ff8074b6efdc0dedfc072b', // 真芽正恵《真芽正恵と小さな詩》
-  '3f30ad0255ff80f087d5d2cb9b9bfcc4', // 吉田拓郎《元気です》
-  '3f30ad0255ff8004bf51dfb45e22944c', // 高田真樹子《First》
-  '3f30ad0255ff802e925fc4d31d8b6539', // かぐや姫《Live》
-  '3f30ad0255ff8037abbdc7f8218b44fa', // 太田裕美《思い出を置く 君を置く》
-  '3f30ad0255ff80039521dc56ffac1c8d', // 桃井かおり《Four》
-  '3f30ad0255ff8032a06dc6dcec72d0f0', // ゴールデン・ハーフ《ゴールデン・ハーフでーす》
-  '3f30ad0255ff801384dcfa684e1fb033', // 伊武雅刀《Mon-jah》
-  '3f30ad0255ff80c3be66f4b8556b81b0', // 高橋真梨子《Triad》
+  // 2026-10-10：10-08／10-09 進貨的 37 張已上卡池（add-20261010-shop），卡池鍵已寫回 Notion。以下三張不建卡：
   '3f30ad0255ff8057af4fdc81d4f60a46', // Culture Club《It's a Miracle / Miss Me Blind》：單曲，店主 2026-10-08：單曲就是單曲，不掛專輯卡
-  '3f30ad0255ff803aaf93fb4c4814d49e', // Marlene《It's Magic》
-  '3f30ad0255ff800a8aa6cbeafa8de620', // 小柳ルミ子《愛に甦える》
-  // 2026-10-08 晚／10-09 進貨，卡池尚無（先做門市版，卡池上架另議）
-  '3f30ad0255ff80b4aa5fc5bc90942ee4', // 弘田三枝子《弘田三枝子の世界》
-  '3f30ad0255ff8024b8add7dcb03fb4f0', // 小柳ルミ子《京のにわか雨》
-  '3f30ad0255ff8075ae57dd12e1836e8e', // 朱里エイコ《パーティー》
-  '3f30ad0255ff806bba99dbb9211b1367', // Carmen Maki & Laff《Laff》
-  '3f30ad0255ff8056b3fdf57bb2922c3a', // Melanie《Leftover Wine》
-  '3f30ad0255ff8037a062f543a301b7db', // 松尾和子《Rhapsody》
-  '3f40ad0255ff8055b641d54aba84bfa7', // りりィ《Lilycism》
-  '3f40ad0255ff806a85f2e2c4bfbc4f74', // チェリッシュ《スーパー・デラックス》
-  '3f40ad0255ff80e48464ef925fe09e0c', // 小椋佳《徬徨》
-  '3f40ad0255ff802fa99ae529051a4953', // 吉田拓郎《人間なんて》
-  '3f40ad0255ff80128c9bc90461078c67', // 小川知子《タッチ・ミー》
-  '3f40ad0255ff80259c1bc6632ab37b95', // 平山三紀《希望の旅》
-  '3f40ad0255ff80f19b5dc9f7d87f375b', // 尾崎亜美《Hot Baby》
-  '3f40ad0255ff8044b48cedc56b25742e', // 太田裕美《Little Concert》
-  '3f40ad0255ff80c493d6e390cf76669d', // Dennis Brown《Words of Wisdom》
-  '3f40ad0255ff80c9a755c815c402b418', // 松任谷由実《OLIVE》
-  '3f40ad0255ff80989ef2c640c92910c7', // 松任谷由実《悲しいほどお天気》
-  '3f40ad0255ff80008265d7c859171aa3', // 奥村チヨ《デラックス・ダブル》
+  '3f40ad0255ff806a85f2e2c4bfbc4f74', // チェリッシュ《スーパー・デラックス》：精選輯，比照店主 2026-10-10「合輯不用」
+  '3f40ad0255ff80008265d7c859171aa3', // 奥村チヨ《デラックス・ダブル》：精選雙 LP，店主 2026-10-10「合輯不用」
 ]);
 
 // 店主說已下架、但 Notion 還沒刪的列：當成已售出（Notion 刪掉之後這裡可清掉）。
