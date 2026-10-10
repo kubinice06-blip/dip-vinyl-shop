@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 770 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 776 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -769,7 +769,13 @@
 | ar-d-046 | Sindelfingen | Odgipig | Kent 郡 Rochester 的樂團，1969 至 1974 年間只在本地演出，從未拿到唱片合約 | 本位開頁讀到的來源（Progarchy、Discogs 條目、唱片行頁）都沒有提到 Rochester、Kent、1969 至 1974 年或『從未拿到唱片合約』，無法證實，僅 Progarchy 稱他們是『四位英國人』；建議確認出處。 | https://progarchy.com/2024/02/24/the-best-prog-bands-youve-never-heard-of-part-thirty-seven-sindelfingen/ |
 | ar-d-046 | Sindelfingen | Odgipig | 團名取自德國城市 Sindelfingen | 本位來源皆未提到團名由來，無法證實。 | https://progarchy.com/2024/02/24/the-best-prog-bands-youve-never-heard-of-part-thirty-seven-sindelfingen/ |
 | ar-d-046 | Skid Row | Skid Row | Sebastian Bach 是 Bon Jovi 的父母在攝影師 Mark Weiss 的婚禮上聽他唱過之後引薦進來的 | 本位開頁的 Loudersound（Sabo 口述）寫的是朋友推薦、Sabo 寄 demo、Bach 從多倫多飛來試唱；維基寫樂團在婚禮上看到 Bach。兩者都沒提 Bon Jovi 的父母與 Mark Weiss，這句版本無法由本位來源證實，建議確認出處或刪除。 | https://www.loudersound.com/bands-artists/skid-row-debut-story-behind-album |
+| ar-d-047 | Soul Asylum | Made to Be Broken | 1994 年以〈Runaway Train〉拿下葛萊美最佳搖滾歌曲 | 葛萊美官網第 36 屆最佳搖滾歌曲的得獎人署名為詞曲作者 David Pirner，獎項屬詞曲作者而非樂團；簡介主詞是樂團，建議改成「Pirner 以〈Runaway Train〉拿下」或「〈Runaway Train〉替 Pirner 贏得」。 | https://www.grammy.com/awards/36th-annual-grammy-awards |
+| ar-d-047 | Soul Asylum | Made to Be Broken | 1993 年 1 月 20 日在總統就職典禮上演出 | 維基（引 Martin C. Strong）寫 1 月 20 日在柯林頓第一次就職典禮演出；Encyclopedia.com 寫 1993 年 1 月在 MTV Inaugural Ball（就職舞會）登台。場合說法不一，建議改成「柯林頓就職的慶祝活動」或另查當日節目表後定稿。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/dave-pirner |
 | ar-d-047 | Starship | Knee Deep in the Hoopla | 〈We Built This City〉…Rolling Stone 讀者票選二○一一年…皆列首位（上線簡介把 Blender 2004、Rolling Stone 2011、GQ 2016 並列為「最差歌曲」首位） | 維基〈We Built This City〉條目寫 Rolling Stone 2011 年是線上讀者票選『1980 年代最差歌曲』（worst song of the 1980s），不是歷來最差；Blender 2004 是『50 Worst Songs Ever』榜首；GQ 2016 年 8 月宣告它是歷來最差。三者範圍不同，簡介並列時應註明 Rolling Stone 是 1980 年代範圍。 | https://en.wikipedia.org/wiki/We_Built_This_City |
+| ar-d-048 | Stone Harbour | Emerges | 兩人都來自俄亥俄州 Canton，混音在 Youngstown | 復刻廠牌 Out-Sider 的 Bandcamp 頁與收藏家評介頁都把樂團放在 Youngstown，三個開頁讀到的來源（含 2019 年復刻評介）都沒有提 Canton，事實庫引的 psychedelicbabymag 頁面也沒有這句；混音地點同樣沒有來源。建議把 Canton 改為 Youngstown 或只寫「俄亥俄州」。 | https://stoneharbour.bandcamp.com/album/emerges |
+| ar-d-048 | Tamam Shud | Goolutionites and the Real People | 新成立的 Warner Bros. Records 發的第一張 LP，封面印 WS 200001 | 本次查證沒有任何來源證實這是新成立的 Warner Bros. Records 的第一張 LP（Discogs 原盤頁雲端取不到 403；Aztec 與維基只說 Evolution 配樂引起 Warner Bros. 注意、樂團因此簽約）。「第一張」且「新成立」屬首次類宣稱，建議店主本機核對 Discogs 與廠牌沿革；核對不了就改成「Warner Bros. 簽下的樂團，1970 年發行」。 | https://www.aztecrecords.com.au/products/avscd036 |
+| ar-d-048 | Tamikrest | Chatma | 該年拿下 Songlines 年度最佳專輯獎 | Glitterbeat 官方藝人頁引述的是 Songlines 2013 年的 Best Group Award（最佳樂團），並非 Best Album；維基與 Qobuz 寫 Best Album of the Year 疑為轉述。Songlines 官網雲端取不到 2013 年名單。建議上線簡介改成「獲 Songlines 2013 年獎項」，或本機到 Songlines 獎項檔案庫核對類別。 | https://glitterbeat.com/artists/tamikrest/ |
+| ar-d-048 | Tamikrest | Chatma | 第三張作品 2013 年 9 月由 Glitterbeat 發行 | 發行月份本次查證未能核實（維基、Glitterbeat、Qobuz 都只寫 2013 年）；建議本機核對廠牌頁的發行日。 | https://glitterbeat.com/product/chatma-by-tamikrest/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

@@ -741,3 +741,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Šarlo Akrobata 的「13 位克羅埃西亞音樂記者票選第 2 名」（票選主體可交代）；Saxon 的 Lars Ulrich 評語、Silver Apples 的 John Lennon 評語（具名樂手）；Say Sue Me「第一組在 KEXP 錄製現場的韓國藝人」（兩源、歸屬式）；Sheryl Crow 的搖滾名人堂評語；Silverchair 21 座 ARIA 與 John Farnham 並列（在世者唯一一處）。
 - 身分：Selfkill 是台灣小白兔唱片的後搖滾團；Shin Joong Hyun 只寫拒寫頌歌而遭打壓、作品被禁，大麻案與刑求細節不寫。同名作廢：Semiramis（亞述女王）、Shylock（莎劇角色）、Side by Side（越野車）、Sindelfingen（德國城市）、Skid Row（貧民區）、Sīpoli（洋蔥）的維基預抓。
 - 待本機（上線簡介）：Say Sue Me 得獎類別應為「最佳摩登搖滾」；Šarlo Akrobata「樂團把錄音買回來」無據；Selfkill「第一支入圍金曲獎最佳樂團的後搖團」單源；Semiramis 目錄號 TRI 1004、Zarrillo 入團年齡 16 歲；Servant CCM 樂評評的是《Rockin' Revival》；Shark Move 成軍與錄音年份、專輯名語言、重發年；Shin Joong Hyun Add4 成立年、「第八軍團樂隊」、〈아름다운 강산〉署名；Sheer Terror 錄音年份；Silica Gel「隔年獲三冠」（得獎作為 EP《Machine Boy》）與成軍學校；Sindelfingen 產地與團名由來；Skid Row 的 Sebastian Bach 引薦經過；Shylock 首發版本。
+
+## ar-d-047（2026-10-10）
+
+- 38 位上架（33 full、5 thin：Slovenly、Soul-Junk、Starsailor、Steel Mill、Steve Kipner），2 位不寫：Social Tension（除身分外的事實都只見搜尋摘要、未開頁）、Starless（三格皆空，身分無來源確認）。Steve Kipner 以「常與人合寫流行單曲」當做法句，比照詞曲作者的寫作方法，接受。
+- 審稿修 7 處：最高級刪改——Slank「印尼最偉大之一」、Sloche「魁北克最好的專輯之一」、Smak「最具影響力的吉他手之一」與「最重要之一」、Small Faces「最主要之一」改「代表」、Spirit「西岸最頂尖之一」；Snakefinger 272 字壓回 229（非雙卡，刪追思會細節）。
+- 保留：Stevie Nicks「第一位兩度入選搖滾名人堂的女性」（兩源、名人堂官方）；Squeeze「Lennon 與 McCartney 王座的繼承人」（媒體稱號、歸屬式）；Snow Patrol〈Chasing Cars〉PPL 播放最多（在世者唯一一處、官方機構）；Small Faces 搖滾名人堂。
+- 身分修正：Steel Mill 是英國樂團（Penny Farthing／Bellaphon；特注原寫 Springsteen 早年的團，錯）；Smash 是塞維亞的團；Smak 是 Kragujevac；Slovenly 是 SST 舊金山團；Snapline 寫「中國」；Spherical Objects 不寫 Solamar 的性別轉換。
+- 待本機（上線簡介）：Soul Asylum「樂團得葛萊美」（得獎人為詞曲作者 Pirner）與「就職典禮演出」場合；Starship「Rolling Stone 2011 最差歌曲」與 Blender、GQ 並列（實為讀者票選、範圍不同）；Speed, Glue & Shinki 團名由來涉及成癮，建議簡介拿掉。
