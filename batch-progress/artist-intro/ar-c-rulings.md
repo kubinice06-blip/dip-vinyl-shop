@@ -733,3 +733,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分修正：Salada de Frutas 是葡萄牙樂團（特注原寫巴西，錯）；Red Noise 是法國前衛團（非 Bill Nelson 同名團）；Re-TROS 寫「中國」。同名作廢：Refrigerator（電冰箱）、Red Summer（1919 暴動）、Rex（拉丁頭銜）、Room（房間）、Sand（沙子）的維基預抓。
 - 卡池年份存疑：Roy Orbison《Mystery Girl》卡池 1988，實為 1989 年 2 月身後發行。
 - 待本機（上線簡介）：Redbone〈We Were All Wounded at Wounded Knee〉「從美加版抽掉」說法不一；Red Noise 專輯 1970／1971、B 面長度 20／18 分鐘；Room「六個人的樂團」（多源五人）；Samantha Fish「2011 年 Blues Music Award」應為 2012 年第 33 屆；Sampaguita「隨口給的藝名」「搖滾女王」無據、〈Bonggahan〉與〈Tao〉年份待核。
+
+## ar-d-046（2026-10-10）
+
+- 39 位上架（27 full、12 thin：Second Hand、Secret Shine、Selfkill、Shape of the Rain、Shearwater、Shiner、Show Me the Body、Shylock、Side by Side、Simple Plan、Sindelfingen、Sīpoli），1 位不寫：Shipping News（聲音只剩曲風標籤與「兩人都兼主唱」，比照 Gorgoroth 不寫）。Selfkill 以「器樂為主、雙吉他貝斯鼓」、Sīpoli 以編制當做法句，接受。
+- 審稿修 7 處：Shin Joong Hyun 279 字壓回 225（非雙卡）並刪「韓國第一支搖滾樂團」與 Berklee 校長引語；最高級刪改——Šarlo Akrobata「最重要之一」改「代表之一」、《Paket aranžman》「最重要也最有影響力之一」改「關鍵唱片之一」、Scream「最早赴歐之一」改「早期」、Screeching Weasel 刪「美國最重要之一」；去頭名次——Secos & Molhados 刪「2007 年巴西百大第 5 名」（媒體名不能寫，名次失去主詞）。
+- 保留：Šarlo Akrobata 的「13 位克羅埃西亞音樂記者票選第 2 名」（票選主體可交代）；Saxon 的 Lars Ulrich 評語、Silver Apples 的 John Lennon 評語（具名樂手）；Say Sue Me「第一組在 KEXP 錄製現場的韓國藝人」（兩源、歸屬式）；Sheryl Crow 的搖滾名人堂評語；Silverchair 21 座 ARIA 與 John Farnham 並列（在世者唯一一處）。
+- 身分：Selfkill 是台灣小白兔唱片的後搖滾團；Shin Joong Hyun 只寫拒寫頌歌而遭打壓、作品被禁，大麻案與刑求細節不寫。同名作廢：Semiramis（亞述女王）、Shylock（莎劇角色）、Side by Side（越野車）、Sindelfingen（德國城市）、Skid Row（貧民區）、Sīpoli（洋蔥）的維基預抓。
+- 待本機（上線簡介）：Say Sue Me 得獎類別應為「最佳摩登搖滾」；Šarlo Akrobata「樂團把錄音買回來」無據；Selfkill「第一支入圍金曲獎最佳樂團的後搖團」單源；Semiramis 目錄號 TRI 1004、Zarrillo 入團年齡 16 歲；Servant CCM 樂評評的是《Rockin' Revival》；Shark Move 成軍與錄音年份、專輯名語言、重發年；Shin Joong Hyun Add4 成立年、「第八軍團樂隊」、〈아름다운 강산〉署名；Sheer Terror 錄音年份；Silica Gel「隔年獲三冠」（得獎作為 EP《Machine Boy》）與成軍學校；Sindelfingen 產地與團名由來；Skid Row 的 Sebastian Bach 引薦經過；Shylock 首發版本。
