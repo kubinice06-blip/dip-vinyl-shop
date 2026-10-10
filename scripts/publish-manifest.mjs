@@ -198,7 +198,7 @@ if (WRITE_PREVIEW) {
   console.log('  1. 用 card-catalog-patches.json 寫 Firestore（updateMask 已備好，不會蓋掉後台改過的欄位）');
   console.log('  2. KV 固定簡介：');
   console.log(`     node scripts/kv-from-manifest.mjs ${path.basename(manifestPath)} kv-bulk.json`);
-  console.log('     npx wrangler kv bulk put kv-bulk.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote');
+  console.log('     npx -y wrangler@4 kv bulk put kv-bulk.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote');
   console.log(`  3. 試聽： node scripts/publish-manifest.mjs ${path.basename(manifestPath)} --write-preview`);
   console.log('           node scripts/build-apple-audio-runtime-map.mjs');
   console.log('  4. 回讀 1-3 確認與 manifest 一致');

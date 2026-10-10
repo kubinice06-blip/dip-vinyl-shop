@@ -352,7 +352,7 @@ node scripts/verify-album-onboarding.mjs <manifest.json>
 
    ```bash
    node ../dip-vinyl-worker/scripts/desc-gen/from_onboarding_manifest.mjs <manifest.json> <kv-bulk.json>
-   npx wrangler kv bulk put <kv-bulk.json> --namespace-id 5f65e74b17d644b68a3f542b08a5c105
+   npx -y wrangler@4 kv bulk put <kv-bulk.json> --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote
    ```
 
 3. `album_overrides`：固定試聽／負面狀態，以及經明確採用的頂點 tier。
