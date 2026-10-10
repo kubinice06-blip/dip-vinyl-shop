@@ -808,3 +808,106 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搖滾段已寫到 Y 字頭；卡池剩 63 批、2481 位未寫（rock 160、folk 480、pop 359、world 280、electronic 517、hiphop 279、classical 605）。
 - 本輪沿用第五輪的裁定形狀，無新增；超額放行一例（Vast & Hazy，第二源先例）。特注身分錯誤由研究層更正多處（Poll 是希臘團、Salada de Frutas 是葡萄牙團、Sweet Charity 是新加坡團、Steel Mill 是英國團、Sunforest 是在倫敦的美國人、Tilt 是波蘭團等），皆照研究層改寫。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；The Alarm 的 Mike Peters 據兩源 2025 年過世，上線簡介若寫成在世需改；卡池年份存疑（Roy Orbison《Mystery Girl》1989、The Head and the Heart 2010／2011、Sweet《Desolation Boulevard》1974 RCA 版、The Appleseed Cast 1999／2000、Trouble《Psalm 9》首發 1984）。
+
+## 第七輪十批接力（ar-d-054～063，2026-10-10 起）
+
+- 範圍：搖滾段末（韓文、日文、中文名藝人）與民謠段 A 至 R。沿用第三至六輪的審稿規則、thin 門檻與裁定形狀。
+
+## ar-d-054（2026-10-10）
+
+- 40 位全上（32 full、8 thin：Yano、Young Flowers、Zao、Zia、Zounds、Ακρίτας、Иверия、Телевизор）。Zia 身分以伊朗歌手兩源成立（選輯曲目對應），正文只寫兩首歌的聲音，不寫生平。
+- 審稿修 14 處：最高級刪改——YU Grupa「存續最久」、Zabranjeno Pušenje 官網自稱「最受歡迎之一」、Zeca Pagodinho「最會即興編詞」與「並列得獎最多」、Zerfas「最好的私壓迷幻之一」改「名盤」、Zigmars Liepiņš「最受歡迎」「最廣為人知」改平述、Σαββόπουλος「最受愛戴、最具影響力」、АукцЫон「最長壽之一」（單源）、Машина времени「最老之一」、ФСБ「二十世紀最具影響力之一」、Zaw Win Htut「有史以來最大的搖滾明星」改「代表性」；在世者多重成績——Yat-Kha 刪 BBC Radio 3 獎（留 Eno 評審獎的人物故事）、Zigmars Liepiņš 刪三星勛章；新近事實——Σαββόπουλος 2025 年過世保留（兩源），刪單源的公費葬禮。
+- 保留：ZZ Top 的搖滾名人堂與 Keith Richards 引介詞、「三人陣容維持約五十年」（不寫「最久」）；Young Marble Giants 的 Cobain 說法；Звуки Му 的 Grebenshchikov 說法；김추자 的 전인권 說法；ФСБ 葛萊美寫成「參與編曲製作的錄音得獎」；단편선 순간들、소음발광 的韓國大眾音樂賞（唯一一處）。
+- 政治：Σαββόπουλος 軍政府拘押、俄羅斯各團的政治立場與「外國代理人」、김추자 與 신중현 的大麻案、Zabranjeno Pušenje 的戰爭一律不寫。
+- 身分：Yano 是菲律賓團；Z.O.A 是日本 Trans Records 的團；Zao 是法國 zeuhl 團（非美國同名團）；ФСБ 是保加利亞 Balkanton 錄音室團；Zia 是伊朗歌手。
+- 待本機（上線簡介）：Zabranjeno Pušenje「1983 年新原始主義」年份無據；Zao「1972 年 11 月離開 Magma」僅法文維基；Zeca Pagodinho「1983 年錄下第一首歌」與 ebiografia 不符；Zed Bias 的 Locked On 選輯無據；Звуки Му「1987 年認識 Eno」與 Snob 不符；Зоопарк「首張錄音室專輯」待核；Телевизор「1987 年第 2 名」待核；Щурците 金色奧菲斯得主是 Georgi Minchev；ဇော်ဝင်းထွဋ်「三張沒起色」與《時代》不符；김추자「全數禁曲、全面禁演」只能證實一首；신중현과 엽전들 銷量與名盤名次單源。
+
+## ar-d-055（2026-10-10）
+
+- 36 位上架（29 full、7 thin：あぶらだこ、サカナクション、ずっと真夜中でいいのに。、トメ北川、のいづんずり、メトロファルス、倒車入庫），4 位不寫：パパイヤ・パラノイア（身世與地位查無，唯一事實出自二手店商品頁）、光引擎（只有廠商文案）、丘蒸汽（身分單源、聲音查無）、刺客（聲音只剩「重金屬」曲風標籤加一首翻唱，比照 Gorgoroth 不寫）。倒車入庫國籍身分兩源、聲音句單源以「被形容為」寫，接受。
+- 審稿修 7 處：最高級刪改——잔나비「韓國最有影響力之一」、ザ・ゴールデン・カップス「日本最早的 fuzz box」改「早期」與「最頂尖之一」改「代表樂團」、二手玫瑰「中國最妖嬈」；在世者多重成績——이승윤 刪《싱어게인》奪冠（留韓國大眾音樂獎）；新近事實——吉野大作 刪 2025 年義大利重發（未見兩源）；錯字——君島大空「，。」；另刪刺客整篇。
+- 保留：何勇 2026 年過世（兩源，不寫死因與健康）；何勇「中國龐克的祖師爺」稱號中的「朋克」改「龐克」（在地用語，非改義）；전인권 的들국화首張名列 2007 年《경향신문》百大名盤第 1（必要例外）；サカナクション「據報導是搖滾樂團首度得獎」（兩源）；プリンセス プリンセス「被稱為第一個在武道館開唱的女性樂團」（官方「被傳述」措辭）；伍佰《樹枝孤鳥》金曲獎（唯一一處）。
+- 身分：トメ北川是ザ・ハプニングス・フォー 的主唱；丘蒸汽是日本民謠二人組（單源，不寫）；刺客是台灣重金屬團（維基預抓「暗殺者」作廢）；チューリップ 維基預抓為花作廢。
+- 假名人名照原文保留（writer-base 2026-09-30 條優先於 2026-08-11 羅馬化條）。
+- 待本機（上線簡介）：サディスティック・ミカ・バンド《黒船》錄音 450 小時（日文維基寫約 600）；はちみつぱい「1970 年與あがた森魚組團」無據；何勇《垃圾場》簡介「至今唯一一張」需改過去式（2026 年過世），〈非洲夢〉列為紅磡曲目待核；刺客簡介的創團元老三處不一致。
+
+## ar-d-056（2026-10-10）
+
+- 35 位上架（23 full、12 thin：吹萬、夕陽武士、川秋沙、廢五金、怕胖團、想い出波止場、昆蟲白、瀬川洋、煙雨飄渺、猛虎巧克力、粗大Band、聲音碎片），5 位不寫：壞女兒、妮波寺（聲音與地位只有打不開的 Last.fm 摘要）、花生隊長（只有發行事實）、木魚（全部只有日文維基一段）、瑪啡因（全部只出自樂團自己的募資頁）。煙雨飄渺身分兩源、聲音句單源以「據介紹」寫，比照倒車入庫接受。廢五金由研究層 full 改寫成 thin（可寫事實不足 180 字）。
+- 超額放行：棉花糖第 9 次搜尋只得摘要、無新事實（齊豫先例）。
+- 審稿修 7 處：最高級刪改——坂本慎太郎「日本規模最大、資歷最深」改「代表樂團」、好客樂隊「台灣最頂尖的嗩吶手之一」、張淺潛刪吳寧越「全中國沒幾個比她厲害」（留周雲蓬、張瑋瑋兩句具名說法）、想い出波止場「最難以言喻之一」、新褲子「最受認可」與沈黎暉（廠牌老闆自家評價）、痛仰「最具代表性之一」改「代表性」。
+- 保留：眼鏡蛇樂隊「被稱為中國第一支全女子搖滾樂團」（兩源、無反例）；瓢蟲的 Yoz 說法（具名樂手）；蒼蠅樂隊的 V&A 博物館說法（機構）；浜田省吾的反戰、反核題材（歌詞題材，不展開政治）；日文全假名名字照原文（ケラ、たま 等）。
+- 身分：瀬川洋是ザ・ダイナマイツ 主唱兼吉他手（研究層推翻上線簡介的ズー・ニー・ヴー）；外道、有頂天、木魚、瓢蟲的維基預抓分別對到佛教詞、佛具、昆蟲，已作廢；棉花糖排除中國同名團。
+- 待本機（上線簡介）：瀬川洋「ズー・ニー・ヴー 主唱」錯，應為ザ・ダイナマイツ；地下嬰兒《覺醒》1998／1999；外道「ミッキー・カーチス 製作出道」未獲證實；好客樂隊《愛吃飯》金曲獎名稱應為「最佳客語專輯獎」；想い出波止場《水中JOE》是第幾作待核；指南針首張 1993／1994；猛虎巧克力成團年 2012／2013；瓢蟲「自資、無廠牌」「唯一長篇」與《台北時報》不符；痛仰「四個字：痛苦的信仰」是五個字；自然捲「2003 年組團」來源不可靠；木魚 Rooftop 引文無法複核。
+
+## ar-d-057（2026-10-10）
+
+- 34 位上架（28 full、6 thin：趙一豪、趙傳、踊ってばかりの国、黒百合姉妹、Andy Roberts、Anno Luz），6 位不寫：迷幻幼稚園、頂樓的馬戲團（全部事實只有一個來源）、面孔樂隊（聲音只剩單源「重金屬」曲風標籤加兩張合輯收錄）、鉄アレイ（身分靠曲目推定，聲音只剩曲長，比照 Gorgoroth 不寫）、Agincourt（聲音只有「迷幻民謠」標籤）、Allan Wachs（國籍過不了兩源）。趙一豪以「歌詞批判直白」當做法句（寫詞方法），接受。
+- 超額放行：鉄アレイ第 9 次重開同頁無新事實（齊豫先例；後因其他理由不寫）。
+- 審稿修 3 處：Aguaviva 刪威尼斯與坎城演出（單源）；Altan「最早簽下主要唱片公司之一」改「早期」並刪郵票（在世者唯一一處）；Ani DiFranco「最早自創廠牌」改「早期」。
+- 保留：Alan Lomax 的 Brian Eno 說法與國家藝術勳章（已故）；Arizona Dranes 的 Thomas A. Dorsey 說法；Anaïs Mitchell《Hadestown》東尼獎一處；Alim Qasimov 的 IMC-UNESCO 音樂獎一處；黃耀明只寫音樂；頭脳警察寫「首張與第二張相繼被擋」不展開政治。
+- 身分：頂樓的馬戲團是中國上海的樂團（名冊原寫台灣，錯）；隨性樂團是台語搖滾（名冊原寫雷鬼，錯）；迷幻幼稚園是台北哥德搖滾團；Asin 的維基預抓是印度女演員，已作廢；Aguaviva 的維基預抓是西班牙城鎮，已作廢；Anno Luz 是巴西二人組。
+- 待本機（上線簡介）：趙一豪《把我自己掏出來》1989 年底發行、1990 年遭查扣；隨性樂團「2013 年評審團大獎」查無；鈴木実貴子ズ《いばら》是主流第二張（簡介寫第一張）；A.L. Lloyd「催生 industrial folk」宜改「協助確立」；Adrian Crowley《Season of the Sparks》發行月份；Alan Lomax《Prison Songs》「藍調成形前夕」不當；Albert Hash「十歲做提琴時是大蕭條」年代不合；Al Stewart《Melody Maker》年度民謠專輯單源；Fargana 兩度總統獎單源；Altan「1987 年組成」說法不一；Andy Irvine & Paul Brady 錄音與發行時間；Anton Karas「酒館聽見當場決定」屬傳說；Asin 單曲年份與創團成員。
+
+## ar-d-058（2026-10-10）
+
+- 39 位上架（30 full、9 thin：Banteay Ampil Band、Bibio、Bill Madison、Bob Ayala、Bob Carlin、Bröselmaschine、Buddy Thomas、Charalambides、Charlie McAlister），1 位不寫：Colbie Caillat（聲音格查無，只剩 Myspace 走紅、葛萊美與家世）。
+- 超額放行：Bellowhead 第 9 次為獎項第二源查找，無新事實（齊豫先例）。
+- 審稿修 16 處：字數——Bill Monroe 271 壓回 244（刪排行與叔叔殘障）、Bill Wilson 264 壓回 242（非雙卡；Bert Jansch & John Renbourn 267 為雙卡保留）；最高級刪改——Banda do Casaco「最前衛之一」、Belchior「MPB 史上最具影響力之一」、Bob Desper「最被藏私的秘密」、Brigada Víctor Jara「最具影響力」與「壽命最長之一」、Brooks & Dunn「鄉村史上最重要的搭檔之一」、Bülent Ortaçgil「最佳專輯首位」、Charles Lloyd「最早賣出百萬張」；在世者多重成績——Ben Howard 刪地方貨幣人像；健康與私事——Bob Ayala 刪視網膜病變、Belchior 刪晚年失蹤。
+- 保留：Battlefield Band 蘇格蘭傳統音樂名人堂的「最早之一」（官方）；Charley Pride「第一位黑人鄉村超級巨星」（兩源一致）；Charlie Moore 的 Ralph Stanley、Jimmy Martin 說法（具名樂手）；Bert Jansch 的 Neil Young 說法；Bob Desper、Arizona Dranes 的失明寫成身分特徵（非病情細節）。
+- 身分：Bill Wilson 維基預抓是同名牧師、Charlie McAlister 是橄欖球員、Charlie Moore 是釣魚節目主持人，皆已作廢；Dulcimer 是英國民謠三人組（非樂器）。
+- 待本機（上線簡介）：Aster Aweke「1981 年移居華盛頓」應為先到舊金山灣區；Aziza Brahim 父親過世時點兩源矛盾；Banda do Casaco 成立年與首張年份；Belchior「銷量逾五十萬」「與 Bob Dylan 對照」查無；Bellowhead「史上最暢銷的獨立廠民謠專輯」註腳不支撐；Bob Frank 的 Dickinson 評語措詞（best songwriter you never heard）；Brigada Víctor Jara《Eito fora》廠牌；Brooks & Dunn「7 倍白金」與 1990 年撮合；Charlie Moore《Avery County》1977／1979。
+
+## ar-d-059（2026-10-10）
+
+- 40 位全上（33 full、7 thin：Colter Wall、Country Cooking、Daniel Bachman、Danielle Howle、Dulcimer、Egschiglen、Extradition）。
+- 超額放行：Ewan MacColl 超出 2 次，為葛萊美與 Prix Italia 兩項高風險事實的第二源（Gunnar Graps 先例）。
+- 審稿修 13 處：字數——Connie Converse 262→247、Dave Bixby 268→230（並刪迷幻藥經驗細節，改「一段迷失的低潮」）、Ewan MacColl 268→231（刪 Dick Gaughan 最高級說法）、Elyse Weinberg 259→243（皆非雙卡）；最高級刪改——Conway Twitty「當時最高紀錄」、David Grisman「史上最具影響力之一」與 Dawg Music 定論口氣、Eric Andersen「義大利最重要的獎」、Esma Redžepova「最早的明星之一」、Francesco De Gregori「最著名的時刻之一」；政治與健康——Esma 刪「狄托的寵兒」、Faramarz Aslani 刪「女人、生命、自由」運動、De Gregori 刪 1976 年演唱會被左翼團體打斷、Emmanuelle Parrenin 刪火災傷聽力、Frankie Armstrong 刪青光眼病名。
+- 保留：Francesco Guccini 2026 年 8 月過世（Euronews、La Sicilia 兩源；名冊原列在世，錯）；Ed Askew 2025 年過世（兩源）；Faramarz Aslani、Fausto 2024 年過世；Ewan MacColl 葛萊美與 Prix Italia；Daniel Viglietti 的 Rubén Rada 說法與「曾被監禁、流亡」背景一句；Connie Converse 1974 年下落不明（兩源）。
+- 身分：Dulcimer 是英國 Cotswolds 三人組（維基預抓樂器頁作廢）；Fausto 是 Fausto Bordalo Dias（預抓消歧頁）；Extradition 是雪梨民謠團；Ewan MacColl & A.L. Lloyd 卡池這張（Folkways FG 3510）署名只有 MacColl，照掛名寫兩人但不寫成合唱。
+- 待本機（上線簡介）：Conway Twitty「1966 年轉入鄉村」應為 1965；Domenico Modugno「第一支登頂的非美加英語系單曲」無出處；Dulcimer「1970 年原盤」應為 1971；Egschiglen《Zazal》年份與錄音地；Eleftheria Arvanitaki 加入樂團年份；Emmanuelle Parrenin「1970 年 7 月魁北克」無出處；Eric Andersen《Blue River》榜次與編制只見部落格；Esma 出生年 1943／1945；MacColl & Lloyd「Folkways 重發」「最直接的曲目來源」無出處；Faramarz Aslani「中間十七年空白」錯（1978 年另有一張）；Fausto「名下唯一發行」錯（共 12 張）。
+
+## ar-d-060（2026-10-10）
+
+- 39 位上架（31 full、8 thin：Haley Heynderickx、Homayun Sakhi、I'm With Her、Ingrid Michaelson、Ithaca、Jim Eanes、Jimmy Arnold、Jimmy Carter and Dallas County Green），1 位不寫：J. T. Perkins（貢獻與地位查無，只有廠牌頁一個來源）。
+- 超額放行：Gurrumul 第 9 次查入選紀錄，頁面未提及、無新事實（齊豫先例）。
+- 審稿修 11 處：最高級刪改——Fuxan os Ventos「最具代表性之一」、Hazel Dickens & Alice Gerrard「最早由女性錄製之一」改「早期」、Israel Kamakawiwoʻole「最偉大之一」與「第一張白金」、Jewel「史上最暢銷的首張之一」、Jim Reeves「最具辨識度也最成功之一」、Jimmy Arnold 廠牌稿「最有天分之一」、Joe Val「Rounder 第一個／第一張」、Joey Ayala「最具代表性之一」；在世者多重成績——Ian & Sylvia 刪加拿大勳章（留名人堂）、Jarcha 刪票選與街名（留自治區獎章）；藥物——Honeytree 刪「被藥物文化吸引」。
+- 保留：Jackson C. Frank 的水牛城音樂名人堂說法（官方）；James Blunt「英國官方排行榜列為 2000 年代最暢銷專輯」（官方榜，唯一一處）；Gabby Pahinui 國會圖書館「最早的現代 slack-key 錄音之一」（官方）；Jimmie Rodgers 搖滾名人堂說法；Jarcha〈Libertad sin ira〉「轉型期非官方國歌」與審查（歷史背景一句）。
+- 身分：Gary Higgins、Jimmy Arnold、Jimmy Carter and Dallas County Green（前總統）、J. T. Perkins（摔角手）、Ithaca（希臘島）的維基預抓皆對錯，已作廢；Jimmy Carter and Dallas County Green 照來源寫 country rock（名冊原寫 bluegrass）；Jimmie Rodgers 是 1920 年代的「歌唱的煞車手」。
+- 待本機（上線簡介）：Gabby Pahinui〈Hiʻilawe〉首錄 1946／1947；Gryphon「皇家音樂學院畢業生」不確（Gulland 第二年離校）；Gurrumul 專輯發行月份與加入 Yothu Yindi 年齡；Harry Taussig「只留下一份錄音」已過時；Homayun Sakhi 移居美國 2001／2002；Israel Kamakawiwoʻole《Facing Future》廠牌與德國銷量；Jerry Jeff Walker〈London Homesick Blues〉是「主題曲」不是片尾曲，簡介半形逗號；Jesse Fuller 簡介半形標點；Joe Val 首作 1971 春／1972；J. T. Perkins 廠牌所在地 Clarksville 無據。
+
+## ar-d-061（2026-10-10）
+
+- 38 位上架（34 full、4 thin：Johnny Flynn、Josephine Foster、Kembara、Kim Jung Mi），2 位不寫：John Villemonte（聲音只有曲風標籤與合輯整體描述）、Lewis Capaldi（聲音句只剩聽歌養成的影響名單，比照曲風標籤不寫）。
+- 超額放行：John Villemonte 第 9 次為身分確認的第二源；Lal & Mike Waterson 第 9 次為釐清榜位的第二源（皆第二源先例）。
+- 審稿修 11 處：字數——Kathy Heideman 276→243、Linda Perhacs 266→245（皆非雙卡）；最高級刪改——John Michael Talbot「世界上最重要的天主教音樂人之一」、Keola & Kapono Beamer「最受敬重的音樂家族之一」、Khánh Ly「最能代表之一」、Lefty Frizzell「史上最具影響力之一」、Lily May Ledford「最早之一」改「早期」、Lluís Llach「最受歡迎之一」與「被翻唱最多之一」；在世者多重成績——Kate & Anna McGarrigle 刪加拿大勳章（留總督表演藝術獎）。
+- 保留：Lead Belly 與 Leadbelly 分寫 Asch 時期與 1948 年最後錄音，可寫獄中被 Lomax 父子錄下（不寫罪名）；Lead Belly 搖滾名人堂說法；Kelly Joe Phelps 的 The Edge、Bill Frisell 說法；Leadbelly 的 George Harrison 說法；Koncz Zsuzsa《Jelbeszéd》被停止發行（歷史背景一句）；Lluís Llach〈L'estaca〉波蘭文版成團結工聯之歌（流傳事實，不寫獨立運動）。
+- 身分：Kembara 是在新加坡成軍、後移居馬來西亞（名冊原寫馬來西亞）；Joseph Spence 維基預抓為 18 世紀英國史學家，已作廢；Keola & Kapono Beamer 的 Kapono 非 Henry Kapono；Lal & Mike Waterson 是兄妹（簡介寫姊弟，錯）。
+- 卡池年份存疑：Kim Jung Mi《Now》卡池 1968，實為 1973 年錄成。
+- 待本機（上線簡介）：Josephine Foster「個人第二作」無據；Karine Polwart《Traces》入圍年份與「英國前 75」；Kelly Joe Phelps Billboard 第 10 名單源；Kembara「同年成軍的五人團」錯；Kenny Knight「包辦全部人聲、貝斯與鼓」錯；Koerner, Ray & Glover 組團年 1962／1963 與首作廠牌；Koncz Zsuzsa「電台只播一半」「五萬張庫存熔掉」；Kongar-ol Ondar「1992 年首獎」「活國寶」；Lal & Mike Waterson「姊弟」「英國榜第 21 名」（正榜 59）「版權訴訟下架」；Lead Belly「為 Folkways 留下」應為替 Moses Asch 錄；Kyle Creed「Galax 連冠」單源；Lindisfarne《Fog on the Tyne》「當年第八暢銷」與維基「最暢銷」不一；Lefty Frizzell 的 George Jones、Haggard 說法與「蟬聯四週」未核對。
+
+## ar-d-062（2026-10-10）
+
+- 39 位上架（34 full、5 thin：Michael Angelo、Mid-Air Thief、Midwinter、Mistress Mary、Modern Folk Üçlüsü），1 位不寫：Marj Snyder（聲音格查無，唯一沾邊的是選輯文案對整張合輯的描述）。
+- 超額放行：Mari Boine 第 9 次為核對上線簡介年份，無新事實（齊豫先例）。
+- 審稿修 8 處：字數——Maitreya Kali 267→229（非雙卡；刪「自稱有神祕力量」與骨灰細節）；最高級刪改——Love Song 單源「史上最重要的基督教搖滾樂團」（留「基督教版的披頭四」稱號）、Manos Hadjidakis「史上最偉大之一」、Mari Boine「最廣為人知」、Maria del Mar Bonet「最穩固、最持久之一」改「長年核心人物」、Martin Simpson「英國最好之一」改「重要」；在世者多重成績——Ojos de Brujo 刪銷量（留 BBC Radio 3 獎）。
+- 保留：Michael Hurley 三方合錄的 Christgau 年度最愛（研究層列必要例外、兩源）；Michael Hedges 身後葛萊美；Molly Tuttle「第一位拿下 IBMA 年度吉他手的女性」；Mount Eerie 以妻子過世為題（不寫病因）；Louis Killen 晚年改名一句（不寫細節）；Mikel Laboa、Moving Hearts 的政治背景只寫一句。
+- 身分：Love Song、Manitoba、Midwinter 的維基預抓分別對到歌曲類型、加拿大省份、節氣，已作廢；Manitoba 照 Dan Snaith 舊名義寫；Norman Blake 生於田納西州 Chattanooga、在喬治亞州長大（非 Teenage Fanclub 同名成員）；Mr. Fox 的女聲是 Carole Pegg；Michael Angelo 是堪薩斯市錄音室樂手 Michael Angelo Nigro。
+- 卡池年份存疑：Modern Folk Üçlüsü《40 Yıl Sonra》卡池 1974，土耳其來源寫 1975。
+- 待本機（上線簡介）：Luke Combs「2016 年自主發行」「蟬聯兩週」；Manos Hadjidakis「拒領獎座」與 To Vima 不符；Margo Price Third Man「第一位鄉村藝人」應為「第一位 Nashville 在地藝人」、「約三十家唱片公司」；Maria del Mar Bonet《Alenar》是第 5 張；Mark Fry「花三天錄成」（本人說一兩週）；Meic Stevens 回 Solva 年份；Marion Sumner 的 Dennis Breeding 未見；Michael Hurley《Have Moicy!》「滾石五星」查無；Michael Angelo「acetate 被銷毀」查無；Moving Hearts「雙鼓手」應為鼓手加打擊；Mr. Fox「Carole Butler」應為 Carole Pegg；Nickel Creek「出道作」應為 Sugar Hill 的首張。
+
+## ar-d-063（2026-10-10）
+
+- 37 位上架（33 full、4 thin：Pari Zanganeh、Retsin、Richard Dawson、Robb Kunkel），3 位不寫：Perry Leopold（聲音格查無，素材多為 AllMusic 傳記轉載）、Ray & Ina Patterson（全部事實只出自科羅拉多藍草協會一頁）、Rich Kirby & Michael & Carrie Kline（聲音句只剩曲目題材，比照 Lewis Capaldi 不寫）。
+- 審稿修 5 處：最高級刪改——Ovidi Montllor「最有才華也最不受歡迎之一」改平述、《Furtivos》「最重要之一」改「重要」、Phạm Duy 單源「最具影響力的三位之一」改「重要人物、常與……並提」、Principal Edwards Magic Theatre「最早簽下之一」改「早期」、Reba McEntire「最有影響力的女歌手之一」。
+- 保留：Pari Zanganeh 車禍失明後轉向民謠（意外類型＋職涯轉折）；Richard Crandell 的顫抖症（直接促成改彈 mbira，與聲音相關）；Paco Ibáñez〈A galopar〉成為反佛朗哥象徵（兩源、份量核心）；Patricio Manns〈Arriba en la cordillera〉Olmué 民謠節票選（歌的份量）；Renaud〈Mistral gagnant〉2015 年民調；Robin and Barry Dransfield 的《Melody Maker》年度民謠專輯提名（獎項方具名一次）。
+- 身分：Ossian、Palace Music、Ray Fisher（美國演員）、Red Allen（爵士小號手 Henry "Red" Allen）、Rich Kirby 組（同名犯罪首腦）的維基預抓皆對錯，已作廢；Rich Kirby & Michael & Carrie Kline 這張 1977 年碟只有 Kirby 與 Mike Kline 參與。
+- 待本機（上線簡介）：Ossian「格拉斯哥成軍」無據；Pablo Milanés《Acto de fe》與《Yo me quedo》先後可能相反；Paco Ibáñez Olympia 雙專輯 1969／1970；Patricio Manns「十一首都掛他」錯（第 8 軌掛 Edmundo Vásquez）；Perry Leopold「PAN 第一個線上網路」「8 月送掉」單源；Peter Walker《Rainy Day Raga》1966／1967；Raimon「1976 年前只有三張」錯；Richie Havens《Mixed Bag》「初次登上告示牌」不確；Robert Plant & Alison Krauss「年度單曲」應為年度唱片、「五項提名全中」無據；Roger Miller「1971 年被 Paul Simon 打破」無據。
+
+## 第七輪十批接力收尾（ar-d-054～063）
+
+- 合計 377 位上架（307 full、70 thin），23 位不寫：パパイヤ・パラノイア、丘蒸汽、光引擎、刺客、壞女兒、妮波寺、木魚、瑪啡因、花生隊長、迷幻幼稚園、鉄アレイ、面孔樂隊、頂樓的馬戲團、Agincourt、Allan Wachs、Colbie Caillat、J. T. Perkins、John Villemonte、Lewis Capaldi、Marj Snyder、Perry Leopold、Ray & Ina Patterson、Rich Kirby & Michael & Carrie Kline（全部事實單源、聲音只剩曲風標籤／曲長／影響名單／曲目題材、身分推定或國籍過不了兩源）。
+- 搖滾段全數寫完（Y、Z 與韓、日、中文名藝人）；民謠段寫到 R 字頭。卡池剩 53 批、2081 位未寫（folk 200、pop 359、world 280、electronic 517、hiphop 279、classical 605）。
+- 本輪新增的裁定形狀：thin 聲音句若只剩「影響名單」或「曲目題材」也不寫（Lewis Capaldi、Rich Kirby & Michael & Carrie Kline，比照曲風標籤）；「身分兩源、聲音單源以『據介紹／被形容為』寫」可接受（倒車入庫、煙雨飄渺、Kathy Heideman）；健康細節若直接促成聲音轉變可保留（Richard Crandell 改彈 mbira）。超額放行七例，皆依齊豫或第二源先例。中文名藝人一律寫「中國」「台灣」「香港」，兩岸與香港政治不寫。
+- 名冊身分錯誤由研究層更正多處（頂樓的馬戲團是上海團、隨性樂團是台語搖滾、Kembara 在新加坡成軍、Jimmy Carter and Dallas County Green 是 country rock、Francesco Guccini 已於 2026 年 8 月過世等），皆照研究層改寫。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；何勇簡介「至今唯一」需改過去式（2026 年過世）；卡池年份存疑（Kim Jung Mi 1968→1973、Modern Folk Üçlüsü 1974／1975，另沿第六輪 Trouble《Psalm 9》1984 等）。

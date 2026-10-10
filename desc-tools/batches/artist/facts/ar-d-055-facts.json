@@ -1,0 +1,2407 @@
+[
+ {
+  "key": "이승윤",
+  "name": "이승윤",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2026,
+   2026
+  ],
+  "script": "ko",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "0집",
+    "year": 2026,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c112-b",
+    "album": "0집",
+    "facts": [
+     {
+      "f": "**⚠ 策展層說「數位版有 12 軌與 17 軌兩種切法」——不成立。**兩筆 Official release **各自都是兩片裝**：5cad1add 是 Digital Media(12) ＋ Digital Media(17)，ceb0daeb 也是 Digital Media(12) ＋ Digital Media(17)。**12 與 17 是同一筆 release 裡的第一片與第二片，不是兩種軌數切法；全碟合計 29 軌。**廠牌兩筆都是 MAREUMO（label MBID 8376c3cc），catalog-number 與 barcode 都沒填，MB 上沒有實體載體。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=99a6df27-c6ec-43cd-9ce7-f5c82b7e6663&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "英文維基〈Lee Seung-yoon〉infobox 與 Discography：1989-08-21 生的韓國創作歌手，活動起始 2013 年，廠牌 **Mareumo**（2022 年簽約），past_member_of 欄列 Dda Band 與 **Alary-Kansion**。Studio albums 表裡本張那一列寫：Released **June 26, 2026**、Label **Mareumo**、**Format: 2×CD, digital download**——**也就是實體是兩片 CD，MB 只建了數位那一層**。同表另有《Even If Things Fall Apart》2021-11-24、《Shelter of Dreams》2023-01-26、《Docking: Liftoff》2024-05-21、《Yeok Seong》2024-10-24。**Extended plays 表裡有《How Pretty the Moon Is》2018-09-11 與《From the Dawn》2019-08-28，兩張都由 Alary-Kansion 發行、格式 CD 與數位下載**——正是本張 Disc 2 第 17 軌與第 9 軌的曲名。",
+      "src": "https://en.wikipedia.org/wiki/Lee_Seung-yoon"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "0집",
+    "manifest": "onboarding-manifest-c112-20260910.json",
+    "desc": "兩片二十九軌、將近兩小時，第二片的末軌正是他二〇一八年那張 EP 的同名曲。第 9 軌〈From the Dawn〉同樣與他 2019 年那張 EP 同名，第 1 軌與第 11 軌又是一對只差一個字的雙生曲，英文題作 Warped Tide 與 Warped Exterior。第一片十二軌 47:12、第二片十七軌 68:44；第一片曲長集中在 2:53 到 4:52，第二片從 1:40 到 5:29。廠牌 MAREUMO，他 2022 年簽進去、2013 年起活動。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/99a6df27-c6ec-43cd-9ce7-f5c82b7e6663?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=99a6df27-c6ec-43cd-9ce7-f5c82b7e6663&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=6781229596&country=us&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=484023160&country=us&entity=album&limit=200",
+     "https://en.wikipedia.org/wiki/Lee_Seung-yoon",
+     "https://musicbrainz.org/release-group/99a6df27-c6ec-43cd-9ce7-f5c82b7e6663"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "자우림",
+  "name": "자우림",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1997,
+   1997
+  ],
+  "script": "ko",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Purple Heart",
+    "year": 1997,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Purple Heart",
+    "manifest": "onboarding-manifest-c43-korea-20260823.json",
+    "desc": "자우림（紫雨林）1997 年以電影《꽃을 든 남자》原聲帶裡的〈헤이 헤이 헤이〉出道，同年 11 月推出首張正規《Purple Heart》。김윤아幾乎包辦全部詞曲，吉他手이선규另寫〈어른 아이〉與〈예뻐〉。十二曲四十二分鐘走 alternative rock 路線，〈일탈〉以近乎脫序的唸唱堆疊宣洩感，開卷〈밀랍천사〉則由강세일參與編曲。김윤아此後帶著樂團成為韓國最長壽的樂團之一。",
+    "sourceUrls": [
+     "https://ko.wikipedia.org/wiki/Purple_Heart",
+     "https://ko.wikipedia.org/wiki/자우림",
+     "https://musicbrainz.org/release-group/28dd00c7-116c-3df1-9648-d42583252640"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "잔나비",
+  "name": "잔나비",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2019,
+   2019
+  ],
+  "script": "ko",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "전설",
+    "year": 2019,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "전설",
+    "manifest": "onboarding-manifest-c43-korea-20260823.json",
+    "desc": "잔나비（Jannabi）第二張正規《전설》2019 年 3 月 13 日由페포니 뮤직發行，主唱최정훈製作並包辦全碟作詞。相較前作《MONKEY HOTEL》，rock'n'roll 的躁動收斂，古典編制比重加大，過度堆疊的製作也退了一步，整體轉向柔軟的復古質地。〈주저하는 연인들을 위해〉登上멜론五月月榜冠軍並奪한국대중음악상年度歌曲，〈꿈과 책과 힘과 벽〉、〈투게더!〉亦廣為傳唱。",
+    "sourceUrls": [
+     "https://ko.wikipedia.org/wiki/전설_(음반)",
+     "https://ko.wikipedia.org/wiki/잔나비_(밴드)",
+     "https://musicbrainz.org/release-group/1a4f4a63-c1b2-43b7-bb05-a543682ae04e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "전인권",
+  "name": "전인권",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1988,
+   1988
+  ],
+  "script": "ko",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "파랑새",
+    "year": 1988,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c104-b",
+    "album": "파랑새",
+    "facts": [
+     {
+      "f": "⚠ 韓文百科〈전인권 (음반)〉條目**把這張碟題成《전인권》（自我同名），不是《파랑새》**：「1988 《년 서라벌레코드에서 발매한》 《전인권의 세 번째 정규 음반이자》, 들국화 《이후 발표한 첫 음반》」，收錄〈돌고, 돌고, 돌고〉與〈아직도〉等共 10 曲，**主打曲〈파랑새〉被重點安排在第一軌與最後一軌**。條目另記半數曲目是他在 들국화 前後唱過的曲子的重製版——《조덕환》 寫的〈아침이 밝아올 때까지〉與〈축복합니다〉、收在《1979-1987 추억 들국화》裡的〈사랑한 후에〉；還有他在民謠團體「《따로 또 같이》」時期由 《나동민》 作曲的〈맴도는 얼굴〉改題為〈헛사랑〉收進來。",
+      "src": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9D%B8%EA%B6%8C_(%EC%9D%8C%EB%B0%98)"
+     },
+     {
+      "f": "Apple 藝人目錄端點（artistId 348033710，us，entity=album，回 15 筆）除本張外另列 1811641836「1979-1987 《추억》 들국화」1987-07-20（8 軌，掛名寫成 Jeon Inkwon 與 《허성욱》）與 1755126160「《지금까지 또 이제부터》 II」1989-10-01（8 軌）。**三張的軌數 11／8／8 不同，可用軌數分辨。**他是 들국화 的主唱——**本批 b 組同時收 들국화 的第二張。**",
+      "src": "https://itunes.apple.com/lookup?id=348033710&country=us&entity=album&limit=200"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "파랑새",
+    "manifest": "onboarding-manifest-c104-20260910.json",
+    "desc": "同一首〈파랑새〉在第一軌與最後一軌各出現一次，兩次都只有一分鐘出頭。開場那軌題作〈파랑새 (연주곡)〉1 分 4 秒、末軌題作〈파랑새 (Reprise)〉1 分 2 秒，中間九首則落在 2 分 56 秒到 6 分 7 秒之間。這九首有一半是他在上一個樂團前後唱過的曲子重錄，其中〈헛사랑〉原本掛的是另一個曲名。最長的〈사랑한 후에〉6 分 7 秒排第 4 軌，最短的〈축복합니다〉2 分 56 秒則排在收尾前一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5849ded9-df02-4ac5-95bf-c9f1256928b1?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5849ded9-df02-4ac5-95bf-c9f1256928b1&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1804567066&country=us&entity=song&limit=200",
+     "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9D%B8%EA%B6%8C_(%EC%9D%8C%EB%B0%98)",
+     "https://musicbrainz.org/ws/2/release-group?artist=740b2d8d-dc99-4e89-ac38-6be56bb3996f&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=348033710&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/5849ded9-df02-4ac5-95bf-c9f1256928b1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "あいみょん",
+  "name": "あいみょん",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2019,
+   2019
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "瞬間的シックスセンス",
+    "year": 2019,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "瞬間的シックスセンス",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "あいみょん詞曲全包的第二張全長作，2019 年 2 月 13 日由 unBORDE／華納音樂日本發行，Oricon 與 Billboard Japan 專輯榜同拿第二，日本唱片協會白金，並獲第 61 屆日本唱片大賞優秀專輯獎。田中ユウスケ、関口シンゴ、トオミヨウ 分擔聲音製作，編曲多守著木吉他、貝斯、鼓的樂團編制，把她偏乾的中低音推到最前。〈マリーゴールド〉〈今夜このまま〉〈満月の夜なら〉三首單曲之外，另收動畫電影《あした世界が終わるとしても》的插入曲〈ら、のはなし〉與同名主題曲。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/瞬間的シックスセンス",
+     "https://musicbrainz.org/release-group/c7711227-3764-4835-aff5-eabd2403f511"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "あぶらだこ",
+  "name": "あぶらだこ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1984
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "あぶらだこ",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c116-a",
+    "album": "あぶらだこ",
+    "facts": [
+     {
+      "f": "MB 藝人頁分頁全列 あぶらだこ 名下 13 個 release-group、primary-type=Album 10 筆，其中 **9 筆的題名都是《あぶらだこ》**，靠 disambiguation 分辨：**1984-09「ADK12インチ盤」（本張，5b52575e）**、1985-08「木盤」(1957121d)、1986-12「青盤」(884bd589)、1989-04-10「亀盤」(1487b682)、1996-01-01「釣り盤」(f5c8e272)、1999-12-01「OK盤」(6a2e9ec2)、2000-10-25「月盤」(60dbbcc5)、2004-05-04「穴盤」(6e7837a3)、2008-06-06（無 disambiguation，6438e6c6）；第 10 筆是 2008-06-06 的《ADK Years 1983-1985》(Compilation)。**MB 明確把 1984-09 這一張叫「ADK12インチ盤」，把 1985-08 那一張才叫「木盤」。**",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=b0262450-a2c3-4519-a6e0-07fa2b7b7144&fmt=json&limit=100&offset=0"
+     },
+     {
+      "f": "日文維基〈あぶらだこ〉：1983 年結成的日本搖滾樂團；**「オリジナルアルバムのタイトルはすべて『あぶらだこ』であり、それぞれジャケットのアートワークに即した通称がある」**。條目的「インディーズ」欄列出兩筆：**1983 年 7 月 31 日 ADK-05S，通稱『ADKソノシート』**（曲目：ラニングハイ／忍耐／エルサレムの屈辱／絶句／無／原爆）；**1984 年 9 月 10 日 ADK-17，通稱『ADK12インチ』**（曲目：WHITE WOLF／LOGOS／煉瓦造りの丘／童愚／鏡の風景／OUT OF THE BODY）。**同條目另記吉田達也是通稱『木盤』的錄音與當時現場的支援成員。** 團名由來是結成時長谷川打工的遊樂場店長「一生氣就油光滿面像章魚」。前團員 丸井義則（マル）1984 年加入 Lip Cream、1985 年 2 月退出後加入 LAUGHIN’ NOSE。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%B6%E3%82%89%E3%81%A0%E3%81%93"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "あぶらだこ",
+    "manifest": "onboarding-manifest-c116-20260910.json",
+    "desc": "九張正規盤全叫同一個名字，這張是 1984 年 9 月的十二吋。六軌約十七分鐘，頭尾的〈WHITE WOLF〉三分零八秒與〈OUT OF THE BODY〉四分零六秒是全碟最長的兩首，也是僅有的兩個大寫英文題，中間〈煉瓦造りの丘〉〈童愚〉〈鏡の風景〉三首則全是漢字題。唱腔怪異、歌詞近似現代詩，合奏跟著歌詞的自由節奏走，在很短的段落裡塞進大量變拍。發行方是 ADK Records、編號 ADK-17A，這是他們的第一張十二吋。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5b52575e-131a-369a-ac7e-25cad0dbe819?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5b52575e-131a-369a-ac7e-25cad0dbe819&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=b0262450-a2c3-4519-a6e0-07fa2b7b7144&fmt=json&limit=100&offset=0",
+     "https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%B6%E3%82%89%E3%81%A0%E3%81%93",
+     "https://en.wikipedia.org/wiki/Aburadako",
+     "https://itunes.apple.com/lookup?id=1007931802&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/5b52575e-131a-369a-ac7e-25cad0dbe819"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "アリス",
+  "name": "アリス",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1979,
+   1979
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "ALICE VII",
+    "year": 1979,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "ALICE VII",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "アリス第七張原創專輯，1979年6月5日發行，距暢銷實況盤《栄光への脱出〜武道館ライブ》一年兩個月。收錄樂團首支登上 Oricon 冠軍的單曲〈チャンピオン〉、先行單曲〈夢去りし街角〉，以及發行後才剪成單曲的〈秋止符〉與〈美しき絆 -ハンド・イン・ハンド-〉。專輯在 Oricon 專輯榜連續三週第一。谷村新司與堀内孝雄的雙主唱搭上厚實編制，是フォーク 一路走向大編制流行搖滾的成果。封面為純白壓紋，僅右下浮出燙白團名。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ALICE_VII",
+     "https://musicbrainz.org/release-group/3ef783e7-2d24-47ae-a1e9-041797fac1e4"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "カーネーション",
+  "name": "カーネーション",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1988,
+   1988
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Gong Show",
+    "year": 1988,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c70-b",
+    "album": "Gong Show",
+    "facts": [
+     {
+      "f": "Disk Union 的 SHM-CD 商品頁（徳間コミュニケーションズ TKCA10135，2015 年 7 月 15 日）寫：本作屬於「徳間ジャパン 引以為傲的日本第一家龐克／另類專門廠牌」WAX RECORDS 的再發企劃，內容是「カーネーション 一九八八年由メトロトロン・レコード 發表的第二張專輯」的完全限定生產紙盒高音質 SHM-CD 復刻；該版收十二曲，比黑膠多出〈地球はまわる〉與〈夜の煙突〉。",
+      "src": "https://diskunion.net/jp/ct/detail/1006703598"
+     },
+     {
+      "f": "同一節另一筆有引註的（引官方網站 2009 年 8 月 31 日的介紹文）記：1981 年他們以「耳鼻咽喉科」之名成軍，1983 年 12 月改名為カーネーション，理由是音樂性變得偏 pop、而且叫耳鼻咽喉科這個名字賣不掉票；團名出自耳鼻咽喉科的曲子〈花の運河で溺れたい〉的副歌。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Gong Show",
+    "manifest": "onboarding-manifest-c70-20260904.json",
+    "desc": "他們在ナゴム出的那張 7 吋單曲，是廠牌歷史上倒數第二賣不出去的唱片。1984 年ケラ對他們有了興趣，才由ナゴムレコード發行了〈夜の煙突〉。他們 1981 年以「耳鼻咽喉科」之名成軍，1983 年 12 月改名カーネーション，理由是音樂性變得偏 pop、原來的名字又賣不掉票，新名字出自舊團的一首歌。這張碟 1988 年 8 月由 Wax Records 以 28WXL-3004 發行，徳間製造經銷，製作人鈴木博文。2016 年的黑膠是完全限定生產的一百八十克重量盤。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/13450041",
+     "https://musicbrainz.org/release-group/d7ab1463-ba68-4f6b-a70f-cbc6999a152b",
+     "https://www.discogs.com/master/1101026",
+     "https://tower.jp/item/4266472",
+     "https://diskunion.net/jp/ct/detail/1006703598",
+     "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://www.discogs.com/artist/1082560"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "カルメン・マキ&oz",
+  "name": "カルメン・マキ&OZ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1975,
+   1975
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "カルメン・マキ&OZ",
+    "year": 1975,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "カルメン・マキ&OZ",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "1974 年 11 月以單曲〈午前1時のスケッチ〉出道，隔年 1 月 21 日由ポリドール推出首作。カルメン・マキ（Carmen Maki）父親是美國人、母親是日本人，樂團由當時十八歲的吉他手春日博文主導。收尾的〈私は風〉長近十二分鐘，春日作曲、マキ填詞，後來被中森明菜、SHOW-YA 的寺田恵子等人翻唱。錄音期間團員數度集體出走，成品卻賣出十萬張以上，在當年的日本搖滾唱片裡極為少見。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/カルメン・マキ",
+     "https://ja.wikipedia.org/wiki/私は風",
+     "https://musicbrainz.org/release-group/b6fa4e45-6a36-4a4f-9337-a8d167b74136"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ゴダイゴ",
+  "name": "ゴダイゴ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1978,
+   1978
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "西遊記",
+    "year": 1978,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "西遊記",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "ゴダイゴ由鍵盤手ミッキー吉野與主唱タケカワユキヒデ領軍，成員還有浅野孝已、スティーヴ・フォックス與トミー・スナイダー，歌詞多由奈良橋陽子以英文寫成。1978 年 10 月 25 日經日本コロムビア發行的《西遊記》登上オリコン專輯榜冠軍，〈ガンダーラ〉與〈モンキー・マジック〉連續七週同時進入單曲榜前十；電視劇輸出英國後，樂團也以《Monkey》主題曲在當地打開知名度。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ゴダイゴ",
+     "https://musicbrainz.org/release-group/97eb89e8-226f-37fa-9f76-d905a8e3ac77"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ザ・ゴールデン・カップス",
+  "name": "ザ・ゴールデン・カップス",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1968,
+   1968
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "ザ・ゴールデン・カップス・アルバム",
+    "year": 1968,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "ザ・ゴールデン・カップス・アルバム",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "橫濱本牧的餐酒館「ゴールデン・カップ」駐店樂團，1966 年 12 月由デイヴ平尾召集，成員含夏威夷出生的日裔ケネス伊東，以及日後與 Char 組團的貝斯手ルイズルイス加部。1968 年 3 月 10 日發行的首張以洋樂翻唱為骨幹：Procol Harum〈青い影〉、Muddy Waters〈モジョ・ワーキング〉、〈ヘイ・ジョー〉、平尾赴美時苦練的〈アンチェインド・メロディー〉，只有出道曲〈いとしのジザベル〉走歌謡曲路線。同期グループ・サウンズ多倚賴外部作家，他們靠的是駐店夜夜練出來的 blues rock 手感。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ザ・ゴールデン・カップス",
+     "https://musicbrainz.org/release-group/b5e26a60-8bb8-4d30-a077-59b3bb456de8"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ザ・テンプターズ",
+  "name": "ザ・テンプターズ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1968,
+   1968
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "ファースト・アルバム",
+    "year": 1968,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "ファースト・アルバム",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "埼玉大宮的業餘團體出身，1967 年被ザ・スパイダース田辺昭知創設的スパイダクション簽下，以「スパイダース弟分」的名義推出。1968 年 6 月 25 日由フィリップス發行的首張，把松崎由治自作的〈神様お願い!〉〈忘れ得ぬ君〉與〈サマータイム〉〈ブーン・ブーン〉〈レディー・ジェーン〉等翻唱擺在一起——當年グループ・サウンズ多由外部歌謡曲作家供稿，松崎能連續發表自作曲屬少數。萩原健一（ショーケン）沙啞而帶脆弱感的嗓音，加上大口広司急促的鼓，是這團最好認的兩處。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ザ・テンプターズ",
+     "https://musicbrainz.org/release-group/bef1d5b0-fa39-4359-8619-4f2e185e7f7b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ザ・モップス",
+  "name": "ザ・モップス",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1968,
+   1968
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "サイケデリック・サウンド・イン・ジャパン",
+    "year": 1968,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "サイケデリック・サウンド・イン・ジャパン",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "1968 年 4 月由日本ビクター發行，旗號是「日本最初のサイケデリック・サウンド」——這句出自ホリプロ社長堀威夫 1967 年夏天親眼看過美國迷幻場景後的提案，團員接受了。實際內容是鈴木ヒロミツ的粗嗓配星勝的吉他，翻唱 Jefferson Airplane〈ホワイト・ラビット〉、The Doors〈ハートに火をつけて〉、Animals〈サンフランシスコの夜〉，詞作則起用了當時還是新人的阿久悠。因歌詞含放送禁止用語，1978 年改裝再發後即斷版，直到 2014 年才以收齊〈ブラインド・バード〉的十四曲完整版重見天日。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ザ・モップス",
+     "https://musicbrainz.org/release-group/f907a4ce-0095-3d99-89f4-b8981417b46e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "サカナクション",
+  "name": "サカナクション",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2013,
+   2013
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "sakanaction",
+    "year": 2013,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "sakanaction",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "2013 年 3 月ビクターエンタテインメント發行的第六張原創專輯，以同名自命，主題訂為「表裏一體」。五名團員直接窩在主唱山口一郎家裡製作，因為在家沒辦法放聲唱，多首歌改用假聲處理；開場的〈intro〉用上雙耳錄音音源，〈INORI〉與〈ストラクチャー〉的編曲另找 AOKI takamasa 合作。〈ミュージック〉〈夜の踊り子〉把電子節拍直接接進樂團編制。出道第六年首度奪下オリコン冠軍，日本唱片協會金唱片，並入圍第六屆 CD SHOP 大賞。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/sakanaction_(アルバム)",
+     "https://musicbrainz.org/release-group/5b41bc32-b561-427e-8e3e-2bc4c505ba7e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "サディスティック・ミカ・バンド",
+  "name": "サディスティック・ミカ・バンド",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1974,
+   1974
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "黒船",
+    "year": 1974,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "黒船",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "以幕末黑船來航為引子、談「東洋與西洋相遇」的概念作，1974年11月5日由東芝EMI／DOUGHNUT RECORDS發行。加藤和彦找來替Pink Floyd工作過的Chris Thomas製作，Thomas自稱「第七位ミカ・バンド」，把剪接母帶、punch in等當時日本錄音室仍屬禁忌的技法帶進現場，前後耗掉450小時。先行單曲〈タイムマシンにおねがい〉由高中正義反覆疊錄吉他堆出音牆。Rolling Stone Japan日本搖滾百大將其排在第9位。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/黒船_(サディスティック・ミカ・バンドのアルバム)",
+     "https://en.wikipedia.org/wiki/Sadistic_Mika_Band",
+     "https://musicbrainz.org/release-group/1a5797d7-9cf0-43d7-bd63-3332e412cfb3"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ジャックス",
+  "name": "ジャックス",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1968,
+   1968
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "ジャックスの世界",
+    "year": 1968,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "ジャックスの世界",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "1968 年 4 月 28 日與 5 月 25 日分兩天在ニッポン放送第 1 スタジオ錄完，錄音時早川義夫與谷野ひとし二十歲，水橋春夫與木田高介才十九。早川的歌像從喉底刮出來，〈マリアンヌ〉五分二十秒幾乎只靠貝斯與人聲推進；〈からっぽの世界〉因歌詞含當年自主規制用語，使原盤長年無法再發。木田同時打鼓與吹長笛，把爵士的呼吸帶進編制，音色比同期グループ・サウンズ乾冷得多。發行時幾乎沒賣，1968 年 9 月 10 日東芝 Express 出品。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ジャックスの世界",
+     "https://en.wikipedia.org/wiki/Vacant_World",
+     "https://musicbrainz.org/release-group/c97de84b-c40e-40bc-aaf8-85106be5b958"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ずっと真夜中でいいのに。",
+  "name": "ずっと真夜中でいいのに。",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2026,
+   2026
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "形藻土",
+    "year": 2026,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c112-b",
+    "album": "形藻土",
+    "facts": [
+     {
+      "f": "**⚠ 策展層說「CD 有 18 軌、10 軌、8 軌三種切法」——不成立，這是把一套四片裝當成三種不同的碟。**逐筆攤開：**四筆 Official 的專輯本體一律 18 軌**——4aa84f2e（HK 數位 18 軌）、7f497ad6（JP CD 18 軌，UPCH-29503）、b1e0b8df（JP CD 18 軌，UPCH-20717）都是單片 18 軌；只有 **45e67e14（JP，UPCH-29504）是四片裝：medium 1 CD 18 軌（正片）、medium 2 CD 18 軌（同十八首的 [Instrumental] 伴奏片）、medium 3 CD 10 軌、medium 4 CD 8 軌（後兩片是現場錄音）**。**10 與 8 是同一筆 release 裡的第三、第四片，不是另外兩種軌數切法**；沒有任何 Official release 的專輯本體不是 18 軌。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=dbed9319-475b-4098-828e-41db4f6555db&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "日文維基〈形藻土〉條目：本作是這個單位的**第 4 張全長專輯**，2026-03-25 發售、發行方是環球音樂日本旗下的 EMI Records，製作掛「ずっと真夜中でいいのに。」；距前作《虚仮の一念海馬に託す》（2025）約 1 年 5 個月、距全長專輯《沈香学》約 2 年 9 個月。**十八軌裡有十一軌是先前已發表過的曲、另外七首是為本作新寫的，整張重新做過 remastering。**三種形態的規格品番與 MB 對得上：數量限定フィギュア盤 UPCH-29503、初回限定魔導書盤 UPCH-29504（**4CD**，含 off-vocal CD 與「コズミックどろ団子ツアー」東京ガーデンシアター 場次的現場錄音 CD）、通常盤 UPCH-20717。全碟作詞一律 ACAね，編曲除〈またね幻 (Live in Studio_80光年先の君へ)〉單掛 ZTMY 外，其餘十七軌都由 100回嘔吐 與 ZTMY 共同編曲（第 4 軌〈TAIDADA〉另加 煮ル果実）。",
+      "src": "https://ja.wikipedia.org/wiki/形藻土"
+     },
+     {
+      "f": "日文維基〈ずっと真夜中でいいのに。〉infobox：單位 2018 年起活動，**成員欄只有 ACAね 一人（主唱／吉他）**，廠牌 EMI Records，共同作業者列 ぬゆり、100回嘔吐、Open Reel Ensemble、Waboku 等。年表把本張記在 2026 年 3 月 25 日。",
+      "src": "https://ja.wikipedia.org/wiki/ずっと真夜中でいいのに。"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "形藻土",
+    "manifest": "onboarding-manifest-c112-20260910.json",
+    "desc": "十八軌裡有十一首是舊曲重收，只有七首為這張新寫，整張重做過母帶。十八軌合計 64:28，開場的〈地球存在しない説〉1:07、收尾的〈lowmotion algae〉10:40，一首就佔掉全碟六分之一，中間另有三軌不到兩分鐘。載體有三種形態，初回限定的魔導書盤是四片裝：正片、整套伴奏，再加兩片現場錄音，現場版的同曲普遍比正片長一到兩倍。這個單位 2018 年起活動，登記的成員只有主唱一人，全碟作詞由她一手包辦，編曲則有十七軌由 100回嘔吐 與 ZTMY 共掛。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/dbed9319-475b-4098-828e-41db4f6555db?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=dbed9319-475b-4098-828e-41db4f6555db&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1881609986&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/形藻土",
+     "https://ja.wikipedia.org/wiki/ずっと真夜中でいいのに。",
+     "https://musicbrainz.org/release-group/dbed9319-475b-4098-828e-41db4f6555db"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "チェッカーズ",
+  "name": "チェッカーズ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1984
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "絶対チェッカーズ!!",
+    "year": 1984,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "絶対チェッカーズ!!",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1984年由キャニオン・レコード推出的出道專輯，收錄出道單曲〈ギザギザハートの子守唄〉與第二張單曲〈涙のリクエスト〉的專輯版本——後者在鼓組編曲、間奏與結尾長度上都和單曲不同。〈ギザギザハートの子守唄〉發表當時毫無反應，是〈涙のリクエスト〉走紅後才被回頭認識。〈He Me Two(禁じられた二人)〉由鶴久政治主唱、全程假聲；〈ムーンライト・レヴュー50s'〉則是無伴奏合唱。本作在オリコン LP榜創下週間推定銷量最高紀錄，直到該榜1989年廢止都未被打破。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/絶対チェッカーズ!!",
+     "https://musicbrainz.org/release-group/66d963a2-6faa-3655-b659-e9577cbab829"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "チューリップ",
+  "name": "チューリップ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1974,
+   1974
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "TAKE OFF（離陸）",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "TAKE OFF（離陸）",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "チューリップ第三張專輯，1974年4月5日由東芝EXPRESS發行（ETP-72061），是〈心の旅〉走紅後推出的首張作品。封面用客機駕駛艙照片，標題橫排成「TAKE 離陸 OFF」。錄音自1973年秋插在巡演空檔進行，部分曲目在洛杉磯的 Sunset 錄音室完成。財津和夫所寫的〈青春の影〉收於此作，日後長期被翻唱；開場同名曲是團史首支全英文詞作品，只有37秒。寫作取法 Beatles 與 Wings 的旋律路線。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/TAKE_OFF(離陸)",
+     "https://musicbrainz.org/release-group/c2287856-6df9-45c7-8765-1c187d06000f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "トメ北川",
+  "name": "トメ北川",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1976,
+   1976
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "青春から",
+    "year": 1976,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c79-b",
+    "album": "青春から",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 9798431，1976 年，日本，12 吋黑膠 LP, Album）廠牌欄為 Trio Records 3A-1016，掛名登為拉丁「Tome Kitagawa」，說明欄寫「Solo LP of the vocalist of THE HAPPENINGS FOUR.」；曲風標 Rock／Funk・Soul／Pop，風格標 Acid Rock 與 Psychedelic Rock。條目上沒有登錄任何演奏、製作或錄音室 credit。",
+      "src": "https://www.discogs.com/release/9798431"
+     },
+     {
+      "f": "日文維基〈ザ・ハプニングス・フォー〉條目記：這個團 1964 年在福岡博多以河内兄弟（クニ河内、チト河内）為中心組成的ラテン・ロック 團「サンライズ」為母體，1966 年被ミッキー・カーチス 發掘上京，1967 年由黛敏郎 等人命名為「ザ・ハプニングス・フォー」，同年 11 月以單曲〈あなたが欲しい〉出道，1972 年解散，2001 年再啟動。トメ北川 在該團的擔當欄是ボーカル 與パーカッション。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%83%8F%E3%83%97%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%BB%E3%83%95%E3%82%A9%E3%83%BC"
+     },
+     {
+      "f": "同一份條目記這個團是「キーボード編成のギターレスなGSバンド」——沒有吉他手的鍵盤編制在グループ・サウンズ 裡少見；後期轉向プログレッシブ 的路數，被評為日本產プログレ 的先驅之一。條目也註明水谷公生 曾有一段時間以吉他支援成員身分參加。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%83%8F%E3%83%97%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%BB%E3%83%95%E3%82%A9%E3%83%BC"
+     },
+     {
+      "f": "Discogs 的 Trio Records 廠牌條目（實體 42987）記：Trio Records 是音響廠商 Trio Electronics（後來的 Trio-Kenwood、現在的 Kenwood）於 1969 年 9 月設立的日本唱片廠牌，1984 年停止營運。",
+      "src": "https://www.discogs.com/label/42987"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "青春から",
+    "manifest": "onboarding-manifest-c79-20260910.json",
+    "desc": "一個沒有吉他手的 GS 團，主唱用另一個名字出了這張碟。那個團叫ザ・ハプニングス・フォー，母體是 1964 年在福岡博多以河内兄弟為中心的樂團，1967 年由黛敏郎等人命名，1972 年解散，他在團裡掛人聲與打擊。Discogs 的原盤條目記 Trio Records 3A-1016、1976 年，十軌，說明欄寫著：這是ザ・ハプニングス・フォー主唱的個人 LP。風格欄標的是 Acid Rock 與 Psychedelic Rock，開場〈青春〉，收尾〈天気予報〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9798431",
+     "https://www.discogs.com/master/3775901",
+     "https://musicbrainz.org/release-group/9db35d68-8acd-4c78-b70c-7b355fd66f40",
+     "https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%83%8F%E3%83%97%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B9%E3%83%BB%E3%83%95%E3%82%A9%E3%83%BC",
+     "https://www.discogs.com/label/42987",
+     "https://www.discogs.com/label/57341",
+     "https://music.apple.com/jp/album/%E9%9D%92%E6%98%A5%E3%81%8B%E3%82%89/1327791846"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "のいづんずり",
+  "name": "のいづんずり",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1985
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "抱擁",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c70-a",
+    "album": "抱擁",
+    "facts": [
+     {
+      "f": "P-Vine 的 2025 年 1 月 22 日 LP（PLP-7420）商品頁寫：這是 1985 年 Telegraph 原盤的首次 LP 再發、附帶封；のいづんずり是來自京都的前衛日本搖滾，被拿來與 industrial 先驅相比，作品被形容為「industrial 與民謠之間的失落環節」，解說由團長福田研與 Amaryllis 的 Alice Saylor 撰寫。",
+      "src": "https://anywherestore.p-vine.jp/en/products/plp-7420"
+     },
+     {
+      "f": "Jazzy Sport Kyoto 的商品頁寫：のいづんずり是被評為「日本ノイバウテン」的前衛流行樂團、京都出身的土著型日本搖滾代表；成員說明列福田研（團長、作編曲）、戸川純與伊神いんどり（主唱）、田畑満（吉他）；並引成員的說法，稱曲子是「華麗的闖紅燈」、一張「離不開土、不跳舞不行」的民謠・農・wave 專輯。",
+      "src": "https://jazzysportkyoto.com/products/lp-%E3%81%AE%E3%81%84%E3%81%A5%E3%82%93%E3%81%9A%E3%82%8A-%E6%8A%B1%E6%93%81"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "抱擁",
+    "manifest": "onboarding-manifest-c70-20260904.json",
+    "desc": "戸川純掛的是「美声」與小鼓，合唱另分大聲、小聲、変声。大聲的是彈貝斯與鍵盤的福田研，小聲的是鼓手川上拓巳，変声的是吉他手田畑満，另有 Okuta 的吉他與打樂器、伊神いんどり的「歌と唱」。原盤 1985 年 11 月由東京的 Telegraph 發行，兩面分別叫「ぬえ面」與「きりん面」，きりん面上排著〈きんにゃもにゃ〉〈どんたく ばやし〉〈よさこい のいづ踊り〉這些祭典曲名。再發廠牌形容它是 industrial 與民謠之間的失落環節。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4464044",
+     "https://www.discogs.com/release/7855018",
+     "https://anywherestore.p-vine.jp/en/products/plp-7420",
+     "https://jazzysportkyoto.com/products/lp-%E3%81%AE%E3%81%84%E3%81%A5%E3%82%93%E3%81%9A%E3%82%8A-%E6%8A%B1%E6%93%81",
+     "https://www.discogs.com/master/928852",
+     "https://musicbrainz.org/release-group/7f277e1a-e11f-4c70-b7f8-f33770d702dc"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ノヴェラ",
+  "name": "ノヴェラ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "魅惑劇",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 17,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c73-a",
+    "album": "魅惑劇",
+    "facts": [
+     {
+      "f": "Discogs 的 1980 年原盤條目（Nexus (3)，編號 GP 800，release 4090726）記發行「1980 年 3 月」、由 King Record Co. Ltd 製造，附帶側標與八頁內頁，條目註明這是首張專輯。",
+      "src": "https://www.discogs.com/release/4090726"
+     },
+     {
+      "f": "Discogs 的廠牌條目寫 Nexus (3) 是 King Records Co. Ltd 的子廠牌（parent label 欄即 King Record Co. Ltd），定位為「JAPANESE PROGRESSIVE ROCK & HEAVY METAL/HARD ROCK LABEL」。",
+      "src": "https://www.discogs.com/label/258549"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "魅惑劇",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "Nexus 是 King Records 的子廠牌，這張碟的編號是 GP 800。一九八〇年三月發行，King Records 製造，附側標與八頁內頁。六首歌分成兩截：前三首都在四分半以下，後三首依序是十一分八秒、九分八秒，以及壓軸的〈La Songerie〉十四分四十九秒。BARKS 二〇一三年的報導把 NEXUS 稱為炒熱八〇年代日本搖滾場景的名門廠牌，並記下 King Records 為它做的紙盒復刻系列先後出了二十款與十款。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4090726",
+     "https://diskunion.net/progre/ct/detail/PGL-5141",
+     "https://www.discogs.com/label/258549",
+     "https://barks.jp/news/704065/",
+     "https://www.discogs.com/master/499307",
+     "https://www.discogs.com/release/8260850",
+     "https://musicbrainz.org/release-group/4ebc878e-b438-3b62-8866-dc750feabc54"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "はちみつぱい",
+  "name": "はちみつぱい",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "センチメンタル通り",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "センチメンタル通り",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "團名譯自披頭四〈Honey Pie〉，鈴木慶一1970年與あがた森魚組團起家，1973年10月25日在Bellwood交出唯一一張錄音室作品。武川雅寛的小提琴與駒沢裕城的pedal steel決定了聲響，坂田明另外吹了中音薩克斯風。〈塀の上で〉〈センチメンタル通り〉寫當時東京下町的空氣，取法對象是Grateful Dead與The Band。樂團1974年解散，主力其後組成ムーンライダーズ。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%82%BB%E3%83%B3%E3%83%81%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E9%80%9A%E3%82%8A",
+     "https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%A1%E3%81%BF%E3%81%A4%E3%81%B1%E3%81%84",
+     "https://musicbrainz.org/release-group/7bcee2ba-0229-4ce6-afed-40bddb05da93"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "パパイヤ・パラノイア",
+  "name": "パパイヤ・パラノイア",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1985
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "もはやこれまで",
+    "year": 1985,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c70-b",
+    "album": "もはやこれまで",
+    "facts": [
+     {
+      "f": "二手店 ticro 的 1985 年黑膠商品頁把這張碟形容為混合了 shout、fusion、實驗、放克、ska-punk 與 new wave 的「ミクスチャーサウンド」，是石嶋由美子領軍的 girls punk 樂團的紀錄，附小冊與帶。",
+      "src": "https://ticro.com/products/p00004597"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "もはやこれまで",
+    "manifest": "onboarding-manifest-c70-20260904.json",
+    "desc": "被寫成「和製パティ・スミス」的主唱，唱片版權欄上另掛著ヤマハ音楽振興会。1985 年 12 月由東京的 Captain Records 以 CAP-0010-L 發行，錄音與混音都在 Star Ship Studio。石嶋由美子主唱、貝斯、包辦全部作詞，Kinuko Maki 吉他、Harumi Enomoto 鍵盤、Chiaki Kishida 鼓；〈ダンスがスンダ〉另找了三位 S.E. 演出者。二手店形容它是 shout、放克與 ska-punk 的混合。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4591856",
+     "https://www.discogs.com/release/7316480",
+     "https://musicbrainz.org/release-group/82f071e3-ab3d-44e5-a42b-449102db5ac6",
+     "https://www.cdjournal.com/main/news/papaya-paranoia/31445",
+     "https://diskunion.net/jp/ct/news/article/1/15754",
+     "https://ticro.com/products/p00004597"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ヒカシュー",
+  "name": "ヒカシュー",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "ヒカシュー",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "ヒカシュー",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "1980 年 2 月 5 日由東芝 EMI 旗下 East World 發行的首張專輯，製作人是近田春夫。ヒカシュー與 P-MODEL、プラスチックス 並稱「テクノ御三家」，但這張的作法比 technopop 標籤更雜：巻上公一的唸白式唱腔、井上誠與山下康的合成器與 Mellotron，加上若林忠宏在〈プヨプヨ〉彈西塔琴、〈炎天下〉奏口簧琴。第二首〈モデル〉是 Kraftwerk〈Das Model〉的翻唱，1982 年才另行發行單曲。封面是一鏡到底的俯瞰照，團員穿著 1964 年東京奧運日本選手團制服。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%83%92%E3%82%AB%E3%82%B7%E3%83%A5%E3%83%BC%20(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+     "https://ja.wikipedia.org/wiki/%E3%83%92%E3%82%AB%E3%82%B7%E3%83%A5%E3%83%BC",
+     "https://en.wikipedia.org/wiki/Hikashu",
+     "https://musicbrainz.org/release-group/b800ab5e-9c40-4a1e-86ea-e6c178906ae4"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "プリンセス プリンセス",
+  "name": "プリンセス プリンセス",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1988,
+   1988
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "HERE WE ARE",
+    "year": 1988,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "HERE WE ARE",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1988年2月26日由CBS/Sony發行的第二張作品，黑膠（28AH 5004）與CD同日推出，收在樂團1989年〈Diamonds〉走紅之前。曲目多半掛著廣告與媒體曝光：第三張單曲〈MY WILL〉是VICTORIA的廣告曲，第五張單曲〈GO AWAY BOY〉為資生堂1988年夏季企劃曲，〈19 GROWING UP -ode to my buddy-〉之後也被用於ロッテ的糖果廣告。詞曲由奥居香、今野登茂子、中山加奈子、富田京子、渡辺敦子五名團員自行分擔，1996年解散演唱會上仍唱了本作六首。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/HERE_WE_ARE",
+     "https://musicbrainz.org/release-group/5d864e0a-7278-482f-91a6-4aea364aa27b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ムーンライダーズ",
+  "name": "ムーンライダーズ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "カメラ=万年筆",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "カメラ=万年筆",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "ムーンライダーズ 1980 年 8 月 25 日發表的第六張專輯，也是他們在 Crown Records 的最後一張錄音室作品。整張以架空電影原聲帶為題，每首曲子都對應一部電影，專輯名取自法國影評的「攝影機鋼筆論」。〈第三の男〉用的是 Anton Karas 的原曲，〈太陽の下の18才〉出自 Ennio Morricone，其餘多為鈴木慶一、鈴木博文、岡田徹、白井良明等成員的原創。末尾〈大都会交響楽〉利用黑膠內圈溝槽做出近乎無限的循環收尾。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/CAMERA_EGAL_STYLO_/_カメラ＝万年筆",
+     "https://musicbrainz.org/release-group/44f6f294-e4e8-4466-8c9b-58eac2c02011"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "メトロファルス",
+  "name": "メトロファルス",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1987,
+   1987
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "STANDS",
+    "year": 1987,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c70-b",
+    "album": "STANDS",
+    "facts": [
+     {
+      "f": "メトロファルス官方網站的《STANDS》頁寫：CD 版品號 CAP-1036、2280 日圓（未稅），錄於六本木 MOD Studio、1986 年 11 月到 1987 年 1 月；因為排程困難，錄音以「晚上九點到早上九點」的強行軍進行；概念是「プログレ」，與前作的色調大幅轉變；這是創團成員鼓手チャバネ參加的最後一張專輯；封套照片在伊豆半島拍攝，因為是日出時面向海拍的，每個人都一臉寒冷、一臉刺眼。",
+      "src": "https://metrofarce.jimdofree.com/%E6%9D%B1%E6%B4%8B%E3%83%AB%E3%83%8A%E3%83%91%E3%83%BC%E3%82%AF/stands/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "STANDS",
+    "manifest": "onboarding-manifest-c70-20260904.json",
+    "desc": "樂團說排程困難，錄音只好從晚上九點做到早上九點。1987 年 2 月由東京的 Captain Records 以 CAP-0047-L 發行，錄於六本木的 Mod Studio。樂團自己的說法是這張的概念是「プログレ」，封套照片在伊豆半島拍，日出時面向海，每個人都一臉寒冷、一臉刺眼；這也是創團鼓手チャバネ參加的最後一張。伊藤ヨタロウ主唱並包辦全部作詞，バカボン鈴木的貝斯兼 Chapman Stick，客席另有小玉和文的小號與白井良明的西塔琴。七首歌沒有一首短於五分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5786184",
+     "https://metrofarce.jimdofree.com/%E6%9D%B1%E6%B4%8B%E3%83%AB%E3%83%8A%E3%83%91%E3%83%BC%E3%82%AF/stands/",
+     "https://lionmerry.com/discography.html",
+     "https://tower.jp/item/2823262",
+     "https://musicbrainz.org/release-group/db2301dd-f98f-400b-bcbe-015feb09a1a0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "レベッカ",
+  "name": "レベッカ",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1985
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "REBECCA IV 〜Maybe Tomorrow〜",
+    "year": 1985,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "REBECCA IV 〜Maybe Tomorrow〜",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1985年11月1日由CBS・ソニー旗下FITZBEAT廠牌以LP、CD、卡帶三種形態同步推出，是レベッカ的第四張作品。全十曲裡收錄日本テレビ連續劇《ハーフポテトな俺たち》的片頭曲〈ガールズ ブラボー!〉與片尾曲〈フレンズ〉，以及長期擔任演唱會壓軸的〈Maybe Tomorrow〉。NOKKO的唱腔配上土橋安騎夫的合成器與長延遲吉他，是當時樂團編制流行樂的典型做法；本作為樂團首張オリコン冠軍，銷量達130萬張。2017年由Sony Music Direct的GREAT TRACKS重刻黑膠再版。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/REBECCA_IV_〜Maybe_Tomorrow〜",
+     "https://musicbrainz.org/release-group/2cc58a33-5fce-4cfe-b270-290779f040ae"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "丘蒸汽",
+  "name": "丘蒸汽",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "のすたるじあ",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c79-a",
+    "album": "のすたるじあ",
+    "facts": [
+     {
+      "f": "這張是 MusicBrainz 上丘蒸汽名下**唯一一個 release-group**（以 release-group?artist= 分頁 browse 確認），藝人 MBID e0d375b9-6be9-4290-9735-5a1c329decc4，sort-name 記作 Okajohki。",
+      "src": "https://musicbrainz.org/artist/e0d375b9-6be9-4290-9735-5a1c329decc4"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "のすたるじあ",
+    "manifest": "onboarding-manifest-c79-20260910.json",
+    "desc": "原盤條目上沒有演奏者，能查到的名字全來自 2011 年那張 CD。原盤是 1973 年 6 月的 Aard-Vark AV-3005，十三軌，沒有登錄時間。2011 年才有第二個版本，十八軌，說明欄明寫第 14 到 18 軌是 bonus tracks，授權來自 Pony Canyon 與 Universal 兩邊。那筆條目有五個掛名：一位掛 Producer、三位掛 Liner Notes，其中兩位另掛 Performer。收尾那首叫〈No.3232〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8223313",
+     "https://www.discogs.com/master/1248909",
+     "https://www.discogs.com/release/10970870",
+     "https://musicbrainz.org/release-group/81cd53c9-500a-4f70-af62-0308239c24f8",
+     "https://musicbrainz.org/artist/e0d375b9-6be9-4290-9735-5a1c329decc4"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "二手玫瑰",
+  "name": "二手玫瑰",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2003,
+   2003
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "二手玫瑰",
+    "year": 2003,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c107-b",
+    "album": "二手玫瑰",
+    "facts": [
+     {
+      "f": "釘定的 release-group 4eaedf29 欄位：title《二手玫瑰》（簡繁同形）、artist-credit《二手玫瑰》（藝人實體 e49f6e64，country CN、type Group、成軍 2000-07）、first-release-date **2003-01**、primary-type Album、secondary-types **空**、轄下 1 個 release。別名欄登錄 Second Hand Rose（en）、Second-Hand Rose 與羅馬字 ershou meigui。",
+      "src": "https://musicbrainz.org/ws/2/release-group/4eaedf29-4aaf-39d9-833a-c8ee3dfeafbc?fmt=json&inc=artist-credits+genres+url-rels"
+     },
+     {
+      "f": "那唯一一筆 release：CN／Official／2003-01，CD 單片 **10 軌**，條碼 9787799610085，廠牌欄記天津市泰達音像發行中心。逐軌長度：1〈伎俩〉4:17、2〈火车快开〉5:47、3〈允许部分艺术家先富起来〉4:31、4〈征婚启示〉4:48、5〈招安〉6:24、6〈采花〉4:29、7〈因为所以〉4:07、8〈嫂子颂〉5:41、9〈公益歌曲〉3:32、10〈好花红〉7:03。**十軌合計約 50 分半，收尾的〈好花红〉7:03 最長。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=4eaedf29-4aaf-39d9-833a-c8ee3dfeafbc&fmt=json&inc=media+labels+recordings&limit=100"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "二手玫瑰",
+    "manifest": "onboarding-manifest-c107-20260910.json",
+    "desc": "唱腔與旋律來自東北二人轉，樂隊裡有一支專責的嗩吶。團名的「二手」是自嘲從前一直模仿別人，「玫瑰」則代表愛慕。十軌合計約 50 分半，前四軌壓在 4 分 07 秒到 5 分 47 秒之間，中段的〈招安〉6 分 24 秒把時間拉開，收尾的〈好花红〉7 分 03 秒最長。曲名幾乎每一首都是一句現成語彙的挪用——〈允许部分艺术家先富起来〉〈征婚启示〉〈公益歌曲〉。第六軌〈采花〉是主唱在哈爾濱郊區借住時寫成的那批二人轉風格作品之一。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4eaedf29-4aaf-39d9-833a-c8ee3dfeafbc?fmt=json&inc=artist-credits+genres+url-rels",
+     "https://musicbrainz.org/ws/2/release?release-group=4eaedf29-4aaf-39d9-833a-c8ee3dfeafbc&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=264594758&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E4%BA%8C%E6%89%8B%E7%8E%AB%E7%91%B0",
+     "https://musicbrainz.org/ws/2/release-group?artist=e49f6e64-12db-4879-8e66-6bcc614f61d0&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/4eaedf29-4aaf-39d9-833a-c8ee3dfeafbc"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "伍佰",
+  "name": "伍佰",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1992,
+   1992
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "愛上別人是快樂的事",
+    "year": 1992,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c89-a",
+    "album": "愛上別人是快樂的事",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group bca6f360 的欄位：title《愛上別人是快樂的事》、artist-credit「伍佰」、first-release-date 1992-08-13、primary-type Album、secondary-types 空，轄下兩筆 release：1992-08-13 TW Official 的 CD（廠牌欄波麗佳音、編號 PCTD00006）與 1992-08 TW Official 的卡帶（廠牌欄魔岩唱片、條碼 4715122009683），兩者都是 11 軌。",
+      "src": "https://musicbrainz.org/release-group/bca6f360-8798-341e-8f70-df969ce24057"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "愛上別人是快樂的事",
+    "manifest": "onboarding-manifest-c89-20260910.json",
+    "desc": "原盤條目的藝人欄印的是三段並列：吳俊霖 = 伍佰 = Wu Bai。2020 年 12 月 25 日那張 RLP098 黑膠的藝人欄，則只印本名吳俊霖。1992 年原盤的 (p) 與 (c) 都是 Pony Canyon Taiwan；1998 年再版時 (p) 換成 Rock Records、(c) 換成 Magic Stone。十一軌的曲名台語與國語並存，CD 與卡帶的第 8 軌還各寫了一種寫法。最長的〈樓仔厝〉5:38，開場的〈不滿〉3:00 最短。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bca6f360-8798-341e-8f70-df969ce24057",
+     "https://www.discogs.com/release/10653601",
+     "https://www.discogs.com/release/34366636",
+     "https://www.discogs.com/release/19526647",
+     "https://musicbrainz.org/release/818ecad3-c412-4789-8f0f-a2db87e1b4f3",
+     "https://musicbrainz.org/release/bc25d1fc-8b4b-4bf9-837a-944c0f9ef226"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "何勇",
+  "name": "何勇",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1994,
+   1994
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "垃圾場",
+    "year": 1994,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "垃圾场",
+    "manifest": "onboarding-manifest-c41-chinese-20260823.json",
+    "desc": "魔岩一九九四年五月發行，何勇至今唯一一張專輯。速度與音量都往龐克那頭壓，〈垃圾場〉〈頭上的包〉近乎吼唱，〈幽靈〉是純器樂，末軌再放一次〈垃圾場〉的二版。〈非洲夢〉〈姑娘漂亮〉〈鐘鼓樓〉三首正是同年十二月十七日香港紅磡「搖滾中國樂勢力」演唱會的曲目，也是這張後來被反覆引述的原因；當晚他與竇唯、張楚合稱魔岩三傑。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/垃圾场_(音乐专辑)",
+     "https://zh.wikipedia.org/wiki/魔岩三杰",
+     "https://musicbrainz.org/release-group/0ecdd739-d429-48a3-94bd-b90ebacaf3f0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "倒車入庫",
+  "name": "倒車入庫",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2018,
+   2018
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "庸人自擾",
+    "year": 2018,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c127-b",
+    "album": "庸人自擾",
+    "facts": [
+     {
+      "f": "倒車入庫是 2013 年成立於台北六張犁的車庫龐克樂團，以生猛的車庫搖滾為底、配上辛辣甚至帶暴力感的詞句；編制裡有主唱 里鳳 與吉他手 阿愷。",
+      "src": "https://vocus.cc/article/68d5aa36fd89780001b70f55"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "庸人自擾",
+    "manifest": "onboarding-manifest-c127-20260917.json",
+    "desc": "第一軌叫〈前言〉、最後一軌叫〈後記〉，十軌被裝訂成一份文件。中間那八首裡題名最兇的是〈拿熱水來潑我吧〉與〈吃檳榔吐血死〉，車庫搖滾的粗糙質地打底、詞句直白帶刺，第 8 軌就是碟名那首。碟的裝幀設計入圍第 30 屆金曲獎最佳裝幀設計獎，名單上登錄的是設計者陳世川，沒有得獎。樂團 2013 年成立於台北六張犁，主唱里鳳、吉他阿愷。實體 2018 年 8 月 24 日先出，數位晚了將近八個月。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=2a19725d-bc94-464d-b92c-643aae2b9851&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://vocus.cc/article/68d5aa36fd89780001b70f55",
+     "https://www.cna.com.tw/news/firstnews/201905155002.aspx",
+     "https://musicbrainz.org/ws/2/artist/c1a97722-63c6-4d36-9c58-0d4aa66c7ef8?fmt=json&inc=release-groups+aliases&limit=100",
+     "https://itunes.apple.com/lookup?id=1800752352&country=tw&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/2a19725d-bc94-464d-b92c-643aae2b9851"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "光引擎",
+  "name": "光引擎",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2013,
+   2013
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "沿途風景",
+    "year": 2013,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c127-b",
+    "album": "沿途風景",
+    "facts": [
+     {
+      "f": "實體 CD 的廠牌欄印的是 **親愛的音樂 Dear Musik、編號 Dear-003**——與資料庫端 label-info 的「風和日麗唱片行／DEAR-003」是同一個編號系列。編制是主唱 Engine 與吉他手 周岳澄，音樂製作由 周岳澄 擔綱，另特邀鍵盤手 呂聖斐 任製作人。",
+      "src": "https://www.expomusic.com.tw/products/guang-yin-qing-yan-tu-feng-jing-cd"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "沿途風景",
+    "manifest": "onboarding-manifest-c127-20260917.json",
+    "desc": "九軌裡一首題獻給梵谷，一首借了唐詩的送別曲名。整張以旅行貫穿，從出發前的猶豫、途中的相遇與別離一路寫到歸途：〈去旅行〉直接點題，〈與你同行（寫給文森。梵谷）〉題獻給那位畫家，〈渭城曲〉的曲名取自唐代的送別詩。英式搖滾的骨架上鋪爵士與融合爵士，女聲主唱是編制裡唯一的人聲，中英文曲名各佔一半。這是樂團 2011 年 6 月成團之後唯一的一張作品，2013 年 3 月 1 日由風和日麗唱片行發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c4ac76af-2b0e-4814-8542-68aabb72039a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/93ee99a5-7507-4c84-bdc9-c21fe7d7ea2a?fmt=json&inc=release-groups+aliases&limit=100",
+     "https://www.expomusic.com.tw/products/guang-yin-qing-yan-tu-feng-jing-cd",
+     "https://musicbrainz.org/release-group/c4ac76af-2b0e-4814-8542-68aabb72039a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "刺客",
+  "name": "刺客",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1993,
+   1993
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "你家是個動物園",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "你家是個動物園",
+    "manifest": "onboarding-manifest-ctw-taiwan-indie-20260823.json",
+    "desc": "刺客 1985 年 8 月成軍，是台灣最早一批自行創作的重金屬樂團。首張作品 1993 年由友善的狗製作、博德曼發行（編號 6004-2／6004-4），九首曲目在華語與英語間切換：〈黃河〉開場，第二軌〈My Time Is Coming〉全英語，同名曲排在第五軌。創團元老袁興國（主唱）與袁興緯（鍵盤、貝斯）是不變的核心，隔年他們以重金屬改編的〈無敵鐵金剛〉被更多人聽見。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/刺客樂團",
+     "https://zh.wikipedia.org/wiki/友善的狗",
+     "https://musicbrainz.org/release-group/9edf9448-2688-4496-b076-38c9b4de9be6"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "刺蝟",
+  "name": "刺蝟",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2007,
+   2007
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Noise Hit World 噪音襲擊世界",
+    "year": 2007,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c107-b",
+    "album": "Noise Hit World 噪音襲擊世界",
+    "facts": [
+     {
+      "f": "釘定的 release-group 2789851e 欄位：title《Noise Hit World 噪音袭击世界》（**中英並列，中文部分是簡體**）、artist-credit《刺猬》（藝人實體 068dfa29，country CN、area Beijing、type Group、disambiguation「Chinese indie rock trio」、成軍 2005-01）、first-release-date **2007-05-01**、primary-type Album、secondary-types **空**、轄下 2 個 release。",
+      "src": "https://musicbrainz.org/ws/2/release-group/2789851e-020b-4201-a756-2010e3108b73?fmt=json&inc=artist-credits+genres+url-rels"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Noise Hit World 噪音襲擊世界",
+    "manifest": "onboarding-manifest-c107-20260910.json",
+    "desc": "同一份母帶上架了兩次：一次全用英文曲名，一次全用中文。兩套的逐軌長度分秒相同，Pumpkin 對〈南瓜〉、Elf 對〈小鬼兒〉、Dragon Dung Ball 對〈龍珠〉、Our Last Word 對〈我們最後的話〉，只有末軌〈白紙年華〉在兩套裡都用中文。十一軌合計約 36 分半，六軌不到三分半，最短的〈小鬼兒〉1 分 41 秒，同名曲 2 分 38 秒排在正中間第七軌。這是 2007 年的碟，三人編制，噪音吉他與女鼓手的敲擊是主要質地。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2789851e-020b-4201-a756-2010e3108b73?fmt=json&inc=artist-credits+genres+url-rels",
+     "https://musicbrainz.org/ws/2/release?release-group=2789851e-020b-4201-a756-2010e3108b73&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1808896136&country=tw&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1444302648&country=tw&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=068dfa29-4ce1-46a8-9647-f612b6750387&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/2789851e-020b-4201-a756-2010e3108b73"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "厭世少年",
+  "name": "厭世少年",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2018,
+   2018
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "青春校園戀愛物語",
+    "year": 2018,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c126-b",
+    "album": "青春校園戀愛物語",
+    "facts": [
+     {
+      "f": "發片前一年，厭世少年在 2017 年貢寮國際海洋音樂祭同時拿下【海洋之星】與【評審團大賞】兩個獎——**是海祭辦到第十七年為止第一組同時抱走兩項大獎的樂團**。這張是他們的首張專輯，錄音製作前後花了兩年。",
+      "src": "https://streetvoice.com/angry_youth/songs/album/97298174/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "青春校園戀愛物語",
+    "manifest": "onboarding-manifest-c126-20260917.json",
+    "desc": "海祭辦了十七年，他們是第一組同時抱走兩項大獎的團。2017 年貢寮國際海洋音樂祭的海洋之星與評審團大賞同時落在厭世少年身上，隔年他們才交出這張首張專輯，錄音與製作前後花了兩年。十四軌約 68 分鐘，最短的〈我再也瘦不了啦！〉只有 1 分 2 秒，最長的收尾曲〈妥瑞氏症〉8 分 7 秒，龐克骨架上架著整組管樂。數位版比實體早了六週，台灣 CD 由相信音樂發行，編號 RW0034。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=57483928-b9b7-4619-ac1c-5c65e1c990de&fmt=json&inc=media+labels+artist-credits&limit=100",
+     "https://itunes.apple.com/lookup?id=1395010297&country=tw&entity=song&limit=100",
+     "https://zh.wikipedia.org/wiki/%E7%AC%AC30%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E",
+     "https://streetvoice.com/angry_youth/songs/album/97298174/",
+     "https://musicbrainz.org/ws/2/release?artist=2ee06c7c-198e-47f2-9926-071196720779&fmt=json&inc=labels+media+release-groups&limit=100",
+     "https://musicbrainz.org/release-group/57483928-b9b7-4619-ac1c-5c65e1c990de"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "吉野大作＆プロスティテュート",
+  "name": "吉野大作＆プロスティテュート",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1985
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "後ろ姿の素敵な僕たち",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c70-b",
+    "album": "後ろ姿の素敵な僕たち",
+    "facts": [
+     {
+      "f": "Discogs 的 1985 年原盤條目（Captain Records CAP-0005-L，release 1541353）：黑膠 LP，錄音與混音都在 Studio Free 2nd，工程師 Yoshinori Takayanagi；Discogs 的藝人實體名是拉丁的「Daisuck & Prostitute」。",
+      "src": "https://www.discogs.com/release/1541353"
+     },
+     {
+      "f": "Tower 的《死ぬまで踊りつづけて》商品頁寫：吉野大作 1973 年以《吉野大作の少年時代》出道、在橫濱帶領民謠搖滾樂團，1980 年組成プロスティテュート，成員東条A機（吉他）、時岡篤（薩克斯風）、高橋ヨーカイ（貝斯，出身裸のラリーズ）、横山孝二（鼓），文案形容為「噪音而怪異的吉他與薩克斯風」。",
+      "src": "https://tower.jp/item/2723196/"
+     },
+     {
+      "f": "Discogs 記義大利 Spittle Made In Japan 於 2025 年 10 月 10 日把 1981 年的首張《死ぬまで踊りつづけて》以《Dance Till You Die》為題重製上黑膠（SPITTLEJ509），文案稱之為「1980 年代初日本最不妥協的 post-punk 樂團之一」。",
+      "src": "https://www.discogs.com/release/35381080"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "後ろ姿の素敵な僕たち",
+    "manifest": "onboarding-manifest-c70-20260904.json",
+    "desc": "宝島社的官網到現在還掛著這張唱片的商品頁：兩千五百零八日圓，售罄。那一頁記的發售日是 1985 年 11 月 1 日，品號 CAP-0005-L，廠牌是東京的 Captain Records；錄音與混音都在 Studio Free 2nd。吉野大作主唱兼彈電吉他與木吉他、包辦全部詞曲，另有第二把電吉他、トッキン的薩克斯風、高橋ヨーカイ貝斯與横山コージ鼓。CDJournal 說這是以怪異薩克斯風為主的迷幻聲響。1991 年アライズ出過 CD，此後沒有再發。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1541353",
+     "https://tkj.jp/book/?cd=30000511&path=&s1=",
+     "https://artist.cdjournal.com/d/-/1291090603",
+     "https://www.discogs.com/master/1197271",
+     "https://tower.jp/item/2723196/",
+     "https://www.discogs.com/release/35381080",
+     "https://diskunion.net/latin/ct/list/0/72207333",
+     "https://musicbrainz.org/release-group/7a4acdf2-cd0a-481d-8f99-7c00d8563bd5"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "君島大空",
+  "name": "君島大空",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2026,
+   2026
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "花落知多少",
+    "year": 2026,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c112-b",
+    "album": "花落知多少",
+    "facts": [
+     {
+      "f": "唯一那筆 release 2ebfaeea 的載體、軌數與廠牌：**Digital Media 單片 9 軌**，廠牌 Apollo Sounds（label MBID 0ff21ac0）、catalog-number **APLS2606**、barcode 未填。**MB 上沒有 CD 或黑膠的 release**。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=b957264f-5699-42aa-97de-b92b3554bd1e&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "**Apple Music jp collectionId 6773237682**：collectionName「花落知多少」、artistName「君島大空」、releaseDate 2026-06-17、copyright「**℗ APOLLO SOUNDS**」（**沒有年份，只有廠牌名**）、trackCount 9、collectionExplicitness notExplicit。`entity=song` **攤得出 9 軌、9 軌全部有 previewUrl**，曲名與曲序與 MB **逐位置相符**、逐軌長度**全部相同到秒**。",
+      "src": "https://itunes.apple.com/lookup?id=6773237682&country=jp&entity=song&limit=200"
+     },
+     {
+      "f": "日文維基〈君島大空〉的アルバム 表把本張列為 **3rd**：1st《映帶する煙》2023-01-18（全 12 曲，CD APLS2208／LP APLS2208LP）、2nd《no public sounds》2023-09-27（全 11 曲，CD APLS2306／LP APLS2306LP）、**3rd《花落知多少》2026-06-17（全 9 曲，規格欄記 CD、規格品番 APLS2606）**——曲目九首與 MB 完全一致。**維基的規格欄記有 CD，MB 只有數位**，實體那一筆 MB 尚未建檔。同頁 infobox：1995-01-18 生於東京都青梅市，唱歌並彈吉他與鍵盤，2014 年起在 SoundCloud 發表自己一人多重錄音的作品，廠牌 APOLLO SOUNDS；他把帶樂手的編制稱作「合奏形態」，2019 年 3 月首張 EP《午後の反射光》發表後才首次以合奏形態演出。",
+      "src": "https://ja.wikipedia.org/wiki/君島大空"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "花落知多少",
+    "manifest": "onboarding-manifest-c112-20260910.json",
+    "desc": "他把帶樂手的編制叫作「合奏形態」，起點是一個人的多重錄音。他 1995 年生於東京都青梅市，2014 年起在 SoundCloud 發表自己一人多軌錄下的作品，2019 年首張 EP 之後才第一次以合奏形態演出。這是第三張，前兩張都在 2023 年。九軌合計 38:34，最短的〈Afterending〉2:10、最長的〈夕映の坂から〉7:20，三軌不到三分鐘、兩軌超過六分半，落差很大。盤名五個漢字出自唐詩，廠牌 Apollo Sounds、編號 APLS2606。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b957264f-5699-42aa-97de-b92b3554bd1e?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=b957264f-5699-42aa-97de-b92b3554bd1e&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=6773237682&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/君島大空",
+     "https://musicbrainz.org/release-group/b957264f-5699-42aa-97de-b92b3554bd1e"
+    ]
+   }
+  ]
+ }
+]
