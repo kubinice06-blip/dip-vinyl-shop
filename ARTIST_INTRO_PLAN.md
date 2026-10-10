@@ -107,7 +107,7 @@ index／battle／roguelike 只要載腳本，不必各自加標記。
 | 寫入 | `git commit` → Pages 部署 | `wrangler kv bulk put`；**免費方案每日 1,000 次寫入**，7,956 筆要排 8 天、且與上架批次搶額度（`auto_import.mjs` 就是為這個額度排隊寫的） |
 | 讀取 | Pages CDN，`.json` 在 `sw.js` 走網路優先、自動涵蓋 | KV 每日 100,000 次讀取，與 `/album-desc`、`/album-rating` 共用 |
 | 更正 | 改檔、commit | 重推 KV、逐字驗證 |
-| 雲端能做到哪 | 研究、寫作、QA、**連成品檔都能提交進分支** | 雲端不碰 KV，本機才能寫 |
+| 雲端能做到哪 | 研究、寫作、QA、**連成品檔都能提交進分支** | 舊規則：雲端不碰 KV。2026-10-10 起有可寫 token 就能寫（見 `REMOTE_RUNBOOK.md`） |
 | 先例 | `data/apple-audio-runtime-v1.json`（13k 筆）、`card-subgenres.json`（741KB）、`data/release-years-v1.json` | `desc2:`／`desc4:` |
 | 缺點 | 8k 筆一檔約 6.8MB，**必須分片** | 每次點擊一趟 worker 往返 |
 

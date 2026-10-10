@@ -47,8 +47,10 @@
 - 所有讀取操作（git status、log、diff 等）
 
 ## 工作流程
-- 單人專案，改完直接 commit 到 main 並 push，**不開 PR、不用 worktree**
+- **本機工作階段**：單人專案，改完直接 commit 到 main 並 push，**不開 PR、不用 worktree**
 - commit + push 不用事先問，做完簡述內容即可
+- **雲端工作階段（claude.ai/code）不一樣**（2026-10-10 店主裁定）：推自己的分支、開 PR，**由店主合併**；
+  不 push `main`、不自己合併。細節見 `REMOTE_RUNBOOK.md`「分支與 PR」。
 
 ## 回報要短（2026-09-01 店主指示）
 
@@ -84,9 +86,12 @@
 
 **這個下放不涵蓋兩件事**（它們與裁定無關，是安全邊界）：
 - `CLAUDE.md` 風險操作那節列的（`git reset` / `git revert` / `winget install`）仍要先問。
-- `REMOTE_RUNBOOK.md` 禁止雲端碰的（`seed_cards.json`／`apex_pool.json`／
-  `PROJECT_MEMORY.md`／KV／Firestore）仍然不碰——那不是「我不敢決定」，是雲端沒有那個權限。
-  唯一例外是 Firestore `card_catalog`：店主點名的單張修正（換封面等）雲端可直接改，規則見 `REMOTE_RUNBOOK.md`（2026-10-07）。
+- 雲端工作階段的邊界照 `REMOTE_RUNBOOK.md`（2026-10-10 店主解除原本的寫入禁區）：
+  - **可以寫** `seed_cards.json`（含頂點 tier）、`PROJECT_MEMORY.md`、Firestore `card_catalog`。
+  - **KV 要有可寫的 token 才做**（`node scripts/kv-token-check.mjs` exit 0）；沒過就不寫 KV，也不寫 seed，留給本機。
+  - **審稿由雲端主線做**（不派子代理），改了什麼逐條寫進該批 `rulings.md` 的「主線審稿」段。
+  - **推自己的分支、開 PR、由店主合併**；不 push `main`、不自己合併。
+  - 仍然做不到的：`album_overrides`／`settings` 等管理員集合、Worker 部署——那是沒有身分，不是不敢決定。
 
 ### 容器會不定時重啟——代理要能續跑（2026-09-02 實測）
 

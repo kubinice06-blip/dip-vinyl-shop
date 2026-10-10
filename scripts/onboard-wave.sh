@@ -41,7 +41,7 @@ ARGS=""; for b in $BS; do p="publish-stage/onboarding-manifest-$b-$STAMP/card-ca
 node scripts/push-card-catalog-patches.mjs $ARGS 2>&1 | grep -v Assertion | tail -2
 
 echo "########## 6. KV 固定簡介 ##########"
-for b in $BS; do f=onboarding-manifest-$b-$STAMP.json; [ -f "$f" ] || continue; node ../dip-vinyl-worker/scripts/desc-gen/from_onboarding_manifest.mjs $f publish-stage/kv-$b-$STAMP.json 2>&1 | tail -1; done
+for b in $BS; do f=onboarding-manifest-$b-$STAMP.json; [ -f "$f" ] || continue; node scripts/kv-from-manifest.mjs $f publish-stage/kv-$b-$STAMP.json 2>&1 | tail -1; done
 for b in $BS; do p=publish-stage/kv-$b-$STAMP.json; [ -f "$p" ] || continue; echo -n "$b:"; npx wrangler kv bulk put $p --namespace-id $KVNS --remote 2>&1 | grep -cE "Success!"; done
 
 echo "########## 7. 靜態試聽 ##########"

@@ -15,7 +15,7 @@
 //   - Firestore card_catalog：需要 API key，只產出 REST PATCH 的 payload 供本機執行
 //   - album_overrides：規則是 allow write: if isAdmin()，REST 實測 403，只能走 admin.html 後台。
 //     所以試聽改走 §6 的「靜態路徑」（data/apple-audio-map-v1.json），那是 Git 檔案，本腳本可安全處理
-//   - Worker KV 固定簡介：轉檔腳本在另一個 repo（dip-vinyl-worker），不重複實作，只提示指令
+//   - Worker KV 固定簡介：轉檔用 scripts/kv-from-manifest.mjs（2026-10-10 從 worker repo 複製進來，雲端才跑得到），這裡只提示指令
 //
 // 冪等：已在 seed／apex／靜態地圖裡的卡會被跳過，可重複執行。
 import fs from 'node:fs';
@@ -197,8 +197,8 @@ if (WRITE_PREVIEW) {
   console.log('下一步依 ALBUM_ONBOARDING §8 的順序：');
   console.log('  1. 用 card-catalog-patches.json 寫 Firestore（updateMask 已備好，不會蓋掉後台改過的欄位）');
   console.log('  2. KV 固定簡介：');
-  console.log(`     node ../dip-vinyl-worker/scripts/desc-gen/from_onboarding_manifest.mjs ${path.basename(manifestPath)} kv-bulk.json`);
-  console.log('     npx wrangler kv bulk put kv-bulk.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105');
+  console.log(`     node scripts/kv-from-manifest.mjs ${path.basename(manifestPath)} kv-bulk.json`);
+  console.log('     npx wrangler kv bulk put kv-bulk.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote');
   console.log(`  3. 試聽： node scripts/publish-manifest.mjs ${path.basename(manifestPath)} --write-preview`);
   console.log('           node scripts/build-apple-audio-runtime-map.mjs');
   console.log('  4. 回讀 1-3 確認與 manifest 一致');

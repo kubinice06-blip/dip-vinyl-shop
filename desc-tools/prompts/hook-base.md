@@ -9,7 +9,7 @@
 1. **工作目錄**：本檔開頭寫的 `C:\Users\User\dip-vinyl-home\desc-restyle` 在雲端不存在。
    產出直接寫進 repo：`desc-tools/batches/hooks/<批>-hooks-<組>.json`。
    ⚠ **代理一律不 `git commit`、不 `git push`，由主線統一提交；`PROJECT_MEMORY.md` 一律不碰**
-   （雲端另有 `REMOTE_RUNBOOK.md` 的禁碰清單）。
+   （雲端的寫入只由主線做，見 `REMOTE_RUNBOOK.md` 硬規則第 5 條）。
 
 2. ⚠ ⚠ **`note` 的字元預算（雲端線特有，本檔沒有）**：
    **`hook 字元 + Σ 各項目字元 ≤ 230`，逐項用 `Array.from().length` 實際量，不要心算或估係數。**

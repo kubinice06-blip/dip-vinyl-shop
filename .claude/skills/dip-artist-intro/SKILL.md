@@ -41,7 +41,9 @@ description: 跑 dip vinyl 藝人介紹產線（點藝人名跳出的小視窗�
 上架嚴格照批號順序，一次只審一批。長接力用 `send_later` 排 25 分鐘自我 check-in。
 **中途不回報**，只在需要店主裁定或整條線收尾時回聊天（CLAUDE.md「接力任務不要中途回報」）。
 
-## 不碰
+## 這條線不改的東西
 
-雲端不碰 `seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／KV／Firestore。上線簡介的錯記在補洞稿的 `pubIssues`，
-`node artist-issues.mjs` 彙整成 `audits/ARTIST-PUB-ISSUES.md` 交本機。
+藝人介紹這條線只產出藝人介紹，**不順手改卡池與專輯簡介**：上線簡介的錯記在補洞稿的 `pubIssues`，
+`node artist-issues.mjs` 彙整成 `audits/ARTIST-PUB-ISSUES.md`，另外排修。
+（雲端的寫入邊界已在 2026-10-10 放寬——可寫 `seed_cards.json`／`PROJECT_MEMORY.md`／`card_catalog`，KV 要有可寫 token；
+見 `REMOTE_RUNBOOK.md`。本線收尾時要在自己的分支補一筆 `PROJECT_MEMORY.md`，推分支、開 PR、由店主合併。）

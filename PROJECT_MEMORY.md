@@ -1,5 +1,31 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-10｜dip-vinyl-shop｜雲端寫入禁區解除：REMOTE_RUNBOOK.md 與 CLAUDE.md 改版
+
+店主裁定（原話）：「雲端可寫 seed／apex／PROJECT_MEMORY／Firestore card_catalog，KV 要有可寫的 token 才做，
+審稿改由雲端主線審並留紀錄，雲端推自己的分支開 PR、由我合併。」
+
+- **`REMOTE_RUNBOOK.md` 整份改寫**：分工表從「文字在雲端、寫入在本機」改成整條上架線都可在雲端跑完。
+  - 可寫：`seed_cards.json`（含第 9 欄 tier；`apex_pool.json` 早已併入）、`PROJECT_MEMORY.md`、Firestore `card_catalog`。
+  - **KV**：先跑新的 `scripts/kv-token-check.mjs`（寫一個 `healthcheck:kv-write:*` 測試鍵→讀回→刪掉），exit 0 才寫；
+    沒過就**不寫 KV、也不寫 seed**，做到 `card_catalog` 為止，交本機。這是為了守住 §8「seed 是最後的上架開關」。
+  - **審稿**：雲端主線逐張審（不派子代理），改動逐條寫進該批 `rulings.md` 的「主線審稿」段，`handoff.json` 加 `review` 欄。
+  - **分支與 PR**：雲端不 push `main`、不自己合併；收工前先 merge `origin/main` 解衝突；PR 說明固定六項
+    （其中一項是「已經即時生效的寫入」——Firestore 與 KV 不經 PR，改到已上線的卡一寫就上線）。
+  - 新增硬規則：寫入只由主線做（子代理不碰）；上架順序照 §8 不得顛倒。
+  - 白名單補上 `itunes.apple.com`、`archive.org`、`firestore.googleapis.com`、`api.cloudflare.com`、worker 網域。
+  - 沒有開放的：`album_overrides`／`settings` 等管理員集合（Firestore 規則是 `isAdmin()`）、Worker 部署。
+- **`CLAUDE.md`**：「工作流程」分出本機（直推 main）與雲端（分支＋PR）；「裁定權下放」底下那條雲端禁區改成新邊界。
+- **讓雲端真的跑得動的兩支腳本**：`scripts/kv-from-manifest.mjs`（從 worker repo 的 `from_onboarding_manifest.mjs` 複製——雲端只 clone 這個 repo；
+  以 add-20261004-shop 的 manifest 比對，輸出與 worker 版逐字相同）、`scripts/kv-token-check.mjs`（本機實測：有 token exit 0、清掉 token exit 1）。
+  `scripts/onboard-wave.sh` 與 `publish-manifest.mjs` 的提示改指 repo 內這份；提示裡的 wrangler 指令原本漏了 `--remote`，補上。
+- 同步改掉重複寫著舊禁區的地方：`desc-tools/prompts/{hook-base,research-base}.md`（改成「寫入只由主線做」）、
+  `ARTIST_INTRO_PLAN.md`、`.claude/skills/dip-artist-intro/SKILL.md`。歷史交接檔（`data/shop/HANDOFF-wave3.md` 等）沒動。
+
+**還沒驗證的**：這些規則沒有在雲端實跑過。已知的缺口——`batch-progress/` 底下 12 支本機段輔助腳本寫死 `C:/Users/User/...` 路徑
+（`fetch-ratings`、`fill-covers`、`build-manifest`、`stage-cloud-batch` 等），雲端跑不了；雲端批次目前是自己直接產 manifest，
+用得到的 `scripts/` 底下那幾支沒有這個問題。雲端能不能經 worker 拿到 listeners 也沒試過，文件寫的是「先試、拿不到留 null」。
+
 ### 2026-10-07｜dip-vinyl-shop｜モア《モア》改為流亡卡（pearl）
 
 同日第二筆。店主點名把當天上架的モア《モア》（1983，自費壓製的私製盤）升為流亡卡。
