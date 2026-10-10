@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 790 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 805 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -790,6 +790,21 @@
 | ar-d-052 | TSA | TSA | 1981 年 7 月 12 日那天……也是 Marek Piekarczyk 第一次擔任主唱 | 英文維基寫 Piekarczyk 是在 Jarocin 認識樂團，一個月後才在 Sopot Pop Session 首次以主唱身分登台，與簡介『7 月 12 日第一次擔任主唱』的時間點可能不合；只見英文維基單源，需對 Jarocin／〈Trzy zapałki〉首唱場合核對。 | https://en.wikipedia.org/wiki/TSA_(band) |
 | ar-d-053 | Vast & Hazy | 求救訊號 | 發片時在 Legacy 連辦兩天千人場、票都售罄 | 簡介與事實庫都以 Blow 吹音樂專訪（2018-07-04）為出處，但本層開頁讀全文，並無任何 Legacy 或售罄的敘述；TVBS 與 envimedia 亦無。搜尋摘要只見『見證大團』活動上首次登上 Legacy 的說法（未開頁）。這句目前找不到出處，建議店主核對或刪除。 | https://blow.streetvoice.com/40511/ |
 | ar-d-053 | XIT | Plight of the Redman | 因公開支持美國印第安運動，唱片被禁播，聯邦調查局並施壓 Motown 撤掉宣傳預算。 | 禁播與 FBI 施壓只見英文維基單一來源（維基自身也標出處不足），Indian Country 訃聞與搜尋到的其他頁面都沒有提及；建議店主自行判斷是否保留或加註『據維基』。 | https://en.wikipedia.org/wiki/XIT_(band) |
+| ar-d-054 | Zabranjeno Pušenje | Das ist Walter | 樂團屬於 1983 年成立的新原始主義運動 | 英文維基與官方站只說樂團與新原始主義運動關係密切、運動領袖是 Elvis J. Kurtović，查無來源給出『1983 年成立』；此年份無法佐證，建議改為不帶年份或查到出處再保留。 | https://zabranjeno-pusenje.com/?p=7113 |
+| ar-d-054 | Zao | Z=7L | Magma 的鋼琴手和薩克斯風手在 1972 年 11 月一起走人 | 『1972 年 11 月』只見法文維基單源；英文維基與 Wikidata 記 Zao 成立於 1971 年，兩者不一致。簡介若保留，建議去掉『1972 年 11 月』的精確月份，或查到第二源再留。 | https://en.wikipedia.org/wiki/Zao_(French_band) |
+| ar-d-054 | Zeca Pagodinho | Deixa a Vida Me Levar | 一九八三年由教母 Beth Carvalho 引薦錄下第一首歌〈Camarão Que Dorme a Onda Leva〉 | 1983 年合唱〈Camarão…〉於 Beth Carvalho 專輯《Suor no Rosto》屬實，但 ebiografia 記他作品第一次被錄成唱片是 Fundo de Quintal 錄的〈Amargura〉；『第一首歌』的說法未見來源明講，建議改為『受邀在她的專輯裡合唱』。 | https://www.ebiografia.com/zeca_pagodinho/ |
+| ar-d-054 | Zed Bias | Sound of the Pirates | Dave Jones 以 Zed Bias 之名於 2000 年替 Locked On 混成的一張 | 本層來源（維基、Attack Magazine、Tru Thoughts、Earth Agency、mdmarchive）均未提到這張混音選輯或其廠牌，無法佐證，僅搜尋摘要稱〈Neighbourhood〉發行於 Locked On；建議對照 Discogs 或廠牌頁再確認。 | https://en.wikipedia.org/wiki/Zed_Bias |
+| ar-d-054 | Звуки Му | Простые вещи | 樂團 1987 年在莫斯科認識了 Brian Eno | Snob（2018）寫 Eno 是因這張專輯才知道 Mamonov 並把樂團帶往西方，與「1987 年在 Интурист 飯店認識」的說法有出入；ru 維基為單源，建議簡介只寫到「Eno 其後把樂團帶到西方」，待主線核。 | https://snob.ru/entry/163272/ |
+| ar-d-054 | Зоопарк | Уездный город N | 這是掛在 Зоопарк 名下的首張錄音室專輯 | 英文維基 Mike Naumenko 的 Zoopark 唱片表與 uznayvse 都列 Blues de Moscou（1981）更早；若該碟視為錄音室專輯則「首張」不成立，待主線核對 ru 維基 Blues de Moscou 條目的性質（家庭錄音或棚錄）。 | https://en.wikipedia.org/wiki/Mike_Naumenko |
+| ar-d-054 | Телевизор | Отечество иллюзий | 隔年的第五屆音樂節他們拿下第 2 名與「藝術完整性」特別獎 | 俄文維基寫 1987 年第五屆音樂節樂團獲評審特別獎、〈Дети уходят〉選為最佳曲目，未提第 2 名也未見「藝術完整性」字樣；fb.ru 的第二名指樂團成立首年（1984）。兩處對不上，建議改回只寫「獲評審特別獎」或另找獨立來源再確認（待核） | https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0) |
+| ar-d-054 | Щурците | 20-и Век | 樂團 1967 年在索菲亞成立，同年以〈Бяла тишина〉拿下金色奧菲斯音樂節首獎 | BTA 記載 1967 年金色奧菲斯首獎得主是歌手 Georgi Minchev，Щурците 是伴奏，獎項主詞應是 Minchev 而非樂團；另 BTA 的 Marichkov 條目把 Щурците 的成立寫成 1966，與維基和 BNT 的 1967 不一致 | https://www.bta.bg/bg/galleries/archive/29693 |
+| ar-d-054 | ဇော်ဝင်းထွဋ် | မာကျူရီည | 其後三張同樣沒有起色，要到 1989 年的一張精選輯才把他推上搖滾明星的位置 | 此句只依英文維基（該節無出處）；《時代》2002 年報導寫的是父親出資的前兩張專輯失敗、父親過世後的第三張專輯才大賣，兩者不符，建議保守改寫（待核） | https://time.com/archive/6645002/hard-rock/ |
+| ar-d-054 | 김추자 | 늦기전에 | 一九七五年緊急措置九號下，她的歌全數被列為禁曲，本人也遭全面禁演 | 查到的來源只證實〈거짓말이야〉被列為禁曲（理由：助長不信），沒有『全數禁曲』的依據；她 1975 年被無限期停止活動的原因，來源寫的是『大麻風波』，不是緊急措施九號 | https://weekly.khan.co.kr/article/201607041627021 |
+| ar-d-054 | 김추자 | 늦기전에 | 〈늦기 전에〉前半走 soul 的節奏與唱法，後半突然切進판소리的聲腔 | 這句與韓文維基一致，但維基與其他來源都沒有說明是『美軍基地學來的黑人音樂』，該句為簡介自己的詮釋，建議審稿時確認出處（待核） | https://ko.wikipedia.org/wiki/%EA%B9%80%EC%B6%94%EC%9E%90 |
+| ar-d-054 | 신중현과 엽전들 | 신중현과 엽전들 1집 | 一九七五年十二月申重鉉因大麻案被聲請羈押，樂隊隨即解散 | 英文維基依 경향신문 1976 年 1 月 30 日報導，文化公報部 1976 年 1 月禁止 54 名藝人演出，樂團因此解散；『隨即解散』與時序略有出入。另『單張銷量破百萬』『百大名盤第七』只見英文維基單源（待核） | https://en.wikipedia.org/wiki/Shin_Jung_Hyun_%26_Yup_Juns |
+| ar-d-055 | サディスティック・ミカ・バンド | 黒船 | 前後耗掉 450 小時 | 日文維基〈サディスティック・ミカ・バンド〉寫《黒船》錄音約 600 小時；兩者不一致，建議在 KV 查證原始出處或改寫成不含數字 | https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%87%E3%82%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%83%BB%E3%83%9F%E3%82%AB%E3%83%BB%E3%83%90%E3%83%B3%E3%83%89 |
+| ar-d-055 | 何勇 | 垃圾场 | 何勇至今唯一一張專輯 | 何勇已於 2026 年 9 月 1 日過世，『至今』已過時，可改成『他唯一一張完整的個人專輯』。 | https://global.hk01.com/众乐迷/60386973/中国摇滚狂人何勇逝世终年57岁-与窦唯张楚登红馆寸爆四大天王 |
+| ar-d-055 | 何勇 | 垃圾场 | 〈非洲夢〉〈姑娘漂亮〉〈鐘鼓樓〉三首正是十二月十七日紅磡演唱會的曲目 | huxiu 報導寫何勇當晚演唱〈姑娘漂亮〉〈垃圾場〉〈鐘鼓樓〉，不含〈非洲夢〉；僅單源，建議店主核對後再改。 | https://m.huxiu.com/article/4888542.html |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
