@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 789 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 790 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -789,6 +789,7 @@
 | ar-d-052 | Trúbrot | ....Lifun | 封套的四個角被切掉，成了八角形 | 冰島文與英文維基支持八角形，Grapevine、Space Ritual、NTS 寫六角形；來源分歧，請對實物或原盤確認。 | https://grapevine.is/?p=4193 |
 | ar-d-052 | TSA | TSA | 1981 年 7 月 12 日那天……也是 Marek Piekarczyk 第一次擔任主唱 | 英文維基寫 Piekarczyk 是在 Jarocin 認識樂團，一個月後才在 Sopot Pop Session 首次以主唱身分登台，與簡介『7 月 12 日第一次擔任主唱』的時間點可能不合；只見英文維基單源，需對 Jarocin／〈Trzy zapałki〉首唱場合核對。 | https://en.wikipedia.org/wiki/TSA_(band) |
 | ar-d-053 | Vast & Hazy | 求救訊號 | 發片時在 Legacy 連辦兩天千人場、票都售罄 | 簡介與事實庫都以 Blow 吹音樂專訪（2018-07-04）為出處，但本層開頁讀全文，並無任何 Legacy 或售罄的敘述；TVBS 與 envimedia 亦無。搜尋摘要只見『見證大團』活動上首次登上 Legacy 的說法（未開頁）。這句目前找不到出處，建議店主核對或刪除。 | https://blow.streetvoice.com/40511/ |
+| ar-d-053 | XIT | Plight of the Redman | 因公開支持美國印第安運動，唱片被禁播，聯邦調查局並施壓 Motown 撤掉宣傳預算。 | 禁播與 FBI 施壓只見英文維基單一來源（維基自身也標出處不足），Indian Country 訃聞與搜尋到的其他頁面都沒有提及；建議店主自行判斷是否保留或加註『據維基』。 | https://en.wikipedia.org/wiki/XIT_(band) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

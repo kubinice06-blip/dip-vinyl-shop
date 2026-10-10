@@ -792,3 +792,19 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Tilt 是波蘭華沙的龐克團（維基預抓撲克詞條作廢）；Titus Groan 維基預抓為小說作廢；Tolerance 是日本 Vanity 廠牌的丹下順子計畫；Transs 是印尼團（不寫雅加達）；TSA 維基預抓亞美尼亞字母作廢；Turning Point / No Escape 的 No Escape 成員來自紐澤西、德拉瓦與費城。
 - 卡池年份存疑：Trouble《Psalm 9》卡池 1988，首發 1984 Metal Blade。
 - 待本機（上線簡介）：Titus Groan「1970 年底意外後解散」單源且與 1971 年廣播紀錄衝突；Trúbrot《Lifun》發行日（7/29 或 6/29）與封套形狀（八角或六角）；TSA Piekarczyk 首次擔任主唱的日期；Tom Jones〈It's Not Unusual〉登冠日期（3/11 或 3/13）；Träd, Gräs och Stenar「B 面轉向瑞典民謠」與曲目不符；Transs 簡介的「雅加達」無據。
+
+## ar-d-053（2026-10-10）
+
+- 39 位上架（33 full、6 thin：Underdog、Voltz、Wavves、Wckr Spgt、Weidorje、Writing on the Wall），1 位不寫：Vermilion Sands（日本女主唱交響前衛團，只有兩條單源事實，出自轉載的使用者簡介）。Wckr Spgt 以「家庭錄音與卡帶文化」當做法句，接受。
+- 超額放行：Vast & Hazy 第 9 次搜尋為 2022 年金曲獎入圍的第二源（第二源先例）。
+- 審稿修 11 處：最高級刪改——Wavves「爭議最大」、Wigwam 刪單源百科「史上最重要的芬蘭搖滾樂團」（留國家廣播公司票選）、Wolf Parade「最具影響力之一」改「重要專輯」、Wolves in the Throne Room「最典型」改「代表作」、Xhol Caravan「最早投入」、XIT「最早崛起」改「早期」、Y Cyrff「最偉大之一」改「重要」；媒體名——Versus 刪《紐約時報》單源評語；具名評論者匿名——XPDC 的搖滾書作者；字數——Vladimír Mišík 270 壓回 244（非雙卡，刪父親身世與勳章）；Y Cyrff 的 Catatonia 句順成 Roberts 共組。
+- 保留：White Noise 的 Chris Carter 說法、Wishbone Ash 的 Steve Harris 說法、World Party 的 Peter Gabriel 說法（具名樂手）；Wigwam《Nuclear Nightclub》國家廣播公司票選；Voodoo Queens 英國獨立榜冠軍、White Lies 英國專輯榜冠軍、Wookie〈Battle〉前十（在世者唯一一處）；Vast & Hazy 只寫金曲獎入圍、成員只用藝名。
+- 身分：Underdog、Unsane、Vast & Hazy、Vermilion Sands 的維基預抓皆對錯條目（概念、電影、美國 VAST、Ballard 小說），已作廢；Vast & Hazy 是台灣雙人團；Voltz 是英國 Hampshire 的團（非新墨西哥同名團）；Windy & Carl 是密西根 Dearborn 夫妻檔。
+- 待本機（上線簡介）：Vast & Hazy「Legacy 連辦兩天千人場售罄」查無出處（所稱出處的專訪沒有這句）；XIT《Plight of the Redman》「禁播、FBI 施壓 Motown」僅英文維基單源。
+
+## 第六輪十批接力收尾（ar-d-044～053）
+
+- 合計 390 位上架（323 full、67 thin），10 位不寫：Providence、Shipping News、Social Tension、Starless、The Fratellis、The Freed Unit、The Living Daylights、The Yips、Trifle、Vermilion Sands（聲音只剩曲風標籤、身分未確認或全部事實單源）。
+- 搖滾段已寫到 Y 字頭；卡池剩 63 批、2481 位未寫（rock 160、folk 480、pop 359、world 280、electronic 517、hiphop 279、classical 605）。
+- 本輪沿用第五輪的裁定形狀，無新增；超額放行一例（Vast & Hazy，第二源先例）。特注身分錯誤由研究層更正多處（Poll 是希臘團、Salada de Frutas 是葡萄牙團、Sweet Charity 是新加坡團、Steel Mill 是英國團、Sunforest 是在倫敦的美國人、Tilt 是波蘭團等），皆照研究層改寫。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；The Alarm 的 Mike Peters 據兩源 2025 年過世，上線簡介若寫成在世需改；卡池年份存疑（Roy Orbison《Mystery Girl》1989、The Head and the Heart 2010／2011、Sweet《Desolation Boulevard》1974 RCA 版、The Appleseed Cast 1999／2000、Trouble《Psalm 9》首發 1984）。
