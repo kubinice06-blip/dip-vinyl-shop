@@ -885,3 +885,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Kembara 是在新加坡成軍、後移居馬來西亞（名冊原寫馬來西亞）；Joseph Spence 維基預抓為 18 世紀英國史學家，已作廢；Keola & Kapono Beamer 的 Kapono 非 Henry Kapono；Lal & Mike Waterson 是兄妹（簡介寫姊弟，錯）。
 - 卡池年份存疑：Kim Jung Mi《Now》卡池 1968，實為 1973 年錄成。
 - 待本機（上線簡介）：Josephine Foster「個人第二作」無據；Karine Polwart《Traces》入圍年份與「英國前 75」；Kelly Joe Phelps Billboard 第 10 名單源；Kembara「同年成軍的五人團」錯；Kenny Knight「包辦全部人聲、貝斯與鼓」錯；Koerner, Ray & Glover 組團年 1962／1963 與首作廠牌；Koncz Zsuzsa「電台只播一半」「五萬張庫存熔掉」；Kongar-ol Ondar「1992 年首獎」「活國寶」；Lal & Mike Waterson「姊弟」「英國榜第 21 名」（正榜 59）「版權訴訟下架」；Lead Belly「為 Folkways 留下」應為替 Moses Asch 錄；Kyle Creed「Galax 連冠」單源；Lindisfarne《Fog on the Tyne》「當年第八暢銷」與維基「最暢銷」不一；Lefty Frizzell 的 George Jones、Haggard 說法與「蟬聯四週」未核對。
+
+## ar-d-062（2026-10-10）
+
+- 39 位上架（34 full、5 thin：Michael Angelo、Mid-Air Thief、Midwinter、Mistress Mary、Modern Folk Üçlüsü），1 位不寫：Marj Snyder（聲音格查無，唯一沾邊的是選輯文案對整張合輯的描述）。
+- 超額放行：Mari Boine 第 9 次為核對上線簡介年份，無新事實（齊豫先例）。
+- 審稿修 8 處：字數——Maitreya Kali 267→229（非雙卡；刪「自稱有神祕力量」與骨灰細節）；最高級刪改——Love Song 單源「史上最重要的基督教搖滾樂團」（留「基督教版的披頭四」稱號）、Manos Hadjidakis「史上最偉大之一」、Mari Boine「最廣為人知」、Maria del Mar Bonet「最穩固、最持久之一」改「長年核心人物」、Martin Simpson「英國最好之一」改「重要」；在世者多重成績——Ojos de Brujo 刪銷量（留 BBC Radio 3 獎）。
+- 保留：Michael Hurley 三方合錄的 Christgau 年度最愛（研究層列必要例外、兩源）；Michael Hedges 身後葛萊美；Molly Tuttle「第一位拿下 IBMA 年度吉他手的女性」；Mount Eerie 以妻子過世為題（不寫病因）；Louis Killen 晚年改名一句（不寫細節）；Mikel Laboa、Moving Hearts 的政治背景只寫一句。
+- 身分：Love Song、Manitoba、Midwinter 的維基預抓分別對到歌曲類型、加拿大省份、節氣，已作廢；Manitoba 照 Dan Snaith 舊名義寫；Norman Blake 生於田納西州 Chattanooga、在喬治亞州長大（非 Teenage Fanclub 同名成員）；Mr. Fox 的女聲是 Carole Pegg；Michael Angelo 是堪薩斯市錄音室樂手 Michael Angelo Nigro。
+- 卡池年份存疑：Modern Folk Üçlüsü《40 Yıl Sonra》卡池 1974，土耳其來源寫 1975。
+- 待本機（上線簡介）：Luke Combs「2016 年自主發行」「蟬聯兩週」；Manos Hadjidakis「拒領獎座」與 To Vima 不符；Margo Price Third Man「第一位鄉村藝人」應為「第一位 Nashville 在地藝人」、「約三十家唱片公司」；Maria del Mar Bonet《Alenar》是第 5 張；Mark Fry「花三天錄成」（本人說一兩週）；Meic Stevens 回 Solva 年份；Marion Sumner 的 Dennis Breeding 未見；Michael Hurley《Have Moicy!》「滾石五星」查無；Michael Angelo「acetate 被銷毀」查無；Moving Hearts「雙鼓手」應為鼓手加打擊；Mr. Fox「Carole Butler」應為 Carole Pegg；Nickel Creek「出道作」應為 Sugar Hill 的首張。
