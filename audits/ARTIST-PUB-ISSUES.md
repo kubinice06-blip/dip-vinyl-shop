@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 814 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 821 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -813,7 +813,14 @@
 | ar-d-056 | 想い出波止場 | 水中JOE | 1991 年這張是他們在 JOJO広重 的アルケミーレコード 發行的第二作 | 日文維基的作品列序是《大音楽》《ブラック・ハワイ》《水中JOE》，且後文稱第 7 張為《大阪・ラ》，數下來《水中JOE》為第 3 作；Last.fm 轉載稿又排成《水中JOE》（1991）早於《Black Hawaii》（1992）。序位與年份來源互相矛盾，建議本機用 Discogs 核對後再決定保留「第二作」或改成不寫序位。 | https://ja.wikipedia.org/wiki/%E6%83%B3%E3%81%84%E5%87%BA%E6%B3%A2%E6%AD%A2%E5%A0%B4 |
 | ar-d-056 | 指南針 | 選擇堅強 | 1994 年由金碟出版，編號 JCD-4057 | 英文維基、川報與中文維基〈羅琦〉都把首張專輯《選擇堅強》記在 1993 年；MusicBrainz 的 1994 年是 CD 版本。簡介只寫「1994 年由金碟出版」本身不算錯，但若暗示首發年是 1994 年可能有落差，建議本機核對卡帶版年份後再決定措辭。 | https://en.wikipedia.org/wiki/Compass_(band) |
 | ar-d-056 | 瀬川洋 | PIERROT | 他是ズー・ニー・ヴー的主唱，那個團在同行間以硬派著稱 | 日文維基 ズー・ニー・ヴー 條目的成員表（町田義人、上地健一、山本康生等）沒有瀬川洋；日文維基 ザ・ダイナマイツ 條目列瀬川洋為主唱兼吉他手，重發合輯說明也寫他 formerly of The Dynamites。建議改為『曾是ザ・ダイナマイツ的主唱』，硬派的說法屬ズー・ニー・ヴー，不能掛在他身上 | https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9E%E3%82%A4%E3%83%84 |
+| ar-d-056 | 猛虎巧克力 | 夜工廠 | 鄭宜農發完個人首作《海王星》後在 2012 年組的團 | 中文維基『猛虎巧克力』條目寫 2012 年，但中文維基『鄭宜農』條目寫 2013 年組建，另有搜尋摘要稱 SXSW 2014 官方節目表寫 2013 年春天組成，年份有分歧；建議改成不寫成團年，或寫『2012 至 2013 年間』 | https://zh.wikipedia.org/wiki/%E9%84%AD%E5%AE%9C%E8%BE%B2 |
+| ar-d-056 | 瓢蟲 | Ladybug | 1997 年自資出版、封面上沒有廠牌；水晶唱片的 EP《讓太空人跳舞》要到 1998 年才出 | 《台北時報》2001 年報導寫瓢蟲的兩張 CD 都在水晶唱片發行，與簡介『自資、無廠牌』的說法有出入；可能是記者籠統，也可能首作有水晶經銷。建議店主對 Discogs 或實體盤核一次 | https://www.taipeitimes.com/News/feat/archives/2001/08/24/99946 |
+| ar-d-056 | 瓢蟲 | Ladybug | 台灣龐克團瓢蟲唯一的長篇作品 | 《台北時報》把樂風寫成後龐克、grrrl 樂團式搖滾，並提到第二張專輯是全器樂；『唯一的長篇作品』與『龐克』兩點都和該報導不完全吻合，建議核對後再決定是否保留 | https://www.taipeitimes.com/News/feat/archives/2001/08/24/99946 |
 | ar-d-056 | 痛仰樂隊 | 這是個問題 | 樂隊的名字還是四個字：痛苦的信仰 | 「痛苦的信仰」是五個字（團名全稱「痛苦的信仰樂隊」），簡介寫成四個字有誤 | https://zh.wikipedia.org/wiki/%E7%97%9B%E4%BB%B0%E4%B9%90%E9%98%9F |
+| ar-d-057 | 趙一豪 | 把我自己掏出來 | 1988 年錄音、1990 年發行 | 英文維基、中文維基與 Newtalk 都寫這張專輯 1989 年（底）由水晶唱片發行，1990 年才遭查扣；『1990 年發行』可能是查扣年或改名版年份，請店主核對初版發行年（錄音年 1988 沒查到來源）。 | https://newtalk.tw/news/view/2025-03-05/959309 |
+| ar-d-057 | 鈴木実貴子ズ | いばら | 本張是主流出道之後的第一張全長，編號 CRCP-20619 | Billboard JAPAN 商品頁與 PIA（2026 年）報導都標《いばら》為「メジャー2ndアルバム」，PIA 並稱《あばら》為「メジャー1stアルバム」（2025 年發行）。應改成『主流第二張全長專輯』。 | https://www.billboard-japan.com/d_news/detail/157400/2 |
+| ar-d-057 | 隨性樂團 | 良禽 | 2012 年在貢寮拿下海洋獨立音樂大賞，隔年再拿評審團大獎 | 事實庫所引用的 unbiggie 頁面只寫 2012 年貢寮國際海洋音樂祭的最高榮譽『海洋音樂大賞』，沒有 2013 年評審團大獎；本層另外四次搜尋與 TVBS 報導也未能證實 2013 年的評審團大獎，且獎項正式名稱疑為『海洋大賞』而非『海洋獨立音樂大賞』。請店主核對海祭官方歷屆名單後決定是否改簡介。 | https://unbiggie.com/people/artist/2023/06/19/random/ |
+| ar-d-057 | A.L. Lloyd | Leviathan! | 並經由著作與錄音催生了 industrial folk 這一支 | 英文維基原句是 helped establish（協助確立）industrial folk 這個民謠分支，『催生』語氣較強；建議改成『協助確立』。 | https://en.wikipedia.org/wiki/A._L._Lloyd |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
