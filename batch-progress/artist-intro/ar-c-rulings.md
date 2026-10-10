@@ -749,3 +749,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Stevie Nicks「第一位兩度入選搖滾名人堂的女性」（兩源、名人堂官方）；Squeeze「Lennon 與 McCartney 王座的繼承人」（媒體稱號、歸屬式）；Snow Patrol〈Chasing Cars〉PPL 播放最多（在世者唯一一處、官方機構）；Small Faces 搖滾名人堂。
 - 身分修正：Steel Mill 是英國樂團（Penny Farthing／Bellaphon；特注原寫 Springsteen 早年的團，錯）；Smash 是塞維亞的團；Smak 是 Kragujevac；Slovenly 是 SST 舊金山團；Snapline 寫「中國」；Spherical Objects 不寫 Solamar 的性別轉換。
 - 待本機（上線簡介）：Soul Asylum「樂團得葛萊美」（得獎人為詞曲作者 Pirner）與「就職典禮演出」場合；Starship「Rolling Stone 2011 最差歌曲」與 Blender、GQ 並列（實為讀者票選、範圍不同）；Speed, Glue & Shinki 團名由來涉及成癮，建議簡介拿掉。
+
+## ar-d-048（2026-10-10）
+
+- 40 位全上（33 full、7 thin：Sugar Ray、Supersister、Supertouch、Tånk、Temple of Bon Matin、The Albion Band、The All-American Rejects）。
+- 審稿修 11 處：最高級刪改——Tamam Shud 刪「澳洲最出色之一」與「第一張金唱片電影配樂」、Texas Is the Reason 刪「Revelation 最暢銷之一」、The Adverts「最早之一」改「早期」、Tad「最早被 Sub Pop 簽下之一」與「最早的 grunge 之一」改「早期」、SWA 刪「廠牌最差的團」（單源負面最高級）；在世者多重成績——Straitjacket Fits 刪 APRA 百大歌曲票選（留名人堂一處）；新近事實——Strawbs 刪 2025 年 Cousins 辭世（未見兩源）；媒體名——Th' Faith Healers 的《紐約時報》改「美國樂評」。
+- 保留：Survivor 葛萊美（在世者唯一一處）；The Animals 的搖滾名人堂評語與 Springsteen 說法；Tanya Tagaq 只寫 Polaris 一處；Straitjacket Fits 的紐西蘭唱片業協會評語（官方機構）；The Adverts「第一位女性龐克明星」歸給一部音樂百科。
+- 身分修正：Sweet Charity 是新加坡樂團（特注原寫馬來西亞，錯）；Sunforest 是美國人在倫敦的三重奏（特注原寫英國）；Tånk 是法國 Brest 的團（維基預抓坦克作廢）；Tantra 是葡萄牙團（維基預抓宗教作廢）；Subhumans 是 Wiltshire（非溫哥華同名團）；Sweet Charity 維基預抓為音樂劇作廢。
+- 新近事實提醒：The Alarm 的 Mike Peters 據兩源於 2025 年過世，正文不寫；若現行上線簡介把他寫成在世，本機需改。
+- 卡池存疑：Sweet《Desolation Boulevard》卡池 1974 為歐洲 RCA 版（不含〈Ballroom Blitz〉）。
+- 待本機（上線簡介）：Stone Harbour「都來自 Canton」（多源 Youngstown）；Tamam Shud「Warner Bros. 第一張 LP」無據；Tamikrest「Songlines 年度最佳專輯」（官方頁為 2013 Best Group）與「2013 年 9 月發行」無據；Superchunk 簡介無誤。
