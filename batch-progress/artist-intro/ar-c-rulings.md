@@ -857,3 +857,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Battlefield Band 蘇格蘭傳統音樂名人堂的「最早之一」（官方）；Charley Pride「第一位黑人鄉村超級巨星」（兩源一致）；Charlie Moore 的 Ralph Stanley、Jimmy Martin 說法（具名樂手）；Bert Jansch 的 Neil Young 說法；Bob Desper、Arizona Dranes 的失明寫成身分特徵（非病情細節）。
 - 身分：Bill Wilson 維基預抓是同名牧師、Charlie McAlister 是橄欖球員、Charlie Moore 是釣魚節目主持人，皆已作廢；Dulcimer 是英國民謠三人組（非樂器）。
 - 待本機（上線簡介）：Aster Aweke「1981 年移居華盛頓」應為先到舊金山灣區；Aziza Brahim 父親過世時點兩源矛盾；Banda do Casaco 成立年與首張年份；Belchior「銷量逾五十萬」「與 Bob Dylan 對照」查無；Bellowhead「史上最暢銷的獨立廠民謠專輯」註腳不支撐；Bob Frank 的 Dickinson 評語措詞（best songwriter you never heard）；Brigada Víctor Jara《Eito fora》廠牌；Brooks & Dunn「7 倍白金」與 1990 年撮合；Charlie Moore《Avery County》1977／1979。
+
+## ar-d-059（2026-10-10）
+
+- 40 位全上（33 full、7 thin：Colter Wall、Country Cooking、Daniel Bachman、Danielle Howle、Dulcimer、Egschiglen、Extradition）。
+- 超額放行：Ewan MacColl 超出 2 次，為葛萊美與 Prix Italia 兩項高風險事實的第二源（Gunnar Graps 先例）。
+- 審稿修 13 處：字數——Connie Converse 262→247、Dave Bixby 268→230（並刪迷幻藥經驗細節，改「一段迷失的低潮」）、Ewan MacColl 268→231（刪 Dick Gaughan 最高級說法）、Elyse Weinberg 259→243（皆非雙卡）；最高級刪改——Conway Twitty「當時最高紀錄」、David Grisman「史上最具影響力之一」與 Dawg Music 定論口氣、Eric Andersen「義大利最重要的獎」、Esma Redžepova「最早的明星之一」、Francesco De Gregori「最著名的時刻之一」；政治與健康——Esma 刪「狄托的寵兒」、Faramarz Aslani 刪「女人、生命、自由」運動、De Gregori 刪 1976 年演唱會被左翼團體打斷、Emmanuelle Parrenin 刪火災傷聽力、Frankie Armstrong 刪青光眼病名。
+- 保留：Francesco Guccini 2026 年 8 月過世（Euronews、La Sicilia 兩源；名冊原列在世，錯）；Ed Askew 2025 年過世（兩源）；Faramarz Aslani、Fausto 2024 年過世；Ewan MacColl 葛萊美與 Prix Italia；Daniel Viglietti 的 Rubén Rada 說法與「曾被監禁、流亡」背景一句；Connie Converse 1974 年下落不明（兩源）。
+- 身分：Dulcimer 是英國 Cotswolds 三人組（維基預抓樂器頁作廢）；Fausto 是 Fausto Bordalo Dias（預抓消歧頁）；Extradition 是雪梨民謠團；Ewan MacColl & A.L. Lloyd 卡池這張（Folkways FG 3510）署名只有 MacColl，照掛名寫兩人但不寫成合唱。
+- 待本機（上線簡介）：Conway Twitty「1966 年轉入鄉村」應為 1965；Domenico Modugno「第一支登頂的非美加英語系單曲」無出處；Dulcimer「1970 年原盤」應為 1971；Egschiglen《Zazal》年份與錄音地；Eleftheria Arvanitaki 加入樂團年份；Emmanuelle Parrenin「1970 年 7 月魁北克」無出處；Eric Andersen《Blue River》榜次與編制只見部落格；Esma 出生年 1943／1945；MacColl & Lloyd「Folkways 重發」「最直接的曲目來源」無出處；Faramarz Aslani「中間十七年空白」錯（1978 年另有一張）；Fausto「名下唯一發行」錯（共 12 張）。
