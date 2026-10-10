@@ -712,3 +712,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 本輪新增的裁定形狀：thin 聲音句若只剩演出名單、曲長或錄音地點即不寫（Gorgoroth、L'Arc〜en〜Ciel、Lightyears Away 一致處理）；但直接塑造聲音的錄音做法可算（Movietone 海灘現場收音）。超額 2 次放行兩例（Gunnar Graps、Hunters & Collectors），皆為高風險事實的第二源。QA 千分位誤報（10,000 Maniacs）照專名保留。
 - 特注身分錯誤由研究層更正 8 處（Grow-Up、Haikara、Iron Cross、Menuets、Parameter 等），皆已照研究層改寫。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；卡池年份存疑（Gila 1967→1971、Keiji Haino 2017 為重發、Leeway 1988、Lizard 1985／1986）。
+
+## 第六輪十批接力（ar-d-044～053，2026-10-10 起）
+
+- 範圍：搖滾段 P 字頭之後。沿用第三至五輪的審稿規則、thin 門檻與第五輪新增的裁定形狀（只剩名單／曲長／錄音地點不寫；直接塑造聲音的錄音做法可算）。
