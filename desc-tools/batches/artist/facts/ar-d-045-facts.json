@@ -1,0 +1,2390 @@
+[
+ {
+  "key": "re-tros",
+  "name": "Re-TROS",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2009,
+   2009
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Watch Out! Climate Has Changed, Fat Mum Rises…",
+    "year": 2009,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c107-b",
+    "album": "Watch Out! Climate Has Changed, Fat Mum Rises…",
+    "facts": [
+     {
+      "f": "釘定的 release-group 0db970c4 欄位：title《Watch Out! Climate Has Changed, Fat Mum Rises…》、**artist-credit 寫《Rebuilding the Rights of Statues》但指向的藝人實體名是《Re-TROS》**（MBID 32e69425，country CN、type Group、disambiguation「Chinese band」、成軍 2003-03）、first-release-date **2009-02-27**、primary-type Album、secondary-types **空**、轄下 2 個 release。條目掛的標籤是 post-punk 與 rock，並掛了廠牌官網與一個資料庫連結。",
+      "src": "https://musicbrainz.org/ws/2/release-group/0db970c4-9d90-49ce-8305-1dc4d74ddb4d?fmt=json&inc=artist-credits+genres+url-rels"
+     },
+     {
+      "f": "兩筆 release 都是 **11 軌、同曲同序**：2009-02-27 的 CN／Official CD（摩登天空，編號 **M-035**）與 2009-03-01 的 XW 數位版（同廠牌、條碼 3615934265745）。逐軌長度：1 Watch Out, Climate Has Changed… 1:36、2 Surrender 5:38、3 My Great Location 3:52、4 Momentarily Out of Mind 3:03、5 Escape Behind… I 2:30、6 Vis-à-vis 3:26、7 Escape Behind… II 4:46、8 **Up Next: Bela Lugosi's Back 8:36**、9 Billy Cannot Stop 5:22、10 By Your Both Sides, Left and Right 5:34、11 …Fat Mum Rises! 1:17。**十一軌合計約 45 分半；第 1 軌與第 11 軌各只有一分半，兩首的題名合起來正是盤名。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=0db970c4-9d90-49ce-8305-1dc4d74ddb4d&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "中文百科〈重塑雕像的权利〉：「重塑雕像的權利（英語：**Re-TROS**，爲『Rebuilding the Rights of Statues』的縮寫）是**成立於2003年**的中國搖滾樂隊，來自北京……目前主要成員爲**華東、劉敏(Lumi Liu)及黃錦**。樂隊加入摩登天空後，於**2005年發行首張 EP《Cut Off!》；錄音期間布萊恩·伊諾（Brian Eno）以即興方式加入了合成器及電子聲效**，引起中國獨立音樂圈關注。」",
+      "src": "https://zh.wikipedia.org/wiki/%E9%87%8D%E5%A1%91%E9%9B%95%E5%83%8F%E7%9A%84%E6%9D%83%E5%88%A9"
+     },
+     {
+      "f": "英文百科〈Re-Tros〉：「Re-Tros, stylized as **Re-TROS** (an abbreviation of Rebuilding the Rights of Statues, Chinese: 重塑雕像的權利) is a Chinese rock band **formed in Beijing in 2003**. The group is noted for blending post-punk and experimental rock elements, with intricate arrangements, electronics and an energetic live presence」。",
+      "src": "https://en.wikipedia.org/wiki/Re-Tros"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Watch Out! Climate Has Changed, Fat Mum Rises…",
+    "manifest": "onboarding-manifest-c107-20260910.json",
+    "desc": "第一軌與最後一軌各只有一分半，兩個題名接起來就是盤名。十一軌合計約 45 分半，中間九首裡最長的〈Up Next: Bela Lugosi's Back〉8 分 36 秒比第二長的〈Surrender〉5 分 38 秒多出三分鐘；另有一組拆成兩段的〈Escape Behind…〉，2 分 30 秒與 4 分 46 秒分別擺在第五與第七軌。樂隊是三人編制，後龐克底加上大量電子聲響；他們 2005 年那張 EP 的錄音期間，Brian Eno 以即興方式加入了合成器與電子聲效。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/0db970c4-9d90-49ce-8305-1dc4d74ddb4d?fmt=json&inc=artist-credits+genres+url-rels",
+     "https://musicbrainz.org/ws/2/release?release-group=0db970c4-9d90-49ce-8305-1dc4d74ddb4d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1808896844&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E9%87%8D%E5%A1%91%E9%9B%95%E5%83%8F%E7%9A%84%E6%9D%83%E5%88%A9",
+     "https://en.wikipedia.org/wiki/Re-Tros",
+     "https://musicbrainz.org/ws/2/release-group?artist=32e69425-f232-48d8-9472-e816f1230b2a&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/0db970c4-9d90-49ce-8305-1dc4d74ddb4d"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "red noise",
+  "name": "Red Noise",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1971,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sarcelles-Lochères",
+    "year": 1971,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c61-a",
+    "album": "Sarcelles-Lochères",
+    "facts": [
+     {
+      "f": "法文維基：Patrick Vian（1942–2023）是作家、歌手與音樂家 Boris Vian 與 Michelle Léglise 的長子；他在 Red Noise 擔任吉他手與歌手，那個團是 1968 年五月風暴期間由他與 Daniel Geoffroy、Serge Catalano、Francis Lemonnier 一起創立的。",
+      "src": "https://fr.wikipedia.org/wiki/Patrick_Vian"
+     },
+     {
+      "f": "法文維基：Catalano 與 Lemonnier 兩人 1970 年 5 月離開，與 Olivier Zdrzalik-Kowalski、Michel Muzac、Pascal Chassin 組成 Komintern；Red Noise 在音樂與政治上被歸類為自由意志派、爵士與搖滾兼有。",
+      "src": "https://fr.wikipedia.org/wiki/Patrick_Vian"
+     },
+     {
+      "f": "法文維基：1970 年 Red Noise 由 Patrick Vian 與 John Livengood 一起錄下《Sarcelles-Locheres》這張專輯，發行者是 Gérard Terronès 的 Futura 廠牌。Patrick Vian 的父親曾把他寫進小說裡——在〈Les Remparts du sud〉裡是小 Bisonnot，在〈Les Pompiers〉裡是 Pat。",
+      "src": "https://fr.wikipedia.org/wiki/Patrick_Vian"
+     },
+     {
+      "f": "Discogs 的廠牌條目：Futura Records 是 Gérard Terronès 1969 年在巴黎創立的獨立法國爵士廠牌，底下分成幾個取向不同的子系列——Futura GER（主流與自由爵士）、Futura Swing、Futura Son（實驗）、Futura Red（前衛搖滾）與 Futura Voice（人聲）。",
+      "src": "https://www.discogs.com/label/43971-Futura-Records"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Sarcelles-Lochères",
+    "manifest": "onboarding-manifest-c61-20260903.json",
+    "desc": "吉他手是 Boris Vian 的長子，這個團在 1968 年五月的那幾個星期成立。1971 年由 Futura Records 發行，是該廠 RED 系列第一號。Patrick Vian 與另外三人創立，1970 年 5 月其中兩人離開去組 Komintern。A 面十軌都是短曲，最短 0:15；B 面是一段 0:35 與 20:00 的〈Sarcelles c'est l'avenir〉。吉他失真、樂句斷裂，人聲多半是喊與唸；B 面那首把同一個動機拉長再拆掉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2275248-Red-Noise-3-Sarcelles-Loch%C3%A8res",
+     "https://www.discogs.com/master/249030-Red-Noise-Sarcelles-Loch%C3%A8res",
+     "https://fr.wikipedia.org/wiki/Patrick_Vian",
+     "https://www.discogs.com/label/43971-Futura-Records",
+     "https://musicbrainz.org/release-group/8b63f78d-99f6-33a4-ba1a-1b9a927fedec"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "red summer",
+  "name": "Red Summer",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Release",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c80-a",
+    "album": "Release",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 3546595）記：1982 年英國發行，廠牌 Rimshot Records (2)、編號 RSR 101，形制 Vinyl／LP／Album，十一軌。",
+      "src": "https://www.discogs.com/release/3546595"
+     },
+     {
+      "f": "Rimshot Records (2) 這個 Discogs 廠牌實體（編號 386184）的簡介只有一句「1980s UK label」，目錄共四個編號：RSR 100 是 Acorn Sounds《Face The Music》(1980, LP)、RSR 101 是本張、RSE 001 是 Silky《Making Tracks》七吋 EP (1982)、RSS 001 是 Catch 22《Get Close To Me》七吋 (1985)。",
+      "src": "https://www.discogs.com/label/386184"
+     },
+     {
+      "f": "MusicBrainz 的 release-group 20e446ed-e068-4834-92fc-6ea8c2f79132 記 first-release-date 1982、primary-type Album、secondary-types 空，轄下一筆 release：1982 GB Official、12 吋黑膠、十一軌，廠牌欄 Rimshot Records、目錄號 RSR 101。",
+      "src": "https://musicbrainz.org/release-group/20e446ed-e068-4834-92fc-6ea8c2f79132"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Release",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "兩個資料庫上，這兩個人只留下這一張碟。MusicBrainz 名下只有這一個 release-group，Discogs 上只有原盤一筆條目，藝人條目的簡介欄空著。Sammy Andrews 彈吉他也唱，Nick Carey 彈鍵盤、拉小提琴，封面是他做的，末軌〈I Wanna Be A Punk〉也由他開嗓，詞曲則兩人共掛。錄音在威爾特郡 Malmesbury 用 Fostex 的器材完成，之後拿到 Stroud 的 Fleetwood Studios 重混。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3546595",
+     "https://www.discogs.com/label/386184",
+     "https://itunes.apple.com/lookup?id=1739684825&entity=song&country=gb",
+     "https://musicbrainz.org/release-group/20e446ed-e068-4834-92fc-6ea8c2f79132",
+     "https://musicbrainz.org/artist/e7486842-3a72-4ddb-ab09-e2d673e3cb98",
+     "https://coverartarchive.org/release-group/20e446ed-e068-4834-92fc-6ea8c2f79132/front"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "redbone",
+  "name": "Redbone",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Wovoka",
+    "year": 1973,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Wovoka",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "Pat 與 Lolly Vegas 兄弟領軍的 Redbone,成員清一色 Chicano 與原住民血統,1973 年 11 月在 Epic 推出第五張專輯,標題取自發起鬼舞運動的派尤特先知 Wovoka。兄弟倆自任製作,Joe Sample 客席鋼琴,Gene Page 編寫管弦。〈Come and Get Your Love〉隔年衝上美國榜第五、銷量破百萬。〈We Were All Wounded at Wounded Knee〉在比利時、荷蘭奪冠,卻因題材敏感從美加版抽掉。專輯本身登上 Billboard 200 第 66 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Wovoka_(album)",
+     "https://en.wikipedia.org/wiki/Redbone_(band)",
+     "https://musicbrainz.org/release-group/b70e7844-a850-3e91-b389-8dd0a15d8125"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "refrigerator",
+  "name": "Refrigerator",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1994,
+   1994
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "How You Continue Dreaming",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c84-a",
+    "album": "How You Continue Dreaming",
+    "facts": [
+     {
+      "f": "Discogs 原盤條目 2939663 記：廠牌 Shrimper，編號欄同時列「SHR 53」與「SHR 58」，country US，格式欄 Cassette x1 [Album]，released 欄 1994-11-00（released_formatted 欄「Nov 1994」）；styles 欄 Alternative Rock 與 Lo-Fi。",
+      "src": "https://www.discogs.com/release/2939663"
+     },
+     {
+      "f": "原卡帶條目登錄的 20 軌曲序：A 面 Colton／Speedway／Orange Blossom／Bicycle／Wish And Need／Insect／Glitter Jazz／Son House／Half Empty Shoes／How You Continue Dreaming，B 面 Party Hat／Ghetto Bed／Green And White Meet Blue／Suckdown／Sorry State Line／727／Hydrogen Suitcase／Washout／98 Pounds／Old Sity Cool（該條目的拼法即作 Sity）。",
+      "src": "https://www.discogs.com/release/2939663"
+     },
+     {
+      "f": "MB 那筆 CD（38c03136）登記的逐軌長度：Colton 1:52、Speedway 2:54、Orange Blossom 2:06、Bicycle 1:58、Wish and Need 2:03、Insect 2:38、Glitter Jazz 2:09、Son House 1:59、Half Empty Shoes 2:09、How You Continue Dreaming 1:26、Party Hat 4:02、Ghetto Bed 1:47、Green and White Meet Blue 3:44、Suckdown 1:40、Sorry State Line 1:53、727 0:58、Hydrogen Suitcase 1:28、Washout 2:01、98 Pounds 1:57、Old City Cool 1:49；二十軌相加 2553 秒（42 分 33 秒），最長的〈Party Hat〉與最短的〈727〉相差 184 秒。",
+      "src": "https://musicbrainz.org/release/38c03136-33e1-34be-8f7b-3218c60ce3b1"
+     },
+     {
+      "f": "Apple Music 美國店面 collectionId 304193541 的欄位：collectionName《How You Continue Dreaming》、artistName「Refrigerator」、trackCount 20、releaseDate 1995-02-21、copyright「℗ 1995 Communion label」；十二軌以外逐軌核對，二十個曲名與曲序與 MB 那筆 CD 完全相同（含 Old City Cool 的 City 拼法）。",
+      "src": "https://music.apple.com/us/album/how-you-continue-dreaming/304193541"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "How You Continue Dreaming",
+    "manifest": "onboarding-manifest-c84-20260910.json",
+    "desc": "原盤條目的註記欄記著：SHR 53 這個編號同時發給了兩張專輯。同欄還寫這是 Pre-Communion 的 Shrimper 卡帶，標準版是影印封面加手工蠟筆上色。Discogs 的 Shrimper 廠牌頁簡介欄說，這家加州廠牌由 Refrigerator 的 Dennis Callaci 創辦。他在本張掛吉他，主唱 Allen Callaci、錄音 Bob Durkee，鼓由兩人分軌掛名。released 欄記 1994 年 11 月。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2939663",
+     "https://www.discogs.com/release/1997618",
+     "https://www.discogs.com/release/1284912",
+     "https://musicbrainz.org/release-group/55fc8171-4471-46f5-8224-10b42174dff8",
+     "https://musicbrainz.org/ws/2/release?release-group=55fc8171-4471-46f5-8224-10b42174dff8&inc=recordings+labels+media&fmt=json",
+     "https://musicbrainz.org/release/38c03136-33e1-34be-8f7b-3218c60ce3b1",
+     "https://music.apple.com/us/album/how-you-continue-dreaming/304193541"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "renaissance",
+  "name": "Renaissance",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ashes Are Burning",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Ashes Are Burning",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "第四張，1973 年 4 至 8 月在 De Lane Lea 錄音、同年十月發行，也是他們第一次讓管弦樂團加進來。當時團裡沒有吉他手，多數吉他由貝斯手 Jon Camp 兼任，Michael Dunford 以客座身分彈木吉他；作曲靠郵寄完成——Dunford 把旋律帶寄給寫詞的 Betty Thatcher，定稿後才進錄音室編曲。開場〈Can You Understand?〉近十分鐘，引用了 Maurice Jarre 為《齊瓦哥醫生》寫的主題；〈At the Harbour〉頭尾則取自 Debussy 的〈沉沒的教堂〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ashes_Are_Burning",
+     "https://musicbrainz.org/release-group/5a2ccc70-8aec-3119-80d7-7b1e8de4140e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "republica",
+  "name": "Republica",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Republica",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "repulsion",
+  "name": "Repulsion",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1989,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Horrified",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "resurrection band",
+  "name": "Resurrection Band",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1978,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Awaiting Your Reply",
+    "year": 1978,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 18,
+   "researchRecords": 2,
+   "facts": 6,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c72-a",
+    "album": "Music to Raise the Dead",
+    "facts": [
+     {
+      "f": "同一條目記載：這是樂團的第一份獨立發行，但多數人把四年後的《Awaiting Your Reply》當成正式出道作；這捲帶子 1992 年由樂團自己的 Grrr Records 少量再發，被視為收藏品且極難找到。〈Quite Enough〉後來在 1984 年的《Live Bootleg》上重錄了現場版。",
+      "src": "https://en.wikipedia.org/wiki/Music_to_Raise_the_Dead"
+     },
+     {
+      "f": "同一條目記載：四年後樂團靠一位朋友給的八千美元錄下第一張專輯《Awaiting Your Reply》，用兩星期的通宵馬拉松錄完；當時沒有一家基督教廠牌敢發——那種受 Led Zeppelin 與 Jefferson Airplane 影響的東西在那個市場被認為太有爭議——最後由小廠 Star Song 原封發行，結果衝上福音專輯銷售榜第六名。",
+      "src": "https://en.wikipedia.org/wiki/Resurrection_Band"
+     },
+     {
+      "f": "Discogs 的 1974 年原始條目：格式登錄為 Promo 卡帶，廠牌欄是「Not On Label (Resurrection Band Self-released)」、無目錄號；風格標記 Hard Rock。",
+      "src": "https://www.discogs.com/release/10732143-Resurrection-Band-Music-To-Raise-The-Dead"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c72-b",
+    "album": "Awaiting Your Reply",
+    "facts": [
+     {
+      "f": "英文維基《Awaiting Your Reply》條目記載：這是 Resurrection Band 的首張專輯，1978 年發行，全長 39 分 04 秒，製作掛樂團自己，錄於 Hedden West Studios；AllMusic 給五顆星（滿分五星）。",
+      "src": "https://en.wikipedia.org/wiki/Awaiting_Your_Reply"
+     },
+     {
+      "f": "同一條目（引 2008 年 10 月 21 日《Christianity Today》的文章與同一集 podcast）記載：這張碟在當時的基督教樂評圈引起相當大的爭議，許多人不滿它的爭議性主題與厚重的搖滾音色——那個音色明顯受 Led Zeppelin 影響；美國與英國都沒有任何一家基督教唱片廠牌願意經銷這張碟，最後是獨立廠牌 Star Song Records 與樂團簽了約。",
+      "src": "https://en.wikipedia.org/wiki/Awaiting_Your_Reply"
+     },
+     {
+      "f": "同一條目的曲目登錄：九軌，全部由 Glenn Kaiser 所寫，兩首例外——〈Golden Road〉由 Glenn Kaiser 與 Jon Trott 合寫、〈Ananias and Sapphira〉出自貝斯手 Jim Denton，那首也由 Denton 唱主唱。最長的〈Broken Promises〉6 分 56 秒，最短的〈Ananias and Sapphira〉2 分 50 秒。",
+      "src": "https://en.wikipedia.org/wiki/Awaiting_Your_Reply"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Awaiting Your Reply",
+    "manifest": "onboarding-manifest-c72-20260904.json",
+    "desc": "美國和英國沒有一家基督教廠牌肯經銷這張碟。維基引《Christianity Today》記，當時的基督教樂評圈對它的爭議性主題與那種明顯受 Led Zeppelin 影響的厚重音色很不滿意，最後是獨立廠牌 Star Song 跟樂團簽了約，隨片附一本介紹樂團事工的小冊。錄音以通宵的馬拉松式段落進行，最後一段收在復活節主日的清晨。九軌幾乎全由 Glenn Kaiser 所寫，只有〈Ananias and Sapphira〉出自貝斯手 Jim Denton 並由他唱。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3223394-Resurrection-Band-Awaiting-Your-Reply",
+     "https://www.discogs.com/master/415047-Resurrection-Band-Awaiting-Your-Reply",
+     "https://en.wikipedia.org/wiki/Awaiting_Your_Reply",
+     "https://musicbrainz.org/release-group/15a858e5-15be-3a0e-8a36-ee6ecfe093b2"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rex",
+  "name": "Rex",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "C",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "rheinallt h. rowlands",
+  "name": "Rheinallt H. Rowlands",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Bukowski",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c83-a",
+    "album": "Bukowski",
+    "facts": [
+     {
+      "f": "Discogs 原盤 CD 條目 2495040 的欄位：廠牌 Ankst、編號 ANKST CD071、國別 UK、released 欄 1996、CD ×1［Album］、barcode 5 019148 610595；**genre 欄是 Pop**、style 欄列 Chanson、Neo-Classical、Ballad；公司欄有 Glass Mastered At「Nimbus」、Copyright (c) 與 Phonographic Copyright (p) 都是 Ankst。",
+      "src": "https://www.discogs.com/release/2495040"
+     },
+     {
+      "f": "Discogs 藝人頁 398128 的 realname 欄寫「Owain Wright」，簡介欄說：Owain 'Oz' Wright 是北威爾斯的創作歌手，除了在若干在地團體裡唱與演奏之外，也以「Rheinallt H. Rowlands」這個角色錄音與演出——那是一個虛構的、採石場關閉後改行做音樂的前採石工人；同欄寫他數度與 Gorky's Zygotic Mynci 同台、與 Faust 同台一次，並寫他於 2005 年 12 月死於一場交通事故；別名欄列「Owain Wright」，樂團欄列「The Serpents」。",
+      "src": "https://www.discogs.com/artist/398128"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Bukowski",
+    "manifest": "onboarding-manifest-c83-20260910.json",
+    "desc": "作詞欄按語言拆開：威爾斯語七軌掛 Owain Wright，英文與法文三軌掛 Zoë Skoulding。Arranged By 與 Composed By 掛 Dewi Evans，Composed By 另掛 Owain Wright。Discogs 登錄的曲長裡，同名曲〈Bukowski〉10:48 是十軌裡最長的一首。Discogs 的 genre 欄填 Pop，style 欄是 Chanson、Neo-Classical 與 Ballad。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2495040",
+     "https://musicbrainz.org/release-group/33f33ffc-f502-4a5a-928d-1e2fbb91886f",
+     "https://musicbrainz.org/artist/6fcab9d1-1cb2-4653-9539-5bddf87ca74f",
+     "https://www.discogs.com/artist/398128",
+     "https://www.discogs.com/release/1413013",
+     "https://music.apple.com/gb/album/bukowski/1436887414"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "riblja čorba",
+  "name": "Riblja Čorba",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mrtva priroda",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c54-a",
+    "album": "Mrtva priroda",
+    "facts": [
+     {
+      "f": "製作人是英國樂團 Gillan 的貝斯手 John McCoy。依 Bora Đorđević 2011 年的書《Šta je pesnik hteo da kaže》，樂團一落地倫敦就買了 NME 與 Melody Maker，發現兩份榜首都是 Gillan 的新專輯、標著「Virgin 發行、John McCoy 製作」，當場決定製作人就是他。",
+      "src": "https://en.wikipedia.org/wiki/Mrtva_priroda"
+     },
+     {
+      "f": "〈Ja sam se ložio na tebe〉是吉他手 Momčilo Bajagić 第一首詞曲全由他包辦的 Riblja Čorba 曲子；同碟另有六首由 Đorđević 一人寫成。",
+      "src": "https://en.wikipedia.org/wiki/Mrtva_priroda"
+     },
+     {
+      "f": "1982 年 2 月底樂團到塞拉耶佛 Skenderija 演出時，Đorđević 被要求為那兩句歌詞寫一份公開說明；主辦單位還要他簽下一份自負一切法律責任的切結書，才敢讓他在台上唱那首。",
+      "src": "https://en.wikipedia.org/wiki/Mrtva_priroda"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Mrtva priroda",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "樂團在倫敦買了兩本樂評雜誌，照著榜首那張唱片的製作人名字去找人。那個名字是 Gillan 的貝斯手 John McCoy，他成了這張 1981 年 11 月 3 日由 PGP-RTB 發行的第三張專輯的製作人。硬搖滾的編制被他做得乾淨結實，唱腔是說話式的市井口吻，歌詞的重量壓過旋律。〈Na zapadu ništa novo〉是樂團第一首帶明確政治意味的歌，社青盟的波士尼亞分部曾以兩句歌詞為由要求禁掉這張唱片，唱片照常發行，三週賣掉 100000 張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mrtva_priroda",
+     "https://musicbrainz.org/release-group/0f1b9e3f-6d22-3e80-aa9d-116662e36056"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "richard hell & the voidoids",
+  "name": "Richard Hell & the Voidoids",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1977,
+   1977
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Blank Generation",
+    "year": 1977,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Blank Generation",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Richard Hell 先後離開 Television 與 the Heartbreakers 之後才組成 Voidoids，1977 年由 Richard Gottehrer 共同製作、Sire 發行。重點在兩把 Fender Stratocaster：Robert Quine 與 Ivan Julian 分置左右聲道，Quine 那種混著五〇年代搖滾與六〇年代自由爵士的無調獨奏包下絕大多數段落。標題曲的下行和弦取自 1959 年的諧曲〈The Beat Generation〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Blank_Generation_(album)",
+     "https://musicbrainz.org/release-group/d0a52f62-e66d-34a0-9ff1-c4fce47f517f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "richard o'brien",
+  "name": "Richard O'Brien",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1975,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Rocky Horror Picture Show",
+    "year": 1975,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c88-a",
+    "album": "The Rocky Horror Picture Show",
+    "facts": [
+     {
+      "f": "MB 該 release-group 的 1975 GB release（cf45ab94）欄位：1975、GB、status Official、廠牌欄 Ode Records、編號 ODE 78332、一張 12\" Vinyl、track-count **14**；同組另有一筆 1975 US 的 Ode Records OSV-C-21653 卡帶記 **16** 軌。",
+      "src": "https://musicbrainz.org/release/cf45ab94-a52a-4109-bac6-e596dd805d5d"
+     },
+     {
+      "f": "Discogs 1975 US 原盤（release 5576539）的欄位：掛名欄印成「\"The Rocky Horror Picture Show\" Original Cast」、廠牌 Ode Sounds & Visuals、編號 OSV-21653、US、Vinyl ×1［LP, Album, Stereo］、released 欄 1975、14 軌；genre 欄 Rock／Pop／Stage & Screen，style 欄 Soundtrack、Rock & Roll、Glam。",
+      "src": "https://www.discogs.com/release/5576539"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Rocky Horror Picture Show",
+    "manifest": "onboarding-manifest-c88-20260910.json",
+    "desc": "1978 年才登上 Billboard 200，2010 年又因一集電視劇重返第 55 名。英文維基百科的條目說，本輯在澳洲榜最高第 12、紐西蘭榜第 11，1981 年 2 月獲 RIAA 金唱片認證。唱片上掛的是 Original Cast，十四軌的掛名逐軌寫的是演員：A5、A6 與 B4 掛 Tim Curry，A7 掛 Meat Loaf。曲目從 A1〈Science Fiction/Double Feature〉起，A4 是〈The Time Warp〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3bcbb670-3d84-31a1-9838-42633504b075",
+     "https://musicbrainz.org/release/cf45ab94-a52a-4109-bac6-e596dd805d5d",
+     "https://www.discogs.com/release/5576539",
+     "https://en.wikipedia.org/wiki/The_Rocky_Horror_Picture_Show_(soundtrack)",
+     "https://music.apple.com/us/album/6795890915",
+     "https://music.apple.com/us/album/6795892154"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rick saucedo",
+  "name": "Rick Saucedo",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1978,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Heaven Was Blue",
+    "year": 1978,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c69-b",
+    "album": "Heaven Was Blue",
+    "facts": [
+     {
+      "f": "Guerssen 的官方頁記 Rick Saucedo 是來自芝加哥、國際知名的 Elvis 致敬藝人兼演員與創作歌手，1978 年在百老匯音樂劇《The Legend Lives On》裡演 Elvis 時想建立自己的音樂身分而做了這張碟，靈感來自 The Beatles 與 Pink Floyd；十八分鐘的同名組曲被他設想成一場「acid trip dream」，碟上樂器幾乎全由他一人演奏、只有朋友少量幫忙。",
+      "src": "https://guerssen.com/product/heaven-was-blue-2lp/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Heaven Was Blue",
+    "manifest": "onboarding-manifest-c69-20260904.json",
+    "desc": "在百老匯演 Elvis 的那一年，他做了一張想建立自己音樂身分的唱片。那齣戲是 1978 年的《The Legend Lives On》，唱片錄於伊利諾州 Harvey 的 Pyramid Studios。整張只有五軌，B 面整面就是〈Heaven Was Blue〉一首；再發文案說他把這段組曲設想成一場 acid trip dream。The Active Listener 的樂評寫它完全丟掉 Elvis 的影子，改用 Lennon 式的唱法，同名曲將近十九分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4567525",
+     "https://guerssen.com/product/heaven-was-blue-2lp/",
+     "https://www.discogs.com/release/6810804",
+     "https://www.discogs.com/master/345309",
+     "https://active-listener.blogspot.com/2015/06/rick-saucedo-heaven-was-blue-deluxe.html",
+     "https://musicbrainz.org/release-group/e04dc381-80b6-3fca-898a-15e46bb10820"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rick springfield",
+  "name": "Rick Springfield",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Working Class Dog",
+    "year": 1981,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Working Class Dog",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "澳洲出身的 Rick Springfield 第五張錄音室作品，1981 年 2 月由 RCA 發行，在 Van Nuys 的 Sound City 錄音，他與 Bill Drescher、Keith Olsen 共同製作。〈Jessie's Girl〉替他拿下 1982 年葛萊美最佳男性搖滾演唱，專輯攻上 Billboard 200 第七名，美國銷量超過三百萬張。封面那隻穿襯衫打領帶的鬥牛㹴是他的愛犬 Ronnie，Mike Doud 的設計入圍葛萊美最佳專輯包裝。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Working_Class_Dog",
+     "https://musicbrainz.org/release-group/02f7b110-7d2f-316d-ad50-5bf72f07cada"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ricky nelson",
+  "name": "Ricky Nelson",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1957,
+   1957
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ricky",
+    "year": 1957,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "rikki ililonga",
+  "name": "Rikki Ililonga",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1975,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Zambia",
+    "year": 1975,
+    "genres": [
+     "rock",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "rio reiser",
+  "name": "Rio Reiser",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1986,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rio I.",
+    "year": 1986,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c110-a",
+    "album": "Rio I.",
+    "facts": [
+     {
+      "f": "德文條目〈Rio I.〉的〈Entstehungsgeschichte〉節：Ton Steine Scherben 一向自營發行，與唱片工業合作破局後，樂團在 1985 年五月**背著債務解散**，但留下一疊 demo 帶，其中〈Alles Lüge〉〈Junimond〉〈Lass mich los〉〈Runter zum Hafen〉四首曾拿去向唱片公司提案。本張 1985 至 1986 年在柏林錄音，製作是 Annette Humpe 與 Udo Arndt。1984 年 Reiser 曾想向 Humpe 借一萬馬克被拒，Humpe 改替他從 WEA 弄到五千馬克預付金，做出他的第一張個人單曲〈Dr. Sommer〉。",
+      "src": "https://de.wikipedia.org/wiki/Rio_I."
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Rio I.",
+    "manifest": "onboarding-manifest-c110-20260910.json",
+    "desc": "封面王冠的明暗裡藏著一根伸出來的中指。1985 年他原來那支樂團背著債務散夥，留下一疊 demo 帶，其中幾首後來進了這張。1986 年 CBS 的原盤十軌、兩面各五首，〈Alles Lüge〉〈Junimond〉〈König von Deutschland〉〈Für immer und Dich〉四首在半年內陸續抽成單曲。他這回只寫只唱，伴奏交給當時第一線的錄音室樂手，製作是 Annette Humpe 與 Udo Arndt。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/da3a12ec-0817-3801-8668-c3d868523c7c?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=da3a12ec-0817-3801-8668-c3d868523c7c&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://de.wikipedia.org/wiki/Rio_I.",
+     "https://itunes.apple.com/lookup?id=279143036&country=de&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=cdc82eb3-7eac-4387-baf8-cd3bac0f5092&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/da3a12ec-0817-3801-8668-c3d868523c7c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rites of spring",
+  "name": "Rites of Spring",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rites of Spring",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "robbie williams",
+  "name": "Robbie Williams",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1997,
+   1997
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Life thru a Lens",
+    "year": 1997,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "rodan",
+  "name": "Rodan",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1994,
+   1994
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rusty",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "room",
+  "name": "Room",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1970,
+   1970
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Pre-Flight",
+    "year": 1970,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c68-b",
+    "album": "Pre-Flight",
+    "facts": [
+     {
+      "f": "Discogs master 上這張碟沒有任何 1970 年代的海外同期發行——十五個版本裡，1970 年只有英國 Deram 那一筆，其餘全部是 1990 年以後的再發。",
+      "src": "https://www.discogs.com/master/294230-Room-Pre-Flight"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Pre-Flight",
+    "manifest": "onboarding-manifest-c68-20260904.json",
+    "desc": "六個人的樂團，唱片上另外掛了十三位弦樂與銅管樂手。大提琴兩位、中提琴兩位、小提琴四位、小號三位、長號一位、粗管短號一位，編曲與音樂總監是 Richard Hartley。1970 年的原盤是 Deram SML 1073，刻片在 Decca Studios。主奏吉他手 Chris Williams 掛了七首裡的五首詞曲，Jane Kevern 唱歌兼鈴鼓。開場的〈Pre-Flight〉與收尾的〈Cemetery Junction〉都在曲名上標明分成兩個部分。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2933431-Room-Pre-Flight",
+     "https://www.discogs.com/master/294230-Room-Pre-Flight",
+     "https://musicbrainz.org/release-group/c0de5145-8f6f-3918-a9f9-a6ae0d0c0025"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rorschach",
+  "name": "Rorschach",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Remain Sedate",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c120-a",
+    "album": "Remain Sedate",
+    "facts": [
+     {
+      "f": "廠牌實體 Vermiform（49b98a7d）：type「Original Production」、country US、area United States，**life-span 與 disambiguation 皆空白**。本批另一張同廠：Born Against《Nine Patriotic Hymns for Children》，catalog-number **VMFM 06**（1991）——**兩張的編號 02 與 06 都已逐筆回問。**",
+      "src": "https://musicbrainz.org/ws/2/label/49b98a7d-d472-4dfc-952f-66796215fa23?fmt=json"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Remain Sedate",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "B 面第三首的曲名拖著一整句括號補語，其餘十一個都是短語。1990 年的這張 12 吋十二軌，A 面六首、B 面六首對半切，從〈Pavlov's Dogs〉起、收在〈Oppress〉，那個長標題〈My Mind's In A Vice (And It's Being Cranked Real Tight)〉就排在 B 面第三首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d1aee00e-ce2d-4584-8ea1-f83b67caf55a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=bfb77d72-8e36-4cf2-be10-7dcdd81d52b4&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/label/49b98a7d-d472-4dfc-952f-66796215fa23?fmt=json",
+     "https://itunes.apple.com/lookup?id=470032486&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/d1aee00e-ce2d-4584-8ea1-f83b67caf55a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rorschach / neanderthal",
+  "name": "Rorschach / Neanderthal",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1991,
+   1991
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rorschach / Neanderthal",
+    "year": 1991,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c122-a",
+    "album": "Rorschach / Neanderthal",
+    "facts": [
+     {
+      "f": "1991 原盤四軌與長度：1〈Brainhandle〉1:39、2〈Hardware〉1:25、3〈Fighting Music (Let the Games Begin)〉**0:40**、4〈Fluids〉0:53。**四軌合計 4 分 37 秒——這是本組二十三張裡最短的一張全碟**（對照同組同為四軌的 The Icemen 是 15 分 52 秒，同為 Vermiform 發行的 Born Against 五軌是 11 分 8 秒）。**後兩軌合起來只有 1 分 33 秒。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=a2a9e14f-a5c8-3b19-bedc-2baeb0aed83f&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "廠牌實體 Vermiform（49b98a7d）：type Original Production、country US、area United States、**life-span 起訖皆空、disambiguation 空**。**同組另一張 Vermiform 發行是 Born Against 1990 年的同名 7 吋（該筆 catno 為 null）——本張的 VMFM 04.5 是本組兩張 Vermiform 裡唯一有目錄編號的。**",
+      "src": "https://musicbrainz.org/ws/2/label/49b98a7d-d472-4dfc-952f-66796215fa23?fmt=json"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Rorschach / Neanderthal",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "目錄編號寫成 04.5，這張被編在兩號之間。四軌合計 4 分 37 秒，後兩軌〈Fighting Music (Let the Games Begin)〉與〈Fluids〉加起來只有一分三十三秒。兩個掛名各佔一半，實體記著的起始地分別是 New Jersey 與 California。廠牌欄寫的是 Vermiform；同一家廠牌前一年那張碟，編號欄反而是空的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a2a9e14f-a5c8-3b19-bedc-2baeb0aed83f&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/bfb77d72-8e36-4cf2-be10-7dcdd81d52b4?fmt=json",
+     "https://musicbrainz.org/ws/2/release-group?artist=801a222a-7843-4a8d-aced-31a45e1a7370&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/label/49b98a7d-d472-4dfc-952f-66796215fa23?fmt=json",
+     "https://itunes.apple.com/search?term=Rorschach%20Neanderthal&entity=album&country=us&limit=25",
+     "https://musicbrainz.org/release-group/a2a9e14f-a5c8-3b19-bedc-2baeb0aed83f",
+     "https://en.wikipedia.org/wiki/Rorschach_(band)",
+     "https://en.wikipedia.org/wiki/Vermiform_Records"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rothko",
+  "name": "Rothko",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1999,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "A Negative for Francis",
+    "year": 1999,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c83-b",
+    "album": "A Negative for Francis",
+    "facts": [
+     {
+      "f": "MusicBrainz 1999 GB 那筆 release（f5ef6e0c）登記廠牌 Lo Recordings、編號 LCD 12、barcode 0666017002620、一片 CD、track-count 16。",
+      "src": "https://musicbrainz.org/release/f5ef6e0c-b85d-4a79-b968-223738209ba8"
+     },
+     {
+      "f": "MusicBrainz 2017-12-15 那筆 XW 數位 release（66be3123，廠牌欄 Lo Recordings、編號 Lo12）也是十六軌、與 1999 那筆逐項同序，只有三處把標題裡的斜線補回來（第 7 軌〈A Negative for Francis / Shot Through Gauze〉、第 12 軌〈System / Post Suffix〉、第 15 軌〈Newmelodics432 / Other Openings〉）。",
+      "src": "https://musicbrainz.org/release/66be3123-89de-4775-acdb-2626241417ac"
+     },
+     {
+      "f": "Discogs 藝人頁 523 的簡介欄寫「Based in London, Rothko were founded by Mark Beazley in the spring of 1997, playing their first show at (…) in August the same year. The original lineup consisted of Mark Beazley, Crawford Blair, and Jon Meade. (…) The original lineup disbanded in 2001, and Mark carried on the Rothko name.」；成員欄列 Michael Donnelly、Mark Beazley、Tom Page、Ben Page、Crawford Blair、Jon Meade 六人。",
+      "src": "https://www.discogs.com/artist/523"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "A Negative for Francis",
+    "manifest": "onboarding-manifest-c83-20260910.json",
+    "desc": "十六軌裡最短的〈Doo〉33 秒，最長的一軌 4 分 32 秒。另有三軌在一分半以內，〈Testcard〉是 1:23。製作欄分成三組並各標軌號：團名那條列了十四個軌號，另兩條分別掛 Simon Raymonde 與 Julian Standen。Design 欄掛 Jon Forss、Photography 欄掛 Christian Hermansen、Mastered By 欄掛 Jay Burnett。註記欄照抄一行 To silence in sound。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6af5a45b-0c17-3b6e-a3f3-0bb890f33d24",
+     "https://musicbrainz.org/release/f5ef6e0c-b85d-4a79-b968-223738209ba8",
+     "https://www.discogs.com/release/44038",
+     "https://www.discogs.com/master/48673",
+     "https://musicbrainz.org/release/66be3123-89de-4775-acdb-2626241417ac",
+     "https://music.apple.com/gb/album/a-negative-for-francis/41815912",
+     "https://musicbrainz.org/artist/a7249e1c-4650-4eaf-a042-ddef7709d7c2",
+     "https://www.discogs.com/artist/523"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rowland s. howard",
+  "name": "Rowland S. Howard",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1999,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Teenage Snuff Film",
+    "year": 1999,
+    "genres": [
+     "rock",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "roy orbison",
+  "name": "Roy Orbison",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1988,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mystery Girl",
+    "year": 1988,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "rudimentary peni",
+  "name": "Rudimentary Peni",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Death Church",
+    "year": 1983,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ruins",
+  "name": "Ruins",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2000
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Pallaschtom",
+    "year": 2000,
+    "genres": [
+     "rock",
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ruphus",
+  "name": "Ruphus",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "New Born Day",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c61-b",
+    "album": "New Born Day",
+    "facts": [
+     {
+      "f": "同一條目記 1973 年春天與 Polydor 簽約，同年夏天樂團到 Meråker 的一棟房子裡整整準備了一個月，才帶著製作人 Stein Robert Ludvigsen 進錄音室做這張碟。",
+      "src": "https://no.wikipedia.org/wiki/Ruphus"
+     },
+     {
+      "f": "同一條目形容《New Born Day》是打得很硬的搖滾，明顯指向 King Crimson、Jethro Tull、Yes 與 Savage Rose，最後那個來自 Aspaas 強悍的嗓音；前面有兩位好歌手，讓 Ruphus 站到與同輩不同的位置。",
+      "src": "https://no.wikipedia.org/wiki/Ruphus"
+     },
+     {
+      "f": "同一條目記唱片出版後不久 Danielsen 就退團，剩下的六人做了單曲〈Flying Dutchman Fantasy〉；Danielsen 後來成為挪威公認的錄音師之一，並在 Ruphus 之後的幾張唱片上再度參與。樂團 1981 年解散，在西德的名氣比在挪威本土大。",
+      "src": "https://no.wikipedia.org/wiki/Ruphus"
+     },
+     {
+      "f": "Discogs master 48171 的版本頁共 16 筆，其中 2 筆標 Unofficial Release：掛 Germanofon 941109 的 CD，以及 2020 年俄羅斯的「Pan Records (14)」——後者盜用正牌挪威 Pan Records 的廠牌名與編號 PACD012。",
+      "src": "https://www.discogs.com/master/48171/versions"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "New Born Day",
+    "manifest": "onboarding-manifest-c61-20260903.json",
+    "desc": "進錄音室之前，他們先在 Meråker 的一棟房子裡關了整整一個月。1973 年春天與 Polydor 簽約，九月才進 Rosenborg Studios。兩位主唱 Gudny Aspaas 與 Rune Sundby 分曲不對唱。最長的〈Day After Tomorrow〉8 分 47 秒，〈Coloured Dreams〉重拍清楚。Karisma 2019 年重製；2020 年俄羅斯有盜用挪威 Pan Records 名字與編號 PACD012 的偽盤。",
+    "sourceUrls": [
+     "https://no.wikipedia.org/wiki/Ruphus",
+     "https://www.discogs.com/release/2360422",
+     "https://www.discogs.com/master/48171/versions",
+     "https://www.discogs.com/release/13473307",
+     "https://musicbrainz.org/release-group/faffb5c0-0667-3863-852d-0e7164228b9b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "s.o.b.",
+  "name": "S.O.B.",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1987,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Don't Be Swindle",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c116-a",
+    "album": "Don't Be Swindle",
+    "facts": [
+     {
+      "f": "release-group ee4162f5 的欄位：title「Don’t Be Swindle」、artist-credit「S.O.B.」（藝人實體 4d4159b8，Group／Japan、disambiguation「Japanese grindcore band」、life-span begin **1983**）、first-release-date **1987**（只到年）、primary-type Album、secondary-types 空。**轄下只有 1 個 release**：JP 1987 的黑膠（**label-info 是空的、沒有廠牌也沒有編號**，**18 軌**，Official）。這張碟在 MB 上沒有任何再發。",
+      "src": "https://musicbrainz.org/ws/2/release-group/ee4162f5-21f5-3fa3-b97e-0e4456cb532a?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "英文維基〈S.O.B. (band)〉：**團名縮寫自 Sabotage Organized Barbarian**；1983 年在大阪結成；原主唱 Yoshitomo「Tottsuan」Suzuki 於 1995 年自殺。條目稱其 considered hugely influential on grindcore bands such as Napalm Death and the genre of death metal，並列為 thrashcore 的中堅之一，樂團自己有時也被描述成 grindcore。條目的專輯欄列 1987 Don’t Be Swindle、1988 No Control、1990 What’s the Truth?、1993 Gate of Doom、1994 Vicious World、1995 Symphonies of Brutality、1999 Dub Grind、2003 Still Grind Attitude；EP 欄列 Sabotage Organized Barbarian (1985)、Leave Me Alone (1986)、與 Napalm Death 的分軌 7 吋 (1988)。現任團員含吉他 Toshimi Seki 與鼓手 Satoshi Yasue（皆 1983 年起）、貝斯 Kawataka Daisuke。",
+      "src": "https://en.wikipedia.org/wiki/S.O.B.%20(band)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Don't Be Swindle",
+    "manifest": "onboarding-manifest-c116-20260910.json",
+    "desc": "兩首歌各只有六秒，十八軌加起來也才二十分鐘。六秒的那兩首是第七軌〈S.O.B.〉與第十六軌〈Speak Mouth Fuck You〉，另有六軌不到一分鐘，最長的〈Let’s Go Beach〉也只有一分四十八秒。樂團 1983 年在大阪結成，團名縮寫的展開是 Sabotage Organized Barbarian。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ee4162f5-21f5-3fa3-b97e-0e4456cb532a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=ee4162f5-21f5-3fa3-b97e-0e4456cb532a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=4d4159b8-19b5-4337-9d07-4eb0100fe630&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/S.O.B.%20(band)",
+     "https://itunes.apple.com/search?term=S.O.B.&country=jp&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/ee4162f5-21f5-3fa3-b97e-0e4456cb532a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "saccharine trust",
+  "name": "Saccharine Trust",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Surviving You, Always",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c81-a",
+    "album": "Surviving You, Always",
+    "facts": [
+     {
+      "f": "英文維基《Surviving You, Always》條目（引 2015 年 Vice 對 Joe Baiza 的訪談）記本張是樂團的第二個出版品、第一張整張 LP，並記 Baiza 當時正在往爵士鑽研、影響反映在這張碟上。",
+      "src": "https://en.wikipedia.org/wiki/Surviving_You,_Always"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Surviving You, Always",
+    "manifest": "onboarding-manifest-c81-20260910.json",
+    "desc": "第二個出版品，同時是他們第一張整張的 LP。出自英文維基引的 2015 年 Vice 訪談。錄音照 Discogs 註記在 Redondo Beach 的 Total Access，1983 年 9 月到隔年元旦。版權全碟掛 Cesstone Music，唯獨 B5 的 Doors Music：那軌是 The Doors 的曲子。曲名也印得不一，封底的〈The Cat.Cracker〉內標作〈Cat Cracker〉；最長的是 B 面〈YHWH On Acid〉6:04。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1233426",
+     "https://www.discogs.com/master/3624404",
+     "https://en.wikipedia.org/wiki/Surviving_You,_Always",
+     "https://en.wikipedia.org/wiki/Saccharine_Trust",
+     "https://musicbrainz.org/release-group/1b5037eb-415f-3e4e-9384-af781afb3096"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "salada de frutas",
+  "name": "Salada de Frutas",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sem Açúcar",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Sem Açúcar",
+    "manifest": "onboarding-manifest-c125-20260910.json",
+    "desc": "這張碟唯一登錄的載體是卡帶，九軌裡有五軌超過五分鐘。第二到第四軌〈Máquina〉〈Para Ti〉〈Bolonha〉連著三軌越過五分鐘，末軌〈Rodinha〉5:57 是全張最長的一條。九軌合計 42 分 25 秒，最短的〈Shuy The Shock〉3:16。1980 年的葡萄牙盤是唯一一筆發行，樂團的成立年也記著 1980，起始地欄記的是 Amadora。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/ef28ced7-151e-4f11-a988-01fdedce8f54?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=ef28ced7-151e-4f11-a988-01fdedce8f54&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/abae763b-9100-40c1-acd8-52c1b5ee50e5?fmt=json&inc=artist-rels+aliases",
+     "https://itunes.apple.com/lookup?id=6785530204&country=pt&entity=song&limit=250",
+     "https://itunes.apple.com/lookup?id=526310526&country=pt&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/ef28ced7-151e-4f11-a988-01fdedce8f54"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sam gopal",
+  "name": "Sam Gopal",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1969,
+   1969
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Escalator",
+    "year": 1969,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c68-b",
+    "album": "Escalator",
+    "facts": [
+     {
+      "f": "英文維基的 Sam Gopal 條目（引 AllMusic 的 Bruce Eder 小傳與 Colin Larkin 編《The Virgin Encyclopedia of Sixties Music》）記：樂團以創團者 Sam Gopal 為名，他生於馬來西亞，1962 年到英國學音樂，七歲起就打北印度的打擊樂器 tabla——在這個樂團裡，tabla 取代了鼓的位置。",
+      "src": "https://en.wikipedia.org/wiki/Sam_Gopal"
+     },
+     {
+      "f": "同一條目記：1968 年 Gopal 以自己的名字重組陣容，加入的是主唱兼吉他手 Ian Fraser Kilmister（後來的 Lemmy，當時剛結束一趟 Jimi Hendrix 與 Pink Floyd 巡演的舞台工作）、Roger D'Elia 與 Phil Duke；這個陣容由 Robert Stigwood 經紀，他同時也是 Cream 的經紀人。《Escalator》錄於 1968 年底、1969 年 1 月由 Stable Records 發行。條目並記：「據 Lemmy 說，整張碟大部分的曲子是他在一個晚上裡寫出來的。」",
+      "src": "https://en.wikipedia.org/wiki/Sam_Gopal"
+     },
+     {
+      "f": "英文維基的《Escalator》條目記：Ian Kilmister——後來以 Lemmy 為人所知——在加入這個樂團之前待過 the Rockin' Vickers，碟上他掛的名字是「Ian Willis」，因為當時他正考慮把姓氏改成繼父 George Willis 的姓。",
+      "src": "https://en.wikipedia.org/wiki/Escalator_(album)"
+     },
+     {
+      "f": "未標記為未授權的版本包括 1968 年的英國白標宣傳盤、1970 年德國 Vogue Schallplatten LDVS 17225、2000 年英國 Edsel EDCD 627 與日本 Captain Trip CTCD-180、2010 年英國 Esoteric ECLEC 2197，以及 2017 年 Morgan Blue Town 的唱片行日黑膠 BT5012 與 CD MBTCD012（該廠牌 2025 年另有一筆 BT5012SP）。",
+      "src": "https://www.discogs.com/master/82751-Sam-Gopal-Escalator"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Escalator",
+    "manifest": "onboarding-manifest-c68-20260904.json",
+    "desc": "鼓的位置由北印度的 tabla 頂上，打的人就是團名上那一位。維基記 Sam Gopal 生於馬來西亞，七歲起就打 tabla；1968 年他重組陣容，加入的是主唱兼吉他手 Ian Fraser Kilmister，也就是後來的 Lemmy。碟上他掛的名字是 Ian Willis，因為當時他正考慮改用繼父 George Willis 的姓；據 Lemmy 說，整張碟大部分的曲子是他在一個晚上裡寫出來的。這個陣容由 Robert Stigwood 經紀。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sam_Gopal",
+     "https://en.wikipedia.org/wiki/Escalator_(album)",
+     "https://www.discogs.com/release/843215-Sam-Gopal-Escalator",
+     "https://www.discogs.com/master/82751-Sam-Gopal-Escalator",
+     "https://musicbrainz.org/release-group/a8bf02c8-d426-3ec4-99d4-a7f23a9bff61"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "samantha fish",
+  "name": "Samantha Fish",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2019,
+   2019
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Kill or Be Kind",
+    "year": 2019,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Kill or Be Kind",
+    "manifest": "onboarding-manifest-c30-blues-20260821.json",
+    "desc": "來自堪薩斯城的 Samantha Fish 十五歲從鼓改彈吉他,2011 年以《Runaway》拿下 Blues Music Award 最佳新人。2019 年這批 Rounder 錄音由 Scott Billington 製作、在曼菲斯 Royal Studios 完成,Rick Steff 的 Hammond B3 與 Jim Spake、Tom Clary 的管樂把她的吉他推離純藍調,Metacritic 依五篇評論給出 80 分。她其後以《Death Wish Blues》與《Paper Doll》兩度入圍葛萊美最佳當代藍調專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Kill_or_Be_Kind",
+     "https://en.wikipedia.org/wiki/Samantha_Fish",
+     "https://musicbrainz.org/release-group/2f4d55d3-1ca4-40b6-9b34-beabb55a2371"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "samla mammas manna",
+  "name": "Samla Mammas Manna",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Måltid",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c60-b",
+    "album": "Måltid",
+    "facts": [
+     {
+      "f": "英文維基記這是樂團第二張；原始編制是 Lars Hollmer（鍵盤）、Hasse Bruniusson（鼓）、Lars Krantz（貝斯）與打擊樂手 Henrik Öberg，吉他手 Coste Apetrea 正是為了《Måltid》才加入。",
+      "src": "https://en.wikipedia.org/wiki/Samla_Mammas_Manna"
+     },
+     {
+      "f": "英文維基記他們處在瑞典政治性的 progg 運動邊緣：歌詞幽默、不明確政治，這種輕佻的態度讓運動裡比較嚴肅的一群人不太高興。",
+      "src": "https://en.wikipedia.org/wiki/Samla_Mammas_Manna"
+     },
+     {
+      "f": "英文維基記樂團是 1970 年代末 Rock in Opposition 運動的創始團體之一；1979 年他們擔任 Fred Frith 個人專輯《Gravity》（1980）的伴奏團。",
+      "src": "https://en.wikipedia.org/wiki/Samla_Mammas_Manna"
+     },
+     {
+      "f": "英文維基記樂團後來改以 Zamla Mammaz Manna 與 von Zamla 的名義發片，每次改名都重塑一次聲音；1999 年以原名重組出《Kaka》，2002 年再與日本鼓手吉田達也合作出最後一張《Dear Mamma》，Lars Hollmer 2008 年 12 月過世。",
+      "src": "https://en.wikipedia.org/wiki/Samla_Mammas_Manna"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Måltid",
+    "manifest": "onboarding-manifest-c60-20260903.json",
+    "desc": "除了鼓與貝斯，四個人在 credit 上還掛了「玻璃」、「門」與「早餐」。早餐掛在彈電鋼琴的 Lars Hollmer 名下，門是貝斯手、玻璃是鼓手。1973 年由 Silence 發行，吉他手 Coste Apetrea 為了這張碟才加入；拍號一直在變而四個人咬得很緊，10:43 的〈Dundrets Fröjder〉讓即興展開。他們是 Rock in Opposition 的創始團體之一，1979 年替 Fred Frith 的《Gravity》伴奏。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/764374",
+     "https://en.wikipedia.org/wiki/Samla_Mammas_Manna",
+     "https://www.discogs.com/master/9117",
+     "https://musicbrainz.org/release-group/2a13941c-fb37-346e-a09b-7b9ee7f17315"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sampaguita",
+  "name": "Sampaguita",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1978,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sampaguita",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "cseab-d",
+    "album": "Sampaguita",
+    "facts": [
+     {
+      "f": "1978 年由 Blackgold Records 發行黑膠（目錄編號 BA-5017），是 Sampaguita 的首張專輯，製作人 Nilo L. Santos。",
+      "src": "https://www.discogs.com/release/3912454-Sampaguita-Sampaguita"
+     },
+     {
+      "f": "Blackgold Records 是 Vicor Music 的子廠牌；Vicor 1966 年由表兄弟 Vic del Rosario 與 Orly Ilacad 創立，公司名就是兩人名字拼起來的（Vic 加 Orly），旗下另有 Sunshine、Pioneer、Badjao、Plaka Pilipino 等一長串子廠。",
+      "src": "https://en.wikipedia.org/wiki/Vicor_Music"
+     },
+     {
+      "f": "Sunshine Records 是 Vicor 共同創辦人 Orly Ilacad 在 1970 年代初另外設立的牌子，由 Vicor 負責經銷，如今歸 Viva Records 所有。",
+      "src": "https://en.wikipedia.org/wiki/Sunshine_Records_(Philippines)"
+     },
+     {
+      "f": "Sampaguita 本名 María Teresa Alfonso，來自 Laguna 省 Pangil；藝名由打擊樂手 Nick Boogie 取自菲律賓國花茉莉（sampaguita）。",
+      "src": "https://en.wikipedia.org/wiki/Sampaguita_(singer)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Sampaguita",
+    "manifest": "onboarding-manifest-csea-20260901.json",
+    "desc": "藝名是打擊樂手隨口給的，取自菲律賓國花那朵茉莉。給名字的是 Nick Boogie，她本名 María Teresa Alfonso，後來被稱作菲律賓搖滾女王。1978 年的這張首作由 Blackgold Records 發行，那是 Vicor Music 的子廠牌；Vicor 1966 年由表兄弟 Vic del Rosario 與 Orly Ilacad 創立，公司名就是兩人名字拼起來的。〈Bonggahan〉與〈Tao〉兩首同年也以七吋單曲發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3912454-Sampaguita-Sampaguita",
+     "https://en.wikipedia.org/wiki/Vicor_Music",
+     "https://en.wikipedia.org/wiki/Sunshine_Records_(Philippines)",
+     "https://en.wikipedia.org/wiki/Sampaguita_(singer)",
+     "https://opmlp.blogspot.com/2012/09/sampaguita.html",
+     "https://www.discogs.com/release/7617339-Sampaguita-Bonggahan",
+     "https://musicbrainz.org/release-group/d2db1b2c-26bc-43b3-951c-998b7361bf7e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sand",
+  "name": "Sand",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1974,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Golem",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c60-b",
+    "album": "Golem",
+    "facts": [
+     {
+      "f": "原盤應附一張 Delta-Acustic 的說明夾頁，正面是廠牌目錄、背面解說人頭立體聲，全為德文；部分拷貝封面另貼一張紅色圓形貼紙。",
+      "src": "https://www.discogs.com/release/1786555"
+     },
+     {
+      "f": "Discogs 樂團條目記 Sand 1969 年成軍於下薩克森的 Bodenwerder，1972 年遷到柏林，存續期間只出過《Golem》這一張，1996 年起才有未發表錄音問世。",
+      "src": "https://www.discogs.com/artist/181945"
+     },
+     {
+      "f": "法國廠牌 Rotorelief 2010 年 11 月的復刻是 200 克黑膠、豪華封套、編號限量共 633 張，其中 300 張為藍白混色（編號 1 至 300），另有黑膠與 CD 版（ROTOR0006／ROTORCD0006）。",
+      "src": "https://www.discogs.com/release/2575841"
+     },
+     {
+      "f": "Discogs 版本表上只有美國 Seidr 的一筆與一筆無廠牌的 GL 003 RE-1 標為 Unofficial Release，其餘皆為正式發行。",
+      "src": "https://www.discogs.com/master/276425"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Golem",
+    "manifest": "onboarding-manifest-c60-20260903.json",
+    "desc": "封套寫明：人頭錄音的效果要戴開放式耳機才聽得到，最好是 Sennheiser HD 414。1974 年由柏林的 Delta-Acustic 發行，同年在該廠牌的錄音室重混，封套的德文說明還提到 Blauert 與 Laws 的校正濾波器。Johannes Vester 作詞、主唱並彈 VCS 3，Klaus Schulze 掛的是錄音。聲音繞著頭轉，〈Helicopter〉13:40 靠緩慢累積推進，收在〈Sarah〉。這張 LP 存在數種混音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1786555",
+     "https://www.discogs.com/artist/181945",
+     "https://www.discogs.com/release/2575841",
+     "https://www.discogs.com/master/276425",
+     "https://www.discogs.com/label/73327",
+     "https://musicbrainz.org/release-group/cd7c27f1-83cc-35d2-b59b-a862d9438c06"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sarah mclachlan",
+  "name": "Sarah McLachlan",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1997,
+   1997
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Surfacing",
+    "year": 1997,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ }
+]

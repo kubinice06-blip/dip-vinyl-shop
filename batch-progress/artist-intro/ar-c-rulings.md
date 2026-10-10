@@ -712,3 +712,99 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 本輪新增的裁定形狀：thin 聲音句若只剩演出名單、曲長或錄音地點即不寫（Gorgoroth、L'Arc〜en〜Ciel、Lightyears Away 一致處理）；但直接塑造聲音的錄音做法可算（Movietone 海灘現場收音）。超額 2 次放行兩例（Gunnar Graps、Hunters & Collectors），皆為高風險事實的第二源。QA 千分位誤報（10,000 Maniacs）照專名保留。
 - 特注身分錯誤由研究層更正 8 處（Grow-Up、Haikara、Iron Cross、Menuets、Parameter 等），皆已照研究層改寫。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；卡池年份存疑（Gila 1967→1971、Keiji Haino 2017 為重發、Leeway 1988、Lizard 1985／1986）。
+
+## 第六輪十批接力（ar-d-044～053，2026-10-10 起）
+
+- 範圍：搖滾段 P 字頭之後。沿用第三至五輪的審稿規則、thin 門檻與第五輪新增的裁定形狀（只剩名單／曲長／錄音地點不寫；直接塑造聲音的錄音做法可算）。
+
+## ar-d-044（2026-10-10）
+
+- 39 位上架（35 full、4 thin：Protos、Quasar、Rapeman、Ratboys），1 位不寫：Providence（全部素材只有 King Records 一個來源，湊不到兩源）。
+- 審稿修 16 處：最高級刪改——Pig Destroyer「最知名之一」、Poll「最早之一」改「早期」並刪「最重要的唱片之一」、Psí vojáci「最重要之一」改「代表之一」、Q65「最具代表」改「代表」、RRR 刪「最成功的曲子之一」、Rain Parade 刪「最好的一張」與單一樂評人的影響說（改「代表作之一」補足字數）、Randy Holden「最早的 doom metal」改「先聲」、Raspberries「最早的 power pop」改「先驅」、Ratt「最早打進電台」改「早期」、Ray Lynch 刪「最早賣出數十萬張」；在世者多重成績——Radio Futura 只留 2004 年電台評審票選、Raphael 刪 2025 年拉丁錄音學院年度人物（新近、第二處成績）；健康細節——Pholas Dactylus 刪解散原因；新近過世——Ray Lynch 刪 2025 年過世（非必要）。
+- 保留：Possessed「常被稱為最早的 death metal 樂團」（多源、歸屬式）；Quarteto 1111〈Pigmentação〉「被稱為葡萄牙第一首寫排外情緒的歌」（兩源、歸屬式）；Pretenders 的搖滾名人堂評語；Possessed 不寫中槍與癱瘓。
+- 身分修正：Poll 是希臘樂團（特注原寫奧地利，錯）；Player 是英美混編；Phương Tâm 的卡池為 2021 年回顧合輯（1964–1966 錄音）；Providence 是日本プロビデンス（維基預抓美國同名團作廢）；Protos（德國電聯車）、Pussy、Raphael（畫家）、Raw Material（一般名詞）的維基預抓作廢；Raw Deal 確認為 Killing Time 前身，與前批 Killing Time 已比對無撞句。
+- 待本機（上線簡介）：Pholas Dactylus「米蘭一帶成軍」「鍵盤與鋼琴兩人分工」「頹廢派、垮掉派歌詞」無據；Phương Tâm「最早錄搖滾樂」單源；Prúdy 作曲分配（TASR 為 Varga 八首、Hammel 三首、一首合寫）；Raphael〈El fusil del poeta es una rosa〉查無、「同年兩張」實為三張；Raw Deal「三十年後重新上架、曲序相同」無據；Raw Material「三件式之外多了鍵盤與管樂」與團員表不符；Ray Lynch 白金年份 1993／1994 兩說。
+
+## ar-d-045（2026-10-10）
+
+- 40 位全上（34 full、6 thin：Red Summer、Rheinallt H. Rowlands、Room、Rothko、Sam Gopal、Sampaguita）。Red Summer 的聲音句以編制（吉他、合成器、鍵盤與小提琴）當做法，比照 Deja-Vu 先例。
+- 審稿修 8 處：最高級刪改——Repulsion「最早之一」改「早期」、Riblja Čorba「最受歡迎也最具影響力之一」改「代表之一」、Rick Saucedo「最早之一」改「早期」、Rick Springfield「人氣最高之一」改「人氣演員」、Ruphus 刪廠牌稱的「最好的專輯之一」；英文詞譯中文——Rick Saucedo「acid trip dream」；健康細節——Rorschach 刪主唱病史；媒體名——Sampaguita 的 Philstar 改「菲律賓媒體」。
+- 保留：Roy Orbison、Ricky Nelson 的搖滾名人堂評語；Rowland S. Howard 的 Nick Cave 評語（具名樂手）；Ruphus 的「旗艦之一」歸給廠牌 Karisma；Saccharine Trust 的 Kurt Cobain 日記清單（具名人物）。
+- 身分修正：Salada de Frutas 是葡萄牙樂團（特注原寫巴西，錯）；Red Noise 是法國前衛團（非 Bill Nelson 同名團）；Re-TROS 寫「中國」。同名作廢：Refrigerator（電冰箱）、Red Summer（1919 暴動）、Rex（拉丁頭銜）、Room（房間）、Sand（沙子）的維基預抓。
+- 卡池年份存疑：Roy Orbison《Mystery Girl》卡池 1988，實為 1989 年 2 月身後發行。
+- 待本機（上線簡介）：Redbone〈We Were All Wounded at Wounded Knee〉「從美加版抽掉」說法不一；Red Noise 專輯 1970／1971、B 面長度 20／18 分鐘；Room「六個人的樂團」（多源五人）；Samantha Fish「2011 年 Blues Music Award」應為 2012 年第 33 屆；Sampaguita「隨口給的藝名」「搖滾女王」無據、〈Bonggahan〉與〈Tao〉年份待核。
+
+## ar-d-046（2026-10-10）
+
+- 39 位上架（27 full、12 thin：Second Hand、Secret Shine、Selfkill、Shape of the Rain、Shearwater、Shiner、Show Me the Body、Shylock、Side by Side、Simple Plan、Sindelfingen、Sīpoli），1 位不寫：Shipping News（聲音只剩曲風標籤與「兩人都兼主唱」，比照 Gorgoroth 不寫）。Selfkill 以「器樂為主、雙吉他貝斯鼓」、Sīpoli 以編制當做法句，接受。
+- 審稿修 7 處：Shin Joong Hyun 279 字壓回 225（非雙卡）並刪「韓國第一支搖滾樂團」與 Berklee 校長引語；最高級刪改——Šarlo Akrobata「最重要之一」改「代表之一」、《Paket aranžman》「最重要也最有影響力之一」改「關鍵唱片之一」、Scream「最早赴歐之一」改「早期」、Screeching Weasel 刪「美國最重要之一」；去頭名次——Secos & Molhados 刪「2007 年巴西百大第 5 名」（媒體名不能寫，名次失去主詞）。
+- 保留：Šarlo Akrobata 的「13 位克羅埃西亞音樂記者票選第 2 名」（票選主體可交代）；Saxon 的 Lars Ulrich 評語、Silver Apples 的 John Lennon 評語（具名樂手）；Say Sue Me「第一組在 KEXP 錄製現場的韓國藝人」（兩源、歸屬式）；Sheryl Crow 的搖滾名人堂評語；Silverchair 21 座 ARIA 與 John Farnham 並列（在世者唯一一處）。
+- 身分：Selfkill 是台灣小白兔唱片的後搖滾團；Shin Joong Hyun 只寫拒寫頌歌而遭打壓、作品被禁，大麻案與刑求細節不寫。同名作廢：Semiramis（亞述女王）、Shylock（莎劇角色）、Side by Side（越野車）、Sindelfingen（德國城市）、Skid Row（貧民區）、Sīpoli（洋蔥）的維基預抓。
+- 待本機（上線簡介）：Say Sue Me 得獎類別應為「最佳摩登搖滾」；Šarlo Akrobata「樂團把錄音買回來」無據；Selfkill「第一支入圍金曲獎最佳樂團的後搖團」單源；Semiramis 目錄號 TRI 1004、Zarrillo 入團年齡 16 歲；Servant CCM 樂評評的是《Rockin' Revival》；Shark Move 成軍與錄音年份、專輯名語言、重發年；Shin Joong Hyun Add4 成立年、「第八軍團樂隊」、〈아름다운 강산〉署名；Sheer Terror 錄音年份；Silica Gel「隔年獲三冠」（得獎作為 EP《Machine Boy》）與成軍學校；Sindelfingen 產地與團名由來；Skid Row 的 Sebastian Bach 引薦經過；Shylock 首發版本。
+
+## ar-d-047（2026-10-10）
+
+- 38 位上架（33 full、5 thin：Slovenly、Soul-Junk、Starsailor、Steel Mill、Steve Kipner），2 位不寫：Social Tension（除身分外的事實都只見搜尋摘要、未開頁）、Starless（三格皆空，身分無來源確認）。Steve Kipner 以「常與人合寫流行單曲」當做法句，比照詞曲作者的寫作方法，接受。
+- 審稿修 7 處：最高級刪改——Slank「印尼最偉大之一」、Sloche「魁北克最好的專輯之一」、Smak「最具影響力的吉他手之一」與「最重要之一」、Small Faces「最主要之一」改「代表」、Spirit「西岸最頂尖之一」；Snakefinger 272 字壓回 229（非雙卡，刪追思會細節）。
+- 保留：Stevie Nicks「第一位兩度入選搖滾名人堂的女性」（兩源、名人堂官方）；Squeeze「Lennon 與 McCartney 王座的繼承人」（媒體稱號、歸屬式）；Snow Patrol〈Chasing Cars〉PPL 播放最多（在世者唯一一處、官方機構）；Small Faces 搖滾名人堂。
+- 身分修正：Steel Mill 是英國樂團（Penny Farthing／Bellaphon；特注原寫 Springsteen 早年的團，錯）；Smash 是塞維亞的團；Smak 是 Kragujevac；Slovenly 是 SST 舊金山團；Snapline 寫「中國」；Spherical Objects 不寫 Solamar 的性別轉換。
+- 待本機（上線簡介）：Soul Asylum「樂團得葛萊美」（得獎人為詞曲作者 Pirner）與「就職典禮演出」場合；Starship「Rolling Stone 2011 最差歌曲」與 Blender、GQ 並列（實為讀者票選、範圍不同）；Speed, Glue & Shinki 團名由來涉及成癮，建議簡介拿掉。
+
+## ar-d-048（2026-10-10）
+
+- 40 位全上（33 full、7 thin：Sugar Ray、Supersister、Supertouch、Tånk、Temple of Bon Matin、The Albion Band、The All-American Rejects）。
+- 審稿修 11 處：最高級刪改——Tamam Shud 刪「澳洲最出色之一」與「第一張金唱片電影配樂」、Texas Is the Reason 刪「Revelation 最暢銷之一」、The Adverts「最早之一」改「早期」、Tad「最早被 Sub Pop 簽下之一」與「最早的 grunge 之一」改「早期」、SWA 刪「廠牌最差的團」（單源負面最高級）；在世者多重成績——Straitjacket Fits 刪 APRA 百大歌曲票選（留名人堂一處）；新近事實——Strawbs 刪 2025 年 Cousins 辭世（未見兩源）；媒體名——Th' Faith Healers 的《紐約時報》改「美國樂評」。
+- 保留：Survivor 葛萊美（在世者唯一一處）；The Animals 的搖滾名人堂評語與 Springsteen 說法；Tanya Tagaq 只寫 Polaris 一處；Straitjacket Fits 的紐西蘭唱片業協會評語（官方機構）；The Adverts「第一位女性龐克明星」歸給一部音樂百科。
+- 身分修正：Sweet Charity 是新加坡樂團（特注原寫馬來西亞，錯）；Sunforest 是美國人在倫敦的三重奏（特注原寫英國）；Tånk 是法國 Brest 的團（維基預抓坦克作廢）；Tantra 是葡萄牙團（維基預抓宗教作廢）；Subhumans 是 Wiltshire（非溫哥華同名團）；Sweet Charity 維基預抓為音樂劇作廢。
+- 新近事實提醒：The Alarm 的 Mike Peters 據兩源於 2025 年過世，正文不寫；若現行上線簡介把他寫成在世，本機需改。
+- 卡池存疑：Sweet《Desolation Boulevard》卡池 1974 為歐洲 RCA 版（不含〈Ballroom Blitz〉）。
+- 待本機（上線簡介）：Stone Harbour「都來自 Canton」（多源 Youngstown）；Tamam Shud「Warner Bros. 第一張 LP」無據；Tamikrest「Songlines 年度最佳專輯」（官方頁為 2013 Best Group）與「2013 年 9 月發行」無據；Superchunk 簡介無誤。
+
+## ar-d-049（2026-10-10）
+
+- 38 位上架（33 full、5 thin：The Astronauts、The Body、The Cravats、The Door and the Window、The For Carnation），2 位不寫：The Fratellis（聲音只有「被形容為車庫搖滾樂團」一個曲風標籤）、The Freed Unit（聲音只有使用者編輯頁的風格標籤）。The Door and the Window 以「未受訓練、卡帶錄音機錄 EP」當做法句，接受。
+- 審稿修 14 處：最高級刪改——The Bats「1980 年代最好的紐西蘭專輯之一」、The Chameleons「最被低估之一」、The Chills「最早的龐克團之一」改「早期」與「最優秀之一」、The Clean「最有影響力」改「核心」、The dB's「最好的失落 power pop 之一」、The Dead C「九〇年代最好的噪音專輯之一」、The Flower Kings「產量最高之一」、The Guess Who「加拿大第一批搖滾巨星」（保留兩源的「首支登頂的加拿大樂團歌曲」）、The Heartbreakers「最具影響力之一」改「重要專輯」、The Hives「近二十年最好的現場之一」；The Cambodian Space Project 274 字壓回 231（非雙卡，刪過世與悼念句）；The Comsat Angels 影評人具名評語改匿名形容。
+- 保留：The Association〈Never My Love〉BMI 第 2 名（明寫歌由 Addrisi 兄弟所作）；The Coasters「第一個入選搖滾名人堂的人聲團體」（名人堂官方）；The Everly Brothers 的搖滾名人堂評語；Noel Gallagher、Michael Stipe、Jello Biafra 等具名樂手說法。
+- 身分：The Caravans 是芝加哥福音女聲團（卡池歸 rock 屬分類誤差）；The Astronauts 是 Welwyn Garden City 的團（維基預抓 Lem 小說作廢）；The Bachs 是芝加哥北岸私壓團（維基預抓瑞士地名作廢）；The Charlatans 是英國團（非舊金山同名團）；The Heartbreakers 是 Johnny Thunders 的團。
+- 卡池年份存疑：The Head and the Heart 卡池 2009（實為 2010 自發、2011 Sub Pop 重發）；The Appleseed Cast《Mare Vitalis》2000／1999。
+- 待本機（上線簡介）：The Caravans「1947 年由 Robert Anderson 起家」各源不一；The Cambodian Space Project「香港 Metal Postcard 發行」無據；The Diagram Brothers「姓 Diagram 的不是一家人」兩源不一；The Electric Prunes 團員自寫歌曲數（一首／兩首）；The Astronauts 客席薩克斯風手 Lol Coxhill／Nik Turner。
+
+## ar-d-050（2026-10-10）
+
+- 39 位上架（34 full、5 thin：The Icemen、The Land of Nod、The Mommyheads、The Pooh Sticks、The Raconteurs），1 位不寫：The Living Daylights（聲音只剩 MusicBrainz 的曲風標籤加一首長混音的發行資訊）。
+- 審稿修 8 處：最高級刪改——The Human Instinct 刪 AudioCulture「在英國最成功的紐西蘭團體」（媒體名＋最高級）、The Lumineers 刪「2010 年代最受歡迎之一」（在世者只留 Billboard 200 第 2 名）、The Mamas & The Papas 刪「那個年代最好的人聲團體之一」、The Mission「最電影化、最浮誇也最浪漫」改平述、The Moody Blues 刪「最早成功的概念專輯之一」、The Nice「最早之一」改「早期」、The Plastic People of the Universe「最具代表性」改「代表」；英文標題譯中文——The Mission「Britain's stupidest band!」。
+- 保留：The Moody Blues、The Lovin' Spoonful、The Mamas & The Papas 的搖滾名人堂評語；The Knack〈My Sharona〉冠軍六週、The Postal Service 白金（在世者唯一一處）；the pillows 2025 年解散（兩源）；The Plastic People 被捕審判促成七七憲章（音樂史核心，不寫獄中細節）。
+- 身分：The Names 是比利時團；The Outsiders 是荷蘭團；The Paragons 是牙買加團（dub 起源軼事只在 notes，正文未寫）；The Lines 非 Wolverhampton 同名團；The Living Daylights 維基預抓為 007 電影作廢。
+- 待本機（上線簡介）：The Icemen 存在期與「落在最後兩年」（2008 年重組至 2013）；The Jon Spencer Blues Explosion「Village Voice 與 NME 年度第 16 名」與 Pitchfork 500 未驗；The Paragons「意外催生了 dub」宜加「相傳」，且簡介用半形標點、中英數字未空格；The Plastic Cloud 的 Bill Bessey 職稱（錄音師／製作人）。
+
+## ar-d-051（2026-10-10）
+
+- 39 位上架（32 full、7 thin：The Raymond Brake、The Running Man、The Secret Stars、The Sensational Guitars of Dan & Dale、The Willard、The Wombats、The Work），1 位不寫：The Yips（身分與聲音都湊不到可用的兩源事實）。
+- 審稿修 11 處：最高級刪改——The Rising Storm 刪「最稀有之一」、The Three O'Clock 刪「頂尖」、The Triffids 刪「最受喜愛之一」、The Used 刪「2000 年代 emo 圈的王者」（單源稱號）、The Yardbirds「搖滾史上最知名的吉他手」改「名吉他手」；字數——The Selecter 271 壓回 244、The Shaggs 276 壓回 250（皆非雙卡）；新近事實——The Turtles 刪 Volman 2025 年辭世（不需要、未見兩源）；The Teardrop Explodes 的 Mojo 獎句縮短（獎項方具名一次）。
+- 保留：The Yardbirds 搖滾名人堂評語（官方一處），Dave Marsh 說法匿名為「有樂評形容」；The Ventures 搖滾名人堂與「啟發了一千個樂團的樂團」外號；Them〈Gloria〉葛萊美名人堂與 Steve Van Zandt 說法（具名樂手）；The Undertones 與 The Wolfgang Press 的 John Peel 說法（電台 DJ，比照前例）；The Walker Brothers 只寫 Bowie 等人受 Scott 啟發。
+- 卡池年份：Them 正文不寫年份（來源不一）。
+
+## ar-d-052（2026-10-10）
+
+- 39 位上架（29 full、10 thin：This Kind of Punishment、This Will Destroy You、Titus Groan、TM NETWORK、Token Entry、Tonic、Transatlantic、Tsunami、Turning Point / No Escape、Tuscadero），1 位不寫：Trifle（國籍、身分與聲音全部只出自樂團粉絲站單源）。
+- 審稿修 19 處：最高級刪改——Throwing Muses「第一支簽 4AD 的美國樂團」改「早期簽下」、Tilt「最早之一」改「早期」、Tõnis Mägi「最具象徵性」「最具影響力」改平述、Transs「最知名的管弦指揮之一」、Triana「最好的融合」與「最重要、最具影響力」、Tuscadero「最受矚目」、Udo Lindenberg「德國最好的爵士鼓手之一」、UK Subs「第一波中最早的一批」、Ulcerate「最具代表性」、Unbroken 廠牌自稱「時代最具影響力」改「代表作」；在世者多重成績——Thom Yorke 刪 Ivors 院士（留名人堂一處）、Tom Jones 刪葛萊美新人獎與封爵（留英國冠軍）、Trio 刪全球銷量、Turnstile 兩項葛萊美只留一項、Two Door Cinema Club 刪《FIFA 11》與捐獎金；健康細節——Thom Yorke 刪左眼麻痺與手術；英文標題譯中文——Ticket 的報紙標題。
+- 保留：Tina Turner 搖滾名人堂評語與「搖滾女王」稱號（歸屬式）；Trouble 的 Dave Grohl 說法；Trúbrot 冰島百大唱片第 2 名（業者與公眾評選）；Udo Lindenberg 的德國總統 Steinmeier 說法（具名公職人員）；Turning Point「Jade Tree 稱」先驅（廠牌歸屬式）。
+- 身分：Tilt 是波蘭華沙的龐克團（維基預抓撲克詞條作廢）；Titus Groan 維基預抓為小說作廢；Tolerance 是日本 Vanity 廠牌的丹下順子計畫；Transs 是印尼團（不寫雅加達）；TSA 維基預抓亞美尼亞字母作廢；Turning Point / No Escape 的 No Escape 成員來自紐澤西、德拉瓦與費城。
+- 卡池年份存疑：Trouble《Psalm 9》卡池 1988，首發 1984 Metal Blade。
+- 待本機（上線簡介）：Titus Groan「1970 年底意外後解散」單源且與 1971 年廣播紀錄衝突；Trúbrot《Lifun》發行日（7/29 或 6/29）與封套形狀（八角或六角）；TSA Piekarczyk 首次擔任主唱的日期；Tom Jones〈It's Not Unusual〉登冠日期（3/11 或 3/13）；Träd, Gräs och Stenar「B 面轉向瑞典民謠」與曲目不符；Transs 簡介的「雅加達」無據。
+
+## ar-d-053（2026-10-10）
+
+- 39 位上架（33 full、6 thin：Underdog、Voltz、Wavves、Wckr Spgt、Weidorje、Writing on the Wall），1 位不寫：Vermilion Sands（日本女主唱交響前衛團，只有兩條單源事實，出自轉載的使用者簡介）。Wckr Spgt 以「家庭錄音與卡帶文化」當做法句，接受。
+- 超額放行：Vast & Hazy 第 9 次搜尋為 2022 年金曲獎入圍的第二源（第二源先例）。
+- 審稿修 11 處：最高級刪改——Wavves「爭議最大」、Wigwam 刪單源百科「史上最重要的芬蘭搖滾樂團」（留國家廣播公司票選）、Wolf Parade「最具影響力之一」改「重要專輯」、Wolves in the Throne Room「最典型」改「代表作」、Xhol Caravan「最早投入」、XIT「最早崛起」改「早期」、Y Cyrff「最偉大之一」改「重要」；媒體名——Versus 刪《紐約時報》單源評語；具名評論者匿名——XPDC 的搖滾書作者；字數——Vladimír Mišík 270 壓回 244（非雙卡，刪父親身世與勳章）；Y Cyrff 的 Catatonia 句順成 Roberts 共組。
+- 保留：White Noise 的 Chris Carter 說法、Wishbone Ash 的 Steve Harris 說法、World Party 的 Peter Gabriel 說法（具名樂手）；Wigwam《Nuclear Nightclub》國家廣播公司票選；Voodoo Queens 英國獨立榜冠軍、White Lies 英國專輯榜冠軍、Wookie〈Battle〉前十（在世者唯一一處）；Vast & Hazy 只寫金曲獎入圍、成員只用藝名。
+- 身分：Underdog、Unsane、Vast & Hazy、Vermilion Sands 的維基預抓皆對錯條目（概念、電影、美國 VAST、Ballard 小說），已作廢；Vast & Hazy 是台灣雙人團；Voltz 是英國 Hampshire 的團（非新墨西哥同名團）；Windy & Carl 是密西根 Dearborn 夫妻檔。
+- 待本機（上線簡介）：Vast & Hazy「Legacy 連辦兩天千人場售罄」查無出處（所稱出處的專訪沒有這句）；XIT《Plight of the Redman》「禁播、FBI 施壓 Motown」僅英文維基單源。
+
+## 第六輪十批接力收尾（ar-d-044～053）
+
+- 合計 390 位上架（323 full、67 thin），10 位不寫：Providence、Shipping News、Social Tension、Starless、The Fratellis、The Freed Unit、The Living Daylights、The Yips、Trifle、Vermilion Sands（聲音只剩曲風標籤、身分未確認或全部事實單源）。
+- 搖滾段已寫到 Y 字頭；卡池剩 63 批、2481 位未寫（rock 160、folk 480、pop 359、world 280、electronic 517、hiphop 279、classical 605）。
+- 本輪沿用第五輪的裁定形狀，無新增；超額放行一例（Vast & Hazy，第二源先例）。特注身分錯誤由研究層更正多處（Poll 是希臘團、Salada de Frutas 是葡萄牙團、Sweet Charity 是新加坡團、Steel Mill 是英國團、Sunforest 是在倫敦的美國人、Tilt 是波蘭團等），皆照研究層改寫。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；The Alarm 的 Mike Peters 據兩源 2025 年過世，上線簡介若寫成在世需改；卡池年份存疑（Roy Orbison《Mystery Girl》1989、The Head and the Heart 2010／2011、Sweet《Desolation Boulevard》1974 RCA 版、The Appleseed Cast 1999／2000、Trouble《Psalm 9》首發 1984）。
