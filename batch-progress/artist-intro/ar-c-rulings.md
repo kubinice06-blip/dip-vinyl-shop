@@ -716,3 +716,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## 第六輪十批接力（ar-d-044～053，2026-10-10 起）
 
 - 範圍：搖滾段 P 字頭之後。沿用第三至五輪的審稿規則、thin 門檻與第五輪新增的裁定形狀（只剩名單／曲長／錄音地點不寫；直接塑造聲音的錄音做法可算）。
+
+## ar-d-044（2026-10-10）
+
+- 39 位上架（35 full、4 thin：Protos、Quasar、Rapeman、Ratboys），1 位不寫：Providence（全部素材只有 King Records 一個來源，湊不到兩源）。
+- 審稿修 16 處：最高級刪改——Pig Destroyer「最知名之一」、Poll「最早之一」改「早期」並刪「最重要的唱片之一」、Psí vojáci「最重要之一」改「代表之一」、Q65「最具代表」改「代表」、RRR 刪「最成功的曲子之一」、Rain Parade 刪「最好的一張」與單一樂評人的影響說（改「代表作之一」補足字數）、Randy Holden「最早的 doom metal」改「先聲」、Raspberries「最早的 power pop」改「先驅」、Ratt「最早打進電台」改「早期」、Ray Lynch 刪「最早賣出數十萬張」；在世者多重成績——Radio Futura 只留 2004 年電台評審票選、Raphael 刪 2025 年拉丁錄音學院年度人物（新近、第二處成績）；健康細節——Pholas Dactylus 刪解散原因；新近過世——Ray Lynch 刪 2025 年過世（非必要）。
+- 保留：Possessed「常被稱為最早的 death metal 樂團」（多源、歸屬式）；Quarteto 1111〈Pigmentação〉「被稱為葡萄牙第一首寫排外情緒的歌」（兩源、歸屬式）；Pretenders 的搖滾名人堂評語；Possessed 不寫中槍與癱瘓。
+- 身分修正：Poll 是希臘樂團（特注原寫奧地利，錯）；Player 是英美混編；Phương Tâm 的卡池為 2021 年回顧合輯（1964–1966 錄音）；Providence 是日本プロビデンス（維基預抓美國同名團作廢）；Protos（德國電聯車）、Pussy、Raphael（畫家）、Raw Material（一般名詞）的維基預抓作廢；Raw Deal 確認為 Killing Time 前身，與前批 Killing Time 已比對無撞句。
+- 待本機（上線簡介）：Pholas Dactylus「米蘭一帶成軍」「鍵盤與鋼琴兩人分工」「頹廢派、垮掉派歌詞」無據；Phương Tâm「最早錄搖滾樂」單源；Prúdy 作曲分配（TASR 為 Varga 八首、Hammel 三首、一首合寫）；Raphael〈El fusil del poeta es una rosa〉查無、「同年兩張」實為三張；Raw Deal「三十年後重新上架、曲序相同」無據；Raw Material「三件式之外多了鍵盤與管樂」與團員表不符；Ray Lynch 白金年份 1993／1994 兩說。
