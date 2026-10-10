@@ -875,3 +875,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Jackson C. Frank 的水牛城音樂名人堂說法（官方）；James Blunt「英國官方排行榜列為 2000 年代最暢銷專輯」（官方榜，唯一一處）；Gabby Pahinui 國會圖書館「最早的現代 slack-key 錄音之一」（官方）；Jimmie Rodgers 搖滾名人堂說法；Jarcha〈Libertad sin ira〉「轉型期非官方國歌」與審查（歷史背景一句）。
 - 身分：Gary Higgins、Jimmy Arnold、Jimmy Carter and Dallas County Green（前總統）、J. T. Perkins（摔角手）、Ithaca（希臘島）的維基預抓皆對錯，已作廢；Jimmy Carter and Dallas County Green 照來源寫 country rock（名冊原寫 bluegrass）；Jimmie Rodgers 是 1920 年代的「歌唱的煞車手」。
 - 待本機（上線簡介）：Gabby Pahinui〈Hiʻilawe〉首錄 1946／1947；Gryphon「皇家音樂學院畢業生」不確（Gulland 第二年離校）；Gurrumul 專輯發行月份與加入 Yothu Yindi 年齡；Harry Taussig「只留下一份錄音」已過時；Homayun Sakhi 移居美國 2001／2002；Israel Kamakawiwoʻole《Facing Future》廠牌與德國銷量；Jerry Jeff Walker〈London Homesick Blues〉是「主題曲」不是片尾曲，簡介半形逗號；Jesse Fuller 簡介半形標點；Joe Val 首作 1971 春／1972；J. T. Perkins 廠牌所在地 Clarksville 無據。
+
+## ar-d-061（2026-10-10）
+
+- 38 位上架（34 full、4 thin：Johnny Flynn、Josephine Foster、Kembara、Kim Jung Mi），2 位不寫：John Villemonte（聲音只有曲風標籤與合輯整體描述）、Lewis Capaldi（聲音句只剩聽歌養成的影響名單，比照曲風標籤不寫）。
+- 超額放行：John Villemonte 第 9 次為身分確認的第二源；Lal & Mike Waterson 第 9 次為釐清榜位的第二源（皆第二源先例）。
+- 審稿修 11 處：字數——Kathy Heideman 276→243、Linda Perhacs 266→245（皆非雙卡）；最高級刪改——John Michael Talbot「世界上最重要的天主教音樂人之一」、Keola & Kapono Beamer「最受敬重的音樂家族之一」、Khánh Ly「最能代表之一」、Lefty Frizzell「史上最具影響力之一」、Lily May Ledford「最早之一」改「早期」、Lluís Llach「最受歡迎之一」與「被翻唱最多之一」；在世者多重成績——Kate & Anna McGarrigle 刪加拿大勳章（留總督表演藝術獎）。
+- 保留：Lead Belly 與 Leadbelly 分寫 Asch 時期與 1948 年最後錄音，可寫獄中被 Lomax 父子錄下（不寫罪名）；Lead Belly 搖滾名人堂說法；Kelly Joe Phelps 的 The Edge、Bill Frisell 說法；Leadbelly 的 George Harrison 說法；Koncz Zsuzsa《Jelbeszéd》被停止發行（歷史背景一句）；Lluís Llach〈L'estaca〉波蘭文版成團結工聯之歌（流傳事實，不寫獨立運動）。
+- 身分：Kembara 是在新加坡成軍、後移居馬來西亞（名冊原寫馬來西亞）；Joseph Spence 維基預抓為 18 世紀英國史學家，已作廢；Keola & Kapono Beamer 的 Kapono 非 Henry Kapono；Lal & Mike Waterson 是兄妹（簡介寫姊弟，錯）。
+- 卡池年份存疑：Kim Jung Mi《Now》卡池 1968，實為 1973 年錄成。
+- 待本機（上線簡介）：Josephine Foster「個人第二作」無據；Karine Polwart《Traces》入圍年份與「英國前 75」；Kelly Joe Phelps Billboard 第 10 名單源；Kembara「同年成軍的五人團」錯；Kenny Knight「包辦全部人聲、貝斯與鼓」錯；Koerner, Ray & Glover 組團年 1962／1963 與首作廠牌；Koncz Zsuzsa「電台只播一半」「五萬張庫存熔掉」；Kongar-ol Ondar「1992 年首獎」「活國寶」；Lal & Mike Waterson「姊弟」「英國榜第 21 名」（正榜 59）「版權訴訟下架」；Lead Belly「為 Folkways 留下」應為替 Moses Asch 錄；Kyle Creed「Galax 連冠」單源；Lindisfarne《Fog on the Tyne》「當年第八暢銷」與維基「最暢銷」不一；Lefty Frizzell 的 George Jones、Haggard 說法與「蟬聯四週」未核對。
