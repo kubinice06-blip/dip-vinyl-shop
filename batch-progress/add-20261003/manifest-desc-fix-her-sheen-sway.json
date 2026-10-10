@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "batch": "2026-10-10-desc-fix-her-sheen-sway",
+  "batchNote": "店主 2026-10-10 核可：首句改正金曲獎最佳專輯製作人入圍者（李欣芸）。卡已上線，只重寫固定簡介 KV。",
+  "albums": [
+    {
+      "artist": "何欣穗",
+      "album": "她的。發光搖擺",
+      "identity": {
+        "releaseType": "Album",
+        "rgMbid": "2184dbd1-3083-4f27-b3c5-7d4933c6e2d7",
+        "upc": "4710425220124",
+        "aliasesChecked": true,
+        "aliasReview": "藝人別名：Ciacia／ciacia her（中文維基英文名欄與封面實印）／Ciacia Ho／Patricia Ho／Her Sheen Sway／her sheen sway（封面小字）；卡池鍵沿用 batch-tw 裁定的中文本名「何欣穗」。專輯名《她的。發光搖擺》中間為全形句號「。」，非頓號或間隔號，鍵值正規化時不可替換；封面同時印 ciacia／何欣穗／her sheen sway 三種掛名。曲名寫法兩處差異：MB 作〈現在怎麼辦？〉（帶問號）、Apple 作〈現在怎麼辦〉；MB 作〈MR.RIGHT〉、中文維基作〈Mr.Right〉。廠牌兩說：中文維基記嘉瑪音樂，Apple ℗ 行記 2002 Sony Music Entertainment Taiwan（後續數位版權方），上架時擇一或留空。"
+      },
+      "cover": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/dc/27/05/dc270501-5c56-4c05-db20-d299475e4b43/886448144977.jpg/1000x1000bf.jpg",
+        "source": "manual",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "CAA 無圖。改用 Apple 台灣商店 1498913444 官方封面（1000×1000bf），已下載目視確認：正方、暖橘調人物面部特寫，左側白色 outline 字「ciacia 何欣穗 her sheen sway」與手寫體「她的。發光搖擺」，無側標無貼紙",
+        "visuallyVerified": true
+      },
+      "ratings": {
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
+        "listeners": null,
+        "source": "manual:genre-anchors",
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；中華音樂人交流協會年度十大專輯，隔年華語音樂傳媒大獎四項提名並獲十大華語唱片，是何欣穗公認的代表作；台灣樂迷領域，編曲流暢不難入耳。"
+      },
+      "rarity": "uncommon",
+      "apexAssessment": {
+        "eligible": false,
+        "tier": null,
+        "reason": "獎項與樂評共識集中在台灣本地，中文維基該條目掛無來源模板、二次文獻在本環境不可讀，湊不出殿堂所需的跨來源長期共識，classic 4 亦未達門檻。",
+        "evidenceUrls": []
+      },
+      "description": {
+        "text": "何欣穗 1999 年以《完美小姐》出道，入圍金曲獎最佳新人，製作人李欣芸也入圍最佳專輯製作人；三年後的第二張自己一手包辦，在台灣、新加坡、英國與美國錄音後製，混音找了替 The Cardigans、Franz Ferdinand 與 OK Go 操刀的 Tore Johansson。2002 年 12 月 24 日嘉瑪音樂發行，十三首從〈Famous〉起手，壓軸的〈給女兒 (A Letter From My Dad)〉後來成為《海角七號》插入曲。專輯拿下中華音樂人交流協會年度十大專輯，隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片。",
+        "sourceUrls": [
+          "https://zh.wikipedia.org/wiki/何欣穗",
+          "https://musicbrainz.org/release-group/2184dbd1-3083-4f27-b3c5-7d4933c6e2d7"
+        ]
+      },
+      "preview": {
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2c/39/3d/2c393d38-6ddd-3a60-0ac3-aac03826e54e/mzaf_18023659886082986168.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 200,
+        "checkedAt": "2026-08-23T13:58:32Z",
+        "appleCollectionId": 1498913444,
+        "appleCollectionName": "她的。發光搖擺"
+      },
+      "research": {
+        "suggestedYear": 2002,
+        "yearNote": "MB RG first-release-date 2002-12-24 與中文維基〈何欣穗〉專輯表「2002年12月24日／嘉瑪音樂」一致；MB release 條碼 4710425220124。",
+        "mbTitle": "她的。發光搖擺",
+        "mbArtist": "何欣穗",
+        "mbFirstRelease": "2002-12-24",
+        "upcNote": "她的。發光搖擺 (2002-12-24 TW)",
+        "curatorWhy": "何欣穗第二張、也是代表作。中文維基載明 2002-12-24 由嘉瑪音樂發行，13 軌，何欣穗一手包辦，在台灣、新加坡、英國、美國錄音與後製，混音找來 Tore Johansson（羊毛衫樂團 The Cardigans、Franz Ferdinand、OK Go 的專輯製作人）。獲中華音樂人交流協會年度十大專輯；隔年第三屆華語音樂傳媒大獎四項提名並拿下十大華語唱片。收錄曲〈給女兒 (A Letter From My Dad)〉後來成為《海角七號》插入曲。",
+        "curatorRisk": "**MB 已建檔，primary-type = Album、無 secondary-type**（RG 2184dbd1-3083-4f27-b3c5-7d4933c6e2d7，first release 2002-12-24，artist bf4ef2c0-b65d-4f95-9ca6-0cda7fcf784c、country TW）。該 artist 在 MB 上只有三筆：1999 Album《Miss Perfect》、2002 Album《她的。發光搖擺》、2005 EP《米》。**廠牌兩說**：中文維基寫嘉瑪音樂，Apple 的 ℗ 卻是「2002 Sony Music Entertainment Taiwan Ltd.」（可能是後來的數位版權方），上架時廠牌欄要擇一或留空。**Apple TW 有**（artistId 767258254、collectionId 1498913444、13 軌，artworkUrl 可取）。藝名 Ciacia／ciacia her／Patricia Ho／Her Sheen Sway 多名並存，卡池鍵沿用 batch-tw 的裁定用中文本名「何欣穗」。"
+      },
+      "published": {
+        "cardCatalog": true,
+        "descriptionKv": true,
+        "albumOverride": true,
+        "seedCards": true,
+        "apexPool": false
+      }
+    }
+  ]
+}

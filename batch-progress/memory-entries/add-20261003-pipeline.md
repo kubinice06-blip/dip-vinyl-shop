@@ -13,3 +13,6 @@
 
 **追加（2026-10-10，店主核可）**：《她的。發光搖擺》簡介首句改為「何欣穗 1999 年以《完美小姐》出道，入圍金曲獎最佳新人，製作人李欣芸也入圍最佳專輯製作人；…」（全文 269 字）——
 雲端改 `onboarding-manifest-ctw2-taiwan-artists-20260823.json`，KV 重傳交本機（`batch-progress/add-20261003/desc-fix-her-sheen-sway.json`）。
+
+**追加（2026-10-10，雲端寫入）**：kv-token-check 通過後，雲端以 wrangler v4 寫入《她的。發光搖擺》修正版固定簡介 `desc2:`／`desc4:` 兩鍵，`verify-wave-kv` 逐字一致 2／2；《完美小姐》本機已於 main 19b73511 上架，雲端重跑 published gate 0 error。
+⚠ runbook 的 `npx wrangler kv bulk put … --remote` 要 **wrangler v4**（v3 沒有 `--remote`、會直接報錯）；雲端沒預裝 wrangler，用 `npx -y wrangler@4`，並設 `CLOUDFLARE_ACCOUNT_ID`。
