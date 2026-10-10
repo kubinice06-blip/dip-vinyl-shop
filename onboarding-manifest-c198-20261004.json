@@ -1,0 +1,775 @@
+{
+ "schemaVersion": 1,
+ "batch": "c198-20261004",
+ "albums": [
+  {
+   "artist": "Lew Soloff",
+   "album": "Hanalei Bay",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6aa425f8-63be-32b3-8d5b-8f086d200ea5（slice 給的 rgMbid，未改釘）。回問 RG `?inc=artist-credits+tags+genres`：title 逐字「Hanalei Bay」、first-release-date `1983`（⚠ 錯日期，見 risk）、Album、secondary-types 空、artist-credit `Lew Soloff`（3003fda4-fd03-4560-b443-20c4b675fbdb，Person US）、tags `contemporary jazz(1)`／`fusion(1)`／`jazz(1)`。`release?release-group=<id>&inc=media+labels+artist-credits` 回 2 筆：af86c7fd（1983 US `ProJazz CDJ 601` CD 8 軌——Discogs 記 1986）、920f57f8（1985 DE `ELECTRIC BIRD K 32 Y 6032` CD 7 軌）。**MB 沒有日本盤**。`release/af86c7fd?inc=recordings+work-rels+recording-level-rels+work-level-rels`：只有〈Well You Needn't〉掛 work（composer Thelonious Monk）、〈Goodbye Pork Pie Hat〉（Charles Mingus）。Discogs：`q=Hanalei Bay Soloff` 回 master 808500；`/masters/808500/versions` 逐筆跑完 9 筆並逐筆打 `releases/<id>`。",
+    "rgMbid": "6aa425f8-63be-32b3-8d5b-8f086d200ea5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6aa425f8-63be-32b3-8d5b-8f086d200ea5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 36,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=36）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Gil Evans 只坐電鋼琴，領銜換成麾下吹小號的人。Lew Soloff 稱 Evans 為自己音樂上的教父，1966 年起就在他的樂團吹小號。這回由 David Matthews 製作，紐約 Clinton 棚內全程數位收錄；Electric Bird 字標 1985 年發行，版權標為 King。ProJazz 的 CD 1986 年才在美國面世，註明授權來自 King，並加收 Mingus 的〈Goodbye Pork Pie Hat〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8556711",
+     "https://en.wikipedia.org/wiki/Lew_Soloff",
+     "https://www.latimes.com/local/obituaries/la-me-lew-soloff-20150309-story.html",
+     "https://www.discogs.com/release/9740902",
+     "https://en.wikipedia.org/wiki/Pete_Levin",
+     "https://en.wikipedia.org/wiki/Hiram_Bullock",
+     "https://en.wikipedia.org/wiki/Emily_(1964_song)",
+     "https://www.discogs.com/release/6755875",
+     "https://www.discogs.com/master/808500",
+     "https://musicbrainz.org/release-group/6aa425f8-63be-32b3-8d5b-8f086d200ea5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/00/f6/53/00f653a0-e6fd-4b22-00e6-ae665e40c255/mzaf_15279961723798528205.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1651759268",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "David Matthews",
+   "album": "Super Funky Sax",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a2ac7bcc-2c23-30ca-9fad-49713cf5f04a（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「Super Funky Sax」、first-release-date `1984`（⚠ 美國版）、Album、secondary-types 空、artist-credit `David Matthews`（bf0ba0da-13ff-43c7-b8bc-b2598d4f8843）、tags `jazz(1)`／`jazz-funk(1)`。release 端點回 3 筆：dea4be7b-bccc-4699-be7e-8124caa7f8fb（1984 US `GNP Crescendo Records GNPS 2169` 12\" 6 軌）、ee7704d5-9283-4536-8725-5c3a143b015b（1989 US，無廠牌、6 軌）、6461b282-dfb4-413e-89ab-e3c50b5c609d（2014-12-10 JP `ELECTRIC BIRD KICJ-2379` CD 6 軌）。**MB 沒有 1980 日本原壓**。`release/dea4be7b?inc=recordings+work-rels+work-level-rels`：六條 work 逐條 `arranger:David Matthews,composer:David Matthews`。Discogs：`q=Super Funky Sax` 回 master 531914；`/masters/531914/versions` 逐筆跑完 5 筆並逐筆打 `releases/<id>`，另打孤兒 18638278；`labels/51520` `parent_label` King。",
+    "rgMbid": "a2ac7bcc-2c23-30ca-9fad-49713cf5f04a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/01/b6/47/01b64789-bdef-6053-998c-203b38f27072/NOPA-3582.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1649750985",
+    "note": "試聽探測釘定的 collectionId 1649750985（jp）：スーパー・ファンキー・サックス — Super Funky Sax"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 76,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已在串流可得——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=76）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "中音、次中音、上低音，三把薩克斯風撐起盤名。三個位置依序交給 David Sanborn、Michael Brecker 與 Ronnie Cuber。David Matthews 1978 年離開 CTI，改與 King 旗下的 Electric Bird 簽約。1980 年 5 月的 Electric Lady 錄音裡，六首全由他寫、他編、他製作。美國版等到 1984 年，由 GNP Crescendo 發行，名單另印執行製作 川島重行 與 King 的母帶師 酒巻昇吾。",
+    "sourceUrls": [
+     "https://www.kingrecords.co.jp/cs/g/gKICJ-2379/",
+     "https://www.discogs.com/release/4281850",
+     "https://www.discogs.com/release/6972946",
+     "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A4%E3%83%B4%E3%82%A3%E3%83%83%E3%83%89%E3%83%BB%E3%83%9E%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA_(%E3%83%94%E3%82%A2%E3%83%8B%E3%82%B9%E3%83%88)",
+     "https://music.apple.com/jp/album/super-funky-sax/1649750985",
+     "https://www.discogs.com/release/2534408",
+     "https://www.discogs.com/artist/1760397-Shogo-Sakamaki",
+     "https://www.discogs.com/master/531914",
+     "https://musicbrainz.org/release-group/a2ac7bcc-2c23-30ca-9fad-49713cf5f04a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/7b/6d/ec/7b6dece9-65e2-9ba8-d61d-bdfa4c3c4769/mzaf_17219698064803075445.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1649750985",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Steve Gadd",
+   "album": "Gaddabout",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 67ec47f1-8412-3f0f-8697-3a901d2af45d（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「Gadd About」（⚠ 本卡改取原壓 `Gaddabout`）、first-release-date `1984`、Album、secondary-types 空、artist-credit `Steve Gadd`（7433918e-5c12-4a81-8875-06e3a54d2e00）、tags 與 genres 皆空。release 端點回 2 筆：13e60576-6e1e-405e-81a6-33498f8c7d9c（1986 JP `ELECTRIC BIRD CDJ 604` CD 6 軌，題逐字「Gaddabout」——`CDJ 604` 是美國 ProJazz 號）、7d2ea710-c9ef-4aa7-b3b3-69bc74741df3（1984 US，無廠牌、6 軌，題逐字「Gadd About」，credits 有 `producer Shigeyuki Kawashima executive`）。兩筆逐軌毫秒相同（373666／290093／402400／397173／255266／455226）。**MB 沒有日本 LP 原壓**。Discogs：`q=Gaddabout` 回 master 224701；`/masters/224701/versions` 逐筆跑完 14 筆並逐筆打 `releases/<id>`。",
+    "rgMbid": "67ec47f1-8412-3f0f-8697-3a901d2af45d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/67ec47f1-8412-3f0f-8697-3a901d2af45d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 330,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=330）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "作詞欄只亮相一次，掛名的正是鼓手。那一首是〈Montauk Moon〉，作詞者 Steve Gadd 在盤面列的是鼓兼人聲。這是他首張個人領銜作，紐約錄好，1984 年 11 月 21 日掛上 Electric Bird 的字標發售，由 King 在東京壓片。Richard Tee 寫了〈My Little Brother〉，其餘五首出自 David Matthews，Gadd 則列為全盤共同作者。致謝名單只有兩人：樂評人 中山康樹 與 King 錄音工程師 高浪初郎。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Steve_Gadd",
+     "https://www.discogs.com/release/1597660",
+     "https://www.kingrecords.co.jp/cs/g/gKICJ-2376/",
+     "https://www.discogs.com/master/224701",
+     "https://musicbrainz.org/release-group/67ec47f1-8412-3f0f-8697-3a901d2af45d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/46/a1/f0/46a1f011-55b8-6f86-9fa2-322911f9168e/mzaf_17222390751482584871.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1649749143",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Art Blakey and the Jazz Messengers",
+   "album": "Dr. Jeckyle",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1594c241-044f-35e7-977d-3acd6e5abca5（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「Dr. Jeckyle」、first-release-date `1985`（⚠ 錄音年，見 risk）、Album、secondary-types 空陣列、artist-credit `Art Blakey & The Jazz Messengers`（209ddf15-ee0a-41a1-a1f5-6f4c0409d2ee，Group）、tags 與 genres 皆空。release 端點回 1 筆：76d7af43-97f5-44fa-8925-daa45a142f72（1985 US `Paddle Wheel K32Y 6183`、4 軌、無載體）——**目錄號是 1987 年日本 CD，國別與日期都錯**。Discogs：`q=Blakey Dr. Jeckyle` 回 master 685620；`/masters/685620/versions` 逐筆跑完 9 筆並逐筆打 `releases/<id>`；另打 c-196 b 那張的 master 264957 的 Evidence 版 2062309（`notes` 逐字「Recorded December 30 & 31, 1985 at Sweet Basil」，無 live 字樣）作對照。",
+    "rgMbid": "1594c241-044f-35e7-977d-3acd6e5abca5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b2731ce259109fb19639a9a28355",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "https://open.spotify.com/album/6R9Y2zmdIqZWzTqmbHJvDh"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 36,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=36）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "這首標題曲，到這張已是第三種拼法。Jackie McLean 寫下的曲子，Miles Davis 1958 年錄成〈Dr. Jekyll〉，後來的再版改題〈Dr. Jackle〉，本盤寫作〈Dr. Jeckyle〉。錄音取自紐約 Sweet Basil 1985 年歲末那兩晚；同兩晚的另一批曲子，1986 年已出版。這四首到 1987 年 5 月 8 日移往日本 King 錄音室做混音，7 月交 Paddle Wheel 推出。B 面的〈81〉一首將近十六分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12307030",
+     "https://www.discogs.com/release/8498699",
+     "https://www.discogs.com/release/8530948",
+     "https://www.discogs.com/artist/873378-Hatsuro-Takanami",
+     "https://en.wikipedia.org/wiki/Bobby_Watson_(American_musician)",
+     "https://en.wikipedia.org/wiki/Keystone_3",
+     "https://en.wikipedia.org/wiki/Milestones_(Miles_Davis_album)",
+     "https://en.wikipedia.org/wiki/Jackie_McLean",
+     "https://en.wikipedia.org/wiki/E.S.P._(Miles_Davis_album)",
+     "https://en.wikipedia.org/wiki/Ugetsu_(album)",
+     "https://musicbrainz.org/release-group/1594c241-044f-35e7-977d-3acd6e5abca5"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Manhattan Jazz Quintet",
+   "album": "Plays Blue Note",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8d9eee39-1ecd-3f4d-89b1-4c0d723a6908（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「Plays Blue Note」、first-release-date `1988`、Album、secondary-types 空、artist-credit `Manhattan Jazz Quintet`（4042743d-7561-4712-8ed1-be77f389357b，Group US）、tags `jazz(1)`。release 端點回 2 筆：ba827590-5999-40d7-9e3c-afcbbcc7bbbe（1988 US `Paddle Wheel K28P 6480` CD 8 軌——⚠ 目錄號是日本 LP、國別錯）、ebe57389-b55a-37ce-ba2d-d3ab55ad9273（2004-09-23 JP `Paddle Wheel KICJ-2097` CD 8 軌）。**MB 沒有 1988 日本原壓**。Discogs：`/masters/654410/versions` 逐筆跑完 9 筆並逐筆打 `releases/<id>`（c-197 b 第 7775 條先打過 5403025）。",
+    "rgMbid": "8d9eee39-1ecd-3f4d-89b1-4c0d723a6908",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/ca/04/83/mzi.nodfierm.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "153832464",
+    "note": "試聽探測釘定的 collectionId 153832464（jp）：マンハッタン・ジャズ・クインテット — Plays Blue Note"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 198,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=198）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "聲明與 Blue Note 無關，解說卻出自替它翻片庫的人。那行聲明原是向這家廠牌致敬；寫解說的 Michael Cuscuna，1975 年起就替 Blue Note 翻查片庫。1988 年 4 月 5 日黑膠、CD 同步推出，字標是 King 的 Paddle Wheel。David Matthews 彈琴，也寫了兩首新曲〈Wolff Pack〉〈For Alfred〉；Blue Note 的兩位創辦人，正是 Alfred Lion 與 Francis Wolff。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2771415",
+     "https://www.discogs.com/release/5403025",
+     "https://www.discogs.com/release/13679843",
+     "https://en.wikipedia.org/wiki/Dave_Weckl",
+     "https://www.discogs.com/artist/252960-Michael-Cuscuna",
+     "https://en.wikipedia.org/wiki/Blue_Note_Records",
+     "https://en.wikipedia.org/wiki/Dear_Old_Stockholm",
+     "https://en.wikipedia.org/wiki/Demon%27s_Dance",
+     "https://en.wikipedia.org/wiki/The_Scene_Changes_(Bud_Powell_album)",
+     "https://www.discogs.com/master/654410",
+     "https://musicbrainz.org/release-group/8d9eee39-1ecd-3f4d-89b1-4c0d723a6908"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f3/28/e1/f328e1ea-140b-60e6-dc8a-30304fcf51ef/mzaf_411669963063145532.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "153832464",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Steps",
+   "album": "Smokin' In The Pit",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 26d29e91-073e-321c-b8a9-878b08ff31ae（slice 給的 rgMbid，未改釘）。回問 `release-group/<id>?inc=artist-credits+tags+genres`：title 逐字「Smokin' in the Pit」、first-release-date `1981`、primary-type Album、secondary-types 逐字 `[\"Live\"]`、artist-credit 逐字 `Steps Ahead`（8d35cd27-0504-4bbe-be87-f28ea200f7d3，Group US）、tags `jazz(1)`／`post-bop(1)`。`release?release-group=<id>&inc=media+labels+artist-credits` 回 3 筆：9f53b8fa（1999-08-10 US `NYC Records NYC 6027-2` CD 7+6 軌）、a80229e5（1988 JP `BETTER DAYS 45CY-2865->66` CD 8 軌，title 逐字「Smokin' In The Pit」）、b8e56978（`1981` US Digital Media 7+6 軌，title 逐字「Smokin’ In the Pit (Remastered)」、無廠牌——1999 重製的數位版）。**MB 沒有 1981 年的日本原壓 LP**。Discogs：`q=Smokin in the Pit&type=master` 回 master 433865；`/masters/433865/versions` 逐筆跑完 8 版並打 `releases/<id>`（2318274、37694490、3586525、24917393）；人名 `artists/119483`、`artists/288783`。",
+    "rgMbid": "26d29e91-073e-321c-b8a9-878b08ff31ae",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/26d29e91-073e-321c-b8a9-878b08ff31ae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 194,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=194）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩吋母帶後來遺失，追加的五軌翻自卡帶。1999 年 Mainieri 在美國替它出雙 CD，加收的部分來自他與 Michael Brecker 手上的粗混。原盤是東京六本木 Pit Inn 1980 年 12 月的三晚，日本コロムビア 委製，1981 年 2 月經 Better Days 出成雙 LP。〈Young And Fine〉是 Joe Zawinul 替 Weather Report 寫的，原錄音那一軌的鼓手 Steve Gadd 這場也在台上。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2318274",
+     "https://en.wikipedia.org/wiki/Mr._Gone_(album)",
+     "https://en.wikipedia.org/wiki/Soul_Eyes",
+     "https://en.wikipedia.org/wiki/Lover_Man_(Oh,_Where_Can_You_Be%3F)",
+     "https://columbia.jp/prod-info/COCB-54244-5/",
+     "https://www.discogs.com/release/18805441",
+     "https://www.discogs.com/release/3586525",
+     "https://www.discogs.com/master/433865",
+     "https://musicbrainz.org/release-group/26d29e91-073e-321c-b8a9-878b08ff31ae"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/05/88/89/05888970-2970-54ab-9dc0-dbb808ca6ff4/mzaf_3933334126372479920.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "161607469",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gary Burton",
+   "album": "Gary Burton and the Berklee All-Stars",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a869a4ac-20bf-44e3-95c0-6919085ea478（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「Gary Burton and the Berklee All-Stars」、first-release-date `1986`、Album、secondary-types 空、artist-credit 逐字 `Gary Burton`（7b5b8b1b-414b-44e8-862f-b1f20fcef5dc，Person US）、tags `jazz(1)`。release 端點回 1 筆：61876e7f（1986 US `JVC JD-3301` CD 9 軌，barcode 011105330121——與 Discogs 3556793 的 1991-10-25 美國 CD 同一個條碼，MB 的 1986 是年份誤填）。**MB 沒有日本盤**。Discogs：`artist=Gary Burton&release_title=Berklee` 回 master 473729；`/masters/473729/versions` 逐筆跑完 8 版並逐筆打 `releases/<id>`（10725411、12653814、11458793、3139954、28565284、3556793）；人名 `artists/915559`、`506042`、`1543351`。",
+    "rgMbid": "a869a4ac-20bf-44e3-95c0-6919085ea478",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a869a4ac-20bf-44e3-95c0-6919085ea478/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=4）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "掛著 Berklee 名號的八人樂隊，東京一日收工。1971 年起 Gary Burton 在那所學院任教，鋼琴手 Orville Wright 則是 1974 年畢業便留校教書。全團 1985 年 7 月 28 日集合於 JVC 青山錄音室，當天錄下九首；隔年 1 月 21 日歸入「JVC Jazz On Digital」系列出版。收尾的〈Crystal Silence〉是 Burton 一人獨奏。日語解說交給 Malta，他也在 Berklee 當過講師。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11458793",
+     "https://www.discogs.com/release/10725411",
+     "https://en.wikipedia.org/wiki/Gary_Burton",
+     "https://www.discogs.com/artist/888173",
+     "https://www.discogs.com/artist/293252",
+     "https://www.discogs.com/artist/473420",
+     "https://www.discogs.com/release/10399672",
+     "https://ja.wikipedia.org/wiki/MALTA",
+     "https://www.discogs.com/master/473729",
+     "https://musicbrainz.org/release-group/a869a4ac-20bf-44e3-95c0-6919085ea478"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Carmen McRae",
+   "album": "As Time Goes By: Carmen McRae Alone Live at the Dug",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b89a9776-d684-35a6-82d1-5c35acd447c5（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「As Time Goes By: Carmen McRae Alone Live at the Dug」、first-release-date `1987`、Album、secondary-types 逐字 `[\"Live\"]`、artist-credit `Carmen McRae`（29b0a6c7-ab3a-4bf3-a64f-63c8a3548196，Person US）、tags 空。release 端點回 3 筆：c17cbf02（`1987` US、無廠牌、載體 null、10 軌）、2f95885c（`2003` US、無廠牌、載體 null、10 軌）、8e5d4ecf（2003-03-05 JP `JVC VICJ-61037` CD 10 軌）；`release/<id>?inc=labels+recordings+annotation+url-rels` 打過兩筆殘缺 release：無 barcode、無 annotation、無外部連結，軌序與時長同原壓。**MB 沒有 1974 年的日本原壓**。Discogs：`artist=Carmen McRae&release_title=As Time Goes By` 回 master 561773；`/masters/561773/versions` 逐筆跑完 13 版並打 `releases/<id>`（4617075、16216094、1918313、10495786、8060656、15913948、11668805、8816049、9834575、19387264）；廠牌 `labels/904360`（JJ Records）、`labels/61808`。",
+    "rgMbid": "b89a9776-d684-35a6-82d1-5c35acd447c5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b89a9776-d684-35a6-82d1-5c35acd447c5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 73,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=73）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "東京 DUG 那一晚，琴鍵和歌聲都歸她一人。1973 年 11 月 21 日她坐上店裡的琴凳——Carmen McRae 原本就是鋼琴手，最早的錄音是在 Mercer Ellington 樂團裡彈琴。1974 年日本ビクター 首發；美國 Catalyst 1976 年獲授權發行，列入「International Jazz From Japan」系列。作曲欄印著她本名 Carmen McRae Spearman 的，是〈The Last Time For Love〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4617075",
+     "https://www.discogs.com/release/1918313",
+     "https://en.wikipedia.org/wiki/Carmen_McRae",
+     "https://www.discogs.com/release/11668805",
+     "https://en.wikipedia.org/wiki/Supper_Time",
+     "https://en.wikipedia.org/wiki/I_Can%27t_Escape_from_You_(Bing_Crosby_song)",
+     "https://www.discogs.com/release/15913948",
+     "https://www.discogs.com/release/9834575",
+     "https://www.discogs.com/master/561773",
+     "https://musicbrainz.org/release-group/b89a9776-d684-35a6-82d1-5c35acd447c5"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Oscar Castro-Neves",
+   "album": "Brazilian Scandals",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 5f47089f-c02a-44be-9e0f-9795054128b3（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「Brazilian Scandals」、first-release-date `1987`、Album、secondary-types 空、artist-credit 逐字 `Oscar Castro-Neves`（實體名 `Oscar Castro‐Neves` 66370eca-c0a9-46e9-a289-8d5755de126b，Person BR）、tags 見 why。release 端點回 1 筆：ec5f4c0b（1987 US `JVC JD-3302` CD 11 軌）。**MB 沒有日本盤**。Discogs：`catno=JD-3302` 回 master 382820；`/masters/382820/versions` 逐筆跑完 8 版並打 `releases/<id>`（11501847、6988703、1893740、3167016、4724404、7566948）；人名 `artists/1746955`、`915559`、`506042`。",
+    "rgMbid": "5f47089f-c02a-44be-9e0f-9795054128b3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5f47089f-c02a-44be-9e0f-9795054128b3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 141,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=141）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "里約和好萊塢分頭錄，最後一道母帶在東京做。JVC 出資製作，里約那頭進 SIGLA、好萊塢那頭進 Capitol，母帶由 高田英男 在 JVC Studios 處理。1987 年 6 月 1 日日本ビクター音楽産業 讓它上市，製作是 JVC 的 田口晃。鋼琴、鼓、貝斯三席都是巴西人，打擊是 Paulinho Da Costa；洛杉磯管樂之外，另加十二把小提琴與四把大提琴。九首由 Oscar Castro-Neves 獨力寫成，另兩首與作詞人 Aldir Blanc 合寫。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11501847",
+     "https://www.discogs.com/artist/1067207",
+     "https://en.wikipedia.org/wiki/Aldir_Blanc",
+     "https://en.wikipedia.org/wiki/Oscar_Castro-Neves",
+     "https://www.discogs.com/release/3167016",
+     "https://www.discogs.com/release/1893740",
+     "https://www.discogs.com/release/10943203",
+     "https://musicbrainz.org/release-group/5f47089f-c02a-44be-9e0f-9795054128b3"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jeff Baxter, Buzzy Feiten, James Harrah, Teddy Castellucci",
+   "album": "Guitar Workshop in L.A.",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c264fa08-0f67-4c16-aaec-7a850e443537（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「Guitar Workshop in L.A.」、first-release-date `1988`、Album、secondary-types 空、**artist-credit 逐字 `Various Artists`**（89ad4ac3，Other）、tags `jazz(1)`。release 端點回 1 筆：45d26a3f（1988 US `JVC JD-3314` CD 10 軌，barcode 011105331425）；`release/<id>?inc=artist-credits+recordings`：release 層 artist-credit 逐字 `Jeff Baxter`〔實體 `Jeff “Skunk” Baxter` 6b03465f〕`, Teddy Castellucci`〔9a6cd941〕`, James Harrah`〔e5eea933〕` & Buzz Feiten`〔6f830c0b〕，逐軌 credit 逐字 `Buzzy Feiten`／`Jeff ‘Skunk’ Baxter`。**MB 沒有日本盤**。Discogs：`q=Guitar Workshop In L.A.` 回 master 929858；`/masters/929858/versions` 3 版逐筆打 `releases/<id>`（7048492、7960546、7861345）；廠牌 `labels/48629`；人名 `artists/2743562`、`4019723`。",
+    "rgMbid": "c264fa08-0f67-4c16-aaec-7a850e443537",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c264fa08-0f67-4c16-aaec-7a850e443537/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=13）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "由四位日本吉他手起頭的系列，到 1988 年首度移師洛杉磯。「Guitar Workshop」是ビクター 自家系列，1977 年由 大村憲司、渡辺香津美、森園勝敏、山岸潤史 開頭。這一輯錄音挑了好萊塢 Ocean Way，交 Invitation 字標出版；美國版註明由 Victor Musical Industries 授權給 GRP。〈Blues For Ronnie〉把四段獨奏照聲道由右到左排開，Jeff Baxter 打頭，Teddy Castellucci 收尾。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7048492",
+     "https://www.discogs.com/release/7861345",
+     "https://www.discogs.com/artist/1325153",
+     "https://www.discogs.com/artist/336761",
+     "https://en.wikipedia.org/wiki/Buzz_Feiten",
+     "https://www.discogs.com/artist/449482",
+     "https://www.discogs.com/label/2095090",
+     "https://musicbrainz.org/release-group/c264fa08-0f67-4c16-aaec-7a850e443537"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "タイガー大越",
+   "album": "Face to Face",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 43792ac4-cc8a-4f45-a5f7-704dfe4f2084（slice 給的 rgMbid，未改釘）。回問 RG：title 逐字「Face to Face」、first-release-date `1989`、Album、secondary-types 空、artist-credit 逐字 `タイガー大越`（a7224fbf-1f8d-4fd5-a30c-48be18862372，Person、country `US`）、tags 空。release 端點回 1 筆：4aa87442（1989 US `JVC JD-3318` CD 12 軌，barcode 011105331821）。**MB 沒有日本盤**。Discogs：`artist=Tiger Okoshi` 回 master 933038；`/masters/933038/versions` 5 版逐筆打 `releases/<id>`（14001308、15003272、3709135、7886709、10948077）；人名 `artists/306609`、`296238`、`3207998`、`3505246`、`915559`。",
+    "rgMbid": "43792ac4-cc8a-4f45-a5f7-704dfe4f2084",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/43792ac4-cc8a-4f45-a5f7-704dfe4f2084/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 16,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=16）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "日文曲目裡，冒出一首〈怪人二十面相〉。英文題是〈A Man With 20 Faces〉，作者是 タイガー大越，日文題出自ビクター 的曲目。「怪人二十面相」是江戶川亂步 1936 年創造的怪盜。1989 年 4 月 21 日 JVC 讓專輯上架，田口晃 製作。貝斯 清水興 與鼓手 東原力哉 同屬 NANIWA EXPRESS，吉他是 土方隆行。十二首裡七首出自 大越，另收 Jobim 的〈One Note Samba〉、Gershwin 的〈Summertime〉等五首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14001308",
+     "https://www.discogs.com/artist/3207998",
+     "https://www.discogs.com/artist/296238",
+     "https://music.apple.com/jp/album/face-to-face/1455815506",
+     "https://ja.wikipedia.org/wiki/%E6%80%AA%E4%BA%BA%E4%BA%8C%E5%8D%81%E9%9D%A2%E7%9B%B8",
+     "https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%82%AC%E3%83%BC%E5%A4%A7%E8%B6%8A",
+     "https://en.wikipedia.org/wiki/Tiger_Okoshi",
+     "https://www.discogs.com/release/3709135",
+     "https://www.discogs.com/master/933038",
+     "https://musicbrainz.org/release-group/43792ac4-cc8a-4f45-a5f7-704dfe4f2084"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/b1/27/6c/b1276c7d-486a-e179-5dd3-53e1a732aa6f/mzaf_8536280545291348973.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1455815506",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

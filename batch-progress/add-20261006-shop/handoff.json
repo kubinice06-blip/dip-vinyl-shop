@@ -1,0 +1,43 @@
+{
+ "batch": "add-20261006-shop",
+ "cards": 13,
+ "purpose": "店內販售區第三波（Notion 2026-10-06 新進 26 張，其中 14 張缺卡；收 13、退 1：宮沢昭《Bull Trout》＝池中《いわな》）",
+ "manifest": "batch-progress/add-20261006-shop/onboarding-manifest.json（prepare gate：description 空白 13 error 待主線補簡介，其餘 0 error／16 warning：upc 空 12、§1 人工 ×4）",
+ "repaste": "batch-progress/add-20261006-shop/album_overrides-repaste-add-20261006-shop.json（ready 9 筆 previewUrl、unavailable 4 筆 previewStatus）",
+ "desc": {
+  "cards": "desc-tools/batches/cards/add-20261006-shop-cards.json（a 6／b 7）",
+  "research": "desc-tools/batches/research/add-20261006-shop-{a,b}.json",
+  "hooks": "desc-tools/batches/hooks/add-20261006-shop-hooks-{a,b}.json",
+  "output": "待寫作層交件；主線審稿後填入 manifest description.text"
+ },
+ "pendingLocal": {
+  "covers": "CAA 8 張（Rainy Day、Horns、Breakin' It Up、O.M.Y.、真夜中詩集、噫無情、オーエス、Push）、Discogs 5 張（Rejoice! 4540470、Aketa Vol. 2 3955896、Another Step 7262688、おもしろ遊戯 7633932、竹の村 8381375；竹の村 CAA 404），Discogs 已登錄 registry reviewed ok；本機只需 HTTP 覆核",
+  "previews": "Apple ready 9 張（Rainy Day、Miles Davis and Horns、Breakin' It Up、弱気なぼくら / ナーヴァス、真夜中詩集 －ろうそくの消えるまで－、噫無情（レ・ミゼラブル）、おもしろ遊戯、オーエス オーエス、Push），逐軌對上原盤（Horns 為 us storefront 1443277180，jp 無此條目）；unavailable 4 張（Rejoice!、This Here´ Is Aketa Vol. 2、Another Step、竹の村），YT Music 覆核",
+  "listeners": "全部（13 張 null）",
+  "apexEvidence": [],
+  "pearlListenersCheck": [
+   "desc4:明田川荘之|This Here´ Is Aketa Vol. 2",
+   "desc4:梅津和時|竹の村"
+  ],
+  "kv": "簡介補完後 from_onboarding_manifest.mjs 轉 bulk → wrangler kv bulk put → verify-kv 逐字驗證（12 張 desc4:、Red Mitchell／Kai Winding／Miles／Barry Harris 4 張 desc2:）",
+  "firestore": "card_catalog 13 筆（封面、三軸、rarity、rgMbid、upc）",
+  "albumOverrides": "後台批次工具貼 album_overrides-repaste-add-20261006-shop.json",
+  "seed": "seed_cards.json 追加 13 列 → build-seed-genres.mjs → build-genre-tree.mjs --write",
+  "publishedGate": "node scripts/verify-album-onboarding.mjs batch-progress/add-20261006-shop/onboarding-manifest.json --published",
+  "notion": "Notion 這 13 列補填卡池鍵（desc4:／desc2: key 同卡單）；宮沢昭《Bull Trout》那列回寫 desc4:宮沢昭|いわな；後台「↻ 從 Notion 重新整理」→「套用並存檔」",
+  "pendingNew": "上架後 sync-shop-inventory.mjs 的 PENDING_NEW 清掉這 13 張（與 Bull Trout 那列）",
+  "seedAlias": "宮沢昭《いわな》池卡 queryAlias 補 `Bull Trout`（seed 單行壓縮檔，雲端不碰）",
+  "reviewNotes": [
+   "Red Mitchell《Rejoice!》、明田川 Vol. 2、Another Step、おもしろ遊戯 為 §1 人工身分（Discogs 原版為證）",
+   "Miles Davis and Horns 走 §5.6（Compilation，附 exceptionReason／evidence），CAA 圖為 OJC 版掃描、封面設計同原盤",
+   "Aketa Vol. 2、竹の村 obscurity=5：pearl 須 listeners<300 且有遺珠級證據，本機查到 listeners 後再判；雲端暫列一般卡",
+   "Barry Harris 年份維持 1958（主線 8722 裁定）"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pending",
+  "prepareGate": "0 error（description 空白 13 項除外）"
+ }
+}

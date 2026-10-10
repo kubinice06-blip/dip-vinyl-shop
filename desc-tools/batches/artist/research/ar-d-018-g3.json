@@ -1,0 +1,882 @@
+[
+  {
+    "key": "change",
+    "name": "Change",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Change 是義大利與美國合作的 post-disco／舞曲項目，在義大利波隆納成形，發起人是商人 Jacques Fred Petrus 與音樂人 Mauro Malavasi；起初是由流動樂手組成的錄音室樂隊，而不是固定的演出團體。",
+            "src": "https://en.wikipedia.org/wiki/Change_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Petrus 生於法屬西印度群島的瓜德羅普，早年在巴黎與米蘭的俱樂部當 DJ；到波隆納結識音樂系學生 Malavasi 後，兩人合組製作公司 Goody Music Productions，另設錄音室與同名廠牌。",
+            "src": "https://en.wikipedia.org/wiki/Jacques_Fred_Petrus",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Change 的做法是跨海分工：義大利樂手先在波隆納錄好伴奏，再到美國由當地歌手補錄人聲，最後在紐約的錄音室混音。",
+            "src": "https://en.wikipedia.org/wiki/Change_(band)",
+            "src2": "https://stereogum.com/2199624/the-number-ones-janet-jacksons-all-for-you/columns/the-number-ones",
+            "from": "new"
+          },
+          {
+            "f": "聲音取法 Chic：不走合成器味很重的 Italo disco，而是學 Chic 那種帶活樂團感的放克，有刮弦式的吉他、跳動的貝斯線與下行的鋼琴樂句。",
+            "src": "https://stereogum.com/2199624/the-number-ones-janet-jacksons-all-for-you/columns/the-number-ones",
+            "src2": "https://en.wikipedia.org/wiki/Change_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Luther Vandross 在〈The Glow of Love〉擔任主唱，當時他還沒開始個人歌手生涯。",
+            "src": "https://stereogum.com/2199624/the-number-ones-janet-jacksons-all-for-you/columns/the-number-ones",
+            "src2": "https://en.wikipedia.org/wiki/Change_(band)",
+            "from": "new"
+          },
+          {
+            "f": "〈Searching〉同樣由 Luther Vandross 擔任主唱。",
+            "src": "https://en.wikipedia.org/wiki/Change_(band)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Janet Jackson 2001 年的〈All for You〉大量取樣〈The Glow of Love〉；製作人 Jimmy Jam 說，自己當年擔任 DJ 時這首是生命中的大歌，一直想把它帶回來讓更多人聽到。",
+            "src": "https://stereogum.com/2199624/the-number-ones-janet-jacksons-all-for-you/columns/the-number-ones",
+            "src2": "https://en.wikipedia.org/wiki/Change_(band)",
+            "from": "new"
+          },
+          {
+            "f": "〈Searching〉與〈The Glow of Love〉的成功讓 Vandross 的嗓音被主流聽見，不久後他轉做個人歌手，首張個人專輯《Never Too Much》接在這批錄音之後推出。",
+            "src": "https://en.wikipedia.org/wiki/Change_(band)",
+            "src2": "https://stereogum.com/2199624/the-number-ones-janet-jacksons-all-for-you/columns/the-number-ones",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "Janet Jackson 2001 年的〈All for You〉取樣〈The Glow of Love〉，把這首 1980 年的舞曲帶給新一代聽眾。",
+        "src": "https://stereogum.com/2199624/the-number-ones-janet-jacksons-all-for-you/columns/the-number-ones",
+        "src2": "https://en.wikipedia.org/wiki/Change_(band)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "英文維基寫 Vandross 主唱〈Searching〉與標題曲，derek's music blog 寫他只在前兩張專輯擔任和聲；上線簡介與維基一致，採上線簡介與維基，〈Searching〉主唱只留維基單源（標 single）。",
+      "成軍年：維基寫 1979 年初，derek's blog 寫 1980 年；兩源不一致，facts 不寫成軍年。"
+    ],
+    "searches": 7,
+    "failedFetches": 0,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓無 Change 條目（key 對不上），自行查 Change_(band) 與 Jacques_Fred_Petrus 維基。補查 7 次：WebSearch 3（團史、Janet Jackson 取樣、Petrus 出身）、WebFetch 4（Change 維基、dereksmusicblog、stereogum 專欄、Petrus 維基）。身分已照 poolAlbums 確認：卡池唯一專輯《The Glow of Love》1980，與維基首張專輯一致，無同名混卡。未收（單源或屬高風險）：〈The Glow of Love〉等三支單曲合計在 Billboard Club Play 榜登頂九週（維基單源，上線簡介已寫）；derek's blog 稱連續六首美國舞曲榜冠軍（單源、blog）；Petrus 生卒年（高風險，未湊兩源）。維基與 stereogum 分屬不同出版者，stereogum 專欄把 Change 簡述為波隆納錄音室項目，與維基描述相符，但 stereogum 未提 Searching 主唱。"
+  },
+  {
+    "key": "charles may & annette may thomas",
+    "name": "Charles May & Annette May Thomas",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Charles May 與 Annette May Thomas 是兄妹，父親是福音歌手 Brother Joe May；兄妹倆各有自己的路，Charles 領導一個帶搖滾味的福音團體 the 21st Century，Annette 則成了常被找去唱和聲的歌手。",
+            "src": "https://magazine.waxpoetics.com/rediscovery/charles-may-annette-may-thomas-songs-our-father-used-to-sing",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Brother Joe May 生於密西西比州的 Macon，福音圈叫他 Thunderbolt of the Middle West；他 1972 年過世，也就是這張紀念專輯發行的前一年。",
+            "src": "https://en.wikipedia.org/wiki/Brother_Joe_May",
+            "src2": "https://magazine.waxpoetics.com/rediscovery/charles-may-annette-may-thomas-songs-our-father-used-to-sing",
+            "from": "new"
+          },
+          {
+            "f": "Annette May Thomas 曾替 Bob Dylan 1986 年的《Knocked Out Loaded》唱和聲，也出過自己的 Stax 單曲。",
+            "src": "https://magazine.waxpoetics.com/rediscovery/charles-may-annette-may-thomas-songs-our-father-used-to-sing",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Songs Our Father Used to Sing》1973 年由 Stax 旗下的 Gospel Truth 廠牌發行，是獻給過世父親的紀念專輯：一段長組曲串起 Brother Joe 唱紅的歌，其餘多半是 Charles 自己寫的新曲，並由 Charles 與 Gene Page 共同編曲。",
+            "src": "https://magazine.waxpoetics.com/rediscovery/charles-may-annette-may-thomas-songs-our-father-used-to-sing",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "伴奏陣容是洛杉磯班底：貝斯 Wilton Felder、鼓 Paul Humphrey 加上多位吉他手，十多位和聲歌手包括 the Jackson Ensemble、the 21st Century 與 Edna Wright；聲音是福音底子配上靈魂樂的編制，鼓點撐起中快板的律動。",
+            "src": "https://magazine.waxpoetics.com/rediscovery/charles-may-annette-may-thomas-songs-our-father-used-to-sing",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "貝斯手 Wilton Felder 是 The Crusaders 的創團薩克斯風手，1970 年代初 Motown 搬到洛杉磯後也是廠牌常駐貝斯手之一，Jackson 5 的〈I Want You Back〉〈ABC〉〈The Love You Save〉與 Marvin Gaye 的〈Let's Get It On〉都有他的貝斯。",
+            "src": "https://en.wikipedia.org/wiki/Wilton_Felder",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "父親 Brother Joe May 在維基上被形容為「福音史上最偉大的男獨唱者之一」（arguably the greatest male soloist in the history of gospel music），並被認為影響了 Little Richard。",
+            "src": "https://en.wikipedia.org/wiki/Brother_Joe_May",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "維基 Brother Joe May 條目沒有列出名為 Charles 的子女（只提到女兒 Annette）；兄妹關係與 Charles 領導 the 21st Century 只見 Wax Poetics 單源，不是高風險事實，標 single。"
+    ],
+    "searches": 6,
+    "failedFetches": 1,
+    "pubIssues": [],
+    "status": "thin",
+    "notes": "維基預抓無此二人條目。身分照 poolAlbums 確認：卡池唯一專輯《Songs Our Father Used to Sing》1973，Wax Poetics 與搜尋結果一致，是福音兄妹，無同名混卡。補查 6 次：WebSearch 4（專輯與 Stax、udiscovermusic 專文、Brother Joe May、Annette 與 Dylan）、WebFetch 2（Wax Poetics、Brother Joe May 維基）；prostudiomasters.com 403 未取得（不計入）。上線簡介引用的 Stax 官方頁與 uDiscover 專文本層沒找到可開的網址，未收。legacy 格素材偏薄：兄妹本人沒有可考的共識評價，只有父親的評價；Brother Joe May 2000 年身後入選 International Gospel Music Hall of Fame 只見維基單源（獎項屬高風險），移到 notes 不收。Wax Poetics 稱此專輯為被忽略的福音靈魂佳作（unsung gospel-soul masterpiece），屬單一刊物形容詞，不收。搜尋摘要提到 2019 年 Craft Recordings 首度把 Gospel Truth 廠牌 25 張專輯數位發行，沒有開到原頁，未收。"
+  },
+  {
+    "key": "charles wright & the watts 103rd street rhythm band",
+    "name": "Charles Wright & the Watts 103rd Street Rhythm Band",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Charles Wright 1940 年生於密西西比州的 Clarksdale，12 歲搬到洛杉磯；受當地 R&B 歌手 Jesse Belvin 影響，1956 年以 Little Cholly Wright 之名錄下第一支單曲。",
+            "src": "https://bear-family.de/wright-charles-watts-103rd/?c=3",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "樂團最初是為了替洛杉磯 DJ Magnificent Montague 錄一首主題曲而湊成；經典陣容有 Wright（吉他、主唱）、Al McKay（吉他）、Melvin Dunlap（貝斯）、James Gadson（鼓），加上薩克斯風、長號與小號組成的銅管。",
+            "src": "https://bear-family.de/wright-charles-watts-103rd/?c=3",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "英文維基的開頭介紹：這是一支美國靈魂與放克樂團，1960 年代初成軍，1967 至 1973 年間最受矚目。",
+            "src": "https://en.wikipedia.org/wiki/Charles_Wright_%26_the_Watts_103rd_Street_Rhythm_Band",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bear Family 的樂團介紹形容他們的放克「熱與冷並存」：銅管俐落、節奏吉他緊湊、節奏組結實，樂手有爵士底子，能放開來即興。",
+            "src": "https://bear-family.de/wright-charles-watts-103rd/?c=3",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "〈Express Yourself〉由 Wright 自己寫曲並主唱，Melvin Dunlap 彈出那條很放克的貝斯線，James Gadson 打鼓；這兩人都在樂團的經典陣容裡。",
+            "src": "https://classicsongoftheday.com/express-yourself-charles-wright-and-the-watts-103rd-street-rhythm-band/",
+            "src2": "https://bear-family.de/wright-charles-watts-103rd/?c=3",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "N.W.A 在《Straight Outta Compton》裡取樣〈Express Yourself〉，做成同名的〈Express Yourself〉；這首也是被嘻哈圈取樣最多的放克曲之一。",
+            "src": "https://en.wikipedia.org/wiki/Express_Yourself_(Charles_Wright_%26_the_Watts_103rd_Street_Rhythm_Band_song)",
+            "src2": "https://classicsongoftheday.com/express-yourself-charles-wright-and-the-watts-103rd-street-rhythm-band/",
+            "from": "new"
+          },
+          {
+            "f": "Wright 說 N.W.A 起初沒先取得使用許可，他聽到後聯絡對方，對方連聲道歉，他之後拿到了版稅。",
+            "src": "https://classicsongoftheday.com/express-yourself-charles-wright-and-the-watts-103rd-street-rhythm-band/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "〈Express Yourself〉入圍 1971 年葛萊美最佳節奏藍調團體演唱獎（Best R&B Performance by a Duo or Group with Vocals），未得獎，得獎的是 The Delfonics。",
+            "src": "https://en.wikipedia.org/wiki/Express_Yourself_(Charles_Wright_%26_the_Watts_103rd_Street_Rhythm_Band_song)",
+            "src2": "https://classicsongoftheday.com/express-yourself-charles-wright-and-the-watts-103rd-street-rhythm-band/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Express Yourself〉1970 年 8 月發行，由 Warner Bros. 推出，Wright 自寫自製。",
+            "src": "https://classicsongoftheday.com/express-yourself-charles-wright-and-the-watts-103rd-street-rhythm-band/",
+            "src2": "https://en.wikipedia.org/wiki/Express_Yourself_(Charles_Wright_%26_the_Watts_103rd_Street_Rhythm_Band_song)",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "〈Express Yourself〉1970 年登上 Billboard Hot 100 第 12 名、R&B 榜第 3 名，是樂團最大的熱門曲（必要例外：代表作成績）。",
+        "src": "https://classicsongoftheday.com/express-yourself-charles-wright-and-the-watts-103rd-street-rhythm-band/",
+        "src2": "https://en.wikipedia.org/wiki/Express_Yourself_(Charles_Wright_%26_the_Watts_103rd_Street_Rhythm_Band_song)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成軍年：classicsongoftheday 寫 Wright 1968 年組團，Bear Family 寫第一代陣容 1966 年為 Magnificent Montague 錄主題曲而成，維基寫 1960 年代初；三說不一致，facts 不寫成軍年。",
+      "N.W.A 取樣的專輯年：classicsongoftheday 與搜尋摘要寫 1988，維基單曲條目寫 1989 的同名曲；facts 不寫年份。"
+    ],
+    "searches": 5,
+    "failedFetches": 1,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓有此團條目（url 照抄），內容為首段，已視同讀到。身分照 poolAlbums 確認：卡池唯一專輯《Express Yourself》1970，維基 albumHits 1，無同名混卡。補查 5 次：WebSearch 2（樂團與歌曲背景、葛萊美入圍）、WebFetch 3（classicsongoftheday、Bear Family、維基單曲條目）；blackpast.org 403 未取得（不計入）。葛萊美入圍的類別名只在維基單曲條目見到完整寫法，第二源 classicsongoftheday 只確認「入圍而未得獎」，類別以維基為準（維基單曲條目與維基樂團條目同屬維基，非獨立）。「被嘻哈圈取樣最多的放克曲之一」一句取自 classicsongoftheday 與維基單曲條目的概括，非逐字排名。Wright 是否在世未查證，未寫任何生卒資訊以外的年份。維基稱 1967 至 1973 年間有 9 支單曲上榜，屬榜單數字，未收。"
+  },
+  {
+    "key": "charlie puth",
+    "name": "Charlie Puth",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Charlie Puth 是美國歌手、詞曲作者與製作人，生於紐澤西州的 Rumson；母親 Debra 是音樂老師，他 4 歲起跟她學鋼琴，家裡因此擺了好幾台鋼琴。",
+            "src": "https://en.wikipedia.org/wiki/Charlie_Puth",
+            "src2": "https://njmonthly.com/?p=123273",
+            "from": "new"
+          },
+          {
+            "f": "他有絕對音感，小時候就會說「風是 B 降」「水聲是 D」，還發現風和水聲疊在一起會成為和弦。",
+            "src": "https://njmonthly.com/?p=123273",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "10 歲起學爵士與即興，後來在 Manhattan School of Music Pre-College 主修爵士鋼琴，2013 年從 Berklee College of Music 畢業，主修音樂製作與工程。",
+            "src": "https://en.wikipedia.org/wiki/Charlie_Puth",
+            "src2": "https://njmonthly.com/?p=123273",
+            "from": "new"
+          },
+          {
+            "f": "他在 Berklee 求學時，與同學 Emily Luther 把 Adele 的〈Someone Like You〉翻唱上傳 YouTube，被 Ellen DeGeneres 看到後簽進她的 eleveneleven 廠牌。",
+            "src": "https://en.wikipedia.org/wiki/Charlie_Puth",
+            "src2": "https://njmonthly.com/?p=123273",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他早年一心想成為最好的爵士鋼琴手，後來在紐約與紐澤西之間的車程上發現爵士和聲與流行、R&B 有許多相通處；TLC 與 A Tribe Called Quest 又把他的興趣帶向製作與錄音。",
+            "src": "https://www.grammy.com/news/mind-charlie-puth-how-jazz-grew-pop",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他說自己把 George Michael 當作範本：在流行歌裡加進七和弦，讓唱片更耐聽，又不至於變成一張爵士唱片。",
+            "src": "https://www.grammy.com/news/mind-charlie-puth-how-jazz-grew-pop",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "首張專輯《Nine Track Mind》的 12 首歌由他自己製作並參與寫作；他說希望這張專輯讓年輕音樂人知道，在臥室裡也做得出一張專輯。",
+            "src": "https://njmonthly.com/?p=123273",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2015 年他共同寫作、製作並客串演唱 Wiz Khalifa 的〈See You Again〉，這首歌登上 Billboard Hot 100 冠軍（必要例外：核心成績）；他說歌從一位朋友過世的個人經驗而來，所以寫得很快。",
+            "src": "https://en.wikipedia.org/wiki/Charlie_Puth",
+            "src2": "https://college.berklee.edu/news/charlie-puth-berklee-billboard",
+            "from": "new"
+          },
+          {
+            "f": "除了自己的作品，他也為 Wiz Khalifa、Meghan Trainor、Jason Derulo 與 Trey Songz 等人寫歌或製作。",
+            "src": "https://college.berklee.edu/news/charlie-puth-berklee-billboard",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2015 年共同寫作、製作並客串演唱的〈See You Again〉登上 Billboard Hot 100 冠軍。",
+        "src": "https://en.wikipedia.org/wiki/Charlie_Puth",
+        "src2": "https://college.berklee.edu/news/charlie-puth-berklee-billboard",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Berklee 校方文章寫他在入學第一天（2010 年）開了 YouTube 頻道，維基寫 2009 年 9 月開頻道；兩源不一致，facts 不寫開頻道年份。"
+    ],
+    "searches": 5,
+    "failedFetches": 0,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓有 Charlie Puth 條目；卡池唯一專輯《Nine Track Mind》2016 與維基首張專輯一致，流行歌手身分，無同名混卡。補查 5 次：WebSearch 2（Berklee 與絕對音感、〈See You Again〉）、WebFetch 3（grammy.com 專文、NJ Monthly、Berklee 校方文章）。〈See You Again〉的 Furious 7 / Paul Walker 追思背景只在搜尋摘要看到，沒有開頁，未收。Berklee 文章寫那首歌來自一位 Berklee 同學兼朋友過世，搜尋摘要寫是朋友以類似方式過世，細節不一致且涉及他人死因，只寫「朋友過世」。Hot 100 週數、Golden Globe 與葛萊美入圍、《Nine Track Mind》榜位與銷量、Spotify 單日紀錄，都屬在世者榜單與獎項，只留 Hot 100 冠軍一處必要例外。《Whatever's Clever!》（2026 年 3 月）只見維基單源，卡池年份是 2016，未收。"
+  },
+  {
+    "key": "chocolate milk",
+    "name": "Chocolate Milk",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chocolate Milk 1974 年成軍，八人編制，團員包括主唱 Frank Richard、薩克斯風 Amadee Castenell、小號 Joe Foxx、吉他 Mario Tio、貝斯 Earnest Dabon、鍵盤 Robert Dabon 與鼓手 Dwight Richards。",
+            "src": "https://en.wikipedia.org/wiki/Chocolate_Milk_(band)",
+            "src2": "https://dereksmusicblog.com/2012/01/30/chocolate-milk-action-speaks-louder-than-words/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "聲音以放克、R&B 與靈魂樂為底，後來加進 disco 元素；編制是緊實的節奏組配銅管，用 Fender Rhodes 與 clavinet，還用了 Moog 貝斯。",
+            "src": "https://en.wikipedia.org/wiki/Chocolate_Milk_(band)",
+            "src2": "https://dereksmusicblog.com/2012/01/30/chocolate-milk-action-speaks-louder-than-words/",
+            "from": "new"
+          },
+          {
+            "f": "首張專輯《Action Speaks Louder Than Words》1975 年錄於紐奧良的 Sea-Saint 錄音室，由 Allen Toussaint 與 Marshall Sehorn 製作。",
+            "src": "https://en.wikipedia.org/wiki/Chocolate_Milk_(band)",
+            "src2": "https://dereksmusicblog.com/2012/01/30/chocolate-milk-action-speaks-louder-than-words/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們接替 The Meters，成為 Allen Toussaint 的錄音室班底。",
+            "src": "https://en.wikipedia.org/wiki/Chocolate_Milk_(band)",
+            "src2": "https://dereksmusicblog.com/2012/01/30/chocolate-milk-action-speaks-louder-than-words/",
+            "from": "new"
+          },
+          {
+            "f": "樂團既在 Toussaint 的現場擔任伴奏，也參與過 Paul McCartney 的錄音。",
+            "src": "https://en.wikipedia.org/wiki/Chocolate_Milk_(band)",
+            "single": true,
+            "from": "bank"
+          },
+          {
+            "f": "〈Action Speaks Louder Than Words〉的鼓點段落（break beat）被嘻哈製作人大量取樣，Eric B. & Rakim 的〈Move the Crowd〉就用了它。",
+            "src": "https://en.wikipedia.org/wiki/Chocolate_Milk_(band)",
+            "src2": "https://dereksmusicblog.com/2012/01/30/chocolate-milk-action-speaks-louder-than-words/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團與 Toussaint 的合作延續到 1980 年，那一年雙方分道。",
+            "src": "https://en.wikipedia.org/wiki/Chocolate_Milk_(band)",
+            "src2": "https://dereksmusicblog.com/2012/01/30/chocolate-milk-action-speaks-louder-than-words/",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "成軍地：維基與事實庫研究稿寫 1974 年在紐奧良成立；derek's music blog 寫由 Amadee Castenell Jr. 在 Memphis 創團後遷往紐奧良。兩源不一致，facts 只寫 1974 年成軍，不寫成軍地。上線簡介寫「1974 年在紐奧良成立」，與 derek's blog 有出入，但有維基支持，未列入 pubIssues。",
+      "解散年與原因（1983 年、disco 退潮與人事更換）只見維基單源，不收。"
+    ],
+    "searches": 5,
+    "failedFetches": 1,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓的 Chocolate Milk 條目是巧克力牛奶這個飲品（帶 warn），整條作廢、改查樂團維基 Chocolate_Milk_(band)。身分照 poolAlbums 確認：卡池專輯《Chocolate Milk》1976，上線簡介為 RCA Victor、Sea-Saint 錄音、Toussaint 製作，與樂團維基一致（該專輯是樂團第二張，首張為 1975《Action Speaks Louder Than Words》），無同名混卡。補查 5 次：WebSearch 3（團史、取樣、成軍地）、WebFetch 2（樂團維基、derek's blog）；veritenews.org 403 未取得（不計入）。第二源 derek's blog 是個人唱片部落格，低風險事實可用；維基的「共同作品」與事實庫 bank 條目同為維基來源，非獨立。「參與 Paul McCartney 錄音」只見維基單源，標 single。soultracks.com 雲端被擋未開。"
+  },
+  {
+    "key": "chris kenner",
+    "name": "Chris Kenner",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chris Kenner 1929 年 12 月 25 日生於路易斯安那州的 Kenner 小鎮，少年時搬到新奧良，在碼頭做裝卸工；早年唱福音，曾與 Harmonising Four 福音團體同台。",
+            "src": "https://en.wikipedia.org/wiki/Chris_Kenner",
+            "src2": "https://waybackattack.com/kennerchris.html",
+            "from": "new"
+          },
+          {
+            "f": "他 1976 年過世，得年 46 歲。",
+            "src": "https://en.wikipedia.org/wiki/Chris_Kenner",
+            "src2": "https://musicrising.tulane.edu/discover/people/chris-kenner/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他在 Instant 廠牌與鋼琴手兼編曲者 Allen Toussaint 合作，Toussaint 在他的雙面單曲和之後許多唱片裡彈鋼琴。",
+            "src": "https://en.wikipedia.org/wiki/Chris_Kenner",
+            "src2": "https://waybackattack.com/kennerchris.html",
+            "from": "new"
+          },
+          {
+            "f": "傳記評價說，他不繞彎的說故事手法與新奧良傳統的製作方式配得恰到好處，但他身為詞曲作者的成就高過歌手。",
+            "src": "https://waybackattack.com/kennerchris.html",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Land of 1000 Dances〉改編自靈歌〈Children, Go Where I Send You〉；Cannibal & the Headhunters（1965）與 Wilson Pickett（1966）後來把它唱成更大的熱門曲。",
+            "src": "https://waybackattack.com/kennerchris.html",
+            "src2": "https://en.wikipedia.org/wiki/Chris_Kenner",
+            "from": "new"
+          },
+          {
+            "f": "他的歌被各路音樂人翻唱，翻唱者包括 Jerry Lee Lewis、Dave Clark Five、Wilson Pickett 與 J. Geils Band。",
+            "src": "https://musicrising.tulane.edu/discover/people/chris-kenner/",
+            "src2": "https://en.wikipedia.org/wiki/Chris_Kenner",
+            "from": "new"
+          },
+          {
+            "f": "杜蘭大學的 Music Rising 專頁稱他是新奧良音樂史上「最被低估的音樂人之一」，並說他生活散漫樂天，是新奧良音樂文化的典型人物。",
+            "src": "https://musicrising.tulane.edu/discover/people/chris-kenner/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈I Like It Like That〉是他最大的熱門曲，與 Allen Toussaint 合作，登上流行榜第 2 名。",
+            "src": "https://en.wikipedia.org/wiki/Chris_Kenner",
+            "src2": "https://waybackattack.com/kennerchris.html",
+            "from": "new"
+          },
+          {
+            "f": "1966 年 Atlantic 發行了他的專輯《Land of 1000 Dances》，這是維基列出的他唯一一張專輯。",
+            "src": "https://en.wikipedia.org/wiki/Chris_Kenner",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "〈I Like It Like That〉登上流行榜第 2 名。",
+        "src": "https://en.wikipedia.org/wiki/Chris_Kenner",
+        "src2": "https://waybackattack.com/kennerchris.html",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "過世日：維基與 wikidata 寫 1976 年 1 月 25 日，Music Rising 寫 1 月 29 日；只寫年份 1976。",
+      "〈I Like It Like That〉年份：維基寫 1961，waybackattack（AllMusic 傳記）寫 1960；facts 不寫年份。",
+      "維基另記 1968 年的刑事定罪與入獄，依規則不收；死因也不寫。"
+    ],
+    "searches": 3,
+    "failedFetches": 0,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓有 Chris Kenner 條目（含 wikidata 生卒）。身分照 poolAlbums 確認：卡池唯一專輯《Land of 1000 Dances》1966 Atlantic，與維基一致，無同名混卡。補查 3 次：WebSearch 1、WebFetch 2（Tulane Music Rising、waybackattack 轉載的 AllMusic 傳記）。waybackattack 頁面內容實為 AllMusic 傳記轉載，與維基為不同出版者。未收（單源）：Ini Kamoze 〈Here Comes the Hotstepper〉（1994）取用〈Land of 1000 Dances〉元素，使 Kenner 身後掛名一首冠軍曲（只見 waybackattack 單源）；〈I Like It Like That〉賣破百萬、金唱片與葛萊美入圍（維基單源）。上線簡介「1962 年寫下〈Land of 1000 Dances〉」「原始錄音以福音式清唱開場」本層沒找到來源可證實或推翻，未列 pubIssues。"
+  },
+  {
+    "key": "chuck jackson",
+    "name": "Chuck Jackson",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chuck Jackson 1937 年 7 月 22 日生於北卡羅來納州 Winston-Salem，童年在南卡羅來納州的 Latta 長大，13 歲搬到匹茲堡；2023 年 2 月 16 日過世，享年 85 歲。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Jackson",
+            "src2": "https://bestclassicbands.com/chuck-jackson-obituary-singer-2-20-23/",
+            "from": "new"
+          },
+          {
+            "f": "他由祖母帶大，從小浸在福音樂裡，6 歲第一次上廣播，11 歲已是詩班領唱，後來也在 Cleveland 的 Raspberry Gospel Singers 唱過。",
+            "src": "https://uk.news.yahoo.com/chuck-jackson-obituary-130918748.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他 1957 年加入混血人種的 doo-wop 團 The Del-Vikings，唱到 1959 年；離團後，Luther Dixon 在 Apollo 劇院看到他替 Jackie Wilson 開場，簽他進 Scepter 旗下的 Wand 廠牌。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Jackson",
+            "src2": "https://uk.news.yahoo.com/chuck-jackson-obituary-130918748.html",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "訃聞形容他的唱法帶著「內斂的男子氣概」與優雅，情感因為克制而更有力道。",
+            "src": "https://uk.news.yahoo.com/chuck-jackson-obituary-130918748.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Burt Bacharach 替他寫了好幾首代表作，標誌曲〈Any Day Now (My Wild Beautiful Bird)〉由 Bacharach 與 Bob Hilliard 合寫，1962 年登上 R&B 榜第 2 名，差一點擠進流行榜前 20 名（第 23 名）。",
+            "src": "https://bestclassicbands.com/chuck-jackson-obituary-singer-2-20-23/",
+            "src2": "https://uk.news.yahoo.com/chuck-jackson-obituary-130918748.html",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的歌後來被不同類型的音樂人翻唱：Ronnie Milsap 1982 年翻唱〈Any Day Now〉登上鄉村榜冠軍，David Bowie 與 Michael McDonald 都唱過〈I Keep Forgettin'〉。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Jackson",
+            "src2": "https://bestclassicbands.com/chuck-jackson-obituary-singer-2-20-23/",
+            "from": "new"
+          },
+          {
+            "f": "他早年被忽略的錄音經過再版，在北方靈魂（Northern Soul）圈、尤其是英國，找到一批死忠的靈魂樂迷。",
+            "src": "https://uk.news.yahoo.com/chuck-jackson-obituary-130918748.html",
+            "src2": "https://bestclassicbands.com/chuck-jackson-obituary-singer-2-20-23/",
+            "from": "new"
+          },
+          {
+            "f": "他 2015 年入選 Rhythm and Blues Music Hall of Fame（節奏藍調音樂名人堂）。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Jackson",
+            "src2": "https://bestclassicbands.com/chuck-jackson-obituary-singer-2-20-23/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1961 年的〈I Don't Want to Cry〉是他在 Wand 的第一支單曲與第一個上榜曲，與 Luther Dixon 合寫，登上 R&B 榜第 5 名。",
+            "src": "https://en.wikipedia.org/wiki/Chuck_Jackson",
+            "src2": "https://bestclassicbands.com/chuck-jackson-obituary-singer-2-20-23/",
+            "from": "new"
+          },
+          {
+            "f": "1962 年的〈I Keep Forgettin'〉由 Jerry Leiber 與 Mike Stoller 寫成，是他早期的熱門曲之一。",
+            "src": "https://bestclassicbands.com/chuck-jackson-obituary-singer-2-20-23/",
+            "src2": "https://en.wikipedia.org/wiki/Chuck_Jackson",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2015 年入選 Rhythm and Blues Music Hall of Fame。",
+        "src": "https://en.wikipedia.org/wiki/Chuck_Jackson",
+        "src2": "https://bestclassicbands.com/chuck-jackson-obituary-singer-2-20-23/",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基寫 Del-Vikings 團名為 The Del-Vikings，bestclassicbands 寫 Dell-Vikings；採 Del-Vikings（維基與 Yahoo 訃聞）。"
+    ],
+    "searches": 3,
+    "failedFetches": 2,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓有 Chuck Jackson 條目。身分照 poolAlbums 確認：卡池唯一專輯《Any Day Now》1962，與 R&B 歌手 Chuck Jackson 一致，無同名混卡。補查 3 次：WebSearch 1（訃聞）、WebFetch 2（bestclassicbands 訃聞、Yahoo UK 轉載的訃聞）；ebony.com 與 legacy.com 皆 403（不計入）。上線簡介「最早把 Bacharach 作品唱紅的歌手之一」只見維基單源（'one of the first artists to record material by Burt Bacharach and Hal David successfully'），屬「第一」類宣稱，依規則放 notes 不放 facts；1992 年 Rhythm and Blues Foundation Pioneer Award 與 2009 年 Carolina Beach Music Hall of Fame 獎項只見維基單源，未收。「流行榜第 23 名」由 bestclassicbands 明載，Yahoo 訃聞只說差一點進前 20，兩者相容。上線簡介「R&B 榜第 2、流行榜第 23」與來源一致。"
+  },
+  {
+    "key": "classixx",
+    "name": "Classixx",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Classixx 是洛杉磯的電子音樂製作與 DJ 雙人組，成員是 Michael David 與 Tyler Blake；兩人從小就認識，真正變成好友是開始一起做音樂之後，常在其中一人家裡一起聽唱片。",
+            "src": "https://magneticmag.com/2019/03/interview-classixx-origins-bridging-creative-differences-creating-live-show/",
+            "src2": "https://en.wikipedia.org/wiki/Classixx",
+            "from": "new"
+          },
+          {
+            "f": "David 早年在樂團彈吉他，Blake 念過 Berklee 但中途離開，之後兩人組成 Classixx。",
+            "src": "https://en.wikipedia.org/wiki/Classixx",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "聲音是 disco、new wave、放克、house 與 indie rock 的滑順混合，被稱作「new wave disco」；兩人說靈感來自芝加哥、紐約、底特律的舞曲傳統。",
+            "src": "https://en.wikipedia.org/wiki/Classixx",
+            "src2": "https://www.grammy.com/news/classixxs-michael-david-talks-playing-corona-capital-guadalajara-and-what-makes-great/",
+            "from": "new"
+          },
+          {
+            "f": "首張專輯《Hanging Gardens》主要在兩人位於 Venice Beach 的錄音室錄成，風格是 French house、nu-disco、synth-pop，也帶芝加哥 house 與 R&B 的成分；點名的影響包括 Daft Punk、Fred Falke、Giorgio Moroder 與 New Order。",
+            "src": "https://en.wikipedia.org/wiki/Hanging_Gardens_(Classixx_album)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "兩人把彼此的分歧看成品質控管：一個人先做出想法再拿給另一個聽，有一方不認同的曲子就擱置，累積了不少未發表的作品。",
+            "src": "https://magneticmag.com/2019/03/interview-classixx-origins-bridging-creative-differences-creating-live-show/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們為 Phoenix 的〈Lisztomania〉做的混音讓他們受到注意；維基引 Pitchfork 說這給了原曲「一個蓬鬆柔軟的 synth-disco 框架」，引《Los Angeles Times》說它是「純粹的 disco 棉花糖」。",
+            "src": "https://en.wikipedia.org/wiki/Classixx",
+            "src2": "https://lede-v2.stereogum.com/66641/classixx_remix_phoenix/music",
+            "from": "new"
+          },
+          {
+            "f": "維基引 Chicagoist 的說法：Classixx 的混音成為世界各地 DJ 選曲的常備。他們混過的對象還包括 Mayer Hawthorne、Holy Ghost、Ladyhawke、Fischerspooner 與 Groove Armada。",
+            "src": "https://en.wikipedia.org/wiki/Classixx",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "成立年：維基寫 2005 年前後兩人結伴，wikidata 寫 2008，Magnetic 訪談寫 2007 至 2008 年正式開始；三者不一致，facts 不寫成立年。"
+    ],
+    "searches": 6,
+    "failedFetches": 0,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓有 Classixx 條目；卡池唯一專輯《Hanging Gardens》2013 與維基一致，洛杉磯電子雙人組，無同名混卡。補查 6 次：WebSearch 2（訪談、Lisztomania 混音評價）、WebFetch 4（Magnetic 訪談、Hanging Gardens 維基、grammy.com 訪談、Stereogum 混音文）。legacy 格素材偏薄：沒有後輩點名或權威票選，只有混音評價與 DJ 圈說法，且 Pitchfork／LA Times／Chicagoist 的話都是經維基轉述，Stereogum 文章只確認混音存在與風格（稱其為「chill discothèque LA DJ duo」，並評這版不及原曲），未獨立證實那兩句形容；寫作層若要用，請寫成「維基引…」並節制。《Hanging Gardens》登年終榜（Rolling Stone、Billboard 等）與 Pitchfork Best New Track，屬雜誌榜單與在世者榮譽，依規則未收。第二張專輯《Faraway Reach》（2016）細節未查。"
+  },
+  {
+    "key": "corinne bailey rae",
+    "name": "Corinne Bailey Rae",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Corinne Bailey Rae 1979 年 2 月 26 日生於英格蘭利茲，是三姊妹中的老大；父親來自聖基茨與尼維斯，母親是英國人。",
+            "src": "https://en.wikipedia.org/wiki/Corinne_Bailey_Rae",
+            "src2": "https://www.songfacts.com/facts/corinne-bailey-rae",
+            "from": "new"
+          },
+          {
+            "f": "她在學校學古典小提琴，後來轉向唱歌；最早的歌唱經驗在 Plymouth Brethren 教會，之後轉到浸信會教會，那裡的青年團自己寫敬拜歌，也翻唱 Primal Scream。",
+            "src": "https://en.wikipedia.org/wiki/Corinne_Bailey_Rae",
+            "src2": "https://www.songfacts.com/facts/corinne-bailey-rae",
+            "from": "new"
+          },
+          {
+            "f": "十幾歲時她迷上搖滾，聽 Jimi Hendrix 與 Led Zeppelin，15 歲組了全女子的 indie 樂團 Helen，在利茲小有人氣。",
+            "src": "https://www.songfacts.com/facts/corinne-bailey-rae",
+            "src2": "https://www.udiscovermusic.com/artist/corinne-bailey-rae/",
+            "from": "new"
+          },
+          {
+            "f": "她在利茲大學念英語文學，在一家爵士俱樂部打工，爵士與靈魂樂的品味從這段時間養成。",
+            "src": "https://en.wikipedia.org/wiki/Corinne_Bailey_Rae",
+            "src2": "https://www.udiscovermusic.com/artist/corinne-bailey-rae/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她的路數是把早年的 indie 與搖滾底子，和在爵士俱樂部養成的爵士、靈魂樂品味揉在一起；uDiscover 把她的風格稱為「silky smooth brand of R&B」。",
+            "src": "https://www.udiscovermusic.com/artist/corinne-bailey-rae/",
+            "src2": "https://www.songfacts.com/facts/corinne-bailey-rae",
+            "from": "new"
+          },
+          {
+            "f": "談到嗓音，她說 Björk 與 Martina Topley Bird 讓她明白，聲音有各式各樣的表達方式。",
+            "src": "https://www.songfacts.com/facts/corinne-bailey-rae",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她 2006 年 2 月發行的自名首張專輯在英國專輯榜初登場即登上第 1 名（必要例外：核心成績），〈Put Your Records On〉是她最廣為人知的單曲。",
+            "src": "https://en.wikipedia.org/wiki/Corinne_Bailey_Rae",
+            "src2": "https://www.udiscovermusic.com/artist/corinne-bailey-rae/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2006 年自名首張專輯在英國初登場即登上專輯榜第 1 名。",
+        "src": "https://en.wikipedia.org/wiki/Corinne_Bailey_Rae",
+        "src2": "https://www.songfacts.com/facts/corinne-bailey-rae",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基與 uDiscover 對父親背景的寫法不同（聖基茨與尼維斯 vs 西印度），採較具體的聖基茨與尼維斯（維基與 Songfacts）。"
+    ],
+    "searches": 7,
+    "failedFetches": 2,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓有條目但帶 warn（頁面未提到卡池專輯）。已對 poolAlbums 確認：卡池唯一專輯《Corinne Bailey Rae》2006，與維基「2006 年 2 月發行的首張專輯 Corinne Bailey Rae」一致，是英國靈魂歌手，無同名混卡，warn 解除。補查 7 次：WebSearch 4（生平與教會、BBC Sound of 2006、Grammy 紀錄，另有 1 次因 domain 限制報 API 400，不計）、WebFetch 3（Songfacts、uDiscover、grammy.com 藝人頁）；afrotoronto 無內容與 britannica 404 兩次失敗未計入。依規則不收：丈夫的過世與死因（個人悲劇與死因）；在世者的獎項數、銷量（維基與 uDiscover 的「超過 400 萬張」）。獎項處理：2012 年葛萊美最佳 R&B 表演（〈Is This Love〉）得獎，維基與 grammy.com 兩源一致，但本層把唯一一處必要例外留給首張專輯登頂，這項留在 notes 供主線取捨；2008 年葛萊美年度專輯是 Herbie Hancock 的《River: The Joni Letters》，grammy.com 頁面把獎項列在 Hancock 名下、她是參與者，主詞要寫對，不可寫成她得年度專輯（維基寫法是「以客座藝人身分」）。BBC Sound of 2006 預測榜第 1 名只見維基單源（搜尋摘要同為維基系），名次屬高風險，未收進 facts。uDiscover 稱她為「英國最偉大的當代靈魂歌手」屬廠牌系媒體的推廣語氣，未收。"
+  },
+  {
+    "key": "crown heights affair",
+    "name": "Crown Heights Affair",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Crown Heights Affair 1967 年成軍於紐約布魯克林，最初叫 Nue Dey Express（New Day Express），後來取布魯克林的 Crown Heights 社區為團名。",
+            "src": "https://en.wikipedia.org/wiki/Crown_Heights_Affair",
+            "src2": "https://nts.live/artists/2665-crown-heights-affair",
+            "from": "new"
+          },
+          {
+            "f": "創團陣容有主唱 Philip Thomas、吉他手 William \"Bubba\" Anderson、貝斯手 Arnold \"Muki\" Wilson、鼓手 Raymond \"Sugar Ray\" Rock，之後加入銅管組。",
+            "src": "https://nts.live/artists/2665-crown-heights-affair",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們是一支放克／R&B／disco 團，AllMusic 傳記說他們銜接了放克與 disco 之間的縫隙，製作精細的程度被拿來和 Earth, Wind & Fire、Kool & the Gang 相比。",
+            "src": "https://nts.live/artists/2665-crown-heights-affair",
+            "src2": "https://en.wikipedia.org/wiki/Crown_Heights_Affair",
+            "from": "new"
+          },
+          {
+            "f": "1975 年的〈Dreaming a Dream〉登上 Billboard Hot Dance Club Play 冠軍，也進入 R&B 榜前五與流行榜前 50 名。",
+            "src": "https://en.wikipedia.org/wiki/Crown_Heights_Affair",
+            "src2": "https://nts.live/artists/2665-crown-heights-affair",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "團的老錄音後來被嘻哈與 R&B 的製作人取樣，AllMusic 傳記說「當年的 Crown Heights Affair 律動出現在後來的嘻哈與 R&B 唱片上」。",
+            "src": "https://nts.live/artists/2665-crown-heights-affair",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他們在英國也有舞池熱門曲：〈Galaxy of Love〉1978 年進入英國前 40 名，〈You Gave Me Love〉1980 年登上英國第 10 名。",
+            "src": "https://en.wikipedia.org/wiki/Crown_Heights_Affair",
+            "src2": "https://nts.live/artists/2665-crown-heights-affair",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1980 年代他們轉任製作人，替 Prelude 廠牌的 France Joli 製作〈Gonna Get Over You〉，並在 1981 年替 Amii Stewart 製作兩首歌。",
+            "src": "https://en.wikipedia.org/wiki/Crown_Heights_Affair",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "〈Dreaming a Dream〉1975 年登上 Billboard Hot Dance Club Play 冠軍。",
+        "src": "https://en.wikipedia.org/wiki/Crown_Heights_Affair",
+        "src2": "https://nts.live/artists/2665-crown-heights-affair",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "解散年：維基寫 1984 年，AllMusic 傳記（NTS 轉載）寫 1983 年專輯《Struck Gold》後解散；兩源不一致，facts 不寫解散年。",
+      "成軍陣容：維基列的樂手名單（含 Howard Young、Bert Reid 等）與 AllMusic 傳記的創團名單（含 Stan Johnson）不同，是不同時期的陣容；facts 只收 AllMusic 的創團陣容，維基陣容不收。"
+    ],
+    "searches": 4,
+    "failedFetches": 1,
+    "pubIssues": [],
+    "status": "full",
+    "notes": "維基預抓有 Crown Heights Affair 條目。身分照 poolAlbums 確認：卡池唯一專輯《Dreaming a Dream》1975，與維基「1975 年轉到 De-Lite」一致，無同名混卡。補查 4 次：WebSearch 2、WebFetch 2（last.fm 與 NTS 兩頁內容相同，實為同一份 AllMusic 傳記轉載，視為一個來源）；groovespin.it 回傳空內容（失敗，不計入）。NTS 與 last.fm 都是同一篇 AllMusic 傳記，因此「來源 2」實質上是維基加 AllMusic 傳記兩家；legacy 的嘻哈取樣只見 AllMusic 傳記單源，標 single，未能查到具體被取樣的曲目。〈Dreaming a Dream〉榜位：維基寫 Hot Dance Club Play 冠軍與 Hot 100 第 43 名，AllMusic 傳記寫「R&B 前五、流行榜前 50」，兩者相容；上線簡介的 Disco File Top 20 冠軍與兩源的榜名不同，本層沒找到 Disco File 的來源，未列 pubIssues。soultracks.com 雲端被擋未開。"
+  }
+]

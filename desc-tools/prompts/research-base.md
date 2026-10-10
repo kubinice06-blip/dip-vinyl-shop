@@ -13,7 +13,7 @@
 
 1. **工作目錄與 git**：雲端沒有 `C:\Users\User\...` 那個路徑，**產出直接寫進 repo**
    （`desc-tools/batches/research/<批>-<組>.json`）。⚠ **但「不動 `PROJECT_MEMORY.md`」照舊有效**，
-   而且雲端另有 `REMOTE_RUNBOOK.md` 的禁碰清單（`seed_cards.json`／`apex_pool.json`／KV／Firestore）。
+   而且 `seed_cards.json`／KV／Firestore 只有主線能寫，代理不碰（`REMOTE_RUNBOOK.md` 硬規則第 5 條）。
    **代理一律不 `git commit`、不 `git push`，由主線統一提交。**
 
 2. ⚠ ⚠ **「每張最多 2 次 WebSearch、2 個來源，查到主故事就停」在雲端線作廢，改成「每張 8–12 條 `facts`、每條附完整 https `src`」。**

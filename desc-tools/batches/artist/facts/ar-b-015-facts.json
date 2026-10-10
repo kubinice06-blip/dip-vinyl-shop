@@ -1,0 +1,3512 @@
+[
+ {
+  "key": "obituary",
+  "name": "Obituary",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   2014
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Cause of Death",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Frozen in Time",
+    "year": 2005,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Inked in Blood",
+    "year": 2014,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "omega",
+  "name": "Omega",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1969,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "10000 lépés",
+    "year": 1969,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Éjszakai országút",
+    "year": 1970,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gammapolis",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c56-a",
+    "album": "Éjszakai országút",
+    "facts": [
+     {
+      "f": "這是 Presser Gábor 與 Laux József 離團前錄的最後一張 Omega 大碟；兩人 1971 年組了 Locomotiv GT，Omega 的鼓手改由 Debreczeni Ferenc 擔任。",
+      "src": "https://hu.wikipedia.org/wiki/%C3%89jszakai_orsz%C3%A1g%C3%BAt"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c56-a",
+    "album": "Gammapolis",
+    "facts": [
+     {
+      "f": "標題曲裡的年數被改過三次：先做好的英文版唱「Now it's more than thirty-five long years」（35 是 Kóbor János 1978 年錄音時的年紀），匈牙利版原想用團員的平均年齡「33 év」，但審查認為 1978 減 33 等於 1945（解放年）有政治意味，專輯版於是改成 23；唱片隔年才發行，1979 減 23 等於 1956，匈牙利廣播電台因此不肯播這首歌，只好再做一個唱 29 的版本。演出時一直唱 23，1994 年起才改回原本想用的 33。",
+      "src": "https://hu.wikipedia.org/wiki/Gammapolis"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "10000 lépés",
+    "manifest": "onboarding-manifest-c56-20260903.json",
+    "desc": "本國的唱片公司不能接受一支匈牙利樂團先在西方出大碟。1968 年樂團受 Spencer Davis Group 的經紀人之邀到英國巡演，被冠上 Omega Red Star 的名字並錄了英文專輯；同年再度赴英時巡演被迫中斷、第二張錄不成，原因是國內的唱片製造公司得知了錄音的事。這張 1969 年的第二張匈牙利語大碟被視為樂團 beat 時期的頂點：管風琴與吉他並重，長篇與 beat 體例並存，〈Gyöngyhajú lány〉是被翻唱最多次的匈牙利歌曲。",
+    "sourceUrls": [
+     "https://hu.wikipedia.org/wiki/10000_l%C3%A9p%C3%A9s",
+     "https://hu.wikipedia.org/wiki/Omega_%28egy%C3%BCttes%29",
+     "https://musicbrainz.org/release-group/40bb33d4-0def-3faf-ba17-c94cbee5b246"
+    ]
+   },
+   {
+    "album": "Éjszakai országút",
+    "manifest": "onboarding-manifest-c56-20260903.json",
+    "desc": "倒數第二軌其實是錄音休息時間的腳步、呵欠與樂器碰撞聲。那一軌叫〈Egy kis pihenő〉。這張 1970 年的第三張匈牙利語大碟更成熟、更硬，有時接近前衛搖滾，管風琴與吉他推得更前，長笛與大提琴撐起中段；當時的評價卻分歧，因為沒有暢銷曲，不少人並不覺得它好，常見的說法是它出得離前作太近，Presser Gábor 自評音樂上有進展但衝勁減弱。這是他與 Laux József 錄的最後一張 Omega 大碟，兩人隔年組了 Locomotiv GT。",
+    "sourceUrls": [
+     "https://hu.wikipedia.org/wiki/%C3%89jszakai_orsz%C3%A1g%C3%BAt",
+     "https://hu.wikipedia.org/wiki/Omega_%28egy%C3%BCttes%29",
+     "https://musicbrainz.org/release-group/3280b144-8a1a-32f3-89fe-8b31206d9c8f"
+    ]
+   },
+   {
+    "album": "Gammapolis",
+    "manifest": "onboarding-manifest-c56-20260903.json",
+    "desc": "1978 減 33 等於 1945，審查因此要求換掉歌詞裡的年數。標題曲的年數改了三次：英文版唱三十五，匈牙利版原想用平均年齡三十三，專輯版改成二十三；唱片隔年才發行，1979 減 23 等於 1956，電台因此不肯播，只好再做一個唱二十九的版本。全碟作詞掛 Várszegi Gábor，團方後來承認歌詞其實是 Bródy János 寫的，著作權已賣出，掛名維持原樣。這是太空搖滾三部曲的收尾，原盤出自西德 Bacillus Records，匈牙利賣了 65 萬張。",
+    "sourceUrls": [
+     "https://hu.wikipedia.org/wiki/Gammapolis",
+     "https://musicbrainz.org/release-group/d3e855fb-d33d-364b-a870-9bdfee83aefd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "outer limits",
+  "name": "Outer Limits",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Misty Moon",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Boy Playing the Magical Bugle Horn",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Scene of Pale Blue",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 28,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c73-a",
+    "album": "Misty Moon",
+    "facts": [
+     {
+      "f": "Discogs 的廠牌條目寫 Made In Japan Records 是「Japanese contemporary progressive rock label established in 1981, operated by Numero Ueno」，母廠列為 Edison (3)。",
+      "src": "https://www.discogs.com/label/116341"
+     },
+     {
+      "f": "同一份廠牌目錄的編號序列顯示：MIJ-1001 是 1981 年 Outer Limits 與 Kanzeon 合輯《Made In Japan》，MIJ-1002 與 MIJ-1003 是 1984 年的 7 吋，**MIJ-1004 就是本作**；其後 1986 年接連出了 MIJ-1005（Pageant）、MIJ-1007（Ataraxia）、MIJ-1009（Outer Limits）、MIJ-1011（夢幻）。",
+      "src": "https://www.discogs.com/label/116341"
+     },
+     {
+      "f": "同一家廠牌在 1985 年另出過一張編號 MIJ-PRO•1004 的單面 7 吋 flexi 宣傳片，曲名〈Spanish Labyrinth〉。",
+      "src": "https://www.discogs.com/label/116341"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c73-a",
+    "album": "A Boy Playing the Magical Bugle Horn",
+    "facts": [
+     {
+      "f": "原盤 credit 把「Original Story」掛給鼓手桜井信行；他同時是 B2、B3、B5 的作詞者之一。",
+      "src": "https://www.discogs.com/release/3222105"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Misty Moon",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "Made In Japan Records 一九八一年開張，由 Numero Ueno 經營。編號序列從 MIJ-1001 那張同名合輯起算，MIJ-1004 就是這張碟，一九八六年又接連出了 1005、1007、1009 與 1011。本作一九八五年十月十五日發行，全碟只有四軌，其中一首就叫〈Misty Moon〉。四人 credit 裡塚本周成扛下全碟作曲編曲與一長串合成器；鼓與打擊由客座擔任，那一欄註明「Appearance From Ataraxia」。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3521967",
+     "https://www.discogs.com/label/116341",
+     "https://www.discogs.com/master/444479",
+     "https://music.apple.com/jp/album/811511233",
+     "https://musicbrainz.org/release-group/b706f140-d86f-36c6-80da-de896833ef29"
+    ]
+   },
+   {
+    "album": "A Boy Playing the Magical Bugle Horn",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "唱片的原著故事掛在鼓手名下。桜井信行的 credit 上除了鼓，還有一欄 Original Story，他同時是其中三首的作詞者之一。唱片裝在一個多摺頁的封套裡，往外攤開會露出第二層正面美術與整張碟的故事線。錄音是一九八六年八月的 Euphonic Studio。碟上有兩個人同時操作 Emulator II 取樣器，客座名單裡另有大提琴、低音提琴、中提琴與第二小提琴。八軌的長度差得很開，最短的一首四十秒，末曲〈Beyond Good And Evil〉十分二十八秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3222105",
+     "https://music.apple.com/jp/album/1726146462",
+     "https://www.discogs.com/master/600319",
+     "https://musicbrainz.org/release-group/910bd16a-2e7a-3d1f-b8f9-54c6e660108e"
+    ]
+   },
+   {
+    "album": "The Scene of Pale Blue",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "B 面只登錄一首歌，二十分三十秒，整面就這一首。A 面則排了三首，五分三十九秒、七分三十秒、十二分九秒。原盤是 MIJ-1012，全碟錄於東京的 Euphonic Studio，時間是一九八七年二月到三月，只有「Introduction of B side」那一段錄在別處。六人編制裡小提琴與鍵盤並列，另有三人掛合音；錄音工程是 Motoji Irasawa 與鍵盤手兩人，作詞掛 Aya Sudou，執行製作掛 Numero Ueno，作曲欄則掛樂團全體。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3521959",
+     "https://www.discogs.com/master/442296",
+     "https://www.discogs.com/release/3648116",
+     "https://itunes.apple.com/lookup?id=811178933&entity=song&country=jp",
+     "https://musicbrainz.org/release-group/dfdd2645-2362-3241-9f1b-33de15c56a02",
+     "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A6%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%AA%E3%83%9F%E3%83%83%E3%83%84_(%E3%83%90%E3%83%B3%E3%83%89)"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ozzy osbourne",
+  "name": "Ozzy Osbourne",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1991
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Diary of a Madman",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Blizzard of Ozz",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "No More Tears",
+    "year": 1991,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c51c-d",
+    "album": "No More Tears",
+    "facts": [
+     {
+      "f": "吉他手 Zakk Wylde 與 Osbourne 共同包辦本作的詞曲創作。",
+      "src": "https://en.wikipedia.org/wiki/No_More_Tears"
+     },
+     {
+      "f": "〈I Don't Want to Change the World〉首度收錄於本作；這首歌後來以 1993 年現場專輯《Live & Loud》裡的現場版本，在第 36 屆葛萊美獎拿下最佳金屬演出獎，是 Osbourne 生涯第一座葛萊美。",
+      "src": "https://en.wikipedia.org/wiki/I_Don%27t_Want_to_Change_the_World"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Diary of a Madman",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1981 年在英格蘭 Rusper 的 Ridge Farm 錄成，同年 10 月由 Jet 發行，是 Randy Rhoads 生前最後一張錄音室作——1982 年 3 月 19 日巡演途中，他在佛州 Leesburg 的空難身故。內頁掛名的是 Rudy Sarzo 與 Tommy Aldridge，實際彈貝斯與打鼓的卻是 Bob Daisley 與 Lee Kerslake，兩人錄完即遭解雇、演奏與作曲掛名皆無。2002 年再版把貝斯與鼓全部重錄，2011 年三十週年版才把原始演奏放回去。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Diary_of_a_Madman_(album)",
+     "https://musicbrainz.org/release-group/5e8dc90d-610e-3d85-8884-a1449d74e6cc"
+    ]
+   },
+   {
+    "album": "No More Tears",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "Lemmy 寫來六首歌詞，最後有四首留了下來。交稿的是 Motörhead 的 Lemmy Kilmister，其餘詞曲由吉他手 Zakk Wylde 與 Osbourne 共同包辦。唱片 1991 年 9 月由 Epic 發行，最高排上 Billboard 200 第 7 名。〈I Don't Want to Change the World〉首度收錄於此，這首歌後來以 1993 年《Live & Loud》裡的現場版本拿下第 36 屆葛萊美最佳金屬演出獎，是他生涯第一座。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/No_More_Tears",
+     "https://en.wikipedia.org/wiki/I_Don%27t_Want_to_Change_the_World",
+     "https://musicbrainz.org/release-group/1df6ebdf-8d54-31a6-9bf8-13737493f386"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pageant",
+  "name": "Pageant",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1986,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "La Mosaïque de la Rêverie",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Abysmal Masquerade",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Pay For Dreamer's Sin",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 27,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c73-b",
+    "album": "The Pay For Dreamer's Sin",
+    "facts": [
+     {
+      "f": "同一頁的商品說明寫「新星ページェント誕生!!待望の2nd完成!!」，並說這是一張在既有 prog 框架之外大膽加入 pop 要素的作品——King Records 自己的目錄把本作稱作第 2 張。",
+      "src": "https://kings-rock.jp/release/kics-3621"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "La Mosaïque de la Rêverie",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "Musea 的內頁把錄音時數寫了出來：一百二十小時。地點是大阪的 JAM Studios，從一九八五年十二月開始。原盤是 Made In Japan Records 的 MIJ-1005，一九八六年出。碟上五人分掛人聲兼鍵盤、人聲兼電木吉他、長笛與木吉他、貝斯與鼓，詞曲由永井博子與中嶋一晃兩位主唱分擔。六個曲名全是法文，六首最短的也有四分二十八秒，其中三首超過八分鐘，最長的〈Rires Dans La Nuit〉九分八秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3521991",
+     "https://www.discogs.com/release/5974710",
+     "https://www.discogs.com/release/5215977",
+     "https://www.discogs.com/master/611688",
+     "https://music.apple.com/jp/album/811917960",
+     "https://musicbrainz.org/release-group/a138aeeb-9a24-4739-9cf5-2dc3c32b657e"
+    ]
+   },
+   {
+    "album": "Abysmal Masquerade",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "插頁自己講明白：A 面是重唱重混，B 面是現場。原盤的格式欄還標著 Limited Edition，編號 MIJ-1015。六首裡 A 面最長的〈Vexation〉七分四十四秒，B 面那三首則各自標著 Live。黑膠沒登的 credit 要到一九九四年的 CD 才補上：主唱兼鍵盤的 Hiroko Nagai 包辦全部作詞，作曲由她與吉他手分擔；註記寫錄音與混音都在一九八七年的大阪，Studio Jam 與 LM Studio 兩處。那一版把曲目擴成了九首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3522008",
+     "https://www.discogs.com/release/3322984",
+     "https://www.discogs.com/master/425325",
+     "https://www.discogs.com/release/4894995",
+     "https://itunes.apple.com/lookup?id=813134902&entity=song&country=jp",
+     "https://musicbrainz.org/release-group/e1fc8d08-03fe-4494-a5e1-39b22610651a"
+    ]
+   },
+   {
+    "album": "The Pay For Dreamer's Sin",
+    "manifest": "onboarding-manifest-c73-20260904.json",
+    "desc": "吹長笛的人，Discogs 把他列進了這個團的成員欄。他在這張碟上只掛第二與第四軌，而資料庫的藝人條目把他登成鍵盤手兼長笛手，Groups 欄裡列著的正是這個團本身。原盤是一九八九年四月二十一日的黑膠 NAS 1408，同一天另出 CD；King Records 的商品說明把它說成一張在既有 prog 框架之外大膽加入 pop 要素的作品。曲目表上還有一處：第五首〈\"A Forget-Me-Not\"〉連前後那對引號一起印了上去。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5819341",
+     "https://www.discogs.com/release/7301609",
+     "https://www.discogs.com/artist/1411775",
+     "https://kings-rock.jp/release/kics-3621",
+     "https://www.discogs.com/master/644735",
+     "https://musicbrainz.org/release-group/c6126299-c1e2-4328-9ea1-37d99b9364ef",
+     "https://itunes.apple.com/lookup?id=1713474475&entity=song&country=jp"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paradise lost",
+  "name": "Paradise Lost",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Gothic",
+    "year": 1991,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Lost Paradise",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Obsidian",
+    "year": 2020,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "parannoul",
+  "name": "Parannoul",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2020,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "To See the Next Part of the Dream",
+    "year": 2021,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Let's Walk on the Path of a Blue Cat",
+    "year": 2020,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "After the Magic",
+    "year": 2023,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c105-b",
+    "album": "Let's Walk on the Path of a Blue Cat",
+    "facts": [
+     {
+      "f": "Apple Music **us** 店面 collectionId 1582156261：collectionName「Let's Walk on the Path of a Blue Cat」（**直撇號**）、artistName「Parannoul」、releaseDate **2021-08-23**、copyright「℗ 2021 Parannoul, under license to POCLANOS」、trackCount 10。`entity=song` **攤得出 10 軌、10 軌全部有 previewUrl**，`trackCount` 欄與曲目列一致，曲序與 MB 逐位置相符，**十軌的長度與 MB 完全相同、誤差 0 毫秒**（是本組除 Crying Nut 出道盤外唯一一張逐軌零誤差的碟）。諺文曲名換成英譯（Today's Sky is Clear／Dream Hallucination／Meaning of Change／Alone in the Forest／Meaning of Disappear），英文原題五軌維持原樣。",
+      "src": "https://itunes.apple.com/lookup?id=1582156261&country=us&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c105-b",
+    "album": "After the Magic",
+    "facts": [
+     {
+      "f": "英文維基〈After the Magic〉專條：這是韓國 shoegaze 音樂人 Parannoul 的 **third studio album**，**released on January 28, 2023, through Topshelf Records, making it his first album not to be self-released**。專輯之前先發了兩首單曲：〈Insomnia〉2022 年 11 月 9 日、〈We Shine at Night〉2023 年 1 月 11 日。Parannoul 形容這張碟是「not what you expected, but what I always wanted」，並說靈感來自做完前作《To See the Next Part of the Dream》之後做的那些夢。",
+      "src": "https://en.wikipedia.org/wiki/After_the_Magic"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Let's Walk on the Path of a Blue Cat",
+    "manifest": "onboarding-manifest-c105-20260910.json",
+    "desc": "十軌裡有兩軌不到兩分鐘，曲名剛好是一對。第 4 軌〈변해가는 의미〉2 分 00 秒與第 9 軌〈사라지는 의미〉1 分 19 秒，一個是變化中的意義、一個是消失的意義，分別把整張碟切成三段。其餘八軌全在 4 分 40 秒以上、四軌破六分半，最長的〈Reincarnation〉7 分 23 秒，全碟 52 分 44 秒。曲名諺文與英文恰好各半。這張碟 2020 年首發時經由 Bandcamp 自主發行，後來的通路版才掛上 POCLANOS 這樣的廠牌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/460e9cc3-c9e2-4cac-a3ba-4885f4da81aa?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=460e9cc3-c9e2-4cac-a3ba-4885f4da81aa&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1582156261&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Parannoul",
+     "https://musicbrainz.org/ws/2/release-group?artist=7d517c2e-ea8a-4401-935b-42f9343630c7&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1563356118&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/460e9cc3-c9e2-4cac-a3ba-4885f4da81aa"
+    ]
+   },
+   {
+    "album": "After the Magic",
+    "manifest": "onboarding-manifest-c105-20260910.json",
+    "desc": "這是他頭一張交給廠牌發行的碟，掛在 Topshelf Records 底下。韓國卡帶、美國 CD 與美國雙片黑膠三種實體都寫著這個名字、目錄號同為 TSR262。十軌 59 分 06 秒，全部在 4 分 22 秒以上，〈Arrival〉7 分 44 秒與〈Parade〉7 分 34 秒等三軌破七分，沒有任何短接軌，與前作夾了兩首短曲的形制正好相反；黑膠那一版多收一首〈Your Place〉、共十一軌。他說靈感來自做完前作之後做的夢。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5d005c69-b6c5-41eb-ad1c-b22fa01ab707?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5d005c69-b6c5-41eb-ad1c-b22fa01ab707&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1668278693&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/After_the_Magic",
+     "https://musicbrainz.org/ws/2/release-group?artist=7d517c2e-ea8a-4401-935b-42f9343630c7&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1563356118&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/5d005c69-b6c5-41eb-ad1c-b22fa01ab707"
+    ]
+   },
+   {
+    "album": "To See the Next Part of the Dream",
+    "manifest": "onboarding-manifest-c43-korea-20260823.json",
+    "desc": "파란노을（Parannoul）是首爾一位匿名獨立音樂人，2021 年 2 月 23 日自行發行的第二張專輯全在自己房間完成，器樂幾乎都用軟體音源，多數曲目音量推到破音（clipping）邊緣。厚牆般的吉他噪音底下埋著 emo 式旋律與韓語自白，〈흰천장〉一曲長達十分鐘。Pitchfork 給 8.0 分並選入年度最佳搖滾專輯，Longinus Recordings 隨後發行實體版。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/To_See_the_Next_Part_of_the_Dream",
+     "https://ko.wikipedia.org/wiki/파란노을",
+     "https://musicbrainz.org/release-group/74769203-cd8e-409b-912e-f1ec476dd716"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "peter hammill",
+  "name": "Peter Hammill",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Patience",
+    "year": 1983,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Black Box",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Loops & Reels",
+    "year": 1983,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 20,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c80-a",
+    "album": "A Black Box",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 580889）記：1980 年英國發行，廠牌 **S-Type Records**、編號 **PHS 1**，形制 Vinyl／LP／Album／Stereo；A 面是七首歌，B 面整面只有一首〈Flight〉。",
+      "src": "https://www.discogs.com/release/580889"
+     },
+     {
+      "f": "英文維基記本作是 Hammill 的第九張錄音室專輯，1980 年 8 月由 S-Type Records 發行；「Hammill performed nearly all the instrumentation himself, including the drum parts」；A 面是一組歌，B 面整面給了〈Flight〉這首多段式的長曲——**那是 Hammill 第一次把這種長度的曲子放進個人專輯**。（該頁只有兩條引註，這幾句本身沒有行內引註。）",
+      "src": "https://en.wikipedia.org/wiki/A_Black_Box"
+     },
+     {
+      "f": "同一個 master 上有**四筆明標 Unofficial Release**：1998 年俄羅斯 Agat Company Ltd. 的 0136、2000 年掛「Not On Label (Peter Hammill)」的 PHCD 1980、2007 年掛「Virgin (2)」的 VJCP-68799、以及一筆掛「Charisma」的 PHSCDR 1——後兩筆都是沿用正版編號、換一個廠牌實體的形狀。",
+      "src": "https://www.discogs.com/master/33999"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c80-a",
+    "album": "Loops & Reels",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 1500314）記：1983 年英國發行，廠牌 **Sofa Sound**、編號 **SS4**——而形制是 **Cassette／Album**，規格欄另註「C45, Dolby B」。**這張碟的原始載體是一捲卡帶，不是黑膠**；那一版的盤名印的是《Loops And Reels》。",
+      "src": "https://www.discogs.com/release/1500314"
+     },
+     {
+      "f": "同一條目逐首交代了三首曲子的來歷：「'My Pulse' was the music for a ballet choreographed by Nicolas Dixon and performed at the Riverside Theatre.」；「'In Slow Time' was the backing track for a dance/vocal performance, also choreographed by Nicolas, presented at the Jeanette Cochran Theatre and on BBC TV's 'Riverside'.」；「'A Ritual Mask' first appeared on 'Music And Rhythm', the WOMAD benefit album.」——**七首裡有三首本來是為別的用途做的。**",
+      "src": "https://www.discogs.com/release/1500314"
+     },
+     {
+      "f": "Sofa Sound 這個 Discogs 廠牌實體（編號 127789）的簡介只有一句：「Home recording studio of [Peter Hammill]. Formerly in Surrey then moved to Wiltshire.」——**Sofa Sound 是他自己家裡的錄音室**，先在 Surrey、後來搬到 Wiltshire。",
+      "src": "https://www.discogs.com/label/127789"
+     },
+     {
+      "f": "Discogs master 34144 底下七個版本：1983 年 Sofa Sound 的 SS4 卡帶；Fie! Records 的 FIE 9105（1993 年 CD 與 2010 年 FLAC 重製）**把盤名改成《Loops & Reels (Analogue Experiments 1980-1983)》**，另有兩筆 Fie! 的再壓；一筆沒有年份、掛「Not On Label」編號 102；以及 1997 年一筆俄羅斯發行的 JPCD 9710634（廠牌名以西里爾字母印出），**明標 Unofficial Release**。",
+      "src": "https://www.discogs.com/master/34144"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "A Black Box",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "唱片裡沒有歌詞單，想要的話得自己寄一個貼好郵票的大信封過去。地址印在封底，收件的是 Sofa Sound。編曲、演出與製作都掛他一個人，維基那頁寫他幾乎所有樂器都自己來，連鼓也是。A 面七首歌，〈Golden Promises〉與〈Fogwalking〉在其中；B 面整面給了〈Flight〉一首、分成七個段落，維基登錄 A 面 21 分 15 秒、〈Flight〉19 分 37 秒。英國盤掛的是 S-Type Records、編號 PHS 1。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/580889",
+     "https://en.wikipedia.org/wiki/A_Black_Box",
+     "https://itunes.apple.com/lookup?id=714570675&entity=song&country=gb",
+     "https://musicbrainz.org/release-group/a1b231f5-a9f9-337b-b775-05dc822dfcb8",
+     "https://www.discogs.com/master/33999"
+    ]
+   },
+   {
+    "album": "Loops & Reels",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "七首裡有三首本來是為芭蕾、為舞蹈演出、為一張義演唱片做的。〈In Slow Time〉是一場舞蹈演出的伴奏，〈A Ritual Mask〉先出現在 WOMAD 的義演唱片上，〈My Pulse〉是 Nicolas Dixon 編舞的芭蕾配樂——後兩首拿到 Crescent 混音，工程 David Lord；其餘各軌的工程與製作都在 Sofa Sound，那既是廠牌欄上的名字，也是他家裡的錄音室。原始形制是編號 SS4 的卡帶，規格欄註著 C45 與 Dolby B。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1500314",
+     "https://www.discogs.com/label/127789",
+     "https://www.discogs.com/release/580889",
+     "https://www.discogs.com/master/34144",
+     "https://musicbrainz.org/release-group/1f043df0-2e4b-3555-9d5a-51486ddcac19",
+     "https://itunes.apple.com/lookup?id=1713767776&entity=song&country=gb",
+     "https://coverartarchive.org/release-group/1f043df0-2e4b-3555-9d5a-51486ddcac19/front"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "phil collins",
+  "name": "Phil Collins",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1981,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Face Value",
+    "year": 1981,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "No Jacket Required",
+    "year": 1985,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "...But Seriously",
+    "year": 1989,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Face Value",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "Genesis 休團期間，Phil Collins 把 1979 年婚變的情緒寫成 1981 年的個人首作，與 Hugh Padgham 共同製作。〈In the Air Tonight〉那組 gated reverb 鼓聲，後來成了八〇年代錄音室的通用語彙。Earth, Wind & Fire 的 Phenix Horns 銅管組、貝斯手 Alphonso Johnson 與 Eric Clapton 都有參與。英國榜三週冠軍、美國第七，全美五白金。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Face_Value_(album)",
+     "https://musicbrainz.org/release-group/1cbc1a5a-5512-3f8e-997b-d9281b83722b"
+    ]
+   },
+   {
+    "album": "No Jacket Required",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1985 年由 Phil Collins 與 Hugh Padgham 共同製作，美英兩地同登冠軍，在美國榜非連續稱王七週。〈Sussudio〉與〈One More Night〉都拿下美國單曲榜冠軍，Sting 與 Peter Gabriel 客串和聲。第二十八屆葛萊美拿下年度專輯，Collins 另得最佳流行男歌手與年度製作人。RIAA 鑽石認證，全球銷量逾兩千五百萬張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/No_Jacket_Required",
+     "https://musicbrainz.org/release-group/86b4651b-a6ea-3ac2-ba99-dcac079938d2"
+    ]
+   },
+   {
+    "album": "...But Seriously",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1989 年 Phil Collins 收起舞曲路線，改寫街友、北愛爾蘭衝突與南非種族隔離這類題材，製作仍由他與 Hugh Padgham 共同掛名。談無家者的〈Another Day in Paradise〉拿下第三十三屆葛萊美年度單曲。Eric Clapton 在〈I Wish It Would Rain Down〉彈主奏，David Crosby 為多首歌和聲。英國榜非連續十五週冠軍，是 1990 年全英最暢銷專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/...But_Seriously",
+     "https://musicbrainz.org/release-group/822d9247-6059-3716-b1f9-f7b95526f721"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "primal scream",
+  "name": "Primal Scream",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1991,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "XTRMNTR",
+    "year": 1999,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Vanishing Point",
+    "year": 1997,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Screamadelica",
+    "year": 1991,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "quicksand",
+  "name": "Quicksand",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Slip",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Manic Compression",
+    "year": 1995,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Quicksand",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c120-b",
+    "album": "Manic Compression",
+    "facts": [
+     {
+      "f": "**1995-02-28 US 原盤（Island 314-526 564-2，CD）的逐軌曲目與長度**：**1〈Backward〉1:43**、2〈Delusional〉3:57、3〈Divorce〉1:45、4〈Simpleton〉2:35、5〈Skinny (It's Overflowing)〉2:26、6〈Thorn in My Side〉2:37、7〈Landmine Spring〉3:41、8〈Blister〉2:09、9〈Brown Gargantuan〉4:04、10〈East 3rd St.〉4:02、11〈Supergenius〉2:56、**12〈It Would Be Cooler If You Did〉6:28**。**十二軌總長 38:22，最長的收尾曲 6:28 是最短的開場曲 1:43 的近四倍；十二軌裡有五軌不到兩分四十秒、三軌超過四分鐘。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=53a738cc-26ed-3699-92d3-c4c2939286df&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "**日版是 14 軌、總長 44:51**：前十一軌與美版同名同序（長度差 0 到 5 秒），**第 12、13 軌是美版沒有的〈Shovel〉3:07 與〈Voice Killer〉3:31，原本的收尾曲〈It Would Be Cooler If You Did〉被推到第 14 軌**。**日版比美版多出 6 分 29 秒，而且動到了曲序。** 2017 年的數位版則與美版十二軌逐軌完全相同（總長同為 38:22），**只有廠牌欄從 Island 換成 Mercury Records**。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=53a738cc-26ed-3699-92d3-c4c2939286df&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "藝人端點分頁全列 **21 個 release-group**：primary-type=Album 且 secondary-types 為空的 **5 個**、Album+Compilation 1、EP 3、Single 12、**primary-type=Compilation 0 個**。**5 張純長篇依 first-release-date 排序是：1993-02-09《Slip》（24f9fe37，**池中已有**）、1995-02-28 本張、2017-11-10《Interiors》、2021-08-13《Distant Populations》、2026-07-17《Bring on the Psychics》——**本張排第二，後面還有三張長篇，不是名下最後一張。**",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=3c9f8bef-a658-4204-9ee8-7e95d2535b32&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c122-a",
+    "album": "Quicksand",
+    "facts": [
+     {
+      "f": "藝人實體 3c9f8bef：type Group、country US、area United States、**begin-area New York**、**life-span begin 1990**（與本張同年）、disambiguation「American post-hardcore band」。廠牌實體 Revelation Records（48ed026d）：type Production、country US、**life-span 起訖皆空**、disambiguation「US hardcore punk label」。",
+      "src": "https://musicbrainz.org/ws/2/artist/3c9f8bef-a658-4204-9ee8-7e95d2535b32?fmt=json"
+     },
+     {
+      "f": "**回撈候選逐軌覆核，採信一筆**：collectionId **91742212**《Quicksand - EP》，掛名「Quicksand」、releaseDate 1990-01-01、trackCount **4**、**℗ 1990 Revelation Records**、notExplicit，四軌〈Omission〉2:26／〈Clean Slate〉2:49／〈Unfulfilled〉3:15／〈Hypno Jam With Dan〉1:57，**與所釘版本四軌逐位置一秒不差**，全部有 previewUrl → **採信。這是本組二十三張裡少數「串流版本與所釘原盤軌數、曲序、長度、廠牌、年份五項全對」的一筆。**",
+      "src": "https://itunes.apple.com/lookup?id=91742212&country=us&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Manic Compression",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "收尾那一軌六分二十八秒，是開場那一軌的近四倍。開場〈Backward〉只有 1:43，收尾是〈It Would Be Cooler If You Did〉6:28；中間十軌分成兩群，五軌不到兩分四十秒、三軌超過四分鐘，十二軌合計 38 分 22 秒。同年的日版把兩軌插進收尾曲之前，曲序也跟著不同。碟出在 1995 年 2 月的美國 Island，編號 314-526 564-2，是名下第二張長篇。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/53a738cc-26ed-3699-92d3-c4c2939286df?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=53a738cc-26ed-3699-92d3-c4c2939286df&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1443511138&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=3c9f8bef-a658-4204-9ee8-7e95d2535b32&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/53a738cc-26ed-3699-92d3-c4c2939286df"
+    ]
+   },
+   {
+    "album": "Quicksand",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "同一年壓了 CD 與黑膠兩種，四軌一秒不差。〈Omission〉2:26 開場、〈Unfulfilled〉3:15 最長，收在〈Hypno Jam With Dan〉1:57，四軌合計 10 分 27 秒。四首全部超過一分五十秒——同期那些一首唱不到一分鐘的碟，在這裡完全不適用。CD 那筆的編號記為 REV 018，黑膠那筆寫成 Revelation: 18。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1859eb08-b460-319e-82f9-2ddb78ac0bba&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=3c9f8bef-a658-4204-9ee8-7e95d2535b32&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/3c9f8bef-a658-4204-9ee8-7e95d2535b32?fmt=json",
+     "https://itunes.apple.com/lookup?id=91742212&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/1859eb08-b460-319e-82f9-2ddb78ac0bba",
+     "https://en.wikipedia.org/wiki/Quicksand_(American_band)",
+     "https://en.wikipedia.org/wiki/Revelation_Records"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rcサクセション",
+  "name": "RCサクセション",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1976,
+   1980
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "ラプソディー",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "PLEASE",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "シングル・マン",
+    "year": 1976,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-b",
+    "album": "シングル・マン",
+    "facts": [
+     {
+      "f": "日文維基〈シングル・マン (RCサクセションのアルバム)〉記：初次發行為 1976 年 4 月 21 日，廠牌ポリドール・レコード；1994 年 12 月 19 日以 POCH-1452 出 CD，2015 年 5 月 2 日以「シングル・マン+4」再發（UPCY-6989）；ディレクター兼プロデューサー為多賀英典；オリコン最高第 79 位。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%BB%E3%83%9E%E3%83%B3_(RC%E3%82%B5%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+     },
+     {
+      "f": "同一條目記再發運動：1979 年由樂評人吉見佑子為中心，組成了一個專為這張碟再發售而設的實行委員組織（日文原名以「シングル・マン再発売」開頭，末四字為該類組織的通用稱謂），運動經報紙與雜誌報導，促成自主製作限定 300 張的再發；銷況好，做到 1500 張。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%BB%E3%83%9E%E3%83%B3_(RC%E3%82%B5%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+     },
+     {
+      "f": "同一條目記：再發運動成功之後，Polydor 在 1980 年決定正式再發，並在唱片腰帶上刊登了一段道歉文；當時成員為忌野清志郎（主唱、吉他）、林小和生（貝斯、人聲）、破廉ケンチ（吉他、人聲）；條目並記本作是 RC「首次正式導入電子樂器」的作品，在 1980 年代之後獲得高度評價。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%BB%E3%83%9E%E3%83%B3_(RC%E3%82%B5%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "ラプソディー",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1980年發表的現場專輯，錄自久保講堂公演，是RCサクセション相隔四年的作品。樂團1978年改為搖滾編制後，唱片公司主張先出錄音室盤，忌野清志郎堅持「把現場的衝勁原樣端出來」，也不願讓錄音室加工，才拍板做成現場盤。全盛期五人之外，小川銀次的吉他與梅津和時的中音薩克斯風以支援身分加入。發表後樂團的演出規模一路擴大，也常被視為80年代日本搖滾新浪潮的開場之作。2005年另發完全版《RHAPSODY NAKED》。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/RHAPSODY_(RCサクセションのアルバム)",
+     "https://en.wikipedia.org/wiki/RC_Succession",
+     "https://musicbrainz.org/release-group/2a225667-cd96-4b36-bacd-75d3b44b8e16"
+    ]
+   },
+   {
+    "album": "PLEASE",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1980年12月發行，是RCサクセション改為電聲編制後的第一張錄音室專輯。忌野清志郎與樂評日後都指出，當時日本的搖滾錄音技術尚未成熟，成品聲音偏細偏輕，歌詞卡因此大字印上「PLEASE, play it loud」。內頁還註明整張沒有人工甘味料、合成著色料與防腐劑，全部由樂手自己演奏——那是相對於過去被外部安排錄音的宣示。收錄的〈トランジスタ・ラジオ〉與單曲版混音不同，〈モーニング・コールをよろしく〉以Sam Cooke的〈You Send Me〉為底，〈Sweet Soul Music〉原是寫給上田正樹的曲子。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/PLEASE",
+     "https://musicbrainz.org/release-group/355ad813-d4ab-4918-beaa-71f51d3b8291"
+    ]
+   },
+   {
+    "album": "シングル・マン",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "1979 年樂評人吉見佑子帶頭組委員會爭取再發，Polydor 後來在腰帶上印了道歉文。《シングル・マン》1976 年由ポリドール發行，製作是多賀英典。那場再發運動經報紙與雜誌報導，先做出自主製作的限定三百張，賣到一千五百張，Polydor 才在 1980 年決定正式再發。當時成員是忌野清志郎、林小和生與破廉ケンチ；日文維基記本作是 RC 首次正式導入電子樂器的作品。十一軌裡〈ヒッピーに捧ぐ〉315 秒、〈スローバラード〉276 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/21f34508-00c4-4904-82be-6cdb041383f8",
+     "https://musicbrainz.org/release/8ff98d0c-898a-4be9-abbb-fa426bb9fd9e",
+     "https://musicbrainz.org/release/0958ae65-9d8b-4f91-a974-6f5c69395b6e",
+     "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%BB%E3%83%9E%E3%83%B3_(RC%E3%82%B5%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+     "https://music.apple.com/jp/album/1443335331"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rilo kiley",
+  "name": "Rilo Kiley",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2001,
+   2007
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Execution of All Things",
+    "year": 2002,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Under the Blacklight",
+    "year": 2007,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Take Offs and Landings",
+    "year": 2001,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "robert calvert",
+  "name": "Robert Calvert",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1981,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Hype",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Freq",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Test-Tube Conceived",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 29,
+   "researchRecords": 3,
+   "facts": 11,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c80-a",
+    "album": "Hype",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 3146349，master 69107 的主要版本）記：1981 年英國發行，廠牌 **A Side Records (2)**、編號 **IF 0311**，形制 Vinyl／LP／Album，**十二軌**：A 面〈Over My Head〉〈Ambitious〉〈It's The Same〉〈Hanging Out On The Seafront〉〈Sensitive〉〈Evil Rock〉；B 面〈We Like To Be Frightened〉〈Teen Ballad Of Deano〉〈Flight 105〉〈The Luminous Green Glow Of The Dials Of The Dashboard (At Night)〉〈Greenfly & The Rose〉〈Lord Of The Hornets〉。",
+      "src": "https://www.discogs.com/release/3146349"
+     },
+     {
+      "f": "Discogs 條目的註記：這張碟有副標「Songs Of Tom Mahler」，是 Calvert 唯一出版過的小說《Hype》的搭配品，那本小說寫的是一個搖滾明星的竄起與死亡；圓標上印著「Made in France」；錄音在 Free Range Studios，配銷 Stage One (Records) Ltd.，出版與版權都在 Rock Music Co. Ltd. 名下。",
+      "src": "https://www.discogs.com/release/3146349"
+     },
+     {
+      "f": "英文維基的專輯條目記：1981 年 9 月發行，廠牌 A-Side Records、編號 IF0311，錄音室是倫敦 Covent Garden 的 Free Range Studios；「It is subtitled ''The Songs of Tom Mahler'' as a tie-in to Calvert's only published novel ''Hype''」；「**The musicians used for the recording include three members of the band Bethnal, whom Calvert befriended during their support slot on Hawkwind's 1977 UK tour.**」",
+      "src": "https://en.wikipedia.org/wiki/Hype_(album)"
+     },
+     {
+      "f": "A Side Records (2) 這個 Discogs 廠牌實體（編號 318743）的簡介只有一句「UK 80's label created for [Robert Calvert]」，而**整個實體底下只有一筆發行，就是本張 IF 0311**。",
+      "src": "https://www.discogs.com/label/318743"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c80-b",
+    "album": "Freq",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 917409）記：1984 年英國盤，廠牌 Flicknife Records、編號 SHARP 021，形制是**十二吋 33⅓ 轉的 Mini-Album**；℗ Flicknife Records、© 與出版都在 Rock Music Ltd. 名下，壓片由 MPO 代工。條目註記寫「**Recorded at Computer Music Studio, London / August 1984**」，另有一句致謝：「Musical thanks to Terry Adams and Alex Calvert for motorised rescue operation」。",
+      "src": "https://www.discogs.com/release/917409-Robert-Calvert-Freq"
+     },
+     {
+      "f": "**原盤曲目表列六首**：A 面〈Ned Lud〉〈Acid Rain〉〈All The Machines Are Quiet〉，B 面〈Standing In The Picket Line〉〈The Cool Courage Of Bomb Squad Officers〉〈Work Song〉。",
+      "src": "https://www.discogs.com/release/917409-Robert-Calvert-Freq"
+     },
+     {
+      "f": "MusicBrainz 那筆 1985 年 Flicknife SHARP 021 的黑膠 release **登錄了十一軌**：〈Ned Ludd〉4:57、〈Talk 1〉1:31、〈Acid Rain〉5:06、〈Talk 2〉2:37、〈All the Machines Are Quiet〉5:03、〈Talk 3〉1:12、〈Picket Line〉3:27、〈Talk 4〉1:06、〈The Cool Courage of Bomb Squad Officers〉5:21、〈Talk 5〉1:06、〈Work Song〉3:54——也就是六首歌之間夾著五段談話。",
+      "src": "https://musicbrainz.org/release/7a24eb9c-2c2b-4381-9b22-c3d5eb72b889"
+     },
+     {
+      "f": "2008 年 Cherry Red 旗下 Atomhenge 那張 CD（ATOMCD 1001）的條目註記寫：「**第 1 到 11 軌原本以 Flicknife Records SHARP 021 於 1984 年 9 月發行**；第 12、13 軌是 1980 年以 Flicknife Records FLS 204 發行的一張單曲的 A、B 兩面。」該版附一本十二頁的小冊子，內含專文、歌詞、圖片與 credit。",
+      "src": "https://www.discogs.com/release/4256483-Robert-Calvert-Freq"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c80-b",
+    "album": "Test-Tube Conceived",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 1633010）記：1986 年英國盤，廠牌 Demi Monde、編號 DMLP 1010，Vinyl／LP／Album；℗ 與 © 都在 Demi Monde Records Publishing 名下，出版也是 Demi Monde，**錄音在 Foel Studio**、刻片在 The Sound Clinic、壓片由 MPO 代工，**配銷交給 The Cartel**。",
+      "src": "https://www.discogs.com/release/1633010-Robert-Calvert-Test-Tube-Conceived"
+     },
+     {
+      "f": "英文維基〈Test-Tube Conceived〉的資訊欄記：發行 1986 年 4 月、錄音 1986 年、錄音室 **Foel Studios, Powys, Wales**、廠牌 Demi Monde Records、製作人 Robert Calvert；同頁的發行紀錄列 1986 年 4 月的英國黑膠 DMLP1010、1987 年 8 月 The CD label 的 CDTL007、1996 年 Thunderbolt 的 CDTB113、2003 年 8 月 Voiceprint 的 VP273CD。",
+      "src": "https://en.wikipedia.org/wiki/Test-Tube_Conceived"
+     },
+     {
+      "f": "英文維基〈Robert Calvert〉的生平段（引 Colin Larkin 編《The Guinness Encyclopedia of Popular Music》1992 年版、The Dead Rock Stars Club 與 Aural Innovations 的傳記）記：**1988 年，四十三歲的 Calvert 在英格蘭拉姆斯蓋特（Ramsgate）一家「Corner House」咖啡館外因心臟病去世**；他葬在 Minster-in-Thanet 的 Minster 墓園，墓碑上刻著莎士比亞第 116 號十四行詩裡的一句「Love's not Time's fool」。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Calvert"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Hype",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "兩面的刻紋上都蝕著一個小說主角的名字。刻紋上拼成 Tom Malher，唱片的副標寫的是「Songs Of Tom Mahler」——搭的是他唯一出版過的小說《Hype》，書裡寫一個搖滾明星的竄起與死亡。廠牌 A Side Records 這個 Discogs 實體底下只有 IF 0311 這一筆發行，圓標上還印著 Made in France。錄音在倫敦 Covent Garden 的 Free Range Studios，全碟的詞與曲都掛他一人。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3146349",
+     "https://en.wikipedia.org/wiki/Hype_(album)",
+     "https://itunes.apple.com/lookup?id=1519060592&entity=song&country=gb",
+     "https://musicbrainz.org/release-group/6e7e5387-910f-3414-bddd-acdd9042891e",
+     "https://www.discogs.com/label/318743",
+     "https://www.discogs.com/master/69107"
+    ]
+   },
+   {
+    "album": "Freq",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "六首歌之間夾著五段沒有印在曲目表上的錄音。原盤曲目表列六首，收尾是〈Work Song〉；MusicBrainz 那筆黑膠登錄十一軌，連談話段落一起算。Anagram 那張 CD 的條目說，那五段是罷工糾察線的訪談，黑膠上沒印進曲目表。十二吋 33⅓ 轉的迷你專輯，廠牌 Flicknife、編號 SHARP 021，錄音在倫敦的 Computer Music Studio，1984 年八月。他一人掛詞曲、製作、鍵盤、程式、人聲、鼓與 Simmons 電子鼓組。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/917409-Robert-Calvert-Freq",
+     "https://www.discogs.com/release/2145429-Robert-Calvert-Freq-Revisited",
+     "https://musicbrainz.org/release/7a24eb9c-2c2b-4381-9b22-c3d5eb72b889",
+     "https://www.discogs.com/release/4256483-Robert-Calvert-Freq",
+     "https://www.discogs.com/label/26474-Flicknife-Records",
+     "https://en.wikipedia.org/wiki/Robert_Calvert",
+     "https://www.discogs.com/master/440945-Robert-Calvert-Freq",
+     "https://music.apple.com/gb/album/freq/293192204",
+     "https://musicbrainz.org/release-group/beb3dd42-3bec-3765-955b-09e08894771f"
+    ]
+   },
+   {
+    "album": "Test-Tube Conceived",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "十首歌，五個標題直接寫著試管、基因和科學家。〈In Vitro Breed〉開場，同名曲收尾。1986 年的 Demi Monde DMLP 1010，錄音在威爾斯波伊斯郡的 Foel Studio，配銷交給 The Cartel。他自己唱歌、彈合成器、寫鼓機程式並打打擊，Martin Holdcroft 掛吉他、鍵盤與「取樣／磁帶剪接」；十首歌長度平均，最長五分三十九秒。這是他生前最後一張錄音室專輯，1988 年他在拉姆斯蓋特去世，墓碑上刻著莎士比亞的一句詩。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1633010-Robert-Calvert-Test-Tube-Conceived",
+     "https://musicbrainz.org/release-group/11e052e3-9118-3f8f-994a-51698dccf663",
+     "https://musicbrainz.org/release/32bd8f87-f531-4c3a-917a-07b18033a6a3",
+     "https://en.wikipedia.org/wiki/Test-Tube_Conceived",
+     "https://www.discogs.com/master/423329-Robert-Calvert-Test-Tube-Conceived",
+     "https://en.wikipedia.org/wiki/Robert_Calvert",
+     "https://music.apple.com/us/album/test-tube-conceived/193081787"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rory gallagher",
+  "name": "Rory Gallagher",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1971,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Irish Tour '74",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Rory Gallagher",
+    "year": 1971,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Calling Card",
+    "year": 1976,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Rory Gallagher",
+    "manifest": "onboarding-manifest-c30-blues-20260821.json",
+    "desc": "Taste 解散後,Rory Gallagher 於 1971 年以三人編制重新出發,選了貝爾法斯特的 Gerry McAvoy(貝斯)與 Wilgar Campbell(鼓),在倫敦 Advision 錄音室自製,Eddy Offord 任錄音師。開場〈Laundromat〉的吉他句日後成現場固定曲;〈Just the Smile〉是受 Bert Jansch、Davy Graham 一輩英倫民謠影響的原音小品,〈Wave Myself Goodbye〉由 Atomic Rooster 的 Vincent Crane 彈紐奧良風鋼琴。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rory_Gallagher_(album)",
+     "https://musicbrainz.org/release-group/4cc2fc96-c8ec-369d-8db9-b51fa44529f9"
+    ]
+   },
+   {
+    "album": "Calling Card",
+    "manifest": "onboarding-manifest-c30-blues-20260821.json",
+    "desc": "1976 年夏天錄於慕尼黑 Musicland 錄音室,由 Rory Gallagher 與 Deep Purple 貝斯手 Roger Glover 共同製作——那是他首度與知名製作人合作,也是唯一一次合作順利的紀錄。Gerry McAvoy 貝斯、Lou Martin 鍵盤、Rod de'Ath 鼓,是這組班底的最後一張。曲路比他慣有的硬搖滾寬,〈Moonchild〉與標題曲各走一路;Guitar Player 稱其「歌曲出色又保有搖滾銳氣」。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Calling_Card",
+     "https://musicbrainz.org/release-group/3a822c2a-924f-3f9a-ba29-f1f02d3c971b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rufus wainwright",
+  "name": "Rufus Wainwright",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2003,
+   2007
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Want One",
+    "year": 2003,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Release the Stars",
+    "year": 2007,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Want Two",
+    "year": 2004,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "satyricon",
+  "name": "Satyricon",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Nemesis Divina",
+    "year": 1996,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Satyricon & Munch",
+    "year": 2022,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Age of Nero",
+    "year": 2008,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "screaming trees",
+  "name": "Screaming Trees",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1987,
+   1992
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sweet Oblivion",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Even If and Especially When",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Invisible Lantern",
+    "year": 1988,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "sex pistols",
+  "name": "Sex Pistols",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1977,
+   2017
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "More Product",
+    "year": 2017,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Anarchy in the UK",
+    "year": 2001,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Never Mind the Bollocks, Here's the Sex Pistols",
+    "year": 1977,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "shame",
+  "name": "shame",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2018,
+   2025
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Songs of Praise",
+    "year": 2018,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Food for Worms",
+    "year": 2023,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cutthroat",
+    "year": 2025,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "sharon van etten",
+  "name": "Sharon Van Etten",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2009,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Are We There",
+    "year": 2014,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Because I Was in Love",
+    "year": 2009,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "We've Been Going About This All Wrong",
+    "year": 2022,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "shellac",
+  "name": "Shellac",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1994,
+   2014
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "At Action Park",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "1000 Hurts",
+    "year": 2000,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dude Incredible",
+    "year": 2014,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "sick of it all",
+  "name": "Sick of It All",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1987,
+   1992
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Blood, Sweat, and No Tears",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Just Look Around",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sick of It All",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 17,
+   "researchRecords": 3,
+   "facts": 6,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c120-a",
+    "album": "Blood, Sweat, and No Tears",
+    "facts": [
+     {
+      "f": "release-group 2982b044 的欄位：title「Blood, Sweat, and No Tears」、artist-credit「Sick of It All」（藝人實體 e204ed91，type Group、country US、life-span begin **1986**、**disambiguation 空白**）、first-release-date **1989-05**、primary-type Album、secondary-types **空**。轄下 **4 筆 release**：**US 1989-05 In-Effect 88561-3005-1（12\" Vinyl、17 軌、Official）**／US 1989-05 In-Effect **88561-3005-2**（CD、**19 軌**、Official）／DE 1999 Century Media 66007-2（CD、19 軌、**status=Promotion，不是 Official**）／RU 2004 俄版廠牌，catno FO356CD（CD、19 軌、Official）。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=2982b044-7e29-383c-964e-b8d112f738c4&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "12 吋（88561-3005-1，卡單所釘的那一支）逐軌與長度：A 面 1〈The Blood & The Sweat〉1:50、2〈Clobberin' Time / Pay the Price〉1:37、3〈Give Respect〉1:08、4〈Breeders of Hate〉1:12、5〈Pushed Too Far〉0:56、6〈Friends Like You〉1:07、7〈B.S. Justice〉1:30、8〈Rat Pack〉0:44；B 面 1〈G.I. Joe Headstomp〉1:19、2〈Alone〉1:58、3〈My Life〉0:42、4〈World Full of Hate〉2:05、5〈My Revenge〉1:12、6〈No Labels〉0:59、7〈Disillusion〉2:05、8〈The Deal〉1:08、9〈Injustice System!〉2:07。**十七軌總長 21 分 39 秒，十七軌裡有十四軌短於一分半，最短的〈My Life〉0:42。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=2982b044-7e29-383c-964e-b8d112f738c4&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "廠牌實體 In-Effect（2a7d9419）：type「Original Production」、**country 與 area 皆未填**、**life-span 1988～1991**——這家廠牌在實體欄位上只存在三年。本批另一張同廠：Killing Time《Brightside》（**88561-3008-1**，1989-11），**與本張的 88561-3005-1 只差三號**。",
+      "src": "https://musicbrainz.org/ws/2/label/2a7d9419-ad51-4187-b278-8bfa695fd227?fmt=json"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c120-a",
+    "album": "Just Look Around",
+    "facts": [
+     {
+      "f": "release-group 92293bbc 的欄位：title「Just Look Around」、artist-credit「Sick of It All」、first-release-date **1992-10-06**、primary-type Album、secondary-types **空**。轄下 **6 筆 release，全部 13 軌、全部 Official**：US 1992 **Relativity Records 88561-3017-2**（CD）／DE 1992 **KINGfisher KF 017**（CD）／**US 1992-10-06 Relativity Records RR 9191 2（CD）**／XE 1999 Century Media 9962232（CD）／BE 1999-06-21（**format 為 null、label-info 全空**）／RU 2004 俄版廠牌，catno FO355CD（CD）。**同一年的美國版有兩個不同目錄編號的 CD（88561-3017-2 與 RR 9191 2）。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=92293bbc-3b34-3f11-bb17-6695cd7c36b4&fmt=json&inc=media+labels+recordings&limit=100"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c122-a",
+    "album": "Sick of It All",
+    "facts": [
+     {
+      "f": "藝人目錄分頁全列 **27 個 release-group**。**1987 年這張不是目錄裡最早的一筆**：**1986 年另有一個同名 release-group（37f85705，primary-type Other＋secondary-type Demo）**，那是一捲 1986 US Official 卡帶、10 軌、廠牌記為 Alleyway Style Tapes、catno `[none]`，曲目〈G.I. Joe Headstomp〉〈Just Lies〉〈Pushed Too Far〉〈Bullshit Justice〉〈Stick Together〉〈Give Respect〉〈Friends Like You〉〈No Labels, No Lies〉〈My Revenge〉〈My Life〉——**與 1987 年這張有六首同名曲，但另有四首不在本張上**。第一張 Album 是 1989-05《Blood, Sweat, and No Tears》。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=e204ed91-3684-4561-b29b-d0b53f8459a7&fmt=json&limit=100&offset=0"
+     },
+     {
+      "f": "廠牌側：Revelation Records（48ed026d）type Production、country US、**life-span 起訖皆空**、disambiguation「US hardcore punk label」。1994 德版的 Lost and Found Records（8b55f2f0）type Original Production、country **DE**、disambiguation「German punk label」——**這一版不是本廠牌發行，是德國廠牌的授權版。**藝人實體 e204ed91：type Group、country US、**begin-area Queens**、life-span begin **1986**、**disambiguation 空**。",
+      "src": "https://musicbrainz.org/ws/2/label/48ed026d-bf1a-4c6e-8860-d21cd440b60e?fmt=json"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Blood, Sweat, and No Tears",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "十七軌裡有十四軌短於一分半，最短的一首四十二秒。1989 年 5 月那張 12 吋十七軌合計 21 分 39 秒，A 面八首從〈The Blood & The Sweat〉1:50 起、以〈Rat Pack〉0:44 收，B 面九首收在〈Injustice System!〉2:07，而那已經是全張最長的一軌。同月的 CD 版只在第九、十位插進兩首不到一分鐘的曲子，其餘曲序一動未動。廠牌是 In-Effect，編號 88561-3005-1。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=2982b044-7e29-383c-964e-b8d112f738c4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=6f214e60-b1d8-3e79-8297-ed7ea762f10a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=e204ed91-3684-4561-b29b-d0b53f8459a7&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/label/2a7d9419-ad51-4187-b278-8bfa695fd227?fmt=json",
+     "https://itunes.apple.com/lookup?id=278093099&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/2982b044-7e29-383c-964e-b8d112f738c4"
+    ]
+   },
+   {
+    "album": "Just Look Around",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "同一年的美國版有兩個目錄編號，曲目一軌不差。1992 年 10 月那張 RR 9191 2 是十三軌、29 分 38 秒，〈We Want the Truth〉2:55 開場、〈Locomotive〉2:13 緊接，收在〈Indust.〉2:03。十三軌有九軌超過兩分鐘，最長的〈The Pain Strikes〉3:06，〈The Shield〉2:38 排在第九。同年的德國版則掛 KINGfisher 的 KF 017。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=92293bbc-3b34-3f11-bb17-6695cd7c36b4&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=e204ed91-3684-4561-b29b-d0b53f8459a7&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=980766457&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/92293bbc-3b34-3f11-bb17-6695cd7c36b4"
+    ]
+   },
+   {
+    "album": "Sick of It All",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "黑膠上的八條溝裡，有兩條各裝了兩首歌。併起來的是第一條與第六條——〈It's Clobberin' Time / Just Lies〉與〈Pushed Too Far / Give Respect〉，八條溝底下其實排著十個曲名。十年後的 CD 把這兩條各拆成兩軌，這批錄音才第一次有長度可查：十軌合計 10 分 10 秒，只有〈Bullshit Justice〉撐過一分半。黑膠那筆的廠牌欄寫 Revelation、編號記為 REV 003。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6f214e60-b1d8-3e79-8297-ed7ea762f10a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=e204ed91-3684-4561-b29b-d0b53f8459a7&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/label/48ed026d-bf1a-4c6e-8860-d21cd440b60e?fmt=json",
+     "https://itunes.apple.com/lookup?id=82928268&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/6f214e60-b1d8-3e79-8297-ed7ea762f10a",
+     "https://en.wikipedia.org/wiki/Revelation_Records",
+     "https://en.wikipedia.org/wiki/Sick_of_It_All"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "smog",
+  "name": "Smog",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1997,
+   2005
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Knock Knock",
+    "year": 1999,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Red Apple Falls",
+    "year": 1997,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A River Ain't Too Much to Love",
+    "year": 2005,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Red Apple Falls",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Bill Callahan 以 Smog 名義發表的第六張專輯,1997 年 5 月由 Drag City 發行,2001 年 Domino 在歐洲再版。錄音由 Jim O'Rourke 與 Callahan 共同完成,是 O'Rourke 經手製作的兩張 Smog 之一,他同時彈了貝斯、鋼琴、Hammond 風琴、手搖弦琴與鼓,把原本乾硬的 lo-fi 民謠鋪出縱深。〈Ex-Con〉發行為單曲;〈Red Apples〉的雛形早在 1991 年的 EP《Floating》就出現過,後來由 Cat Power 收進《The Covers Record》。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Red_Apple_Falls",
+     "https://musicbrainz.org/release-group/25d0b476-3965-35e1-b49b-09ef1beebc11"
+    ]
+   },
+   {
+    "album": "A River Ain't Too Much to Love",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Smog 名義下的第十一張、也是最後一張錄音室專輯,2005 年 5 月由 Drag City(北美)與 Domino(歐洲)分區發行。Callahan 原本就想直接掛本名,在 Drag City 的堅持下仍沿用舊名。編制轉向原音:Jim White 打鼓、Connie Lovatt 彈電貝斯,Joanna Newsom 在〈Rock Bottom Riser〉彈鋼琴,Thor Harris 補上鈴片與槌擊揚琴。〈I'm New Here〉後來成為 Gil Scott-Heron 最後一張專輯的標題曲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/A_River_Ain%27t_Too_Much_to_Love",
+     "https://musicbrainz.org/release-group/280715c6-17d7-3458-8ac1-d0dadb1ee087"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "snapcase",
+  "name": "Snapcase",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1991,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Lookinglasself",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Snapcase",
+    "year": 1991,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Steps",
+    "year": 1995,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c122-b",
+    "album": "Snapcase",
+    "facts": [
+     {
+      "f": "release-group f7f3de35 的欄位：title「Snapcase」、artist-credit「Snapcase」（藝人實體 90f7f8df，**disambiguation 空白**）、first-release-date **1991**（只有年）、primary-type EP、secondary-types **空**（**MB 沒有標 Demo**）。**轄下只有 1 筆 release**：1991 US Official、**Cassette、4 軌**，label-info 欄有一筆但**廠牌名是 [no label]、catno 是 none**。",
+      "src": "https://musicbrainz.org/ws/2/release-group/f7f3de35-310d-4346-add5-70cadd9486c7?fmt=json&inc=artist-credits+releases+media"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c122-b",
+    "album": "Steps",
+    "facts": [
+     {
+      "f": "串流店面的 collectionId **1558948326**：collectionName「**Steps - EP**」、artistName「Snapcase」、releaseDate **1995**、trackCount **4**、copyright「**℗ 1996 Craft Recordings, Distributed by Concord.**」、notExplicit。`entity=song` 攤出 4 軌：〈Cognition〉3:04、〈Steps〉3:12、〈Windows〉2:34、〈Run And Fall〉4:39——**與 MB 那筆逐軌同名同序、長度逐軌只短 1 秒**。**releaseDate 與 MB 同為 1995，但 ℗ 欄寫 1996、廠牌名也與 MB 的 Victory Records 不同。**",
+      "src": "https://itunes.apple.com/lookup?id=1558948326&country=us&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Lookinglasself",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "盤名把三個字連成一個字，碟上的第四軌卻照三個字分開寫。那一軌〈Looking Glass Self〉2:30 是八軌裡最短的一首；2011 年的數位版又把它改成與盤名相同的連寫，末軌也從〈Fields of Illusion〉換成〈Field of Illusions〉。開場那一軌掛著兩個曲名〈Drain Me / Filter〉、5:11 是全張最長，八軌合計 25 分 51 秒。碟出在 1993 年的美國 Victory，編號 VR13CD。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/8ac1fd8f-b633-3238-9653-2d119c7610df?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=8ac1fd8f-b633-3238-9653-2d119c7610df&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1558593885&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=90f7f8df-db45-4a6c-89fb-9e912f77eabd&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/8ac1fd8f-b633-3238-9653-2d119c7610df"
+    ]
+   },
+   {
+    "album": "Snapcase",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "一捲卡帶四軌，廠牌欄填的是「沒有廠牌」。目錄編號欄記的也是無，這是這個掛名目錄上最早的一筆。四軌合計 10 分 26 秒，〈Break The Silence〉2:46 開場、〈Undertow〉2:54 收尾，四首全部落在 2:08 到 2:54 之間，最長與最短只差四十六秒。唱片以團名為名，四首歌卻沒有一首同名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f7f3de35-310d-4346-add5-70cadd9486c7?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=f7f3de35-310d-4346-add5-70cadd9486c7&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=90f7f8df-db45-4a6c-89fb-9e912f77eabd&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/search?term=Snapcase%20Snapcase&entity=album&country=us&limit=25",
+     "https://musicbrainz.org/release-group/f7f3de35-310d-4346-add5-70cadd9486c7",
+     "https://en.wikipedia.org/wiki/Snapcase"
+    ]
+   },
+   {
+    "album": "Steps",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "四軌沒有一首短於兩分半。四軌合計 13 分 33 秒，平均一首 3 分 23 秒：最短的〈Windows〉2:35，收尾的〈Run And Fall〉4:40 一口氣拉開，比〈Windows〉長了兩分零五秒。第二軌與盤名同名、3:13，與開場的〈Cognition〉3:05 幾乎等長。四個曲名全是名詞或名詞短語，沒有一個帶標點。這張碟是 CD，排在 1993 與 1997 兩張長篇之間，廠牌欄寫 Victory Records、編號記為 VR024 CD。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/7f3f8ed1-974d-364c-9df4-dacd673a9823?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=7f3f8ed1-974d-364c-9df4-dacd673a9823&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=90f7f8df-db45-4a6c-89fb-9e912f77eabd&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1558948326&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/7f3f8ed1-974d-364c-9df4-dacd673a9823",
+     "https://en.wikipedia.org/wiki/Snapcase"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sparks",
+  "name": "Sparks",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1974,
+   1979
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "No. 1 in Heaven",
+    "year": 1979,
+    "genres": [
+     "soul",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Kimono My House",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Propaganda",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c51a-d",
+    "album": "Kimono My House",
+    "facts": [
+     {
+      "f": "封面由 Ron Mael 構思，靈感來自二戰時期的日本宣傳影像，找來 Michi Hirota 與 Kuniko Okamura 兩位女演員穿和服入鏡，Karl Stoecker 攝影；封面上既不印團名也不印專輯名。",
+      "src": "https://en.wikipedia.org/wiki/Kimono_My_House"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c51a-d",
+    "album": "Propaganda",
+    "facts": [
+     {
+      "f": "編制與《Kimono My House》已經不同：那張的貝斯手 Martin Gordon 不在本作名單上，貝斯改由 Ian Hampton 擔任，並多了 Trevor White 這名吉他手，Adrian Fisher 與 Norman \"Dinky\" Diamond 仍列名。",
+      "src": "https://en.wikipedia.org/wiki/Propaganda_(Sparks_album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "No. 1 in Heaven",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "Mael 兄弟厭倦搖滾樂團編制,找上 Giorgio Moroder,把 Sparks 換成合成器與音序器:鼓交給 Keith Forsey,Moroder 親自操刀 vocoder,人聲仍是 Russell Mael 的高亢假聲。1979 年由 Virgin 發行,〈The Number One Song in Heaven〉英國第 14。英國樂評當年多半惡評,後世翻轉:Paste 列它為史上最佳 synth-pop 專輯,Joy Division 的 Stephen Morris 說〈Love Will Tear Us Apart〉就是聽了這張而來。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/No._1_in_Heaven",
+     "https://musicbrainz.org/release-group/b4808b0d-8970-3072-8e0b-d64fe178620d"
+    ]
+   },
+   {
+    "album": "Kimono My House",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "兩個美國來的兄弟搬到倫敦，就地招了一支英國樂團。他們找來貝斯手 Martin Gordon 等三名英國樂手湊成新編制，1974 年 5 月由 Island 發行這張第三作，Muff Winwood 製作。Ron Mael 把 RMI Electra-Piano 接上 Echoplex 磁帶延遲，做出滿碟閃爍的鍵盤音色。英國專輯榜最高第 4 名並獲金唱片認證，〈This Town Ain't Big Enough for Both of Us〉在英國單曲榜最高第 2 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Kimono_My_House",
+     "https://musicbrainz.org/release-group/0539b843-2228-36f5-965d-f370d05f66c3"
+    ]
+   },
+   {
+    "album": "Propaganda",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "封面上兄弟倆被綁住塞住嘴，標題寫著 Welcome on Board。那張照片由 Monty Coles 拍攝，唱片 1974 年 11 月 11 日由 Island 推出，距前作只隔半年，製作人同樣是 Muff Winwood。編制卻換了人：前作的貝斯手 Martin Gordon 不在名單上，貝斯改由 Ian Hampton 擔任，另多了吉他手 Trevor White。美國 Billboard 200 第 63 名，是 Sparks 在美國的最高名次。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Propaganda_(Sparks_album)",
+     "https://musicbrainz.org/release-group/1ac15e9e-8ed0-3eaa-90f8-94f450839e67"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "steve miller band",
+  "name": "Steve Miller Band",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Book of Dreams",
+    "year": 1977,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fly Like an Eagle",
+    "year": 1976,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Joker",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "pop",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Fly Like an Eagle",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1976 年 5 月 Capitol 發行，Steve Miller 用 ARP Odyssey 把藍調搖滾推向太空感，開場〈Space Intro〉直接接進同名曲。〈Take the Money and Run〉與〈Rock'n Me〉一併成為電台常備曲，美國認證四白金，盤中還收了 Sam Cooke 的〈You Send Me〉。2012 年列入《滾石》五百大專輯第 445 名，2025 年獲美國國會圖書館選入國家錄音登記簿。封面那把黑色 Stratocaster 原是 Hendrix 訂購的左手琴，Miller 買下後改成右手弦序。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Fly_Like_an_Eagle_(album)",
+     "https://musicbrainz.org/release-group/03cf0b3d-48f1-3b04-a3be-5e4d5b7dcae2",
+     "https://en.wikipedia.org/wiki/National_Recording_Registry"
+    ]
+   },
+   {
+    "album": "Book of Dreams",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1977 年 5 月由 Capitol 發行的第十張，基本軌與前一年《Fly Like an Eagle》在舊金山 CBS 錄音室同批錄成，兩張的合成器質地因此一脈相承。〈Jet Airliner〉是三首單曲裡走得最遠的一首，專輯在四個國家進入前十，加拿大 RPM 專輯榜更拿下冠軍。〈Winter Time〉與〈The Stake〉有 Norton Buffalo 的口琴。封面飛馬由 Alton Kelley 與 Stanley Mouse 繪製，同一圖也印在黑膠中心標籤上。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Book_of_Dreams",
+     "https://musicbrainz.org/release-group/9cb417e6-bf80-37f7-a7a5-ae7ab3daf8e4"
+    ]
+   },
+   {
+    "album": "The Joker",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "pompatus 這個字世上沒有，他把另一首歌裡的 puppetutes 聽錯了。那個字是 Vernon Green 在 The Medallions 的〈The Letter〉裡自創的。同名曲的其他行也都指回他自己，〈Space Cowboy〉〈Gangster of Love〉幾個舊歌名被串成一段自我介紹。1973 年 10 月由 Capitol 發行，Miller 自己製作，錄音室段落之外還混進了現場錄音。同名單曲於 1974 年初拿下美國 Hot 100 冠軍。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Joker_(album)",
+     "https://en.wikipedia.org/wiki/The_Joker_(Steve_Miller_Band_song)",
+     "https://musicbrainz.org/release-group/4d4ab8a6-af26-3c9a-b156-4d10ff42a126"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "stratovarius",
+  "name": "Stratovarius",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1992,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Survive",
+    "year": 2022,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Twilight Time",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Visions",
+    "year": 1997,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Visions",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Stratovarius 第六張，1996 年 10 月至 1997 年 2 月在赫爾辛基 Finnvox 錄音，Timo Tolkki 一手包辦製作、吉他與幾乎全部作曲。全碟以諾斯特拉達姆士的預言為題，Jens Johansson 的鍵盤與大鍵琴撐起 neoclassical metal 的那一半，十分十七秒的〈Visions (Southern Cross)〉收尾。芬蘭榜第四、在榜二十三週並拿下芬蘭金唱片（兩萬張）；《Rock Hard》五百大搖滾與金屬專輯把它列在第 297 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Visions_(Stratovarius_album)",
+     "https://musicbrainz.org/release-group/ce100933-bf0d-386f-b358-8be5d90559d1"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "styx",
+  "name": "Styx",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1977,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Grand Illusion",
+    "year": 1977,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Paradise Theatre",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Pieces of Eight",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Paradise Theatre",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1981 年 A&M 發行的概念作，以芝加哥 Paradise 戲院從 1928 年開幕到 1956 年歇業拆除的過程，比喻美國七〇年代末到八〇年代的世道。專輯兩度登上 Billboard 200 冠軍、合計三週，是樂團賣得最好的一張，也是連續第四張三白金。Dennis DeYoung 寫的〈The Best of Times〉拿下單曲榜第三，Tommy Shaw 的〈Too Much Time on My Hands〉第九。首批黑膠第二面直接雷射蝕刻團名，內頁由 Chris Hopkins 繪製。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Paradise_Theatre_(album)",
+     "https://musicbrainz.org/release-group/7f7bae53-22ac-30af-bdcc-2ad7b1c6dabd"
+    ]
+   },
+   {
+    "album": "Pieces of Eight",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1978 年 9 月發行的第八張，由團員自製自錄於芝加哥 Paragon 錄音室，錄音師 Barry Mraz、混音 Rob Kingsland，也是最後一張在該廠完成的 Styx 專輯。美國榜第六、三白金，靠〈Blue Collar Man (Long Nights)〉與〈Renegade〉打開銷路。Dennis DeYoung 說主題是別為了金錢與物質放棄夢想，此作也被視為樂團最後一張帶明顯 progressive rock 骨架的作品。封面出自 Hipgnosis。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Pieces_of_Eight",
+     "https://musicbrainz.org/release-group/f56fa445-b860-385f-ba4e-72ea214fc2c0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "suicidal tendencies",
+  "name": "Suicidal Tendencies",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1983,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Suicidal Tendencies",
+    "year": 1983,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Join the Army",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Lights… Camera… Revolution!",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "suicide",
+  "name": "Suicide",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1977,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Suicide",
+    "year": 1977,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Suicide: Alan Vega and Martin Rev",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Way of Life",
+    "year": 1988,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51d-d",
+    "album": "Suicide: Alan Vega and Martin Rev",
+    "facts": [
+     {
+      "f": "1980 年 5 月發行，由 ZE Records 推出，英國盤與 Island 聯名（型號 ILPS 7007），是二人組的第二張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Suicide:_Alan_Vega_and_Martin_Rev"
+     },
+     {
+      "f": "廠牌原本屬意找 Giorgio Moroder 製作，想要一張更偏舞曲取向的唱片。",
+      "src": "https://en.wikipedia.org/wiki/Suicide:_Alan_Vega_and_Martin_Rev"
+     },
+     {
+      "f": "MusicBrainz 上本作的最早紀錄是 1980 年英國盤，掛 Island 與 ZE Records 兩個廠牌，型號 ILPS 7007。",
+      "src": "https://musicbrainz.org/release-group/a9069ea4-f95f-3ac2-a353-59346a98e172"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c93-a",
+    "album": "A Way of Life",
+    "facts": [
+     {
+      "f": "該 release-group 的 1988 GB 盤（release 9aaed464）欄位：country GB、status Official、廠牌欄 Chapter 22、編號 CHAP CD 35、barcode 5016295600356、9 軌。逐軌曲名與曲長依序為〈Wild in Blue〉4:34、〈Surrender〉3:47、〈Jukebox Baby 96〉3:21、〈Rain of Ruin〉4:00、〈Suffering in Vain〉4:41、〈Dominic Christ〉6:47、〈Love So Lovely〉4:04、〈Devastation〉4:01、〈Heat Beat〉4:13。",
+      "src": "https://musicbrainz.org/release/9aaed464-3521-34c2-8ee0-16216698db08"
+     },
+     {
+      "f": "英文維基〈A Way of Life (Suicide album)〉的 infobox 與導言記：Suicide 的第三張錄音室專輯，1988 年發行，錄音日期記為 1987 年 12 月 13 日、地點紐約 Right Track Recording，製作人 Ric Ocasek，全長 39:24，廠牌欄記 Chapter 22 與 Wax Trax! Records。條目寫本張最初由 Chapter 22 Records 發行，一年後才透過 Wax Trax! Records 取得更廣的全球發行。",
+      "src": "https://en.wikipedia.org/wiki/A_Way_of_Life_(Suicide_album)"
+     },
+     {
+      "f": "同條目導言記：視覺藝術家 Stefan Roloff 為〈Dominic Christ〉做了一支音樂錄影帶；Suicide 到海外宣傳本張，在巴黎演出單曲〈Surrender〉並於法國電視播出。2005 年本張經 Martin Rev 略作重混後重製，由 Mute 旗下的 Blast First 廠牌再發，加一張現場素材的附碟。",
+      "src": "https://en.wikipedia.org/wiki/A_Way_of_Life_(Suicide_album)"
+     },
+     {
+      "f": "Apple Music GB 店面有兩個對應本張的條目：collectionId 1435782281「A Way of Life (2005 - Remaster)」9 軌、releaseDate 1988-01-01、9 軌全部帶 previewUrl；collectionId 1684448551「A Way of Life (35th Anniversary Edition) [2023 Remaster]」13 軌、releaseDate 1988-01-01、13 軌全部帶 previewUrl，後四軌是〈Born in the USA (Extended Version - Live in Paris 1988)〉〈Devastation (Live in Paris 1988)〉〈Dominic Christ (Early Version 1987)〉〈Cheree (Live in Paris 1988)〉。",
+      "src": "https://music.apple.com/gb/album/1435782281"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Suicide",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Alan Vega 的人聲配 Martin Rev 的電子琴與鼓機，1977 年 12 月由 Red Star 發行，Craig Leon 與 Marty Thau 製作，在紐約 Ultima Sound 四天錄完。Leon 把替雷鬼樂手工作時看來的手法搬進來，用 Eventide 數位延遲替人聲加回音。〈Frankie Teardrop〉十分鐘的殺人敘事，歌詞是混音階段才由 Vega 改定的。當年美國樂評一面倒惡評，唱片也沒進榜。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Suicide_(1977_album)",
+     "https://musicbrainz.org/release-group/702d4a53-9f00-3f57-a723-e5e267518454"
+    ]
+   },
+   {
+    "album": "Suicide: Alan Vega and Martin Rev",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "廠牌想找 Giorgio Moroder，最後坐進控制室的是 Ric Ocasek。ZE Records 原本屬意由 Moroder 操刀，想要一張更偏舞曲取向的唱片，實際接手的卻是 The Cars 的 Ocasek——他 1980 年 1 月在紐約的 Power Station 錄完這張，分文未取，還自掏腰包替 Martin Rev 添購新器材。同年 5 月唱片問世，英國盤與 Island 聯名，是這組二人團的第二張。Rev 日後表示，這張唱片呈現的並不是樂團真正的樣貌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Suicide:_Alan_Vega_and_Martin_Rev",
+     "https://musicbrainz.org/release-group/a9069ea4-f95f-3ac2-a353-59346a98e172"
+    ]
+   },
+   {
+    "album": "A Way of Life",
+    "manifest": "onboarding-manifest-c93-20260910.json",
+    "desc": "內頁記下的編制只有兩人：一個編鼓機與鍵盤，一個唱。Martin Rev 負責鍵盤與鼓機編程，Alan Vega 只唱。第三張的製作人是 Ric Ocasek，1980 年的同名專輯也由他製作。曲風欄依 AllMusic 記為 synth-pop 與 drone rock，單曲〈Surrender〉那欄則多了 doo-wop。樂團到海外宣傳，在巴黎演出〈Surrender〉、於法國電視播出；Stefan Roloff 替〈Dominic Christ〉做了錄影帶。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3979465e-cea8-346a-bdb5-1dc33312f350",
+     "https://musicbrainz.org/release/9aaed464-3521-34c2-8ee0-16216698db08",
+     "https://en.wikipedia.org/wiki/A_Way_of_Life_(Suicide_album)",
+     "https://en.wikipedia.org/wiki/Surrender_(Suicide_song)",
+     "https://en.wikipedia.org/wiki/Suicide:_Alan_Vega_and_Martin_Rev",
+     "https://music.apple.com/gb/album/1435782281"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sunn o)))",
+  "name": "Sunn O)))",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2005,
+   2019
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Monoliths & Dimensions",
+    "year": 2009,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Black One",
+    "year": 2005,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Life Metal",
+    "year": 2019,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c51a-d",
+    "album": "Life Metal",
+    "facts": [
+     {
+      "f": "這張的方向是明亮與交響性，取代樂團慣有的黑暗；Greg Anderson 說這個轉向來自團員生活的變化，包括為人父與個人層面的圓滿。",
+      "src": "https://en.wikipedia.org/wiki/Life_Metal"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Monoliths & Dimensions",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Sunn O))) 第六張，2007 到 2009 年間分批錄成。編制從兩把吉他擴到 Eyvind Kang 的編曲、Attila Csihar 的人聲、Oren Ambarchi 與 Earth 的 Dylan Carlson，再加上長號手 Julian Priester 與 Stuart Dempster、低音提琴三重奏、法國號與英國管，以及一支維也納女聲合唱團。樂團強調這不是 drone metal 配弦樂，而是把回授本身的音色攤開。四首曲子共五十三分鐘，收尾的〈Alice〉獻給 2007 年過世的豎琴手 Alice Coltrane。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Monoliths_%26_Dimensions",
+     "https://musicbrainz.org/release-group/2c33e8a0-b2be-3224-8748-92e1d8ea948e"
+    ]
+   },
+   {
+    "album": "Life Metal",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "Steve Albini 掌機、全程類比，兩週錄出一堵發亮的低頻牆。2018 年 7 月錄於芝加哥的 Electrical Audio，是樂團第一張純類比的作品，2019 年 4 月 26 日由 Southern Lord 發行。低頻的重量沒有變，顏色卻轉向明亮與交響性；Greg Anderson 把這個轉向歸給團員生活的變化，包括為人父。Hildur Guðnadóttir 帶來人聲與電大提琴，Anthony Pateras 負責管風琴編寫，樂評反應相當正面。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Life_Metal",
+     "https://musicbrainz.org/release-group/e481b7eb-39c1-4db2-a1e8-e338e0d565b5"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "supercar",
+  "name": "SUPERCAR",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1998,
+   2002
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Three Out Change",
+    "year": 1998,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Highvision",
+    "year": 2002,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "OOYeah!!",
+    "year": 1999,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "television",
+  "name": "Television",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1977,
+   1992
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Adventure",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Television",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Marquee Moon",
+    "year": 1977,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "testament",
+  "name": "Testament",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1987,
+   1997
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Legacy",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Demonic",
+    "year": 1997,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Practice What You Preach",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "the black skirts",
+  "name": "The Black Skirts",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2008,
+   2017
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "201",
+    "year": 2008,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Don't You Worry Baby (I'm Only Swimming)",
+    "year": 2011,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "TEAM BABY",
+    "year": 2017,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 14,
+   "researchRecords": 2,
+   "facts": 6,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c105-b",
+    "album": "Don't You Worry Baby (I'm Only Swimming)",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 6346c2bb 的欄位：title「Don't You Worry Baby (I'm Only Swimming)」、artist-credit《검정치마》（**諺文**；藝人實體 a697464c，主名亦為諺文、sort-name Black Skirts, The）、first-release-date **2011-07-13**、primary-type Album、secondary-types **空**。轄下 2 個 release、**都是 KR/Official**：CD（2011-07-13，label-info **Doggy Rich** catno S90361C，barcode 8803581193619，12 軌）與 Digital Media（**2011-07-29**，同廠牌，12 軌）。**實體 KR Official 盤只有一筆，數位盤晚了十六天。**",
+      "src": "https://musicbrainz.org/ws/2/release-group/6346c2bb-bcf8-4b72-a5a2-a1b91f16302d?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "MB 兩筆 release 的曲目**都用英譯曲名**（MB 這份建檔沒有留諺文原題）：1〈Goodbye〉3:03、2〈Freeloader〉2:24、3〈Love Shine〉4:19、4〈Only Son〉3:49、5〈International Love Song〉4:17、6〈Weather〉3:17、7〈Breakfast〉3:10、8〈The Music in Her〉3:33、9〈Young Love〉3:50、10〈Ariel〉4:18、11〈Chivalry〉2:45、12〈Parrot〉5:08。單片 12 軌、合計 2639 秒（43:59）。**十二軌裡十一軌都在 2:24 到 4:19 之間，只有收尾的〈Parrot〉5:08 超過五分鐘**，最短是第 2 軌〈Freeloader〉2:24。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=6346c2bb-bcf8-4b72-a5a2-a1b91f16302d&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "韓文維基〈Don't You Worry Baby (I'm Only Swimming)〉專條記這是《검정치마》的**第二張正規音盤**，並列出**諺文原題的曲目**：〈이별노래〉〈무임승차〉〈Love shine〉〈외아들〉〈International love song〉〈날씨〉〈아침식사〉〈음악하는 여자〉〈젊은 우리 사랑〉〈Ariel〉〈기사도〉〈앵무새〉。**十二軌、順序與 MB 的英譯完全對得上**——〈이별노래〉對 Goodbye、〈무임승차〉對 Freeloader、〈외아들〉對 Only Son、〈날씨〉對 Weather、〈아침식사〉對 Breakfast、〈음악하는 여자〉對 The Music in Her、〈젊은 우리 사랑〉對 Young Love、〈기사도〉對 Chivalry、〈앵무새〉對 Parrot，其中 Love shine、International love song、Ariel 三軌原題本來就是英文。",
+      "src": "https://ko.wikipedia.org/wiki/Don't_You_Worry_Baby_(I'm_Only_Swimming)"
+     },
+     {
+      "f": "韓文維基〈검정치마〉（藝人條目）：《검정치마》（The Black Skirts）是韓國獨立搖滾樂團，2004 年在美國紐約以三人 punk rock 編制成軍，現在是在美僑胞創作歌手 Jo Hyu-il 一人的單人樂團。**2008 年 11 月 13 日發行首張正規音盤《201》**、以此在第 7 屆 Korean Music Awards 拿下最優秀現代搖滾音盤；**2011 年 7 月 13 日發行第二張正規音盤《Don't You Worry Baby (I'm Only Swimming)》**；到條目撰寫時為止各張專輯合計售出約五萬張以上。",
+      "src": "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c105-b",
+    "album": "TEAM BABY",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group 872c10f4 的欄位：title「TEAM BABY」、artist-credit「**The Black Skirts**」（拉丁；藝人實體 a697464c，主名為諺文《검정치마》）、first-release-date **2017-05-30**、primary-type Album、secondary-types **空**。轄下 2 個 release、**都是 KR/Official、日期都是 2017-05-30**：39579472（標題「**Team Baby**」，CD，label-info **Doggy Rich** catno YP 0002，barcode 8809634380012，10 軌）與 3e85ea55（標題「**TEAM BABY**」，媒體格式未填，**label-info HIGHGRND**，10 軌）。**兩筆的廠牌欄不一樣：一筆 Doggy Rich、一筆 HIGHGRND。**",
+      "src": "https://musicbrainz.org/ws/2/release-group/872c10f4-7dd3-4e68-a91f-869836bfc0ad?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "英文維基〈Team Baby〉專條：這是 The Black Skirts 的 **third studio album**，**released on 30 May 2017**，並入圍 2018 年 Korean Music Awards 的 album of the year。Background 節記 2016 年他與 Tablo 主持的廠牌 **HIGHGRND** 簽約；**專輯封面是他父母的結婚照**；他自己形容這會是一張非常成熟的專輯。Critical reception 引 Music Y 的 Park Sangjoon（說整張裡很難只挑一首最好的，每首都美、完成度都高）與 IZM 的 Kang Minjeong（說大半曲子都填著平常的愛情主題卻不覺得負擔，是因為那種獨特的乾燥質地）。",
+      "src": "https://en.wikipedia.org/wiki/Team_Baby"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Don't You Worry Baby (I'm Only Swimming)",
+    "manifest": "onboarding-manifest-c105-20260910.json",
+    "desc": "這個名字現在只有一個人，2004 年在紐約是三人 punk 編制。這團當年在美國紐約以三人 punk rock 的形式成軍，如今是在美僑胞創作歌手 Jo Hyu-il 一個人的單人樂團。兩筆建檔都是韓國正式盤、都掛 Doggy Rich，CD 的目錄號 S90361C，數位那筆晚了十六天，兩筆同為十二軌。全碟 43 分 59 秒，十一軌落在 2 分 24 秒到 4 分 19 秒之間，只有收尾的〈앵무새〉5 分 08 秒破五分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6346c2bb-bcf8-4b72-a5a2-a1b91f16302d?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=6346c2bb-bcf8-4b72-a5a2-a1b91f16302d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ko.wikipedia.org/wiki/Don't_You_Worry_Baby_(I'm_Only_Swimming)",
+     "https://itunes.apple.com/lookup?id=1316316551&country=us&entity=song&limit=200",
+     "https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88",
+     "https://musicbrainz.org/ws/2/release-group?artist=a697464c-69b1-4bbc-88cc-570c025a25e5&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/The_Black_Skirts",
+     "https://itunes.apple.com/lookup?id=365442996&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/6346c2bb-bcf8-4b72-a5a2-a1b91f16302d"
+    ]
+   },
+   {
+    "album": "TEAM BABY",
+    "manifest": "onboarding-manifest-c105-20260910.json",
+    "desc": "封面印的是他父母的結婚照。2016 年他與 Tablo 主持的廠牌 HIGHGRND 簽約，隔年這張碟留下兩筆同日建檔，一筆掛 Doggy Rich、目錄號 YP 0002，另一筆掛 HIGHGRND，兩筆都是十軌。前九軌都在 2 分 44 秒到 5 分 25 秒之間，收尾的〈Everything / 걱정하지마〉在實體盤上一軌就 15 分 40 秒，曲名欄用一道斜線把兩首歌併寫；上架版把那一軌截成 4 分 53 秒。〈내 고향 서울엔〉在 2016 年先發過單曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/872c10f4-7dd3-4e68-a91f-869836bfc0ad?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=872c10f4-7dd3-4e68-a91f-869836bfc0ad&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1242154383&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Team_Baby",
+     "https://musicbrainz.org/ws/2/release-group?artist=a697464c-69b1-4bbc-88cc-570c025a25e5&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=365442996&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/872c10f4-7dd3-4e68-a91f-869836bfc0ad"
+    ]
+   },
+   {
+    "album": "201",
+    "manifest": "onboarding-manifest-c43-korea-20260823.json",
+    "desc": "검정치마是조휴일的個人名義；他十二歲移居美國、2006 年返韓後以單人樂團起步。首張《201》2008 年 11 月 13 日由루비살롱發行，錄音在自宅地下室完成，十首曲全由조휴일作詞作曲。乾冷的鼓組配上懶散人聲與粗糙吉他，〈좋아해줘〉、〈Antifreeze〉傳唱至今。本作獲한국대중음악상最佳現代搖滾專輯，並列名멜론與한겨레合辦的「한국 대중음악 명반 100」第 73 名。",
+    "sourceUrls": [
+     "https://ko.wikipedia.org/wiki/201_(음반)",
+     "https://en.wikipedia.org/wiki/The_Black_Skirts",
+     "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100",
+     "https://musicbrainz.org/release-group/68e84b50-5c44-3729-934c-3e271591be06"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "the blue hearts",
+  "name": "THE BLUE HEARTS",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1987,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "TRAIN-TRAIN",
+    "year": 1988,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "THE BLUE HEARTS",
+    "year": 1987,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "BUST WASTE HIP",
+    "year": 1990,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51d-e",
+    "album": "BUST WASTE HIP",
+    "facts": [
+     {
+      "f": "原盤由 East West Japan 體系的 GARLAND 廠牌發行，型號 AMCW-4077；1993 年 2 月 10 日另發行過片假名標題的再版（AMCW-4157）。",
+      "src": "https://musicbrainz.org/release-group/67950b6f-eba4-3caa-a1dd-1debbf811126"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "THE BLUE HEARTS",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成，1987年5月由メルダック推出的同名出道作，自己掛製作，也是他們錄音室作品裡收錄時間最短、衝勁最足的一張。〈リンダ リンダ〉〈未来は僕等の手の中〉〈終わらない歌〉〈少年の詩〉全在此，インディーズ時期的〈人にやさしく〉反而未收。2007年Rolling Stone Japan的日本搖滾百大專輯把它排在第3位。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS_(アルバム)",
+     "https://en.wikipedia.org/wiki/The_Blue_Hearts",
+     "https://musicbrainz.org/release-group/45503be2-43b3-3221-88d5-a6fb3ae18dd1"
+    ]
+   },
+   {
+    "album": "TRAIN-TRAIN",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "1988 年 11 月 23 日由 Meldac 發行的第三張專輯，與同名單曲同日推出，樂團與谷川千央共同製作。谷川的構想讓全碟帶有概念盤的形狀：封面設計取自火車票，開頭一段疾走的藍調口琴獨奏接進第一曲，末曲之後再讓〈TRAIN-TRAIN〉的副歌與那段口琴重現一次。前兩作以龐克為主，這張則把藍調、民謠、鄉村的根源素材放進來，並邀來多位客席樂手。〈ラブレター〉〈青空〉後續都單獨發行單曲。最高登上 Oricon 第 3 名，在榜 44 週。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/TRAIN-TRAIN%20(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+     "https://en.wikipedia.org/wiki/Train-Train",
+     "https://musicbrainz.org/release-group/f39d4e7d-5cfa-3465-a823-067082236fc7"
+    ]
+   },
+   {
+    "album": "BUST WASTE HIP",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "出到第四張，他們才頭一次坐上 Oricon 專輯榜冠軍。先行單曲〈情熱の薔薇〉1990 年 7 月 25 日問世，8 月 6 日登上 Oricon 單曲週榜第 1 名，賣了約 50 萬張，同時是 TBS 電視劇《はいすくーる落書2》的主題曲。專輯隨後在同年 9 月 10 日由 GARLAND 推出，錄於 Avaco Creative Studio，由甲本ヒロト、真島昌利、河口純之助與梶原徹也四人自己製作，收 14 首、全長約 52 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bust_Waste_Hip",
+     "https://musicbrainz.org/release-group/67950b6f-eba4-3caa-a1dd-1debbf811126",
+     "https://ja.wikipedia.org/wiki/%E6%83%85%E7%86%B1%E3%81%AE%E8%96%94%E8%96%87"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "the cardigans",
+  "name": "The Cardigans",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   2005
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Long Gone Before Daylight",
+    "year": 2003,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Super Extra Gravity",
+    "year": 2005,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "First Band on the Moon",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "the cars",
+  "name": "The Cars",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1978,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Candy-O",
+    "year": 1979,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Heartbeat City",
+    "year": 1984,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Cars",
+    "year": 1978,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Heartbeat City",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "波士頓新浪潮團 The Cars 的第五張作品，1984 年 3 月由 Elektra 發行，首度換掉長期合作的製作人 Roy Thomas Baker，改請 Mutt Lange 操刀，把合成器與吉他磨得極為光滑。〈Drive〉登上 Hot 100 第三名、〈You Might Think〉第七，〈Hello Again〉的錄影帶由 Andy Warhol 執導並親自入鏡。專輯攻上 Billboard 200 第三名、美國四白金。封面用的是 Peter Phillips 1972 年畫作《Art-O-Matic Loop di Loop》。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Heartbeat_City",
+     "https://musicbrainz.org/release-group/d8e2c87d-767c-3a9c-87eb-b344d1228021"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "the enid",
+  "name": "The Enid",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1983,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Something Wicked This Way Comes",
+    "year": 1983,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Stand",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Spell",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 29,
+   "researchRecords": 3,
+   "facts": 7,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c80-a",
+    "album": "Something Wicked This Way Comes",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 1881252）記：released 欄填 **1983-02**，英國發行，廠牌欄「Not On Label (The Enid Self-released)」、編號 **Enid 3**，形制 Vinyl／LP／Album／Stereo，**七軌**：A 面〈Raindown〉〈Jessica〉〈And Then There Were None〉〈Evensong〉，B 面〈Bright Star〉〈Song For Europe〉〈Something Wicked This Way Comes〉。",
+      "src": "https://www.discogs.com/release/1881252"
+     },
+     {
+      "f": "英文維基（該段引註 Colin Larkin 編《The Virgin Encyclopedia of Popular Music》1997 年精簡版第 431 頁）寫：這是樂團的第五張專輯，**是 The Enid 第一張有歌詞的專輯**，詞由當時的鼓手 Chris North 寫、由 Godfrey 以「mock-operatic」的方式唱；整張是一張概念專輯，講的是核戰的威脅與人們面對它的各種反應。",
+      "src": "https://en.wikipedia.org/wiki/The_Enid"
+     },
+     {
+      "f": "Discogs master 3072 底下十二個版本：1983 年英國原盤與同年的另一筆自製版、日本 Nexus 1985 年的 K22P 505、樂團自己 1987 年的 ENID CD3、Mantella 1993 年的 MNTLCD1、日本 Belle Antique 1996 年的 MAR 96293、日本 WHD 2006 年的 IECP-10077、Operation Seraphim 2010 年的 EWCD03、Inner Sanctum 2012 年的 ENID035CD 等；**其中只有一筆標 Unofficial Release**——2018 年一筆俄羅斯發行，掛的是另一個 Discogs 廠牌實體「Operation Seraphim (2)」（編號 1075123）、沿用正版的編號 EWCD03。",
+      "src": "https://www.discogs.com/master/3072"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c80-b",
+    "album": "The Stand",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 3333651）記：1984 年 3 月英國盤，**廠牌欄就叫 The Stand、編號 THE STAND 1**，Vinyl／LP／Album，© Enidsongs。條目註記的第一句是「**Fan club record.**」，最後一句是「**This album is not for sale to the public.**」",
+      "src": "https://www.discogs.com/release/3333651-The-Enid-The-Stand"
+     },
+     {
+      "f": "Discogs 的「The Stand」廠牌頁（label 152631）共九筆，**這個廠牌名底下同時掛著三種編號體系**：THE STAND 1（1984，本張）、THE STAND 2（1985，掛 The Enid 的合輯《The Enid》）、STAND 3（1985，Glen Baker 的《Brief Encounter》，另有一筆試壓）、以及 The Enid 自己的 ENID 8《The Spell》（1985）與 ENID 9《Fand》（1985），另有兩筆 1990 年代 Mantella 的 CD 重刻。",
+      "src": "https://www.discogs.com/label/152631-The-Stand"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c80-b",
+    "album": "The Spell",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 1783699）記：1985 年英國盤，廠牌欄同時掛「Not On Label (The Enid Self-released)」與「The Stand」、編號都是 **ENID 8**；形制是**兩張十二吋、45 轉**的 Album／Stereo，對開封套。條目註記寫「Recorded at The Lodge Studio in the summer/autumn 1984」，並註明所有曲子的版權掛「Standup Music」。",
+      "src": "https://www.discogs.com/release/1783699-The-Enid-The-Spell"
+     },
+     {
+      "f": "Discogs 的「The Stand」廠牌頁（label 152631）把本張的 ENID 8 與 1985 年 Glen Baker 的《Brief Encounter》(STAND 3)、The Enid 自己的 THE STAND 1、THE STAND 2、ENID 9《Fand》列在同一份目錄裡。",
+      "src": "https://www.discogs.com/label/152631-The-Stand"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Something Wicked This Way Comes",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "封套背面寫著：這張唱片永遠不會出現在英國的任何一家店裡。同一段話接著說，它是特地做來由 The Enid 直接賣出的，地址也印在同一面：Claret Hall Farm, Near Clare, Sudbury, Suffolk。他們自己的目錄同一年鋪開六個編號，其中四個是舊作重出，本張是 Enid 3。維基引 Colin Larkin 的百科說，這是樂團第五張專輯，也是他們第一張有歌詞的專輯，講核戰的威脅與人們面對它的各種反應。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1881252",
+     "https://en.wikipedia.org/wiki/The_Enid",
+     "https://www.discogs.com/label/214418",
+     "https://musicbrainz.org/release-group/bb7ee654-d362-3287-a9d4-01cb693c1799",
+     "https://itunes.apple.com/lookup?id=1537073042&entity=song&country=gb",
+     "https://www.discogs.com/master/3072",
+     "https://musicbrainz.org/artist/66f8692c-966d-4dfb-a2ed-babf51241922"
+    ]
+   },
+   {
+    "album": "The Stand",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "連著三個晚上，樂團在曼徹斯特的 The Band on The Wall 錄下了這張碟。1983 年 10 月 24、25、26 日，混音在劍橋的 Spaceward Studios 完成。1984 年 3 月出來時，廠牌欄填的就是 The Stand、編號 THE STAND 1，九軌；註記第一句是「Fan club record.」，另一句說特意收了演出曲目裡還沒錄過音的東西，〈Evensong〉是其中一首。credit 只有兩個名字，同掛作曲、演出與製作。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3333651-The-Enid-The-Stand",
+     "https://musicbrainz.org/release/b227cac8-42d6-4bbd-b99f-67b78f7b4e55",
+     "https://musicbrainz.org/release-group/0cb16656-688f-4812-a34f-ea23c908bcc2",
+     "https://www.discogs.com/master/588831-The-Enid-The-Stand",
+     "https://www.discogs.com/label/152631-The-Stand",
+     "https://en.wikipedia.org/wiki/The_Enid",
+     "https://coverartarchive.org/release-group/0cb16656-688f-4812-a34f-ea23c908bcc2/front"
+    ]
+   },
+   {
+    "album": "The Spell",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "前四首照四季命名，一路從冬天走到秋天。〈Summer〉十三分四十四秒最長，〈Autumn \"Veni Creator Spiritus\"〉九分四十八秒次之；收尾兩首短得多，〈Elephants Never Die〉五分十四秒，末軌只有三分十四秒。形制是兩張十二吋、45 轉，錄音在 The Lodge Studio、1984 年的夏秋兩季。廠牌欄同時掛樂團自營與 The Stand，編號都是 ENID 8，配銷交給 Pinnacle。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1783699-The-Enid-The-Spell",
+     "https://musicbrainz.org/release/6f8d8ae2-3503-4c4c-862f-ed3d36b92769",
+     "https://musicbrainz.org/release/802e7a73-bfe5-437d-9f4b-92253e4fee23",
+     "https://musicbrainz.org/release-group/b28f1b7e-6a71-3d03-b768-97037f4def2e",
+     "https://www.discogs.com/master/129088-The-Enid-The-Spell",
+     "https://www.discogs.com/label/152631-The-Stand",
+     "https://music.apple.com/gb/album/the-spell/1624832721"
+    ]
+   }
+  ]
+ }
+]

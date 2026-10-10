@@ -15,7 +15,7 @@
 //   - Firestore card_catalog：需要 API key，只產出 REST PATCH 的 payload 供本機執行
 //   - album_overrides：規則是 allow write: if isAdmin()，REST 實測 403，只能走 admin.html 後台。
 //     所以試聽改走 §6 的「靜態路徑」（data/apple-audio-map-v1.json），那是 Git 檔案，本腳本可安全處理
-//   - Worker KV 固定簡介：轉檔腳本在另一個 repo（dip-vinyl-worker），不重複實作，只提示指令
+//   - Worker KV 固定簡介：轉檔用 scripts/kv-from-manifest.mjs（2026-10-10 從 worker repo 複製進來，雲端才跑得到），這裡只提示指令
 //
 // 冪等：已在 seed／apex／靜態地圖裡的卡會被跳過，可重複執行。
 import fs from 'node:fs';
@@ -100,7 +100,9 @@ for (const a of ready) {
 const STATUS_FILE = path.join(ROOT, 'card-preview-status.js');
 const statusRaw = fs.readFileSync(STATUS_FILE, 'utf8');
 const negAdds = negative
-  .filter(a => !statusRaw.includes(`"${cardIdOf(a.artist, a.album)}"`))
+  // 用 JSON.stringify 比對：鍵裡有雙引號（《Sunrise From West Sea "Live"》）時，檔案裡存的是跳脫過的寫法，
+  // 直接夾引號比對會永遠找不到，每重跑一次就多寫一行重複的鍵（2026-10-04）。
+  .filter(a => !statusRaw.includes(JSON.stringify(cardIdOf(a.artist, a.album)) + ":"))
   .map(a => [cardIdOf(a.artist, a.album), a.preview.status]);
 
 // --- 3. seed_cards / apex_pool（上架開關）------------------------------------
@@ -132,6 +134,9 @@ const seedAdds = [], apexAdds = [], poolSkips = [];
 for (const a of albums) {
   if (existing.has(poolKeyOf(a.artist, a.album))) { poolSkips.push(`${a.artist} — ${a.album}`); continue; }
   const year = a.research?.suggestedYear ?? null;
+  // 年份欄是空的就不准上架。2026-10-04 雲端交來的單張 manifest 沒帶 research.suggestedYear，
+  // 何欣穗《完美小姐》因此以 year=null 進池（年代篩選抽不到它），事後才補。
+  if (WRITE_POOL && !Number.isInteger(year)) { console.error(`中止：${a.artist} — ${a.album} 沒有 research.suggestedYear，不寫卡池。`); process.exit(1); }
   const tier = a.apexAssessment?.eligible ? a.apexAssessment.tier : null;
   // 一般卡與王牌現在是同一種列，差別只在第 9 欄 tier：
   //   [artist, album, classic, obscurity, accessibility, genres[], year, composer|null, tier?]
@@ -192,8 +197,8 @@ if (WRITE_PREVIEW) {
   console.log('下一步依 ALBUM_ONBOARDING §8 的順序：');
   console.log('  1. 用 card-catalog-patches.json 寫 Firestore（updateMask 已備好，不會蓋掉後台改過的欄位）');
   console.log('  2. KV 固定簡介：');
-  console.log(`     node ../dip-vinyl-worker/scripts/desc-gen/from_onboarding_manifest.mjs ${path.basename(manifestPath)} kv-bulk.json`);
-  console.log('     npx wrangler kv bulk put kv-bulk.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105');
+  console.log(`     node scripts/kv-from-manifest.mjs ${path.basename(manifestPath)} kv-bulk.json`);
+  console.log('     npx wrangler kv bulk put kv-bulk.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote');
   console.log(`  3. 試聽： node scripts/publish-manifest.mjs ${path.basename(manifestPath)} --write-preview`);
   console.log('           node scripts/build-apple-audio-runtime-map.mjs');
   console.log('  4. 回讀 1-3 確認與 manifest 一致');

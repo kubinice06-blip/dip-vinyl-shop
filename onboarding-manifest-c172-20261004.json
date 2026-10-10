@@ -1,0 +1,222 @@
+{
+ "schemaVersion": 1,
+ "batch": "c172-20261004",
+ "albums": [
+  {
+   "artist": "Stefano Di Battista Quintet",
+   "album": "A prima vista",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **81f84659-e4f4-3861-9ad1-e60fbc93bbcd**。`release-group/<id>?fmt=json&inc=artist-credits+genres+tags`：title 逐字「A prima vista」、artist-credit **單一實體** `Stefano Di Battista Quintet`（**88131738-b6e2-4434-874a-19b6da32ea77，`type` 逐字 `Group`、`country` 逐字 `IT`、sort-name 逐字 `Di Battista, Stefano Quintet`、disambiguation 空**）、`first-release-date` 逐字 `1998`、**`primary-type` 逐字 `null`、`primary-type-id` 逐字 `null`**、`secondary-types` 逐字空陣列、`genres` 與 `tags` 逐字皆空陣列。`release?release-group=<id>&fmt=json&inc=media+labels+recordings+artist-credits&limit=100`：**`release-count` 逐字 1**——`1eaa4e09-cec6-4e99-8a7b-bbcae5169b34`（`date` 逐字 `1998`、`country` 逐字 `FR`、`status` 逐字 `Official`、barcode 逐字 `724349794528`、`label-info` 逐字 `[('EMI Music France', '7243 4 97945 2 8')]`、media 逐字 `CD` 12 軌、artist-credit 逐字 `Stefano Di Battista Quintet`）。**MB 只建了法國原盤，日版 TOCJ-66022 與宣傳 CD-ROM 都沒建。** 十二軌（MB recordings 逐字，與 Discogs 7095518 逐軌一致）：Spirit of Messengers 2:57／Funny Moon 4:07／Aiova 6:57／Ne'll acqua 5:53／Buffo 3:17／Another Time 6:36／Dina 5:30／T-Tonic 3:33／Miccettina 7:22／First Smile 4:01／Benji 5:29／Lush Life 3:17＝**58 分 59 秒**。逐軌 `Composed By`（Discogs 7095518 的 tracklist `extraartists`，第 1824-B 條要求的整筆逐軌欄）：**Stefano Di Battista 7 軌**（1 Spirit Of Messengers、4 Ne'll Acqua、5 Buffo、6 Another Time、7 Dina、8 T-Tonic、11 Benji）／**Rosario Bonaccorso 2 軌**（3 Aiova、9 Miccettina）／**Eric Legnini 1 軌**（2 Funny Moon）／**Flavio Boltro 1 軌**（10 First Smile）／**Billy Strayhorn 1 軌**（12 Lush Life）——**7＋2＋1＋1＋1＝12，逐軌核過。**⚠ **Discogs 的 credits 欄只列五個人名（Di Battista as/ss、Bonaccorso b、Henocq d、Boltro tp/flh、Pflug producer），漏掉鋼琴**——**Eric Legnini 在 Discogs 只以第 2 軌的作曲者身分出現**；五重奏的鋼琴席由 Legnini 擔任這件事出自 **fr.wikipedia.org/wiki/Stefano_Di_Battista** 的 quintette 段（逐字列 Flavio Boltro／Eric Legnini／Benjamin Henocq／Rosario Bonaccorso）。錄音 1998-08-27／28／29，Gil Evans 錄音室，法國亞眠（Discogs 7095518 notes 逐字）。Discogs：master **2029279**（⚠ **master id，不是 release id**）、release 7095518／32254434／17872195 共三筆實體條目。",
+    "rgMbid": "81f84659-e4f4-3861-9ad1-e60fbc93bbcd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/81f84659-e4f4-3861-9ad1-e60fbc93bbcd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 417,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=417，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他跳進了 Blue Note，錄音卻留在亞眠的那座文化中心裡。Stefano Di Battista Quintet 1997 年以《Volare》在法國廠牌 Label Bleu 出道，1998 年拿到 Blue Note 的第一紙合約。錄音的地方仍是亞眠文化之家裡的 Gil Evans 錄音室，那間錄音室屬於 Label Bleu；1998 年 8 月 27、28、29 三天錄完，製作人是 Nicolas Pflug。日本版要等到 2001 年 3 月才上市。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7095518",
+     "https://fr.wikipedia.org/wiki/Maison_de_la_culture_d%27Amiens",
+     "https://fr.wikipedia.org/wiki/Label_Bleu",
+     "https://it.wikipedia.org/wiki/Stefano_Di_Battista",
+     "https://www.discogs.com/release/11004633",
+     "https://fr.wikipedia.org/wiki/Stefano_Di_Battista",
+     "https://fr.wikipedia.org/wiki/Flavio_Boltro",
+     "https://fr.wikipedia.org/wiki/%C3%89ric_Legnini",
+     "https://www.discogs.com/release/17872195",
+     "https://musicbrainz.org/release-group/81f84659-e4f4-3861-9ad1-e60fbc93bbcd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/72/e8/2f/72e82fed-90c5-d6db-cfce-ff02e9ac3c6f/mzaf_1134491702403518149.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "696955471",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stefano Di Battista",
+   "album": "Parker's Mood",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **9069a449-c6d2-3d1d-8cde-e47a58829ab5**。`release-group/<id>?fmt=json&inc=artist-credits+genres+tags`：title 逐字「Parker's Mood」（**ASCII 撇號**）、artist-credit **單一實體** `Stefano Di Battista`（**f6c8ec20-2761-434d-a812-0a9385edc120，`type` 逐字 `Person`、`country` 逐字 `IT`、sort-name 逐字 `Di Battista, Stefano`**）、**`first-release-date` 逐字空字串 `\"\"`**、`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、**`genres` 逐字 `[{jazz}]`、`tags` 逐字 `[{jazz}]`**。`release?release-group=<id>&fmt=json&inc=media+labels+recordings+artist-credits&limit=100`：**`release-count` 逐字 2**——(一) `31b8516a-b0e7-4d69-abf7-e040dea2b103`（**`date`／`country`／`barcode` 逐字皆 null、`status` 逐字 `Official`、`label-info` 逐字空陣列、media `format` 逐字 null、10 軌**）；(二) `3c5ef34e-1e86-417b-95d2-48a67ddee9fa`（`date` 逐字空字串、`country` 逐字 `XE`、`status` 逐字 `Official`、barcode 逐字 `0724386617125`、**`label-info` 逐字 `[('Blue Note', '8661712')]`**、media 逐字 `CD` 12 軌）。**MB 沒建美版 7243 8 66740 2 9、沒建日版 TOCJ-66248。** 十軌基本形（Discogs 1033040 逐軌）：Salt Peanuts 2:49／Embraceable You 9:33／Night In Tunisia 5:00／Parker's Mood 5:17／Confirmation 5:12／Donna Lee 3:24／Laura 6:47／Hot House 3:58／Congo Blues 2:26／'Round Midnight 7:10＝**51 分 36 秒**；日版／歐限定版加 Love For Sale 6:21＋April In Paris 7:07＝**65 分 04 秒**。整筆 `extraartists`（Discogs 1033040，第 1824-B 條要求的整筆逐軌欄）逐字：`Stefano Di Battista — Saxophone [Alto & Soprano]`／`Kenny Barron — Piano [1 to 7, 9, 10]`／`Rosario Bonaccorso — Bass`／`Herlin Riley — Drums`／`Flavio Boltro — Trumpet [1, 3, 5, 8]`／`Yves Chamberland — Producer`／`Tristan Devaux — Mixed By, Recorded By`／`Massimo Simonetti — Recorded By`／`Marwan Danoun — Mastered By`；歐版 11187856 另有 `Jean-Louis Duralek — Artwork By`，且其 `Kenny Barron — Piano` 的 tracks 欄逐字擴成 `1 to 7, 9 to 12`。錄音 2004-04-10／11／12 於 Studio Officine Meccaniche, Milano；混音 2004-05-09／10／27 於 Davout Studio, Paris；母帶 2004-05-28 於 Marwan Manley Mastering, Paris（Discogs 1033040 notes 逐字）。Discogs：master **749899**（⚠ **master id，不是 release id**，`main_release` 逐字 1033040），`versions` 九筆。",
+    "rgMbid": "9069a449-c6d2-3d1d-8cde-e47a58829ab5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9069a449-c6d2-3d1d-8cde-e47a58829ab5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4666,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "獻給 Bird 的十首曲子，真正出自 Bird 筆下的只有四首。Charlie Parker 的曲庫由 Stefano Di Battista 重走一遍，十軌無一出自他的筆；2004 年 4 月 10 至 12 日錄於米蘭的 Officine Meccaniche 錄音室。當年的樂評寫他心繫 Parker 卻不模仿，只是滑進那股律動裡。開場〈Salt Peanuts〉出自 Dizzy Gillespie，鋼琴席的 Kenny Barron 待過 Gillespie 的樂團。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1033040",
+     "https://it.wikipedia.org/wiki/Mauro_Pagani",
+     "https://en.wikipedia.org/wiki/Kenny_Barron",
+     "https://en.wikipedia.org/wiki/Herlin_Riley",
+     "https://en.wikipedia.org/wiki/Donna_Lee",
+     "https://en.wikipedia.org/wiki/Parker%27s_Mood",
+     "https://en.wikipedia.org/wiki/Charlie_Parker",
+     "https://music.apple.com/fr/album/696450658",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2005/BB-2005-01-29.pdf",
+     "https://www.discogs.com/release/11187856",
+     "https://musicbrainz.org/release-group/9069a449-c6d2-3d1d-8cde-e47a58829ab5"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/93/50/fe935020-d75b-e31f-06cc-288e41270545/mzaf_18292627381975485994.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "696450658",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kevin Eubanks",
+   "album": "Spirit Talk",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group **b2295ebc-2cf2-4022-9c77-c5200c990ecd**。`release-group/<id>?fmt=json&inc=artist-credits+genres+tags`：title 逐字「Spirit Talk」（**有空格**）、artist-credit **單一實體** `Kevin Eubanks`（**23e37f53-d40d-47c4-b247-d60727c25532，`type` 逐字 `Person`、`country` 逐字 `US`、sort-name 逐字 `Eubanks, Kevin`、disambiguation 逐字 `American jazz & fusion guitarist, and composer`**）、**`first-release-date` 逐字 `1993-04-19`（⚠ ＝錄音首日，不是發行日，見 `risk`）**、`primary-type` 逐字 `Album`、`secondary-types` 逐字空陣列、**RG 層 `genres`／`tags` 逐字皆空陣列**（藝人層 genres 逐字 `contemporary jazz`／`jazz`／`jazz fusion`）。`release?release-group=<id>&fmt=json&inc=media+labels+artist-credits&limit=100`：**`release-count` 逐字 1**——`fc09d997-20ba-4c62-8bbc-cea559d4760e`（`date` 逐字 `1993-04-19`、`country` 逐字 `US`、`status` 逐字 `Official`、barcode 逐字 `077778928621`、media 逐字 `CD` 9 軌、**`label-info` 逐字 `[('Capitol Records', 'CDP 0777 7 89286 2 1')]`**）。**MB 沒建荷蘭版、沒建卡帶版、沒建日版 TOCJ-5868。** 查法備忘（第 3619 條）：**`release-group?query=artist:\"Kevin Eubanks\" AND releasegroup:\"Spirit Talk\"` 回 `count: 1`；換成 `title:` 回 `count: 0`；`release-group?artist=23e37f53-…&type=album&limit=100` 回 `count: 19`、本碟在列。** 九軌（Discogs 12110512 逐軌，MB 未填軌長）：Landing 7:13／Contact 7:21／Union 5:02／Spirit Talk 6:21／Earth Party 6:25／Inside 4:59／Going Outside 5:17／Journey 4:33／Livin' 5:47＝**3,178 秒＝52 分 58 秒**。整筆 `extraartists` 逐字（第 1824-B 條要求的整筆逐軌欄）：`Kevin Eubanks — Acoustic Guitar, Electric Guitar`／`Kevin Eubanks — Producer`／`Dave Holland — Acoustic Bass [1 to 7, 9]`／`Robin Eubanks — Trombone [1 to 3, 6, 9]`／`Kent Jordan — Alto Flute [1, 2, 4, 7, 9]`／`Mark Mondesir — Drums [1 to 4]`／`Marvin \"Smitty\" Smith — Drums, Percussion, Vocals [5, 7, 9]`／`Josiah Gluck — Producer [Associate Producer], Engineer`／`John Siket`・`Peter Beckerman — Engineer [Assistant]`／`Ted Jensen — Mastered By`。錄音 **1993-04-19 至 04-23**，Sound On Sound Studios, New York City，**`Recorded direct to 2-track`**（Discogs 12110512 notes 逐字）。Discogs：master **1376323**（⚠ **master id，不是 release id**，`main_release` 逐字 8053308），實體條目四筆 12110512（US CD）／8053308（NL CD）／34433635（US 卡帶俱樂部版）／26988783（JP `released` 逐字 `1994-01-19`）。紙本：Cash Box 1993-10-16 樂評；Billboard 1993-10-23／11-06／11-20 Top Jazz Albums（24／16／14）。",
+    "rgMbid": "b2295ebc-2cf2-4022-9c77-c5200c990ecd",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/1c/fc/e0/1cfce074-fb96-4f78-d8f4-fe671176981a/05099969417054.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715722796",
+    "note": "試聽探測釘定的 collectionId 715722796（us）：Kevin Eubanks — Spirit Talk"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 575,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=575，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九首曲子直接錄成兩軌母帶，中間沒有混音這道工序。Kevin Eubanks 的這九軌錄於 1993 年 4 月 19 至 23 日的紐約 Sound On Sound，整張碟因此像一場錄音室現場。編制逐軌不同，第 6 軌〈Inside〉只剩長號與低音提琴，第 8 軌〈Journey〉只剩他一個人。樂評當時形容它有一種易於進入的空靈感。1993 年 10 月 23 日它以新進的姿態排上 Billboard 爵士榜第 24 名，11 月 20 日來到第 14 名。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12110512",
+     "https://www.discogs.com/release/1445502",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1993/CB-1993-10-16.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-10-23.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-11-20.pdf",
+     "https://musicbrainz.org/release/fc09d997-20ba-4c62-8bbc-cea559d4760e",
+     "https://en.wikipedia.org/wiki/Mark_Mondesir",
+     "https://www.discogs.com/release/26988783",
+     "https://www.discogs.com/release/34433635",
+     "https://musicbrainz.org/release-group/b2295ebc-2cf2-4022-9c77-c5200c990ecd"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/48/a3/68/48a36877-e03f-7863-d5f4-006af225b384/mzaf_4482983303173974793.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715722796",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

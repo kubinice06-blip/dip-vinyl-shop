@@ -1,0 +1,943 @@
+[
+ {
+  "key": "yano",
+  "name": "Yano",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yano 是 1993 年在菲律賓成軍的民謠龐克搖滾樂團，最初由主唱 Dong Abay 與吉他手 Eric Gancio 組成，Onie Badiang 後來加入彈貝斯；錄製首張專輯時鼓手是 Nowie Favila。",
+      "src": "https://en.wikipedia.org/wiki/Yano",
+      "src2": "https://en.wikipedia.org/wiki/Yano_(album)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "團名 yano 取自他加祿語舊字典《Talahulugang Pilipino》的一個詞條，意思是「簡單、樸素」；Abay 說這是 Quezon 省一帶的他加祿語，並不是外界常以為的「probinsiyano」的簡稱。",
+      "src": "https://en.wikipedia.org/wiki/Yano",
+      "src2": "https://www.veritasph.net/?p=81827",
+      "from": "new"
+     },
+     {
+      "f": "Dong Abay 1994 年暫時離開菲律賓大學狄里曼校區的學業投入音樂，十八年後才拿到學位。",
+      "src": "https://en.wikipedia.org/wiki/Dong_Abay",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Yano 的試聽帶是在 Joey Ayala 的家庭錄音室錄成的。",
+      "src": "https://en.wikipedia.org/wiki/Dong_Abay",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yano 的音樂是把西方元素融進菲律賓民族音樂，歌詞用口語化的菲律賓語寫成，以深刻的社會與政治題材在 1990 年代的樂團裡顯得突出。",
+      "src": "https://en.wikipedia.org/wiki/Yano",
+      "src2": "https://www.veritasph.net/?p=81827",
+      "from": "new"
+     },
+     {
+      "f": "〈Banal Na Aso, Santong Kabayo〉（聖狗、聖馬）嘲諷言行不一的虔誠信徒，〈Trapo〉針對傳統政客（trapo 是「傳統政客」的貶義縮寫，字面意思是抹布），〈Mc'Jo〉諷刺濫用員工的資本家，暗指麥當勞與 Jollibee 這類速食連鎖。",
+      "src": "https://en.wikipedia.org/wiki/Yano",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "〈Kumusta Na?〉（你好嗎？）談的是 1986 年 EDSA 革命之後底層民眾的處境；趣味取向的〈Kaka〉寫一個停電後在黑暗中找不到東西的人，指涉 1990 年代初菲律賓頻繁的停電。",
+      "src": "https://en.wikipedia.org/wiki/Yano",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Philippine Star》2002 年的回顧文章，把 Yano 與 Eraserheads、Rivermaya、FrancisM 並列為 1990 年代的主要樂團，稱他們是同代人裡「較被低估的樂團之一」，說他們捕捉了一般人的關切，並認為 Alpha 發行的首作是他們最好的一張。",
+      "src": "https://www.philstar.com/entertainment/2002/04/07/156321/decade-noise-and-magic/amp/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介與事實庫、新查來源在本位相關事實上無衝突；團名意思與 1993 年成軍均與上線簡介一致。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": [
+   "https://lifestyle.inquirer.net/?p=300843（403）"
+  ],
+  "status": "thin",
+  "notes": "身分已照 poolAlbums 核對：卡池 1994 年《Yano》就是菲律賓 Yano（主唱 Dong Abay、Alpha Records 首作），不是同名他人；預抓維基的 warn 只是頁面未提專輯名，專輯頁與樂團頁、Dong Abay 頁互相對得上。本位補查 8 次（4 次 WebSearch：Yano 與 Dong Abay 影響、後輩評價、Esquire 榜單、Dong Abay 後輩影響；4 次 WebFetch：英文維基 Yano 專輯頁、Dong Abay 頁、Philstar、veritasph；另有 Inquirer 一頁 403 未計入）。出於以下原因未進 facts：(1) 樂團 1997 年因 Abay 離團而解散，以及 Gancio 2007 年重組、2013 年《Talâ》，都只見英文維基樂團頁，且搜尋摘要提到各站的成軍、解散與重組年份不一致，成員異動屬高風險，單源不收；成軍年 1993 本位以維基與 wikidata 為準（兩者同屬維基家族，非獨立），僅放 origin 並標 single，寫作層寫成『1993 年成軍』即可，不要再往細節推。(2) Esquire Philippines 2019 年〈10 Essential OPM Albums of the 1990s〉列入本作，只見英文維基專輯頁的來源欄，未能開到原文，且為未排序清單，屬雜誌榜單，單源不收。(3) AllMusic 給 4 顆星（維基專輯頁）、搜尋摘要提到的『首作四白金』等銷量，均單源或來源不明，不收。(4) 上線簡介的『1996 年電視新聞節目指控 backwards masking』與『被宗教團體指為褻瀆』，本位沒有查到可印證或推翻的來源，不列入 pubIssues。legacy 格只有 Philstar 一篇專欄的並列與『被低估』評價，屬單一評論者的看法而非共識，找不到後輩點名受 Yano 影響的來源，所以整體標 thin；寫作層請把 legacy 寫輕，不要說成『影響深遠』。Dong Abay 維基頁另記他 2021 年的網路指控與否認，與音樂份量無關，不收；他的憂鬱症病史與身世細節也不收。"
+ },
+ {
+  "key": "yat-kha",
+  "name": "Yat-Kha",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yat-Kha 來自圖瓦（俄羅斯聯邦內的南西伯利亞地區），由主唱兼吉他手 Albert Kuvezin 領軍，團名取自一種類似日本箏的圖瓦臥式箏 yat-kha。",
+      "src": "https://en.wikipedia.org/wiki/Yat-Kha",
+      "src2": "https://worldmusiccentral.org/?p=3345",
+      "from": "new"
+     },
+     {
+      "f": "Kuvezin 是 Huun-Huur-Tu 的創團成員，該團最初以 Kunggurtug 之名成軍，後來改名；他在第二張專輯錄製前離團，另組偏搖滾路線的 Yat-Kha，原因是他覺得 Huun-Huur-Tu 的「民俗」路線太拘束。",
+      "src": "https://en.wikipedia.org/wiki/Huun-Huur-Tu",
+      "src2": "https://worldmusiccentral.org/?p=3345",
+      "from": "new"
+     },
+     {
+      "f": "Kuvezin 小時候曾被趕出合唱團，被告知再也不要唱歌；他剛開始彈電吉他、唱歌時，圖瓦共產黨的意識形態部門還表示不贊同。",
+      "src": "https://worldmusiccentral.org/?p=3345",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他把 1980 年代末在斯維爾德洛夫斯克（今葉卡捷琳堡）親歷的龐克場景，和自己低沉的泛音唱法合在一起，Yat-Kha 的路線由此而來。",
+      "src": "https://worldmusiccentral.org/?p=3345",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yat-Kha 的音樂是圖瓦傳統音樂與搖滾的混合，辨識度來自 Kuvezin 獨特的 kargyraa 喉唱（kanzat kargyraa）。",
+      "src": "https://en.wikipedia.org/wiki/Yat-Kha",
+      "src2": "https://worldmusiccentral.org/?p=3345",
+      "from": "new"
+     },
+     {
+      "f": "《Re-Covers》在倫敦錄成，由 Ben Mandelson 製作、Justin Adams 協助，把搖滾、藍調、鄉村與民謠名曲用圖瓦的嗓音與樂器重新演繹：歌曲的輪廓保留，精神卻是圖瓦的。",
+      "src": "https://worldmusiccentral.org/?p=3345",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "藝人簡介頁稱 Yat-Kha 是「民族搖滾」（ethno-rock）的奠基者之一，評論者也叫它的風格為「民族龐克」。",
+      "src": "https://www.womex.com/virtual/charmworks/yat_kha",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yat-Kha 2002 年獲 BBC Radio 3 世界音樂大獎（得獎，亞太類）。",
+      "src": "https://en.wikipedia.org/wiki/Yat-Kha",
+      "src2": "https://www.womex.com/virtual/charmworks/yat_kha",
+      "from": "new"
+     },
+     {
+      "f": "在哈薩克阿拉木圖舉辦的首屆 Voices of Asia 藝術節上，擔任國際評審之一的 Brian Eno 賞識了 Kuvezin 的演出，並頒給他評審特別獎。",
+      "src": "https://en.wikipedia.org/wiki/Yat-Kha",
+      "src2": "https://www.womex.com/virtual/charmworks/yat_kha",
+      "from": "new"
+     },
+     {
+      "f": "Yat-Kha 1999 年獲德國樂評人獎（German Critics' Prize）。",
+      "src": "https://en.wikipedia.org/wiki/Yat-Kha",
+      "src2": "https://www.womex.com/virtual/charmworks/yat_kha",
+      "from": "new"
+     },
+     {
+      "f": "Kuvezin 所屬的 Huun-Huur-Tu 在 1990 年代初把圖瓦喉唱帶給了美國聽眾。",
+      "src": "https://worldmusiccentral.org/?p=3345",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫 Kuvezin『1991 年在莫斯科與 Ivan Sokolovsky 另組 Yat-Kha』，本位開頁的來源只有維基 wikidata 的成軍年 1991，莫斯科與 Sokolovsky 兩項未在開過的頁面讀到，不納入 facts，也不判定上線簡介有錯。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "身分照 poolAlbums 核對：卡池只有 1995 年《Yenisei Punk》，與維基樂團頁（albumHits 1，RFI 獎項即為該專輯）相符，是圖瓦的 Yat-Kha。本位補查 6 次（WebSearch 2 次：整體背景、BBC 獎項；WebFetch 4 次：World Music Central、英文維基 BBC Radio 3 Awards、Huun-Huur-Tu 維基頁、WOMEX 藝人簡介頁）。獎項：BBC Radio 3 世界音樂大獎 2002 年得獎，英文維基 Yat-Kha 條目與 WOMEX 簡介頁兩源，World Music Central 也提到得獎但沒給年份；亞太類別只見 WOMEX（藝人自填的簡介頁，非獨立第三方），英文維基 BBC 獎項條目只列出 2006 年他們是亞太類的入圍者，未列 2002 年得獎名單，無法反證，寫作層寫『2002 年獲 BBC Radio 3 世界音樂大獎』即可。Brian Eno 一事：英文維基寫 1991 年首屆 Voices of Asia，WOMEX 寫 1990 年，兩源年份不一致，所以 facts 不帶年份，只寫事件本身，寫作層不要補年份。RFI 獎：英文維基寫 1995 年 RFI『Decouvertes Est』獎（頒給 Yenisei Punk），WOMEX 寫 1996 年 RFI『Pop and Rock a la East』評審團大獎，名稱與年份都不一致，不收。德國樂評人獎 1999 年兩源一致，維基把它連到專輯《Dalai Beldiri》，但專輯發行年另有 1998 與 1999 兩說，所以 facts 不連專輯名。WOMEX 簡介是藝人自述，『民族搖滾奠基者之一』只能寫成『簡介稱』，已標 single。未收：Kuvezin 1991 年與 Sokolovsky 在莫斯科成軍的細節（見 conflicts）、英文維基列的其他地方獎項。legacy 格沒找到後輩點名受 Yat-Kha 影響的來源，以獎項與場合評價支撐；World Music Central 說 Yat-Kha 『play major festivals』但未具名，不收。"
+ },
+ {
+  "key": "ybo²",
+  "name": "YBO²",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "YBO² 是 1984 年由《FOOL'S MATE》創辦人北村昌士組成的日本樂團，K.K.NULL 同年加入。",
+      "src": "https://ja.wikipedia.org/wiki/YBO2",
+      "src2": "https://en.wikipedia.org/wiki/KK_Null",
+      "from": "new"
+     },
+     {
+      "f": "北村昌士創辦的《FOOL'S MATE》被 CDJournal 稱為對 1980 年代獨立場景影響極大的音樂雜誌；他後來離開雜誌專心經營自己的廠牌 TRANS RECORDS，該廠牌旗下有 BOREDOMS、THE GEROGERIGEGEGE、Z.O.A、SODOM 等。",
+      "src": "https://www.westsidespirit.com/news/japanese-indie-rocker-masashi-kitamura-KYNP1320000215302159982",
+      "src2": "https://www.cdjournal.com/main/news/-/68976",
+      "from": "bank"
+     },
+     {
+      "f": "YBO² 的編制是北村昌士（貝斯、人聲、鍵盤）、吉田達也（鼓）與 K.K.NULL（吉他），三人組成一支迷幻力量三重奏式的樂團。",
+      "src": "https://www.cdjournal.com/main/news/-/68976",
+      "src2": "https://www.westsidespirit.com/news/japanese-indie-rocker-masashi-kitamura-KYNP1320000215302159982",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "YBO² 的音樂被歸為另類搖滾、前衛與前衛搖滾（progressive rock）；曲式複雜、拍號頻繁變換，唱腔焦慮而帶歇斯底里。",
+      "src": "https://ja.wikipedia.org/wiki/YBO2",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1986 至 1988 年間的作品多半由北村昌士自己的獨立廠牌 TRANS RECORDS 發行，樂團在 1980 年代後期是日本獨立場景的領頭樂團之一，擁有一群被稱為 Trans Gals 的樂迷。",
+      "src": "https://ja.wikipedia.org/wiki/YBO2",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "K.K.NULL 在 YBO² 之後創立前衛硬核三重奏 Zeni Geva。",
+      "src": "https://en.wikipedia.org/wiki/KK_Null",
+      "src2": "https://www.westsidespirit.com/news/japanese-indie-rocker-masashi-kitamura-KYNP1320000215302159982",
+      "from": "new"
+     },
+     {
+      "f": "鼓手吉田達也之後領軍樂團 Ruins。",
+      "src": "https://www.westsidespirit.com/news/japanese-indie-rocker-masashi-kitamura-KYNP1320000215302159982",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2000 年前後的美國報導稱，YBO² 在追日本更吵、更怪的地下音樂的美國聽眾之間，有傳說般的地位。",
+      "src": "https://www.westsidespirit.com/news/japanese-indie-rocker-masashi-kitamura-KYNP1320000215302159982",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2015 年 TRANS RECORDS 名作復刻系列的第一彈包含 YBO² 的《ALIENATION》（另兩張是 ASYLUM《Crystal Days》與 ILL BONE《死者》），由接近原始母帶的版本重製，並加收先行 12 吋單曲的兩首歌。",
+      "src": "https://www.cdjournal.com/main/news/-/68976",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 1990 年起停止活動，後來再結成。",
+      "src": "https://ja.wikipedia.org/wiki/YBO2",
+      "src2": "https://www.westsidespirit.com/news/japanese-indie-rocker-masashi-kitamura-KYNP1320000215302159982",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1984 年，北村昌士組成 YBO²。",
+    "src": "https://ja.wikipedia.org/wiki/YBO2",
+    "src2": "https://en.wikipedia.org/wiki/KK_Null",
+    "from": "new"
+   },
+   {
+    "f": "2015 年，《ALIENATION》作為 TRANS RECORDS 名作復刻系列的第一彈重新發行。",
+    "src": "https://www.cdjournal.com/main/news/-/68976",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "scaruffi 的搜尋摘要寫樂團在《Starship》（1989）之後結束，Westside Spirit 與日文維基都寫 1990 年起停止活動；採後兩者，facts 只寫『1990 年起停止活動、後來再結成』，不寫解散年與再結成年。",
+   "北村昌士過世年（日文維基寫 2006 年、享年 49）只見單源，不收進 facts。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "身分照 poolAlbums 核對：卡池 1986 年《Alienation》，與 CDJournal（2015 年復刻報導）、Westside Spirit 的 YBO2 專輯脈絡相符，是日本的 YBO²。預抓維基查無，補查 5 次（WebSearch 1 次；WebFetch 4 次：Westside Spirit 北村昌士專訪、日文維基 YBO2、CDJournal 復刻報導、英文維基 KK Null）。Westside Spirit 是 2000 年前後的專訪報導，把 Kitamura 當在世者寫；日文維基自己標註為簡略條目、來源有限，所以相關事實大多標 single。1984 年成軍年：日文維基與英文維基 KK Null 條目（寫 K.K.NULL 1984 年加入）互相支持，scaruffi 搜尋摘要也寫 1984 年；兩個維基條目屬同一來源家族（非獨立），Westside Spirit 本身沒給年份，寫作層寫『1984 年左右』即可。日文維基提到評論把樂團比作某英國樂團（頁面摘要的拼寫無法確認），不收；團名讀法（日文維基記有兩種讀法，最初叫 Iboiboi）不收。上線簡介的 TRANS 07 與唱片印的 TRANS 007、三人的樂器分工，本位沒有開到可印證或推翻的來源，不列 pubIssues；本位查到的樂器分工（北村貝斯、人聲、鍵盤）與 Westside Spirit 一致，CDJournal 只寫 vo／b、dr、g。人名處理：K.K.NULL 在 CDJournal 寫作 K.K.NULL，英文維基寫 KK Null，facts 照 CDJournal 原寫；『北村昌士』『吉田達也』照日文原名。未收：2006 年過世（單源）、北村另組的 CANIS LUPUS、DIFFERANCE、SSE Communications 廠牌的片數、栗原道夫的後續（與樂團聲音關係淡）、原版 LP 市價。"
+ },
+ {
+  "key": "yeah yeah noh",
+  "name": "Yeah Yeah Noh",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yeah Yeah Noh 是 1983 年成立於英國萊斯特的「unpop」樂團，由 Derek Hammond（主唱、吉他）與 John Grayland（吉他）發起，Adrian Crossan（貝斯）與 Graham Summers（鼓）參與第一張單曲，之後 Sue Dorey（鼓、人聲）加入完成編制。",
+      "src": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "from": "bank"
+     },
+     {
+      "f": "Grayland 與 Dorey 另外和 Damian Swarbrick 合辦免費的獨立音樂刊物《Printhead》，專門介紹萊斯特一帶的獨立樂團。",
+      "src": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂團 1986 年解散後，Hammond 轉行當音樂記者，筆名 D.J. Fontana，之後寫過書，並替 Cherry Red Records 編過 John Peel 節目的回顧合輯《Perfect Unpop》。",
+      "src": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Trouser Press 形容 Yeah Yeah Noh 是粗糙、自家製作的 DIY 流行樂團，帶一點 The Fall 的影響，鼓組沒有鈸、貝斯厚實，主唱是一副冷面的男中音。",
+      "src": "https://trouserpress.com/reviews/yeah-yeah-noh/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "《Mojo》雜誌 2012 年把他們的聲音稱為「Calor 瓦斯迷幻」（Calor-gas psychedelia）。",
+      "src": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "早期的《Cottage Industry》EP（1984）是幽默而諷刺的後龐克與 jangle-pop；加入吉他手 Tom Slater 後，樂團轉向較迷幻的聲音、寫作也較嚴肅，做出第一張真正意義上的專輯《Cutting The Heavenly Lawn Of Greatness...Last Rites For The God Of Love》（1985）。Trouser Press 說這張在迷幻色彩之外多了一點製作，仍保有自家錄音的質地，歌詞鋒利。",
+      "src": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "src2": "https://trouserpress.com/reviews/yeah-yeah-noh/",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "John Peel 是他們的支持者，樂團錄過 Peel session，這些錄音 1986 年集結成《Fun On The Lawn Lawn Lawn》；Trouser Press 稱這張收了樂團大部分最好的歌，還有一些別處聽不到的曲子。",
+      "src": "https://trouserpress.com/reviews/yeah-yeah-noh/",
+      "src2": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "from": "new"
+     },
+     {
+      "f": "《Sounds》1985 年 12 月 14 日的報導形容《Cutting The Heavenly Lawn Of Greatness》是「一張奇怪、而且不知怎地令人深深感動的 LP」。",
+      "src": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Cherry Red Records 2001 年發行回顧合輯《Leicester Square》；樂團解散多年後在 2012 年夏天起重新現場演出，成員包括 John Grayland、Derek Hammond 與 Tom Slater。",
+      "src": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團 1984 年 6 月以《Cottage Industry》EP 在 In-Tape 出道，1985 年的《Cutting The Heavenly Lawn Of Greatness》是第一張真正意義上的專輯，之後再發一張單曲，於 1986 年解散。",
+      "src": "https://en.wikipedia.org/wiki/Yeah_Yeah_Noh",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫『依英文維基，加入第二把吉他之後…做出第一張真正意義上的專輯』，與維基原句一致；採上線簡介。"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "身分照 poolAlbums 核對：卡池 1985 年《Cutting the Heavenly Lawn of Greatness...》就是英國萊斯特的 Yeah Yeah Noh（維基 albumHits 1）。本位補查 3 次（WebSearch 2 次：整體背景與 Mojo／Cherry Red、專輯評價；WebFetch 1 次：Trouser Press）。重聚與回顧合輯只見英文維基單源，已標 single。未收（單源或屬榜單／銷量）：(1) 本作在英國獨立榜（Barry Lazell《Indie Hits 1980-1989》）第 4 名，上線簡介已寫，只見英文維基單源，榜單名次不重複收；(2) 〈Another Side to Mrs. Quill〉被《Mojo》列入英國最佳流行歌曲前五十，只見英文維基單源；(3) Bandcamp 宣傳文案稱樂團是 Peel 的最愛之一，屬宣傳文案，不收，Peel 支持者一事以 Trouser Press（『Peel was a fan』）與維基的 Peel session 記載為準；(4) 『In-Tape 由 Marc Riley 經營』只見英文維基 The Membranes 條目，上線簡介已寫。找不到後輩點名受他們影響的來源，legacy 以 Peel 的支持、樂評的評語與回顧發行支撐。Hammond 的寫作與編輯履歷只收與他音樂記者身分相關的一條。"
+ },
+ {
+  "key": "yellowcard",
+  "name": "Yellowcard",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yellowcard 是來自美國佛羅里達州傑克遜維爾的樂團，1997 年成軍，成員在 Douglas Anderson School of the Arts 這所藝術高中認識。",
+      "src": "https://en.wikipedia.org/wiki/Yellowcard",
+      "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/yellowcard",
+      "from": "new"
+     },
+     {
+      "f": "團名來自成員在高中時的一句玩笑：派對上有人出糗（例如把啤酒灑到地毯上），就比照足球規則，給他一張「黃牌」，判定為「派對犯規」。",
+      "src": "https://en.wikipedia.org/wiki/Yellowcard",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "小提琴手 Sean Mackin 受古典訓練，五歲起在母親的要求下學小提琴；在重視藝術的高中裡他拉管弦樂，之後才開始寫歌，並和品味相近的朋友組團。",
+      "src": "https://thebrag.com/yellowcard/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂團最初兩張專輯偏硬核龐克；Ryan Key 由客串人聲轉為正式主唱後，風格改走 pop-punk。",
+      "src": "https://en.wikipedia.org/wiki/Yellowcard",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "小提琴是 Yellowcard 在 pop-punk 裡最顯眼的辨識度：Mackin 把小提琴當節奏樂器來拉，Key 形容它像「多出來的一把主奏吉他」，《Blender》則稱這個聲音是 Stratocaster 與 Stradivarius 的混合。",
+      "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/yellowcard",
+      "src2": "https://en.wikipedia.org/wiki/Yellowcard",
+      "from": "new"
+     },
+     {
+      "f": "〈Ocean Avenue〉寫的是傑克遜維爾，不是情歌：Key 說街名其實是當地的 Ocean Boulevard，為了押韻才改成 Avenue；吉他手 Ben Harper 2004 年對《Boston Phoenix》說，這首歌談的是一個地方與一種感覺，而不是一個女孩。樂團當時已搬到加州錄這張專輯，覺得疏離，歌裡是在懷念留在傑克遜維爾一起混、一起寫歌的日子。",
+      "src": "https://editorial.americansongwriter.com/the-super-nostalgia-behind-the-meaning-of-ocean-avenue-by-yellowcard/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yellowcard 2004 年在 MTV Video Music Awards 獲 MTV2 獎（得獎），同屆的 Best New Artist in a Video 與 Viewer's Choice 為入圍。",
+      "src": "https://en.wikipedia.org/wiki/Yellowcard",
+      "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/yellowcard",
+      "from": "new"
+     },
+     {
+      "f": "Mackin 說《Ocean Avenue》是慢熱：同名單曲是在樂團隔年巡演 Warped Tour 之後才真正起飛，後來樂團還成為 Warped Tour 的壓軸演出者。",
+      "src": "https://thebrag.com/yellowcard/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂團 2016 年宣布解散，之後 2022 年受邀到芝加哥的 Riot Fest 重聚演出；2023 年巡演《Ocean Avenue》20 週年，Key 說觀眾的規模連他們自己都感到困惑，也說這首歌 2004 年「每五分鐘就上一次廣播」。",
+      "src": "https://ca.news.yahoo.com/even-yellowcard-dont-know-why-163000755.html",
+      "src2": "https://en.wikipedia.org/wiki/Yellowcard",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "encyclopedia.com 寫樂團 2004 年『拿下 MTV Video Music Award 與 MTV2 Award』，英文維基只記 MTV2 獎得獎、Best New Artist in a Video 與 Viewer's Choice 入圍；MTV2 獎本身是 VMA 的一個獎項，採維基的區分。",
+   "Billboard 200 首週名次、單曲 Hot 100 名次與解散年份（維基寫 2016 年宣布、2017 年最後一場，Yahoo 報導寫 2016 年解散）各處略有出入，facts 不放榜單名次，解散只寫『2016 年宣布解散』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": [
+   "https://www.lucidthemag.com/yellowcard-20-years-of-ocean-avenue（頁面只回傳 Loading）"
+  ],
+  "status": "full",
+  "notes": "身分照 poolAlbums 核對：卡池 2003 年《Ocean Avenue》，維基 albumHits 1，是傑克遜維爾的 Yellowcard，不是同名他人。事實庫為零，從零補查 8 次（WebSearch 3 次：整體與影響、小提琴與二十週年、Alternative Press／Riot Fest；WebFetch 5 次：encyclopedia.com、英文維基、American Songwriter、TheBrag、Yahoo；另有 Lucid 一頁取不到內容未計入）。多出的上限：無。找不到『後輩點名受 Yellowcard 影響』的來源，所有搜尋都回報這點，所以 legacy 以獎項、巡演與重聚的規模支撐，寫作層不得說『影響了後輩』；事實庫外，維基寫 Ocean Avenue 雙白金、專輯白金、美國賣近兩百萬張、全球約六百萬張，屬在世者銷量與認證，且各源數字略有出入，本位按規則避免，未收，如寫作層要寫唱片成績最多一處，請以『白金』層級帶過。American Songwriter 稱 Ocean Avenue 單曲登 Hot 100 第 23 名、維基寫第 37 名，兩源不一致，不收。encyclopedia.com 把原始成員寫成 Todd Clory、Pete Mosely 等，與維基的陣容不同（維基版 Todd Clary、Warren Cooke 為原始成員），成員異動不收，也未採 encyclopedia.com 的陣容。Ryan Key 的影響清單（Third Eye Blind、Radiohead 等）是本人說法，與 Yellowcard 的地位無關，不收。Ben Harper 為 Yellowcard 吉他手（與同名民謠歌手為不同人），寫作層若寫須帶『Yellowcard 吉他手』。"
+ },
+ {
+  "key": "yezda urfa",
+  "name": "Yezda Urfa",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yezda Urfa 是 1973 年秋天成軍、1981 年春天解散的美國前衛搖滾樂團。",
+      "src": "https://en.wikipedia.org/wiki/Yezda_Urfa",
+      "src2": "https://indianamusicpedia.com/encyclopedia/yezda-urfa",
+      "from": "bank"
+     },
+     {
+      "f": "樂團來自美國印第安納州西北部的 Portage 與 Chesterton 一帶。",
+      "src": "https://indianamusicpedia.com/encyclopedia/yezda-urfa",
+      "src2": "https://www.discogs.com/artist/1380518-Yezda-Urfa",
+      "from": "bank"
+     },
+     {
+      "f": "團名是翻字典翻出來的：伊朗的 Yazd 加土耳其的 Urfa；Yazd 改成 Yezda 是為了好發音。",
+      "src": "https://en.wikipedia.org/wiki/Yezda_Urfa",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Phil Kimbrough 與 Mark Tippins 是在德文課認識的，一開始是民謠二人組，後來擴成名叫 KGT 的團，成員有一位小提琴手，之後加入鼓手 Brad Christoff 與貝斯手 Mike Jensen。高中畢業後，Marc Miller 取代 Jensen，KGT 改名為 Yezda Urfa；Tippins 是主要詞曲作者，Rick Rodenbaugh 負責主唱。",
+      "src": "https://psychedelicbabymag.com/?p=71186",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Kimbrough 生在新墨西哥州的一個空軍基地，在紐約與印第安納長大，五歲學手風琴、八歲學吉他。",
+      "src": "https://psychedelicbabymag.com/?p=71186",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yezda Urfa 的聲音常被拿來和 Gentle Giant 比較，也被提到 King Crimson 與 Yes；另一篇報導說他們把前衛搖滾、爵士融合與實驗聲響混在一起，和 Gentle Giant、Gryphon 有相近之處，卻聽起來不像任何人。",
+      "src": "https://indianamusicpedia.com/encyclopedia/yezda-urfa",
+      "src2": "https://psychedelicbabymag.com/?p=71186",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Boris》1975 年自資發行、只壓 300 張，原本是用來向唱片公司爭取合約的試聽帶，合約沒有成真；它如今是搶手的私壓前衛搖滾唱片。",
+      "src": "https://indianamusicpedia.com/encyclopedia/yezda-urfa",
+      "src2": "https://www.discogs.com/release/4185944",
+      "from": "new"
+     },
+     {
+      "f": "《Boris》1975 年 5 月在芝加哥的 Universal 錄音室只花兩三天錄混完成；Kimbrough 說，這是一群 19、20 歲的年輕人當試聽帶錄的。這份試聽帶是壓成黑膠、而不是拷成卡帶，報導認為這正是它得以倖存的原因。",
+      "src": "https://psychedelicbabymag.com/?p=71186",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂團 2004 年為 NEARfest 重聚演出，現場錄音由 Danger Dog Records 出成 CD。",
+      "src": "https://www.discogs.com/artist/1380518-Yezda-Urfa",
+      "src2": "https://indianamusicpedia.com/encyclopedia/yezda-urfa",
+      "from": "bank"
+     },
+     {
+      "f": "第二張《Sacred Baboon》1976 年錄成，1989 年才由 Syn-Phonic 發行；Syn-Phonic 2004 年重發《Boris》。",
+      "src": "https://indianamusicpedia.com/encyclopedia/yezda-urfa",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "《Boris》2024 年由 Noble Records 以原始母帶重製發行，Kimbrough 說他很驚訝，居然還有人對一群十九、二十歲的年輕人將近五十年前錄的試聽帶有興趣。",
+      "src": "https://psychedelicbabymag.com/?p=71186",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tippins 與 Kimbrough 在樂團之後組了 Crafty Hands，1980 年代初發行過一張 LP。",
+      "src": "https://indianamusicpedia.com/encyclopedia/yezda-urfa",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "英文維基把樂團出身寫成芝加哥（搜尋摘要）；Indiana Music Pedia 與 Discogs 均寫印第安納州，facts 採印第安納州；芝加哥是《Boris》的錄音地。"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "身分照 poolAlbums 核對：卡池 1975 年《Boris》，與維基（albumHits 1）、Discogs 的自資發行一致，是印第安納的前衛搖滾團。本位補查 3 次（WebSearch 1 次；WebFetch 2 次：Indiana Music Pedia、Psychedelic Baby）。Noble Records 2024 年重發：由 Psychedelic Baby 報導（標題寫 Noble 將發行），重製自原始母帶為 Kimbrough 自述，寫作層可寫『Noble Records 重發』，不要寫成已上市的銷量。《Boris》的『搶手』在 Indiana Music Pedia 為編者形容，搜尋摘要寫『most beloved and highly sought』，Psychedelic Baby 則說樂團『當年沒有得到應得的認可』，兩者都是編輯形容、非榜單共識，寫作層請寫成『被收藏者追逐的私壓唱片』，不要寫『經典』。Kimbrough 的 Sacred Baboon 1976 年錄音地點等細節只在 Psychedelic Baby 一處，不收。上線簡介的『來自印第安納州』『壓 300 張』『團名來歷』均與來源一致，無 pubIssues；簡介寫『五人編制』，Indiana Music Pedia 列了五名成員（Christoff、Miller、Tippins、Kimbrough、Rodenbaugh），一致。未收：Indiana Music Pedia 與維基寫『演出次數很少』（單源）。"
+ },
+ {
+  "key": "young flowers",
+  "name": "Young Flowers",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Young Flowers 是 1967 年夏天在哥本哈根成立的丹麥搖滾三人團，最初由 Peter Ingemann（貝斯、人聲）、Jens Henrik Dahl（吉他）與 Ken Gudman（鼓）組成；首張單曲發行後，Peer Frost 接替 Dahl 彈吉他，替樂團帶來新的推力。",
+      "src": "https://da.wikipedia.org/wiki/Young_Flowers",
+      "src2": "https://lex.dk/Young_Flowers",
+      "from": "bank"
+     },
+     {
+      "f": "樂團的核心聽眾是哥本哈根的嬉皮圈。",
+      "src": "https://da.wikipedia.org/wiki/Young_Flowers",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "1967 年 9 月 10 日，樂團在哥本哈根的 Falkoner Centret 與英國樂團 Traffic 同台首演，這場演出替他們換來 Sonet 的第一張單曲。",
+      "src": "https://da.wikipedia.org/wiki/Young_Flowers",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Young Flowers 的路線受 Jimi Hendrix 與 Cream 這類藍調三人團影響。",
+      "src": "https://da.wikipedia.org/wiki/Young_Flowers",
+      "src2": "https://lex.dk/Young_Flowers",
+      "from": "new"
+     },
+     {
+      "f": "lex.dk 稱 Young Flowers 為丹麥樹立了新的技術標準。",
+      "src": "https://lex.dk/Young_Flowers",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂團在音效上做吉他效果器、極端的聲道位移實驗，段落大量留給即興；Peer Frost 的 wah-wah 踏板是《Blomsterpistolen》的招牌。",
+      "src": "https://da.wikipedia.org/wiki/Young_Flowers",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Blomsterpistolen》（1968）混合了丹麥語的迷幻歌曲、一首 Bob Dylan 的翻唱，以及為 Walt Whitman 詩句譜的曲；樂團為 Thomas Winding 的同名作品寫配樂，並在其中擔綱主角，專輯由此得名。",
+      "src": "https://da.wikipedia.org/wiki/Young_Flowers",
+      "src2": "https://lex.dk/Young_Flowers",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "丹麥大百科 lex.dk 說，Young Flowers 以好奇而開放的態度成為丹麥搖滾的開路者，樂團有時像是當時丹麥主要樂手的練功場。",
+      "src": "https://lex.dk/Young_Flowers",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1969 年春天，樂團赴加拿大與美國巡演；美國那段因工作許可問題，只做了兩場面向唱片業內人士的宣傳演出。樂團 1970 年 4 月 24 日打完最後一場演出後解散。",
+      "src": "https://da.wikipedia.org/wiki/Young_Flowers",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "lex.dk 稱 Blomsterpistolen 是 Thomas Winding 的『電影』，丹麥文維基稱是『電視影集』，上線簡介寫電視影集；facts 只寫『同名作品』，不指定媒體。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": [
+   "https://da.wikipedia.org/wiki/Blomsterpistolen（404）",
+   "https://en.wikipedia.org/wiki/Young_Flowers（404）"
+  ],
+  "status": "thin",
+  "notes": "身分照 poolAlbums 核對：卡池 1968 年《Blomsterpistolen》，與丹麥文維基、lex.dk 相符，是哥本哈根的 Young Flowers。預抓維基查無（英文維基無此條）。本位補查 5 次（WebSearch 3 次：整體背景、首次北美巡演、丹麥文評價；WebFetch 2 次：lex.dk、丹麥文維基。另有兩頁 404 未計入）。丹麥文維基與 lex.dk 是各自獨立的丹麥百科，成軍與編制兩源一致；lex.dk 稱 Gudman 為 1947 至 2003 年（逝世年單源，不收），Frost 接替 Dahl 的時間兩處寫法不同（丹麥文維基說冬天、lex.dk 說單曲發行之後），facts 只寫『首張單曲發行後』。未收（單源）：(1) PH-prisen 獎項與 1967 年 9 月 10 日首演的關係只見丹麥文維基，獎項屬高風險，只收首演事實；(2) 『第一支到北美巡演的丹麥搖滾團』丹麥文維基寫『據稱』，搜尋摘要有數處商家簡介同說但未開頁，屬『第一』類宣稱且有商品頁成分，只收巡演事實；(3) 搜尋摘要提到的『啟發了一波新的力量三重奏（Blues Addicts、Terje, Jesper & Joachim、Moses 等）』『最有影響力的早期丹麥三人團』與『丹麥搖滾的里程碑』出自唱片行的商品說明與單一樂評，不算有出處的共識，不收；(4) 2012 年以 Young Flowers Reunion 之名重聚、2015 年巡演獲 Gaffa 六星評價，屬後話，且關乎在世者與逝世者的成員異動，不收。legacy 格只有 lex.dk 的『開路者』定性與巡演事實，找不到後輩點名受其影響的可靠來源，因此整體標 thin，寫作層請寫輕。Peer Frost 後來待過的樂團（Midnight Sun、Savage Rose）只見搜尋摘要，未開頁，不收。"
+ },
+ {
+  "key": "young marble giants",
+  "name": "Young Marble Giants",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Young Marble Giants 是 1978 年在威爾斯卡地夫成軍的後龐克樂團，核心是 Alison Statton 的人聲，以及 Philip 與 Stuart Moxham 兄弟的極簡編制。",
+      "src": "https://en.wikipedia.org/wiki/Young_Marble_Giants",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/young-marble-giants",
+      "from": "new"
+     },
+     {
+      "f": "樂團是在另一個團 True Wheel 解散之後成形的；Stuart Moxham 稱它是「對今天所有成功事物的一種反應」，與當時倫敦更凶猛的龐克場景形成對比。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/young-marble-giants",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的聲音以 Phil 突出的貝斯線、Stuart 的節奏吉他（Rickenbacker 425）與 Galanti 電子琴、Statton 低聲的歌唱構成；沒有鼓手，節奏由表親 Peter Joyce 自製的鼓機提供。",
+      "src": "https://en.wikipedia.org/wiki/Young_Marble_Giants",
+      "src2": "https://kexp.org/podcasts/cobain50/2025/2/26/young-marble-giants-colossal-youth-1980/",
+      "from": "new"
+     },
+     {
+      "f": "維基列出的影響包括 Eno、Kraftwerk、Neil Young、Lou Reed、The Velvet Underground、Roxy Music、David Bowie 與 Can；Stuart Moxham 也很喜歡 dub 雷鬼，並說音符之間的空白和音符本身一樣重要。",
+      "src": "https://en.wikipedia.org/wiki/Young_Marble_Giants",
+      "src2": "https://kexp.org/podcasts/cobain50/2025/2/26/young-marble-giants-colossal-youth-1980/",
+      "from": "new"
+     },
+     {
+      "f": "《Colossal Youth》1980 年在 Rough Trade 發行，只花五天錄成，其中十首歌取自樂團更早自行發行的卡帶。",
+      "src": "https://kexp.org/podcasts/cobain50/2025/2/26/young-marble-giants-colossal-youth-1980/",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/young-marble-giants",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Kurt Cobain 的日記寫道，Young Marble Giants 與 The Vaselines 是他最喜歡的兩個樂團。",
+      "src": "https://en.wikipedia.org/wiki/Young_Marble_Giants",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Cobain 1992 年對《Melody Maker》把《Colossal Youth》列為他聽過最具影響力的十張專輯之一；1993 年在 MTV Brazil 說「我深受他們影響」，理由是他們傳達的情感與真誠，而不是聲音上的相似。他是在住奧林匹亞、接觸 K Records 的音樂之後，從廣播裡第一次聽到這張專輯。",
+      "src": "https://kexp.org/podcasts/cobain50/2025/2/26/young-marble-giants-colossal-youth-1980/",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/young-marble-giants",
+      "from": "new"
+     },
+     {
+      "f": "Courtney Love 的樂團 Hole 在 1994 年的《Live Through This》翻唱了〈Credit in the Straight World〉。",
+      "src": "https://en.wikipedia.org/wiki/Young_Marble_Giants",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/young-marble-giants",
+      "from": "new"
+     },
+     {
+      "f": "Belle and Sebastian 與 Galaxie 500 都翻唱過〈Final Day〉，The Magnetic Fields 的單曲 B 面收有〈The Man Amplifier〉的翻唱。",
+      "src": "https://en.wikipedia.org/wiki/Young_Marble_Giants",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "encyclopedia.com 說 Statton 低調的唱法預示了 1980 年代中期的 twee pop，後來的獨立樂團也受到這種克制風格的影響；《Colossal Youth》1990 年再版，K Records 的 Calvin Johnson 與 Cobain 都是它的愛好者。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/young-marble-giants",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "身分照 poolAlbums 核對：卡池 1980 年《Colossal Youth》，與維基（albumHits 1）一致，是威爾斯的 Young Marble Giants。事實庫為零，補查 3 次（WebSearch 1 次；WebFetch 2 次：KEXP Cobain 50 單元、encyclopedia.com）。解散年：KEXP 寫 1980 年內、encyclopedia.com 寫 1981 年，維基導言與 searches 摘要也有不同說法，來源不一致，facts 不寫解散年。Cobain 的『最愛』『最具影響力』『我深受他們影響』三句分屬維基（日記）、KEXP（Melody Maker 與 MTV Brazil）；KEXP 與 encyclopedia.com 兩頁對他的聽到管道一致。KEXP 的 Cobain 50 播客、encyclopedia.com 與維基各自獨立。〈Credit in the Straight World〉是 Hole 翻唱：維基、KEXP、encyclopedia.com 都寫，這裡引維基與 encyclopedia.com；Belle and Sebastian 與 Galaxie 500 翻唱〈Final Day〉、Magnetic Fields 翻唱 B 面只見維基，已併入同一條，細節（誰翻唱哪首）寫作層請只寫 Hole 與 Cobain，其餘以『多組後輩翻唱』帶過。未收：維基『原始錄音收入 The Pitchfork 500』屬媒體榜單且單源；《Colossal Youth》六週賣 7000 張、約 1000 英鎊錄音費（encyclopedia.com 單源，屬銷量與數字）；2004 年為 BBC 紀錄片重聚（單源）；Alison Statton 是 Phil 當時女友（搜尋摘要來源不明）；R.E.M.、Yo La Tengo 等『後裔』名單（搜尋摘要，未開頁）。"
+ },
+ {
+  "key": "yu grupa",
+  "name": "YU Grupa",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "YU Grupa 是 1970 年秋天在貝爾格勒成立的樂團，由 Jelić 兄弟 Dragi（人聲、吉他）與 Žika（貝斯）創立，兩人都來自 1960 年代的 beat 樂團 Džentlmeni。",
+      "src": "https://sh.wikipedia.org/wiki/YU_Grupa",
+      "src2": "https://en.wikipedia.org/wiki/Dragi_Jeli%C4%87",
+      "from": "new"
+     },
+     {
+      "f": "樂團一開始叫 Idejni posed，YU grupa 這個名字是樂迷在一場演出上起的，樂團每年 11 月 29 日（南斯拉夫的共和國日）過生日。",
+      "src": "https://sh.wikipedia.org/wiki/YU_Grupa",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "YU Grupa 被視為把搖滾與巴爾幹傳統音樂元素結合的先驅之一，也就是所謂的「etno-rok」（民族搖滾）。",
+      "src": "https://en.wikipedia.org/wiki/YU_Grupa",
+      "src2": "https://sh.wikipedia.org/wiki/YU_Grupa",
+      "from": "new"
+     },
+     {
+      "f": "首張單曲〈Nona〉的靈感來自科索沃一帶的民間音樂，發行後很快賣光；PGP RTB 不肯加印，樂團因此轉到 Jugoton。",
+      "src": "https://sh.wikipedia.org/wiki/YU_Grupa",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1973 年夏天由 Jugoton 發行的首張長片《YU grupa》，出了多首藍調風格的熱門曲，包括〈More〉、〈Trka〉、〈Čudna šuma〉，以及抒情曲〈Crni leptir〉（黑蝴蝶）。",
+      "src": "https://sh.wikipedia.org/wiki/YU_Grupa",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 YU Grupa 是塞爾維亞存續最久的搖滾樂團；Žika Jelić 2020 年接受《Novosti》訪問時也說，YU grupa 是這一帶最長壽的樂團。",
+      "src": "https://en.wikipedia.org/wiki/YU_Grupa",
+      "src2": "https://www.novosti.rs/scena/poznati/927202/nema-stajanja-posle-pola-veka-zika-jelic-novosti-velicanstvenih-pet-decenija-grupe",
+      "from": "new"
+     },
+     {
+      "f": "Goran Bregović、Alen Islamović、Dušan Kojić Koja、Nikola Čuturilo 與 Jarboli 的成員都說過，他們受過 YU Grupa 的影響。",
+      "src": "https://sh.wikipedia.org/wiki/YU_Grupa",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "〈Čudna šuma〉先後被 Disciplina Kičme（1986）、Generacija Bez Budućnosti（1997）與 Prljavi Inspektor Blaža i Kljunovi（2007）翻唱；〈Noć je moja〉被 Frenky 翻唱。",
+      "src": "https://en.wikipedia.org/wiki/YU_Grupa",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Žika Jelić 說，1973 年樂團在貝爾格勒的 Hala sportova 開了一場售罄的演唱會；演出之前他們去倫敦買新樂器，在 Marquee Club 演出後有國外大廠牌開出條件，但他們選擇回貝爾格勒，對自己的聽眾保持忠誠。",
+      "src": "https://www.novosti.rs/scena/poznati/927202/nema-stajanja-posle-pola-veka-zika-jelic-novosti-velicanstvenih-pet-decenija-grupe",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "預抓維基 warn 寫頁面未提到卡池專輯：樂團頁確實只談樂團，但卡池 1973 年《YU Grupa》由 Jugoton 發行，與專輯條目（事實庫 bank）及 sh 維基（1973 年夏天 Jugoton 首張長片）相符，身分確認。",
+   "上線簡介寫『專輯賣過 30000 張，在 1974 年 Bijelo Dugme 首作問世之前是南斯拉夫銷量最高的搖滾唱片』，本位開過的來源（sh 維基、英文維基、Novosti）都沒有銷量，無法印證也無法推翻；Žika Jelić 在 Novosti 只說 1973 年 Hala sportova 演出售罄。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "身分確認如 conflicts。本位補查 6 次（WebSearch 2 次：整體背景、Sretenje 勳章；WebFetch 4 次：sh 維基、英文維基 Dragi Jelić、Novosti 訪談；sh 維基一頁因第一次問題不夠完整而開了兩次，算兩次）。國家級榮譽：英文維基寫 2016 年 Dragi 與 Žika 獲塞爾維亞總統頒二等 Sretenje 勳章，但 sh 維基、Dragi Jelić 英文維基與 Sretenje 勳章搜尋都沒有提到，無第二源，國家級榮譽屬高風險，單源不收。《YU 100》（書）名單：英文維基寫《YU zlato》第 57 名、《YU Grupa》第 62 名；sh 維基只說某張自名專輯第 62 名，而該團有 1973 與 1975 兩張同名專輯，因此指的是哪一張有出入，榜單名次也避免，不收。Rock Express 與 B92 的歌曲名次（〈Crni leptir〉第 18、〈Čudna šuma〉第 29）屬榜單，在世者避免，單源不收。Novosti 訪談的『演出售罄、倫敦、Marquee Club』全是 Žika 本人的自述，已標 single，寫作層應寫成『依 Žika Jelić 回憶』。Novosti 說兄弟來自 Zemun，英文維基寫兩人生於 Kraljevo，來源不一致，facts 不寫出身地。成員名單（Okrugić、Bogdanović 等）與 Dragi 服役後 1975 年回團屬成員異動，只見單源，不收。專輯銷量見 conflicts，未收。"
+ },
+ {
+  "key": "z.o.a",
+  "name": "Z.O.A",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Z.O.A 是 1984 年以森川誠一郎為中心結成的日本搖滾樂團。",
+      "src": "https://ja.wikipedia.org/wiki/Z.O.A",
+      "src2": "https://www.dommune.com/streamings/2024/080101/",
+      "from": "new"
+     },
+     {
+      "f": "森川誠一郎約 1982 年起主辦 MORE records（現在的 Grand Fish/Lab），之後專心於樂團活動；他是樂團的主唱，從結成到解散一直是中心人物。",
+      "src": "https://www.dommune.com/streamings/2024/080101/",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Z.O.A 的音樂結合硬核龐克、positive punk 與噪音／工業的元素，後來又加進前衛搖滾的色彩。",
+      "src": "https://ja.wikipedia.org/wiki/Z.O.A",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Z.O.A 靠頻繁的現場演出，和同屬 Trans Records 的 YBO²、ASYLUM、SODOM 等一起在日本獨立場景中受歡迎。",
+      "src": "https://www.dommune.com/streamings/2024/080101/",
+      "src2": "https://ja.wikipedia.org/wiki/Z.O.A",
+      "from": "new"
+     },
+     {
+      "f": "Boris 的 Atsuo 公開說過 Z.O.A 對自己影響很大；Boris 官方在 2020 年的消息中說，Z.O.A 在 1990 年代以富創意且激進的音樂性出現後很快消失，而 Boris 是在差不多的時間起步，彷彿是來填補他們留下的空白。",
+      "src": "https://borisheavyrocks.com/?p=5474",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2019 年 Z.O.A 睽違約 29 年舉辦單獨演唱會，並發行由 Atsuo（Boris）製作的錄音室作品《Six Tracks》；2020 年與 Boris 合作發行概念專輯《Refrain》，收有一首 33 分鐘的長曲，結合兩團的創作。",
+      "src": "https://ja.wikipedia.org/wiki/Z.O.A",
+      "src2": "https://borisheavyrocks.com/?p=5474",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Z.O.A 在 Trans Records 發行第二張 12 吋 EP《OFF BLACK》，1988 年再發行第一張專輯《HUMANICAL GARDEN》，之後在 Captain Records 發行第二張專輯。",
+      "src": "https://www.dommune.com/streamings/2024/080101/",
+      "src2": "https://ja.wikipedia.org/wiki/Z.O.A",
+      "from": "bank"
+     },
+     {
+      "f": "Z.O.A 約 1992 年起幾乎停止活動，2019 年再度啟動；2024 年在成軍四十週年的節點，由團員自己決定結束活動，並公布到 2024 年 10 月的演出行程。",
+      "src": "https://www.dommune.com/streamings/2024/080101/",
+      "src2": "https://ja.wikipedia.org/wiki/Z.O.A",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "黑木真司加入的年份：日文維基寫 1987 年、DOMMUNE 寫 1986 年，來源不一致，facts 不寫年份。",
+   "最後專輯的發行時間：日文維基寫在 2024 年 10 月最後一場之後，DOMMUNE 寫 2024 年 7 月，來源不一致，facts 不寫。",
+   "Boris 官方文寫 Z.O.A『1990 年代出現』，與 1984 年結成並在 1980 年代末發行唱片的來源不合，不採 Boris 的年代說法，只採其『影響』『填補空白』的具名說法。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "身分確認：卡池 1988 年《Humanical Garden》，DOMMUNE 與日文維基都記為 Trans Records 的第一張專輯，是日本的 Z.O.A，與其他同名團（日本東京的公司 ZOA、搜尋時出現的其他 ZOA 條目）無關。預抓維基查無，補查 7 次（WebSearch 3 次：整體、訪談與 Boris、Boris 合作；WebFetch 4 次：日文維基、DOMMUNE、Sleeping Shaman 評論、Boris 官方文）。其中第三次搜尋的 AI 摘要一度說『查不到 1988 與 Trans Records』，與日文維基、DOMMUNE、CDJournal 全部相反，以直接開頁的來源為準。日文維基自己沒有『評價』『影響』段，legacy 全靠 DOMMUNE 與 Boris 官方文；Atsuo『公開說受影響』一句是具名說法，Boris 官方網站可靠，標 single。Sleeping Shaman 評論只談 2020 年合作專輯的聽感，不收。『positive punk』『noise／industrial』的歸類只見日文維基與其鏡像（weblio），非獨立，已標 single。名稱處理：《リフレイン》為專輯日文原名，英文名 Refrain；樂團成員與廠牌均照日文／原文書寫。未收：《BURMMA》《Confusion in Normality》的廠牌細節（履歷）、2015 年一夜限定的再結成、Pazz 等其他團員、黑木真司的合作紀錄。已故者與死因不涉及。"
+ }
+]

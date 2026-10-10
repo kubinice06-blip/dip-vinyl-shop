@@ -302,6 +302,7 @@
       cursor: pointer; color: var(--black); transition: all 0.15s; text-align: center;
     }
     .gt-chip:hover { border-color: var(--black); background: var(--black); color: #fff; }
+    .gt-chip-n { font-size: 0.8em; opacity: 0.55; margin-left: 2px; }
     .gt-nav { padding: 16px 20px 24px; display: flex; flex-direction: column; gap: 8px; }
     .gt-any, .gt-back {
       background: none; border: 1px dashed var(--line); font-family: var(--mono); font-size: 10px;
@@ -331,6 +332,10 @@
     .quiz-result-artist { font-size: 14px; color: var(--gray); margin-bottom: 6px; letter-spacing: 0.06em; text-align: center; }
     .quiz-result-album { font-size: 19px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; text-align: center; }
     .quiz-result-year { font-size: 13px; color: var(--gray); letter-spacing: 0.14em; text-align: center; margin-bottom: 16px; }
+    /* 店內挖寶：結果頁的售價／品相一行（緊接年份，年份的下邊距讓給它） */
+    .shop-mood-line { font-size: 12px; line-height: 1.8; color: var(--gray); text-align: center; margin: 0 0 12px; }
+    .shop-result-line { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-align: center; color: var(--black); margin: -8px 0 16px; }
+    .gp-genre-btn .gp-genre-count { display: block; font-size: 10px; color: var(--gray); margin-top: 2px; letter-spacing: 0.08em; }
     .quiz-result-year:empty { display: none; }
     .quiz-result-reason { font-size: 13px; line-height: 1.9; padding: 16px; border: 1px solid var(--line); margin-bottom: 20px; }
     .quiz-result-cta { display: block; text-align: center; padding: 12px; border: 1px solid var(--black); font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); text-decoration: none; margin-bottom: 12px; transition: all 0.15s; cursor: pointer; background: none; width: 100%; }
@@ -776,6 +781,13 @@
       </div>
       <span class="homehub-card-arrow">→</span>
     </button>
+    <!-- 店內挖寶（2026-10-07）：同四個選片遊戲，只從店內在售挑 -->
+    <button class="homehub-card homehub-solo" data-go="shop">
+      <div>
+        <div class="homehub-card-name"><span class="hub-ico-wrap" data-hubico="shopcrate">店內挖寶</span></div>
+      </div>
+      <span class="homehub-card-arrow">→</span>
+    </button>
     <button class="homehub-card homehub-solo" data-go="pvp">
       <div>
         <div class="homehub-card-name"><span class="hub-ico-wrap" data-hubico="battle">品味生死鬥</span><span class="homehub-beta">BETA</span></div>
@@ -998,9 +1010,10 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=40"></script>
+<script src="dip-player.js?v=44"></script>
 <script src="dip-draw-anim.js?v=2"></script>
-<script src="dip-genre-tree.js?v=1"></script>
+<script src="dip-genre-tree.js?v=2"></script>
+<script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, getDocs, doc, getDoc, setDoc, deleteDoc, query, where, limit, addDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -1774,7 +1787,7 @@
       <button class="cd-close" data-cd-close>✕</button>
       <div class="cd-rarity rarity-${tier}">${c.rarity?.label || '？'}${c.count > 1 ? `　×${c.count}` : ''}</div>
       ${c.coverUrl ? `<img class="cd-cover" src="${c.coverUrl}" alt="">` : ''}
-      <div class="cd-artist">${c.artist || ''}</div>
+      <div class="cd-artist" data-artist-intro="${escapeCollectionHtml(c.artist || '')}">${c.artist || ''}</div>
       <div class="cd-album">${c.album || ''}</div>
       <div class="cd-composer">${composerOf(c.artist, c.album) || ''}</div>
       <div class="cd-year">${releaseYearOf(c.artist, c.album) || ''}</div>
@@ -1802,12 +1815,12 @@
         .then(d => { const el = document.getElementById('cdDesc'); if (el) el.textContent = d.desc || '（暫無介紹）'; })
         .catch(() => { const el = document.getElementById('cdDesc'); if (el) el.textContent = '（暫無介紹）'; });
     }
-    // 已有固定試聽或已人工確認無來源：直接用 Firestore 結果，不再因每次開介紹
-    // 重新打 Spotify／Bandcamp API。平台搜尋按鈕本身只是連結，使用者點擊才會開啟。
+    // 已有固定試聽或已人工確認無來源：直接用 Firestore 結果，不再因每次開介紹重新打 Bandcamp。
+    // Spotify 仍要查（2026-10-09 起查不到直連就灰），/spotify-search 有 KV 永久快取，只有第一次會打 API。
     const streamEl = document.getElementById('cdStreaming');
     if (c.previewUrl || c.previewUnavailable) {
       const fixedYoutube = /(?:youtu\.be|youtube\.com)/i.test(c.previewUrl || '') ? c.previewUrl : '';
-      if (streamEl) streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube);
+      if (streamEl) { streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube); resolveSpotifyBtn(c.artist, c.album, streamEl); }
       return;
     }
     // 尚未人工覆核的舊卡維持原本行為：取 Spotify 直連，其餘搜尋連結保證可點。
@@ -2147,7 +2160,7 @@
         <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm4.596 13.332l-6.84 3.276A1.5 1.5 0 0 1 7.5 15.276V8.724a1.5 1.5 0 0 1 2.256-1.332l6.84 3.276a1.5 1.5 0 0 1 0 2.664z"/></svg>
         YT Music
       </a>
-      <a class="music-platform-btn" href="https://music.apple.com/search?term=${query}" target="_blank" rel="noopener">
+      <a class="music-platform-btn" href="https://music.apple.com/search?term=${query}" data-apple-artist="${escapeCollectionHtml(p.artist || '')}" data-apple-album="${escapeCollectionHtml(p.name || '')}" target="_blank" rel="noopener">
         <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M23.994 6.124a9.23 9.23 0 0 0-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 0 0-1.865-.737c-.695-.144-1.4-.155-2.12-.155H6.41c-.72 0-1.425.01-2.12.155a5.022 5.022 0 0 0-1.865.737C1.308 1.624.563 2.624.246 3.934a9.23 9.23 0 0 0-.24 2.19C-.006 6.9 0 7.68 0 8.46v7.08c0 .78-.006 1.56.006 2.336a9.23 9.23 0 0 0 .24 2.19c.317 1.31 1.062 2.31 2.18 3.043a5.022 5.022 0 0 0 1.865.737c.695.144 1.4.155 2.12.155h11.19c.72 0 1.425-.01 2.12-.155a5.022 5.022 0 0 0 1.865-.737c1.118-.734 1.863-1.734 2.18-3.044a9.23 9.23 0 0 0 .24-2.19C24 17.1 24 16.32 24 15.54V8.46c0-.78.006-1.56-.006-2.336zm-6.466 3.01l-5.25 7.98a.84.84 0 0 1-.702.38.84.84 0 0 1-.702-.38l-2.34-3.558a.84.84 0 0 1 .234-1.164.84.84 0 0 1 1.164.234l1.644 2.496 4.548-6.912a.84.84 0 0 1 1.164-.234.84.84 0 0 1 .24 1.158z"/></svg>
         Apple Music
       </a>
@@ -2564,7 +2577,7 @@
       <button class="cd-close" data-cd-close>✕</button>
       ${tier ? `<div class="cd-rarity rarity-${tier}">${escapeCollectionHtml(c.rarity?.label || '')}</div>` : ''}
       ${c.coverUrl ? `<img class="cd-cover" src="${escapeCollectionHtml(c.coverUrl)}" alt="">` : ''}
-      <div class="cd-artist">${escapeCollectionHtml(c.artist)}</div>
+      <div class="cd-artist" data-artist-intro="${escapeCollectionHtml(c.artist)}">${escapeCollectionHtml(c.artist)}</div>
       <div class="cd-album">${escapeCollectionHtml(c.album)}</div>
       <div class="cd-stars" id="cdStars">${c.ratings ? albumRatingsHtml(c.ratings, SPECIAL_TIERS[tier] ? tier : false) : ''}</div>
       <div class="cd-desc" id="cdDesc">載入介紹…</div>
@@ -2593,9 +2606,9 @@
     const streamEl = document.getElementById('cdStreaming');
     const fixedPreview = c.previewUrl || albumOv?.previewUrl || '';
     if (fixedPreview || c.previewUnavailable) {
-      // 已有固定試聽或人工確認無來源：不再打 Spotify API（與唱片櫃詳情同規則）
+      // 已有固定試聽或人工確認無來源：不打 Bandcamp；Spotify 仍查（查不到直連就灰，與唱片櫃詳情同規則）
       const fixedYoutube = /(?:youtu\.be|youtube\.com)/i.test(fixedPreview) ? fixedPreview : '';
-      if (streamEl) streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube);
+      if (streamEl) { streamEl.innerHTML = streamingBtnsHtml(c.artist, c.album, '', '', fixedYoutube); resolveSpotifyBtn(c.artist, c.album, streamEl); }
       return;
     }
     fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(c.artist)}&album=${encodeURIComponent(c.album)}`)
@@ -2668,6 +2681,22 @@
       '......k....................k....', '................................', '................................',
       '................................', '................................',
     ],
+    // 唱片箱（店內挖寶）：45 度等角的木頭唱片箱，裡面插滿直立唱片，照店主 2026-10-07 手繪草圖。
+    // 木色四階（o 亮面、b 高光、n 暗面、m 深木輪廓／接縫／提把孔）；唱片黑封套＋灰頂邊與書背，金、紅各一張點綴。
+    // 由 scripts/icons/gen-shopcrate.py 用等角投影產生，改圖請改生成器再貼回。
+    shopcrate: [
+      '................................', '................................', '................................',
+      '................................', '................................', '................................',
+      '............kkdkd...............', '........kd..rrkkdkd.............', '........gkkddrrrkkdkd...........',
+      '........gggkkddrrrkkdkd.........', '......kdgggggkkddrrrkkdkd.......', '......kkkdgggggkkddrrrkkdkd.....',
+      '.....mkkkkkdgggggkkddrrrdkd.....', '...mm.kkkkkkkdgggggkdkdrdkd.....', '...mb.kkkkkkkkkdggggdkdrdkdmm...',
+      '...mobbkkkkkkkkkkdggdkdrdkdoom..', '...mooobbkkkkkkkkkdgdkdrdoonnm..', '...mooooobbkkkkkkkdgdkdoonnnnm..',
+      '...mnoooooobbkkkkkdgdoonnnnnnm..', '...monnoooooobbkkkdoonnmmnnmmm..', '...mooonnoooooobboonnmmnnmmnnm..',
+      '...mooooonnoooooomnnnnnmmnnnnm..', '...mmoooooonnoooomnnnmmnnnnnnm..', '.....mmoooooonnoomnmmnnnnnnmmm..',
+      '.......mmoooooonnmmnnnnnnmm.....', '.........mmoooooomnnnnnmm.......', '...........mmoooomnnnmm.........',
+      '.............mmoomnmm...........', '...............mmmm.............', '.................m..............',
+      '................................', '................................',
+    ],
     // 放大鏡（搜尋專輯）：刻意畫小一圈——墨水佔滿畫布時，跟其他圖示並排會顯得特別大
     lens: [
       '................................', '................................', '................................',
@@ -2684,7 +2713,8 @@
     ],
   };
   function hubPixSvg(rows, size) {
-    const pal = { k: 'currentColor', g: '#b8860b', s: '#e8b48c', r: '#c11628', w: '#fff', d: '#888', e: '#d8d8d8' };
+    // o／b／n／m：唱片箱的木色（亮面／高光／暗面／深木），2026-10-07
+    const pal = { k: 'currentColor', g: '#b8860b', s: '#e8b48c', r: '#c11628', w: '#fff', d: '#888', e: '#d8d8d8', o: '#c08a52', b: '#e0b480', n: '#8f5f32', m: '#5c3a1c' };
     const w = rows[0].length, h = rows.length;
     let rects = '';
     rows.forEach((row, y) => {
@@ -2732,6 +2762,7 @@
     // 卡牌對戰為獨立頁面，直接導向
     if (tab === 'pvp') { location.href = 'pvp.html'; return; }
     if (tab === 'find') { location.href = 'find.html'; return; }   // 三個選片遊戲的 hub 頁
+    if (tab === 'shop') { location.href = 'shop.html'; return; }   // 店內挖寶 hub 頁
     if (tab === 'music-map') { location.href = 'music-map.html'; return; }
     if (tab === 'battle') { location.href = 'battle.html'; return; }
     if (tab === 'roguelike') { location.href = 'roguelike.html'; return; }
@@ -3390,6 +3421,8 @@
       if (s.exists() && s.data().mode === 'online') quizMode = 'online';
       else quizMode = 'offline';
     } catch (e) {}
+    // 店內挖寶一律走離線判定（題目與心情判定照舊，只換抽卡範圍），不吃後台的 online 旗標
+    if (SHOP_MODE) quizMode = 'offline';
 
     if (quizMode === 'offline') {
       try { await DipMood.load(); }
@@ -3583,7 +3616,113 @@
   }
 
   function submitQuiz() {
+    if (SHOP_MODE && DipMood.ready) return submitQuizShop();
     return (quizMode === 'offline' && DipMood.ready) ? submitQuizOffline() : submitQuizOnline();
+  }
+
+  // ── 店內挖寶版：心情照離線版判定，卡從店內在售挑「接得住這個心情」的一張 ──
+  // 心情段落（mood-bank.json）是逐張人工寫的，店內卡幾乎都沒有，所以結果頁改放
+  // 「今天的你：…」一句心情描述＋該卡的專輯簡介（門市版優先，同類型挑片）。
+  // 卡 → 心情對照在 data/shop/mood-map.json；新進貨沒列到的，用三軸＋曲風粗估。
+  let _shopMoodMap = null;
+  async function loadShopMoodMap() {
+    if (!_shopMoodMap) {
+      const j = await fetch('data/shop/mood-map.json').then(r => r.ok ? r.json() : null).catch(() => null);
+      _shopMoodMap = j?.map || {};
+    }
+    return _shopMoodMap;
+  }
+  function shopMoodsOf(c, map) {
+    const listed = map[shopKeyOf(c.artist, c.album)];
+    if (listed?.length) return listed;
+    const m = ['balance', 'drift'];
+    const g = c.genres || [];
+    if ((c.obscurity || 3) >= 4 && (c.accessibility || 2) >= 3) m.push('seeker');
+    if ((c.classic || 3) >= 4 && (c.obscurity || 3) <= 2) m.push('anchor');
+    if (g.some(x => ['hiphop', 'soul', 'latin'].includes(x))) m.push('crowd');
+    if (g.includes('classical')) m.push('still');
+    return m;
+  }
+  function pickShopMoodCard(pool, map, mood, seen) {
+    const isSeen = c => seen.has(`${c.artist}||${c.album}`.toLowerCase());
+    const withMood = m => pool.cards.filter(c => shopMoodsOf(c, map).includes(m));
+    const rand = list => list[Math.floor(Math.random() * list.length)];
+    let fresh = withMood(mood).filter(c => !isSeen(c));
+    let m = mood;
+    if (!fresh.length) {   // 本心情抽光了先借鄰居心情（同離線版的鄰居表）
+      for (const nb of (moodData.targets._neighbors?.[mood] || [])) {
+        const f = withMood(nb).filter(c => !isSeen(c));
+        if (f.length) { fresh = f; m = nb; break; }
+      }
+    }
+    if (!fresh.length) fresh = withMood(mood);                       // 全看過了就重複，總比抽不到好
+    if (!fresh.length) fresh = pool.cards.filter(c => !isSeen(c));
+    if (!fresh.length) fresh = pool.cards;
+    const c = rand(fresh);
+    return c ? { card: c, mood: m } : null;
+  }
+  async function submitQuizShop() {
+    const qzAnim = await DipDrawAnim.start({
+      host: document.getElementById('quizContent'), profile: 'front',
+      fullscreen: true,
+      alive: () => document.getElementById('quizModal')?.classList.contains('open'),
+    }).catch(() => null);
+    if (!qzAnim) document.getElementById('quizContent').innerHTML =
+      `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">分析中…</div></div>`;
+
+    try {
+      const optionIds = quizSelected
+        .filter(q => quizAnswers[q.id] !== undefined)
+        .map(q => `${q.id}-${quizAnswers[q.id]}`);
+      const mood = DipMood.classify(optionIds);
+      const [pool, map] = await Promise.all([loadShopPool(), loadShopMoodMap()]);
+      const got = pickShopMoodCard(pool, map, mood, seenAlbums);
+      if (!got) throw new Error('店內清單載入失敗，再試一次');
+      const { card } = got;
+
+      const st = window.DipPreviewStatus?.[cardIdOf(card.artist, card.album)] || '';
+      if (st !== 'unavailable' && st !== 'disabled') {
+        gpEnsurePlayer();
+        void window.DipPlayer?.warmAlbum?.({ artist: card.artist, album: card.album });
+      }
+      const assets = await resolveCardAssets(card.artist, card.album);
+      if (qzAnim) {
+        if (assets.coverUrl) { qzAnim.state.cover = assets.coverUrl; qzAnim.state.apex = !!card.tier; qzAnim.state.ready = true; }
+        else qzAnim.state.fail = true;
+        await qzAnim.done;
+      }
+      // 心情描述寫的是使用者今天的狀態，所以用判定出的心情，不用借來的鄰居心情
+      const moodInfo = moodData.moods?.[mood];
+      await showQuizResult({
+        type: 'global', artist: card.artist, album: card.album, reason: '',
+        _coverUrl: assets.coverUrl || null, _spotifyUrl: assets.spotifyUrl,
+        _bandcampUrl: assets.bandcampUrl, _ytUrl: assets.ytUrl,
+        _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
+        _mood: mood, _moodLine: moodInfo ? `今天的你：${moodInfo.situation}。` : '',
+        _hall: card.tier === 'hall', _pearl: card.tier === 'pearl', _heresy: card.tier === 'heresy',
+        _streaming: true,
+      });
+      daHandoffTo('#quizContent');
+      const reasonEl = document.querySelector('#quizContent .quiz-result-reason');
+      let desc = (await shopDescOf(card.artist, card.album)) || (assets.ov?.desc || '').trim();
+      for (let attempt = 0; attempt < 2 && !desc; attempt++) {
+        try {
+          const res = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
+          if (res.ok) desc = ((await res.json()).desc || '').trim();
+        } catch (e) {}
+      }
+      if (reasonEl) reasonEl.textContent = desc || '（暫無介紹）';
+      lastQuizResult.reason = desc;
+      recordDrawnCard(lastQuizResult);
+      saveToHistory({ type: 'quiz', artist: card.artist, album: card.album, reason: desc, coverUrl: assets.coverUrl })
+        .then(() => renderHistorySection(document.getElementById('quizContent')));
+      if (!(assets.previewUnavailable && !assets.previewUrl)) gpPlayPreview(false, lastQuizResult);
+    } catch (e) {
+      document.getElementById('quizContent').innerHTML =
+        `<div class="quiz-error">⚠ ${e.message}<br><br><button data-quiz-action="retry" style="padding:8px 20px;cursor:pointer;">再試一次</button></div>`;
+      if (qzAnim) qzAnim.state.fail = true;
+      DipDrawAnim.cancel();
+    }
   }
 
   // 離線版：前端判定心情 → 從 300 張精選池挑一張接得住那個心情的卡 → 查表拿段落。
@@ -3901,7 +4040,7 @@ ${seenList}
     }
 
     let stockRecoHtml = '';
-    if (result.type === 'global') {
+    if (result.type === 'global' && !SHOP_MODE) {
       const withImgs = all.filter(p => {
         const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
         return imgs[0];
@@ -3953,11 +4092,13 @@ ${seenList}
       <div class="quiz-result">
         <div class="quiz-result-label">為你推薦</div>
         ${coverHtml}
-        <div class="quiz-result-artist">${result.artist || ''}</div>
+        <div class="quiz-result-artist" data-artist-intro="${escapeCollectionHtml(result.artist || '')}">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
         <div class="quiz-result-year">${releaseYearOf(qzDataArtist, qzDataAlbum) || ''}</div>
+        ${shopLineHtml(result.artist, result.album)}
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
+        ${result._moodLine ? `<div class="shop-mood-line">${result._moodLine}</div>` : ''}
         <div class="quiz-result-reason">${result._streaming ? '輸入中…' : (result.reason || '')}</div>
         ${(() => {
           const preview = qzCanPreview ? gpPreviewBtnHtml(result) : '';
@@ -3997,7 +4138,7 @@ ${seenList}
     if (_albumIntroCache.has(key)) return _albumIntroCache.get(key);
     let desc = '';
     const ov = await getAlbumOverride(cardIdOf(artist, album));
-    desc = (ov?.desc || '').trim() || (neoclassicOf({ artist, album })?.desc || '').trim();
+    desc = (await shopDescOf(artist, album)) || (ov?.desc || '').trim() || (neoclassicOf({ artist, album })?.desc || '').trim();
     // /album-desc 偶爾回空（KV 剛好在生成中），與 fillGpDesc 一樣重試一次
     for (let attempt = 0; attempt < 2 && !desc; attempt++) {
       try {
@@ -4013,7 +4154,9 @@ ${seenList}
   async function openAlbumIntro(artist, album) {
     const ov = document.getElementById('albumIntroOverlay');
     if (!ov || !artist || !album) return;
-    document.getElementById('aintroArtist').textContent = artist;
+    const _aiEl = document.getElementById('aintroArtist');
+    _aiEl.textContent = artist;
+    _aiEl.setAttribute('data-artist-intro', artist);   // 藝人介紹：dip-artist-intro.js 會把名字換成按鈕
     document.getElementById('aintroAlbum').textContent = album;
     document.getElementById('aintroYear').textContent = releaseYearOf(artist, album) || '';
     const descEl = document.getElementById('aintroDesc');
@@ -4229,12 +4372,13 @@ ${seenList}
     }
   }
 
-  // 串流按鈕：三個平台都用「一定可點」的連結（手機也保證能按）
-  // Spotify 若有 /spotify-search 回傳的專輯直連就用，否則用搜尋；Apple/YT 一律用搜尋連結
+  // 串流按鈕（2026-10-09 店主：Spotify／Apple Music 沒有的話也要顯示灰色）：
+  //   Apple Music：試聽索引查得到專輯才啟用成直連，查不到維持灰色（dip-player.js 的 data-apple-strict）
+  //   Spotify：有 /spotify-search 的專輯直連才啟用；未知時先灰，由 resolveSpotifyBtn 背景查實
+  //   YT Music：維持「一定可點」，沒有直連就給搜尋連結
   function streamingBtnsHtml(artist, album, spotifyUrl, bandcampUrl, ytUrl) {
     const q = encodeURIComponent(`${artist || ''} ${album || ''}`.trim());
-    const apple = `https://music.apple.com/tw/search?term=${q}`;
-    const spotify = spotifyUrl || `https://open.spotify.com/search/${q}`;
+    const appleSearch = `https://music.apple.com/tw/search?term=${q}`;
     const yt = ytUrl || `https://music.youtube.com/search?q=${q}`;
     // Bandcamp 只連「直連專輯頁」；沒有就灰掉、不能按（不退回搜尋，因為搜尋多半找不到）。
     // bandcampUrl 未知時先渲染成灰色 placeholder，由 resolveBandcampBtn 背景查實後再決定啟用或維持灰。
@@ -4242,8 +4386,10 @@ ${seenList}
       ? `<a class="streaming-btn" href="${bandcampUrl}" target="_blank" rel="noopener" data-platform="bandcamp">Bandcamp</a>`
       : `<a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>`;
     return '<div class="streaming-btns">'
-      + `<a class="streaming-btn" href="${apple}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>`
-      + `<a class="streaming-btn" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
+      + `<a class="streaming-btn" data-apple-strict data-apple-fallback="${appleSearch}" data-apple-artist="${escapeCollectionHtml(artist || '')}" data-apple-album="${escapeCollectionHtml(album || '')}" target="_blank" rel="noopener" data-platform="apple" disabled>Apple Music</a>`
+      + (spotifyUrl
+        ? `<a class="streaming-btn" href="${spotifyUrl}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`
+        : `<a class="streaming-btn" data-platform="spotify" disabled>Spotify</a>`)
       + `<a class="streaming-btn" href="${yt}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>`
       + bandcampBtn
       + '</div>';
@@ -4251,8 +4397,25 @@ ${seenList}
 
   // 背景補上 Bandcamp 直連：查到就啟用按鈕，查不到就維持灰色不能按。
   // （streamingBtnsHtml 在 bandcampUrl 未知時會先給灰色 placeholder，這裡才去問 Bandcamp。）
+  // 背景補上 Spotify 直連。兩支端點都有快取，同一張卡只有第一次會真的打 Spotify API：
+  //   /spotify-search（KV 永久快取，能比對日文／韓文名）；但封面改走 CAA 的卡，快取裡不會有 spotifyUrl
+  //   /spotify-album-link（邊緣快取）補上前者沒有的；它只比對拉丁字母藝人名
+  async function resolveSpotifyBtn(artist, album, containerEl) {
+    if (!containerEl) return;
+    const btn = containerEl.querySelector('.streaming-btn[data-platform="spotify"]');
+    if (!btn || btn.hasAttribute('href')) return;
+    const q = `artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`;
+    const get = path => fetch(`${WORKER_URL}/${path}?${q}`).then(x => x.ok ? x.json() : {}).catch(() => ({}));
+    let url = (await get('spotify-search')).spotifyUrl;
+    if (!url) url = (await get('spotify-album-link')).url;
+    if (url && btn.isConnected) {
+      btn.href = url; btn.target = '_blank'; btn.rel = 'noopener'; btn.removeAttribute('disabled');
+    }
+  }
+
   async function resolveBandcampBtn(artist, album, containerEl) {
     if (!containerEl) return;
+    resolveSpotifyBtn(artist, album, containerEl);
     const btn = containerEl.querySelector('.streaming-btn[data-platform="bandcamp"]');
     if (!btn || btn.hasAttribute('href')) return; // 已是直連就不用查
     try {
@@ -4403,7 +4566,7 @@ ${seenList}
         <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm4.596 13.332l-6.84 3.276A1.5 1.5 0 0 1 7.5 15.276V8.724a1.5 1.5 0 0 1 2.256-1.332l6.84 3.276a1.5 1.5 0 0 1 0 2.664z"/></svg>
         YT Music
       </a>
-      <a class="music-platform-btn" href="https://music.apple.com/search?term=${query}" target="_blank" rel="noopener">
+      <a class="music-platform-btn" href="https://music.apple.com/search?term=${query}" data-apple-artist="${escapeCollectionHtml(artist || '')}" data-apple-album="${escapeCollectionHtml(album || '')}" target="_blank" rel="noopener">
         <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M23.994 6.124a9.23 9.23 0 0 0-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 0 0-1.865-.737c-.695-.144-1.4-.155-2.12-.155H6.41c-.72 0-1.425.01-2.12.155a5.022 5.022 0 0 0-1.865.737C1.308 1.624.563 2.624.246 3.934a9.23 9.23 0 0 0-.24 2.19C-.006 6.9 0 7.68 0 8.46v7.08c0 .78-.006 1.56.006 2.336a9.23 9.23 0 0 0 .24 2.19c.317 1.31 1.062 2.31 2.18 3.043a5.022 5.022 0 0 0 1.865.737c.695.144 1.4.155 2.12.155h11.19c.72 0 1.425-.01 2.12-.155a5.022 5.022 0 0 0 1.865-.737c1.118-.734 1.863-1.734 2.18-3.044a9.23 9.23 0 0 0 .24-2.19C24 17.1 24 16.32 24 15.54V8.46c0-.78.006-1.56-.006-2.336zm-6.466 3.01l-5.25 7.98a.84.84 0 0 1-.702.38.84.84 0 0 1-.702-.38l-2.34-3.558a.84.84 0 0 1 .234-1.164.84.84 0 0 1 1.164.234l1.644 2.496 4.548-6.912a.84.84 0 0 1 1.164-.234.84.84 0 0 1 .24 1.158z"/></svg>
         Apple Music
       </a>
@@ -4440,7 +4603,7 @@ ${seenList}
                 <span class="history-item-toggle">▾</span>
               </div>
               <div class="history-item-detail">
-                ${r.reason ? `<div class="history-item-reason">${r.reason}</div>` : ''}
+                ${r.reason || SHOP_MODE ? `<div class="history-item-reason"${SHOP_MODE ? ` data-shop-key="${escapeCollectionHtml(shopKeyOf(r.artist, r.album))}"` : ''}>${r.reason || ''}</div>` : ''}
                 ${historyMusicLinks(r.artist, r.album)}
                 <button class="quiz-collect-btn" style="margin-top:12px;" data-history-collect data-artist="${(r.artist || '').replace(/"/g, '&quot;')}" data-album="${(r.album || '').replace(/"/g, '&quot;')}">＋ 收進唱片櫃</button>
               </div>
@@ -4457,6 +4620,14 @@ ${seenList}
       row.addEventListener('click', () => row.closest('.history-item').classList.toggle('expanded'));
     });
     containerEl.appendChild(section);
+    // 店內挖寶：紀錄裡存的是當時的介紹（可能是卡池版），顯示時一律換成門市版
+    if (SHOP_MODE) loadShopDescs().then(map => {
+      section.querySelectorAll('.history-item-reason[data-shop-key]').forEach(el => {
+        const t = map.get(el.dataset.shopKey);
+        if (t) el.textContent = t;
+        else if (!el.textContent.trim()) el.remove();
+      });
+    }).catch(() => {});
   }
 
   // ⚠ 2026-08-16 起這份手寫名單只是「卡池還沒載入時」的冷啟動備援與八類的 label 來源。
@@ -4632,6 +4803,86 @@ ${seenList}
       })().catch(e => { _cardPoolPromise = null; throw e; });
     }
     return _cardPoolPromise;
+  }
+
+  // ── 店內挖寶（shop.html → /?shop=1#quiz 等，2026-10-07）──────────────────
+  // 四個選片遊戲照舊，只是抽卡範圍換成「店裡現在在賣、且卡池裡有」的卡。
+  // 即時清單是 Firestore settings/shopInventory（後台「從 Notion 重新整理」寫入），
+  // 讀不到才退 repo 的 data/shop/inventory.json。卡池鍵正規化與 sync-shop-inventory.mjs 相同。
+  const SHOP_MODE = new URLSearchParams(location.search).get('shop') === '1';
+  const _shopNorm = v => String(v || '').toLowerCase().replace(/[\u2010-\u2015\uff0d]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
+  const shopKeyOf = (a, b) => _shopNorm(a) + '|' + _shopNorm(b);
+  let _shopInv = null;            // cardKey → 庫存列（只收 in_stock）
+  let _shopPoolPromise = null;
+  async function loadShopInventory() {
+    let items = null;
+    try {
+      const s = await getDoc(doc(db, 'settings', 'shopInventory'));
+      if (s.exists() && Array.isArray(s.data().items)) items = s.data().items;
+    } catch (e) {}
+    if (!items) {
+      const inv = await fetch('data/shop/inventory.json').then(r => r.ok ? r.json() : null).catch(() => null);
+      items = inv?.items || [];
+    }
+    const map = new Map();
+    for (const it of items) {
+      if (it.status !== 'in_stock' || !it.artist) continue;
+      map.set(it.cardKey || shopKeyOf(it.artist, it.album), it);
+    }
+    return map;
+  }
+  // 回傳與 loadCardPool 同形狀的 { cards, apex }，cards 裡的普卡與正式卡池是同一批物件。
+  // 王牌（殿堂／流亡／異端）店裡只有幾張，留在 apex 只會在 3% 的特殊模式才抽得到，
+  // 所以併進 cards、帶 tier 欄，結果頁照 tier 顯示王牌樣式；apex 清空讓特殊模式自然退回一般抽。
+  function loadShopPool() {
+    if (!_shopPoolPromise) {
+      _shopPoolPromise = (async () => {
+        const [full, inv] = await Promise.all([loadCardPool(), loadShopInventory()]);
+        _shopInv = inv;
+        const cards = full.cards.filter(c => inv.has(shopKeyOf(c.artist, c.album)));
+        for (const [tier, rows] of Object.entries(full.apex)) {
+          for (const [artist, album, genres, year] of rows) {
+            if (inv.has(shopKeyOf(artist, album))) cards.push({ artist, album, genres, year: year || 0, tier });
+          }
+        }
+        if (!cards.length) throw new Error('店內清單載入失敗，請重試');
+        return { cards, apex: { hall: [], pearl: [], heresy: [] } };
+      })().catch(e => { _shopPoolPromise = null; throw e; });
+    }
+    return _shopPoolPromise;
+  }
+  const loadGamePool = () => (SHOP_MODE ? loadShopPool() : loadCardPool());
+  // 結果頁「店內在售」那一行：售價與品相（「我要這張」按鈕店主 2026-10-07 說不用做）
+  function shopLineHtml(artist, album) {
+    if (!SHOP_MODE || !_shopInv) return '';
+    const it = _shopInv.get(shopKeyOf(artist, album));
+    if (!it) return '';
+    const bits = ['店內在售'];
+    if (it.priceNT) bits.push(`NT$${Number(it.priceNT).toLocaleString('en-US')}`);
+    if (it.condition) bits.push(`品相 ${it.condition}`);
+    if (it.pressingYear) bits.push(`${it.pressingYear} 年壓片`);
+    return `<div class="shop-result-line">${bits.join('・')}</div>`;
+  }
+  // 店內挖寶的介紹一律用門市版（給完全不懂音樂的客人看；data/shop/descs.json，
+  // 後台改過的存 Firestore settings/shopDescs.byKey，優先），門市版沒有才退回卡池版。
+  let _shopDescPromise = null;
+  function loadShopDescs() {
+    if (!_shopDescPromise) _shopDescPromise = (async () => {
+      const map = new Map();
+      const d = await fetch('data/shop/descs.json').then(r => r.ok ? r.json() : null).catch(() => null);
+      for (const it of d?.items || []) if (it.key && it.text) map.set(it.key, it.text);
+      try {
+        const snap = await getDoc(doc(db, 'settings', 'shopDescs'));
+        const by = snap.exists() ? (snap.data().byKey || {}) : {};
+        for (const [k, v] of Object.entries(by)) if (v && v.text) map.set(k, v.text);
+      } catch (e) {}
+      return map;
+    })();
+    return _shopDescPromise;
+  }
+  async function shopDescOf(artist, album) {
+    if (!SHOP_MODE) return '';
+    try { return (await loadShopDescs()).get(shopKeyOf(artist, album)) || ''; } catch (e) { return ''; }
   }
 
   // ── IG reel 也當正式卡看待：封面／三軸／試聽全走現成資料 ────────────────
@@ -4883,7 +5134,9 @@ ${seenList}
 
   // 從 seed 卡池抽一張：類型過濾＋已抽過濾（同藝人不重複），
   // 再用三個錨點藝人的口味畫像（三軸距離＋副曲風重疊）加權——選誰真的會影響抽到什麼
-  function pickSeedCard(pool, { popular = false } = {}) {
+  // profilePool：口味畫像（錨點藝人的卡）一律查完整卡池——店內模式下 pool 只剩店裡的卡，
+  // 錨點藝人多半不在店裡，拿 pool 查會整個畫像落空。
+  function pickSeedCard(pool, { popular = false, profilePool = pool } = {}) {
     gpMatchInfo = null;
     let base = gpIsRandom ? pool.cards : pool.cards.filter(c => c.genres.includes(gpGenre));
     // 店主 2026-09-04：「兩種類型重疊的卡要以主類型為主，任何音樂都有一個主要類型」。
@@ -4896,7 +5149,8 @@ ${seenList}
     let basePrimary = false;
     if (!gpIsRandom) {
       const primary = base.filter(c => c.genres[0] === gpGenre);
-      if (primary.length >= 60) { base = primary; basePrimary = true; }
+      // 店內模式池子小（某類可能只有幾張），有主類型卡就用
+      if (primary.length >= (SHOP_MODE ? 1 : 60)) { base = primary; basePrimary = true; }
     }
     if (popular) {
       // 流行模式：高經典、低硬蕊、低冷門＝大眾耳熟能詳的好入耳盤
@@ -4909,15 +5163,16 @@ ${seenList}
     let fresh = base.filter(isFresh);
     if (!fresh.length) fresh = base.filter(c => !gpSeenAlbums.has(`${c.artist}||${c.album}`.toLowerCase()));
     if (!fresh.length) return null;
-    const prof = popular ? null : gpAnchorProfile(pool);
+    const prof = popular ? null : gpAnchorProfile(profilePool);
 
     // 兩成機率直接抽「你點名的藝人」自己的另一張（在池內、同類型、沒抽過才成立）
     if (prof && Math.random() < 0.2) {
-      const own = prof.anchorCards.filter(c => isFresh(c)
+      const inBase = SHOP_MODE ? new Set(base) : null;   // 店內模式：錨點藝人的卡也得是店裡有的
+      const own = prof.anchorCards.filter(c => isFresh(c) && (!inBase || inBase.has(c))
         && (basePrimary ? c.genres[0] === gpGenre : c.genres.includes(gpGenre)));
       if (own.length) {
         const c = own[Math.floor(Math.random() * own.length)];
-        const anchor = prof.matched.find(n => gpFindArtistCards(pool, n).includes(c)) || prof.matched[0];
+        const anchor = prof.matched.find(n => gpFindArtistCards(profilePool, n).includes(c)) || prof.matched[0];
         gpMatchInfo = { type: 'anchor', name: anchor };
         return c;
       }
@@ -5035,8 +5290,22 @@ ${seenList}
     loadCardPool().then(p => { gpPoolCache = p; gpFillOptMetas(); }).catch(() => {});
     try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { gpSeenAlbums = new Set(); }
+    if (SHOP_MODE) {
+      // 店內模式：先拿到店內清單，只列店裡有貨的類型
+      document.getElementById('artistContent').innerHTML =
+        `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">載入中…</div></div>`;
+      loadShopPool().then(p => {
+        gpShopGenreCount = {};
+        for (const c of p.cards) for (const g of new Set(c.genres)) gpShopGenreCount[g] = (gpShopGenreCount[g] || 0) + 1;
+        renderGpGenreSelect();
+      }).catch(e => {
+        document.getElementById('artistContent').innerHTML = `<div class="quiz-error" style="padding:40px 20px;">⚠ ${e.message}</div>`;
+      });
+      return;
+    }
     renderGpGenreSelect();
   }
+  let gpShopGenreCount = null;   // 店內模式：類型 → 店內張數（含副標）
 
   // 「直接來一首」：不選類型、不選歌手，直接用類型挑片的批次邏輯隨機送一張
   function startRandomPick() {
@@ -5053,11 +5322,11 @@ ${seenList}
     document.getElementById('artistContent').innerHTML = `
       <div style="padding:28px 20px 0;">
         <div class="quiz-question">你想探索哪個領域？</div>
-        <div style="font-size:11px;color:var(--gray);line-height:1.7;margin-bottom:20px;">選一種音樂類型，透過三位藝人的品味，找到屬於你的專輯。</div>
+        <div style="font-size:11px;color:var(--gray);line-height:1.7;margin-bottom:20px;">${SHOP_MODE ? '選一種音樂類型，透過三位藝人的品味，從店裡現有的唱片找到你的那張。' : '選一種音樂類型，透過三位藝人的品味，找到屬於你的專輯。'}</div>
       </div>
       <div class="gp-genre-grid">
-        ${Object.entries(GENRE_DATA).map(([key, d]) => `
-          <button class="gp-genre-btn" data-genre="${key}">${d.label}</button>
+        ${Object.entries(GENRE_DATA).filter(([key]) => !SHOP_MODE || gpShopGenreCount?.[key]).map(([key, d]) => `
+          <button class="gp-genre-btn" data-genre="${key}">${d.label}${SHOP_MODE ? `<span class="gp-genre-count">店內 ${gpShopGenreCount[key]} 張</span>` : ''}</button>
         `).join('')}
       </div>
       <div style="padding:0 20px 16px;display:flex;flex-direction:column;align-items:center;">
@@ -5172,7 +5441,7 @@ ${seenList}
   // 後台校正 > 殿堂神作人工簡介 > 店家/IG 自寫介紹 > /album-desc（KV 預生成、與卡片詳情同一套）
   async function fillGpDesc(card, ov, presetDesc = '') {
     const el = document.querySelector('#' + gpResultHost + ' .quiz-result-reason');
-    let desc = (ov?.desc || '').trim() || (neoclassicOf(card)?.desc || '') || (presetDesc || '').trim();
+    let desc = (await shopDescOf(card.artist, card.album)) || (ov?.desc || '').trim() || (neoclassicOf(card)?.desc || '') || (presetDesc || '').trim();
     for (let attempt = 0; attempt < 2 && !desc; attempt++) {
       try {
         const res = await fetch(`${WORKER_URL}/album-desc?artist=${encodeURIComponent(card.artist)}&album=${encodeURIComponent(card.album)}`);
@@ -5364,7 +5633,9 @@ ${seenList}
   // 分享）與猜你喜歡完全共用 showGpResult，差別只在 gpResultHost 與 _mode。
   DipGenreTree.configure({
     host: () => document.getElementById('genreContent'),
-    loadCardPool,
+    loadCardPool: loadGamePool,
+    topOnly: SHOP_MODE,                         // 店內挖寶只選大類
+    backHref: SHOP_MODE ? 'shop.html' : 'find.html',
     onError: (e) => console.warn('[genre-tree]', e),
     onResult: async ({ card, path, pathZh, anim }) => {
       gpResultHost = 'genreContent';
@@ -5376,7 +5647,7 @@ ${seenList}
         void window.DipPlayer?.warmAlbum?.({ artist: card.artist, album: card.album });
       }
       const assets = await resolveCardAssets(card.artist, card.album);
-      const ratings = card.classic ? {
+      const ratings = (card.classic && !card.tier) ? {
         classic: assets.ov?.classic || card.classic,
         obscurity: assets.ov?.obscurity || card.obscurity,
         accessibility: assets.ov?.accessibility || card.accessibility,
@@ -5392,6 +5663,8 @@ ${seenList}
         _bandcampUrl: assets.bandcampUrl, _ytUrl: assets.ytUrl,
         _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
         _matchNote: pathZh, _mode: 'tree', _path: path, _streaming: true,
+        // 店內模式的王牌併在一般卡裡（帶 tier）
+        _hall: card.tier === 'hall', _pearl: card.tier === 'pearl', _heresy: card.tier === 'heresy',
       });
       daHandoffTo('#genreContent');
       const reason = await fillGpDesc(card, assets.ov);
@@ -5433,12 +5706,13 @@ ${seenList}
 
     const rand = Math.random();
     // 類型模式下，店內在售與 IG reel 也要對上使用者選的類型，不再無視選擇亂入
-    const stockPool = all.filter(p => {
+    // 店內挖寶模式不走這兩條（那是另一份 Firestore items 清單與 IG 貼文），只抽店內卡
+    const stockPool = SHOP_MODE ? [] : all.filter(p => {
       const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
       return imgs[0] && p.artist && !gpSeenAlbums.has(`${p.artist}||${p.name || ''}`.toLowerCase())
         && gpItemMatchesGenre(pool, p.artist, p.genre);
     });
-    const freshReels = quizReels.filter(r => !gpSeenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase())
+    const freshReels = SHOP_MODE ? [] : quizReels.filter(r => !gpSeenAlbums.has(`${r.artist}||${r.title || ''}`.toLowerCase())
       && gpItemMatchesGenre(pool, r.artist, r.genre));
     const gpStockNote = (!gpIsRandom && gpGenre) ? `店內剛好有一張對上你選的 ${GENRE_DATA[gpGenre].label}` : '';
 
@@ -5484,6 +5758,8 @@ ${seenList}
 
     try {
       if (!pool) pool = await loadCardPool();
+      // 店內挖寶：抽卡池換成店內在售；口味畫像照樣查完整卡池（pool）
+      const drawPool = SHOP_MODE ? await loadShopPool() : pool;
       // 特殊模式機率照舊（殿堂/流亡/異端各 3%、流行 5%），但一律改抽現成卡池：
       // 殿堂→apex hall、流亡→apex pearl（池子已預先人工驗證，不再即時查聽眾數）、
       // 異端→apex heresy、流行→seed 中高經典低硬蕊低冷門的子集
@@ -5493,10 +5769,18 @@ ${seenList}
       const popularMode = !classicMode && !obscureMode && !heresyMode && Math.random() < 0.05;
       const apexTier = classicMode ? 'hall' : (obscureMode ? 'pearl' : (heresyMode ? 'heresy' : null));
 
-      let pick = apexTier ? pickApexCard(pool, apexTier) : null;
-      const isApex = !!pick;
-      if (!pick) pick = pickSeedCard(pool, { popular: popularMode });
-      if (!pick) throw new Error('這個範圍的卡都抽過了，按「再試一次」會清除已抽紀錄重新挖');
+      let pick = apexTier ? pickApexCard(drawPool, apexTier) : null;
+      const isModeApex = !!pick;
+      if (!pick) pick = pickSeedCard(drawPool, { popular: popularMode, profilePool: pool });
+      // 店內只有幾十張，抽光是常態：清掉已抽紀錄自動重來，不讓客人卡在錯誤頁
+      if (!pick && SHOP_MODE && gpSeenAlbums.size) {
+        gpSeenAlbums = new Set(); _saveGpSeen();
+        pick = pickSeedCard(drawPool, { popular: popularMode, profilePool: pool });
+      }
+      if (!pick) throw new Error(SHOP_MODE ? '店裡這一類目前沒有唱片，換個類型試試' : '這個範圍的卡都抽過了，按「再試一次」會清除已抽紀錄重新挖');
+      // 店內模式的王牌併在一般卡裡（帶 tier），王牌樣式照 tier 走
+      const pickTier = isModeApex ? apexTier : (pick.tier || null);
+      const isApex = !!pickTier;
 
       // 抽到什麼就立刻開始抓 30 秒試聽並解碼，跟封面／後台校正的查詢並行跑。
       // 等結果頁渲染完才開始下載的話，那 1〜3 秒空窗正是手機收掉 audio session、
@@ -5524,7 +5808,7 @@ ${seenList}
         _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
         _matchNote: isApex ? '' : gpMatchNoteText(),
         _streaming: true,
-        _hall: isApex && classicMode, _pearl: isApex && obscureMode, _heresy: isApex && heresyMode,
+        _hall: pickTier === 'hall', _pearl: pickTier === 'pearl', _heresy: pickTier === 'heresy',
       });
       daHandoffTo('#artistContent');
       const reason = await fillGpDesc(pick, assets.ov);
@@ -5595,7 +5879,7 @@ ${seenList}
       const imgs = Array.isArray(p.imageUrls) && p.imageUrls.length ? p.imageUrls : (p.imageUrl ? [p.imageUrl] : []);
       return imgs[0];
     });
-    const picks = [...withImgs].sort(() => Math.random() - 0.5).slice(0, 4);
+    const picks = SHOP_MODE ? [] : [...withImgs].sort(() => Math.random() - 0.5).slice(0, 4);
     let stockRecoHtml = '';
     if (picks.length) {
       const thumbs = picks.map(p => {
@@ -5627,9 +5911,10 @@ ${seenList}
       <div class="quiz-result">
         <div class="quiz-result-label">為你挖出的那張</div>
         ${coverHtml}
-        <div class="quiz-result-artist">${result.artist || ''}</div>
+        <div class="quiz-result-artist" data-artist-intro="${escapeCollectionHtml(result.artist || '')}">${result.artist || ''}</div>
         <div class="quiz-result-album">${result.album || ''}</div>
         <div class="quiz-result-year">${releaseYearOf(gpDataArtist, gpDataAlbum) || ''}</div>
+        ${shopLineHtml(result.artist, result.album)}
         <div class="quiz-tier-slot">${resultTierBadgeHtml(resultTierOf(result, result.ratings))}</div>
         <div class="album-ratings-slot"></div>
         ${gpCanPreview ? gpPreviewBtnHtml(result) : ''}
@@ -5955,8 +6240,11 @@ ${seenList}
     document.addEventListener('click', (e) => {
       if (e.target.closest('[data-hub-back]')) setActiveTab('home');
       // 三個選片遊戲的上一層是 find.html 這個 hub，不是首頁
-      if (e.target.closest('[data-game-back]')) location.href = 'find.html';
+      if (e.target.closest('[data-game-back]')) location.href = SHOP_MODE ? 'shop.html' : 'find.html';
     });
+
+    // 店內挖寶：遊戲頁左上的返回鍵改指 shop.html，字也跟著改
+    if (SHOP_MODE) document.querySelectorAll('[data-game-back]').forEach(b => { b.textContent = '↩ 店內挖寶'; });
 
     if (window.__APP_MODE__) {
       // App 模式：改頂欄標題

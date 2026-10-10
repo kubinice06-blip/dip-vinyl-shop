@@ -143,7 +143,7 @@
       "identity": {
         "releaseType": "Compilation",
         "rgMbid": "69ce61c8-127f-3809-95d8-62fdf3ae1347",
-        "upc": "4607147861714",
+        "upc": "602527583648",
         "exceptionReason": "英國史上最暢銷專輯,全球銷量逾 2500 萬張,是皇后合唱團最通行的正典入口。",
         "exceptionEvidenceUrls": [
           "https://en.wikipedia.org/wiki/Greatest_Hits_(Queen_album)",
@@ -173,8 +173,8 @@
       "apexAssessment": {
         "eligible": false,
         "tier": null,
-        "reason": "身分資料有誤已建議退回,在正確 release group 重配之前不評估頂點資格。",
-        "evidenceUrls": []
+        "evidenceUrls": [],
+        "reason": "2026-10-04 補評（身分已於 08-21 重釘到 1981 EMI 原版 RG）：classic 5 達殿堂最低門檻，但 Queen 的殿堂席次已由《A Night at the Opera》《Sheer Heart Attack》《News of the World》三張原始專輯代表；精選輯的份量來自銷量而非跨來源的樂評共識，不重複佔位，作一般卡。"
       },
       "description": {
         "text": "1981 年 10 月 26 日全球發行,收錄皇后合唱團從 1974 年〈Seven Seas of Rhye〉首度進榜到 1980 年〈Flash〉之間的熱門曲。當時沒有統一曲目與封面,各地版本依當地實際發行過哪些單曲而定,部分市場另收與 David Bowie 合作的〈Under Pressure〉。全球銷量超過 2500 萬張,在英國專輯榜累計超過一千兩百週、認證 23 白金,是英國史上最暢銷的專輯。",
@@ -184,10 +184,13 @@
         ]
       },
       "preview": {
-        "status": "unavailable",
-        "url": "",
-        "source": "none",
-        "note": "Apple 條目經人工核對非本作（Apple 配到《Greatest Hits I, II & III: The Platinum Collection》,是 2000 年的三碟套裝,不是 1981 年單張精選;前五首含 Fat Bottomed Girls (Single Version) 與 Bicycle Race,與原盤曲序不符。），已降級；留待店主本機補 YouTube 或維持 unavailable"
+        "status": "ready",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/29/40/c3294027-644c-ca9d-ea2a-68a498431c8f/mzaf_1930657702308615235.plus.aac.p.m4a",
+        "source": "apple",
+        "httpStatus": 206,
+        "checkedAt": "2026-10-04T00:00:00.000Z",
+        "note": "2026-10-04 補配。08-21 時 Apple 只配到三碟套裝《The Platinum Collection》而降級為 unavailable；現在 TW／US／GB 三店面都有單張正版 6781080300（17 軌、1981-10-26、notExplicit、℗ 1981 Queen Productions／Hollywood），曲目 Bohemian Rhapsody／Another One Bites the Dust／Killer Queen…We Will Rock You／We Are the Champions，是 1981 年 EMI 版的十七軌。取第 1 軌，實測 HTTP 206 audio/x-m4p。",
+        "appleCollectionId": "6781080300"
       },
       "research": {
         "suggestedYear": 1981,

@@ -1,0 +1,725 @@
+[
+ {
+  "key": "henry cow",
+  "name": "Henry Cow",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Henry Cow 1968 年 5 月在英國劍橋由兩位在校學生成立：吉他兼小提琴手 Fred Frith 與薩克斯風手 Tim Hodgkinson；兩人先前同在一個舞曲樂隊裡演奏。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Cow",
+      "src2": "https://www.calyx-canterbury.fr/bands/henrycow.html",
+      "from": "new"
+     },
+     {
+      "f": "早期成員把自由爵士、迷幻音樂、現代作曲與電子音樂的興趣揉在一起，成員來自搖滾、自由爵士與管弦樂圈子。",
+      "src": "https://news.cornell.edu/stories/2019/10/experimental-band-henry-cow-challenged-itself-audiences",
+      "src2": "https://www.calyx-canterbury.fr/bands/henrycow.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團在搖滾裡放進複雜拍號、自由即興與磁帶操作，把爵士、搖滾、當代古典與前衛手法混在一起；既能在舞台與錄音室裡自由即興，也演出寫成記譜的無調性作品。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Cow",
+      "src2": "https://news.cornell.edu/stories/2019/10/experimental-band-henry-cow-challenged-itself-audiences",
+      "from": "new"
+     },
+     {
+      "f": "樂團是集體運作、反商業的取向：不走單一作曲者或詞曲人的路線，改由集體署名創作，與商業唱片工業保持距離。",
+      "src": "https://tribunemag.co.uk/2020/08/rock-in-opposition",
+      "src2": "https://news.cornell.edu/stories/2019/10/experimental-band-henry-cow-challenged-itself-audiences",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年 Henry Cow 與其他歐洲樂團共組 Rock in Opposition（RIO）運動，英文維基稱他們是共同創辦者；同年樂團解散，成員表示將在未來各自合作。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Cow",
+      "src2": "https://www.calyx-canterbury.fr/bands/henrycow.html",
+      "from": "new"
+     },
+     {
+      "f": "樂團解散後衍生出 Art Bears、News from Babel、The Orckestra 等計畫；成員也與 Robert Wyatt 合作、組成 Feminist Improvising Group。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Cow",
+      "src2": "https://www.calyx-canterbury.fr/bands/henrycow.html",
+      "from": "new"
+     },
+     {
+      "f": "音樂學者 Benjamin Piekut 2019 年由 Duke University Press 出版樂團傳記《Henry Cow: The World Is a Problem》，把他們放進他所稱的「vernacular avant-garde」（透過唱片與演出而非學院習得的前衛）脈絡來談。",
+      "src": "https://en.wikipedia.org/wiki/Henry_Cow",
+      "src2": "https://news.cornell.edu/stories/2019/10/experimental-band-henry-cow-challenged-itself-audiences",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 1968 年成立、1978 年解散，前後約十年；解散聲明寫「在我們的第十年，不再以固定樂團運作」。",
+      "src": "https://www.calyx-canterbury.fr/bands/henrycow.html",
+      "src2": "https://en.wikipedia.org/wiki/Henry_Cow",
+      "from": "new"
+     },
+     {
+      "f": "吹雙簧管與低音管的 Lindsay Cooper 在《Unrest》（1974）加入，取代薩克斯風手 Geoff Leigh。",
+      "src": "https://en.wikipedia.org/wiki/Unrest_(Henry_Cow_album)",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1968 年 5 月在劍橋成軍。",
+    "src": "https://en.wikipedia.org/wiki/Henry_Cow",
+    "src2": "https://www.calyx-canterbury.fr/bands/henrycow.html",
+    "from": "new"
+   },
+   {
+    "f": "1978 年共同發起 Rock in Opposition 運動並解散。",
+    "src": "https://en.wikipedia.org/wiki/Henry_Cow",
+    "src2": "https://www.calyx-canterbury.fr/bands/henrycow.html",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Tribune 文章把 Music for Socialism 音樂節記為 1977 年 7 月、為 RIO 的前身；維基談 RIO 在 1978 年，兩者不衝突，facts 只寫 1978 的 RIO。",
+   "Lindsay Cooper 加入的 bank 事實與上線簡介《Unrest》一致，無衝突。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 6 次：維基 Henry Cow、WebSearch（劍橋與 RIO）、Tribune RIO 文章、calyx-canterbury 樂團頁、WebSearch（Piekut 傳記）、Cornell 新聞。第二源都實際開頁讀過（Tribune、calyx、Cornell）；calyx 與維基的成軍資訊部分同源於樂團百科敘述，並非完全獨立，但兩者各自寫了成軍與解散。未收（單源）：樂團成立一個月後在校園替 Pink Floyd 暖場、並經 John Peel 節目曝光（只見 Cornell）；Chris Cutler 1971 年加入並帶樂團搬到倫敦（Tribune 與搜尋摘要，未逐頁核對）；Tribune 稱樂團是 Music for Socialism 的核心參與者並於 1977 年 7 月辦兩天音樂節（單源）；Boisen 評語「自發、精巧結構、哲學與幽默的混合」（維基單源）；鼓手 Chris Cutler 後來創辦獨立廠牌 Recommended Records（只見維基單源，calyx 沒寫到）；2006 年重聚演出與 2014 年追思 Lindsay Cooper 的演出（維基與 Cornell 皆有，但屬履歷，未收）。搜尋摘要稱『樂團間接影響大西洋兩岸許多音樂人、少有人敢直接模仿』，來源是未開頁的二手摘要，未收。後輩點名受其影響的有出處說法在本次沒查到，legacy 以 RIO、衍生計畫與學術傳記為主。"
+ },
+ {
+  "key": "héroes del silencio",
+  "name": "Héroes del Silencio",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團來自西班牙薩拉戈薩；前身是 Juan Valdivia 所組的 Zumo de Vidrio，Enrique Bunbury 加入並接手貝斯後成軍，後來定型的陣容是主唱 Enrique Bunbury、吉他手 Juan Valdivia、貝斯手 Joaquín Cardiel 與鼓手 Pedro Andreu。",
+      "src": "https://es.wikipedia.org/wiki/Historia_de_H%C3%A9roes_del_Silencio",
+      "src2": "https://heroesdelsilencio.com/historia/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團從 post-punk 與哥德搖滾的路數起家（早期被拿來和 Echo and the Bunnymen、Bauhaus、The Mission 相比），後來走向更硬的搖滾；Bunbury 的歌詞晦澀、帶隱喻。",
+      "src": "https://es.wikipedia.org/wiki/Historia_de_H%C3%A9roes_del_Silencio",
+      "src2": "https://en.wikipedia.org/wiki/H%C3%A9roes_del_Silencio",
+      "from": "new"
+     },
+     {
+      "f": "《El espíritu del vino》（1993）的聲音比前作更靠向傳統搖滾，取材自 1960 與 1970 年代的 rock and roll。",
+      "src": "https://es.wikipedia.org/wiki/El_esp%C3%ADritu_del_vino",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "英文維基稱他們被視為西語搖滾史上最好的樂團之一；elDiarioAR 的報導稱他們在巔峰期是西語搖滾最大的樂團。",
+      "src": "https://en.wikipedia.org/wiki/H%C3%A9roes_del_Silencio",
+      "src2": "https://www.eldiarioar.com/espectaculos/heroes-silencio-historia-cuatro-amigos-rompieron-banda-justo-alto_1_7875552.html",
+      "from": "new"
+     },
+     {
+      "f": "1996 年樂團解散，2007 年為二十週年重聚，辦了十場世界巡演，場地包括瓜地馬拉、阿根廷、墨西哥、美國與西班牙。",
+      "src": "https://en.wikipedia.org/wiki/H%C3%A9roes_del_Silencio",
+      "src2": "https://es.wikipedia.org/wiki/H%C3%A9roes_del_Silencio",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1996 年樂團解散；2007 年為成軍二十週年重聚，辦了十場世界巡演。",
+      "src": "https://en.wikipedia.org/wiki/H%C3%A9roes_del_Silencio",
+      "src2": "https://es.wikipedia.org/wiki/H%C3%A9roes_del_Silencio",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2007 年為成軍二十週年重聚，辦了十場世界巡演。",
+    "src": "https://en.wikipedia.org/wiki/H%C3%A9roes_del_Silencio",
+    "src2": "https://es.wikipedia.org/wiki/H%C3%A9roes_del_Silencio",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍與改名年份：英文維基寫 1984 年成軍、1985 年改名 Héroes del Silencio；官方網站寫 1984 年 12 月 Valdivia 把 Zumo de Vidrio 重組改名；西文維基寫約 1984–85；不採任何確切年份，facts 只寫「前身 Zumo de Vidrio」。",
+   "銷量：西文維基與其歷史條目寫逾 600 萬張、37 國；elDiarioAR 寫四張錄音室專輯賣逾 700 萬張；來源不一致，facts 不收銷量。",
+   "上線簡介《Senderos de Traición》寫西班牙賣約 50 萬張；西文維基寫兩週內約 40 萬張，兩者口徑不同，不衝突，facts 不收。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 6 次：英文維基、WebSearch（西文）、西文維基主條目、官方網站 historia 頁、elDiarioAR、西文維基《Historia de Héroes del Silencio》。第二源都實際開頁讀過。身世格：成軍契機是薩拉曼卡樂團比賽拿下第二名、EMI 製作人 Gustavo Montesano 注意到而簽下（英文維基單源，未收）。未收（單源）：AllMusic 稱『the very definition of rock en español』（維基單源）；Rolling Stone 西班牙版 2012 年排名西班牙搖滾團第二、四張專輯入選 Al Borde 的伊比利美洲 250 大搖滾專輯（西文維基單源）；1991 年柏林 Rock against Racism 音樂節後歐洲約賣 80 萬張（西文歷史條目單源）；elDiarioAR 稱演出約 700 場、30 國、與 Aerosmith、Iron Maiden、Leonard Cohen 同台、全球有數百個致敬樂團、最大歌迷會 Las líneas del Kaos 1994 年成立，以及 1996 年 2 月 10 日提華納 Bunbury 提出四頁宣言、Valdivia 起身抗議（單源，是傳記作者的敘述，寫作層若用需寫成據報導，建議不用）；官方網站稱 1988 年首次大巡演 31 場、1989 年 73 場（單源）。西文維基主條目與歷史條目同屬一個站，身世與聲音格的兩源非獨立之處已盡量用英文維基或官網搭配。legacy 以評價與重聚為主，後輩點名受其影響者沒查到。"
+ },
+ {
+  "key": "high rise",
+  "name": "High Rise",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "High Rise 是東京的日本噪音搖滾團，核心是貝斯兼主唱 Asahito Nanjo 與吉他手 Munehiro Narita，從 1980 年代的東京地下場景冒出來。",
+      "src": "https://en.wikipedia.org/wiki/High_Rise_(band)",
+      "src2": "https://highrise.bandcamp.com/album/high-rise-ii",
+      "from": "new"
+     },
+     {
+      "f": "樂團原本叫 Psychedelic Speed Freaks，後來聽從 P.S.F. 方面的建議改名，因為原名聽起來「太直接」；新團名取自 J. G. Ballard 的小說《High Rise》。",
+      "src": "https://en.wikipedia.org/wiki/High_Rise_(band)",
+      "src2": "https://trouserpress.com/reviews/high-rise/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "音樂取材自迷幻音樂、自由爵士與即興；Trouser Press 形容那是響亮、快速、嘈雜、卻仍認得出是搖滾的音樂，歪斜的吉他與貝斯疊成一面牆，鼓則自由奔放。",
+      "src": "https://en.wikipedia.org/wiki/High_Rise_(band)",
+      "src2": "https://trouserpress.com/reviews/high-rise/",
+      "from": "new"
+     },
+     {
+      "f": "Nanjo 的失真貝斯與 Narita 的吉他是樂團聲音的核心；廠方文案稱他們把 1960 年代末到 1970 年代初搖滾的速度、厚度與電力，扭成全新的樣貌。",
+      "src": "https://highrise.bandcamp.com/album/high-rise-ii",
+      "src2": "https://trouserpress.com/reviews/high-rise/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "東京唱片行 Modern Music 的店主 Hideo Ikeezumi（1949–2017）為發行 High Rise 的首張唱片而創立 P.S.F. Records，廠牌名取自該張唱片《Psychedelic Speed Freaks》；P.S.F. 專門發行日本的地下迷幻、民謠與自由即興。",
+      "src": "https://en.wikipedia.org/wiki/P.S.F._Records",
+      "src2": "https://trouserpress.com/reviews/high-rise/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "成軍年：英文維基寫 1982 年在東京結成；Asahito Nanjo 維基活動年表寫 High Rise 為 84 起；MusicBrainz（事實庫）藝人實體 begin 1984；Trouser Press 暗示首張在 1982 年發行，與維基 P.S.F. 條目的 1984 年衝突；來源不一致，facts 不寫成軍年。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 6 次：英文維基 High Rise、WebSearch（樂團與地下場景）、Trouser Press、英文維基 Asahito Nanjo、英文維基 P.S.F. Records、Bandcamp《High Rise II》頁。第二源皆實際開頁讀過。Bandcamp 是樂團／廠方文案，只當聲音描述的第二源，不當評價共識。未收（單源）：樂團前身 Conformist（Nanjo 與鼓手 Ikuro Takahashi），Narita 加入後以 Psychedelic Speed Freaks 之名錄音（只見搜尋摘要與 Trouser Press 部分，未能開頁逐條核對）；Narita 2022 年 7 月 3 日過世、2026 年 1 月才公布（維基與搜尋摘要同源，未取得第二個獨立源）；Nanjo 生於愛知、曾參與超過 300 項發行（維基單源）；Bandcamp 稱《High Rise II》是『20 世紀日本地下音樂最偉大的專輯之一』（廠方文案，非共識評價）；Trouser Press 拿 Blue Cheer 與 Sun City Girls 相比（單一樂評）；Fushitsusha 是 P.S.F. 第三張發行（搜尋摘要，未開頁）。legacy 只有廠牌這一條，後輩點名受其影響者與有出處的共識評價沒查到，故整體 thin。⚠ Trouser Press 說店主為發行他們首張而成立 P.S.F.，但該文把年份記 1982、與其他來源的 1984 不一致，故 legacy 那條沒帶年份。"
+ },
+ {
+  "key": "immortal",
+  "name": "Immortal",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Immortal 是來自挪威卑爾根的黑金屬樂團，由 Abbath（本名 Olve Eikemo）與 Demonaz（本名 Harald Nævdal）創立，兩人先前都在死金屬團 Old Funeral 與 Amputation 待過。",
+      "src": "https://en.wikipedia.org/wiki/Immortal_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Harald_N%C3%A6vdal",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Demonaz 寫的歌詞圍繞虛構的國度 Blashyrkh，那是一個充滿惡魔與戰鬥、永恆黑暗與冬天的世界，靈感來自卑爾根一帶的冬日山林與迷霧；這個世界觀在 Immortal 一張張專輯裡逐步展開。",
+      "src": "https://en.wikipedia.org/wiki/Immortal_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Harald_N%C3%A6vdal",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Demonaz 1997 年因嚴重肌腱炎無法再彈吉他，改由 Abbath 接下吉他，Demonaz 繼續寫詞並兼任團務。",
+      "src": "https://en.wikipedia.org/wiki/Immortal_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Harald_N%C3%A6vdal",
+      "from": "new"
+     },
+     {
+      "f": "Abbath 2015 年在與其他成員的爭執後離團；Immortal 在 2018 年推出沒有 Abbath 的第一張專輯《Northern Chaos Gods》，由 Demonaz 與鼓手 Horgh 組成的二人團隊完成。",
+      "src": "https://en.wikipedia.org/wiki/Immortal_(band)",
+      "src2": "https://loudwire.com/immortal-northern-chaos-gods-album/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "成軍年：英文維基（Immortal、Abbath、Harald Nævdal 三條目）寫 1991 年；Metal Injection 搜尋摘要寫 1990 年秋；來源不一致，facts 不寫成軍年。"
+  ],
+  "searches": 7,
+  "failedFetches": 5,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 7 次（維基 Immortal、WebSearch 兩次、Loudwire《Northern Chaos Gods》、Loudwire《Sons of Northern Darkness》週年文、維基 Harald Nævdal、維基 Abbath）。失敗請求 5 次（Guitar World 回傳註冊頁無內容、Metal Archives 403、Metal Injection 403、挪威百科 snl.no 404、挪威維基 404），超出 4 次上限一次，照實記錄。origin 與 sound 的第二源是同站另一條目（維基 Harald Nævdal），非獨立，寫作層請維持保守措辭；Loudwire 兩篇只覆蓋 2015 年離團與 2018 年新專輯、2002 年《Sons of Northern Darkness》，沒寫到創立與評價。legacy 格：Immortal 在黑金屬裡的地位（後輩點名、權威評價）沒有取得任何一條兩源皆開頁讀過的內容。未收（單源或只見搜尋摘要，未開頁）：Metal Injection 摘要稱 Demonaz 說『grim and frostbitten』這個概念成為黑金屬的流行說法、源自 Immortal；稱 1995 年《Battles in the North》是『arguably most influential』（MI 摘要，單源）；卑爾根的黑金屬少了反基督教與反社會的主題、取材於環繞城市的七座山（搜尋摘要，來源為 Guitar World，打不開）；Euronymous 帶 Abbath 入黑金屬（搜尋摘要）；Abbath 少年時因 Kiss 的《Creatures of the Night》迷上重金屬、Venom 與 Bathory 把他導向黑金屬（維基 Abbath 單源）；Abbath 錄了《Pure Holocaust》與《Battles in the North》的全部鼓（維基 Abbath 單源，與卡池《Pure Holocaust》有關，若寫作層要用須先補第二源）；2003 年解散、2006 年重組、2009 年《All Shall Fall》（Metal Injection 摘要；Loudwire 稱 2007 年重聚，兩者不一致，故不收）；Loudwire 稱 2002 年專輯加入 thrash riff 與對旋律、背離黑金屬傳統（單源）。2018 年專輯日期 2018 年 7 月 6 日由 Nuclear Blast 發行、官方說法是奪回過去的 grimness（Loudwire 單源）。注意：卡池 Immortal 三張專輯（Diabolical Fullmoon Mysticism 1992、Pure Holocaust 1993、At the Heart of Winter 1999）都與這支挪威團吻合，未見同名混卡。"
+ },
+ {
+  "key": "in flames",
+  "name": "In Flames",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "In Flames 1990 年在瑞典哥德堡由 Jesper Strömblad 成立，起初是他在 Ceremonial Oath 時期的副業企劃；他想把 Iron Maiden 式的旋律吉他和死金屬的凶猛結合在一起。",
+      "src": "https://en.wikipedia.org/wiki/In_Flames",
+      "src2": "https://en.wikipedia.org/wiki/Jesper_Str%C3%B6mblad",
+      "from": "new"
+     },
+     {
+      "f": "哥德堡的場景在 1989 至 1990 年前後成形，與斯德哥爾摩較粗糙的死金屬形成對比；Patrik Jensen（The Haunted）說在哥德堡「最有分量的樂團是 Iron Maiden」，各團一開始還共用排練室。",
+      "src": "https://loudwire.com/heavy-metal-101-history-of-death-metal/",
+      "src2": "https://en.wikipedia.org/wiki/In_Flames",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "哥德堡一帶的樂團以旋律性的雙吉他和聲與快速的和聲進行區別於斯德哥爾摩；In Flames 的路線是旋律吉他加死金屬的凶猛，被歸為旋律死金屬與另類金屬。",
+      "src": "https://loudwire.com/heavy-metal-101-history-of-death-metal/",
+      "src2": "https://en.wikipedia.org/wiki/In_Flames",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 In Flames 與 At the Gates、Dark Tranquillity 並列為哥德堡金屬場景的開創者，被廣泛視為旋律死金屬聲音的開創者之一；Jesper Strömblad 條目也稱它是旋律死金屬的先驅樂團。",
+      "src": "https://en.wikipedia.org/wiki/In_Flames",
+      "src2": "https://en.wikipedia.org/wiki/Jesper_Str%C3%B6mblad",
+      "from": "new"
+     },
+     {
+      "f": "哥德堡的旋律死金屬後來影響了美國西麻州與橘郡的金屬核場景；英文維基也列出 Trivium、Avenged Sevenfold 與 As I Lay Dying 等金屬核團受 In Flames 影響。",
+      "src": "https://loudwire.com/heavy-metal-101-history-of-death-metal/",
+      "src2": "https://en.wikipedia.org/wiki/In_Flames",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Jesper Strömblad 2010 年 2 月 12 日宣布永久離團，結束了創團成員的時代；自 1995 年起團裡不變的成員只剩主唱 Anders Fridén 與吉他手 Björn Gelotte。",
+      "src": "https://en.wikipedia.org/wiki/Jesper_Str%C3%B6mblad",
+      "src2": "https://en.wikipedia.org/wiki/In_Flames",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介《Whoracle》稱 In Flames 是『哥德堡三巨頭之一』，與維基『At the Gates、Dark Tranquillity 並列開創者』一致，無衝突。"
+  ],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 5 次（維基 In Flames、WebSearch、維基 Jesper Strömblad、WebSearch（限定媒體網域）、Loudwire 死金屬史）；失敗請求 2 次（Metal Archives 403、Revolver 403），另有一次 WebSearch 因網域限制出錯、重送，不計。第二源問題：origin 與 legacy 的『Strömblad 條目』與維基 In Flames 同站，非獨立；Loudwire 是獨立來源，但只談哥德堡場景整體（旋律雙吉他、Iron Maiden 影響、金屬核傳承），沒有逐一點名 In Flames 影響了誰，點名 Trivium 等三團只見英文維基（單源）。Loudwire 另引 Jensen 的說法『他們一開始幾乎是 At the Gates 的翻唱團』（單源，且是同行的玩笑話，未收）。未收（單源）：七座 Swedish Grammis（含 2005、2007、2009、2024 年四度拿下 Hard Rock/Metal Album of the Year）與十次提名——只見維基與搜尋摘要（Fandom 轉述），未取得第二個獨立開頁來源；累計銷量逾兩百萬張（維基單源，且依規則不寫在世者累計銷量）；Strömblad 2023 年說離團原因是他想維持死金屬路線、其他成員想往較親電台的方向走（維基單源）；《Foregone》（2023）被廣泛視為回歸之作（維基單源）；Fridén 曾在 Dark Tranquillity 唱過 1991 至 1993 年（搜尋摘要，來源 Revolver 打不開）。Strömblad 條目寫 1993 年離開 Ceremonial Oath 後找 Glenn Ljungström 與 Johan Larsson 錄 demo、1994 年改彈吉他（維基單源）。卡池 In Flames 三張（Come Clarity、The Jester Race、Whoracle）與這支瑞典團吻合。"
+ },
+ {
+  "key": "incubus",
+  "name": "Incubus",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Incubus 來自美國加州的 Calabasas，由主唱 Brandon Boyd、吉他手 Mike Einziger 與鼓手 José Pasillas 在 Calabasas 高中時期組成。",
+      "src": "https://en.wikipedia.org/wiki/Incubus_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Brandon_Boyd",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Incubus 被歸為另類搖滾，早期作品帶有 nu metal 與 funk metal 的成分；維基引 AllMusic 稱他們在新千禧年成為最受歡迎的另類金屬樂團之一。",
+      "src": "https://en.wikipedia.org/wiki/Incubus_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Brandon_Boyd",
+      "from": "new"
+     },
+     {
+      "f": "1990 年代末 alt-metal 浪潮裡，Incubus 曾隨 Ozzfest 巡演，但覺得當時的侵略、重男性氣質的聲音綁手綁腳；《Make Yourself》（1999 年 10 月 26 日發行）轉向旋律，Brandon Boyd 的歌聲疊在吉他與唱盤刮擦之上。",
+      "src": "https://www.grammy.com/news/hold-wheel-and-drive-incubus-look-back-their-alt-metal-classic-make-yourself-20-years/",
+      "src2": "https://en.wikipedia.org/wiki/Incubus_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Boyd 維基稱《A Crow Left of the Murder…》入圍 2005 年葛萊美最佳硬搖滾演出，專輯與單曲的主詞可能被混寫；不確定，facts 不收葛萊美。"
+  ],
+  "searches": 6,
+  "failedFetches": 4,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 6 次（維基 Incubus、WebSearch 三次、Grammy.com《Make Yourself》二十週年文、維基 Brandon Boyd）；失敗請求 4 次（AllMusic 403、Kerrang 403、Billboard 先 307 轉址再 402）。origin 與 sound 第一條的第二源是同站另一條目（維基 Brandon Boyd），非獨立；Grammy.com 為獨立來源，但只談 Calabasas、Ozzfest 與《Make Yourself》。未收：1991 年成軍（維基與搜尋摘要寫 Kerrang／維基同說法，但沒有取得兩個開頁來源；Boyd 條目只說他 1994 年畢業於 Calabasas 高中）；AllMusic 的『one of the most popular alt-metal bands of the new millennium』（維基轉述，AllMusic 本頁打不開）；Billboard 搜尋摘要稱六張專輯進 Billboard 200 前十、14 首歌進另類榜前十、其中四首登頂（單源、未開頁）；Kerrang 摘要稱 Make Yourself 與《Morning View》（2001）把電子、前衛、爵士甚至 didgeridoo 融進 funk-rock 骨架（摘要，未開頁）；累計銷量（依規則不寫在世者累計銷量）；《Make Yourself》雙白金（維基與 Grammy.com 皆有，但屬專輯成績，寫作層若為專輯卡寫簡介可自事實庫取）。Boyd 的影響來源 Mike Patton（維基單源）。legacy 格：沒有兩源皆開頁讀過的共識評價或後輩點名，標 none。卡池 Incubus 三張（Make Yourself、A Crow Left of the Murder…、S.C.I.E.N.C.E.）與這支加州團吻合。"
+ },
+ {
+  "key": "indochine",
+  "name": "Indochine",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Indochine 1981 年在巴黎由 Nicola Sirkis 與 Dominique Nicolas 成立，最初是 Sirkis 主唱、Nicolas 彈主奏吉他、Dimitri Bodiansky 吹薩克斯風；第一場演出是 1981 年 9 月 29 日在巴黎的 Le Rose Bonbon。",
+      "src": "https://en.wikipedia.org/wiki/Indochine_(band)",
+      "src2": "https://fr.wikipedia.org/wiki/Indochine_(groupe)",
+      "from": "new"
+     },
+     {
+      "f": "Nicola Sirkis 的雙胞胎兄弟 Stéphane Sirkis 後來加入樂團，擔任吉他與鍵盤。",
+      "src": "https://en.wikipedia.org/wiki/Indochine_(band)",
+      "src2": "https://www.stadefrance.com/en/stadium/indochine-stade-de-france",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團從 new wave 與 synthpop 起家，被場館官網形容為介於 pop rock 與 new wave 之間；英文維基說他們後來走向流行搖滾，2000 年代加入更暗的電子元素，法文維基則說編曲從電子為主逐漸轉向更重吉他。",
+      "src": "https://en.wikipedia.org/wiki/Indochine_(band)",
+      "src2": "https://www.stadefrance.com/en/stadium/indochine-stade-de-france",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2010 年 6 月 26 日，Indochine 為專輯《La République des Météores》的巡演在 Stade de France 開唱；場館官網稱他們是最早在 Bercy 與 Stade de France 開滿場的法國團之一，法文維基稱這是首支開滿該場館的法國搖滾團，約 8 萬名觀眾。此後又在 2014 年與 2022 年回到 Stade de France。",
+      "src": "https://www.stadefrance.com/en/stadium/indochine-stade-de-france",
+      "src2": "https://fr.wikipedia.org/wiki/Indochine_(groupe)",
+      "from": "new"
+     },
+     {
+      "f": "1982 年底的單曲〈L'Aventurier〉讓樂團打開知名度，專輯賣出逾 25 萬張；1985 至 1986 年前後，專輯《3》時期的〈Trois nuits par semaine〉與〈3e sexe〉等歌曲讓他們在法國榜單稱霸。",
+      "src": "https://fr.wikipedia.org/wiki/Indochine_(groupe)",
+      "src2": "https://en.wikipedia.org/wiki/Indochine_(band)",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Stéphane Sirkis 1999 年 2 月 27 日過世，樂團依他的請求繼續；2002 年的《Paradize》被視為樂團的重生之作。",
+      "src": "https://en.wikipedia.org/wiki/Indochine_(band)",
+      "src2": "https://fr.wikipedia.org/wiki/Indochine_(groupe)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2010 年 6 月 26 日在 Stade de France 開唱，為最早在該場館開滿的法國團之一。",
+    "src": "https://www.stadefrance.com/en/stadium/indochine-stade-de-france",
+    "src2": "https://fr.wikipedia.org/wiki/Indochine_(groupe)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "『首支』與『最早之一』：英文維基與法文維基寫 Indochine 是第一支開滿 Stade de France 的法國團（法文維基限定『搖滾團』），場館官網只說『最早之一』；沒有逐一排除其他法國團，facts 取較保守的『最早之一』，『首支』留在 notes。",
+   "Paradize 銷量：英文維基與法文維基寫逾 100 萬張，purebreak 寫逾 30 萬張（可能是首年）；來源不一致，facts 不收銷量。",
+   "樂團總銷量：英文維基寫逾 1000 萬張專輯與單曲，法文維基寫逾 1300 萬張；來源不一致，不收。",
+   "獎項：英文維基寫 2003 年 MTV Europe Music Award 最佳法國藝人與 Victoires de la musique 最佳流行專輯；法文維基列 2011 與 2026 年 Victoires；不一致，不收獎項。",
+   "L'Aventurier 單曲：法文維基寫 1983 年夏天賣約 50 萬張，上線簡介同；專輯逾 25 萬張兩維基一致。"
+  ],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 5 次（英文維基、WebSearch、Stade de France 官網頁、法文維基、purebreak）；失敗請求 1 次（chartsinfrance 301 轉址、未取得內容）。第二源有限：origin 的法文維基與英文維基同站，非獨立；Stade de France 官網是場館方，只涵蓋成軍陣容與演出紀錄；purebreak 頁只覆蓋 1981 年成立、1982 年底〈L'Aventurier〉、1983 年 Bus d'Acier 獎、《3》是 1980 年代最受矚目、《Paradize》2002 的概況，沒有 Stade de France 的內容，故未作為任何 fact 的第二源，只用來交叉驗證衝突。名人條目 L'Aventurier 成名年份：法文維基稱 1983 年夏天賣約 50 萬張。未收（單源）：樂團名稱取自 Indochina 一帶（英文維基）與法文維基稱 Sirkis 欣賞作家 Marguerite Duras（兩者說法不同，不收）；Stéphane Sirkis 死因（維基稱肝炎，法文維基稱家屬間有爭議；成員死亡只收年份，依規則不寫死因）；Bus d'Acier 1983 年最佳團體（purebreak 單源）；2017 年 NRJ Music Awards（法文維基單源）。後輩點名受其影響者沒查到。卡池 Indochine 三張（L'Aventurier、3、Paradize）與這支法國團吻合。"
+ },
+ {
+  "key": "isis",
+  "name": "Isis",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Isis 是美國的 post-metal 樂團，1997 年成立於波士頓，由 Aaron Turner（吉他、人聲）創立，他同時經營獨立廠牌 Hydra Head Records；樂團的第一場演出在蒙特婁。",
+      "src": "https://en.wikipedia.org/wiki/Isis_(band)",
+      "src2": "https://www.theaquarian.com/2010/05/19/isis-calls-it-quits-last-tour-to-be-their-final/",
+      "from": "new"
+     },
+     {
+      "f": "早期根基來自硬核龐克與末日金屬（doom metal），公認的影響包括 Neurosis 與 Godflesh。",
+      "src": "https://en.wikipedia.org/wiki/Isis_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Oceanic_(Isis_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dead End Follies 的回顧稱 2000 年首張全長《Celestial》讓 post-metal 變得無法忽視，把 post-rock 的抽象結構與 sludge metal 的肉搏感結合，並把 drone 與 ambient 當成核心成分；2002 年的《Oceanic》往氛圍方向走，被維基稱為使這個類型成形的轉折。",
+      "src": "https://www.deadendfollies.com/blog/metal-outsiders-journey-post-metal",
+      "src2": "https://en.wikipedia.org/wiki/Oceanic_(Isis_album)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱 Isis 被樂評視為 post-metal 類型中有影響力的先驅；Cult of Luna、Pelican、Tides、Rosetta 與 Russian Circles 都曾表示受 Isis 影響。Dead End Follies 的回顧也稱 Isis 啟發了 Cult of Luna，並影響 Pelican 與 Russian Circles 的走向。",
+      "src": "https://en.wikipedia.org/wiki/Isis_(band)",
+      "src2": "https://www.deadendfollies.com/blog/metal-outsiders-journey-post-metal",
+      "from": "new"
+     },
+     {
+      "f": "《Oceanic》被形容為「此後衡量所有 post-metal 專輯的標準」，並被認為引發一波受 Neurosis 啟發、冰川般的器樂 post-metal。",
+      "src": "https://en.wikipedia.org/wiki/Oceanic_(Isis_album)",
+      "src2": "https://www.deadendfollies.com/blog/metal-outsiders-journey-post-metal",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 2010 年 5 月 18 日宣布解散，告別巡演 5 月 26 日到 6 月 23 日，最後一場 2010 年 6 月 23 日在蒙特婁 Club Soda 舉行，也是他們 1997 年第一場演出所在的城市；聲明稱已經做完想做的事、說完想說的話。",
+      "src": "https://www.theaquarian.com/2010/05/19/isis-calls-it-quits-last-tour-to-be-their-final/",
+      "src2": "https://en.wikipedia.org/wiki/Isis_(band)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2002 年發行《Oceanic》，被視為 post-metal 類型的轉折。",
+    "src": "https://en.wikipedia.org/wiki/Oceanic_(Isis_album)",
+    "src2": "https://www.deadendfollies.com/blog/metal-outsiders-journey-post-metal",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Isis 成員編制：英文維基最終陣容 Turner、Caxide、Harris、Gallagher、Meyer；搜尋摘要提到早期 Chris Mereschuk；成員異動不收。"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 6 次（維基 Isis、WebSearch 兩次、Dead End Follies、維基《Oceanic》、The Aquarian 解散報導）。第二源的獨立性：Dead End Follies 是樂迷部落格式的回顧，並非權威媒體；《Oceanic》維基與 Isis 維基同站，非獨立；The Aquarian 是 2010 年當時報導，獨立。『《Oceanic》被形容為此後衡量所有 post-metal 專輯的標準』與『引發冰川般的 Neurosis 啟發器樂 post-metal』是《Oceanic》維基轉述他人評語，facts 內『from』欄請以 new 看待，第二源 Dead End Follies 只涵蓋『Oceanic 是 post-metal 的分水嶺、定義了此後走向』的大方向，寫作層請只寫成『被形容為』。未收（單源）：《Oceanic》榜單——Rolling Stone 2017 年『100 Greatest Metal Albums』第 72 名、Pitchfork 2003 年 2002 年度第 31 名、Terrorizer 2002 年度專輯第一、Decibel 十年百大第 4、Drowned in Sound 第 5（維基單源，Rolling Stone 等本頁沒開）；2018 年為紀念 Caleb Scofield 以 Celestial 之名短暫重聚（維基單源）；2014 年 Facebook 名稱改為『Isis the band』以避免與伊斯蘭國混淆（維基單源）；『Aaron Turner 自稱 Oceanic 是 quintessential album』（搜尋摘要）。Celestial 的 bank 事實（MB 曲目、維基資訊框）都是專輯層級，沒有採入。卡池 Isis 三張（Oceanic、Panopticon、Celestial）與這支美國團吻合，無同名混卡。"
+ },
+ {
+  "key": "jane’s addiction",
+  "name": "Jane’s Addiction",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Jane's Addiction 1985 年成立於洛杉磯：主唱 Perry Farrell 在前一個後龐克／哥德團 Psi Com 解散後，與貝斯手 Eric Avery 組團；吉他手 Dave Navarro 與鼓手 Stephen Perkins 隨後加入，成為經典陣容。",
+      "src": "https://en.wikipedia.org/wiki/Jane%27s_Addiction",
+      "src2": "https://en.wikipedia.org/wiki/Perry_Farrell",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Farrell 被稱為『另類音樂教父』，把 punk、metal 與迷幻搖滾揉成獨特的聲音；維基也稱樂團是第一波 alternative metal 的先驅。",
+      "src": "https://en.wikipedia.org/wiki/Perry_Farrell",
+      "src2": "https://en.wikipedia.org/wiki/Jane%27s_Addiction",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1991 年，Farrell 與 Marc Geiger 把 Lollapalooza 辦成 Jane's Addiction 的告別巡演，也是這個巡迴音樂節的第一屆；Farrell 當時承認團員『真的受不了彼此』，想在高點收場。",
+      "src": "https://en.wikipedia.org/wiki/Jane%27s_Addiction",
+      "src2": "https://www.grammy.com/news/lolla-the-story-of-lollapalooza-documentary-takeaways/",
+      "from": "new"
+     },
+     {
+      "f": "Lollapalooza 的巡迴形式後來成為 Coachella、Bonnaroo 等音樂節的藍圖，並擴展到美洲、歐洲與印度的多個城市。",
+      "src": "https://www.grammy.com/news/lolla-the-story-of-lollapalooza-documentary-takeaways/",
+      "src2": "https://en.wikipedia.org/wiki/Perry_Farrell",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團 1991 年以 Lollapalooza 告別巡演收場，2003 年重聚巡演；《Strays》（2003）距上一張錄音室專輯《Ritual de lo Habitual》（1990）13 年，是第一張有貝斯手 Chris Chaney 的專輯。",
+      "src": "https://www.grammy.com/news/lolla-the-story-of-lollapalooza-documentary-takeaways/",
+      "src2": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1991 年創辦 Lollapalooza（作為樂團的告別巡演）。",
+    "src": "https://en.wikipedia.org/wiki/Jane%27s_Addiction",
+    "src2": "https://www.grammy.com/news/lolla-the-story-of-lollapalooza-documentary-takeaways/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Britannica 的 Perry Farrell 條目片段寫 Lollapalooza『be revived in 1991』，措辭不清，未採；其餘以維基與 Grammy.com 為準。",
+   "維基 Jane's Addiction 條目抓取內容出現 2025 年 12 月宣布不再延續的段落，只見單源且屬近期事件，未收。"
+  ],
+  "searches": 5,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 5 次（維基 Jane's Addiction、WebSearch、Britannica Perry Farrell、Grammy.com 的 Lollapalooza 紀錄片文、維基 Perry Farrell）。第二源：維基 Perry Farrell 與 Jane's Addiction 同站，非獨立；Britannica 頁開出來只有 Lollapalooza 一小段，不足當第二源。所有 facts 中『from』請以 new 看待。Lollapalooza 的 Grammy.com 文章寫 Farrell 說『我們留在 Lolla 舞台上的是最好的作品』，並說 Stephen Perkins 與 Geiger 1990 年到英國 Reading 音樂節取經（單源，Perkins 一說有誤，不收）。未收（單源）：維基稱樂團是 1990 年代初另類搖滾運動中最早取得商業成功的樂團之一（維基單源，搜尋摘要同句）；《Nothing's Shocking》（1988）在主流為另類音樂搭起灘頭堡（搜尋摘要，來源疑為 AllMusic，未開頁）；葛萊美——維基稱 1989 年入圍最佳硬搖滾／金屬演出、1992 年入圍最佳團體搖滾演出，MTV 1991 年最佳另類影片（〈Been Caught Stealing〉）——維基單源，且主詞與屆次未驗，不收；Farrell 生於紐約皇后區、成長於長島與邁阿密（維基 Perry Farrell 單源）。後輩點名受其影響者沒查到，legacy 以 Lollapalooza 為主；名人堂入選資料本層沒有查到。卡池 Jane's Addiction 三張（The Great Escape Artist、Nothing's Shocking、Strays）與這支洛杉磯團吻合。pubIssues：上線簡介《Strays》稱 Martyn LeNoble 說他被開除，簡介已標明單方面說法，無需修改。"
+ },
+ {
+  "key": "japanese breakfast",
+  "name": "Japanese Breakfast",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Japanese Breakfast 的主腦是 Michelle Zauner，她生於首爾，母親是韓國人、父親是美國人，在美國奧勒岡州尤金長大。",
+      "src": "https://en.wikipedia.org/wiki/Michelle_Zauner",
+      "src2": "https://www.culturedmag.com/article/2025/04/22/japanese-breakfast-michelle-zauner-musician-books/",
+      "from": "new"
+     },
+     {
+      "f": "Japanese Breakfast 2013 年在費城起步，最初是 Zauner 在艾莫（emo）樂團 Little Big League 之外的副業；2014 年她回到家鄉尤金照顧生病的母親，繼續錄音來排解壓力，母親過世後則用音樂處理哀傷。",
+      "src": "https://en.wikipedia.org/wiki/Japanese_Breakfast",
+      "src2": "https://en.wikipedia.org/wiki/Michelle_Zauner",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "none",
+    "facts": []
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Zauner 的回憶錄《Crying in H Mart》2021 年出版，在《紐約時報》暢銷榜上待了 60 週，處理母親過世後的哀傷與她對韓國超市 H Mart 的回憶。",
+      "src": "https://en.wikipedia.org/wiki/Michelle_Zauner",
+      "src2": "https://www.culturedmag.com/article/2025/04/22/japanese-breakfast-michelle-zauner-musician-books/",
+      "from": "new"
+     },
+     {
+      "f": "《Jubilee》（2021）入圍第 64 屆（2022 年）葛萊美最佳另類音樂專輯，Japanese Breakfast 也入圍最佳新人，兩項都是入圍、未得獎。",
+      "src": "https://en.wikipedia.org/wiki/Japanese_Breakfast",
+      "src2": "https://www.grammy.com/news/japanese-breakfast-michelle-zauner-jubilee-interview-video-2022-grammys-meet-first-time-nominee",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2022 年入圍葛萊美最佳新人與最佳另類音樂專輯（《Jubilee》），皆未得獎。",
+    "src": "https://en.wikipedia.org/wiki/Japanese_Breakfast",
+    "src2": "https://www.grammy.com/news/japanese-breakfast-michelle-zauner-jubilee-interview-video-2022-grammys-meet-first-time-nominee",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "樂團名稱由來：維基稱 Zauner 看到一張日式早餐的 GIF 動畫而取名，Cultured 稱 2012 年在瀏覽傳統早餐圖片時取名；說法與年份不一致，facts 不收。",
+   "成軍年：維基稱 2013 年；Cultured 稱 2012 年取名；facts 寫 2013 年起步（維基與 Zauner 條目一致）。"
+  ],
+  "searches": 7,
+  "failedFetches": 4,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 7 次（維基 Japanese Breakfast、WebSearch 兩次、Cultured 雜誌、維基 Michelle Zauner、Stereogum、Grammy.com 專訪）；失敗請求 4 次（Variety 先 307 轉址再 402、Parade 403、NPR 503）。origin 第二條與 legacy 第一條的第二源為同站維基另一條目，非獨立。sound 格：只有維基 Japanese Breakfast 單源（Psychopomp 2016 偏 lo-fi，《Soft Sounds from Another Planet》2017 與《Jubilee》2021 帶 shoegaze 與室內流行）；Grammy.com 專訪寫 Zauner 自述《Jubilee》汲取 Kate Bush、Björk、Wilco、Bill Withers、Randy Newman、Fleetwood Mac 與 Alex G（單源，是本人說法）；搜尋摘要稱 AllMusic／Rolling Stone 把 Jubilee 形容為結合 1980 年代熱帶 synth pop 與 1990 年代 shoegaze 的 indie pop（未開頁）。Wilco 的 Jeff Tweedy 後來翻唱她的〈Kokomo, IN〉（Grammy.com 單源，是本人說法）。未收（單源）：Time 雜誌 2022 年 100 大人物『Innovators』（維基 Zauner 單源）；《Crying in H Mart》首週登《紐約時報》精裝非小說榜第二名、Orion Pictures 2021 年 6 月宣布改編電影、2025 年一月仍在暫停（維基單源）；《Jubilee》2026 年 4 月 14 日 RIAA 金唱片認證（Stereogum 單源）；Zauner 2024 年移居首爾、2025 年新專輯《For Melancholy Brunettes (& sad women)》（Cultured 與維基皆有，但屬履歷，未收）；Zauner 1989 年出生與父親猶太背景（維基 Zauner 單源，且在世者生日不寫）。卡池 Japanese Breakfast 三張（Jubilee、Soft Sounds From Another Planet、Psychopomp）都是這個團，無同名混卡。"
+ }
+]

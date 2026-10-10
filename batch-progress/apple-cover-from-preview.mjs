@@ -29,6 +29,11 @@ for (const r of rows) {
   if (r.cover) continue;
   const p = probe[r.artist + '|' + r.album];
   if (!p || !p.collectionId) continue;
+  // 只認探測層判 ready 的條目。被降級（downgradedBy）或判 unavailable 的條目仍留著 collectionId 當紀錄，
+  // 但那正是「事後證明是別張碟」的那一筆——2026-10-04 c-186／c-188／c-197／c-198 有四張
+  // 因此拿到別張唱片的封面（撞圖檢查抓到其中一張，回頭對探測狀態才找齊）。
+  if (p.status && p.status !== 'ready') continue;
+  if (p.downgradedBy) continue;
   tried++;
   const front = String(p.front || 'us').toLowerCase();
   let art = null, name = '', who = '';

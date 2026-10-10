@@ -353,6 +353,13 @@ if (stage === 'out') {
       const ctx = r.desc.slice(Math.max(0, i - 24), i + m[0].length + 12).replace(/\s+/g, ' ');
       warn('out', '未具名出處?', label, '→', r.key, ':: …' + ctx + '…');
     }
+    // 用語房規（2026-09-29 店主裁定）：「中國」不加「大陸」、不以「大陸」代稱中國；蔣中正寫蔣介石。
+    // 掃剝除《》〈〉與卡單專名後的文字，官方原題裡的字不誤報。
+    for (const r of o) {
+      const t = stripLegit(r.desc);
+      if (/大陸/.test(t)) warn('out', '用語：出現「大陸」，稱中國一律寫「中國」 →', r.key);
+      if (/蔣中正/.test(t)) warn('out', '用語：「蔣中正」一律寫「蔣介石」 →', r.key);
+    }
     for (const r of o) {
       const rr = research.get(r.key);
       if (!rr) { descNoResearch++; continue; }

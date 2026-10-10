@@ -1,0 +1,1167 @@
+{
+ "schemaVersion": 1,
+ "batch": "c168-20261004",
+ "albums": [
+  {
+   "artist": "Out of the Blue",
+   "album": "O.T.B.",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3aa59426-b645-44b1-9e2b-7ca0fc47f531。release-group 端點（inc=artist-credits+releases+genres+tags）：title「O.T.B.」、artist-credit「Out of the Blue」（**21d3d54e-8bbd-44a5-b2a8-47918f83d395 Group**）、first-release-date 1985、primary-type Album、secondary-types 空、genres `[\"jazz\"]`／tags `[\"jazz\"]`（**列舉檔記 `unknown` 是讀藝人端造成的，第 1557 條**），轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：4b32ac93（1985 US Official 12\" Vinyl 7 軌，Blue Note[713c4a95] BT 85118，bc 077778511816）、57816516（1986 US Official CD 7 軌，Blue Note CDP 7 46290 2，bc 077774629027）。七軌（release/4b32ac93?inc=recordings）：RH Factor 8:20／Eastern Love Village 8:33／Output 5:15／Reunited 4:26／Git in There 5:25／Blue Hughes 6:58／O.T.B. 5:20。錄音 1985-06-07～08 Van Gelder Studio, Englewood Cliffs；班底 Michael Philip Mossman tp/flh、Kenny Garrett as、Ralph Bowen ts、Harry Pickens p、Robert Hurst b、Ralph Peterson d；製作 Michael Cuscuna、執行製作 Bruce Lundvall、錄音與刻片 Rudy Van Gelder、內頁 Stanley Crouch（Discogs 3950140）。Apple us：三種查法 0 筆。CAA：RG 層 404。",
+    "rgMbid": "3aa59426-b645-44b1-9e2b-7ca0fc47f531",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3f/9b/06/3f9b0682-dbee-66e0-d6bf-a82ce148b340/13ULAIM35774.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1767694719",
+    "note": "試聽探測釘定的 collectionId 1767694719（jp）：OTB — Out Of The Blue"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=3）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六個二十出頭的年輕人，兩天在 Van Gelder 的錄音室錄完七首自己的曲子。六重奏是 Blue Note 1985 年才組起來的，這張是他們的出道作；日子是同年 6 月 7 日與 8 日，錄音室在紐澤西的 Englewood Cliffs。製作人 Michael Cuscuna，錄音與母盤刻片由 Rudy Van Gelder 一手包辦，中音薩克斯風是 Kenny Garrett，內頁文字出自 Stanley Crouch。唱片 1985 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3950140-Out-Of-The-Blue-3-OTB",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1985/CB-1985-10-12.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1985/BB-1985-11-09.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1986/BB-1986-04-12.pdf",
+     "https://en.wikipedia.org/wiki/Michael_Philip_Mossman",
+     "https://en.wikipedia.org/wiki/Ralph_Peterson_Jr.",
+     "https://musicbrainz.org/release-group/3aa59426-b645-44b1-9e2b-7ca0fc47f531"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/98/84/0b988439-19d6-2949-eea6-2514f7a9d0a1/mzaf_9361230305732185581.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1767694719",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Out of the Blue",
+   "album": "Inside Track",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c210e0d5-bfbd-4f4b-a53f-59bbff6252bb。release-group 端點：title「Inside Track」、artist-credit「Out of the Blue」（21d3d54e Group）、first-release-date 1986、primary-type Album、secondary-types 空、genres `[\"jazz\"]`／tags `[\"jazz\"]`，轄下 1 個 release。release 端點：43d13ee2（1986 JP Official CD 7 軌，Blue Note[713c4a95] CDP 7 46395 2，bc 077774639521）。**MB 只有這一筆，美國原壓黑膠 BT-85128 未建檔**（Discogs 2942538）。七軌：Inside Track 5:43／Cherry Pickens 6:20／Hot House 6:35／E Force 5:13／Nathan Jones 7:40／Isolation 7:01／Elevation 6:08。錄音 1986-06-19～20 RCA Studio C, NYC，全數位、DMM 刻片（Discogs 2942538 notes）。Apple us：1506679747（7 軌，1986-01-01，A Blue Note Records Release）。CAA：4 圖 front=true，來源 43d13ee2。",
+    "rgMbid": "c210e0d5-bfbd-4f4b-a53f-59bbff6252bb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c210e0d5-bfbd-4f4b-a53f-59bbff6252bb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 193,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=193）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "數位母帶配 DMM 直刻金屬母盤，廠牌把當年最新的技術押在這支剛出道的團身上。錄音是 1986 年 6 月 19 日與 20 日在紐約的 RCA Studio C 做的，母帶交給 Bob Ludwig 處理。六人編制與首作一模一樣，一個都沒換；七軌裡六首出自團員之手，外來的只有 Tadd Dameron 的〈Hot House〉。製作人仍是 Michael Cuscuna，唱片 1986 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2942538-Out-Of-The-Blue-3-Inside-Track",
+     "https://www.discogs.com/release/8110218-Out-Of-The-Blue-3-Inside-Track",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1986/BB-1986-09-13.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1986/BB-1986-10-11.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1986/BB-1986-11-08.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1986/BB-1986-10-25.pdf",
+     "https://musicbrainz.org/release-group/c210e0d5-bfbd-4f4b-a53f-59bbff6252bb",
+     "https://music.apple.com/us/album/inside-track/1506679747"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dd/5f/f7/dd5ff799-f601-312d-b3a7-19a4271b43bc/mzaf_569581177629838821.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1506679747",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Out of the Blue",
+   "album": "Live at Mt. Fuji",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 754e2be8-6060-4e96-9ce6-5e1602eba12d。release-group 端點：title「Live at Mt. Fuji」、artist-credit「Out of the Blue」（21d3d54e Group）、first-release-date 1987、primary-type Album、**secondary-types `[\"Live\"]`**、genres `[\"jazz\",\"post-bop\"]`／tags 同，轄下 1 個 release。release 端點：5310fd26（1987 US Official 12\" Vinyl 5 軌，Blue Note[713c4a95] BT-85-141 ＋ BT85141 兩個 catno，bc 077778514114）。五軌：Parisian Thoroughfare 3:31／Blue Pearl 4:43／Nathan Jones 11:23／Elevation 11:39／OTB 11:35。錄音 1986-08-31 現場，Mt. Fuji Blue Note Jazz Festival；班底 Michael Philip Mossman tp、Kenny Garrett as、Ralph Bowen ts、Harry Pickens p、Kenny Davis b、Ralph Peterson d；製作 Michael Cuscuna ＋ Hitoshi Namekata、錄音與混音 Yshi Watanabe、DMM 刻片 Bill Kipper、美術 Kaoru Taku（Discogs 3375068）。**刻意不釘**：3706161 是 Discogs 美版 CD 條目（掛名印 OTB、catno CDP 7 46784 2），非 MBID。Apple us：1507815707（7 軌，與實體 5 軌不符）。CAA：6 圖 front=true，來源 5310fd26。",
+    "rgMbid": "754e2be8-6060-4e96-9ce6-5e1602eba12d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/754e2be8-6060-4e96-9ce6-5e1602eba12d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 247,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=247）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "音樂節第一晚，颱風把舞台和全部樂器掀了，清晨八點的會議決定照常開演。這個場子是東芝 EMI 的 Hitoshi Namekata 促成的，他在 Blue Note 1985 年的紐約專場之後，把同樣規格的活動搬到了富士山下。重建過的舞台讓演出延後兩小時開始，這張就錄在 1986 年 8 月 31 日的那個舞台上。1987 年發行的黑膠，封套裡另夾一張二十位藝人聯名的公開信，請樂迷別把唱片轉錄成卡帶。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3375068-Out-Of-The-Blue-3-Live-At-Mt-Fuji",
+     "https://www.bluenote.com/hitoshi-namekata-a-remembrance/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/BB-1987-08-22.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/BB-1987-10-24.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1987/CB-1987-10-10.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1987/BB-1987-06-27.pdf",
+     "https://musicbrainz.org/release-group/754e2be8-6060-4e96-9ce6-5e1602eba12d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/f0/b2/03/f0b203b8-d36a-8e43-7054-96c03488c83a/mzaf_4224452863331110735.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1507815707",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ralph Peterson Quintet",
+   "album": "V",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4b6f60d4-801b-42af-94c6-31f00fc63bf6。release-group 端點：title「V」、artist-credit「Ralph Peterson Quintet」（**46dc09b1-4f45-4996-a29c-b2924e91e2ba Group**）、first-release-date 1988、primary-type Album、secondary-types 空、genres `[\"jazz\",\"post-bop\"]`／tags 同，轄下 2 個 release。release 端點：2ca4f6ec（**1988 JP Official CD 6 軌，somethin'else[9de9acdf] CJ32-5502，bc 4988006624993**）、1a6ff9d7（1989 US Official 12\" Vinyl 6 軌，Blue Note[713c4a95] B1-91730，無 barcode）。六軌：Enemy Within 7:38／Monief 6:52／The Short End of the Stick 6:45／Soweto 6 5:53／Viola's Dance 7:11／Bebopskerony 7:37。錄音 1988-04-19～20 A&R Recording, NYC（Discogs 1490976／10324879 notes 一致）。**同一個人的另兩個 MB 實體（刻意不釘）**：`Ralph Peterson Trio` c50c8d6e（type null，c-149 a《Triangular》用）、`Ralph Peterson` 33283e4c（Person，c-150 a《Presents The Fo'tet》用）；本批《Ornettology》用的是第四個實體 `Ralph Peterson Fo'tet` 4c082d2b。Apple us：三種查法 0 筆。CAA：1 圖 front=true，來源 1a6ff9d7。",
+    "rgMbid": "4b6f60d4-801b-42af-94c6-31f00fc63bf6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4b6f60d4-801b-42af-94c6-31f00fc63bf6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 44,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=44）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "打擊主修的入學試沒考過，他改用小號進了大學。Ralph Peterson 的祖父與四位叔伯都是鼓手，他三歲就開始打擊樂，1984 年畢業之後被 Art Blakey 挑去當第二鼓手。這是他以領班身分錄的第一張，五重奏的前線是 Terence Blanchard 的小號，1988 年 4 月錄於紐約，六首裡有五首是他自己寫的。原盤出自東芝 EMI 新設的 Somethin' Else，1988 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/22809458-Ralph-Peterson-Quintet-V",
+     "https://www.discogs.com/release/1490976-Ralph-Peterson-Quintet-V",
+     "https://www.bluenote.com/hitoshi-namekata-a-remembrance/",
+     "https://en.wikipedia.org/wiki/Ralph_Peterson_Jr.",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1989/CB-1989-03-11.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-07-08.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1989/CB-1989-06-03.pdf",
+     "https://musicbrainz.org/release-group/4b6f60d4-801b-42af-94c6-31f00fc63bf6"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Out of the Blue",
+   "album": "Spiral Staircase",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 86d10479-1cc4-4e68-94e8-77ee72037bfb。release-group 端點：title「Spiral Staircase」、artist-credit「Out of the Blue」（21d3d54e Group）、first-release-date 1989、primary-type Album、secondary-types 空、genres `[\"hard bop\",\"jazz\"]`／tags 同，轄下 1 個 release。release 端點：0aedda9b（1989 US Official Vinyl 7 軌，Blue Note[713c4a95] **catno 欄逐字 `93006`（裸數字，第 1250 條）**，無 barcode）。七軌：North of the Border 7:47／Samba Larue 6:36／The Perpetrator 6:33／Spiral Staircase 6:40／Gerri-Ann 5:50／Ika Sashi 7:47／Input 6:28。錄音 1989-01-24～25 A&R Studios, NYC；班底 Michael Philip Mossman tp、Steve Wilson as、Ralph Bowen ts、Renee Rosnes p、Kenny Davis b、Billy Drummond d；製作 Michael Cuscuna（Discogs 2988705）。**刻意不釘**：Ralph McTell《Spiral Staircase》1969 是池中 seed 的同名別碟（英國民謠），非本盤。Apple us：1767694352（7 軌，1989-01-01）。CAA：RG 層 404。",
+    "rgMbid": "86d10479-1cc4-4e68-94e8-77ee72037bfb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/15/f0/a3/15f0a3a4-ac36-f04e-dd48-6df218fee113/24UMGIM86304.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1767694352",
+    "note": "試聽探測釘定的 collectionId 1767694352（us）：Out of the Blue — Spiral Staircase"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 26,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=26）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第四張錄完的時候，創團的六個人只剩下兩個還在裡面。留下的是小號 Michael Philip Mossman 與次中音 Ralph Bowen，鋼琴換上 Renee Rosnes、鼓換上 Billy Drummond，錄音在 1989 年 1 月的紐約 A&R Studios。黑膠上的曲子仍舊全是團員自己的作品，Mossman 一個人就寫了三首。同年 3 月他們另一場演出被錄成影像，1990 年由 Pioneer 在日本發成雷射影碟。唱片 1989 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2988705-Out-Of-The-Blue-3-Spiral-Staircase",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-09-30.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-03-18.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-01-13.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-08-11.pdf",
+     "https://www.discogs.com/release/30376286-Superblue-2-Superblue-2-The-50th-Year",
+     "https://musicbrainz.org/release-group/86d10479-1cc4-4e68-94e8-77ee72037bfb",
+     "https://music.apple.com/us/album/spiral-staircase/1767694352"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/54/86/d35486be-6120-d5d8-f784-a1d1df7cd9f9/mzaf_4459953285816022506.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1767694352",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Superblue",
+   "album": "Superblue",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 445e91d8-8acb-4302-902a-28c1922451f7。release-group 端點：title「Superblue」、artist-credit「Superblue」（**cb57f386-6d6e-4d88-a2a5-6bc0ef28d155 Group**）、first-release-date 1989、primary-type Album、secondary-types 空、genres `[\"jazz\"]`／tags `[\"jazz\"]`，轄下 1 個 release。release 端點：c541f4a0（1989 country 欄為空 Official CD 8 軌，Blue Note[713c4a95] CDP 7 91731 2，bc 077779173129）。**MB 沒建日本原盤**（Somethin' Else CJ32-5501，Discogs 26236019，released 1988-07-24）——第 642 條已換過 `release?release-group=` 與 `release-group?inc=releases` 兩種端點組合，MB 確實只有一筆。八軌：Open Sesame 7:39／Summertime 6:57／Marvelous Marvin 5:07／Time Off 4:24／I Remember Clifford 5:43／Conversation 6:57／Once Forgotten 5:47／M & M 4:19。錄音 1988-04-26 Van Gelder Studio, Englewood Cliffs；班底 Don Sickler tp／製作／編曲、Roy Hargrove tp/flh、Frank Lacy tb、Bobby Watson as／編曲、Billy Pierce ts、Mulgrew Miller p、Robert Hurst b、Kenny Washington d；系列監修 Michael Cuscuna ＋ Hitoshi Namekata、錄音 Rudy Van Gelder、母帶 Yoshio Okazaki（Discogs 16963170／26236019）。**刻意不釘**：MB 另有 Kurt Elling／Charlie Hunter 的 `Superblue` 專案與千里達 `Super Blue`，**是不同實體、不同人**。Apple us：三種查法 0 筆。CAA：2 圖 front=true，來源 c541f4a0。",
+    "selfTitledVerified": true,
+    "rgMbid": "445e91d8-8acb-4302-902a-28c1922451f7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/445e91d8-8acb-4302-902a-28c1922451f7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 18,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=18）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十八歲的小號手坐進 Van Gelder 的錄音室，吹的是二十多年前的 Blue Note 舊曲。那個人是 1969 年出生的 Roy Hargrove。這支八重奏由小號手 Don Sickler 領軍，八首曲子的編曲幾乎全由他一手包辦，錄完是 1988 年 4 月的事。曲目大半取自廠牌自家的舊曲庫，Tina Brooks 的〈Open Sesame〉是其中一首。原盤是同年 7 月的日本版，美國版隔年才發。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/26236019-Superblue-2-Superblue",
+     "https://musicbrainz.org/release-group/445e91d8-8acb-4302-902a-28c1922451f7",
+     "https://en.wikipedia.org/wiki/Roy_Hargrove",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-03-25.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-05-27.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/80s/1989/CB-1989-06-17.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1989/BB-1989-04-29.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1988/BB-1988-07-16.pdf"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ralph Peterson Quintet",
+   "album": "Volition",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1c2d708f-db65-4cf1-b4af-bc965763b759。release-group 端點：title「Volition」、artist-credit「Ralph Peterson Quintet」（46dc09b1 Group）、first-release-date 1990、primary-type Album、secondary-types 空、genres `[\"hard bop\",\"jazz\"]`／tags 同，轄下 1 個 release。release 端點：cc41a5bf（1990 US Official CD 8 軌，Blue Note[713c4a95] CDP 7 93894 2，bc 077779389421）。八軌：Volition 6:10／Seven of Swords 7:33／On My Side 6:38／Forth and Back 6:09／Back to Stay 6:09／In Step 6:17／The Benevolent One 5:47／Sasquatch 5:25。錄音 1989-02-27～28 Clinton Recording, NYC（錄音師 Tom Lazarus、剪輯 Jim Anderson、母帶 Yoshio Okazaki）；班底 Ralph Peterson d、Steve Wilson as/ss、Geri Allen p、Phil Bowler b（Discogs 8658885 逐項 credits，**小號手未列於 Discogs credits，研究層需補**）；製作 Kazunori Sugiyama、執行製作 Hitoshi Namekata、錄音監督 Kunle Mwanga。日版 Somethin' Else CJ32-5510（Discogs 13376834，同 notes 同錄音日）。Apple us：三種查法 0 筆。CAA：1 圖 front=true，來源 cc41a5bf。",
+    "rgMbid": "1c2d708f-db65-4cf1-b4af-bc965763b759",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1c2d708f-db65-4cf1-b4af-bc965763b759/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 12,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=12）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一支五重奏連錄兩張，鼓手在第二張寫了八首裡的五首。錄音是 1989 年 2 月 27 日與 28 日兩天，地點在紐約的 Clinton Recording，班底與前一張完全相同，Terence Blanchard 的小號與 Geri Allen 的鋼琴都還在。剩下三首之一的〈Seven Of Swords〉出自鋼琴家 Walter Davis Jr.，Ralph Peterson 在 1985 年與 1989 年兩度與他合作過。唱片 1990 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8658885-Ralph-Peterson-Quintet-Volition",
+     "https://www.discogs.com/release/13376834-Ralph-Peterson-Quintet-Volition",
+     "https://en.wikipedia.org/wiki/Ralph_Peterson_Jr.",
+     "https://www.discogs.com/release/12615736-Ralph-Peterson-Fotet-Ornettology",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-07-07.pdf",
+     "https://musicbrainz.org/release-group/1c2d708f-db65-4cf1-b4af-bc965763b759"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Superblue",
+   "album": "Superblue 2",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c7b7b405-3836-44c8-ac86-4d3c3e3e346a。release-group 端點：title「Superblue 2」、artist-credit「Superblue」（cb57f386 Group）、first-release-date 1990、primary-type **Album**、secondary-types **空**、genres `[\"hard bop\",\"jazz\",\"post-bop\"]`／tags 同，轄下 1 個 release。release 端點：72c6201f（1990 country 欄為空 Official CD 10 軌，Blue Note[713c4a95] CDP 7 92997 2，bc 077779299720）。**MB 沒建日本原盤**（Somethin' Else CJ32-5512，Discogs 30376286，1989，全稱 `Superblue 2 - The 50th Year`）。十軌：Flight to Jordan 4:56／Nica's Dream 5:51／'Round Midnight 5:57／Take Your Pick 4:14／Blue Minor 5:10／Autumn Leaves 6:20／Blue Bossa 6:25／Desert Moonlight 5:36／Low Tide 5:35／Cool Struttin' 5:33。錄音 1989-04-24～25 Van Gelder Studio, Englewood Cliffs；班底 Don Sickler tp／編曲／製作／領班、Wallace Roney tp、Robin Eubanks tb、Bobby Watson as、Ralph Moore ts、Renee Rosnes p、Robert Hurst b、Marvin「Smitty」Smith d；錄音 Rudy Van Gelder、母帶 Yoshio Okazaki、執行製作 Hitoshi Namekata（Discogs 9741220 逐項 credits）。**刻意不釘**：445e91d8 是同團第一張《Superblue》（1988，8 軌，另一場錄音），本批另立一卡。Apple us：三種查法 0 筆。CAA：2 圖 front=true，來源 72c6201f。",
+    "rgMbid": "c7b7b405-3836-44c8-ac86-4d3c3e3e346a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c7b7b405-3836-44c8-ac86-4d3c3e3e346a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 22,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=22）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Blue Note 五十歲那年，八個人在 Van Gelder 的錄音室把自家舊曲重編一遍。日本原盤的全稱帶著 The 50th Year 這個副題，對應的正是廠牌創立五十週年。1989 年 4 月 24 日與 25 日錄完，十首無一例外取自那個曲庫，Horace Silver 的〈Nica's Dream〉也在其中。Don Sickler 一人兼了領班、編曲與製作三個位置。唱片 1989 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/30376286-Superblue-2-Superblue-2-The-50th-Year",
+     "https://www.discogs.com/release/9741220-Superblue-2-Superblue-2",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-03-03.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-03-10.pdf",
+     "https://en.wikipedia.org/wiki/Don_Sickler",
+     "https://musicbrainz.org/release-group/c7b7b405-3836-44c8-ac86-4d3c3e3e346a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bobby Watson & Horizon",
+   "album": "Post-Motown Bop",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b8f5290e-e990-4c9f-bb4a-6a3eb867f4f2。release-group 端點：title「Post-Motown Bop」、artist-credit「Bobby Watson & Horizon」（**cc2eaa0b-0798-47b9-9966-07c9f628924e Group**，與池中 c-149 a 兩張同實體）、first-release-date 1991、primary-type Album、secondary-types 空、**genres 與 tags 兩欄皆空**（曲風由本棒依軌目與廠牌線判 jazz；第 1557 條的形狀是「藝人端空」，本張連 RG 端也空）、轄下 1 個 release。release 端點：e0e7cc95（1991 US **status null** CD 10 軌，Blue Note[713c4a95]，**catalog-number 欄為空**，無 barcode）。十軌：The Punjab of Java Po’ 5:29／Big Girls 5:42／Falling in Love With Love 6:32／7th Avenue 5:35／Appointment in Milano 7:22／In Case You Missed It 8:20／In a Sentimental Mood 7:57／Slippin’ and Slidin’ 6:02／Bah-Da-Da-Da-Dah-Dah 5:12／Last Chance to Groove 6:04。catno 由 Discogs 4876807 補：Blue Note CDP 7 95148 2（US CD，總長 63:48，Printed in Canada）；卡帶 B4-95148；日版 TOCJ-5286。班底 Bobby Watson as/ss／製作、Melton Mustafa tp、Edward Simon p、Carroll V. Dashiell Jr. b、Victor Lewis d／共同製作；製作 Matt Pierson。**錄音日期 Discogs 與 MB 皆無**。Apple us：1513480842（10 軌，1991-01-01）。CAA：RG 層 404。",
+    "rgMbid": "b8f5290e-e990-4c9f-bb4a-6a3eb867f4f2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9c/70/38/9c703869-f4ee-8857-683c-79c9068011a7/20UMGIM19108.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1513480842",
+    "note": "試聽探測釘定的 collectionId 1513480842（us）：Bobby Watson & Horizon — Post-Motown Bop (feat. Victor Lewis)"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 224,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=224）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "當過 Art Blakey 四年音樂總監的中音手，把鼓手的名字也掛上盤面。那四年是 1977 年到 1981 年，帶的是 Jazz Messengers。Horizon 是 Bobby Watson 與鼓手 Victor Lewis 一起組起來的團，Lewis 在盤上兼共同製作人，原盤的完整掛名因此把他也寫了進去。錄音地點是紐約的 Power Station，時間 1990 年 9 月。唱片 1991 年發行，在 Billboard 的爵士專輯榜上最高排到第 9 名。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4876807-Bobby-Watson-Horizon-Featuring-Victor-Lewis-Post-Motown-Bop",
+     "https://www.discogs.com/release/19360981-Bobby-Watson-Horizon-Featuring-Victor-Lewis-Post-Motown-Bop",
+     "https://en.wikipedia.org/wiki/Bobby_Watson_(American_musician)",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-01-12.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-03-16.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-04-13.pdf",
+     "https://music.apple.com/us/album/post-motown-bop-feat-victor-lewis/1513480842",
+     "https://musicbrainz.org/release-group/b8f5290e-e990-4c9f-bb4a-6a3eb867f4f2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/8f/d6/dc/8fd6dc02-a21f-72e0-4d80-118c06a9f882/mzaf_11343450467233443272.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1513480842",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ralph Peterson Fo'tet",
+   "album": "Ornettology",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ea7db239-27b4-4b5a-badd-4b6d1363f388。release-group 端點：title「Ornettology」、artist-credit「Ralph Peterson Fo'tet」（**4c082d2b-36d6-499d-87be-fbe78245b177 Group**）、first-release-date 1991、primary-type Album、secondary-types 空、**genres 與 tags 兩欄皆空**，轄下 1 個 release。release 端點：0d7f7734（1991 US Official CD 9 軌，Blue Note[713c4a95] CDP 7 98290 2，無 barcode）。九軌：Ornettology 7:07／The Substance of Things Hoped For 6:11／Nemesis 4:49／Iris 7:10／Status Flux 7:16／I Mean You 5:09／Sneak Attack 2:51／Congeniality 7:33／There Is No Greater Love 1:48。錄音 1990-08-07～09 Clinton Studio B、混音 1990-11-07～08（錄音與混音 Jim Anderson、母帶 Yoshio Okazaki）；班底 Ralph Peterson d／短號／製作、Don Byron cl/bcl、Bryan Carrott vib、Melissa Slocum b；製作 Kazunori Sugiyama、執行製作 Hitoshi Namekata、美術 Kaoru Taku（Discogs 12615736）。**同一個人的另三個 MB 實體（刻意不釘）**：`Ralph Peterson Trio` c50c8d6e（type null）、`Ralph Peterson` 33283e4c（Person，c-150 a《Presents The Fo'tet》＝Fo'tet 第一張）、`Ralph Peterson Quintet` 46dc09b1（本批《V》《Volition》）。Apple us：三種查法 0 筆（只回 Larry Schneider 同名盤 160834732）。CAA：RG 層 404。",
+    "rgMbid": "ea7db239-27b4-4b5a-badd-4b6d1363f388",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/kYYDWbSGlIqcjfgbDy7B96bqIAUFlrKOK6J6X99Dzn0/rs:fit/g:sm/q:90/h:445/w:437/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjE1/NzM2LTE1NjMzMDY3/MTgtNzU4Ny5qcGVn.jpeg",
+    "source": "discogs",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "discogsReleaseId": "12615736"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=4）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個人裡沒有鋼琴手，和聲交給單簧管與顫音琴。吹單簧管的是 Don Byron、打顫音琴的是 Bryan Carrott，Ralph Peterson 自己坐鼓位，這支 Fo'tet 是他 1989 年組起來的。四人在 1990 年 8 月進紐約的 Clinton Studio B 錄了三天。盤名是對 Ornette Coleman 的雙關，碟上也真的收了 Coleman 的〈Congeniality〉；九首裡三首是他自己寫的，末軌他改吹短號。唱片 1991 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12615736-Ralph-Peterson-Fotet-Ornettology",
+     "https://en.wikipedia.org/wiki/Ralph_Peterson_Jr.",
+     "https://www.discogs.com/release/1383145-Don-Byron-Nu-Blaxploitation",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/BB-1992-03-28.pdf",
+     "https://www.discogs.com/release/12143619-Ralph-Petersons-Fotet-Ornettology",
+     "https://musicbrainz.org/release-group/ea7db239-27b4-4b5a-badd-4b6d1363f388"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stan Tracey Octet",
+   "album": "Portraits Plus",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f1a79025-2de2-3a93-8aac-787730bed412。release-group 端點：title「Portraits Plus」、artist-credit「Stan Tracey Octet」（**e5a66241-3362-4115-ba0c-198fcd5e0c22 Group**）、first-release-date 1992、primary-type Album、secondary-types 空、**genres 與 tags 兩欄皆空**，轄下 2 個 release。release 端點：1135d068（**1992 GB Official 12\" Vinyl 6 軌，Blue Note International[40e5e4c1-9c0a-47d8-99f3-3af16dbdf488] BLT1006，bc 077778069614**）、68c438e5（1992 US Official CD 6 軌，Blue Note International CDP7-780696-2，無 barcode）。六軌：Newk’s Fluke 7:33／Rocky Mount 7:58／One for Gil 8:19／ClinkScales 8:54／Spectrum № 2 14:48／Mainframe 11:18（總長 58:37）。班底 Guy Barker tp、Malcolm Griffiths tb、Peter King as、Don Weller ts、Art Themen ts/ss、Stan Tracey p／全部作曲、Dave Green b、Clark Tracey d／製作；錄音 Tristan Powell（EMI Studios）、母帶 Ian Sylvester、內頁 John Fordham、封面設計 Graham Marsh、攝影 Dod Miller、專輯統籌 Jackie Tracey（Discogs 11592521，released 1992-03-30）。**廠牌實體核過**：`Blue Note International` 40e5e4c1（type Original Production，disambiguation「mostly UK material」），**與正規 imprint `Blue Note` 713c4a95 是兩個 MB 實體**；池中 c-152《Live at the QEH》同廠牌已收（第 132 條）。Apple us：692209180（6 軌，1992-12-14，℗ 1992 Parlophone Records Ltd）。CAA：RG 層 404。",
+    "rgMbid": "f1a79025-2de2-3a93-8aac-787730bed412",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/8e/42/90/8e42903a-e645-c58c-3265-fe3b5c51df99/5099945561559_1439x1439_300dpi.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "692209180",
+    "note": "試聽探測釘定的 collectionId 692209180（us）：Stan Tracey Octet — Portraits Plus"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 225,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=225）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一套拿國家藝術經費委創的組曲，隔年被推上 Mercury Prize 的決選名單。封底寫明委創方是 Jazz Services Ltd，經費出自英國藝術理事會。八重奏在 1992 年 3 月 30 日進 EMI Studios 錄完，六首全是 Stan Tracey 自己的作品，製作人是坐在鼓位上的兒子 Clark Tracey。唱片 1992 年 12 月上市，1993 年那屆的 Mercury Prize 最後由 Suede 拿走。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11592521-Stan-Tracey-Octet-Portraits-Plus",
+     "https://www.discogs.com/release/16399932-Stan-Tracey-Octet-Portraits-Plus",
+     "https://en.wikipedia.org/wiki/Portraits_Plus",
+     "https://en.wikipedia.org/wiki/Mercury_Prize",
+     "https://music.apple.com/us/album/portraits-plus/692209180",
+     "https://musicbrainz.org/release-group/f1a79025-2de2-3a93-8aac-787730bed412"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music6/v4/02/a0/fb/02a0fbaf-c3e2-5a2c-cf83-cfc077f70712/mzaf_6208789630059433682.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "692209180",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Blue Note All Stars",
+   "album": "Blue Spirit",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b4072123-3200-3aef-a11d-2e2ab779e876。release-group 端點：title「Blue Spirit」、artist-credit「The Blue Note All Stars」（**232efc20-1895-42d7-811a-6e5e25734f70 Group**）、first-release-date 1996、primary-type Album、secondary-types 空、**genres 與 tags 兩欄皆空**，轄下 1 個 release。release 端點：76d6497a（1996 US Official CD 9 軌，Blue Note[713c4a95] CDP 7243 8 36747 2 5，無 barcode）。九軌：Twist and Out 7:11／Our Trip 6:07／Free Hop 6:29／Next Time Not 6:25／Think Before You Think 4:10／Theodore 6:43／Splash 7:01／Naaman 5:42／Kae 6:16。錄音 1996-01-08～09 Sear Sound, NYC；班底 Tim Hagans tp、Greg Osby as、Javon Jackson ts、Kevin Hays p、Essiet Essiet b、Bill Stewart d；製作 Bob Belden、錄音與混音 James Farber、母帶 Paul Zinman、內頁 Michael Cuscuna（Discogs 6613901）。**刻意不釘**：`c169/slice.json` 的 `Blue Note All‐Stars《Our Point of View》2017` 是**另一個陣容、另一個 RG**，兩者不得合併（派工信第三節第 3 點）；Freddie Hubbard《Blue Spirits》1967 是池中同廠牌的近名別碟。Apple us：724935133（**10 軌**，與實體 9 軌不符，1996-01-01）。CAA：RG 層 404。",
+    "rgMbid": "b4072123-3200-3aef-a11d-2e2ab779e876",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/42/23/96/422396a8-b0a0-4183-8e60-dc4e32c58f8b/00724383773152.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724935133",
+    "note": "試聽探測釘定的 collectionId 724935133（us）：The Blue Note All Stars — Blue Spirit"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 483,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=483）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌把六位還沒賣到能單飛的樂手湊成一團，先去俱樂部駐演一週，再趁暴雪進錄音室。那家俱樂部是紐約的 Sweet Basil，年初用一週把要錄的曲目試過一輪；1996 年 1 月的錄音地點是 Sear Sound，製作人 Bob Belden。Michael Cuscuna 替這張寫的內頁，開頭第一句是句玩笑話，說這種團從來不會成功。十軌裡有九首是團員為此新寫的曲子。唱片 1996 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6613901-The-Blue-Note-All-Stars-Blue-Spirit-",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-04-13.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-06-29.pdf",
+     "https://www.discogs.com/release/4286775-Blue-Spirit-The-Blue-Note-All-Stars",
+     "https://www.jazzdisco.org/the-blue-note-all-stars/discography/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-12-28.pdf",
+     "https://musicbrainz.org/release-group/b4072123-3200-3aef-a11d-2e2ab779e876"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/52/d1/7352d17d-acbc-297a-f20d-b38f6b5a4957/mzaf_4783893475075384825.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724935133",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ray Barretto & New World Spirit",
+   "album": "Contact!",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b4510815-1de0-3828-a81d-fd00b2fbd91b。release-group 端點：title「Contact!」、artist-credit「Ray Barretto & New World Spirit」（**690b2581-f190-4c33-bd9d-f5e697483e0b Group**）、first-release-date 1997、primary-type Album、secondary-types 空、**genres 與 tags 兩欄皆空**，轄下 1 個 release。release 端點：0b9ac048（1997 XE Official CD 10 軌，Blue Note[713c4a95]，**catalog-number 欄逐字 `85697402`＝被壓過的裸數字，第 1250 條**，無 barcode）。十軌：Moss Code 3:41／Caravan 7:14／Serenata 6:43／Dance of Denial 5:51／Poinciana 6:34／Point of Contact/Punto De Contacto 6:00／La Bendicion 5:44／Liberated Spirit 5:32／The Summer Knows 6:12／Sister Sadie 4:43。錄音 1997-04-03～05 與 04-08～09 Systems Two, Brooklyn；班底 Ray Barretto congas／打擊／製作、Michael Philip Mossman tp/tb、Adam Kolker ts/ss、John Di Martino p、Hans Glawischnig b、Jairo Moreno b、Vince Cherico d、Ray Vega 打擊（Discogs 7353172）。Apple us：查法 3 命中 696524133（10 軌，1997-01-01，掛名縮成 `Ray Barretto`）。CAA：RG 層 404。",
+    "rgMbid": "b4510815-1de0-3828-a81d-fd00b2fbd91b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/5a/8b/ab/5a8babb0-fc29-6381-be19-ce07d339bb2a/dj.myirwend.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "696524133",
+    "note": "試聽探測釘定的 collectionId 696524133（us）：Ray Barretto — Contact!"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 233,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=233）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "帶頭打康加鼓的那個人，最討厭別人用來形容他音樂的那個詞。Ray Barretto 在這張兼任製作，前線是 Michael Philip Mossman 的小號與 Adam Kolker 的薩克斯風，錄音在 1997 年 4 月的布魯克林 Systems Two 完成。十首曲子裡改編與原創各半，Horace Silver 的〈Sister Sadie〉也在其中。至於那個他怎麼樣都不肯接受的詞，是拉丁爵士。唱片 1997 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7353172-Ray-Barretto-And-New-World-Spirit-Contact",
+     "https://www.grammy.com/artists/ray-barretto-and-new-world-spirit/16291/",
+     "https://en.wikipedia.org/wiki/Contact!_(Ray_Barretto_album)",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1998/BB-1998-02-28.pdf",
+     "https://en.wikipedia.org/wiki/Michael_Philip_Mossman",
+     "https://music.apple.com/us/album/contact/696524133",
+     "https://musicbrainz.org/release-group/b4510815-1de0-3828-a81d-fd00b2fbd91b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a8/1a/66/a81a6665-9ec2-3fc3-bbde-2d883a864077/mzaf_10124663992472394989.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "696524133",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ray Barretto & New World Spirit",
+   "album": "My Summertime",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 43c26442-8b26-30dd-85a9-7b0513ec6e56。release-group 端點：title「My Summertime」、artist-credit「Ray Barretto & New World Spirit」（690b2581 Group）、**first-release-date 1998（⚠ 本棒改判 1995，見 risk）**、primary-type Album、secondary-types 空、genres `[\"jazz\",\"latin jazz\"]`／tags 同，轄下 1 個 release。release 端點：9886ddd6（**1998 ES** Official CD 10 軌，Blue Note[713c4a95] ＋ OWL Records[1fa7d5ed] 同號 CDP 7243 8 35830 2 7，無 barcode）。**MB 沒有 1995 年的法國原盤與美版**——第 642 條已換過兩種端點組合確認。十軌：No hay problema (No Problem) 7:40／In Your Own Sweet Way 6:05／Brother Ray 6:53／When You Wish Upon a Star 7:31／Autumn Leaves 5:59／While My Lady Sleeps 6:01／Off Minor 5:31／Fait Accompli 7:30／Summertime (Guajira) 6:04／Worlds I Love 6:29。**原盤（Discogs 4790057，Owl Records OWL 082，FR 1995，第二目錄號 EMI France 835830 2）**：錄音 1995-07-01～03 Power Station, NYC；混音／剪輯／排序／母帶 1995-07-04、07-05、07-26 Malcolm Addey Studio；盤面 ℗&© 1995 EMI France。美版 1995：Discogs 14442637（Owl Records ＋ Blue Note，CDP 7243 8 35830 2 7）、促銷 16296797。日版 1996：TOCJ-5998（8112883；促銷 12072658 標題帶 `= 危険な関係のブルース`）。1998 西班牙版：6526035（廠牌鏈含 `The Blue Note Collection`）＝MB 的那一筆。Apple us：三種查法 0 筆。CAA：1 圖 front=true，來源 9886ddd6（1998 再發）。",
+    "rgMbid": "43c26442-8b26-30dd-85a9-7b0513ec6e56",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/43c26442-8b26-30dd-85a9-7b0513ec6e56/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 99,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=99）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "全碟只有一首有人開口唱歌，唱的人平常站在康加鼓後面。那一軌排在第 9 首，是〈Summertime-(Guajira)〉，主唱就是 Ray Barretto 本人。他在這張掛的名字不只打擊樂：混音、剪輯與曲序都有他一份。原盤是法國 Owl Records 1995 年的 OWL 082，同年 7 月在紐約的 Power Station Studio 錄成，美國版由 Owl 與 Blue Note 共同掛名。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4790057-Ray-Barretto-New-World-Spirit-My-Summertime",
+     "https://www.discogs.com/release/14442637-Ray-Barretto-New-World-Spirit-My-Summertime",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1996/CB-1996-06-01.pdf",
+     "https://www.discogs.com/release/7353172-Ray-Barretto-And-New-World-Spirit-Contact",
+     "https://musicbrainz.org/release-group/43c26442-8b26-30dd-85a9-7b0513ec6e56"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/75/03/62/75036245-ecff-1a27-8659-f0eb39bfc02f/mzaf_16240076578928188493.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "695590550",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ron Carter Trio",
+   "album": "So What",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0b81a43c-31b6-34e1-a06c-3aaad06ae4ae。release-group 端點：title「So What」、artist-credit「Ron Carter Trio」（**13b32afe-d3b2-461c-b3af-c3a5cc5d139d Group**）、first-release-date 1998、primary-type Album、secondary-types 空、genres `[\"jazz\"]`／tags `[\"jazz\"]`，轄下 1 個 release。release 端點：f7a1c6a4（1998 US Official CD 8 軌，Blue Note[713c4a95] CDP 7243 4 94976 2 7，bc 724349497627，release 層 credit 亦為 `Ron Carter Trio`）。八軌：So What 6:46／You'd Be So Nice to Come Home To 4:35／It's About Time 5:14／My Foolish Heart 8:15／Hi-Fly 6:02／More Days 7:35／Eddie's Theme 3:54／The Third Plane 4:54。錄音 1998-01-04 Avatar Studios, NYC；班底 Ron Carter b／製作、Kenny Barron p、Lewis Nash d；錄音與混音 Joe Ferla、母帶 Yoshio Okazaki、執行製作 Hitoshi Namekata、A&R Yoshiko Tsuge、美術 Kaoru Taku（Discogs 2590646）。**同一個人的個人實體（刻意不釘）**：`Ron Carter`（池中 11 張未上架卡單所用的字串）是另一個 MB 實體，本卡不收攏。**刻意不釘**：Discogs 22866494 是俄國 `Unofficial Release`，非 MBID。Apple us：三種查法 0 筆。CAA：1 圖 front=true，來源 f7a1c6a4。",
+    "rgMbid": "0b81a43c-31b6-34e1-a06c-3aaad06ae4ae",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0b81a43c-31b6-34e1-a06c-3aaad06ae4ae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 31,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=31）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他 1963 年才進 Miles 的團，盤名那首曲子在那之前四年就錄好了。〈So What〉出自 Miles Davis 1959 年的錄音，Ron Carter 進的是他的第二代五重奏。這張三重奏碟由他與鋼琴 Kenny Barron、鼓手 Lewis Nash 合錄，時間是 1998 年 1 月 4 日，地點紐約的 Avatar Studios。製作方掛的是 Retrac Productions，Retrac 正是 Carter 倒過來拼。唱片 1998 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2590646-Ron-Carter-Trio-So-What",
+     "https://www.discogs.com/release/7828645-Ron-Carter-Trio-So-What",
+     "https://en.wikipedia.org/wiki/So_What%3F_(Ron_Carter_album)",
+     "https://en.wikipedia.org/wiki/Ron_Carter",
+     "https://musicbrainz.org/release-group/0b81a43c-31b6-34e1-a06c-3aaad06ae4ae"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Frank Emilio Flynn",
+   "album": "Reflejos Ancestrales",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group cbacfd20-34c4-33b1-bfe4-3d7337488237。release-group 端點：title「Reflejos Ancestrales」、artist-credit「Frank Emilio Flynn」（**47884771-1fbf-4f4f-a2e9-64b84bde3902 Person**）、first-release-date 1999、primary-type Album、secondary-types 空、**genres 與 tags 兩欄皆空**，轄下 1 個 release。release 端點：91116999（1999 US Official CD 9 軌，Blue Note[713c4a95] **catno 欄逐字 `7243 4 98918 21`**，bc 724349891821）。九軌：Guerra De Flautas 10:54／Rico Melao 3:29／La Mulata Rumbera 6:39／La Conga Se Va 2:44／Rumba Elegante 4:23／Bilongo 8:05／El Arroyo Que Murmura 2:04／Juventud De Pueblo Nuevo 6:34／Reflejos Ancestrales 10:05。原盤（Discogs 13744554）：**title 逐字 `Ancestral Reflections - Reflejos Ancestrales`、藝人欄逐字 `Frank Emilio`**，廠牌 Blue Note `7243 4 98918 2 1`；班底 Frank Emilio p、Orlando「Maraca」Valle fl、Barbaro Torres fl、José Quintana timbales；共同製作 Chucho Valdés ＋ René López、錄音與混音 Jon Fausty。歐版／加拿大版另一個 catno `7243 4 98916 2 1`（Discogs 9531044／10110278）。**錄音日期兩邊皆無**。Apple us：三種查法 0 筆本張（同名當代歌手多筆，皆非本人）。CAA：RG 層 404。",
+    "rgMbid": "cbacfd20-34c4-33b1-bfe4-3d7337488237",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/9a/78/90/9a7890bd-6836-15cb-a385-bbf799429cd4/00724349891852.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724976522",
+    "note": "試聽探測釘定的 collectionId 724976522（de）：Frank Emilio Flynn — Ancestral Reflections (Reflejos Ancestrales)"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 21,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=21）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一場林肯中心的演出讓一位表姊認出他，近五十位失散的親戚因此到齊。Frank Emilio Flynn 1921 年生於哈瓦那，出生時眼睛被產鉗傷到，十幾歲時完全失明；1998 年 1 月 Jazz at Lincoln Center 邀他率 Los Amigos 赴紐約，宣傳刊出之後，那位表姊才找上門。同年 11 月他在哈瓦那錄下這張，編制是一支 charanga——木笛、兩把小提琴、刮瓜與定音鼓。唱片 1999 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/13744554-Frank-Emilio-Ancestral-Reflections-Reflejos-Ancestrales",
+     "https://www.anapapaya.com/novedades/n_feflynn.html",
+     "https://en.wikipedia.org/wiki/Frank_Emilio_Flynn",
+     "https://www.discogs.com/release/9531044-Frank-Emilio-Ancestral-Reflections-Reflejos-Ancestrales",
+     "https://musicbrainz.org/release-group/cbacfd20-34c4-33b1-bfe4-3d7337488237"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7f/16/43/7f1643ff-d6ce-aa8c-036e-9fd06f971078/mzaf_4215002172400557258.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724976522",
+    "storefront": "DE"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Don Byron and Existential Dred",
+   "album": "Nu Blaxploitation",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6aab4e1b-5c96-32e8-a3ba-328fcd8f1c50。release-group 端點：title「Nu Blaxploitation」、artist-credit「Don Byron and Existential Dred」（**358a945e-ae2f-49d0-bcfa-27a10af74ccc，type `null`**）、**first-release-date 1998-06-22**、primary-type Album、secondary-types 空、genres `[\"jazz\",\"post-bop\"]`／tags 同，轄下 2 個 release。release 端點：83c042d7（**1998-06-22 FR Official CD 14 軌，Blue Note[713c4a95] 7243 4 93711 2 5，bc 724349371125**）、ea2a64f3（1998 US Official CD 14 軌，**Capitol Records[abea2d3e] CDP 7243 4 93711 2 5**，同 barcode）。十四軌（MB 形）：Alien 4:30／Domino Theories (part I) 6:02／Blinky 5:44／Mango Meat 5:22／Interview 2:13／Schizo Jam 14:06（**Discogs 作 `Schizo Man`**）／Dodi 2:53／I’m Stuck 4:19／I Cannot Commit 3:46／Fencewalk 8:13／Hagalo 2:46／Domino Theories (part II) 2:28／If 6 Was 9 6:40／Furman 6:06。錄音與混音 1997-12-27～1998-01-05 Bearsville Studios, Woodstock NY；**第 6 軌 1998-01-14 現場錄於 The Knitting Factory, NYC**（Discogs 1383145 notes）。班底 Don Byron cl／上低音薩克斯風／打擊／製作、Uri Caine p/organ/clavinet、David Gilmore g、Reggie Washington b、Rodney Holmes d、Ben Wittman d、Johnny Almendra 打擊；詩人 Sadiq Bey 口白；錄音與混音 John Holbrook、母帶 Allan Tucker、副製作 Danny Kapilian。**刻意不釘**：`29d70318`（c-155 a 拿到的**宣傳潔淨版** RG，catno `CD 7087 6 10178 2 3`，Discogs 5952109，**已依第 1325 條退件**）；`396b7ea7-5692-35f2-be05-a2c13685a90c`／`6c4493c1-57db-4bd4-87bf-25d1d59e2a56` 是 c-159 b 第 1594 條處理過的《Do the Boomerang》兩個 RG，非本盤。Apple us：查法 3 命中 724634879（14 軌，1998-01-01，掛名縮成 `Don Byron`）。CAA：4 圖 front=true，來源 ea2a64f3。",
+    "rgMbid": "6aab4e1b-5c96-32e8-a3ba-328fcd8f1c50",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6aab4e1b-5c96-32e8-a3ba-328fcd8f1c50/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 54,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=54）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "獻詞同時寫給一支拉丁放克樂團與 Arnold Schoenberg。那支樂團是 Mandrill，碟上收了他們三首曲子。Don Byron 吹單簧管與上低音薩克斯風並自任製作人，錄音從 1997 年底做到 1998 年初，地點在紐約州的 Bearsville Studios。詩人 Sadiq 的口白出現在十四軌裡的八軌，〈Blinky〉講的是紐約市警對 Abner Louima 的施暴案。唱片 1998 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1383145-Don-Byron-Nu-Blaxploitation",
+     "https://en.wikipedia.org/wiki/Nu_Blaxploitation",
+     "https://www.discogs.com/release/12615736-Ralph-Peterson-Fotet-Ornettology",
+     "https://musicbrainz.org/release-group/6aab4e1b-5c96-32e8-a3ba-328fcd8f1c50"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c1/40/3f/c1403f00-2ecc-f41e-2e6b-c66fdddb55ca/mzaf_2872864556773453500.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724634879",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

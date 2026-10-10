@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>店內挖寶 · dip</title>
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="店內挖寶">
+  <meta property="og:description" content="只從店裡現在在賣的唱片挑：心情選歌、類型挑片、猜你喜歡、直接來一張。">
+  <meta property="og:url" content="https://dipvinyl.tw/shop.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace; }
+    body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; min-height: 100dvh; display: flex; flex-direction: column; }
+    .topbar { display: flex; align-items: center; border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px; flex-shrink: 0; }
+    .topbar a { color: var(--black); text-decoration: none; font-size: 11px; letter-spacing: 0.08em; }
+    .topbar a:hover { color: var(--gray); }
+    .hero { text-align: center; padding: 40px 20px 24px; }
+    .hero-title { font-size: 20px; font-weight: 700; letter-spacing: 0.12em; }
+    .hero-sub { margin-top: 12px; font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.7; }
+    .cards { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+    .card {
+      position: relative; border-bottom: 1px solid var(--line); padding: 32px 44px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      background: #fff; transition: background 0.15s, color 0.15s; text-align: center; width: 100%;
+      border-left: none; border-right: none; border-top: none; font-family: var(--mono); text-decoration: none; color: var(--black);
+    }
+    .card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
+    .card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
+    .card:active { background: #111; color: #fff; }
+    .card:active .card-desc { color: #bbb; }
+    @media (hover: hover) {
+      .card:hover { background: #111; color: #fff; }
+      .card:hover .card-desc { color: #bbb; }
+    }
+    .card:focus-visible { outline: 2px solid var(--black); outline-offset: -3px; }
+    .foot { margin-top: auto; padding: 22px 20px 30px; text-align: center; font-size: 9px; color: var(--gray); letter-spacing: 0.1em; }
+    .foot a { color: var(--gray); }
+  </style>
+</head>
+<body>
+  <!-- 店內挖寶（2026-10-07）：四個選片遊戲照舊，抽卡範圍限定店內在售（index.html 的 ?shop=1）。
+       在售清單＝Firestore settings/shopInventory，後台「實體店庫存」從 Notion 重新整理。 -->
+  <div class="topbar"><a href="index.html">↩ 回主頁</a></div>
+  <div class="hero">
+    <div class="hero-title">店內挖寶</div>
+    <div class="hero-sub">不知從何挑起？<br>幫你從架上挑一張。</div>
+  </div>
+  <div class="cards">
+    <a class="card" href="shop-all.html">
+      <div>
+        <div class="card-name">所有唱片</div>
+        <div class="card-desc">架上每一張攤開來，點開看介紹。</div>
+      </div>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="card" href="/?shop=1#quiz">
+      <div>
+        <div class="card-name">心情選歌</div>
+        <div class="card-desc">回答幾個問題，從架上挑一張接得住你今天心情的。</div>
+      </div>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="card" href="/?shop=1#genre">
+      <div>
+        <div class="card-name">類型挑片</div>
+        <div class="card-desc">選一個大類，從店裡這一類抽一張。</div>
+      </div>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="card" href="/?shop=1#artist">
+      <div>
+        <div class="card-name">猜你喜歡</div>
+        <div class="card-desc">選個領域和三位藝人，從架上猜出你會喜歡的。</div>
+      </div>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="card" href="/?shop=1#random">
+      <div>
+        <div class="card-name">直接來一張</div>
+        <div class="card-desc">不想選？從架上隨機抽一張。</div>
+      </div>
+      <span class="card-arrow">→</span>
+    </a>
+  </div>
+  <div class="foot"><a href="find.html">想從整個資料庫挖？→ 找一張來聽</a></div>
+</body>
+</html>

@@ -220,6 +220,8 @@ for (const a of cand) {
     ratings: {
       classic: rt.classic, obscurity: rt.obscurity, accessibility: rt.accessibility,
       listeners, source: rt.source || 'worker:/album-rating', checkedAt: now,
+      // §2「人工修正必須在 manifest 留下理由」：錨點制的冷門軸理由與逐張改判的理由都帶進來
+      ...([rt.obscurityNote, rt.manualNote].some(Boolean) ? { note: [rt.obscurityNote, rt.manualNote].filter(Boolean).join(' ') } : {}),
     },
     rarity: RARITY(score),
     apexAssessment: { eligible, tier, reason, evidenceUrls: ap.evidenceUrls || [] },

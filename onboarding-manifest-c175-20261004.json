@@ -1,0 +1,1934 @@
+{
+ "schemaVersion": 1,
+ "batch": "c175-20261004",
+ "albums": [
+  {
+   "artist": "前田憲男・藤舎推峰",
+   "album": "Fantastic Sounds In Shino Flute",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ca2418d1-f1b1-45ae-93e7-204aa6ccd3f8（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Fantastic Sounds In Shino Flute (幽玄の世界)」、artist-credit「前田憲男, 藤舎推峰」、first-release-date 1971、primary-type Album、secondary-types **空**、tags／genres 為 acid rock(1)／avant-garde jazz(1)／jazz(1)／jazz rock(1)／jazz-funk(1)／psychedelic(1)／rock(1)（**七個標籤全是 count 1，依第 3752 條第 2／3 款只能當排序、不能當定案**，但**沒有任何非爵士標籤並列**，符合 c-174 b 第 3811 條那道快篩）、轄下 **1 個 release**。release 端點（inc=media+labels+artist-credits）：99d2e003（1971 JP Official Vinyl 9 軌，label「EXPRESS」catno **ETP-9019**＝原盤，MB 只建了這一張，沒有再發）。Discogs：master 1329746、原壓 releases/11448335（1971 Japan，Express ETP-9019，genres Jazz／Rock／Funk & Soul，styles Acid Rock／Avant-garde Jazz／Jazz-Rock／Psychedelic／Jazz-Funk），同號另有 Promo releases/15691675 與異題 releases/15691794。**catno 反查**（第 1263／3725 條）：`catno=ETP-9019` 回 13 筆，前三筆與第五筆（master 1329746）全是本盤、年份 1971，與本批 `year` 差 **0**；其餘九筆是 1982 年 `ETP-90196`／`ETP-90198` 的同前綴稀釋（第 1250 條「裸數字會撞」的同一形狀，靠 country=Japan＋年代收斂）。",
+    "rgMbid": "ca2418d1-f1b1-45ae-93e7-204aa6ccd3f8",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ca2418d1-f1b1-45ae-93e7-204aa6ccd3f8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一面翻的是當時最新的英美搖滾曲，另一面是替篠笛寫的協奏曲。翻的那面是 A 面六首，照譜編寫，即興的空檔不多；另一面的三樂章協奏曲出自前田憲男，伴奏交給猪俣猛 的サウンド・リミテッド。吹笛的藤舎推峰 是歌舞伎與長唄囃子方藤舎流笛方的名跡，初代 1941 年生於東京，在這裡的身分是客座獨奏者。錄音用掉 1970 年 11 月 4、5 兩日，地點東芝第一錄音室，原盤是 1971 年東芝 Express 的 ETP-9019。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11448335",
+     "https://ja.wikipedia.org/wiki/%E5%89%8D%E7%94%B0%E6%86%B2%E7%94%B7",
+     "https://ja.wikipedia.org/wiki/%E8%97%A4%E8%88%8E%E6%8E%A8%E5%B3%B0",
+     "https://en.wikipedia.org/wiki/Ballad_of_Easy_Rider",
+     "https://en.wikipedia.org/wiki/Teach_Your_Children",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%87%8E%E4%BF%8A%E4%B8%89_(%E3%82%B8%E3%83%A3%E3%82%BA%E3%83%88%E3%83%A9%E3%83%B3%E3%83%9A%E3%83%83%E3%82%BF%E3%83%BC)",
+     "https://www.discogs.com/master/1329746",
+     "https://musicbrainz.org/release-group/ca2418d1-f1b1-45ae-93e7-204aa6ccd3f8"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "スティーヴ・マーカス + 稲垣次郎とソウル・メディア",
+   "album": "Something",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group b7502b91-bcbe-4c0c-8279-db3aa65909d1（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Something」、artist-credit「Steve Marcus **+** 稲垣次郎 & Soul Media」（Person 5d36d1ae ＋ Group **ad4be255**，joinphrase 逐字「 + 」）、first-release-date **1971-01**、primary-type Album、secondary-types 空、tags／genres 為 jazz(1)／jazz-funk(1)／rock(1)（**三個全是爵士系，沒有非爵士標籤並列**）、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：b0f5625a（**1971-01 JP Official 12\" Vinyl 3 軌，Columbia NCB-7003＝原盤**，title 逐字「サムシング」）、71226d8e（2013-04-24 JP CD 4 軌，Columbia COCB-54056）。⚠ **第 1858-B 條的 `titleCheck` 在本筆亮了警語**（「RG title 與最早 release 的 title 不同」），逐張核過：**不是再發題蓋過原盤題，是同一張原盤的日文與英文兩個題**（見 `risk`）。Discogs：master 572312、原壓 releases/4704258（1971 Japan，Columbia NCB-7003，genres **Jazz**，styles Fusion／Avant-garde Jazz／Free Jazz），同號另有 Test Pressing releases/9408907。**catno 反查**：`catno=NCB-7003` 回 3 筆全是本盤（1 master ＋ 2 release），年份 1971，與本批 `year` 差 **0**。⚠ 同號段的 NCB-7009／7010／7012／7016 是本批另外四筆（Metempsychosis／Bridge Over Troubled Water／Canto of Aries／東京キューバン・ボーイズ・オン・ステージ），**同系列、不同碟**。",
+    "rgMbid": "b7502b91-bcbe-4c0c-8279-db3aa65909d1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/31/e0/e0/31e0e08b-cd89-2368-ecec-e6a744baa3a8/COKM-42672.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508947949",
+    "note": "試聽探測釘定的 collectionId 1508947949（jp）：スティーヴ・マーカス & 稲垣次郎とソウル・メディア — Something。2026-10-04 改用：原本的 CAA 圖（https://coverartarchive.org/release-group/b7502b91-bcbe-4c0c-8279-db3aa65909d1/front）在 archive.org 連續三輪回 500。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "全碟三軌，錄下它的是一套還在試作階段的數位系統。盤面把它逐字印成「Denon prototype system」。東京的錄音在 1970 年 9 月，隔年 1 月上市，日本コロムビア NCB-7003。編制八人，鼓手放了兩位，Steve Marcus 與稲垣次郎 的兩支次中音擺在前線，鋼琴與編曲歸佐藤允彦。三軌裡只有 A1 是翻唱，那首是 George Harrison 替《Abbey Road》寫的。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4704258",
+     "https://en.wikipedia.org/wiki/Something_(Beatles_song)",
+     "https://en.wikipedia.org/wiki/Steve_Marcus",
+     "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+     "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E6%AC%A1%E9%83%8E",
+     "https://ja.wikipedia.org/wiki/%E5%B7%9D%E5%B4%8E%E7%87%8E",
+     "https://columbia.jp/artist-info/inagakijiro/discography/COCB-54056.html",
+     "https://www.discogs.com/master/572312",
+     "https://musicbrainz.org/release-group/b7502b91-bcbe-4c0c-8279-db3aa65909d1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/3f/1e/7d/3f1e7dc0-24e2-2112-56fd-1e66edf4f53c/mzaf_6705753089407792481.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508947949",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ツトム・ヤマシタ & 佐藤允彦",
+   "album": "Metempsychosis",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d86aa6bd-8252-32d8-928e-ee90086be6f5（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Metempsychosis」、artist-credit「ツトム・ヤマシタ & 佐藤允彦」、first-release-date 1971、primary-type Album、secondary-types **空**、tags／genres 為 avant-garde(1)／classical(1)／free jazz(1)／jazz(1)／modern classical(1)／rock(1)（**六個全 count 1，依第 3752 條第 2 款不當定案**）、轄下 3 個 release。release 端點（inc=media+labels+artist-credits）：88c6e874（**1971 JP Official 12\" Vinyl 2 軌，Columbia NCB-7009＝原盤**）、c2362499（1971 JP，同號無 status，Discogs 對應的是 Promo releases/3884414）、d97e8632（2015-01-22 JP CD-R 2 軌，NIPPON COLUMBIA CORR-11031，title「ものみな壇ノ浦へ」）。Discogs：master 249311、原壓 releases/2063906（1971-05-25 Japan，Columbia NCB-7009，genres Jazz／Rock／Classical，styles Free Jazz／Modern Classical／Avantgarde，notes 逐字「Recorded January 27, 1971 at Nippon Columbia Studio, Tokyo, Japan.」）。**catno 反查**：`catno=NCB-7009` 回 3 筆全是本盤（1 master ＋ 2 release），年份 1971，與本批 `year` 差 **0**；Discogs 的 `released` 欄逐字 1971-05-25，比 MB 的年份精確。",
+    "rgMbid": "d86aa6bd-8252-32d8-928e-ee90086be6f5",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d86aa6bd-8252-32d8-928e-ee90086be6f5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "打擊樂器一個人在前面，後面站著十八人的大樂團。前面那位是ツトム・ヤマシタ，1947 年生於京都，17 歲赴美先進 Juilliard 再入 Berklee，作曲與鋼琴則出自佐藤允彦。1971 年 1 月 27 日進日本コロムビア錄音室，同年 5 月 25 日以 NCB-7009 出。兩軌各佔一面，18 分 40 秒與 18 分 15 秒，副題點明這是寫給打擊樂器與爵士大樂團的作品。1976 年的再發把整份樂隊名單從封套上拿掉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2063906",
+     "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%88%E3%83%A0%E3%83%BB%E3%83%A4%E3%83%9E%E3%82%B7%E3%82%BF",
+     "https://www.discogs.com/release/2283253",
+     "https://www.discogs.com/master/249311",
+     "https://musicbrainz.org/release-group/d86aa6bd-8252-32d8-928e-ee90086be6f5"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮間利之とニューハード + 富樫雅彦",
+   "album": "Canto of Aries",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bc6cfc57-b1f2-4f55-a6cc-126384421e70（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「**牡牛座の詩**」（⚠ 錯題，見 `risk`）、artist-credit「ニューハード＋富樫雅彦」（Group **11c13132**＝宮間利之とニューハード ＋ Person 77de7e8d，joinphrase 逐字「＋」U+FF0B）、first-release-date 1971、primary-type Album、secondary-types **空**、tags／genres 為 avant-garde jazz(1)／jazz(1)（**兩個都是爵士系，無非爵士標籤並列**）、轄下 4 個 release。release 端點（inc=media+labels+artist-credits）：678e847c（**1971 JP Official 12\" Vinyl 5 軌，Columbia NCB-7012＝原盤**，title「牡牛座の詩」）、b268007e（1976 JP 12\" Vinyl 5 軌，Columbia SW-7033）、5b65019c（2005-12-21 JP CD 5 軌，Jroom Jazz COCB-53494）、48d770d5（2019-08-07 XW Digital 5 軌，Nippon Columbia／NIPPONOPHONE CORR-11163，**title 逐字「Canto of Aries」**）。⚠ **MB 轄下四筆 release 裡有三筆把日文題寫成「牡牛座の詩」，只有 2019 數位那筆用英文題**——第 1858-B 條的「讀最早 release 的 title」在本筆會讀到錯題，**必須靠 Discogs 與 Apple 才改得回來**（見第 3872 條）。Discogs：master 744775，原壓 releases/9781940。**catno 反查**：`catno=NCB-7012` 回 3 筆（1 master ＋ 1971 原壓 ＋ 2016 CD-R），年份 1971，與本批 `year` 差 **0**。",
+    "rgMbid": "bc6cfc57-b1f2-4f55-a6cc-126384421e70",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bc6cfc57-b1f2-4f55-a6cc-126384421e70/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鼓手替大樂團寫了一首五段組曲，然後自己坐進鼓椅。那位鼓手是富樫雅彦，作曲與編曲只掛他一個名字，指揮是樂團領班宮間利之，編制裡有兩位鋼琴手與兩位鼓手。曲目就是分成五段的〈Canto I〉到〈Canto V〉。錄音分成 1971 年 1 月 22 日與 27 日兩天，都在東京，碟是日本コロムビア 的 NCB-7012。本作拿下スイングジャーナル 主辦的 1971 年度日本ジャズ賞，這支樂團前一年的《Canto of Libra》拿的是 1970 年度，連著兩年。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9781940",
+     "https://columbia.jp/prod-info/COCB-53494/",
+     "https://columbia.jp/prod-info/COCB-53493/",
+     "https://ja.wikipedia.org/wiki/%E5%AF%8C%E6%A8%AB%E9%9B%85%E5%BD%A6",
+     "https://www.discogs.com/master/744775",
+     "https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%9C%A8%E5%B9%B8%E4%B8%89%E9%83%8E",
+     "https://musicbrainz.org/release-group/bc6cfc57-b1f2-4f55-a6cc-126384421e70"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/d1/d2/d6/d1d2d60d-b990-caa9-efe3-e394c05acb3f/mzaf_16899219052981697795.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1474202973",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア",
+   "album": "Bridge Over Troubled Water",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6e05fed3-3f3e-4b1d-831d-684d1f516edb（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Bridge Over Troubled Water」、artist-credit「**佐藤允彦 & 稲垣次郎とビッグ・ソウル・メディア**」（Person 04bbec22 ＋ Group ad4be255）、first-release-date **1971-07-25**、primary-type Album、secondary-types 空、tags／genres 逐字只有 jazz(1)、轄下 4 個 release。release 端點（inc=media+labels+artist-credits）：744a05e1（**1971-07-25 JP Official Vinyl 6 軌，Columbia NCB-7010＝原盤**）、752661ec（2007-02-21 JP CD 6 軌，Columbia Music Entertainment COCB-53632）、f5e2864e（2014-08-20 JP CD 6 軌，Columbia COCB-54114）、1edcfe25（2020-04-22 XW Digital 6 軌，Columbia COKM-42673，title「明日に架ける橋」）。Discogs：master 1479923，原壓 releases/12556790（1971 Japan，Columbia NCB-7010，genres **Jazz**，styles 空），同號白標 Promo releases/38203668。**catno 反查**：`catno=NCB-7010` 回 3 筆全是本盤（1 master ＋ 2 release），年份 1971，與本批 `year` 差 **0**。⚠ slice 的 `artist` 欄寫的是「稲垣次郎とソウル・メディア」，**與 MB artist-credit 不符**（MB 是佐藤允彦領銜、樂隊是ビッグ・ソウル・メディア），列舉層取的應該是實體本名而不是 credit 字串。",
+    "rgMbid": "6e05fed3-3f3e-4b1d-831d-684d1f516edb",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6e05fed3-3f3e-4b1d-831d-684d1f516edb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=0）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "半年前才錄過的一首自作曲，在同一條企劃線上又錄了一次。那首是 B 面的〈Serenity〉，作者佐藤允彦，前一次留在同一條線的 NCB-7003 上，兩次的樂隊都是稲垣次郎 的班底。盤面的樂隊名比那時多了一個詞，那個詞指的是擴編後的編制。本盤是日本大樂團對 Simon & Garfunkel 1970 年那首單曲的翻唱，由日本コロムビア 1971 年 7 月 25 日送出，目錄號 NCB-7010。擴編後的銅管把主題吹得又寬又厚，電鋼琴在底下滾動。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12556790",
+     "https://www.discogs.com/release/13689251",
+     "https://columbia.jp/prod-info/COCB-54114/",
+     "https://www.discogs.com/release/4704258",
+     "https://en.wikipedia.org/wiki/Bridge_over_Troubled_Water_(song)",
+     "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+     "https://ja.wikipedia.org/wiki/%E7%8C%AA%E4%BF%A3%E7%8C%9B",
+     "https://www.discogs.com/master/1479923",
+     "https://musicbrainz.org/release-group/6e05fed3-3f3e-4b1d-831d-684d1f516edb"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/54/f8/be/54f8be2e-e7f9-46a6-d1bd-1d15a67c3329/mzaf_15449696860797357554.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508945668",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Singers 3",
+   "album": "Foliole #2 The Sound Of Singers 3",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group ab48ab2f-a559-4db0-8303-78ab07c38b3e（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Foliole #2 The Sound Of Singers 3」、artist-credit「**Singers 3**」（單一 Group 實體 154c626c，**實體本名是片假名「シンガーズ・スリー」**）、first-release-date 1971、primary-type Album、secondary-types **空**、tags／genres 為 jazz(1)／jazz rock(1)／rock(1)（**三個全是爵士／搖滾系，無 easy listening 或 pop 並列**，符合 c-174 b 第 3811 條那道快篩）、轄下 **1 個 release**。release 端點（inc=media+labels+artist-credits）：15606050（1971 JP Official Vinyl 5 軌，label「KING」catno **SKK 3010**＝原盤；⚠ **MB 的 catno 少了括號裡的 (L)**，Discogs 的 labels 欄同時掛了「SKK(L) 3010」與「SKK 3010」兩筆——c-174 b 第 3818 條那個「King 的 `SKK(x)` 用括號字母區分授權字標」的形狀，本盤的括號字母是 (L)＝London，但 labels 欄與 companies 欄都寫 King Records／King Record Co. Ltd，與《Flute Adventure》的 London Records SKK(L)3005 不同，**本卡的 `label` 欄照 Discogs 逐字寫 King Records SKK(L) 3010**）。Discogs：master 1480995，原壓 releases/4933017。**catno 反查**：`catno=SKK 3010` 回 2 筆全是本盤（1 master ＋ 1 release），年份 1971，與本批 `year` 差 **0**；另以 `q=Singers 3 Foliole` 反查回 8 筆，1971 原壓與 1998／2012／2018／2020 四種再發年份一致。",
+    "rgMbid": "ab48ab2f-a559-4db0-8303-78ab07c38b3e",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ab48ab2f-a559-4db0-8303-78ab07c38b3e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=2）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "編號寫著二的這張碟，資料庫卻把它記成這個合唱團的頭一張。那份記載出自 Discogs 的藝人頁，碟本身則是 1971 年掛在 King 的 SKK(L) 3010 下，屬「New Emotional Work Series」。A 面整面是 16 分 36 秒的委作，作曲兼編曲的是佐藤允彦，伴奏找來石川晶、稲葉国光、杉本喜代志、鈴木宏昌、村岡建 與鈴木弘 六位爵士樂手。B 面四首換成上田力 編曲，唱的是伊集加代子、福田まゆみ 與藤村道子。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4933017",
+     "https://en.wikipedia.org/wiki/See_See_Rider",
+     "https://en.wikipedia.org/wiki/Eli's_Comin'",
+     "https://ja.wikipedia.org/wiki/%E4%BC%8A%E9%9B%86%E5%8A%A0%E4%BB%A3",
+     "https://www.discogs.com/artist/857269",
+     "https://www.discogs.com/master/1480995",
+     "https://musicbrainz.org/release-group/ab48ab2f-a559-4db0-8303-78ab07c38b3e"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/32/28/8b322890-35cd-5f6e-11bc-0aba1f6109f0/mzaf_16825426449599313126.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1782070992",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yamash'ta & The Horizon",
+   "album": "Sunrise From West Sea \"Live\"",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bd35263e-325f-467e-97c9-0fe2e36b1dee（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Sunrise From West Sea \"Live\"」、artist-credit「**Yamash’ta & The Horizon**」（U+2019；單一實體 fd26df0b，MB 本名「ツトム・ヤマシタ」，type **Person**——⚠ **團名掛在個人實體上**，c-173 第 3714 條那種「群組實體沒設 area」的反向形狀，本盤四位樂手已逐名核過全是日本人，不適用外國藝人排除款）、first-release-date 1971、primary-type Album、**secondary-types 逐字 [\"Live\"]**、tags／genres 為 avant-garde(1)／jazz(1)／rock(1)、轄下 **1 個 release**。release 端點（inc=media+labels+artist-credits）：f1e9412b（1971 JP Official 12\" Vinyl 2 軌，label-info 兩筆「KING SLC(J)-359」與「London Records SLC(J)-359」＝原盤）。Discogs：master 461433，原壓 releases/3789264（1971 Japan，London Records／King Records SLC(J)-359，genres Jazz／Rock，styles Avantgarde），同號 Promo 2064365 與 27369393，2022 法國 Wewantsounds 再發 22759886（LP）／22883108（CD）。**catno 反查**：`catno=SLC(J)-359` **一筆都沒命中本盤**（回來的六筆全是 2007–2017 年 `SLCJ-1`～`SLCJ-5`、`SLCSJ-001` 的同前綴稀釋——**第 1250 條「裸數字會撞」的又一次應驗，成因是括號在查詢字串裡被吃掉**），改用 `q=Sunrise From West Sea Yamash'ta` 一次回 7 筆、第一筆就是 master 461433，年份 1971，與本批 `year` 差 **0**。",
+    "rgMbid": "bd35263e-325f-467e-97c9-0fe2e36b1dee",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bd35263e-325f-467e-97c9-0fe2e36b1dee/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=5）僅供對照。"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四個人、兩支長曲、一個晚上，台上的樂器全部通了電。四個人是ツトム・ヤマシタ 的打擊、佐藤允彦 的電風琴、小杉武久 的電小提琴，以及桜井英顕 的電箏、三味線與打擊。那個晚上是 1971 年 4 月 18 日的ヤマハホール，實況由 London Records 以 SLC(J)-359 留下，一面一軌，長度 16 分 45 秒與 17 分 56 秒，作曲掛ツトム・ヤマシタ。封套另有一行寫明箏的演奏者是向別家公司借來的。拉電小提琴的小杉武久 與 Fluxus 運動關係密切。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3789264",
+     "https://en.wikipedia.org/wiki/Takehisa_Kosugi",
+     "https://ja.wikipedia.org/wiki/%E3%83%84%E3%83%88%E3%83%A0%E3%83%BB%E3%83%A4%E3%83%9E%E3%82%B7%E3%82%BF",
+     "https://www.discogs.com/master/461433",
+     "https://www.discogs.com/release/2063906",
+     "https://musicbrainz.org/release-group/bd35263e-325f-467e-97c9-0fe2e36b1dee"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Richard Pine & Company",
+   "album": "Cosmos",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d7153ac2-61a5-4621-ad97-57afb54c3e69（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Cosmos」、artist-credit「**Richard Pine & Company**」（單一 Group 實體 2ce22aec，**實體本名是片假名「リチャード・パイン＆カンパニー」**）、first-release-date 1971、primary-type Album、secondary-types **空**、tags／genres 為 jazz(1)／jazz rock(1)／soul jazz(1)（**三個全是爵士系，無非爵士標籤並列**）、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：a7ac62c9（**1971 JP Official 12\" Vinyl 8 軌，London Records SKK (L) 3008＝原盤**）、3d08e667（2012-12-05 JP CD 8 軌，KING KICJ-2290，title「コスモス」）。⚠ **c-174 b 第 3818 條的 `SKK(x)` 形狀在本盤第三次成立**：slice 的 `house` 記 King、`entities` 記 KING，**但盤面印的字標是 London Records**，King Record Co. Ltd 只出現在「Made By」那一欄。Discogs：master 2984177，原壓 releases/26141474。**catno 反查**：`catno=SKK(L)3008` **回 0 筆**（括號在查詢字串裡被吃掉，與同批《Sunrise From West Sea》的 `SLC(J)-359` 同一種失敗，見第 3877 條），改用 `q=Richard Pine Cosmos` 一次回 4 筆、前三筆全是本盤，年份 1971，與本批 `year` 差 **0**。",
+    "rgMbid": "d7153ac2-61a5-4621-ad97-57afb54c3e69",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d7153ac2-61a5-4621-ad97-57afb54c3e69/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=11）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封套上一個樂手的名字都沒印，編曲者與製作人也一樣。那張碟是 London Records 1971 年的 SKK (L) 3008。能查到的兩個名字來自 Discogs 的藝人頁，松本易夫 與 Richard Pine。八軌裡有〈The Fool On The Hill〉〈Windy〉與〈Summertime〉，同名曲是〈Cosmos〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/26141474",
+     "https://www.discogs.com/artist/3355060",
+     "https://en.wikipedia.org/wiki/The_Fool_on_the_Hill",
+     "https://en.wikipedia.org/wiki/Windy_(song)",
+     "https://en.wikipedia.org/wiki/Mercy%2C_Mercy%2C_Mercy",
+     "https://en.wikipedia.org/wiki/El_C%C3%B3ndor_Pasa_(song)",
+     "https://www.discogs.com/master/2984177",
+     "https://www.discogs.com/release/4476546",
+     "https://musicbrainz.org/release-group/d7153ac2-61a5-4621-ad97-57afb54c3e69"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/23/ca/8c23ca83-3e1e-ff96-5dc1-5de47af5e29b/mzaf_14957245436036121904.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1782071142",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "佐藤允彦 & ゲイリー・ピーコック",
+   "album": "三昧",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3914de7d-ee1a-43ab-a0b2-9d6050987339（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「三昧」、artist-credit「**Masahiko meets Gary**」（04bbec22 佐藤允彦 ＋ 0cd9e25c Gary Peacock，joinphrase 逐字「 meets 」）、first-release-date 1972、primary-type Album、secondary-types **空**、tags／genres 為 free jazz(1)／jazz(1)（**兩個都是爵士系**）、轄下 **1 個 release**。release 端點（inc=media+labels+artist-credits）：21931d8b（1972 JP Official 12\" Vinyl 3 軌，label「EXPRESS」catno **ETJ-9003**＝原盤）。Discogs：master 357644，原壓 releases/3023971（1972 Japan，Express ETJ-9003，series「Express Jazz Series」，genres **Jazz**，styles **Free Jazz**），同號 Promo releases/14635199（title 只有「Samādhi」）。**catno 反查**：`catno=ETJ-9003` 回 3 筆全是本盤（1 master ＋ 2 release），年份 1972，與本批 `year` 差 **0**。⚠ **c-174 a 第 3795 條「東芝 Express 的號段不能推定曲風」在本盤仍然適用**：`ETJ-9003` 與同批被退的碟不同號段，但 `Express Jazz Series` 這個系列名**只能當快篩**（c-174 b 第 3820 條第 8 點），本卡的曲風是靠 Discogs 的 genres／styles 與逐軌作曲者定的。⚠ 同號段的 `ETJ-9004`（TJ-9004 的 Express 再發號）是同批另一筆《Yamataifu》的 1978 再發號 `ETJ-65019` 的前身，**兩張碟毫無關係**。",
+    "rgMbid": "3914de7d-ee1a-43ab-a0b2-9d6050987339",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3914de7d-ee1a-43ab-a0b2-9d6050987339/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "為了學禪與長壽飲食法退出樂壇的貝斯手，搬到日本住了兩年半。那位貝斯手是 Gary Peacock，在日本學的是日語、歷史與東洋思想，兩年半結束後於 1972 年返美，進大學念生物學。本盤正錄在他日本歲月的最後幾個月：1972 年 3 月在東芝第三錄音室完成，碟是東芝 Express 的 ETJ-9003。三首曲子全由佐藤允彦 寫成，他除了鋼琴與電鋼琴還彈 Moog。盤名是佛教用語，指心念專注於一境的禪定狀態。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1245941",
+     "https://www.discogs.com/release/3023971",
+     "https://en.wikipedia.org/wiki/Gary_Peacock",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E5%85%83%E5%BD%A6",
+     "https://www.discogs.com/release/4704258",
+     "https://www.discogs.com/master/357644",
+     "https://www.discogs.com/release/7629924",
+     "https://musicbrainz.org/release-group/3914de7d-ee1a-43ab-a0b2-9d6050987339"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "宮間利之とニューハード + 佐藤允彦",
+   "album": "Yamataifu",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 02fd9983-5d6c-4497-9fb9-a5430eb8cc71（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Yamataifu」、artist-credit「Toshiyuki Miyama and His New Herd **+** M. Sato」（Group **11c13132** ＋ Person **04bbec22**，joinphrase 「 + 」）、first-release-date 1972、primary-type Album、secondary-types **空**、tags／genres 為 big band(1)／electronic(1)／jazz(1)、轄下 **1 個 release**。release 端點（inc=media+labels+artist-credits）：5161f5da（1972 JP Official Vinyl 3 軌，label「EXPRESS」catno「**ETJ-65019,**」——⚠ **這是 1978 年的再發號，而且字串尾端多一個逗號**，見 `risk`）。Discogs：master 506643，**1972 原盤 releases/16009062**（Toshiba Records TJ-9004，genres Electronic／Jazz，styles Avant-garde Jazz／Big Band／Fusion），1978 再發 releases/1360383／5996013（Express／Far East ETJ-65019，formats 標 Reissue），2023 再發 releases/27496464（Universal／Lighthouse Music UPJY-9276）。**catno 反查**：`catno=ETJ-65019` 回 2 筆，**兩筆都是 1978 年的再發**（第一頁沒有原盤）——**本線第一次出現「catno 反查回來的年份比本批 `year` 晚六年」**；改用 `q=Yamataifu` 一次回 8 筆，其中五筆是 TJ-9004 的 1972 原壓群，年份 1972，與本批 `year` 差 **0**。",
+    "rgMbid": "02fd9983-5d6c-4497-9fb9-a5430eb8cc71",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/02fd9983-5d6c-4497-9fb9-a5430eb8cc71/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "題目取自《魏志倭人伝》裡的古代倭國，寫成給大樂團的三段曲子。作曲、編曲與電鋼琴全在佐藤允彦 手上，指揮由領班宮間利之 擔任。三軌的盤面題是〈壱〉〈弐〉〈参〉，第一段 19 分 21 秒就佔滿 A 面。1972 年 11 月 5 日面世，Toshiba Records TJ-9004，系列欄逐字是「年度文化庁芸術祭参加 47」，以昭和 47 年度的參加作品送件。這張碟替他拿下 1972 年的芸術祭優秀賞，1970 年的大樂團作品也拿過同一個獎。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/16009062",
+     "https://ja.wikipedia.org/wiki/%E4%BD%90%E8%97%A4%E5%85%81%E5%BD%A6",
+     "https://www.discogs.com/master/506643",
+     "https://musicbrainz.org/release-group/02fd9983-5d6c-4497-9fb9-a5430eb8cc71"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e5/7b/4b/e57b4b8c-04a9-3baa-0834-a1388f3f0b80/mzaf_17143181899955985662.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1691674010",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "浅川マキ",
+   "album": "Live",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group fa974a3d-d8fd-4eef-915d-a36f6b1cd47d（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「**LIVE**」（⚠ 取自 2011 年 CD 的全大寫題）、artist-credit「浅川マキ」（單一 Person 實體 2d16719b）、first-release-date **1972-03-05**、primary-type Album、**secondary-types 逐字 [\"Live\"]**、tags／genres 為 blues(1)／jazz(1)／pop(1)、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：1fff7c74（**1972-03-05 JP Official 12\" Vinyl 12 軌，EXPRESS ETP-8167＝原盤**，title 逐字「Live」）、c449e60e（2011-01-19 JP CD 12 軌，EXPRESS TOCT-27043，title「LIVE」）。Discogs：master 401885，原壓 releases/931315（1972 Japan，Express ETP-8167，genres Jazz／Blues／Pop，style Chanson），同號另有 15334769／35787898（1972）與 30178493（1973 Reissue）。**catno 反查**：`catno=ETP-8167` 回 5 筆全是本盤（1 master ＋ 4 release），年份 1972（一筆 1973 再壓），與本批 `year` 差 **0**。⚠ slice 的 `why` 是 `pool-jazz-artist`——**本線七種 `why` 值裡的第五種，本批 a 組只出現兩次**（另一次是《Metempsychosis》），依第 3724／3752 條一樣逐張覆核過，不當成任何一層證據。",
+    "rgMbid": "fa974a3d-d8fd-4eef-915d-a36f6b1cd47d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fa974a3d-d8fd-4eef-915d-a36f6b1cd47d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 240,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=240）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "跨年那一夜她在新宿的劇場裡唱歌，錄下來的就是這張碟。那一夜是 1971 年 12 月 31 日，劇場是紀伊國屋ホール，唱片 1972 年 3 月 5 日出，Express ETP-8167，浅川マキ 的第三張。伴奏是萩原信義 與杉浦芳博 的兩把木吉他、稲葉国光 的貝斯、つのだ・ひろ 的鼓與今田勝 的鋼琴。十二首的詞曲分工很清楚：〈かもめ〉與〈ピアニストを撃て〉的詞出自寺山修司，〈赤い橋〉的詞出自北山修，曲都是山木幸三郎 寫的，〈朝日樓〉的日文詞則由她自己填。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/931315",
+     "https://www.universal-music.co.jp/asakawa-maki/products/upjy-9028/",
+     "https://ja.wikipedia.org/wiki/%E5%AF%BA%E5%B1%B1%E4%BF%AE%E5%8F%B8",
+     "https://en.wikipedia.org/wiki/Gasoline_Alley_(album)",
+     "https://ja.wikipedia.org/wiki/%E5%AF%BA%E6%9C%AC%E5%B9%B8%E5%8F%B8",
+     "https://www.discogs.com/master/401885",
+     "https://musicbrainz.org/release-group/fa974a3d-d8fd-4eef-915d-a36f6b1cd47d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/1a/82/5e/1a825efd-8a5d-a066-4806-7eebcc59642f/mzaf_5209468276964316544.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1443116680",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石川晶",
+   "album": "Drums Method",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f04cbfb7-6771-4c03-b760-9eb0ad1c8477（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Drums Method」、artist-credit「Akira Ishikawa」（單一 Person 實體 **237e787a**，**實體本名是漢字「石川晶」**）、first-release-date 1972、primary-type Album、secondary-types **空**、tags／genres 為 jazz(1)／jazz rock(1)（**兩個都是爵士系**）、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：a35bf345（**1972 JP Official 12\" Vinyl 12 軌，Columbia JDX-68＝原盤**）、ef605fb6（2012-10-10 JP CD 12 軌，Columbia COCB-54024）。Discogs：master 1147890，原壓 releases/9477190（1972 Japan，Columbia JDX-68，genres **Jazz**，style **Jazz-Rock**），2012 CD releases/8802473（series 欄逐字「Dig Deep Columbia」）。**catno 反查**：`catno=JDX-68` 回 2 筆全是本盤（1 master ＋ 1 release），年份 1972，與本批 `year` 差 **0**；**Apple 的 1972-04-25 是第三個獨立來源**。⚠ 同號段的 `JDX-69` 是同批的《Guitar Method》（杉本喜代志）、`JDX-7006`／`JDX-7007` 是同批的《Dock of My Mind》與《Woman, Robinson Crusoe / Rock Steady`，**四張同系列、不同碟**；c-174 a 收的《Exciting Drums African Rock Party》是 `JDX-28`，**與本盤同一號段但差四十號、隔三年**，行文引盤名務必帶年份與目錄號。",
+    "rgMbid": "f04cbfb7-6771-4c03-b760-9eb0ad1c8477",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f04cbfb7-6771-4c03-b760-9eb0ad1c8477/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=3）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首全是英美熱門曲，最新的那一首在前一年才剛紅起來。那首是〈Mamy Blue〉，Hubert Giraud 1970 年的作品，1971 年改成英語版之後才成為國際熱門曲。碟是日本コロムビア 1972 年的 JDX-68，封套上沒印樂手名單，廠牌卻逐軌標出了原唱：シカゴ 佔三首，サイモン＆ガーファンクル 與ザ・ビートルズ 各兩首。石川晶 1934 年生於橫須賀，獨立後組的ゲンチャーズ 是カウント・バッファローズ 的母體，他也多次前往非洲學打擊樂器。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9477190",
+     "https://www.discogs.com/release/8802473",
+     "https://columbia.jp/artist-info/ishikawaakira/discography/COCB-54024.html",
+     "https://en.wikipedia.org/wiki/Spinning_Wheel_(song)",
+     "https://en.wikipedia.org/wiki/Mamy_Blue",
+     "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E6%99%B6",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%AE%8F%E6%98%8C",
+     "https://www.discogs.com/master/1147890",
+     "https://musicbrainz.org/release-group/f04cbfb7-6771-4c03-b760-9eb0ad1c8477"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/8e/24/e1/8e24e106-05c8-510a-d642-f7082b43ec47/mzaf_15077858563032473162.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1617243602",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "杉本喜代志",
+   "album": "Guitar Method",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f34e1d98-494d-4227-abc4-c61c1e287f46（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Guitar Method」、artist-credit「Kiyoshi Sugimoto」（單一 Person 實體 **412332e2**，**實體本名是漢字「杉本喜代志」**）、first-release-date 1972、primary-type Album、secondary-types **空**、tags／genres 逐字只有 jazz(1)、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：54b3b40b（**1972 JP Official 12\" Vinyl 12 軌，Columbia JDX-69＝原盤**）、2c8ed06e（2012-10-10 JP CD 12 軌，Columbia COCB-54025）。Discogs：master 2097217，原壓 releases/18129541（1972 Japan，Columbia JDX-69，genres **Jazz**，style **Jazz-Rock**，series「MS Master Sonic」）。**catno 反查**：`catno=JDX-69` 回 2 筆全是本盤（1 master ＋ 1 release），年份 1972，與本批 `year` 差 **0**；**Apple 的 1972-04-25 是第三個獨立來源**。",
+    "rgMbid": "f34e1d98-494d-4227-abc4-c61c1e287f46",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f34e1d98-494d-4227-abc4-c61c1e287f46/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 214,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=214）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "前一年他才站上卡內基的舞台，回國後接的工作是把排行榜翻一遍。他是 1942 年生於靜岡的杉本喜代志，1970 年進日野皓正クインテット，隔年隨團先到柏林爵士節再到紐約，台上的司儀いソノてルヲ 說那是日本人第一次登上卡內基音樂廳。工作的成果是 1972 年的 JDX-69，出自日本コロムビア，盤面掛著「MS Master Sonic」，十二首裡有九首是 1971 年才發行的新歌，〈Imagine〉〈Black Dog〉與〈It's Too Late〉都在內。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/18129541",
+     "https://www.discogs.com/release/9629211",
+     "https://columbia.jp/artist-info/sugimotokiyoshi/discography/COCB-54025.html",
+     "https://en.wikipedia.org/wiki/It's_Too_Late_(Carole_King_song)",
+     "https://en.wikipedia.org/wiki/Gypsys%2C_Tramps_%26_Thieves",
+     "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E5%96%9C%E4%BB%A3%E5%BF%97",
+     "https://www.discogs.com/master/2097217",
+     "https://musicbrainz.org/release-group/f34e1d98-494d-4227-abc4-c61c1e287f46"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/af/21/36/af21366c-c301-3ed0-bd38-9a2c1aeb5f70/mzaf_14309524993842133332.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1537028849",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "沢田靖司 & 稲垣次郎とソウル・メディア",
+   "album": "Dock of My Mind",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group da430ecc-9fd0-4a1b-ace8-b38aaf8a6031（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Dock of My Mind」、artist-credit **三方**「Yasushi Sawada, Jiro Inagaki & His Soul Media & Tokyo Chamber Music Society」（97c375d0 ＋ **ad4be255** ＋ 909d623b）、first-release-date **1972-10-25**、primary-type Album、secondary-types **空**、tags／genres 為 jazz(1)／jazz rock(1)／rock(1)、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：17650ef0（**1972-10-25 JP Official Vinyl 12 軌，Columbia JDX-7006＝原盤**）、e2cc3f5e（2015-05-20 JP CD **14 軌**，Columbia COCB-54171）。Discogs：master 1139344，原壓 releases/17530624（1972 Japan，Columbia JDX-7006，genres Jazz／Rock，styles **空**）。**catno 反查**：`catno=JDX-7006` 回 2 筆全是本盤（1 master ＋ 1 release），年份 1972，與本批 `year` 差 **0**。⚠ slice 的 `note` 欄逐字寫著「疑似池中(同藝人同年, 盤名相似度0.53)」——**逐張人工比過，`poolRecheck.artistAlbumsInPool` 列的十二列去重後是 `稲垣次郎とソウル・メディア` 的五張（Dosojin 1972、Woodstock Generation 1970、Jazz & Rock \"Out\" 1970、Wandering Birds 1971、In the Groove 1973）、`Jiro Inagaki and Soul Media` 的兩張（Head Rock 1970、Funky Stuff 1975）與 `佐藤允彦` 的四張，七張碟的 catno 與本盤全不相同，沒有一張是本盤**。相似度 0.53 的來源應該是 1972 年那張《Dosojin》，逐軌與目錄號都對不上。",
+    "rgMbid": "da430ecc-9fd0-4a1b-ace8-b38aaf8a6031",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/da430ecc-9fd0-4a1b-ace8-b38aaf8a6031/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "唱歌的人同時彈鋼琴、彈風琴、吹長笛，背後站著兩組伴奏。唱歌的是沢田靖司，兩組伴奏記在同一欄裡：稲垣次郎とソウル・メディア 與東京室内楽協会，編曲交給クニ河内。1972 年 10 月 25 日進店，日本コロムビア JDX-7006，與同一天出的連號姊妹盤共用製作人稲垣次郎。十二軌全部有日英對照題，B 面最後兩首是美國曲，而且都以喬治亞為名：〈Rainy Night In Georgia〉與〈Georgia On My Mind〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/17530624",
+     "https://en.wikipedia.org/wiki/Rainy_Night_in_Georgia",
+     "https://en.wikipedia.org/wiki/Georgia_on_My_Mind",
+     "https://www.discogs.com/artist/5172187",
+     "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%8B%E6%B2%B3%E5%86%85",
+     "https://www.discogs.com/release/8823980",
+     "https://www.discogs.com/master/1139344",
+     "https://musicbrainz.org/release-group/da430ecc-9fd0-4a1b-ace8-b38aaf8a6031"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/af/e5/cb/afe5cbcd-7fb9-0d21-ca64-0f1196ae39ca/mzaf_11442584721786585103.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508951057",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "サミー & 稲垣次郎とソウル・メディア",
+   "album": "Woman, Robinson Crusoe / Rock Steady",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 86824bad-a558-41f3-b1d8-de5da9557bd6（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+releases+tags+genres）：title「Woman, Robinson Crusoe / Rock Steady」、artist-credit「**サミー & 稲垣次郎とソウル・メディア**」（Person 5b1694e3 ＋ Group ad4be255）、first-release-date **1972-10-25**、primary-type Album、secondary-types **空**、**tags／genres 兩欄都是空的**（⚠ 零機器依據，`why` 是 `artist-tag`；本卡的曲風是靠 Discogs 的 genres、逐軌 written-by 與再發線定的，依第 3752 條第 2 點不倚賴 MB 標籤）、轄下 2 個 release。release 端點（inc=media+labels+artist-credits）：**b4f2d81b（1972-10-25 JP Official **Digital Media** 10 軌，label「NIPPONOPHONE」、**無 catno**）**、a017d429（2013-04-24 JP CD 10 軌，Columbia COCB-54057，title「Woman Robinson Crusoe – Rock Steady」）。⚠ ⚠ **MB 最早的那一筆是 `Digital Media`、沒有目錄號**——**MB 沒有建 1972 年的實體原盤**，`titleCheck` 的 `earliestRelease` 因此指向一筆數位條目。1972 年的實體原盤只在 Discogs 上：releases/18912523（Columbia JDX-7007，1972-10-25）與 master 1028682。Discogs：genres Jazz／Funk & Soul／Pop，styles 空。**catno 反查**：`catno=JDX-7007` **回 0 筆**——⚠ **Discogs 那筆的 catno 字串裡夾了一個零寬空格（U+200B，`JDX-​7007`）**，查詢比不中（第 1250 條之外的另一種 catno 失效，見第 3881 條）；改用 `q=サミー Rock Steady` 一次回 4 筆、第一筆就是 master 1028682，年份 1972，與本批 `year` 差 **0**。⚠ 同號段的 `JDX-7006` 是同批的《Dock of My Mind》，**同日發行、同製作人、不同碟**。",
+    "rgMbid": "86824bad-a558-41f3-b1d8-de5da9557bd6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/86824bad-a558-41f3-b1d8-de5da9557bd6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名是兩個曲名並排，一個來自 A 面開頭，一個來自 B 面開頭。那兩首是〈Woman, Robinson Crusoe〉與〈Rock Steady〉，後者出自 Aretha Franklin。B 面頭兩首都是她的曲子，另一首〈Day Dreaming〉1972 年 4 月在靈魂單曲榜連兩週第一名，半年後這張東京的碟就唱了一遍。碟 1972 年 10 月 25 日出，日本コロムビア JDX-7007。歌者サミー 1947 年生於長野，1970 年代初在駐日美軍基地演出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/18912523",
+     "https://columbia.jp/prod-info/COCB-54057/",
+     "https://en.wikipedia.org/wiki/Rock_Steady_(Aretha_Franklin_song)",
+     "https://en.wikipedia.org/wiki/Day_Dreaming_(Aretha_Franklin_song)",
+     "https://www.discogs.com/artist/3813591",
+     "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E6%AC%A1%E9%83%8E",
+     "https://www.discogs.com/release/4558270",
+     "https://www.discogs.com/master/1028682",
+     "https://musicbrainz.org/release-group/86824bad-a558-41f3-b1d8-de5da9557bd6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/14/77/bd/1477bd8b-253c-34bb-6958-b2acf359cfd2/mzaf_7067891682529616434.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508946643",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "石川晶とカウント・バッファローズ",
+   "album": "Dynamic Latin Exotic Sound",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 806f15c2-3a33-4131-8c50-5cde10ae87d4（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「Dynamic Latin Exotic Sound」、artist-credit「石川晶とカウント・バッファローズ」（2acbf5b2-86d5-40fd-8dd1-a978c89d2070，Group，JP）、first-release-date 1972、primary-type Album、secondary-types 空、轄下 1 個 release。**RG 的 tags 與 genres 兩欄都是空的**（`why` 欄記的 `artist-tag` 來自藝人實體，不是本 RG——第 3752／3773 條的形狀，本卡的曲風是靠 Discogs 與逐軌曲目定的）。release 端點（inc=media+labels+artist-credits）：55f7977d-6b2c-4e4c-b415-89592edae3b9（1972，**country 為 null、format 為 null、catalog-number 為 null**，media track-count 12，label 掛 NIPPONOPHONE 442f4a1d——⚠ 見 risk，本卡不採信這個廠牌）。Discogs master 1221651（main_release 10687871）轄下 3 版：1972 東芝 TP-9531Z（原壓，Quadraphonic）、2016 Universal UPCY-9549、Regal SREG 9712（東南亞授權盤）。刻意不釘：MB 同名 RG 無其他筆；Discogs `q=Akira Ishikawa Latin` 另回到 `Akira Ishikawa & All Stars —《Variation Of Rhythm》1973 RCA JRS-7245`（genres Latin／Funk, Soul，**非本盤、且不在本線四家**）。",
+    "rgMbid": "806f15c2-3a33-4131-8c50-5cde10ae87d4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/806f15c2-3a33-4131-8c50-5cde10ae87d4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=7）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "拉丁與巴西的老歌佔了十一首，例外那首出自 Herbie Hancock。那首排在 B 面開場，曲名是〈Watermelon Man〉。1972 年東芝把這張碟做成 TP-9531Z，十二軌、四聲道規格，盤面掛名還多了 Latin Beats 一詞，是這個團專為拉丁曲目掛出來的名字。演奏者欄只列了兩個人：石川晶 掛鼓，編曲、鋼琴與 Hammond 風琴三件事全在 松岡直也 手上。松岡直也 1937 年生於橫濱，是日本拉丁融合樂的第一人，十五歲就職業出道。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10687871",
+     "https://en.wikipedia.org/wiki/Watermelon_Man_(composition)",
+     "https://en.wikipedia.org/wiki/Babal%C3%BA",
+     "https://en.wikipedia.org/wiki/Frenes%C3%AD",
+     "https://en.wikipedia.org/wiki/Guantanamera",
+     "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E6%99%B6",
+     "https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%B2%A1%E7%9B%B4%E4%B9%9F",
+     "https://www.discogs.com/master/1221651",
+     "https://ja.wikipedia.org/wiki/4%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA",
+     "https://musicbrainz.org/release-group/806f15c2-3a33-4131-8c50-5cde10ae87d4"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "猪俣猛",
+   "album": "Drum Method",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 7afb4f3c-feb1-45e6-8a0b-2a1ea9679ec2（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「ドラム・メソード」（⚠ 本卡改判 Drum Method，見 risk）、artist-credit「猪俣猛とサウンド・リミテッド」（397912f7，Group）、first-release-date 1972-07、primary-type Album、secondary-types 空、轄下 2 個 release。**RG 的 tags／genres 兩欄皆空**（`why` 欄的 `artist-tag` 來自藝人實體）。release 端點（inc=media+labels+artist-credits）：c2fd0697（**1972-07 JP Official Vinyl 12 軌，label「Columbia」catno JDX-79，title「Drum Method」**）、ac09bda9（2007-03-16 JP Official CD 12 軌，catno PCD-7287，label 欄未填名稱，title「ドラム・メソード」）。⚠ **這正是第 1858-B 條要防的形狀：RG title 取自 2007 年的再發**。Discogs master 738370（main_release 10531589）。藝人 MBID 397912f7（Group）；人名實體 `猪俣猛` 另有其 MBID，本卡掛名取人名字串但 rgMbid 仍釘在 MB 的 Group credit 上（第 91／95 條：rgMbid 釘的是碟不是掛名）。",
+    "rgMbid": "7afb4f3c-feb1-45e6-8a0b-2a1ea9679ec2",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7afb4f3c-feb1-45e6-8a0b-2a1ea9679ec2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=3）僅供對照。"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "只有兩首出自掛名的鼓手，標題直接就叫鼓的演奏會。那兩首是〈Drum Concert I〉與〈Drum Concert II〉，寫它們的人是 猪俣猛。日本コロムビア 1972 年 7 月 25 日推出 JDX-79，演奏欄掛的是 猪俣猛とサウンド・リミテッド，編曲歸 前田憲男，另外兩首出自這位編曲者。還有兩首翻的是英國爵士搖滾樂團 If，作曲欄上的 Dave Quincy 就是那支團的創團成員兼薩克斯手。猪俣猛 1936 年生於寶塚市，父親是宝塚歌劇団的雙簧管手。",
+    "sourceUrls": [
+     "https://columbia.jp/artist-info/inomatatakeshi/discography/COCB-54117.html",
+     "https://www.discogs.com/release/10531589",
+     "https://en.wikipedia.org/wiki/If_(band)",
+     "https://en.wikipedia.org/wiki/Dave_Quincy",
+     "https://en.wikipedia.org/wiki/Blue_Rondo_%C3%A0_la_Turk",
+     "https://ja.wikipedia.org/wiki/%E7%8C%AA%E4%BF%A3%E7%8C%9B",
+     "https://ja.wikipedia.org/wiki/%E5%89%8D%E7%94%B0%E6%86%B2%E7%94%B7",
+     "https://www.discogs.com/master/738370",
+     "https://musicbrainz.org/release-group/7afb4f3c-feb1-45e6-8a0b-2a1ea9679ec2"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/22/d0/a1/22d0a184-1a79-c1a4-56b6-4c455b8dbed7/mzaf_6546435912831790356.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1617242775",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "村岡実とニュー・ディメンション・グループ",
+   "album": "鳴門",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group bb86b95c-62e1-4eb7-8ba7-d50761e23643（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「鳴門」、artist-credit「村岡実とニュー・ディメンション・グループ」（2baf3766，Group）、first-release-date 1972、primary-type Album、**secondary-types 空（⚠ 本卡改判為實況盤，見 risk）**、轄下 1 個 release。RG genres：folk(1)／gagaku(1)／jazz(1)；tags 另有 fusion(1)——**jazz 與非爵士標籤並列且 count 皆 1，照第 3752 條第 2 點視為沒有依據**，本卡的曲風是靠 Discogs 與逐軌曲目定的。release 端點（inc=media+labels+artist-credits）：2b3e72a0（1972 JP Official 12\" Vinyl 6 軌，label「KING」catno **SKD 135**，title「鳴門」）。Discogs releases/10094582（該盤在 Discogs 未建 master）。藝人 MBID 2baf3766（Group，名下另有本批的《蘇》498d4393、《竹・糸・鼓》baa3ea97、《ルーパス》42931926 三個 RG）。",
+    "rgMbid": "bb86b95c-62e1-4eb7-8ba7-d50761e23643",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bb86b95c-62e1-4eb7-8ba7-d50761e23643/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 15,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=15）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "封面與盤名一個字都沒提，這其實是一場演出的現場錄音。那場演出辦在厚生年金会館，日期 1972 年 4 月 25 日，キングレコード 同年把六軌壓成唱片。同一個目錄號在這張碟上有三種寫法：封面印 SKD 135，盤芯印 SKD-135，書背印 SKD 一三五。台上是十一個人的邦樂器陣，村岡実 吹尺八與篠笛，另有薩摩琵琶、箏、笙與太鼓，低音只靠一把貝斯。六首裡唯一的翻唱是〈コンドルは飛んで行く〉。村岡実 1965 年因為想走流行音樂路線而退出日本音楽集団。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10094582",
+     "https://en.wikipedia.org/wiki/El_c%C3%B3ndor_pasa_(song)",
+     "https://ja.wikipedia.org/wiki/%E6%9D%91%E5%B2%A1%E5%AE%9F",
+     "https://ja.wikipedia.org/wiki/%E5%B0%BA%E5%85%AB",
+     "https://ja.wikipedia.org/wiki/%E8%96%A9%E6%91%A9%E7%90%B5%E7%90%B6",
+     "https://musicbrainz.org/release-group/bb86b95c-62e1-4eb7-8ba7-d50761e23643"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mal Waldron & 日野皓正",
+   "album": "Reminicent Suite",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d62a9c4a-bbdb-4b91-ad0a-c893cd0461d3（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「Reminicent Suite」、artist-credit「Mal Waldron」（3f658e7f，Person）＋joinphrase「 and 」＋「Terumasa Hino」（60d3fa1e，Person，**MB 實體本名為漢字「日野皓正」**）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 4 個 release。RG tags／genres：avant-garde jazz(1)／jazz(1)／post-bop(1)——**三個標籤全是爵士系、沒有任何非爵士標籤並列**，照第 3752 條第 3 點，`rg-tag` 在這一筆算得上一層證據。release 端點（inc=media+labels+artist-credits）：05880bd2（**1973 JP Official 12\" Vinyl 2 軌，label「Victor」catno SMJX-10155**）、8a39b252（2020-09-09 XW Digital 2 軌，Victor）、2eb2877e（2024-01-26 GB CD 2 軌，BBE BBE682ACD）、e7c21810（2024-01-26 XW Digital 2 軌，BBE）。Discogs master 578796（main_release 2636760）；同 catno 另有 releases/4763933 與 releases/30496684（後者的 labels 欄印 JVC，是晚期貼紙版，見原盤 notes）。",
+    "rgMbid": "d62a9c4a-bbdb-4b91-ad0a-c893cd0461d3",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d62a9c4a-bbdb-4b91-ad0a-c893cd0461d3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=5）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩首曲子，一面一首，短的那面也超過十八分鐘。短的是 B 面 日野皓正 寫的〈Black Forest〉；A 面換成 Mal Waldron 的組曲，23 分 41 秒。1972 年 8 月 14 日那天在東京錄完，日本ビクター 1973 年才把它交到店面，目錄號 SMJX-10155。Mal Waldron 1957 年起一直是 Billie Holiday 的伴奏；1963 年他因用藥過量崩潰，一度彈不出也想不起任何音樂，往後一點一點練回來。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2636760",
+     "https://en.wikipedia.org/wiki/Mal_Waldron",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E7%9A%93%E6%AD%A3",
+     "https://ja.wikipedia.org/wiki/%E6%97%A5%E9%87%8E%E5%85%83%E5%BD%A6",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%8B%B2",
+     "https://www.discogs.com/master/578796",
+     "https://www.discogs.com/release/29249566",
+     "https://musicbrainz.org/release-group/d62a9c4a-bbdb-4b91-ad0a-c893cd0461d3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/df/8e/e9/df8ee9e5-1d5a-dd07-2655-3c60cf16507d/mzaf_1014248720407598350.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1528699280",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "村岡実とニュー・ディメンション・グループ",
+   "album": "蘇",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 498d4393-1793-4dbc-baf1-43ba100267e4（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「蘇」、artist-credit「村岡実とニュー・ディメンション・グループ」（2baf3766，Group）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 1 個 release。RG tags／genres：jazz(1)／jazz rock(1)／min'yō(1)／psychedelic(1)——**四個標籤 count 皆 1、且 min'yō 與 jazz 並列**，照第 3752 條第 2 點視為沒有依據，本卡的曲風是靠 Discogs styles 與逐軌曲目定的。release 端點（inc=media+labels+artist-credits）：fdcdbb8c（1973 JP Official 12\" Vinyl 5 軌，label「Victor」catno **SPX-1028**，title「蘇」）。Discogs master 2822795（main_release 24815756）轄下另有 releases/4800609（同號同年）。藝人 MBID 2baf3766（名下另有本批的《鳴門》bb86b95c、《竹・糸・鼓》baa3ea97、《ルーパス》42931926）。",
+    "rgMbid": "498d4393-1793-4dbc-baf1-43ba100267e4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/498d4393-1793-4dbc-baf1-43ba100267e4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=5）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五首曲名全是一到兩個漢字：韻、撥、旋法、打、波響。五首全是為這個編制新寫的曲子，作曲分給三個人：池多孝春 寫〈韻〉〈撥〉與〈打〉，玉木宏樹 寫〈旋法〉，市原宏祐 寫壓軸 17 分 3 秒的〈波響〉。錄音佔了 1973 年 8 月 13 到 15 日三天，日本ビクター 給的目錄號是 SPX-1028。編制還加進津軽三味線、十七絃箏與四位吟唱者。寫了三首的 池多孝春 原本是長號手，1968 年才以編曲家出道，2009 年拿下第 51 屆日本レコード大賞的編曲賞。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/24815756",
+     "https://ja.wikipedia.org/wiki/%E6%B1%A0%E5%A4%9A%E5%AD%9D%E6%98%A5",
+     "https://ja.wikipedia.org/wiki/%E7%8E%89%E6%9C%A8%E5%AE%8F%E6%A8%B9",
+     "https://ja.wikipedia.org/wiki/%E5%B8%82%E5%8E%9F%E5%AE%8F%E7%A5%90",
+     "https://www.discogs.com/master/2822795",
+     "https://musicbrainz.org/release-group/498d4393-1793-4dbc-baf1-43ba100267e4"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "岡沢章",
+   "album": "ギリシャについて書かれた本",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8291ecf8-9029-4731-ba25-434d7a76a78a（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「ギリシャについて書かれた本」、artist-credit「岡沢章」（ea89d842，Person）、first-release-date 1973、primary-type Album、secondary-types 空、轄下 2 個 release。RG tags／genres：jazz(1)／pop(1)／rock(1)——**jazz 與 pop／rock 並列且 count 皆 1**，照第 3752 條第 2 點視為沒有依據（`why` 欄記 `artist-search-tag`，本線七種值裡最寬鬆的一類之一，第 3723 條）。release 端點（inc=media+labels+artist-credits）：8af4828d（**1973 JP Official 12\" Vinyl 12 軌，label「Columbia」catno JDX-7011**）、db78572e（2013-08-28 JP Official CD 15 軌，Columbia COCP-38172）。Discogs master 1171061（main_release 10197348）。藝人 MBID ea89d842（Person，池中 0 張）。",
+    "rgMbid": "8291ecf8-9029-4731-ba25-434d7a76a78a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/2a/b4/57/2ab45707-ef38-272b-4a59-a8e4aea4d9ee/COKM-42682.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508949052",
+    "note": "試聽探測釘定的 collectionId 1508949052（jp）：岡沢 章 & 稲垣次郎とソウル・メディア — A Sunflower in Greece"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 10,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=10）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "碟名取自第六首的曲名，那首的英文題說的是一朵希臘的向日葵。那個英文題寫作〈A Sunflower In Greece〉。1973 年 5 月 25 日，日本コロムビア 送出 JDX-7011，製作與伴奏都出自 稲垣次郎とソウル・メディア，編曲以 前田憲男 為主。岡沢章 同時掛主唱與貝斯，而那支樂團正是他平常彈貝斯的地方，他 1970 年加入，錄這張時二十二歲。十二首裡只有兩首翻唱，都排在 B 面開頭，來自 Marvin Gaye 與 Gilbert O'Sullivan。",
+    "sourceUrls": [
+     "https://columbia.jp/prod-info/COCP-38172/",
+     "https://www.discogs.com/release/10197348",
+     "https://en.wikipedia.org/wiki/What's_Going_On_(Marvin_Gaye_song)",
+     "https://en.wikipedia.org/wiki/Alone_Again_(Naturally)",
+     "https://ja.wikipedia.org/wiki/%E5%B2%A1%E6%B2%A2%E7%AB%A0",
+     "https://ja.wikipedia.org/wiki/%E7%A8%B2%E5%9E%A3%E6%AC%A1%E9%83%8E",
+     "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%A8%E6%81%92%E7%A7%80",
+     "https://www.discogs.com/master/1171061",
+     "https://musicbrainz.org/release-group/8291ecf8-9029-4731-ba25-434d7a76a78a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/48/0a/66/480a6668-4995-d448-26ca-fdf456013994/mzaf_7265368839991639577.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1508949052",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ジョージ川口とビッグ4",
+   "album": "Jazz at the Torys",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 25641a5f-d02b-4bff-991f-8fdcfeeedac6（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「Jazz at the Torys」、artist-credit「The Big Four」（fe69c759，Group，**MB 實體本名 George Kawaguchi's The Big 4**）、first-release-date **1973**（⚠ 本卡改判 1957，見 risk）、primary-type Album、**secondary-types 空（⚠ 本卡改判為實況盤）**、轄下 1 個 release。RG tags／genres：jazz(1)／post-bop(1)——兩個標籤都是爵士系，無非爵士標籤並列（第 3752 條第 3 點）。release 端點（inc=media+labels+artist-credits）：8cb392c4（**1973 JP Official 12\" Vinyl 12 軌，label「KING」catno SKK 3016**——Discogs releases/12072244 證實這一筆是 Reissue／Mono）。**MB 未建 1957 年的 King LKB-7 原壓**。Discogs master 1239767（main_release 10874884）轄下至少 8 版：1957 LKB-7（原壓）、1973 SKK 3016、1979 JAZ-3016、1981 K20P-6102、1994 WWLJ-7096、2000 KICJ 404、2012 KICJ 2273。",
+    "rgMbid": "25641a5f-d02b-4bff-991f-8fdcfeeedac6",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1957,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/25641a5f-d02b-4bff-991f-8fdcfeeedac6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=查無）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名裡那個字是一個威士忌品牌，也是一個廣播節目的名字。トリス 是壽屋 的廉價國產調合威士忌，節目則叫「Torys Jazz Game」。原盤是 1957 年 King Records 的 LKB-7，十二軌的素材從 6 月 17 日橫跨五週到 7 月 22 日，全在東京的 Video Hall 收齊。台上的四重奏是 ジョージ川口 的鼓、松本英彦 的次中音、中村八大 的鋼琴與 上田剛 的貝斯；另有四軌各帶一位客席，其中一位是二十四歲的 渡辺貞夫。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10874884",
+     "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%82%B9%E3%82%A6%E3%82%A4%E3%82%B9%E3%82%AD%E3%83%BC",
+     "https://ja.wikipedia.org/wiki/%E6%B4%8B%E9%85%92%E5%A4%A9%E5%9B%BD",
+     "https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%E5%B7%9D%E5%8F%A3",
+     "https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9C%AC%E8%8B%B1%E5%BD%A6",
+     "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%85%AB%E5%A4%A7",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%B2%9E%E5%A4%AB",
+     "https://www.discogs.com/master/1239767",
+     "https://musicbrainz.org/release-group/25641a5f-d02b-4bff-991f-8fdcfeeedac6"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/7a/a2/eb7aa210-f4bf-a282-0f18-228d480a4a73/mzaf_9772989225703848202.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1770435006",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "村岡実とニュー・ディメンション・グループ",
+   "album": "ルーパス",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 42931926-c1d2-471d-b9b7-ca1892b48b4f（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「ルーパス」、artist-credit「村岡実とニュー・ディメンション・グループ」（2baf3766，Group）、first-release-date 1974、primary-type Album、**secondary-types `[\"Live\"]`（⚠ Discogs 無佐證，本卡不採信，見 risk）**、轄下 1 個 release。RG tags／genres：jazz(1) 單獨一個、無非爵士標籤並列（第 3752 條第 3 點成立，但 count 只有 1）。release 端點（inc=media+labels+artist-credits）：20ec8c0c（1974 JP Official 12\" Vinyl 4 軌，label「Victor」catno **SPX-1029**，title「ルーパス」）。Discogs releases/8943639（該盤在 Discogs 未建 master；`q=Muraoka New Dimension Group` 全查一次，這個樂團在 Discogs 只有《鳴門》《蘇》《竹・糸・鼓》《ルーパス》四筆）。藝人 MBID 2baf3766。",
+    "rgMbid": "42931926-c1d2-471d-b9b7-ca1892b48b4f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/42931926-c1d2-471d-b9b7-ca1892b48b4f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=8）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "A 面從頭到尾只有一首曲子，括號裡寫著曲名的意思：一個星座。那首就叫〈ルーパス〉，括號裡標的是「狼座」，作曲與編曲掛的都是 市原宏祐。1974 年日本ビクター 把四軌壓成 SPX-1029。B 面三首的素材幾乎全是傳統的：B1 把小倉百人一首接上浪曲與津軽三味線，B3〈虚無僧〉指的是普化宗那批吹著尺八行腳化緣的半僧半俗之人。四軌裡 村岡実 只在 B3 掛名，掛的還是改編，他的演歌伴奏與跨界即興兩邊一直並行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8943639",
+     "https://ja.wikipedia.org/wiki/%E6%B5%AA%E6%9B%B2",
+     "https://ja.wikipedia.org/wiki/%E6%B4%A5%E8%BB%BD%E4%B8%89%E5%91%B3%E7%B7%9A",
+     "https://ja.wikipedia.org/wiki/%E8%99%9A%E7%84%A1%E5%83%A7",
+     "https://ja.wikipedia.org/wiki/%E5%B8%82%E5%8E%9F%E5%AE%8F%E7%A5%90",
+     "https://ja.wikipedia.org/wiki/%E6%B1%A0%E5%A4%9A%E5%AD%9D%E6%98%A5",
+     "https://ja.wikipedia.org/wiki/%E6%9D%91%E5%B2%A1%E5%AE%9F",
+     "https://musicbrainz.org/release-group/42931926-c1d2-471d-b9b7-ca1892b48b4f"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "浅川マキ",
+   "album": "Maki VI",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 2c8a4326-e578-447f-ab0b-11a9ccd04f8a（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「MAKI VI」（⚠ 本卡改成 `Maki VI`，見 risk）、artist-credit「浅川マキ」（2d16719b，Person）、first-release-date 1974-12-20、primary-type Album、**secondary-types 空（⚠ 本卡改判為實況盤）**、轄下 1 個 release。RG tags／genres：blues(1)／blues rock(1)／folk rock(1)／jazz(1)／rock(1)——**五個標籤 count 皆 1、jazz 與非爵士標籤並列**，照第 3752 條第 2 點視為沒有依據。release 端點（inc=media+labels+artist-credits）：a30d8e73（1974-12-20 JP Official 12\" Vinyl 8 軌，label「EXPRESS」catno **ETP-72011**，title「Maki VI」）。Discogs master 1119132（main_release 1042789）；同 catno 另有 releases/33972309。藝人 MBID 2d16719b（Person）。",
+    "rgMbid": "2c8a4326-e578-447f-ab0b-11a9ccd04f8a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2c8a4326-e578-447f-ab0b-11a9ccd04f8a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 232,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=232）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "伴奏欄上站著當時的山下洋輔トリオ，再加一把貝斯。三重奏是 山下洋輔 的鋼琴、坂田明 的中音與單簧管、森山威男 的鼓，多出來的那把貝斯是 稲葉国光。1974 年 9 月 19 日的神田共立講堂 實況，同年 12 月 20 日以 Express ETP-72011 上架。那支三重奏 1974 年首度歐洲巡演，在 Moers 拿到長達一小時的起立鼓掌，隔年年底 森山威男 就退團。八首裡有三首唱的是 Langston Hughes 的詩，日文詞由 斉藤忠利 譯。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1042789",
+     "https://ja.wikipedia.org/wiki/%E6%A3%AE%E5%B1%B1%E5%A8%81%E7%94%B7",
+     "https://en.wikipedia.org/wiki/Langston_Hughes",
+     "https://ja.wikipedia.org/wiki/%E6%96%89%E8%97%A4%E5%BF%A0%E5%88%A9",
+     "https://en.wikipedia.org/wiki/Gin_House_Blues",
+     "https://en.wikipedia.org/wiki/Oscar_Brown_Jr.",
+     "https://ja.wikipedia.org/wiki/%E6%B5%85%E5%B7%9D%E3%83%9E%E3%82%AD",
+     "https://www.discogs.com/master/1119132",
+     "https://musicbrainz.org/release-group/2c8a4326-e578-447f-ab0b-11a9ccd04f8a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "弘田三枝子",
+   "album": "The Nearness of You",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d3843324-f2dd-40d8-95ca-72afed5ecd24（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「The Nearness Of You」、artist-credit「Mieko Hirota」（99938a7f，Person，**MB 實體本名為漢字「弘田三枝子」**）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 1 個 release。RG tags／genres：**easy listening(1)／jazz(1)／pop(1)**——正是第 3752 條點名的那個形狀（jazz 與 easy listening 並列、count 皆 1），**照該條第 2 點視為沒有任何依據**；本卡的曲風完全是靠 Discogs 的 genres／styles 首位與逐軌曲目定的。release 端點（inc=media+labels+artist-credits）：b2374e87（1974 JP Official 12\" Vinyl 10 軌，label「Columbia」catno **JDX-7028**，title「The Nearness Of You」）。Discogs master 3896995（main_release 16155212）。藝人 MBID 99938a7f（Person，池中 0 張）。",
+    "rgMbid": "d3843324-f2dd-40d8-95ca-72afed5ecd24",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/68/9a/2a689a2e-2716-37dd-b8d4-4f1e92e8af00/COKM-46228.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1881860307",
+    "note": "試聽探測釘定的 collectionId 1881860307（jp）：弘田三枝子 — The Nearness of You"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 17,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=17）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十首全是美國標準曲，唱的人十四歲出道時靠的是翻唱流行曲。唱的人是 弘田三枝子：她七歲起每週搭公車去日本ジャズ学校 學英文發音，1961 年頂著「和製 Brenda Lee」的宣傳詞出道。原盤 1974 年 6 月 25 日面市，日本コロムビア 的 JDX-7028，十首的編曲全由 鈴木宏昌 一手做，伴奏欄掛的是廠牌自家的コロムビア・オール・スターズ。第八首由兩首老歌接成一段。收尾的〈Call Me Irresponsible〉1963 年拿下過奧斯卡最佳原創歌曲。",
+    "sourceUrls": [
+     "https://columbia.jp/artist-info/mico/discography/COKM-46228.html",
+     "https://www.discogs.com/release/16155212",
+     "https://en.wikipedia.org/wiki/The_Nearness_of_You",
+     "https://en.wikipedia.org/wiki/Bewitched%2C_Bothered_and_Bewildered",
+     "https://en.wikipedia.org/wiki/Laura_(1945_song)",
+     "https://en.wikipedia.org/wiki/Call_Me_Irresponsible",
+     "https://en.wikipedia.org/wiki/My_Melancholy_Baby",
+     "https://ja.wikipedia.org/wiki/%E5%BC%98%E7%94%B0%E4%B8%89%E6%9E%9D%E5%AD%90",
+     "https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E5%AE%8F%E6%98%8C",
+     "https://musicbrainz.org/release-group/d3843324-f2dd-40d8-95ca-72afed5ecd24"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/05/70/c7057015-5d64-9331-2657-e4511d4fc392/mzaf_4971795204958922766.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1881860307",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tranzam",
+   "album": "Funky Steps",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 04c9cef5-934d-46de-af11-66bce5790d57（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「Funky Steps」、artist-credit「Tranzam」（2765ab11，Group，**MB 實體本名為片假名「トランザム」**）、first-release-date 1974、primary-type Album、secondary-types 空、轄下 1 個 release。RG tags／genres：classical(1)／jazz(1)／jazz-funk(1)——`classical` 指的是曲目來源不是曲風，**jazz 系標籤兩個、非爵士標籤一個且 count 皆 1**，照第 3752 條第 2 點只當排序用。release 端點（inc=media+labels+artist-credits）：f5985a48（1974 JP Official 12\" Vinyl 6 軌，label「Columbia」catno **YQ-7041-N**——⚠ **MB 把 1976 年再發的目錄號填在 1974 這一筆上**，本卡的 `label` 欄照 Discogs 原壓 YQ-7018-N）。Discogs master 831775（main_release 6972461）轄下 4 版：1974 YQ-7018-N（原壓 releases/36835570 與 Promo releases/4186190）、1976 YQ-7041-N（再發）、2023 HMJA191。藝人 MBID 2765ab11。",
+    "rgMbid": "04c9cef5-934d-46de-af11-66bce5790d57",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/04c9cef5-934d-46de-af11-66bce5790d57/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 63,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=63）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "六首曲子的作曲者從 de Falla、Vivaldi 一路排到 Rachmaninoff。六首全是歐陸古典曲目的改編，一首原創曲都沒有。Tranzam 是 1973 年左右成軍的搖滾樂團，團名取自橫貫美洲大陸的鐵路；1974 年 6 月與 7 月他們進了日本コロムビア第 1 スタジオ，同年 12 月由 Columbia 掛上 YQ-7018-N。編制比一支搖滾樂團大得多：管樂編曲兼次中音與長笛的是 村岡建，另外還有一把長號與兩把小號。封套解說出自評論家 植草甚一。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/36835570",
+     "https://en.wikipedia.org/wiki/El_amor_brujo",
+     "https://en.wikipedia.org/wiki/Liebestr%C3%A4ume",
+     "https://en.wikipedia.org/wiki/Symphony_No._6_(Tchaikovsky)",
+     "https://en.wikipedia.org/wiki/Mandolin_Concerto_(Vivaldi)",
+     "https://ja.wikipedia.org/wiki/%E6%A4%8D%E8%8D%89%E7%94%9A%E4%B8%80",
+     "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B6%E3%83%A0%20(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://ja.wikipedia.org/wiki/%E7%9F%B3%E9%96%93%E7%A7%80%E6%A9%9F",
+     "https://www.discogs.com/master/831775",
+     "https://musicbrainz.org/release-group/04c9cef5-934d-46de-af11-66bce5790d57"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/cd/57/8e/cd578e5f-a980-8212-f801-205df4ffb95a/mzaf_1557665646431537158.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1601952265",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "深町純",
+   "album": "Introducing Jun Fukamachi",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 303cb06c-d85c-4a77-8568-b461831a5b63（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「Introducing Jun Fukamachi」、artist-credit「深町純」（5b92cd77，Person）、first-release-date 1975、primary-type Album、secondary-types 空、轄下 2 個 release。RG tags／genres：classical(1)／jazz(1)／jazz-funk(1)——jazz 系兩個、`classical` 指曲目來源，照第 3752 條第 2 點只當排序用。release 端點（inc=media+labels+artist-credits）：a699dcf9（**1975 JP Official 12\" Vinyl 5 軌，label「Toshiba Records」catno LF-91007**）、b5a4ea87（2012-06-11 JP Official CD 5 軌，TOWER RECORDS QIAG-70050）。Discogs master 1363151（main_release 2987476）；同 catno 另有 releases/35190709。藝人 MBID 5b92cd77（Person，池中 0 張）。",
+    "rgMbid": "303cb06c-d85c-4a77-8568-b461831a5b63",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/303cb06c-d85c-4a77-8568-b461831a5b63/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 34,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=34）僅供對照。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "沒有母帶：演奏直接混音、直接刻上漆盤，錯一個音就整面重來。那套工法叫直刻，訊號即時送進刻片機。1975 年 9 月 5 日這張碟問世，東芝的 Toshiba Records LF-91007，封套上掛著「Pro-Use Series」這條系列名。五軌裡最長的〈Bamboo Bong〉有 13 分 49 秒，出自吉他手 大村憲司。兩首古典改編一頭一尾夾住整張碟，開場是 Wagner 的詠嘆調，收尾是 Debussy 的前奏曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2987476",
+     "https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%E3%82%AB%E3%83%83%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0",
+     "https://en.wikipedia.org/wiki/O_du_mein_holder_Abendstern",
+     "https://en.wikipedia.org/wiki/La_fille_aux_cheveux_de_lin",
+     "https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%91%E6%86%B2%E5%8F%B8",
+     "https://ja.wikipedia.org/wiki/%E6%9D%91%E4%B8%8A%E7%A7%80%E4%B8%80",
+     "https://ja.wikipedia.org/wiki/%E6%B7%B1%E7%94%BA%E7%B4%94",
+     "https://www.discogs.com/master/1363151",
+     "https://musicbrainz.org/release-group/303cb06c-d85c-4a77-8568-b461831a5b63"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "渡辺香津美",
+   "album": "Endless Way",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d97c0129-c2bc-42a4-9752-49ea55e02e8d（slice 的 rgMbid，未改釘）。release-group 端點（inc=artist-credits+tags+genres+releases）：title「Endless Way」、artist-credit「Kazumi Watanabe」（9a93b39f，Person，**MB 實體本名為漢字「渡辺香津美」**）、first-release-date 1975-11、primary-type Album、secondary-types 空、轄下 2 個 release。RG tags／genres：jazz(1)／jazz rock(1)／rock(1)——**兩個爵士系標籤，`rock` 與 Discogs 的 genres 一致，沒有 easy listening／kayōkyoku 並列**（第 3752 條第 3 點成立）。release 端點（inc=media+labels+artist-credits）：ac7eba4e（**1975-11 JP Official 12\" Vinyl 4 軌，label「Columbia」catno YQ-7511-N**）、c1d77385（2004-12-22 JP Official CD 4 軌，Jroom Jazz COCB-53292）。Discogs master 472456（main_release 3730884）；同 catno 另有 releases/11707724。藝人 MBID 9a93b39f（Person）。",
+    "rgMbid": "d97c0129-c2bc-42a4-9752-49ea55e02e8d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d97c0129-c2bc-42a4-9752-49ea55e02e8d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 62,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=62）僅供對照。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四首曲子四十一分鐘，全出自同一個二十一歲的人。那個人是 渡辺香津美，1953 年生，四軌裡最長的〈On The Horizon〉有 14 分 15 秒。錄音排在 1975 年 7 月 7、8、10、11 四天，全在コロムビア第 1 スタジオ，同年 11 月的目錄號是 Columbia YQ-7511-N。這是他的第三張作品，也是第一張整張都收原創曲的，核心是 井野信義 的貝斯與 倉田在秀 的鼓。1977 年 11 月它被移到 Better Days 重壓一次。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3730884",
+     "https://columbia.jp/artist-info/watanabekazumi/discography/COCB-54209.html",
+     "https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E9%A6%99%E6%B4%A5%E7%BE%8E",
+     "https://ja.wikipedia.org/wiki/%E4%BA%95%E9%87%8E%E4%BF%A1%E7%BE%A9",
+     "https://ja.wikipedia.org/wiki/%E5%9C%9F%E5%B2%90%E8%8B%B1%E5%8F%B2",
+     "https://ja.wikipedia.org/wiki/%E5%90%91%E4%BA%95%E6%BB%8B%E6%98%A5",
+     "https://www.discogs.com/release/3886414",
+     "https://www.discogs.com/master/472456",
+     "https://ja.wikipedia.org/wiki/4%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E3%82%B9%E3%83%86%E3%83%AC%E3%82%AA",
+     "https://musicbrainz.org/release-group/d97c0129-c2bc-42a4-9752-49ea55e02e8d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2d/ba/42/2dba4220-2722-6207-d5b9-67d3c372acb4/mzaf_2645803446062410713.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "388052750",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

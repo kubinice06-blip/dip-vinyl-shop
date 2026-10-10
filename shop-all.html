@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>所有唱片 · 店內挖寶 · dip</title>
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="店內挖寶・所有唱片">
+  <meta property="og:description" content="店裡現在架上的每一張，攤開來慢慢看。">
+  <meta property="og:url" content="https://dipvinyl.tw/shop-all.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #111; --gray: #888; --line: #ddd; --bg: #fff; --mono: 'Space Mono', monospace;
+      --silver-shine: linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#ffffff 47%,#ffffff 50%,#ffffff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
+      --oil-shine: linear-gradient(115deg,#241b3a 0%,#241b3a 30%,#3a2a5d 38%,#2bb6a3 44%,#c84ad6 50%,#2b6fd6 56%,#3a2a5d 62%,#241b3a 70%,#241b3a 100%);
+      --crimson-shine: linear-gradient(115deg,#4a0a13 0%,#4a0a13 36%,#7a1020 41%,#c11628 47%,#ff3048 50%,#c11628 53%,#7a1020 59%,#4a0a13 64%,#4a0a13 100%);
+    }
+    @keyframes silverShimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+    body { background: var(--bg); color: var(--black); font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; min-height: 100dvh; display: flex; flex-direction: column; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); padding: 0 20px; height: 40px; flex-shrink: 0; }
+    .topbar a { color: var(--black); text-decoration: none; font-size: 11px; letter-spacing: 0.08em; }
+    .topbar a:hover { color: var(--gray); }
+    .hero { text-align: center; padding: 34px 20px 20px; }
+    .hero-title { font-size: 20px; font-weight: 700; letter-spacing: 0.12em; }
+    .hero-sub { margin-top: 10px; font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.7; }
+
+    /* 曲風篩選＋排序 */
+    .controls { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .chips { display: flex; gap: 6px; padding: 10px 20px; overflow-x: auto; scrollbar-width: thin; }
+    .chip { flex: 0 0 auto; border: 1px solid var(--line); background: #fff; color: #111; font-family: var(--mono); font-size: 10px; padding: 6px 10px; cursor: pointer; letter-spacing: 0.04em; }
+    .chip.on { background: #111; color: #fff; border-color: #111; }
+    .chip i { font-style: normal; color: var(--gray); margin-left: 4px; }
+    .chip.on i { color: #bbb; }
+    .sortbar { display: flex; justify-content: space-between; align-items: center; padding: 0 20px 10px; }
+    .count { color: var(--gray); font-size: 10px; }
+
+    /* 卡牌攤開：沿用「我的唱片櫃」的卡片樣式 */
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border-bottom: 1px solid var(--line); }
+    @media (min-width: 640px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (min-width: 960px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+    @media (min-width: 1280px) { .grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+    .rc { position: relative; background: #fff; padding: 14px; cursor: pointer; text-align: left; font-family: var(--mono); border: none; border-radius: 0; color: var(--black); display: block; width: 100%; }
+    .rc:focus-visible { outline: 2px solid #111; outline-offset: -4px; }
+    .rc-thumb { position: relative; aspect-ratio: 1; background: #f0f0f0; overflow: hidden; margin-bottom: 10px; }
+    .rc-thumb img, .cd-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .25s; }
+    @media (hover: hover) { .rc:hover .rc-thumb img { transform: scale(1.04); } }
+    .nocover { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 12px; text-align: center; background: #111; color: #fff; }
+    .nocover b { font-size: 13px; line-height: 1.4; letter-spacing: 0.04em; }
+    .nocover span { font-size: 9px; color: #aaa; }
+    .rc-rarity { font-size: 9px; letter-spacing: 0.12em; margin-bottom: 5px; font-weight: 700; min-height: 13px; }
+    .rc-artist { font-size: 11px; color: var(--gray); line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .rc-album { font-size: 12px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .rc-price { margin-top: 6px; font-size: 10px; color: var(--gray); }
+
+    .rarity-legendary .rc-rarity, .cd-rarity.rarity-legendary { color: #d4791a; }
+    .rarity-epic .rc-rarity, .cd-rarity.rarity-epic { color: #7a3fb0; }
+    .rarity-uncommon .rc-rarity, .cd-rarity.rarity-uncommon { color: #259643; }
+    .rarity-rare .rc-rarity, .cd-rarity.rarity-rare { color: #3a7bd5; }
+    .rarity-common .rc-rarity, .cd-rarity.rarity-common { color: var(--gray); }
+    .rc.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
+    .rc.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
+    .rc.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
+    .rc.rarity-rare { box-shadow: inset 0 0 0 2px #3a7bd5; }
+    .rc.rarity-hall::after, .rc.rarity-pearl::after, .rc.rarity-heresy::after { content: ''; position: absolute; inset: 0; pointer-events: none; padding: 4px; background-size: 200% 100%; animation: silverShimmer 7.8s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+    .rc.rarity-hall::after { background-image: var(--silver-shine); }
+    .rc.rarity-pearl::after { background-image: var(--oil-shine); }
+    .rc.rarity-heresy::after { background-image: var(--crimson-shine); }
+    .rarity-hall .rc-rarity, .cd-rarity.rarity-hall { background: var(--silver-shine); }
+    .rarity-pearl .rc-rarity, .cd-rarity.rarity-pearl { background: var(--oil-shine); }
+    .rarity-heresy .rc-rarity, .cd-rarity.rarity-heresy { background: var(--crimson-shine); }
+    .rarity-hall .rc-rarity, .rarity-pearl .rc-rarity, .rarity-heresy .rc-rarity,
+    .cd-rarity.rarity-hall, .cd-rarity.rarity-pearl, .cd-rarity.rarity-heresy { background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: silverShimmer 7.8s linear infinite; }
+
+    /* 卡片詳情 */
+    .overlay { position: fixed; inset: 0; z-index: 400; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
+    .overlay.open { display: flex; }
+    .cd-body { background: #fff; width: 100%; max-width: 400px; padding: 24px 22px 26px; position: relative; text-align: center; }
+    .cd-close { position: absolute; top: 8px; right: 10px; background: none; border: none; font-size: 18px; cursor: pointer; color: var(--gray); line-height: 1; padding: 6px; font-family: var(--mono); }
+    .cd-rarity { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; margin-bottom: 14px; min-height: 16px; }
+    .cd-cover { position: relative; width: 100%; aspect-ratio: 1; overflow: hidden; margin-bottom: 14px; background: #f0f0f0; }
+    .cd-artist { font-size: 12px; color: var(--gray); }
+    .cd-album { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
+    .cd-meta { font-size: 11px; color: var(--gray); letter-spacing: 0.1em; }
+    .cd-stars { display: flex; justify-content: center; gap: 14px; margin: 14px 0 2px; font-size: 10px; color: var(--gray); }
+    .cd-stars b { display: block; color: #111; font-weight: 400; font-size: 12px; letter-spacing: 0.04em; margin-top: 2px; }
+    .cd-stars b s { text-decoration: none; color: #ccc; }
+    .cd-desc { font-size: 12px; line-height: 1.95; text-align: left; padding: 14px; border: 1px solid var(--line); margin: 14px 0 14px; white-space: pre-wrap; }
+    .cd-desc.empty { color: var(--gray); text-align: center; }
+    .cd-shop { display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid #111; padding-top: 12px; font-size: 11px; }
+    .cd-shop .price { font-size: 15px; font-weight: 700; }
+    /* 四種串流：樣式與做法同 index.html 的 streamingBtnsHtml */
+    .streaming-btns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 16px; }
+    .streaming-btn { display: flex; align-items: center; justify-content: center; text-align: center; padding: 11px 6px; border: 1px solid var(--black); text-decoration: none; font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; color: var(--black); transition: all 0.15s; cursor: pointer; background: none; }
+    .streaming-btn:hover { background: var(--black); color: #fff; }
+    .streaming-btn[disabled] { border-color: var(--line); color: var(--gray); opacity: 0.5; cursor: default; pointer-events: none; }
+
+    .state { padding: 60px 20px; text-align: center; color: var(--gray); line-height: 1.8; }
+    .foot { margin-top: auto; padding: 22px 20px 30px; text-align: center; font-size: 9px; color: var(--gray); letter-spacing: 0.1em; }
+    .foot a { color: var(--gray); }
+  </style>
+</head>
+<body>
+  <!-- 店內挖寶・所有唱片（2026-10-08）：店裡架上每一張攤成卡牌，點開看門市版介紹。
+       在售清單＝Firestore settings/shopInventory（讀不到退 data/shop/inventory.json）；
+       介紹＝data/shop/descs.json，店主在後台改過的（settings/shopDescs.byKey）優先；
+       封面＝card_catalog.coverUrl；卡池還沒有的待上架唱片讀 data/shop/pending-meta.json。 -->
+  <div class="topbar"><a href="shop.html">↩ 店內挖寶</a><a href="index.html">dip</a></div>
+  <div class="hero">
+    <div class="hero-title">所有唱片</div>
+    <div class="hero-sub">店裡架上的每一張，攤開來慢慢看。<br>點一張看介紹。</div>
+  </div>
+  <div class="controls">
+    <div class="chips" id="chips"></div>
+    <div class="sortbar">
+      <span class="count" id="count"></span>
+    </div>
+  </div>
+  <div id="grid" class="grid"></div>
+  <div id="state" class="state">載入中…</div>
+  <div class="foot"><a href="shop.html">← 回店內挖寶</a></div>
+
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true">
+    <div class="cd-body" id="cd"></div>
+  </div>
+
+<script src="dip-player.js?v=44"></script>
+<script>
+(async () => {
+  const FS = 'https://firestore.googleapis.com/v1/projects/price-manager-e8846/databases/(default)/documents';
+  const KEY = 'AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg';   // 網頁端公開 key（同 index.html）
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  // 卡池鍵正規化：與 scripts/sync-shop-inventory.mjs、index.html 的 shopKeyOf 相同
+  const norm = v => String(v || '').toLowerCase().replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
+  const keyOf = (a, b) => norm(a) + '|' + norm(b);
+  const catalogId = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim();
+
+  // Firestore REST 的值 → 一般 JS 值
+  const fv = v => {
+    if (!v) return null;
+    if ('stringValue' in v) return v.stringValue;
+    if ('integerValue' in v) return Number(v.integerValue);
+    if ('doubleValue' in v) return v.doubleValue;
+    if ('booleanValue' in v) return v.booleanValue;
+    if ('nullValue' in v) return null;
+    if ('arrayValue' in v) return (v.arrayValue.values || []).map(fv);
+    if ('mapValue' in v) return fmap(v.mapValue.fields);
+    return null;
+  };
+  const fmap = f => Object.fromEntries(Object.entries(f || {}).map(([k, v]) => [k, fv(v)]));
+  const getDoc = path => fetch(`${FS}/${path}?key=${KEY}`).then(r => r.ok ? r.json() : null).then(j => j ? fmap(j.fields) : null).catch(() => null);
+  const getJson = url => fetch(url).then(r => r.ok ? r.json() : null).catch(() => null);
+
+  const [invDoc, descs, descEdits, seed, pend] = await Promise.all([
+    getDoc('settings/shopInventory'),
+    getJson('data/shop/descs.json'), getDoc('settings/shopDescs'),
+    getJson('seed_cards.json'), getJson('data/shop/pending-meta.json'),
+  ]);
+  let items = invDoc && Array.isArray(invDoc.items) ? invDoc.items : null;
+  if (!items) items = (await getJson('data/shop/inventory.json'))?.items || [];
+  items = items.filter(it => it.status === 'in_stock' || it.status === 'pending_card');
+
+  const seedBy = new Map((seed || []).map(r => [keyOf(r[0], r[1]), r]));
+  const defById = new Map(), defByKey = new Map();
+  for (const d of descs?.items || []) { defByKey.set(d.key, d); for (const id of d.ids || []) defById.set(id, d); }
+  const edits = descEdits?.byKey || {};
+  const meta = pend?.items || {};
+
+  const LABEL = { hall: '殿堂', pearl: '流亡', heresy: '異端', legendary: '傳奇', epic: '史詩', uncommon: '獨特', rare: '稀有', common: '普通' };
+  const rarityOf = row => {
+    if (!row) return null;
+    if (LABEL[row[8]] && ['hall', 'pearl', 'heresy'].includes(row[8])) return row[8];
+    const c = Number(row[2]) || 0, o = Number(row[3]) || 0, a = Number(row[4]) || 0;
+    if (!o) return null;
+    const s = c + a + (o >= 5 ? 1 : 0);
+    return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common';
+  };
+  const ZH = { Jazz: '爵士', Soul: '靈魂', 'R&B': '節奏藍調', 'Hip-Hop': '嘻哈', Rock: '搖滾', Folk: '民謠', 'City Pop': '城市流行', Pop: '流行', Electronic: '電子', Soundtrack: '原聲帶', Classical: '古典', Reggae: '雷鬼' };
+
+  const recs = items.map((it, i) => {
+    const def = defById.get(it.id) || (it.cardKey ? defByKey.get(it.cardKey) : null);
+    const edit = def ? edits[def.key] : null;
+    const row = it.artist ? seedBy.get(it.cardKey || keyOf(it.artist, it.album)) : null;
+    const m = meta[it.id] || {};
+    const genres = (it.genres && it.genres.length) ? it.genres : (m.genres || []);
+    return {
+      i, id: it.id,
+      artist: it.artist || def?.artist || it.listedArtist || '',
+      album: it.album || def?.album || it.listedTitle || '',
+      year: (row && Number(row[6])) || m.year || null,
+      genres,
+      // 卡池還沒有的待上架唱片：三軸讀 pending-meta 的店內暫定值（同一套稀有度公式）
+      rarity: rarityOf(row || (m.axes ? [0, 0, m.axes.classic, m.axes.obscurity, m.axes.accessibility] : null)),
+      axes: row ? [row[2], row[3], row[4]].map(Number) : m.axes ? [m.axes.classic, m.axes.obscurity, m.axes.accessibility] : null,
+      text: (edit?.text || def?.text || '').trim(),
+      price: it.priceNT || null, condition: it.condition || null, pressingYear: it.pressingYear || null,
+      firstSeen: it.firstSeen || '',
+      cover: m.cover || null,
+      inPool: !!row,
+    };
+  });
+
+  // 封面：卡池裡的讀 card_catalog（一次 batchGet），沒有的退待上架檔
+  const want = recs.filter(r => r.inPool);
+  for (let k = 0; k < want.length; k += 100) {
+    const chunk = want.slice(k, k + 100);
+    const names = chunk.map(r => `projects/price-manager-e8846/databases/(default)/documents/card_catalog/${catalogId(r.artist, r.album)}`);
+    try {
+      const res = await fetch(`${FS}:batchGet?key=${KEY}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ documents: names, mask: { fieldPaths: ['coverUrl'] } }) }).then(r => r.json());
+      const byName = new Map(res.filter(x => x.found).map(x => [x.found.name, fmap(x.found.fields).coverUrl]));
+      chunk.forEach((r, j) => { const u = byName.get(names[j]); if (u) r.cover = u; });
+    } catch (e) {}
+  }
+
+  // 店主 2026-10-09：排序改成每次打開都亂數
+  for (let k = recs.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [recs[k], recs[j]] = [recs[j], recs[k]]; }
+
+  // ── 畫面 ──
+  const grid = document.getElementById('grid'), state = document.getElementById('state');
+  const chips = document.getElementById('chips'), countEl = document.getElementById('count');
+  let genre = '', view = [];
+  const gcount = {};
+  recs.forEach(r => r.genres.forEach(g => gcount[g] = (gcount[g] || 0) + 1));
+  const glist = Object.keys(gcount).sort((a, b) => gcount[b] - gcount[a]);
+  chips.innerHTML = [`<button class="chip on" data-g="">全部<i>${recs.length}</i></button>`]
+    .concat(glist.map(g => `<button class="chip" data-g="${esc(g)}">${esc(ZH[g] || g)}<i>${gcount[g]}</i></button>`)).join('');
+  chips.addEventListener('click', e => {
+    const b = e.target.closest('.chip'); if (!b) return;
+    genre = b.dataset.g; chips.querySelectorAll('.chip').forEach(x => x.classList.toggle('on', x === b)); render();
+  });
+
+  // 封面底下永遠墊一張文字卡；圖載不到就隱藏 img，露出文字卡
+  // 格子裡用 CAA 的 500px 縮圖（原圖常是數 MB 的掃描檔），詳情才載原圖
+  const thumbOf = u => /coverartarchive\.org\/.*\/front$/.test(u) ? u + '-500' : u;
+  const coverHtml = (r, big) => `<div class="nocover"><b>${esc(r.album)}</b><span>${esc(r.artist)}</span></div>`
+    + (r.cover ? `<img src="${esc(big ? r.cover : thumbOf(r.cover))}" alt="${esc(r.artist)}《${esc(r.album)}》封面" data-full="${esc(r.cover)}" loading="lazy" referrerpolicy="no-referrer" onerror="if(this.src!==this.dataset.full){this.src=this.dataset.full}else{this.remove()}">` : '');
+  // 四種串流（規則同 index.html 的 streamingBtnsHtml）：
+  //   Apple Music／Spotify／Bandcamp 查到專輯直連才啟用，查不到維持灰色（店主 2026-10-09）；
+  //   Apple 的直連由 dip-player.js 依試聽索引自動換上（data-apple-strict）；YT Music 沒直連就給搜尋連結。
+  const WORKER = 'https://dip-vinyl-worker.kubinice06.workers.dev';
+  const streamingHtml = r => {
+    const q = encodeURIComponent(`${r.artist} ${r.album}`.trim());
+    return '<div class="streaming-btns">'
+      + `<a class="streaming-btn" data-platform="apple" data-apple-strict data-apple-fallback="https://music.apple.com/tw/search?term=${q}" data-apple-artist="${esc(r.artist)}" data-apple-album="${esc(r.album)}" target="_blank" rel="noopener" disabled>Apple Music</a>`
+      + `<a class="streaming-btn" data-platform="spotify" disabled>Spotify</a>`
+      + `<a class="streaming-btn" data-platform="yt" href="https://music.youtube.com/search?q=${q}" target="_blank" rel="noopener">YT Music</a>`
+      + `<a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>`
+      + '</div>';
+  };
+  const linkCache = new Map();
+  const getJ = (path, r) => fetch(`${WORKER}/${path}?artist=${encodeURIComponent(r.artist)}&album=${encodeURIComponent(r.album)}`, { signal: AbortSignal.timeout(9000) }).then(x => x.ok ? x.json() : {}).catch(() => ({}));
+  async function resolveLinks(r, at) {
+    const k = r.artist + '|' + r.album;
+    if (!linkCache.has(k)) linkCache.set(k, Promise.all([getJ('spotify-search', r), getJ('yt-music-link', r), getJ('bandcamp-search', r)])
+      .then(async ([sp, yt, bc]) => ({ spotify: sp?.spotifyUrl || (await getJ('spotify-album-link', r))?.url, yt: yt?.url, bandcamp: bc?.bandcampUrl })));
+    const l = await linkCache.get(k);
+    if (cur !== at || !overlay.classList.contains('open')) return;   // 使用者已關掉或換了一張
+    const set = (p, u) => { const a = cd.querySelector(`.streaming-btn[data-platform="${p}"]`); if (a && u) { a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.removeAttribute('disabled'); } };
+    set('spotify', l.spotify); set('yt', l.yt); set('bandcamp', l.bandcamp);
+  }
+  const priceTxt = r => r.price ? `NT$ ${Number(r.price).toLocaleString('en-US')}` : '';
+
+  function render() {
+    view = recs.filter(r => !genre || r.genres.includes(genre));   // recs 載入時已洗牌，篩選沿用同一個順序
+    countEl.textContent = `${view.length} 張`;
+    grid.innerHTML = view.map((r, n) => `
+      <button class="rc${r.rarity ? ' rarity-' + r.rarity : ''}" data-n="${n}">
+        <div class="rc-thumb">${coverHtml(r)}</div>
+        <div class="rc-rarity">${r.rarity ? LABEL[r.rarity] : ''}</div>
+        <div class="rc-artist">${esc(r.artist)}</div>
+        <div class="rc-album">${esc(r.album)}</div>
+        ${r.price ? `<div class="rc-price">${priceTxt(r)}</div>` : ''}
+      </button>`).join('');
+    state.style.display = view.length ? 'none' : '';
+    if (!view.length) state.textContent = recs.length ? '這個類別目前沒有唱片。' : '店內清單暫時讀不到，請稍後再試。';
+  }
+
+  // 詳情
+  const overlay = document.getElementById('overlay'), cd = document.getElementById('cd');
+  let cur = -1, lastFocus = null;
+  const stars = n => '★'.repeat(n) + `<s>${'★'.repeat(Math.max(0, 5 - n))}</s>`;
+  function open(n) {
+    cur = n;
+    const r = view[cur];
+    const metaLine = [r.year, (r.genres || []).map(g => ZH[g] || g).join('・')].filter(Boolean).join('　');
+    const shopSub = [r.pressingYear ? `${r.pressingYear} 年壓片` : '', r.condition ? `品相 ${r.condition}` : ''].filter(Boolean).join('　');
+    cd.innerHTML = `
+      <button class="cd-close" aria-label="關閉">✕</button>
+      <div class="cd-rarity${r.rarity ? ' rarity-' + r.rarity : ''}">${r.rarity ? LABEL[r.rarity] : ''}</div>
+      <div class="cd-cover">${coverHtml(r, true)}</div>
+      <div class="cd-artist">${esc(r.artist)}</div>
+      <div class="cd-album">${esc(r.album)}</div>
+      <div class="cd-meta">${esc(metaLine)}</div>
+      ${r.axes ? `<div class="cd-stars"><div>經典度<b>${stars(r.axes[0])}</b></div><div>冷門度<b>${stars(r.axes[1])}</b></div><div>硬蕊度<b>${stars(r.axes[2])}</b></div></div>` : ''}
+      <div class="cd-desc${r.text ? '' : ' empty'}">${r.text ? esc(r.text) : '介紹準備中。'}</div>
+      <div class="cd-shop"><span>${esc(shopSub)}</span><span class="price">${priceTxt(r) || '價格請洽店員'}</span></div>
+      ${streamingHtml(r)}`;
+    if (!overlay.classList.contains('open')) { lastFocus = document.activeElement; overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    overlay.scrollTop = 0;
+    cd.querySelector('.cd-close').focus();
+    resolveLinks(r, cur);
+  }
+  function close() { overlay.classList.remove('open'); document.body.style.overflow = ''; lastFocus?.focus?.(); }
+  grid.addEventListener('click', e => { const b = e.target.closest('.rc'); if (b) open(Number(b.dataset.n)); });
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay || e.target.closest('.cd-close')) return close();
+  });
+  document.addEventListener('keydown', e => {
+    if (!overlay.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

@@ -2,7 +2,8 @@
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
   const SPOTIFY_API = 'https://open.spotify.com/embed/iframe-api/v1';
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
-  const APPLE_AUDIO_MAP_URL = 'data/apple-audio-runtime-v1.json';
+  // 換內容就換 ?v：載入用 cache:'force-cache'，不換網址的話舊索引會一直被沿用。
+  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=2';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
@@ -784,6 +785,66 @@
     return appleAudioMapPromise;
   }
 
+  // 串流按鈕的 Apple Music 直連（2026-09-28）：搜尋連結 music.apple.com/search?term=…
+  // 在手機上會被 Apple Music App 以 Universal Link 接走，而 App 會丟掉搜尋詞，
+  // 使用者只看到 App 首頁。試聽索引裡已有人工覆核過的 storefront＋collectionId，
+  // 直接組專輯頁；索引沒收的卡維持原本的搜尋連結。
+  function appleAlbumUrl(artist, album) {
+    const hit = appleAudioMap?.entries?.[appleAudioKey(artist, album)];
+    if (!Array.isArray(hit)) return '';
+    // 第 4 欄是正式網址的名稱段。不能省略：/album/<id> 短網址在網頁版靠 301 補上名稱段，
+    // 但 iOS Apple Music App 接手 Universal Link 時不跟轉址，只會停在首頁（2026-10-01 店主實測）。
+    const [storefront, collectionId, , slug] = hit;
+    if (!/^[A-Z]{2}$/.test(String(storefront || '')) || !/^\d+$/.test(String(collectionId || '')) || !/^[^/?#\s]+$/.test(String(slug || ''))) return '';
+    return `https://music.apple.com/${String(storefront).toLowerCase()}/album/${slug}/${collectionId}`;
+  }
+
+  // 頁面只要在 Apple Music 按鈕帶上 data-apple-artist／data-apple-album，
+  // 渲染後就會被自動換成專輯直連；不必改各處 innerHTML 的時序。
+  //
+  // 帶 data-apple-strict 的按鈕（卡池牌的串流列，店主 2026-10-09：「沒有的話也要顯示灰色」）
+  // 一開始是灰色、沒有 href：索引查得到才啟用成專輯直連，查不到維持灰色；
+  // 索引本身載不到（離線、網路錯誤）就退回 data-apple-fallback 的搜尋連結，不讓按鈕無端變灰。
+  function upgradeAppleLinks(scope) {
+    if (!scope?.querySelectorAll) return;
+    const links = [...scope.querySelectorAll('a[data-apple-artist]')];
+    if (scope.matches?.('a[data-apple-artist]')) links.push(scope);
+    if (!links.length) return;
+    loadAppleAudioMap().then(map => links.forEach(link => {
+      const url = appleAlbumUrl(link.dataset.appleArtist, link.dataset.appleAlbum);
+      const strict = link.hasAttribute('data-apple-strict');
+      if (url) {
+        if (link.getAttribute('href') !== url) link.setAttribute('href', url);
+        if (strict) link.removeAttribute('disabled');
+      } else if (strict) {
+        if (map) { link.removeAttribute('href'); link.setAttribute('disabled', ''); }
+        else if (link.dataset.appleFallback) { link.setAttribute('href', link.dataset.appleFallback); link.removeAttribute('disabled'); }
+      }
+    }));
+  }
+
+  try {
+    new MutationObserver(records => records.forEach(record => record.addedNodes.forEach(node => {
+      if (node.nodeType === 1) upgradeAppleLinks(node);
+    }))).observe(document.documentElement, { childList:true, subtree:true });
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => upgradeAppleLinks(document));
+    else upgradeAppleLinks(document);
+  } catch (_) {}
+
+  // 索引（2.7MB）還沒載完就被點到時，按鈕仍是搜尋連結；這時攔下點擊，等索引最多 2.5 秒，
+  // 查得到專輯就以同分頁導向（Universal Link 照樣會叫起 App，也不會被彈窗攔截擋掉）。
+  document.addEventListener('click', event => {
+    const link = event.target?.closest?.('a[data-apple-artist]');
+    if (!link || appleAudioMap || event.defaultPrevented || event.button > 0 || event.metaKey || event.ctrlKey || event.shiftKey) return;
+    event.preventDefault();
+    const fallback = link.href;
+    withTimeout(loadAppleAudioMap(), 2500).then(() => {
+      const url = appleAlbumUrl(link.dataset.appleArtist, link.dataset.appleAlbum);
+      if (url) link.setAttribute('href', url);
+      window.location.href = url || fallback;
+    }, () => { window.location.href = fallback; });
+  }, true);
+
   async function mappedItunesPreview(artist, album) {
     // 索引尚在背景載入時只等短時間；離線或首次快取失敗仍可走既有搜尋備援。
     const map = await withTimeout(loadAppleAudioMap(), 1200);
@@ -1449,7 +1510,7 @@
   }
 
   window.DipPlayer = {
-    mount, unlock, prefetch, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState,
+    mount, unlock, prefetch, appleAlbumUrl, upgradeAppleLinks, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState,
     hasAutoplayConsent, grantAutoplayConsent,
     autoplayPreference, setAutoplayPreference, onAutoplayRevoked, releaseAudio, showHint, createToggle
   };

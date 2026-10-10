@@ -1,0 +1,2429 @@
+{
+ "schemaVersion": 1,
+ "batch": "c150-20261004",
+ "albums": [
+  {
+   "artist": "John Scofield",
+   "album": "Time on My Hands",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1eef32b0-e4a0-3e5d-96fb-d626fc946e0b。release-group 端點（fmt=json&inc=artist-credits+releases+tags）：title「Time on My Hands」、artist-credit「John Scofield」（cbfd7f01 Person）、first-release-date **1990-04-03**、primary-type Album、secondary-types **空**、tags jazz:3／post-bop:1，轄下 3 個 release。release 端點（inc=media+labels+recordings+artist-credits&limit=100）：91736cd1（1990-04-03 US Official CD 11 軌，**無 label-info**）、a6034dc6（1990 國別空 CD 11 軌，Blue Note CDP 7 92894 2，bc 077779289424）、51569821（2015-10-23 XE 12\" Vinyl **8 軌**，Blue Note 006602347347602，bc 602547347602，75th Anniversary Vinyl Reissue）。CD 十一軌：Wabash III／Since You Asked／So Sue Me／Let's Say We Did／Flower Power／Stranger To The Light／Nocturnal Mission／Farmacology／Time And Tide／Be Hear Now／Fat Lip（後三軌為 CD bonus）。錄音 1989-11-19～21 Power Station, NYC；混音 1989-12-09～10 同地；班底 Scofield g、Joe Lovano ts、Charlie Haden b、Jack DeJohnette d；製作 John Scofield ＋ Peter Erskine；母帶 Bob Ludwig（Discogs 1953986）。紙本：Billboard 1990-04-21 p88 評介、**1990-04-28 p41 新片欄（B2-92894／B4-92894）**、Top Jazz Albums 1990-05-12 NEW／1990-06-23 No.1（3 週）／1990-07-07 仍在 No.1；Cash Box 1990-04-28 p9 評介、1990-05-19 p12 爵士榜 DEBUT。CAA release-group 端點：1 圖、front=true、來源 release 91736cd1。Apple us search：724662121（11 軌，℗ 1990 Blue Note Records）。",
+    "rgMbid": "1eef32b0-e4a0-3e5d-96fb-d626fc946e0b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1eef32b0-e4a0-3e5d-96fb-d626fc946e0b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12011,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "黑膠與 CD 同日上市，內容卻差了三首。1989 年 11 月 19 到 21 日在紐約 Power Station 三天錄完。四重奏是 Joe Lovano 的次中音、Charlie Haden 的貝斯與 Jack DeJohnette 的鼓，十一首全是 Scofield 自己寫的。黑膠 B1-92894 收八軌，另三首只在 CD 上。1990 年出版，5 月進 Billboard 爵士榜、6 月 23 日登頂並蟬聯三週，製作是 Peter Erskine 與他本人。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1eef32b0-e4a0-3e5d-96fb-d626fc946e0b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1953986",
+     "https://api.discogs.com/masters/186031/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-04-21.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-04-28.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-05-26.pdf",
+     "https://itunes.apple.com/lookup?id=724662121&country=us&entity=song&limit=300",
+     "https://musicbrainz.org/release-group/1eef32b0-e4a0-3e5d-96fb-d626fc946e0b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/23/89/4b/23894b1b-5a6a-419d-0916-fad42a9a1475/mzaf_3979168715690476429.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724662121",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Renee Rosnes",
+   "album": "Renee Rosnes",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group f953a640-dd41-4f8c-9715-eac61f19f1e9。release-group 端點：title「Renee Rosnes」、artist-credit「Renee Rosnes」（bff6007a Person）、first-release-date **1990**、primary-type Album、secondary-types 空、tags jazz:1，轄下 1 個 release。release 端點：2b626ba1（1990 US Official CD 8 軌，Blue Note CDP 7 93561 2，bc 077779356126）。八軌：The Storyteller／Playground for the Birds／Bright Mississippi／Diana／I.A. Blues／Punjab／Everything I Love／Fleur-de-lis。錄音：Van Gelder Studio, Englewood Cliffs（1–3、5–8 軌）＋Jazzhus Montmartre, Copenhagen 1988-04-18 現場直錄 DAT（第 4 軌〈Diana〉）；班底 Rosnes p/syn、Wayne Shorter ss、Branford Marsalis ss/ts、Ralph Bowen ts/ss、Herbie Hancock p、Ron Carter b、Lewis Nash d；製作 Renee Rosnes ＋ Don Sickler；錄音師 Rudy Van Gelder；內頁 Michael Cuscuna（Discogs 8439349）。紙本：**Billboard 1990-02-03 p90 新片欄（B1-93561／B4-93561）**、1990-02-17 p86 評介（「Intriguing debut from 27-year-old Canadian pianist/composer」，點名 Wayne Shorter）、Cash Box 1990-02-10 p12 評介；Billboard 1990-06-30 p87 與 1990-03-10 p86 另有兩則側人／新人報導。CAA：1 圖、front=true、來源 2b626ba1。Apple us search：0 筆本張（五筆皆他碟）。",
+    "selfTitledVerified": true,
+    "rgMbid": "f953a640-dd41-4f8c-9715-eac61f19f1e9",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f953a640-dd41-4f8c-9715-eac61f19f1e9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 42,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=42，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "八軌裡有一軌的鋼琴換成 Herbie Hancock，她改彈合成器。三場錄音橫跨十個月：1988 年 4 月 18 日在哥本哈根 Montmartre 錄進 DAT，另兩場是同年 12 月 11 日與 1989 年 2 月 4 日的 Van Gelder 棚。節奏組是 Ron Carter 的貝斯與 Lewis Nash 的鼓，管樂逐軌換人，現場那一軌的高音薩克斯風是 Wayne Shorter。1990 年出版，另有 B1-93561 黑膠，製作人 Don Sickler。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=f953a640-dd41-4f8c-9715-eac61f19f1e9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/8439349",
+     "https://www.jazzdisco.org/renee-rosnes/catalog/",
+     "https://api.discogs.com/releases/13200327",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-02-03.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-02-17.pdf",
+     "https://itunes.apple.com/lookup?id=3220381&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/f953a640-dd41-4f8c-9715-eac61f19f1e9"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Benny Green",
+   "album": "Lineage",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9db3dcff-9b8b-30a4-85ad-e0aa929d27ff。release-group 端點：title「Lineage」、artist-credit「Benny Green」（28b5fcc9 Person）、first-release-date **1990-05-15**、primary-type Album、secondary-types 空、tags jazz:1／post-bop:1／swing:1，轄下 1 個 release。release 端點：c133774f（1990-05-15 US Official CD 12 軌，Blue Note CDP 7 93670 2，bc 077779367023）。十二軌（MB 形）：Dat Dere／I'll Wait and Pray／Phoebe's Samba／See See Rider／Debo's Waltz／Ask Me Now／Crazy／Lil' Darlin'／**Repetition**／If Ever I Would Leave You／Trust／**Grass Enclosure**；**Discogs 原壓 1915622 第 9／12 軌作 `Levitation`／`Glass Enclosure`，以 Discogs 為準**。錄音 1990-01-30～02-01、混音 1990-02-20，A&R Recording Studio, NYC；班底 Benny Green p、Ray Drummond b、Victor Lewis d；製作 Matt Pierson（Blue Note/Capitol Jazz 行銷兼 A&R 總監，見 Billboard 1990-07-07 p59 專訪）；錄音師 Jim Anderson。紙本：**Billboard 1990-06-23 p37 新片欄（B2-93670／B4-93670）**；1990-01-27 p94 更正欄（消歧＋「非生涯首張」）；1990-06-30 p25／p87 與 1990-10-27 p33 三則新人報導；**兩刊皆無本盤評介與榜位**。CAA：2 圖、front=true、來源 c133774f。Apple us search：1460177070（12 軌）。",
+    "rgMbid": "9db3dcff-9b8b-30a4-85ad-e0aa929d27ff",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9db3dcff-9b8b-30a4-85ad-e0aa929d27ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 262,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=262，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首裡藏著兩首 Bud Powell：一首他寫的，一首寫來致敬他的。1990 年 1 月 30 日到 2 月 1 日在紐約 A&R Recording 錄了三天。三重奏是 Ray Drummond 的貝斯與 Victor Lewis 的鼓，全盤沒有管樂。〈Dat Dere〉開場，Powell 的〈Glass Enclosure〉收尾，他自己的〈Levitation〉排在第九軌。這是他在這家廠牌的第一張，1990 年出版，製作人 Matt Pierson。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9db3dcff-9b8b-30a4-85ad-e0aa929d27ff&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1915622",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-06-23.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-01-27.pdf",
+     "https://api.discogs.com/masters/1165516/versions",
+     "https://musicbrainz.org/release-group/9db3dcff-9b8b-30a4-85ad-e0aa929d27ff"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fb/32/43/fb324317-742e-4577-f575-38edd6b88214/mzaf_17723856370195095751.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1460177070",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mose Allison",
+   "album": "My Backyard",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group dbdd070d-f97a-3675-832b-b632a67125db。release-group 端點：title「My Backyard」、artist-credit「Mose Allison」（18b76828 Person）、first-release-date **1990**、primary-type Album、secondary-types 空、tags blues:1／hard bop:1／jazz:1／jazz blues:1／piano blues:1／vocal jazz:1，轄下 1 個 release。release 端點：e20e998a（1990 US Official CD 12 軌，Blue Note CDP 7 93840 2，bc 0077779384020）。十二軌：Ever Since I Stole the Blues／You Call It Joggin'／Big Brother／Sentimental Fool／Stranger in My Own Hometown／Was／The Gettin' Paid Waltz／Dr. Jekyll & Mr. Hyde／That's Your Red Wagon／Long Song／Sleepy Lagoon／My Backyard。錄音 1989-12-05～07 Southlake Recording Studio, New Orleans；混音 39th Street Productions, NYC（James Farber）；班底 Mose Allison p/vo、Tony Dagradi ts、Steve Masakowski g、Bill Huntington b、Johnny Vidacovich d；製作兼內頁 Ben Sidran（Discogs 2955701）。紙本：Billboard 1990-05-26 p144 評介、Cash Box 1990-06-02 p11 評介；**兩刊無新片欄、無榜位**；另 Billboard 1990-06-16 p69 的 Blue Note 陣容整版廣告把「MOSE ALISON」（原文誤拼）列在名單首位。CAA：3 圖、front=true、來源 e20e998a。Apple us search：715730025（12 軌）。",
+    "rgMbid": "dbdd070d-f97a-3675-832b-b632a67125db",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dbdd070d-f97a-3675-832b-b632a67125db/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 264,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=264，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首都落在三分到四分半之間，排得像一張單曲集。1989 年 12 月 5 到 7 日在紐奧良 Southlake 錄完，混音回紐約做。伴奏全是當地人：Tony Dagradi 的次中音、Steve Masakowski 的吉他，再加上貝斯與鼓。他自彈自唱，八首是自己的詞曲，另四首翻唱，〈Stranger in My Own Hometown〉出自 Percy Mayfield。1990 年出版，製作人 Ben Sidran，另有 B1-93840 美國黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=dbdd070d-f97a-3675-832b-b632a67125db&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2955701",
+     "https://api.discogs.com/database/search?catno=B1-93840",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-05-26.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-11-17.pdf",
+     "https://musicbrainz.org/release-group/dbdd070d-f97a-3675-832b-b632a67125db"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0c/e6/f5/0ce6f5d7-cb1c-6f8f-6c04-b60f6d12b2d4/mzaf_8658451129210341272.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "715730025",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "George Adams",
+   "album": "America",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1cf6f0d2-f1eb-4643-b469-4336ee7d2dfe。release-group 端點：title「America」、artist-credit「George Adams」（b1e7da08 Person）、first-release-date **1990**、primary-type Album、secondary-types 空、tags jazz:1，轄下 1 個 release。release 端點：5f4a01d7（1990 US Official CD 10 軌，Blue Note CDP 7 93896 2，bc 077779389629）。**MB 沒有建日本原盤 TOCJ-5517**（第 974 條同形：MB 偏向建美版、漏建首發地那一版）——已依第 642 條換 `inc=media+labels+recordings+artist-credits` 端點組合確認是 MB 沒有，不是端點取不到。十軌：America the Beautiful／Tennessee Waltz／Motivation／Old Folks at Home／Gee Baby, Ain't I Good to You?／Take Me Out to the Ball Game／You Are My Sunshine／Georgia on My Mind／Have You Thanked America?／The Star Spangled Banner。錄音與混音 1989-05-24、05-25、06-29、07-09、07-10、07-18 於紐約；班底 George Adams ts/fl/vo、Hugh Lawson p、Cecil McBee b、Mark Johnson d；製作 Kazunori Sugiyama、執行製作 Hitoshi Namekata、混音 Jim Anderson（Discogs 4137306）。日本原盤：Discogs master 1074430、release 9199560（TOCJ-5517，1990）。紙本：**Billboard／Cash Box 1990 全年、Billboard 1991-01→1992-03 全段，`93896` 與盤名／人名組合皆零命中**；唯一相關的是 Billboard 1990-07-07 p59 的 Somethin' Else 授權協議專文。CAA：1 圖、front=true、來源 5f4a01d7。Apple：三種查法皆 0 筆本張。",
+    "rgMbid": "1cf6f0d2-f1eb-4643-b469-4336ee7d2dfe",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1cf6f0d2-f1eb-4643-b469-4336ee7d2dfe/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 67,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=67，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈Take Me Out to the Ball Game〉兩分四十一秒，國歌一分四十秒收尾。六天散在 1989 年 5 到 7 月的三個月裡，全在紐約 A&R Studios 錄成。四重奏另有 Hugh Lawson 的鋼琴與 Cecil McBee 的貝斯。十軌裡八首是美國民謠、國歌與老歌，兩首是他自己的詞曲，他在其中三軌開口唱。首發是日本 Somethin' Else TOCJ-5517，1990 年出版，製作人 Kazunori Sugiyama。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1cf6f0d2-f1eb-4643-b469-4336ee7d2dfe&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/9199560",
+     "https://api.discogs.com/masters/1074430/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-06-30.pdf",
+     "https://en.wikipedia.org/wiki/America_(George_Adams_album)",
+     "https://itunes.apple.com/lookup?id=60804610&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/1cf6f0d2-f1eb-4643-b469-4336ee7d2dfe"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Don Pullen",
+   "album": "Random Thoughts",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d2770875-7b43-3526-96b0-347556250a5a。release-group 端點：title「Random Thoughts」、artist-credit「Don Pullen」（7a31f6c3 Person）、first-release-date **1990-10-24**、primary-type Album、secondary-types 空、tags jazz:1，轄下 2 個 release。release 端點：d91ae948（1990 US Official CD 7 軌，Blue Note CDP 7 94347 2，bc 077779434725）、bbfd824a（**1990-10-24 JP** Official CD 7 軌，Blue Note TOCJ-5230，bc 4988006650558）。七軌：Andre's Ups and Downs／Random Thoughts／Indio Gitano／The Dancer (For Diane McIntyre)／Endangered Species: African American Youth／626 Fairfax／Ode to Life (For Maurice Quesnell)。錄音 1990-03-23 數位錄於 A&R Recording Studio, NYC（錄音師 David Baker）；班底 Don Pullen p（全部作曲）、James Genus b、Lewis Nash d；製作 Michael Cuscuna；內頁 Stanley Crouch；封面畫 Michael J. Singletary（Discogs 3477810）。紙本：**Billboard 1990-08-11 p43 新片欄（B2-94347／B4-94347）**、1990-09-29 p90 評介；兩刊兩張爵士榜 1990 全年皆無本盤。CAA：2 圖、front=true、**來源 bbfd824a（日本盤）**。Apple us search：1453776588（7 軌，releaseDate＝錄音日）。",
+    "rgMbid": "d2770875-7b43-3526-96b0-347556250a5a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/9e/ca/19/9eca19c2-321f-1a16-988c-63d52e17d3f2/00602577497032.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1453776588",
+    "note": "試聽探測釘定的 collectionId 1453776588（us）：Don Pullen — Random Thoughts。2026-10-04 改用：原本的 CAA 圖（https://coverartarchive.org/release-group/d2770875-7b43-3526-96b0-347556250a5a/front）在 archive.org 連續三輪回 500。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 594,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=594，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七首全是他寫的，一天之內在 A&R 全數位錄完。那一天是 1990 年 3 月 23 日，地點在紐約 A&R Recording。三重奏是 James Genus 的貝斯與 Lewis Nash 的鼓，全盤沒有管樂。〈Random Thoughts〉九分零五秒最長，〈Endangered Species: African American Youth〉是題旨最重的一首。1990 年出版，製作人 Michael Cuscuna，內頁文字 Stanley Crouch。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d2770875-7b43-3526-96b0-347556250a5a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/3477810",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-08-11.pdf",
+     "https://en.wikipedia.org/wiki/Random_Thoughts_(Don_Pullen_album)",
+     "https://api.discogs.com/masters/1638857/versions",
+     "https://musicbrainz.org/release-group/d2770875-7b43-3526-96b0-347556250a5a"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/30/61/46/30614618-1142-5716-89e4-a14cb58017c0/mzaf_13184894698514666479.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1453776588",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dexter Gordon",
+   "album": "Nights at the Keystone, Volume 3",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 005ac0cd-4270-38a1-9942-4ce73e9d1fef。release-group 端點：title「Nights at the Keystone, Volume 3」、artist-credit「Dexter Gordon」（cc1588e1 Person）、first-release-date **1990**、primary-type Album、**secondary-types `[\"Live\"]`**、tags hard bop:1／jazz:1，轄下 1 個 release。release 端點：2af210d7（1990 US Official CD 4 軌，Blue Note CDP 7 94850 2，bc 077779485024）。四軌：You've Changed（18:32）／Body and Soul（16:59）／I Told You So（13:42）／As Time Goes By（15:23）。錄音 Keystone Korner, San Francisco：1978-09-16（#2）／1978-09-17（#3）／1979-03-24（#1、#4）；班底 Dexter Gordon ts、George Cables p、Rufus Reid b、Eddie Gladden d；製作 Todd Barkan、執行製作 Bruce Lundvall ＋ Michael Cuscuna；remix 工程 Malcolm Addey；內頁 Billy Eckstine／Max Roach／Michael Cuscuna／Philip Elwood／Todd Barkan（Discogs 7366492，notes「All selections previously unissued」，總長 58:23）。**同一批母帶的 Vol. 1（CDP 7 94848 2）與 Vol. 2（CDP 7 94849 2）已依第 874 條退掉**（Discogs 7182797 notes「#1 to 4 previously issued on Blue Note LP BABB-85112」；Discogs 30664726 notes「Tracks 2, 3, 5 previously issued on Blue Note LP BABB-85112」；BABB-85112＝Discogs 2724160，1985 US Blue Note 雙片黑膠 7 軌，℗© 1985 Manhattan Records）。紙本：**Billboard 1991-01-05 p100 評介欄（「Blue Note 94850」「reissued in expanded form on Vols. 1-2」）**；Billboard 1990-05-05 p91／p94 是 Gordon 的訃聞（1990-04-25 歿於費城，Bruce Lundvall 談話）。CAA：1 圖、front=true、來源 2af210d7。Apple us search：1574416695（4 軌，releaseDate 1979-01-01＝錄音年，標 This Compilation ℗ 1990）。",
+    "rgMbid": "005ac0cd-4270-38a1-9942-4ce73e9d1fef",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/005ac0cd-4270-38a1-9942-4ce73e9d1fef/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 31,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=31，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "四首、五十八分鐘：〈You've Changed〉一首就十八分半。三個晚上錄於舊金山 Keystone Korner——1978 年 9 月 16、17 日與 1979 年 3 月 24 日——擱到 1990 年才首度發行。四重奏是 George Cables 的鋼琴、Rufus Reid 的貝斯與 Eddie Gladden 的鼓。唯一的原創是 Cables 寫的〈I Told You So〉。1990 年出版，製作人 Todd Barkan，內頁文字由五個人合寫。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=005ac0cd-4270-38a1-9942-4ce73e9d1fef&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/7366492",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-01-05.pdf",
+     "https://api.discogs.com/database/search?catno=BABB-85112",
+     "https://musicbrainz.org/ws/2/recording?fmt=json&limit=40&inc=releases&query=artist%3A%22Dexter%20Gordon%22%20AND%20recording%3A%22Body%20and%20Soul%22",
+     "https://musicbrainz.org/release-group/005ac0cd-4270-38a1-9942-4ce73e9d1fef"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5c/3f/fd/5c3ffd05-70bd-86ea-032e-db42d73b6d59/mzaf_6108236934981793391.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1574416695",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Renee Rosnes",
+   "album": "For the Moment",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 68656a80-6efc-4d43-9706-058872aefd1c。release-group 端點：title「For the Moment」、artist-credit「Renee Rosnes」（bff6007a Person）、first-release-date **1990-02-15**、primary-type Album、secondary-types 空、tags jazz:1，轄下 1 個 release。release 端點：907079d4（1990-02-15 US Official CD 8 軌，Blue Note CDP 7 94859 2，bc 077779485925）。八軌：Summer Night／For the Moment／Four in One／Malaga Moon／Nemesis／Thinking to Myself／The Organ Grinder／Homeward。錄音 1990-02-15～16 於紐約（Discogs 5168281 notes「Recorded on February 15 & 16, 1990 in New York City」——**MB 的 frd 就是這個錄音首日**）；班底 Renee Rosnes p、Joe Henderson ts、Steve Wilson ss/as、Ira Coleman b、Billy Drummond d；製作 Renee Rosnes ＋ Kazunori Sugiyama、執行製作 Hitoshi Namekata、錄音 Jim Anderson、母帶 Yoshio Okazaki。Discogs master 1478966 的三個版本：5168281（US 1990 CD CDP 7 94859 2）、13014487（US 1990 卡帶 B4-94859）、13658105（**JP 1991 Somethin' Else TOCJ-5524**）。紙本：**Billboard 1990 全年、Cash Box 1990 全年、Billboard 1991-01→1992-03 全段皆零命中**（`94859` 與盤名組合）。CAA：2 圖、front=true、來源 907079d4。Apple：us／jp 兩種查法皆 0 筆。",
+    "rgMbid": "68656a80-6efc-4d43-9706-058872aefd1c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/68656a80-6efc-4d43-9706-058872aefd1c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 58,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=58，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Joe Henderson 吹了八軌裡的七軌，收尾那首他不吹。1990 年 2 月 15、16 兩天在紐約 A&R Studios 錄完。五重奏是 Henderson 的次中音、Steve Wilson 的高音與中音、Ira Coleman 的貝斯與 Billy Drummond 的鼓；Wilson 只吹第二、四、五、八軌，他不吹的那首是〈Homeward〉。八首裡四首是她自己寫的。1990 年 10 月上市，1992 年拿下加拿大 Juno 最佳爵士專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=68656a80-6efc-4d43-9706-058872aefd1c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/5168281",
+     "https://api.discogs.com/releases/13658105",
+     "https://api.discogs.com/masters/1478966/versions",
+     "https://www.jazzdisco.org/renee-rosnes/catalog/",
+     "https://en.wikipedia.org/wiki/For_the_Moment_(Renee_Rosnes_album)",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-06-16.pdf",
+     "https://itunes.apple.com/search?term=Renee%20Rosnes%20For%20the%20Moment&country=us&entity=album&limit=12",
+     "https://musicbrainz.org/release-group/68656a80-6efc-4d43-9706-058872aefd1c"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Charlie Haden and The Liberation Music Orchestra",
+   "album": "Dream Keeper",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4de0c6af-12c6-3d2f-b4d0-ef0190324e40。release-group 端點：title「Dream Keeper」、artist-credit「Charlie Haden and The Liberation Music Orchestra」（底層單一實體 5214982b『Charlie Haden's Liberation Music Orchestra』，type **Orchestra**）、first-release-date **1990**、primary-type Album、secondary-types 空、tags jazz:1，轄下 **6 個 release**。release 端點：0760a386（1990 US CD 5 軌，Polydor 847 876-2，bc 042284787628）、4624ce41（**1990 JP CD 5 軌，DIW DIW-844，bc 4988044008441**）、5b0e8374（1990 FR CD 5 軌，Polydor／PolyGram Jazz 847 876-2）、aff278a6（1990 JP 12\" Vinyl 5 軌，DIW 8045，無 barcode）、a5b697a9（**1991 US CD 5 軌，Blue Note CDP 7 95474 2**，credit 作「Charlie Haden and the Liberation Music Orchestra」小寫 the）、014e59c1（2007-02-26 Digital Media 5 軌，Decca Records France）。五軌：Dream Keeper（組曲：Dream Keeper Part 1／Feliciano Ama／Part 2／Canto del Pilón 1／Part 3／Canto del Pilón 2／Hymn of the Anarchist Women's Movement／Part 4，16:51）／Rabo de Nube（5:23）／Nkosi Sikelel'i Afrika（10:31）／Sandino（6:39）／Spiritual（8:59）。錄音 **1990-04-04～05 Clinton Studios, NYC**，追錄於 Fantasy Studios, Berkeley；混音 Master Sound Astoria, Queens；母帶 DigiPrep, Hollywood。班底：Charlie Haden b、Carla Bley 編曲兼指揮、Karen Mantler 編曲、Branford Marsalis ts、Ken McIntyre as、Sharon Freeman frh、Mick Goodrick g、Amina Claudine Myers p、Juan Lazaro Mendolas 排簫／木笛、Don Alias perc、Paul Motian d、**Oakland Youth Chorus**（指導 Elizabeth Min）；製作 Hans Wendl（Discogs 2511757／2419024）。紙本：**Billboard 1990-12-15 p20 Jeff Levenson 專文（三廠授權安排、Haden 談話）**、**1991-01-12 p41 新片欄（B2-95474／B4-95474）**、1991-02-02 p70 評介、1991-12-21 p29 年度回顧、**1992-01-18 p15 葛萊美入圍名單（Best Jazz Instrumental Performance, Large Ensemble）**。CAA：1 圖、front=true、**來源 014e59c1（2007 數位）**。Apple：兩種查法皆 0 筆。",
+    "rgMbid": "4de0c6af-12c6-3d2f-b4d0-ef0190324e40",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4de0c6af-12c6-3d2f-b4d0-ef0190324e40/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 130,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=130，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄在紐約、追錄在柏克萊、混在皇后區、母帶在好萊塢。1990 年 4 月 4、5 兩天在 Clinton Studios 錄成。十八位樂手加上奧克蘭青少年合唱團，Carla Bley 指揮並寫了四軌編曲，第二軌的編曲是 Karen Mantler；三位次中音逐軌輪替。〈Dream Keeper〉十六分五十一秒的組曲歌詞取自 Langston Hughes。首發是日本 DIW-844 與黑膠 DIW 8045，1990 年出版，製作人 Hans Wendl。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4de0c6af-12c6-3d2f-b4d0-ef0190324e40&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2511757",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-01-12.pdf",
+     "https://itunes.apple.com/lookup?id=373582086&country=jp&entity=song&limit=300",
+     "https://api.discogs.com/masters/284848/versions",
+     "https://itunes.apple.com/lookup?id=1443547541&country=jp&entity=song&limit=300",
+     "https://musicbrainz.org/release-group/4de0c6af-12c6-3d2f-b4d0-ef0190324e40"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/c1/9d/acc19d03-37f3-298f-39d8-f8c031e9791c/mzaf_1527748500693055748.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "373582086",
+    "storefront": "JP"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gonzalo Rubalcaba",
+   "album": "At Montreux",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a76ae932-d62d-3b94-8532-947a02959d3d。release-group 端點：title「At Montreux」、artist-credit「Gonzalo Rubalcaba」（70053535 Person）、first-release-date **1990-07-15**、primary-type Album、**secondary-types `[\"Live\"]`**、tags contemporary jazz:1／jazz:1，轄下 2 個 release。release 端點：e2b1b521（1990-07-15 **CH** Official CD 7 軌，label「somethin'else」catno **UCCU-5947**，無 barcode，credit **「Gonzalo Rubalcaba Trio」**）、acfd0efc（1991 US Official CD 7 軌，Blue Note CDP 7 95478 2，bc 077779547821，credit「Gonzalo Rubalcaba」）。七軌：Well You Needn't／Velas／Prologo Comienzo／First Song／Once Around the Park／Joao／All the Things You Are。錄音 **1990-07-15 Montreux Jazz Festival, Switzerland**（錄音 David Richards）；混音 1990-09-15～16 Effanel Tower, NYC（Jim Anderson）；班底 Gonzalo Rubalcaba p、**Charlie Haden b（兼製作）**、**Paul Motian d**；執行製作 Hitoshi Namekata、助理製作 Kazunori Sugiyama；母帶 Yoshio Okazaki（Discogs 2389995，℗© 1990 Somethin' Else Records a division of Toshiba-EMI Ltd.）。**日本原盤 TOCJ-5527 MB 沒有建**（第 974 條同形），號碼出自 Discogs master 2039524。紙本：Billboard 1990-07-14 p74（Messidor 與 Blue Note 簽約消息）、**1990-10-06 p26（Paul Motian 談這場錄音、Blue Note 預定在美發行）**、**Top Jazz Albums 1991-05-25 NEW「LIVE AT MONTREUX」**、1991-06-08 p71（第 22 名，改印「DISCOVERY: LIVE AT MONTREUX」）、1991-11-23 p59 廣告（提到本張與新作《The Blessing》）。CAA：1 圖、front=true、來源 acfd0efc（美版）。Apple us search：726130574（7 軌）。",
+    "rgMbid": "a76ae932-d62d-3b94-8532-947a02959d3d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a76ae932-d62d-3b94-8532-947a02959d3d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 87,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=87，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "貝斯手 Charlie Haden 不只彈，還掛了製作人。1990 年 7 月 15 日錄於瑞士蒙特勒爵士節，9 月在紐約 Effanel 混音。三重奏是他的鋼琴、Haden 的貝斯與 Paul Motian 的鼓。七軌裡三首是他自己寫的，〈First Song〉出自 Haden。首發是日本 Somethin' Else TOCJ-5527，1990 年 12 月 5 日上市，美版 1991 年改題《Discovery: Live at Montreux》。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a76ae932-d62d-3b94-8532-947a02959d3d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2389995",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-05-25.pdf",
+     "https://api.discogs.com/masters/2039524/versions",
+     "https://itunes.apple.com/lookup?id=726130574&country=us&entity=song&limit=300",
+     "https://musicbrainz.org/release-group/a76ae932-d62d-3b94-8532-947a02959d3d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/27/99/fe/2799fed1-0553-b653-affc-974154fc6f99/mzaf_11334169375590020305.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "726130574",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lou Rawls",
+   "album": "It's Supposed to Be Fun",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6b9690db-88b5-3ee9-8674-a7c663ab028c。release-group 端點：title「It's Supposed to Be Fun」、artist-credit「Lou Rawls」（c8bd802a Person）、first-release-date **1990**、primary-type Album、secondary-types 空、tags blues:1／contemporary jazz:1／soul:2，轄下 2 個 release。release 端點：39ce9774（1990 US Official，**media format null**，14 軌，Blue Note catno `93841`，無 barcode）、e841d088（1990 國別空 CD 14 軌，Blue Note `CDP-593841`，無 barcode）。十四軌：It's Supposed to Be Fun／Don't Let Me Be Misunderstood／All Around the World／Good Morning Blues／Moonglows／Any Day Now／This Bitter Earth／If You Gotta Make a Fool of Somebody／One More Time／You're the One／(I Wonder) Where Our Love Has Gone／But I Do／Good Night My Love／The Last Night of the World。錄音：第 1 軌 1990-07 Tarpen Studios, San Rafael, CA；第 2–14 軌 1990-01 與 1990-05 M&I Recording, NYC；追錄 Capitol Studios, LA ＋ Broadway Productions, Englewood NJ；混音 Soundtrack, NYC。班底：Lou Rawls vo（兼執行製作）、Richard Tee p/el-p/org、Cornell Dupree g、Tinker Barfield b、Chris Parker d、Ralph MacDonald perc、**Bobby Watson as**、Howard Johnson bs、Hank Crawford（客席，Milestone 借將）、Narada Michael Walden（客席，Reprise 借將）；製作 Michael Cuscuna ＋ Billy Vera（Discogs 7034802）。紙本：Billboard 1990-08-04 p28／08-11 p28 整版廣告（「due out in September」）、**1990-10-20 p33–p40 生涯特輯**、**Top Contemporary Jazz Albums 1990-11-10 p87 NEW（「BLUE NOTE 9384[1]/CAPITOL」）、1990-11-24 p92 第 9 名**；Cash Box 1990-11-24／12-08 p10 提到 Blue Note 的《Yule Struttin'》聖誕合輯（**那是另一張碟，不是本盤**）。CAA：1 圖、front=true、來源 39ce9774。Apple us search：1506838559（14 軌）。",
+    "rgMbid": "6b9690db-88b5-3ee9-8674-a7c663ab028c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6b9690db-88b5-3ee9-8674-a7c663ab028c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 390,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=390，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第一軌在加州做，其餘十三軌在紐約做，兩組人馬。開場那軌是 Narada Michael Walden 1990 年 7 月在 Tarpan Studios 做的，其餘由 Billy Vera 與 Michael Cuscuna 同年 1、5 月在 M&I 做成。另一組是 Richard Tee 的鍵盤與 Cornell Dupree 的吉他。末軌〈The Last Night of the World〉來自音樂劇《西貢小姐》。1990 年出版，另有 B1-93841 黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6b9690db-88b5-3ee9-8674-a7c663ab028c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/7034802",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-11-24.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-12-01.pdf",
+     "https://api.discogs.com/masters/368870/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-10-20.pdf",
+     "https://musicbrainz.org/release-group/6b9690db-88b5-3ee9-8674-a7c663ab028c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/42/0e/a0/420ea093-d54e-e44a-a5b0-335e311fcb7e/mzaf_2137624637386000102.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1506838559",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Eliane Elias",
+   "album": "Eliane Elias Plays Jobim",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 93fb24ac-73ed-3751-b1c3-291d294d788b。release-group 端點：title「Eliane Elias Plays Jobim」、artist-credit「Eliane Elias」（9974cbc1 Person）、first-release-date **1990**、primary-type Album、secondary-types 空、tags jazz:1／post-bop:1，轄下 2 個 release。release 端點：7ce70bb5（1990 US Official CD 11 軌，label **`Something Else Records`** catno `CDP-593089`，bc 0208314065220，**軌名列了 12 個，末軌是第 5 軌的異名**）、8656c8fc（1990 **GB** Official CD 11 軌，Blue Note `cdp7930892`，bc 077779308927）。**MB 沒有建日本原盤 TOCJ-5519**（第 974 條同形）。十一軌：Waters of March／Agua de Beber／Sabiá／Passarim／Don't Ever Go Away／Desafinado／Angela／Children's Games／Dindi／Zingaro／One Note Samba。製作 Eliane Elias ＋ Randy Brecker（Billboard 評介）。日本原盤：Discogs 17081595（TOCJ-5519，1990）、1998 再發 TOCJ-8030；Discogs master 480298 共 16 個版本，**最早一批全部是 1990**（US CDP 7 93089 2＝832759、卡帶 B4-93089＝15627646、UK & Europe＝10862991、巴西 368 793089 2＝15889149、唱片俱樂部版 D-114869＝7911526）。紙本：**Billboard 1990-06-30 p116 評介（「Blue Note 93089」，製作 Eliane Elias & Randy Brecker）**、**Top Jazz Albums 1990-07-21 p94 NEW、08-04 p70 第 11、08-18 p38 第 6、09-01 p58 第 5、09-15 p60 第 8**；Billboard 1990-06-16 p69 與 1990-11-10 p87 的 Blue Note 陣容廣告亦列她。CAA：6 圖、front=true、來源 8656c8fc（GB）。Apple：us 兩種查法 0 筆；**jp 店面 1509394239（11 軌，releaseDate 1990-04-18，℗ 1990 UNIVERSAL MUSIC LLC，標 A Somethin' Else Records release）**。",
+    "rgMbid": "93fb24ac-73ed-3751-b1c3-291d294d788b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/93fb24ac-73ed-3751-b1c3-291d294d788b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3445,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "〈Don't Ever Go Away〉在盤上出現兩次，一長一短。第四軌八分二十六秒、第十一軌兩分五十九秒，是同一首曲子的兩種處理。1989 年 12 月在紐約錄成，十一軌全是 Jobim 的作品。編制是她的鋼琴與人聲、Eddie Gomez 的貝斯、Jack DeJohnette 的鼓與 Naná Vasconcelos 的打擊。首發是日本 Somethin' Else TOCJ-5519，1990 年 4 月 18 日上市，製作是她與 Randy Brecker。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=93fb24ac-73ed-3751-b1c3-291d294d788b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/17081595",
+     "https://en.wikipedia.org/wiki/Eliane_Elias_Plays_Jobim",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-06-30.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-08-18.pdf",
+     "https://musicbrainz.org/release-group/93fb24ac-73ed-3751-b1c3-291d294d788b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/de/96/4d/de964d35-9f08-6a94-945c-720c89081fd3/mzaf_11645638797417212086.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1509394239",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stanley Jordan",
+   "album": "Stolen Moments",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 0c42f8a3-942a-3c30-b3b7-88e21e2373ad。release-group 端點：title「Stolen Moments」、artist-credit「Stanley Jordan」（6ba7dd48 Person）、first-release-date **1991-11-12**、primary-type Album、**secondary-types `[\"Live\"]`**、tags fusion:1／jazz:1／smooth jazz:1，轄下 3 個 release。release 端點：e7f38bc1（1991-11-12 US Official CD 7 軌，Blue Note CDP 7 97159 2，bc 077779715923）、7cb1a2b0（1991 US CD 7 軌，Blue Note `CDP 597159`，bc 0208314334217）、6dae881c（1991 US CD 7 軌，Blue Note `D 125546`，無 barcode）。七軌：Stairway to Heaven／Impressions／Lady in My Life／Autumn Leaves／Stolen Moments／Return Expedition／Over the Rainbow。錄音 **1990-11-07～09 Blue Note Tokyo, Aoyama**；班底 Stanley Jordan el-g、Charnett Moffett ac-b/el-b、Kenwood Dennard d；執行製作 David Rubinson ＋ Hitoshi Namekata；封面攝影 Shigeru Uchiyama；美術 Kaoru Taku（Discogs 5403972）。紙本：**Billboard 1991-11-23 p59 整版廣告（「recorded live in Japan with bassist Charnett [Moffett], drummer Kenwood Dennard」，同頁另推 Rubalcaba《The Blessing》）**、**1991-11-30 p55 新片欄（C2-97159／C4-97159）**、**1991-11-30 p57 評介**、**Top Contemporary Jazz Albums 1991-12-21 p43 NEW 第 19 名**。CAA：1 圖、front=true、來源 e7f38bc1。Apple us search：724471956（7 軌）。",
+    "rgMbid": "0c42f8a3-942a-3c30-b3b7-88e21e2373ad",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0c42f8a3-942a-3c30-b3b7-88e21e2373ad/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4655,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一張碟在日本叫《Stairway To The Rainbow》。1990 年 11 月 7 到 9 日三晚錄於東京的 Blue Note 俱樂部。三重奏另有 Charnett Moffett 的貝斯與 Kenwood Dennard 的鼓。七首裡六首是翻奏，唯一的原創〈Return Expedition〉十五分二十三秒。盤名取自 Oliver Nelson 那首曲子。日本 1991 年 4 月 26 日先上市，美版同年 11 月才叫《Stolen Moments》。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=0c42f8a3-942a-3c30-b3b7-88e21e2373ad&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/5403972",
+     "https://api.discogs.com/releases/14913649",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-11-30.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-12-21.pdf",
+     "https://musicbrainz.org/ws/2/release?release-group=45455743-49fe-43ee-b4f0-4e3fabc9326a&fmt=json&inc=media+recordings+labels&limit=5",
+     "https://musicbrainz.org/release-group/0c42f8a3-942a-3c30-b3b7-88e21e2373ad"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/31/c7/a8/31c7a81d-e9d2-56bf-ee0f-041d6afcaa98/mzaf_9913834697026557627.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724471956",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Bob Belden Ensemble",
+   "album": "Straight to My Heart: The Music of Sting",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 36524582-8d29-32f3-8829-bcf5aa4d3e82。release-group 端點：title「Straight to My Heart: The Music of Sting」、artist-credit「The Bob Belden Ensemble」（94d65205 **Group**）、first-release-date **1991-09-24**、primary-type Album、secondary-types **空**、tags contemporary jazz:1／jazz:1，轄下 2 個 release。**第一次只打 release-group 端點時沒有取到 release 清單，依第 642 條改用 `release?release-group=<id>&fmt=json&inc=media+labels+recordings+artist-credits&limit=100` 才取到**。release 端點：2c7bc9a8（1991-09-24 US Official CD 11 軌，Blue Note CDP 7 95137 2，bc 077779513727）、36887852（**無日期、無國別、無 label-info、無 barcode、media format null**，11 軌）。十一軌：Introduction／Wrapped Around Your Finger／Roxanne／Straight to My Heart／Sister Moon／Dream of the Blue Turtles／Every Breath You Take／They Dance Alone／Shadows in the Rain／Children's Crusade／I Burn for You。班底（Discogs 6402447，逾六十個名字）：Bob Belden 編曲／合成器／內頁、Matt Pierson 製作兼編曲、Jay Anderson ac-b、Darryl Jones el-b、Dennis Chambers 與 Jeff Hirshfield d、Ladji Camara hand drums、A. Kobena Adzenyah talking drum、Jerry Gonzalez 與 David Earle Johnson perc、Kevin Hays p/Rhodes、Joey Calderazzo p、Marc Copland p、Pat Rebillot Hammond B3、Adam Holzman 與 Doug Hall syn、John Hart g、Rick Margitza ts、Tim Ries ss/ts/bs/bass fl、Chuck Wilson fl/afl/cl、Ron Kozak 木笛/英國管/低音單簧管、Mike Migliore picc/fl/as、Glenn Wilson bs、Peter Reit frh、John Fedchock tb、George Moran b-tb、Tim Hagans 與 Jim Powell tp/flh、Tony Kadleck lead tp、Bob Stewart 與 Marcus Rojas tuba；混音 James Farber ＋ Rob Eaton；母帶 Bob Ludwig；內頁 Bob Belden ＋ Vic Garbarini；作曲 Sting。紙本：**Billboard 1991-10-26 p36 整版廣告（點名 Phil Perry、Dianne Reeves、John Scofield、Bobby Watson、Benny Green、Joey Calderazzo、Rick Margitza）**、**Top Jazz Albums 1991-12-07 p35 NEW 第 25、1991-12-21 p43 第 17**；**兩刊無評介欄、無新片欄命中**。CAA release-group 端點：**404（`redirect: follow` 重試三次確認，第 589a 條）**。Apple us search：1777910672（11 軌）。",
+    "rgMbid": "36524582-8d29-32f3-8829-bcf5aa4d3e82",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c2/43/4b/c2434b2e-062f-2488-e465-b7d7f937f92c/13UACIM00153.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777910672",
+    "note": "試聽探測釘定的 collectionId 1777910672（us）：The Bob Belden Ensemble — Straight To My Heart: The Music Of Sting"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 33,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=33，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "五間錄音室、五十幾個名字，四位客座主唱各唱一首。十一軌全是 Sting 與 The Police 的曲子，1991 年新錄。節奏組兩套：Darryl Jones 的電貝斯配 Dennis Chambers，Jay Anderson 的原音貝斯配 Jeff Hirshfield。主唱是 Dianne Reeves、Phil Perry、Mark Ledford 與 Jimi Tunnell。編曲主要出自 Bob Belden，1991 年出版，製作人 Matt Pierson。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=36524582-8d29-32f3-8829-bcf5aa4d3e82&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/6402447",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-12-21.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-10-26.pdf",
+     "https://api.discogs.com/masters/440563/versions",
+     "https://musicbrainz.org/release-group/36524582-8d29-32f3-8829-bcf5aa4d3e82"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/38/6d/fa386da0-bfb6-c431-6194-eb7f8c92e3e9/mzaf_3669562963974805520.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1777910672",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joey Calderazzo",
+   "album": "In the Door",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 94746f68-cd29-465d-b9b3-5829d7a16f99。release-group 端點：title「In the Door」、artist-credit「Joey Calderazzo」（2be2cd01 Person）、first-release-date **1991**、primary-type Album、secondary-types 空、**tags 空**，轄下 1 個 release。release 端點：8444cd0d（1991 **CA** Official CD 8 軌，Blue Note CDP 7 95138 2，**無 barcode**）。八軌：In the Door／Mikell's／Spring Is Here／The Missed／Dome's Mode／Loud-Zee／Chubby's Lament／Pest。班底（Discogs 1824323）：Joey Calderazzo p（全部作曲、部分編曲）、**Michael Brecker sax 兼製作**、**Branford Marsalis sax**、Jerry Bergonzi sax 兼編曲、Jay Anderson b、Adam Nussbaum d、Peter Erskine d；錄音室 Carriage House Studios。紙本：**`95138` 與盤名組合在 Billboard／Cash Box 1990 全年與 Billboard 1991-01→1992-03 全段皆零命中**；人名命中三則：Billboard 1990-06-30 p25（「baby-faced charters」新人名單，記 25 歲）、**1990-11-10 p87 Blue Note 聖誕整版廣告**、1991-10-26 p36（Bob Belden 盤客席名單）。CAA：1 圖、front=true、來源 8444cd0d。Apple us search：1507797234（8 軌）。",
+    "rgMbid": "94746f68-cd29-465d-b9b3-5829d7a16f99",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/94746f68-cd29-465d-b9b3-5829d7a16f99/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 297,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=297，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "他請 Michael Brecker 製作，Brecker 只在最後一軌吹了一次。錄於康乃狄克的 Carriage House Studios。三位薩克斯風手逐軌輪替：Branford Marsalis 在第一、二、四軌，Jerry Bergonzi 在第三、五、六軌，Brecker 吹的是收尾的〈Pest〉。鼓也分兩人，Peter Erskine 只打第二與第四軌，其餘是 Adam Nussbaum。八首裡六首是他自己寫的。這是他二十五歲時的第一張領班盤，1991 年出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=94746f68-cd29-465d-b9b3-5829d7a16f99&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1824323",
+     "https://api.discogs.com/masters/1666934/versions",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/BB-1992-04-25.pdf",
+     "https://api.discogs.com/releases/18247648",
+     "https://musicbrainz.org/release-group/94746f68-cd29-465d-b9b3-5829d7a16f99"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/63/f3/bf/63f3bfe6-cf4a-ee67-f331-720a5e2f6fc8/mzaf_7382822440054795047.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1507797234",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Geri Allen",
+   "album": "The Nurturer",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 9de90485-80b2-4672-9074-7767321e88a4。release-group 端點：title「The Nurturer」、artist-credit「Geri Allen」（4d688d75 Person）、first-release-date **1991**、primary-type Album、secondary-types 空、tags contemporary jazz:1／jazz:1，轄下 1 個 release。release 端點：f13e0ed3（1991 US Official CD **9 軌**，Blue Note CDP 7 95139 2，**無 barcode**；**MB 的 track-count 是 9，但列出的軌名有 10 個，且 Discogs 原壓 1299720 是 10 軌——以 Discogs 的 10 軌為準**）。十軌：Night's Shadow／No. 3／It's Good to Be Home Again／Batista's Groove／Night of Power (For My Daughter Laila)／Our Gang／Silence and Song／The Nurturer／Le Goo Wop／Lullaby of Isfah[a]n。錄音 **1990-01-05～06 Sound On Sound, New York**；混音 1990-05-29～30 Acme Recording, Mamaroneck NY（Peter Denenberg 兩者皆任）；班底 Geri Allen p（兼製作）、**Marcus Belgrave tp/flh**、**Kenny Garrett as／straight-alto**、Robert Hurst b、Jeff 'Tain' Watts d、Eli Fountain perc；共同製作 Kunle Mwanga ＋ Kazunori Sugiyama、執行製作 Hitoshi Namekata、母帶 Yoshio Okazaki、封面畫 Michael Kelly Williams、美術 Kaoru Taku（Discogs 1299720，盤面標「A Somethin'else Recording」、℗© 1991 Capitol Records）。紙本：**Billboard 1991-03-02 p80 評介欄**；人名另命中 1991-06-15 p27（新音樂研討會名單）、1991-07-06 p48／p54／p57（三則爵士現況專題）、**1991-08-31 p36（Tower Records 紐約店內演出照片，說明文字「Blue Note recording artist Geri Allen」）**；**`95139` 在兩刊全段零命中，兩張爵士榜皆無本盤**。CAA：3 圖、front=true、來源 f13e0ed3。Apple：us／jp 兩種查法皆 0 筆。",
+    "rgMbid": "9de90485-80b2-4672-9074-7767321e88a4",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9de90485-80b2-4672-9074-7767321e88a4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1685,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1685，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名叫養育者，九軌裡只有三首是她自己寫的。1990 年 1 月 5、6 兩天在紐約 Sound On Sound 錄成。六人編制是 Marcus Belgrave 的小號、Kenny Garrett 的中音、Robert Hurst 的貝斯與 Jeff Watts 的鼓，團員各交出一首曲子。〈Silence and Song / The Nurturer〉九分五十一秒最長。首發是日本 Somethin' Else TOCJ-5526，1990 年 10 月 24 日上市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=9de90485-80b2-4672-9074-7767321e88a4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/17236996",
+     "https://www.jazzdisco.org/geri-allen/catalog/",
+     "https://api.discogs.com/releases/1299720",
+     "https://en.wikipedia.org/wiki/The_Nurturer",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-03-02.pdf",
+     "https://itunes.apple.com/lookup?id=57395&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/9de90485-80b2-4672-9074-7767321e88a4"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Biréli Lagrène",
+   "album": "Acoustic Moments",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group e39f58b9-cefd-3bda-b5dc-5d7097855b19。release-group 端點：title「Acoustic Moments」、artist-credit「Biréli Lagrène」（57e0894c Person）、first-release-date **1991**、primary-type Album、secondary-types 空、**tags 空**，轄下 1 個 release。release 端點：1df1f202（1991 US Official CD 10 軌，label-info 兩筆：Blue Note `CDP 7 95263 2` ＋ EMI 無 catno，bc 077779526321）。**MB 沒有建 1990 年的歐洲原壓**（第 974／978 條同形）——已依第 642 條換 `inc=media+labels+recordings+artist-credits` 端點組合確認。十軌：Made in France／Rhythm Things（MB 作「Rhythm thing」）／Claire Marie／All the Things You Are／Three Views of a Secret／Impressions／Stretch／Acoustic Moments／Bass Ballad／Metal Earthquake。錄音與混音 **1990 年 7 月，Studio Davout, Paris（全數位）**；班底 Biréli Lagrène g/b（兼製作）、Koono kb/p/合成器編程、Loïc Pontieux d、Simon Pomara perc、**Michel Camilo p（客席）**；製作兼執行製作 Christian Pégand、助理 Dominique Pagouape、錄音 Petros Drossos、錄音兼混音 Malcolm Pollack（Discogs 3913094）。Discogs 版本群：**3913094（Europe 1990 LP，Blue Note／Blue Note International 7952631，℗©1990 EMI France）**、**15097340（Europe 1990 CD，Blue Note 7952632，Made in UK）**、4783908（US 1991 CD CDP 7 95263 2）、12999260（France 1991 卡帶 B4-95263）、9557220（Japan 1991 CD TOCJ-5281）。紙本：**Billboard 1991-03-02 p80 評介欄（「Blue Nota[sic] 95263」，點名 Michel Cami[lo]）**、**Top Contemporary Jazz Albums 1991-03-30 p43 以 NEW 進榜第 15 名**；Cash Box 1991-04-13 p18 的命中頁只是同頁的爵士榜清單。CAA：2 圖、front=true、**來源 1df1f202（1991 美版）**。Apple：us／fr 兩種查法皆 0 筆。",
+    "rgMbid": "e39f58b9-cefd-3bda-b5dc-5d7097855b19",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e39f58b9-cefd-3bda-b5dc-5d7097855b19/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 721,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=721，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "巴黎錄的黑膠與 CD 同時上市，美版晚了一年。1990 年 7 月在 Studio Davout 全數位錄音與混音。編制逐軌不同：Michel Camilo 的鋼琴只在〈Claire Marie〉一軌，四軌的貝斯是 Lagrène 自己補的，Koono 的鍵盤貫串多軌並寫了〈Bass Ballad〉。〈All the Things You Are〉與 Coltrane 的〈Impressions〉是兩首改編。1990 年出版，製作是他與 Christian Pégand。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e39f58b9-cefd-3bda-b5dc-5d7097855b19&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/3913094",
+     "https://api.discogs.com/releases/15097340",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-03-02.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-05-11.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1990/BB-1990-07-14.pdf",
+     "https://itunes.apple.com/lookup?id=693581294&country=jp&entity=song&limit=300",
+     "https://musicbrainz.org/release-group/e39f58b9-cefd-3bda-b5dc-5d7097855b19"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2a/e6/6e/2ae66e43-adc6-eb70-a6d8-31c64f62ab10/mzaf_7242093783340830961.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "693581294",
+    "storefront": "GB"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Greg Osby",
+   "album": "Man-Talk For Moderns Vol. X",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group d1df6a65-f2f7-4be3-a702-5729e88ebbca。release-group 端點：title「Man Talk For Moderns Vol. X」（**無連字號，卡單已依第 535 條改判為 `Man-Talk For Moderns Vol. X`**）、artist-credit「Greg Osby」（bbef05c0 Person）、first-release-date **1991**、primary-type Album、secondary-types 空、tags jazz:1，轄下 1 個 release。release 端點：99e4600f（1991 US Official CD 10 軌，Blue Note CDP 7 95414 2，bc 077779541423）。十軌：Cad'lack Back／For Here to Go／**Man-Talk**／Like So...／On a Mission／Lo-Fi／Balaka／Black Moon (For Geri)／Carolla／2th (Twooth)。Discogs：master 616606、美國原壓 3606252（Blue Note CDP 7 95414 2，title **`Man-Talk For Moderns Vol. X`**）、歐版 15092034。紙本：**Billboard 1991-06-22 p58 Blue Note 整版廣告（「GREG OS[BY] MAN-TAL[K ...] VOL. [X] B4-95414」，同頁並列 Joe Lovano《Landmarks》B2-96108 與 Jerry Bergonzi《Standard Gonz》）**；人名另命中 1991-04-27 p39（True Blue Music 郵購廣告的藝人名單）、1991-05-11 p86（Andrew Hill《But Not Farewell》評介，Osby 為側人）、1991-06-15 p27（新音樂研討會名單）、1991-07-06 p48（M-Base 專題，記他 30 歲、與 Steve Coleman 共同主持 M-Base Collective）；**兩張爵士榜 1991 全年皆無本盤**。CAA：1 圖、front=true、來源 99e4600f。Apple us search：1460193556（10 軌，releaseDate 1990-01-01 與 ℗ 1991 打架）。",
+    "rgMbid": "d1df6a65-f2f7-4be3-a702-5729e88ebbca",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d1df6a65-f2f7-4be3-a702-5729e88ebbca/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 109,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=109，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "廠牌把它剪成單曲，找 D.J. Smash 做混音版往都會電台送。十軌全是 Osby 自己的作品，錄音與混音都在布魯克林的 Systems Two。兩把吉他、兩個鍵盤、兩把貝斯輪替，Billy Kilson 的鼓帶著碎拍；Steve Coleman 只在〈Man-Talk〉與〈Balaka〉兩軌對吹，Gary Thomas 只在〈On a Mission〉與〈Black Moon〉。這是他在這家廠牌的第一張，1991 年出版，製作是他自己。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d1df6a65-f2f7-4be3-a702-5729e88ebbca&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/15092034",
+     "https://api.discogs.com/releases/3606252",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-10-05.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-06-22.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/BB-1992-08-29.pdf",
+     "https://api.discogs.com/masters/616606/versions",
+     "https://musicbrainz.org/release-group/d1df6a65-f2f7-4be3-a702-5729e88ebbca"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/e2/3d/f8/e23df835-e1bd-b4c1-29ce-b32559ae15d2/mzaf_870577575772949321.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1460193556",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ralph Peterson",
+   "album": "Presents The Fo'tet",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 8edd79bf-812d-4e3f-bd4e-f1917d25706a。release-group 端點：title「Presents The Fo'tet」、artist-credit「Ralph Peterson」（**33283e4c Person**）、first-release-date **1991-02-12**、primary-type Album、secondary-types 空、tags jazz:1／post-bop:1，轄下 1 個 release。release 端點：5765c869（1991-02-12 US Official CD 9 軌，Blue Note CDP 7 95475 2，bc 077779547524）。九軌：Urban Omen／Thabo／Homegoing (for Lee Morgan)／Axis Mundi／Ballad for Queen Tiye／Miss Lady／I Can Dream, Can't I?／Confrontation／Johnny Come Lately。錄音 **1989-12-22～23 A&R Recording, NYC**（錄音師 Jim Anderson）；班底 Ralph Peterson d、**Don Byron cl／bcl**、Bryan Carrott vib、Melissa Slocum b；客席 David Murray ts/bcl、Frank Lacy tb/flh；製作 Kazunori Sugiyama、執行製作 Hitoshi Namekata、母帶 Yoshio Okazaki、封面攝影 Shigeru Uchiyama、美術 Kaoru Taku（Discogs 6327770，廠牌欄 Blue Note ＋ Somethin' Else 同號）。MB 同名實體反查：**`Ralph Peterson` 33283e4c（Person，本卡）與 `Ralph Peterson Trio` c50c8d6e（type null，c-149 a《Triangular》用的）是兩個實體**。紙本：**Billboard 1991-03-02 p80 評介欄（全稱＋製作人 Kazunori Sugiyama＋Blue Note 95475，並描述 Fo'tet 編制與 David Murray／Frank Lacy 的擴編）**、**1991-12-21 p24 年度回顧第 5 名（「Ralph Peterson,『Presents The Fo'tet』(Blue Note)」）**；Billboard 1990-06-30 p87 的新人專題亦點名他；**兩張爵士榜 1991 全年皆無本盤。**CAA：3 圖、front=true、來源 5765c869。Apple us search：0 筆本張（三筆皆後來的 Fo'tet 作品）。",
+    "rgMbid": "8edd79bf-812d-4e3f-bd4e-f1917d25706a",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8edd79bf-812d-4e3f-bd4e-f1917d25706a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 30,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=30，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Fo'tet 是四個人：鼓、單簧管、顫音琴、貝斯。1989 年 12 月 22、23 兩天在紐約 A&R Recording 錄完。四個人是他自己、Don Byron、Bryan Carrott 與 Melissa Slocum，沒有鋼琴也沒有銅管。David Murray 與 Frank Lacy 只在第二、六、八軌客座。九首由團員各寫一首以上。首發是日本 Somethin' Else TOCJ-5521，1990 年上市，製作人 Kazunori Sugiyama。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=8edd79bf-812d-4e3f-bd4e-f1917d25706a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/9898401",
+     "https://www.jazzdisco.org/ralph-peterson/catalog/",
+     "https://api.discogs.com/releases/6327770",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-03-02.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-12-21.pdf",
+     "https://itunes.apple.com/lookup?id=32021770&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/8edd79bf-812d-4e3f-bd4e-f1917d25706a"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "John Scofield Quartet",
+   "album": "Meant to Be",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c060963d-72a0-3b82-b83e-eae5338e75fc。release-group 端點：title「Meant to Be」、artist-credit「John Scofield Quartet」（**0ec5a8aa Group**）、first-release-date **1991-03-12**、primary-type Album、secondary-types 空、tags jazz:1，轄下 2 個 release。release 端點：55d8ccde（1991-03-12 US Official，**media format null**，11 軌，Blue Note CDP 7 95479 2，無 barcode）、9edc1314（1991 **DE** Official CD 11 軌，Blue Note `CDP 7 954792`，bc 077779547920）。十一軌：Big Fan／Keep Me in Mind／Go Blow／Chariots／The Guiness Spot（Discogs 作 **The Guinness Spot**）／Mr. Coleman to You／Eisenhower／Meant to Be／Some Nerve／Lost in Space／French Flics。錄音與混音 **1990 年 12 月 Power Station, NYC**（James Farber 錄音兼混音）；班底 John Scofield g（全部作曲）、**Joe Lovano ts／alto clarinet**、Marc Johnson b、Bill Stewart d；製作 **Don Grolnick**；母帶 Bob Ludwig（Discogs 1309377）。Discogs master 550932 的版本群：1309377（US 1991 CD）、5033103（US 1991 卡帶 B4-95479）、22741460（US 1991 Columbia House 唱片俱樂部版 CDP-595479）、11085496（Japan 1991 TOCJ-5290）、9042021（Indonesia 1991 卡帶 TC 795479-4）、18203752／22537151（Europe 無年份再壓）——**六個版本的藝人欄全部是「The John Scofield Quartet*」**。紙本：**Billboard 1991-03-23 p88 評介欄（藝人名只印「JOHN SCOFIELD」）**、**1991-03-30 p43 Blue Note 整版巡演廣告（點名 Joe Lovano、Marc Johnson、Bill Stewart，並列巡演城市）**、**Top Jazz Albums 1991-04-13 p80 NEW 第 15 名**。CAA：1 圖、front=true、來源 55d8ccde。Apple us search：第一種查法回空（端點暫時錯誤），第二種查法命中 1455669238（11 軌，artistName「John Scofield」）。",
+    "rgMbid": "c060963d-72a0-3b82-b83e-eae5338e75fc",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c060963d-72a0-3b82-b83e-eae5338e75fc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 207,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=207，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同一個四重奏只留下 Joe Lovano，貝斯與鼓全換了。1990 年 12 月在紐約 Power Station 錄完並在同一間混音。Lovano 除了次中音還吹中音單簧管，貝斯與鼓換成 Marc Johnson 與 Bill Stewart，製作人換成 Don Grolnick。十一首全是 Scofield 自己寫的，〈Go Blow〉八分十九秒最長。1991 年出版，Billboard 當年 3 月的評介把它稱作前一年《Time on My Hands》的續作。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c060963d-72a0-3b82-b83e-eae5338e75fc&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1309377",
+     "https://en.wikipedia.org/wiki/Meant_to_Be_(John_Scofield_album)",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-03-23.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-03-30.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-04-13.pdf",
+     "https://api.discogs.com/masters/550932/versions",
+     "https://musicbrainz.org/release-group/c060963d-72a0-3b82-b83e-eae5338e75fc"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0e/be/b4/0ebeb44b-4c00-fb47-5063-6359a24248c7/mzaf_17402067448365057347.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1455669238",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Michel Petrucciani",
+   "album": "Playground",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 54e064d5-70e7-3786-b142-a3d60c0fea14。回問 release-group 端點（inc=artist-credits+releases）：title「Playground」、artist-credit「Michel Petrucciani」（2b75141c Person）、first-release-date 1991、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點（inc=media+labels+recordings+artist-credits）：74a899be（1991 US Official CD 11 軌，Blue Note CDP 7 95480 2，barcode 077779548026）、396b0c83（BR Official CD 11 軌，同目錄號，**無日期**）。Discogs 原壓 11548709（US，released 1991-06-06，Clinton Recording Studio），錄音與 overdub 在 Clinton Recording Studios NY、混音 Master Sound Studios Astoria、母帶 Sterling Sound；班底 Petrucciani p(Steinway)/synth、Anthony Jackson b、Omar Hakim d、Aldo Romano d、Steve Thornton perc、Adam Holzman synth/co-arranger，製作 Michel Petrucciani ＋ Eric Kressmann。",
+    "rgMbid": "54e064d5-70e7-3786-b142-a3d60c0fea14",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/54e064d5-70e7-3786-b142-a3d60c0fea14/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8193,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一軌裡有一首的作者是合成器手 Adam Holzman。錄音與疊錄在紐約 Clinton Recording Studios，混音在 Astoria 的 Master Sound，盤上沒印錄音日期。五人編制是他的鋼琴與合成器、Anthony Jackson 的電貝斯、Omar Hakim 的鼓、Steve Thornton 的打擊，加 Holzman 的合成器兼共同編曲；Aldo Romano 只打第五軌〈Rachid〉。1991 年出版，盤上題獻給他父親。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=54e064d5-70e7-3786-b142-a3d60c0fea14&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/11548709",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-20.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-27.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1991/CB-1991-08-17.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-02-15.pdf",
+     "https://api.discogs.com/releases/26817293",
+     "https://itunes.apple.com/lookup?id=724707690&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/54e064d5-70e7-3786-b142-a3d60c0fea14"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/90/e5/5e90e5a9-b43b-98af-5dfd-2a78f0e5a9f8/mzaf_12117981724301996166.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724707690",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Andrew Hill",
+   "album": "But Not Farewell",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6883812d-9af1-31d3-93ef-6369e90acdd0。回問 release-group 端點：title「But Not Farewell」、artist-credit「Andrew Hill」（ede80a9f Person）、first-release-date 1991、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：356b51c4（1991 US Official CD 7 軌，Blue Note，**MB 登 CDP 7 95971 2**，barcode 077779497126）、2d4686b5（XW Official Digital Media 7 軌，Capitol Records，barcode 0602577127236，無日期，2019 數位重發）。Discogs 5647938（US 1991，Blue Note CDP 7 94971 2）notes：Clinton Recording Studio, NYC，1990-07-12（第 1–4 軌）、1990-07-13（第 5 軌）、1990-09-16（第 6、7 軌）；製作 Michael Cuscuna。日本 TOCJ-5292（13597110，1991，Toshiba EMI）。",
+    "rgMbid": "6883812d-9af1-31d3-93ef-6369e90acdd0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6883812d-9af1-31d3-93ef-6369e90acdd0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 372,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=372，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "七軌是三種編制：五個人、兩個人、他一個人。1990 年 7 月 12、13 日與 9 月 16 日分三天錄於紐約 Clinton Recording Studio。前四軌是五重奏：Greg Osby 的中音與高音、Robin Eubanks 的長號，加貝斯與鼓；〈Friends〉只剩他與 Osby；末兩軌是鋼琴獨奏，樂評說〈Sunnyside〉帶福音味。〈Georgia Ham〉十七分十九秒最長，七軌全是他寫的。1991 年出版，製作人 Michael Cuscuna。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6883812d-9af1-31d3-93ef-6369e90acdd0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/5647938",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-05-11.pdf",
+     "https://api.discogs.com/releases/13597110",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/90s/1992/CB-1992-03-14.pdf",
+     "https://itunes.apple.com/lookup?id=1438593414&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/6883812d-9af1-31d3-93ef-6369e90acdd0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/91/70/26/917026a1-19f9-73d8-42e6-7071abbba170/mzaf_3719642412566171172.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1438593414",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Ellis Marsalis Trio",
+   "album": "Ellis Marsalis Trio",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1a04ac38-ea71-3357-95e4-f23cca68c186。回問 release-group 端點：title「Ellis Marsalis Trio」、artist-credit「The Ellis Marsalis Trio」（0e2f8683 Group）、first-release-date **1991-04**、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：d5db4779（1991-04 **XW** Official CD 11 軌，Blue Note CDP 7 96107 2，barcode 077779610723）——**MB 只建了一筆且國別是 XW**，依第 994 條「release-count 是 1 一律去 Discogs 補全世界視野」已查：Discogs 11208764（US 1991）＋ 37268010（US Club Edition Reissue，無年）。十一軌：Syndrome／Emily／Just Squeeze Me／Little Niles／Limehouse Blues／A Moment Alone／Lil' Boy Man／Jitterbug Waltz／The Garden／Chapter One／I Thought About You；製作 Delfeayo Marsalis、executive producer Hitoshi Namekata。",
+    "selfTitledVerified": true,
+    "rgMbid": "1a04ac38-ea71-3357-95e4-f23cca68c186",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1a04ac38-ea71-3357-95e4-f23cca68c186/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 54,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=54，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "紐奧良的鋼琴教父，節奏組卻是從兒子的樂團借來的。1990 年 3 月 18 日一天錄完於紐約 RCA Studios，直接錄進 Sony PCM 1630 數位母帶。三重奏的貝斯是 Robert Hurst、鼓是 Jeff Watts，兩人當時在 Branford 與 Wynton 團裡。十一軌裡四首是他寫的，〈Jitterbug Waltz〉七分五十三秒最長。1991 年出版，製作人是另一個兒子 Delfeayo Marsalis，6 月進爵士榜，在榜將近一年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1a04ac38-ea71-3357-95e4-f23cca68c186&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/11858648",
+     "https://api.discogs.com/releases/11208764",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-06-22.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-06-20.pdf",
+     "https://itunes.apple.com/search?term=Ellis%20Marsalis%20Trio&country=us&media=music&entity=album&limit=12",
+     "https://musicbrainz.org/release-group/1a04ac38-ea71-3357-95e4-f23cca68c186"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joe Lovano",
+   "album": "Landmarks",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 4346dfb7-b9b1-3b93-a7ed-710389825ee1。回問 release-group 端點：title「Landmarks」、artist-credit「Joe Lovano」（f3f7cd82 Person）、first-release-date **1991-06-04**、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：886c20de（1991-06-04 US Official CD 10 軌，Blue Note CDP 7 96108 2，barcode 077779610822）、38d5b552（2002 GB Official CD 10 軌，Blue Note，無目錄號，barcode 0077779610822）。Discogs 15685673 notes：Recorded August 13 & 14, 1990, mixed September 25 & 26, 1990 at Sorcerer Sound Studios, NYC；班底 Lovano ts、John Abercrombie g、Kenny Werner p、Marc Johnson b、Bill Stewart d；製作 Joe Lovano ＋ John Scofield、executive producer Hitoshi Namekata、內頁文 Bob Blumenthal。",
+    "rgMbid": "4346dfb7-b9b1-3b93-a7ed-710389825ee1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4346dfb7-b9b1-3b93-a7ed-710389825ee1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 47962,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "製作人欄印著 John Scofield，吉他手卻是別人。1990 年 8 月 13、14 日錄、9 月 25、26 日混音，都在紐約 Sorcerer Sound。五重奏是他的次中音、John Abercrombie 的吉他、Kenny Werner 的鋼琴，加貝斯與鼓；Scofield 掛製作，沒彈這張。十軌裡九軌是他自己寫的。1991 年出版，首發是日本 Somethin' Else TOCJ-5530、2 月 22 日上市，美版 6 月 4 日才出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=4346dfb7-b9b1-3b93-a7ed-710389825ee1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/15685673",
+     "https://api.discogs.com/releases/14580052",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-06-29.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-20.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-06.pdf",
+     "https://itunes.apple.com/lookup?id=743844629&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/4346dfb7-b9b1-3b93-a7ed-710389825ee1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/1f/0b/c81f0be2-0f46-fd7d-ef54-0b7deabed67f/mzaf_10489201112390295573.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "743844629",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jerry Bergonzi",
+   "album": "Standard Gonz",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 30b0e88a-b12b-4d1e-b90c-59f6113935a1。回問 release-group 端點：title「Standard Gonz」、artist-credit「Jerry Bergonzi」（30ad70b4 Person）、first-release-date 1991、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：aeb5c822（1991 US Official CD 9 軌，Blue Note CDP 7 96256 2，barcode 077779625628）。**release-count 是 1**，依第 994 條已去 Discogs 補全世界視野：只有 6470173 一筆（US 1991-04-29），無日／歐版。九軌：If I Were a Bell／Come Rain or Come Shine／McCoy／Just Friends／Jab／Arbonius Unt／Here's That Rainy Day／Night and Day／Conjunction。錄音 1989-10-19 與 1990-04-05，OutPost Studio, Stoughton, MA，錄混音 Jim Siegal、母帶 Yoshio Okazaki。",
+    "rgMbid": "30b0e88a-b12b-4d1e-b90c-59f6113935a1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.scdn.co/image/ab67616d0000b273e94b53bc004e322b41328647",
+    "source": "spotify",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "https://open.spotify.com/album/4jym5FR0j3jAdcazPDLLDa"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11826,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "標準曲五首、自己的曲四首，出版公司就叫 Gonz Music。兩個場次相隔近半年，1989 年 10 月 19 日與 1990 年 4 月 5 日都在麻州 Stoughton 的 OutPost Studio。四重奏配 Joey Calderazzo 的鋼琴、Dave Santoro 的貝斯與 Adam Nussbaum 的鼓。〈McCoy〉的曲名就是致意對象。製作是他本人，1991 年出版，首發是日本 Somethin' Else TOCJ-5529、1 月 23 日上市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=30b0e88a-b12b-4d1e-b90c-59f6113935a1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/6470173",
+     "https://api.discogs.com/releases/10649565",
+     "https://itunes.apple.com/search?term=Jerry%20Bergonzi%20Standard%20Gonz&country=us&media=music&entity=album&limit=12",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-06.pdf",
+     "https://musicbrainz.org/release-group/30b0e88a-b12b-4d1e-b90c-59f6113935a1"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "George Adams",
+   "album": "Old Feeling",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 6749d8c9-662a-44b5-be3b-b0297093834c。回問 release-group 端點：title「Old Feeling」、artist-credit「George Adams」（b1e7da08 Person）、first-release-date 1991、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：9925db22（1991 US Official CD 8 軌，Blue Note CDP 7 96689 2，無 barcode）、02b4baa2（1991 US Official，**media format null／barcode null／catalog-number null**，8 軌，Blue Note）——同碟重複建檔。Discogs 3351667 notes：Recorded at Studio B, Clinton Recording Studios, NYC, March 11 & 12, 1991；mixed at Effanel Towers, NYC, May 20 & 21, 1991。八軌：Better Git Hit in Yo' Soul／That Old Feeling／The Wanderer／As Time Goes By／Melody for Monet／The Cry／Teamwork／Just the Way You Are。班底 Adams ts/vo、Hannibal Marvin Peterson tp、Jean-Paul Bourelly g、Ray Gallon p、Santi DeBriano b、Lewis Nash d；製作 Kazunori Sugiyama、executive producer Hitoshi Namekata、錄混音 Jim Anderson。",
+    "rgMbid": "6749d8c9-662a-44b5-be3b-b0297093834c",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6749d8c9-662a-44b5-be3b-b0297093834c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 33,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=33，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "日本版少了兩軌，其中一首是 Mingus 的曲子。1991 年 3 月 11、12 日錄於紐約 Clinton 的 B 棚。六重奏是他的次中音與人聲、Hannibal Marvin Peterson 的小號，加吉他、鋼琴、貝斯、鼓。美版八軌裡他獨力寫的只有〈Melody for Monet〉；日本 TOCJ-5537 只有六軌，東芝拿掉〈Better Git Hit In Yo' Soul〉與〈Teamwork〉。1991 年出版，製作人 Kazunori Sugiyama。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6749d8c9-662a-44b5-be3b-b0297093834c&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/3351667",
+     "https://api.discogs.com/releases/4728571",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-10-10.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-12-26.pdf",
+     "https://itunes.apple.com/search?term=George%20Adams%20Old%20Feeling&country=us&media=music&entity=album&limit=12",
+     "https://musicbrainz.org/release-group/6749d8c9-662a-44b5-be3b-b0297093834c"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jack DeJohnette's Special Edition",
+   "album": "Earth Walk",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 335af437-8f8e-3f90-a3f9-9ad2d11188f7。回問 release-group 端點：title「Earth Walk」、artist-credit「Jack DeJohnette's Special Edition」（17bef10e Group）、first-release-date 1991、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：a45b887b（1991 US Official CD 10 軌，Blue Note CDP 7 96690 2，barcode 077779669028）。**release-count 是 1**，依第 994 條已去 Discogs 補全世界視野：11406629（US 1991）、1330562（UK & Europe 1991）、12496122（Canada 1991）。Discogs notes：Recorded in June 1991 at Dreamland Studios, West Hurley, NY；mixed at Bearsville Studios, July 1991；mastered at Sterling Sound。班底 DeJohnette d／曲、Greg Osby as+ss、Gary Thomas ts+fl、Michael Cain p(Yamaha MIDI)+synth(Korg T2/T3)、Lonnie Plaxico b(acoustic+electric)、Joan Henry voice(animal sounds)；executive producer Hitoshi Namekata、母帶 Greg Calbi、封面畫 Lydia DeJohnette。",
+    "rgMbid": "335af437-8f8e-3f90-a3f9-9ad2d11188f7",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/335af437-8f8e-3f90-a3f9-9ad2d11188f7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 54,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=54，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "同期樂評說：大多數曲子對電台來說都太長了。1991 年 6 月錄於紐約州 West Hurley 的 Dreamland Studios，7 月在 Bearsville 混音，盤上只標到月。六人編制有 Greg Osby 的中音與高音、Gary Thomas 的次中音與長笛，加鍵盤、合成器與貝斯，他自己在鼓椅上兼製作。十軌全是他寫的，〈Earth Walk〉十三分、〈Monk's Plumb〉十二分；第一軌與第十軌同名，一首五分半、一首不到一分鐘。1991 年出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=335af437-8f8e-3f90-a3f9-9ad2d11188f7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/11406629",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-02-15.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-03-14.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-03-28.pdf",
+     "https://api.discogs.com/releases/1330562",
+     "https://itunes.apple.com/search?term=Jack%20DeJohnette%20Special%20Edition&country=us&media=music&entity=album&limit=12",
+     "https://musicbrainz.org/release-group/335af437-8f8e-3f90-a3f9-9ad2d11188f7"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rick Margitza",
+   "album": "This Is New",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 02b64524-2f99-467a-aabe-eb0c91c978ba。回問 release-group 端點：title「This Is New」、artist-credit「Rick Margitza」（fc171442 Person）、first-release-date 1991、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：ff6bd09d（1991 **country null** Official CD 9 軌，Blue Note CDP 7 97196 2，barcode 077779719624）。**release-count 是 1**，已去 Discogs 補全世界視野：2894843（USA & Canada 1991）、19387162（Club Edition）。Discogs notes：Recorded May 27 & 28, 1991 in New York City。九軌：This Is New／On Green Dolphin Street／Body & Soul／Just in Time／Beware of the Dog／Invitation／Everything Happens to Me／When Will the Blues Leave?／Gypsies。班底 Margitza ts+編、Joey Calderazzo p、Robert Hurst b、Jeff 'Tain' Watts d、Tim Hagans tp（第 5 軌）；製作 Matt Pierson、錄音 Jim Anderson。紙本：Billboard 1992-01-11 p52 評介、1992-02-01 p35 TOP JAZZ ALBUMS 以 NEW 進榜、02-15 第 19、02-29 第 20、03-14 第 23；Cash Box 1992-02-08 p9 第 34、02-15 p18 第 35。",
+    "rgMbid": "02b64524-2f99-467a-aabe-eb0c91c978ba",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/4a/71/05/4a71058d-ec53-52c0-a5c6-0a1d022a3d83/20UMGIM20484.rgb.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1514623507",
+    "note": "試聽探測釘定的 collectionId 1514623507（us）：Rick Margitza — This Is New"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 281,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=281，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "九軌裡有兩軌抽掉鋼琴，只剩薩克斯風、貝斯與鼓。1991 年 5 月 27、28 日錄於紐約 Power Station，母帶在 Masterdisk。四重奏是他的次中音、Joey Calderazzo 的鋼琴，加貝斯與鼓；沒有鋼琴的是〈Body & Soul〉與〈When Will The Blues Leave?〉，Tim Hagans 的小號只在〈Beware Of The Dog〉。1991 年出版，製作人 Matt Pierson，1992 年 2 月進爵士榜。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=02b64524-2f99-467a-aabe-eb0c91c978ba&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2894843",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-01-11.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-02-01.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-01-12.pdf",
+     "https://api.discogs.com/releases/26490761",
+     "https://itunes.apple.com/lookup?id=1514623507&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/02b64524-2f99-467a-aabe-eb0c91c978ba"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/97/c8/a0/97c8a0b8-a154-5b5a-2de9-756848801954/mzaf_2748885260712159827.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1514623507",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gonzalo Rubalcaba",
+   "album": "The Blessing",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 81654050-2df0-365d-ae05-d6d2c9fa8bb0。回問 release-group 端點：title「The Blessing」、artist-credit「Gonzalo Rubalcaba」（70053535 Person）、first-release-date **1991-10-26**、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：9136cf9c（1991-10-26 US Official CD 10 軌，Blue Note CDP 7 97197 2，barcode 077779719723）。**release-count 是 1**，已去 Discogs 補全世界視野：1341179（US 1991-10-26）、26338862（US，無年）。Discogs notes：Recorded and mixed at McClear Place, Toronto, Canada on May 12-15, 1991。十軌：Circuito／Sandino／Besame Mucho／Giant Steps／Sin Remedio, El Mar.／Silver Hollow／The Blessing／Blue in Green／Sinpunto y Contracopa／Mima。班底 Rubalcaba p、Charlie Haden b、Jack DeJohnette d；executive producer Hitoshi Namekata。紙本：Billboard 1991-11-23 p59 TOP JAZZ ALBUMS NEW、12-07 p35 第 15、12-21 p43 第 14、1992-01-04 p23 第 13、01-18 p31 第 13、02-01 p35 第 12。",
+    "rgMbid": "81654050-2df0-365d-ae05-d6d2c9fa8bb0",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/81654050-2df0-365d-ae05-d6d2c9fa8bb0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13120,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "三個人在多倫多碰面，各自帶了曲子來。1991 年 5 月 12 到 15 日在 McClear Place 錄音並混音。三重奏是他的鋼琴、Charlie Haden 的貝斯、Jack DeJohnette 的鼓。〈Sandino〉出自 Haden、〈Silver Hollow〉出自 DeJohnette，他自己寫了四首，另有 Ornette Coleman 與 Coltrane 的曲子。製作是他本人，1991 年出版，首發是日本 TOCJ-5535、7 月 19 日上市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=81654050-2df0-365d-ae05-d6d2c9fa8bb0&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1341179",
+     "https://api.discogs.com/releases/4091637",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-11-23.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1991/BB-1991-07-06.pdf",
+     "https://itunes.apple.com/lookup?id=724693457&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/81654050-2df0-365d-ae05-d6d2c9fa8bb0"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8e/1e/57/8e1e57ca-e618-6b3e-3778-225f07456181/mzaf_1764699915546842562.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724693457",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Don Pullen & The African-Brazilian Connection",
+   "album": "Kele Mou Bana",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c0c898c0-d7c2-3fbe-aeed-8328236ccd8b。回問 release-group 端點：title「Kele Mou Bana」、artist-credit「Don Pullen & The African-Brazilian Connection」（5f633e7f Group）、**first-release-date 1991（已改判 1992，見 risk）**、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：4f305f33（**1991** US Official CD 7 軌，Blue Note CDP 7 98166 2，barcode 077779816620）。**release-count 是 1**，依第 994 條去 Discogs 補全世界視野：3921327（US **1992**）、16768980（US 1992）。七軌：Capoeira／Listen to the People (Bonnie's Bossa Nova)／Kele Mou Bana／L.V.M. - Directo ad Assunto／Yebino Spring／Doo-Wop Daze／Cimili - Drum Talk。班底 Pullen p、Carlos Ward as、Nilson Matta b、Mor Thiam djembe/rainstick/wind chimes、Guilherme Franco timbales/berimbau/perc；製作 Michael Cuscuna、母帶 Ron McMaster、內頁文 Howard Mandel。紙本：Billboard 1992-02-29 p44 新片欄、1992-03-07 p30 專欄、1992-03-14 p63 評介。",
+    "rgMbid": "c0c898c0-d7c2-3fbe-aeed-8328236ccd8b",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c0c898c0-d7c2-3fbe-aeed-8328236ccd8b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 95,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=95，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "編制表裡找不到鼓手：節奏全交給 djembe 與 berimbau。錄音在紐約 East Side Sound，盤上沒印錄音日期。五個人是他的鋼琴、Carlos Ward 的中音、Nilson Matta 的貝斯，節奏由 Mor Thiam 與 Guilherme Franco 兩位打擊手扛。人聲出現三次，一次是他的子女 Keith 與 Tameka Pullen，另兩次是 Mor Thiam。七軌裡他只寫了兩首。1992 年出版，製作人 Michael Cuscuna。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c0c898c0-d7c2-3fbe-aeed-8328236ccd8b&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/3921327",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-02-29.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-03-07.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-03-14.pdf",
+     "https://api.discogs.com/releases/18584944",
+     "https://itunes.apple.com/lookup?id=1453918038&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/c0c898c0-d7c2-3fbe-aeed-8328236ccd8b"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7f/66/6a/7f666a58-5224-7dde-6b37-31f2ee9acba9/mzaf_11632299915814771443.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1453918038",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gonzalo Rubalcaba",
+   "album": "Images: Live At Mt. Fuji",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 38dfa386-621d-4fea-a2c6-0703c88f769f。回問 release-group 端點：title「Images: Live At Mt. Fuji」、artist-credit「Gonzalo Rubalcaba」（70053535 Person）、**first-release-date 1991-08-24（＝錄音首日，非發行日）**、primary-type Album、**secondary-types ['Live']**，轄下 2 個 release。release 端點：01a28c1c（**1991-08-24 JP** Official CD 9 軌，Blue Note CDP 7 99492 2，無 barcode）、c94da22b（**1991-12-04 JP** Official CD 9 軌，somethin' else TOCJ-5540，無 barcode）。Discogs：30153698（Europe 1991，EMI Uden）、3947428（US 1991）、34383178（US，無年）。九軌：No Name／Imagine／Autumn Leaves／Peace and Quiet Time／Gaby／Joao／Ebony／Giant Steps／Mima。班底 Rubalcaba p、John Patitucci b、Jack DeJohnette d。紙本：Billboard 1992-09-12 p35 TOP JAZZ ALBUMS NEW、09-26 p45 第 11、10-10 p36 第 21。",
+    "rgMbid": "38dfa386-621d-4fea-a2c6-0703c88f769f",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/38dfa386-621d-4fea-a2c6-0703c88f769f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 58,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=58，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "兩天的音樂節現場，頭一天只錄下其中兩首。1991 年 8 月 24、25 兩日錄於靜岡的 Mt. Fuji Jazz Festival，24 日只錄了〈Joao〉與〈Ebony〉，其餘七軌是 25 日的。三重奏的貝斯是 John Patitucci、鼓是 Jack DeJohnette。〈Giant Steps〉九分五十八秒最長。末軌〈Mima〉是鋼琴獨奏，歐版盤面特地印了這一句。1991 年出版，首發是日本 TOCJ-5540、12 月 4 日上市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=38dfa386-621d-4fea-a2c6-0703c88f769f&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/3947428",
+     "https://api.discogs.com/releases/30153698",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-09-12.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-10-31.pdf",
+     "https://itunes.apple.com/lookup?id=724456698&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/38dfa386-621d-4fea-a2c6-0703c88f769f"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/f9/d2/60f9d216-3904-1de4-c496-0ad311708385/mzaf_13036000494909008115.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724456698",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tommy Smith",
+   "album": "Standards",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 90a09fb6-49e4-4eb2-978c-f7083dbabf11。回問 release-group 端點：title「Standards」、artist-credit「Tommy Smith」（c511b970 Person）、first-release-date 1991、primary-type Album、**secondary-types 空**、轄下 1 個 release。release 端點：25295e43（1991 **country null** Official CD 14 軌，Blue Note CDP7964522，barcode 077779645220）。**release-count 是 1**，依第 994 條去 Discogs 補全世界視野：2770446（UK & Europe 1991，CDP 7964522／CDBLT 1003，Made in UK）、6082614（UK 1991 黑膠 BLT 1003）、22865027（UK 1991 卡帶 TC-BLT 1003）、33353387（US 1991，CDP 7 96452 2）、22780904（Japan 1991，TOCJ-5617）。十四軌：Star Eyes／Speak Low／Sky Lark／September Song／Blacken Blue／Mil Dew／You've Changed／My Secret Love／Night and Day／My Old Flame／Julia／Lover／Dream Scapes (Part 1)／Silent But Deadly (Dream Scapes Part 4)。班底 Smith ts＋製作、Niels Lan Doky p、Mick Hutton b、Ian Froman d；錄混音 Jan Erik Kongshaug（Rainbow Studio, Oslo），1991 年 1 月。",
+    "rgMbid": "90a09fb6-49e4-4eb2-978c-f7083dbabf11",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a2950985478_16.jpg",
+    "source": "bandcamp",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "note": "https://tommysmithsaxophonist.bandcamp.com/album/standards"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 38,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=38，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "盤名叫《Standards》，錄音卻在奧斯陸。1991 年 1 月在 Rainbow Studio 錄成，掌機是 Jan Erik Kongshaug，盤上只標到月。四重奏是他的次中音、丹麥鋼琴家 Niels Lan Doky、英國貝斯手 Mick Hutton 與鼓手 Ian Froman。英國黑膠 BLT 1003 收十二軌，他自己的曲只有兩首；最長的〈Night and Day〉六分零九秒，披頭四的〈Julia〉夾在其中。製作是他自己，1991 年出版，首發在英國。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=90a09fb6-49e4-4eb2-978c-f7083dbabf11&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/6082614",
+     "https://api.discogs.com/releases/2770446",
+     "https://api.discogs.com/releases/33353387",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-02-15.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-02-22.pdf",
+     "https://musicbrainz.org/release-group/90a09fb6-49e4-4eb2-978c-f7083dbabf11"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Duke Ellington",
+   "album": "1969 All-Star White House Tribute",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 1fa3890d-4351-343b-b020-db844493a4ce。回問 release-group 端點：title「1969 All-Star White House Tribute」、artist-credit「Duke Ellington & His Orchestra」（c01557ad **Orchestra**）、**first-release-date 1992（已改判 2002，見 risk）**、primary-type Album、**secondary-types 空（實為現場錄音）**、轄下 1 個 release。release 端點：c35e5ebb（**1992** US Official CD **28 軌**，Blue Note 7243 5 35249 2 0，無 barcode）。**release-count 是 1**，依第 994 條去 Discogs 補全世界視野：8897849（US **2002**）、2498164（Europe 2002）、21683860（US 2002 Club）、22595816／15743560（US 2002 Promo）、11505883（Japan 2002，TOCJ-66133）。Discogs notes：「Record April 29, 1969, in the East Room of The White House, Washington, D.C.」「℗&© 2002 Capitol Records, Inc.」。班底：Clark Terry tp/flh、Bill Berry tp、J.J. Johnson tb、Urbie Green tb、Paul Desmond as、Gerry Mulligan bs、Jim Hall g、Hank Jones p、Milt Hinton b、Louis Bellson d，客座鋼琴 Dave Brubeck／Billy Taylor／Duke Ellington；製作 Bill Kirchner、數位轉錄 Malcolm Addey、內頁文 Doug Ramsey、照片 National Archives and Records Administration。**兩刊 1991–92 零命中（已逐期查過 35249 與「White House Tribute」）——本張的發行年根本不在那兩年，零命中本身就是改判 2002 的旁證。**",
+    "rgMbid": "1fa3890d-4351-343b-b020-db844493a4ce",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1fa3890d-4351-343b-b020-db844493a4ce/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 389,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=389，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一九六九年白宮東廳的錄音，三十三年後才第一次上市。1969 年 4 月 29 日，艾靈頓七十歲生日，尼克森當場頒給他自由勳章。台上是 Clark Terry、J.J. Johnson、Paul Desmond、Gerry Mulligan、Jim Hall 與 Louis Bellson 的拼盤，艾靈頓樂團的團員一個都不在，他只是三位客座鋼琴之一；Joe Williams 與 Mary Mayo 開口唱。末軌〈Pat〉是從未發行的鋼琴即興。母帶 2002 年才首度商業發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1fa3890d-4351-343b-b020-db844493a4ce&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-08-24.pdf",
+     "https://api.discogs.com/releases/8897849",
+     "https://api.discogs.com/releases/11505883",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-09-28.pdf",
+     "https://itunes.apple.com/lookup?id=724686180&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/1fa3890d-4351-343b-b020-db844493a4ce"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5d/bd/0f/5dbd0f25-8102-a369-def0-0068e1124f1c/mzaf_7545225865440675113.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "724686180",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Biréli Lagrène, André Ceccarelli & Niels-Henning Ørsted Pedersen",
+   "album": "Standards",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group c6081f70-f67a-3b78-8b80-73bf7639ed07。回問 release-group 端點：title「Standards」、artist-credit「Biréli Lagrène」（57e0894c Person，joinphrase 「, 」）＋「André Ceccarelli」（68a155b4 Person，joinphrase 「 & 」）＋「Niels‐Henning Ørsted Pedersen」（3a3cec56 Person，**MB 原字串用 U+2010**）、first-release-date 1992、primary-type Album、secondary-types 空，轄下 2 個 release。release 端點：706a372b（1992 **FR** Official CD 12 軌，Blue Note 7802512，barcode 077778025122）、1eb457d4（1992 US Official CD 12 軌，Blue Note **D 101336** ＋ BMG Direct Marketing, Inc. D 101336，無 barcode）。Discogs：9165423（US 1992，0777 7 80251 2 2）、4184432／14964283／19420294（FR／Europe，無年）、14855854（Canada 1992）。十二軌：C'est Si Bon／Softly, as in a Morning Sunrise／Days of Wine and Roses／Stella by Starlight／Smile／Autumn Leaves／Teach Me Tonight／Donna Lee／Body and Soul／Ornithology／How Insensitive (Insensatez)／Nuages。班底 Lagrène g、Ceccarelli d/perc、NHØP ab、Dominique Di Piazza el-b；製作 Lagrène ＋ Christian Pégand、associate producer/錄混音 Malcolm Pollack、executive producer Dominique Pagouapé、母帶 EMI Studios France。",
+    "rgMbid": "c6081f70-f67a-3b78-8b80-73bf7639ed07",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c6081f70-f67a-3b78-8b80-73bf7639ed07/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 25,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=25，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十二首全是別人的曲，收在 Django 的〈Nuages〉。1992 年 6 月在巴黎 Studio Davout 全數位錄音與混音，盤上只標到月。編制是 Lagrène 的吉他、Niels-Henning Ørsted Pedersen 的原聲貝斯、André Ceccarelli 的鼓與打擊。Dominique Di Piazza 的電貝斯只在末軌一首，其餘十一軌是三人。1992 年出版，製作是 Lagrène 與 Christian Pégand。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=c6081f70-f67a-3b78-8b80-73bf7639ed07&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/9165423",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-05-08.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1993/BB-1993-07-03.pdf",
+     "https://api.discogs.com/releases/14855854",
+     "https://itunes.apple.com/search?term=Bireli%20Lagrene%20Standards&country=us&media=music&entity=album&limit=12",
+     "https://musicbrainz.org/release-group/c6081f70-f67a-3b78-8b80-73bf7639ed07"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "note": "各 storefront 逐一探測後仍查無可用的固定試聽片段。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Eliane Elias",
+   "album": "Fantasia",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group 3b05d208-4400-4c2e-b4a5-9bcfcde2659d。回問 release-group 端點：title「Fantasia」、artist-credit「Eliane Elias」（9974cbc1 Person）、first-release-date **1992-09-22**、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：1cd78f9b（1992-09-22 US Official CD 8 軌，Blue Note **B2-96146**，無 barcode）。**release-count 是 1**，依第 994 條去 Discogs 補全世界視野：2535432（US 1992，CDP 0777 7 96146 2 2）、8371537（Canada 1992）、15521282（Europe 再壓）、10202148（US 1992 Club Edition，D 100174）。Discogs notes：Recorded at Sound on Sound Recording, New York City - March 1992；©℗1992 Somethin'else Records a division of Toshiba-EMI Ltd.；glass mastered date Aug. 13, 1992。八軌：The Girl from Ipanema (Garôta de Ipanema)／Wave／Milton Nascimento Medley／Sabe Você (Do You Know)／Bahia (Na Baixa do Sapateiro)／Fantasia (To Amanda)／No More Blues (Chega de Saudade)／Ivan Lins Medley。班底 Elias p/vo/編/製作、Eddie Gómez b、Marc Johnson b、Jack DeJohnette d、Peter Erskine d、Naná Vasconcelos perc、Amanda Elias Brecker vo；associate producer Steve Khan、executive producer Hitoshi Namekata、錄混音 James Farber。紙本：Billboard 1992-10-10 p53 評介、11-07 p34 TOP CONTEMPORARY JAZZ ALBUMS NEW、11-21 p45 第 11、12-05 p39 第 11、12-19 p33 第 10；Cash Box 1992-11-14 p10 DEBUT。",
+    "rgMbid": "3b05d208-4400-4c2e-b4a5-9bcfcde2659d",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3b05d208-4400-4c2e-b4a5-9bcfcde2659d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1334,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=1334，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "第八軌那組組曲裡唱歌的就是 Ivan Lins 本人。1992 年 3 月錄於紐約 Sound on Sound Recording。八軌裡有兩組組曲，第三軌串三首 Milton Nascimento，第八軌四首 Ivan Lins。節奏組輪替，Eddie Gómez 與 Jack DeJohnette 在五軌，Marc Johnson 與 Peter Erskine 在第三、五軌。製作與編曲都是她自己，1992 年出版，首發是日本 TOCJ-5542、5 月 27 日上市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=3b05d208-4400-4c2e-b4a5-9bcfcde2659d&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2535432",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-10-10.pdf",
+     "https://api.discogs.com/releases/26197319",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-12-19.pdf",
+     "https://itunes.apple.com/lookup?id=1509394026&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/3b05d208-4400-4c2e-b4a5-9bcfcde2659d"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b1/fe/cc/b1feccd8-e42c-c04a-e885-cadb76a5f328/mzaf_12881218227622707711.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1509394026",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ron Carter",
+   "album": "Ron Carter Meets Bach",
+   "identity": {
+    "releaseType": "Album",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "釘 release-group a308fc6f-c71d-32fa-9f36-e69d56efd4e1。回問 release-group 端點：title「Ron Carter Meets Bach」、artist-credit「Ron Carter」（57db3f59 Person）、first-release-date 1992、primary-type Album、secondary-types 空，轄下 1 個 release。release 端點：379b1afc（1992 US Official CD 11 軌，Blue Note CDP 0777 7 80510 2 2，barcode 077778051022）。**release-count 是 1**，依第 994 條去 Discogs 補全世界視野：9511743（US 1992，master 1371865 的 main release）、11783224（Japan 1992-04-22，EAU Records／Toshiba EMI TOCJ-5704，Promo）。十一軌（Discogs 9511743）：Air／Christ Lag in Todesbanden (Chorale)／Wachet Auf, Ruft Uns die Stimme (Chorale-Prelude)／Arioso／Jesu, Joy of Man's Desiring／Es Woll Uns Gott Genadig Sein (Chorale)／Gavotte en Rondeau／Prelude, Interlude and Fugue in C Major／Siciliano／Praeludium in C Major, Interlude, Praeludium in C Minor／Komm Susser Tod, Komm Sel'ge Ruh'。credits：J.S. Bach 作曲、Ron Carter 編曲與貝斯、Jim Anderson 錄音、Allan Tucker 母帶。",
+    "rgMbid": "a308fc6f-c71d-32fa-9f36-e69d56efd4e1",
+    "exceptionEvidenceUrls": []
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f6/33/91/f63391c0-8560-313d-ac8e-c984813a9b8c/artwork.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1753540523",
+    "note": "試聽探測釘定的 collectionId 1753540523（us）：Ron Carter — Ron Carter Meets Bach。2026-10-04 改用：原本的 CAA 圖（https://coverartarchive.org/release-group/a308fc6f-c71d-32fa-9f36-e69d56efd4e1/front）在 archive.org 連續三輪回 500。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 215,
+    "source": "worker:/album-rating",
+    "checkedAt": "2026-08-31T00:00:00.000Z"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：obscurity=5、listeners=215，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "十一段巴哈，台上只有一把低音提琴與一把短頸貝斯。1991 年 12 月 15 到 17 日錄於紐約 Clinton Recording Studios。全碟只有他一人，編曲也是他自己。十一段取自清唱劇、管弦組曲與鍵盤作品：〈Air〉出自 D 大調管弦組曲、〈Jesu, Joy of Man's Desiring〉出自第 147 號清唱劇；兩段以平均律與給小巴哈的鍵盤小冊為底的組合曲各超過八分鐘。1992 年出版，錄音 Jim Anderson，母帶 Allan Tucker。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=a308fc6f-c71d-32fa-9f36-e69d56efd4e1&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/ron-carter/discography/",
+     "https://api.discogs.com/releases/9511743",
+     "https://api.discogs.com/releases/11783224",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1992/Billboard-1992-03-14.pdf",
+     "https://itunes.apple.com/lookup?id=1753540523&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/a308fc6f-c71d-32fa-9f36-e69d56efd4e1"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/3a/39/953a396f-c8f4-ea2e-b795-2489e9675fd0/mzaf_3708836152986735697.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "appleCollectionId": "1753540523",
+    "storefront": "US"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

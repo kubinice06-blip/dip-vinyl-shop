@@ -1,0 +1,315 @@
+{
+ "_note": "店內挖寶・心情選歌：店內卡（cardKey，同 inventory.json）→ 接得住的心情（mood-quiz.json 的 moods）。新進貨補在這裡；沒列到的卡前端用三軸／曲風粗估。",
+ "map": {
+  "elmohope|hopemeetsfoster": [
+   "keeper",
+   "balance"
+  ],
+  "elmohope|highhope": [
+   "hermit",
+   "keeper"
+  ],
+  "milesdavis|roundaboutmidnight": [
+   "anchor",
+   "still",
+   "balance"
+  ],
+  "oscarpeterson|bluesetude": [
+   "flame",
+   "keeper"
+  ],
+  "royhaynes|wethree": [
+   "keeper",
+   "anchor"
+  ],
+  "theblackeyedpeas|monkeybusiness": [
+   "crowd",
+   "flame"
+  ],
+  "oscarpeterson|nighttrain": [
+   "anchor",
+   "crowd",
+   "balance"
+  ],
+  "thedetroitexperiment|thedetroitexperiment": [
+   "drift",
+   "crowd",
+   "seeker"
+  ],
+  "達明一派|石頭記": [
+   "restless",
+   "hermit"
+  ],
+  "三上寛|1972コンサートライブ零狐徒": [
+   "restless",
+   "seeker"
+  ],
+  "lonniesmith|think": [
+   "flame",
+   "crowd"
+  ],
+  "濱田金吾|mugshot": [
+   "drift",
+   "crowd",
+   "balance"
+  ],
+  "charleswebster|remixedonthe24thofjuly": [
+   "drift",
+   "still"
+  ],
+  "ジョージ大塚トリオ|youaremysunshine": [
+   "drift",
+   "balance"
+  ],
+  "artblakeyandthejazzmessengers|moanin": [
+   "anchor",
+   "flame"
+  ],
+  "keithjarrett|eljuiciothejudgement": [
+   "seeker",
+   "restless"
+  ],
+  "billevans|youmustbelieveinspring": [
+   "lowtide",
+   "still",
+   "hermit"
+  ],
+  "johnwright|mrsoul": [
+   "drift",
+   "balance"
+  ],
+  "redgarlandroncarterphillyjoejones|crossings": [
+   "keeper",
+   "balance"
+  ],
+  "aaliyah|aaliyah": [
+   "crowd",
+   "drift"
+  ],
+  "荒井由実|misslim": [
+   "anchor",
+   "lowtide",
+   "drift"
+  ],
+  "redgarland|whentherearegreyskies": [
+   "lowtide",
+   "still"
+  ],
+  "phew|phew": [
+   "seeker",
+   "hermit"
+  ],
+  "間宮貴子|lovetrip": [
+   "drift",
+   "still"
+  ],
+  "kennyburrelljohncoltrane|kennyburrelljohncoltrane": [
+   "anchor",
+   "still"
+  ],
+  "stevekuhn|watchwhathappens": [
+   "still",
+   "hermit"
+  ],
+  "milesdavis|fillesdekilimanjaro": [
+   "seeker",
+   "drift"
+  ],
+  "milesdavis|milesinthesky": [
+   "seeker",
+   "flame"
+  ],
+  "johncoltrane|morelastingthanbronze": [
+   "anchor",
+   "keeper"
+  ],
+  "tetemontoliu|tete": [
+   "flame",
+   "keeper"
+  ],
+  "sonnycriss|saturdaymorning": [
+   "balance",
+   "drift"
+  ],
+  "モア|モア": [
+   "seeker",
+   "hermit"
+  ],
+  "jonnyholtzman|letsdoit": [
+   "seeker",
+   "balance"
+  ],
+  "cannibale|noteasytocook": [
+   "crowd",
+   "restless"
+  ],
+  "tomwaits|heartattackandvine": [
+   "restless",
+   "lowtide"
+  ],
+  "下田逸郎|陽のあたる翼": [
+   "hermit",
+   "lowtide"
+  ],
+  "今田勝|bluemarine": [
+   "drift",
+   "still"
+  ],
+  "milesdavis|directions": [
+   "seeker",
+   "restless"
+  ],
+  "下田逸郎|飛べない鳥飛ばない鳥": [
+   "lowtide",
+   "hermit"
+  ],
+  "neilyoungthebluenotes|thisnotesforyou": [
+   "crowd",
+   "flame"
+  ],
+  "sonnyrollins|thebridge": [
+   "keeper",
+   "anchor"
+  ],
+  "elmohope|hereshope": [
+   "keeper",
+   "hermit"
+  ],
+  "あがた森魚|乙女の儚夢": [
+   "seeker",
+   "hermit"
+  ],
+  "orientalmagneticyellow|弱気なぼくらナーヴァス": [
+   "seeker",
+   "crowd"
+  ],
+  "redmitchell|rejoice": [
+   "still",
+   "balance"
+  ],
+  "カルメンマキ|真夜中詩集ろうそくの消えるまで": [
+   "lowtide",
+   "hermit"
+  ],
+  "あがた森魚|噫無情レミゼラブル": [
+   "seeker",
+   "drift"
+  ],
+  "桃井かおり|おもしろ遊戯": [
+   "drift",
+   "seeker"
+  ],
+  "矢野顕子|オーエスオーエス": [
+   "flame",
+   "seeker"
+  ],
+  "kaiwinding|rainyday": [
+   "still",
+   "lowtide"
+  ],
+  "明田川荘之|thishereisaketavol2": [
+   "seeker",
+   "restless"
+  ],
+  "milesdavis|milesdavisandhorns": [
+   "balance",
+   "keeper"
+  ],
+  "emersonlakepalmer|picturesatanexhibition": [
+   "keeper",
+   "restless"
+  ],
+  "barryharris|breakinitup": [
+   "keeper",
+   "balance"
+  ],
+  "errollgarner|errollgarnerplaysmisty": [
+   "anchor",
+   "still"
+  ],
+  "宮本典子鈴木勲|push": [
+   "flame",
+   "crowd"
+  ],
+  "neilyoungcrazyhorse|everybodyknowsthisisnowhere": [
+   "anchor",
+   "restless"
+  ],
+  "浅川マキ|catnap": [
+   "lowtide",
+   "hermit"
+  ],
+  "horacesilverandthejazzmessengers|horacesilverandthejazzmessengers": [
+   "anchor",
+   "flame"
+  ],
+  "梅津和時|竹の村": [
+   "seeker",
+   "restless"
+  ],
+  "菊地雅章|butnotforme": [
+   "keeper",
+   "hermit"
+  ],
+  "佐藤允彦トリオ|palladium": [
+   "keeper",
+   "seeker"
+  ],
+  "delasoul|artofficialintelligencemosaicthump": [
+   "crowd",
+   "flame"
+  ],
+  "梅津和時malwaldron|anotherstep": [
+   "restless",
+   "seeker"
+  ],
+  "keithjarrett|luminessence": [
+   "still",
+   "hermit"
+  ],
+  "秋吉敏子トリオflutequartet|tuttieflutie": [
+   "drift",
+   "balance"
+  ],
+  "portishead|portishead": [
+   "lowtide",
+   "hermit"
+  ],
+  "宮沢昭|いわな": [
+   "keeper",
+   "seeker"
+  ],
+  "builttospill|perfectfromnowon": [
+   "restless",
+   "hermit"
+  ],
+  "milesdavis|themanwiththehorn": [
+   "flame",
+   "drift"
+  ],
+  "荒井由実|cobalthour": [
+   "drift",
+   "crowd"
+  ],
+  "hikaruutada|firstlove": [
+   "lowtide",
+   "anchor"
+  ],
+  "松任谷由実|昨晩お会いしましょう": [
+   "drift",
+   "anchor"
+  ],
+  "井上陽水|陽水iiセンチメンタル": [
+   "lowtide",
+   "hermit"
+  ],
+  "荒井由実|14番目の月": [
+   "drift",
+   "balance"
+  ],
+  "松任谷由実|流線形80": [
+   "drift",
+   "crowd"
+  ]
+ }
+}

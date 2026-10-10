@@ -1,0 +1,896 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-05-add-shop-wave2",
+ "batchNote": "店內販售區第二波（Notion 2026-10-05 新進）12 張。雲端段完成：身分、封面、試聽配對（Apple 6 張 ready）、研究／hook／寫作、prepare gate；本機段：listeners、試聽覆核、KV／Firestore／seed 寫入與 published gate。",
+ "albums": [
+  {
+   "artist": "Elmo Hope",
+   "album": "Here's Hope!",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b2cbb7f0-23be-454d-8bc0-e3bc003f0203",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 掛名：MB credit 是群組實體「Elmo Hope Trio」（d4570477），Discogs 同；依 add-20261004 第 8586 條與池中先例（《High Hope!》《Elmo Hope Quintet, Volume 2》皆收攏為 `Elmo Hope`）掛 `Elmo Hope`，Elmo Hope Trio 進 queryAlias，不新造字串。池中另有 `Elmo Hope`《Elmo Hope Trio》（1960），盤名不同。⚠ 年份：MB RG first-release-date 1961、Discogs master 1183354 與原版 release 10326572 皆 1961，一致取 1961；店主表寫「約 1961」。⚠ 錄音日期：Discogs 與維基皆未載，不寫。⚠ 曲名拼法：Discogs 原版 Abdula／Freffie，維基 Abdullah／Freddie，寫作層避開這兩首。⚠ 同一首〈Hot Sauce〉也出現在 Beacon《High Hope!》的 Discogs 原版 A2（3:31），而該盤其他版本把 A2 記成〈Happy Hour〉，兩盤曲目重疊疑點未解，寫作層不寫『首度發表』類說法。⚠ MB 只有一筆 release（9c980339，1961 US，無條碼）；店主表未登錄壓片版本，本卡只釘作品身分。CAA 有無圖待本機，備援 Discogs 10326572 圖。Apple 是否有本盤待本機配對。｜queryAlias：Elmo Hope Trio；Here’s Hope；Heres Hope"
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b2cbb7f0-23be-454d-8bc0-e3bc003f0203/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鋼琴手 Elmo Hope 找回兩位老搭檔，湊成這張鋼琴三重奏。彈低音提琴的 Paul Chambers 和打鼓的 Philly Joe Jones，1956 年就和他一起錄過《Informal Jazz》。1961 年 Hope 從洛杉磯搬回紐約，加入 Philly Joe Jones 的五重奏，同一年也兩度請這兩人替自己伴奏，另一張是《High Hope!》的 A 面。這張的六首全是 Hope 自己寫的曲子，整張只有約 27 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10326572",
+     "https://en.wikipedia.org/wiki/Here%27s_Hope!",
+     "https://www.discogs.com/release/5038198",
+     "https://www.discogs.com/release/16120749",
+     "https://en.wikipedia.org/wiki/Elmo_Hope",
+     "https://musicbrainz.org/release-group/b2cbb7f0-23be-454d-8bc0-e3bc003f0203"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/57/93/48/57934858-e01f-f39d-aa69-b83e9ee04e7e/mzaf_3929393743872368659.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "appleCollectionId": "641850632",
+    "storefront": "JP",
+    "note": "Apple jp 曲目逐軌對上原盤（主線核對）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Miles Davis",
+   "album": "Directions",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "ef1afe99-b3d7-32a3-98f0-2e85cbc573e3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 類型：MB primary-type Album、secondary-types Compilation，依 §5.6 本節針對 primary=Compilation 者，此盤本可照一般 Album；但任務指定走合輯例外，releaseType 填 Compilation 並附舉證，兩種寫法驗證器皆過。⚠ 盤名：MB RG 標題是『Directions: Unreleased Recordings 1960–1970』，封面與 Discogs 為『Directions』，卡單取封面盤名『Directions』，副標進 queryAlias；2001 年日本 release（ec6cb906）MB 也直接題『Directions』。⚠ 年份：MB first-release-date 1981，Discogs master 64679 與原版 release 1688745 皆 1981，一致取 1981（錄音年 1960–1970 不用）。⚠ 版本：同 master 的 1981 版有 US KC2 36472（2LP）與 UK CBS 88514；店主表未登錄版本，本卡只釘作品。⚠ 曲目錄音日期：〈Duran〉Discogs 備註寫 1970-02-17，英文維基寫 3 月 17 日，兩者不一致；寫作層不寫該曲日期。⚠ 同名撞字：Discogs 另有 CBS/Sony《Bitches Brew (Directions In Music By Miles Davis)》與巴西《Pop - Directions In Music By Miles Davis》，是 1970 年代的另兩種合輯，與本盤無關，勿混。CAA 有無圖待本機，備援 Discogs 1688745。｜queryAlias：Directions: Unreleased Recordings 1960-1970；Directions Unreleased Recordings 1960–1970；Miles Davis Directions",
+    "exceptionReason": "Columbia 1981 年首度發行的未發表錄音集（1960–1970 年共 12 軌），〈Directions I〉〈Directions II〉〈Ascent〉等 In a Silent Way 與 Jack Johnson 時期錄音在此首度問世，也是 Columbia 在 Miles 1981 年復出前推出的最後一張此類整理輯。",
+    "exceptionEvidenceUrls": [
+     "https://en.wikipedia.org/wiki/Directions_(Miles_Davis_album)",
+     "https://www.discogs.com/master/64679",
+     "https://musicbrainz.org/release-group/ef1afe99-b3d7-32a3-98f0-2e85cbc573e3"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ef1afe99-b3d7-32a3-98f0-2e85cbc573e3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "副標寫明 1960 到 1970 年，十二軌在這套唱片上首度問世。身為 Columbia 在 Miles Davis 停演期間推出的一系列整理輯，這套 1981 年的雙 LP 排在最後一張。就在同一年 7 月，Miles 帶著《The Man with the Horn》結束空窗、重回樂壇。收錄的時間跨度裡，最早一首出自《Sketches of Spain》的錄音期；其餘多數則來自 1967 到 1970 年，正是他從實驗爵士轉向爵士搖滾融合的那段轉型期。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1688745",
+     "https://en.wikipedia.org/wiki/Directions_(Miles_Davis_album)",
+     "https://musicbrainz.org/release-group/ef1afe99-b3d7-32a3-98f0-2e85cbc573e3"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e6/09/87/e60987cd-3713-08a4-5103-c2ed1ee8b248/mzaf_3469331497770939861.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "appleCollectionId": "833084884",
+    "storefront": "JP",
+    "note": "Apple jp 曲目逐軌對上原盤（主線核對）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   },
+   "exceptionReason": "Columbia 1981 年首度發行的未發表錄音集（1960–1970 年共 12 軌），〈Directions I〉〈Directions II〉〈Ascent〉等 In a Silent Way 與 Jack Johnson 時期錄音在此首度問世，也是 Columbia 在 Miles 1981 年復出前推出的最後一張此類整理輯。",
+   "exceptionEvidenceUrls": [
+    "https://en.wikipedia.org/wiki/Directions_(Miles_Davis_album)",
+    "https://www.discogs.com/master/64679",
+    "https://musicbrainz.org/release-group/ef1afe99-b3d7-32a3-98f0-2e85cbc573e3"
+   ]
+  },
+  {
+   "artist": "Sonny Criss",
+   "album": "Saturday Morning",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "03724074-b916-38b7-aa6a-af9b9b6e8f9f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 年份：MB RG first-release-date 1975、Discogs master 700893 與原版 release 皆 1975，一致。⚠ 版本：MB 轄下兩筆 release（24ba7f6a 1975 US；77741321 無日期）；Discogs 壓片有 Xanadu 105 銀標等多種，店主表未登錄版本，本卡只釘作品。⚠ 盤內細節：B2〈My Heart Stood Still〉是 Barry Harris 三重奏曲目，Criss 沒有演奏（Discogs 備註），寫作層不可寫成全盤 Criss 領銜吹奏。⚠ 非撞卡檢查：seed 無 `Saturday Morning`（同名盤有他藝人，但掛名 Sonny Criss 者唯此）。⚠ 2016 Elemental Music 再版 CD 多一首未收錄原 LP 的同場次曲〈Confusion〉，不屬原盤曲目。CAA 有無圖待本機，備援 Discogs 5766906。｜queryAlias：Sonny Criss Saturday Morning Xanadu"
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/03724074-b916-38b7-aa6a-af9b9b6e8f9f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "中音薩克斯風手 Sonny Criss 隔了六年才再錄新唱片，這是他回來後的第一張。1969 年 Prestige 和他解約，他的酗酒問題跟著惡化；後來鋼琴手 Horace Tapscott 拉他一起投入社運者 Mary Henry 為洛杉磯市中心孩子辦的課程，他替孩子吹奏、講黑人樂手的歷史，還考了證照當戒酒輔導員。1975 年 3 月 1 日他在好萊塢重回錄音室，Barry Harris 彈鋼琴、Leroy Vinnegar 彈貝斯、Lenny McBrowne 打鼓。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5766906",
+     "https://www.discogs.com/release/8452612",
+     "https://en.wikipedia.org/wiki/Xanadu_Records",
+     "https://en.wikipedia.org/wiki/Sonny_Criss",
+     "https://www.discogs.com/release/5814760",
+     "https://musicbrainz.org/release-group/03724074-b916-38b7-aa6a-af9b9b6e8f9f"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Apple jp 查無本盤；YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tete Montoliu",
+   "album": "Tete!",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "abd710ee-6604-4181-930f-4572a2e2c007",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 掛名：MB credit 是群組實體「The Tete Montoliu Trio」（9ec5779a），Discogs 為「Tete Montoliu Trio」；封面主名 Tete Montoliu，依池中先例（`Tete Montoliu`《Songs for Love》）與 c-135 以來『個人多編制收攏』做法掛 `Tete Montoliu`，Trio 進 queryAlias，不新造字串。⚠ 年份：錄音 1974-05-28，首發 1975（MB first-release-date 1975、Discogs 原版 SCS 1029 與維基皆 1975），年份取 1975，不取錄音年。⚠ 盤名：MB 另有《Tete Montoliu》（1995）與《Tête À Tete》（1992，RG a5de80eb，Discogs 1976 SCS-1054）等同名近似盤，皆是不同盤，本卡釘 abd710ee，勿混。⚠ 曲長：〈Body and Soul〉Discogs 9:56、維基 12:22，差距大，寫作層不寫該曲長度。⚠ MB 轄下 3 筆 release（1975 DK 8ac1ff06 無條碼；1987 DK CD 兩筆 e04059ee／bafb0afd 同條碼 716043102921）；店主表未登錄版本，只釘作品。CAA 有無圖待本機，備援 Discogs 4413867。｜queryAlias：Tete Montoliu Trio；The Tete Montoliu Trio；Tete Montoliu Tete"
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/abd710ee-6604-4181-930f-4572a2e2c007/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "天生失明、7 歲學點字樂譜的鋼琴手，開場就彈〈Giant Steps〉。1933 年生於巴塞隆納的 Tete Montoliu，帶著 Niels-Henning Ørsted Pedersen 的貝斯、Albert Heath 的鼓，於哥本哈根錄下這張三重奏，日期是 1974 年 5 月 28 日。翻到 B 面，打頭陣的換成〈Solar〉，整張六首都挑爵士名家的作品。同一年錄下的另兩張專輯當年就已上市，這張則等到 1975 年才由丹麥的 SteepleChase 推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4413867",
+     "https://en.wikipedia.org/wiki/Tete!",
+     "https://en.wikipedia.org/wiki/Tete_Montoliu",
+     "https://www.discogs.com/master/580433",
+     "https://www.discogs.com/release/15700967"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/44/b1/bf44b171-fd7c-8f48-f074-f95e8cea3c50/mzaf_11907393031234047990.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "appleCollectionId": "156119863",
+    "storefront": "JP",
+    "note": "Apple jp 曲目逐軌對上原盤（主線核對）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "John Coltrane",
+   "album": "More Lasting Than Bronze",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "2f4baf1c-daff-3116-aa1a-80de324709af",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠⚠ 重複風險（請主線注意）：池中已有 `John Coltrane`《Lush Life》（1961）與《Coltrane》（1957），本盤的 11 軌完全等於這兩張的合併，沒有獨有曲目；§5.6 寫『greatest-hits 重複包裝不收』。本盤依『店主指定、店內實物在售、MB 為獨立 release-group（Album+Compilation）、舉證為 1972 年 Prestige 24000 系列雙碟形態』收錄，若主線認為屬重複包裝，可整張退件（可逆，卡單一筆）。⚠ 年份：MB first-release-date 1973（轄下唯一 release 是加拿大 GRT 1973 版），Discogs master 75901 與原版美國 PR 24014（℗1972 Prestige）寫 1972，依『年份取原盤首發』取 1972；MB 日期晚一年，rgMbid 不受影響。⚠ 版本：店內是 Bellaphon BLST 6527（德國，Discogs 無年份），年份 1972 指原始美國版，不是 Bellaphon 壓片年。⚠ 盤名：封面與 MB／Discogs 都寫『...More Lasting Than Bronze』（前面三個點），卡單 album 去掉前導點，寫成 `More Lasting Than Bronze`，原寫法進 queryAlias。⚠ 同 master 另有阿根廷分冊《More Lasting Than Bronze Vol. I》（Discogs 15518114，master 75879 實為 Lush Life 的 master），與本盤無關。CAA 有無圖待本機（MB 只有 1 筆加拿大 release），備援 Discogs 857567 或 5466877。｜queryAlias：...More Lasting Than Bronze；More Lasting Than Bronze John Coltrane；Coltrane Bellaphon",
+    "exceptionReason": "Prestige 24000 系列 1972 年把 Coltrane 的首張領銜專輯《Coltrane》（1957）與《Lush Life》（1961）合成雙 LP，是 Coltrane 早期 Prestige 時期（1957–58 年 Van Gelder 錄音）唯一整合這兩張的雙碟形態，店主指定收錄的德國 Bellaphon 壓片即是此輯。",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/master/75901",
+     "https://musicbrainz.org/release-group/2f4baf1c-daff-3116-aa1a-80de324709af",
+     "https://www.discogs.com/release/5466877"
+    ]
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2f4baf1c-daff-3116-aa1a-80de324709af/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "1972 年的一套雙 LP，裝的是兩張早已出版的 Prestige 舊作。《Coltrane》是 John Coltrane 1957 年首場以領銜身分的錄音，《Lush Life》則在 1961 年初問世，由 1957、1958 年三場錄音裡未發表的曲目拼成。這套雙 LP 把《Coltrane》與《Lush Life》以原始單聲道併在一起，由 Prestige 發行、Fantasy 經銷，目錄號 PR 24014。兩張都錄於 Van Gelder 錄音室，剛好收齊同一時期。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/857567",
+     "https://www.discogs.com/master/75901",
+     "https://en.wikipedia.org/wiki/Coltrane_(1957_album)",
+     "https://en.wikipedia.org/wiki/Lush_Life_(John_Coltrane_album)",
+     "https://www.discogs.com/release/5466877"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Apple jp 查無本盤；YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   },
+   "exceptionReason": "Prestige 24000 系列 1972 年把 Coltrane 的首張領銜專輯《Coltrane》（1957）與《Lush Life》（1961）合成雙 LP，是 Coltrane 早期 Prestige 時期（1957–58 年 Van Gelder 錄音）唯一整合這兩張的雙碟形態，店主指定收錄的德國 Bellaphon 壓片即是此輯。",
+   "exceptionEvidenceUrls": [
+    "https://www.discogs.com/master/75901",
+    "https://musicbrainz.org/release-group/2f4baf1c-daff-3116-aa1a-80de324709af",
+    "https://www.discogs.com/release/5466877"
+   ]
+  },
+  {
+   "artist": "Neil Young & The Bluenotes",
+   "album": "This Note's For You",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "62810843-fe3f-3b4c-8537-182eedfad223",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 掛名：封面與 Discogs 原版 release 1998961 皆印「Neil Young & The Bluenotes」，MB RG 62810843 的 artist-credit 同為 Neil Young（75167b8b）＋The Bluenotes（5a4dccc3）。池中先例 `Neil Young & Crazy Horse`（Everybody Knows This Is Nowhere）與本盤封面掛名同形，故掛 `Neil Young & The Bluenotes`，queryAlias 收 `Neil Young`、`Neil Young and the Bluenotes`、`This Note’s for You`（MB 用彎引號）；串流平台上本盤常掛單名 Neil Young，本機試聽配對與 listeners 兩種拼法都要查。店主表寫的 The Blue Note、This Notes For You 皆是拼寫差異，同一張。⚠ 版本：同名 Single RG（39f5b9ee，1988-06-28）是單曲，不是本盤；本盤 RG 為 primary-type Album、無 secondary-types、first-release-date 1988-04-12（DE）；Discogs 原版 US 1988-04 與英文維基 1988-04-11 皆對上 1988 年。⚠ 年份取原盤 1988，2018、2019 的 release 是再發。⚠ 店主表未登錄壓片國別，本卡只釘作品身分，不釘店內那一張實體。CAA 是否有圖待本機。｜queryAlias：Neil Young；Neil Young and the Bluenotes；The Bluenotes；This Note’s for You；This Notes For You"
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/62810843-fe3f-3b4c-8537-182eedfad223/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 2、accessibility 1，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "Crazy Horse 的鼓手，最後只在〈One Thing〉一首裡留下了鼓聲。1987 年與 Crazy Horse 巡演時，Neil Young 在節目中段插進藍調，後來再擴編號角組，替新樂隊取名 The Bluenotes。進錄音室後，Rick Rosas 接下貝斯、Chad Cromwell 頂替鼓組，多數歌曲都重錄過，原班鼓手 Ralph Molina 只留在那一首。標題曲諷刺啤酒廣告，錄影帶遭 MTV 禁播，加拿大的 MuchMusic 播紅之後，MTV 才放行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1998961",
+     "https://en.wikipedia.org/wiki/This_Note%27s_for_You"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Apple jp 查無本盤；YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tom Waits",
+   "album": "Heartattack and Vine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6a9906e1-1ab2-37e1-980b-5e4889661089",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 版本：MB 同名另有 Single RG（be2c3804，1993，Levi's 廣告相關），不是本盤；本盤 RG 6a9906e1 為 Album、無 secondary-types、first-release-date 1980-09，與 Discogs 原版 US release 905979（Asylum 6E-295，released 1980-09-09）一致。⚠ 年份取原盤 1980，1989／1990／2018 為再發。⚠ 封面脊標寫 Heart Attack And Vine（Discogs 註記），盤名依 MB 與 Discogs 標題寫 Heartattack and Vine。⚠ 店主表未登錄壓片，本卡只釘作品身分。CAA 有無圖與 Apple 配對待本機。｜queryAlias：Heart Attack and Vine；Heartattack And Vine"
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6a9906e1-1ab2-37e1-980b-5e4889661089/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "鼓刷換成鼓棒，標題曲接上失真吉他，他說像換了一套服裝。Bones Howe 擔任製作，九首歌全由 Tom Waits 一人寫成。這番換裝的說法出自 1983 年的一次雜誌訪問，他把這張形容為轉型的小突破，那把失真吉他走的是 Yardbirds 的路數。唱片 1980 年 9 月 9 日由 Asylum 發行，他在這家廠牌的錄音也到此為止。其中的〈Jersey Girl〉後來被 Bruce Springsteen 帶上舞台，1981 年 Waits 還親自上台和他合唱這首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/905979",
+     "https://en.wikipedia.org/wiki/Heartattack_and_Vine"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c6/39/18/c639183b-c91a-8515-7397-a76d7c1ddfa4/mzaf_17150681104771771068.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "appleCollectionId": "1485075654",
+    "storefront": "JP",
+    "note": "Apple jp 曲目逐軌對上原盤（主線核對）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "下田逸郎",
+   "album": "飛べない鳥、飛ばない鳥",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e16919a8-62f9-42db-89cd-de6e5b0422e7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 掛名：封面與 MB 為 下田逸郎（add14827），Discogs 掛羅馬拼音 Itsuroh Shimoda，依 ONBOARDING §0.5 日籍藝人用本名漢字，queryAlias 收 Itsuroh Shimoda／Itsuro Shimoda／Shimoda Itsuro。⚠ 盤名：MB 與店主表皆為「飛べない鳥、飛ばない鳥」，Discogs 與英文副題 Love Songs And Lamentations；A1 曲名寫作〈飛べない鳥と飛ばない鳥〉（と），不是盤名的頓號，兩者不要混。⚠ 去重：MB 搜尋 飛べない鳥 另有 ゆず（2000 Single）、みくた（2025 Single）、PENGUINS PROJECT《飛べない鳥の想像力》，皆非本盤。⚠ 年份取原盤 1973（Discogs 6519195 與 MB first-release-date 一致），2012／2022 為再發。ONBOARDING §0.8：深掘型非拉丁掛名，冷門軸錨點制人工評，已有 2012 與 2022 串流級再發，依錨點不到 5。封面 CAA 有無待本機，備案 Discogs release 6519195（目錄號 MR 5033／年份 1973／Polydor 對上三項）。｜queryAlias：Itsuroh Shimoda；Itsuro Shimoda；Shimoda Itsuro；Love Songs And Lamentations；飛べない鳥と飛ばない鳥"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e16919a8-62f9-42db-89cd-de6e5b0422e7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "日本創作歌手下田逸郎的第二張專輯，A 面唱日文、B 面唱英文。他 1948 年生於宮崎、2 歲搬到東京，1973 年先在瑞典、西班牙、法國漂泊，再轉往紐約。B 面的英文詞與編曲由他和 Marci Sutin 共同掛名，人聲還有 Vicki Sue Robinson 加入，底下墊著康加鼓與邦加鼓。這種帶迷幻色彩的民謠被歸為 acid folk。Polydor 在 1973 年 7 月 21 日發行，英文副題是 Love Songs And Lamentations。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6519195",
+     "https://tower.jp/item/5407036",
+     "https://kamomelog.exblog.jp/32131064/",
+     "https://ja.wikipedia.org/wiki/%E4%B8%8B%E7%94%B0%E9%80%B8%E9%83%8E",
+     "https://www.discogs.com/release/23931143",
+     "https://musicbrainz.org/release-group/e16919a8-62f9-42db-89cd-de6e5b0422e7"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/29/db/f529db92-9c0c-a033-7322-02073b5201cb/mzaf_11998248754148408119.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "appleCollectionId": "1751400100",
+    "storefront": "JP",
+    "note": "Apple jp 曲目逐軌對上原盤（主線核對）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "下田逸郎",
+   "album": "陽のあたる翼",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5bff57b4-2afb-4489-82dc-247860125a02",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 樂手陣容僅 omimi 商品說明一個來源，Discogs 9261374 與 kiokunokiroku 目錄頁皆無樂手 credit，寫作層不得把陣容當確定事實，除非研究層另找到第二來源（見研究稿 notes）。⚠ 掛名：Discogs 掛 Itsuro Shimoda，MB 掛 下田逸郎，依 §0.5 用漢字名。⚠ 年份：MB first-release-date 1974、Discogs 9261374 年份 1974，無落差；店主表未登錄壓片，本卡只釘作品身分。⚠ 去重：MB 搜尋 陽のあたる翼 僅此一個 RG，高分無同名；池中 下田逸郎 零張。封面 CAA 有無待本機，備案 Discogs release 9261374（MR 5045／1974／Polydor）。冷門軸依 §0.8 錨點制人工評，無串流再發跡象，可高於 飛べない鳥 那張，由主線定。｜queryAlias：Itsuroh Shimoda；Itsuro Shimoda；Shimoda Itsuro；Hi no Ataru Tsubasa"
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5bff57b4-2afb-4489-82dc-247860125a02/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "CAA front-250 實抓 200，主線目視封面與盤名一致。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "下田逸郎的第三張專輯，1974 年由 Polydor 發行，A 面五首、B 面六首。整張以民謠為主，也夾著幾首放克搖滾，由高中正義的電吉他撐起；參與錄音的還有松任谷正隆、林立夫、深町純等錄音室樂手。同一時期，他固定出現在文化放送的深夜廣播節目《セイ!ヤング》。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9261374",
+     "https://www.kiokunokiroku.jp/artist/000254/archive/008061",
+     "https://musicbrainz.org/artist/add14827-6fe0-4f04-b1cf-847520c0c0a9",
+     "https://www.discogs.com/release/12713443",
+     "https://omimi.biz/products/detail/39619",
+     "https://www.soundfinder.jp/products/view/1906655",
+     "https://ja.wikipedia.org/wiki/%E4%B8%8B%E7%94%B0%E9%80%B8%E9%83%8E",
+     "https://musicbrainz.org/release-group/5bff57b4-2afb-4489-82dc-247860125a02"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Apple jp 查無本盤；YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "モア",
+   "album": "モア",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 這是 §1 人工身分、證據偏薄的一張：身分證據為 Discogs release 20594359（data quality「Needs Vote」、community have 14／want 20，artist 頁 10134358 為「Needs Major Changes」）加店主 IG 貼文，兩個 https 網址，剛好達 ALBUM_ONBOARDING §1 的下限；MB 與其他資料庫、媒體皆查無，無第三來源。⚠ 自我同名（selfTitled）：artist=album=モア，屬高風險；唯一的釘身分依據是 Discogs 目錄號 ST-1001-24L ＋店內實體，主線務必比對店內那張的封面與目錄號再收。⚠ 年份 1983：Discogs 與 IG 貼文一致（IG 提及 1983 年 3 月錄音，單一來源）。⚠「佐藤勝」是否即 Discogs 的 Masaru Sato（掛 Music Director、Liner Notes、Photography）、與電影作曲家佐藤勝是否同一人，只有店家／IG 的說法，Discogs credit 只寫羅馬字名且未連到任何 artist 頁，簡介不得寫成確認事實，只能照店家說法標「據店家」。⚠ 封面：走 §4 discogs 來源，release id 20594359，目錄號 ST-1001-24L／年份 1983／廠牌 Saturn Records 三項對上，須逐張看圖並登錄 discogs-cover-registry；Apple 配對預期無，試聽預計 unavailable。若主線認為證據不足，建議整張不收，卡單已完整可隨時剔除。｜queryAlias：More；Moa；モア 私製盤；Saturn Records ST-1001-24L",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=artist:モア&limit=6 → count=8，score 100 為 f5f368ba（モア，JP，disambiguation SHOW BY ROCK!!，遊戲角色名義），其餘是 アンゴル゠モア、內田もあ、芹澤もあ 等不相干實體，沒有 1983 年私製盤的 モア",
+      "release-group?query=releasegroup:\"モア\" AND artist:\"モア\"&limit=5 → count=0",
+      "release?query=catno:\"ST-1001-24L\"&limit=5 → count=0",
+      "release?query=label:\"Saturn Records\" AND country:JP&limit=5 → count=0",
+      "release?query=release:モア AND date:198*&limit=5 → count=0"
+     ],
+     "checkedAt": "2026-10-05T15:57:00Z",
+     "conclusion": "MB 上沒有這張 モア 的 release-group：藝人搜尋 score 100 回的是 SHOW BY ROCK!! 的角色名義，非 1983 年私製盤的樂團；盤名、目錄號 ST-1001-24L、廠牌 Saturn Records 三個方向 count 皆為 0。查詢全部回 HTTP 200（中途有一次 busy 503，已間隔重試取得正常回應）。Discogs 有此 release（20594359），故走 §1 人工身分。",
+     "checkedFalseShapes": [
+      "503",
+      "回了不相干的實體"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/20594359",
+     "https://www.instagram.com/p/DM0GKQsPD7X/",
+     "https://www.discogs.com/artist/10134358"
+    ],
+    "manualRuling": "§1 人工身分：add-20261005-shop 策展層裁定（見 rulings.md），依 CLAUDE.md 裁定權下放由主線核定。",
+    "coverSourceHint": "discogs",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/vp38abXJJ7G7Lx-DhAZSWDKRxX1ncv93gwUGlmmEDi8/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNTk0/MzU5LTE2OTQxNjI0/MTQtMzYwNy5qcGVn.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "20594359",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Discogs release 20594359（Saturn Records ST-1001-24L、1983），主線目視：白底、毛筆字「モア」與小字曲目。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 1,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 1、obscurity 5、accessibility 2，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "一群業餘樂手只花三天錄完、一週混音，做出這張私製盤。1983 年的這張日本自主盤，盤號 ST-1001-24L，起點只是一群人想做一張唱片的單純願望，Saturn Records 也是為它而設的廠牌，只發過這一張。作曲掛名石井英樹與杉島篤彦，主唱是松尾恵子；Masaru Sato 則掛名音樂總監，也寫了內頁解說。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/20594359",
+     "https://www.instagram.com/p/DM0GKQsPD7X/",
+     "https://www.discogs.com/artist/10134358",
+     "https://en.wikipedia.org/wiki/Masaru_Sat%C5%8D"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Apple jp 查無本盤；YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "今田勝",
+   "album": "Blue Marine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "68ddda65-1fa2-4e9b-abf2-b2156028801c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ 年份：MB RG first-release-date 是 1992-06-21（轄下唯一 release 是 Alfa Jazz ALCR-182 的 1992 年日本 CD 再發），**不是原盤年**；原盤 Full House PAP-25026 在 Discogs release 1938858 與 master 1097058 皆為 1982，Tower／Disk Union／Groovenut 也都寫 1982，錄音與混音在 1982 年 5–7 月（Discogs 14531174 備註）；year 取 1982，rgMbid 不受影響（年份第一型：資料庫端只有再發）。⚠ 掛名：MB RG credit 是個人實體「今田勝」（b9d2be2a，Person，credit 名義 Masaru Imada），池中先例 `今田勝`《Andalusian Breeze》《Carnival》同形，直接用，不用 Trio 實體。⚠ 盤名：封面與 Discogs 主標 Blue Marine，日本盤副題《誘われてシーサイド》，卡單取 Blue Marine，日文名進 queryAlias；MB 另有同名《Blue Marine》Krystian Shek（2007）與 RSK（2018），皆不同藝人，勿混。⚠ 單曲關係：TD-117 單曲 A 面標〈誘われてシーサイド / Blue Marine〉（即專輯 A1）、B 面〈憂いの炎 / Secret Sounds〉（即 A4），店內實物是單曲，不是 LP；簡介不得寫成店內有這張 LP。⚠ 〈Secret Sounds〉作曲掛 Grover Washington Jr.（Discogs），其餘七首今田勝作曲，簡介不可寫成全盤今田勝作曲。⚠ 版本：另有 1984 Polydor 25MX 2508、1992 Alfa Jazz、2017 Solid UHQCD、2020 Ultra-Vybe 等多種再發，卡只釘作品。CAA RG 端點實測 307（有圖）待本機看圖。Apple 是否有本盤待本機配對。｜queryAlias：誘われてシーサイド；Masaru Imada Blue Marine；Masaru Imada；今田勝 Blue Marine Full House"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/QlxlZ2vqi3yyO_mQmGQ_F1dRqArzNlkRzMmhzSsRf0Q/rs:fit/g:sm/q:90/h:565/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Mzg4/NTgtMTUzMjQyODUw/My01OTUyLmpwZWc.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "1938858",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Discogs release 1938858（Full House PAP-25026、1982），主線目視：藍色水面倒影、印「Masaru IMADA」，左側帶側標「今田勝／誘われてシーサイド」（原盤 PAP-25026；CAA 只有 1992 CD 再版圖，不採）。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 3、obscurity 4、accessibility 1，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "錄音棚橫跨東京與紐約，八首裡七首出自鋼琴手，剩下一首交給客席的薩克斯風手。今田勝在這張 1982 年由 Full House 發行的唱片上彈鋼琴與合成器，搭檔 Steve Khan 的吉他。兩地分別是東京的 Sound Inn 與紐約的 Secret Sound Studio。那首例外是 A 面的〈Secret Sounds〉，作曲者正是客席的 Grover Washington Jr.。唱片另有日文副題《誘われてシーサイド》。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1938858",
+     "https://www.discogs.com/master/1097058",
+     "https://www.discogs.com/release/14531174",
+     "https://tower.jp/item/4443133",
+     "https://www.discogs.com/release/13662250",
+     "https://www.discogs.com/release/13429769",
+     "https://musicbrainz.org/release-group/68ddda65-1fa2-4e9b-abf2-b2156028801c"
+    ]
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7d/c5/fe/7dc5fea4-9bc4-4384-af7d-83efc39885eb/mzaf_16535472043214485880.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "appleCollectionId": "1329457032",
+    "storefront": "JP",
+    "note": "Apple jp 曲目逐軌對上原盤（主線核對）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jonny Holtzman",
+   "album": "Let's Do It",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "⚠ §1 人工身分、證據偏薄：MB 查無（見 mbAbsenceProof）；身分證據為 Discogs release 10080644（data quality「Correct」，1982 US，Not On Label CX1038，8 軌，have 15／want 6）、Discogs artist 3000951（Needs Vote，註其為 The Widespread Depression Orchestra 成員）、英文維基 Widespread Depression Orchestra 條目（Holtzman 綽號 The Bronx Nightingale、約 1982 離團、首張個人專輯 Let's Do It、John Hammond Sr. 寫內頁文）三個 https。⚠ 同名撞車：MB 有 Kadenza《Let's Do It》與 Discogs release 238878，非本盤；另有 Jon Holtzman（IMDb 另一人）與 Matt／Alex 等 Holtzman，不可混。⚠ 拼寫：Discogs 名稱變體 Johnny Holtzman、Jon Holtzman，卡面取封面／Discogs 的 Jonny；店主表的 The Bronx Nightingale 是綽號，queryAlias 收。⚠ Discogs 風格標 Jazz／Easy Listening、Free Jazz、Jazz-Funk，與維基與 IMDb 式傳記描述（搖擺／爵士人聲）不太吻合，簡介以來源描述為準，不採 Free Jazz 標籤。⚠ Discogs 無任何人員欄與備註，樂手編制、錄音地點、製作人皆查無，不得寫。⚠ 搜尋摘要提到 eBay 賣家標題另寫 Toast Tone 字樣（疑為自製盤的壓片／標籤名），eBay 無法抓取，未證實，不入卡面。⚠ 封面：Discogs 有 release 10080644 的圖，走 §4 discogs 來源，須逐張看圖並對店內實物與目錄號 CX1038；Apple 配對預期無，試聽預計 unavailable。⚠ 年份 1982：Discogs 與維基（約 1982 離團後錄製）互相吻合。證據薄，主線若認為不足可整張剔除，卡單完整。｜queryAlias：The Bronx Nightingale；Johnny Holtzman；Jon Holtzman；Jonny Holtzman Lets Do It；Not On Label CX1038",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=artist:\"Jonny Holtzman\"&limit=6 → count=0",
+      "artist?query=Holtzman&limit=8 → count=17，皆為 Adeptus（Philip Holtzman，電子）、Matt／Alex／Abe／Ethan／Zac／Lou Holtzman、Holtzman Engine 等不相干實體，無 Jonny／Jon Holtzman 的顫音琴／歌手",
+      "artist?query=artist:\"Bronx Nightingale\"&limit=5 → count=0",
+      "release-group?query=releasegroup:\"Let's Do It\" AND artist:Holtzman&limit=6 → count=0",
+      "release?query=catno:CX1038&limit=5 → count=0",
+      "release?query=release:\"Let's Do It\" AND date:1982&limit=8 → count=1，為 Kadenza《Let's Do It》，非本盤"
+     ],
+     "checkedAt": "2026-10-05T16:07:00Z",
+     "conclusion": "MB 上沒有 Jonny Holtzman 這位藝人，也沒有他 1982 年的《Let's Do It》：藝人名、綽號、RG、目錄號四個方向 count 皆為 0；唯一撞名的是 Kadenza 的同名盤。查詢全部回 HTTP 200 且回應為正常 JSON，非 503。Discogs 有此 release（10080644），故走 §1 人工身分。",
+     "checkedFalseShapes": [
+      "回了不相干的實體（Holtzman 姓氏搜尋）",
+      "同名他人專輯（Kadenza）"
+     ]
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10080644",
+     "https://www.discogs.com/artist/3000951",
+     "https://en.wikipedia.org/wiki/Widespread_Depression_Orchestra"
+    ],
+    "manualRuling": "§1 人工身分：add-20261005-shop 策展層裁定（見 rulings.md），依 CLAUDE.md 裁定權下放由主線核定。",
+    "coverSourceHint": "discogs"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/YGT8YVL3XQMPfGSipbyHWGQdZrO-JClHSJV9m2pHCOE/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDgw/NjQ0LTE0OTEyNTY4/ODQtNTcwMi5wbmc.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "10080644",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Discogs release 10080644（Not On Label CX1038、1982），主線目視：新藝術風框線、印「JONNY HOLTZMAN」「the bronx nightingale」「LET'S DO IT」。",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 1,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "manual:pool-peers",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "listeners 待本機（雲端擋 Last.fm）；比照池中同藝人與同時期卡給分。"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "已評估：classic 1、obscurity 5、accessibility 1，未觸及殿堂／遺珠／異端門檻，列為一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "樂團的創團主唱離隊單飛，第一張個人唱片連廠牌都沒掛。Jonny Holtzman 是 Widespread Depression Orchestra 最初的領班與主唱，綽號 The Bronx Nightingale。他約在 1982 年離團，同年自行製作發行這張唱片，B 面收尾的〈Laster Leaps〉長達 8 分 24 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10080644",
+     "https://www.discogs.com/artist/3000951",
+     "https://en.wikipedia.org/wiki/Widespread_Depression_Orchestra"
+    ]
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-05T16:17:12Z",
+    "note": "Apple jp 查無本盤；YT Music 待本機覆核。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

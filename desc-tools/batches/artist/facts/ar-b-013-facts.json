@@ -1,0 +1,3612 @@
+[
+ {
+  "key": "cream",
+  "name": "Cream",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1966,
+   1968
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Wheels of Fire",
+    "year": 1968,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fresh Cream",
+    "year": 1966,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Disraeli Gears",
+    "year": 1967,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Fresh Cream",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Clapton、Jack Bruce 與 Ginger Baker 1966 年 7 月成團，八月就進 Chalk Farm 的 Rayrik 開錄，主體在 Ryemuse 完成：四軌機、預算極小，每首跑幾遍取一次能用的。曲目一半是藍調翻唱——Willie Dixon 的〈Spoonful〉、Skip James 的〈I'm So Glad〉——一半是自己寫的〈N.S.U.〉〈Sweet Wine〉，收尾的〈Toad〉整首讓給 Baker 打鼓。12 月 9 日成為 Robert Stigwood 旗下 Reaction 的第一張 LP，英國榜第六。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Fresh_Cream",
+     "https://musicbrainz.org/release-group/38d65202-a589-38ad-bf19-6161193340ee"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "cro-mags",
+  "name": "Cro-Mags",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1986,
+   1992
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Age of Quarrel",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Best Wishes",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Alpha-Omega",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 3,
+   "facts": 3,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c120-a",
+    "album": "The Age of Quarrel",
+    "facts": [
+     {
+      "f": "廠牌實體 Profile（e832b688）：type「Original Production」、country US、area United States、life-span begin **1981**、**disambiguation「US hip‐hop label」**。本批另有兩張同廠：Leeway《Born to Expire》（PRO-1257／PCD-1257，1988）與 Murphy's Law 同名首張（PCD-1225，1986）——**三張的目錄編號 PCD-1218／PCD-1225／PCD-1274 落在同一段**。",
+      "src": "https://musicbrainz.org/ws/2/label/e832b688-546b-45e3-83e5-9f8db5dcde1d?fmt=json"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c120-a",
+    "album": "Best Wishes",
+    "facts": [
+     {
+      "f": "1989 US CD（Profile PCD-1274）逐軌與長度：1〈Death Camps〉5:22、2〈Days of Confusion〉2:19、3〈The Only One〉4:55、4〈Down, But Not Out〉3:59、5〈Crush the Demoniac〉3:56、6〈Fugitive〉4:40、7〈Then and Now〉3:12、8〈Age of Quarrel〉4:45。**只有八軌，卻長 33 分 08 秒——與同團 1986 年那張十五軌 33 分 42 秒幾乎一樣長。**最短的〈Days of Confusion〉2:19 比前作最長的一軌還長。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=936e9e22-2d9c-3073-96e4-634a9a0fcafc&fmt=json&inc=media+labels+recordings&limit=100"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c120-a",
+    "album": "Alpha-Omega",
+    "facts": [
+     {
+      "f": "**軌數混版的差別點只有一軌**：US 1992 的 9 軌版在第 7 位多插一軌 **〈VII〉1:19**，其餘八軌與 XE 版同曲同序。2016 年 Divebomb 的 10 軌版另外把末軌拆成〈Changes〉7:10 與〈Omega Jam〉4:37（合計 11:47），並保留〈VII〉。**8／9／10 三種軌數的差異全部來自〈VII〉這一分十九秒，以及末軌是否拆開。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=e1f032d0-1568-34bd-bb6a-fe5385a7b31b&fmt=json&inc=media+labels+recordings&limit=100"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Age of Quarrel",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "十五軌從一分零六秒到四分零二秒，差了將近四倍。長的那頭是〈Seekers of the Truth〉4:02，短的那頭是〈Survival of the Streets〉1:06。全張十五軌 33 分 42 秒，〈We Gotta Know〉3:24 開場、〈Signs of the Times〉2:01 收尾。1987 年荷蘭壓的 12 吋把同樣這十五軌切成 A 面七軌、B 面八軌。廠牌是 Profile，編號 PCD-1218。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=eb781e95-4c6a-3f55-9222-b6514b5795a9&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=9ffa627f-32c2-4cb1-bfad-00cf348abc70&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/label/e832b688-546b-45e3-83e5-9f8db5dcde1d?fmt=json",
+     "https://itunes.apple.com/lookup?id=1474115345&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/eb781e95-4c6a-3f55-9222-b6514b5795a9"
+    ]
+   },
+   {
+    "album": "Best Wishes",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "末軌叫〈Age of Quarrel〉，而那是上一張碟的盤名。上一張的十五軌裡並沒有同名曲。1989 年的這張長篇只有八軌，卻長 33 分 08 秒，與同團 1986 年那張十五軌的碟幾乎等長。〈Death Camps〉5:22 開場就是全張最長的一首，〈The Only One〉4:55 排在第三。八軌有六軌超過三分半，最短的〈Days of Confusion〉也有 2:19。廠牌是 Profile，編號 PCD-1274。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=936e9e22-2d9c-3073-96e4-634a9a0fcafc&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=9ffa627f-32c2-4cb1-bfad-00cf348abc70&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1475367892&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/936e9e22-2d9c-3073-96e4-634a9a0fcafc"
+    ]
+   },
+   {
+    "album": "Alpha-Omega",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "末軌十二分十二秒，一首就佔掉全張四分之一還多。那軌叫〈Changes / Cro-Mags Jam〉，收在 1992 年歐版八軌 45 分 58 秒的最後。〈See the Signs〉4:08 開場，〈Apocalypse Now〉8:09 是第二長的一首，八軌裡有三軌超過六分鐘。同年的美國版在第七位多插一首一分十九秒的〈VII〉成了九軌，2016 年的再發則把末軌拆開，成了十軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=e1f032d0-1568-34bd-bb6a-fe5385a7b31b&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=9ffa627f-32c2-4cb1-bfad-00cf348abc70&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1045105590&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/e1f032d0-1568-34bd-bb6a-fe5385a7b31b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "danzig",
+  "name": "Danzig",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1988,
+   2004
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Danzig",
+    "year": 1988,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Danzig 4P",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Circle of Snakes",
+    "year": 2004,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "dark tranquillity",
+  "name": "Dark Tranquillity",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1995,
+   2016
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Mind's I",
+    "year": 1997,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Atoma",
+    "year": 2016,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Gallery",
+    "year": 1995,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "The Gallery",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Dark Tranquillity 第二張，1995 年四、五月在 Studio Fredman 錄音，同年十一月由 Osmose 發行。Mikael Stanne 原是節奏吉他兼和聲，這裡首度全碟擔任主唱，Eva-Marie Larsson 在〈The Gallery〉〈Lethe〉等三首唱對位女聲。全碟用 E♭ 調弦。雙吉他主奏、死腔與木吉他段落並置的哥德堡語法在〈Punish My Heaven〉定形，收尾〈Mine Is the Grandeur...〉與〈...of Melancholy Burning〉拆成器樂與人聲兩段相接。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Gallery_(album)",
+     "https://musicbrainz.org/release-group/06a50231-c772-3766-8f20-54dd144a2421"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "dave matthews band",
+  "name": "Dave Matthews Band",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1994,
+   1998
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Crash",
+    "year": 1996,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Under the Table and Dreaming",
+    "year": 1994,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Before These Crowded Streets",
+    "year": 1998,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "deerhoof",
+  "name": "Deerhoof",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2007,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Friend Opportunity",
+    "year": 2007,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Balter / Saunier",
+    "year": 2016,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Love-Lore",
+    "year": 2020,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "diiv",
+  "name": "DIIV",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2012,
+   2019
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Oshin",
+    "year": 2012,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Is the Is Are",
+    "year": 2016,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Deceiver",
+    "year": 2019,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "dio",
+  "name": "Dio",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1983,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Last in Line",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Holy Diver",
+    "year": 1983,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sacred Heart",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c51d-d",
+    "album": "Sacred Heart",
+    "facts": [
+     {
+      "f": "Vivian Campbell 因為與 Dio 之間的酬勞承諾生齟齬，在巡演途中被開除，本作因此成為他在 Dio 的最後一張錄音室專輯。",
+      "src": "https://en.wikipedia.org/wiki/Sacred_Heart_(Dio_album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Last in Line",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1984 年 7 月發行的第二張，在科羅拉多的 Caribou Ranch 錄音、Ronnie James Dio 自任製作。鍵盤手 Claude Schnell 首度以正式團員列名，編制補成五人：Vivian Campbell 吉他、Jimmy Bain 貝斯、Vinny Appice 鼓。開場〈We Rock〉是全碟最急的一首，標題曲從緩慢的前奏推進到齊唱副歌，末軌近七分鐘的〈Egypt (The Chains Are On)〉則走向另一個極端。英國榜第 4、美國榜第 23，1987 年 2 月轉為白金認證。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Last_in_Line",
+     "https://musicbrainz.org/release-group/798601d4-f28e-3835-b10c-1a00ecf773b8"
+    ]
+   },
+   {
+    "album": "Sacred Heart",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "舞台上養著一條機械龍，吉他手卻在巡演途中被開除。1985 年 8 月北美由 Warner Bros. Records、其他地區由 Vertigo 推出的第三張錄音室專輯，Ronnie James Dio 自任製作人。隨行巡演的舞台備有機械龍與雷射，是當年金屬巡演裡規模最誇張的道具之一；吉他手 Vivian Campbell 因為與 Dio 之間的酬勞承諾生齟齬，途中遭到開除，本作也就成了他在團內的最後一張。專輯登上 Billboard 200 第 29 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sacred_Heart_(Dio_album)",
+     "https://musicbrainz.org/release-group/0efb0f16-6d2c-3fe4-b3d5-2fdd08394417"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "doves",
+  "name": "Doves",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2009
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Lost Souls",
+    "year": 2000,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Kingdom of Rust",
+    "year": 2009,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Some Cities",
+    "year": 2005,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "dry cleaning",
+  "name": "Dry Cleaning",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2021,
+   2026
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "New Long Leg",
+    "year": 2021,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Secret Love",
+    "year": 2026,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Stumpwork",
+    "year": 2022,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "earth crisis",
+  "name": "Earth Crisis",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1992,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Destroy the Machines",
+    "year": 1995,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "All Out War",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Firestorm",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 14,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c120-b",
+    "album": "Destroy the Machines",
+    "facts": [
+     {
+      "f": "**十軌的曲目與長度（取 1995-05-25 的 US CD，德版逐軌相同）**：1〈Forced March〉3:47、2〈Born From Pain〉3:17、3〈Destroy the Machines〉3:12、4〈New Ethic〉2:53、5〈The Discipline〉3:47、6〈Deliverance〉3:09、7〈Inherit the Wasteland〉**2:50**、8〈**Asphyxiate**〉2:56、9〈The Wrath of Sanity〉3:51、10〈Fortress〉**4:27**。**十軌總長 34:08，最長〈Fortress〉4:27、最短〈Inherit the Wasteland〉2:50——最長與最短只差 97 秒，十軌裡有七軌落在 2:53 到 3:51 之間。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=e5de37fc-2c3b-375e-a7ec-562eea15bb58&fmt=json&inc=media+labels+recordings&limit=100"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c122-b",
+    "album": "All Out War",
+    "facts": [
+     {
+      "f": "**店面確實沒有本張，回撈候選也不成立。** 以「Earth Crisis All Out War」在 us 店搜尋回 3 筆、gb 店回 7 筆，**沒有一筆是本張**（回的是另一支團的同名碟與一批不相干的合輯）。**最接近的一筆是 1558600200《Forever True (1991-2001)》**（Earth Crisis、2001-10-09、21 軌、This Compilation ℗ 2001）：它的第 17 軌〈Ecocide〉2:53 與第 18 軌〈All Out War〉2:42 **是本張四軌裡的兩軌**，**但〈Stand By〉與〈No Allegiance〉一軌都不在**——**四軌只收了一半。**",
+      "src": "https://itunes.apple.com/lookup?id=1558600200&country=us&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Destroy the Machines",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "最長的一軌四分二十七秒，與最短的只差九十七秒。長的那頭是收尾的〈Fortress〉4:27，短的那頭是第七軌〈Inherit the Wasteland〉2:50，十軌總長 34 分 08 秒，中間七軌全部擠在 2:53 到 3:51 之間。開場〈Forced March〉與第五軌〈The Discipline〉長度完全相同，都是 3:47。這張 12 吋出在 1995 年的美國 Victory，編號 VR 22 LP，秒數取自同年的 CD 版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/e5de37fc-2c3b-375e-a7ec-562eea15bb58?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=e5de37fc-2c3b-375e-a7ec-562eea15bb58&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1560500575&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=88a6037e-87ba-492a-a54c-c927aa620cb8&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/e5de37fc-2c3b-375e-a7ec-562eea15bb58"
+    ]
+   },
+   {
+    "album": "All Out War",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "首版的編號欄是空的，三年後換了廠牌才有編號。四軌合計 10 分 33 秒，與盤名同名的一軌擺在開場，最長的〈Ecocide〉2:55 緊接在後，最短的〈Stand By〉2:12，收尾的〈No Allegiance〉2:40 又回到中段的長度，兩端只差四十三秒，整張像是照同一個尺寸切出來的。三年後換了廠牌再壓兩次，四軌同名同序，長度只差一秒之內。首版的廠牌欄寫的是 Conviction Records。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/6916eda3-6e2e-384a-8e33-8fbd7c44ae59?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=6916eda3-6e2e-384a-8e33-8fbd7c44ae59&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=88a6037e-87ba-492a-a54c-c927aa620cb8&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1558600200&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/6916eda3-6e2e-384a-8e33-8fbd7c44ae59",
+     "https://en.wikipedia.org/wiki/Earth_Crisis"
+    ]
+   },
+   {
+    "album": "Firestorm",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "三軌底下其實有四個歌名，第一軌是兩首歌併成的一條。那一軌 6 分 38 秒，比收尾的〈Eden's Demise〉3:42 長了將近三分鐘，中間的〈Unseen Holocaust〉4:56 補在兩者之間，三軌一路遞減、合計 15 分 16 秒。同一年在兩個國家各壓過一次，曲目與長度一模一樣，換的只有國別、廠牌名與編號。所釘的這一筆是 CD，廠牌欄掛 Victory Europe、編號記為 VE12 CD。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/740d6f30-07cf-3176-9975-c5d879ead228?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=740d6f30-07cf-3176-9975-c5d879ead228&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=88a6037e-87ba-492a-a54c-c927aa620cb8&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/api/rest_v1/page/summary/Firestorm_(EP)",
+     "https://itunes.apple.com/lookup?id=1558948772&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/740d6f30-07cf-3176-9975-c5d879ead228",
+     "https://en.wikipedia.org/wiki/Firestorm_(EP)",
+     "https://en.wikipedia.org/wiki/Earth_Crisis"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ekatarina velika",
+  "name": "Ekatarina Velika",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "S' vetrom uz lice",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ljubav",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ekatarina Velika",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 3,
+   "facts": 4,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c54-a",
+    "album": "Ekatarina Velika",
+    "facts": [
+     {
+      "f": "改名的原因是吉他手 Dragomir Mihajlović「Gagi」離團後主張自己擁有 Katarina II 這個團名的權利，樂團被迫換名，於是取了 Ekatarina Velika（凱薩琳大帝），簡稱 EKV。",
+      "src": "https://en.wikipedia.org/wiki/Ekatarina_Velika"
+     },
+     {
+      "f": "這張是四人編制：Mladenović、Stefanović、Pečar，加上接替 Vdović 的新鼓手 Ivan Fece「Firči」（前 Luna 成員）。",
+      "src": "https://sr.wikipedia.org/wiki/Екатарина_Велика_(албум)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-a",
+    "album": "S' vetrom uz lice",
+    "facts": [
+     {
+      "f": "新鼓手是 Ivan「Raka」Ranković（前 Tvrdo srce i velike uši），接替去服兵役的 Ivan Fece「Firči」。",
+      "src": "https://en.wikipedia.org/wiki/S%27_vetrom_uz_lice"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-a",
+    "album": "Ljubav",
+    "facts": [
+     {
+      "f": "新鼓手是 Srđan Todorović「Žika」，接替離團去組 Ulica od Meseca 的 Ivan Ranković；Todorović 正是 Disciplina Kičme 首張專輯上的那位鼓手。",
+      "src": "https://en.wikipedia.org/wiki/Ekatarina_Velika"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "S' vetrom uz lice",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "薩格勒布 Kulušić 連五場全滿，其中一場錄成了隔年的現場專輯。那是 1986 年 11 月 2 日的事；同年 2 月樂團才在同城的 SIM 錄音室錄完這張第三張專輯，4 月由 ZKP RTVL 發行。新鼓手 Ivan Ranković 接替去服兵役的 Firči，編曲收得比前作緊，鼓的空間感被拉大、鍵盤的鋪面更冷，唱腔壓得很低，句子短、重複多。這張是樂團的商業突破，〈Ti si sav moj bol〉在 2006 年 B92 的百大本地歌曲榜排第 3。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/S%27_vetrom_uz_lice",
+     "https://en.wikipedia.org/wiki/Ekatarina_Velika",
+     "https://musicbrainz.org/release-group/7930c325-8be0-3f92-8dfb-119d6c0e9f2f"
+    ]
+   },
+   {
+    "album": "Ljubav",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "製作台上坐著一個澳洲人，EKV 的聲音第一次整個往吉他那邊挪。那個人是 Theodore Yanni，他同時在專輯裡彈吉他。這是樂團第四張，1987 年 8、9 月分別錄於貝爾格勒與薩格勒布，同年由 PGP-RTB 發行，也是他們第一張不在 ZKP RTVL 出版的長片。吉他音色開闊、殘響長，鍵盤退成襯底，超過六分鐘的〈7 dana〉是全碟最鋪陳的一首。〈Tonemo〉被視為歌詞轉向陰鬱的第一個徵兆。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ljubav_(Ekatarina_Velika_album)",
+     "https://en.wikipedia.org/wiki/Ekatarina_Velika",
+     "https://musicbrainz.org/release-group/ff4a5201-75f5-3c6c-aa6f-9abfb82b76ee"
+    ]
+   },
+   {
+    "album": "Ekatarina Velika",
+    "manifest": "onboarding-manifest-c54-20260904b.json",
+    "desc": "吉他手離團時把團名一起帶走了，於是 Katarina 二世變成了凱薩琳大帝。Dragomir Mihajlović 離團後主張舊團名的權利，樂團於是改叫 Ekatarina Velika，簡稱 EKV。這張 1985 年錄於薩格勒布的 SIM 錄音室，Vladimir Smolec 製作，同年 3 月由 ZKP RTVL 發行。少了第二把吉他的四人編制，聲響往鍵盤與貝斯移動，曲子變短、變成歌的形狀，樂團也第一次真正有了熱門曲：〈Oči boje meda〉與〈Tatoo〉。",
+    "sourceUrls": [
+     "https://sr.wikipedia.org/wiki/Екатарина_Велика_(албум)",
+     "https://en.wikipedia.org/wiki/Ekatarina_Velika",
+     "https://hr.wikipedia.org/wiki/Ekatarina_Velika_(album)",
+     "https://musicbrainz.org/release-group/b812dc07-0623-34db-94d0-3e60efc626fd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "elvis costello",
+  "name": "Elvis Costello",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1977,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "This Year's Model",
+    "year": 1978,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "My Aim Is True",
+    "year": 1977,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "King of America",
+    "year": 1986,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c93-a",
+    "album": "King of America",
+    "facts": [
+     {
+      "f": "該 release-group 的 1986-02-21 US 原盤（release 789bfa7b）欄位：country US、status Official、廠牌欄 Columbia、編號 FC 40173、barcode 074644017311、載體 12\" Vinyl、15 軌。逐軌曲名與曲長依序為〈Brilliant Mistake〉3:42、〈Lovable〉2:51、〈Our Little Angel〉4:06、〈Don't Let Me Be Misunderstood〉3:19、〈Glitter Gulch〉3:15、〈Indoor Fireworks〉4:09、〈Little Palaces〉3:49、〈I'll Wear It Proudly〉4:20、〈American Without Tears〉4:30、〈Eisenhower Blues〉3:46、〈Poisoned Rose〉4:07、〈The Big Light〉2:32、〈Jack of All Parades〉5:18、〈Suit of Lights〉4:05、〈Sleep of the Just〉3:49。",
+      "src": "https://musicbrainz.org/release/789bfa7b-81a8-3eef-9a79-021ddcc09791"
+     },
+     {
+      "f": "英文維基〈King of America〉的 infobox 與導言記：Elvis Costello 的第十張錄音室專輯，1986 年 2 月 21 日發行，由 Costello 與 T Bone Burnett 共同製作，1985 年 7 至 9 月錄於洛杉磯的 Ocean Way、Sunset Sound 與 Sound Factory，全長 57:36。專輯緣起於兩人以「the Coward Brothers」名義做的一系列巡演；Burnett 挑了一批美國錄音樂手組成「the Confederates」，包括 Ray Brown、Earl Palmer 與 Elvis Presley 的 TCB Band 前成員。",
+      "src": "https://en.wikipedia.org/wiki/King_of_America"
+     },
+     {
+      "f": "同條目 Recording 節記：錄音在 1985 年 7 月開始，緊接在 Costello 於 Live Aid 獨自演出之後。第一批進錄音室的核心班底是吉他手 James Burton、貝斯手 Jerry Scheff、鼓手 Ron Tutt——1970 年代替 Elvis Presley 伴奏的 TCB Band 成員。據 Costello 說，曲目盡可能「以現場的方式」錄，之後只加少量疊錄；最終專輯約一半的歌在三天內完成。Scheff 後來說：「在錄音室裡他把一切都掌握住。那非常是他的案子、他的視野。」",
+      "src": "https://en.wikipedia.org/wiki/King_of_America"
+     },
+     {
+      "f": "同節記第二批樂手：爵士貝斯手 Ray Brown、紐奧良鼓手 Earl Palmer、鋼琴手 Tom Canning 與鍵盤手 Mitchell Froom。Costello 一開始被 Brown 與 Palmer 震住，因為他本來就不打算為這個案子找「現成的傳奇」。這組錄了〈Poisoned Rose〉與 J.B. Lenoir 的〈Eisenhower Blues〉，後者 Costello 說只是錄來「讓大家放鬆一下、彈點東西」。其他參與的樂手包括鼓手 Jim Keltner、貝斯手 T-Bone Wolk 與鼓手 Mickey Curry。",
+      "src": "https://en.wikipedia.org/wiki/King_of_America"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "King of America",
+    "manifest": "onboarding-manifest-c93-20260910.json",
+    "desc": "Attractions 三人飛到洛杉磯時，一半的專輯已經錄完。他原打算讓三人錄一半歌，最後只留〈Suit of Lights〉一軌；其餘計畫他取消卻沒告知，讓三人在旅館等一通不會來的電話，他說那些錄音是場災難。核心班底是替 Elvis Presley 伴奏過的 TCB Band 三人，曲目盡可能以現場方式錄，約一半的歌三天內完成。Columbia 聽不出哪首能當單曲，才另錄 Nina Simone 的〈Don't Let Me Be Misunderstood〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d15adcee-0754-3086-851b-da05d0f49f32",
+     "https://musicbrainz.org/release/789bfa7b-81a8-3eef-9a79-021ddcc09791",
+     "https://en.wikipedia.org/wiki/King_of_America"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "enslaved",
+  "name": "Enslaved",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1994,
+   2003
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Vikingligr Veldi",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Below the Lights",
+    "year": 2003,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Frost",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-a",
+    "album": "Frost",
+    "facts": [
+     {
+      "f": "MusicBrainz release 7afdba52（1994-08-04、FR、status Official、條碼 4001617203927）：廠牌欄 Osmose Productions、編號 OPCD 025、載體 CD、9 軌。逐軌曲名與曲長依序為〈Frost〉2:52、〈Loke〉4:22、〈Fenris〉7:17、〈Svarte vidder〉8:43、〈Yggdrasil〉5:23、〈Jotunblod〉4:07、〈Gylfaginning〉5:32、〈Wotan〉4:13、〈Isöders dronning〉7:45。",
+      "src": "https://musicbrainz.org/release/7afdba52-d434-4860-bd4c-01d49603ba4a"
+     },
+     {
+      "f": "同條目導言記這是挪威 extreme metal 樂團 Enslaved 的第二張錄音室專輯，1994 年經 Osmose Productions 發行；也是鼓手 Trym Torson 加入 Emperor 之前參與的最後一張 Enslaved 專輯。",
+      "src": "https://en.wikipedia.org/wiki/Frost_(album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Frost",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "鼓手 Trym Torson 轉投 Emperor 前，最後替 Enslaved 打的就是這張。1994 年 6 到 7 月錄於卑爾根的 Grieghallen，Osmose Productions 以 OPCD 025 發行第二張。封面照片由 Svein Grønvold 拍攝，原收在 Gyldendal Forlag 1991 年出版的《Jotunheimen》。九軌，〈Svarte vidder〉8:43 與〈Isöders dronning〉7:45 最長。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d5d5edf9-92f8-3778-900f-e4116581c6ff?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/release/7afdba52-d434-4860-bd4c-01d49603ba4a",
+     "https://en.wikipedia.org/wiki/Frost_(album)",
+     "https://music.apple.com/us/album/260248477",
+     "https://musicbrainz.org/release-group/d5d5edf9-92f8-3778-900f-e4116581c6ff"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "erkin koray",
+  "name": "Erkin Koray",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Elektronik Türküler",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Erkin Koray Tutkusu",
+    "year": 1977,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Erkin Koray",
+    "year": 1973,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Erkin Koray Tutkusu",
+    "manifest": "onboarding-manifest-c55-20260903.json",
+    "desc": "十一首歌裡有兩首來自荷蘭的 Sound Push Studio。〈My Delight〉與〈Blond Men〉這兩首英文歌的音場明顯與其餘曲目不同，質地更寬鬆。1977 年的這張碟由 Kervan Plakçılık 發行，Erkin Koray 一人包辦主唱、獨奏電吉他與編曲，Akay Temiz 打鼓。吉他音色厚實，獨奏帶大量彎音與微分音，把土耳其旋律的音程直接彈進搖滾語彙裡，人聲反而像另一件樂器。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4752543",
+     "https://tr.wikipedia.org/wiki/Erkin_Koray_Tutkusu",
+     "https://musicbrainz.org/release-group/0b2981a9-786b-4e47-a48a-a1719031076e"
+    ]
+   },
+   {
+    "album": "Erkin Koray",
+    "manifest": "onboarding-manifest-c55-20260904b.json",
+    "desc": "他的第一張長片由唱片公司自行集結舊 45 轉發行，未經他同意。1973 年 İstanbul Plak 把 Erkin Koray 先前的單曲收攏成十二首一張碟，Discogs 的原盤註記寫的是同一件事。每首的錄音條件與編制都不一樣：取自古典曲目的〈Nihansın Dideden〉與民謠改編的〈Kızları Da Alın Askere〉並置，時間一路回到他 1960 年代末的錄音，聽起來像一份未經整理的檔案。貫穿全碟的只有他那把帶重度殘響與彎音的電吉他。",
+    "sourceUrls": [
+     "https://tr.wikipedia.org/wiki/Erkin_Koray_(alb%C3%BCm,_1973)",
+     "https://www.discogs.com/release/5366497",
+     "https://musicbrainz.org/release-group/820a63a3-44a7-3fa1-9b7f-71442276ed13"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "every time i die",
+  "name": "Every Time I Die",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2003,
+   2012
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Hot Damn!",
+    "year": 2003,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "New Junk Aesthetic",
+    "year": 2009,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ex Lives",
+    "year": 2012,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "foreigner",
+  "name": "Foreigner",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1977,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "4",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Double Vision",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Foreigner",
+    "year": 1977,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "4",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "Foreigner 於 1981 年 7 月由 Atlantic 發行的第四張錄音室專輯，題名同時指涉這是第四張作品、以及團員從六人縮編為四人。製作由 Robert John「Mutt」Lange 主掌，錄音一路拖長，他後來得先行離開去趕 Def Leppard 的《High 'n' Dry》。離團的 McDonald 與 Greenwood 由樂手替補，〈Urgent〉的薩克斯風獨奏請到 Junior Walker，鍵盤則找上當時還沒成名的 Thomas Dolby。專輯在 Billboard 200 累計十週冠軍，光美國就賣破六百萬張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/4_(Foreigner_album)",
+     "https://musicbrainz.org/release-group/b29a37cd-e84f-435e-a671-fd7541f65c53"
+    ]
+   },
+   {
+    "album": "Double Vision",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "Foreigner 於 1978 年 6 月 20 日由 Atlantic 發行的第二張錄音室專輯，錄音在同年三月至五月間完成，是他們唯一一張由 Keith Olsen 共同製作、也是貝斯手 Ed Gagliardi 參與的最後一張。首波單曲〈Hot Blooded〉打上 Hot 100 第 3，同名曲〈Double Vision〉再衝到第 2，是樂團當時的最佳名次，〈Blue Morning, Blue Day〉則到第 15。專輯最高第 3，發行一週即獲白金認證，累積至七白金，與 1982 年精選《Records》並列樂團銷量最高作。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Double_Vision_(Foreigner_album)",
+     "https://musicbrainz.org/release-group/1833c951-a01f-3b37-9b37-15e180e69bc8"
+    ]
+   },
+   {
+    "album": "Foreigner",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "英美混編樂團 1977 年 3 月 8 日在 Atlantic 發行的出道作，Mick Jones 主導寫作、Lou Gramm 主唱，Ian McDonald 兼吉他、鍵盤與薩克斯風。〈Feels Like the First Time〉與〈Cold as Ice〉同時打開電台，〈Starrider〉是 Jones 少見的主唱曲。製作掛名 Gary Lyons 與 John Sinclair，倫敦 Sarm 初混成品不滿意，最後在 Atlantic 錄音室由 Jones、McDonald 與 Jimmy Douglass 重混。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Foreigner_(Foreigner_album)",
+     "https://musicbrainz.org/release-group/edb7bc18-e4f1-33c0-ad9e-ef748664dfde"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "friction",
+  "name": "FRICTION",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "軋轢",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Replicant Walk",
+    "year": 1988,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Skin Deep",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 15,
+   "researchRecords": 2,
+   "facts": 5,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c70-b",
+    "album": "Replicant Walk",
+    "facts": [
+     {
+      "f": "Disk Union 的 SHM-CD 商品頁（徳間コミュニケーションズ TKCA10123，2015 年 6 月 17 日）寫：本作是「フリクション 的第三張專輯」，「原始團員只剩レック 一人，由 3/3 時代的盟友ヒゴヒロシ、あけぼの印的佐藤稔、原ラベリッシュ的セリガノ 製作出來的一九八八年作品」；同頁把 WAX 記為「徳間ジャパン 引以為傲的日本第一家龐克／另類專門廠牌」，2015 年的 SHM-CD 復刻是三個月連續推出三十張的完全限定生產企劃。",
+      "src": "https://diskunion.net/jp/ct/detail/1006667998"
+     },
+     {
+      "f": "徳間ジャパン 的官方特設頁〈WAX GREAT REISSUE 2016〉寫：「WAX 廠牌是 1987 年在徳間ジャパン 內設立的日本第一家龐克／另類專門廠牌，一邊打撈八〇年代初同時多發出現、處於混沌狀態的獨立廠牌音源，一邊也做了以 FRICTION 為首的新錄音」；2016 年的復刻把其中二十二張做成 180 克重量盤、封套仿英國盤的 E 式 PP 貼的限定生產黑膠，其中六張是首度黑膠化（本碟不在那六張裡）。名單上 FRICTION《REPLICANT WALK》記為「原始發行：1988」，品番 TKJA-10088、3790 日圓未稅，屬 2016 年 8 月 24 日的第三彈。",
+      "src": "https://www.tkma.co.jp/wax2016/"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c94-b",
+    "album": "Skin Deep",
+    "facts": [
+     {
+      "f": "1982-09-01 日本原盤（MB release 1c790dd6，CBS/Sony、目錄號 28AH 1457、12 吋黑膠、status Official）是 8 軌：〈Pick up〉342 秒、〈Ikigire〉306 秒、〈Dry〉263 秒、〈Easy〉302 秒、〈New Baby's〉397 秒、〈New Sensation〉180 秒、〈Defence〉436 秒、〈Freezin'〉157 秒。同日另有一筆卡帶版（MB release 4943adf3）。",
+      "src": "https://musicbrainz.org/release/1c790dd6-b566-4db7-b3fa-4991beb3bb48"
+     },
+     {
+      "f": "日文維基〈フリクション (バンド)〉記：樂團 1978 年由レック（貝斯）、チコヒゲ（鼓）與ラピス（吉他）組成，是 1970 年代末「東京ロッカーズ」運動的核心；恒松正敏（吉他）於 1978 年底加入；レック與チコヒゲ在組團前都親身經歷過紐約的 no wave 運動，曾與 The Contortions 等前衛團體同台。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)"
+     },
+     {
+      "f": "同一條目的作品表把《軋轢》(1980) 記為首張專輯、《Skin Deep》(1982) 記為第二張專輯、《Zone Tripper》(1995) 在後；樂團 1996 年 11 月後暫停活動，2006 年以レック與鼓手中村達也的雙人編制重啟。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "軋轢",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "レック與チコ・ヒゲ曾在紐約參與 Contortions、Teenage Jesus and the Jerks，把 no wave 的體感帶回東京，1978 年組成 FRICTION，成為「東京ロッカーズ」核心。1980 年 4 月 25 日由 Pass Records 發行的首張錄音室作，錄音場地、器材與工程由坂本龍一一手張羅。樂團其實從未替它定過正式標題，「軋轢」是最後選來印在帯上的字，後來被當成專輯名沿用。三件式編制極簡：レック 一人兼貝斯與主唱，ツネマツマサトシ 的吉他，チコ・ヒゲ 的鼓兼薩克斯。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E8%BB%8B%E8%BD%A2",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%20(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://en.wikipedia.org/wiki/Friction%20(band)",
+     "https://musicbrainz.org/release-group/bdb122b5-f942-39da-946d-06596c824a4a"
+    ]
+   },
+   {
+    "album": "Replicant Walk",
+    "manifest": "onboarding-manifest-c70-20260904.json",
+    "desc": "整張碟錄在紐約長島，其中兩首有 John Zorn 的中音薩克斯風。內頁記錄音與混音都在長島的 Powerplay Studio 完成，時間是 1988 年 3 至 4 月，母帶在紐約的 Masterdisk，製作人 Roli Mosimann。レック貝斯兼主唱與吉他，ヒゴヒロシ吉他，佐藤稔鼓，セリガノ合成器——Disk Union 說原始團員只剩レック一人，並把它記為第三張專輯。徳間的官方頁把 FRICTION 點名為 Wax Records 新錄音那一線的代表。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10039564",
+     "https://diskunion.net/jp/ct/detail/1006667998",
+     "https://www.tkma.co.jp/wax2016/",
+     "https://www.discogs.com/release/9089456",
+     "https://www.discogs.com/master/61887",
+     "https://musicbrainz.org/release-group/c58a2178-a8ec-473f-929a-ac5fe60e0983"
+    ]
+   },
+   {
+    "album": "Skin Deep",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "レック與チコヒゲ組團前親歷紐約的 no wave，與 The Contortions 同台過。FRICTION 1978 年由這兩人與ラピス組成，是東京ロッカーズ的核心，恒松正敏年底加入。日文維基把本作排在《軋轢》與《Zone Tripper》之間。1982 年 CBS/Sony 原盤八軌，〈Defence〉436 秒，〈Freezin'〉157 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/19c6613b-1ad0-4901-87f5-f9bd2d913541",
+     "https://musicbrainz.org/release/1c790dd6-b566-4db7-b3fa-4991beb3bb48",
+     "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3_(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://music.apple.com/us/album/1537156474"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "galaxie 500",
+  "name": "Galaxie 500",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1988,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Today",
+    "year": 1988,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "This Is Our Music",
+    "year": 1990,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "On Fire",
+    "year": 1989,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "This Is Our Music",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "1990 年 Rough Trade 發行的第三張、也是最後一張，Kramer 在紐約 Noise New York 製作，那層把鼓、貝斯與 Dean Wareham 細瘦嗓音一起泡進去的殘響在此最完整。標題取自 Ornette Coleman 1961 年的同名專輯。第六軌翻唱小野洋子〈Listen, the Snow Is Falling〉長七分四十八秒，由 Naomi Yang 主唱。樂團 1991 年春天解散，Wareham 組 Luna，Krukowski 與 Yang 成為 Damon & Naomi；Rough Trade 也在同年破產。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/This_Is_Our_Music_(Galaxie_500_album)",
+     "https://en.wikipedia.org/wiki/Galaxie_500",
+     "https://musicbrainz.org/release-group/4162ce38-f5d0-32e8-8f69-d5e49a9c71a8"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gamma ray",
+  "name": "Gamma Ray",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1991,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Insanity and Genius",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sigh No More",
+    "year": 1991,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Land of the Free",
+    "year": 1995,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Land of the Free",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "Gamma Ray 第四張，Ralf Scheepers 離團後由 Kai Hansen 自任主唱，距他上一次在 Helloween 專任主唱已隔八年。本作由 Hansen 與 Dirk Schlächter 自製，Charlie Bauerfeind 混音。故事講善對惡的反抗；Michael Kiske 唱〈Time to Break Free〉、Hansi Kürsch 與 Hansen 對唱〈Farewell〉。〈Afterlife〉寫給發行前十一週自殺的前 Helloween 鼓手 Ingo Schwichtenberg。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Land_of_the_Free_(Gamma_Ray_album)",
+     "https://musicbrainz.org/release-group/04bb9023-46de-36fd-9d44-f22edafc7341"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gary clark jr.",
+  "name": "Gary Clark Jr.",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2012,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Blak and Blu",
+    "year": 2012,
+    "genres": [
+     "blues",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "JPEG RAW",
+    "year": 2024,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "This Land",
+    "year": 2019,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "This Land",
+    "manifest": "onboarding-manifest-c30-blues-20260821.json",
+    "desc": "Gary Clark Jr. 第三張錄音室專輯,2019 年 2 月由 Warner Bros. 發行,首週以五萬四千張等量單位登上 Billboard 200 第六名。標題曲借 Woody Guthrie〈This Land Is Your Land〉的句型反寫,歌曲與 Savanah Leaf 執導的 MV 直指美國社會的種族處境。錄音上除〈When I'm Gone〉用 Fender Stratocaster,其餘以 Gibson SG 完成,Sheila E. 與 Mike Elizondo 都在名單內。2020 年獲葛萊美最佳當代藍調專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/This_Land_(Gary_Clark_Jr._album)",
+     "https://musicbrainz.org/release-group/cd4fe180-6845-4f34-be87-6e16030a8367"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gauze",
+  "name": "Gauze",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Fuck Heads",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "EQUALIZING DISTORT",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "限界は何処だ",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 20,
+   "researchRecords": 3,
+   "facts": 8,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c116-a",
+    "album": "EQUALIZING DISTORT",
+    "facts": [
+     {
+      "f": "release-group fd66c5e6 的欄位：title「EQUALIZING DISTORT」、artist-credit「Gauze」（藝人實體 3e1caa06，Group／JP、disambiguation 空）、first-release-date **1990-06-15**、primary-type Album、secondary-types **空**。轄下 3 個 release：JP 1990-06-15 的 CD（catno BELCD-12002，10 軌，release 題名寫作片假名「イコアライジング・ディストート」）、JP 1997-10-10 的 CD（catno XXX-9，10 軌）、以及一筆無日期、status 為 null 的 10 軌 release。**MB 這個 release-group 底下沒有任何 1980 年代的實體。**",
+      "src": "https://musicbrainz.org/ws/2/release-group/fd66c5e6-78de-4035-91e3-1b251a044add?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "日文維基〈GAUZE (バンド)〉：1981 年 9 月結成、2022 年 11 月解散；自主企畫「消毒GIG」為主的現場活動影響了 1990 年代以後日本 punk 團的活動方式；1980 年代中期經舊金山的同人誌《マクシマム・ロックンロール》被介紹到日本以外。**該條目明寫「公式アルバムは6枚」**，並記「1985 年 7 月由 タム 的個人廠牌 ADK レコード 發行 1st《FUCK HEADS》」、**「1986 年 3 月由 Selfish Records 發行 2nd《EQUALIZING DISTORT》」**，以及 Selfish Records 自本張起才建立起代表日本 hardcore 的知名度。",
+      "src": "https://ja.wikipedia.org/wiki/GAUZE%20(%E3%83%90%E3%83%B3%E3%83%89)"
+     },
+     {
+      "f": "英文維基〈Gauze (band)〉：1981 年秋天結成；貝斯手 Shin 說樂團最初的目標是「盡可能快」，做法是製造在快速演奏的印象而不真的那麼快。條目記最早的錄音是 1982 年 City Rocker 合輯 LP 上的十首歌；**首張《Fuck Heads》1985 年 6 月發行、之後不久錄了《Equalizing Distort》並於 1986 年 3 月發行**。1996 年赴美巡演，只演成三場（Berkeley 的 Gilman St.、Minneapolis 的 Bomb Shelter、芝加哥的 Fireside Bowl）。樂團 2022 年 11 月解散。",
+      "src": "https://en.wikipedia.org/wiki/Gauze%20(band)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c116-a",
+    "album": "限界は何処だ",
+    "facts": [
+     {
+      "f": "release-group 24cb6c0f 的欄位：title「限界は何処だ」、artist-credit「Gauze」（藝人實體 3e1caa06，Group／JP）、first-release-date **1990-10-05**、primary-type Album、secondary-types **空**。轄下 4 個 release，全部 JP：1990-10 的 CD（Selfish Records，BELCD-12040，**2 軌**）、1990-10-05 的 CD（無廠牌欄，BELCD-12040，10 軌）、1997 的 CD（XXX Records，XXX-10，11 軌）、1997-10-10 的 CD（無廠牌欄，XXX-10，10 軌）。**同一張碟在 MB 上被建成兩兩成對的四筆，軌數 2／10／11／10 各不相同。**",
+      "src": "https://musicbrainz.org/ws/2/release-group/24cb6c0f-7ac9-4c41-82de-253646fb8d89?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "日文維基〈GAUZE (バンド)〉：**1989 年在英國與 カオスUK 進行歐洲巡演，那次的現場音源以「ライブ・イン・スコットランド」之名收進隔年 1990 年發行的第三張專輯《限界は何処だ》的 CD／LP**——條目並註明「LP 的情況是 A 面錄音室、B 面現場錄音」。同條目記樂團 1981 年 9 月結成、2022 年 11 月解散、公式アルバム 6 枚，以及 1997 年 4 月 1 日第四張《面を洗って出直して来い》發行時，先前三張絕版專輯由 XXX レコード 數位重製再發。",
+      "src": "https://ja.wikipedia.org/wiki/GAUZE%20(%E3%83%90%E3%83%B3%E3%83%89)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c70-a",
+    "album": "Fuck Heads",
+    "facts": [
+     {
+      "f": "Discogs 的 ADK Records 廠牌條目寫：ADK 是田村和男（Kazuo Tamura，藝名 Tam）經營的日本廠牌；條目另列 1985 年 5 至 7 月預告卻未發行的品項，包括一張 Gauze 的 12 吋 EP。",
+      "src": "https://www.discogs.com/label/118686"
+     },
+     {
+      "f": "日文維基的 GAUZE 條目記：樂團 1981 年 9 月成軍，活動以自主企劃的硬蕊演出「消毒 GIG」為中心；首張專輯《FUCK HEADS》1985 年 6 月由 ADK Records 發行（ADK-22A）、兩面十曲，1997 年由 XXX Records 出重製 CD；第二張《EQUALIZING DISTORT》（1986）經 Maximum Rock'n'Roll 的 Tim Yohannan 與 Pushead 評介而在海外受注目；2022 年 11 月 26 日在新宿 ANTIKNOCK 最後一場後解散。",
+      "src": "https://ja.wikipedia.org/wiki/GAUZE_(%E3%83%90%E3%83%B3%E3%83%89)"
+     },
+     {
+      "f": "Drop Dead HC 的商品頁寫：這是「樂團核可的正式復刻，三十年來第一次」，厚紙 tip-on 封套附插頁，並稱 Gauze 是對 Dropdead 影響極大的日本硬蕊。",
+      "src": "https://www.dropdeadhc.com/product/gauze-fuck-heads-lp-preorder"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "EQUALIZING DISTORT",
+    "manifest": "onboarding-manifest-c116-20260910.json",
+    "desc": "十首歌不到十八分鐘，九首不滿兩分半，收尾〈言いなり〉放到四分半。十軌的曲名一律以片假名登錄，連英文原題也照音譯寫成〈プレッシング・オン〉〈ファクト・アンド・クリミナル〉，最短的〈パッパッパ〉只有一分零五秒。樂團自述的做法是製造快的印象、而不真的那麼快。1986 年 3 月由 Selfish Records 發行，這家廠牌自這張起才建立起代表日本 hardcore 的名聲；這是他們六張正式專輯裡的第二張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/fd66c5e6-78de-4035-91e3-1b251a044add?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=fd66c5e6-78de-4035-91e3-1b251a044add&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=3e1caa06-ee31-4a5c-b28f-774232d79340&fmt=json&limit=100&offset=0",
+     "https://ja.wikipedia.org/wiki/GAUZE%20(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://en.wikipedia.org/wiki/Gauze%20(band)",
+     "https://itunes.apple.com/search?term=Gauze&country=us&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/fd66c5e6-78de-4035-91e3-1b251a044add"
+    ]
+   },
+   {
+    "album": "限界は何処だ",
+    "manifest": "onboarding-manifest-c116-20260910.json",
+    "desc": "後半整段是 1989 年 8 月蘇格蘭的現場，黑膠上就是整個 B 面。前半錄音室那十首裡有三首在後半的現場又演了一次，〈死人に口無し〉與〈一触即発〉都在其中；現場那半七首連成一段、十一分五十四秒，來自那年與英國的 Chaos UK 同行的歐洲巡演。錄音是 1989 年，發行則要到隔年——1990 年 10 月由 Selfish Records 出，編號 BELCD-12040，這是他們六張正式專輯裡的第三張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/24cb6c0f-7ac9-4c41-82de-253646fb8d89?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=24cb6c0f-7ac9-4c41-82de-253646fb8d89&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/GAUZE%20(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://en.wikipedia.org/wiki/Gauze%20(band)",
+     "https://musicbrainz.org/ws/2/release-group?artist=3e1caa06-ee31-4a5c-b28f-774232d79340&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/search?term=Gauze&country=jp&media=music&entity=musicArtist&limit=20",
+     "https://musicbrainz.org/release-group/24cb6c0f-7ac9-4c41-82de-253646fb8d89"
+    ]
+   },
+   {
+    "album": "Fuck Heads",
+    "manifest": "onboarding-manifest-c70-20260904.json",
+    "desc": "兩面標題印的是「顔面」與「尻面」，B 面標籤另外附了一張紙。那面的標籤被審查過，2017 年 XXX Records 的紅膠復刻於是附上原始被審查的 B 面標籤影本。原盤是 ADK Records 的 12 吋 45 轉唱片，Kojima Recordings 製造，另附歌詞插頁；ADK 由田村和男（藝名 Tam）經營，他與樂團共同掛製作並負責混音。日文維基記樂團 1981 年 9 月成軍，活動以自主企劃的硬蕊演出「消毒 GIG」為中心。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3077275",
+     "https://www.discogs.com/label/118686",
+     "https://ja.wikipedia.org/wiki/GAUZE_(%E3%83%90%E3%83%B3%E3%83%89)",
+     "https://www.discogs.com/release/11297391",
+     "https://www.dropdeadhc.com/product/gauze-fuck-heads-lp-preorder",
+     "https://www.discogs.com/master/364892",
+     "https://musicbrainz.org/release-group/2f67baf0-fd42-32a5-be2b-9adb6fd19935"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gene clark",
+  "name": "Gene Clark",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1967,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "No Other",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gene Clark with the Gosdin Brothers",
+    "year": 1967,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "White Light",
+    "year": 1971,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 17,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-b",
+    "album": "Gene Clark with the Gosdin Brothers",
+    "facts": [
+     {
+      "f": "同一條目記商業結果：本作「幾乎與 The Byrds 打對台的那張同時發行」，是一次「商業上的失敗」，部分原因是 Clark 已「離開公眾視野十八個月」。評價方面 AllMusic 4/5、NME 9/10。",
+      "src": "https://en.wikipedia.org/wiki/Gene_Clark_with_the_Gosdin_Brothers"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c94-b",
+    "album": "White Light",
+    "facts": [
+     {
+      "f": "英文維基〈White Light (Gene Clark album)〉記：本作題為《White Light》、**亦稱《Gene Clark》**；1971 年 8 月發行，廠牌 A&M，製作人 Jesse Ed Davis；1971 年 2 至 3 月錄於洛杉磯的 A&M Studios 與 Village Recorders。",
+      "src": "https://en.wikipedia.org/wiki/White_Light_(Gene_Clark_album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "No Other",
+    "manifest": "onboarding-manifest-c32-folk-20260821.json",
+    "desc": "Byrds 創團主筆 Gene Clark 的第四張個人作，1974 年 9 月由 Asylum 發行。製作人 Thomas Jefferson Kaye 以近乎 Phil Spector 的手法堆疊人聲與配器，找來 Jesse Ed Davis、Chris Hillman 等人助陣，把民謠與 country-rock 的底子推向厚重的 cosmic American music，〈Silver Raven〉、〈Strength of Strings〉見他神秘取向的寫作。發行後乏人問津，1976 年即遭刪除目錄，2019 年 4AD 重製後評價翻轉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/No_Other",
+     "https://musicbrainz.org/release-group/1a8984d7-503a-3a06-b02c-dad5e01b0d10"
+    ]
+   },
+   {
+    "album": "Gene Clark with the Gosdin Brothers",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "發行時幾乎撞上 The Byrds 的那張，而他已離開公眾視野十八個月。英文維基記這是一次商業上的失敗。1966 年錄音，製作人 Larry Marks 與 Gary Usher，Gosdin 兄弟 Vern 與 Rex 唱和聲；樂手裡有 Glen Campbell 的電吉他、Leon Russell 的鋼琴與大鍵琴，客席是 Clarence White 與 Doug Dillard 的電班鳩。1967 年 Columbia 原盤十一軌，〈Echoes〉194 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a049e944-8b50-34c8-b1f5-3be8c33d1123",
+     "https://musicbrainz.org/release/aaa82571-f2db-42e2-abd3-c6e03718f65f",
+     "https://en.wikipedia.org/wiki/Gene_Clark_with_the_Gosdin_Brothers",
+     "https://music.apple.com/us/album/273843730"
+    ]
+   },
+   {
+    "album": "White Light",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "原盤在 A&M 掛的標題是自我同名的《Gene Clark》。1971 年錄於洛杉磯的 A&M Studios 與 Village Recorders，製作人 Jesse Ed Davis 同時彈電吉他與 bottleneck，班底另有 Chris Ethridge 的貝斯與 Mike Utley 的管風琴。原盤九軌，同名曲〈White Light〉在 A 面，〈For a Spanish Guitar〉297 秒。英文維基記它只在荷蘭賣得動，也得到當地樂評的推崇。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b0bf102b-260b-34e7-b953-5cc8a1bc33e6",
+     "https://musicbrainz.org/release/ca2d8503-a70b-472f-b35c-f225b401ef54",
+     "https://musicbrainz.org/release/ff787616-dadf-4cf7-999f-c41c9c987ba1",
+     "https://en.wikipedia.org/wiki/White_Light_(Gene_Clark_album)",
+     "https://music.apple.com/us/album/1443625305"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "geoff mann",
+  "name": "Geoff Mann",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1986
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "I May Sing Grace",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Chants Would Be a Fine Thing",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Psalm Enchanted Evening",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 28,
+   "researchRecords": 3,
+   "facts": 10,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c80-b",
+    "album": "I May Sing Grace",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 1520547）記：1984 年英國盤，廠牌 Food For Thought Records、編號 **GRUB 4**，Vinyl／LP／Album；條目註記只有一句：「**Recorded at Pullman Studios, Knutsford, 27th July - 5th August 1984**」——連錄音的起訖日期都印出來了。",
+      "src": "https://www.discogs.com/release/1520547-Geoff-Mann-I-May-Sing-Grace"
+     },
+     {
+      "f": "Discogs 的 Food For Thought 廠牌頁（label 4175）列七十四筆，GRUB 這組編號的鄰居幾乎全是美國器樂搖滾的英國授權盤：**1984 年的 GRUB 3 是 Steve Vai 的《Flex-Able》**，1987 年的 GRUB 8 是 Joe Satriani 的《Surfing With The Alien》，1988 年的 GRUB 9 是 Stuart Hamm、GRUB 10M 是 Simon Phillips，1990 年的 GRUB 17 是 Steve Vai 的《Passion And Warfare》。",
+      "src": "https://www.discogs.com/label/4175-Food-For-Thought"
+     },
+     {
+      "f": "同一份廠牌目錄裡，1991 年的 **GRUB 18 是 Twelfth Night 的雙黑膠《Collectors Item》**——Geoff Mann 曾經的樂團，七年後也出現在同一家廠牌的編號序列上。",
+      "src": "https://www.discogs.com/label/4175-Food-For-Thought"
+     },
+     {
+      "f": "Discogs 的 Geoff Mann 藝人條目（artist 484993）記：1956 年 4 月 11 日生於英格蘭柴郡，1993 年 2 月 5 日卒於羅奇代爾；條目的說明只有一句——「Ex-vocalist for the band Twelfth Night, who has released several minimalist solo albums.」",
+      "src": "https://www.discogs.com/artist/484993-Geoff-Mann"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c80-b",
+    "album": "Chants Would Be a Fine Thing",
+    "facts": [
+     {
+      "f": "Discogs 的原捲條目（release 10558751）記：1984 年英國發行，廠牌 Twilight Records (7)、編號 **GM001**（編號用的是他的姓名縮寫），形制 Cassette／Album／Stereo；公司欄只有一項——**Recorded At: Twilight Sound Studios, Salford**。**廠牌名與錄音室名是同一個字。**",
+      "src": "https://www.discogs.com/release/10558751-Geoff-Mann-Chants-Would-Be-A-Fine-Thing"
+     },
+     {
+      "f": "原捲九軌：A 面〈One Of The Green Things〉〈Confusion Rains〉〈Big Men〉〈Somewhere Here〉〈Hope Hospital〉；B 面〈Theospeak〉〈I Don't Believe You〉〈**Easter Bunnies Do The Salford Hustle (Pt.IX)**〉〈Hello〉。**兩個資料庫都沒有登錄任何一首的長度。**",
+      "src": "https://www.discogs.com/master/1398848-Geoff-Mann-Chants-Would-Be-A-Fine-Thing"
+     },
+     {
+      "f": "Discogs 的 Twilight Records (7) 廠牌頁（label 181347）共十三筆，**除了本捲之外幾乎全是本地樂團的七吋單曲**：TRS 001 Arthur J. Connett（1984）、TRS 002 The Cause（1984）、TRS 003 Deformed（1985）、TRS 004 Mr. Jones（1985）、TRS 005 Crazi Dymonde（1987）、TRS 006 The Moochers（1987）、TRS 009 The Rivertrade（1989）、TRS 010 The Sacred（1993）、TRS 012 Ben Harvieu（1990）。**本捲的 GM001 是這份目錄裡唯一不用 TRS 編號的一筆。**",
+      "src": "https://www.discogs.com/label/181347-Twilight-Records-7"
+     },
+     {
+      "f": "Discogs 的 master 1398848 版本頁只有三筆：1984 年 Twilight Records 的卡帶 GM001、2004 年掛「Not On Label (Geoff Mann Self-released)」的 CD-R（GMCDR03）、**2024 年編號 WOB04 的雙片 CD（標 Album／Numbered／Reissue、副標 Definitive Edition，廠牌欄登的是「Not On Label」）**。三筆零筆標 Unofficial Release。",
+      "src": "https://www.discogs.com/master/1398848-Geoff-Mann-Chants-Would-Be-A-Fine-Thing"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c80-b",
+    "album": "Psalm Enchanted Evening",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 3921429）記：1986 年 2 月英國盤，廠牌 Wobbly Records (3)、編號 **WOB001**，Vinyl／LP／Album；條目註記把資料逐項列出來——「Recorded at: Pullman Studios, Manchester／Record Company: Wobbly Records／Catalogue Number: WOB001／Released: February 1986／Format: LP」。",
+      "src": "https://www.discogs.com/release/3921429-Geoff-Mann-Psalm-Enchanted-Evening"
+     },
+     {
+      "f": "Discogs 的 Wobbly Records (3) 廠牌條目（label 898488）簡介只有一句：「Label associated with British songwriter / vocalist Geoff Mann.」整個廠牌頁只有九筆發行。",
+      "src": "https://www.discogs.com/label/898488-Wobbly-Records-3"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "I May Sing Grace",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "封套上印著錄音的起訖日：七月二十七日到八月五日。諾茲福德的 Pullman Studios——這是 1984 年 Food For Thought 的 GRUB 4 條目上唯一的註記。九軌，最長的〈For More Than A Day〉六分十八秒。他唱歌、彈吉他、敲打擊，credit 另有一個名字叫 The Still Owl，掛吉他、曼陀林與鍵盤。GRUB 這組編號的鄰居是 Steve Vai 的授權盤，GRUB 18 是 Twelfth Night 的雙黑膠。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1520547-Geoff-Mann-I-May-Sing-Grace",
+     "https://musicbrainz.org/release-group/2a913c3f-03a3-49e0-b781-7e3db0dd3ff5",
+     "https://www.discogs.com/label/4175-Food-For-Thought",
+     "https://www.discogs.com/artist/484993-Geoff-Mann",
+     "https://en.wikipedia.org/wiki/Twelfth_Night_(band)"
+    ]
+   },
+   {
+    "album": "Chants Would Be a Fine Thing",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "Discogs 給這一捲的風格標籤是 Experimental，同一位藝人另外兩張標的是 Prog Rock。1984 年的 Twilight Records GM001，九軌，錄音在索爾福德的 Twilight Sound Studios——廠牌名與錄音室名是同一個字。廠牌頁十三筆多半是本地樂團的七吋單曲，本捲是裡面唯一不用 TRS 編號的一筆。credit 五個名字：他唱歌並彈吉他、鍵盤與打擊，另有電吉他、人聲與工程，Jane Mann 掛曼陀林、小提琴與人聲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10558751-Geoff-Mann-Chants-Would-Be-A-Fine-Thing",
+     "https://www.discogs.com/master/1398848-Geoff-Mann-Chants-Would-Be-A-Fine-Thing",
+     "https://musicbrainz.org/release-group/89ae5d73-f4a4-4e2b-99f7-318f15cc08d3",
+     "https://www.discogs.com/label/181347-Twilight-Records-7",
+     "https://www.discogs.com/release/33395072-Geoff-Mann-Chants-Would-Be-A-Fine-Thing-",
+     "https://www.discogs.com/release/3921429-Geoff-Mann-Psalm-Enchanted-Evening"
+    ]
+   },
+   {
+    "album": "Psalm Enchanted Evening",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "整張碟的 credit 只有兩個名字：一個唱歌兼打電子鼓，一個彈吉他。1986 年 2 月的 Wobbly Records WOB001，六軌，錄音在曼徹斯特的 Pullman Studios。條目自己註明沒有現行的 CD 版，並逐軌指出每一首可以在哪張碟上找到。廠牌頁只有九筆：這張之後，1994 年出過一張向他致意的合輯，接著整整二十九年沒有東西，2023 到 2026 年才一口氣排完七個編號。Geoff Mann 1993 年 2 月 5 日在羅奇代爾去世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3921429-Geoff-Mann-Psalm-Enchanted-Evening",
+     "https://musicbrainz.org/release-group/887b3b79-af2e-4332-b00e-89f070bc409b",
+     "https://www.discogs.com/label/898488-Wobbly-Records-3",
+     "https://www.discogs.com/master/1398848-Geoff-Mann-Chants-Would-Be-A-Fine-Thing",
+     "https://www.discogs.com/artist/484993-Geoff-Mann",
+     "https://coverartarchive.org/release-group/887b3b79-af2e-4332-b00e-89f070bc409b/front"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "god bless",
+  "name": "God Bless",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1976,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Cermin",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Semut Hitam",
+    "year": 1988,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "God Bless",
+    "year": 1976,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 30,
+   "researchRecords": 3,
+   "facts": 9,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "cseac-b",
+    "album": "God Bless",
+    "facts": [
+     {
+      "f": "Achmad Albar（小名 Iyek）在荷蘭住了幾年後回到印尼，想組一支認真一點的樂團；他是和吉他手 Ludwig Lemans 一起回來的，Lemans 是他在荷蘭那支樂團 Clover Leaf 的吉他手。",
+      "src": "https://id.wikipedia.org/wiki/God_Bless"
+     },
+     {
+      "f": "他找上鼓手 Fuad Hassan 與貝斯手 Donny Fattah 先組了 Crazy Wheels，在 Taman Ismail Marzuki 首演、又參加了 Ragunan 的「Summer '28」音樂節之後，1973 年 5 月 5 日正式改名 God Bless。",
+      "src": "https://id.wikipedia.org/wiki/God_Bless"
+     },
+     {
+      "f": "1974 年 6 月，鼓手 Fuad Hassan 與鍵盤手 Soman Lubis 在南雅加達 Pancoran 的 Tugu Pancoran 一帶死於交通事故；吉他手 Ludwig Lemans 隨後也決定離團，樂團只剩下 Achmad Albar 與 Donny Fattah 兩個人。",
+      "src": "https://id.wikipedia.org/wiki/God_Bless"
+     },
+     {
+      "f": "發行後輿論反應冷淡，樂評與聽眾指控專輯抄襲他人作品，商業上以失敗收場；但這張之後，原本對搖滾毫無興趣的廠牌 Remaco 也開始發行搖滾唱片。",
+      "src": "https://id.wikipedia.org/wiki/God_Bless_(album)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "cseac-b",
+    "album": "Cermin",
+    "facts": [
+     {
+      "f": "這張之前 Jockie Surjoprajogo 離團，1979 年加入的 Abadi Soesman 接手鍵盤；錄音陣容是 Achmad Albar、Ian Antono、Donny Fattah、Teddy Sujaya 與 Abadi Soesman。",
+      "src": "https://id.wikipedia.org/wiki/Cermin_(album)"
+     },
+     {
+      "f": "錄音時鼓手 Teddy Sujaya 沒有使用節拍器。",
+      "src": "https://id.wikipedia.org/wiki/God_Bless"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "cseac-b",
+    "album": "Semut Hitam",
+    "facts": [
+     {
+      "f": "1980 年代泗水的搖滾演出商 Log Zhelebour 在印尼各地密集辦搖滾音樂節，把 God Bless 的歌訂為參賽指定曲、成員請去當評審，才把樂團從長睡裡叫醒；這條路線後來也帶出 Grass Rock、Elpamas 到 Slank 等一批樂團。",
+      "src": "https://id.wikipedia.org/wiki/God_Bless"
+     },
+     {
+      "f": "音樂概念從前衛搖滾大幅轉向更硬的路數，帶進 hard rock 與 heavy metal 的影響，同時也把市場口味算了進去；印尼文維基把本作的曲風歸為 hard rock 與 glam metal。",
+      "src": "https://id.wikipedia.org/wiki/God_Bless"
+     },
+     {
+      "f": "本作發行之後，Ian Antono 宣布退出 God Bless，位置由年輕吉他手 Eet Sjahranie 接手，1989 年的《Raksasa》是新陣容的第一張。",
+      "src": "https://id.wikipedia.org/wiki/God_Bless"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Cermin",
+    "manifest": "onboarding-manifest-csea-20260901.json",
+    "desc": "〈Anak Adam〉一首歌 12 分 02 秒，那是三分鐘情歌統治市場的年代。九首、53 分鐘的這張唱片被當成樂團對唱片工業的反抗——當時的印尼市場由狹義的情歌流行樂主導，唱片公司總拿市場需求逼樂團就範。Jockie Surjoprajogo 離團後，1979 年進來的 Abadi Soesman 接手鍵盤，鍵盤與吉他分層鋪陳，段落變多。唱片 1980 年 4 月 1 日由 JC Records 發行，成為樂團銷售最差的一張，母帶後來轉手，2014 年才發行 CD 版。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/Cermin_(album)",
+     "https://id.wikipedia.org/wiki/God_Bless",
+     "https://musicbrainz.org/release-group/48c0b189-58e4-45d0-80c9-dd2ae5f51131"
+    ]
+   },
+   {
+    "album": "Semut Hitam",
+    "manifest": "onboarding-manifest-csea-20260901.json",
+    "desc": "泗水的演出商把他們的歌訂成音樂節指定曲，睡了八年的樂團醒了。那位演出商是 Log Zhelebour，1980 年代他在印尼各地密集辦搖滾音樂節。他掛製作人的這張 1988 年 3 月 27 日發行，距《Cermin》整整八年，音樂概念從前衛搖滾轉向 hard rock 與 heavy metal，成為樂團有史以來最暢銷的一張。第二軌〈Rumah Kita〉是繼〈Kehidupan〉與同名曲之後才起飛的第三首主打，作曲的 Ian Antono 在唱片發行後退出樂團。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/Semut_Hitam",
+     "https://id.wikipedia.org/wiki/God_Bless",
+     "https://musicbrainz.org/release-group/b07035a5-d74b-4820-83d3-9d910326f067"
+    ]
+   },
+   {
+    "album": "God Bless",
+    "manifest": "onboarding-manifest-csea-20260904b.json",
+    "desc": "他從荷蘭帶了一個吉他手回國；一年多後，團裡只剩兩個人。Achmad Albar 帶回的是 Ludwig Lemans，兩人與鼓手 Fuad Hassan、貝斯手 Donny Fattah 在 1973 年 5 月定名 God Bless。1974 年 6 月，Fuad Hassan 與鍵盤手 Soman Lubis 死於交通事故，Lemans 隨後離團。1975 年錄音時混音台是廣播規格，幾乎是實況收音。唱片 1976 年由 Pramaqua 發行，反應冷淡，還被指控抄襲。",
+    "sourceUrls": [
+     "https://id.wikipedia.org/wiki/God_Bless",
+     "https://id.wikipedia.org/wiki/God_Bless_(album)",
+     "https://musicbrainz.org/release-group/e6daace9-fe13-4f2e-9368-229bb505b8b9"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "godflesh",
+  "name": "Godflesh",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1989,
+   1994
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Streetcleaner",
+    "year": 1989,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Pure",
+    "year": 1992,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Selfless",
+    "year": 1994,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-a",
+    "album": "Selfless",
+    "facts": [
+     {
+      "f": "MusicBrainz release f55441f0（1994-09-26、GB、status Official、條碼 5018615108528）：廠牌欄 Earache Records、編號 MOSH 85CD、載體 CD、11 軌。逐軌曲名與曲長依序為〈Xnoybis〉5:54、〈Bigot〉4:33、〈Black Boned Angel〉6:47、〈Anything Is Mine〉3:59、〈Empyreal〉6:03、〈Crush My Soul〉4:27、〈Body Dome Light〉5:31、〈Toll〉4:13、〈Heartless〉5:32、〈Mantra〉7:27、〈Go Spread Your Wings〉23:50。",
+      "src": "https://musicbrainz.org/release/f55441f0-52e5-4216-b998-eeba9df6754f"
+     },
+     {
+      "f": "MusicBrainz release 1f633ab6（1994-09-26、JP、status Official、條碼 4988061887128）：廠牌欄 TOY'S FACTORY、編號 TFCK-88712、載體 CD、同樣 11 軌、曲名與曲長逐項相同。",
+      "src": "https://musicbrainz.org/release/1f633ab6-be95-46ad-bd04-f25542afbe24"
+     },
+     {
+      "f": "英文維基〈Selfless (album)〉的資訊框記：類型 studio、歐洲發行 1994 年 9 月 26 日、美國發行 1994 年 10 月 18 日、錄音期 1994 年 1 至 5 月、錄音室 Avalanche、曲風 industrial metal、總長 78:12、廠牌 Earache 與美國 Columbia、製作人 J. K. Broadrick 與 G. C. Green、前一作 EP《Merciless》(1994)、後一張《Songs of Love and Hate》(1996)。",
+      "src": "https://en.wikipedia.org/wiki/Selfless_(album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Selfless",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "2018 年的 Roadburn 音樂節，樂團第一次把這張碟近乎完整演一遍。被換掉的是二十三分鐘的收尾曲〈Go Spread Your Wings〉，替代的是〈Messiah〉與〈Merciless〉。1994 年 1 到 5 月錄於 Avalanche，J. K. Broadrick 與 G. C. Green 製作；最終母帶由唱片公司指派的 Bob Ludwig 做，Broadrick 覺得是改善，把這張大廠首作形容成他的「rock & roll」專輯。十一軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/d8f8fb23-7ec6-3f92-b9ef-4e057419457c?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/release/f55441f0-52e5-4216-b998-eeba9df6754f",
+     "https://musicbrainz.org/release/1f633ab6-be95-46ad-bd04-f25542afbe24",
+     "https://en.wikipedia.org/wiki/Selfless_(album)",
+     "https://music.apple.com/us/album/310621687",
+     "https://musicbrainz.org/release-group/d8f8fb23-7ec6-3f92-b9ef-4e057419457c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gorilla biscuits",
+  "name": "Gorilla Biscuits",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1987,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Start Today",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "demo 1987",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gorilla Biscuits",
+    "year": 1988,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c122-b",
+    "album": "demo 1987",
+    "facts": [
+     {
+      "f": "release-group 1c997f24 的欄位：title「**demo 1987**」（**全小寫，MB 實體本身就是小寫的 demo**）、artist-credit「Gorilla Biscuits」（藝人實體 0320a32e，disambiguation「hardcore punk」）、first-release-date **1987**（只有年）、primary-type EP、**secondary-types [\"Demo\"]**。轄下 **2 筆 release**：**1987 US Official、Cassette、6 軌**（卡單釘的這一筆，label-info 欄有一筆但廠牌名是 **[no label]**、catno **[none]**）／**1991 US、status Bootleg、media format 為 null、6 軌**。",
+      "src": "https://musicbrainz.org/ws/2/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790?fmt=json&inc=artist-credits+releases+media"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c122-b",
+    "album": "Gorilla Biscuits",
+    "facts": [
+     {
+      "f": "**1988 Revelation:4 的七軌與長度**：1〈High Hopes〉2:23、2〈Big Mouth〉1:59、3〈No Reason Why〉1:51、**4〈GM2〉0:18**、5〈Hold Your Ground〉2:01、6〈Breaking Free〉1:10、7〈Finish What You Started〉1:40。**七軌總長 11:22，最長〈High Hopes〉2:23、最短〈GM2〉只有 18 秒**；扣掉 18 秒那軌，其餘六軌落在 1:10 到 2:23 之間。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Start Today",
+    "manifest": "onboarding-manifest-c120-20260910.json",
+    "desc": "第七、八、十軌長度完全相同，都是 2:06。那三軌是〈Start Today〉〈Two Sides〉與〈Competition〉；開場〈New Direction〉2:31 是十四軌裡最長的一首，第四軌〈Good Intentions〉只有 31 秒是最短的，全張總長 24 分 45 秒。同年的卡帶只有十二軌，末尾那兩軌不在上面。這張 12 吋出在 1989 年的美國 Revelation，編號 12，是這支團當年唯一一張形態完整的長篇。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/2076b5a3-b2c6-37f9-890d-3afcff50bd23?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=2076b5a3-b2c6-37f9-890d-3afcff50bd23&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=91072644&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=0320a32e-b781-40df-bf48-5cb5ee842762&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/2076b5a3-b2c6-37f9-890d-3afcff50bd23"
+    ]
+   },
+   {
+    "album": "demo 1987",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "六軌裡的第四首直接拿團名當曲名。其餘五軌從〈No Reason Why〉起排，經過〈Better Than You〉〈Do It Yourself〉，收在〈Finish What You Started〉，實體欄位一軌長度都沒有記。廠牌欄填的是「沒有廠牌」，目錄編號欄記的是無。這是這個掛名目錄上最早的一筆錄音。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=1c997f24-75ad-3b2b-bfaa-1891c79fa790&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=0320a32e-b781-40df-bf48-5cb5ee842762&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=90254613&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790",
+     "https://en.wikipedia.org/wiki/Gorilla_Biscuits"
+    ]
+   },
+   {
+    "album": "Gorilla Biscuits",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "同一個編號從 1988 掛到 2011，中間的 CD 全是十二軌。首版只有七軌、合計 11 分 22 秒，平均一首一分半出頭；最長的開場〈High Hopes〉2:23，第四軌〈GM2〉只有 18 秒，把那 18 秒拿掉，其餘六首整齊落在 1:10 到 2:23 之間。後來的 CD 多出來的部分一律被標成 bonus，不在首版那七軌裡。catno 一路寫成 Revelation:4。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/96ae45ee-871c-40b1-9f50-ca0c6c4f5c16?fmt=json&inc=artist-credits+releases+media",
+     "https://musicbrainz.org/ws/2/release?release-group=96ae45ee-871c-40b1-9f50-ca0c6c4f5c16&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release?release-group=1c997f24-75ad-3b2b-bfaa-1891c79fa790&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=90254613&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=0320a32e-b781-40df-bf48-5cb5ee842762&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/96ae45ee-871c-40b1-9f50-ca0c6c4f5c16"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "gustavo cerati",
+  "name": "Gustavo Cerati",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1999,
+   2009
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Bocanada",
+    "year": 1999,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ahí vamos",
+    "year": 2006,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fuerza natural",
+    "year": 2009,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "harmonia",
+  "name": "Harmonia",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1974,
+   2015
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Musik von Harmonia",
+    "year": 1974,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Documents 1975",
+    "year": 2015,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Deluxe",
+    "year": 1975,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "haustor",
+  "name": "Haustor",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1981,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Treći svijet",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bolero",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Haustor",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 24,
+   "researchRecords": 3,
+   "facts": 5,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c54-a",
+    "album": "Haustor",
+    "facts": [
+     {
+      "f": "1981 年由 Jugoton 發行，製作人是 Parni Valjak 的吉他手 Husein Hasanefendić「Hus」，他也在數首曲子裡彈吉他。",
+      "src": "https://en.wikipedia.org/wiki/Haustor_(album)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-a",
+    "album": "Treći svijet",
+    "facts": [
+     {
+      "f": "Jugoton 發行的第二張錄音室專輯，全碟 8 首、約 37 分 23 秒，製作人是前 Metak 吉他手 Željko Brodarić「Jappa」，錄音時加進了一組管樂。",
+      "src": "https://hr.wikipedia.org/wiki/Treći_svijet_(album)"
+     },
+     {
+      "f": "錄這張時的陣容是 Darko Rundek、Srđan Sacher、薩克斯風手 Damir Prica「Capri」、鼓手 Srđan Gulić，加上新團員、吉他手 Zoran Zajec。",
+      "src": "https://en.wikipedia.org/wiki/Haustor"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c54-b",
+    "album": "Bolero",
+    "facts": [
+     {
+      "f": "製作人 Mitar Subotić「Suba」是 1980 年代南斯拉夫電子音樂的先行者，1986 年拿到聯合國教科文組織的獎助去巴西研究非裔巴西節奏，之後移居聖保羅，1999 年 11 月在自己的錄音室火災中喪生。",
+      "src": "https://en.wikipedia.org/wiki/Suba_(musician)"
+     },
+     {
+      "f": "1998 年《YU 100》的樂評票選把本作列第 39；2015 年克羅埃西亞版《Rolling Stone》的「1955–2015 百大南斯拉夫專輯」列第 35；2000 年 Rock Express 的百大南斯拉夫搖滾歌曲把〈Šejn〉列第 26。",
+      "src": "https://sr.wikipedia.org/wiki/Болеро_(албум)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Treći svijet",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "聖經、Hugo Pratt 的漫畫與冒險電影，被寫成一張雷鬼與拉丁節奏的唱片。那些是 Darko Rundek 的取材來源，唱片是 1984 年由 Jugoton 發行的第二張，製作人是前 Metak 吉他手 Željko Brodarić。錄音時加進一組管樂，編曲厚了一層，雷鬼的切分被推向拉丁與加勒比的律動，曲子普遍拉長到五分鐘上下，〈Zadnji pogled na Jeršaleim〉的空間處理比首作更寬。1981 年首作發行前被拿掉的那首歌，這次收了進來。",
+    "sourceUrls": [
+     "https://hr.wikipedia.org/wiki/Treći_svijet_(album)",
+     "https://en.wikipedia.org/wiki/Haustor",
+     "https://en.wikipedia.org/wiki/YU_100:_najbolji_albumi_jugoslovenske_rok_i_pop_muzike",
+     "https://musicbrainz.org/release-group/85e8b63b-c8ce-36fb-a69e-1c1ca0e5c984"
+    ]
+   },
+   {
+    "album": "Bolero",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "製作這張碟的 Mitar Subotić，十四年後死在聖保羅一間著火的錄音室裡。他是南斯拉夫電子音樂的先行者，1986 年就拿獎助去了巴西。這是 Haustor 1985 年由 Jugoton 發行的第三張：與 Darko Rundek 對半寫詞寫曲的 Srđan Sacher 因為誰主導下一張而離團，作曲、作詞、主唱、節奏吉他與貝斯於是全掛在 Rundek 一人身上。管樂收得更緊，女聲和音把空間拉開。B92 電台 2006 年的聽眾票選把〈Šejn〉排在第 2。",
+    "sourceUrls": [
+     "https://hr.wikipedia.org/wiki/Haustor",
+     "https://en.wikipedia.org/wiki/Bolero_(Haustor_album)",
+     "https://hr.wikipedia.org/wiki/Bolero_(album)",
+     "https://en.wikipedia.org/wiki/Suba_(musician)",
+     "https://sr.wikipedia.org/wiki/Б92_100_најбољих_домаћих_песама",
+     "https://sr.wikipedia.org/wiki/Болеро_(албум)",
+     "https://musicbrainz.org/release-group/14b459b2-3c05-30de-93bc-1798ff701671"
+    ]
+   },
+   {
+    "album": "Haustor",
+    "manifest": "onboarding-manifest-c54-20260904b.json",
+    "desc": "有一首歌在發行前被拿掉，三年後它成了下一張唱片的一部分。那首〈Radnička klasa odlazi u raj〉是 Jugoton 的主管拿掉的，理由是文化主管部門的堅持，唱片其餘部分照常在 1981 年發行，製作人是 Parni Valjak 的 Husein Hasanefendić。樂團 1979 年在薩格勒布由讀導演的 Darko Rundek 與讀考古學的 Srđan Sacher 創立。薩克斯風與長號讓〈Crni žbir〉帶點街頭樂隊的味道。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Haustor_(album)",
+     "https://en.wikipedia.org/wiki/Haustor",
+     "https://musicbrainz.org/release-group/25b6086d-3271-33e0-a087-1df119084001"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "henry cow",
+  "name": "Henry Cow",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Legend",
+    "year": 1973,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Unrest",
+    "year": 1974,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "In Praise of Learning",
+    "year": 1975,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 13,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51b-c",
+    "album": "Unrest",
+    "facts": [
+     {
+      "f": "吹雙簧管與低音管的 Lindsay Cooper 在這張加入，取代薩克斯風手 Geoff Leigh；樂評 Glenn Kenny 認為她的加入把樂團拉進歐洲古典音樂的傳統裡。",
+      "src": "https://en.wikipedia.org/wiki/Unrest_(Henry_Cow_album)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c51b-c",
+    "album": "In Praise of Learning",
+    "facts": [
+     {
+      "f": "Henry Cow 與 Slapp Happy 在合作過 1974 年的《Desperate Straights》之後正式合團，本作是兩團合流的產物；但這場合併很短命，Peter Blegvad 與 Anthony Moore 在本作完成後就離開。",
+      "src": "https://en.wikipedia.org/wiki/In_Praise_of_Learning"
+     },
+     {
+      "f": "Dagmar Krause 的唱腔是〈Living in the Heart of the Beast〉的核心；〈Beautiful as the Moon — Terrible as an Army with Banners〉是鼓手 Chris Cutler 第一次寫詞；Moore 與 Blegvad 合寫的〈War〉把陰鬱的造神與爆裂的具象音樂拼在一起。",
+      "src": "https://en.wikipedia.org/wiki/In_Praise_of_Learning"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Unrest",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "錄音室時間快用完，曲子還沒寫夠，整個 B 面就靠剪接長出來。內頁把這套做法叫作 studio composition：即興的素材以磁帶剪接、循環與疊層重新長成結構。唱片因此分成截然不同的兩半，第一面是寫好的作品，第二面全從即興發展而來。1974 年 2 至 3 月錄於牛津郡的 The Manor，同年 5 月 27 日由 Virgin 發行，是樂團第二張專輯。吹雙簧管與低音管的 Lindsay Cooper 在這張進團，接替薩克斯風手 Geoff Leigh。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Unrest_(Henry_Cow_album)",
+     "https://musicbrainz.org/release-group/d1fac684-703d-3fed-90f6-24ef55aca4ae"
+    ]
+   },
+   {
+    "album": "In Praise of Learning",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "封底印著紀錄片導演的一句話：藝術是一把鎚子。說話的是 John Grierson，這也是 Henry Cow 政治性最外顯的一張：專輯標題取自 Bertolt Brecht 的詩，〈Living in the Heart of the Beast〉把樂團的左翼立場整個攤開來講。1975 年發行，本作是他們與 Slapp Happy 合團之後的產物，但這場合併很短命，Peter Blegvad 與 Anthony Moore 錄完就離開了。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/In_Praise_of_Learning",
+     "https://musicbrainz.org/release-group/02093ce8-1a9b-34c9-8d48-3c3ae6b0e620",
+     "https://en.wikipedia.org/wiki/Rock_in_Opposition"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "héroes del silencio",
+  "name": "Héroes del Silencio",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Senderos de Traición",
+    "year": 1990,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Avalancha",
+    "year": 1995,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "El espíritu del vino",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 14,
+   "researchRecords": 2,
+   "facts": 6,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c51c-d",
+    "album": "Avalancha",
+    "facts": [
+     {
+      "f": "1995 年 9 月由 EMI 發行，是樂團第四張、也是最後一張錄音室專輯，Bob Ezrin 製作，在洛杉磯數間錄音室完成，全長 58 分 35 秒、收 12 首。",
+      "src": "https://en.wikipedia.org/wiki/Avalancha"
+     },
+     {
+      "f": "這是墨西哥吉他手 Alan Boguslavsky 唯一一張以正式團員身分參與的專輯。",
+      "src": "https://en.wikipedia.org/wiki/Avalancha"
+     },
+     {
+      "f": "本作常被形容為 1990 年代 rock en español 運動的轉捩點。",
+      "src": "https://en.wikipedia.org/wiki/Avalancha"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c51c-d",
+    "album": "El espíritu del vino",
+    "facts": [
+     {
+      "f": "Manzanera 本人在專輯裡彈了節奏吉他，Copi Corellano 加入鋼琴與 Hammond 風琴；為了在舞台上重現這張複雜的編制，樂團才補進 Alan Boguslavsky 當第二吉他手。",
+      "src": "https://es.wikipedia.org/wiki/El_esp%C3%ADritu_del_vino"
+     },
+     {
+      "f": "聲音比前作更靠向傳統的搖滾樂，取材自 1960 與 1970 年代的 rock and roll。",
+      "src": "https://es.wikipedia.org/wiki/El_esp%C3%ADritu_del_vino"
+     },
+     {
+      "f": "製作人 Phil Manzanera 是 Roxy Music 的吉他手。",
+      "src": "https://en.wikipedia.org/wiki/Phil_Manzanera"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Senderos de Traición",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "單曲在德國正式發行前，電台已經被點播的樂迷灌爆。那首歌是〈Entre dos tierras〉，收在 Héroes del Silencio 1990 年 12 月 4 日發行的這張唱片裡，同年由 Roxy Music 吉他手 Phil Manzanera 在馬德里 Kirios Studios 監製完成。專輯在西班牙登上排行榜冠軍、賣出約 50 萬張並拿下三白金；德國最高排到第 17 名。隨後約 140 場的巡迴，把樂團帶進歐洲與拉丁美洲市場。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Senderos_de_traici%C3%B3n",
+     "https://mariskalrock.com/actualidad/heroes-del-silencio-29-anos-senderos-traicion/",
+     "https://www.mondosonoro.com/criticas/discos-musica/heroes-del-silencio-senderos-de-traicion-25-aniversario/",
+     "https://musicbrainz.org/release-group/5e0ebe19-fed7-3379-a1cd-3e038f511821"
+    ]
+   },
+   {
+    "album": "Avalancha",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "西班牙語搖滾在 1995 年轉了個彎，操刀的是做《The Wall》的人。Bob Ezrin 把樂團帶到洛杉磯數間錄音室，錄下這張 1995 年 9 月由 EMI 發行、收 12 首的第四張作品，也是他們最後一張錄音室專輯。唱片登上西班牙專輯榜冠軍，在瑞士排到第 8、德國第 23，光是當年就在西班牙賣出 10 萬張；單曲〈La chispa adecuada〉隔年在 Billboard Latin Music Awards 拿下年度錄影帶獎。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Avalancha",
+     "https://en.wikipedia.org/wiki/Bob_Ezrin",
+     "https://musicbrainz.org/release-group/5964729a-8331-302b-b55b-c35670a74b2f"
+    ]
+   },
+   {
+    "album": "El espíritu del vino",
+    "manifest": "onboarding-manifest-c51-20260901.json",
+    "desc": "編制複雜到搬上舞台之前，樂團得先多雇一個吉他手。補進來的第二吉他手是 Alan Boguslavsky。這張 1993 年 6 月 14 日由 EMI 發行的第三張錄音室專輯找來 Roxy Music 的 Phil Manzanera 製作，他本人也彈了節奏吉他，還加進了鋼琴與 Hammond 風琴，黑膠版索性出成雙唱片，CD 版收 16 首、將近 72 分鐘。唱片登上西班牙專輯榜冠軍，在德國排到第 9，是樂團在當地的最佳成績。",
+    "sourceUrls": [
+     "https://es.wikipedia.org/wiki/El_esp%C3%ADritu_del_vino",
+     "https://en.wikipedia.org/wiki/Phil_Manzanera",
+     "https://musicbrainz.org/release-group/e0f08eaa-7691-3837-a9de-eb43a38654a6"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "high rise",
+  "name": "High Rise",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1992
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Psychedelic Speed Freaks",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "High Rise II",
+    "year": 1986,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dispersion",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 15,
+   "researchRecords": 3,
+   "facts": 5,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c116-b",
+    "album": "Psychedelic Speed Freaks",
+    "facts": [
+     {
+      "f": "MB 那筆 2014 年 U-Rythmix 的 CD+DVD（74da8d2c）的曲目：**CD 4 軌**——1〈Induced Depression〉3:59、2〈P.S.F.〉5:39、3〈Stone Addict〉4:58、4〈Take a Trip〉**11:33**；**DVD 另有 6 軌**——〈Outside Sandwitch〉〈Turn You Cry〉〈Orange Desire〉〈Psychedelic Speed Freaks〉〈Pop Sicle〉〈Induced Depression〉（MB 未填長度）。**唱片本體只有四軌、總長約二十六分鐘，收尾〈Take a Trip〉11:33 佔掉將近一半；第 2 軌的曲名就是〈P.S.F.〉，與廠牌名同字。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=42f31afe-8070-49ff-b96a-db3e0fac3d6d&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "英文維基〈High Rise (band)〉：**1982 年在東京結成的日本 noise rock 樂團**，核心是貝斯手 Asahito Nanjo 與吉他手 Munehiro Narita；**團名取自 J. G. Ballard 1975 年的小說《High Rise》**；音樂取材自迷幻、自由爵士與即興。⚠ **關鍵一段**：「High Rise were originally performing under the name **Psychedelic Speed Freaks**… They decided to change their name at the advice of P.S.F. Records, which claimed Psychedelic Speed Freaks sounded \"too direct\".」——**這張碟的盤名，就是樂團原本的團名**。條目的 discography 把 Studio albums 列為 II (1986)、Dispersion (1992)、Disallow (1996)、Desperado (1998)，**把本張與 Live (1994)、Psychobomb (2000) 一起列在 Live albums**。吉他手 Munehiro Narita 於 2022-07-03 過世（2026 年 1 月才公布）。",
+      "src": "https://en.wikipedia.org/wiki/High%20Rise%20(band)"
+     },
+     {
+      "f": "英文維基〈P.S.F. Records〉：由 **生悦住英夫（Hideo Ikeezumi，1949–2017）** 在東京創立；**「It is named after its first release, the 1984 High Rise record Psychedelic Speed Freaks.」**——**廠牌名取自本張**。MB 藝人頁分頁全列 High Rise 名下 15 個 release-group、Album 13 筆，1980–90 年代依序為 **《Psychedelic Speed Freaks》1984（Live）**、《High Rise II》1986、《Tapes》1986、《Dispersion》1992、《Live》1994（Live）。Apple Music：jp 店 `search` 回到 **1707587883「Dispersion」1992（9 軌）** 與 1753143811「Disturbance Trip」2024（10 軌）兩筆掛 HIGH RISE 的條目，**但沒有本張**；`entity=musicArtist` 查 High Rise 在 jp／us 兩店各回 0 筆。**兩個端點都跑過（裁定 173）。**",
+      "src": "https://en.wikipedia.org/wiki/P.S.F.%20Records"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c121-b",
+    "album": "High Rise II",
+    "facts": [
+     {
+      "f": "**藝人實體 2f3eb5a0 有一條 artist rename 關係：1984 年由「Psychedelic Speed Freaks」改名為「High Rise」**（begin 1984、end 1984）。實體欄位：Group／JP／begin 1984／disambiguation「Japanese heavy psych band」。廠牌實體 1d1685d5「P.S.F. Records」：country JP、area Japan、type Original Production、**begin 1984**。",
+      "src": "https://musicbrainz.org/ws/2/artist/2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa?fmt=json&inc=artist-rels+aliases"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c121-b",
+    "album": "Dispersion",
+    "facts": [
+     {
+      "f": "藝人目錄分頁全列 **15 個 release-group**（純 Album 7、帶 Live 5、帶 Compilation 1）。依年份排：1984《Psychedelic Speed Freaks》(Album/Live)、1986《High Rise II》、1986《Tapes》、**1992 本張**、1994《Live》(Album/Live)、1996《Disallow》、1997《Psychedelic Speed Freaks 84–85》、1998《Desperado》、1999《Speed Free Sonic》……**本張是他們第三張純 Album。**",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Psychedelic Speed Freaks",
+    "manifest": "onboarding-manifest-c116-20260910.json",
+    "desc": "盤名本來是樂團自己的名字，後來又變成廠牌的名字。這支團原本就叫 Psychedelic Speed Freaks，是發行方嫌這個名字太直接，才建議他們改叫 High Rise；而那家廠牌的名字反過來取自這張碟，編號就是 PSF-1。唱片本體四軌約二十六分鐘，收尾〈Take a Trip〉十一分三十三秒，一首就佔掉將近一半，第二軌的曲名則直接題作〈P.S.F.〉。這是一張現場專輯，錄的是人聲兼貝斯、吉他與鼓的三人編制，其中〈Stone Addict〉那一軌的鼓手另有其人。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/42f31afe-8070-49ff-b96a-db3e0fac3d6d?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=42f31afe-8070-49ff-b96a-db3e0fac3d6d&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://en.wikipedia.org/wiki/Psychedelic%20Speed%20Freaks",
+     "https://en.wikipedia.org/wiki/High%20Rise%20(band)",
+     "https://en.wikipedia.org/wiki/P.S.F.%20Records",
+     "https://musicbrainz.org/release-group/42f31afe-8070-49ff-b96a-db3e0fac3d6d"
+    ]
+   },
+   {
+    "album": "High Rise II",
+    "manifest": "onboarding-manifest-c121-20260910.json",
+    "desc": "1986 年那張黑膠六軌，七年後同廠的 CD 變成八軌，多出來的兩軌擺在末尾。六軌依序是〈Cycle Goddess〉〈Turn You Cry〉〈Cotton Top〉〈Last Rites〉〈Wipe Out〉〈Pop Sicle〉，原盤上這六軌一個長度都沒有留下。2018 年的復刻又照載體分了家：黑膠回到六軌、數位版維持八軌。這張 12 吋出在 1986 年的日本 P.S.F. Records，編號 PSF-2。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/84dbdd71-fd91-3582-a1ca-e1f86d9be4d5?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=84dbdd71-fd91-3582-a1ca-e1f86d9be4d5&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa?fmt=json&inc=artist-rels+aliases",
+     "https://musicbrainz.org/ws/2/release-group?artist=2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1334370094&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/84dbdd71-fd91-3582-a1ca-e1f86d9be4d5"
+    ]
+   },
+   {
+    "album": "Dispersion",
+    "manifest": "onboarding-manifest-c121-20260910.json",
+    "desc": "全張最長的〈Sadducees Faith〉15:01，緊挨在最短的〈Nuit〉3:57 後面。七軌從〈Outside Gentiles〉5:15 開場，後半的〈Mainliner〉10:26 與〈Deuteronomy〉13:07 又把長度拉回十分鐘以上，七軌裡有三軌破十分，合計約 59:17。2023 年的復刻卻把它重排成九軌、在末尾補上兩首原盤沒有的曲子。這張 CD 出在 1992 年的日本 P.S.F. Records，編號 PSFD-26。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/a2239a30-783a-3fe8-84d5-dc40ed8f8cf9?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=a2239a30-783a-3fe8-84d5-dc40ed8f8cf9&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1707587883&country=jp&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=2f3eb5a0-d7f6-4baf-9db0-9f15bd0999aa&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/a2239a30-783a-3fe8-84d5-dc40ed8f8cf9"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "immortal",
+  "name": "Immortal",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1992,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "At the Heart of Winter",
+    "year": 1999,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Pure Holocaust",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Diabolical Fullmoon Mysticism",
+    "year": 1992,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "in flames",
+  "name": "In Flames",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   2006
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Come Clarity",
+    "year": 2006,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Jester Race",
+    "year": 1996,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Whoracle",
+    "year": 1997,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Whoracle",
+    "manifest": "onboarding-manifest-c44-rock-20260823.json",
+    "desc": "哥德堡三巨頭之一的 In Flames 第三張，1997 年在 Studio Fredman 由 Fredrik Nordström 與樂團共同製作。雙吉他和聲從〈Jotun〉起手就是主旋律，〈Dialogue with the Stars〉整首器樂，末段還翻唱 Depeche Mode 的〈Everything Counts〉。主唱 Anders Fridén 自認英文不夠好，歌詞交給 Dark Tranquillity 吉他手 Niklas Sundin 改寫；鼓手 Björn Gelotte 打完這張就轉任主奏吉他。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Whoracle",
+     "https://musicbrainz.org/release-group/007b8b13-b246-3ab4-bd20-d6e3f1fbfc0d"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "incubus",
+  "name": "Incubus",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1997,
+   2004
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Make Yourself",
+    "year": 1999,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Crow Left of the Murder…",
+    "year": 2004,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "S.C.I.E.N.C.E.",
+    "year": 1997,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "indochine",
+  "name": "Indochine",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1982,
+   2002
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "L'Aventurier",
+    "year": 1982,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "3",
+    "year": 1985,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Paradize",
+    "year": 2002,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 3,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c109-a",
+    "album": "3",
+    "facts": [
+     {
+      "f": "條目 infobox 與正文：本張是 Indochine 的 **troisième album studio**（第三張錄音室專輯），1985 年 5 月 10 日發行，**製作 Philippe Eidel 與 Indochine**，總長記 40 分 26 秒，曲風記 new wave，廠牌 BMG Ariola。條目說盤名取的是數字 3 的宗教意涵，**好幾首曲名或歌詞都在指這個數字**（〈3e sexe〉〈Trois nuits par semaine〉，〈Hors-la-loi〉的詞裡也有），**而全碟 9 軌本身就是 3 的倍數**。條目另記這張是樂團第一次音樂上的轉向：歌詞轉到肉身與曖昧的題材，編曲拿掉了先前的遠東風小把戲，並加進 Arnaud Devos 的打擊。",
+      "src": "https://fr.wikipedia.org/wiki/3_(album_d'Indochine)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c109-a",
+    "album": "Paradize",
+    "facts": [
+     {
+      "f": "條目 infobox 與正文：本張是 Indochine 的 **9e album studio**（第九張錄音室專輯），**製作 Hervé Lauzanne**，總長記 72 分 25 秒，曲風記 chanson française／synthpop／glam rock，廠牌 Columbia－Sony。條目說這張常被視為樂團事業的重生之作。單曲六筆（多為雙面）：〈Punker〉/〈J'ai demandé à la lune〉2002 年 2 月 11 日、〈J'ai demandé à la lune〉2002 年 4 月 8 日、〈Mao Boy!〉2002 年 9 月 30 日、〈Le Grand Secret〉2003 年 3 月 3 日、〈Marilyn〉/〈Smalltown Boy〉2003 年 7 月 15 日、〈Un singe en hiver〉/〈Electrastar〉2003 年 11 月 3 日。",
+      "src": "https://fr.wikipedia.org/wiki/Paradize"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "3",
+    "manifest": "onboarding-manifest-c109-20260910.json",
+    "desc": "〈Trois nuits par semaine〉的題材直接來自 Marguerite Duras 的《L'Amant》。同一張碟上，〈Canary Bay〉處理女同志題材，〈3e sexe〉唱的是穿著與差異權。盤名取的是數字 3 的宗教意涵，好幾首的曲名與歌詞都在指這個數字，連 9 軌的規模都是 3 的倍數。1985 年 Ariola 的 12 吋、卡帶與 CD 全是 9 軌、總長 40 分 26 秒，編曲拿掉了先前的遠東風小把戲，換上 Arnaud Devos 的打擊。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/3b8192c1-da01-3841-b97b-6f66904e69f7?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=3b8192c1-da01-3841-b97b-6f66904e69f7&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=254263777&country=fr&entity=song&limit=200",
+     "https://fr.wikipedia.org/wiki/3_(album_d'Indochine)",
+     "https://musicbrainz.org/ws/2/release-group?artist=076caf66-1bb1-4486-8f46-910c83441eab&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/3b8192c1-da01-3841-b97b-6f66904e69f7"
+    ]
+   },
+   {
+    "album": "Paradize",
+    "manifest": "onboarding-manifest-c109-20260910.json",
+    "desc": "第十四軌標了羅馬數字 I，整張碟上找不到 II。那一軌叫〈Comateen I〉，2002 年 Columbia 的原盤 15 軌、總長 72 分 25 秒，第 1 軌與盤名同名，單軌落在 2 分 50 秒到 6 分 07 秒之間。製作是 Hervé Lauzanne，曲風欄同時記著 chanson française、synthpop 與 glam rock。同一年法國、加拿大與數位三條線並行，2012 年又出了《Paradize +10》的兩片再版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/a8447ca4-c63a-30c0-9e1a-66c292a0a5c5?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=a8447ca4-c63a-30c0-9e1a-66c292a0a5c5&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=253593945&country=fr&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=499235070&country=fr&entity=song&limit=200",
+     "https://fr.wikipedia.org/wiki/Paradize",
+     "https://musicbrainz.org/ws/2/release-group?artist=076caf66-1bb1-4486-8f46-910c83441eab&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/a8447ca4-c63a-30c0-9e1a-66c292a0a5c5"
+    ]
+   },
+   {
+    "album": "L'Aventurier",
+    "manifest": "onboarding-manifest-c47-pop-country-latin-20260829.json",
+    "desc": "錄音室檔期本來只留給一首歌重錄，他們多錄了五首 demo。原訂進錄音室是為了重錄單曲〈Dizzidence politik〉，那五首多出來的 demo 錄完之後，樂團回頭說服廠牌核准，湊成一張六曲迷你專輯，也就成了 Indochine 的首張錄音室作品，1982 年 11 月 15 日發行。同名主打曲的歌詞取材自比利時冒險小說角色 Bob Morane，在法國賣出逾 50 萬張，1983 年登上單曲榜第 4 名，專輯本身也賣出逾 25 萬張。新浪潮合成器包覆的冷冽法式搖滾。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/L'Aventurier_(album)",
+     "https://fr.wikipedia.org/wiki/L'Aventurier_(chanson)",
+     "https://musicbrainz.org/release-group/de9077c0-2596-3470-895b-06eb25ad1244"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "isis",
+  "name": "Isis",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2004
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Oceanic",
+    "year": 2002,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Panopticon",
+    "year": 2004,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Celestial",
+    "year": 2000,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c94-a",
+    "album": "Celestial",
+    "facts": [
+     {
+      "f": "MusicBrainz release cecd8c4e（2000-07-19、XE、status Official、條碼 0790168105920）：廠牌欄 Hydra Head Records、編號 HH666-59、載體 CD、11 軌。逐軌曲名與曲長依序為〈SGNL>01〉0:55、〈Celestial (The Tower)〉9:42、〈Glisten〉6:35、〈Swarm Reigns (Down)〉6:02、〈SGNL>02〉0:51、〈Deconstructing Towers〉7:31、〈SGNL>03〉0:34、〈Collapse and Crush〉5:55、〈C.F.T. (New Circuitry and Continued Evolution)〉5:43、〈Gentle Time〉7:02、〈SGNL>04 (End Transmission)〉1:07。",
+      "src": "https://musicbrainz.org/release/cecd8c4e-2685-4b21-9044-015a147f66b4"
+     },
+     {
+      "f": "英文維基〈Celestial (Isis album)〉的資訊框記：類型 studio、發行日 2000 年 4 月 3 日、錄音期 2000 年 1 至 2 月、曲風 post-metal 與 sludge metal、總長 51:58、廠牌 Escape Artist（EA07.0）、Hydra Head（HH666-59）與再發的 Ipecac（IPC-145）、製作人 Isis 與 Matt Bayles、前一作 EP《Sawblade》(1999)、後一作《SGNL>05》(2001)。",
+      "src": "https://en.wikipedia.org/wiki/Celestial_(Isis_album)"
+     },
+     {
+      "f": "同條目導言記這是美國 post-metal 樂團 Isis 的首張錄音室專輯，2000 年由 Escape Artist 與 Hydra Head Records 發行，是他們第三張「官方」個人發行、也是第一張全長作品。",
+      "src": "https://en.wikipedia.org/wiki/Celestial_(Isis_album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Celestial",
+    "manifest": "onboarding-manifest-c94-20260910.json",
+    "desc": "一年後的 EP《SGNL>05》，曲目全部取自這張的錄音場次。Aaron Turner 形容兩者是同一個整體，分開是因第一張全長就出雙專輯對聽眾太沉重。2000 年 1 到 2 月錄音，Isis 與 Matt Bayles 製作，由 Escape Artist 與 Hydra Head 以 HH666-59 發行。十一軌是長曲與短訊號交替，〈Celestial (The Tower)〉9:42，收尾的〈SGNL>04 (End Transmission)〉1:07。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/e371d1e5-8737-3c79-a16e-0d4c487eedfd?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/release/cecd8c4e-2685-4b21-9044-015a147f66b4",
+     "https://en.wikipedia.org/wiki/Celestial_(Isis_album)",
+     "https://music.apple.com/us/album/368094228",
+     "https://musicbrainz.org/release-group/e371d1e5-8737-3c79-a16e-0d4c487eedfd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jane’s addiction",
+  "name": "Jane’s Addiction",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   1988,
+   2011
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Great Escape Artist",
+    "year": 2011,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Nothing's Shocking",
+    "year": 1988,
+    "genres": [
+     "rock",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Strays",
+    "year": 2003,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 2
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c93-a",
+    "album": "Strays",
+    "facts": [
+     {
+      "f": "該 release-group 的 2003-07-22 US 盤（release 8e92c571）欄位：country US、status Official、廠牌欄 Capitol Records、編號 CDP 7243 5 90186 0 7、barcode 724359018607、載體 Enhanced CD、11 軌。逐軌曲名與曲長依序為〈True Nature〉3:50、〈Strays〉4:32、〈Just Because〉3:52、〈Price I Pay〉5:27、〈The Riches〉5:44、〈Superhero〉3:58、〈Wrong Girl〉4:32、〈Everybody's Friend〉3:19、〈Suffer Some〉4:15、〈Hypersonic〉3:33、〈To Match the Sun〉5:28。",
+      "src": "https://musicbrainz.org/release/8e92c571-8e2b-38e4-bc8a-f87a3da3682b"
+     },
+     {
+      "f": "英文維基〈Strays (Jane's Addiction album)〉的 infobox 與導言記：Jane's Addiction 的第三張錄音室專輯，2003 年 7 月 22 日由 Capitol Records 發行，2002–2003 年錄於好萊塢的 Henson Recording Studios，製作人 Bob Ezrin 與 Brian Virtue，全長 48:22。條目寫本張在《Ritual de lo Habitual》(1990) 之後 13 年才出，是樂團兩張完整錄音室專輯之間最長的間隔（其間 1997 年的合輯《Kettle Whistle》收過兩首新歌），也是第一張有貝斯手 Chris Chaney 的專輯。",
+      "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+     },
+     {
+      "f": "同條目導言記：本張首週在美國賣出十一萬零五百張，以第 4 名進 Billboard 200，最終在美國與加拿大取得金唱片認證、在英國取得銀唱片認證；單曲〈Just Because〉2004 年獲葛萊美獎提名。鼓手 Stephen Perkins 談為什麼在停這麼久之後決定再錄一張錄音室專輯時說，樂團已經跑完兩趟只演舊歌的重聚巡演，Jane's 準備好迎接「一個新的挑戰」。",
+      "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+     },
+     {
+      "f": "同節記：貝斯手 Martyn LeNoble 在錄音進行到一半時被開除。他說：「《Strays》這張我幾乎整張都錄完了。然後 Perry 把它洗掉。他在日本當場把我開除，那時我們還有一整趟飛回美國的班機要坐。那是我最後一次跟他說話。Perry 和 Bob（Ezrin）把我所有的貝斯部分都換掉了。Perry 一直說我彈的每樣東西都像屎，可是他們讓新來的那個人幾乎照我的部分原樣彈，頂多改個一兩處，所以我猜也沒那麼像屎吧。」LeNoble 並因樂團在開除他之後沒有支付他的錄音室工作報酬而陷入財務困難。",
+      "src": "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Strays",
+    "manifest": "onboarding-manifest-c93-20260910.json",
+    "desc": "Martyn LeNoble 說他幾乎整張都錄完了，貝斯部分後來被換掉。那是他單方面的說法：他說 Perry Farrell 在日本當場開除他，Farrell 與 Bob Ezrin 把他的貝斯全部換掉；接手的 Chris Chaney 卻幾乎照原樣彈，Dave Navarro 說他大概是自己合作過最強烈的樂手。Storm Thorgerson 為第三張做的封面被樂團退掉，改用樂團照片；Farrell 說進錄音室時想的是快、硬、現代、切中要點。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bccb3052-3941-349e-85db-0ef6a38b2ed7",
+     "https://musicbrainz.org/release/8e92c571-8e2b-38e4-bc8a-f87a3da3682b",
+     "https://en.wikipedia.org/wiki/Strays_(Jane%27s_Addiction_album)"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "japanese breakfast",
+  "name": "Japanese Breakfast",
+  "tier": "B",
+  "cards": 3,
+  "mainGenre": "rock",
+  "yearRange": [
+   2016,
+   2021
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Jubilee",
+    "year": 2021,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Soft Sounds From Another Planet",
+    "year": 2017,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Psychopomp",
+    "year": 2016,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ }
+]

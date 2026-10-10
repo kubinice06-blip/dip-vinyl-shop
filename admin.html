@@ -31,7 +31,11 @@
     .archive-del { background:none; border:1px solid var(--line); color:var(--red); font-family:var(--mono); font-size:10px; padding:2px 8px; cursor:pointer; margin-left:auto; flex-shrink:0; }
 
     /* TABS */
-    .tab-bar { display: flex; border-bottom: 1px solid var(--line); background: #fff; }
+    /* 分頁多到手機放不下：橫向捲動、按鈕不縮不換行（原本會被擠成直排、後面幾顆跑出畫面外） */
+    .tab-bar { display: flex; border-bottom: 1px solid var(--line); background: #fff; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .tab-bar::-webkit-scrollbar { display: none; }
+    .tab-bar .tab-btn { flex: 0 0 auto; white-space: nowrap; }
+    @media (max-width: 768px) { .tab-bar .tab-btn { padding: 0 14px; } }
     .tab-btn { background: none; border: none; border-bottom: 2px solid transparent; padding: 0 24px; height: 44px; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; color: var(--gray); transition: all 0.15s; }
     .tab-btn.active { color: var(--black); border-bottom-color: var(--black); }
 
@@ -225,6 +229,57 @@
     .site-layout.no-left { grid-template-columns: 1fr; }
     .site-layout.no-left .left { display: none; }
 
+    /* 實體店庫存：照前台「我的唱片櫃」的卡片排列（稀有度框色、等級字、藝人／專輯） */
+    .shop-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .shop-count { font-size: 11px; color: var(--gray); }
+    .shop-sections { display: grid; gap: 22px; }
+    .shop-genres { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+    .shop-genre { font-size: 9px; letter-spacing: 0.04em; padding: 1px 6px; border: 1px solid var(--line); border-radius: 8px; color: var(--black); background: #fafafa; }
+    .shop-section-head { display: flex; align-items: baseline; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; margin: 0 0 8px; }
+    .shop-section-head span { font-size: 10px; font-weight: 400; color: var(--gray); letter-spacing: 0; }
+    .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .shop-card { position: relative; background: #fff; padding: 14px; cursor: pointer; text-align: left; font-family: var(--mono); }
+    .shop-card:hover { background: #fafafa; }
+    .shop-card:focus-visible { outline: 2px solid #111; outline-offset: -4px; }
+    .shop-thumb { position: relative; aspect-ratio: 1; background: #f0f0f0; overflow: hidden; margin-bottom: 10px; }
+    .shop-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .shop-nocover { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--line); }
+    .shop-price { position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,0.8); color: #fff; font-size: 10px; padding: 2px 7px; border-radius: 10px; }
+    .shop-pending { position: absolute; left: 6px; top: 6px; background: #b26a00; color: #fff; font-size: 9px; letter-spacing: 0.08em; padding: 2px 6px; border-radius: 3px; }
+    .shop-rarity { font-size: 9px; letter-spacing: 0.12em; margin-bottom: 5px; font-weight: 700; color: var(--gray); }
+    .shop-artist { font-size: 11px; color: var(--gray); line-height: 1.4; }
+    .shop-album { font-size: 12px; font-weight: 700; line-height: 1.4; }
+    .shop-meta { font-size: 10px; color: var(--gray); margin-top: 4px; }
+    .shop-card.rarity-hall { box-shadow: inset 0 0 0 4px #a9b0b7; }
+    .shop-card.rarity-pearl { box-shadow: inset 0 0 0 4px #8a5a2b; }
+    .shop-card.rarity-heresy { box-shadow: inset 0 0 0 4px #a3122a; }
+    .shop-card.rarity-legendary { box-shadow: inset 0 0 0 3px #e0851c; }
+    .shop-card.rarity-epic { box-shadow: inset 0 0 0 2px #7a3fb0; }
+    .shop-card.rarity-uncommon { box-shadow: inset 0 0 0 2px #2faf4f; }
+    .shop-card.rarity-rare { box-shadow: inset 0 0 0 2px #3a7bd5; }
+    .rarity-hall .shop-rarity { color: #6f777f; }
+    .rarity-pearl .shop-rarity { color: #8a5a2b; }
+    .rarity-heresy .shop-rarity { color: #a3122a; }
+    .rarity-legendary .shop-rarity { color: #d4791a; }
+    .rarity-epic .shop-rarity { color: #7a3fb0; }
+    .rarity-uncommon .shop-rarity { color: #259643; }
+    .rarity-rare .shop-rarity { color: #3a7bd5; }
+    .shop-diff { border: 1px solid var(--line); background: #fbfbf7; padding: 12px 14px; margin-bottom: 14px; font-size: 11px; line-height: 1.9; }
+    .shop-diff b { font-weight: 700; }
+    .shop-diff .add { color: #245c3a; } .shop-diff .del { color: #a3122a; } .shop-diff .chg { color: #8a5a00; } .shop-diff .warn { color: #b26a00; }
+    .shop-diff-actions { margin-top: 10px; display: flex; gap: 8px; }
+    .shop-detail-cover { width: 100%; max-width: 320px; aspect-ratio: 1; object-fit: cover; display: block; margin: 0 auto 16px; background: #f0f0f0; border: 1px solid var(--line); }
+    .shop-detail-rarity { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 6px; }
+    .shop-detail-album { font-size: 16px; font-weight: 700; line-height: 1.4; }
+    .shop-detail-artist { font-size: 12px; color: var(--gray); margin: 2px 0 12px; }
+    .shop-detail-meta { font-size: 11px; color: var(--black); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 8px 0; margin-bottom: 14px; line-height: 1.8; }
+    .shop-detail-desc { font-size: 13px; line-height: 1.9; white-space: pre-wrap; }
+    .shop-desc-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-size: 11px; margin-bottom: 8px; }
+    .shop-desc-head span, .shop-desc-foot > span:first-child { color: var(--gray); font-size: 10px; }
+    .shop-desc-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+    .shop-desc-input { width: 100%; box-sizing: border-box; font: inherit; font-size: 13px; line-height: 1.8; padding: 10px; border: 1px solid var(--line); resize: vertical; }
+    .gbtn.shop-desc-ghost { background: #fff; color: var(--black); border: 1px solid var(--line); }
+
     /* 卡牌校正：彈出編輯 modal */
     .ov-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: flex-start; justify-content: center; z-index: 9000; overflow-y: auto; padding: 40px 16px; }
     .ov-modal.open { display: flex; }
@@ -366,6 +421,7 @@
   <button class="tab-btn" data-tab="sort">商品排序</button>
   <button class="tab-btn" data-tab="content">內容管理</button>
   <button class="tab-btn" data-tab="cards">🎴 卡牌管理</button>
+  <button class="tab-btn" data-tab="shop">🏪 實體店庫存</button>
   <button class="tab-btn" data-tab="game">🎮 遊戲設定</button>
   <button class="tab-btn" data-tab="members">會員管理</button>
   <button class="tab-btn" data-tab="usage">設定</button>
@@ -760,6 +816,32 @@
         <div id="archiveList" style="border:1px solid var(--line);min-height:60px;"></div>
       </div>
       </div><!-- end sub-archive -->
+    </div>
+  </div>
+
+  <!-- 實體店庫存（data/shop/inventory.json，來源 Notion 售價表）-->
+  <div class="right-panel" id="panel-shop">
+    <div style="max-width:1100px;">
+      <div class="section">
+        <div class="shop-head">
+          <div class="section-label" style="margin:0;">實體店庫存（點卡片看專輯介紹）</div>
+          <span class="shop-count" id="shopCount"></span>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px;">
+          <button class="gbtn" id="shopRefreshBtn" type="button">↻ 從 Notion 重新整理</button>
+          <span id="shopSource" style="font-size:10px;color:var(--gray);"></span>
+        </div>
+        <div id="shopDiff" class="shop-diff" hidden></div>
+        <p style="font-size:10px;color:var(--gray);margin-bottom:14px;line-height:1.8;">清單存在 Firestore <b>settings/shopInventory</b>（前台與其他功能讀這份）；還沒存過時退回 repo 的 data/shop/inventory.json。按「↻ 從 Notion 重新整理」會即時讀 Notion「唱片庫存售價表（販售中）」，列出<b>新增／移除／改價</b>，確認後按「套用並存檔」才會寫入。Notion 上消失的列記為已售出（保留紀錄、不再顯示）。對不上卡池的列標「待上架」：已在卡池的請到 Notion 填「卡池鍵」（藝人|專輯）；卡池沒有的要走建卡。</p>
+        <div id="shopGrid" style="font-size:12px;color:var(--gray);">尚未載入</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ov-modal" id="shopModal">
+    <div class="ov-modal-box">
+      <button class="ov-modal-close" id="shopModalClose" aria-label="關閉">×</button>
+      <div id="shopModalBody"></div>
     </div>
   </div>
 
@@ -1206,6 +1288,7 @@
     document.querySelector('.site-layout').classList.toggle('no-left', tab !== 'edit');
     if (tab === 'sort') loadSortList();
     if (tab === 'members') loadMembers();
+    if (tab === 'shop') loadShopInventory();
     if (tab === 'usage') { loadUsage(); loadBanner(); }
     // 合併分頁：載入目前 active 的子分頁
     const activeSub = panel.querySelector('.subpanel.active');
@@ -3410,6 +3493,362 @@ ${discogs ? '- Discogs：' + discogs : ''}
       });
     } catch (e) { list.className = ''; list.textContent = '載入清單失敗：' + (e.message || e); }
   }
+
+  // ───────── 實體店庫存（data/shop/inventory.json）─────────
+  // 排列比照前台「我的唱片櫃」：稀有度框色＋等級字＋藝人／專輯。稀有度算法與前台 rarityFromRatings 相同
+  //（經典＋硬蕊＋冷門滿 5 加 1），seed_cards.json 第 9 欄有 tier 的是頂點卡。
+  // 封面：card_catalog 校正圖優先，沒有才退 worker /spotify-search（與前台 resolveCardAssets 同序）。
+  // 介紹：門市版（見下方 shopDescFor），不用卡牌遊戲的簡介。
+  const SHOP_TIER_LABEL = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
+  const SHOP_GENRE_ORDER = ['Jazz', 'Soul', 'R&B', 'Hip-Hop', 'Reggae', 'Rock', 'Folk', 'City Pop', 'Pop', 'Electronic', 'Classical', 'Soundtrack'];
+  const SHOP_GENRE_LABEL = { 'Jazz': '爵士 Jazz', 'Soul': '靈魂 Soul', 'R&B': '節奏藍調 R&B', 'Hip-Hop': '嘻哈 Hip-Hop', 'Reggae': '雷鬼 Reggae', 'Rock': '搖滾 Rock', 'Folk': '民謠 Folk',
+    'City Pop': '城市流行 City Pop', 'Pop': '流行 Pop', 'Electronic': '電子 Electronic', 'Classical': '古典 Classical', 'Soundtrack': '原聲帶 Soundtrack', '未分類': '未分類（Notion 曲風欄空白）' };
+  function shopRarityOf(row) {
+    if (!row) return null;
+    if (row[8] && SHOP_TIER_LABEL[row[8]]) return { tier: row[8], label: SHOP_TIER_LABEL[row[8]] };
+    const score = (Number(row[2]) || 0) + (Number(row[4]) || 0) + ((Number(row[3]) || 0) >= 5 ? 1 : 0);
+    if (score >= 10) return { tier: 'legendary', label: '傳奇' };
+    if (score >= 8) return { tier: 'epic', label: '史詩' };
+    if (score >= 6) return { tier: 'uncommon', label: '獨特' };
+    if (score >= 4) return { tier: 'rare', label: '稀有' };
+    return { tier: 'common', label: '普通' };
+  }
+  let shopItems = [];
+  let shopLoadToken = 0;
+  async function shopCoverOf(it) {
+    try {
+      const s = await getDoc(doc(db, 'card_catalog', ovCardId(it.artist, it.album)));
+      if (s.exists() && s.data().coverUrl) return s.data().coverUrl;
+    } catch (e) {}
+    try {
+      const r = await fetch(`${WORKER_URL}/spotify-search?artist=${encodeURIComponent(it.artist)}&album=${encodeURIComponent(it.album)}`);
+      if (r.ok) return (await r.json()).imageUrl || '';
+    } catch (e) {}
+    return '';
+  }
+  function shopCardHtml(it, i) {
+    const r = it.rarity;
+    const cover = it.coverUrl ? `<img src="${esc(it.coverUrl)}" alt="" loading="lazy">` : `<div class="shop-nocover">♪</div>`;
+    const price = it.priceNT ? `<span class="shop-price">NT$${Number(it.priceNT)}</span>` : '';
+    const pending = it.status === 'pending_card' ? `<span class="shop-pending">待上架</span>` : '';
+    const meta = [it.condition, it.pressingYear ? `${it.pressingYear} 壓` : ''].filter(Boolean).join('・');
+    const genres = (it.genres || []).map(g => `<span class="shop-genre">${esc(SHOP_GENRE_LABEL[g] || g)}</span>`).join('');
+    return `<article class="shop-card${r ? ' rarity-' + r.tier : ''}" data-shop-idx="${i}" role="button" tabindex="0">
+      <div class="shop-thumb">${cover}${pending}${price}</div>
+      <div class="shop-rarity">${r ? esc(r.label) : '—'}</div>
+      <div class="shop-artist">${esc(it.artist || it.listedArtist)}</div>
+      <div class="shop-album">${esc(it.album || it.listedTitle)}</div>
+      ${meta ? `<div class="shop-meta">${esc(meta)}</div>` : ''}
+      ${genres ? `<div class="shop-genres">${genres}</div>` : ''}
+    </article>`;
+  }
+  // 卡池鍵正規化：與 scripts/pool-keys.mjs / sync-shop-inventory.mjs 相同
+  const shopNorm = v => String(v || '').toLowerCase().replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
+  const shopKey = (a, b) => shopNorm(a) + '|' + shopNorm(b);
+  const SHOP_DOC = () => doc(db, 'settings', 'shopInventory');
+  let shopPool = null;          // seed_cards.json 原始列
+  let shopPoolByKey = null;     // shopKey → 列
+  let shopBase = [];            // 目前存檔的完整清單（含 sold）
+  let shopPending = null;       // 從 Notion 算出、尚未存檔的新清單
+  async function ensureShopPool() {
+    if (shopPool) return;
+    shopPool = await fetch('seed_cards.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []);
+    shopPoolByKey = new Map(shopPool.map(row => [shopKey(row[0], row[1]), row]));
+  }
+  function renderShopGrid(items, token) {
+    const grid = document.getElementById('shopGrid');
+    const byId = new Map(shopPool.map(row => [ovCardId(row[0], row[1]), row]));
+    shopItems = items.filter(it => it.status !== 'sold').map(it => {
+      const row = it.artist ? byId.get(ovCardId(it.artist, it.album)) : null;
+      return { ...it, row, rarity: shopRarityOf(row), year: row ? row[6] : null, coverUrl: '' };
+    });
+    const ready = shopItems.filter(it => it.status === 'in_stock').length;
+    const sold = items.filter(it => it.status === 'sold').length;
+    document.getElementById('shopCount').textContent = `在售 ${shopItems.length} 張・卡池已有 ${ready} 張・待上架 ${shopItems.length - ready} 張${sold ? `・已售出紀錄 ${sold} 張` : ''}`;
+    if (!shopItems.length) { grid.className = ''; grid.textContent = '清單是空的。'; return; }
+    // 依 Notion「曲風」第一個標籤分區（多標籤的卡只放在第一個曲風底下，標籤列照樣全顯示）
+    const genreOf = it => (it.genres && it.genres[0]) || '未分類';
+    const order = SHOP_GENRE_ORDER;
+    const rank = g => { const i = order.indexOf(g); return i < 0 ? order.length : i; };
+    shopItems.sort((a, b) => rank(genreOf(a)) - rank(genreOf(b)) || genreOf(a).localeCompare(genreOf(b))
+      || (a.status === 'pending_card') - (b.status === 'pending_card') || String(a.artist || a.listedArtist).localeCompare(String(b.artist || b.listedArtist)));
+    const groups = [];
+    shopItems.forEach((it, i) => { const g = genreOf(it); if (!groups.length || groups[groups.length - 1].g !== g) groups.push({ g, idx: [] }); groups[groups.length - 1].idx.push(i); });
+    grid.className = 'shop-sections';
+    grid.innerHTML = groups.map(({ g, idx }) => `<section class="shop-section"><h3 class="shop-section-head">${esc(SHOP_GENRE_LABEL[g] || g)}<span>${idx.length} 張</span></h3>
+      <div class="shop-grid">${idx.map(i => shopCardHtml(shopItems[i], i)).join('')}</div></section>`).join('');
+    // 封面背景分批補（6 張一組），補到就換掉 ♪
+    (async () => {
+      for (let start = 0; start < shopItems.length && token === shopLoadToken; start += 6) {
+        const batch = shopItems.slice(start, start + 6);
+        await Promise.allSettled(batch.map(async (it, k) => {
+          if (!it.artist) return;
+          const url = await shopCoverOf(it);
+          if (token !== shopLoadToken || !url) return;
+          it.coverUrl = url;
+          const thumb = grid.querySelector(`.shop-card[data-shop-idx="${start + k}"] .shop-thumb`);
+          const img = document.createElement('img');
+          img.src = url; img.alt = ''; img.loading = 'lazy';
+          thumb?.querySelector('img, .shop-nocover')?.replaceWith(img);
+        }));
+      }
+    })();
+  }
+  async function loadShopInventory() {
+    const grid = document.getElementById('shopGrid');
+    if (!grid) return;
+    const token = ++shopLoadToken;
+    grid.className = ''; grid.textContent = '載入中…';
+    try {
+      await ensureShopPool();
+      let saved = null;
+      try { const snap = await getDoc(SHOP_DOC()); if (snap.exists()) saved = snap.data(); } catch (e) {}
+      if (token !== shopLoadToken) return;
+      if (saved && Array.isArray(saved.items)) {
+        shopBase = saved.items;
+        document.getElementById('shopSource').textContent = `來源：Firestore（上次從 Notion 存檔 ${saved.syncedAt ? new Date(saved.syncedAt).toLocaleString('zh-TW') : '—'}）`;
+      } else {
+        const inv = await fetch('data/shop/inventory.json?v=' + Date.now()).then(r => { if (!r.ok) throw new Error('inventory.json HTTP ' + r.status); return r.json(); });
+        if (token !== shopLoadToken) return;
+        shopBase = inv.items || [];
+        document.getElementById('shopSource').textContent = `來源：repo 快照 data/shop/inventory.json（${inv.snapshotAt || '—'}）；按重新整理並存檔後改用 Firestore`;
+      }
+      // Firestore 舊存檔沒有曲風欄：用 repo 快照補（下次「從 Notion 重新整理」存檔後就會帶 Notion 的曲風）
+      if (shopBase.some(it => !Array.isArray(it.genres))) {
+        try {
+          const inv = await fetch('data/shop/inventory.json?v=' + Date.now()).then(r => r.ok ? r.json() : { items: [] });
+          const g = new Map((inv.items || []).map(it => [it.id, it.genres || []]));
+          shopBase = shopBase.map(it => Array.isArray(it.genres) ? it : { ...it, genres: g.get(it.id) || [] });
+        } catch (e) {}
+        if (token !== shopLoadToken) return;
+      }
+      renderShopGrid(shopBase, token);
+    } catch (e) { grid.className = ''; grid.textContent = '載入失敗：' + (e.message || e); }
+  }
+  // Notion 列 → 卡池卡：①Notion「卡池鍵」②舊清單同一頁面已對上的卡 ③品名（去掉 2LP）＋演出者互含的唯一卡
+  function shopMatch(row, prev) {
+    if (row.poolKey) {
+      const [a, b] = row.poolKey.split('|');
+      const hit = b != null ? shopPoolByKey.get(shopKey(a, b)) : null;
+      return hit ? { row: hit, how: 'notion' } : { row: null, how: 'badkey' };
+    }
+    if (prev?.artist) {
+      const hit = shopPoolByKey.get(shopKey(prev.artist, prev.album));
+      if (hit) return { row: hit, how: prev.match || 'prev' };
+    }
+    const t = shopNorm(String(row.title || '').replace(/\s*\b\d?LP\b\s*$/i, '')), a = shopNorm(row.artist);
+    if (t && a) {
+      const hits = shopPool.filter(r => shopNorm(r[1]) === t && (shopNorm(r[0]).includes(a) || a.includes(shopNorm(r[0]))));
+      if (hits.length === 1) return { row: hits[0], how: 'auto' };
+    }
+    return { row: null, how: null };
+  }
+  async function refreshShopFromNotion() {
+    const btn = document.getElementById('shopRefreshBtn');
+    const box = document.getElementById('shopDiff');
+    btn.disabled = true; btn.textContent = '讀取 Notion…';
+    try {
+      await ensureShopPool();
+      // 用後台的 Google 登入當身分（Worker 驗證 Firebase token），不必另外輸入金鑰
+      const idToken = auth.currentUser ? await auth.currentUser.getIdToken() : '';
+      if (!idToken) throw new Error('請先用 Google 登入後台。');
+      const res = await fetch(`${WORKER_URL}/shop-inventory`, { headers: { 'Authorization': 'Bearer ' + idToken } });
+      const data = await res.json().catch(() => ({}));
+      if (res.status === 403) throw new Error('Worker 不認得這個登入（只接受店家本人的 Google 帳號）；若剛更新過，請確認 Worker 已重新部署。');
+      if (!res.ok) throw new Error(data.error || ('HTTP ' + res.status));
+      const today = new Date().toISOString().slice(0, 10);
+      const prevById = new Map(shopBase.map(it => [it.id, it]));
+      const seen = new Set();
+      const next = [], added = [], changed = [], unmatched = [], badKeys = [];
+      for (const row of data.rows || []) {
+        seen.add(row.id);
+        const prev = prevById.get(row.id);
+        const m = shopMatch(row, prev && prev.status !== 'sold' ? prev : null);
+        if (m.how === 'badkey') badKeys.push(row);
+        const card = m.row;
+        const it = {
+          id: row.id, status: card ? 'in_stock' : 'pending_card',
+          cardKey: card ? shopKey(card[0], card[1]) : null, artist: card ? card[0] : null, album: card ? card[1] : null,
+          match: card ? m.how : null, listedTitle: row.title, listedArtist: row.artist,
+          pressingYear: row.year ?? null, condition: row.condition ?? null, priceNT: row.priceNT ?? null,
+          genres: Array.isArray(row.genres) ? row.genres : (prev?.genres || []),
+          note: prev?.note || null, firstSeen: (prev && prev.status !== 'sold' && prev.firstSeen) || today,
+        };
+        next.push(it);
+        if (!card) unmatched.push(it);
+        if (!prev || prev.status === 'sold') added.push(it);
+        else {
+          const diffs = [];
+          if ((prev.priceNT ?? null) !== it.priceNT) diffs.push(`售價 ${prev.priceNT ?? '—'} → ${it.priceNT ?? '—'}`);
+          if ((prev.condition ?? null) !== it.condition) diffs.push(`品相 ${prev.condition ?? '—'} → ${it.condition ?? '—'}`);
+          if ((prev.genres || []).join('/') !== it.genres.join('/')) diffs.push(`曲風 ${(prev.genres || []).join('、') || '—'} → ${it.genres.join('、') || '—'}`);
+          if ((prev.cardKey || null) !== (it.cardKey || null)) diffs.push(it.cardKey ? `對上卡池 ${it.artist}《${it.album}》` : '卡池對應消失');
+          if (prev.listedTitle !== it.listedTitle || prev.listedArtist !== it.listedArtist) diffs.push('品名／演出者改了');
+          if (diffs.length) changed.push({ it, diffs });
+        }
+      }
+      const removed = [];
+      for (const old of shopBase) {
+        if (seen.has(old.id)) continue;
+        if (old.status === 'sold') { next.push(old); continue; }
+        const soldIt = { ...old, status: 'sold', soldAt: today };
+        next.push(soldIt); removed.push(soldIt);
+      }
+      shopPending = { items: next, fetchedAt: data.fetchedAt, source: data.source };
+      const name = it => esc(`${it.listedArtist}《${it.listedTitle}》`);
+      const lines = [];
+      if (added.length) lines.push(`<div class="add"><b>新增 ${added.length}</b>：${added.map(name).join('、')}</div>`);
+      if (removed.length) lines.push(`<div class="del"><b>移除（記為已售出）${removed.length}</b>：${removed.map(name).join('、')}</div>`);
+      if (changed.length) lines.push(`<div class="chg"><b>變更 ${changed.length}</b>：${changed.map(c => `${name(c.it)}（${esc(c.diffs.join('；'))}）`).join('、')}</div>`);
+      if (unmatched.length) lines.push(`<div class="warn"><b>對不上卡池 ${unmatched.length}</b>（顯示為待上架）：${unmatched.map(name).join('、')}</div>`);
+      if (badKeys.length) lines.push(`<div class="warn"><b>Notion 卡池鍵在卡池裡找不到 ${badKeys.length}</b>：${badKeys.map(r => esc(`${r.title}（${r.poolKey}）`)).join('、')}</div>`);
+      const dirty = added.length || removed.length || changed.length;
+      box.hidden = false;
+      box.innerHTML = `<div>Notion 共 ${(data.rows || []).length} 列（${esc(new Date(data.fetchedAt).toLocaleString('zh-TW'))} 讀取）。</div>`
+        + (dirty ? lines.join('') : `<div>與目前清單一致，沒有新增或移除。</div>${lines.join('')}`)
+        + `<div class="shop-diff-actions">${dirty || !shopBase.length ? '<button class="gbtn" id="shopApplyBtn" type="button">套用並存檔</button>' : ''}<button class="gbtn" id="shopDiffClose" type="button" style="background:#fff;color:var(--black);border:1px solid var(--line);">關閉</button></div>`;
+    } catch (e) {
+      box.hidden = false;
+      box.innerHTML = `<div class="del">讀取 Notion 失敗：${esc(e.message || String(e))}</div><div style="color:var(--gray);">503＝Worker 還沒設 NOTION_TOKEN；Notion 401＝NOTION_TOKEN 不對；Notion 404＝這張表還沒在 Notion「連線」給 integration。</div>`;
+    } finally {
+      btn.disabled = false; btn.textContent = '↻ 從 Notion 重新整理';
+    }
+  }
+  async function applyShopPending() {
+    if (!shopPending) return;
+    const btn = document.getElementById('shopApplyBtn');
+    if (btn) { btn.disabled = true; btn.textContent = '存檔中…'; }
+    try {
+      const payload = { v: 1, source: shopPending.source, syncedAt: Date.now(), notionFetchedAt: shopPending.fetchedAt, count: shopPending.items.length, items: shopPending.items };
+      await setDoc(SHOP_DOC(), JSON.parse(JSON.stringify(payload)));
+      shopPending = null;
+      const box = document.getElementById('shopDiff');
+      box.innerHTML = '<div class="add">✓ 已存檔到 Firestore settings/shopInventory。</div>';
+      setTimeout(() => { box.hidden = true; }, 4000);
+      await loadShopInventory();
+    } catch (e) {
+      if (btn) { btn.disabled = false; btn.textContent = '套用並存檔'; }
+      alert('存檔失敗：' + (e.message || e));
+    }
+  }
+  document.getElementById('shopRefreshBtn').addEventListener('click', refreshShopFromNotion);
+  document.getElementById('shopDiff').addEventListener('click', e => {
+    if (e.target.id === 'shopApplyBtn') applyShopPending();
+    if (e.target.id === 'shopDiffClose') { shopPending = null; e.currentTarget.hidden = true; }
+  });
+  const shopModal = document.getElementById('shopModal');
+  const closeShopModal = () => shopModal.classList.remove('open');
+  document.getElementById('shopModalClose').addEventListener('click', closeShopModal);
+  shopModal.addEventListener('click', e => { if (e.target === shopModal) closeShopModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && shopModal.classList.contains('open')) closeShopModal(); });
+  // 門市版介紹：只給實體店用（日後印出來放唱片旁），與卡牌遊戲的簡介（KV／album_overrides）分開，不進卡池。
+  // 預設稿 data/shop/descs.json（規則 data/shop/SHOP_DESC_RULES.md）；店主在這裡改過的存 Firestore
+  // settings/shopDescs.byKey[key]，優先於預設稿。key = 卡池鍵正規化；待上架的靠預設稿的 ids（Notion 頁面 id）找。
+  const SHOP_DESC_DOC = () => doc(db, 'settings', 'shopDescs');
+  let shopDescDefaults = null;   // { byKey: Map, byId: Map }
+  let shopDescEdits = null;      // Firestore byKey
+  async function ensureShopDescs(force) {
+    if (!shopDescDefaults) {
+      const d = await fetch('data/shop/descs.json?v=' + Date.now()).then(r => r.ok ? r.json() : { items: [] }).catch(() => ({ items: [] }));
+      const byKey = new Map(), byId = new Map();
+      for (const it of d.items || []) { byKey.set(it.key, it); for (const id of it.ids || []) byId.set(id, it); }
+      shopDescDefaults = { byKey, byId };
+    }
+    if (!shopDescEdits || force) {
+      try { const s = await getDoc(SHOP_DESC_DOC()); shopDescEdits = s.exists() ? (s.data().byKey || {}) : {}; }
+      catch (e) { shopDescEdits = shopDescEdits || {}; }
+    }
+  }
+  function shopDescFor(it) {
+    const def = shopDescDefaults.byId.get(it.id) || (it.cardKey ? shopDescDefaults.byKey.get(it.cardKey) : null);
+    const key = def?.key || it.cardKey || ('id:' + it.id);
+    const edit = shopDescEdits[key];
+    return { key, def: def?.text || '', edit: edit?.text || '', editedAt: edit?.updatedAt || 0,
+      artist: def?.artist || it.artist || it.listedArtist, album: def?.album || it.album || it.listedTitle };
+  }
+  let shopDetailToken = 0;
+  let shopDetailCur = null;
+  function renderShopDesc() {
+    const box = document.getElementById('shopDetailDescBox');
+    if (!box || !shopDetailCur) return;
+    const d = shopDetailCur;
+    const text = d.edit || d.def;
+    const src = d.edit ? `已在後台改過（${new Date(d.editedAt).toLocaleString('zh-TW')}）` : (d.def ? '預設稿' : '還沒有門市版');
+    box.innerHTML = `
+      <div class="shop-desc-head"><b>門市版介紹</b><span>只用於店內，不影響卡池</span></div>
+      <div class="shop-detail-desc">${text ? esc(text) : '（還沒有門市版介紹，按「編輯」自己寫）'}</div>
+      <div class="shop-desc-foot"><span>${esc(src)}${text ? `・${[...text].length} 字` : ''}</span>
+        <span><button class="gbtn" type="button" data-shop-desc="edit">編輯</button>${d.edit && d.def ? ' <button class="gbtn shop-desc-ghost" type="button" data-shop-desc="reset">還原預設稿</button>' : ''}</span></div>`;
+  }
+  function renderShopDescEditor() {
+    const box = document.getElementById('shopDetailDescBox');
+    const d = shopDetailCur;
+    box.innerHTML = `
+      <div class="shop-desc-head"><b>編輯門市版介紹</b><span>只用於店內，不影響卡池</span></div>
+      <textarea class="shop-desc-input" id="shopDescInput" rows="10">${esc(d.edit || d.def)}</textarea>
+      <div class="shop-desc-foot"><span id="shopDescCount"></span>
+        <span><button class="gbtn" type="button" data-shop-desc="save">儲存</button> <button class="gbtn shop-desc-ghost" type="button" data-shop-desc="cancel">取消</button></span></div>`;
+    const ta = document.getElementById('shopDescInput');
+    const cnt = () => { document.getElementById('shopDescCount').textContent = `${[...ta.value.trim()].length} 字`; };
+    ta.addEventListener('input', cnt); cnt(); ta.focus();
+  }
+  async function saveShopDesc(reset) {
+    const d = shopDetailCur;
+    if (!d) return;
+    const text = reset ? '' : (document.getElementById('shopDescInput')?.value || '').trim();
+    if (reset && !confirm('還原成預設稿？你改過的文字會刪掉。')) return;
+    try {
+      await ensureShopDescs(true);   // 先讀最新，避免蓋掉別的裝置剛存的
+      // 空白或和預設稿一樣＝刪掉改過的版本，回到預設稿
+      const val = (!text || text === d.def) ? deleteField() : { text, artist: d.artist, album: d.album, updatedAt: Date.now() };
+      await setDoc(SHOP_DESC_DOC(), { byKey: { [d.key]: val } }, { merge: true });
+      await ensureShopDescs(true);
+      Object.assign(d, shopDescFor({ id: d.itemId, cardKey: d.cardKey, artist: d.artist, album: d.album }));
+      renderShopDesc();
+    } catch (e) { alert('存檔失敗：' + (e.message || e)); }
+  }
+  async function openShopDetail(i) {
+    const it = shopItems[i];
+    if (!it) return;
+    const token = ++shopDetailToken;
+    const r = it.rarity;
+    const meta = [
+      `店內標示：${it.listedArtist}《${it.listedTitle}》`,
+      [it.pressingYear ? `壓片年 ${it.pressingYear}` : '', it.condition ? `品相 ${it.condition}` : '', it.priceNT ? `售價 NT$${Number(it.priceNT)}` : ''].filter(Boolean).join('・'),
+      (it.genres || []).length ? `曲風 ${it.genres.map(g => SHOP_GENRE_LABEL[g] || g).join('、')}` : '',
+      it.note || '',
+    ].filter(Boolean).map(esc).join('<br>');
+    document.getElementById('shopModalBody').innerHTML = `
+      ${it.coverUrl ? `<img class="shop-detail-cover" src="${esc(it.coverUrl)}" alt="">` : ''}
+      <div class="shop-detail-rarity${r ? ' rarity-' + r.tier : ''}"><span class="shop-rarity" style="font-size:10px;">${r ? esc(r.label) : (it.status === 'pending_card' ? '待上架' : '—')}</span></div>
+      <div class="shop-detail-album">${esc(it.album || it.listedTitle)}</div>
+      <div class="shop-detail-artist">${esc(it.artist || it.listedArtist)}${it.year ? `・${Number(it.year)}` : ''}</div>
+      <div class="shop-detail-meta">${meta}</div>
+      <div id="shopDetailDescBox"><div class="shop-detail-desc">載入介紹…</div></div>`;
+    shopModal.classList.add('open');
+    shopDetailCur = null;
+    await ensureShopDescs(true);
+    if (token !== shopDetailToken) return;
+    shopDetailCur = { itemId: it.id, cardKey: it.cardKey, ...shopDescFor(it) };
+    renderShopDesc();
+  }
+  document.getElementById('shopModalBody').addEventListener('click', e => {
+    const act = e.target.closest('[data-shop-desc]')?.dataset.shopDesc;
+    if (!act) return;
+    if (act === 'edit') renderShopDescEditor();
+    if (act === 'cancel') renderShopDesc();
+    if (act === 'save') saveShopDesc(false);
+    if (act === 'reset') saveShopDesc(true);
+  });
+  document.getElementById('shopGrid').addEventListener('click', e => {
+    const card = e.target.closest('.shop-card[data-shop-idx]');
+    if (card) openShopDetail(Number(card.dataset.shopIdx));
+  });
+  document.getElementById('shopGrid').addEventListener('keydown', e => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const card = e.target.closest('.shop-card[data-shop-idx]');
+    if (card) { e.preventDefault(); openShopDetail(Number(card.dataset.shopIdx)); }
+  });
 
   // ───────── 頂級牌管理（apex_pool：殿堂/異端/流亡 固定卡池）─────────
   const APEX_INFO = {

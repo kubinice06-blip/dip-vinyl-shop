@@ -1527,3 +1527,9 @@ hook 加權 18–27.5｜note 211–235
 
 **只動** `desc-tools/batches/output/c188-out-2.json`（新增）與本檔（append 本段）；`jp-proper-names.json` append 0；卡單、研究稿、鉤子稿、`c188-out-1.json`（只讀）、`seed_cards.json`／`apex_pool.json`／`PROJECT_MEMORY.md`／`previews.json`／`caa.json`／KV／Firestore 零接觸；**零 git 操作**。臨時檔全在 `scratchpad/c188w2/`。
 **編號區間結算**：本段用到 **7021–7029（9 條）**，7030–7035 未用；未越界。
+
+
+## 本機段補記（2026-10-04）
+
+- 鈴木良雄《Wings》正文「上一張領銜作是 1974 年的《MATSURI》，中間隔了七年」改為「1979 年的《Matsuri》，中間隔了兩年」（hoyi 線交接第 1 點，c-192 a 研究第 7604 條；《Matsuri》是 CBS/Sony 25AP 1611，1979）。上架前改，線上沒有出現過錯的版本。
+- 池田芳夫 & 高瀬アキ《Esprit》的封面原本取自被降級的 Apple 條目（《AKI》1978），已撤，這張因缺封面留置。

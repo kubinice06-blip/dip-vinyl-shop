@@ -1,0 +1,2271 @@
+[
+ {
+  "key": "o-hum",
+  "name": "O-Hum",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1999,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Nahal-e Heyrat",
+    "year": 1999,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Nahal-e Heyrat",
+    "manifest": "onboarding-manifest-c124-20260910.json",
+    "desc": "三個版本之間唯一真正的差別，是最後一軌在不在。十軌那一版就是十一軌版拿掉末軌〈Pir-e May Foroosh〉4:18，另外兩個十一軌版之間逐軌只差 0 到 8 秒。取重製那一筆來看，與盤名同字的第四軌 6:06 是全張最長的一軌，第八軌 3:42 與它之間差了兩分二十四秒，另有七軌落在 4:28 到 5:44 之間，十一軌合計 54:14。三筆發行的廠牌欄全部是空的。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1bd75257-e9c6-3284-9e6b-d0de02ffb176&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/5fe4270c-aa67-4002-93e7-3278c13d4ed8?fmt=json&inc=artist-rels+aliases",
+     "https://musicbrainz.org/ws/2/release-group?artist=5fe4270c-aa67-4002-93e7-3278c13d4ed8&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1054829223&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/1bd75257-e9c6-3284-9e6b-d0de02ffb176"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "oberon",
+  "name": "Oberon",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1971,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "A Midsummer's Night Dream",
+    "year": 1971,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c68-a",
+    "album": "A Midsummer's Night Dream",
+    "facts": [
+     {
+      "f": "貝斯手 Jeremy Birchall 在 2013 年的訪談裡說：這張碟是自資發行，但由經營牛津本地 Acorn 廠牌的 Colin Sanders 錄音，「我們印了 99 張，因為那是不用另外繳稅的上限」；他補充，據他所知 Colin 在 1970 年代初只替 Acorn 錄過寥寥幾張唱片。",
+      "src": "https://www.psychedelicbabymag.com/2013/03/oberon-interview.html"
+     },
+     {
+      "f": "同一篇訪談裡 Charlie Seaward 說，工程師 Colin Sanders 當初是因為 Acorn Records 需要一台錄音／混音檯，才把 SSL 當副業辦起來；SSL 後來成了全世界最成功的高階混音檯廠商，1970 年代末到 1980 年代初大量外銷日本與美國，Sanders 本人則死於牛津附近的一場空難。",
+      "src": "https://www.psychedelicbabymag.com/2013/03/oberon-interview.html"
+     },
+     {
+      "f": "B3〈Minas Tirith〉的曲名取自《魔戒》裡的城市。Hugh Lupton 說這首原本是替 Tolkien 的文字譜曲，但有版權問題，於是他照原本的格律另寫了新詞，「只有標題從第一版留了下來」。B4〈Epitaph〉是他為前一年離校、後來在中東因中暑過世的同學 James Gardiner 寫的。",
+      "src": "https://www.psychedelicbabymag.com/2013/03/oberon-interview.html"
+     },
+     {
+      "f": "1971 年原盤無廠牌掛名、編號 OBE LPS1，Discogs 條目記錄錄音由 Acorn Records Limited 執行、Colin Sanders 掛工程師（未具名）、封面出自 Robin Clutterbuck、經紀是 Roly Errington，隨片附歌詞單。八軌逐首的演出者掛名俱全：Jan Scrimgeour、Robin Clutterbuck、Julian Smedley（人聲、小提琴）、Charlie Seaward（長笛、吉他）、Chris Smith（木吉他、電吉他）、Bernie Birchall（貝斯）、Nick Powell（打擊）。",
+      "src": "https://www.discogs.com/release/2837435-Oberon-A-Midsummers-Night-Dream"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "A Midsummer's Night Dream",
+    "manifest": "onboarding-manifest-c68-20260904.json",
+    "desc": "錄音在學校的兩間組合屋教室裡完成，一間排練，一間架器材。成員是牛津郡 Radley College 的同學，團名與盤名都出自莎士比亞；那是學期結束後的夏天，多數人前一天已離校，是為了這張碟才留下。架器材的 Colin Sanders 經營本地的 Acorn 廠牌，他把 SSL 當副業辦起來，起因是 Acorn 需要一台錄音混音檯。八軌裡兩首是別人的曲子：Debussy 的〈Syrinx〉與 Gershwin 的〈Summertime〉。",
+    "sourceUrls": [
+     "https://www.psychedelicbabymag.com/2013/03/oberon-interview.html",
+     "https://www.discogs.com/release/2837435-Oberon-A-Midsummers-Night-Dream",
+     "https://www.discogs.com/master/363520-Oberon-A-Midsummers-Night-Dream",
+     "https://musicbrainz.org/release-group/28bfc199-ab7b-33c6-8409-9eb0217bd865"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ocean colour scene",
+  "name": "Ocean Colour Scene",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Moseley Shoals",
+    "year": 1996,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "oddział zamknięty",
+  "name": "Oddział Zamknięty",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1984,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Oddział Zamknięty",
+    "year": 1984,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c130-b",
+    "album": "Oddział Zamknięty",
+    "facts": [
+     {
+      "f": "藝人端點：Oddział Zamknięty 是 Group／PL、life-span.begin 1979、disambiguation 空，名下 18 個 release-group，本卡是第一個；member-of-band 關係列 Krzysztof Jaryczewski（1979–1985）、Krzysztof Zawadka、Marcin Ciempiel、Włodzimierz Kania、Jarosław Wajk 等。同名回問另有一筆 `Jary Oddział Zamknięty`（PL／life-span.begin 2016-02-26），是另一個實體。",
+      "src": "https://musicbrainz.org/ws/2/artist/8952c281-ea73-4ae9-9252-60d2d03a74d2?fmt=json&inc=release-groups+artist-rels&limit=100"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Oddział Zamknięty",
+    "manifest": "onboarding-manifest-c130-20260917.json",
+    "desc": "同一張 LP 分好幾期錄，最後兩首換了整組節奏組，前一組人轉去了另一支團。多數曲目由主唱 Krzysztof Jaryczewski 帶的四人編制錄成，前兩軌另外加進一位吉他手，最後一期進錄音室的兩首則換上 Ciempiel 的貝斯與 Coganianu 的鼓。成品由 Muza 以 SX 2171 發行，10 軌，節奏打得很直的新浪潮。這張 1983 年錄、1984 年初上市，先拿到金唱片，2022 年 4 月再獲白金認證。樂團 1979 年成軍，這是首張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=6ddffc52-f48d-3972-ac39-7d638dd743c8&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://polskirock.eu/plyta/oddzial-zamkniety-oddzial-zamkniety-sx2171/",
+     "https://pl.wikipedia.org/wiki/Oddzia%C5%82_Zamkni%C4%99ty_(album)",
+     "https://musicbrainz.org/ws/2/artist/8952c281-ea73-4ae9-9252-60d2d03a74d2?fmt=json&inc=release-groups+artist-rels&limit=100",
+     "https://polskienagrania.com.pl/cd/oddzial-zamkniety-czarne-cd",
+     "https://musicbrainz.org/release-group/6ddffc52-f48d-3972-ac39-7d638dd743c8"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "odyssey",
+  "name": "Odyssey",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1977,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Odyssey",
+    "year": 1977,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Odyssey",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "〈Native New Yorker〉裡那段次中音薩克斯風獨奏是 Michael Brecker 吹的。Odyssey 的前身是康乃狄克的家族組合 Lopez Sisters，兩姊妹加上菲律賓裔貝斯手兼歌手 Tony Reynolds，1977 年在 RCA 交出這張八軌首作，Sandy Linzer 與 Charlie Calello 製作。單曲打進 Billboard Hot 100 第 21 名、英國榜第 5 名，專輯到 Billboard 200 第 36 名。歌裡的紐約客世故而帶點倦意，不是一味催人跳舞的 disco。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a31a5339-3968-47e5-9466-e60f98edd625",
+     "https://en.wikipedia.org/wiki/Odyssey_(band)",
+     "https://en.wikipedia.org/wiki/Native_New_Yorker_(song)",
+     "https://www.allmusic.com/album/odyssey-mw0001278719"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "okkervil river",
+  "name": "Okkervil River",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2005,
+   2005
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Black Sheep Boy",
+    "year": 2005,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "om",
+  "name": "Om",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2012,
+   2012
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Advaitic Songs",
+    "year": 2012,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "one ok rock",
+  "name": "ONE OK ROCK",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2010,
+   2010
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Nicheシンドローム",
+    "year": 2010,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Nicheシンドローム",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "Taka、Toru、Ryota、Tomoya 的第四張原創專輯，2010 年 6 月 9 日由 A-Sketch 發行，封面是鏡射對稱的日本列島輪廓線。〈完全感覚Dreamer〉讓樂團首度打進 Oricon 專輯榜前十，全作以 pop-punk 與 emo 的直球編曲為底，是永巧一與 akkin 分擔編曲，英日語交錯的高音是辨識點。慢板〈Wherever you are〉六年後因 NTT docomo 廣告翻紅，成為 Billboard Japan Hot 100 上少數停留超過兩百週的曲目；專輯本身在 Oricon 榜累計逾四百週。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Nicheシンドローム",
+     "https://ja.wikipedia.org/wiki/ONE_OK_ROCK",
+     "https://musicbrainz.org/release-group/d540a95f-2462-4c02-992f-8b34fa3c6f37"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "onerepublic",
+  "name": "OneRepublic",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2007,
+   2007
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dreaming Out Loud",
+    "year": 2007,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ooioo",
+  "name": "OOIOO",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2000
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Gold & Green",
+    "year": 2000,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Gold & Green",
+    "manifest": "onboarding-manifest-c42-japan-20260823.json",
+    "desc": "OOIOO 1995 年因雜誌《SWITCH》「讓ヨシミ 組一支虛構樂團」的企畫而成形，團名取自 BOREDOMS 的山塚アイ 筆記本上隨手寫下的字串。2000 年 9 月由 Trattoria／ポリスター 以 HDCD 規格發行的第三作維持四名女性成員編制，由 BOREDOMS 的ヨシミ（YoshimiO）主導人聲、吉他與小號，十二首曲名英日文混用，〈moss trumpeter〉〈てくてくtune〉〈Grow Sound Tree〉〈木[↑]6列車〉並列。2005 年 9 月美國的 Thrill Jockey 重新發行，替樂團打開海外通路。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/OOIOO",
+     "https://musicbrainz.org/release-group/42f5be43-6444-3c03-89e3-be3d11e692b6"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "opal",
+  "name": "Opal",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1987,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Happy Nightmare Baby",
+    "year": 1987,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c81-b",
+    "album": "Happy Nightmare Baby",
+    "facts": [
+     {
+      "f": "英文維基〈Happy Nightmare Baby〉條目記：本張是 Opal **唯一一張錄音室專輯**，1987 年在美國由 SST Records、在英國由 Rough Trade 發行；這也是樂團在一起時發過的唯一一張專輯——歌手 Kendra Smith 在本張的巡演途中離團，由 Hope Sandoval 接手，樂團隨後演變成 Mazzy Star。",
+      "src": "https://en.wikipedia.org/wiki/Happy_Nightmare_Baby"
+     },
+     {
+      "f": "同一條目的樂評段落：《Music Week》的 Dave E. Henderson 在當年寫下「Opal's totally unpredictable growing process may secure their downfall, due to their shaky persona, but either way, this [album] will be a cult item」；AllMusic 的 Ned Raggett 稱本張「at once drowsy, psychedelic, entrancing, and possessed of a sinuous spark」；PopMatters 在 2009 年把它形容成「lost semi-masterpiece」；Andrew Earles 在《Gimme Indie Rock: 500 Essential American Underground Rock Albums 1981-1996》裡把它寫成「Velvet Underground meets T-Rex at the intersection of proto-shoegaze and neo-psychedelia」。",
+      "src": "https://en.wikipedia.org/wiki/Happy_Nightmare_Baby"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Happy Nightmare Baby",
+    "manifest": "onboarding-manifest-c81-20260910.json",
+    "desc": "歌手在這張碟的巡演途中離團，樂團隨後演變成了另一個團。離開的是 Kendra Smith，接手的是 Hope Sandoval，這個團後來就成了 Mazzy Star。封底的作曲欄只寫一句：九首歌全部由 David Roback 與 Kendra Smith 寫；而 Performer 欄有六個名字。Roback 2015 年說這張是「a very electric record」——他們那時很想現場演，而在那之前做的東西「very acoustic」。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/658713",
+     "https://musicbrainz.org/ws/2/release?release-group=07871553-e942-3cf2-bf5c-a534400fe275&inc=recordings&fmt=json",
+     "https://www.discogs.com/master/30244",
+     "https://en.wikipedia.org/wiki/Happy_Nightmare_Baby",
+     "https://trouserpress.com/reviews/opal/",
+     "https://musicbrainz.org/artist/711a78ab-184f-4a38-9e5f-e43b4ce50aca",
+     "https://musicbrainz.org/release-group/07871553-e942-3cf2-bf5c-a534400fe275"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "opus avantra",
+  "name": "Opus Avantra",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1974,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Introspezione",
+    "year": 1974,
+    "genres": [
+     "rock",
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c61-a",
+    "album": "Introspezione",
+    "facts": [
+     {
+      "f": "原盤 1974 年 3 月 29 日由 Trident 發行（Discogs 廠牌實體 Trident (2)，編號 104188），唱片編號 TRI.1006，藍色標籤、開折式封套；封底左下角貼一張印著編號 TRI 1006 與「Distrib. Fonit Cetra」的小貼紙，那組編號並未印在封面上。runout 為機器壓印、記 TRI 1006 A 29-3-74。",
+      "src": "https://www.discogs.com/release/1917740-Opus-Avantra-Donella-Del-Monaco-Opus-Avantra-Donella-Del-Monaco"
+     },
+     {
+      "f": "原盤 credit：Donella Del Monaco（人聲、作詞）、Alfredo Tisocco（編曲、樂團指揮、低音號、作詞）、Giorgio Bisotto（電子與具象音樂、藝術指導、鋼琴）、Mireno Tisato（錄音、效果、鋼琴）、Tony Esposito（打擊、器樂、效果，並與 Bisotto、Tisato 一起掛「具象與合成聲響」）、Luciano Tavella（長笛）、Riccardo Perraro（大提琴）、Enrico Professione 與 Pieregidio Spiller（小提琴）；製作 Renato Marengo，封面 Umberto Telesco。",
+      "src": "https://www.discogs.com/release/1917740-Opus-Avantra-Donella-Del-Monaco-Opus-Avantra-Donella-Del-Monaco"
+     },
+     {
+      "f": "義大利文維基：Opus Avantra 1973 年成立，核心是女高音 Donella Del Monaco（構想、人聲與歌詞）、鋼琴家兼作曲家 Alfredo Tisocco（合奏指揮、音樂、鋼琴與鍵盤）、哲學家 Giorgio Bisotto（理念的提出者）與製作人 Renato Marengo；他們不只是一個樂團，更是一個實驗性的美學運動。",
+      "src": "https://it.wikipedia.org/wiki/Opus_Avantra"
+     },
+     {
+      "f": "義大利文維基：團名拆成三段——Opus（作品）、Avan（前衛）與 Tra（傳統），概括了樂團的主張：前衛的音樂運動，但根扎在對傳統的研究與重拾。1974 年他們替 Trident Records 發行第一張專輯《Opus Avantra - Donella Del Monaco》，「更為人所知的名字是《Introspezione》，取自第一首曲子的標題」；隔年在 Artis Records 出了《Lord Cromwell Plays Suite for Seven Vices》。",
+      "src": "https://it.wikipedia.org/wiki/Opus_Avantra"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Introspezione",
+    "manifest": "onboarding-manifest-c61-20260903.json",
+    "desc": "盤名《Introspezione》是後來才通行的，取自第一首曲子的標題。1974 年由 Trident 發行，Discogs 主條目以「Opus Avantra Donella Del Monaco」雙掛名當標題。樂團 1973 年成立，核心是女高音 Donella Del Monaco，掛構想、人聲與歌詞。歌劇訓練的嗓音被放進具象音樂與合成聲響裡，段落偏向藝術歌曲，〈Introspezione〉與〈Les plaisirs sont deux〉是這樣。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1917740-Opus-Avantra-Donella-Del-Monaco-Opus-Avantra-Donella-Del-Monaco",
+     "https://www.discogs.com/master/3675-Opus-Avantra-Donella-Del-Monaco-Opus-Avantra-Donella-Del-Monaco",
+     "https://it.wikipedia.org/wiki/Opus_Avantra",
+     "https://it.wikipedia.org/wiki/Donella_Del_Monaco",
+     "https://musicbrainz.org/release-group/623ba1a7-5984-35dd-9323-4b2b27ef00d6"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "osanna",
+  "name": "Osanna",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Palepoli",
+    "year": 1973,
+    "genres": [
+     "rock",
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c60-b",
+    "album": "Palepoli",
+    "facts": [
+     {
+      "f": "義文維基記 Palepoli 意為「古城」，被刻意與冷漠、封閉在都會利己主義裡的現代 Neapoli 對照；音樂把 free jazz 即興、那不勒斯民謠的回收、hard rock riff 與藍調寫法揉在一起。",
+      "src": "https://it.wikipedia.org/wiki/Osanna_(gruppo_musicale)"
+     },
+     {
+      "f": "義文維基記樂團 1970 年底由 Città Frontale 的第一代成員與管樂手 Elio D'Anna 組成，D'Anna 來自 James Senese 的 Showmen；他們是最早以化妝與戲服演出的義大利搖滾團之一，舞台上還有取材自地中海傳統與即興喜劇的編舞。",
+      "src": "https://it.wikipedia.org/wiki/Osanna_(gruppo_musicale)"
+     },
+     {
+      "f": "再發四十餘年不斷且幾乎都是正式發行：Fonit Cetra 1991 年黑膠與 CD（LPP 425／CDLP 425）、Warner Fonit 1999 年 CD、日本 Arcàngelo 2004（ARC-7061）與 2009（ARC-8012）年紙盒、Warner 2015 年（WPCR-16873）、義大利 Vinyl Magic／btf.it 2007 年起的黑膠復刻（VM LP 127，2016、2018、2021 年再壓）與 2010、2023 年 remastered CD（VMCD127）；只有俄國 Arcàngelo (2) 的 2009 年版標為 Unofficial Release。",
+      "src": "https://www.discogs.com/master/9070"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Palepoli",
+    "manifest": "onboarding-manifest-c60-20260903.json",
+    "desc": "1973 年夏天他們在那不勒斯自辦一場音樂節，把樂團的錢燒出一個大洞。那場集會叫 Be-In，最好的義大利進步搖滾團都來了。唱片 1973 年 1 月由 Fonit 發行；樂團 1970 年底由 Città Frontale 的第一代成員與 Elio D'Anna 組成，是最早以化妝與戲服演出的義大利搖滾團之一。全碟只有三段，B 面整面是〈Animale senza respiro〉。Palepoli 意為古城，對照的是現代的 Neapoli。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2758309",
+     "https://it.wikipedia.org/wiki/Palepoli",
+     "https://it.wikipedia.org/wiki/Osanna_(gruppo_musicale)",
+     "https://www.discogs.com/master/9070",
+     "https://musicbrainz.org/release-group/e01178fa-69ca-3871-bdeb-43956495a1ae"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ought",
+  "name": "Ought",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2015,
+   2015
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sun Coming Down",
+    "year": 2015,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "outburst",
+  "name": "Outburst",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1989,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Miles to Go",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c122-a",
+    "album": "Miles to Go",
+    "facts": [
+     {
+      "f": "廠牌實體 Blackout! Records（471d40b6）：type Original Production、**area New York**、**life-span begin 1988**、disambiguation 空。**本張 catno BL-3、廠牌成立年 1988，本張 1989——兩者相差一年，可引；但「目錄第三號」是從 catno 推的，實體欄位沒有目錄序這個欄位。**",
+      "src": "https://musicbrainz.org/ws/2/label/471d40b6-2df1-4f74-bc92-1aecce56bb6c?fmt=json"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Miles to Go",
+    "manifest": "onboarding-manifest-c122-20260910.json",
+    "desc": "排在第六軌的〈S.G.I.〉只有十二秒。其餘六軌全擠在一分三十九秒到兩分六秒的窄帶裡，七軌合計 11 分 28 秒，那十二秒的插件把碟切成兩半。十一年後的 CD 把這七軌原封放在前段，第八軌起接上六首標著 demo 版本的錄音與一軌無曲名的器樂，一路湊到十四軌。原盤的廠牌欄寫 Blackout!，catno 記為 BL-3，該廠牌登記在 New York、1988 年起。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=894458e4-72ca-4605-adfe-648a175f1b01&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=6a48d3ed-949f-46b6-92ec-51c801e149aa&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/label/471d40b6-2df1-4f74-bc92-1aecce56bb6c?fmt=json",
+     "https://itunes.apple.com/lookup?id=1687344809&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/894458e4-72ca-4605-adfe-648a175f1b01",
+     "https://en.wikipedia.org/wiki/Blackout_Records"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "overkill",
+  "name": "Overkill",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1989,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Years of Decay",
+    "year": 1989,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "p. mobil",
+  "name": "P. Mobil",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mobilizmo",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c56-a",
+    "album": "Mobilizmo",
+    "facts": [
+     {
+      "f": "樂團成軍之後等了八年才有第一張大碟；到那時「經典」陣容已經走掉好幾人——1978 年 Pálmai Zoltán 入伍、1979 年 Vikidál Gyula 去了 Dinamit、1980 年 Bencsik Sándor 與 Cserháti István 組了 P. Box——錄音是重組後的陣容做的。",
+      "src": "https://hu.wikipedia.org/wiki/Mobilizmo"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Mobilizmo",
+    "manifest": "onboarding-manifest-c56-20260903.json",
+    "desc": "有一首歌的內容，是領班朗讀 1981 年的統計年鑑。那首是〈Átlagember〉，朗讀的人是樂團領班 Schuster Lóránt。這是 P. Mobil 的第一張錄音室專輯，成軍之後等了八年才等到——到那時經典陣容已經走掉好幾人，錄音是重組後的陣容做的。匈牙利語維基把這個時間差記在唱片工業這一邊：工廠本來也不會允許把與原始成員錄的東西放上唱片，而他自己也想錄新曲。專輯名是把當時流行的各種主義用西班牙語的方式扭了一下。十一首都在三到五分鐘之間，嗓音粗而直。",
+    "sourceUrls": [
+     "https://hu.wikipedia.org/wiki/Mobilizmo",
+     "https://musicbrainz.org/release-group/56276a83-41af-426f-9cad-968b99fe582b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "p.o.d.",
+  "name": "P.O.D.",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2001,
+   2001
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Satellite",
+    "year": 2001,
+    "genres": [
+     "rock",
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "pablo cruise",
+  "name": "Pablo Cruise",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1978,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Worlds Away",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Worlds Away",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "加州 soft rock 團 Pablo Cruise 的第四張專輯，1978 年 5 月由 A&M 發行，也是他們商業成績最好的一張，美國 Billboard 200 最高第 6 名。錄音前原貝斯手 Bud Cockrell 離團，由 Bruce Day 接手。聲響走明亮的西岸路線，鍵盤與吉他線條乾淨、和聲飽滿。〈Love Will Find a Way〉拿下單曲榜第 6，〈Don't Want to Live Without It〉第 21，〈I Go to Rio〉第 46；未發單曲的同名曲則長年是樂迷偏愛的一首。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Worlds_Away_(Pablo_Cruise_album)",
+     "https://musicbrainz.org/release-group/21a99bb2-ec39-3faf-a1fc-84430ae9a1a5"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pablo picasso",
+  "name": "Pablo Picasso",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Soft Type",
+    "year": 1983,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c70-a",
+    "album": "Soft Type",
+    "facts": [
+     {
+      "f": "Disk Union 的《TYPES 1981-1985》商品頁寫：PABLO PICASSO 是 1981 年成軍、以野村誠為首的三人組，「受 Friction 影響的東京 Rockers 第三世代代表樂團」；1981 年出道單曲〈紫外線〉、1983 年專輯《ソフト・タイプ》、1985 年單曲〈モーション・ヒッツ〉全在 Telegraph；描述其聲音為「各樂器像機器一樣刻著節奏、金屬質的噪音吉他尖銳切入」，《Soft Type》時期加入風琴與薩克斯風、吸收 dub，並拿 Pop Group 等英國 post-punk 與 Bristol 一系當參照。",
+      "src": "https://diskunion.net/jp/ct/detail/IND5175"
+     },
+     {
+      "f": "Discogs master 1463917 只有 2 個版本——1983 年 Telegraph 原盤與 1991 年 Wax Records CD——皆未標 Unofficial Release；Tower Records 記 2010 年 6 月 23 日 Super Fuji Discs 另出了作品集《types 1981-1985》（FJSP-94），收單曲、本專輯與 1981–84 年未發表現場。",
+      "src": "https://tower.jp/item/2723194/types-1981---1985"
+     },
+     {
+      "f": "MusicBrainz 的 release-group 記首度發行 1983 年、掛名 Pablo Picasso、primary-type Album，轄下只有 1983 JP Official 一筆；2010 年的《Types 1981-1985》是另一個 Album/Compilation 型 release-group。",
+      "src": "https://musicbrainz.org/release-group/2fd2764a-fb7c-4e55-8a2a-1f89a3947600"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Soft Type",
+    "manifest": "onboarding-manifest-c70-20260910.json",
+    "desc": "主唱野村誠同時彈貝斯、吹中音薩克斯風，並在〈内側の歌〉加彈 Acetone 風琴。他還掛了製作、作曲與美術，三人組另外兩位是吉他兼邦哥鼓的榎本浩與鼓手清水武。1983 年錄於 Studio Magnet，由東京的 Telegraph 發行。唱片行的文案把他們形容成受 Friction 影響的東京 Rockers 第三世代代表：各件樂器像機器一樣刻著節奏，到本作才加進風琴與薩克斯風、吸收了 dub。1991 年的擴充 CD 另收了 1985 年新宿 Loft 的最後一場演出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1707107",
+     "https://diskunion.net/jp/ct/detail/IND5175",
+     "https://www.discogs.com/release/6452113",
+     "https://tower.jp/item/2723194/types-1981---1985",
+     "https://musicbrainz.org/release-group/2fd2764a-fb7c-4e55-8a2a-1f89a3947600"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pages",
+  "name": "Pages",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1978,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Pages",
+    "year": 1978,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "pale saints",
+  "name": "Pale Saints",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1990,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Comforts of Madness",
+    "year": 1990,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "panbers",
+  "name": "Panbers",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2023,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Indonesian City Sound: Panbers Psychedelic Rock and Funk, 1971-1974",
+    "year": 2023,
+    "genres": [
+     "rock",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c52-a",
+    "album": "Volume 1",
+    "facts": [
+     {
+      "f": "1971 年 9 月 15 日發行，是 Panbers 的首張專輯，廠牌 Mesra Records。",
+      "src": "https://id.wikipedia.org/wiki/Volume_1_(Album_Panbers)"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c52-a",
+    "album": "Indonesian City Sound: Panbers Psychedelic Rock and Funk, 1971-1974",
+    "facts": [
+     {
+      "f": "Discogs 記本作 2023 年在印尼發行，廠牌為 Elevation Records 與 Bravo Musik，曲風欄標 Rock／Funk-Soul，風格欄標 Psychedelic Rock／Funk。",
+      "src": "https://www.discogs.com/release/26993535"
+     },
+     {
+      "f": "其中〈Haai〉〈Colour Of Your Heart〉〈Let Us Dance Together〉〈Bye Bye〉四首出自 Panbers 1971 年的首張專輯《Volume 1》。",
+      "src": "https://id.wikipedia.org/wiki/Volume_1_(Album_Panbers)"
+     },
+     {
+      "f": "Panbers 是 Pandjaitan 四兄弟 1960 年代組成的雅加達樂團，團名為 Pandjaitan Bersaudara 的縮寫，1969 年 1 月 25 日定名。",
+      "src": "https://id.wikipedia.org/wiki/Panbers"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Indonesian City Sound: Panbers Psychedelic Rock and Funk, 1971-1974",
+    "manifest": "onboarding-manifest-c52-20260903.json",
+    "desc": "限量三百張，把樂團手最順的那四年剪成十三首排進一張碟。那四年是 1971 到 1974，選曲全部取自 Panbers 與 Mesra Dimita Records 合作期間的錄音。2023 年 5 月 6 日發行，實體是 300 張 12 吋黑膠，由樂團官方的 Bandcamp 頁面販售；十三軌裡有四首來自 1971 年的首作。〈Rock And The Sea〉到〈Jakarta City Sound〉，破音吉他與 Hammond 風琴都推在最前，越往後段放克的切分越明顯。",
+    "sourceUrls": [
+     "https://panbers.bandcamp.com/album/indonesian-city-sound-panbers-psychedelic-rock-and-funk-1971-1974",
+     "https://www.discogs.com/release/26993535",
+     "https://id.wikipedia.org/wiki/Volume_1_(Album_Panbers)",
+     "https://id.wikipedia.org/wiki/Panbers",
+     "https://www.discogs.com/release/26993535-Panbers-Indonesian-City-Sound-Panbers-Psychedelic-Rock-and-Funk-1971-1974",
+     "https://www.allmusic.com/album/indonesian-city-sound-panbers-psychedelic-rock-and-funk-1971--1974-mw0004084813"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "panna fredda",
+  "name": "Panna Fredda",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1971,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Uno",
+    "year": 1971,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c61-a",
+    "album": "Uno",
+    "facts": [
+     {
+      "f": "義大利文維基：樂團 1969 年成軍於羅馬，先以 I Figli del Sole 之名在夜店演出，後來取當時駐唱那家店的名字改叫 I Vun Vun。1970 年靠 Roby Crispiano 的引介在 Vedette 發了第一張單曲〈Strisce rosse〉／〈Delirio〉，在《Bandiera gialla》的排行榜上蟬聯四週第一。",
+      "src": "https://it.wikipedia.org/wiki/Panna_Fredda"
+     },
+     {
+      "f": "義大利文維基：錄《Uno》之前陣容大換——Giorgio Brandi 因服兵役離團（後來加入 I Cugini di Campagna）、Carlo Bruno 去了別的團、Filippo Carnevale 結婚，補進 Lino Stopponi、Pasquale Cavallo（Windy）與 Roberto Balocco；唱片沒有得到多大迴響，樂團隨即解散。",
+      "src": "https://it.wikipedia.org/wiki/Panna_Fredda"
+     },
+     {
+      "f": "italianprog.com：《Uno》是樂團唯一的專輯，六首長篇曲子把吉他與鍵盤的對答放在中心，帶英國前衛搖滾的影響，鍵盤段落另有明顯的古典色彩；樂團在唱片發行前就因為團員服兵役與音樂方向的分歧而解散。",
+      "src": "https://www.italianprog.com/it/a_pannafredda.htm"
+     },
+     {
+      "f": "italianprog.com：《Uno》的原盤極為稀有，是收藏市場上的高價品；1989 年起有多次 CD 重刊、2004 與 2011 年另有黑膠重刻，日本版另加了附加曲。",
+      "src": "https://www.italianprog.com/it/a_pannafredda.htm"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Uno",
+    "manifest": "onboarding-manifest-c61-20260903.json",
+    "desc": "六個曲名在曲目表上義大利文與英文並排，其中一首是「風、月亮和藍色小雞」。1971 年由 Vedette Records 發行。那首是〈Il vento la luna e pulcini blu (Sole rosso)〉，10:25。詞曲全由 Angelo Giardinelli 掛名。吉他與鍵盤一來一往，人聲位置偏後。樂團 1969 年成軍於羅馬，後來取駐唱那家店的名字改叫 I Vun Vun。錄《Uno》之前陣容大換，唱片問世前後樂團就散了。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4813797-Panna-Fredda-Uno",
+     "https://it.wikipedia.org/wiki/Panna_Fredda",
+     "https://www.italianprog.com/it/a_pannafredda.htm",
+     "https://www.discogs.com/master/439659-Panna-Fredda-Uno",
+     "https://musicbrainz.org/release-group/35621401-250f-33cd-938b-046eb4b884a4"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "papa roach",
+  "name": "Papa Roach",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2000
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Infest",
+    "year": 2000,
+    "genres": [
+     "rock",
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "parálisis permanente",
+  "name": "Parálisis Permanente",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "El acto",
+    "year": 1982,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c125-a",
+    "album": "El acto",
+    "facts": [
+     {
+      "f": "藝人端點分頁全列 **10 個 release-group**：**純 Album 只有 1 個（1982 本張）**、EP 2 個（1982《Quiero ser santa》、**1982-01-29《Parálisis Permanente / Gabinete Caligari》**，後者是與本組另一張卡的樂團合掛的分軌 EP）、Single 1 個（1983《Nacidos para dominar》）、Album/Compilation 5 個（1984《Los singles》、1991《Heroes de los 80》、1995《Singles y primeras grabaciones》、2001《Grabaciones completas 1981 - 1983》、2006-05-29《Singles Y Primeras Grabaciones / El Acto》）、Other/Compilation 1 個（2003-12-01《El Acto + Singles + Maquetas》）。**「這張是他們唯一的正規專輯」查證屬實**——名下 `secondary-types` 為空的專輯只有這一筆，**其餘九筆全是 EP、單曲或合輯**。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=8b4d7237-5ec8-4201-a702-4b95819d3890&fmt=json&limit=100&offset=0"
+     },
+     {
+      "f": "1982 原盤的十三軌**一筆 recording-level relationship 都沒有**：沒有錄音日期、沒有場地、沒有樂手或製作人掛名，release 的 annotation 欄也是空的。**團員名單、樂器分工與「誰是鼓手」在資料庫端全部空白。**",
+      "src": "https://musicbrainz.org/ws/2/release/d41dbb44-1f45-41f8-9d67-d4e9900c8df1?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "El acto",
+    "manifest": "onboarding-manifest-c125-20260910.json",
+    "desc": "A 面前五首全部超過三分鐘，B 面前五首全部不到三分鐘。同名曲〈El acto〉2:26 排在 B 面第一首，全片最長 3:58、最短 2:06。1982 年 3 Cipreses 的 3C-003 是一張 12 吋、十三軌，A 面六首、B 面七首，名下兩筆發行都是十三軌。這個掛名底下的十筆條目裡只有這一張是專輯，另外還有一張兩團合掛的 EP。樂團的存續期記的是 1981 到 1983。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/995e1b43-2bf2-3098-b106-a046398f0367?inc=artist-credits+releases&fmt=json",
+     "https://musicbrainz.org/ws/2/release?release-group=995e1b43-2bf2-3098-b106-a046398f0367&inc=media+labels+recordings+artist-credits&limit=100&fmt=json",
+     "https://musicbrainz.org/ws/2/release-group?artist=8b4d7237-5ec8-4201-a702-4b95819d3890&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release/d41dbb44-1f45-41f8-9d67-d4e9900c8df1?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media",
+     "https://itunes.apple.com/lookup?id=1659490648&country=es&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/995e1b43-2bf2-3098-b106-a046398f0367"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "parameter",
+  "name": "Parameter",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1971,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Galactic Ramble",
+    "year": 1971,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c68-a",
+    "album": "Galactic Ramble",
+    "facts": [
+     {
+      "f": "1971 年的原盤由 Deroy Sound Service 發行，Discogs 條目的廠牌編號欄直接填「none」——這張碟連目錄號都沒有。Deroy 是 Lancashire 的客製壓片服務商，同批的 Complex《The Way We Feel》（DER 671 S）與 Sindelfingen《Odgipig》（DER S 035）都由它壓製；Deroy 在 Complex 那張的角色是「錄音、壓片、製造」一手包辦，錄音室設在 Carnforth。",
+      "src": "https://www.discogs.com/release/3176798-Parameter-Galactic-Ramble"
+     },
+     {
+      "f": "Kissing Spell 的 CD 版把原盤 credit 列全：Tony Mortimer（人聲、節奏吉他、木吉他，兼美術設計）、Paul Fahy（主奏吉他、十二弦木吉他、和聲、班鳩琴）、Keith Barrett（貝斯、和聲）、Lionel Busby（鼓、打擊），製作掛整團 Parameter。該版被歸在 Kissing Spell 的「Erewhon Underground Folk-Rock Series 1968-1978」系列裡。",
+      "src": "https://www.discogs.com/release/3553617-Parameter-Galactic-Ramble"
+     },
+     {
+      "f": "Discogs master 400264 底下 8 個版本：1971 Deroy 原盤、1995 年義大利掛「Parameter Records」名義的黑膠（PM 001）、2002 年德國 Shadoks 限量黑膠（026）、2002 年 Kissing Spell CD（KSCD941）與其黑膠、2022 年 Seelie Court CD，以及一筆無廠牌 CDr；版本頁上沒有任何一筆標記 Unofficial Release。",
+      "src": "https://www.discogs.com/master/400264-Parameter-Galactic-Ramble"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Galactic Ramble",
+    "manifest": "onboarding-manifest-c68-20260904.json",
+    "desc": "原盤連目錄號都沒有：廠牌編號欄上填的是 none。1971 年由 Deroy Sound Service 發行——那是 Lancashire 的客製壓片服務商，錄音室設在 Carnforth，另外兩張英國私壓也是它壓的。四件式：Tony Mortimer 唱並彈節奏與木吉他，Paul Fahy 掛主奏吉他、十二弦與班鳩琴，製作掛整團。十六軌，最短的〈Uncertain Tea〉只有 34 秒；同名曲〈Galactic Ramble〉不在原盤曲目表上。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3176798-Parameter-Galactic-Ramble",
+     "https://www.discogs.com/release/3553617-Parameter-Galactic-Ramble",
+     "https://www.discogs.com/release/24338207-Parameter-Galactic-Ramble",
+     "https://www.discogs.com/master/400264-Parameter-Galactic-Ramble",
+     "https://musicbrainz.org/release-group/a5a5e700-2ef1-45f9-a2a4-4ba20620721e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "partibrejkers",
+  "name": "Partibrejkers",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Partibrejkers",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c54-a",
+    "album": "Partibrejkers",
+    "facts": [
+     {
+      "f": "樂團 1982 年成立，1982 年 10 月 4 日在 Dadov 劇場首演；團名由鼓手 Goran Bulatović「Manza」取的，是英文 party-breakers 的塞爾維亞語音譯寫法。",
+      "src": "https://en.wikipedia.org/wiki/Partibrejkers"
+     },
+     {
+      "f": "封面由吉他手 Nebojša Antonijević「Anton」設計；客席有 Branislav Petrović「Banana」的口琴與 Branislav Trivić 的薩克斯風。",
+      "src": "https://en.wikipedia.org/wiki/Partibrejkers_I"
+     },
+     {
+      "f": "首作成功之後，Jugoton 卻拒絕發行樂團的第二張，理由是「不夠有反叛性」；1985 年夏天 Bulatović 離團，同年 12 月樂團一度解散。",
+      "src": "https://en.wikipedia.org/wiki/Partibrejkers"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Partibrejkers",
+    "manifest": "onboarding-manifest-c54-20260904b.json",
+    "desc": "整張碟沒有貝斯，兩把吉他得同時負責低頻與 riff。聲音因此又薄又硬，接近 1960 年代車庫樂團的錄音質地，唱腔粗、幾乎不修飾，節奏藍調的骨架被龐克的速度推著走，〈Ulični hodač〉與翻唱曲〈Stoj, Džoni〉都在這個框架裡。唱片 1985 年 1 月由 Jugoton 發行，製作人是 Disciplina Kičme 的 Dušan Kojić「Koja」，這也是他第一次替別的樂團製作唱片。首作成功之後，Jugoton 卻以不夠有反叛性為由拒發第二張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Partibrejkers_I",
+     "https://en.wikipedia.org/wiki/Partibrejkers",
+     "https://musicbrainz.org/release-group/6bb6553d-2fd4-39de-8552-bb9d11e7c44d"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "passenger",
+  "name": "Passenger",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2012,
+   2012
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "All the Little Lights",
+    "year": 2012,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "passion pit",
+  "name": "Passion Pit",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   2009,
+   2009
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Manners",
+    "year": 2009,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "pat benatar",
+  "name": "Pat Benatar",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Crimes of Passion",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "pau riba",
+  "name": "Pau Riba",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1969,
+   1969
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dioptria",
+    "year": 1969,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c125-a",
+    "album": "Dioptria",
+    "facts": [
+     {
+      "f": "release-group b7c4aad2 的欄位：title「Dioptria」、artist-credit **「Pau Riba & OM」**（第一位是藝人實體 b1c41495「Pau Riba」，Person／**ES**，life-span **1948-08-07–2022-03-06**）、first-release-date **1969**、primary-type Album、**secondary-types 空**。轄下 **2 個 release**：1969 **ES** Concèntric **5.713-SUL**（12 吋黑膠、**8 軌**、Official）與一筆**無日期、無國別、無廠牌、status 也空白**的 CD（8 軌）。**只有 1969 那一筆是正式建檔完整的發行。** 藝人實體的 area 記 **Catalunya**、**begin-area 記 Palma**（不是巴塞隆納）。",
+      "src": "https://musicbrainz.org/ws/2/release-group/b7c4aad2-ac73-3226-bb97-ffe4c0a2d439?inc=artist-credits+releases&fmt=json"
+     },
+     {
+      "f": "1969 原盤的 annotation 欄有登錄（**本批少數有 annotation 的一張**）：**Manufactured By – Fonogram, S.A.**、**Words By, Music By – Pau Riba**（詞曲兩欄都只掛他一人）、**Rights Society: SGAE**、**Depósito Legal: B. 43901-1969**（「B.」是巴塞隆納的省別代碼，末四位就是登記年 1969）。同一欄還寫著「Dioptria originally released in 1969 as one record only. **Dioptria/2 originally released separately in 1970.**」——**但藝人目錄把《Dioptria 2》記成 1971，兩處對不上，這一點不得單邊採信。** 八軌**沒有任何 recording-level relationship**：錄音日期、場地、樂手全部空白。",
+      "src": "https://musicbrainz.org/ws/2/release/77d47297-8491-4ce1-a4b3-1b69986c3fca?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media"
+     },
+     {
+      "f": "藝人端點分頁全列 **13 個 release-group**：純 Album（secondary-types 空）11 個、EP 1 個、Album/Compilation 1 個。依 first-release-date 排：**1967《Taxista!》（EP）、1969《Dioptria》、1971《Dioptria 2》、1971《Jo, la donya i el gripau》**、1975《Electròccid àccid alquimístic xoc》、1977《Licors》、1993《Disc dur》、1997《Cosmossoma》、2001《Nadadales》、2008《Virus laics》、2013《Mosques de colors》、2022-06-07《Segona Florada》，另有 2006 年的同名合輯《Dioptria》。**本張是名下最早的純 Album，但前面還有 1967 年的 EP——「第一張唱片」不成立，「第一張專輯」才成立。**",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=b1c41495-8a2b-4eab-a73d-516f916205e4&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dioptria",
+    "manifest": "onboarding-manifest-c125-20260910.json",
+    "desc": "八首沒有一首短於四分鐘，兩面各壓著一首七分半以上的長曲。A 面收在 7:58 的〈Ars erotica (Non est mihi)〉，B 面以 7:35 的〈Ja s'ha mort la besàvia〉起頭。詞曲兩欄都只掛 Pau Riba 一人，法定登記編號寫著 B. 43901-1969。1969 年 Concèntric 的 5.713-SUL 就是這一版的八軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b7c4aad2-ac73-3226-bb97-ffe4c0a2d439?inc=artist-credits+releases&fmt=json",
+     "https://musicbrainz.org/ws/2/release?release-group=b7c4aad2-ac73-3226-bb97-ffe4c0a2d439&inc=media+labels+recordings+artist-credits&limit=100&fmt=json",
+     "https://musicbrainz.org/ws/2/release/77d47297-8491-4ce1-a4b3-1b69986c3fca?fmt=json&inc=recordings+recording-level-rels+artist-rels+place-rels+annotation+labels+media",
+     "https://musicbrainz.org/ws/2/release-group?artist=b1c41495-8a2b-4eab-a73d-516f916205e4&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=1455495613&country=es&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/b7c4aad2-ac73-3226-bb97-ffe4c0a2d439"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paul clark",
+  "name": "Paul Clark",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Aim for the Heart",
+    "year": 1980,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c72-b",
+    "album": "Aim for the Heart",
+    "facts": [
+     {
+      "f": "碟上有逐軌的替換：貝斯在 A3 與 B5 兩首改由 Hadley Hockensmith 彈，鼓在 A3 與 B1 兩首改由 Keith Edwards 打，主奏吉他在 A1 與 B4 兩首改由 Curt Bartlett 彈。**主唱也換過兩次**——A4〈Oracle〉的主唱是 Kathy Hazzard、B5〈Author Of Love〉的主唱是 Kelly Willard，兩位女歌手同時也在全片唱和聲，另兩位和聲是 James Felix 與 Phyllis St. James。",
+      "src": "https://www.discogs.com/release/1707983-Paul-Clark-5-Aim-For-The-Heart"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Aim for the Heart",
+    "manifest": "onboarding-manifest-c72-20260904.json",
+    "desc": "碟上有兩首歌的主唱換了人，各由一位女歌手擔任。〈Oracle〉是 Kathy Hazzard、〈Author Of Love〉是 Kelly Willard。其餘的替換也是逐軌的：貝斯、鼓與主奏吉他都各有兩首由別人接手。核心伴奏是 Abraham Laboriel 的貝斯與 Bill Maxwell 的鼓，Ernie Watts 一個人吹中音、高音、次中音三種薩克斯風並兼長笛。2007 年日本 Vivid Sound 把這張 1980 年的碟重新發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1707983-Paul-Clark-5-Aim-For-The-Heart",
+     "https://www.discogs.com/master/702595-Paul-Clark-5-Aim-For-The-Heart",
+     "https://musicbrainz.org/release-group/fb01514d-aaaf-461b-9208-c5a1f1d3b9bb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paul roland",
+  "name": "Paul Roland",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1985,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Burnt Orchids",
+    "year": 1985,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c80-b",
+    "album": "Burnt Orchids",
+    "facts": [
+     {
+      "f": "Discogs 的原盤條目（release 1563059）記：1985 年英國盤，廠牌 Aftermath Records、編號 SCOOP 2，Vinyl／LP／Album；母帶在 Tape One，**壓片由 Orlake Records 代工**。條目註記寫這是「一般版本，另外存在附贈一張十二吋的版本」。",
+      "src": "https://www.discogs.com/release/1563059-Paul-Roland-Burnt-Orchids"
+     },
+     {
+      "f": "**那張附贈的十二吋不是新錄的**：Discogs 的 Aftermath Records 廠牌頁上，AEP 12011 是 Paul Roland 1983 年的十二吋 EP《Blades Of Battenburg》，1985 年那個附贈版把它與本張的 SCOOP 2 綁在一起賣。",
+      "src": "https://www.discogs.com/label/31213-Aftermath-Records"
+     },
+     {
+      "f": "同一份廠牌頁顯示 Aftermath 的目錄很短，而且**同一年的 AFT 1 就是 Robyn Hitchcock 的《Black Snake Diamond Röle》(1985)**——也就是在本張碟上唱和聲的那個人，自己的唱片就掛在隔壁編號；此外還有 SCOOP 1（1983 年 The Waves 的《Shock Horror!》）、AFT 2 Voodoo Child、AFT 3 與 AFT 6 Magic Mushroom Band、AFT 5 Red Harvest，以及 Paul Roland 的另外兩張十二吋 AEP 12012、AEP 12013。",
+      "src": "https://www.discogs.com/label/31213-Aftermath-Records"
+     },
+     {
+      "f": "英文維基〈Paul Roland〉的音樂生涯段記：「1985 年的《Burnt Orchids》被《Music Week》形容為一張『**討喜的、早期 Pink Floyd 式的作品集**』」（引 1985 年 9 月 28 日《Music Week》第 19 頁的唱片評論）；同一段接著寫「**Roland 自己認為這是他第一張『真正的』、『貨真價實的』專輯**」（引 Nobody's Land 的專訪）。",
+      "src": "https://en.wikipedia.org/wiki/Paul_Roland"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Burnt Orchids",
+    "manifest": "onboarding-manifest-c80-20260910.json",
+    "desc": "在這張碟上唱和聲的人，自己的唱片就掛在隔壁編號。〈The Puppet Master〉的和聲掛 Robyn Hitchcock，而同一家 Aftermath Records 的 AFT 1 就是他的《Black Snake Diamond Röle》。1985 年的 SCOOP 2，八軌，〈Funhouse〉一首另加大提琴、中提琴與小提琴三位客席。同年 9 月 28 日《Music Week》的唱片評論說它是一張「討喜的、早期 Pink Floyd 式的作品集」。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1563059-Paul-Roland-Burnt-Orchids",
+     "https://musicbrainz.org/release-group/fb43bc0b-f565-4a95-b12a-900bb0b32595",
+     "https://www.discogs.com/label/31213-Aftermath-Records",
+     "https://en.wikipedia.org/wiki/Paul_Roland",
+     "https://www.discogs.com/master/53079-Paul-Roland-Burnt-Orchids"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paul weller",
+  "name": "Paul Weller",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1993,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Wild Wood",
+    "year": 1993,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "pekinška patka",
+  "name": "Pekinška Patka",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Plitka poezija",
+    "year": 1980,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c54-a",
+    "album": "Plitka poezija",
+    "facts": [
+     {
+      "f": "1980 年 2 至 3 月在諾維薩德的 Meta 錄音室錄製（錄音室主人是作曲家與多樂器演奏者 Boris Kovač），同年由 Jugoton 發行，目錄號 LSY 61526。",
+      "src": "https://en.wikipedia.org/wiki/Plitka_poezija"
+     },
+     {
+      "f": "唱片 1980 年 3 月底就完成了，但因為 Josip Broz Tito 的病重與過世，發行一路延到那年夏天。",
+      "src": "https://en.wikipedia.org/wiki/Plitka_poezija"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Plitka poezija",
+    "manifest": "onboarding-manifest-c54-20260903.json",
+    "desc": "唱片三月就做好了，Tito 病重又過世，它一直等到那年夏天才上架。錄音是 1980 年 2 至 3 月在諾維薩德完成的，同年由 Jugoton 發行。製作人 Slobodan Konjović 是電台 DJ，接手前完全沒有唱片製作經驗，混音也是他在自己的公寓做的。十六首曲擠進三十二分鐘，多數不到兩分鐘，吉他只有一層，錄音刻意保留業餘感。〈Bolje da nosim kratku kosu〉成了電台熱門曲，後來常被稱作南斯拉夫龐克族的隊歌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Plitka_poezija",
+     "https://musicbrainz.org/release-group/6ff344a9-f862-342d-8956-6815541d4f6f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pērkons",
+  "name": "Pērkons",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dziesmu izlase #1 (1981-1982)",
+    "year": 1981,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c123-b",
+    "album": "Septiņarpus dziesmas ar Eduarda Veidenbauma vārdiem",
+    "facts": [
+     {
+      "f": "那唯一一筆 release 的實情：**label-info 整欄為空**（沒有廠牌、沒有目錄號、沒有條碼）、media 的 format 欄寫的是 **CD**、8 軌，**八軌沒有任何一軌登錄長度**。逐軌：1〈Tumsa un migla〉、2〈Viss ir joks〉、3〈Pēc Goda, pēc Varas〉、4〈Reiz zaļoja jaunība〉、5〈Viens otru par〉、6〈Vēders dievs visaugstākais〉、7〈Vēl desmit, divdesmit gadu〉、8〈Kad niknas vētras...〉。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=e273e54d-5f10-46f7-9ad7-66eb638c2237&fmt=json&inc=media+labels+recordings&limit=100"
+     },
+     {
+      "f": "藝人目錄分頁全列 **13 個 release-group**。**本張 1987 是整份目錄裡年份最早的一筆**（另有一個未填年份、primary-type 標 Other 的《Veidenbauma cikls》）；其後依序是 1988《Koncerts》、1990《Ballīte / A Hoedown》，1994 年起才出現《Ei, jūs tur!》與《Dziesmu izlase》系列等六筆 Compilation。**1970–1991 窗口內這個掛名只有三筆。**",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=7ca8e322-7902-46ce-af39-8c9b168907b9&fmt=json&limit=100&offset=0"
+     },
+     {
+      "f": "串流店面第三種查法：以掛名兩種寫法（帶變音與不帶）在 lv／lt／ee／ru 四個店面查藝人目錄，**回得出的 Perkons 條目共 6 張**——《Balle!》(2020)、《Dziesmu Izlase, Vol.1 (1981-1982)》(1994)、《Ei, jūs tur!》(2021)、《Labu Vakar - Klusā Daba Ar Perspektīvu》(1996)、《Latviskā Virtuve - Ballīte》(1990)，以及與男聲合唱團合掛的《Kulakovs. Veidenbaums. Mīlestībā viļņo krūts》(2024)——**本張 1987 年這一張不在其中**。",
+      "src": "https://itunes.apple.com/lookup?id=277367005&country=lv&entity=album&limit=200"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c123-b",
+    "album": "Dziesmu izlase #1 (1981-1982)",
+    "facts": [
+     {
+      "f": "release-group cbad796b 的欄位：title「Dziesmu izlase #1 (1981-1982)」、artist-credit「Pērkons」、**first-release-date 1994**、primary-type Album、**secondary-types [Compilation]**。**轄下只有 1 筆 release**：2b7456ff，1994 年 LV、Official、廠牌 **Mikrofona ieraksti、catno MRCD 006**、media **CD 20 軌**。副標題括號裡的 1981-1982 是錄音年，與 release 的 1994 是兩個不同的年份。",
+      "src": "https://musicbrainz.org/ws/2/release-group/cbad796b-fa51-3f77-8a68-a02deafee173?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "藝人實體 7ca8e322：name「Pērkons」、Group、country LV、**life-span 1981 起、1992 止**、別名欄唯一一筆是「Grupa Jura Kulakova vadībā」。成員關係 10 筆，**Ieva Akuratere、Raimonds Bartaševičs、Juris Kulakovs、Juris Sējāns、Leons Sējāns 五位標為 1981 至 1992 全程在團**——本輯副標所寫的 1981-1982，正是這五筆關係起算的頭兩年。",
+      "src": "https://musicbrainz.org/ws/2/artist/7ca8e322-7902-46ce-af39-8c9b168907b9?fmt=json&inc=artist-rels+aliases+url-rels"
+     },
+     {
+      "f": "藝人目錄分頁全列 **13 個 release-group**，其中 **Compilation 有六筆**：本輯《Dziesmu izlase #1 (1981-1982)》(1994)、《Zibens Pa Dibenu》(1994)、《Dziesmu izlase #2 (1985-1987)》(1996)、《Latviskā Virtuve - Ballīte》(2003)、《Dziesmu izlase #3 (1990-1991)》(2003-08-14)、《7-os no rīta》(2018)。**同一個系列切成三集，各自對應一段年份區間，本輯是最早的那一段。** 這個掛名在 1970–1991 窗口內只有 1987《Septiņarpus dziesmas ar Eduarda Veidenbauma vārdiem》、1988《Koncerts》、1990《Ballīte / A Hoedown》三筆。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=7ca8e322-7902-46ce-af39-8c9b168907b9&fmt=json&limit=100&offset=0"
+     },
+     {
+      "f": "串流店面第三種查法（直查 collectionId）：**930979653 在 lv 店面回得出完整曲目**，條目寫「Perkons —《Dziesmu Izlase, Vol.1 (1981-1982)》、1994-01-01、20 軌、℗ 1994 Microphone Records」。逐軌覆核 **二十軌名稱與順序完全相同、長度分秒不差**（僅第 13 軌的刪節號寫成五個點）。**盤名格式不同（Vol.1 對 #1）、掛名去了變音（Perkons），但內容是同一張。**",
+      "src": "https://itunes.apple.com/lookup?id=930979653&country=lv&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dziesmu izlase #1 (1981-1982)",
+    "manifest": "onboarding-manifest-c123-20260910.json",
+    "desc": "二十軌裡最長的一首與樂團同名，排在正中間的第十二軌。〈Pērkons〉5:51 就是那一軌，全張只有兩首超過五分鐘；最短的第十六軌〈Iedzer, brāli!〉2:22 後面還緊接著另一首勸酒歌。出版年是 1994，廠牌 Mikrofona ieraksti、編號 MRCD 006、CD 二十軌，副標括號裡的 1981-1982 只是盤名標的年份區間。同系列三集各對應一段區間，這一集是最早的那一段。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/cbad796b-fa51-3f77-8a68-a02deafee173?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=cbad796b-fa51-3f77-8a68-a02deafee173&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/artist/7ca8e322-7902-46ce-af39-8c9b168907b9?fmt=json&inc=artist-rels+aliases+url-rels",
+     "https://musicbrainz.org/ws/2/release-group?artist=7ca8e322-7902-46ce-af39-8c9b168907b9&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=930979653&country=lv&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/cbad796b-fa51-3f77-8a68-a02deafee173",
+     "https://music.apple.com/lv/album/930979653"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "peter frampton",
+  "name": "Peter Frampton",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1976,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Frampton Comes Alive!",
+    "year": 1976,
+    "genres": [
+     "rock",
+     "blues"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Frampton Comes Alive!",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "英國吉他手 Peter Frampton 前四張錄音室作品銷量平平，1976 年這套雙碟現場輯卻登上 Billboard 200 冠軍、非連續蟬聯十週，成為當年全美最暢銷專輯，美國銷量逾八百萬張。〈Show Me the Way〉與〈Do You Feel Like We Do〉以 talk box 吉他為招牌聲響，兩曲都進了美國前十五。2020 年入選 Grammy Hall of Fame。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Frampton_Comes_Alive!",
+     "https://musicbrainz.org/release-group/cbf9819e-4a0b-35f1-9b1c-ab34764cf10c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "petrus castrus",
+  "name": "Petrus Castrus",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "rock",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Mestre",
+    "year": 1973,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c125-b",
+    "album": "Mestre",
+    "facts": [
+     {
+      "f": "廠牌實體 3165a11e「Guilda da Música」：country PT、area Portugal、**type 欄空、life-span 起訖皆空但 ended 標 true、disambiguation 空**——**除了名字、國別與「已結束」之外查不到任何欄位**。2007 年的復刻廠牌 CNM（8377460a）欄位反而完整：country PT、type Imprint、**begin 1993**、**disambiguation「Companhia Nacional de Música」**。",
+      "src": "https://musicbrainz.org/ws/2/label/3165a11e-a404-428f-bcd0-ece0cf6ab6d5?fmt=json"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Mestre",
+    "manifest": "onboarding-manifest-c125-20260910.json",
+    "desc": "十一軌從 5:47 的開場排到 47 秒的收尾，落差超過七倍。開場與盤名同字的〈Mestre〉5:47，末軌〈Só Mais Nada〉只有 47 秒，是十一軌裡唯一不到一分鐘的；第九軌〈Tiahuanaco〉5:58 才是全張最長，十一軌合計 37 分 1 秒。1973 年 12 月 15 日由 Guilda da Música 以 DP 025 發行，2007 年 CNM 那一版是兩片、29 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/3a46834c-18d8-4fb4-92c5-84753e062ac8?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=3a46834c-18d8-4fb4-92c5-84753e062ac8&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/label/3165a11e-a404-428f-bcd0-ece0cf6ab6d5?fmt=json",
+     "https://musicbrainz.org/ws/2/artist/87c32fc8-7325-4446-b447-dca9b19b9708?fmt=json&inc=artist-rels+aliases",
+     "https://itunes.apple.com/lookup?id=1775515512&country=pt&entity=song&limit=250",
+     "https://musicbrainz.org/release-group/3a46834c-18d8-4fb4-92c5-84753e062ac8"
+    ]
+   }
+  ]
+ }
+]

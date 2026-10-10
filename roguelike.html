@@ -707,7 +707,7 @@
 </script>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=40"></script>
+<script src="dip-player.js?v=44"></script>
 <script src="dip-character.js?v=2"></script>
 <script>
 'use strict';
@@ -1783,7 +1783,7 @@ function syncRogueMusic(){
   const mini=document.getElementById('rogueMiniPlayer');
   if(mini){ mini.classList.toggle('muted',!live); mini.classList.toggle('playing',live&&roguePlayerState.status==='playing'); mini.classList.toggle('loading',live&&roguePlayerState.status==='loading'); mini.setAttribute('aria-pressed',String(live)); mini.setAttribute('aria-label',live?'關閉試煉音樂':'開啟試煉音樂'); }
   const apple=document.querySelector('.drawmask .streaming-btn[data-platform="apple"]');
-  if(apple&&roguePlayerState.storeUrl) apple.href=roguePlayerState.storeUrl;
+  if(apple&&roguePlayerState.storeUrl){ apple.href=roguePlayerState.storeUrl; apple.target='_blank'; apple.rel='noopener'; apple.removeAttribute('disabled'); }
 }
 function setRogueMusic(enabled){
   // 關閉時 DipPlayer 會徹底釋放音訊，店主回 Spotify 按播放後不會又被這頁搶走。
@@ -3739,12 +3739,12 @@ function boardCardHTML(card, attr){
   const ring=card.ace?` ace-border ace-${card.ace}`:(' '+rarityCls(card));
   return `<div class="pcard${ring.trim()?ring:''}">${cover}${aceTag}${attrTag}</div>`;
 }
-// ----- 與首頁抽專輯卡相同的四平台連結；Bandcamp 查到正式專輯頁才啟用 -----
+// ----- 與首頁抽專輯卡相同的四平台連結；Apple／Spotify／Bandcamp 查到專輯直連才啟用（2026-10-09） -----
 function streamingBtnsHtml(c){
   const q=encodeURIComponent(`${c.artist||''} ${c.album||''}`.trim());
   return `<div class="streaming-btns">
-    <a class="streaming-btn" href="https://music.apple.com/tw/search?term=${q}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>
-    <a class="streaming-btn" href="https://open.spotify.com/search/${q}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>
+    <a class="streaming-btn" data-apple-strict data-apple-fallback="https://music.apple.com/tw/search?term=${q}" disabled data-apple-artist="${String(c.artist||'').replace(/[&<>"']/g,ch=>`&#${ch.charCodeAt(0)};`)}" data-apple-album="${String(c.album||'').replace(/[&<>"']/g,ch=>`&#${ch.charCodeAt(0)};`)}" target="_blank" rel="noopener" data-platform="apple">Apple Music</a>
+    <a class="streaming-btn" data-platform="spotify" disabled>Spotify</a>
     <a class="streaming-btn" href="https://music.youtube.com/search?q=${q}" target="_blank" rel="noopener" data-platform="yt">YT Music</a>
     <a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>
   </div><div class="stream-attribution">Preview provided courtesy of iTunes</div>`;
@@ -3756,11 +3756,13 @@ async function hydrateStreamingLinks(container, card){
     fetch(DYN_WORKER+'/spotify-search?'+query).then(r=>r.ok?r.json():{}),
     fetch(DYN_WORKER+'/bandcamp-search?'+query).then(r=>r.ok?r.json():{})
   ]);
-  const spotifyUrl=spotify.status==='fulfilled'&&spotify.value?.spotifyUrl;
+  let spotifyUrl=spotify.status==='fulfilled'&&spotify.value?.spotifyUrl;
+  // /spotify-search 的快取若是 CAA 封面就沒有 spotifyUrl，再問 /spotify-album-link（查不到才灰）
+  if(!spotifyUrl) spotifyUrl=(await fetch(DYN_WORKER+'/spotify-album-link?'+query).then(r=>r.ok?r.json():{}).catch(()=>({}))).url;
   const bandcampUrl=bandcamp.status==='fulfilled'&&bandcamp.value?.bandcampUrl;
   const spotifyBtn=container.querySelector('[data-platform="spotify"]');
   const bandcampBtn=container.querySelector('[data-platform="bandcamp"]');
-  if(spotifyBtn&&spotifyUrl) spotifyBtn.href=spotifyUrl;
+  if(spotifyBtn&&spotifyUrl){spotifyBtn.href=spotifyUrl;spotifyBtn.target='_blank';spotifyBtn.rel='noopener';spotifyBtn.removeAttribute('disabled');}
   if(bandcampBtn&&bandcampUrl){bandcampBtn.href=bandcampUrl;bandcampBtn.target='_blank';bandcampBtn.rel='noopener';bandcampBtn.removeAttribute('disabled');}
 }
 
