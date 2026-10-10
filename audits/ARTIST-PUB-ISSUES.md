@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 821 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 839 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -821,6 +821,24 @@
 | ar-d-057 | 鈴木実貴子ズ | いばら | 本張是主流出道之後的第一張全長，編號 CRCP-20619 | Billboard JAPAN 商品頁與 PIA（2026 年）報導都標《いばら》為「メジャー2ndアルバム」，PIA 並稱《あばら》為「メジャー1stアルバム」（2025 年發行）。應改成『主流第二張全長專輯』。 | https://www.billboard-japan.com/d_news/detail/157400/2 |
 | ar-d-057 | 隨性樂團 | 良禽 | 2012 年在貢寮拿下海洋獨立音樂大賞，隔年再拿評審團大獎 | 事實庫所引用的 unbiggie 頁面只寫 2012 年貢寮國際海洋音樂祭的最高榮譽『海洋音樂大賞』，沒有 2013 年評審團大獎；本層另外四次搜尋與 TVBS 報導也未能證實 2013 年的評審團大獎，且獎項正式名稱疑為『海洋大賞』而非『海洋獨立音樂大賞』。請店主核對海祭官方歷屆名單後決定是否改簡介。 | https://unbiggie.com/people/artist/2023/06/19/random/ |
 | ar-d-057 | A.L. Lloyd | Leviathan! | 並經由著作與錄音催生了 industrial folk 這一支 | 英文維基原句是 helped establish（協助確立）industrial folk 這個民謠分支，『催生』語氣較強；建議改成『協助確立』。 | https://en.wikipedia.org/wiki/A._L._Lloyd |
+| ar-d-057 | Adrian Crowley | Season of the Sparks | 2009 年 5 月由 Tin Angel 發行 | 英文維基專輯條與藝人條都寫 2009 年 4 月 24 日（Tin Angel）；nialler9 的 5 月 22 日是先行單曲的日期；Other Voices 又寫 11 月 9 日全球發行。月份來源互相打架，建議店主查廠牌目錄後再決定是否保留「5 月」。 | https://en.wikipedia.org/wiki/Season_of_the_Sparks |
+| ar-d-057 | Alan Lomax | Prison Songs, Volume 1: Murderous Home | 是理解藍調成形前夕的一手材料 | 這批錄音錄於 1947 至 1948 年，藍調早在 1900 至 1920 年代就已成形；ACE 官方頁形容內容是伐木與夯土工作歌、田野呼喊與少量藍調。「藍調成形前夕」年代對不上，建議改成「藍調源流的一手材料」或「勞動歌與田野呼喊的一手材料」。 | https://www.culturalequity.org/rounder-records/prison |
+| ar-d-057 | Albert Hash & The Whitetop Mountain Band | Albert Hash & The Whitetop Mountain Band | 十歲那年他自己動手做了第一把提琴。那是大蕭條最深的時候。 | Hash 1917 年 6 月生，十歲約在 1927 年，早於 1929 年的股災與大蕭條（谷底約 1932–33）。「十歲做第一把提琴」有維基與 Blue Ridge Heritage 兩源，但「大蕭條最深」與年齡對不上，建議刪掉這半句。 | https://en.wikipedia.org/wiki/Albert_Hash |
+| ar-d-057 | Altan | Island Angel | Altan 由 … Mairéad Ní Mhaonaigh 與丈夫 Frankie Kennedy 於 1987 年組成 | 成軍年各來源不一：altan.ie 記 1985 年 6 月 1 日首場音樂會，維基與 encyclopedia.com 以 1987 年專輯《Altan》為起點；建議改寫成「1987 年發行首張樂團專輯」或不寫成軍年。 | https://altan.ie/about/ |
+| ar-d-057 | Andy Irvine & Paul Brady | Andy Irvine / Paul Brady | 1976 年秋在 Rockfield Studios 錄音 … 年底由 Mulligan 發行 | Irvine 官網寫 1976 年 8 月錄音、1977 年 1 月發行；維基專輯條目則寫秋季錄音、1976 年 12 月發行。來源不一，建議把「年底發行」「秋季錄音」改成不點月份，或標註 1976 至 1977 年之交。 | https://www.andyirvine.com/bio.html |
+| ar-d-057 | Anton Karas | The Third Man | 導演在維也納的一間酒館聽見 Anton Karas 靠小費彈齊特琴，當場決定要這個音樂 | 初遇場景有三種說法：維基（引 Karas 1985 年訃聞）為 Grinzing 的 Heuriger；The Quietus 稱酒館說是迷思，實為劇組歡迎會上受邀演奏；「當場決定」兩者都沒有。建議改成中性寫法（Reed 1948 年在維也納籌拍時找上他）或刪去「當場決定」。 | https://thequietus.com/culture/film/the-third-man-anton-karas/ |
+| ar-d-057 | Asin | Asin | 第四軌〈Masdan Mo Ang Kapaligiran〉同年另以 7 吋單曲問世 | ourbrew 寫該曲是 1977 年的單曲（B 面〈Sayang Ka〉），早於 1978 年的專輯；seansmusichunt 則說單曲與專輯同在 1978 年。來源不一，建議把「同年」改成不點年份，或寫成「先於專輯以單曲發行」。 | https://www.ourbrew.ph/pendongs-redemption-songs/ |
+| ar-d-057 | Asin | Asin | 錄音時是三人編制 | ourbrew 稱 Aban 是創團四人之一，只是唱片公司以三人宣傳；維基則稱他 1983 年才加入。成員編制各來源不一，建議寫「以三人團名義發行」。 | https://www.ourbrew.ph/pendongs-redemption-songs/ |
+| ar-d-058 | Aster Aweke | Aster | 1981 年移居華盛頓特區 | 維基與 afromix 都寫 1981 年先到加州舊金山灣區，約兩年內才搬到華盛頓特區；簡介略過灣區一站，建議改為『1981 年赴美，兩年內落腳華盛頓特區』。 | https://www.afromix.org/html/musique/artistes/aster-aweke/bio.en.html |
+| ar-d-058 | Aziza Brahim | Abbar el Hamada | 父親留在阿尤恩並在她出生後過世 | 維基只寫『後來過世』，Afropop 寫父親在她出生前於衝突中過世，來源互相矛盾；建議改成『父親留在阿尤恩，兩人從未見過面』，不寫過世時點。 | https://afropop.org/articles/aziza-brahim-the-voice-of-western-sahara |
+| ar-d-058 | Banda do Casaco | Dos benefícios dum vendido no reino dos bonifácios | 樂團的成立年就是這張碟的發行年，兩個欄位都記 1974 | 來源不一致：RTP《Gramofone》與 RTP 訃聞寫 1973 成軍；英文與葡萄牙文維基、RTP《Gramofone》寫首張 1975；Retropolitano 寫 1973。『成立年等於發行年』這個敘述（出自 MusicBrainz 登錄）撐不住，建議刪掉或改成只說『1974 年 Philips 以 6330 013 發行』並確認 Discogs 原盤年份。 | https://www.rtp.pt/rtpmemoria/gramofone/banda-do-casaco-por-joao-carlos-callixto_34 |
+| ar-d-058 | Belchior | Alucinação | 銷量逾五十萬張 | 查不到來源：葡萄牙文維基只寫首月賣出三萬張；『逾五十萬』無法證實，建議刪除或改成有出處的版本。 | https://pt.wikipedia.org/wiki/Belchior |
+| ar-d-058 | Belchior | Alucinação | 長篇敘事歌詞當年被評論拿來與 Bob Dylan 對照；底盤在藍調、country 與 baião 之間 | 葡萄牙文維基未提 Dylan；風格列為 MPB、搖滾、藍調、folk rock、baião、鄉村。Dylan 對照這句沒找到來源，建議確認出處。 | https://pt.wikipedia.org/wiki/Belchior |
+| ar-d-058 | Bellowhead | Hedonism | 銷出約六萬張，被稱為史上最暢銷的獨立廠民謠專輯 | 只見英文維基《Hedonism》條目單源，且其註腳指向 BBC 對《Broadside》的樂評，並不支撐這句；找不到獨立銷量來源，建議刪掉或改成較保守的說法。 | https://en.wikipedia.org/wiki/Hedonism_(album) |
+| ar-d-058 | Bob Frank | Bob Frank | Jim Dickinson 說他是從沒有人聽過的最偉大詞曲作者 | 官方網站引 Dickinson 的原話為「The best songwriter you never heard」（最好），維基與事實庫轉述為「greatest」（最偉大）；措詞不一致，建議簡介改為較中性的「最好」或具名查原出處。 | https://bobfranksongs.com/news/ |
+| ar-d-058 | Brigada Víctor Jara | Eito fora | 1977 年那一筆發行的國別欄與廠牌欄都是空的，也沒有再版 | World Music Central 的唱片列表把《Eito Fora》1977 年版列為 Mundo Novo 廠牌，並另列一筆 1983 年（同廠牌）；RTP 也把首張稱為《Eito Fora – Cantares Regionais》(1977)。廠牌欄至少有第三方資料可填，「沒有再版」也有 1983 年一筆記錄可疑。 | https://worldmusiccentral.org/artist-profiles-brigada-victor-jara/ |
+| ar-d-058 | Brooks & Dunn | Brand New Man | 截至 2024 年累計獲 RIAA 認證 7 倍白金 | 維基 Brooks & Dunn 條目、Country Universe 與鄉村名人堂官網都只到 6 倍白金或逾 600 萬張；7 倍僅見於專輯自己的維基條目，建議查 RIAA 資料庫後再決定是否保留。 | https://en.wikipedia.org/wiki/Brooks_%26_Dunn |
+| ar-d-058 | Brooks & Dunn | Brand New Man | 1990 年，Arista 高層 Tim DuBois 認為兩人聲線互補，主動撮合簽下 | 維基首段與 American Songwriter 都寫 1988 年組成，名人堂官網寫 1990 年初午餐介紹；年份各說各話，建議簡介只寫「Tim DuBois 撮合」不寫年份，或改成名人堂版本。 | https://www.countrymusichalloffame.org/artist/brooks-dunn |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
