@@ -44,15 +44,41 @@
    c-46 那次「查不到跨來源證據，把 40 張 classic=5 全作普卡」極可能就是這個預設造成的，
    不是模型能力問題。Custom 白名單至少要含：
 
+   設定位置：claude.ai/code 訊息框上方那一列的雲朵圖示（顯示環境名稱）→ **Cloud** → 滑到環境上按右邊的齒輪
+   → **Network access** 選 **Custom** → 在 **Allowed domains** 一行貼一個網域（`*.` 開頭代表所有子網域）
+   → 勾 **Also include default list of common package managers**（不勾的話 npm 等預設網域會被擋）→ **Save changes**。
+   改完大約一分鐘內對進行中的工作階段也生效。
+
    ```
-   musicbrainz.org, coverartarchive.org, *.wikipedia.org, wikidata.org,
-   last.fm, www.last.fm, discogs.com, api.discogs.com,
-   allmusic.com, rollingstone.com, billboard.com, loc.gov,
-   itunes.apple.com, *.mzstatic.com, archive.org, *.archive.org,
-   firestore.googleapis.com, api.cloudflare.com, dip-vinyl-worker.kubinice06.workers.dev
+   musicbrainz.org
+   coverartarchive.org
+   wikipedia.org
+   *.wikipedia.org
+   wikidata.org
+   *.wikidata.org
+   last.fm
+   *.last.fm
+   discogs.com
+   *.discogs.com
+   allmusic.com
+   *.allmusic.com
+   rollingstone.com
+   *.rollingstone.com
+   billboard.com
+   *.billboard.com
+   loc.gov
+   *.loc.gov
+   itunes.apple.com
+   *.mzstatic.com
+   *.itunes.apple.com
+   archive.org
+   *.archive.org
+   firestore.googleapis.com
+   api.cloudflare.com
+   dip-vinyl-worker.kubinice06.workers.dev
    ```
 
-   後三個是寫 `card_catalog`、寫 KV、跑 gate 要用的；沒放行就只能做到 prepare gate。
+   最後三個是寫 `card_catalog`、寫 KV、跑 gate 要用的；沒放行就只能做到 prepare gate。
    設好之後**開工第一件事是實測**：叫代理抓一個 MB release-group 與一個維基頁面，
    確認真的通得到再派工。不通就退回「查不到標 pending-local」規則。
 

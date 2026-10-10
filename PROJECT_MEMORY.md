@@ -14,6 +14,8 @@
     （其中一項是「已經即時生效的寫入」——Firestore 與 KV 不經 PR，改到已上線的卡一寫就上線）。
   - 新增硬規則：寫入只由主線做（子代理不碰）；上架順序照 §8 不得顛倒。
   - 白名單補上 `itunes.apple.com`、`archive.org`、`firestore.googleapis.com`、`api.cloudflare.com`、worker 網域。
+  - 同日補正：白名單清單改成 Allowed domains 欄位吃的格式（一行一個網域，原本誤寫成逗號分隔），並寫上設定步驟
+    （雲朵圖示 → Cloud → 齒輪 → Network access 選 Custom → 勾「Also include default list…」）。步驟對照官方文件 code.claude.com/docs/en/cloud-environments。
   - 沒有開放的：`album_overrides`／`settings` 等管理員集合（Firestore 規則是 `isAdmin()`）、Worker 部署。
 - **`CLAUDE.md`**：「工作流程」分出本機（直推 main）與雲端（分支＋PR）；「裁定權下放」底下那條雲端禁區改成新邊界。
 - **讓雲端真的跑得動的兩支腳本**：`scripts/kv-from-manifest.mjs`（從 worker repo 的 `from_onboarding_manifest.mjs` 複製——雲端只 clone 這個 repo；
