@@ -768,3 +768,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：The Caravans 是芝加哥福音女聲團（卡池歸 rock 屬分類誤差）；The Astronauts 是 Welwyn Garden City 的團（維基預抓 Lem 小說作廢）；The Bachs 是芝加哥北岸私壓團（維基預抓瑞士地名作廢）；The Charlatans 是英國團（非舊金山同名團）；The Heartbreakers 是 Johnny Thunders 的團。
 - 卡池年份存疑：The Head and the Heart 卡池 2009（實為 2010 自發、2011 Sub Pop 重發）；The Appleseed Cast《Mare Vitalis》2000／1999。
 - 待本機（上線簡介）：The Caravans「1947 年由 Robert Anderson 起家」各源不一；The Cambodian Space Project「香港 Metal Postcard 發行」無據；The Diagram Brothers「姓 Diagram 的不是一家人」兩源不一；The Electric Prunes 團員自寫歌曲數（一首／兩首）；The Astronauts 客席薩克斯風手 Lol Coxhill／Nik Turner。
+
+## ar-d-050（2026-10-10）
+
+- 39 位上架（34 full、5 thin：The Icemen、The Land of Nod、The Mommyheads、The Pooh Sticks、The Raconteurs），1 位不寫：The Living Daylights（聲音只剩 MusicBrainz 的曲風標籤加一首長混音的發行資訊）。
+- 審稿修 8 處：最高級刪改——The Human Instinct 刪 AudioCulture「在英國最成功的紐西蘭團體」（媒體名＋最高級）、The Lumineers 刪「2010 年代最受歡迎之一」（在世者只留 Billboard 200 第 2 名）、The Mamas & The Papas 刪「那個年代最好的人聲團體之一」、The Mission「最電影化、最浮誇也最浪漫」改平述、The Moody Blues 刪「最早成功的概念專輯之一」、The Nice「最早之一」改「早期」、The Plastic People of the Universe「最具代表性」改「代表」；英文標題譯中文——The Mission「Britain's stupidest band!」。
+- 保留：The Moody Blues、The Lovin' Spoonful、The Mamas & The Papas 的搖滾名人堂評語；The Knack〈My Sharona〉冠軍六週、The Postal Service 白金（在世者唯一一處）；the pillows 2025 年解散（兩源）；The Plastic People 被捕審判促成七七憲章（音樂史核心，不寫獄中細節）。
+- 身分：The Names 是比利時團；The Outsiders 是荷蘭團；The Paragons 是牙買加團（dub 起源軼事只在 notes，正文未寫）；The Lines 非 Wolverhampton 同名團；The Living Daylights 維基預抓為 007 電影作廢。
+- 待本機（上線簡介）：The Icemen 存在期與「落在最後兩年」（2008 年重組至 2013）；The Jon Spencer Blues Explosion「Village Voice 與 NME 年度第 16 名」與 Pitchfork 500 未驗；The Paragons「意外催生了 dub」宜加「相傳」，且簡介用半形標點、中英數字未空格；The Plastic Cloud 的 Bill Bessey 職稱（錄音師／製作人）。
