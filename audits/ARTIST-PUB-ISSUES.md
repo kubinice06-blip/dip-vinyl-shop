@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 782 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 784 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -782,6 +782,8 @@
 | ar-d-049 | The Electric Prunes | The Electric Prunes | 團內寫手 James Lowe 與 Mark Tulin 只分到〈Luvin'〉一首。 | 英文維基〈The Electric Prunes〉專輯段落寫團員自己寫的只有〈Train For Tomorrow〉與〈Luvin'〉兩首，與簡介的「一首」不一致；請對專輯版權欄核實後再決定是否改成「兩首」。 | https://en.wikipedia.org/wiki/The_Electric_Prunes |
 | ar-d-050 | The Icemen | Rest in Peace E.P. | 這個掛名名下就只有這一筆碟，而實體記著的存在期橫跨 1982 到 1992 年，它落在最後那兩年。 | 『存在期 1982 至 1992』只出自 MusicBrainz（last.fm 同）；維基記樂團 1992 年前後與主唱 DeMola 分手後，2008 年重新出動並在 Reaper Records 發行 7 吋，infobox 活躍期為 1982 至 2013。『最後兩年』的說法站不住，建議改寫成『名下唯一一張正式發行，1991 年由 Blackout! 出版』。 | https://en.wikipedia.org/wiki/The_Icemen |
 | ar-d-050 | The Plastic Cloud | The Plastic Cloud | 錄音師 Bill Bessey 在原始封套上沒有印出來 | canadiancds.com 寫 Jack Boswell 與 Bill Bessey 是這張唱片的製作人（produced），上線簡介稱 Bessey 為『錄音師』；職稱是否為 engineer 本層無法證實，建議主線在本機核對 Discogs 的 credits 後決定是否改『製作人』 | https://canadiancds.com/plastic-cloud-bio/ |
+| ar-d-052 | Titus Groan | Titus Groan | 1970 年底他出了一場嚴重意外，雙腿與骨盆骨折，樂團就此解散 | 此說只見 Discogs 單源；Spaceritual 記 1971 年 1 月樂團仍有 BBC Radio 1 播出、1971 年才失去動力，Record Collector 也寫 1971 年解散，與『1970 年底解散』衝突；『意外導致解散』也沒有第二個來源。建議改成不寫解散年份與原因，或標明單源。 | https://www.spaceritual.net/alexgitlin/npp/titus.htm |
+| ar-d-052 | Tom Jones | Along Came Jones | 1965 年 3 月 11 日，這首歌登上英國單曲榜冠軍 | uDiscover Music 寫 1965 年 3 月 13 日登上英國冠軍，維基只有年份；各榜單週期不同，確切日期未能在官方榜單網站核對。建議改成『1965 年 3 月』避開日期。 | https://udiscovermusic.com/stories/tom-jones-first-no-1 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

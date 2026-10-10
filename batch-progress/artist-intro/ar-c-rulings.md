@@ -776,3 +776,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：The Moody Blues、The Lovin' Spoonful、The Mamas & The Papas 的搖滾名人堂評語；The Knack〈My Sharona〉冠軍六週、The Postal Service 白金（在世者唯一一處）；the pillows 2025 年解散（兩源）；The Plastic People 被捕審判促成七七憲章（音樂史核心，不寫獄中細節）。
 - 身分：The Names 是比利時團；The Outsiders 是荷蘭團；The Paragons 是牙買加團（dub 起源軼事只在 notes，正文未寫）；The Lines 非 Wolverhampton 同名團；The Living Daylights 維基預抓為 007 電影作廢。
 - 待本機（上線簡介）：The Icemen 存在期與「落在最後兩年」（2008 年重組至 2013）；The Jon Spencer Blues Explosion「Village Voice 與 NME 年度第 16 名」與 Pitchfork 500 未驗；The Paragons「意外催生了 dub」宜加「相傳」，且簡介用半形標點、中英數字未空格；The Plastic Cloud 的 Bill Bessey 職稱（錄音師／製作人）。
+
+## ar-d-051（2026-10-10）
+
+- 39 位上架（32 full、7 thin：The Raymond Brake、The Running Man、The Secret Stars、The Sensational Guitars of Dan & Dale、The Willard、The Wombats、The Work），1 位不寫：The Yips（身分與聲音都湊不到可用的兩源事實）。
+- 審稿修 11 處：最高級刪改——The Rising Storm 刪「最稀有之一」、The Three O'Clock 刪「頂尖」、The Triffids 刪「最受喜愛之一」、The Used 刪「2000 年代 emo 圈的王者」（單源稱號）、The Yardbirds「搖滾史上最知名的吉他手」改「名吉他手」；字數——The Selecter 271 壓回 244、The Shaggs 276 壓回 250（皆非雙卡）；新近事實——The Turtles 刪 Volman 2025 年辭世（不需要、未見兩源）；The Teardrop Explodes 的 Mojo 獎句縮短（獎項方具名一次）。
+- 保留：The Yardbirds 搖滾名人堂評語（官方一處），Dave Marsh 說法匿名為「有樂評形容」；The Ventures 搖滾名人堂與「啟發了一千個樂團的樂團」外號；Them〈Gloria〉葛萊美名人堂與 Steve Van Zandt 說法（具名樂手）；The Undertones 與 The Wolfgang Press 的 John Peel 說法（電台 DJ，比照前例）；The Walker Brothers 只寫 Bowie 等人受 Scott 啟發。
+- 卡池年份：Them 正文不寫年份（來源不一）。
