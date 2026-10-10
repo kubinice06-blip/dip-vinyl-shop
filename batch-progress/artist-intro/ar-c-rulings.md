@@ -848,3 +848,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Alan Lomax 的 Brian Eno 說法與國家藝術勳章（已故）；Arizona Dranes 的 Thomas A. Dorsey 說法；Anaïs Mitchell《Hadestown》東尼獎一處；Alim Qasimov 的 IMC-UNESCO 音樂獎一處；黃耀明只寫音樂；頭脳警察寫「首張與第二張相繼被擋」不展開政治。
 - 身分：頂樓的馬戲團是中國上海的樂團（名冊原寫台灣，錯）；隨性樂團是台語搖滾（名冊原寫雷鬼，錯）；迷幻幼稚園是台北哥德搖滾團；Asin 的維基預抓是印度女演員，已作廢；Aguaviva 的維基預抓是西班牙城鎮，已作廢；Anno Luz 是巴西二人組。
 - 待本機（上線簡介）：趙一豪《把我自己掏出來》1989 年底發行、1990 年遭查扣；隨性樂團「2013 年評審團大獎」查無；鈴木実貴子ズ《いばら》是主流第二張（簡介寫第一張）；A.L. Lloyd「催生 industrial folk」宜改「協助確立」；Adrian Crowley《Season of the Sparks》發行月份；Alan Lomax《Prison Songs》「藍調成形前夕」不當；Albert Hash「十歲做提琴時是大蕭條」年代不合；Al Stewart《Melody Maker》年度民謠專輯單源；Fargana 兩度總統獎單源；Altan「1987 年組成」說法不一；Andy Irvine & Paul Brady 錄音與發行時間；Anton Karas「酒館聽見當場決定」屬傳說；Asin 單曲年份與創團成員。
+
+## ar-d-058（2026-10-10）
+
+- 39 位上架（30 full、9 thin：Banteay Ampil Band、Bibio、Bill Madison、Bob Ayala、Bob Carlin、Bröselmaschine、Buddy Thomas、Charalambides、Charlie McAlister），1 位不寫：Colbie Caillat（聲音格查無，只剩 Myspace 走紅、葛萊美與家世）。
+- 超額放行：Bellowhead 第 9 次為獎項第二源查找，無新事實（齊豫先例）。
+- 審稿修 16 處：字數——Bill Monroe 271 壓回 244（刪排行與叔叔殘障）、Bill Wilson 264 壓回 242（非雙卡；Bert Jansch & John Renbourn 267 為雙卡保留）；最高級刪改——Banda do Casaco「最前衛之一」、Belchior「MPB 史上最具影響力之一」、Bob Desper「最被藏私的秘密」、Brigada Víctor Jara「最具影響力」與「壽命最長之一」、Brooks & Dunn「鄉村史上最重要的搭檔之一」、Bülent Ortaçgil「最佳專輯首位」、Charles Lloyd「最早賣出百萬張」；在世者多重成績——Ben Howard 刪地方貨幣人像；健康與私事——Bob Ayala 刪視網膜病變、Belchior 刪晚年失蹤。
+- 保留：Battlefield Band 蘇格蘭傳統音樂名人堂的「最早之一」（官方）；Charley Pride「第一位黑人鄉村超級巨星」（兩源一致）；Charlie Moore 的 Ralph Stanley、Jimmy Martin 說法（具名樂手）；Bert Jansch 的 Neil Young 說法；Bob Desper、Arizona Dranes 的失明寫成身分特徵（非病情細節）。
+- 身分：Bill Wilson 維基預抓是同名牧師、Charlie McAlister 是橄欖球員、Charlie Moore 是釣魚節目主持人，皆已作廢；Dulcimer 是英國民謠三人組（非樂器）。
+- 待本機（上線簡介）：Aster Aweke「1981 年移居華盛頓」應為先到舊金山灣區；Aziza Brahim 父親過世時點兩源矛盾；Banda do Casaco 成立年與首張年份；Belchior「銷量逾五十萬」「與 Bob Dylan 對照」查無；Bellowhead「史上最暢銷的獨立廠民謠專輯」註腳不支撐；Bob Frank 的 Dickinson 評語措詞（best songwriter you never heard）；Brigada Víctor Jara《Eito fora》廠牌；Brooks & Dunn「7 倍白金」與 1990 年撮合；Charlie Moore《Avery County》1977／1979。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 839 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 845 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -839,6 +839,12 @@
 | ar-d-058 | Brigada Víctor Jara | Eito fora | 1977 年那一筆發行的國別欄與廠牌欄都是空的，也沒有再版 | World Music Central 的唱片列表把《Eito Fora》1977 年版列為 Mundo Novo 廠牌，並另列一筆 1983 年（同廠牌）；RTP 也把首張稱為《Eito Fora – Cantares Regionais》(1977)。廠牌欄至少有第三方資料可填，「沒有再版」也有 1983 年一筆記錄可疑。 | https://worldmusiccentral.org/artist-profiles-brigada-victor-jara/ |
 | ar-d-058 | Brooks & Dunn | Brand New Man | 截至 2024 年累計獲 RIAA 認證 7 倍白金 | 維基 Brooks & Dunn 條目、Country Universe 與鄉村名人堂官網都只到 6 倍白金或逾 600 萬張；7 倍僅見於專輯自己的維基條目，建議查 RIAA 資料庫後再決定是否保留。 | https://en.wikipedia.org/wiki/Brooks_%26_Dunn |
 | ar-d-058 | Brooks & Dunn | Brand New Man | 1990 年，Arista 高層 Tim DuBois 認為兩人聲線互補，主動撮合簽下 | 維基首段與 American Songwriter 都寫 1988 年組成，名人堂官網寫 1990 年初午餐介紹；年份各說各話，建議簡介只寫「Tim DuBois 撮合」不寫年份，或改成名人堂版本。 | https://www.countrymusichalloffame.org/artist/brooks-dunn |
+| ar-d-059 | Conway Twitty | Hello Darlin' | 直到 1966 年他才正式轉入鄉村樂 | 維基、鄉村音樂名人堂與 Encyclopedia of Arkansas 都指向 1965 年開始錄鄉村歌／簽約；1966 與來源不符，建議改為 1965 年或改成含糊說法 | https://countrymusichalloffame.org/artist/conway-twitty/ |
+| ar-d-059 | Domenico Modugno | Sings Nel Blu Dipinto di Blu (Volare) And Other Italian Favorites | 那五週冠軍並不連續，卻讓它成為該榜史上第一支登頂的非美加英語系單曲 | 可查證的只有它是 Hot 100 創刊後的第二支冠軍單曲（Guinness、維基引 Billboard）；『第一支登頂的非美加英語系單曲』沒有可查來源，措辭也不清楚，建議刪去或改成『Hot 100 史上第二支冠軍單曲』。五週不連續見維基引 Billboard，單源。 | https://www.guinnessworldrecords.com/world-records/771542-biggest-selling-eurovision-song-contest-entry |
+| ar-d-059 | Dulcimer | And I Turned As I Had Turned As A Boy… | 1970 年的原盤總長 62 分 44 秒，…同一張碟另有 12 軌的版本：1971 年的 12 吋與後來的日本 CD 都只收 12 軌 | Psychedelic Baby 的團員訪談與 President Records 的團史都寫這張首作 1971 年（President：mid-1971）由 Nepentha 發行，沒有 1970 年的版本；簡介把 1970 年當原盤、1971 年當 12 軌版，與來源不符，建議核對 Discogs 版本年份後改寫，或刪去 1970 年的說法。 | https://president-records.co.uk/artist/dulcimer-2/ |
+| ar-d-059 | Egschiglen | Zazal | 《Zazal》2000 年錄於德國 Bocholt 的 Grenzland Studio，由 Heaven and Earth 發行（HE 10） | rambles.net 的樂評寫 Zazal 是 2002 年的 Felmay 版、錄於德國南部，alba Kultur／womex 頁面列 Heaven & Earth 發行年 2002；Bocholt 位在德國西北部，與『德國南部』不符。卡池年份 2000 與簡介的錄音地點、年份建議核對 Discogs 與 CD 版權頁後再決定是否改寫（可能是 2000 年原版與 2002 年再版並存）。 | https://rambles.net/egschiglen_zazal02.html |
+| ar-d-059 | Faramarz Aslani | دلمشغولی‌ها | 這個掛名名下十三個條目裡，這一捲最早，第二早的跳到 1994 年，中間十七年是空的 | 那段空白只是 MusicBrainz 目錄的空白，不是 Aslani 的實況：維基與訃聞（thestopgap）都記他隔年（約 1978 年）又為 CBS 出了第二張《Hafez, a Memorandum》，只是 MusicBrainz 沒收。簡介用『空了十七年』會讓讀者以為他中間沒出片，建議改寫或刪去。 | https://en.wikipedia.org/wiki/Faramarz_Aslani |
+| ar-d-059 | Fausto | Madrugada dos Trapeiros | 1977 年這一筆是名下唯一的發行，廠牌欄與載體欄都是空白的 | 那是 MusicBrainz 這個條目的狀況，不是 Fausto 的實況：他 1970 至 2011 年間出了 12 張專輯（Time Out），《Madrugada dos Trapeiros》1977 年由 Orfeu 發行（Time Out）。簡介若被讀成『他只有這一張發行、廠牌不明』會誤導，建議改寫或刪去這兩句。 | https://www.timeout.pt/lisboa/pt/noticias/a-musica-portuguesa-esta-mais-pobre-morreu-fausto-bordalo-dias-070124 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
