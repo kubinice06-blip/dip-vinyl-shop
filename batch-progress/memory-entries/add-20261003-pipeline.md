@@ -10,3 +10,6 @@
 **驗證結果**：`qa-batch research/hooks/out` 全過、`chk-hook-crossgroup` 全過、`qa-check-research` 0、`fix-spacing` 0、prepare gate 0 error／0 warning；全池 `dedup-crossbatch` 撞卡 0。
 
 **值得記住的**：研究層查出金曲獎「最佳專輯製作人」入圍者是製作人 李欣芸，不是 何欣穗——池中《她的。發光搖擺》上架簡介首句因此有歧義，交本機改。
+
+**追加（2026-10-10，店主核可）**：《她的。發光搖擺》簡介首句改為「何欣穗 1999 年以《完美小姐》出道，入圍金曲獎最佳新人，製作人李欣芸也入圍最佳專輯製作人；…」（全文 269 字）——
+雲端改 `onboarding-manifest-ctw2-taiwan-artists-20260823.json`，KV 重傳交本機（`batch-progress/add-20261003/desc-fix-her-sheen-sway.json`）。
