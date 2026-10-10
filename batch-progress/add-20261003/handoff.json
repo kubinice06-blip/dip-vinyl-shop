@@ -11,22 +11,33 @@
   "output": "desc-tools/batches/output/add-20261003-out-1.json（232 字）"
  },
  "pendingLocal": {
-  "covers": "已解（Discogs 11294123，已登錄 data/discogs-cover-registry.json、reviewed ok）——本機只需 HTTP 覆核",
-  "previews": "Apple 四店無；YT Music 覆核，查無則維持 unavailable",
-  "listeners": "全部",
+  "kv": "無",
+  "listeners": [],
   "apexEvidence": [],
-  "reviewNotes": [
-   "逐張人工審稿：金曲獎最佳專輯製作人入圍者是李欣芸（研究層第 8566 條推翻主線），正文已分開寫",
-   "⚠ 池中《她的。發光搖擺》已上架簡介首句「何欣穗 1999 年以《完美小姐》出道，入圍金曲獎最佳新人與最佳專輯製作人」讀起來像她本人入圍製作人獎——建議本機改正文（例：「…入圍金曲獎最佳新人，製作人李欣芸也入圍最佳專輯製作人」）後重傳 KV",
-   "CURATION_WISHLIST.md 與 batch-progress/ctw3/held-cards.json 的《Miss Perfect》留置可結案（ctw3 寫 2001 年是錯的）",
-   "`tw-pop-artists.json` 目前沒有 何欣穗——跑 build-genre-tree 前補上，否則會落在「華語流行」而非「台灣流行」（ALBUM_ONBOARDING §10 第 7 點）"
-  ]
+  "genreTree": "本機上架時已重建",
+  "albumOverrides": "無",
+  "projectMemory": "雲端寫 PROJECT_MEMORY.md 被本工作階段的自動權限判定擋下——這次的紀錄在 batch-progress/memory-entries/add-20261003-pipeline.md，請本機或店主合併"
  },
  "qa": {
   "research": "pass",
   "hooks": "pass",
   "out": "pass",
   "qa-check-research": "0",
-  "fix-spacing": "0"
+  "fix-spacing": "0",
+  "publishedGate": "0 error（onboarding-manifest-add-20261003-20261004.json，2026-10-10 雲端重跑）"
+ },
+ "written": {
+  "cardCatalog": 0,
+  "kvKeys": 2,
+  "seedRows": 0,
+  "previewReady": 0,
+  "previewUnavailable": 0,
+  "note": "《完美小姐》已由本機在 main 19b73511 上架（card_catalog／KV／seed／試聽 unavailable 全部在那次寫入）；本工作階段只寫了《她的。發光搖擺》修正後的 2 個 KV 鍵（已上線卡，即時生效）"
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 1,
+  "changed": [],
+  "note": "《完美小姐》逐張審過未改字；另修已上線卡《她的。發光搖擺》首句（見 rulings.md）"
  }
 }

@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **255** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 17、已退回 1）。
-最後更新：2026-10-09
+共 **292** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 54、已退回 1）。
+最後更新：2026-10-10
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -39,6 +39,48 @@
 | 桃井かおり 《おもしろ遊戯》 | [#7633932](https://www.discogs.com/release/7633932) | 1982 | Momoi Kaori | 28AH 1401 | 目錄號 28AH 1401、年份 1982、廠牌 Momoi Kaori（CBS/Sony 體系）、曲目 10 軌逐軌對上 Apple jp 1536986860 | ok |
 | 梅津和時 《竹の村》 | [#8381375](https://www.discogs.com/release/8381375) | 1980 | Next Wave | 25PJ-1003 | 目錄號 25PJ-1003、年份 1980、廠牌 Next Wave、MB RG e63df681 同盤（CAA 無圖） | ok |
 | 梅津和時 & Mal Waldron 《Another Step》 | [#7262688](https://www.discogs.com/release/7262688) | 1982 | Union Jazz | ULP-5004 | 目錄號 ULP-5004、年份 1982、廠牌 Union Jazz | ok |
+
+## add-20261010-shop（37 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Carlos Santana 《Oneness: Silver Dreams-Golden Reality》 | [#1317942](https://www.discogs.com/release/1317942) | 1979 | Columbia JC | 35686 | Discogs master 56948 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| Dennis Brown 《Words of Wisdom》 | [#1300661](https://www.discogs.com/release/1300661) | 1979 | Laser LASL | 1 | Discogs master 135041 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| Joe Sample / Ray Brown / Shelly Manne 《The Three》 | [#2314982](https://www.discogs.com/release/2314982) | 1976 | East Wind | EW-10001 | Discogs master 277695 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| Marlene 《It's Magic》 | [#15272882](https://www.discogs.com/release/15272882) | 1990 | CBS/Sony CSCL | 1239 | Discogs master 1166555 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| Melanie 《Leftover Wine》 | [#1884619](https://www.discogs.com/release/1884619) | 1970 | Buddah Records BDS | 5066 | Discogs master 217549 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| Phoebe Snow 《Phoebe Snow》 | [#1428682](https://www.discogs.com/release/1428682) | 1974 | Shelter Records SR | 2109 | Discogs master 91347 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| Yufu 《To My Pen Pal》 | [#34313131](https://www.discogs.com/release/34313131) | 2025 | Coral | none | Discogs master 4113079 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| かぐや姫 《かぐや姫LIVE》 | [#4765717](https://www.discogs.com/release/4765717) | 1974 | Panam | GW-4009 | Discogs master 1932450 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| カルメン・マキ&LAFF 《LAFF》 | [#12603018](https://www.discogs.com/release/12603018) | 2012 | Universal | PROT-1033 | Discogs master 947486 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| キャンディーズ 《その気にさせないで》 | [#7321291](https://www.discogs.com/release/7321291) | 1975 | CBS/Sony | SOLL-160 | Discogs master 1600042 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| ゴールデン・ハーフ 《ゴールデンハーフでーす》 | [#13678050](https://www.discogs.com/release/13678050) | 1971 | Toshiba Records | TP-8077 | Discogs master 1554456 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| りりィ 《ラヴ・レター》 | [#5761197](https://www.discogs.com/release/5761197) | 1975 | Express | ETP-72070 | Discogs master 1417192 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| りりィ 《りりシズム》 | [#7231197](https://www.discogs.com/release/7231197) | 1977 | Express | ETP-72254 | Discogs master 859667 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 伊武雅刀 《Mon-jah》 | [#13231827](https://www.discogs.com/release/13231827) | 1983 | CBS/Sony 28AH | 1596 | Discogs master 1664644 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 吉田拓郎 《元気です。》 | [#9197248](https://www.discogs.com/release/9197248) | 2006 | SMDR GT Music MHCL | 761 | Discogs master 669942 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 吉田拓郎 《人間なんて》 | [#9197004](https://www.discogs.com/release/9197004) | 2006 | For Life Records | FLCF-4102 | Discogs master 1074198 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 坂本龍一 《Playing The Piano 12122020》 | [#21342883](https://www.discogs.com/release/21342883) | 2021 | Commmons | RZJM-77477〜8 | Discogs master 2419714 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 太田裕美 《思い出を置く 君を置く》 | [#13588302](https://www.discogs.com/release/13588302) | 1980 | CBS/Sony 27AH | 980 | Discogs master 1623041 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 太田裕美 《Little Concert》 | [#8212586](https://www.discogs.com/release/8212586) | 1979 | CBS/Sony 25AH | 897 | 唯一版本（無 master）、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 小坂明子 《あなた - 小坂明子の世界》 | [#10402277](https://www.discogs.com/release/10402277) | 1974 | Elektra | L-6095E | Discogs master 1771376 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 小川知子 《タッチ・ミー》 | [#25506985](https://www.discogs.com/release/25506985) | 1973 | Toshiba Records | TP-9104 | 唯一版本（無 master）、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 小柳ルミ子 《愛に甦える》 | [#15028871](https://www.discogs.com/release/15028871) | 1975 | Reprise Records | L-10091R | Discogs master 2573291 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 小柳ルミ子 《京のにわか雨》 | [#27939567](https://www.discogs.com/release/27939567) | 1973 | Reprise Records | RLLP-2.037 | Discogs master 3203559 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 小椋佳 《彷徨》 | [#8636329](https://www.discogs.com/release/8636329) | 1972 | Polydor MR | 2211 | Discogs master 1228314 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 尾崎亜美 《HOT BABY》 | [#6916018](https://www.discogs.com/release/6916018) | 1981 | F-Label (2) | C28A0163 | Discogs master 1413836 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 平山三紀 《希望の旅》 | [#9889041](https://www.discogs.com/release/9889041) | 1972 | Columbia | JDX-74 | Discogs master 4166509 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 弘田三枝子 《弘田三枝子の世界》 | [#16206890](https://www.discogs.com/release/16206890) | 1977 | Columbia | SW-7062 | Discogs master 1848324 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 朱里エイコ 《パーティー》 | [#13068921](https://www.discogs.com/release/13068921) | 2003 | Solid Records (6) | CDSOL-1081 | Discogs master 2817899 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 松任谷由実 《OLIVE》 | [#5508900](https://www.discogs.com/release/5508900) | 1979 | Express | ETP-80085 | Discogs master 666551 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 松任谷由実 《悲しいほどお天気》 | [#3651022](https://www.discogs.com/release/3651022) | 1979 | Express | ETP-80118 | Discogs master 824053 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 松尾和子 《ラプソディ》 | [#20560129](https://www.discogs.com/release/20560129) | 1975 | Victor | SJX-10101 | Discogs master 3691794 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 桃井かおり 《Four》 | [#7354065](https://www.discogs.com/release/7354065) | 1980 | Philips | 27PL-4 | Discogs master 1566723 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 渡辺真知子 《フォグ・ランプ》 | [#6886307](https://www.discogs.com/release/6886307) | 1978 | CBS/Sony 25AH | 643 | Discogs master 1901850 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 真芽正恵 《真芽正恵と小さな詩》 | [#12624822](https://www.discogs.com/release/12624822) | 1971 | Harvest Records (2) | YC-5003 | 唯一版本（無 master）、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 破地獄 《芒神》 | [#12983014](https://www.discogs.com/release/12983014) | 2018 | WV Sorcerer Productions WV | 025 | Discogs master 1637260 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 高橋真梨子 《Triad》 | [#4770689](https://www.discogs.com/release/4770689) | 1984 | Invitation | VIH-28187 | Discogs master 1594882 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
+| 高田真樹子 《MAKIKO first》 | [#5361707](https://www.discogs.com/release/5361707) | 1974 | Polydor MR | 5051 | Discogs master 1773073 的版本、曲目與盤名相符、主線 2026-10-10 縮圖表目視核對 | ok |
 
 ## c49（3 張）
 

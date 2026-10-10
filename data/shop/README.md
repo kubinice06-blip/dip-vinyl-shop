@@ -43,6 +43,11 @@ const inShop = new Set(inv.items.filter(i => i.status === 'in_stock').map(i => i
 Notion 表有「卡池鍵」欄（`藝人|專輯`，照 `seed_cards.json` 原字），2026-10-04 已填 23 筆；快照存成 `poolKey`，同步時優先採用。
 新進貨在 Notion 填好卡池鍵即可；空白的才走自動比對。
 
+## 現況（2026-10-10）
+
+116 筆：in_stock 113、pending_card 3、sold 2。10-08／10-09 進貨的 37 張已由雲端上卡池（add-20261010-shop），Notion 卡池鍵已填。
+`PENDING_NEW` 只剩三張不建卡的：Culture Club 12 吋單曲、チェリッシュ《スーパー・デラックス》與奥村チヨ《デラックス・ダブル》兩張精選輯（店主 2026-10-10「合輯不用」）。
+
 ## 現況（2026-10-07）
 
 68 筆全部 `in_stock`、全部由 Notion「卡池鍵」對上卡池（`PENDING_NEW` 已清空）。

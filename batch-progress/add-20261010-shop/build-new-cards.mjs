@@ -1,0 +1,68 @@
+// add-20261010-shop：10-09 批（17 張）與 Yufu 的身分卡單。10-08 批沿用 desc-tools/batches/cards/add-20261008-shop-{a,b,c}-cards.json。
+// MB 查詢原始結果在主線 scratchpad，結論逐張寫進 aliasReview／mbAbsenceProof。
+import fs from 'node:fs';
+const T = '2026-10-10T12:00:00Z';
+const dg = id => `https://www.discogs.com/release/${id}`;
+const dm = id => `https://www.discogs.com/master/${id}`;
+const pinned = (o) => ({ releaseType: 'Album', identitySource: 'pinned', ...o });
+const manual = (o) => ({ releaseType: 'Album', identitySource: 'manual', rgMbid: '', coverSourceHint: 'discogs', ...o });
+const cards = [
+  manual({ n: '01b7db', artist: '松尾和子', album: 'ラプソディ', year: 1975, genres: ['pop'], label: 'Victor SJX-216（1975；同年 SJX-10101 再版）',
+    aliasReview: '⚠ §1 人工身分：MB 藝人 松尾和子（678e2482）名下 8 個 RG 無本盤。盤名取日文《ラプソディ》（Discogs「ラプソディ = Rhapsody」，日文維基作「ラプソディー」），Rhapsody、ラプソディー進 queryAlias。池中松尾和子 0 張，無撞池。',
+    queryAlias: 'ラプソディー；Rhapsody；Kazuko Matsuo',
+    mbAbsenceProof: { queries: ['release-group?artist=678e2482（松尾和子）browse → 8 筆（七人の刑事、夜のハスキー第2集、夜のためいき、夜がわるい、熱海ブルース、魅惑のゴールデン・デュエット、日本の流行歌スターたち(2)、愛と別離），無 1975 ラプソディ', 'release-group?query=releasegroup:"ラプソディ" AND artist:"松尾和子" → count=0', 'release?query=catno:"SJX-216" → count=0', 'release?query=release:"ラプソディ" → 31 筆皆他人（BILLY BOO、平江由美等）'], checkedAt: T, conclusion: 'MB 有藝人實體但無本盤：藝人 browse、盤名＋藝人、目錄號 SJX-216 三方向皆查無；查詢皆 HTTP 200。Discogs master 3691794 有首版 SJX-216 與同年再版，走 §1 人工。', checkedFalseShapes: ['回了同名不同藝人'] },
+    manualEvidenceUrls: [dm(3691794), dg(32607942), dg(20560129), 'https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%B0%BE%E5%92%8C%E5%AD%90'],
+    manualRuling: '依 ALBUM_ONBOARDING §1 人工身分路線：以 Discogs master 3691794、首版 32607942（Victor SJX-216、1975、11 軌）與同年再版 20560129（SJX-10101）及日文維基松尾和子條互證，主線 2026-10-10 核定。' }),
+  pinned({ n: '84bfa7', artist: 'りりィ', album: 'りりシズム', year: 1977, genres: ['folk', 'pop'], label: 'Express ETP-72254', rgMbid: '03af2495-656d-4a08-aba5-72888a62f24d',
+    aliasReview: 'MB RG 03af2495（りりシズム，1977-06-05）。掛名照 10-08 b 組《ラヴ・レター》同串『りりィ』；英文題 Lilycism 進 queryAlias。池中りりィ 0 張（本批另有《ラヴ・レター》），非撞池。', queryAlias: 'Lilycism；Lily；りりぃ' }),
+  pinned({ n: 'e09e0c', artist: '小椋佳', album: '彷徨', year: 1972, genres: ['folk'], label: 'Polydor MR 2211', rgMbid: '0ddc341b-d347-4941-a417-36a8777ecd65',
+    aliasReview: 'MB RG 0ddc341b（彷徨，Album，1972-03-01）。Notion「徬徨」為異體字，正名「彷徨」（讀さまよい）。日文維基稱第 3 張專輯、內容重編前兩張，MB 標 Album，照 Album 收、不走 §5.6。池中小椋佳 0 張。', queryAlias: '徬徨；さまよい；Kei Ogura' }),
+  pinned({ n: '1a4953', artist: '吉田拓郎', album: '人間なんて', year: 1971, genres: ['folk', 'pop'], label: 'Elec Records ELEC-2003', rgMbid: 'e3d9aafa-9af2-4e29-bf3e-bb7e6be295b0',
+    aliasReview: 'MB RG e3d9aafa（人間なんて，1971-11-20，credit よしだたくろう）。掛名照 10-08 b 組《元気です。》8797 用漢字『吉田拓郎』，盤面署名 よしだたくろう 進 queryAlias（可逆）。池中吉田拓郎 0 張。', queryAlias: 'よしだたくろう；Takuro Yoshida' }),
+  manual({ n: '078c67', artist: '小川知子', album: 'タッチ・ミー', year: 1973, genres: ['pop'], label: 'Toshiba Records TP-9104（1973-12，對開封套）',
+    aliasReview: '⚠ §1 人工身分：MB 藝人 小川知子（8773f8ac）19 個 RG 無本盤；盤名 MB 只回岩崎宏美同名單曲。日文維基作 Touch Me，Discogs 作タッチ・ミー，取盤面。藝人是女演員兼歌手（1949 年生），非同名主播。池中 0 張。', queryAlias: 'Touch Me；Tomoko Ogawa',
+    mbAbsenceProof: { queries: ['release-group?artist=8773f8ac（小川知子）browse → 19 筆（ゆうべの秘密、初恋のひと、別れてよかった、麗しのフレンチ・キャット! 及合輯單曲），無 1973 タッチ・ミー', 'release-group?query=releasegroup:"タッチ・ミー" AND artist:"小川知子" → count=0；同條件 Touch Me → count=0', 'release?query=catno:"TP-9104" → count=0', 'release?query=release:"タッチ・ミー" → 1 筆，為岩崎宏美 1980 單曲'], checkedAt: T, conclusion: 'MB 有藝人實體但無本盤：藝人 browse、日文與英文盤名、目錄號 TP-9104 皆查無，唯一同名為岩崎宏美單曲；查詢皆 HTTP 200。走 §1 人工。', checkedFalseShapes: ['回了同名不同藝人'] },
+    manualEvidenceUrls: [dg(25506985), 'https://ja.wikipedia.org/wiki/%E5%B0%8F%E5%B7%9D%E7%9F%A5%E5%AD%90_(%E5%A5%B3%E5%84%AA)'],
+    manualRuling: '依 ALBUM_ONBOARDING §1 人工身分路線：Discogs release 25506985（Toshiba TP-9104、1973-12、11 軌、gatefold）與日文維基小川知子條專輯表（Touch Me，1973-12-25）互證，主線 2026-10-10 核定。' }),
+  pinned({ n: 'b37b95', artist: '平山三紀', album: '希望の旅', year: 1972, genres: ['pop'], label: 'Columbia JDX-74', rgMbid: '509d8c68-42b3-4ec7-98cf-abee3e3efc4e',
+    aliasReview: 'MB RG 509d8c68（希望の旅，Album，1972-04-25）。同名 7 吋單曲（1972-06，P-177）不收；店內為 LP。內容以單曲為主但日文維基列在アルバム，MB 也標 Album，不走 §5.6。現藝名平山みき 進 queryAlias。池中 0 張。', queryAlias: '平山みき；Kibo No Tabi；Miki Hirayama' }),
+  pinned({ n: '7f375b', artist: '尾崎亜美', album: 'HOT BABY', year: 1981, genres: ['pop', 'soul'], label: 'Canyon（F-Label）C28A0163', rgMbid: '72424ff8-a9f0-426c-9391-50f6bd91e18c',
+    aliasReview: 'MB RG 72424ff8（HOT BABY，1981-05-05）。盤名照 MB 全大寫；Notion「Hot Baby」大小寫差。曲風照 City Pop 慣例 pop＋soul（可逆）。池中尾崎亜美 0 張。', queryAlias: 'Hot Baby；Amii Ozaki' }),
+  pinned({ n: '25742e', artist: '太田裕美', album: 'Little Concert', year: 1979, genres: ['pop'], label: 'CBS/Sony 25AH 897', rgMbid: '7a64a530-923f-4758-a955-1bc75142f334',
+    aliasReview: 'MB RG 7a64a530（Little Concert，Album，1979-12-05）。標題像現場但是錄音室專輯（研究 r13）。掛名照 10-08 c 組《思い出を置く 君を置く》『太田裕美』。', queryAlias: 'リトル・コンサート；Hiromi Ohta' }),
+  manual({ n: '942ee4', artist: '弘田三枝子', album: '弘田三枝子の世界', year: 1972, genres: ['pop'], label: 'Columbia JDX-76（1977 再版 SW-7062）',
+    aliasReview: '⚠ §1 人工身分：MB 藝人 弘田三枝子（99938a7f）20 個 RG 無本盤。Discogs 題《The Wonderful World Of Mieko Hirota》，日文維基原名《弘田三枝子の世界》，取日文；英文題進 queryAlias。池中弘田三枝子三張（The Nearness of You、My Funny Valentine、In My Feeling）皆不同碟，掛名同串。', queryAlias: 'The Wonderful World Of Mieko Hirota；Mieko Hirota',
+    mbAbsenceProof: { queries: ['release-group?artist=99938a7f（弘田三枝子）browse → 20 筆（My Funny Valentine、Then Came You、In My Feeling、The Nearness Of You、弘田三枝子ヒット・アルバム 等），無 1972 弘田三枝子の世界', 'release-group?query=releasegroup:"弘田三枝子の世界" AND artist:"弘田三枝子" → count=0；Wonderful World → count=0', 'release?query=catno:"JDX-76" → count=0', 'release?query=release:"弘田三枝子の世界" → count=0'], checkedAt: T, conclusion: 'MB 有藝人實體但無本盤：藝人 browse、日英盤名、目錄號 JDX-76 皆 count=0；查詢皆 HTTP 200。Discogs master 1848324 有 1972 JDX-76 原版與 1977 再版，走 §1 人工。', checkedFalseShapes: ['只有同藝人其他作品'] },
+    manualEvidenceUrls: [dm(1848324), dg(15196833), dg(16206890), 'https://ja.wikipedia.org/wiki/%E5%BC%98%E7%94%B0%E4%B8%89%E6%9E%9D%E5%AD%90'],
+    manualRuling: '依 ALBUM_ONBOARDING §1 人工身分路線：Discogs master 1848324、原版 15196833（Columbia JDX-76、1972、10 軌）、再版 16206890（SW-7062、1977）與日文維基弘田三枝子條互證，主線 2026-10-10 核定。' }),
+  manual({ n: '3fb4f0', artist: '小柳ルミ子', album: '京のにわか雨', year: 1972, genres: ['pop'], label: 'Reprise L-8012R（1972-08-25，12 吋 LP）',
+    aliasReview: '⚠ §1 人工身分：MB 藝人 小柳ルミ子（9bd7e111）16 個 RG 無本盤。店主 2026-10-10 裁定店內實物是專輯（非 7 吋單曲 L-1100R）。正題《京のにわか雨　はるかなるこころのふるさと》取主標題，副題與英文 SOFTLY 進 queryAlias（照本批《愛に甦える》短形先例）。', queryAlias: '京のにわか雨 はるかなるこころのふるさと；Softly Rumiko Koyanagi；Rumiko Koyanagi',
+    mbAbsenceProof: { queries: ['release-group?artist=9bd7e111（小柳ルミ子）browse → 16 筆（星の砂、乱、みだれ髪、Koto Music of Today、合輯與單曲），無 1972 京のにわか雨', 'release-group?query=releasegroup:"京のにわか雨" AND artist:"小柳ルミ子" → count=0', 'release?query=catno:"L-8012R" → count=0', 'release?query=release:"京のにわか雨" → count=0'], checkedAt: T, conclusion: 'MB 有藝人實體但無本盤（連同名單曲也無）：藝人 browse、盤名、目錄號 L-8012R 皆查無；查詢皆 HTTP 200。Discogs master 3203559 有日本原版與巴西版，走 §1 人工。', checkedFalseShapes: ['只有同藝人其他作品'] },
+    manualEvidenceUrls: [dm(3203559), dg(12901154), dg(27939567), 'https://ja.wikipedia.org/wiki/%E4%BA%AC%E3%81%AE%E3%81%AB%E3%82%8F%E3%81%8B%E9%9B%A8'],
+    manualRuling: '依 ALBUM_ONBOARDING §1 人工身分路線：Discogs master 3203559、日本原版 12901154（Reprise L-8012R、1972、12 軌）、巴西版 27939567（同 master、同 12 軌）與日文維基同名條互證；專輯或單曲由店主 2026-10-10 裁定為專輯。' }),
+  pinned({ n: '836e8e', artist: '朱里エイコ', album: 'パーティー', year: 1973, genres: ['pop'], label: 'Warner-Pioneer／Reprise L-8020R', rgMbid: 'c4a405c8-4abe-455f-9779-9359ebe4ba61',
+    aliasReview: 'MB RG c4a405c8（パーティー，1973-05-25）。完整盤名帶副題「はなやかなる集い」（日文維基），卡面取 MB／Discogs 主標題，副題進 queryAlias。池中 0 張。', queryAlias: 'パーティー はなやかなる集い；Party；Eiko Shuri' }),
+  pinned({ n: '1b1367', artist: 'カルメン・マキ&LAFF', album: 'LAFF', year: 1980, genres: ['rock'], label: 'Kitty Records MKF 1064', rgMbid: '46e9061a-d810-44f5-a291-27bbde184199',
+    aliasReview: 'MB RG 46e9061a（Laff，1980；release 773c1555 catno MKF 1064）；MB 藝人 Carmen Maki & Laff（cbe295a6）。掛名照 §0.5 日文團名、照池中『カルメン・マキ&OZ』無空格寫法 → `カルメン・マキ&LAFF`；與個人名義カルメン・マキ、團名 OZ 分開不合併（8712 先例）。', queryAlias: 'Carmen Maki & Laff；カルメン・マキ & LAFF；Laff' }),
+  pinned({ n: '922c3a', artist: 'Melanie', album: 'Leftover Wine', year: 1970, genres: ['folk'], label: 'Buddah BDS 5066', rgMbid: 'c5b18424-29c1-32ce-acc1-2cd323f88b52',
+    aliasReview: 'MB RG c5b18424（Album＋Live，1970，Carnegie Hall）。另兩筆 Candles in the Rain / Leftover Wine 合輯 RG 排除。池中 Melanie Martinez 兩張是不同人；本卡 Melanie Safka，掛 MB 正名 Melanie。', queryAlias: 'Melanie Safka' }),
+  pinned({ n: '76669d', artist: 'Dennis Brown', album: 'Words of Wisdom', year: 1979, genres: ['world'], label: 'Laser LASL 1（UK）／Joe Gibbs JGML 8035（JA）', rgMbid: '05b9fcda-dbe2-31db-a487-c46fc78d1f13',
+    aliasReview: 'MB RG 05b9fcda（Words of Wisdom，1979）。原創錄音室專輯非選輯。掛名照池中 Dennis Brown 三張；曲風照池中雷鬼 → world。', queryAlias: 'Words Of Wisdom' }),
+  pinned({ n: '02b418', artist: '松任谷由実', album: 'OLIVE', year: 1979, genres: ['pop'], label: 'Express ETP-80085', rgMbid: '6bd0f2ce-5b29-48a8-b009-f83e41528499',
+    aliasReview: 'MB RG 6bd0f2ce（OLIVE，1979-07-20）。盤名全大寫照 MB／日文維基。池中松任谷由実三張（流線形\'80、SURF&SNOW、昨晩お会いしましょう）皆不同碟。', queryAlias: 'Olive；Yumi Matsutoya' }),
+  pinned({ n: '2910c7', artist: '松任谷由実', album: '悲しいほどお天気', year: 1979, genres: ['pop'], label: 'Express ETP-80118', rgMbid: 'c734373d-cfad-484f-b56d-ba25a21fcd4d',
+    aliasReview: 'MB RG c734373d（悲しいほどお天気，1979-12-01），副題 The Gallery in My Heart 進 queryAlias。查無同名單曲。', queryAlias: 'The Gallery in My Heart；Kanashii Hodo Otenki' }),
+  {
+    n: '9f4b90', artist: 'Yufu', album: 'To My Pen Pal', year: 2021, genres: ['soul'], label: '夕陽音樂 558YFT2112081（2021 卡帶 Mini-Album）；2023 Coral CD；2025 Coral 45 轉 LP／Kissing Fish KMKN-157',
+    releaseType: 'EP', genreException: 'asia-mini-album', identitySource: 'manual', rgMbid: '', coverSourceHint: 'discogs',
+    exceptionReason: '店主 2026-10-10 明確放行此張（店內在售實物）。台灣創作歌手 Yufu 的 6 軌作品，2021 年以 Mini-Album 卡帶發行、2025 年出黑膠，在台日兩地被當成一張作品發行與宣傳；§5.5 asia-mini-album 原僅列日韓，本卡依店主指定單張適用，不擴大到其他台灣 EP。',
+    exceptionEvidenceUrls: [dm(4113079), dg(37253679), dg(34313131), dg(36333592)],
+    aliasReview: '⚠ 掛名：MB 藝人 Yufu（07b2c39f，TW）名下只有 Heal Me Good、Honey If You\'re Extra 兩筆；Discogs 掛 Yufu。Notion「To My Pan Pal」為筆誤。⚠ 年份取 2021 卡帶首發（夕陽音樂 558YFT2112081，Discogs 37253679 標 Mini-Album），2023 CD、2025 黑膠為後出。⚠ 策展 8782 原以 EP 白名單退件，店主 2026-10-10 放行。池中 0 張。',
+    queryAlias: 'To My Pan Pal；To My Penpal；Yufu Chen',
+    mbAbsenceProof: { queries: ['release-group?artist=07b2c39f（Yufu）browse → 2 筆（Heal Me Good 2025、Honey If You\'re Extra 2024 單曲），無 To My Pen Pal', 'release-group?query=releasegroup:"To My Pen Pal" AND artist:"Yufu" → count=0', 'release?query=release:"To My Pen Pal" → count=0'], checkedAt: T, conclusion: 'MB 有藝人實體但無本作：藝人 browse 只 2 筆、盤名兩方向 count=0；查詢皆 HTTP 200。Discogs master 4113079 有 2021 卡帶、2023 CD、2025 兩種黑膠，走 §1 人工。', checkedFalseShapes: ['只有同藝人其他作品'] },
+    manualEvidenceUrls: [dm(4113079), dg(37253679), dg(34313131), dg(36333592)],
+    manualRuling: '依 ALBUM_ONBOARDING §1 人工身分路線：Discogs master 4113079 與其 2021 卡帶（37253679）、2025 台灣 Coral 黑膠（34313131）、2025 日本 Kissing Fish 黑膠（36333592）四版本曲目一致互證；收錄由店主 2026-10-10 指定放行。'
+  },
+];
+fs.writeFileSync('batch-progress/add-20261010-shop/cards-new.json', JSON.stringify(cards, null, 1));
+console.log(cards.length);

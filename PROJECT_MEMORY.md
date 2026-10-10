@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-10｜dip-vinyl-shop｜店內待上架 37 張上卡池（雲端，add-20261010-shop；卡池 18,666 → 18,703）
+
+店主問「店內新增很多專輯 測試是否能正式上線」→ 盤點 40 張待上架 → 店主裁定「yufu可以跑／キャンディーズ、京のにわか雨 都是專輯／合輯不用／開跑」。雲端一次跑完，等店主合併 PR #79。
+
+- **收 37、退 3**：Culture Club 12 吋單曲、奥村チヨ《デラックス・ダブル》、チェリッシュ《スーパー・デラックス》（後兩張是精選輯）。Yufu《To My Pen Pal》是台灣 EP，店主點名放行，manifest 走 `asia-mini-album` 並寫明「單張適用」，`EXCEPTION_GENRES` 沒動。
+- **身分**：10-08 批 20 張沿用策展卡單；10-09 批 16 張＋Yufu 雲端補查 MB（pinned 12、§1 人工 5）。破地獄卡名用《芒神》（店內是 2018 黑膠），`descs.json` 那筆 key 跟著改。
+- **封面**：37 張用店主 10-09 選的 Discogs 無側標圖，逐張看過，登錄 discogs-cover-registry（255 → 292）。Yufu 那張照片上有簽名，沒有更乾淨的來源。
+- **三軸**：沿用店內暫定值（10-09 8911）；listeners 用卡面掛名重打 /album-rating（36 張有值）。頂點 0。稀有度 uncommon 13、rare 24。
+- **簡介**：門市版直接上（10-07 規則），37 張無卡片禁語。
+- **試聽**：Apple ready 26、unavailable 11（逐張對曲目表；精選輯不當本盤）。
+- **寫入**：prepare gate 0 error → card_catalog 37/37 → KV 67 鍵回讀 67/67 → 靜態試聽 → seed 37 列 → **published gate 0 error**。子曲風 17,253 → 17,282（新卡落位 29/37）。
+- **店內**：Notion 卡池鍵 37 筆寫回；inventory 在售 113、待上架 3、售出 2；mood-map 補 37 張；pending-meta 留 3 筆。
+- 主要檔案：`onboarding-manifest-add-20261010-shop-20261010.json`、`batch-progress/add-20261010-shop/`（rulings 8912–8935、身分卡單、試聽裁定、組 manifest 的腳本）、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-{map,runtime}-v1.json`、`card-subgenres.json`、`genre-tree.json`、`data/discogs-cover-registry.json`、`data/shop/*`、`scripts/sync-shop-inventory.mjs`。
+- 沒做：11 張無試聽若要掛 YouTube 要走後台；37 位藝人裡缺藝人介紹的沒補跑。
+
 ### 2026-10-10｜dip-vinyl-shop｜雲端首次照新規則實跑（PR #79）回報的兩件事：wrangler 版本、PROJECT_MEMORY 寫不進去
 
 同日第二筆。雲端工作階段照新的 `REMOTE_RUNBOOK.md` 跑 add-20261003 收尾，開了 PR #79（草稿，待店主合併）。
