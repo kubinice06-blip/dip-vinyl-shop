@@ -759,3 +759,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 新近事實提醒：The Alarm 的 Mike Peters 據兩源於 2025 年過世，正文不寫；若現行上線簡介把他寫成在世，本機需改。
 - 卡池存疑：Sweet《Desolation Boulevard》卡池 1974 為歐洲 RCA 版（不含〈Ballroom Blitz〉）。
 - 待本機（上線簡介）：Stone Harbour「都來自 Canton」（多源 Youngstown）；Tamam Shud「Warner Bros. 第一張 LP」無據；Tamikrest「Songlines 年度最佳專輯」（官方頁為 2013 Best Group）與「2013 年 9 月發行」無據；Superchunk 簡介無誤。
+
+## ar-d-049（2026-10-10）
+
+- 38 位上架（33 full、5 thin：The Astronauts、The Body、The Cravats、The Door and the Window、The For Carnation），2 位不寫：The Fratellis（聲音只有「被形容為車庫搖滾樂團」一個曲風標籤）、The Freed Unit（聲音只有使用者編輯頁的風格標籤）。The Door and the Window 以「未受訓練、卡帶錄音機錄 EP」當做法句，接受。
+- 審稿修 14 處：最高級刪改——The Bats「1980 年代最好的紐西蘭專輯之一」、The Chameleons「最被低估之一」、The Chills「最早的龐克團之一」改「早期」與「最優秀之一」、The Clean「最有影響力」改「核心」、The dB's「最好的失落 power pop 之一」、The Dead C「九〇年代最好的噪音專輯之一」、The Flower Kings「產量最高之一」、The Guess Who「加拿大第一批搖滾巨星」（保留兩源的「首支登頂的加拿大樂團歌曲」）、The Heartbreakers「最具影響力之一」改「重要專輯」、The Hives「近二十年最好的現場之一」；The Cambodian Space Project 274 字壓回 231（非雙卡，刪過世與悼念句）；The Comsat Angels 影評人具名評語改匿名形容。
+- 保留：The Association〈Never My Love〉BMI 第 2 名（明寫歌由 Addrisi 兄弟所作）；The Coasters「第一個入選搖滾名人堂的人聲團體」（名人堂官方）；The Everly Brothers 的搖滾名人堂評語；Noel Gallagher、Michael Stipe、Jello Biafra 等具名樂手說法。
+- 身分：The Caravans 是芝加哥福音女聲團（卡池歸 rock 屬分類誤差）；The Astronauts 是 Welwyn Garden City 的團（維基預抓 Lem 小說作廢）；The Bachs 是芝加哥北岸私壓團（維基預抓瑞士地名作廢）；The Charlatans 是英國團（非舊金山同名團）；The Heartbreakers 是 Johnny Thunders 的團。
+- 卡池年份存疑：The Head and the Heart 卡池 2009（實為 2010 自發、2011 Sub Pop 重發）；The Appleseed Cast《Mare Vitalis》2000／1999。
+- 待本機（上線簡介）：The Caravans「1947 年由 Robert Anderson 起家」各源不一；The Cambodian Space Project「香港 Metal Postcard 發行」無據；The Diagram Brothers「姓 Diagram 的不是一家人」兩源不一；The Electric Prunes 團員自寫歌曲數（一首／兩首）；The Astronauts 客席薩克斯風手 Lol Coxhill／Nik Turner。
