@@ -783,3 +783,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 11 處：最高級刪改——The Rising Storm 刪「最稀有之一」、The Three O'Clock 刪「頂尖」、The Triffids 刪「最受喜愛之一」、The Used 刪「2000 年代 emo 圈的王者」（單源稱號）、The Yardbirds「搖滾史上最知名的吉他手」改「名吉他手」；字數——The Selecter 271 壓回 244、The Shaggs 276 壓回 250（皆非雙卡）；新近事實——The Turtles 刪 Volman 2025 年辭世（不需要、未見兩源）；The Teardrop Explodes 的 Mojo 獎句縮短（獎項方具名一次）。
 - 保留：The Yardbirds 搖滾名人堂評語（官方一處），Dave Marsh 說法匿名為「有樂評形容」；The Ventures 搖滾名人堂與「啟發了一千個樂團的樂團」外號；Them〈Gloria〉葛萊美名人堂與 Steve Van Zandt 說法（具名樂手）；The Undertones 與 The Wolfgang Press 的 John Peel 說法（電台 DJ，比照前例）；The Walker Brothers 只寫 Bowie 等人受 Scott 啟發。
 - 卡池年份：Them 正文不寫年份（來源不一）。
+
+## ar-d-052（2026-10-10）
+
+- 39 位上架（29 full、10 thin：This Kind of Punishment、This Will Destroy You、Titus Groan、TM NETWORK、Token Entry、Tonic、Transatlantic、Tsunami、Turning Point / No Escape、Tuscadero），1 位不寫：Trifle（國籍、身分與聲音全部只出自樂團粉絲站單源）。
+- 審稿修 19 處：最高級刪改——Throwing Muses「第一支簽 4AD 的美國樂團」改「早期簽下」、Tilt「最早之一」改「早期」、Tõnis Mägi「最具象徵性」「最具影響力」改平述、Transs「最知名的管弦指揮之一」、Triana「最好的融合」與「最重要、最具影響力」、Tuscadero「最受矚目」、Udo Lindenberg「德國最好的爵士鼓手之一」、UK Subs「第一波中最早的一批」、Ulcerate「最具代表性」、Unbroken 廠牌自稱「時代最具影響力」改「代表作」；在世者多重成績——Thom Yorke 刪 Ivors 院士（留名人堂一處）、Tom Jones 刪葛萊美新人獎與封爵（留英國冠軍）、Trio 刪全球銷量、Turnstile 兩項葛萊美只留一項、Two Door Cinema Club 刪《FIFA 11》與捐獎金；健康細節——Thom Yorke 刪左眼麻痺與手術；英文標題譯中文——Ticket 的報紙標題。
+- 保留：Tina Turner 搖滾名人堂評語與「搖滾女王」稱號（歸屬式）；Trouble 的 Dave Grohl 說法；Trúbrot 冰島百大唱片第 2 名（業者與公眾評選）；Udo Lindenberg 的德國總統 Steinmeier 說法（具名公職人員）；Turning Point「Jade Tree 稱」先驅（廠牌歸屬式）。
+- 身分：Tilt 是波蘭華沙的龐克團（維基預抓撲克詞條作廢）；Titus Groan 維基預抓為小說作廢；Tolerance 是日本 Vanity 廠牌的丹下順子計畫；Transs 是印尼團（不寫雅加達）；TSA 維基預抓亞美尼亞字母作廢；Turning Point / No Escape 的 No Escape 成員來自紐澤西、德拉瓦與費城。
+- 卡池年份存疑：Trouble《Psalm 9》卡池 1988，首發 1984 Metal Blade。
+- 待本機（上線簡介）：Titus Groan「1970 年底意外後解散」單源且與 1971 年廣播紀錄衝突；Trúbrot《Lifun》發行日（7/29 或 6/29）與封套形狀（八角或六角）；TSA Piekarczyk 首次擔任主唱的日期；Tom Jones〈It's Not Unusual〉登冠日期（3/11 或 3/13）；Träd, Gräs och Stenar「B 面轉向瑞典民謠」與曲目不符；Transs 簡介的「雅加達」無據。
