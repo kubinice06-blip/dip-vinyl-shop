@@ -724,3 +724,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Possessed「常被稱為最早的 death metal 樂團」（多源、歸屬式）；Quarteto 1111〈Pigmentação〉「被稱為葡萄牙第一首寫排外情緒的歌」（兩源、歸屬式）；Pretenders 的搖滾名人堂評語；Possessed 不寫中槍與癱瘓。
 - 身分修正：Poll 是希臘樂團（特注原寫奧地利，錯）；Player 是英美混編；Phương Tâm 的卡池為 2021 年回顧合輯（1964–1966 錄音）；Providence 是日本プロビデンス（維基預抓美國同名團作廢）；Protos（德國電聯車）、Pussy、Raphael（畫家）、Raw Material（一般名詞）的維基預抓作廢；Raw Deal 確認為 Killing Time 前身，與前批 Killing Time 已比對無撞句。
 - 待本機（上線簡介）：Pholas Dactylus「米蘭一帶成軍」「鍵盤與鋼琴兩人分工」「頹廢派、垮掉派歌詞」無據；Phương Tâm「最早錄搖滾樂」單源；Prúdy 作曲分配（TASR 為 Varga 八首、Hammel 三首、一首合寫）；Raphael〈El fusil del poeta es una rosa〉查無、「同年兩張」實為三張；Raw Deal「三十年後重新上架、曲序相同」無據；Raw Material「三件式之外多了鍵盤與管樂」與團員表不符；Ray Lynch 白金年份 1993／1994 兩說。
+
+## ar-d-045（2026-10-10）
+
+- 40 位全上（34 full、6 thin：Red Summer、Rheinallt H. Rowlands、Room、Rothko、Sam Gopal、Sampaguita）。Red Summer 的聲音句以編制（吉他、合成器、鍵盤與小提琴）當做法，比照 Deja-Vu 先例。
+- 審稿修 8 處：最高級刪改——Repulsion「最早之一」改「早期」、Riblja Čorba「最受歡迎也最具影響力之一」改「代表之一」、Rick Saucedo「最早之一」改「早期」、Rick Springfield「人氣最高之一」改「人氣演員」、Ruphus 刪廠牌稱的「最好的專輯之一」；英文詞譯中文——Rick Saucedo「acid trip dream」；健康細節——Rorschach 刪主唱病史；媒體名——Sampaguita 的 Philstar 改「菲律賓媒體」。
+- 保留：Roy Orbison、Ricky Nelson 的搖滾名人堂評語；Rowland S. Howard 的 Nick Cave 評語（具名樂手）；Ruphus 的「旗艦之一」歸給廠牌 Karisma；Saccharine Trust 的 Kurt Cobain 日記清單（具名人物）。
+- 身分修正：Salada de Frutas 是葡萄牙樂團（特注原寫巴西，錯）；Red Noise 是法國前衛團（非 Bill Nelson 同名團）；Re-TROS 寫「中國」。同名作廢：Refrigerator（電冰箱）、Red Summer（1919 暴動）、Rex（拉丁頭銜）、Room（房間）、Sand（沙子）的維基預抓。
+- 卡池年份存疑：Roy Orbison《Mystery Girl》卡池 1988，實為 1989 年 2 月身後發行。
+- 待本機（上線簡介）：Redbone〈We Were All Wounded at Wounded Knee〉「從美加版抽掉」說法不一；Red Noise 專輯 1970／1971、B 面長度 20／18 分鐘；Room「六個人的樂團」（多源五人）；Samantha Fish「2011 年 Blues Music Award」應為 2012 年第 33 屆；Sampaguita「隨口給的藝名」「搖滾女王」無據、〈Bonggahan〉與〈Tao〉年份待核。

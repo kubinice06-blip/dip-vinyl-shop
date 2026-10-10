@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 749 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 756 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -749,6 +749,13 @@
 | ar-d-045 | Samantha Fish | Kill or Be Kind | 2011 年以《Runaway》拿下 Blues Music Award 最佳新人 | 《Runaway》2011 年發行，但獎是 2012 年第 33 屆 Blues Music Awards 的 Best New Artist Debut；簡介把獎項年份寫成 2011 年 | https://www.hypebot.com/tedeschi-trucks-tab-benoit-top-blues-musis-awards/ |
 | ar-d-045 | Sampaguita | Sampaguita | 藝名是打擊樂手隨口給的 | 維基只寫 Nick Boogie 取了這個藝名（coined），沒有「隨口」的說法；「後來被稱作菲律賓搖滾女王」的出處是維基首段無註腳句子，並非有出處的共識 | https://en.wikipedia.org/wiki/Sampaguita_(singer) |
 | ar-d-045 | Sampaguita | Sampaguita | 〈Bonggahan〉與〈Tao〉兩首同年也以七吋單曲發行 | 同年與否未能驗證：Philstar 把〈Bonggahan〉標為 1977，菲律賓圖書館目錄的 Blackgold 單曲無可靠年份 | https://www.philstar.com/entertainment/2016/07/28/1607259/30-iconic-filipino-songs/amp/ |
+| ar-d-046 | Shape of the Rain | Riley, Riley, Wood and Waggett | 1964 年成軍於礦村 Eckington | 低嚴重度、待核：Discogs（事實庫來源）寫 Eckington（Sheffield 近郊礦村）；NTS 藝人頁與 Rough Trade 商品頁、搜尋摘要寫 Sheffield。兩說不一定矛盾（Eckington 在 Sheffield 附近），建議改成「Sheffield 一帶」或維持原句但別寫成 Sheffield 市內。 | https://nts.live/artists/109635-shape-of-the-rain |
+| ar-d-046 | Shark Move | Ghede Chokra's | 樂團 1970 年成軍於萬隆的 Pasar Baru | 年份來源分歧、待核：NTS（維基系）與事實庫舊來源寫 1970；NPR 寫 1972 成軍、1973 年到雅加達錄音；Now-Again 寫 1973 年才移往雅加達。卡池年份 1970 也隨之存疑。建議簡介改成不帶年份，或留待取得唱片本身（Shadoks 重發的內頁說明）的記載再定。 | https://www.wyso.org/2010-12-02/the-lo-fi-legacy-of-indonesia |
+| ar-d-046 | Shark Move | Ghede Chokra's | 唱片名在印地語裡的意思是偉大的錄音時段 | 語言待核：NPR 寫標題譯自梵文（Sanskrit），意為 Great Session；上線簡介寫印地語。意思一致，語言歸屬不同，建議改成不指明語言。 | https://www.wyso.org/2010-12-02/the-lo-fi-legacy-of-indonesia |
+| ar-d-046 | Shark Move | Ghede Chokra's | 2003 年德國的 Shadoks Music 做了黑膠再版 | 年份待核：NTS 藝人頁寫 2006 年重新處理母帶、2007 年由 Shadoks 重發；事實庫舊來源（已失效）與上線簡介寫 2003。另「整張七天錄完」「2017 年 Outer Battery 重製」本層沒有查到來源。 | https://nts.live/artists/50920-shark-move |
+| ar-d-046 | Shylock | Gialorgues | 樂團自資發行，廠牌名就叫 Gialorgues | 法文維基與 Soundohm 均記該專輯首發於 CBS（1977 年初），Strawberry Bricks 記 1976 年自資私壓後由 CBS 重發；上線簡介只寫自資版，未提 CBS 版，且發行情況來源互相矛盾，建議措辭保守並確認是否為 1976 私壓版。 | https://strawberrybricks.com/guide/releases/gialorgues |
+| ar-d-046 | Silica Gel | POWER ANDRE 99 | 隔年獲한국대중음악상三冠 | 三冠（年度音樂人、最佳摩登搖滾專輯、最佳摩登搖滾歌曲）發生在 2024 年 2 月第 21 屆，得獎作品是 EP《Machine Boy》與單曲〈Tik Tak Tok〉，此時《POWER ANDRE 99》（2023 年 12 月 20 日發行）才剛發行；《POWER ANDRE 99》在 2025 年第 22 屆只入圍年度專輯、最佳摩登搖滾專輯與年度音樂人，三項均未得獎。簡介句子讀起來像是這張專輯得三冠，建議改寫或刪除。 | https://www.imaeil.com/page/view/2024030107124345235 |
+| ar-d-046 | Silica Gel | POWER ANDRE 99 | 2013 年成軍於서울예술대학교 | 本位來源只確認維基記載成軍於安山（서울예술대학교 校區所在地）且為 2013 年，另一來源 JoongAng 寫 2015 年；學校一事未在任何本位開頁的來源看到，無法證實。 | https://en.wikipedia.org/wiki/Silica_Gel_(band) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
