@@ -895,3 +895,19 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Love Song、Manitoba、Midwinter 的維基預抓分別對到歌曲類型、加拿大省份、節氣，已作廢；Manitoba 照 Dan Snaith 舊名義寫；Norman Blake 生於田納西州 Chattanooga、在喬治亞州長大（非 Teenage Fanclub 同名成員）；Mr. Fox 的女聲是 Carole Pegg；Michael Angelo 是堪薩斯市錄音室樂手 Michael Angelo Nigro。
 - 卡池年份存疑：Modern Folk Üçlüsü《40 Yıl Sonra》卡池 1974，土耳其來源寫 1975。
 - 待本機（上線簡介）：Luke Combs「2016 年自主發行」「蟬聯兩週」；Manos Hadjidakis「拒領獎座」與 To Vima 不符；Margo Price Third Man「第一位鄉村藝人」應為「第一位 Nashville 在地藝人」、「約三十家唱片公司」；Maria del Mar Bonet《Alenar》是第 5 張；Mark Fry「花三天錄成」（本人說一兩週）；Meic Stevens 回 Solva 年份；Marion Sumner 的 Dennis Breeding 未見；Michael Hurley《Have Moicy!》「滾石五星」查無；Michael Angelo「acetate 被銷毀」查無；Moving Hearts「雙鼓手」應為鼓手加打擊；Mr. Fox「Carole Butler」應為 Carole Pegg；Nickel Creek「出道作」應為 Sugar Hill 的首張。
+
+## ar-d-063（2026-10-10）
+
+- 37 位上架（33 full、4 thin：Pari Zanganeh、Retsin、Richard Dawson、Robb Kunkel），3 位不寫：Perry Leopold（聲音格查無，素材多為 AllMusic 傳記轉載）、Ray & Ina Patterson（全部事實只出自科羅拉多藍草協會一頁）、Rich Kirby & Michael & Carrie Kline（聲音句只剩曲目題材，比照 Lewis Capaldi 不寫）。
+- 審稿修 5 處：最高級刪改——Ovidi Montllor「最有才華也最不受歡迎之一」改平述、《Furtivos》「最重要之一」改「重要」、Phạm Duy 單源「最具影響力的三位之一」改「重要人物、常與……並提」、Principal Edwards Magic Theatre「最早簽下之一」改「早期」、Reba McEntire「最有影響力的女歌手之一」。
+- 保留：Pari Zanganeh 車禍失明後轉向民謠（意外類型＋職涯轉折）；Richard Crandell 的顫抖症（直接促成改彈 mbira，與聲音相關）；Paco Ibáñez〈A galopar〉成為反佛朗哥象徵（兩源、份量核心）；Patricio Manns〈Arriba en la cordillera〉Olmué 民謠節票選（歌的份量）；Renaud〈Mistral gagnant〉2015 年民調；Robin and Barry Dransfield 的《Melody Maker》年度民謠專輯提名（獎項方具名一次）。
+- 身分：Ossian、Palace Music、Ray Fisher（美國演員）、Red Allen（爵士小號手 Henry "Red" Allen）、Rich Kirby 組（同名犯罪首腦）的維基預抓皆對錯，已作廢；Rich Kirby & Michael & Carrie Kline 這張 1977 年碟只有 Kirby 與 Mike Kline 參與。
+- 待本機（上線簡介）：Ossian「格拉斯哥成軍」無據；Pablo Milanés《Acto de fe》與《Yo me quedo》先後可能相反；Paco Ibáñez Olympia 雙專輯 1969／1970；Patricio Manns「十一首都掛他」錯（第 8 軌掛 Edmundo Vásquez）；Perry Leopold「PAN 第一個線上網路」「8 月送掉」單源；Peter Walker《Rainy Day Raga》1966／1967；Raimon「1976 年前只有三張」錯；Richie Havens《Mixed Bag》「初次登上告示牌」不確；Robert Plant & Alison Krauss「年度單曲」應為年度唱片、「五項提名全中」無據；Roger Miller「1971 年被 Paul Simon 打破」無據。
+
+## 第七輪十批接力收尾（ar-d-054～063）
+
+- 合計 377 位上架（307 full、70 thin），23 位不寫：パパイヤ・パラノイア、丘蒸汽、光引擎、刺客、壞女兒、妮波寺、木魚、瑪啡因、花生隊長、迷幻幼稚園、鉄アレイ、面孔樂隊、頂樓的馬戲團、Agincourt、Allan Wachs、Colbie Caillat、J. T. Perkins、John Villemonte、Lewis Capaldi、Marj Snyder、Perry Leopold、Ray & Ina Patterson、Rich Kirby & Michael & Carrie Kline（全部事實單源、聲音只剩曲風標籤／曲長／影響名單／曲目題材、身分推定或國籍過不了兩源）。
+- 搖滾段全數寫完（Y、Z 與韓、日、中文名藝人）；民謠段寫到 R 字頭。卡池剩 53 批、2081 位未寫（folk 200、pop 359、world 280、electronic 517、hiphop 279、classical 605）。
+- 本輪新增的裁定形狀：thin 聲音句若只剩「影響名單」或「曲目題材」也不寫（Lewis Capaldi、Rich Kirby & Michael & Carrie Kline，比照曲風標籤）；「身分兩源、聲音單源以『據介紹／被形容為』寫」可接受（倒車入庫、煙雨飄渺、Kathy Heideman）；健康細節若直接促成聲音轉變可保留（Richard Crandell 改彈 mbira）。超額放行七例，皆依齊豫或第二源先例。中文名藝人一律寫「中國」「台灣」「香港」，兩岸與香港政治不寫。
+- 名冊身分錯誤由研究層更正多處（頂樓的馬戲團是上海團、隨性樂團是台語搖滾、Kembara 在新加坡成軍、Jimmy Carter and Dallas County Green 是 country rock、Francesco Guccini 已於 2026 年 8 月過世等），皆照研究層改寫。
+- 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；何勇簡介「至今唯一」需改過去式（2026 年過世）；卡池年份存疑（Kim Jung Mi 1968→1973、Modern Folk Üçlüsü 1974／1975，另沿第六輪 Trouble《Psalm 9》1984 等）。

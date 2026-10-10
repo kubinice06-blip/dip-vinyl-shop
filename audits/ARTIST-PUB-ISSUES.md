@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 907 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 910 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -907,6 +907,9 @@
 | ar-d-063 | Perry Leopold | Experiment in Metaphysics | 1981 年他停下巡演，創辦了 PAN，那家公司 1983 年成為音樂產業第一個線上網路 | 只在 AllMusic 傳記改寫（NTS、Last.fm 轉載同一份文字）看到：『1981 年創辦 PAN，音樂產業第一個線上電腦網路（1983），1990 年成為最早獲准連上網際網路的非國防部公司之一』。三次搜尋沒找到任何獨立來源，屬『第一』類單源宣稱，建議簡介改成『據傳記稱』或刪去『第一個』。另『8 月的一個下午就送掉了』也沒找到來源，來源只說大部分在費城街角送出。 | https://nts.live/artists/56748-perry-leopold |
 | ar-d-063 | Peter Walker | Rainy Day Raga | 1967 年美國 Vanguard VSD-79238 | 來源對首發年不一致：英文維基與 Record Collector 評論寫 1966 年首張專輯，Soundohm 與 PopMatters 搜尋摘要寫 1967 年；建議對照 Discogs 原盤年份再決定上線簡介與卡池年份。 | https://recordcollectormag.com/reviews/album/rainy-day-raga |
 | ar-d-063 | Raimon | Per destruir aquell qui l'ha desert | 名下在 1976 年之前的錄音室專輯只有三張（本張是其中之一）；沒有再版也沒有 CD 版 | 此句只依 MusicBrainz 的 18 筆 release-group 推算，資料不全。加泰隆尼亞大百科列有 1966 年《Cançons de la roda del temps》，加上 1964、1970、1974 年，至少四張；「沒有再版與 CD 版」同樣只是 MusicBrainz 的登錄結果，建議改掉或刪除。 | https://www.enciclopedia.cat/gran-enciclopedia-catalana/ramon-pelegero-i-sanchis |
+| ar-d-063 | Richie Havens | Mixed Bag | 也是他初次登上告示牌 | 英文維基寫 Something Else Again（1968）才是他第一張登上 Billboard 榜的專輯，而且是它把 Mixed Bag 重新帶回榜上；簡介『初次登上告示牌』與此不符。僅英文維基單源，建議店主核對 Billboard 資料後再改。 | https://en.wikipedia.org/wiki/Richie_Havens |
+| ar-d-063 | Robert Plant & Alison Krauss | Raising Sand | 含年度專輯與年度單曲〈Please Read the Letter〉 | 葛萊美獎項是 Record of the Year，中文宜寫年度唱片；『年度單曲』易與 Song of the Year（年度歌曲）混淆。『五項提名全中』的提名數此輪沒有查到，維基只寫拿下五座。 | https://en.wikipedia.org/wiki/Alison_Krauss |
+| ar-d-063 | Roger Miller | The Return of Roger Miller | 寫下當屆單一藝人最多得獎紀錄，直到 1971 年才被 Paul Simon 以七座打破 | 此輪沒有找到來源證實『1971 年 Paul Simon 七座打破』；travelok 只寫這是當時最大的一次包辦、至今仍是鄉村歌手最高紀錄。建議核對葛萊美官方資料，不確定的部分可刪去。 | https://travelok.com/music-trail/artist/roger-miller |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
