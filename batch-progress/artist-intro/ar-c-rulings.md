@@ -1037,3 +1037,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - Alleycats「Penang 唱了近十年」、兄弟和聲、M. Nasir。
   - Apelsin 同名 LP 年份與「最早發行品」。
   - Captain & Tennille「年度製作」應為「年度唱片」。
+
+## ar-d-069（2026-10-11）
+
+- 40 位全上（38 full、2 thin：Elaheh, Aref & Emad Raam、Even as We Speak）。
+- 超額放行：HANA 第 9、10 次為 2025 年日本レコード大賞最優秀新人賞的第二源（第二源先例）。
+- 審稿修 13 處：
+  - out-1 審稿 5 處：Dariush 刪青年雜誌票選「最受歡迎」與學者「最受喜愛」，改「與 Googoosh 齊名」；Dick Lee 刪金像獎與 Cultural Medallion（在世者只留白金一處）；Donnie & Joe Emerson「《紐約時報》」改「一篇報紙」；Eka Sapta 刪「最具主導地位之一」；Elaheh, Aref & Emad Raam 刪「波斯音樂史上最受珍愛之一」。
+  - 保留：Elaheh 身分查無，正文只寫 Aref、Emad Raam（「這張唱片掛名的」限定，不冒認 Elaheh）；Deacon Blue 2020 全國票選；Chappell Roan 葛萊美最佳新人；Balavoine 對 Mitterrand 一句（背景）；Cecilia 佛朗哥審查一句（背景）；Dean Blunt 媒體獎不具名。
+  - out-2 審稿 8 處：Enrique Iglesias 刪祖父遭綁架（刑案）；France Gall 刪「最受讚譽之一」；Gary Wilson 276→約 240（刪 IBM 父親與 John Cage，非雙卡）；George Clanton 刪「第一個 vaporwave 音樂節」；Hayedeh「最具代表性、最有影響力之一」改「具代表性」；Hemant Kumar 正文補藝名、「最重要詮釋者之一」改「重要詮釋者」。
+  - 保留：Fito Páez「阿根廷搖滾史上最暢銷專輯」（兩源、必要例外）；Hikaru Utada《First Love》「日本史上最暢銷」（在世者唯一一處成績）；Ghantasala 參加退出印度運動入獄（政治背景一句）；Belafonte & Makeba 279 字（雙卡），專輯直面種族隔離算作品內容；Habib Mohebian「伊朗搖滾奠基者之一」以「據介紹」限縮；Lata Mangeshkar 談 Hemant Kumar（具名音樂人）；Macron 談 France Gall（官方悼詞）。
+- 稱呼：Christine and the Queens 不寫出生名與舊名、Hikaru Utada 不用性別代名詞，皆照本人意願。
+- 身分：預抓維基作廢——Crayon（蠟筆）、Denim（布料）、Dariush（人名頁）。Elaheh 是否即 Bahar Gholamhosseini 查無，正文不冒認。
+- 待本機（上線簡介）：Chaseiro「五張作品裡的第二張」（實際更多）；Christine and the Queens 簡介用出生名與「她」、「三位變裝皇后收留並命名」查無；Eka Sapta 專輯規格未核實；Donnie & Joe Emerson「三百人演奏廳」查無；Fariz RM「Sakura 是出道專輯」（1979 已有首張）；Fito Páez「14 首全由他一人譜寫」（有與 Charly García 共寫）；Gary Wilson 工作地點兩說；Giao Linh 試唱年份與本名兩說；Hemant Kumar〈Sahil Ki Taraf〉「改用進《Anupama》」（實為曲調挪用）；Belafonte/Makeba〈Nongqongqo〉與 Hayedeh「與 Mahasti 生年相差四年」未能核對。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 966 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 973 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -966,6 +966,13 @@
 | ar-d-069 | Christine and the Queens | Chaleur humaine | 三位變裝皇后收留了她，也給了她新名字 | 維基、Numéro、75secondes 都只說他在倫敦 Madame Jojo's 結識變裝表演者（含 Russella），團名『Queens』是致敬，沒有『三位』『收留』『給了新名字』的說法；人數與『收留』查無來源，建議改成『在倫敦的變裝秀場結識一群變裝皇后，團名的 Queens 即致敬她們』。 | https://numero.com/culture/musique/redcar-ex-christine-and-the-queens-annonce-un-nouvel-album-et-un-spectacle-fou/ |
 | ar-d-069 | Donnie & Joe Emerson | Dreamin' Wild | 父親…還蓋了一座可容三百人的演奏廳 | 本層讀到的維基、The Stranger、PS Audio、Spokesman-Review 都沒有提到演奏廳或三百人，無法核實，建議店主複核來源 | https://www.thestranger.com/music/the-improbable-story-of-fruitland-wa-musicians-donnie-and-joe-emerson-79103047/ |
 | ar-d-069 | Eka Sapta | Eka Sapta | 1964 年由 Mutiara 發行的這張 10 吋單聲道同名作只收八首，全是印尼各地民謠與愛國歌曲的器樂改編 | 本層讀到的 id 維基與英文維基沒有專輯層級資料，無法核實；僅提示，不判定有誤 | https://id.wikipedia.org/wiki/Eka_Sapta |
+| ar-d-069 | Fariz RM | Sakura | 這是 1980 年 2 月由 Akurama Records 發行的出道專輯 | Fariz RM 英文維基人物頁寫他 1979 年已發《Selangkah ke Seberang》為首張專輯，與 Sakura 專輯頁及 Merdeka 的『出道』說法衝突；疑為人物頁誤把歌名當專輯，建議店主在本機核對 Discogs 後決定是否保留『出道專輯』。 | https://en.wikipedia.org/wiki/Fariz_RM |
+| ar-d-069 | Fito Páez | El Amor Después del Amor | 14 首曲子全由 Fito Páez 一人譜寫 | Infobae 在同一篇文章裡寫〈La rueda mágica〉是他與 Charly García 共同創作，Aire de Santa Fe 的摘要同樣說其餘都是他寫、唯獨該曲共寫；建議改為『14 首中除〈La rueda mágica〉與 Charly García 共寫外，皆由他寫』或拿掉『全』。 | https://www.infobae.com/teleshow/2022/06/01/30-anos-de-el-amor-despues-del-amor-el-disco-mas-vendido-de-la-historia-del-rock-argentino-que-consagro-a-fito-paez/ |
+| ar-d-069 | Gary Wilson | You Think You Really Know Me | 找到時他在聖地牙哥一家成人劇院工作 | 英文維基寫成人劇院（adult theater），Shepherd Express 寫成人書店（adult bookstore），來源不一致；建議改寫成『在聖地牙哥工作』，或標明說法不一。 | https://shepherdexpress.com/music/album-reviews/gary-wilson/ |
+| ar-d-069 | Giao Linh | Sơn Ca 6 (Tiếng hát Giao Linh) | 1966 年一場文藝交流場合裡，作曲家 Thu Hồ 聽見她的歌聲，替她爭取到 Continental 的試唱機會；本名 Đỗ Thị Sinh | 年份不一致：nhac.vn 寫 1966，越南語維基寫 1967 年 Thu Hồ 聽她唱並安排試唱（越南語維基另載合約 1970 年結束，與三年合約推算較合 1967）；本名方面 VnExpress 寫 Nguyễn Thị Sinh，與 Đỗ Thị Sinh 不一致。建議簡介拿掉年份，或再找第三源確認。 | https://vi.wikipedia.org/wiki/Giao_Linh |
+| ar-d-069 | Hemant Kumar | Sahib Bibi Aur Ghulam | 片尾的〈Sahil Ki Taraf〉被刪掉，後來改用進 1966 年的《Anupama》 | 維基電影條目寫：〈Sahil Ki Taraf〉是上映後因觀眾批評而從高潮場面剪掉的歌；Hemant Kumar 後來挪用的是這首歌的曲調，用在《Anupama》（1966）的另一首〈Ya Dil Ki Suno Duniyawalo〉，不是整首歌改用。建議把「改用進」改成「曲調後來用在《Anupama》的另一首歌」。 | https://en.wikipedia.org/wiki/Sahib_Bibi_Aur_Ghulam |
+| ar-d-070 | IVE | REVIVE+ | 十二軌合計 34:22 | 英文維基曲目表標總長 34:14，逐軌長度（3:14、2:58、2:47、2:47、3:00、2:48、2:51、2:50、2:50、2:42、2:03、3:24）相加恰為 34:14；事實庫的 MusicBrainz 摘錄也無 34:22。 | https://en.wikipedia.org/wiki/Revive%2B |
+| ar-d-070 | IVE | REVIVE+ | 最短的〈In Your Heart〉2:04 | 英文維基曲目表寫 2:03（與總長 34:14 可相加吻合）；1 秒差距，建議主線以 MusicBrainz 或官方錄音長度再核一次。 | https://en.wikipedia.org/wiki/Revive%2B |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
