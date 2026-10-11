@@ -1154,3 +1154,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Fela 2026 年入選搖滾名人堂「第一位入選的非洲獨立藝人」（限定 solo，排除 Freddie Mercury 反例）；Fela 反軍政府與「Black President」外號一句（背景）；Freddie Aguilar 不寫〈Bayan Ko〉與人民力量革命（政治）；Stelios Kazantzidis 與 Manos Hatzidakis 談 Haris Alexiou、Bonnie Raitt 與 Jackson Browne 之於 Habib Koité（具名音樂人）。
 - 身分：Goat 預抓維基是山羊，已作廢；İbrahim Tatlıses 照來源寫父親阿拉伯人、母親庫德人，不寫成「庫德裔」。
 - 待本機（上線簡介）：Eek-A-Mouse「押中賽馬」與《Wa-Do-Dem》首發廠牌；Elomar 首張專輯年份與廠牌、Discoteca Básica 名次；Fela with Ginger Baker「與 Tony Allen 對打」查無、Land Rover 年份；Femi Kuti 專輯序數；Franco & Tabu Ley「全片」用語；Freddie Aguilar「譯本數以百計」（實為數十種語言）；Gamelan Semar Pegulingan「約十七世紀」、殘句、編號；Grupo Niche 專輯序數；Habib Koité「把吉他調成五聲音階」；Hariprasad Chaurasia「改用左手吹奏」寫成定論；Herbs 成軍年、Tatlıses 走紅年、Impact All Stars 年份、Inner Circle 的 Jacob Miller 加入年份，皆來源不一。
+
+## ar-d-079（2026-10-11）
+
+- 37 位上架（35 full、2 thin：King General Bucks Up Pon De Bush Chemists、Liz Story）。3 位不寫：Johnny Clarke、Josey Wales（全部事實只出自維基家族，第二源逐句照抄維基）、Lidj Incorporated Meets Sound Iration（只有 Discogs 單源的唱片資料）。
+- 審稿修 7 處：
+  - out-2 審稿 3 處：Lucho Bermúdez「最重要之一」改「重要」；Mahlathini「最突出的一位」改「代表人物」；Mighty Sparrow「最偉大之一」改「代表人物」。寫作層不寫 Lidj Incorporated Meets Sound Iration（只有 Discogs 單源的唱片資料）。
+  - 保留：Max Romeo〈Let the Power Fall〉成為 1972 年大選主題曲（背景一句）；Letta Mbulu 流亡與國家勳章（背景一句、在世者一處）；Lord Kitchener「11 次 Road March，長年是歷來最多」；Mighty Sparrow 2026 年 9 月過世（維基與 AP 兩源）、Max Romeo 2025 年過世；Quincy Jones 談 Letta Mbulu、Joe Strummer 點名 Leroy Smart（具名音樂人）。
+  - out-1 審稿 4 處：Juanes 刪兩場跨國和平音樂會（政治活動）；Judy Mowatt 刪《Black Woman》「女性做過最好的雷鬼專輯」；Kassav'「最具影響力之一」改「具影響力」；Kudsi Erguner「最知名之一」改「知名」。寫作層不寫 Johnny Clarke、Josey Wales（全部事實只出自維基家族，第二源逐句照抄維基）。
+  - 保留：Julio Iglesias 車禍傷脊椎促成學吉他寫歌（健康細節直接導向音樂，Richard Crandell 先例），「全世界商業上最成功的西班牙歌手」（兩源，在世者唯一一處）；Johnny Clegg〈Asimbonanga〉與曼德拉一句（背景）；Miles Davis 談 Kassav'、Yehudi Menuhin 談 L. Subramaniam、Lee Perry 談 Junior Byles、Chayanne 談 José José（具名音樂人）。
+- 身分：Josey Wales 預抓維基是虛構角色條目，已作廢。研究層更正派工名冊：Max Romeo 已於 2025 年過世、Mighty Sparrow 已於 2026 年 9 月過世。
+- 待本機（上線簡介）：Joe Arroyo〈La Rebelión〉世紀與「一對夫妻」說法不一；Joe Gibbs African Dub 系列起始年（1973／1975）；José José《Secretos》應為 1983；Josey Wales〈Let Go Mi Hand〉應為〈Leggo Mi Hand〉；Judy Mowatt「史上第一張女性自製」單源、「首位入圍葛萊美雷鬼獎的女歌手」有反例、Ashandan 廠牌說法不一；Kabaka Pyramid 轉向時序與結識 Damian Marley 因果顛倒；Kassav'「全程克里奧爾語」「CBS 發行」；Larry Harlow「Fania 第二支簽約樂團」來源抵觸；Laurel Aitken〈Boogie in My Bones〉1958／1959；Liz Story 把現場評語當專輯評語；Lord Kitchener「至今無人能及」已過時；Malavoi、Matumbi 成軍年各說；Mayra Andrade 與 Orlando Pantera 時序矛盾、發行年與廠牌待核；Michel Camilo & Tomatito 廠牌三說。
