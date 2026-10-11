@@ -924,3 +924,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Skara Brae 維基預抓為奧克尼遺址，已作廢；Sisa 是加泰隆尼亞的 Jaume Sisa；Satwa 是 Lula Côrtes e Lailson 的唯一專輯；Sandy Harless 另有同名女性布道歌手，未收。
 - 卡池年份存疑：Stone Angel 卡池 1974，錄音 1975 年 2 月、Seashell 1975 年發行。
 - 待本機（上線簡介）：Rosanne Cash「史上第一位單張四冠的女性鄉村歌手」只見本人說法；SamulNori「1993 年解散」與 Korea Times 推算不合；Seals & Crofts 簡介半形逗號；Seth Lakeman 簡介「全片」用語；Shu-De「圖瓦喉音 2009 年列入 UNESCO」錯（官方是蒙古申報、2010）；Sibylle Baier「兒子整理成 CD」細節兩說；Tenores di Bitti「2005 年列入」應為 2008、簡介半形標點需重排；The Albion Country Band 發行月份應為 1976 年 4 月；Sweeney's Men「Woods 進了 The Pogues」無據。
+
+## ar-d-065（2026-10-11）
+
+- 40 位全上（35 full、5 thin：The II Generation、The Search Party、The Unthanks、Turid、Vernon Wray）。The Unthanks 唯一的地位事實是某雜誌年度選，媒體名不能進正文，地位句整句不寫，只留身世與聲音。
+- 超額放行：The Weavers 第 9 次為榜首週數與年榜的第二源（第二源先例）。
+- 審稿修 3 處：最高級刪改——The Dillards「最早電氣化之一」改「早期」、The Dubliners「二十世紀最具影響力之一」改「重要」；政治——Trovante 刪「共產黨學生組織」。
+- 保留：The Kingston Trio、The Flying Burrito Brothers 的 Bob Dylan 說法；Tom Paxton 的 Steve Earle 說法；Tony Trischka 的 American Banjo Museum 名人堂官方評語「或許是根源音樂界最有影響力的五弦琴手」（名人堂官方）；Tommy Jarrell「首屆 National Heritage Fellowship 得主之一」（官方）；Toumani Diabaté 2024 年過世與 Salif Keita 悼詞；The Weavers 冷戰時期被封殺（歷史背景一句）；Trovante 首張向阿言德支持者致敬（歌詞題材）。
+- 身分：The Search Party（電視劇）、The Tree People（Mother Earth 專輯）、Turid（挪威人名消歧義）、四人聯名卡的 Bobby Patterson（Dallas 的 soul 歌手）維基預抓皆作廢；The Mountain Ramblers 非 Slate Mountain Ramblers。
+- 待本機（上線簡介）：The Dillards「Doug 因不滿新方向出走」兩說；The Dubliners「兩天賣出 4 萬張」無據、Heaney 禁播與基金會說法不符；The Fairfield Four 葛萊美 1997／1998；The Gabby Pahinui Hawaiian Band「Vol. 1 是頭一號作品」錯（第三張）；The II Generation 團名由來屬推測；The Young Tradition《Galleries》「三人無伴奏」錯（有器樂）；Tom Paxton《Ramblin' Boy》「首張專輯」需限定 Elektra；《June Apple》「Lineberry 名下沒有別的作品」錯；Toumani Symmetric Orchestra「入圍 2007 年 BBC Radio 3」未證實；Trader Horne 的 Brian Patten 與托爾金典故、Vernon Wray「Link 彈 dobro 與曼陀林」無據。

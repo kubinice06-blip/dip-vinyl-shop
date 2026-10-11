@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 927 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 930 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -927,6 +927,9 @@
 | ar-d-065 | The II Generation | Head Cleaner | 團名就是一句宣告：第二代。 | 我查到的來源（Bluegrass Hall of Fame、Bluegrass Today、DCBU、維基）都沒有解釋團名由來，這句是推測，建議刪除或改成不帶詮釋的寫法。 | https://bluegrasshall.org/inductees/eddie-adcock/ |
 | ar-d-065 | The Young Tradition | Galleries | 三人無伴奏演唱，主體是兩男一女的和聲 | 同一張《Galleries》有器樂伴奏：David Munrow 與 Early Music Consort、Dolly Collins 的 portative organ、Dave Swarbrick 的提琴與曼陀林、Sandy Denny 的鋼琴；「無伴奏」只適用於三人一般的唱法，不是這張專輯的全貌 | https://mainlynorfolk.info/peter.bellamy/records/galleries.html |
 | ar-d-065 | Tom Paxton | Ramblin' Boy | Paxton 1964 年在 Elektra 發表的首張專輯 | 維基記他 1962 年已在 Gaslight 錄過一張私製現場專輯《I'm the Man That Built the Bridges》；「首張專輯」需限定為「Elektra 首張」或「首張正式發行的錄音室專輯」，否則與維基衝突 | https://en.wikipedia.org/wiki/Tom_Paxton |
+| ar-d-065 | Tommy Jarrell, Kyle Creed, Audine Lineberry and Bobby Patterson | June Apple: Old Time Fiddling & Clawhammer Banjo | Lineberry 名下沒有別的作品，這張四人聯名就是他在 MusicBrainz 上留名的地方 | Field Recorder Collective 的《Round Peak Volume 2》（FRC110，2008）第 32 軌〈Fortune〉列 Audine Lineberry 拉低音大提琴（Kyle Creed 班鳩、Bobby Patterson 吉他），所以他並非只有這張一個錄音署名；上線簡介的說法至多限定為「MusicBrainz 上只有這張」 | https://fieldrecorder.org/?p=225 |
+| ar-d-066 | Wardruna | Runaljod – gap var Ginnunga | Einar「Kvitrafn」Selvik於2003年與Gaahl、Lindy-Fay Hella組成Wardruna | 成軍年來源不一：英文維基 Wardruna 條目寫 2003，英文維基 Einar Selvik 條目與 The Quietus 寫 2002；建議改成「2000 年代初」或再查官方說法後定案。簡介另寫歌詞以挪威語、古諾爾斯語與原始諾爾斯語寫成、哈丹格提琴手 Hallvard Kleiveland 參與，本層未查證，供店主對照。 | https://thequietus.com/?p=22265 |
+| ar-d-066 | 以莉·高露 | 輕快的生活 | 2010 年與丈夫陳冠宇到宜蘭南澳種有機稻 | 待核：2011 年 Taipei Times 報導與英文維基都寫她 2010 年回到花蓮務農並準備首張專輯，與中文維基的宜蘭南澳說法不一致；簡介採中文維基版本。 | https://taipeitimes.com/News/feat/archives/2011/11/04/2003517410 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
