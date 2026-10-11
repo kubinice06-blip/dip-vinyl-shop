@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-11｜dip-vinyl-shop｜藝人介紹第八輪二十批上線（雲端，ar-d-064～083；747 位）
+
+店主說「再二十批」→ 雲端一路接力跑完 ar-d-064～083，推分支 `claude/artist-intro-interactive-plan-ycws4h`，開 PR 等店主合併。
+
+- **結果**：上線 747 位（643 full、104 thin），不寫 52 位，審稿修 204 處。民謠、流行、世界音樂三段寫完，電子段從 d-083 開始；剩 35 批（約 1,331 個卡鍵）。
+- **新定或重申的形狀**：thin 底線是國籍身分＋一句具體聲音或方法，只有曲風標籤、掛名、陣容、曲目名的不寫；事實全來自維基家族或單一來源的不寫；電子段聲音句要點名具體手法；2025–26 年新事實要兩源、只寫年份；在世者不寫串流數字。
+- **待本機**：KV 上線簡介的修正見 `audits/ARTIST-PUB-ISSUES.md`；卡池年份存疑 14 張（清單在 rulings 收尾段）。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{research,output}/ar-d-06x～08x-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（「第八輪二十批接力」段與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：每批 `qa-artist.mjs` 只剩「缺 N 位」（即不寫名單）；`build-artist-intros.mjs` 6,556 位、64 分片有內容。沒寫 KV、seed、card_catalog（本輪不需要）。
+
 ### 2026-10-10｜dip-vinyl-shop｜店內待上架 37 張上卡池（雲端，add-20261010-shop；卡池 18,666 → 18,703）
 
 店主問「店內新增很多專輯 測試是否能正式上線」→ 盤點 40 張待上架 → 店主裁定「yufu可以跑／キャンディーズ、京のにわか雨 都是專輯／合輯不用／開跑」。雲端一次跑完，等店主合併 PR #79。
