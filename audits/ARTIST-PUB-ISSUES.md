@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 956 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 966 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -956,6 +956,16 @@
 | ar-d-068 | 高橋竹山 | 津軽三味線 | 約兩歲時因麻疹失明 | 事典（新撰 芸能人物事典、ブリタニカ等）寫『2 歲前半失明』，日文維基寫 3 歲失明；『失明』與『半失明』、歲數各書不一，建議改成『幼時因麻疹幾乎失明』 | https://kotobank.jp/word/%E9%AB%98%E6%A9%8B%E7%AB%B9%E5%B1%B1 |
 | ar-d-068 | 齊豫 & 潘越雲 | 回聲──三毛作品第15號 | 名列 1975－1993 台灣流行音樂百張最佳專輯第十一 | 本層搜尋與開頁都查不到這個名次的出處：該榜單是 1994 年陶曉清與台大人文報合作的《台灣流行音樂百張最佳專輯 1975.9-1993.1》，榜首是羅大佑《之乎者也》，但沒有找到《回聲》位列第 11 的來源；建議店主對照原書或原出處，查不到就改掉 | https://www.taipeitimes.com/News/feat/archives/2009/04/06/2003440333 |
 | ar-d-068 | 齊豫 & 潘越雲 | 回聲──三毛作品第15號 | 三毛辭世後此作被視為絕響 | 搜尋摘要有潘越雲稱《回聲》是空前絕後的傳唱，但本層未能開頁證實原話，無法確認是誰的說法；寫作時建議限縮或拿掉 | https://www.worldjournal.com/wj/amp/story/121234/9667535 |
+| ar-d-068 | Alleycats | Penyanyi | 在 Penang 的舞台上唱了將近十年，才有人請他們進錄音室 | 英文維基記載樂團 1976 年起已赴香港中環 Mocambo Club 駐唱（原訂三個月、連簽三年），之後轉往新加坡，1978 年才與 PolyGram 簽約；簡介把簽約前的十年說成只在 Penang 舞台，與「先在香港與新加坡演出」的記載不符，建議改成「在檳城、香港與新加坡的舞台上唱了將近十年」。 | https://en.wikipedia.org/wiki/Alleycats_(Malaysian_band) |
+| ar-d-068 | Alleycats | Penyanyi | 兄弟間的和聲是主要辨識點；作曲家 M. Nasir 替他們寫過大量暢銷曲 | 本層開得到的頁面（英文維基、Wong Chun Wai 專欄）都沒有「和聲」與 M. Nasir 的記載，來源僅來自事實庫研究稿，建議店主在本機另查確認。 | https://wongchunwai.com/2013/12/argyll-road-in-penang-the-street-that-made-icons/ |
+| ar-d-068 | Apelsin | Apelsin | 盤面是 1978 年 Мелодия С60-07809-10、12 吋十四軌；這是名下最早的一個發行品 | 英文維基 Apelsin 條目的 discography 寫 1978 年的發行是《Krugozor》雜誌第 11 期附的軟膠片（三首：Himaalaja、Western、Karulaul），而 LP《Apelsin》（C60-07809）列為 1980 年；簡介的 1978 年與「最早發行品」兩點都待查。只見維基單源，需店主另查 Discogs 版本頁。 | https://en.wikipedia.org/wiki/Apelsin |
+| ar-d-068 | Black Brothers | Terima Kaseh | 這支樂團出自查亞普拉，1975 年遷到雅加達 | 印尼文維基寫 1975 年遷到雅加達，Fimela 專文與 Istana FM（事實庫）寫 1976 年到雅加達或出道、英文維基《PNG & Irian Jaya Hits Vol 1》1976；各源不一致，建議店主改成不寫年份或寫『1970 年代中期』 | https://www.fimela.com/entertainment/read/2307602/lama-menghilang-band-legendaris-black-brothers-kembali-manggung |
+| ar-d-068 | Captain & Tennille | Love Will Keep Us Together | 並拿下葛萊美年度製作 | 〈Love Will Keep Us Together〉得的是第 18 屆葛萊美的年度唱片獎（Record of the Year），並入圍年度歌曲；『年度製作』不是葛萊美獎項名稱，應改為『年度唱片』。 | https://en.wikipedia.org/wiki/Love_Will_Keep_Us_Together_(album) |
+| ar-d-069 | Chaseiro | Bila | 是五張作品裡的第二張 | ANTARA（2015）稱 Chaseiro 共出七張專輯（含 2014 年《Retro 2》），總數與『五張』對不上；若『五張』只指某一階段需註明範圍，建議改成『第一張《Pemuda》（1979）之後的作品』或刪掉總數。 | https://m.antaranews.com/amp/berita/498593/cerita-tujuh-pemuda-chaseiro |
+| ar-d-069 | Christine and the Queens | Chaleur humaine | Héloïse Letissier 說過……她被帶進那幾位表演者的圈子 | 藝人 2022 年起使用陽性稱呼、2024 年改名 Rahim Claude Redcar 並請求不要沿用舊名；上線簡介用出生名與『她』，建議改寫成團名＋『他』或避開人稱。 | https://en.wikipedia.org/wiki/Rahim_Redcar |
+| ar-d-069 | Christine and the Queens | Chaleur humaine | 三位變裝皇后收留了她，也給了她新名字 | 維基、Numéro、75secondes 都只說他在倫敦 Madame Jojo's 結識變裝表演者（含 Russella），團名『Queens』是致敬，沒有『三位』『收留』『給了新名字』的說法；人數與『收留』查無來源，建議改成『在倫敦的變裝秀場結識一群變裝皇后，團名的 Queens 即致敬她們』。 | https://numero.com/culture/musique/redcar-ex-christine-and-the-queens-annonce-un-nouvel-album-et-un-spectacle-fou/ |
+| ar-d-069 | Donnie & Joe Emerson | Dreamin' Wild | 父親…還蓋了一座可容三百人的演奏廳 | 本層讀到的維基、The Stranger、PS Audio、Spokesman-Review 都沒有提到演奏廳或三百人，無法核實，建議店主複核來源 | https://www.thestranger.com/music/the-improbable-story-of-fruitland-wa-musicians-donnie-and-joe-emerson-79103047/ |
+| ar-d-069 | Eka Sapta | Eka Sapta | 1964 年由 Mutiara 發行的這張 10 吋單聲道同名作只收八首，全是印尼各地民謠與愛國歌曲的器樂改編 | 本層讀到的 id 維基與英文維基沒有專輯層級資料，無法核實；僅提示，不判定有誤 | https://id.wikipedia.org/wiki/Eka_Sapta |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

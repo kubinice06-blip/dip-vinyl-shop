@@ -996,3 +996,44 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 郭英男「魔岩居間和解」（魔岩是提告方）。
   - 野孩子「張瑋瑋早年團員」。
   - 金延幸子「發表後赴美」與「長年停止活動」。
+
+## ar-d-068（2026-10-11）
+
+- 39 位上架（30 full、9 thin：音羽信、須山公美子、黃玠 Dadado Huang、Another Sunny Day、Anthony Adverse、BOYNEXTDOOR、Brighter、Buffalo Tom、Camila Cabello）。1 位不寫：Bad Dream Fancy Dress（聲音句只剩「誰寫歌製作、她們演唱」的分工，過不了 thin 門檻）。
+- 民謠段至此寫完，本批後半起進入流行段（A 至 C 字頭）。
+- 審稿修 18 處：
+  - 「南韓」改「韓國」：015B、AKMU、BoA、BOYNEXTDOOR。
+  - 最高級刪改：
+    - Alleycats 刪「史上最具影響力之一」（出自一個標了需補引用的維基條目）。
+    - Anthony Adverse 刪 él「最具影響力的廠牌之一」。
+    - Apelsin「最受歡迎之一」改「走紅」。
+    - Black Brothers 刪「1980 年代新幾內亞最受歡迎」。
+    - Burt Bacharach「最重要、最具影響力之一」改「重要人物」。
+    - Camilo Sesto「最具代表性」改「代表性」。
+  - 「第一」「唯一」刪改：
+    - 音羽信刪「唯一一張」。
+    - Celentano「把搖滾引進義大利的人」改「先驅之一」。
+    - BoA「第一位真正打開日本市場」改「先驅」。
+  - 單源刪除：
+    - 齊豫 & 潘越雲刪「最著名之一」與「羅大佑、李宗盛視為第一線人選」（d-067 已判單源）。
+    - BoA 刪出道 25 週年致敬（只有 HYBE 旗下的 Weverse 一源）。
+  - 媒體名進正文：陳昇「中央社稱」改「據報導」。
+  - 健康：Bobby Darin 刪風濕熱與心臟一句。
+  - 在世者成績：Captain & Tennille 刪「登上榜首」，只留葛萊美年度唱片。
+- 保留：
+  - 高橋竹山「被視為史上第一張津輕三味線獨奏 LP」（兩源）。
+  - Streisand「第一位以作曲者身分獲奧斯卡最佳原創歌曲的女性」（限定作曲者）。
+  - Burt Bacharach 蓋希文獎「第一次頒給作詞作曲搭檔」（官方）。
+  - Barbra Streisand & Kris Kristofferson 269 字（雙卡）。
+  - Bananarama 以「自己寫歌、自己挑形象」的 DIY 做法當方法句（地位格只有金氏紀錄，不寫）。
+  - 具名音樂人：Cornelius 談青葉市子、Ivo Linna 談 Apelsin。
+- 身分：
+  - 預抓維基作廢：After Dinner（舞台劇）、Anthony Adverse（1936 年電影）。
+  - 音羽信、黃玠預抓查無，以 Discogs 與專訪確認身分。
+- 待本機（上線簡介）：
+  - 高橋竹山「約兩歲失明」各書不一。
+  - 《回聲》「百張最佳專輯第十一」與「絕響」查無出處。
+  - Black Brothers「1975 年遷到雅加達」（另一說 1976）。
+  - Alleycats「Penang 唱了近十年」、兄弟和聲、M. Nasir。
+  - Apelsin 同名 LP 年份與「最早發行品」。
+  - Captain & Tennille「年度製作」應為「年度唱片」。
