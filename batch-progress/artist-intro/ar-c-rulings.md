@@ -1203,3 +1203,29 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：預抓維基作廢——Tradition（普通名詞）、Winston Edwards & Blackbeard（海盜，Blackbeard 實為 Dennis Bovell）。Γιώργος Μητσάκης 這張卡唱片掛 Various，正文照他擔任指揮與編曲的角色寫。
 - 卡池年份存疑：Ρίτα Αμπατζή 專輯 2013／2014；《Dub Conference》1979／1980。
 - 待本機（上線簡介）：Waldjinah〈Walang Kekek〉走紅年份應屬另一首；Zouk Machine「蟬聯九週」「銷量逾百萬」「1989 年 10 月 Ariola」；Απόστολος Καλδάρας「五萬張、希臘第一張金唱片」查無；Μαρκόπουλος & Ξυλούρης「1976 年國際民間音樂首獎、頒了兩次」查無；Γιώργος Νταλάρας「超過五十萬張」；Μαρίκα Παπαγκίκα「第一家 café-aman」「只有三件樂器」；Μάρκος Βαμβακάρης「1934 年」應為 1932；Ρόζα Εσκενάζυ 生年與出道唱片公司、「一晚 200 德拉克馬」；សូ សាវឿន「1962 年發第一張唱片」單源、外號英文兩說。
+
+## ar-d-083（2026-10-11）
+
+- 36 位上架（28 full、8 thin：:wumpscut:、2562、Amnesia Scanner、Andrés、Arms and Sleepers、ASTRO、Barker、Baths）。4 位不寫：AKIO / OKIHIDE、Astral Engineering、Avrocar（聲音格查無）、Andrei Zueff（電子段要求具體手法，只剩「輕鬆聆聽取向」標籤與編曲掛名）。
+- 電子段從這一批開始。新定的形狀：電子段的聲音句必須點名具體手法（器材、取樣來源、錄音方式），「ambient／chill-out」這類曲風標籤不算。
+- 審稿修 11 處：
+  - out-1 審稿 5 處：Ado 刪〈うっせぇわ〉串流次數與「最年輕達成紀錄」（在世者串流數字不寫，只留流行語大賞）；Afrika Bambaataa「最早之一」改「早期」、「史上最具影響力之一」改「極具影響力」；Akira Yamaoka「最早之一」改「早期」。另撤下 Andrei Zueff（電子段要求具體手法，這篇只剩「輕鬆聆聽取向」標籤與編曲掛名）；寫作層不寫 AKIO / OKIHIDE（聲音與地位兩格查無）。
+  - 保留：Afrika Bambaataa 2026 年過世（只寫年份，不寫死因與指控）；Andreas Vollenweider「新設類別第一位得主」（事實）；Goldie 談 Alex Reece（具名音樂人）；Anohni《Hopelessness》的政治題材（專輯主題）。
+  - out-2 審稿 6 處：Argo「最早期…之一」改「早期」；Armando「最早看出 TB-303 潛力…之一」改「早期」；Aube「最重要的 noise 音樂人之一」改「重要」；Aventura「最有影響力」改「具影響力」、刪「這個曲風最大的明星」；Banco de Gaia 刪西藏支持團體與中國鐵路計畫一句（政治），只留蒸汽火車取樣與命名由來；Arms and Sleepers 刪「父親死於那場戰爭」（死因／家庭傷痛）。寫作層不寫 Avrocar、Astral Engineering（聲音格查無）。
+  - 保留：Ariel Kalma 2025 年過世（家屬悼念頁＋RVNG 悼文兩源，只寫年份）；Aril Brikha 的 DJ 轉速軼事（具體、非最高級）。
+- 卡池年份存疑：Avrocar 1999／2000。
+- 待本機（上線簡介）：Afrika Bambaataa〈Planet Rock〉「史上第一張金唱片 12 吋」與「Kraftwerk 成員列名詞曲」未核實；Alex Reece「jazzstep 定型之作」應改 two-step；Anthony "Shake" Shakir 的 SP-12 型號查無、Puzzlebox 為合辦；Aril Brikha「以 Art of Vengeance EP 出道」不對；Aube《Spindrift》「名下最早」不對（1991 年已有《Hydrophobia》）；Aventura 成團年份 1993／1994；另有 A Tribe Called Red、Andreas Vollenweider 兩條（見 ARTIST-PUB-ISSUES）。
+
+## 第八輪收尾（ar-d-064～083，2026-10-11）
+
+- 二十批全數上線：747 位（643 full、104 thin），不寫 52 位，審稿修 204 處（含 d-077 回補 1 處）。
+- 範圍：民謠、流行、世界音樂三段寫完；電子段從 d-083 開始。剩 35 批（約 1,331 個卡鍵）未上線。
+- 本輪新定或重申的形狀：
+  - thin 底線＝國籍身分＋一句具體聲音或方法；只有曲風標籤、掛名、陣容、曲目名都不算，一律不寫。
+  - 全部事實只來自維基家族或單一來源 → 不寫。
+  - 電子段聲音句要點名具體手法。
+  - 2025–26 年新事實（過世、新作）要兩個獨立來源，只寫年份，不寫死因。
+  - 在世者不寫串流數字。
+- 待本機：
+  - KV 上線簡介的修正：見 `audits/ARTIST-PUB-ISSUES.md`（本輪各批「待本機」條目）。
+  - 卡池年份存疑清單：Trouble、Kim Jung Mi、Modern Folk Üçlüsü、Stone Angel、Kelly Clarkson《Breakaway》2003／2004、The Shirelles 1960／1961、Пугачёва《Зеркало души》1977／1978、Selda 1975／1976、Tenor Saw《Fever》1985／1986、The Disciples《Infinite Density of Dub》、Sussan Deyhim《Madman of God》、Ρίτα Αμπατζή 2013／2014、《Dub Conference》1979／1980、Avrocar 1999／2000。
