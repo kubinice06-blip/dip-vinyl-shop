@@ -1142,3 +1142,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 審稿 7 處：Count Ossie & The Mystic Revelation of Rastafari、Dalida、Derrick Harriott（兩處）、Eddy Grant 的「最早之一」改「早期」；Count Ossie & The Rasta Family 刪「開風氣之先、近乎神話」（一篇樂評加一篇廠牌文案）；Daddy Yankee 刪遭流彈擊中一事（刑案）；Dao Bandon 歌詞題材刪「大麻」。寫作層不寫 Dub Ghecko（只有國別與資料庫標籤）。
   - 保留：Derrick Morgan 獨立六十週年 Music Icon Award 表彰詞「唯一同時佔滿榜單一到七名」（官方表彰詞）；Dadawah 即 Ras Michael、Order of Distinction（官方）；Eddy Grant〈Gimme Hope Jo'anna〉遭南非政府查禁（背景一句）；Quincy Jones 與 Stevie Wonder 之於 Djavan、Bobby Sanabria 談 Dom Um Romão（具名音樂人）。
 - 待本機（上線簡介）：Boubacar Traoré「1968 年政變後從廣播消失」查無；Cheikh Lô 移居年應為 1981、《Né la thiass》不是出道作；Cheikha Rimitti《Sidi Mansour》的 East Bay Ray 查無；Cornell Campbell 曲名應為 Greenwich Farm；Count Ossie《Grounation》標題曲「近半小時」（維基作逾 30 分鐘）；Çudamani 發行年 2001／2002；Dalida《Le Temps des fleurs》簡介整段寫 Luigi Tenco 之死與輕生，與「不寫死因」衝突，建議改寫；Derrick Morgan〈Housewives' Choice〉年份與政府合照收場；Dur-Dur Band「Bob Marley 與寶萊塢影響」「紅到衣索比亞等地」查無；Eddy Grant The Equals 成軍應為 1965。
+
+## ar-d-078（2026-10-11）
+
+- 37 位上架（32 full、5 thin：Gamelan Semar Pegulingan、Ghazal、Goat、Hughie Izachaar、Idjah Hadidjah）。3 位不寫：Impact All Stars、Jah Free、Jah Stitch（理由見下）。
+- 超額放行：Ghazal 第 9、10 次為葛萊美入圍名單與成軍年的第二源（第二源先例）。
+- 審稿修 11 處：
+  - out-2 審稿 5 處：Herbs 刪「和奧克蘭的政治運動連在一起」（政治只留反核歌一句）；Hopeton Lewis「最早的 rocksteady 錄音之一」改「早期」；Hwang Byungki「開啟創作國樂」改「開拓者」；İbrahim Tatlıses「最知名、最成功之一」改「代表歌手」；Izrael「最受歡迎、最具影響力之一」改「具影響力」。另撤下 Impact All Stars（身分與成員未確認，聲音句只剩「收器樂曲與 dub 版本」的格式說明）、Jah Stitch（全部事實只出自維基家族）；寫作層不寫 Jah Free（只有國別、製作掛名與一場活動）。
+  - 保留：Hossein Alizadeh & Djivan Gasparyan 277 字（雙卡）；Ini Kamoze〈Here Comes the Hotstepper〉Hot 100 冠軍（在世者唯一一處）；Inner Circle 只寫 Jacob Miller 1980 年過世，不寫死因；Héctor Lavoe 談 Ismael Rivera、The Bug 談 Jah Shaka、Sly Dunbar 談 Jimmy Riley（具名音樂人）。
+  - out-1 審稿 6 處：Eek-A-Mouse 刪「常下注」、「最早被形容為 singjay 之一」改「早期」；Franco & Tabu Ley Rochereau 刪 TPOK Jazz「最受歡迎也最有影響力」改「極具影響力」；Freddie Aguilar 刪〈Anak〉「菲律賓史上最暢銷」；Garnett Silk 刪「牙買加銷量最好之一」。
+  - 保留：Fela 2026 年入選搖滾名人堂「第一位入選的非洲獨立藝人」（限定 solo，排除 Freddie Mercury 反例）；Fela 反軍政府與「Black President」外號一句（背景）；Freddie Aguilar 不寫〈Bayan Ko〉與人民力量革命（政治）；Stelios Kazantzidis 與 Manos Hatzidakis 談 Haris Alexiou、Bonnie Raitt 與 Jackson Browne 之於 Habib Koité（具名音樂人）。
+- 身分：Goat 預抓維基是山羊，已作廢；İbrahim Tatlıses 照來源寫父親阿拉伯人、母親庫德人，不寫成「庫德裔」。
+- 待本機（上線簡介）：Eek-A-Mouse「押中賽馬」與《Wa-Do-Dem》首發廠牌；Elomar 首張專輯年份與廠牌、Discoteca Básica 名次；Fela with Ginger Baker「與 Tony Allen 對打」查無、Land Rover 年份；Femi Kuti 專輯序數；Franco & Tabu Ley「全片」用語；Freddie Aguilar「譯本數以百計」（實為數十種語言）；Gamelan Semar Pegulingan「約十七世紀」、殘句、編號；Grupo Niche 專輯序數；Habib Koité「把吉他調成五聲音階」；Hariprasad Chaurasia「改用左手吹奏」寫成定論；Herbs 成軍年、Tatlıses 走紅年、Impact All Stars 年份、Inner Circle 的 Jacob Miller 加入年份，皆來源不一。

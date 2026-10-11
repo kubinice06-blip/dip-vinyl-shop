@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1050 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1066 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1049,7 +1049,23 @@
 | ar-d-078 | Eek-A-Mouse | Wa-Do-Dem | 1981 年由 Junjo Lawes 製作，先在牙買加以 Volcano 廠牌發行，隔年英國 Greensleeves 接手（GREL 31） | Greensleeves 官網頁把 GREL 31 標為 1982 年、稱為他的首張專輯；英文維基也把《Wa Do Dem》放在 1982 年。『1981 年先由 Volcano 發行』我沒查到第二個來源可證實，建議本機以 Discogs 核對首發年份與廠牌再決定是否保留。 | https://greensleevesrecords.co.uk/release/wa-do-dem/ |
 | ar-d-078 | Elomar | Das Barrancas do Rio Gavião | 1973 年由 Philips 發行的首張專輯 | 葡文維基寫首張專輯發行於 1972 年；UFMG 學報唱片目錄與 Jornal da Paraíba 寫 1973 年、廠牌寫 Polygram。年份與廠牌各家不一，建議本機以 Discogs 核對原盤再決定寫法，或改成較保守的措辭。 | https://periodicos.ufmg.br/index.php/permusi/article/view/39699 |
 | ar-d-078 | Elomar | Das Barrancas do Rio Gavião | Discoteca Básica 五百大唱片名單列第 403 名 | 本層沒有找到可開頁的來源證實這個名次；若本機也查不到，建議刪除。 | https://pt.wikipedia.org/wiki/Elomar |
+| ar-d-078 | Fela Ransome-Kuti and the Africa '70 with Ginger Baker | Live! | Ginger Baker 在部分曲目擔任鼓手，與 Africa '70 的 Tony Allen 對打 | 目前查到 Baker 與 Allen 的鼓二重奏是 1978 年柏林爵士節的錄音，後來才作為再版加碼曲收進來；1971 年倫敦這次錄音裡兩人是否同曲『對打』，我沒有可開的來源證實（維基只說 Baker 在部分曲目打鼓，Horizon 評介說 Baker 在開場曲代打 Allen）。建議把『對打』改成較保守的措辭。 | https://horizonrecords.net/fela-kuti-ginger-bakers-legendary-1971-collaboration-live-has-been-reissued-on-red-vinyl-for-its-50th-anniversary-with-previously-unreleased-material |
+| ar-d-078 | Fela Ransome-Kuti and the Africa '70 with Ginger Baker | Live! | 他當時正開著 Land Rover 深入非洲學節奏 | Baker 的非洲之行年份各家不一（Horizon 寫 1969 年開 Land Rover 從歐洲出發；NPR 訃聞摘要寫 1971 年才搬去奈及利亞），『當時』與錄音（1971 年 7 月）是否同時不明；建議改成『他前往非洲向當地節奏取經』。 | https://en.wikipedia.org/wiki/Live!_(Fela_Kuti_album) |
+| ar-d-078 | Femi Kuti | Shoki Shoki | Fela 的長子 Femi Kuti 在 1998 年交出的第四張專輯 | 英文維基《Shoki Shoki》條目寫它是第二張錄音室專輯、承接 1995 年的《Femi Kuti》；其他簡介另列 1989 年首作，序數算法不一，『第四張』我找不到任何來源支持。建議刪除序數。 | https://en.wikipedia.org/wiki/Shoki_Shoki |
+| ar-d-078 | Franco & Tabu Ley Rochereau | Omona Wapi | 全片只收四首長篇 | 用語規則：『全片』不可用來指整張專輯；事實本身無誤（維基與 Christgau 頁都列四首，約八分鐘一首），只是措辭，可改成『全輯』或『共四首』。 | https://en.wikipedia.org/wiki/Omona_Wapi |
+| ar-d-078 | Freddie Aguilar | Anak | 譯本與翻唱版本數以百計 | 我查到的說法是翻成 26 至 51 種語言、在 53 國被翻唱，沒有任何來源說『數以百計』；建議改成『譯成數十種語言』之類的保守寫法。 | https://www.sunstar.com.ph/cebu/freddie-aguilars-life-in-6-powerful-moments |
+| ar-d-078 | Gamelan Semar Pegulingan | Gamelan of the Love God | Semar pegulingan 約自十七世紀傳下 | 年代各家不一：維基寫約十七世紀；Smithsonian 的 Yamin 專文說起源不明、部分峇里學者推十六世紀。建議改成『相傳已有數百年歷史』之類較保守的寫法。 | https://asia-archive.si.edu/essays/article-yamin |
+| ar-d-078 | Gamelan Semar Pegulingan | Gamelan of the Love God | 加美蘭,gamelan semar pegulingan。 | 簡介最後一句像是殘句或重複詞，與前文語氣不連貫，建議本機檢視是否為生成殘留並刪除。 | https://www.nonesuch.com/albums/bali-gamelan-semar-pegulingan-gamelan-love-god |
+| ar-d-078 | Gamelan Semar Pegulingan | Gamelan of the Love God | 1972 年 6 月收進 Nonesuch Explorer 系列（H-72046） | Nonesuch 官網只寫 1972 年首度發行、2003 年重發，沒有寫 6 月或編號；『6 月』與『H-72046』我沒有找到可開頁的來源，建議本機核對 Discogs。 | https://www.nonesuch.com/albums/bali-gamelan-semar-pegulingan-gamelan-love-god |
 | ar-d-078 | Grupo Niche | Cielo de Tambores | 是 Grupo Niche 的第十二張 | 西班牙文維基《Cielo de tambores》條目寫為 Niche 的第十張錄音室專輯（前一張 1989《Sutil y contundente》、後一張 1991《Llegando al 100%》），發行日 1990 年 12 月 20 日、Codiscos、Billboard 熱帶榜第 3 與上線簡介一致；序數只見單源，需另查 Discogs 或廠牌目錄後再改。 | https://es.wikipedia.org/wiki/Cielo_de_tambores |
+| ar-d-078 | Habib Koité & Bamada | Ma Ya | 把吉他調成五聲音階、大量使用空弦 | 維基、官網與經紀簡介皆這樣寫，但《Acoustic Guitar》2002 年 2 月的專文指出他多半是標準調弦，只在少數曲目改動個別弦，五聲音階是旋律的模式而非調弦；兩種說法並存，建議改成「旋律建立在傳統五聲音階上、大量使用空弦」或自行裁定。 | https://dannycarnahan.com/writing/habib-koite-out-of-africa/ |
+| ar-d-078 | Hariprasad Chaurasia | Rag Ahir Bhairav | 後拜 Maihar 一脈的 Annapurna Devi 為師，為表決心改用左手吹奏 | 維基與 modeindia 皆寫兩種版本：一說她只肯在他放掉先前所學的條件下教他，另一說是他為表決心主動改成左手吹奏；上線簡介把後者當成定論，建議改成「至今以左手吹奏」或註明說法不一。 | https://en.wikipedia.org/wiki/Hariprasad_Chaurasia |
+| ar-d-078 | Herbs | Light of the Pacific | Herbs 1979 年組於奧克蘭 | 成軍年份來源不一致（維基 1978；Fiji Times 與 1news 1979；audioculture 約 1970 年代中期）。不算確定錯誤，建議改成不寫年份或標「約」。 | https://en.wikipedia.org/wiki/Herbs_(band) |
+| ar-d-078 | İbrahim Tatlıses | Fosforlu Cevriyem | 一九七七年以《Ayağında Kundura》一炮而紅 | 走紅年份來源不一致（維基 1977；Inside Out in Istanbul 說 1978 年專輯創銷售紀錄；biyografiler.com 說該曲收在 1975 年專輯；土耳其維基說 1974 年因這首歌出名）。不算確定錯誤，建議保守寫成「1970 年代後期」或不寫年份。 | https://www.insideoutinistanbul.com/ibrahim-tatlises/ |
+| ar-d-078 | Impact All Stars | Java Java Java Java | 1973 年在 Studio 17 做出的器樂盤 | roots-archives 把 Impact 廠牌的《Java Java Java Java》列為 1972 年 LP；維基 Clive Chin 條目則寫 Java Java Dub 為 1973 年。年份來源不一致，建議簡介保守處理或標「約 1972 至 1973」。 | https://www.roots-archives.com/artist/143 |
+| ar-d-078 | Inner Circle | Everything Is Great | 1974 年起以 Jacob Miller 為固定主唱 | Miller 加入年份來源不一致（維基 1974；Observer 與 encyclopedia.com 1975）。不算確定錯誤，建議不寫年份。 | https://www.jamaicaobserver.com/2019/08/25/coming-full-circle-20231029-0304-412450 |
+| ar-d-079 | Joe Arroyo y La Verdad | Musa Original | 〈La Rebelión〉唱十七世紀卡塔赫納一對非洲奴隸夫妻的反抗 | The Arts Desk 訃聞說故事設在 16 世紀的卡塔赫納、起因是一名男子虐待黑人女子，El Heraldo 專欄則把歌連到 17 世紀的逃奴領袖 Benkos Biohó，兩處都沒有「一對夫妻」的說法；世紀與人物說法不一，建議改成「殖民時期的非洲奴隸反抗」或回歸歌詞本身確認。 | https://www.theartsdesk.com/new-music/joe-arroyo-1955-2011 |
+| ar-d-079 | Joe Gibbs & The Professionals | African Dub All-Mighty Chapter 3 | African Dub系列從1973年做到八〇年代 | VP Records 專頁寫該系列是 1975 至 1979 年間分四章發行；搜尋摘要另提到有稀少的 1984 年第五章版本，但「1973 年」沒有任何開頁讀到的來源支持。建議改為「1975 年起」。 | https://www.vprecords.com/exploring-joe-gibbs-lp-african-dub/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
