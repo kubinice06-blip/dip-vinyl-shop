@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1009 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1020 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1007,8 +1007,19 @@
 | ar-d-074 | 坂本九 | Sukiyaki and Other Japanese Hits | 歌手 1985 年死於日航 123 便空難 | 事實無誤；但本批特注「坂本九、周璇不寫死因」，建議簡介只留「1985 年過世」。 | https://en.wikipedia.org/wiki/Kyu_Sakamoto |
 | ar-d-074 | 寺尾聰 | Reflections | 專輯累計164萬張，刷新井上陽水《氷の世界》紀錄，成為1980年代日本銷量最高的專輯 | 本層沒有找到「164 萬」「刷新《氷の世界》」「1980 年代最高」的來源；英文維基寫 160 萬、Real Sound 寫一年內超過 180 萬，數字互相不一致。建議簡介改成不含累計數字，或補可靠來源。 | https://realsound.jp/2021/11/post-897271.html |
 | ar-d-074 | 張信哲 | 寬容 | 隔年張信哲憑此作拿下第七屆金曲獎最佳國語歌曲男演唱人。 | 第 7 屆金曲獎（1996 年）的獎項名稱是「最佳國語男演唱人」，沒有「歌曲」二字；中文維基與鏡週刊皆寫為國語男演唱人／男歌手，且為專輯《寬容》（1995 年）。 | https://zh.wikipedia.org/wiki/%E5%BC%B5%E4%BF%A1%E5%93%B2 |
+| ar-d-075 | 沈文程 | 心事誰人知 | 1993 年台大學生吳清聖、馬世芳等人發起評選「台灣流行音樂百張最佳專輯」，本作名列第 81 名 | （待核，僅搜尋摘要）：該書《台灣流行音樂百張最佳專輯 1975.9-1993.1》為 1994 年由陶曉清與台大人文報社合作出版、一百多位專業人士投票；馬世芳屬 1993–2005 年續編的策劃群，發起人與年份的寫法可能不準；第 81 名本層沒找到可驗證的名次表（中文維基頁 404）。 | https://book.douban.com/subject/3427973/ |
+| ar-d-075 | 河合奈保子 | Daydream Coast | 由 David Foster 製作並首度赴洛杉磯錄音 | Sessiondays 的錄音名單記：David Foster 編曲第 1、2 軌並擔任鍵盤與編程，製作人欄為 Erich Bulling、Kaz Masumoto、Chie Masumoto、Paul Shiki；洛杉磯北好萊塢 Lighthouse Recorders 錄音、Sunset Sound 混音。該站可能只列部分名單，「由 David Foster 製作」是否成立請對照 Discogs 或唱片內頁。 | https://sessiondays.com/2019/06/1984-naoko-kawai-daydream-coast/ |
+| ar-d-075 | 洪榮宏 | 行船人的愛 | 他 1963 年生於日本東京，臺南鹽水人，5 歲起與父親洪一峰同台演唱，13 歲赴日學習歌唱 | 赴日年齡兩說：中文維基寫 13 歲，英文維基寫 10 歲被送往日本學音樂；建議不帶年齡或核對第三源。 | https://en.wikipedia.org/wiki/Chris_Hung |
+| ar-d-075 | 王傑 | 一場遊戲一場夢 | 一九八七年十二月飛碟唱片發行…一九八八年獲第二十五屆金馬獎最佳電影插曲…列第六十六名 | 數字寫法：上線簡介年月與屆次、名次都用中文數字，與寫作規則「年月日與榜單名次一律用阿拉伯數字」不符（1987 年 12 月、第 25 屆、第 66 名）。另：名次「第 66 名」與「作曲只出自王傑與王文清兩人之手」本層沒有核到可靠來源；李宗盛 1992 年專欄把此曲的作者寫為王文清，另有搜尋結果稱作曲或為陳志遠，作曲署名建議核對唱片內頁。 | https://udn.com/news/story/120910/7510240 |
+| ar-d-075 | 紫薇 | 綠島小夜曲 | 〈綠島小夜曲〉……是第一首在台灣正式灌製成唱片的華語創作歌曲 | 「第一首」只有中文維基導言引用單一報導（亞太日報 2013）支撐，而同條目內文寫最早由晉秦灌錄、金錢唱片公司發行；Yam 天空的周藍萍專文則寫紀露霞 1957 年前後已在中廣《好農村》節目演唱，並稱 1961 年紫薇版是「台灣自行灌錄原創國語流行歌曲的唱片」；英文維基不使用「第一首」。說法不一，建議改成「早期」或加上具名來源。 | https://zh.wikipedia.org/wiki/%E7%B6%A0%E5%B3%B6%E5%B0%8F%E5%A4%9C%E6%9B%B2 |
+| ar-d-075 | 紫薇 | 綠島小夜曲 | 歌名裡的綠島指的是台灣本島 | 這是填詞者潘英傑的主張；中文維基同條目另記周藍萍之女周揚明 2011 年考證，說此曲其實是周藍萍追求李慧倫時寫的情歌，並質疑「綠島指台灣」的說法；英文維基也只寫「潘英傑主張」。建議加上「潘英傑稱」，不寫成定論。 | https://zh.wikipedia.org/wiki/%E7%B6%A0%E5%B3%B6%E5%B0%8F%E5%A4%9C%E6%9B%B2 |
+| ar-d-075 | 細野晴臣・鈴木茂・山下達郎 | Pacific | 末曲〈コズミック・サーフィン〉則是隔年 YMO 首張專輯同名曲的原型 | YMO 首張專輯《Yellow Magic Orchestra》1978 年 11 月 25 日（日本）發行，與《Pacific》（1978 年 6 月）同年，不是隔年；英文維基兩個頁面也都沒有寫兩版「原型」的關係，只能確認同名曲出現在兩張專輯，建議改成「同年稍後 YMO 首張專輯也收錄同名曲」。 | https://en.wikipedia.org/wiki/Yellow_Magic_Orchestra_(album) |
 | ar-d-075 | 葉啟田 | 愛拚才會贏 | 此曲後來廣受台灣各階層、中國大陸與海外華人喜愛 | 用語「中國大陸」違反 2026-09-29 店主裁定（稱中國一律寫「中國」）；建議改為「中國」。 | https://zh.wikipedia.org/zh-tw/%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F |
 | ar-d-075 | 葉啟田 | 愛拚才會贏 | 粵語版《勝志雙手創》由葉振棠主唱 | 中文維基〈愛拚才會贏〉條目寫的粵語版歌名是《勝利雙手創》（梁立人作詞、葉振棠主唱、ATV《我來自潮州》），上線簡介的「勝志」疑為筆誤；本位只讀到維基單頁的擷取，建議店主開頁核對後再改。 | https://zh.wikipedia.org/zh-tw/%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F |
+| ar-d-076 | Ashkhabad | City of Love | 1993 年他們成為第一個在 Peter Gabriel 的 Real World 發片的前蘇聯樂團 | 僅英文維基條目一句、無引註，Real World 官網兩頁都沒有此宣稱，找不到獨立來源；『第一』類宣稱建議刪去或改為『成為 Real World 早期發行的中亞樂團之一』之類可查證說法。 | https://en.wikipedia.org/wiki/Ashkhabad_(band) |
+| ar-d-076 | Ashkhabad | City of Love | Charykuliev 曾在取締伊斯蘭婚禮音樂的年代因繼續演奏而被關進精神病院 | 僅英文維基單源，該句無引註且用 reportedly；建議加『據稱』或改寫成中性說法。 | https://en.wikipedia.org/wiki/Ashkhabad_(band) |
+| ar-d-076 | Astor Piazzolla & Gerry Mulligan | Summit (Reunión Cumbre) | Piazzolla 早年在巴黎聽過 Mulligan 的八重奏 | 英文維基 Octeto Buenos Aires 條目寫的是 Mulligan 的 tentet（十重奏）；另一來源只寫 Mulligan，沒有編制，建議改寫成『聽過 Mulligan 的樂團』或『十重奏』。 | https://en.wikipedia.org/wiki/Octeto_Buenos_Aires |
+| ar-d-076 | Astor Piazzolla & Gerry Mulligan | Summit (Reunión Cumbre) | 義原盤日後在德國改名《Tango Nuevo》發行 | 維基只寫 1975 年 WEA 與 Atlantic 改名《Tango Nuevo》再版，沒有說在德國；『德國』查不到來源，建議刪去地名。 | https://en.wikipedia.org/wiki/Summit_(album) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
