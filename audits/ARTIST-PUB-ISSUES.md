@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 993 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 998 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -992,7 +992,12 @@
 | ar-d-071 | Siavash Ghomayshi | Farangis | 端上這筆發行年份記 1973、載體記卡帶、十軌；『名下二十個條目裡這一張最早』 | Siavash Ghomayshi 官方網站的生平寫〈Farangis〉是 1972 年發行的首支單曲，首張專輯是 1980 年的《Khaab-e-Baroon》；卡池這張 1973 年十軌卡帶的身分與年份待核，可能是單曲名被當成專輯名登錄。簡介描述的是 MusicBrainz 登錄值，不一定算錯，但『Farangis』在藝人本人的生平裡是單曲而非專輯。 | https://siavashghomayshi.org/Biography.html |
 | ar-d-072 | Tracey Thorn | A Distant Shore | 碟只花了 138 英鎊錄成。 | The Progressive Aspect 寫 167 英鎊（兩處搜尋摘要並存兩個數字）；成本數字不一致，建議本機核對來源後再決定改不改。 | https://theprogressiveaspect.net/blog/2024/10/27/tracey-thorn-a-distant-shore/ |
 | ar-d-073 | Véronique Sanson | Amoureuse | 這張唱片在法國拿下二白金認證 | 英文維基 Véronique Sanson 條目寫的是《Amoureuse》五個月內拿到 2× Gold（二金），不是二白金；認證層級待主線查 SNEP 後改。 | https://en.wikipedia.org/wiki/V%C3%A9ronique_Sanson |
+| ar-d-073 | Wendy & Bonnie | Genesis | 錄音時 Wendy 十七歲、Bonnie 十三歲 | Jive Time Records 與 HHV 兩篇都寫姊妹在專輯發行時為十八歲與十五歲（Wendy 18、Bonnie 15）；Bonnie 2017 年過世時 63 歲，推算 1969 年約十五歲，十三歲對不上。建議改成十八歲與十五歲。 | https://jivetimerecords.com/2022/03/wendy-bonnie-genesis-skye-1969/ |
+| ar-d-073 | ထူးအိမ်သင် | မှော်ဆရာအိပ်မက် | Htoo Eain Thin 的第一張在 1987 年經 Oasis 錄音室出版，這張隔年二月接上 | 英文維基與緬文維基內文都寫他 1986 年以《Tears on the Clock》系列進入樂壇，只有緬文維基專輯表把首張列為 1987 年；來源不一致，建議把『第一張在 1987 年』弱化為『1980 年代中期出道』或查原盤 | https://en.wikipedia.org/wiki/Htoo_Ein_Thin |
 | ar-d-073 | 양희은 | 양희은 고운노래 모음 | 一九七五年底卻被朴正熙政權列為禁歌 | 禁曲年份各源不一：韓文維基寫 1974 年被列為禁曲（1973 年獲選健全歌謠）；Newsis 的金民基訃聞寫 1972 年 10 月維新之後成為禁曲。上線簡介的 1975 年底無法由本層查到的來源確認，建議店主以韓國禁曲政策史料（1975 年文公部大規模禁曲措施）確認後再決定是否修正；在此之前寫作層不要重述年份。 | https://www.newsis.com/view/NISX20240722_0002820834 |
+| ar-d-073 | ザ・スパイダース | アルバムNo.1 | 田辺昭知 1961 年組團，1964 年定型為堺正章、井上順、かまやつひろし、井上孝之、大野克夫、加藤充加上田辺的七人編制 | 吉他手名字字形存疑：上線簡介寫「井上孝之」，本層讀到的日文維基頁在同一頁的成員後續節寫「井上堯之」（2009 年自專業活動引退、2018 年過世），英文維基列為 Takayuki Inoue，通行寫法是「井上堯之」；建議店主核對後改字形。 | https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%82%B9%E3%83%91%E3%82%A4%E3%83%80%E3%83%BC%E3%82%B9 |
+| ar-d-073 | 五輪真弓 | 少女 | 錄音在 1971 年夏天於洛杉磯的 Crystal Sound 錄音室進行，前後歷時兩個月 | Sony Music 官方簡介（本層經摘要讀到）寫 1972 年 6 月前往洛杉磯、在 Crystal Sound Studio 錄首張專輯、同年 10 月出道，與上線簡介的 1971 年夏天不一致；摘要可能有誤，待本機對照原頁與日文維基確認。 | https://www.sonymusic.co.jp/artist/MayumiItsuwa/profile/ |
+| ar-d-074 | 吳鶯音 | 百代中國時代曲名典七：吳鶯音之二 明月千里寄相思 | 開頭鉤子與正文：文革時她被當作間諜批鬥 | 非事實錯誤，是邊界問題：本批特注「兩岸政治、戰爭時期政治一律不寫」，這句涉及政治運動，且本層只在中文維基找到、屬單源；請主線決定是否保留或改寫。 | https://zh.wikipedia.org/zh-tw/%E5%90%B3%E9%B6%AF%E9%9F%B3 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
