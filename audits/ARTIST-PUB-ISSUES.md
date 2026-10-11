@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1107 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1122 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1107,6 +1107,21 @@
 | ar-d-081 | Tappa Zukie | MPLA | 他向 Bunny Lee 與 Joseph Hoo Kim 拿底軌 | 維基寫他回牙買加後替 Bunny Lee 與 Lloydie Slim 工作、在 King Tubby 的錄音室 toast，本次未查到 Joseph Hoo Kim 的來源；建議對照 Discogs 製作名單後再決定是否保留。 | https://en.wikipedia.org/wiki/Tapper_Zukie |
 | ar-d-081 | Tappa Zukie | MPLA | 那是 1977 年《Man From Bosrah》的封套 | 維基同一條目正文寫 1977、作品表寫 1978，年份自相矛盾；建議核對 Discogs 後再寫年份，或改成不提年份。 | https://en.wikipedia.org/wiki/Tapper_Zukie |
 | ar-d-081 | Tappa Zukie | MPLA | 1976 年 Tappa Zukie 把〈M.P.L.A.〉這首歌與同名專輯獻給安哥拉人民解放運動 | Red Bull Music Academy 專文只說歌曲『指涉』安哥拉的解放運動戰士；『獻給』只見維基 MPLA 條目一源，建議改成『歌名取自安哥拉人民解放運動』較穩。 | https://daily.redbullmusicacademy.com/2015/05/tappa-zukie-feature/ |
+| ar-d-081 | Tomatito | Barrio Negro | 此後陪伴這位 cantaor 走完最後十八年 | 各來源對陪伴年數不一致（西文維基十八年；andalucia.com 1981 至 1992 年約十一年；biografiasyvidas 約十五年），建議改為『多年』或刪去年數 | https://www.andalucia.com/flamenco/famous-figures/tomatito.htm |
+| ar-d-082 | Waldjinah | Walang Kekek | 〈Walang Kekek〉1968 至 1969 年間紅遍全印尼，Waldjinah 從此被叫做 Si Walang Kekek | Jakarta Post 2010 年專訪把 1968–69 年讓她成名的歌寫成 Andjar Any 作曲的〈Yen Ing Tawang Ana Lintang, Cah Ayu〉，〈Walang Kekek〉只說同為大熱門，未給年份；英文維基也未給〈Walang Kekek〉年份。簡介把年份掛在〈Walang Kekek〉上，疑有誤植。 | https://www.thejakartapost.com/news/2010/05/01/waldjinah-queen-keroncong.html |
+| ar-d-082 | Zouk Machine | Maldòn (La musique dans la peau) | 1990 年在法國 Top 50 蟬聯九週冠軍 | 英文維基〈Maldòn〉頁寫累計九週登頂，但分成兩段，不是連續；Charts in France 只說九週為第一名，未稱連續。建議改為「累計九週登頂」。 | https://en.wikipedia.org/wiki/Mald%C3%B2n |
+| ar-d-082 | Zouk Machine | Maldòn (La musique dans la peau) | 銷量逾百萬張，超過任何一支安地列斯樂團 | 同名單曲的 SNEP 認證只是金唱片，維基頁註明 40 萬張僅依認證推算；逾百萬的說法只見於維基團體頁與 Charts in France，另有約 75 萬張的說法，來源互相矛盾，建議改成較保守的寫法或加限定。 | https://en.wikipedia.org/wiki/Mald%C3%B2n |
+| ar-d-082 | Zouk Machine | Maldòn (La musique dans la peau) | 1989 年 10 月由 Ariola 發行 | 維基〈Maldòn〉頁寫單曲 1990 年 5 月發行（頁面分類與描述另有 1989 的不一致寫法）；Charts in France 只說第二張專輯錄於 1989 年。專輯發行月份與廠牌本層未查到來源，建議主線核對。 | https://en.wikipedia.org/wiki/Mald%C3%B2n |
+| ar-d-082 | Απόστολος Καλδάρας | Μικρά Ασία | 五萬張的銷量讓它被視為希臘第一張金唱片 | 希臘文維基的作者條目、in.gr 2020 與 2025 的兩篇專文、圖書館館藏記錄（Lilian Voudouri 音樂圖書館：1972 年 Minos、編號 MSM 154）都沒有金唱片或銷量的說法；兩輪搜尋同樣找不到。「第一張金唱片」屬高風險宣稱，建議刪除或找到來源再寫。 | https://digital.mmb.org.gr/digma/handle/123456789/38349 |
+| ar-d-082 | Γιάννης Μαρκόπουλος & Νίκος Ξυλούρης | Ριζίτικα | 1976 年 Académie Charles Cros 的國際民間音樂首獎，表彰的是他在這張碟上的演唱；『頒了兩次——第一次只念了作曲者，忘了唱歌的人』 | 英文維基 Nikos Xylouris 條寫該院於 1971 年因《Ριζίτικα》頒他 Grand Prix du Disque；LiFO 與搜尋摘要也說 1971 年前後因這張專輯獲該院表彰，沒有 1976 年與『國際民間音樂首獎』的說法，『頒了兩次』也查無來源。建議改為不帶年份與獎項類別的寫法，或找到原始來源再寫。 | https://en.wikipedia.org/wiki/Nikos_Xylouris |
+| ar-d-082 | Γιώργος Νταλάρας | 50 χρόνια ρεμπέτικο τραγούδι | 發行後幾個月內超過五十萬張 | encyclopedia.com 寫這張是希臘唱片史上第一張白金唱片，門檻為 10 萬張；英文維基只說立刻成功。五十萬張這個數字在本層開到的來源都沒出現（希臘文維基另寫 1983 年《Τα Τραγούδια μου》才是他個人銷量最高，超過七十萬張） | https://encyclopedia.com/education/news-wires-white-papers-and-books/dalaras-george |
+| ar-d-082 | Μαρίκα Παπαγκίκα | Greek Popular and Rebetic Music in New York, 1918-1929 | Marika's 是紐約第一家 καφέ αμάν | 英文維基寫「likely the first café-aman」，並非肯定句；上線簡介寫成肯定句宜改為較保守說法 | https://en.wikipedia.org/wiki/Marika_Papagika |
+| ar-d-082 | Μαρίκα Παπαγκίκα | Greek Popular and Rebetic Music in New York, 1918-1929 | 編制只有小提琴、大提琴與丈夫的 τσίμπαλο | 英文維基寫多數錄音為 cymbalom 與大提琴，另有小提琴或單簧管，偶爾木琴；「只有」過窄 | https://en.wikipedia.org/wiki/Marika_Papagika |
+| ar-d-082 | Μάρκος Βαμβακάρης | Bouzouki Pioneer, 1932-1940 | 1934 年他進唱片公司本來只想彈琴，是樂隊長硬要他自己開口唱 | 英文維基與希臘文維基寫第一批 rebetiko 唱片錄於 1932 年（Περιστέρης 說服他用自己的聲音錄歌）；1934 與 1932 不一致，且「樂隊長」「樂隊的主唱是 Παγιουμτζής」在本層來源未見 | https://en.wikipedia.org/wiki/Markos_Vamvakaris |
+| ar-d-082 | Ρίτα Αμπατζή | I'm Burning, I'm Burning | 她 1914 年生於 Σμύρνη；2013 年由 Mississippi 與 Canary 聯名發行 | 英文維基寫出生年約 1914、有來源寫 1903；出版年份方面，一份唱片目錄搜尋結果列為 2014 年 Canary Records（未開頁）。出生年與出版年建議再查 | https://en.wikipedia.org/wiki/Rita_Abatzi |
+| ar-d-082 | Ρόζα Εσκενάζυ | Rembétissa | 1897 年生於君士坦丁堡的塞法迪猶太家庭 | 她自稱 1910 年，其他說法從 1883 到約 1905 都有，英文維基寫 1895 至 1897 之間；1897 只是希臘文維基的說法，宜改為不寫出生年或寫「約 1895 至 1897 年之間」 | https://en.wikipedia.org/wiki/Roza_Eskenazi |
+| ar-d-082 | Ρόζα Εσκενάζυ | Rembétissa | 由 Τούντας 引介進 Columbia | esefarad.com 寫 Τούντας 是 Odeon 的導演、她的首批錄音在 1929 年 9 月底；Columbia 說法來自維基；廠牌不一致 | https://esefarad.com/biography-rosa-eskenazy-1883-1980/ |
+| ar-d-082 | សូ សាវឿន | The Golden Voice of Phnom Penh, 1962-1974 | So Savoeun 1962 年發出第一張唱片，得了「金蟬鈴」的外號 | 首張唱片年份只有 Bandcamp Daily 一個來源，其他來源只把 1962 當作回顧輯標題的起點；外號英文有 Golden Cicada Bell 與 Golden Cicada's Voice 兩種寫法，建議簡介改成較保守的寫法 | https://daily.bandcamp.com/album-of-the-day/so-savoeun-the-golden-voice-of-phnom-penh-1962-1974-review |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

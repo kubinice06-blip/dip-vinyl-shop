@@ -1178,3 +1178,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Owen Gray 2025 年過世（維基與 VP Records）、Phil Pratt 2026 年 2 月過世（Jamaica Observer 等兩源）、Willie Colón 2026 年過世（AP、NPR）；Prince Jammy〈Under Mi Sleng Teng〉「被許多人視為雷鬼第一個數位節奏」；Ranking Ann〈Kill the Police Bill〉一句（背景）；《Siembra》「銷量最高之一」（必要例外，保守寫法）；George Harrison 談 Ravi Shankar、Juan Gabriel 談 Rocío Dúrcal、Dennis Alcapone 談 Phil Pratt（具名音樂人）。
 - 身分：預抓維基作廢——Moana and the Moahunters（迪士尼角色）、Mystic Eyes（Van Morrison 歌曲）、Pedro Santos（葡萄牙足球員，實為 Pedro Sorongo）。Shajarian 卡的四人是 Masters of Persian Music 巡演團成員，這張專輯人員表只有 Kalhor 與 Shajarian 等，正文不寫成四人合錄。
 - 待本機（上線簡介）：Mory Kanté《Akwaba Beach》各國榜首與「當時銷量最高的非洲唱片」單源；Mutabaruka《Check It!》不是首張（前有 1982 年現場專輯）；Orquesta Aragón 的 Rafael Lay 掌舵應為 1948、Egües 加入應為 1954；Orishas「四人都在 Amenaza」錯（只有 Yotuel 等）；Onuma Singsiri 年份與曲數待核；Phyllis Dillon〈Don't Stay Away〉錄於 1966 年底；Radio Tarifa 錄音年與地點、「1997 年美國再版」查無；Ras Michael「在 Rastafari 社群長大」錯（1950 年代才皈依）；Rasmee 獎項年份 2017／2018；Rocío Dúrcal「一個月賣一百萬張」「列入文化遺產」查無；Rokia Traoré「評審團獎」應為樂評獎；Oliver Mtukudzi 簡介寫了病名。
+
+## ar-d-081（2026-10-11）
+
+- 35 位上架（30 full、5 thin：Seun Kuti & Egypt 80、Sheila Chandra、The Disciples、The Rootsman、The Rootsman vs Muslimgauze）。5 位不寫：Sylvia Tella、The Force of Music、The Overnight Players、The Well Pack Band、Tiao Phün Muang（理由見下）。
+- 審稿修 9 處：
+  - out-1 審稿 4 處：Sabri Brothers 刪「史上最偉大的蘇非 qawwali 歌手之一」；Satyajit Ray「影史最偉大、最具影響力之一」改「重要」、刪「在病床上」；T.P. Orchestre Poly-Rythmo「最重要的廠牌」改「重要廠牌」；Tenor Saw「最有影響力之一」改「具影響力」。寫作層不寫 Sylvia Tella（聲音只剩資料庫標籤）。
+  - 保留：Sabri Brothers 1975 年卡內基廳演出「被廣泛視為 qawwali 走向西方的起點」；Sister Nancy「常被稱為第一位女性 dancehall DJ」；Selda 政治入獄一句（背景）；Staff Benda Bilili 成員小兒麻痺一句（交代團體背景）；Herb Alpert 談 Sérgio Mendes、St. Vincent 與 tUnE-yArDs 之於 Selda（具名音樂人）。T.P. Orchestre Poly-Rythmo 與 d-080 的 Orchestre Poly-Rythmo de Cotonou 是同一團的兩張卡，內容有部分重疊，可接受。
+  - out-2 審稿 5 處：The Esso Trinidad Steel Band「最早出現的一批之一」改「早期」；The Royals 刪「偉大的雷鬼專輯之一」（單一樂評）；Thomas Mapfumo 刪關押與批評新政府（政治只留旅美一句）；Tiken Jah Fakoly「最受歡迎、最受敬重之一」改「受敬重」；Tito Puente & La Lupe 刪 La Lupe「最受歡迎之一」。另撤下 The Force of Music（聲音句只剩曲名題材）、Tiao Phün Muang（身分查無，正文只剩宮廷音樂背景）；寫作層不寫 The Overnight Players、The Well Pack Band（只有發行資料）。
+  - 保留：Totó la Momposina 2026 年 5 月過世（Forbes 與 Vanguardia 兩源）；Toumani Diabaté 2024 年過世；Brian Eno 談 Tony Allen、Keith Richards 談 The Itals、Van Dyke Parks 談 Esso（具名音樂人）；The Rootsman vs Muslimgauze 的以巴題材一句（創作題材）。
+- 身分：預抓維基作廢——Selda（人名消歧頁）、Sérgio Mendes 與 Siti Nurhaliza（專輯條目）、The Royals（電視劇）。Tappa Zukie 與 Tapper Zukie 是同一人的兩張卡，分寫不同時期。
+- 卡池年份存疑：Selda 首張 1975／1976、Tenor Saw《Fever》1985／1986、The Disciples《Infinite Density of Dub》1996／1997／1999、Sussan Deyhim《Madman of God》1996／2000。
+- 待本機（上線簡介）：Sabri Brothers「1975 年首批登上卡內基廳的亞洲藝人」站不住（Ravi Shankar 1957 年已在卡內基廳演出）、「1989 年赴英巡演錄下母帶」查無；Tomatito「陪伴 Camarón 最後十八年」各源年數不一，建議改「多年」；The Silvertones「半數曲目改唱美國流行與靈魂樂」未核實；Super Cat、T.P. Orchestre Poly-Rythmo、Tappa Zukie 另有 6 條（見 ARTIST-PUB-ISSUES）。
