@@ -17,6 +17,18 @@
 
 
 
+## 研究 a 組（9021–9030）
+- **9021** 【推翻策展層年份】こだま和文《A Silent Prayer》：卡單 2010（MB first-release-date 取到 XW 全球數位上架 2010-03-17）。實為 2003-08-20 Speedstar International（VICL-61150，CD／2LP，Discogs master 979076、ja 維基皆 2003）。卡單 year 應改 2003；署名原為「Kodama (Echo) From Dub Station」，卡片掛名照卡單。
+- **9022** 【補策展層疑點】こだま和文《クワイエット・レゲエ》廠牌「MB 未載」：Discogs 為 Sony（Sony Records），SRCS 6517，1992-10-21；卡單 label 建議改 Sony Records。Lee Perry 確實參與兩首（〈Open Up The Japanese Door〉〈Japanese Rock〉，Discogs credits＋RBMA）。
+- **9023** 【推翻簡化說法】Mute Beat《Dub Wise》：ja 維基寫「Lee Perry、King Tubby、宮崎泉三人做 dub 混音」；RBMA（含今井秀行回述）顯示 Tubby 只出借名號，三首由其徒弟 Ken Fatman Gordon 在 Tuff Gong 混，Perry 僅在兩首加人聲、由 Bullwackie 在紐澤西混，宮崎泉自己混另幾首。facts 採 RBMA；寫作層不得寫成「King Tubby 親手混音」。
+- **9024** Dry & Heavy《Full Contact》：日版／英 Green Tea 版 11 首，en 維基的 13 首單其實是美國 BSI 版（少〈Tiger Claw Skank〉、多 3 首）。寫作層曲數一律寫「日版 11 首」。King Jammy 專輯 12 首含 One Punch 曲目的 dub，facts 只列確實對應本專輯曲名者。
+- **9025** Little Tempo《Super Dub》與《Super Tempo》（2005-03-30）：僅由作曲人掛名（Gershwin／Donaldson／春野高広）推定為姊妹作，Discogs 未明言逐首對應；寫作層寫「同年的姊妹作」、不寫「逐首 dub 版」。
+- **9026** Easy Star All-Stars《Dub Side of the Moon》：是逐曲改編 Pink Floyd 的專輯，非原創；Goldwasser 訪談（LiveMusicDaily，已核對原文）為點子與錄製的主要來源。thepier.org 的「榜上最高第 5」「銷量 25 萬」「Gilmour 對 BBC 說有趣」無法取得原文，與 en 維基「85000 張」衝突，一律不寫入 facts。
+- **9027** Mute Beat《Flower》《Lover's Rock》：LP 與 CD 日期不同（Discogs 6/18、MB 7/25；Discogs 7/6、MB 7/26），facts 並列，正文只用年份。ja 維基與 RBMA 對 12 吋 EP 的年月矛盾（1986 vs 1987-10／12），facts 不寫 EP 月份；en 維基把屋敷豪太寫成鍵盤手、成軍年寫 1981，與 ja 維基及 RBMA 矛盾，不採用。
+- **9028** Little Tempo《Ron Riddim》：是兩張 CD（主碟 Disc L 10 首＋迷你碟 Disc S 2 首），本卡以主碟為準；Disc S 的客座名單（Eddi Reader 等）只依 Discogs credits，不斷言身分。
+- **9029** 【反同構配置】內田直之（Naoyuki Uchida）是 Dry & Heavy、Little Tempo（兩張）、こだま和文《A Silent Prayer》的共同 dub 工程師，土生剛（Tico）／內田直之／小玉和文還組過 KTU。建議鉤子層：Full Contact 取「King Jammy 京斯敦重混＋各國版本曲目不同」；Ron Riddim 取「鋼鼓／kete 器樂編制＋dub 黑膠與 Linda Lewis 人聲版」；Super Dub 取「Rico Rodriguez＋姊妹作」；A Silent Prayer 取「隱藏曲目＋〈Still Echo〉重做」；內田直之連結最多只用一張。
+- **9030** こだま和文兩張卡掛名照卡單「こだま和文」；Discogs 署名為 Kazufumi Kodama／Kodama (Echo) From Dub Station，Mute Beat 時期成員表記為小玉和文。晚於發行的生平（1996 年《Something》、Bullwackie 合作、Fishmans 之後等）一律不寫；Fishmans 製作（1991）與 Chieko Beauty（1992）早於或同年，可寫。
+
 ## 研究 d 組（9051–9060）
 - **9051** 研究 d 組 9 張交件：`desc-tools/batches/research/add-20261011-dt2-d.json`，facts 條數 12／11／11／12／10／12／10／10／11，status 全 full。WebSearch 6 次；其餘走 MB／Discogs API 與 WebFetch。Pitchfork、BBC、Warp、AllMusic 頁面抓取被擋，未引用。QA 研究 d 組無旗標（只剩他組缺檔）。
 - **9052** 推翻／釐清策展層：Jhelisa《Language Electric》的『trip-hop 質地』『acid-jazz／broken groove』無來源（Discogs 風格 Future Jazz／Downtempo，MB 為 downtempo／electronic）；寫作層用『downtempo 加爵士與靈魂』，勿寫 trip-hop 或 Talkin' Loud。廠牌 Dorado 已確認。『第幾張個人專輯』不寫（維基與 Kalamu 文序衝突）。
@@ -56,3 +68,4 @@
 ## 主線（9091–9100）
 - **9091** Kanka《Dub Communication》（研究 b：偏 stepper、節奏緊）、Jah Wobble & Bill Laswell《Radioaxiom》（世界音樂＋groove jazz）、Dub Colossus《Addis Through the Looking Glass》（Ethio-jazz 為主）：三張照收，留在 chill dub 線（dub 譜系的延伸，屬可逆）；寫作層照研究稿描述，不寫成純 dub 或「節奏放鬆」。
 - **9092** Olive《Extra Virgin》年份照研究 c 改 1996（Discogs master、英國 RCA 首版、維基三源；MB 1997 是登頂後重發）。卡單已改。
+- **9093** こだま和文《A Silent Prayer》年份照研究 a（9021）改 2003（Speedstar 首發；MB 2010 是數位上架日）；《クワイエット・レゲエ》廠牌補 Sony Records SRCS 6517（9022）。卡單已改。
