@@ -28,3 +28,15 @@
 - **9058** 釐清策展層：The Herbaliser《Very Mercenary》是第三張專輯（Remedies 1995、Blow Your Headphones 1997），策展層『最完整的原創專輯』為評價，無來源，不寫。發行日各源不一，只寫『1999 年 4 月』；曲數維基 16、MB／Discogs 13，不寫曲數。
 - **9059** Kid Koala《Carpal Tunnel Syndrome》：『手剪黑膠進 8 軌、花四年』為維基單源，A.V. Club 另說『數個月精挑細選』，寫作層用『據說』口吻或略。Juno 2001 入圍最佳另類專輯未得（得獎 The New Pornographers《Mass Romantic》）；Polaris Heritage Prize 2018 評審票獎為追認獎，屬作品後世評價，可寫但要標年份。
 - **9060** Funki Porcini《Hed Phone Sex》：錄音室 The Uterus Goldmine 地點衝突（Discogs Walsall、Ninja Tune 簡介 Warwickshire），只寫名稱；『首張專輯』只有 Ninja Tune 簡介『first album for Ninja Tune』支持，寫作層用『在 Ninja Tune 的第一張』。維基出生日自相矛盾，不寫生年。全組克制：發行後與作品無關的生平事件（Weatherall、Jhelisa、Quantic、Red Snapper 解散等）一律不入 facts。
+
+## 研究 c 組（9041–9050）
+- **9041** 研究 c 組 9 張交件：`desc-tools/batches/research/add-20261011-dt2-c.json`，facts 條數 12／11／11／11／10／11／11／12／12，status 全 full。WebSearch 5 次，其餘走 MB／Discogs API、維基 API 與 WebFetch；Discogs 頁面、BBC、Slant 抓取被擋（403／不可取），未引用。QA 研究 c 組無旗標（只剩他組缺檔／key 集合不一致）。
+- **9042** 推翻策展層與 MB 的年份：Olive《Extra Virgin》MB 為 1997-05-19，但 Discogs master 與英國 RCA CD（74321 42163 2）皆 1996、維基專輯條目首句 originally released in 1996，1997 年是〈You're Not Alone〉重發登頂後專輯跟著重發（加附重混碟、英國專輯榜 15）。facts 寫『1996 首發、1997 重發』，**卡片年份請主線裁定**（我傾向 1996）；寫作層不得把 1997 寫成首發。
+- **9043** 推翻維基單句：Alpha《Come From Heaven》維基稱『Melankolic 的第一張發行』，但 MB 顯示 Melankolic 1996 年已有 Horace Andy《Skylarking》，故 facts 只寫『在 Melankolic 發行』，不寫『廠牌第一張』（依 research-base 廠牌第一張須反查廠牌沿革的規則退層）。
+- **9044** 釐清策展層：Prince Fatty《Survival of the Fattest》策展層寫『Brighton 的 reggae／dub』，維基只說他青少年時搬到 Brighton 再到倫敦，並在 Soho 錄音室當工程師；錄音地點為倫敦的 Fish Factory Studio（Fish Market）、The Villas 與 Mary Hare School。寫作層寫成倫敦的製作人。另：美國 Rasā 2008 版多一首〈Gin & Juice〉，英國 2007 原版十二首不含。
+- **9045** 釐清：Banco de Gaia《Maya》是 Toby Marks 第一張正式專輯，但先前有三卷自製卡帶（版權問題未商業發行），不要寫成『首度發聲』；Mercury Music Prize 維基寫送件、Sonic Immersion 寫入圍，兩源衝突，facts 取送件；UK 專輯榜 #34 與銷量為單一來源。
+- **9046** 釐清：Nordub 首度合作年份各源衝突（Molvær 訪談摘要 2014、laut.de 2015／16、官方簡介 2016 巡演），facts 只寫『先有聯合演出』，不寫確切年份；Molvær 訪談『向開餐廳的朋友借 Paradiso』來自搜尋摘要，未見原文，不寫。MB 掛名全名較長，卡片用縮短名，queryAlias 保留。
+- **9047** 同名消歧：Mono《Formica Blues》研究稿已把英國倫敦二人組（Siobhan de Maré＋Martin Virgo，1996 年底成軍）與池中日本後搖 Mono 區隔；盤面曲名 Discogs 作〈Penguin Fred〉、維基作〈Penguin Freud〉，keyTracks 不用此曲。
+- **9048** Esthero《Breath from Another》：Juno 1999 與 Polaris Heritage Prize 2016 皆『入圍未得獎』，逐項分開；經紀人姓名兩個維基條目不一致（Beau Randall／Beau Ovcaric），不寫人名；製作人 McKinney 來自明尼阿波利斯（美國），Esthero 為加拿大人；銷量只取『美國超過 10 萬、加拿大金唱片』。
+- **9049** Smoke City《Flying Away》：Marc／Mark Brown 以 Discogs 版權署名 Marc 為準；歌名盤面為 Aguas De Março（Discogs 無重音符）；Slant 榜單第 20 名僅間接取自維基，勿寫年份；專輯內頁署名繪畫者為 Miranda 的母親 Liz Thompson-Miranda（Discogs credits Painting）。
+- **9050** Martina Topley-Bird《Quixotic》：入圍 2003 Mercury（決選未得獎）、英國榜 #70；錄音地點維基同時寫洛杉磯與倫敦 Space Eko，寫作層要寫請並提；美國版《Anything》（Palm Pictures 2004）是改名重排版，不是本卡；David Arnold 客席未在 Discogs credits 找到對應，單一來源。
