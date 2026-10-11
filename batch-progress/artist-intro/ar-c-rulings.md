@@ -1190,3 +1190,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：預抓維基作廢——Selda（人名消歧頁）、Sérgio Mendes 與 Siti Nurhaliza（專輯條目）、The Royals（電視劇）。Tappa Zukie 與 Tapper Zukie 是同一人的兩張卡，分寫不同時期。
 - 卡池年份存疑：Selda 首張 1975／1976、Tenor Saw《Fever》1985／1986、The Disciples《Infinite Density of Dub》1996／1997／1999、Sussan Deyhim《Madman of God》1996／2000。
 - 待本機（上線簡介）：Sabri Brothers「1975 年首批登上卡內基廳的亞洲藝人」站不住（Ravi Shankar 1957 年已在卡內基廳演出）、「1989 年赴英巡演錄下母帶」查無；Tomatito「陪伴 Camarón 最後十八年」各源年數不一，建議改「多年」；The Silvertones「半數曲目改唱美國流行與靈魂樂」未核實；Super Cat、T.P. Orchestre Poly-Rythmo、Tappa Zukie 另有 6 條（見 ARTIST-PUB-ISSUES）。
+
+## ar-d-082（2026-10-11）
+
+- 37 位上架（36 full、1 thin：အင်းလေး မြင့်မောင်）。3 位不寫：Tradition、Victor Romero Evans、Ρίτα Αμπατζή（聲音句只剩曲風或曲種標籤）。
+- 世界音樂段至此寫完，下一批進入電子段。
+- 審稿修 17 處：
+  - out-1 審稿 9 處：Ustad Mohammad Omar 刪「第一位在美國主要大學授課的阿富汗音樂家」（兩源措辭不一）；Zainal Abidin 的 Headwind「最受歡迎之一」改「當紅」；Zeki Müren 刪「土耳其第一張金唱片」；Zouk Machine「商業上最成功」改「商業上的代表」；Αντώνης Νταλγκάς 刪「那段錄音年代最重要的歌手」；Βίκυ Μοσχολιού「最早之一」改「早期」、「最好的詮釋者之一」改「重要」；Γιάννης Μαρκόπουλος「最重要之一」改「重要」；Μαρκόπουλος & Ξυλούρης 刪 Charles-Cros 表彰（單源）。另撤下 Tradition、Victor Romero Evans（聲音句只剩曲風標籤）。
+  - 保留：Wayne Smith〈Under Mi Sleng Teng〉「被視為雷鬼數位時代的起點」（與 d-080 Prince Jammy 一致）；Willie Colón 2026 年過世；紐澤西名人堂評 Wyclef Jean（官方）；Manos Hatzidakis 談 Βίκυ Μοσχολιού、Giorgos Dalaras 談 Καλδάρας、Daud Khan Sadozai 談 Ustad Mohammad Omar（具名音樂人）；Ξυλούρης 軍政府時期「抵抗的旗幟」一句（背景）。
+  - out-2 審稿 8 處：Θάνος Μικρούτσικος、Νίκος Μαμαγκάκης、三橋美智也 三處「最重要之一」改「重要」或刪；Μαρίκα Παπαγκίκα「最早一批之一」改「早期」；Ялла「蘇聯最紅之一」改「當紅」；อังคนางค์ คุณไชย「最早之一」改「早期」；အင်းလေး မြင့်မောင် 刪「二十世紀最出色之一」（只見搜尋摘要）；សូ សាវឿន 刪 2025 年回顧輯（新近事實未見兩源）。另撤下 Ρίτα Αμπατζή（聲音句只剩曲種名）。
+  - 保留：อังคนางค์ คุณไชย 這次有 Thai PBS 與樂評兩個獨立於 EM Records 文案的來源，與 d-076 不寫的 Angkanang Kunchai With Ubon-Pattana Band 為不同卡鍵，予以上線；Μάρκος Βαμβακάρης 第一批唱片 1932 年；Θάνος Μικρούτσικος 文化部長一句與 Νίκος Ξυλούρης 軍政府時期一句（背景）；Μίκης Θεοδωράκης 談 Βαμβακάρης、추다혜 得獎感言（具名音樂人）。
+- 身分：預抓維基作廢——Tradition（普通名詞）、Winston Edwards & Blackbeard（海盜，Blackbeard 實為 Dennis Bovell）。Γιώργος Μητσάκης 這張卡唱片掛 Various，正文照他擔任指揮與編曲的角色寫。
+- 卡池年份存疑：Ρίτα Αμπατζή 專輯 2013／2014；《Dub Conference》1979／1980。
+- 待本機（上線簡介）：Waldjinah〈Walang Kekek〉走紅年份應屬另一首；Zouk Machine「蟬聯九週」「銷量逾百萬」「1989 年 10 月 Ariola」；Απόστολος Καλδάρας「五萬張、希臘第一張金唱片」查無；Μαρκόπουλος & Ξυλούρης「1976 年國際民間音樂首獎、頒了兩次」查無；Γιώργος Νταλάρας「超過五十萬張」；Μαρίκα Παπαγκίκα「第一家 café-aman」「只有三件樂器」；Μάρκος Βαμβακάρης「1934 年」應為 1932；Ρόζα Εσκενάζυ 生年與出道唱片公司、「一晚 200 德拉克馬」；សូ សាវឿន「1962 年發第一張唱片」單源、外號英文兩說。
