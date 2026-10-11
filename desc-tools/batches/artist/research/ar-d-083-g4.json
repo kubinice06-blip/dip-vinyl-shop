@@ -1,0 +1,849 @@
+[
+  {
+    "key": "astro",
+    "name": "ASTRO",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "ASTRO 是日本的 noise 計畫，1993 年由 C.C.C.C. 成員長谷川洋（Hiroshi Hasegawa）以個人計畫的形式開始。",
+            "src": "https://en.wikipedia.org/wiki/Astro_(Japanese_band)",
+            "src2": "https://musicbrainz.org/ws/2/release-group/14f589f5-ffa4-4d19-a266-b055bb8af4e2?fmt=json&inc=artist-credits+releases",
+            "from": "new"
+          },
+          {
+            "f": "長谷川洋 回顧 C.C.C.C. 早年：和搖滾樂團同台時被當成怪人，連在東京的地下音樂圈也一直是孤立的，靠著和散在日本各地的少數噪音藝人保持聯絡才撐下來；他還說自己對商業音樂沒有興趣，也做不出那樣的作品。",
+            "src": "https://www.psychedelicbabymag.com/?p=47059",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他使用各式類比器材，包括老式的 Moog 與 EMS 合成器；作品涵蓋噪音領域的多種寫法，從 space music 到帶迷幻色彩的 harsh noise。",
+            "src": "https://en.wikipedia.org/wiki/Astro_(Japanese_band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "長谷川洋 自述特別喜歡 INA-GRM 廠牌的作品，點名 Iannis Xenakis、Giacinto Scelsi、François Bayle 與 Bernard Parmegiani，偏好用拼貼與剪接（cut-up）手法做出來的音樂。",
+            "src": "https://www.psychedelicbabymag.com/?p=47059",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "預抓維基（Astro (company)）是馬來西亞衛星電視公司，與卡池《Bio-Galaxy》無關，已棄用；改用英文維基 Astro (Japanese band) 與事實庫的 MusicBrainz（藝人實體 Group／Japan／disambiguation「Japanese noise」／life-span begin 1993）。",
+      "C.C.C.C. 的成軍年：長谷川洋 自述約 1990 年，訪談刊頭記 1989 年；兩者不一致，facts 不寫 C.C.C.C. 的成軍年。"
+    ],
+    "searches": 5,
+    "failedFetches": [
+      "https://forcedexposure.com/Artists/ASTRO.HIROSHI.HASEGAWA.html（內容為空）",
+      "https://supersonicfestival.com/2011/08/24/meet-astro/（403）"
+    ],
+    "pubIssues": [],
+    "status": "thin",
+    "notes": "身分確認：卡池《Bio-Galaxy》2000 年，MusicBrainz 藝人 ASTRO（Group／Japan／「Japanese noise」／別名 ASTRO & Hiroshi Hasegawa）與英文維基 Astro (Japanese band) 一致；預抓維基抓到同名的馬來西亞電視公司，不是本人。origin 的 1993 年有英文維基與 MusicBrainz 兩源（維基與 MusicBrainz 為不同來源家族）。單源未收：2013 年起成為長谷川洋與 Rohco（Hiroko Hasegawa）二人組、Rohco 自 2009 年起同台（只見英文維基，成員異動年份，屬高風險，不收）；長谷川洋生於 1963 年（搜尋摘要，未開頁）。legacy 查無有出處的共識評價或後輩點名（英文維基為極短條目，無影響與評價段落），標 none。訪談來源 psychedelicbabymag 的主題以 C.C.C.C. 與長谷川洋本人為主，受訪者談 Astro 的段落沒有；已把可用的人物與場景說法歸 origin、審美歸 sound。D 級單卡素材偏薄，寫作層宜短寫。"
+  },
+  {
+    "key": "aube",
+    "name": "Aube",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Aube 是 中嶋昭文（Akifumi Nakajima）的藝名，1959 年 1 月 13 日生於京都，2013 年 9 月 25 日過世，享年 54 歲。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "src2": "https://musicbrainz.org/ws/2/artist/c57d8c1f-e8a9-442e-9700-1821f165460a?fmt=json",
+            "from": "new"
+          },
+          {
+            "f": "中嶋昭文 本業是工業設計師，1980 年代起對聲音創作產生濃厚興趣。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他不喜歡用「music」稱呼自己的作品，偏好「design」；他說過：「我不認為自己是音樂家或藝術家，我是設計師，所以我也把自己的聲音作品視為設計。」",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "中嶋昭文 的錄音有個核心原則：每張唱片只用單一素材來源，再用各式電子器材加工；他用過的來源包括空氣、水、日光燈、壓控振盪器、人聲、肺音、聖經書頁與鋼絲。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他早期的錄音多半以水為素材，不論是靜水或水龍頭、溪流般的水聲；早期作品偏吵，後期偏向 ambient；有的專輯長約三十分鐘，有的是一段六十分鐘的單曲。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他常接受廠牌「點單」：1998 年美國廠牌 Elsie and Jack Recordings 要他以聖經書頁互相摩擦的聲音做一張專輯，成品《Pages From The Book》的首批附有錄音所用書頁的碎片；他的原則是「素材有趣我就接」。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他把卡帶包裝當成作品的一部分：每盒都有手工感的 J-card 與編號貼紙、產量極少；1994 年《E-Power》每盒附一片 X 光片碎片，1995 年《Squash》裝在壓扁的鐵罐裡，1997 年《Aqua Syndrome》附一袋藍色的水。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1993 年的《Luminous》是為藝術裝置而寫的，裝置用閃爍的日光燈，專輯的聲音素材就是日光燈與輝光燈。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "英文維基稱他是同時代最重要的 noise 音樂人之一。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他自營 G.R.O.S.S. Records，用它發行自己與其他幾位音樂人的作品，再與各地廠牌合作，把 Aube 的音樂發到亞洲、北美與歐洲。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "src2": "https://itunes.apple.com/lookup?id=1688042535&country=us&entity=song&limit=200",
+            "from": "new"
+          },
+          {
+            "f": "他的大批錄音近年多有重新發行，不過大半至今不在串流平台上。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Hydrophobia》（1991 年，日本 Vanilla 廠牌）是他以水為素材的早期作品之一，英文維基列為他最知名的專輯之一。",
+            "src": "https://en.wikipedia.org/wiki/Aube_(musician)",
+            "src2": "https://musicbrainz.org/ws/2/release-group?query=artist:aube%20AND%20releasegroup:hydrophobia&fmt=json",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "上線簡介《Spindrift》說它是中嶋昭文「名下最早的一筆」；事實庫的 MusicBrainz 目錄頁依 first-release-date 排序時把 Spindrift（1992-05-25）排在最前，但 MusicBrainz 另有《Hydrophobia》EP（first-release-date 1991），英文維基也列 Hydrophobia（1991，Vanilla，日本）；採「Spindrift 不是最早」，列 pubIssues。"
+    ],
+    "searches": 4,
+    "failedFetches": [
+      "https://media.brainwashed.com/index.php/akifumi-nakajima-1959-2013（301）",
+      "https://www.brainwashed.com/index.php/akifumi-nakajima-1959-2013（404）",
+      "https://tinymixtapes.com/node/135178（302 與 500，三次嘗試）"
+    ],
+    "pubIssues": [
+      {
+        "album": "Spindrift",
+        "claim": "1992 年 5 月的原件是他自營廠牌 G.R.O.S.S. 的卡帶、編號 GR-001，也是他名下最早的一筆",
+        "problem": "MusicBrainz 有《Hydrophobia》EP（first-release-date 1991），英文維基也列 Hydrophobia（1991，Vanilla，日本）為他早期以水為素材的作品，故 Spindrift 不是名下最早的一筆；「G.R.O.S.S. 的第一張」另有搜尋摘要支持，但「名下最早」宜刪或改為「G.R.O.S.S. 廠牌的第一張」。",
+        "src": "https://musicbrainz.org/ws/2/release-group?query=artist:aube%20AND%20releasegroup:hydrophobia&fmt=json"
+      }
+    ],
+    "status": "full",
+    "notes": "身分確認：卡池《Spindrift》1992 年，Apple Music ℗ 1992 G.R.O.S.S. 與英文維基一致，無同名混卡。生卒日有英文維基與 MusicBrainz 兩源一致（死因不收）。legacy 的「最重要 noise 音樂人之一」只見英文維基首段（單源、同站家族）；Brainwashed 悼文與 Tiny Mix Tapes 未能開頁（搜尋摘要稱 Brainwashed 悼文讚 G.R.O.S.S. 的包裝是該領域最令人印象深刻者之一，未收）。維基「1993 年受託為藝術裝置做音樂、之後產量龐大」與 MusicBrainz 上 1991、1992 年已有發行不相容，未收。2013 年過世的消息遲至 12 月才傳開、死因為氣胸，死因依規則不收。"
+  },
+  {
+    "key": "aventura",
+    "name": "Aventura",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Aventura 在紐約布朗克斯（The Bronx）組成，成員是主唱 Romeo Santos（本名 Anthony Santos）、吉他 Lenny Santos、貝斯 Max Santos 與人聲 Henry Santos。",
+            "src": "https://en.wikipedia.org/wiki/Aventura_(band)",
+            "src2": "https://www.bronxwalkoffame.com/inductees/aventura",
+            "from": "new"
+          },
+          {
+            "f": "四位成員都是多明尼加裔；Romeo Santos 母親那一側另有波多黎各血統。",
+            "src": "https://en.wikipedia.org/wiki/Aventura_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "團最初叫 Los Tinellers，以傳統 bachata 起家，1996 年有首張專輯《Trampa de amor》；1990 年代末改名 Aventura，開始加入偏美式的風格。",
+            "src": "https://elcomercio.pe/luces/musica/aventura-historia-grupo-bachata-recogida-libro-noticia-514195",
+            "src2": "https://en.wikipedia.org/wiki/Aventura_(band)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Aventura 把傳統 bachata 和 R&B、嘻哈、雷鬼等風格混在一起，不再只唱失戀。",
+            "src": "https://en.wikipedia.org/wiki/Aventura_(band)",
+            "src2": "https://www.bronxwalkoffame.com/inductees/aventura",
+            "from": "new"
+          },
+          {
+            "f": "樂評人 Máximo Jiménez 說，他們把傳統 bachata 風格化，加入 Spanglish、音色柔和的電吉他與更偏社會性的歌詞，「創造了一種新的音樂風格」。",
+            "src": "https://elcomercio.pe/luces/musica/aventura-historia-grupo-bachata-recogida-libro-noticia-514195",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "吉他手 Lenny 用電吉他與 wah、phaser、distortion 等效果器改寫 bachata 吉他的音色；貝斯手 Max 把 slap 與搖滾貝斯的 riff 帶進 bachata。",
+            "src": "https://en.wikipedia.org/wiki/Aventura_(band)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Afropop Worldwide 稱 Aventura 是 urban bachata 團體中最有影響力的一組，說他們以單曲〈Obsesión〉改變了這個曲風的聲音。",
+            "src": "https://afropop.org/articles/primer-urban-bachata",
+            "src2": "https://elcomercio.pe/luces/musica/aventura-historia-grupo-bachata-recogida-libro-noticia-514195",
+            "from": "new"
+          },
+          {
+            "f": "英文維基稱他們是 Kings of Modern Bachata（K.O.B.），並說他們的風格促成 urban bachata，啟發 Prince Royce、Leslie Grace 等後輩。",
+            "src": "https://en.wikipedia.org/wiki/Aventura_(band)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Romeo Santos 先以 Aventura 成員之姿受到國際注意，之後單飛，Afropop 稱他此後成為這個曲風最大的明星。",
+            "src": "https://afropop.org/articles/primer-urban-bachata",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2011 年 Aventura 停止活動（Afropop 稱暫停，El Comercio 稱解散）。",
+            "src": "https://afropop.org/articles/primer-urban-bachata",
+            "src2": "https://elcomercio.pe/luces/musica/aventura-historia-grupo-bachata-recogida-libro-noticia-514195",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "上線簡介說「1994 年在紐約組團」；各源不一：Bronx Walk of Fame 官方頁寫 1993 年成立於布朗克斯，維基資料項寫 1994，El Comercio 寫 1994 年先有 Sueños、1995 年 Anthony 與 Henry 加入後成 Los Tinellers；facts 不寫成團年份。",
+      "English 維基稱成員陣容「始終是四人」，El Comercio 稱原始組合由 Lenny 與 Mickey Santos 成立；facts 不談早期陣容細節。"
+    ],
+    "searches": 5,
+    "failedFetches": [],
+    "pubIssues": [
+      {
+        "album": "God's Project",
+        "claim": "Aventura 1994 年在紐約組團",
+        "problem": "成團年份各源不一：Bronx Walk of Fame 官方頁寫 1993 年，維基資料項與 El Comercio 寫 1994 年（El Comercio 的 1994 年是前身 Sueños，Los Tinellers 是 1995 年）；建議刪去年份或改為「1990 年代中期」。",
+        "src": "https://www.bronxwalkoffame.com/inductees/aventura"
+      }
+    ],
+    "status": "full",
+    "notes": "同名確認：卡池《God's Project》2005，分類 electronic 為誤差，本人是美國 bachata 團。單源未收：2007 年入選 Bronx Walk of Fame（只見該官方頁，獎項屬高風險）；2019 年重聚與 Inmortal 巡演（只見該頁，成員異動）；〈Obsesión〉2002 年在義大利連 16 週冠軍（只見 El Comercio，榜單數字）；英文維基「第一個誕生於美國而非多明尼加的大型 bachata 團」（兩源之外有明顯反例風險，且 Afropop 與 El Comercio 都未支持，放 notes 不放 facts）；維基「獲獎超過 60 項、從未拿過葛萊美或拉丁葛萊美」屬獎項統計，不收；Afropop 說 Prince Royce 是 Romeo 之後的接班人但未說受 Aventura 影響，Prince Royce、Leslie Grace 受啟發之說只見維基，標 single，寫作層宜用「維基稱」。Afropop 與 El Comercio 對 2011 年停止活動一致。"
+  },
+  {
+    "key": "avrocar",
+    "name": "Avrocar",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Avrocar 是來自英格蘭 Birmingham 的 electronica 樂團，團員 Antony Harding 另有偏民謠的計畫 July Skies。",
+            "src": "https://en.wikipedia.org/wiki/Avrocar_(band)",
+            "src2": "https://wegottickets.com/event/78851/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "MusicBrainz 登記《Cinematography》為 1999 年（release 與 release-group 皆 1999）；搜尋摘要稱 Forced Exposure 目錄頁寫 2000 年 5 月 29 日發行，該頁無法開啟，不收也不改卡池年份，請主線留意。"
+    ],
+    "searches": 3,
+    "failedFetches": [
+      "https://www.forcedexposure.com/Catalog/WORM.48.html（內容為空）",
+      "https://www.last.fm/music/Avrocar/+wiki（載入失敗）",
+      "https://last.fm/music/Avrocar（406）",
+      "https://pennyblackmusic.co.uk/Home/Details?id=10316（403，兩次）"
+    ],
+    "pubIssues": [],
+    "status": "thin",
+    "notes": "身分確認：卡池《Cinematography》1999，MusicBrainz 登記廠牌 Earworm、編號 WORM48、GB，英文維基 Avrocar (band) 為同名同曲目的 Birmingham 電子樂團，無同名混卡（另有 Avro Canada VZ-9 Avrocar 飛行器，與樂團無關）。素材極薄：英文維基只有兩句。未收的說法（均來自無法歸為可靠來源的頁面）：演出售票頁稱他們錄過 John Peel 的 session、2008 年專輯《Against the Dying of the Light》在小閣樓近乎全黑中錄成、被傳影響 Radiohead 的《Kid A》、聲音被比作 Vangelis 為《Blade Runner》寫的配樂（轉述 Norman Records 評語）；售票頁屬商品頁，不算可靠來源。搜尋摘要稱 Last.fm 說他們錄過 John Peel 的 session、受 Mary-Anne Hobbes 與 Rob Da Bank 播放，頁面未能開啟，未收。上線簡介引用的 Discogs 藝人頁簡介（來自 Birmingham 與 black country、2013 年 6 月解散）本層沒找到對應頁面，解散年屬高風險，不收。寫作層宜短寫，以專輯本身為主。"
+  },
+  {
+    "key": "azealia banks",
+    "name": "Azealia Banks",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Azealia Banks 1991 年 5 月 31 日生於紐約曼哈頓，在哈林區（Harlem）由單親媽媽帶大，是三個孩子中最小的。",
+            "src": "https://en.wikipedia.org/wiki/Azealia_Banks",
+            "src2": "https://musicbrainz.org/ws/2/artist?query=artist:%22Azealia%20Banks%22&fmt=json&limit=3",
+            "from": "new"
+          },
+          {
+            "f": "她從小對音樂劇、舞蹈、表演與唱歌有興趣，16 歲主演音樂劇《City of Angels》，被經紀人發掘後去試演電視與影集角色，但都沒成功；她轉而寫饒舌與 R&B 當出口，沒念完高中，直接走唱片歌手這條路。",
+            "src": "https://en.wikipedia.org/wiki/Azealia_Banks",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "2008 年她以 Miss Bank$ 之名在網路上發表最早的作品；之後與 XL Recordings 簽下開發合約，到倫敦和製作人 Richard Russell 合作，同年因理念不合離開。",
+            "src": "https://en.wikipedia.org/wiki/Azealia_Banks",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她的成名曲〈212〉以比利時製作二人組 Lazy Jay 的 house 器樂曲〈Float My Boat〉為底，被歸為 hip house、electro house 與 dance rap；歌名指的是她成長的曼哈頓區碼 212，歌詞多處提到哈林。",
+            "src": "https://en.wikipedia.org/wiki/212_(song)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "PopMatters 評她 2014 年的首張專輯《Broke with Expensive Taste》把 rap、UK garage、grime、house、R&B 與流行混進同一張，稱它是「一張什麼都有一點的後現代流行史詩」；英文維基也說她的作品取材自 house、饒舌、流行、電子與前衛。",
+            "src": "https://popmatters.com/azealia-banks-broke-with-expensive-taste",
+            "src2": "https://en.wikipedia.org/wiki/Azealia_Banks",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "英文維基首段稱〈212〉是 2010 年代的代表曲之一，並入選 Rolling Stone 2021 年的「史上最偉大 500 首歌」。",
+            "src": "https://en.wikipedia.org/wiki/Azealia_Banks",
+            "src2": "https://en.wikipedia.org/wiki/212_(song)",
+            "from": "new"
+          },
+          {
+            "f": "音樂學者 James McNally 在《Journal of the Society for American Music》主張，〈212〉重新界定了黑人女饒舌歌手的形象。",
+            "src": "https://en.wikipedia.org/wiki/212_(song)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈212〉走紅之後，她的首張專輯一再延期並遇上廠牌問題，PopMatters 稱她經歷「數十次的起步失敗」才在 2014 年推出《Broke with Expensive Taste》；她後來成為獨立藝人，自設廠牌 Chaos & Glory Recordings。",
+            "src": "https://popmatters.com/azealia-banks-broke-with-expensive-taste",
+            "src2": "https://en.wikipedia.org/wiki/Azealia_Banks",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 6,
+    "failedFetches": [
+      "https://www.mtv.com.au/news/ts4ggn/what-happened-to-azealia-banks-cancel-culture-212（301 轉址到首頁）"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名確認：卡池《Broke with Expensive Taste》2014 與英文維基、MusicBrainz（Person／United States／1991-05-31）一致。依派工特注，不寫爭議事件、與他人的衝突與指控；維基中母親虐待的自述與 2023 年對他人的指控一律不收。legacy 第一條的兩源（Azealia Banks 條目與 212 (song) 條目）同屬維基，非獨立；Rolling Stone 名次在維基內不一致（條目稱 2021 年、引用卻是 2024 年版，名次 485），facts 只寫入選、不寫名次與年份以外的數字。〈212〉的 Pitchfork 排名（2011 年度第 9、2019 年「2010 年代 200 首」第 6，另有一說 2011 年第 6）只見維基與搜尋摘要，各源不一，未收；Guardian 2011 年度第 2、NME 年度第 18 同樣只見維基，未收。〈212〉在英國單曲榜最高第 12、雙白金屬榜單與認證數字，在世者預設不收。維基稱她 2014 年是 Forbes 首屆 Hip Hop Cash Princes 榜上唯一女性，屬金額與榜單，不收。開始年齡（XL 簽約時 17 或 18 歲）各源不一，facts 不寫年齡。2026 年專輯 Zenzealia（維基提及）與卡池無關，不收。"
+  },
+  {
+    "key": "banco de gaia",
+    "name": "Banco de Gaia",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Banco de Gaia 是 Toby Marks 1989 年在英國開始的電子音樂計畫；Marks 1964 年生於南倫敦。",
+            "src": "https://en.wikipedia.org/wiki/Banco_de_Gaia",
+            "src2": "https://www.banco.co.uk/about/",
+            "from": "new"
+          },
+          {
+            "f": "Marks 14 歲就以鼓手身分組了第一個樂團，之後唱歌也彈吉他，涉足搖滾、民謠、爵士與世界音樂，到 1980 年代晚期透過 acid house 場景接上電子舞曲。",
+            "src": "https://www.banco.co.uk/about/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Marks 自述他做的是「融入世界音樂的舞曲與 ambient／chill-out」風格。",
+            "src": "https://en.wikipedia.org/wiki/Banco_de_Gaia",
+            "src2": "https://www.banco.co.uk/about/",
+            "from": "new"
+          },
+          {
+            "f": "他的音樂混合 rock、reggae、ambient、worldbeat、爵士與 electronica，受 1980 年代 acid house 與 ambient house，以及爵士和 Pink Floyd 這類前衛搖滾團影響。",
+            "src": "https://en.wikipedia.org/wiki/Banco_de_Gaia",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《Maya》（1994 年）與《Last Train to Lhasa》（1995 年）都登上英國獨立專輯榜（UK Independent Album Charts）冠軍。",
+            "src": "https://www.banco.co.uk/about/",
+            "src2": "https://en.wikipedia.org/wiki/Last_Train_to_Lhasa",
+            "from": "new"
+          },
+          {
+            "f": "Marks 加入西藏支持團體，並在《Last Train to Lhasa》的封面與內頁文字上談西藏人的處境；專輯名稱的靈感來自中國興建西寧到拉薩鐵路的計畫，是他用蒸汽火車取樣做出一首曲子後，由妻子提議的。",
+            "src": "https://en.wikipedia.org/wiki/Last_Train_to_Lhasa",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他最早的三張專輯《Medium》（1991 年）、《Freeform Flutes and Fading Tibetans》與《Deep Live》（1992 年）只發行過卡帶，因為取樣的版權問題，如今不再販售。",
+            "src": "https://en.wikipedia.org/wiki/Banco_de_Gaia",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 5,
+    "failedFetches": [
+      "https://www.bancodegaia.com/biography（DNS 無此主機）"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "身分確認：卡池《Last Train to Lhasa》1995，英文維基 Last Train to Lhasa 條目確認為 Banco de Gaia（Toby Marks）；卡池標註 electronic／jazz，本人是英國電子音樂計畫。核心成績只收一處（兩張專輯登上英國獨立專輯榜冠軍，兩源：官網傳記與英文維基專輯條目），屬在世者榜單的必要例外，因其他地位類素材太薄。上線簡介「英國專輯榜第 31 名、獨立榜第 1」與英文維基專輯條目一致。未收：搜尋摘要稱維基提到 Marks 在華威大學（University of Warwick）讀心理學、哲學與宗教但未畢業、是聽了 John Peel 播的 Coldcut 混音才被電子音樂吸引（維基預抓文字被截斷，未見該段，搜尋摘要非開頁讀到）；AllMusic 四顆星（網站雲端必擋）。官網傳記沒有講名字「Banco de Gaia」的由來。legacy 的西藏一條屬社會層面關聯，不是樂評共識；英文維基專輯條目把這件事寫成「中國佔領下的西藏人處境」，facts 已改為中性寫法。"
+  },
+  {
+    "key": "barker",
+    "name": "Barker",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Barker 是 Sam Barker，英國出生、現居柏林的製作人；他 2007 年搬到柏林。",
+            "src": "https://barcelona.mutek.org/en/artists/barker",
+            "src2": "https://cdm.link/2019/09/barker-berghain-resident-utility/",
+            "from": "new"
+          },
+          {
+            "f": "Barker 的母親會多種樂器、教吉他，他約 12 歲就跟著哥哥的樂團排練，學了不少樂器；學校音樂老師的 PRO-1 合成器讓他迷上類比合成器。他在英國時扛著合成器去夜店和別人即興，還在 Brighton 辦過每週一次的現場音樂活動「Instrumentality」。",
+            "src": "https://toneglow.substack.com/p/tone-glow-185-barker",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他到柏林後才第一次接觸長篇幅的 techno，起初覺得「相當震驚」；Berghain 與 Panorama Bar 的訂位人 Andi Baumecker 成為他的導師，帶他進入 Berghain，之後他與 Baumecker、Ned Beckett 一起創辦 Leisure System。",
+            "src": "https://toneglow.substack.com/p/tone-glow-185-barker",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的路線離開嚴格的 4/4 techno，走向 left-field 聲音設計與複雜節奏，混合 bass music、breaks、dub 與 ambient，同時仍和舞池相連；2018 年的 EP《Debiasing》四首都沒有底鼓，用非傳統的節奏。",
+            "src": "https://barcelona.mutek.org/en/artists/barker",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他把底鼓看成提示人跳舞的「cue card」，《Debiasing》是想看清並跳出自己的節奏習慣，參考了認知偏誤的研究；他也說 Berghain 長長的殘響會限制複雜和聲與快速轉調，是做曲時要面對的條件。",
+            "src": "https://cdm.link/2019/09/barker-berghain-resident-utility/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他同時是樂器設計者，透過 Voltek Labs 把寫程式和類比、電子、聲學樂器的製作結合起來；他和 Kay Sievers 做機械樂器，也曾在 Berghain 的廁所裡裝過一台機械鋼琴。",
+            "src": "https://barcelona.mutek.org/en/artists/barker",
+            "src2": "https://toneglow.substack.com/p/tone-glow-185-barker",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Barker 是 Berghain 的駐場藝人，他共同創辦的 Leisure System 自 2008 年起固定在這間俱樂部辦派對。",
+            "src": "https://barcelona.mutek.org/en/artists/barker",
+            "src2": "https://cdm.link/2019/09/barker-berghain-resident-utility/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "派工特注寫 Barker 是「德國 techno 製作人」；來源（MUTEK 官方簡介、CDM、Tone Glow 訪談）都寫英國出生、現居柏林，採來源。",
+      "搜尋摘要稱 Barker 受過古典訓練，但已開頁的 MUTEK 簡介與 Tone Glow 訪談都沒有這一點（訪談中他說自己不是任何一種樂器的高手），facts 不寫古典訓練。",
+      "MUTEK 簡介把《Debiasing》與《Utility》都稱為「solo debut」，前後不一，facts 不寫誰是個人首作。"
+    ],
+    "searches": 5,
+    "failedFetches": [],
+    "pubIssues": [],
+    "status": "thin",
+    "notes": "無維基條目（預抓為空），身分確認：卡池《Utility》2019 Ostgut Ton，與 MUTEK、CDM、搜尋結果中的 Ostgut Ton 簡介一致；無同名混卡，惟 Barker 是常見名字，查證一律限定 Sam Barker／Berghain／Leisure System／Ostgut Ton 脈絡。Baumecker 的拼法：Tone Glow 訪談寫 Andi，Ostgut Ton 相關報導多作 Andy，facts 照訪談拼寫，寫作層若要具名請核對。單源未收：與 Baumecker 合組 Barker & Baumecker 的兩張專輯與 2010 年起的 EP（搜尋摘要）；2025 年續作《Stochastic Drift》（Tone Glow 訪談提到，上線簡介已寫）；他 2007 年到柏林之前做過 booking 公司的工作（搜尋摘要，未開頁）。legacy 只有駐場與派對一條，無後輩點名或權威共識，標 thin；日期與數字避免。寫作層宜把重心放在 Berghain 場景、他如何從英國即興現場走到長篇 techno、以及樂器製作者的身分。"
+  },
+  {
+    "key": "baths",
+    "name": "Baths",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Baths 是 William Boris Wiesenfeld，1989 年 4 月 16 日生於洛杉磯的 Tarzana 區，在 Woodland Hills 長大。",
+            "src": "https://en.wikipedia.org/wiki/Baths_(musician)",
+            "src2": "https://musicbrainz.org/ws/2/artist?query=artist:baths%20AND%20country:US&fmt=json&limit=3",
+            "from": "new"
+          },
+          {
+            "f": "他受過古典鋼琴訓練，自稱做的是「從歌曲創作角度出發的電子音樂」：每首歌都先有一段樂器旋律的想法，再轉到電腦上錄製和拼組；Baths 這個名字來自「泡澡、退回自己腦袋裡」的意象。",
+            "src": "https://www.drownedinsound.org/archive-dis-meets-baths-4140722/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "在以 Baths 發表《Cerulean》之前，他曾以 Post-Foetus 與 Geotic 等名義自行發行過許多專輯，報導形容那段時期是「快樂的無名」。",
+            "src": "https://www.avclub.com/will-wiesenfeld-of-baths-1798225167",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他說《Cerulean》整體是輕快樂觀的，即使談的是沉重的情緒；專輯裡的音樂他說「100% 是我自己的」，只有少數人聲片段與取樣音訊例外；〈Rain Smell〉裡的雨聲與鳥鳴是他在臥室窗外錄的。",
+            "src": "https://www.drownedinsound.org/archive-dis-meets-baths-4140722/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他的製作以真實錄音為主：錄現場吉他與貝斯、自己唱、收集家裡的各種聲音，再靠電腦自由安排；他說現場演出「關鍵是你的身體，不是器材」。",
+            "src": "https://www.avclub.com/will-wiesenfeld-of-baths-1798225167",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Drowned in Sound 注意到他在電子聲響周圍疊進「非典型」的聲音，例如原子筆的點擊、人聲取樣、毯子摩擦與剪刀聲。",
+            "src": "https://en.wikipedia.org/wiki/Baths_(musician)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2010 年 Southern California Public Radio 稱他是「洛杉磯的重要新電子音樂人」。",
+            "src": "https://en.wikipedia.org/wiki/Baths_(musician)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 4,
+    "failedFetches": [
+      "https://passionweiss.com/2011/08/01/question-in-the-form-of-an-answer-baths（301 轉到無關首頁）"
+    ],
+    "pubIssues": [],
+    "status": "thin",
+    "notes": "身分確認：卡池《Cerulean》2010，英文維基 Baths (musician) 與 MusicBrainz（Person／US／1989-04-16／「US electronic musician」）一致；MusicBrainz 另有 Royal Baths（舊金山迷幻樂團）、Russian Baths，非本人。生日有維基與 MusicBrainz 兩源。legacy 查無有出處的共識評價或後輩點名：維基只有 Southern California Public Radio 2010 年的一句形容與 BBC 的 Mike Diver 說他最接近的聲音是 Toro y Moi（單一樂評人說法，未收）；年終榜單名次（搜尋摘要稱 AV Club 年終第 21、Pitchfork 榮譽提名）屬樂評媒體榜單名次，依特注不收；AV Club 專訪另稱《Cerulean》登上許多 12 月年終榜單，亦未收。Anticon 簽約（2009）、Low End Theory 俱樂部的洛杉磯 beat 場景（搜尋摘要稱 Daedelus 邀他演出並促成 Baths 這個名字，頁面未能開啟，與訪談自述的名字由來也不一致）未收。寫作層宜以身世與製作方式為主，D 級單卡短寫。"
+  },
+  {
+    "key": "bbc radiophonic workshop",
+    "name": "BBC Radiophonic Workshop",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "BBC Radiophonic Workshop 於 1958 年成立，最初是為第三套節目（Third Programme）的廣播劇做原創聲音處理，設在倫敦 Maida Vale 的 BBC 音樂錄音室。",
+            "src": "https://www.discogs.com/release/2807670-BBC-Radiophonic-Workshop-BBC-Radiophonic-Music",
+            "src2": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "from": "bank"
+          },
+          {
+            "f": "創辦工作室的是 Desmond Briscoe 與 Daphne Oram；早期加入的 John Baker 是爵士鋼琴家，對倒轉磁帶效果有興趣；1967 年加入的 David Cain 同時是爵士貝斯手與數學家。",
+            "src": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "single": true,
+            "from": "bank"
+          },
+          {
+            "f": "BBC 的政策是工作室可以掛名，但裡面的成員必須維持匿名，所以當年外界並不知道這些聲音出自誰手。",
+            "src": "https://musictech.com/guides/essential-guide/landmark-productions-bbc-radiophonic-workshop-doctor-who-theme/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們用振盪器和測試音產生器（原本是用來測試與校準電子器材的）造聲音，再用磁帶變速、倒轉、回音、剪接與循環加工，也用 musique concrète 的手法取樣自然聲響。",
+            "src": "https://musictech.com/guides/essential-guide/landmark-productions-bbc-radiophonic-workshop-doctor-who-theme/",
+            "src2": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "from": "new"
+          },
+          {
+            "f": "1963 年 Delia Derbyshire 與助手 Dick Mills 把 Ron Grainer 的《Doctor Who》主題曲實現出來：Grainer 交來的譜只有旋律、低音線與音色描述；低音來自一條撥動的弦，旋律用振盪器的滑音配磁帶回音，全靠把一吋長的磁帶片段一個音一個音接起來。",
+            "src": "https://musictech.com/guides/essential-guide/landmark-productions-bbc-radiophonic-workshop-doctor-who-theme/",
+            "src2": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "from": "new"
+          },
+          {
+            "f": "《Doctor Who》的 TARDIS 音效由 Brian Hodgson 做成：用鑰匙刮過一架破鋼琴生鏽的低音弦，再把錄音放慢。",
+            "src": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "英文維基記：Mixmag 1997 年稱它是「英國電子音樂不被讚頌的英雄」（the unsung heroes of British electronica）；當代電子音樂人大量取樣過它的作品。",
+            "src": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Pink Floyd 在 1967 年造訪過工作室，Rolling Stones 的 Brian Jones 在 1968 年也去過；Phil Manzanera 說過它影響了 Roxy Music。",
+            "src": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "The Ransom Note 稱這個工作室「啟發了一整代音樂人」，從 Beatles、Pink Floyd 一直到 Four Tet、Aphex Twin。",
+            "src": "https://www.theransomnote.com/?p=24778",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "工作室在 BBC 縮編關閉之後，工作人員把磁帶檔案藏起來，避免被清掉；後來由 Mark Ayres 與 Brian Hodgson 編目整理，工作室的成員也在 2009 年起重組、再度現場演出。",
+            "src": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1960 年代晚期起，工作室開始使用 EMS 合成器，包括 VCS 3 與 Synthi 100（外號「Delaware」）。",
+            "src": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1963 年，Delia Derbyshire 實現 Ron Grainer 的《Doctor Who》主題曲，這份錄音被稱為經典電視主題曲之一，也是早期電子音樂的先驅作品。",
+        "src": "https://musictech.com/guides/essential-guide/landmark-productions-bbc-radiophonic-workshop-doctor-who-theme/",
+        "src2": "https://en.wikipedia.org/wiki/BBC_Radiophonic_Workshop",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "成立年：英文維基首段與 1968 年唱片內頁（Discogs）都寫 1958 年；維基「History」節又寫 Daphne Oram 1957 年設立。facts 採 1958（內頁與首段一致），1957 放 notes。",
+      "上線簡介「用兩千英鎊、在錄音室十三與十四號房間開起來」只見事實庫的英文維基一條（本層重讀維基頁面時摘要未見數字），數字單源，facts 不重複寫；請主線視需要決定是否保留。",
+      "關閉年：英文維基寫 1998 年 3 月，搜尋摘要有一個來源寫 1997 年完成最後配樂；兩源不一致，facts 不寫關閉年份。"
+    ],
+    "searches": 5,
+    "failedFetches": [],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "預抓維基抓到的是 2003 年重製合輯《Music from the BBC Radiophonic Workshop》，不是工作室條目，已改開英文維基 BBC Radiophonic Workshop。身分確認：卡池《BBC Radiophonic Music》1968，Discogs REC 25M（事實庫）。單源未收：成立經費兩千英鎊與 Maida Vale 13、14 號房間（事實庫內英文維基）；Daphne Oram 1959 年離開另創 Oramics Studios（成員異動年份，只見英文維基）；Radiophonic Effects Committee（事實庫內英文維基）；Delia Derbyshire 的 12 個振盪器說法（維基）與 musictech 的細節略有出入，facts 取 musictech 較具體的版本，並以維基的 1963 年與實現者佐證；The Ransom Note 的文章出自工作室相關人士，屬自評，已標 single，寫作層宜用「稱」；搜尋摘要稱 William L. Weir 的 33 1/3 專書把 Aphex Twin、Portishead、Prodigy 列為聽它長大的音樂人，只見零售頁，未收。"
+  },
+  {
+    "key": "ben frost",
+    "name": "Ben Frost",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Ben Frost 1980 年生於澳洲墨爾本，2005 年起定居冰島雷克雅維克。",
+            "src": "https://en.wikipedia.org/wiki/Ben_Frost",
+            "src2": "https://bedroomcommunity.net/benfrost",
+            "from": "new"
+          },
+          {
+            "f": "他搬到冰島之後，和同樣在那裡的 Valgeir Sigurðsson、Nico Muhly 一起組成 Bedroom Community 廠牌，Resident Advisor 稱它「比起廠牌更像一個延伸的計畫」。",
+            "src": "https://bedroomcommunity.net/benfrost",
+            "src2": "https://ra.co/reviews/6847",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Frost 寫極簡、器樂、實驗取向的音樂，影響從古典極簡主義到 punk rock 與 black metal；Bedroom Community 的介紹稱他把「結構嚴密的聲音藝術」和「激進的後古典電子音樂」結合，並把極簡主義與暗黑金屬接在一起。",
+            "src": "https://en.wikipedia.org/wiki/Ben_Frost",
+            "src2": "https://bedroomcommunity.net/benfrost",
+            "from": "new"
+          },
+          {
+            "f": "《Theory of Machines》（2007 年）標誌他轉向更尖銳、更具攻擊性的音樂，《By the Throat》（2009 年）進一步推進；Resident Advisor 稱前者是「已經是經典」，並說後者比他過去的作品更極簡。",
+            "src": "https://en.wikipedia.org/wiki/Ben_Frost",
+            "src2": "https://ra.co/reviews/6847",
+            "from": "new"
+          },
+          {
+            "f": "《By the Throat》中的〈The Carpathians〉用多種樂器模仿狼的嚎叫、嗚咽與低吼。",
+            "src": "https://ra.co/reviews/6847",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他在芝加哥與 Steve Albini 一起錄了十天、約兩小時的音樂，一部分先成為 EP《Threshold of Faith》；2017 年的專輯《The Centre Cannot Hold》則是和 Albini 錄成的。",
+            "src": "https://wgbh.org/news/2017-07-27/ben-frosts-colossal-new-ep-will-bring-you-to-the-threshold-of-faith",
+            "src2": "https://bedroomcommunity.net/benfrost",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Frost 也做電影與影集配樂，包括德國 Netflix 科幻影集《Dark》（2017 至 2020 年共三季）、《Fortitude》與《Sleeping Beauty》。",
+            "src": "https://en.wikipedia.org/wiki/Ben_Frost",
+            "src2": "https://bedroomcommunity.net/benfrost",
+            "from": "new"
+          },
+          {
+            "f": "A Closer Listen 的評論說，Frost 是新一代音樂人的重要影響者，他的聲音被廣泛採用（尤其在 grime），但「只有少數人能像他那樣做」。",
+            "src": "https://acloserlisten.com/2017/08/04/ben-frost-threshold-of-faith/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "2013 年他首度擔任導演，把 Iain Banks 的小說《The Wasp Factory》改編成音樂劇場作品，獲得好評。",
+            "src": "https://en.wikipedia.org/wiki/Ben_Frost",
+            "src2": "https://acloserlisten.com/2017/08/04/ben-frost-threshold-of-faith/",
+            "from": "new"
+          },
+          {
+            "f": "他參與過加拿大電子音樂人 Tim Hecker 與美國實驗搖滾團 Swans 的專輯。",
+            "src": "https://en.wikipedia.org/wiki/Ben_Frost",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "英文維基寫他 2017 年才去芝加哥錄《The Centre Cannot Hold》；WGBH 2017 年 7 月的報導與 A Closer Listen 都說 EP《Threshold of Faith》來自「去年夏天（2016 年）」與 Albini 的十天錄音，facts 不寫錄音年份。",
+      "搜尋摘要稱《By the Throat》的狼聲是取樣，Resident Advisor 樂評寫的是用樂器模仿；facts 採 Resident Advisor。"
+    ],
+    "searches": 7,
+    "failedFetches": [
+      "https://www.musicradar.com/news/ben-frost-interview（只回傳標題，內文被截斷）"
+    ],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "身分確認：卡池《By the Throat》2009，與英文維基、Bedroom Community 傳記、Resident Advisor 樂評一致。搜尋次數超過上限的多出一次：先以搜尋找出傳記頁，再開 Bedroom Community 傳記補第二源（原因：預抓維基是唯一的出生與定居來源，需要獨立第二源）。單源未收：英文維基稱 2011 年《Solaris》是與 Brian Eno 及 Daníel Bjarnason 合作（Bedroom Community 傳記只寫與 Bjarnason，Eno 只見維基）；2014 年轉簽 Mute 與《Aurora》被評為「critically lauded」（維基，且屬形容詞）；Richard Mosse 的裝置與配樂履歷。搜尋摘要稱他早年隨家人在澳洲大陸旅行、2001 年自行發行 EP《Music for Sad Children》，未開頁，不收。"
+  }
+]
