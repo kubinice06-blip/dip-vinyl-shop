@@ -933,3 +933,24 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：The Kingston Trio、The Flying Burrito Brothers 的 Bob Dylan 說法；Tom Paxton 的 Steve Earle 說法；Tony Trischka 的 American Banjo Museum 名人堂官方評語「或許是根源音樂界最有影響力的五弦琴手」（名人堂官方）；Tommy Jarrell「首屆 National Heritage Fellowship 得主之一」（官方）；Toumani Diabaté 2024 年過世與 Salif Keita 悼詞；The Weavers 冷戰時期被封殺（歷史背景一句）；Trovante 首張向阿言德支持者致敬（歌詞題材）。
 - 身分：The Search Party（電視劇）、The Tree People（Mother Earth 專輯）、Turid（挪威人名消歧義）、四人聯名卡的 Bobby Patterson（Dallas 的 soul 歌手）維基預抓皆作廢；The Mountain Ramblers 非 Slate Mountain Ramblers。
 - 待本機（上線簡介）：The Dillards「Doug 因不滿新方向出走」兩說；The Dubliners「兩天賣出 4 萬張」無據、Heaney 禁播與基金會說法不符；The Fairfield Four 葛萊美 1997／1998；The Gabby Pahinui Hawaiian Band「Vol. 1 是頭一號作品」錯（第三張）；The II Generation 團名由來屬推測；The Young Tradition《Galleries》「三人無伴奏」錯（有器樂）；Tom Paxton《Ramblin' Boy》「首張專輯」需限定 Elektra；《June Apple》「Lineberry 名下沒有別的作品」錯；Toumani Symmetric Orchestra「入圍 2007 年 BBC Radio 3」未證實；Trader Horne 的 Brian Patten 與托爾金典故、Vernon Wray「Link 彈 dobro 與曼陀林」無據。
+
+## ar-d-066（2026-10-11）
+
+- 34 位上架（28 full、6 thin：World Standard、စိုင်းထီးဆိုင်、김두수、シバ、休みの国、前川守賢），6 位不寫：オリジナル・ザ・ディラン（聲音只剩成員名單）、ダッチャ、ほうむず、中島光一、五条坂、伴よしかず（寫作層判定：事實全部單源，或身分無獨立出處）。
+- 超額放行：World Standard（齊豫先例，超出那次沒有新事實）。
+- 審稿修 6 處：
+  - 用藥：김두수 刪大麻一句。
+  - 最高級：Vince Gill 刪最高級，Галич 刪「最重要」，စိုင်းထီးဆိုင် 刪「最有名之一」。
+  - 政治、刑罰：Юлий Ким 刪父親被處決與古拉格一句（政治背景，不直接關係到聲音）。
+  - 用語：정태춘 的「南韓」改「韓國」。
+- 待本機（上線簡介）：
+  - 以莉·高露：種稻地點。
+  - Новелла Матвеева：嗓音描述。
+  - 김두수、조동진：專輯排名。
+  - 노래를 찾는 사람들：「1987 再發行」。
+  - Wardruna：成軍年份。
+  - Will Ackerman：專輯年份 1975／1976，另有製作名單細節。
+  - Waylon：「命名起點」。
+  - Ye Vagabonds：獎項名稱。
+  - 정태춘：違憲說法。
+  - フォークル：Oricon 排名說法。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 930 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 943 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -929,7 +929,20 @@
 | ar-d-065 | Tom Paxton | Ramblin' Boy | Paxton 1964 年在 Elektra 發表的首張專輯 | 維基記他 1962 年已在 Gaslight 錄過一張私製現場專輯《I'm the Man That Built the Bridges》；「首張專輯」需限定為「Elektra 首張」或「首張正式發行的錄音室專輯」，否則與維基衝突 | https://en.wikipedia.org/wiki/Tom_Paxton |
 | ar-d-065 | Tommy Jarrell, Kyle Creed, Audine Lineberry and Bobby Patterson | June Apple: Old Time Fiddling & Clawhammer Banjo | Lineberry 名下沒有別的作品，這張四人聯名就是他在 MusicBrainz 上留名的地方 | Field Recorder Collective 的《Round Peak Volume 2》（FRC110，2008）第 32 軌〈Fortune〉列 Audine Lineberry 拉低音大提琴（Kyle Creed 班鳩、Bobby Patterson 吉他），所以他並非只有這張一個錄音署名；上線簡介的說法至多限定為「MusicBrainz 上只有這張」 | https://fieldrecorder.org/?p=225 |
 | ar-d-066 | Wardruna | Runaljod – gap var Ginnunga | Einar「Kvitrafn」Selvik於2003年與Gaahl、Lindy-Fay Hella組成Wardruna | 成軍年來源不一：英文維基 Wardruna 條目寫 2003，英文維基 Einar Selvik 條目與 The Quietus 寫 2002；建議改成「2000 年代初」或再查官方說法後定案。簡介另寫歌詞以挪威語、古諾爾斯語與原始諾爾斯語寫成、哈丹格提琴手 Hallvard Kleiveland 參與，本層未查證，供店主對照。 | https://thequietus.com/?p=22265 |
+| ar-d-066 | Waylon Jennings, Willie Nelson, Jessi Colter & Tompall Glaser | Wanted! The Outlaws | 「outlaw」一詞最早可溯至 Jennings 1972 年的〈Ladies Love Outlaws〉，到本作以通緝海報封面發行才定型流傳，成為 outlaw country 運動的命名起點 | 同一句前後矛盾：詞在 1972 年歌曲、1973 年公關稿與 1974 年評論家文章中已出現，本作只是讓它固定下來，說「命名起點」過頭；建議改成「讓 outlaw 這個稱呼固定下來」。另，維基專輯條目寫 Honky Tonk Heroes（1973）才被廣泛視為第一張 outlaw 專輯。 | https://en.wikipedia.org/wiki/Outlaw_country |
+| ar-d-066 | Will Ackerman | In Search of the Turtle's Navel | 1976 年他才與 Anne Robinson 把廠牌正式辦起來 | 廠牌創立年來源不一：維基 Windham Hill 條目寫 1976 年，Encyclopedia.com 寫 1975 年在史丹佛創立；建議改成不寫年份，或寫「1970 年代中期」。 | https://encyclopedia.com/education/news-wires-white-papers-and-books/ackerman-will |
+| ar-d-066 | Will Ackerman | In Search of the Turtle's Navel | Ackerman 在史丹佛差五個學分未畢業 | 維基寫差五個學分，Encyclopedia.com 寫剩一門英文課（父親任教）；兩說未必衝突，建議改成「差一點畢業」。簡介稱「朋友想要他的器樂錄音，湊錢讓他壓了這張唱片」，Encyclopedia.com 的細節是他向約 60 位朋友各收 5 美元預購，可更精確。 | https://encyclopedia.com/education/news-wires-white-papers-and-books/ackerman-will |
+| ar-d-066 | Ye Vagabonds | The Hare's Lament | 〈The Foggy Dew〉讓他們拿下當年 RTÉ Radio 1 Folk Awards 最佳單曲 | 獎項類別全名是 Best Traditional Folk Track（最佳傳統民謠曲目），維基簡稱 Best Track；「最佳單曲」易讀成一般流行單曲獎，建議改成「最佳傳統民謠曲目」。 | https://www.hotpress.com/culture/ye-vagabonds-win-big-rte-radio-1-folk-awards-22792571 |
+| ar-d-066 | Новелла Матвеева | Какой большой ветер | 嗓音位置高而細、帶童聲質地 | 俄文維基、英文維基、snob 訃聞均未描述她的嗓音，該句找不到來源 | https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%82%D0%B2%D0%B5%D0%B5%D0%B2%D0%B0,_%D0%9D%D0%BE%D0%B2%D0%B5%D0%BB%D0%BB%D0%B0_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%BD%D0%B0 |
+| ar-d-066 | 김두수 | 자유혼 | 二〇〇七年韓國大眾音樂百大名盤列第六十九 | 年份 2007 可由京鄉新聞與 Gaseum Network 的評選（2007 年 8 月 23 日公布）佐證，《자유혼》入選見 Tenasia 專文，但名次「第六十九」在本層能開啟的來源（京鄉頁、dh.aks.ac.kr 名單頁、兩篇 Tenasia）均查不到；Herald 摘要則寫 2008 年。名次與年份建議以京鄉新聞完整榜單核實。 | https://dh.aks.ac.kr/Edu/wiki/index.php/한국대중음악_100대_명반_선정 |
+| ar-d-066 | 노래를 찾는 사람들 | 노래를 찾는 사람들 1 | 多數人記得的是 1987 年，那一年其實是再發行，碟 1984 年就出了 | 韓文維基專輯表記 1집 為 1984 年、並無 1987 年再發行；1998 年首爾新聞寫 1987 年 10 月是首場公演，不是專輯再發行。「1987 年再發行」找不到來源，建議改寫。 | https://m.seoul.co.kr/news/1998/08/08/19980808014001 |
 | ar-d-066 | 以莉·高露 | 輕快的生活 | 2010 年與丈夫陳冠宇到宜蘭南澳種有機稻 | 待核：2011 年 Taipei Times 報導與英文維基都寫她 2010 年回到花蓮務農並準備首張專輯，與中文維基的宜蘭南澳說法不一致；簡介採中文維基版本。 | https://taipeitimes.com/News/feat/archives/2011/11/04/2003517410 |
+| ar-d-067 | 周華健 | 花心 | 全亞洲銷量逾四百萬張，據 IFPI 統計是當年全球華語唱片的銷量冠軍 | NOWnews 寫 300 萬至 400 萬張、中文維基寫逾 400 萬張，兩源不一致，且 IFPI 的原始統計沒查到；建議改成保守寫法或標出處。 | https://www.nownews.com/news/6733345 |
+| ar-d-067 | 宋冬野 | 安和橋北 | 中國大陸慣稱「新民謠」 | 違反用語規則（稱呼中國一律寫「中國」，不寫「中國大陸」），建議改為「中國慣稱」或刪去。 | https://github.com/kubinice06-blip/dip-vinyl-shop |
+| ar-d-067 | 山口五郎 | A Bell Ringing in the Empty Sky | 1969 年由 Nonesuch 的 Explorer 系列發行；是尺八在美國最早產生影響的錄音 | 兩篇評論（Ken Hunt、UMBC EOL）寫 1968 年，後者帶問號，英文維基未標年，發行年待核；『最早』在評論只寫『最早之一』，建議退成『最早之一』。 | https://kenhunt.doruzka.com/gor-yamaguchi-1933-1999/ |
+| ar-d-067 | 張清芳 | 激情過後 | 前一年剛拿下第一屆大學城全國大專創作歌謠大賽演唱組冠軍 | 中文維基與鏡週刊 20200629 支持冠軍，鏡週刊 20200623 寫『最佳演唱獎』，名次來源不一致，建議退成『得獎』或再查主辦單位資料。 | https://www.mirrormedia.mg/story/amp/20200623ent047 |
+| ar-d-067 | 張瑋瑋和郭龍 | 白銀飯店 | 2012年5月16日推出的首張個人創作專輯 | 專輯掛名張瑋瑋和郭龍，新浪轉載的上海青年報報導寫『張瑋瑋與郭龍共同創作完成』；『首張個人專輯』的說法只見演出頁摘要，兩人為二人組，建議改為二人合作專輯。 | https://ent.sina.cn/review/media/2012-05-31/detail-iawzunex6147639.d.html |
+| ar-d-067 | 張瑋瑋和郭龍 | 白銀飯店 | 屬民謠大類，中國大陸慣稱「新民謠」（xin minyao） | 違反用語規則（稱呼中國一律寫「中國」，不寫「中國大陸」），建議改為「中國慣稱」或刪去。 | https://github.com/kubinice06-blip/dip-vinyl-shop |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
