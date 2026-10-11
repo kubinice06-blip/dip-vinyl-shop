@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-11｜dip-vinyl-shop｜downtempo／chill dub 策展線第 1 批上架（add-20261011-dt1，45 張；卡池 18,703 → 18,748）
+
+店主：「補強downtempo類型 很chill的音樂類型 策展」→「太少了 至少找好聽的200張以上 dub的chill也要」。四組策展合計 231 張，跨組去重與主線刪除後定案 **223 張、分 5 批**（`batch-progress/downtempo-20261011/`：curation-a…d、master.json、build-master／build-cards／meta／picks／build-manifest／add-registry 腳本與四份派工單）。
+
+- **本批內容**：chill dub——牙買加 roots dub（Augustus Pablo、Joe Gibbs、Scientist、The Upsetters…）、On-U Sound（Dub Syndicate、Creation Rebel、New Age Steppers、Singers & Players、African Head Charge）、英國 dub（Mad Professor、Dennis Bovell、Aswad、Alpha & Omega、Jah Wobble、Smith & Mighty、Massive Attack v Mad Professor）、dub techno（Moritz von Oswald Trio、Deadbeat、Intrusion、Echospace、Fenin）。
+- **產線**：卡牌版全套——研究 5 組（Sonnet，45 張 full 42／thin 3）→ 鉤子 2 組（Opus）→ 寫作 2 組（Opus，字數 full 196–240、thin 142–172）→ 主線逐張審稿（未改字）。QA 三階段全過。
+- **身分**：全 pinned（MB release-group）；策展誤掛 MBID 一筆（Cloak & Dagger）主線改釘；年份更正兩張（Stoned Immaculate、Overstanding → 1991）。
+- **封面**：CAA 41、Discogs 2（登錄 registry 292→294）、Apple 2；縮圖表逐張目視。
+- **試聽**：Apple ready 41、unavailable 4（二合一 CD 取對應段落的軌）。
+- **三軸**：/album-rating 機器基線，經典 5 壓 4；頂點 0。稀有度 uncommon 30、epic 11、rare 4。
+- **寫入**：prepare gate 0 error → card_catalog 45/45 → KV 45 鍵回讀一致 → 靜態試聽 → seed 45 列 → **published gate 0 error**。子曲風 17,282 → 17,327（新卡 45/45 落位）。
+- 主要檔案：`onboarding-manifest-add-20261011-dt1-20261011.json`、`batch-progress/add-20261011-dt1/`（rulings 8941–9016、meta、試聽與封面裁定）、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261011-dt1*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-{map,runtime}-v1.json`、`card-subgenres.json`、`genre-tree.json`、`data/discogs-cover-registry.json`。
+- 待續：dt2（研究已交、鉤子進行中）；dt3–dt5 依 CLAUDE.md「每工作階段 2 批」交接下一個工作階段。
+
 ### 2026-10-10｜dip-vinyl-shop｜店內待上架 37 張上卡池（雲端，add-20261010-shop；卡池 18,666 → 18,703）
 
 店主問「店內新增很多專輯 測試是否能正式上線」→ 盤點 40 張待上架 → 店主裁定「yufu可以跑／キャンディーズ、京のにわか雨 都是專輯／合輯不用／開跑」。雲端一次跑完，等店主合併 PR #79。

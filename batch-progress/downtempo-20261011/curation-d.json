@@ -1,0 +1,753 @@
+{
+ "group": "d",
+ "factions": [
+  {
+   "id": "J1",
+   "zh": "日本 lounge／nu-jazz／Shibuya 周邊與 Hydeout 系",
+   "count": 12,
+   "why": "前一輪已查證 5 張（FPM、FreeTEMPO、Uyama Hiroto、Cro-Magnon、CALM）加 CALM 第二張、Monday 満ちる、Sleep Walker、Jazztronik、Substantial、Fat Jon。"
+  },
+  {
+   "id": "J2",
+   "zh": "日本電子 chill／鋼琴氛圍／顫音琴",
+   "count": 8,
+   "why": "haruka nakamura（Schole／Hydeout）、高木正勝、Ametsub、藤田正嘉（FLAU／Erased Tapes）、堀川洋司、細野晴臣 omni Sight Seeing。"
+  },
+  {
+   "id": "A",
+   "zh": "亞洲其他 chill（韓國、印尼）",
+   "count": 3,
+   "why": "Clazziquai Project 兩張、Mocca；台灣與中國的 chill electronic 資料薄且 MB 覆蓋差，寧缺勿濫未收。"
+  },
+  {
+   "id": "K",
+   "zh": "folktronica／indietronica",
+   "count": 15,
+   "why": "Morr Music 系（Lali Puna、ISAN、Styrofoam）與 Notwist、Tunng、The Books、Hood、Dntel、Fridge、Junior Boys、The Album Leaf、Flunk、Helios、Lemon Jelly。"
+  },
+  {
+   "id": "C",
+   "zh": "chillwave／夢幻電子",
+   "count": 10,
+   "why": "Small Black、Memory Tapes、Ford & Lopatin、jj、The Radio Dept.、Teen Daze、Poolside、Nite Jewel、Electric Youth、Houses。"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Fantastic Plastic Machine",
+   "album": "Luxury",
+   "year": 1998,
+   "label": "Readymade",
+   "faction": "J1",
+   "why": "田中知之（FPM）的澀谷系 lounge 名盤，輕盈的 bossa／easy listening 與 house 節拍，日本 lounge 場景的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/63fdd530-2b6e-32da-a22f-4465c635a86d",
+    "https://www.discogs.com/master/85720",
+    "http://pitchfork.com/reviews/albums/2985-luxury/",
+    "https://www.wikidata.org/wiki/Q6706449",
+    "https://en.wikipedia.org/wiki/Luxury_(Fantastic_Plastic_Machine_album)"
+   ],
+   "mbRgMbid": "63fdd530-2b6e-32da-a22f-4465c635a86d",
+   "uncertain": "MB 藝人名為 FPM；廠牌 MB 遮蔽為 \"********* records, tokyo\"，依維基為 Readymade Records"
+  },
+  {
+   "artist": "FreeTEMPO",
+   "album": "The World Is Echoed",
+   "year": 2003,
+   "label": "forestnauts records",
+   "faction": "J1",
+   "why": "日本獨立電子團體 FreeTEMPO 的首張，柔和的電子與 downtempo 質感，日本獨立 chill 一脈。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc37f52c-5551-3bf1-b909-0d5ab0c8e8f9"
+   ],
+   "mbRgMbid": "bc37f52c-5551-3bf1-b909-0d5ab0c8e8f9",
+   "uncertain": "證據僅 MB／Discogs；內容待人工聽審確認"
+  },
+  {
+   "artist": "Uyama Hiroto",
+   "album": "A Son of the Sun",
+   "year": 2008,
+   "label": "Hydeout Productions",
+   "faction": "J1",
+   "why": "Nujabes 的 Hydeout Productions 廠牌發行，宇山寛人的爵士 hip-hop／downtempo，與卡池中的 Nujabes 連成一線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/268b369c-91a3-375c-8352-484dfd16853b",
+    "https://www.wikidata.org/wiki/Q4659669"
+   ],
+   "mbRgMbid": "268b369c-91a3-375c-8352-484dfd16853b",
+   "uncertain": "MB 藝人名為 宇山寛人（seed 檢查 0）"
+  },
+  {
+   "artist": "Cro-Magnon",
+   "album": "Cro-Magnon",
+   "year": 2006,
+   "label": "NMNL Records",
+   "faction": "J1",
+   "why": "日本 Jazzy Sport 系 Cro-Magnon 的首張，爵士 funk 與 mellow downtempo。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0d57059-eecf-4245-8371-73bd8053b2cd"
+   ],
+   "mbRgMbid": "f0d57059-eecf-4245-8371-73bd8053b2cd",
+   "uncertain": "同名藝人已防：MB 藝人 90dce2fd（JP, Jazzy Sport）；證據僅 MB"
+  },
+  {
+   "artist": "CALM",
+   "album": "Moonage Electric Ensemble",
+   "year": 1999,
+   "label": "Lastrum",
+   "faction": "J1",
+   "why": "日本 future jazz／downtempo 的 CALM 早期爵士電子專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/13e31de0-5415-4c1c-9f25-c464e63389e1"
+   ],
+   "mbRgMbid": "13e31de0-5415-4c1c-9f25-c464e63389e1",
+   "uncertain": "MB 藝人 08379a1c（Japanese future jazz/downtempo）；同名藝人已防"
+  },
+  {
+   "artist": "CALM",
+   "album": "Ancient Future",
+   "year": 2003,
+   "label": "Lastrum",
+   "faction": "J1",
+   "why": "CALM 的代表作之一，深邃柔和的 future jazz／downtempo，與 Moonage Electric Ensemble 互補。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f8d8edf8-4305-4b2c-85fe-97cd3941f4b6"
+   ],
+   "mbRgMbid": "f8d8edf8-4305-4b2c-85fe-97cd3941f4b6",
+   "uncertain": "MB 標題為 Ancient future；內容待人工聽審"
+  },
+  {
+   "artist": "MONDAY満ちる",
+   "album": "Double Image",
+   "year": 1998,
+   "label": "Polydor",
+   "faction": "J1",
+   "why": "Free Soul 系日本爵士／neo-soul 女聲 Monday 満ちる，Polydor 時期的代表專輯，律動柔滑適合夜間。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/67340811-c123-395b-aecd-56810d435d02"
+   ],
+   "mbRgMbid": "67340811-c123-395b-aecd-56810d435d02",
+   "uncertain": "MB 藝人國別標 US；專輯曲風 chill 程度待聽審"
+  },
+  {
+   "artist": "Sleep Walker",
+   "album": "The Voyage",
+   "year": 2006,
+   "label": "Village Again",
+   "faction": "J1",
+   "why": "日本 future jazz 團體 Sleep Walker 的專輯，爵士底、電子氛圍，屬 Nujabes 以外的另一條日本 chill 線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e7b3b37e-353b-4ab4-8ddf-6a1b7e593cd9",
+    "https://www.discogs.com/master/109701"
+   ],
+   "mbRgMbid": "e7b3b37e-353b-4ab4-8ddf-6a1b7e593cd9",
+   "uncertain": "證據僅 MB；內容待人工聽審"
+  },
+  {
+   "artist": "Jazztronik",
+   "album": "Samurai",
+   "year": 2005,
+   "label": "Pantone Music",
+   "faction": "J1",
+   "why": "野崎良太的 Jazztronik，club jazz／Latin house 路線，輕盈的 Shibuya 夜晚感。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b579b458-26e6-3169-a9c4-a7d5a5317a12",
+    "https://www.discogs.com/master/109643"
+   ],
+   "mbRgMbid": "b579b458-26e6-3169-a9c4-a7d5a5317a12",
+   "uncertain": "證據僅 MB；偏舞曲，卡池已有 Vamos Lá Brasil，可退"
+  },
+  {
+   "artist": "Substantial",
+   "album": "To This Union a Sun Was Born",
+   "year": 2001,
+   "label": "Dimid Recordings",
+   "faction": "J1",
+   "why": "Nujabes 製作班底 Substantial 的早期專輯，爵士 sample 的 jazzy hip-hop，與 Hydeout 系連線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d4f58b2-9928-408e-9f9d-546946b6956f",
+    "https://www.discogs.com/master/138251"
+   ],
+   "mbRgMbid": "2d4f58b2-9928-408e-9f9d-546946b6956f",
+   "uncertain": "MB 廠牌為 Dimid Recordings；Nujabes 參與度待查"
+  },
+  {
+   "artist": "Fat Jon the Ample Soul Physician",
+   "album": "Wave Motion",
+   "year": 2001,
+   "label": "Tri-Eight Music Supplies",
+   "faction": "J1",
+   "why": "Samurai Champloo 配樂班底 Fat Jon 的 abstract hip-hop 專輯，溫暖 loop 與鬆弛節拍。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a828b6be-41e4-3346-a74f-f8b76749eeec",
+    "https://www.discogs.com/master/74650",
+    "https://www.wikidata.org/wiki/Q7975287"
+   ],
+   "mbRgMbid": "a828b6be-41e4-3346-a74f-f8b76749eeec",
+   "uncertain": "MB 首發廠牌 Tri-Eight Music Supplies，亦有 Mush Records 版"
+  },
+  {
+   "artist": "haruka nakamura",
+   "album": "Grace",
+   "year": 2008,
+   "label": "Schole",
+   "faction": "J2",
+   "why": "中村晴香（haruka nakamura）的鋼琴與氛圍小品，Nujabes 圈的安靜一面，夜裡很舒服。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0921ad65-6c9b-35b1-bef7-73ea64b71a47"
+   ],
+   "mbRgMbid": "0921ad65-6c9b-35b1-bef7-73ea64b71a47",
+   "uncertain": "卡池有 AKA 的撞名藝人，不同人；已確認 seed 檢查 0"
+  },
+  {
+   "artist": "haruka nakamura",
+   "album": "MELODICA",
+   "year": 2013,
+   "label": "Hydeout Productions",
+   "faction": "J2",
+   "why": "Hydeout Productions 發行，melodica 與鋼琴的柔和器樂專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7561a4ec-6246-4397-85f0-38dbd0e31fd2"
+   ],
+   "mbRgMbid": "7561a4ec-6246-4397-85f0-38dbd0e31fd2",
+   "uncertain": ""
+  },
+  {
+   "artist": "Takagi Masakatsu 高木正勝",
+   "album": "Pia",
+   "year": 2001,
+   "label": "Carpark Records",
+   "faction": "J2",
+   "why": "高木正勝的首張專輯，鋼琴、電子與採樣交織的寧靜小品；藝人名沿用卡池既有格式。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2412fc7d-733c-3cf6-9fbe-bfa5ed8c2343"
+   ],
+   "mbRgMbid": "2412fc7d-733c-3cf6-9fbe-bfa5ed8c2343",
+   "uncertain": "卡池藝人名格式為 Takagi Masakatsu 高木正勝（已有 Marginalia I）；證據取 MB／Discogs"
+  },
+  {
+   "artist": "Ametsub",
+   "album": "The Nothings of the North",
+   "year": 2009,
+   "label": "PROGRESSIVE FOrM",
+   "faction": "J2",
+   "why": "Ametsub 的細緻 glitch／folktronica 電子，北方雪景般的抒情。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/4fb7e500-7699-38a1-b188-7060af0c9d28",
+    "https://www.discogs.com/master/248367"
+   ],
+   "mbRgMbid": "4fb7e500-7699-38a1-b188-7060af0c9d28",
+   "uncertain": "MB 廠牌列 nothings66 與 PROGRESSIVE FOrM，取後者"
+  },
+  {
+   "artist": "細野晴臣",
+   "album": "omni Sight Seeing",
+   "year": 1989,
+   "label": "Epic Records",
+   "faction": "J2",
+   "why": "細野晴臣 80 年代末的世界音樂／氛圍電子，旅遊明信片式的悠閒。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/05c49f1c-4dac-3961-8b95-f075007cc3c4",
+    "https://www.discogs.com/master/135220",
+    "https://www.wikidata.org/wiki/Q7090341"
+   ],
+   "mbRgMbid": "05c49f1c-4dac-3961-8b95-f075007cc3c4",
+   "uncertain": "卡池已有細野晴臣 8 張（藝人名以日文 細野晴臣 登錄），已超過每藝人 3 張上限；可退"
+  },
+  {
+   "artist": "Masayoshi Fujita",
+   "album": "Stories",
+   "year": 2013,
+   "label": "FLAU",
+   "faction": "J2",
+   "why": "藤田正嘉的顫音琴（vibraphone）專輯，安靜剔透的 modern chill。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/68b6861f-46db-4454-b6ac-e85106f4b8b9"
+   ],
+   "mbRgMbid": "68b6861f-46db-4454-b6ac-e85106f4b8b9",
+   "uncertain": ""
+  },
+  {
+   "artist": "Masayoshi Fujita",
+   "album": "Apologues",
+   "year": 2015,
+   "label": "Erased Tapes Records",
+   "faction": "J2",
+   "why": "Erased Tapes 發行，顫音琴與氛圍電子，夜間最適合。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f61badcf-7084-4d0e-8e5a-b31f2892293d"
+   ],
+   "mbRgMbid": "f61badcf-7084-4d0e-8e5a-b31f2892293d",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yosi Horikawa",
+   "album": "Vapor",
+   "year": 2013,
+   "label": "First Word Records",
+   "faction": "J2",
+   "why": "堀川洋司以環境採樣建構節拍的電子專輯，清爽的 downtempo。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/093ae454-6bdf-426e-a6df-0d461d6b4a6a"
+   ],
+   "mbRgMbid": "093ae454-6bdf-426e-a6df-0d461d6b4a6a",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lamp",
+   "album": "恋人へ",
+   "year": 2004,
+   "label": "Botanical House",
+   "faction": "J1",
+   "why": "Lamp 的 bossa／soft pop 專輯，日本新澀谷系的夜裡輕音樂。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9e7a4cb0-cb33-431a-ae7f-4ff969388fb7"
+   ],
+   "mbRgMbid": "9e7a4cb0-cb33-431a-ae7f-4ff969388fb7",
+   "uncertain": "非電子，偏 pop；MB 廠牌首見 Motel Bleu，後為 Botanical House"
+  },
+  {
+   "artist": "Clazziquai Project",
+   "album": "Instant Pig",
+   "year": 2004,
+   "label": "Fluxus Music",
+   "faction": "A",
+   "why": "韓國 lounge electronica 代表 Clazziquai 的首張，bossa、house、nu-jazz 混合。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/43b19142-c9e1-390b-8214-dcb825ce00cf",
+    "https://www.discogs.com/master/267850",
+    "https://www.wikidata.org/wiki/Q16096702"
+   ],
+   "mbRgMbid": "43b19142-c9e1-390b-8214-dcb825ce00cf",
+   "uncertain": ""
+  },
+  {
+   "artist": "Clazziquai Project",
+   "album": "Color Your Soul",
+   "year": 2005,
+   "label": "Fluxus Music",
+   "faction": "A",
+   "why": "Clazziquai 第二張，更柔和的 lounge 與電子 pop。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/208949fe-2026-32d2-9f86-9c81cf6e5e5c",
+    "https://www.discogs.com/master/267852",
+    "https://www.wikidata.org/wiki/Q9195511"
+   ],
+   "mbRgMbid": "208949fe-2026-32d2-9f86-9c81cf6e5e5c",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mocca",
+   "album": "My Diary",
+   "year": 2002,
+   "label": "FFWD Records",
+   "faction": "A",
+   "why": "印尼 Mocca 的首張，jazzy indie pop，午後咖啡館感；亞洲 chill 的另一端。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e81890a4-82b0-350e-9441-1b6b4a8fa14f",
+    "https://www.wikidata.org/wiki/Q19943874"
+   ],
+   "mbRgMbid": "e81890a4-82b0-350e-9441-1b6b4a8fa14f",
+   "uncertain": "非電子；資料較薄，可退"
+  },
+  {
+   "artist": "Lali Puna",
+   "album": "Scary World Theory",
+   "year": 2001,
+   "label": "Morr Music",
+   "faction": "K",
+   "why": "Morr Music 旗艦團體 Lali Puna，女聲與電子節拍的冷暖並存，indietronica 經典。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/afc4280d-9c04-36e1-9921-987e4dee0b9d",
+    "https://www.discogs.com/master/45036",
+    "https://www.wikidata.org/wiki/Q3951729",
+    "https://en.wikipedia.org/wiki/Scary_World_Theory"
+   ],
+   "mbRgMbid": "afc4280d-9c04-36e1-9921-987e4dee0b9d",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lali Puna",
+   "album": "Faking the Books",
+   "year": 2004,
+   "label": "Morr Music",
+   "faction": "K",
+   "why": "Lali Puna 第三張，更明亮的 synth 與人聲。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ff58f49d-ca4b-3fd8-9ffe-aa947d9d7409",
+    "https://www.discogs.com/master/45039",
+    "https://www.wikidata.org/wiki/Q3738512"
+   ],
+   "mbRgMbid": "ff58f49d-ca4b-3fd8-9ffe-aa947d9d7409",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Notwist",
+   "album": "Neon Golden",
+   "year": 2002,
+   "label": "City Slang",
+   "faction": "K",
+   "why": "德國 Notwist 從 indie rock 轉向電子與原聲的里程碑，folktronica／indietronica 代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7e0c1da0-f2b6-3d5a-93b1-c96c1da15fca",
+    "https://www.allmusic.com/album/mw0000020532",
+    "https://www.discogs.com/master/9468",
+    "https://www.bbc.co.uk/music/reviews/3czf",
+    "https://www.wikidata.org/wiki/Q1977566"
+   ],
+   "mbRgMbid": "7e0c1da0-f2b6-3d5a-93b1-c96c1da15fca",
+   "uncertain": "MB 首見廠牌 Spunk!，德國版為 City Slang；取 City Slang"
+  },
+  {
+   "artist": "Tunng",
+   "album": "Comments of the Inner Chorus",
+   "year": 2006,
+   "label": "Full Time Hobby",
+   "faction": "K",
+   "why": "英國 Tunng 的 folktronica 經典，原聲吉他與電子細節。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/22c231ee-6beb-3880-91a6-32e81956bcc5",
+    "https://www.allmusic.com/album/mw0000554540",
+    "https://www.discogs.com/master/122431",
+    "https://www.wikidata.org/wiki/Q5152396"
+   ],
+   "mbRgMbid": "22c231ee-6beb-3880-91a6-32e81956bcc5",
+   "uncertain": "MB 首見 Cycle，取 Full Time Hobby 為主廠牌"
+  },
+  {
+   "artist": "The Books",
+   "album": "Lost and Safe",
+   "year": 2005,
+   "label": "Tomlab",
+   "faction": "K",
+   "why": "The Books 第三張，採樣語音與弦樂的溫暖拼貼；卡池已有前兩張。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e6941022-ecc8-3874-85f3-43c54022fb67",
+    "https://www.allmusic.com/album/mw0000244225",
+    "https://www.discogs.com/master/184733",
+    "https://www.wikidata.org/wiki/Q3259840"
+   ],
+   "mbRgMbid": "e6941022-ecc8-3874-85f3-43c54022fb67",
+   "uncertain": "同藝人將達 3 張"
+  },
+  {
+   "artist": "ISAN",
+   "album": "Lucky Cat",
+   "year": 2001,
+   "label": "Morr Music",
+   "faction": "K",
+   "why": "英國二人組 Isan 的柔軟類比電子，Morr Music 的代表之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e021c386-5d7c-3b2e-af41-ecec453b512f",
+    "https://www.discogs.com/master/45009"
+   ],
+   "mbRgMbid": "e021c386-5d7c-3b2e-af41-ecec453b512f",
+   "uncertain": ""
+  },
+  {
+   "artist": "Styrofoam",
+   "album": "Nothing's Lost",
+   "year": 2004,
+   "label": "Morr Music",
+   "faction": "K",
+   "why": "比利時 Styrofoam（Arne Van Petegem）的 indietronica，人聲流動輕柔。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d154f7fa-8942-3f29-b4f4-f57466b3c4d5",
+    "https://www.allmusic.com/album/mw0000367400",
+    "https://www.discogs.com/master/131321"
+   ],
+   "mbRgMbid": "d154f7fa-8942-3f29-b4f4-f57466b3c4d5",
+   "uncertain": ""
+  },
+  {
+   "artist": "Helios",
+   "album": "Eingya",
+   "year": 2006,
+   "label": "Type",
+   "faction": "K",
+   "why": "Keith Kenniff 的 Helios，吉他與電子層疊的 ambient／post-rock 抒情。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9bb7e568-5778-3510-a1c6-c82468586dcc",
+    "https://www.discogs.com/master/26602"
+   ],
+   "mbRgMbid": "9bb7e568-5778-3510-a1c6-c82468586dcc",
+   "uncertain": "偏 ambient，非純 drone"
+  },
+  {
+   "artist": "Hood",
+   "album": "Cold House",
+   "year": 2001,
+   "label": "Domino",
+   "faction": "K",
+   "why": "英國 Hood 轉向電子與 hip-hop 節拍的專輯，朦朧的 folktronica 冷調。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6bdc32b0-3c49-32e6-9c57-821bffb512cf",
+    "https://www.allmusic.com/album/mw0000592201",
+    "https://www.discogs.com/master/9173",
+    "https://www.wikidata.org/wiki/Q5142285",
+    "https://en.wikipedia.org/wiki/Cold_House"
+   ],
+   "mbRgMbid": "6bdc32b0-3c49-32e6-9c57-821bffb512cf",
+   "uncertain": "MB 首見 Sensory Projects，Domino 為廣泛發行廠牌"
+  },
+  {
+   "artist": "Dntel",
+   "album": "Life Is Full of Possibilities",
+   "year": 2001,
+   "label": "Plug Research",
+   "faction": "K",
+   "why": "Jimmy Tamborello 的 Dntel，含《(This Is) The Dream of Evan and Chan》，indietronica 開山之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/62813962-6823-36c4-9cd3-9891b11941ff",
+    "https://www.discogs.com/master/28396",
+    "https://www.bbc.co.uk/music/reviews/4jw6",
+    "https://www.wikidata.org/wiki/Q3238368"
+   ],
+   "mbRgMbid": "62813962-6823-36c4-9cd3-9891b11941ff",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fridge",
+   "album": "Happiness",
+   "year": 2000,
+   "label": "Text Records",
+   "faction": "K",
+   "why": "Four Tet 的 Kieran Hebden 所屬樂團 Fridge，輕盈的 post-rock 電子。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/72c1d22c-b3d0-3c6d-b5fb-1e444343eb04",
+    "https://www.allmusic.com/album/mw0000016912",
+    "https://www.discogs.com/master/6241",
+    "https://www.wikidata.org/wiki/Q5652295",
+    "https://en.wikipedia.org/wiki/Happiness_(Fridge_album)"
+   ],
+   "mbRgMbid": "72c1d22c-b3d0-3c6d-b5fb-1e444343eb04",
+   "uncertain": "MB 首發年份僅標 2000，廠牌列 Text／Domino"
+  },
+  {
+   "artist": "Junior Boys",
+   "album": "Last Exit",
+   "year": 2004,
+   "label": "Domino",
+   "faction": "K",
+   "why": "加拿大 Junior Boys 的 slow-motion 電子流行，夜晚車窗外的氣氛。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f9fdb50-bc15-3659-82ea-09c85be777d6",
+    "https://www.allmusic.com/album/mw0000641868",
+    "https://www.discogs.com/master/69706",
+    "https://www.wikidata.org/wiki/Q3218383",
+    "https://en.wikipedia.org/wiki/Last_Exit_(Junior_Boys_album)"
+   ],
+   "mbRgMbid": "0f9fdb50-bc15-3659-82ea-09c85be777d6",
+   "uncertain": "MB 廠牌首見 Domino Recording Co. Ltd."
+  },
+  {
+   "artist": "The Album Leaf",
+   "album": "In a Safe Place",
+   "year": 2004,
+   "label": "Sub Pop",
+   "faction": "K",
+   "why": "Jimmy LaValle 的 The Album Leaf，冰島錄製、弦樂與電子的後搖滾 chill。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/dd09746c-2fd0-37ce-8ac8-d2ea1187c4ce",
+    "https://www.allmusic.com/album/mw0000209968",
+    "https://www.discogs.com/master/1653",
+    "https://www.indielondon.co.uk/music/cd_album_leaf_safe_place.html",
+    "https://www.wikidata.org/wiki/Q6011461"
+   ],
+   "mbRgMbid": "dd09746c-2fd0-37ce-8ac8-d2ea1187c4ce",
+   "uncertain": ""
+  },
+  {
+   "artist": "Flunk",
+   "album": "For Sleepyheads Only",
+   "year": 2002,
+   "label": "Beatservice Records",
+   "faction": "K",
+   "why": "挪威 Flunk 的電子 trip-pop，慵懶女聲與簡約節拍。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc845658-dbbd-3553-8269-07ea1e4d6a6d",
+    "https://www.discogs.com/master/146455",
+    "https://www.wikidata.org/wiki/Q5466875",
+    "https://en.wikipedia.org/wiki/For_Sleepyheads_Only"
+   ],
+   "mbRgMbid": "dc845658-dbbd-3553-8269-07ea1e4d6a6d",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lemon Jelly",
+   "album": "'64-'95",
+   "year": 2005,
+   "label": "Impotent Fury",
+   "faction": "K",
+   "why": "英國 Lemon Jelly 第二張，滑稽採樣與輕快電子，卡池已有 Lost Horizons。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d7ae044-7ed7-3624-a516-239607c2d4b0",
+    "https://www.allmusic.com/album/mw0000139428",
+    "https://www.discogs.com/master/18642",
+    "https://www.bbc.co.uk/music/reviews/d3rg",
+    "https://www.wikidata.org/wiki/Q4540386"
+   ],
+   "mbRgMbid": "2d7ae044-7ed7-3624-a516-239607c2d4b0",
+   "uncertain": "MB 標題為 ’64–’95（彎撇號＋en dash），依規則改 ASCII；廠牌 Impotent Fury（XL Recordings 為日本／代理版）"
+  },
+  {
+   "artist": "Small Black",
+   "album": "New Chain",
+   "year": 2010,
+   "label": "Jagjaguwar",
+   "faction": "C",
+   "why": "Small Black 的 chillwave 首張，朦朧的合成器與迷濛人聲。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2705b4ba-dae8-4e12-a481-91d1de328dbe",
+    "https://www.allmusic.com/album/mw0002041969",
+    "https://www.discogs.com/master/320315",
+    "https://www.bbc.co.uk/music/reviews/bc9p"
+   ],
+   "mbRgMbid": "2705b4ba-dae8-4e12-a481-91d1de328dbe",
+   "uncertain": ""
+  },
+  {
+   "artist": "Memory Tapes",
+   "album": "Seek Magic",
+   "year": 2009,
+   "label": "Something in Construction",
+   "faction": "C",
+   "why": "Dayve Hawk 的 Memory Tapes，夢幻 synth-pop／chillwave 代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1343b264-36ff-483c-800a-5c508131a8e9",
+    "https://www.discogs.com/master/190826",
+    "https://www.bbc.co.uk/music/reviews/hn5c",
+    "https://www.wikidata.org/wiki/Q7445776",
+    "https://en.wikipedia.org/wiki/Seek_Magic"
+   ],
+   "mbRgMbid": "1343b264-36ff-483c-800a-5c508131a8e9",
+   "uncertain": "MB 首見廠牌 Pod，取 Something in Construction"
+  },
+  {
+   "artist": "Ford & Lopatin",
+   "album": "Channel Pressure",
+   "year": 2011,
+   "label": "Software",
+   "faction": "C",
+   "why": "Oneohtrix Point Never 與 Joel Ford 的 vaporwave-前身 80s synth 專輯，夢幻懷舊。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f37ee031-8fa4-4aa8-a9a7-003893011760",
+    "https://www.allmusic.com/album/mw0002125078",
+    "https://www.discogs.com/master/342120",
+    "https://www.wikidata.org/wiki/Q20014334"
+   ],
+   "mbRgMbid": "f37ee031-8fa4-4aa8-a9a7-003893011760",
+   "uncertain": ""
+  },
+  {
+   "artist": "jj",
+   "album": "jj n° 2",
+   "year": 2009,
+   "label": "Sincerely Yours",
+   "faction": "C",
+   "why": "瑞典 jj 的 tropical 夢幻 pop，溫暖海風感，chillwave 邊緣名盤。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8eed6507-a5e2-4cc2-9258-583613128ae8",
+    "https://www.discogs.com/master/167854",
+    "https://www.wikidata.org/wiki/Q6203895"
+   ],
+   "mbRgMbid": "8eed6507-a5e2-4cc2-9258-583613128ae8",
+   "uncertain": "MB 藝人為瑞典 jj（非 J.J. Cale）"
+  },
+  {
+   "artist": "The Radio Dept.",
+   "album": "Pet Grief",
+   "year": 2006,
+   "label": "Labrador",
+   "faction": "C",
+   "why": "瑞典 The Radio Dept. 的 dream pop 電子，懶洋洋的 shoegaze 質感。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/07436841-db23-3353-8e56-5b4523b9339d",
+    "https://www.allmusic.com/album/mw0000724025",
+    "https://www.discogs.com/master/53117",
+    "https://www.wikidata.org/wiki/Q7171544"
+   ],
+   "mbRgMbid": "07436841-db23-3353-8e56-5b4523b9339d",
+   "uncertain": "MB 首見 Chili Music Korea，取 Labrador"
+  },
+  {
+   "artist": "Teen Daze",
+   "album": "All of Us, Together",
+   "year": 2012,
+   "label": "Lefse Records",
+   "faction": "C",
+   "why": "Teen Daze（Jamison Isaak）的柔和 chillwave，晨光般的暖意。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/08fbb047-a671-4e0f-bece-54443e3f8c7b",
+    "https://www.discogs.com/master/451187"
+   ],
+   "mbRgMbid": "08fbb047-a671-4e0f-bece-54443e3f8c7b",
+   "uncertain": ""
+  },
+  {
+   "artist": "Poolside",
+   "album": "Pacific Standard Time",
+   "year": 2012,
+   "label": "Poolside Music",
+   "faction": "C",
+   "why": "洛杉磯 Poolside 的 balmy 日光 disco，「daytime disco」的泳池曬太陽感。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f48642cb-2df0-42f6-932e-f86ccc39eaf9"
+   ],
+   "mbRgMbid": "f48642cb-2df0-42f6-932e-f86ccc39eaf9",
+   "uncertain": "MB 廠牌列自主 Poolside Music"
+  },
+  {
+   "artist": "Nite Jewel",
+   "album": "One Second of Love",
+   "year": 2012,
+   "label": "Secretly Canadian",
+   "faction": "C",
+   "why": "Nite Jewel 的 lo-fi synth R&B，柔軟的夜間律動。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8fb2472c-4068-448e-accc-ebae0100b62f",
+    "https://www.discogs.com/master/416727",
+    "https://www.bbc.co.uk/music/reviews/6g8r"
+   ],
+   "mbRgMbid": "8fb2472c-4068-448e-accc-ebae0100b62f",
+   "uncertain": "卡池已有 Pieces of You，不同人（Jewel 撞名需防）"
+  },
+  {
+   "artist": "Electric Youth",
+   "album": "Innerworld",
+   "year": 2014,
+   "label": "Secretly Canadian",
+   "faction": "C",
+   "why": "加拿大雙人組 Electric Youth 的 synthwave 夢幻首張，電影感強。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/03ee6702-c73e-4459-81f1-2affcf323978",
+    "https://www.discogs.com/master/738280"
+   ],
+   "mbRgMbid": "03ee6702-c73e-4459-81f1-2affcf323978",
+   "uncertain": ""
+  },
+  {
+   "artist": "Houses",
+   "album": "A Quiet Darkness",
+   "year": 2013,
+   "label": "Downtown",
+   "faction": "C",
+   "why": "芝加哥雙人組 Houses 的 lo-fi 電子，朦朧、安靜。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ccfd534-9df9-4a98-8325-991a91f0f2d2"
+   ],
+   "mbRgMbid": "6ccfd534-9df9-4a98-8325-991a91f0f2d2",
+   "uncertain": "資料較薄，可退"
+  }
+ ],
+ "notes": [
+  "dedupe：每張已跑 CUR-DISPATCH 指令皆為 0；另人工確認 seed 以日文／混合格式登錄的藝人（細野晴臣、Takagi Masakatsu 高木正勝、Yoshinori Sunahara、Quasimode）。",
+  "藝人名沿用卡池既有格式：高木正勝 為 'Takagi Masakatsu 高木正勝'；細野晴臣 日文登錄。FPM 的 MB 名為 'FPM'，此處用常用名 Fantastic Plastic Machine（seed 無任何 FPM／Fantastic Plastic 條目）。",
+  "已超上限：細野晴臣 卡池已 8 張，omni Sight Seeing 為第 9 張，建議店主可退；Naga (Music For Monsoon) 已自提案移除。",
+  "未收（卡池已滿或不合）：Quasimode（8 張）、Yoshinori Sunahara（5）、Mondo Grosso（MG4 已有）、Ryuichi Sakamoto（12）、Múm（2，Finally We Are No One 與 Yesterday Was Dramatic 已在）、The Postal Service、Wild Nothing、Mild High Club、Washed Out、DJ Krush、Cornelius、Pizzicato Five。",
+  "未收（資料薄或不 chill）：Shing02、Ryota Nozaki、i-dep、Kenmochi Hidefumi（MB 無藝人條目）、Aoki Takamasa（MB 無）、World's End Girlfriend（情緒過重）、Sonia Calico（僅 2020 一張）、Kirara、Fromm、台灣與中國 chill electronic（MB 覆蓋不足）、Tycho／Bibio／Gold Panda 歸 b 組。",
+  "同名風險：jj（瑞典，MB 3503bb7b；卡池有 J.J. Cale／J.J. Johnson 但專輯不同）、Nite Jewel（卡池有 Jewel）、Cro-Magnon（MB 90dce2fd，Jazzy Sport）、Helios（Keith Kenniff，50a32791）、Hood（英國 indie，e5f2a453；卡池有 Robert Hood）、ISAN（英國，270ab891；卡池無）、Houses（芝加哥 289be459）、CALM（08379a1c）。",
+  "待人工聽審／較不確定：Sleep Walker《The Voyage》、Jazztronik《Samurai》（偏舞曲）、MONDAY満ちる《Double Image》、Lamp《恋人へ》（非電子）、Mocca《My Diary》（非電子）、Houses、Substantial（廠牌與 Nujabes 關聯）。",
+  "MB 廠牌多版本時取原首發地區版（Neon Golden=City Slang、Pet Grief=Labrador、Comments of the Inner Chorus=Full Time Hobby、Lost and Safe=Tomlab）。Lemon Jelly 標題 ’64–’95 已轉 ASCII '64-'95。WebSearch 使用 0 次（全用 MB API）。"
+ ]
+}

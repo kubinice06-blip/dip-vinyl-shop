@@ -1,0 +1,822 @@
+{
+ "factions": [
+  {
+   "id": "A",
+   "zh": "英國 trip-hop 第二波／Bristol 周邊",
+   "count": 8,
+   "why": "Massive Attack、Portishead 之後的 Olive、Alpha、Smoke City、Mono、Esthero、Martina Topley-Bird、Beth Orton、Jhelisa——卡池 trip-hop 核心已齊，補第二波與女性人聲一線。"
+  },
+  {
+   "id": "B",
+   "zh": "Ninja Tune／Mo' Wax 系 abstract／instrumental hip-hop",
+   "count": 7,
+   "why": "補 Ninja Tune 早期（Herbaliser、Kid Koala、Funki Porcini、Up Bustle & Out）、Mo' Wax（Money Mark）、Warp trip-jazz（Red Snapper）與 Tru Thoughts（Quantic）。"
+  },
+  {
+   "id": "C",
+   "zh": "維也納與德語圈 downtempo",
+   "count": 5,
+   "why": "Kruder & Dorfmeister 以外的 Couch／Compost／Sonar Kollektiv 系：Jazzanova、dZihan & Kamien、Sofa Surfers、Waldeck、Trüby Trio。"
+  },
+  {
+   "id": "D",
+   "zh": "北歐與歐陸 nu-jazz",
+   "count": 5,
+   "why": "Jazzland／ECM／Ninja Tune 北歐系：Bugge Wesseltoft、Nils Petter Molvær、Koop、Jaga Jazzist、Skalpel。"
+  },
+  {
+   "id": "E",
+   "zh": "法國 lounge／downtempo",
+   "count": 4,
+   "why": "Télépopmusik、Nouvelle Vague、Chinese Man、Émilie Simon——補 Air、St Germain 之外的法式 chill。"
+  },
+  {
+   "id": "F",
+   "zh": "日本 lounge／nu-jazz／chill",
+   "count": 5,
+   "why": "FPM、FreeTEMPO、宇山寛人（Hydeout，連 Nujabes）、Cro-Magnon、CALM——補日本 future jazz 與 chill electronica。"
+  },
+  {
+   "id": "G",
+   "zh": "Balearic／chill-out／lounge 原創專輯",
+   "count": 5,
+   "why": "Café del Mar 與 Eighteenth Street Lounge 系：Bebel Gilberto、José Padilla、Blue States、Bent、Thunderball。"
+  },
+  {
+   "id": "H",
+   "zh": "近年 beat／lo-fi／chill electronica",
+   "count": 6,
+   "why": "Ninja Tune／Ghostly 世代與 lo-fi 一脈：Yppah、Shigeto、Romare、Submotion Orchestra、FKJ、tomppabeats。"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Olive",
+   "album": "Extra Virgin",
+   "year": 1997,
+   "label": "RCA / BMG",
+   "faction": "A",
+   "why": "Robin Taylor-Firth 與 Ruth-Ann Boyle 的英國 trip-hop／downtempo 名盤，〈You're Not Alone〉為九〇年代末最廣為人知的 chill 曲目之一，屬 Portishead 之後第二波的商業代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b56a5dd6-ab39-3ab7-a88d-020bacf56d4a",
+    "https://www.allmusic.com/album/mw0000594964",
+    "https://www.discogs.com/master/66961",
+    "https://www.wikidata.org/wiki/Q5422165"
+   ],
+   "mbRgMbid": "b56a5dd6-ab39-3ab7-a88d-020bacf56d4a",
+   "uncertain": "",
+   "mbTitle": "Extra Virgin",
+   "mbFirstReleaseDate": "1997-05-19"
+  },
+  {
+   "artist": "Alpha",
+   "album": "Come From Heaven",
+   "year": 1997,
+   "label": "Melankolic",
+   "faction": "A",
+   "why": "Massive Attack 自家 Melankolic 廠牌出品的 Bristol 周邊原創專輯，電影感弦樂配慢拍，是 Bristol 聲音最純的外圍延伸。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5014ef85-fecb-3353-b74b-41e760e8b543",
+    "https://www.discogs.com/master/55646"
+   ],
+   "mbRgMbid": "5014ef85-fecb-3353-b74b-41e760e8b543",
+   "uncertain": "",
+   "mbTitle": "Come From Heaven",
+   "mbFirstReleaseDate": "1997-09-15"
+  },
+  {
+   "artist": "Smoke City",
+   "album": "Flying Away",
+   "year": 1997,
+   "label": "Jive",
+   "faction": "A",
+   "why": "倫敦 trip-hop／bossa 混血，〈Underwater Love〉帶出整張專輯的柔軟巴西底色，是第二波裡最輕盈的一張。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9b1fb7da-593b-3f85-a96e-f7258ff02cec",
+    "https://www.allmusic.com/album/mw0000040702",
+    "https://www.discogs.com/master/116298"
+   ],
+   "mbRgMbid": "9b1fb7da-593b-3f85-a96e-f7258ff02cec",
+   "uncertain": "",
+   "mbTitle": "Flying Away",
+   "mbFirstReleaseDate": "1997-06-24"
+  },
+  {
+   "artist": "Mono",
+   "album": "Formica Blues",
+   "year": 1997,
+   "label": "Echo",
+   "faction": "A",
+   "why": "Siobhan De Maré 與 Martin Virgo 的英國二人組，〈Life in Mono〉所在專輯，第二波 trip-hop 最常被點名的電影感慢板代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a26e221-a82a-393a-9eef-6e6e8e82c960",
+    "https://www.allmusic.com/album/mw0000384757",
+    "https://www.discogs.com/master/8170",
+    "https://rateyourmusic.com/release/album/mono/formica_blues/",
+    "https://www.wikidata.org/wiki/Q5470176"
+   ],
+   "mbRgMbid": "2a26e221-a82a-393a-9eef-6e6e8e82c960",
+   "uncertain": "",
+   "mbTitle": "Formica Blues",
+   "mbFirstReleaseDate": "1997-08-25"
+  },
+  {
+   "artist": "Esthero",
+   "album": "Breath from Another",
+   "year": 1998,
+   "label": "Work (Sony)",
+   "faction": "A",
+   "why": "加拿大歌手 Esthero 與製作人 Doc McKinney 的首張，爵士鼓組＋trip-hop 氛圍，北美版的 Bristol 系延伸。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9caf4bc7-51b9-393c-b6f7-f7d7aa10d67a",
+    "https://www.allmusic.com/album/mw0000035886",
+    "https://www.discogs.com/master/111145",
+    "https://www.wikidata.org/wiki/Q4959827"
+   ],
+   "mbRgMbid": "9caf4bc7-51b9-393c-b6f7-f7d7aa10d67a",
+   "uncertain": "MB 正規名為 \"Breath from Another\"（from 小寫）",
+   "mbTitle": "Breath from Another",
+   "mbFirstReleaseDate": "1998-04-28"
+  },
+  {
+   "artist": "Martina Topley-Bird",
+   "album": "Quixotic",
+   "year": 2003,
+   "label": "Independiente",
+   "faction": "A",
+   "why": "Tricky 的長年嗓音搭檔首張個人專輯，延續 Bristol 暗調慵懶但多了民謠與藍調質地。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d178a214-9a9e-3680-86dc-3dac1e14199e",
+    "https://www.discogs.com/master/118011"
+   ],
+   "mbRgMbid": "d178a214-9a9e-3680-86dc-3dac1e14199e",
+   "uncertain": "MB 日期僅到月份（2003-06）",
+   "mbTitle": "Quixotic",
+   "mbFirstReleaseDate": "2003-06"
+  },
+  {
+   "artist": "Beth Orton",
+   "album": "Trailer Park",
+   "year": 1996,
+   "label": "Heavenly Recordings",
+   "faction": "A",
+   "why": "William Orbit 製作的「folktronica」開山作，民謠人聲配 downtempo 電子拍，是 chill 場景中最溫柔的一張。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e379023-5a07-3cbc-b74f-06cc1147a1bf",
+    "https://www.allmusic.com/album/mw0000615950",
+    "https://www.discogs.com/master/74273",
+    "https://www.wikidata.org/wiki/Q7832796"
+   ],
+   "mbRgMbid": "4e379023-5a07-3cbc-b74f-06cc1147a1bf",
+   "uncertain": "",
+   "mbTitle": "Trailer Park",
+   "mbFirstReleaseDate": "1996-10-14"
+  },
+  {
+   "artist": "Jhelisa",
+   "album": "Language Electric",
+   "year": 1997,
+   "label": "Dorado",
+   "faction": "A",
+   "why": "倫敦 acid-jazz／soul 系歌手的 trip-hop 質地首張，慵懶人聲與 Dorado 廠牌的 broken groove，是英國第二波的 soulful 一端。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/edc49690-cb1b-3e48-95b9-d5c8e2e13c9b",
+    "https://www.discogs.com/master/121040"
+   ],
+   "mbRgMbid": "edc49690-cb1b-3e48-95b9-d5c8e2e13c9b",
+   "uncertain": "廠牌取 MB 記錄（Dorado）",
+   "mbTitle": "Language Electric",
+   "mbFirstReleaseDate": "1997-10-03"
+  },
+  {
+   "artist": "The Herbaliser",
+   "album": "Very Mercenary",
+   "year": 1999,
+   "label": "Ninja Tune",
+   "faction": "B",
+   "why": "Ninja Tune 最具代表性的電影感 jazzy hip-hop 器樂團，本張是其最完整的原創專輯，現場樂手味與 cinematic 氛圍兼具。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a8d6ec72-60d0-3684-9d8b-3e581a48d5eb",
+    "https://www.discogs.com/master/37955",
+    "https://pitchfork.com/reviews/albums/3830-very-mercenary/",
+    "https://www.wikidata.org/wiki/Q7923064"
+   ],
+   "mbRgMbid": "a8d6ec72-60d0-3684-9d8b-3e581a48d5eb",
+   "uncertain": "",
+   "mbTitle": "Very Mercenary",
+   "mbFirstReleaseDate": "1999-04-01"
+  },
+  {
+   "artist": "Kid Koala",
+   "album": "Carpal Tunnel Syndrome",
+   "year": 2000,
+   "label": "Ninja Tune",
+   "faction": "B",
+   "why": "加拿大 turntablist 的首張，把黑膠採樣玩成慵懶、幽默又溫暖的 abstract hip-hop，是 Ninja Tune chill 面的標誌。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ac708859-66b3-3258-90b8-64d6b70f4c6e",
+    "https://www.discogs.com/master/14189",
+    "https://rateyourmusic.com/release/album/kid_koala/carpal_tunnel_syndrome/",
+    "https://www.wikidata.org/wiki/Q2940115"
+   ],
+   "mbRgMbid": "ac708859-66b3-3258-90b8-64d6b70f4c6e",
+   "uncertain": "",
+   "mbTitle": "Carpal Tunnel Syndrome",
+   "mbFirstReleaseDate": "2000-02-15"
+  },
+  {
+   "artist": "Funki Porcini",
+   "album": "Hed Phone Sex",
+   "year": 1995,
+   "label": "Ninja Tune",
+   "faction": "B",
+   "why": "Ninja Tune 早期 downtempo 經典，Funki Porcini 的首張，爵士拍與 trip-hop 氛圍相當慵懶。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8dffcd57-eda9-3626-8c3d-aaf7bd138e39",
+    "https://www.discogs.com/master/29429"
+   ],
+   "mbRgMbid": "8dffcd57-eda9-3626-8c3d-aaf7bd138e39",
+   "uncertain": "MB 日期僅到月份（1995-05）",
+   "mbTitle": "Hed Phone Sex",
+   "mbFirstReleaseDate": "1995-05"
+  },
+  {
+   "artist": "Money Mark",
+   "album": "Mark's Keyboard Repair",
+   "year": 1995,
+   "label": "Mo' Wax",
+   "faction": "B",
+   "why": "Beastie Boys 鍵盤手的 Mo' Wax 首張，lo-fi 風琴、Rhodes 與鬆弛節拍，是 Mo' Wax 系 instrumental 的暖調代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/35dc5f59-9d48-3df4-971c-262574be6766",
+    "https://www.discogs.com/master/63594",
+    "https://www.wikidata.org/wiki/Q3849423"
+   ],
+   "mbRgMbid": "35dc5f59-9d48-3df4-971c-262574be6766",
+   "uncertain": "MB 正規名使用彎引號；原始廠牌取 MB 最早紀錄（Mo Wax MW034／Source 法版）",
+   "mbTitle": "Mark’s Keyboard Repair",
+   "mbFirstReleaseDate": "1995-07-27"
+  },
+  {
+   "artist": "Up, Bustle & Out",
+   "album": "The Breeze Was Mellow",
+   "year": 1994,
+   "label": "Ninja Tune",
+   "faction": "B",
+   "why": "Ninja Tune 早期的拉丁／爵士 downtempo 先驅，首張專輯奠定其 chill 與世界音樂混血路線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3b3a3bf4-f72b-330e-93b9-0c38ae211e02",
+    "https://www.discogs.com/master/95950"
+   ],
+   "mbRgMbid": "3b3a3bf4-f72b-330e-93b9-0c38ae211e02",
+   "uncertain": "",
+   "mbTitle": "The Breeze Was Mellow",
+   "mbFirstReleaseDate": "1994-08-08"
+  },
+  {
+   "artist": "Quantic",
+   "album": "The 5th Exotic",
+   "year": 2001,
+   "label": "Tru Thoughts",
+   "faction": "B",
+   "why": "Will Holland 在 Tru Thoughts 的首張，funk／jazz／拉丁 break 的暖調 downtempo，是英國獨立 chill 場景代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6e4f9c50-6213-354e-b4a0-e0993d35380c",
+    "https://www.allmusic.com/album/mw0000548161",
+    "https://www.discogs.com/master/1535",
+    "https://www.wikidata.org/wiki/Q7711955"
+   ],
+   "mbRgMbid": "6e4f9c50-6213-354e-b4a0-e0993d35380c",
+   "uncertain": "歸為 Ninja Tune／Mo' Wax 周邊的英國 break 系",
+   "mbTitle": "The 5th Exotic",
+   "mbFirstReleaseDate": "2001-06-18"
+  },
+  {
+   "artist": "Red Snapper",
+   "album": "Prince Blimey",
+   "year": 1996,
+   "label": "Warp",
+   "faction": "B",
+   "why": "Warp 旗下 trip-jazz 先驅，真貝斯＋鼓組的爵士 downtempo 風格，是 trip-hop 與 acid jazz 之間的橋。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/782fb9c0-9d7f-3794-a527-9a11f6539231",
+    "https://www.allmusic.com/album/mw0000968323",
+    "https://www.discogs.com/master/70961",
+    "https://rateyourmusic.com/release/album/red_snapper/prince_blimey/"
+   ],
+   "mbRgMbid": "782fb9c0-9d7f-3794-a527-9a11f6539231",
+   "uncertain": "",
+   "mbTitle": "Prince Blimey",
+   "mbFirstReleaseDate": "1996-09-09"
+  },
+  {
+   "artist": "Jazzanova",
+   "album": "In Between",
+   "year": 2002,
+   "label": "Jazzanova Compost Records",
+   "faction": "C",
+   "why": "柏林 Jazzanova 的首張錄音室專輯，nu-jazz／broken beat／爵士電子的德語圈代表，Sonar Kollektiv 系的基石。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f9ae107-4801-3cf2-8add-d3388f1f5a9a",
+    "https://www.discogs.com/master/56268",
+    "https://www.wikidata.org/wiki/Q16847594"
+   ],
+   "mbRgMbid": "3f9ae107-4801-3cf2-8add-d3388f1f5a9a",
+   "uncertain": "廠牌取 MB（Jazzanova Compost Records）",
+   "mbTitle": "In Between",
+   "mbFirstReleaseDate": "2002-04-29"
+  },
+  {
+   "artist": "dZihan & Kamien",
+   "album": "Gran Riserva",
+   "year": 2000,
+   "label": "Couch Records",
+   "faction": "C",
+   "why": "維也納 Couch Records 的 oriental downtempo／爵士電子，Gran Riserva 為其爵士感最濃的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b099a256-fd28-3b7a-96fd-3e9bc4258ca6",
+    "https://www.discogs.com/master/128592"
+   ],
+   "mbRgMbid": "b099a256-fd28-3b7a-96fd-3e9bc4258ca6",
+   "uncertain": "年份有出入：MB 為 2000-09，維基列 2002（Six Degrees 美版）；Freaks & Icons（2000-05）為維基稱「首張」，未收；Gran Riserva 是否為錄音室原創需人工確認",
+   "mbTitle": "Gran Riserva",
+   "mbFirstReleaseDate": "2000-09-30"
+  },
+  {
+   "artist": "Sofa Surfers",
+   "album": "Transit",
+   "year": 1997,
+   "label": "MCA Records",
+   "faction": "C",
+   "why": "維也納 Kruder & Dorfmeister 同代的 dub／downtempo 樂隊，首張以厚重 dub 底色與電影氛圍奠定奧地利 chill 的另一條線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/10f730f6-63c1-3915-99de-70475134954d",
+    "https://www.discogs.com/master/50493"
+   ],
+   "mbRgMbid": "10f730f6-63c1-3915-99de-70475134954d",
+   "uncertain": "廠牌取 MB（MCA Records）",
+   "mbTitle": "Transit",
+   "mbFirstReleaseDate": "1997-08-19"
+  },
+  {
+   "artist": "Waldeck",
+   "album": "Balance of the Force",
+   "year": 1998,
+   "label": "Spray Records",
+   "faction": "C",
+   "why": "維也納 Klaus Waldeck 的 electro-swing／lounge 首張，爵士取樣與 downtempo 拍結合，是 Dope Noir 路線的起點。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/eab8fd48-0366-337d-8887-0f0c58bebc17",
+    "https://www.allmusic.com/album/mw0000668898",
+    "https://www.discogs.com/master/249248"
+   ],
+   "mbRgMbid": "eab8fd48-0366-337d-8887-0f0c58bebc17",
+   "uncertain": "1999 年 Dope Noir 重發；原版廠牌取 MB（Spray Records）",
+   "mbTitle": "Balance of the Force",
+   "mbFirstReleaseDate": "1998"
+  },
+  {
+   "artist": "Trüby Trio",
+   "album": "Elevator Music",
+   "year": 2003,
+   "label": "Compost Records",
+   "faction": "C",
+   "why": "Compost 旗下 Rainer Trüby 的 nu-jazz 三重奏，Elevator Music 以爵士電子 lounge 呈現德語圈的優雅 chill。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/45ef9fa9-6915-3c76-b171-4af1cfd41ee7",
+    "https://www.discogs.com/master/155920"
+   ],
+   "mbRgMbid": "45ef9fa9-6915-3c76-b171-4af1cfd41ee7",
+   "uncertain": "",
+   "mbTitle": "Elevator Music",
+   "mbFirstReleaseDate": "2003-05-21"
+  },
+  {
+   "artist": "Bugge Wesseltoft",
+   "album": "New Conception of Jazz",
+   "year": 1997,
+   "label": "Jazzland Recordings",
+   "faction": "D",
+   "why": "挪威 Jazzland 創辦人的代表作，開創 Scandinavian nu-jazz 的錄音，現場爵士即興配電子節拍。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e4fd6de8-179a-3ad7-bc93-aa3c36f85544"
+   ],
+   "mbRgMbid": "e4fd6de8-179a-3ad7-bc93-aa3c36f85544",
+   "uncertain": "",
+   "mbTitle": "New Conception of Jazz",
+   "mbFirstReleaseDate": "1997-08-11"
+  },
+  {
+   "artist": "Nils Petter Molvær",
+   "album": "Khmer",
+   "year": 1997,
+   "label": "ECM",
+   "faction": "D",
+   "why": "挪威小號手把 ECM 式空間感與 trip-hop／ambient 電子結合，是北歐 electro-jazz 的里程碑，chill 與冷靜感兼具。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ecb60660-25d3-3b65-9f9d-5ac472dfe606",
+    "https://www.allmusic.com/album/mw0000040809",
+    "https://www.discogs.com/master/102122"
+   ],
+   "mbRgMbid": "ecb60660-25d3-3b65-9f9d-5ac472dfe606",
+   "uncertain": "MB 日期僅到月份（1997-10）；偏爵士，列入作為北歐 nu-jazz 代表",
+   "mbTitle": "Khmer",
+   "mbFirstReleaseDate": "1997-10"
+  },
+  {
+   "artist": "Koop",
+   "album": "Waltz for Koop",
+   "year": 2001,
+   "label": "Superstudio Grå / Sony Sweden",
+   "faction": "D",
+   "why": "斯德哥爾摩 Koop 的 1920 年代爵士取樣與現代電子結合，是瑞典 lounge／nu-jazz 的代表，Jazzanova Compost 也曾發行。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d47b0c12-9976-3cff-aaec-8425d48f4f3a",
+    "https://www.discogs.com/master/150763",
+    "https://en.wikipedia.org/wiki/Waltz_for_Koop"
+   ],
+   "mbRgMbid": "d47b0c12-9976-3cff-aaec-8425d48f4f3a",
+   "uncertain": "年份有出入：維基 2001（Sony Sweden），MB 首發 2002；廠牌待確認",
+   "mbTitle": "Waltz for Koop",
+   "mbFirstReleaseDate": "2002"
+  },
+  {
+   "artist": "Jaga Jazzist",
+   "album": "A Livingroom Hush",
+   "year": 2001,
+   "label": "Ninja Tune",
+   "faction": "D",
+   "why": "挪威大編制 jazz／electronica 樂團，Ninja Tune 發行，兼具 post-rock 與 downtempo，是 Ninja Tune 在北歐的招牌。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0a212680-4318-3469-a442-edb67b082fe8",
+    "https://www.allmusic.com/album/mw0000660007",
+    "https://www.discogs.com/master/84338",
+    "https://www.wikidata.org/wiki/Q4657893",
+    "https://en.wikipedia.org/wiki/A_Livingroom_Hush"
+   ],
+   "mbRgMbid": "0a212680-4318-3469-a442-edb67b082fe8",
+   "uncertain": "Ninja Tune 為國際發行；挪威版廠牌需確認（可能 Jazzland）",
+   "mbTitle": "A Livingroom Hush",
+   "mbFirstReleaseDate": "2001-05-21"
+  },
+  {
+   "artist": "Skalpel",
+   "album": "Skalpel",
+   "year": 2004,
+   "label": "Ninja Tune",
+   "faction": "D",
+   "why": "波蘭 Skalpel 以 1960s 波蘭爵士取樣製成的 downtempo／nu-jazz，Ninja Tune 發行，是東歐 nu-jazz 的聲明之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1cd9f478-2ac6-3099-a3f0-0f323b2290d6",
+    "https://www.discogs.com/master/17358",
+    "https://www.wikidata.org/wiki/Q9337586"
+   ],
+   "mbRgMbid": "1cd9f478-2ac6-3099-a3f0-0f323b2290d6",
+   "uncertain": "MB 日期僅到月份（2004-03）",
+   "mbTitle": "Skalpel",
+   "mbFirstReleaseDate": "2004-03"
+  },
+  {
+   "artist": "Télépopmusik",
+   "album": "Genetic World",
+   "year": 2001,
+   "label": "EMI France (Capitol / Source)",
+   "faction": "E",
+   "why": "法國 lounge／trip-hop 代表，〈Breathe〉出自此專輯，首張以優雅人聲與電子拍成為 2000 年代初的 chill 經典。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c860d21b-c9bc-3c6b-a119-341e54a24e47",
+    "https://www.discogs.com/master/39535",
+    "https://www.wikidata.org/wiki/Q3100574"
+   ],
+   "mbRgMbid": "c860d21b-c9bc-3c6b-a119-341e54a24e47",
+   "uncertain": "廠牌取 MB 最早紀錄（EMI Music France）",
+   "mbTitle": "Genetic World",
+   "mbFirstReleaseDate": "2001-05-21"
+  },
+  {
+   "artist": "Nouvelle Vague",
+   "album": "Nouvelle Vague",
+   "year": 2004,
+   "label": "[PIAS] Le Label / Peacefrog",
+   "faction": "E",
+   "why": "將 new wave 名曲改編成 bossa nova 的法國企劃，原創專輯概念鮮明，lounge 感極強，屬咖啡廳場景。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d16b3b05-6f30-3242-9544-dba1083eb21e",
+    "https://www.allmusic.com/album/mw0000475730",
+    "https://www.discogs.com/master/5128",
+    "https://rateyourmusic.com/release/album/nouvelle_vague/nouvelle_vague/",
+    "https://www.wikidata.org/wiki/Q1764865"
+   ],
+   "mbRgMbid": "d16b3b05-6f30-3242-9544-dba1083eb21e",
+   "uncertain": "全為翻唱；列為 lounge 概念專輯，需審視是否符合「原創」判準",
+   "mbTitle": "Nouvelle Vague",
+   "mbFirstReleaseDate": "2004-05-11"
+  },
+  {
+   "artist": "Chinese Man",
+   "album": "The Groove Sessions, Volume 2",
+   "year": 2009,
+   "label": "Chinese Man Records",
+   "faction": "E",
+   "why": "馬賽 Chinese Man 以 trip-hop／hip-hop／亞洲採樣的鬆弛拍成為法國獨立 chill 的招牌，Vol. 2 是他們首張正式國際出現的專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/916593f9-3d81-3430-ad4a-f0e497d034df",
+    "https://www.discogs.com/master/173193"
+   ],
+   "mbRgMbid": "916593f9-3d81-3430-ad4a-f0e497d034df",
+   "uncertain": "The Groove Sessions 為系列；Vol. 1 為 2007 集合，Vol. 2 為首張完整錄音室專輯，需人工確認取哪張",
+   "mbTitle": "The Groove Sessions, Volume 2",
+   "mbFirstReleaseDate": "2009-03-30"
+  },
+  {
+   "artist": "Émilie Simon",
+   "album": "Émilie Simon",
+   "year": 2003,
+   "label": "Barclay",
+   "faction": "E",
+   "why": "法國創作歌手的電子 chanson 首張，冰冷精緻的電子配細膩人聲，Air 之後的法式 chill 路線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6184f627-32be-3342-9c05-7c62ad63ef26",
+    "https://www.allmusic.com/album/mw0000468782",
+    "https://www.discogs.com/master/4638",
+    "https://www.wikidata.org/wiki/Q2251506"
+   ],
+   "mbRgMbid": "6184f627-32be-3342-9c05-7c62ad63ef26",
+   "uncertain": "偏電子流行，列為法國 downtempo 的邊緣收錄",
+   "mbTitle": "Émilie Simon",
+   "mbFirstReleaseDate": "2003-02"
+  },
+  {
+   "artist": "Fantastic Plastic Machine",
+   "album": "Luxury",
+   "year": 1998,
+   "label": "Readymade (Tokyo)",
+   "faction": "F",
+   "why": "田中知之（FPM）的澀谷系 lounge 名盤，輕盈的 bossa／easy listening 與 house 節拍，日本 lounge 場景的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/63fdd530-2b6e-32da-a22f-4465c635a86d",
+    "https://www.discogs.com/master/85720",
+    "https://pitchfork.com/reviews/albums/2985-luxury/",
+    "https://www.wikidata.org/wiki/Q6706449",
+    "https://en.wikipedia.org/wiki/Luxury_(Fantastic_Plastic_Machine_album)"
+   ],
+   "mbRgMbid": "63fdd530-2b6e-32da-a22f-4465c635a86d",
+   "uncertain": "藝人名 MB 為 FPM；廠牌取 MB（\"********* records, tokyo\"，疑為 Readymade）",
+   "mbTitle": "Luxury",
+   "mbFirstReleaseDate": "1998-09-10"
+  },
+  {
+   "artist": "FreeTEMPO",
+   "album": "The World Is Echoed",
+   "year": 2003,
+   "label": "forestnauts records",
+   "faction": "F",
+   "why": "日本獨立電子團體 FreeTEMPO 的首張，柔和的電子與 downtempo 質感，代表日本獨立 chill 一脈（內容待人工聽審確認）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc37f52c-5551-3bf1-b909-0d5ab0c8e8f9"
+   ],
+   "mbRgMbid": "bc37f52c-5551-3bf1-b909-0d5ab0c8e8f9",
+   "uncertain": "證據僅 MB；廠牌取 MB",
+   "mbTitle": "The World Is Echoed",
+   "mbFirstReleaseDate": "2003-07-12"
+  },
+  {
+   "artist": "Uyama Hiroto",
+   "album": "A Son of the Sun",
+   "year": 2008,
+   "label": "Hydeout Productions",
+   "faction": "F",
+   "why": "Nujabes 的 Hydeout Productions 廠牌發行，宇山寛人（Hiroto Uyama）的爵士 hip-hop／downtempo，可與卡池中的 Nujabes 連成一條線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/268b369c-91a3-375c-8352-484dfd16853b",
+    "https://www.wikidata.org/wiki/Q4659669"
+   ],
+   "mbRgMbid": "268b369c-91a3-375c-8352-484dfd16853b",
+   "uncertain": "MB 藝人名為 宇山寛人；證據僅 MB／Wikidata",
+   "mbTitle": "A Son of the Sun",
+   "mbFirstReleaseDate": "2008-07-16"
+  },
+  {
+   "artist": "Cro-Magnon",
+   "album": "Cro-Magnon",
+   "year": 2006,
+   "label": "NMNL Records",
+   "faction": "F",
+   "why": "日本 Cro-Magnon（Jazzy Sport 系）的首張，爵士 funk 與 mellow downtempo，日本 nu-jazz 場景的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0d57059-eecf-4245-8371-73bd8053b2cd"
+   ],
+   "mbRgMbid": "f0d57059-eecf-4245-8371-73bd8053b2cd",
+   "uncertain": "證據僅 MB；同名藝人需防混淆（MB 日本團）",
+   "mbTitle": "Cro-Magnon",
+   "mbFirstReleaseDate": "2006-05-31"
+  },
+  {
+   "artist": "CALM",
+   "album": "Moonage Electric Ensemble",
+   "year": 1999,
+   "label": "Lastrum",
+   "faction": "F",
+   "why": "MB 標註為日本 future jazz／downtempo 的 CALM，Moonage Electric Ensemble 是其早期爵士電子專輯（MB 列表最早的錄音室盤）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/13e31de0-5415-4c1c-9f25-c464e63389e1"
+   ],
+   "mbRgMbid": "13e31de0-5415-4c1c-9f25-c464e63389e1",
+   "uncertain": "證據僅 MB；CALM 另有 Ancient Future（2003）等可備選",
+   "mbTitle": "Moonage Electric Ensemble",
+   "mbFirstReleaseDate": "1999-11-10"
+  },
+  {
+   "artist": "Bebel Gilberto",
+   "album": "Tanto Tempo",
+   "year": 2000,
+   "label": "Ziriguiboom (Crammed Discs) / Six Degrees",
+   "faction": "G",
+   "why": "João Gilberto 之女的國際成名作，bossa 搭配 downtempo electronica，Café del Mar 時代最重要的 chill 專輯之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/84afe68c-10a8-38cd-9157-3a327257449d",
+    "https://www.allmusic.com/album/mw0000051160",
+    "https://www.discogs.com/master/81920",
+    "https://rateyourmusic.com/release/album/bebel_gilberto/tanto_tempo/",
+    "https://www.wikidata.org/wiki/Q1316598"
+   ],
+   "mbRgMbid": "84afe68c-10a8-38cd-9157-3a327257449d",
+   "uncertain": "MB 正規名 \"Tanto tempo\"（tempo 小寫）",
+   "mbTitle": "Tanto tempo",
+   "mbFirstReleaseDate": "2000-04-25"
+  },
+  {
+   "artist": "José Padilla",
+   "album": "Navigator",
+   "year": 2001,
+   "label": "Maverick / DRO EastWest",
+   "faction": "G",
+   "why": "Café del Mar 傳奇 DJ 的首張個人專輯，把 Balearic 日落的 chill-out 氛圍轉為原創錄音室作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6fa24872-75cf-320c-bcf3-7d0e1d12e297",
+    "https://www.discogs.com/master/8770"
+   ],
+   "mbRgMbid": "6fa24872-75cf-320c-bcf3-7d0e1d12e297",
+   "uncertain": "廠牌取 MB 最早紀錄（Maverick／DRO EastWest），需確認",
+   "mbTitle": "Navigator",
+   "mbFirstReleaseDate": "2001-10-30"
+  },
+  {
+   "artist": "Blue States",
+   "album": "Man Mountain",
+   "year": 2002,
+   "label": "XL Recordings",
+   "faction": "G",
+   "why": "英國 Blue States 的 cinematic downtempo／indietronica，XL 發行，Man Mountain 為其最受歡迎的專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1121ae92-4cea-3cd4-864a-a536df07c37d",
+    "https://www.discogs.com/master/105008"
+   ],
+   "mbRgMbid": "1121ae92-4cea-3cd4-864a-a536df07c37d",
+   "uncertain": "",
+   "mbTitle": "Man Mountain",
+   "mbFirstReleaseDate": "2002-08-12"
+  },
+  {
+   "artist": "Bent",
+   "album": "Programmed to Love",
+   "year": 2000,
+   "label": "Sport Bentertainment / Ministry of Sound",
+   "faction": "G",
+   "why": "英國 Bent 的首張，旋律優美的 chill-out electronica，2000 年代初 Balearic 與 lounge 的標準曲目。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b68fea5-9ab4-3406-94ca-6327aa9cb636",
+    "https://www.discogs.com/master/54180",
+    "https://www.wikidata.org/wiki/Q7248474"
+   ],
+   "mbRgMbid": "6b68fea5-9ab4-3406-94ca-6327aa9cb636",
+   "uncertain": "廠牌取 MB（Sport Bentertainment／EMI／Ministry of Sound），首發廠牌需確認",
+   "mbTitle": "Programmed to Love",
+   "mbFirstReleaseDate": "2000-07-17"
+  },
+  {
+   "artist": "Thunderball",
+   "album": "Scorpio Rising",
+   "year": 2001,
+   "label": "Eighteenth Street Lounge Music",
+   "faction": "G",
+   "why": "華盛頓 DC 的 Eighteenth Street Lounge 系，與 Thievery Corporation 同廠牌的 lounge／dub downtempo。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f45e483-3c10-37be-ab35-bb3d1138fa27",
+    "https://www.discogs.com/master/133137"
+   ],
+   "mbRgMbid": "5f45e483-3c10-37be-ab35-bb3d1138fa27",
+   "uncertain": "",
+   "mbTitle": "Scorpio Rising",
+   "mbFirstReleaseDate": "2001-07-10"
+  },
+  {
+   "artist": "Yppah",
+   "album": "They Know What Ghost Know",
+   "year": 2009,
+   "label": "Ninja Tune",
+   "faction": "H",
+   "why": "Joe Corrales 的 Ninja Tune 首張，shoegaze 質感的 chillwave／beat 電子，近年 lo-fi chill 的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0e524c0-fcc5-4943-9066-f0af52bdfb88",
+    "https://www.discogs.com/master/240240"
+   ],
+   "mbRgMbid": "e0e524c0-fcc5-4943-9066-f0af52bdfb88",
+   "uncertain": "",
+   "mbTitle": "They Know What Ghost Know",
+   "mbFirstReleaseDate": "2009-05-18"
+  },
+  {
+   "artist": "Shigeto",
+   "album": "Full Circle",
+   "year": 2010,
+   "label": "Ghostly International",
+   "faction": "H",
+   "why": "底特律鼓手製作人的首張，爵士鼓組與電子拍結合的 beat music，Ghostly 系的 chill 代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7e74bf6d-e130-45c0-9071-bda1970cec87",
+    "https://www.discogs.com/master/306131"
+   ],
+   "mbRgMbid": "7e74bf6d-e130-45c0-9071-bda1970cec87",
+   "uncertain": "",
+   "mbTitle": "Full Circle",
+   "mbFirstReleaseDate": "2010-11-09"
+  },
+  {
+   "artist": "Romare",
+   "album": "Projections",
+   "year": 2015,
+   "label": "Ninja Tune",
+   "faction": "H",
+   "why": "Archie Fairhurst 以爵士／靈魂採樣拼貼的 Ninja Tune 首張，house 與 downtempo 的溫暖結合。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b609c28e-5b7c-4b19-8d43-8d3c7323f7d0",
+    "https://www.allmusic.com/album/mw0002795348",
+    "https://www.discogs.com/master/802357"
+   ],
+   "mbRgMbid": "b609c28e-5b7c-4b19-8d43-8d3c7323f7d0",
+   "uncertain": "",
+   "mbTitle": "Projections",
+   "mbFirstReleaseDate": "2015-02-23"
+  },
+  {
+   "artist": "Submotion Orchestra",
+   "album": "Finest Hour",
+   "year": 2011,
+   "label": "Exceptional Records",
+   "faction": "H",
+   "why": "利茲的 dubstep／soul／jazz 樂團首張，chill 質地的 live 電子，近年英國 downtempo 的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8b52c9a2-7cb2-4e97-ab6f-daccf410d93d",
+    "https://www.allmusic.com/album/mw0002175343",
+    "https://www.discogs.com/master/408436"
+   ],
+   "mbRgMbid": "8b52c9a2-7cb2-4e97-ab6f-daccf410d93d",
+   "uncertain": "",
+   "mbTitle": "Finest Hour",
+   "mbFirstReleaseDate": "2011-06-13"
+  },
+  {
+   "artist": "FKJ",
+   "album": "French Kiwi Juice",
+   "year": 2017,
+   "label": "Roche Musique",
+   "faction": "H",
+   "why": "Vincent Fenton 的即興 loop 錄音現場感，funk／soul 與 downtempo 的當代 chill 代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b5dd2f35-2dc1-4406-b818-aafb9c35dc2f",
+    "https://www.discogs.com/master/1171221"
+   ],
+   "mbRgMbid": "b5dd2f35-2dc1-4406-b818-aafb9c35dc2f",
+   "uncertain": "FKJ 為單人現場 loop，需審視是否符合「錄音室專輯」判準",
+   "mbTitle": "French Kiwi Juice",
+   "mbFirstReleaseDate": "2017-03-03"
+  },
+  {
+   "artist": "tomppabeats",
+   "album": "Harbor",
+   "year": 2016,
+   "label": "Vinyl Digital",
+   "faction": "H",
+   "why": "lo-fi hip-hop 場景的代表之一，Tomppa 的 Harbor 是 lo-fi chill 的核心。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c6a40ec3-af2e-4105-a066-0803622956fb",
+    "https://www.wikidata.org/wiki/Q31281113"
+   ],
+   "mbRgMbid": "c6a40ec3-af2e-4105-a066-0803622956fb",
+   "uncertain": "證據僅 MB；MB 記錄的發行方為 Vinyl Digital，原始自行發行狀況待確認",
+   "mbTitle": "Harbor",
+   "mbFirstReleaseDate": "2016-05-06"
+  }
+ ],
+ "notes": [
+  "去重：所有 45 張皆以任務指定的 node 指令比對 seed_cards.json 輸出 0；候選中 4hero Two Pages、Mndsgn Yawn Zen、ODESZA In Return 已在卡池，已剔除。",
+  "卡池已有（提名時剔除）：Wagon Christ、UNKLE、Rei Harakami、Erik Truffaz、Teebs、Nosaj Thing、Washed Out、Toro y Moi、Baths、Mount Kimbie、Floating Points、Hania Rani、Khruangbin、Tom Misch、Jon Hopkins。",
+  "年份與廠牌取自 MusicBrainz release-group／release（最早日期 release）；證據網址取自 MB 的 url-rels（Discogs master／維基／AllMusic／Pitchfork）。Discogs 從沙盒直接連線回 403，未逐一開頁，僅採 MB 登記的連結。",
+  "WebSearch 使用 0 次；維基以 WebFetch 查證 Koop、dZihan & Kamien、Jay-Jay Johanson（後者未收）。",
+  "需人工確認項目見各張 uncertain：dZihan & Kamien 年份（2000／2002）與專輯性質、Koop 年份（2001／2002）、Nouvelle Vague 為翻唱概念專輯、Chinese Man 取哪一卷、Émilie Simon／FKJ 是否符合 downtempo 與錄音室專輯判準、FPM 廠牌、日本五張（FreeTEMPO、宇山寛人、Cro-Magnon、CALM）證據僅 MB。",
+  "MB 正規名大小寫：Breath from Another、Tanto tempo；Mark's Keyboard Repair 已改為 ASCII 撇號；藝人名 Uyama Hiroto 在 MB 為 宇山寛人，FPM 為 Fantastic Plastic Machine 的 MB 簡稱。",
+  "備選（未收）：Howie B Turn the Dark Off、Stateless、Rae & Christian Northern Sulphuric Soul、Fila Brazillia Maim That Tune、Mo' Horizons Come Touch the Sun、Jay-Jay Johanson Whiskey、La Funk Mob La Vague sensorielle、Nicola Conte Jet Sounds、Lovage、Rhye Woman、Leon Vynehall Nothing Is Still、Sleep Walker、Hocus Pocus 73 touches、Monday満ちる Double Image。",
+  "已排除：Mellow（Another Mellow 系列實為季節系列，性質不明）、Parov Stelar（electro-swing 偏舞曲）。"
+ ]
+}
