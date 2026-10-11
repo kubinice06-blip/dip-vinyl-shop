@@ -69,3 +69,17 @@
 - **9091** Kanka《Dub Communication》（研究 b：偏 stepper、節奏緊）、Jah Wobble & Bill Laswell《Radioaxiom》（世界音樂＋groove jazz）、Dub Colossus《Addis Through the Looking Glass》（Ethio-jazz 為主）：三張照收，留在 chill dub 線（dub 譜系的延伸，屬可逆）；寫作層照研究稿描述，不寫成純 dub 或「節奏放鬆」。
 - **9092** Olive《Extra Virgin》年份照研究 c 改 1996（Discogs master、英國 RCA 首版、維基三源；MB 1997 是登頂後重發）。卡單已改。
 - **9093** こだま和文《A Silent Prayer》年份照研究 a（9021）改 2003（Speedstar 首發；MB 2010 是數位上架日）；《クワイエット・レゲエ》廠牌補 Sony Records SRCS 6517（9022）。卡單已改。
+
+
+## 研究 e 組（9061–9070）
+- **9061** 研究 e 組 9 張交件：`desc-tools/batches/research/add-20261011-dt2-e.json`，facts 條數 11／11／11／10／11／11／12／11／12，status 全 full。WebSearch 6 次（Romare、tomppabeats、Howie B、FKJ、Shigeto、Yppah 各 1）；其餘走 MB／Discogs API、維基 raw 與 WebFetch。Texas Monthly、SCMP、BBC、Pitchfork、AllMusic、Norman Records 頁面被擋或無法開啟，未引用（SCMP 的 Howie B 錄音 18 天與女兒名取自搜尋摘要，單源未入 facts）。QA 研究 e 組無旗標。
+- **9062** 推翻策展層：Yppah《They Know What Ghost Know》不是『Ninja Tune 首張』，2006 年《You Are Beautiful at All Times》才是（維基、Discogs），本作為該廠第二張；『chillwave／chillhop』無來源，寫作層用『電子加搖滾、shoegaze 質感的 breaks／downtempo』。
+- **9063** 推翻策展層：Lovage 是美國企劃（Discogs 製作地舊金山 The Glue Factory），策展層 scene『英國 trip-hop／Bristol』不適用，寫作層必須寫美國；curatorWhy 中的『Nathan Larson』無任何來源，人聲是 Mike Patton 與 Jennifer Charles，Kid Koala 唱盤，不得寫 Nathan Larson；『電影配樂式絃樂』無版權頁記載，改寫氣氛評價。
+- **9064** 推翻策展層：Rae & Christian《Northern Sulphuric Soul》原始與主發行廠牌是曼徹斯特 Grand Central Records（GCCD104，歐洲版授權 Play It Again Sam），卡單 label『Sm:)e Communications』是美國版；寫作層用 Grand Central。『兩位 DJ』不實：Steve Christian 是工程師兼吉他手。Pride of Manchester 稱本作『Mercury 提名』『Guardian：英國最好的 hip-hop 專輯』單源無佐證，未入 facts。
+- **9065** 釐清策展層：FKJ《French Kiwi Juice》curatorRisk『單人 loop 是否符合錄音室專輯』——它是正式發行的首張專輯（Roche Musique／Believe，黑膠 2LP＋CD，12 首，Discogs／MB 標 Album），單人 loop 是現場方式，專輯錄製過程查無來源；建議判為符合，寫作層勿把現場 loop 與專輯錄音混寫。『即興』屬〈Tadow〉，不在本專輯。
+- **9066** 釐清策展層：tomppabeats《Harbor》curatorRisk『原始自行發行待確認』——MB 全部版本（數位 38／39 首、德國卡帶 39 首）皆列 Vinyl Digital，查無自行發行的獨立來源；廠牌照卡單 Vinyl Digital，不寫『自行發行』。取樣名單與黑膠轉賣價取自 2017 年 Yakima Herald 單篇報導，寫作層用『據報導』。
+- **9067** 釐清策展層：Howie B《Music for Babies》『U2 製作人出身』——與 U2 的關係為 1995 年 Passengers（與 Eno 監製）與 1997 年《Pop》，後者晚於本作，寫作層不寫 Pop；他是格拉斯哥人。曲名 How to Suckle／How To Suckie 拼法兩源不同，facts 未列。
+- **9068** 釐清策展層：Romare《Projections》『house 與 downtempo』Discogs 風格僅 House、Hip Hop；專輯名 Projections 與 Romare Bearden 1964 年同名展覽無來源說明是刻意致敬，寫作層不得寫成專輯名取自 Bearden。『DJ 雜誌年度專輯』取自 Ninja Tune 自述，無年份。
+- **9069** 釐清策展層：Shigeto《Full Circle》『爵士鼓組』——鼓手出身屬實（Mixmag、維基），但版權頁僅署名製作 Shigeto，專輯中鼓的演奏方式無來源，寫『鼓手出身的節奏感』；『底特律』他 2013 年才搬去，寫作層寫安娜堡出身。Submotion Orchestra《Finest Hour》發行日 Discogs 5 月 23 日、MB 6 月 13 日不一，只寫 2011 年。
+- **9070** 全組克制：發行後與作品無關的生平事件（FKJ 婚姻、Yppah 被 Lil Peep 取樣、Howie B 後來的 Pop、各團後續動向）一律不入 facts；Submotion〈All Yours〉被 Bryson Tiller 取樣（2015）屬作品後世流傳，已入 facts 並標年份。
+- **9094** Rae & Christian《Northern Sulphuric Soul》廠牌照研究 e 改 Grand Central Records（曼徹斯特原版；Sm:)e 是美國版）。卡單已改。
