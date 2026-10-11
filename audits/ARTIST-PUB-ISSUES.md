@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1094 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1107 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1092,8 +1092,21 @@
 | ar-d-080 | Orquesta Aragón | Danzones de Ayer y de Hoy | 一九四九年起由 Rafael Lay 掌舵 | World Music Central 與 Cuba Cultura 都寫 Orestes Aragón 因肺病在 1948 年退出、Lay 接任。 | https://en.culturacubana.net/?p=1072 |
 | ar-d-080 | Orquesta Aragón | Danzones de Ayer y de Hoy | 一九五五年 Richard Egües 帶著五鍵木笛加入 | World Music Central 與 Egües 2000 年訪談都寫 1954 年加入。 | https://www.charangasue.com/?p=95 |
 | ar-d-080 | Phyllis Dillon | One Life to Live | 1967 年的〈Don't Stay Away〉被認為是牙買加音樂裡最好的女聲演出之一 | 維基寫該曲是她為 Duke Reid 錄的第一支，錄於 1966 年底；上線簡介寫 1967 年，可能是發行年，與錄音年不同，建議不寫年份或改寫為 1966 年底錄製。另『最好的女聲演出』在維基是未具名的轉述，簡介宜加『被形容為』。 | https://en.wikipedia.org/wiki/Phyllis_Dillon |
-| ar-d-080 | Ras Michael & The Sons of Negus | Rastafari | 在牙買加 Rastafari 社群長大 | Gleaner 2022 年報導寫他由基督徒母親帶大、1950 年代受 Mortimo Planno 影響才皈依 Rastafari；維基則寫在 Rastafari 社群長大，兩源不一致，建議簡介改成較中性的『在金斯敦長大、年輕時皈依 Rastafari』或刪去此句。 | http://past.jamaica-gleaner.com/article/entertainment/20220411/ras-michael-sons-negus-fame-now-rasta-christian |
+| ar-d-080 | Radio Tarifa | Rumba argelina | 1993年在馬德里小錄音室El Agujero錄下這張首作 | 樂團官方簡介寫錄音 1992 年在製作人 Juan Alberto Arteche 的錄音室完成、1993 年發行，另有評論與 World Circuit 稱是在家臥室低成本錄成；簡介的『1993 年錄下』與地點 El Agujero 本層找不到來源，建議改成『1993 年發行』並核對錄音地點。 | https://www.radio-tarifa.com/about-us-1/ |
+| ar-d-080 | Radio Tarifa | Rumba argelina | 1997年在美國再版後成為歐洲賣座之作 | 本層沒有找到來源；官方與 World Circuit 只寫 1994 年 BMG 取得版權、後來授權 World Circuit、2019 年重新母帶再版，且寫它在國際上是意外熱賣。『1997 年美國再版』與『歐洲賣座』建議主線核對。 | https://www.worldcircuit.co.uk/?p=20717 |
+| ar-d-080 | Ras Michael & The Sons of Negus | Rastafari | 在牙買加 Rastafari 社群長大 | Gleaner 2022 年報導寫他由基督徒母親帶大、1950 年代受 Mortimo Planno 影響才皈依 Rastafari；維基則寫在 Rastafari 社群長大，兩源不一致，建議簡介改成較中性的『在金斯敦長大、年輕時皈依 Rastafari』或刪去此句。 | https://web5.jamaica-gleaner.com/article/entertainment/20220411/ras-michael-sons-negus-fame-now-rasta-christian |
 | ar-d-080 | Rasmee | Arom | 2018 年泰國 Season Awards 上她得到年度最佳女藝人獎 | 她的官網寫第 29 屆 Season Awards（2018）最佳女歌手；Chiang Mai CityLife 則寫 Season Awards 最佳女藝人是 2017 年因《Arom》得到、2021 年又因另一作再得一次。頒獎年份兩源不一致，可能是 2018 年典禮表彰 2017 年作品，建議簡介改成不寫年份，或另查 Season Awards 主辦方的名單。 | https://www.rasmeewayrana.com/about |
+| ar-d-080 | Rocío Dúrcal | Canta a Juan Gabriel, Vol. 2 | 他們的第一首合作曲，一個月內就賣掉一百萬張。那是 1977 年的〈Fue un placer conocerte〉 | 西班牙語維基與 Hollywood Reporter 西班牙語版都沒有『一個月賣一百萬張』的說法；西班牙語維基稱 1977 年的第一張是《Rocío Dúrcal canta a Juan Gabriel》，突破作是 1984 年的《Canta a Juan Gabriel Vol. 6》（維基寫賣 550 萬張）；〈Fue un placer conocerte〉另一份搜尋結果連到 1984 年那張，與 1977 年說法不合。無法證實，建議本機核對原始出處或刪去此句。 | https://es.wikipedia.org/wiki/Roc%C3%ADo_D%C3%BArcal |
+| ar-d-080 | Rocío Dúrcal | Canta a Juan Gabriel, Vol. 2 | 墨西哥版主打〈Me Gustas Mucho〉後來被列入墨西哥大眾音樂文化遺產 | 補查的搜尋沒有找到任何來源說〈Me gustas mucho〉被官方列為文化遺產；Hollywood Reporter 西班牙語版、buenamusica 傳記與兩個維基都沒有提到。建議本機核對出處，查不到就刪去。 | https://es.hollywoodreporter.com/?p=14543 |
+| ar-d-080 | Rokia Traoré | Bowmboï | 作品獲 2004 年 BBC Radio 3 世界音樂大獎的評審團獎（Critics Award） | 維基與 encyclopedia.com 寫的是 BBC Radio 3 Awards for World Music 的 Critics Award（樂評獎類）；Nonesuch 官網稱它是 BBC 樂評票選（Critics' Poll）2003 年度世界音樂專輯第一。『評審團獎』的中文可能讓人以為是評審團特別獎，建議改成『樂評人獎』或直接寫 Critics Award。 | https://www.nonesuch.com/albums/bowmbo |
+| ar-d-081 | Sabri Brothers | Ya Habib | 1975 年成為首批登上紐約卡內基廳的亞洲藝人 | 『首批亞洲藝人』站不住：Asia Society 稱 Ravi Shankar 在美國的第一場音樂會 1957 年就在卡內基廳舉行（見搜尋摘要，未開頁）。較穩的版本是『1975 年首次美國巡演，在卡內基廳演出，被視為把 qawwali 帶給西方聽眾的起點』。 | https://asiasociety.org/node/3011 |
+| ar-d-081 | Sabri Brothers | Ya Habib | 1989 年赴英巡演期間錄下這批母帶 | 本層查到的是『1989 年在英國 WOMAD 演出、1990 年 5 月 20 日於 Real World 發行』；Real World 發行頁沒有寫錄音地點與時間，『巡演期間錄下』未見來源，建議在本機核對母帶資訊。 | https://realworldrecords.com/releases/ya-habib |
+| ar-d-081 | Super Cat | Don Dada | 同名曲則是他回敬 Ninjaman 挑釁的答歌 | 維基寫同名曲是回應 Ninjaman 的多次挑釁；Wax Poetics 寫的是回應 Ninja Man 與 Shabba Ranks 的對決，兩源說法不一，建議改成較中性的寫法或刪去緣起。 | https://magazine.waxpoetics.com/article/the-making-of-don-dada-and-the-many-lives-of-super-cat-the-wild-apache/ |
+| ar-d-081 | T.P. Orchestre Poly-Rythmo | The Vodoun Effect: Funk and Sato from Benin's Obscure Label | 二十餘年間錄下約五百首 | 維基寫樂團錄音期是 1960 年代末到 1980 年代初（約 15 年）、約 500 首；Analog Africa 說法是『約 500 首』含已整理的母帶，『二十餘年』無對應來源，建議改為『1960 年代末到 1980 年代初』。 | https://en.wikipedia.org/wiki/Orchestre_Poly-Rythmo_de_Cotonou |
+| ar-d-081 | T.P. Orchestre Poly-Rythmo | The Vodoun Effect: Funk and Sato from Benin's Obscure Label | James Brown、Funkadelic 一路的放克 | 本次查到的來源只明確提到 James Brown 與靈魂樂影響，未見 Funkadelic，建議刪去 Funkadelic。 | https://www.austinchronicle.com/music/phases-and-stages-11751278/ |
+| ar-d-081 | Tappa Zukie | MPLA | 他向 Bunny Lee 與 Joseph Hoo Kim 拿底軌 | 維基寫他回牙買加後替 Bunny Lee 與 Lloydie Slim 工作、在 King Tubby 的錄音室 toast，本次未查到 Joseph Hoo Kim 的來源；建議對照 Discogs 製作名單後再決定是否保留。 | https://en.wikipedia.org/wiki/Tapper_Zukie |
+| ar-d-081 | Tappa Zukie | MPLA | 那是 1977 年《Man From Bosrah》的封套 | 維基同一條目正文寫 1977、作品表寫 1978，年份自相矛盾；建議核對 Discogs 後再寫年份，或改成不提年份。 | https://en.wikipedia.org/wiki/Tapper_Zukie |
+| ar-d-081 | Tappa Zukie | MPLA | 1976 年 Tappa Zukie 把〈M.P.L.A.〉這首歌與同名專輯獻給安哥拉人民解放運動 | Red Bull Music Academy 專文只說歌曲『指涉』安哥拉的解放運動戰士；『獻給』只見維基 MPLA 條目一源，建議改成『歌名取自安哥拉人民解放運動』較穩。 | https://daily.redbullmusicacademy.com/2015/05/tappa-zukie-feature/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

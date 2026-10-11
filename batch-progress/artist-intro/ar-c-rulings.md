@@ -1165,3 +1165,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Julio Iglesias 車禍傷脊椎促成學吉他寫歌（健康細節直接導向音樂，Richard Crandell 先例），「全世界商業上最成功的西班牙歌手」（兩源，在世者唯一一處）；Johnny Clegg〈Asimbonanga〉與曼德拉一句（背景）；Miles Davis 談 Kassav'、Yehudi Menuhin 談 L. Subramaniam、Lee Perry 談 Junior Byles、Chayanne 談 José José（具名音樂人）。
 - 身分：Josey Wales 預抓維基是虛構角色條目，已作廢。研究層更正派工名冊：Max Romeo 已於 2025 年過世、Mighty Sparrow 已於 2026 年 9 月過世。
 - 待本機（上線簡介）：Joe Arroyo〈La Rebelión〉世紀與「一對夫妻」說法不一；Joe Gibbs African Dub 系列起始年（1973／1975）；José José《Secretos》應為 1983；Josey Wales〈Let Go Mi Hand〉應為〈Leggo Mi Hand〉；Judy Mowatt「史上第一張女性自製」單源、「首位入圍葛萊美雷鬼獎的女歌手」有反例、Ashandan 廠牌說法不一；Kabaka Pyramid 轉向時序與結識 Damian Marley 因果顛倒；Kassav'「全程克里奧爾語」「CBS 發行」；Larry Harlow「Fania 第二支簽約樂團」來源抵觸；Laurel Aitken〈Boogie in My Bones〉1958／1959；Liz Story 把現場評語當專輯評語；Lord Kitchener「至今無人能及」已過時；Malavoi、Matumbi 成軍年各說；Mayra Andrade 與 Orlando Pantera 時序矛盾、發行年與廠牌待核；Michel Camilo & Tomatito 廠牌三說。
+
+## ar-d-080（2026-10-11）
+
+- 39 位上架（30 full、9 thin：Misty in Roots、Molam Lao、Mystic Eyes、Nouthong Phimvilayphone、Omar Faruk Tekbilek、Orishas、Ottmar Liebert、Pablo Moses、Revolutionary Dub Warriors）。1 位不寫：Onuma Singsiri（身世與聲音兩格查無）。
+- 超額放行：Shajarian 等四人掛名第 9 次為生卒年第二源；Ravi Shankar & Ali Akbar Khan 第 9 次找 Bharat Ratna 第二源未果、無新事實；Rubén Blades & Willie Colón 第 9、10 次為 Colón 過世與傳記第二源（齊豫與第二源先例）。
+- 審稿修 13 處，另回補前批 1 處：
+  - 回補 d-077：Dadawah「在 Rastafari 社群裡長大」改「後來皈依 Rastafari」（d-080 研究層查到他由基督徒母親帶大、1950 年代才皈依）。
+  - out-1 審稿 9 處：Misty in Roots 刪「1970 年代晚期英國最受歡迎之一」（維基家族）與 Clarence Baker 遭警方打傷一段（暴力與政治），字數降到 136，改列 thin；Moana and the Moahunters 刪 Maniapoto「紐西蘭最成功的原住民藝人之一」；Mory Kanté「最有名的格里奧家族之一」改「著名」、刪「第一支銷量破百萬的非洲單曲」；Mutabaruka 刪「名列最受歡迎廣播節目」；Müzeyyen Senar 刪口吃（健康）；Nusrat Fateh Ali Khan & Michael Brook 刪「史上最具影響力的南亞歌手之一」（280→261）；Orchestre Poly-Rythmo「出品最多」改「出品極多」；Orquesta Aragón「最好的 charanga」改「代表性的」。寫作層不寫 Onuma Singsiri（身世與聲音兩格查無）。
+  - 保留：Shajarian 等四人掛名卡 273 字（四人全名與團名就佔近百字，比照雙卡）；Noura Mint Seymali 2025 年 WOMEX 頒獎詞（官方）；Youssou N'Dour 談 Mory Kanté（具名音樂人）。
+  - out-2 審稿 4 處：Pablo Moses 刪〈I Man a Grasshopper〉的入獄與大麻題材；Pedro Santos「最推崇之一」改「受推崇」；Phyllis Dillon 刪〈Don't Stay Away〉「也許是牙買加最好的女聲演出」（單源）；Ras Michael 刪「第一位主持雷鬼電台節目的 Rastafari 成員」（d-077 已判非獨立）。
+  - 保留：Owen Gray 2025 年過世（維基與 VP Records）、Phil Pratt 2026 年 2 月過世（Jamaica Observer 等兩源）、Willie Colón 2026 年過世（AP、NPR）；Prince Jammy〈Under Mi Sleng Teng〉「被許多人視為雷鬼第一個數位節奏」；Ranking Ann〈Kill the Police Bill〉一句（背景）；《Siembra》「銷量最高之一」（必要例外，保守寫法）；George Harrison 談 Ravi Shankar、Juan Gabriel 談 Rocío Dúrcal、Dennis Alcapone 談 Phil Pratt（具名音樂人）。
+- 身分：預抓維基作廢——Moana and the Moahunters（迪士尼角色）、Mystic Eyes（Van Morrison 歌曲）、Pedro Santos（葡萄牙足球員，實為 Pedro Sorongo）。Shajarian 卡的四人是 Masters of Persian Music 巡演團成員，這張專輯人員表只有 Kalhor 與 Shajarian 等，正文不寫成四人合錄。
+- 待本機（上線簡介）：Mory Kanté《Akwaba Beach》各國榜首與「當時銷量最高的非洲唱片」單源；Mutabaruka《Check It!》不是首張（前有 1982 年現場專輯）；Orquesta Aragón 的 Rafael Lay 掌舵應為 1948、Egües 加入應為 1954；Orishas「四人都在 Amenaza」錯（只有 Yotuel 等）；Onuma Singsiri 年份與曲數待核；Phyllis Dillon〈Don't Stay Away〉錄於 1966 年底；Radio Tarifa 錄音年與地點、「1997 年美國再版」查無；Ras Michael「在 Rastafari 社群長大」錯（1950 年代才皈依）；Rasmee 獎項年份 2017／2018；Rocío Dúrcal「一個月賣一百萬張」「列入文化遺產」查無；Rokia Traoré「評審團獎」應為樂評獎；Oliver Mtukudzi 簡介寫了病名。
