@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-11｜dip-vinyl-shop｜downtempo 線第 2 批上架（add-20261011-dt2，45 張；卡池 18,748 → 18,793）；dt3–dt5 交下一個工作階段
+
+- **本批內容**：日本 dub（Mute Beat、こだま和文、Dry & Heavy、Little Tempo）、Easy Star All-Stars、ambient dub（Divination、Bill Laswell、Ott、Kanka、Groundation、Dub Colossus、Prince Fatty、Banco de Gaia、Nordub）、英國 trip-hop 第二波（Olive、Alpha、Smoke City、Mono、Esthero、Martina Topley-Bird、Beth Orton、Jhelisa）、Ninja Tune／Mo' Wax 系（The Herbaliser、Kid Koala、Funki Porcini、Money Mark、Up, Bustle & Out、Quantic、Red Snapper）、beat／chill electronica（Yppah、Shigeto、Romare、Submotion Orchestra、FKJ、tomppabeats）、Lovage、Howie B、Rae & Christian。
+- **產線**：研究 5 組（44 full／1 thin）→ 鉤子 2 組 → 寫作 2 組（184–240、thin 169）→ 主線逐張審稿：改 3 句帶「據說」的開頭為直述，其餘未改字。年份／廠牌更正 4 張（Olive 1996、A Silent Prayer 2003、クワイエット・レゲエ 補 Sony、Rae & Christian 改 Grand Central）。
+- **封面**：CAA 37、Apple 7、Discogs 1（registry 294→295）。**試聽**：ready 39、unavailable 6。三軸機器基線、經典 5 壓 4；頂點 0。稀有度 rare 26、uncommon 15、epic 4。
+- **寫入**：prepare 0 error → card_catalog 45/45 → KV 47 鍵回讀一致 → 靜態試聽 → seed 45 列 → **published gate 0 error**。子曲風 17,327 → 17,366（新卡 39/45 落位，3 張 worker 查無標籤）。
+- **接續**：照 CLAUDE.md「每工作階段 2 批」，dt3–dt5（134 張，卡單已備）交下一個工作階段，步驟全寫在 `batch-progress/HANDOFF-downtempo-line.md`。
+- 主要檔案：`onboarding-manifest-add-20261011-dt2-20261011.json`、`batch-progress/add-20261011-dt2/`（rulings 9021–9098）、`desc-tools/batches/*/add-20261011-dt2*`、`batch-progress/HANDOFF-downtempo-line.md`、`batch-progress/downtempo-20261011/cover-sheet.cjs`，其餘同 dt1。
+
 ### 2026-10-11｜dip-vinyl-shop｜downtempo／chill dub 策展線第 1 批上架（add-20261011-dt1，45 張；卡池 18,703 → 18,748）
 
 店主：「補強downtempo類型 很chill的音樂類型 策展」→「太少了 至少找好聽的200張以上 dub的chill也要」。四組策展合計 231 張，跨組去重與主線刪除後定案 **223 張、分 5 批**（`batch-progress/downtempo-20261011/`：curation-a…d、master.json、build-master／build-cards／meta／picks／build-manifest／add-registry 腳本與四份派工單）。
