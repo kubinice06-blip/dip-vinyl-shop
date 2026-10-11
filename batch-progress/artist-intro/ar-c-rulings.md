@@ -1132,3 +1132,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 審稿 5 處：Aurelio 刪訃告「Garifuna 文化代言人與守護者」（單源），只寫 2025 年逝世（兩源）；Ayalew Mesfin、Ayub Ogada、Bob Andy 三處「最重要／最具影響力之一」改「重要／具影響力」；Beth Carvalho 刪 Zeca Pagodinho「90 年代最重要」。寫作層不寫 Armagideon（身分只有 Discogs 單頁，聲音只剩風格標籤）。
   - 保留：Aurelio 國會議員一句（背景，不寫「第一位」）；Ayalew Mesfin 德爾格時期入獄與禁歌一句（背景）；Bebo Valdés 革命後衛兵與卡斯楚一段（本人回憶，背景一句）；Bismillah Khan 1947 年紅堡演奏；John Peel 談 Black Roots、Brinsley Forde 談 Aswad（具名音樂人與 DJ）。
 - 待本機（上線簡介）：風コーラス団 漏寫細野晴臣是製作人；黃乙玲「後來四次拿下金曲獎」時序待核；龔秋霞〈莫負今宵／莫忘今宵〉待核；Afel Bocoum 兩曲的節奏描述與樂評不合；Ahmet Kaya 專輯序數不一；Althea and Donna「John Peel 放錯 B 面」查無；Angkanang 錄音年應為發行年；Ashkhabad「第一個在 Real World 發片的前蘇聯樂團」與精神病院一事單源；Piazzolla & Mulligan「八重奏」應為十重奏、「在德國改名」查無；Aurelio「第一位非裔議員」各源不一，簡介寫了空難死因；Ballaké Sissoko & Vincent Segal「Segal 出身法國國家管弦樂團」查無；Bismillah Khan & V.G. Jog「Jog 把小提琴引進印度斯坦體系」說過頭；Bob Andy 曲名應為〈Too Experienced〉；Boban Marković「第一小號」五度／六度兩說。
+
+## ar-d-077（2026-10-11）
+
+- 39 位上架（35 full、4 thin：Bunji Garlin、Centry、Culture Freeman meets The Bush Chemists、Dayjah & The Disciples）。1 位不寫：Dub Ghecko。
+- 審稿修 15 處：
+  - out-1 審稿 8 處：Boubacar Traoré 277→約 248（刪 1987 年電視被誤認一句，非雙卡）；Cachao 274→約 244（壓縮 descarga 一句、刪錄音學院「最重要之一」，非雙卡）；Carlos do Carmo「同世代最重要」改「重要」、刪「首位獲拉丁葛萊美終身成就獎的葡萄牙藝人」；Chaweewan Dumnern 刪 2025 年《The White Lotus》（新近事實單源）；Cheikha Rimitti「最早之一」改「早期」、刪「raï 之母」（只見維基）。
+  - 保留：Celia Cruz & Ray Barretto 261 字（雙卡）；搖滾名人堂官方稱 Celia Cruz「史上最暢銷的拉丁藝人之一」與 2026 年身後入選（官方）；Boukman Eksperyans 以「學者 Gage Averill 認為」寫 Avril 下台（不寫成因果）；Brenda Fassie〈Black President〉禁播一句（背景）；Calle 13「拉丁葛萊美獲獎最多團體」（在世者唯一一處）；Bill Frisell 談 Boubacar Traoré、Angélique Kidjo 談 Burna Boy、Youssou N'Dour 談 Cheikh Lô（具名音樂人）。
+  - out-2 審稿 7 處：Count Ossie & The Mystic Revelation of Rastafari、Dalida、Derrick Harriott（兩處）、Eddy Grant 的「最早之一」改「早期」；Count Ossie & The Rasta Family 刪「開風氣之先、近乎神話」（一篇樂評加一篇廠牌文案）；Daddy Yankee 刪遭流彈擊中一事（刑案）；Dao Bandon 歌詞題材刪「大麻」。寫作層不寫 Dub Ghecko（只有國別與資料庫標籤）。
+  - 保留：Derrick Morgan 獨立六十週年 Music Icon Award 表彰詞「唯一同時佔滿榜單一到七名」（官方表彰詞）；Dadawah 即 Ras Michael、Order of Distinction（官方）；Eddy Grant〈Gimme Hope Jo'anna〉遭南非政府查禁（背景一句）；Quincy Jones 與 Stevie Wonder 之於 Djavan、Bobby Sanabria 談 Dom Um Romão（具名音樂人）。
+- 待本機（上線簡介）：Boubacar Traoré「1968 年政變後從廣播消失」查無；Cheikh Lô 移居年應為 1981、《Né la thiass》不是出道作；Cheikha Rimitti《Sidi Mansour》的 East Bay Ray 查無；Cornell Campbell 曲名應為 Greenwich Farm；Count Ossie《Grounation》標題曲「近半小時」（維基作逾 30 分鐘）；Çudamani 發行年 2001／2002；Dalida《Le Temps des fleurs》簡介整段寫 Luigi Tenco 之死與輕生，與「不寫死因」衝突，建議改寫；Derrick Morgan〈Housewives' Choice〉年份與政府合照收場；Dur-Dur Band「Bob Marley 與寶萊塢影響」「紅到衣索比亞等地」查無；Eddy Grant The Equals 成軍應為 1965。

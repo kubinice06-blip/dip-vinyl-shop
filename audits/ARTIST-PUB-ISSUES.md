@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1045 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1050 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1045,6 +1045,11 @@
 | ar-d-077 | Dur-Dur Band | Volume 5 | 受麥可傑克森、Bob Marley 與寶萊塢電影歌曲影響 | Afropop 與 NPR 只確認 Michael Jackson 風格的律動與西方 funk、soul；Bob Marley 與寶萊塢未在可開頁的來源見到，建議本機再查或改窄 | https://afropop.org/articles/dur-dur-band-vol-5-awesome-tapes-from-africa |
 | ar-d-077 | Dur-Dur Band | Volume 5 | 也紅到衣索比亞、吉布地與肯亞 | 可開頁的來源（維基、Afropop、NPR）都沒有這個說法，來源待查 | https://en.wikipedia.org/wiki/Dur-Dur_Band |
 | ar-d-077 | Eddy Grant | Killer on the Rampage | 1964 年組成英國最早的混血樂團之一 The Equals | Diffuser、UK Music Reviews 與 AllMusic 皆寫 1965 年成軍，英文維基〈The Equals〉內文自相矛盾地寫 1964（又寫 1965，引 AllMusic）；建議改 1965 或不寫年份 | https://diffuser.fm/clash-police-on-my-back/ |
+| ar-d-078 | Eek-A-Mouse | Wa-Do-Dem | 藝名來自他押中的一匹賽馬 | Dancehall Mag 寫那是朋友早就用的綽號，來自他常下注的賽馬，那匹馬從沒讓他贏過；維基只說他因押注該馬而在 1979 年取藝名，也沒說押中。建議改成『來自他常下注的一匹賽馬』。 | https://dancehallmag.com/?p=37028 |
+| ar-d-078 | Eek-A-Mouse | Wa-Do-Dem | 1981 年由 Junjo Lawes 製作，先在牙買加以 Volcano 廠牌發行，隔年英國 Greensleeves 接手（GREL 31） | Greensleeves 官網頁把 GREL 31 標為 1982 年、稱為他的首張專輯；英文維基也把《Wa Do Dem》放在 1982 年。『1981 年先由 Volcano 發行』我沒查到第二個來源可證實，建議本機以 Discogs 核對首發年份與廠牌再決定是否保留。 | https://greensleevesrecords.co.uk/release/wa-do-dem/ |
+| ar-d-078 | Elomar | Das Barrancas do Rio Gavião | 1973 年由 Philips 發行的首張專輯 | 葡文維基寫首張專輯發行於 1972 年；UFMG 學報唱片目錄與 Jornal da Paraíba 寫 1973 年、廠牌寫 Polygram。年份與廠牌各家不一，建議本機以 Discogs 核對原盤再決定寫法，或改成較保守的措辭。 | https://periodicos.ufmg.br/index.php/permusi/article/view/39699 |
+| ar-d-078 | Elomar | Das Barrancas do Rio Gavião | Discoteca Básica 五百大唱片名單列第 403 名 | 本層沒有找到可開頁的來源證實這個名次；若本機也查不到，建議刪除。 | https://pt.wikipedia.org/wiki/Elomar |
+| ar-d-078 | Grupo Niche | Cielo de Tambores | 是 Grupo Niche 的第十二張 | 西班牙文維基《Cielo de tambores》條目寫為 Niche 的第十張錄音室專輯（前一張 1989《Sutil y contundente》、後一張 1991《Llegando al 100%》），發行日 1990 年 12 月 20 日、Codiscos、Billboard 熱帶榜第 3 與上線簡介一致；序數只見單源，需另查 Discogs 或廠牌目錄後再改。 | https://es.wikipedia.org/wiki/Cielo_de_tambores |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
