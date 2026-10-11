@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 998 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1009 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -997,7 +997,18 @@
 | ar-d-073 | 양희은 | 양희은 고운노래 모음 | 一九七五年底卻被朴正熙政權列為禁歌 | 禁曲年份各源不一：韓文維基寫 1974 年被列為禁曲（1973 年獲選健全歌謠）；Newsis 的金民基訃聞寫 1972 年 10 月維新之後成為禁曲。上線簡介的 1975 年底無法由本層查到的來源確認，建議店主以韓國禁曲政策史料（1975 年文公部大規模禁曲措施）確認後再決定是否修正；在此之前寫作層不要重述年份。 | https://www.newsis.com/view/NISX20240722_0002820834 |
 | ar-d-073 | ザ・スパイダース | アルバムNo.1 | 田辺昭知 1961 年組團，1964 年定型為堺正章、井上順、かまやつひろし、井上孝之、大野克夫、加藤充加上田辺的七人編制 | 吉他手名字字形存疑：上線簡介寫「井上孝之」，本層讀到的日文維基頁在同一頁的成員後續節寫「井上堯之」（2009 年自專業活動引退、2018 年過世），英文維基列為 Takayuki Inoue，通行寫法是「井上堯之」；建議店主核對後改字形。 | https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%82%B9%E3%83%91%E3%82%A4%E3%83%80%E3%83%BC%E3%82%B9 |
 | ar-d-073 | 五輪真弓 | 少女 | 錄音在 1971 年夏天於洛杉磯的 Crystal Sound 錄音室進行，前後歷時兩個月 | Sony Music 官方簡介（本層經摘要讀到）寫 1972 年 6 月前往洛杉磯、在 Crystal Sound Studio 錄首張專輯、同年 10 月出道，與上線簡介的 1971 年夏天不一致；摘要可能有誤，待本機對照原頁與日文維基確認。 | https://www.sonymusic.co.jp/artist/MayumiItsuwa/profile/ |
+| ar-d-074 | 佐藤奈々子 | Funny Walkin' | 日本樂界常以耳語般的嬌媚嗓音形容她，並視她為渋谷系的源頭之一 | 本層只找到日本コロムビア 官方 J-DIGS 介紹的一句（"was recognized as an origin of the Shibuya-kei"），屬廠牌自述，非業界共識；建議改寫成「日本コロムビア 的官方介紹稱…」或刪去「日本樂界常」 | https://columbia.jp/j-digs/artists/nanakosato.html |
+| ar-d-074 | 佐藤奈々子 | Funny Walkin' | 佐藤奈々子就讀慶應義塾大學時認識佐野元春，兩人自 1975 年冬起一同創作 | 日本コロムビア 官方只寫大學時認識佐野元春並由他教寫歌，未提 1975 年冬；該時間點本層未查到出處，需主線核對原稿來源 | https://columbia.jp/j-digs/artists/nanakosato.html |
+| ar-d-074 | 北島三郎 | 北島三郎全曲集 | 隔年以〈なみだ船〉出道 | 出道曲是 1962 年 6 月 5 日的〈ブンガチャ節〉（發售一週即被禁播），〈なみだ船〉是 8 月 20 日第二張單曲；英文維基亦寫 Bungacha-Bushi 為出道曲 | https://kangaeruhito.jp/article/755487 |
+| ar-d-074 | 北島三郎 | 北島三郎全曲集 | 1961 年被日本コロムビア 的人聽見，引介給作曲家船村徹入門 | 日文維基寫 1960 年（流し時期，コロムビア芸能部長在新橋喫茶店約見）；輪島裕介連載也把コロムビア 林諄文芸部長的挖角放在 1960 年前後，1961 年是開始接受「なみだ船」的訓練與錄音之年 | https://ja.wikipedia.org/wiki/%E5%8C%97%E5%B3%B6%E4%B8%89%E9%83%8E |
+| ar-d-074 | 北島三郎 | 北島三郎全曲集 | 他以 50 次出場保持紅白歌合戦最高紀錄 | 50 次最高紀錄現為並列：五木ひろし 2021 年卒業時也出場 50 次（幻冬舍 GOLD ONLINE 寫歷代最多出場為北島三郎與五木ひろし各 50 次）；若簡介是 2013 年前後的現時式說法，建議改寫為「首位出場滿 50 次」 | https://gentosha-go.com/articles/-/68067 |
 | ar-d-074 | 吳鶯音 | 百代中國時代曲名典七：吳鶯音之二 明月千里寄相思 | 開頭鉤子與正文：文革時她被當作間諜批鬥 | 非事實錯誤，是邊界問題：本批特注「兩岸政治、戰爭時期政治一律不寫」，這句涉及政治運動，且本層只在中文維基找到、屬單源；請主線決定是否保留或改寫。 | https://zh.wikipedia.org/zh-tw/%E5%90%B3%E9%B6%AF%E9%9F%B3 |
+| ar-d-074 | 国分友里恵 | Relief 72 Hours | 國分友里恵日後為中山美穗寫下〈ただ泣きたくなるの〉歌詞 | 日文維基：作詞署名是国分與中山美穂共作，並非國分一人（日文維基另寫自己的 1995 年專輯收了更動部分歌詞的自我翻唱）；簡介「寫下」略過共同署名，建議改「共同署名」。 | https://ja.wikipedia.org/wiki/%E5%9B%BD%E5%88%86%E5%8F%8B%E9%87%8C%E6%81%B5 |
+| ar-d-074 | 坂本九 | Sukiyaki and Other Japanese Hits | 歌手 1985 年死於日航 123 便空難 | 事實無誤；但本批特注「坂本九、周璇不寫死因」，建議簡介只留「1985 年過世」。 | https://en.wikipedia.org/wiki/Kyu_Sakamoto |
+| ar-d-074 | 寺尾聰 | Reflections | 專輯累計164萬張，刷新井上陽水《氷の世界》紀錄，成為1980年代日本銷量最高的專輯 | 本層沒有找到「164 萬」「刷新《氷の世界》」「1980 年代最高」的來源；英文維基寫 160 萬、Real Sound 寫一年內超過 180 萬，數字互相不一致。建議簡介改成不含累計數字，或補可靠來源。 | https://realsound.jp/2021/11/post-897271.html |
+| ar-d-074 | 張信哲 | 寬容 | 隔年張信哲憑此作拿下第七屆金曲獎最佳國語歌曲男演唱人。 | 第 7 屆金曲獎（1996 年）的獎項名稱是「最佳國語男演唱人」，沒有「歌曲」二字；中文維基與鏡週刊皆寫為國語男演唱人／男歌手，且為專輯《寬容》（1995 年）。 | https://zh.wikipedia.org/wiki/%E5%BC%B5%E4%BF%A1%E5%93%B2 |
+| ar-d-075 | 葉啟田 | 愛拚才會贏 | 此曲後來廣受台灣各階層、中國大陸與海外華人喜愛 | 用語「中國大陸」違反 2026-09-29 店主裁定（稱中國一律寫「中國」）；建議改為「中國」。 | https://zh.wikipedia.org/zh-tw/%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F |
+| ar-d-075 | 葉啟田 | 愛拚才會贏 | 粵語版《勝志雙手創》由葉振棠主唱 | 中文維基〈愛拚才會贏〉條目寫的粵語版歌名是《勝利雙手創》（梁立人作詞、葉振棠主唱、ATV《我來自潮州》），上線簡介的「勝志」疑為筆誤；本位只讀到維基單頁的擷取，建議店主開頁核對後再改。 | https://zh.wikipedia.org/zh-tw/%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
