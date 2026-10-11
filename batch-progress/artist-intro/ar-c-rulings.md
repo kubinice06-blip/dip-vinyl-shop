@@ -1050,3 +1050,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 稱呼：Christine and the Queens 不寫出生名與舊名、Hikaru Utada 不用性別代名詞，皆照本人意願。
 - 身分：預抓維基作廢——Crayon（蠟筆）、Denim（布料）、Dariush（人名頁）。Elaheh 是否即 Bahar Gholamhosseini 查無，正文不冒認。
 - 待本機（上線簡介）：Chaseiro「五張作品裡的第二張」（實際更多）；Christine and the Queens 簡介用出生名與「她」、「三位變裝皇后收留並命名」查無；Eka Sapta 專輯規格未核實；Donnie & Joe Emerson「三百人演奏廳」查無；Fariz RM「Sakura 是出道專輯」（1979 已有首張）；Fito Páez「14 首全由他一人譜寫」（有與 Charly García 共寫）；Gary Wilson 工作地點兩說；Giao Linh 試唱年份與本名兩說；Hemant Kumar〈Sahil Ki Taraf〉「改用進《Anupama》」（實為曲調挪用）；Belafonte/Makeba〈Nongqongqo〉與 Hayedeh「與 Mahasti 生年相差四年」未能核對。
+
+## ar-d-070（2026-10-11）
+
+- 38 位上架（32 full、6 thin：Homeshake、Hope Sandoval & The Warm Inventions、Insides、Leila Forouhar、Level 42、Makoto Matsushita）。2 位不寫：Ma Chérie for Painting（全部事實只出自 Discogs、MusicBrainz 兩個可自由編輯的資料庫）、Marden Hill（研究層標身分待核，聲音句只剩「熱愛 1960 年代電影配樂」的自述影響）。
+- 超額放行：IVE 第 9 次核對上線簡介曲長，無新事實（齊豫先例）；Laurel Halo 第 9 次為第二源，無新事實（齊豫先例）。
+- 審稿修 10 處：
+  - out-1 審稿 7 處：IVE「南韓」改「韓國」；Jennifer Lopez 刪「同代最有影響力之一」；Julee Cruise 264→約 250（刪自認百老匯強聲一句，非雙卡）；Kelly Clarkson 刪 Hot 100 跳幅紀錄（在世者只留 American Idol 冠軍）；Kombi「最受歡迎之一」改「人氣樂團」；Laura Pausini 刪葛萊美（只留 Sanremo 新人組冠軍）；Laurel Halo「The Wire 雜誌」改「英國一家音樂雜誌」（媒體名不進正文）。
+  - 保留：Jennifer Lopez「被稱為首位同週坐擁冠軍專輯與冠軍電影的女性」（被稱為）；Laura Branigan〈Gloria〉Hot 100 停留 36 週紀錄（已故）；IVE「super rookie」以「被稱為」帶過，數字不寫；Ahmet Ertegun 談 Branigan、Ariel Pink 談 John Maus（具名音樂人）；法國文化部悼 Jane Birkin（官方）。
+  - out-2 審稿 3 處：Lệ Thu「西貢最紅之一」改「當紅」；M.S. Viswanathan 刪母親欲輕生一句；Margo Guryan 272→247（非雙卡，刪自述與兩處修飾）。
+- 身分：Mariah 是日本清水靖晃的樂團，Marjan 是伊朗歌手 Shahla Safi Zamir（非荷蘭電音同名者），Marden Hill 預抓維基是鄉間宅邸已作廢。
+- 卡池年份存疑：Kelly Clarkson《Breakaway》卡池 2003，實為 2004 年 11 月。
+- 待本機（上線簡介）：IVE《REVIVE+》總長與〈In Your Heart〉曲長；Laura Pausini「19 歲」應為 18 歲；Laura Branigan 簡介年份用中文數字；Luis Miguel《Romance》銷量 700 萬／800 萬兩說；Marine Girls「十六首全在花園小屋錄成」過於肯定。

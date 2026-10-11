@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 973 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 981 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -973,6 +973,14 @@
 | ar-d-069 | Hemant Kumar | Sahib Bibi Aur Ghulam | 片尾的〈Sahil Ki Taraf〉被刪掉，後來改用進 1966 年的《Anupama》 | 維基電影條目寫：〈Sahil Ki Taraf〉是上映後因觀眾批評而從高潮場面剪掉的歌；Hemant Kumar 後來挪用的是這首歌的曲調，用在《Anupama》（1966）的另一首〈Ya Dil Ki Suno Duniyawalo〉，不是整首歌改用。建議把「改用進」改成「曲調後來用在《Anupama》的另一首歌」。 | https://en.wikipedia.org/wiki/Sahib_Bibi_Aur_Ghulam |
 | ar-d-070 | IVE | REVIVE+ | 十二軌合計 34:22 | 英文維基曲目表標總長 34:14，逐軌長度（3:14、2:58、2:47、2:47、3:00、2:48、2:51、2:50、2:50、2:42、2:03、3:24）相加恰為 34:14；事實庫的 MusicBrainz 摘錄也無 34:22。 | https://en.wikipedia.org/wiki/Revive%2B |
 | ar-d-070 | IVE | REVIVE+ | 最短的〈In Your Heart〉2:04 | 英文維基曲目表寫 2:03（與總長 34:14 可相加吻合）；1 秒差距，建議主線以 MusicBrainz 或官方錄音長度再核一次。 | https://en.wikipedia.org/wiki/Revive%2B |
+| ar-d-070 | Laura Branigan | Self Control | 一九八四年四月由 Atlantic 發行 | 年份寫成中文數字「一九八四」，與全池慣用的阿拉伯數字（1984 年）不一致；內容無誤（專輯 1984 年 4 月 1 日由 Atlantic 發行）。 | https://theseconddisc.com/?p=76848 |
+| ar-d-070 | Laura Pausini | Laura Pausini | 19 歲拿下 Sanremo 新人組冠軍 | Pausini 生於 1974 年 5 月 16 日，1993 年 2 月 Sanremo 比賽時是 18 歲；她滿 19 歲是專輯 5 月 18 日發行前後。 | https://it.wikipedia.org/wiki/Laura_Pausini |
+| ar-d-070 | Luis Miguel | Romance | 本作全球銷量超過 700 萬張 | 英文維基 Luis Miguel 條目寫約 700 萬張，Romance 專輯條目寫超過 800 萬張，兩份資料不一致，銷量說法站不穩；建議改成不帶數字的寫法，或刪去這句。 | https://en.wikipedia.org/wiki/Romance_(Luis_Miguel_album) |
+| ar-d-070 | Marine Girls | Beach Party | 十六首歌全在一間花園小屋裡錄成 | 三份來源不一致：維基〈Beach Party (album)〉寫家庭錄音室，維基〈Marine Girls〉（Larkin）寫花園小屋，KEXP 寫 Pat Bermingham 的行動錄音室「有時」架在花園小屋；「全在」過於肯定，建議放寬為『在 Pat Bermingham 自家的錄音裝置（部分說法為花園小屋）錄成』 | https://www.kexp.org/podcasts/cobain50/2024/7/24/marine-girls-beach-party-1981/ |
+| ar-d-071 | Mecano | Descanso Dominical | 法國單曲榜連冠 8 週 | 法文版 Une femme avec une femme 在法國連續 7 週登頂（第 8 至 14 週）；8 週連冠是西班牙銷售榜的說法 | https://en.wikipedia.org/wiki/Une_femme_avec_une_femme |
+| ar-d-071 | Nino Bravo | Nino Bravo (1971) | 代表曲改編自 Gene Pitney 的一首英文歌……那首〈Puerta de amor〉 | musica.com、hola.com、西班牙文維基列出的代表曲是〈Noelia〉〈Un beso y una flor〉〈Libre〉〈Cartas amarillas〉〈Te quiero, te quiero〉，沒有一處把〈Puerta de amor〉稱為代表曲；「代表曲」一詞建議改為「這張收錄的一首歌」或另有出處再留。 | https://www.musica.com/nino-bravo/biografia |
+| ar-d-071 | Northern Picture Library | Alaska | 這個團 1993 年由 Bobby Wratten 與 Anne Mari Davies 起頭 | LTM（樂團重發廠牌）官方傳記寫樂團 1992 年春天在 The Field Mice 解散數月後成形，《Alaska》1992 年 11 月至 1993 年 2 月錄音；1993 年是首支單曲與專輯發行年，不是成軍年。維基寫 1993，兩源不一，建議改為不寫成軍年或寫「1993 年推出首張專輯」。 | https://ltmrecordings.com/northern_picture_library.html |
+| ar-d-071 | Petula Clark | Downtown | 同年第 7 屆葛萊美頒出最佳搖滾錄音獎，她又成為第一位獲頒葛萊美獎的英國歌手。 | 同一屆（第 7 屆，1965 年）Beatles 也得了最佳新人獎與最佳團體演唱獎，英國藝人並非由 Clark 首開；官方傳記只寫她是「第一位得兩座葛萊美的英國女性」。建議改成可查證的說法。 | https://en.wikipedia.org/wiki/7th_Annual_Grammy_Awards |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
