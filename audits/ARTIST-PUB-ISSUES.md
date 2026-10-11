@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 943 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 956 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -943,6 +943,19 @@
 | ar-d-067 | 張清芳 | 激情過後 | 前一年剛拿下第一屆大學城全國大專創作歌謠大賽演唱組冠軍 | 中文維基與鏡週刊 20200629 支持冠軍，鏡週刊 20200623 寫『最佳演唱獎』，名次來源不一致，建議退成『得獎』或再查主辦單位資料。 | https://www.mirrormedia.mg/story/amp/20200623ent047 |
 | ar-d-067 | 張瑋瑋和郭龍 | 白銀飯店 | 2012年5月16日推出的首張個人創作專輯 | 專輯掛名張瑋瑋和郭龍，新浪轉載的上海青年報報導寫『張瑋瑋與郭龍共同創作完成』；『首張個人專輯』的說法只見演出頁摘要，兩人為二人組，建議改為二人合作專輯。 | https://ent.sina.cn/review/media/2012-05-31/detail-iawzunex6147639.d.html |
 | ar-d-067 | 張瑋瑋和郭龍 | 白銀飯店 | 屬民謠大類，中國大陸慣稱「新民謠」（xin minyao） | 違反用語規則（稱呼中國一律寫「中國」，不寫「中國大陸」），建議改為「中國慣稱」或刪去。 | https://github.com/kubinice06-blip/dip-vinyl-shop |
+| ar-d-067 | 松田弘一 | 華ぬ遊び唄 | 宮古根是沖繩本島最核心的即興唱腔 | 琉球新報只說〈北谷前ぬちり弾き宮古根〉是以連彈奏法為特色的曲子，未見「最核心」「即興唱腔」的說法，無依據；建議改為較保守的寫法。 | https://ryukyushimpo.jp/news/entry-1205252.html |
+| ar-d-067 | 森田童子 | グッド・バイ | 同年 10 月的出道單曲〈さよなら ぼくの ともだち〉即為本作終曲 | 出道年份各源不一致：ciatr 寫 1975 年，gendai 文章寫 1974 年；簡介的「同年 10 月」未能查證，建議保守。 | https://gendai.media/articles/-/91686 |
+| ar-d-067 | 楊祖珺 | 楊祖珺 | 〈美麗島〉由陳秀喜的詩經梁景峰改寫、李雙澤譜曲 | 未能查到陳秀喜詩作改寫的來源；楊祖珺本人文章寫〈美麗島〉為李雙澤與梁景峰合作，中央社寫李雙澤作詞，來源不一致，建議保守寫「李雙澤作曲」。 | https://www.twreporter.org/a/opinion-li-shuangze-40th-death-anniversary |
+| ar-d-067 | 楊祖珺 | 楊祖珺 | 此曲後來被認定帶有政治意味，整張唱片遭新聞局列為禁唱、全面下架 | newtalk（引李坤城研究）寫〈美麗島〉送審通過、只是不得廣播電視播出，〈少年中國〉才被禁止錄製；「整張因〈美麗島〉被禁」與來源不完全一致；回收時間也寫 7 月通知禁用，與「發行兩個月」略有出入。 | https://newtalk.tw/news/view/2015-07-25/62650 |
+| ar-d-067 | 莫西子詩 | 原野 | 彝語與漢語交替演唱 | 澎湃新聞稱《原野》只收母語彝語和一些囈語，與簡介說法不符；僅單一來源，建議本機聽碟或查歌詞語言後再決定是否改 | https://www.thepaper.cn/newsDetail_forward_2222253 |
+| ar-d-067 | 郭英男與馬蘭吟唱隊 | 生命之環 | 爭議最後在魔岩唱片居間下和解 | 《台北時報》2002 年訃聞寫的是：郭英男的公司 Magic Stone Music（魔岩）1996 年對 Enigma 的唱片公司提告，1999 年庭外和解；魔岩是提告方而非居間。建議改為不寫細節，或寫『魔岩代表郭英男提告，1999 年庭外和解』。 | https://www.taipeitimes.com/News/front/archives/2002/03/30/129773 |
+| ar-d-067 | 野孩子 | 咒語 | 日後以〈米店〉走紅的張瑋瑋，早年正是團中樂手 | 開頁讀到的三源都說張瑋瑋是後來才加入：澎湃寫 2010 年他與張佺、郭龍在大理重聚，每經寫 2014 年他與郭龍加入，bjnews 寫二人在河酒吧時期之後加入；沒有來源顯示 2001 年前後《咒語》時期他已在團。建議刪『早年』，改為『後來加入』或不寫。 | https://www.nbd.com.cn/articles/2026-05-29/4412322.html |
+| ar-d-067 | 野孩子 | 咒語 | 屬民謠大類，中國大陸慣稱「西北民謠」 | 店主用語規則（writer-base.md『文字』節）：稱呼中國一律寫『中國』，不寫『中國大陸』。建議改為『中國常稱西北民謠』。 | https://www.thepaper.cn/newsDetail_forward_2207204 |
+| ar-d-067 | 金延幸子 | み空 | 發表後她與美國樂評Paul Williams結婚赴美 | Light in the Attic 與 Relix 都寫《み空》1972 年 9 月發行時，她已經隨 Paul Williams 去了美國；日文維基只說她與 Williams 結婚渡美，沒有寫在專輯之後。建議改為『專輯發行時她已赴美』。 | https://lightintheattic.net/products/misora |
+| ar-d-067 | 金延幸子 | み空 | 長年停止活動，直到1993年才再以新作復出 | Light in the Attic 寫她 1981 年在 Philip K. Dick 資助下出過單曲，1980 年代也以 Culture Shock 活動；日文維基的 1993 年《SEIZE FIRE》是相隔 20 年的專輯。建議改為『淡出後只有零星活動，1993 年才發行新專輯』。 | https://lightintheattic.net/products/misora |
+| ar-d-068 | 高橋竹山 | 津軽三味線 | 約兩歲時因麻疹失明 | 事典（新撰 芸能人物事典、ブリタニカ等）寫『2 歲前半失明』，日文維基寫 3 歲失明；『失明』與『半失明』、歲數各書不一，建議改成『幼時因麻疹幾乎失明』 | https://kotobank.jp/word/%E9%AB%98%E6%A9%8B%E7%AB%B9%E5%B1%B1 |
+| ar-d-068 | 齊豫 & 潘越雲 | 回聲──三毛作品第15號 | 名列 1975－1993 台灣流行音樂百張最佳專輯第十一 | 本層搜尋與開頁都查不到這個名次的出處：該榜單是 1994 年陶曉清與台大人文報合作的《台灣流行音樂百張最佳專輯 1975.9-1993.1》，榜首是羅大佑《之乎者也》，但沒有找到《回聲》位列第 11 的來源；建議店主對照原書或原出處，查不到就改掉 | https://www.taipeitimes.com/News/feat/archives/2009/04/06/2003440333 |
+| ar-d-068 | 齊豫 & 潘越雲 | 回聲──三毛作品第15號 | 三毛辭世後此作被視為絕響 | 搜尋摘要有潘越雲稱《回聲》是空前絕後的傳唱，但本層未能開頁證實原話，無法確認是誰的說法；寫作時建議限縮或拿掉 | https://www.worldjournal.com/wj/amp/story/121234/9667535 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
