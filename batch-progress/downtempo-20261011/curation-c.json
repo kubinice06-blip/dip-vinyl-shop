@@ -1,0 +1,861 @@
+{
+ "group": "c",
+ "factions": [
+  {
+   "id": "1",
+   "zh": "維也納與德語圈／荷比 downtempo",
+   "count": 17,
+   "why": "G-Stone、Couch、Compost、Sonar Kollektiv、Stereo Deluxe、Morr 與比利時 Hooverphonic"
+  },
+  {
+   "id": "2",
+   "zh": "北歐 nu-jazz 與 chill",
+   "count": 11,
+   "why": "Jazzland／ECM／Beatservice 系"
+  },
+  {
+   "id": "3",
+   "zh": "法國 lounge／downtempo",
+   "count": 8,
+   "why": "French touch 外圍：Kid Loco、Télépopmusik、Gotan、Nouvelle Vague 等"
+  },
+  {
+   "id": "4",
+   "zh": "義／西／葡／希臘 lounge",
+   "count": 6,
+   "why": "Schema、Virgin、Chambao、Imam Baildi 等"
+  },
+  {
+   "id": "5",
+   "zh": "Balearic／chill-out 原創專輯",
+   "count": 9,
+   "why": "Café del Mar、International Feel、ESL 系"
+  },
+  {
+   "id": "6",
+   "zh": "巴西／拉丁 chill 電子",
+   "count": 9,
+   "why": "Ziriguiboom／ESL：Bebel、Suba、Aubele 等"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Jazzanova",
+   "album": "In Between",
+   "year": 2002,
+   "label": "Jazzanova Compost Records",
+   "why": "柏林 Jazzanova 的首張錄音室專輯，nu-jazz／broken beat／爵士電子的德語圈代表，Sonar Kollektiv 系的基石。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f9ae107-4801-3cf2-8add-d3388f1f5a9a",
+    "https://www.discogs.com/master/56268",
+    "https://www.wikidata.org/wiki/Q16847594"
+   ],
+   "mbRgMbid": "3f9ae107-4801-3cf2-8add-d3388f1f5a9a",
+   "uncertain": "廠牌取 MB（Jazzanova Compost Records）",
+   "faction": "1"
+  },
+  {
+   "artist": "dZihan & Kamien",
+   "album": "Gran Riserva",
+   "year": 2002,
+   "label": "Couch Records (美版 Six Degrees)",
+   "why": "維也納 Couch Records 的 oriental downtempo／爵士電子，Gran Riserva 為其爵士感最濃的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b099a256-fd28-3b7a-96fd-3e9bc4258ca6",
+    "https://en.wikipedia.org/wiki/DZihan_%26_Kamien",
+    "https://www.discogs.com/master/128592"
+   ],
+   "mbRgMbid": "b099a256-fd28-3b7a-96fd-3e9bc4258ca6",
+   "uncertain": "已確認是原創錄音室專輯（維基：第三張，「更爵士」）。MB 首發日 2000-09-30 是數位重發的占位日期，實體原版為 2002-10（AT Couch／US Six Degrees），故年份取 2002。",
+   "faction": "1"
+  },
+  {
+   "artist": "Sofa Surfers",
+   "album": "Transit",
+   "year": 1997,
+   "label": "MCA Records",
+   "why": "維也納 Kruder & Dorfmeister 同代的 dub／downtempo 樂隊，首張以厚重 dub 底色與電影氛圍奠定奧地利 chill 的另一條線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/10f730f6-63c1-3915-99de-70475134954d",
+    "https://www.discogs.com/master/50493"
+   ],
+   "mbRgMbid": "10f730f6-63c1-3915-99de-70475134954d",
+   "uncertain": "廠牌取 MB（MCA Records）",
+   "faction": "1"
+  },
+  {
+   "artist": "Waldeck",
+   "album": "Balance of the Force",
+   "year": 1998,
+   "label": "Spray Records",
+   "why": "維也納 Klaus Waldeck 的 electro-swing／lounge 首張，爵士取樣與 downtempo 拍結合，是 Dope Noir 路線的起點。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/eab8fd48-0366-337d-8887-0f0c58bebc17",
+    "https://www.allmusic.com/album/mw0000668898",
+    "https://www.discogs.com/master/249248"
+   ],
+   "mbRgMbid": "eab8fd48-0366-337d-8887-0f0c58bebc17",
+   "uncertain": "1999 年 Dope Noir 重發；原版取 MB 最早紀錄 Spray Records（AT 1998）。",
+   "faction": "1"
+  },
+  {
+   "artist": "Trüby Trio",
+   "album": "Elevator Music",
+   "year": 2003,
+   "label": "Compost Records",
+   "why": "Compost 旗下 Rainer Trüby 的 nu-jazz 三重奏，Elevator Music 以爵士電子 lounge 呈現德語圈的優雅 chill。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/45ef9fa9-6915-3c76-b171-4af1cfd41ee7",
+    "https://www.discogs.com/master/155920"
+   ],
+   "mbRgMbid": "45ef9fa9-6915-3c76-b171-4af1cfd41ee7",
+   "uncertain": "",
+   "faction": "1"
+  },
+  {
+   "artist": "Bugge Wesseltoft",
+   "album": "New Conception of Jazz",
+   "year": 1997,
+   "label": "Jazzland Recordings",
+   "why": "挪威 Jazzland 創辦人的代表作，開創 Scandinavian nu-jazz 的錄音，現場爵士即興配電子節拍。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e4fd6de8-179a-3ad7-bc93-aa3c36f85544"
+   ],
+   "mbRgMbid": "e4fd6de8-179a-3ad7-bc93-aa3c36f85544",
+   "uncertain": "",
+   "faction": "2"
+  },
+  {
+   "artist": "Nils Petter Molvær",
+   "album": "Khmer",
+   "year": 1997,
+   "label": "ECM",
+   "why": "挪威小號手把 ECM 式空間感與 trip-hop／ambient 電子結合，是北歐 electro-jazz 的里程碑，chill 與冷靜感兼具。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ecb60660-25d3-3b65-9f9d-5ac472dfe606",
+    "https://www.allmusic.com/album/mw0000040809",
+    "https://www.discogs.com/master/102122"
+   ],
+   "mbRgMbid": "ecb60660-25d3-3b65-9f9d-5ac472dfe606",
+   "uncertain": "MB 日期僅到月份（1997-10）；偏爵士 electro-jazz，列為北歐 nu-jazz 代表。",
+   "faction": "2"
+  },
+  {
+   "artist": "Koop",
+   "album": "Waltz for Koop",
+   "year": 2001,
+   "label": "Sony Music Sweden (Superstudio Grå)",
+   "why": "斯德哥爾摩 Koop 的 1920 年代爵士取樣與現代電子結合，是瑞典 lounge／nu-jazz 的代表，Jazzanova Compost 也曾發行。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d47b0c12-9976-3cff-aaec-8425d48f4f3a",
+    "https://en.wikipedia.org/wiki/Waltz_for_Koop"
+   ],
+   "mbRgMbid": "d47b0c12-9976-3cff-aaec-8425d48f4f3a",
+   "uncertain": "年份：維基 2001-11-21（Sony Sweden），MB 首發記 2002；取維基。維基稱此為 Koop 第二張錄音室專輯（首張 Sons of Koop 1997）。",
+   "faction": "2"
+  },
+  {
+   "artist": "Jaga Jazzist",
+   "album": "A Livingroom Hush",
+   "year": 2001,
+   "label": "Ninja Tune",
+   "why": "挪威大編制 jazz／electronica 樂團，Ninja Tune 發行，兼具 post-rock 與 downtempo，是 Ninja Tune 在北歐的招牌。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0a212680-4318-3469-a442-edb67b082fe8",
+    "https://www.allmusic.com/album/mw0000660007",
+    "https://www.discogs.com/master/84338",
+    "https://www.wikidata.org/wiki/Q4657893",
+    "https://en.wikipedia.org/wiki/A_Livingroom_Hush"
+   ],
+   "mbRgMbid": "0a212680-4318-3469-a442-edb67b082fe8",
+   "uncertain": "MB 最早紀錄為 Ninja Tune（GB 2001-05-21）；挪威本地版廠牌未查到。",
+   "faction": "2"
+  },
+  {
+   "artist": "Skalpel",
+   "album": "Skalpel",
+   "year": 2004,
+   "label": "Ninja Tune",
+   "why": "波蘭 Skalpel 以 1960s 波蘭爵士取樣製成的 downtempo／nu-jazz，Ninja Tune 發行，是東歐 nu-jazz 的聲明之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1cd9f478-2ac6-3099-a3f0-0f323b2290d6",
+    "https://www.discogs.com/master/17358",
+    "https://www.wikidata.org/wiki/Q9337586"
+   ],
+   "mbRgMbid": "1cd9f478-2ac6-3099-a3f0-0f323b2290d6",
+   "uncertain": "MB 日期僅到月份（2004-03）。波蘭，Ninja Tune。",
+   "faction": "1"
+  },
+  {
+   "artist": "Télépopmusik",
+   "album": "Genetic World",
+   "year": 2001,
+   "label": "EMI France (Capitol / Source)",
+   "why": "法國 lounge／trip-hop 代表，〈Breathe〉出自此專輯，首張以優雅人聲與電子拍成為 2000 年代初的 chill 經典。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c860d21b-c9bc-3c6b-a119-341e54a24e47",
+    "https://www.discogs.com/master/39535",
+    "https://www.wikidata.org/wiki/Q3100574"
+   ],
+   "mbRgMbid": "c860d21b-c9bc-3c6b-a119-341e54a24e47",
+   "uncertain": "廠牌取 MB 最早紀錄（EMI Music France）",
+   "faction": "3"
+  },
+  {
+   "artist": "Nouvelle Vague",
+   "album": "Nouvelle Vague",
+   "year": 2004,
+   "label": "[PIAS] Le Label / Peacefrog",
+   "why": "將 new wave 名曲改編成 bossa nova 的法國企劃，原創專輯概念鮮明，lounge 感極強，屬咖啡廳場景。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d16b3b05-6f30-3242-9544-dba1083eb21e",
+    "https://www.allmusic.com/album/mw0000475730",
+    "https://www.discogs.com/master/5128",
+    "https://rateyourmusic.com/release/album/nouvelle_vague/nouvelle_vague/",
+    "https://www.wikidata.org/wiki/Q1764865"
+   ],
+   "mbRgMbid": "d16b3b05-6f30-3242-9544-dba1083eb21e",
+   "uncertain": "全為 new wave 翻唱（bossa 改編），但概念專輯屬公認原創專輯形式；chill 度高。",
+   "faction": "3"
+  },
+  {
+   "artist": "Bebel Gilberto",
+   "album": "Tanto tempo",
+   "year": 2000,
+   "label": "Ziriguiboom (Crammed Discs) / Six Degrees",
+   "why": "João Gilberto 之女的國際成名作，bossa 搭配 downtempo electronica，Café del Mar 時代最重要的 chill 專輯之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/84afe68c-10a8-38cd-9157-3a327257449d",
+    "https://www.allmusic.com/album/mw0000051160",
+    "https://www.discogs.com/master/81920",
+    "https://rateyourmusic.com/release/album/bebel_gilberto/tanto_tempo/",
+    "https://www.wikidata.org/wiki/Q1316598"
+   ],
+   "mbRgMbid": "84afe68c-10a8-38cd-9157-3a327257449d",
+   "uncertain": "MB 正規名 \"Tanto tempo\"（tempo 小寫）",
+   "faction": "6"
+  },
+  {
+   "artist": "José Padilla",
+   "album": "Navigator",
+   "year": 2001,
+   "label": "DRO EastWest (Maverick)",
+   "why": "Café del Mar 傳奇 DJ 的首張個人專輯，把 Balearic 日落的 chill-out 氛圍轉為原創錄音室作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6fa24872-75cf-320c-bcf3-7d0e1d12e297",
+    "https://www.discogs.com/master/8770"
+   ],
+   "mbRgMbid": "6fa24872-75cf-320c-bcf3-7d0e1d12e297",
+   "uncertain": "MB 最早紀錄為 Maverick（US）／DRO EastWest（ES）2001-10-30。",
+   "faction": "5"
+  },
+  {
+   "artist": "Blue States",
+   "album": "Man Mountain",
+   "year": 2002,
+   "label": "XL Recordings",
+   "why": "英國 Blue States 的 cinematic downtempo／indietronica，XL 發行，Man Mountain 為其最受歡迎的專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1121ae92-4cea-3cd4-864a-a536df07c37d",
+    "https://www.discogs.com/master/105008"
+   ],
+   "mbRgMbid": "1121ae92-4cea-3cd4-864a-a536df07c37d",
+   "uncertain": "",
+   "faction": "5"
+  },
+  {
+   "artist": "Bent",
+   "album": "Programmed to Love",
+   "year": 2000,
+   "label": "Sport Bentertainment / Ministry of Sound",
+   "why": "英國 Bent 的首張，旋律優美的 chill-out electronica，2000 年代初 Balearic 與 lounge 的標準曲目。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b68fea5-9ab4-3406-94ca-6327aa9cb636",
+    "https://www.discogs.com/master/54180",
+    "https://www.wikidata.org/wiki/Q7248474"
+   ],
+   "mbRgMbid": "6b68fea5-9ab4-3406-94ca-6327aa9cb636",
+   "uncertain": "MB 最早紀錄 Sport／EMI／Ministry of Sound 並列（GB 2000-07-17）。",
+   "faction": "5"
+  },
+  {
+   "artist": "Thunderball",
+   "album": "Scorpio Rising",
+   "year": 2001,
+   "label": "Eighteenth Street Lounge Music",
+   "why": "華盛頓 DC 的 Eighteenth Street Lounge 系，與 Thievery Corporation 同廠牌的 lounge／dub downtempo。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f45e483-3c10-37be-ab35-bb3d1138fa27",
+    "https://www.discogs.com/master/133137"
+   ],
+   "mbRgMbid": "5f45e483-3c10-37be-ab35-bb3d1138fa27",
+   "uncertain": "",
+   "faction": "5"
+  },
+  {
+   "artist": "Tosca",
+   "album": "Suzuki",
+   "year": 2000,
+   "label": "G-Stone Recordings",
+   "faction": "1",
+   "why": "Richard Dorfmeister 與 Rupert Huber 的首張正式專輯，維也納 G-Stone 的招牌：慵懶低頻、爵士取樣與微醺人聲，午夜 downtempo 的標準配備。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/90b3e15c-25d5-3772-8276-46b6e711b03e"
+   ],
+   "mbRgMbid": "90b3e15c-25d5-3772-8276-46b6e711b03e",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tosca",
+   "album": "Dehli9",
+   "year": 2003,
+   "label": "!K7 Records",
+   "faction": "1",
+   "why": "第三張，比《Suzuki》更靜、更偏世界音樂色彩的 Dorfmeister 式 downtempo，節奏鬆而不散，適合深夜長聽。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f2c32460-56e9-37e5-ad4d-3ce08e364e66"
+   ],
+   "mbRgMbid": "f2c32460-56e9-37e5-ad4d-3ce08e364e66",
+   "uncertain": ""
+  },
+  {
+   "artist": "Boozoo Bajou",
+   "album": "Dust My Broom",
+   "year": 2005,
+   "label": "!K7 Records",
+   "faction": "1",
+   "why": "Nürnberg 雙人組第二張，把《Satta》的 dub／soul 路線更進一步，藍調與老靈魂取樣包著鬆軟拍子，暖而不膩。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/590ec717-2650-38fb-b36e-11023e7b6009"
+   ],
+   "mbRgMbid": "590ec717-2650-38fb-b36e-11023e7b6009",
+   "uncertain": "池內已有《Satta》，此為第二張。"
+  },
+  {
+   "artist": "Christian Prommer's Drumlesson",
+   "album": "Drum Lesson, Vol. 1",
+   "year": 2008,
+   "label": "Sonar Kollektiv",
+   "faction": "1",
+   "why": "Fauna Flash 的 Christian Prommer 把 house／techno 名曲重新編成現場爵士鼓與鋼琴的優雅版，Sonar Kollektiv 式 nu-jazz 的輕鬆入門。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a3bfa333-7538-363d-bef2-30c386b3a3f5"
+   ],
+   "mbRgMbid": "a3bfa333-7538-363d-bef2-30c386b3a3f5",
+   "uncertain": "內容為改編曲，但作為專輯為原創企劃；MB 藝人名為 Christian Prommer’s Drumlesson（U+2019），此處改 ASCII 撇號。"
+  },
+  {
+   "artist": "Beanfield",
+   "album": "Human Patterns",
+   "year": 1999,
+   "label": "Compost Records",
+   "faction": "1",
+   "why": "Compost 旗下 Beanfield 的首張正式專輯，爵士與電子的細緻交疊，是 Compost 前期 nu-jazz／broken beat 的典型。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e5660449-f14f-3b11-ac56-a9e709e741ad"
+   ],
+   "mbRgMbid": "e5660449-f14f-3b11-ac56-a9e709e741ad",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mo' Horizons",
+   "album": "Come Touch the Sun",
+   "year": 1999,
+   "label": "Stereo Deluxe",
+   "faction": "1",
+   "why": "漢堡 Mo’ Horizons 的巴西節奏混電子，陽光感十足的 Latin-jazz downtempo，Stereo Deluxe 廠牌的早期代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3ce5eb3-5b22-3925-ba8d-dcb90c434a5e"
+   ],
+   "mbRgMbid": "b3ce5eb3-5b22-3925-ba8d-dcb90c434a5e",
+   "uncertain": "MB 藝人名為 Mo’ Horizons（U+2019），此處用 ASCII 撇號。"
+  },
+  {
+   "artist": "Hooverphonic",
+   "album": "Blue Wonder Power Milk",
+   "year": 1998,
+   "label": "Small / Sony Music",
+   "faction": "1",
+   "why": "比利時 Hooverphonic 第二張，電影配樂般的弦樂與冷艷人聲，是歐陸 trip-pop／chill 的重要一張。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8c274eb3-afee-3b32-b13e-4343aac7dd64"
+   ],
+   "mbRgMbid": "8c274eb3-afee-3b32-b13e-4343aac7dd64",
+   "uncertain": "池內已有首張《A New Stereophonic Sound Spectacular》，此為第二張。"
+  },
+  {
+   "artist": "Lali Puna",
+   "album": "Scary World Theory",
+   "year": 2001,
+   "label": "Morr Music",
+   "faction": "1",
+   "why": "慕尼黑 Lali Puna 的 indietronica 代表作，溫柔的合成器與耳語人聲，Morr Music 式「輕電子」的夜間聆聽專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/afc4280d-9c04-36e1-9921-987e4dee0b9d"
+   ],
+   "mbRgMbid": "afc4280d-9c04-36e1-9921-987e4dee0b9d",
+   "uncertain": ""
+  },
+  {
+   "artist": "dZihan & Kamien",
+   "album": "Freaks & Icons",
+   "year": 2000,
+   "label": "Couch Records",
+   "faction": "1",
+   "why": "維也納 dZihan & Kamien 的首張專輯，東方旋律、爵士取樣與 downtempo 拍結合，Couch Records 的名片。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2f00934e-ef23-3526-a644-4e164fb07746",
+    "https://en.wikipedia.org/wiki/DZihan_%26_Kamien"
+   ],
+   "mbRgMbid": "2f00934e-ef23-3526-a644-4e164fb07746",
+   "uncertain": "與已選的《Gran Riserva》同藝人第二張（總計 2 張）。"
+  },
+  {
+   "artist": "Waldeck",
+   "album": "The Night Garden",
+   "year": 2001,
+   "label": "Dope Noir / E-Magine",
+   "faction": "1",
+   "why": "Klaus Waldeck 第二張，電影感的 lounge／爵士電子，比首張更暗更滑，Dope Noir 路線的成熟之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/fe0ab79f-fce9-3a66-8514-7147ced37357"
+   ],
+   "mbRgMbid": "fe0ab79f-fce9-3a66-8514-7147ced37357",
+   "uncertain": "與已選的《Balance of the Force》同藝人第二張（總計 2 張）。"
+  },
+  {
+   "artist": "Beady Belle",
+   "album": "Home",
+   "year": 2001,
+   "label": "Jazzland Recordings",
+   "faction": "2",
+   "why": "Beate S. Lech 的挪威 Jazzland 首張，暖嗓配爵士電子，nu-jazz 中最親近人聲的一路。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/99074e6f-f140-359e-a179-8050e8b58b93"
+   ],
+   "mbRgMbid": "99074e6f-f140-359e-a179-8050e8b58b93",
+   "uncertain": ""
+  },
+  {
+   "artist": "Beady Belle",
+   "album": "Closer",
+   "year": 2005,
+   "label": "Jazzland Recordings",
+   "faction": "2",
+   "why": "Beady Belle 第三張，編制更成熟，人聲與電子節拍更鬆弛，夜間 chill 的好選擇。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3095d244-46ba-3d67-9480-bfe54ac902ee"
+   ],
+   "mbRgMbid": "3095d244-46ba-3d67-9480-bfe54ac902ee",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nils Petter Molvær",
+   "album": "Solid Ether",
+   "year": 2000,
+   "label": "ECM Records",
+   "faction": "2",
+   "why": "《Khmer》之後的第二張，更重節拍、更多 trip-hop 質地，仍保留 ECM 式的冷靜空間。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7d68bbb-57aa-39c3-a992-76eeb2eb0c20"
+   ],
+   "mbRgMbid": "a7d68bbb-57aa-39c3-a992-76eeb2eb0c20",
+   "uncertain": "與已選的《Khmer》同藝人第二張（總計 2 張）。"
+  },
+  {
+   "artist": "Bugge Wesseltoft",
+   "album": "New Conception of Jazz: Moving",
+   "year": 2001,
+   "label": "Jazzland Recordings",
+   "faction": "2",
+   "why": "Bugge 的第二張，延續首張的鋼琴即興與電子拍，更偏深夜的寧靜。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c2c59d19-feaa-36c5-bf69-5eccc5df430e"
+   ],
+   "mbRgMbid": "c2c59d19-feaa-36c5-bf69-5eccc5df430e",
+   "uncertain": "專輯正規名為「New Conception of Jazz: Moving」；與已選的《New Conception of Jazz》同藝人第二張。"
+  },
+  {
+   "artist": "Koop",
+   "album": "Koop Islands",
+   "year": 2006,
+   "label": "!K7 Records / Cosmos",
+   "faction": "2",
+   "why": "斯德哥爾摩 Koop 第三張，異國風情的爵士電子與女聲客座，比前作更暖更慵懶。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/319a7b6f-2767-3bf1-a2a2-05e4fb4c2e60",
+    "https://en.wikipedia.org/wiki/Koop_Islands"
+   ],
+   "mbRgMbid": "319a7b6f-2767-3bf1-a2a2-05e4fb4c2e60",
+   "uncertain": "MB 最早紀錄為亞洲區（KR/JP）版；歐洲版 !K7 2006-10-02。廠牌取歐洲 !K7，需複核；與已選的《Waltz for Koop》同藝人第二張。"
+  },
+  {
+   "artist": "Erlend Øye",
+   "album": "Unrest",
+   "year": 2003,
+   "label": "Source UK / Astralwerks",
+   "faction": "2",
+   "why": "Kings of Convenience 成員的個人專輯，Morr、Schneider TM 等協力，鬆軟的電子民謠與 bossa 感，午後 Balearic 氣質。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/903c3679-9125-3355-82b6-18975a5458ae"
+   ],
+   "mbRgMbid": "903c3679-9125-3355-82b6-18975a5458ae",
+   "uncertain": ""
+  },
+  {
+   "artist": "Flunk",
+   "album": "Morning Star",
+   "year": 2004,
+   "label": "Beatservice Records",
+   "faction": "2",
+   "why": "奧斯陸 Flunk 的夢幻 chill-out，空靈女聲與緩慢電子拍，北歐 chill 的標準答案之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/96533bed-ae6c-319b-ac68-75133dfa30f3"
+   ],
+   "mbRgMbid": "96533bed-ae6c-319b-ac68-75133dfa30f3",
+   "uncertain": "MB 最早紀錄為美版 Kriztal 2004-10-14，挪威版 Beatservice 2004-12；廠牌取 Beatservice（挪威原廠），需複核。"
+  },
+  {
+   "artist": "Hocus Pocus",
+   "album": "73 touches",
+   "year": 2005,
+   "label": "On And On Records",
+   "faction": "3",
+   "why": "南特 Hocus Pocus 的爵士 hip-hop 樂團，現場樂器味濃，Nu-jazz 與 downtempo 邊界上的輕鬆之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0c29274-c887-3f1b-9e86-36cafdfcffb5"
+   ],
+   "mbRgMbid": "e0c29274-c887-3f1b-9e86-36cafdfcffb5",
+   "uncertain": "偏爵士饒舌（與 b 組邊界）；MB 日期僅到月份（2005-02）。"
+  },
+  {
+   "artist": "Gotan Project",
+   "album": "Lunático",
+   "year": 2006,
+   "label": "¡Ya Basta! Records",
+   "faction": "3",
+   "why": "探戈電子的第二張錄音室專輯，巴黎／布宜諾斯艾利斯三人組的 downtempo 探戈，比首張更暖。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/028edd29-f28f-3893-a65a-a1277fb372e2"
+   ],
+   "mbRgMbid": "028edd29-f28f-3893-a65a-a1277fb372e2",
+   "uncertain": "池內已有《La Revancha del Tango》，此為第二張。"
+  },
+  {
+   "artist": "Nouvelle Vague",
+   "album": "Bande à part",
+   "year": 2006,
+   "label": "Peacefrog Records / [PIAS]",
+   "faction": "3",
+   "why": "翻唱 new wave 名曲的 bossa 第二輯，女聲更鬆、編曲更輕，咖啡廳式 chill。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/bbfd2ed3-aaec-3448-84eb-6a0abbd6ba96"
+   ],
+   "mbRgMbid": "bbfd2ed3-aaec-3448-84eb-6a0abbd6ba96",
+   "uncertain": "與已選的首張同藝人第二張；全為翻唱概念專輯。"
+  },
+  {
+   "artist": "Llorca",
+   "album": "New Comer",
+   "year": 2001,
+   "label": "F Communications",
+   "faction": "3",
+   "why": "Compost 圈的 Llorca 以爵士電子 downtempo 與 house 邊界的優雅律動成名，這張是代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/815c1f62-1025-3300-b84d-76d3364b7d56"
+   ],
+   "mbRgMbid": "815c1f62-1025-3300-b84d-76d3364b7d56",
+   "uncertain": "MB 日期僅到月份（2001-04）；偏 nu-jazz house，chill 度屬中上，可視需要刪除。"
+  },
+  {
+   "artist": "Kid Loco",
+   "album": "Kill Your Darlings",
+   "year": 2001,
+   "label": "Yellow Productions / Atlantic",
+   "faction": "3",
+   "why": "Kid Loco 的第三張，French touch 外圍的夢幻 pop-lounge，混音味濃，輕盈好入耳。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5be1c65-a397-3928-aa1b-2ef538414d1d"
+   ],
+   "mbRgMbid": "a5be1c65-a397-3928-aa1b-2ef538414d1d",
+   "uncertain": "池內已有《A Grand Love Story》；MB 日期僅到月份（2001-10）。"
+  },
+  {
+   "artist": "Télépopmusik",
+   "album": "Angel Milk",
+   "year": 2005,
+   "label": "Capitol / Catalogue Records",
+   "faction": "3",
+   "why": "Télépopmusik 第二張，延續首張的柔和電子與人聲，更多樣的客座，仍是法式 lounge。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1456679-3901-30a6-929c-39d6d84f49a0"
+   ],
+   "mbRgMbid": "d1456679-3901-30a6-929c-39d6d84f49a0",
+   "uncertain": "與已選的《Genetic World》同藝人第二張。"
+  },
+  {
+   "artist": "Nicola Conte",
+   "album": "Jet Sounds",
+   "year": 2000,
+   "label": "Schema Records",
+   "faction": "4",
+   "why": "巴里 Nicola Conte 的首張，把 1960 年代 Blue Note／bossa／ cool jazz 氛圍搬進現代 lounge，義大利 nu-jazz 的起點。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9438b262-23b6-367f-82f6-5b67de6b077f"
+   ],
+   "mbRgMbid": "9438b262-23b6-367f-82f6-5b67de6b077f",
+   "uncertain": "池內已有《Other Directions》；MB 日期僅到月份（2000-10）。"
+  },
+  {
+   "artist": "Gabin",
+   "album": "Gabin",
+   "year": 2002,
+   "label": "Virgin Records",
+   "faction": "4",
+   "why": "義大利 Gabin 的 swing／lounge 電子，Dee Dee Bridgewater 等人聲客座，高雅鬆弛，晚餐配樂等級。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/11f7fab2-9e97-3c1c-9c67-65a74175eb18"
+   ],
+   "mbRgMbid": "11f7fab2-9e97-3c1c-9c67-65a74175eb18",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dead Combo",
+   "album": "Vol. 1",
+   "year": 2004,
+   "label": "Dead & Company / Universal Portugal",
+   "faction": "4",
+   "why": "里斯本吉他雙人組 Dead Combo 的首張，電影感的葡萄牙 noir 吉他，慵懶、蒼涼、溫柔，非電子但極 chill。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2bfbc131-f8d2-3149-8bf6-22065e384b8e",
+    "https://en.wikipedia.org/wiki/Dead_Combo"
+   ],
+   "mbRgMbid": "2bfbc131-f8d2-3149-8bf6-22065e384b8e",
+   "uncertain": "MB 無廠牌；廠牌取自維基（Dead & Company，與 Universal Portugal 合作）；以吉他器樂為主，偏世界／lounge，可視需要刪除。"
+  },
+  {
+   "artist": "Imam Baildi",
+   "album": "Imam Baildi",
+   "year": 2007,
+   "label": "Minos-EMI",
+   "faction": "4",
+   "why": "雅典 Imam Baildi 把 1950–60 年代希臘 rebetiko 老歌重製成 downtempo／lounge，溫暖又帶舊日情懷。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6abe25b6-e553-455c-b7be-362154c29c2e"
+   ],
+   "mbRgMbid": "6abe25b6-e553-455c-b7be-362154c29c2e",
+   "uncertain": "以老歌重製為主，但作為專輯為公認首張。"
+  },
+  {
+   "artist": "The Dining Rooms",
+   "album": "Tre",
+   "year": 2003,
+   "label": "Schema Records",
+   "faction": "4",
+   "why": "米蘭 The Dining Rooms 的第三張，筆記式爵士電子與 hip-hop 邊拍，Schema 廠牌的另一條 chill 路線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9fb293f8-5084-36d5-aec5-f111eb462c57"
+   ],
+   "mbRgMbid": "9fb293f8-5084-36d5-aec5-f111eb462c57",
+   "uncertain": "MB 日期僅到月份（2003-02）。"
+  },
+  {
+   "artist": "Chambao",
+   "album": "Endorfinas en la mente",
+   "year": 2003,
+   "label": "Sony Music",
+   "faction": "4",
+   "why": "安達魯西亞 flamenco chill 的開山作，把佛朗明哥吉他與人聲放進 chill-out 電子底，西班牙版的 Café del Mar。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/595e7fb6-787e-3898-b90d-5b790a74bfc3",
+    "https://en.wikipedia.org/wiki/Chambao"
+   ],
+   "mbRgMbid": "595e7fb6-787e-3898-b90d-5b790a74bfc3",
+   "uncertain": "《Flamenco Chill》（2002）為 Sony 合輯、不收；此張為維基所稱首張個人全長專輯。維基文字稱「兩年後」（2004），但其年表與 MB 皆為 2003，取 2003。"
+  },
+  {
+   "artist": "Lemon Jelly",
+   "album": "'64-'95",
+   "year": 2005,
+   "label": "Impotent Fury Records & Tapes",
+   "faction": "5",
+   "why": "Lemon Jelly 第三張，英式 Balearic-folktronica，輕盈、童趣、帶懷舊感，Café del Mar 風格的日光系。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d7ae044-7ed7-3624-a516-239607c2d4b0"
+   ],
+   "mbRgMbid": "2d7ae044-7ed7-3624-a516-239607c2d4b0",
+   "uncertain": "池內已有《Lost Horizons》；MB 標題用 U+2019／U+2013，已改 ASCII。"
+  },
+  {
+   "artist": "Mark Barrott",
+   "album": "Sketches From an Island",
+   "year": 2014,
+   "label": "International Feel",
+   "faction": "5",
+   "why": "International Feel 創辦人 Mark Barrott 的伊比薩島意象專輯，海風、吉他與柔和電子，現代 Balearic 的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/32dc9702-9d75-4485-9c8d-b3c031b3aa4d"
+   ],
+   "mbRgMbid": "32dc9702-9d75-4485-9c8d-b3c031b3aa4d",
+   "uncertain": "MB 有兩個同名 release-group（另一個 3c6d4245-f555-4df5-a121-761586b81f4b），取先建立者。"
+  },
+  {
+   "artist": "A Man Called Adam",
+   "album": "Duende",
+   "year": 1998,
+   "label": "Other Records",
+   "faction": "5",
+   "why": "Steve Jones 與 Sally Rodgers 的 Balearic jazz-folk-electronic，Acid Jazz 之後的 chill 轉向，華麗而憂鬱。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9470857d-3fa6-33aa-ba28-7ed9ffc3e48d"
+   ],
+   "mbRgMbid": "9470857d-3fa6-33aa-ba28-7ed9ffc3e48d",
+   "uncertain": ""
+  },
+  {
+   "artist": "Quiet Village",
+   "album": "Silent Movie",
+   "year": 2008,
+   "label": "!K7 Records",
+   "faction": "5",
+   "why": "Joel Martin 與 Matt Edwards 的 exotica／Balearic 專輯，Martin Denny 式的熱帶取樣配電子，夢幻夜晚。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9282995-619b-3ed1-ad38-148a719ca6a1"
+   ],
+   "mbRgMbid": "e9282995-619b-3ed1-ad38-148a719ca6a1",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ultramarine",
+   "album": "United Kingdoms",
+   "year": 1993,
+   "label": "Blanco y Negro Records",
+   "faction": "5",
+   "why": "Ultramarine 第二張，英倫田園與 Robert Wyatt 客座，ambient house 與民謠電子的早期經典。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ab2e14e-6700-3195-8cc9-51ce46f7d894"
+   ],
+   "mbRgMbid": "7ab2e14e-6700-3195-8cc9-51ce46f7d894",
+   "uncertain": "池內已有《Every Man and Woman Is a Star》；MB 日期僅到月份（1993-08）。"
+  },
+  {
+   "artist": "Suba",
+   "album": "São Paulo Confessions",
+   "year": 1999,
+   "label": "Ziriguiboom (Crammed Discs)",
+   "faction": "6",
+   "why": "Mitar Subotić（塞爾維亞）在聖保羅製作的 bossa 電子，Cibelle 等人聲，Café del Mar 時代的拉丁 chill 名作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9fc9bf6f-4bb9-3b73-98b5-66f89bff6c82"
+   ],
+   "mbRgMbid": "9fc9bf6f-4bb9-3b73-98b5-66f89bff6c82",
+   "uncertain": ""
+  },
+  {
+   "artist": "Federico Aubele",
+   "album": "Gran Hotel Buenos Aires",
+   "year": 2004,
+   "label": "Eighteenth Street Lounge Music",
+   "faction": "6",
+   "why": "布宜諾斯艾利斯吉他手 Federico Aubele 的首張，電影感的探戈與 dub 底，ESL 廠牌旗下的夜晚專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0843fce0-3887-3e18-a037-9276764211b5"
+   ],
+   "mbRgMbid": "0843fce0-3887-3e18-a037-9276764211b5",
+   "uncertain": ""
+  },
+  {
+   "artist": "Federico Aubele",
+   "album": "Panamericana",
+   "year": 2007,
+   "label": "Eighteenth Street Lounge Music",
+   "faction": "6",
+   "why": "第二張，更廣的拉丁節奏與電子細節，保留鬆弛的夜間氣氛。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f40edc51-4262-38f5-b7d8-8a99f38f9f8b"
+   ],
+   "mbRgMbid": "f40edc51-4262-38f5-b7d8-8a99f38f9f8b",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bajofondo Tango Club",
+   "album": "Bajofondo Tango Club",
+   "year": 2002,
+   "label": "Surco / Universal Music Latino",
+   "faction": "6",
+   "why": "Gustavo Santaolalla 等人的電子探戈，拉丁底，節奏鬆，是 Gotan Project 外的重要探戈 downtempo。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/cf97777f-4004-3ec8-8964-ceb22a7b45ff"
+   ],
+   "mbRgMbid": "cf97777f-4004-3ec8-8964-ceb22a7b45ff",
+   "uncertain": "MB 日期為 2002-01-01 占位。"
+  },
+  {
+   "artist": "Zuco 103",
+   "album": "Outro Lado",
+   "year": 1999,
+   "label": "Ziriguiboom (Crammed Discs)",
+   "faction": "6",
+   "why": "荷蘭／巴西的 Zuco 103 首張，bossa、samba 與 drum 節拍，快樂而不吵。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a1396b2-7098-3019-8d18-984db7e08bc7",
+    "https://en.wikipedia.org/wiki/Zuco_103"
+   ],
+   "mbRgMbid": "1a1396b2-7098-3019-8d18-984db7e08bc7",
+   "uncertain": "MB 無廠牌（BE 1999）；廠牌取 Ziriguiboom／Crammed（需複核）。"
+  },
+  {
+   "artist": "Bossacucanova",
+   "album": "Brasilidade",
+   "year": 2001,
+   "label": "Ziriguiboom (Crammed Discs)",
+   "faction": "6",
+   "why": "里約 Bossacucanova 與 Roberto Menescal 的 bossa 電子，把 60 年代 bossa nova 變成 downtempo。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/83124d5d-b5a5-3856-bfa1-9c2fb658316c"
+   ],
+   "mbRgMbid": "83124d5d-b5a5-3856-bfa1-9c2fb658316c",
+   "uncertain": "MB 藝人署名為 Bossacucanova／Roberto Menescal。"
+  },
+  {
+   "artist": "Cibelle",
+   "album": "Cibelle",
+   "year": 2003,
+   "label": "Ziriguiboom (Crammed Discs) / Six Degrees",
+   "faction": "6",
+   "why": "Suba 的搭檔 Cibelle 的首張個人專輯，MPB、電子與民謠，溫柔又現代。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/10e7f940-601e-3c4c-8964-1a9fe1b46f0e"
+   ],
+   "mbRgMbid": "10e7f940-601e-3c4c-8964-1a9fe1b46f0e",
+   "uncertain": ""
+  },
+  {
+   "artist": "Skalpel",
+   "album": "Konfusion",
+   "year": 2005,
+   "label": "Ninja Tune",
+   "faction": "1",
+   "why": "波蘭 Skalpel 第二張，延續 60 年代波蘭爵士取樣，更成熟。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f2f552e3-d64b-3b58-9a2f-6a3a5aa32a65"
+   ],
+   "mbRgMbid": "f2f552e3-d64b-3b58-9a2f-6a3a5aa32a65",
+   "uncertain": "與已選的首張同藝人第二張；MB 日期僅到月份。"
+  },
+  {
+   "artist": "Da Lata",
+   "album": "Songs From the Tin",
+   "year": 2000,
+   "label": "Palm Pictures",
+   "faction": "6",
+   "why": "倫敦 Da Lata 的拉丁／巴西電子，Palm Pictures 發行，輕快的 bossa-electronic。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c0d8683d-6537-3222-a1d4-749465ffc2cd"
+   ],
+   "mbRgMbid": "c0d8683d-6537-3222-a1d4-749465ffc2cd",
+   "uncertain": "英國團，但為巴西音樂路線；chill 度中上。"
+  }
+ ],
+ "notes": []
+}
