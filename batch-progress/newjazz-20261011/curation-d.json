@@ -1,0 +1,733 @@
+{
+ "group": "d",
+ "factions": [
+  {
+   "id": "jp-piano",
+   "zh": "日本新世代鋼琴三重奏與鋼琴家",
+   "why": "H ZETTRIO、桑原あい、上原ひろみ 2010 後作、（大西順子卡池已 4 張達上限，不補）；卡池這幾位原本多為 0 或僅舊作",
+   "count": 6
+  },
+  {
+   "id": "jp-band",
+   "zh": "日本 jazz-rock／器樂爵士樂團",
+   "why": "fox capture plan、TRI4TH、JABBERLOOP、bohemianvoodoo、indigo jam unit、mouse on the keys 等器樂團，卡池原本全為 0",
+   "count": 11
+  },
+  {
+   "id": "jp-club",
+   "zh": "日本 club jazz 後浪",
+   "why": "SOIL&\"PIMP\"SESSIONS 2010 後作、WONK、Kyoto Jazz Massive 後續作（Kyoto Jazz Sextet 三張皆已在卡池）",
+   "count": 4
+  },
+  {
+   "id": "jp-intl",
+   "zh": "Blue Note 與國際派／東京新世代",
+   "why": "黒田卓也、J-Squad、Answer to Remember（石若駿）、類家心平、松丸契",
+   "count": 7
+  },
+  {
+   "id": "jp-large",
+   "zh": "大編制、作曲家與自由爵士",
+   "why": "挾間美帆、藤井郷子、坂田明、高瀬アキ、菊地雅章 ECM",
+   "count": 8
+  },
+  {
+   "id": "kr",
+   "zh": "韓國",
+   "why": "Black String、나윤선、Jihye Lee Orchestra、박지하",
+   "count": 7
+  },
+  {
+   "id": "sea",
+   "zh": "東南亞（印尼）",
+   "why": "Joey Alexander、Dewa Budjana；台灣／港中資料不足未收",
+   "count": 3
+  }
+ ],
+ "albums": [
+  {
+   "artist": "H ZETTRIO",
+   "album": "PIANO CRAZE",
+   "year": 2016,
+   "label": "apart.RECORDS",
+   "faction": "jp-piano",
+   "why": "H ZETTRIO 以 H ZETT M 的鋼琴領軍的日本鋼琴三重奏，此作為其早期代表作，兼具爵士技巧與流行性。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6afcf643-4990-48f7-a1d2-1ce9b73cbfa8"
+   ],
+   "mbRgMbid": "6afcf643-4990-48f7-a1d2-1ce9b73cbfa8",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "H ZETTRIO",
+   "album": "Mysterious Superheroes",
+   "year": 2018,
+   "label": "apart.RECORDS",
+   "faction": "jp-piano",
+   "why": "H ZETTRIO 中期的全新原創專輯，鋼琴三重奏新浪潮的延續。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8242a5b8-092e-47e9-be3b-94a6b023b70c"
+   ],
+   "mbRgMbid": "8242a5b8-092e-47e9-be3b-94a6b023b70c",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "桑原あい",
+   "album": "Dear Family",
+   "year": 2017,
+   "label": "Verve",
+   "faction": "jp-piano",
+   "why": "桑原あい（鋼琴）與石若駿（鼓）的雙人專輯，Verve 發行，日本新世代鋼琴與鼓的對話。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c125913b-0076-424d-9a73-49ab7b5ed8de"
+   ],
+   "mbRgMbid": "c125913b-0076-424d-9a73-49ab7b5ed8de",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Ai Kuwabara（與石若駿合名義）"
+  },
+  {
+   "artist": "桑原あい",
+   "album": "To The End Of This World",
+   "year": 2018,
+   "label": "ewe records",
+   "faction": "jp-piano",
+   "why": "桑原あい 的鋼琴三重奏原創作，新世代日本鋼琴爵士的代表聲音。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b76eb6a6-0edf-43ef-8aaa-de590c7963d6"
+   ],
+   "mbRgMbid": "b76eb6a6-0edf-43ef-8aaa-de590c7963d6",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Ai Kuwabara"
+  },
+  {
+   "artist": "Hiromi",
+   "album": "Alive",
+   "year": 2014,
+   "label": "Telarc",
+   "faction": "jp-piano",
+   "why": "上原ひろみ「The Trio Project」與 Anthony Jackson、Simon Phillips 的錄音室專輯，2010 後上原的核心三重奏作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/edf39bde-7052-4c2e-a85a-083cd08ebc18"
+   ],
+   "mbRgMbid": "edf39bde-7052-4c2e-a85a-083cd08ebc18",
+   "poolHas": 1,
+   "uncertain": "MB 署名為『上原ひろみ ザ・トリオ・プロジェクト』，卡池既有 Hiromi 名義為『Hiromi』，上架時請沿用 Hiromi",
+   "aka": "上原ひろみ／Hiromi Uehara's The Trio Project"
+  },
+  {
+   "artist": "Hiromi",
+   "album": "Spectrum",
+   "year": 2019,
+   "label": "Telarc",
+   "faction": "jp-piano",
+   "why": "上原ひろみ 的獨奏鋼琴專輯，2010 後她最受矚目的 solo 作品之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1f0cee5c-80ca-46e8-a9f1-873f37f65987"
+   ],
+   "mbRgMbid": "1f0cee5c-80ca-46e8-a9f1-873f37f65987",
+   "poolHas": 1,
+   "uncertain": "",
+   "aka": "上原ひろみ"
+  },
+  {
+   "artist": "fox capture plan",
+   "album": "Trinity",
+   "year": 2013,
+   "label": "Playwright",
+   "faction": "jp-band",
+   "why": "fox capture plan 的鋼琴／貝斯／鼓三人 jazz-rock 器樂早期核心作品，日本新世代樂團代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b0e72ba3-8781-49b7-83e7-dfb3bad8a71d"
+   ],
+   "mbRgMbid": "b0e72ba3-8781-49b7-83e7-dfb3bad8a71d",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "fox capture plan",
+   "album": "BUTTERFLY",
+   "year": 2015,
+   "label": "Playwright",
+   "faction": "jp-band",
+   "why": "fox capture plan 中期代表作，成熟期的旋律式 jazz-rock 三重奏。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1698647-bc74-4390-a0eb-b54d09071664"
+   ],
+   "mbRgMbid": "b1698647-bc74-4390-a0eb-b54d09071664",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "fox capture plan",
+   "album": "FRAGILE",
+   "year": 2017,
+   "label": "Playwright",
+   "faction": "jp-band",
+   "why": "fox capture plan 2017 年全新原創專輯，持續擴大受眾的代表作之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/51f7fd25-78dd-430a-a3c6-dc07d7d976e8"
+   ],
+   "mbRgMbid": "51f7fd25-78dd-430a-a3c6-dc07d7d976e8",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "TRI4TH",
+   "album": "Awakening",
+   "year": 2015,
+   "label": "Playwright",
+   "faction": "jp-band",
+   "why": "TRI4TH 以 ska/club jazz 能量著稱的日本爵士樂團，此作為其 2015 年代表原創專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6df18d9-6981-432f-8332-164dc409a0f8"
+   ],
+   "mbRgMbid": "d6df18d9-6981-432f-8332-164dc409a0f8",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "TRI4TH (Tri-4th)"
+  },
+  {
+   "artist": "TRI4TH",
+   "album": "Hybrid ROOTS",
+   "year": 2018,
+   "label": "Playwright",
+   "faction": "jp-band",
+   "why": "TRI4TH 中期專輯，呈現其融合 club jazz、spiritual 與搖滾的成熟面貌。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1c1a0b2a-0e8b-4df3-88db-8c017615ea9f"
+   ],
+   "mbRgMbid": "1c1a0b2a-0e8b-4df3-88db-8c017615ea9f",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "mouse on the keys",
+   "album": "The Flowers of Romance",
+   "year": 2015,
+   "label": "Mule Musiq",
+   "faction": "jp-band",
+   "why": "mouse on the keys 以爵士鋼琴與鼓為骨幹的 post-jazz／math-rock 器樂代表作，Mule Musiq 發行。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/fa24e7f9-deb2-41e1-91df-0da573f7d88b"
+   ],
+   "mbRgMbid": "fa24e7f9-deb2-41e1-91df-0da573f7d88b",
+   "poolHas": 0,
+   "uncertain": "爵士成分偏 post-rock／post-jazz，屬邊緣；MB 無爵士標籤，主線可決定是否收"
+  },
+  {
+   "artist": "JABBERLOOP",
+   "album": "攻め燃える",
+   "year": 2010,
+   "label": "Vithmic",
+   "faction": "jp-band",
+   "why": "JABBERLOOP 京都出身 jazz/funk 五人組第三張專輯，收錄曲長期居 iTunes 爵士榜首，日本後浪 club jazz 重要作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/64811cfe-caae-47da-b10b-df9a56f34ab0",
+    "https://ja.wikipedia.org/wiki/JABBERLOOP"
+   ],
+   "mbRgMbid": "64811cfe-caae-47da-b10b-df9a56f34ab0",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "bohemianvoodoo",
+   "album": "Lapis Lazuli",
+   "year": 2010,
+   "label": "P-Vine",
+   "faction": "jp-band",
+   "why": "bohemianvoodoo 日本器樂爵士四重奏的早期代表專輯，P-Vine 發行。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/984b29bb-a1d4-44ab-9ec1-1024d33a9977"
+   ],
+   "mbRgMbid": "984b29bb-a1d4-44ab-9ec1-1024d33a9977",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "bohemianvoodoo",
+   "album": "Scenes",
+   "year": 2012,
+   "label": "Playwright",
+   "faction": "jp-band",
+   "why": "bohemianvoodoo 轉入 Playwright 後的專輯，持續其電影感器樂爵士路線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8b4b6b1b-c9e7-4629-a530-ac4a7861665c"
+   ],
+   "mbRgMbid": "8b4b6b1b-c9e7-4629-a530-ac4a7861665c",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "indigo jam unit",
+   "album": "REBEL",
+   "year": 2012,
+   "label": "basis records",
+   "faction": "jp-band",
+   "why": "indigo jam unit 的 Latin／fusion 色彩日本器樂爵士團體，2010 後 basis records 年度專輯系列之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/eae91afb-bd3e-48ea-ae42-0eeeae21f656"
+   ],
+   "mbRgMbid": "eae91afb-bd3e-48ea-ae42-0eeeae21f656",
+   "poolHas": 0,
+   "uncertain": "此團未能以來源確認『代表作』為何，取中期成熟作；主線可改選 Roots (2010, b0109fb7-9a09-4120-be5d-20fb6308e8ab) 或 Milestone (2013, c23e521f-edb5-4d08-87a1-f0219fc003f7)"
+  },
+  {
+   "artist": "BIGYUKI",
+   "album": "Reaching for Chiron",
+   "year": 2018,
+   "label": "Likely Tapes",
+   "faction": "jp-band",
+   "why": "BIGYUKI 為紐約活動的日本鍵盤手，結合 jazz 與電子／beat 的新世代作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/fef2b589-878b-418f-a30d-cb53af45fa9c"
+   ],
+   "mbRgMbid": "fef2b589-878b-418f-a30d-cb53af45fa9c",
+   "poolHas": 0,
+   "uncertain": "jazz-electronic 混合，邊緣；MB 無標籤"
+  },
+  {
+   "artist": "SOIL&\"PIMP\"SESSIONS",
+   "album": "CIRCLES",
+   "year": 2013,
+   "label": "Victor",
+   "faction": "jp-club",
+   "why": "SOIL&\"PIMP\"SESSIONS 2010 後的錄音室專輯，延續其 death jazz 路線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/98ebcdf3-859e-42e2-9836-ce0d1b14c046"
+   ],
+   "mbRgMbid": "98ebcdf3-859e-42e2-9836-ce0d1b14c046",
+   "poolHas": 1,
+   "uncertain": "",
+   "aka": "SOIL & \"PIMP\" SESSIONS"
+  },
+  {
+   "artist": "SOIL&\"PIMP\"SESSIONS",
+   "album": "Dapper",
+   "year": 2018,
+   "label": "Victor",
+   "faction": "jp-club",
+   "why": "SOIL&\"PIMP\"SESSIONS 2018 專輯，樂團後期代表錄音室作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/65f6fa7f-03e7-4565-8a57-7ec4dfb621a5"
+   ],
+   "mbRgMbid": "65f6fa7f-03e7-4565-8a57-7ec4dfb621a5",
+   "poolHas": 1,
+   "uncertain": "",
+   "aka": "SOIL & \"PIMP\" SESSIONS"
+  },
+  {
+   "artist": "WONK",
+   "album": "EYES",
+   "year": 2020,
+   "label": "epistroph",
+   "faction": "jp-club",
+   "why": "WONK 以 jazz／R&B／beat 融合的東京新世代代表樂團，EYES 為其國際知名度較高的專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d90b5287-7a5c-421d-b698-b13e55c3e4c5"
+   ],
+   "mbRgMbid": "d90b5287-7a5c-421d-b698-b13e55c3e4c5",
+   "poolHas": 1,
+   "uncertain": "WONK 偏 neo-soul 融合，主線可決定是否過界"
+  },
+  {
+   "artist": "Kyoto Jazz Massive",
+   "album": "Message From a New Dawn",
+   "year": 2021,
+   "label": "Especial Records",
+   "faction": "jp-club",
+   "why": "Kyoto Jazz Massive 沖野兄弟的新專輯，2010 後少數的全新創作專輯，連結 spiritual／club jazz。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/088292bf-dcce-4ba2-b72b-80a9be7b487a"
+   ],
+   "mbRgMbid": "088292bf-dcce-4ba2-b72b-80a9be7b487a",
+   "poolHas": 1,
+   "uncertain": "club jazz／DJ 色彩偏重，主線可決定是否保留"
+  },
+  {
+   "artist": "黒田卓也",
+   "album": "Zigzagger",
+   "year": 2016,
+   "label": "Concord Records",
+   "faction": "jp-intl",
+   "why": "紐約活動的日本小號手黒田卓也 Concord 時期專輯，融合 jazz 與 hip-hop/R&B 節奏。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5eefb0a0-a06e-4f50-9a10-dfed6f5f76b5",
+    "https://en.wikipedia.org/wiki/Takuya_Kuroda"
+   ],
+   "mbRgMbid": "5eefb0a0-a06e-4f50-9a10-dfed6f5f76b5",
+   "poolHas": 1,
+   "uncertain": "",
+   "aka": "Takuya Kuroda"
+  },
+  {
+   "artist": "黒田卓也",
+   "album": "Fly Moon Die Soon",
+   "year": 2020,
+   "label": "First Word Records",
+   "faction": "jp-intl",
+   "why": "黒田卓也 與英國 First Word 合作，延續 jazz/soul/hip-hop 的國際新爵士路線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8956b33a-659a-4f39-81ea-28fd9500d875"
+   ],
+   "mbRgMbid": "8956b33a-659a-4f39-81ea-28fd9500d875",
+   "poolHas": 1,
+   "uncertain": "",
+   "aka": "Takuya Kuroda"
+  },
+  {
+   "artist": "J-Squad",
+   "album": "J-Squad II",
+   "year": 2018,
+   "label": "Universal Music",
+   "faction": "jp-intl",
+   "why": "紐約日本籍爵士樂手組成的超級團體 J-Squad 第二作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/fbe6d4ea-e1cc-472d-818c-96548a1400b6"
+   ],
+   "mbRgMbid": "fbe6d4ea-e1cc-472d-818c-96548a1400b6",
+   "poolHas": 0,
+   "uncertain": "成員與影響力需主線以來源再確認（MB 簡介僅『Japanese American jazz supergroup from New York City』）"
+  },
+  {
+   "artist": "Answer to Remember",
+   "album": "Answer To Remember",
+   "year": 2019,
+   "label": "Sony Records International",
+   "faction": "jp-intl",
+   "why": "石若駿 領軍的新世代東京爵士計畫，Sony 發行，連接 Millennium Parade 周邊音樂人的爵士場景。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a11cee0a-2cd4-4ae0-9142-668fcd9c61e7"
+   ],
+   "mbRgMbid": "a11cee0a-2cd4-4ae0-9142-668fcd9c61e7",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "石若駿"
+  },
+  {
+   "artist": "Answer to Remember",
+   "album": "Answer to Remember II",
+   "year": 2024,
+   "label": "",
+   "faction": "jp-intl",
+   "why": "Answer to Remember 的第二張專輯，延續 2019 年首作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/af1b935e-dd89-492f-bab2-16ab3981ae67"
+   ],
+   "mbRgMbid": "af1b935e-dd89-492f-bab2-16ab3981ae67",
+   "poolHas": 0,
+   "uncertain": "MB 無廠牌資料，需另查",
+   "aka": "石若駿"
+  },
+  {
+   "artist": "類家心平",
+   "album": "RS5pb",
+   "year": 2020,
+   "label": "T5Jazz Records",
+   "faction": "jp-intl",
+   "why": "薩克斯風奏者類家心平 的 RS5pb 五重奏專輯，T5Jazz 發行，日本當代 post-bop。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/48e0280f-0615-47ec-ba0d-f4a548a8cb87"
+   ],
+   "mbRgMbid": "48e0280f-0615-47ec-ba0d-f4a548a8cb87",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Shimpei Ruike"
+  },
+  {
+   "artist": "松丸契",
+   "album": "The Moon, Its Recollections Abstracted",
+   "year": 2022,
+   "label": "SOMETHIN'COOL",
+   "faction": "jp-intl",
+   "why": "松丸契 的首張完整專輯（SOMETHIN'COOL），日本新世代薩克斯風手的 post-bop／自由即興代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/03f99913-6be1-46d4-b893-4e70ae34a860"
+   ],
+   "mbRgMbid": "03f99913-6be1-46d4-b893-4e70ae34a860",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Kei Matsumaru"
+  },
+  {
+   "artist": "挾間美帆",
+   "album": "Journey to Journey",
+   "year": 2013,
+   "label": "Sunnyside Communications",
+   "faction": "jp-large",
+   "why": "挾間美帆 m_unit 的首張大編制專輯，日本女性作曲家／編曲家的代表性出道。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/198f8a16-187d-4ea2-9ba3-6bc2e2bc2399"
+   ],
+   "mbRgMbid": "198f8a16-187d-4ea2-9ba3-6bc2e2bc2399",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Miho Hazama"
+  },
+  {
+   "artist": "挾間美帆",
+   "album": "Dancer in Nowhere",
+   "year": 2019,
+   "label": "Sunnyside",
+   "faction": "jp-large",
+   "why": "挾間美帆 以 m_unit 為班底的室內樂爵士大編制專輯，挾間作曲風格的成熟之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1ae4a7be-3035-490a-95b0-efbcb6c0bba3"
+   ],
+   "mbRgMbid": "1ae4a7be-3035-490a-95b0-efbcb6c0bba3",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Miho Hazama"
+  },
+  {
+   "artist": "挾間美帆",
+   "album": "Imaginary Visions",
+   "year": 2021,
+   "label": "Edition Records",
+   "faction": "jp-large",
+   "why": "挾間美帆 轉進英國 Edition Records 的專輯，延伸其現代大編制作曲路線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/134b5f62-eade-415b-8465-dfe4e8690c51"
+   ],
+   "mbRgMbid": "134b5f62-eade-415b-8465-dfe4e8690c51",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Miho Hazama"
+  },
+  {
+   "artist": "Satoko Fujii Orchestra New York",
+   "album": "Fukushima",
+   "year": 2017,
+   "label": "Libra Records",
+   "faction": "jp-large",
+   "why": "藤井郷子 的紐約大樂團為福島災後創作，free jazz／當代大編制代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/45eeed04-3c93-4aa0-a5b9-1a8c08c4c79e"
+   ],
+   "mbRgMbid": "45eeed04-3c93-4aa0-a5b9-1a8c08c4c79e",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "藤井郷子 / Satoko Fujii"
+  },
+  {
+   "artist": "Akira Sakata",
+   "album": "Arashi",
+   "year": 2014,
+   "label": "Trost Records",
+   "faction": "jp-large",
+   "why": "坂田明 與 Johan Berthling、Paal Nilssen-Love 的三重奏，日本自由爵士老將在歐洲新世代場景的核心作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/54d3565c-1414-4663-a89b-e637c01544fc"
+   ],
+   "mbRgMbid": "54d3565c-1414-4663-a89b-e637c01544fc",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "坂田明"
+  },
+  {
+   "artist": "Akira Sakata",
+   "album": "Proton Pump",
+   "year": 2018,
+   "label": "Family Vineyard",
+   "faction": "jp-large",
+   "why": "坂田明 與 Chikamorachi（Darin Gray、Chris Corsano）及佐藤允彦的 free jazz 專輯，DownBeat 評論過。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0a6e2395-2dc0-4591-95fb-030f9e076aca",
+    "https://en.wikipedia.org/wiki/Akira_Sakata"
+   ],
+   "mbRgMbid": "0a6e2395-2dc0-4591-95fb-030f9e076aca",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "坂田明"
+  },
+  {
+   "artist": "高瀬アキ",
+   "album": "So Long, Eric! Homage to Eric Dolphy",
+   "year": 2014,
+   "label": "Intakt Records",
+   "faction": "jp-large",
+   "why": "高瀬アキ 在 Intakt 發行的向 Eric Dolphy 致敬專輯，歐洲 free jazz 場景的日本鋼琴家重要作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f3de511c-c9a6-4f68-9bc1-b0f510467877"
+   ],
+   "mbRgMbid": "f3de511c-c9a6-4f68-9bc1-b0f510467877",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Aki Takase"
+  },
+  {
+   "artist": "Masabumi Kikuchi Trio",
+   "album": "Sunrise",
+   "year": 2012,
+   "label": "ECM Records",
+   "faction": "jp-large",
+   "why": "菊地雅章 與 Thomas Morgan、Paul Motian 的 ECM 三重奏，晚年代表作，國際評價極高的日本爵士鋼琴作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc90068b-1a16-499e-a2aa-4bd2333835ff"
+   ],
+   "mbRgMbid": "bc90068b-1a16-499e-a2aa-4bd2333835ff",
+   "poolHas": 0,
+   "uncertain": "MB 署名為 Masabumi Kikuchi Trio；卡池只有 Quintet 一張 1973，需歸一化人名",
+   "aka": "菊地雅章 / Masabumi Kikuchi"
+  },
+  {
+   "artist": "Black String",
+   "album": "Mask Dance",
+   "year": 2016,
+   "label": "ACT",
+   "faction": "kr",
+   "why": "Black String 以傳統韓國樂器玄琴 komungo 與爵士合奏，ACT 發行，韓國新世代爵士代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1549b33c-5844-4cb7-806a-e17624dc204f"
+   ],
+   "mbRgMbid": "1549b33c-5844-4cb7-806a-e17624dc204f",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "블랙스트링"
+  },
+  {
+   "artist": "Black String",
+   "album": "Karma",
+   "year": 2019,
+   "label": "ACT",
+   "faction": "kr",
+   "why": "Black String 第二張 ACT 專輯，融合傳統音樂與爵士即興。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/02964b69-7705-4e62-bea5-d0abd99ce9aa"
+   ],
+   "mbRgMbid": "02964b69-7705-4e62-bea5-d0abd99ce9aa",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "블랙스트링"
+  },
+  {
+   "artist": "나윤선",
+   "album": "Lento",
+   "year": 2013,
+   "label": "ACT",
+   "faction": "kr",
+   "why": "나윤선（Youn Sun Nah）ACT 時期代表作，歐洲知名的韓國爵士女聲。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1114d3e0-6155-423e-ab56-966bc02ecb4d"
+   ],
+   "mbRgMbid": "1114d3e0-6155-423e-ab56-966bc02ecb4d",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Youn Sun Nah"
+  },
+  {
+   "artist": "나윤선",
+   "album": "She Moves On",
+   "year": 2017,
+   "label": "ACT",
+   "faction": "kr",
+   "why": "나윤선 ACT 時期的代表專輯，持續其器樂化人聲詮釋。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/53c97ffd-06cd-4b3e-8676-50c072c93b7a"
+   ],
+   "mbRgMbid": "53c97ffd-06cd-4b3e-8676-50c072c93b7a",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Youn Sun Nah"
+  },
+  {
+   "artist": "나윤선",
+   "album": "Same Girl",
+   "year": 2010,
+   "label": "ACT",
+   "faction": "kr",
+   "why": "나윤선 打入歐洲的 ACT 專輯，使她成為國際知名的韓國爵士歌手。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6e1f7eb2-a8dd-4420-b9ca-7d18ddf2c8d9"
+   ],
+   "mbRgMbid": "6e1f7eb2-a8dd-4420-b9ca-7d18ddf2c8d9",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Youn Sun Nah"
+  },
+  {
+   "artist": "Jihye Lee Orchestra",
+   "album": "Daring Mind",
+   "year": 2021,
+   "label": "Motéma",
+   "faction": "kr",
+   "why": "韓國出身、紐約活動的作曲家 Jihye Lee 的大樂團專輯，Motéma 發行，新世代大編制爵士。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/99e5ac2c-ef70-4bf4-bd78-edb68aeff8b5"
+   ],
+   "mbRgMbid": "99e5ac2c-ef70-4bf4-bd78-edb68aeff8b5",
+   "poolHas": 0,
+   "uncertain": "",
+   "aka": "Jihye Lee"
+  },
+  {
+   "artist": "박지하",
+   "album": "Philos",
+   "year": 2019,
+   "label": "Glitterbeat",
+   "faction": "kr",
+   "why": "박지하（Park Jiha）以傳統韓國管樂器為基礎的專輯，Glitterbeat 發行。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/215a5a23-df89-4fc0-b75f-79ce8eecfcae"
+   ],
+   "mbRgMbid": "215a5a23-df89-4fc0-b75f-79ce8eecfcae",
+   "poolHas": 0,
+   "uncertain": "偏實驗／world，爵士歸屬弱，主線可決定是否保留",
+   "aka": "Park Jiha"
+  },
+  {
+   "artist": "Joey Alexander",
+   "album": "Countdown",
+   "year": 2016,
+   "label": "Motéma",
+   "faction": "sea",
+   "why": "印尼鋼琴天才 Joey Alexander 的第二張專輯，Motéma 發行，少年成名後的早期代表專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5e73247e-1f9e-432c-8ff1-6198031fc1f2"
+   ],
+   "mbRgMbid": "5e73247e-1f9e-432c-8ff1-6198031fc1f2",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Joey Alexander",
+   "album": "Eclipse",
+   "year": 2018,
+   "label": "Motéma",
+   "faction": "sea",
+   "why": "Joey Alexander 的 Motéma 時期專輯，展現其作曲與三重奏成熟度。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/791db998-3839-44a0-a1c2-55af34efb310"
+   ],
+   "mbRgMbid": "791db998-3839-44a0-a1c2-55af34efb310",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Dewa Budjana",
+   "album": "Zentuary",
+   "year": 2016,
+   "label": "MoonJune Records",
+   "faction": "sea",
+   "why": "印尼吉他手 Dewa Budjana 與國際陣容的 fusion 爵士專輯，MoonJune 發行。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/25c49264-b2e5-4a0e-a916-ea26961bee51"
+   ],
+   "mbRgMbid": "25c49264-b2e5-4a0e-a916-ea26961bee51",
+   "poolHas": 0,
+   "uncertain": "fusion／jazz-rock 偏重"
+  }
+ ],
+ "notes": [
+  "大西順子卡池已有 4 張（含 2009 Musical Moments）達上限，不補 Baroque（2010）／Tea Times（2016）；若店主想放寬，Baroque 是首選。",
+  "Kyoto Jazz Sextet 的 Mission／Unity／Succession 三張卡池皆已有，Succession 去重指令回 1，已剔除。",
+  "台灣：謝明諺（Minyen Hsieh）MB 無專輯資料，WebSearch 只確認 Firry Path（約 2013–2014，Blue Note Taipei 發片會，年份與廠牌不明），東京中央線 Lines & Stains（金曲獎器樂類）查不到年份與廠牌，依寧缺勿濫未收；香港、中國、송영주（MB 僅單曲）、Sonia Calico、Nao Takeuchi（MB 無對應）、Ryo Konishi（小西遼，僅 CRCK/LCKS Temporary）、Cro-Magnon、Kenichiro Nishihara、Jazztronik 2010 後作皆未收。",
+  "Hiromi 兩張在 MB 署名『上原ひろみ ザ・トリオ・プロジェクト』（Alive）與『上原ひろみ』（Spectrum），卡池既有名義為 Hiromi，建議上架統一用 Hiromi。",
+  "本檔證據多為 MusicBrainz release-group 頁；廠牌取自 MB 最早三筆 release 的 label。Zigzagger 廠牌 Wikipedia 與 MB 皆為 Concord（非 Blue Note）；黒田卓也 Rising Son（Blue Note）卡池已有。",
+  "aka 欄為本批附加欄位（別名），不屬規定格式，主線可忽略。",
+  "邊緣（非純爵士）請主線取捨：mouse on the keys、WONK、Kyoto Jazz Massive、BIGYUKI、박지하、Dewa Budjana（fusion）。"
+ ]
+}
