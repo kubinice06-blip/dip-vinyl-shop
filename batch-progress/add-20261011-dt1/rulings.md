@@ -52,3 +52,16 @@
 - **8958** Blazing Horns：製作人 King Sounds（Grove Music 創辦人 Roy Livingstone Plummer）與 Vivian Jackson (Yabby You)；Prince Jammy 於 King Tubby's 混音、Channel One 錄音。年份 1977（Roots Archives、MB、Discogs），Blood & Fire 重發備註的『1979』單源且與一手標示不合，不採。『最柔和』無樂評，只有 Orlando Weekly 對 B&F 合輯說『dubby atmospherics』。
 - **8959** Off the Beaten Track：策展層『比第一張更放鬆』無來源，來源是 funk-dub 加取樣拼貼，chill 度中。PopMatters 稱『第三張』『melodica』與維基／Discogs（第四張、didgeridoo）不合，從後者。評分（Christgau A−、PopMatters 8/10）不入 facts。
 - **8960** Songs of Praise：策展層『柔和代表作』無來源，來源描述是各地宗教吟唱疊 dub 與非洲打擊樂的儀式感，寫作層寫『儀式感』。封底感謝 Alan Lomax 屬實，但『取樣自 Lomax 錄音』查無來源，寫作層只能寫感謝與 Bonjo 自述的影響。
+
+
+## 研究 c 組（8961–8970）
+- **8961** 研究 c 組 9 張交件：`desc-tools/batches/research/add-20261011-dt1-c.json`，facts 條數 11／10／10／11／12／11／11／11／10，status full 8、thin 1（Mad Professor《A Caribbean Taste of Technology》：查無樂評與訪談，只有 Discogs 樂手與廠牌背景）。WebSearch 6 次，其餘走 Discogs／MB API 與 WebFetch；維基 API 直連被 429，改 WebFetch 與慢速重試。QA 研究 c 組無旗標。
+- **8962** 推翻策展層：Dub Syndicate《The Pounding System》不是 Style Scott 領軍。Discogs 樂手欄無 Scott（鼓是 Donald Campbell、Eskimo Fox），Vinyl District 寫完成於 Scott 加入之前；寫作層勿寫 Scott 打鼓或領軍。Discogs 該版筆記印有『Another 1992』疑為誤植，年份仍 1982（MB／Discogs master／維基一致）。
+- **8963** 《Tunes from the Missing Channel》：年份 1985 成立，audiophileman 的 1983 單源不採。維基稱新聲音圍繞 Tackhead 成員，但本張樂手欄無 Tackhead，寫作層勿把 Tackhead 當本張參與者。客座為 Jah Wobble、Keith Levene、Steve Beresford、Congo Ashanti Roy、Bim Sherman。
+- **8964** 推翻卡單年份：Dub Syndicate《Stoned Immaculate》首發是 **1991**（日本 Spin ALCA-217 於 1991-10-21、美國 Restless 1991、維基專輯目錄與版權標示皆 1991），英國 On-U 版 1992-02-10；卡單 1992 取自 MB 的德國 CD 日期。寫作層寫 1991 並可帶『英國版 1992 年初才出』，**主線審稿時請把卡面年份改 1991**。Prince Far I 為取樣（1983 年已遇害），Lee Perry 人聲僅店家文案單源，不寫。
+- **8965** Creation Rebel《Starship Africa》：首發 1980 年 4D Rhythms（4DLP1），1981 年起 On-U 以 ON-U LP 8 重發。節奏軌 1978 年底為 DJ Superstar 錄，盲混一天完成，皆出自 killyourpetpuppy 單源轉述，寫作層用『據再版文案』口吻；William Gibson 影響為推測，不採。
+- **8966** 《The New Age Steppers》：Neneh Cherry 不在本張樂手欄（The Quietus 說她在第二張），策展層『Neneh Cherry 周邊』不可寫成本張參與者。年份分歧：維基與 Quietus 寫 1980，MB／Discogs／部落格寫 1981 年 1 月；採 1981 年初，寫作層寫『1980 年底到 1981 年初』或『1981 年初』，勿斷言 1980。〈Fade Away〉單曲為 1980 年。
+- **8967** Singers & Players《War of Words》：首發 US 99 Records（MB／Discogs 1981-09，維基 1981-11，無法裁決，寫作層只寫 1981 年）。Bim Sherman 維基條目稱〈Devious Woman〉入《Smithereens》配樂，查電影條目只寫配樂是 The Feelies，不採。
+- **8968** 《Revenge of the Underdog》：廠牌 Situation Two 取自 MB 荷蘭首筆；Discogs master 第一筆是 On-U ON-U LP11，Situation Two 是同年授權發行版（UK SITU 4、NL 656.029），寫作層寫『On-U Sound 製作，歐洲由 Situation Two 發行』。〈Dungeon〉原唱三源不一（Winston Shan／Wailing Souls／作曲欄 Melbourne George Miller），不寫原唱。曲數 MB 8、Discogs 10，不寫曲數。
+- **8969** Mad Professor《Dub Me Crazy, Part 2》：MB 無廠牌欄，由 Discogs master 86808（ARI 003，Ariwa）補。曲名拼法採 Discogs（Roots Land、The English Connection），MB 為 Roots Island、He English Connection；曲數 MB 9、Discogs 10（多〈Get Drunk & Celebrate〉）。Peel 來電、半年無人聞問、旋律出自《根》皆 Ransom Note 訪談單源（本人自述），寫作層用『他回憶』。第二集的錄音地點無來源，不寫成 Peckham 錄成。
+- **8970** 《A Caribbean Taste of Technology》**thin**：策展層『lovers-rock dub』無來源（Discogs 風格僅 Reggae／Dub，人聲陣容為 Pato Banton、Ranking Ann、Sandra Cross 等混合），寫作層用『人聲曲與 dub 混音交錯』，勿用 lovers rock 定性，勿虛構創作故事，以 Mad Professor 與 Ariwa 的處境為主軸。Discogs 樂手欄未標各人在哪幾曲，不要把某人配到特定曲。
