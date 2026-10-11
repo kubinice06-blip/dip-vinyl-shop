@@ -1,0 +1,808 @@
+{
+ "group": "c",
+ "factions": [
+  {
+   "id": "nordic",
+   "zh": "北歐新爵士",
+   "count": 11,
+   "why": "挪威／瑞典／丹麥／芬蘭：Rune Grammofon、Ninja Tune、ECM、Edition 一帶的搖滾化、大樂團與氛圍式新世代"
+  },
+  {
+   "id": "poland",
+   "zh": "波蘭與東歐",
+   "count": 5,
+   "why": "波蘭爵士與東歐 spiritual jazz／beat 復興（EABS）及 Stańko 老將"
+  },
+  {
+   "id": "dach",
+   "zh": "德奧瑞荷比",
+   "count": 8,
+   "why": "德奧瑞與荷比盧：鼓手導向、非洲律動與 ECM 室內鋼琴三重奏新浪潮"
+  },
+  {
+   "id": "france",
+   "zh": "法國",
+   "count": 7,
+   "why": "法國：Supersonic 式 spiritual jazz、女鼓手與手風琴／薩克斯新世代"
+  },
+  {
+   "id": "africa",
+   "zh": "非洲與中東／北非",
+   "count": 5,
+   "why": "南非與衣索比亞新世代，加突尼西亞 ECM 一張（卡池已有 Makhathini、Mulatu、Hailu Mergia 不重補）"
+  },
+  {
+   "id": "israel",
+   "zh": "以色列與猶太裔爵士",
+   "count": 5,
+   "why": "以色列鋼琴三重奏與貝斯／吉他手（Avishai Cohen、Yaron Herman 卡池已足，不補）"
+  },
+  {
+   "id": "latam",
+   "zh": "拉丁美洲",
+   "count": 8,
+   "why": "巴西、古巴、墨西哥、智利新世代爵士"
+  },
+  {
+   "id": "caau",
+   "zh": "加拿大與澳洲",
+   "count": 4,
+   "why": "加拿大（BBNG 補關鍵一張、Christine Jensen）與澳洲 The Necks"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Elephant9",
+   "album": "Walk the Nile",
+   "year": 2010,
+   "label": "Rune Grammofon",
+   "faction": "nordic",
+   "why": "挪威 Rune Grammofon 系 prog-jazz 重金屬三重奏，Ståle Storløkken 的 Hammond 風暴，北歐爵士搖滾新浪潮的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/47b93884-d8df-4035-b36a-1aa3fd02ebd1"
+   ],
+   "mbRgMbid": "47b93884-d8df-4035-b36a-1aa3fd02ebd1",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Fire! Orchestra",
+   "album": "Exit!",
+   "year": 2013,
+   "label": "Rune Grammofon",
+   "faction": "nordic",
+   "why": "Mats Gustafsson 與 Fire! 班底擴編的近 30 人 Fire! Orchestra 首作，自由爵士、搖滾與 Sun Ra 式集體即興的北歐旗艦。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a37b5400-c617-4774-908c-bc4c648887db"
+   ],
+   "mbRgMbid": "a37b5400-c617-4774-908c-bc4c648887db",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Fire! Orchestra",
+   "album": "Ritual",
+   "year": 2016,
+   "label": "Rune Grammofon",
+   "faction": "nordic",
+   "why": "Fire! Orchestra 第二張錄音室作，多位人聲領銜，大樂團自由爵士在 2010 年代的高點之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/29fb0c95-11da-47eb-b18d-9595017099ac"
+   ],
+   "mbRgMbid": "29fb0c95-11da-47eb-b18d-9595017099ac",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Jaga Jazzist",
+   "album": "One-Armed Bandit",
+   "year": 2010,
+   "label": "Ninja Tune",
+   "faction": "nordic",
+   "why": "挪威 Jaga Jazzist 轉向更重、更 prog 的一張，Ninja Tune 時期代表作，電子與大樂團爵士的新世代範本。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d0761460-04bb-43ba-aa0e-1d9eaf38c9f7"
+   ],
+   "mbRgMbid": "d0761460-04bb-43ba-aa0e-1d9eaf38c9f7",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Jaga Jazzist",
+   "album": "Starfire",
+   "year": 2015,
+   "label": "Ninja Tune",
+   "faction": "nordic",
+   "why": "Jaga Jazzist 以 80 年代合成器與大編制爵士寫成的 Ninja Tune 作品，獲高度評價的 2010 年代代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/09aad2c2-1eba-43b0-a591-d2ce7fdfa8ef"
+   ],
+   "mbRgMbid": "09aad2c2-1eba-43b0-a591-d2ce7fdfa8ef",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Rymden",
+   "album": "Reflections & Odysseys",
+   "year": 2019,
+   "label": "Jazzland Recordings",
+   "faction": "nordic",
+   "why": "Bugge Wesseltoft、Dan Berglund（前 e.s.t.）、Magnus Öström 組成的 Rymden 首作，e.s.t. 精神的延續與北歐新世代鋼琴三重奏。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/45fd0f64-ce01-4dc8-98e6-2248bbdcd651"
+   ],
+   "mbRgMbid": "45fd0f64-ce01-4dc8-98e6-2248bbdcd651",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Hedvig Mollestad Trio",
+   "album": "Black Stabat Mater",
+   "year": 2016,
+   "label": "Rune Grammofon",
+   "faction": "nordic",
+   "why": "Hedvig Mollestad Trio 的重型爵士搖滾代表作，Rune Grammofon 旗下，挪威新世代吉他爵士的標誌。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6dc76829-8dda-488c-b4a5-277576c1dc9b"
+   ],
+   "mbRgMbid": "6dc76829-8dda-488c-b4a5-277576c1dc9b",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Marius Neset",
+   "album": "Birds",
+   "year": 2013,
+   "label": "Edition Records",
+   "faction": "nordic",
+   "why": "挪威薩克斯風手 Marius Neset 與英國樂手合組的四重奏代表作，Edition Records，新世代歐陸爵士的關鍵專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/89990027-f5d7-4a8b-8bd8-6363026da366"
+   ],
+   "mbRgMbid": "89990027-f5d7-4a8b-8bd8-6363026da366",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Marius Neset",
+   "album": "Lion",
+   "year": 2014,
+   "label": "ACT",
+   "faction": "nordic",
+   "why": "Marius Neset 與 Trondheim Jazz Orchestra 合作的大樂團作品，ACT 發行，其寫作野心的高點。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/55e79e57-7058-425d-8486-0c93afbd3b31"
+   ],
+   "mbRgMbid": "55e79e57-7058-425d-8486-0c93afbd3b31",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Jakob Bro",
+   "album": "Streams",
+   "year": 2016,
+   "label": "ECM Records",
+   "faction": "nordic",
+   "why": "丹麥吉他手 Jakob Bro 與 Thomas Morgan、Joey Baron 的 ECM 三重奏，氛圍式新世代吉他爵士的典型。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7d952235-810d-4b45-becc-5ffea4d12149"
+   ],
+   "mbRgMbid": "7d952235-810d-4b45-becc-5ffea4d12149",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Mette Henriette",
+   "album": "Mette Henriette",
+   "year": 2015,
+   "label": "ECM Records",
+   "faction": "nordic",
+   "why": "挪威女薩克斯風手、作曲家 Mette Henriette 的 ECM 雙專輯首作，室內樂與爵士即興的新世代之聲。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/68e4cf0f-a128-410f-a618-9f4b8364ec9c"
+   ],
+   "mbRgMbid": "68e4cf0f-a128-410f-a618-9f4b8364ec9c",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "EABS",
+   "album": "Repetitions (Letters to Krzysztof Komeda)",
+   "year": 2017,
+   "label": "Astigmatic Records",
+   "faction": "poland",
+   "why": "波蘭 EABS 向 Komeda 致敬的 spiritual jazz／beat 風格代表作，東歐新世代爵士復興的標誌。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f14d13ac-741e-463d-a887-adaca63baaf8"
+   ],
+   "mbRgMbid": "f14d13ac-741e-463d-a887-adaca63baaf8",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "EABS",
+   "album": "Slavic Spirits",
+   "year": 2019,
+   "label": "Astigmatic Records",
+   "faction": "poland",
+   "why": "EABS 融合斯拉夫民俗、spiritual jazz 與 hip-hop 節奏的概念專輯，Astigmatic Records。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/98f0a48c-4979-486c-8581-af1d131b3ece"
+   ],
+   "mbRgMbid": "98f0a48c-4979-486c-8581-af1d131b3ece",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Kuba Więcek Trio",
+   "album": "Multitasking",
+   "year": 2019,
+   "label": "Warner Music Poland",
+   "faction": "poland",
+   "why": "波蘭薩克斯風手 Kuba Więcek Trio 的 Warner Music Poland 作品，波蘭新世代爵士跨界代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/42d942a2-09fa-446f-a056-5e2d73ca9a38"
+   ],
+   "mbRgMbid": "42d942a2-09fa-446f-a056-5e2d73ca9a38",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Wacław Zimpel",
+   "album": "Lines",
+   "year": 2016,
+   "label": "Instant Classic",
+   "faction": "poland",
+   "why": "波蘭單簧管手 Wacław Zimpel 的個人作品，波蘭前衛／即興爵士新世代。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b0a57cc-c373-4bf7-b518-edbe1e4e0b1f"
+   ],
+   "mbRgMbid": "1b0a57cc-c373-4bf7-b518-edbe1e4e0b1f",
+   "poolHas": 0,
+   "uncertain": "MB 最早版本無廠牌，label 暫填 Instant Classic（MB 另一版本），需再核"
+  },
+  {
+   "artist": "Tomasz Stańko New York Quartet",
+   "album": "Wisława",
+   "year": 2013,
+   "label": "ECM Records",
+   "faction": "poland",
+   "why": "Tomasz Stańko New York Quartet 向詩人 Wisława Szymborska 致敬的 ECM 專輯，波蘭爵士老將在新世代場景的核心之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d56df434-9086-4155-9dd1-5c37a60cb57d"
+   ],
+   "mbRgMbid": "d56df434-9086-4155-9dd1-5c37a60cb57d",
+   "poolHas": 14,
+   "uncertain": ""
+  },
+  {
+   "artist": "Shake Stew",
+   "album": "Gris Gris",
+   "year": 2019,
+   "label": "Traumton Records",
+   "faction": "dach",
+   "why": "奧地利 Shake Stew 七重奏（雙貝斯、雙鼓）以非洲律動與 spiritual jazz 打造的歐陸新世代代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/650d89d8-e93c-4d7f-a6a9-305a8ae61ef6"
+   ],
+   "mbRgMbid": "650d89d8-e93c-4d7f-a6a9-305a8ae61ef6",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Shake Stew",
+   "album": "The Golden Fang",
+   "year": 2017,
+   "label": "Traumton Records",
+   "faction": "dach",
+   "why": "Shake Stew 首張完整樂團專輯，奧地利爵士界的突破作，Traumton Records。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5141c0b2-ced5-4f3c-b79c-36f98679d099"
+   ],
+   "mbRgMbid": "5141c0b2-ced5-4f3c-b79c-36f98679d099",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Christian Lillinger",
+   "album": "Konus",
+   "year": 2022,
+   "label": "Plaist",
+   "faction": "dach",
+   "why": "德國鼓手 Christian Lillinger 的前衛爵士作品，Plaist 發行，歐洲 free／avant 新世代中的核心人物。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f394edae-a1bd-49cd-8d2e-91b22a3984e2"
+   ],
+   "mbRgMbid": "f394edae-a1bd-49cd-8d2e-91b22a3984e2",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Michael Wollny Trio",
+   "album": "Weltentraum",
+   "year": 2014,
+   "label": "ACT",
+   "faction": "dach",
+   "why": "德國鋼琴家 Michael Wollny Trio 的 ACT 代表作，歐洲鋼琴三重奏新浪潮中最受矚目的一張。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d9aef5c9-e9b0-4a2f-b9b0-6f6614aeac38"
+   ],
+   "mbRgMbid": "d9aef5c9-e9b0-4a2f-b9b0-6f6614aeac38",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Nik Bärtsch's Ronin",
+   "album": "Awase",
+   "year": 2018,
+   "label": "ECM Records",
+   "faction": "dach",
+   "why": "瑞士 Nik Bärtsch's Ronin 的 ECM 作品，「zen-funk」極簡律動與爵士的當代代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/79633326-6602-4c57-94c8-fcc043b54f50"
+   ],
+   "mbRgMbid": "79633326-6602-4c57-94c8-fcc043b54f50",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Colin Vallon Trio",
+   "album": "Le Vent",
+   "year": 2014,
+   "label": "ECM Records",
+   "faction": "dach",
+   "why": "瑞士 Colin Vallon Trio 的 ECM 作品，留白與氛圍式新世代鋼琴三重奏的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/88c1389c-207d-44e2-a977-417a6a671908"
+   ],
+   "mbRgMbid": "88c1389c-207d-44e2-a977-417a6a671908",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "STUFF.",
+   "album": "Old Dreams New Planets",
+   "year": 2017,
+   "label": "buteo buteo",
+   "faction": "dach",
+   "why": "比利時 STUFF. 結合爵士、hip-hop 與電子的樂團作品，歐洲 Gent 場景新世代爵士代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/cb24d368-5ac0-4b4e-9c20-4e39619a8fbd"
+   ],
+   "mbRgMbid": "cb24d368-5ac0-4b4e-9c20-4e39619a8fbd",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "De Beren Gieren",
+   "album": "One Mirrors Many",
+   "year": 2015,
+   "label": "Clean Feed",
+   "faction": "dach",
+   "why": "比利時 De Beren Gieren 的 Clean Feed 作品，歐陸新世代爵士中的實驗與室內即興之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ba97486-dc83-4278-8a15-e70aa9098c79"
+   ],
+   "mbRgMbid": "6ba97486-dc83-4278-8a15-e70aa9098c79",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Laurent Bardainne & Tigre d'Eau Douce",
+   "album": "Love Is Everywhere",
+   "year": 2020,
+   "label": "Heavenly Sweetness",
+   "faction": "france",
+   "why": "Laurent Bardainne & Tigre d'Eau Douce 的 Heavenly Sweetness 作品，法國新世代爵士與 funk／電子交融的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5cf5d1df-5aa1-44d4-b166-ade9f9c1c9f5"
+   ],
+   "mbRgMbid": "5cf5d1df-5aa1-44d4-b166-ade9f9c1c9f5",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Thomas de Pourquery & Supersonic",
+   "album": "Play Sun Ra",
+   "year": 2014,
+   "label": "Quark Records",
+   "faction": "france",
+   "why": "Thomas de Pourquery & Supersonic 向 Sun Ra 致敬之作，法國新世代 spiritual jazz 復興的開端。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f06e51f3-be55-46b3-86c0-417fa89dd889"
+   ],
+   "mbRgMbid": "f06e51f3-be55-46b3-86c0-417fa89dd889",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Thomas de Pourquery & Supersonic",
+   "album": "Sons of Love",
+   "year": 2016,
+   "label": "Label Bleu",
+   "faction": "france",
+   "why": "Thomas de Pourquery & Supersonic 的原創代表作，Label Bleu，法國當代爵士的重要專輯。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f828bbb8-9284-4f31-86d1-29caf9128f28"
+   ],
+   "mbRgMbid": "f828bbb8-9284-4f31-86d1-29caf9128f28",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Anne Paceo",
+   "album": "Bright Shadows",
+   "year": 2019,
+   "label": "Laborie Jazz",
+   "faction": "france",
+   "why": "法國女鼓手、作曲家 Anne Paceo 的 Laborie Jazz 代表作，法國新世代爵士的領航者之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2201b415-db64-46e5-b42c-039f32ac8f5a"
+   ],
+   "mbRgMbid": "2201b415-db64-46e5-b42c-039f32ac8f5a",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Sélène Saint-Aimé",
+   "album": "Mare Undarum",
+   "year": 2020,
+   "label": "Komos",
+   "faction": "france",
+   "why": "馬丁尼克裔法國貝斯手 Sélène Saint-Aimé 的首作，加勒比節奏與當代爵士的融合。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ed949e89-7388-4fa1-b794-beb421a57577"
+   ],
+   "mbRgMbid": "ed949e89-7388-4fa1-b794-beb421a57577",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Vincent Peirani",
+   "album": "Living Being",
+   "year": 2015,
+   "label": "ACT",
+   "faction": "france",
+   "why": "法國手風琴家 Vincent Peirani 的 ACT 代表作，法式新世代爵士跨界與室內即興的典型。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c2aa4be4-758a-4d7f-bf65-a84adb81d39f"
+   ],
+   "mbRgMbid": "c2aa4be4-758a-4d7f-bf65-a84adb81d39f",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Émile Parisien Quintet",
+   "album": "Sfumato",
+   "year": 2016,
+   "label": "ACT",
+   "faction": "france",
+   "why": "法國高音薩克斯風手 Émile Parisien 與德國鋼琴巨匠 Joachim Kühn 的 ACT 五重奏專輯，歐陸新世代的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a898a20-0d03-445f-94d3-3374b1b83cf6"
+   ],
+   "mbRgMbid": "3a898a20-0d03-445f-94d3-3374b1b83cf6",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Bokani Dyer Trio",
+   "album": "Neo Native",
+   "year": 2018,
+   "label": "Dyertribe Music",
+   "faction": "africa",
+   "why": "南非鋼琴家 Bokani Dyer Trio 的作品，南非新世代爵士與非洲節奏的融合。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7d131df-08f8-4c08-b811-492d07e67197"
+   ],
+   "mbRgMbid": "f7d131df-08f8-4c08-b811-492d07e67197",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Thandi Ntuli",
+   "album": "Exiled",
+   "year": 2018,
+   "label": "self-released (Ndlela Music Company)",
+   "faction": "africa",
+   "why": "南非鋼琴家、作曲家 Thandi Ntuli 的第二張專輯，南非新世代 spiritual jazz 與 Afro-futurism 代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0b126544-bc62-4aa1-831e-67da1b137fd6",
+    "https://thandintuli.bandcamp.com/album/exiled"
+   ],
+   "mbRgMbid": "0b126544-bc62-4aa1-831e-67da1b137fd6",
+   "poolHas": 0,
+   "uncertain": "無傳統廠牌：自行發行（出版方 Ndlela Music Company），MB 無廠牌資料"
+  },
+  {
+   "artist": "Asher Gamedze",
+   "album": "Dialectic Soul",
+   "year": 2020,
+   "label": "On the Corner",
+   "faction": "africa",
+   "why": "南非鼓手 Asher Gamedze 首作，On the Corner Records，自由爵士與南部非洲左翼文化敘事的新世代作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e6ea774e-a52b-480a-9751-7c2078618a3e"
+   ],
+   "mbRgMbid": "e6ea774e-a52b-480a-9751-7c2078618a3e",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Samuel Yirga",
+   "album": "Guzo",
+   "year": 2012,
+   "label": "Real World Records",
+   "faction": "africa",
+   "why": "衣索比亞鋼琴家 Samuel Yirga 的 Real World 首作，新世代 Ethio-jazz 與傳統音樂的結合。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/52a579ed-58e4-4e65-9613-e63430811a30"
+   ],
+   "mbRgMbid": "52a579ed-58e4-4e65-9613-e63430811a30",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Anouar Brahem",
+   "album": "Blue Maqams",
+   "year": 2017,
+   "label": "ECM Records",
+   "faction": "africa",
+   "why": "突尼西亞烏德琴大師 Anouar Brahem 與 Dave Holland、Jack DeJohnette、Django Bates 合作的 ECM 專輯，中東／北非與爵士的當代對話。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc7849e3-3d9f-428b-befc-18f99654ec62"
+   ],
+   "mbRgMbid": "bc7849e3-3d9f-428b-befc-18f99654ec62",
+   "poolHas": 3,
+   "uncertain": ""
+  },
+  {
+   "artist": "Shai Maestro Trio",
+   "album": "The Road to Ithaca",
+   "year": 2013,
+   "label": "Laborie Jazz",
+   "faction": "israel",
+   "why": "以色列鋼琴家 Shai Maestro Trio 的首張三重奏專輯，以色列新世代鋼琴爵士的重要起點。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f2123c81-318b-4877-9395-eb80337c2b39"
+   ],
+   "mbRgMbid": "f2123c81-318b-4877-9395-eb80337c2b39",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Shai Maestro Trio",
+   "album": "The Stone Skipper",
+   "year": 2016,
+   "label": "Sound Surveyor Music",
+   "faction": "israel",
+   "why": "Shai Maestro Trio 的成熟之作，獲歐洲樂評高度評價的新世代鋼琴三重奏。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b9d3220f-5b51-4c48-9c13-f915728ec95e"
+   ],
+   "mbRgMbid": "b9d3220f-5b51-4c48-9c13-f915728ec95e",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Yonathan Avishai",
+   "album": "Joys and Solitudes",
+   "year": 2019,
+   "label": "ECM Records",
+   "faction": "israel",
+   "why": "以色列裔鋼琴家 Yonathan Avishai 的 ECM 三重奏專輯，新世代鋼琴爵士的內斂代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/15a7a03b-a797-4202-9738-5cbb93b3f25b"
+   ],
+   "mbRgMbid": "15a7a03b-a797-4202-9738-5cbb93b3f25b",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Omer Avital",
+   "album": "Abutbul Music",
+   "year": 2016,
+   "label": "Jazz Village",
+   "faction": "israel",
+   "why": "以色列貝斯手、作曲家 Omer Avital 結合中東音樂與爵士的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8090e2a2-28ef-45b5-b8e4-cff1897d1a5b"
+   ],
+   "mbRgMbid": "8090e2a2-28ef-45b5-b8e4-cff1897d1a5b",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Gilad Hekselman",
+   "album": "Hearts Wide Open",
+   "year": 2010,
+   "label": "Le Chant du Monde",
+   "faction": "israel",
+   "why": "以色列吉他手 Gilad Hekselman 的專輯，與 Mark Turner 等人合作，紐約新世代吉他爵士的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/748b1555-b3bd-49b4-9204-e42fbd4ca690"
+   ],
+   "mbRgMbid": "748b1555-b3bd-49b4-9204-e42fbd4ca690",
+   "poolHas": 0,
+   "uncertain": "MB 最早發行標註 Le Chant du Monde，與美國版發行方不同，廠牌需再核"
+  },
+  {
+   "artist": "Antonio Sánchez",
+   "album": "Three Times Three",
+   "year": 2014,
+   "label": "CAM Jazz",
+   "faction": "latam",
+   "why": "墨西哥鼓手 Antonio Sánchez 的 CAM Jazz 專輯，2010 年代拉丁／美國爵士鼓手代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5772847e-5bc9-41fc-8dda-d4eda648e667"
+   ],
+   "mbRgMbid": "5772847e-5bc9-41fc-8dda-d4eda648e667",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Amaro Freitas",
+   "album": "Rasif",
+   "year": 2018,
+   "label": "Far Out Recordings",
+   "faction": "latam",
+   "why": "巴西鋼琴家 Amaro Freitas 的 Far Out Recordings 作品，巴西新世代鋼琴爵士的代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3d86094-2dd1-48ba-a81a-98ce0a8f96f9"
+   ],
+   "mbRgMbid": "c3d86094-2dd1-48ba-a81a-98ce0a8f96f9",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Amaro Freitas",
+   "album": "Sankofa",
+   "year": 2021,
+   "label": "Far Out Recordings",
+   "faction": "latam",
+   "why": "Amaro Freitas 第三張專輯，Far Out Recordings，融合非洲裔巴西文化與爵士的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b872eb91-2b64-4598-aff5-0e6c9864348b"
+   ],
+   "mbRgMbid": "b872eb91-2b64-4598-aff5-0e6c9864348b",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Antonio Loureiro",
+   "album": "Só",
+   "year": 2018,
+   "label": "NRT",
+   "faction": "latam",
+   "why": "巴西作曲家、鼓手 Antonio Loureiro 的 NRT 作品，巴西新世代爵士與 MPB 的跨界之作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a0d7ac45-4176-4133-ab97-0f14e4f5e068"
+   ],
+   "mbRgMbid": "a0d7ac45-4176-4133-ab97-0f14e4f5e068",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Camila Meza",
+   "album": "Traces",
+   "year": 2016,
+   "label": "Sunnyside",
+   "faction": "latam",
+   "why": "智利歌手、吉他手 Camila Meza 的 Sunnyside 專輯，紐約新世代拉丁爵士。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3ea0c26f-0f3f-4a41-bb2f-c1558c057fde"
+   ],
+   "mbRgMbid": "3ea0c26f-0f3f-4a41-bb2f-c1558c057fde",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Roberto Fonseca",
+   "album": "Yo",
+   "year": 2012,
+   "label": "Jazz Village",
+   "faction": "latam",
+   "why": "古巴鋼琴家 Roberto Fonseca 的專輯，Jazz Village，古巴新世代爵士的國際代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a4886d8-f210-4578-9295-7789755a82f8"
+   ],
+   "mbRgMbid": "1a4886d8-f210-4578-9295-7789755a82f8",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Metá Metá",
+   "album": "MM3",
+   "year": 2016,
+   "label": "YB Music",
+   "faction": "latam",
+   "why": "巴西聖保羅 Metá Metá 的第三張專輯，融合自由爵士、桑巴與非洲裔巴西宗教音樂。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e9ce5e5-6cf0-4c9b-a8ef-fad7cd137ef2"
+   ],
+   "mbRgMbid": "3e9ce5e5-6cf0-4c9b-a8ef-fad7cd137ef2",
+   "poolHas": 0,
+   "uncertain": "MB 僅有年份 2016，廠牌多版本（YB Music、Jazz Village），label 暫填 YB Music，需再核"
+  },
+  {
+   "artist": "Daymé Arocena",
+   "album": "Nueva Era",
+   "year": 2015,
+   "label": "Brownswood Recordings",
+   "faction": "latam",
+   "why": "古巴歌手 Daymé Arocena 的 Brownswood Recordings 首作，古巴 Afro-Cuban jazz 新世代，爵士歌手作品。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b7056176-7d65-42d7-875d-ee768358292a"
+   ],
+   "mbRgMbid": "b7056176-7d65-42d7-875d-ee768358292a",
+   "poolHas": 0,
+   "uncertain": "歌手專輯，需確認是否算爵士（Brownswood 標為 jazz）"
+  },
+  {
+   "artist": "BADBADNOTGOOD",
+   "album": "Talk Memory",
+   "year": 2021,
+   "label": "XL Recordings",
+   "faction": "caau",
+   "why": "BADBADNOTGOOD 的 XL Recordings 作品，從 hip-hop 時期走向更純粹的爵士器樂演奏，補卡池關鍵一張。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/441eca34-2e70-4ecb-8b07-da009aa1680f"
+   ],
+   "mbRgMbid": "441eca34-2e70-4ecb-8b07-da009aa1680f",
+   "poolHas": 2,
+   "uncertain": ""
+  },
+  {
+   "artist": "The Necks",
+   "album": "Open",
+   "year": 2013,
+   "label": "ReR Megacorp",
+   "faction": "caau",
+   "why": "澳洲 The Necks 長篇即興爵士三重奏 2010 後代表作之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/432096c0-9d77-4190-a5fb-989cf1ee415f"
+   ],
+   "mbRgMbid": "432096c0-9d77-4190-a5fb-989cf1ee415f",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "The Necks",
+   "album": "Body",
+   "year": 2018,
+   "label": "Northern Spy",
+   "faction": "caau",
+   "why": "The Necks 的 Northern Spy 作品，澳洲前衛爵士三重奏近年代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/471598c0-b5e3-4928-9289-98eeef4cad6e"
+   ],
+   "mbRgMbid": "471598c0-b5e3-4928-9289-98eeef4cad6e",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Christine Jensen",
+   "album": "Treelines",
+   "year": 2010,
+   "label": "Justin Time Records",
+   "faction": "caau",
+   "why": "加拿大薩克斯風手、作曲家 Christine Jensen 的大樂團作品，Justin Time Records，加拿大新世代爵士大樂團代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5c6b9c25-3b02-49f8-b641-1d166cbd606f"
+   ],
+   "mbRgMbid": "5c6b9c25-3b02-49f8-b641-1d166cbd606f",
+   "poolHas": 0,
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "全部專輯皆以 MusicBrainz release-group 查證：年份取 first-release-date、廠牌取最早發行版本，MBID 已核；去重指令 53 張全為 0。",
+  "卡池已有 3 張以上而僅補關鍵一張：Tomasz Stańko（卡池 14 張，全是 2010 前，補 Wisława 2013）、Anouar Brahem（3 張，補 Blue Maqams 2017）、BADBADNOTGOOD（2 張，補 Talk Memory）。卡池 poolHas 以藝人名完全比對。",
+  "已排除（卡池已足）：Marcin Wasilewski Trio（卡池 6 張）、Nduduzo Makhathini（4）、Avishai Cohen 貝斯（5）、Mulatu（3）、Hailu Mergia（3 含 Lala Belu）、Yaron Herman（3）、Harold López-Nussa（2）、Tigran Hamasyan（3）。",
+  "已排除（MB 查無或不屬爵士）：Laneous（neo-soul）、Siyabonga Mthembu（MB 無結果）、Black Flower、Kyle Shepherd、Maciej Obara（MB 查無對應 RG）、The Necks《Aether》（2001，不符年份）、Hamilton de Holanda《Bossa Negra》（與 Diogo Nogueira 的合輯式作品）。",
+  "總數 53，略多於目標 45。若主線需瘦身，建議優先砍（影響最小）：Kuba Więcek、Wacław Zimpel、De Beren Gieren、Metá Metá、Daymé Arocena（歌手）、Antonio Loureiro、Mette Henriette、Elephant9。",
+  "跨組注意：Marius Neset 的 Birds 由 Edition Records 發行、班底含英國樂手（Ivo Neame、Jasper Høiby、Anton Eger），可能與 a 組（英國）重疊；Neset 為挪威人，本組保留。Gilad Hekselman、Shai Maestro、Omer Avital、Antonio Sánchez、Camila Meza 長居紐約，可能與 b 組（美國）重疊，主線合併時以先到者為準。",
+  "身分：MB 正規名中的 ’ 與 U+2010 已改為 ASCII；Laurent Bardainne & Tigre d'Eau Douce 用 ASCII 單引號。Stańko 與 Thomas de Pourquery 的藝人欄沿 MB 署名（New York Quartet、& Supersonic），入庫時可能需對齊卡池既有的 Tomasz Stańko 寫法。",
+  "唯一疑點專輯：Thandi Ntuli《Exiled》為自行發行（MB 無廠牌；Bandcamp 發行日 2018-02-01）；Metá Metá《MM3》MB 僅年份且多廠牌；Gilad Hekselman《Hearts Wide Open》最早廠牌 Le Chant du Monde 需再核。WebSearch 用 1 次（上限 8）。"
+ ]
+}
