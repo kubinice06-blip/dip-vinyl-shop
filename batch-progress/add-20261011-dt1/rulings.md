@@ -39,3 +39,16 @@
 - **8988** DeepChord presents Echospace《Liumin》：策展層『Deepchord 與 Intrusion 的聯手』不精確，Echospace 是 Rod Modell + Stephen Hitchell，Intrusion 是 Hitchell 個人名義。首批雙碟，第二片《Liumin Reduced》為限定贈品。Discogs 備註『取自東京上空乙太』是風格化文案，是否真有東京田野錄音未查證，寫作層只寫『版本備註提到東京』。Headphone Commute 評論（BCN Dub、Maglev 為亮點）Cloudflare 403 未開啟，不採。『更柔和』無來源，不寫。
 - **8989** Fenin《Grounded》**thin**：Fenin = Lars Fenin（漢堡出身、柏林活動、雷鬼吉他手出身，Discogs 簡介），與 Mikael Stavöstrand 共同署名，人聲 Gorbi；其中〈No C.I.A.〉〈Thrill〉取自先前 EP。聲音描述僅靠風格標籤與人物背景，策展層『輕盈的和聲』無來源，不寫；寫作層『聲音』一句要保守。Dock-records（2008 起）與 ST. Echo 化名晚於或不直接關聯，不寫。
 - **8990** The Higher Intelligence Agency《Freefloater》：策展層『更偏 dub』部分成立——Discogs 風格標 IDM／Techno／Ambient 並無 Dub，是團隊官網與評論稱 ambient dub；寫作層用『ambient dub』，不要用 dub techno。樂評引文（Wired 的 Hari Kunzru、The Wire、AllMusic）取自團隊官網整理，寫作層用轉述不加引號；The Wire 稱『Birmingham duo』與維基以 Bobby Bird 為核心並不矛盾，寫作層寫『以 Bobby Bird 為核心』。Polar Sequences（1996）等後續為晚於發行的作品史，不寫。
+
+
+## 研究 b 組（8951–8960）
+- **8951** 研究 b 組 9 張交件：`desc-tools/batches/research/add-20261011-dt1-b.json`，facts 條數 10／9／10／9／9／11／12／9／12，status 全 full。WebSearch 5 次；其餘走 Discogs／MB API、WebFetch。直連維基 API 被 429 限流，改慢速重試與 WebFetch。
+- **8952** 推翻策展層：Tappa Zukie《in Dub》原盤廠牌是 **Stars**（SR 1000，Zukie 自設廠牌），不是 Klik（Klik 是他《M.P.L.A.》的英國廠牌）。混音工程師是 **Philip Smart**（在 King Tubby's 錄音室），不是 King Tubby 本人。年份 1976（MB、Discogs 原版、Blood & Fire 版權欄一致），維基藝人條目的 1977 單源不採。MB 的 1976 release 列 14 首，第 13、14 首其實是 1995 Blood & Fire CD 的加曲，原黑膠 12 首。
+- **8953** Goldmine Dub：製作人 Jah Lloyd、混音 Prince Jammy 在 King Tubby's、錄音 Channel One（Discogs 為主；某部落格寫 King Tubby，不採）。卡單現掛 MB 拼法 The Revolutionaires，不動。策展層『rockers 偏鬆』有部落格描述支持（鼓聲回音重、旋律樂器乾淨），chill 度維持中。
+- **8954** Scientist Wins the World Cup：製作人 Henry "Junjo" Lawes、Roots Radics 在 Channel One、Scientist 在 King Tubby's 混。原黑膠十首無曲名；Dangerous Match 編號、Extra Time、Golden Goal 屬 CD／後來版本，寫作層寫『十首』勿混。封面 6:1 擊敗英格蘭與『世界盃期間發行』出自 Flying Nun 唱片行文案單源。
+- **8955** Scientist Meets the Roots Radics：廠牌 Selena（非 Greensleeves 系列）；Flabba Holt 掛製作／編曲只有 Discogs 一源，寫作層用『唱片資料標示』口吻。年份 1982（MB／Discogs），部落格 1981 單源不採。
+- **8956** Cloak & Dagger：不是純 dub，維基引 Lloyd Bradley 稱為器樂與 dub 之間的過渡作；牙買加 1972 版與英國 1973 Rhino 版曲目不同（facts 已分寫），寫作層勿混。策展層『爵士味、慵懶』無樂評支持，寫作層以『器樂、McCook 與 Wright 領奏署名』為準。確切錄音室未查到，不寫。
+- **8957** Revolution Dub：策展層『冥想』不成立，來源描述是掉拍、極端左右聲道、電視對白取樣的荒誕不安感，chill 度中偏低，寫作層勿寫舒緩。曲數：維基與 1990 重發九首，1975 原版 Discogs／MB 列十首（B4 〈Black Hand〉無時長），行文避開曲數或寫九首。Stevie Wonder／Czukay／trip hop 影響出自維基專輯條目單一彙整源，行文用『據說』口吻。
+- **8958** Blazing Horns：製作人 King Sounds（Grove Music 創辦人 Roy Livingstone Plummer）與 Vivian Jackson (Yabby You)；Prince Jammy 於 King Tubby's 混音、Channel One 錄音。年份 1977（Roots Archives、MB、Discogs），Blood & Fire 重發備註的『1979』單源且與一手標示不合，不採。『最柔和』無樂評，只有 Orlando Weekly 對 B&F 合輯說『dubby atmospherics』。
+- **8959** Off the Beaten Track：策展層『比第一張更放鬆』無來源，來源是 funk-dub 加取樣拼貼，chill 度中。PopMatters 稱『第三張』『melodica』與維基／Discogs（第四張、didgeridoo）不合，從後者。評分（Christgau A−、PopMatters 8/10）不入 facts。
+- **8960** Songs of Praise：策展層『柔和代表作』無來源，來源描述是各地宗教吟唱疊 dub 與非洲打擊樂的儀式感，寫作層寫『儀式感』。封底感謝 Alan Lomax 屬實，但『取樣自 Lomax 錄音』查無來源，寫作層只能寫感謝與 Bonjo 自述的影響。
