@@ -107,3 +107,11 @@
 - **9008** 媒體與平台名一律不進正文（writer-base 2026-08-07／1982-B）：note 指名的 Pitchfork（e3 第二句「外人之口」改成「樂評把它排為…第二張錄音室專輯」）、RA（e2）、Trouser Press（d1）、Record Collector（c7）、XLR8R（d8）、BBC 樂評（e5）、Boomkat 文案（e4）、Wired／Hari Kunzru（e9）、維基（d4）、Discogs 風格欄（e7「風格被歸為」）全部改成「樂評／評論」或直述。c8 的「BBC 的 John Peel」是電台 DJ 打電話的主故事，不是評價，保留。c7 的 hook 已說「更沉穩」，評論那格只寫「比前作連貫」。
 - **9009** 身分補位（沿 8758，可逆）：c6／c7 hook 只指代稱，第二句補「roots dub 集體／團體」（取自 sound 欄）；d1 依 note「雷鬼還沒被推到極限」寫成「這套雷鬼專輯」；d4 補「兩組 dub 人馬」。d3、e1 照 8999 不補 facts 外的身分（Roots Manuva 不寫嘻哈）。d3 年份照 note 寫 1991（8974 的卡面年份仍待主線）。e5 依 8986 寫「第二張專輯、首度在 ~scape 出片」，不寫首張。c9 年代改寫「八〇年代中段」避開與 d3「1980 年代中期」撞 4-gram。
 - **9010** 自掃（han() 4-gram，本檔 22 張＋writer-1 定稿 23 張合掃，hook 原文一併計入）：涉及本檔的 2 張以上殘片 0 條。途中拆掉：首張專輯 ×4、的廠牌年 ×4、年由發行 ×3、的錄音室 ×3、英國發行 ×3、的第一張 ×3、廠牌發行 ×3、的第二張 ×3、左右聲道、錄音與混音、年代中期、發行的這套、錄音室錄、樂評形容、在自家錄、專輯年月日、牙買加的、推出這張、交給發行、共同掛名、年由英國、樂評則形容、自己的廠牌、間錄音室（d4 hook 原文，改 c9 的「錄音室」為「錄音棚」）、年由推出、年發行的這。
+
+## 主線（9011–9020）
+- **9011** 年份更正（研究層兩源以上）：Dub Syndicate《Stoned Immaculate》1992→1991（研究 c）、Alpha & Omega《Overstanding》1992→1991（研究 d 8974）。卡單已改，正文同。
+- **9012** 研究層 chill 度下修的幾張（Revolution Dub、Songs of Praise、Never Trust a Hippy、Roots and Wire、Horizontal Structures）照收：都是 dub 譜系的代表作，正文照研究稿寫實際聲音，不硬寫成放鬆。可逆。
+- **9013** 試聽 ready 41、unavailable 4（`preview-picks.json`，`preview-override.json` 逐筆理由）：二合一 CD 取對應段落的軌（African Dub Chapter 2 取第 13 軌、Living Dub Vol. 1 取 gb 店《Social Living / Living Dub》第 10 軌、Blazing Horns 與 Overstanding 取二合一的第 1 軌）；Chapter 1 改用專屬條目 309142491、Dread at the Controls 改用 8 軌原版 207318602。unavailable：Radical Dub Session、Scientist Wins the World Cup（原盤無曲名、Apple 無）、Cloak & Dagger（Apple 只有 4 軌 EP）、Rising Above Bedlam。
+- **9014** 封面：CAA 41 張縮圖表逐張目視皆為正確封套；另 4 張改源（`covers.json`）：Cloak & Dagger（CAA 是牙買加白標圈標 → Discogs 2986102 封套，同 1973 英國版設計）、Blazing Horns（CAA 無 → Discogs 1401571 原版）、Molam Dub（CAA 持續 500 → Apple 1583234746）、Goldmine Dub（CAA 無 → Apple 383341521）。Discogs 兩張已登錄 registry（292→294）。
+- **9015** 三軸：取 /album-rating 機器基線（廣度線冷門軸照 Last.fm listeners），經典 5 一律壓為 4（Joe Gibbs《Chapter 1》），不自動給殿堂。頂點 0 張：obscurity 5 的幾張（Cry Tuff、Blazing Horns、Radical Dub Session、Dub Me Crazy Pt. 2 等）listeners 低是因 Last.fm 盤名分歧，沒有遺珠級證據，不列 pearl。
+- **9016** 主線逐張審稿 45 張：無禁語、無轉述引導詞、無媒體名進正文（寫作層已把 Pitchfork 等改成「樂評」）；卡面年份與正文發行年逐張相符（Aswad 那張正文不寫發行年，不衝突）。未改字。

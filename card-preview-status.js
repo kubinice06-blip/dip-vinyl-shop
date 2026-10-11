@@ -2885,4 +2885,8 @@ window.DipPreviewStatus = Object.freeze({
   "カルメン・マキ&laff|laff": "unavailable",
   "小川知子|タッチ・ミー": "unavailable",
   "平山三紀|希望の旅": "unavailable",
+  "roots radics|radical dub session": "unavailable",
+  "scientist|scientist wins the world cup": "unavailable",
+  "the upsetters|cloak & dagger": "unavailable",
+  "jah wobble's invaders of the heart|rising above bedlam": "unavailable",
 });
