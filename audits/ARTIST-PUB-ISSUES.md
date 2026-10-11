@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1020 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1045 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1016,10 +1016,35 @@
 | ar-d-075 | 細野晴臣・鈴木茂・山下達郎 | Pacific | 末曲〈コズミック・サーフィン〉則是隔年 YMO 首張專輯同名曲的原型 | YMO 首張專輯《Yellow Magic Orchestra》1978 年 11 月 25 日（日本）發行，與《Pacific》（1978 年 6 月）同年，不是隔年；英文維基兩個頁面也都沒有寫兩版「原型」的關係，只能確認同名曲出現在兩張專輯，建議改成「同年稍後 YMO 首張專輯也收錄同名曲」。 | https://en.wikipedia.org/wiki/Yellow_Magic_Orchestra_(album) |
 | ar-d-075 | 葉啟田 | 愛拚才會贏 | 此曲後來廣受台灣各階層、中國大陸與海外華人喜愛 | 用語「中國大陸」違反 2026-09-29 店主裁定（稱中國一律寫「中國」）；建議改為「中國」。 | https://zh.wikipedia.org/zh-tw/%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F |
 | ar-d-075 | 葉啟田 | 愛拚才會贏 | 粵語版《勝志雙手創》由葉振棠主唱 | 中文維基〈愛拚才會贏〉條目寫的粵語版歌名是《勝利雙手創》（梁立人作詞、葉振棠主唱、ATV《我來自潮州》），上線簡介的「勝志」疑為筆誤；本位只讀到維基單頁的擷取，建議店主開頁核對後再改。 | https://zh.wikipedia.org/zh-tw/%E6%84%9B%E6%8B%BC%E6%89%8D%E6%9C%83%E8%B4%8F |
+| ar-d-076 | 風コーラス団 | 愛色の季節 | 條目的 credit 只有兩欄，兩欄都是編曲：細野晴臣與萩田光雄。 | CDJournal 與日文維基都記細野晴臣是這張專輯的製作人，並自己寫了〈リンドン〉；簡介只提編曲，容易讓讀者忽略製作人身分。屬遺漏，不算寫錯。 | https://www.cdjournal.com/news/-/52322 |
+| ar-d-076 | 黃乙玲 | 無字的情批 | 唱這批歌的她後來四次拿下金曲獎台語歌后。 | 中文維基與大紀元的得獎紀錄是 1999 年第 10 屆（《感謝無情人》）、2006 年第 17 屆、2009 年第 20 屆、2014 年第 25 屆；第 10 屆早於本張 1999 年 11 月 11 日的發行，本張之後只有三次得獎（含 2000 年第 11 屆本張入圍未得獎）。「後來四次」應改成「前後四次」或「後來三次」；第 10 屆確切頒獎月份本層未查到，請店主核對。 | https://zh.wikipedia.org/wiki/%E9%BB%83%E4%B9%99%E7%8E%B2 |
+| ar-d-076 | 龔秋霞 | 秋水伊人 | 其中五首正是她 1945 年在上海蘭心大戲院辦音樂會時挑出來唱的那幾支。 | 中文維基列的音樂會曲目為〈秋水伊人〉〈恨不相逢未嫁時〉〈春風野草〉〈薔薇處處開〉〈莫負今宵〉〈是夢是真〉，與卡片曲目〈莫忘今宵〉用字不同（維基另一處也寫〈莫忘今宵〉）；兩者是否同曲、卡上有哪五首重疊，本層未核對曲目表，請店主對照。屬待核，不確定。 | https://zh.wikipedia.org/wiki/%E9%BE%9A%E7%A7%8B%E9%9C%9E |
+| ar-d-076 | Afel Bocoum | Lindé | 〈Bombolo Liilo〉、〈Dakamana〉維持尼日河沿岸的慢擺律動 | Afropop 的評論把〈Bombolo Liilo〉形容為雷鬼風格的曲子、並有 Vin Gordon 長號，〈Dakamana〉同樣有 Vin Gordon；「維持尼日河沿岸的慢擺律動」可能過度簡化，兩曲都帶牙買加色彩。屬描述精準度問題，請店主對照音檔確認。 | https://old.afropop.org/articles/lindé |
+| ar-d-076 | Ahmet Kaya | Şafak Türküsü | 這是 Ahmet Kaya 的第三張專輯 | 英文維基寫 1986 年的專輯是他的第四張，土耳其文維基則列 1984 年《Ağlama Bebeğim》為首張，序數有出入且未能裁定；建議核對 Discogs 後修正或刪掉序數。 | https://en.wikipedia.org/wiki/Ahmet_Kaya |
+| ar-d-076 | Althea and Donna | Uptown Top Ranking | John Peel 放錯 B 面才紅起來 | Classic Pop 寫 Peel「完全是意外」播放（以正確轉速播，未提 B 面），Every UK Number One 寫他據說是當笑話播放，作者不認同這個說法；沒有任何來源說是放錯 B 面。建議改成「John Peel 在 BBC 電台播放後點播暴增」。 | https://classicpopmag.com/2017/03/one-hit-wonder-althea-donna-uptown-top-ranking |
+| ar-d-076 | Angkanang Kunchai With Ubon-Pattana Band | Isan Lam Plearn | 十六歲那年她唱紅〈Isan Lam Phloen〉……那是 1971 年的錄音 | EM Records 說明寫單曲 1971 年發行、Rush Hour 與搜尋結果寫 1972 年，沒有任何來源寫「錄音」年份，且兩源年份不一；建議改為「約 1971 至 1972 年的單曲」或刪年。 | https://emrecords.bandcamp.com/album/isan-lam-phloen |
 | ar-d-076 | Ashkhabad | City of Love | 1993 年他們成為第一個在 Peter Gabriel 的 Real World 發片的前蘇聯樂團 | 僅英文維基條目一句、無引註，Real World 官網兩頁都沒有此宣稱，找不到獨立來源；『第一』類宣稱建議刪去或改為『成為 Real World 早期發行的中亞樂團之一』之類可查證說法。 | https://en.wikipedia.org/wiki/Ashkhabad_(band) |
 | ar-d-076 | Ashkhabad | City of Love | Charykuliev 曾在取締伊斯蘭婚禮音樂的年代因繼續演奏而被關進精神病院 | 僅英文維基單源，該句無引註且用 reportedly；建議加『據稱』或改寫成中性說法。 | https://en.wikipedia.org/wiki/Ashkhabad_(band) |
 | ar-d-076 | Astor Piazzolla & Gerry Mulligan | Summit (Reunión Cumbre) | Piazzolla 早年在巴黎聽過 Mulligan 的八重奏 | 英文維基 Octeto Buenos Aires 條目寫的是 Mulligan 的 tentet（十重奏）；另一來源只寫 Mulligan，沒有編制，建議改寫成『聽過 Mulligan 的樂團』或『十重奏』。 | https://en.wikipedia.org/wiki/Octeto_Buenos_Aires |
 | ar-d-076 | Astor Piazzolla & Gerry Mulligan | Summit (Reunión Cumbre) | 義原盤日後在德國改名《Tango Nuevo》發行 | 維基只寫 1975 年 WEA 與 Atlantic 改名《Tango Nuevo》再版，沒有說在德國；『德國』查不到來源，建議刪去地名。 | https://en.wikipedia.org/wiki/Summit_(album) |
+| ar-d-076 | Aurelio | Laru Beya | 2006 至 2010 年間是該國國會史上第一位非裔議員 | 各來源對『第一』與年份不一：NPR 與維基稱 2005 年當選的首位非裔宏都拉斯國會議員，Real World 訃告只說『最早的幾位之一』，官網傳記寫 2006 年。建議改為『2005 年當選國會議員』或加『被稱為』。 | https://www.wfae.org/2025-03-19/honduran-musician-aurelio-martinez-has-died-at-55 |
+| ar-d-076 | Aurelio | Laru Beya | 2025 年 3 月，他在羅阿坦外海的空難中喪生 | 依店主『死因一律不寫』的規則，建議改為只寫『2025 年 3 月逝世』。事實本身有維基與 NPR 佐證。 | https://en.wikipedia.org/wiki/Aurelio_Mart%C3%ADnez |
+| ar-d-076 | Ballaké Sissoko & Vincent Segal | Chamber Music | Segal 出身法國國家管弦樂團 | hesge 校方簡介與英文維基的 Ségal 履歷只寫里昂國立高等音樂院與 Banff 進修，未見國家管弦樂團一說；來源待補 | https://hem.hesge.ch/evenements/vincent-segal |
+| ar-d-076 | Bismillah Khan & V.G. Jog | Duets | V. G. Jog 則是把小提琴引進印度斯坦體系的人 | Ken Hunt 的傳記文章只說他以印度調弦的小提琴為這件樂器爭取地位、改變聽眾看法，並未說他「引進」；北印度早有小提琴與 sarangi 並存競爭，「引進」說法過頭，建議改成「為小提琴在印度斯坦音樂中爭取地位」 | https://kenhunt.doruzka.com/?p=196 |
+| ar-d-076 | Bob Andy | Bob Andy's Song Book | 〈Too Experience〉 | 曲名應為〈Too Experienced〉（維基與 Reggaeville 都寫 Too Experienced） | https://en.wikipedia.org/wiki/Bob_Andy |
+| ar-d-076 | Boban Marković Orkestar | Srce cigansko | 1988至2001年間五度拿下「第一小號」 | 次數來源不一：維基與 Democrazy 寫五度（2001 年為第五次），Womex 寫 1988 年首度後再贏五次共六次；建議改為「多次」或保留五度但知其有爭議 | https://www.womex.com/virtual/generator/boban_and_marko |
+| ar-d-077 | Boubacar Traoré | Mariama | 1968 年政變後從廣播消失，務農、開店多年 | 本次開頁的來源（維基、encyclopedia.com、musiques-afrique、UCSD Guardian）都只說他有電台播出卻無唱片、無版稅而貧困，沒有一處提到 1968 年政變使他消失；encyclopedia.com 說 1975 年才返鄉開店務農。1968 政變這句建議改成來源可查的說法或刪掉 | https://encyclopedia.com/education/news-wires-white-papers-and-books/traore-boubacar |
+| ar-d-077 | Cheikh Lô | Né la thiass | 1978 年移居塞內加爾，後赴巴黎當樂手 | World Circuit 與 World Music Central 兩源都寫 1981 年移居達卡、1984 年赴巴黎；維基單獨寫 1978。年份有爭議，建議刪年份或改 1981。 | https://www.worldcircuit.co.uk/?p=20697 |
+| ar-d-077 | Cheikh Lô | Né la thiass | 1995 年 Youssou N'Dour 主動提議替他製作出道專輯 | 「出道專輯」不精確：World Circuit 與 World Music Central 都記他 1990 年已有第一捲卡帶《Doxandeme》（獲 Dakar 的 Nouveau Talent 獎），《Né la thiass》是首張國際發行專輯。 | https://worldmusiccentral.org/artist-profiles-cheikh-lo/ |
+| ar-d-077 | Cheikha Rimitti | Sidi Mansour | 找來 Robert Fripp、Red Hot Chili Peppers 的 Flea 與 Dead Kennedys 吉他手 East Bay Ray | 維基與 World Music Central 只列 Robert Fripp 與 Flea；Afropop 訪談中 Rimitti 另提到 Frank Zappa 的銅管組參與。East Bay Ray 的參與本層搜尋未能證實，建議對 Discogs／專輯 credits 再核。 | https://en.wikipedia.org/wiki/Cheikha_Rimitti |
+| ar-d-077 | Cornell Campbell | I Shall Not Remove: 1975-1980 | 靠〈The Gorgon〉與〈Natty Dread in a Greenwich Town〉走紅 | 歌名應為〈Natty Dread in a Greenwich Farm〉；維基、Reggaeville、Eats Drinks and Leaves 三源一致。 | https://www.reggaeville.com/artist-details/cornell-campbell/about/ |
+| ar-d-077 | Count Ossie & The Mystic Revelation of Rastafari | Grounation | 標題曲橫跨兩面近半小時 | 英文維基寫同名長曲超過 30 分鐘；僅單一來源、未見唱片實測，待核 | https://en.wikipedia.org/wiki/Count_Ossie |
+| ar-d-077 | Çudamani | The Seven-Tone Gamelan Orchestra from the Village of Pengosekan | 2001 年由加州廠牌 Vital Records(VR 440)發行 | A Green Man Review 頁面寫該專輯 2002 年由 Vital Records 發行，與卡池 2001 不一致；錄音日 2000 年 7 月 27 日也未能驗證，待以廠牌或 Discogs 核對 | https://agreenmanreview.com/music-2/cudamani-the-seven-tone-gamelan-orchestra-from-the-village-of-pengosekan-bali/ |
+| ar-d-077 | Derrick Morgan | Forward March | 〈Housewife's Choice〉是他 1962 年的暢銷曲 | 英文維基寫這首是 1960 年七首同榜之後的『次年』即 1961 年推出的最大暢銷曲；Observer 與 Dancehall Mag 未給年份，單一來源，建議本機再查 Beverley's 原版發行年再決定是否改 | https://en.wikipedia.org/wiki/Derrick_Morgan |
+| ar-d-077 | Derrick Morgan | Forward March | 兩人隔空對罵到最後由政府安排合照收場 | 此句只見英文維基，且該句帶 citation needed；Observer 與 Dancehall Mag 兩篇都未提 Prince Buster，建議降為『對立持續到雙方支持者常起衝突』或刪去合照結尾 | https://en.wikipedia.org/wiki/Derrick_Morgan |
+| ar-d-077 | Dur-Dur Band | Volume 5 | 受麥可傑克森、Bob Marley 與寶萊塢電影歌曲影響 | Afropop 與 NPR 只確認 Michael Jackson 風格的律動與西方 funk、soul；Bob Marley 與寶萊塢未在可開頁的來源見到，建議本機再查或改窄 | https://afropop.org/articles/dur-dur-band-vol-5-awesome-tapes-from-africa |
+| ar-d-077 | Dur-Dur Band | Volume 5 | 也紅到衣索比亞、吉布地與肯亞 | 可開頁的來源（維基、Afropop、NPR）都沒有這個說法，來源待查 | https://en.wikipedia.org/wiki/Dur-Dur_Band |
+| ar-d-077 | Eddy Grant | Killer on the Rampage | 1964 年組成英國最早的混血樂團之一 The Equals | Diffuser、UK Music Reviews 與 AllMusic 皆寫 1965 年成軍，英文維基〈The Equals〉內文自相矛盾地寫 1964（又寫 1965，引 AllMusic）；建議改 1965 或不寫年份 | https://diffuser.fm/clash-police-on-my-back/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

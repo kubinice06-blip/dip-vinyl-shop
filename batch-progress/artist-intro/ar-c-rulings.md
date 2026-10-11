@@ -1121,3 +1121,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 審稿 4 處：鄭秀文「轉戰影壇最成功之一」改「成功例子」；阿杜「最深入人心之一」改「深入人心」；陳淑樺樂評人馬世芳改不具名；陳潔儀刪〈Home〉「最廣為人知、最受喜愛之一」。寫作層不寫許美靜（來源只有中英文維基）。
   - 保留：陳淑樺「據稱台灣第一張破百萬的國語唱片」（據稱，在世者唯一一處）；陳雷「被稱為首位站上新加坡室內體育館的閩南語歌手」（兩源）；蔡振南刻意吸石灰粉塵練沙啞嗓音（直接關係聲音，據說）；西田佐知子〈アカシアの雨がやむとき〉與安保鬥爭年代一句（背景）；陶喆、黃霑、周華健談陳淑樺，竹内まりや、松任谷由実、井上陽水談薬師丸ひろ子，盧廣仲談蔡振南（具名音樂人）。
 - 待本機（上線簡介）：沈文程《心事誰人知》百張最佳第 81 名查無可靠出處；河合奈保子《Daydream Coast》「David Foster 製作」應為編曲與演奏；洪榮宏赴日 13 歲／10 歲兩說；王傑簡介用中文數字；細野組《Pacific》「隔年 YMO 首張」應為同年；紫薇〈綠島小夜曲〉「第一首灌製唱片」與「綠島指台灣本島」各有異說；葉啟田簡介寫「中國大陸」需改「中國」、粵語版歌名「勝志／勝利」待核；陳雷《歡喜就好》「百萬張」只有單源、原始發行公司待核。
+
+## ar-d-076（2026-10-11）
+
+- 37 位上架（33 full、4 thin：靜婷、風コーラス団、Al Campbell、Alpha & Omega）。3 位不寫：龍千玉、Angkanang Kunchai With Ubon-Pattana Band、Armagideon（理由見下）。
+- 流行段至此寫完，本批後半起進入世界音樂段（A 至 B 字頭）。
+- 審稿修 10 處：
+  - out-1 審稿 5 處：顧媚刪〈情人的眼淚〉「那個年代最浪漫之一」（單源）；魏如萱刪喉嚨受傷；龔秋霞刪「最早與百代簽約之一」；Afel Bocoum 父親「當地最有名」改「知名」；Ahmet Kaya 刪「庫德認同的民族象徵」（政治只留起訴與出走一句）。另撤下龍千玉（沒有聲音事實，只剩歌廳秀場次與轉唱台語）。寫作層不寫 Angkanang Kunchai With Ubon-Pattana Band（全部事實轉自同一份復刻說明）。
+  - 保留：陳建騏談魏如萱（具名音樂人）；Alpha Blondy〈Brigadier Sabari〉寫被捕受虐經歷（歌曲題材，一句）；Alèmayèhu Eshèté 軍政府上台後夜生活結束（背景一句）。
+  - out-2 審稿 5 處：Aurelio 刪訃告「Garifuna 文化代言人與守護者」（單源），只寫 2025 年逝世（兩源）；Ayalew Mesfin、Ayub Ogada、Bob Andy 三處「最重要／最具影響力之一」改「重要／具影響力」；Beth Carvalho 刪 Zeca Pagodinho「90 年代最重要」。寫作層不寫 Armagideon（身分只有 Discogs 單頁，聲音只剩風格標籤）。
+  - 保留：Aurelio 國會議員一句（背景，不寫「第一位」）；Ayalew Mesfin 德爾格時期入獄與禁歌一句（背景）；Bebo Valdés 革命後衛兵與卡斯楚一段（本人回憶，背景一句）；Bismillah Khan 1947 年紅堡演奏；John Peel 談 Black Roots、Brinsley Forde 談 Aswad（具名音樂人與 DJ）。
+- 待本機（上線簡介）：風コーラス団 漏寫細野晴臣是製作人；黃乙玲「後來四次拿下金曲獎」時序待核；龔秋霞〈莫負今宵／莫忘今宵〉待核；Afel Bocoum 兩曲的節奏描述與樂評不合；Ahmet Kaya 專輯序數不一；Althea and Donna「John Peel 放錯 B 面」查無；Angkanang 錄音年應為發行年；Ashkhabad「第一個在 Real World 發片的前蘇聯樂團」與精神病院一事單源；Piazzolla & Mulligan「八重奏」應為十重奏、「在德國改名」查無；Aurelio「第一位非裔議員」各源不一，簡介寫了空難死因；Ballaké Sissoko & Vincent Segal「Segal 出身法國國家管弦樂團」查無；Bismillah Khan & V.G. Jog「Jog 把小提琴引進印度斯坦體系」說過頭；Bob Andy 曲名應為〈Too Experienced〉；Boban Marković「第一小號」五度／六度兩說。
