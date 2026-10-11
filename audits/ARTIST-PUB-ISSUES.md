@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 990 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 993 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -990,6 +990,9 @@
 | ar-d-071 | Robert Lester Folsom | Music and Dreams | 唱片出在 Abacus Records | Psychedelic Baby 專訪沒有確認 Abacus Records 這個廠牌，只說 Abacus 是他的樂團；Stereogum 與 Paste 也只寫自行壓製。建議改成『自行壓製』。 | https://www.psychedelicbabymag.com/2023/03/robert-lester-folsom-abacus-interview.html |
 | ar-d-071 | Roshan | Barsaat Ki Raat | 他事前取得兩人同意，原作者始終沒有正式掛名。 | 維基《Barsaat Ki Raat》寫的是製片 R. Chandra 據稱取得 Fateh Ali Khan 與 Mubarak Ali Khan 的許可（reportedly），不是 Roshan 本人；建議改成『據稱製片取得兩人同意』。 | https://en.wikipedia.org/wiki/Barsaat_Ki_Raat |
 | ar-d-071 | Siavash Ghomayshi | Farangis | 端上這筆發行年份記 1973、載體記卡帶、十軌；『名下二十個條目裡這一張最早』 | Siavash Ghomayshi 官方網站的生平寫〈Farangis〉是 1972 年發行的首支單曲，首張專輯是 1980 年的《Khaab-e-Baroon》；卡池這張 1973 年十軌卡帶的身分與年份待核，可能是單曲名被當成專輯名登錄。簡介描述的是 MusicBrainz 登錄值，不一定算錯，但『Farangis』在藝人本人的生平裡是單曲而非專輯。 | https://siavashghomayshi.org/Biography.html |
+| ar-d-072 | Tracey Thorn | A Distant Shore | 碟只花了 138 英鎊錄成。 | The Progressive Aspect 寫 167 英鎊（兩處搜尋摘要並存兩個數字）；成本數字不一致，建議本機核對來源後再決定改不改。 | https://theprogressiveaspect.net/blog/2024/10/27/tracey-thorn-a-distant-shore/ |
+| ar-d-073 | Véronique Sanson | Amoureuse | 這張唱片在法國拿下二白金認證 | 英文維基 Véronique Sanson 條目寫的是《Amoureuse》五個月內拿到 2× Gold（二金），不是二白金；認證層級待主線查 SNEP 後改。 | https://en.wikipedia.org/wiki/V%C3%A9ronique_Sanson |
+| ar-d-073 | 양희은 | 양희은 고운노래 모음 | 一九七五年底卻被朴正熙政權列為禁歌 | 禁曲年份各源不一：韓文維基寫 1974 年被列為禁曲（1973 年獲選健全歌謠）；Newsis 的金民基訃聞寫 1972 年 10 月維新之後成為禁曲。上線簡介的 1975 年底無法由本層查到的來源確認，建議店主以韓國禁曲政策史料（1975 年文公部大規模禁曲措施）確認後再決定是否修正；在此之前寫作層不要重述年份。 | https://www.newsis.com/view/NISX20240722_0002820834 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

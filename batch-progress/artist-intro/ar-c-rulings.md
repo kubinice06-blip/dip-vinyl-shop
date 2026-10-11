@@ -1074,3 +1074,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 稱呼：Owen Pallett 以姓名稱呼，不用性別代名詞。
 - 待查：Lô Borges 2025 年 11 月過世只見研究摘要，未標兩源，正文不寫生死，留待下次補查。
 - 待本機（上線簡介）：Mecano 法國榜連冠 8 週應為 7 週；Milli Vanilli 撤銷日期 19／20 日兩說、簡介用中文數字；Nino Bravo〈Puerta de amor〉非代表曲；Northern Picture Library 成軍 1993 應為 1992 年春；ORIGINAL LOVE《結晶》是第二張不是第三作；Paula Abdul「首位以出道作達成的女歌手」來源只支持「出道專輯最多冠軍」；Petula Clark「第一位獲葛萊美的英國歌手」站不住（同屆 Beatles 也得獎）；Robert Lester Folsom「約四十年後」（實為 34 年）、「東京」盜版與 Abacus Records；Roshan「事前取得兩人同意」主詞錯；Rodgers & Hammerstein 電影版新增兩首為 Rodgers 一人詞曲；Razorcuts 成軍年地待核；Siavash Ghomayshi 卡池卡帶的身分與年份待核。
+
+## ar-d-072（2026-10-11）
+
+- 37 位上架（32 full、5 thin：St. Christopher、The Groove Farm、The King of Luxembourg、The Pussycat Dolls、The Sweetest Ache）。3 位不寫：The Chesterfields、The Flatmates、The Crescendos（理由見下）。
+- 超額放行：Sugar Babe 第 9 次核對製作人說法未果，只多得一句單源評價，寫作層不採（齊豫先例）。
+- 審稿修 6 處：
+  - out-1 審稿 3 處：Thái Thanh 刪 Phạm Duy「最重要之一」；The Flamingos 刪「史上最出色、最有影響力之一」（留名人堂官方評語）；The Go-Go's 刪 Drew Barrymore 引介詞（在世者成績收斂）。另撤下 3 位：The Chesterfields、The Flatmates（聲音句只剩 C86／anorak pop 場景標籤）、The Crescendos（只剩「吉他樂團、改女主唱」編制）。
+  - 保留：Sugar Babe「《SONGS》常被放在 city pop 源流起點，也有論者歸給 Happy End」（兩源、兩說並陳）；The Go-Go's「被稱為第一張自寫自彈全女子樂團的專輯榜冠軍」（兩源）與 2026 國家錄音登記處（國會圖書館官方）；Khánh Ly 談 Thái Thanh、Dusty Springfield 與 Ellie Greenwich 談 The Exciters（具名音樂人）。
+  - out-2 審稿 3 處：The Shirelles 263→約 235（刪國家錄音登記名冊一句，非雙卡、專輯年份也有兩說）；TVXQ! 兩處「南韓」改「韓國」。
+  - 保留：The Shirelles「第一支登上 Billboard 流行榜冠軍的非裔美國女子團體歌曲」（兩源）與名人堂官方評語；The Housemartins 政治與信仰入詞一句（歌詞內容）；Morrissey 談 The June Brides、The Shop Assistants，Gary Usher 談 Curt Boettcher（具名音樂人）。
+- 身分：預抓維基作廢——Sugar Babe（山下達郎單曲）、The Crescendos（1957 年 Nashville 同名團）、The Millennium（千年消歧頁）、The Times（英國報紙）。研究層更正派工信：The Shop Assistants 是蘇格蘭愛丁堡、The Sweetest Ache 是威爾斯斯旺西。
+- 卡池年份存疑：The Shirelles 首張專輯卡池 1961，維基與國會圖書館專文作 1960。
+- 待本機（上線簡介）：The Mercy's「1965 年在棉蘭成立」（另一說 1969）；Tracey Thorn《A Distant Shore》成本 138／167 英鎊兩說；The 5th Dimension「白金單曲」未見認證記載。
