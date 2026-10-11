@@ -40,3 +40,19 @@
 - **9048** Esthero《Breath from Another》：Juno 1999 與 Polaris Heritage Prize 2016 皆『入圍未得獎』，逐項分開；經紀人姓名兩個維基條目不一致（Beau Randall／Beau Ovcaric），不寫人名；製作人 McKinney 來自明尼阿波利斯（美國），Esthero 為加拿大人；銷量只取『美國超過 10 萬、加拿大金唱片』。
 - **9049** Smoke City《Flying Away》：Marc／Mark Brown 以 Discogs 版權署名 Marc 為準；歌名盤面為 Aguas De Março（Discogs 無重音符）；Slant 榜單第 20 名僅間接取自維基，勿寫年份；專輯內頁署名繪畫者為 Miranda 的母親 Liz Thompson-Miranda（Discogs credits Painting）。
 - **9050** Martina Topley-Bird《Quixotic》：入圍 2003 Mercury（決選未得獎）、英國榜 #70；錄音地點維基同時寫洛杉磯與倫敦 Space Eko，寫作層要寫請並提；美國版《Anything》（Palm Pictures 2004）是改名重排版，不是本卡；David Arnold 客席未在 Discogs credits 找到對應，單一來源。
+
+## 研究 b 組（9031–9040）
+- **9031** 研究 b 組 9 張交件：`desc-tools/batches/research/add-20261011-dt2-b.json`，facts 條數 10／10／10／9／10／9／10／10／10，status 8 full、Kanka 1 thin。WebSearch 5 次，其餘走 MB／Discogs API、維基 API 與 WebFetch；AllMusic、BBC、Elsewhere.co.nz 抓取被擋，未引用。QA 研究 b 組無旗標。
+- **9032** 策展層下調（寫作層硬限制）：Jah Wobble & Laswell《Radioaxiom》策展層稱『dub 盤、節奏輕搖』，AllMusic（Thom Jurek，維基轉引）明言專輯並非特別受 dub 雷鬼影響，而是世界音樂加 groove jazz 的大雜燴；Dub Colossus《Addis Through the Looking Glass》策展層稱『dub 融合、柔和』，Rebelbase 樂評說 trippy dub 降到最低、重心在 Ethio-jazz。兩張寫作層一律不寫成純 dub 盤；是否仍留在『chill dub』線由主線決定（兩張仍屬 chill 世界音樂融合，我傾向留）。
+- **9033** Kanka《Dub Communication》status thin：無獨立樂評、專訪或廠牌稿，藝人背景只有法文維基單源；法文維基與宣傳頁描述 stepper 風格、節奏緊、貝斯重，與策展層『節奏放鬆』不符，建議主線考慮降優先或換成同廠牌更 chill 的盤；若保留，簡介只能寫發行資料與藝人路徑，不可編專輯故事。母帶人（ChrisB 或 Kanka）兩源衝突，不寫。
+- **9034** Divination 兩集：年份取 1993（MB／Discogs／維基），Trouser Press 列第二集為 1994，不採；Liu Sola 是否即作曲家劉索拉為推論，寫作層寫拉丁署名；Buckethead 只掛『效果』依維基人員表。Wobble 的〈Public Image〉貝斯線、Harris『被認為創出 grindcore』皆維基單源，寫作層用『被認為』口吻或略。
+- **9035** Dub Chamber 3：只收第三集，第一、二集歸屬與年份未查到可靠來源，不寫；〈A Screaming Comes Across the Sky〉疑似 Pynchon《Gravity's Rainbow》開篇句與〈Cybotron〉疑似同名底特律二人組，皆未驗證，不入 facts；ROIR 成立年維基內部矛盾（1979／1981），不寫年份。
+- **9036** Ott 兩張：《Blumenkraft》『flower power』標題解釋只有無法存取的維基鏡像支持，德文維基寫 Flower-Power 為『Macht der Blumen』，不寫；Cley Hill 與 Pilton 只寫地名事實，曲名取自這些地方的創作動機屬推論，寫作層只能寫『曲名同地名』。Twisted 創辦人為 Simon Posford 無獨立來源取得，hook 1 的『成績換來專輯』是推論，寫作層改寫成時序。《Mir》『五地錄音』僅 Discogs 版權頁單源，寫作層寫『專輯備註載明』。
+- **9037** Groundation《Dub Wars》：十首全是 Hebron Gate（五首）與 We Free Again（五首）的 dub 版（Discogs 版本備註），MB 類型 Album＋Remix 照主線裁定當 dub version 盤的 Album；Hebron Gate 年份各源 2002／2003 不一致，寫作層略去年份；Don Carlos、The Congos 是原專輯的客席，非 Dub Wars 的演出人員。Jim Fox 與 Marcus Urani 各混哪幾首無逐曲註明，不分配。
+- **9038** Dub Colossus 年份 2011（MB／Discogs），Qobuz 傳記稱北美 2012，取 2011；阿迪斯借房當錄音室的故事只有 World Music Central 單源。
+- **9039** 全組：facts 一律不寫『Dub Will Tear Us Apart』致敬 Joy Division 這類無來源推論，所有 9 張皆確認是原創專輯，無選輯、無重複卡。
+- **9040** 本組無推翻 MB 年份、廠牌、掛名或盤名之處；MB 與卡單三軸欄位無需改，策展層描述性質疑（Radioaxiom、Dub Colossus、Kanka 的 chill 程度）見 9032、9033。
+
+## 主線（9091–9100）
+- **9091** Kanka《Dub Communication》（研究 b：偏 stepper、節奏緊）、Jah Wobble & Bill Laswell《Radioaxiom》（世界音樂＋groove jazz）、Dub Colossus《Addis Through the Looking Glass》（Ethio-jazz 為主）：三張照收，留在 chill dub 線（dub 譜系的延伸，屬可逆）；寫作層照研究稿描述，不寫成純 dub 或「節奏放鬆」。
+- **9092** Olive《Extra Virgin》年份照研究 c 改 1996（Discogs master、英國 RCA 首版、維基三源；MB 1997 是登頂後重發）。卡單已改。
