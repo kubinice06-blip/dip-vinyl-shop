@@ -1062,3 +1062,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：Mariah 是日本清水靖晃的樂團，Marjan 是伊朗歌手 Shahla Safi Zamir（非荷蘭電音同名者），Marden Hill 預抓維基是鄉間宅邸已作廢。
 - 卡池年份存疑：Kelly Clarkson《Breakaway》卡池 2003，實為 2004 年 11 月。
 - 待本機（上線簡介）：IVE《REVIVE+》總長與〈In Your Heart〉曲長；Laura Pausini「19 歲」應為 18 歲；Laura Branigan 簡介年份用中文數字；Luis Miguel《Romance》銷量 700 萬／800 萬兩說；Marine Girls「十六首全在花園小屋錄成」過於肯定。
+
+## ar-d-071（2026-10-11）
+
+- 36 位上架（32 full、4 thin：Marta Kubišová、Men I Trust、Mild High Club、Rajie）。4 位不寫：Shahram Shabpareh（全部事實只出自英文維基）、Siavash Ghomayshi（官網與英文維基幾乎同文，無獨立來源）、Sanisah Huri（沒有任何聲音或做法的事實）、Sơn Ca（全部事實只出自越南文維基）。
+- 審稿修 11 處：
+  - out-1 審稿 6 處：Marta Kubišová 政治段落壓成一條主線（刪父親拒與政權合作、《七七憲章》），字數降到約 150，改列 thin；Michel Polnareff 刪「與 Gainsbourg 並列最重要的詞曲作者」；Miki Matsubara「最具代表」改「代表」；Olivia Newton-John 刪「史上最成功之一」；Owen Pallett 刪奧斯卡入圍（在世者只留 Polaris）；Paula Abdul 刪艾美獎（在世者只留出道專輯四首冠軍）。
+  - 保留：Paulo de Carvalho〈E Depois do Adeus〉成為康乃馨革命暗號（歌曲本身的事件，一句背景）；Milli Vanilli 對嘴風波與葛萊美被收回（事件本身，不寫成員死因與官司）；Lô Borges 2025 年 11 月過世只見摘要未標兩源，正文不寫生死。
+  - out-2 審稿 5 處：Raimonds Pauls 刪官方「影響力最大之一」只留「國寶與大師」；Ramesh「最具代表性之一」改「具代表性」；Roshan 278→約 230（刪「印度電影最好之一」「史上最有名」，非雙卡）；Salil Chowdhury 265→約 240（刪作品數，非雙卡）；Spandau Ballet 刪「新浪漫時期最成功之一」。另 Sơn Ca 審稿撤下（全部事實只出自越南文維基）。
+  - 保留：Richard Rodgers & Oscar Hammerstein II 270 字（搭檔雙人卡）；Spice Girls「史上銷量最高的女子團體」（兩源，在世者唯一一處）；S.E.N.S. 霹靂布袋戲一句以「有文章指出」限縮；Raimonds Pauls 文化部長一句（背景）；Salil Chowdhury 左翼劇團與抗議歌一句（背景）。
+- 稱呼：Owen Pallett 以姓名稱呼，不用性別代名詞。
+- 待查：Lô Borges 2025 年 11 月過世只見研究摘要，未標兩源，正文不寫生死，留待下次補查。
+- 待本機（上線簡介）：Mecano 法國榜連冠 8 週應為 7 週；Milli Vanilli 撤銷日期 19／20 日兩說、簡介用中文數字；Nino Bravo〈Puerta de amor〉非代表曲；Northern Picture Library 成軍 1993 應為 1992 年春；ORIGINAL LOVE《結晶》是第二張不是第三作；Paula Abdul「首位以出道作達成的女歌手」來源只支持「出道專輯最多冠軍」；Petula Clark「第一位獲葛萊美的英國歌手」站不住（同屆 Beatles 也得獎）；Robert Lester Folsom「約四十年後」（實為 34 年）、「東京」盜版與 Abacus Records；Roshan「事前取得兩人同意」主詞錯；Rodgers & Hammerstein 電影版新增兩首為 Rodgers 一人詞曲；Razorcuts 成軍年地待核；Siavash Ghomayshi 卡池卡帶的身分與年份待核。

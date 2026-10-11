@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 981 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 990 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -978,9 +978,18 @@
 | ar-d-070 | Luis Miguel | Romance | 本作全球銷量超過 700 萬張 | 英文維基 Luis Miguel 條目寫約 700 萬張，Romance 專輯條目寫超過 800 萬張，兩份資料不一致，銷量說法站不穩；建議改成不帶數字的寫法，或刪去這句。 | https://en.wikipedia.org/wiki/Romance_(Luis_Miguel_album) |
 | ar-d-070 | Marine Girls | Beach Party | 十六首歌全在一間花園小屋裡錄成 | 三份來源不一致：維基〈Beach Party (album)〉寫家庭錄音室，維基〈Marine Girls〉（Larkin）寫花園小屋，KEXP 寫 Pat Bermingham 的行動錄音室「有時」架在花園小屋；「全在」過於肯定，建議放寬為『在 Pat Bermingham 自家的錄音裝置（部分說法為花園小屋）錄成』 | https://www.kexp.org/podcasts/cobain50/2024/7/24/marine-girls-beach-party-1981/ |
 | ar-d-071 | Mecano | Descanso Dominical | 法國單曲榜連冠 8 週 | 法文版 Une femme avec une femme 在法國連續 7 週登頂（第 8 至 14 週）；8 週連冠是西班牙銷售榜的說法 | https://en.wikipedia.org/wiki/Une_femme_avec_une_femme |
+| ar-d-071 | Milli Vanilli | Girl You Know It's True | 葛萊美於同年十一月二十日撤銷該獎 | EBSCO 寫 1990 年 11 月 19 日；維基專輯條目引《洛杉磯時報》11 月 20 日的報導；日期有 19／20 兩說，建議改為「同年 11 月」 | https://www.ebsco.com/research-starters/music/lip-synching-duo-milli-vanilli-lose-grammy-award |
+| ar-d-071 | Milli Vanilli | Girl You Know It's True | 一九八九年、一九九○年、十一月二十日（年月日用中文數字） | 寫作規則年月日一律阿拉伯數字（1989 年、1990 年）；簡介用了中文數字 | https://en.wikipedia.org/wiki/Girl_You_Know_It%27s_True_(album) |
 | ar-d-071 | Nino Bravo | Nino Bravo (1971) | 代表曲改編自 Gene Pitney 的一首英文歌……那首〈Puerta de amor〉 | musica.com、hola.com、西班牙文維基列出的代表曲是〈Noelia〉〈Un beso y una flor〉〈Libre〉〈Cartas amarillas〉〈Te quiero, te quiero〉，沒有一處把〈Puerta de amor〉稱為代表曲；「代表曲」一詞建議改為「這張收錄的一首歌」或另有出處再留。 | https://www.musica.com/nino-bravo/biografia |
 | ar-d-071 | Northern Picture Library | Alaska | 這個團 1993 年由 Bobby Wratten 與 Anne Mari Davies 起頭 | LTM（樂團重發廠牌）官方傳記寫樂團 1992 年春天在 The Field Mice 解散數月後成形，《Alaska》1992 年 11 月至 1993 年 2 月錄音；1993 年是首支單曲與專輯發行年，不是成軍年。維基寫 1993，兩源不一，建議改為不寫成軍年或寫「1993 年推出首張專輯」。 | https://ltmrecordings.com/northern_picture_library.html |
+| ar-d-071 | ORIGINAL LOVE | 結晶 SOUL LIBERATION | ORIGINAL LOVE 第三作 | 日文維基、Universal Music Japan 商品頁、Tower Records Japan 商品頁皆稱《結晶 SOUL LIBERATION》是第二張專輯（1991 年的雙碟《LOVE! LOVE! & LOVE!》為出道專輯），「第三作」疑有誤。 | https://www.universal-music.co.jp/original-love/products/upjy-9170/ |
 | ar-d-071 | Petula Clark | Downtown | 同年第 7 屆葛萊美頒出最佳搖滾錄音獎，她又成為第一位獲頒葛萊美獎的英國歌手。 | 同一屆（第 7 屆，1965 年）Beatles 也得了最佳新人獎與最佳團體演唱獎，英國藝人並非由 Clark 首開；官方傳記只寫她是「第一位得兩座葛萊美的英國女性」。建議改成可查證的說法。 | https://en.wikipedia.org/wiki/7th_Annual_Grammy_Awards |
+| ar-d-071 | Razorcuts | Storyteller | 樂團 1984 年成立於倫敦 | 維基寫 1984 年倫敦；The New Vinyl Villain 部落格有貼文寫 1986 年 Oxford，且多數貼文寫 1984 或 1985 年，成軍年與地點各說不一，簡介的『1984 年、倫敦』只有維基單源，建議改成不帶年份的寫法或待核。 | https://thenewvinylvillain.com/category/razorcuts |
+| ar-d-071 | Richard Rodgers & Oscar Hammerstein II | The Sound of Music (An Original Soundtrack Recording) | 音樂與歌詞出自 Richard Rodgers 與 Oscar Hammerstein II | 電影版新增的〈I Have Confidence〉與〈Something Good〉因 Hammerstein 已於 1960 年過世，詞曲都由 Rodgers 一人完成；簡介後半雖提到換曲，但前句寫成兩人共同掛名，易被誤讀。建議補一句。 | https://en.wikipedia.org/wiki/The_Sound_of_Music_(soundtrack) |
+| ar-d-071 | Robert Lester Folsom | Music and Dreams | 有一批流到了東京，約四十年後被帶到布魯克林一家廠牌面前 | 專訪寫 McGowan 發現專輯時是有人在『日本』盜版，不是東京；重發是 2010 年（Stereogum、Paste、專訪一致），距 1976 年原版約 34 年，不是約四十年。建議改成『約三十多年後』並把東京改成日本。 | https://www.psychedelicbabymag.com/2023/03/robert-lester-folsom-abacus-interview.html |
+| ar-d-071 | Robert Lester Folsom | Music and Dreams | 唱片出在 Abacus Records | Psychedelic Baby 專訪沒有確認 Abacus Records 這個廠牌，只說 Abacus 是他的樂團；Stereogum 與 Paste 也只寫自行壓製。建議改成『自行壓製』。 | https://www.psychedelicbabymag.com/2023/03/robert-lester-folsom-abacus-interview.html |
+| ar-d-071 | Roshan | Barsaat Ki Raat | 他事前取得兩人同意，原作者始終沒有正式掛名。 | 維基《Barsaat Ki Raat》寫的是製片 R. Chandra 據稱取得 Fateh Ali Khan 與 Mubarak Ali Khan 的許可（reportedly），不是 Roshan 本人；建議改成『據稱製片取得兩人同意』。 | https://en.wikipedia.org/wiki/Barsaat_Ki_Raat |
+| ar-d-071 | Siavash Ghomayshi | Farangis | 端上這筆發行年份記 1973、載體記卡帶、十軌；『名下二十個條目裡這一張最早』 | Siavash Ghomayshi 官方網站的生平寫〈Farangis〉是 1972 年發行的首支單曲，首張專輯是 1980 年的《Khaab-e-Baroon》；卡池這張 1973 年十軌卡帶的身分與年份待核，可能是單曲名被當成專輯名登錄。簡介描述的是 MusicBrainz 登錄值，不一定算錯，但『Farangis』在藝人本人的生平裡是單曲而非專輯。 | https://siavashghomayshi.org/Biography.html |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
