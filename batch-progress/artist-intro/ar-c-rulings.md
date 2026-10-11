@@ -915,3 +915,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## 第八輪二十批接力（ar-d-064～083，2026-10-10 起）
 
 - 範圍：民謠段 R 字頭之後、流行段、世界音樂段，以及電子段開頭。沿用第三至七輪的審稿規則、thin 門檻與裁定形狀（含第七輪新增：只剩影響名單或曲目題材不寫）。
+
+## ar-d-064（2026-10-11）
+
+- 39 位上架（32 full、7 thin：Ryley Walker、Sam Amidon、She & Him、Shu-De、Stone Angel、Synanthesia、The Avett Brothers），1 位不寫：Sandy Harless（全部事實只出自 Numero 廠牌兩頁，身分無獨立出處）。
+- 審稿修 9 處：字數——Simon Finn 258→242、Steve Tilston 265→216（刪 BBC 民謠獎）、Steve Goodman 259→246（皆非雙卡）；最高級刪改——S.E. Rogie「西非最受歡迎之一」、Šaban Bajramović「國際評價最高之一」、Sérgio Godinho「最具影響力、最受推崇之一」、Seth Lakeman「開風氣之先」、Davy Graham「最具影響力之一」、The Carter Family「20 世紀初最重要之一」。
+- 保留：Roscoe Holcomb 的 Bob Dylan 說法；Shirley Collins & Davy Graham 的 Billy Bragg 說法；Snuffy Jenkins 的 Ralph Stanley、Don Reno 說法；Simon Joyner 的 Conor Oberst 說法；Sweeney's Men「被視為第一位引進 bouzouki」（兩源）；The Carter Family「鄉村音樂名人堂第一個入選的團體」（官方）；Tenores di Bitti UNESCO 2008 年列入（官方）；Suzanne Vega「MP3 之母」稱號。
+- 身分：Skara Brae 維基預抓為奧克尼遺址，已作廢；Sisa 是加泰隆尼亞的 Jaume Sisa；Satwa 是 Lula Côrtes e Lailson 的唯一專輯；Sandy Harless 另有同名女性布道歌手，未收。
+- 卡池年份存疑：Stone Angel 卡池 1974，錄音 1975 年 2 月、Seashell 1975 年發行。
+- 待本機（上線簡介）：Rosanne Cash「史上第一位單張四冠的女性鄉村歌手」只見本人說法；SamulNori「1993 年解散」與 Korea Times 推算不合；Seals & Crofts 簡介半形逗號；Seth Lakeman 簡介「全片」用語；Shu-De「圖瓦喉音 2009 年列入 UNESCO」錯（官方是蒙古申報、2010）；Sibylle Baier「兒子整理成 CD」細節兩說；Tenores di Bitti「2005 年列入」應為 2008、簡介半形標點需重排；The Albion Country Band 發行月份應為 1976 年 4 月；Sweeney's Men「Woods 進了 The Pogues」無據。
