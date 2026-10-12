@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 4 批上架（add-20261011-dt4，44 張；卡池 19,030 → 19,074）
+
+- **本批內容**：歐陸 downtempo／Balearic／nu-jazz（Bebel Gilberto、José Padilla、Bent、Thunderball、Tosca ×2、Boozoo Bajou、Christian Prommer's Drumlesson、Beanfield、Mo' Horizons、Lali Puna、dZihan & Kamien、Waldeck、Beady Belle、Nils Petter Molvær、Bugge Wesseltoft、Koop、Erlend Øye、Flunk、Hocus Pocus、Gotan Project、Nouvelle Vague、Llorca、Kid Loco、Télépopmusik、Nicola Conte、Gabin）、地中海與拉丁（Dead Combo、Imam Baildi、The Dining Rooms、Chambao、Mark Barrott、A Man Called Adam、Quiet Village、Ultramarine、Suba、Federico Aubele ×2、Bajofondo Tango Club、Zuco 103、Bossacucanova、Cibelle、Skalpel、Da Lata）。
+- **產線**：研究 5 組（39 full／5 thin）→ 鉤子 2 組 → 寫作 2 組（145–240）→ 主線審稿刪 1 句含混敘述。無刪卡；廠牌更正 5 張（改為首發廠牌）。
+- **封面**：CAA 38、Apple 6（含側標／貼紙 2 張、上架前回查 CAA 500 的 2 張改 Apple）。**試聽**：ready 36、unavailable 8。頂點 0；稀有度 rare 35、uncommon 8、epic 1。
+- **寫入**：prepare 0 error → card_catalog 44/44 → KV 44 鍵回讀一致 → 靜態試聽 → seed 44 列 → **published gate 0 error**；子曲風 17,536 → 17,570。
+- **主要檔案**：`batch-progress/add-20261011-dt4/`、`onboarding-manifest-add-20261011-dt4-20261012.json`、`desc-tools/batches/*/add-20261011-dt4*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
 ### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 3 批上架（add-20261011-dt3，45 張；卡池 18,985 → 19,030）
 
 - **本批內容**：trip-hop／abstract hip-hop 後段（Fila Brazillia、Bowery Electric、Craig Armstrong、Dot Allison、Hooverphonic、Mandalay、Alpha、Earthling、Mr. Scruff、Lemon Jelly、Supreme Beings of Leisure、Dntel、Blue States、DJ Food、DJ Vadim、Hidden Orchestra ×2、Nostalgia 77、Lack of Afro、Kid Koala、The Herbaliser、Aim、Fingathing、Madlib、Blue Sky Black Death、Free the Robots、jinsang）、chill electronica（Emancipator、Tourist、Maribou State、Rhye、Chet Faker、Petit Biscuit）、歐陸前段（Jazzanova、dZihan & Kamien、Sofa Surfers、Waldeck、Trüby Trio、Bugge Wesseltoft、Nils Petter Molvær、Koop、Jaga Jazzist、Skalpel、Télépopmusik、Nouvelle Vague）。
