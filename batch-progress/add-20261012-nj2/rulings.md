@@ -23,3 +23,16 @@
 - **9487** 《Fly or Die II》盤名沿用官方小寫「bird dogs of paradise」；成員自首作的 Tomeka Reid 換成 Lester St. Louis，facts 已標明。
 - **9488** WebSearch 本組實際用 3 次（Sélébéyone、Coin Coin 第一章、Ben LaMar Gay），其餘為 MB／Bandcamp／維基／Nonesuch／評論站 WebFetch；Discogs API 對 release 端點回 429，未用。pitchfork.com 與 JazzTimes 抓取被擋，未採。
 - 推翻策展層：無年份、廠牌、掛名或盤名推翻；僅 9481（類型）、9485（spectral 未證實）兩處性質補充。
+
+
+## 研究 a 組
+- **9441** 《Obsidian》（Kit Downes）：非典型爵士。ECM 官方文案自稱「與爵士關係不大」（教堂管風琴獨奏、半寫定半即興、受 Messiaen 影響），Deutschlandfunk 評為介於爵士語彙與新音樂。裁定保留在爵士線（領銜者是英國爵士圈鋼琴手、方法為即興、ECM 與 MB 皆歸爵士），簡介須坦白寫出「管風琴、非典型」，主線審稿可酌降 jazz 權重。**推翻策展層**：「ECM 首張」不成立——Downes 2015 年已在 ECM 的 Thomas Strønen《Time Is a Blind Guide》擔任鋼琴手，本盤是「第一張 ECM 個人名義專輯」。
+- **9442** 《Touch and Flee》（Neil Cowley Trio）：**推翻策展層**「Radiohead／Bon Iver 影響」——Jazz Mann、Quietus、London Jazz News 三篇長評都沒提，來源給的是 E.S.T.、The Bad Plus、Tord Gustavsen、ECM 式空曠；查無來源，facts 不寫。製作人拼寫採 Dom Monks（LJN、Quietus 兩獨立來源），搜尋摘要的 Dom Marks 不採。Guardian 四星經 Jazz Mann 轉述，未直接開啟。
+- **9443** 《Two for Joy》（Ruby Rushton）：關鍵補充——錄音是 2011-12-30（Hoxton Square Studios，四重奏一天現場錄成），發行 2015 年，相隔三年半；卡年份依 MB 取 2015。發行日 MB 6/29（數位與 CD）、Discogs 黑膠 7/29，簡介只寫年份。電子／broken beat 只是 Discogs 風格標籤，實為實體爵士四重奏，不是 downtempo／beat。Vinyl Factory 2015 年度 50 大只見廠方 Bandcamp，站內 404 未核實，建議不用。
+- **9444** 《Celestial Greens》（Vels Trio）：策展層「布萊頓出身」查證成立（Jazz Mann：formed in Brighton, now London-based）。類別風險：Ian Mann 與樂團自述都偏「當代器樂流行／融合」，Discogs 風格為 Jazz-Funk、Contemporary Jazz、Fusion，非 house／beat，保留爵士線並如實寫「融合、電子」。發行日 Bandcamp／Jazz Revelations 10/29、MB 10/25、搜尋摘要 Forced Exposure 11/5，簡介只寫 2021 年。Peterson 留言與 Worldwide Awards 提名都只出自廠方／樂團 Bandcamp，寫作層請用「力推」「樂團自述」。Jazzwise 4 星與 George Duke 比較只見搜尋摘要（頁面 503），不入 facts。
+- **9445** Dinosaur／Laura Jurd 三張（Together As One、Wonder Trail、Stepping Back Jumping In）：同人同批共 3 張，三張各取不同切角——首作＝Mercury 入圍與三天錄音、第二張＝1980s synth-pop 與威爾斯五天錄音、Jurd 個人作＝Kings Place 委託的十多人大編制。樂團名 Dinosaur 2016 年才採用（約 2010 年成形）；Mercury Prize 2017（第 26 屆）為入圍未得獎，得主 Sampha《Process》；Jazz FM 年度藝人亦為提名。
+- **9446** 《Stepping Back, Jumping In》編制人數：Edition 稱 14 人，Edition 頁與 Discogs credits 合計 15 位演奏者（含 Ligeti Quartet 四位），寫作層用「十多人」，勿寫死。Edition 頁稱「五位作曲家」本批未核實各曲署名，facts 不寫各曲作者。Kings Place 首演日（2019-03-01）與 Lauvdal、Lolavar 參與首演出自活動頁搜尋摘要，頁面本身 403；錄音（2019-03-04／05，The Sage Gateshead）出自 Discogs 備註與 Edition 頁，兩者吻合。
+- **9447** 《Wonder Trail》證據偏薄：獨立樂評只取得 Downbeat 一句短評（經 Edition 頁轉引），長評未能開啟；寫作層以錄音過程與聲音取向為主，勿杜撰評論。首作頁只署錄音者「Sonny」，Wonder Trail 頁署 Sonny Johns，兩者應為同一人但不寫成確定。
+- **9448** 《Parallax》：Phronesis 成員為丹麥（Høiby）、瑞典（Eger）、英國（Neame），領軍者是丹麥人，2001 年起在倫敦；簡介不要寫成「英國樂團」。錄音是 2015-10-18 Abbey Road Studio 2 一天錄完（Edition 官方頁），與維基「2015 秋天在 Abbey Road 錄第六張」吻合。2020 年樂團宣布暫停屬與本作無關的後續，不寫。
+- **9449** WebSearch 本組實際用 3 次（Touch and Flee、Stepping Back Jumping In、Vels Trio），其餘為 MB／Discogs API／英文維基／Edition、ECM 官方頁／Bandcamp（WebFetch）。Discogs 網頁 403，改用 API；維基部分頁面 429，放慢後取得；Jazzwise 503、Presto 與 Kings Place 403、Guardian 猜網址 404，未採。
+- **9450** 本組八張皆為原創錄音室專輯，無 EP、選輯或非爵士（house／beat）者；僅 9441（Obsidian）與 9444（Vels Trio）屬類別灰區，已於上標明。推翻策展層共 2 處（9441 ECM 首張、9442 Radiohead／Bon Iver）；年份、廠牌、掛名、盤名皆未被推翻。
