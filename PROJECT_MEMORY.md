@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 3 批上架（add-20261012-nj3，39 張；卡池 18,870 → 18,909）
+
+- **本批內容**：芝加哥後段（Rob Mazurek、Chicago Underground Duo、Resavoir、Damon Locks ×2、Isaiah Collier、Tomeka Reid、Nicole Mitchell、Jeff Parker、Marquis Hill、Joshua Abrams）、紐約（Vijay Iyer、Mary Halvorson、Tyshawn Sorey、Kris Davis、Linda May Han Oh、Melissa Aldana、Sullivan Fortner、Theo Croker ×2、Craig Taborn、The Bad Plus、Steve Lehman Octet、James Brandon Lewis）、大樂團與豎琴、歌手（Donny McCaslin、Darcy James Argue、Brandee Younger ×2、Lakecia Benjamin ×2、Jazzmeia Horn ×2）、北歐前段（Elephant9、Fire! Orchestra ×2、Jaga Jazzist ×2、Rymden、Hedvig Mollestad Trio）。
+- **產線**：研究 5 組（38 full／1 thin）→ 鉤子 2 組 → 寫作 2 組（157–240）→ 主線審稿改 2 處媒體名。無刪卡；label／scene 更正 4 張（Impulse!、Concord Jazz、TAO Forms、Craig Taborn 場景）。
+- **封面**：CAA 36、Apple 3。**試聽**：ready 36、unavailable 3。頂點 0；稀有度 epic 14、uncommon 17、rare 8。
+- **寫入**：prepare 0 error → card_catalog 39/39 → KV 39 鍵回讀一致 → 靜態試聽 → seed 39 列 → **published gate 0 error**；子曲風 17,412 → 17,441。
+- **主要檔案**：`batch-progress/add-20261012-nj3/`、`onboarding-manifest-add-20261012-nj3-20261012.json`、`desc-tools/batches/*/add-20261012-nj3*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
 ### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 2 批上架（add-20261012-nj2，39 張；卡池 18,831 → 18,870）
 
 - **本批內容**：英國後段（Ruby Rushton、Vels Trio、Dinosaur ×2、Laura Jurd、Kit Downes、Neil Cowley Trio、Phronesis、Elliot Galvin、Fergus McCreadie ×2、Polar Bear、Xhosa Cole、Emma Rawicz）、LA（Terrace Martin、Miles Mosley、Cameron Graves、Brandon Coleman、Ryan Porter、Sam Gendel ×2、Carlos Niño、Mark de Clive-Lowe、Jamael Dean）、爵士×嘻哈（Kassa Overall ×2、Nate Smith、Keyon Harrold、Snarky Puppy ×2、Terri Lyne Carrington）、芝加哥前段（Steve Lehman、Jaimie Branch ×3、Matana Roberts ×2、Ben LaMar Gay ×2）。
