@@ -2924,4 +2924,10 @@ window.DipPreviewStatus = Object.freeze({
   "bajofondo tango club|bajofondo tango club": "unavailable",
   "bossacucanova|brasilidade": "unavailable",
   "cibelle|cibelle": "unavailable",
+  "fantastic plastic machine|luxury": "unavailable",
+  "monday満ちる|double image": "unavailable",
+  "substantial|to this union a sun was born": "unavailable",
+  "yosi horikawa|vapor": "unavailable",
+  "fridge|happiness": "unavailable",
+  "jj|jj n° 2": "unavailable",
 });

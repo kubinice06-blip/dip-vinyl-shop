@@ -1,7 +1,7 @@
 # downtempo／chill dub 策展線交接（add-20261011-dt1…dt5）
 
 店主 2026-10-11：「補強downtempo類型 很chill的音樂類型 策展」→「太少了 至少找好聽的200張以上 dub的chill也要」。
-**全線 223 張、5 批**。dt1、dt2 已上線；**dt3–dt5 待跑**。店主 2026-10-12 裁定：接力線留在同一個工作階段跑到收尾，不必換新工作階段（見 PROJECT_MEMORY 同日條目）；研究層每支 WebSearch 壓到 3 次。
+**全線 223 張、5 批，2026-10-12 全數上線（222 張；dt5 刪 1）。**店主 2026-10-12 裁定：接力線留在同一個工作階段跑到收尾，不必換新工作階段（見 PROJECT_MEMORY 同日條目）；研究層每支 WebSearch 壓到 3 次。
 裁定權已下放（CLAUDE.md「接力任務」）：中途不回報，策展／研究／管線裁定自己定、寫進各批 rulings.md；**店主 2026-10-10：PR 綠燈就直接合併，不用問**。
 
 ## 一、進度
@@ -9,10 +9,10 @@
 | 批 | 內容 | 張數 | 狀態 |
 |---|---|---:|---|
 | dt1 | chill dub（roots、On-U、英國 dub、dub techno） | 45 | ✅ 上線（PR #81） |
-| dt2 | 日本 dub、ambient dub、英國 trip-hop、Ninja Tune 系、beat | 45 | 見 PROJECT_MEMORY 最上方 |
-| dt3 | trip-hop／abstract hip-hop 後段＋歐陸前段（Fila Brazillia…Nouvelle Vague） | 45 | 卡單已備 |
-| dt4 | 歐陸 downtempo／nu-jazz／Balearic／拉丁（Bebel Gilberto…Da Lata） | 44 | 卡單已備 |
-| dt5 | 日本 lounge／nu-jazz、folktronica、chillwave（Fantastic Plastic Machine…Houses） | 44 | 卡單已備 |
+| dt2 | 日本 dub、ambient dub、英國 trip-hop、Ninja Tune 系、beat | 45 | ✅ 上線 |
+| dt3 | trip-hop／abstract hip-hop 後段＋歐陸前段（Fila Brazillia…Nouvelle Vague） | 45 | ✅ 上線（PR #90） |
+| dt4 | 歐陸 downtempo／nu-jazz／Balearic／拉丁（Bebel Gilberto…Da Lata） | 44 | ✅ 上線（PR #91） |
+| dt5 | 日本 lounge／nu-jazz、folktronica、chillwave（Fantastic Plastic Machine…Houses） | 43 | ✅ 上線（刪 Jazztronik 1 張） |
 
 卡單：`desc-tools/batches/cards/add-20261011-dt{3,4,5}-cards.json`（研究 a–e 各 9 張；身分全 pinned，MB 已回查）。
 dt3–dt5 的 `batch-progress/add-20261011-dtN/rulings.md` 還沒建——照 dt2 的檔頭格式建，條號往後接（dt2 用到 9100；dt3 從 9101 起，每批 80 條：研究 a–e 各 10、鉤子 10、寫作 10、主線 10）。

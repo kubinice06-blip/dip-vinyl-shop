@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 5 批上架（add-20261011-dt5，43 張；卡池 19,074 → 19,117）——全線收尾
+
+- **本批內容**：日本 lounge／nu-jazz（Fantastic Plastic Machine、FreeTEMPO、Uyama Hiroto、Cro-Magnon、CALM ×2、MONDAY満ちる、Sleep Walker、Substantial、Fat Jon、haruka nakamura ×2、高木正勝、Ametsub、Masayoshi Fujita ×2、Yosi Horikawa、Lamp）、亞洲流行（Clazziquai Project ×2、Mocca）、folktronica／indietronica（Lali Puna、The Notwist、Tunng、The Books、ISAN、Styrofoam、Helios、Hood、Fridge、Junior Boys、The Album Leaf、Flunk）、chillwave（Small Black、Memory Tapes、Ford & Lopatin、jj、The Radio Dept.、Teen Daze、Poolside、Nite Jewel、Electric Youth、Houses）。
+- **產線**：研究 5 組（41 full／2 thin）→ 鉤子 2 組 → 寫作 2 組（176–239）→ 主線審稿未改字。研究層刪 Jazztronik 拼盤 1 張；廠牌／年份更正 6 張（改首發廠牌）。
+- **封面**：CAA 36、Apple 7（CAA 無圖或下載失敗 3、Instrumentals Only 版 1、上架前回查 CAA 500 的 3 張）。**試聽**：ready 37、unavailable 6。頂點 0；稀有度 rare 24、uncommon 18、epic 1。
+- **寫入**：prepare 0 error → card_catalog 43/43 → KV 46 鍵回讀一致 → 靜態試聽 → seed 43 列 → **published gate 0 error**；子曲風 17,570 → 17,598。
+- **全線合計**：策展 223 → 刪 1 → **上架 222 張**（dt1 45、dt2 45、dt3 45、dt4 44、dt5 43），全程同一工作階段跑完。交接單 `batch-progress/HANDOFF-downtempo-line.md` 已標全線完成。
+- **主要檔案**：`batch-progress/add-20261011-dt5/`、`onboarding-manifest-add-20261011-dt5-20261012.json`、`desc-tools/batches/*/add-20261011-dt5*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`、`batch-progress/HANDOFF-downtempo-line.md`
+- **驗證**：verify-album-onboarding prepare／published 皆 0 error；verify-wave-kv 46/46；qa-batch research／hooks／out 全過；qa-check-research 標記 0。
+
 ### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 4 批上架（add-20261011-dt4，44 張；卡池 19,030 → 19,074）
 
 - **本批內容**：歐陸 downtempo／Balearic／nu-jazz（Bebel Gilberto、José Padilla、Bent、Thunderball、Tosca ×2、Boozoo Bajou、Christian Prommer's Drumlesson、Beanfield、Mo' Horizons、Lali Puna、dZihan & Kamien、Waldeck、Beady Belle、Nils Petter Molvær、Bugge Wesseltoft、Koop、Erlend Øye、Flunk、Hocus Pocus、Gotan Project、Nouvelle Vague、Llorca、Kid Loco、Télépopmusik、Nicola Conte、Gabin）、地中海與拉丁（Dead Combo、Imam Baildi、The Dining Rooms、Chambao、Mark Barrott、A Man Called Adam、Quiet Village、Ultramarine、Suba、Federico Aubele ×2、Bajofondo Tango Club、Zuco 103、Bossacucanova、Cibelle、Skalpel、Da Lata）。
