@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "batch": "2026-10-11-dt3",
  "batchNote": "downtempo／chill dub 策展線（add-20261011-dt3）",
- "createdAt": "2026-10-12T12:09:16Z",
+ "createdAt": "2026-10-12T12:13:27Z",
  "albums": [
   {
    "artist": "Fila Brazillia",
@@ -24,11 +24,12 @@
     "electronic"
    ],
    "cover": {
-    "source": "caa",
-    "url": "https://coverartarchive.org/release/da2432b3-0a57-494a-9233-f8c1356681f6/front",
-    "note": "release-group 層無 CAA 圖、Apple 無本盤；改取 1995 年英國原版 release da2432b3 的 CAA front，主線 2026-10-12 目視與盤名相符。",
+    "source": "discogs",
+    "discogsReleaseId": "7839",
+    "url": "https://i.discogs.com/3YkN6NdhgAOJGNW1IVFCwW5_u_Ra47CNHj1XPrCFgio/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4Mzkt/MTE4MDc3MDkyMi5q/cGVn.jpeg",
+    "note": "CAA release-group 層無圖、release 層上架後連續 HTTP 500、Apple 無本盤；取 Discogs 7839（Pork Recordings 1995 英國原版）主圖，主線 2026-10-12 目視與盤名相符。",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true
    },
    "ratings": {
@@ -37,7 +38,7 @@
     "accessibility": 2,
     "listeners": 107946,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 107946）"
    },
    "rarity": "rare",
@@ -62,7 +63,7 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
    },
    "published": {
@@ -96,7 +97,7 @@
     "url": "https://coverartarchive.org/release-group/081f3161-6b3c-3281-9ed1-33f62593eccc/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -106,7 +107,7 @@
     "accessibility": 2,
     "listeners": 119557,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 119557）"
    },
    "rarity": "rare",
@@ -132,7 +133,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/31/28/99/3128995f-d37e-7b8d-161a-bb80faaa5898/mzaf_12373944463276470012.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "179929795",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -169,7 +170,7 @@
     "url": "https://coverartarchive.org/release-group/8816dd75-1487-3e07-812a-193921fa14c1/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -179,7 +180,7 @@
     "accessibility": 2,
     "listeners": 141259,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 141259）"
    },
    "rarity": "rare",
@@ -204,7 +205,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/a0/23/02a023cf-24f7-af8c-b6c0-7e3b02949361/mzaf_10642698129833247866.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1443227758",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -241,7 +242,7 @@
     "url": "https://coverartarchive.org/release-group/8d209106-d559-379c-a363-47c01223bd6d/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -251,7 +252,7 @@
     "accessibility": 2,
     "listeners": 52567,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 52567）"
    },
    "rarity": "rare",
@@ -278,7 +279,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/2f/16/e42f16bc-83b6-993a-0cbd-8fe1503f16d9/mzaf_475451671536152625.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "304795671",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -315,7 +316,7 @@
     "url": "https://coverartarchive.org/release-group/8c274eb3-afee-3b32-b13e-4343aac7dd64/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -325,7 +326,7 @@
     "accessibility": 2,
     "listeners": 379218,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 379218）"
    },
    "rarity": "rare",
@@ -350,7 +351,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/b0/ba/0eb0ba02-2d9d-c692-eadc-335ed12b34b9/mzaf_13250033432612889655.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "429357998",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -387,7 +388,7 @@
     "url": "https://coverartarchive.org/release-group/5c0b347b-f2d8-3cb2-abfc-1592a243964d/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -397,7 +398,7 @@
     "accessibility": 2,
     "listeners": 36366,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 2/3/2（廣度線冷門軸照 Last.fm listeners 36366）"
    },
    "rarity": "rare",
@@ -424,7 +425,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9d/b0/dc/9db0dccb-eb9c-fa30-9a02-1c0726030450/mzaf_8727586982040402222.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1443162704",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -461,7 +462,7 @@
     "url": "https://coverartarchive.org/release-group/d6dba165-1cb2-3c60-996f-63cb581582c5/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -471,7 +472,7 @@
     "accessibility": 2,
     "listeners": 52349,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 2/3/2（廣度線冷門軸照 Last.fm listeners 52349）"
    },
    "rarity": "rare",
@@ -497,7 +498,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/42/45/83/42458359-d655-903a-d5f2-fddb85421f93/mzaf_16695169870711107042.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "724639010",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -534,7 +535,7 @@
     "url": "https://coverartarchive.org/release-group/6fd61824-4e4e-3235-9ad7-5cda500d845d/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -544,7 +545,7 @@
     "accessibility": 2,
     "listeners": 40754,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 2/3/2（廣度線冷門軸照 Last.fm listeners 40754）"
    },
    "rarity": "rare",
@@ -572,7 +573,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/43/d4/8c43d4ef-d3f8-7b96-92dd-85876f9da505/mzaf_13683916439232622697.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1846863714",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -609,7 +610,7 @@
     "url": "https://coverartarchive.org/release-group/8d97ae8e-2304-30b3-a572-f7c00a5330fd/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -619,7 +620,7 @@
     "accessibility": 2,
     "listeners": 155512,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 155512）"
    },
    "rarity": "rare",
@@ -645,7 +646,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/3a/7f/0a3a7f8e-9cf8-116d-6cd0-046c0ae8644d/mzaf_7585408179463209388.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "261623214",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -682,7 +683,7 @@
     "url": "https://coverartarchive.org/release-group/2d7ae044-7ed7-3624-a516-239607c2d4b0/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -692,7 +693,7 @@
     "accessibility": 2,
     "listeners": 133657,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 4/2/2（廣度線冷門軸照 Last.fm listeners 133657）"
    },
    "rarity": "uncommon",
@@ -717,7 +718,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7c/c0/f1/7cc0f157-d215-6c56-aa4e-cadea37de3ee/mzaf_8358149037973535260.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1136801130",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -755,7 +756,7 @@
     "url": "https://coverartarchive.org/release-group/3bcf9e2b-6c09-3486-97c2-0e1e24960ffd/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -765,7 +766,7 @@
     "accessibility": 2,
     "listeners": 297162,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 297162）"
    },
    "rarity": "rare",
@@ -791,7 +792,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/da/77/9eda77d6-9121-c5c2-5cfb-522aebc50c26/mzaf_5465259071607742834.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "2602518",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -828,7 +829,7 @@
     "url": "https://coverartarchive.org/release-group/62813962-6823-36c4-9cd3-9891b11941ff/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -838,7 +839,7 @@
     "accessibility": 2,
     "listeners": 197944,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 197944）"
    },
    "rarity": "rare",
@@ -863,7 +864,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/70/68/e6/7068e617-7bb7-6ccc-6370-a1daa568d727/mzaf_8107637238877564910.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "466598994",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -900,7 +901,7 @@
     "url": "https://coverartarchive.org/release-group/1121ae92-4cea-3cd4-864a-a536df07c37d/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -910,7 +911,7 @@
     "accessibility": 2,
     "listeners": 138508,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 138508）"
    },
    "rarity": "rare",
@@ -935,7 +936,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/7b/f6/437bf69c-3292-91e3-6e00-12c98c858c6f/mzaf_17094279574443104195.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "276995342",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -973,7 +974,7 @@
     "url": "https://coverartarchive.org/release-group/2e29c5ce-ca7e-3ea4-ad50-a970746fb9a4/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -983,7 +984,7 @@
     "accessibility": 2,
     "listeners": 99671,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 99671）"
    },
    "rarity": "rare",
@@ -1007,7 +1008,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/f7/a9/4bf7a91c-397b-390d-cc32-9f83ec775e07/mzaf_671702301927189282.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "289716865",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1045,7 +1046,7 @@
     "url": "https://coverartarchive.org/release-group/e1c44772-ce30-34ca-9fda-179997e6f80a/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1055,7 +1056,7 @@
     "accessibility": 3,
     "listeners": 83745,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 4/3/3（廣度線冷門軸照 Last.fm listeners 83745）"
    },
    "rarity": "uncommon",
@@ -1080,7 +1081,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/72/27/01/72270110-f62c-c08a-83b0-388d1cc083b4/mzaf_11376522185055029109.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1385840983",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -1118,7 +1119,7 @@
     "url": "https://coverartarchive.org/release-group/b894c26b-ef20-4aa9-9fab-75e813b56e89/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1128,7 +1129,7 @@
     "accessibility": 2,
     "listeners": 128999,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 128999）"
    },
    "rarity": "rare",
@@ -1153,7 +1154,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/e4/49/35e449ab-dd1f-3793-78c8-f78a7d3d2c1e/mzaf_4904769035574878240.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "391711693",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1191,7 +1192,7 @@
     "url": "https://coverartarchive.org/release-group/247aa9a9-8179-4c4b-84e9-318569a620dd/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1201,7 +1202,7 @@
     "accessibility": 2,
     "listeners": 99960,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 99960）"
    },
    "rarity": "rare",
@@ -1226,7 +1227,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/83/40/b0/mzi.wyqrxueo.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "557203613",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1264,7 +1265,7 @@
     "url": "https://coverartarchive.org/release-group/2d000b70-2b68-3023-82f3-ce1a630983c4/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1274,7 +1275,7 @@
     "accessibility": 2,
     "listeners": 43191,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 43191）"
    },
    "rarity": "rare",
@@ -1299,7 +1300,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/3f/ba/8b3fba5a-514c-fba1-768d-47abfd15b5f9/mzaf_7359702895148288594.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "268590373",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1337,7 +1338,7 @@
     "url": "https://coverartarchive.org/release-group/f13cd792-d7f9-3d32-aae3-7713f92c89f4/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1347,7 +1348,7 @@
     "accessibility": 2,
     "listeners": 66933,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 66933）"
    },
    "rarity": "rare",
@@ -1372,7 +1373,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/9a/12/259a1290-b2a5-bc10-6a00-c9272d766a26/mzaf_9375433690995708614.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1811426890",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -1410,7 +1411,7 @@
     "url": "https://coverartarchive.org/release-group/01fce69c-e458-3e6b-989e-f8f3fdd06ecb/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1420,7 +1421,7 @@
     "accessibility": 2,
     "listeners": 205370,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 4/2/2（廣度線冷門軸照 Last.fm listeners 205370）"
    },
    "rarity": "uncommon",
@@ -1445,7 +1446,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview19/v4/b5/0b/10/b50b10c7-b2c1-abf4-d325-11d62911ca09/mzaf_5193228366799867441.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "416348402",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -1483,7 +1484,7 @@
     "url": "https://coverartarchive.org/release-group/e3fe33fb-e460-3ece-9896-0e4d945a2705/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1493,7 +1494,7 @@
     "accessibility": 2,
     "listeners": 191428,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 191428）"
    },
    "rarity": "rare",
@@ -1518,7 +1519,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/99/62/3c99626a-09cc-a35a-dcbd-b5a97ae53c7a/mzaf_15546991207751555007.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "373041510",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1556,7 +1557,7 @@
     "url": "https://coverartarchive.org/release-group/e4def5f6-618f-3c56-9557-8b7074a0b12b/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1566,7 +1567,7 @@
     "accessibility": 2,
     "listeners": 281551,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 281551）"
    },
    "rarity": "rare",
@@ -1591,7 +1592,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/02/4e/f9/024ef946-e415-435e-5818-3ccefd858a9a/mzaf_2432744040180781090.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "373443695",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1629,7 +1630,7 @@
     "url": "https://coverartarchive.org/release-group/e43d0db8-601c-3964-ab3f-574f32a855af/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1639,7 +1640,7 @@
     "accessibility": 2,
     "listeners": 58336,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 2/3/2（廣度線冷門軸照 Last.fm listeners 58336）"
    },
    "rarity": "rare",
@@ -1665,7 +1666,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/f6/7b/14/f67b14f3-3ba7-b453-0734-2971a2441cd0/mzaf_6144569468064794047.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "805106889",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1703,7 +1704,7 @@
     "url": "https://coverartarchive.org/release-group/6fad582f-985b-4747-af4b-0748474289e5/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1713,7 +1714,7 @@
     "accessibility": 2,
     "listeners": 156153,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 156153）"
    },
    "rarity": "rare",
@@ -1739,7 +1740,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/5f/b7/375fb749-fd57-9600-b7f9-ddda0426493e/mzaf_2733194012045672112.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1548810974",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -1777,7 +1778,7 @@
     "url": "https://coverartarchive.org/release-group/a793dacf-8444-3721-a5e2-813292ebb0d3/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1787,7 +1788,7 @@
     "accessibility": 4,
     "listeners": 44969,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/3/4（廣度線冷門軸照 Last.fm listeners 44969）"
    },
    "rarity": "uncommon",
@@ -1812,7 +1813,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/d2/6c/a9d26c9f-ceaa-1e8c-3f67-b92a37bd2e93/mzaf_15775394534569227003.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1858173431",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1850,7 +1851,7 @@
     "url": "https://coverartarchive.org/release-group/5e3cd3c6-8f7a-498b-9b88-6d8814c884bc/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1860,7 +1861,7 @@
     "accessibility": 2,
     "listeners": 9766,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 2/4/2（廣度線冷門軸照 Last.fm listeners 9766）"
    },
    "rarity": "rare",
@@ -1887,7 +1888,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/49/53/2e/49532e72-592f-be02-b7e5-dbf83facf72a/mzaf_4146047929973854997.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "678413627",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -1925,7 +1926,7 @@
     "url": "https://coverartarchive.org/release-group/fbf3527e-4de5-4b05-ab04-68b1c0b1e20e/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -1935,7 +1936,7 @@
     "accessibility": 2,
     "listeners": 2061,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 2061）"
    },
    "rarity": "uncommon",
@@ -1962,7 +1963,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/03/83/47/038347aa-de96-cf1a-51c8-35da7fba3c31/mzaf_8913297273715775378.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1860643744",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -2000,7 +2001,7 @@
     "url": "https://coverartarchive.org/release-group/d0a38d81-feed-41ac-8310-0bf0a53c482c/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2010,7 +2011,7 @@
     "accessibility": 2,
     "listeners": 221598,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 221598）"
    },
    "rarity": "rare",
@@ -2036,7 +2037,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9b/15/f9/9b15f9e5-9129-30cc-8537-2bf66a0cc9bd/mzaf_6041936119770590533.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "598293267",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -2073,7 +2074,7 @@
     "url": "https://coverartarchive.org/release-group/3f4c434d-fc3d-4973-b886-2b657d8238dd/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2083,7 +2084,7 @@
     "accessibility": 2,
     "listeners": 74820,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 74820）"
    },
    "rarity": "rare",
@@ -2109,7 +2110,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/8b/f8/b28bf881-4586-966f-6d6f-b1064e17ba68/mzaf_10367580013473314127.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1551184041",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -2146,7 +2147,7 @@
     "url": "https://coverartarchive.org/release-group/c7309453-712c-4963-9ef7-6cb75ea24a05/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2156,7 +2157,7 @@
     "accessibility": 2,
     "listeners": 376982,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 376982）"
    },
    "rarity": "rare",
@@ -2182,7 +2183,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f2/99/b1/f299b167-afa2-f9e4-0e8e-7d3be634bb92/mzaf_6106859553114413587.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "992022624",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -2219,7 +2220,7 @@
     "url": "https://coverartarchive.org/release-group/192ce1c3-c790-4019-a1f9-4006d296ea53/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2229,7 +2230,7 @@
     "accessibility": 2,
     "listeners": 525895,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 4/1/2（廣度線冷門軸照 Last.fm listeners 525895）"
    },
    "rarity": "uncommon",
@@ -2255,7 +2256,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/f3/f5/3bf3f5bd-f484-7806-13e8-fd906d6725cd/mzaf_15235641457153676319.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1440873634",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -2292,7 +2293,7 @@
     "url": "https://coverartarchive.org/release-group/9cd04db2-29c7-4eda-b2aa-db5c5b1a1974/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2302,7 +2303,7 @@
     "accessibility": 2,
     "listeners": 496213,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 496213）"
    },
    "rarity": "rare",
@@ -2327,7 +2328,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/ef/13/cdef13c3-94a7-cdbc-c791-77d6587d01a8/mzaf_6558451762076046680.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "818918526",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -2364,7 +2365,7 @@
     "url": "https://coverartarchive.org/release-group/853efecc-3abb-4a1b-af80-f843dacf3d9a/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2374,7 +2375,7 @@
     "accessibility": 2,
     "listeners": 258428,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 258428）"
    },
    "rarity": "rare",
@@ -2398,7 +2399,7 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
    },
    "published": {
@@ -2433,7 +2434,7 @@
     "url": "https://coverartarchive.org/release-group/3f9ae107-4801-3cf2-8add-d3388f1f5a9a/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2443,7 +2444,7 @@
     "accessibility": 2,
     "listeners": 272147,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 272147）"
    },
    "rarity": "rare",
@@ -2469,7 +2470,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/52/a1/6152a10d-f1c2-cd7a-da83-e57db7f62d58/mzaf_2464165769718987931.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1833480199",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -2507,7 +2508,7 @@
     "url": "https://coverartarchive.org/release-group/b099a256-fd28-3b7a-96fd-3e9bc4258ca6/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2517,7 +2518,7 @@
     "accessibility": 4,
     "listeners": 239836,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 2/2/4（廣度線冷門軸照 Last.fm listeners 239836）"
    },
    "rarity": "uncommon",
@@ -2543,7 +2544,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/21/a0/5d21a02c-a34d-c72d-c90f-a3d0dbd07838/mzaf_16676201691914547721.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "79144438",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -2581,7 +2582,7 @@
     "url": "https://coverartarchive.org/release-group/10f730f6-63c1-3915-99de-70475134954d/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2591,7 +2592,7 @@
     "accessibility": 2,
     "listeners": 179207,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 179207）"
    },
    "rarity": "rare",
@@ -2617,7 +2618,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/76/8a/4f/768a4ffd-533e-8976-acdc-6e17a84c925b/mzaf_16423980217922340641.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "263495763",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -2655,7 +2656,7 @@
     "url": "https://coverartarchive.org/release-group/eab8fd48-0366-337d-8887-0f0c58bebc17/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2665,7 +2666,7 @@
     "accessibility": 2,
     "listeners": 116427,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 116427）"
    },
    "rarity": "rare",
@@ -2691,7 +2692,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5e/60/2f/5e602fbb-5549-c75f-1f8a-8075a92d4621/mzaf_11174856585789722782.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "258669645",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -2729,7 +2730,7 @@
     "url": "https://coverartarchive.org/release-group/45ef9fa9-6915-3c76-b171-4af1cfd41ee7/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2739,7 +2740,7 @@
     "accessibility": 2,
     "listeners": 125972,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 125972）"
    },
    "rarity": "rare",
@@ -2763,7 +2764,7 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
    },
    "published": {
@@ -2798,7 +2799,7 @@
     "url": "https://coverartarchive.org/release-group/e4fd6de8-179a-3ad7-bc93-aa3c36f85544/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2808,7 +2809,7 @@
     "accessibility": 2,
     "listeners": 46368,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 46368）"
    },
    "rarity": "uncommon",
@@ -2834,7 +2835,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/77/1d/3e/771d3ecc-7ea9-036d-e312-458064a204d8/mzaf_8728961256533849960.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1449786247",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -2872,7 +2873,7 @@
     "url": "https://coverartarchive.org/release-group/ecb60660-25d3-3b65-9f9d-5ac472dfe606/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2882,7 +2883,7 @@
     "accessibility": 2,
     "listeners": 71767,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 71767）"
    },
    "rarity": "uncommon",
@@ -2907,7 +2908,7 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Nils Petter Molvær《Khmer》5/8）。"
    },
    "published": {
@@ -2942,7 +2943,7 @@
     "url": "https://coverartarchive.org/release-group/d47b0c12-9976-3cff-aaec-8425d48f4f3a/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -2952,7 +2953,7 @@
     "accessibility": 2,
     "listeners": 379591,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 379591）"
    },
    "rarity": "rare",
@@ -2978,7 +2979,7 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
    },
    "published": {
@@ -3013,7 +3014,7 @@
     "url": "https://coverartarchive.org/release-group/0a212680-4318-3469-a442-edb67b082fe8/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -3023,7 +3024,7 @@
     "accessibility": 3,
     "listeners": 127115,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 4/2/3（廣度線冷門軸照 Last.fm listeners 127115）"
    },
    "rarity": "uncommon",
@@ -3051,7 +3052,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/b4/4e/f5b44ef4-34a5-a739-649d-00ac9b822468/mzaf_14568485320557895697.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "260799843",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -3090,7 +3091,7 @@
     "url": "https://coverartarchive.org/release-group/1cd9f478-2ac6-3099-a3f0-0f323b2290d6/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -3100,7 +3101,7 @@
     "accessibility": 3,
     "listeners": 244299,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 4/2/3（廣度線冷門軸照 Last.fm listeners 244299）"
    },
    "rarity": "uncommon",
@@ -3128,7 +3129,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/a7/b7/7b/a7b77bce-bfa8-2e8f-9b5c-8a348cac860d/mzaf_4536527020229460323.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1376493038",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
@@ -3168,7 +3169,7 @@
     "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/be/da/ec/bedaec4f-ed05-3fde-f131-e47fba90ca7e/00602567548744.rgb.jpg/600x600bb.jpg",
     "note": "CAA release-group front 上架後連續回 HTTP 500；改取已釘定試聽的 Apple 1368853964 官方圖，主線 2026-10-12 目視與盤名相符（同一張金色麥田封面）。",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true
    },
    "ratings": {
@@ -3177,7 +3178,7 @@
     "accessibility": 2,
     "listeners": 615201,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/1/2（廣度線冷門軸照 Last.fm listeners 615201）"
    },
    "rarity": "rare",
@@ -3203,7 +3204,7 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/71/79/e17179d4-9b2b-d754-8391-3bac6ffc5d01/mzaf_3594546411583999729.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "appleCollectionId": "1368853964",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
@@ -3242,7 +3243,7 @@
     "url": "https://coverartarchive.org/release-group/d16b3b05-6f30-3242-9544-dba1083eb21e/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
@@ -3252,7 +3253,7 @@
     "accessibility": 2,
     "listeners": 738044,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "機器基線 3/1/2（廣度線冷門軸照 Last.fm listeners 738044）"
    },
    "rarity": "rare",
@@ -3275,7 +3276,7 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-12T12:09:16Z",
+    "checkedAt": "2026-10-12T12:13:27Z",
     "note": "Apple 只有 2004 年 KCRW 電台現場重錄版（Nouvelle vague (KCRW session)），不是 Peacefrog 錄音室原盤，不當本盤試聽"
    },
    "published": {
