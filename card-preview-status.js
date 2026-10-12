@@ -2899,4 +2899,6 @@ window.DipPreviewStatus = Object.freeze({
   "joe armon-jones|turn to clear view": "unavailable",
   "moses boyd exodus|displaced diaspora": "unavailable",
   "nat birchall|sacred dimension": "unavailable",
+  "jamael dean|primordial waters": "unavailable",
+  "kassa overall|animals": "unavailable",
 });
