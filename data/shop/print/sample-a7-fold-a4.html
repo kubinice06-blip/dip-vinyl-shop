@@ -48,16 +48,10 @@ h1 { font-size: 10.5pt; line-height: 1.25; }
 .long .text { font-size: 9pt; line-height: 1.5; }
 footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }
 
-/* 掛卡（ㄇ字折）：反折片 17mm＋頂邊 4mm＋正面 84mm＝105mm；兩條折線是灰色虛線，旁邊印小字「折」 */
+/* 掛卡（ㄇ字折）：反折片 17mm（空白）＋頂邊 4mm＋正面 84mm＝105mm；兩條折線是灰色虛線 */
 .card.fold { padding: 0; }
-.flap { height: 17mm; flex: none; padding: 0 5.8mm; display: flex; align-items: center; justify-content: space-between; gap: 3mm; transform: rotate(180deg); }
-.flap-l { display: flex; flex-direction: column; gap: .5mm; min-width: 0; font-size: 5.6pt; color: #4a463f; }
-.flap-l b { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 5pt; letter-spacing: .14em; color: #1c1b19; }
-.flap-l span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.flap-al { font-family: "Noto Serif TC", "Noto Serif JP", serif; font-weight: 700; font-size: 7pt; color: #1c1b19; }
-.flap-p { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 9pt; white-space: nowrap; }
-.spine { height: 4mm; flex: none; border-top: .2mm dashed #9a948a; border-bottom: .2mm dashed #9a948a; display: flex; justify-content: space-between; align-items: center; padding: 0 1.2mm; }
-.spine i { font-style: normal; font-size: 4pt; color: #9a948a; }
+.flap { height: 17mm; flex: none; }
+.spine { height: 4mm; flex: none; border-top: .2mm dashed #9a948a; border-bottom: .2mm dashed #9a948a; }
 .front { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 3mm 5.8mm 4.2mm; }
 header { font-size: 4.6pt; }
 .g { font-size: 5pt; padding: .25mm 1.2mm; } .g i { font-size: 4pt; }
@@ -79,8 +73,8 @@ footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10
 </style></head><body>
 <div class="sheet">
 <section class="card long apex apex-hall fold">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>Horace Silver And The Jazz Messengers</span><span class="flap-al">Horace Silver And The Jazz Messengers</span></span><span class="flap-p">NT$ 1,600</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front"><header><span class="shop">dip vinyl<span class="apexbadge">殿堂<i>Hall of Fame</i></span></span><span class="genres"><span class="g">爵士<i>Jazz</i></span></span></header>
   <div class="title"><p class="artist">Horace Silver And The Jazz Messengers</p><h1>Horace Silver And The Jazz Messengers</h1></div>
   <div class="axes"><span class="ax hit"><em>經典度</em><span class="st"><b>★★★★★★★</b></span></span><span class="ax"><em>冷門度</em><span class="st"><b>★★</b>☆☆☆</span></span><span class="ax"><em>硬蕊度</em><span class="st"><b>★</b>☆☆☆☆</span></span></div>
@@ -88,8 +82,8 @@ footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10
   <footer><span class="sub"></span><span class="price">NT$ 1,600</span></footer></div>
 </section>
 <section class="card long fold">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>Dennis Brown</span><span class="flap-al">Words of Wisdom</span></span><span class="flap-p">NT$ 1,000</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front"><header><span class="shop">dip vinyl</span><span class="genres"><span class="g">雷鬼<i>Reggae</i></span></span></header>
   <div class="title"><p class="artist">Dennis Brown</p><h1>Words of Wisdom</h1></div>
   <div class="axes"><span class="ax"><em>經典度</em><span class="st"><b>★★★★</b>☆</span></span><span class="ax"><em>冷門度</em><span class="st"><b>★★★</b>☆☆</span></span><span class="ax"><em>硬蕊度</em><span class="st"><b>★★</b>☆☆☆</span></span></div>
@@ -97,8 +91,8 @@ footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10
   <footer><span class="sub"></span><span class="price">NT$ 1,000</span></footer></div>
 </section>
 <section class="card long apex apex-hall fold">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>Built to Spill</span><span class="flap-al">Perfect from Now On</span></span><span class="flap-p">NT$ 3,000</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front"><header><span class="shop">dip vinyl<span class="apexbadge">殿堂<i>Hall of Fame</i></span></span><span class="genres"><span class="g">搖滾<i>Rock</i></span></span></header>
   <div class="title"><p class="artist">Built to Spill</p><h1>Perfect from Now On</h1></div>
   <div class="axes"><span class="ax hit"><em>經典度</em><span class="st"><b>★★★★★★★</b></span></span><span class="ax"><em>冷門度</em><span class="st"><b>★★★</b>☆☆</span></span><span class="ax"><em>硬蕊度</em><span class="st"><b>★★</b>☆☆☆</span></span></div>
@@ -106,8 +100,8 @@ footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10
   <footer><span class="sub">1997 年壓片</span><span class="price">NT$ 3,000</span></footer></div>
 </section>
 <section class="card fold">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>破地獄</span><span class="flap-al">芒神</span></span><span class="flap-p">NT$ 3,000</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front"><header><span class="shop">dip vinyl</span><span class="genres"><span class="g">搖滾<i>Rock</i></span><span class="g">電子<i>Electronic</i></span></span></header>
   <div class="title"><p class="artist">破地獄</p><h1>芒神</h1></div>
   <div class="axes"><span class="ax"><em>經典度</em><span class="st"><b>★★</b>☆☆☆</span></span><span class="ax"><em>冷門度</em><span class="st"><b>★★★★</b>☆</span></span><span class="ax"><em>硬蕊度</em><span class="st"><b>★★★★</b>☆</span></span></div>
@@ -115,8 +109,8 @@ footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10
   <footer><span class="sub"></span><span class="price">NT$ 3,000</span></footer></div>
 </section>
 <section class="card fold">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>カルメン・マキ</span><span class="flap-al">真夜中詩集 －ろうそくの消えるまで－</span></span><span class="flap-p">NT$ 2,500</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front"><header><span class="shop">dip vinyl</span><span class="genres"><span class="g">民謠<i>Folk</i></span></span></header>
   <div class="title"><p class="artist">カルメン・マキ</p><h1>真夜中詩集 －ろうそくの消えるまで－</h1></div>
   <div class="axes"><span class="ax"><em>經典度</em><span class="st"><b>★★★</b>☆☆</span></span><span class="ax"><em>冷門度</em><span class="st"><b>★★★</b>☆☆</span></span><span class="ax"><em>硬蕊度</em><span class="st"><b>★★</b>☆☆☆</span></span></div>
@@ -124,8 +118,8 @@ footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10
   <footer><span class="sub">1969 年壓片</span><span class="price">NT$ 2,500</span></footer></div>
 </section>
 <section class="card apex apex-pearl fold">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>モア</span><span class="flap-al">モア</span></span><span class="flap-p">NT$ 800</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front"><header><span class="shop">dip vinyl<span class="apexbadge">流亡<i>Exile</i></span></span><span class="genres"><span class="g">民謠<i>Folk</i></span></span></header>
   <div class="title"><p class="artist">モア</p><h1>モア</h1></div>
   <div class="axes"><span class="ax"><em>經典度</em><span class="st"><b>★</b>☆☆☆☆</span></span><span class="ax hit"><em>冷門度</em><span class="st"><b>★★★★★★★</b></span></span><span class="ax"><em>硬蕊度</em><span class="st"><b>★★</b>☆☆☆</span></span></div>
@@ -133,8 +127,8 @@ footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10
   <footer><span class="sub"></span><span class="price">NT$ 800</span></footer></div>
 </section>
 <section class="card long fold">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>桃井かおり</span><span class="flap-al">おもしろ遊戯</span></span><span class="flap-p">NT$ 600</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front"><header><span class="shop">dip vinyl</span><span class="genres"><span class="g">城市流行<i>City Pop</i></span></span></header>
   <div class="title"><p class="artist">桃井かおり</p><h1>おもしろ遊戯</h1></div>
   <div class="axes"><span class="ax"><em>經典度</em><span class="st"><b>★★</b>☆☆☆</span></span><span class="ax"><em>冷門度</em><span class="st"><b>★★★★</b>☆</span></span><span class="ax"><em>硬蕊度</em><span class="st"><b>★★</b>☆☆☆</span></span></div>
@@ -142,8 +136,8 @@ footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10
   <footer><span class="sub">1982 年壓片</span><span class="price">NT$ 600</span></footer></div>
 </section>
 <section class="card long fold">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>荒井由実</span><span class="flap-al">Misslim</span></span><span class="flap-p">NT$ 1,000</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front"><header><span class="shop">dip vinyl</span><span class="genres"><span class="g">城市流行<i>City Pop</i></span><span class="g">爵士<i>Jazz</i></span></span></header>
   <div class="title"><p class="artist">荒井由実</p><h1>Misslim</h1></div>
   <div class="axes"><span class="ax"><em>經典度</em><span class="st"><b>★★★★★</b></span></span><span class="ax"><em>冷門度</em><span class="st"><b>★★</b>☆☆☆</span></span><span class="ax"><em>硬蕊度</em><span class="st"><b>★</b>☆☆☆☆</span></span></div>

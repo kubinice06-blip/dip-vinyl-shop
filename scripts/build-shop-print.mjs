@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 const R = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const arg = k => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
 const SHEET = (arg('--sheet') || '').toLowerCase();   // a4：A7 卡 8 張拼一張 A4 橫式（4 欄 × 2 列）
-// --fold（限 A7）：卡片上緣留一段反折片，折成ㄇ字掛在唱片封套上緣——上到下依序是背面反折片 17mm（內容倒印，折到封套背面時才是正的）、
+// --fold（限 A7）：卡片上緣留一段反折片，折成ㄇ字掛在唱片封套上緣——上到下依序是背面反折片 17mm（空白）、
 // 跨封套厚度的頂邊 4mm（兩條折線之間）、正面 84mm（原本的內容，字級整體縮小）
 const FOLD = process.argv.includes('--fold');
 const OUT = path.resolve(R, arg('--out') || `data/shop/print/shop-${(arg('--size') || 'a6').toLowerCase()}${FOLD ? '-fold' : ''}${SHEET ? '-' + SHEET : ''}.html`);
@@ -59,8 +59,8 @@ const card = ({ i, d }) => {
   const cls = `card${len > 225 ? ' long' : ''}${apex ? ' apex apex-' + row[8] : ''}${FOLD ? ' fold' : ''}`;
   if (!FOLD) return `<section class="${cls}">\n  ${body}\n</section>`;
   return `<section class="${cls}">
-  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>${esc(d.artist)}</span><span class="flap-al">${esc(d.album)}</span></span><span class="flap-p">${esc(price)}</span></div>
-  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="flap"></div>
+  <div class="spine"></div>
   <div class="front">${body}</div>
 </section>`;
 };
@@ -115,16 +115,10 @@ h1 { font-size: 10.5pt; line-height: 1.25; }
 .long .text { font-size: 9pt; line-height: 1.5; }
 footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }` : ''}
 ${FOLD ? `
-/* 掛卡（ㄇ字折）：反折片 17mm＋頂邊 4mm＋正面 84mm＝105mm；兩條折線是灰色虛線，旁邊印小字「折」 */
+/* 掛卡（ㄇ字折）：反折片 17mm（空白）＋頂邊 4mm＋正面 84mm＝105mm；兩條折線是灰色虛線 */
 .card.fold { padding: 0; }
-.flap { height: 17mm; flex: none; padding: 0 5.8mm; display: flex; align-items: center; justify-content: space-between; gap: 3mm; transform: rotate(180deg); }
-.flap-l { display: flex; flex-direction: column; gap: .5mm; min-width: 0; font-size: 5.6pt; color: #4a463f; }
-.flap-l b { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 5pt; letter-spacing: .14em; color: #1c1b19; }
-.flap-l span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.flap-al { font-family: "Noto Serif TC", "Noto Serif JP", serif; font-weight: 700; font-size: 7pt; color: #1c1b19; }
-.flap-p { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 9pt; white-space: nowrap; }
-.spine { height: 4mm; flex: none; border-top: .2mm dashed #9a948a; border-bottom: .2mm dashed #9a948a; display: flex; justify-content: space-between; align-items: center; padding: 0 1.2mm; }
-.spine i { font-style: normal; font-size: 4pt; color: #9a948a; }
+.flap { height: 17mm; flex: none; }
+.spine { height: 4mm; flex: none; border-top: .2mm dashed #9a948a; border-bottom: .2mm dashed #9a948a; }
 .front { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 3mm 5.8mm 4.2mm; }
 header { font-size: 4.6pt; }
 .g { font-size: 5pt; padding: .25mm 1.2mm; } .g i { font-size: 4pt; }
