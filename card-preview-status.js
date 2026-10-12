@@ -2895,4 +2895,8 @@ window.DipPreviewStatus = Object.freeze({
   "jah wobble & bill laswell|radioaxiom: a dub transmission": "unavailable",
   "smoke city|flying away": "unavailable",
   "money mark|mark's keyboard repair": "unavailable",
+  "theon cross|intra-i": "unavailable",
+  "joe armon-jones|turn to clear view": "unavailable",
+  "moses boyd exodus|displaced diaspora": "unavailable",
+  "nat birchall|sacred dimension": "unavailable",
 });
