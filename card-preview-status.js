@@ -2910,4 +2910,10 @@ window.DipPreviewStatus = Object.freeze({
   "shai maestro trio|the stone skipper": "unavailable",
   "metá metá|mm3": "unavailable",
   "나윤선|lento": "unavailable",
+  "fila brazillia|maim that tune": "unavailable",
+  "petit biscuit|presence": "unavailable",
+  "trüby trio|elevator music": "unavailable",
+  "nils petter molvær|khmer": "unavailable",
+  "koop|waltz for koop": "unavailable",
+  "nouvelle vague|nouvelle vague": "unavailable",
 });
