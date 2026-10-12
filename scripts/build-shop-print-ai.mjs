@@ -70,13 +70,16 @@ const cards = await page.evaluate(() => {
       const r = el.getBoundingClientRect(), cs = getComputedStyle(el), w = parseFloat(cs[`border${side}Width`]);
       if (!w) return;
       const y = side === 'Bottom' ? r.bottom - w / 2 : r.top + w / 2;
-      items.push({ k: 'line', x1: X(r.left), x2: X(r.right), y: Y(y), sw: w * PT, color: cs[`border${side}Color`] });
+      items.push({ k: 'line', x1: X(r.left), x2: X(r.right), y: Y(y), sw: w * PT, color: cs[`border${side}Color`], dash: cs[`border${side}Style`] === 'dashed' });
     };
     const box = (el, fill, stroke) => {
       const r = el.getBoundingClientRect(), cs = getComputedStyle(el);
       items.push({ k: 'rect', x: X(r.left), y: Y(r.top), w: r.width * PT, h: r.height * PT, r: parseFloat(cs.borderTopLeftRadius) * PT,
         fill: fill ? cs.backgroundColor : null, stroke: stroke ? cs.borderTopColor : null, sw: parseFloat(cs.borderTopWidth) * PT });
     };
+    // 掛卡版（--fold）：頂邊上下兩條虛線折線
+    const spine = card.querySelector('.spine');
+    if (spine) { line(spine, 'Top'); line(spine, 'Bottom'); }
     // 頁首：店名、頂點徽章、曲風
     const shop = card.querySelector('.shop');
     point(shop, shop.firstChild.textContent.trim(), 'left', shop.firstChild);
@@ -181,6 +184,7 @@ for (var n = 0; n < N; n++) {
     if (it.k === 'line') {
       o = grp.pathItems.add(); o.setEntirePath([[L + it.x1, T - it.y], [L + it.x2, T - it.y]]);
       o.filled = false; o.stroked = true; o.strokeWidth = it.sw; o.strokeColor = color(it.color);
+      if (it.dash) { o.strokeDashes = [1.5, 1.5]; o.name = 'fold'; }
     } else if (it.k === 'rect') {
       o = grp.pathItems.roundedRectangle(T - it.y, L + it.x, it.w, it.h, it.r, it.r);
       o.filled = !!it.fill; if (it.fill) o.fillColor = color(it.fill);
