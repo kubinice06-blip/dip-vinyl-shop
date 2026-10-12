@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 4 批上架（add-20261012-nj4，37 張；卡池 18,909 → 18,946）
+
+- **本批內容**：北歐後段（Marius Neset ×2、Jakob Bro、Mette Henriette）、波蘭（EABS ×2、Kuba Więcek Trio）、德奧瑞荷比（Shake Stew ×2、Michael Wollny Trio、Nik Bärtsch's Ronin、Colin Vallon Trio、STUFF.、De Beren Gieren）、法國（Laurent Bardainne、Thomas de Pourquery ×2、Anne Paceo、Sélène Saint-Aimé、Vincent Peirani、Émile Parisien）、南非與衣索比亞（Bokani Dyer、Thandi Ntuli、Asher Gamedze、Samuel Yirga）、以色列（Shai Maestro ×2、Yonathan Avishai、Omer Avital、Gilad Hekselman）、拉美（Antonio Sánchez、Amaro Freitas ×2、Antonio Loureiro、Camila Meza、Roberto Fonseca、Metá Metá）。
+- **產線**：研究 5 組（34 full／3 thin）→ 鉤子 2 組 → 寫作 2 組（166–240）→ 主線審稿刪 1 句單一來源的榜單說法。刪 2 張：Christian Lillinger《Konus》（電子節拍）、Wacław Zimpel《Lines》（寫定的極簡主義）。年份更正 2 張（Só 2013、Sons of Love 2017），廠牌更正 2 張。
+- **封面**：CAA 35（含 release 層 2）、Discogs 1（registry 295 → 296）、Apple 1。**試聽**：ready 32、unavailable 5。頂點 0；稀有度 uncommon 22、rare 10、epic 5。
+- **寫入**：prepare 0 error → card_catalog 37/37 → KV 37 鍵回讀一致 → 靜態試聽 → seed 37 列 → **published gate 0 error**；子曲風 17,441 → 17,467。
+- **主要檔案**：`batch-progress/add-20261012-nj4/`、`onboarding-manifest-add-20261012-nj4-20261012.json`、`desc-tools/batches/*/add-20261012-nj4*`、`data/discogs-cover-registry.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
 ### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 3 批上架（add-20261012-nj3，39 張；卡池 18,870 → 18,909）
 
 - **本批內容**：芝加哥後段（Rob Mazurek、Chicago Underground Duo、Resavoir、Damon Locks ×2、Isaiah Collier、Tomeka Reid、Nicole Mitchell、Jeff Parker、Marquis Hill、Joshua Abrams）、紐約（Vijay Iyer、Mary Halvorson、Tyshawn Sorey、Kris Davis、Linda May Han Oh、Melissa Aldana、Sullivan Fortner、Theo Croker ×2、Craig Taborn、The Bad Plus、Steve Lehman Octet、James Brandon Lewis）、大樂團與豎琴、歌手（Donny McCaslin、Darcy James Argue、Brandee Younger ×2、Lakecia Benjamin ×2、Jazzmeia Horn ×2）、北歐前段（Elephant9、Fire! Orchestra ×2、Jaga Jazzist ×2、Rymden、Hedvig Mollestad Trio）。
