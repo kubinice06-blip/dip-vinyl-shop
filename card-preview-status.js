@@ -2901,4 +2901,7 @@ window.DipPreviewStatus = Object.freeze({
   "nat birchall|sacred dimension": "unavailable",
   "jamael dean|primordial waters": "unavailable",
   "kassa overall|animals": "unavailable",
+  "brandee younger|somewhere different": "unavailable",
+  "fire! orchestra|exit!": "unavailable",
+  "fire! orchestra|ritual": "unavailable",
 });
