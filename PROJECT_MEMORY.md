@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜首頁「店內挖寶」卡加寄售地點副標
+
+- **改動**：首頁 hub 的「店內挖寶」卡名下方加灰色小字副標「目前於水星藝大書店寄售中」（沿用 `.homehub-card-desc`）。
+- **踩到的坑**：卡名左側像素小圖（44px，絕對定位、垂直置中於卡名）會往下超出卡名約 11px，副標 5px 間距時被壓住；改 `.homehub-solo .homehub-card-desc { margin-top: 14px; }`，副標上緣落在圖下緣之下 3px。
+- **主要檔案**：`index.html`。
+- **驗證**：本機 Playwright 量 390／1280 寬：圖 bottom 491、副標 top 494（不再重疊）；分支預覽確認文字上線。
+
 ### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 5 批上架（add-20261011-dt5，43 張；卡池 19,074 → 19,117）——全線收尾
 
 - **本批內容**：日本 lounge／nu-jazz（Fantastic Plastic Machine、FreeTEMPO、Uyama Hiroto、Cro-Magnon、CALM ×2、MONDAY満ちる、Sleep Walker、Substantial、Fat Jon、haruka nakamura ×2、高木正勝、Ametsub、Masayoshi Fujita ×2、Yosi Horikawa、Lamp）、亞洲流行（Clazziquai Project ×2、Mocca）、folktronica／indietronica（Lali Puna、The Notwist、Tunng、The Books、ISAN、Styrofoam、Helios、Hood、Fridge、Junior Boys、The Album Leaf、Flunk）、chillwave（Small Black、Memory Tapes、Ford & Lopatin、jj、The Radio Dept.、Teen Daze、Poolside、Nite Jewel、Electric Youth、Houses）。

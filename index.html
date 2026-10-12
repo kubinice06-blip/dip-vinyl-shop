@@ -466,8 +466,8 @@
     .homehub-solo { padding: 22px 44px; }
     /* inline-block 讓卡名寬度貼合文字，BETA 才能定位在文字右緣而不是容器右緣 */
     .homehub-solo .homehub-card-name { margin-bottom: 0; position: relative; display: inline-block; }
-    /* 獨立卡的副標（店內挖寶的寄售地點）：卡名 margin-bottom 歸零了，間距補在這 */
-    .homehub-solo .homehub-card-desc { margin-top: 5px; }
+    /* 獨立卡的副標（店內挖寶的寄售地點）：卡名左側小圖高 44px、會往下超出卡名約 11px，副標要落在圖的下緣之下才不會被壓到 */
+    .homehub-solo .homehub-card-desc { margin-top: 14px; }
     /* 「你的收藏」小卡兩欄 */
     .homehub-small-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
     .homehub-small-grid .homehub-card { padding: 18px 14px; }
