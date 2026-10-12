@@ -3,17 +3,17 @@
 店主 2026-10-11：「新爵士2010年後到2026的也很缺 現在nu jazz都不是新世代的 為何」→「像kokoroko 一個低音號當leader的這些也都是新世代的爵士 我上面指的就是爵士 不是downtempo」；看過策展摘要後 2026-10-12 回「開跑」。
 **全線 197 張、5 批**（策展 219 張，主線刪老世代 15、偏離爵士 6、MB 查無 1，見 `batch-progress/newjazz-20261011/rulings.md` 9341–9348）。
 裁定權已下放（CLAUDE.md「接力任務」）：中途不回報，策展／研究／管線裁定自己定、寫進各批 rulings.md；**店主 2026-10-10：PR 綠燈就直接合併，不用問**。
-照 CLAUDE.md「每個工作階段跑 2 批就換」：**一個工作階段跑 2 批**，跑完在本檔「一、進度」更新狀態再收工，下一個工作階段接著跑。
+**2026-10-12 店主「在這開跑」：五批由同一個雲端工作階段全部跑完（研究層 WebSearch 每支壓到 3–4 次）。本線已收尾。**
 
 ## 一、進度
 
 | 批 | 內容 | 張數 | 狀態 |
 |---|---|---:|---|
-| nj1 | 英國：倫敦南區（Theon Cross、Binker and Moses、Joe Armon-Jones…）、Afro／加勒比、Gondwana | 40 | 卡單已備 |
-| nj2 | 英國後段（broken beat、Dinosaur、Fergus McCreadie…）＋美國 LA West Coast Get Down、爵士×嘻哈、芝加哥前段 | 40 | 卡單已備 |
-| nj3 | 芝加哥後段、紐約 post-bop、大樂團、豎琴、歌手、北歐前段（Elephant9…Hedvig Mollestad） | 39 | 卡單已備 |
-| nj4 | 北歐後段、波蘭（EABS）、德奧瑞、法國、南非、以色列、拉美（Amaro Freitas…Metá Metá） | 39 | 卡單已備 |
-| nj5 | 拉美尾段、加澳、日本（H ZETTRIO、fox capture plan、挾間美帆、黒田卓也…）、韓國、印尼 | 39 | 卡單已備 |
+| nj1 | 英國：倫敦南區（Theon Cross、Binker and Moses、Joe Armon-Jones…）、Afro／加勒比、Gondwana | 40 | ✅ 上線 38 張（PR #84） |
+| nj2 | 英國後段（broken beat、Dinosaur、Fergus McCreadie…）＋美國 LA West Coast Get Down、爵士×嘻哈、芝加哥前段 | 40 | ✅ 上線 39 張（PR #85） |
+| nj3 | 芝加哥後段、紐約 post-bop、大樂團、豎琴、歌手、北歐前段（Elephant9…Hedvig Mollestad） | 39 | ✅ 上線 39 張（PR #86） |
+| nj4 | 北歐後段、波蘭（EABS）、德奧瑞、法國、南非、以色列、拉美（Amaro Freitas…Metá Metá） | 39 | ✅ 上線 37 張（PR #87） |
+| nj5 | 拉美尾段、加澳、日本（H ZETTRIO、fox capture plan、挾間美帆、黒田卓也…）、韓國、印尼 | 39 | ✅ 上線 39 張（見 PROJECT_MEMORY） |
 
 卡單：`desc-tools/batches/cards/add-20261012-nj{1..5}-cards.json`（研究 a–e 各 7–8 張；身分全 pinned，MB 已回查，`batch-progress/newjazz-20261011/master.json`）。
 各批 `batch-progress/add-20261012-njN/rulings.md` 還沒建——照 `batch-progress/add-20261011-dt2/rulings.md` 的檔頭格式建。**條號**：nj1 9361–9440、nj2 9441–9520、nj3 9521–9600、nj4 9601–9680、nj5 9681–9760（每批 80 條：研究 a–e 各 10、鉤子 10、寫作 10、主線 10）。downtempo 線 dt3–dt5 用 9101–9340，兩條線不撞號。
