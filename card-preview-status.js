@@ -2904,4 +2904,9 @@ window.DipPreviewStatus = Object.freeze({
   "brandee younger|somewhere different": "unavailable",
   "fire! orchestra|exit!": "unavailable",
   "fire! orchestra|ritual": "unavailable",
+  "shake stew|gris gris": "unavailable",
+  "shake stew|the golden fang": "unavailable",
+  "émile parisien quintet|sfumato": "unavailable",
+  "shai maestro trio|the stone skipper": "unavailable",
+  "metá metá|mm3": "unavailable",
 });
