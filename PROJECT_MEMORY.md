@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 1 批上架（add-20261012-nj1，38 張；卡池 18,793 → 18,831）
+
+- **本批內容**：倫敦新浪潮（Theon Cross ×2、Binker and Moses ×3、Emma-Jean Thackray、Joe Armon-Jones ×2、Maisha、Nérija、SEED Ensemble／seed.、Tom Skinner、Ashley Henry、Chelsea Carmichael、Sarah Tandy、Moses Boyd Exodus、London Brew）、Afro／加勒比（Camilla George ×2、Zara McFarlane ×2、Soweto Kinch ×2、Sarathy Korwar ×3、Nubiyan Twist）、Gondwana 系（Matthew Halsall ×3、Nat Birchall ×2、Chip Wickham、Jasmine Myra、Ancient Infinity Orchestra）、Mansur Brown、Tenderlonious & The 22archestra。
+- **店主**：「在這開跑」——同一個工作階段接著跑上架（研究層 WebSearch 每支壓到 3–4 次）。
+- **產線**：研究 5 組（36 full／2 thin）→ 鉤子 2 組 → 寫作 2 組（202–240、thin 178）→ 主線審稿改 1 句（與 hook 重複）。刪 2 張：Tenderlonious《Hard Rain》（house）、Steam Down《Five Fruit》（EP）。年份更正 2 張（Isang 2017、If You Knew Her 2014），scene／label 更正 4 張。
+- **封面**：CAA 27、Apple 11，縮圖表逐張目視。**試聽**：ready 34、unavailable 4。三軸機器基線、頂點 0；稀有度 rare 18、uncommon 15、epic 5。
+- **寫入**：prepare 0 error → card_catalog 38/38 → KV 38 鍵回讀一致 → 靜態試聽 → seed 38 列 → **published gate 0 error**；子曲風 17,366 → 17,385。
+- **主要檔案**：`batch-progress/add-20261012-nj1/`、`onboarding-manifest-add-20261012-nj1-20261012.json`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261012-nj1*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
 ### 2026-10-12｜dip-vinyl-shop｜新世代爵士（2010–）策展線：策展 219 → 197 張、切 5 批卡單，交新工作階段上架
 
 - **緣由**：店主指出卡池 2010 年後的新世代爵士很缺（「像 kokoroko……這些也都是新世代的爵士……不是 downtempo」），看過策展摘要後回「開跑」。
