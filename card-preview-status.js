@@ -2916,4 +2916,12 @@ window.DipPreviewStatus = Object.freeze({
   "nils petter molvær|khmer": "unavailable",
   "koop|waltz for koop": "unavailable",
   "nouvelle vague|nouvelle vague": "unavailable",
+  "bugge wesseltoft|new conception of jazz: moving": "unavailable",
+  "télépopmusik|angel milk": "unavailable",
+  "gabin|gabin": "unavailable",
+  "dead combo|vol. 1": "unavailable",
+  "ultramarine|united kingdoms": "unavailable",
+  "bajofondo tango club|bajofondo tango club": "unavailable",
+  "bossacucanova|brasilidade": "unavailable",
+  "cibelle|cibelle": "unavailable",
 });
