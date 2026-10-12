@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜店主裁定：接力任務留在同一個工作階段跑，不再「兩批就換」
+
+- **店主原話**：「因為我曾經跑幾批換新 每次開新的都要重新訓練 反而效率很差 所以我都只在同一個做」。
+- **取代** CLAUDE.md「每個工作階段跑 2 批就換新工作階段」那句（雲端改不了 CLAUDE.md，本機請同步修訂）。接力線一律在當前工作階段跑到收尾，不寫「請開新工作階段」的交接。
+- **代價的控管**：WebSearch 是整個工作階段共用額度，所以研究層每支壓到 3 次（嚴格），其餘走 MB／Discogs API、維基 WebFetch、廠牌頁、Bandcamp；同時最多兩批在飛的規則不變。2026-10-12 實證：同一工作階段跑完 dt1、dt2、新世代爵士 nj1–nj5 共 7 批，研究品質未見下滑。
+- **主要檔案**：`PROJECT_MEMORY.md`、`batch-progress/HANDOFF-downtempo-line.md`（改成「同一工作階段接著跑」）。
+
 ### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 5 批上架（add-20261012-nj5，39 張；卡池 18,946 → 18,985）——全線收尾
 
 - **本批內容**：拉美尾段與加拿大（Daymé Arocena、BADBADNOTGOOD、Christine Jensen）、日本（H ZETTRIO ×2、桑原あい ×2、Hiromi ×2、fox capture plan ×3、TRI4TH ×2、JABBERLOOP、bohemianvoodoo ×2、indigo jam unit、SOIL&"PIMP"SESSIONS ×2、黒田卓也 ×2、J-Squad、Answer to Remember ×2、類家心平、松丸契、挾間美帆 ×3）、韓國（Black String ×2、나윤선 ×3、Jihye Lee Orchestra）、印尼（Joey Alexander ×2、Dewa Budjana）。
