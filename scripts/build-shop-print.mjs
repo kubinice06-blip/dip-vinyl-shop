@@ -9,7 +9,10 @@ import { fileURLToPath } from 'node:url';
 const R = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const arg = k => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
 const SHEET = (arg('--sheet') || '').toLowerCase();   // a4：A7 卡 8 張拼一張 A4 橫式（4 欄 × 2 列）
-const OUT = path.resolve(R, arg('--out') || `data/shop/print/shop-${(arg('--size') || 'a6').toLowerCase()}${SHEET ? '-' + SHEET : ''}.html`);
+// --fold（限 A7）：卡片上緣留一段反折片，折成ㄇ字掛在唱片封套上緣——上到下依序是背面反折片 17mm（內容倒印，折到封套背面時才是正的）、
+// 跨封套厚度的頂邊 4mm（兩條折線之間）、正面 84mm（原本的內容，字級整體縮小）
+const FOLD = process.argv.includes('--fold');
+const OUT = path.resolve(R, arg('--out') || `data/shop/print/shop-${(arg('--size') || 'a6').toLowerCase()}${FOLD ? '-fold' : ''}${SHEET ? '-' + SHEET : ''}.html`);
 const pick = arg('--ids') ? new Set(arg('--ids').split(',')) : null;
 const SIZE = (arg('--size') || 'a6').toLowerCase();   // a6 105×148mm（預設）｜a7 74×105mm
 
@@ -48,12 +51,17 @@ const card = ({ i, d }) => {
   const price = i.priceNT ? `NT$ ${Number(i.priceNT).toLocaleString('en-US')}` : '價格請洽店員';
   const sub = [i.pressingYear ? `${i.pressingYear} 年壓片` : '', i.condition ? `品相 ${i.condition}` : ''].filter(Boolean).join('　');
   const len = [...d.text].length;
-  return `<section class="card${len > 225 ? ' long' : ''}${apex ? ' apex apex-' + row[8] : ''}">
-  <header><span class="shop">dip vinyl${apex ? `<span class="apexbadge">${apex.label}<i>${apex.en}</i></span>` : ''}</span><span class="genres">${genres}</span></header>
+  const body = `<header><span class="shop">dip vinyl${apex ? `<span class="apexbadge">${apex.label}<i>${apex.en}</i></span>` : ''}</span><span class="genres">${genres}</span></header>
   <div class="title"><p class="artist">${esc(d.artist)}</p><h1>${esc(d.album)}</h1></div>
   ${axes ? `<div class="axes">${axes}</div>` : ''}
   <p class="text">${esc(d.text)}</p>
-  <footer><span class="sub">${esc(sub)}</span><span class="price">${esc(price)}</span></footer>
+  <footer><span class="sub">${esc(sub)}</span><span class="price">${esc(price)}</span></footer>`;
+  const cls = `card${len > 225 ? ' long' : ''}${apex ? ' apex apex-' + row[8] : ''}${FOLD ? ' fold' : ''}`;
+  if (!FOLD) return `<section class="${cls}">\n  ${body}\n</section>`;
+  return `<section class="${cls}">
+  <div class="flap"><span class="flap-l"><b>dip vinyl</b><span>${esc(d.artist)}</span><span class="flap-al">${esc(d.album)}</span></span><span class="flap-p">${esc(price)}</span></div>
+  <div class="spine"><i>折</i><i>折</i></div>
+  <div class="front">${body}</div>
 </section>`;
 };
 
@@ -106,6 +114,27 @@ h1 { font-size: 10.5pt; line-height: 1.25; }
 .text { margin-top: 2.4mm; font-size: 9pt; line-height: 1.5; }
 .long .text { font-size: 9pt; line-height: 1.5; }
 footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }` : ''}
+${FOLD ? `
+/* 掛卡（ㄇ字折）：反折片 17mm＋頂邊 4mm＋正面 84mm＝105mm；兩條折線是灰色虛線，旁邊印小字「折」 */
+.card.fold { padding: 0; }
+.flap { height: 17mm; flex: none; padding: 0 5.8mm; display: flex; align-items: center; justify-content: space-between; gap: 3mm; transform: rotate(180deg); }
+.flap-l { display: flex; flex-direction: column; gap: .5mm; min-width: 0; font-size: 5.6pt; color: #4a463f; }
+.flap-l b { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 5pt; letter-spacing: .14em; color: #1c1b19; }
+.flap-l span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.flap-al { font-family: "Noto Serif TC", "Noto Serif JP", serif; font-weight: 700; font-size: 7pt; color: #1c1b19; }
+.flap-p { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 9pt; white-space: nowrap; }
+.spine { height: 4mm; flex: none; border-top: .2mm dashed #9a948a; border-bottom: .2mm dashed #9a948a; display: flex; justify-content: space-between; align-items: center; padding: 0 1.2mm; }
+.spine i { font-style: normal; font-size: 4pt; color: #9a948a; }
+.front { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 3mm 5.8mm 4.2mm; }
+header { font-size: 4.6pt; }
+.g { font-size: 5pt; padding: .25mm 1.2mm; } .g i { font-size: 4pt; }
+.apexbadge { font-size: 5pt; padding: .3mm 1.2mm; } .apexbadge i { font-size: 4pt; }
+.title { margin-top: 2.2mm; padding-bottom: 1.4mm; }
+.artist { font-size: 6pt; margin-bottom: .4mm; }
+h1 { font-size: 9.5pt; }
+.axes { padding: 1.1mm 0; } .ax em { font-size: 4.8pt; } .st { font-size: 6.8pt; }
+.text, .long .text { margin-top: 1.8mm; font-size: 7.6pt; line-height: 1.5; }
+footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10pt; }` : ''}
 ${SHEET === 'a4' ? `
 /* A4 橫式 297×210mm 拼 8 張 A7（4 × 2，左右各留 0.5mm）；卡緣畫淺灰虛線當裁切線 */
 @page { size: 297mm 210mm; margin: 0; }
