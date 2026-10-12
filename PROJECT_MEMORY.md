@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士（2010–）策展線：策展 219 → 197 張、切 5 批卡單，交新工作階段上架
+
+- **緣由**：店主指出卡池 2010 年後的新世代爵士很缺（「像 kokoroko……這些也都是新世代的爵士……不是 downtempo」），看過策展摘要後回「開跑」。
+- **策展**：四組（英國 57、美國 63、歐陸與世界 53、亞洲 46）共 219 張、167 位藝人，跨組 0 重複、撞池 0。主線刪 22：1970–80 年代成名的老將 15（Maria Schneider、Henry Threadgill、Wadada Leo Smith、坂田明、The Necks…）、偏離爵士 6（Ishmael Ensemble、WONK、mouse on the keys、BIGYUKI、박지하、Kyoto Jazz Massive）、MB 查無 1（Byron Wallen）。年份最新到 2024；台港中查不到可靠資料未收。
+- **卡單**：197 張全 pinned（MB release-group 逐張回查），切 nj1–nj5（40／40／39／39／39），研究 a–e 各 7–8 張。
+- **交接**：`batch-progress/HANDOFF-newjazz-line.md`（每批流程、條號 9361–9760、與 downtempo 線並行時的合併注意）。這個工作階段已跑滿兩批，上架交下一個工作階段。
+- **主要檔案**：`batch-progress/newjazz-20261011/{curation-a..d.json,master.json,build-master.mjs,build-cards.mjs,build-manifest.mjs,RES/HOOK/WRITER-DISPATCH.md,rulings.md}`、`desc-tools/batches/cards/add-20261012-nj{1..5}-cards.json`。
+- **驗證**：build-master 197 張 MB 回查完成（Live 4、Compilation 1 已裁定照收，rulings 9345）；build-cards 對 seed 18,793 列撞池 0。
+
 ### 2026-10-11｜dip-vinyl-shop｜downtempo 線第 2 批上架（add-20261011-dt2，45 張；卡池 18,748 → 18,793）；dt3–dt5 交下一個工作階段
 
 - **本批內容**：日本 dub（Mute Beat、こだま和文、Dry & Heavy、Little Tempo）、Easy Star All-Stars、ambient dub（Divination、Bill Laswell、Ott、Kanka、Groundation、Dub Colossus、Prince Fatty、Banco de Gaia、Nordub）、英國 trip-hop 第二波（Olive、Alpha、Smoke City、Mono、Esthero、Martina Topley-Bird、Beth Orton、Jhelisa）、Ninja Tune／Mo' Wax 系（The Herbaliser、Kid Koala、Funki Porcini、Money Mark、Up, Bustle & Out、Quantic、Red Snapper）、beat／chill electronica（Yppah、Shigeto、Romare、Submotion Orchestra、FKJ、tomppabeats）、Lovage、Howie B、Rae & Christian。
