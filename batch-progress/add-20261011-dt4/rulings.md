@@ -104,3 +104,4 @@
 - **9254** 主線審稿 writer-2（22 篇）未改字：年份逐張一致，無禁語、無媒體名、無轉述引導詞；Suba 過世一句標時序且克制；Cibelle 全文無性別代名詞。
 - **9255** 主線審稿 writer-1（22 篇）：Hocus Pocus《73 touches》刪去無來源支撐、語意含混的「73 鍵的規格也見於某些鋼琴」（225 → 210）；Waldeck「此前他只出過一張專輯」照收。其餘 21 篇未改字，年份逐張一致。
 - **9256** 上架前回查 40 張 CAA 封面，Bebel Gilberto《Tanto tempo》、Federico Aubele《Gran Hotel Buenos Aires》連續 HTTP 500（dt3 9179 上架後才發現同型問題），改取已釘定試聽的 Apple 官方圖。封面最終 CAA 38、Apple 6。
+- **9257** 寫入照 §8：prepare 0 error → card_catalog 44/44 → KV 44 鍵（wrangler v4 Success!，verify-wave-kv 44/44 逐字一致）→ 靜態試聽 36＋負面狀態 8 → seed 44 列（19,030 → 19,074）→ build-seed-genres → mark-manifest-published（卡池已有 44）→ **published gate 0 error**。子曲風：/album-genres 預熱（標籤 42、查無 2），build-genre-tree --pull --write：card-subgenres 17,536 → 17,570（新卡落位 34/44）。
