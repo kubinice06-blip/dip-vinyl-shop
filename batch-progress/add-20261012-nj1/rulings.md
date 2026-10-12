@@ -51,3 +51,16 @@
 - **9398**（Matthew Halsall《Salute to the Sun》）：與卡單一致；「更沉靜的 Halsall」無來源，不採。2021 年另有現場版《Live from Hallé St Peter's》（GOND047），非本卡。樂評頁面多被封鎖或 5xx，獨立樂評面薄，status 可由主線視需要降為 thin。
 - **9399**（組內工具紀錄）：本組 WebSearch 用 4 次（Steam Down、My East Is Your West、Jungle Run、When the World Was One），其餘走 MB、Discogs API、維基與廠牌頁；Bandcamp、AllMusic、Wayback 對本環境不通。Steam Down 與 Nubiyan Twist 在英文維基皆無條目。
 - **9400**（保留）。
+
+## 研究 c 組（條號 9381–9390）
+
+- **9381 Camilla George《Isang》推翻策展層年份 2016**：卡單 year 取自 MB first-release-date（MB 另一個 release 標 2017 GB）。錄音在 2016-04-11（Discogs 版本註記，The Bunker, Welwyn），但 UK 發行是 2017 年 1 月（The Jazz Mann 2017-01-17 評、London Jazz News 2017-01-31、Discogs／Wikipedia 皆 2017，巡迴 2017 年 2–3 月）。建議卡片年份改 2017，簡介可寫「2016 年 4 月錄音、2017 年 1 月發行」。Wikipedia 稱 Camilla George 名義，Discogs 與樂評掛名 Camilla George Quartet，卡池只此一張。
+- **9382 Zara McFarlane《If You Knew Her》推翻策展層年份 2013**：MB 2013-12-11 是日本 Beat Records 先行版（BRC-401）；The Jazz Mann 寫「Released on January 20th 2014」（BWOOD0112CDP，UK），MB 另有 2014-02-11 US 版，Wikipedia 與 All About Jazz 皆稱 2014。建議卡片年份改 2014。獎項（2014 MOBO Best Jazz Act 得獎等）來自 Wikipedia 藝人獎項表，是藝人獎、非專輯獎，寫作層勿寫成本專輯得獎。製作人與錄音場地查不到，不寫。
+- **9383 Soweto Kinch《Nonagram》推翻策展層概念**：策展層寫「九曲概念作，探討英國的社會議題」，Kinch 官網自述卻是九邊形、數字／形狀／頻率（「3」用 60Hz 對 180Hz）、神聖幾何、cymatic、古埃及 Ennead；社會議題是《The Legend of Mike Smith》（2013）與《The Black Peril》（2019）。實際為雙 CD 十八首（每片九首，Discogs）。寫作層與鉤子層不得寫「英國社會議題」。獨立樂評查不到（WebSearch 額度用盡、猜網址 404），status 標 thin。曲名 Discogs 作〈Sevenly〉，MB 作〈Seventy〉，不採。
+- **9384 Moses Boyd Exodus《Displaced Diaspora》補強**：發行日 2018-09-28 屬實，但曲子是 2015 年錄音的選輯（All About Jazz Chris May 2018-10-19；與 2016 單曲〈Rye Lane Shuffle〉同批 2015 錄音場次）。簡介務必帶出「2015 年錄、2018 年才發行」，不要寫成 2018 新錄。MB 兩個同名 RG（9ad050eb／b7bc4fe0）同標題同日期，卡單釘 9ad050eb，不影響。樂手名單單一來源 Discogs；Wikipedia 稱 Exodus 樂團成員為 Theon Cross、Artie Zaitz、Binker Golding、Nathaniel Cross。
+- **9385 London Brew 為 12 人即興集體**：無單一 leader；製作人兼吉他手 Martin Terefe 與執行製作 Bruce Lampcov 召集，錄音三天（Wikipedia）／Discogs 備註 2020-12-07，兩者並存、facts 只寫「2020 年 12 月」。Terefe「幾乎不剪接、以非爵士專輯方式混音」出自 Wikipedia 轉述。Metacritic 84（6 篇）為 Wikipedia 數字。
+- **9386 Zara McFarlane《Arise》翻唱數**：All About Jazz 稱〈Fisherman〉是「唯一非原創」，但 London Jazz News 與 Discogs 顯示〈Peace Begins Within〉為 Nora Dean 作品，故翻唱兩首（Nora Dean、The Congos）。Metacritic 87、Bandcamp 2017 百大第 38、AllMusic Best of 2017 皆來自 Wikipedia 專輯條目。製作人 Moses Boyd 與 Zara McFarlane（Discogs），Soup Studio 錄音。
+- **9387 Camilla George《The People Could Fly》書名**：George 自己稱「a book of African stories」，Wikipedia 條目為 Virginia Hamilton 1985 年改寫的《The People Could Fly: American Black Folktales》（Knopf，Leo and Diane Dillon 插畫），facts 採後者。錄音日 2017-01-04／05（Fish Factory, London）僅 Discogs 版本註記，單一來源。
+- **9388 Soweto Kinch《The New Emancipation》**：只有 BBC 評（Colin Buttimer）、Discogs 與英維基樂手名單，未查到作者對標題「新解放」的自述，寫作層勿詮釋標題含義，也勿寫「先行者」。〈Paris Heights〉被 BBC 認為過長，是批評，不是亮點。
+- **9389 老將與時序**：Dark Matter 入圍 2020 Mercury Prize、Ibio-Ibio（2022）、Junior Murvin 辭世（2013-12，早於 2014 英國發行、錄音已完成）等：僅 Murvin 一筆與作品直接綁定、已在 facts 標時序；其餘未入 facts。
+- **9390 WebSearch 使用**：本組用滿 4 次（Displaced Diaspora、Isang、Arise、If You Knew Her 各 1 次），Soweto Kinch 兩張與 People Could Fly、London Brew 未再搜。其餘用 MB API、Discogs API（匿名可讀 masters／releases／search）、英維基（API 與 raw wikitext）、各樂評頁（The Jazz Mann、London Jazz News、All About Jazz、BBC）與 Kinch 官網。Bandcamp Daily 被擋、Guardian 猜網址 404；Bing 頁面抓取無用，未採。qa-batch 研究層：c 組 8 張通過（7 full、1 thin）。
