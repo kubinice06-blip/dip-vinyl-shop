@@ -2909,4 +2909,5 @@ window.DipPreviewStatus = Object.freeze({
   "émile parisien quintet|sfumato": "unavailable",
   "shai maestro trio|the stone skipper": "unavailable",
   "metá metá|mm3": "unavailable",
+  "나윤선|lento": "unavailable",
 });

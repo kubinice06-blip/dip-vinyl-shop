@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 5 批上架（add-20261012-nj5，39 張；卡池 18,946 → 18,985）——全線收尾
+
+- **本批內容**：拉美尾段與加拿大（Daymé Arocena、BADBADNOTGOOD、Christine Jensen）、日本（H ZETTRIO ×2、桑原あい ×2、Hiromi ×2、fox capture plan ×3、TRI4TH ×2、JABBERLOOP、bohemianvoodoo ×2、indigo jam unit、SOIL&"PIMP"SESSIONS ×2、黒田卓也 ×2、J-Squad、Answer to Remember ×2、類家心平、松丸契、挾間美帆 ×3）、韓國（Black String ×2、나윤선 ×3、Jihye Lee Orchestra）、印尼（Joey Alexander ×2、Dewa Budjana）。
+- **產線**：研究 5 組（34 full／5 thin）→ 鉤子 2 組 → 寫作 2 組（139–240）→ 主線審稿未改字（派寫作前先把 Eclipse 鉤子的媒體名改成「樂評」）。無刪卡；年份更正 2 張（挾間美帆兩張取日本 Verve 首發年），廠牌更正 4 張。試聽以羅馬字重查補 9 張。
+- **封面**：CAA 30、Apple 9（含 Spectrum 側標改乾淨圖）。**試聽**：ready 38、unavailable 1。頂點 0；稀有度 uncommon 21、rare 17、epic 1。
+- **寫入**：prepare 0 error → card_catalog 39/39 → KV 52 鍵回讀一致 → 靜態試聽 → seed 39 列 → **published gate 0 error**；子曲風 17,467 → 17,494。
+- **全線合計**：策展 219 → 主線刪 22（老世代 15、偏離爵士 6、MB 查無 1）→ 研究層再刪 5（house、EP、ambient、電子節拍、極簡主義各 1）→ **上架 192 張**（nj1 38、nj2 39、nj3 39、nj4 37、nj5 39），卡池 18,793 → 18,985。交接單 `batch-progress/HANDOFF-newjazz-line.md` 已標全線完成。
+- **主要檔案**：`batch-progress/add-20261012-nj5/`、`onboarding-manifest-add-20261012-nj5-20261012.json`、`desc-tools/batches/*/add-20261012-nj5*`、`batch-progress/HANDOFF-newjazz-line.md`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
 ### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 4 批上架（add-20261012-nj4，37 張；卡池 18,909 → 18,946）
 
 - **本批內容**：北歐後段（Marius Neset ×2、Jakob Bro、Mette Henriette）、波蘭（EABS ×2、Kuba Więcek Trio）、德奧瑞荷比（Shake Stew ×2、Michael Wollny Trio、Nik Bärtsch's Ronin、Colin Vallon Trio、STUFF.、De Beren Gieren）、法國（Laurent Bardainne、Thomas de Pourquery ×2、Anne Paceo、Sélène Saint-Aimé、Vincent Peirani、Émile Parisien）、南非與衣索比亞（Bokani Dyer、Thandi Ntuli、Asher Gamedze、Samuel Yirga）、以色列（Shai Maestro ×2、Yonathan Avishai、Omer Avital、Gilad Hekselman）、拉美（Antonio Sánchez、Amaro Freitas ×2、Antonio Loureiro、Camila Meza、Roberto Fonseca、Metá Metá）。
