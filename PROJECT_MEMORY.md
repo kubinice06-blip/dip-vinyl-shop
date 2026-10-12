@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 3 批上架（add-20261011-dt3，45 張；卡池 18,985 → 19,030）
+
+- **本批內容**：trip-hop／abstract hip-hop 後段（Fila Brazillia、Bowery Electric、Craig Armstrong、Dot Allison、Hooverphonic、Mandalay、Alpha、Earthling、Mr. Scruff、Lemon Jelly、Supreme Beings of Leisure、Dntel、Blue States、DJ Food、DJ Vadim、Hidden Orchestra ×2、Nostalgia 77、Lack of Afro、Kid Koala、The Herbaliser、Aim、Fingathing、Madlib、Blue Sky Black Death、Free the Robots、jinsang）、chill electronica（Emancipator、Tourist、Maribou State、Rhye、Chet Faker、Petit Biscuit）、歐陸前段（Jazzanova、dZihan & Kamien、Sofa Surfers、Waldeck、Trüby Trio、Bugge Wesseltoft、Nils Petter Molvær、Koop、Jaga Jazzist、Skalpel、Télépopmusik、Nouvelle Vague）。
+- **店主**：「跑完downtempo」——同一工作階段接著跑 dt3–dt5（研究層 WebSearch 每支 ≤3）。
+- **產線**：研究 5 組（44 full／1 thin）→ 鉤子 2 組 → 寫作 2 組（175–240）→ 主線審稿改 3 句轉述引導詞 hook 為直述。無刪卡；年份更正 2 張（Craig Armstrong 1998、Wesseltoft 1996），廠牌更正 8 張。
+- **封面**：CAA 43、Apple 1、Discogs 1（兩張是上架後 CAA 回 500 才改）。**試聽**：ready 39、unavailable 6（Nouvelle Vague 的 Apple 只有 KCRW 現場重錄版，不收）。頂點 0；稀有度 rare 34、uncommon 11。
+- **寫入**：prepare 0 error → card_catalog 45/45 → KV 45 鍵回讀一致 → 靜態試聽 → seed 45 列 → **published gate 0 error**；子曲風 17,494 → 17,536。
+- **主要檔案**：`batch-progress/add-20261011-dt3/`、`onboarding-manifest-add-20261011-dt3-20261012.json`、`desc-tools/batches/*/add-20261011-dt3*`、`data/discogs-cover-registry.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
 ### 2026-10-12｜dip-vinyl-shop｜店主裁定：接力任務留在同一個工作階段跑，不再「兩批就換」
 
 - **店主原話**：「因為我曾經跑幾批換新 每次開新的都要重新訓練 反而效率很差 所以我都只在同一個做」。
