@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 2 批上架（add-20261012-nj2，39 張；卡池 18,831 → 18,870）
+
+- **本批內容**：英國後段（Ruby Rushton、Vels Trio、Dinosaur ×2、Laura Jurd、Kit Downes、Neil Cowley Trio、Phronesis、Elliot Galvin、Fergus McCreadie ×2、Polar Bear、Xhosa Cole、Emma Rawicz）、LA（Terrace Martin、Miles Mosley、Cameron Graves、Brandon Coleman、Ryan Porter、Sam Gendel ×2、Carlos Niño、Mark de Clive-Lowe、Jamael Dean）、爵士×嘻哈（Kassa Overall ×2、Nate Smith、Keyon Harrold、Snarky Puppy ×2、Terri Lyne Carrington）、芝加哥前段（Steve Lehman、Jaimie Branch ×3、Matana Roberts ×2、Ben LaMar Gay ×2）。
+- **產線**：研究 5 組（38 full／1 thin）→ 鉤子 2 組 → 寫作 2 組（191–240、thin 164）→ 主線審稿刪 1 句媒體評價。刪 1 張：Carlos Niño《Placenta》（ambient 拼貼）。場景／曲風／廠牌更正數張（West Coast Get Down 只留三張屬實者；Obsidian 加 classical）。
+- **封面**：CAA 34、Apple 5（含 2 張 CAA 帶側標／貼紙改用 Apple 乾淨圖）。**試聽**：ready 37、unavailable 2。頂點 0；稀有度 rare 15、uncommon 15、epic 9。
+- **寫入**：prepare 0 error → card_catalog 39/39 → KV 39 鍵回讀一致 → 靜態試聽 → seed 39 列 → **published gate 0 error**；子曲風 17,385 → 17,412。
+- **主要檔案**：`batch-progress/add-20261012-nj2/`、`onboarding-manifest-add-20261012-nj2-20261012.json`、`desc-tools/batches/*/add-20261012-nj2*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
 ### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 1 批上架（add-20261012-nj1，38 張；卡池 18,793 → 18,831）
 
 - **本批內容**：倫敦新浪潮（Theon Cross ×2、Binker and Moses ×3、Emma-Jean Thackray、Joe Armon-Jones ×2、Maisha、Nérija、SEED Ensemble／seed.、Tom Skinner、Ashley Henry、Chelsea Carmichael、Sarah Tandy、Moses Boyd Exodus、London Brew）、Afro／加勒比（Camilla George ×2、Zara McFarlane ×2、Soweto Kinch ×2、Sarathy Korwar ×3、Nubiyan Twist）、Gondwana 系（Matthew Halsall ×3、Nat Birchall ×2、Chip Wickham、Jasmine Myra、Ancient Infinity Orchestra）、Mansur Brown、Tenderlonious & The 22archestra。
