@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-13｜dip-vinyl-shop｜店主指示：新增專輯要同時新增藝人介紹
+
+- **規則**：每批上架後，本批藝人中沒有介紹、也沒在 `batches/artist/progress.json` 排隊的，補進名冊、切 `ar-d-xxx`，照 `dip-artist-intro` skill 跑完。寫進 `CLAUDE.md`「新增專輯固定公式」、`ALBUM_ONBOARDING.md` §11、`dip-card-create` SKILL.md Phase 5。
+- **盤點（2026-10-13）**：卡池藝人 8,813 位，有介紹 5,808；排隊中（ar-d-064…116 共 53 批未跑）2,084；不在名冊 844、在名冊但沒排隊 77。新世代爵士線 144 位缺 137、downtempo 線 183 位缺 154（另 17 位已排隊）。
+- **主要檔案**：`CLAUDE.md`、`ALBUM_ONBOARDING.md`、`.claude/skills/dip-card-create/SKILL.md`
+- **驗證**：純文件改動。
+
 ### 2026-10-12｜dip-vinyl-shop｜首頁「店內挖寶」卡加寄售地點副標
 
 - **改動**：首頁 hub 的「店內挖寶」卡名下方加灰色小字副標「目前於水星藝大書店寄售中」（沿用 `.homehub-card-desc`）。
