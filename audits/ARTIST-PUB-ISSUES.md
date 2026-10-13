@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 938 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 940 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -942,3 +942,5 @@
 | ar-d-125 | FKJ | French Kiwi Juice | 也替電影院調過音響 | Homegrown 訪談只說他原本打算當電影院音響工程師、念聲音與混音，沒有說他實際做過電影院調音；此句可能言過其實。 | https://homegrown.co.in/homegrown-explore/hybrid-soul-hybrid-beats-in-conversation-with-fkj-prior-to-his-india-tour |
 | ar-d-125 | Lack of Afro | Press On | 他在這間廠牌的作品目錄就從這張算起 | 維基與事實庫都寫 Freestyle 先發行的是出道單曲〈Wait A Minute〉，《Press On》是他在這間廠牌的第一張專輯，不是第一件作品。 | https://en.wikipedia.org/wiki/Lack_of_Afro |
 | ar-d-125 | Maribou State | Portraits | Liam 爸媽家花園的盡頭，有一間小棚屋 | AU Review 訪談只說工作室是「其中一人花園裡的小棚屋」、背靠林地，沒有指明是 Liam 的、也沒有說是父母家；Berkhamsted 的說法只見維基。上線簡介的「爸媽家」「Liam」找不到出處，建議改成中性寫法或核對。 | https://www.theaureview.com/music/maribou-state-london-talk-about-their-new-lp-portraits-and-their-upcoming-australian-tour/ |
+| ar-d-126 | Bent | Programmed to Love | 兩人也是 Sport 廠牌的老闆，首作的英國首版出在自家旗下 | 英文與德文維基只把 Sport 列為發行廠牌（與 Ministry of Sound 並列），沒有『Bent 是廠牌老闆』的說法；搜尋摘要的 Nail Tolliday 簡介稱 Sport 是 Ministry of Sound 旗下的專屬子廠牌。建議改成『Ministry of Sound 旗下的 Sport 廠牌』或查證後再定。 | https://en.wikipedia.org/wiki/Bent_(band) |
+| ar-d-126 | Lali Puna | Scary World Theory | The Notwist 的主唱與鼓手，後來都加入了她的樂團 | 維基只說 Markus Acher 是 The Notwist 與 Tied & Tickled Trio 的主唱兼吉他手，Christoph Brandner 是在 Tied & Tickled Trio 與 Acher 同團的鼓手；沒有他是 The Notwist 鼓手的說法。建議改成『The Notwist 的主唱，與他同在 Tied & Tickled Trio 的鼓手』。 | https://en.wikipedia.org/wiki/Lali_Puna |

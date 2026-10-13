@@ -953,3 +953,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 4 處：Jah Wobble & Bill Laswell 刪媒體名 Bass Musician Magazine、改「被認為影響了」；Jhelisa 刪《Time Out》、改「被形容為」；Mute Beat 正文的「小玉和文」改卡池名「こだま和文」（同一人舊寫法，與こだま和文篇一致）；Smoke City 刪銀唱片認證（在世者認證倍數）。
 - 保留：Olive〈You're Not Alone〉英國榜第 1、Smoke City〈Underwater Love〉第 4（份量核心，補洞層已標必要例外）；Prince Far I、Dub Syndicate（Style Scott）只寫辭世年份、不寫案情；Creation Rebel facts「停擺逾四十年」與時間線不符，寫作層改「停擺多年」照收。
 - 身分：Alpha（希臘字母）、Olive（橄欖樹）、Divination（占卜）、Kanka（消歧頁）、Creation Rebel（Burning Spear 精選輯）維基預抓皆錯頁，已作廢。
+
+## ar-d-125（2026-10-13）
+
+- 38 位上架（18 full、20 thin），1 位不寫：jinsang（素材只有「加州 hip-hop 製作人」一句，未達 thin 門檻；韓國鋼琴家 Jinsang Lee 同名不同人，已排除）。qa「缺 1 位」即此，比照ar-d-118 モア、ar-d-119 桃井かおり 的 skipped 先例。審稿修 0 處。
+- 保留：Chet Faker〈Talk Is Cheap〉triple j Hottest 100 第 1 名（聽眾票選、補洞層兩源並標必要例外，是這個名號份量的核心）；Tourist〈Stay with Me〉葛萊美年度歌曲；Lovage 第一句只寫「Dan the Automator 領軍的合作計畫」，素材無國籍，不硬補。
+- 不寫：tomppabeats「最具影響力之一」、FKJ「French Touch 繼承人」、Dntel 的 RA「定義性曲目」、Aim 的《Sunday Times》評語（單一媒體評價）。
