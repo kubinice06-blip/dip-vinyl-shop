@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 910 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 913 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -914,3 +914,6 @@
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
 | ar-d-117 | Black Eyed Peas | Elephunk | 〈Where Is the Love?〉在十五個國家奪冠 | 英文維基首段寫 peaked atop music charts in 13 countries；數字待核，建議改 13 或去掉數字。 | https://en.wikipedia.org/wiki/Black_Eyed_Peas |
+| ar-d-121 | Carlos Niño & Friends | More Energy Fields, Current | 打擊樂手 Carlos Niño 從 2008 年起用「& Friends」這塊招牌合作 | 廠牌官方藝人介紹寫成立於 2011 年（解散多數其他團體之後），與 2008 年不一致；建議刪年份或改寫「約十年來」，待確認。 | https://www.intlanthem.com/artist-bios/carlos-nino |
+| ar-d-121 | Terri Lyne Carrington & Social Science | Waiting Game | 第二張碟換成四個樂章、長 42 分鐘的管弦組曲 | Shore Fire 新聞稿與 arts.gov 都說第二碟是一次錄成的即興組曲，由 Esperanza Spalding 與 Carrington、Parks、Stevens 演奏，未提管弦編制；「管弦」「四個樂章」「42 分鐘」需對 Motéma／Discogs 曲目表再核，不確定就改寫成「一次錄成的即興組曲」。 | https://shorefire.com/releases/entry/terri-lyne-carrington-and-social-science-double-album-waiting-game |
+| ar-d-121 | Jaimie Branch | Fly or Die Fly or Die Fly or Die ((world war)) | 得年 39 歲，死因是意外藥物過量 | 上線簡介寫明死因。按店主規則，過世者預設只收年份與公開層級；且 Paste 與 International Anthem 的訃告都沒有公布死因，只維基單源寫明。建議簡介刪去死因，只留日期、地點與年齡。 | https://www.pastemagazine.com/music/jaimie-branch/dead-at-39 |

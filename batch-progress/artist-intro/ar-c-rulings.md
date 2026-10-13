@@ -918,3 +918,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 別名：Cassie Kinoshi's seed → SEED Ensemble（同一團改名），寫進 aliases.json，不另寫。其餘「領隊 & 編制」掛名照 2026-09-30 先例（伍佰 vs 伍佰 & China Blue）分開寫。
 - 名冊 collab 旗標：腳本按 `&`／`and`／`'s` 判定，主線把團名本身含 & 的（Smith & Mighty、Dry & Heavy、Ford & Lopatin 等 14 個）改回 false。
 - **WebSearch 額度**：本工作階段已跑 nj／dt 十批研究，剩餘額度不明；補洞派工加註「事實庫＋維基預抓已夠兩源的格不搜；每位 WebSearch 至多 2 次，其餘靠 WebFetch 已知站」。若中途額度用盡，停派、交下一個工作階段。
+
+## ar-d-120（2026-10-13）
+
+- 34 位上架（25 full、9 thin：Maisha、Nérija、London Brew、Matthew Halsall & The Gondwana Orchestra、Chip Wickham、Jasmine Myra、Ancient Infinity Orchestra、Mansur Brown、Vels Trio），0 位不寫。
+- 審稿修 3 處：Ashley Henry 開頭「教父母經營 sound system」主詞不清，改「Ashley Henry 的教父母經營…，他從小…」；Joe Armon-Jones 刪「被《時代》雜誌列入 2019 年度十大專輯」（雜誌榜單名次＋媒體名，兩源未必獨立）；Zara McFarlane 多餘空格。
+- 保留：Neil Cowley「給不愛爵士的人聽的爵士樂手」（被形容為、非最高級）；單一樂評的最高級（Dinosaur、22a、Myra、Phronesis）寫作層已不寫，照收。Elliot Galvin 篇的 Parliamentary Jazz Awards 主詞是 Dinosaur（兩源），Dinosaur 篇不寫（該格 notes 不收），照收。
+- 身分：Brandon Coleman 維基預抓是美式足球員（121 組，已作廢）；wikidata 的 Sarathy Korwar 出生年 1950 明顯錯，不採。
