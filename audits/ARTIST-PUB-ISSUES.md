@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 922 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 926 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -926,3 +926,7 @@
 | ar-d-123 | Daymé Arocena | Nueva Era | Gilles Peterson 在倫敦一場發表會上讓她登台 | 本位開頁讀到的 World Music Central 與 NOW 皆未提到這段發掘經過，查無來源；若事實庫研究稿有出處則維持，沒有就建議刪去或改成可證實的說法（Brownswood 發行首作）。 | https://worldmusiccentral.org/artist-profiles-dayme-arocena/ |
 | ar-d-123 | Black String | Karma | 隔年獲韓國大眾音樂獎最佳爵士與跨界專輯 | ACT 與韓國文化院都只說樂團獲該獎，ACT 寫的是 Best Jazz and Crossover Performance（無年份），韓國文化院寫 2020 年 Album（註記為 2017 年演出）；搜尋摘要另見 2017 年（第 14 屆）得獎名單列 Mask Dance。得獎專輯與年份未能確認，主線請核對韓國大眾音樂獎官網歷屆名單後再決定是否保留『隔年』的說法。 | https://www.koreanculture.org/performing-arts/2022/09/09/black-string |
 | ar-d-123 | 나윤선 | Same Girl | 2010 年 10 月登上法國爵士銷量第一，隔年獲金唱片認證 | 韓文維基的獎項列表把法國金唱片（Same Girl）列在 2012 年，與「隔年（2011）」可能差一年；本層未找到認證單位原始頁，僅供店主核對，不確定是上線簡介錯。 | https://ko.wikipedia.org/wiki/%EB%82%98%EC%9C%A4%EC%84%A0 |
+| ar-d-124 | Dub Syndicate | Stoned Immaculate | 他被視為 Sherwood 的導師型人物，1983 年 9 月 15 日遭搶劫槍殺 | 維基原文為在搶劫中遇害、『據稱與金錢糾紛有關』，案情無獨立來源，且慣例對已故者只留年份與公開層級；建議改為『1983 年 9 月 15 日遇害』，並把『被視為導師型人物』改成維基的 may be considered 語氣。 | https://en.wikipedia.org/wiki/Prince_Far_I |
+| ar-d-124 | Jah Wobble's Invaders of the Heart | Rising Above Bedlam | 那年入圍的共九張 | 英文維基 Mercury Prize 頁 1992 年列出九張入圍加上得主 Screamadelica 共十張；視『入圍』是否含得主，張數說法會不同，建議改成不寫張數或寫『十張入圍名單』。待店主定。 | https://en.wikipedia.org/wiki/Mercury_Prize |
+| ar-d-124 | Jah Wobble's Invaders of the Heart | Rising Above Bedlam | Natacha Atlas 唱另外三首 | 英文維基 Rising Above Bedlam 頁寫 Natacha Atlas 與 Justin Adams 也在盤上唱，Wobble 自己同樣開口；『另外三首都是 Atlas』無法在這一層核實，建議改成較籠統的寫法或再對 Discogs 曲目署名。 | https://en.wikipedia.org/wiki/Rising_Above_Bedlam |
+| ar-d-124 | Massive Attack v Mad Professor | No Protection | 1995 年 2 月 20 日英國版上市 | 英文維基寫發行日為 1995 年 2 月 17 日；可能是版本或地區差異，建議改查 Discogs／英國版目錄再定，或改寫成『1995 年 2 月』。 | https://en.wikipedia.org/wiki/No_Protection_(Massive_Attack_album) |
