@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 916 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 922 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -919,4 +919,10 @@
 | ar-d-121 | Jaimie Branch | Fly or Die Fly or Die Fly or Die ((world war)) | 得年 39 歲，死因是意外藥物過量 | 上線簡介寫明死因。按店主規則，過世者預設只收年份與公開層級；且 Paste 與 International Anthem 的訃告都沒有公布死因，只維基單源寫明。建議簡介刪去死因，只留日期、地點與年齡。 | https://www.pastemagazine.com/music/jaimie-branch/dead-at-39 |
 | ar-d-121 | Ben LaMar Gay | Open Arms to Open Us | 是他在這間廠牌的第二號作品 | 「第二號作品」容易被讀成目錄號 2；Bandcamp 頁面載明是在 International Anthem 的第二張專輯，目錄號為 IARC 0051。建議改寫為「第二張專輯」。 | https://intlanthem.bandcamp.com/album/open-arms-to-open-us |
 | ar-d-121 | Damon Locks Black Monument Ensemble | Where Future Unfolds | 2018 年 11 月 15 日首演，場地是 Garfield Park 的溫室 | Walker 節目介紹寫團的首次演出是 2017 年的 Hyde Park Art Center；Garfield Park Conservatory 是 2018 年那場、專輯由那場錄成。「首演」恐指專輯曲目的首演或完整陣容的首次演出，建議改寫為「2018 年在 Garfield Park 溫室演出，十首直接收進唱片」，避免與團的首場演出混淆。11 月 15 日這個日期本層未查到來源。 | https://walkerart.org/magazine/program-notes-for-damon-lockss-black-monument-ensemble |
+| ar-d-122 | Nik Bärtsch's Ronin | Awase | ECM 的發行月份是 2018 年 5 月，Ronin 在這家廠牌累積到四張 | ECM 目錄另有 2012 年現場專輯《Ronin Live》，若計入則 Awase 是 ECM 第五張發行、第四張錄音室專輯；「四張」需限定為錄音室專輯。此條依據為搜尋結果列出的 ECM 目錄，未開頁核對。 | https://www.allaboutjazz.com/awase-nik-bartsch-ecm-records-review-by-mike-jurkovic.php |
+| ar-d-122 | Thomas de Pourquery & Supersonic | Play Sun Ra | Victoires du jazz 把年度器樂爵士專輯頒給了它 | Syos、Jazz à Vienne、Belgrade Jazz Festival 等多個來源都稱該獎是 2014 Victoires du jazz 的「年度專輯」（Album of the Year）；只有法文維基獎項欄寫「器樂爵士專輯」，同頁另一處寫年度專輯。建議改成「年度專輯」或查官方類別名後再定。 | https://syos.co/en/blogs/our-artists/thomas-de-pourquery |
 | ar-d-122 | Vincent Peirani | Living Being | 1998 年拿到手風琴獎才轉向爵士 | 法文維基寫 1996 年在巴黎 CNSMD 拿古典手風琴首獎，轉向爵士在 2000 年前後，與英文維基的 1998 年說法不一；店主可考慮改成不寫年份，例如『拿到古典手風琴獎項後轉向爵士』。屬待查而非確定錯誤。 | https://fr.wikipedia.org/wiki/Vincent_Peirani |
+| ar-d-123 | Samuel Yirga | Guzo | 同團的 Dubulah 替他製作這張個人首作 | Real World 藝人頁把《Hagere》稱為他的 debut solo release，與《Guzo》頁「首張個人專輯」並列；《Hagere》性質未查到，建議店主本機確認「首作」說法與製作人名，單源不足以斷言有誤。 | https://realworldrecords.com/artists/samuel-yirga/ |
+| ar-d-123 | Daymé Arocena | Nueva Era | Gilles Peterson 在倫敦一場發表會上讓她登台 | 本位開頁讀到的 World Music Central 與 NOW 皆未提到這段發掘經過，查無來源；若事實庫研究稿有出處則維持，沒有就建議刪去或改成可證實的說法（Brownswood 發行首作）。 | https://worldmusiccentral.org/artist-profiles-dayme-arocena/ |
+| ar-d-123 | Black String | Karma | 隔年獲韓國大眾音樂獎最佳爵士與跨界專輯 | ACT 與韓國文化院都只說樂團獲該獎，ACT 寫的是 Best Jazz and Crossover Performance（無年份），韓國文化院寫 2020 年 Album（註記為 2017 年演出）；搜尋摘要另見 2017 年（第 14 屆）得獎名單列 Mask Dance。得獎專輯與年份未能確認，主線請核對韓國大眾音樂獎官網歷屆名單後再決定是否保留『隔年』的說法。 | https://www.koreanculture.org/performing-arts/2022/09/09/black-string |
+| ar-d-123 | 나윤선 | Same Girl | 2010 年 10 月登上法國爵士銷量第一，隔年獲金唱片認證 | 韓文維基的獎項列表把法國金唱片（Same Girl）列在 2012 年，與「隔年（2011）」可能差一年；本層未找到認證單位原始頁，僅供店主核對，不確定是上線簡介錯。 | https://ko.wikipedia.org/wiki/%EB%82%98%EC%9C%A4%EC%84%A0 |
