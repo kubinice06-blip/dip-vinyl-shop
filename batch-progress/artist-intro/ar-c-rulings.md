@@ -946,3 +946,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：Antonio Sánchez「累計 4 座葛萊美」（獎項數非銷量／名次，不在在世者避免清單內）；Metá Metá「被稱為最具聲望的團體之一」（被稱為口氣）。不寫：《紐約時報》年度榜、DownBeat／Modern Drummer 票選、Tower 排行與「最重要樂團」單源、SOIL 的 John Peel 獎等維基同源事蹟、挾間美帆「25 for the Future」。
 - 나윤선 正文照韓文原名並附羅馬拼音一次；劇團名（學田）資料寫錯字，正文只寫導演金敏基。Answer to Remember 的素材都是石若駿本人，寫計畫加這個人。
 - 名詞：QA 的「你」禁語會誤擋「迷你」，寫作層已改「小型電子琴」；之後 qa-artist 可加白名單（未改）。
+
+## ar-d-124（2026-10-13）
+
+- 39 位上架（28 full、11 thin：Alpha & Omega meets The Disciples、Deadbeat、Fenin、Little Tempo、Divination、Ott、Kanka、Dub Colossus、Prince Fatty、Sly & Robbie meet Nils Petter Molvær、Alpha），0 位不寫。
+- 審稿修 4 處：Jah Wobble & Bill Laswell 刪媒體名 Bass Musician Magazine、改「被認為影響了」；Jhelisa 刪《Time Out》、改「被形容為」；Mute Beat 正文的「小玉和文」改卡池名「こだま和文」（同一人舊寫法，與こだま和文篇一致）；Smoke City 刪銀唱片認證（在世者認證倍數）。
+- 保留：Olive〈You're Not Alone〉英國榜第 1、Smoke City〈Underwater Love〉第 4（份量核心，補洞層已標必要例外）；Prince Far I、Dub Syndicate（Style Scott）只寫辭世年份、不寫案情；Creation Rebel facts「停擺逾四十年」與時間線不符，寫作層改「停擺多年」照收。
+- 身分：Alpha（希臘字母）、Olive（橄欖樹）、Divination（占卜）、Kanka（消歧頁）、Creation Rebel（Burning Spear 精選輯）維基預抓皆錯頁，已作廢。
+
+## ar-d-125（2026-10-13）
+
+- 38 位上架（18 full、20 thin），1 位不寫：jinsang（素材只有「加州 hip-hop 製作人」一句，未達 thin 門檻；韓國鋼琴家 Jinsang Lee 同名不同人，已排除）。qa「缺 1 位」即此，比照ar-d-118 モア、ar-d-119 桃井かおり 的 skipped 先例。審稿修 0 處。
+- 保留：Chet Faker〈Talk Is Cheap〉triple j Hottest 100 第 1 名（聽眾票選、補洞層兩源並標必要例外，是這個名號份量的核心）；Tourist〈Stay with Me〉葛萊美年度歌曲；Lovage 第一句只寫「Dan the Automator 領軍的合作計畫」，素材無國籍，不硬補。
+- 不寫：tomppabeats「最具影響力之一」、FKJ「French Touch 繼承人」、Dntel 的 RA「定義性曲目」、Aim 的《Sunday Times》評語（單一媒體評價）。
