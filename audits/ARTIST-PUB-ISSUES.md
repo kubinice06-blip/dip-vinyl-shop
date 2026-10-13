@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 926 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 938 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -930,3 +930,15 @@
 | ar-d-124 | Jah Wobble's Invaders of the Heart | Rising Above Bedlam | 那年入圍的共九張 | 英文維基 Mercury Prize 頁 1992 年列出九張入圍加上得主 Screamadelica 共十張；視『入圍』是否含得主，張數說法會不同，建議改成不寫張數或寫『十張入圍名單』。待店主定。 | https://en.wikipedia.org/wiki/Mercury_Prize |
 | ar-d-124 | Jah Wobble's Invaders of the Heart | Rising Above Bedlam | Natacha Atlas 唱另外三首 | 英文維基 Rising Above Bedlam 頁寫 Natacha Atlas 與 Justin Adams 也在盤上唱，Wobble 自己同樣開口；『另外三首都是 Atlas』無法在這一層核實，建議改成較籠統的寫法或再對 Discogs 曲目署名。 | https://en.wikipedia.org/wiki/Rising_Above_Bedlam |
 | ar-d-124 | Massive Attack v Mad Professor | No Protection | 1995 年 2 月 20 日英國版上市 | 英文維基寫發行日為 1995 年 2 月 17 日；可能是版本或地區差異，建議改查 Discogs／英國版目錄再定，或改寫成『1995 年 2 月』。 | https://en.wikipedia.org/wiki/No_Protection_(Massive_Attack_album) |
+| ar-d-124 | Mute Beat | クワイエット・レゲエ | 1989 年離開 Mute Beat | RBMA 寫小玉和文 1989 年 11 月宣布離團、樂團 1990 年初解散；日文維基小玉條目寫 1990 年脫退。建議改寫成『1989 年底宣布離團』。 | https://daily.redbullmusicacademy.com/2014/10/mute-beat-feature |
+| ar-d-124 | こだま和文 | クワイエット・レゲエ | 1989 年離開 Mute Beat | RBMA 寫小玉和文 1989 年 11 月宣布離團、樂團 1990 年初解散；日文維基寫 1990 年脫退；建議改寫成『1989 年底宣布離團』。 | https://daily.redbullmusicacademy.com/2014/10/mute-beat-feature |
+| ar-d-124 | Kanka | Dub Communication | 他 1977 年出生 | 法文維基正文寫 1977、資訊框寫 1976，自相矛盾，沒有獨立第二源能定案；建議簡介改成不寫出生年 | https://fr.wikipedia.org/wiki/Kanka_(musicien) |
+| ar-d-124 | Prince Fatty | Survival of the Fattest | Prince Fatty 這名字是 2005 年替 Stüssy 錄單曲時取的，用來向 King Tubby 致意 | 「向 King Tubby 致意」只見於維基；Pelanconi 在 United Reggae 訪談把名字說成學生時代的玩笑，在 Rhythm Passport 訪談說是樂手形容他的聲音很 fat；三處說法不一致，建議改成不下定論的寫法（名字隨替 Stüssy 錄的單曲而來） | https://unitedreggae.com/articles/n1104/100512/interview-prince-fatty |
+| ar-d-124 | Beth Orton | Trailer Park | Andrew Weatherall 負責三首的混音 | 維基專輯條目與 Orton 條目都把 Weatherall 列為整張專輯的製作人（與 Victor Van Vugt 並列，條目未分軌），沒有提『三首混音』；建議對 Discogs 分軌 credit 核對，確認是『製作』還是『三首混音』再保留 | https://en.wikipedia.org/wiki/Trailer_Park_(album) |
+| ar-d-124 | Jhelisa | Language Electric | 1987 年移居倫敦 | 1987 年只見維基條目單源；Spitfire 的訪談稿說她是 1990 年代搬到倫敦，Offbeat 訪談沒有給年份；來源不一致，建議拿掉年份或改寫成『後來搬到倫敦』 | https://composer.spitfireaudio.com/en/articles/jhelisa-on-releasing-7-keys-the-power-of-using-vocals-for-composing |
+| ar-d-125 | Money Mark | Mark's Keyboard Repair | 原是木工，替 Beastie Boys 修大門才結識他們 | Flood 2017 專訪中他自稱流傳的『灰姑娘版』故事並不全真，只確認自己確為木工；建議改成『原是木工，經 Mario Caldato Jr. 牽線認識 Beastie Boys』。 | https://floodmagazine.com/44207/keyboard-money-mark-is-still-havin-it/ |
+| ar-d-125 | Romare | Projections | 他搬到巴黎買了唱盤 | Ninja Tune 官網寫的是『買了唱盤、搬到巴黎，在那裡開始用二手唱片的取樣混音』，順序相反；建議改成『買了唱盤、搬到巴黎』。 | https://ninjatune.net/artist/romare |
+| ar-d-125 | FKJ | French Kiwi Juice | 生長在法國圖爾 | 維基專輯條目稱生於圖爾，但 HKFP 訪談稱他在巴黎長大；「生長在」可能需改成「生於」。 | https://hongkongfp.com/2024/04/13/fkj-music-interview-fkj-brings-his-unique-style-back-to-hong-kong/ |
+| ar-d-125 | FKJ | French Kiwi Juice | 也替電影院調過音響 | Homegrown 訪談只說他原本打算當電影院音響工程師、念聲音與混音，沒有說他實際做過電影院調音；此句可能言過其實。 | https://homegrown.co.in/homegrown-explore/hybrid-soul-hybrid-beats-in-conversation-with-fkj-prior-to-his-india-tour |
+| ar-d-125 | Lack of Afro | Press On | 他在這間廠牌的作品目錄就從這張算起 | 維基與事實庫都寫 Freestyle 先發行的是出道單曲〈Wait A Minute〉，《Press On》是他在這間廠牌的第一張專輯，不是第一件作品。 | https://en.wikipedia.org/wiki/Lack_of_Afro |
+| ar-d-125 | Maribou State | Portraits | Liam 爸媽家花園的盡頭，有一間小棚屋 | AU Review 訪談只說工作室是「其中一人花園裡的小棚屋」、背靠林地，沒有指明是 Liam 的、也沒有說是父母家；Berkhamsted 的說法只見維基。上線簡介的「爸媽家」「Liam」找不到出處，建議改成中性寫法或核對。 | https://www.theaureview.com/music/maribou-state-london-talk-about-their-new-lp-portraits-and-their-upcoming-australian-tour/ |
