@@ -932,3 +932,17 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 截止日後事實核實：Nate Smith 以《LIVE-ACTION》獲 2026 年（第 68 屆）葛萊美最佳另類爵士專輯、另以〈Big Fish〉得最佳器樂與人聲編曲——WebSearch 對到 grammy.com 與 VCU 新聞，照收。Ryan Porter 2026 年去世（補洞三源一致），只寫年份與享年，不寫車禍。
 - 保留：Jaimie Branch 只寫 2022 年在家中過世與享年，不寫死因；上線簡介寫出死因，記進 pubIssues。單一媒體年度榜（紐約時報、NPR 票選）與 DownBeat 名次寫作層不寫，照收；Mitchell／Davis／Oh 改用爵士新聞工作者協會年度獎。
 - 身分：Brandon Coleman 維基預抓是美式足球員，已作廢。Polar Bear、Xhosa Cole、Emma Rawicz 是英國樂手（切批依卡單順序落在本批），照寫。
+
+## ar-d-122（2026-10-13）
+
+- 34 位上架（29 full、5 thin：Fire! Orchestra、Rymden、Hedvig Mollestad Trio、Nik Bärtsch's Ronin、Bokani Dyer Trio），0 位不寫。審稿修 0 處。
+- 截止日後事實核實：Sullivan Fortner《Southern Nights》獲 2026 年葛萊美最佳爵士器樂專輯、生涯第三座（grammy.com、PIAS）；Craig Taborn 2025 年 MacArthur Fellow（macfound.org）——照收。
+- 保留：Marius Neset《Lion》寫 Spellemannprisen 得獎（挪威維基頁與英文維基；snl 寫入圍，屬維基家族兩源，conflicts 已裁）；Fortner 的 Fred Hersch 評語屬具名樂手評語，非樂評最高級，照收。DownBeat、紐約時報、NPR、《Polityka》《Jazzism》年度榜寫作層不寫，照收。
+- Steve Lehman Octet 只寫編制與 Lehman 的師承／獎項，不重寫生平（ar-d-121 已寫）。
+
+## ar-d-123（2026-10-13）
+
+- 34 位上架（25 full、9 thin：Samuel Yirga、Shai Maestro Trio、Yonathan Avishai、Antonio Loureiro、TRI4TH、indigo jam unit、J-Squad、類家心平、Dewa Budjana），0 位不寫。審稿修 0 處。
+- 保留：Antonio Sánchez「累計 4 座葛萊美」（獎項數非銷量／名次，不在在世者避免清單內）；Metá Metá「被稱為最具聲望的團體之一」（被稱為口氣）。不寫：《紐約時報》年度榜、DownBeat／Modern Drummer 票選、Tower 排行與「最重要樂團」單源、SOIL 的 John Peel 獎等維基同源事蹟、挾間美帆「25 for the Future」。
+- 나윤선 正文照韓文原名並附羅馬拼音一次；劇團名（學田）資料寫錯字，正文只寫導演金敏基。Answer to Remember 的素材都是石若駿本人，寫計畫加這個人。
+- 名詞：QA 的「你」禁語會誤擋「迷你」，寫作層已改「小型電子琴」；之後 qa-artist 可加白名單（未改）。
