@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-13｜dip-vinyl-shop｜新世代爵士＋downtempo 兩線補藝人介紹（ar-d-120～127，289 位上架；介紹 5,808 → 6,097）
+
+- **起因**：店主 2026-10-13「現在新增專輯也要同時新增藝人介紹」→「補」。兩線上架藝人 327 位，扣已有介紹 18、已排隊 17、別名 1，290 位補進名冊（`addedBy` add-20261012-nj／add-20261011-dt，tier D），切 8 批。
+- **結果**：289 位上架（新世代爵士 136：120 英國、121 美國、122 美國與歐陸、123 南非／以色列／拉美／日韓／東南亞；downtempo 153：124 dub／On-U／dub techno／日本 dub、125 trip-hop／beat／chillhop、126 歐陸與拉丁、127 日本 lounge／folktronica／chillwave）；jinsang 素材不足不寫；Cassie Kinoshi's seed 設為 SEED Ensemble 別名。full 198、thin 91。
+- **審稿**：主線逐位審，合計修 13 處（媒體名入正文 3、在世者認證倍數 1、雜誌年度榜 1、譯名／名稱統一 3、空格與主詞 5）。2025–26 年事實以 WebSearch 核實（Nate Smith、Sullivan Fortner 2026 葛萊美，Craig Taborn 2025 MacArthur）。
+- **產線**：補洞 32 支（Sonnet，WebSearch 每位 ≤2）＋寫作 16 支（Opus），同時最多兩批在飛；PR #96、#97、#98 已合併，126／127 隨本 PR。上線簡介待修 pubIssues 彙整到 `audits/ARTIST-PUB-ISSUES.md`（954 條，含 dt5《Vapor》兩處）。
+- **主要檔案**：`batch-progress/artist-intro/roster-20260929.json`、`batch-progress/artist-intro/ar-c-rulings.md`、`desc-tools/batches/artist/{progress.json,aliases.json,cut,facts,research,output}/ar-d-12*`、`data/artist-intros/*.json`、`audits/ARTIST-PUB-ISSUES.md`
+- **驗證**：qa-artist gap／out 每批 0 處（ar-d-125 只剩 skipped 的 jinsang）；build-artist-intros 321 份成品、6,097 位、64 分片。
+
 ### 2026-10-13｜dip-vinyl-shop｜店主指示：新增專輯要同時新增藝人介紹
 
 - **規則**：每批上架後，本批藝人中沒有介紹、也沒在 `batches/artist/progress.json` 排隊的，補進名冊、切 `ar-d-xxx`，照 `dip-artist-intro` skill 跑完。寫進 `CLAUDE.md`「新增專輯固定公式」、`ALBUM_ONBOARDING.md` §11、`dip-card-create` SKILL.md Phase 5。

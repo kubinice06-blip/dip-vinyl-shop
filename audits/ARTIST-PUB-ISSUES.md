@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 940 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 954 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -942,5 +942,19 @@
 | ar-d-125 | FKJ | French Kiwi Juice | 也替電影院調過音響 | Homegrown 訪談只說他原本打算當電影院音響工程師、念聲音與混音，沒有說他實際做過電影院調音；此句可能言過其實。 | https://homegrown.co.in/homegrown-explore/hybrid-soul-hybrid-beats-in-conversation-with-fkj-prior-to-his-india-tour |
 | ar-d-125 | Lack of Afro | Press On | 他在這間廠牌的作品目錄就從這張算起 | 維基與事實庫都寫 Freestyle 先發行的是出道單曲〈Wait A Minute〉，《Press On》是他在這間廠牌的第一張專輯，不是第一件作品。 | https://en.wikipedia.org/wiki/Lack_of_Afro |
 | ar-d-125 | Maribou State | Portraits | Liam 爸媽家花園的盡頭，有一間小棚屋 | AU Review 訪談只說工作室是「其中一人花園裡的小棚屋」、背靠林地，沒有指明是 Liam 的、也沒有說是父母家；Berkhamsted 的說法只見維基。上線簡介的「爸媽家」「Liam」找不到出處，建議改成中性寫法或核對。 | https://www.theaureview.com/music/maribou-state-london-talk-about-their-new-lp-portraits-and-their-upcoming-australian-tour/ |
+| ar-d-126 | Nils Petter Molvær | Khmer | 這張《Khmer》是他個人掛名的首作 | SNL 列第一張掛名專輯為與 Robyn Schulkowsky 合作的《Hastening Westward》（1995）；英文維基卻稱《Khmer》為個人首作。來源不一致，建議改為不下『首作』定論（例如『個人名義的 ECM 專輯』或『奠定名聲的個人專輯』）。 | https://snl.no/Nils_Petter_Molv%C3%A6r |
 | ar-d-126 | Bent | Programmed to Love | 兩人也是 Sport 廠牌的老闆，首作的英國首版出在自家旗下 | 英文與德文維基只把 Sport 列為發行廠牌（與 Ministry of Sound 並列），沒有『Bent 是廠牌老闆』的說法；搜尋摘要的 Nail Tolliday 簡介稱 Sport 是 Ministry of Sound 旗下的專屬子廠牌。建議改成『Ministry of Sound 旗下的 Sport 廠牌』或查證後再定。 | https://en.wikipedia.org/wiki/Bent_(band) |
 | ar-d-126 | Lali Puna | Scary World Theory | The Notwist 的主唱與鼓手，後來都加入了她的樂團 | 維基只說 Markus Acher 是 The Notwist 與 Tied & Tickled Trio 的主唱兼吉他手，Christoph Brandner 是在 Tied & Tickled Trio 與 Acher 同團的鼓手；沒有他是 The Notwist 鼓手的說法。建議改成『The Notwist 的主唱，與他同在 Tied & Tickled Trio 的鼓手』。 | https://en.wikipedia.org/wiki/Lali_Puna |
+| ar-d-126 | Hocus Pocus | 73 touches | 南特的爵士 hip-hop 團 Hocus Pocus，此時只剩 MC 兼製作 20Syl 與 DJ Greem | Universal Music France 官方頁與 Le Peuple du Rock 都寫 2001 年起已擴編成現場樂團（鍵盤、貝斯、吉他），法文維基也列 2000 至 2004 年起的現場樂手；若『只剩兩人』指的是 MC 與 DJ 的核心，寫法可以，若指整個團則不準，建議改成『核心是 20Syl 與 DJ Greem，另有現場樂手』。 | https://www.universalmusic.fr/artistes/30079849936 |
+| ar-d-126 | Gabin | Gabin | 羅馬雙人組 Gabin | 義大利文維基、英文維基與 Qobuz 都只寫『義大利』二人組，沒有任何已開頁的來源寫羅馬；『羅馬』僅見搜尋摘要（說 Clary 是羅馬的 chill room DJ），未核實，建議改成『義大利雙人組』或另找來源確認。 | https://it.wikipedia.org/wiki/Gabin_(gruppo_musicale) |
+| ar-d-126 | Imam Baildi | Imam Baildi | 另外自己寫了 3 首器樂曲 | 官網寫這 3 首原創器樂曲是以老希臘器樂錄音的取樣為底做出來的，並非全然從零自寫；建議改成『另有 3 首以老器樂錄音取樣做成的原創器樂曲』。 | https://www.imambaildi.com/?p=374 |
+| ar-d-126 | Chambao | Endorfinas en la mente | 11 首裡有 10 首出自他們自己，唯一的翻唱是 Camarón de la Isla 唱紅的〈Volando voy〉 | Amazon.es 的曲目列表出現第 15 首〈Instinto humano〉，表示某個版本不只 11 首（可能是再版或加料版，也可能是列表錯誤）；請對照 Discogs 406307 的原版曲目數，確認簡介說的是哪個版本。 | https://www.amazon.es/Endorfinas-En-Mente-Chambao/dp/B0000V8CCM |
+| ar-d-126 | Suba | São Paulo Confessions | 1990 年 3 月 15 日抵達聖保羅 | 維基（Suba (musician)）寫 3 月 15 日，musicabrasileira.org 的 Suba: Tributo 介紹寫 5 月 15 日，兩處日期不一致；建議改成只寫「1990 年抵達聖保羅」。 | https://musicabrasileira.org/suba-tributo/ |
+| ar-d-126 | Bajofondo Tango Club | Bajofondo Tango Club | 兩人在馬德里重逢，把計畫當成一座音樂實驗室 | 維基與世界音樂中心都沒有「在馬德里重逢」的說法，查不到來源；請店主對一次，查不到就拿掉這句。 | https://en.wikipedia.org/wiki/Bajofondo |
+| ar-d-127 | Da Lata | Songs From the Tin | 團員是 Chris Franck 與 Patrick Forge 這兩個倫敦人 | Franck 生於德國、六歲起住英國，說「倫敦人」過粗；Da Lata 本身是倫敦的團，可改寫成「倫敦的團」 | https://en.wikipedia.org/wiki/Chris_Franck |
+| ar-d-127 | Sleep Walker | The Voyage | 2000 年成軍的日本爵士團 Sleep Walker | 來源不一：MusicBrainz 記 2000 年成立，日文維基資訊欄寫 1998 年起活動；日文維基另記 2000 年的 12 吋單曲〈Ai-No-Kawa〉。成軍年沒有兩個一致來源，建議上線簡介改成「日本的爵士團」或不提成軍年 | https://ja.wikipedia.org/wiki/SLEEP_WALKER |
+| ar-d-127 | Yosi Horikawa | Vapor | Yosi Horikawa 在大阪長大，家裡和音樂不親 | 英文維基寫家人很少涉足音樂，但 Mixmag 訪談寫他父親聽爵士、古典與日本流行，兩源不一致，建議改成不談家人與音樂的關係 | https://mixmag.asia/feature/yosi-horikawa-travels-the-worlds-most-obscure-corners-to-source-unique-field-recordings |
+| ar-d-127 | Yosi Horikawa | Vapor | 出道作 16 首的聲音全由他自己錄製 | 《Vapor》是首張專輯，不是出道作；他的第一張作品是法國 Eklektik Records 的 EP《Touch》，2012 年另有 EP《Wandering》，建議改成『首張專輯』 | https://en.wikipedia.org/wiki/Yosi_Horikawa |
+| ar-d-127 | Mocca | My Diary | 《My Diary》的銷量將近 15 萬張 | 只有英文維基寫『估計約 15 萬張，是 2000 年代印尼最暢銷的獨立專輯』，屬單源估計值，找不到第二源；建議改成『據估計』或刪去數字 | https://en.wikipedia.org/wiki/Mocca_(band) |
+| ar-d-127 | Fridge | Happiness | Fridge 成團於 1995 年 | 維基與 Wikidata 為 1995 年，RA 2023 年重發評論寫 1996 年，兩說並存；年份是否保留請店主斟酌，改成『1990 年代中期』最穩。 | https://ra.co/reviews/35511 |
+| ar-d-127 | Houses | A Quiet Darkness | 德州的 Sonic Ranch Studios 包辦錄音與混音 | 維基寫錄音含加州 Desert Center 廢棄房屋、學校、小屋的田野錄音，Sonic Ranch 是『完成』專輯之處；『包辦錄音』可能說過頭，建議改為『在德州 Sonic Ranch 完成』或查 Discogs 製作名單再定 | https://en.wikipedia.org/wiki/Dexter_Tortoriello |

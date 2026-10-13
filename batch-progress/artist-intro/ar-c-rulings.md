@@ -959,3 +959,23 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 38 位上架（18 full、20 thin），1 位不寫：jinsang（素材只有「加州 hip-hop 製作人」一句，未達 thin 門檻；韓國鋼琴家 Jinsang Lee 同名不同人，已排除）。qa「缺 1 位」即此，比照ar-d-118 モア、ar-d-119 桃井かおり 的 skipped 先例。審稿修 0 處。
 - 保留：Chet Faker〈Talk Is Cheap〉triple j Hottest 100 第 1 名（聽眾票選、補洞層兩源並標必要例外，是這個名號份量的核心）；Tourist〈Stay with Me〉葛萊美年度歌曲；Lovage 第一句只寫「Dan the Automator 領軍的合作計畫」，素材無國籍，不硬補。
 - 不寫：tomppabeats「最具影響力之一」、FKJ「French Touch 繼承人」、Dntel 的 RA「定義性曲目」、Aim 的《Sunday Times》評語（單一媒體評價）。
+
+## ar-d-126（2026-10-13）
+
+- 39 位上架（26 full、13 thin），0 位不寫。審稿修 1 處：A Man Called Adam 多餘空格。
+- 保留：Dead Combo「葡萄牙文化部長稱…最有影響力的音樂計畫之一」（官方具名聲明、份量核心）；Suba、José Padilla、Olivier Libaux、Pedro Gonçalves 只寫辭世年份與享年，Suba 不寫火災細節；Cibelle 全文不用他／她（維基用中性代名詞）。
+- 不寫：Mark Barrott 轉述兩家媒體的評價、Nicola Conte「義大利 acid jazz 奠基者」單一媒體說法、DJ Magazine 星等、「ECM 最不尋常的專輯」。
+- Nils Petter Molvær、Bugge Wesseltoft 與本線 Sly & Robbie meet Molvær、Rymden 兩篇比對過，句子不重複。
+
+## ar-d-127（2026-10-13）
+
+- 36 位上架（24 full、12 thin），0 位不寫。審稿修 1 處：haruka nakamura 的動畫電影片名《Look Back》改台灣譯名《驀然回首》。
+- 保留：CALM 的事實全出自一篇訪談，第二條 src 是已上線卡片的 Discogs 藝人頁（只佐證深川清隆＝CALM）；Fat Jon「Nujabes 後期受他影響」以據說口氣寫；Lamp〈夢うつつ〉經 TikTok 在西方走紅、2025 年北美巡演照收。
+- 不寫：Ametsub「坂本龍一年度最佳」（單源）、Mocca 榜單名次與銷量、Small Black／Memory Tapes／jj／Fridge 的單一樂評最高級評價。Helios 國籍兩源不一，正文不寫國籍。
+- 已上線專輯簡介待修（pubIssues）：Yosi Horikawa《Vapor》「家裡和音樂不親」與「出道作」兩處（dt5 剛上架）、Da Lata「兩個倫敦人」、Sleep Walker 成軍年等，彙整在 audits/ARTIST-PUB-ISSUES.md。
+
+## 兩線補介紹收尾（ar-d-120～127）
+
+- 290 位排入 8 批，**289 位上架**（新世代爵士 136、downtempo 153；jinsang 素材不足不寫）＋ SEED Ensemble 別名 1 位；藝人介紹 5,808 → 6,097。
+- 審稿合計修 13 處；2025–26 年事實（Nate Smith、Sullivan Fortner 葛萊美，Craig Taborn MacArthur）以 WebSearch 核實。補洞層 WebSearch 每位壓到 2 次以內，八批未觸額度上限。
+- 全程同一工作階段接力，PR #96、#97、#98 已合併；最後兩批（126、127）隨收尾 PR 上線。
