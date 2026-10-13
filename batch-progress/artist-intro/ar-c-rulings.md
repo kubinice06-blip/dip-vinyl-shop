@@ -911,3 +911,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 本輪新增的裁定形狀：thin 聲音句若只剩「影響名單」或「曲目題材」也不寫（Lewis Capaldi、Rich Kirby & Michael & Carrie Kline，比照曲風標籤）；「身分兩源、聲音單源以『據介紹／被形容為』寫」可接受（倒車入庫、煙雨飄渺、Kathy Heideman）；健康細節若直接促成聲音轉變可保留（Richard Crandell 改彈 mbira）。超額放行七例，皆依齊豫或第二源先例。中文名藝人一律寫「中國」「台灣」「香港」，兩岸與香港政治不寫。
 - 名冊身分錯誤由研究層更正多處（頂樓的馬戲團是上海團、隨性樂團是台語搖滾、Kembara 在新加坡成軍、Jimmy Carter and Dallas County Green 是 country rock、Francesco Guccini 已於 2026 年 8 月過世等），皆照研究層改寫。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；何勇簡介「至今唯一」需改過去式（2026 年過世）；卡池年份存疑（Kim Jung Mi 1968→1973、Modern Folk Üçlüsü 1974／1975，另沿第六輪 Trouble《Psalm 9》1984 等）。
+
+## 新世代爵士＋downtempo 兩線補介紹（ar-d-120～127，2026-10-13）
+
+- 店主 2026-10-13「現在新增專輯也要同時新增藝人介紹」→「補」。兩線上架藝人 327 位，扣已有介紹 18、已排隊 17、別名 1，**290 位補進名冊**（`addedBy` add-20261012-nj／add-20261011-dt，tier D，shard null），nj 136 位切 ar-d-120～123、dt 153 位切 ar-d-124～127。
+- 別名：Cassie Kinoshi's seed → SEED Ensemble（同一團改名），寫進 aliases.json，不另寫。其餘「領隊 & 編制」掛名照 2026-09-30 先例（伍佰 vs 伍佰 & China Blue）分開寫。
+- 名冊 collab 旗標：腳本按 `&`／`and`／`'s` 判定，主線把團名本身含 & 的（Smith & Mighty、Dry & Heavy、Ford & Lopatin 等 14 個）改回 false。
+- **WebSearch 額度**：本工作階段已跑 nj／dt 十批研究，剩餘額度不明；補洞派工加註「事實庫＋維基預抓已夠兩源的格不搜；每位 WebSearch 至多 2 次，其餘靠 WebFetch 已知站」。若中途額度用盡，停派、交下一個工作階段。
