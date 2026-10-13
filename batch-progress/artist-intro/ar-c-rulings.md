@@ -925,3 +925,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 3 處：Ashley Henry 開頭「教父母經營 sound system」主詞不清，改「Ashley Henry 的教父母經營…，他從小…」；Joe Armon-Jones 刪「被《時代》雜誌列入 2019 年度十大專輯」（雜誌榜單名次＋媒體名，兩源未必獨立）；Zara McFarlane 多餘空格。
 - 保留：Neil Cowley「給不愛爵士的人聽的爵士樂手」（被形容為、非最高級）；單一樂評的最高級（Dinosaur、22a、Myra、Phronesis）寫作層已不寫，照收。Elliot Galvin 篇的 Parliamentary Jazz Awards 主詞是 Dinosaur（兩源），Dinosaur 篇不寫（該格 notes 不收），照收。
 - 身分：Brandon Coleman 維基預抓是美式足球員（121 組，已作廢）；wikidata 的 Sarathy Korwar 出生年 1950 明顯錯，不採。
+
+## ar-d-121（2026-10-13）
+
+- 34 位上架（28 full、6 thin：Sam Gendel & Sam Wilkes、Jamael Dean、Ben LaMar Gay、Chicago Underground Duo、Resavoir、Joshua Abrams），0 位不寫。審稿修 0 處。
+- 截止日後事實核實：Nate Smith 以《LIVE-ACTION》獲 2026 年（第 68 屆）葛萊美最佳另類爵士專輯、另以〈Big Fish〉得最佳器樂與人聲編曲——WebSearch 對到 grammy.com 與 VCU 新聞，照收。Ryan Porter 2026 年去世（補洞三源一致），只寫年份與享年，不寫車禍。
+- 保留：Jaimie Branch 只寫 2022 年在家中過世與享年，不寫死因；上線簡介寫出死因，記進 pubIssues。單一媒體年度榜（紐約時報、NPR 票選）與 DownBeat 名次寫作層不寫，照收；Mitchell／Davis／Oh 改用爵士新聞工作者協會年度獎。
+- 身分：Brandon Coleman 維基預抓是美式足球員，已作廢。Polar Bear、Xhosa Cole、Emma Rawicz 是英國樂手（切批依卡單順序落在本批），照寫。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 913 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 916 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -917,3 +917,6 @@
 | ar-d-121 | Carlos Niño & Friends | More Energy Fields, Current | 打擊樂手 Carlos Niño 從 2008 年起用「& Friends」這塊招牌合作 | 廠牌官方藝人介紹寫成立於 2011 年（解散多數其他團體之後），與 2008 年不一致；建議刪年份或改寫「約十年來」，待確認。 | https://www.intlanthem.com/artist-bios/carlos-nino |
 | ar-d-121 | Terri Lyne Carrington & Social Science | Waiting Game | 第二張碟換成四個樂章、長 42 分鐘的管弦組曲 | Shore Fire 新聞稿與 arts.gov 都說第二碟是一次錄成的即興組曲，由 Esperanza Spalding 與 Carrington、Parks、Stevens 演奏，未提管弦編制；「管弦」「四個樂章」「42 分鐘」需對 Motéma／Discogs 曲目表再核，不確定就改寫成「一次錄成的即興組曲」。 | https://shorefire.com/releases/entry/terri-lyne-carrington-and-social-science-double-album-waiting-game |
 | ar-d-121 | Jaimie Branch | Fly or Die Fly or Die Fly or Die ((world war)) | 得年 39 歲，死因是意外藥物過量 | 上線簡介寫明死因。按店主規則，過世者預設只收年份與公開層級；且 Paste 與 International Anthem 的訃告都沒有公布死因，只維基單源寫明。建議簡介刪去死因，只留日期、地點與年齡。 | https://www.pastemagazine.com/music/jaimie-branch/dead-at-39 |
+| ar-d-121 | Ben LaMar Gay | Open Arms to Open Us | 是他在這間廠牌的第二號作品 | 「第二號作品」容易被讀成目錄號 2；Bandcamp 頁面載明是在 International Anthem 的第二張專輯，目錄號為 IARC 0051。建議改寫為「第二張專輯」。 | https://intlanthem.bandcamp.com/album/open-arms-to-open-us |
+| ar-d-121 | Damon Locks Black Monument Ensemble | Where Future Unfolds | 2018 年 11 月 15 日首演，場地是 Garfield Park 的溫室 | Walker 節目介紹寫團的首次演出是 2017 年的 Hyde Park Art Center；Garfield Park Conservatory 是 2018 年那場、專輯由那場錄成。「首演」恐指專輯曲目的首演或完整陣容的首次演出，建議改寫為「2018 年在 Garfield Park 溫室演出，十首直接收進唱片」，避免與團的首場演出混淆。11 月 15 日這個日期本層未查到來源。 | https://walkerart.org/magazine/program-notes-for-damon-lockss-black-monument-ensemble |
+| ar-d-122 | Vincent Peirani | Living Being | 1998 年拿到手風琴獎才轉向爵士 | 法文維基寫 1996 年在巴黎 CNSMD 拿古典手風琴首獎，轉向爵士在 2000 年前後，與英文維基的 1998 年說法不一；店主可考慮改成不寫年份，例如『拿到古典手風琴獎項後轉向爵士』。屬待查而非確定錯誤。 | https://fr.wikipedia.org/wiki/Vincent_Peirani |
