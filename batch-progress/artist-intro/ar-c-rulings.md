@@ -1301,3 +1301,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## 第九輪二十批接力（ar-d-084～103，2026-10-14 起）
 
 - 範圍：電子段 B 字頭起。開工前合併 origin/main（另一工作階段已上 ar-d-117～127，新世代爵士與 downtempo 兩線）；比對過 ar-d-084～116 的卡鍵與已上線 6,845 位無重疊。沿用第八輪的審稿形狀（電子段聲音句要點名具體手法）。
+
+## ar-d-084（2026-10-14）
+
+- 38 位上架（30 full、8 thin：Bernard Xolotl、Bob Sinclar、Bola、Breakbot、Carbon Based Lifeforms、Casino Versus Japan、Charles Dodge、Christ.）。1 位不寫：Booka Shade（電子段要求具體手法，素材只有曲風轉向與現場聲勢）。
+- 審稿修 10 處：
+  - out-2 審稿 4 處：BT 刪〈Blue Skies〉登上 Billboard 舞曲俱樂部榜首（在世者成績只留「trance 與 IDM 先驅」一處）；Byron Stingily「house 裡最美的嗓音之一」改「極美的嗓音」；Cheb Khaled & Safy Boutella「境外最知名之一」改「具代表性」；Chez N Trent「與 Larry Heard 並列為芝加哥最好的一批」改「常與 Larry Heard 相提並論」。
+  - 保留：Caterina Barbieri 威尼斯雙年展音樂部門藝術總監（2024 年 11 月任命，官方來源）與董事長評語（官方）；Byron Stingily 三度登上舞曲俱樂部榜首（唯一一處成績）；Cecil Leuter〈Versailles〉用「據說」；Chris & Cosey 收進 MoMA 藝術家資料庫。
+  - out-1 審稿 6 處：Benga 刪「〈Night〉dubstep 最成功的跨界曲之一」（在世者一處成績、最高級），改「跨出了 dubstep 圈」；Beverly Glenn-Copeland「McGill 最早的黑人音樂系學生之一」改「早期」；BGM「日本最早的獨立廠牌之一」改「早期」、刪「最搶手的日本 new wave 專輯之一」；Blake Baxter「也許最被低估」改「被低估」；Boo Williams「最多產卻最少被注意之一」改「多產卻少被注意」。另撤下 Booka Shade（電子段要求具體手法，素材只有「synth-pop 轉向俱樂部電子」與現場聲勢）。
+  - 保留：Blind Light 寫成 Anton Fier 主導的錄音名義（維基；MusicBrainz 另列 Laswell、Skopelitis、Dieng、Knox Chandler、Lori Carson 為成員，正文寫「Laswell 等人參與」兩者相容）；Black Box〈Ride on Time〉英國冠軍六週（唯一一處成績）；Bomb the Bass〈Beat Dis〉英國第 2 名；Blake Baxter「比 Derrick May 與 Kevin Saunderson 還早錄音」（Qobuz＋維基）。
+- 身分：預抓維基作廢 3 位——Boo Williams（美式足球員）、Bola（菲律賓影集）、Boymerang 的 Graham Sutton（威爾斯氣象學家）。BGM 是日本團，不是 YMO 的《BGM》。Cecil Leuter 是 Roger Roger 的化名。Brian Eno / Jah Wobble 搜尋 9 次，overCapOk（第二源：補 Eno 名人堂）。
+- 待本機（上線簡介）：Blind Light《The Absence of Time》簡介寫成 Laswell 的計畫（維基寫 Fier 主導，MusicBrainz 列六名成員，建議改「Fier 主導、Laswell 等人參與」）；Cecil Leuter「最早一批玩 Moog、與 Pierre Henry、Wendy Carlos 同輩」查無；Charles Dodge《Speech Songs》年份；Chicane〈Offshore〉「逾 130 張合輯」為不可靠來源；另有 Bernard Fevre、Beverly Glenn-Copeland、Black Box、Blake Baxter、Bob Sinclar、Boymerang 數條（見 ARTIST-PUB-ISSUES）。
